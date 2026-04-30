@@ -1,0 +1,887 @@
+// Indus Hydraulics — Prisma Schema
+// Canonical source of truth for all database entities.
+// Excludes: pricing_rule, pricing_evaluation_log, inventory_*, purchase_order_* (out of scope)
+
+generator client {
+  provider        = "prisma-client-js"
+  output          = "../generated/client"
+  previewFeatures = ["fullTextSearchPostgres"]
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// ENUMS
+// ─────────────────────────────────────────────────────────────────────────────
+
+enum AccountTier {
+  bronze
+  silver
+  gold
+  platinum
+}
+
+enum AccountStatus {
+  prospect
+  active
+  at_risk
+  archived
+}
+
+enum Currency {
+  USD
+  INR
+  EUR
+  AED
+  SAR
+}
+
+enum ContactRole {
+  procurement
+  engineer
+  ap
+  approver
+  admin
+}
+
+enum SsoProvider {
+  microsoft365
+}
+
+enum AddressKind {
+  ship_to
+  bill_to
+  both
+}
+
+enum StaffRole {
+  super_admin
+  manager
+  sales_rep
+  engineer
+  warehouse
+  finance
+  cms_editor
+}
+
+enum ActivityActorType {
+  contact
+  staff
+  system
+}
+
+enum ProductStatus {
+  draft
+  active
+  discontinued
+}
+
+enum UnitOfMeasure {
+  each
+  metre
+  kit
+  set
+}
+
+enum MediaKind {
+  image
+  document
+  cad
+}
+
+enum DocumentKind {
+  datasheet
+  step
+  iges
+  service_manual
+  installation_guide
+}
+
+enum CrossRefCompatibility {
+  direct
+  compatible
+  superseded_by_us
+}
+
+enum RfqStatus {
+  draft
+  submitted
+  engineer_review
+  engineer_questions_pending
+  quote_sent
+  accepted
+  declined
+  expired
+  order_created
+  cancelled
+}
+
+enum RfqUrgency {
+  routine
+  priority
+  plant_down
+}
+
+enum OrderStatus {
+  pending_credit_check
+  credit_approved
+  picking
+  packed
+  shipped
+  delivered
+  closed
+  on_hold
+}
+
+enum SavedListVisibility {
+  private
+  team
+  account
+}
+
+enum ReorderCadence {
+  monthly
+  quarterly
+  biannual
+  annual
+}
+
+enum NotificationKind {
+  rfq_status_change
+  quote_sent
+  order_shipped
+  mention
+  password_reset
+}
+
+enum NotificationRecipientKind {
+  contact
+  staff
+}
+
+enum ImportEntity {
+  product
+  customer
+  pricing_rule
+}
+
+enum ImportStatus {
+  uploaded
+  mapping
+  validating
+  previewing
+  committing
+  completed
+  failed
+  rolled_back
+}
+
+enum ImportRowOutcome {
+  created
+  updated
+  warning
+  error
+  skipped
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// IDENTITY & ACCOUNTS
+// ─────────────────────────────────────────────────────────────────────────────
+
+model Account {
+  id                      String        @id @default(uuid())
+  code                    String        @unique // ACC-2018-0142
+  legalName               String
+  displayName             String
+  industryId              String?
+  industry                Industry?     @relation(fields: [industryId], references: [id])
+  region                  String?
+  tier                    AccountTier   @default(bronze)
+  status                  AccountStatus @default(prospect)
+  assignedRepId           String?
+  assignedRep             StaffUser?    @relation(fields: [assignedRepId], references: [id])
+  taxId                   String?
+  preferredCurrency       Currency      @default(USD)
+  defaultIncoterm         String?
+  creditLimit             Decimal       @default(0) @db.Decimal(12, 2)
+  creditOutstanding       Decimal       @default(0) @db.Decimal(12, 2)
+  paymentTermsDays        Int           @default(30)
+  avgDsoDays              Int           @default(0)
+  requiresAddressApproval Boolean       @default(false)
+  requiresRfqApprovalAbove Decimal?     @db.Decimal(12, 2)
+  tags                    Json          @default("[]") // string[]
+  createdAt               DateTime      @default(now())
+  updatedAt               DateTime      @updatedAt
+
+  contacts    AccountContact[]
+  addresses   AccountAddress[]
+  rfqs        Rfq[]
+  savedLists  SavedList[]
+  activity    AccountActivity[]
+
+  @@map("accounts")
+}
+
+model AccountContact {
+  id                    String      @id @default(uuid())
+  accountId             String
+  account               Account     @relation(fields: [accountId], references: [id])
+  email                 String      @unique
+  passwordHash          String?
+  ssoProvider           SsoProvider?
+  firstName             String
+  lastName              String
+  phone                 String?
+  role                  ContactRole @default(procurement)
+  isDefaultBillingContact Boolean   @default(false)
+  isActive              Boolean     @default(true)
+  lastSignInAt          DateTime?
+  failedSignInCount     Int         @default(0)
+  lockedUntil           DateTime?
+  createdAt             DateTime    @default(now())
+  updatedAt             DateTime    @updatedAt
+
+  passwordResetTokens PasswordResetToken[]
+  submittedRfqs       Rfq[]               @relation("SubmittedBy")
+  approvedAddresses   AccountAddress[]    @relation("ApprovedBy")
+  savedListOwner      SavedList[]
+  savedListComments   SavedListComment[]
+  notifications       Notification[]
+
+  @@index([accountId])
+  @@map("account_contacts")
+}
+
+model AccountAddress {
+  id              String      @id @default(uuid())
+  accountId       String
+  account         Account     @relation(fields: [accountId], references: [id])
+  kind            AddressKind @default(ship_to)
+  isDefaultShip   Boolean     @default(false)
+  isDefaultBill   Boolean     @default(false)
+  label           String
+  attention       String?
+  lines           Json        @default("[]") // string[]
+  city            String
+  region          String?
+  postalCode      String?
+  countryCode     String
+  phone           String?
+  email           String?
+  deliveryNotes   String?
+  taxIdOverride   String?
+  approvedAt      DateTime?
+  approvedById    String?
+  approvedBy      AccountContact? @relation("ApprovedBy", fields: [approvedById], references: [id])
+  createdAt       DateTime    @default(now())
+  updatedAt       DateTime    @updatedAt
+
+  rfqsShipTo  Rfq[] @relation("ShipToAddress")
+  rfqsBillTo  Rfq[] @relation("BillToAddress")
+
+  @@index([accountId])
+  @@map("account_addresses")
+}
+
+model StaffUser {
+  id          String    @id @default(uuid())
+  email       String    @unique
+  name        String
+  passwordHash String?
+  role        StaffRole @default(sales_rep)
+  permissions Json      @default("{}") // fine-grained overrides
+  isActive    Boolean   @default(true)
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+
+  assignedAccounts Account[]
+  assignedRfqs     Rfq[]     @relation("AssignedEngineer")
+  repRfqs          Rfq[]     @relation("AssignedRep")
+  mediaUploads     Media[]
+  importJobs       ImportJob[]
+  notifications    Notification[]
+  blogPosts        BlogPost[]
+  activityEntries  AccountActivity[]
+
+  @@map("staff_users")
+}
+
+model AccountActivity {
+  id         String            @id @default(uuid())
+  accountId  String
+  account    Account           @relation(fields: [accountId], references: [id])
+  actorType  ActivityActorType
+  actorId    String
+  staffActor StaffUser?        @relation(fields: [actorId], references: [id], map: "activity_staff_fk")
+  verb       String            // submitted_rfq, updated_credit_limit, commented, tier_upgraded
+  payload    Json              @default("{}")
+  createdAt  DateTime          @default(now())
+
+  @@index([accountId])
+  @@map("account_activity")
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// CATALOGUE
+// ─────────────────────────────────────────────────────────────────────────────
+
+model Category {
+  id               String     @id @default(uuid())
+  parentId         String?
+  parent           Category?  @relation("CategoryTree", fields: [parentId], references: [id])
+  children         Category[] @relation("CategoryTree")
+  slug             String     @unique
+  name             String
+  shortDescription String?
+  seoTitle         String?
+  seoDescription   String?
+  imageId          String?
+  image            Media?     @relation(fields: [imageId], references: [id])
+  position         Int        @default(0)
+  isPublished      Boolean    @default(false)
+
+  products Product[]
+
+  @@map("categories")
+}
+
+model Brand {
+  id                    String   @id @default(uuid())
+  slug                  String   @unique
+  name                  String
+  country               String?
+  description           String?
+  logoId                String?
+  logo                  Media?   @relation("BrandLogo", fields: [logoId], references: [id])
+  heroId                String?
+  hero                  Media?   @relation("BrandHero", fields: [heroId], references: [id])
+  isAuthorizedDistributor Boolean @default(false)
+  seoTitle              String?
+  seoDescription        String?
+  isPublished           Boolean  @default(false)
+
+  products Product[]
+
+  @@map("brands")
+}
+
+model Industry {
+  id             String  @id @default(uuid())
+  slug           String  @unique
+  name           String
+  description    String?
+  seoTitle       String?
+  seoDescription String?
+  heroId         String?
+  hero           Media?  @relation(fields: [heroId], references: [id])
+  isPublished    Boolean @default(false)
+
+  accounts Account[]
+
+  @@map("industries")
+}
+
+model Product {
+  id                String        @id @default(uuid())
+  sku               String        @unique
+  mpn               String?
+  slug              String        @unique
+  title             String
+  categoryId        String?
+  category          Category?     @relation(fields: [categoryId], references: [id])
+  brandId           String?
+  brand             Brand?        @relation(fields: [brandId], references: [id])
+  descriptionShort  String?
+  descriptionLong   String?       // markdown/rich text
+  listPrice         Decimal?      @db.Decimal(12, 2)
+  listPriceCurrency Currency      @default(USD)
+  unitOfMeasure     UnitOfMeasure @default(each)
+  weightKg          Decimal?      @db.Decimal(8, 3)
+  dimensionsMm      Json?         // {l, w, h}
+  leadTimeDays      Int?
+  warrantyMonths    Int?
+  countryOfOrigin   String?
+  hsCode            String?
+  status            ProductStatus @default(draft)
+  supersededById    String?
+  supersededBy      Product?      @relation("Supersession", fields: [supersededById], references: [id])
+  supersedes        Product[]     @relation("Supersession")
+  seoTitle          String?
+  seoDescription    String?
+  createdAt         DateTime      @default(now())
+  updatedAt         DateTime      @updatedAt
+
+  images          ProductImage[]
+  specs           ProductSpec[]
+  documents       ProductDocument[]
+  crossReferences ProductCrossReference[]
+  rfqLines        RfqLine[]
+  savedListItems  SavedListItem[]
+  orderLines      OrderLine[]
+
+  @@index([categoryId])
+  @@index([brandId])
+  @@index([status])
+  @@map("products")
+}
+
+model ProductImage {
+  id        String  @id @default(uuid())
+  productId String
+  product   Product @relation(fields: [productId], references: [id], onDelete: Cascade)
+  mediaId   String
+  media     Media   @relation(fields: [mediaId], references: [id])
+  position  Int     @default(0)
+  alt       String?
+
+  @@index([productId])
+  @@map("product_images")
+}
+
+model ProductSpec {
+  id           String  @id @default(uuid())
+  productId    String
+  product      Product @relation(fields: [productId], references: [id], onDelete: Cascade)
+  group        String  // "Hydraulic performance", "Mechanical", "Fluids", "Commercial"
+  label        String
+  value        String
+  unit         String?
+  position     Int     @default(0)
+  isFilterable Boolean @default(false)
+
+  @@index([productId])
+  @@map("product_specs")
+}
+
+model ProductDocument {
+  id        String       @id @default(uuid())
+  productId String
+  product   Product      @relation(fields: [productId], references: [id], onDelete: Cascade)
+  kind      DocumentKind
+  title     String
+  language  String       @default("en")
+  mediaId   String
+  media     Media        @relation(fields: [mediaId], references: [id])
+  isGated   Boolean      @default(false)
+  position  Int          @default(0)
+
+  @@index([productId])
+  @@map("product_documents")
+}
+
+model ProductCrossReference {
+  id               String                @id @default(uuid())
+  productId        String
+  product          Product               @relation(fields: [productId], references: [id], onDelete: Cascade)
+  competitorBrand  String
+  competitorMpn    String
+  compatibility    CrossRefCompatibility @default(direct)
+
+  @@index([productId])
+  @@map("product_cross_references")
+}
+
+model Media {
+  id               String    @id @default(uuid())
+  kind             MediaKind
+  mimeType         String
+  originalFilename String
+  storagePath      String    // S3/R2 key
+  bytes            Int
+  width            Int?
+  height           Int?
+  alt              String?
+  caption          String?
+  uploadedById     String?
+  uploadedBy       StaffUser? @relation(fields: [uploadedById], references: [id])
+  createdAt        DateTime  @default(now())
+
+  productImages     ProductImage[]
+  productDocuments  ProductDocument[]
+  categoryImages    Category[]
+  brandLogos        Brand[]    @relation("BrandLogo")
+  brandHeroes       Brand[]    @relation("BrandHero")
+  industryHeroes    Industry[]
+  rfqAttachments    RfqAttachment[]
+  quotePdfs         Quote[]
+  blogHeroes        BlogPost[]
+  importJobSources  ImportJob[]
+
+  @@map("media")
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// RFQ → QUOTE → ORDER
+// ─────────────────────────────────────────────────────────────────────────────
+
+model Rfq {
+  id                    String     @id @default(uuid())
+  code                  String     @unique // RFQ-2026-0418
+  accountId             String
+  account               Account    @relation(fields: [accountId], references: [id])
+  submittedByContactId  String?
+  submittedBy           AccountContact? @relation("SubmittedBy", fields: [submittedByContactId], references: [id])
+  subject               String?
+  applicationContext    String?
+  urgency               RfqUrgency @default(routine)
+  requestedDeliveryDate DateTime?
+  shipToAddressId       String?
+  shipToAddress         AccountAddress? @relation("ShipToAddress", fields: [shipToAddressId], references: [id])
+  billToAddressId       String?
+  billToAddress         AccountAddress? @relation("BillToAddress", fields: [billToAddressId], references: [id])
+  incoterm              String?
+  currency              Currency   @default(USD)
+  status                RfqStatus  @default(draft)
+  assignedEngineerId    String?
+  assignedEngineer      StaffUser? @relation("AssignedEngineer", fields: [assignedEngineerId], references: [id])
+  assignedRepId         String?
+  assignedRep           StaffUser? @relation("AssignedRep", fields: [assignedRepId], references: [id])
+  internalNotes         String?
+  customerMessage       String?
+  submittedAt           DateTime?
+  quoteSentAt           DateTime?
+  acceptedAt            DateTime?
+  quoteExpiresAt        DateTime?
+  createdAt             DateTime   @default(now())
+  updatedAt             DateTime   @updatedAt
+
+  lines       RfqLine[]
+  attachments RfqAttachment[]
+  quotes      Quote[]
+  orders      Order[]
+
+  @@index([accountId, status, submittedAt])
+  @@index([status])
+  @@map("rfqs")
+}
+
+model RfqLine {
+  id                  String   @id @default(uuid())
+  rfqId               String
+  rfq                 Rfq      @relation(fields: [rfqId], references: [id], onDelete: Cascade)
+  productId           String
+  product             Product  @relation(fields: [productId], references: [id])
+  requestedQty        Int
+  customerTargetPrice Decimal? @db.Decimal(12, 2)
+  shipFromWarehouse   String?  // free-text (e.g. "Mumbai", "Dubai") — no warehouse entity in scope
+  engineerUnitPrice   Decimal? @db.Decimal(12, 2)
+  engineerLeadTimeDays Int?
+  appliedRuleIds      Json?    @default("[]") // future: pricing rule references
+  engineerNotes       String?
+  position            Int      @default(0)
+
+  orderLines OrderLine[]
+
+  @@index([rfqId])
+  @@map("rfq_lines")
+}
+
+model RfqAttachment {
+  id              String         @id @default(uuid())
+  rfqId           String
+  rfq             Rfq            @relation(fields: [rfqId], references: [id], onDelete: Cascade)
+  mediaId         String
+  media           Media          @relation(fields: [mediaId], references: [id])
+  uploaderType    String?        // "contact" | "staff"
+  uploaderId      String?
+  createdAt       DateTime       @default(now())
+
+  @@map("rfq_attachments")
+}
+
+model Quote {
+  id              String    @id @default(uuid())
+  code            String    @unique // Q-2026-0418
+  rfqId           String
+  rfq             Rfq       @relation(fields: [rfqId], references: [id])
+  revision        Int       @default(1)
+  subtotal        Decimal   @db.Decimal(12, 2)
+  discountTotal   Decimal   @default(0) @db.Decimal(12, 2)
+  shipping        Decimal   @default(0) @db.Decimal(12, 2)
+  tax             Decimal   @default(0) @db.Decimal(12, 2)
+  total           Decimal   @db.Decimal(12, 2)
+  currency        Currency  @default(USD)
+  termsPayment    String    @default("Net 30")
+  termsValidityDays Int     @default(30)
+  pdfMediaId      String?
+  pdfMedia        Media?    @relation(fields: [pdfMediaId], references: [id])
+  sentAt          DateTime?
+  expiresAt       DateTime?
+  acceptedAt      DateTime?
+  declinedAt      DateTime?
+
+  orders Order[]
+
+  @@index([rfqId])
+  @@map("quotes")
+}
+
+model Order {
+  id               String      @id @default(uuid())
+  code             String      @unique // ORD-2026-0418
+  quoteId          String?
+  quote            Quote?      @relation(fields: [quoteId], references: [id])
+  rfqId            String?
+  rfq              Rfq?        @relation(fields: [rfqId], references: [id])
+  accountId        String?
+  status           OrderStatus @default(pending_credit_check)
+  customerPoNumber String?
+  subtotal         Decimal     @db.Decimal(12, 2)
+  total            Decimal     @db.Decimal(12, 2)
+  currency         Currency    @default(USD)
+  placedAt         DateTime?
+  shippedAt        DateTime?
+  deliveredAt      DateTime?
+
+  lines     OrderLine[]
+  shipments OrderShipment[]
+
+  @@map("orders")
+}
+
+model OrderLine {
+  id                String   @id @default(uuid())
+  orderId           String
+  order             Order    @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  productId         String
+  product           Product  @relation(fields: [productId], references: [id])
+  rfqLineId         String?
+  rfqLine           RfqLine? @relation(fields: [rfqLineId], references: [id])
+  qty               Int
+  unitPrice         Decimal  @db.Decimal(12, 2)
+  shipFromWarehouse String?
+  appliedRuleIds    Json?    @default("[]")
+
+  @@index([orderId])
+  @@map("order_lines")
+}
+
+model OrderShipment {
+  id            String    @id @default(uuid())
+  orderId       String
+  order         Order     @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  fromWarehouse String?
+  carrier       String?
+  trackingNumber String?
+  dispatchedAt  DateTime?
+  deliveredAt   DateTime?
+
+  @@map("order_shipments")
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// CUSTOMER SELF-SERVICE
+// ─────────────────────────────────────────────────────────────────────────────
+
+model SavedList {
+  id               String               @id @default(uuid())
+  accountId        String
+  account          Account              @relation(fields: [accountId], references: [id])
+  ownerContactId   String?
+  owner            AccountContact?      @relation(fields: [ownerContactId], references: [id])
+  name             String
+  description      String?
+  visibility       SavedListVisibility  @default(team)
+  reorderCadence   ReorderCadence?
+  nextReorderDueAt DateTime?
+  autoRfq          Boolean              @default(false)
+  createdAt        DateTime             @default(now())
+  updatedAt        DateTime             @updatedAt
+
+  items    SavedListItem[]
+  comments SavedListComment[]
+
+  @@index([accountId])
+  @@map("saved_lists")
+}
+
+model SavedListItem {
+  id            String    @id @default(uuid())
+  savedListId   String
+  savedList     SavedList @relation(fields: [savedListId], references: [id], onDelete: Cascade)
+  productId     String
+  product       Product   @relation(fields: [productId], references: [id])
+  quantity      Int       @default(1)
+  note          String?
+  isSuperseded  Boolean   @default(false)
+  deletedAt     DateTime? // soft delete — undo within 30 days
+  position      Int       @default(0)
+
+  @@index([savedListId])
+  @@map("saved_list_items")
+}
+
+model SavedListComment {
+  id          String         @id @default(uuid())
+  savedListId String
+  savedList   SavedList      @relation(fields: [savedListId], references: [id], onDelete: Cascade)
+  actorType   String         // "contact" | "staff"
+  contactId   String?
+  contact     AccountContact? @relation(fields: [contactId], references: [id])
+  body        String
+  createdAt   DateTime       @default(now())
+
+  @@map("saved_list_comments")
+}
+
+model PasswordResetToken {
+  id          String         @id @default(uuid())
+  contactId   String
+  contact     AccountContact @relation(fields: [contactId], references: [id], onDelete: Cascade)
+  tokenHash   String         @unique
+  expiresAt   DateTime
+  usedAt      DateTime?
+  requestedIp String?
+  createdAt   DateTime       @default(now())
+
+  @@map("password_reset_tokens")
+}
+
+model Notification {
+  id            String                    @id @default(uuid())
+  recipientKind NotificationRecipientKind
+  contactId     String?
+  contact       AccountContact?           @relation(fields: [contactId], references: [id])
+  staffId       String?
+  staff         StaffUser?                @relation(fields: [staffId], references: [id])
+  kind          NotificationKind
+  payload       Json                      @default("{}")
+  readAt        DateTime?
+  createdAt     DateTime                  @default(now())
+
+  @@index([contactId, readAt])
+  @@index([staffId, readAt])
+  @@map("notifications")
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// CONTENT & SEO
+// ─────────────────────────────────────────────────────────────────────────────
+
+model CmsPage {
+  id          String    @id @default(uuid())
+  slug        String    @unique
+  title       String
+  body        String    // rich text / HTML
+  seoTitle    String?
+  seoDescription String?
+  isPublished Boolean   @default(false)
+  publishedAt DateTime?
+  updatedAt   DateTime  @updatedAt
+
+  @@map("cms_pages")
+}
+
+model BlogPost {
+  id             String    @id @default(uuid())
+  slug           String    @unique
+  title          String
+  excerpt        String?
+  body           String    // rich text
+  heroId         String?
+  hero           Media?    @relation(fields: [heroId], references: [id])
+  authorStaffId  String?
+  author         StaffUser? @relation(fields: [authorStaffId], references: [id])
+  tags           Json      @default("[]") // string[]
+  seoTitle       String?
+  seoDescription String?
+  publishedAt    DateTime?
+  isPublished    Boolean   @default(false)
+
+  @@map("blog_posts")
+}
+
+model Redirect {
+  id         String   @id @default(uuid())
+  fromPath   String   @unique
+  toPath     String
+  statusCode Int      @default(301)
+  createdAt  DateTime @default(now())
+
+  @@map("redirects")
+}
+
+model SeoSetting {
+  id                        String  @id @default(uuid())
+  defaultMetaTitleTemplate  String?
+  defaultMetaDescription    String?
+  ogDefaultImageId          String?
+  robotsTxt                 String?
+  sitemapSettings           Json    @default("{}")
+
+  @@map("seo_settings")
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// BULK IMPORT
+// ─────────────────────────────────────────────────────────────────────────────
+
+model ImportJob {
+  id                 String       @id @default(uuid())
+  code               String       @unique // IMPORT-2026-0042
+  entity             ImportEntity
+  sourceMediaId      String?
+  sourceMedia        Media?       @relation(fields: [sourceMediaId], references: [id])
+  columnMapping      Json         @default("{}") // {csv_col: indus_field}
+  options            Json         @default("{}") // {skip_errors, publish_new, ...}
+  status             ImportStatus @default(uploaded)
+  totalRows          Int          @default(0)
+  rowsToCreate       Int          @default(0)
+  rowsToUpdate       Int          @default(0)
+  rowsWithWarnings   Int          @default(0)
+  rowsWithErrors     Int          @default(0)
+  rollbackSnapshotId String?
+  startedById        String?
+  startedBy          StaffUser?   @relation(fields: [startedById], references: [id])
+  startedAt          DateTime?
+  completedAt        DateTime?
+  createdAt          DateTime     @default(now())
+
+  rows ImportJobRow[]
+
+  @@map("import_jobs")
+}
+
+model ImportJobRow {
+  id          String           @id @default(uuid())
+  importJobId String
+  importJob   ImportJob        @relation(fields: [importJobId], references: [id], onDelete: Cascade)
+  rowNumber   Int
+  rawData     Json
+  mappedData  Json?
+  outcome     ImportRowOutcome?
+  entityId    String?
+  messages    Json             @default("[]") // string[]
+
+  @@index([importJobId])
+  @@map("import_job_rows")
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// SETTINGS
+// ─────────────────────────────────────────────────────────────────────────────
+
+model StoreSettings {
+  id                  String   @id @default(uuid())
+  name                String   @default("Indus Hydraulics")
+  supportEmail        String?
+  defaultCurrency     Currency @default(USD)
+  defaultIncoterm     String?
+  defaultPaymentTerms Int      @default(30)
+  updatedAt           DateTime @updatedAt
+
+  @@map("store_settings")
+}
+
+model EmailTemplate {
+  id        String   @id @default(uuid())
+  kind      String   @unique // rfq_ack, quote_sent, password_reset, order_shipped
+  subject   String
+  bodyHtml  String
+  updatedAt DateTime @updatedAt
+
+  @@map("email_templates")
+}

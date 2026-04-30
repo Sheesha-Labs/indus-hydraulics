@@ -1,0 +1,138 @@
+@import "tailwindcss";
+
+/* ============================================================
+   INDUS HYDRAULICS ADMIN — DESIGN SYSTEM
+   Denser scale than storefront · Same token palette
+   ============================================================ */
+
+@theme {
+  /* ── Fonts ── */
+  --font-sans: var(--font-inter), system-ui, -apple-system, 'Helvetica Neue', sans-serif;
+  --font-mono: var(--font-ibm-plex-mono), ui-monospace, 'SFMono-Regular', Menlo, monospace;
+
+  /* ── Surface colors ── */
+  --color-surface: #f5f3ee;
+  --color-elevated: #ffffff;
+  --color-deep: #ebe7df;
+
+  /* ── Text colors ── */
+  --color-primary: #111418;
+  --color-body: #2b2f36;
+  --color-muted: #5b6068;
+  --color-caption: #8a8f97;
+
+  /* ── Border ── */
+  --color-border: #d9d4c8;
+  --color-border-2: #e6e1d5;
+
+  /* ── Accent (industrial orange) ── */
+  --color-accent: oklch(0.62 0.16 45);
+  --color-accent-ink: #ffffff;
+  --color-accent-soft: oklch(0.95 0.04 60);
+
+  /* ── Status ── */
+  --color-good: oklch(0.55 0.12 150);
+  --color-warn: oklch(0.7 0.15 80);
+  --color-danger: oklch(0.55 0.18 25);
+  --color-info: #0e4d92;
+
+  /* ── Technical color ── */
+  --color-tech: oklch(0.45 0.08 240);
+
+  /* ── Admin sidebar ── */
+  --color-sidebar-bg: #111418;
+  --color-sidebar-text: #d4d0c6;
+  --color-sidebar-active: var(--color-accent);
+  --color-sidebar-hover: rgba(255, 255, 255, 0.06);
+
+  /* ── Border radius (FLAT — 0-2px ONLY) ── */
+  --radius-xs: 0px;
+  --radius-sm: 2px;
+  --radius-md: 2px;
+
+  /* ── Shadows ── */
+  --shadow-1: 0 1px 0 rgba(17, 20, 24, 0.04), 0 1px 2px rgba(17, 20, 24, 0.04);
+  --shadow-2: 0 4px 18px -8px rgba(17, 20, 24, 0.18), 0 1px 0 rgba(17, 20, 24, 0.04);
+}
+
+/* ── Dark theme ── */
+[data-theme='dark'] {
+  --color-surface: #0e1013;
+  --color-elevated: #15181d;
+  --color-deep: #0a0c0e;
+  --color-primary: #f0ece3;
+  --color-body: #d4d0c6;
+  --color-muted: #9aa0a8;
+  --color-caption: #6b7079;
+  --color-border: #2a2e35;
+  --color-border-2: #1f2329;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: var(--color-surface);
+  color: var(--color-primary);
+  font-family: var(--font-sans);
+  /* Admin uses denser typography than storefront */
+  font-size: 13px;
+  line-height: 1.45;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  margin: 0;
+  padding: 0;
+}
+
+img,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.mono {
+  font-family: var(--font-mono);
+  font-feature-settings: 'tnum';
+  letter-spacing: -0.01em;
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-deep);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+}

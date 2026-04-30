@@ -1,0 +1,289 @@
+'use client'
+
+import { useRef, useState, useEffect, useTransition } from 'react'
+import Link from 'next/link'
+import { useTranslations } from 'next-intl'
+import { submitRfq } from '../app/[locale]/quote/actions'
+
+type Address = {
+  id: string
+  label: string
+  lines: string[]
+  city: string
+  countryCode: string
+}
+
+type Props = {
+  locale: string
+  addresses: Address[]
+}
+
+type LineItem = {
+  sku: string
+  title: string
+  qty: number
+  targetPrice?: string
+  brand?: string
+}
+
+export default function RfqSubmitForm({ locale, addresses }: Props) {
+  const t = useTranslations('rfq')
+  const [lines, setLines] = useState<LineItem[]>([])
+  const [mounted, setMounted] = useState(false)
+  const [urgency, setUrgency] = useState<'routine' | 'priority' | 'plant_down'>('routine')
+  const [isPending, startTransition] = useTransition()
+  const formRef = useRef<HTMLFormElement>(null)
+
+  useEffect(() => {
+    setMounted(true)
+    try {
+      const raw = localStorage.getItem('quote_items')
+      if (raw) setLines(JSON.parse(raw))
+    } catch {
+      // ignore
+    }
+  }, [])
+
+  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault()
+    const fd = new FormData(e.currentTarget)
+    fd.set('lines', JSON.stringify(lines))
+    fd.set('locale', locale)
+    fd.set('urgency', urgency)
+
+    startTransition(async () => {
+      await submitRfq(fd)
+      localStorage.removeItem('quote_items')
+    })
+  }
+
+  if (!mounted) return null
+
+  if (lines.length === 0) {
+    return (
+      <div className="py-16 border border-dashed border-[var(--color-border)] text-center">
+        <p className="text-[var(--color-muted)]">No items in your quote.</p>
+        <Link href={`/${locale}/quote`} className="mt-3 inline-block font-mono text-[12px] text-[var(--color-accent)] hover:underline">
+          ← Back to quote builder
+        </Link>
+      </div>
+    )
+  }
+
+  const URGENCY_OPTIONS = [
+    {
+      value: 'plant_down' as const,
+      label: '● Plant down',
+      meta: 'Reply within 30 min · 24/7',
+      activeStyle: { border: '1px solid oklch(0.85 0.13 25)', background: 'oklch(0.97 0.04 25)' },
+    },
+    {
+      value: 'priority' as const,
+      label: '● This week',
+      meta: 'Reply within 4 working hrs',
+      activeStyle: { border: '1px solid oklch(0.85 0.1 60)', background: 'oklch(0.98 0.03 60)' },
+    },
+    {
+      value: 'routine' as const,
+      label: '● Standard',
+      meta: 'Reply within 24 hrs',
+      activeStyle: { border: '1px solid var(--color-border)', background: 'var(--color-surface)' },
+    },
+  ]
+
+  return (
+    <form ref={formRef} onSubmit={handleSubmit}>
+      <div className="grid gap-8" style={{ gridTemplateColumns: '1fr 320px', alignItems: 'start' }}>
+        {/* ── Main form ─────────────────────────────────────────── */}
+        <div className="flex flex-col gap-6">
+
+          {/* Project details */}
+          <section className="border border-[var(--color-border)] bg-[var(--color-elevated)] p-6">
+            <h2 className="text-[18px] font-semibold mb-1">Project details</h2>
+            <p className="text-[13px] text-[var(--color-muted)] mb-5">The more you tell us, the better we can match SKUs and lead times.</p>
+
+            <div className="flex flex-col gap-4">
+              {/* Urgency radio cards */}
+              <div>
+                <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-2">
+                  Urgency *
+                </label>
+                <div className="grid grid-cols-3 gap-2">
+                  {URGENCY_OPTIONS.map((opt) => (
+                    <label
+                      key={opt.value}
+                      className="cursor-pointer flex flex-col gap-1 p-3.5"
+                      style={urgency === opt.value ? opt.activeStyle : { border: '1px solid var(--color-border)', background: 'var(--color-surface)' }}
+                    >
+                      <span className="flex items-center gap-2 font-semibold text-[14px]">
+                        <input
+                          type="radio"
+                          name="urgency_display"
+                          value={opt.value}
+                          checked={urgency === opt.value}
+                          onChange={() => setUrgency(opt.value)}
+                          className="accent-[var(--color-accent)]"
+                        />
+                        {opt.label}
+                      </span>
+                      <span className="font-mono text-[11px] text-[var(--color-muted)]">{opt.meta}</span>
+                    </label>
+                  ))}
+                </div>
+              </div>
+
+              {/* Subject */}
+              <div>
+                <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+                  RFQ subject
+                </label>
+                <input
+                  name="subject"
+                  type="text"
+                  placeholder="e.g. Annual Maintenance Hydraulic Pumps Q2 2026"
+                  className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-surface)] text-[13px] text-[var(--color-primary)] placeholder:text-[var(--color-caption)] focus:outline-none focus:border-[var(--color-accent)]"
+                />
+              </div>
+
+              {/* Use case */}
+              <div>
+                <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+                  Use case / application
+                </label>
+                <textarea
+                  name="applicationContext"
+                  rows={3}
+                  placeholder={`Describe the equipment, line, or system. E.g. 'Replacement on Refinery Line 4, hot-oil duty, 200 bar continuous, 12hr/day'`}
+                  className="w-full px-3 py-2.5 border border-[var(--color-border)] bg-[var(--color-surface)] text-[13px] text-[var(--color-primary)] placeholder:text-[var(--color-caption)] focus:outline-none focus:border-[var(--color-accent)] resize-none"
+                />
+              </div>
+
+              {/* Date + incoterm */}
+              <div className="grid grid-cols-2 gap-3.5">
+                <div>
+                  <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+                    Target delivery date
+                  </label>
+                  <input
+                    name="requestedDelivery"
+                    type="date"
+                    className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-surface)] text-[13px] text-[var(--color-primary)] focus:outline-none focus:border-[var(--color-accent)]"
+                  />
+                </div>
+                <div>
+                  <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+                    Incoterm preference
+                  </label>
+                  <select
+                    name="incoterm"
+                    className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-surface)] text-[13px] text-[var(--color-primary)] focus:outline-none focus:border-[var(--color-accent)]"
+                  >
+                    <option value="exw">Ex-works (EXW)</option>
+                    <option value="fob">FOB · Mumbai</option>
+                    <option value="cif">CIF · destination port</option>
+                    <option value="dap">DAP · door delivery</option>
+                    <option value="">Not sure — advise</option>
+                  </select>
+                </div>
+              </div>
+
+              {/* Ship-to address */}
+              {addresses.length > 0 && (
+                <div>
+                  <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+                    Delivery address
+                  </label>
+                  <select
+                    name="shipToAddressId"
+                    className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-surface)] text-[13px] text-[var(--color-primary)] focus:outline-none focus:border-[var(--color-accent)]"
+                  >
+                    <option value="">— Select address —</option>
+                    {addresses.map((addr) => (
+                      <option key={addr.id} value={addr.id}>
+                        {addr.label} · {addr.city}, {addr.countryCode}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+              )}
+
+              {/* Attachments */}
+              <div>
+                <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+                  Attachments (drawings, RFQ docs, photos)
+                </label>
+                <div className="border-[1.5px] border-dashed border-[var(--color-border)] p-6 text-center text-[var(--color-muted)] bg-[var(--color-surface)] text-[13px]">
+                  ⤓ Drag &amp; drop · or{' '}
+                  <span className="text-[var(--color-accent)] cursor-pointer hover:underline">browse files</span>
+                  {' '}· max 25 MB · PDF · STEP · DWG · JPG
+                </div>
+              </div>
+
+              {/* Additional notes */}
+              <div>
+                <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+                  Additional notes
+                </label>
+                <textarea
+                  name="customerMessage"
+                  rows={2}
+                  placeholder="Any other information for our team"
+                  className="w-full px-3 py-2.5 border border-[var(--color-border)] bg-[var(--color-surface)] text-[13px] text-[var(--color-primary)] placeholder:text-[var(--color-caption)] focus:outline-none focus:border-[var(--color-accent)] resize-none"
+                />
+              </div>
+            </div>
+          </section>
+
+          {/* Footer row */}
+          <div className="flex justify-between items-center py-3.5">
+            <Link href={`/${locale}/quote`} className="font-mono text-[12px] text-[var(--color-muted)] hover:text-[var(--color-primary)] transition-colors">
+              ← Back to shortlist
+            </Link>
+            <button
+              type="submit"
+              disabled={isPending}
+              className="h-11 px-8 flex items-center bg-[var(--color-accent)] text-white text-[14px] font-semibold hover:opacity-90 disabled:opacity-50 transition-opacity"
+            >
+              {isPending ? 'Submitting…' : 'Submit RFQ →'}
+            </button>
+          </div>
+        </div>
+
+        {/* ── Sticky sidebar ────────────────────────────────────── */}
+        <aside className="sticky top-[88px]">
+          <div className="border border-[var(--color-border)] bg-[var(--color-elevated)] overflow-hidden">
+            <div className="px-[18px] py-4 border-b border-[var(--color-border)] flex justify-between items-center">
+              <h3 className="text-[14px] font-semibold">Quoting · {lines.length} line{lines.length !== 1 ? 's' : ''}</h3>
+              <Link href={`/${locale}/quote`} className="text-[12px] text-[var(--color-accent)] hover:underline">Edit</Link>
+            </div>
+
+            {/* Line items */}
+            {lines.map((item) => (
+              <div key={item.sku} className="grid gap-2 px-[18px] py-2 border-b border-[var(--color-border-2)] last:border-0 text-[12px]" style={{ gridTemplateColumns: '1fr auto' }}>
+                <div>
+                  <div className="font-medium leading-snug">{item.title}</div>
+                  <div className="font-mono text-[10px] text-[var(--color-muted)]">{item.sku}</div>
+                </div>
+                <div className="font-mono text-right shrink-0">× {item.qty}</div>
+              </div>
+            ))}
+
+            <div className="px-[18px] py-3.5 border-t border-[var(--color-border)] flex justify-between font-semibold text-[13px]">
+              <span>Lines</span>
+              <span className="font-mono">{lines.length}</span>
+            </div>
+          </div>
+
+          {/* What happens next */}
+          <div className="mt-3.5 px-4 py-4 bg-[var(--color-surface)] border border-[var(--color-border)] text-[12px] text-[var(--color-muted)] leading-[1.6]">
+            <b className="text-[var(--color-primary)]">What happens next</b><br />
+            1. Confirmation email + RFQ ref<br />
+            2. Sales engineer reviews lines<br />
+            3. Fixed-price quote PDF in inbox<br />
+            4. Approve to convert to order
+          </div>
+        </aside>
+      </div>
+    </form>
+  )
+}

@@ -1,0 +1,144 @@
+@import "tailwindcss";
+
+/* ============================================================
+   INDUS HYDRAULICS — DESIGN SYSTEM
+   Industrial B2B · Flat aesthetic · 0-2px radius only
+   Fonts: Inter (UI) + IBM Plex Mono (SKUs, data)
+   ============================================================ */
+
+@theme {
+  /* ── Fonts ── */
+  --font-sans: var(--font-inter), system-ui, -apple-system, 'Helvetica Neue', sans-serif;
+  --font-mono: var(--font-ibm-plex-mono), ui-monospace, 'SFMono-Regular', Menlo, monospace;
+
+  /* ── Surface colors ── */
+  --color-surface: #f5f3ee;
+  --color-elevated: #ffffff;
+  --color-deep: #ebe7df;
+
+  /* ── Text colors ── */
+  --color-primary: #111418;
+  --color-body: #2b2f36;
+  --color-muted: #5b6068;
+  --color-caption: #8a8f97;
+
+  /* ── Border ── */
+  --color-border: #d9d4c8;
+  --color-border-2: #e6e1d5;
+
+  /* ── Accent (industrial orange) ── */
+  --color-accent: oklch(0.62 0.16 45);
+  --color-accent-ink: #ffffff;
+  --color-accent-soft: oklch(0.95 0.04 60);
+
+  /* ── Status ── */
+  --color-good: oklch(0.55 0.12 150);
+  --color-warn: oklch(0.7 0.15 80);
+  --color-danger: oklch(0.55 0.18 25);
+  --color-info: #0e4d92;
+
+  /* ── Technical color ── */
+  --color-tech: oklch(0.45 0.08 240);
+
+  /* ── Spacing ── */
+  --spacing-page-gutter: 32px;
+  --spacing-max-w: 1360px;
+  --spacing-max-w-wide: 1400px;
+
+  /* ── Border radius (FLAT industrial — 0-2px ONLY) ── */
+  --radius-xs: 0px;
+  --radius-sm: 2px;
+  --radius-md: 2px;
+
+  /* ── Shadows ── */
+  --shadow-1: 0 1px 0 rgba(17, 20, 24, 0.04), 0 1px 2px rgba(17, 20, 24, 0.04);
+  --shadow-2: 0 4px 18px -8px rgba(17, 20, 24, 0.18), 0 1px 0 rgba(17, 20, 24, 0.04);
+  --shadow-pop: 0 24px 60px -24px rgba(17, 20, 24, 0.25);
+}
+
+/* ── Dark theme (toggled via data-theme="dark" on <html>) ── */
+[data-theme='dark'] {
+  --color-surface: #0e1013;
+  --color-elevated: #15181d;
+  --color-deep: #0a0c0e;
+  --color-primary: #f0ece3;
+  --color-body: #d4d0c6;
+  --color-muted: #9aa0a8;
+  --color-caption: #6b7079;
+  --color-border: #2a2e35;
+  --color-border-2: #1f2329;
+}
+
+/* ── Base ── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: var(--color-surface);
+  color: var(--color-primary);
+  font-family: var(--font-sans);
+  font-size: 15px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  margin: 0;
+  padding: 0;
+}
+
+img,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+/* ── Typography utilities ── */
+.mono {
+  font-family: var(--font-mono);
+  font-feature-settings: 'tnum';
+  letter-spacing: -0.01em;
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+}
+
+/* ── Focus ring ── */
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+/* ── Scrollbar (webkit) ── */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-deep);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 0;
+}

@@ -1,0 +1,44 @@
+# Dependencies
+node_modules
+.pnp
+.pnp.js
+
+# Build outputs
+.next
+out
+dist
+build
+.turbo
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+.env.production
+
+# Prisma
+packages/db/generated
+
+# Misc
+.DS_Store
+*.pem
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Testing
+coverage
+.playwright
+test-results
+playwright-report
+
+# Vercel
+.vercel
+
+# TypeScript
+*.tsbuildinfo
