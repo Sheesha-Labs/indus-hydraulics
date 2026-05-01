@@ -901,54 +901,36 @@ export async function deleteProductDocument(docId: string, productId: string, lo
   }
 }
 
-// ── Product Q&A (admin moderation) ──────────────────────────────────────────
+// ── Product FAQs (admin-curated) ────────────────────────────────────────────
 
-const AnswerQuestionSchema = z.object({
-  id: z.string().uuid(),
-  productId: z.string().uuid(),
+const FaqBodySchema = z.object({
+  question: z.string().trim().min(1, 'Question is required').max(2000),
   answer: z.string().trim().min(1, 'Answer is required').max(4000),
-  publish: z.boolean().default(true),
-  locale: Locale,
 })
 
-export async function answerProductQuestion(formData: FormData): Promise<Result<void>> {
+export async function addProductFaq(formData: FormData): Promise<Result<void>> {
   try {
     requireRole(await auth(), ROLES.CATALOGUE_WRITE)
-    const parsed = AnswerQuestionSchema.parse({
-      id: formData.get('id'),
-      productId: formData.get('productId'),
+    const productId = z.string().uuid().parse(formData.get('productId'))
+    const locale = z.string().min(1).parse(formData.get('locale') ?? 'en')
+    const body = FaqBodySchema.parse({
+      question: formData.get('question'),
       answer: formData.get('answer'),
-      publish: formData.get('publish') === 'on',
-      locale: formData.get('locale') ?? 'en',
     })
 
-    await db.productQuestion.update({
-      where: { id: parsed.id },
+    const max = await db.productFaq.aggregate({
+      where: { productId },
+      _max: { position: true },
+    })
+
+    await db.productFaq.create({
       data: {
-        answer: parsed.answer,
-        answeredAt: new Date(),
-        isPublished: parsed.publish,
+        productId,
+        ...body,
+        position: (max._max.position ?? -1) + 1,
       },
     })
 
-    revalidatePath(`/${parsed.locale}/products/${parsed.productId}/edit`)
-    return ok(undefined)
-  } catch (err) {
-    return failFromError(err)
-  }
-}
-
-export async function setQuestionPublished(
-  id: string,
-  productId: string,
-  isPublished: boolean,
-  locale: string,
-): Promise<Result<void>> {
-  try {
-    requireRole(await auth(), ROLES.CATALOGUE_WRITE)
-    z.string().uuid().parse(id)
-    z.string().uuid().parse(productId)
-    await db.productQuestion.update({ where: { id }, data: { isPublished } })
     revalidatePath(`/${locale}/products/${productId}/edit`)
     return ok(undefined)
   } catch (err) {
@@ -956,12 +938,63 @@ export async function setQuestionPublished(
   }
 }
 
-export async function deleteProductQuestion(id: string, productId: string, locale: string): Promise<Result<void>> {
+export async function updateProductFaq(formData: FormData): Promise<Result<void>> {
+  try {
+    requireRole(await auth(), ROLES.CATALOGUE_WRITE)
+    const id = z.string().uuid().parse(formData.get('id'))
+    const productId = z.string().uuid().parse(formData.get('productId'))
+    const locale = z.string().min(1).parse(formData.get('locale') ?? 'en')
+    const body = FaqBodySchema.parse({
+      question: formData.get('question'),
+      answer: formData.get('answer'),
+    })
+
+    await db.productFaq.update({ where: { id }, data: body })
+    revalidatePath(`/${locale}/products/${productId}/edit`)
+    return ok(undefined)
+  } catch (err) {
+    return failFromError(err)
+  }
+}
+
+export async function deleteProductFaq(id: string, productId: string, locale: string): Promise<Result<void>> {
   try {
     requireRole(await auth(), ROLES.CATALOGUE_WRITE)
     z.string().uuid().parse(id)
     z.string().uuid().parse(productId)
-    await db.productQuestion.delete({ where: { id } })
+    await db.productFaq.delete({ where: { id } })
+    revalidatePath(`/${locale}/products/${productId}/edit`)
+    return ok(undefined)
+  } catch (err) {
+    return failFromError(err)
+  }
+}
+
+export async function reorderProductFaq(
+  id: string,
+  direction: 'up' | 'down',
+  productId: string,
+  locale: string,
+): Promise<Result<void>> {
+  try {
+    requireRole(await auth(), ROLES.CATALOGUE_WRITE)
+    z.string().uuid().parse(id)
+    z.string().uuid().parse(productId)
+    const faqs = await db.productFaq.findMany({
+      where: { productId },
+      orderBy: { position: 'asc' },
+    })
+    const idx = faqs.findIndex((f) => f.id === id)
+    if (idx === -1) return fail('NOT_FOUND', 'FAQ not found')
+    const swapIdx = direction === 'up' ? idx - 1 : idx + 1
+    if (swapIdx < 0 || swapIdx >= faqs.length) return ok(undefined) // no-op at boundaries
+
+    const a = faqs[idx]!
+    const b = faqs[swapIdx]!
+    await db.$transaction([
+      db.productFaq.update({ where: { id: a.id }, data: { position: b.position } }),
+      db.productFaq.update({ where: { id: b.id }, data: { position: a.position } }),
+    ])
     revalidatePath(`/${locale}/products/${productId}/edit`)
     return ok(undefined)
   } catch (err) {

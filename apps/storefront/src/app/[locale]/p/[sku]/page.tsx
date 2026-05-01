@@ -57,11 +57,7 @@ export default async function ProductPage({ params, searchParams }: Props) {
       specs: { orderBy: { position: 'asc' } },
       documents: { orderBy: { position: 'asc' }, include: { media: true } },
       crossReferences: { take: 12 },
-      questions: {
-        where: { isPublished: true },
-        orderBy: { createdAt: 'desc' },
-        take: 50,
-      },
+      faqs: { orderBy: { position: 'asc' } },
       supersededBy: { select: { sku: true, title: true, slug: true } },
       specTemplate: {
         include: { fields: { orderBy: { position: 'asc' } } },
@@ -360,13 +356,10 @@ export default async function ProductPage({ params, searchParams }: Props) {
           specGroups={tabSpecGroups}
           documents={tabDocuments}
           crossReferences={tabCrossRefs}
-          questions={product.questions.map((q) => ({
-            id: q.id,
-            askerName: q.askerName,
-            question: q.question,
-            answer: q.answer,
-            answeredAt: q.answeredAt?.toISOString() ?? null,
-            createdAt: q.createdAt.toISOString(),
+          faqs={product.faqs.map((f) => ({
+            id: f.id,
+            question: f.question,
+            answer: f.answer,
           }))}
           isSignedIn={isSignedIn}
           leadTimeDays={product.leadTimeDays}

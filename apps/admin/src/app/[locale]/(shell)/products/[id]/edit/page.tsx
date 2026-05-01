@@ -29,7 +29,7 @@ export default async function EditProductPage({ params }: Props) {
         orderBy: { position: 'asc' },
         include: { media: true },
       },
-      questions: { orderBy: { createdAt: 'desc' } },
+      faqs: { orderBy: { position: 'asc' } },
       specTemplate: {
         include: { fields: { orderBy: { position: 'asc' } } },
       },
@@ -150,15 +150,11 @@ export default async function EditProductPage({ params }: Props) {
           isGated: d.isGated,
           url: d.media.storagePath,
         }))}
-        questions={product.questions.map((q) => ({
-          id: q.id,
-          askerName: q.askerName,
-          askerEmail: q.askerEmail,
-          question: q.question,
-          answer: q.answer,
-          answeredAt: q.answeredAt?.toISOString() ?? null,
-          isPublished: q.isPublished,
-          createdAt: q.createdAt.toISOString(),
+        faqs={product.faqs.map((f) => ({
+          id: f.id,
+          question: f.question,
+          answer: f.answer,
+          position: f.position,
         }))}
         brands={brands.map((b) => ({ id: b.id, name: b.name }))}
         categories={categories.map((c) => ({ id: c.id, name: c.name }))}

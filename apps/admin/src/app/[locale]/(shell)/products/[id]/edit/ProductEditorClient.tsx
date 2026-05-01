@@ -18,9 +18,10 @@ import {
   reorderProductImage,
   uploadProductDocument,
   deleteProductDocument,
-  answerProductQuestion,
-  setQuestionPublished,
-  deleteProductQuestion,
+  addProductFaq,
+  updateProductFaq,
+  deleteProductFaq,
+  reorderProductFaq,
   deleteProduct,
 } from '../../actions'
 import {
@@ -107,15 +108,11 @@ type Document = {
   isGated: boolean
   url: string
 }
-type Question = {
+type Faq = {
   id: string
-  askerName: string
-  askerEmail: string | null
   question: string
-  answer: string | null
-  answeredAt: string | null
-  isPublished: boolean
-  createdAt: string
+  answer: string
+  position: number
 }
 
 type Option = { id: string; name: string }
@@ -130,7 +127,7 @@ interface Props {
   crossRefs: CrossRef[]
   images: Image[]
   documents: Document[]
-  questions: Question[]
+  faqs: Faq[]
   brands: Option[]
   categories: Option[]
 }
@@ -143,7 +140,7 @@ const TABS = [
   { id: 'images', label: 'Images' },
   { id: 'documents', label: 'Documents' },
   { id: 'crossref', label: 'Compatibility' },
-  { id: 'qa', label: 'Q&A' },
+  { id: 'faq', label: 'FAQ' },
   { id: 'seo', label: 'SEO' },
 ] as const
 
@@ -159,7 +156,7 @@ export default function ProductEditorClient({
   crossRefs,
   images,
   documents,
-  questions,
+  faqs,
   brands,
   categories,
 }: Props) {
@@ -168,10 +165,6 @@ export default function ProductEditorClient({
 
   function bumpSaved() {
     setSavedAt(new Date().toLocaleTimeString())
-  }
-
-  const pendingCounts = {
-    qa: questions.filter((q) => !q.answer).length,
   }
 
   return (
@@ -208,28 +201,20 @@ export default function ProductEditorClient({
 
       {/* Tabs */}
       <div className="flex gap-0 border-b border-[var(--color-border)] mt-5 mb-6 overflow-x-auto">
-        {TABS.map((t) => {
-          const badge = t.id === 'qa' && pendingCounts.qa > 0 ? pendingCounts.qa : null
-          return (
-            <button
-              key={t.id}
-              type="button"
-              onClick={() => setTab(t.id)}
-              className={`px-4 py-2.5 text-[13px] font-medium border-b-2 transition-colors -mb-px whitespace-nowrap flex items-center gap-2 ${
-                tab === t.id
-                  ? 'border-[var(--color-accent)] text-[var(--color-primary)]'
-                  : 'border-transparent text-[var(--color-muted)] hover:text-[var(--color-primary)]'
-              }`}
-            >
-              {t.label}
-              {badge !== null && (
-                <span className="bg-[oklch(0.5_0.18_25)] text-white font-mono text-[10px] px-1.5 py-0.5 rounded-sm">
-                  {badge}
-                </span>
-              )}
-            </button>
-          )
-        })}
+        {TABS.map((t) => (
+          <button
+            key={t.id}
+            type="button"
+            onClick={() => setTab(t.id)}
+            className={`px-4 py-2.5 text-[13px] font-medium border-b-2 transition-colors -mb-px whitespace-nowrap ${
+              tab === t.id
+                ? 'border-[var(--color-accent)] text-[var(--color-primary)]'
+                : 'border-transparent text-[var(--color-muted)] hover:text-[var(--color-primary)]'
+            }`}
+          >
+            {t.label}
+          </button>
+        ))}
       </div>
 
       {tab === 'core' && (
@@ -250,7 +235,7 @@ export default function ProductEditorClient({
       {tab === 'images' && <ImagesTab productId={product.id} locale={locale} images={images} onSaved={bumpSaved} />}
       {tab === 'documents' && <DocumentsTab productId={product.id} locale={locale} documents={documents} onSaved={bumpSaved} />}
       {tab === 'crossref' && <CrossRefsTab productId={product.id} locale={locale} crossRefs={crossRefs} onSaved={bumpSaved} />}
-      {tab === 'qa' && <QaTab productId={product.id} locale={locale} questions={questions} onSaved={bumpSaved} />}
+      {tab === 'faq' && <FaqsTab productId={product.id} locale={locale} faqs={faqs} onSaved={bumpSaved} />}
       {tab === 'seo' && <SeoTab locale={locale} product={product} onSaved={bumpSaved} />}
     </div>
   )
@@ -1734,157 +1719,254 @@ function AddCrossRefForm({
   )
 }
 
-// ── Q&A tab ──────────────────────────────────────────────────────────────────
+// ── FAQ tab ──────────────────────────────────────────────────────────────────
 
-function QaTab({
+function FaqsTab({
   productId,
   locale,
-  questions,
+  faqs,
   onSaved,
 }: {
   productId: string
   locale: string
-  questions: Question[]
+  faqs: Faq[]
   onSaved: () => void
 }) {
-  if (questions.length === 0) {
-    return (
-      <div className="max-w-4xl bg-white border border-[var(--color-border)] p-8 text-center">
-        <p className="text-[13px] text-[var(--color-muted)]">
-          No customer questions yet. When customers submit questions from the storefront, they appear here for moderation.
-        </p>
-      </div>
-    )
-  }
-
   return (
-    <div className="flex flex-col gap-4 max-w-4xl">
-      {questions.map((q) => (
-        <QuestionCard key={q.id} q={q} productId={productId} locale={locale} onSaved={onSaved} />
-      ))}
+    <div className="flex flex-col gap-6 max-w-4xl">
+      <p className="text-[12px] text-[var(--color-muted)]">
+        Author frequently-asked questions for this product. They render in order on the storefront's FAQ tab as collapsible Q+A pairs.
+      </p>
+      {faqs.length === 0 ? (
+        <p className="text-[13px] text-[var(--color-muted)]">No FAQs yet — add the first one below.</p>
+      ) : (
+        <div className="bg-white border border-[var(--color-border)] flex flex-col">
+          {faqs.map((f, i) => (
+            <FaqRow
+              key={f.id}
+              faq={f}
+              productId={productId}
+              locale={locale}
+              isFirst={i === 0}
+              isLast={i === faqs.length - 1}
+              onSaved={onSaved}
+            />
+          ))}
+        </div>
+      )}
+      <AddFaqForm productId={productId} locale={locale} onSaved={onSaved} />
     </div>
   )
 }
 
-function QuestionCard({
-  q,
+function FaqRow({
+  faq,
+  productId,
+  locale,
+  isFirst,
+  isLast,
+  onSaved,
+}: {
+  faq: Faq
+  productId: string
+  locale: string
+  isFirst: boolean
+  isLast: boolean
+  onSaved: () => void
+}) {
+  const [editing, setEditing] = useState(false)
+  const [pending, startTransition] = useTransition()
+  const [error, setError] = useState<string | null>(null)
+
+  function onUpdate(formData: FormData) {
+    setError(null)
+    startTransition(async () => {
+      const r = await updateProductFaq(formData)
+      if (!r.success) {
+        setError(r.message)
+        return
+      }
+      setEditing(false)
+      onSaved()
+    })
+  }
+
+  function onDelete() {
+    if (!confirm('Delete this FAQ?')) return
+    startTransition(async () => {
+      await deleteProductFaq(faq.id, productId, locale)
+      onSaved()
+    })
+  }
+
+  function onReorder(direction: 'up' | 'down') {
+    startTransition(async () => {
+      await reorderProductFaq(faq.id, direction, productId, locale)
+      onSaved()
+    })
+  }
+
+  if (editing) {
+    return (
+      <form
+        action={onUpdate}
+        className="px-4 py-3 flex flex-col gap-2 border-t border-[var(--color-border)] first:border-t-0 bg-[var(--color-surface)]"
+      >
+        <input type="hidden" name="id" value={faq.id} />
+        <input type="hidden" name="productId" value={productId} />
+        <input type="hidden" name="locale" value={locale} />
+        <Field label="Question *">
+          <input required name="question" defaultValue={faq.question} className={inputCls} />
+        </Field>
+        <Field label="Answer *">
+          <textarea
+            required
+            name="answer"
+            defaultValue={faq.answer}
+            rows={4}
+            className={textareaCls}
+          />
+        </Field>
+        <div className="flex items-center gap-2">
+          <button
+            type="submit"
+            disabled={pending}
+            className="h-8 px-3 bg-[var(--color-accent)] text-white text-[11px] font-medium hover:opacity-90 disabled:opacity-50"
+          >
+            {pending ? 'Saving…' : 'Save'}
+          </button>
+          <button
+            type="button"
+            onClick={() => setEditing(false)}
+            className="h-8 px-2 text-[11px] text-[var(--color-muted)] hover:text-[var(--color-primary)]"
+          >
+            Cancel
+          </button>
+          {error && (
+            <span className="text-[11px] text-[oklch(0.5_0.18_25)]" role="alert">
+              {error}
+            </span>
+          )}
+        </div>
+      </form>
+    )
+  }
+
+  return (
+    <div className="px-4 py-3 flex gap-3 items-start border-t border-[var(--color-border)] first:border-t-0">
+      <div className="flex flex-col gap-0.5 pt-0.5">
+        <button
+          type="button"
+          onClick={() => onReorder('up')}
+          disabled={isFirst || pending}
+          className="font-mono text-[12px] text-[var(--color-muted)] hover:text-[var(--color-primary)] disabled:opacity-30 disabled:cursor-not-allowed"
+          title="Move up"
+        >
+          ↑
+        </button>
+        <button
+          type="button"
+          onClick={() => onReorder('down')}
+          disabled={isLast || pending}
+          className="font-mono text-[12px] text-[var(--color-muted)] hover:text-[var(--color-primary)] disabled:opacity-30 disabled:cursor-not-allowed"
+          title="Move down"
+        >
+          ↓
+        </button>
+      </div>
+      <div className="flex-1 min-w-0 flex flex-col gap-1">
+        <div className="text-[13px] font-medium text-[var(--color-primary)]">{faq.question}</div>
+        <div className="text-[12px] text-[var(--color-body)] whitespace-pre-wrap leading-[1.5]">
+          {faq.answer}
+        </div>
+      </div>
+      <div className="flex gap-3 shrink-0">
+        <button
+          type="button"
+          onClick={() => setEditing(true)}
+          className="font-mono text-[10px] text-[var(--color-muted)] hover:text-[var(--color-accent)]"
+        >
+          Edit
+        </button>
+        <button
+          type="button"
+          onClick={onDelete}
+          disabled={pending}
+          className="font-mono text-[10px] text-[var(--color-muted)] hover:text-[oklch(0.5_0.18_25)] disabled:opacity-50"
+        >
+          Remove
+        </button>
+      </div>
+    </div>
+  )
+}
+
+function AddFaqForm({
   productId,
   locale,
   onSaved,
 }: {
-  q: Question
   productId: string
   locale: string
   onSaved: () => void
 }) {
   const [pending, startTransition] = useTransition()
   const [error, setError] = useState<string | null>(null)
+  const formRef = useRef<HTMLFormElement>(null)
 
-  function onAnswer(formData: FormData) {
+  function onSubmit(formData: FormData) {
     setError(null)
     startTransition(async () => {
-      const r = await answerProductQuestion(formData)
+      const r = await addProductFaq(formData)
       if (!r.success) {
         setError(r.message)
         return
       }
-      onSaved()
-    })
-  }
-
-  function togglePublished() {
-    startTransition(async () => {
-      await setQuestionPublished(q.id, productId, !q.isPublished, locale)
-      onSaved()
-    })
-  }
-
-  function onDelete() {
-    if (!confirm('Delete this question permanently?')) return
-    startTransition(async () => {
-      await deleteProductQuestion(q.id, productId, locale)
+      formRef.current?.reset()
       onSaved()
     })
   }
 
   return (
-    <div className="bg-white border border-[var(--color-border)]">
-      <div className="px-4 py-3 border-b border-[var(--color-border)] flex items-center justify-between gap-3">
-        <div className="flex flex-col gap-0.5 min-w-0">
-          <span className="text-[13px] font-medium text-[var(--color-primary)]">
-            {q.askerName}
-            {q.askerEmail && (
-              <span className="font-mono text-[11px] text-[var(--color-muted)] ml-2">{q.askerEmail}</span>
-            )}
-          </span>
-          <span className="font-mono text-[10px] text-[var(--color-caption)]">
-            Asked {new Date(q.createdAt).toLocaleDateString()}
-          </span>
-        </div>
-        <div className="flex items-center gap-2">
-          <span
-            className={`font-mono text-[10px] tracking-[0.08em] uppercase px-2 py-0.5 ${
-              q.isPublished
-                ? 'bg-[oklch(0.95_0.05_150)] text-[oklch(0.45_0.12_150)]'
-                : 'bg-[var(--color-surface)] text-[var(--color-muted)]'
-            }`}
-          >
-            {q.isPublished ? 'Published' : 'Draft'}
-          </span>
-          <button
-            type="button"
-            onClick={togglePublished}
-            disabled={pending}
-            className="font-mono text-[10px] text-[var(--color-muted)] hover:text-[var(--color-accent)] disabled:opacity-50"
-          >
-            {q.isPublished ? 'Unpublish' : 'Publish'}
-          </button>
-          <button
-            type="button"
-            onClick={onDelete}
-            disabled={pending}
-            className="font-mono text-[10px] text-[var(--color-muted)] hover:text-[oklch(0.5_0.18_25)] disabled:opacity-50"
-          >
-            Delete
-          </button>
-        </div>
-      </div>
-      <div className="px-4 py-3 text-[13px] text-[var(--color-body)] bg-[var(--color-surface)] whitespace-pre-wrap">
-        {q.question}
-      </div>
-      <form action={onAnswer} className="px-4 py-3 flex flex-col gap-2">
-        <input type="hidden" name="id" value={q.id} />
-        <input type="hidden" name="productId" value={productId} />
-        <input type="hidden" name="locale" value={locale} />
-        <textarea
-          name="answer"
+    <form
+      ref={formRef}
+      action={onSubmit}
+      className="bg-white border border-[var(--color-border)] p-4 flex flex-col gap-3"
+    >
+      <input type="hidden" name="productId" value={productId} />
+      <input type="hidden" name="locale" value={locale} />
+      <Field label="Question *">
+        <input
           required
-          defaultValue={q.answer ?? ''}
+          name="question"
+          placeholder="What hose end fittings are compatible?"
+          className={inputCls}
+        />
+      </Field>
+      <Field label="Answer *">
+        <textarea
+          required
+          name="answer"
           rows={4}
-          placeholder="Type your answer here. It becomes visible on the storefront when published."
+          placeholder="Compatible with all standard SAE J516 fittings — JIC 37°, ORFS, BSP, Metric DIN."
           className={textareaCls}
         />
-        <div className="flex items-center gap-3">
-          <button
-            type="submit"
-            disabled={pending}
-            className="h-9 px-4 bg-[var(--color-accent)] text-white text-[12px] font-medium hover:opacity-90 disabled:opacity-50"
-          >
-            {pending ? 'Saving…' : q.answer ? 'Update answer' : 'Answer & publish'}
-          </button>
-          <label className="flex items-center gap-1.5 text-[12px] text-[var(--color-body)]">
-            <input type="checkbox" name="publish" defaultChecked={q.isPublished || !q.answer} />
-            Publish on save
-          </label>
-          {q.answeredAt && (
-            <span className="font-mono text-[10px] text-[var(--color-caption)] ml-auto">
-              Last answered {new Date(q.answeredAt).toLocaleString()}
-            </span>
-          )}
-          {error && <span className="text-[11px] text-[oklch(0.5_0.18_25)]">{error}</span>}
-        </div>
-      </form>
-    </div>
+      </Field>
+      <div className="flex items-center gap-3">
+        <button
+          type="submit"
+          disabled={pending}
+          className="h-9 px-4 bg-[var(--color-primary)] text-white text-[12px] font-medium hover:opacity-90 disabled:opacity-50 self-start"
+        >
+          {pending ? 'Adding…' : '+ Add FAQ'}
+        </button>
+        {error && (
+          <span className="text-[11px] text-[oklch(0.5_0.18_25)]" role="alert">
+            {error}
+          </span>
+        )}
+      </div>
+    </form>
   )
 }
 

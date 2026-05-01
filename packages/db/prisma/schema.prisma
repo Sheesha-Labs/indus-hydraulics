@@ -432,7 +432,7 @@ model Product {
   specs           ProductSpec[]
   documents       ProductDocument[]
   crossReferences ProductCrossReference[]
-  questions       ProductQuestion[]
+  faqs            ProductFaq[]
   rfqLines        RfqLine[]
   savedListItems  SavedListItem[]
   orderLines      OrderLine[]
@@ -552,22 +552,19 @@ model ProductCrossReference {
   @@map("product_cross_references")
 }
 
-model ProductQuestion {
-  id            String    @id @default(uuid())
-  productId     String
-  product       Product   @relation(fields: [productId], references: [id], onDelete: Cascade)
-  askerName     String
-  askerEmail    String?
-  question      String
-  answer        String?
-  answeredAt    DateTime?
-  isPublished   Boolean   @default(false)
-  createdAt     DateTime  @default(now())
-  updatedAt     DateTime  @updatedAt
+// Admin-curated FAQ shown on the product detail page. No customer-submission
+// flow — the previous moderated Q&A model was replaced because the field was
+// always intended to be a static, per-product FAQ.
+model ProductFaq {
+  id        String  @id @default(uuid())
+  productId String
+  product   Product @relation(fields: [productId], references: [id], onDelete: Cascade)
+  question  String
+  answer    String
+  position  Int     @default(0)
 
   @@index([productId])
-  @@index([isPublished])
-  @@map("product_questions")
+  @@map("product_faqs")
 }
 
 model Media {
