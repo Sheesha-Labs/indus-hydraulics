@@ -81,12 +81,12 @@ export default async function ProductPage({ params, searchParams }: Props) {
 
   const quickSpecs = product.specs.filter((s) => s.isFilterable).slice(0, 6)
 
-  // Phase 7 — template-driven key features.
-  // For every template field flagged isKeyFeature, find the matching ProductSpec
-  // value and produce a bullet. Falls back to descriptionShort newline-split
-  // when no template, no flagged fields, or no values are filled in.
+  // Template-driven key features. For every template field flagged
+  // isKeyFeature with a value entered on the product, produce a bullet.
+  // descriptionShort renders as its own paragraph elsewhere — it is no
+  // longer used as a fallback bullet source.
   const specByFieldId = new Map(product.specs.filter((s) => s.templateFieldId).map((s) => [s.templateFieldId!, s]))
-  const templatedKeyFeatures = (product.specTemplate?.fields ?? [])
+  const keyFeatures = (product.specTemplate?.fields ?? [])
     .filter((f) => f.isKeyFeature)
     .map((f) => {
       const spec = specByFieldId.get(f.id)
@@ -99,15 +99,6 @@ export default async function ProductPage({ params, searchParams }: Props) {
       return { id: f.id, text }
     })
     .filter((x): x is { id: string; text: string } => x !== null)
-
-  const fallbackKeyFeatures =
-    product.descriptionShort
-      ?.split('\n')
-      .map((s) => s.trim())
-      .filter(Boolean)
-      .map((text, i) => ({ id: `fallback-${i}`, text })) ?? []
-
-  const keyFeatures = templatedKeyFeatures.length > 0 ? templatedKeyFeatures : fallbackKeyFeatures
 
   const related = product.categoryId
     ? await db.product.findMany({
@@ -243,8 +234,15 @@ export default async function ProductPage({ params, searchParams }: Props) {
               <StockPill stockQty={product.stockQty} warehouse={product.stockWarehouse} leadTimeDays={product.leadTimeDays} />
             </div>
 
-            {/* Key features — template-driven if a template is attached, else
-                falls back to descriptionShort split on newlines. */}
+            {/* Short description — prose blurb above the bullet list. */}
+            {product.descriptionShort && (
+              <p className="text-[15px] text-[var(--color-body)] leading-[1.55] mb-5 whitespace-pre-line">
+                {product.descriptionShort}
+              </p>
+            )}
+
+            {/* Key features — template-driven bullets. Empty when no template
+                fields are flagged as Key feature, or no values have been entered. */}
             {keyFeatures.length > 0 && (
               <div className="pb-6">
                 <h3 className="font-mono text-[11px] tracking-[0.14em] uppercase text-[var(--color-muted)] mb-3.5">Key features</h3>
