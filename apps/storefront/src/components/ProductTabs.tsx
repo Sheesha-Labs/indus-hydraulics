@@ -78,7 +78,6 @@ export default function ProductTabs({
   const allSpecs = Object.values(specGroups).flat()
   const tabs = [
     { label: 'Description' },
-    { label: 'Technical Specs' },
     { label: 'Shipping & Lead Time' },
     { label: `Documents${documents.length > 0 ? ` (${documents.length})` : ''}` },
     { label: 'Compatibility' },
@@ -163,37 +162,8 @@ export default function ProductTabs({
         </div>
       )}
 
-      {/* Technical Specs */}
-      {active === 1 && (
-        <div>
-          {Object.keys(specGroups).length === 0 ? (
-            <p className="text-[14px] text-[var(--color-muted)]">No specifications available for this product.</p>
-          ) : (
-            <div className="grid grid-cols-2 gap-8">
-              {Object.entries(specGroups).map(([group, specs]) => (
-                <div key={group}>
-                  <h3 className="font-mono text-[11px] tracking-[0.14em] uppercase text-[var(--color-muted)] mb-2">{group}</h3>
-                  <table className="w-full font-mono text-[13px] border border-[var(--color-border)]">
-                    <tbody>
-                      {specs.map((spec) => (
-                        <tr key={spec.id} className="border-b border-[var(--color-border-2)] last:border-0">
-                          <td className="px-3.5 py-2.5 text-[var(--color-muted)] w-1/2 bg-[var(--color-deep)]">{spec.label}</td>
-                          <td className="px-3.5 py-2.5 font-medium text-[var(--color-primary)]">
-                            {spec.value}{spec.unit ? ` ${spec.unit}` : ''}
-                          </td>
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
-                </div>
-              ))}
-            </div>
-          )}
-        </div>
-      )}
-
       {/* Shipping & Lead Time — driven entirely by product DB fields */}
-      {active === 2 && (
+      {active === 1 && (
         <div className="max-w-[680px]">
           <ShippingTable
             leadTimeDays={leadTimeDays}
@@ -206,7 +176,7 @@ export default function ProductTabs({
       )}
 
       {/* Documents */}
-      {active === 3 && (
+      {active === 2 && (
         <div>
           {documents.length === 0 ? (
             <p className="text-[14px] text-[var(--color-muted)]">No documents available for this product.</p>
@@ -243,7 +213,7 @@ export default function ProductTabs({
       )}
 
       {/* Compatibility */}
-      {active === 4 && (
+      {active === 3 && (
         <div>
           {crossReferences.length === 0 ? (
             <p className="text-[14px] text-[var(--color-muted)]">No cross-reference data available. Contact our team for compatibility assistance.</p>
@@ -267,7 +237,7 @@ export default function ProductTabs({
       )}
 
       {/* Q&A */}
-      {active === 5 && (
+      {active === 4 && (
         <div className="max-w-[820px] flex flex-col gap-8">
           {questions.length === 0 ? (
             <p className="text-[14px] text-[var(--color-muted)]">
