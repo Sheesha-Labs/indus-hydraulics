@@ -44,13 +44,15 @@ export default function CategoriesClient({ locale, categories, templates }: Prop
   return (
     <div className="flex flex-col gap-6 max-w-4xl">
       <div className="flex items-center justify-end">
-        <button
-          type="button"
-          onClick={() => setShowCreate((v) => !v)}
-          className="h-9 px-4 bg-[var(--color-accent)] text-white text-[13px] font-medium hover:opacity-90"
-        >
-          {showCreate ? '× Cancel' : '+ New category'}
-        </button>
+        {!showCreate && (
+          <button
+            type="button"
+            onClick={() => setShowCreate(true)}
+            className="h-9 px-4 bg-[var(--color-accent)] text-white text-[13px] font-medium hover:opacity-90"
+          >
+            + New category
+          </button>
+        )}
       </div>
 
       {showCreate && (
@@ -241,98 +243,104 @@ function CategoryForm({
   return (
     <form
       action={onSubmit}
-      className="bg-white border border-[var(--color-border)] p-5 grid grid-cols-[1fr_160px_80px_140px_180px_auto_auto] gap-3 items-end"
+      className="bg-white border border-[var(--color-border)] p-5 flex flex-col gap-4"
     >
       <input type="hidden" name="locale" value={locale} />
       {existing && <input type="hidden" name="id" value={existing.id} />}
 
-      <Field label="Name *">
-        <input
-          required
-          name="name"
-          defaultValue={existing?.name ?? ''}
-          placeholder="Hydraulic Pumps"
-          className="h-9 px-3 border border-[var(--color-border)] bg-white text-[13px]"
-        />
-      </Field>
+      {/* Row 1: Name, Slug, Position, Parent */}
+      <div className="grid grid-cols-[1fr_1fr_80px_180px] gap-3 items-start">
+        <Field label="Name *">
+          <input
+            required
+            name="name"
+            defaultValue={existing?.name ?? ''}
+            placeholder="Hydraulic Pumps"
+            className="h-9 px-3 border border-[var(--color-border)] bg-white text-[13px] w-full"
+          />
+        </Field>
 
-      <Field label="Slug" hint="Auto from name">
-        <input
-          name="slug"
-          defaultValue={existing?.slug ?? ''}
-          placeholder="hydraulic-pumps"
-          className="h-9 px-3 border border-[var(--color-border)] bg-white font-mono text-[12px]"
-        />
-      </Field>
+        <Field label="Slug" hint="Auto from name">
+          <input
+            name="slug"
+            defaultValue={existing?.slug ?? ''}
+            placeholder="hydraulic-pumps"
+            className="h-9 px-3 border border-[var(--color-border)] bg-white font-mono text-[12px] w-full"
+          />
+        </Field>
 
-      <Field label="Position">
-        <input
-          name="position"
-          type="number"
-          defaultValue={existing?.position ?? 0}
-          className="h-9 px-3 border border-[var(--color-border)] bg-white font-mono text-[12px]"
-        />
-      </Field>
+        <Field label="Position">
+          <input
+            name="position"
+            type="number"
+            defaultValue={existing?.position ?? 0}
+            className="h-9 px-3 border border-[var(--color-border)] bg-white font-mono text-[12px] w-full"
+          />
+        </Field>
 
-      <Field label="Parent">
-        <select
-          name="parentId"
-          defaultValue={existing?.parentId ?? ''}
-          className="h-9 px-2 border border-[var(--color-border)] bg-white text-[12px]"
-        >
-          <option value="">— None —</option>
-          {parents
-            .filter((p) => p.id !== existing?.id)
-            .map((p) => (
-              <option key={p.id} value={p.id}>
-                {p.name}
+        <Field label="Parent">
+          <select
+            name="parentId"
+            defaultValue={existing?.parentId ?? ''}
+            className="h-9 px-2 border border-[var(--color-border)] bg-white text-[12px] w-full"
+          >
+            <option value="">— None —</option>
+            {parents
+              .filter((p) => p.id !== existing?.id)
+              .map((p) => (
+                <option key={p.id} value={p.id}>
+                  {p.name}
+                </option>
+              ))}
+          </select>
+        </Field>
+      </div>
+
+      {/* Row 2: Default spec template, Published, actions — items-start aligns to label row; action items add label-height spacer to drop down to input row */}
+      <div className="grid grid-cols-[1fr_auto_auto_auto] gap-3 items-start">
+        <Field label="Default spec template" hint="Auto-applied to new products in this category">
+          <select
+            name="defaultSpecTemplateId"
+            defaultValue={existing?.defaultSpecTemplateId ?? ''}
+            className="h-9 px-2 border border-[var(--color-border)] bg-white text-[12px] w-full"
+          >
+            <option value="">— None —</option>
+            {templates.map((t) => (
+              <option key={t.id} value={t.id}>
+                {t.name}
               </option>
             ))}
-        </select>
-      </Field>
+          </select>
+        </Field>
 
-      <Field label="Default spec template" hint="Auto-applied to new products in this category">
-        <select
-          name="defaultSpecTemplateId"
-          defaultValue={existing?.defaultSpecTemplateId ?? ''}
-          className="h-9 px-2 border border-[var(--color-border)] bg-white text-[12px]"
+        <label className="flex items-center gap-2 h-9 mt-[26px] text-[12px] text-[var(--color-body)] whitespace-nowrap">
+          <input
+            type="checkbox"
+            name="isPublished"
+            defaultChecked={existing?.isPublished ?? false}
+          />
+          Published
+        </label>
+
+        <button
+          type="submit"
+          disabled={pending}
+          className="h-9 mt-[26px] px-4 bg-[var(--color-primary)] text-white text-[12px] font-medium hover:opacity-90 disabled:opacity-50 whitespace-nowrap"
         >
-          <option value="">— None —</option>
-          {templates.map((t) => (
-            <option key={t.id} value={t.id}>
-              {t.name}
-            </option>
-          ))}
-        </select>
-      </Field>
+          {pending ? 'Saving…' : existing ? 'Save' : 'Create'}
+        </button>
 
-      <label className="flex items-center gap-2 h-9 text-[12px] text-[var(--color-body)]">
-        <input
-          type="checkbox"
-          name="isPublished"
-          defaultChecked={existing?.isPublished ?? false}
-        />
-        Published
-      </label>
-
-      <button
-        type="submit"
-        disabled={pending}
-        className="h-9 px-4 bg-[var(--color-primary)] text-white text-[12px] font-medium hover:opacity-90 disabled:opacity-50"
-      >
-        {pending ? 'Saving…' : existing ? 'Save' : 'Create'}
-      </button>
-
-      <button
-        type="button"
-        onClick={onDone}
-        className="h-9 px-3 text-[12px] text-[var(--color-muted)] hover:text-[var(--color-primary)]"
-      >
-        Cancel
-      </button>
+        <button
+          type="button"
+          onClick={onDone}
+          className="h-9 mt-[26px] px-3 text-[12px] text-[var(--color-muted)] hover:text-[var(--color-primary)] whitespace-nowrap"
+        >
+          Cancel
+        </button>
+      </div>
 
       {error && (
-        <p className="col-span-full text-[11px] text-[oklch(0.5_0.18_25)] -mt-2" role="alert">
+        <p className="text-[11px] text-[oklch(0.5_0.18_25)]" role="alert">
           {error}
         </p>
       )}
