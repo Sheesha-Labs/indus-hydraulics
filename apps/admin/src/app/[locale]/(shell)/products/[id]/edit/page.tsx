@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { db } from '@indus/db'
+import { signPreviewToken } from '@indus/domain'
 import AdminTopbar from '../../../../../../components/AdminTopbar'
 import ProductEditorClient from './ProductEditorClient'
 
@@ -48,6 +49,15 @@ export default async function EditProductPage({ params }: Props) {
 
   const dims = (product.dimensionsMm ?? null) as { l?: number; w?: number; h?: number } | null
 
+  const storefrontUrl = process.env.NEXT_PUBLIC_BASE_URL ?? 'http://localhost:3000'
+  let previewUrl: string | null = null
+  try {
+    const token = signPreviewToken(product.sku)
+    previewUrl = `${storefrontUrl}/${locale}/p/${encodeURIComponent(product.sku)}?preview=${encodeURIComponent(token)}`
+  } catch {
+    previewUrl = null
+  }
+
   return (
     <>
       <AdminTopbar
@@ -59,6 +69,7 @@ export default async function EditProductPage({ params }: Props) {
       />
       <ProductEditorClient
         locale={locale}
+        previewUrl={previewUrl}
         product={{
           id: product.id,
           sku: product.sku,

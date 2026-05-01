@@ -122,6 +122,7 @@ type Option = { id: string; name: string }
 
 interface Props {
   locale: string
+  previewUrl: string | null
   product: Product
   specs: Spec[]
   specTemplate: AttachedTemplate | null
@@ -150,6 +151,7 @@ type TabId = (typeof TABS)[number]['id']
 
 export default function ProductEditorClient({
   locale,
+  previewUrl,
   product,
   specs,
   specTemplate,
@@ -183,12 +185,23 @@ export default function ProductEditorClient({
           {savedAt && (
             <span className="text-[12px] text-[oklch(0.55_0.12_150)]">Saved at {savedAt}</span>
           )}
-          <Link
-            href={`/${locale}/products/${product.id}`}
-            className="h-9 px-3 border border-[var(--color-border)] text-[12px] text-[var(--color-muted)] hover:text-[var(--color-primary)]"
-          >
-            Preview ↗
-          </Link>
+          {previewUrl ? (
+            <a
+              href={previewUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="h-9 px-3 inline-flex items-center border border-[var(--color-border)] text-[12px] text-[var(--color-muted)] hover:text-[var(--color-primary)]"
+            >
+              Preview ↗
+            </a>
+          ) : (
+            <span
+              title="Set PREVIEW_TOKEN_SECRET in admin env to enable preview"
+              className="h-9 px-3 inline-flex items-center border border-[var(--color-border)] text-[12px] text-[var(--color-caption)] cursor-not-allowed"
+            >
+              Preview ↗
+            </span>
+          )}
           <DeleteButton id={product.id} locale={locale} />
         </div>
       </div>
@@ -1364,7 +1377,12 @@ function DocumentsTab({
 }) {
   const [pending, startTransition] = useTransition()
   const [error, setError] = useState<string | null>(null)
+  const [kind, setKind] = useState<string>('datasheet')
   const formRef = useRef<HTMLFormElement>(null)
+
+  const datasheetAccept = 'application/pdf,image/png,image/jpeg'
+  const isDatasheet = kind === 'datasheet'
+  const hasExistingDatasheet = documents.some((d) => d.kind === 'datasheet')
 
   function onAdd(formData: FormData) {
     setError(null)
@@ -1375,6 +1393,7 @@ function DocumentsTab({
         return
       }
       formRef.current?.reset()
+      setKind('datasheet')
       onSaved()
     })
   }
@@ -1442,7 +1461,12 @@ function DocumentsTab({
         <input type="hidden" name="productId" value={productId} />
         <input type="hidden" name="locale" value={locale} />
         <Field label="Kind">
-          <select name="kind" defaultValue="datasheet" className={selectCls}>
+          <select
+            name="kind"
+            value={kind}
+            onChange={(e) => setKind(e.target.value)}
+            className={selectCls}
+          >
             <option value="datasheet">Datasheet</option>
             <option value="step">STEP file</option>
             <option value="iges">IGES file</option>
@@ -1453,11 +1477,21 @@ function DocumentsTab({
         <Field label="Title *">
           <input required name="title" placeholder="A10VSO 71 Datasheet" className={inputCls} />
         </Field>
-        <Field label="File *" hint="PDF / STEP / IGES — max 50MB">
+        <Field
+          label="File *"
+          hint={
+            isDatasheet
+              ? hasExistingDatasheet
+                ? 'PDF / PNG / JPG / JPEG — max 50MB. Uploading will replace the existing datasheet.'
+                : 'PDF / PNG / JPG / JPEG — max 50MB. One datasheet per product.'
+              : 'STEP / IGES / PDF — max 50MB'
+          }
+        >
           <input
             required
             name="file"
             type="file"
+            accept={isDatasheet ? datasheetAccept : undefined}
             className="text-[13px] file:mr-3 file:h-9 file:px-3 file:border file:border-[var(--color-border)] file:bg-[var(--color-surface)] file:text-[12px] file:font-medium file:cursor-pointer file:hover:bg-[var(--color-deep)]"
           />
         </Field>

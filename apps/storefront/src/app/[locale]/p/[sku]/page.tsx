@@ -5,6 +5,7 @@ import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import Image from 'next/image'
 import { db } from '@indus/db'
+import { verifyPreviewToken } from '@indus/domain'
 import { getTranslations } from 'next-intl/server'
 import { safeAuth } from '../../../../lib/auth'
 import ProductGallery from '../../../../components/ProductGallery'
@@ -14,6 +15,7 @@ import ProductStickyBar from '../../../../components/ProductStickyBar'
 
 type Props = {
   params: Promise<{ locale: string; sku: string }>
+  searchParams: Promise<{ preview?: string }>
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -29,14 +31,25 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 }
 
-export default async function ProductPage({ params }: Props) {
+export default async function ProductPage({ params, searchParams }: Props) {
   const { locale, sku } = await params
+  const sp = (await searchParams) ?? {}
   await getTranslations({ locale, namespace: 'product' })
   const session = await safeAuth()
   const isSignedIn = !!session
 
+  const decodedSku = decodeURIComponent(sku)
+  let isPreview = false
+  if (sp.preview) {
+    try {
+      isPreview = verifyPreviewToken(sp.preview, decodedSku).valid
+    } catch {
+      isPreview = false
+    }
+  }
+
   const product = await db.product.findUnique({
-    where: { sku: decodeURIComponent(sku) },
+    where: { sku: decodedSku },
     include: {
       brand: true,
       category: true,
@@ -56,7 +69,8 @@ export default async function ProductPage({ params }: Props) {
     },
   })
 
-  if (!product || product.status === 'draft') notFound()
+  if (!product) notFound()
+  if (product.status === 'draft' && !isPreview) notFound()
 
   const specGroups = product.specs.reduce<Record<string, typeof product.specs>>((acc, spec) => {
     const g = spec.group ?? 'General'
@@ -150,6 +164,11 @@ export default async function ProductPage({ params }: Props) {
 
   return (
     <>
+      {isPreview && (
+        <div className="bg-[oklch(0.95_0.08_85)] border-b border-[oklch(0.75_0.12_85)] py-2.5 px-8 text-center font-mono text-[12px] text-[oklch(0.4_0.12_70)] tracking-[0.04em]">
+          PREVIEW MODE · {product.status.toUpperCase()} · not visible to public
+        </div>
+      )}
       <div className="max-w-[1360px] mx-auto px-8">
         {/* Breadcrumbs */}
         <nav className="py-4 border-b border-[var(--color-border-2)] font-mono text-[12px] text-[var(--color-muted)] flex gap-2 items-center flex-wrap">
