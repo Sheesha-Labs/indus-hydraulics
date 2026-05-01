@@ -8,64 +8,99 @@ type Props = {
   title: string
 }
 
+const HERO_BOX = 'relative w-full aspect-[4/3] max-h-[min(56vh,480px)] border border-[var(--color-border)] bg-[var(--color-elevated)] overflow-hidden'
+
 export default function ProductGallery({ images, title }: Props) {
   const [active, setActive] = useState(0)
 
   if (images.length === 0) {
     return (
       <div className="flex flex-col gap-3">
-        <div className="aspect-square border border-[var(--color-border)] bg-[var(--color-deep)] grid place-items-center relative overflow-hidden">
+        <div className={HERO_BOX + ' bg-[var(--color-deep)] grid place-items-center'}>
           <div className="font-mono text-[11px] tracking-[0.08em] text-[var(--color-muted)] text-center">
             <div className="text-4xl mb-3 opacity-20">⚙</div>
             {title}
           </div>
-          <div
-            className="absolute inset-0 pointer-events-none opacity-[0.04]"
-            style={{
-              backgroundImage: 'linear-gradient(to right, currentColor 1px, transparent 1px), linear-gradient(to bottom, currentColor 1px, transparent 1px)',
-              backgroundSize: '40px 40px',
-            }}
-          />
+          <GridOverlay />
         </div>
       </div>
     )
   }
 
-  const current = images[active]
+  const current = images[active]!
+  const calloutLabel = current.alt?.trim() || title
 
   return (
     <div className="flex flex-col gap-3">
-      <div className="aspect-square border border-[var(--color-border)] bg-[var(--color-elevated)] relative overflow-hidden">
+      <div className={HERO_BOX}>
         <Image
-          src={current!.url}
-          alt={current!.alt}
+          src={current.url}
+          alt={current.alt}
           fill
-          className="object-contain p-8"
+          className="object-contain p-6"
           sizes="(max-width: 1280px) 100vw, 50vw"
           priority
         />
-        <div
-          className="absolute inset-0 pointer-events-none opacity-[0.03]"
-          style={{
-            backgroundImage: 'linear-gradient(to right, currentColor 1px, transparent 1px), linear-gradient(to bottom, currentColor 1px, transparent 1px)',
-            backgroundSize: '40px 40px',
-          }}
-        />
+        <GridOverlay />
+
+        {/* Top-left view callout (matches design's "VIEW 01 · 3/4 PERSPECTIVE") */}
+        <div className="absolute top-4 left-4 bg-[var(--color-primary)] text-[var(--color-elevated)] font-mono text-[10px] tracking-[0.06em] px-2.5 py-1.5 max-w-[60%]">
+          <span className="opacity-70">VIEW {String(active + 1).padStart(2, '0')}</span>
+          {calloutLabel && (
+            <>
+              <span className="opacity-40 mx-1.5">·</span>
+              <span className="uppercase truncate align-middle inline-block max-w-[200px]">{calloutLabel}</span>
+            </>
+          )}
+        </div>
+
+        {/* Bottom-right index counter — minimal, not a fake scale */}
+        {images.length > 1 && (
+          <div className="absolute bottom-4 right-4 bg-[var(--color-primary)] text-[var(--color-elevated)] font-mono text-[10px] tracking-[0.06em] px-2.5 py-1.5">
+            {active + 1} / {images.length}
+          </div>
+        )}
       </div>
+
+      {/* Thumbnail strip — always 4 columns to match the design grid */}
       {images.length > 1 && (
         <div className="grid grid-cols-4 gap-2">
-          {images.map((img, i) => (
+          {images.slice(0, 8).map((img, i) => (
             <button
               key={i}
+              type="button"
               onClick={() => setActive(i)}
-              className={`aspect-square border bg-[var(--color-elevated)] relative overflow-hidden transition-colors ${i === active ? 'border-[var(--color-primary)] border-2' : 'border-[var(--color-border)] hover:border-[var(--color-body)]'}`}
-              aria-label={`View image ${i + 1}`}
+              className={`relative aspect-square border bg-[var(--color-elevated)] overflow-hidden transition-colors ${
+                i === active
+                  ? 'border-[var(--color-primary)] border-2'
+                  : 'border-[var(--color-border)] hover:border-[var(--color-body)]'
+              }`}
+              aria-label={`View ${i + 1}: ${img.alt || `image ${i + 1}`}`}
+              aria-current={i === active ? 'true' : undefined}
             >
-              <Image src={img.url} alt={img.alt} fill className="object-contain p-2" sizes="10vw" />
+              <Image src={img.url} alt={img.alt} fill className="object-contain p-2" sizes="12vw" />
+              {img.alt && (
+                <span className="absolute bottom-1 left-1 right-1 font-mono text-[9px] tracking-[0.04em] text-[var(--color-muted)] truncate text-left">
+                  {img.alt}
+                </span>
+              )}
             </button>
           ))}
         </div>
       )}
     </div>
+  )
+}
+
+function GridOverlay() {
+  return (
+    <div
+      className="absolute inset-0 pointer-events-none opacity-[0.04]"
+      style={{
+        backgroundImage:
+          'linear-gradient(to right, currentColor 1px, transparent 1px), linear-gradient(to bottom, currentColor 1px, transparent 1px)',
+        backgroundSize: '40px 40px',
+      }}
+    />
   )
 }

@@ -10,12 +10,19 @@ type Props = { params: Promise<{ locale: string }> }
 export default async function CategoriesPage({ params }: Props) {
   const { locale } = await params
 
-  const categoriesRaw = await db.category.findMany({
-    orderBy: [{ parentId: 'asc' }, { position: 'asc' }, { name: 'asc' }],
-    include: {
-      _count: { select: { products: true, children: true } },
-    },
-  })
+  const [categoriesRaw, templates] = await Promise.all([
+    db.category.findMany({
+      orderBy: [{ parentId: 'asc' }, { position: 'asc' }, { name: 'asc' }],
+      include: {
+        _count: { select: { products: true, children: true } },
+        defaultSpecTemplate: { select: { id: true, name: true, slug: true } },
+      },
+    }),
+    db.specTemplate.findMany({
+      orderBy: { name: 'asc' },
+      select: { id: true, name: true, slug: true },
+    }),
+  ])
 
   const categories = categoriesRaw.map((c) => ({
     id: c.id,
@@ -26,6 +33,8 @@ export default async function CategoriesPage({ params }: Props) {
     isPublished: c.isPublished,
     productCount: c._count.products,
     childCount: c._count.children,
+    defaultSpecTemplateId: c.defaultSpecTemplateId,
+    defaultSpecTemplateName: c.defaultSpecTemplate?.name ?? null,
   }))
 
   return (
@@ -41,7 +50,7 @@ export default async function CategoriesPage({ params }: Props) {
           </div>
         </div>
 
-        <CategoriesClient locale={locale} categories={categories} />
+        <CategoriesClient locale={locale} categories={categories} templates={templates} />
       </div>
     </>
   )

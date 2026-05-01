@@ -1,4 +1,5 @@
 import { mediaUrl } from '../../../../lib/media'
+import { signedUrlFor } from '../../../../lib/supabase'
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
@@ -43,7 +44,15 @@ export default async function ProductPage({ params }: Props) {
       specs: { orderBy: { position: 'asc' } },
       documents: { orderBy: { position: 'asc' }, include: { media: true } },
       crossReferences: { take: 12 },
+      questions: {
+        where: { isPublished: true },
+        orderBy: { createdAt: 'desc' },
+        take: 50,
+      },
       supersededBy: { select: { sku: true, title: true, slug: true } },
+      specTemplate: {
+        include: { fields: { orderBy: { position: 'asc' } } },
+      },
     },
   })
 
@@ -58,6 +67,34 @@ export default async function ProductPage({ params }: Props) {
 
   const quickSpecs = product.specs.filter((s) => s.isFilterable).slice(0, 6)
 
+  // Phase 7 — template-driven key features.
+  // For every template field flagged isKeyFeature, find the matching ProductSpec
+  // value and produce a bullet. Falls back to descriptionShort newline-split
+  // when no template, no flagged fields, or no values are filled in.
+  const specByFieldId = new Map(product.specs.filter((s) => s.templateFieldId).map((s) => [s.templateFieldId!, s]))
+  const templatedKeyFeatures = (product.specTemplate?.fields ?? [])
+    .filter((f) => f.isKeyFeature)
+    .map((f) => {
+      const spec = specByFieldId.get(f.id)
+      if (!spec || !spec.value) return null
+      // For boolean fields, only render bullets for affirmative values.
+      if (f.dataType === 'boolean' && spec.value.toLowerCase() !== 'yes') return null
+      const valuePart =
+        f.dataType === 'boolean' ? f.label : f.unit ? `${spec.value} ${f.unit}` : spec.value
+      const text = f.dataType === 'boolean' ? valuePart : `${f.label}: ${valuePart}`
+      return { id: f.id, text }
+    })
+    .filter((x): x is { id: string; text: string } => x !== null)
+
+  const fallbackKeyFeatures =
+    product.descriptionShort
+      ?.split('\n')
+      .map((s) => s.trim())
+      .filter(Boolean)
+      .map((text, i) => ({ id: `fallback-${i}`, text })) ?? []
+
+  const keyFeatures = templatedKeyFeatures.length > 0 ? templatedKeyFeatures : fallbackKeyFeatures
+
   const related = product.categoryId
     ? await db.product.findMany({
         where: { categoryId: product.categoryId, status: 'active', sku: { not: product.sku } },
@@ -70,7 +107,11 @@ export default async function ProductPage({ params }: Props) {
     : []
 
   const firstDatasheet = product.documents.find((d) => !d.isGated || isSignedIn)
-  const datasheetUrl = firstDatasheet ? mediaUrl(firstDatasheet.media.storagePath) : undefined
+  let datasheetUrl: string | undefined
+  if (firstDatasheet) {
+    const path = firstDatasheet.media.storagePath
+    datasheetUrl = path.startsWith('product-documents/') ? await signedUrlFor(path) : mediaUrl(path)
+  }
 
   const tabSpecGroups = Object.fromEntries(
     Object.entries(specGroups).map(([g, specs]) =>
@@ -78,14 +119,27 @@ export default async function ProductPage({ params }: Props) {
     )
   )
 
-  const tabDocuments = product.documents.map((d) => ({
-    id: d.id,
-    title: d.title,
-    kind: d.kind,
-    language: d.language,
-    isGated: d.isGated,
-    mediaUrl: mediaUrl(d.media.storagePath),
-  }))
+  // Resolve each doc to a download URL. Public bucket → mediaUrl gives the
+  // direct public URL. Private bucket → mint a short-lived signed URL when
+  // the user is signed in (or the doc isn't gated).
+  const tabDocuments = await Promise.all(
+    product.documents.map(async (d) => {
+      const isPrivateBucket = d.media.storagePath.startsWith('product-documents/')
+      const canAccess = !d.isGated || isSignedIn
+      let url = ''
+      if (canAccess) {
+        url = isPrivateBucket ? await signedUrlFor(d.media.storagePath) : mediaUrl(d.media.storagePath)
+      }
+      return {
+        id: d.id,
+        title: d.title,
+        kind: d.kind,
+        language: d.language,
+        isGated: d.isGated,
+        mediaUrl: url,
+      }
+    }),
+  )
 
   const tabCrossRefs = product.crossReferences.map((r) => ({
     id: r.id,
@@ -161,23 +215,29 @@ export default async function ProductPage({ params }: Props) {
               {product.title}
             </h1>
 
-            {/* SKU / MPN row */}
-            <div className="flex gap-4 items-center pb-4 mb-4 border-b border-[var(--color-border-2)] font-mono text-[13px] text-[var(--color-muted)]">
+            {/* SKU / MPN / stock row */}
+            <div className="flex gap-4 items-center flex-wrap pb-4 mb-4 border-b border-[var(--color-border-2)] font-mono text-[13px] text-[var(--color-muted)]">
               <span>SKU: <b className="text-[var(--color-primary)] font-medium">{product.sku}</b></span>
               {product.mpn && (
                 <span>MFR P/N: <b className="text-[var(--color-primary)] font-medium">{product.mpn}</b></span>
               )}
+              <StockPill stockQty={product.stockQty} warehouse={product.stockWarehouse} leadTimeDays={product.leadTimeDays} />
             </div>
 
-            {/* Key features */}
-            {product.descriptionShort && (
+            {/* Key features — template-driven if a template is attached, else
+                falls back to descriptionShort split on newlines. */}
+            {keyFeatures.length > 0 && (
               <div className="pb-6">
                 <h3 className="font-mono text-[11px] tracking-[0.14em] uppercase text-[var(--color-muted)] mb-3.5">Key features</h3>
                 <ul className="flex flex-col gap-2.5">
-                  {product.descriptionShort.split('\n').filter(Boolean).map((line, i) => (
-                    <li key={i} className="grid gap-2.5 text-[14px] leading-[1.5] text-[var(--color-body)]" style={{ gridTemplateColumns: '16px 1fr' }}>
+                  {keyFeatures.map((feat) => (
+                    <li
+                      key={feat.id}
+                      className="grid gap-2.5 text-[14px] leading-[1.5] text-[var(--color-body)]"
+                      style={{ gridTemplateColumns: '16px 1fr' }}
+                    >
                       <span className="text-[var(--color-accent)] font-semibold">✓</span>
-                      <span>{line}</span>
+                      <span>{feat.text}</span>
                     </li>
                   ))}
                 </ul>
@@ -277,11 +337,20 @@ export default async function ProductPage({ params }: Props) {
         <ProductTabs
           locale={locale}
           sku={product.sku}
+          productId={product.id}
           descriptionShort={product.descriptionShort}
           descriptionLong={product.descriptionLong}
           specGroups={tabSpecGroups}
           documents={tabDocuments}
           crossReferences={tabCrossRefs}
+          questions={product.questions.map((q) => ({
+            id: q.id,
+            askerName: q.askerName,
+            question: q.question,
+            answer: q.answer,
+            answeredAt: q.answeredAt?.toISOString() ?? null,
+            createdAt: q.createdAt.toISOString(),
+          }))}
           isSignedIn={isSignedIn}
           leadTimeDays={product.leadTimeDays}
           warrantyMonths={product.warrantyMonths}
@@ -343,5 +412,49 @@ export default async function ProductPage({ params }: Props) {
         datasheetUrl={datasheetUrl}
       />
     </>
+  )
+}
+
+// ── Stock pill — green when stocked, amber for build-to-order, grey when neither ─────────────
+function StockPill({
+  stockQty,
+  warehouse,
+  leadTimeDays,
+}: {
+  stockQty: number
+  warehouse: string | null
+  leadTimeDays: number | null
+}) {
+  if (stockQty > 0) {
+    return (
+      <span
+        className="inline-flex items-center gap-1.5 px-2.5 py-1 font-mono text-[11px] font-medium tracking-[0.04em]"
+        style={{ background: 'oklch(0.95 0.05 150)', color: 'oklch(0.45 0.12 150)' }}
+      >
+        <span className="w-1.5 h-1.5 rounded-full" style={{ background: 'oklch(0.55 0.15 150)' }} />
+        In stock · {stockQty} unit{stockQty === 1 ? '' : 's'}
+        {warehouse ? ` · ${warehouse}` : ''}
+      </span>
+    )
+  }
+  if (leadTimeDays !== null && leadTimeDays > 0) {
+    return (
+      <span
+        className="inline-flex items-center gap-1.5 px-2.5 py-1 font-mono text-[11px] font-medium tracking-[0.04em]"
+        style={{ background: 'oklch(0.95 0.05 80)', color: 'oklch(0.45 0.13 70)' }}
+      >
+        <span className="w-1.5 h-1.5 rounded-full" style={{ background: 'oklch(0.6 0.15 70)' }} />
+        Lead time · {leadTimeDays} day{leadTimeDays === 1 ? '' : 's'}
+      </span>
+    )
+  }
+  return (
+    <span
+      className="inline-flex items-center gap-1.5 px-2.5 py-1 font-mono text-[11px] font-medium tracking-[0.04em]"
+      style={{ background: 'var(--color-deep)', color: 'var(--color-muted)' }}
+    >
+      <span className="w-1.5 h-1.5 rounded-full" style={{ background: 'var(--color-muted)' }} />
+      Contact for availability
+    </span>
   )
 }

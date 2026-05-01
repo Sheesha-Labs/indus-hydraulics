@@ -9,8 +9,9 @@ generator client {
 }
 
 datasource db {
-  provider = "postgresql"
-  url      = env("DATABASE_URL")
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -187,6 +188,13 @@ enum ImportRowOutcome {
   skipped
 }
 
+enum SpecFieldType {
+  text
+  number
+  boolean
+  select
+}
+
 // ─────────────────────────────────────────────────────────────────────────────
 // IDENTITY & ACCOUNTS
 // ─────────────────────────────────────────────────────────────────────────────
@@ -329,19 +337,21 @@ model AccountActivity {
 // ─────────────────────────────────────────────────────────────────────────────
 
 model Category {
-  id               String     @id @default(uuid())
-  parentId         String?
-  parent           Category?  @relation("CategoryTree", fields: [parentId], references: [id])
-  children         Category[] @relation("CategoryTree")
-  slug             String     @unique
-  name             String
-  shortDescription String?
-  seoTitle         String?
-  seoDescription   String?
-  imageId          String?
-  image            Media?     @relation(fields: [imageId], references: [id])
-  position         Int        @default(0)
-  isPublished      Boolean    @default(false)
+  id                    String        @id @default(uuid())
+  parentId              String?
+  parent                Category?     @relation("CategoryTree", fields: [parentId], references: [id])
+  children              Category[]    @relation("CategoryTree")
+  slug                  String        @unique
+  name                  String
+  shortDescription      String?
+  seoTitle              String?
+  seoDescription        String?
+  imageId               String?
+  image                 Media?        @relation(fields: [imageId], references: [id])
+  position              Int           @default(0)
+  isPublished           Boolean       @default(false)
+  defaultSpecTemplateId String?
+  defaultSpecTemplate   SpecTemplate? @relation("CategoryDefaultTemplate", fields: [defaultSpecTemplateId], references: [id], onDelete: SetNull)
 
   products Product[]
 
@@ -403,12 +413,16 @@ model Product {
   dimensionsMm      Json?         // {l, w, h}
   leadTimeDays      Int?
   warrantyMonths    Int?
+  stockQty          Int           @default(0) // Aggregate stock across all warehouses; 0 = out of stock / lead-time-only
+  stockWarehouse    String?       // Free-text warehouse identifier for the storefront pill (e.g. "Mumbai")
   countryOfOrigin   String?
   hsCode            String?
   status            ProductStatus @default(draft)
   supersededById    String?
   supersededBy      Product?      @relation("Supersession", fields: [supersededById], references: [id])
   supersedes        Product[]     @relation("Supersession")
+  specTemplateId    String?
+  specTemplate      SpecTemplate? @relation(fields: [specTemplateId], references: [id], onDelete: SetNull)
   seoTitle          String?
   seoDescription    String?
   createdAt         DateTime      @default(now())
@@ -418,6 +432,7 @@ model Product {
   specs           ProductSpec[]
   documents       ProductDocument[]
   crossReferences ProductCrossReference[]
+  questions       ProductQuestion[]
   rfqLines        RfqLine[]
   savedListItems  SavedListItem[]
   orderLines      OrderLine[]
@@ -442,18 +457,64 @@ model ProductImage {
 }
 
 model ProductSpec {
-  id           String  @id @default(uuid())
-  productId    String
-  product      Product @relation(fields: [productId], references: [id], onDelete: Cascade)
-  group        String  // "Hydraulic performance", "Mechanical", "Fluids", "Commercial"
-  label        String
-  value        String
-  unit         String?
-  position     Int     @default(0)
-  isFilterable Boolean @default(false)
+  id              String             @id @default(uuid())
+  productId       String
+  product         Product            @relation(fields: [productId], references: [id], onDelete: Cascade)
+  group           String             // "Hydraulic performance", "Mechanical", "Fluids", "Commercial"
+  label           String
+  value           String
+  unit            String?
+  position        Int                @default(0)
+  isFilterable    Boolean            @default(false)
+  templateFieldId String?
+  templateField   SpecTemplateField? @relation(fields: [templateFieldId], references: [id], onDelete: SetNull)
 
   @@index([productId])
+  @@index([templateFieldId])
   @@map("product_specs")
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// SPEC TEMPLATES — reusable typed schemas for product specs/key features.
+// A category sets a default template; products attach to one. Each field has
+// flags (isKeyFeature, isQuickSpec) for which storefront render zone it drives.
+// ─────────────────────────────────────────────────────────────────────────────
+
+model SpecTemplate {
+  id          String              @id @default(uuid())
+  slug        String              @unique
+  name        String
+  description String?
+  position    Int                 @default(0)
+  fields      SpecTemplateField[]
+  products    Product[]
+  categories  Category[]          @relation("CategoryDefaultTemplate")
+  createdAt   DateTime            @default(now())
+  updatedAt   DateTime            @updatedAt
+
+  @@map("spec_templates")
+}
+
+model SpecTemplateField {
+  id           String        @id @default(uuid())
+  templateId   String
+  template     SpecTemplate  @relation(fields: [templateId], references: [id], onDelete: Cascade)
+  key          String        // immutable machine name once any ProductSpec references it
+  label        String
+  unit         String?
+  dataType     SpecFieldType @default(text)
+  options      Json?         // for dataType=select: ["A","B","C"]
+  helpText     String?
+  isRequired   Boolean       @default(false)
+  isKeyFeature Boolean       @default(false)
+  isQuickSpec  Boolean       @default(false)
+  group        String?       // grouping for the tech-specs tab
+  position     Int           @default(0)
+  productSpecs ProductSpec[]
+
+  @@unique([templateId, key])
+  @@index([templateId])
+  @@map("spec_template_fields")
 }
 
 model ProductDocument {
@@ -482,6 +543,24 @@ model ProductCrossReference {
 
   @@index([productId])
   @@map("product_cross_references")
+}
+
+model ProductQuestion {
+  id            String    @id @default(uuid())
+  productId     String
+  product       Product   @relation(fields: [productId], references: [id], onDelete: Cascade)
+  askerName     String
+  askerEmail    String?
+  question      String
+  answer        String?
+  answeredAt    DateTime?
+  isPublished   Boolean   @default(false)
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+
+  @@index([productId])
+  @@index([isPublished])
+  @@map("product_questions")
 }
 
 model Media {

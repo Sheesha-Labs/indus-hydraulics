@@ -1,0 +1,616 @@
+'use client'
+
+import { useState, useTransition } from 'react'
+import Link from 'next/link'
+import {
+  updateSpecTemplate,
+  addTemplateField,
+  updateTemplateField,
+  deleteTemplateField,
+  reorderTemplateField,
+} from '../actions'
+
+type FieldRow = {
+  id: string
+  key: string
+  label: string
+  unit: string | null
+  dataType: 'text' | 'number' | 'boolean' | 'select'
+  options: string[] | null
+  helpText: string | null
+  isRequired: boolean
+  isKeyFeature: boolean
+  isQuickSpec: boolean
+  group: string | null
+  position: number
+}
+
+type ProductRow = {
+  id: string
+  sku: string
+  title: string
+  status: string
+  categoryName: string | null
+  updatedAt: string
+}
+
+type Template = {
+  id: string
+  slug: string
+  name: string
+  description: string | null
+}
+
+interface Props {
+  locale: string
+  template: Template
+  fields: FieldRow[]
+  products: ProductRow[]
+  totalProductCount: number
+}
+
+const STATUS_COLORS: Record<string, string> = {
+  active: 'text-[oklch(0.4_0.14_145)] bg-[oklch(0.94_0.06_145)]',
+  draft: 'text-[var(--color-muted)] bg-[var(--color-deep)]',
+  discontinued: 'text-[oklch(0.5_0.12_25)] bg-[oklch(0.96_0.04_25)]',
+}
+
+export default function TemplateEditorClient({
+  locale,
+  template,
+  fields,
+  products,
+  totalProductCount,
+}: Props) {
+  return (
+    <div className="flex flex-col gap-8 max-w-5xl">
+      <Section title="Template details">
+        <BasicInfoForm locale={locale} template={template} />
+      </Section>
+
+      <Section title={`Fields (${fields.length})`}>
+        <FieldManager locale={locale} templateId={template.id} fields={fields} />
+      </Section>
+
+      <Section title={`Products using this template (${totalProductCount})`}>
+        <AttachedProductsList locale={locale} products={products} totalCount={totalProductCount} />
+      </Section>
+    </div>
+  )
+}
+
+// ── Basic info form ────────────────────────────────────────────────────────
+
+function BasicInfoForm({ locale, template }: { locale: string; template: Template }) {
+  const [pending, startTransition] = useTransition()
+  const [error, setError] = useState<string | null>(null)
+  const [saved, setSaved] = useState(false)
+
+  function onSubmit(formData: FormData) {
+    setError(null)
+    setSaved(false)
+    startTransition(async () => {
+      const res = await updateSpecTemplate(formData)
+      if (!res.success) {
+        setError(res.message)
+        return
+      }
+      setSaved(true)
+      setTimeout(() => setSaved(false), 2000)
+    })
+  }
+
+  return (
+    <form action={onSubmit} className="bg-white border border-[var(--color-border)] p-5 grid gap-3">
+      <input type="hidden" name="locale" value={locale} />
+      <input type="hidden" name="id" value={template.id} />
+      <div className="grid grid-cols-2 gap-3">
+        <Field label="Name *">
+          <input
+            required
+            name="name"
+            defaultValue={template.name}
+            className="h-9 px-3 border border-[var(--color-border)] bg-white text-[13px]"
+          />
+        </Field>
+        <Field label="Slug *">
+          <input
+            required
+            name="slug"
+            defaultValue={template.slug}
+            className="h-9 px-3 border border-[var(--color-border)] bg-white font-mono text-[12px]"
+          />
+        </Field>
+      </div>
+      <Field label="Description">
+        <textarea
+          name="description"
+          defaultValue={template.description ?? ''}
+          rows={2}
+          className="px-3 py-2 border border-[var(--color-border)] bg-white text-[13px] resize-y"
+        />
+      </Field>
+      <div className="flex items-center gap-2 pt-2">
+        <button
+          type="submit"
+          disabled={pending}
+          className="h-9 px-4 bg-[var(--color-primary)] text-white text-[12px] font-medium hover:opacity-90 disabled:opacity-50"
+        >
+          {pending ? 'Saving…' : 'Save details'}
+        </button>
+        {saved && <span className="font-mono text-[11px] text-[oklch(0.4_0.14_145)]">✓ Saved</span>}
+        {error && (
+          <span className="font-mono text-[11px] text-[oklch(0.5_0.18_25)]" role="alert">
+            {error}
+          </span>
+        )}
+      </div>
+    </form>
+  )
+}
+
+// ── Field manager ──────────────────────────────────────────────────────────
+
+function FieldManager({
+  locale,
+  templateId,
+  fields,
+}: {
+  locale: string
+  templateId: string
+  fields: FieldRow[]
+}) {
+  const [editingId, setEditingId] = useState<string | null>(null)
+  const [showAdd, setShowAdd] = useState(false)
+
+  return (
+    <div className="flex flex-col gap-4">
+      <p className="text-[12px] text-[var(--color-muted)] -mt-2">
+        Each field becomes a typed input on the product editor. Toggle <b>Key feature</b> to render it
+        as a bullet at the top of the product page; toggle <b>Quick spec</b> to put it in the 6-cell
+        spec table.
+      </p>
+
+      {fields.length === 0 ? (
+        <div className="py-10 border border-dashed border-[var(--color-border)] text-center">
+          <p className="text-[var(--color-muted)] mb-3 text-[13px]">No fields yet.</p>
+          <button
+            type="button"
+            onClick={() => setShowAdd(true)}
+            className="inline-flex h-9 px-4 items-center bg-[var(--color-accent)] text-white text-[13px] font-medium hover:opacity-90"
+          >
+            + Add first field
+          </button>
+        </div>
+      ) : (
+        <div className="bg-white border border-[var(--color-border)]">
+          <div className="grid grid-cols-[40px_1fr_140px_120px_80px_140px_100px] px-4 py-2.5 bg-[var(--color-surface)] border-b border-[var(--color-border)] font-mono text-[10px] tracking-[0.1em] uppercase text-[var(--color-muted)]">
+            <div />
+            <div>Label / key</div>
+            <div>Group</div>
+            <div>Type</div>
+            <div className="text-center">Unit</div>
+            <div className="text-center">Flags</div>
+            <div className="text-right" />
+          </div>
+
+          {fields.map((f, i) => {
+            const isEditing = editingId === f.id
+            return (
+              <div key={f.id}>
+                {isEditing ? (
+                  <div className="border-t border-[var(--color-border)] bg-[var(--color-deep)] p-4">
+                    <FieldForm
+                      locale={locale}
+                      templateId={templateId}
+                      existing={f}
+                      onDone={() => setEditingId(null)}
+                    />
+                  </div>
+                ) : (
+                  <div className="grid grid-cols-[40px_1fr_140px_120px_80px_140px_100px] px-4 py-3 items-center text-[13px] border-t border-[var(--color-border)]">
+                    <div className="flex flex-col gap-0.5">
+                      <ReorderButton
+                        templateId={templateId}
+                        fieldId={f.id}
+                        locale={locale}
+                        direction="up"
+                        disabled={i === 0}
+                      />
+                      <ReorderButton
+                        templateId={templateId}
+                        fieldId={f.id}
+                        locale={locale}
+                        direction="down"
+                        disabled={i === fields.length - 1}
+                      />
+                    </div>
+                    <div>
+                      <div className="text-[var(--color-primary)] font-medium">{f.label}</div>
+                      <div className="text-[11px] text-[var(--color-muted)] font-mono mt-0.5">{f.key}</div>
+                    </div>
+                    <div className="text-[12px] text-[var(--color-body)]">
+                      {f.group ?? <span className="text-[var(--color-caption)]">General</span>}
+                    </div>
+                    <div className="font-mono text-[11px] text-[var(--color-muted)]">{f.dataType}</div>
+                    <div className="text-center font-mono text-[11px] text-[var(--color-muted)]">
+                      {f.unit ?? '—'}
+                    </div>
+                    <div className="flex items-center justify-center gap-1">
+                      {f.isKeyFeature && <Pill tone="ok">Key</Pill>}
+                      {f.isQuickSpec && <Pill tone="info">Quick</Pill>}
+                      {f.isRequired && <Pill tone="warn">Req</Pill>}
+                    </div>
+                    <div className="flex items-center justify-end gap-2">
+                      <button
+                        type="button"
+                        onClick={() => setEditingId(f.id)}
+                        className="font-mono text-[10px] text-[var(--color-muted)] hover:text-[var(--color-primary)]"
+                      >
+                        Edit
+                      </button>
+                      <DeleteFieldButton fieldId={f.id} templateId={templateId} locale={locale} />
+                    </div>
+                  </div>
+                )}
+              </div>
+            )
+          })}
+        </div>
+      )}
+
+      {fields.length > 0 && !showAdd && !editingId && (
+        <div>
+          <button
+            type="button"
+            onClick={() => setShowAdd(true)}
+            className="h-9 px-4 bg-[var(--color-accent)] text-white text-[12px] font-medium hover:opacity-90"
+          >
+            + Add field
+          </button>
+        </div>
+      )}
+
+      {showAdd && (
+        <FieldForm locale={locale} templateId={templateId} onDone={() => setShowAdd(false)} />
+      )}
+    </div>
+  )
+}
+
+function FieldForm({
+  locale,
+  templateId,
+  existing,
+  onDone,
+}: {
+  locale: string
+  templateId: string
+  existing?: FieldRow
+  onDone: () => void
+}) {
+  const [pending, startTransition] = useTransition()
+  const [error, setError] = useState<string | null>(null)
+  const [dataType, setDataType] = useState<FieldRow['dataType']>(existing?.dataType ?? 'text')
+
+  function onSubmit(formData: FormData) {
+    setError(null)
+    startTransition(async () => {
+      const res = existing ? await updateTemplateField(formData) : await addTemplateField(formData)
+      if (!res.success) {
+        setError(res.message)
+        return
+      }
+      onDone()
+    })
+  }
+
+  return (
+    <form action={onSubmit} className="bg-white border border-[var(--color-border)] p-5 grid gap-3">
+      <input type="hidden" name="locale" value={locale} />
+      <input type="hidden" name="templateId" value={templateId} />
+      {existing && <input type="hidden" name="id" value={existing.id} />}
+
+      <div className="grid grid-cols-2 gap-3">
+        <Field label="Label *" hint="Display name shown to admins and customers">
+          <input
+            required
+            name="label"
+            defaultValue={existing?.label ?? ''}
+            placeholder="Operating pressure"
+            className="h-9 px-3 border border-[var(--color-border)] bg-white text-[13px]"
+          />
+        </Field>
+        <Field
+          label="Key"
+          hint={
+            existing
+              ? 'Locked once products use this field — only editable while unreferenced.'
+              : 'Auto-generated from label (machine name)'
+          }
+        >
+          <input
+            name="key"
+            defaultValue={existing?.key ?? ''}
+            placeholder="operating_pressure"
+            className="h-9 px-3 border border-[var(--color-border)] bg-white font-mono text-[12px]"
+          />
+        </Field>
+      </div>
+
+      <div className="grid grid-cols-3 gap-3">
+        <Field label="Data type">
+          <select
+            name="dataType"
+            value={dataType}
+            onChange={(e) => setDataType(e.target.value as FieldRow['dataType'])}
+            className="h-9 px-2 border border-[var(--color-border)] bg-white text-[13px]"
+          >
+            <option value="text">Text</option>
+            <option value="number">Number</option>
+            <option value="boolean">Yes / No</option>
+            <option value="select">Select (dropdown)</option>
+          </select>
+        </Field>
+        <Field label="Unit" hint="e.g. bar, mm, kg">
+          <input
+            name="unit"
+            defaultValue={existing?.unit ?? ''}
+            placeholder="bar"
+            className="h-9 px-3 border border-[var(--color-border)] bg-white font-mono text-[12px]"
+          />
+        </Field>
+        <Field label="Group" hint="Section header in the tech-specs tab">
+          <input
+            name="group"
+            defaultValue={existing?.group ?? ''}
+            placeholder="Hydraulic performance"
+            className="h-9 px-3 border border-[var(--color-border)] bg-white text-[13px]"
+          />
+        </Field>
+      </div>
+
+      {dataType === 'select' && (
+        <Field label="Options *" hint="One per line">
+          <textarea
+            name="options"
+            defaultValue={existing?.options?.join('\n') ?? ''}
+            rows={4}
+            placeholder={'1-wire\n2-wire\nspiral'}
+            className="px-3 py-2 border border-[var(--color-border)] bg-white text-[13px] font-mono resize-y"
+          />
+        </Field>
+      )}
+
+      <Field label="Help text" hint="Optional — shown under the input on the product editor">
+        <input
+          name="helpText"
+          defaultValue={existing?.helpText ?? ''}
+          className="h-9 px-3 border border-[var(--color-border)] bg-white text-[13px]"
+        />
+      </Field>
+
+      <div className="flex flex-wrap items-center gap-x-6 gap-y-2 pt-1">
+        <label className="flex items-center gap-1.5 text-[12px] text-[var(--color-body)]">
+          <input
+            type="checkbox"
+            name="isRequired"
+            defaultChecked={existing?.isRequired ?? false}
+          />
+          Required
+        </label>
+        <label className="flex items-center gap-1.5 text-[12px] text-[var(--color-body)]">
+          <input
+            type="checkbox"
+            name="isKeyFeature"
+            defaultChecked={existing?.isKeyFeature ?? false}
+          />
+          Key feature (PDP bullet)
+        </label>
+        <label className="flex items-center gap-1.5 text-[12px] text-[var(--color-body)]">
+          <input
+            type="checkbox"
+            name="isQuickSpec"
+            defaultChecked={existing?.isQuickSpec ?? false}
+          />
+          Quick spec (top-of-PDP table)
+        </label>
+      </div>
+
+      <div className="flex items-center gap-2 pt-2">
+        <button
+          type="submit"
+          disabled={pending}
+          className="h-9 px-4 bg-[var(--color-primary)] text-white text-[12px] font-medium hover:opacity-90 disabled:opacity-50"
+        >
+          {pending ? 'Saving…' : existing ? 'Save field' : 'Add field'}
+        </button>
+        <button
+          type="button"
+          onClick={onDone}
+          className="h-9 px-3 text-[12px] text-[var(--color-muted)] hover:text-[var(--color-primary)]"
+        >
+          Cancel
+        </button>
+        {error && (
+          <span className="font-mono text-[11px] text-[oklch(0.5_0.18_25)]" role="alert">
+            {error}
+          </span>
+        )}
+      </div>
+    </form>
+  )
+}
+
+function ReorderButton({
+  templateId,
+  fieldId,
+  locale,
+  direction,
+  disabled,
+}: {
+  templateId: string
+  fieldId: string
+  locale: string
+  direction: 'up' | 'down'
+  disabled: boolean
+}) {
+  const [pending, startTransition] = useTransition()
+  return (
+    <button
+      type="button"
+      disabled={pending || disabled}
+      onClick={() =>
+        startTransition(async () => {
+          await reorderTemplateField(fieldId, direction, templateId, locale)
+        })
+      }
+      title={direction === 'up' ? 'Move up' : 'Move down'}
+      className="font-mono text-[10px] text-[var(--color-muted)] hover:text-[var(--color-primary)] disabled:opacity-30"
+    >
+      {direction === 'up' ? '↑' : '↓'}
+    </button>
+  )
+}
+
+function DeleteFieldButton({
+  fieldId,
+  templateId,
+  locale,
+}: {
+  fieldId: string
+  templateId: string
+  locale: string
+}) {
+  const [pending, startTransition] = useTransition()
+  const [error, setError] = useState<string | null>(null)
+  return (
+    <>
+      <button
+        type="button"
+        disabled={pending}
+        onClick={() => {
+          if (
+            !confirm(
+              'Delete this field? Existing values on products will become "additional specs" rather than vanish.',
+            )
+          )
+            return
+          setError(null)
+          startTransition(async () => {
+            const res = await deleteTemplateField(fieldId, templateId, locale)
+            if (!res.success) setError(res.message)
+          })
+        }}
+        className="font-mono text-[10px] text-[var(--color-muted)] hover:text-[oklch(0.5_0.18_25)] disabled:opacity-30"
+      >
+        {pending ? '…' : 'Delete'}
+      </button>
+      {error && <span className="text-[10px] text-[oklch(0.5_0.18_25)]">{error}</span>}
+    </>
+  )
+}
+
+// ── Attached products ──────────────────────────────────────────────────────
+
+function AttachedProductsList({
+  locale,
+  products,
+  totalCount,
+}: {
+  locale: string
+  products: ProductRow[]
+  totalCount: number
+}) {
+  if (totalCount === 0) {
+    return (
+      <p className="text-[13px] text-[var(--color-muted)] py-4">
+        No products use this template yet. When you create or edit a product and pick this template,
+        it will show up here.
+      </p>
+    )
+  }
+
+  return (
+    <div className="bg-white border border-[var(--color-border)]">
+      <div className="grid grid-cols-[140px_1fr_140px_100px_100px] px-4 py-2.5 bg-[var(--color-surface)] border-b border-[var(--color-border)] font-mono text-[10px] tracking-[0.1em] uppercase text-[var(--color-muted)]">
+        <div>SKU</div>
+        <div>Title</div>
+        <div>Category</div>
+        <div className="text-center">Status</div>
+        <div className="text-right">Updated</div>
+      </div>
+
+      {products.map((p) => (
+        <Link
+          key={p.id}
+          href={`/${locale}/products/${p.id}/edit`}
+          className="grid grid-cols-[140px_1fr_140px_100px_100px] px-4 py-3 items-center text-[13px] border-t border-[var(--color-border)] hover:bg-[var(--color-deep)] transition-colors"
+        >
+          <div className="font-mono text-[12px] text-[var(--color-muted)] truncate">{p.sku}</div>
+          <div className="text-[var(--color-primary)] font-medium truncate">{p.title}</div>
+          <div className="text-[12px] text-[var(--color-body)] truncate">
+            {p.categoryName ?? <span className="text-[var(--color-caption)]">—</span>}
+          </div>
+          <div className="flex justify-center">
+            <span className={`px-2 py-0.5 font-mono text-[10px] font-semibold capitalize ${STATUS_COLORS[p.status] ?? ''}`}>
+              {p.status}
+            </span>
+          </div>
+          <div className="text-right font-mono text-[11px] text-[var(--color-muted)]">
+            {new Date(p.updatedAt).toLocaleDateString()}
+          </div>
+        </Link>
+      ))}
+
+      {totalCount > products.length && (
+        <div className="px-4 py-3 border-t border-[var(--color-border)] text-[12px] text-[var(--color-muted)]">
+          Showing first {products.length} of {totalCount}.
+        </div>
+      )}
+    </div>
+  )
+}
+
+// ── Bits ────────────────────────────────────────────────────────────────────
+
+function Section({ title, children }: { title: string; children: React.ReactNode }) {
+  return (
+    <div>
+      <h2 className="text-[14px] font-semibold mb-3 text-[var(--color-primary)]">{title}</h2>
+      {children}
+    </div>
+  )
+}
+
+function Field({
+  label,
+  hint,
+  children,
+}: {
+  label: string
+  hint?: string
+  children: React.ReactNode
+}) {
+  return (
+    <label className="flex flex-col gap-1.5">
+      <span className="text-[11px] font-medium text-[var(--color-body)]">{label}</span>
+      {children}
+      {hint && <span className="text-[10px] text-[var(--color-caption)]">{hint}</span>}
+    </label>
+  )
+}
+
+function Pill({ children, tone }: { children: React.ReactNode; tone: 'ok' | 'warn' | 'info' }) {
+  const cls =
+    tone === 'ok'
+      ? 'text-[oklch(0.4_0.14_145)] bg-[oklch(0.94_0.06_145)]'
+      : tone === 'warn'
+        ? 'text-[oklch(0.5_0.15_60)] bg-[oklch(0.97_0.04_60)]'
+        : 'text-[var(--color-accent)] bg-[oklch(0.96_0.05_240)]'
+  return (
+    <span className={`inline-block px-1.5 py-0.5 font-mono text-[9px] font-semibold uppercase ${cls}`}>
+      {children}
+    </span>
+  )
+}

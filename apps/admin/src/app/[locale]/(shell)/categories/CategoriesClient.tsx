@@ -12,14 +12,23 @@ type Cat = {
   isPublished: boolean
   productCount: number
   childCount: number
+  defaultSpecTemplateId: string | null
+  defaultSpecTemplateName: string | null
+}
+
+type TemplateOption = {
+  id: string
+  name: string
+  slug: string
 }
 
 interface Props {
   locale: string
   categories: Cat[]
+  templates: TemplateOption[]
 }
 
-export default function CategoriesClient({ locale, categories }: Props) {
+export default function CategoriesClient({ locale, categories, templates }: Props) {
   const [editingId, setEditingId] = useState<string | null>(null)
   const [showCreate, setShowCreate] = useState(false)
 
@@ -48,6 +57,7 @@ export default function CategoriesClient({ locale, categories }: Props) {
         <CategoryForm
           locale={locale}
           parents={categories}
+          templates={templates}
           onDone={() => setShowCreate(false)}
         />
       )}
@@ -58,11 +68,12 @@ export default function CategoriesClient({ locale, categories }: Props) {
         </div>
       ) : (
         <div className="bg-white border border-[var(--color-border)]">
-          <div className="grid grid-cols-[1fr_140px_80px_80px_100px_120px] px-4 py-2.5 bg-[var(--color-surface)] border-b border-[var(--color-border)] font-mono text-[10px] tracking-[0.1em] uppercase text-[var(--color-muted)]">
+          <div className="grid grid-cols-[1fr_140px_60px_70px_140px_90px_100px] px-4 py-2.5 bg-[var(--color-surface)] border-b border-[var(--color-border)] font-mono text-[10px] tracking-[0.1em] uppercase text-[var(--color-muted)]">
             <div>Name</div>
             <div>Slug</div>
-            <div className="text-center">Position</div>
-            <div className="text-center">Products</div>
+            <div className="text-center">Pos</div>
+            <div className="text-center">Prod</div>
+            <div>Default template</div>
             <div className="text-center">Status</div>
             <div className="text-right"></div>
           </div>
@@ -76,6 +87,7 @@ export default function CategoriesClient({ locale, categories }: Props) {
               editingId={editingId}
               setEditingId={setEditingId}
               parents={categories}
+              templates={templates}
               locale={locale}
             />
           ))}
@@ -92,6 +104,7 @@ export default function CategoriesClient({ locale, categories }: Props) {
                 editingId={editingId}
                 setEditingId={setEditingId}
                 parents={categories}
+                templates={templates}
                 locale={locale}
               />
             ))}
@@ -108,6 +121,7 @@ function CategoryRows({
   editingId,
   setEditingId,
   parents,
+  templates,
   locale,
 }: {
   cat: Cat
@@ -116,6 +130,7 @@ function CategoryRows({
   editingId: string | null
   setEditingId: (id: string | null) => void
   parents: Cat[]
+  templates: TemplateOption[]
   locale: string
 }) {
   const isEditing = editingId === cat.id
@@ -127,13 +142,14 @@ function CategoryRows({
           <CategoryForm
             locale={locale}
             parents={parents}
+            templates={templates}
             existing={cat}
             onDone={() => setEditingId(null)}
           />
         </div>
       ) : (
         <div
-          className={`grid grid-cols-[1fr_140px_80px_80px_100px_120px] px-4 py-3 items-center text-[13px] border-t border-[var(--color-border)]`}
+          className={`grid grid-cols-[1fr_140px_60px_70px_140px_90px_100px] px-4 py-3 items-center text-[13px] border-t border-[var(--color-border)]`}
           style={{ paddingLeft: `${16 + depth * 24}px` }}
         >
           <div className="text-[var(--color-primary)] font-medium">
@@ -144,6 +160,9 @@ function CategoryRows({
           <div className="text-center font-mono text-[12px] text-[var(--color-muted)]">{cat.position}</div>
           <div className="text-center font-mono text-[12px] text-[var(--color-primary)]">
             {cat.productCount}
+          </div>
+          <div className="text-[12px] text-[var(--color-body)] truncate">
+            {cat.defaultSpecTemplateName ?? <span className="text-[var(--color-caption)]">—</span>}
           </div>
           <div className="flex justify-center">
             <span
@@ -183,6 +202,7 @@ function CategoryRows({
           editingId={editingId}
           setEditingId={setEditingId}
           parents={parents}
+          templates={templates}
           locale={locale}
         />
       ))}
@@ -193,11 +213,13 @@ function CategoryRows({
 function CategoryForm({
   locale,
   parents,
+  templates,
   existing,
   onDone,
 }: {
   locale: string
   parents: Cat[]
+  templates: TemplateOption[]
   existing?: Cat
   onDone: () => void
 }) {
@@ -219,7 +241,7 @@ function CategoryForm({
   return (
     <form
       action={onSubmit}
-      className="bg-white border border-[var(--color-border)] p-5 grid grid-cols-[1fr_180px_100px_100px_140px_auto_auto] gap-3 items-end"
+      className="bg-white border border-[var(--color-border)] p-5 grid grid-cols-[1fr_160px_80px_140px_180px_auto_auto] gap-3 items-end"
     >
       <input type="hidden" name="locale" value={locale} />
       {existing && <input type="hidden" name="id" value={existing.id} />}
@@ -266,6 +288,21 @@ function CategoryForm({
                 {p.name}
               </option>
             ))}
+        </select>
+      </Field>
+
+      <Field label="Default spec template" hint="Auto-applied to new products in this category">
+        <select
+          name="defaultSpecTemplateId"
+          defaultValue={existing?.defaultSpecTemplateId ?? ''}
+          className="h-9 px-2 border border-[var(--color-border)] bg-white text-[12px]"
+        >
+          <option value="">— None —</option>
+          {templates.map((t) => (
+            <option key={t.id} value={t.id}>
+              {t.name}
+            </option>
+          ))}
         </select>
       </Field>
 

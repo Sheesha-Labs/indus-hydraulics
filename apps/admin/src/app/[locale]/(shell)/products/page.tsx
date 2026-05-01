@@ -1,19 +1,39 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { db } from '@indus/db'
+import { db, Prisma } from '@indus/db'
 import AdminTopbar from '../../../../components/AdminTopbar'
 
 export const metadata: Metadata = { title: 'Products — Indus Admin' }
 
 type Props = {
   params: Promise<{ locale: string }>
-  searchParams: Promise<{ status?: string; brand?: string; category?: string; q?: string }>
+  searchParams: Promise<{
+    status?: string
+    brand?: string
+    category?: string
+    q?: string
+    sort?: string
+    dir?: string
+    page?: string
+  }>
 }
 
 const STATUS_COLORS: Record<string, string> = {
   active: 'text-[oklch(0.4_0.14_145)] bg-[oklch(0.94_0.06_145)]',
   draft: 'text-[var(--color-muted)] bg-[var(--color-deep)]',
   discontinued: 'text-[oklch(0.5_0.12_25)] bg-[oklch(0.96_0.04_25)]',
+}
+
+const PAGE_SIZE = 50
+
+// Whitelist of sortable columns → Prisma orderBy fragments. Anything outside
+// this set falls back to updatedAt to avoid arbitrary-column injection.
+const SORTABLE: Record<string, keyof Prisma.ProductOrderByWithRelationInput> = {
+  sku: 'sku',
+  title: 'title',
+  status: 'status',
+  updatedAt: 'updatedAt',
+  createdAt: 'createdAt',
 }
 
 export default async function AdminProductsPage({ params, searchParams }: Props) {
@@ -24,33 +44,53 @@ export default async function AdminProductsPage({ params, searchParams }: Props)
   const brandFilter = sp.brand ?? ''
   const categoryFilter = sp.category ?? ''
   const query = (sp.q ?? '').trim()
+  const sortKey = (sp.sort && SORTABLE[sp.sort]) || 'updatedAt'
+  const sortDir: 'asc' | 'desc' = sp.dir === 'asc' ? 'asc' : 'desc'
+  const page = Math.max(1, Number.parseInt(sp.page ?? '1', 10) || 1)
 
-  const products = await db.product.findMany({
-    where: {
-      ...(statusFilter ? { status: statusFilter as never } : {}),
-      ...(brandFilter ? { brandId: brandFilter } : {}),
-      ...(categoryFilter ? { categoryId: categoryFilter } : {}),
-      ...(query
-        ? {
-            OR: [
-              { title: { contains: query, mode: 'insensitive' } },
-              { sku: { contains: query, mode: 'insensitive' } },
-              { mpn: { contains: query, mode: 'insensitive' } },
-            ],
-          }
-        : {}),
-    },
-    include: { brand: true, category: true },
-    orderBy: { updatedAt: 'desc' },
-    take: 100,
-  })
+  const where: Prisma.ProductWhereInput = {
+    ...(statusFilter ? { status: statusFilter as Prisma.ProductWhereInput['status'] } : {}),
+    ...(brandFilter ? { brandId: brandFilter } : {}),
+    ...(categoryFilter ? { categoryId: categoryFilter } : {}),
+    ...(query
+      ? {
+          OR: [
+            { title: { contains: query, mode: 'insensitive' } },
+            { sku: { contains: query, mode: 'insensitive' } },
+            { mpn: { contains: query, mode: 'insensitive' } },
+          ],
+        }
+      : {}),
+  }
 
-  function filterUrl(overrides: Record<string, string | undefined>) {
+  const [total, products, brands, categories, statusCounts] = await Promise.all([
+    db.product.count({ where }),
+    db.product.findMany({
+      where,
+      include: { brand: true, category: true },
+      orderBy: { [sortKey]: sortDir },
+      skip: (page - 1) * PAGE_SIZE,
+      take: PAGE_SIZE,
+    }),
+    db.brand.findMany({ orderBy: { name: 'asc' }, select: { id: true, name: true } }),
+    db.category.findMany({ orderBy: { name: 'asc' }, select: { id: true, name: true } }),
+    db.product.groupBy({ by: ['status'], _count: { _all: true } }),
+  ])
+
+  const totalPages = Math.max(1, Math.ceil(total / PAGE_SIZE))
+  const showingFrom = total === 0 ? 0 : (page - 1) * PAGE_SIZE + 1
+  const showingTo = Math.min(page * PAGE_SIZE, total)
+  const statusCountMap = Object.fromEntries(statusCounts.map((s) => [s.status, s._count._all]))
+
+  function buildUrl(overrides: Record<string, string | undefined>) {
     const base: Record<string, string | undefined> = {
       status: statusFilter || undefined,
       brand: brandFilter || undefined,
       category: categoryFilter || undefined,
       q: query || undefined,
+      sort: sortKey === 'updatedAt' ? undefined : sortKey,
+      dir: sortDir === 'desc' ? undefined : sortDir,
+      page: page === 1 ? undefined : String(page),
     }
     const merged = { ...base, ...overrides }
     const qp = new URLSearchParams()
@@ -60,6 +100,14 @@ export default async function AdminProductsPage({ params, searchParams }: Props)
     const qs = qp.toString()
     return `/${locale}/products${qs ? `?${qs}` : ''}`
   }
+
+  function sortUrl(col: keyof typeof SORTABLE) {
+    // Toggle dir if clicking the active column; default to asc otherwise (except updatedAt which is naturally desc).
+    const newDir = sortKey === col ? (sortDir === 'asc' ? 'desc' : 'asc') : col === 'updatedAt' || col === 'createdAt' ? 'desc' : 'asc'
+    return buildUrl({ sort: col === 'updatedAt' ? undefined : col, dir: newDir === 'desc' ? undefined : newDir, page: undefined })
+  }
+
+  const sortIndicator = (col: keyof typeof SORTABLE) => (sortKey === col ? (sortDir === 'asc' ? ' ↑' : ' ↓') : '')
 
   return (
     <>
@@ -73,7 +121,9 @@ export default async function AdminProductsPage({ params, searchParams }: Props)
           <div>
             <h1 className="text-[24px] font-semibold tracking-tight">Products</h1>
             <p className="text-[13px] text-[var(--color-muted)] mt-1">
-              {products.length} {products.length === 1 ? 'product' : 'products'} shown
+              {total === 0
+                ? 'No products'
+                : `Showing ${showingFrom.toLocaleString()}–${showingTo.toLocaleString()} of ${total.toLocaleString()}`}
             </p>
           </div>
           <Link
@@ -84,54 +134,76 @@ export default async function AdminProductsPage({ params, searchParams }: Props)
           </Link>
         </div>
 
-        {/* Search + filters */}
-        <div className="flex flex-wrap items-center gap-3 mb-6">
-          <form
-            method="GET"
-            action={`/${locale}/products`}
-            className="flex border border-[var(--color-border)] bg-[var(--color-elevated)] h-9"
+        {/* Search + filter form (single submission to keep URL canonical) */}
+        <form
+          method="GET"
+          action={`/${locale}/products`}
+          className="flex flex-wrap items-center gap-2 mb-3"
+        >
+          <input
+            name="q"
+            defaultValue={query}
+            placeholder="Search SKU, title, MPN…"
+            className="w-64 h-9 px-3 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] text-[var(--color-primary)] placeholder:text-[var(--color-caption)] focus:outline-none focus:border-[var(--color-primary)]"
+          />
+          <select
+            name="brand"
+            defaultValue={brandFilter}
+            className="h-9 px-2 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] focus:outline-none focus:border-[var(--color-primary)]"
+            aria-label="Filter by brand"
           >
-            <input
-              name="q"
-              defaultValue={query}
-              placeholder="Search SKU, title, or MPN…"
-              className="w-64 px-3 bg-transparent text-[13px] text-[var(--color-primary)] placeholder:text-[var(--color-caption)] focus:outline-none"
-            />
-            {statusFilter && <input type="hidden" name="status" value={statusFilter} />}
-            {brandFilter && <input type="hidden" name="brand" value={brandFilter} />}
-            {categoryFilter && <input type="hidden" name="category" value={categoryFilter} />}
-            <button
-              type="submit"
-              className="px-3 border-l border-[var(--color-border)] font-mono text-[11px] text-[var(--color-muted)] hover:text-[var(--color-primary)]"
-            >
-              Search
-            </button>
-          </form>
-
-          <div className="flex gap-1.5">
-            {['', 'draft', 'active', 'discontinued'].map((s) => (
-              <Link
-                key={s}
-                href={filterUrl({ status: s || undefined })}
-                className={`px-3 py-1.5 font-mono text-[11px] border transition-colors capitalize ${
-                  statusFilter === s
-                    ? 'border-[var(--color-accent)] bg-[var(--color-accent)] text-white'
-                    : 'border-[var(--color-border)] text-[var(--color-body)] hover:border-[var(--color-body)]'
-                }`}
-              >
-                {s || 'All'}
-              </Link>
+            <option value="">All brands</option>
+            {brands.map((b) => (
+              <option key={b.id} value={b.id}>
+                {b.name}
+              </option>
             ))}
-          </div>
-
+          </select>
+          <select
+            name="category"
+            defaultValue={categoryFilter}
+            className="h-9 px-2 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] focus:outline-none focus:border-[var(--color-primary)]"
+            aria-label="Filter by category"
+          >
+            <option value="">All categories</option>
+            {categories.map((c) => (
+              <option key={c.id} value={c.id}>
+                {c.name}
+              </option>
+            ))}
+          </select>
+          {/* Preserve sort/dir/status across filter changes, but reset page */}
+          {statusFilter && <input type="hidden" name="status" value={statusFilter} />}
+          {sortKey !== 'updatedAt' && <input type="hidden" name="sort" value={sortKey} />}
+          {sortDir === 'asc' && <input type="hidden" name="dir" value="asc" />}
+          <button
+            type="submit"
+            className="h-9 px-4 bg-[var(--color-primary)] text-white text-[12px] font-medium hover:opacity-90"
+          >
+            Apply
+          </button>
           {(statusFilter || brandFilter || categoryFilter || query) && (
             <Link
               href={`/${locale}/products`}
-              className="font-mono text-[11px] text-[var(--color-muted)] hover:text-[var(--color-primary)] underline underline-offset-2"
+              className="font-mono text-[11px] text-[var(--color-muted)] hover:text-[var(--color-primary)] underline underline-offset-2 ml-1"
             >
-              Clear filters
+              Clear all
             </Link>
           )}
+        </form>
+
+        {/* Status pills with counts */}
+        <div className="flex flex-wrap items-center gap-1.5 mb-6">
+          <StatusPill href={buildUrl({ status: undefined, page: undefined })} active={!statusFilter} label="All" count={total} />
+          {(['draft', 'active', 'discontinued'] as const).map((s) => (
+            <StatusPill
+              key={s}
+              href={buildUrl({ status: s, page: undefined })}
+              active={statusFilter === s}
+              label={s}
+              count={statusCountMap[s] ?? 0}
+            />
+          ))}
         </div>
 
         {products.length === 0 ? (
@@ -149,49 +221,171 @@ export default async function AdminProductsPage({ params, searchParams }: Props)
             </Link>
           </div>
         ) : (
-          <div className="border border-[var(--color-border)] bg-white">
-            <div className="grid grid-cols-[120px_1fr_140px_140px_100px_80px] px-4 py-2.5 bg-[var(--color-surface)] border-b border-[var(--color-border)] font-mono text-[10px] tracking-[0.1em] uppercase text-[var(--color-muted)]">
-              <div>SKU</div>
-              <div>Title</div>
-              <div>Brand</div>
-              <div>Category</div>
-              <div className="text-center">Status</div>
-              <div className="text-right">Updated</div>
+          <>
+            <div className="border border-[var(--color-border)] bg-white">
+              <div className="grid grid-cols-[140px_1fr_120px_120px_70px_90px_80px] px-4 py-2.5 bg-[var(--color-surface)] border-b border-[var(--color-border)] font-mono text-[10px] tracking-[0.1em] uppercase text-[var(--color-muted)]">
+                <Link href={sortUrl('sku')} className="hover:text-[var(--color-primary)]">
+                  SKU{sortIndicator('sku')}
+                </Link>
+                <Link href={sortUrl('title')} className="hover:text-[var(--color-primary)]">
+                  Title{sortIndicator('title')}
+                </Link>
+                <div>Brand</div>
+                <div>Category</div>
+                <div className="text-right">Stock</div>
+                <Link href={sortUrl('status')} className="text-center hover:text-[var(--color-primary)]">
+                  Status{sortIndicator('status')}
+                </Link>
+                <Link href={sortUrl('updatedAt')} className="text-right hover:text-[var(--color-primary)]">
+                  Updated{sortIndicator('updatedAt')}
+                </Link>
+              </div>
+
+              {products.map((p, i) => (
+                <Link
+                  key={p.id}
+                  href={`/${locale}/products/${p.id}/edit`}
+                  className={`grid grid-cols-[140px_1fr_120px_120px_70px_90px_80px] px-4 py-3.5 items-center hover:bg-[var(--color-deep)] transition-colors ${
+                    i > 0 ? 'border-t border-[var(--color-border)]' : ''
+                  }`}
+                >
+                  <div className="font-mono text-[12px] text-[var(--color-muted)] truncate">{p.sku}</div>
+                  <div className="text-[13px] font-medium text-[var(--color-primary)] truncate">{p.title}</div>
+                  <div className="text-[12px] text-[var(--color-body)] truncate">
+                    {p.brand?.name ?? <span className="text-[var(--color-caption)]">—</span>}
+                  </div>
+                  <div className="text-[12px] text-[var(--color-body)] truncate">
+                    {p.category?.name ?? <span className="text-[var(--color-caption)]">—</span>}
+                  </div>
+                  <div className={`text-right font-mono text-[12px] ${p.stockQty > 0 ? 'text-[oklch(0.45_0.12_150)] font-semibold' : 'text-[var(--color-caption)]'}`}>
+                    {p.stockQty > 0 ? p.stockQty.toLocaleString() : '—'}
+                  </div>
+                  <div className="flex justify-center">
+                    <span
+                      className={`px-2 py-0.5 font-mono text-[10px] font-semibold capitalize ${
+                        STATUS_COLORS[p.status] ?? ''
+                      }`}
+                    >
+                      {p.status}
+                    </span>
+                  </div>
+                  <div className="text-right font-mono text-[11px] text-[var(--color-muted)]">
+                    {new Date(p.updatedAt).toLocaleDateString()}
+                  </div>
+                </Link>
+              ))}
             </div>
 
-            {products.map((p, i) => (
-              <Link
-                key={p.id}
-                href={`/${locale}/products/${p.id}/edit`}
-                className={`grid grid-cols-[120px_1fr_140px_140px_100px_80px] px-4 py-3.5 items-center hover:bg-[var(--color-deep)] transition-colors ${
-                  i > 0 ? 'border-t border-[var(--color-border)]' : ''
-                }`}
-              >
-                <div className="font-mono text-[12px] text-[var(--color-muted)] truncate">{p.sku}</div>
-                <div className="text-[13px] font-medium text-[var(--color-primary)] truncate">{p.title}</div>
-                <div className="text-[12px] text-[var(--color-body)] truncate">
-                  {p.brand?.name ?? <span className="text-[var(--color-caption)]">—</span>}
-                </div>
-                <div className="text-[12px] text-[var(--color-body)] truncate">
-                  {p.category?.name ?? <span className="text-[var(--color-caption)]">—</span>}
-                </div>
-                <div className="flex justify-center">
-                  <span
-                    className={`px-2 py-0.5 font-mono text-[10px] font-semibold capitalize ${
-                      STATUS_COLORS[p.status] ?? ''
-                    }`}
-                  >
-                    {p.status}
-                  </span>
-                </div>
-                <div className="text-right font-mono text-[11px] text-[var(--color-muted)]">
-                  {new Date(p.updatedAt).toLocaleDateString()}
-                </div>
-              </Link>
-            ))}
-          </div>
+            {totalPages > 1 && (
+              <Pagination currentPage={page} totalPages={totalPages} buildUrl={(n) => buildUrl({ page: n === 1 ? undefined : String(n) })} />
+            )}
+          </>
         )}
       </div>
     </>
+  )
+}
+
+// ── Pagination ──────────────────────────────────────────────────────────────
+
+function Pagination({
+  currentPage,
+  totalPages,
+  buildUrl,
+}: {
+  currentPage: number
+  totalPages: number
+  buildUrl: (page: number) => string
+}) {
+  const pages = pageRange(currentPage, totalPages)
+  const prevDisabled = currentPage <= 1
+  const nextDisabled = currentPage >= totalPages
+
+  return (
+    <nav className="flex items-center justify-center gap-1 mt-6 font-mono text-[12px]" aria-label="Pagination">
+      <PageBtn href={buildUrl(currentPage - 1)} disabled={prevDisabled}>
+        ← Prev
+      </PageBtn>
+      {pages.map((p, i) =>
+        p === '…' ? (
+          <span key={`gap-${i}`} className="px-2 text-[var(--color-muted)]">
+            …
+          </span>
+        ) : (
+          <PageBtn key={p} href={buildUrl(p)} active={p === currentPage}>
+            {p}
+          </PageBtn>
+        ),
+      )}
+      <PageBtn href={buildUrl(currentPage + 1)} disabled={nextDisabled}>
+        Next →
+      </PageBtn>
+    </nav>
+  )
+}
+
+function PageBtn({
+  href,
+  children,
+  active,
+  disabled,
+}: {
+  href: string
+  children: React.ReactNode
+  active?: boolean
+  disabled?: boolean
+}) {
+  const cls = `min-w-9 h-9 px-3 inline-flex items-center justify-center border ${
+    active
+      ? 'bg-[var(--color-primary)] text-white border-[var(--color-primary)]'
+      : 'bg-white text-[var(--color-body)] border-[var(--color-border)] hover:border-[var(--color-body)]'
+  } ${disabled ? 'opacity-40 pointer-events-none' : ''}`
+  if (disabled) return <span className={cls}>{children}</span>
+  return (
+    <Link href={href} className={cls}>
+      {children}
+    </Link>
+  )
+}
+
+// Returns a list like [1, '…', 5, 6, 7, 8, 9, '…', 42] for currentPage=7, totalPages=42.
+// Always shows first, last, current ±2.
+function pageRange(current: number, total: number): (number | '…')[] {
+  if (total <= 7) return Array.from({ length: total }, (_, i) => i + 1)
+  const out: (number | '…')[] = [1]
+  const start = Math.max(2, current - 2)
+  const end = Math.min(total - 1, current + 2)
+  if (start > 2) out.push('…')
+  for (let i = start; i <= end; i++) out.push(i)
+  if (end < total - 1) out.push('…')
+  out.push(total)
+  return out
+}
+
+// ── Bits ────────────────────────────────────────────────────────────────────
+
+function StatusPill({
+  href,
+  active,
+  label,
+  count,
+}: {
+  href: string
+  active: boolean
+  label: string
+  count: number
+}) {
+  return (
+    <Link
+      href={href}
+      className={`flex items-center gap-1.5 h-7 px-3 font-mono text-[11px] border transition-colors capitalize ${
+        active
+          ? 'border-[var(--color-accent)] bg-[var(--color-accent)] text-white'
+          : 'border-[var(--color-border)] text-[var(--color-body)] hover:border-[var(--color-body)]'
+      }`}
+    >
+      <span>{label}</span>
+      <span className={`text-[10px] ${active ? 'opacity-80' : 'text-[var(--color-muted)]'}`}>{count.toLocaleString()}</span>
+    </Link>
   )
 }

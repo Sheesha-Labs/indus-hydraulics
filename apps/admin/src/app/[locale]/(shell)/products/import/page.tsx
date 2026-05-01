@@ -1,19 +1,11 @@
 import type { Metadata } from 'next'
-import Link from 'next/link'
 import { db } from '@indus/db'
 import AdminTopbar from '../../../../../components/AdminTopbar'
-import { Stepper } from '@indus/ui'
+import ImportClient from './ImportClient'
 
 export const metadata: Metadata = { title: 'Bulk import — Indus Admin' }
 
 type Props = { params: Promise<{ locale: string }> }
-
-const STEPS = [
-  { label: 'Upload', description: 'CSV or XLSX file' },
-  { label: 'Map columns', description: 'Match to Indus fields' },
-  { label: 'Validate', description: 'Check for errors' },
-  { label: 'Commit', description: 'Apply changes' },
-]
 
 export default async function BulkImportPage({ params }: Props) {
   const { locale } = await params
@@ -37,67 +29,33 @@ export default async function BulkImportPage({ params }: Props) {
       <div className="px-8 py-6 pb-16">
         <h1 className="text-[24px] font-semibold tracking-tight mb-1">Bulk product import</h1>
         <p className="text-[13px] text-[var(--color-muted)] mb-6">
-          Upload a CSV or XLSX file to create or update many products at once.
+          Upload a spreadsheet to create or update many products at once. Existing rows (matched by SKU) get updated;
+          new ones get created. Errors are reported per-row before any DB changes happen.
         </p>
 
-        <div className="bg-white border border-[var(--color-border)] p-6 mb-6">
-          <Stepper steps={STEPS} currentStep={1} />
-        </div>
-
-        <div className="bg-white border border-[var(--color-border)] p-8 max-w-3xl">
-          <h2 className="text-[16px] font-semibold mb-2">Step 1 — Upload your file</h2>
-          <p className="text-[13px] text-[var(--color-muted)] mb-5">
-            Accepted formats: <span className="font-mono">.csv</span>,{' '}
-            <span className="font-mono">.xlsx</span>. Required columns: <span className="font-mono">sku</span>,{' '}
-            <span className="font-mono">title</span>. Optional:{' '}
-            <span className="font-mono">brand_slug</span>, <span className="font-mono">category_slug</span>,{' '}
-            <span className="font-mono">mpn</span>, <span className="font-mono">description_short</span>,{' '}
-            <span className="font-mono">status</span>.
-          </p>
-
-          <div className="border-2 border-dashed border-[var(--color-border)] bg-[var(--color-deep)] py-12 px-6 text-center">
-            <p className="text-[13px] text-[var(--color-muted)] mb-1">
-              Drag and drop a CSV/XLSX file here
-            </p>
-            <p className="font-mono text-[11px] text-[var(--color-caption)]">
-              File upload pipeline coming soon — backend storage (R2) is being wired up.
-            </p>
-          </div>
-
-          <div className="mt-6 p-4 border border-[oklch(0.7_0.15_80)] bg-[oklch(0.98_0.02_80)] text-[12px] leading-relaxed">
-            <b className="text-[oklch(0.5_0.15_60)]">Coming soon:</b>
-            <ul className="mt-2 ml-4 list-disc text-[var(--color-body)]">
-              <li>Step 2 — Map CSV columns to Indus product fields</li>
-              <li>Step 3 — Server-side validation with per-row error reporting</li>
-              <li>Step 4 — Commit with rollback snapshot stored for 30 days</li>
-            </ul>
-            <p className="mt-3 text-[var(--color-muted)]">
-              In the meantime, products can be created one at a time via{' '}
-              <Link href={`/${locale}/products/new`} className="underline">
-                + Add product
-              </Link>
-              .
-            </p>
-          </div>
-        </div>
+        <ImportClient locale={locale} />
 
         {recentJobs.length > 0 && (
-          <div className="mt-8 max-w-3xl">
+          <div className="mt-10 max-w-5xl">
             <h2 className="text-[14px] font-semibold mb-3">Recent imports</h2>
             <div className="bg-white border border-[var(--color-border)]">
-              {recentJobs.map((j, i) => (
+              <div className="grid grid-cols-[1fr_120px_120px_140px_120px] gap-3 px-4 py-2.5 text-[11px] font-mono uppercase tracking-[0.04em] text-[var(--color-muted)] border-b border-[var(--color-border)]">
+                <div>Code</div>
+                <div>Status</div>
+                <div>By</div>
+                <div className="text-right">Rows (✓ / ✗)</div>
+                <div className="text-right">When</div>
+              </div>
+              {recentJobs.map((j) => (
                 <div
                   key={j.id}
-                  className={`grid grid-cols-[1fr_120px_120px_120px] gap-3 px-4 py-3 items-center text-[13px] ${
-                    i > 0 ? 'border-t border-[var(--color-border)]' : ''
-                  }`}
+                  className="grid grid-cols-[1fr_120px_120px_140px_120px] gap-3 px-4 py-3 items-center text-[13px] border-t border-[var(--color-border-2)]"
                 >
                   <div className="font-mono text-[12px] text-[var(--color-primary)]">{j.code}</div>
-                  <div className="font-mono text-[11px] text-[var(--color-muted)] capitalize">
-                    {j.status}
-                  </div>
-                  <div className="text-[12px] text-[var(--color-body)]">
-                    {j.startedBy?.name ?? 'System'}
+                  <div className="font-mono text-[11px] text-[var(--color-muted)] capitalize">{j.status}</div>
+                  <div className="text-[12px] text-[var(--color-body)]">{j.startedBy?.name ?? 'System'}</div>
+                  <div className="font-mono text-[11px] text-right text-[var(--color-muted)]">
+                    {j.rowsToCreate + j.rowsToUpdate} / {j.rowsWithErrors}
                   </div>
                   <div className="font-mono text-[11px] text-[var(--color-muted)] text-right">
                     {new Date(j.createdAt).toLocaleDateString()}

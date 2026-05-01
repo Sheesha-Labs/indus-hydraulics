@@ -16,6 +16,8 @@ import {
   Settings,
   ExternalLink,
   LogOut,
+  Award,
+  LayoutTemplate,
   type LucideIcon,
 } from 'lucide-react'
 
@@ -42,6 +44,8 @@ const NAV_SECTIONS: { section: string; items: NavItem[] }[] = [
     items: [
       { id: 'products', label: 'Products', path: 'products', Icon: Package },
       { id: 'categories', label: 'Categories', path: 'categories', Icon: FolderTree },
+      { id: 'brands', label: 'Brands', path: 'brands', Icon: Award },
+      { id: 'spec-templates', label: 'Spec templates', path: 'spec-templates', Icon: LayoutTemplate },
       { id: 'industries', label: 'Industries', path: 'industries', Icon: ImageIcon },
       { id: 'media', label: 'Media library', path: 'media', Icon: ImageIcon },
     ],
