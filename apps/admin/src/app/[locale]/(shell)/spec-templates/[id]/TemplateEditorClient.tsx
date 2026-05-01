@@ -292,6 +292,8 @@ function FieldForm({
   const [pending, startTransition] = useTransition()
   const [error, setError] = useState<string | null>(null)
   const [dataType, setDataType] = useState<FieldRow['dataType']>(existing?.dataType ?? 'text')
+  const [isKeyFeature, setIsKeyFeature] = useState<boolean>(existing?.isKeyFeature ?? false)
+  const [isQuickSpec, setIsQuickSpec] = useState<boolean>(existing?.isQuickSpec ?? false)
 
   function onSubmit(formData: FormData) {
     setError(null)
@@ -390,31 +392,36 @@ function FieldForm({
         />
       </Field>
 
-      <div className="flex flex-wrap items-center gap-x-6 gap-y-2 pt-1">
-        <label className="flex items-center gap-1.5 text-[12px] text-[var(--color-body)]">
-          <input
-            type="checkbox"
-            name="isRequired"
-            defaultChecked={existing?.isRequired ?? false}
-          />
-          Required
-        </label>
-        <label className="flex items-center gap-1.5 text-[12px] text-[var(--color-body)]">
-          <input
-            type="checkbox"
-            name="isKeyFeature"
-            defaultChecked={existing?.isKeyFeature ?? false}
-          />
-          Key feature (PDP bullet)
-        </label>
-        <label className="flex items-center gap-1.5 text-[12px] text-[var(--color-body)]">
-          <input
-            type="checkbox"
-            name="isQuickSpec"
-            defaultChecked={existing?.isQuickSpec ?? false}
-          />
-          Quick spec (top-of-PDP table)
-        </label>
+      <div className="grid grid-cols-[1fr_auto] gap-6 pt-1 items-center">
+        <div className="flex flex-wrap items-center gap-x-6 gap-y-2">
+          <label className="flex items-center gap-1.5 text-[12px] text-[var(--color-body)]">
+            <input
+              type="checkbox"
+              name="isRequired"
+              defaultChecked={existing?.isRequired ?? false}
+            />
+            Required
+          </label>
+          <label className="flex items-center gap-1.5 text-[12px] text-[var(--color-body)]">
+            <input
+              type="checkbox"
+              name="isKeyFeature"
+              checked={isKeyFeature}
+              onChange={(e) => setIsKeyFeature(e.target.checked)}
+            />
+            Key feature (PDP bullet)
+          </label>
+          <label className="flex items-center gap-1.5 text-[12px] text-[var(--color-body)]">
+            <input
+              type="checkbox"
+              name="isQuickSpec"
+              checked={isQuickSpec}
+              onChange={(e) => setIsQuickSpec(e.target.checked)}
+            />
+            Quick spec (top-of-PDP table)
+          </label>
+        </div>
+        <PdpZonePreview isKeyFeature={isKeyFeature} isQuickSpec={isQuickSpec} />
       </div>
 
       <div className="flex items-center gap-2 pt-2">
@@ -439,6 +446,70 @@ function FieldForm({
         )}
       </div>
     </form>
+  )
+}
+
+/**
+ * Mini wireframe of the storefront PDP. The "Key feature" zone (top of the
+ * info column, bullet list) and the "Quick spec" zone (6-cell grid below it)
+ * highlight in the accent colour when the matching toggle is on, so admins
+ * can see at a glance where the field will land.
+ */
+function PdpZonePreview({
+  isKeyFeature,
+  isQuickSpec,
+}: {
+  isKeyFeature: boolean
+  isQuickSpec: boolean
+}) {
+  const off = 'border border-[var(--color-border-2)] bg-[var(--color-deep)]'
+  const onHi =
+    'border border-[var(--color-accent)] bg-[oklch(0.96_0.06_70)] ring-1 ring-[var(--color-accent)]'
+  return (
+    <div className="flex items-start gap-3">
+      <div className="w-[180px] border border-[var(--color-border)] bg-white p-2 flex flex-col gap-1.5 select-none">
+        <div className="flex gap-2">
+          {/* Image placeholder */}
+          <div className="w-[72px] h-[80px] bg-[var(--color-deep)] border border-[var(--color-border-2)] shrink-0" />
+          {/* Info column */}
+          <div className="flex-1 flex flex-col gap-1">
+            <div className="h-1.5 w-2/3 bg-[var(--color-border)]" />
+            <div className="h-1 w-1/2 bg-[var(--color-border-2)]" />
+            <div className="h-px bg-[var(--color-border-2)] my-0.5" />
+            {/* Key feature zone — bullets */}
+            <div className={`p-1 ${isKeyFeature ? onHi : off}`}>
+              <div className="flex flex-col gap-0.5">
+                <div className="h-1 w-full bg-[var(--color-border)]" />
+                <div className="h-1 w-4/5 bg-[var(--color-border)]" />
+                <div className="h-1 w-3/4 bg-[var(--color-border)]" />
+              </div>
+            </div>
+            {/* Quick spec zone — 6-cell grid */}
+            <div className={`p-1 grid grid-cols-3 gap-px ${isQuickSpec ? onHi : off}`}>
+              {Array.from({ length: 6 }).map((_, i) => (
+                <div key={i} className="h-3 bg-white" />
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="flex flex-col gap-1 pt-0.5 text-[10px] font-mono tracking-[0.04em] text-[var(--color-muted)] min-w-[120px]">
+        <div className="font-semibold text-[var(--color-caption)] uppercase mb-0.5">
+          Renders here
+        </div>
+        <div className={isKeyFeature ? 'text-[var(--color-accent)] font-semibold' : ''}>
+          {isKeyFeature ? '● Key-feature bullet' : '○ Key feature off'}
+        </div>
+        <div className={isQuickSpec ? 'text-[var(--color-accent)] font-semibold' : ''}>
+          {isQuickSpec ? '● Quick-spec cell' : '○ Quick spec off'}
+        </div>
+        {!isKeyFeature && !isQuickSpec && (
+          <div className="text-[var(--color-caption)] mt-1 leading-[1.3] normal-case font-sans">
+            Field still appears in the Description tab spec table.
+          </div>
+        )}
+      </div>
+    </div>
   )
 }
 
