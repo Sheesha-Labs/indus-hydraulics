@@ -149,55 +149,16 @@ export default function ProductTabs({
             )}
           </div>
 
-          {/* Shipping column */}
+          {/* Shipping column — driven entirely by product DB fields */}
           <div>
             <h2 className="text-[28px] font-semibold tracking-[-0.02em] mb-4">Shipping &amp; lead time</h2>
-            <div className="border border-[var(--color-border)] bg-[var(--color-elevated)] p-6 flex flex-col gap-4">
-              {[
-                {
-                  lbl: 'Lead Time',
-                  val:
-                    leadTimeDays === null || leadTimeDays === undefined
-                      ? 'Contact us for current lead time.'
-                      : leadTimeDays === 0
-                        ? 'In stock — ships same day.'
-                        : `Ex-stock orders typically dispatch within ${leadTimeDays} working days.`,
-                },
-                {
-                  lbl: 'Dispatch',
-                  val: 'Same-day dispatch on orders confirmed before 14:00 IST (Mon–Sat).',
-                },
-                {
-                  lbl: 'Domestic',
-                  val: 'India: 1–3 working days via Blue Dart / DTDC Plus.',
-                },
-                {
-                  lbl: 'International',
-                  val: 'DHL / FedEx priority — 3–7 working days globally.',
-                },
-                ...(countryOfOrigin ? [{ lbl: 'Origin', val: `Made in ${countryOfOrigin}. Origin certificate on request.` }] : []),
-                ...(hsCode ? [{ lbl: 'HS Code', val: hsCode }] : []),
-                ...(weightKg ? [{ lbl: 'Weight', val: `${weightKg} kg (shipped weight higher with packaging)` }] : []),
-                {
-                  lbl: 'Warranty',
-                  val: warrantyMonths
-                    ? `${warrantyMonths} months from invoice date — manufacturer-backed.`
-                    : '24 months from invoice date — manufacturer-backed.',
-                },
-              ].map((row) => (
-                <div key={row.lbl} className="grid gap-4 pb-4 border-b border-[var(--color-border-2)] last:pb-0 last:border-0" style={{ gridTemplateColumns: '110px 1fr' }}>
-                  <span className="font-mono text-[11px] tracking-[0.08em] uppercase text-[var(--color-muted)] pt-0.5">{row.lbl}</span>
-                  <span className="text-[14px] text-[var(--color-body)] leading-[1.5]">{row.val}</span>
-                </div>
-              ))}
-            </div>
-
-            <div className="mt-4 p-4 border border-[var(--color-border)] bg-[var(--color-elevated)] flex gap-3.5 items-start">
-              <span className="font-mono text-[11px] bg-[var(--color-accent)] text-white px-2 py-0.5 shrink-0">TIP</span>
-              <p className="text-[13px] leading-[1.55] text-[var(--color-body)]">
-                <b>Ordering tip — </b>if you're sourcing for a new build, ask us to bundle matching accessories. Our engineers can recommend the right coupling, strainer and fittings.
-              </p>
-            </div>
+            <ShippingTable
+              leadTimeDays={leadTimeDays}
+              warrantyMonths={warrantyMonths}
+              countryOfOrigin={countryOfOrigin}
+              hsCode={hsCode}
+              weightKg={weightKg}
+            />
           </div>
         </div>
       )}
@@ -231,41 +192,16 @@ export default function ProductTabs({
         </div>
       )}
 
-      {/* Shipping & Lead Time */}
+      {/* Shipping & Lead Time — driven entirely by product DB fields */}
       {active === 2 && (
         <div className="max-w-[680px]">
-          <div className="border border-[var(--color-border)] bg-[var(--color-elevated)] p-6 flex flex-col gap-4">
-            {[
-              {
-                lbl: 'Lead Time',
-                val:
-                  leadTimeDays === null || leadTimeDays === undefined
-                    ? 'Contact us for current lead time. We respond within 4 hours.'
-                    : leadTimeDays === 0
-                      ? 'In stock — ships same day.'
-                      : `Ex-stock orders typically dispatch within ${leadTimeDays} working days.`,
-              },
-              { lbl: 'Dispatch', val: 'Same-day dispatch on orders confirmed before 14:00 IST (Mon–Sat). Houston cut-off: 15:00 CST.' },
-              { lbl: 'Domestic', val: 'India: 1–3 working days via Blue Dart / DTDC Plus. Free shipping on orders ≥ ₹50,000.' },
-              { lbl: 'International', val: 'DHL / FedEx priority — 3–7 working days globally. Customs & duties calculated at order confirmation.' },
-              { lbl: 'Packaging', val: 'Wooden crate (ISPM-15 fumigated) on Euro pallet where required.' },
-              ...(countryOfOrigin ? [{ lbl: 'Origin', val: `Made in ${countryOfOrigin}. Origin certificate (EUR.1) issued with every shipment to eligible jurisdictions.` }] : []),
-              ...(hsCode ? [{ lbl: 'HS Code', val: hsCode }] : []),
-              ...(weightKg ? [{ lbl: 'Weight', val: `${weightKg} kg (dry). Shipped weight higher with packaging.` }] : []),
-              {
-                lbl: 'Warranty',
-                val: warrantyMonths
-                  ? `${warrantyMonths} months from invoice date — manufacturer-backed. Failure analysis service available at no charge for warranty claims.`
-                  : '24 months from invoice date — manufacturer-backed.',
-              },
-              { lbl: 'Returns', val: '30-day return window for unopened sealed units. Engineered-to-order configurations are non-returnable.' },
-            ].map((row) => (
-              <div key={row.lbl} className="grid gap-4 pb-4 border-b border-[var(--color-border-2)] last:pb-0 last:border-0" style={{ gridTemplateColumns: '110px 1fr' }}>
-                <span className="font-mono text-[11px] tracking-[0.08em] uppercase text-[var(--color-muted)] pt-0.5">{row.lbl}</span>
-                <span className="text-[14px] text-[var(--color-body)] leading-[1.5]">{row.val}</span>
-              </div>
-            ))}
-          </div>
+          <ShippingTable
+            leadTimeDays={leadTimeDays}
+            warrantyMonths={warrantyMonths}
+            countryOfOrigin={countryOfOrigin}
+            hsCode={hsCode}
+            weightKg={weightKg}
+          />
         </div>
       )}
 
@@ -366,6 +302,59 @@ export default function ProductTabs({
           <AskQuestionForm productId={productId} />
         </div>
       )}
+    </div>
+  )
+}
+
+function ShippingTable({
+  leadTimeDays,
+  warrantyMonths,
+  countryOfOrigin,
+  hsCode,
+  weightKg,
+}: {
+  leadTimeDays?: number | null
+  warrantyMonths?: number | null
+  countryOfOrigin?: string | null
+  hsCode?: string | null
+  weightKg?: number | null
+}) {
+  const rows: Array<{ lbl: string; val: string }> = []
+
+  if (leadTimeDays === null || leadTimeDays === undefined) {
+    rows.push({ lbl: 'Lead Time', val: 'Contact us for current lead time.' })
+  } else if (leadTimeDays === 0) {
+    rows.push({ lbl: 'Lead Time', val: 'In stock — ships same day.' })
+  } else {
+    rows.push({
+      lbl: 'Lead Time',
+      val: `Typically dispatched within ${leadTimeDays} working day${leadTimeDays === 1 ? '' : 's'}.`,
+    })
+  }
+  if (countryOfOrigin) rows.push({ lbl: 'Origin', val: `Made in ${countryOfOrigin}` })
+  if (hsCode) rows.push({ lbl: 'HS Code', val: hsCode })
+  if (weightKg) rows.push({ lbl: 'Weight', val: `${weightKg} kg` })
+  if (warrantyMonths) {
+    rows.push({
+      lbl: 'Warranty',
+      val: `${warrantyMonths} month${warrantyMonths === 1 ? '' : 's'} from invoice date — manufacturer-backed.`,
+    })
+  }
+
+  return (
+    <div className="border border-[var(--color-border)] bg-[var(--color-elevated)] p-6 flex flex-col gap-4">
+      {rows.map((row) => (
+        <div
+          key={row.lbl}
+          className="grid gap-4 pb-4 border-b border-[var(--color-border-2)] last:pb-0 last:border-0"
+          style={{ gridTemplateColumns: '110px 1fr' }}
+        >
+          <span className="font-mono text-[11px] tracking-[0.08em] uppercase text-[var(--color-muted)] pt-0.5">
+            {row.lbl}
+          </span>
+          <span className="text-[14px] text-[var(--color-body)] leading-[1.5]">{row.val}</span>
+        </div>
+      ))}
     </div>
   )
 }
