@@ -76,7 +76,7 @@ export default async function MediaLibraryPage({ params, searchParams }: Props) 
           <div className="py-16 border border-dashed border-[var(--color-border)] text-center">
             <p className="text-[var(--color-muted)] mb-1">No media assets yet.</p>
             <p className="font-mono text-[11px] text-[var(--color-caption)]">
-              Upload pipeline (Cloudflare R2) is being wired up — check back soon.
+              Upload images and documents from a product's Images / Documents tab.
             </p>
           </div>
         ) : (
@@ -114,14 +114,6 @@ export default async function MediaLibraryPage({ params, searchParams }: Props) 
             })}
           </div>
         )}
-
-        <div className="mt-8 p-4 border border-[oklch(0.6_0.1_240)] bg-[oklch(0.97_0.02_240)] text-[12px] leading-relaxed max-w-2xl">
-          <b className="text-[oklch(0.4_0.1_240)]">Upload pipeline coming soon.</b>{' '}
-          <span className="text-[var(--color-body)]">
-            Media uploads will route to Cloudflare R2 with presigned URLs. Until then, seeded media
-            and product images appear here read-only.
-          </span>
-        </div>
       </div>
     </>
   )
