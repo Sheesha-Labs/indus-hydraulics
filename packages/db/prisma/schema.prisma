@@ -529,6 +529,13 @@ model ProductDocument {
   isGated   Boolean      @default(false)
   position  Int          @default(0)
 
+  // PARTIAL UNIQUE INDEX (Postgres-only, not representable in Prisma schema):
+  //   CREATE UNIQUE INDEX product_documents_one_datasheet_per_product
+  //     ON product_documents ("productId") WHERE kind = 'datasheet';
+  // Applied via migration `enforce_one_datasheet_per_product`.
+  // Enforces "one datasheet per product" while still allowing multiple
+  // STEP/IGES/manual documents. DO NOT run `prisma db push` against this
+  // schema — it cannot represent the index and will silently drop it.
   @@index([productId])
   @@map("product_documents")
 }

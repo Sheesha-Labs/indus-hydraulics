@@ -667,6 +667,50 @@ const DATASHEET_MIME_TYPES = new Set([
   'image/jpg',
 ])
 
+const DATASHEET_URL_EXTENSIONS = /\.(pdf|png|jpe?g)(\?|#|$)/i
+
+/**
+ * Inside a Prisma transaction, remove any existing datasheet rows for the
+ * given product and return their storage paths so the caller can clean
+ * them up best-effort *after* the tx commits.
+ *
+ * The single-datasheet rule is also backed by a partial unique index
+ * (`product_documents_one_datasheet_per_product`); that index prevents
+ * concurrent inserts from racing past this check. `findMany` + `deleteMany`
+ * tolerates the rare case where multiple stragglers exist.
+ */
+async function replaceExistingDatasheet(
+  tx: Prisma.TransactionClient,
+  productId: string,
+): Promise<{ storagePaths: string[]; preservedPosition: number | null }> {
+  const existing = await tx.productDocument.findMany({
+    where: { productId, kind: 'datasheet' },
+    include: { media: { select: { id: true, storagePath: true } } },
+    orderBy: { position: 'asc' },
+  })
+  if (existing.length === 0) {
+    return { storagePaths: [], preservedPosition: null }
+  }
+  const docIds = existing.map((d) => d.id)
+  const mediaIds = existing.map((d) => d.mediaId)
+  await tx.productDocument.deleteMany({ where: { id: { in: docIds } } })
+  await tx.media.deleteMany({ where: { id: { in: mediaIds } } })
+  return {
+    storagePaths: existing.map((d) => d.media.storagePath),
+    preservedPosition: existing[0]?.position ?? null,
+  }
+}
+
+async function bestEffortDeleteFromStorage(paths: string[]): Promise<void> {
+  for (const path of paths) {
+    try {
+      await deleteFromStorage(path)
+    } catch {
+      /* swallow — orphaned file in storage but DB is correct */
+    }
+  }
+}
+
 export async function uploadProductDocument(formData: FormData): Promise<Result<void>> {
   try {
     requireRole(await auth(), ROLES.CATALOGUE_WRITE)
@@ -693,66 +737,57 @@ export async function uploadProductDocument(formData: FormData): Promise<Result<
       )
     }
 
-    // For datasheets, find the existing one (if any) so we can replace it
-    // atomically: only one datasheet per product.
-    const existingDatasheet =
-      kind === 'datasheet'
-        ? await db.productDocument.findFirst({
-            where: { productId, kind: 'datasheet' },
-            include: { media: { select: { id: true, storagePath: true } } },
-          })
-        : null
-
     const { storagePath, bytes, mimeType } = await uploadToStorage(
       STORAGE_BUCKETS.documents,
       file,
       `products/${productId}`,
     )
 
-    const max = await db.productDocument.aggregate({
-      where: { productId },
-      _max: { position: true },
-    })
-
-    await db.$transaction(async (tx) => {
-      if (existingDatasheet) {
-        await tx.productDocument.delete({ where: { id: existingDatasheet.id } })
-        await tx.media.delete({ where: { id: existingDatasheet.mediaId } })
-      }
-      const media = await tx.media.create({
-        data: {
-          kind: 'document',
-          mimeType,
-          originalFilename: file.name.slice(0, 200),
-          storagePath,
-          bytes,
-          uploadedById: session?.user?.id ?? null,
-        },
+    let staleStoragePaths: string[] = []
+    try {
+      await db.$transaction(async (tx) => {
+        let preservedPosition: number | null = null
+        if (kind === 'datasheet') {
+          const replaced = await replaceExistingDatasheet(tx, productId)
+          staleStoragePaths = replaced.storagePaths
+          preservedPosition = replaced.preservedPosition
+        }
+        const max =
+          preservedPosition !== null
+            ? null
+            : await tx.productDocument.aggregate({
+                where: { productId },
+                _max: { position: true },
+              })
+        const media = await tx.media.create({
+          data: {
+            kind: 'document',
+            mimeType,
+            originalFilename: file.name.slice(0, 200),
+            storagePath,
+            bytes,
+            uploadedById: session?.user?.id ?? null,
+          },
+        })
+        await tx.productDocument.create({
+          data: {
+            productId,
+            kind,
+            title,
+            language,
+            isGated,
+            mediaId: media.id,
+            position: preservedPosition ?? (max?._max.position ?? -1) + 1,
+          },
+        })
       })
-      await tx.productDocument.create({
-        data: {
-          productId,
-          kind,
-          title,
-          language,
-          isGated,
-          mediaId: media.id,
-          position: existingDatasheet
-            ? existingDatasheet.position
-            : (max._max.position ?? -1) + 1,
-        },
-      })
-    })
-
-    // Storage delete is best-effort and outside the DB transaction since it
-    // hits an external service. If it fails, the DB is still consistent.
-    if (existingDatasheet) {
-      try {
-        await deleteFromStorage(existingDatasheet.media.storagePath)
-      } catch {
-        /* swallow — old file becomes orphaned in storage but DB is correct */
-      }
+    } catch (err) {
+      // Roll back the just-uploaded file so we don't leak it to storage.
+      await bestEffortDeleteFromStorage([storagePath])
+      throw err
     }
+
+    await bestEffortDeleteFromStorage(staleStoragePaths)
 
     revalidatePath(`/${locale}/products/${productId}/edit`)
     return ok(undefined)
@@ -785,12 +820,29 @@ export async function addProductDocument(formData: FormData): Promise<Result<voi
       isGated: formData.get('isGated') === 'on',
     })
 
-    const max = await db.productDocument.aggregate({
-      where: { productId },
-      _max: { position: true },
-    })
+    if (body.kind === 'datasheet' && !DATASHEET_URL_EXTENSIONS.test(body.url)) {
+      return fail(
+        'VALIDATION',
+        'Datasheet URL must point to a PDF, PNG, or JPEG file',
+        { url: ['Invalid file type — must end in .pdf, .png, .jpg, or .jpeg'] },
+      )
+    }
 
+    let staleStoragePaths: string[] = []
     await db.$transaction(async (tx) => {
+      let preservedPosition: number | null = null
+      if (body.kind === 'datasheet') {
+        const replaced = await replaceExistingDatasheet(tx, productId)
+        staleStoragePaths = replaced.storagePaths
+        preservedPosition = replaced.preservedPosition
+      }
+      const max =
+        preservedPosition !== null
+          ? null
+          : await tx.productDocument.aggregate({
+              where: { productId },
+              _max: { position: true },
+            })
       const media = await tx.media.create({
         data: {
           kind: 'document',
@@ -809,10 +861,16 @@ export async function addProductDocument(formData: FormData): Promise<Result<voi
           language: body.language,
           isGated: body.isGated,
           mediaId: media.id,
-          position: (max._max.position ?? -1) + 1,
+          position: preservedPosition ?? (max?._max.position ?? -1) + 1,
         },
       })
     })
+
+    // Externally-hosted URLs that we replaced may still live in our storage
+    // bucket if they were previously uploaded; clean those up best-effort.
+    await bestEffortDeleteFromStorage(
+      staleStoragePaths.filter((p) => !p.startsWith('http')),
+    )
 
     revalidatePath(`/${locale}/products/${productId}/edit`)
     return ok(undefined)
