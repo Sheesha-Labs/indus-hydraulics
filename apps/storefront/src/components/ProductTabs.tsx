@@ -156,9 +156,12 @@ export default function ProductTabs({
               {[
                 {
                   lbl: 'Lead Time',
-                  val: leadTimeDays
-                    ? `Ex-stock orders typically dispatch within ${leadTimeDays} working days.`
-                    : 'Contact us for current lead time.',
+                  val:
+                    leadTimeDays === null || leadTimeDays === undefined
+                      ? 'Contact us for current lead time.'
+                      : leadTimeDays === 0
+                        ? 'In stock — ships same day.'
+                        : `Ex-stock orders typically dispatch within ${leadTimeDays} working days.`,
                 },
                 {
                   lbl: 'Dispatch',
@@ -235,9 +238,12 @@ export default function ProductTabs({
             {[
               {
                 lbl: 'Lead Time',
-                val: leadTimeDays
-                  ? `Ex-stock orders typically dispatch within ${leadTimeDays} working days.`
-                  : 'Contact us for current lead time. We respond within 4 hours.',
+                val:
+                  leadTimeDays === null || leadTimeDays === undefined
+                    ? 'Contact us for current lead time. We respond within 4 hours.'
+                    : leadTimeDays === 0
+                      ? 'In stock — ships same day.'
+                      : `Ex-stock orders typically dispatch within ${leadTimeDays} working days.`,
               },
               { lbl: 'Dispatch', val: 'Same-day dispatch on orders confirmed before 14:00 IST (Mon–Sat). Houston cut-off: 15:00 CST.' },
               { lbl: 'Domestic', val: 'India: 1–3 working days via Blue Dart / DTDC Plus. Free shipping on orders ≥ ₹50,000.' },
