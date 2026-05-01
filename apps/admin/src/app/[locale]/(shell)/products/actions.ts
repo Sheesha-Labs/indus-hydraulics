@@ -660,6 +660,13 @@ export async function reorderProductImage(
 
 // ── Product documents — file upload via Supabase Storage ───────────────────
 
+const DATASHEET_MIME_TYPES = new Set([
+  'application/pdf',
+  'image/png',
+  'image/jpeg',
+  'image/jpg',
+])
+
 export async function uploadProductDocument(formData: FormData): Promise<Result<void>> {
   try {
     requireRole(await auth(), ROLES.CATALOGUE_WRITE)
@@ -678,6 +685,23 @@ export async function uploadProductDocument(formData: FormData): Promise<Result<
     if (file.size > MAX_DOCUMENT_BYTES) {
       return fail('VALIDATION', `Document must be under ${MAX_DOCUMENT_BYTES / 1024 / 1024}MB`)
     }
+    if (kind === 'datasheet' && !DATASHEET_MIME_TYPES.has(file.type)) {
+      return fail(
+        'VALIDATION',
+        'Datasheet must be a PDF, PNG, or JPEG file',
+        { file: ['Invalid file type'] },
+      )
+    }
+
+    // For datasheets, find the existing one (if any) so we can replace it
+    // atomically: only one datasheet per product.
+    const existingDatasheet =
+      kind === 'datasheet'
+        ? await db.productDocument.findFirst({
+            where: { productId, kind: 'datasheet' },
+            include: { media: { select: { id: true, storagePath: true } } },
+          })
+        : null
 
     const { storagePath, bytes, mimeType } = await uploadToStorage(
       STORAGE_BUCKETS.documents,
@@ -691,6 +715,10 @@ export async function uploadProductDocument(formData: FormData): Promise<Result<
     })
 
     await db.$transaction(async (tx) => {
+      if (existingDatasheet) {
+        await tx.productDocument.delete({ where: { id: existingDatasheet.id } })
+        await tx.media.delete({ where: { id: existingDatasheet.mediaId } })
+      }
       const media = await tx.media.create({
         data: {
           kind: 'document',
@@ -709,10 +737,22 @@ export async function uploadProductDocument(formData: FormData): Promise<Result<
           language,
           isGated,
           mediaId: media.id,
-          position: (max._max.position ?? -1) + 1,
+          position: existingDatasheet
+            ? existingDatasheet.position
+            : (max._max.position ?? -1) + 1,
         },
       })
     })
+
+    // Storage delete is best-effort and outside the DB transaction since it
+    // hits an external service. If it fails, the DB is still consistent.
+    if (existingDatasheet) {
+      try {
+        await deleteFromStorage(existingDatasheet.media.storagePath)
+      } catch {
+        /* swallow — old file becomes orphaned in storage but DB is correct */
+      }
+    }
 
     revalidatePath(`/${locale}/products/${productId}/edit`)
     return ok(undefined)
