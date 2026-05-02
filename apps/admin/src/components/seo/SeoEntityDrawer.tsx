@@ -22,6 +22,7 @@ import {
 import type { Result } from '../../lib/result'
 import OgImagePicker, { type RecentMedia } from './OgImagePicker'
 import FocusKeywordChecklist from './FocusKeywordChecklist'
+import AiSuggestButton from './AiSuggestButton'
 
 /**
  * Reusable SEO drawer mounted as a tab inside an entity's edit page.
@@ -335,7 +336,16 @@ export default function SeoEntityDrawer({
                 label="SEO title"
                 hint="Override the default page title in search results."
                 rightAdornment={
-                  <CharCounter value={seoTitle} min={TITLE_RANGE.min} max={TITLE_RANGE.max} />
+                  <div className="flex items-center gap-2">
+                    <CharCounter value={seoTitle} min={TITLE_RANGE.min} max={TITLE_RANGE.max} />
+                    <AiSuggestButton
+                      entityType={entityType}
+                      entityId={entity.id}
+                      field="seoTitle"
+                      currentValue={seoTitle}
+                      onAccepted={(v) => setSeoTitle(v)}
+                    />
+                  </div>
                 }
               >
                 <input
@@ -351,11 +361,20 @@ export default function SeoEntityDrawer({
                 label="SEO description"
                 hint="Aim for 120–160 characters."
                 rightAdornment={
-                  <CharCounter
-                    value={seoDescription}
-                    min={DESCRIPTION_RANGE.min}
-                    max={DESCRIPTION_RANGE.max}
-                  />
+                  <div className="flex items-center gap-2">
+                    <CharCounter
+                      value={seoDescription}
+                      min={DESCRIPTION_RANGE.min}
+                      max={DESCRIPTION_RANGE.max}
+                    />
+                    <AiSuggestButton
+                      entityType={entityType}
+                      entityId={entity.id}
+                      field="seoDescription"
+                      currentValue={seoDescription}
+                      onAccepted={(v) => setSeoDescription(v)}
+                    />
+                  </div>
                 }
               >
                 <textarea
@@ -369,6 +388,15 @@ export default function SeoEntityDrawer({
               <FieldBlock
                 label="Focus keyword"
                 hint="Primary phrase you want this page to rank for."
+                rightAdornment={
+                  <AiSuggestButton
+                    entityType={entityType}
+                    entityId={entity.id}
+                    field="focusKeyword"
+                    currentValue={focusKeyword}
+                    onAccepted={(v) => setFocusKeyword(v)}
+                  />
+                }
               >
                 <input
                   type="text"
