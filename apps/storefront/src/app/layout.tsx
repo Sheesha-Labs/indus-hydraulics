@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Inter, IBM_Plex_Mono } from 'next/font/google'
+import { unstable_cache } from 'next/cache'
 import { db } from '@indus/db'
 import { buildOrgLd, buildWebsiteLd } from '@indus/domain'
 import { JsonLd } from '@indus/ui'
@@ -8,6 +9,17 @@ import SiteFooter from '../components/SiteFooter'
 import CompareTrayBadge from '../components/CompareTrayBadge'
 import { BASE_URL, SITE_NAME } from '../lib/seo'
 import './globals.css'
+
+// Cache the global SEO override row across requests. Admin should call
+// revalidateTag('seo-settings') when changing SeoSetting JSON-LD overrides.
+const getSeoSetting = unstable_cache(
+  async () =>
+    db.seoSetting
+      .findFirst({ select: { organizationJsonLd: true, websiteJsonLd: true } })
+      .catch(() => null),
+  ['seo-settings'],
+  { revalidate: 300, tags: ['seo-settings'] },
+)
 
 const inter = Inter({
   subsets: ['latin'],
@@ -34,9 +46,7 @@ export const metadata: Metadata = {
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
   // Pull admin-managed Org/WebSite JSON-LD overrides for the global script tag.
-  const seoSetting = await db.seoSetting
-    .findFirst({ select: { organizationJsonLd: true, websiteJsonLd: true } })
-    .catch(() => null)
+  const seoSetting = await getSeoSetting()
 
   const orgLd = buildOrgLd({
     name: SITE_NAME,

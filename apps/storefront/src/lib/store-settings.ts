@@ -1,5 +1,6 @@
 import 'server-only'
 import { cache } from 'react'
+import { unstable_cache } from 'next/cache'
 import { db } from '@indus/db'
 
 export type ResolvedStoreSettings = {
@@ -24,30 +25,39 @@ const FALLBACK: ResolvedStoreSettings = {
   contactLocationLabel: null,
 }
 
-export const getStoreSettings = cache(async (): Promise<ResolvedStoreSettings> => {
-  const row = await db.storeSettings
-    .findFirst({
-      select: {
-        name: true,
-        tagline: true,
-        certificationLine: true,
-        contactPhone: true,
-        contactEmail: true,
-        contactHours: true,
-        contactLocationLabel: true,
-        logoMedia: { select: { storagePath: true } },
-      },
-    })
-    .catch(() => null)
-  if (!row) return FALLBACK
-  return {
-    name: row.name,
-    tagline: row.tagline,
-    logoUrl: row.logoMedia?.storagePath ?? null,
-    certificationLine: row.certificationLine,
-    contactPhone: row.contactPhone,
-    contactEmail: row.contactEmail,
-    contactHours: row.contactHours,
-    contactLocationLabel: row.contactLocationLabel,
-  }
-})
+// Persistent cross-request cache. Admin should call revalidateTag('store-settings')
+// after any StoreSettings mutation so changes propagate immediately.
+const loadStoreSettings = unstable_cache(
+  async (): Promise<ResolvedStoreSettings> => {
+    const row = await db.storeSettings
+      .findFirst({
+        select: {
+          name: true,
+          tagline: true,
+          certificationLine: true,
+          contactPhone: true,
+          contactEmail: true,
+          contactHours: true,
+          contactLocationLabel: true,
+          logoMedia: { select: { storagePath: true } },
+        },
+      })
+      .catch(() => null)
+    if (!row) return FALLBACK
+    return {
+      name: row.name,
+      tagline: row.tagline,
+      logoUrl: row.logoMedia?.storagePath ?? null,
+      certificationLine: row.certificationLine,
+      contactPhone: row.contactPhone,
+      contactEmail: row.contactEmail,
+      contactHours: row.contactHours,
+      contactLocationLabel: row.contactLocationLabel,
+    }
+  },
+  ['store-settings'],
+  { revalidate: 300, tags: ['store-settings'] },
+)
+
+// React cache() outer for per-request de-duplication.
+export const getStoreSettings = cache(loadStoreSettings)

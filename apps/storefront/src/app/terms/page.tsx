@@ -4,6 +4,9 @@ import { notFound } from 'next/navigation'
 
 export const metadata: Metadata = { title: 'Terms of Service' }
 
+// Legal page rarely changes; cache for 1 hour.
+export const revalidate = 3600
+
 type Props = { params: Promise<Record<string, never>> }
 
 export default async function TermsPage({ params }: Props) {

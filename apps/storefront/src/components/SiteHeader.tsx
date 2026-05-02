@@ -1,9 +1,18 @@
+import { unstable_cache } from 'next/cache'
 import { safeAuth } from '../lib/auth'
 import { db } from '@indus/db'
 import { getNavMenu } from '../lib/navigation'
 import { getStoreSettings } from '../lib/store-settings'
 import SiteHeaderClient from './SiteHeaderClient'
 import NotificationBell from './NotificationBell'
+
+// Cache the active SKU count across requests. Admin should call
+// revalidateTag('product-count') when products are published/unpublished.
+const getActiveSkuCount = unstable_cache(
+  async () => db.product.count({ where: { status: 'active' } }).catch(() => 0),
+  ['product-count'],
+  { revalidate: 60, tags: ['product-count'] },
+)
 
 export default async function SiteHeader() {
   const session = await safeAuth()
@@ -20,7 +29,7 @@ export default async function SiteHeader() {
           select: { id: true, kind: true, payload: true, readAt: true, createdAt: true },
         })
       : Promise.resolve([]),
-    db.product.count({ where: { status: 'active' } }).catch(() => 0),
+    getActiveSkuCount(),
   ])
 
   const unreadCount = notifications.filter((n) => !n.readAt).length

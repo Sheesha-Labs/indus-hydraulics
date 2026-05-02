@@ -2,6 +2,9 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { db } from '@indus/db'
 
+// Industries list is admin-curated and changes rarely; cache for 5 minutes.
+export const revalidate = 300
+
 const FOUNDING_YEAR = 2003
 
 export async function generateMetadata(): Promise<Metadata> {

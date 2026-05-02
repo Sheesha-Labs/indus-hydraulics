@@ -4,6 +4,9 @@ import { db } from '@indus/db'
 
 export const metadata: Metadata = { title: 'Brands' }
 
+// Brand list is admin-curated and changes rarely; cache for 5 minutes.
+export const revalidate = 300
+
 export default async function BrandsPage() {
   const brands = await db.brand.findMany({
     where: { isPublished: true },
