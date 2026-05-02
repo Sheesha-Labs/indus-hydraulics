@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Inter, IBM_Plex_Mono } from 'next/font/google'
+import { unstable_cache } from 'next/cache'
 import { db } from '@indus/db'
 import { buildOrgLd, buildWebsiteLd } from '@indus/domain'
 import { JsonLd } from '@indus/ui'
@@ -8,6 +9,17 @@ import SiteFooter from '../components/SiteFooter'
 import CompareTrayBadge from '../components/CompareTrayBadge'
 import { BASE_URL, SITE_NAME } from '../lib/seo'
 import './globals.css'
+
+// Cache the global SEO override row across requests. Admin should call
+// revalidateTag('seo-settings') when changing SeoSetting JSON-LD overrides.
+const getSeoSetting = unstable_cache(
+  async () =>
+    db.seoSetting
+      .findFirst({ select: { organizationJsonLd: true, websiteJsonLd: true } })
+      .catch(() => null),
+  ['seo-settings'],
+  { revalidate: 300, tags: ['seo-settings'] },
+)
 
 const inter = Inter({
   subsets: ['latin'],
@@ -32,11 +44,14 @@ export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL ?? 'https://indushydraulics.com'),
 }
 
+// Co-locate Vercel functions with the Supabase database in Mumbai to avoid
+// transcontinental Prisma round-trips. Propagates to every route segment via
+// the root layout. Belt-and-braces with vercel.json's `regions: ["bom1"]`.
+export const preferredRegion = 'bom1'
+
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
   // Pull admin-managed Org/WebSite JSON-LD overrides for the global script tag.
-  const seoSetting = await db.seoSetting
-    .findFirst({ select: { organizationJsonLd: true, websiteJsonLd: true } })
-    .catch(() => null)
+  const seoSetting = await getSeoSetting()
 
   const orgLd = buildOrgLd({
     name: SITE_NAME,

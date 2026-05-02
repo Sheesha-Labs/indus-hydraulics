@@ -2,6 +2,9 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { db } from '@indus/db'
 
+// Static-ish marketing page; cache for 1 hour.
+export const revalidate = 3600
+
 const FOUNDING_YEAR = 2003
 
 export async function generateMetadata(): Promise<Metadata> {

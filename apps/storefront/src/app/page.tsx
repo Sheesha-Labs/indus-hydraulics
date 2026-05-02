@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import { unstable_cache } from 'next/cache'
 import { db } from '@indus/db'
 import HomeNewsletterForm from '../components/HomeNewsletterForm'
 
@@ -9,34 +10,79 @@ export const metadata: Metadata = {
     '1,800+ SKUs across pumps, cylinders, valves and consumables — from 14 specialist brands. ISO-certified, datasheet-backed, ready to ship to 47 countries.',
 }
 
-export default async function HomePage() {
-  const [categories, brands, featuredProducts, blogPosts, activeSkuCount, publishedBrandCount] = await Promise.all([
+// Re-render the static HTML at most once a minute. Combined with the
+// per-query unstable_cache wrappers below, the cold path stays fast and
+// most visitors hit the CDN-cached HTML.
+export const revalidate = 60
+
+const getHomeCategories = unstable_cache(
+  () =>
     db.category.findMany({
       where: { isPublished: true, parentId: null },
       orderBy: { position: 'asc' },
       include: { _count: { select: { products: true } } },
       take: 6,
     }),
+  ['home-categories'],
+  { revalidate: 300, tags: ['categories'] },
+)
+
+const getHomeBrands = unstable_cache(
+  () =>
     db.brand.findMany({
       where: { isPublished: true },
       orderBy: { name: 'asc' },
       select: { id: true, name: true, slug: true, country: true, description: true, isAuthorizedDistributor: true },
       take: 12,
     }),
+  ['home-brands'],
+  { revalidate: 300, tags: ['brands'] },
+)
+
+const getHomeFeaturedProducts = unstable_cache(
+  () =>
     db.product.findMany({
       where: { status: 'active' },
       orderBy: { createdAt: 'desc' },
       take: 4,
       include: { brand: { select: { name: true } } },
     }),
+  ['home-featured-products'],
+  { revalidate: 60, tags: ['products'] },
+)
+
+const getHomeBlogPosts = unstable_cache(
+  () =>
     db.blogPost.findMany({
       where: { isPublished: true },
       orderBy: { publishedAt: 'desc' },
       take: 3,
       include: { hero: { select: { storagePath: true, alt: true } }, author: { select: { name: true } } },
     }),
-    db.product.count({ where: { status: 'active' } }),
-    db.brand.count({ where: { isPublished: true } }),
+  ['home-blog-posts'],
+  { revalidate: 300, tags: ['blog-posts'] },
+)
+
+const getActiveSkuCount = unstable_cache(
+  () => db.product.count({ where: { status: 'active' } }),
+  ['home-active-sku-count'],
+  { revalidate: 60, tags: ['product-count'] },
+)
+
+const getPublishedBrandCount = unstable_cache(
+  () => db.brand.count({ where: { isPublished: true } }),
+  ['home-published-brand-count'],
+  { revalidate: 300, tags: ['brands'] },
+)
+
+export default async function HomePage() {
+  const [categories, brands, featuredProducts, blogPosts, activeSkuCount, publishedBrandCount] = await Promise.all([
+    getHomeCategories(),
+    getHomeBrands(),
+    getHomeFeaturedProducts(),
+    getHomeBlogPosts(),
+    getActiveSkuCount(),
+    getPublishedBrandCount(),
   ])
 
   const yearsInBusiness = new Date().getFullYear() - 2003

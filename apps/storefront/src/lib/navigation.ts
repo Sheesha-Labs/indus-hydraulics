@@ -1,5 +1,6 @@
 import 'server-only'
 import { cache } from 'react'
+import { unstable_cache } from 'next/cache'
 import { db } from '@indus/db'
 import {
   type MenuLinkType,
@@ -8,27 +9,33 @@ import {
   type ResolvedNavMenu,
 } from '@indus/domain'
 
-async function loadRaw(location: MenuLocation) {
-  return db.navMenu
-    .findUnique({
-      where: { location },
-      include: {
-        items: {
-          where: { isVisible: true },
-          orderBy: [{ parentId: 'asc' }, { position: 'asc' }],
-          include: {
-            category: { select: { slug: true, _count: { select: { products: true } } } },
-            brand: { select: { slug: true } },
-            industry: { select: { slug: true } },
-            cmsPage: { select: { slug: true } },
-            product: { select: { sku: true } },
-            promoImage: { select: { storagePath: true } },
+// Persistent cross-request cache keyed per location. Admin should call
+// revalidateTag('nav-menu') after any NavMenu mutation.
+const loadRaw = unstable_cache(
+  async (location: MenuLocation) => {
+    return db.navMenu
+      .findUnique({
+        where: { location },
+        include: {
+          items: {
+            where: { isVisible: true },
+            orderBy: [{ parentId: 'asc' }, { position: 'asc' }],
+            include: {
+              category: { select: { slug: true, _count: { select: { products: true } } } },
+              brand: { select: { slug: true } },
+              industry: { select: { slug: true } },
+              cmsPage: { select: { slug: true } },
+              product: { select: { sku: true } },
+              promoImage: { select: { storagePath: true } },
+            },
           },
         },
-      },
-    })
-    .catch(() => null)
-}
+      })
+      .catch(() => null)
+  },
+  ['nav-menu'],
+  { revalidate: 300, tags: ['nav-menu'] },
+)
 
 type LoadedMenu = NonNullable<Awaited<ReturnType<typeof loadRaw>>>
 type RawItem = LoadedMenu['items'][number]
