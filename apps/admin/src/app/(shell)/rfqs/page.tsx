@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { db } from '@indus/db'
+import AdminTopbar from '../../../components/AdminTopbar'
 
 export const metadata: Metadata = { title: 'RFQ Queue — Indus Admin' }
 
@@ -76,7 +77,10 @@ export default async function AdminRfqsPage({ searchParams }: Props) {
   }
 
   return (
-    <div>
+    <>
+      <AdminTopbar crumbs={[{ label: 'Operations' }, { label: 'RFQ Queue' }]} />
+
+      <div className="px-8 py-6 pb-16">
       <div className="flex items-center justify-between mb-6">
         <h1 className="text-[24px] font-semibold tracking-tight">RFQ Queue</h1>
         <div className="font-mono text-[13px] text-[var(--color-muted)]">{rfqs.length} requests</div>
@@ -172,6 +176,7 @@ export default async function AdminRfqsPage({ searchParams }: Props) {
           ))}
         </div>
       )}
-    </div>
+      </div>
+    </>
   )
 }
