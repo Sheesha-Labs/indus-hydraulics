@@ -26,18 +26,21 @@ at `/Users/ayushkbhatia/.claude/plans/seo-os-drawer-and-audit.md`.
 - `SeoEntityDrawer.extra` extended with `brand`, `industry`, `blog_post`, `cms_page` discriminators; JSON-LD preview switch covers Organization (brand), CollectionPage (industry), Article (blog_post), and skips JSON-LD entirely for cms_page (matching what the storefront emits today).
 - Inspector `editPathFor` covers all 6 entity types; `?tab=seo` deep-link honoured by the BlogPost and CmsPage editors.
 
-## ✅ Shipped (this PR — feat/seo-search-fts)
+## ✅ Shipped (PR #8 — feat/seo-search-fts)
 
-- Storefront `/search` rewritten on top of Postgres FTS (`websearch_to_tsquery` + `ts_rank_cd` × boost) with a `pg_trgm` similarity fallback for typo-tolerant SKU/MPN/title matching.
-- New `apps/storefront/src/lib/search.ts` consumes `planSearch` from `@indus/domain`: redirects on rule match, expands synonyms, runs SQL.
-- `/api/search/log` (POST) records SearchQueryLog rows; result anchors fire a `sendBeacon` for click-through tracking.
-- `/api/search/suggest` (GET) backs an 8-row autocomplete via prefix tsquery.
-- `SearchAutocomplete.tsx` (debounced 150ms, keyboard-navigable) replaces the static "Search" link in the header.
-- Admin `/seo/search` is now a 4-tab sub-shell:
-  - **Synonyms** — group CRUD; bidirectional within group; toggle active/disabled.
-  - **Query redirects** — normalised query → URL; storefront 302s on match.
-  - **Boosts** — per-product score multiplier with optional expiry.
-  - **Query analytics** — top queries, zero-result queries, high-volume / no-click queries over the last 30 days.
+- Storefront `/search` rewritten on top of Postgres FTS + pg_trgm fallback.
+- `/api/search/{log,suggest}` endpoints; debounced `SearchAutocomplete` in the header; click-through beacon.
+- Admin `/seo/search` 4-tab sub-shell: synonyms / query redirects / boosts / query analytics.
+
+## ✅ Shipped (this PR — feat/seo-ai-suggest)
+
+- Anthropic SDK installed (`@anthropic-ai/sdk` ^0.32.1).
+- `apps/admin/src/lib/ai.ts` — Sonnet 4.6 (quality) + Haiku 4.5 (bulk) tiers, prompt-cached system prefix, JSON-schema-constrained outputs, per-call cost telemetry in micro-USD.
+- Default `AiPromptTemplate` rows seeded for the 6 entity types on meta_title / meta_description / focus_keyword (+ alt_text on Product).
+- Server actions: `generateSuggestion` (quota-gated, cost-tracking), `acceptSuggestion` (writes through via `withSeoAudit` with `reason: 'ai_accepted'`, supersedes other pending suggestions), `rejectSuggestion`.
+- `AiSuggestButton` mounted next to title / description / focus keyword fields in every SEO drawer; diff-and-approve UX with optional in-place edit.
+- `AiUsageQuota` per staff user (default $50/mo), auto-rolls each calendar month.
+- `/seo/ai` overview (month spend, count, acceptance rate, personal quota bar) + `/seo/ai/runs` (suggestion log) + `/seo/ai/quota` (per-user spend bars).
 
 ## Phase 2 (next chunk)
 
