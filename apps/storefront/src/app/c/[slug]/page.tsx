@@ -2,6 +2,9 @@ import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import { db } from '@indus/db'
+import { buildBreadcrumbLd, buildCollectionLd } from '@indus/domain'
+import { JsonLd } from '@indus/ui'
+import { pageMetadata, urlFor } from '../../../lib/seo'
 import ProductCard from '../../../components/ProductCard'
 
 const PAGE_SIZE = 12
@@ -19,12 +22,31 @@ type Props = {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params
-  const category = await db.category.findUnique({ where: { slug } })
+  const [category, seoSetting] = await Promise.all([
+    db.category.findUnique({ where: { slug } }),
+    db.seoSetting.findFirst({
+      select: { defaultMetaTitleTemplate: true, defaultMetaDescription: true },
+    }),
+  ])
   if (!category) return {}
-  return {
-    title: category.seoTitle ?? `${category.name}`,
-    description: category.seoDescription ?? category.shortDescription ?? undefined,
-  }
+
+  const ogPath = category.ogImageMediaId
+    ? (await db.media.findUnique({
+        where: { id: category.ogImageMediaId },
+        select: { storagePath: true },
+      }))?.storagePath ?? null
+    : null
+
+  return pageMetadata({
+    title: category.seoTitle ?? category.name,
+    description: category.seoDescription ?? category.shortDescription ?? null,
+    path: `/c/${category.slug}`,
+    canonicalUrl: category.canonicalUrl,
+    robots: { index: category.robotsIndex, follow: category.robotsFollow },
+    ogImagePath: ogPath,
+    titleTemplate: seoSetting?.defaultMetaTitleTemplate ?? null,
+    defaultDescription: seoSetting?.defaultMetaDescription ?? null,
+  })
 }
 
 export default async function CategoryPage({ params, searchParams }: Props) {
@@ -97,8 +119,23 @@ export default async function CategoryPage({ params, searchParams }: Props) {
   const from = (page - 1) * PAGE_SIZE + 1
   const to = Math.min(page * PAGE_SIZE, total)
 
+  const collectionUrl = urlFor(`/c/${category.slug}`)
+  const collectionLd = buildCollectionLd({
+    name: category.name,
+    description: category.seoDescription ?? category.shortDescription ?? null,
+    url: collectionUrl,
+    override: category.jsonLdOverride ?? undefined,
+  })
+  const breadcrumbLd = buildBreadcrumbLd({
+    items: [
+      { name: 'Home', url: urlFor('/') },
+      { name: category.name, url: collectionUrl },
+    ],
+  })
+
   return (
     <div className="max-w-[1360px] mx-auto px-8">
+      <JsonLd data={[collectionLd, breadcrumbLd]} />
       {/* Breadcrumbs */}
       <nav className="py-4 border-b border-[var(--color-border-2)] font-mono text-[12px] text-[var(--color-muted)] flex gap-2 items-center">
         <Link href={`/`} className="hover:text-[var(--color-primary)]">Home</Link>

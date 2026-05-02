@@ -195,6 +195,42 @@ enum SpecFieldType {
   select
 }
 
+enum ChangeFreq {
+  always
+  hourly
+  daily
+  weekly
+  monthly
+  yearly
+  never
+}
+
+enum SeoEntityType {
+  product
+  category
+  brand
+  industry
+  cms_page
+  blog_post
+}
+
+enum AiPromptKind {
+  meta_title
+  meta_description
+  schema_description
+  alt_text
+  faq
+  long_description
+  focus_keywords
+}
+
+enum AiSuggestionStatus {
+  pending
+  accepted
+  rejected
+  superseded
+}
+
 // ─────────────────────────────────────────────────────────────────────────────
 // IDENTITY & ACCOUNTS
 // ─────────────────────────────────────────────────────────────────────────────
@@ -353,6 +389,19 @@ model Category {
   defaultSpecTemplateId String?
   defaultSpecTemplate   SpecTemplate? @relation("CategoryDefaultTemplate", fields: [defaultSpecTemplateId], references: [id], onDelete: SetNull)
 
+  // SEO OS — inline overrides (see packages/domain/src/seo/metadata.ts)
+  canonicalUrl       String?
+  robotsIndex        Boolean      @default(true)
+  robotsFollow       Boolean      @default(true)
+  ogImageMediaId     String?
+  focusKeyword       String?
+  sitemapPriority    Decimal?     @db.Decimal(2, 1)
+  sitemapChangeFreq  ChangeFreq?
+  excludeFromSitemap Boolean      @default(false)
+  jsonLdOverride     Json?
+  seoUpdatedAt       DateTime?
+  seoUpdatedById     String?
+
   products Product[]
 
   @@map("categories")
@@ -373,6 +422,19 @@ model Brand {
   seoDescription        String?
   isPublished           Boolean  @default(false)
 
+  // SEO OS — inline overrides
+  canonicalUrl       String?
+  robotsIndex        Boolean      @default(true)
+  robotsFollow       Boolean      @default(true)
+  ogImageMediaId     String?
+  focusKeyword       String?
+  sitemapPriority    Decimal?     @db.Decimal(2, 1)
+  sitemapChangeFreq  ChangeFreq?
+  excludeFromSitemap Boolean      @default(false)
+  jsonLdOverride     Json?
+  seoUpdatedAt       DateTime?
+  seoUpdatedById     String?
+
   products Product[]
 
   @@map("brands")
@@ -388,6 +450,19 @@ model Industry {
   heroId         String?
   hero           Media?  @relation(fields: [heroId], references: [id])
   isPublished    Boolean @default(false)
+
+  // SEO OS — inline overrides
+  canonicalUrl       String?
+  robotsIndex        Boolean      @default(true)
+  robotsFollow       Boolean      @default(true)
+  ogImageMediaId     String?
+  focusKeyword       String?
+  sitemapPriority    Decimal?     @db.Decimal(2, 1)
+  sitemapChangeFreq  ChangeFreq?
+  excludeFromSitemap Boolean      @default(false)
+  jsonLdOverride     Json?
+  seoUpdatedAt       DateTime?
+  seoUpdatedById     String?
 
   accounts Account[]
 
@@ -427,6 +502,21 @@ model Product {
   seoDescription    String?
   createdAt         DateTime      @default(now())
   updatedAt         DateTime      @updatedAt
+
+  // SEO OS — inline overrides
+  canonicalUrl       String?
+  robotsIndex        Boolean      @default(true)
+  robotsFollow       Boolean      @default(true)
+  ogImageMediaId     String?
+  focusKeyword       String?
+  sitemapPriority    Decimal?     @db.Decimal(2, 1)
+  sitemapChangeFreq  ChangeFreq?
+  excludeFromSitemap Boolean      @default(false)
+  jsonLdOverride     Json?
+  seoUpdatedAt       DateTime?
+  seoUpdatedById     String?
+  // FTS column managed by raw SQL migration (Unsupported: tsvector)
+  searchTsv          Unsupported("tsvector")?
 
   images          ProductImage[]
   specs           ProductSpec[]
@@ -855,6 +945,19 @@ model CmsPage {
   publishedAt DateTime?
   updatedAt   DateTime  @updatedAt
 
+  // SEO OS — inline overrides
+  canonicalUrl       String?
+  robotsIndex        Boolean      @default(true)
+  robotsFollow       Boolean      @default(true)
+  ogImageMediaId     String?
+  focusKeyword       String?
+  sitemapPriority    Decimal?     @db.Decimal(2, 1)
+  sitemapChangeFreq  ChangeFreq?
+  excludeFromSitemap Boolean      @default(false)
+  jsonLdOverride     Json?
+  seoUpdatedAt       DateTime?
+  seoUpdatedById     String?
+
   @@map("cms_pages")
 }
 
@@ -874,26 +977,49 @@ model BlogPost {
   publishedAt    DateTime?
   isPublished    Boolean   @default(false)
 
+  // SEO OS — inline overrides
+  canonicalUrl       String?
+  robotsIndex        Boolean      @default(true)
+  robotsFollow       Boolean      @default(true)
+  ogImageMediaId     String?
+  focusKeyword       String?
+  sitemapPriority    Decimal?     @db.Decimal(2, 1)
+  sitemapChangeFreq  ChangeFreq?
+  excludeFromSitemap Boolean      @default(false)
+  jsonLdOverride     Json?
+  seoUpdatedAt       DateTime?
+  seoUpdatedById     String?
+
   @@map("blog_posts")
 }
 
 model Redirect {
-  id         String   @id @default(uuid())
-  fromPath   String   @unique
-  toPath     String
-  statusCode Int      @default(301)
-  createdAt  DateTime @default(now())
+  id          String    @id @default(uuid())
+  fromPath    String    @unique
+  toPath      String
+  statusCode  Int       @default(301)
+  createdAt   DateTime  @default(now())
+  hits        Int       @default(0)
+  lastHitAt   DateTime?
+  isActive    Boolean   @default(true)
+  createdById String?
+  notes       String?
 
+  @@index([isActive])
   @@map("redirects")
 }
 
 model SeoSetting {
-  id                        String  @id @default(uuid())
-  defaultMetaTitleTemplate  String?
-  defaultMetaDescription    String?
-  ogDefaultImageId          String?
-  robotsTxt                 String?
-  sitemapSettings           Json    @default("{}")
+  id                          String   @id @default(uuid())
+  defaultMetaTitleTemplate    String?
+  defaultMetaDescription      String?
+  ogDefaultImageId            String?
+  robotsTxt                   String?
+  sitemapSettings             Json     @default("{}")
+  organizationJsonLd          Json?
+  websiteJsonLd               Json?
+  sitemapMaxUrls              Int      @default(45000)
+  robotsTxtAutoAppendSitemap  Boolean  @default(true)
 
   @@map("seo_settings")
 }
@@ -967,4 +1093,205 @@ model EmailTemplate {
   updatedAt DateTime @updatedAt
 
   @@map("email_templates")
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// SEO OPERATING SYSTEM
+// ─────────────────────────────────────────────────────────────────────────────
+
+// Editable prompt templates the AI Suggest layer uses. The systemPrompt is
+// designed for Anthropic prompt caching (large stable prefix).
+model AiPromptTemplate {
+  id           String        @id @default(uuid())
+  kind         AiPromptKind
+  entityType   SeoEntityType
+  name         String
+  systemPrompt String
+  userTemplate String
+  model        String        @default("claude-haiku-4-5")
+  maxTokens    Int           @default(400)
+  isActive     Boolean       @default(true)
+  updatedAt    DateTime      @updatedAt
+
+  @@unique([kind, entityType, isActive])
+  @@map("ai_prompt_templates")
+}
+
+// Every AI generation, regardless of accept/reject. Drives the diff-and-approve
+// workflow + audits cost.
+model AiSuggestion {
+  id            String              @id @default(uuid())
+  entityType    SeoEntityType
+  entityId      String
+  field         String              // e.g. "metaTitle", "metaDescription", "altText:<imageId>"
+  templateId    String?
+  model         String
+  inputContext  Json
+  output        String
+  status        AiSuggestionStatus  @default(pending)
+  costUsdMicros Int                 @default(0)
+  cacheHitRatio Float?
+  inputTokens   Int?
+  outputTokens  Int?
+  createdById   String?
+  createdAt     DateTime            @default(now())
+  reviewedAt    DateTime?
+
+  @@index([entityType, entityId, field, createdAt])
+  @@map("ai_suggestions")
+}
+
+model AiUsageQuota {
+  id                   String   @id @default(uuid())
+  staffUserId          String   @unique
+  monthlyUsdCapMicros  Int      @default(50000000) // $50/month default
+  spentThisMonthMicros Int      @default(0)
+  resetAt              DateTime
+
+  @@map("ai_usage_quotas")
+}
+
+// Cached health score per entity. Recomputed on save + nightly.
+model SeoHealthScore {
+  id         String        @id @default(uuid())
+  entityType SeoEntityType
+  entityId   String
+  score      Int           // 0..100
+  breakdown  Json          // {checkId: {pass, weight, message}}
+  computedAt DateTime      @default(now())
+
+  @@unique([entityType, entityId])
+  @@map("seo_health_scores")
+}
+
+// Search subsystem
+model SearchSynonym {
+  id       String  @id @default(uuid())
+  group    String
+  term     String
+  isActive Boolean @default(true)
+
+  @@unique([group, term])
+  @@index([term])
+  @@map("search_synonyms")
+}
+
+model SearchRedirect {
+  id        String  @id @default(uuid())
+  query     String  @unique // normalized lowercase
+  targetUrl String
+  isActive  Boolean @default(true)
+
+  @@map("search_redirects")
+}
+
+model SearchBoost {
+  id         String        @id @default(uuid())
+  entityType SeoEntityType
+  entityId   String
+  boost      Float
+  expiresAt  DateTime?
+
+  @@unique([entityType, entityId])
+  @@map("search_boosts")
+}
+
+model SearchQueryLog {
+  id           String    @id @default(uuid())
+  query        String
+  normalized   String
+  resultsCount Int
+  clickedSku   String?
+  clickedAt    DateTime?
+  sessionId    String?
+  userId       String?
+  createdAt    DateTime  @default(now())
+
+  @@index([normalized, createdAt])
+  @@index([resultsCount, createdAt])
+  @@map("search_query_logs")
+}
+
+// Audit trail for SEO writes — supports the revert UI.
+model SeoAuditLog {
+  id         String   @id @default(uuid())
+  entityType String   // includes "global:robots", "global:sitemap"
+  entityId   String?
+  field      String
+  before     Json?
+  after      Json?
+  actorId    String?
+  reason     String?
+  createdAt  DateTime @default(now())
+
+  @@index([entityType, entityId, createdAt])
+  @@map("seo_audit_logs")
+}
+
+model NotFoundLog {
+  id                 String    @id @default(uuid())
+  path               String    @unique
+  referer            String?
+  userAgent          String?
+  hits               Int       @default(1)
+  firstSeenAt        DateTime  @default(now())
+  lastSeenAt         DateTime  @default(now())
+  resolvedRedirectId String?
+
+  @@index([hits])
+  @@map("not_found_logs")
+}
+
+// Phase 2 — Google Search Console daily metrics
+model GscMetricDaily {
+  id          String   @id @default(uuid())
+  url         String
+  date        DateTime @db.Date
+  query       String?  // null row = page-level totals
+  clicks      Int      @default(0)
+  impressions Int      @default(0)
+  ctr         Float    @default(0)
+  position    Float    @default(0)
+
+  @@unique([url, date, query])
+  @@index([url, date])
+  @@map("gsc_metric_daily")
+}
+
+// Phase 3 — link-graph crawler
+model CrawlRun {
+  id           String         @id @default(uuid())
+  startedAt    DateTime       @default(now())
+  finishedAt   DateTime?
+  pagesCrawled Int            @default(0)
+  edges        CrawlEdge[]
+  findings     CrawlFinding[]
+
+  @@map("crawl_runs")
+}
+
+model CrawlEdge {
+  id         String   @id @default(uuid())
+  runId      String
+  fromUrl    String
+  toUrl      String
+  status     Int
+  isInternal Boolean
+  rel        String?
+  run        CrawlRun @relation(fields: [runId], references: [id], onDelete: Cascade)
+
+  @@index([runId, toUrl])
+  @@map("crawl_edges")
+}
+
+model CrawlFinding {
+  id     String   @id @default(uuid())
+  runId  String
+  kind   String   // orphan | broken | redirect_chain | deep | dup_canonical
+  url    String
+  detail Json
+  run    CrawlRun @relation(fields: [runId], references: [id], onDelete: Cascade)
+
+  @@index([runId, kind])
+  @@map("crawl_findings")
 }

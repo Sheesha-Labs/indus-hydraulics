@@ -1,11 +1,18 @@
 import { mediaUrl } from '../../../lib/media'
 import { signedUrlFor } from '../../../lib/supabase'
+import { pageMetadata, urlFor } from '../../../lib/seo'
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import Image from 'next/image'
 import { db } from '@indus/db'
-import { verifyPreviewToken } from '@indus/domain'
+import {
+  buildBreadcrumbLd,
+  buildFaqLd,
+  buildProductLd,
+  verifyPreviewToken,
+} from '@indus/domain'
+import { JsonLd } from '@indus/ui'
 import { safeAuth } from '../../../lib/auth'
 import ProductGallery from '../../../components/ProductGallery'
 import AddToQuoteButton from '../../../components/AddToQuoteButton'
@@ -20,15 +27,38 @@ type Props = {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { sku } = await params
-  const product = await db.product.findUnique({
-    where: { sku: decodeURIComponent(sku) },
-    include: { brand: true },
-  })
+  const decoded = decodeURIComponent(sku)
+  const [product, seoSetting] = await Promise.all([
+    db.product.findUnique({
+      where: { sku: decoded },
+      include: {
+        brand: true,
+        images: { orderBy: { position: 'asc' }, take: 1, include: { media: true } },
+      },
+    }),
+    db.seoSetting.findFirst({
+      select: { defaultMetaTitleTemplate: true, defaultMetaDescription: true },
+    }),
+  ])
   if (!product) return {}
-  return {
-    title: product.seoTitle ?? `${product.title}`,
-    description: product.seoDescription ?? product.descriptionShort ?? undefined,
-  }
+
+  const ogPath = product.ogImageMediaId
+    ? (await db.media.findUnique({
+        where: { id: product.ogImageMediaId },
+        select: { storagePath: true },
+      }))?.storagePath ?? null
+    : product.images[0]?.media.storagePath ?? null
+
+  return pageMetadata({
+    title: product.seoTitle ?? product.title,
+    description: product.seoDescription ?? product.descriptionShort ?? null,
+    path: `/p/${product.slug}`,
+    canonicalUrl: product.canonicalUrl,
+    robots: { index: product.robotsIndex, follow: product.robotsFollow },
+    ogImagePath: ogPath,
+    titleTemplate: seoSetting?.defaultMetaTitleTemplate ?? null,
+    defaultDescription: seoSetting?.defaultMetaDescription ?? null,
+  })
 }
 
 export default async function ProductPage({ params, searchParams }: Props) {
@@ -148,8 +178,49 @@ export default async function ProductPage({ params, searchParams }: Props) {
     compatibility: r.compatibility,
   }))
 
+  // JSON-LD assembly. Pages with FAQs additionally emit a FAQPage entity.
+  const productUrl = urlFor(`/p/${product.slug}`)
+  const productLd = buildProductLd({
+    name: product.title,
+    description: product.descriptionShort,
+    sku: product.sku,
+    mpn: product.mpn,
+    url: productUrl,
+    imageUrls: product.images.map((img) => mediaUrl(img.media.storagePath)),
+    brand: product.brand ? { name: product.brand.name } : null,
+    category: product.category ? { name: product.category.name } : null,
+    offers:
+      product.listPrice != null
+        ? {
+            price: Number(product.listPrice),
+            currency: product.listPriceCurrency,
+            availability:
+              product.status === 'discontinued'
+                ? 'out_of_stock'
+                : product.stockQty > 0
+                  ? 'in_stock'
+                  : 'lead_time',
+            url: productUrl,
+          }
+        : null,
+    override: product.jsonLdOverride ?? undefined,
+  })
+  const breadcrumbLd = buildBreadcrumbLd({
+    items: [
+      { name: 'Home', url: urlFor('/') },
+      ...(product.category
+        ? [{ name: product.category.name, url: urlFor(`/c/${product.category.slug}`) }]
+        : []),
+      { name: product.title, url: productUrl },
+    ],
+  })
+  const faqLd = buildFaqLd({
+    faqs: product.faqs.map((f) => ({ question: f.question, answer: f.answer })),
+  })
+
   return (
     <>
+      <JsonLd data={[productLd, breadcrumbLd, faqLd]} />
       {isPreview && (
         <div className="bg-[oklch(0.95_0.08_85)] border-b border-[oklch(0.75_0.12_85)] py-2.5 px-8 text-center font-mono text-[12px] text-[oklch(0.4_0.12_70)] tracking-[0.04em]">
           PREVIEW MODE · {product.status.toUpperCase()} · not visible to public
