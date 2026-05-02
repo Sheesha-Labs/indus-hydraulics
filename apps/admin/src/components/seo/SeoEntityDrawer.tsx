@@ -156,16 +156,27 @@ export default function SeoEntityDrawer({
   const effectiveDescription = seoDescription.trim()
   const effectiveCanonical = canonicalUrl.trim() || entity.publicUrl
 
-  // Live JSON-LD preview.
-  const ldPreview = useMemo(() => {
-    let parsedOverride: unknown = undefined
-    if (jsonLdOverride.trim()) {
-      try {
-        parsedOverride = JSON.parse(jsonLdOverride)
-      } catch {
-        // Invalid JSON — render the unmerged base.
+  // Live JSON-LD preview + validation.
+  const overrideValidation = useMemo(() => {
+    const trimmed = jsonLdOverride.trim()
+    if (!trimmed) return { ok: true as const, parsed: undefined }
+    try {
+      const parsed = JSON.parse(trimmed) as unknown
+      if (typeof parsed !== 'object' || parsed === null || Array.isArray(parsed)) {
+        return {
+          ok: false as const,
+          message: 'Override must be a JSON object (not an array or scalar).',
+        }
       }
+      return { ok: true as const, parsed }
+    } catch (err) {
+      const msg = err instanceof Error ? err.message : 'Invalid JSON'
+      return { ok: false as const, message: msg }
     }
+  }, [jsonLdOverride])
+
+  const ldPreview = useMemo(() => {
+    const parsedOverride = overrideValidation.ok ? overrideValidation.parsed : undefined
     if (entityType === 'product' && extra.kind === 'product') {
       return [
         buildProductLd({
@@ -267,7 +278,7 @@ export default function SeoEntityDrawer({
     entity.publicUrl,
     effectiveDescription,
     effectiveCanonical,
-    jsonLdOverride,
+    overrideValidation,
   ])
 
   function handleSubmit(formData: FormData) {
@@ -451,15 +462,40 @@ export default function SeoEntityDrawer({
                 Paste a partial override below to deep-merge into the auto-emitted block. Leave
                 blank to use defaults.
               </p>
-              <FieldBlock label="jsonLdOverride (JSON)">
+              <FieldBlock
+                label="jsonLdOverride (JSON)"
+                rightAdornment={
+                  jsonLdOverride.trim().length > 0 ? (
+                    <span
+                      className={`font-mono text-[10px] uppercase tracking-wider ${
+                        overrideValidation.ok
+                          ? 'text-[oklch(0.4_0.14_145)]'
+                          : 'text-[oklch(0.5_0.18_25)]'
+                      }`}
+                    >
+                      {overrideValidation.ok ? 'valid' : 'invalid'}
+                    </span>
+                  ) : null
+                }
+              >
                 <textarea
                   rows={10}
                   value={jsonLdOverride}
                   onChange={(e) => setJsonLdOverride(e.target.value)}
-                  className={`${textareaCls} font-mono text-[11px]`}
+                  className={`${textareaCls} font-mono text-[11px] ${
+                    !overrideValidation.ok ? 'border-[oklch(0.5_0.18_25)]' : ''
+                  }`}
                   placeholder={'{\n  "aggregateRating": { ... }\n}'}
                   spellCheck={false}
                 />
+                {!overrideValidation.ok && (
+                  <p
+                    className="font-mono text-[11px] text-[oklch(0.5_0.18_25)] mt-1"
+                    role="alert"
+                  >
+                    {overrideValidation.message} — preview below shows the unmerged base.
+                  </p>
+                )}
               </FieldBlock>
             </>
           )}
