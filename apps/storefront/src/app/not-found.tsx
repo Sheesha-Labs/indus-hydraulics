@@ -3,12 +3,14 @@ import { db } from '@indus/db'
 import NotFoundLogger from '../components/NotFoundLogger'
 
 export default async function NotFound() {
-  const categories = await db.category.findMany({
-    where: { isPublished: true, parentId: null },
-    take: 6,
-    orderBy: { position: 'asc' },
-    select: { slug: true, name: true },
-  })
+  const categories = await db.category
+    .findMany({
+      where: { isPublished: true, parentId: null },
+      take: 6,
+      orderBy: { position: 'asc' },
+      select: { slug: true, name: true },
+    })
+    .catch(() => [])
 
   return (
     <div className="max-w-[680px] mx-auto px-8 py-20 pb-32 text-center">

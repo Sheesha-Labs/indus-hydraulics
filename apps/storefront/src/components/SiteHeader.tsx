@@ -20,7 +20,7 @@ export default async function SiteHeader() {
           select: { id: true, kind: true, payload: true, readAt: true, createdAt: true },
         })
       : Promise.resolve([]),
-    db.product.count({ where: { status: 'active' } }),
+    db.product.count({ where: { status: 'active' } }).catch(() => 0),
   ])
 
   const unreadCount = notifications.filter((n) => !n.readAt).length

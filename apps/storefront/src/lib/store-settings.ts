@@ -25,18 +25,20 @@ const FALLBACK: ResolvedStoreSettings = {
 }
 
 export const getStoreSettings = cache(async (): Promise<ResolvedStoreSettings> => {
-  const row = await db.storeSettings.findFirst({
-    select: {
-      name: true,
-      tagline: true,
-      certificationLine: true,
-      contactPhone: true,
-      contactEmail: true,
-      contactHours: true,
-      contactLocationLabel: true,
-      logoMedia: { select: { storagePath: true } },
-    },
-  })
+  const row = await db.storeSettings
+    .findFirst({
+      select: {
+        name: true,
+        tagline: true,
+        certificationLine: true,
+        contactPhone: true,
+        contactEmail: true,
+        contactHours: true,
+        contactLocationLabel: true,
+        logoMedia: { select: { storagePath: true } },
+      },
+    })
+    .catch(() => null)
   if (!row) return FALLBACK
   return {
     name: row.name,

@@ -9,23 +9,25 @@ import {
 } from '@indus/domain'
 
 async function loadRaw(location: MenuLocation) {
-  return db.navMenu.findUnique({
-    where: { location },
-    include: {
-      items: {
-        where: { isVisible: true },
-        orderBy: [{ parentId: 'asc' }, { position: 'asc' }],
-        include: {
-          category: { select: { slug: true, _count: { select: { products: true } } } },
-          brand: { select: { slug: true } },
-          industry: { select: { slug: true } },
-          cmsPage: { select: { slug: true } },
-          product: { select: { sku: true } },
-          promoImage: { select: { storagePath: true } },
+  return db.navMenu
+    .findUnique({
+      where: { location },
+      include: {
+        items: {
+          where: { isVisible: true },
+          orderBy: [{ parentId: 'asc' }, { position: 'asc' }],
+          include: {
+            category: { select: { slug: true, _count: { select: { products: true } } } },
+            brand: { select: { slug: true } },
+            industry: { select: { slug: true } },
+            cmsPage: { select: { slug: true } },
+            product: { select: { sku: true } },
+            promoImage: { select: { storagePath: true } },
+          },
         },
       },
-    },
-  })
+    })
+    .catch(() => null)
 }
 
 type LoadedMenu = NonNullable<Awaited<ReturnType<typeof loadRaw>>>
