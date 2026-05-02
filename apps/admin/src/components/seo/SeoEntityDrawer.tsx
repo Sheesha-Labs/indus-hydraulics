@@ -2,8 +2,10 @@
 
 import { useMemo, useState, useTransition } from 'react'
 import {
+  buildArticleLd,
   buildBreadcrumbLd,
   buildCollectionLd,
+  buildOrgLd,
   buildProductLd,
   TITLE_RANGE,
   DESCRIPTION_RANGE,
@@ -73,6 +75,27 @@ export type SeoDrawerExtra =
   | {
       kind: 'category'
       shortDescription: string | null
+    }
+  | {
+      kind: 'brand'
+      /** Logo URL (resolved via mediaUrl) for Organization JSON-LD. */
+      logoUrl: string | null
+    }
+  | {
+      kind: 'industry'
+      description: string | null
+    }
+  | {
+      kind: 'blog_post'
+      /** Hero image URL (resolved via mediaUrl) for Article JSON-LD. */
+      heroImageUrl: string | null
+      authorName: string | null
+      /** ISO timestamp string. */
+      publishedAt: string | null
+    }
+  | {
+      kind: 'cms_page'
+      // CmsPages don't emit JSON-LD on the storefront today, so no extras.
     }
 
 interface Props {
@@ -180,6 +203,60 @@ export default function SeoEntityDrawer({
         }),
       ]
     }
+    if (entityType === 'brand' && extra.kind === 'brand') {
+      return [
+        buildOrgLd({
+          name: entity.displayName,
+          url: effectiveCanonical,
+          logoUrl: extra.logoUrl,
+          override: parsedOverride,
+        }),
+        buildBreadcrumbLd({
+          items: [
+            { name: 'Home', url: rootOf(entity.publicUrl) },
+            { name: 'Brands', url: rootOf(entity.publicUrl) + '/brands' },
+            { name: entity.displayName, url: effectiveCanonical },
+          ],
+        }),
+      ]
+    }
+    if (entityType === 'industry' && extra.kind === 'industry') {
+      return [
+        buildCollectionLd({
+          name: entity.displayName,
+          description: effectiveDescription || extra.description || null,
+          url: effectiveCanonical,
+          override: parsedOverride,
+        }),
+        buildBreadcrumbLd({
+          items: [
+            { name: 'Home', url: rootOf(entity.publicUrl) },
+            { name: entity.displayName, url: effectiveCanonical },
+          ],
+        }),
+      ]
+    }
+    if (entityType === 'blog_post' && extra.kind === 'blog_post') {
+      return [
+        buildArticleLd({
+          headline: entity.displayName,
+          description: effectiveDescription || null,
+          url: effectiveCanonical,
+          imageUrl: extra.heroImageUrl,
+          authorName: extra.authorName,
+          publishedAt: extra.publishedAt ? new Date(extra.publishedAt) : null,
+          override: parsedOverride,
+        }),
+        buildBreadcrumbLd({
+          items: [
+            { name: 'Home', url: rootOf(entity.publicUrl) },
+            { name: 'Blog', url: rootOf(entity.publicUrl) + '/blog' },
+            { name: entity.displayName, url: effectiveCanonical },
+          ],
+        }),
+      ]
+    }
+    // cms_page emits no JSON-LD on the storefront today; preview is empty.
     return []
   }, [
     entityType,

@@ -1,5 +1,6 @@
 'use client'
 
+import Link from 'next/link'
 import { useState, useTransition } from 'react'
 import { createBrand, updateBrand, deleteBrand } from './actions'
 
@@ -111,6 +112,13 @@ export default function BrandsClient({ brands }: Props) {
                       >
                         Edit
                       </button>
+                      <Link
+                        href={`/brands/${b.id}/edit`}
+                        className="font-mono text-[10px] text-[var(--color-muted)] hover:text-[var(--color-primary)]"
+                        title="Open dedicated SEO editor"
+                      >
+                        SEO
+                      </Link>
                       <DeleteBrandButton
                         id={b.id}
                        
