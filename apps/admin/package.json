@@ -17,6 +17,7 @@
     "@indus/db": "workspace:^",
     "@indus/domain": "workspace:^",
     "@indus/email": "workspace:^",
+    "@indus/pdf": "workspace:^",
     "@indus/ui": "workspace:^",
     "@prisma/client": "^7.8.0",
     "inngest": "^3.27.0",
