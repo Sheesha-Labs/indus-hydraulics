@@ -626,7 +626,165 @@ async function main() {
   await seedNavigationMenus()
   console.log('  ✓ Navigation menus')
 
+  // ── AI prompt templates (SEO Suggest layer) ────────────────────────────────
+  await seedAiPromptTemplates()
+  console.log('  ✓ AI prompt templates')
+
   console.log('\n✅ Seed complete.')
+}
+
+// Default Anthropic prompt prefixes for the SEO Suggest drawer. Lives here
+// rather than in the admin app so that `pnpm db:seed` makes the drawer
+// useful out of the box. The system prompts are designed for Anthropic
+// prompt caching — keep them stable.
+async function seedAiPromptTemplates() {
+  const titleSystem = `You write SEO meta titles for the Indus Hydraulics B2B industrial catalogue (pumps, fittings, hoses, valves).
+
+Rules:
+- Output JSON only, with the schema {"title": string}.
+- Keep titles between 30 and 60 characters.
+- Lead with the most distinctive identifier (part number / SKU / MPN) when buyers search by it.
+- Include the brand only when it is well known and adds search value.
+- Use industrial terminology, not marketing language. No "premium", "best-in-class", "world-class".
+- Do not invent specs or compatibility claims.
+
+Few-shot examples:
+{"title":"3/8 NPT Hydraulic Hose Fitting — Parker 10643-6-6"}
+{"title":"SAE 100R2 Hydraulic Hose 1/2 in × 50 ft — Eaton EC600"}
+{"title":"Pressure Relief Valve 3000 PSI Adjustable — Sun PRDB-LAN"}
+
+Respond ONLY with the JSON object. No prose, no explanation.`
+
+  const descriptionSystem = `You write SEO meta descriptions for the Indus Hydraulics B2B industrial catalogue.
+
+Rules:
+- Output JSON only, with the schema {"description": string}.
+- Keep descriptions between 120 and 160 characters.
+- Lead with the most useful technical fact (size, pressure rating, material).
+- Include a buyer-relevant outcome (compatibility, lead time, application) when known.
+- No exclamation marks. No "Shop now" / "Buy today" / urgency language.
+- Do not invent specs or claims.
+
+Few-shot examples:
+{"description":"Parker 10643-6-6 hydraulic hose fitting, 3/8 in male NPT × -6 hose. Forged carbon steel, 5800 PSI working pressure. Compatible with 482-series hose."}
+{"description":"Sun PRDB-LAN adjustable pressure relief valve, 0–3000 PSI range, 30 GPM rated flow. SAE-08 cartridge mount. Used in mobile-equipment hydraulic circuits."}
+
+Respond ONLY with the JSON object. No prose, no explanation.`
+
+  const focusKeywordSystem = `You pick the strongest focus keyword (primary search phrase) for an SEO page.
+
+Rules:
+- Output JSON only, with the schema {"keyword": string}.
+- Pick a single phrase, 2-5 words, lowercase, no punctuation.
+- Prefer phrases buyers actually search — part categories ("hydraulic hose fitting"), specs ("3000 psi relief valve"), or brand+series when the brand drives traffic.
+- Avoid SKU/MPN strings as the keyword — those are titles, not phrases people search.
+
+Respond ONLY with the JSON object.`
+
+  const altTextSystem = `You write image alt text for the Indus Hydraulics catalogue.
+
+Rules:
+- Output JSON only, with the schema {"alt": string}.
+- Maximum 125 characters.
+- Describe what is visibly in the image (product, angle, key visual feature). Do not restate the title or repeat brand+SKU verbatim.
+- No "image of", "picture of" — just describe the subject.
+
+Respond ONLY with the JSON object.`
+
+  const userTemplateProduct = `Product:
+- Title: {{title}}
+- SKU: {{sku}}
+- MPN: {{mpn}}
+- Brand: {{brand}}
+- Category: {{categoryPath}}
+- Focus keyword: {{focusKeyword}}
+- Key specs: {{topSpecs}}
+- Short description: {{descriptionShort}}
+
+Generate the field requested in the system instructions.`
+
+  const userTemplateGeneric = `Entity:
+- Title: {{title}}
+- Slug: {{sku}}
+- Brand: {{brand}}
+- Category: {{categoryPath}}
+- Focus keyword: {{focusKeyword}}
+- Short description: {{descriptionShort}}
+
+Generate the field requested in the system instructions.`
+
+  type Seed = {
+    kind: 'meta_title' | 'meta_description' | 'focus_keywords' | 'alt_text'
+    entityType: 'product' | 'category' | 'brand' | 'industry' | 'cms_page' | 'blog_post'
+    name: string
+    systemPrompt: string
+    userTemplate: string
+    model: string
+    maxTokens: number
+  }
+
+  const entityTypes = ['product', 'category', 'brand', 'industry', 'cms_page', 'blog_post'] as const
+
+  const seeds: Seed[] = []
+  for (const et of entityTypes) {
+    const userTpl = et === 'product' ? userTemplateProduct : userTemplateGeneric
+    seeds.push({
+      kind: 'meta_title',
+      entityType: et,
+      name: `Default ${et} title`,
+      systemPrompt: titleSystem,
+      userTemplate: userTpl,
+      model: 'claude-sonnet-4-6',
+      maxTokens: 200,
+    })
+    seeds.push({
+      kind: 'meta_description',
+      entityType: et,
+      name: `Default ${et} description`,
+      systemPrompt: descriptionSystem,
+      userTemplate: userTpl,
+      model: 'claude-sonnet-4-6',
+      maxTokens: 400,
+    })
+    seeds.push({
+      kind: 'focus_keywords',
+      entityType: et,
+      name: `Default ${et} focus keyword`,
+      systemPrompt: focusKeywordSystem,
+      userTemplate: userTpl,
+      model: 'claude-sonnet-4-6',
+      maxTokens: 80,
+    })
+    if (et === 'product') {
+      seeds.push({
+        kind: 'alt_text',
+        entityType: et,
+        name: `Default ${et} alt text`,
+        systemPrompt: altTextSystem,
+        userTemplate: userTpl,
+        model: 'claude-sonnet-4-6',
+        maxTokens: 200,
+      })
+    }
+  }
+
+  // Idempotent: the @@unique([kind, entityType, isActive]) means upsert
+  // by that triple needs the where shape Prisma exposes for compound keys.
+  for (const s of seeds) {
+    await db.aiPromptTemplate.upsert({
+      where: {
+        kind_entityType_isActive: { kind: s.kind, entityType: s.entityType, isActive: true },
+      },
+      create: { ...s, isActive: true },
+      update: {
+        // Only refresh prompts; leave model/maxTokens settings the admin
+        // may have hand-tuned via /seo/ai/templates (Phase 2).
+        systemPrompt: s.systemPrompt,
+        userTemplate: s.userTemplate,
+        name: s.name,
+      },
+    })
+  }
 }
 
 async function seedNavigationMenus() {
