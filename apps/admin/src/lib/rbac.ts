@@ -31,6 +31,14 @@ export const ROLES = {
   ACCOUNT_WRITE: ['super_admin', 'manager', 'sales_rep'] as const,
   /** CMS content (blog, pages, SEO meta, redirects). */
   CMS_WRITE: ['super_admin', 'manager', 'cms_editor'] as const,
+  /** Read access to the SEO OS (inspector, audit, dashboards). */
+  SEO_READ: ['super_admin', 'manager', 'sales_rep', 'engineer', 'cms_editor'] as const,
+  /** Edit per-entity SEO meta (title/description/canonical/robots/OG). */
+  SEO_WRITE: ['super_admin', 'manager', 'cms_editor'] as const,
+  /** Robots.txt, redirects, canonical overrides, sitemap defaults, structured-data globals — high blast-radius. */
+  SEO_INFRASTRUCTURE: ['super_admin', 'manager'] as const,
+  /** Run AI generation (Claude API) — gated by per-user quota. */
+  AI_GENERATE: ['super_admin', 'manager', 'cms_editor'] as const,
   /** Store-wide settings (email templates, store name, default terms). */
   SETTINGS_WRITE: ['super_admin', 'manager'] as const,
   /** Staff user CRUD. */

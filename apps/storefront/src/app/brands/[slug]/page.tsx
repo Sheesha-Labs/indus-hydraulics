@@ -3,7 +3,10 @@ import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import Image from 'next/image'
 import { db } from '@indus/db'
+import { buildBreadcrumbLd, buildOrgLd } from '@indus/domain'
+import { JsonLd } from '@indus/ui'
 import { mediaUrl } from '../../../lib/media'
+import { pageMetadata, urlFor } from '../../../lib/seo'
 
 type Props = {
   params: Promise<{ slug: string }>
@@ -11,12 +14,31 @@ type Props = {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params
-  const brand = await db.brand.findUnique({ where: { slug } })
+  const [brand, seoSetting] = await Promise.all([
+    db.brand.findUnique({ where: { slug } }),
+    db.seoSetting.findFirst({
+      select: { defaultMetaTitleTemplate: true, defaultMetaDescription: true },
+    }),
+  ])
   if (!brand) return {}
-  return {
-    title: brand.seoTitle ?? `${brand.name}`,
-    description: brand.seoDescription ?? brand.description ?? undefined,
-  }
+
+  const ogPath = brand.ogImageMediaId
+    ? (await db.media.findUnique({
+        where: { id: brand.ogImageMediaId },
+        select: { storagePath: true },
+      }))?.storagePath ?? null
+    : null
+
+  return pageMetadata({
+    title: brand.seoTitle ?? brand.name,
+    description: brand.seoDescription ?? brand.description ?? null,
+    path: `/brands/${brand.slug}`,
+    canonicalUrl: brand.canonicalUrl,
+    robots: { index: brand.robotsIndex, follow: brand.robotsFollow },
+    ogImagePath: ogPath,
+    titleTemplate: seoSetting?.defaultMetaTitleTemplate ?? null,
+    defaultDescription: seoSetting?.defaultMetaDescription ?? null,
+  })
 }
 
 export default async function BrandPage({ params }: Props) {
@@ -62,8 +84,24 @@ export default async function BrandPage({ params }: Props) {
     }),
   ])
 
+  const brandUrl = urlFor(`/brands/${brand.slug}`)
+  const brandLd = buildOrgLd({
+    name: brand.name,
+    url: brandUrl,
+    logoUrl: brand.logo ? mediaUrl(brand.logo.storagePath) : null,
+    override: brand.jsonLdOverride ?? undefined,
+  })
+  const breadcrumbLd = buildBreadcrumbLd({
+    items: [
+      { name: 'Home', url: urlFor('/') },
+      { name: 'Brands', url: urlFor('/brands') },
+      { name: brand.name, url: brandUrl },
+    ],
+  })
+
   return (
     <div>
+      <JsonLd data={[brandLd, breadcrumbLd]} />
       {/* ── Dark hero ─────────────────────────────────────────── */}
       <section style={{ background: 'var(--color-primary)', color: 'white', padding: '48px 0 56px', borderBottom: '1px solid oklch(0.3 0 0)' }}>
         <div className="max-w-[1360px] mx-auto px-8 grid gap-12" style={{ gridTemplateColumns: '1fr 320px', alignItems: 'end' }}>

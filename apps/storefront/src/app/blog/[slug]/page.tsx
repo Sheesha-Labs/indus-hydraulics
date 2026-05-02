@@ -3,18 +3,40 @@ import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import Image from 'next/image'
 import { db } from '@indus/db'
+import { buildArticleLd, buildBreadcrumbLd } from '@indus/domain'
+import { JsonLd } from '@indus/ui'
 import { mediaUrl } from '../../../lib/media'
+import { pageMetadata, urlFor } from '../../../lib/seo'
 
 type Props = { params: Promise<{ slug: string }> }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params
-  const post = await db.blogPost.findUnique({ where: { slug, isPublished: true } })
+  const [post, seoSetting] = await Promise.all([
+    db.blogPost.findUnique({ where: { slug, isPublished: true }, include: { hero: true } }),
+    db.seoSetting.findFirst({
+      select: { defaultMetaTitleTemplate: true, defaultMetaDescription: true },
+    }),
+  ])
   if (!post) return {}
-  return {
-    title: post.seoTitle ?? `${post.title}`,
-    description: post.seoDescription ?? post.excerpt ?? undefined,
-  }
+
+  const ogPath = post.ogImageMediaId
+    ? (await db.media.findUnique({
+        where: { id: post.ogImageMediaId },
+        select: { storagePath: true },
+      }))?.storagePath ?? null
+    : post.hero?.storagePath ?? null
+
+  return pageMetadata({
+    title: post.seoTitle ?? post.title,
+    description: post.seoDescription ?? post.excerpt ?? null,
+    path: `/blog/${post.slug}`,
+    canonicalUrl: post.canonicalUrl,
+    robots: { index: post.robotsIndex, follow: post.robotsFollow },
+    ogImagePath: ogPath,
+    titleTemplate: seoSetting?.defaultMetaTitleTemplate ?? null,
+    defaultDescription: seoSetting?.defaultMetaDescription ?? null,
+  })
 }
 
 export default async function BlogPostPage({ params }: Props) {
@@ -27,8 +49,27 @@ export default async function BlogPostPage({ params }: Props) {
 
   if (!post) notFound()
 
+  const postUrl = urlFor(`/blog/${post.slug}`)
+  const articleLd = buildArticleLd({
+    headline: post.title,
+    description: post.excerpt ?? null,
+    url: postUrl,
+    imageUrl: post.hero ? mediaUrl(post.hero.storagePath) : null,
+    authorName: post.author?.name ?? null,
+    publishedAt: post.publishedAt ?? null,
+    override: post.jsonLdOverride ?? undefined,
+  })
+  const breadcrumbLd = buildBreadcrumbLd({
+    items: [
+      { name: 'Home', url: urlFor('/') },
+      { name: 'Blog', url: urlFor('/blog') },
+      { name: post.title, url: postUrl },
+    ],
+  })
+
   return (
     <div className="max-w-[780px] mx-auto px-8 py-10 pb-20">
+      <JsonLd data={[articleLd, breadcrumbLd]} />
       {/* Breadcrumb */}
       <nav className="flex items-center gap-2 font-mono text-[12px] text-[var(--color-muted)] mb-6">
         <Link href={`/`} className="hover:text-[var(--color-primary)]">Home</Link>

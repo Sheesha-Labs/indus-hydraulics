@@ -268,7 +268,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params
   const ind = INDUSTRIES[slug]
   if (!ind) return {}
-  return { title: `${ind.name}`, description: ind.description }
+  // The storefront industry pages are powered by the in-file INDUSTRIES map
+  // (not db.industry rows). Funnel through pageMetadata for consistent
+  // canonical/robots/OG handling; admin SEO overrides land in a follow-up
+  // when this page is migrated to the DB.
+  const { pageMetadata } = await import('../../../lib/seo')
+  return pageMetadata({
+    title: ind.name,
+    description: ind.description,
+    path: `/industries/${slug}`,
+  })
 }
 
 export default async function IndustryPage({ params }: Props) {

@@ -1,61 +1,166 @@
 import type { MetadataRoute } from 'next'
 import { db } from '@indus/db'
+import { buildSitemapEntries, buildStaticEntries } from '@indus/domain'
+import { BASE_URL } from '../lib/seo'
 
-const BASE = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://indushydraulics.com'
+/**
+ * Public XML sitemap. Sources entity rows from Postgres and feeds them
+ * through the shared `buildSitemapEntries` helper so the admin previewer
+ * renders byte-identical output.
+ *
+ * Honors the SEO OS overrides on every entity:
+ *   - excludeFromSitemap → skipped
+ *   - sitemapPriority / sitemapChangeFreq → override defaults
+ *   - robotsIndex=false → skipped
+ *   - seoUpdatedAt → preferred over updatedAt for lastModified
+ */
+export const dynamic = 'force-dynamic'
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const [products, categories, brands, blogPosts] = await Promise.all([
+  // Note: industries are still rendered from a hardcoded in-file map in
+  // industries/[slug]/page.tsx. They're omitted from the sitemap here until
+  // that page migrates to db.industry — including DB rows would emit URLs
+  // that 404 on slugs the hardcoded map doesn't know.
+  const [products, categories, brands, blogPosts, cmsPages] = await Promise.all([
     db.product.findMany({
       where: { status: 'active' },
-      select: { slug: true, updatedAt: true },
+      select: {
+        slug: true,
+        updatedAt: true,
+        seoUpdatedAt: true,
+        excludeFromSitemap: true,
+        robotsIndex: true,
+        sitemapPriority: true,
+        sitemapChangeFreq: true,
+      },
     }),
     db.category.findMany({
       where: { isPublished: true },
-      select: { slug: true },
+      select: {
+        slug: true,
+        seoUpdatedAt: true,
+        excludeFromSitemap: true,
+        robotsIndex: true,
+        sitemapPriority: true,
+        sitemapChangeFreq: true,
+      },
     }),
     db.brand.findMany({
       where: { isPublished: true },
-      select: { slug: true },
+      select: {
+        slug: true,
+        seoUpdatedAt: true,
+        excludeFromSitemap: true,
+        robotsIndex: true,
+        sitemapPriority: true,
+        sitemapChangeFreq: true,
+      },
     }),
     db.blogPost.findMany({
       where: { isPublished: true },
-      select: { slug: true, publishedAt: true },
+      select: {
+        slug: true,
+        publishedAt: true,
+        seoUpdatedAt: true,
+        excludeFromSitemap: true,
+        robotsIndex: true,
+        sitemapPriority: true,
+        sitemapChangeFreq: true,
+      },
+    }),
+    db.cmsPage.findMany({
+      where: { isPublished: true },
+      select: {
+        slug: true,
+        updatedAt: true,
+        seoUpdatedAt: true,
+        excludeFromSitemap: true,
+        robotsIndex: true,
+        sitemapPriority: true,
+        sitemapChangeFreq: true,
+      },
     }),
   ])
 
-  const staticPages = ['', '/about', '/contact', '/blog', '/brands', '/search']
+  const productEntries = buildSitemapEntries(
+    BASE_URL,
+    'product',
+    products.map((p) => ({
+      slug: p.slug,
+      lastModified: p.seoUpdatedAt ?? p.updatedAt,
+      excludeFromSitemap: p.excludeFromSitemap,
+      robotsIndex: p.robotsIndex,
+      sitemapPriority: p.sitemapPriority ? Number(p.sitemapPriority) : null,
+      sitemapChangeFreq: p.sitemapChangeFreq,
+    })),
+  )
 
-  const staticUrls: MetadataRoute.Sitemap = staticPages.map((path) => ({
-    url: `${BASE}${path}`,
-    changeFrequency: 'weekly' as const,
-    priority: path === '' ? 1.0 : 0.7,
-  }))
+  const categoryEntries = buildSitemapEntries(
+    BASE_URL,
+    'category',
+    categories.map((c) => ({
+      slug: c.slug,
+      lastModified: c.seoUpdatedAt ?? undefined,
+      excludeFromSitemap: c.excludeFromSitemap,
+      robotsIndex: c.robotsIndex,
+      sitemapPriority: c.sitemapPriority ? Number(c.sitemapPriority) : null,
+      sitemapChangeFreq: c.sitemapChangeFreq,
+    })),
+  )
 
-  const productUrls: MetadataRoute.Sitemap = products.map((p) => ({
-    url: `${BASE}/p/${p.slug}`,
-    lastModified: p.updatedAt,
-    changeFrequency: 'weekly' as const,
-    priority: 0.8,
-  }))
+  const brandEntries = buildSitemapEntries(
+    BASE_URL,
+    'brand',
+    brands.map((b) => ({
+      slug: b.slug,
+      lastModified: b.seoUpdatedAt ?? undefined,
+      excludeFromSitemap: b.excludeFromSitemap,
+      robotsIndex: b.robotsIndex,
+      sitemapPriority: b.sitemapPriority ? Number(b.sitemapPriority) : null,
+      sitemapChangeFreq: b.sitemapChangeFreq,
+    })),
+  )
 
-  const categoryUrls: MetadataRoute.Sitemap = categories.map((c) => ({
-    url: `${BASE}/c/${c.slug}`,
-    changeFrequency: 'weekly' as const,
-    priority: 0.7,
-  }))
+  const blogEntries = buildSitemapEntries(
+    BASE_URL,
+    'blog_post',
+    blogPosts.map((p) => ({
+      slug: p.slug,
+      lastModified: p.seoUpdatedAt ?? p.publishedAt ?? undefined,
+      excludeFromSitemap: p.excludeFromSitemap,
+      robotsIndex: p.robotsIndex,
+      sitemapPriority: p.sitemapPriority ? Number(p.sitemapPriority) : null,
+      sitemapChangeFreq: p.sitemapChangeFreq,
+    })),
+  )
 
-  const brandUrls: MetadataRoute.Sitemap = brands.map((b) => ({
-    url: `${BASE}/brands/${b.slug}`,
-    changeFrequency: 'monthly' as const,
-    priority: 0.6,
-  }))
+  const cmsEntries = buildSitemapEntries(
+    BASE_URL,
+    'cms_page',
+    cmsPages.map((p) => ({
+      slug: p.slug,
+      lastModified: p.seoUpdatedAt ?? p.updatedAt,
+      excludeFromSitemap: p.excludeFromSitemap,
+      robotsIndex: p.robotsIndex,
+      sitemapPriority: p.sitemapPriority ? Number(p.sitemapPriority) : null,
+      sitemapChangeFreq: p.sitemapChangeFreq,
+    })),
+  )
 
-  const blogUrls: MetadataRoute.Sitemap = blogPosts.map((post) => ({
-    url: `${BASE}/blog/${post.slug}`,
-    lastModified: post.publishedAt ?? undefined,
-    changeFrequency: 'monthly' as const,
-    priority: 0.5,
-  }))
+  const staticEntries = buildStaticEntries(BASE_URL, [
+    { path: '', priority: 1.0, changeFrequency: 'weekly' },
+    { path: '/blog', priority: 0.6, changeFrequency: 'weekly' },
+    { path: '/brands', priority: 0.6, changeFrequency: 'weekly' },
+    { path: '/industries', priority: 0.6, changeFrequency: 'weekly' },
+    { path: '/search', priority: 0.4, changeFrequency: 'monthly' },
+  ])
 
-  return [...staticUrls, ...productUrls, ...categoryUrls, ...brandUrls, ...blogUrls]
+  return [
+    ...staticEntries,
+    ...productEntries,
+    ...categoryEntries,
+    ...brandEntries,
+    ...blogEntries,
+    ...cmsEntries,
+  ]
 }
