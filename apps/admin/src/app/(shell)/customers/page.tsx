@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { db } from '@indus/db'
+import AdminTopbar from '../../../components/AdminTopbar'
 
 export const metadata: Metadata = { title: 'Customers — Indus Admin' }
 
@@ -68,15 +69,15 @@ export default async function AdminCustomersPage({ params, searchParams }: Props
   }
 
   return (
-    <div>
+    <>
+      <AdminTopbar
+        crumbs={[{ label: 'Operations' }, { label: 'Accounts' }]}
+        primaryAction={{ label: '+ New Account', href: `/customers/new` }}
+      />
+
+      <div className="px-8 py-6 pb-16">
       <div className="flex items-center justify-between mb-6">
         <h1 className="text-[24px] font-semibold tracking-tight">Customers</h1>
-        <Link
-          href={`/customers/new`}
-          className="h-9 px-4 flex items-center bg-[var(--color-accent)] text-white font-mono text-[12px] hover:opacity-90"
-        >
-          + New Account
-        </Link>
       </div>
 
       {/* Search + filters */}
@@ -179,6 +180,7 @@ export default async function AdminCustomersPage({ params, searchParams }: Props
           ))}
         </div>
       )}
-    </div>
+      </div>
+    </>
   )
 }
