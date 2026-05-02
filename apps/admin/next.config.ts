@@ -3,9 +3,7 @@ import type { NextConfig } from 'next'
 
 const nextConfig: NextConfig = {
   outputFileTracingRoot: path.join(__dirname, '../../'),
-  outputFileTracingIncludes: {
-    '/**/*': ['../../packages/db/generated/client/**/*'],
-  },
+  serverExternalPackages: ['@prisma/client', '.prisma/client'],
   transpilePackages: ['@indus/ui', '@indus/domain'],
   images: {
     remotePatterns: [

@@ -2,7 +2,7 @@
  * Seed script — idempotent. Running twice produces the same state.
  * Run: pnpm --filter=@indus/db seed
  */
-import { PrismaClient } from '../generated/client'
+import { PrismaClient } from '@prisma/client'
 import crypto from 'crypto'
 
 const db = new PrismaClient()
