@@ -91,12 +91,14 @@ export const recomputeHealthScores = inngest.createFunction(
               entityType: row.entityType,
               entityId: row.entityId,
               score: row.score,
-              breakdown: row.breakdown as Record<string, unknown>,
+              // eslint-disable-next-line @typescript-eslint/no-explicit-any
+              breakdown: row.breakdown as any,
               computedAt: new Date(),
             },
             update: {
               score: row.score,
-              breakdown: row.breakdown as Record<string, unknown>,
+              // eslint-disable-next-line @typescript-eslint/no-explicit-any
+              breakdown: row.breakdown as any,
               computedAt: new Date(),
             },
           })

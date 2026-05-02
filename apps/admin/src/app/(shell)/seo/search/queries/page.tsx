@@ -22,10 +22,10 @@ export default async function QueryAnalyticsPage() {
       Prisma.sql`
         SELECT normalized,
                COUNT(*)::bigint AS count,
-               AVG(results_count)::float AS "avgResults",
-               COUNT(*) FILTER (WHERE clicked_sku IS NOT NULL)::bigint AS clicked
+               AVG("resultsCount")::float AS "avgResults",
+               COUNT(*) FILTER (WHERE "clickedSku" IS NOT NULL)::bigint AS clicked
         FROM search_query_logs
-        WHERE created_at >= ${since}
+        WHERE "createdAt" >= ${since}
         GROUP BY normalized
         ORDER BY count DESC
         LIMIT 50
@@ -35,10 +35,10 @@ export default async function QueryAnalyticsPage() {
       Prisma.sql`
         SELECT normalized,
                COUNT(*)::bigint AS count,
-               MAX(created_at) AS "lastSeen"
+               MAX("createdAt") AS "lastSeen"
         FROM search_query_logs
-        WHERE created_at >= ${since}
-          AND results_count = 0
+        WHERE "createdAt" >= ${since}
+          AND "resultsCount" = 0
         GROUP BY normalized
         ORDER BY count DESC
         LIMIT 50
@@ -48,13 +48,13 @@ export default async function QueryAnalyticsPage() {
       Prisma.sql`
         SELECT normalized,
                COUNT(*)::bigint AS count,
-               AVG(results_count)::float AS "avgResults"
+               AVG("resultsCount")::float AS "avgResults"
         FROM search_query_logs
-        WHERE created_at >= ${since}
-          AND results_count > 0
+        WHERE "createdAt" >= ${since}
+          AND "resultsCount" > 0
         GROUP BY normalized
         HAVING COUNT(*) >= 5
-           AND COUNT(*) FILTER (WHERE clicked_sku IS NOT NULL) = 0
+           AND COUNT(*) FILTER (WHERE "clickedSku" IS NOT NULL) = 0
         ORDER BY count DESC
         LIMIT 50
       `,
@@ -63,10 +63,10 @@ export default async function QueryAnalyticsPage() {
       Prisma.sql`
         SELECT COUNT(*)::bigint AS "totalQueries",
                COUNT(DISTINCT normalized)::bigint AS "uniqueQueries",
-               (COUNT(*) FILTER (WHERE clicked_sku IS NOT NULL)::float
+               (COUNT(*) FILTER (WHERE "clickedSku" IS NOT NULL)::float
                   / GREATEST(COUNT(*), 1)) AS "clickThroughRate"
         FROM search_query_logs
-        WHERE created_at >= ${since}
+        WHERE "createdAt" >= ${since}
       `,
     ),
   ])

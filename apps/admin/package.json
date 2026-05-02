@@ -13,7 +13,7 @@
     "@dnd-kit/core": "^6.3.1",
     "@dnd-kit/sortable": "^10.0.0",
     "@dnd-kit/utilities": "^3.2.2",
-    "@anthropic-ai/sdk": "^0.32.1",
+    "@anthropic-ai/sdk": "^0.92.0",
     "@indus/db": "workspace:^",
     "@indus/domain": "workspace:^",
     "@indus/ui": "workspace:^",

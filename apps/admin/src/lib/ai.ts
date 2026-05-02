@@ -197,7 +197,7 @@ export async function generateSuggestion(input: GenerateInput): Promise<Generate
   let parsed: Record<string, unknown>
   try {
     parsed = JSON.parse(textBlock.text) as Record<string, unknown>
-  } catch (err) {
+  } catch {
     throw new Error(`AI response was not valid JSON: ${textBlock.text.slice(0, 200)}`)
   }
   const value = parsed[fieldSchema.key]

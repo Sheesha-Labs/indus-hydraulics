@@ -1,4 +1,4 @@
-import { PrismaClient } from '../generated/client'
+import { PrismaClient, Prisma } from '../generated/client'
 
 const globalForPrisma = globalThis as unknown as { prisma: PrismaClient }
 
@@ -10,4 +10,5 @@ export const db =
 
 if (process.env.NODE_ENV !== 'production') globalForPrisma.prisma = db
 
-export * from '../generated/client'
+export { Prisma }
+export type { Redirect, SeoSetting, StoreSettings, EmailTemplate } from '../generated/client'

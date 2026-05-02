@@ -84,7 +84,7 @@ export default async function SeoHealthPage() {
       db.$queryRaw<Array<{ normalized: string; count: bigint }>>(Prisma.sql`
         SELECT normalized, COUNT(*)::bigint AS count
         FROM search_query_logs
-        WHERE created_at >= ${since}
+        WHERE "createdAt" >= ${since}
         GROUP BY normalized
         ORDER BY count DESC
         LIMIT 10
@@ -92,7 +92,7 @@ export default async function SeoHealthPage() {
       db.$queryRaw<Array<{ normalized: string; count: bigint }>>(Prisma.sql`
         SELECT normalized, COUNT(*)::bigint AS count
         FROM search_query_logs
-        WHERE created_at >= ${since} AND results_count = 0
+        WHERE "createdAt" >= ${since} AND "resultsCount" = 0
         GROUP BY normalized
         ORDER BY count DESC
         LIMIT 10

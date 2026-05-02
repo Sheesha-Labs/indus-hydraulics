@@ -287,19 +287,19 @@ async function loadAllRows(): Promise<EntityRow[]> {
       },
     }),
     db.category.findMany({
-      select: seoSelect(),
+      select: seoSelectNamed(),
     }),
-    db.brand.findMany({ select: seoSelect() }),
-    db.industry.findMany({ select: seoSelect() }),
+    db.brand.findMany({ select: seoSelectNamed() }),
+    db.industry.findMany({ select: seoSelectNamed() }),
     db.blogPost.findMany({
       select: {
-        ...seoSelect(),
+        ...seoSelectTitled(),
         publishedAt: true,
       },
     }),
     db.cmsPage.findMany({
       select: {
-        ...seoSelect(),
+        ...seoSelectTitled(),
         updatedAt: true,
       },
     }),
@@ -384,12 +384,29 @@ async function loadAllRows(): Promise<EntityRow[]> {
   return rows
 }
 
-function seoSelect() {
+function seoSelectNamed() {
+  return {
+    id: true,
+    slug: true,
+    name: true,
+    seoTitle: true,
+    seoDescription: true,
+    focusKeyword: true,
+    canonicalUrl: true,
+    robotsIndex: true,
+    robotsFollow: true,
+    ogImageMediaId: true,
+    excludeFromSitemap: true,
+    seoUpdatedAt: true,
+    isPublished: true,
+  } as const
+}
+
+function seoSelectTitled() {
   return {
     id: true,
     slug: true,
     title: true,
-    name: true,
     seoTitle: true,
     seoDescription: true,
     focusKeyword: true,
