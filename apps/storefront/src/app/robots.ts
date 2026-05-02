@@ -78,7 +78,7 @@ function parseRobotsText(text: string): ParsedRobots {
   }
   if (current) rules.push(toRule(current))
   if (rules.length === 0) {
-    rules.push({ userAgent: '*', allow: '/' })
+    rules.push({ userAgent: '*', allow: ['/'] })
   }
   return { rules, sitemap }
 }

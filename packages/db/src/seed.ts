@@ -588,6 +588,15 @@ async function main() {
   console.log('  ✓ Spec templates + product specs')
 
   // ── Store settings ──────────────────────────────────────────────────────────
+  const brandDefaults = {
+    tagline: "India's trusted distributor of industrial hydraulic components since 2005.",
+    certificationLine: 'ISO 9001:2015 Certified',
+    contactPhone: '+91 22 6614 0200',
+    contactEmail: 'sales@indushydraulics.com',
+    contactHours: 'Mon–Sat 09:00–19:00 IST',
+    contactLocationLabel: 'Mumbai HQ',
+  } as const
+
   const existingSettings = await db.storeSettings.findFirst()
   if (!existingSettings) {
     await db.storeSettings.create({
@@ -597,8 +606,18 @@ async function main() {
         defaultCurrency: 'USD',
         defaultIncoterm: 'EXW',
         defaultPaymentTerms: 30,
+        ...brandDefaults,
       },
     })
+  } else {
+    // Backfill any null brand/contact fields without clobbering editor changes.
+    const patch: Record<string, string> = {}
+    for (const [key, value] of Object.entries(brandDefaults)) {
+      if ((existingSettings as Record<string, unknown>)[key] == null) patch[key] = value
+    }
+    if (Object.keys(patch).length > 0) {
+      await db.storeSettings.update({ where: { id: existingSettings.id }, data: patch })
+    }
   }
 
   console.log('  ✓ Store settings')
@@ -633,9 +652,26 @@ async function seedNavigationMenus() {
     },
     update: {},
   })
-  await db.navMenu.upsert({
+  const footerMainMenu = await db.navMenu.upsert({
     where: { location: 'footer_main' },
-    create: { slug: 'footer-main', name: 'Footer — main', location: 'footer_main', isPublished: false },
+    create: {
+      slug: 'footer-main',
+      name: 'Footer — main',
+      location: 'footer_main',
+      isPublished: true,
+      publishedAt: new Date(),
+    },
+    update: {},
+  })
+  const footerLegalMenu = await db.navMenu.upsert({
+    where: { location: 'footer_legal' },
+    create: {
+      slug: 'footer-legal',
+      name: 'Footer — legal',
+      location: 'footer_legal',
+      isPublished: true,
+      publishedAt: new Date(),
+    },
     update: {},
   })
   await db.navMenu.upsert({
@@ -792,6 +828,108 @@ async function seedNavigationMenus() {
           })
         }
       }
+    }
+  }
+
+  // ── footer_main ────────────────────────────────────────────────────────────
+  const footerMainCount = await db.navMenuItem.count({ where: { menuId: footerMainMenu.id } })
+  if (footerMainCount === 0) {
+    // First-time seed of this menu: also force it to published in case the menu row
+    // pre-existed in an unpublished state (e.g., created by an earlier seed).
+    if (!footerMainMenu.isPublished) {
+      await db.navMenu.update({
+        where: { id: footerMainMenu.id },
+        data: { isPublished: true, publishedAt: new Date() },
+      })
+    }
+    // Column 1: Products — link to real Categories where they exist; fall back to /c
+    const productsColumn = await db.navMenuItem.create({
+      data: {
+        menuId: footerMainMenu.id,
+        parentId: null,
+        position: 0,
+        label: 'Products',
+        linkType: 'none',
+      },
+    })
+    const footerProducts: Array<{ label: string; categorySlug: string | null }> = [
+      { label: 'Hydraulic Pumps', categorySlug: 'hydraulic-pumps' },
+      { label: 'Valves & Manifolds', categorySlug: 'valves-manifolds' },
+      { label: 'Hydraulic Cylinders', categorySlug: 'hydraulic-cylinders' },
+      { label: 'Hoses & Fittings', categorySlug: 'hoses-fittings' },
+      { label: 'Power Packs', categorySlug: null },
+      { label: 'Seals & Accessories', categorySlug: null },
+    ]
+    for (let i = 0; i < footerProducts.length; i++) {
+      const item = footerProducts[i]!
+      const category = item.categorySlug
+        ? await db.category.findUnique({ where: { slug: item.categorySlug }, select: { id: true } })
+        : null
+      await db.navMenuItem.create({
+        data: {
+          menuId: footerMainMenu.id,
+          parentId: productsColumn.id,
+          position: i,
+          label: item.label,
+          linkType: category ? 'category' : 'custom_url',
+          categoryId: category?.id ?? null,
+          customUrl: category ? null : '/c',
+        },
+      })
+    }
+
+    // Column 2: Company — custom URLs to existing storefront routes
+    const companyColumn = await db.navMenuItem.create({
+      data: {
+        menuId: footerMainMenu.id,
+        parentId: null,
+        position: 1,
+        label: 'Company',
+        linkType: 'none',
+      },
+    })
+    const companyLinks = [
+      { label: 'About', url: '/about' },
+      { label: 'Brands', url: '/brands' },
+      { label: 'Industries', url: '/industries' },
+      { label: 'Blog', url: '/blog' },
+      { label: 'Contact', url: '/contact' },
+    ]
+    for (let i = 0; i < companyLinks.length; i++) {
+      const item = companyLinks[i]!
+      await db.navMenuItem.create({
+        data: {
+          menuId: footerMainMenu.id,
+          parentId: companyColumn.id,
+          position: i,
+          label: item.label,
+          linkType: 'custom_url',
+          customUrl: item.url,
+        },
+      })
+    }
+  }
+
+  // ── footer_legal ───────────────────────────────────────────────────────────
+  const footerLegalCount = await db.navMenuItem.count({ where: { menuId: footerLegalMenu.id } })
+  if (footerLegalCount === 0) {
+    const legalLinks = [
+      { label: 'Privacy', url: '/privacy' },
+      { label: 'Terms', url: '/terms' },
+      { label: 'Sitemap', url: '/sitemap.xml' },
+    ]
+    for (let i = 0; i < legalLinks.length; i++) {
+      const item = legalLinks[i]!
+      await db.navMenuItem.create({
+        data: {
+          menuId: footerLegalMenu.id,
+          parentId: null,
+          position: i,
+          label: item.label,
+          linkType: 'custom_url',
+          customUrl: item.url,
+        },
+      })
     }
   }
 }

@@ -141,6 +141,107 @@ export default function SettingsPageClient({ activeTab, storeSettings, emailTemp
             </select>
           </div>
 
+          <div className="pt-4 mt-4 border-t border-[var(--color-border)]">
+            <h3 className="font-mono text-[11px] tracking-[0.12em] uppercase text-[var(--color-muted)] mb-3">
+              Brand identity
+            </h3>
+            <p className="text-[12px] text-[var(--color-muted)] mb-4">
+              Rendered in the storefront footer brand block. The store name above is reused as the brand name.
+            </p>
+          </div>
+
+          <div>
+            <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+              Tagline
+            </label>
+            <textarea
+              name="tagline"
+              rows={2}
+              maxLength={280}
+              defaultValue={storeSettings?.tagline ?? ''}
+              placeholder="India's trusted distributor of industrial hydraulic components since 2005."
+              className="w-full px-3 py-2 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] focus:outline-none focus:border-[var(--color-accent)] resize-none"
+            />
+          </div>
+
+          <div>
+            <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+              Certification line
+            </label>
+            <input
+              name="certificationLine"
+              type="text"
+              maxLength={120}
+              defaultValue={storeSettings?.certificationLine ?? ''}
+              placeholder="ISO 9001:2015 Certified"
+              className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] focus:outline-none focus:border-[var(--color-accent)]"
+            />
+          </div>
+
+          <div className="pt-4 mt-4 border-t border-[var(--color-border)]">
+            <h3 className="font-mono text-[11px] tracking-[0.12em] uppercase text-[var(--color-muted)] mb-3">
+              Public contact info
+            </h3>
+            <p className="text-[12px] text-[var(--color-muted)] mb-4">
+              Rendered in the storefront header topbar (phone + hours) and footer contact block.
+            </p>
+          </div>
+
+          <div>
+            <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+              Location label
+            </label>
+            <input
+              name="contactLocationLabel"
+              type="text"
+              maxLength={80}
+              defaultValue={storeSettings?.contactLocationLabel ?? ''}
+              placeholder="Mumbai HQ"
+              className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] focus:outline-none focus:border-[var(--color-accent)]"
+            />
+          </div>
+
+          <div>
+            <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+              Phone
+            </label>
+            <input
+              name="contactPhone"
+              type="text"
+              maxLength={40}
+              defaultValue={storeSettings?.contactPhone ?? ''}
+              placeholder="+91 22 6614 0200"
+              className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] focus:outline-none focus:border-[var(--color-accent)]"
+            />
+          </div>
+
+          <div>
+            <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+              Public email
+            </label>
+            <input
+              name="contactEmail"
+              type="email"
+              defaultValue={storeSettings?.contactEmail ?? ''}
+              placeholder="sales@indushydraulics.com"
+              className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] focus:outline-none focus:border-[var(--color-accent)]"
+            />
+          </div>
+
+          <div>
+            <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+              Hours
+            </label>
+            <input
+              name="contactHours"
+              type="text"
+              maxLength={120}
+              defaultValue={storeSettings?.contactHours ?? ''}
+              placeholder="Mon–Sat 09:00–19:00 IST"
+              className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] focus:outline-none focus:border-[var(--color-accent)]"
+            />
+          </div>
+
           <div className="flex items-center gap-3 pt-2">
             <button
               type="submit"
