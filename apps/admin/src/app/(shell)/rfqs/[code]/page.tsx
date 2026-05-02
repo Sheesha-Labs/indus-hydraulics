@@ -4,6 +4,8 @@ import Link from 'next/link'
 import { db } from '@indus/db'
 import { getValidTransitions } from '@indus/domain'
 import { updateRfqStatus, saveLineReview } from './actions'
+import SendQuoteComposer from '../../../../components/SendQuoteComposer'
+import { formatAed, formatDayMonthYear } from '../../../../lib/format'
 
 export const metadata: Metadata = { title: 'RFQ Detail — Indus Admin' }
 
@@ -68,18 +70,30 @@ export default async function AdminRfqDetailPage({ params }: Props) {
         orderBy: { position: 'asc' },
       },
       attachments: { include: { media: true } },
-      quotes: { orderBy: { sentAt: 'desc' }, take: 1, include: { pdfMedia: true } },
+      quotes: { orderBy: { revision: 'desc' }, include: { pdfMedia: true } },
     },
   })
 
   if (!rfq) notFound()
 
-  const engineers = await db.staffUser.findMany({
-    where: { isActive: true, role: { in: ['engineer', 'super_admin', 'manager'] } },
-    select: { id: true, name: true },
-  })
+  const [engineers, settings] = await Promise.all([
+    db.staffUser.findMany({
+      where: { isActive: true, role: { in: ['engineer', 'super_admin', 'manager'] } },
+      select: { id: true, name: true },
+    }),
+    db.storeSettings.findFirst(),
+  ])
 
   const validTransitions = getValidTransitions(rfq.status)
+
+  // Compose preview-of-totals values for the SendQuoteComposer
+  const currentSubtotal = rfq.lines.reduce(
+    (sum, l) => sum + l.requestedQty * Number(l.engineerUnitPrice ?? 0),
+    0,
+  )
+  const isUaeShipTo = rfq.shipToAddress?.countryCode?.toUpperCase() === 'AE'
+  const defaultVatRatePct = isUaeShipTo ? Number(settings?.defaultVatRatePct ?? 5) : 0
+  const canCompose = ['engineer_review', 'engineer_questions_pending', 'quote_sent'].includes(rfq.status)
 
   return (
     <div>
@@ -129,6 +143,69 @@ export default async function AdminRfqDetailPage({ params }: Props) {
         </a>
       </div>
 
+      {/* Issued quotes (revisions history) — show only after the first send */}
+      {rfq.quotes.length > 0 ? (
+        <div className="border border-[var(--color-border)] mb-6">
+          <div className="px-4 py-2 bg-[var(--color-deep)] border-b border-[var(--color-border)] font-mono text-[10px] tracking-[0.1em] uppercase text-[var(--color-muted)]">
+            Issued quotes
+          </div>
+          {rfq.quotes.map((q) => (
+            <div
+              key={q.id}
+              className="grid grid-cols-[1fr_140px_120px_140px_auto] gap-3 items-center px-4 py-3 border-b border-[var(--color-border)] last:border-0 text-[13px]"
+            >
+              <div>
+                <div className="font-mono text-[13px] text-[var(--color-primary)]">
+                  {q.code}
+                  {q.revision > 1 ? <span className="text-[var(--color-muted)] ml-2">R{q.revision}</span> : null}
+                </div>
+                <div className="font-mono text-[10px] text-[var(--color-caption)] mt-0.5">
+                  Sent {q.sentAt ? formatDayMonthYear(q.sentAt) : '—'}
+                </div>
+              </div>
+              <div className="text-right text-[var(--color-body)] font-mono text-[12px]">
+                {formatAed(Number(q.total))}
+              </div>
+              <div className="text-right text-[var(--color-muted)] font-mono text-[11px]">
+                Net {q.termsValidityDays}d
+              </div>
+              <div className="text-right text-[var(--color-muted)] font-mono text-[11px]">
+                {q.expiresAt ? `exp ${formatDayMonthYear(q.expiresAt)}` : '—'}
+              </div>
+              <div className="text-right">
+                {q.pdfMedia ? (
+                  <a
+                    href={`/api/quotes/${q.code}/pdf`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-mono text-[11px] text-[var(--color-accent)] hover:underline"
+                  >
+                    Download PDF →
+                  </a>
+                ) : (
+                  <span className="font-mono text-[11px] text-[var(--color-muted)]">no PDF</span>
+                )}
+              </div>
+            </div>
+          ))}
+        </div>
+      ) : null}
+
+      {/* Send-Quote composer (only when state allows) */}
+      {canCompose ? (
+        <SendQuoteComposer
+          rfqId={rfq.id}
+          rfqCode={rfq.code}
+          defaultValidityDays={settings?.defaultQuoteValidityDays ?? 30}
+          defaultPaymentTerms={'Advance with order'}
+          defaultNotes={settings?.defaultQuoteNotes ?? ''}
+          defaultVatRatePct={defaultVatRatePct}
+          currentSubtotal={currentSubtotal}
+          rfqSubject={rfq.subject ?? null}
+          hasExistingQuote={rfq.quotes.length > 0}
+        />
+      ) : null}
+
       <div className="grid grid-cols-1 xl:grid-cols-[1fr_320px] gap-8">
         {/* Main: engineer review form */}
         <div>
@@ -149,7 +226,7 @@ export default async function AdminRfqDetailPage({ params }: Props) {
               {/* Header */}
               <div className="grid grid-cols-[1fr_120px_120px] px-4 py-2 bg-[var(--color-surface)] border-b border-[var(--color-border)] font-mono text-[10px] tracking-[0.1em] uppercase text-[var(--color-muted)]">
                 <div>Product</div>
-                <div className="text-right">Unit Price (USD)</div>
+                <div className="text-right">Unit Price (AED)</div>
                 <div className="text-right">Lead Time (days)</div>
               </div>
 
@@ -161,7 +238,7 @@ export default async function AdminRfqDetailPage({ params }: Props) {
                       <div className="font-mono text-[11px] text-[var(--color-muted)]">{line.product.sku}</div>
                       <div className="font-mono text-[11px] text-[var(--color-caption)] mt-0.5">
                         Qty requested: {line.requestedQty}
-                        {line.customerTargetPrice && ` · Target: USD ${Number(line.customerTargetPrice).toFixed(2)}`}
+                        {line.customerTargetPrice && ` · Target: AED ${Number(line.customerTargetPrice).toFixed(2)}`}
                       </div>
                     </div>
                     <div className="flex justify-end">

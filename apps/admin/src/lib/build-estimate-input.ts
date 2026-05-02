@@ -2,12 +2,34 @@ import { db } from '@indus/db'
 import type { EstimateInput, EstimateLine } from '@indus/pdf'
 
 /**
+ * Per-quote overrides set by the engineer in the Send-Quote composer. All
+ * fields are optional; unset values fall back to RFQ data + StoreSettings.
+ */
+export type EstimateOverrides = {
+  code?: string
+  revisionLabel?: string
+  estimateDate?: Date
+  expiryDate?: Date
+  validityDays?: number
+  subject?: string | null
+  referenceLine?: string | null
+  notes?: string | null
+  termsText?: string | null
+  disclaimer?: string | null
+  /** Override VAT %; if undefined, the UAE-vs-export rule decides. */
+  vatRatePct?: number
+}
+
+/**
  * Build an EstimateInput from an RFQ for preview/send. Pulls branding,
  * signature, and quote defaults from StoreSettings; pulls line data from
  * RfqLine.engineerUnitPrice (falls back to customerTargetPrice for preview
- * before engineer review).
+ * before engineer review). Composer overrides take precedence.
  */
-export async function buildEstimateInputFromRfq(rfqCode: string): Promise<EstimateInput | null> {
+export async function buildEstimateInputFromRfq(
+  rfqCode: string,
+  overrides: EstimateOverrides = {},
+): Promise<EstimateInput | null> {
   const [rfq, settings] = await Promise.all([
     db.rfq.findUnique({
       where: { code: rfqCode },
@@ -41,13 +63,13 @@ export async function buildEstimateInputFromRfq(rfqCode: string): Promise<Estima
   })
 
   // VAT rule: UAE ship-to → use settings.defaultVatRatePct (default 5%);
-  // any other country → zero-rated export.
+  // any other country → zero-rated export. Composer override wins if set.
   const isUaeShipTo = rfq.shipToAddress?.countryCode?.toUpperCase() === 'AE'
   const settingsVatRate = settings?.defaultVatRatePct ? Number(settings.defaultVatRatePct) : 5
-  const vatRatePct = isUaeShipTo ? settingsVatRate : 0
-  const vatLabel = isUaeShipTo ? `VAT @ ${vatRatePct.toFixed(0)}%` : undefined
+  const computedVatRate = isUaeShipTo ? settingsVatRate : 0
+  const vatRatePct = overrides.vatRatePct ?? computedVatRate
+  const vatLabel = vatRatePct > 0 ? `VAT @ ${vatRatePct.toFixed(0)}%` : undefined
 
-  // Build address arrays with safe fallbacks
   const billToLines: string[] = []
   if (rfq.shipToAddress) {
     const addr = rfq.shipToAddress
@@ -58,9 +80,10 @@ export async function buildEstimateInputFromRfq(rfqCode: string): Promise<Estima
     if (addr.countryCode) billToLines.push(addr.countryCode)
   }
 
-  const validityDays = settings?.defaultQuoteValidityDays ?? 30
-  const estimateDate = new Date()
-  const expiryDate = new Date(estimateDate.getTime() + validityDays * 24 * 60 * 60 * 1000)
+  const validityDays = overrides.validityDays ?? settings?.defaultQuoteValidityDays ?? 30
+  const estimateDate = overrides.estimateDate ?? new Date()
+  const expiryDate =
+    overrides.expiryDate ?? new Date(estimateDate.getTime() + validityDays * 24 * 60 * 60 * 1000)
 
   const branding = {
     legalName: settings?.legalName ?? 'Indus Hydraulic Power Trading LLC',
@@ -77,25 +100,34 @@ export async function buildEstimateInputFromRfq(rfqCode: string): Promise<Estima
     addressLines: branding.addressLines,
   }
 
-  const termsLines = (settings?.defaultQuoteTerms ?? '')
+  const termsText = overrides.termsText ?? settings?.defaultQuoteTerms ?? ''
+  const termsLines = termsText
     .split(/\r?\n/)
     .map((s) => s.trim())
     .filter(Boolean)
 
+  // Pick subject — composer can override; otherwise use RFQ.subject.
+  const resolvedSubject = overrides.subject !== undefined ? overrides.subject : rfq.subject
+  const resolvedNotes = overrides.notes !== undefined ? overrides.notes : settings?.defaultQuoteNotes ?? null
+  const resolvedDisclaimer =
+    overrides.disclaimer !== undefined ? overrides.disclaimer : settings?.defaultQuoteDisclaimer ?? null
+
   return {
     documentTitle: 'Estimate',
-    code: rfq.code,
+    code: overrides.code ?? rfq.code,
+    ...(overrides.revisionLabel ? { revisionLabel: overrides.revisionLabel } : {}),
     estimateDate,
     expiryDate,
-    ...(rfq.subject ? { subject: rfq.subject } : {}),
+    ...(overrides.referenceLine ? { referenceLine: overrides.referenceLine } : {}),
+    ...(resolvedSubject ? { subject: resolvedSubject } : {}),
     billTo: { name: rfq.account.legalName, addressLines: billToLines },
     lines,
     currency: 'AED',
     vatRatePct,
     ...(vatLabel ? { vatLabel } : {}),
-    ...(settings?.defaultQuoteNotes ? { notes: settings.defaultQuoteNotes } : {}),
+    ...(resolvedNotes ? { notes: resolvedNotes } : {}),
     ...(termsLines.length ? { termsLines } : {}),
-    ...(settings?.defaultQuoteDisclaimer ? { disclaimer: settings.defaultQuoteDisclaimer } : {}),
+    ...(resolvedDisclaimer ? { disclaimer: resolvedDisclaimer } : {}),
     branding,
     signature,
   }

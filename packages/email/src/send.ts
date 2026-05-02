@@ -8,6 +8,14 @@ export type EmailKind =
   | 'quote_accepted_ack'
   | 'quote_declined_ack'
 
+export type EmailAttachment = {
+  filename: string
+  /** Raw bytes of the attachment. */
+  content: Buffer
+  /** Optional MIME type; defaults to application/octet-stream. */
+  contentType?: string
+}
+
 export type SendEmailInput = {
   kind: EmailKind
   to: string[]
@@ -18,6 +26,7 @@ export type SendEmailInput = {
   fromEmail: string
   fromName?: string
   replyTo?: string
+  attachments?: EmailAttachment[]
   rfqId?: string
   quoteId?: string
 }
@@ -64,8 +73,9 @@ export async function sendEmail(input: SendEmailInput): Promise<SendEmailResult>
   })
 
   if (SANDBOX || !resendClient) {
+    const attachInfo = input.attachments?.length ? ` attachments=${input.attachments.length}` : ''
     // eslint-disable-next-line no-console
-    console.info(`[email:sandbox] kind=${input.kind} to=${input.to.join(',')} subject="${input.subject}"`)
+    console.info(`[email:sandbox] kind=${input.kind} to=${input.to.join(',')} subject="${input.subject}"${attachInfo}`)
     return { ok: true, sentEmailId: audit.id, providerId: null, status: 'sandboxed' }
   }
 
@@ -78,6 +88,15 @@ export async function sendEmail(input: SendEmailInput): Promise<SendEmailResult>
       ...(input.replyTo ? { replyTo: input.replyTo } : {}),
       subject: input.subject,
       html: input.html,
+      ...(input.attachments && input.attachments.length
+        ? {
+            attachments: input.attachments.map((a) => ({
+              filename: a.filename,
+              content: a.content,
+              ...(a.contentType ? { contentType: a.contentType } : {}),
+            })),
+          }
+        : {}),
     })
 
     if (result.error) {

@@ -36,6 +36,19 @@ export async function uploadQuotePdf(input: {
   const ts = Date.now()
   const storagePath = `${new Date().getUTCFullYear()}/${safeSlug}-${ts}.pdf`
 
+  // Self-heal: create the bucket on first run so there's no manual setup.
+  // Bucket is private; downloads go through the admin's RBAC-gated route.
+  const { data: existingBucket } = await supabase.storage.getBucket(QUOTES_BUCKET)
+  if (!existingBucket) {
+    const { error: createErr } = await supabase.storage.createBucket(QUOTES_BUCKET, {
+      public: false,
+      fileSizeLimit: 10 * 1024 * 1024,
+    })
+    if (createErr && !/already exists/i.test(createErr.message)) {
+      throw new Error(`Supabase bucket create failed: ${createErr.message}`)
+    }
+  }
+
   const { error: uploadErr } = await supabase.storage
     .from(QUOTES_BUCKET)
     .upload(storagePath, input.pdf, {
