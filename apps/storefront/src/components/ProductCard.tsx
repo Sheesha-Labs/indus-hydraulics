@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { mediaUrl } from '../lib/media'
+import AddToCompareCardButton from './AddToCompareCardButton'
 
 type ProductCardProps = {
   product: {
@@ -8,6 +9,8 @@ type ProductCardProps = {
     sku: string
     slug: string
     title: string
+    categoryId: string | null
+    specTemplateId: string | null
     descriptionShort?: string | null
     brand?: { name: string; slug: string } | null
     images: Array<{
@@ -64,11 +67,18 @@ export default function ProductCard({ product }: ProductCardProps) {
           </div>
         )}
 
-        <div className="flex items-center justify-between pt-2 border-t border-[var(--color-border-2)] mt-auto">
+        <div className="flex items-center justify-between pt-2 border-t border-[var(--color-border-2)] mt-auto gap-2">
           {product.brand && (
-            <span className="text-[12px] text-[var(--color-body)] font-medium">{product.brand.name}</span>
+            <span className="text-[12px] text-[var(--color-body)] font-medium truncate">{product.brand.name}</span>
           )}
-          <span className="font-mono text-[11px] text-[var(--color-accent)]">RFQ →</span>
+          <div className="flex items-center gap-2 shrink-0">
+            <AddToCompareCardButton
+              sku={product.sku}
+              categoryId={product.categoryId}
+              specTemplateId={product.specTemplateId}
+            />
+            <span className="font-mono text-[11px] text-[var(--color-accent)]">RFQ →</span>
+          </div>
         </div>
       </div>
     </Link>
