@@ -3,102 +3,26 @@
 import { useState, useRef, useCallback } from 'react'
 import type React from 'react'
 import Link from 'next/link'
-import type { CategoryNav } from './SiteHeader'
-
-interface NavItem {
-  label: string
-  href: string
-  hasMegamenu: boolean
-}
+import type { ResolvedNavItem } from '@indus/domain'
 
 interface Props {
-  navItems: NavItem[]
-  navCategories: CategoryNav[]
+  headerItems: ResolvedNavItem[]
+  megamenuItems: ResolvedNavItem[]
   isSignedIn: boolean
   userName: string | null
   notificationBell?: React.ReactNode
   activeSkuCount?: number
 }
 
-type Sub = { id: string; name: string; count: number; leaves: string[] }
-type TaxonomyEntry = { slug: string; name: string; fallbackCount: number; subs: Sub[] }
-
-const TAXONOMY: TaxonomyEntry[] = [
-  {
-    slug: 'hydraulic-pumps',
-    name: 'Hydraulic Pumps',
-    fallbackCount: 184,
-    subs: [
-      { id: 'gear', name: 'Gear Pumps', count: 42, leaves: ['External Gear', 'Internal Gear', 'Gerotor', 'Twin-Flow'] },
-      { id: 'vane', name: 'Vane Pumps', count: 28, leaves: ['Fixed Displacement', 'Variable Displacement', 'Cartridge Type'] },
-      { id: 'piston', name: 'Piston Pumps', count: 56, leaves: ['Axial Piston', 'Radial Piston', 'Bent Axis', 'Swashplate Variable'] },
-      { id: 'hand', name: 'Hand & Foot Pumps', count: 18, leaves: ['Single-Acting', 'Double-Acting', 'Air-Driven'] },
-      { id: 'power', name: 'Power Packs', count: 40, leaves: ['Mini Power Packs', 'AC Power Units', 'DC Power Units', '3-Phase'] },
-    ],
-  },
-  {
-    slug: 'hydraulic-cylinders',
-    name: 'Hydraulic Cylinders',
-    fallbackCount: 226,
-    subs: [
-      { id: 'tie-rod', name: 'Tie-Rod Cylinders', count: 64, leaves: ['NFPA Standard', 'ISO 6020', 'ISO 6022', 'Mill-Type'] },
-      { id: 'welded', name: 'Welded Cylinders', count: 58, leaves: ['Cross-Tube Mount', 'Clevis Mount', 'Trunnion Mount'] },
-      { id: 'telescopic', name: 'Telescopic Cylinders', count: 32, leaves: ['Single-Acting', 'Double-Acting', 'Tipper Trailer'] },
-      { id: 'compact', name: 'Compact & Block', count: 40, leaves: ['Block Cylinders', 'Pancake', 'Hollow Plunger'] },
-      { id: 'custom', name: 'Custom Builds', count: 32, leaves: ['Made-to-Order', 'Repair & Reseal', 'Plating Service'] },
-    ],
-  },
-  {
-    slug: 'valves-manifolds',
-    name: 'Valves & Manifolds',
-    fallbackCount: 412,
-    subs: [
-      { id: 'directional', name: 'Directional Control', count: 124, leaves: ['Solenoid Operated', 'Manual Lever', 'Pilot Operated', 'Cetop 3 / NG6', 'Cetop 5 / NG10'] },
-      { id: 'pressure', name: 'Pressure Control', count: 86, leaves: ['Relief', 'Reducing', 'Sequence', 'Counterbalance'] },
-      { id: 'flow', name: 'Flow Control', count: 64, leaves: ['Throttle', 'Pressure Compensated', 'Proportional'] },
-      { id: 'check', name: 'Check & Logic', count: 70, leaves: ['Inline Check', 'Pilot Check', 'Logic Elements'] },
-      { id: 'manifolds', name: 'Manifolds', count: 68, leaves: ['Standard Bar', 'Custom Block', 'Subplates'] },
-    ],
-  },
-  {
-    slug: 'hoses-fittings',
-    name: 'Hoses & Fittings',
-    fallbackCount: 540,
-    subs: [
-      { id: 'hose', name: 'Hydraulic Hose', count: 180, leaves: ['1-Wire Braid', '2-Wire Braid', '4-Spiral', '6-Spiral', 'Thermoplastic'] },
-      { id: 'fittings', name: 'Hose Fittings', count: 220, leaves: ['BSP', 'JIC 37°', 'ORFS', 'Metric DIN', 'NPT'] },
-      { id: 'adapters', name: 'Adapters', count: 90, leaves: ['Straight', 'Elbow 45°', 'Elbow 90°', 'Tee', 'Cross'] },
-      { id: 'couplers', name: 'Quick Couplers', count: 50, leaves: ['ISO 7241-A', 'ISO 7241-B', 'Flat Face', 'Screw-to-Connect'] },
-    ],
-  },
-  {
-    slug: 'seals-components',
-    name: 'Seals & Components',
-    fallbackCount: 320,
-    subs: [
-      { id: 'rod-seals', name: 'Rod Seals', count: 90, leaves: ['U-Cup', 'Step Seal', 'Stepped Cap', 'Buffer Seal'] },
-      { id: 'piston-seals', name: 'Piston Seals', count: 80, leaves: ['Twin-Lip', 'Glyd Ring', 'Compact'] },
-      { id: 'wipers', name: 'Wipers & Scrapers', count: 50, leaves: ['Single-Lip', 'Double-Lip', 'Metallic'] },
-      { id: 'orings', name: 'O-Rings & Back-up', count: 100, leaves: ['NBR', 'FKM (Viton)', 'EPDM', 'PTFE Back-up'] },
-    ],
-  },
-  {
-    slug: 'accessories-instrumentation',
-    name: 'Accessories & Instrumentation',
-    fallbackCount: 188,
-    subs: [
-      { id: 'filters', name: 'Filters', count: 60, leaves: ['Suction', 'Pressure-Line', 'Return-Line', 'Tank Breather'] },
-      { id: 'gauges', name: 'Gauges & Sensors', count: 48, leaves: ['Bourdon Gauge', 'Glycerin-Filled', 'Digital', 'Pressure Transducer'] },
-      { id: 'accumulators', name: 'Accumulators', count: 30, leaves: ['Bladder', 'Diaphragm', 'Piston'] },
-      { id: 'coolers', name: 'Coolers', count: 28, leaves: ['Air-Oil', 'Water-Oil', 'With Bypass'] },
-      { id: 'reservoirs', name: 'Reservoirs', count: 22, leaves: ['Steel Tanks', 'Aluminum', 'Custom Fab'] },
-    ],
-  },
-]
+function isMegamenuTrigger(item: ResolvedNavItem, megamenuItems: ResolvedNavItem[]): boolean {
+  if (megamenuItems.length === 0) return false
+  if (item.href === '/c' || item.href === '/c/') return true
+  return false
+}
 
 export default function SiteHeaderClient({
-  navItems,
-  navCategories,
+  headerItems,
+  megamenuItems,
   isSignedIn,
   userName,
   notificationBell,
@@ -133,15 +57,9 @@ export default function SiteHeaderClient({
     setActiveSubIdx(idx)
   }, [])
 
-  const taxonomy = TAXONOMY.map((entry) => {
-    const dbCat = navCategories.find(
-      (c) => c.slug === entry.slug || c.name.toLowerCase() === entry.name.toLowerCase()
-    )
-    return { ...entry, count: dbCat?.productCount ?? entry.fallbackCount, dbSlug: dbCat?.slug ?? entry.slug }
-  })
-
-  const activeCat = taxonomy[activeCatIdx] ?? taxonomy[0]
-  const activeSub = activeCat?.subs[activeSubIdx] ?? activeCat?.subs[0]
+  const activeCat = megamenuItems[activeCatIdx] ?? megamenuItems[0]
+  const activeSub = activeCat?.children[activeSubIdx] ?? activeCat?.children[0]
+  const browseAllHref = activeCat?.href ?? '/c'
 
   return (
     <header className="sticky top-0 z-50 bg-[var(--color-elevated)] border-b border-[var(--color-border)]">
@@ -183,15 +101,13 @@ export default function SiteHeaderClient({
 
         {/* Desktop nav */}
         <nav className="hidden lg:flex items-center flex-1">
-          {navItems.map((item) =>
-            item.hasMegamenu ? (
-              <div
-                key={item.href}
-                onMouseEnter={openMega}
-                onMouseLeave={closeMega}
-              >
+          {headerItems.map((item) => {
+            const href = item.href ?? '#'
+            const hasMega = isMegamenuTrigger(item, megamenuItems)
+            return hasMega ? (
+              <div key={item.id} onMouseEnter={openMega} onMouseLeave={closeMega}>
                 <Link
-                  href={item.href}
+                  href={href}
                   className={`flex items-center gap-1 px-3 h-16 text-[14px] font-medium transition-colors ${
                     megamenuOpen
                       ? 'text-[var(--color-primary)] bg-[var(--color-deep)]'
@@ -215,14 +131,16 @@ export default function SiteHeaderClient({
               </div>
             ) : (
               <Link
-                key={item.href}
-                href={item.href}
+                key={item.id}
+                href={href}
+                target={item.openInNewTab ? '_blank' : undefined}
+                rel={item.openInNewTab ? 'noopener noreferrer' : undefined}
                 className="px-3 h-16 flex items-center text-[14px] text-[var(--color-body)] hover:text-[var(--color-primary)] hover:bg-[var(--color-deep)] transition-colors"
               >
                 {item.label}
               </Link>
             )
-          )}
+          })}
         </nav>
 
         {/* Right actions */}
@@ -299,7 +217,7 @@ export default function SiteHeaderClient({
       </div>
 
       {/* ── Megamenu ───────────────────────────────────────── */}
-      {megamenuOpen && (
+      {megamenuOpen && megamenuItems.length > 0 && (
         <div
           className="absolute left-0 right-0 bg-[var(--color-elevated)] border-t border-[var(--color-border)]"
           style={{ top: '100%', boxShadow: '0 24px 64px rgba(33,28,16,0.12)', zIndex: 50 }}
@@ -308,21 +226,18 @@ export default function SiteHeaderClient({
           role="menu"
         >
           <div className="max-w-[1360px] mx-auto px-8">
-            <div
-              className="grid"
-              style={{ gridTemplateColumns: '280px 320px 1fr', minHeight: '420px' }}
-            >
+            <div className="grid" style={{ gridTemplateColumns: '280px 320px 1fr', minHeight: '420px' }}>
               {/* ── Column 1: Top-level categories ── */}
               <div className="py-7 pr-0 border-r border-[var(--color-border-2)]">
                 <div className="font-mono text-[11px] tracking-[0.14em] uppercase text-[var(--color-muted)] mb-3 flex justify-between items-center">
                   <span>Categories</span>
-                  <span className="font-normal">{taxonomy.length}</span>
+                  <span className="font-normal">{megamenuItems.length}</span>
                 </div>
                 <div className="flex flex-col">
-                  {taxonomy.map((cat, i) => (
+                  {megamenuItems.map((cat, i) => (
                     <Link
-                      key={cat.slug}
-                      href={`/c/${cat.dbSlug}`}
+                      key={cat.id}
+                      href={cat.href ?? '#'}
                       role="menuitem"
                       className={`flex justify-between items-center px-3 py-2.5 border-l-2 transition-colors text-[14px] ${
                         i === activeCatIdx
@@ -332,8 +247,10 @@ export default function SiteHeaderClient({
                       onMouseEnter={() => handleCatHover(i)}
                       onClick={closeMegaImmediate}
                     >
-                      <span>{cat.name}</span>
-                      <span className="font-mono text-[11px] text-[var(--color-caption)]">{cat.count}</span>
+                      <span>{cat.label}</span>
+                      {cat.productCount != null ? (
+                        <span className="font-mono text-[11px] text-[var(--color-caption)]">{cat.productCount}</span>
+                      ) : null}
                     </Link>
                   ))}
                 </div>
@@ -342,13 +259,13 @@ export default function SiteHeaderClient({
               {/* ── Column 2: Sub-categories ── */}
               <div className="py-7 px-6 border-r border-[var(--color-border-2)]">
                 <div className="font-mono text-[11px] tracking-[0.14em] uppercase text-[var(--color-muted)] mb-3">
-                  {activeCat?.name}
+                  {activeCat?.label}
                 </div>
                 <div className="flex flex-col">
-                  {(activeCat?.subs ?? []).map((sub, i) => (
+                  {(activeCat?.children ?? []).map((sub, i) => (
                     <Link
                       key={sub.id}
-                      href={`/c/${activeCat?.dbSlug}?sub=${sub.id}`}
+                      href={sub.href ?? '#'}
                       role="menuitem"
                       className={`flex justify-between items-center px-3 py-2.5 border-l-2 transition-colors text-[14px] ${
                         i === activeSubIdx
@@ -358,7 +275,7 @@ export default function SiteHeaderClient({
                       onMouseEnter={() => handleSubHover(i)}
                       onClick={closeMegaImmediate}
                     >
-                      <span>{sub.name}</span>
+                      <span>{sub.label}</span>
                       <span className="font-mono text-[11px] text-[var(--color-caption)]">›</span>
                     </Link>
                   ))}
@@ -368,31 +285,54 @@ export default function SiteHeaderClient({
               {/* ── Column 3: Leaf items ── */}
               <div className="py-7 px-6 flex flex-col">
                 <div className="font-mono text-[11px] tracking-[0.14em] uppercase text-[var(--color-muted)] mb-3">
-                  {activeSub?.name}
+                  {activeSub?.label}
                 </div>
                 <div className="flex flex-col flex-1">
-                  {(activeSub?.leaves ?? []).map((leaf) => (
+                  {(activeSub?.children ?? []).map((leaf) => (
                     <Link
-                      key={leaf}
-                      href={`/c/${activeCat?.dbSlug}?sub=${activeSub?.id}&type=${encodeURIComponent(leaf)}`}
+                      key={leaf.id}
+                      href={leaf.href ?? '#'}
                       role="menuitem"
+                      target={leaf.openInNewTab ? '_blank' : undefined}
+                      rel={leaf.openInNewTab ? 'noopener noreferrer' : undefined}
                       className="flex justify-between items-center px-3 py-2.5 border-l-2 border-transparent text-[14px] text-[var(--color-body)] hover:bg-[var(--color-surface)] hover:border-[var(--color-accent)] transition-colors"
                       onClick={closeMegaImmediate}
                     >
-                      <span>{leaf}</span>
+                      <span>{leaf.label}</span>
                       <span className="font-mono text-[11px] text-[var(--color-caption)]">›</span>
                     </Link>
                   ))}
                 </div>
 
+                {/* Promo tile (if column has one) */}
+                {activeCat?.promoImageUrl ? (
+                  <Link
+                    href={activeCat.promoLinkUrl ?? browseAllHref}
+                    onClick={closeMegaImmediate}
+                    className="mt-4 block bg-[var(--color-surface)] border border-[var(--color-border)] overflow-hidden"
+                  >
+                    <img src={activeCat.promoImageUrl} alt="" className="w-full h-32 object-cover" />
+                    <div className="px-4 py-3">
+                      {activeCat.promoHeading ? (
+                        <div className="text-[13px] font-medium text-[var(--color-primary)]">
+                          {activeCat.promoHeading}
+                        </div>
+                      ) : null}
+                      {activeCat.promoBody ? (
+                        <div className="text-[12px] text-[var(--color-muted)] mt-1">{activeCat.promoBody}</div>
+                      ) : null}
+                    </div>
+                  </Link>
+                ) : null}
+
                 {/* Browse all CTA */}
                 <div className="mt-auto pt-4">
                   <Link
-                    href={`/c/${activeCat?.dbSlug}`}
+                    href={browseAllHref}
                     className="flex items-center justify-between gap-2 h-10 px-4 border border-[var(--color-border)] text-[13px] text-[var(--color-body)] hover:bg-[var(--color-deep)] transition-colors"
                     onClick={closeMegaImmediate}
                   >
-                    <span>Browse all {activeCat?.name}</span>
+                    <span>Browse all {activeCat?.label}</span>
                     <svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
                       <path d="M3 8h10M9 4l4 4-4 4" />
                     </svg>
@@ -407,10 +347,12 @@ export default function SiteHeaderClient({
       {/* ── Mobile nav ─────────────────────────────────────── */}
       {mobileOpen && (
         <div className="lg:hidden border-t border-[var(--color-border)] bg-[var(--color-elevated)]">
-          {navItems.map((item) => (
+          {headerItems.map((item) => (
             <Link
-              key={item.href}
-              href={item.href}
+              key={item.id}
+              href={item.href ?? '#'}
+              target={item.openInNewTab ? '_blank' : undefined}
+              rel={item.openInNewTab ? 'noopener noreferrer' : undefined}
               className="flex items-center px-8 h-12 text-[14px] text-[var(--color-body)] border-b border-[var(--color-border)] hover:bg-[var(--color-deep)]"
               onClick={() => setMobileOpen(false)}
             >
@@ -418,23 +360,26 @@ export default function SiteHeaderClient({
             </Link>
           ))}
 
-          {/* Mobile category accordion */}
-          <div className="px-8 py-4 border-b border-[var(--color-border)]">
-            <p className="font-mono text-[10px] uppercase tracking-[0.12em] text-[var(--color-muted)] mb-3">Categories</p>
-            <div className="flex flex-col gap-0.5">
-              {taxonomy.map((cat) => (
-                <Link
-                  key={cat.slug}
-                  href={`/c/${cat.dbSlug}`}
-                  className="flex justify-between items-center py-2 text-[13px] text-[var(--color-body)] hover:text-[var(--color-accent)]"
-                  onClick={() => setMobileOpen(false)}
-                >
-                  <span>{cat.name}</span>
-                  <span className="font-mono text-[10px] text-[var(--color-caption)]">{cat.count}</span>
-                </Link>
-              ))}
+          {megamenuItems.length > 0 ? (
+            <div className="px-8 py-4 border-b border-[var(--color-border)]">
+              <p className="font-mono text-[10px] uppercase tracking-[0.12em] text-[var(--color-muted)] mb-3">Categories</p>
+              <div className="flex flex-col gap-0.5">
+                {megamenuItems.map((cat) => (
+                  <Link
+                    key={cat.id}
+                    href={cat.href ?? '#'}
+                    className="flex justify-between items-center py-2 text-[13px] text-[var(--color-body)] hover:text-[var(--color-accent)]"
+                    onClick={() => setMobileOpen(false)}
+                  >
+                    <span>{cat.label}</span>
+                    {cat.productCount != null ? (
+                      <span className="font-mono text-[10px] text-[var(--color-caption)]">{cat.productCount}</span>
+                    ) : null}
+                  </Link>
+                ))}
+              </div>
             </div>
-          </div>
+          ) : null}
 
           <div className="px-8 py-4 flex gap-3">
             <Link
