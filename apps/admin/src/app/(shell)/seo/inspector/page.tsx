@@ -560,10 +560,8 @@ function SelectFilter({
 }
 
 /**
- * Map an entity to the admin route that opens its SEO drawer. Returns
- * null for entity types that don't yet have a drawer mount — those rows
- * stay as plain text in the Inspector grid until the next PR rolls the
- * drawer to Brand / Industry / BlogPost / CmsPage.
+ * Map an entity to the admin route that opens its SEO drawer. All 6
+ * indexable entity types are wired now.
  */
 function editPathFor(entityType: SeoEntityType, entityId: string): string | null {
   switch (entityType) {
@@ -571,6 +569,14 @@ function editPathFor(entityType: SeoEntityType, entityId: string): string | null
       return `/products/${entityId}/edit?tab=seo`
     case 'category':
       return `/categories/${entityId}/edit`
+    case 'brand':
+      return `/brands/${entityId}/edit`
+    case 'industry':
+      return `/industries/${entityId}/edit`
+    case 'blog_post':
+      return `/cms/blog/${entityId}?tab=seo`
+    case 'cms_page':
+      return `/cms/pages/${entityId}?tab=seo`
     default:
       return null
   }

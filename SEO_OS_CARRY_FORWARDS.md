@@ -10,7 +10,7 @@ at `/Users/ayushkbhatia/.claude/plans/seo-os-drawer-and-audit.md`.
 
 ---
 
-## ✅ Shipped (PR #4 — feat/seo-os-drawer)
+## ✅ Shipped (PR #5 — feat/seo-os-drawer)
 
 - SeoEntityDrawer mounted on Product + Category edit pages.
 - `withSeoAudit` transactional writer; every SEO mutation now writes audit rows.
@@ -18,29 +18,17 @@ at `/Users/ayushkbhatia/.claude/plans/seo-os-drawer-and-audit.md`.
 - Existing `saveSeoSettings`, `addRedirect`, `deleteRedirect` routed through `withSeoAudit`.
 - Inspector titles deep-link into the drawer for Product + Category.
 
+## ✅ Shipped (this PR — feat/seo-drawer-rollout)
+
+- SeoEntityDrawer rolled out to Brand, Industry, BlogPost, and CmsPage.
+- Brand & Industry: new dedicated `/[entity]/[id]/edit` pages with Core (stub) + SEO tabs; "SEO" link added per row in BrandsClient/IndustriesClient.
+- BlogPost & CmsPage: existing inline editors refactored to a tabbed Content + SEO layout. Existing `savePost` / `savePage` content actions preserved; new `update<X>Seo` + `upload<X>OgImage` actions added.
+- `SeoEntityDrawer.extra` extended with `brand`, `industry`, `blog_post`, `cms_page` discriminators; JSON-LD preview switch covers Organization (brand), CollectionPage (industry), Article (blog_post), and skips JSON-LD entirely for cms_page (matching what the storefront emits today).
+- Inspector `editPathFor` covers all 6 entity types; `?tab=seo` deep-link honoured by the BlogPost and CmsPage editors.
+
 ## Phase 1 — remaining MVP work
 
-### 1. SeoEntityDrawer on Brand, Industry, BlogPost, CmsPage
-
-**Why next:** the drawer pattern works for Product/Category — rolling it
-to the remaining 4 entity types is mechanical now and unblocks editing
-SEO across the whole catalogue.
-
-**Build (per entity type):**
-- New `apps/admin/src/app/(shell)/<entity>/[id]/edit/{page,actions,EditorClient}.tsx`
-  mirroring the category editor's pattern, OR mount the drawer as a tab
-  inside the existing edit screen if one exists.
-- New action `update<Entity>Seo` wrapping `withSeoAudit` (entityType =
-  'brand' | 'industry' | 'blog_post' | 'cms_page').
-- Add the entity to `editPathFor` in
-  `apps/admin/src/app/(shell)/seo/inspector/page.tsx`.
-
-**Acceptance:**
-- Save updates the same 11 SEO fields shipped in PR #4.
-- Audit rows appear with the right `entityType`.
-- Inspector deep-links work.
-
-### 2. Postgres FTS storefront `/search` rewrite
+### 1. Postgres FTS storefront `/search` rewrite
 
 **Why next:** the schema changes (`Unsupported("tsvector")` on Product)
 and SQL migration for `pg_trgm` + GIN indexes already shipped — the
@@ -127,12 +115,7 @@ per-entity quality. Wire prompt caching with the system prefix marked
   function and returns a batchId; `/seo/ai/runs` page polls
   `getBatchStatus`.
 
-### 7. SEO entity drawer rolled to remaining 4 entity types
-
-Brand, Industry, BlogPost, CmsPage edit pages get the same drawer that
-landed for Product/Category in #1.
-
-### 8. Site-wide health dashboard
+### 7. Site-wide health dashboard
 
 Replace the `seo/health/page.tsx` placeholder with:
 - Average score across all entities, broken down by type.
