@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { db } from '@indus/db'
+import { db, Prisma } from '@indus/db'
 import { scoreEntity, type SeoEntityType } from '@indus/domain'
 import { SeoHealthBadge } from '@indus/ui'
 
@@ -45,8 +45,21 @@ export default async function SeoHealthPage() {
     '',
   )
 
-  const [products, categories, brands, industries, blogPosts, cmsPages, seoSetting, unresolved404, totalRedirects] =
-    await Promise.all([
+  const since = new Date(Date.now() - 7 * 24 * 60 * 60 * 1000)
+
+  const [
+    products,
+    categories,
+    brands,
+    industries,
+    blogPosts,
+    cmsPages,
+    seoSetting,
+    unresolved404,
+    totalRedirects,
+    topQueries,
+    zeroResultQueries,
+  ] = await Promise.all([
       db.product.findMany({
         select: { ...SEO_SELECT, title: true, status: true },
       }),
@@ -68,6 +81,22 @@ export default async function SeoHealthPage() {
       db.seoSetting.findFirst({ select: { ogDefaultImageId: true } }),
       db.notFoundLog.count({ where: { resolvedRedirectId: null } }),
       db.redirect.count({ where: { isActive: true } }),
+      db.$queryRaw<Array<{ normalized: string; count: bigint }>>(Prisma.sql`
+        SELECT normalized, COUNT(*)::bigint AS count
+        FROM search_query_logs
+        WHERE created_at >= ${since}
+        GROUP BY normalized
+        ORDER BY count DESC
+        LIMIT 10
+      `),
+      db.$queryRaw<Array<{ normalized: string; count: bigint }>>(Prisma.sql`
+        SELECT normalized, COUNT(*)::bigint AS count
+        FROM search_query_logs
+        WHERE created_at >= ${since} AND results_count = 0
+        GROUP BY normalized
+        ORDER BY count DESC
+        LIMIT 10
+      `),
     ])
 
   const defaultOgPresent = !!seoSetting?.ogDefaultImageId
@@ -245,6 +274,89 @@ export default async function SeoHealthPage() {
           </Link>
         </div>
       </Section>
+
+      {/* Search activity (last 7 days) */}
+      <Section title="Search activity (last 7 days)">
+        <div className="grid grid-cols-2 gap-4">
+          <SearchPanel
+            heading="Top queries"
+            empty="No searches yet."
+            ctaHref="/seo/search/queries"
+            ctaLabel="Full analytics →"
+            rows={topQueries.map((q) => ({
+              label: q.normalized,
+              value: Number(q.count).toLocaleString(),
+            }))}
+          />
+          <SearchPanel
+            heading="Zero-result queries"
+            empty="No zero-result queries — every search found something."
+            ctaHref="/seo/search/synonyms"
+            ctaLabel="Define synonyms →"
+            rows={zeroResultQueries.map((q) => ({
+              label: q.normalized,
+              value: Number(q.count).toLocaleString(),
+            }))}
+            warn={zeroResultQueries.length > 0}
+          />
+        </div>
+      </Section>
+    </div>
+  )
+}
+
+function SearchPanel({
+  heading,
+  empty,
+  rows,
+  ctaHref,
+  ctaLabel,
+  warn,
+}: {
+  heading: string
+  empty: string
+  rows: Array<{ label: string; value: string }>
+  ctaHref: string
+  ctaLabel: string
+  warn?: boolean
+}) {
+  return (
+    <div className="border border-[var(--color-border)] bg-[var(--color-elevated)] p-4">
+      <div className="flex items-center justify-between mb-3">
+        <p className="font-mono text-[10px] uppercase tracking-[0.1em] text-[var(--color-muted)]">
+          {heading}
+        </p>
+        <Link
+          href={ctaHref}
+          className="font-mono text-[10px] text-[var(--color-accent)] hover:underline"
+        >
+          {ctaLabel}
+        </Link>
+      </div>
+      {rows.length === 0 ? (
+        <p className="text-[12px] text-[var(--color-muted)] py-4 text-center">{empty}</p>
+      ) : (
+        <ul className="flex flex-col gap-1">
+          {rows.map((r) => (
+            <li
+              key={r.label}
+              className="flex items-baseline justify-between gap-3 font-mono text-[12px]"
+            >
+              <span
+                className={`truncate ${
+                  warn ? 'text-[oklch(0.5_0.18_25)]' : 'text-[var(--color-body)]'
+                }`}
+                title={r.label}
+              >
+                {r.label}
+              </span>
+              <span className="text-[var(--color-muted)] tabular-nums whitespace-nowrap">
+                {r.value}
+              </span>
+            </li>
+          ))}
+        </ul>
+      )}
     </div>
   )
 }

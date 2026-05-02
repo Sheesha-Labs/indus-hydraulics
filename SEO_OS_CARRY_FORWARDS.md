@@ -38,13 +38,19 @@ at `/Users/ayushkbhatia/.claude/plans/seo-os-drawer-and-audit.md`.
 - `AiSuggestButton` mounted on every SEO drawer's title / description / focus keyword fields.
 - `/seo/ai` overview, `/seo/ai/runs` log, `/seo/ai/quota` per-user spend.
 
-## ✅ Shipped (this PR — feat/seo-health-404)
+## ✅ Shipped (PR #10 — feat/seo-health-404)
 
-- Storefront 404 capture: `not-found.tsx` fires a `sendBeacon` to `/api/seo/404-log`, which upserts `NotFoundLog` by path with hit counts.
-- Admin `/seo/redirects/not-found` lists unresolved 404s top-hits-first with one-click resolve (creates a 301/302/307/308 via `withSeoAudit` reason='404_resolved') or ignore.
-- Admin `/seo/redirects/chains` walks the active `Redirect` table as a graph and reports cycles + multi-hop chains so admins can flatten in one edit.
-- `/seo/redirects` index page now exposes both sub-pages with badges (unresolved-404 count, active-redirect count).
-- Site-wide health dashboard at `/seo/health` replaces the placeholder: per-entity-type aggregate (avg score, healthy/warn/critical counts), worst-offender list (top 25 published URLs by lowest score, deep-linked to the editor), and infrastructure tiles (active redirects, unresolved 404s).
+- 404 capture beacon → `/api/seo/404-log` → `NotFoundLog`.
+- Admin `/seo/redirects/not-found` (top hits + one-click resolve) and `/seo/redirects/chains` (cycle/chain detector).
+- Site-wide `/seo/health` dashboard with per-type aggregate, worst-offender list, infrastructure tiles.
+
+## ✅ Shipped (this PR — feat/seo-jsonld-inngest)
+
+- JSON-LD override **live validator** on the drawer Schema tab — parses on every keystroke, surfaces a `valid` / `invalid` chip, red textarea border + error message on invalid JSON, preview falls back to the unmerged base.
+- **Inngest infrastructure** wired in (`inngest` package + `apps/admin/src/inngest/{client,functions}.ts` + `/api/inngest/route.ts`). First scheduled function: `seo.health.recompute_all` runs nightly at 04:00, populates `SeoHealthScore` rows for every entity. The dashboard still computes live but the cached table will back trend charts in the next phase.
+- `/seo/health` gained a **search activity** section: top queries (last 7 days) + zero-result queries (with deep-link to `/seo/search/synonyms` for the obvious follow-up).
+- New `/seo/gsc` page documenting the Google Search Console OAuth setup steps and showing live counts of captured `GscMetricDaily` rows. The OAuth flow itself ships once `GOOGLE_OAUTH_CLIENT_ID` / `_SECRET` are provisioned in GCP — the page detects them and surfaces a follow-up CTA.
+- Sidebar/`SeoTabsNav` now includes the `GSC` tab.
 
 ## Phase 2 (next chunk)
 

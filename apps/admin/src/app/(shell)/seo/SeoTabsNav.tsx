@@ -12,6 +12,7 @@ const TABS: { id: string; label: string; path: string }[] = [
   { id: 'redirects', label: 'Redirects', path: '/seo/redirects' },
   { id: 'search', label: 'Search', path: '/seo/search' },
   { id: 'ai', label: 'AI', path: '/seo/ai' },
+  { id: 'gsc', label: 'GSC', path: '/seo/gsc' },
   { id: 'audit', label: 'Audit', path: '/seo/audit' },
   { id: 'settings', label: 'Settings', path: '/seo/settings' },
 ]
