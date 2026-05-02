@@ -4,6 +4,7 @@ import { useState, useRef, useCallback } from 'react'
 import type React from 'react'
 import Link from 'next/link'
 import type { ResolvedNavItem } from '@indus/domain'
+import SearchAutocomplete from './SearchAutocomplete'
 
 interface Props {
   headerItems: ResolvedNavItem[]
@@ -150,21 +151,9 @@ export default function SiteHeaderClient({
         {/* Right actions */}
         <div className="ml-auto flex items-center gap-2">
           {/* Search bar */}
-          <Link
-            href={`/search`}
-            className="hidden sm:flex items-center gap-2 h-9 px-3 border border-[var(--color-border)] text-[13px] text-[var(--color-muted)] hover:border-[var(--color-body)] transition-colors"
-            style={{ minWidth: '240px' }}
-            aria-label="Search"
-          >
-            <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
-              <circle cx="7" cy="7" r="5" />
-              <path d="M11 11l3 3" />
-            </svg>
-            <span className="flex-1 text-[var(--color-caption)] truncate">
-              {activeSkuCount ? `Search ${activeSkuCount.toLocaleString()}+ SKUs, brands, datasheets…` : 'Search SKUs, brands, datasheets…'}
-            </span>
-            <span className="font-mono text-[10px] text-[var(--color-caption)] border border-[var(--color-border)] px-1 shrink-0">⌘K</span>
-          </Link>
+          <div className="hidden sm:block" style={{ minWidth: '320px' }}>
+            <SearchAutocomplete className="relative w-full" />
+          </div>
 
           {/* Notification bell */}
           {notificationBell}
