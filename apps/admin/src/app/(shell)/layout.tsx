@@ -1,6 +1,7 @@
 import { auth } from '../../lib/auth'
 import { redirect } from 'next/navigation'
 import AdminSidebar from '../../components/AdminSidebar'
+import AdminTopbar from '../../components/AdminTopbar'
 
 export default async function AdminShellLayout({ children }: { children: React.ReactNode }) {
   const session = await auth()
@@ -15,7 +16,10 @@ export default async function AdminShellLayout({ children }: { children: React.R
         userName={session.user?.name ?? 'Admin'}
         userRole={session.user?.role ?? 'admin'}
       />
-      <div className="flex-1 flex flex-col min-w-0">{children}</div>
+      <div className="flex-1 flex flex-col min-w-0">
+        <AdminTopbar />
+        {children}
+      </div>
     </div>
   )
 }

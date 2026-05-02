@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import { auth } from '../../lib/auth'
 import { db } from '@indus/db'
-import AdminTopbar from '../../components/AdminTopbar'
 import Link from 'next/link'
 
 export const metadata: Metadata = { title: 'Dashboard' }
@@ -44,21 +43,21 @@ export default async function AdminDashboardPage({ params }: Props) {
   })
 
   return (
-    <>
-      <AdminTopbar
-        crumbs={[{ label: 'Dashboard' }]}
-        primaryAction={{ label: '+ Add product', href: `/products/new` }}
-      />
-
-      <div className="px-8 py-6 pb-16">
-        <div className="flex justify-between items-end gap-4 mb-6">
-          <div>
-            <h1 className="text-[24px] font-semibold tracking-tight">
-              Good {timeOfDay}, {firstName}
-            </h1>
-            <p className="text-[13px] text-[var(--color-muted)] mt-1">{dateStr}</p>
-          </div>
+    <div className="px-8 py-6 pb-16">
+      <div className="flex justify-between items-end gap-4 mb-6">
+        <div>
+          <h1 className="text-[24px] font-semibold tracking-tight">
+            Good {timeOfDay}, {firstName}
+          </h1>
+          <p className="text-[13px] text-[var(--color-muted)] mt-1">{dateStr}</p>
         </div>
+        <Link
+          href={`/products/new`}
+          className="h-9 px-4 flex items-center bg-[var(--color-accent)] text-white text-[13px] font-medium hover:opacity-90"
+        >
+          + Add product
+        </Link>
+      </div>
 
         {/* KPI grid */}
         <div className="grid grid-cols-2 xl:grid-cols-4 gap-3 mb-5">
@@ -191,7 +190,6 @@ export default async function AdminDashboardPage({ params }: Props) {
           ))}
         </div>
       </div>
-    </>
   )
 }
 

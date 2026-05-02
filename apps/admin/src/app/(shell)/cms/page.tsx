@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { db } from '@indus/db'
-import AdminTopbar from '../../../components/AdminTopbar'
 
 export const metadata: Metadata = { title: 'CMS — Indus Admin' }
 
@@ -29,10 +28,7 @@ export default async function CmsPage({ params, searchParams }: Props) {
   ]
 
   return (
-    <>
-      <AdminTopbar crumbs={[{ label: 'Content' }, { label: 'Pages & Blog' }]} />
-
-      <div className="px-8 py-6 pb-16">
+    <div className="px-8 py-6 pb-16">
       <div className="flex items-center justify-between mb-6">
         <h1 className="text-[24px] font-semibold tracking-tight">Content Management</h1>
         {tab === 'blog' && (
@@ -141,7 +137,6 @@ export default async function CmsPage({ params, searchParams }: Props) {
           )}
         </div>
       )}
-      </div>
-    </>
+    </div>
   )
 }

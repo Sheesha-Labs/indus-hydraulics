@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { db } from '@indus/db'
-import AdminTopbar from '../../../../../components/AdminTopbar'
 import IndustryEditorClient from './IndustryEditorClient'
 
 export const metadata: Metadata = { title: 'Edit industry — Indus Admin' }
@@ -35,15 +34,7 @@ export default async function EditIndustryPage({ params }: Props) {
   )
 
   return (
-    <>
-      <AdminTopbar
-        crumbs={[
-          { label: 'Catalogue' },
-          { label: 'Industries', href: '/industries' },
-          { label: industry.name },
-        ]}
-      />
-      <IndustryEditorClient
+    <IndustryEditorClient
         industry={{
           id: industry.id,
           slug: industry.slug,
@@ -74,6 +65,5 @@ export default async function EditIndustryPage({ params }: Props) {
           originalFilename: m.originalFilename,
         }))}
       />
-    </>
   )
 }

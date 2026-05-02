@@ -1,6 +1,5 @@
 import type { Metadata } from 'next'
 import { db } from '@indus/db'
-import AdminTopbar from '../../../../components/AdminTopbar'
 import ImportClient from './ImportClient'
 
 export const metadata: Metadata = { title: 'Bulk import — Indus Admin' }
@@ -18,15 +17,7 @@ export default async function BulkImportPage({ params }: Props) {
   })
 
   return (
-    <>
-      <AdminTopbar
-        crumbs={[
-          { label: 'Catalogue' },
-          { label: 'Products', href: `/products` },
-          { label: 'Bulk import' },
-        ]}
-      />
-      <div className="px-8 py-6 pb-16">
+    <div className="px-8 py-6 pb-16">
         <h1 className="text-[24px] font-semibold tracking-tight mb-1">Bulk product import</h1>
         <p className="text-[13px] text-[var(--color-muted)] mb-6">
           Upload a spreadsheet to create or update many products at once. Existing rows (matched by SKU) get updated;
@@ -65,7 +56,6 @@ export default async function BulkImportPage({ params }: Props) {
             </div>
           </div>
         )}
-      </div>
-    </>
+    </div>
   )
 }

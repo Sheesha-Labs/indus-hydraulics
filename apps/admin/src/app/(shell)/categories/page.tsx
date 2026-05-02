@@ -1,6 +1,5 @@
 import type { Metadata } from 'next'
 import { db } from '@indus/db'
-import AdminTopbar from '../../../components/AdminTopbar'
 import CategoriesClient from './CategoriesClient'
 
 export const metadata: Metadata = { title: 'Categories — Indus Admin' }
@@ -38,20 +37,17 @@ export default async function CategoriesPage({ params }: Props) {
   }))
 
   return (
-    <>
-      <AdminTopbar crumbs={[{ label: 'Catalogue' }, { label: 'Categories' }]} />
-      <div className="px-8 py-6 pb-16">
-        <div className="flex items-center justify-between mb-6">
-          <div>
-            <h1 className="text-[24px] font-semibold tracking-tight">Categories</h1>
-            <p className="text-[13px] text-[var(--color-muted)] mt-1">
-              {categories.length} {categories.length === 1 ? 'category' : 'categories'}
-            </p>
-          </div>
+    <div className="px-8 py-6 pb-16">
+      <div className="flex items-center justify-between mb-6">
+        <div>
+          <h1 className="text-[24px] font-semibold tracking-tight">Categories</h1>
+          <p className="text-[13px] text-[var(--color-muted)] mt-1">
+            {categories.length} {categories.length === 1 ? 'category' : 'categories'}
+          </p>
         </div>
-
-        <CategoriesClient categories={categories} templates={templates} />
       </div>
-    </>
+
+      <CategoriesClient categories={categories} templates={templates} />
+    </div>
   )
 }

@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { db } from '@indus/db'
-import AdminTopbar from '../../../../../components/AdminTopbar'
 import BrandEditorClient from './BrandEditorClient'
 
 export const metadata: Metadata = { title: 'Edit brand — Indus Admin' }
@@ -45,15 +44,7 @@ export default async function EditBrandPage({ params }: Props) {
   )
 
   return (
-    <>
-      <AdminTopbar
-        crumbs={[
-          { label: 'Catalogue' },
-          { label: 'Brands', href: '/brands' },
-          { label: brand.name },
-        ]}
-      />
-      <BrandEditorClient
+    <BrandEditorClient
         brand={{
           id: brand.id,
           slug: brand.slug,
@@ -84,6 +75,5 @@ export default async function EditBrandPage({ params }: Props) {
           originalFilename: m.originalFilename,
         }))}
       />
-    </>
   )
 }

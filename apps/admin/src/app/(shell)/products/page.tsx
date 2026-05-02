@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { db, Prisma } from '@indus/db'
-import AdminTopbar from '../../../components/AdminTopbar'
 
 export const metadata: Metadata = { title: 'Products — Indus Admin' }
 
@@ -110,29 +109,31 @@ export default async function AdminProductsPage({ params, searchParams }: Props)
   const sortIndicator = (col: keyof typeof SORTABLE) => (sortKey === col ? (sortDir === 'asc' ? ' ↑' : ' ↓') : '')
 
   return (
-    <>
-      <AdminTopbar
-        crumbs={[{ label: 'Catalogue' }, { label: 'Products' }]}
-        primaryAction={{ label: '+ Add product', href: `/products/new` }}
-      />
-
-      <div className="px-8 py-6 pb-16">
-        <div className="flex items-center justify-between mb-6">
-          <div>
-            <h1 className="text-[24px] font-semibold tracking-tight">Products</h1>
-            <p className="text-[13px] text-[var(--color-muted)] mt-1">
-              {total === 0
-                ? 'No products'
-                : `Showing ${showingFrom.toLocaleString()}–${showingTo.toLocaleString()} of ${total.toLocaleString()}`}
-            </p>
-          </div>
+    <div className="px-8 py-6 pb-16">
+      <div className="flex items-center justify-between mb-6">
+        <div>
+          <h1 className="text-[24px] font-semibold tracking-tight">Products</h1>
+          <p className="text-[13px] text-[var(--color-muted)] mt-1">
+            {total === 0
+              ? 'No products'
+              : `Showing ${showingFrom.toLocaleString()}–${showingTo.toLocaleString()} of ${total.toLocaleString()}`}
+          </p>
+        </div>
+        <div className="flex items-center gap-2">
           <Link
             href={`/products/import`}
             className="h-9 px-4 flex items-center border border-[var(--color-border)] bg-white text-[13px] font-medium hover:border-[var(--color-primary)] transition-colors"
           >
             ↑ Bulk import
           </Link>
+          <Link
+            href={`/products/new`}
+            className="h-9 px-4 flex items-center bg-[var(--color-accent)] text-white text-[13px] font-medium hover:opacity-90"
+          >
+            + Add product
+          </Link>
         </div>
+      </div>
 
         {/* Search + filter form (single submission to keep URL canonical) */}
         <form
@@ -281,8 +282,7 @@ export default async function AdminProductsPage({ params, searchParams }: Props)
             )}
           </>
         )}
-      </div>
-    </>
+    </div>
   )
 }
 

@@ -2,7 +2,6 @@ import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { db } from '@indus/db'
 import { MENU_LOCATION_LABELS, type MenuLinkType, type MenuLocation } from '@indus/domain'
-import AdminTopbar from '../../../../components/AdminTopbar'
 import NavigationEditor, { type EditorItem, type EditorMenu } from './NavigationEditor'
 
 export const metadata: Metadata = { title: 'Edit menu — Indus Admin' }
@@ -85,20 +84,11 @@ export default async function MenuEditorPage({ params }: Props) {
   })
 
   return (
-    <>
-      <AdminTopbar
-        crumbs={[
-          { label: 'Content' },
-          { label: 'Navigation', href: '/navigation' },
-          { label: editorMenu.name },
-        ]}
-      />
-      <div className="px-8 py-6 pb-16">
-        <div className="mb-2 text-[12px] text-[var(--color-muted)] font-mono uppercase tracking-[0.1em]">
-          {MENU_LOCATION_LABELS[editorMenu.location]}
-        </div>
-        <NavigationEditor menu={editorMenu} items={items} />
+    <div className="px-8 py-6 pb-16">
+      <div className="mb-2 text-[12px] text-[var(--color-muted)] font-mono uppercase tracking-[0.1em]">
+        {MENU_LOCATION_LABELS[editorMenu.location]}
       </div>
-    </>
+      <NavigationEditor menu={editorMenu} items={items} />
+    </div>
   )
 }

@@ -1,18 +1,13 @@
 'use client'
 
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
+import { deriveCrumbs } from './admin-routes'
 
-interface Crumb {
-  label: string
-  href?: string
-}
+export default function AdminTopbar() {
+  const pathname = usePathname() ?? '/'
+  const crumbs = deriveCrumbs(pathname)
 
-interface Props {
-  crumbs?: Crumb[]
-  primaryAction?: { label: string; href: string }
-}
-
-export default function AdminTopbar({ crumbs = [], primaryAction }: Props) {
   return (
     <div className="h-14 bg-white border-b border-[#e6e1d5] flex items-center px-6 gap-5 sticky top-0 z-20">
       {/* Breadcrumbs */}
@@ -74,15 +69,6 @@ export default function AdminTopbar({ crumbs = [], primaryAction }: Props) {
           </svg>
           <span className="absolute top-[5px] right-[5px] w-1.5 h-1.5 rounded-full bg-[var(--color-accent)]" />
         </button>
-
-        {primaryAction && (
-          <Link
-            href={primaryAction.href}
-            className="flex items-center h-9 px-4 bg-[var(--color-accent)] text-white text-[13px] font-medium hover:opacity-90 transition-opacity"
-          >
-            {primaryAction.label}
-          </Link>
-        )}
       </div>
     </div>
   )

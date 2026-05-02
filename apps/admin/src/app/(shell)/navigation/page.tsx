@@ -2,7 +2,6 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { db } from '@indus/db'
 import { MENU_LOCATION_LABELS, MENU_LOCATIONS, type MenuLocation } from '@indus/domain'
-import AdminTopbar from '../../../components/AdminTopbar'
 import CreateMenuButton from './CreateMenuButton'
 
 export const metadata: Metadata = { title: 'Navigation — Indus Admin' }
@@ -21,9 +20,7 @@ export default async function NavigationListPage({ params }: Props) {
   const missingLocations = MENU_LOCATIONS.filter((loc) => !byLocation.has(loc))
 
   return (
-    <>
-      <AdminTopbar crumbs={[{ label: 'Content' }, { label: 'Navigation' }]} />
-      <div className="px-8 py-6 pb-16">
+    <div className="px-8 py-6 pb-16">
         <div className="flex items-center justify-between mb-6">
           <div>
             <h1 className="text-[24px] font-semibold tracking-tight">Navigation menus</h1>
@@ -80,7 +77,6 @@ export default async function NavigationListPage({ params }: Props) {
             ))
           )}
         </div>
-      </div>
-    </>
+    </div>
   )
 }
