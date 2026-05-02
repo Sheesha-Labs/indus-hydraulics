@@ -18,7 +18,7 @@ at `/Users/ayushkbhatia/.claude/plans/seo-os-drawer-and-audit.md`.
 - Existing `saveSeoSettings`, `addRedirect`, `deleteRedirect` routed through `withSeoAudit`.
 - Inspector titles deep-link into the drawer for Product + Category.
 
-## ✅ Shipped (this PR — feat/seo-drawer-rollout)
+## ✅ Shipped (PR #6 — feat/seo-drawer-rollout)
 
 - SeoEntityDrawer rolled out to Brand, Industry, BlogPost, and CmsPage.
 - Brand & Industry: new dedicated `/[entity]/[id]/edit` pages with Core (stub) + SEO tabs; "SEO" link added per row in BrandsClient/IndustriesClient.
@@ -26,58 +26,20 @@ at `/Users/ayushkbhatia/.claude/plans/seo-os-drawer-and-audit.md`.
 - `SeoEntityDrawer.extra` extended with `brand`, `industry`, `blog_post`, `cms_page` discriminators; JSON-LD preview switch covers Organization (brand), CollectionPage (industry), Article (blog_post), and skips JSON-LD entirely for cms_page (matching what the storefront emits today).
 - Inspector `editPathFor` covers all 6 entity types; `?tab=seo` deep-link honoured by the BlogPost and CmsPage editors.
 
-## Phase 1 — remaining MVP work
+## ✅ Shipped (this PR — feat/seo-search-fts)
 
-### 1. Postgres FTS storefront `/search` rewrite
+- Storefront `/search` rewritten on top of Postgres FTS (`websearch_to_tsquery` + `ts_rank_cd` × boost) with a `pg_trgm` similarity fallback for typo-tolerant SKU/MPN/title matching.
+- New `apps/storefront/src/lib/search.ts` consumes `planSearch` from `@indus/domain`: redirects on rule match, expands synonyms, runs SQL.
+- `/api/search/log` (POST) records SearchQueryLog rows; result anchors fire a `sendBeacon` for click-through tracking.
+- `/api/search/suggest` (GET) backs an 8-row autocomplete via prefix tsquery.
+- `SearchAutocomplete.tsx` (debounced 150ms, keyboard-navigable) replaces the static "Search" link in the header.
+- Admin `/seo/search` is now a 4-tab sub-shell:
+  - **Synonyms** — group CRUD; bidirectional within group; toggle active/disabled.
+  - **Query redirects** — normalised query → URL; storefront 302s on match.
+  - **Boosts** — per-product score multiplier with optional expiry.
+  - **Query analytics** — top queries, zero-result queries, high-volume / no-click queries over the last 30 days.
 
-**Why next:** the schema changes (`Unsupported("tsvector")` on Product)
-and SQL migration for `pg_trgm` + GIN indexes already shipped — the
-search page still uses the old Prisma `OR contains` query, leaving the
-investment unrealised.
-
-**Build:**
-- `apps/storefront/src/lib/search.ts` — calls `planSearch` from
-  `@indus/domain`, then either issues a `redirect()` for the
-  `kind: 'redirect'` case or runs a parameterised `db.$queryRaw` against
-  `search_tsv` with `websearch_to_tsquery` + `ts_rank_cd` × `boost`,
-  falling back to `pg_trgm %>` similarity when the FTS hit count is 0.
-- Replace the substring loop in
-  `apps/storefront/src/app/search/page.tsx`.
-- `apps/storefront/src/app/api/search/log/route.ts` — POST endpoint
-  inserting `SearchQueryLog`.
-- `apps/storefront/src/app/api/search/suggest/route.ts` — autocomplete
-  (prefix tsquery, returns 8 products + categories).
-- `apps/storefront/src/components/SearchAutocomplete.tsx` — debounced
-  client island, used in `SiteHeader`.
-- Result anchors fire a `navigator.sendBeacon` to update
-  `clickedSku`/`clickedAt` on the originating `SearchQueryLog`.
-
-**Acceptance:**
-- `/search?q=oring` returns the same set as `/search?q=o-ring` once a
-  synonym group is defined.
-- A misspelled SKU (e.g. `1064-6-6`) still returns the closest
-  `pg_trgm` match.
-- `SearchQueryLog` rows accumulate.
-
-### 3. Search admin pages (synonyms, redirects, boosts, analytics)
-
-**Why next:** without these CRUD pages the search subsystem in #2 is
-inert.
-
-**Build:** four sub-pages under
-`apps/admin/src/app/(shell)/seo/search/`:
-- `synonyms/` — group editor; CRUD over `SearchSynonym`.
-- `redirects/` — query → URL; CRUD over `SearchRedirect`.
-- `boosts/` — pin/bury rules per entity; CRUD over `SearchBoost` with
-  optional `expiresAt`.
-- `queries/` — read-only analytics over `SearchQueryLog`: top queries,
-  zero-result queries, no-click queries (last 30 days).
-
-Replace the placeholder at `seo/search/page.tsx` with a sub-tab nav.
-
----
-
-## Phase 2 (next 4 weeks of build)
+## Phase 2 (next chunk)
 
 ### 5. AI Suggest drawer (Sonnet streaming) + Accept/Reject
 
