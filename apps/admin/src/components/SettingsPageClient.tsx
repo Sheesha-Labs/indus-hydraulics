@@ -242,6 +242,264 @@ export default function SettingsPageClient({ activeTab, storeSettings, emailTemp
             />
           </div>
 
+          <div className="pt-4 mt-4 border-t border-[var(--color-border)]">
+            <h3 className="font-mono text-[11px] tracking-[0.12em] uppercase text-[var(--color-muted)] mb-3">
+              Legal entity
+            </h3>
+            <p className="text-[12px] text-[var(--color-muted)] mb-4">
+              Rendered on every quote PDF and transactional email footer. UAE ship-tos auto-apply 5% VAT; non-UAE ship-tos are zero-rated as exports (TRN still shown).
+            </p>
+          </div>
+
+          <div>
+            <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+              Legal name
+            </label>
+            <input
+              name="legalName"
+              type="text"
+              maxLength={160}
+              defaultValue={storeSettings?.legalName ?? ''}
+              placeholder="Indus Hydraulic Power Trading LLC"
+              className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] focus:outline-none focus:border-[var(--color-accent)]"
+            />
+          </div>
+
+          <div>
+            <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+              VAT / TRN number
+            </label>
+            <input
+              name="vatTrn"
+              type="text"
+              maxLength={40}
+              defaultValue={storeSettings?.vatTrn ?? ''}
+              placeholder="100548997400003"
+              className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] focus:outline-none focus:border-[var(--color-accent)]"
+            />
+          </div>
+
+          <div>
+            <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+              Registered address (one line per line)
+            </label>
+            <textarea
+              name="registeredAddressLines"
+              rows={4}
+              defaultValue={((storeSettings?.registeredAddressLines as string[] | null) ?? []).join('\n')}
+              placeholder={'Office No 310 Al Hilal Bank Building, Al Nahda Street\nAl Quasis-2, Dubai\nDubai 87556\nUnited Arab Emirates'}
+              className="w-full px-3 py-2 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] focus:outline-none focus:border-[var(--color-accent)] resize-none font-mono"
+            />
+          </div>
+
+          <div className="grid grid-cols-2 gap-3">
+            <div>
+              <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+                Country (ISO-2)
+              </label>
+              <input
+                name="registeredCountryCode"
+                type="text"
+                maxLength={2}
+                defaultValue={storeSettings?.registeredCountryCode ?? 'AE'}
+                placeholder="AE"
+                className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] focus:outline-none focus:border-[var(--color-accent)] uppercase"
+              />
+            </div>
+            <div>
+              <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+                Default VAT rate (%)
+              </label>
+              <input
+                name="defaultVatRatePct"
+                type="number"
+                step="0.01"
+                min="0"
+                max="100"
+                defaultValue={storeSettings?.defaultVatRatePct?.toString() ?? '5.00'}
+                className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] focus:outline-none focus:border-[var(--color-accent)]"
+              />
+            </div>
+          </div>
+
+          <div className="pt-4 mt-4 border-t border-[var(--color-border)]">
+            <h3 className="font-mono text-[11px] tracking-[0.12em] uppercase text-[var(--color-muted)] mb-3">
+              Quote signature block
+            </h3>
+            <p className="text-[12px] text-[var(--color-muted)] mb-4">
+              Appears at the bottom of every outgoing quote PDF and email.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 gap-3">
+            <div>
+              <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+                Name
+              </label>
+              <input
+                name="signatureName"
+                type="text"
+                maxLength={120}
+                defaultValue={storeSettings?.signatureName ?? ''}
+                placeholder="Krishan Bhatia"
+                className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] focus:outline-none focus:border-[var(--color-accent)]"
+              />
+            </div>
+            <div>
+              <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+                Title
+              </label>
+              <input
+                name="signatureTitle"
+                type="text"
+                maxLength={120}
+                defaultValue={storeSettings?.signatureTitle ?? ''}
+                placeholder="Managing Director"
+                className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] focus:outline-none focus:border-[var(--color-accent)]"
+              />
+            </div>
+          </div>
+
+          <div className="grid grid-cols-2 gap-3">
+            <div>
+              <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+                Phone
+              </label>
+              <input
+                name="signaturePhone"
+                type="text"
+                maxLength={40}
+                defaultValue={storeSettings?.signaturePhone ?? ''}
+                placeholder="+971 52 2477942"
+                className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] focus:outline-none focus:border-[var(--color-accent)]"
+              />
+            </div>
+            <div>
+              <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+                Email
+              </label>
+              <input
+                name="signatureEmail"
+                type="email"
+                defaultValue={storeSettings?.signatureEmail ?? ''}
+                placeholder="sales@indushydraulics.me"
+                className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] focus:outline-none focus:border-[var(--color-accent)]"
+              />
+            </div>
+          </div>
+
+          <div className="pt-4 mt-4 border-t border-[var(--color-border)]">
+            <h3 className="font-mono text-[11px] tracking-[0.12em] uppercase text-[var(--color-muted)] mb-3">
+              Outbound email
+            </h3>
+            <p className="text-[12px] text-[var(--color-muted)] mb-4">
+              All transactional email is sent from one shared address. Replies route here too. New-RFQ alerts fan out to the internal recipient list.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 gap-3">
+            <div>
+              <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+                From / Reply-To address
+              </label>
+              <input
+                name="quoteFromEmail"
+                type="email"
+                defaultValue={storeSettings?.quoteFromEmail ?? ''}
+                placeholder="sales@indushydraulics.me"
+                className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] focus:outline-none focus:border-[var(--color-accent)]"
+              />
+            </div>
+            <div>
+              <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+                Sender display name
+              </label>
+              <input
+                name="quoteFromName"
+                type="text"
+                maxLength={120}
+                defaultValue={storeSettings?.quoteFromName ?? ''}
+                placeholder="Indus Hydraulics Sales"
+                className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] focus:outline-none focus:border-[var(--color-accent)]"
+              />
+            </div>
+          </div>
+
+          <div>
+            <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+              Internal new-RFQ alert recipients (one email per line)
+            </label>
+            <textarea
+              name="internalAlertEmails"
+              rows={3}
+              defaultValue={((storeSettings?.internalAlertEmails as string[] | null) ?? []).join('\n')}
+              placeholder={'sales@indushydraulics.me\nayushkbhatia@gmail.com'}
+              className="w-full px-3 py-2 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] focus:outline-none focus:border-[var(--color-accent)] resize-none font-mono"
+            />
+          </div>
+
+          <div className="pt-4 mt-4 border-t border-[var(--color-border)]">
+            <h3 className="font-mono text-[11px] tracking-[0.12em] uppercase text-[var(--color-muted)] mb-3">
+              Quote defaults
+            </h3>
+            <p className="text-[12px] text-[var(--color-muted)] mb-4">
+              Defaults pre-filled on every new quote. Engineers can override per quote.
+            </p>
+          </div>
+
+          <div>
+            <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+              Validity (days)
+            </label>
+            <input
+              name="defaultQuoteValidityDays"
+              type="number"
+              min="1"
+              max="365"
+              defaultValue={storeSettings?.defaultQuoteValidityDays ?? 30}
+              className="w-32 h-10 px-3 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] focus:outline-none focus:border-[var(--color-accent)]"
+            />
+          </div>
+
+          <div>
+            <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+              Default Notes (optional)
+            </label>
+            <textarea
+              name="defaultQuoteNotes"
+              rows={3}
+              defaultValue={storeSettings?.defaultQuoteNotes ?? ''}
+              placeholder="Any standing notes that should appear on every quote."
+              className="w-full px-3 py-2 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] focus:outline-none focus:border-[var(--color-accent)] resize-none"
+            />
+          </div>
+
+          <div>
+            <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+              Default Terms &amp; Conditions
+            </label>
+            <textarea
+              name="defaultQuoteTerms"
+              rows={4}
+              defaultValue={storeSettings?.defaultQuoteTerms ?? ''}
+              placeholder={'DELIVERY: DDP destination\nPAYMENT: Advance with order\nPRICE VALID FOR FULL 30 DAYS ONLY.'}
+              className="w-full px-3 py-2 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] focus:outline-none focus:border-[var(--color-accent)] resize-none font-mono"
+            />
+          </div>
+
+          <div>
+            <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+              Default Disclaimer
+            </label>
+            <textarea
+              name="defaultQuoteDisclaimer"
+              rows={3}
+              defaultValue={storeSettings?.defaultQuoteDisclaimer ?? ''}
+              placeholder="Once the order is confirmed and processed, the same cannot be changed or cancelled. Material will be supplied as per the offer quoted."
+              className="w-full px-3 py-2 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] focus:outline-none focus:border-[var(--color-accent)] resize-none"
+            />
+          </div>
+
           <div className="flex items-center gap-3 pt-2">
             <button
               type="submit"

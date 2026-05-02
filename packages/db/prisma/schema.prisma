@@ -254,61 +254,61 @@ enum MenuLinkType {
 // ─────────────────────────────────────────────────────────────────────────────
 
 model Account {
-  id                      String        @id @default(uuid())
-  code                    String        @unique // ACC-2018-0142
-  legalName               String
-  displayName             String
-  industryId              String?
-  industry                Industry?     @relation(fields: [industryId], references: [id])
-  region                  String?
-  tier                    AccountTier   @default(bronze)
-  status                  AccountStatus @default(prospect)
-  assignedRepId           String?
-  assignedRep             StaffUser?    @relation(fields: [assignedRepId], references: [id])
-  taxId                   String?
-  preferredCurrency       Currency      @default(USD)
-  defaultIncoterm         String?
-  creditLimit             Decimal       @default(0) @db.Decimal(12, 2)
-  creditOutstanding       Decimal       @default(0) @db.Decimal(12, 2)
-  paymentTermsDays        Int           @default(30)
-  avgDsoDays              Int           @default(0)
-  requiresAddressApproval Boolean       @default(false)
-  requiresRfqApprovalAbove Decimal?     @db.Decimal(12, 2)
-  tags                    Json          @default("[]") // string[]
-  createdAt               DateTime      @default(now())
-  updatedAt               DateTime      @updatedAt
+  id                       String        @id @default(uuid())
+  code                     String        @unique // ACC-2018-0142
+  legalName                String
+  displayName              String
+  industryId               String?
+  industry                 Industry?     @relation(fields: [industryId], references: [id])
+  region                   String?
+  tier                     AccountTier   @default(bronze)
+  status                   AccountStatus @default(prospect)
+  assignedRepId            String?
+  assignedRep              StaffUser?    @relation(fields: [assignedRepId], references: [id])
+  taxId                    String?
+  preferredCurrency        Currency      @default(USD)
+  defaultIncoterm          String?
+  creditLimit              Decimal       @default(0) @db.Decimal(12, 2)
+  creditOutstanding        Decimal       @default(0) @db.Decimal(12, 2)
+  paymentTermsDays         Int           @default(30)
+  avgDsoDays               Int           @default(0)
+  requiresAddressApproval  Boolean       @default(false)
+  requiresRfqApprovalAbove Decimal?      @db.Decimal(12, 2)
+  tags                     Json          @default("[]") // string[]
+  createdAt                DateTime      @default(now())
+  updatedAt                DateTime      @updatedAt
 
-  contacts    AccountContact[]
-  addresses   AccountAddress[]
-  rfqs        Rfq[]
-  savedLists  SavedList[]
-  activity    AccountActivity[]
+  contacts   AccountContact[]
+  addresses  AccountAddress[]
+  rfqs       Rfq[]
+  savedLists SavedList[]
+  activity   AccountActivity[]
 
   @@map("accounts")
 }
 
 model AccountContact {
-  id                    String      @id @default(uuid())
-  accountId             String
-  account               Account     @relation(fields: [accountId], references: [id])
-  email                 String      @unique
-  passwordHash          String?
-  ssoProvider           SsoProvider?
-  firstName             String
-  lastName              String
-  phone                 String?
-  role                  ContactRole @default(procurement)
-  isDefaultBillingContact Boolean   @default(false)
-  isActive              Boolean     @default(true)
-  lastSignInAt          DateTime?
-  failedSignInCount     Int         @default(0)
-  lockedUntil           DateTime?
-  createdAt             DateTime    @default(now())
-  updatedAt             DateTime    @updatedAt
+  id                      String       @id @default(uuid())
+  accountId               String
+  account                 Account      @relation(fields: [accountId], references: [id])
+  email                   String       @unique
+  passwordHash            String?
+  ssoProvider             SsoProvider?
+  firstName               String
+  lastName                String
+  phone                   String?
+  role                    ContactRole  @default(procurement)
+  isDefaultBillingContact Boolean      @default(false)
+  isActive                Boolean      @default(true)
+  lastSignInAt            DateTime?
+  failedSignInCount       Int          @default(0)
+  lockedUntil             DateTime?
+  createdAt               DateTime     @default(now())
+  updatedAt               DateTime     @updatedAt
 
   passwordResetTokens PasswordResetToken[]
-  submittedRfqs       Rfq[]               @relation("SubmittedBy")
-  approvedAddresses   AccountAddress[]    @relation("ApprovedBy")
+  submittedRfqs       Rfq[]                @relation("SubmittedBy")
+  approvedAddresses   AccountAddress[]     @relation("ApprovedBy")
   savedListOwner      SavedList[]
   savedListComments   SavedListComment[]
   notifications       Notification[]
@@ -318,50 +318,50 @@ model AccountContact {
 }
 
 model AccountAddress {
-  id              String      @id @default(uuid())
-  accountId       String
-  account         Account     @relation(fields: [accountId], references: [id])
-  kind            AddressKind @default(ship_to)
-  isDefaultShip   Boolean     @default(false)
-  isDefaultBill   Boolean     @default(false)
-  label           String
-  attention       String?
-  lines           Json        @default("[]") // string[]
-  city            String
-  region          String?
-  postalCode      String?
-  countryCode     String
-  phone           String?
-  email           String?
-  deliveryNotes   String?
-  taxIdOverride   String?
-  approvedAt      DateTime?
-  approvedById    String?
-  approvedBy      AccountContact? @relation("ApprovedBy", fields: [approvedById], references: [id])
-  createdAt       DateTime    @default(now())
-  updatedAt       DateTime    @updatedAt
+  id            String          @id @default(uuid())
+  accountId     String
+  account       Account         @relation(fields: [accountId], references: [id])
+  kind          AddressKind     @default(ship_to)
+  isDefaultShip Boolean         @default(false)
+  isDefaultBill Boolean         @default(false)
+  label         String
+  attention     String?
+  lines         Json            @default("[]") // string[]
+  city          String
+  region        String?
+  postalCode    String?
+  countryCode   String
+  phone         String?
+  email         String?
+  deliveryNotes String?
+  taxIdOverride String?
+  approvedAt    DateTime?
+  approvedById  String?
+  approvedBy    AccountContact? @relation("ApprovedBy", fields: [approvedById], references: [id])
+  createdAt     DateTime        @default(now())
+  updatedAt     DateTime        @updatedAt
 
-  rfqsShipTo  Rfq[] @relation("ShipToAddress")
-  rfqsBillTo  Rfq[] @relation("BillToAddress")
+  rfqsShipTo Rfq[] @relation("ShipToAddress")
+  rfqsBillTo Rfq[] @relation("BillToAddress")
 
   @@index([accountId])
   @@map("account_addresses")
 }
 
 model StaffUser {
-  id          String    @id @default(uuid())
-  email       String    @unique
-  name        String
+  id           String    @id @default(uuid())
+  email        String    @unique
+  name         String
   passwordHash String?
-  role        StaffRole @default(sales_rep)
-  permissions Json      @default("{}") // fine-grained overrides
-  isActive    Boolean   @default(true)
-  createdAt   DateTime  @default(now())
-  updatedAt   DateTime  @updatedAt
+  role         StaffRole @default(sales_rep)
+  permissions  Json      @default("{}") // fine-grained overrides
+  isActive     Boolean   @default(true)
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
 
   assignedAccounts Account[]
-  assignedRfqs     Rfq[]     @relation("AssignedEngineer")
-  repRfqs          Rfq[]     @relation("AssignedRep")
+  assignedRfqs     Rfq[]             @relation("AssignedEngineer")
+  repRfqs          Rfq[]             @relation("AssignedRep")
   mediaUploads     Media[]
   importJobs       ImportJob[]
   notifications    Notification[]
@@ -378,7 +378,7 @@ model AccountActivity {
   actorType  ActivityActorType
   actorId    String
   staffActor StaffUser?        @relation(fields: [actorId], references: [id], map: "activity_staff_fk")
-  verb       String            // submitted_rfq, updated_credit_limit, commented, tier_upgraded
+  verb       String // submitted_rfq, updated_credit_limit, commented, tier_upgraded
   payload    Json              @default("{}")
   createdAt  DateTime          @default(now())
 
@@ -409,47 +409,47 @@ model Category {
 
   // SEO OS — inline overrides (see packages/domain/src/seo/metadata.ts)
   canonicalUrl       String?
-  robotsIndex        Boolean      @default(true)
-  robotsFollow       Boolean      @default(true)
+  robotsIndex        Boolean     @default(true)
+  robotsFollow       Boolean     @default(true)
   ogImageMediaId     String?
   focusKeyword       String?
-  sitemapPriority    Decimal?     @db.Decimal(2, 1)
+  sitemapPriority    Decimal?    @db.Decimal(2, 1)
   sitemapChangeFreq  ChangeFreq?
-  excludeFromSitemap Boolean      @default(false)
+  excludeFromSitemap Boolean     @default(false)
   jsonLdOverride     Json?
   seoUpdatedAt       DateTime?
   seoUpdatedById     String?
 
-  products      Product[]
-  navMenuItems  NavMenuItem[]
+  products     Product[]
+  navMenuItems NavMenuItem[]
 
   @@map("categories")
 }
 
 model Brand {
-  id                    String   @id @default(uuid())
-  slug                  String   @unique
-  name                  String
-  country               String?
-  description           String?
-  logoId                String?
-  logo                  Media?   @relation("BrandLogo", fields: [logoId], references: [id])
-  heroId                String?
-  hero                  Media?   @relation("BrandHero", fields: [heroId], references: [id])
+  id                      String  @id @default(uuid())
+  slug                    String  @unique
+  name                    String
+  country                 String?
+  description             String?
+  logoId                  String?
+  logo                    Media?  @relation("BrandLogo", fields: [logoId], references: [id])
+  heroId                  String?
+  hero                    Media?  @relation("BrandHero", fields: [heroId], references: [id])
   isAuthorizedDistributor Boolean @default(false)
-  seoTitle              String?
-  seoDescription        String?
-  isPublished           Boolean  @default(false)
+  seoTitle                String?
+  seoDescription          String?
+  isPublished             Boolean @default(false)
 
   // SEO OS — inline overrides
   canonicalUrl       String?
-  robotsIndex        Boolean      @default(true)
-  robotsFollow       Boolean      @default(true)
+  robotsIndex        Boolean     @default(true)
+  robotsFollow       Boolean     @default(true)
   ogImageMediaId     String?
   focusKeyword       String?
-  sitemapPriority    Decimal?     @db.Decimal(2, 1)
+  sitemapPriority    Decimal?    @db.Decimal(2, 1)
   sitemapChangeFreq  ChangeFreq?
-  excludeFromSitemap Boolean      @default(false)
+  excludeFromSitemap Boolean     @default(false)
   jsonLdOverride     Json?
   seoUpdatedAt       DateTime?
   seoUpdatedById     String?
@@ -473,13 +473,13 @@ model Industry {
 
   // SEO OS — inline overrides
   canonicalUrl       String?
-  robotsIndex        Boolean      @default(true)
-  robotsFollow       Boolean      @default(true)
+  robotsIndex        Boolean     @default(true)
+  robotsFollow       Boolean     @default(true)
   ogImageMediaId     String?
   focusKeyword       String?
-  sitemapPriority    Decimal?     @db.Decimal(2, 1)
+  sitemapPriority    Decimal?    @db.Decimal(2, 1)
   sitemapChangeFreq  ChangeFreq?
-  excludeFromSitemap Boolean      @default(false)
+  excludeFromSitemap Boolean     @default(false)
   jsonLdOverride     Json?
   seoUpdatedAt       DateTime?
   seoUpdatedById     String?
@@ -501,16 +501,16 @@ model Product {
   brandId           String?
   brand             Brand?        @relation(fields: [brandId], references: [id])
   descriptionShort  String?
-  descriptionLong   String?       // markdown/rich text
+  descriptionLong   String? // markdown/rich text
   listPrice         Decimal?      @db.Decimal(12, 2)
   listPriceCurrency Currency      @default(USD)
   unitOfMeasure     UnitOfMeasure @default(each)
   weightKg          Decimal?      @db.Decimal(8, 3)
-  dimensionsMm      Json?         // {l, w, h}
+  dimensionsMm      Json? // {l, w, h}
   leadTimeDays      Int?
   warrantyMonths    Int?
   stockQty          Int           @default(0) // Aggregate stock across all warehouses; 0 = out of stock / lead-time-only
-  stockWarehouse    String?       // Free-text warehouse identifier for the storefront pill (e.g. "Mumbai")
+  stockWarehouse    String? // Free-text warehouse identifier for the storefront pill (e.g. "Mumbai")
   countryOfOrigin   String?
   hsCode            String?
   status            ProductStatus @default(draft)
@@ -526,13 +526,13 @@ model Product {
 
   // SEO OS — inline overrides
   canonicalUrl       String?
-  robotsIndex        Boolean      @default(true)
-  robotsFollow       Boolean      @default(true)
+  robotsIndex        Boolean                  @default(true)
+  robotsFollow       Boolean                  @default(true)
   ogImageMediaId     String?
   focusKeyword       String?
-  sitemapPriority    Decimal?     @db.Decimal(2, 1)
+  sitemapPriority    Decimal?                 @db.Decimal(2, 1)
   sitemapChangeFreq  ChangeFreq?
-  excludeFromSitemap Boolean      @default(false)
+  excludeFromSitemap Boolean                  @default(false)
   jsonLdOverride     Json?
   seoUpdatedAt       DateTime?
   seoUpdatedById     String?
@@ -572,7 +572,7 @@ model ProductSpec {
   id              String             @id @default(uuid())
   productId       String
   product         Product            @relation(fields: [productId], references: [id], onDelete: Cascade)
-  group           String             // "Hydraulic performance", "Mechanical", "Fluids", "Commercial"
+  group           String // "Hydraulic performance", "Mechanical", "Fluids", "Commercial"
   label           String
   value           String
   unit            String?
@@ -611,16 +611,16 @@ model SpecTemplateField {
   id           String        @id @default(uuid())
   templateId   String
   template     SpecTemplate  @relation(fields: [templateId], references: [id], onDelete: Cascade)
-  key          String        // immutable machine name once any ProductSpec references it
+  key          String // immutable machine name once any ProductSpec references it
   label        String
   unit         String?
   dataType     SpecFieldType @default(text)
-  options      Json?         // for dataType=select: ["A","B","C"]
+  options      Json? // for dataType=select: ["A","B","C"]
   helpText     String?
   isRequired   Boolean       @default(false)
   isKeyFeature Boolean       @default(false)
   isQuickSpec  Boolean       @default(false)
-  group        String?       // grouping for the tech-specs tab
+  group        String? // grouping for the tech-specs tab
   position     Int           @default(0)
   productSpecs ProductSpec[]
 
@@ -653,12 +653,12 @@ model ProductDocument {
 }
 
 model ProductCrossReference {
-  id               String                @id @default(uuid())
-  productId        String
-  product          Product               @relation(fields: [productId], references: [id], onDelete: Cascade)
-  competitorBrand  String
-  competitorMpn    String
-  compatibility    CrossRefCompatibility @default(direct)
+  id              String                @id @default(uuid())
+  productId       String
+  product         Product               @relation(fields: [productId], references: [id], onDelete: Cascade)
+  competitorBrand String
+  competitorMpn   String
+  compatibility   CrossRefCompatibility @default(direct)
 
   @@index([productId])
   @@map("product_cross_references")
@@ -680,11 +680,11 @@ model ProductFaq {
 }
 
 model Media {
-  id               String    @id @default(uuid())
+  id               String     @id @default(uuid())
   kind             MediaKind
   mimeType         String
   originalFilename String
-  storagePath      String    // S3/R2 key
+  storagePath      String // S3/R2 key
   bytes            Int
   width            Int?
   height           Int?
@@ -692,20 +692,20 @@ model Media {
   caption          String?
   uploadedById     String?
   uploadedBy       StaffUser? @relation(fields: [uploadedById], references: [id])
-  createdAt        DateTime  @default(now())
+  createdAt        DateTime   @default(now())
 
-  productImages     ProductImage[]
-  productDocuments  ProductDocument[]
-  categoryImages    Category[]
-  brandLogos        Brand[]    @relation("BrandLogo")
-  brandHeroes       Brand[]    @relation("BrandHero")
-  industryHeroes    Industry[]
-  rfqAttachments    RfqAttachment[]
-  quotePdfs         Quote[]
-  blogHeroes        BlogPost[]
-  importJobSources  ImportJob[]
-  navMenuItemPromos NavMenuItem[] @relation("NavMenuItemPromo")
-  storeSettingsLogos StoreSettings[] @relation("StoreSettingsLogo")
+  productImages      ProductImage[]
+  productDocuments   ProductDocument[]
+  categoryImages     Category[]
+  brandLogos         Brand[]           @relation("BrandLogo")
+  brandHeroes        Brand[]           @relation("BrandHero")
+  industryHeroes     Industry[]
+  rfqAttachments     RfqAttachment[]
+  quotePdfs          Quote[]
+  blogHeroes         BlogPost[]
+  importJobSources   ImportJob[]
+  navMenuItemPromos  NavMenuItem[]     @relation("NavMenuItemPromo")
+  storeSettingsLogos StoreSettings[]   @relation("StoreSettingsLogo")
 
   @@map("media")
 }
@@ -715,40 +715,41 @@ model Media {
 // ─────────────────────────────────────────────────────────────────────────────
 
 model Rfq {
-  id                    String     @id @default(uuid())
-  code                  String     @unique // RFQ-2026-0418
+  id                    String          @id @default(uuid())
+  code                  String          @unique // RFQ-2026-0418
   accountId             String
-  account               Account    @relation(fields: [accountId], references: [id])
+  account               Account         @relation(fields: [accountId], references: [id])
   submittedByContactId  String?
   submittedBy           AccountContact? @relation("SubmittedBy", fields: [submittedByContactId], references: [id])
   subject               String?
   applicationContext    String?
-  urgency               RfqUrgency @default(routine)
+  urgency               RfqUrgency      @default(routine)
   requestedDeliveryDate DateTime?
   shipToAddressId       String?
   shipToAddress         AccountAddress? @relation("ShipToAddress", fields: [shipToAddressId], references: [id])
   billToAddressId       String?
   billToAddress         AccountAddress? @relation("BillToAddress", fields: [billToAddressId], references: [id])
   incoterm              String?
-  currency              Currency   @default(USD)
-  status                RfqStatus  @default(draft)
+  currency              Currency        @default(USD)
+  status                RfqStatus       @default(draft)
   assignedEngineerId    String?
-  assignedEngineer      StaffUser? @relation("AssignedEngineer", fields: [assignedEngineerId], references: [id])
+  assignedEngineer      StaffUser?      @relation("AssignedEngineer", fields: [assignedEngineerId], references: [id])
   assignedRepId         String?
-  assignedRep           StaffUser? @relation("AssignedRep", fields: [assignedRepId], references: [id])
+  assignedRep           StaffUser?      @relation("AssignedRep", fields: [assignedRepId], references: [id])
   internalNotes         String?
   customerMessage       String?
   submittedAt           DateTime?
   quoteSentAt           DateTime?
   acceptedAt            DateTime?
   quoteExpiresAt        DateTime?
-  createdAt             DateTime   @default(now())
-  updatedAt             DateTime   @updatedAt
+  createdAt             DateTime        @default(now())
+  updatedAt             DateTime        @updatedAt
 
   lines       RfqLine[]
   attachments RfqAttachment[]
   quotes      Quote[]
   orders      Order[]
+  sentEmails  SentEmail[]
 
   @@index([accountId, status, submittedAt])
   @@index([status])
@@ -756,19 +757,19 @@ model Rfq {
 }
 
 model RfqLine {
-  id                  String   @id @default(uuid())
-  rfqId               String
-  rfq                 Rfq      @relation(fields: [rfqId], references: [id], onDelete: Cascade)
-  productId           String
-  product             Product  @relation(fields: [productId], references: [id])
-  requestedQty        Int
-  customerTargetPrice Decimal? @db.Decimal(12, 2)
-  shipFromWarehouse   String?  // free-text (e.g. "Mumbai", "Dubai") — no warehouse entity in scope
-  engineerUnitPrice   Decimal? @db.Decimal(12, 2)
+  id                   String   @id @default(uuid())
+  rfqId                String
+  rfq                  Rfq      @relation(fields: [rfqId], references: [id], onDelete: Cascade)
+  productId            String
+  product              Product  @relation(fields: [productId], references: [id])
+  requestedQty         Int
+  customerTargetPrice  Decimal? @db.Decimal(12, 2)
+  shipFromWarehouse    String? // free-text (e.g. "Mumbai", "Dubai") — no warehouse entity in scope
+  engineerUnitPrice    Decimal? @db.Decimal(12, 2)
   engineerLeadTimeDays Int?
-  appliedRuleIds      Json?    @default("[]") // future: pricing rule references
-  engineerNotes       String?
-  position            Int      @default(0)
+  appliedRuleIds       Json?    @default("[]") // future: pricing rule references
+  engineerNotes        String?
+  position             Int      @default(0)
 
   orderLines OrderLine[]
 
@@ -777,40 +778,41 @@ model RfqLine {
 }
 
 model RfqAttachment {
-  id              String         @id @default(uuid())
-  rfqId           String
-  rfq             Rfq            @relation(fields: [rfqId], references: [id], onDelete: Cascade)
-  mediaId         String
-  media           Media          @relation(fields: [mediaId], references: [id])
-  uploaderType    String?        // "contact" | "staff"
-  uploaderId      String?
-  createdAt       DateTime       @default(now())
+  id           String   @id @default(uuid())
+  rfqId        String
+  rfq          Rfq      @relation(fields: [rfqId], references: [id], onDelete: Cascade)
+  mediaId      String
+  media        Media    @relation(fields: [mediaId], references: [id])
+  uploaderType String? // "contact" | "staff"
+  uploaderId   String?
+  createdAt    DateTime @default(now())
 
   @@map("rfq_attachments")
 }
 
 model Quote {
-  id              String    @id @default(uuid())
-  code            String    @unique // Q-2026-0418
-  rfqId           String
-  rfq             Rfq       @relation(fields: [rfqId], references: [id])
-  revision        Int       @default(1)
-  subtotal        Decimal   @db.Decimal(12, 2)
-  discountTotal   Decimal   @default(0) @db.Decimal(12, 2)
-  shipping        Decimal   @default(0) @db.Decimal(12, 2)
-  tax             Decimal   @default(0) @db.Decimal(12, 2)
-  total           Decimal   @db.Decimal(12, 2)
-  currency        Currency  @default(USD)
-  termsPayment    String    @default("Net 30")
-  termsValidityDays Int     @default(30)
-  pdfMediaId      String?
-  pdfMedia        Media?    @relation(fields: [pdfMediaId], references: [id])
-  sentAt          DateTime?
-  expiresAt       DateTime?
-  acceptedAt      DateTime?
-  declinedAt      DateTime?
+  id                String    @id @default(uuid())
+  code              String    @unique // Q-2026-0418
+  rfqId             String
+  rfq               Rfq       @relation(fields: [rfqId], references: [id])
+  revision          Int       @default(1)
+  subtotal          Decimal   @db.Decimal(12, 2)
+  discountTotal     Decimal   @default(0) @db.Decimal(12, 2)
+  shipping          Decimal   @default(0) @db.Decimal(12, 2)
+  tax               Decimal   @default(0) @db.Decimal(12, 2)
+  total             Decimal   @db.Decimal(12, 2)
+  currency          Currency  @default(USD)
+  termsPayment      String    @default("Net 30")
+  termsValidityDays Int       @default(30)
+  pdfMediaId        String?
+  pdfMedia          Media?    @relation(fields: [pdfMediaId], references: [id])
+  sentAt            DateTime?
+  expiresAt         DateTime?
+  acceptedAt        DateTime?
+  declinedAt        DateTime?
 
-  orders Order[]
+  orders     Order[]
+  sentEmails SentEmail[]
 
   @@index([rfqId])
   @@map("quotes")
@@ -857,14 +859,14 @@ model OrderLine {
 }
 
 model OrderShipment {
-  id            String    @id @default(uuid())
-  orderId       String
-  order         Order     @relation(fields: [orderId], references: [id], onDelete: Cascade)
-  fromWarehouse String?
-  carrier       String?
+  id             String    @id @default(uuid())
+  orderId        String
+  order          Order     @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  fromWarehouse  String?
+  carrier        String?
   trackingNumber String?
-  dispatchedAt  DateTime?
-  deliveredAt   DateTime?
+  dispatchedAt   DateTime?
+  deliveredAt    DateTime?
 
   @@map("order_shipments")
 }
@@ -874,19 +876,19 @@ model OrderShipment {
 // ─────────────────────────────────────────────────────────────────────────────
 
 model SavedList {
-  id               String               @id @default(uuid())
+  id               String              @id @default(uuid())
   accountId        String
-  account          Account              @relation(fields: [accountId], references: [id])
+  account          Account             @relation(fields: [accountId], references: [id])
   ownerContactId   String?
-  owner            AccountContact?      @relation(fields: [ownerContactId], references: [id])
+  owner            AccountContact?     @relation(fields: [ownerContactId], references: [id])
   name             String
   description      String?
-  visibility       SavedListVisibility  @default(team)
+  visibility       SavedListVisibility @default(team)
   reorderCadence   ReorderCadence?
   nextReorderDueAt DateTime?
-  autoRfq          Boolean              @default(false)
-  createdAt        DateTime             @default(now())
-  updatedAt        DateTime             @updatedAt
+  autoRfq          Boolean             @default(false)
+  createdAt        DateTime            @default(now())
+  updatedAt        DateTime            @updatedAt
 
   items    SavedListItem[]
   comments SavedListComment[]
@@ -896,30 +898,30 @@ model SavedList {
 }
 
 model SavedListItem {
-  id            String    @id @default(uuid())
-  savedListId   String
-  savedList     SavedList @relation(fields: [savedListId], references: [id], onDelete: Cascade)
-  productId     String
-  product       Product   @relation(fields: [productId], references: [id])
-  quantity      Int       @default(1)
-  note          String?
-  isSuperseded  Boolean   @default(false)
-  deletedAt     DateTime? // soft delete — undo within 30 days
-  position      Int       @default(0)
+  id           String    @id @default(uuid())
+  savedListId  String
+  savedList    SavedList @relation(fields: [savedListId], references: [id], onDelete: Cascade)
+  productId    String
+  product      Product   @relation(fields: [productId], references: [id])
+  quantity     Int       @default(1)
+  note         String?
+  isSuperseded Boolean   @default(false)
+  deletedAt    DateTime? // soft delete — undo within 30 days
+  position     Int       @default(0)
 
   @@index([savedListId])
   @@map("saved_list_items")
 }
 
 model SavedListComment {
-  id          String         @id @default(uuid())
+  id          String          @id @default(uuid())
   savedListId String
-  savedList   SavedList      @relation(fields: [savedListId], references: [id], onDelete: Cascade)
-  actorType   String         // "contact" | "staff"
+  savedList   SavedList       @relation(fields: [savedListId], references: [id], onDelete: Cascade)
+  actorType   String // "contact" | "staff"
   contactId   String?
   contact     AccountContact? @relation(fields: [contactId], references: [id])
   body        String
-  createdAt   DateTime       @default(now())
+  createdAt   DateTime        @default(now())
 
   @@map("saved_list_comments")
 }
@@ -959,25 +961,25 @@ model Notification {
 // ─────────────────────────────────────────────────────────────────────────────
 
 model CmsPage {
-  id          String    @id @default(uuid())
-  slug        String    @unique
-  title       String
-  body        String    // rich text / HTML
-  seoTitle    String?
+  id             String    @id @default(uuid())
+  slug           String    @unique
+  title          String
+  body           String // rich text / HTML
+  seoTitle       String?
   seoDescription String?
-  isPublished Boolean   @default(false)
-  publishedAt DateTime?
-  updatedAt   DateTime  @updatedAt
+  isPublished    Boolean   @default(false)
+  publishedAt    DateTime?
+  updatedAt      DateTime  @updatedAt
 
   // SEO OS — inline overrides
   canonicalUrl       String?
-  robotsIndex        Boolean      @default(true)
-  robotsFollow       Boolean      @default(true)
+  robotsIndex        Boolean     @default(true)
+  robotsFollow       Boolean     @default(true)
   ogImageMediaId     String?
   focusKeyword       String?
-  sitemapPriority    Decimal?     @db.Decimal(2, 1)
+  sitemapPriority    Decimal?    @db.Decimal(2, 1)
   sitemapChangeFreq  ChangeFreq?
-  excludeFromSitemap Boolean      @default(false)
+  excludeFromSitemap Boolean     @default(false)
   jsonLdOverride     Json?
   seoUpdatedAt       DateTime?
   seoUpdatedById     String?
@@ -988,30 +990,30 @@ model CmsPage {
 }
 
 model BlogPost {
-  id             String    @id @default(uuid())
-  slug           String    @unique
+  id             String     @id @default(uuid())
+  slug           String     @unique
   title          String
   excerpt        String?
-  body           String    // rich text
+  body           String // rich text
   heroId         String?
-  hero           Media?    @relation(fields: [heroId], references: [id])
+  hero           Media?     @relation(fields: [heroId], references: [id])
   authorStaffId  String?
   author         StaffUser? @relation(fields: [authorStaffId], references: [id])
-  tags           Json      @default("[]") // string[]
+  tags           Json       @default("[]") // string[]
   seoTitle       String?
   seoDescription String?
   publishedAt    DateTime?
-  isPublished    Boolean   @default(false)
+  isPublished    Boolean    @default(false)
 
   // SEO OS — inline overrides
   canonicalUrl       String?
-  robotsIndex        Boolean      @default(true)
-  robotsFollow       Boolean      @default(true)
+  robotsIndex        Boolean     @default(true)
+  robotsFollow       Boolean     @default(true)
   ogImageMediaId     String?
   focusKeyword       String?
-  sitemapPriority    Decimal?     @db.Decimal(2, 1)
+  sitemapPriority    Decimal?    @db.Decimal(2, 1)
   sitemapChangeFreq  ChangeFreq?
-  excludeFromSitemap Boolean      @default(false)
+  excludeFromSitemap Boolean     @default(false)
   jsonLdOverride     Json?
   seoUpdatedAt       DateTime?
   seoUpdatedById     String?
@@ -1040,15 +1042,15 @@ model Redirect {
 // ─────────────────────────────────────────────────────────────────────────────
 
 model NavMenu {
-  id          String        @id @default(uuid())
-  slug        String        @unique
+  id          String       @id @default(uuid())
+  slug        String       @unique
   name        String
-  location    MenuLocation  @unique
+  location    MenuLocation @unique
   description String?
-  isPublished Boolean       @default(false)
+  isPublished Boolean      @default(false)
   publishedAt DateTime?
-  createdAt   DateTime      @default(now())
-  updatedAt   DateTime      @updatedAt
+  createdAt   DateTime     @default(now())
+  updatedAt   DateTime     @updatedAt
 
   items NavMenuItem[]
 
@@ -1056,60 +1058,60 @@ model NavMenu {
 }
 
 model NavMenuItem {
-  id           String        @id @default(uuid())
-  menuId       String
-  menu         NavMenu       @relation(fields: [menuId], references: [id], onDelete: Cascade)
-  parentId     String?
-  parent       NavMenuItem?  @relation("NavMenuItemTree", fields: [parentId], references: [id], onDelete: Cascade)
-  children     NavMenuItem[] @relation("NavMenuItemTree")
-  position     Int           @default(0)
+  id       String        @id @default(uuid())
+  menuId   String
+  menu     NavMenu       @relation(fields: [menuId], references: [id], onDelete: Cascade)
+  parentId String?
+  parent   NavMenuItem?  @relation("NavMenuItemTree", fields: [parentId], references: [id], onDelete: Cascade)
+  children NavMenuItem[] @relation("NavMenuItemTree")
+  position Int           @default(0)
 
-  label        String
-  iconName     String?
-  badge        String?
-  description  String?
+  label       String
+  iconName    String?
+  badge       String?
+  description String?
 
-  linkType     MenuLinkType  @default(none)
+  linkType     MenuLinkType @default(none)
   customUrl    String?
-  openInNewTab Boolean       @default(false)
+  openInNewTab Boolean      @default(false)
 
-  categoryId   String?
-  category     Category?     @relation(fields: [categoryId], references: [id], onDelete: SetNull)
-  brandId      String?
-  brand        Brand?        @relation(fields: [brandId], references: [id], onDelete: SetNull)
-  industryId   String?
-  industry     Industry?     @relation(fields: [industryId], references: [id], onDelete: SetNull)
-  cmsPageId    String?
-  cmsPage      CmsPage?      @relation(fields: [cmsPageId], references: [id], onDelete: SetNull)
-  productId    String?
-  product      Product?      @relation(fields: [productId], references: [id], onDelete: SetNull)
+  categoryId String?
+  category   Category? @relation(fields: [categoryId], references: [id], onDelete: SetNull)
+  brandId    String?
+  brand      Brand?    @relation(fields: [brandId], references: [id], onDelete: SetNull)
+  industryId String?
+  industry   Industry? @relation(fields: [industryId], references: [id], onDelete: SetNull)
+  cmsPageId  String?
+  cmsPage    CmsPage?  @relation(fields: [cmsPageId], references: [id], onDelete: SetNull)
+  productId  String?
+  product    Product?  @relation(fields: [productId], references: [id], onDelete: SetNull)
 
   promoImageId String?
-  promoImage   Media?        @relation("NavMenuItemPromo", fields: [promoImageId], references: [id], onDelete: SetNull)
+  promoImage   Media?  @relation("NavMenuItemPromo", fields: [promoImageId], references: [id], onDelete: SetNull)
   promoHeading String?
   promoBody    String?
   promoLinkUrl String?
 
-  isVisible    Boolean       @default(true)
+  isVisible Boolean @default(true)
 
-  createdAt    DateTime      @default(now())
-  updatedAt    DateTime      @updatedAt
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 
   @@index([menuId, parentId, position])
   @@map("nav_menu_items")
 }
 
 model SeoSetting {
-  id                          String   @id @default(uuid())
-  defaultMetaTitleTemplate    String?
-  defaultMetaDescription      String?
-  ogDefaultImageId            String?
-  robotsTxt                   String?
-  sitemapSettings             Json     @default("{}")
-  organizationJsonLd          Json?
-  websiteJsonLd               Json?
-  sitemapMaxUrls              Int      @default(45000)
-  robotsTxtAutoAppendSitemap  Boolean  @default(true)
+  id                         String  @id @default(uuid())
+  defaultMetaTitleTemplate   String?
+  defaultMetaDescription     String?
+  ogDefaultImageId           String?
+  robotsTxt                  String?
+  sitemapSettings            Json    @default("{}")
+  organizationJsonLd         Json?
+  websiteJsonLd              Json?
+  sitemapMaxUrls             Int     @default(45000)
+  robotsTxtAutoAppendSitemap Boolean @default(true)
 
   @@map("seo_settings")
 }
@@ -1145,15 +1147,15 @@ model ImportJob {
 }
 
 model ImportJobRow {
-  id          String           @id @default(uuid())
+  id          String            @id @default(uuid())
   importJobId String
-  importJob   ImportJob        @relation(fields: [importJobId], references: [id], onDelete: Cascade)
+  importJob   ImportJob         @relation(fields: [importJobId], references: [id], onDelete: Cascade)
   rowNumber   Int
   rawData     Json
   mappedData  Json?
   outcome     ImportRowOutcome?
   entityId    String?
-  messages    Json             @default("[]") // string[]
+  messages    Json              @default("[]") // string[]
 
   @@index([importJobId])
   @@map("import_job_rows")
@@ -1172,10 +1174,10 @@ model StoreSettings {
   defaultPaymentTerms Int      @default(30)
 
   // Brand identity (rendered in storefront header / footer)
-  tagline              String?
-  logoMediaId          String?
-  logoMedia            Media?   @relation("StoreSettingsLogo", fields: [logoMediaId], references: [id], onDelete: SetNull)
-  certificationLine    String?
+  tagline           String?
+  logoMediaId       String?
+  logoMedia         Media?  @relation("StoreSettingsLogo", fields: [logoMediaId], references: [id], onDelete: SetNull)
+  certificationLine String?
 
   // Public contact info (single location for now; multi-location is a deferred follow-up)
   contactPhone         String?
@@ -1183,9 +1185,65 @@ model StoreSettings {
   contactHours         String?
   contactLocationLabel String?
 
-  updatedAt            DateTime @updatedAt
+  // Legal entity (rendered on every quote PDF + email footer)
+  legalName              String? // "Indus Hydraulic Power Trading LLC"
+  vatTrn                 String? // "100548997400003"
+  registeredAddressLines Json?   @default("[]") // string[] of address lines
+  registeredCity         String?
+  registeredCountry      String?
+  registeredPoBox        String?
+  registeredCountryCode  String? // ISO-3166 alpha-2 (e.g. "AE") — drives VAT logic
+
+  // Quote signature block (e.g. "Krishan Bhatia / Managing Director / +971 …")
+  signatureName  String?
+  signatureTitle String?
+  signaturePhone String?
+  signatureEmail String?
+
+  // Outbound email config
+  quoteFromEmail      String? // e.g. "sales@indushydraulics.me" — used as From + Reply-To
+  quoteFromName       String? // friendly display name shown in inbox
+  internalAlertEmails Json?   @default("[]") // string[] — recipients of new-RFQ alert
+
+  // Quote defaults (engineer can override per quote)
+  defaultVatRatePct        Decimal? @db.Decimal(5, 2) // e.g. 5.00 for UAE; nullable = use country rule
+  defaultQuoteValidityDays Int      @default(30)
+  defaultQuoteNotes        String?
+  defaultQuoteTerms        String?
+  defaultQuoteDisclaimer   String?
+
+  updatedAt DateTime @updatedAt
 
   @@map("store_settings")
+}
+
+// Audit log of every transactional email sent. Used for support, debugging,
+// and re-sending. Body stored verbatim so we can show the customer exactly
+// what they received.
+model SentEmail {
+  id          String    @id @default(uuid())
+  kind        String // rfq_confirmation | rfq_internal_alert | quote_sent | quote_accepted_ack | …
+  toEmails    Json // string[]
+  ccEmails    Json? // string[]
+  bccEmails   Json? // string[]
+  fromEmail   String
+  replyTo     String?
+  subject     String
+  bodyHtml    String
+  providerId  String? // Resend message id (when sent successfully)
+  status      String // queued | sent | failed | sandboxed
+  error       String?
+  rfqId       String?
+  rfq         Rfq?      @relation(fields: [rfqId], references: [id], onDelete: SetNull)
+  quoteId     String?
+  quote       Quote?    @relation(fields: [quoteId], references: [id], onDelete: SetNull)
+  attemptedAt DateTime  @default(now())
+  sentAt      DateTime?
+
+  @@index([kind, attemptedAt])
+  @@index([rfqId])
+  @@index([quoteId])
+  @@map("sent_emails")
 }
 
 model EmailTemplate {
@@ -1223,21 +1281,21 @@ model AiPromptTemplate {
 // Every AI generation, regardless of accept/reject. Drives the diff-and-approve
 // workflow + audits cost.
 model AiSuggestion {
-  id            String              @id @default(uuid())
+  id            String             @id @default(uuid())
   entityType    SeoEntityType
   entityId      String
-  field         String              // e.g. "metaTitle", "metaDescription", "altText:<imageId>"
+  field         String // e.g. "metaTitle", "metaDescription", "altText:<imageId>"
   templateId    String?
   model         String
   inputContext  Json
   output        String
-  status        AiSuggestionStatus  @default(pending)
-  costUsdMicros Int                 @default(0)
+  status        AiSuggestionStatus @default(pending)
+  costUsdMicros Int                @default(0)
   cacheHitRatio Float?
   inputTokens   Int?
   outputTokens  Int?
   createdById   String?
-  createdAt     DateTime            @default(now())
+  createdAt     DateTime           @default(now())
   reviewedAt    DateTime?
 
   @@index([entityType, entityId, field, createdAt])
@@ -1259,8 +1317,8 @@ model SeoHealthScore {
   id         String        @id @default(uuid())
   entityType SeoEntityType
   entityId   String
-  score      Int           // 0..100
-  breakdown  Json          // {checkId: {pass, weight, message}}
+  score      Int // 0..100
+  breakdown  Json // {checkId: {pass, weight, message}}
   computedAt DateTime      @default(now())
 
   @@unique([entityType, entityId])
@@ -1318,7 +1376,7 @@ model SearchQueryLog {
 // Audit trail for SEO writes — supports the revert UI.
 model SeoAuditLog {
   id         String   @id @default(uuid())
-  entityType String   // includes "global:robots", "global:sitemap"
+  entityType String // includes "global:robots", "global:sitemap"
   entityId   String?
   field      String
   before     Json?
@@ -1332,13 +1390,13 @@ model SeoAuditLog {
 }
 
 model NotFoundLog {
-  id                 String    @id @default(uuid())
-  path               String    @unique
+  id                 String   @id @default(uuid())
+  path               String   @unique
   referer            String?
   userAgent          String?
-  hits               Int       @default(1)
-  firstSeenAt        DateTime  @default(now())
-  lastSeenAt         DateTime  @default(now())
+  hits               Int      @default(1)
+  firstSeenAt        DateTime @default(now())
+  lastSeenAt         DateTime @default(now())
   resolvedRedirectId String?
 
   @@index([hits])
@@ -1350,7 +1408,7 @@ model GscMetricDaily {
   id          String   @id @default(uuid())
   url         String
   date        DateTime @db.Date
-  query       String?  // null row = page-level totals
+  query       String? // null row = page-level totals
   clicks      Int      @default(0)
   impressions Int      @default(0)
   ctr         Float    @default(0)
@@ -1390,7 +1448,7 @@ model CrawlEdge {
 model CrawlFinding {
   id     String   @id @default(uuid())
   runId  String
-  kind   String   // orphan | broken | redirect_chain | deep | dup_canonical
+  kind   String // orphan | broken | redirect_chain | deep | dup_canonical
   url    String
   detail Json
   run    CrawlRun @relation(fields: [runId], references: [id], onDelete: Cascade)
