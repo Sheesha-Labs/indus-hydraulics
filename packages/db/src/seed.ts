@@ -588,7 +588,198 @@ async function main() {
   }
 
   console.log('  ✓ Store settings')
+
+  // ── Navigation menus ────────────────────────────────────────────────────────
+  await seedNavigationMenus()
+  console.log('  ✓ Navigation menus')
+
   console.log('\n✅ Seed complete.')
+}
+
+async function seedNavigationMenus() {
+  const headerMenu = await db.navMenu.upsert({
+    where: { location: 'primary_header' },
+    create: {
+      slug: 'primary-header',
+      name: 'Primary header',
+      location: 'primary_header',
+      isPublished: true,
+      publishedAt: new Date(),
+    },
+    update: {},
+  })
+  const megamenu = await db.navMenu.upsert({
+    where: { location: 'primary_megamenu' },
+    create: {
+      slug: 'primary-megamenu',
+      name: 'Megamenu (Products)',
+      location: 'primary_megamenu',
+      isPublished: true,
+      publishedAt: new Date(),
+    },
+    update: {},
+  })
+  await db.navMenu.upsert({
+    where: { location: 'footer_main' },
+    create: { slug: 'footer-main', name: 'Footer — main', location: 'footer_main', isPublished: false },
+    update: {},
+  })
+  await db.navMenu.upsert({
+    where: { location: 'mobile_drawer' },
+    create: { slug: 'mobile-drawer', name: 'Mobile drawer', location: 'mobile_drawer', isPublished: false },
+    update: {},
+  })
+
+  // Idempotent: only seed items when the menu is empty.
+  const headerCount = await db.navMenuItem.count({ where: { menuId: headerMenu.id } })
+  if (headerCount === 0) {
+    const headerItems = [
+      { label: 'Products', customUrl: '/c' },
+      { label: 'Brands', customUrl: '/brands' },
+      { label: 'Industries', customUrl: '/industries' },
+      { label: 'About', customUrl: '/about' },
+      { label: 'Contact', customUrl: '/contact' },
+    ]
+    for (let i = 0; i < headerItems.length; i++) {
+      const it = headerItems[i]!
+      await db.navMenuItem.create({
+        data: {
+          menuId: headerMenu.id,
+          parentId: null,
+          position: i,
+          label: it.label,
+          linkType: 'custom_url',
+          customUrl: it.customUrl,
+        },
+      })
+    }
+  }
+
+  const megamenuCount = await db.navMenuItem.count({ where: { menuId: megamenu.id } })
+  if (megamenuCount === 0) {
+    const TAXONOMY: Array<{
+      slug: string
+      name: string
+      categorySlug: string | null
+      subs: Array<{ id: string; name: string; leaves: string[] }>
+    }> = [
+      {
+        slug: 'hydraulic-pumps',
+        name: 'Hydraulic Pumps',
+        categorySlug: 'hydraulic-pumps',
+        subs: [
+          { id: 'gear', name: 'Gear Pumps', leaves: ['External Gear', 'Internal Gear', 'Gerotor', 'Twin-Flow'] },
+          { id: 'vane', name: 'Vane Pumps', leaves: ['Fixed Displacement', 'Variable Displacement', 'Cartridge Type'] },
+          { id: 'piston', name: 'Piston Pumps', leaves: ['Axial Piston', 'Radial Piston', 'Bent Axis', 'Swashplate Variable'] },
+          { id: 'hand', name: 'Hand & Foot Pumps', leaves: ['Single-Acting', 'Double-Acting', 'Air-Driven'] },
+          { id: 'power', name: 'Power Packs', leaves: ['Mini Power Packs', 'AC Power Units', 'DC Power Units', '3-Phase'] },
+        ],
+      },
+      {
+        slug: 'hydraulic-cylinders',
+        name: 'Hydraulic Cylinders',
+        categorySlug: 'cylinders',
+        subs: [
+          { id: 'tie-rod', name: 'Tie-Rod Cylinders', leaves: ['NFPA Standard', 'ISO 6020', 'ISO 6022', 'Mill-Type'] },
+          { id: 'welded', name: 'Welded Cylinders', leaves: ['Cross-Tube Mount', 'Clevis Mount', 'Trunnion Mount'] },
+          { id: 'telescopic', name: 'Telescopic Cylinders', leaves: ['Single-Acting', 'Double-Acting', 'Tipper Trailer'] },
+          { id: 'compact', name: 'Compact & Block', leaves: ['Block Cylinders', 'Pancake', 'Hollow Plunger'] },
+          { id: 'custom', name: 'Custom Builds', leaves: ['Made-to-Order', 'Repair & Reseal', 'Plating Service'] },
+        ],
+      },
+      {
+        slug: 'valves-manifolds',
+        name: 'Valves & Manifolds',
+        categorySlug: 'valves-manifolds',
+        subs: [
+          { id: 'directional', name: 'Directional Control', leaves: ['Solenoid Operated', 'Manual Lever', 'Pilot Operated', 'Cetop 3 / NG6', 'Cetop 5 / NG10'] },
+          { id: 'pressure', name: 'Pressure Control', leaves: ['Relief', 'Reducing', 'Sequence', 'Counterbalance'] },
+          { id: 'flow', name: 'Flow Control', leaves: ['Throttle', 'Pressure Compensated', 'Proportional'] },
+          { id: 'check', name: 'Check & Logic', leaves: ['Inline Check', 'Pilot Check', 'Logic Elements'] },
+          { id: 'manifolds', name: 'Manifolds', leaves: ['Standard Bar', 'Custom Block', 'Subplates'] },
+        ],
+      },
+      {
+        slug: 'hoses-fittings',
+        name: 'Hoses & Fittings',
+        categorySlug: 'hoses-fittings',
+        subs: [
+          { id: 'hose', name: 'Hydraulic Hose', leaves: ['1-Wire Braid', '2-Wire Braid', '4-Spiral', '6-Spiral', 'Thermoplastic'] },
+          { id: 'fittings', name: 'Hose Fittings', leaves: ['BSP', 'JIC 37°', 'ORFS', 'Metric DIN', 'NPT'] },
+          { id: 'adapters', name: 'Adapters', leaves: ['Straight', 'Elbow 45°', 'Elbow 90°', 'Tee', 'Cross'] },
+          { id: 'couplers', name: 'Quick Couplers', leaves: ['ISO 7241-A', 'ISO 7241-B', 'Flat Face', 'Screw-to-Connect'] },
+        ],
+      },
+      {
+        slug: 'seals-components',
+        name: 'Seals & Components',
+        categorySlug: 'seals-accessories',
+        subs: [
+          { id: 'rod-seals', name: 'Rod Seals', leaves: ['U-Cup', 'Step Seal', 'Stepped Cap', 'Buffer Seal'] },
+          { id: 'piston-seals', name: 'Piston Seals', leaves: ['Twin-Lip', 'Glyd Ring', 'Compact'] },
+          { id: 'wipers', name: 'Wipers & Scrapers', leaves: ['Single-Lip', 'Double-Lip', 'Metallic'] },
+          { id: 'orings', name: 'O-Rings & Back-up', leaves: ['NBR', 'FKM (Viton)', 'EPDM', 'PTFE Back-up'] },
+        ],
+      },
+      {
+        slug: 'accessories-instrumentation',
+        name: 'Accessories & Instrumentation',
+        categorySlug: null,
+        subs: [
+          { id: 'filters', name: 'Filters', leaves: ['Suction', 'Pressure-Line', 'Return-Line', 'Tank Breather'] },
+          { id: 'gauges', name: 'Gauges & Sensors', leaves: ['Bourdon Gauge', 'Glycerin-Filled', 'Digital', 'Pressure Transducer'] },
+          { id: 'accumulators', name: 'Accumulators', leaves: ['Bladder', 'Diaphragm', 'Piston'] },
+          { id: 'coolers', name: 'Coolers', leaves: ['Air-Oil', 'Water-Oil', 'With Bypass'] },
+          { id: 'reservoirs', name: 'Reservoirs', leaves: ['Steel Tanks', 'Aluminum', 'Custom Fab'] },
+        ],
+      },
+    ]
+
+    const allCategories = await db.category.findMany({ select: { id: true, slug: true } })
+    const categoryBySlug = new Map(allCategories.map((c) => [c.slug, c.id]))
+
+    for (let colIdx = 0; colIdx < TAXONOMY.length; colIdx++) {
+      const col = TAXONOMY[colIdx]!
+      const categoryId = col.categorySlug ? categoryBySlug.get(col.categorySlug) ?? null : null
+      const colItem = await db.navMenuItem.create({
+        data: {
+          menuId: megamenu.id,
+          parentId: null,
+          position: colIdx,
+          label: col.name,
+          linkType: categoryId ? 'category' : 'custom_url',
+          categoryId,
+          customUrl: categoryId ? null : `/c/${col.slug}`,
+        },
+      })
+      for (let subIdx = 0; subIdx < col.subs.length; subIdx++) {
+        const sub = col.subs[subIdx]!
+        const subItem = await db.navMenuItem.create({
+          data: {
+            menuId: megamenu.id,
+            parentId: colItem.id,
+            position: subIdx,
+            label: sub.name,
+            linkType: 'custom_url',
+            customUrl: `/c/${col.slug}?sub=${sub.id}`,
+          },
+        })
+        for (let leafIdx = 0; leafIdx < sub.leaves.length; leafIdx++) {
+          const leaf = sub.leaves[leafIdx]!
+          await db.navMenuItem.create({
+            data: {
+              menuId: megamenu.id,
+              parentId: subItem.id,
+              position: leafIdx,
+              label: leaf,
+              linkType: 'custom_url',
+              customUrl: `/c/${col.slug}?sub=${sub.id}&type=${encodeURIComponent(leaf)}`,
+            },
+          })
+        }
+      }
+    }
+  }
 }
 
 main()
