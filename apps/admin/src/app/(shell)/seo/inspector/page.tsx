@@ -181,9 +181,23 @@ export default async function SeoInspectorPage({
                     </span>
                   </td>
                   <td className="px-3 py-2 max-w-[280px]">
-                    <div className="truncate text-[var(--color-body)]" title={row.seoTitle ?? row.title}>
-                      {row.seoTitle ?? row.title}
-                    </div>
+                    {(() => {
+                      const editPath = editPathFor(row.entityType, row.entityId)
+                      const titleText = row.seoTitle ?? row.title
+                      return editPath ? (
+                        <Link
+                          href={editPath}
+                          className="truncate block text-[var(--color-body)] hover:text-[var(--color-accent)]"
+                          title={titleText}
+                        >
+                          {titleText}
+                        </Link>
+                      ) : (
+                        <div className="truncate text-[var(--color-body)]" title={titleText}>
+                          {titleText}
+                        </div>
+                      )
+                    })()}
                     <LengthHint
                       len={(row.seoTitle ?? row.title ?? '').length}
                       min={TITLE_RANGE.min}
@@ -543,6 +557,23 @@ function SelectFilter({
       </select>
     </div>
   )
+}
+
+/**
+ * Map an entity to the admin route that opens its SEO drawer. Returns
+ * null for entity types that don't yet have a drawer mount — those rows
+ * stay as plain text in the Inspector grid until the next PR rolls the
+ * drawer to Brand / Industry / BlogPost / CmsPage.
+ */
+function editPathFor(entityType: SeoEntityType, entityId: string): string | null {
+  switch (entityType) {
+    case 'product':
+      return `/products/${entityId}/edit?tab=seo`
+    case 'category':
+      return `/categories/${entityId}/edit`
+    default:
+      return null
+  }
 }
 
 function LengthHint({ len, min, max }: { len: number; min: number; max: number }) {

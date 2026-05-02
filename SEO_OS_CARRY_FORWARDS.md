@@ -5,67 +5,42 @@ Phase 1 foundation lands. Delete each section as it's shipped.
 
 The original plan lives at
 `/Users/ayushkbhatia/.claude/plans/ok-now-a-new-staged-clock.md`
-(plan name: "ok-now-a-new-staged-clock"). All terms below match the plan's
-section numbers.
+(plan name: "ok-now-a-new-staged-clock"). The drawer/audit PR's plan is
+at `/Users/ayushkbhatia/.claude/plans/seo-os-drawer-and-audit.md`.
 
 ---
 
-## Phase 1 — remaining MVP work (next 1–2 PRs)
+## ✅ Shipped (PR #4 — feat/seo-os-drawer)
 
-### 1. SeoEntityDrawer on Product + Category edit pages
+- SeoEntityDrawer mounted on Product + Category edit pages.
+- `withSeoAudit` transactional writer; every SEO mutation now writes audit rows.
+- Revert action wired into `/seo/audit` (Revert button per row).
+- Existing `saveSeoSettings`, `addRedirect`, `deleteRedirect` routed through `withSeoAudit`.
+- Inspector titles deep-link into the drawer for Product + Category.
 
-**Why next:** the Inspector is read-only today — admins can spot problems
-but cannot fix them inline. The drawer is the primary editing surface.
+## Phase 1 — remaining MVP work
 
-**Build:**
-- `apps/admin/src/components/seo/SeoEntityDrawer.tsx` — server component
-  rendering tabs General / Social / Schema / Sitemap / AI / Advanced,
-  reusing `CharCounter`, `SerpPreview`, `OgPreview`, `JsonLdPreview`,
-  `SeoHealthBadge` from `@indus/ui`.
-- `apps/admin/src/app/(shell)/products/[id]/edit/seo/actions.ts` —
-  `updateProductSeo({ productId, ...seoFields })`. Wraps `withSeoAudit`
-  (see #2). Uses `requireRole(..., ROLES.SEO_WRITE)`.
-- Mirror for Category.
-- Mount the drawer as a tab inside the existing edit pages
-  (`apps/admin/src/app/(shell)/products/[id]/edit/page.tsx`,
-  `.../categories/[id]/edit/page.tsx`).
-- Roll the same drawer to Brand, Industry, BlogPost, CmsPage in a Phase 2
-  PR.
+### 1. SeoEntityDrawer on Brand, Industry, BlogPost, CmsPage
 
-**Acceptance:**
-- Save updates `seoTitle`, `seoDescription`, `canonicalUrl`, `robotsIndex`,
-  `robotsFollow`, `ogImageMediaId`, `focusKeyword`, `sitemapPriority`,
-  `sitemapChangeFreq`, `excludeFromSitemap`, `seoUpdatedAt`,
-  `seoUpdatedById` on the entity.
-- The Inspector grid reflects the change after refresh.
-- An audit row is written.
+**Why next:** the drawer pattern works for Product/Category — rolling it
+to the remaining 4 entity types is mechanical now and unblocks editing
+SEO across the whole catalogue.
 
-### 2. `withSeoAudit` writer + revert wired to /seo/audit
-
-**Why next:** the audit log viewer is in place but the writer that feeds
-it doesn't exist yet, so the page is permanently empty.
-
-**Build:**
-- `apps/admin/src/lib/seo-audit.ts` — `withSeoAudit(entityType, entityId,
-  before, after, actorId, fn)` that runs `fn` inside a Prisma transaction
-  and writes one `SeoAuditLog` row per changed field via
-  `diffSnapshots` + `projectSeoFields` from `@indus/domain`.
-- `apps/admin/src/app/(shell)/seo/audit/actions.ts` —
-  `revertChange(auditLogId): Result<void>`. Reads the row, applies
-  `before` to the named field, writes a new audit row with
-  `reason: 'reverted'`.
-- Add Revert button to each row in `audit/page.tsx`.
-- Hook every existing SEO server action to `withSeoAudit`:
-  - `seo/actions.ts → saveSeoSettings` (entityType `global:seo_setting`).
-  - `seo/actions.ts → addRedirect / deleteRedirect`
-    (entityType `redirect`).
-  - The drawer save actions from #1.
+**Build (per entity type):**
+- New `apps/admin/src/app/(shell)/<entity>/[id]/edit/{page,actions,EditorClient}.tsx`
+  mirroring the category editor's pattern, OR mount the drawer as a tab
+  inside the existing edit screen if one exists.
+- New action `update<Entity>Seo` wrapping `withSeoAudit` (entityType =
+  'brand' | 'industry' | 'blog_post' | 'cms_page').
+- Add the entity to `editPathFor` in
+  `apps/admin/src/app/(shell)/seo/inspector/page.tsx`.
 
 **Acceptance:**
-- Change a product's `seoTitle` → audit log shows one row with the diff.
-- Click Revert → field returns to previous value, second row appended.
+- Save updates the same 11 SEO fields shipped in PR #4.
+- Audit rows appear with the right `entityType`.
+- Inspector deep-links work.
 
-### 3. Postgres FTS storefront `/search` rewrite
+### 2. Postgres FTS storefront `/search` rewrite
 
 **Why next:** the schema changes (`Unsupported("tsvector")` on Product)
 and SQL migration for `pg_trgm` + GIN indexes already shipped — the
@@ -96,9 +71,9 @@ investment unrealised.
   `pg_trgm` match.
 - `SearchQueryLog` rows accumulate.
 
-### 4. Search admin pages (synonyms, redirects, boosts, analytics)
+### 3. Search admin pages (synonyms, redirects, boosts, analytics)
 
-**Why next:** without these CRUD pages the search subsystem in #3 is
+**Why next:** without these CRUD pages the search subsystem in #2 is
 inert.
 
 **Build:** four sub-pages under
