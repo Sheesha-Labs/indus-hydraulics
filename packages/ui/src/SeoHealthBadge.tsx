@@ -14,7 +14,7 @@ export interface SeoHealthBadgeProps {
 export function SeoHealthBadge({ score, className, size = 'md' }: SeoHealthBadgeProps) {
   const tone = score >= 80 ? 'good' : score >= 50 ? 'warn' : 'danger'
   return (
-    <StatusPill tone={tone} size={size} className={className}>
+    <StatusPill tone={tone} size={size} {...(className ? { className } : {})}>
       {score}
     </StatusPill>
   )
