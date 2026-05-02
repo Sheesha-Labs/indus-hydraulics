@@ -705,6 +705,7 @@ model Media {
   blogHeroes        BlogPost[]
   importJobSources  ImportJob[]
   navMenuItemPromos NavMenuItem[] @relation("NavMenuItemPromo")
+  storeSettingsLogos StoreSettings[] @relation("StoreSettingsLogo")
 
   @@map("media")
 }
@@ -1169,7 +1170,20 @@ model StoreSettings {
   defaultCurrency     Currency @default(USD)
   defaultIncoterm     String?
   defaultPaymentTerms Int      @default(30)
-  updatedAt           DateTime @updatedAt
+
+  // Brand identity (rendered in storefront header / footer)
+  tagline              String?
+  logoMediaId          String?
+  logoMedia            Media?   @relation("StoreSettingsLogo", fields: [logoMediaId], references: [id], onDelete: SetNull)
+  certificationLine    String?
+
+  // Public contact info (single location for now; multi-location is a deferred follow-up)
+  contactPhone         String?
+  contactEmail         String?
+  contactHours         String?
+  contactLocationLabel String?
+
+  updatedAt            DateTime @updatedAt
 
   @@map("store_settings")
 }

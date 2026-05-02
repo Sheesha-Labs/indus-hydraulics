@@ -8,6 +8,8 @@ import type { ResolvedNavItem } from '@indus/domain'
 interface Props {
   headerItems: ResolvedNavItem[]
   megamenuItems: ResolvedNavItem[]
+  contactPhone: string | null
+  contactHours: string | null
   isSignedIn: boolean
   userName: string | null
   notificationBell?: React.ReactNode
@@ -23,6 +25,8 @@ function isMegamenuTrigger(item: ResolvedNavItem, megamenuItems: ResolvedNavItem
 export default function SiteHeaderClient({
   headerItems,
   megamenuItems,
+  contactPhone,
+  contactHours,
   isSignedIn,
   userName,
   notificationBell,
@@ -67,8 +71,8 @@ export default function SiteHeaderClient({
       <div className="bg-[var(--color-primary)] text-[var(--color-surface)]">
         <div className="max-w-[1360px] mx-auto px-8 h-9 flex items-center justify-between font-mono text-[11px] tracking-[0.04em]">
           <div className="flex gap-6 opacity-85">
-            <span>+91 22 6614 0200</span>
-            <span>Mon–Sat 09:00–19:00 IST</span>
+            {contactPhone && <span>{contactPhone}</span>}
+            {contactHours && <span>{contactHours}</span>}
           </div>
           <div className="flex gap-4 opacity-85">
             {isSignedIn ? (

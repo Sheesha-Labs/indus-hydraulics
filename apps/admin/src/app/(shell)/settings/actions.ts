@@ -7,11 +7,34 @@ import { ROLES, requireRole } from '../../../lib/rbac'
 import { failFromError, ok, type Result } from '../../../lib/result'
 import { revalidatePath } from 'next/cache'
 
+const optionalString = (max: number) =>
+  z
+    .string()
+    .trim()
+    .max(max)
+    .optional()
+    .transform((v) => (v && v.length ? v : null))
+
 const StoreSettingsSchema = z.object({
   name: z.string().trim().min(1, 'Store name is required').max(120),
   supportEmail: z.string().trim().email().or(z.literal('')).transform((v) => (v ? v : null)),
   defaultIncoterm: z.string().trim().max(40).optional().transform((v) => (v && v.length ? v : null)),
   defaultPaymentTerms: z.coerce.number().int().min(0).max(365).default(30),
+
+  // Brand identity (storefront header + footer)
+  tagline: optionalString(280),
+  certificationLine: optionalString(120),
+
+  // Public contact info
+  contactPhone: optionalString(40),
+  contactEmail: z
+    .string()
+    .trim()
+    .email()
+    .or(z.literal(''))
+    .transform((v) => (v ? v : null)),
+  contactHours: optionalString(120),
+  contactLocationLabel: optionalString(80),
 })
 
 export async function saveStoreSettings(formData: FormData): Promise<Result<void>> {
@@ -22,6 +45,12 @@ export async function saveStoreSettings(formData: FormData): Promise<Result<void
       supportEmail: formData.get('supportEmail') ?? '',
       defaultIncoterm: formData.get('defaultIncoterm') ?? '',
       defaultPaymentTerms: formData.get('defaultPaymentTerms') ?? 30,
+      tagline: formData.get('tagline') ?? '',
+      certificationLine: formData.get('certificationLine') ?? '',
+      contactPhone: formData.get('contactPhone') ?? '',
+      contactEmail: formData.get('contactEmail') ?? '',
+      contactHours: formData.get('contactHours') ?? '',
+      contactLocationLabel: formData.get('contactLocationLabel') ?? '',
     })
 
     const existing = await db.storeSettings.findFirst()
