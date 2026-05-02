@@ -231,6 +231,24 @@ enum AiSuggestionStatus {
   superseded
 }
 
+enum MenuLocation {
+  primary_header
+  primary_megamenu
+  footer_main
+  footer_legal
+  mobile_drawer
+}
+
+enum MenuLinkType {
+  none
+  category
+  brand
+  industry
+  cms_page
+  product
+  custom_url
+}
+
 // ─────────────────────────────────────────────────────────────────────────────
 // IDENTITY & ACCOUNTS
 // ─────────────────────────────────────────────────────────────────────────────
@@ -402,7 +420,8 @@ model Category {
   seoUpdatedAt       DateTime?
   seoUpdatedById     String?
 
-  products Product[]
+  products      Product[]
+  navMenuItems  NavMenuItem[]
 
   @@map("categories")
 }
@@ -435,7 +454,8 @@ model Brand {
   seoUpdatedAt       DateTime?
   seoUpdatedById     String?
 
-  products Product[]
+  products     Product[]
+  navMenuItems NavMenuItem[]
 
   @@map("brands")
 }
@@ -464,7 +484,8 @@ model Industry {
   seoUpdatedAt       DateTime?
   seoUpdatedById     String?
 
-  accounts Account[]
+  accounts     Account[]
+  navMenuItems NavMenuItem[]
 
   @@map("industries")
 }
@@ -526,6 +547,7 @@ model Product {
   rfqLines        RfqLine[]
   savedListItems  SavedListItem[]
   orderLines      OrderLine[]
+  navMenuItems    NavMenuItem[]
 
   @@index([categoryId])
   @@index([brandId])
@@ -682,6 +704,7 @@ model Media {
   quotePdfs         Quote[]
   blogHeroes        BlogPost[]
   importJobSources  ImportJob[]
+  navMenuItemPromos NavMenuItem[] @relation("NavMenuItemPromo")
 
   @@map("media")
 }
@@ -958,6 +981,8 @@ model CmsPage {
   seoUpdatedAt       DateTime?
   seoUpdatedById     String?
 
+  navMenuItems NavMenuItem[]
+
   @@map("cms_pages")
 }
 
@@ -1007,6 +1032,70 @@ model Redirect {
 
   @@index([isActive])
   @@map("redirects")
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// NAVIGATION CMS
+// ─────────────────────────────────────────────────────────────────────────────
+
+model NavMenu {
+  id          String        @id @default(uuid())
+  slug        String        @unique
+  name        String
+  location    MenuLocation  @unique
+  description String?
+  isPublished Boolean       @default(false)
+  publishedAt DateTime?
+  createdAt   DateTime      @default(now())
+  updatedAt   DateTime      @updatedAt
+
+  items NavMenuItem[]
+
+  @@map("nav_menus")
+}
+
+model NavMenuItem {
+  id           String        @id @default(uuid())
+  menuId       String
+  menu         NavMenu       @relation(fields: [menuId], references: [id], onDelete: Cascade)
+  parentId     String?
+  parent       NavMenuItem?  @relation("NavMenuItemTree", fields: [parentId], references: [id], onDelete: Cascade)
+  children     NavMenuItem[] @relation("NavMenuItemTree")
+  position     Int           @default(0)
+
+  label        String
+  iconName     String?
+  badge        String?
+  description  String?
+
+  linkType     MenuLinkType  @default(none)
+  customUrl    String?
+  openInNewTab Boolean       @default(false)
+
+  categoryId   String?
+  category     Category?     @relation(fields: [categoryId], references: [id], onDelete: SetNull)
+  brandId      String?
+  brand        Brand?        @relation(fields: [brandId], references: [id], onDelete: SetNull)
+  industryId   String?
+  industry     Industry?     @relation(fields: [industryId], references: [id], onDelete: SetNull)
+  cmsPageId    String?
+  cmsPage      CmsPage?      @relation(fields: [cmsPageId], references: [id], onDelete: SetNull)
+  productId    String?
+  product      Product?      @relation(fields: [productId], references: [id], onDelete: SetNull)
+
+  promoImageId String?
+  promoImage   Media?        @relation("NavMenuItemPromo", fields: [promoImageId], references: [id], onDelete: SetNull)
+  promoHeading String?
+  promoBody    String?
+  promoLinkUrl String?
+
+  isVisible    Boolean       @default(true)
+
+  createdAt    DateTime      @default(now())
+  updatedAt    DateTime      @updatedAt
+
+  @@index([menuId, parentId, position])
+  @@map("nav_menu_items")
 }
 
 model SeoSetting {

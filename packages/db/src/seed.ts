@@ -573,6 +573,20 @@ async function main() {
 
   console.log(`  ✓ ${productData.length} products (${created} created, ${productData.length - created} skipped)`)
 
+  // ── Spec templates + product specs ─────────────────────────────────────────
+  // Backfills templates + template-linked ProductSpec rows so Compare works on
+  // seeded products. Idempotent: re-running upserts the templates and replaces
+  // template-linked specs (templateFieldId IS NOT NULL) per product.
+  await seedSpecTemplates({
+    [catPumps.id]: 'pump-spec',
+    [catValves.id]: 'valve-spec',
+    [catCylinders.id]: 'cylinder-spec',
+    [catHoses.id]: 'hose-fitting-spec',
+    // Accumulators + filters are both inside the Seals & Accessories category;
+    // each product picks the matching template via PRODUCT_SPECS below.
+  })
+  console.log('  ✓ Spec templates + product specs')
+
   // ── Store settings ──────────────────────────────────────────────────────────
   const existingSettings = await db.storeSettings.findFirst()
   if (!existingSettings) {
@@ -588,7 +602,444 @@ async function main() {
   }
 
   console.log('  ✓ Store settings')
+
+  // ── Navigation menus ────────────────────────────────────────────────────────
+  await seedNavigationMenus()
+  console.log('  ✓ Navigation menus')
+
   console.log('\n✅ Seed complete.')
+}
+
+async function seedNavigationMenus() {
+  const headerMenu = await db.navMenu.upsert({
+    where: { location: 'primary_header' },
+    create: {
+      slug: 'primary-header',
+      name: 'Primary header',
+      location: 'primary_header',
+      isPublished: true,
+      publishedAt: new Date(),
+    },
+    update: {},
+  })
+  const megamenu = await db.navMenu.upsert({
+    where: { location: 'primary_megamenu' },
+    create: {
+      slug: 'primary-megamenu',
+      name: 'Megamenu (Products)',
+      location: 'primary_megamenu',
+      isPublished: true,
+      publishedAt: new Date(),
+    },
+    update: {},
+  })
+  await db.navMenu.upsert({
+    where: { location: 'footer_main' },
+    create: { slug: 'footer-main', name: 'Footer — main', location: 'footer_main', isPublished: false },
+    update: {},
+  })
+  await db.navMenu.upsert({
+    where: { location: 'mobile_drawer' },
+    create: { slug: 'mobile-drawer', name: 'Mobile drawer', location: 'mobile_drawer', isPublished: false },
+    update: {},
+  })
+
+  // Idempotent: only seed items when the menu is empty.
+  const headerCount = await db.navMenuItem.count({ where: { menuId: headerMenu.id } })
+  if (headerCount === 0) {
+    const headerItems = [
+      { label: 'Products', customUrl: '/c' },
+      { label: 'Brands', customUrl: '/brands' },
+      { label: 'Industries', customUrl: '/industries' },
+      { label: 'About', customUrl: '/about' },
+      { label: 'Contact', customUrl: '/contact' },
+    ]
+    for (let i = 0; i < headerItems.length; i++) {
+      const it = headerItems[i]!
+      await db.navMenuItem.create({
+        data: {
+          menuId: headerMenu.id,
+          parentId: null,
+          position: i,
+          label: it.label,
+          linkType: 'custom_url',
+          customUrl: it.customUrl,
+        },
+      })
+    }
+  }
+
+  const megamenuCount = await db.navMenuItem.count({ where: { menuId: megamenu.id } })
+  if (megamenuCount === 0) {
+    const TAXONOMY: Array<{
+      slug: string
+      name: string
+      categorySlug: string | null
+      subs: Array<{ id: string; name: string; leaves: string[] }>
+    }> = [
+      {
+        slug: 'hydraulic-pumps',
+        name: 'Hydraulic Pumps',
+        categorySlug: 'hydraulic-pumps',
+        subs: [
+          { id: 'gear', name: 'Gear Pumps', leaves: ['External Gear', 'Internal Gear', 'Gerotor', 'Twin-Flow'] },
+          { id: 'vane', name: 'Vane Pumps', leaves: ['Fixed Displacement', 'Variable Displacement', 'Cartridge Type'] },
+          { id: 'piston', name: 'Piston Pumps', leaves: ['Axial Piston', 'Radial Piston', 'Bent Axis', 'Swashplate Variable'] },
+          { id: 'hand', name: 'Hand & Foot Pumps', leaves: ['Single-Acting', 'Double-Acting', 'Air-Driven'] },
+          { id: 'power', name: 'Power Packs', leaves: ['Mini Power Packs', 'AC Power Units', 'DC Power Units', '3-Phase'] },
+        ],
+      },
+      {
+        slug: 'hydraulic-cylinders',
+        name: 'Hydraulic Cylinders',
+        categorySlug: 'cylinders',
+        subs: [
+          { id: 'tie-rod', name: 'Tie-Rod Cylinders', leaves: ['NFPA Standard', 'ISO 6020', 'ISO 6022', 'Mill-Type'] },
+          { id: 'welded', name: 'Welded Cylinders', leaves: ['Cross-Tube Mount', 'Clevis Mount', 'Trunnion Mount'] },
+          { id: 'telescopic', name: 'Telescopic Cylinders', leaves: ['Single-Acting', 'Double-Acting', 'Tipper Trailer'] },
+          { id: 'compact', name: 'Compact & Block', leaves: ['Block Cylinders', 'Pancake', 'Hollow Plunger'] },
+          { id: 'custom', name: 'Custom Builds', leaves: ['Made-to-Order', 'Repair & Reseal', 'Plating Service'] },
+        ],
+      },
+      {
+        slug: 'valves-manifolds',
+        name: 'Valves & Manifolds',
+        categorySlug: 'valves-manifolds',
+        subs: [
+          { id: 'directional', name: 'Directional Control', leaves: ['Solenoid Operated', 'Manual Lever', 'Pilot Operated', 'Cetop 3 / NG6', 'Cetop 5 / NG10'] },
+          { id: 'pressure', name: 'Pressure Control', leaves: ['Relief', 'Reducing', 'Sequence', 'Counterbalance'] },
+          { id: 'flow', name: 'Flow Control', leaves: ['Throttle', 'Pressure Compensated', 'Proportional'] },
+          { id: 'check', name: 'Check & Logic', leaves: ['Inline Check', 'Pilot Check', 'Logic Elements'] },
+          { id: 'manifolds', name: 'Manifolds', leaves: ['Standard Bar', 'Custom Block', 'Subplates'] },
+        ],
+      },
+      {
+        slug: 'hoses-fittings',
+        name: 'Hoses & Fittings',
+        categorySlug: 'hoses-fittings',
+        subs: [
+          { id: 'hose', name: 'Hydraulic Hose', leaves: ['1-Wire Braid', '2-Wire Braid', '4-Spiral', '6-Spiral', 'Thermoplastic'] },
+          { id: 'fittings', name: 'Hose Fittings', leaves: ['BSP', 'JIC 37°', 'ORFS', 'Metric DIN', 'NPT'] },
+          { id: 'adapters', name: 'Adapters', leaves: ['Straight', 'Elbow 45°', 'Elbow 90°', 'Tee', 'Cross'] },
+          { id: 'couplers', name: 'Quick Couplers', leaves: ['ISO 7241-A', 'ISO 7241-B', 'Flat Face', 'Screw-to-Connect'] },
+        ],
+      },
+      {
+        slug: 'seals-components',
+        name: 'Seals & Components',
+        categorySlug: 'seals-accessories',
+        subs: [
+          { id: 'rod-seals', name: 'Rod Seals', leaves: ['U-Cup', 'Step Seal', 'Stepped Cap', 'Buffer Seal'] },
+          { id: 'piston-seals', name: 'Piston Seals', leaves: ['Twin-Lip', 'Glyd Ring', 'Compact'] },
+          { id: 'wipers', name: 'Wipers & Scrapers', leaves: ['Single-Lip', 'Double-Lip', 'Metallic'] },
+          { id: 'orings', name: 'O-Rings & Back-up', leaves: ['NBR', 'FKM (Viton)', 'EPDM', 'PTFE Back-up'] },
+        ],
+      },
+      {
+        slug: 'accessories-instrumentation',
+        name: 'Accessories & Instrumentation',
+        categorySlug: null,
+        subs: [
+          { id: 'filters', name: 'Filters', leaves: ['Suction', 'Pressure-Line', 'Return-Line', 'Tank Breather'] },
+          { id: 'gauges', name: 'Gauges & Sensors', leaves: ['Bourdon Gauge', 'Glycerin-Filled', 'Digital', 'Pressure Transducer'] },
+          { id: 'accumulators', name: 'Accumulators', leaves: ['Bladder', 'Diaphragm', 'Piston'] },
+          { id: 'coolers', name: 'Coolers', leaves: ['Air-Oil', 'Water-Oil', 'With Bypass'] },
+          { id: 'reservoirs', name: 'Reservoirs', leaves: ['Steel Tanks', 'Aluminum', 'Custom Fab'] },
+        ],
+      },
+    ]
+
+    const allCategories = await db.category.findMany({ select: { id: true, slug: true } })
+    const categoryBySlug = new Map(allCategories.map((c) => [c.slug, c.id]))
+
+    for (let colIdx = 0; colIdx < TAXONOMY.length; colIdx++) {
+      const col = TAXONOMY[colIdx]!
+      const categoryId = col.categorySlug ? categoryBySlug.get(col.categorySlug) ?? null : null
+      const colItem = await db.navMenuItem.create({
+        data: {
+          menuId: megamenu.id,
+          parentId: null,
+          position: colIdx,
+          label: col.name,
+          linkType: categoryId ? 'category' : 'custom_url',
+          categoryId,
+          customUrl: categoryId ? null : `/c/${col.slug}`,
+        },
+      })
+      for (let subIdx = 0; subIdx < col.subs.length; subIdx++) {
+        const sub = col.subs[subIdx]!
+        const subItem = await db.navMenuItem.create({
+          data: {
+            menuId: megamenu.id,
+            parentId: colItem.id,
+            position: subIdx,
+            label: sub.name,
+            linkType: 'custom_url',
+            customUrl: `/c/${col.slug}?sub=${sub.id}`,
+          },
+        })
+        for (let leafIdx = 0; leafIdx < sub.leaves.length; leafIdx++) {
+          const leaf = sub.leaves[leafIdx]!
+          await db.navMenuItem.create({
+            data: {
+              menuId: megamenu.id,
+              parentId: subItem.id,
+              position: leafIdx,
+              label: leaf,
+              linkType: 'custom_url',
+              customUrl: `/c/${col.slug}?sub=${sub.id}&type=${encodeURIComponent(leaf)}`,
+            },
+          })
+        }
+      }
+    }
+  }
+}
+
+// ── Spec template seeding ────────────────────────────────────────────────────
+
+type FieldDef = {
+  key: string
+  label: string
+  unit: string | null
+  dataType: 'text' | 'number' | 'boolean' | 'select'
+  group: string
+  position: number
+  isQuickSpec?: boolean
+  isKeyFeature?: boolean
+}
+
+type TemplateDef = {
+  slug: string
+  name: string
+  description: string
+  fields: FieldDef[]
+}
+
+const TEMPLATES: TemplateDef[] = [
+  {
+    slug: 'pump-spec',
+    name: 'Hydraulic pump',
+    description: 'Standard spec template for hydraulic pumps (axial piston, gear, vane).',
+    fields: [
+      { key: 'displacement',          label: 'Displacement',           unit: 'cm³/rev', dataType: 'number', group: 'Hydraulic',   position: 0, isQuickSpec: true, isKeyFeature: true },
+      { key: 'pressure_peak',         label: 'Pressure (peak)',        unit: 'bar',     dataType: 'number', group: 'Hydraulic',   position: 1, isQuickSpec: true, isKeyFeature: true },
+      { key: 'speed_max',             label: 'Speed (max)',            unit: 'rpm',     dataType: 'number', group: 'Hydraulic',   position: 2, isQuickSpec: true },
+      { key: 'pump_type',             label: 'Pump type',              unit: null,      dataType: 'text',   group: 'Hydraulic',   position: 3 },
+      { key: 'volumetric_efficiency', label: 'Volumetric efficiency',  unit: '%',       dataType: 'number', group: 'Hydraulic',   position: 4 },
+      { key: 'mounting',              label: 'Mounting',               unit: null,      dataType: 'text',   group: 'Mechanical',  position: 0, isQuickSpec: true },
+      { key: 'rotation',              label: 'Rotation',               unit: null,      dataType: 'text',   group: 'Mechanical',  position: 1 },
+      { key: 'weight',                label: 'Weight',                 unit: 'kg',      dataType: 'number', group: 'Mechanical',  position: 2 },
+      { key: 'warranty_months',       label: 'Warranty',               unit: 'months',  dataType: 'number', group: 'Commercial',  position: 0 },
+    ],
+  },
+  {
+    slug: 'valve-spec',
+    name: 'Hydraulic valve',
+    description: 'Spec template for solenoid, pressure and proportional hydraulic valves.',
+    fields: [
+      { key: 'flow_rate_max',   label: 'Flow rate (max)',  unit: 'L/min', dataType: 'number', group: 'Performance', position: 0, isQuickSpec: true, isKeyFeature: true },
+      { key: 'pressure_max',    label: 'Pressure (max)',   unit: 'bar',   dataType: 'number', group: 'Performance', position: 1, isQuickSpec: true, isKeyFeature: true },
+      { key: 'valve_function',  label: 'Function',         unit: null,    dataType: 'text',   group: 'Performance', position: 2 },
+      { key: 'cetop_size',      label: 'CETOP size',       unit: null,    dataType: 'text',   group: 'Mechanical',  position: 0, isQuickSpec: true },
+      { key: 'weight',          label: 'Weight',           unit: 'kg',    dataType: 'number', group: 'Mechanical',  position: 1 },
+      { key: 'voltage',         label: 'Coil voltage',     unit: null,    dataType: 'text',   group: 'Electrical',  position: 0 },
+      { key: 'coil_power',      label: 'Coil power',       unit: 'W',     dataType: 'number', group: 'Electrical',  position: 1 },
+      { key: 'warranty_months', label: 'Warranty',         unit: 'months',dataType: 'number', group: 'Commercial',  position: 0 },
+    ],
+  },
+  {
+    slug: 'cylinder-spec',
+    name: 'Hydraulic cylinder',
+    description: 'Spec template for tie-rod and welded hydraulic cylinders.',
+    fields: [
+      { key: 'bore',            label: 'Bore',             unit: 'mm',     dataType: 'number', group: 'Dimensions',  position: 0, isQuickSpec: true, isKeyFeature: true },
+      { key: 'rod_diameter',    label: 'Rod diameter',     unit: 'mm',     dataType: 'number', group: 'Dimensions',  position: 1, isQuickSpec: true },
+      { key: 'stroke',          label: 'Stroke',           unit: 'mm',     dataType: 'number', group: 'Dimensions',  position: 2, isQuickSpec: true, isKeyFeature: true },
+      { key: 'pressure_max',    label: 'Pressure (max)',   unit: 'bar',    dataType: 'number', group: 'Performance', position: 0 },
+      { key: 'push_force_kn',   label: 'Push force',       unit: 'kN',     dataType: 'number', group: 'Performance', position: 1 },
+      { key: 'mount_style',     label: 'Mount style',      unit: null,     dataType: 'text',   group: 'Mechanical',  position: 0 },
+      { key: 'seal_type',       label: 'Seal material',    unit: null,     dataType: 'text',   group: 'Mechanical',  position: 1 },
+      { key: 'warranty_months', label: 'Warranty',         unit: 'months', dataType: 'number', group: 'Commercial',  position: 0 },
+    ],
+  },
+  {
+    slug: 'hose-fitting-spec',
+    name: 'Hose / fitting',
+    description: 'Spec template for high-pressure hoses and fittings.',
+    fields: [
+      { key: 'bore_size',         label: 'Bore size',         unit: null,     dataType: 'text',   group: 'Dimensions',  position: 0, isQuickSpec: true, isKeyFeature: true },
+      { key: 'length_mm',         label: 'Length',            unit: 'mm',     dataType: 'number', group: 'Dimensions',  position: 1 },
+      { key: 'pressure_working',  label: 'Working pressure',  unit: 'bar',    dataType: 'number', group: 'Performance', position: 0, isQuickSpec: true, isKeyFeature: true },
+      { key: 'pressure_burst',    label: 'Burst pressure',    unit: 'bar',    dataType: 'number', group: 'Performance', position: 1 },
+      { key: 'temp_max',          label: 'Temperature (max)', unit: '°C',     dataType: 'number', group: 'Performance', position: 2 },
+      { key: 'reinforcement',     label: 'Reinforcement',     unit: null,     dataType: 'text',   group: 'Construction',position: 0 },
+      { key: 'fitting_type',      label: 'Fitting type',      unit: null,     dataType: 'text',   group: 'Construction',position: 1 },
+    ],
+  },
+  {
+    slug: 'accumulator-spec',
+    name: 'Hydraulic accumulator',
+    description: 'Spec template for bladder, piston and diaphragm accumulators.',
+    fields: [
+      { key: 'capacity_l',      label: 'Capacity',          unit: 'L',     dataType: 'number', group: 'Performance', position: 0, isQuickSpec: true, isKeyFeature: true },
+      { key: 'pressure_max',    label: 'Pressure (max)',    unit: 'bar',   dataType: 'number', group: 'Performance', position: 1, isQuickSpec: true, isKeyFeature: true },
+      { key: 'pre_charge_bar',  label: 'Pre-charge',        unit: 'bar',   dataType: 'number', group: 'Performance', position: 2 },
+      { key: 'bladder_material',label: 'Bladder material',  unit: null,    dataType: 'text',   group: 'Mechanical',  position: 0 },
+      { key: 'weight',          label: 'Weight',            unit: 'kg',    dataType: 'number', group: 'Mechanical',  position: 1 },
+      { key: 'warranty_months', label: 'Warranty',          unit: 'months',dataType: 'number', group: 'Commercial',  position: 0 },
+    ],
+  },
+  {
+    slug: 'filter-spec',
+    name: 'Hydraulic filter',
+    description: 'Spec template for return-line, suction and pressure filters.',
+    fields: [
+      { key: 'filtration_micron',  label: 'Filtration rating',  unit: 'µm',    dataType: 'number', group: 'Performance', position: 0, isQuickSpec: true, isKeyFeature: true },
+      { key: 'flow_rate_max',      label: 'Flow rate (max)',    unit: 'L/min', dataType: 'number', group: 'Performance', position: 1, isQuickSpec: true },
+      { key: 'pressure_drop_bar',  label: 'Pressure drop',      unit: 'bar',   dataType: 'number', group: 'Performance', position: 2 },
+      { key: 'mount_style',        label: 'Mount style',        unit: null,    dataType: 'text',   group: 'Mechanical',  position: 0 },
+      { key: 'weight',             label: 'Weight',             unit: 'kg',    dataType: 'number', group: 'Mechanical',  position: 1 },
+      { key: 'warranty_months',    label: 'Warranty',           unit: 'months',dataType: 'number', group: 'Commercial',  position: 0 },
+    ],
+  },
+]
+
+/** templateSlug + spec values for each seeded SKU. SKUs not listed stay
+ *  template-less (legitimately, like the one-off ball valve and power pack). */
+const PRODUCT_SPECS: Record<string, { templateSlug: string; values: Record<string, string> }> = {
+  // Pumps
+  'IH-AP71-D-R-V':  { templateSlug: 'pump-spec', values: { displacement: '71',  pressure_peak: '350', speed_max: '2600', pump_type: 'Axial piston (variable)', volumetric_efficiency: '94', mounting: 'SAE-B 2-bolt',  rotation: 'CW (right)',  weight: '26.5', warranty_months: '24' } },
+  'IH-AP45-D-R-V':  { templateSlug: 'pump-spec', values: { displacement: '45',  pressure_peak: '350', speed_max: '2800', pump_type: 'Axial piston (variable)', volumetric_efficiency: '93', mounting: 'SAE-B 2-bolt',  rotation: 'CW (right)',  weight: '20.0', warranty_months: '24' } },
+  'IH-AP100-D-R-V': { templateSlug: 'pump-spec', values: { displacement: '100', pressure_peak: '350', speed_max: '2400', pump_type: 'Axial piston (variable)', volumetric_efficiency: '95', mounting: 'SAE-C 2-bolt',  rotation: 'CW (right)',  weight: '38.0', warranty_months: '24' } },
+  'IH-PGH4-21-020': { templateSlug: 'pump-spec', values: { displacement: '20',  pressure_peak: '320', speed_max: '3200', pump_type: 'External gear',           volumetric_efficiency: '92', mounting: 'SAE-A 2-bolt',  rotation: 'CW',           weight: '8.5',  warranty_months: '12' } },
+  'IH-T7B-B09-2R00-A100': { templateSlug: 'pump-spec', values: { displacement: '9',  pressure_peak: '210', speed_max: '2400', pump_type: 'Vane (fixed)', volumetric_efficiency: '90', mounting: 'SAE-A 2-bolt', rotation: 'CW', weight: '6.2',  warranty_months: '12' } },
+  'IH-T6C-012-1R00-B1':   { templateSlug: 'pump-spec', values: { displacement: '12', pressure_peak: '210', speed_max: '2400', pump_type: 'Vane (fixed, through-drive)', volumetric_efficiency: '90', mounting: 'SAE-B 2-bolt', rotation: 'CW', weight: '7.4', warranty_months: '12' } },
+
+  // Valves
+  'IH-DSG-01-3C4-D24': { templateSlug: 'valve-spec', values: { flow_rate_max: '40', pressure_max: '315', valve_function: '4/3 spring-centred directional',     cetop_size: 'CETOP 3', weight: '1.6', voltage: '24 VDC', coil_power: '30', warranty_months: '12' } },
+  'IH-DSG-01-2B2-D24': { templateSlug: 'valve-spec', values: { flow_rate_max: '40', pressure_max: '315', valve_function: '4/2 spring-offset directional',      cetop_size: 'CETOP 3', weight: '1.6', voltage: '24 VDC', coil_power: '30', warranty_months: '12' } },
+  'IH-MBR-01-30':      { templateSlug: 'valve-spec', values: { flow_rate_max: '30', pressure_max: '300', valve_function: 'Pressure reducing (direct-acting)',  cetop_size: 'CETOP 3', weight: '1.4',                                       warranty_months: '12' } },
+  'IH-BG-03-315':      { templateSlug: 'valve-spec', values: { flow_rate_max: '160',pressure_max: '315', valve_function: 'Pressure relief (pilot-operated)',   cetop_size: 'CETOP 5', weight: '3.2',                                       warranty_months: '12' } },
+  'IH-FLCB-LAN-3C4-D24': { templateSlug: 'valve-spec', values: { flow_rate_max: '100', pressure_max: '315', valve_function: 'Proportional directional (closed-loop)', cetop_size: 'NG10', weight: '4.8', voltage: '24 VDC', coil_power: '40', warranty_months: '24' } },
+
+  // Cylinders
+  'IH-CYL-80-50-300':  { templateSlug: 'cylinder-spec', values: { bore: '80',  rod_diameter: '50', stroke: '300', pressure_max: '250', push_force_kn: '125', mount_style: 'Foot bracket (FB)',  seal_type: 'NBR',  warranty_months: '12' } },
+  'IH-CYL-100-70-500': { templateSlug: 'cylinder-spec', values: { bore: '100', rod_diameter: '70', stroke: '500', pressure_max: '250', push_force_kn: '196', mount_style: 'Foot bracket (FB)',  seal_type: 'NBR',  warranty_months: '12' } },
+  'IH-CYL-63-45-200':  { templateSlug: 'cylinder-spec', values: { bore: '63',  rod_diameter: '45', stroke: '200', pressure_max: '250', push_force_kn: '78',  mount_style: 'Clevis bracket (CB)', seal_type: 'NBR', warranty_months: '12' } },
+  'IH-WC-120-80-600':  { templateSlug: 'cylinder-spec', values: { bore: '120', rod_diameter: '80', stroke: '600', pressure_max: '350', push_force_kn: '395', mount_style: 'MF5 mid-flange',     seal_type: 'PTFE-NBR', warranty_months: '12' } },
+
+  // Hoses & fittings
+  'IH-JIC-90-08': { templateSlug: 'hose-fitting-spec', values: { bore_size: '1/2"', pressure_working: '420', pressure_burst: '1680', temp_max: '120', reinforcement: 'Stainless steel (316)', fitting_type: '90° JIC 37° elbow, BSP male' } },
+  'IH-421-08':    { templateSlug: 'hose-fitting-spec', values: { bore_size: '1/2" (DN13)', pressure_working: '420', pressure_burst: '1680', temp_max: '100', reinforcement: '2-wire braid (SAE 100R2AT)', fitting_type: 'Hose, sold per metre' } },
+  'IH-451-12':    { templateSlug: 'hose-fitting-spec', values: { bore_size: '3/4" (DN19)', pressure_working: '360', pressure_burst: '1440', temp_max: '100', reinforcement: '4-spiral compact (SAE 100R13)', fitting_type: 'Hose, sold per metre' } },
+
+  // Accumulators
+  'IH-SB330-10A1': { templateSlug: 'accumulator-spec', values: { capacity_l: '10', pressure_max: '330', pre_charge_bar: '100', bladder_material: 'NBR', weight: '14.5', warranty_months: '24' } },
+  'IH-SB330-4A1':  { templateSlug: 'accumulator-spec', values: { capacity_l: '4',  pressure_max: '330', pre_charge_bar: '100', bladder_material: 'NBR', weight: '7.8',  warranty_months: '24' } },
+
+  // Filters
+  'IH-0330R010BN4HC':  { templateSlug: 'filter-spec', values: { filtration_micron: '10', flow_rate_max: '330', pressure_drop_bar: '0.4', mount_style: 'Inline / return-line', weight: '3.4', warranty_months: '12' } },
+  'IH-0160DN010BN4HC': { templateSlug: 'filter-spec', values: { filtration_micron: '10', flow_rate_max: '160', pressure_drop_bar: '0.2', mount_style: 'Tank-top suction',     weight: '2.8', warranty_months: '12' } },
+
+  // IH-KHB-G12-14-2X-S (ball valve) and IH-PP-11KW-30-DS (power pack) intentionally omitted —
+  // both are one-offs in the catalogue and don't fit any of the templates above. They will
+  // continue to show "Compare unavailable" on the product page until a fitting template is
+  // designed by an engineer.
+}
+
+async function seedSpecTemplates(categoryDefaultTemplate: Record<string, string>): Promise<void> {
+  // 1. Upsert templates and their fields.
+  const templateBySlug = new Map<string, { id: string; fieldByKey: Map<string, string> }>()
+  for (const tpl of TEMPLATES) {
+    const template = await db.specTemplate.upsert({
+      where: { slug: tpl.slug },
+      create: { slug: tpl.slug, name: tpl.name, description: tpl.description },
+      update: { name: tpl.name, description: tpl.description },
+    })
+    const fieldByKey = new Map<string, string>()
+    for (const f of tpl.fields) {
+      const field = await db.specTemplateField.upsert({
+        where: { templateId_key: { templateId: template.id, key: f.key } },
+        create: {
+          templateId: template.id,
+          key: f.key,
+          label: f.label,
+          unit: f.unit,
+          dataType: f.dataType,
+          group: f.group,
+          position: f.position,
+          isQuickSpec: f.isQuickSpec ?? false,
+          isKeyFeature: f.isKeyFeature ?? false,
+        },
+        update: {
+          label: f.label,
+          unit: f.unit,
+          dataType: f.dataType,
+          group: f.group,
+          position: f.position,
+          isQuickSpec: f.isQuickSpec ?? false,
+          isKeyFeature: f.isKeyFeature ?? false,
+        },
+      })
+      fieldByKey.set(f.key, field.id)
+    }
+    templateBySlug.set(tpl.slug, { id: template.id, fieldByKey })
+  }
+
+  // 2. Set Category.defaultSpecTemplateId so the admin "create product" flow
+  //    pre-fills the right template per category.
+  for (const [categoryId, templateSlug] of Object.entries(categoryDefaultTemplate)) {
+    const tpl = templateBySlug.get(templateSlug)
+    if (!tpl) continue
+    await db.category.update({
+      where: { id: categoryId },
+      data: { defaultSpecTemplateId: tpl.id },
+    })
+  }
+
+  // 3. Per product: attach specTemplateId, replace template-linked specs.
+  for (const [sku, payload] of Object.entries(PRODUCT_SPECS)) {
+    const tpl = templateBySlug.get(payload.templateSlug)
+    if (!tpl) continue
+    const product = await db.product.findUnique({ where: { sku }, select: { id: true } })
+    if (!product) continue
+
+    await db.$transaction([
+      db.product.update({
+        where: { id: product.id },
+        data: { specTemplateId: tpl.id },
+      }),
+      // Idempotent: drop any existing template-linked specs for this product
+      // before re-creating from the seed. Free-form specs (templateFieldId IS
+      // NULL) are left alone so admin-curated additions survive a reseed.
+      db.productSpec.deleteMany({
+        where: { productId: product.id, templateFieldId: { not: null } },
+      }),
+    ])
+
+    const templateDef = TEMPLATES.find((t) => t.slug === payload.templateSlug)!
+    const rows = Object.entries(payload.values)
+      .map(([key, value], idx) => {
+        const fieldId = tpl.fieldByKey.get(key)
+        const fieldDef = templateDef.fields.find((f) => f.key === key)
+        if (!fieldId || !fieldDef) return null
+        return {
+          productId: product.id,
+          group: fieldDef.group,
+          label: fieldDef.label,
+          value,
+          unit: fieldDef.unit,
+          position: idx,
+          templateFieldId: fieldId,
+        }
+      })
+      .filter((r): r is NonNullable<typeof r> => r !== null)
+
+    if (rows.length > 0) {
+      await db.productSpec.createMany({ data: rows })
+    }
+  }
 }
 
 main()
