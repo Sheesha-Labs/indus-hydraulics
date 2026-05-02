@@ -32,15 +32,19 @@ at `/Users/ayushkbhatia/.claude/plans/seo-os-drawer-and-audit.md`.
 - `/api/search/{log,suggest}` endpoints; debounced `SearchAutocomplete` in the header; click-through beacon.
 - Admin `/seo/search` 4-tab sub-shell: synonyms / query redirects / boosts / query analytics.
 
-## ✅ Shipped (this PR — feat/seo-ai-suggest)
+## ✅ Shipped (PR #9 — feat/seo-ai-suggest)
 
-- Anthropic SDK installed (`@anthropic-ai/sdk` ^0.32.1).
-- `apps/admin/src/lib/ai.ts` — Sonnet 4.6 (quality) + Haiku 4.5 (bulk) tiers, prompt-cached system prefix, JSON-schema-constrained outputs, per-call cost telemetry in micro-USD.
-- Default `AiPromptTemplate` rows seeded for the 6 entity types on meta_title / meta_description / focus_keyword (+ alt_text on Product).
-- Server actions: `generateSuggestion` (quota-gated, cost-tracking), `acceptSuggestion` (writes through via `withSeoAudit` with `reason: 'ai_accepted'`, supersedes other pending suggestions), `rejectSuggestion`.
-- `AiSuggestButton` mounted next to title / description / focus keyword fields in every SEO drawer; diff-and-approve UX with optional in-place edit.
-- `AiUsageQuota` per staff user (default $50/mo), auto-rolls each calendar month.
-- `/seo/ai` overview (month spend, count, acceptance rate, personal quota bar) + `/seo/ai/runs` (suggestion log) + `/seo/ai/quota` (per-user spend bars).
+- Anthropic SDK + cost-tracking + quota-gated `generateSuggestion` / `acceptSuggestion` / `rejectSuggestion`.
+- `AiSuggestButton` mounted on every SEO drawer's title / description / focus keyword fields.
+- `/seo/ai` overview, `/seo/ai/runs` log, `/seo/ai/quota` per-user spend.
+
+## ✅ Shipped (this PR — feat/seo-health-404)
+
+- Storefront 404 capture: `not-found.tsx` fires a `sendBeacon` to `/api/seo/404-log`, which upserts `NotFoundLog` by path with hit counts.
+- Admin `/seo/redirects/not-found` lists unresolved 404s top-hits-first with one-click resolve (creates a 301/302/307/308 via `withSeoAudit` reason='404_resolved') or ignore.
+- Admin `/seo/redirects/chains` walks the active `Redirect` table as a graph and reports cycles + multi-hop chains so admins can flatten in one edit.
+- `/seo/redirects` index page now exposes both sub-pages with badges (unresolved-404 count, active-redirect count).
+- Site-wide health dashboard at `/seo/health` replaces the placeholder: per-entity-type aggregate (avg score, healthy/warn/critical counts), worst-offender list (top 25 published URLs by lowest score, deep-linked to the editor), and infrastructure tiles (active redirects, unresolved 404s).
 
 ## Phase 2 (next chunk)
 

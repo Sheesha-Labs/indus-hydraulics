@@ -1,27 +1,433 @@
 import type { Metadata } from 'next'
+import Link from 'next/link'
+import { db } from '@indus/db'
+import { scoreEntity, type SeoEntityType } from '@indus/domain'
+import { SeoHealthBadge } from '@indus/ui'
 
 export const metadata: Metadata = { title: 'SEO Health — Indus Admin' }
 
 /**
- * Site-wide health dashboard. Aggregates the per-URL scores from the
- * inspector into trend charts, worst-offender lists, and check-level
- * breakdowns. Phase 2 work — the inspector grid covers the per-URL view
- * for now.
+ * Site-wide aggregate health. Computes scores live by running the same
+ * `scoreEntity` evaluator the Inspector grid uses, then aggregates by
+ * entity type. The cached `SeoHealthScore` table is populated by the
+ * (Phase 3) Inngest fan-out — until then live computation works fine
+ * for the catalogue's current size.
+ *
+ * Three views in one page:
+ *   1. Per-type aggregate (avg score, % healthy)
+ *   2. Worst-offender list across all entities
+ *   3. 404 + redirect-chain quick stats (already shipped pages)
  */
-export default function SeoHealthPage() {
-  return <PlaceholderCard title="Site-wide health dashboard" phase="Phase 2" />
+const TYPE_LABELS: Record<SeoEntityType, string> = {
+  product: 'Product',
+  category: 'Category',
+  brand: 'Brand',
+  industry: 'Industry',
+  cms_page: 'CMS Page',
+  blog_post: 'Blog',
 }
 
-function PlaceholderCard({ title, phase }: { title: string; phase: string }) {
+const SEO_SELECT = {
+  id: true,
+  slug: true,
+  seoTitle: true,
+  seoDescription: true,
+  focusKeyword: true,
+  canonicalUrl: true,
+  robotsIndex: true,
+  ogImageMediaId: true,
+  excludeFromSitemap: true,
+} as const
+
+export default async function SeoHealthPage() {
+  const baseUrl = (process.env.NEXT_PUBLIC_BASE_URL ?? 'https://indushydraulics.com').replace(
+    /\/$/,
+    '',
+  )
+
+  const [products, categories, brands, industries, blogPosts, cmsPages, seoSetting, unresolved404, totalRedirects] =
+    await Promise.all([
+      db.product.findMany({
+        select: { ...SEO_SELECT, title: true, status: true },
+      }),
+      db.category.findMany({
+        select: { ...SEO_SELECT, name: true, isPublished: true },
+      }),
+      db.brand.findMany({
+        select: { ...SEO_SELECT, name: true, isPublished: true },
+      }),
+      db.industry.findMany({
+        select: { ...SEO_SELECT, name: true, isPublished: true },
+      }),
+      db.blogPost.findMany({
+        select: { ...SEO_SELECT, title: true, isPublished: true },
+      }),
+      db.cmsPage.findMany({
+        select: { ...SEO_SELECT, title: true, isPublished: true },
+      }),
+      db.seoSetting.findFirst({ select: { ogDefaultImageId: true } }),
+      db.notFoundLog.count({ where: { resolvedRedirectId: null } }),
+      db.redirect.count({ where: { isActive: true } }),
+    ])
+
+  const defaultOgPresent = !!seoSetting?.ogDefaultImageId
+
+  type Row = {
+    entityType: SeoEntityType
+    entityId: string
+    title: string
+    slug: string
+    score: number
+    isPublished: boolean
+  }
+
+  const rows: Row[] = []
+  for (const p of products) {
+    rows.push({
+      entityType: 'product',
+      entityId: p.id,
+      title: p.title,
+      slug: p.slug,
+      isPublished: p.status === 'active',
+      score: scoreEntity({
+        title: p.seoTitle ?? p.title,
+        description: p.seoDescription,
+        focusKeyword: p.focusKeyword,
+        url: `/${p.slug}`,
+        hasStructuredData: true,
+        isIndexable: p.robotsIndex && p.status === 'active' && !p.excludeFromSitemap,
+        canonicalCorrect: !p.canonicalUrl || p.canonicalUrl === `${baseUrl}/p/${p.slug}`,
+        ogComplete: !!p.ogImageMediaId || defaultOgPresent,
+      }).score,
+    })
+  }
+  pushSimple(rows, categories, 'category', baseUrl, '/c/', defaultOgPresent)
+  pushSimple(rows, brands, 'brand', baseUrl, '/brands/', defaultOgPresent)
+  pushSimple(rows, industries, 'industry', baseUrl, '/industries/', defaultOgPresent)
+  pushSimple(rows, blogPosts, 'blog_post', baseUrl, '/blog/', defaultOgPresent, true)
+  pushSimple(rows, cmsPages, 'cms_page', baseUrl, '/', defaultOgPresent, false)
+
+  const summary = computeSummary(rows)
+  const worstOffenders = rows
+    .filter((r) => r.isPublished)
+    .sort((a, b) => a.score - b.score)
+    .slice(0, 25)
+
   return (
-    <div className="max-w-[640px] border border-dashed border-[var(--color-border)] p-8 text-[13px] text-[var(--color-muted)]">
-      <h2 className="text-[18px] font-semibold text-[var(--color-primary)] mb-2">{title}</h2>
-      <p className="mb-3">
-        Coming in <strong>{phase}</strong>. The Inspector tab covers the per-URL view today.
-      </p>
-      <p className="font-mono text-[11px]">
-        Tracked: site-wide score trend, worst offenders by entity, check-level pass rate, &quot;orphans&quot; (no internal links in).
-      </p>
+    <div className="max-w-[1080px]">
+      {/* Top tiles */}
+      <div className="grid grid-cols-4 gap-3 mb-6">
+        <Tile label="URLs scored" value={rows.length.toLocaleString()} />
+        <Tile label="Avg score" value={summary.avg.toFixed(0)} accent={summary.avg >= 80} />
+        <Tile
+          label="Critical (< 50)"
+          value={summary.critical.toLocaleString()}
+          danger={summary.critical > 0}
+        />
+        <Tile label="Healthy (≥ 80)" value={summary.healthy.toLocaleString()} accent={summary.healthy > summary.critical} />
+      </div>
+
+      {/* Per-type breakdown */}
+      <Section title="By entity type">
+        <div className="border border-[var(--color-border)] overflow-hidden">
+          <table className="w-full text-[13px]">
+            <thead>
+              <tr className="border-b border-[var(--color-border)] bg-[var(--color-deep)]">
+                <Th>Type</Th>
+                <Th>Total</Th>
+                <Th>Avg score</Th>
+                <Th>Healthy</Th>
+                <Th>Needs work</Th>
+                <Th>Critical</Th>
+              </tr>
+            </thead>
+            <tbody>
+              {Object.entries(summary.byType).map(([type, s]) => (
+                <tr
+                  key={type}
+                  className="border-b border-[var(--color-border)] last:border-0 hover:bg-[var(--color-deep)]"
+                >
+                  <td className="px-3 py-2.5 font-mono text-[11px] uppercase tracking-[0.08em] text-[var(--color-body)]">
+                    {TYPE_LABELS[type as SeoEntityType]}
+                  </td>
+                  <td className="px-3 py-2.5 font-mono text-[12px] tabular-nums">{s.total}</td>
+                  <td className="px-3 py-2.5">
+                    <SeoHealthBadge score={Math.round(s.avg)} size="sm" />
+                  </td>
+                  <td className="px-3 py-2.5 font-mono text-[12px] tabular-nums text-[oklch(0.4_0.14_145)]">
+                    {s.healthy}
+                  </td>
+                  <td className="px-3 py-2.5 font-mono text-[12px] tabular-nums text-[oklch(0.5_0.14_70)]">
+                    {s.warn}
+                  </td>
+                  <td className="px-3 py-2.5 font-mono text-[12px] tabular-nums text-[oklch(0.5_0.18_25)]">
+                    {s.critical}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </Section>
+
+      {/* Worst offenders */}
+      <Section title="Worst offenders (published only)">
+        {worstOffenders.length === 0 ? (
+          <Empty>Nothing critical right now.</Empty>
+        ) : (
+          <div className="border border-[var(--color-border)] overflow-hidden">
+            <table className="w-full text-[13px]">
+              <thead>
+                <tr className="border-b border-[var(--color-border)] bg-[var(--color-deep)]">
+                  <Th>Score</Th>
+                  <Th>Type</Th>
+                  <Th>Title</Th>
+                </tr>
+              </thead>
+              <tbody>
+                {worstOffenders.map((r) => {
+                  const path = editPathFor(r.entityType, r.entityId)
+                  return (
+                    <tr
+                      key={`${r.entityType}-${r.entityId}`}
+                      className="border-b border-[var(--color-border)] last:border-0 hover:bg-[var(--color-deep)]"
+                    >
+                      <td className="px-3 py-2.5">
+                        <SeoHealthBadge score={r.score} size="sm" />
+                      </td>
+                      <td className="px-3 py-2.5 font-mono text-[10px] uppercase tracking-[0.08em] text-[var(--color-muted)]">
+                        {TYPE_LABELS[r.entityType]}
+                      </td>
+                      <td className="px-3 py-2.5">
+                        {path ? (
+                          <Link href={path} className="text-[var(--color-body)] hover:text-[var(--color-accent)]">
+                            {r.title}
+                          </Link>
+                        ) : (
+                          <span className="text-[var(--color-body)]">{r.title}</span>
+                        )}
+                      </td>
+                    </tr>
+                  )
+                })}
+              </tbody>
+            </table>
+          </div>
+        )}
+      </Section>
+
+      {/* Infrastructure stats */}
+      <Section title="Infrastructure">
+        <div className="grid grid-cols-2 gap-3 max-w-[640px]">
+          <Link
+            href="/seo/redirects"
+            className="border border-[var(--color-border)] bg-[var(--color-elevated)] p-4 hover:bg-[var(--color-deep)] transition-colors"
+          >
+            <p className="font-mono text-[10px] uppercase tracking-[0.1em] text-[var(--color-muted)]">
+              Active redirects
+            </p>
+            <p className="text-[28px] font-semibold mt-1">{totalRedirects}</p>
+          </Link>
+          <Link
+            href="/seo/redirects/not-found"
+            className="border border-[var(--color-border)] bg-[var(--color-elevated)] p-4 hover:bg-[var(--color-deep)] transition-colors"
+          >
+            <p className="font-mono text-[10px] uppercase tracking-[0.1em] text-[var(--color-muted)]">
+              Unresolved 404s
+            </p>
+            <p
+              className={`text-[28px] font-semibold mt-1 ${
+                unresolved404 > 0 ? 'text-[oklch(0.5_0.18_25)]' : ''
+              }`}
+            >
+              {unresolved404}
+            </p>
+          </Link>
+        </div>
+      </Section>
     </div>
+  )
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Helpers
+// ─────────────────────────────────────────────────────────────────────────────
+
+type SimpleEntity = {
+  id: string
+  slug: string
+  name?: string
+  title?: string
+  seoTitle: string | null
+  seoDescription: string | null
+  focusKeyword: string | null
+  canonicalUrl: string | null
+  robotsIndex: boolean
+  ogImageMediaId: string | null
+  excludeFromSitemap: boolean
+  isPublished: boolean
+}
+
+function pushSimple(
+  rows: Array<{
+    entityType: SeoEntityType
+    entityId: string
+    title: string
+    slug: string
+    score: number
+    isPublished: boolean
+  }>,
+  list: SimpleEntity[],
+  entityType: SeoEntityType,
+  baseUrl: string,
+  pathPrefix: string,
+  defaultOgPresent: boolean,
+  hasStructuredData: boolean | null = true,
+) {
+  for (const e of list) {
+    const title = e.name ?? e.title ?? ''
+    rows.push({
+      entityType,
+      entityId: e.id,
+      title,
+      slug: e.slug,
+      isPublished: e.isPublished,
+      score: scoreEntity({
+        title: e.seoTitle ?? title,
+        description: e.seoDescription,
+        focusKeyword: e.focusKeyword,
+        url: `/${e.slug}`,
+        hasStructuredData: hasStructuredData ?? false,
+        isIndexable: e.robotsIndex && e.isPublished && !e.excludeFromSitemap,
+        canonicalCorrect:
+          !e.canonicalUrl || e.canonicalUrl === `${baseUrl}${pathPrefix}${e.slug}`,
+        ogComplete: !!e.ogImageMediaId || defaultOgPresent,
+      }).score,
+    })
+  }
+}
+
+type TypeSummary = { total: number; avg: number; healthy: number; warn: number; critical: number }
+
+function computeSummary(
+  rows: Array<{ entityType: SeoEntityType; score: number }>,
+): {
+  avg: number
+  healthy: number
+  warn: number
+  critical: number
+  byType: Record<string, TypeSummary>
+} {
+  const byType: Record<string, TypeSummary> = {}
+  let totalScore = 0
+  let healthy = 0
+  let warn = 0
+  let critical = 0
+
+  for (const r of rows) {
+    if (!byType[r.entityType]) {
+      byType[r.entityType] = { total: 0, avg: 0, healthy: 0, warn: 0, critical: 0 }
+    }
+    const s = byType[r.entityType]!
+    s.total += 1
+    s.avg += r.score
+    totalScore += r.score
+    if (r.score >= 80) {
+      s.healthy += 1
+      healthy += 1
+    } else if (r.score >= 50) {
+      s.warn += 1
+      warn += 1
+    } else {
+      s.critical += 1
+      critical += 1
+    }
+  }
+  for (const s of Object.values(byType)) {
+    s.avg = s.total === 0 ? 0 : s.avg / s.total
+  }
+  return {
+    avg: rows.length === 0 ? 0 : totalScore / rows.length,
+    healthy,
+    warn,
+    critical,
+    byType,
+  }
+}
+
+function editPathFor(entityType: SeoEntityType, entityId: string): string | null {
+  switch (entityType) {
+    case 'product':
+      return `/products/${entityId}/edit?tab=seo`
+    case 'category':
+      return `/categories/${entityId}/edit`
+    case 'brand':
+      return `/brands/${entityId}/edit`
+    case 'industry':
+      return `/industries/${entityId}/edit`
+    case 'blog_post':
+      return `/cms/blog/${entityId}?tab=seo`
+    case 'cms_page':
+      return `/cms/pages/${entityId}?tab=seo`
+    default:
+      return null
+  }
+}
+
+function Tile({
+  label,
+  value,
+  accent,
+  danger,
+}: {
+  label: string
+  value: string
+  accent?: boolean
+  danger?: boolean
+}) {
+  return (
+    <div className="border border-[var(--color-border)] bg-[var(--color-elevated)] p-4">
+      <div className="font-mono text-[10px] uppercase tracking-[0.1em] text-[var(--color-muted)]">
+        {label}
+      </div>
+      <div
+        className={`text-[28px] font-semibold mt-1 ${
+          danger
+            ? 'text-[oklch(0.5_0.18_25)]'
+            : accent
+              ? 'text-[var(--color-accent)]'
+              : ''
+        }`}
+      >
+        {value}
+      </div>
+    </div>
+  )
+}
+
+function Section({ title, children }: { title: string; children: React.ReactNode }) {
+  return (
+    <div className="mb-8">
+      <h2 className="font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-3">
+        {title}
+      </h2>
+      {children}
+    </div>
+  )
+}
+
+function Empty({ children }: { children: React.ReactNode }) {
+  return (
+    <div className="py-10 text-center border border-dashed border-[var(--color-border)] text-[13px] text-[var(--color-muted)]">
+      {children}
+    </div>
+  )
+}
+
+function Th({ children }: { children: React.ReactNode }) {
+  return (
+    <th className="text-left px-3 py-2.5 font-mono text-[10px] uppercase tracking-[0.1em] text-[var(--color-muted)]">
+      {children}
+    </th>
   )
 }

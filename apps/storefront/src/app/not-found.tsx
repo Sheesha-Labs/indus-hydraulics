@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { db } from '@indus/db'
+import NotFoundLogger from '../components/NotFoundLogger'
 
 export default async function NotFound() {
   const categories = await db.category.findMany({
@@ -11,6 +12,7 @@ export default async function NotFound() {
 
   return (
     <div className="max-w-[680px] mx-auto px-8 py-20 pb-32 text-center">
+      <NotFoundLogger />
       <div className="font-mono text-[80px] font-semibold text-[var(--color-border)] leading-none mb-6">
         404
       </div>
