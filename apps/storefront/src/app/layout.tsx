@@ -34,9 +34,9 @@ export const metadata: Metadata = {
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
   // Pull admin-managed Org/WebSite JSON-LD overrides for the global script tag.
-  const seoSetting = await db.seoSetting.findFirst({
-    select: { organizationJsonLd: true, websiteJsonLd: true },
-  })
+  const seoSetting = await db.seoSetting
+    .findFirst({ select: { organizationJsonLd: true, websiteJsonLd: true } })
+    .catch(() => null)
 
   const orgLd = buildOrgLd({
     name: SITE_NAME,
