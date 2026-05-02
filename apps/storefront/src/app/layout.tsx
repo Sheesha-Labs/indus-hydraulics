@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Inter, IBM_Plex_Mono } from 'next/font/google'
 import SiteHeader from '../components/SiteHeader'
 import SiteFooter from '../components/SiteFooter'
+import CompareTrayBadge from '../components/CompareTrayBadge'
 import './globals.css'
 
 const inter = Inter({
@@ -38,6 +39,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <SiteHeader />
         <div className="flex-1">{children}</div>
         <SiteFooter />
+        <CompareTrayBadge />
       </body>
     </html>
   )

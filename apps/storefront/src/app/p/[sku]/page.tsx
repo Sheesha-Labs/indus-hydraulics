@@ -9,6 +9,7 @@ import { verifyPreviewToken } from '@indus/domain'
 import { safeAuth } from '../../../lib/auth'
 import ProductGallery from '../../../components/ProductGallery'
 import AddToQuoteButton from '../../../components/AddToQuoteButton'
+import AddToCompareButton from '../../../components/AddToCompareButton'
 import ProductTabs from '../../../components/ProductTabs'
 import ProductStickyBar from '../../../components/ProductStickyBar'
 
@@ -297,6 +298,11 @@ export default async function ProductPage({ params, searchParams }: Props) {
                   Email for Quotation
                 </a>
               </div>
+              <AddToCompareButton
+                sku={product.sku}
+                categoryId={product.categoryId}
+                specTemplateId={product.specTemplateId}
+              />
             </div>
 
             {/* Datasheet card */}
