@@ -1,12 +1,10 @@
 'use client'
 
 import { useState } from 'react'
-import { useTranslations } from 'next-intl'
 
-type Props = { sku: string; title: string; locale: string }
+type Props = { sku: string; title: string }
 
-export default function AddToQuoteButton({ sku, title, locale }: Props) {
-  const t = useTranslations('product')
+export default function AddToQuoteButton({ sku }: Props) {
   const [added, setAdded] = useState(false)
 
   function handleAdd() {
@@ -32,7 +30,7 @@ export default function AddToQuoteButton({ sku, title, locale }: Props) {
           : 'bg-[var(--color-accent)] text-white hover:opacity-90'
       }`}
     >
-      {added ? `✓ ${t('addedToQuote')}` : `${t('addToQuote')} →`}
+      {added ? `✓ Added to quote` : `Add to Quote →`}
     </button>
   )
 }

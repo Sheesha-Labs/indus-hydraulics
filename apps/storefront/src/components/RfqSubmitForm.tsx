@@ -2,8 +2,7 @@
 
 import { useRef, useState, useEffect, useTransition } from 'react'
 import Link from 'next/link'
-import { useTranslations } from 'next-intl'
-import { submitRfq } from '../app/[locale]/quote/actions'
+import { submitRfq } from '../app/quote/actions'
 
 type Address = {
   id: string
@@ -14,7 +13,6 @@ type Address = {
 }
 
 type Props = {
-  locale: string
   addresses: Address[]
 }
 
@@ -26,8 +24,7 @@ type LineItem = {
   brand?: string
 }
 
-export default function RfqSubmitForm({ locale, addresses }: Props) {
-  const t = useTranslations('rfq')
+export default function RfqSubmitForm({ addresses }: Props) {
   const [lines, setLines] = useState<LineItem[]>([])
   const [mounted, setMounted] = useState(false)
   const [urgency, setUrgency] = useState<'routine' | 'priority' | 'plant_down'>('routine')
@@ -48,7 +45,6 @@ export default function RfqSubmitForm({ locale, addresses }: Props) {
     e.preventDefault()
     const fd = new FormData(e.currentTarget)
     fd.set('lines', JSON.stringify(lines))
-    fd.set('locale', locale)
     fd.set('urgency', urgency)
 
     startTransition(async () => {
@@ -63,7 +59,7 @@ export default function RfqSubmitForm({ locale, addresses }: Props) {
     return (
       <div className="py-16 border border-dashed border-[var(--color-border)] text-center">
         <p className="text-[var(--color-muted)]">No items in your quote.</p>
-        <Link href={`/${locale}/quote`} className="mt-3 inline-block font-mono text-[12px] text-[var(--color-accent)] hover:underline">
+        <Link href={`/quote`} className="mt-3 inline-block font-mono text-[12px] text-[var(--color-accent)] hover:underline">
           ← Back to quote builder
         </Link>
       </div>
@@ -236,7 +232,7 @@ export default function RfqSubmitForm({ locale, addresses }: Props) {
 
           {/* Footer row */}
           <div className="flex justify-between items-center py-3.5">
-            <Link href={`/${locale}/quote`} className="font-mono text-[12px] text-[var(--color-muted)] hover:text-[var(--color-primary)] transition-colors">
+            <Link href={`/quote`} className="font-mono text-[12px] text-[var(--color-muted)] hover:text-[var(--color-primary)] transition-colors">
               ← Back to shortlist
             </Link>
             <button
@@ -254,7 +250,7 @@ export default function RfqSubmitForm({ locale, addresses }: Props) {
           <div className="border border-[var(--color-border)] bg-[var(--color-elevated)] overflow-hidden">
             <div className="px-[18px] py-4 border-b border-[var(--color-border)] flex justify-between items-center">
               <h3 className="text-[14px] font-semibold">Quoting · {lines.length} line{lines.length !== 1 ? 's' : ''}</h3>
-              <Link href={`/${locale}/quote`} className="text-[12px] text-[var(--color-accent)] hover:underline">Edit</Link>
+              <Link href={`/quote`} className="text-[12px] text-[var(--color-accent)] hover:underline">Edit</Link>
             </div>
 
             {/* Line items */}

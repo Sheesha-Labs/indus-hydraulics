@@ -3,7 +3,7 @@
 import { useState, useTransition, useRef, useCallback } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { updateItemQty, removeItem } from '../app/[locale]/account/lists/[id]/actions'
+import { updateItemQty, removeItem } from '../app/account/lists/[id]/actions'
 
 type Item = {
   id: string
@@ -16,12 +16,11 @@ type Item = {
 }
 
 type Props = {
-  locale: string
   listId: string
   items: Item[]
 }
 
-export default function SavedListClient({ locale, listId, items: initialItems }: Props) {
+export default function SavedListClient({ listId, items: initialItems }: Props) {
   const [items, setItems] = useState(initialItems)
   const [isPending, startTransition] = useTransition()
   const debounceTimers = useRef<Record<string, ReturnType<typeof setTimeout>>>({})
@@ -32,22 +31,22 @@ export default function SavedListClient({ locale, listId, items: initialItems }:
       setItems((prev) => prev.map((i) => (i.id === itemId ? { ...i, qty: newQty } : i)))
       clearTimeout(debounceTimers.current[itemId])
       debounceTimers.current[itemId] = setTimeout(() => {
-        startTransition(() => updateItemQty(itemId, newQty, listId, locale))
+        startTransition(() => updateItemQty(itemId, newQty, listId))
       }, 500)
     },
-    [listId, locale]
+    [listId]
   )
 
   function handleRemove(itemId: string) {
     setItems((prev) => prev.filter((i) => i.id !== itemId))
-    startTransition(() => removeItem(itemId, listId, locale))
+    startTransition(() => removeItem(itemId, listId))
   }
 
   if (items.length === 0) {
     return (
       <div className="py-12 border border-dashed border-[var(--color-border)] text-center mb-4">
         <p className="text-[var(--color-muted)] text-[13px]">No items in this list.</p>
-        <Link href={`/${locale}/c`} className="mt-3 inline-block font-mono text-[12px] text-[var(--color-accent)] hover:underline">
+        <Link href={`/c`} className="mt-3 inline-block font-mono text-[12px] text-[var(--color-accent)] hover:underline">
           Browse products →
         </Link>
       </div>
@@ -85,7 +84,7 @@ export default function SavedListClient({ locale, listId, items: initialItems }:
           {/* Product info */}
           <div>
             <Link
-              href={`/${locale}/p/${item.sku}`}
+              href={`/p/${item.sku}`}
               className="font-medium text-[13px] hover:text-[var(--color-accent)] transition-colors leading-snug"
             >
               {item.title}

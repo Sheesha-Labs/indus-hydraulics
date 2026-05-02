@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useTransition } from 'react'
-import { markNotificationRead, markAllRead } from '../app/[locale]/account/notifications/actions'
+import { markNotificationRead, markAllRead } from '../app/account/notifications/actions'
 
 interface Notification {
   id: string
@@ -14,7 +14,6 @@ interface Notification {
 interface Props {
   unreadCount: number
   notifications: Notification[]
-  locale: string
 }
 
 const KIND_LABELS: Record<string, string> = {
@@ -25,7 +24,7 @@ const KIND_LABELS: Record<string, string> = {
   account_updated: 'Account Updated',
 }
 
-export default function NotificationBell({ unreadCount: initialCount, notifications: initialNotifications, locale }: Props) {
+export default function NotificationBell({ unreadCount: initialCount, notifications: initialNotifications }: Props) {
   const [open, setOpen] = useState(false)
   const [notifications, setNotifications] = useState(initialNotifications)
   const [unreadCount, setUnreadCount] = useState(initialCount)
@@ -92,7 +91,7 @@ export default function NotificationBell({ unreadCount: initialCount, notificati
                 </div>
               ) : (
                 notifications.map((n) => {
-                  const href = getNotificationHref(n, locale)
+                  const href = getNotificationHref(n)
                   return (
                     <div
                       key={n.id}
@@ -147,8 +146,8 @@ export default function NotificationBell({ unreadCount: initialCount, notificati
   )
 }
 
-function getNotificationHref(n: { kind: string; payload: Record<string, unknown> }, locale: string): string | null {
-  if (typeof n.payload.rfqCode === 'string') return `/${locale}/quote/${n.payload.rfqCode}`
-  if (typeof n.payload.orderId === 'string') return `/${locale}/account/orders`
+function getNotificationHref(n: { kind: string; payload: Record<string, unknown> }): string | null {
+  if (typeof n.payload.rfqCode === 'string') return `/quote/${n.payload.rfqCode}`
+  if (typeof n.payload.orderId === 'string') return `/account/orders`
   return null
 }

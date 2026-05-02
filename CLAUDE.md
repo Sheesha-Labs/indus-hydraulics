@@ -16,54 +16,13 @@ This file is the authoritative engineering guide for this codebase. Claude Code 
 | ORM | Prisma |
 | Auth | NextAuth v5 (Auth.js) |
 | Monorepo | Turborepo + pnpm workspaces |
-| i18n | next-intl |
 | Testing | Vitest (unit) + Playwright (e2e) |
 
----
-
-## 1. Internationalization (i18n) — MANDATORY
-
-Every feature must ship with full English and Arabic support. This is a hard requirement, not a nice-to-have.
-
-### Rules
-
-1. **No hardcoded strings.** Every user-visible string — button labels, headings, error messages, placeholders, aria-labels, toast messages — must come from a translation key. Hardcoded English text is a bug.
-
-2. **Use `useTranslations()` in Client Components, `getTranslations()` in Server Components:**
-   ```tsx
-   // Server Component
-   const t = await getTranslations('product')
-   return <h1>{t('title')}</h1>
-
-   // Client Component
-   const t = useTranslations('rfq')
-   return <button>{t('submit')}</button>
-   ```
-
-3. **Namespaces map to features.** Keep message files flat within a namespace. Do not deeply nest more than 2 levels.
-   ```json
-   // packages/i18n/messages/en.json
-   {
-     "auth": { "signIn": "Sign In", "email": "Email address" },
-     "product": { "addToQuote": "Add to Quote", "specs": "Specifications" },
-     "rfq": { "submit": "Submit RFQ", "urgency": "Urgency" }
-   }
-   ```
-
-4. **Arabic keys must ship in the same PR.** If you add `en.json` keys without matching `ar.json` keys, CI will fail. The check is in `scripts/check-i18n.ts`.
-
-5. **RTL layout.** Arabic is a right-to-left language. The `<html>` element's `dir` attribute is set automatically by the `[locale]` layout. Use Tailwind's `rtl:` variant for any mirrored layout:
-   ```tsx
-   <div className="pl-4 rtl:pl-0 rtl:pr-4">...</div>
-   ```
-
-6. **Locale routing.** All routes live under `[locale]` — `/en/...` and `/ar/...`. Never hardcode `/en/` in internal links; always use `usePathname()` with the current locale.
-
-7. **Date, number, and currency formatting** must use `useFormatter()` from next-intl, not `toLocaleString()` directly.
+> **English-only.** This codebase shipped with full English/Arabic next-intl support but Arabic is no longer a product requirement. Routes live at `/`, not `[locale]/`. Strings are inlined as English literals in components — there is no `next-intl`, no `@indus/i18n` package, no message files. If you reintroduce locale routing later, do it as a deliberate new project; do not retrofit it on top of inline strings.
 
 ---
 
-## 2. Component Architecture
+## 1. Component Architecture
 
 ### Rules
 
@@ -91,7 +50,7 @@ Every feature must ship with full English and Arabic support. This is a hard req
 
 ---
 
-## 3. Styling
+## 2. Styling
 
 ### Rules
 
@@ -114,7 +73,7 @@ Every feature must ship with full English and Arabic support. This is a hard req
 
 ---
 
-## 4. Data Fetching
+## 3. Data Fetching
 
 ### Rules
 
@@ -137,7 +96,7 @@ Every feature must ship with full English and Arabic support. This is a hard req
 
 ---
 
-## 5. Authentication & Authorization
+## 4. Authentication & Authorization
 
 ### Rules
 
@@ -161,7 +120,7 @@ Every feature must ship with full English and Arabic support. This is a hard req
 
 ---
 
-## 6. Database & Prisma
+## 5. Database & Prisma
 
 ### Rules
 
@@ -183,7 +142,7 @@ Every feature must ship with full English and Arabic support. This is a hard req
 
 ---
 
-## 7. Error Handling
+## 6. Error Handling
 
 ### Rules
 
@@ -200,7 +159,7 @@ Every feature must ship with full English and Arabic support. This is a hard req
 
 ---
 
-## 8. RFQ State Machine
+## 7. RFQ State Machine
 
 The RFQ state machine is in `packages/domain/src/rfq-state-machine.ts`. It is the single source of truth for valid state transitions.
 
@@ -226,7 +185,7 @@ Any state → cancelled  (admin only)
 
 ---
 
-## 9. Testing
+## 8. Testing
 
 ### Rules
 
@@ -242,7 +201,7 @@ Any state → cancelled  (admin only)
 
 ---
 
-## 10. Git Conventions
+## 9. Git Conventions
 
 ### Commit format: Conventional Commits
 
@@ -255,7 +214,7 @@ docs(claude): update testing rules
 
 Types: `feat`, `fix`, `chore`, `docs`, `test`, `refactor`, `perf`
 
-Scopes: `auth`, `catalogue`, `rfq`, `quote`, `account`, `admin`, `db`, `ui`, `i18n`, `cms`, `seo`
+Scopes: `auth`, `catalogue`, `rfq`, `quote`, `account`, `admin`, `db`, `ui`, `cms`, `seo`
 
 ### Branch naming
 
@@ -274,7 +233,7 @@ chore/prisma-schema-update
 
 ---
 
-## 11. Accessibility
+## 10. Accessibility
 
 1. All interactive elements have ARIA labels or visible text labels
 2. Color alone never conveys state (always pair color with text or icon)
@@ -284,30 +243,30 @@ chore/prisma-schema-update
 
 ---
 
-## 12. File Structure Reference
+## 11. File Structure Reference
 
 ```
 apps/storefront/
   src/
     app/
-      [locale]/
-        layout.tsx           ← Sets <html lang dir>, loads fonts, next-intl
-        page.tsx             ← Home
-        (auth)/              ← sign-in, sign-up, forgot-password
-        (catalogue)/         ← c/[slug], p/[sku], search, compare, brands, industries
-        (rfq)/               ← quote, quote/submit, quote/[code]
-        account/             ← account portal (guarded by middleware)
+      layout.tsx             ← Root layout (<html lang="en">, fonts)
+      page.tsx               ← Home
+      (auth)/                ← sign-in, sign-up, forgot-password
+      (catalogue)/           ← c/[slug], p/[sku], search, compare, brands, industries
+      (rfq)/                 ← quote, quote/submit, quote/[code]
+      account/               ← account portal (guarded by proxy.ts)
+      sitemap.ts
     components/              ← storefront-specific components
     actions/                 ← server actions
     lib/                     ← utils, formatters, auth config
-    middleware.ts
+    proxy.ts                 ← middleware: auth guard for /account
 
 apps/admin/
   src/
     app/
-      [locale]/
-        layout.tsx
-        (auth)/
+      layout.tsx
+      (auth)/
+      (shell)/               ← all admin pages (sidebar shell)
         page.tsx             ← Dashboard
         products/
         categories/
@@ -319,42 +278,26 @@ apps/admin/
         seo/
         users/
         settings/
+        spec-templates/
     components/
-    actions/
     lib/
-    middleware.ts
+    proxy.ts
 
 packages/
   db/
+    prisma/schema.prisma
     src/
-      schema.prisma
       seed.ts
       index.ts               ← exports PrismaClient singleton
   ui/
     src/
-      Button.tsx
-      Badge.tsx
-      Input.tsx
-      Table.tsx
-      Card.tsx
-      Tabs.tsx
-      FilterBar.tsx
-      QuantityStepper.tsx
-      EmptyState.tsx
-      Stepper.tsx
-      StatusPill.tsx
-      KPICard.tsx
+      Button.tsx, Badge.tsx, Input.tsx, …
       index.ts               ← barrel export
-  i18n/
-    src/
-      config.ts
-      request.ts
-    messages/
-      en.json
-      ar.json
   domain/
     src/
       rfq-state-machine.ts
+      preview-token.ts       ← admin → storefront preview link signing
+      spec-templates.ts
       types.ts
       index.ts
 ```

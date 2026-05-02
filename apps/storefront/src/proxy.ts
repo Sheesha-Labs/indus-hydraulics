@@ -1,23 +1,14 @@
-import createMiddleware from 'next-intl/middleware'
 import { NextRequest, NextResponse } from 'next/server'
-import { routing } from '@indus/i18n'
-
-const intlMiddleware = createMiddleware(routing)
 
 const PROTECTED_ACCOUNT_PATHS = ['/account']
 
 function isProtectedAccountPath(pathname: string): boolean {
-  return PROTECTED_ACCOUNT_PATHS.some((path) => {
-    // Strip locale prefix to check path
-    const withoutLocale = pathname.replace(/^\/(en|ar)/, '')
-    return withoutLocale.startsWith(path)
-  })
+  return PROTECTED_ACCOUNT_PATHS.some((path) => pathname.startsWith(path))
 }
 
 export default async function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl
 
-  // Check auth for protected account routes
   if (isProtectedAccountPath(pathname)) {
     // NextAuth v5 (Auth.js) uses 'authjs.session-token' on HTTP,
     // '__Secure-authjs.session-token' on HTTPS. Keep v4 names as fallback for
@@ -29,17 +20,14 @@ export default async function proxy(request: NextRequest) {
       request.cookies.get('__Secure-next-auth.session-token')
 
     if (!sessionToken) {
-      const localeSeg = pathname.split('/')[1]
-      const locale = localeSeg === 'ar' || localeSeg === 'en' ? localeSeg : 'en'
-      // Preserve the originally requested URL so we can bounce back after sign-in.
       const next = pathname + (request.nextUrl.search ?? '')
-      const redirectUrl = new URL(`/${locale}/sign-in`, request.url)
+      const redirectUrl = new URL(`/sign-in`, request.url)
       redirectUrl.searchParams.set('next', next)
       return NextResponse.redirect(redirectUrl)
     }
   }
 
-  return intlMiddleware(request)
+  return NextResponse.next()
 }
 
 export const config = {

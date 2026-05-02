@@ -1,4 +1,3 @@
-import { getTranslations } from 'next-intl/server'
 import { safeAuth } from '../lib/auth'
 import { db } from '@indus/db'
 import SiteHeaderClient from './SiteHeaderClient'
@@ -6,8 +5,7 @@ import NotificationBell from './NotificationBell'
 
 export type CategoryNav = { id: string; name: string; slug: string; productCount: number }
 
-export default async function SiteHeader({ locale }: { locale: string }) {
-  const t = await getTranslations({ locale, namespace: 'nav' })
+export default async function SiteHeader() {
   const session = await safeAuth()
 
   const [categories, notifications, activeSkuCount] = await Promise.all([
@@ -35,18 +33,17 @@ export default async function SiteHeader({ locale }: { locale: string }) {
   }))
 
   const navItems = [
-    { label: t('products'), href: `/${locale}/c`, hasMegamenu: true },
-    { label: t('brands'), href: `/${locale}/brands`, hasMegamenu: false },
-    { label: t('industries'), href: `/${locale}/industries`, hasMegamenu: false },
-    { label: t('about'), href: `/${locale}/about`, hasMegamenu: false },
-    { label: t('contact'), href: `/${locale}/contact`, hasMegamenu: false },
+    { label: 'Products', href: `/c`, hasMegamenu: true },
+    { label: 'Brands', href: `/brands`, hasMegamenu: false },
+    { label: 'Industries', href: `/industries`, hasMegamenu: false },
+    { label: 'About', href: `/about`, hasMegamenu: false },
+    { label: 'Contact', href: `/contact`, hasMegamenu: false },
   ]
 
   const unreadCount = notifications.filter((n) => !n.readAt).length
 
   return (
     <SiteHeaderClient
-      locale={locale}
       navItems={navItems}
       navCategories={navCategories}
       isSignedIn={!!session}
@@ -60,7 +57,6 @@ export default async function SiteHeader({ locale }: { locale: string }) {
               ...n,
               payload: n.payload as Record<string, unknown>,
             }))}
-            locale={locale}
           />
         ) : null
       }

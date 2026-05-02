@@ -3,7 +3,7 @@
 import { useTransition, useState } from 'react'
 import Link from 'next/link'
 import type { StoreSettings, EmailTemplate } from '@indus/db'
-import { saveStoreSettings, saveEmailTemplate } from '../app/[locale]/(shell)/settings/actions'
+import { saveStoreSettings, saveEmailTemplate } from '../app/(shell)/settings/actions'
 
 interface Props {
   activeTab: string

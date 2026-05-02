@@ -3,7 +3,7 @@
 import { useTransition, useState } from 'react'
 import Link from 'next/link'
 import type { SeoSetting, Redirect } from '@indus/db'
-import { saveSeoSettings, addRedirect, deleteRedirect } from '../app/[locale]/(shell)/seo/actions'
+import { saveSeoSettings, addRedirect, deleteRedirect } from '../app/(shell)/seo/actions'
 
 interface Props {
   activeTab: string

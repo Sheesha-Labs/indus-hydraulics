@@ -8,7 +8,7 @@
     "lint": "turbo lint",
     "typecheck": "turbo typecheck",
     "test": "turbo test",
-    "check:i18n": "node scripts/check-i18n.mjs",
+    "test:e2e": "playwright test",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "db:generate": "turbo db:generate",
     "db:push": "turbo db:push",
@@ -19,7 +19,9 @@
     "turbo": "^2.5.3",
     "prettier": "^3.5.3",
     "prettier-plugin-tailwindcss": "^0.6.11",
-    "typescript": "^5.8.3"
+    "typescript": "^5.8.3",
+    "vitest": "^3.2.2",
+    "@playwright/test": "^1.50.0"
   },
   "engines": {
     "node": ">=20",

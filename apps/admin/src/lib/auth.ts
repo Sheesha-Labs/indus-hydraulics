@@ -73,7 +73,7 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
     },
   },
   pages: {
-    signIn: '/en/sign-in',
-    error: '/en/sign-in',
+    signIn: '/sign-in',
+    error: '/sign-in',
   },
 })

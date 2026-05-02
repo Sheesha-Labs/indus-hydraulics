@@ -35,7 +35,6 @@ type Faq = {
 }
 
 type Props = {
-  locale: string
   sku: string
   productId: string
   descriptionShort?: string | null
@@ -53,7 +52,6 @@ type Props = {
 }
 
 export default function ProductTabs({
-  locale,
   descriptionShort,
   descriptionLong,
   specGroups,
@@ -186,7 +184,7 @@ export default function ProductTabs({
                     <div className="font-mono text-[11px] text-[var(--color-muted)] mt-0.5">{doc.kind} · {doc.language.toUpperCase()}</div>
                   </div>
                   {doc.isGated && !isSignedIn ? (
-                    <Link href={`/${locale}/sign-in`} className="shrink-0 h-8 px-4 flex items-center border border-[var(--color-border)] font-mono text-[11px] text-[var(--color-body)] hover:bg-[var(--color-deep)] transition-colors">
+                    <Link href={`/sign-in`} className="shrink-0 h-8 px-4 flex items-center border border-[var(--color-border)] font-mono text-[11px] text-[var(--color-body)] hover:bg-[var(--color-deep)] transition-colors">
                       Sign in to download →
                     </Link>
                   ) : doc.mediaUrl ? (

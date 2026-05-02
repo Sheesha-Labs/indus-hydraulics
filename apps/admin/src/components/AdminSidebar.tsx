@@ -22,7 +22,6 @@ import {
 } from 'lucide-react'
 
 interface Props {
-  locale: string
   userName: string
   userRole: string
 }
@@ -73,7 +72,7 @@ const NAV_SECTIONS: { section: string; items: NavItem[] }[] = [
   },
 ]
 
-export default function AdminSidebar({ locale, userName, userRole }: Props) {
+export default function AdminSidebar({ userName, userRole }: Props) {
   const pathname = usePathname()
 
   const initials = userName
@@ -84,9 +83,8 @@ export default function AdminSidebar({ locale, userName, userRole }: Props) {
     .toUpperCase()
 
   function isActive(path: string) {
-    const full = `/${locale}${path ? `/${path}` : ''}`
-    if (path === '') return pathname === `/${locale}` || pathname === `/${locale}/`
-    return pathname.startsWith(full)
+    if (path === '') return pathname === '/'
+    return pathname.startsWith(`/${path}`)
   }
 
   return (
@@ -130,7 +128,7 @@ export default function AdminSidebar({ locale, userName, userRole }: Props) {
               return (
                 <Link
                   key={id}
-                  href={`/${locale}${path ? `/${path}` : ''}`}
+                  href={path ? `/${path}` : '/'}
                   aria-label={label}
                   aria-current={active ? 'page' : undefined}
                   className={`flex items-center gap-2.5 px-2.5 py-2 text-[13px] rounded-sm border-l-2 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[oklch(0.62_0.16_45)] ${
@@ -176,7 +174,7 @@ export default function AdminSidebar({ locale, userName, userRole }: Props) {
             <div className="font-mono text-[10px] text-[#6b7079] uppercase truncate">{userRole}</div>
           </div>
           <button
-            onClick={() => signOut({ callbackUrl: `/${locale}/sign-in` })}
+            onClick={() => signOut({ callbackUrl: `/sign-in` })}
             aria-label="Sign out"
             className="text-[#5b6068] hover:text-[#f0ece3] text-[11px] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[oklch(0.62_0.16_45)] rounded-sm p-1"
             title="Sign out"

@@ -1,6 +1,5 @@
 'use client'
 
-import { useTranslations } from 'next-intl'
 import { useState, useRef, useCallback } from 'react'
 import type React from 'react'
 import Link from 'next/link'
@@ -13,7 +12,6 @@ interface NavItem {
 }
 
 interface Props {
-  locale: string
   navItems: NavItem[]
   navCategories: CategoryNav[]
   isSignedIn: boolean
@@ -99,7 +97,6 @@ const TAXONOMY: TaxonomyEntry[] = [
 ]
 
 export default function SiteHeaderClient({
-  locale,
   navItems,
   navCategories,
   isSignedIn,
@@ -107,14 +104,11 @@ export default function SiteHeaderClient({
   notificationBell,
   activeSkuCount,
 }: Props) {
-  const t = useTranslations('nav')
   const [mobileOpen, setMobileOpen] = useState(false)
   const [megamenuOpen, setMegamenuOpen] = useState(false)
   const [activeCatIdx, setActiveCatIdx] = useState(0)
   const [activeSubIdx, setActiveSubIdx] = useState(0)
   const megaTimeout = useRef<ReturnType<typeof setTimeout> | null>(null)
-
-  const altLocale = locale === 'en' ? 'ar' : 'en'
 
   const openMega = useCallback(() => {
     if (megaTimeout.current) clearTimeout(megaTimeout.current)
@@ -139,7 +133,6 @@ export default function SiteHeaderClient({
     setActiveSubIdx(idx)
   }, [])
 
-  // Merge live DB counts into TAXONOMY
   const taxonomy = TAXONOMY.map((entry) => {
     const dbCat = navCategories.find(
       (c) => c.slug === entry.slug || c.name.toLowerCase() === entry.name.toLowerCase()
@@ -160,16 +153,13 @@ export default function SiteHeaderClient({
             <span>Mon–Sat 09:00–19:00 IST</span>
           </div>
           <div className="flex gap-4 opacity-85">
-            <Link href={`/${altLocale}`} className="hover:text-[var(--color-accent)]">
-              {altLocale === 'ar' ? 'العربية' : 'English'}
-            </Link>
             {isSignedIn ? (
-              <Link href={`/${locale}/account`} className="hover:text-[var(--color-accent)]">
-                {t('myAccount')}
+              <Link href={`/account`} className="hover:text-[var(--color-accent)]">
+                My account
               </Link>
             ) : (
-              <Link href={`/${locale}/sign-in`} className="hover:text-[var(--color-accent)]">
-                {t('signIn')}
+              <Link href={`/sign-in`} className="hover:text-[var(--color-accent)]">
+                Sign in
               </Link>
             )}
           </div>
@@ -179,7 +169,7 @@ export default function SiteHeaderClient({
       {/* Main nav bar */}
       <div className="max-w-[1360px] mx-auto px-8 h-16 flex items-center gap-8">
         {/* Logo */}
-        <Link href={`/${locale}`} className="flex items-center gap-2 shrink-0">
+        <Link href={`/`} className="flex items-center gap-2 shrink-0">
           <div className="w-8 h-8 bg-[var(--color-primary)] grid place-items-center shrink-0">
             <span className="text-white font-bold text-sm font-mono">IH</span>
           </div>
@@ -239,10 +229,10 @@ export default function SiteHeaderClient({
         <div className="ml-auto flex items-center gap-2">
           {/* Search bar */}
           <Link
-            href={`/${locale}/search`}
+            href={`/search`}
             className="hidden sm:flex items-center gap-2 h-9 px-3 border border-[var(--color-border)] text-[13px] text-[var(--color-muted)] hover:border-[var(--color-body)] transition-colors"
             style={{ minWidth: '240px' }}
-            aria-label={t('search')}
+            aria-label="Search"
           >
             <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
               <circle cx="7" cy="7" r="5" />
@@ -259,9 +249,9 @@ export default function SiteHeaderClient({
 
           {/* Quote basket */}
           <Link
-            href={`/${locale}/quote`}
+            href={`/quote`}
             className="relative flex items-center justify-center h-9 w-9 border border-[var(--color-border)] hover:bg-[var(--color-deep)] transition-colors"
-            aria-label={t('quote')}
+            aria-label="Quote"
           >
             <svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
               <rect x="4" y="3" width="12" height="14" rx="1" />
@@ -272,20 +262,20 @@ export default function SiteHeaderClient({
           {/* Account */}
           {isSignedIn ? (
             <Link
-              href={`/${locale}/account`}
+              href={`/account`}
               className="hidden sm:flex items-center gap-1.5 h-9 px-3 bg-[var(--color-primary)] text-[var(--color-elevated)] text-[13px] font-medium hover:bg-[var(--color-body)] transition-colors"
             >
               <div className="w-5 h-5 bg-[var(--color-accent)] grid place-items-center text-white text-[9px] font-bold shrink-0">
                 {(userName ?? 'U').charAt(0).toUpperCase()}
               </div>
-              {t('myAccount')}
+              My account
             </Link>
           ) : (
             <Link
-              href={`/${locale}/sign-in`}
+              href={`/sign-in`}
               className="hidden sm:flex h-9 px-4 items-center bg-[var(--color-primary)] text-[var(--color-elevated)] text-[13px] font-medium hover:bg-[var(--color-body)] transition-colors"
             >
-              {t('signIn')}
+              Sign in
             </Link>
           )}
 
@@ -332,7 +322,7 @@ export default function SiteHeaderClient({
                   {taxonomy.map((cat, i) => (
                     <Link
                       key={cat.slug}
-                      href={`/${locale}/c/${cat.dbSlug}`}
+                      href={`/c/${cat.dbSlug}`}
                       role="menuitem"
                       className={`flex justify-between items-center px-3 py-2.5 border-l-2 transition-colors text-[14px] ${
                         i === activeCatIdx
@@ -358,7 +348,7 @@ export default function SiteHeaderClient({
                   {(activeCat?.subs ?? []).map((sub, i) => (
                     <Link
                       key={sub.id}
-                      href={`/${locale}/c/${activeCat?.dbSlug}?sub=${sub.id}`}
+                      href={`/c/${activeCat?.dbSlug}?sub=${sub.id}`}
                       role="menuitem"
                       className={`flex justify-between items-center px-3 py-2.5 border-l-2 transition-colors text-[14px] ${
                         i === activeSubIdx
@@ -384,7 +374,7 @@ export default function SiteHeaderClient({
                   {(activeSub?.leaves ?? []).map((leaf) => (
                     <Link
                       key={leaf}
-                      href={`/${locale}/c/${activeCat?.dbSlug}?sub=${activeSub?.id}&type=${encodeURIComponent(leaf)}`}
+                      href={`/c/${activeCat?.dbSlug}?sub=${activeSub?.id}&type=${encodeURIComponent(leaf)}`}
                       role="menuitem"
                       className="flex justify-between items-center px-3 py-2.5 border-l-2 border-transparent text-[14px] text-[var(--color-body)] hover:bg-[var(--color-surface)] hover:border-[var(--color-accent)] transition-colors"
                       onClick={closeMegaImmediate}
@@ -398,7 +388,7 @@ export default function SiteHeaderClient({
                 {/* Browse all CTA */}
                 <div className="mt-auto pt-4">
                   <Link
-                    href={`/${locale}/c/${activeCat?.dbSlug}`}
+                    href={`/c/${activeCat?.dbSlug}`}
                     className="flex items-center justify-between gap-2 h-10 px-4 border border-[var(--color-border)] text-[13px] text-[var(--color-body)] hover:bg-[var(--color-deep)] transition-colors"
                     onClick={closeMegaImmediate}
                   >
@@ -435,7 +425,7 @@ export default function SiteHeaderClient({
               {taxonomy.map((cat) => (
                 <Link
                   key={cat.slug}
-                  href={`/${locale}/c/${cat.dbSlug}`}
+                  href={`/c/${cat.dbSlug}`}
                   className="flex justify-between items-center py-2 text-[13px] text-[var(--color-body)] hover:text-[var(--color-accent)]"
                   onClick={() => setMobileOpen(false)}
                 >
@@ -448,16 +438,16 @@ export default function SiteHeaderClient({
 
           <div className="px-8 py-4 flex gap-3">
             <Link
-              href={`/${locale}/sign-in`}
+              href={`/sign-in`}
               className="flex-1 h-10 flex items-center justify-center border border-[var(--color-border)] text-[13px] font-medium"
             >
-              {t('signIn')}
+              Sign in
             </Link>
             <Link
-              href={`/${locale}/quote`}
+              href={`/quote`}
               className="flex-1 h-10 flex items-center justify-center bg-[var(--color-accent)] text-white text-[13px] font-medium"
             >
-              {t('quote')}
+              Quote
             </Link>
           </div>
         </div>

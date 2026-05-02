@@ -1,0 +1,48 @@
+import type { Metadata } from 'next'
+import { db } from '@indus/db'
+import { notFound } from 'next/navigation'
+
+export const metadata: Metadata = { title: 'Terms of Service' }
+
+type Props = { params: Promise<Record<string, never>> }
+
+export default async function TermsPage({ params }: Props) {
+  await params
+
+  const cms = await db.cmsPage.findUnique({
+    where: { slug: 'terms' },
+  })
+
+  if (cms?.isPublished) {
+    return (
+      <article className="max-w-[820px] mx-auto px-8 py-16 pb-24 prose prose-sm">
+        <h1 className="text-[36px] font-semibold tracking-tight mb-2">{cms.title}</h1>
+        <div
+          className="text-[15px] leading-[1.7] text-[var(--color-body)]"
+          dangerouslySetInnerHTML={{ __html: cms.body }}
+        />
+      </article>
+    )
+  }
+
+  if (cms) {
+    notFound()
+  }
+
+  return (
+    <div className="max-w-[820px] mx-auto px-8 py-16 pb-24">
+      <h1 className="text-[36px] font-semibold tracking-tight mb-3">Terms of Service</h1>
+      <p className="text-[15px] text-[var(--color-muted)] leading-[1.7] mb-3">
+        Our standard terms of sale and service are currently being prepared.
+      </p>
+      <p className="text-[14px] text-[var(--color-muted)] leading-[1.7]">
+        For commercial terms applicable to ongoing engagements, please refer to the
+        contract document supplied with your quote, or contact{' '}
+        <a className="text-[var(--color-accent)] hover:underline" href="mailto:sales@indushydraulics.com">
+          sales@indushydraulics.com
+        </a>
+        .
+      </p>
+    </div>
+  )
+}

@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useTransition } from 'react'
-import { addAddress, setDefaultAddress, deleteAddress } from '../app/[locale]/account/addresses/actions'
+import { addAddress, setDefaultAddress, deleteAddress } from '../app/account/addresses/actions'
 
 type Address = {
   id: string
@@ -20,7 +20,6 @@ type Address = {
 }
 
 type Props = {
-  locale: string
   addresses: Address[]
   requiresApproval: boolean
 }
@@ -43,14 +42,13 @@ const COUNTRIES = [
   { code: 'US', name: 'United States' },
 ]
 
-export default function AddressBook({ locale, addresses, requiresApproval }: Props) {
+export default function AddressBook({ addresses, requiresApproval }: Props) {
   const [showForm, setShowForm] = useState(false)
   const [isPending, startTransition] = useTransition()
 
   function handleAdd(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault()
     const fd = new FormData(e.currentTarget)
-    fd.set('locale', locale)
     startTransition(async () => {
       await addAddress(fd)
       setShowForm(false)
@@ -105,7 +103,7 @@ export default function AddressBook({ locale, addresses, requiresApproval }: Pro
               <div className="flex flex-col items-end gap-1.5 shrink-0">
                 {!addr.isDefaultShip && (addr.kind === 'ship_to' || addr.kind === 'both') && (
                   <button
-                    onClick={() => startTransition(() => setDefaultAddress(addr.id, 'ship', locale))}
+                    onClick={() => startTransition(() => setDefaultAddress(addr.id, 'ship'))}
                     disabled={isPending}
                     className="font-mono text-[11px] text-[var(--color-accent)] hover:underline disabled:opacity-50"
                   >
@@ -114,7 +112,7 @@ export default function AddressBook({ locale, addresses, requiresApproval }: Pro
                 )}
                 {!addr.isDefaultBill && (addr.kind === 'bill_to' || addr.kind === 'both') && (
                   <button
-                    onClick={() => startTransition(() => setDefaultAddress(addr.id, 'bill', locale))}
+                    onClick={() => startTransition(() => setDefaultAddress(addr.id, 'bill'))}
                     disabled={isPending}
                     className="font-mono text-[11px] text-[var(--color-accent)] hover:underline disabled:opacity-50"
                   >
@@ -124,7 +122,7 @@ export default function AddressBook({ locale, addresses, requiresApproval }: Pro
                 <button
                   onClick={() => {
                     if (confirm('Delete this address?')) {
-                      startTransition(() => deleteAddress(addr.id, locale))
+                      startTransition(() => deleteAddress(addr.id))
                     }
                   }}
                   disabled={isPending}

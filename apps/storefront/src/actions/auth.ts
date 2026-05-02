@@ -21,7 +21,6 @@ export async function signInAction(formData: FormData): Promise<Result<void>> {
     email: formData.get('email'),
     password: formData.get('password'),
     rememberMe: formData.get('rememberMe') === 'on',
-    locale: formData.get('locale') ?? 'en',
   }
 
   const parsed = signInSchema.safeParse(raw)
@@ -84,7 +83,6 @@ export async function signUpAction(formData: FormData): Promise<Result<{ message
     country: formData.get('country'),
     needs: needs.length ? needs : undefined,
     agreedToTerms: formData.get('agreedToTerms') === 'on',
-    locale: formData.get('locale') ?? 'en',
   }
 
   const parsed = signUpSchema.safeParse(raw)

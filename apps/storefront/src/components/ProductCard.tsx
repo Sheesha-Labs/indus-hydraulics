@@ -16,16 +16,15 @@ type ProductCardProps = {
     }>
     specs: Array<{ label: string; value: string; unit?: string | null }>
   }
-  locale: string
 }
 
-export default function ProductCard({ product, locale }: ProductCardProps) {
+export default function ProductCard({ product }: ProductCardProps) {
   const image = product.images[0]
   const imgUrl = image ? mediaUrl(image.media.storagePath) : null
 
   return (
     <Link
-      href={`/${locale}/p/${product.sku}`}
+      href={`/p/${product.sku}`}
       className="group border border-[var(--color-border)] bg-[var(--color-elevated)] overflow-hidden flex flex-col hover:border-[var(--color-body)] transition-colors"
     >
       {/* Image */}

@@ -4,13 +4,12 @@ import { useEffect, useState } from 'react'
 import Link from 'next/link'
 
 type Props = {
-  locale: string
   title: string
   sku: string
   datasheetUrl?: string
 }
 
-export default function ProductStickyBar({ locale, title, sku, datasheetUrl }: Props) {
+export default function ProductStickyBar({ title, sku, datasheetUrl }: Props) {
   const [visible, setVisible] = useState(false)
 
   useEffect(() => {

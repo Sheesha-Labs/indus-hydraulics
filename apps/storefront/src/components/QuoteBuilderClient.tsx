@@ -3,7 +3,6 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { useTranslations } from 'next-intl'
 
 export type QuoteItem = {
   sku: string
@@ -15,12 +14,10 @@ export type QuoteItem = {
 }
 
 type Props = {
-  locale: string
   isSignedIn: boolean
 }
 
-export default function QuoteBuilderClient({ locale, isSignedIn }: Props) {
-  const t = useTranslations('rfq')
+export default function QuoteBuilderClient({ isSignedIn }: Props) {
   const [items, setItems] = useState<QuoteItem[]>([])
   const [mounted, setMounted] = useState(false)
 
@@ -60,21 +57,23 @@ export default function QuoteBuilderClient({ locale, isSignedIn }: Props) {
     return (
       <div className="py-20 text-center border border-dashed border-[var(--color-border)]">
         <div className="text-[40px] mb-4 opacity-20">📋</div>
-        <p className="text-[18px] font-semibold mb-2">{t('empty')}</p>
-        <p className="text-[14px] text-[var(--color-muted)] mb-6">{t('emptyDescription')}</p>
+        <p className="text-[18px] font-semibold mb-2">Your quote is empty</p>
+        <p className="text-[14px] text-[var(--color-muted)] mb-6">
+          Browse the catalogue and add products to build your RFQ.
+        </p>
         <Link
-          href={`/${locale}/c`}
+          href={`/c`}
           className="inline-flex h-10 px-6 items-center bg-[var(--color-accent)] text-white text-[13px] font-medium hover:opacity-90"
         >
-          {t('browse')}
+          Browse Products
         </Link>
       </div>
     )
   }
 
   const submitUrl = isSignedIn
-    ? `/${locale}/quote/submit`
-    : `/${locale}/sign-in?next=/${locale}/quote/submit`
+    ? `/quote/submit`
+    : `/sign-in?next=/quote/submit`
 
   return (
     <div className="grid gap-8" style={{ gridTemplateColumns: '1fr 360px', alignItems: 'start' }}>
@@ -112,7 +111,7 @@ export default function QuoteBuilderClient({ locale, isSignedIn }: Props) {
               <div>
                 <div className="font-mono text-[11px] text-[var(--color-muted)]">{item.sku}</div>
                 <div className="font-medium text-[14px] mt-0.5 leading-snug">
-                  <Link href={`/${locale}/p/${item.sku}`} className="hover:text-[var(--color-accent)] transition-colors">
+                  <Link href={`/p/${item.sku}`} className="hover:text-[var(--color-accent)] transition-colors">
                     {item.title}
                   </Link>
                 </div>
@@ -155,7 +154,7 @@ export default function QuoteBuilderClient({ locale, isSignedIn }: Props) {
 
           {/* Footer row */}
           <div className="px-4 py-3.5 bg-[var(--color-surface)] border-t border-[var(--color-border)] flex justify-between items-center">
-            <Link href={`/${locale}/c`} className="text-[13px] text-[var(--color-accent)] hover:underline">
+            <Link href={`/c`} className="text-[13px] text-[var(--color-accent)] hover:underline">
               + Add another SKU
             </Link>
             <button
@@ -186,8 +185,8 @@ export default function QuoteBuilderClient({ locale, isSignedIn }: Props) {
         {/* Guest sign-in nudge */}
         {!isSignedIn && (
           <p className="mt-4 text-[12px] text-[var(--color-muted)] text-center">
-            {t('signInToSubmit')} —{' '}
-            <Link href={`/${locale}/sign-in?next=/${locale}/quote/submit`} className="text-[var(--color-accent)] hover:underline">
+            Sign in to submit your RFQ —{' '}
+            <Link href={`/sign-in?next=/quote/submit`} className="text-[var(--color-accent)] hover:underline">
               Sign in
             </Link>
           </p>

@@ -1,60 +1,65 @@
-// Root-level not-found — handles 404s that escape the [locale] segment.
-// The [locale]/not-found.tsx is wrapped by [locale]/layout.tsx (which provides
-// <html>/<body>); but a 404 outside any locale segment lands here, where the
-// root layout is intentionally empty. We must therefore render our own
-// <html>/<body> shell.
 import Link from 'next/link'
+import { db } from '@indus/db'
 
-export default function RootNotFound() {
+export default async function NotFound() {
+  const categories = await db.category.findMany({
+    where: { isPublished: true, parentId: null },
+    take: 6,
+    orderBy: { position: 'asc' },
+    select: { slug: true, name: true },
+  })
+
   return (
-    <html lang="en">
-      <body
-        style={{
-          margin: 0,
-          minHeight: '100vh',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          fontFamily:
-            '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
-          background: '#f5f3ee',
-          color: '#111418',
-        }}
-      >
-        <div style={{ textAlign: 'center', padding: '0 24px', maxWidth: 480 }}>
-          <p
-            style={{
-              fontFamily: 'monospace',
-              fontSize: 80,
-              color: '#d9d4c8',
-              margin: 0,
-              lineHeight: 1,
-            }}
+    <div className="max-w-[680px] mx-auto px-8 py-20 pb-32 text-center">
+      <div className="font-mono text-[80px] font-semibold text-[var(--color-border)] leading-none mb-6">
+        404
+      </div>
+      <h1 className="text-[28px] font-semibold tracking-tight mb-3">Page not found</h1>
+      <p className="text-[14px] text-[var(--color-muted)] mb-8 leading-[1.6]">
+        The page you&apos;re looking for doesn&apos;t exist or may have been moved.
+      </p>
+
+      <form method="GET" action="/search" className="mb-8">
+        <div className="flex border border-[var(--color-border)] bg-[var(--color-elevated)] max-w-[400px] mx-auto">
+          <input
+            name="q"
+            type="text"
+            placeholder="Search products…"
+            className="flex-1 px-4 py-2.5 bg-transparent text-[13px] text-[var(--color-primary)] placeholder:text-[var(--color-caption)] focus:outline-none"
+          />
+          <button
+            type="submit"
+            className="px-4 border-l border-[var(--color-border)] bg-[var(--color-accent)] text-white font-mono text-[12px] hover:opacity-90"
           >
-            404
-          </p>
-          <h1 style={{ fontSize: 24, fontWeight: 600, marginTop: 24 }}>
-            Page not found
-          </h1>
-          <p style={{ color: '#5b6068', fontSize: 14, marginTop: 8 }}>
-            The page you&apos;re looking for doesn&apos;t exist or may have been
-            moved.
-          </p>
-          <Link
-            href="/en"
-            style={{
-              display: 'inline-block',
-              marginTop: 24,
-              fontFamily: 'monospace',
-              fontSize: 12,
-              color: 'oklch(0.62 0.16 45)',
-              textDecoration: 'none',
-            }}
-          >
-            ← Back to home
-          </Link>
+            Search
+          </button>
         </div>
-      </body>
-    </html>
+      </form>
+
+      {categories.length > 0 && (
+        <div>
+          <p className="font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-3">
+            Browse Categories
+          </p>
+          <div className="flex flex-wrap justify-center gap-2">
+            {categories.map((cat) => (
+              <Link
+                key={cat.slug}
+                href={`/c/${cat.slug}`}
+                className="px-4 py-2 border border-[var(--color-border)] bg-[var(--color-elevated)] font-mono text-[12px] text-[var(--color-body)] hover:border-[var(--color-body)] hover:text-[var(--color-primary)] transition-colors"
+              >
+                {cat.name}
+              </Link>
+            ))}
+          </div>
+        </div>
+      )}
+
+      <div className="mt-8">
+        <Link href="/" className="font-mono text-[12px] text-[var(--color-accent)] hover:underline">
+          ← Back to home
+        </Link>
+      </div>
+    </div>
   )
 }
