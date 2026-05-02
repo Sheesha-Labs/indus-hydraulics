@@ -1,12 +1,16 @@
 'use client'
 
-import { useRef, useState, useTransition } from 'react'
+import { useEffect, useRef, useState, useTransition } from 'react'
 import Link from 'next/link'
+import { useSearchParams } from 'next/navigation'
+import SeoEntityDrawer, { type SeoDrawerEntity } from '../../../../../components/seo/SeoEntityDrawer'
+import type { RecentMedia } from '../../../../../components/seo/OgImagePicker'
 import {
   updateProductCore,
   updateProductCommerce,
   updateProductDescription,
   updateProductSeo,
+  uploadProductOgImage,
   addProductSpec,
   updateProductSpec,
   deleteProductSpec,
@@ -55,6 +59,30 @@ type Product = {
   hsCode: string | null
   seoTitle: string | null
   seoDescription: string | null
+  // SEO OS — full set of overrides edited from the SEO drawer.
+  canonicalUrl: string | null
+  focusKeyword: string | null
+  robotsIndex: boolean
+  robotsFollow: boolean
+  ogImageMediaId: string | null
+  ogImageStoragePath: string | null
+  sitemapPriority: number | null
+  sitemapChangeFreq:
+    | 'always'
+    | 'hourly'
+    | 'daily'
+    | 'weekly'
+    | 'monthly'
+    | 'yearly'
+    | 'never'
+    | null
+  excludeFromSitemap: boolean
+  jsonLdOverride: string | null
+  publicUrl: string
+  brandName: string | null
+  categoryName: string | null
+  categorySlug: string | null
+  imageUrls: string[]
   updatedAt: string
 }
 
@@ -129,6 +157,8 @@ interface Props {
   faqs: Faq[]
   brands: Option[]
   categories: Option[]
+  /** Recent images for the SEO drawer's OG picker. */
+  recentImages: RecentMedia[]
 }
 
 const TABS = [
@@ -157,9 +187,22 @@ export default function ProductEditorClient({
   faqs,
   brands,
   categories,
+  recentImages,
 }: Props) {
-  const [tab, setTab] = useState<TabId>('core')
+  const searchParams = useSearchParams()
+  const initialTab = (() => {
+    const t = searchParams?.get('tab')
+    return TABS.some((x) => x.id === t) ? (t as TabId) : 'core'
+  })()
+  const [tab, setTab] = useState<TabId>(initialTab)
   const [savedAt, setSavedAt] = useState<string | null>(null)
+
+  // Keep the local tab in sync if the URL changes via Inspector deep-link.
+  useEffect(() => {
+    const t = searchParams?.get('tab')
+    if (t && TABS.some((x) => x.id === t) && t !== tab) setTab(t as TabId)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [searchParams])
 
   function bumpSaved() {
     setSavedAt(new Date().toLocaleTimeString())
@@ -234,7 +277,24 @@ export default function ProductEditorClient({
       {tab === 'documents' && <DocumentsTab productId={product.id} documents={documents} onSaved={bumpSaved} />}
       {tab === 'crossref' && <CrossRefsTab productId={product.id} crossRefs={crossRefs} onSaved={bumpSaved} />}
       {tab === 'faq' && <FaqsTab productId={product.id} faqs={faqs} onSaved={bumpSaved} />}
-      {tab === 'seo' && <SeoTab product={product} onSaved={bumpSaved} />}
+      {tab === 'seo' && (
+        <SeoEntityDrawer
+          entityType="product"
+          entity={toSeoEntity(product)}
+          extra={{
+            kind: 'product',
+            sku: product.sku,
+            mpn: product.mpn,
+            brandName: product.brandName,
+            categoryName: product.categoryName,
+            imageUrls: product.imageUrls,
+          }}
+          recentImages={recentImages}
+          saveAction={updateProductSeo}
+          uploadAction={uploadProductOgImage}
+          onSaved={bumpSaved}
+        />
+      )}
     </div>
   )
 }
@@ -1922,41 +1982,48 @@ function AddFaqForm({
   )
 }
 
-// ── SEO tab ──────────────────────────────────────────────────────────────────
+// ── SEO tab → reusable drawer ──────────────────────────────────────────────
 
-function SeoTab({ product, onSaved }: { product: Product; onSaved: () => void }) {
-  const [pending, startTransition] = useTransition()
-  const [error, setError] = useState<string | null>(null)
-
-  function onSubmit(formData: FormData) {
-    setError(null)
-    startTransition(async () => {
-      const r = await updateProductSeo(formData)
-      if (!r.success) {
-        setError(r.message)
-        return
-      }
-      onSaved()
-    })
+/**
+ * Project the editor's `Product` shape onto the entity shape the
+ * `SeoEntityDrawer` consumes. Pulls out only SEO + identity fields; the
+ * drawer doesn't need pricing/spec data.
+ */
+function toSeoEntity(product: Product): SeoDrawerEntity {
+  return {
+    id: product.id,
+    displayName: product.title,
+    slug: product.slug,
+    publicUrl: product.publicUrl,
+    parentBreadcrumb:
+      product.categoryName && product.categorySlug
+        ? {
+            name: product.categoryName,
+            url: rootOf(product.publicUrl) + '/c/' + product.categorySlug,
+          }
+        : null,
+    seoTitle: product.seoTitle,
+    seoDescription: product.seoDescription,
+    canonicalUrl: product.canonicalUrl,
+    focusKeyword: product.focusKeyword,
+    robotsIndex: product.robotsIndex,
+    robotsFollow: product.robotsFollow,
+    ogImageMediaId: product.ogImageMediaId,
+    ogImageStoragePath: product.ogImageStoragePath,
+    sitemapPriority: product.sitemapPriority,
+    sitemapChangeFreq: product.sitemapChangeFreq,
+    excludeFromSitemap: product.excludeFromSitemap,
+    jsonLdOverride: product.jsonLdOverride,
   }
+}
 
-  return (
-    <form action={onSubmit} className="flex flex-col gap-5 bg-white border border-[var(--color-border)] p-6 max-w-3xl">
-      <input type="hidden" name="id" value={product.id} />
-
-      {error && <ErrorBanner message={error} />}
-
-      <Field label="SEO title" hint="Overrides default page title in search results">
-        <input name="seoTitle" defaultValue={product.seoTitle ?? ''} className={inputCls} />
-      </Field>
-
-      <Field label="SEO description" hint="155 characters recommended">
-        <textarea name="seoDescription" defaultValue={product.seoDescription ?? ''} rows={3} className={textareaCls} />
-      </Field>
-
-      <SaveButton pending={pending}>Save SEO</SaveButton>
-    </form>
-  )
+function rootOf(url: string): string {
+  try {
+    const u = new URL(url)
+    return `${u.protocol}//${u.host}`
+  } catch {
+    return ''
+  }
 }
 
 // ── Shared primitives ───────────────────────────────────────────────────────
