@@ -3,6 +3,8 @@ export type { SendEmailInput, SendEmailResult, EmailKind, EmailAttachment } from
 export { renderRfqConfirmation } from './templates/rfq-confirmation'
 export { renderRfqInternalAlert } from './templates/rfq-internal-alert'
 export { renderQuoteSent } from './templates/quote-sent'
+export { renderQuoteAck } from './templates/quote-ack'
 export type { RfqConfirmationProps } from './templates/rfq-confirmation'
 export type { RfqInternalAlertProps } from './templates/rfq-internal-alert'
 export type { QuoteSentProps } from './templates/quote-sent'
+export type { QuoteAckProps } from './templates/quote-ack'

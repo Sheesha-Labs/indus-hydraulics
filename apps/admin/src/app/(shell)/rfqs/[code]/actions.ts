@@ -5,7 +5,7 @@ import { z } from 'zod'
 import { db } from '@indus/db'
 import { assertTransition } from '@indus/domain'
 import { renderEstimatePdf, uploadQuotePdf, computeTotals } from '@indus/pdf'
-import { sendEmail, renderQuoteSent } from '@indus/email'
+import { sendEmail, renderQuoteSent, renderQuoteAck } from '@indus/email'
 import { auth } from '../../../../lib/auth'
 import { ROLES, requireRole } from '../../../../lib/rbac'
 import { fail, failFromError, ok, type Result } from '../../../../lib/result'
@@ -25,7 +25,15 @@ export async function updateRfqStatus(rfqId: string, to: string): Promise<Result
 
     const rfq = await db.rfq.findUnique({
       where: { id: parsed.rfqId },
-      select: { status: true },
+      select: {
+        id: true,
+        code: true,
+        status: true,
+        accountId: true,
+        submittedByContactId: true,
+        submittedBy: { select: { firstName: true, lastName: true, email: true } },
+        quotes: { orderBy: { revision: 'desc' }, take: 1 },
+      },
     })
     if (!rfq) return fail('NOT_FOUND', 'RFQ not found')
 
@@ -44,11 +52,90 @@ export async function updateRfqStatus(rfqId: string, to: string): Promise<Result
       },
     })
 
+    // Side effects on terminal customer-visible transitions
+    if ((parsed.to === 'accepted' || parsed.to === 'declined') && rfq.submittedBy && rfq.quotes[0]) {
+      void fireQuoteAckSideEffects({
+        rfqId: rfq.id,
+        rfqCode: rfq.code,
+        outcome: parsed.to,
+        contactId: rfq.submittedByContactId,
+        contactName: `${rfq.submittedBy.firstName} ${rfq.submittedBy.lastName}`.trim() || rfq.submittedBy.email,
+        contactEmail: rfq.submittedBy.email,
+        quote: rfq.quotes[0],
+      })
+    }
+
     revalidatePath(`//rfqs`)
     revalidatePath(`//rfqs/[code]`, 'page')
     return ok(undefined)
   } catch (err) {
     return failFromError(err)
+  }
+}
+
+async function fireQuoteAckSideEffects(input: {
+  rfqId: string
+  rfqCode: string
+  outcome: 'accepted' | 'declined'
+  contactId: string | null
+  contactName: string
+  contactEmail: string
+  quote: { id: string; code: string; revision: number; total: unknown }
+}): Promise<void> {
+  try {
+    const settings = await db.storeSettings.findFirst()
+    const fromEmail = settings?.quoteFromEmail ?? 'sales@indushydraulics.me'
+    const fromName = settings?.quoteFromName ?? null
+
+    const totalNum = Number(input.quote.total)
+    const ack = renderQuoteAck({
+      customerName: input.contactName,
+      quoteCode: input.quote.code,
+      ...(input.quote.revision > 1 ? { revisionLabel: `R${input.quote.revision}` } : {}),
+      outcome: input.outcome,
+      totalDisplay: formatAed(totalNum),
+      branding: {
+        legalName: settings?.legalName ?? 'Indus Hydraulic Power Trading LLC',
+        vatTrn: settings?.vatTrn ?? null,
+        registeredAddressLines: (settings?.registeredAddressLines as string[] | null) ?? [],
+        signatureName: settings?.signatureName ?? null,
+        signatureTitle: settings?.signatureTitle ?? null,
+        signaturePhone: settings?.signaturePhone ?? null,
+        signatureEmail: settings?.signatureEmail ?? null,
+      },
+    })
+
+    await sendEmail({
+      kind: input.outcome === 'accepted' ? 'quote_accepted_ack' : 'quote_declined_ack',
+      to: [input.contactEmail],
+      subject: ack.subject,
+      html: ack.html,
+      fromEmail,
+      ...(fromName ? { fromName } : {}),
+      replyTo: fromEmail,
+      rfqId: input.rfqId,
+      quoteId: input.quote.id,
+    })
+
+    // In-app notification for the customer's account portal bell.
+    if (input.contactId) {
+      await db.notification.create({
+        data: {
+          recipientKind: 'contact',
+          contactId: input.contactId,
+          kind: 'rfq_status_change',
+          payload: {
+            rfqId: input.rfqId,
+            rfqCode: input.rfqCode,
+            quoteCode: input.quote.code,
+            outcome: input.outcome,
+          },
+        },
+      })
+    }
+  } catch (err) {
+    // eslint-disable-next-line no-console
+    console.error('[updateRfqStatus] ack side-effect error', err)
   }
 }
 

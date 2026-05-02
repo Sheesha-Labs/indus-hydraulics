@@ -70,7 +70,7 @@ export default async function RfqStatusPage({ params, searchParams }: Props) {
         orderBy: { position: 'asc' },
       },
       shipToAddress: true,
-      quotes: { orderBy: { sentAt: 'desc' }, take: 1, include: { pdfMedia: true } },
+      quotes: { orderBy: { revision: 'desc' }, include: { pdfMedia: true } },
     },
   })
 
@@ -228,18 +228,43 @@ export default async function RfqStatusPage({ params, searchParams }: Props) {
         ))}
       </div>
 
-      {/* ── Quote PDF ──────────────────────────────────────────── */}
-      {rfq.quotes.length > 0 && rfq.quotes[0]?.pdfMedia && (
+      {/* ── Quote PDF (latest + previous revisions) ─────────────── */}
+      {rfq.quotes.length > 0 && (
         <div className="border border-[var(--color-border)] bg-[var(--color-elevated)] p-5 mb-8">
-          <h3 className="font-mono text-[10px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-3">Quote PDF ready</h3>
-          <a
-            href={rfq.quotes[0]!.pdfMedia!.storagePath}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 h-9 px-4 border border-[var(--color-accent)] text-[var(--color-accent)] font-mono text-[12px] hover:bg-[var(--color-accent)] hover:text-white transition-colors"
-          >
-            Download quote PDF ↓
-          </a>
+          <h3 className="font-mono text-[10px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1">
+            Quotation {rfq.quotes.length > 1 ? '(revisions)' : 'ready'}
+          </h3>
+          <p className="text-[12px] text-[var(--color-muted)] mb-4">
+            To accept, please reply to the email we sent you confirming the order. The PDF below is identical to the attachment.
+          </p>
+          <div className="space-y-2">
+            {rfq.quotes.map((q) => (
+              <div key={q.id} className="flex items-center justify-between gap-4 py-2 border-b border-[var(--color-border)] last:border-0">
+                <div>
+                  <div className="font-mono text-[13px] text-[var(--color-primary)]">
+                    {q.code}
+                    {q.revision > 1 ? <span className="text-[var(--color-muted)] ml-2">R{q.revision}</span> : null}
+                  </div>
+                  <div className="font-mono text-[10px] text-[var(--color-muted)] mt-0.5">
+                    Sent {q.sentAt ? new Date(q.sentAt).toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' }) : '—'}
+                    {q.expiresAt ? ` · valid until ${new Date(q.expiresAt).toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' })}` : ''}
+                  </div>
+                </div>
+                {q.pdfMedia ? (
+                  <a
+                    href={`/api/quotes/${encodeURIComponent(q.code)}/pdf`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 h-9 px-4 border border-[var(--color-accent)] text-[var(--color-accent)] font-mono text-[12px] hover:bg-[var(--color-accent)] hover:text-white transition-colors whitespace-nowrap"
+                  >
+                    Download PDF ↓
+                  </a>
+                ) : (
+                  <span className="font-mono text-[11px] text-[var(--color-muted)]">no PDF</span>
+                )}
+              </div>
+            ))}
+          </div>
         </div>
       )}
 
