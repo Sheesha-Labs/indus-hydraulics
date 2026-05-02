@@ -38,13 +38,25 @@ export default async function EditProductPage({ params }: Props) {
 
   if (!product) notFound()
 
-  const [brands, categories, templates] = await Promise.all([
+  const [brands, categories, templates, recentMedia, ogMedia] = await Promise.all([
     db.brand.findMany({ orderBy: { name: 'asc' } }),
     db.category.findMany({ orderBy: { name: 'asc' } }),
     db.specTemplate.findMany({
       orderBy: { name: 'asc' },
       select: { id: true, name: true, slug: true },
     }),
+    db.media.findMany({
+      where: { kind: 'image' },
+      orderBy: { createdAt: 'desc' },
+      take: 50,
+      select: { id: true, storagePath: true, alt: true, originalFilename: true },
+    }),
+    product.ogImageMediaId
+      ? db.media.findUnique({
+          where: { id: product.ogImageMediaId },
+          select: { storagePath: true },
+        })
+      : Promise.resolve(null),
   ])
 
   const dims = (product.dimensionsMm ?? null) as { l?: number; w?: number; h?: number } | null
@@ -96,6 +108,28 @@ export default async function EditProductPage({ params }: Props) {
           hsCode: product.hsCode,
           seoTitle: product.seoTitle,
           seoDescription: product.seoDescription,
+          canonicalUrl: product.canonicalUrl,
+          focusKeyword: product.focusKeyword,
+          robotsIndex: product.robotsIndex,
+          robotsFollow: product.robotsFollow,
+          ogImageMediaId: product.ogImageMediaId,
+          ogImageStoragePath: ogMedia?.storagePath ?? null,
+          sitemapPriority:
+            product.sitemapPriority != null ? Number(product.sitemapPriority) : null,
+          sitemapChangeFreq: product.sitemapChangeFreq,
+          excludeFromSitemap: product.excludeFromSitemap,
+          jsonLdOverride: product.jsonLdOverride
+            ? JSON.stringify(product.jsonLdOverride, null, 2)
+            : null,
+          publicUrl: `${storefrontUrl.replace(/\/$/, '')}/p/${product.slug}`,
+          brandName: product.brand?.name ?? null,
+          categoryName: product.category?.name ?? null,
+          categorySlug: product.category?.slug ?? null,
+          imageUrls: product.images.slice(0, 6).map((img) =>
+            img.media.storagePath.startsWith('http')
+              ? img.media.storagePath
+              : `${process.env.NEXT_PUBLIC_R2_PUBLIC_URL ?? ''}/${img.media.storagePath}`,
+          ),
           updatedAt: product.updatedAt.toISOString(),
         }}
         specs={product.specs.map((s) => ({
@@ -158,6 +192,12 @@ export default async function EditProductPage({ params }: Props) {
         }))}
         brands={brands.map((b) => ({ id: b.id, name: b.name }))}
         categories={categories.map((c) => ({ id: c.id, name: c.name }))}
+        recentImages={recentMedia.map((m) => ({
+          id: m.id,
+          storagePath: m.storagePath,
+          alt: m.alt,
+          originalFilename: m.originalFilename,
+        }))}
       />
     </>
   )

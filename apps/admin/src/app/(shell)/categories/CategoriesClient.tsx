@@ -1,5 +1,6 @@
 'use client'
 
+import Link from 'next/link'
 import { useState, useTransition } from 'react'
 import { createCategory, updateCategory, deleteCategory } from './actions'
 
@@ -182,6 +183,13 @@ function CategoryRows({
             >
               Edit
             </button>
+            <Link
+              href={`/categories/${cat.id}/edit`}
+              className="font-mono text-[10px] text-[var(--color-muted)] hover:text-[var(--color-primary)]"
+              title="Open dedicated SEO editor"
+            >
+              SEO
+            </Link>
             <DeleteCategoryButton
               id={cat.id}
              

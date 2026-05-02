@@ -1,21 +1,32 @@
 import type { Metadata } from 'next'
 import { db } from '@indus/db'
+import RevertButton from './RevertButton'
 
 export const metadata: Metadata = { title: 'SEO Audit — Indus Admin' }
 
 /**
  * Audit log viewer. Lists every SEO write across entity meta, redirects,
- * robots, structured-data globals, and bulk operations. The actual audit
- * writer lives in `withSeoAudit` (added in a follow-up commit alongside
- * the AI Suggest drawer); for now the page renders whatever rows exist.
- *
- * Revert is a Phase 2 capability.
+ * robots, and global SEO settings. Each row carries a Revert button
+ * (wired through `revertChange` server action) that re-applies the
+ * `before` value and writes a new audit row tagged `reason: 'reverted'`.
  */
 export default async function SeoAuditPage() {
   const rows = await db.seoAuditLog.findMany({
     orderBy: { createdAt: 'desc' },
     take: 200,
   })
+
+  // Resolve actor names in one round-trip rather than N+1.
+  const actorIds = Array.from(
+    new Set(rows.map((r) => r.actorId).filter((id): id is string => !!id)),
+  )
+  const actors = actorIds.length
+    ? await db.staffUser.findMany({
+        where: { id: { in: actorIds } },
+        select: { id: true, name: true },
+      })
+    : []
+  const actorById = new Map(actors.map((a) => [a.id, a.name]))
 
   if (rows.length === 0) {
     return (
@@ -34,52 +45,72 @@ export default async function SeoAuditPage() {
         <thead>
           <tr className="border-b border-[var(--color-border)] bg-[var(--color-deep)]">
             <Th>When</Th>
+            <Th>Actor</Th>
             <Th>Entity</Th>
             <Th>Field</Th>
             <Th>Before → After</Th>
             <Th>Reason</Th>
+            <th />
           </tr>
         </thead>
         <tbody>
-          {rows.map((row) => (
-            <tr
-              key={row.id}
-              className="border-b border-[var(--color-border)] last:border-0 align-top hover:bg-[var(--color-deep)]"
-            >
-              <td className="px-3 py-3 font-mono text-[11px] text-[var(--color-muted)] whitespace-nowrap">
-                {row.createdAt.toLocaleString('en-GB', {
-                  day: 'numeric',
-                  month: 'short',
-                  hour: '2-digit',
-                  minute: '2-digit',
-                })}
-              </td>
-              <td className="px-3 py-3 font-mono text-[11px]">
-                <div>{row.entityType}</div>
-                {row.entityId && (
-                  <div className="text-[var(--color-muted)] text-[10px] truncate max-w-[160px]">
-                    {row.entityId}
+          {rows.map((row) => {
+            const actorName = row.actorId ? actorById.get(row.actorId) ?? null : null
+            const isRevert = row.reason === 'reverted'
+            const isInfra = row.entityType.startsWith('global:') || row.entityType === 'redirect'
+            return (
+              <tr
+                key={row.id}
+                className={`border-b border-[var(--color-border)] last:border-0 align-top hover:bg-[var(--color-deep)] ${
+                  isInfra ? 'bg-[oklch(0.98_0.02_70)]/40' : ''
+                }`}
+              >
+                <td className="px-3 py-3 font-mono text-[11px] text-[var(--color-muted)] whitespace-nowrap">
+                  {row.createdAt.toLocaleString('en-GB', {
+                    day: 'numeric',
+                    month: 'short',
+                    hour: '2-digit',
+                    minute: '2-digit',
+                  })}
+                </td>
+                <td className="px-3 py-3 font-mono text-[11px] text-[var(--color-body)]">
+                  {actorName ?? <span className="text-[var(--color-muted)]">system</span>}
+                </td>
+                <td className="px-3 py-3 font-mono text-[11px]">
+                  <div className={isInfra ? 'text-[oklch(0.5_0.14_70)]' : ''}>{row.entityType}</div>
+                  {row.entityId && (
+                    <div className="text-[var(--color-muted)] text-[10px] truncate max-w-[160px]">
+                      {row.entityId}
+                    </div>
+                  )}
+                </td>
+                <td className="px-3 py-3 font-mono text-[11px] text-[var(--color-body)]">
+                  {row.field}
+                </td>
+                <td className="px-3 py-3 text-[12px] max-w-[480px]">
+                  <div className="grid grid-cols-2 gap-3">
+                    <div className="font-mono text-[11px] text-[var(--color-muted)] whitespace-pre-wrap break-all">
+                      {formatValue(row.before)}
+                    </div>
+                    <div className="font-mono text-[11px] text-[var(--color-body)] whitespace-pre-wrap break-all">
+                      {formatValue(row.after)}
+                    </div>
                   </div>
-                )}
-              </td>
-              <td className="px-3 py-3 font-mono text-[11px] text-[var(--color-body)]">
-                {row.field}
-              </td>
-              <td className="px-3 py-3 text-[12px] max-w-[480px]">
-                <div className="grid grid-cols-2 gap-3">
-                  <div className="font-mono text-[11px] text-[var(--color-muted)] whitespace-pre-wrap break-all">
-                    {formatValue(row.before)}
-                  </div>
-                  <div className="font-mono text-[11px] text-[var(--color-body)] whitespace-pre-wrap break-all">
-                    {formatValue(row.after)}
-                  </div>
-                </div>
-              </td>
-              <td className="px-3 py-3 text-[12px] text-[var(--color-muted)]">
-                {row.reason ?? '—'}
-              </td>
-            </tr>
-          ))}
+                </td>
+                <td className="px-3 py-3 text-[12px] text-[var(--color-muted)]">
+                  {row.reason ?? '—'}
+                </td>
+                <td className="px-3 py-3 text-right whitespace-nowrap">
+                  {!isRevert && (
+                    <RevertButton
+                      auditLogId={row.id}
+                      beforeSummary={`${row.field} = ${formatValue(row.before)}`}
+                    />
+                  )}
+                </td>
+              </tr>
+            )
+          })}
         </tbody>
       </table>
     </div>
