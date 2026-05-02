@@ -2,7 +2,6 @@ import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { db } from '@indus/db'
 import { signPreviewToken } from '@indus/domain'
-import AdminTopbar from '../../../../../components/AdminTopbar'
 import ProductEditorClient from './ProductEditorClient'
 
 export const metadata: Metadata = { title: 'Edit product — Indus Admin' }
@@ -71,15 +70,7 @@ export default async function EditProductPage({ params }: Props) {
   }
 
   return (
-    <>
-      <AdminTopbar
-        crumbs={[
-          { label: 'Catalogue' },
-          { label: 'Products', href: `/products` },
-          { label: product.title },
-        ]}
-      />
-      <ProductEditorClient
+    <ProductEditorClient
        
         previewUrl={previewUrl}
         product={{
@@ -199,6 +190,5 @@ export default async function EditProductPage({ params }: Props) {
           originalFilename: m.originalFilename,
         }))}
       />
-    </>
   )
 }

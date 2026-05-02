@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { db } from '@indus/db'
-import AdminTopbar from '../../../../../components/AdminTopbar'
 import CategoryEditorClient from './CategoryEditorClient'
 
 export const metadata: Metadata = { title: 'Edit category — Indus Admin' }
@@ -35,15 +34,7 @@ export default async function EditCategoryPage({ params }: Props) {
   )
 
   return (
-    <>
-      <AdminTopbar
-        crumbs={[
-          { label: 'Catalogue' },
-          { label: 'Categories', href: '/categories' },
-          { label: category.name },
-        ]}
-      />
-      <CategoryEditorClient
+    <CategoryEditorClient
         category={{
           id: category.id,
           slug: category.slug,
@@ -74,6 +65,5 @@ export default async function EditCategoryPage({ params }: Props) {
           originalFilename: m.originalFilename,
         }))}
       />
-    </>
   )
 }

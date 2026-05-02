@@ -2,7 +2,6 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { db } from '@indus/db'
-import AdminTopbar from '../../../../components/AdminTopbar'
 import TemplateEditorClient from './TemplateEditorClient'
 
 export const metadata: Metadata = { title: 'Edit spec template — Indus Admin' }
@@ -61,15 +60,7 @@ export default async function SpecTemplateEditPage({ params }: Props) {
   }))
 
   return (
-    <>
-      <AdminTopbar
-        crumbs={[
-          { label: 'Catalogue' },
-          { label: 'Spec templates', href: `/spec-templates` },
-          { label: tpl.name },
-        ]}
-      />
-      <div className="px-8 py-6 pb-16">
+    <div className="px-8 py-6 pb-16">
         <div className="flex items-center justify-between mb-6">
           <div>
             <h1 className="text-[24px] font-semibold tracking-tight">{tpl.name}</h1>
@@ -113,7 +104,6 @@ export default async function SpecTemplateEditPage({ params }: Props) {
           products={products}
           totalProductCount={tpl._count.products}
         />
-      </div>
-    </>
+    </div>
   )
 }

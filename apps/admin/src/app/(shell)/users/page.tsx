@@ -3,7 +3,6 @@ import Link from 'next/link'
 import { db } from '@indus/db'
 import { auth } from '../../../lib/auth'
 import { redirect } from 'next/navigation'
-import AdminTopbar from '../../../components/AdminTopbar'
 
 export const metadata: Metadata = { title: 'Staff Users — Indus Admin' }
 
@@ -45,13 +44,7 @@ export default async function UsersPage() {
   })
 
   return (
-    <>
-      <AdminTopbar
-        crumbs={[{ label: 'System' }, { label: 'Users & Roles' }]}
-        primaryAction={{ label: '+ Add Staff', href: '/users/new' }}
-      />
-
-      <div className="p-8">
+    <div className="p-8">
       <div className="flex items-center justify-between mb-6">
         <div>
           <h1 className="text-[24px] font-semibold tracking-tight">Staff Users</h1>
@@ -59,6 +52,12 @@ export default async function UsersPage() {
             {users.length} staff member{users.length !== 1 ? 's' : ''}
           </p>
         </div>
+        <Link
+          href="/users/new"
+          className="h-9 px-4 bg-[var(--color-accent)] text-white font-mono text-[12px] flex items-center hover:opacity-90"
+        >
+          + Add Staff
+        </Link>
       </div>
 
       <div className="border border-[var(--color-border)] overflow-hidden">
@@ -124,7 +123,6 @@ export default async function UsersPage() {
           </tbody>
         </table>
       </div>
-      </div>
-    </>
+    </div>
   )
 }
