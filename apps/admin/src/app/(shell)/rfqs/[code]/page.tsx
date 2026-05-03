@@ -100,27 +100,34 @@ export default async function AdminRfqDetailPage({ params }: Props) {
         </div>
       </div>
 
-      {/* Status action buttons */}
-      {validTransitions.length > 0 && (
-        <div className="flex flex-wrap gap-2 mb-6 pb-6 border-b border-[var(--color-border)]">
-          {validTransitions.map((transition) => (
-            <form
-              key={transition}
-              action={async () => {
-                'use server'
-                await updateRfqStatus(rfq.id, transition)
-              }}
+      {/* Status action buttons + quote preview link */}
+      <div className="flex flex-wrap items-center gap-2 mb-6 pb-6 border-b border-[var(--color-border)]">
+        {validTransitions.map((transition) => (
+          <form
+            key={transition}
+            action={async () => {
+              'use server'
+              await updateRfqStatus(rfq.id, transition)
+            }}
+          >
+            <button
+              type="submit"
+              className={`h-9 px-4 font-mono text-[12px] transition-colors ${TRANSITION_STYLES[transition] ?? 'border border-[var(--color-border)] text-[var(--color-body)] hover:bg-[var(--color-deep)]'}`}
             >
-              <button
-                type="submit"
-                className={`h-9 px-4 font-mono text-[12px] transition-colors ${TRANSITION_STYLES[transition] ?? 'border border-[var(--color-border)] text-[var(--color-body)] hover:bg-[var(--color-deep)]'}`}
-              >
-                {TRANSITION_LABELS[transition] ?? transition}
-              </button>
-            </form>
-          ))}
-        </div>
-      )}
+              {TRANSITION_LABELS[transition] ?? transition}
+            </button>
+          </form>
+        ))}
+        <a
+          href={`/api/rfqs/${rfq.code}/preview-pdf`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="h-9 px-4 ml-auto inline-flex items-center gap-1.5 border border-[var(--color-border)] font-mono text-[12px] text-[var(--color-body)] hover:bg-[var(--color-deep)] transition-colors"
+          title="Open the quote PDF preview in a new tab. Uses current line prices and store defaults."
+        >
+          Preview Quote PDF →
+        </a>
+      </div>
 
       <div className="grid grid-cols-1 xl:grid-cols-[1fr_320px] gap-8">
         {/* Main: engineer review form */}
