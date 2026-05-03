@@ -38,7 +38,7 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
 
         if (!staffUser || !staffUser.isActive) return null
 
-        const valid = verify(parsed.data.password, staffUser.passwordHash ?? '')
+        const valid = await verify(parsed.data.password, staffUser.passwordHash ?? '')
         if (!valid) return null
 
         return {
