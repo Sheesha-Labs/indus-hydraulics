@@ -2,6 +2,8 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { auth } from '../../../lib/auth'
 import { db } from '@indus/db'
+import RequestAgainButton, { type RequestAgainItem } from '../../../components/RequestAgainButton'
+import { mediaUrl } from '../../../lib/media'
 
 export const metadata: Metadata = { title: 'My Quotes' }
 
@@ -79,7 +81,21 @@ export default async function AccountQuotesPage({ searchParams }: Props) {
       ...statusWhere,
     },
     include: {
-      lines: { select: { id: true, requestedQty: true } },
+      lines: {
+        select: {
+          id: true,
+          requestedQty: true,
+          customerTargetPrice: true,
+          product: {
+            select: {
+              sku: true,
+              title: true,
+              brand: { select: { name: true } },
+              images: { take: 1, orderBy: { position: 'asc' }, include: { media: true } },
+            },
+          },
+        },
+      },
     },
     orderBy: { createdAt: 'desc' },
   })
@@ -150,23 +166,32 @@ export default async function AccountQuotesPage({ searchParams }: Props) {
       ) : (
         <div className="border border-[var(--color-border)] bg-[var(--color-elevated)] overflow-hidden">
           {/* Table header */}
-          <div className="grid grid-cols-[130px_1fr_90px_100px_130px_110px] gap-3.5 px-4 py-3 bg-[var(--color-surface)] border-b border-[var(--color-border)] font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)]">
+          <div className="grid grid-cols-[130px_1fr_90px_100px_130px_110px_90px] gap-3.5 px-4 py-3 bg-[var(--color-surface)] border-b border-[var(--color-border)] font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)]">
             <span>RFQ #</span>
             <span>Subject</span>
             <span className="text-right">Lines</span>
             <span className="text-right">Total</span>
             <span>Updated</span>
             <span className="text-right">Status</span>
+            <span className="text-right">Action</span>
           </div>
 
           {rfqs.map((rfq) => {
             const colors = STATUS_COLORS[rfq.status] ?? STATUS_COLORS.draft!
             const label = STATUS_LABELS[rfq.status] ?? rfq.status.toUpperCase()
+            const reorderItems: RequestAgainItem[] = rfq.lines.map((l) => ({
+              sku: l.product.sku,
+              title: l.product.title,
+              ...(l.product.brand?.name ? { brand: l.product.brand.name } : {}),
+              ...(l.product.images[0]?.media?.storagePath ? { imageUrl: mediaUrl(l.product.images[0].media.storagePath) } : {}),
+              qty: l.requestedQty,
+              ...(l.customerTargetPrice ? { targetPrice: String(l.customerTargetPrice) } : {}),
+            }))
             return (
               <Link
                 key={rfq.id}
                 href={`/quote/${rfq.code}`}
-                className="grid grid-cols-[130px_1fr_90px_100px_130px_110px] gap-3.5 px-4 py-3.5 border-b border-[var(--color-border-2)] last:border-0 items-center text-[var(--color-primary)] hover:bg-[var(--color-deep)] transition-colors"
+                className="grid grid-cols-[130px_1fr_90px_100px_130px_110px_90px] gap-3.5 px-4 py-3.5 border-b border-[var(--color-border-2)] last:border-0 items-center text-[var(--color-primary)] hover:bg-[var(--color-deep)] transition-colors"
               >
                 <span className="font-mono text-[12px]">{rfq.code}</span>
                 <div>
@@ -187,6 +212,9 @@ export default async function AccountQuotesPage({ searchParams }: Props) {
                   >
                     ● {label}
                   </span>
+                </span>
+                <span className="flex justify-end">
+                  <RequestAgainButton items={reorderItems} rfqCode={rfq.code} />
                 </span>
               </Link>
             )

@@ -5,12 +5,13 @@ import Image from 'next/image'
 import { auth } from '../../../lib/auth'
 import { db } from '@indus/db'
 import { mediaUrl } from '../../../lib/media'
+import { verifyQuoteAccessToken } from '@indus/domain'
 
 export const metadata: Metadata = { title: 'RFQ Status' }
 
 type Props = {
   params: Promise<{ code: string }>
-  searchParams: Promise<{ confirmed?: string }>
+  searchParams: Promise<{ confirmed?: string; token?: string }>
 }
 
 const URGENCY_LABELS: Record<string, string> = {
@@ -50,7 +51,14 @@ export default async function RfqStatusPage({ params, searchParams }: Props) {
   const sp = await searchParams
   const session = await auth()
 
-  if (!session?.user?.accountId) {
+  // Two valid paths to view this RFQ:
+  //  1. Logged-in account contact whose accountId matches.
+  //  2. Holder of a signed access token (from the quote_sent email link),
+  //     so a forwarded recipient can view + download the PDF without an account.
+  const tokenCheck = sp.token ? verifyQuoteAccessToken(sp.token, code) : null
+  const hasValidToken = tokenCheck?.valid === true
+
+  if (!session?.user?.accountId && !hasValidToken) {
     redirect(`/sign-in?next=/quote/${code}`)
   }
 
@@ -74,7 +82,9 @@ export default async function RfqStatusPage({ params, searchParams }: Props) {
     },
   })
 
-  if (!rfq || rfq.accountId !== session.user.accountId) notFound()
+  if (!rfq) notFound()
+  // Logged-in users must own the account; signed-link viewers bypass this.
+  if (!hasValidToken && rfq.accountId !== session?.user?.accountId) notFound()
 
   const isTerminal = ['declined', 'expired', 'cancelled'].includes(rfq.status)
   const isConfirmation = sp.confirmed === '1'
@@ -252,7 +262,7 @@ export default async function RfqStatusPage({ params, searchParams }: Props) {
                 </div>
                 {q.pdfMedia ? (
                   <a
-                    href={`/api/quotes/${encodeURIComponent(q.code)}/pdf`}
+                    href={`/api/quotes/${encodeURIComponent(q.code)}/pdf${hasValidToken && sp.token ? `?token=${encodeURIComponent(sp.token)}` : ''}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 h-9 px-4 border border-[var(--color-accent)] text-[var(--color-accent)] font-mono text-[12px] hover:bg-[var(--color-accent)] hover:text-white transition-colors whitespace-nowrap"

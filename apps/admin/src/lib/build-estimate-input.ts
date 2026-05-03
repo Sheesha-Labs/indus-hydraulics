@@ -18,6 +18,10 @@ export type EstimateOverrides = {
   disclaimer?: string | null
   /** Override VAT %; if undefined, the UAE-vs-export rule decides. */
   vatRatePct?: number
+  /** Global discount (AED). Renders on PDF + included in computed total. */
+  discountTotal?: number
+  /** Shipping (AED). Renders on PDF + included in computed total. */
+  shipping?: number
 }
 
 /**
@@ -100,6 +104,17 @@ export async function buildEstimateInputFromRfq(
     addressLines: branding.addressLines,
   }
 
+  const bank = settings
+    ? {
+        accountName: settings.bankAccountName ?? null,
+        accountNo: settings.bankAccountNo ?? null,
+        bankName: settings.bankName ?? null,
+        branch: settings.bankBranch ?? null,
+        iban: settings.bankIban ?? null,
+        swift: settings.bankSwift ?? null,
+      }
+    : null
+
   const termsText = overrides.termsText ?? settings?.defaultQuoteTerms ?? ''
   const termsLines = termsText
     .split(/\r?\n/)
@@ -125,10 +140,13 @@ export async function buildEstimateInputFromRfq(
     currency: 'AED',
     vatRatePct,
     ...(vatLabel ? { vatLabel } : {}),
+    ...(overrides.discountTotal !== undefined ? { discountTotal: overrides.discountTotal } : {}),
+    ...(overrides.shipping !== undefined ? { shipping: overrides.shipping } : {}),
     ...(resolvedNotes ? { notes: resolvedNotes } : {}),
     ...(termsLines.length ? { termsLines } : {}),
     ...(resolvedDisclaimer ? { disclaimer: resolvedDisclaimer } : {}),
     branding,
     signature,
+    bank,
   }
 }

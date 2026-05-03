@@ -77,6 +77,14 @@ const StoreSettingsSchema = z.object({
   defaultQuoteNotes: optionalString(2000),
   defaultQuoteTerms: optionalString(4000),
   defaultQuoteDisclaimer: optionalString(2000),
+
+  // Bank details (PDF footer)
+  bankAccountName: optionalString(120),
+  bankAccountNo: optionalString(40),
+  bankName: optionalString(120),
+  bankBranch: optionalString(120),
+  bankIban: optionalString(40),
+  bankSwift: optionalString(20),
 })
 
 export async function saveStoreSettings(formData: FormData): Promise<Result<void>> {
@@ -113,6 +121,13 @@ export async function saveStoreSettings(formData: FormData): Promise<Result<void
       defaultQuoteNotes: formData.get('defaultQuoteNotes') ?? '',
       defaultQuoteTerms: formData.get('defaultQuoteTerms') ?? '',
       defaultQuoteDisclaimer: formData.get('defaultQuoteDisclaimer') ?? '',
+
+      bankAccountName: formData.get('bankAccountName') ?? '',
+      bankAccountNo: formData.get('bankAccountNo') ?? '',
+      bankName: formData.get('bankName') ?? '',
+      bankBranch: formData.get('bankBranch') ?? '',
+      bankIban: formData.get('bankIban') ?? '',
+      bankSwift: formData.get('bankSwift') ?? '',
     })
 
     // Json columns need raw arrays, not Zod-typed unions. Cast after validation.
