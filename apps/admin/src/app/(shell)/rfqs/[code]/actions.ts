@@ -6,6 +6,7 @@ import { db } from '@indus/db'
 import { assertTransition } from '@indus/domain'
 import { renderEstimatePdf, uploadQuotePdf, computeTotals } from '@indus/pdf'
 import { sendEmail, renderQuoteSent, renderQuoteAck } from '@indus/email'
+import { signQuoteAccessToken } from '@indus/domain'
 import { auth } from '../../../../lib/auth'
 import { ROLES, requireRole } from '../../../../lib/rbac'
 import { fail, failFromError, ok, type Result } from '../../../../lib/result'
@@ -312,15 +313,20 @@ export async function sendQuote(formData: FormData): Promise<Result<{ quoteCode:
       ...(parsed.notesOverride !== null ? { notes: parsed.notesOverride } : {}),
       ...(parsed.referenceLine !== null ? { referenceLine: parsed.referenceLine } : {}),
       ...(parsed.vatRatePctOverride !== undefined ? { vatRatePct: parsed.vatRatePctOverride } : {}),
+      discountTotal: parsed.discountTotal,
+      shipping: parsed.shipping,
     })
     if (!estimate) return fail('NOT_FOUND', 'Could not build estimate from RFQ')
 
+    // Compute totals from the same EstimateInput the PDF will render — this
+    // guarantees PDF Total === Quote.total. Previously discount/shipping were
+    // applied only to Quote.total, leaving the PDF showing a different number.
     const baseTotals = computeTotals(estimate)
     const subtotal = baseTotals.subtotal
+    const discountTotal = baseTotals.discountTotal
     const vatAmount = baseTotals.vatAmount
-    const discountTotal = parsed.discountTotal
-    const shipping = parsed.shipping
-    const total = subtotal - discountTotal + vatAmount + shipping
+    const shipping = baseTotals.shipping
+    const total = baseTotals.total
 
     if (subtotal <= 0) {
       return fail('PRECONDITION_FAILED', 'Cannot send a quote with no priced line items. Set engineer unit prices first.')
@@ -391,7 +397,10 @@ export async function sendQuote(formData: FormData): Promise<Result<{ quoteCode:
       const customerName = `${rfq.submittedBy.firstName} ${rfq.submittedBy.lastName}`.trim() || rfq.submittedBy.email
 
       const baseUrl = (process.env.NEXT_PUBLIC_BASE_URL ?? 'http://localhost:3000').replace(/\/$/, '')
-      const viewUrl = `${baseUrl}/quote/${rfq.code}`
+      // Signed access token so a non-logged-in recipient (e.g. the procurement
+      // person who got the email forwarded) can still view + download the PDF.
+      const accessToken = signQuoteAccessToken(rfq.code)
+      const viewUrl = `${baseUrl}/quote/${rfq.code}?token=${encodeURIComponent(accessToken)}`
 
       const emailContent = renderQuoteSent({
         customerName,

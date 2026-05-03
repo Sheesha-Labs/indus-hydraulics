@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useTransition } from 'react'
+import { useRef, useState, useTransition } from 'react'
 import { sendQuote } from '../app/(shell)/rfqs/[code]/actions'
 
 type Props = {
@@ -28,10 +28,44 @@ function formatAed(n: number): string {
   return `AED ${intPart!.replace(/\B(?=(\d{3})+(?!\d))/g, ',')}.${decPart}`
 }
 
+// Composer field names that map 1:1 to preview-pdf URL params. Keep in sync
+// with `parseOverridesFromQuery` in the route handler.
+const PREVIEW_PARAM_FIELDS = [
+  'discountTotal',
+  'shipping',
+  'vatRatePctOverride',
+  'validityDays',
+  'subjectOverride',
+  'notesOverride',
+  'referenceLine',
+] as const
+
+const PREVIEW_PARAM_REMAP: Record<string, string> = {
+  vatRatePctOverride: 'vatRatePct',
+}
+
 export default function SendQuoteComposer(props: Props) {
   const [open, setOpen] = useState(false)
   const [isPending, startTransition] = useTransition()
   const [result, setResult] = useState<{ ok: true; code: string } | { ok: false; message: string } | null>(null)
+  const formRef = useRef<HTMLFormElement>(null)
+
+  function handlePreview() {
+    if (!formRef.current) return
+    const fd = new FormData(formRef.current)
+    const params = new URLSearchParams()
+    for (const field of PREVIEW_PARAM_FIELDS) {
+      const raw = fd.get(field)
+      if (raw === null) continue
+      const value = String(raw).trim()
+      if (!value) continue
+      const paramName = PREVIEW_PARAM_REMAP[field] ?? field
+      params.set(paramName, value)
+    }
+    const qs = params.toString()
+    const url = `/api/rfqs/${encodeURIComponent(props.rfqCode)}/preview-pdf${qs ? `?${qs}` : ''}`
+    window.open(url, '_blank', 'noopener,noreferrer')
+  }
 
   // Live composer state for total preview
   const [vatPct, setVatPct] = useState<string>(props.defaultVatRatePct.toString())
@@ -107,6 +141,7 @@ export default function SendQuoteComposer(props: Props) {
 
   return (
     <form
+      ref={formRef}
       action={handleSubmit}
       className="border border-[var(--color-accent)] bg-[var(--color-elevated)] p-5 mb-6 space-y-4"
     >
@@ -291,6 +326,15 @@ export default function SendQuoteComposer(props: Props) {
           className="h-10 px-5 bg-[var(--color-accent)] text-white font-mono text-[12px] hover:opacity-90 disabled:opacity-40 disabled:cursor-not-allowed"
         >
           {isPending ? 'Sending…' : `Send quote → customer`}
+        </button>
+        <button
+          type="button"
+          onClick={handlePreview}
+          disabled={props.currentSubtotal <= 0}
+          title="Render the PDF with the current composer values in a new tab — does not send anything."
+          className="h-10 px-4 border border-[var(--color-border)] font-mono text-[12px] text-[var(--color-body)] hover:bg-[var(--color-deep)] disabled:opacity-40 disabled:cursor-not-allowed"
+        >
+          Preview PDF →
         </button>
         <span className="font-mono text-[11px] text-[var(--color-muted)]">
           {props.currentSubtotal <= 0 ? 'Set engineer unit prices first.' : 'Sends email + PDF, marks RFQ as Quote Sent.'}

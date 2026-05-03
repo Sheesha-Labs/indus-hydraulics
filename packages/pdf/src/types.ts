@@ -27,10 +27,15 @@ export type EstimateInput = {
 
   currency: string
 
-  /** VAT percentage applied to the subtotal. 0 = no VAT line shown. */
+  /** VAT percentage applied to the (post-discount) subtotal. 0 = no VAT line shown. */
   vatRatePct: number
   /** Optional explicit label, e.g. "VAT @ 5%" or "Zero-rated export". */
   vatLabel?: string
+
+  /** Optional global discount applied to subtotal. Renders only if > 0. */
+  discountTotal?: number
+  /** Optional shipping charge added to total. Renders only if > 0. */
+  shipping?: number
 
   notes?: string
   /** Multi-line terms (each line rendered without a bullet). */
@@ -52,23 +57,42 @@ export type EstimateInput = {
     addressLines?: string[]
   }
 
+  /** Bank details rendered in PDF page-2 footer. Block hidden if all fields are null/empty. */
+  bank?: {
+    accountName?: string | null
+    accountNo?: string | null
+    bankName?: string | null
+    branch?: string | null
+    iban?: string | null
+    swift?: string | null
+  } | null
+
   /** Optional override for the logo. Defaults to the bundled PNG. */
   logoBase64?: string
 }
 
 export type EstimateTotals = {
   subtotal: number
+  discountTotal: number
   vatAmount: number
+  shipping: number
   total: number
 }
 
-export function computeTotals(input: Pick<EstimateInput, 'lines' | 'vatRatePct'>): EstimateTotals {
+export function computeTotals(
+  input: Pick<EstimateInput, 'lines' | 'vatRatePct' | 'discountTotal' | 'shipping'>,
+): EstimateTotals {
   const subtotal = input.lines.reduce((sum, l) => sum + l.qty * l.rate, 0)
-  const vatAmount = subtotal * (input.vatRatePct / 100)
-  const total = subtotal + vatAmount
+  const discountTotal = input.discountTotal ?? 0
+  // VAT is computed on the post-discount amount (matches UAE FTA convention).
+  const vatAmount = (subtotal - discountTotal) * (input.vatRatePct / 100)
+  const shipping = input.shipping ?? 0
+  const total = subtotal - discountTotal + vatAmount + shipping
   return {
     subtotal: roundMoney(subtotal),
+    discountTotal: roundMoney(discountTotal),
     vatAmount: roundMoney(vatAmount),
+    shipping: roundMoney(shipping),
     total: roundMoney(total),
   }
 }

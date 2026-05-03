@@ -500,6 +500,102 @@ export default function SettingsPageClient({ activeTab, storeSettings, emailTemp
             />
           </div>
 
+          <div className="pt-4 mt-4 border-t border-[var(--color-border)]">
+            <h3 className="font-mono text-[11px] tracking-[0.12em] uppercase text-[var(--color-muted)] mb-3">
+              Bank details (PDF footer)
+            </h3>
+            <p className="text-[12px] text-[var(--color-muted)] mb-4">
+              Rendered on page 2 of every quote PDF below the signature block. All fields optional — leave blank to hide the bank-details section entirely.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 gap-3">
+            <div>
+              <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+                Account name
+              </label>
+              <input
+                name="bankAccountName"
+                type="text"
+                maxLength={120}
+                defaultValue={storeSettings?.bankAccountName ?? ''}
+                placeholder="Indus Hydraulic Power Trading LLC"
+                className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] focus:outline-none focus:border-[var(--color-accent)]"
+              />
+            </div>
+            <div>
+              <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+                Bank name
+              </label>
+              <input
+                name="bankName"
+                type="text"
+                maxLength={120}
+                defaultValue={storeSettings?.bankName ?? ''}
+                placeholder="Mashreq Bank"
+                className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] focus:outline-none focus:border-[var(--color-accent)]"
+              />
+            </div>
+          </div>
+
+          <div className="grid grid-cols-2 gap-3">
+            <div>
+              <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+                Branch
+              </label>
+              <input
+                name="bankBranch"
+                type="text"
+                maxLength={120}
+                defaultValue={storeSettings?.bankBranch ?? ''}
+                placeholder="Al Quasis Branch, Dubai"
+                className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] focus:outline-none focus:border-[var(--color-accent)]"
+              />
+            </div>
+            <div>
+              <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+                Account number
+              </label>
+              <input
+                name="bankAccountNo"
+                type="text"
+                maxLength={40}
+                defaultValue={storeSettings?.bankAccountNo ?? ''}
+                placeholder="012345678901"
+                className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] focus:outline-none focus:border-[var(--color-accent)] font-mono"
+              />
+            </div>
+          </div>
+
+          <div className="grid grid-cols-2 gap-3">
+            <div>
+              <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+                IBAN
+              </label>
+              <input
+                name="bankIban"
+                type="text"
+                maxLength={40}
+                defaultValue={storeSettings?.bankIban ?? ''}
+                placeholder="AE07 0331 2345 6789 0123 456"
+                className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] focus:outline-none focus:border-[var(--color-accent)] font-mono"
+              />
+            </div>
+            <div>
+              <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+                SWIFT / BIC
+              </label>
+              <input
+                name="bankSwift"
+                type="text"
+                maxLength={20}
+                defaultValue={storeSettings?.bankSwift ?? ''}
+                placeholder="BOMLAEAD"
+                className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] focus:outline-none focus:border-[var(--color-accent)] font-mono"
+              />
+            </div>
+          </div>
+
           <div className="flex items-center gap-3 pt-2">
             <button
               type="submit"

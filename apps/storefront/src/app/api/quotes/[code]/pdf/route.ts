@@ -1,20 +1,21 @@
 import { NextResponse } from 'next/server'
 import { auth } from '../../../../../lib/auth'
 import { db } from '@indus/db'
+import { verifyQuoteAccessToken } from '@indus/domain'
 
 type RouteContext = { params: Promise<{ code: string }> }
 
 /**
- * Stream a quote PDF to the customer who owns the parent RFQ. Gated by the
- * account-contact session (no signed-link fallback yet — non-logged-in
- * recipients will be bounced to /sign-in).
+ * Stream a quote PDF to either:
+ *  (a) the logged-in account contact who owns the parent RFQ, or
+ *  (b) a holder of a signed access token (`?token=...`) for that RFQ — used
+ *      by the link in the quote_sent email so a forwarded recipient can
+ *      download the PDF without an account.
+ *
+ * The token's signed payload is the rfq code. We look up the quote, then
+ * verify the token against the quote's parent rfq.code.
  */
-export async function GET(_req: Request, { params }: RouteContext) {
-  const session = await auth()
-  if (!session?.user?.accountId) {
-    return new NextResponse('Unauthorized', { status: 401 })
-  }
-
+export async function GET(req: Request, { params }: RouteContext) {
   const { code } = await params
 
   const quote = await db.quote.findUnique({
@@ -26,14 +27,24 @@ export async function GET(_req: Request, { params }: RouteContext) {
   })
 
   if (!quote || !quote.pdfMedia) return new NextResponse('Not found', { status: 404 })
-  if (quote.rfq.accountId !== session.user.accountId) {
-    return new NextResponse('Forbidden', { status: 403 })
+
+  const url = new URL(req.url)
+  const token = url.searchParams.get('token')
+  const tokenCheck = token ? verifyQuoteAccessToken(token, quote.rfq.code) : null
+  const hasValidToken = tokenCheck?.valid === true
+
+  if (!hasValidToken) {
+    const session = await auth()
+    if (!session?.user?.accountId) return new NextResponse('Unauthorized', { status: 401 })
+    if (quote.rfq.accountId !== session.user.accountId) {
+      return new NextResponse('Forbidden', { status: 403 })
+    }
   }
 
-  const url = process.env.SUPABASE_URL ?? process.env.NEXT_PUBLIC_SUPABASE_URL
-  if (!url) return new NextResponse('Storage misconfigured', { status: 500 })
+  const supabaseUrl = process.env.SUPABASE_URL ?? process.env.NEXT_PUBLIC_SUPABASE_URL
+  if (!supabaseUrl) return new NextResponse('Storage misconfigured', { status: 500 })
 
-  const publicUrl = `${url}/storage/v1/object/public/quotes/${quote.pdfMedia.storagePath}`
+  const publicUrl = `${supabaseUrl}/storage/v1/object/public/quotes/${quote.pdfMedia.storagePath}`
   const upstream = await fetch(publicUrl)
   if (!upstream.ok) return new NextResponse('Failed to fetch PDF', { status: 502 })
 

@@ -1218,6 +1218,14 @@ model StoreSettings {
   defaultQuoteTerms        String?
   defaultQuoteDisclaimer   String?
 
+  // Bank details rendered in PDF footer (all optional — render block only if any set)
+  bankAccountName String?
+  bankAccountNo   String?
+  bankName        String?
+  bankBranch      String?
+  bankIban        String?
+  bankSwift       String?
+
   updatedAt DateTime @updatedAt
 
   @@map("store_settings")

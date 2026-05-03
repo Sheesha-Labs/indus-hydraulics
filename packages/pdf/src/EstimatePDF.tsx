@@ -137,6 +137,17 @@ const styles = StyleSheet.create({
   sectionTitle: { fontSize: 10, color: C.ink, marginBottom: 6, marginTop: 12 },
   bodyText: { fontSize: 9, color: C.body, lineHeight: 1.5 },
 
+  // Bank details block (page-2 footer area)
+  bankBlock: {
+    marginTop: 24,
+    paddingTop: 12,
+    borderTopWidth: 0.5,
+    borderTopColor: C.rule,
+  },
+  bankRow: { flexDirection: 'row', marginBottom: 2 },
+  bankLabel: { width: 100, fontSize: 9, color: C.muted },
+  bankValue: { fontSize: 9, color: C.ink, flex: 1 },
+
   // Page footer
   pageNumber: {
     position: 'absolute',
@@ -168,6 +179,20 @@ function formatDate(d: Date): string {
   const month = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'][d.getUTCMonth()]
   const year = d.getUTCFullYear()
   return `${day} ${month} ${year}`
+}
+
+function hasBankDetails(bank: EstimateInput['bank']): boolean {
+  if (!bank) return false
+  return Boolean(bank.accountName || bank.accountNo || bank.bankName || bank.branch || bank.iban || bank.swift)
+}
+
+function BankLine({ label, value }: { label: string; value: string }) {
+  return (
+    <View style={styles.bankRow}>
+      <Text style={styles.bankLabel}>{label}</Text>
+      <Text style={styles.bankValue}>{value}</Text>
+    </View>
+  )
 }
 
 export function EstimatePDF(props: EstimateInput) {
@@ -268,10 +293,22 @@ export function EstimatePDF(props: EstimateInput) {
           <Text style={styles.totalLabel}>Sub Total</Text>
           <Text style={styles.totalValue}>{formatMoney(totals.subtotal, '')}</Text>
         </View>
+        {totals.discountTotal > 0 ? (
+          <View style={styles.totalsRow}>
+            <Text style={styles.totalLabel}>Discount</Text>
+            <Text style={styles.totalValue}>-{formatMoney(totals.discountTotal, '')}</Text>
+          </View>
+        ) : null}
         {props.vatRatePct > 0 ? (
           <View style={styles.totalsRow}>
             <Text style={styles.totalLabel}>{props.vatLabel ?? `VAT @ ${props.vatRatePct.toFixed(0)}%`}</Text>
             <Text style={styles.totalValue}>{formatMoney(totals.vatAmount, '')}</Text>
+          </View>
+        ) : null}
+        {totals.shipping > 0 ? (
+          <View style={styles.totalsRow}>
+            <Text style={styles.totalLabel}>Shipping</Text>
+            <Text style={styles.totalValue}>{formatMoney(totals.shipping, '')}</Text>
           </View>
         ) : null}
         <View style={styles.grandTotalRow}>
@@ -310,7 +347,7 @@ export function EstimatePDF(props: EstimateInput) {
         <Text style={styles.pageNumber} render={({ pageNumber }) => `${pageNumber}`} fixed />
       </Page>
 
-      {/* Page 2 — signature block */}
+      {/* Page 2 — signature block + optional bank details */}
       <Page size="A4" style={styles.page}>
         <View style={styles.signatureBlock}>
           <Text style={styles.sigLabel}>Best Regards,</Text>
@@ -325,6 +362,19 @@ export function EstimatePDF(props: EstimateInput) {
             </Text>
           ))}
         </View>
+
+        {hasBankDetails(props.bank) ? (
+          <View style={styles.bankBlock}>
+            <Text style={styles.sectionTitle}>Bank details</Text>
+            {props.bank?.accountName ? <BankLine label="Account name" value={props.bank.accountName} /> : null}
+            {props.bank?.bankName ? <BankLine label="Bank" value={props.bank.bankName} /> : null}
+            {props.bank?.branch ? <BankLine label="Branch" value={props.bank.branch} /> : null}
+            {props.bank?.accountNo ? <BankLine label="Account no" value={props.bank.accountNo} /> : null}
+            {props.bank?.iban ? <BankLine label="IBAN" value={props.bank.iban} /> : null}
+            {props.bank?.swift ? <BankLine label="SWIFT" value={props.bank.swift} /> : null}
+          </View>
+        ) : null}
+
         <Text style={styles.pageNumber} render={({ pageNumber }) => `${pageNumber}`} fixed />
       </Page>
     </Document>
