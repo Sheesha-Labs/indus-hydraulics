@@ -360,29 +360,35 @@ model StaffUser {
   updatedAt    DateTime  @updatedAt
 
   assignedAccounts Account[]
-  assignedRfqs     Rfq[]             @relation("AssignedEngineer")
-  repRfqs          Rfq[]             @relation("AssignedRep")
+  assignedRfqs     Rfq[]          @relation("AssignedEngineer")
+  repRfqs          Rfq[]          @relation("AssignedRep")
   mediaUploads     Media[]
   importJobs       ImportJob[]
   notifications    Notification[]
   blogPosts        BlogPost[]
-  activityEntries  AccountActivity[]
 
   @@map("staff_users")
 }
 
 model AccountActivity {
-  id         String            @id @default(uuid())
-  accountId  String
-  account    Account           @relation(fields: [accountId], references: [id])
-  actorType  ActivityActorType
-  actorId    String
-  staffActor StaffUser?        @relation(fields: [actorId], references: [id], map: "activity_staff_fk")
-  verb       String // submitted_rfq, updated_credit_limit, commented, tier_upgraded
-  payload    Json              @default("{}")
-  createdAt  DateTime          @default(now())
+  id        String            @id @default(uuid())
+  accountId String
+  account   Account           @relation(fields: [accountId], references: [id])
+  // Polymorphic actor: actorType in ('contact'|'staff'|'system') tells you
+  // which table actorId references. We deliberately do NOT enforce this as a
+  // Postgres FK because Postgres doesn't support conditional FKs and a hard
+  // StaffUser FK breaks every customer-initiated activity row (the previous
+  // `staffActor StaffUser? @relation(map: "activity_staff_fk")` made
+  // submitRfq fail with a constraint violation on every contact submission).
+  // Resolve actorId in app code based on actorType.
+  actorType ActivityActorType
+  actorId   String
+  verb      String // submitted_rfq, updated_credit_limit, commented, tier_upgraded
+  payload   Json              @default("{}")
+  createdAt DateTime          @default(now())
 
   @@index([accountId])
+  @@index([actorType, actorId])
   @@map("account_activity")
 }
 
