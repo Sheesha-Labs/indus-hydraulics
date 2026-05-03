@@ -13,7 +13,6 @@ const signInSchema = z.object({
   email: z.string().email(),
   password: z.string().min(1),
   rememberMe: z.boolean().optional(),
-  locale: z.string().default('en'),
 })
 
 export async function signInAction(formData: FormData): Promise<Result<void>> {
@@ -46,7 +45,8 @@ export async function signInAction(formData: FormData): Promise<Result<void>> {
     throw err
   }
 
-  redirect(`/${parsed.data.locale}/account`)
+  // Routes are flat (no locale prefix) — i18n was removed in dfb2fdd.
+  redirect(`/account`)
 }
 
 // ── Sign Up ───────────────────────────────────────────────────────────────────
@@ -64,7 +64,6 @@ const signUpSchema = z.object({
   country: z.string().min(2),
   needs: z.array(z.string()).optional(),
   agreedToTerms: z.boolean(),
-  locale: z.string().default('en'),
 })
 
 export async function signUpAction(formData: FormData): Promise<Result<{ message: string }>> {
