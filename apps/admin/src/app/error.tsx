@@ -39,7 +39,7 @@ export default function AdminLocaleError({
             Try again
           </button>
           <a
-            href="/en"
+            href="/"
             className="h-10 px-5 inline-flex items-center font-mono text-[12px] border border-[var(--color-border)] text-[var(--color-body)] hover:bg-[var(--color-deep)]"
           >
             Dashboard
