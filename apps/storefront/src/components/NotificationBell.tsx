@@ -148,6 +148,8 @@ export default function NotificationBell({ unreadCount: initialCount, notificati
 
 function getNotificationHref(n: { kind: string; payload: Record<string, unknown> }): string | null {
   if (typeof n.payload.rfqCode === 'string') return `/quote/${n.payload.rfqCode}`
-  if (typeof n.payload.orderId === 'string') return `/account/orders`
+  // /account/orders fallback removed — that route does not exist yet.
+  // Order-related notifications now fall through to the notifications page.
+  if (typeof n.payload.orderId === 'string') return `/account/notifications`
   return null
 }

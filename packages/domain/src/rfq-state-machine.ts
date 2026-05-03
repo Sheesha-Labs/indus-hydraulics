@@ -43,7 +43,12 @@ const TRANSITIONS: TransitionMap = {
   engineer_review: ['engineer_questions_pending', 'quote_sent', 'cancelled'],
   engineer_questions_pending: ['engineer_review', 'cancelled'],
   quote_sent: ['accepted', 'declined', 'expired', 'cancelled'],
-  accepted: ['order_created'],
+  // `accepted` was previously transitionable to `order_created`, but the
+  // Order/fulfilment domain is not implemented — the transition just flipped
+  // a status flag with no Order row created and no follow-up email. Pulled
+  // until that domain ships so engineers don't see a button that does nothing
+  // useful. Re-add `'order_created'` to this array once Order tracking lands.
+  accepted: ['cancelled'],
   // Successful and unsuccessful terminal states — no outgoing transitions.
   order_created: [],
   declined: [],
