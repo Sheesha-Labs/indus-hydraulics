@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { unstable_cache } from 'next/cache'
 import { auth } from '../../lib/auth'
 import { db } from '@indus/db'
 import Link from 'next/link'
@@ -6,6 +7,27 @@ import Link from 'next/link'
 export const metadata: Metadata = { title: 'Dashboard' }
 
 type Props = { params: Promise<Record<string, never>> }
+
+// Dashboard KPI counts change rarely relative to how often the admin opens
+// the dashboard. Cache them for 60s, tagged so future mutation actions can
+// call revalidateTag('admin:dashboard') to force a refresh on demand.
+const getDashboardCounts = unstable_cache(
+  async () => {
+    const [productCount, rfqStats, customerCount, mediaCount, productsWithoutDatasheets] =
+      await Promise.all([
+        db.product.count(),
+        db.rfq.groupBy({ by: ['status'], _count: { _all: true } }),
+        db.account.count(),
+        db.media.count(),
+        db.product.count({
+          where: { status: 'active', documents: { none: { kind: 'datasheet' } } },
+        }),
+      ])
+    return { productCount, rfqStats, customerCount, mediaCount, productsWithoutDatasheets }
+  },
+  ['admin:dashboard:counts'],
+  { revalidate: 60, tags: ['admin:dashboard'] },
+)
 
 export default async function AdminDashboardPage({ params }: Props) {
   await params
@@ -16,31 +38,25 @@ export default async function AdminDashboardPage({ params }: Props) {
   const timeOfDay = now.getHours() < 12 ? 'morning' : now.getHours() < 17 ? 'afternoon' : 'evening'
   const dateStr = now.toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' })
 
-  const [productCount, rfqStats, customerCount, mediaCount, productsWithoutDatasheets] = await Promise.all([
-    db.product.count(),
-    db.rfq.groupBy({ by: ['status'], _count: { _all: true } }),
-    db.account.count(),
-    db.media.count(),
-    db.product.count({
-      where: { status: 'active', documents: { none: { kind: 'datasheet' } } },
-    }),
-  ])
+  const { productCount, rfqStats, customerCount, mediaCount, productsWithoutDatasheets } =
+    await getDashboardCounts()
 
   const openRfqs = rfqStats
     .filter((r) => !['cancelled', 'expired', 'declined', 'invoiced', 'paid'].includes(r.status))
     .reduce((sum, r) => sum + r._count._all, 0)
 
-  const recentProducts = await db.product.findMany({
-    orderBy: { updatedAt: 'desc' },
-    take: 5,
-    include: { brand: true, category: true },
-  })
-
-  const recentActivity = await db.accountActivity.findMany({
-    orderBy: { createdAt: 'desc' },
-    take: 6,
-    include: { account: true },
-  })
+  const [recentProducts, recentActivity] = await Promise.all([
+    db.product.findMany({
+      orderBy: { updatedAt: 'desc' },
+      take: 5,
+      include: { brand: true, category: true },
+    }),
+    db.accountActivity.findMany({
+      orderBy: { createdAt: 'desc' },
+      take: 6,
+      include: { account: true },
+    }),
+  ])
 
   return (
     <div className="px-8 py-6 pb-16">
