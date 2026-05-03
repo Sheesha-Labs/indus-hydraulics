@@ -9,8 +9,16 @@ const globalForPrisma = globalThis as unknown as { prisma: PrismaClient }
  * Why: storefront and admin share this package, but they want different
  * connection limits. The base `DATABASE_URL` is set with `connection_limit=1`
  * to keep storefront safe under high concurrency. Admin (low concurrency, lots
- * of dashboard queries per request) sets `DATABASE_CONNECTION_LIMIT=5` to let
+ * of dashboard queries per request) sets `DATABASE_CONNECTION_LIMIT=10` to let
  * Prisma fan-out queries through pgbouncer instead of serialising them.
+ *
+ * Empirical note: `5` was the original recommendation but turned out too low.
+ * The RFQ detail page (`apps/admin/src/app/(shell)/rfqs/[code]/page.tsx`)
+ * fans out 6+ parallel queries per request — rfq with deep includes,
+ * staffUser.findMany, storeSettings, plus middleware auth + session
+ * callback — and exhausted the pool, causing P2024 "Timed out fetching a new
+ * connection" errors on 2026-05-04. Bumped to 10 in production. If a future
+ * page adds even more parallel queries, raise the recommendation again.
  *
  * Returns `undefined` when no override is set, so Prisma falls back to its
  * default of reading `DATABASE_URL` directly — preserving prior behaviour.
