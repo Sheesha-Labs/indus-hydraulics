@@ -7,6 +7,7 @@ export type EmailKind =
   | 'quote_sent'
   | 'quote_accepted_ack'
   | 'quote_declined_ack'
+  | 'password_reset'
 
 export type EmailAttachment = {
   filename: string
