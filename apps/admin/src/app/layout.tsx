@@ -23,6 +23,11 @@ export const metadata: Metadata = {
   robots: 'noindex, nofollow',
 }
 
+// Co-locate Vercel functions with the Supabase database in Mumbai to avoid
+// transcontinental Prisma round-trips. Propagates to every route segment via
+// the root layout. Belt-and-braces with vercel.json's `regions: ["bom1"]`.
+export const preferredRegion = 'bom1'
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html
