@@ -21,7 +21,8 @@ const UpdateRfqStatusInput = z.object({
 
 export async function updateRfqStatus(rfqId: string, to: string): Promise<Result<void>> {
   try {
-    requireRole(await auth(), ROLES.RFQ_REVIEW)
+    const session = await auth()
+    requireRole(session, ROLES.RFQ_REVIEW)
     const parsed = UpdateRfqStatusInput.parse({ rfqId, to })
 
     const rfq = await db.rfq.findUnique({
@@ -44,13 +45,39 @@ export async function updateRfqStatus(rfqId: string, to: string): Promise<Result
       return fail('PRECONDITION_FAILED', e instanceof Error ? e.message : 'Invalid state transition')
     }
 
-    await db.rfq.update({
-      where: { id: parsed.rfqId },
-      data: {
-        status: parsed.to as never,
-        ...(parsed.to === 'quote_sent' ? { quoteSentAt: new Date() } : {}),
-        ...(parsed.to === 'accepted' ? { acceptedAt: new Date() } : {}),
-      },
+    const previousStatus = rfq.status
+    // requireRole has already guaranteed a valid staff session, but TS
+    // doesn't see that — assert here so the activity row's actorId is typed.
+    const staffId = session?.user?.id
+    if (!staffId) return fail('UNAUTHORIZED', 'No staff session')
+
+    await db.$transaction(async (tx) => {
+      await tx.rfq.update({
+        where: { id: parsed.rfqId },
+        data: {
+          status: parsed.to as never,
+          ...(parsed.to === 'quote_sent' ? { quoteSentAt: new Date() } : {}),
+          ...(parsed.to === 'accepted' ? { acceptedAt: new Date() } : {}),
+        },
+      })
+
+      // Audit-log every transition. The storefront /quote/[code] timeline
+      // reads the timestamps for order_placed / shipped / delivered from
+      // these rows so we don't need new dated columns on the RFQ table.
+      await tx.accountActivity.create({
+        data: {
+          accountId: rfq.accountId,
+          actorType: 'staff',
+          actorId: staffId,
+          verb: ACTIVITY_VERB_FOR_STATUS[parsed.to] ?? `status_changed_to_${parsed.to}`,
+          payload: {
+            rfqId: rfq.id,
+            rfqCode: rfq.code,
+            from: previousStatus,
+            to: parsed.to,
+          },
+        },
+      })
     })
 
     // Side effects on terminal customer-visible transitions
@@ -72,6 +99,20 @@ export async function updateRfqStatus(rfqId: string, to: string): Promise<Result
   } catch (err) {
     return failFromError(err)
   }
+}
+
+// Map RFQ states to friendlier activity verbs that read well in the
+// customer detail timeline (which displays `verb.replace(/_/g, ' ')`).
+const ACTIVITY_VERB_FOR_STATUS: Record<string, string> = {
+  engineer_review: 'review_started',
+  engineer_questions_pending: 'questions_pending',
+  quote_sent: 'quote_sent',
+  accepted: 'quote_accepted',
+  declined: 'quote_declined',
+  cancelled: 'rfq_cancelled',
+  order_created: 'order_placed',
+  shipped: 'order_shipped',
+  delivered: 'order_delivered',
 }
 
 async function fireQuoteAckSideEffects(input: {
