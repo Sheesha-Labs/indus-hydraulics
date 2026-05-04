@@ -19,10 +19,6 @@ import { normaliseQuery } from '@indus/domain'
  */
 export const runtime = 'nodejs'
 
-type Payload =
-  | { query: string; resultsCount: number; usedFallback?: boolean; sessionId?: string | null }
-  | { query: string; clickedSku: string; sessionId?: string | null }
-
 export async function POST(req: Request) {
   let raw: unknown
   try {

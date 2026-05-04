@@ -1,7 +1,6 @@
 'use client'
 
 import { useEffect, useRef, useState, useTransition } from 'react'
-import Link from 'next/link'
 import { useSearchParams } from 'next/navigation'
 import SeoEntityDrawer, { type SeoDrawerEntity } from '../../../../../components/seo/SeoEntityDrawer'
 import type { RecentMedia } from '../../../../../components/seo/OgImagePicker'
@@ -202,8 +201,11 @@ export default function ProductEditorClient({
   // URL-sync pattern.
   useEffect(() => {
     const t = searchParams?.get('tab')
-    // eslint-disable-next-line react-hooks/set-state-in-effect, react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     if (t && TABS.some((x) => x.id === t) && t !== tab) setTab(t as TabId)
+    // tab is intentionally excluded — the effect runs on URL changes only;
+    // including tab would cause an infinite loop.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [searchParams])
 
   function bumpSaved() {

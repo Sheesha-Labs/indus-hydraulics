@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useTransition } from 'react'
+import Image from 'next/image'
 import { setPromo, uploadPromoImage } from '../actions'
 import type { EditorItem } from './NavigationEditor'
 
@@ -83,7 +84,15 @@ export default function PromoFormDialog({ item, onClose, onSaved }: Props) {
           <span className="text-[12px] text-[var(--color-muted)]">Image</span>
           {imageUrl ? (
             <div className="flex items-center gap-3">
-              <img src={imageUrl} alt="" className="w-20 h-20 object-cover border border-[var(--color-border)]" />
+              <div className="relative w-20 h-20 border border-[var(--color-border)]">
+                <Image
+                  src={imageUrl}
+                  alt=""
+                  fill
+                  sizes="80px"
+                  className="object-cover"
+                />
+              </div>
               <button
                 type="button"
                 onClick={clearImage}

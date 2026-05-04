@@ -109,7 +109,7 @@ export async function submitRfq(formData: FormData) {
       shipToAddressId: shipToAddressId ?? null,
     })
   } catch (err) {
-    // eslint-disable-next-line no-console
+     
     console.error('[submitRfq] email send error', err)
   }
 

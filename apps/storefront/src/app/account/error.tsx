@@ -10,7 +10,7 @@ export default function AccountError({
   reset: () => void
 }) {
   useEffect(() => {
-    // eslint-disable-next-line no-console
+     
     console.error('[storefront][account-error]', error)
   }, [error])
 

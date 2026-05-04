@@ -276,7 +276,7 @@ export async function forgotPasswordAction(formData: FormData): Promise<Result<{
         ...(branding.replyTo ? { replyTo: branding.replyTo } : {}),
       })
     } catch (err) {
-      // eslint-disable-next-line no-console
+       
       console.error('[forgotPasswordAction] email send error', err)
       // Don't reveal failure to the caller — keep the success-shaped response
       // so we don't leak which addresses are registered.

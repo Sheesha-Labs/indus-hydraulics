@@ -176,7 +176,7 @@ async function fireQuoteAckSideEffects(input: {
       })
     }
   } catch (err) {
-    // eslint-disable-next-line no-console
+     
     console.error('[updateRfqStatus] ack side-effect error', err)
   }
 }
@@ -482,7 +482,7 @@ export async function sendQuote(formData: FormData): Promise<Result<{ quoteCode:
         quoteId: quote.id,
       })
     } catch (err) {
-      // eslint-disable-next-line no-console
+       
       console.error('[sendQuote] email send error', err)
     }
 
