@@ -61,16 +61,43 @@ export default async function AdminCustomerDetailPage({ params, searchParams }: 
 
   if (!account) notFound()
 
-  const reps = await db.staffUser.findMany({
-    where: { isActive: true, role: { in: ['sales_rep', 'manager', 'super_admin'] } },
-    select: { id: true, name: true },
-  })
+  const [reps, sentEmails] = await Promise.all([
+    db.staffUser.findMany({
+      where: { isActive: true, role: { in: ['sales_rep', 'manager', 'super_admin'] } },
+      select: { id: true, name: true },
+    }),
+    // Last 100 transactional emails sent on behalf of this account, joining
+    // through whichever side (rfq vs quote) the email was attached to.
+    db.sentEmail.findMany({
+      where: {
+        OR: [
+          { rfq: { accountId: id } },
+          { quote: { rfq: { accountId: id } } },
+        ],
+      },
+      orderBy: { attemptedAt: 'desc' },
+      take: 100,
+      select: {
+        id: true,
+        kind: true,
+        toEmails: true,
+        subject: true,
+        status: true,
+        error: true,
+        attemptedAt: true,
+        sentAt: true,
+        rfq: { select: { code: true } },
+        quote: { select: { code: true, rfq: { select: { code: true } } } },
+      },
+    }),
+  ])
 
   const TABS = [
     { key: 'overview', label: 'Overview' },
     { key: 'rfqs', label: `RFQs (${account.rfqs.length})` },
     { key: 'contacts', label: `Contacts (${account.contacts.length})` },
     { key: 'addresses', label: `Addresses (${account.addresses.length})` },
+    { key: 'emails', label: `Emails (${sentEmails.length})` },
     { key: 'notes', label: 'Notes' },
   ]
 
@@ -354,6 +381,97 @@ export default async function AdminCustomerDetailPage({ params, searchParams }: 
                 </div>
               </div>
             ))
+          )}
+        </div>
+      )}
+
+      {/* ── Emails tab ── */}
+      {tab === 'emails' && (
+        <div>
+          {sentEmails.length === 0 ? (
+            <p className="text-[var(--color-muted)] text-[13px]">
+              No emails sent for this account yet.
+            </p>
+          ) : (
+            <div className="border border-[var(--color-border)] bg-[var(--color-elevated)]">
+              <div className="grid grid-cols-[140px_140px_1fr_120px_100px] gap-3 px-4 py-2.5 border-b border-[var(--color-border)] font-mono text-[10px] tracking-[0.1em] uppercase text-[var(--color-muted)]">
+                <span>Sent</span>
+                <span>Kind</span>
+                <span>Subject &amp; recipient</span>
+                <span>Linked</span>
+                <span>Status</span>
+              </div>
+              {sentEmails.map((e) => {
+                const recipients = Array.isArray(e.toEmails)
+                  ? (e.toEmails as unknown[]).filter((v): v is string => typeof v === 'string')
+                  : []
+                const linkedRfqCode = e.rfq?.code ?? e.quote?.rfq?.code ?? null
+                const statusColor =
+                  e.status === 'sent'
+                    ? 'text-[oklch(0.4_0.14_145)] bg-[oklch(0.94_0.06_145)]'
+                    : e.status === 'sandboxed'
+                      ? 'text-[oklch(0.5_0.08_240)] bg-[oklch(0.94_0.04_240)]'
+                      : e.status === 'failed'
+                        ? 'text-[oklch(0.5_0.18_25)] bg-[oklch(0.96_0.04_25)]'
+                        : 'text-[var(--color-muted)] bg-[var(--color-deep)]'
+                return (
+                  <div
+                    key={e.id}
+                    className="grid grid-cols-[140px_140px_1fr_120px_100px] gap-3 px-4 py-3 border-b border-[var(--color-border-2)] last:border-0 items-start text-[12px]"
+                  >
+                    <span className="font-mono text-[var(--color-muted)]">
+                      {new Date(e.attemptedAt).toLocaleString('en-GB', {
+                        day: '2-digit',
+                        month: 'short',
+                        year: '2-digit',
+                        hour: '2-digit',
+                        minute: '2-digit',
+                      })}
+                    </span>
+                    <span className="font-mono text-[11px] text-[var(--color-body)]">
+                      {e.kind.replace(/_/g, ' ')}
+                    </span>
+                    <div>
+                      <div className="text-[var(--color-primary)] truncate" title={e.subject}>
+                        {e.subject}
+                      </div>
+                      {recipients.length > 0 && (
+                        <div className="font-mono text-[11px] text-[var(--color-muted)] truncate">
+                          {recipients.join(', ')}
+                        </div>
+                      )}
+                      {e.status === 'failed' && e.error && (
+                        <div className="font-mono text-[11px] text-[oklch(0.5_0.18_25)] mt-0.5 truncate" title={e.error}>
+                          {e.error}
+                        </div>
+                      )}
+                    </div>
+                    <span className="font-mono text-[11px]">
+                      {linkedRfqCode ? (
+                        <Link
+                          href={`/rfqs/${linkedRfqCode}`}
+                          className="text-[var(--color-accent)] hover:underline"
+                        >
+                          {linkedRfqCode}
+                        </Link>
+                      ) : (
+                        <span className="text-[var(--color-caption)]">—</span>
+                      )}
+                    </span>
+                    <span
+                      className={`inline-block px-2 py-0.5 font-mono text-[10px] font-semibold capitalize w-fit ${statusColor}`}
+                    >
+                      {e.status}
+                    </span>
+                  </div>
+                )
+              })}
+              {sentEmails.length === 100 && (
+                <div className="px-4 py-2.5 border-t border-[var(--color-border)] text-[11px] text-[var(--color-muted)] font-mono text-center">
+                  Showing the most recent 100 emails. Older history not yet paginated.
+                </div>
+              )}
+            </div>
           )}
         </div>
       )}
