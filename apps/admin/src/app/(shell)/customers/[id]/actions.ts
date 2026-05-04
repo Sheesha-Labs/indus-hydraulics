@@ -9,7 +9,6 @@ import { failFromError, ok, type Result } from '../../../../lib/result'
 
 const Tier = z.enum(['bronze', 'silver', 'gold', 'platinum'])
 const Status = z.enum(['prospect', 'active', 'at_risk', 'archived'])
-const Locale = z.string().min(1).default('en')
 
 const UpdateAccountMetaSchema = z.object({
   id: z.string().uuid(),

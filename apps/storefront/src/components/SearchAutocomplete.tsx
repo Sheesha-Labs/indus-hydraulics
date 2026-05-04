@@ -122,7 +122,6 @@ export default function SearchAutocomplete({ initialQuery = '', className }: Pro
           placeholder="Search products, SKUs, MPNs…"
           aria-label="Search"
           aria-autocomplete="list"
-          aria-expanded={showPanel}
           className="flex-1 px-3 py-2 bg-transparent text-[13px] text-[var(--color-primary)] placeholder:text-[var(--color-caption)] focus:outline-none"
         />
         <button

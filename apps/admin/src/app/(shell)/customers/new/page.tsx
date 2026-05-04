@@ -24,7 +24,6 @@ async function createAccount(formData: FormData) {
   const paymentTermsDays = parseInt((formData.get('paymentTermsDays') as string) ?? '30')
   const creditLimit = parseFloat((formData.get('creditLimit') as string) ?? '0')
   const assignedRepId = (formData.get('assignedRepId') as string | null) || undefined
-  const locale = (formData.get('locale') as string) ?? 'en'
 
   if (!legalName.trim()) return
 

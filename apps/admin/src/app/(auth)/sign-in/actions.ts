@@ -7,8 +7,6 @@ export async function adminSignInAction(
   _prevState: { error?: string } | null,
   formData: FormData,
 ): Promise<{ error?: string } | null> {
-  const locale = (formData.get('locale') as string) || 'en'
-
   try {
     await signIn('credentials', {
       email: formData.get('email') as string,

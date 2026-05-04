@@ -85,8 +85,11 @@ export default function BlogPostEditorClient({ isNew, post, recentImages }: Prop
     // editor (e.g. Inspector deep-link). The setState-in-effect rule fires
     // here but this is the standard URL-sync pattern.
     const t = searchParams?.get('tab')
-    // eslint-disable-next-line react-hooks/set-state-in-effect, react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     if (!isNew && t && (t === 'content' || t === 'seo') && t !== tab) setTab(t as TabId)
+    // isNew + tab are intentionally excluded — the effect runs on URL
+    // changes only; including tab would cause an infinite loop.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [searchParams])
 
   return (

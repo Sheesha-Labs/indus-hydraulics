@@ -50,10 +50,6 @@ async function uniqueFieldKey(templateId: string, base: string, ignoreId?: strin
   }
 }
 
-// ── Locale ──────────────────────────────────────────────────────────────────
-
-const Locale = z.string().min(1).default('en')
-
 // ── Template CRUD ───────────────────────────────────────────────────────────
 
 const CreateTemplateSchema = z.object({

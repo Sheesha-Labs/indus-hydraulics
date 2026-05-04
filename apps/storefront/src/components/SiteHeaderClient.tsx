@@ -3,6 +3,7 @@
 import { useState, useRef, useCallback } from 'react'
 import type React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import type { ResolvedNavItem } from '@indus/domain'
 import SearchAutocomplete from './SearchAutocomplete'
 
@@ -14,7 +15,6 @@ interface Props {
   isSignedIn: boolean
   userName: string | null
   notificationBell?: React.ReactNode
-  activeSkuCount?: number
 }
 
 function isMegamenuTrigger(item: ResolvedNavItem, megamenuItems: ResolvedNavItem[]): boolean {
@@ -31,7 +31,6 @@ export default function SiteHeaderClient({
   isSignedIn,
   userName,
   notificationBell,
-  activeSkuCount,
 }: Props) {
   const [mobileOpen, setMobileOpen] = useState(false)
   const [megamenuOpen, setMegamenuOpen] = useState(false)
@@ -304,7 +303,15 @@ export default function SiteHeaderClient({
                     onClick={closeMegaImmediate}
                     className="mt-4 block bg-[var(--color-surface)] border border-[var(--color-border)] overflow-hidden"
                   >
-                    <img src={activeCat.promoImageUrl} alt="" className="w-full h-32 object-cover" />
+                    <div className="relative w-full h-32">
+                      <Image
+                        src={activeCat.promoImageUrl}
+                        alt=""
+                        fill
+                        className="object-cover"
+                        sizes="(max-width: 1360px) 33vw, 440px"
+                      />
+                    </div>
                     <div className="px-4 py-3">
                       {activeCat.promoHeading ? (
                         <div className="text-[13px] font-medium text-[var(--color-primary)]">

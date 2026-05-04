@@ -126,7 +126,6 @@ export default async function RfqStatusPage({ params, searchParams }: Props) {
   if (!hasValidToken && rfq.accountId !== session?.user?.accountId) notFound()
 
   const isTerminal = ['declined', 'expired', 'cancelled'].includes(rfq.status)
-  const isConfirmation = sp.confirmed === '1'
   const stepReached = getStepReached(rfq.status)
   const urgencyLabel = URGENCY_LABELS[rfq.urgency] ?? rfq.urgency
   const urgencyColor = URGENCY_COLORS[rfq.urgency] ?? URGENCY_COLORS.routine!
