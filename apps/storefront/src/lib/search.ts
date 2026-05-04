@@ -82,15 +82,17 @@ export async function runSearch(rawQuery: string): Promise<SearchPlan> {
   }
 
   // FTS pass.
+  // Column names use Prisma's camelCase (quoted) — Prisma does not @map
+  // these tables to snake_case so the underlying columns are camelCase.
   const ftsRows = await db.$queryRaw<Array<{ id: string; score: number }>>(Prisma.sql`
     SELECT p.id::text AS id,
            ts_rank_cd(p.search_tsv, websearch_to_tsquery('english', ${plan.tsqueryExpression}))
              * COALESCE(b.boost, 1.0) AS score
     FROM products p
     LEFT JOIN search_boosts b
-      ON b.entity_type::text = 'product'
-     AND b.entity_id = p.id
-     AND (b.expires_at IS NULL OR b.expires_at > NOW())
+      ON b."entityType"::text = 'product'
+     AND b."entityId" = p.id
+     AND (b."expiresAt" IS NULL OR b."expiresAt" > NOW())
     WHERE p.status::text = 'active'
       AND p.search_tsv @@ websearch_to_tsquery('english', ${plan.tsqueryExpression})
     ORDER BY score DESC, p.title ASC
@@ -169,8 +171,8 @@ export async function runAutocomplete(
            br.name AS "brandName",
            c.slug AS "categorySlug"
     FROM products p
-    LEFT JOIN brands br ON p.brand_id = br.id
-    LEFT JOIN categories c ON p.category_id = c.id
+    LEFT JOIN brands br ON p."brandId" = br.id
+    LEFT JOIN categories c ON p."categoryId" = c.id
     WHERE p.status::text = 'active'
       AND p.search_tsv @@ to_tsquery('english', ${tsQuery})
     ORDER BY ts_rank_cd(p.search_tsv, to_tsquery('english', ${tsQuery})) DESC
