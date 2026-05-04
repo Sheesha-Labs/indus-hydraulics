@@ -86,6 +86,7 @@ export default function AccountSidebar({ userName, userEmail, counts }: Props) {
       <p className="font-mono text-[10px] tracking-[0.14em] text-[var(--color-caption)] px-3 pt-3.5 pb-1.5 uppercase">
         Account
       </p>
+      {navLink(`/account/profile`, 'Profile')}
       {navLink(`/account/addresses`, 'Addresses')}
       {navLink(`/account/notifications`, 'Notifications', counts?.notifications)}
 
