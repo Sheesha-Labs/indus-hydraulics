@@ -744,6 +744,12 @@ model Rfq {
   assignedRep           StaffUser?      @relation("AssignedRep", fields: [assignedRepId], references: [id])
   internalNotes         String?
   customerMessage       String?
+  // Lightweight order-tracking fields. Filled by admin once the order is
+  // dispatched; surfaced under the Shipped step on the customer's
+  // /quote/[code] timeline. No carrier integration — free-text strings
+  // the admin pastes from the carrier's portal.
+  trackingCarrier       String?
+  trackingNumber        String?
   submittedAt           DateTime?
   quoteSentAt           DateTime?
   acceptedAt            DateTime?

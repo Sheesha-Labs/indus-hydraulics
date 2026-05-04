@@ -397,6 +397,44 @@ export default async function AdminRfqDetailPage({ params }: Props) {
             </div>
           )}
 
+          {/* Tracking */}
+          <div className="border border-[var(--color-border)] bg-[var(--color-elevated)] p-4">
+            <h3 className="font-mono text-[10px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-2">Tracking</h3>
+            <p className="text-[11px] text-[var(--color-muted)] mb-3 leading-[1.5]">
+              Free-text. Surfaces under the Shipped step on the customer&apos;s
+              /quote/[code] timeline.
+            </p>
+            <form action={async (fd: FormData) => {
+              'use server'
+              const { updateTracking } = await import('./actions')
+              const r = await updateTracking(fd)
+              if (!r.success) throw new Error(r.message)
+            }}>
+              <input type="hidden" name="rfqId" value={rfq.id} />
+              <label className="block font-mono text-[11px] text-[var(--color-muted)] mb-1">Carrier</label>
+              <input
+                type="text"
+                name="trackingCarrier"
+                defaultValue={rfq.trackingCarrier ?? ''}
+                placeholder="e.g. Aramex, DHL"
+                maxLength={120}
+                className="w-full h-8 px-2 mb-2 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] text-[var(--color-primary)] placeholder:text-[var(--color-caption)] focus:outline-none focus:border-[var(--color-accent)]"
+              />
+              <label className="block font-mono text-[11px] text-[var(--color-muted)] mb-1">Tracking number</label>
+              <input
+                type="text"
+                name="trackingNumber"
+                defaultValue={rfq.trackingNumber ?? ''}
+                placeholder="AWB / consignment #"
+                maxLength={120}
+                className="w-full h-8 px-2 mb-2 border border-[var(--color-border)] bg-[var(--color-elevated)] font-mono text-[13px] text-[var(--color-primary)] placeholder:text-[var(--color-caption)] focus:outline-none focus:border-[var(--color-accent)]"
+              />
+              <button type="submit" className="h-8 px-3 border border-[var(--color-border)] font-mono text-[11px] text-[var(--color-body)] hover:bg-[var(--color-deep)] transition-colors">
+                Save
+              </button>
+            </form>
+          </div>
+
           {/* Application context */}
           {rfq.applicationContext && (
             <div className="border border-[var(--color-border)] bg-[var(--color-elevated)] p-4">

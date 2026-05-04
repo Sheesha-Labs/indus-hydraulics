@@ -200,6 +200,44 @@ export async function assignEngineer(rfqId: string, engineerId: string): Promise
   }
 }
 
+const UpdateTrackingSchema = z.object({
+  rfqId: z.string().uuid(),
+  trackingCarrier: z.string().trim().max(120).optional().or(z.literal('')),
+  trackingNumber: z.string().trim().max(120).optional().or(z.literal('')),
+})
+
+/**
+ * Set or clear the carrier + tracking number on an RFQ. Both fields are
+ * stored as free-text strings (no carrier integration). The customer's
+ * /quote/[code] page surfaces them under the Shipped step on the
+ * timeline once the RFQ status reaches `shipped` or beyond.
+ */
+export async function updateTracking(formData: FormData): Promise<Result<void>> {
+  try {
+    requireRole(await auth(), ROLES.RFQ_REVIEW)
+
+    const parsed = UpdateTrackingSchema.parse({
+      rfqId: formData.get('rfqId'),
+      trackingCarrier: formData.get('trackingCarrier') ?? '',
+      trackingNumber: formData.get('trackingNumber') ?? '',
+    })
+
+    await db.rfq.update({
+      where: { id: parsed.rfqId },
+      data: {
+        trackingCarrier: parsed.trackingCarrier ? parsed.trackingCarrier : null,
+        trackingNumber: parsed.trackingNumber ? parsed.trackingNumber : null,
+      },
+    })
+
+    revalidatePath(`/rfqs`)
+    revalidatePath(`/rfqs/[code]`, 'page')
+    return ok(undefined)
+  } catch (err) {
+    return failFromError(err)
+  }
+}
+
 const SaveLineReviewSchema = z.object({
   rfqId: z.string().uuid(),
   internalNotes: z.string().optional().transform((v) => v ?? null),
