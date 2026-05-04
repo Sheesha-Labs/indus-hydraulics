@@ -1,0 +1,64 @@
+name: Smoke E2E
+
+# Runs the storefront Playwright smoke suite against every successful Vercel
+# deployment of the storefront app — both PR previews and production. Catches
+# the class of bug where the build succeeds but the deployed URL is broken
+# (e.g. the /search 500 incident from 2026-05-04).
+#
+# We rely on Vercel's deployment_status webhook so the smoke runs against a
+# real deployed URL. Skip admin deployments — they need a different smoke
+# suite (auth-gated).
+
+on:
+  deployment_status:
+
+jobs:
+  smoke:
+    name: smoke (deployed url)
+    if: |
+      github.event.deployment_status.state == 'success' &&
+      endsWith(github.event.deployment.environment, 'indus-hydraulics')
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout (commit being deployed)
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.deployment.sha }}
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9.15.0
+          run_install: false
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+
+      - name: Install dependencies
+        # --ignore-scripts skips the Prisma generate postinstall: smoke runs
+        # against the deployed URL so we don't need a local Prisma client.
+        run: pnpm install --frozen-lockfile --ignore-scripts
+
+      - name: Install Playwright Chromium
+        run: pnpm exec playwright install --with-deps chromium
+
+      - name: Run smoke E2E
+        env:
+          PLAYWRIGHT_BASE_URL: ${{ github.event.deployment_status.environment_url }}
+          PLAYWRIGHT_REUSE_SERVER: '1'
+        run: pnpm test:e2e
+
+      - name: Upload Playwright trace on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-trace-${{ github.event.deployment.sha }}
+          path: |
+            test-results/
+            playwright-report/
+          retention-days: 7
+          if-no-files-found: ignore
