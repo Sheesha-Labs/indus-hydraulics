@@ -23,6 +23,8 @@ export default async function ProfilePage() {
       passwordHash: true,
       lastSignInAt: true,
       role: true,
+      pendingEmailNew: true,
+      pendingEmailExpiresAt: true,
     },
   })
 
@@ -30,6 +32,16 @@ export default async function ProfilePage() {
 
   // Don't expose the hash to the client — only the boolean of "do they have one".
   const hasPassword = Boolean(contact.passwordHash)
+
+  // Treat an expired pending change as no pending change — the user can
+  // request a new one. The cancel-on-confirm cleanup handles this in code,
+  // but rendering treats it the same way as a safety net.
+  // eslint-disable-next-line react-hooks/purity
+  const now = Date.now()
+  const pendingActive =
+    contact.pendingEmailNew &&
+    contact.pendingEmailExpiresAt &&
+    contact.pendingEmailExpiresAt.getTime() > now
 
   return (
     <ProfileFormClient
@@ -42,6 +54,12 @@ export default async function ProfilePage() {
         hasPassword,
         lastSignInAt: contact.lastSignInAt ? contact.lastSignInAt.toISOString() : null,
         role: contact.role,
+        pendingEmail: pendingActive
+          ? {
+              newEmail: contact.pendingEmailNew!,
+              expiresAt: contact.pendingEmailExpiresAt!.toISOString(),
+            }
+          : null,
       }}
     />
   )
