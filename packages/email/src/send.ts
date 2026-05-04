@@ -9,6 +9,7 @@ export type EmailKind =
   | 'quote_declined_ack'
   | 'password_reset'
   | 'contact_inquiry'
+  | 'quote_expiry_reminder'
 
 export type EmailAttachment = {
   filename: string
