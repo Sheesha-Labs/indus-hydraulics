@@ -84,13 +84,13 @@ export default function CategoriesClient({ categories, templates }: Props) {
             <CategoryRows
               key={root.id}
               cat={root}
-              children={childrenByParent[root.id] ?? []}
+              subRows={childrenByParent[root.id] ?? []}
               depth={0}
               editingId={editingId}
               setEditingId={setEditingId}
               parents={categories}
               templates={templates}
-             
+
             />
           ))}
 
@@ -101,13 +101,13 @@ export default function CategoriesClient({ categories, templates }: Props) {
               <CategoryRows
                 key={c.id}
                 cat={c}
-                children={childrenByParent[c.id] ?? []}
+                subRows={childrenByParent[c.id] ?? []}
                 depth={0}
                 editingId={editingId}
                 setEditingId={setEditingId}
                 parents={categories}
                 templates={templates}
-               
+
               />
             ))}
         </div>
@@ -118,7 +118,7 @@ export default function CategoriesClient({ categories, templates }: Props) {
 
 function CategoryRows({
   cat,
-  children,
+  subRows,
   depth,
   editingId,
   setEditingId,
@@ -126,7 +126,7 @@ function CategoryRows({
   templates,
 }: {
   cat: Cat
-  children: Cat[]
+  subRows: Cat[]
   depth: number
   editingId: string | null
   setEditingId: (id: string | null) => void
@@ -200,11 +200,11 @@ function CategoryRows({
         </div>
       )}
 
-      {children.map((child) => (
+      {subRows.map((child) => (
         <CategoryRows
           key={child.id}
           cat={child}
-          children={[]}
+          subRows={[]}
           depth={depth + 1}
           editingId={editingId}
           setEditingId={setEditingId}

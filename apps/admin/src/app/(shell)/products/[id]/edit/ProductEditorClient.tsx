@@ -198,10 +198,12 @@ export default function ProductEditorClient({
   const [savedAt, setSavedAt] = useState<string | null>(null)
 
   // Keep the local tab in sync if the URL changes via Inspector deep-link.
+  // The setState-in-effect rule fires here but this is the standard
+  // URL-sync pattern.
   useEffect(() => {
     const t = searchParams?.get('tab')
+    // eslint-disable-next-line react-hooks/set-state-in-effect, react-hooks/exhaustive-deps
     if (t && TABS.some((x) => x.id === t) && t !== tab) setTab(t as TabId)
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [searchParams])
 
   function bumpSaved() {
@@ -1753,7 +1755,7 @@ function FaqsTab({
   return (
     <div className="flex flex-col gap-6 max-w-4xl">
       <p className="text-[12px] text-[var(--color-muted)]">
-        Author frequently-asked questions for this product. They render in order on the storefront's FAQ tab as collapsible Q+A pairs.
+        Author frequently-asked questions for this product. They render in order on the storefront&apos;s FAQ tab as collapsible Q+A pairs.
       </p>
       {faqs.length === 0 ? (
         <p className="text-[13px] text-[var(--color-muted)]">No FAQs yet — add the first one below.</p>

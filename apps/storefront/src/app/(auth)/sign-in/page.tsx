@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Link from 'next/link'
 import SignInForm from './SignInForm'
 
 export const metadata: Metadata = { title: 'Sign in' }
@@ -41,7 +42,7 @@ export default function SignInPage() {
             <div className="flex-1 h-px bg-[var(--color-border)]" />
           </div>
 
-          <a
+          <Link
             href="/api/auth/signin/microsoft-entra-id"
             className="flex items-center justify-center gap-2.5 w-full h-11 border border-[var(--color-border)] bg-[var(--color-elevated)] text-sm font-medium text-[var(--color-primary)] hover:bg-[var(--color-deep)] transition-colors"
           >
@@ -52,7 +53,7 @@ export default function SignInPage() {
               <rect x="11" y="11" width="10" height="10" fill="#FFB900" />
             </svg>
             Sign in with Microsoft 365
-          </a>
+          </Link>
 
           <p className="mt-8 text-[13px] text-[var(--color-muted)]">
             New to Indus Hydraulics?{' '}
