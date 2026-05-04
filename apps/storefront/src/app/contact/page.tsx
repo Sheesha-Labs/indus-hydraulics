@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { db } from '@indus/db'
+import ContactFormClient from './ContactFormClient'
 
 // Static-ish marketing page; cache for 1 hour.
 export const revalidate = 3600
@@ -43,82 +44,7 @@ export default async function ContactPage({ params }: Props) {
       <div className="max-w-[1360px] mx-auto px-8 py-8 pb-16 grid gap-14" style={{ gridTemplateColumns: '1.1fr 1fr' }}>
 
         {/* ── Form card ─────────────────────────────────────── */}
-        <div className="border border-[var(--color-border)] bg-[var(--color-elevated)] p-9">
-          <h2 className="text-[22px] font-semibold tracking-[-0.01em] mb-1">Send us a message</h2>
-          <p className="text-[14px] text-[var(--color-muted)] mb-6">Or pick a faster channel on the right →</p>
-
-          {/* Tabs */}
-          <div className="flex gap-1 mb-6 p-1 bg-[var(--color-surface)] border border-[var(--color-border)]">
-            {['Quotation request', 'Application help', 'General enquiry'].map((tab, i) => (
-              <button
-                key={tab}
-                type="button"
-                className={`flex-1 py-2.5 px-3.5 text-[13px] font-medium transition-colors ${i === 0 ? 'bg-[var(--color-primary)] text-[var(--color-elevated)]' : 'text-[var(--color-muted)] hover:text-[var(--color-body)]'}`}
-              >
-                {tab}
-              </button>
-            ))}
-          </div>
-
-          <form className="space-y-3">
-            <div className="grid grid-cols-2 gap-3">
-              <div>
-                <label className="block text-[12px] font-medium text-[var(--color-body)] mb-1.5">First name *</label>
-                <input type="text" placeholder="e.g. Rohit" required className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-surface)] text-[13px] text-[var(--color-primary)] placeholder:text-[var(--color-caption)] focus:outline-none focus:border-[var(--color-accent)]" />
-              </div>
-              <div>
-                <label className="block text-[12px] font-medium text-[var(--color-body)] mb-1.5">Last name *</label>
-                <input type="text" placeholder="e.g. Kapoor" required className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-surface)] text-[13px] text-[var(--color-primary)] placeholder:text-[var(--color-caption)] focus:outline-none focus:border-[var(--color-accent)]" />
-              </div>
-            </div>
-            <div className="grid grid-cols-2 gap-3">
-              <div>
-                <label className="block text-[12px] font-medium text-[var(--color-body)] mb-1.5">Work email *</label>
-                <input type="email" placeholder="rohit@company.com" required className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-surface)] text-[13px] text-[var(--color-primary)] placeholder:text-[var(--color-caption)] focus:outline-none focus:border-[var(--color-accent)]" />
-              </div>
-              <div>
-                <label className="block text-[12px] font-medium text-[var(--color-body)] mb-1.5">Phone / WhatsApp</label>
-                <input type="tel" placeholder="+91 98XXX XXXXX" className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-surface)] font-mono text-[13px] text-[var(--color-primary)] placeholder:text-[var(--color-caption)] focus:outline-none focus:border-[var(--color-accent)]" />
-              </div>
-            </div>
-            <div className="grid grid-cols-2 gap-3">
-              <div>
-                <label className="block text-[12px] font-medium text-[var(--color-body)] mb-1.5">Company *</label>
-                <input type="text" placeholder="Your company" required className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-surface)] text-[13px] text-[var(--color-primary)] placeholder:text-[var(--color-caption)] focus:outline-none focus:border-[var(--color-accent)]" />
-              </div>
-              <div>
-                <label className="block text-[12px] font-medium text-[var(--color-body)] mb-1.5">Industry</label>
-                <select className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-surface)] text-[13px] text-[var(--color-primary)] focus:outline-none focus:border-[var(--color-accent)]">
-                  <option>Select…</option>
-                  <option>Oil & Gas</option>
-                  <option>Marine</option>
-                  <option>Mining</option>
-                  <option>Steel & Metals</option>
-                  <option>Construction</option>
-                  <option>Power & Energy</option>
-                  <option>Other</option>
-                </select>
-              </div>
-            </div>
-            <div>
-              <label className="block text-[12px] font-medium text-[var(--color-body)] mb-1.5">SKUs or part numbers</label>
-              <input type="text" placeholder="e.g. IH-AP71-D-R-V, A10VSO 71cc" className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-surface)] font-mono text-[13px] text-[var(--color-primary)] placeholder:text-[var(--color-caption)] focus:outline-none focus:border-[var(--color-accent)]" />
-              <p className="font-mono text-[11px] text-[var(--color-muted)] mt-1">Separate multiple SKUs with commas</p>
-            </div>
-            <div>
-              <label className="block text-[12px] font-medium text-[var(--color-body)] mb-1.5">Message / application details</label>
-              <textarea rows={4} placeholder="Describe the equipment, failure mode, application, or question…" className="w-full px-3 py-2.5 border border-[var(--color-border)] bg-[var(--color-surface)] text-[13px] text-[var(--color-primary)] placeholder:text-[var(--color-caption)] focus:outline-none focus:border-[var(--color-accent)] resize-none" />
-            </div>
-            <div className="flex justify-between items-center pt-4 border-t border-[var(--color-border-2)]">
-              <p className="text-[12px] text-[var(--color-muted)] max-w-[280px] leading-[1.4]">
-                By submitting, you agree to our privacy policy. We don&apos;t share your data.
-              </p>
-              <button type="submit" className="h-10 px-6 bg-[var(--color-accent)] text-white text-[13px] font-medium hover:opacity-90 transition-opacity whitespace-nowrap">
-                Send message →
-              </button>
-            </div>
-          </form>
-        </div>
+        <ContactFormClient />
 
         {/* ── Right column: channels + offices ──────────────── */}
         <div>

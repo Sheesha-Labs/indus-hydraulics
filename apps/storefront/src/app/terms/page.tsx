@@ -7,6 +7,8 @@ export const metadata: Metadata = { title: 'Terms of Service' }
 // Legal page rarely changes; cache for 1 hour.
 export const revalidate = 3600
 
+const EFFECTIVE_DATE = '2026-05-04'
+
 type Props = { params: Promise<Record<string, never>> }
 
 export default async function TermsPage({ params }: Props) {
@@ -33,19 +35,167 @@ export default async function TermsPage({ params }: Props) {
   }
 
   return (
-    <div className="max-w-[820px] mx-auto px-8 py-16 pb-24">
-      <h1 className="text-[36px] font-semibold tracking-tight mb-3">Terms of Service</h1>
-      <p className="text-[15px] text-[var(--color-muted)] leading-[1.7] mb-3">
-        Our standard terms of sale and service are currently being prepared.
-      </p>
-      <p className="text-[14px] text-[var(--color-muted)] leading-[1.7]">
-        For commercial terms applicable to ongoing engagements, please refer to the
-        contract document supplied with your quote, or contact{' '}
-        <a className="text-[var(--color-accent)] hover:underline" href="mailto:sales@indushydraulics.com">
-          sales@indushydraulics.com
-        </a>
-        .
-      </p>
-    </div>
+    <article className="max-w-[820px] mx-auto px-8 py-16 pb-24 text-[var(--color-body)]">
+      <header className="mb-10">
+        <h1 className="text-[36px] font-semibold tracking-tight mb-3">Terms of Service</h1>
+        <p className="font-mono text-[12px] text-[var(--color-muted)] tracking-[0.06em] uppercase">
+          Effective {EFFECTIVE_DATE} · Version 1.0
+        </p>
+      </header>
+
+      <Section title="1. About these terms">
+        <p>
+          These Terms of Service (&ldquo;Terms&rdquo;) govern your access to and use of the website at
+          indushydraulics.com (the &ldquo;Site&rdquo;) and any goods or services supplied by Indus
+          Hydraulic Power Trading LLC (&ldquo;Indus Hydraulics&rdquo;, &ldquo;we&rdquo;, &ldquo;us&rdquo;).
+          By using the Site or transacting with us, you agree to these Terms.
+        </p>
+      </Section>
+
+      <Section title="2. Quotations and orders">
+        <p>
+          We operate on a Request-for-Quotation (RFQ) basis. When you submit an RFQ through the Site or
+          by email, we respond with a written Estimate that lists the line items, unit prices, lead
+          times, applicable taxes, and validity period.
+        </p>
+        <p>
+          An Estimate is an offer open for acceptance during its stated validity period and may be
+          withdrawn or amended by us before acceptance. A binding contract is formed only when you
+          accept an Estimate in writing (including via the email-acceptance link we provide).
+        </p>
+      </Section>
+
+      <Section title="3. Pricing, currency, and payment">
+        <p>
+          All prices are quoted in UAE Dirhams (AED) unless explicitly stated otherwise on the Estimate.
+          Prices are inclusive of UAE Value Added Tax where the supplier is VAT-registered; the VAT
+          treatment will be itemised on the Estimate.
+        </p>
+        <p>
+          Payment terms are stated on each Estimate. Standard terms are payment in advance for new
+          accounts and net-30 days from invoice for accounts on credit terms. Late payments may attract
+          interest at the rate permitted under UAE law.
+        </p>
+      </Section>
+
+      <Section title="4. Delivery and risk">
+        <p>
+          Delivery terms (Incoterms 2020) are stated on each Estimate. Title and risk transfer in
+          accordance with the agreed Incoterm. Lead times are estimates given in good faith based on
+          stock and supplier information at the time of quotation; we are not liable for delays caused
+          by suppliers, carriers, customs, or events outside our reasonable control.
+        </p>
+      </Section>
+
+      <Section title="5. Acceptance and inspection">
+        <p>
+          You must inspect goods on delivery and notify us in writing of any visible damage, shortage,
+          or non-conformity within seven (7) days. Concealed defects must be reported promptly upon
+          discovery. After this period, goods are deemed accepted.
+        </p>
+      </Section>
+
+      <Section title="6. Warranty">
+        <p>
+          We supply goods covered by the original manufacturer&apos;s warranty. Warranty terms (duration,
+          coverage, and remedies) are those provided by the manufacturer and are passed through to you
+          without modification. We will assist with warranty claims but do not extend cover beyond the
+          manufacturer&apos;s terms.
+        </p>
+        <p>
+          Goods supplied are intended for industrial use by qualified personnel. You are responsible
+          for verifying the suitability of any product for your specific application.
+        </p>
+      </Section>
+
+      <Section title="7. Returns">
+        <p>
+          Goods may only be returned for valid warranty claims or where we have agreed in writing in
+          advance. Special-order or non-stock items are non-returnable. Approved returns must be
+          unused, in original packaging, and accompanied by the original Estimate or invoice reference.
+        </p>
+      </Section>
+
+      <Section title="8. Limitation of liability">
+        <p>
+          To the maximum extent permitted by UAE law, our total liability arising out of or in
+          connection with any Estimate, order, or use of the Site shall not exceed the amount paid by
+          you under the relevant Estimate. We shall not be liable for indirect, consequential, or
+          economic loss including loss of production, profit, or goodwill.
+        </p>
+        <p>
+          Nothing in these Terms limits liability for death or personal injury caused by negligence,
+          for fraud, or for any other liability that cannot be excluded by law.
+        </p>
+      </Section>
+
+      <Section title="9. Intellectual property">
+        <p>
+          All content on the Site — including the catalogue structure, product descriptions authored by
+          us, photographs, and trade dress — is owned by us or our licensors. Manufacturer datasheets,
+          drawings, and brand marks remain the property of the respective manufacturers. You may
+          download and print materials for legitimate evaluation, procurement, and operational use, but
+          may not republish, resell, or redistribute them.
+        </p>
+      </Section>
+
+      <Section title="10. Force majeure">
+        <p>
+          Neither party is liable for failure or delay in performance caused by events beyond
+          reasonable control, including acts of government, war, civil unrest, fire, flood, pandemic,
+          industrial action, transport disruption, or supplier failure. The affected party must notify
+          the other promptly and resume performance as soon as practicable.
+        </p>
+      </Section>
+
+      <Section title="11. Governing law and jurisdiction">
+        <p>
+          These Terms and any contract formed under them are governed by the laws of the United Arab
+          Emirates as applied in the Emirate of Dubai. Any dispute arising shall be subject to the
+          exclusive jurisdiction of the courts of Dubai, without prejudice to any mandatory consumer
+          rights you may have.
+        </p>
+      </Section>
+
+      <Section title="12. Changes to these terms">
+        <p>
+          We may update these Terms from time to time. The current version is always the version
+          published at this URL with the effective date shown above. Material changes will be notified
+          to active account holders by email. Continued use of the Site after changes take effect
+          constitutes acceptance of the updated Terms.
+        </p>
+      </Section>
+
+      <Section title="13. Contact">
+        <p>
+          For questions about these Terms or any commercial matter, contact us at{' '}
+          <a className="text-[var(--color-accent)] hover:underline" href="mailto:sales@indushydraulics.com">
+            sales@indushydraulics.com
+          </a>{' '}
+          or via the channels listed on our{' '}
+          <a className="text-[var(--color-accent)] hover:underline" href="/contact">
+            contact page
+          </a>
+          .
+        </p>
+      </Section>
+
+      <footer className="mt-12 pt-6 border-t border-[var(--color-border)] text-[12px] text-[var(--color-caption)] leading-[1.6]">
+        These Terms are written in plain English as a v1 reference. They are not a substitute for
+        independent legal advice. For high-value or unusual engagements, the contract document supplied
+        with your Estimate takes precedence over these Terms.
+      </footer>
+    </article>
+  )
+}
+
+function Section({ title, children }: { title: string; children: React.ReactNode }) {
+  return (
+    <section className="mb-8">
+      <h2 className="text-[18px] font-semibold tracking-[-0.01em] mb-3 text-[var(--color-primary)]">
+        {title}
+      </h2>
+      <div className="text-[15px] leading-[1.7] space-y-3">{children}</div>
+    </section>
   )
 }
