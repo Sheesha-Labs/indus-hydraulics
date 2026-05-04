@@ -35,7 +35,7 @@ export default async function ContactPage({ params }: Props) {
           Talk to a real applications engineer.
         </h1>
         <p className="text-[17px] text-[var(--color-muted)] max-w-[580px] leading-[1.55]">
-          Send us a circuit diagram, a part number, or a photo of the failure. We'll respond within 4 business hours — often within minutes via WhatsApp.
+          Send us a circuit diagram, a part number, or a photo of the failure. We&apos;ll respond within 4 business hours — often within minutes via WhatsApp.
         </p>
       </div>
 
@@ -111,7 +111,7 @@ export default async function ContactPage({ params }: Props) {
             </div>
             <div className="flex justify-between items-center pt-4 border-t border-[var(--color-border-2)]">
               <p className="text-[12px] text-[var(--color-muted)] max-w-[280px] leading-[1.4]">
-                By submitting, you agree to our privacy policy. We don't share your data.
+                By submitting, you agree to our privacy policy. We don&apos;t share your data.
               </p>
               <button type="submit" className="h-10 px-6 bg-[var(--color-accent)] text-white text-[13px] font-medium hover:opacity-90 transition-opacity whitespace-nowrap">
                 Send message →
@@ -238,7 +238,7 @@ export default async function ContactPage({ params }: Props) {
           {/* RFQ CTA */}
           <div className="border border-[var(--color-border)] bg-[var(--color-elevated)] p-5">
             <b className="text-[14px]">Prefer to submit a formal RFQ?</b>
-            <p className="mt-1 text-[13px] text-[var(--color-muted)] mb-3">Use our quote builder to add specific SKUs with quantities and we'll respond with pricing within 4 hours.</p>
+            <p className="mt-1 text-[13px] text-[var(--color-muted)] mb-3">Use our quote builder to add specific SKUs with quantities and we&apos;ll respond with pricing within 4 hours.</p>
             <Link
               href={`/quote`}
               className="inline-flex h-9 px-4 items-center border border-[var(--color-border)] font-mono text-[12px] text-[var(--color-body)] hover:bg-[var(--color-deep)] transition-colors"
@@ -255,7 +255,7 @@ export default async function ContactPage({ params }: Props) {
           <div>
             <h2 className="text-[32px] font-semibold tracking-[-0.02em] leading-snug">Frequently asked questions</h2>
             <p className="mt-3 text-[14px] text-[var(--color-muted)] leading-[1.6]">
-              Can't find your answer? Call us or use WhatsApp — we're the fastest channel.
+              Can&apos;t find your answer? Call us or use WhatsApp — we&apos;re the fastest channel.
             </p>
           </div>
           <div className="flex flex-col">

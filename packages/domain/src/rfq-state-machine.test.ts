@@ -25,10 +25,12 @@ describe('RFQ state machine — canonical transitions per CLAUDE.md §7', () => 
     expect(canTransition('quote_sent', 'expired')).toBe(true)
   })
 
-  test('accepted → order_created is terminal for the RFQ domain', () => {
-    expect(canTransition('accepted', 'order_created')).toBe(true)
-    // Post-order_created statuses are RESERVED — the order/fulfilment domain
-    // owns them. They have no transitions until that domain is wired up.
+  test('accepted has no forward transitions until the order/fulfilment domain ships', () => {
+    // accepted → order_created was pulled because the Order/fulfilment domain
+    // is not wired up — see rfq-state-machine.ts lines 46-50.
+    expect(canTransition('accepted', 'order_created')).toBe(false)
+    expect(getValidTransitions('accepted')).toEqual(['cancelled'])
+    // Post-order_created statuses are RESERVED — same reason.
     expect(canTransition('order_created', 'fulfilling')).toBe(false)
     expect(getValidTransitions('order_created')).toEqual([])
   })

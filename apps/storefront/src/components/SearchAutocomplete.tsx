@@ -40,8 +40,8 @@ export default function SearchAutocomplete({ initialQuery = '', className }: Pro
   useEffect(() => {
     const trimmed = query.trim()
     if (trimmed.length < 1) {
-      setItems([])
-      setPending(false)
+      // No fetch; stale items/pending don't render because `showPanel`
+      // already gates visibility on `query.trim().length >= 1`.
       return
     }
     const handle = window.setTimeout(async () => {

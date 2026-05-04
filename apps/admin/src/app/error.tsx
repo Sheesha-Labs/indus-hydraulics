@@ -1,8 +1,9 @@
 'use client'
 
+import Link from 'next/link'
 import { useEffect } from 'react'
 
-export default function AdminLocaleError({
+export default function AdminError({
   error,
   reset,
 }: {
@@ -11,7 +12,7 @@ export default function AdminLocaleError({
 }) {
   useEffect(() => {
     // eslint-disable-next-line no-console
-    console.error('[admin][locale-error]', error)
+    console.error('[admin][error]', error)
   }, [error])
 
   return (
@@ -38,12 +39,12 @@ export default function AdminLocaleError({
           >
             Try again
           </button>
-          <a
+          <Link
             href="/"
             className="h-10 px-5 inline-flex items-center font-mono text-[12px] border border-[var(--color-border)] text-[var(--color-body)] hover:bg-[var(--color-deep)]"
           >
             Dashboard
-          </a>
+          </Link>
         </div>
       </div>
     </div>

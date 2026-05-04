@@ -1,8 +1,9 @@
 'use client'
 
+import Link from 'next/link'
 import { useEffect } from 'react'
 
-export default function LocaleError({
+export default function StorefrontError({
   error,
   reset,
 }: {
@@ -11,7 +12,7 @@ export default function LocaleError({
 }) {
   useEffect(() => {
     // eslint-disable-next-line no-console
-    console.error('[storefront][locale-error]', error)
+    console.error('[storefront][error]', error)
   }, [error])
 
   return (
@@ -36,12 +37,12 @@ export default function LocaleError({
         >
           Try again
         </button>
-        <a
+        <Link
           href="/"
           className="h-10 px-5 inline-flex items-center font-mono text-[12px] border border-[var(--color-border)] text-[var(--color-body)] hover:bg-[var(--color-deep)]"
         >
           Back to home
-        </a>
+        </Link>
       </div>
     </div>
   )

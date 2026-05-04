@@ -62,9 +62,12 @@ export default function CmsPageEditorClient({ isNew, page, recentImages }: Props
   const [savedAt, setSavedAt] = useState<string | null>(null)
 
   useEffect(() => {
+    // Sync local tab state to URL ?tab= when the user navigates within the
+    // editor. The setState-in-effect rule fires here but this is the
+    // standard URL-sync pattern.
     const t = searchParams?.get('tab')
+    // eslint-disable-next-line react-hooks/set-state-in-effect, react-hooks/exhaustive-deps
     if (!isNew && t && (t === 'content' || t === 'seo') && t !== tab) setTab(t as TabId)
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [searchParams])
 
   return (

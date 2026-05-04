@@ -169,7 +169,7 @@ export default async function IndustriesIndexPage({ params }: Props) {
       <div className="border-t border-[var(--color-border)] bg-[var(--color-elevated)] py-14">
         <div className="max-w-[1360px] mx-auto px-8 flex items-center justify-between gap-8">
           <div>
-            <h2 className="text-[28px] font-semibold tracking-[-0.02em] mb-2">Don't see your industry listed?</h2>
+            <h2 className="text-[28px] font-semibold tracking-[-0.02em] mb-2">Don&apos;t see your industry listed?</h2>
             <p className="text-[14px] text-[var(--color-muted)]">
               We supply hydraulic components across many more applications. Send us your part number or specification.
             </p>

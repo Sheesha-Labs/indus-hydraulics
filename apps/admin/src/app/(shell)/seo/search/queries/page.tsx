@@ -15,6 +15,9 @@ export const metadata: Metadata = { title: 'Query analytics — Indus Admin' }
 const WINDOW_DAYS = 30
 
 export default async function QueryAnalyticsPage() {
+  // Server component renders once per request — Date.now is the right
+  // call for the rolling N-day analytics window.
+  // eslint-disable-next-line react-hooks/purity
   const since = new Date(Date.now() - WINDOW_DAYS * 24 * 60 * 60 * 1000)
 
   const [topQueries, zeroResultQueries, noClickQueries, totals] = await Promise.all([
