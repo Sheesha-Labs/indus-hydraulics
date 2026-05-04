@@ -1,5 +1,6 @@
 import path from 'path'
 import type { NextConfig } from 'next'
+import { withSentryConfig } from '@sentry/nextjs'
 
 const nextConfig: NextConfig = {
   outputFileTracingRoot: path.join(__dirname, '../../'),
@@ -15,4 +16,13 @@ const nextConfig: NextConfig = {
   },
 }
 
-export default nextConfig
+// Sentry build-time wrapper. Source-map upload only runs when SENTRY_AUTH_TOKEN
+// is set (in CI / Vercel); locally the build still succeeds without it.
+export default withSentryConfig(nextConfig, {
+  org: process.env.SENTRY_ORG,
+  project: process.env.SENTRY_PROJECT,
+  silent: !process.env.CI,
+  widenClientFileUpload: true,
+  sourcemaps: { deleteSourcemapsAfterUpload: true },
+  disableLogger: true,
+})
