@@ -221,6 +221,12 @@ export default async function RfqStatusPage({ params, searchParams }: Props) {
                         )}
                       </div>
                       <div className="font-mono text-[11px] text-[var(--color-muted)] mt-0.5">{active ? 'In progress · ' : ''}{step.desc}</div>
+                      {step.key === 'shipped' && (done || active) && rfq.trackingCarrier && (
+                        <div className="font-mono text-[11px] text-[var(--color-body)] mt-1">
+                          {rfq.trackingCarrier}
+                          {rfq.trackingNumber ? ` · ${rfq.trackingNumber}` : ''}
+                        </div>
+                      )}
                     </div>
                   </div>
                 )
