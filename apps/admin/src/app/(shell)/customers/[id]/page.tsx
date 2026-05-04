@@ -8,7 +8,16 @@ export const metadata: Metadata = { title: 'Customer — Indus Admin' }
 
 type Props = {
   params: Promise<{ id: string }>
-  searchParams: Promise<{ tab?: string }>
+  searchParams: Promise<{ tab?: string; emailsPage?: string }>
+}
+
+const EMAILS_PAGE_SIZE = 25
+
+function parsePage(raw: string | undefined): number {
+  if (!raw) return 1
+  const n = Number.parseInt(raw, 10)
+  if (!Number.isFinite(n) || n < 1) return 1
+  return n
 }
 
 const TIER_COLORS: Record<string, string> = {
@@ -36,6 +45,7 @@ export default async function AdminCustomerDetailPage({ params, searchParams }: 
   const { id } = await params
   const sp = await searchParams
   const tab = sp.tab ?? 'overview'
+  const emailsPage = parsePage(sp.emailsPage)
 
   const account = await db.account.findUnique({
     where: { id },
@@ -61,22 +71,25 @@ export default async function AdminCustomerDetailPage({ params, searchParams }: 
 
   if (!account) notFound()
 
-  const [reps, sentEmails] = await Promise.all([
+  const emailsWhere = {
+    OR: [
+      { rfq: { accountId: id } },
+      { quote: { rfq: { accountId: id } } },
+    ],
+  } as const
+  const [reps, sentEmails, sentEmailsTotal] = await Promise.all([
     db.staffUser.findMany({
       where: { isActive: true, role: { in: ['sales_rep', 'manager', 'super_admin'] } },
       select: { id: true, name: true },
     }),
-    // Last 100 transactional emails sent on behalf of this account, joining
-    // through whichever side (rfq vs quote) the email was attached to.
+    // Page through transactional emails sent on behalf of this account,
+    // joining through whichever side (rfq vs quote) the email was attached
+    // to. Page size + offset come from the URL so the page is shareable.
     db.sentEmail.findMany({
-      where: {
-        OR: [
-          { rfq: { accountId: id } },
-          { quote: { rfq: { accountId: id } } },
-        ],
-      },
+      where: emailsWhere,
       orderBy: { attemptedAt: 'desc' },
-      take: 100,
+      skip: (emailsPage - 1) * EMAILS_PAGE_SIZE,
+      take: EMAILS_PAGE_SIZE,
       select: {
         id: true,
         kind: true,
@@ -90,14 +103,18 @@ export default async function AdminCustomerDetailPage({ params, searchParams }: 
         quote: { select: { code: true, rfq: { select: { code: true } } } },
       },
     }),
+    db.sentEmail.count({ where: emailsWhere }),
   ])
+
+  const totalEmailPages = Math.max(1, Math.ceil(sentEmailsTotal / EMAILS_PAGE_SIZE))
+  const safeEmailsPage = Math.min(emailsPage, totalEmailPages)
 
   const TABS = [
     { key: 'overview', label: 'Overview' },
     { key: 'rfqs', label: `RFQs (${account.rfqs.length})` },
     { key: 'contacts', label: `Contacts (${account.contacts.length})` },
     { key: 'addresses', label: `Addresses (${account.addresses.length})` },
-    { key: 'emails', label: `Emails (${sentEmails.length})` },
+    { key: 'emails', label: `Emails (${sentEmailsTotal})` },
     { key: 'notes', label: 'Notes' },
   ]
 
@@ -466,9 +483,41 @@ export default async function AdminCustomerDetailPage({ params, searchParams }: 
                   </div>
                 )
               })}
-              {sentEmails.length === 100 && (
-                <div className="px-4 py-2.5 border-t border-[var(--color-border)] text-[11px] text-[var(--color-muted)] font-mono text-center">
-                  Showing the most recent 100 emails. Older history not yet paginated.
+              {totalEmailPages > 1 && (
+                <div className="px-4 py-2.5 border-t border-[var(--color-border)] flex items-center justify-between gap-3 text-[11px] font-mono text-[var(--color-muted)]">
+                  <span>
+                    Showing {(safeEmailsPage - 1) * EMAILS_PAGE_SIZE + 1}–
+                    {Math.min(safeEmailsPage * EMAILS_PAGE_SIZE, sentEmailsTotal)} of {sentEmailsTotal}
+                  </span>
+                  <div className="flex items-center gap-2">
+                    {safeEmailsPage > 1 ? (
+                      <Link
+                        href={`/customers/${id}?tab=emails&emailsPage=${safeEmailsPage - 1}`}
+                        className="px-2 py-1 border border-[var(--color-border)] text-[var(--color-body)] hover:bg-[var(--color-deep)] transition-colors"
+                      >
+                        ← Prev
+                      </Link>
+                    ) : (
+                      <span className="px-2 py-1 border border-[var(--color-border)] text-[var(--color-caption)]">
+                        ← Prev
+                      </span>
+                    )}
+                    <span>
+                      page {safeEmailsPage} / {totalEmailPages}
+                    </span>
+                    {safeEmailsPage < totalEmailPages ? (
+                      <Link
+                        href={`/customers/${id}?tab=emails&emailsPage=${safeEmailsPage + 1}`}
+                        className="px-2 py-1 border border-[var(--color-border)] text-[var(--color-body)] hover:bg-[var(--color-deep)] transition-colors"
+                      >
+                        Next →
+                      </Link>
+                    ) : (
+                      <span className="px-2 py-1 border border-[var(--color-border)] text-[var(--color-caption)]">
+                        Next →
+                      </span>
+                    )}
+                  </div>
                 </div>
               )}
             </div>
