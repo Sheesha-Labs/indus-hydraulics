@@ -1,23 +1,31 @@
 name: Smoke E2E
 
-# Runs the storefront Playwright smoke suite against every successful Vercel
-# deployment of the storefront app — both PR previews and production. Catches
-# the class of bug where the build succeeds but the deployed URL is broken
+# Runs the storefront Playwright smoke suite against every successful
+# Production Vercel deployment of the storefront app. Catches the class
+# of bug where the build succeeds but the deployed URL is broken
 # (e.g. the /search 500 incident from 2026-05-04).
 #
-# We rely on Vercel's deployment_status webhook so the smoke runs against a
-# real deployed URL. Skip admin deployments — they need a different smoke
-# suite (auth-gated).
+# Why production-only:
+#   Vercel Pro deployment protection auth-gates the deployment-specific
+#   URLs that `deployment_status.environment_url` returns for previews
+#   (`indus-hydraulics-xxx-projects.vercel.app`). The smoke runs from a
+#   GitHub Actions runner with no Vercel session and gets HTTP 401.
+#   The canonical production URL (`indus-hydraulics.vercel.app`) is
+#   public and routes to the latest production deploy, so we hit that
+#   directly. Preview-deploy smoke is deferred — wire a Vercel
+#   automation bypass token first.
+#
+# Admin deploys are skipped — auth-gated, needs a different suite.
 
 on:
   deployment_status:
 
 jobs:
   smoke:
-    name: smoke (deployed url)
+    name: smoke (production)
     if: |
       github.event.deployment_status.state == 'success' &&
-      endsWith(github.event.deployment.environment, 'indus-hydraulics')
+      github.event.deployment.environment == 'Production – indus-hydraulics'
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
@@ -48,7 +56,9 @@ jobs:
 
       - name: Run smoke E2E
         env:
-          PLAYWRIGHT_BASE_URL: ${{ github.event.deployment_status.environment_url }}
+          # Hit the canonical production URL, not the deployment-specific
+          # URL — see "Why production-only" comment above.
+          PLAYWRIGHT_BASE_URL: https://indus-hydraulics.vercel.app
           PLAYWRIGHT_REUSE_SERVER: '1'
         run: pnpm test:e2e
 
