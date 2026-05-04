@@ -2,7 +2,9 @@
 
 import { useActionState } from 'react'
 import {
+  cancelEmailChange,
   changePassword,
+  requestEmailChange,
   updateProfileBasics,
   type ProfileFormState,
 } from './actions'
@@ -16,6 +18,7 @@ type Initial = {
   hasPassword: boolean
   lastSignInAt: string | null
   role: string
+  pendingEmail: { newEmail: string; expiresAt: string } | null
 }
 
 interface Props {
@@ -30,10 +33,27 @@ export default function ProfileFormClient({ initial }: Props) {
     idleState,
   )
   const [pwState, pwAction, pwPending] = useActionState(changePassword, idleState)
+  const [emailState, emailAction, emailPending] = useActionState(
+    requestEmailChange,
+    idleState,
+  )
+  const [cancelState, cancelAction, cancelPending] = useActionState(
+    async () => cancelEmailChange(),
+    idleState,
+  )
 
   const basicsErrors =
     basicsState.status === 'error' ? basicsState.fieldErrors ?? {} : {}
   const pwErrors = pwState.status === 'error' ? pwState.fieldErrors ?? {} : {}
+  const emailErrors =
+    emailState.status === 'error' ? emailState.fieldErrors ?? {} : {}
+
+  // Pending change can be:
+  //   - present from server (initial.pendingEmail) — was already requested
+  //   - just-cancelled in this session — clear the local view
+  const showPendingFromServer =
+    initial.pendingEmail &&
+    !(cancelState.status === 'success' && cancelState.section === 'email')
 
   const lastSignIn = initial.lastSignInAt
     ? new Date(initial.lastSignInAt).toLocaleString('en-GB', {
@@ -135,18 +155,82 @@ export default function ProfileFormClient({ initial }: Props) {
           <dt className="text-[var(--color-muted)]">Role</dt>
           <dd>{initial.role}</dd>
         </dl>
-
-        <p className="mt-5 text-[12px] text-[var(--color-muted)] leading-[1.5]">
-          To change your sign-in email, contact{' '}
-          <a
-            href="mailto:sales@indushydraulics.com"
-            className="text-[var(--color-accent)] hover:underline"
-          >
-            sales@indushydraulics.com
-          </a>
-          . We&apos;ll verify and update it for you.
-        </p>
       </section>
+
+      {/* ── Change email ───────────────────────────────────── */}
+      {!initial.ssoProvider && (
+        <section className="border border-[var(--color-border)] bg-[var(--color-elevated)] p-6 mb-6">
+          <h2 className="text-[16px] font-semibold mb-1">Change sign-in email</h2>
+          <p className="text-[12px] text-[var(--color-muted)] mb-5">
+            We&apos;ll send a verification link to the new address. Your current
+            email keeps working until you click that link.
+          </p>
+
+          {showPendingFromServer ? (
+            <div className="border border-[var(--color-border-2)] bg-[var(--color-surface)] p-4 mb-3">
+              <p className="text-[13px] text-[var(--color-body)] mb-1">
+                Pending change to <b className="font-mono">{initial.pendingEmail!.newEmail}</b>.
+              </p>
+              <p className="text-[12px] text-[var(--color-muted)] mb-3">
+                Verification link sent · expires {new Date(initial.pendingEmail!.expiresAt).toLocaleString('en-GB', {
+                  day: 'numeric',
+                  month: 'short',
+                  hour: '2-digit',
+                  minute: '2-digit',
+                })}.
+              </p>
+              <form action={cancelAction}>
+                <button
+                  type="submit"
+                  disabled={cancelPending}
+                  className="font-mono text-[11px] text-[var(--color-muted)] hover:text-[var(--color-danger)] disabled:opacity-50 transition-colors"
+                >
+                  {cancelPending ? 'Cancelling…' : 'Cancel pending change'}
+                </button>
+              </form>
+            </div>
+          ) : (
+            <form action={emailAction} className="space-y-3">
+              <Field
+                label="New email *"
+                name="newEmail"
+                type="email"
+                placeholder="you@company.com"
+                required
+                mono
+                hint="The verification link goes to this address."
+                error={emailErrors.newEmail}
+              />
+
+              {emailState.status === 'error' && !Object.keys(emailErrors).length && (
+                <p className="text-[13px] text-[var(--color-danger)] py-1">
+                  {emailState.message}
+                </p>
+              )}
+              {emailState.status === 'success' && emailState.section === 'email' && emailState.message && (
+                <p className="text-[13px] text-[var(--color-accent)] py-1">
+                  {emailState.message}
+                </p>
+              )}
+              {cancelState.status === 'success' && cancelState.section === 'email' && cancelState.message && (
+                <p className="text-[13px] text-[var(--color-muted)] py-1">
+                  {cancelState.message}
+                </p>
+              )}
+
+              <div className="flex justify-end pt-2">
+                <button
+                  type="submit"
+                  disabled={emailPending}
+                  className="h-10 px-5 bg-[var(--color-accent)] text-white text-[13px] font-medium hover:opacity-90 disabled:opacity-50 transition-opacity"
+                >
+                  {emailPending ? 'Sending verification…' : 'Send verification email'}
+                </button>
+              </div>
+            </form>
+          )}
+        </section>
+      )}
 
       {/* ── Password change ────────────────────────────────── */}
       {initial.hasPassword && (

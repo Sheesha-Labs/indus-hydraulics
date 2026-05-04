@@ -303,6 +303,13 @@ model AccountContact {
   lastSignInAt            DateTime?
   failedSignInCount       Int          @default(0)
   lockedUntil             DateTime?
+  // In-flight email-change verification. The user requests a change, we
+  // email a token to the proposed new address, the user clicks the link
+  // and the swap completes. Only one pending change at a time per contact;
+  // requesting a new one overwrites these three fields.
+  pendingEmailNew         String?
+  pendingEmailTokenHash   String?
+  pendingEmailExpiresAt   DateTime?
   createdAt               DateTime     @default(now())
   updatedAt               DateTime     @updatedAt
 
