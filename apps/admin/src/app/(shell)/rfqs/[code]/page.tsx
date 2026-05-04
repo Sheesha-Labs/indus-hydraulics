@@ -33,6 +33,9 @@ const TRANSITION_LABELS: Record<string, string> = {
   accepted: 'Mark Accepted',
   declined: 'Decline',
   cancelled: 'Cancel',
+  order_created: 'Mark Order Placed',
+  shipped: 'Mark Shipped',
+  delivered: 'Mark Delivered',
 }
 
 const TRANSITION_STYLES: Record<string, string> = {
@@ -42,6 +45,9 @@ const TRANSITION_STYLES: Record<string, string> = {
   accepted: 'bg-[oklch(0.4_0.14_145)] text-white hover:opacity-90',
   declined: 'border border-[oklch(0.75_0.1_25)] text-[oklch(0.5_0.1_25)] hover:bg-[oklch(0.97_0.02_25)]',
   cancelled: 'border border-[var(--color-border)] text-[var(--color-muted)] hover:bg-[var(--color-deep)]',
+  order_created: 'bg-[oklch(0.45_0.13_260)] text-white hover:opacity-90',
+  shipped: 'bg-[oklch(0.45_0.13_220)] text-white hover:opacity-90',
+  delivered: 'bg-[oklch(0.4_0.14_145)] text-white hover:opacity-90',
 }
 
 const URGENCY_LABEL: Record<string, string> = {

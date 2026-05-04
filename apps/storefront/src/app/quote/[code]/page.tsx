@@ -26,24 +26,43 @@ const URGENCY_COLORS: Record<string, string> = {
   plant_down: 'text-[oklch(0.5_0.18_25)] bg-[oklch(0.97_0.04_25)]',
 }
 
+// Each timeline step is associated with the AccountActivity verb that
+// records when it was reached. The page reads the most recent matching
+// activity row and surfaces the timestamp next to the label.
 const TIMELINE_STEPS = [
-  { key: 'submitted', label: 'Received', desc: 'auto-acknowledged · confirmation email sent' },
-  { key: 'engineer_review', label: 'Engineer reviewing', desc: 'checking stock · preparing quote' },
-  { key: 'quote_sent', label: 'Quote PDF prepared', desc: 'sent for your approval' },
-  { key: 'accepted', label: 'Approved', desc: 'order created' },
+  { key: 'submitted', label: 'Received', desc: 'auto-acknowledged · confirmation email sent', verb: 'submitted_rfq' },
+  { key: 'engineer_review', label: 'Engineer reviewing', desc: 'checking stock · preparing quote', verb: 'review_started' },
+  { key: 'quote_sent', label: 'Quote PDF prepared', desc: 'sent for your approval', verb: 'quote_sent' },
+  { key: 'accepted', label: 'Approved', desc: 'order being placed', verb: 'quote_accepted' },
+  { key: 'order_created', label: 'Order placed', desc: 'allocated · being prepared for dispatch', verb: 'order_placed' },
+  { key: 'shipped', label: 'Shipped', desc: 'in transit', verb: 'order_shipped' },
+  { key: 'delivered', label: 'Delivered', desc: 'received at destination', verb: 'order_delivered' },
 ] as const
 
-const STATUS_ORDER = ['submitted', 'engineer_review', 'engineer_questions_pending', 'quote_sent', 'accepted', 'order_created']
+const STATUS_ORDER = [
+  'submitted',
+  'engineer_review',
+  'engineer_questions_pending',
+  'quote_sent',
+  'accepted',
+  'order_created',
+  'shipped',
+  'delivered',
+]
 
 function getStepReached(status: string): number {
   if (status === 'draft') return -1
   const idx = STATUS_ORDER.indexOf(status)
   if (idx === -1) return -1
-  // Map to timeline steps
+  // Map status to timeline-step index. engineer_questions_pending collapses
+  // back into the engineer_review step (same dot, same active state).
   if (idx === 0) return 0 // submitted
   if (idx === 1 || idx === 2) return 1 // engineer_review / questions
   if (idx === 3) return 2 // quote_sent
-  return 3 // accepted+
+  if (idx === 4) return 3 // accepted
+  if (idx === 5) return 4 // order_created
+  if (idx === 6) return 5 // shipped
+  return 6 // delivered
 }
 
 export default async function RfqStatusPage({ params, searchParams }: Props) {
@@ -83,6 +102,26 @@ export default async function RfqStatusPage({ params, searchParams }: Props) {
   })
 
   if (!rfq) notFound()
+
+  // Pull recent activity rows so we can show timestamps under each completed
+  // timeline step (e.g. "Shipped · 12 May 2026"). We filter to the verbs
+  // recorded by admin's updateRfqStatus action.
+  const stepVerbs = TIMELINE_STEPS.map((s) => s.verb)
+  const stepActivity = await db.accountActivity.findMany({
+    where: {
+      accountId: rfq.accountId,
+      verb: { in: stepVerbs as unknown as string[] },
+      payload: { path: ['rfqId'], equals: rfq.id },
+    },
+    orderBy: { createdAt: 'desc' },
+    select: { verb: true, createdAt: true },
+  })
+  // First-seen wins (we ordered desc and overwrite, so the *earliest* date
+  // for each verb survives — i.e. when the step was first reached).
+  const stepTimestamps = new Map<string, Date>()
+  for (const row of stepActivity) {
+    stepTimestamps.set(row.verb, row.createdAt)
+  }
   // Logged-in users must own the account; signed-link viewers bypass this.
   if (!hasValidToken && rfq.accountId !== session?.user?.accountId) notFound()
 
@@ -174,7 +213,14 @@ export default async function RfqStatusPage({ params, searchParams }: Props) {
                     </div>
                     {/* Label */}
                     <div className={`pb-6 ${pending ? 'text-[var(--color-muted)]' : ''}`}>
-                      <b className={pending ? 'text-[var(--color-body)]' : ''}>{step.label}</b>
+                      <div className="flex items-baseline gap-2 flex-wrap">
+                        <b className={pending ? 'text-[var(--color-body)]' : ''}>{step.label}</b>
+                        {(done || active) && stepTimestamps.get(step.verb) && (
+                          <span className="font-mono text-[11px] text-[var(--color-muted)]">
+                            {new Date(stepTimestamps.get(step.verb)!).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })}
+                          </span>
+                        )}
+                      </div>
                       <div className="font-mono text-[11px] text-[var(--color-muted)] mt-0.5">{active ? 'In progress · ' : ''}{step.desc}</div>
                     </div>
                   </div>
