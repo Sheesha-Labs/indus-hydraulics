@@ -19,6 +19,13 @@ psql "$DATABASE_URL" -f packages/db/migrations/001_seo_fts.sql
 
 ## Files
 
-| File | Purpose |
-|------|---------|
-| `001_seo_fts.sql` | Wire the SEO OS Postgres FTS pieces: `pg_trgm` extension, generated `products.search_tsv` column, GIN indexes, audit-log helper index. Required for `apps/storefront/src/app/search/page.tsx` and the AI Suggest layer. |
+| File | Purpose | Applied to prod |
+|------|---------|-----------------|
+| `001_seo_fts.sql` | Wire the SEO OS Postgres FTS pieces: `pg_trgm` extension, generated `products.search_tsv` column, GIN indexes, audit-log helper index. Required for `apps/storefront/src/app/search/page.tsx` and the AI Suggest layer. | 2026-05-04 (as `seo_fts_search_indexes`) |
+| `20260501_enforce_one_datasheet_per_product.sql` | Partial unique index ensuring at most one datasheet per product. | yes |
+
+> **Column-naming note:** Prisma in this repo does not use `@map` to snake_case
+> table columns, so the underlying Postgres columns are camelCase (e.g. `"descriptionShort"`,
+> `"entityId"`, `"actorId"`, `"createdAt"`). Raw SQL must double-quote those identifiers.
+> The first version of `001_seo_fts.sql` was written in snake_case and silently never
+> got applied — surfaced when `/search` returned 500 in production after launch.
