@@ -84,6 +84,7 @@ describe('RFQ state machine — canonical transitions per CLAUDE.md §7', () => 
     expect(shouldNotifyCustomer('submitted')).toBe(true)
     expect(shouldNotifyCustomer('quote_sent')).toBe(true)
     expect(shouldNotifyCustomer('order_created')).toBe(true)
+    expect(shouldNotifyCustomer('expired')).toBe(true)
     // No-op states
     expect(shouldNotifyCustomer('draft')).toBe(false)
     expect(shouldNotifyCustomer('engineer_review')).toBe(false)

@@ -1,7 +1,16 @@
 import { inngest } from './client'
 import { db } from '@indus/db'
-import { scoreEntity, signQuoteAccessToken, type SeoEntityType } from '@indus/domain'
-import { renderQuoteExpiryReminder, sendEmail } from '@indus/email'
+import {
+  assertTransition,
+  scoreEntity,
+  signQuoteAccessToken,
+  type SeoEntityType,
+} from '@indus/domain'
+import {
+  renderQuoteExpired,
+  renderQuoteExpiryReminder,
+  sendEmail,
+} from '@indus/email'
 
 /**
  * Nightly recompute of `SeoHealthScore` rows. The site-wide health
@@ -287,4 +296,179 @@ export const quoteExpiryReminder = inngest.createFunction(
   },
 )
 
-export const allFunctions = [recomputeHealthScores, quoteExpiryReminder]
+/**
+ * Hourly job that flips RFQs in `quote_sent` whose latest quote has passed
+ * its `expiresAt` to status `expired`. Closes the loop documented in
+ * CLAUDE.md §7 ("quote_sent → expired automated, when quote_expires_at
+ * passes") — without this job an expired quote stays visible to the
+ * engineer queue forever.
+ *
+ * Race-safety: the per-quote update uses `updateMany` with a compound
+ * `where: { rfqId, status: 'quote_sent' }`. If the engineer manually
+ * marked the RFQ accepted/declined between the find and the update,
+ * `count === 0` and we skip the email + activity log. State machine
+ * transition is validated up front so the rule lives in one place.
+ *
+ * Idempotency: the customer's `quote_expired` notification is deduped
+ * against `SentEmail.kind = 'quote_expired'` for the same quote — re-runs
+ * skip already-notified expirations even if the cron fires twice.
+ */
+export const quoteAutoExpiry = inngest.createFunction(
+  { id: 'quote.auto-expiry', concurrency: 1 },
+  { cron: '0 * * * *' },
+  async ({ step }) => {
+    const now = new Date()
+
+    const branding = await step.run('load-branding', () =>
+      db.storeSettings.findFirst(),
+    )
+    const fromEmail = branding?.quoteFromEmail ?? 'sales@indushydraulics.me'
+    const fromName = branding?.quoteFromName ?? null
+    const baseUrl = (process.env.NEXT_PUBLIC_BASE_URL ?? 'http://localhost:3000').replace(
+      /\/$/,
+      '',
+    )
+
+    const expired = await step.run('find-expired-quotes', () =>
+      db.quote.findMany({
+        where: {
+          expiresAt: { lt: now },
+          acceptedAt: null,
+          declinedAt: null,
+          rfq: { status: 'quote_sent' },
+        },
+        include: {
+          rfq: {
+            include: {
+              submittedBy: {
+                select: {
+                  id: true,
+                  firstName: true,
+                  lastName: true,
+                  email: true,
+                  accountId: true,
+                },
+              },
+            },
+          },
+        },
+      }),
+    )
+
+    let transitioned = 0
+    let alreadyMoved = 0
+    let emailed = 0
+    let unaddressable = 0
+    let alreadyEmailed = 0
+
+    // assertTransition is a sanity check — if `quote_sent → expired` is
+    // ever removed from the state machine this loop fails fast rather
+    // than silently advancing RFQs into an invalid state.
+    assertTransition('quote_sent', 'expired')
+
+    for (const quote of expired) {
+      const result = await step.run(`expire-${quote.id}`, () =>
+        db.rfq.updateMany({
+          where: { id: quote.rfqId, status: 'quote_sent' },
+          data: { status: 'expired' },
+        }),
+      )
+
+      if (result.count === 0) {
+        alreadyMoved++
+        continue
+      }
+      transitioned++
+
+      await step.run(`activity-${quote.id}`, () =>
+        db.accountActivity.create({
+          data: {
+            accountId: quote.rfq.accountId,
+            actorType: 'system',
+            actorId: 'inngest:quote.auto-expiry',
+            verb: 'quote_expired',
+            payload: {
+              rfqId: quote.rfqId,
+              rfqCode: quote.rfq.code,
+              quoteId: quote.id,
+              quoteCode: quote.code,
+              expiresAt: quote.expiresAt,
+            },
+          },
+        }),
+      )
+
+      const submittedBy = quote.rfq.submittedBy
+      if (!submittedBy?.email) {
+        unaddressable++
+        continue
+      }
+
+      const recentExpired = await step.run(`dedupe-${quote.id}`, () =>
+        db.sentEmail.findFirst({
+          where: { kind: 'quote_expired', quoteId: quote.id },
+          select: { id: true },
+        }),
+      )
+      if (recentExpired) {
+        alreadyEmailed++
+        continue
+      }
+
+      const customerName =
+        `${submittedBy.firstName} ${submittedBy.lastName}`.trim() || submittedBy.email
+      const accessToken = signQuoteAccessToken(quote.rfq.code)
+      const rfqUrl = `${baseUrl}/quote/${quote.rfq.code}?token=${encodeURIComponent(accessToken)}`
+      const expiredOnDisplay = new Date(
+        quote.expiresAt as unknown as string,
+      ).toLocaleDateString('en-GB', {
+        day: 'numeric',
+        month: 'short',
+        year: 'numeric',
+      })
+
+      const email = renderQuoteExpired({
+        customerName,
+        quoteCode: quote.code,
+        ...(quote.revision > 1 ? { revisionLabel: `R${quote.revision}` } : {}),
+        expiredOnDisplay,
+        rfqUrl,
+        branding: {
+          legalName: branding?.legalName ?? 'Indus Hydraulic Power Trading LLC',
+          vatTrn: branding?.vatTrn ?? null,
+          registeredAddressLines:
+            (branding?.registeredAddressLines as string[] | null) ?? [],
+          signatureName: branding?.signatureName ?? null,
+          signatureTitle: branding?.signatureTitle ?? null,
+          signaturePhone: branding?.signaturePhone ?? null,
+          signatureEmail: branding?.signatureEmail ?? null,
+        },
+      })
+
+      await step.run(`send-${quote.id}`, () =>
+        sendEmail({
+          kind: 'quote_expired',
+          to: [submittedBy.email],
+          subject: email.subject,
+          html: email.html,
+          fromEmail,
+          ...(fromName ? { fromName } : {}),
+          replyTo: fromEmail,
+          quoteId: quote.id,
+        }),
+      )
+      emailed++
+    }
+
+    return {
+      checked: expired.length,
+      transitioned,
+      alreadyMoved,
+      emailed,
+      unaddressable,
+      alreadyEmailed,
+    }
+  },
+)
+
+export const allFunctions = [recomputeHealthScores, quoteExpiryReminder, quoteAutoExpiry]
