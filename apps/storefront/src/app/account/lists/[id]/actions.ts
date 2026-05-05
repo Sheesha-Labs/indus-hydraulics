@@ -3,7 +3,7 @@
 import { revalidatePath } from 'next/cache'
 import { redirect } from 'next/navigation'
 import { auth } from '../../../../lib/auth'
-import { db } from '@indus/db'
+import { db, nextRfqCode } from '@indus/db'
 
 export async function updateItemQty(itemId: string, qty: number, listId: string) {
   const session = await auth()
@@ -80,25 +80,24 @@ export async function convertToRfq(listId: string) {
 
   if (!list || list.items.length === 0) throw new Error('No items to convert')
 
-  const year = new Date().getFullYear()
-  const count = await db.rfq.count()
-  const code = `RFQ-${year}-${String(count + 1).padStart(4, '0')}`
-
-  const rfq = await db.rfq.create({
-    data: {
-      code,
-      accountId: session.user.accountId,
-      submittedByContactId: session.user.id,
-      subject: `From saved list: ${list.name}`,
-      status: 'draft',
-      lines: {
-        create: list.items.map((item, i) => ({
-          productId: item.productId,
-          requestedQty: item.quantity,
-          position: i,
-        })),
+  const rfq = await db.$transaction(async (tx) => {
+    const code = await nextRfqCode(tx)
+    return tx.rfq.create({
+      data: {
+        code,
+        accountId: session.user.accountId,
+        submittedByContactId: session.user.id,
+        subject: `From saved list: ${list.name}`,
+        status: 'draft',
+        lines: {
+          create: list.items.map((item, i) => ({
+            productId: item.productId,
+            requestedQty: item.quantity,
+            position: i,
+          })),
+        },
       },
-    },
+    })
   })
 
   redirect(`/quote?from_list=${listId}&rfq=${rfq.code}`)

@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
-import { db } from '@indus/db'
+import { db, Prisma } from '@indus/db'
 import { updateAccountMeta, addActivityNote, deactivateContact, reactivateContact, approveAddress } from './actions'
 
 export const metadata: Metadata = { title: 'Customer — Indus Admin' }
@@ -71,7 +71,7 @@ export default async function AdminCustomerDetailPage({ params, searchParams }: 
 
   if (!account) notFound()
 
-  const emailsWhere = {
+  const emailsWhere: Prisma.SentEmailWhereInput = {
     OR: [
       { rfq: { accountId: id } },
       { quote: { rfq: { accountId: id } } },
