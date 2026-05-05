@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter, IBM_Plex_Mono } from 'next/font/google'
 import { unstable_cache } from 'next/cache'
+import { Analytics } from '@vercel/analytics/next'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import { db } from '@indus/db'
 import { buildOrgLd, buildWebsiteLd } from '@indus/domain'
@@ -78,6 +79,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         <SiteFooter />
         <CompareTrayBadge />
         <JsonLd data={[orgLd, websiteLd]} />
+        <Analytics />
         <SpeedInsights />
       </body>
     </html>
