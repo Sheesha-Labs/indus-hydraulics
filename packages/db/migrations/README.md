@@ -23,6 +23,7 @@ psql "$DATABASE_URL" -f packages/db/migrations/001_seo_fts.sql
 |------|---------|-----------------|
 | `001_seo_fts.sql` | Wire the SEO OS Postgres FTS pieces: `pg_trgm` extension, generated `products.search_tsv` column, GIN indexes, audit-log helper index. Required for `apps/storefront/src/app/search/page.tsx` and the AI Suggest layer. | 2026-05-04 (as `seo_fts_search_indexes`) |
 | `20260501_enforce_one_datasheet_per_product.sql` | Partial unique index ensuring at most one datasheet per product. | yes |
+| `002_counters.sql` | `counters` table backing the atomic code generators added in PR #51 (RFQ, ACC, quote). Backfills counter rows from `MAX` of existing codes. Hand-rolled because `db push` would attempt to drop the FTS-managed `products.search_tsv` column. | 2026-05-05 (as `counters_atomic_codes`) |
 
 > **Column-naming note:** Prisma in this repo does not use `@map` to snake_case
 > table columns, so the underlying Postgres columns are camelCase (e.g. `"descriptionShort"`,
