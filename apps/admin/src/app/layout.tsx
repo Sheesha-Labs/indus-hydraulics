@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Inter, IBM_Plex_Mono } from 'next/font/google'
+import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
 const inter = Inter({
@@ -37,6 +38,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     >
       <body className="min-h-full bg-[var(--color-surface)] text-[var(--color-primary)] text-[14px]">
         {children}
+        <Analytics />
       </body>
     </html>
   )
