@@ -4,11 +4,28 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { redirect } from 'next/navigation'
 import { db } from '@indus/db'
+import {
+  PAGE_SIZE,
+  SORT_LABELS,
+  SORT_MODES,
+  buildPageNumbers,
+  parsePageParam,
+  parseSortParam,
+  sortToOrderBy,
+  totalPageCount,
+  type SortMode,
+} from '@indus/domain'
 import { runSearch } from '../../lib/search'
 import SearchLogger from './SearchLogger'
 
 type Props = {
-  searchParams: Promise<{ q?: string; brands?: string; category?: string }>
+  searchParams: Promise<{
+    q?: string
+    brands?: string
+    category?: string
+    page?: string
+    sort?: string
+  }>
 }
 
 export async function generateMetadata({ searchParams }: Props): Promise<Metadata> {
@@ -16,17 +33,18 @@ export async function generateMetadata({ searchParams }: Props): Promise<Metadat
   return { title: sp.q ? `Search: ${sp.q}` : 'Search' }
 }
 
-const PAGE_SIZE = 24
-
 export default async function SearchPage({ searchParams }: Props) {
   const sp = await searchParams
   const query = (sp.q ?? '').trim()
   const selectedBrands = sp.brands ? sp.brands.split(',').filter(Boolean) : []
   const selectedCategory = sp.category ?? ''
+  const sortMode: SortMode = parseSortParam(sp.sort)
+  const currentPage = parsePageParam(sp.page)
 
   let products: Awaited<
     ReturnType<typeof db.product.findMany<{ include: { brand: true; category: true; images: { include: { media: true } } } }>>
   > = []
+  let totalProducts = 0
   let facetBrands: { id: string; name: string; slug: string; count: number }[] = []
   let facetCategories: { id: string; name: string; slug: string; count: number }[] = []
   let relatedDocs: Awaited<
@@ -44,8 +62,9 @@ export default async function SearchPage({ searchParams }: Props) {
     if (plan.productIds.length > 0) {
       // Apply facet filters at app level — keeps the FTS SQL simple and
       // avoids array-binding gymnastics. The FTS pass already capped
-      // results at FTS_FETCH_LIMIT, so we have headroom to filter then
-      // slice to PAGE_SIZE.
+      // results at FTS_FETCH_LIMIT (600), so we have headroom to filter
+      // and paginate without re-running the FTS query.
+      const orderBy = sortToOrderBy(sortMode)
       const filteredById = await db.product.findMany({
         where: {
           id: { in: plan.productIds },
@@ -58,13 +77,24 @@ export default async function SearchPage({ searchParams }: Props) {
           category: true,
           images: { orderBy: { position: 'asc' }, take: 1, include: { media: true } },
         },
+        // For non-relevance sorts, push the order down to Postgres so
+        // pagination is correct across pages. Relevance keeps Postgres-
+        // arbitrary order then re-sorts in JS by FTS score below.
+        ...(orderBy ? { orderBy } : {}),
       })
 
-      // Sort by score (highest first), preserving FTS rank.
-      products = filteredById
-        .slice()
-        .sort((a, b) => (plan.scoreById.get(b.id) ?? 0) - (plan.scoreById.get(a.id) ?? 0))
-        .slice(0, PAGE_SIZE)
+      totalProducts = filteredById.length
+      const ordered =
+        sortMode === 'relevance'
+          ? filteredById
+              .slice()
+              .sort(
+                (a, b) => (plan.scoreById.get(b.id) ?? 0) - (plan.scoreById.get(a.id) ?? 0),
+              )
+          : filteredById
+
+      const start = (currentPage - 1) * PAGE_SIZE
+      products = ordered.slice(start, start + PAGE_SIZE)
 
       // Facets are computed across ALL FTS hits (pre-filter) so a clicked
       // filter doesn't make the alternative facets vanish.
@@ -119,6 +149,8 @@ export default async function SearchPage({ searchParams }: Props) {
       q: query,
       brands: selectedBrands.join(',') || undefined,
       category: selectedCategory || undefined,
+      page: currentPage > 1 ? String(currentPage) : undefined,
+      sort: sortMode === 'relevance' ? undefined : sortMode,
     }
     const merged = { ...base, ...overrides }
     for (const [k, v] of Object.entries(merged)) {
@@ -131,8 +163,13 @@ export default async function SearchPage({ searchParams }: Props) {
     const next = selectedBrands.includes(slug)
       ? selectedBrands.filter((b) => b !== slug)
       : [...selectedBrands, slug]
-    return filterUrl({ brands: next.join(',') || undefined })
+    // Toggling a facet always sends the user back to page 1 — otherwise
+    // they could land on an empty page when the result set shrinks.
+    return filterUrl({ brands: next.join(',') || undefined, page: undefined })
   }
+
+  const totalPages = totalPageCount(totalProducts)
+  const pageTokens = buildPageNumbers(currentPage, totalPages)
 
   const topMatch = products[0]
   const restProducts = products.slice(1)
@@ -148,8 +185,8 @@ export default async function SearchPage({ searchParams }: Props) {
         <h1 className="text-[32px] font-semibold tracking-[-0.02em]">Search results</h1>
         {query.length >= 2 && (
           <span className="font-mono text-[13px] text-[var(--color-muted)]">
-            for &ldquo;<b className="text-[var(--color-primary)]">{query}</b>&rdquo; · {products.length} match
-            {products.length !== 1 ? 'es' : ''}
+            for &ldquo;<b className="text-[var(--color-primary)]">{query}</b>&rdquo; · {totalProducts} match
+            {totalProducts !== 1 ? 'es' : ''}
             {usedFallback && (
               <span className="ml-2 px-1.5 py-0.5 bg-[var(--color-deep)] text-[10px] font-mono uppercase tracking-wider">
                 Suggested
@@ -259,12 +296,50 @@ export default async function SearchPage({ searchParams }: Props) {
               <>
                 <div className="flex justify-between items-center mb-4 text-[13px] text-[var(--color-muted)]">
                   <span>
-                    {products.length} product{products.length !== 1 ? 's' : ''}
+                    {totalProducts} product{totalProducts !== 1 ? 's' : ''}
+                    {totalPages > 1 && (
+                      <>
+                        {' · page '}
+                        <span className="font-mono">{currentPage}</span>
+                        {' of '}
+                        <span className="font-mono">{totalPages}</span>
+                      </>
+                    )}
                   </span>
-                  <div className="flex items-center gap-2.5">
-                    <span>Sort</span>
-                    <span className="font-mono text-[12px] text-[var(--color-body)]">Best match</span>
-                  </div>
+                  <form method="GET" action="/search" className="flex items-center gap-2.5">
+                    {/* Preserve the rest of the URL state when the sort
+                        changes. Hidden inputs replicate `filterUrl()` minus
+                        the sort/page params (changing sort always resets to
+                        page 1). */}
+                    <input type="hidden" name="q" value={query} />
+                    {selectedBrands.length > 0 && (
+                      <input type="hidden" name="brands" value={selectedBrands.join(',')} />
+                    )}
+                    {selectedCategory && (
+                      <input type="hidden" name="category" value={selectedCategory} />
+                    )}
+                    <label className="text-[12px] uppercase tracking-wider" htmlFor="sort-select">
+                      Sort
+                    </label>
+                    <select
+                      id="sort-select"
+                      name="sort"
+                      defaultValue={sortMode}
+                      className="font-mono text-[12px] bg-[var(--color-elevated)] border border-[var(--color-border)] px-2 py-1 text-[var(--color-body)]"
+                    >
+                      {SORT_MODES.map((mode) => (
+                        <option key={mode} value={mode}>
+                          {SORT_LABELS[mode]}
+                        </option>
+                      ))}
+                    </select>
+                    <button
+                      type="submit"
+                      className="font-mono text-[11px] px-2 py-1 border border-[var(--color-border)] hover:bg-[var(--color-deep)]"
+                    >
+                      Apply
+                    </button>
+                  </form>
                 </div>
 
                 {topMatch && (
@@ -315,7 +390,7 @@ export default async function SearchPage({ searchParams }: Props) {
                 )}
 
                 {restProducts.length > 0 && (
-                  <div className="flex flex-col gap-3">
+                  <div className="flex flex-col gap-3" data-search-results-list>
                     {restProducts.map((product) => {
                       const img = product.images[0]
                       return (
@@ -358,6 +433,78 @@ export default async function SearchPage({ searchParams }: Props) {
                       )
                     })}
                   </div>
+                )}
+
+                {totalPages > 1 && (
+                  <nav
+                    aria-label="Search results pagination"
+                    className="mt-8 flex justify-center items-center gap-1"
+                  >
+                    {currentPage > 1 ? (
+                      <Link
+                        href={filterUrl({ page: currentPage > 2 ? String(currentPage - 1) : undefined })}
+                        rel="prev"
+                        aria-label="Previous page"
+                        className="w-9 h-9 border border-[var(--color-border)] flex items-center justify-center font-mono text-[13px] text-[var(--color-muted)] hover:bg-[var(--color-deep)]"
+                      >
+                        ‹
+                      </Link>
+                    ) : (
+                      <span
+                        aria-disabled="true"
+                        className="w-9 h-9 border border-[var(--color-border)] flex items-center justify-center font-mono text-[13px] text-[var(--color-caption)] opacity-50 cursor-not-allowed"
+                      >
+                        ‹
+                      </span>
+                    )}
+
+                    {pageTokens.map((token, i) =>
+                      token === 'ellipsis' ? (
+                        <span
+                          key={`e-${i}`}
+                          aria-hidden="true"
+                          className="w-9 h-9 flex items-center justify-center font-mono text-[13px] text-[var(--color-caption)]"
+                        >
+                          …
+                        </span>
+                      ) : token === currentPage ? (
+                        <span
+                          key={token}
+                          aria-current="page"
+                          className="w-9 h-9 border border-[var(--color-accent)] bg-[var(--color-accent)] text-white flex items-center justify-center font-mono text-[13px] font-semibold"
+                        >
+                          {token}
+                        </span>
+                      ) : (
+                        <Link
+                          key={token}
+                          href={filterUrl({ page: token > 1 ? String(token) : undefined })}
+                          aria-label={`Page ${token}`}
+                          className="w-9 h-9 border border-[var(--color-border)] flex items-center justify-center font-mono text-[13px] text-[var(--color-muted)] hover:bg-[var(--color-deep)]"
+                        >
+                          {token}
+                        </Link>
+                      ),
+                    )}
+
+                    {currentPage < totalPages ? (
+                      <Link
+                        href={filterUrl({ page: String(currentPage + 1) })}
+                        rel="next"
+                        aria-label="Next page"
+                        className="w-9 h-9 border border-[var(--color-border)] flex items-center justify-center font-mono text-[13px] text-[var(--color-muted)] hover:bg-[var(--color-deep)]"
+                      >
+                        ›
+                      </Link>
+                    ) : (
+                      <span
+                        aria-disabled="true"
+                        className="w-9 h-9 border border-[var(--color-border)] flex items-center justify-center font-mono text-[13px] text-[var(--color-caption)] opacity-50 cursor-not-allowed"
+                      >
+                        ›
+                      </span>
+                    )}
+                  </nav>
                 )}
 
                 {relatedDocs.length > 0 && (

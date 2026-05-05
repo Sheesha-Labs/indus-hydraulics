@@ -1,5 +1,5 @@
 import { db, Prisma } from '@indus/db'
-import { planSearch, type SynonymGroup } from '@indus/domain'
+import { extractExactSkuQuery, planSearch, type SynonymGroup } from '@indus/domain'
 
 /**
  * Storefront search engine.
@@ -33,7 +33,10 @@ export type SearchPlan =
       tsqueryExpression: string | null
     }
 
-const FTS_FETCH_LIMIT = 60
+// Up to ~25 pages × 24 results = 600 ranked products per FTS pass.
+// MAX_PAGES in @indus/domain caps the visible pager at 25; this ceiling
+// keeps the pager honest without blowing up the result-set memory.
+const FTS_FETCH_LIMIT = 600
 
 export async function runSearch(rawQuery: string): Promise<SearchPlan> {
   const trimmed = rawQuery.trim()
@@ -44,6 +47,28 @@ export async function runSearch(rawQuery: string): Promise<SearchPlan> {
       scoreById: new Map(),
       usedFallback: false,
       tsqueryExpression: null,
+    }
+  }
+
+  // Exact-SKU short-circuit: if the query looks like a single SKU/MPN
+  // identifier (hyphenated or with digits), check the products table for
+  // an exact match. A hit redirects straight to the PDP — by far the
+  // most common B2B procurement workflow ("I have the part number, take
+  // me to the page"). On miss, fall through to the normal pipeline.
+  const skuCandidate = extractExactSkuQuery(trimmed)
+  if (skuCandidate) {
+    const exact = await db.product.findFirst({
+      where: {
+        status: 'active',
+        OR: [
+          { sku: { equals: skuCandidate, mode: 'insensitive' } },
+          { mpn: { equals: skuCandidate, mode: 'insensitive' } },
+        ],
+      },
+      select: { sku: true },
+    })
+    if (exact) {
+      return { kind: 'redirect', targetUrl: `/p/${exact.sku}` }
     }
   }
 
