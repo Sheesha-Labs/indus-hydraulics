@@ -33,6 +33,7 @@ const ProductPayloadSchema = z.object({
   descriptionShort: z.string().trim().max(500).optional().nullable(),
   descriptionLong: z.string().optional().nullable(),
   listPrice: z.number().nonnegative().optional().nullable(),
+  compareAtPrice: z.number().nonnegative().optional().nullable(),
   listPriceCurrency: z.enum(CURRENCIES).default('USD'),
   unitOfMeasure: z.enum(UOMS).default('each'),
   weightKg: z.number().nonnegative().optional().nullable(),
@@ -389,6 +390,11 @@ export async function uploadAndPreviewImport(formData: FormData): Promise<
       // Numeric coercion.
       const listPrice = parseDecimal(raw.list_price)
       if (raw.list_price && listPrice === undefined) messages.push(`list_price not a number: ${raw.list_price}`)
+      const compareAtPrice = parseDecimal(raw.compare_at_price)
+      if (raw.compare_at_price && compareAtPrice === undefined) messages.push(`compare_at_price not a number: ${raw.compare_at_price}`)
+      if (compareAtPrice != null && listPrice != null && compareAtPrice <= listPrice) {
+        messages.push(`compare_at_price (${compareAtPrice}) must be greater than list_price (${listPrice}); leave blank for no MSRP display`)
+      }
       const weightKg = parseDecimal(raw.weight_kg)
       if (raw.weight_kg && weightKg === undefined) messages.push(`weight_kg not a number: ${raw.weight_kg}`)
       const leadTimeDays = parseInteger(raw.lead_time_days)
@@ -421,6 +427,7 @@ export async function uploadAndPreviewImport(formData: FormData): Promise<
         descriptionShort: trimOrNull(raw.description_short),
         descriptionLong: trimOrNull(raw.description_long),
         listPrice,
+        compareAtPrice,
         listPriceCurrency: (trimOrNull(raw.currency) ?? 'USD').toUpperCase(),
         unitOfMeasure: (trimOrNull(raw.unit_of_measure) ?? 'each').toLowerCase(),
         weightKg,

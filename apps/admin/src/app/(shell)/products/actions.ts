@@ -206,26 +206,35 @@ const optionalInt = z
   .transform((v) => (v && v.trim() ? Number(v) : null))
   .refine((v) => v === null || (Number.isInteger(v) && v >= 0), { message: 'Must be a non-negative integer' })
 
-const UpdateCommerceSchema = z.object({
-  id: z.string().uuid(),
-  listPrice: optionalDecimal,
-  listPriceCurrency: Currency.default('USD'),
-  unitOfMeasure: UnitOfMeasure.default('each'),
-  weightKg: optionalDecimal,
-  dimensionLengthMm: optionalInt,
-  dimensionWidthMm: optionalInt,
-  dimensionHeightMm: optionalInt,
-  leadTimeDays: optionalInt,
-  warrantyMonths: optionalInt,
-  stockQty: z
-    .string()
-    .optional()
-    .transform((v) => (v && v.trim() ? Number(v) : 0))
-    .refine((v) => Number.isInteger(v) && v >= 0, { message: 'Stock must be a non-negative integer' }),
-  stockWarehouse: z.string().trim().max(120).optional().transform((v) => (v && v.length ? v : null)),
-  countryOfOrigin: z.string().trim().max(80).optional().transform((v) => (v && v.length ? v : null)),
-  hsCode: z.string().trim().max(40).optional().transform((v) => (v && v.length ? v : null)),
-})
+const UpdateCommerceSchema = z
+  .object({
+    id: z.string().uuid(),
+    listPrice: optionalDecimal,
+    compareAtPrice: optionalDecimal,
+    listPriceCurrency: Currency.default('USD'),
+    unitOfMeasure: UnitOfMeasure.default('each'),
+    weightKg: optionalDecimal,
+    dimensionLengthMm: optionalInt,
+    dimensionWidthMm: optionalInt,
+    dimensionHeightMm: optionalInt,
+    leadTimeDays: optionalInt,
+    warrantyMonths: optionalInt,
+    stockQty: z
+      .string()
+      .optional()
+      .transform((v) => (v && v.trim() ? Number(v) : 0))
+      .refine((v) => Number.isInteger(v) && v >= 0, { message: 'Stock must be a non-negative integer' }),
+    stockWarehouse: z.string().trim().max(120).optional().transform((v) => (v && v.length ? v : null)),
+    countryOfOrigin: z.string().trim().max(80).optional().transform((v) => (v && v.length ? v : null)),
+    hsCode: z.string().trim().max(40).optional().transform((v) => (v && v.length ? v : null)),
+  })
+  .refine(
+    (v) =>
+      v.compareAtPrice === null ||
+      v.listPrice === null ||
+      v.compareAtPrice > v.listPrice,
+    { message: 'Compare-at price must be greater than List price', path: ['compareAtPrice'] },
+  )
 
 export async function updateProductCommerce(formData: FormData): Promise<Result<void>> {
   try {
@@ -233,6 +242,7 @@ export async function updateProductCommerce(formData: FormData): Promise<Result<
     const parsed = UpdateCommerceSchema.parse({
       id: formData.get('id'),
       listPrice: formData.get('listPrice') ?? '',
+      compareAtPrice: formData.get('compareAtPrice') ?? '',
       listPriceCurrency: formData.get('listPriceCurrency') ?? 'USD',
       unitOfMeasure: formData.get('unitOfMeasure') ?? 'each',
       weightKg: formData.get('weightKg') ?? '',
@@ -262,6 +272,7 @@ export async function updateProductCommerce(formData: FormData): Promise<Result<
       where: { id: parsed.id },
       data: {
         listPrice: parsed.listPrice,
+        compareAtPrice: parsed.compareAtPrice,
         listPriceCurrency: parsed.listPriceCurrency,
         unitOfMeasure: parsed.unitOfMeasure,
         weightKg: parsed.weightKg,

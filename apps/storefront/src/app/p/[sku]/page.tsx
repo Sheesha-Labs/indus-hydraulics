@@ -12,7 +12,8 @@ import {
   buildProductLd,
   verifyPreviewToken,
 } from '@indus/domain'
-import { JsonLd } from '@indus/ui'
+import { JsonLd, ProductPrice } from '@indus/ui'
+import type { CurrencyCode } from '@indus/domain'
 import { safeAuth } from '../../../lib/auth'
 import ProductGallery from '../../../components/ProductGallery'
 import AddToQuoteButton from '../../../components/AddToQuoteButton'
@@ -292,12 +293,24 @@ export default async function ProductPage({ params, searchParams }: Props) {
             </h1>
 
             {/* SKU / MPN / stock row */}
-            <div className="flex gap-4 items-center flex-wrap pb-4 mb-4 border-b border-[var(--color-border-2)] font-mono text-[13px] text-[var(--color-muted)]">
+            <div className="flex gap-4 items-center flex-wrap pb-4 mb-4 font-mono text-[13px] text-[var(--color-muted)]">
               <span>SKU: <b className="text-[var(--color-primary)] font-medium">{product.sku}</b></span>
               {product.mpn && (
                 <span>MFR P/N: <b className="text-[var(--color-primary)] font-medium">{product.mpn}</b></span>
               )}
               <StockPill stockQty={product.stockQty} warehouse={product.stockWarehouse} leadTimeDays={product.leadTimeDays} />
+            </div>
+
+            {/* Price block — prominent, sits below SKU row, above description. */}
+            <div className="flex items-end gap-3 pb-5 mb-5 border-b border-[var(--color-border-2)]">
+              <ProductPrice
+                listPrice={product.listPrice == null ? null : Number(product.listPrice)}
+                currency={product.listPriceCurrency as CurrencyCode}
+                compareAtPrice={product.compareAtPrice == null ? null : Number(product.compareAtPrice)}
+                layout="inline"
+                size="xl"
+                quoteCta="Request quote for pricing"
+              />
             </div>
 
             {/* Short description — prose blurb above the bullet list. */}
