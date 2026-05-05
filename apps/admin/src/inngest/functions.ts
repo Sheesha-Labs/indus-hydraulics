@@ -7,8 +7,10 @@ import {
   type SeoEntityType,
 } from '@indus/domain'
 import {
+  findRetryableEmailIds,
   renderQuoteExpired,
   renderQuoteExpiryReminder,
+  retryFailedEmail,
   sendEmail,
 } from '@indus/email'
 
@@ -471,4 +473,54 @@ export const quoteAutoExpiry = inngest.createFunction(
   },
 )
 
-export const allFunctions = [recomputeHealthScores, quoteExpiryReminder, quoteAutoExpiry]
+/**
+ * Retry queue for failed transactional emails. Runs every 15 minutes.
+ *
+ * Each `sendEmail` call stashes a serialisable payload on
+ * `SentEmail.payload`; when Resend rejects the send (rate-limit,
+ * transient 5xx, DNS blip) the row is left at `status='failed'` and
+ * picked up here.
+ *
+ * Backoff schedule lives in `@indus/email`'s `RETRY_BACKOFF_MS`:
+ * 5min → 30min → 3hr, then `dead_letter`. Each row is retried in its
+ * own `step.run` so an Inngest retry on a single row can resume the
+ * batch without re-attempting earlier successes.
+ */
+export const retryFailedEmails = inngest.createFunction(
+  { id: 'email.retry-failed', concurrency: 1 },
+  { cron: '*/15 * * * *' },
+  async ({ step }) => {
+    const ids = await step.run('find-retryable', () => findRetryableEmailIds(50))
+
+    let retried = 0
+    let succeeded = 0
+    let stillFailing = 0
+    let deadLettered = 0
+    let skipped = 0
+
+    for (const id of ids) {
+      const outcome = await step.run(`retry-${id}`, () => retryFailedEmail(id))
+      if (!outcome) {
+        skipped++
+        continue
+      }
+      retried++
+      if (outcome.ok) {
+        succeeded++
+      } else if (outcome.status === 'dead_letter') {
+        deadLettered++
+      } else {
+        stillFailing++
+      }
+    }
+
+    return { checked: ids.length, retried, succeeded, stillFailing, deadLettered, skipped }
+  },
+)
+
+export const allFunctions = [
+  recomputeHealthScores,
+  quoteExpiryReminder,
+  quoteAutoExpiry,
+  retryFailedEmails,
+]

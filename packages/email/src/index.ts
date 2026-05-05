@@ -1,5 +1,19 @@
 export { sendEmail } from './send'
-export type { SendEmailInput, SendEmailResult, EmailKind, EmailAttachment } from './send'
+export type {
+  SendEmailInput,
+  SendEmailResult,
+  EmailKind,
+  EmailAttachment,
+  RetryablePayload,
+} from './send'
+export {
+  retryFailedEmail,
+  findRetryableEmailIds,
+  isEligibleForRetry,
+  RETRY_BACKOFF_MS,
+  MAX_RETRIES,
+  type RetryOutcome,
+} from './retry'
 export { renderRfqConfirmation } from './templates/rfq-confirmation'
 export { renderRfqInternalAlert } from './templates/rfq-internal-alert'
 export { renderQuoteSent } from './templates/quote-sent'
