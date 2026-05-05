@@ -101,6 +101,7 @@ export const EMAIL_NOTIFICATION_STATUSES: RfqStatus[] = [
   'submitted',
   'quote_sent',
   'order_created',
+  'expired',
 ]
 
 export function shouldNotifyCustomer(status: RfqStatus): boolean {
