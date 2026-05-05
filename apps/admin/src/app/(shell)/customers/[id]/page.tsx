@@ -76,7 +76,7 @@ export default async function AdminCustomerDetailPage({ params, searchParams }: 
       { rfq: { accountId: id } },
       { quote: { rfq: { accountId: id } } },
     ],
-  } as const
+  }
   const [reps, sentEmails, sentEmailsTotal] = await Promise.all([
     db.staffUser.findMany({
       where: { isActive: true, role: { in: ['sales_rep', 'manager', 'super_admin'] } },
