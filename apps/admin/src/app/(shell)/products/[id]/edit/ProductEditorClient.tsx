@@ -45,6 +45,7 @@ type Product = {
   categoryId: string | null
   listPrice: string | null
   listPriceCurrency: string
+  compareAtPrice: string | null
   unitOfMeasure: string
   weightKg: string | null
   dimensionLengthMm: number | null
@@ -546,6 +547,17 @@ function CommerceTab({
               className={inputCls + ' font-mono'}
             />
           </Field>
+          <Field label="Compare-at price">
+            <input
+              name="compareAtPrice"
+              type="number"
+              step="0.01"
+              min="0"
+              defaultValue={product.compareAtPrice ?? ''}
+              placeholder="MSRP / strike-through"
+              className={inputCls + ' font-mono'}
+            />
+          </Field>
           <Field label="Currency">
             <select name="listPriceCurrency" defaultValue={product.listPriceCurrency} className={selectCls}>
               <option value="USD">USD</option>
@@ -555,6 +567,8 @@ function CommerceTab({
               <option value="SAR">SAR</option>
             </select>
           </Field>
+        </div>
+        <div className="grid grid-cols-3 gap-4 mt-4">
           <Field label="Unit of measure">
             <select name="unitOfMeasure" defaultValue={product.unitOfMeasure} className={selectCls}>
               <option value="each">Each</option>
@@ -563,6 +577,9 @@ function CommerceTab({
               <option value="set">Set</option>
             </select>
           </Field>
+          <div className="col-span-2 text-[11px] text-[var(--color-muted)] flex items-end pb-2 leading-snug">
+            <p>Compare-at price renders as strike-through MSRP on the storefront when set <i>and</i> strictly greater than List price. Leave blank for no strike-through. Leave List price blank to show &ldquo;Request quote&rdquo; instead of a number.</p>
+          </div>
         </div>
       </Section>
 
