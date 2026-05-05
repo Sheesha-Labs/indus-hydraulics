@@ -11,13 +11,21 @@
     "db:migrate": "prisma migrate dev",
     "db:seed": "tsx src/seed.ts",
     "db:studio": "prisma studio",
+    "catalogue:generate": "tsx src/scripts/ai-catalogue-import.ts",
+    "catalogue:images": "tsx src/scripts/ai-product-images.ts",
     "test": "vitest run",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@prisma/client": "^6.7.0"
+    "@anthropic-ai/sdk": "^0.92.0",
+    "@prisma/client": "^6.7.0",
+    "@supabase/supabase-js": "^2.105.1",
+    "dotenv": "^16.4.7",
+    "openai": "^4.81.0",
+    "papaparse": "^5.5.3"
   },
   "devDependencies": {
+    "@types/papaparse": "^5.5.2",
     "prisma": "^6.19.3",
     "tsx": "^4.21.0",
     "typescript": "^5.8.3",

@@ -70,6 +70,19 @@ async function main() {
       },
       update: {},
     }),
+    db.brand.upsert({
+      where: { slug: 'indus-hydraulics' },
+      create: {
+        name: 'Indus Hydraulics',
+        slug: 'indus-hydraulics',
+        country: 'India',
+        isAuthorizedDistributor: false,
+        isPublished: true,
+        seoTitle: 'Indus Hydraulics — House Brand',
+        seoDescription: 'Indus Hydraulics private-label hydraulic components engineered for Middle East and Indian industrial use.',
+      },
+      update: {},
+    }),
   ])
 
   console.log(`  ✓ ${brands.length} brands`)
