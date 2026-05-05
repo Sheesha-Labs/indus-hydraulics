@@ -71,32 +71,20 @@ export type EstimateInput = {
   logoBase64?: string
 }
 
-export type EstimateTotals = {
-  subtotal: number
-  discountTotal: number
-  vatAmount: number
-  shipping: number
-  total: number
-}
+import { computeQuoteTotals, type QuoteTotals } from '@indus/domain'
+
+// Quote-money math lives in `@indus/domain/quote-totals`. Re-exporting it
+// here under the historical names so PDF + admin call-sites need no
+// rewrite.
+export type EstimateTotals = QuoteTotals
 
 export function computeTotals(
   input: Pick<EstimateInput, 'lines' | 'vatRatePct' | 'discountTotal' | 'shipping'>,
 ): EstimateTotals {
-  const subtotal = input.lines.reduce((sum, l) => sum + l.qty * l.rate, 0)
-  const discountTotal = input.discountTotal ?? 0
-  // VAT is computed on the post-discount amount (matches UAE FTA convention).
-  const vatAmount = (subtotal - discountTotal) * (input.vatRatePct / 100)
-  const shipping = input.shipping ?? 0
-  const total = subtotal - discountTotal + vatAmount + shipping
-  return {
-    subtotal: roundMoney(subtotal),
-    discountTotal: roundMoney(discountTotal),
-    vatAmount: roundMoney(vatAmount),
-    shipping: roundMoney(shipping),
-    total: roundMoney(total),
-  }
-}
-
-function roundMoney(n: number): number {
-  return Math.round(n * 100) / 100
+  return computeQuoteTotals({
+    lines: input.lines,
+    vatRatePct: input.vatRatePct,
+    ...(input.discountTotal !== undefined ? { discountTotal: input.discountTotal } : {}),
+    ...(input.shipping !== undefined ? { shipping: input.shipping } : {}),
+  })
 }

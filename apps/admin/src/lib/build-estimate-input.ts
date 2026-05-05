@@ -1,4 +1,5 @@
 import { db } from '@indus/db'
+import { computeVatRate } from '@indus/domain'
 import type { EstimateInput, EstimateLine } from '@indus/pdf'
 
 /**
@@ -66,13 +67,15 @@ export async function buildEstimateInputFromRfq(
     return { description, qty: l.requestedQty, rate }
   })
 
-  // VAT rule: UAE ship-to → use settings.defaultVatRatePct (default 5%);
-  // any other country → zero-rated export. Composer override wins if set.
-  const isUaeShipTo = rfq.shipToAddress?.countryCode?.toUpperCase() === 'AE'
-  const settingsVatRate = settings?.defaultVatRatePct ? Number(settings.defaultVatRatePct) : 5
-  const computedVatRate = isUaeShipTo ? settingsVatRate : 0
-  const vatRatePct = overrides.vatRatePct ?? computedVatRate
-  const vatLabel = vatRatePct > 0 ? `VAT @ ${vatRatePct.toFixed(0)}%` : undefined
+  const vat = computeVatRate({
+    shipToCountryCode: rfq.shipToAddress?.countryCode ?? null,
+    ...(overrides.vatRatePct !== undefined ? { override: overrides.vatRatePct } : {}),
+    ...(settings?.defaultVatRatePct
+      ? { defaultRate: Number(settings.defaultVatRatePct) }
+      : {}),
+  })
+  const vatRatePct = vat.rate
+  const vatLabel = vat.label
 
   const billToLines: string[] = []
   if (rfq.shipToAddress) {
