@@ -10,6 +10,7 @@ export type EmailKind =
   | 'password_reset'
   | 'contact_inquiry'
   | 'quote_expiry_reminder'
+  | 'quote_expired'
   | 'email_change_verification'
 
 export type EmailAttachment = {
