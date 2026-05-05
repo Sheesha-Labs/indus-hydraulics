@@ -1040,6 +1040,9 @@ model BlogPost {
   jsonLdOverride     Json?
   seoUpdatedAt       DateTime?
   seoUpdatedById     String?
+  // FTS column managed by raw SQL migration (Unsupported: tsvector).
+  // STORED, weighted A→B→C across title / excerpt / body.
+  searchTsv          Unsupported("tsvector")?
 
   @@map("blog_posts")
 }
