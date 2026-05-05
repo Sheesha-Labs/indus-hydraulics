@@ -53,14 +53,57 @@ function formatFrom(input: SendEmailInput): string {
 }
 
 /**
+ * Subset of `SendEmailInput` that survives JSON serialisation. Stashed on
+ * the SentEmail row so the retry cron can re-call Resend without the
+ * caller having to hold onto the original input. Attachments are
+ * deliberately excluded — Buffers don't round-trip through JSON, and
+ * emails with attachments are not retried in v1.
+ */
+export type RetryablePayload = {
+  kind: EmailKind
+  to: string[]
+  cc?: string[]
+  bcc?: string[]
+  subject: string
+  html: string
+  fromEmail: string
+  fromName?: string
+  replyTo?: string
+  rfqId?: string
+  quoteId?: string
+}
+
+function buildRetryablePayload(input: SendEmailInput): RetryablePayload | null {
+  if (input.attachments && input.attachments.length > 0) return null
+  return {
+    kind: input.kind,
+    to: input.to,
+    ...(input.cc ? { cc: input.cc } : {}),
+    ...(input.bcc ? { bcc: input.bcc } : {}),
+    subject: input.subject,
+    html: input.html,
+    fromEmail: input.fromEmail,
+    ...(input.fromName ? { fromName: input.fromName } : {}),
+    ...(input.replyTo ? { replyTo: input.replyTo } : {}),
+    ...(input.rfqId ? { rfqId: input.rfqId } : {}),
+    ...(input.quoteId ? { quoteId: input.quoteId } : {}),
+  }
+}
+
+/**
  * Send a transactional email and persist a SentEmail audit row.
  *
  * Sandbox mode: if RESEND_API_KEY is unset, the message is logged with
  * status='sandboxed' and not actually delivered. This lets us build/test
  * locally before DNS is wired up. The function never throws — call sites
  * use the returned ok flag.
+ *
+ * Failed sends (status='failed') are eligible for the `email.retry-failed`
+ * Inngest cron which retries up to 3× with exponential backoff. Emails
+ * with attachments are skipped by the retry queue.
  */
 export async function sendEmail(input: SendEmailInput): Promise<SendEmailResult> {
+  const retryablePayload = buildRetryablePayload(input)
   const audit = await db.sentEmail.create({
     data: {
       kind: input.kind,
@@ -74,6 +117,7 @@ export async function sendEmail(input: SendEmailInput): Promise<SendEmailResult>
       status: SANDBOX ? 'sandboxed' : 'queued',
       ...(input.rfqId ? { rfqId: input.rfqId } : {}),
       ...(input.quoteId ? { quoteId: input.quoteId } : {}),
+      ...(retryablePayload ? { payload: retryablePayload } : {}),
     },
   })
 

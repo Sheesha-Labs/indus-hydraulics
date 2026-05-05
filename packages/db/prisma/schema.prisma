@@ -1248,28 +1248,38 @@ model StoreSettings {
 // and re-sending. Body stored verbatim so we can show the customer exactly
 // what they received.
 model SentEmail {
-  id          String    @id @default(uuid())
-  kind        String // rfq_confirmation | rfq_internal_alert | quote_sent | quote_accepted_ack | …
-  toEmails    Json // string[]
-  ccEmails    Json? // string[]
-  bccEmails   Json? // string[]
-  fromEmail   String
-  replyTo     String?
-  subject     String
-  bodyHtml    String
-  providerId  String? // Resend message id (when sent successfully)
-  status      String // queued | sent | failed | sandboxed
-  error       String?
-  rfqId       String?
-  rfq         Rfq?      @relation(fields: [rfqId], references: [id], onDelete: SetNull)
-  quoteId     String?
-  quote       Quote?    @relation(fields: [quoteId], references: [id], onDelete: SetNull)
-  attemptedAt DateTime  @default(now())
-  sentAt      DateTime?
+  id            String    @id @default(uuid())
+  kind          String // rfq_confirmation | rfq_internal_alert | quote_sent | quote_accepted_ack | …
+  toEmails      Json // string[]
+  ccEmails      Json? // string[]
+  bccEmails     Json? // string[]
+  fromEmail     String
+  replyTo       String?
+  subject       String
+  bodyHtml      String
+  providerId    String? // Resend message id (when sent successfully)
+  status        String // queued | sent | failed | sandboxed | dead_letter
+  error         String?
+  rfqId         String?
+  rfq           Rfq?      @relation(fields: [rfqId], references: [id], onDelete: SetNull)
+  quoteId       String?
+  quote         Quote?    @relation(fields: [quoteId], references: [id], onDelete: SetNull)
+  attemptedAt   DateTime  @default(now())
+  sentAt        DateTime?
+  // Retry queue: hourly Inngest cron picks up `failed` rows whose
+  // `payload` survived the first send and retries up to 3× with
+  // exponential backoff. `dead_letter` after the 3rd failure.
+  // `payload` is the serialisable subset of SendEmailInput minus
+  // attachments — emails with attachments are never retried because
+  // the buffer isn't recoverable from the audit row alone.
+  retryCount    Int       @default(0)
+  lastAttemptAt DateTime?
+  payload       Json?
 
   @@index([kind, attemptedAt])
   @@index([rfqId])
   @@index([quoteId])
+  @@index([status, retryCount, lastAttemptAt])
   @@map("sent_emails")
 }
 
