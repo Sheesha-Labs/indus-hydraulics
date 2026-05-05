@@ -630,7 +630,62 @@ async function main() {
   await seedAiPromptTemplates()
   console.log('  ✓ AI prompt templates')
 
+  // ── Counters (atomic code generators) ───────────────────────────────────────
+  await seedCounters()
+  console.log('  ✓ Counters')
+
   console.log('\n✅ Seed complete.')
+}
+
+// Backfill `Counter` rows from existing user-facing codes so the new atomic
+// generators in `packages/db/src/codes.ts` continue numbering where the
+// previous `count + 1` logic left off. Idempotent and monotonic — re-running
+// never decrements an already-seeded counter, even if rows are deleted.
+async function seedCounters() {
+  type ScopeYear = { scope: string; year: number; max: number }
+
+  const rfqs = await db.rfq.findMany({ select: { code: true } })
+  const accounts = await db.account.findMany({ select: { code: true } })
+  const quotes = await db.quote.findMany({
+    where: { revision: 1 },
+    select: { code: true },
+  })
+
+  const targets = new Map<string, ScopeYear>()
+  const bump = (scope: string, year: number, value: number) => {
+    const key = `${scope}:${year}`
+    const existing = targets.get(key)
+    if (!existing || value > existing.max) {
+      targets.set(key, { scope, year, max: value })
+    }
+  }
+
+  for (const { code } of rfqs) {
+    const m = code.match(/^RFQ-(\d{4})-(\d+)$/)
+    if (m) bump('rfq', Number(m[1]), Number(m[2]))
+  }
+  for (const { code } of accounts) {
+    const m = code.match(/^ACC-(\d{4})-(\d+)$/)
+    if (m) bump('account', Number(m[1]), Number(m[2]))
+  }
+  for (const { code } of quotes) {
+    const m = code.match(/^INDUS\/Q(\d+)$/)
+    if (m) bump('quote', 0, Number(m[1]) - 26386) // QUOTE_ZOHO_BASE
+  }
+
+  for (const { scope, year, max } of targets.values()) {
+    const existing = await db.counter.findUnique({
+      where: { scope_year: { scope, year } },
+      select: { value: true },
+    })
+    const target = Math.max(existing?.value ?? 0, max)
+    if (existing && existing.value === target) continue
+    await db.counter.upsert({
+      where: { scope_year: { scope, year } },
+      create: { scope, year, value: target },
+      update: { value: target },
+    })
+  }
 }
 
 // Default Anthropic prompt prefixes for the SEO Suggest drawer. Lives here

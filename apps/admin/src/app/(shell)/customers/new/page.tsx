@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { redirect } from 'next/navigation'
 import Link from 'next/link'
-import { db } from '@indus/db'
+import { db, nextAccountCode } from '@indus/db'
 import { auth } from '../../../../lib/auth'
 import { ROLES, requireRole } from '../../../../lib/rbac'
 
@@ -27,23 +27,21 @@ async function createAccount(formData: FormData) {
 
   if (!legalName.trim()) return
 
-  // Generate account code
-  const count = await db.account.count()
-  const year = new Date().getFullYear()
-  const code = `ACC-${year}-${String(count + 1).padStart(4, '0')}`
-
-  const account = await db.account.create({
-    data: {
-      code,
-      legalName: legalName.trim(),
-      displayName: displayName.trim() || legalName.trim(),
-      region: region || undefined,
-      tier: tier as never,
-      status: status as never,
-      paymentTermsDays,
-      creditLimit,
-      assignedRepId: assignedRepId ?? undefined,
-    },
+  const account = await db.$transaction(async (tx) => {
+    const code = await nextAccountCode(tx)
+    return tx.account.create({
+      data: {
+        code,
+        legalName: legalName.trim(),
+        displayName: displayName.trim() || legalName.trim(),
+        region: region || undefined,
+        tier: tier as never,
+        status: status as never,
+        paymentTermsDays,
+        creditLimit,
+        assignedRepId: assignedRepId ?? undefined,
+      },
+    })
   })
 
   redirect(`/customers/${account.id}`)

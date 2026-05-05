@@ -2,7 +2,7 @@
 
 import { redirect } from 'next/navigation'
 import { auth } from '../../lib/auth'
-import { db } from '@indus/db'
+import { db, nextRfqCode } from '@indus/db'
 import { assertTransition } from '@indus/domain'
 import {
   sendEmail,
@@ -50,11 +50,8 @@ export async function submitRfq(formData: FormData) {
 
   const productBySku = new Map(products.map((p) => [p.sku, p]))
 
-  const year = new Date().getFullYear()
-  const count = await db.rfq.count()
-  const code = `RFQ-${year}-${String(count + 1).padStart(4, '0')}`
-
   const rfq = await db.$transaction(async (tx) => {
+    const code = await nextRfqCode(tx)
     const created = await tx.rfq.create({
       data: {
         code,
