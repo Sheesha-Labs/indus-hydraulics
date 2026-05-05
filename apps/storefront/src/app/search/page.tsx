@@ -6,16 +6,23 @@ import { redirect } from 'next/navigation'
 import { db } from '@indus/db'
 import {
   PAGE_SIZE,
+  SEARCH_TYPES,
+  SEARCH_TYPE_LABELS,
   SORT_LABELS,
   SORT_MODES,
   buildPageNumbers,
   parsePageParam,
   parseSortParam,
+  parseTypesParam,
+  serializeTypesParam,
   sortToOrderBy,
+  toggleType,
   totalPageCount,
+  type SearchType,
   type SortMode,
 } from '@indus/domain'
 import { runSearch } from '../../lib/search'
+import { runBlogSearch } from '../../lib/search-blog'
 import SearchLogger from './SearchLogger'
 
 type Props = {
@@ -25,6 +32,7 @@ type Props = {
     category?: string
     page?: string
     sort?: string
+    types?: string
   }>
 }
 
@@ -40,6 +48,7 @@ export default async function SearchPage({ searchParams }: Props) {
   const selectedCategory = sp.category ?? ''
   const sortMode: SortMode = parseSortParam(sp.sort)
   const currentPage = parsePageParam(sp.page)
+  const selectedTypes: SearchType[] = parseTypesParam(sp.types)
 
   let products: Awaited<
     ReturnType<typeof db.product.findMany<{ include: { brand: true; category: true; images: { include: { media: true } } } }>>
@@ -51,13 +60,44 @@ export default async function SearchPage({ searchParams }: Props) {
     ReturnType<typeof db.productDocument.findMany<{ include: { media: true; product: { select: { sku: true; title: true } } } }>>
   > = []
   let usedFallback = false
+  let blogPosts: Awaited<
+    ReturnType<typeof db.blogPost.findMany<{ include: { hero: true; author: { select: { name: true } } } }>>
+  > = []
+  let totalBlog = 0
 
   if (query.length >= 2) {
-    const plan = await runSearch(query)
+    // Always run the product FTS — the redirect short-circuit (exact SKU
+    // match) lives there and shouldn't be skipped just because the user
+    // unchecked the Products type.
+    const [plan, blogResult] = await Promise.all([
+      runSearch(query),
+      selectedTypes.includes('articles')
+        ? runBlogSearch(query)
+        : Promise.resolve({ postIds: [], scoreById: new Map<string, number>() }),
+    ])
     if (plan.kind === 'redirect') {
       redirect(plan.targetUrl)
     }
     usedFallback = plan.usedFallback
+
+    if (selectedTypes.includes('articles') && blogResult.postIds.length > 0) {
+      const blogRows = await db.blogPost.findMany({
+        where: { id: { in: blogResult.postIds }, isPublished: true },
+        include: {
+          hero: true,
+          author: { select: { name: true } },
+        },
+        take: 8,
+      })
+      // Re-order to FTS rank.
+      blogPosts = blogRows
+        .slice()
+        .sort(
+          (a, b) =>
+            (blogResult.scoreById.get(b.id) ?? 0) - (blogResult.scoreById.get(a.id) ?? 0),
+        )
+      totalBlog = blogPosts.length
+    }
 
     if (plan.productIds.length > 0) {
       // Apply facet filters at app level — keeps the FTS SQL simple and
@@ -151,6 +191,7 @@ export default async function SearchPage({ searchParams }: Props) {
       category: selectedCategory || undefined,
       page: currentPage > 1 ? String(currentPage) : undefined,
       sort: sortMode === 'relevance' ? undefined : sortMode,
+      types: serializeTypesParam(selectedTypes) ?? undefined,
     }
     const merged = { ...base, ...overrides }
     for (const [k, v] of Object.entries(merged)) {
@@ -167,6 +208,19 @@ export default async function SearchPage({ searchParams }: Props) {
     // they could land on an empty page when the result set shrinks.
     return filterUrl({ brands: next.join(',') || undefined, page: undefined })
   }
+
+  function toggleTypeUrl(type: SearchType) {
+    const next = toggleType(selectedTypes, type)
+    return filterUrl({ types: serializeTypesParam(next) ?? undefined, page: undefined })
+  }
+
+  // Per-type total counts shown in the Type filter and the result-count
+  // line ("14 products · 3 datasheets · 1 article").
+  const totalDatasheets = relatedDocs.length
+  const showProductsSection = selectedTypes.includes('products') && products.length > 0
+  const showDatasheetsSection = selectedTypes.includes('datasheets') && totalDatasheets > 0
+  const showArticlesSection = selectedTypes.includes('articles') && blogPosts.length > 0
+  const anyResults = showProductsSection || showDatasheetsSection || showArticlesSection
 
   const totalPages = totalPageCount(totalProducts)
   const pageTokens = buildPageNumbers(currentPage, totalPages)
@@ -233,6 +287,47 @@ export default async function SearchPage({ searchParams }: Props) {
                 Refine results
               </p>
 
+              {/* Type filter — Products / Datasheets / Articles. Empty
+                  param is treated as "all", so we show what's checked
+                  rather than what's specifically present in the URL. */}
+              <div className="mb-5">
+                <div className="font-semibold text-[13px] mb-2">Type</div>
+                <div className="flex flex-col gap-1.5 text-[13px]">
+                  {SEARCH_TYPES.map((type) => {
+                    const count =
+                      type === 'products'
+                        ? totalProducts
+                        : type === 'datasheets'
+                          ? totalDatasheets
+                          : totalBlog
+                    const checked = selectedTypes.includes(type)
+                    return (
+                      <Link
+                        key={type}
+                        href={toggleTypeUrl(type)}
+                        className="flex justify-between items-center text-[var(--color-body)] hover:text-[var(--color-primary)]"
+                      >
+                        <span className="flex items-center gap-2">
+                          <span
+                            aria-hidden="true"
+                            className={
+                              'w-3.5 h-3.5 border border-[var(--color-border)] flex items-center justify-center text-[10px] ' +
+                              (checked ? 'bg-[var(--color-accent)] text-white' : 'bg-[var(--color-elevated)]')
+                            }
+                          >
+                            {checked ? '✓' : ''}
+                          </span>
+                          <span className={checked ? 'font-medium text-[var(--color-primary)]' : ''}>
+                            {SEARCH_TYPE_LABELS[type]}
+                          </span>
+                        </span>
+                        <span className="font-mono text-[11px] text-[var(--color-caption)]">{count}</span>
+                      </Link>
+                    )
+                  })}
+                </div>
+              </div>
+
               {facetCategories.length > 0 && (
                 <div className="mb-5">
                   <div className="font-semibold text-[13px] mb-2">Category</div>
@@ -285,19 +380,31 @@ export default async function SearchPage({ searchParams }: Props) {
           </aside>
 
           <div>
-            {products.length === 0 ? (
+            {!anyResults ? (
               <div className="py-16 border border-dashed border-[var(--color-border)] text-center">
-                <p className="text-[var(--color-muted)]">No products found</p>
+                <p className="text-[var(--color-muted)]">No results</p>
                 <p className="text-[var(--color-muted)] text-sm mt-1">
-                  Try different keywords or browse our categories.
+                  Try different keywords, broaden your Type filter, or browse our categories.
                 </p>
               </div>
             ) : (
               <>
                 <div className="flex justify-between items-center mb-4 text-[13px] text-[var(--color-muted)]">
                   <span>
-                    {totalProducts} product{totalProducts !== 1 ? 's' : ''}
-                    {totalPages > 1 && (
+                    {[
+                      selectedTypes.includes('products')
+                        ? `${totalProducts} product${totalProducts !== 1 ? 's' : ''}`
+                        : null,
+                      selectedTypes.includes('datasheets') && totalDatasheets > 0
+                        ? `${totalDatasheets} datasheet${totalDatasheets !== 1 ? 's' : ''}`
+                        : null,
+                      selectedTypes.includes('articles') && totalBlog > 0
+                        ? `${totalBlog} article${totalBlog !== 1 ? 's' : ''}`
+                        : null,
+                    ]
+                      .filter(Boolean)
+                      .join(' · ')}
+                    {showProductsSection && totalPages > 1 && (
                       <>
                         {' · page '}
                         <span className="font-mono">{currentPage}</span>
@@ -342,7 +449,7 @@ export default async function SearchPage({ searchParams }: Props) {
                   </form>
                 </div>
 
-                {topMatch && (
+                {showProductsSection && topMatch && (
                   <div className="mb-6">
                     <div className="font-mono text-[11px] tracking-[0.12em] uppercase text-[var(--color-muted)] mb-3">
                       Top product match
@@ -389,7 +496,7 @@ export default async function SearchPage({ searchParams }: Props) {
                   </div>
                 )}
 
-                {restProducts.length > 0 && (
+                {showProductsSection && restProducts.length > 0 && (
                   <div className="flex flex-col gap-3" data-search-results-list>
                     {restProducts.map((product) => {
                       const img = product.images[0]
@@ -435,7 +542,7 @@ export default async function SearchPage({ searchParams }: Props) {
                   </div>
                 )}
 
-                {totalPages > 1 && (
+                {showProductsSection && totalPages > 1 && (
                   <nav
                     aria-label="Search results pagination"
                     className="mt-8 flex justify-center items-center gap-1"
@@ -507,7 +614,7 @@ export default async function SearchPage({ searchParams }: Props) {
                   </nav>
                 )}
 
-                {relatedDocs.length > 0 && (
+                {showDatasheetsSection && (
                   <div className="mt-8 pt-6 border-t border-[var(--color-border)]">
                     <div className="font-mono text-[11px] tracking-[0.12em] uppercase text-[var(--color-muted)] mb-4">
                       Datasheets &amp; PDFs
@@ -536,6 +643,60 @@ export default async function SearchPage({ searchParams }: Props) {
                             Download ↓
                           </a>
                         </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
+                {showArticlesSection && (
+                  <div className="mt-8 pt-6 border-t border-[var(--color-border)]">
+                    <div className="font-mono text-[11px] tracking-[0.12em] uppercase text-[var(--color-muted)] mb-4">
+                      From the blog
+                    </div>
+                    <div className="flex flex-col gap-3">
+                      {blogPosts.map((post) => (
+                        <Link
+                          key={post.id}
+                          href={`/blog/${post.slug}`}
+                          className="grid grid-cols-[120px_1fr] gap-4 p-3.5 border border-[var(--color-border)] bg-[var(--color-elevated)] hover:border-[var(--color-body)] transition-colors"
+                        >
+                          <div className="aspect-[4/3] bg-[var(--color-deep)] border border-[var(--color-border)] relative overflow-hidden">
+                            {post.hero ? (
+                              <Image
+                                src={mediaUrl(post.hero.storagePath)}
+                                alt={post.title}
+                                fill
+                                className="object-cover"
+                                sizes="120px"
+                              />
+                            ) : (
+                              <div className="absolute inset-0 grid place-items-center font-mono text-[9px] text-[var(--color-muted)]">
+                                BLOG
+                              </div>
+                            )}
+                          </div>
+                          <div>
+                            <div className="font-mono text-[11px] tracking-[0.08em] uppercase text-[var(--color-muted)] mb-1">
+                              Article
+                              {post.publishedAt && (
+                                <>
+                                  {' · '}
+                                  {new Date(post.publishedAt).toLocaleDateString('en-GB', {
+                                    day: 'numeric',
+                                    month: 'short',
+                                    year: 'numeric',
+                                  })}
+                                </>
+                              )}
+                            </div>
+                            <h3 className="font-semibold text-[15px] mb-1.5 leading-snug">{post.title}</h3>
+                            {post.excerpt && (
+                              <p className="text-[12px] text-[var(--color-muted)] leading-[1.5] line-clamp-2">
+                                {post.excerpt}
+                              </p>
+                            )}
+                          </div>
+                        </Link>
                       ))}
                     </div>
                   </div>
