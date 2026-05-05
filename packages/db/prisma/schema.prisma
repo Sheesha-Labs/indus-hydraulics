@@ -1483,3 +1483,20 @@ model CrawlFinding {
   @@index([runId, kind])
   @@map("crawl_findings")
 }
+
+// ─────────────────────────────────────────────────────────────────────────────
+// COUNTERS — atomic monotonic sequences for user-facing codes
+// (RFQ-YYYY-NNNN, ACC-YYYY-NNNN, INDUS/Q{N}). The composite primary key
+// forces a row-level write lock during increment, eliminating the race
+// that `db.<model>.count() + 1` had.
+// ─────────────────────────────────────────────────────────────────────────────
+
+model Counter {
+  scope     String
+  year      Int      // 0 for non-year-scoped scopes (e.g. global "quote")
+  value     Int      @default(0)
+  updatedAt DateTime @default(now()) @updatedAt
+
+  @@id([scope, year])
+  @@map("counters")
+}

@@ -53,3 +53,12 @@ if (process.env.NODE_ENV !== 'production') globalForPrisma.prisma = db
 
 export { Prisma }
 export type { Redirect, SeoSetting, StoreSettings, EmailTemplate } from '@prisma/client'
+export {
+  nextRfqCode,
+  nextAccountCode,
+  nextQuoteCodeForRfq,
+  quoteCodeToSlug,
+  COUNTER_SCOPES,
+  QUOTE_CODE_BASE,
+  type NextQuoteCode,
+} from './codes'
