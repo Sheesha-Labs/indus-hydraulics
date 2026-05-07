@@ -196,6 +196,21 @@ export const NavReplaceLeavesSchema = z.object({
   parentColumnCategorySlug: SlugSchema,
   /** Label of the sub-section under the column (string match — case-sensitive). */
   parentSubLabel: NonEmptyTrimmed(80),
+  /** When true, create the top-level column under the megamenu if it doesn't
+   *  already exist (rather than warning and skipping). Use this to introduce
+   *  a brand-new megamenu column in a single import (paired with
+   *  createSubSectionIfMissing to populate the heading row inside it).
+   *  The column is created as `linkType: 'category'` linking to the
+   *  `parentColumnCategorySlug` category. Default: false. */
+  createColumnIfMissing: z.boolean().optional(),
+  /** Position of the column among its siblings when createColumnIfMissing
+   *  fires. Default: append after existing columns. Ignored when the column
+   *  already exists. */
+  newColumnPosition: z.number().int().nonnegative().optional(),
+  /** Label to use for the new column heading when createColumnIfMissing fires.
+   *  Default: derive from the column category's name. Ignored when the column
+   *  already exists. */
+  newColumnLabel: NonEmptyTrimmed(80).optional(),
   /** When true, create the sub-section under the column if it doesn't already
    *  exist (rather than warning and skipping). Use this to introduce a brand-
    *  new megamenu sub-section in a single import. Default: false. */
