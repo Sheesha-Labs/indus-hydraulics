@@ -900,6 +900,7 @@ async function seedNavigationMenus() {
       { label: 'Products', customUrl: '/c' },
       { label: 'Brands', customUrl: '/brands' },
       { label: 'Industries', customUrl: '/industries' },
+      { label: 'Blog', customUrl: '/blog' },
       { label: 'About', customUrl: '/about' },
       { label: 'Contact', customUrl: '/contact' },
     ]

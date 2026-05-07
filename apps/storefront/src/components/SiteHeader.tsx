@@ -1,6 +1,6 @@
 import { safeAuth } from '../lib/auth'
 import { db } from '@indus/db'
-import { getNavMenu } from '../lib/navigation'
+import { getNavMenu, getNavBrands, getNavIndustries } from '../lib/navigation'
 import { getStoreSettings } from '../lib/store-settings'
 import SiteHeaderClient from './SiteHeaderClient'
 import NotificationBell from './NotificationBell'
@@ -8,9 +8,11 @@ import NotificationBell from './NotificationBell'
 export default async function SiteHeader() {
   const session = await safeAuth()
 
-  const [headerMenu, megamenu, settings, notifications] = await Promise.all([
+  const [headerMenu, megamenu, brands, industries, settings, notifications] = await Promise.all([
     getNavMenu('primary_header'),
     getNavMenu('primary_megamenu'),
+    getNavBrands(),
+    getNavIndustries(),
     getStoreSettings(),
     session?.user?.id
       ? db.notification.findMany({
@@ -28,6 +30,8 @@ export default async function SiteHeader() {
     <SiteHeaderClient
       headerItems={headerMenu?.items ?? []}
       megamenuItems={megamenu?.items ?? []}
+      brands={brands}
+      industries={industries}
       contactPhone={settings.contactPhone}
       contactHours={settings.contactHours}
       isSignedIn={!!session}

@@ -6,10 +6,16 @@ import Link from 'next/link'
 import Image from 'next/image'
 import type { ResolvedNavItem } from '@indus/domain'
 import SearchAutocomplete from './SearchAutocomplete'
+import NavListDropdown from './NavListDropdown'
+
+type NavListEntry = { slug: string; name: string }
+type DropdownKind = 'mega' | 'brands' | 'industries' | null
 
 interface Props {
   headerItems: ResolvedNavItem[]
   megamenuItems: ResolvedNavItem[]
+  brands: NavListEntry[]
+  industries: NavListEntry[]
   contactPhone: string | null
   contactHours: string | null
   isSignedIn: boolean
@@ -17,15 +23,31 @@ interface Props {
   notificationBell?: React.ReactNode
 }
 
-function isMegamenuTrigger(item: ResolvedNavItem, megamenuItems: ResolvedNavItem[]): boolean {
-  if (megamenuItems.length === 0) return false
-  if (item.href === '/c' || item.href === '/c/') return true
-  return false
+const MOBILE_LIST_LIMIT = 5
+
+function getDropdownKind(
+  item: ResolvedNavItem,
+  megamenuItems: ResolvedNavItem[],
+  brands: NavListEntry[],
+  industries: NavListEntry[],
+): DropdownKind {
+  if (item.href === '/c' || item.href === '/c/') {
+    return megamenuItems.length > 0 ? 'mega' : null
+  }
+  if (item.href === '/brands' || item.href === '/brands/') {
+    return brands.length > 0 ? 'brands' : null
+  }
+  if (item.href === '/industries' || item.href === '/industries/') {
+    return industries.length > 0 ? 'industries' : null
+  }
+  return null
 }
 
 export default function SiteHeaderClient({
   headerItems,
   megamenuItems,
+  brands,
+  industries,
   contactPhone,
   contactHours,
   isSignedIn,
@@ -33,23 +55,23 @@ export default function SiteHeaderClient({
   notificationBell,
 }: Props) {
   const [mobileOpen, setMobileOpen] = useState(false)
-  const [megamenuOpen, setMegamenuOpen] = useState(false)
+  const [activeDropdown, setActiveDropdown] = useState<DropdownKind>(null)
   const [activeCatIdx, setActiveCatIdx] = useState(0)
   const [activeSubIdx, setActiveSubIdx] = useState(0)
   const megaTimeout = useRef<ReturnType<typeof setTimeout> | null>(null)
 
-  const openMega = useCallback(() => {
+  const openDropdown = useCallback((kind: Exclude<DropdownKind, null>) => {
     if (megaTimeout.current) clearTimeout(megaTimeout.current)
-    setMegamenuOpen(true)
+    setActiveDropdown(kind)
   }, [])
 
-  const closeMega = useCallback(() => {
-    megaTimeout.current = setTimeout(() => setMegamenuOpen(false), 120)
+  const closeDropdown = useCallback(() => {
+    megaTimeout.current = setTimeout(() => setActiveDropdown(null), 120)
   }, [])
 
-  const closeMegaImmediate = useCallback(() => {
+  const closeDropdownImmediate = useCallback(() => {
     if (megaTimeout.current) clearTimeout(megaTimeout.current)
-    setMegamenuOpen(false)
+    setActiveDropdown(null)
   }, [])
 
   const handleCatHover = useCallback((idx: number) => {
@@ -61,12 +83,16 @@ export default function SiteHeaderClient({
     setActiveSubIdx(idx)
   }, [])
 
+  const megamenuOpen = activeDropdown === 'mega'
+  const brandsOpen = activeDropdown === 'brands'
+  const industriesOpen = activeDropdown === 'industries'
+
   const activeCat = megamenuItems[activeCatIdx] ?? megamenuItems[0]
   const activeSub = activeCat?.children[activeSubIdx] ?? activeCat?.children[0]
   const browseAllHref = activeCat?.href ?? '/c'
 
   return (
-    <header className="sticky top-0 z-50 bg-[var(--color-elevated)] border-b border-[var(--color-border)]">
+    <header className="sticky top-0 z-50 bg-[var(--color-elevated)]/80 backdrop-blur-md backdrop-saturate-150 border-b border-[var(--color-border)]">
       {/* Utility bar */}
       <div className="bg-[var(--color-primary)] text-[var(--color-surface)]">
         <div className="max-w-[1360px] mx-auto px-8 h-9 flex items-center justify-between font-mono text-[11px] tracking-[0.04em]">
@@ -107,33 +133,37 @@ export default function SiteHeaderClient({
         <nav className="hidden lg:flex items-center flex-1">
           {headerItems.map((item) => {
             const href = item.href ?? '#'
-            const hasMega = isMegamenuTrigger(item, megamenuItems)
-            return hasMega ? (
-              <div key={item.id} onMouseEnter={openMega} onMouseLeave={closeMega}>
-                <Link
-                  href={href}
-                  className={`flex items-center gap-1 px-3 h-16 text-[14px] font-medium transition-colors ${
-                    megamenuOpen
-                      ? 'text-[var(--color-primary)] bg-[var(--color-deep)]'
-                      : 'text-[var(--color-body)] hover:text-[var(--color-primary)] hover:bg-[var(--color-deep)]'
-                  }`}
-                  aria-haspopup="true"
-                  aria-expanded={megamenuOpen}
-                >
-                  {item.label}
-                  <svg
-                    width="10"
-                    height="10"
-                    viewBox="0 0 10 10"
-                    fill="none"
-                    className={`transition-transform duration-150 ${megamenuOpen ? 'rotate-180' : ''}`}
-                    aria-hidden="true"
+            const kind = getDropdownKind(item, megamenuItems, brands, industries)
+            if (kind !== null) {
+              const isOpen = activeDropdown === kind
+              return (
+                <div key={item.id} onMouseEnter={() => openDropdown(kind)} onMouseLeave={closeDropdown}>
+                  <Link
+                    href={href}
+                    className={`flex items-center gap-1 px-3 h-16 text-[14px] font-medium transition-colors ${
+                      isOpen
+                        ? 'text-[var(--color-primary)] bg-[var(--color-deep)]'
+                        : 'text-[var(--color-body)] hover:text-[var(--color-primary)] hover:bg-[var(--color-deep)]'
+                    }`}
+                    aria-haspopup="true"
+                    aria-expanded={isOpen}
                   >
-                    <path d="M2 4l3 3 3-3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-                  </svg>
-                </Link>
-              </div>
-            ) : (
+                    {item.label}
+                    <svg
+                      width="10"
+                      height="10"
+                      viewBox="0 0 10 10"
+                      fill="none"
+                      className={`transition-transform duration-150 ${isOpen ? 'rotate-180' : ''}`}
+                      aria-hidden="true"
+                    >
+                      <path d="M2 4l3 3 3-3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+                    </svg>
+                  </Link>
+                </div>
+              )
+            }
+            return (
               <Link
                 key={item.id}
                 href={href}
@@ -213,8 +243,8 @@ export default function SiteHeaderClient({
         <div
           className="absolute left-0 right-0 bg-[var(--color-elevated)] border-t border-[var(--color-border)]"
           style={{ top: '100%', boxShadow: '0 24px 64px rgba(33,28,16,0.12)', zIndex: 50 }}
-          onMouseEnter={openMega}
-          onMouseLeave={closeMega}
+          onMouseEnter={() => openDropdown('mega')}
+          onMouseLeave={closeDropdown}
           role="menu"
         >
           <div className="max-w-[1360px] mx-auto px-8">
@@ -237,7 +267,7 @@ export default function SiteHeaderClient({
                           : 'border-transparent text-[var(--color-body)] hover:bg-[var(--color-surface)] hover:border-[var(--color-accent)]'
                       }`}
                       onMouseEnter={() => handleCatHover(i)}
-                      onClick={closeMegaImmediate}
+                      onClick={closeDropdownImmediate}
                     >
                       <span>{cat.label}</span>
                       {cat.productCount != null ? (
@@ -265,7 +295,7 @@ export default function SiteHeaderClient({
                           : 'border-transparent text-[var(--color-body)] hover:bg-[var(--color-surface)] hover:border-[var(--color-accent)]'
                       }`}
                       onMouseEnter={() => handleSubHover(i)}
-                      onClick={closeMegaImmediate}
+                      onClick={closeDropdownImmediate}
                     >
                       <span>{sub.label}</span>
                       <span className="font-mono text-[11px] text-[var(--color-caption)]">›</span>
@@ -288,7 +318,7 @@ export default function SiteHeaderClient({
                       target={leaf.openInNewTab ? '_blank' : undefined}
                       rel={leaf.openInNewTab ? 'noopener noreferrer' : undefined}
                       className="flex justify-between items-center px-3 py-2.5 border-l-2 border-transparent text-[14px] text-[var(--color-body)] hover:bg-[var(--color-surface)] hover:border-[var(--color-accent)] transition-colors"
-                      onClick={closeMegaImmediate}
+                      onClick={closeDropdownImmediate}
                     >
                       <span>{leaf.label}</span>
                       <span className="font-mono text-[11px] text-[var(--color-caption)]">›</span>
@@ -300,7 +330,7 @@ export default function SiteHeaderClient({
                 {activeCat?.promoImageUrl ? (
                   <Link
                     href={activeCat.promoLinkUrl ?? browseAllHref}
-                    onClick={closeMegaImmediate}
+                    onClick={closeDropdownImmediate}
                     className="mt-4 block bg-[var(--color-surface)] border border-[var(--color-border)] overflow-hidden"
                   >
                     <div className="relative w-full h-32">
@@ -330,7 +360,7 @@ export default function SiteHeaderClient({
                   <Link
                     href={browseAllHref}
                     className="flex items-center justify-between gap-2 h-10 px-4 border border-[var(--color-border)] text-[13px] text-[var(--color-body)] hover:bg-[var(--color-deep)] transition-colors"
-                    onClick={closeMegaImmediate}
+                    onClick={closeDropdownImmediate}
                   >
                     <span>Browse all {activeCat?.label}</span>
                     <svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
@@ -342,6 +372,34 @@ export default function SiteHeaderClient({
             </div>
           </div>
         </div>
+      )}
+
+      {/* ── Brands dropdown ───────────────────────────────── */}
+      {brandsOpen && (
+        <NavListDropdown
+          items={brands}
+          hrefPrefix="/brands/"
+          viewAllHref="/brands"
+          viewAllLabel="View all brands"
+          sectionLabel="Brands"
+          onMouseEnter={() => openDropdown('brands')}
+          onMouseLeave={closeDropdown}
+          onItemClick={closeDropdownImmediate}
+        />
+      )}
+
+      {/* ── Industries dropdown ───────────────────────────── */}
+      {industriesOpen && (
+        <NavListDropdown
+          items={industries}
+          hrefPrefix="/industries/"
+          viewAllHref="/industries"
+          viewAllLabel="View all industries"
+          sectionLabel="Industries"
+          onMouseEnter={() => openDropdown('industries')}
+          onMouseLeave={closeDropdown}
+          onItemClick={closeDropdownImmediate}
+        />
       )}
 
       {/* ── Mobile nav ─────────────────────────────────────── */}
@@ -377,6 +435,60 @@ export default function SiteHeaderClient({
                     ) : null}
                   </Link>
                 ))}
+              </div>
+            </div>
+          ) : null}
+
+          {brands.length > 0 ? (
+            <div className="px-8 py-4 border-b border-[var(--color-border)]">
+              <p className="font-mono text-[10px] uppercase tracking-[0.12em] text-[var(--color-muted)] mb-3">Brands</p>
+              <div className="flex flex-col gap-0.5">
+                {brands.slice(0, MOBILE_LIST_LIMIT).map((b) => (
+                  <Link
+                    key={b.slug}
+                    href={`/brands/${b.slug}`}
+                    className="flex justify-between items-center py-2 text-[13px] text-[var(--color-body)] hover:text-[var(--color-accent)]"
+                    onClick={() => setMobileOpen(false)}
+                  >
+                    <span>{b.name}</span>
+                    <span className="font-mono text-[10px] text-[var(--color-caption)]">›</span>
+                  </Link>
+                ))}
+                <Link
+                  href="/brands"
+                  className="flex justify-between items-center py-2 text-[13px] font-medium text-[var(--color-primary)] hover:text-[var(--color-accent)]"
+                  onClick={() => setMobileOpen(false)}
+                >
+                  <span>View all brands</span>
+                  <span className="font-mono text-[10px] text-[var(--color-caption)]">→</span>
+                </Link>
+              </div>
+            </div>
+          ) : null}
+
+          {industries.length > 0 ? (
+            <div className="px-8 py-4 border-b border-[var(--color-border)]">
+              <p className="font-mono text-[10px] uppercase tracking-[0.12em] text-[var(--color-muted)] mb-3">Industries</p>
+              <div className="flex flex-col gap-0.5">
+                {industries.slice(0, MOBILE_LIST_LIMIT).map((ind) => (
+                  <Link
+                    key={ind.slug}
+                    href={`/industries/${ind.slug}`}
+                    className="flex justify-between items-center py-2 text-[13px] text-[var(--color-body)] hover:text-[var(--color-accent)]"
+                    onClick={() => setMobileOpen(false)}
+                  >
+                    <span>{ind.name}</span>
+                    <span className="font-mono text-[10px] text-[var(--color-caption)]">›</span>
+                  </Link>
+                ))}
+                <Link
+                  href="/industries"
+                  className="flex justify-between items-center py-2 text-[13px] font-medium text-[var(--color-primary)] hover:text-[var(--color-accent)]"
+                  onClick={() => setMobileOpen(false)}
+                >
+                  <span>View all industries</span>
+                  <span className="font-mono text-[10px] text-[var(--color-caption)]">→</span>
+                </Link>
               </div>
             </div>
           ) : null}
