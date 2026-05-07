@@ -251,9 +251,8 @@ export default function SiteHeaderClient({
             <div className="grid" style={{ gridTemplateColumns: '280px 320px 1fr', minHeight: '420px' }}>
               {/* ── Column 1: Top-level categories ── */}
               <div className="py-7 pr-0 border-r border-[var(--color-border-2)]">
-                <div className="font-mono text-[11px] tracking-[0.14em] uppercase text-[var(--color-muted)] mb-3 flex justify-between items-center">
-                  <span>Categories</span>
-                  <span className="font-normal">{megamenuItems.length}</span>
+                <div className="font-mono text-[11px] tracking-[0.14em] uppercase text-[var(--color-muted)] mb-3">
+                  Categories
                 </div>
                 <div className="flex flex-col">
                   {megamenuItems.map((cat, i) => (
