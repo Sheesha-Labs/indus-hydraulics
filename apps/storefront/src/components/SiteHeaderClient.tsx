@@ -183,7 +183,7 @@ export default function SiteHeaderClient({
           ) : (
             <Link
               href={`/sign-in`}
-              className="hidden sm:flex h-9 px-4 items-center bg-[var(--color-primary)] text-[var(--color-elevated)] text-[13px] font-medium hover:bg-[var(--color-body)] transition-colors"
+              className="hidden sm:flex h-9 px-4 items-center border border-[var(--color-border)] text-[13px] font-medium text-[var(--color-body)] hover:bg-[var(--color-deep)] hover:text-[var(--color-primary)] transition-colors"
             >
               Sign in
             </Link>

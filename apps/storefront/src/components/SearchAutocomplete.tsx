@@ -204,42 +204,40 @@ export default function SearchAutocomplete({ initialQuery = '', className }: Pro
 
   return (
     <div ref={wrapRef} className={className ?? 'relative w-full max-w-[420px]'}>
-      <form onSubmit={submit} role="search" className="flex border border-[var(--color-border)] bg-[var(--color-elevated)]">
-        <input
-          ref={inputRef}
-          type="search"
-          value={query}
-          onChange={(e) => {
-            setQuery(e.target.value)
-            setOpen(true)
-          }}
-          onFocus={() => setOpen(true)}
-          onKeyDown={onKeyDown}
-          placeholder="Search products, SKUs, MPNs…"
-          aria-label="Search"
-          aria-autocomplete="list"
-          aria-keyshortcuts="Meta+K Control+K"
-          className="flex-1 px-3 py-2 bg-transparent text-[13px] text-[var(--color-primary)] placeholder:text-[var(--color-caption)] focus:outline-none"
-        />
-        <kbd
-          aria-hidden="true"
-          className="hidden md:flex items-center px-2 py-1 m-1 self-center font-mono text-[10px] tracking-wider text-[var(--color-caption)] border border-[var(--color-border)] bg-[var(--color-deep)]"
-        >
-          ⌘K
-        </kbd>
-        <button
-          type="submit"
-          className="h-9 px-3 bg-[var(--color-accent)] text-white font-mono text-[11px] hover:opacity-90 transition-opacity shrink-0"
-        >
-          Search
-        </button>
-      </form>
+      <form onSubmit={submit} role="search" className="flex items-stretch gap-2">
+        {/* Bordered input group — kbd hint sits inside this box. The
+            global `:focus-visible` outline (orange accent) is suppressed
+            on the input itself; visual focus feedback shifts to the
+            wrapper border via `focus-within`. */}
+        <div className="relative flex flex-1 border border-[var(--color-border)] bg-[var(--color-elevated)] focus-within:border-[var(--color-body)] transition-colors">
+          <input
+            ref={inputRef}
+            type="search"
+            value={query}
+            onChange={(e) => {
+              setQuery(e.target.value)
+              setOpen(true)
+            }}
+            onFocus={() => setOpen(true)}
+            onKeyDown={onKeyDown}
+            placeholder="Search products, SKUs, MPNs…"
+            aria-label="Search"
+            aria-autocomplete="list"
+            aria-keyshortcuts="Meta+K Control+K"
+            className="flex-1 px-3 py-2 bg-transparent text-[13px] text-[var(--color-primary)] placeholder:text-[var(--color-caption)] focus:outline-none focus-visible:outline-none"
+          />
+          <kbd
+            aria-hidden="true"
+            className="hidden md:flex items-center px-2 py-1 m-1 self-center font-mono text-[10px] tracking-wider text-[var(--color-caption)] border border-[var(--color-border)] bg-[var(--color-deep)]"
+          >
+            ⌘K
+          </kbd>
 
-      {showPanel && (
-        <div
-          role="listbox"
-          className="absolute left-0 right-0 top-full mt-1 border border-[var(--color-border)] bg-white shadow-md z-30"
-        >
+          {showPanel && (
+            <div
+              role="listbox"
+              className="absolute left-0 right-0 top-full mt-1 border border-[var(--color-border)] bg-white shadow-md z-30"
+            >
           {showRecents && (
             <>
               <div className="px-3 py-1.5 font-mono text-[10px] tracking-[0.1em] uppercase text-[var(--color-caption)] border-b border-[var(--color-border)]">
@@ -317,8 +315,16 @@ export default function SearchAutocomplete({ initialQuery = '', className }: Pro
               See all results for &ldquo;{trimmedQuery}&rdquo; →
             </Link>
           )}
+            </div>
+          )}
         </div>
-      )}
+        <button
+          type="submit"
+          className="h-9 px-4 bg-[var(--color-accent)] text-white font-mono text-[11px] hover:opacity-90 transition-opacity shrink-0"
+        >
+          Search
+        </button>
+      </form>
     </div>
   )
 }
