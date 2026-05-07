@@ -92,7 +92,7 @@ export default function SiteHeaderClient({
   const browseAllHref = activeCat?.href ?? '/c'
 
   return (
-    <header className="sticky top-0 z-50 bg-[var(--color-elevated)]/80 backdrop-blur-md backdrop-saturate-150 border-b border-[var(--color-border)]">
+    <header className="sticky top-0 z-50 bg-[var(--color-elevated)]/65 backdrop-blur-lg backdrop-saturate-150 border-b border-[var(--color-border)]">
       {/* Utility bar */}
       <div className="bg-[var(--color-primary)] text-[var(--color-surface)]">
         <div className="max-w-[1360px] mx-auto px-8 h-9 flex items-center justify-between font-mono text-[11px] tracking-[0.04em]">
