@@ -117,3 +117,41 @@ export const getNavMenu = cache(async (location: MenuLocation): Promise<Resolved
     items: buildTree(menu.items),
   }
 })
+
+export type NavListEntry = { slug: string; name: string }
+
+const loadNavBrands = unstable_cache(
+  async (): Promise<NavListEntry[]> => {
+    return db.brand
+      .findMany({
+        where: { isPublished: true },
+        orderBy: { name: 'asc' },
+        select: { slug: true, name: true },
+      })
+      .catch(() => [])
+  },
+  ['nav-brands'],
+  { revalidate: 300, tags: ['nav-brands'] },
+)
+
+const loadNavIndustries = unstable_cache(
+  async (): Promise<NavListEntry[]> => {
+    return db.industry
+      .findMany({
+        where: { isPublished: true },
+        orderBy: { name: 'asc' },
+        select: { slug: true, name: true },
+      })
+      .catch(() => [])
+  },
+  ['nav-industries'],
+  { revalidate: 300, tags: ['nav-industries'] },
+)
+
+export const getNavBrands = cache(async (): Promise<NavListEntry[]> => {
+  return loadNavBrands()
+})
+
+export const getNavIndustries = cache(async (): Promise<NavListEntry[]> => {
+  return loadNavIndustries()
+})
