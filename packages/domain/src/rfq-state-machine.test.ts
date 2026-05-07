@@ -25,12 +25,19 @@ describe('RFQ state machine — canonical transitions per CLAUDE.md §7', () => 
     expect(canTransition('quote_sent', 'expired')).toBe(true)
   })
 
-  test('accepted → order_created is terminal for the RFQ domain', () => {
+  test('order tracking: accepted → order_created → shipped → delivered', () => {
     expect(canTransition('accepted', 'order_created')).toBe(true)
-    // Post-order_created statuses are RESERVED — the order/fulfilment domain
-    // owns them. They have no transitions until that domain is wired up.
+    expect(canTransition('order_created', 'shipped')).toBe(true)
+    expect(canTransition('shipped', 'delivered')).toBe(true)
+    // delivered is the terminal success state; no forward transitions.
+    expect(getValidTransitions('delivered')).toEqual([])
+    // Order tracking deliberately skips the `fulfilling` intermediate.
     expect(canTransition('order_created', 'fulfilling')).toBe(false)
-    expect(getValidTransitions('order_created')).toEqual([])
+    // Cancellation is allowed from order_created but not from shipped or
+    // delivered (refund/return is a different flow we haven't modeled).
+    expect(canTransition('order_created', 'cancelled')).toBe(true)
+    expect(canTransition('shipped', 'cancelled')).toBe(false)
+    expect(canTransition('delivered', 'cancelled')).toBe(false)
   })
 
   test('any non-terminal state can be cancelled', () => {
@@ -43,8 +50,8 @@ describe('RFQ state machine — canonical transitions per CLAUDE.md §7', () => 
     expect(canTransition('draft', 'engineer_review')).toBe(false)
     expect(canTransition('draft', 'quote_sent')).toBe(false)
     expect(canTransition('submitted', 'accepted')).toBe(false)
-    // Terminal states have no outgoing transitions
-    expect(canTransition('order_created', 'cancelled')).toBe(false)
+    // Terminal states have no outgoing transitions.
+    expect(canTransition('delivered', 'cancelled')).toBe(false)
     expect(canTransition('declined', 'engineer_review')).toBe(false)
   })
 
@@ -61,19 +68,23 @@ describe('RFQ state machine — canonical transitions per CLAUDE.md §7', () => 
   })
 
   test('isTerminal correctly identifies terminal states', () => {
-    expect(isTerminal('order_created')).toBe(true)
+    expect(isTerminal('delivered')).toBe(true)
     expect(isTerminal('cancelled')).toBe(true)
     expect(isTerminal('declined')).toBe(true)
     expect(isTerminal('expired')).toBe(true)
     expect(isTerminal('draft')).toBe(false)
     expect(isTerminal('engineer_review')).toBe(false)
     expect(isTerminal('quote_sent')).toBe(false)
+    // Order tracking states are no longer terminal.
+    expect(isTerminal('order_created')).toBe(false)
+    expect(isTerminal('shipped')).toBe(false)
   })
 
   test('shouldNotifyCustomer fires on the right milestones', () => {
     expect(shouldNotifyCustomer('submitted')).toBe(true)
     expect(shouldNotifyCustomer('quote_sent')).toBe(true)
     expect(shouldNotifyCustomer('order_created')).toBe(true)
+    expect(shouldNotifyCustomer('expired')).toBe(true)
     // No-op states
     expect(shouldNotifyCustomer('draft')).toBe(false)
     expect(shouldNotifyCustomer('engineer_review')).toBe(false)

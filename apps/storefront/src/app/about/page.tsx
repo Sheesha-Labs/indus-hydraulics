@@ -146,7 +146,7 @@ export default async function AboutPage({ params }: Props) {
       <section className="border-t border-[var(--color-border)] bg-[var(--color-elevated)] py-16">
         <div className="max-w-[1360px] mx-auto px-8">
           <div className="font-mono text-[11px] tracking-[0.16em] text-[var(--color-muted)] uppercase mb-2">HOW WE WORK</div>
-          <h2 className="text-[32px] font-semibold tracking-[-0.02em] mb-10">Three things that don't change.</h2>
+          <h2 className="text-[32px] font-semibold tracking-[-0.02em] mb-10">Three things that don&apos;t change.</h2>
           <div className="grid grid-cols-3 gap-8">
             {[
               { num: '01', title: 'Stock it, or say so.', desc: 'We quote from real inventory. If something isn\'t stocked, we say the lead time upfront — never after you\'ve committed.' },

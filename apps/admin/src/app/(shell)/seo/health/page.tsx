@@ -45,6 +45,9 @@ export default async function SeoHealthPage() {
     '',
   )
 
+  // Server component renders once per request — Date.now is the right
+  // call for "events in the last 7 days" relative to the request time.
+  // eslint-disable-next-line react-hooks/purity
   const since = new Date(Date.now() - 7 * 24 * 60 * 60 * 1000)
 
   const [

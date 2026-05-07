@@ -1,7 +1,11 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import type { CurrencyCode } from '@indus/domain'
+import { ProductPrice } from '@indus/ui'
 import { mediaUrl } from '../lib/media'
 import AddToCompareCardButton from './AddToCompareCardButton'
+
+type DecimalLike = { toString(): string } | number | null | undefined
 
 type ProductCardProps = {
   product: {
@@ -18,7 +22,15 @@ type ProductCardProps = {
       alt?: string | null
     }>
     specs: Array<{ label: string; value: string; unit?: string | null }>
+    listPrice?: DecimalLike
+    listPriceCurrency?: string
+    compareAtPrice?: DecimalLike
   }
+}
+
+function toNumber(v: DecimalLike): number | null {
+  if (v == null) return null
+  return typeof v === 'number' ? v : Number(v.toString())
 }
 
 export default function ProductCard({ product }: ProductCardProps) {
@@ -67,10 +79,19 @@ export default function ProductCard({ product }: ProductCardProps) {
           </div>
         )}
 
-        <div className="flex items-center justify-between pt-2 border-t border-[var(--color-border-2)] mt-auto gap-2">
-          {product.brand && (
-            <span className="text-[12px] text-[var(--color-body)] font-medium truncate">{product.brand.name}</span>
-          )}
+        {product.brand && (
+          <span className="text-[11px] text-[var(--color-muted)] font-medium truncate">{product.brand.name}</span>
+        )}
+
+        <div className="flex items-end justify-between pt-2 border-t border-[var(--color-border-2)] mt-auto gap-2">
+          <ProductPrice
+            listPrice={toNumber(product.listPrice)}
+            currency={(product.listPriceCurrency ?? 'USD') as CurrencyCode}
+            compareAtPrice={toNumber(product.compareAtPrice)}
+            layout="inline"
+            size="md"
+            quoteCta="Quote on request"
+          />
           <div className="flex items-center gap-2 shrink-0">
             <AddToCompareCardButton
               sku={product.sku}

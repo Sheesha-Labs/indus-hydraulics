@@ -286,7 +286,7 @@ function CommittingStep() {
     <div className="bg-white border border-[var(--color-border)] p-12 text-center">
       <h2 className="text-[16px] font-semibold mb-2">Committing…</h2>
       <p className="text-[13px] text-[var(--color-muted)]">
-        Creating and updating products in batches of 50. This may take a minute for large files — please don't close the tab.
+        Creating and updating products in batches of 50. This may take a minute for large files — please don&apos;t close the tab.
       </p>
     </div>
   )

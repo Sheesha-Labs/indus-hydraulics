@@ -28,7 +28,6 @@ const Compatibility = z.enum(['direct', 'compatible', 'superseded_by_us'])
 const Currency = z.enum(['USD', 'INR', 'EUR', 'AED', 'SAR'])
 const UnitOfMeasure = z.enum(['each', 'metre', 'kit', 'set'])
 const DocumentKind = z.enum(['datasheet', 'step', 'iges', 'service_manual', 'installation_guide'])
-const Locale = z.string().min(1).default('en')
 
 async function uniqueSlug(base: string, ignoreId?: string): Promise<string> {
   const baseSlug = slugify(base)
@@ -207,26 +206,35 @@ const optionalInt = z
   .transform((v) => (v && v.trim() ? Number(v) : null))
   .refine((v) => v === null || (Number.isInteger(v) && v >= 0), { message: 'Must be a non-negative integer' })
 
-const UpdateCommerceSchema = z.object({
-  id: z.string().uuid(),
-  listPrice: optionalDecimal,
-  listPriceCurrency: Currency.default('USD'),
-  unitOfMeasure: UnitOfMeasure.default('each'),
-  weightKg: optionalDecimal,
-  dimensionLengthMm: optionalInt,
-  dimensionWidthMm: optionalInt,
-  dimensionHeightMm: optionalInt,
-  leadTimeDays: optionalInt,
-  warrantyMonths: optionalInt,
-  stockQty: z
-    .string()
-    .optional()
-    .transform((v) => (v && v.trim() ? Number(v) : 0))
-    .refine((v) => Number.isInteger(v) && v >= 0, { message: 'Stock must be a non-negative integer' }),
-  stockWarehouse: z.string().trim().max(120).optional().transform((v) => (v && v.length ? v : null)),
-  countryOfOrigin: z.string().trim().max(80).optional().transform((v) => (v && v.length ? v : null)),
-  hsCode: z.string().trim().max(40).optional().transform((v) => (v && v.length ? v : null)),
-})
+const UpdateCommerceSchema = z
+  .object({
+    id: z.string().uuid(),
+    listPrice: optionalDecimal,
+    compareAtPrice: optionalDecimal,
+    listPriceCurrency: Currency.default('USD'),
+    unitOfMeasure: UnitOfMeasure.default('each'),
+    weightKg: optionalDecimal,
+    dimensionLengthMm: optionalInt,
+    dimensionWidthMm: optionalInt,
+    dimensionHeightMm: optionalInt,
+    leadTimeDays: optionalInt,
+    warrantyMonths: optionalInt,
+    stockQty: z
+      .string()
+      .optional()
+      .transform((v) => (v && v.trim() ? Number(v) : 0))
+      .refine((v) => Number.isInteger(v) && v >= 0, { message: 'Stock must be a non-negative integer' }),
+    stockWarehouse: z.string().trim().max(120).optional().transform((v) => (v && v.length ? v : null)),
+    countryOfOrigin: z.string().trim().max(80).optional().transform((v) => (v && v.length ? v : null)),
+    hsCode: z.string().trim().max(40).optional().transform((v) => (v && v.length ? v : null)),
+  })
+  .refine(
+    (v) =>
+      v.compareAtPrice === null ||
+      v.listPrice === null ||
+      v.compareAtPrice > v.listPrice,
+    { message: 'Compare-at price must be greater than List price', path: ['compareAtPrice'] },
+  )
 
 export async function updateProductCommerce(formData: FormData): Promise<Result<void>> {
   try {
@@ -234,6 +242,7 @@ export async function updateProductCommerce(formData: FormData): Promise<Result<
     const parsed = UpdateCommerceSchema.parse({
       id: formData.get('id'),
       listPrice: formData.get('listPrice') ?? '',
+      compareAtPrice: formData.get('compareAtPrice') ?? '',
       listPriceCurrency: formData.get('listPriceCurrency') ?? 'USD',
       unitOfMeasure: formData.get('unitOfMeasure') ?? 'each',
       weightKg: formData.get('weightKg') ?? '',
@@ -263,6 +272,7 @@ export async function updateProductCommerce(formData: FormData): Promise<Result<
       where: { id: parsed.id },
       data: {
         listPrice: parsed.listPrice,
+        compareAtPrice: parsed.compareAtPrice,
         listPriceCurrency: parsed.listPriceCurrency,
         unitOfMeasure: parsed.unitOfMeasure,
         weightKg: parsed.weightKg,
@@ -537,7 +547,6 @@ export async function addProductSpec(formData: FormData): Promise<Result<void>> 
   try {
     requireRole(await auth(), ROLES.CATALOGUE_WRITE)
     const productId = z.string().uuid().parse(formData.get('productId'))
-    const locale = z.string().min(1).parse(formData.get('locale') ?? 'en')
     const body = SpecBodySchema.parse({
       group: (formData.get('group') as string | null) || 'General',
       label: formData.get('label'),
@@ -571,7 +580,6 @@ export async function updateProductSpec(formData: FormData): Promise<Result<void
     requireRole(await auth(), ROLES.CATALOGUE_WRITE)
     const id = z.string().uuid().parse(formData.get('id'))
     const productId = z.string().uuid().parse(formData.get('productId'))
-    const locale = z.string().min(1).parse(formData.get('locale') ?? 'en')
     const body = SpecBodySchema.parse({
       group: (formData.get('group') as string | null) || 'General',
       label: formData.get('label'),
@@ -613,7 +621,6 @@ export async function addProductCrossReference(formData: FormData): Promise<Resu
   try {
     requireRole(await auth(), ROLES.CATALOGUE_WRITE)
     const productId = z.string().uuid().parse(formData.get('productId'))
-    const locale = z.string().min(1).parse(formData.get('locale') ?? 'en')
     const body = CrossRefBodySchema.parse({
       competitorBrand: formData.get('competitorBrand'),
       competitorMpn: formData.get('competitorMpn'),
@@ -633,7 +640,6 @@ export async function updateProductCrossReference(formData: FormData): Promise<R
     requireRole(await auth(), ROLES.CATALOGUE_WRITE)
     const id = z.string().uuid().parse(formData.get('id'))
     const productId = z.string().uuid().parse(formData.get('productId'))
-    const locale = z.string().min(1).parse(formData.get('locale') ?? 'en')
     const body = CrossRefBodySchema.parse({
       competitorBrand: formData.get('competitorBrand'),
       competitorMpn: formData.get('competitorMpn'),
@@ -672,7 +678,6 @@ export async function uploadProductImage(formData: FormData): Promise<Result<voi
     requireRole(await auth(), ROLES.CATALOGUE_WRITE)
     const session = await auth()
     const productId = z.string().uuid().parse(formData.get('productId'))
-    const locale = z.string().min(1).parse(formData.get('locale') ?? 'en')
     const altRaw = (formData.get('alt') as string | null) ?? ''
     const alt = altRaw.trim() ? altRaw.trim().slice(0, 200) : null
 
@@ -901,7 +906,6 @@ export async function uploadProductDocument(formData: FormData): Promise<Result<
     requireRole(await auth(), ROLES.CATALOGUE_WRITE)
     const session = await auth()
     const productId = z.string().uuid().parse(formData.get('productId'))
-    const locale = z.string().min(1).parse(formData.get('locale') ?? 'en')
     const kind = DocumentKind.parse(formData.get('kind') ?? 'datasheet')
     const title = z.string().trim().min(1).max(200).parse(formData.get('title'))
     const language = z.string().trim().min(2).max(8).parse(formData.get('language') ?? 'en')
@@ -996,7 +1000,6 @@ export async function addProductDocument(formData: FormData): Promise<Result<voi
     requireRole(await auth(), ROLES.CATALOGUE_WRITE)
     const session = await auth()
     const productId = z.string().uuid().parse(formData.get('productId'))
-    const locale = z.string().min(1).parse(formData.get('locale') ?? 'en')
     const body = DocumentBodySchema.parse({
       kind: formData.get('kind') ?? 'datasheet',
       title: formData.get('title'),
@@ -1097,7 +1100,6 @@ export async function addProductFaq(formData: FormData): Promise<Result<void>> {
   try {
     requireRole(await auth(), ROLES.CATALOGUE_WRITE)
     const productId = z.string().uuid().parse(formData.get('productId'))
-    const locale = z.string().min(1).parse(formData.get('locale') ?? 'en')
     const body = FaqBodySchema.parse({
       question: formData.get('question'),
       answer: formData.get('answer'),
@@ -1128,7 +1130,6 @@ export async function updateProductFaq(formData: FormData): Promise<Result<void>
     requireRole(await auth(), ROLES.CATALOGUE_WRITE)
     const id = z.string().uuid().parse(formData.get('id'))
     const productId = z.string().uuid().parse(formData.get('productId'))
-    const locale = z.string().min(1).parse(formData.get('locale') ?? 'en')
     const body = FaqBodySchema.parse({
       question: formData.get('question'),
       answer: formData.get('answer'),

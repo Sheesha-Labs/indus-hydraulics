@@ -4,11 +4,44 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { redirect } from 'next/navigation'
 import { db } from '@indus/db'
+import {
+  AVAILABILITY_LABELS,
+  AVAILABILITY_MODES,
+  PAGE_SIZE,
+  SEARCH_TYPES,
+  SEARCH_TYPE_LABELS,
+  SORT_LABELS,
+  SORT_MODES,
+  availabilityToWhere,
+  buildPageNumbers,
+  parseAvailabilityParam,
+  parsePageParam,
+  parseSortParam,
+  parseTypesParam,
+  proposeAlternates,
+  serializeTypesParam,
+  sortToOrderBy,
+  toggleType,
+  totalPageCount,
+  type AlternateSuggestion,
+  type AvailabilityMode,
+  type SearchType,
+  type SortMode,
+} from '@indus/domain'
 import { runSearch } from '../../lib/search'
+import { runBlogSearch } from '../../lib/search-blog'
 import SearchLogger from './SearchLogger'
 
 type Props = {
-  searchParams: Promise<{ q?: string; brands?: string; category?: string }>
+  searchParams: Promise<{
+    q?: string
+    brands?: string
+    category?: string
+    page?: string
+    sort?: string
+    types?: string
+    avail?: string
+  }>
 }
 
 export async function generateMetadata({ searchParams }: Props): Promise<Metadata> {
@@ -16,55 +49,139 @@ export async function generateMetadata({ searchParams }: Props): Promise<Metadat
   return { title: sp.q ? `Search: ${sp.q}` : 'Search' }
 }
 
-const PAGE_SIZE = 24
-
 export default async function SearchPage({ searchParams }: Props) {
   const sp = await searchParams
   const query = (sp.q ?? '').trim()
   const selectedBrands = sp.brands ? sp.brands.split(',').filter(Boolean) : []
   const selectedCategory = sp.category ?? ''
+  const sortMode: SortMode = parseSortParam(sp.sort)
+  const currentPage = parsePageParam(sp.page)
+  const selectedTypes: SearchType[] = parseTypesParam(sp.types)
+  const availability: AvailabilityMode | null = parseAvailabilityParam(sp.avail)
 
   let products: Awaited<
     ReturnType<typeof db.product.findMany<{ include: { brand: true; category: true; images: { include: { media: true } } } }>>
   > = []
+  let totalProducts = 0
   let facetBrands: { id: string; name: string; slug: string; count: number }[] = []
   let facetCategories: { id: string; name: string; slug: string; count: number }[] = []
   let relatedDocs: Awaited<
     ReturnType<typeof db.productDocument.findMany<{ include: { media: true; product: { select: { sku: true; title: true } } } }>>
   > = []
   let usedFallback = false
+  let blogPosts: Awaited<
+    ReturnType<typeof db.blogPost.findMany<{ include: { hero: true; author: { select: { name: true } } } }>>
+  > = []
+  let totalBlog = 0
+
+  let alternates: AlternateSuggestion[] = []
 
   if (query.length >= 2) {
-    const plan = await runSearch(query)
+    // Always run the product FTS — the redirect short-circuit (exact SKU
+    // match) lives there and shouldn't be skipped just because the user
+    // unchecked the Products type. We also fetch synonym + redirect
+    // rules in the same Promise.all so the page can offer "did you mean"
+    // alternates when results are thin.
+    const [plan, blogResult, synRows, redirRows] = await Promise.all([
+      runSearch(query),
+      selectedTypes.includes('articles')
+        ? runBlogSearch(query)
+        : Promise.resolve({ postIds: [], scoreById: new Map<string, number>() }),
+      db.searchSynonym.findMany({
+        where: { isActive: true },
+        select: { group: true, term: true },
+      }),
+      db.searchRedirect.findMany({
+        where: { isActive: true },
+        select: { query: true, targetUrl: true },
+      }),
+    ])
     if (plan.kind === 'redirect') {
       redirect(plan.targetUrl)
     }
     usedFallback = plan.usedFallback
 
+    // Group synonym rows into the SynonymGroup shape proposeAlternates
+    // expects.
+    const synonymsByGroup = new Map<string, string[]>()
+    for (const row of synRows) {
+      const list = synonymsByGroup.get(row.group)
+      if (list) list.push(row.term)
+      else synonymsByGroup.set(row.group, [row.term])
+    }
+    const synonymGroups = Array.from(synonymsByGroup.entries()).map(([group, terms]) => ({
+      group,
+      terms,
+    }))
+
+    // Compute alternates against the *product* result count — that's the
+    // primary signal a customer cares about. Using the union with blog/
+    // datasheets would suppress alternates too aggressively.
+    const productResultCount = plan.productIds.length
+    alternates = proposeAlternates({
+      query,
+      synonyms: synonymGroups,
+      redirects: redirRows.map((r) => ({ query: r.query, targetUrl: r.targetUrl })),
+      resultCount: productResultCount,
+    })
+
+    if (selectedTypes.includes('articles') && blogResult.postIds.length > 0) {
+      const blogRows = await db.blogPost.findMany({
+        where: { id: { in: blogResult.postIds }, isPublished: true },
+        include: {
+          hero: true,
+          author: { select: { name: true } },
+        },
+        take: 8,
+      })
+      // Re-order to FTS rank.
+      blogPosts = blogRows
+        .slice()
+        .sort(
+          (a, b) =>
+            (blogResult.scoreById.get(b.id) ?? 0) - (blogResult.scoreById.get(a.id) ?? 0),
+        )
+      totalBlog = blogPosts.length
+    }
+
     if (plan.productIds.length > 0) {
       // Apply facet filters at app level — keeps the FTS SQL simple and
       // avoids array-binding gymnastics. The FTS pass already capped
-      // results at FTS_FETCH_LIMIT, so we have headroom to filter then
-      // slice to PAGE_SIZE.
+      // results at FTS_FETCH_LIMIT (600), so we have headroom to filter
+      // and paginate without re-running the FTS query.
+      const orderBy = sortToOrderBy(sortMode)
+      const availabilityFilter = availabilityToWhere(availability)
       const filteredById = await db.product.findMany({
         where: {
           id: { in: plan.productIds },
           status: 'active',
           ...(selectedBrands.length > 0 ? { brand: { slug: { in: selectedBrands } } } : {}),
           ...(selectedCategory ? { category: { slug: selectedCategory } } : {}),
+          ...(availabilityFilter ?? {}),
         },
         include: {
           brand: true,
           category: true,
           images: { orderBy: { position: 'asc' }, take: 1, include: { media: true } },
         },
+        // For non-relevance sorts, push the order down to Postgres so
+        // pagination is correct across pages. Relevance keeps Postgres-
+        // arbitrary order then re-sorts in JS by FTS score below.
+        ...(orderBy ? { orderBy } : {}),
       })
 
-      // Sort by score (highest first), preserving FTS rank.
-      products = filteredById
-        .slice()
-        .sort((a, b) => (plan.scoreById.get(b.id) ?? 0) - (plan.scoreById.get(a.id) ?? 0))
-        .slice(0, PAGE_SIZE)
+      totalProducts = filteredById.length
+      const ordered =
+        sortMode === 'relevance'
+          ? filteredById
+              .slice()
+              .sort(
+                (a, b) => (plan.scoreById.get(b.id) ?? 0) - (plan.scoreById.get(a.id) ?? 0),
+              )
+          : filteredById
+
+      const start = (currentPage - 1) * PAGE_SIZE
+      products = ordered.slice(start, start + PAGE_SIZE)
 
       // Facets are computed across ALL FTS hits (pre-filter) so a clicked
       // filter doesn't make the alternative facets vanish.
@@ -119,6 +236,10 @@ export default async function SearchPage({ searchParams }: Props) {
       q: query,
       brands: selectedBrands.join(',') || undefined,
       category: selectedCategory || undefined,
+      page: currentPage > 1 ? String(currentPage) : undefined,
+      sort: sortMode === 'relevance' ? undefined : sortMode,
+      types: serializeTypesParam(selectedTypes) ?? undefined,
+      avail: availability ?? undefined,
     }
     const merged = { ...base, ...overrides }
     for (const [k, v] of Object.entries(merged)) {
@@ -127,12 +248,35 @@ export default async function SearchPage({ searchParams }: Props) {
     return `/search?${p.toString()}`
   }
 
+  function toggleAvailability(mode: AvailabilityMode) {
+    const next = availability === mode ? undefined : mode
+    return filterUrl({ avail: next, page: undefined })
+  }
+
   function toggleBrand(slug: string) {
     const next = selectedBrands.includes(slug)
       ? selectedBrands.filter((b) => b !== slug)
       : [...selectedBrands, slug]
-    return filterUrl({ brands: next.join(',') || undefined })
+    // Toggling a facet always sends the user back to page 1 — otherwise
+    // they could land on an empty page when the result set shrinks.
+    return filterUrl({ brands: next.join(',') || undefined, page: undefined })
   }
+
+  function toggleTypeUrl(type: SearchType) {
+    const next = toggleType(selectedTypes, type)
+    return filterUrl({ types: serializeTypesParam(next) ?? undefined, page: undefined })
+  }
+
+  // Per-type total counts shown in the Type filter and the result-count
+  // line ("14 products · 3 datasheets · 1 article").
+  const totalDatasheets = relatedDocs.length
+  const showProductsSection = selectedTypes.includes('products') && products.length > 0
+  const showDatasheetsSection = selectedTypes.includes('datasheets') && totalDatasheets > 0
+  const showArticlesSection = selectedTypes.includes('articles') && blogPosts.length > 0
+  const anyResults = showProductsSection || showDatasheetsSection || showArticlesSection
+
+  const totalPages = totalPageCount(totalProducts)
+  const pageTokens = buildPageNumbers(currentPage, totalPages)
 
   const topMatch = products[0]
   const restProducts = products.slice(1)
@@ -148,8 +292,8 @@ export default async function SearchPage({ searchParams }: Props) {
         <h1 className="text-[32px] font-semibold tracking-[-0.02em]">Search results</h1>
         {query.length >= 2 && (
           <span className="font-mono text-[13px] text-[var(--color-muted)]">
-            for &ldquo;<b className="text-[var(--color-primary)]">{query}</b>&rdquo; · {products.length} match
-            {products.length !== 1 ? 'es' : ''}
+            for &ldquo;<b className="text-[var(--color-primary)]">{query}</b>&rdquo; · {totalProducts} match
+            {totalProducts !== 1 ? 'es' : ''}
             {usedFallback && (
               <span className="ml-2 px-1.5 py-0.5 bg-[var(--color-deep)] text-[10px] font-mono uppercase tracking-wider">
                 Suggested
@@ -159,7 +303,7 @@ export default async function SearchPage({ searchParams }: Props) {
         )}
       </div>
 
-      <form method="GET" action="/search" className="mb-8 max-w-[640px]">
+      <form method="GET" action="/search" className="mb-4 max-w-[640px]">
         <div className="flex border border-[var(--color-border)] bg-[var(--color-elevated)]">
           <input
             name="q"
@@ -176,6 +320,23 @@ export default async function SearchPage({ searchParams }: Props) {
           </button>
         </div>
       </form>
+
+      {alternates.length > 0 && (
+        <div className="flex items-center gap-2 flex-wrap mb-8">
+          <span className="font-mono text-[11px] uppercase tracking-[0.1em] text-[var(--color-muted)]">
+            Did you mean
+          </span>
+          {alternates.map((alt) => (
+            <Link
+              key={alt.query}
+              href={`/search?q=${encodeURIComponent(alt.query)}`}
+              className="px-2.5 py-1 border border-[var(--color-border)] bg-[var(--color-elevated)] font-mono text-[12px] text-[var(--color-body)] hover:border-[var(--color-accent)] hover:text-[var(--color-accent)] transition-colors"
+            >
+              {alt.query}
+            </Link>
+          ))}
+        </div>
+      )}
 
       {query.length < 2 ? (
         <div className="py-20 text-center">
@@ -195,6 +356,47 @@ export default async function SearchPage({ searchParams }: Props) {
               <p className="font-mono text-[11px] tracking-[0.12em] uppercase text-[var(--color-muted)] mb-4">
                 Refine results
               </p>
+
+              {/* Type filter — Products / Datasheets / Articles. Empty
+                  param is treated as "all", so we show what's checked
+                  rather than what's specifically present in the URL. */}
+              <div className="mb-5">
+                <div className="font-semibold text-[13px] mb-2">Type</div>
+                <div className="flex flex-col gap-1.5 text-[13px]">
+                  {SEARCH_TYPES.map((type) => {
+                    const count =
+                      type === 'products'
+                        ? totalProducts
+                        : type === 'datasheets'
+                          ? totalDatasheets
+                          : totalBlog
+                    const checked = selectedTypes.includes(type)
+                    return (
+                      <Link
+                        key={type}
+                        href={toggleTypeUrl(type)}
+                        className="flex justify-between items-center text-[var(--color-body)] hover:text-[var(--color-primary)]"
+                      >
+                        <span className="flex items-center gap-2">
+                          <span
+                            aria-hidden="true"
+                            className={
+                              'w-3.5 h-3.5 border border-[var(--color-border)] flex items-center justify-center text-[10px] ' +
+                              (checked ? 'bg-[var(--color-accent)] text-white' : 'bg-[var(--color-elevated)]')
+                            }
+                          >
+                            {checked ? '✓' : ''}
+                          </span>
+                          <span className={checked ? 'font-medium text-[var(--color-primary)]' : ''}>
+                            {SEARCH_TYPE_LABELS[type]}
+                          </span>
+                        </span>
+                        <span className="font-mono text-[11px] text-[var(--color-caption)]">{count}</span>
+                      </Link>
+                    )
+                  })}
+                </div>
+              </div>
 
               {facetCategories.length > 0 && (
                 <div className="mb-5">
@@ -236,9 +438,43 @@ export default async function SearchPage({ searchParams }: Props) {
                 </div>
               )}
 
-              {(selectedBrands.length > 0 || selectedCategory) && (
+              <div className="mb-5">
+                <div className="font-semibold text-[13px] mb-2">Availability</div>
+                <div className="flex flex-col gap-1.5 text-[13px]">
+                  {AVAILABILITY_MODES.map((mode) => {
+                    const checked = availability === mode
+                    return (
+                      <Link
+                        key={mode}
+                        href={toggleAvailability(mode)}
+                        className="flex items-center gap-2 text-[var(--color-body)] hover:text-[var(--color-primary)]"
+                      >
+                        <span
+                          aria-hidden="true"
+                          className={
+                            'w-3.5 h-3.5 border border-[var(--color-border)] flex items-center justify-center text-[10px] ' +
+                            (checked ? 'bg-[var(--color-accent)] text-white' : 'bg-[var(--color-elevated)]')
+                          }
+                        >
+                          {checked ? '✓' : ''}
+                        </span>
+                        <span className={checked ? 'font-medium text-[var(--color-primary)]' : ''}>
+                          {AVAILABILITY_LABELS[mode]}
+                        </span>
+                      </Link>
+                    )
+                  })}
+                </div>
+              </div>
+
+              {(selectedBrands.length > 0 || selectedCategory || availability !== null) && (
                 <Link
-                  href={filterUrl({ brands: undefined, category: undefined })}
+                  href={filterUrl({
+                    brands: undefined,
+                    category: undefined,
+                    avail: undefined,
+                    page: undefined,
+                  })}
                   className="font-mono text-[12px] text-[var(--color-accent)] hover:underline"
                 >
                   Clear all filters
@@ -248,26 +484,76 @@ export default async function SearchPage({ searchParams }: Props) {
           </aside>
 
           <div>
-            {products.length === 0 ? (
+            {!anyResults ? (
               <div className="py-16 border border-dashed border-[var(--color-border)] text-center">
-                <p className="text-[var(--color-muted)]">No products found</p>
+                <p className="text-[var(--color-muted)]">No results</p>
                 <p className="text-[var(--color-muted)] text-sm mt-1">
-                  Try different keywords or browse our categories.
+                  Try different keywords, broaden your Type filter, or browse our categories.
                 </p>
               </div>
             ) : (
               <>
                 <div className="flex justify-between items-center mb-4 text-[13px] text-[var(--color-muted)]">
                   <span>
-                    {products.length} product{products.length !== 1 ? 's' : ''}
+                    {[
+                      selectedTypes.includes('products')
+                        ? `${totalProducts} product${totalProducts !== 1 ? 's' : ''}`
+                        : null,
+                      selectedTypes.includes('datasheets') && totalDatasheets > 0
+                        ? `${totalDatasheets} datasheet${totalDatasheets !== 1 ? 's' : ''}`
+                        : null,
+                      selectedTypes.includes('articles') && totalBlog > 0
+                        ? `${totalBlog} article${totalBlog !== 1 ? 's' : ''}`
+                        : null,
+                    ]
+                      .filter(Boolean)
+                      .join(' · ')}
+                    {showProductsSection && totalPages > 1 && (
+                      <>
+                        {' · page '}
+                        <span className="font-mono">{currentPage}</span>
+                        {' of '}
+                        <span className="font-mono">{totalPages}</span>
+                      </>
+                    )}
                   </span>
-                  <div className="flex items-center gap-2.5">
-                    <span>Sort</span>
-                    <span className="font-mono text-[12px] text-[var(--color-body)]">Best match</span>
-                  </div>
+                  <form method="GET" action="/search" className="flex items-center gap-2.5">
+                    {/* Preserve the rest of the URL state when the sort
+                        changes. Hidden inputs replicate `filterUrl()` minus
+                        the sort/page params (changing sort always resets to
+                        page 1). */}
+                    <input type="hidden" name="q" value={query} />
+                    {selectedBrands.length > 0 && (
+                      <input type="hidden" name="brands" value={selectedBrands.join(',')} />
+                    )}
+                    {selectedCategory && (
+                      <input type="hidden" name="category" value={selectedCategory} />
+                    )}
+                    <label className="text-[12px] uppercase tracking-wider" htmlFor="sort-select">
+                      Sort
+                    </label>
+                    <select
+                      id="sort-select"
+                      name="sort"
+                      defaultValue={sortMode}
+                      className="font-mono text-[12px] bg-[var(--color-elevated)] border border-[var(--color-border)] px-2 py-1 text-[var(--color-body)]"
+                    >
+                      {SORT_MODES.map((mode) => (
+                        <option key={mode} value={mode}>
+                          {SORT_LABELS[mode]}
+                        </option>
+                      ))}
+                    </select>
+                    <button
+                      type="submit"
+                      className="font-mono text-[11px] px-2 py-1 border border-[var(--color-border)] hover:bg-[var(--color-deep)]"
+                    >
+                      Apply
+                    </button>
+                  </form>
                 </div>
 
-                {topMatch && (
+                {showProductsSection && topMatch && (
                   <div className="mb-6">
                     <div className="font-mono text-[11px] tracking-[0.12em] uppercase text-[var(--color-muted)] mb-3">
                       Top product match
@@ -314,8 +600,8 @@ export default async function SearchPage({ searchParams }: Props) {
                   </div>
                 )}
 
-                {restProducts.length > 0 && (
-                  <div className="flex flex-col gap-3">
+                {showProductsSection && restProducts.length > 0 && (
+                  <div className="flex flex-col gap-3" data-search-results-list>
                     {restProducts.map((product) => {
                       const img = product.images[0]
                       return (
@@ -360,7 +646,79 @@ export default async function SearchPage({ searchParams }: Props) {
                   </div>
                 )}
 
-                {relatedDocs.length > 0 && (
+                {showProductsSection && totalPages > 1 && (
+                  <nav
+                    aria-label="Search results pagination"
+                    className="mt-8 flex justify-center items-center gap-1"
+                  >
+                    {currentPage > 1 ? (
+                      <Link
+                        href={filterUrl({ page: currentPage > 2 ? String(currentPage - 1) : undefined })}
+                        rel="prev"
+                        aria-label="Previous page"
+                        className="w-9 h-9 border border-[var(--color-border)] flex items-center justify-center font-mono text-[13px] text-[var(--color-muted)] hover:bg-[var(--color-deep)]"
+                      >
+                        ‹
+                      </Link>
+                    ) : (
+                      <span
+                        aria-disabled="true"
+                        className="w-9 h-9 border border-[var(--color-border)] flex items-center justify-center font-mono text-[13px] text-[var(--color-caption)] opacity-50 cursor-not-allowed"
+                      >
+                        ‹
+                      </span>
+                    )}
+
+                    {pageTokens.map((token, i) =>
+                      token === 'ellipsis' ? (
+                        <span
+                          key={`e-${i}`}
+                          aria-hidden="true"
+                          className="w-9 h-9 flex items-center justify-center font-mono text-[13px] text-[var(--color-caption)]"
+                        >
+                          …
+                        </span>
+                      ) : token === currentPage ? (
+                        <span
+                          key={token}
+                          aria-current="page"
+                          className="w-9 h-9 border border-[var(--color-accent)] bg-[var(--color-accent)] text-white flex items-center justify-center font-mono text-[13px] font-semibold"
+                        >
+                          {token}
+                        </span>
+                      ) : (
+                        <Link
+                          key={token}
+                          href={filterUrl({ page: token > 1 ? String(token) : undefined })}
+                          aria-label={`Page ${token}`}
+                          className="w-9 h-9 border border-[var(--color-border)] flex items-center justify-center font-mono text-[13px] text-[var(--color-muted)] hover:bg-[var(--color-deep)]"
+                        >
+                          {token}
+                        </Link>
+                      ),
+                    )}
+
+                    {currentPage < totalPages ? (
+                      <Link
+                        href={filterUrl({ page: String(currentPage + 1) })}
+                        rel="next"
+                        aria-label="Next page"
+                        className="w-9 h-9 border border-[var(--color-border)] flex items-center justify-center font-mono text-[13px] text-[var(--color-muted)] hover:bg-[var(--color-deep)]"
+                      >
+                        ›
+                      </Link>
+                    ) : (
+                      <span
+                        aria-disabled="true"
+                        className="w-9 h-9 border border-[var(--color-border)] flex items-center justify-center font-mono text-[13px] text-[var(--color-caption)] opacity-50 cursor-not-allowed"
+                      >
+                        ›
+                      </span>
+                    )}
+                  </nav>
+                )}
+
+                {showDatasheetsSection && (
                   <div className="mt-8 pt-6 border-t border-[var(--color-border)]">
                     <div className="font-mono text-[11px] tracking-[0.12em] uppercase text-[var(--color-muted)] mb-4">
                       Datasheets &amp; PDFs
@@ -389,6 +747,60 @@ export default async function SearchPage({ searchParams }: Props) {
                             Download ↓
                           </a>
                         </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
+                {showArticlesSection && (
+                  <div className="mt-8 pt-6 border-t border-[var(--color-border)]">
+                    <div className="font-mono text-[11px] tracking-[0.12em] uppercase text-[var(--color-muted)] mb-4">
+                      From the blog
+                    </div>
+                    <div className="flex flex-col gap-3">
+                      {blogPosts.map((post) => (
+                        <Link
+                          key={post.id}
+                          href={`/blog/${post.slug}`}
+                          className="grid grid-cols-[120px_1fr] gap-4 p-3.5 border border-[var(--color-border)] bg-[var(--color-elevated)] hover:border-[var(--color-body)] transition-colors"
+                        >
+                          <div className="aspect-[4/3] bg-[var(--color-deep)] border border-[var(--color-border)] relative overflow-hidden">
+                            {post.hero ? (
+                              <Image
+                                src={mediaUrl(post.hero.storagePath)}
+                                alt={post.title}
+                                fill
+                                className="object-cover"
+                                sizes="120px"
+                              />
+                            ) : (
+                              <div className="absolute inset-0 grid place-items-center font-mono text-[9px] text-[var(--color-muted)]">
+                                BLOG
+                              </div>
+                            )}
+                          </div>
+                          <div>
+                            <div className="font-mono text-[11px] tracking-[0.08em] uppercase text-[var(--color-muted)] mb-1">
+                              Article
+                              {post.publishedAt && (
+                                <>
+                                  {' · '}
+                                  {new Date(post.publishedAt).toLocaleDateString('en-GB', {
+                                    day: 'numeric',
+                                    month: 'short',
+                                    year: 'numeric',
+                                  })}
+                                </>
+                              )}
+                            </div>
+                            <h3 className="font-semibold text-[15px] mb-1.5 leading-snug">{post.title}</h3>
+                            {post.excerpt && (
+                              <p className="text-[12px] text-[var(--color-muted)] leading-[1.5] line-clamp-2">
+                                {post.excerpt}
+                              </p>
+                            )}
+                          </div>
+                        </Link>
                       ))}
                     </div>
                   </div>

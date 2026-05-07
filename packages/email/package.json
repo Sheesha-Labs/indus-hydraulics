@@ -1,0 +1,20 @@
+{
+  "name": "@indus/email",
+  "version": "0.0.1",
+  "private": true,
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run --passWithNoTests"
+  },
+  "dependencies": {
+    "@indus/db": "workspace:^",
+    "resend": "^4.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "typescript": "^5.8.3",
+    "vitest": "^3.2.2"
+  }
+}

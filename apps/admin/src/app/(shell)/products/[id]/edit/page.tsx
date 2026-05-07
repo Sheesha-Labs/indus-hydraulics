@@ -86,6 +86,7 @@ export default async function EditProductPage({ params }: Props) {
           categoryId: product.categoryId,
           listPrice: product.listPrice ? product.listPrice.toString() : null,
           listPriceCurrency: product.listPriceCurrency,
+          compareAtPrice: product.compareAtPrice ? product.compareAtPrice.toString() : null,
           unitOfMeasure: product.unitOfMeasure,
           weightKg: product.weightKg ? product.weightKg.toString() : null,
           dimensionLengthMm: dims?.l ?? null,

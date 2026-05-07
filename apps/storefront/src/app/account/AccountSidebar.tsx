@@ -7,9 +7,15 @@ import { signOut } from 'next-auth/react'
 interface Props {
   userName: string
   userEmail: string
+  /** Live counts shown next to nav items. Pass 0 to hide the badge. */
+  counts?: {
+    quotes?: number
+    lists?: number
+    notifications?: number
+  }
 }
 
-export default function AccountSidebar({ userName, userEmail }: Props) {
+export default function AccountSidebar({ userName, userEmail, counts }: Props) {
   const pathname = usePathname()
 
   const initials = userName
@@ -25,6 +31,7 @@ export default function AccountSidebar({ userName, userEmail }: Props) {
 
   const navLink = (href: string, label: string, count?: number) => {
     const active = isActive(href)
+    const showCount = typeof count === 'number' && count > 0
     return (
       <Link
         href={href}
@@ -35,7 +42,7 @@ export default function AccountSidebar({ userName, userEmail }: Props) {
         }`}
       >
         {label}
-        {count !== undefined && (
+        {showCount && (
           <span
             className={`font-mono text-[11px] ${
               active ? 'text-[oklch(0.7_0_0)]' : 'text-[var(--color-caption)]'
@@ -61,22 +68,27 @@ export default function AccountSidebar({ userName, userEmail }: Props) {
         </div>
       </div>
 
+      {/*
+        Sidebar previously also linked to /account/orders, /account/datasheets,
+        /account/profile, /account/team — none of those routes exist yet, so
+        their entries were removed to stop the 404s. Re-add when the
+        corresponding feature lands. Hardcoded badge counts (7 / 4 / 23 / 5)
+        were also removed; counts here are now driven by `counts` prop, which
+        the layout fills from a single Prisma read.
+      */}
       <p className="font-mono text-[10px] tracking-[0.14em] text-[var(--color-caption)] px-3 pb-1.5 uppercase">
         Procurement
       </p>
       {navLink(`/account`, 'Dashboard')}
-      {navLink(`/account/quotes`, 'My quotes', 7)}
-      {navLink(`/account/lists`, 'Saved lists', 4)}
-      {navLink(`/account/orders`, 'Approved orders', 23)}
-      {navLink(`/account/datasheets`, 'Datasheet vault')}
+      {navLink(`/account/quotes`, 'My quotes', counts?.quotes)}
+      {navLink(`/account/lists`, 'Saved lists', counts?.lists)}
 
       <p className="font-mono text-[10px] tracking-[0.14em] text-[var(--color-caption)] px-3 pt-3.5 pb-1.5 uppercase">
         Account
       </p>
       {navLink(`/account/profile`, 'Profile')}
-      {navLink(`/account/team`, 'Company & team', 5)}
       {navLink(`/account/addresses`, 'Addresses')}
-      {navLink(`/account/notifications`, 'Notifications')}
+      {navLink(`/account/notifications`, 'Notifications', counts?.notifications)}
 
       <button
         onClick={() => signOut({ callbackUrl: `/sign-in` })}

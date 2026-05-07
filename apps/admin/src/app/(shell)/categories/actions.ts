@@ -29,7 +29,6 @@ async function uniqueSlug(base: string, ignoreId?: string): Promise<string> {
   }
 }
 
-const Locale = z.string().min(1).default('en')
 const OptionalUuid = z
   .string()
   .uuid()

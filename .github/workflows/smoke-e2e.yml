@@ -1,0 +1,74 @@
+name: Smoke E2E
+
+# Runs the storefront Playwright smoke suite against every successful
+# Production Vercel deployment of the storefront app. Catches the class
+# of bug where the build succeeds but the deployed URL is broken
+# (e.g. the /search 500 incident from 2026-05-04).
+#
+# Why production-only:
+#   Vercel Pro deployment protection auth-gates the deployment-specific
+#   URLs that `deployment_status.environment_url` returns for previews
+#   (`indus-hydraulics-xxx-projects.vercel.app`). The smoke runs from a
+#   GitHub Actions runner with no Vercel session and gets HTTP 401.
+#   The canonical production URL (`indus-hydraulics.vercel.app`) is
+#   public and routes to the latest production deploy, so we hit that
+#   directly. Preview-deploy smoke is deferred — wire a Vercel
+#   automation bypass token first.
+#
+# Admin deploys are skipped — auth-gated, needs a different suite.
+
+on:
+  deployment_status:
+
+jobs:
+  smoke:
+    name: smoke (production)
+    if: |
+      github.event.deployment_status.state == 'success' &&
+      github.event.deployment.environment == 'Production – indus-hydraulics'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout (commit being deployed)
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.deployment.sha }}
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9.15.0
+          run_install: false
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+
+      - name: Install dependencies
+        # --ignore-scripts skips the Prisma generate postinstall: smoke runs
+        # against the deployed URL so we don't need a local Prisma client.
+        run: pnpm install --frozen-lockfile --ignore-scripts
+
+      - name: Install Playwright Chromium
+        run: pnpm exec playwright install --with-deps chromium
+
+      - name: Run smoke E2E
+        env:
+          # Hit the canonical production URL, not the deployment-specific
+          # URL — see "Why production-only" comment above.
+          PLAYWRIGHT_BASE_URL: https://indus-hydraulics.vercel.app
+          PLAYWRIGHT_REUSE_SERVER: '1'
+        run: pnpm test:e2e
+
+      - name: Upload Playwright trace on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-trace-${{ github.event.deployment.sha }}
+          path: |
+            test-results/
+            playwright-report/
+          retention-days: 7
+          if-no-files-found: ignore

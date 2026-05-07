@@ -1,7 +1,6 @@
 'use client'
 
 import { useEffect, useRef, useState, useTransition } from 'react'
-import Link from 'next/link'
 import { useSearchParams } from 'next/navigation'
 import SeoEntityDrawer, { type SeoDrawerEntity } from '../../../../../components/seo/SeoEntityDrawer'
 import type { RecentMedia } from '../../../../../components/seo/OgImagePicker'
@@ -46,6 +45,7 @@ type Product = {
   categoryId: string | null
   listPrice: string | null
   listPriceCurrency: string
+  compareAtPrice: string | null
   unitOfMeasure: string
   weightKg: string | null
   dimensionLengthMm: number | null
@@ -198,9 +198,14 @@ export default function ProductEditorClient({
   const [savedAt, setSavedAt] = useState<string | null>(null)
 
   // Keep the local tab in sync if the URL changes via Inspector deep-link.
+  // The setState-in-effect rule fires here but this is the standard
+  // URL-sync pattern.
   useEffect(() => {
     const t = searchParams?.get('tab')
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     if (t && TABS.some((x) => x.id === t) && t !== tab) setTab(t as TabId)
+    // tab is intentionally excluded — the effect runs on URL changes only;
+    // including tab would cause an infinite loop.
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [searchParams])
 
@@ -542,6 +547,17 @@ function CommerceTab({
               className={inputCls + ' font-mono'}
             />
           </Field>
+          <Field label="Compare-at price">
+            <input
+              name="compareAtPrice"
+              type="number"
+              step="0.01"
+              min="0"
+              defaultValue={product.compareAtPrice ?? ''}
+              placeholder="MSRP / strike-through"
+              className={inputCls + ' font-mono'}
+            />
+          </Field>
           <Field label="Currency">
             <select name="listPriceCurrency" defaultValue={product.listPriceCurrency} className={selectCls}>
               <option value="USD">USD</option>
@@ -551,6 +567,8 @@ function CommerceTab({
               <option value="SAR">SAR</option>
             </select>
           </Field>
+        </div>
+        <div className="grid grid-cols-3 gap-4 mt-4">
           <Field label="Unit of measure">
             <select name="unitOfMeasure" defaultValue={product.unitOfMeasure} className={selectCls}>
               <option value="each">Each</option>
@@ -559,6 +577,9 @@ function CommerceTab({
               <option value="set">Set</option>
             </select>
           </Field>
+          <div className="col-span-2 text-[11px] text-[var(--color-muted)] flex items-end pb-2 leading-snug">
+            <p>Compare-at price renders as strike-through MSRP on the storefront when set <i>and</i> strictly greater than List price. Leave blank for no strike-through. Leave List price blank to show &ldquo;Request quote&rdquo; instead of a number.</p>
+          </div>
         </div>
       </Section>
 
@@ -1753,7 +1774,7 @@ function FaqsTab({
   return (
     <div className="flex flex-col gap-6 max-w-4xl">
       <p className="text-[12px] text-[var(--color-muted)]">
-        Author frequently-asked questions for this product. They render in order on the storefront's FAQ tab as collapsible Q+A pairs.
+        Author frequently-asked questions for this product. They render in order on the storefront&apos;s FAQ tab as collapsible Q+A pairs.
       </p>
       {faqs.length === 0 ? (
         <p className="text-[13px] text-[var(--color-muted)]">No FAQs yet — add the first one below.</p>

@@ -29,8 +29,6 @@ async function uniqueSlug(base: string, ignoreId?: string): Promise<string> {
   }
 }
 
-const Locale = z.string().min(1).default('en')
-
 const CreateBrandSchema = z.object({
   name: z.string().trim().min(1, 'Name is required').max(120),
   slug: z.string().trim().max(80).optional().transform((v) => (v && v.length ? v : '')),

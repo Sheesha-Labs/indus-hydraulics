@@ -15,6 +15,11 @@
     "INNGEST_EVENT_KEY",
     "INNGEST_SIGNING_KEY",
     "ANTHROPIC_API_KEY",
+    "SENTRY_DSN",
+    "NEXT_PUBLIC_SENTRY_DSN",
+    "SENTRY_ORG",
+    "SENTRY_PROJECT",
+    "SENTRY_AUTH_TOKEN",
     "NODE_ENV"
   ],
   "tasks": {

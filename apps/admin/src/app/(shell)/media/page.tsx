@@ -73,7 +73,7 @@ export default async function MediaLibraryPage({ params, searchParams }: Props) 
           <div className="py-16 border border-dashed border-[var(--color-border)] text-center">
             <p className="text-[var(--color-muted)] mb-1">No media assets yet.</p>
             <p className="font-mono text-[11px] text-[var(--color-caption)]">
-              Upload images and documents from a product's Images / Documents tab.
+              Upload images and documents from a product&apos;s Images / Documents tab.
             </p>
           </div>
         ) : (

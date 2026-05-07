@@ -9,7 +9,9 @@ import {
   type CompareProductInput,
   type CompareTemplate,
   type CompareValidationResult,
+  type CurrencyCode,
 } from '@indus/domain'
+import { ProductPrice } from '@indus/ui'
 import { mediaUrl } from '../../lib/media'
 
 type Props = {
@@ -165,9 +167,6 @@ export default async function ComparePage({ searchParams }: Props) {
                   : stockState === 'low'
                     ? `Low · ${product.stockQty} units${product.stockWarehouse ? ` · ${product.stockWarehouse}` : ''}`
                     : 'Lead time only'
-                const priceDisplay = product.listPrice
-                  ? formatCurrency(Number(product.listPrice), product.listPriceCurrency)
-                  : '—'
                 return (
                   <div key={product.id} className="border-l border-[var(--color-border)] bg-[var(--color-elevated)] p-5 relative">
                     <Link
@@ -189,7 +188,16 @@ export default async function ComparePage({ searchParams }: Props) {
                     )}
                     <h3 className="text-[15px] font-semibold leading-snug mb-1.5 tracking-[-0.01em]">{product.title}</h3>
                     <div className="font-mono text-[11px] text-[var(--color-muted)] mb-2">{product.sku}</div>
-                    <div className="font-mono text-[18px] font-semibold mb-1.5">{priceDisplay}</div>
+                    <div className="mb-1.5">
+                      <ProductPrice
+                        listPrice={product.listPrice == null ? null : Number(product.listPrice)}
+                        currency={product.listPriceCurrency as CurrencyCode}
+                        compareAtPrice={product.compareAtPrice == null ? null : Number(product.compareAtPrice)}
+                        layout="inline"
+                        size="lg"
+                        quoteCta="Quote on request"
+                      />
+                    </div>
                     <div className="text-[11px] flex items-center gap-1.5 text-[var(--color-muted)] mb-3.5">
                       <span className="w-1.5 h-1.5 rounded-full" style={{ background: stockColor }} aria-hidden="true" />
                       {stockLabel}
@@ -420,14 +428,3 @@ function ordinal(n: number): string {
   return `${n}${s[(v - 20) % 10] ?? s[v] ?? s[0]}`
 }
 
-function formatCurrency(value: number, currency: string): string {
-  try {
-    return new Intl.NumberFormat('en-US', {
-      style: 'currency',
-      currency,
-      maximumFractionDigits: 0,
-    }).format(value)
-  } catch {
-    return `${value}`
-  }
-}

@@ -22,6 +22,9 @@ export default function QuoteBuilderClient({ isSignedIn }: Props) {
   const [mounted, setMounted] = useState(false)
 
   useEffect(() => {
+    // SSR-safe hydration: localStorage is only available client-side.
+    // Read once on mount and flip the gate.
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setMounted(true)
     try {
       const raw = localStorage.getItem('quote_items')
@@ -218,7 +221,7 @@ export default function QuoteBuilderClient({ isSignedIn }: Props) {
             </div>
             <hr className="border-[var(--color-border-2)] my-1" />
             <div className="flex justify-between text-[15px] font-semibold">
-              <span>Engineer's quote</span>
+              <span>Engineer&apos;s quote</span>
               <span className="font-mono">within 4h</span>
             </div>
           </div>
@@ -242,7 +245,7 @@ export default function QuoteBuilderClient({ isSignedIn }: Props) {
           {/* Why a quote */}
           <div className="px-5 py-4 bg-[var(--color-surface)] text-[12px] text-[var(--color-muted)] leading-[1.6]">
             <b className="text-[var(--color-primary)]">Why a quote, not a cart?</b><br />
-            Industrial pricing depends on lead time, freight, customs, and which warehouse stocks the SKU. We'd rather give you a real number than a guess.
+            Industrial pricing depends on lead time, freight, customs, and which warehouse stocks the SKU. We&apos;d rather give you a real number than a guess.
           </div>
         </div>
       </aside>

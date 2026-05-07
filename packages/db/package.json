@@ -10,14 +10,20 @@
     "db:push": "prisma db push",
     "db:migrate": "prisma migrate dev",
     "db:seed": "tsx src/seed.ts",
-    "db:studio": "prisma studio"
+    "db:import": "tsx src/import/cli.ts",
+    "db:studio": "prisma studio",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@prisma/client": "^6.7.0"
+    "@indus/domain": "workspace:^",
+    "@prisma/client": "^6.7.0",
+    "zod": "^4.4.1"
   },
   "devDependencies": {
     "prisma": "^6.19.3",
     "tsx": "^4.21.0",
-    "typescript": "^5.8.3"
+    "typescript": "^5.8.3",
+    "vitest": "^3.2.2"
   }
 }

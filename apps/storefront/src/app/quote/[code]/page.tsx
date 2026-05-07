@@ -5,12 +5,13 @@ import Image from 'next/image'
 import { auth } from '../../../lib/auth'
 import { db } from '@indus/db'
 import { mediaUrl } from '../../../lib/media'
+import { verifyQuoteAccessToken } from '@indus/domain'
 
 export const metadata: Metadata = { title: 'RFQ Status' }
 
 type Props = {
   params: Promise<{ code: string }>
-  searchParams: Promise<{ confirmed?: string }>
+  searchParams: Promise<{ confirmed?: string; token?: string }>
 }
 
 const URGENCY_LABELS: Record<string, string> = {
@@ -25,24 +26,43 @@ const URGENCY_COLORS: Record<string, string> = {
   plant_down: 'text-[oklch(0.5_0.18_25)] bg-[oklch(0.97_0.04_25)]',
 }
 
+// Each timeline step is associated with the AccountActivity verb that
+// records when it was reached. The page reads the most recent matching
+// activity row and surfaces the timestamp next to the label.
 const TIMELINE_STEPS = [
-  { key: 'submitted', label: 'Received', desc: 'auto-acknowledged · confirmation email sent' },
-  { key: 'engineer_review', label: 'Engineer reviewing', desc: 'checking stock · preparing quote' },
-  { key: 'quote_sent', label: 'Quote PDF prepared', desc: 'sent for your approval' },
-  { key: 'accepted', label: 'Approved', desc: 'order created' },
+  { key: 'submitted', label: 'Received', desc: 'auto-acknowledged · confirmation email sent', verb: 'submitted_rfq' },
+  { key: 'engineer_review', label: 'Engineer reviewing', desc: 'checking stock · preparing quote', verb: 'review_started' },
+  { key: 'quote_sent', label: 'Quote PDF prepared', desc: 'sent for your approval', verb: 'quote_sent' },
+  { key: 'accepted', label: 'Approved', desc: 'order being placed', verb: 'quote_accepted' },
+  { key: 'order_created', label: 'Order placed', desc: 'allocated · being prepared for dispatch', verb: 'order_placed' },
+  { key: 'shipped', label: 'Shipped', desc: 'in transit', verb: 'order_shipped' },
+  { key: 'delivered', label: 'Delivered', desc: 'received at destination', verb: 'order_delivered' },
 ] as const
 
-const STATUS_ORDER = ['submitted', 'engineer_review', 'engineer_questions_pending', 'quote_sent', 'accepted', 'order_created']
+const STATUS_ORDER = [
+  'submitted',
+  'engineer_review',
+  'engineer_questions_pending',
+  'quote_sent',
+  'accepted',
+  'order_created',
+  'shipped',
+  'delivered',
+]
 
 function getStepReached(status: string): number {
   if (status === 'draft') return -1
   const idx = STATUS_ORDER.indexOf(status)
   if (idx === -1) return -1
-  // Map to timeline steps
+  // Map status to timeline-step index. engineer_questions_pending collapses
+  // back into the engineer_review step (same dot, same active state).
   if (idx === 0) return 0 // submitted
   if (idx === 1 || idx === 2) return 1 // engineer_review / questions
   if (idx === 3) return 2 // quote_sent
-  return 3 // accepted+
+  if (idx === 4) return 3 // accepted
+  if (idx === 5) return 4 // order_created
+  if (idx === 6) return 5 // shipped
+  return 6 // delivered
 }
 
 export default async function RfqStatusPage({ params, searchParams }: Props) {
@@ -50,7 +70,14 @@ export default async function RfqStatusPage({ params, searchParams }: Props) {
   const sp = await searchParams
   const session = await auth()
 
-  if (!session?.user?.accountId) {
+  // Two valid paths to view this RFQ:
+  //  1. Logged-in account contact whose accountId matches.
+  //  2. Holder of a signed access token (from the quote_sent email link),
+  //     so a forwarded recipient can view + download the PDF without an account.
+  const tokenCheck = sp.token ? verifyQuoteAccessToken(sp.token, code) : null
+  const hasValidToken = tokenCheck?.valid === true
+
+  if (!session?.user?.accountId && !hasValidToken) {
     redirect(`/sign-in?next=/quote/${code}`)
   }
 
@@ -70,14 +97,35 @@ export default async function RfqStatusPage({ params, searchParams }: Props) {
         orderBy: { position: 'asc' },
       },
       shipToAddress: true,
-      quotes: { orderBy: { sentAt: 'desc' }, take: 1, include: { pdfMedia: true } },
+      quotes: { orderBy: { revision: 'desc' }, include: { pdfMedia: true } },
     },
   })
 
-  if (!rfq || rfq.accountId !== session.user.accountId) notFound()
+  if (!rfq) notFound()
+
+  // Pull recent activity rows so we can show timestamps under each completed
+  // timeline step (e.g. "Shipped · 12 May 2026"). We filter to the verbs
+  // recorded by admin's updateRfqStatus action.
+  const stepVerbs = TIMELINE_STEPS.map((s) => s.verb)
+  const stepActivity = await db.accountActivity.findMany({
+    where: {
+      accountId: rfq.accountId,
+      verb: { in: stepVerbs as unknown as string[] },
+      payload: { path: ['rfqId'], equals: rfq.id },
+    },
+    orderBy: { createdAt: 'desc' },
+    select: { verb: true, createdAt: true },
+  })
+  // First-seen wins (we ordered desc and overwrite, so the *earliest* date
+  // for each verb survives — i.e. when the step was first reached).
+  const stepTimestamps = new Map<string, Date>()
+  for (const row of stepActivity) {
+    stepTimestamps.set(row.verb, row.createdAt)
+  }
+  // Logged-in users must own the account; signed-link viewers bypass this.
+  if (!hasValidToken && rfq.accountId !== session?.user?.accountId) notFound()
 
   const isTerminal = ['declined', 'expired', 'cancelled'].includes(rfq.status)
-  const isConfirmation = sp.confirmed === '1'
   const stepReached = getStepReached(rfq.status)
   const urgencyLabel = URGENCY_LABELS[rfq.urgency] ?? rfq.urgency
   const urgencyColor = URGENCY_COLORS[rfq.urgency] ?? URGENCY_COLORS.routine!
@@ -164,8 +212,21 @@ export default async function RfqStatusPage({ params, searchParams }: Props) {
                     </div>
                     {/* Label */}
                     <div className={`pb-6 ${pending ? 'text-[var(--color-muted)]' : ''}`}>
-                      <b className={pending ? 'text-[var(--color-body)]' : ''}>{step.label}</b>
+                      <div className="flex items-baseline gap-2 flex-wrap">
+                        <b className={pending ? 'text-[var(--color-body)]' : ''}>{step.label}</b>
+                        {(done || active) && stepTimestamps.get(step.verb) && (
+                          <span className="font-mono text-[11px] text-[var(--color-muted)]">
+                            {new Date(stepTimestamps.get(step.verb)!).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })}
+                          </span>
+                        )}
+                      </div>
                       <div className="font-mono text-[11px] text-[var(--color-muted)] mt-0.5">{active ? 'In progress · ' : ''}{step.desc}</div>
+                      {step.key === 'shipped' && (done || active) && rfq.trackingCarrier && (
+                        <div className="font-mono text-[11px] text-[var(--color-body)] mt-1">
+                          {rfq.trackingCarrier}
+                          {rfq.trackingNumber ? ` · ${rfq.trackingNumber}` : ''}
+                        </div>
+                      )}
                     </div>
                   </div>
                 )
@@ -228,18 +289,43 @@ export default async function RfqStatusPage({ params, searchParams }: Props) {
         ))}
       </div>
 
-      {/* ── Quote PDF ──────────────────────────────────────────── */}
-      {rfq.quotes.length > 0 && rfq.quotes[0]?.pdfMedia && (
+      {/* ── Quote PDF (latest + previous revisions) ─────────────── */}
+      {rfq.quotes.length > 0 && (
         <div className="border border-[var(--color-border)] bg-[var(--color-elevated)] p-5 mb-8">
-          <h3 className="font-mono text-[10px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-3">Quote PDF ready</h3>
-          <a
-            href={rfq.quotes[0]!.pdfMedia!.storagePath}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 h-9 px-4 border border-[var(--color-accent)] text-[var(--color-accent)] font-mono text-[12px] hover:bg-[var(--color-accent)] hover:text-white transition-colors"
-          >
-            Download quote PDF ↓
-          </a>
+          <h3 className="font-mono text-[10px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1">
+            Quotation {rfq.quotes.length > 1 ? '(revisions)' : 'ready'}
+          </h3>
+          <p className="text-[12px] text-[var(--color-muted)] mb-4">
+            To accept, please reply to the email we sent you confirming the order. The PDF below is identical to the attachment.
+          </p>
+          <div className="space-y-2">
+            {rfq.quotes.map((q) => (
+              <div key={q.id} className="flex items-center justify-between gap-4 py-2 border-b border-[var(--color-border)] last:border-0">
+                <div>
+                  <div className="font-mono text-[13px] text-[var(--color-primary)]">
+                    {q.code}
+                    {q.revision > 1 ? <span className="text-[var(--color-muted)] ml-2">R{q.revision}</span> : null}
+                  </div>
+                  <div className="font-mono text-[10px] text-[var(--color-muted)] mt-0.5">
+                    Sent {q.sentAt ? new Date(q.sentAt).toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' }) : '—'}
+                    {q.expiresAt ? ` · valid until ${new Date(q.expiresAt).toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' })}` : ''}
+                  </div>
+                </div>
+                {q.pdfMedia ? (
+                  <a
+                    href={`/api/quotes/${encodeURIComponent(q.code)}/pdf${hasValidToken && sp.token ? `?token=${encodeURIComponent(sp.token)}` : ''}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 h-9 px-4 border border-[var(--color-accent)] text-[var(--color-accent)] font-mono text-[12px] hover:bg-[var(--color-accent)] hover:text-white transition-colors whitespace-nowrap"
+                  >
+                    Download PDF ↓
+                  </a>
+                ) : (
+                  <span className="font-mono text-[11px] text-[var(--color-muted)]">no PDF</span>
+                )}
+              </div>
+            ))}
+          </div>
         </div>
       )}
 

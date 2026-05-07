@@ -32,6 +32,9 @@ export default function RfqSubmitForm({ addresses }: Props) {
   const formRef = useRef<HTMLFormElement>(null)
 
   useEffect(() => {
+    // SSR-safe hydration: localStorage is only available client-side.
+    // Read once on mount and flip the gate.
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setMounted(true)
     try {
       const raw = localStorage.getItem('quote_items')

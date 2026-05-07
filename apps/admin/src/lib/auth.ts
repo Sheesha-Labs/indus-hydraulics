@@ -1,5 +1,6 @@
 import NextAuth, { type DefaultSession } from 'next-auth'
 import Credentials from 'next-auth/providers/credentials'
+import { cache } from 'react'
 import { z } from 'zod'
 
 declare module 'next-auth' {
@@ -16,7 +17,7 @@ const signInSchema = z.object({
   password: z.string().min(1),
 })
 
-export const { handlers, auth, signIn, signOut } = NextAuth({
+const nextAuth = NextAuth({
   trustHost: true,
   providers: [
     Credentials({
@@ -38,7 +39,7 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
 
         if (!staffUser || !staffUser.isActive) return null
 
-        const valid = verify(parsed.data.password, staffUser.passwordHash ?? '')
+        const valid = await verify(parsed.data.password, staffUser.passwordHash ?? '')
         if (!valid) return null
 
         return {
@@ -77,3 +78,10 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
     error: '/sign-in',
   },
 })
+
+export const { handlers, signIn, signOut } = nextAuth
+
+// Wrap auth() in React's per-request cache so layout + page calling it
+// during the same render only decode the JWT once. NextAuth's auth() is
+// idempotent within a request, so this is safe.
+export const auth = cache(nextAuth.auth)

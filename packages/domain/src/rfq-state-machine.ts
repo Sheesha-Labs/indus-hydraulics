@@ -43,16 +43,24 @@ const TRANSITIONS: TransitionMap = {
   engineer_review: ['engineer_questions_pending', 'quote_sent', 'cancelled'],
   engineer_questions_pending: ['engineer_review', 'cancelled'],
   quote_sent: ['accepted', 'declined', 'expired', 'cancelled'],
-  accepted: ['order_created'],
-  // Successful and unsuccessful terminal states — no outgoing transitions.
-  order_created: [],
+  // Lightweight order/fulfilment tracking: admin manually advances state
+  // through accepted → order_created → shipped → delivered. No carrier
+  // integration, no Order row — the state on the RFQ itself plus the
+  // AccountActivity audit log is enough at current volume. The intermediate
+  // `fulfilling` state is intentionally skipped for simplicity (collapse
+  // into `order_created`); add it back if engineers want a dedicated
+  // "preparing/picking" stage.
+  accepted: ['order_created', 'cancelled'],
+  order_created: ['shipped', 'cancelled'],
+  shipped: ['delivered'],
+  // Terminal states — no outgoing transitions.
+  delivered: [],
   declined: [],
   expired: [],
   cancelled: [],
-  // Reserved for the future order/fulfilment domain. Currently unreachable.
+  // Reserved for the future order/fulfilment + accounting domain. Currently
+  // unreachable from the active flow.
   fulfilling: [],
-  shipped: [],
-  delivered: [],
   invoiced: [],
   paid: [],
 }
@@ -72,12 +80,13 @@ export function getValidTransitions(from: RfqStatus): RfqStatus[] {
 }
 
 /**
- * Statuses that end the RFQ lifecycle. `order_created` is included because the
- * order/fulfilment domain is not yet wired — once it is, `order_created` should
- * be removed from this list and the reserved transitions populated.
+ * Statuses that end the RFQ lifecycle. `delivered` is the successful
+ * terminal state once order tracking is wired (PR #44 — 2026-05-04);
+ * `order_created` and `shipped` are no longer terminal because the admin
+ * can advance them forward.
  */
 export const TERMINAL_STATES: RfqStatus[] = [
-  'order_created',
+  'delivered',
   'declined',
   'expired',
   'cancelled',
@@ -92,6 +101,7 @@ export const EMAIL_NOTIFICATION_STATUSES: RfqStatus[] = [
   'submitted',
   'quote_sent',
   'order_created',
+  'expired',
 ]
 
 export function shouldNotifyCustomer(status: RfqStatus): boolean {

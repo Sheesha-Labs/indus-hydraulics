@@ -10,7 +10,7 @@ export default function AdminShellError({
   reset: () => void
 }) {
   useEffect(() => {
-    // eslint-disable-next-line no-console
+     
     console.error('[admin][shell-error]', error)
   }, [error])
 
