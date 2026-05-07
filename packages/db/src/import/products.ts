@@ -343,6 +343,27 @@ export async function syncSpecs(
   let updated = 0
   let skipped = 0
 
+  // Fetch existing specs for this product in ONE round trip (instead of one
+  // findFirst per spec) so we can batch the writes below.
+  const existing = await tx.productSpec.findMany({
+    where: { productId },
+    select: { id: true, templateFieldId: true },
+  })
+  const existingByFieldId = new Map(existing.map((s) => [s.templateFieldId, s.id]))
+
+  type RowToInsert = {
+    productId: string
+    templateFieldId: string
+    group: string
+    label: string
+    value: string
+    unit: string | null
+    position: number
+    isFilterable: boolean
+  }
+  const toInsert: RowToInsert[] = []
+  const toUpdate: { id: string; data: Omit<RowToInsert, 'productId' | 'templateFieldId'> }[] = []
+
   for (const [key, raw] of Object.entries(values)) {
     const field = fieldByKey.get(key)
     if (!field) {
@@ -363,11 +384,6 @@ export async function syncSpecs(
       continue
     }
 
-    const existingSpec = await tx.productSpec.findFirst({
-      where: { productId, templateFieldId: field.id },
-      select: { id: true },
-    })
-
     const data = {
       group: field.group ?? 'General',
       label: field.label,
@@ -377,19 +393,29 @@ export async function syncSpecs(
       isFilterable: field.isQuickSpec || field.isKeyFeature,
     }
 
-    if (existingSpec) {
+    const existingId = existingByFieldId.get(field.id)
+    if (existingId) {
       if (mode === 'add-only') {
         skipped += 1
       } else {
-        await tx.productSpec.update({ where: { id: existingSpec.id }, data })
-        updated += 1
+        toUpdate.push({ id: existingId, data })
       }
     } else {
-      await tx.productSpec.create({
-        data: { productId, templateFieldId: field.id, ...data },
-      })
-      created += 1
+      toInsert.push({ productId, templateFieldId: field.id, ...data })
     }
+  }
+
+  // Bulk-insert all new specs in one round trip.
+  if (toInsert.length > 0) {
+    await tx.productSpec.createMany({ data: toInsert })
+    created = toInsert.length
+  }
+
+  // Updates are a rarer path (overwrite-edits mode against existing specs);
+  // keep them as individual UPDATEs since they each target a different row.
+  for (const u of toUpdate) {
+    await tx.productSpec.update({ where: { id: u.id }, data: u.data })
+    updated += 1
   }
 
   return { created, updated, skipped }

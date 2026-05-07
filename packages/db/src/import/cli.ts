@@ -115,6 +115,13 @@ async function runImport(
   try {
     await db.$transaction(
       async (tx) => {
+        // Disable PostgreSQL's per-statement timeout for the duration of this
+        // transaction. Supabase's default `statement_timeout` (8s) is too tight
+        // for catalogue imports that include hundreds of products. Scoped to
+        // this tx via `SET LOCAL` so other connections are unaffected.
+        await tx.$executeRawUnsafe('SET LOCAL statement_timeout = 0')
+        await tx.$executeRawUnsafe('SET LOCAL idle_in_transaction_session_timeout = 0')
+
         // 1. Brands
         for (const brand of batch.brands) {
           const r = await upsertBrand(brand, tx)
@@ -171,11 +178,13 @@ async function runImport(
         }
       },
       {
-        // Catalogue imports can touch hundreds of products + their specs; the
-        // default 5s timeout is too tight. 5 minutes is generous but safe —
-        // long-running INSERTs would surface as a real bug.
+        // Catalogue imports can touch hundreds of products + their specs.
+        // Default to 15 minutes — large batches (e.g. the 211-product
+        // hydraulic-adapters import) can take several minutes against
+        // a remote pooled DB. Override with INDUS_IMPORT_TIMEOUT_MS for
+        // even larger batches.
         maxWait: 60_000,
-        timeout: 300_000,
+        timeout: Number(process.env.INDUS_IMPORT_TIMEOUT_MS ?? 900_000),
       },
     )
   } catch (err) {
