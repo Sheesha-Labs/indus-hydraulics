@@ -270,9 +270,6 @@ export default function SiteHeaderClient({
                       onClick={closeDropdownImmediate}
                     >
                       <span>{cat.label}</span>
-                      {cat.productCount != null ? (
-                        <span className="font-mono text-[11px] text-[var(--color-caption)]">{cat.productCount}</span>
-                      ) : null}
                     </Link>
                   ))}
                 </div>
@@ -430,9 +427,6 @@ export default function SiteHeaderClient({
                     onClick={() => setMobileOpen(false)}
                   >
                     <span>{cat.label}</span>
-                    {cat.productCount != null ? (
-                      <span className="font-mono text-[10px] text-[var(--color-caption)]">{cat.productCount}</span>
-                    ) : null}
                   </Link>
                 ))}
               </div>
