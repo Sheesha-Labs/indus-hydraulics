@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { db } from '@indus/db'
+import HomepageHeroPanel, { type HeroSlideRow } from './HomepageHeroPanel'
 
 export const metadata: Metadata = { title: 'CMS — Indus Admin' }
 
@@ -14,17 +15,26 @@ export default async function CmsPage({ params, searchParams }: Props) {
   const sp = await searchParams
   const tab = sp.tab ?? 'blog'
 
-  const [posts, pages] = await Promise.all([
+  const [posts, pages, heroSlides] = await Promise.all([
     db.blogPost.findMany({
       include: { author: { select: { name: true } } },
       orderBy: { publishedAt: 'desc' },
     }),
     db.cmsPage.findMany({ orderBy: { updatedAt: 'desc' } }),
+    db.homepageHeroSlide.findMany({
+      orderBy: { position: 'asc' },
+      include: {
+        media: {
+          select: { id: true, storagePath: true, originalFilename: true, width: true, height: true },
+        },
+      },
+    }) as Promise<HeroSlideRow[]>,
   ])
 
   const TABS = [
     { key: 'blog', label: `Blog Posts (${posts.length})` },
     { key: 'pages', label: `Static Pages (${pages.length})` },
+    { key: 'hero', label: `Homepage Hero (${heroSlides.length})` },
   ]
 
   return (
@@ -137,6 +147,8 @@ export default async function CmsPage({ params, searchParams }: Props) {
           )}
         </div>
       )}
+
+      {tab === 'hero' && <HomepageHeroPanel slides={heroSlides} />}
     </div>
   )
 }

@@ -723,6 +723,7 @@ model Media {
   importJobSources   ImportJob[]
   navMenuItemPromos  NavMenuItem[]     @relation("NavMenuItemPromo")
   storeSettingsLogos StoreSettings[]   @relation("StoreSettingsLogo")
+  homepageHeroSlides HomepageHeroSlide[]
 
   @@map("media")
 }
@@ -1249,6 +1250,36 @@ model StoreSettings {
   updatedAt DateTime @updatedAt
 
   @@map("store_settings")
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// HOMEPAGE HERO CAROUSEL
+//
+// Ordered list of slides rendered on the storefront homepage hero (right-side
+// visual, replacing the static "exploded view" placeholder). Each slide
+// references a Media row in the existing public images bucket. The storefront
+// loader uses unstable_cache + revalidateTag('homepage-hero') so admin
+// mutations invalidate the cached query immediately.
+//
+// `position` is server-managed (admin reorder shuffles the values). `isPublished`
+// lets editors stage a slide without making it live; the storefront filters on
+// it. `alt` overrides the underlying Media.alt so the same Media asset can be
+// reused in other contexts with different alt text.
+// ─────────────────────────────────────────────────────────────────────────────
+
+model HomepageHeroSlide {
+  id          String   @id @default(uuid())
+  mediaId     String
+  media       Media    @relation(fields: [mediaId], references: [id], onDelete: Restrict)
+  position    Int      @default(0)
+  alt         String?
+  isPublished Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([position])
+  @@index([isPublished, position])
+  @@map("homepage_hero_slides")
 }
 
 // Audit log of every transactional email sent. Used for support, debugging,

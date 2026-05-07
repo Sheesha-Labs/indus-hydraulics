@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { unstable_cache } from 'next/cache'
 import { db } from '@indus/db'
 import HomeNewsletterForm from '../components/HomeNewsletterForm'
+import HomeHeroCarousel, { type HomeHeroSlide } from '../components/HomeHeroCarousel'
 
 export const metadata: Metadata = {
   title: 'Indus Hydraulics — Industrial Components for Hydraulic Systems',
@@ -75,14 +76,52 @@ const getPublishedBrandCount = unstable_cache(
   { revalidate: 300, tags: ['brands'] },
 )
 
+// Hero carousel slides (right-side visual). Cached longer than products
+// because slides change infrequently; admin mutations bust the tag.
+const getHomeHeroSlides = unstable_cache(
+  async (): Promise<HomeHeroSlide[]> => {
+    const rows = await db.homepageHeroSlide.findMany({
+      where: { isPublished: true },
+      orderBy: { position: 'asc' },
+      include: {
+        media: {
+          select: {
+            storagePath: true,
+            width: true,
+            height: true,
+            alt: true,
+            originalFilename: true,
+            createdAt: true,
+          },
+        },
+      },
+    })
+    return rows.map((r) => ({
+      id: r.id,
+      src: r.media.storagePath,
+      // Fall back to 1200x1100 (the placeholder reference dims) if Media row
+      // didn't capture intrinsic size — next/image still works without CLS as
+      // long as the ratio is roughly correct.
+      width: r.media.width ?? 1200,
+      height: r.media.height ?? 1100,
+      alt: r.alt ?? r.media.alt ?? '',
+      originalFilename: r.media.originalFilename,
+      createdAtIso: r.media.createdAt.toISOString(),
+    }))
+  },
+  ['home-hero-slides'],
+  { revalidate: 600, tags: ['homepage-hero'] },
+)
+
 export default async function HomePage() {
-  const [categories, brands, featuredProducts, blogPosts, activeSkuCount, publishedBrandCount] = await Promise.all([
+  const [categories, brands, featuredProducts, blogPosts, activeSkuCount, publishedBrandCount, heroSlides] = await Promise.all([
     getHomeCategories(),
     getHomeBrands(),
     getHomeFeaturedProducts(),
     getHomeBlogPosts(),
     getActiveSkuCount(),
     getPublishedBrandCount(),
+    getHomeHeroSlides(),
   ])
 
   const yearsInBusiness = new Date().getFullYear() - 2003
@@ -173,47 +212,54 @@ export default async function HomePage() {
             </div>
           </div>
 
-          {/* Right visual */}
+          {/* Right visual — carousel if hero slides exist, otherwise the
+              static "exploded view" placeholder. The placeholder is kept as
+              the empty-state so /admin can land before any slide is uploaded
+              without breaking the homepage. */}
           <div className="hidden lg:block">
-            <div className="relative bg-[var(--color-surface)] border border-[var(--color-border)] overflow-hidden" style={{ aspectRatio: '1.05 / 1' }}>
-              {/* Grid overlay */}
-              <div
-                className="absolute inset-0 opacity-[0.04]"
-                style={{
-                  backgroundImage:
-                    'linear-gradient(to right, currentColor 1px, transparent 1px), linear-gradient(to bottom, currentColor 1px, transparent 1px)',
-                  backgroundSize: '40px 40px',
-                }}
-              />
-              {/* Floating callouts */}
-              <div className="absolute top-8 left-8 bg-[var(--color-primary)] text-[var(--color-surface)] font-mono text-[11px] tracking-[0.06em] px-3 py-2 flex items-center gap-2">
-                <span className="w-1.5 h-1.5 rounded-full bg-[var(--color-accent)] shrink-0" />
-                EXPLODED VIEW · 01
-              </div>
-              <div className="absolute top-1/2 right-6 -translate-y-1/2 bg-[var(--color-primary)] text-[var(--color-surface)] font-mono text-[11px] tracking-[0.06em] px-3 py-2 flex items-center gap-2">
-                <span className="w-1.5 h-1.5 rounded-full bg-[var(--color-accent)] shrink-0" />
-                P-MAX 350 BAR
-              </div>
-              <div className="absolute bottom-20 right-8 bg-[var(--color-primary)] text-[var(--color-surface)] font-mono text-[11px] tracking-[0.06em] px-3 py-2 flex items-center gap-2">
-                <span className="w-1.5 h-1.5 rounded-full bg-[var(--color-accent)] shrink-0" />
-                CETOP-3 · NG6
-              </div>
-              {/* Placeholder image area */}
-              <div className="absolute inset-6 border border-dashed border-[var(--color-muted)] flex items-center justify-center">
-                <div className="text-center">
-                  <p className="font-mono text-[11px] text-[var(--color-caption)] leading-[1.7]">
-                    Hero render<br />
-                    &ldquo;Cutaway of axial piston pump&rdquo;<br />
-                    1200×1100 · transparent PNG
-                  </p>
+            {heroSlides.length > 0 ? (
+              <HomeHeroCarousel slides={heroSlides} />
+            ) : (
+              <div className="relative bg-[var(--color-surface)] border border-[var(--color-border)] overflow-hidden" style={{ aspectRatio: '1.05 / 1' }}>
+                {/* Grid overlay */}
+                <div
+                  className="absolute inset-0 opacity-[0.04]"
+                  style={{
+                    backgroundImage:
+                      'linear-gradient(to right, currentColor 1px, transparent 1px), linear-gradient(to bottom, currentColor 1px, transparent 1px)',
+                    backgroundSize: '40px 40px',
+                  }}
+                />
+                {/* Floating callouts */}
+                <div className="absolute top-8 left-8 bg-[var(--color-primary)] text-[var(--color-surface)] font-mono text-[11px] tracking-[0.06em] px-3 py-2 flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[var(--color-accent)] shrink-0" />
+                  EXPLODED VIEW · 01
+                </div>
+                <div className="absolute top-1/2 right-6 -translate-y-1/2 bg-[var(--color-primary)] text-[var(--color-surface)] font-mono text-[11px] tracking-[0.06em] px-3 py-2 flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[var(--color-accent)] shrink-0" />
+                  P-MAX 350 BAR
+                </div>
+                <div className="absolute bottom-20 right-8 bg-[var(--color-primary)] text-[var(--color-surface)] font-mono text-[11px] tracking-[0.06em] px-3 py-2 flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[var(--color-accent)] shrink-0" />
+                  CETOP-3 · NG6
+                </div>
+                {/* Placeholder image area */}
+                <div className="absolute inset-6 border border-dashed border-[var(--color-muted)] flex items-center justify-center">
+                  <div className="text-center">
+                    <p className="font-mono text-[11px] text-[var(--color-caption)] leading-[1.7]">
+                      Hero render<br />
+                      &ldquo;Cutaway of axial piston pump&rdquo;<br />
+                      1200×1100 · transparent PNG
+                    </p>
+                  </div>
+                </div>
+                {/* Spec bar */}
+                <div className="absolute bottom-0 left-0 right-0 bg-[var(--color-elevated)] border-t border-[var(--color-border)] px-4 py-3 flex justify-between font-mono text-[12px] text-[var(--color-muted)]">
+                  <span>FILE: <strong className="text-[var(--color-primary)] font-medium">HERO_PUMP_CUTAWAY.PNG</strong></span>
+                  <span>REV: <strong className="text-[var(--color-primary)] font-medium">04 · 2026-04</strong></span>
                 </div>
               </div>
-              {/* Spec bar */}
-              <div className="absolute bottom-0 left-0 right-0 bg-[var(--color-elevated)] border-t border-[var(--color-border)] px-4 py-3 flex justify-between font-mono text-[12px] text-[var(--color-muted)]">
-                <span>FILE: <strong className="text-[var(--color-primary)] font-medium">HERO_PUMP_CUTAWAY.PNG</strong></span>
-                <span>REV: <strong className="text-[var(--color-primary)] font-medium">04 · 2026-04</strong></span>
-              </div>
-            </div>
+            )}
           </div>
         </div>
       </section>
