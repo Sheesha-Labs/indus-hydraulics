@@ -46,10 +46,10 @@ export async function replacePlaceholderLeaves(
     return { leavesDeleted: 0, leavesInserted: 0, warnings }
   }
 
-  // Step 2 — resolve column by category slug
+  // Step 2 — resolve column by category slug.
   const parentCategory = await tx.category.findUnique({
     where: { slug: config.parentColumnCategorySlug },
-    select: { id: true },
+    select: { id: true, name: true },
   })
   if (!parentCategory) {
     warnings.push(
@@ -57,7 +57,7 @@ export async function replacePlaceholderLeaves(
     )
     return { leavesDeleted: 0, leavesInserted: 0, warnings }
   }
-  const column = await tx.navMenuItem.findFirst({
+  let column = await tx.navMenuItem.findFirst({
     where: {
       menuId: menu.id,
       parentId: null,
@@ -67,10 +67,48 @@ export async function replacePlaceholderLeaves(
     select: { id: true },
   })
   if (!column) {
-    warnings.push(
-      `No top-level megamenu column found with category="${config.parentColumnCategorySlug}" — skipping nav linking`,
-    )
-    return { leavesDeleted: 0, leavesInserted: 0, warnings }
+    if (!config.createColumnIfMissing) {
+      warnings.push(
+        `No top-level megamenu column found with category="${config.parentColumnCategorySlug}" — skipping nav linking`,
+      )
+      return { leavesDeleted: 0, leavesInserted: 0, warnings }
+    }
+    // Auto-create the top-level column. Linked to the column category so
+    // /c/{slug} works as the column's destination.
+    const lastColumn = await tx.navMenuItem.findFirst({
+      where: { menuId: menu.id, parentId: null },
+      select: { position: true },
+      orderBy: { position: 'desc' },
+    })
+    const nextPosition = lastColumn ? lastColumn.position + 1 : 0
+    const columnPosition = config.newColumnPosition ?? nextPosition
+    const columnLabel = config.newColumnLabel ?? parentCategory.name
+    const created = await tx.navMenuItem.create({
+      data: {
+        menuId: menu.id,
+        parentId: null,
+        position: columnPosition,
+        label: columnLabel,
+        linkType: 'category',
+        categoryId: parentCategory.id,
+        brandId: null,
+        industryId: null,
+        cmsPageId: null,
+        productId: null,
+        customUrl: null,
+        iconName: null,
+        badge: null,
+        description: null,
+        promoImageId: null,
+        promoHeading: null,
+        promoBody: null,
+        promoLinkUrl: null,
+        openInNewTab: false,
+        isVisible: true,
+      },
+      select: { id: true },
+    })
+    column = created
   }
 
   // Step 3 — resolve sub-section by label under the column.
