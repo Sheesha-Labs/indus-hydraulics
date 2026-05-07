@@ -73,8 +73,8 @@ export async function replacePlaceholderLeaves(
     return { leavesDeleted: 0, leavesInserted: 0, warnings }
   }
 
-  // Step 3 — resolve sub-section by label under the column
-  const subItem = await tx.navMenuItem.findFirst({
+  // Step 3 — resolve sub-section by label under the column.
+  let subItem = await tx.navMenuItem.findFirst({
     where: {
       menuId: menu.id,
       parentId: column.id,
@@ -83,10 +83,52 @@ export async function replacePlaceholderLeaves(
     select: { id: true },
   })
   if (!subItem) {
-    warnings.push(
-      `No sub-section labelled "${config.parentSubLabel}" under "${config.parentColumnCategorySlug}" — skipping nav linking`,
-    )
-    return { leavesDeleted: 0, leavesInserted: 0, warnings }
+    if (!config.createSubSectionIfMissing) {
+      warnings.push(
+        `No sub-section labelled "${config.parentSubLabel}" under "${config.parentColumnCategorySlug}" — skipping nav linking`,
+      )
+      return { leavesDeleted: 0, leavesInserted: 0, warnings }
+    }
+    // Auto-create the sub-section. Mirror the existing custom_url heading
+    // pattern used by seed.ts so admin tooling and storefront treat it the
+    // same as the seeded sub-sections.
+    const lastSibling = await tx.navMenuItem.findFirst({
+      where: { menuId: menu.id, parentId: column.id },
+      select: { position: true },
+      orderBy: { position: 'desc' },
+    })
+    const nextPosition = lastSibling ? lastSibling.position + 1 : 0
+    const position = config.newSubSectionPosition ?? nextPosition
+    const subSlug = config.parentSubLabel
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, '-')
+      .replace(/^-+|-+$/g, '')
+    const created = await tx.navMenuItem.create({
+      data: {
+        menuId: menu.id,
+        parentId: column.id,
+        position,
+        label: config.parentSubLabel,
+        linkType: 'custom_url',
+        customUrl: `/c/${config.parentColumnCategorySlug}?sub=${subSlug}`,
+        categoryId: null,
+        brandId: null,
+        industryId: null,
+        cmsPageId: null,
+        productId: null,
+        iconName: null,
+        badge: null,
+        description: null,
+        promoImageId: null,
+        promoHeading: null,
+        promoBody: null,
+        promoLinkUrl: null,
+        openInNewTab: false,
+        isVisible: true,
+      },
+      select: { id: true },
+    })
+    subItem = created
   }
 
   // Step 4a — delete existing leaves

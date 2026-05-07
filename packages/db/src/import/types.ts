@@ -196,6 +196,14 @@ export const NavReplaceLeavesSchema = z.object({
   parentColumnCategorySlug: SlugSchema,
   /** Label of the sub-section under the column (string match — case-sensitive). */
   parentSubLabel: NonEmptyTrimmed(80),
+  /** When true, create the sub-section under the column if it doesn't already
+   *  exist (rather than warning and skipping). Use this to introduce a brand-
+   *  new megamenu sub-section in a single import. Default: false. */
+  createSubSectionIfMissing: z.boolean().optional(),
+  /** Position of the sub-section among its siblings when createSubSectionIfMissing
+   *  fires. Default: append after existing siblings. Ignored when the sub-section
+   *  already exists. */
+  newSubSectionPosition: z.number().int().nonnegative().optional(),
   /** New leaves to insert. The CURRENT leaves under the matched sub-item are
    *  deleted first. */
   replacements: z
