@@ -95,15 +95,15 @@ export default function HomeHeroCarousel({ slides }: Props) {
 
       {/* Slide stack — all rendered, only active is opacity 1 (crossfade).
           Inset from the container so each image floats inside the framed
-          chrome with breathing room: 2 rem on top + sides, 6 rem at the
-          bottom (clears the ~3 rem spec bar with ~3 rem visible gap above
-          it). object-contain shows the full image with letterbox where
-          aspect ratios differ — fine for our square 1254×1254 technical
-          drawings inside a slightly-wider container. */}
+          chrome with breathing room: 1.75 rem on top + sides, 5.5 rem at
+          the bottom (clears the ~3 rem spec bar with ~2.5 rem visible gap
+          above it). object-contain shows the full image with letterbox
+          where aspect ratios differ — fine for our square 1254×1254
+          technical drawings inside a slightly-wider container. */}
       {slides.map((slide, idx) => (
         <div
           key={slide.id}
-          className={`absolute inset-8 bottom-24 transition-opacity duration-500 ease-in-out ${
+          className={`absolute inset-7 bottom-22 transition-opacity duration-500 ease-in-out ${
             idx === active ? 'opacity-100' : 'opacity-0'
           }`}
           aria-hidden={idx !== active}
