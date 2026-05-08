@@ -165,12 +165,17 @@ async function runImport(
           for (const w of r.warnings) summary.warnings.push(`[${r.sku}] ${w}`)
         }
 
-        // 7. Navigation linking
+        // 7. Navigation linking — single config or array of configs
         if (batch.navigation) {
-          const nav = await replacePlaceholderLeaves(batch.navigation, tx)
-          summary.navigation.leavesDeleted = nav.leavesDeleted
-          summary.navigation.leavesInserted = nav.leavesInserted
-          for (const w of nav.warnings) summary.warnings.push(`[nav] ${w}`)
+          const navConfigs = Array.isArray(batch.navigation)
+            ? batch.navigation
+            : [batch.navigation]
+          for (const navConfig of navConfigs) {
+            const nav = await replacePlaceholderLeaves(navConfig, tx)
+            summary.navigation.leavesDeleted += nav.leavesDeleted
+            summary.navigation.leavesInserted += nav.leavesInserted
+            for (const w of nav.warnings) summary.warnings.push(`[nav] ${w}`)
+          }
         }
 
         if (dryRun) {
