@@ -4,7 +4,7 @@
  * Homepage hero carousel — client component for the right-side visual on `/`.
  *
  * Behaviour:
- *   - Auto-rotates every ROTATE_MS (default 5s).
+ *   - Auto-rotates every ROTATE_MS (currently 2.5 s).
  *   - Pauses while the user hovers the carousel.
  *   - Respects `prefers-reduced-motion: reduce` — no auto-rotation, manual
  *     navigation only via the index dots.
@@ -36,7 +36,10 @@ interface Props {
   slides: HomeHeroSlide[]
 }
 
-const ROTATE_MS = 5000
+// Cycle every 2.5 s. The crossfade on each slide div (500 ms) is well
+// inside this window so each fade completes with ~2 s of dwell time before
+// the next swap.
+const ROTATE_MS = 2500
 
 export default function HomeHeroCarousel({ slides }: Props) {
   const [active, setActive] = useState(0)
@@ -90,11 +93,17 @@ export default function HomeHeroCarousel({ slides }: Props) {
         }}
       />
 
-      {/* Slide stack — all rendered, only active is opacity 1 (crossfade) */}
+      {/* Slide stack — all rendered, only active is opacity 1 (crossfade).
+          Inset from the container so each image floats inside the framed
+          chrome with breathing room: 1.75 rem on top + sides, 5.5 rem at
+          the bottom (clears the ~3 rem spec bar with ~2.5 rem visible gap
+          above it). object-contain shows the full image with letterbox
+          where aspect ratios differ — fine for our square 1254×1254
+          technical drawings inside a slightly-wider container. */}
       {slides.map((slide, idx) => (
         <div
           key={slide.id}
-          className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${
+          className={`absolute inset-7 bottom-22 transition-opacity duration-500 ease-in-out ${
             idx === active ? 'opacity-100' : 'opacity-0'
           }`}
           aria-hidden={idx !== active}
@@ -107,7 +116,7 @@ export default function HomeHeroCarousel({ slides }: Props) {
             priority={idx === 0}
             loading={idx === 0 ? undefined : 'lazy'}
             sizes="(min-width: 1024px) 50vw, 100vw"
-            className="absolute inset-0 w-full h-full object-cover"
+            className="absolute inset-0 w-full h-full object-contain"
           />
         </div>
       ))}
