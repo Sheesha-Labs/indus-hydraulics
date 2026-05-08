@@ -18,8 +18,13 @@ interface Props {
   onItemClick: () => void
 }
 
-const DESKTOP_LIMIT = 8
-
+// Note: this dropdown previously truncated to a hard-coded DESKTOP_LIMIT
+// of 8 entries, which silently dropped 5 brands once the catalogue grew
+// past 8 published brands (the section header still showed the true count,
+// producing a visible mismatch — `BRANDS · 13` rendered above only 8
+// visible items). The 2-column grid handles arbitrary counts cleanly, and
+// the `View all` CTA at the bottom of the dropdown remains the canonical
+// "go to brands page" link. Limit removed.
 export default function NavListDropdown({
   items,
   hrefPrefix,
@@ -31,8 +36,6 @@ export default function NavListDropdown({
   onItemClick,
 }: Props) {
   if (items.length === 0) return null
-
-  const visibleItems = items.slice(0, DESKTOP_LIMIT)
 
   return (
     <div
@@ -48,7 +51,7 @@ export default function NavListDropdown({
           <span className="font-normal">{items.length}</span>
         </div>
         <div className="grid grid-cols-2 gap-x-8 gap-y-1 max-w-[720px]">
-          {visibleItems.map((item) => (
+          {items.map((item) => (
             <Link
               key={item.slug}
               href={`${hrefPrefix}${item.slug}`}
