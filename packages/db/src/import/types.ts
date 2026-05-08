@@ -248,8 +248,14 @@ export const ImportBatchSchema = z.object({
   /** Spec templates to upsert. Categories' `defaultSpecTemplateSlug` are
    *  wired AFTER both spec templates and categories exist. */
   specTemplates: z.array(SpecTemplatePayloadSchema).default([]),
-  /** Megamenu linking. Optional. */
-  navigation: NavReplaceLeavesSchema.optional(),
+  /** Megamenu linking. Optional. Pass a single config to update one
+   *  sub-section's leaves, or an array of configs to perform multiple
+   *  replacements in the same transaction (e.g. extending an existing
+   *  sub AND creating a new sub in one batch). Each entry runs through
+   *  `replacePlaceholderLeaves` independently. */
+  navigation: z
+    .union([NavReplaceLeavesSchema, z.array(NavReplaceLeavesSchema).min(1)])
+    .optional(),
   /** The products. */
   products: z.array(ProductImportPayloadSchema).min(1),
 })
