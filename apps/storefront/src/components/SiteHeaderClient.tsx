@@ -91,6 +91,13 @@ export default function SiteHeaderClient({
   const activeSub = activeCat?.children[activeSubIdx] ?? activeCat?.children[0]
   const browseAllHref = activeCat?.href ?? '/c'
 
+  const brandsHeaderItem = headerItems.find(
+    (item) => item.href === '/brands' || item.href === '/brands/',
+  )
+  const industriesHeaderItem = headerItems.find(
+    (item) => item.href === '/industries' || item.href === '/industries/',
+  )
+
   return (
     <header className="sticky top-0 z-50 bg-[var(--color-elevated)]/65 backdrop-blur-lg backdrop-saturate-150 border-b border-[var(--color-border)]">
       {/* Utility bar */}
@@ -378,6 +385,10 @@ export default function SiteHeaderClient({
           viewAllHref="/brands"
           viewAllLabel="View all brands"
           sectionLabel="Brands"
+          promoImageUrl={brandsHeaderItem?.promoImageUrl}
+          promoHeading={brandsHeaderItem?.promoHeading}
+          promoBody={brandsHeaderItem?.promoBody}
+          promoLinkUrl={brandsHeaderItem?.promoLinkUrl}
           onMouseEnter={() => openDropdown('brands')}
           onMouseLeave={closeDropdown}
           onItemClick={closeDropdownImmediate}
@@ -392,6 +403,10 @@ export default function SiteHeaderClient({
           viewAllHref="/industries"
           viewAllLabel="View all industries"
           sectionLabel="Industries"
+          promoImageUrl={industriesHeaderItem?.promoImageUrl}
+          promoHeading={industriesHeaderItem?.promoHeading}
+          promoBody={industriesHeaderItem?.promoBody}
+          promoLinkUrl={industriesHeaderItem?.promoLinkUrl}
           onMouseEnter={() => openDropdown('industries')}
           onMouseLeave={closeDropdown}
           onItemClick={closeDropdownImmediate}
