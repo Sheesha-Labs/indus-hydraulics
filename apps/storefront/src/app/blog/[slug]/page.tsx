@@ -6,7 +6,8 @@ import { db } from '@indus/db'
 import { buildArticleLd, buildBreadcrumbLd } from '@indus/domain'
 import { JsonLd } from '@indus/ui'
 import { mediaUrl } from '../../../lib/media'
-import { pageMetadata, urlFor } from '../../../lib/seo'
+import { ORG_ID, SITE_NAME, pageMetadata, urlFor } from '../../../lib/seo'
+import { getStoreSettings } from '../../../lib/store-settings'
 
 type Props = { params: Promise<{ slug: string }> }
 
@@ -42,10 +43,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function BlogPostPage({ params }: Props) {
   const { slug } = await params
 
-  const post = await db.blogPost.findUnique({
-    where: { slug, isPublished: true },
-    include: { hero: true, author: { select: { name: true } } },
-  })
+  const [post, settings] = await Promise.all([
+    db.blogPost.findUnique({
+      where: { slug, isPublished: true },
+      include: { hero: true, author: { select: { name: true } } },
+    }),
+    getStoreSettings(),
+  ])
 
   if (!post) notFound()
 
@@ -57,6 +61,13 @@ export default async function BlogPostPage({ params }: Props) {
     imageUrl: post.hero ? mediaUrl(post.hero.storagePath) : null,
     authorName: post.author?.name ?? null,
     publishedAt: post.publishedAt ?? null,
+    // BlogPost only tracks seoUpdatedAt (set when an editor saves SEO
+    // metadata) — not a generic updatedAt. Falling back to publishedAt
+    // means brand-new posts still emit a sensible dateModified.
+    modifiedAt: post.seoUpdatedAt ?? post.publishedAt ?? null,
+    publisherId: ORG_ID,
+    publisherName: SITE_NAME,
+    publisherLogoUrl: settings.logoUrl ? mediaUrl(settings.logoUrl) : null,
     override: post.jsonLdOverride ?? undefined,
   })
   const breadcrumbLd = buildBreadcrumbLd({

@@ -100,10 +100,23 @@ export type ArticleLdInput = {
   headline: string
   description?: string | null
   url: string
-  imageUrl?: string | null
+  /** Single image URL or an ordered list (Google prefers >=1 high-res image). */
+  imageUrl?: string | string[] | null
   authorName?: string | null
+  /** Optional author profile URL — adds E-E-A-T signal. */
+  authorUrl?: string | null
   publishedAt?: Date | null
   modifiedAt?: Date | null
+  /**
+   * Reference to the publishing Organization. When provided, emits a
+   * `publisher: { @type: Organization, @id: ... }` so the Article links
+   * back to the global Org node.
+   */
+  publisherId?: string
+  publisherName?: string
+  publisherLogoUrl?: string | null
+  /** BCP-47 language tag, defaults to "en" when omitted. */
+  inLanguage?: string
   override?: unknown
 }
 
@@ -283,10 +296,25 @@ export function buildArticleLd(input: ArticleLdInput): JsonLd {
     '@type': 'Article',
     headline: input.headline,
     url: input.url,
+    mainEntityOfPage: { '@type': 'WebPage', '@id': input.url },
+    inLanguage: input.inLanguage ?? 'en',
   }
   if (input.description) base.description = input.description
   if (input.imageUrl) base.image = input.imageUrl
-  if (input.authorName) base.author = { '@type': 'Person', name: input.authorName }
+  if (input.authorName) {
+    const author: JsonLd = { '@type': 'Person', name: input.authorName }
+    if (input.authorUrl) author.url = input.authorUrl
+    base.author = author
+  }
+  if (input.publisherId || input.publisherName) {
+    const pub: JsonLd = { '@type': 'Organization' }
+    if (input.publisherId) pub['@id'] = input.publisherId
+    if (input.publisherName) pub.name = input.publisherName
+    if (input.publisherLogoUrl) {
+      pub.logo = { '@type': 'ImageObject', url: input.publisherLogoUrl }
+    }
+    base.publisher = pub
+  }
   if (input.publishedAt) base.datePublished = input.publishedAt.toISOString()
   if (input.modifiedAt) base.dateModified = input.modifiedAt.toISOString()
   return mergeJsonLd(base, input.override)

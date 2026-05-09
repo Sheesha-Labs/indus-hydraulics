@@ -1,7 +1,9 @@
 import { mediaUrl } from '../../../lib/media'
 import { signedUrlFor } from '../../../lib/supabase'
 import { ORG_ID, SITE_NAME, pageMetadata, urlFor } from '../../../lib/seo'
+import { getStoreSettings } from '../../../lib/store-settings'
 import type { Metadata } from 'next'
+import { cache } from 'react'
 import { notFound, permanentRedirect } from 'next/navigation'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -26,17 +28,35 @@ type Props = {
   searchParams: Promise<{ preview?: string }>
 }
 
+/**
+ * Per-request product fetch. React `cache()` dedupes calls within a
+ * single request so generateMetadata + the page render share one
+ * Prisma round-trip instead of running two parallel queries.
+ */
+const getProduct = cache(async (decoded: string) => {
+  return db.product.findFirst({
+    where: { OR: [{ slug: decoded }, { sku: decoded }] },
+    include: {
+      brand: true,
+      category: true,
+      images: { orderBy: { position: 'asc' }, include: { media: true } },
+      specs: { orderBy: { position: 'asc' } },
+      documents: { orderBy: { position: 'asc' }, include: { media: true } },
+      crossReferences: { take: 12 },
+      faqs: { orderBy: { position: 'asc' } },
+      supersededBy: { select: { sku: true, title: true, slug: true } },
+      specTemplate: {
+        include: { fields: { orderBy: { position: 'asc' } } },
+      },
+    },
+  })
+})
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params
   const decoded = decodeURIComponent(slug)
   const [product, seoSetting] = await Promise.all([
-    db.product.findFirst({
-      where: { OR: [{ slug: decoded }, { sku: decoded }] },
-      include: {
-        brand: true,
-        images: { orderBy: { position: 'asc' }, take: 1, include: { media: true } },
-      },
-    }),
+    getProduct(decoded),
     db.seoSetting.findFirst({
       select: { defaultMetaTitleTemplate: true, defaultMetaDescription: true },
     }),
@@ -73,24 +93,9 @@ export default async function ProductPage({ params, searchParams }: Props) {
   // Resolve product by slug first (canonical), fall back to SKU. The SKU
   // fallback supports legacy/inbound links (e.g. older sitemaps, customer
   // bookmarks, admin preview URLs that still embed the SKU). When we hit
-  // via SKU and we're NOT in preview mode, 301 to the slug URL so search
+  // via SKU and we're NOT in preview mode, 308 to the slug URL so search
   // engines collapse to a single canonical address.
-  const product = await db.product.findFirst({
-    where: { OR: [{ slug: decoded }, { sku: decoded }] },
-    include: {
-      brand: true,
-      category: true,
-      images: { orderBy: { position: 'asc' }, include: { media: true } },
-      specs: { orderBy: { position: 'asc' } },
-      documents: { orderBy: { position: 'asc' }, include: { media: true } },
-      crossReferences: { take: 12 },
-      faqs: { orderBy: { position: 'asc' } },
-      supersededBy: { select: { sku: true, title: true, slug: true } },
-      specTemplate: {
-        include: { fields: { orderBy: { position: 'asc' } } },
-      },
-    },
-  })
+  const [product, settings] = await Promise.all([getProduct(decoded), getStoreSettings()])
 
   if (!product) notFound()
 
@@ -390,24 +395,29 @@ export default async function ProductPage({ params, searchParams }: Props) {
               </div>
             )}
 
-            {/* CTA stack */}
+            {/* CTA stack — WhatsApp + mailto sourced from StoreSettings so the
+                admin team has a single place to update real numbers. The
+                WhatsApp button hides entirely if no phone is configured
+                (rather than ship a placeholder/dead-link). */}
             <div className="flex flex-col gap-2.5 pt-2 mb-4">
-              <a
-                href={`https://wa.me/912240000000?text=Enquiry on ${product.sku}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="h-12 flex items-center justify-center gap-2 text-[14px] font-medium text-white transition-opacity hover:opacity-90"
-                style={{ background: '#16a34a' }}
-              >
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                  <path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-1 1.1-.2.2-.4.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.8-.8-1.4-1.7-1.6-2-.2-.3 0-.4.1-.5.1-.1.3-.3.4-.5.1-.2.2-.3.2-.5.1-.2 0-.4 0-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.2-.6-.4zM12 2C6.5 2 2 6.5 2 12c0 1.7.4 3.3 1.2 4.7L2 22l5.4-1.4c1.4.8 2.9 1.2 4.6 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2z" />
-                </svg>
-                Enquire on WhatsApp
-              </a>
+              {whatsappHref(settings.contactPhone, product.sku) && (
+                <a
+                  href={whatsappHref(settings.contactPhone, product.sku)!}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="h-12 flex items-center justify-center gap-2 text-[14px] font-medium text-white transition-opacity hover:opacity-90"
+                  style={{ background: '#16a34a' }}
+                >
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-1 1.1-.2.2-.4.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.8-.8-1.4-1.7-1.6-2-.2-.3 0-.4.1-.5.1-.1.3-.3.4-.5.1-.2.2-.3.2-.5.1-.2 0-.4 0-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.2-.6-.4zM12 2C6.5 2 2 6.5 2 12c0 1.7.4 3.3 1.2 4.7L2 22l5.4-1.4c1.4.8 2.9 1.2 4.6 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2z" />
+                  </svg>
+                  Enquire on WhatsApp
+                </a>
+              )}
               <div className="grid grid-cols-2 gap-2">
                 <AddToQuoteButton sku={product.sku} title={product.title} />
                 <a
-                  href={`mailto:enquiries@indushydraulics.com?subject=Quotation for ${product.sku}`}
+                  href={mailtoQuoteHref(settings.contactEmail, product.sku)}
                   className="h-12 flex items-center justify-center border border-[var(--color-border)] text-[13px] font-medium text-[var(--color-body)] hover:bg-[var(--color-deep)] transition-colors"
                 >
                   Email for Quotation
@@ -540,6 +550,24 @@ export default async function ProductPage({ params, searchParams }: Props) {
       />
     </>
   )
+}
+
+// Strip everything that isn't a digit so the StoreSettings phone (which
+// may include +, spaces, dashes) becomes a wa.me-compatible numeric ID.
+// Returns null when no phone is configured so the CTA can be hidden
+// rather than shipping a placeholder/dead-link.
+function whatsappHref(phone: string | null, sku: string): string | null {
+  if (!phone) return null
+  const digits = phone.replace(/\D/g, '')
+  if (digits.length < 7) return null
+  const text = encodeURIComponent(`Enquiry on ${sku}`)
+  return `https://wa.me/${digits}?text=${text}`
+}
+
+function mailtoQuoteHref(email: string | null, sku: string): string {
+  const to = email ?? 'enquiries@indushydraulics.com'
+  const subject = encodeURIComponent(`Quotation for ${sku}`)
+  return `mailto:${to}?subject=${subject}`
 }
 
 // ── Stock pill — green when stocked, amber for build-to-order, grey when neither ─────────────
