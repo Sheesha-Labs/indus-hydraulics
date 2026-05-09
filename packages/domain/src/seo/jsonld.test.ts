@@ -1,5 +1,6 @@
 import { describe, it, expect } from 'vitest'
 import {
+  buildArticleLd,
   buildProductLd,
   buildBreadcrumbLd,
   buildFaqLd,
@@ -97,6 +98,31 @@ describe('buildProductLd', () => {
     expect(offer.priceCurrency).toBe('AED')
     expect(offer.priceValidUntil).toBe('2026-12-31')
     expect(offer.itemCondition).toBe('https://schema.org/NewCondition')
+  })
+})
+
+describe('buildArticleLd', () => {
+  it('emits Article with publisher reference, mainEntityOfPage, dates, language', () => {
+    const ld = buildArticleLd({
+      headline: 'How to size a hydraulic cylinder',
+      description: 'A working engineers checklist.',
+      url: 'https://example.com/blog/foo',
+      imageUrl: 'https://cdn/hero.jpg',
+      authorName: 'Sunil Patel',
+      authorUrl: 'https://example.com/team/sunil',
+      publishedAt: new Date('2026-04-18T00:00:00Z'),
+      modifiedAt: new Date('2026-05-01T00:00:00Z'),
+      publisherId: 'https://example.com#organization',
+      publisherName: 'Indus Hydraulics',
+      publisherLogoUrl: 'https://cdn/logo.png',
+    })
+    expect(ld['@type']).toBe('Article')
+    expect((ld.mainEntityOfPage as Record<string, unknown>)['@id']).toBe('https://example.com/blog/foo')
+    expect(ld.inLanguage).toBe('en')
+    expect((ld.author as Record<string, unknown>).url).toBe('https://example.com/team/sunil')
+    expect((ld.publisher as Record<string, unknown>)['@id']).toBe('https://example.com#organization')
+    expect(((ld.publisher as Record<string, unknown>).logo as Record<string, unknown>).url).toBe('https://cdn/logo.png')
+    expect(ld.dateModified).toBe('2026-05-01T00:00:00.000Z')
   })
 })
 
