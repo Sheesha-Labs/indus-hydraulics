@@ -13,6 +13,20 @@ const nextConfig: NextConfig = {
       { protocol: 'https', hostname: 'images.unsplash.com' },
     ],
   },
+  async redirects() {
+    return [
+      // Legacy metallic-ptfe-hoses category was split into the new
+      // metallic-hoses parent + 7 sub-categories during the Metallic
+      // Hoses initiative (Batch 0, PR #93). The old slug remains in DB
+      // (now empty) so direct links don't 404, but inbound traffic /
+      // SEO is best served by 301-ing to the new parent landing page.
+      {
+        source: '/c/metallic-ptfe-hoses',
+        destination: '/c/metallic-hoses',
+        permanent: true,
+      },
+    ]
+  },
 }
 
 // Sentry build-time wrapper. Source-map upload only runs when SENTRY_AUTH_TOKEN
