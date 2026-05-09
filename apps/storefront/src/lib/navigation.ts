@@ -25,7 +25,7 @@ const loadRaw = unstable_cache(
               brand: { select: { slug: true } },
               industry: { select: { slug: true } },
               cmsPage: { select: { slug: true } },
-              product: { select: { sku: true } },
+              product: { select: { sku: true, slug: true } },
               promoImage: { select: { storagePath: true } },
             },
           },
@@ -51,7 +51,7 @@ function resolveHref(item: RawItem): string | null {
     case 'cms_page':
       return item.cmsPage ? `/${item.cmsPage.slug}` : null
     case 'product':
-      return item.product ? `/p/${item.product.sku}` : null
+      return item.product ? `/p/${item.product.slug}` : null
     case 'custom_url':
       return item.customUrl ?? null
     case 'none':

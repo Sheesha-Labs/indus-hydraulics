@@ -2,7 +2,7 @@ import { mediaUrl } from '../../../lib/media'
 import { signedUrlFor } from '../../../lib/supabase'
 import { pageMetadata, urlFor } from '../../../lib/seo'
 import type { Metadata } from 'next'
-import { notFound } from 'next/navigation'
+import { notFound, permanentRedirect } from 'next/navigation'
 import Link from 'next/link'
 import Image from 'next/image'
 import { db } from '@indus/db'
@@ -22,16 +22,16 @@ import ProductTabs from '../../../components/ProductTabs'
 import ProductStickyBar from '../../../components/ProductStickyBar'
 
 type Props = {
-  params: Promise<{ sku: string }>
+  params: Promise<{ slug: string }>
   searchParams: Promise<{ preview?: string }>
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { sku } = await params
-  const decoded = decodeURIComponent(sku)
+  const { slug } = await params
+  const decoded = decodeURIComponent(slug)
   const [product, seoSetting] = await Promise.all([
-    db.product.findUnique({
-      where: { sku: decoded },
+    db.product.findFirst({
+      where: { OR: [{ slug: decoded }, { sku: decoded }] },
       include: {
         brand: true,
         images: { orderBy: { position: 'asc' }, take: 1, include: { media: true } },
@@ -63,23 +63,20 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function ProductPage({ params, searchParams }: Props) {
-  const { sku } = await params
+  const { slug } = await params
   const sp = (await searchParams) ?? {}
   const session = await safeAuth()
   const isSignedIn = !!session
 
-  const decodedSku = decodeURIComponent(sku)
-  let isPreview = false
-  if (sp.preview) {
-    try {
-      isPreview = verifyPreviewToken(sp.preview, decodedSku).valid
-    } catch {
-      isPreview = false
-    }
-  }
+  const decoded = decodeURIComponent(slug)
 
-  const product = await db.product.findUnique({
-    where: { sku: decodedSku },
+  // Resolve product by slug first (canonical), fall back to SKU. The SKU
+  // fallback supports legacy/inbound links (e.g. older sitemaps, customer
+  // bookmarks, admin preview URLs that still embed the SKU). When we hit
+  // via SKU and we're NOT in preview mode, 301 to the slug URL so search
+  // engines collapse to a single canonical address.
+  const product = await db.product.findFirst({
+    where: { OR: [{ slug: decoded }, { sku: decoded }] },
     include: {
       brand: true,
       category: true,
@@ -96,6 +93,26 @@ export default async function ProductPage({ params, searchParams }: Props) {
   })
 
   if (!product) notFound()
+
+  // Preview tokens are signed against the product SKU (the stable
+  // identifier admins generate them from). Verify against product.sku
+  // regardless of which key resolved the URL.
+  let isPreview = false
+  if (sp.preview) {
+    try {
+      isPreview = verifyPreviewToken(sp.preview, product.sku).valid
+    } catch {
+      isPreview = false
+    }
+  }
+
+  // Hit via SKU rather than slug → 308 permanent redirect to the
+  // canonical slug URL so search engines collapse to a single address.
+  // Skip the redirect in preview mode so the signed token isn't stripped.
+  if (decoded !== product.slug && !isPreview) {
+    permanentRedirect(`/p/${product.slug}`)
+  }
+
   if (product.status === 'draft' && !isPreview) notFound()
 
   const specGroups = product.specs.reduce<Record<string, typeof product.specs>>((acc, spec) => {
@@ -249,7 +266,7 @@ export default async function ProductPage({ params, searchParams }: Props) {
             {product.supersededBy && (
               <>
                 {' · '}
-                <Link href={`/p/${product.supersededBy.sku}`} className="underline">
+                <Link href={`/p/${product.supersededBy.slug}`} className="underline">
                   See replacement: {product.supersededBy.sku}
                 </Link>
               </>
@@ -467,7 +484,7 @@ export default async function ProductPage({ params, searchParams }: Props) {
               {related.map((rel) => (
                 <Link
                   key={rel.id}
-                  href={`/p/${rel.sku}`}
+                  href={`/p/${rel.slug}`}
                   className="group border border-[var(--color-border)] bg-[var(--color-elevated)] overflow-hidden flex flex-col hover:border-[var(--color-body)] transition-colors"
                 >
                   <div className="aspect-square border-b border-[var(--color-border-2)] bg-[var(--color-deep)] relative">

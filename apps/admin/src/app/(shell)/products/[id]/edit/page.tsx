@@ -64,7 +64,7 @@ export default async function EditProductPage({ params }: Props) {
   let previewUrl: string | null = null
   try {
     const token = signPreviewToken(product.sku)
-    previewUrl = `${storefrontUrl}/p/${encodeURIComponent(product.sku)}?preview=${encodeURIComponent(token)}`
+    previewUrl = `${storefrontUrl}/p/${encodeURIComponent(product.slug)}?preview=${encodeURIComponent(token)}`
   } catch {
     previewUrl = null
   }

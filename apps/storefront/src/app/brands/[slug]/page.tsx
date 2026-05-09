@@ -220,7 +220,7 @@ export default async function BrandPage({ params }: Props) {
               return (
                 <Link
                   key={product.id}
-                  href={`/p/${product.sku}`}
+                  href={`/p/${product.slug}`}
                   className="flex flex-col border border-[var(--color-border)] bg-[var(--color-elevated)] hover:border-[var(--color-body)] transition-colors overflow-hidden"
                 >
                   <div className="aspect-square bg-[var(--color-deep)] border-b border-[var(--color-border)] relative overflow-hidden">
