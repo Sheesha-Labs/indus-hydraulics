@@ -81,12 +81,54 @@ export type ArticleLdInput = {
   override?: unknown
 }
 
+export type PostalAddressLd = {
+  streetAddress?: string | null
+  addressLocality?: string | null
+  addressRegion?: string | null
+  postalCode?: string | null
+  addressCountry?: string | null
+  poBox?: string | null
+}
+
 export type OrgLdInput = {
+  /**
+   * Stable @id so other entities (LocalBusiness, Article publisher,
+   * Product manufacturer) can reference this Organization via @id.
+   * Convention: `${url}#organization`.
+   */
+  id?: string
   name: string
+  /** Trading / legal name. Renders as `legalName`. */
+  legalName?: string | null
   url: string
   logoUrl?: string | null
+  description?: string | null
+  /** ISO date string, e.g. "2003". */
+  foundingDate?: string | null
   sameAs?: string[]
   contact?: { email?: string | null; telephone?: string | null }
+  address?: PostalAddressLd | null
+  /** ISO 3166-1 alpha-2 country code(s) the business serves. */
+  areaServed?: string[]
+  override?: unknown
+}
+
+export type LocalBusinessLdInput = {
+  /** Stable @id, e.g. `${baseUrl}#location-mumbai-hq`. */
+  id?: string
+  /** Schema.org subtype — defaults to LocalBusiness. */
+  type?: 'LocalBusiness' | 'Store' | 'WholesaleStore' | 'AutomotiveBusiness'
+  name: string
+  url?: string
+  telephone?: string | null
+  email?: string | null
+  address: PostalAddressLd
+  /**
+   * One entry per day-range, e.g. ["Mo-Sa 09:00-18:30"]. Schema.org expects
+   * the `Mo|Tu|We|Th|Fr|Sa|Su` weekday format, so callers must pre-format.
+   */
+  openingHours?: string[]
+  parentOrganization?: { id?: string; name?: string } | null
   override?: unknown
 }
 
@@ -195,15 +237,79 @@ export function buildOrgLd(input: OrgLdInput): JsonLd {
     name: input.name,
     url: input.url,
   }
+  if (input.id) base['@id'] = input.id
+  if (input.legalName) base.legalName = input.legalName
+  if (input.description) base.description = input.description
+  if (input.foundingDate) base.foundingDate = input.foundingDate
   if (input.logoUrl) base.logo = input.logoUrl
   if (input.sameAs && input.sameAs.length > 0) base.sameAs = input.sameAs
   if (input.contact?.email || input.contact?.telephone) {
-    const cp: JsonLd = { '@type': 'ContactPoint' }
+    const cp: JsonLd = { '@type': 'ContactPoint', contactType: 'customer service' }
     if (input.contact.email) cp.email = input.contact.email
     if (input.contact.telephone) cp.telephone = input.contact.telephone
+    if (input.areaServed && input.areaServed.length > 0) cp.areaServed = input.areaServed
     base.contactPoint = cp
   }
+  if (input.address) {
+    const addr = postalAddressLd(input.address)
+    if (addr) base.address = addr
+  }
+  if (input.areaServed && input.areaServed.length > 0) base.areaServed = input.areaServed
   return mergeJsonLd(base, input.override)
+}
+
+export function buildLocalBusinessLd(input: LocalBusinessLdInput): JsonLd {
+  const base: JsonLd = {
+    '@context': 'https://schema.org',
+    '@type': input.type ?? 'LocalBusiness',
+    name: input.name,
+  }
+  if (input.id) base['@id'] = input.id
+  if (input.url) base.url = input.url
+  if (input.telephone) base.telephone = input.telephone
+  if (input.email) base.email = input.email
+  const addr = postalAddressLd(input.address)
+  if (addr) base.address = addr
+  if (input.openingHours && input.openingHours.length > 0) {
+    base.openingHours = input.openingHours
+  }
+  if (input.parentOrganization && (input.parentOrganization.id || input.parentOrganization.name)) {
+    const parent: JsonLd = { '@type': 'Organization' }
+    if (input.parentOrganization.id) parent['@id'] = input.parentOrganization.id
+    if (input.parentOrganization.name) parent.name = input.parentOrganization.name
+    base.parentOrganization = parent
+  }
+  return mergeJsonLd(base, input.override)
+}
+
+function postalAddressLd(input: PostalAddressLd): JsonLd | null {
+  const out: JsonLd = { '@type': 'PostalAddress' }
+  let any = false
+  if (input.streetAddress) {
+    out.streetAddress = input.streetAddress
+    any = true
+  }
+  if (input.addressLocality) {
+    out.addressLocality = input.addressLocality
+    any = true
+  }
+  if (input.addressRegion) {
+    out.addressRegion = input.addressRegion
+    any = true
+  }
+  if (input.postalCode) {
+    out.postalCode = input.postalCode
+    any = true
+  }
+  if (input.addressCountry) {
+    out.addressCountry = input.addressCountry
+    any = true
+  }
+  if (input.poBox) {
+    out.postOfficeBoxNumber = input.poBox
+    any = true
+  }
+  return any ? out : null
 }
 
 export function buildWebsiteLd(input: WebsiteLdInput): JsonLd {

@@ -12,6 +12,14 @@ export type ResolvedStoreSettings = {
   contactEmail: string | null
   contactHours: string | null
   contactLocationLabel: string | null
+  /** Legal entity name from StoreSettings.legalName. Used in Org JSON-LD. */
+  legalName: string | null
+  /** Registered address fields, used to assemble PostalAddress JSON-LD. */
+  registeredAddressLines: string[]
+  registeredCity: string | null
+  registeredCountry: string | null
+  registeredCountryCode: string | null
+  registeredPoBox: string | null
 }
 
 const FALLBACK: ResolvedStoreSettings = {
@@ -23,6 +31,12 @@ const FALLBACK: ResolvedStoreSettings = {
   contactEmail: null,
   contactHours: null,
   contactLocationLabel: null,
+  legalName: null,
+  registeredAddressLines: [],
+  registeredCity: null,
+  registeredCountry: null,
+  registeredCountryCode: null,
+  registeredPoBox: null,
 }
 
 // Persistent cross-request cache. Admin should call revalidateTag('store-settings')
@@ -40,10 +54,19 @@ const loadStoreSettings = unstable_cache(
           contactHours: true,
           contactLocationLabel: true,
           logoMedia: { select: { storagePath: true } },
+          legalName: true,
+          registeredAddressLines: true,
+          registeredCity: true,
+          registeredCountry: true,
+          registeredCountryCode: true,
+          registeredPoBox: true,
         },
       })
       .catch(() => null)
     if (!row) return FALLBACK
+    const lines = Array.isArray(row.registeredAddressLines)
+      ? (row.registeredAddressLines as unknown[]).filter((l): l is string => typeof l === 'string')
+      : []
     return {
       name: row.name,
       tagline: row.tagline,
@@ -53,6 +76,12 @@ const loadStoreSettings = unstable_cache(
       contactEmail: row.contactEmail,
       contactHours: row.contactHours,
       contactLocationLabel: row.contactLocationLabel,
+      legalName: row.legalName,
+      registeredAddressLines: lines,
+      registeredCity: row.registeredCity,
+      registeredCountry: row.registeredCountry,
+      registeredCountryCode: row.registeredCountryCode,
+      registeredPoBox: row.registeredPoBox,
     }
   },
   ['store-settings'],

@@ -10,7 +10,30 @@ import SiteHeader from '../components/SiteHeader'
 import SiteFooter from '../components/SiteFooter'
 import CompareTrayBadge from '../components/CompareTrayBadge'
 import { BASE_URL, SITE_NAME } from '../lib/seo'
+import { mediaUrl } from '../lib/media'
+import { areasServed, OFFICES } from '../lib/site-locations'
+import { getStoreSettings } from '../lib/store-settings'
 import './globals.css'
+
+/**
+ * Stable @id for the Organization node — referenced by LocalBusiness and
+ * (future) Article publisher / Product manufacturer entities.
+ */
+export const ORG_ID = `${BASE_URL}#organization`
+
+/**
+ * Optional, comma-separated list of social profile URLs surfaced as
+ * `sameAs` on the Organization JSON-LD. Set in Vercel as
+ * `NEXT_PUBLIC_SOCIAL_PROFILES`. Empty / unset = no sameAs.
+ */
+function readSameAs(): string[] {
+  const raw = process.env.NEXT_PUBLIC_SOCIAL_PROFILES
+  if (!raw) return []
+  return raw
+    .split(',')
+    .map((s) => s.trim())
+    .filter((s) => s.length > 0)
+}
 
 // Cache the global SEO override row across requests. Admin should call
 // revalidateTag('seo-settings') when changing SeoSetting JSON-LD overrides.
@@ -52,12 +75,29 @@ export const metadata: Metadata = {
 export const preferredRegion = 'bom1'
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
-  // Pull admin-managed Org/WebSite JSON-LD overrides for the global script tag.
-  const seoSetting = await getSeoSetting()
+  // Pull admin-managed Org/WebSite JSON-LD overrides AND StoreSettings for
+  // contact / legal details that flow into the Organization schema. Both
+  // are cross-request cached.
+  const [seoSetting, settings] = await Promise.all([getSeoSetting(), getStoreSettings()])
+
+  // The HQ office's address feeds the Organization PostalAddress (single
+  // top-level address per Schema.org guidance). Branch offices get their
+  // own LocalBusiness nodes on the contact page.
+  const hq = OFFICES.find((o) => o.kind === 'hq')
 
   const orgLd = buildOrgLd({
+    id: ORG_ID,
     name: SITE_NAME,
+    legalName: settings.legalName,
     url: BASE_URL,
+    logoUrl: settings.logoUrl ? mediaUrl(settings.logoUrl) : null,
+    description:
+      'Industrial hydraulic components — pumps, cylinders, valves, hoses and consumables — for engineers who can’t afford downtime.',
+    foundingDate: '2003',
+    sameAs: readSameAs(),
+    contact: { email: settings.contactEmail, telephone: settings.contactPhone },
+    address: hq?.address ?? null,
+    areaServed: areasServed(),
     override: seoSetting?.organizationJsonLd,
   })
   const websiteLd = buildWebsiteLd({

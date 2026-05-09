@@ -1,7 +1,12 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { db } from '@indus/db'
+import { buildBreadcrumbLd, buildFaqLd, buildLocalBusinessLd } from '@indus/domain'
+import { JsonLd } from '@indus/ui'
 import ContactFormClient from './ContactFormClient'
+import { ORG_ID } from '../layout'
+import { BASE_URL, urlFor, SITE_NAME } from '../../lib/seo'
+import { OFFICES, formatOfficeAddress } from '../../lib/site-locations'
 
 // Static-ish marketing page; cache for 1 hour.
 export const revalidate = 3600
@@ -27,8 +32,33 @@ const FAQS = [
 export default async function ContactPage({ params }: Props) {
   await params
 
+  // JSON-LD entity graph: a LocalBusiness per office (each linked back to
+  // the root Organization), plus FAQPage from the FAQS array and a
+  // breadcrumb. The contact page is the canonical "where are you located"
+  // signal for Google + AI search engines.
+  const localBusinessLds = OFFICES.map((office) =>
+    buildLocalBusinessLd({
+      id: `${BASE_URL}#location-${office.slug}`,
+      name: office.kind === 'hq' ? `${SITE_NAME} — ${office.city} (HQ)` : `${SITE_NAME} — ${office.city}`,
+      url: urlFor('/contact'),
+      telephone: office.telephone,
+      email: office.email,
+      address: office.address,
+      openingHours: office.openingHours,
+      parentOrganization: { id: ORG_ID, name: SITE_NAME },
+    }),
+  )
+  const faqLd = buildFaqLd({ faqs: FAQS.map((f) => ({ question: f.q, answer: f.a })) })
+  const breadcrumbLd = buildBreadcrumbLd({
+    items: [
+      { name: 'Home', url: urlFor('/') },
+      { name: 'Contact', url: urlFor('/contact') },
+    ],
+  })
+
   return (
     <div>
+      <JsonLd data={[...localBusinessLds, faqLd, breadcrumbLd]} />
       {/* ── Hero ──────────────────────────────────────────────── */}
       <div className="max-w-[1360px] mx-auto px-8 pt-14 pb-6">
         <div className="font-mono text-[11px] tracking-[0.16em] text-[var(--color-muted)] uppercase mb-3">CONTACT · WE PICK UP THE PHONE</div>
@@ -117,45 +147,16 @@ export default async function ContactPage({ params }: Props) {
           {/* Offices */}
           <div className="font-mono text-[10px] tracking-[0.14em] text-[var(--color-muted)] uppercase mb-3">Our offices</div>
           <div className="grid grid-cols-2 gap-3 mb-8">
-            {[
-              {
-                flag: 'INDIA · HQ',
-                city: 'Mumbai',
-                address: 'Andheri East\nMumbai 400 059\nMaharashtra, India',
-                hours: 'Mon–Sat · 09:00–18:30 IST',
-                isHq: true,
-              },
-              {
-                flag: 'INDIA',
-                city: 'Delhi NCR',
-                address: 'Sector 68, Gurugram\nHaryana 122 018\nIndia',
-                hours: 'Mon–Sat · 09:00–18:30 IST',
-                isHq: false,
-              },
-              {
-                flag: 'UAE',
-                city: 'Dubai',
-                address: 'JAFZA · Jebel Ali\nDubai, UAE',
-                hours: 'Sun–Thu · 08:30–17:30 GST',
-                isHq: false,
-              },
-              {
-                flag: 'INDIA',
-                city: 'Chennai',
-                address: 'Ambattur Industrial Estate\nChennai 600 058\nTamil Nadu, India',
-                hours: 'Mon–Sat · 09:00–18:30 IST',
-                isHq: false,
-              },
-            ].map((office) => (
-              <div key={office.city} className="relative border border-[var(--color-border)] bg-[var(--color-elevated)] p-5 flex flex-col gap-2">
-                {office.isHq && (
+            {OFFICES.map((office) => (
+              <div key={office.slug} className="relative border border-[var(--color-border)] bg-[var(--color-elevated)] p-5 flex flex-col gap-2">
+                {office.kind === 'hq' && (
                   <span className="absolute top-4 right-4 font-mono text-[10px] bg-[var(--color-primary)] text-[var(--color-elevated)] px-1.5 py-0.5 tracking-[0.06em]">HQ</span>
                 )}
                 <div className="font-mono text-[11px] text-[var(--color-accent)] tracking-[0.06em]">{office.flag}</div>
                 <h4 className="text-[16px] font-semibold tracking-[-0.01em]">{office.city}</h4>
-                <address className="not-italic text-[13px] text-[var(--color-muted)] leading-[1.5] whitespace-pre-line">{office.address}</address>
+                <address className="not-italic text-[13px] text-[var(--color-muted)] leading-[1.5] whitespace-pre-line">{formatOfficeAddress(office)}</address>
                 <div className="font-mono text-[11px] text-[var(--color-muted)] mt-auto pt-2 border-t border-[var(--color-border-2)]">
-                  {office.hours}
+                  {office.hoursLabel}
                 </div>
               </div>
             ))}

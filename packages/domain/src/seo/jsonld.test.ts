@@ -4,6 +4,7 @@ import {
   buildBreadcrumbLd,
   buildFaqLd,
   buildCollectionLd,
+  buildLocalBusinessLd,
   buildOrgLd,
   buildWebsiteLd,
   mergeJsonLd,
@@ -87,6 +88,43 @@ describe('buildOrgLd / buildWebsiteLd', () => {
     expect((ld.contactPoint as Record<string, unknown>).email).toBe('sales@example.com')
   })
 
+  it('emits an extended Organization with @id, address, sameAs, areaServed', () => {
+    const ld = buildOrgLd({
+      id: 'https://example.com#organization',
+      name: 'Indus Hydraulics',
+      legalName: 'Indus Hydraulic Power Trading LLC',
+      url: 'https://example.com',
+      foundingDate: '2003',
+      sameAs: ['https://linkedin.com/company/indus'],
+      address: {
+        streetAddress: 'Andheri East',
+        addressLocality: 'Mumbai',
+        addressRegion: 'Maharashtra',
+        postalCode: '400 059',
+        addressCountry: 'IN',
+      },
+      contact: { email: 'sales@example.com', telephone: '+91-22-4000-0000' },
+      areaServed: ['IN', 'AE', 'SG'],
+    })
+    expect(ld['@id']).toBe('https://example.com#organization')
+    expect(ld.legalName).toBe('Indus Hydraulic Power Trading LLC')
+    expect(ld.foundingDate).toBe('2003')
+    expect(ld.sameAs).toEqual(['https://linkedin.com/company/indus'])
+    expect((ld.address as Record<string, unknown>).addressCountry).toBe('IN')
+    expect((ld.contactPoint as Record<string, unknown>).contactType).toBe('customer service')
+    expect((ld.contactPoint as Record<string, unknown>).areaServed).toEqual(['IN', 'AE', 'SG'])
+    expect(ld.areaServed).toEqual(['IN', 'AE', 'SG'])
+  })
+
+  it('omits address entirely when no fields are populated', () => {
+    const ld = buildOrgLd({
+      name: 'Indus',
+      url: 'https://example.com',
+      address: { streetAddress: null, addressLocality: null },
+    })
+    expect(ld.address).toBeUndefined()
+  })
+
   it('emits WebSite with sitelinks searchbox when template provided', () => {
     const ld = buildWebsiteLd({
       name: 'Indus Hydraulics',
@@ -94,6 +132,50 @@ describe('buildOrgLd / buildWebsiteLd', () => {
       searchUrlTemplate: 'https://example.com/search?q={search_term_string}',
     })
     expect((ld.potentialAction as Record<string, unknown>)['@type']).toBe('SearchAction')
+  })
+})
+
+describe('buildLocalBusinessLd', () => {
+  it('emits LocalBusiness with PostalAddress and parent reference', () => {
+    const ld = buildLocalBusinessLd({
+      id: 'https://example.com#location-mumbai-hq',
+      name: 'Indus Hydraulics — Mumbai HQ',
+      url: 'https://example.com/contact',
+      telephone: '+91-22-4000-0000',
+      email: 'mumbai@example.com',
+      address: {
+        streetAddress: 'Andheri East',
+        addressLocality: 'Mumbai',
+        addressRegion: 'Maharashtra',
+        postalCode: '400 059',
+        addressCountry: 'IN',
+      },
+      openingHours: ['Mo-Sa 09:00-18:30'],
+      parentOrganization: { id: 'https://example.com#organization', name: 'Indus Hydraulics' },
+    })
+    expect(ld['@type']).toBe('LocalBusiness')
+    expect(ld['@id']).toBe('https://example.com#location-mumbai-hq')
+    expect((ld.address as Record<string, unknown>).addressLocality).toBe('Mumbai')
+    expect(ld.openingHours).toEqual(['Mo-Sa 09:00-18:30'])
+    expect((ld.parentOrganization as Record<string, unknown>)['@id']).toBe('https://example.com#organization')
+  })
+
+  it('honours custom subtype', () => {
+    const ld = buildLocalBusinessLd({
+      type: 'WholesaleStore',
+      name: 'Indus Wholesale',
+      address: { addressLocality: 'Mumbai', addressCountry: 'IN' },
+    })
+    expect(ld['@type']).toBe('WholesaleStore')
+  })
+
+  it('omits parentOrganization when no identifiers provided', () => {
+    const ld = buildLocalBusinessLd({
+      name: 'Indus',
+      address: { addressLocality: 'Mumbai', addressCountry: 'IN' },
+      parentOrganization: {},
+    })
+    expect(ld.parentOrganization).toBeUndefined()
   })
 })
 
