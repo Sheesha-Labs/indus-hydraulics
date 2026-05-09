@@ -1,6 +1,6 @@
 import { mediaUrl } from '../../../lib/media'
 import { signedUrlFor } from '../../../lib/supabase'
-import { pageMetadata, urlFor } from '../../../lib/seo'
+import { ORG_ID, SITE_NAME, pageMetadata, urlFor } from '../../../lib/seo'
 import type { Metadata } from 'next'
 import { notFound, permanentRedirect } from 'next/navigation'
 import Link from 'next/link'
@@ -198,6 +198,12 @@ export default async function ProductPage({ params, searchParams }: Props) {
 
   // JSON-LD assembly. Pages with FAQs additionally emit a FAQPage entity.
   const productUrl = urlFor(`/p/${product.slug}`)
+  const availability =
+    product.status === 'discontinued'
+      ? 'out_of_stock'
+      : product.stockQty > 0
+        ? 'in_stock'
+        : 'lead_time'
   const productLd = buildProductLd({
     name: product.title,
     description: product.descriptionShort,
@@ -206,21 +212,29 @@ export default async function ProductPage({ params, searchParams }: Props) {
     url: productUrl,
     imageUrls: product.images.map((img) => mediaUrl(img.media.storagePath)),
     brand: product.brand ? { name: product.brand.name } : null,
+    // For a distributor, the manufacturer is the brand owner. We surface
+    // it as a separate Organization so AI engines can disambiguate
+    // "who made it" vs "who sells it" (Indus is the seller below).
+    manufacturer: product.brand ? { name: product.brand.name } : null,
     category: product.category ? { name: product.category.name } : null,
+    weightKg: product.weightKg ? Number(product.weightKg) : null,
+    countryOfOrigin: product.countryOfOrigin,
+    // Always emit an Offer for active SKUs — RFQ-only products get
+    // availability + seller without a price, which AI shopping agents
+    // and Google's Merchant Center treat as "request quote" rather than
+    // discarding the product entirely.
     offers:
-      product.listPrice != null
-        ? {
-            price: Number(product.listPrice),
+      product.status === 'draft'
+        ? null
+        : {
+            price: product.listPrice != null ? Number(product.listPrice) : null,
             currency: product.listPriceCurrency,
-            availability:
-              product.status === 'discontinued'
-                ? 'out_of_stock'
-                : product.stockQty > 0
-                  ? 'in_stock'
-                  : 'lead_time',
+            availability,
             url: productUrl,
-          }
-        : null,
+            itemCondition: 'new',
+            sellerId: ORG_ID,
+            sellerName: SITE_NAME,
+          },
     override: product.jsonLdOverride ?? undefined,
   })
   const breadcrumbLd = buildBreadcrumbLd({

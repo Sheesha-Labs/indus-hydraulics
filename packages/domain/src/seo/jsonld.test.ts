@@ -36,6 +36,68 @@ describe('buildProductLd', () => {
     })
     expect((ld.aggregateRating as Record<string, unknown>).ratingValue).toBe('4.6')
   })
+
+  it('emits manufacturer, gtin, weight, countryOfOrigin', () => {
+    const ld = buildProductLd({
+      name: 'Bosch Rexroth A10VSO Pump',
+      sku: 'IH-AP71',
+      mpn: 'A10VSO 71 DR /31R-VPA12N00',
+      gtin13: '4047024876541',
+      url: 'https://example.com/p/foo',
+      imageUrls: [],
+      brand: { name: 'Bosch Rexroth' },
+      manufacturer: { name: 'Bosch Rexroth AG', url: 'https://boschrexroth.com' },
+      weightKg: 18.4,
+      countryOfOrigin: 'DE',
+    })
+    expect(ld.gtin13).toBe('4047024876541')
+    expect((ld.manufacturer as Record<string, unknown>).name).toBe('Bosch Rexroth AG')
+    expect((ld.weight as Record<string, unknown>).value).toBe(18.4)
+    expect((ld.weight as Record<string, unknown>).unitCode).toBe('KGM')
+    expect(ld.countryOfOrigin).toBe('DE')
+  })
+
+  it('always emits Offer with availability + seller even without a price (RFQ products)', () => {
+    const ld = buildProductLd({
+      name: 'RFQ-Only Pump',
+      sku: 'IH-RFQ-01',
+      url: 'https://example.com/p/rfq',
+      imageUrls: [],
+      offers: {
+        availability: 'in_stock',
+        url: 'https://example.com/p/rfq',
+        sellerId: 'https://example.com#organization',
+        sellerName: 'Indus Hydraulics',
+      },
+    })
+    const offer = ld.offers as Record<string, unknown>
+    expect(offer['@type']).toBe('Offer')
+    expect(offer.availability).toBe('https://schema.org/InStock')
+    expect(offer.price).toBeUndefined()
+    expect(offer.priceCurrency).toBeUndefined()
+    expect((offer.seller as Record<string, unknown>)['@id']).toBe('https://example.com#organization')
+  })
+
+  it('emits priceValidUntil and itemCondition when provided', () => {
+    const ld = buildProductLd({
+      name: 'Foo',
+      sku: 'X',
+      url: 'https://example.com/p/x',
+      imageUrls: [],
+      offers: {
+        price: 99.99,
+        currency: 'AED',
+        availability: 'in_stock',
+        priceValidUntil: '2026-12-31',
+        itemCondition: 'new',
+      },
+    })
+    const offer = ld.offers as Record<string, unknown>
+    expect(offer.price).toBe('99.99')
+    expect(offer.priceCurrency).toBe('AED')
+    expect(offer.priceValidUntil).toBe('2026-12-31')
+    expect(offer.itemCondition).toBe('https://schema.org/NewCondition')
+  })
 })
 
 describe('buildBreadcrumbLd', () => {

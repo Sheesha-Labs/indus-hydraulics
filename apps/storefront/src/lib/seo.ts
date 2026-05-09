@@ -14,6 +14,13 @@ export const BASE_URL = (
 
 export const SITE_NAME = 'Indus Hydraulics'
 
+/**
+ * Stable @id for the Organization JSON-LD node, exported so any entity
+ * (Product seller, LocalBusiness parent, Article publisher) can reference
+ * the same Organization without round-tripping through layout.tsx.
+ */
+export const ORG_ID = `${BASE_URL}#organization`
+
 export type StorefrontMetaInput = Omit<BuildMetadataInput, 'pageUrl' | 'siteName'> & {
   /** Path-only, e.g. "/p/foo". */
   path: string
