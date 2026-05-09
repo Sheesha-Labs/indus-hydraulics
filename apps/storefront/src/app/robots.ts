@@ -35,7 +35,28 @@ export default async function robots(): Promise<MetadataRoute.Robots> {
   }
 
   return {
-    rules: { userAgent: '*', allow: '/' },
+    rules: {
+      userAgent: '*',
+      allow: '/',
+      // Crawl budget hygiene. None of these surfaces are useful as
+      // landing pages: account/quote/RFQ require auth or session
+      // state; API routes return JSON; /search, /compare and the
+      // auth pages are session-coupled or thin/duplicative content.
+      disallow: [
+        '/account',
+        '/account/',
+        '/quote',
+        '/quote/',
+        '/api/',
+        '/search',
+        '/compare',
+        '/sign-in',
+        '/sign-up',
+        '/forgot-password',
+        '/reset-password',
+        '/maintenance',
+      ],
+    },
     sitemap: sitemapUrl,
   }
 }
