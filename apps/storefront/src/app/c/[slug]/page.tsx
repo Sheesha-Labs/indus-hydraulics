@@ -20,8 +20,8 @@ type Props = {
   searchParams: Promise<SearchParams>
 }
 
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { slug } = await params
+export async function generateMetadata({ params, searchParams }: Props): Promise<Metadata> {
+  const [{ slug }, sp] = await Promise.all([params, searchParams])
   const [category, seoSetting] = await Promise.all([
     db.category.findUnique({ where: { slug } }),
     db.seoSetting.findFirst({
@@ -37,12 +37,22 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       }))?.storagePath ?? null
     : null
 
+  // Filtered / sorted / paginated variants of a category page are
+  // duplicate-content slices of the base. We let Google FOLLOW the
+  // links (so it discovers products and sub-categories) but tell it
+  // NOT to index the URL, so PageRank concentrates on the canonical
+  // /c/<slug>. Page 1 (no params) keeps the admin-controlled flags.
+  const isFacetVariant = !!(sp.brands || sp.sort || (sp.page && sp.page !== '1'))
+  const robots = isFacetVariant
+    ? { index: false, follow: true }
+    : { index: category.robotsIndex, follow: category.robotsFollow }
+
   return pageMetadata({
     title: category.seoTitle ?? category.name,
     description: category.seoDescription ?? category.shortDescription ?? null,
     path: `/c/${category.slug}`,
     canonicalUrl: category.canonicalUrl,
-    robots: { index: category.robotsIndex, follow: category.robotsFollow },
+    robots,
     ogImagePath: ogPath,
     titleTemplate: seoSetting?.defaultMetaTitleTemplate ?? null,
     defaultDescription: seoSetting?.defaultMetaDescription ?? null,

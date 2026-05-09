@@ -14,7 +14,13 @@ import { BASE_URL } from '../lib/seo'
  *   - robotsIndex=false → skipped
  *   - seoUpdatedAt → preferred over updatedAt for lastModified
  */
-export const dynamic = 'force-dynamic'
+
+// ISR: cache the rendered sitemap for 1 hour. Previously force-dynamic,
+// which re-ran every Prisma query on every Googlebot fetch — at 1,800+
+// SKUs and growing, that's wasteful and DDoS-able. Admin should call
+// `revalidatePath('/sitemap.xml')` after large catalog operations to
+// flush early; otherwise the natural 1h cycle is fine for SEO.
+export const revalidate = 3600
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // Note: industries are still rendered from a hardcoded in-file map in
