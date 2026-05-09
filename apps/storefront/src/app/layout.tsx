@@ -9,17 +9,11 @@ import { JsonLd } from '@indus/ui'
 import SiteHeader from '../components/SiteHeader'
 import SiteFooter from '../components/SiteFooter'
 import CompareTrayBadge from '../components/CompareTrayBadge'
-import { BASE_URL, SITE_NAME } from '../lib/seo'
+import { BASE_URL, ORG_ID, SITE_NAME } from '../lib/seo'
 import { mediaUrl } from '../lib/media'
 import { areasServed, OFFICES } from '../lib/site-locations'
 import { getStoreSettings } from '../lib/store-settings'
 import './globals.css'
-
-/**
- * Stable @id for the Organization node — referenced by LocalBusiness and
- * (future) Article publisher / Product manufacturer entities.
- */
-export const ORG_ID = `${BASE_URL}#organization`
 
 /**
  * Optional, comma-separated list of social profile URLs surfaced as

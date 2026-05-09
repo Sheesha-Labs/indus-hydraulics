@@ -40,15 +40,41 @@ export type ProductLdInput = {
   description?: string | null
   sku: string
   mpn?: string | null
+  /** Global Trade Item Number, 13 digits — used by Google for product matching. */
+  gtin13?: string | null
+  /** Global Trade Item Number, 14 digits — preferred for industrial parts. */
+  gtin14?: string | null
   url: string
   imageUrls: string[]
   brand?: { name: string } | null
+  /**
+   * Manufacturer (separate from `brand` — for distributors these can
+   * differ; Indus is the seller, manufacturer is e.g. Bosch Rexroth).
+   * When omitted, Schema.org consumers will treat `brand` as the
+   * manufacturer.
+   */
+  manufacturer?: { name: string; url?: string | null } | null
   category?: { name: string } | null
+  /** Product weight in kilograms. Renders as a QuantitativeValue. */
+  weightKg?: number | null
+  /** Country of origin — ISO-3166 alpha-2 ("IN") or full name ("India"). */
+  countryOfOrigin?: string | null
   offers?: {
     price?: number | null
     currency?: string | null
     availability?: 'in_stock' | 'out_of_stock' | 'preorder' | 'lead_time'
     url?: string
+    /** ISO date string after which the offer is no longer valid. */
+    priceValidUntil?: string | null
+    /**
+     * Schema.org product condition. Industrial distributors almost always
+     * sell new; the field is exposed so refurb / rebuilt-surplus listings
+     * can override.
+     */
+    itemCondition?: 'new' | 'refurbished' | 'used' | 'damaged'
+    /** @id reference to the seller Organization (e.g. ORG_ID). */
+    sellerId?: string
+    sellerName?: string
   } | null
   override?: unknown
 }
@@ -148,6 +174,13 @@ const SCHEMA_AVAILABILITY: Record<NonNullable<ProductLdInput['offers']>['availab
   lead_time: 'https://schema.org/BackOrder',
 }
 
+const SCHEMA_ITEM_CONDITION: Record<NonNullable<NonNullable<ProductLdInput['offers']>['itemCondition']>, string> = {
+  new: 'https://schema.org/NewCondition',
+  refurbished: 'https://schema.org/RefurbishedCondition',
+  used: 'https://schema.org/UsedCondition',
+  damaged: 'https://schema.org/DamagedCondition',
+}
+
 export function buildProductLd(input: ProductLdInput): JsonLd {
   const base: JsonLd = {
     '@context': 'https://schema.org',
@@ -158,19 +191,48 @@ export function buildProductLd(input: ProductLdInput): JsonLd {
   }
   if (input.description) base.description = input.description
   if (input.mpn) base.mpn = input.mpn
+  if (input.gtin13) base.gtin13 = input.gtin13
+  if (input.gtin14) base.gtin14 = input.gtin14
   if (input.imageUrls.length > 0) base.image = input.imageUrls
   if (input.brand) base.brand = { '@type': 'Brand', name: input.brand.name }
+  if (input.manufacturer) {
+    const m: JsonLd = { '@type': 'Organization', name: input.manufacturer.name }
+    if (input.manufacturer.url) m.url = input.manufacturer.url
+    base.manufacturer = m
+  }
   if (input.category) base.category = input.category.name
+  if (typeof input.weightKg === 'number' && Number.isFinite(input.weightKg)) {
+    base.weight = {
+      '@type': 'QuantitativeValue',
+      value: input.weightKg,
+      unitCode: 'KGM',
+    }
+  }
+  if (input.countryOfOrigin) base.countryOfOrigin = input.countryOfOrigin
   if (input.offers) {
     const o: JsonLd = { '@type': 'Offer' }
-    if (typeof input.offers.price === 'number') {
-      o.price = input.offers.price.toFixed(2)
+    const price = input.offers.price
+    if (typeof price === 'number') {
+      o.price = price.toFixed(2)
       o.priceCurrency = input.offers.currency ?? 'USD'
     }
     if (input.offers.availability) {
       o.availability = SCHEMA_AVAILABILITY[input.offers.availability]
     }
     if (input.offers.url) o.url = input.offers.url
+    if (input.offers.priceValidUntil) o.priceValidUntil = input.offers.priceValidUntil
+    if (input.offers.itemCondition) {
+      o.itemCondition = SCHEMA_ITEM_CONDITION[input.offers.itemCondition]
+    }
+    if (input.offers.sellerId || input.offers.sellerName) {
+      const seller: JsonLd = { '@type': 'Organization' }
+      if (input.offers.sellerId) seller['@id'] = input.offers.sellerId
+      if (input.offers.sellerName) seller.name = input.offers.sellerName
+      o.seller = seller
+    }
+    // Always emit the Offer when one was requested. Even RFQ-only
+    // products without a public price benefit from communicating
+    // availability + seller to crawlers and AI shopping agents.
     base.offers = o
   }
   return mergeJsonLd(base, input.override)

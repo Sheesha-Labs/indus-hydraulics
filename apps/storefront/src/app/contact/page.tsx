@@ -4,8 +4,7 @@ import { db } from '@indus/db'
 import { buildBreadcrumbLd, buildFaqLd, buildLocalBusinessLd } from '@indus/domain'
 import { JsonLd } from '@indus/ui'
 import ContactFormClient from './ContactFormClient'
-import { ORG_ID } from '../layout'
-import { BASE_URL, urlFor, SITE_NAME } from '../../lib/seo'
+import { BASE_URL, ORG_ID, urlFor, SITE_NAME } from '../../lib/seo'
 import { OFFICES, formatOfficeAddress } from '../../lib/site-locations'
 
 // Static-ish marketing page; cache for 1 hour.
