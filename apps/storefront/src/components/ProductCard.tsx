@@ -39,7 +39,7 @@ export default function ProductCard({ product }: ProductCardProps) {
 
   return (
     <Link
-      href={`/p/${product.sku}`}
+      href={`/p/${product.slug}`}
       className="group border border-[var(--color-border)] bg-[var(--color-elevated)] overflow-hidden flex flex-col hover:border-[var(--color-body)] transition-colors"
     >
       {/* Image */}

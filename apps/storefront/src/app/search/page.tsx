@@ -559,7 +559,7 @@ export default async function SearchPage({ searchParams }: Props) {
                       Top product match
                     </div>
                     <Link
-                      href={`/p/${topMatch.sku}`}
+                      href={`/p/${topMatch.slug}`}
                       data-search-result-sku={topMatch.sku}
                       data-search-result-q={query}
                       className="grid grid-cols-[140px_1fr] gap-6 p-5 border border-[var(--color-border)] bg-[var(--color-elevated)] border-l-[3px] border-l-[var(--color-accent)] hover:border-[var(--color-body)] hover:border-l-[var(--color-accent)] transition-colors"
@@ -607,7 +607,7 @@ export default async function SearchPage({ searchParams }: Props) {
                       return (
                         <Link
                           key={product.id}
-                          href={`/p/${product.sku}`}
+                          href={`/p/${product.slug}`}
                           data-search-result-sku={product.sku}
                           data-search-result-q={query}
                           className="grid grid-cols-[80px_1fr_auto] gap-5 p-3.5 border border-[var(--color-border)] bg-[var(--color-elevated)] hover:border-[var(--color-body)] transition-colors items-center"

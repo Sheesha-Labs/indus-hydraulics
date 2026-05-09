@@ -206,7 +206,7 @@ export default async function ComparePage({ searchParams }: Props) {
                       <Link href={`/quote`} className="h-8 flex items-center justify-center bg-[var(--color-accent)] text-white text-[12px] font-medium hover:opacity-90 transition-opacity">
                         Request quote
                       </Link>
-                      <Link href={`/p/${product.sku}`} className="h-8 flex items-center justify-center border border-[var(--color-border)] text-[12px] text-[var(--color-body)] hover:bg-[var(--color-deep)] transition-colors">
+                      <Link href={`/p/${product.slug}`} className="h-8 flex items-center justify-center border border-[var(--color-border)] text-[12px] text-[var(--color-body)] hover:bg-[var(--color-deep)] transition-colors">
                         View details →
                       </Link>
                     </div>

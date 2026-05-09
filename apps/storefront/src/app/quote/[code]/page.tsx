@@ -89,6 +89,7 @@ export default async function RfqStatusPage({ params, searchParams }: Props) {
           product: {
             select: {
               sku: true,
+              slug: true,
               title: true,
               images: { take: 1, orderBy: { position: 'asc' }, include: { media: true } },
             },
@@ -264,7 +265,7 @@ export default async function RfqStatusPage({ params, searchParams }: Props) {
               )}
             </div>
             <div>
-              <Link href={`/p/${line.product.sku}`} className="font-medium text-[14px] hover:text-[var(--color-accent)] transition-colors">
+              <Link href={`/p/${line.product.slug}`} className="font-medium text-[14px] hover:text-[var(--color-accent)] transition-colors">
                 {line.product.title}
               </Link>
               <div className="font-mono text-[11px] text-[var(--color-muted)] mt-0.5">{line.product.sku}</div>
