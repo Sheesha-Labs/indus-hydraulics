@@ -249,6 +249,30 @@ enum MenuLinkType {
   custom_url
 }
 
+enum ServiceCaseStatus {
+  draft
+  published
+  archived
+}
+
+enum ServiceCaseCategory {
+  cylinders
+  hoses
+  pumps
+  valves_manifolds
+  bop_pressure_control
+  ct_wireline
+  wellhead
+  field_service
+  lab_forensics
+  custom_builds
+}
+
+enum ServiceCaseCardTagStyle {
+  standard
+  oil
+}
+
 // ─────────────────────────────────────────────────────────────────────────────
 // IDENTITY & ACCOUNTS
 // ─────────────────────────────────────────────────────────────────────────────
@@ -582,6 +606,99 @@ model IndustryCaseStudy {
   @@map("industry_case_studies")
 }
 
+// ─────────────────────────────────────────────────────────────────────────────
+// SERVICE CASES — case-study-led services section under /services
+// Replaces the old "BOP services as products" pattern. Every case is a
+// structured engineering writeup: hero (pills, title-with-accent, deck, hero
+// figure, meta strip) + body (8 typed-block kinds renderered via switch) +
+// sticky right rail (CTA, pull quote, specs at glance, gallery, downloads).
+// Block types live in @indus/domain/src/service-case-blocks.ts (Zod-validated).
+// ─────────────────────────────────────────────────────────────────────────────
+
+model ServiceCase {
+  id          String              @id @default(uuid())
+  slug        String              @unique
+  caseNumber  String // Display ordinal, e.g. "07" — not unique
+  status      ServiceCaseStatus   @default(draft)
+  publishedAt DateTime?
+  isFeatured  Boolean             @default(false) // Case of the Week — exactly one expected published
+
+  // Hero
+  category       ServiceCaseCategory // For chip-filter & related-cases lookup
+  topicLabel     String // Display pill text, e.g. "Cylinders · Hoses · Oilfield"
+  region         String? // "🇦🇪 UAE · Jebel Ali" — hero region pill (with flag)
+  caseDateLabel  String? // "MAR 2026 · BAY 2 / ON-SITE" — hero meta line
+  title          String
+  titleAccent    String? // Optional italic-accent phrase highlighted within the title
+  deck           String // Serif sub-headline paragraph
+  heroImageId    String?
+  heroImage      Media?  @relation("ServiceCaseHero", fields: [heroImageId], references: [id], onDelete: SetNull)
+  heroImageCaption String? // Caption under hero image
+  heroImageCredit  String? // "PHOTO · K. AL MARZOUQI · 2026-03-04"
+
+  // Meta strip — 5 customisable {label, value, valueSmall?, style?} cells.
+  // Always rendered alongside a hard-coded "Quote a similar job" CTA cell.
+  metaCells Json @default("[]")
+
+  // Body blocks — array of typed BodyBlock objects (see @indus/domain).
+  bodyBlocks Json @default("[]")
+
+  // Right rail
+  ctaCardTitle      String?
+  ctaCardBody       String?
+  ctaCardPhone      String? // Optional secondary CTA line, e.g. "+971 4 881 2345"
+  pullQuoteText     String?
+  pullQuoteAuthor   String?
+  pullQuoteRole     String?
+  pullQuoteLocation String?
+  specsAtGlance     Json     @default("[]") // Array<{ label, value }>
+  galleryImageIds   Json     @default("[]") // string[] — Media ids; rendered as 6-up thumb grid
+  galleryTotalCount Int      @default(0) // For "View N photos →" link
+  downloads         Json     @default("[]") // Array<{ label, url, size, format }>
+
+  // Footer of article
+  caseFileMeta String? // "Case file · INTAKE-... · WO-... · Published... · Updated..."
+
+  // Index-grid card display
+  cardOneLiner      String? // Short paragraph under card heading (defaults to deck if null)
+  cardOutcomePills  Json                    @default("[]") // Array<{ label, style: 'good' | 'accent' | 'neutral' }>
+  cardDurationLabel String? // "96 H ON BENCH" overlay on card image
+  cardTagStyle      ServiceCaseCardTagStyle @default(standard)
+  cardTagLabel      String // "OILFIELD" / "CYLINDERS" — display tag override (independent of category)
+
+  // Sort/filter dimensions
+  durationDays    Int? // For sort=tat (ascending)
+  savingsAmount   Int? // For sort=savings (descending) — minor units, currency-typed
+  savingsCurrency Currency?
+
+  // SEO OS — same surface as Product / BlogPost
+  seoTitle           String?
+  seoDescription     String?
+  canonicalUrl       String?
+  robotsIndex        Boolean     @default(true)
+  robotsFollow       Boolean     @default(true)
+  ogImageMediaId     String?
+  ogImage            Media?      @relation("ServiceCaseOg", fields: [ogImageMediaId], references: [id], onDelete: SetNull)
+  focusKeyword       String?
+  sitemapPriority    Decimal?    @db.Decimal(2, 1)
+  sitemapChangeFreq  ChangeFreq?
+  excludeFromSitemap Boolean     @default(false)
+  jsonLdOverride     Json?
+  seoUpdatedAt       DateTime?
+
+  // FTS column managed by raw SQL migration (Unsupported: tsvector).
+  // STORED, weighted A→B→C across title / deck / cardOneLiner.
+  searchTsv Unsupported("tsvector")?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([status, publishedAt])
+  @@index([category, status, publishedAt])
+  @@index([isFeatured, status, publishedAt])
+  @@map("service_cases")
+}
+
 model Product {
   id                String        @id @default(uuid())
   sku               String        @unique
@@ -809,6 +926,8 @@ model Media {
   navMenuItemPromos  NavMenuItem[]     @relation("NavMenuItemPromo")
   storeSettingsLogos StoreSettings[]   @relation("StoreSettingsLogo")
   homepageHeroSlides HomepageHeroSlide[]
+  serviceCaseHeroes  ServiceCase[]     @relation("ServiceCaseHero")
+  serviceCaseOgImages ServiceCase[]    @relation("ServiceCaseOg")
 
   @@map("media")
 }

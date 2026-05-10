@@ -8,6 +8,9 @@
     "typecheck": "tsc --noEmit",
     "test": "vitest run"
   },
+  "dependencies": {
+    "zod": "^4.4.1"
+  },
   "devDependencies": {
     "typescript": "^5.8.3",
     "vitest": "^3.2.2"

@@ -10,6 +10,7 @@
   /* ── Fonts ── */
   --font-sans: var(--font-inter), system-ui, -apple-system, 'Helvetica Neue', sans-serif;
   --font-mono: var(--font-ibm-plex-mono), ui-monospace, 'SFMono-Regular', Menlo, monospace;
+  --font-serif: var(--font-source-serif), Georgia, 'Times New Roman', serif;
 
   /* ── Surface colors ── */
   --color-surface: #f5f3ee;
@@ -128,6 +129,49 @@ button {
 :focus-visible {
   outline: 2px solid var(--color-accent);
   outline-offset: 2px;
+}
+
+/* ── Service-case article ── */
+/* Source Serif 4 body for case studies; orange accent drop-cap on first letter
+   of paragraphs marked .sc-lead. */
+.sc-article-body {
+  font-family: var(--font-serif);
+  font-size: 18px;
+  line-height: 1.65;
+  color: var(--color-body);
+}
+.sc-article-body p {
+  margin: 0 0 22px;
+}
+.sc-article-body strong {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+.sc-article-body a {
+  color: var(--color-accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.sc-article-body ul {
+  padding-left: 22px;
+  margin: 0 0 22px;
+}
+.sc-article-body ul li {
+  margin: 6px 0;
+}
+.sc-lead {
+  font-size: 22px;
+  line-height: 1.5;
+  color: var(--color-primary);
+}
+.sc-lead::first-letter {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 0.9;
+  float: left;
+  margin: 6px 12px 0 0;
+  color: var(--color-accent);
 }
 
 /* ── Scrollbar (webkit) ── */

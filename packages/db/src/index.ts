@@ -52,7 +52,18 @@ export const db =
 if (process.env.NODE_ENV !== 'production') globalForPrisma.prisma = db
 
 export { Prisma }
-export type { Redirect, SeoSetting, StoreSettings, EmailTemplate } from '@prisma/client'
+export type {
+  Redirect,
+  SeoSetting,
+  StoreSettings,
+  EmailTemplate,
+  ServiceCase,
+} from '@prisma/client'
+export {
+  ServiceCaseStatus,
+  ServiceCaseCategory,
+  ServiceCaseCardTagStyle,
+} from '@prisma/client'
 export {
   nextRfqCode,
   nextAccountCode,

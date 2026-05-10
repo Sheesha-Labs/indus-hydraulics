@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Inter, IBM_Plex_Mono } from 'next/font/google'
+import { Inter, IBM_Plex_Mono, Source_Serif_4 } from 'next/font/google'
 import { unstable_cache } from 'next/cache'
 import { Analytics } from '@vercel/analytics/next'
 import { SpeedInsights } from '@vercel/speed-insights/next'
@@ -50,6 +50,17 @@ const ibmPlexMono = IBM_Plex_Mono({
   subsets: ['latin'],
   weight: ['400', '500'],
   variable: '--font-ibm-plex-mono',
+  display: 'swap',
+})
+
+// Source Serif 4 — body font for /services case-study articles. Loaded here
+// so the variable is on <html> and available to any route that opts in via
+// .sc-article-body / .sc-lead utilities (or font-serif Tailwind class).
+const sourceSerif = Source_Serif_4({
+  subsets: ['latin'],
+  weight: ['400', '500', '600'],
+  style: ['normal', 'italic'],
+  variable: '--font-source-serif',
   display: 'swap',
 })
 
@@ -104,7 +115,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${ibmPlexMono.variable} h-full`}
+      className={`${inter.variable} ${ibmPlexMono.variable} ${sourceSerif.variable} h-full`}
       suppressHydrationWarning
     >
       <body className="min-h-full flex flex-col bg-[var(--color-surface)] text-[var(--color-primary)]">
