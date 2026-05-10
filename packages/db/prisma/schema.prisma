@@ -453,6 +453,22 @@ model Brand {
   seoTitle                String?
   seoDescription          String?
   isPublished             Boolean @default(false)
+  // Display order on the listing + nav lists. 0 = default.
+  position                Int     @default(0)
+
+  // Specialist card on the storefront brand page. All fields optional
+  // so brands can ship without an account-manager assignment.
+  accountManagerName     String?
+  accountManagerTitle    String?
+  accountManagerYearsExp String?
+  accountManagerInitials String?
+
+  // Stats row — replaces the previously hardcoded "740 kW · Reliance
+  // Steel · Jamnagar" and "Partner since 1998" placeholders.
+  fastestLeadTime       String?
+  largestInstallValue   String?
+  largestInstallContext String?
+  partnerSince          Int?
 
   // SEO OS — inline overrides
   canonicalUrl       String?
@@ -469,8 +485,31 @@ model Brand {
 
   products     Product[]
   navMenuItems NavMenuItem[]
+  caseStudies  BrandCaseStudy[]
 
   @@map("brands")
+}
+
+model BrandCaseStudy {
+  id          String   @id @default(uuid())
+  brandId     String
+  brand       Brand    @relation(fields: [brandId], references: [id], onDelete: Cascade)
+  tag         String // e.g. "RELIANCE · 2024"
+  title       String
+  description String
+  year        String?
+  // Up to ~3 inline stats shown on the case-study card.
+  // Shape: Array<{ value: string; label: string }>.
+  stats       Json     @default("[]")
+  imageId     String?
+  image       Media?   @relation("BrandCaseStudyImage", fields: [imageId], references: [id], onDelete: SetNull)
+  position    Int      @default(0)
+  isPublished Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([brandId])
+  @@map("brand_case_studies")
 }
 
 model Industry {
@@ -756,6 +795,7 @@ model Media {
   categoryImages     Category[]
   brandLogos         Brand[]           @relation("BrandLogo")
   brandHeroes        Brand[]           @relation("BrandHero")
+  brandCaseStudyImages BrandCaseStudy[] @relation("BrandCaseStudyImage")
   industryHeroes     Industry[]
   industryCaseStudyImages IndustryCaseStudy[] @relation("IndustryCaseStudyImage")
   rfqAttachments     RfqAttachment[]
