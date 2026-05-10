@@ -24,11 +24,11 @@ import { getReplacementBrands, getReplacementSitemapKeys } from '../lib/replacem
 export const revalidate = 3600
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  // Note: industries are still rendered from a hardcoded in-file map in
-  // industries/[slug]/page.tsx. They're omitted from the sitemap here until
-  // that page migrates to db.industry — including DB rows would emit URLs
-  // that 404 on slugs the hardcoded map doesn't know.
-  const [products, categories, brands, blogPosts, cmsPages] = await Promise.all([
+  // Industries became DB-backed in the Tier C migration. The detail
+  // page reads from db.industry; we include published rows here so
+  // Google can finally crawl them (they were excluded before because
+  // the hardcoded slug map could 404 on DB-only slugs).
+  const [products, categories, brands, blogPosts, cmsPages, industries] = await Promise.all([
     db.product.findMany({
       where: { status: 'active' },
       select: {
@@ -80,6 +80,17 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       select: {
         slug: true,
         updatedAt: true,
+        seoUpdatedAt: true,
+        excludeFromSitemap: true,
+        robotsIndex: true,
+        sitemapPriority: true,
+        sitemapChangeFreq: true,
+      },
+    }),
+    db.industry.findMany({
+      where: { isPublished: true },
+      select: {
+        slug: true,
         seoUpdatedAt: true,
         excludeFromSitemap: true,
         robotsIndex: true,
@@ -154,6 +165,19 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     })),
   )
 
+  // Industries — the buildSitemapEntries helper expects path prefixes
+  // it knows about; industries weren't included previously so we emit
+  // entries inline here using the same shape.
+  const industryEntries: MetadataRoute.Sitemap = industries
+    .filter((i) => !i.excludeFromSitemap && i.robotsIndex)
+    .map((i) => ({
+      url: `${BASE_URL}/industries/${i.slug}`,
+      lastModified: i.seoUpdatedAt ?? undefined,
+      changeFrequency:
+        i.sitemapChangeFreq ?? ('monthly' as const),
+      priority: i.sitemapPriority ? Number(i.sitemapPriority) : 0.6,
+    }))
+
   const staticEntries = buildStaticEntries(BASE_URL, [
     { path: '', priority: 1.0, changeFrequency: 'weekly' },
     { path: '/blog', priority: 0.6, changeFrequency: 'weekly' },
@@ -190,6 +214,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...brandEntries,
     ...blogEntries,
     ...cmsEntries,
+    ...industryEntries,
     ...replacementBrandEntries,
     ...replacementEntries,
   ]
