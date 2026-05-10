@@ -6,7 +6,7 @@ export type AccountTier = 'bronze' | 'silver' | 'gold' | 'platinum'
 
 export type RfqUrgency = 'routine' | 'priority' | 'plant_down'
 
-export type Currency = 'USD' | 'INR' | 'EUR' | 'AED' | 'SAR'
+export type Currency = 'USD' | 'EUR' | 'AED' | 'SAR'
 
 export const SUPPORTED_LOCALES: Locale[] = ['en', 'ar']
 export const DEFAULT_LOCALE: Locale = 'en'

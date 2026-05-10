@@ -76,7 +76,7 @@ export default function ContactFormClient() {
         </div>
         <div className="grid grid-cols-2 gap-3">
           <Field label="Work email *" name="email" type="email" placeholder="rohit@company.com" required error={fieldErrors.email} />
-          <Field label="Phone / WhatsApp" name="phone" type="tel" placeholder="+91 98XXX XXXXX" mono error={fieldErrors.phone} />
+          <Field label="Phone / WhatsApp" name="phone" type="tel" placeholder="+971 5X XXX XXXX" mono error={fieldErrors.phone} />
         </div>
         <div className="grid grid-cols-2 gap-3">
           <Field label="Company *" name="company" placeholder="Your company" required error={fieldErrors.company} />

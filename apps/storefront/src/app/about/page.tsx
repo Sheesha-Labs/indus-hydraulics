@@ -18,12 +18,12 @@ export async function generateMetadata(): Promise<Metadata> {
 type Props = { params: Promise<Record<string, never>> }
 
 const TIMELINE = [
-  { year: '2003', title: 'Founded in Mumbai', desc: 'Started as a sole-trader Yuken distributor. First customer: a textile mill in Surat.' },
-  { year: '2008', title: 'First export order', desc: 'Shipped to Sharjah, UAE. Discovered our future was global.' },
-  { year: '2012', title: 'MIDC warehouse opens', desc: 'Moved into the current 14,000 sq.ft. facility in Andheri.' },
-  { year: '2017', title: 'Houston hub', desc: 'Opened our Americas office and bonded warehouse to serve oil & gas customers.' },
-  { year: '2021', title: 'Engineering desk launched', desc: 'Made our applications team free for any customer with a question.' },
-  { year: '2024', title: 'Dubai bonded zone', desc: 'JAFZA presence for tax-efficient Middle East distribution.' },
+  { year: '2003', title: 'Founded in Dubai', desc: 'Started as a sole-trader hydraulics trading company in Al Quasis, importing genuine pumps and valves for UAE industrial customers. First customer: a steel re-rolling mill in Sharjah Industrial Area.' },
+  { year: '2008', title: 'First GCC export', desc: 'Shipped our first cross-border project consignment to Dammam, Saudi Arabia. Discovered our future was regional, not just local.' },
+  { year: '2012', title: 'Al Quasis warehouse opens', desc: 'Moved into our current 14,000 sq.ft. facility off Al Nahda Street. Consolidated stock under one roof for the first time.' },
+  { year: '2017', title: 'Hose assembly line commissioned', desc: 'Brought hydraulic hose crimping and fittings assembly in-house. Replacement assemblies that used to take days now leave the workshop the same afternoon.' },
+  { year: '2021', title: 'Engineering desk launched', desc: 'Made our applications team free for any customer with a question — from a circuit diagram to a failed-seal photo.' },
+  { year: '2024', title: 'JAFZA bonded presence', desc: 'Opened a Jebel Ali Free Zone bonded position for tax-efficient regional distribution across the GCC and wider MENA.' },
   { year: '2026', title: 'This website', desc: 'The catalogue you\'re browsing right now — built by the same engineers who answer the phone.' },
 ]
 
@@ -66,7 +66,7 @@ export default async function AboutPage({ params }: Props) {
           </h1>
         </div>
         <p className="text-[17px] text-[var(--color-muted)] leading-[1.55] max-w-[520px]">
-          We started in a 200-square-foot office in Andheri with one Yuken distributorship and a fax machine. Twenty-three years later we ship 1,800+ SKUs to 47 countries — and we still know the bore, rod and stroke of every cylinder we sell.
+          We started in a 200-square-foot office in Al Quasis with one hydraulics distributorship and a fax machine. Twenty-three years later we ship 1,800+ SKUs to 47 countries — and we still know the bore, rod and stroke of every cylinder we sell.
         </p>
       </div>
 
@@ -92,9 +92,9 @@ export default async function AboutPage({ params }: Props) {
         <div className="grid gap-14" style={{ gridTemplateColumns: '1fr 2fr' }}>
           <div>
             <div className="font-mono text-[11px] tracking-[0.16em] text-[var(--color-muted)] uppercase mb-2">OUR STORY</div>
-            <h2 className="text-[36px] font-semibold tracking-[-0.02em] leading-[1.1] mb-4">From one fax machine to four warehouses.</h2>
+            <h2 className="text-[36px] font-semibold tracking-[-0.02em] leading-[1.1] mb-4">From a trading desk to an assembly line.</h2>
             <p className="text-[var(--color-muted)] leading-[1.6] text-[14px]">
-              Indus Hydraulics was founded in 2003 by Ravi Bhatt, a mechanical engineer who got tired of waiting six weeks for a replacement valve. The company was built around a single idea: stock the parts engineers actually need, ship them today.
+              Indus Hydraulics was founded in 2003 by Ravi Bhatt, a mechanical engineer who got tired of watching UAE plants wait six weeks for a replacement valve. The company was built around a single idea: stock the parts engineers actually need, ship them today.
             </p>
           </div>
           <div>

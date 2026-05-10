@@ -104,7 +104,7 @@ export default function ProfileFormClient({ initial }: Props) {
             name="phone"
             type="tel"
             defaultValue={initial.phone ?? ''}
-            placeholder="+91 98XXX XXXXX"
+            placeholder="+971 5X XXX XXXX"
             mono
             error={basicsErrors.phone}
           />

@@ -14,12 +14,6 @@ describe('formatPrice — currency rendering', () => {
     expect(r.primary).toMatch(/AED\s10,580/)
   })
 
-  test('INR uses ₹', () => {
-    const r = formatPrice({ listPrice: 75000, currency: 'INR' })
-    expect(r.primary).toMatch(/₹|INR/)
-    expect(r.primary).toContain('75,000')
-  })
-
   test('EUR uses €', () => {
     const r = formatPrice({ listPrice: 2500, currency: 'EUR' })
     expect(r.primary).toMatch(/€/)

@@ -73,10 +73,18 @@ export function formatOfficeAddress(office: Office): string {
 function regionToCountryName(code: string | null | undefined): string | null {
   if (!code) return null
   switch (code) {
-    case 'IN':
-      return 'India'
     case 'AE':
       return 'United Arab Emirates'
+    case 'SA':
+      return 'Saudi Arabia'
+    case 'OM':
+      return 'Oman'
+    case 'QA':
+      return 'Qatar'
+    case 'BH':
+      return 'Bahrain'
+    case 'KW':
+      return 'Kuwait'
     default:
       return code
   }

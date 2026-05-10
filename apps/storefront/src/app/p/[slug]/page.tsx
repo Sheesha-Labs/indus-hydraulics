@@ -495,7 +495,7 @@ export default async function ProductPage({ params, searchParams }: Props) {
             {/* Trust row */}
             <div className="grid grid-cols-3 gap-0 pt-5 border-t border-[var(--color-border-2)]">
               {[
-                { title: 'Same-day dispatch', sub: 'Order before 14:00 IST · Mumbai & Houston' },
+                { title: 'Same-day dispatch', sub: 'Order before 14:00 GST · Dubai HQ' },
                 { title: `${product.warrantyMonths ?? 24}-month warranty`, sub: 'Manufacturer-backed · genuine parts only' },
                 { title: 'Engineering support', sub: 'Free application help · same-day response' },
               ].map((trust, i) => (

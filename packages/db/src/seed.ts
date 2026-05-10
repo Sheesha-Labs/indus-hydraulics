@@ -166,13 +166,13 @@ async function main() {
   console.log(`  ✓ Staff user: ${staffUser.email}`)
 
   // ── Accounts & contacts ────────────────────────────────────────────────────
-  const tataAccount = await db.account.upsert({
-    where: { code: 'TATA-001' },
+  const steelAccount = await db.account.upsert({
+    where: { code: 'EMSTEEL-001' },
     create: {
-      code: 'TATA-001',
-      displayName: 'Tata Steel',
-      legalName: 'Tata Steel Limited',
-      region: 'India',
+      code: 'EMSTEEL-001',
+      displayName: 'Emirates Steel',
+      legalName: 'Emirates Steel Arkan PJSC',
+      region: 'UAE',
       tier: 'gold',
       status: 'active',
       creditLimit: 5000000,
@@ -181,13 +181,13 @@ async function main() {
     update: {},
   })
 
-  const ongcAccount = await db.account.upsert({
-    where: { code: 'ONGC-001' },
+  const oilGasAccount = await db.account.upsert({
+    where: { code: 'ADNOC-001' },
     create: {
-      code: 'ONGC-001',
-      displayName: 'ONGC',
-      legalName: 'Oil and Natural Gas Corporation Limited',
-      region: 'India',
+      code: 'ADNOC-001',
+      displayName: 'ADNOC',
+      legalName: 'Abu Dhabi National Oil Company',
+      region: 'UAE',
       tier: 'platinum',
       status: 'active',
       creditLimit: 10000000,
@@ -197,12 +197,12 @@ async function main() {
   })
 
   const marineAccount = await db.account.upsert({
-    where: { code: 'ESSAR-001' },
+    where: { code: 'DPWORLD-001' },
     create: {
-      code: 'ESSAR-001',
-      displayName: 'Essar Ports',
-      legalName: 'Essar Ports Limited',
-      region: 'India',
+      code: 'DPWORLD-001',
+      displayName: 'DP World',
+      legalName: 'DP World UAE Region',
+      region: 'UAE',
       tier: 'silver',
       status: 'active',
       creditLimit: 2000000,
@@ -215,14 +215,14 @@ async function main() {
 
   // Contacts
   await db.accountContact.upsert({
-    where: { email: 'ravi@tatasteel.com' },
+    where: { email: 'ravi@emiratessteel.ae' },
     create: {
-      accountId: tataAccount.id,
-      email: 'ravi@tatasteel.com',
+      accountId: steelAccount.id,
+      email: 'ravi@emiratessteel.ae',
       firstName: 'Ravi',
       lastName: 'Kumar',
-      phone: '+91 22 6665 8000',
-      passwordHash: await hash('tatasteel123'),
+      phone: '+971 2 507 0000',
+      passwordHash: await hash('emsteel123'),
       role: 'admin',
       isActive: true,
     },
@@ -230,15 +230,15 @@ async function main() {
   })
 
   await db.accountContact.upsert({
-    where: { email: 'priya@tatasteel.com' },
+    where: { email: 'priya@emiratessteel.ae' },
     create: {
-      accountId: tataAccount.id,
-      email: 'priya@tatasteel.com',
+      accountId: steelAccount.id,
+      email: 'priya@emiratessteel.ae',
       firstName: 'Priya',
       lastName: 'Sharma',
 
-      phone: '+91 22 6665 8001',
-      passwordHash: await hash('tatasteel123'),
+      phone: '+971 2 507 0001',
+      passwordHash: await hash('emsteel123'),
       role: 'procurement',
       isActive: true,
     },
@@ -246,15 +246,15 @@ async function main() {
   })
 
   await db.accountContact.upsert({
-    where: { email: 'arjun@ongc.co.in' },
+    where: { email: 'arjun@adnoc.ae' },
     create: {
-      accountId: ongcAccount.id,
-      email: 'arjun@ongc.co.in',
+      accountId: oilGasAccount.id,
+      email: 'arjun@adnoc.ae',
       firstName: 'Arjun',
       lastName: 'Mehta',
 
-      phone: '+91 79 2323 3456',
-      passwordHash: await hash('ongcpass123'),
+      phone: '+971 2 707 0000',
+      passwordHash: await hash('adnocpass123'),
       role: 'admin',
       isActive: true,
     },
@@ -262,15 +262,15 @@ async function main() {
   })
 
   await db.accountContact.upsert({
-    where: { email: 'sunita@ongc.co.in' },
+    where: { email: 'sunita@adnoc.ae' },
     create: {
-      accountId: ongcAccount.id,
-      email: 'sunita@ongc.co.in',
+      accountId: oilGasAccount.id,
+      email: 'sunita@adnoc.ae',
       firstName: 'Sunita',
       lastName: 'Patel',
 
-      phone: '+91 79 2323 3457',
-      passwordHash: await hash('ongcpass123'),
+      phone: '+971 2 707 0001',
+      passwordHash: await hash('adnocpass123'),
       role: 'procurement',
       isActive: true,
     },
@@ -278,15 +278,15 @@ async function main() {
   })
 
   await db.accountContact.upsert({
-    where: { email: 'kapil@essarports.com' },
+    where: { email: 'kapil@dpworld.com' },
     create: {
       accountId: marineAccount.id,
-      email: 'kapil@essarports.com',
+      email: 'kapil@dpworld.com',
       firstName: 'Kapil',
       lastName: 'Desai',
 
-      phone: '+91 22 6692 1111',
-      passwordHash: await hash('essar123pass'),
+      phone: '+971 4 881 5555',
+      passwordHash: await hash('dpworld123pass'),
       role: 'admin',
       isActive: true,
     },
@@ -294,15 +294,15 @@ async function main() {
   })
 
   await db.accountContact.upsert({
-    where: { email: 'meena@essarports.com' },
+    where: { email: 'meena@dpworld.com' },
     create: {
       accountId: marineAccount.id,
-      email: 'meena@essarports.com',
+      email: 'meena@dpworld.com',
       firstName: 'Meena',
       lastName: 'Joshi',
 
-      phone: '+91 22 6692 1112',
-      passwordHash: await hash('essar123pass'),
+      phone: '+971 4 881 5556',
+      passwordHash: await hash('dpworld123pass'),
       role: 'procurement',
       isActive: true,
     },
