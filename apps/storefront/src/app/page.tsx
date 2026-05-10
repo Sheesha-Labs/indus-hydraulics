@@ -143,7 +143,7 @@ export default async function HomePage() {
   ]
 
   const uspItems = [
-    { n: '01', title: 'Same-day dispatch', body: 'Stock orders before 14:00 IST ship same day from Mumbai & Houston.' },
+    { n: '01', title: 'Same-day dispatch', body: 'Stock orders before 14:00 GST ship same day from our Dubai HQ.' },
     { n: '02', title: 'Engineering support', body: 'Speak to a real applications engineer — not a call centre.' },
     { n: '03', title: 'Datasheets & CAD', body: 'Every SKU ships with a PDF datasheet and downloadable 3D model.' },
     { n: '04', title: 'Backed by warranty', body: '24-month manufacturer warranty across the entire catalogue.' },
@@ -160,7 +160,7 @@ export default async function HomePage() {
           {/* Left copy */}
           <div>
             <span className="font-mono text-[11px] tracking-[0.16em] uppercase text-[var(--color-muted)]">
-              EST. 2003 — MUMBAI · HOUSTON · DUBAI
+              EST. 2003 — DUBAI · UNITED ARAB EMIRATES
             </span>
             <h1 className="text-[clamp(40px,5vw,64px)] font-semibold leading-[1.02] tracking-[-0.035em] mt-4 mb-5 text-balance">
               Niche hydraulic components, sourced for engineers who{' '}

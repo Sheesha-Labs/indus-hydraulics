@@ -6,6 +6,7 @@ import { JsonLd } from '@indus/ui'
 import ContactFormClient from './ContactFormClient'
 import { BASE_URL, ORG_ID, urlFor, SITE_NAME } from '../../lib/seo'
 import { OFFICES, formatOfficeAddress } from '../../lib/site-locations'
+import { getStoreSettings } from '../../lib/store-settings'
 
 // Static-ish marketing page; cache for 1 hour.
 export const revalidate = 3600
@@ -22,14 +23,76 @@ type Props = { params: Promise<Record<string, never>> }
 
 const FAQS = [
   { q: 'How fast do you respond to RFQs?', a: 'Routine RFQs within 1 business day. Priority within 4 working hours. Plant-down within 30 minutes, 24/7.' },
-  { q: 'Do you supply to customers outside India?', a: 'Yes — we supply to UAE, Singapore, Malaysia and other markets. Contact us for freight terms and lead times.' },
+  { q: 'Do you supply to customers outside the UAE?', a: 'Yes — we ship internationally to India, GCC markets, Southeast Asia and beyond. Contact us for freight terms and lead times to your country.' },
   { q: 'Can I get a sample or trial unit?', a: 'For qualified projects above a threshold value, we can arrange trial units with a deposit. Speak to your sales engineer.' },
-  { q: 'Do you offer on-site commissioning?', a: 'Yes, for hydraulic systems we supply. Our certified technicians cover major industrial sites across India.' },
+  { q: 'Do you offer on-site commissioning?', a: 'Yes, for hydraulic systems we supply. Our certified technicians cover major industrial sites across the UAE and partner regions.' },
   { q: 'What brands do you stock?', a: 'Bosch Rexroth, Parker Hannifin, Atos, Hydac, Stauff, Eaton Vickers, Sun Hydraulics, and more. Full brand list on our brands page.' },
 ]
 
 export default async function ContactPage({ params }: Props) {
   await params
+  const settings = await getStoreSettings()
+  const hq = OFFICES.find((o) => o.kind === 'hq') ?? OFFICES[0]
+
+  // Channels read live values from StoreSettings (admin-editable). When
+  // a value is unset we drop the channel entirely rather than ship a
+  // placeholder. WhatsApp uses the same digit-stripping pattern as the
+  // PDP CTA so wa.me accepts the number.
+  const phoneE164 = hq?.telephone ?? settings.contactPhone
+  const phoneDigits = phoneE164 ? phoneE164.replace(/\D/g, '') : null
+  const email = hq?.email ?? settings.contactEmail
+  const hours = hq?.hoursLabel ?? settings.contactHours
+  type Channel = {
+    title: string
+    sub: string
+    value: string
+    href: string
+    iconBg: string
+    icon: string
+    badge: string | null
+    badgeColor: string
+    badgeBg: string
+  }
+  const channels: Channel[] = []
+  if (phoneDigits && phoneE164) {
+    channels.push({
+      title: 'WhatsApp',
+      sub: 'Fastest response · typically < 15 min',
+      value: phoneE164,
+      href: `https://wa.me/${phoneDigits}`,
+      iconBg: '#16a34a',
+      icon: '💬',
+      badge: 'Online now',
+      badgeColor: 'oklch(0.4 0.12 150)',
+      badgeBg: 'oklch(0.95 0.05 150)',
+    })
+  }
+  if (email) {
+    channels.push({
+      title: 'Email',
+      sub: 'Response within 4 business hours',
+      value: email,
+      href: `mailto:${email}`,
+      iconBg: 'var(--color-primary)',
+      icon: '✉',
+      badge: null,
+      badgeColor: '',
+      badgeBg: '',
+    })
+  }
+  if (phoneE164) {
+    channels.push({
+      title: 'Phone',
+      sub: hours ?? 'Mon–Fri · 09:00–18:00 GST',
+      value: phoneE164,
+      href: `tel:${phoneE164.replace(/\s/g, '')}`,
+      iconBg: 'var(--color-accent)',
+      icon: '📞',
+      badge: null,
+      badgeColor: '',
+      badgeBg: '',
+    })
+  }
 
   // JSON-LD entity graph: a LocalBusiness per office (each linked back to
   // the root Organization), plus FAQPage from the FAQS array and a
@@ -79,44 +142,7 @@ export default async function ContactPage({ params }: Props) {
         <div>
           {/* Channels */}
           <div className="flex flex-col gap-3 mb-8">
-            {[
-              {
-                cls: 'wa',
-                iconBg: '#16a34a',
-                icon: '💬',
-                title: 'WhatsApp',
-                sub: 'Fastest response · typically < 15 min',
-                value: '+91 98XXX XXXXX',
-                badge: 'Online now',
-                badgeColor: 'oklch(0.4 0.12 150)',
-                badgeBg: 'oklch(0.95 0.05 150)',
-                href: 'https://wa.me/91980000000',
-              },
-              {
-                cls: 'email',
-                iconBg: 'var(--color-primary)',
-                icon: '✉',
-                title: 'Email',
-                sub: 'Response within 4 business hours',
-                value: 'enquiries@indushydraulics.com',
-                badge: null,
-                badgeColor: '',
-                badgeBg: '',
-                href: 'mailto:enquiries@indushydraulics.com',
-              },
-              {
-                cls: 'phone',
-                iconBg: 'var(--color-accent)',
-                icon: '📞',
-                title: 'Phone',
-                sub: 'Mon–Sat · 09:00–18:30 IST',
-                value: '+91 22 4000 0000',
-                badge: null,
-                badgeColor: '',
-                badgeBg: '',
-                href: 'tel:+912240000000',
-              },
-            ].map((ch) => (
+            {channels.map((ch) => (
               <a
                 key={ch.title}
                 href={ch.href}
@@ -143,9 +169,11 @@ export default async function ContactPage({ params }: Props) {
             ))}
           </div>
 
-          {/* Offices */}
-          <div className="font-mono text-[10px] tracking-[0.14em] text-[var(--color-muted)] uppercase mb-3">Our offices</div>
-          <div className="grid grid-cols-2 gap-3 mb-8">
+          {/* Offices — single column when only one verified location, two columns otherwise. */}
+          <div className="font-mono text-[10px] tracking-[0.14em] text-[var(--color-muted)] uppercase mb-3">
+            {OFFICES.length === 1 ? 'Our office' : 'Our offices'}
+          </div>
+          <div className={`grid gap-3 mb-8 ${OFFICES.length === 1 ? 'grid-cols-1' : 'grid-cols-2'}`}>
             {OFFICES.map((office) => (
               <div key={office.slug} className="relative border border-[var(--color-border)] bg-[var(--color-elevated)] p-5 flex flex-col gap-2">
                 {office.kind === 'hq' && (

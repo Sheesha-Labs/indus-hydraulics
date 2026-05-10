@@ -43,9 +43,12 @@ export default function MaintenancePage() {
           </p>
           <div className="space-y-3">
             {[
-              { label: 'Phone', value: '+91 22 4000 0000', href: 'tel:+912240000000' },
-              { label: 'Email', value: 'enquiries@indushydraulics.com', href: 'mailto:enquiries@indushydraulics.com' },
-              { label: 'Hours', value: 'Mon–Sat 09:00–19:00 IST', href: null },
+              // Hardcoded — this page renders when the DB is unavailable,
+              // so we can't read StoreSettings here. Keep these in sync
+              // with StoreSettings.contactPhone / contactEmail / contactHours.
+              { label: 'Phone', value: '+971 52 2477942', href: 'tel:+971522477942' },
+              { label: 'Email', value: 'sales@indushydraulics.me', href: 'mailto:sales@indushydraulics.me' },
+              { label: 'Hours', value: 'Mon–Fri 09:00–18:00 GST', href: null },
             ].map((item) => (
               <div key={item.label} className="flex items-center gap-4">
                 <span className="font-mono text-[10px] tracking-[0.1em] uppercase text-[var(--color-muted)] w-16 shrink-0">
