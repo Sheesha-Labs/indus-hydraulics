@@ -4,6 +4,7 @@ import { unstable_cache } from 'next/cache'
 import { db } from '@indus/db'
 import HomeNewsletterForm from '../components/HomeNewsletterForm'
 import HomeHeroCarousel, { type HomeHeroSlide } from '../components/HomeHeroCarousel'
+import { getIndustryList } from '../lib/industry-content'
 
 export const metadata: Metadata = {
   title: 'Indus Hydraulics — Industrial Components for Hydraulic Systems',
@@ -126,14 +127,16 @@ export default async function HomePage() {
 
   const yearsInBusiness = new Date().getFullYear() - 2003
 
-  const industries = [
-    { slug: 'oil-gas', code: 'IND.01', name: 'Oil & Gas', desc: 'Wellhead, drilling and offshore — high-pressure, sour-service grades.' },
-    { slug: 'marine', code: 'IND.02', name: 'Marine', desc: 'Deck machinery, steering and stabilisers. Salt-water rated finishes.' },
-    { slug: 'mining', code: 'IND.03', name: 'Mining', desc: 'Underground & surface — fire-resistant fluid compatible kit.' },
-    { slug: 'steel', code: 'IND.04', name: 'Steel & Metal', desc: 'Rolling mills, presses, continuous casters. Mill-type cylinders.' },
-    { slug: 'construction', code: 'IND.05', name: 'Construction', desc: 'Mobile equipment, lifts, cranes & tippers.' },
-    { slug: 'agriculture', code: 'IND.06', name: 'Agriculture', desc: 'Tractors, implements, irrigation. Hardy and serviceable.' },
-  ]
+  // Industries are admin-managed in the DB (Tier C migration). Code
+  // tokens (IND.01…) are derived from the per-row `position` so the
+  // visual numbering stays in sync with admin reordering.
+  const industriesRows = await getIndustryList()
+  const industries = industriesRows.map((row, i) => ({
+    slug: row.slug,
+    code: `IND.${String(i + 1).padStart(2, '0')}`,
+    name: row.name,
+    desc: row.description ?? row.tagline ?? '',
+  }))
 
   const whyItems = [
     { n: '/01', title: 'Specialists, not generalists', body: 'We carry only hydraulic components — no PPE, no fasteners. Depth over breadth.' },
