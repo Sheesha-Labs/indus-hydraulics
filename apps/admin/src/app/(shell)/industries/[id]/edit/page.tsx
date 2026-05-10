@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { db } from '@indus/db'
 import IndustryEditorClient from './IndustryEditorClient'
+import IndustryContentEditor from './IndustryContentEditor'
 
 export const metadata: Metadata = { title: 'Edit industry — Indus Admin' }
 
@@ -10,7 +11,12 @@ type Props = { params: Promise<{ id: string }> }
 export default async function EditIndustryPage({ params }: Props) {
   const { id } = await params
 
-  const industry = await db.industry.findUnique({ where: { id } })
+  const industry = await db.industry.findUnique({
+    where: { id },
+    include: {
+      caseStudies: { orderBy: [{ position: 'asc' }, { createdAt: 'asc' }] },
+    },
+  })
   if (!industry) notFound()
 
   const [recentMedia, ogMedia] = await Promise.all([
@@ -33,8 +39,51 @@ export default async function EditIndustryPage({ params }: Props) {
     '',
   )
 
+  // JSON columns come back as `Prisma.JsonValue`; serialise to a string
+  // for the textarea-based editors. `null` for `supportBlock` → empty
+  // string so the editor can leave the field blank.
+  const stringifyJson = (v: unknown): string =>
+    v == null ? '' : JSON.stringify(v, null, 2)
+
   return (
-    <IndustryEditorClient
+    <div className="flex flex-col gap-8 px-8 py-6 pb-16">
+      <IndustryContentEditor
+        industry={{
+          id: industry.id,
+          tagline: industry.tagline,
+          headline: industry.headline,
+          breadcrumb: industry.breadcrumb,
+          gradient: industry.gradient,
+          position: industry.position,
+          heroId: industry.heroId,
+          chips: stringifyJson(industry.chips),
+          stats: stringifyJson(industry.stats),
+          deliveryAreas: stringifyJson(industry.deliveryAreas),
+          supportBlock: stringifyJson(industry.supportBlock),
+          featuredProductSkus: Array.isArray(industry.featuredProductSkus)
+            ? (industry.featuredProductSkus as unknown[])
+                .filter((x): x is string => typeof x === 'string')
+                .join(', ')
+            : '',
+          featuredCategorySlugs: Array.isArray(industry.featuredCategorySlugs)
+            ? (industry.featuredCategorySlugs as unknown[])
+                .filter((x): x is string => typeof x === 'string')
+                .join(', ')
+            : '',
+        }}
+        caseStudies={industry.caseStudies.map((c) => ({
+          id: c.id,
+          tag: c.tag,
+          title: c.title,
+          description: c.description,
+          year: c.year,
+          imageId: c.imageId,
+          position: c.position,
+          isPublished: c.isPublished,
+        }))}
+      />
+
+      <IndustryEditorClient
         industry={{
           id: industry.id,
           slug: industry.slug,
@@ -65,5 +114,6 @@ export default async function EditIndustryPage({ params }: Props) {
           originalFilename: m.originalFilename,
         }))}
       />
+    </div>
   )
 }
