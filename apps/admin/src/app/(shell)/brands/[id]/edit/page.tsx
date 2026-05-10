@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { db } from '@indus/db'
 import BrandEditorClient from './BrandEditorClient'
+import BrandContentEditor from './BrandContentEditor'
 
 export const metadata: Metadata = { title: 'Edit brand — Indus Admin' }
 
@@ -19,7 +20,10 @@ export default async function EditBrandPage({ params }: Props) {
 
   const brand = await db.brand.findUnique({
     where: { id },
-    include: { logo: true },
+    include: {
+      logo: true,
+      caseStudies: { orderBy: [{ position: 'asc' }, { createdAt: 'asc' }] },
+    },
   })
   if (!brand) notFound()
 
@@ -44,7 +48,34 @@ export default async function EditBrandPage({ params }: Props) {
   )
 
   return (
-    <BrandEditorClient
+    <div className="flex flex-col gap-8 px-8 py-6 pb-16">
+      <BrandContentEditor
+        brand={{
+          id: brand.id,
+          position: brand.position,
+          accountManagerName: brand.accountManagerName,
+          accountManagerTitle: brand.accountManagerTitle,
+          accountManagerYearsExp: brand.accountManagerYearsExp,
+          accountManagerInitials: brand.accountManagerInitials,
+          fastestLeadTime: brand.fastestLeadTime,
+          largestInstallValue: brand.largestInstallValue,
+          largestInstallContext: brand.largestInstallContext,
+          partnerSince: brand.partnerSince,
+        }}
+        caseStudies={brand.caseStudies.map((c) => ({
+          id: c.id,
+          tag: c.tag,
+          title: c.title,
+          description: c.description,
+          year: c.year,
+          imageId: c.imageId,
+          position: c.position,
+          isPublished: c.isPublished,
+          stats: c.stats == null ? '[]' : JSON.stringify(c.stats, null, 2),
+        }))}
+      />
+
+      <BrandEditorClient
         brand={{
           id: brand.id,
           slug: brand.slug,
@@ -75,5 +106,6 @@ export default async function EditBrandPage({ params }: Props) {
           originalFilename: m.originalFilename,
         }))}
       />
+    </div>
   )
 }
