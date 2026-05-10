@@ -589,12 +589,12 @@ async function main() {
 
   // ── Store settings ──────────────────────────────────────────────────────────
   const brandDefaults = {
-    tagline: "India's trusted distributor of industrial hydraulic components since 2005.",
+    tagline: 'UAE-based distributor of industrial hydraulic components, serving engineers globally.',
     certificationLine: 'ISO 9001:2015 Certified',
-    contactPhone: '+91 22 6614 0200',
-    contactEmail: 'sales@indushydraulics.com',
-    contactHours: 'Mon–Sat 09:00–19:00 IST',
-    contactLocationLabel: 'Mumbai HQ',
+    contactPhone: '+971 52 2477942',
+    contactEmail: 'sales@indushydraulics.me',
+    contactHours: 'Mon–Fri 09:00–18:00 GST',
+    contactLocationLabel: 'Dubai HQ',
   } as const
 
   const existingSettings = await db.storeSettings.findFirst()

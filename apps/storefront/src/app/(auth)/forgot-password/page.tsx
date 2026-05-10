@@ -1,9 +1,11 @@
 import type { Metadata } from 'next'
 import ForgotPasswordForm from './ForgotPasswordForm'
+import { getStoreSettings } from '../../../lib/store-settings'
 
 export const metadata: Metadata = { title: 'Reset your password' }
 
-export default function ForgotPasswordPage() {
+export default async function ForgotPasswordPage() {
+  const settings = await getStoreSettings()
   return (
     <main className="grid grid-cols-1 lg:grid-cols-2 min-h-[calc(100vh-60px)]">
       <section className="flex flex-col justify-center px-8 py-16 lg:px-16">
@@ -13,13 +15,19 @@ export default function ForgotPasswordPage() {
       </section>
 
       <aside className="hidden lg:flex flex-col justify-center bg-[var(--color-primary)] px-16 py-16">
-        <SecurityPanel />
+        <SecurityPanel phone={settings.contactPhone} hours={settings.contactHours} />
       </aside>
     </main>
   )
 }
 
-function SecurityPanel() {
+function SecurityPanel({ phone, hours }: { phone: string | null; hours: string | null }) {
+  const lockoutLine =
+    phone && hours
+      ? `For account lockouts, call ${phone} ${hours}`
+      : phone
+        ? `For account lockouts, call ${phone}`
+        : 'For account lockouts, contact your account manager'
   return (
     <div className="max-w-[440px]">
       <p className="font-mono text-[11px] tracking-[0.16em] text-[var(--color-accent)] uppercase mb-2">
@@ -33,7 +41,7 @@ function SecurityPanel() {
           'Reset links are single-use and expire after 60 minutes',
           'Resets are logged and your account manager is notified',
           'SSO accounts (Microsoft 365) reset through your IT team',
-          'For account lockouts, call +91 22 6614 0200 Mon–Sat 09:00–19:00 IST',
+          lockoutLine,
         ].map((item) => (
           <li key={item} className="grid grid-cols-[24px_1fr] gap-3">
             <span className="font-mono text-[var(--color-accent)]">↪</span>

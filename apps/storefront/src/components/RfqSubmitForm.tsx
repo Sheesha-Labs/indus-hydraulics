@@ -178,7 +178,7 @@ export default function RfqSubmitForm({ addresses }: Props) {
                     className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-surface)] text-[13px] text-[var(--color-primary)] focus:outline-none focus:border-[var(--color-accent)]"
                   >
                     <option value="exw">Ex-works (EXW)</option>
-                    <option value="fob">FOB · Mumbai</option>
+                    <option value="fob">FOB · Jebel Ali, Dubai</option>
                     <option value="cif">CIF · destination port</option>
                     <option value="dap">DAP · door delivery</option>
                     <option value="">Not sure — advise</option>

@@ -52,7 +52,7 @@ export default async function BlogIndexPage() {
         </p>
         <div className="flex gap-6 font-mono text-[12px] text-[var(--color-muted)]">
           <span><b className="text-[var(--color-primary)]">{totalPosts}</b> articles</span>
-          <span><b className="text-[var(--color-primary)]">Updated weekly</b> · Tuesday mornings IST</span>
+          <span><b className="text-[var(--color-primary)]">Updated weekly</b> · Tuesday mornings GST</span>
         </div>
       </div>
 
