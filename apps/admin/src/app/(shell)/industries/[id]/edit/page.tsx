@@ -81,6 +81,13 @@ export default async function EditIndustryPage({ params }: Props) {
           position: c.position,
           isPublished: c.isPublished,
         }))}
+        recentImages={recentMedia.map((m) => ({
+          id: m.id,
+          storagePath: m.storagePath,
+          alt: m.alt,
+          originalFilename: m.originalFilename,
+        }))}
+        publicUrlBase={(process.env.NEXT_PUBLIC_R2_PUBLIC_URL ?? '').replace(/\/$/, '')}
       />
 
       <IndustryEditorClient
