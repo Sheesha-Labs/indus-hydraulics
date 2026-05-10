@@ -102,7 +102,7 @@ export default async function AdminRfqDetailPage({ params }: Props) {
   const canCompose = ['engineer_review', 'engineer_questions_pending', 'quote_sent'].includes(rfq.status)
 
   return (
-    <div>
+    <div className="px-8 py-6 pb-16">
       {/* Header */}
       <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-6">
         <div>
