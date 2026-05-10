@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
+import { replacementUrlPath } from '@indus/domain'
 
 type Spec = {
   id: string
@@ -211,17 +212,36 @@ export default function ProductTabs({
             <p className="text-[14px] text-[var(--color-muted)]">No cross-reference data available. Contact our team for compatibility assistance.</p>
           ) : (
             <div>
-              <p className="text-[14px] text-[var(--color-muted)] mb-6">The following competitor part numbers are compatible with or superseded by this SKU.</p>
+              <p className="text-[14px] text-[var(--color-muted)] mb-6">The following competitor part numbers are compatible with or superseded by this SKU. Click through to the dedicated replacement page for each.</p>
               <div className="grid grid-cols-3 gap-2">
-                {crossReferences.map((ref) => (
-                  <div key={ref.id} className="px-4 py-3 border border-[var(--color-border)] bg-[var(--color-elevated)] font-mono text-[12px]">
-                    <div className="text-[var(--color-muted)] text-[10px] uppercase tracking-[0.08em] mb-0.5">{ref.competitorBrand}</div>
-                    <div className="text-[var(--color-primary)] font-medium text-[13px]">{ref.competitorMpn}</div>
-                    {ref.compatibility && (
-                      <div className="text-[var(--color-muted)] text-[10px] mt-1">{ref.compatibility}</div>
-                    )}
-                  </div>
-                ))}
+                {crossReferences.map((ref) => {
+                  const href = replacementUrlPath(ref.competitorBrand, ref.competitorMpn)
+                  const inner = (
+                    <>
+                      <div className="text-[var(--color-muted)] text-[10px] uppercase tracking-[0.08em] mb-0.5">{ref.competitorBrand}</div>
+                      <div className="text-[var(--color-primary)] font-medium text-[13px]">{ref.competitorMpn}</div>
+                      {ref.compatibility && (
+                        <div className="text-[var(--color-muted)] text-[10px] mt-1">{ref.compatibility}</div>
+                      )}
+                      {href && (
+                        <div className="font-mono text-[10px] text-[var(--color-accent)] mt-1.5">View replacement →</div>
+                      )}
+                    </>
+                  )
+                  return href ? (
+                    <Link
+                      key={ref.id}
+                      href={href}
+                      className="block px-4 py-3 border border-[var(--color-border)] bg-[var(--color-elevated)] font-mono text-[12px] hover:border-[var(--color-body)] transition-colors"
+                    >
+                      {inner}
+                    </Link>
+                  ) : (
+                    <div key={ref.id} className="px-4 py-3 border border-[var(--color-border)] bg-[var(--color-elevated)] font-mono text-[12px]">
+                      {inner}
+                    </div>
+                  )
+                })}
               </div>
             </div>
           )}
