@@ -2,6 +2,10 @@ import path from 'path'
 import type { NextConfig } from 'next'
 import { withSentryConfig } from '@sentry/nextjs'
 
+// Security headers (CSP, X-Content-Type-Options, Referrer-Policy, etc.)
+// are set in src/proxy.ts middleware so they apply uniformly across
+// Turbopack dev, build, edge, and node runtimes.
+
 const nextConfig: NextConfig = {
   outputFileTracingRoot: path.join(__dirname, '../../'),
   serverExternalPackages: ['@prisma/client', '.prisma/client'],
