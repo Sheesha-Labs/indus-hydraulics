@@ -2,6 +2,7 @@ import type { MetadataRoute } from 'next'
 import { db } from '@indus/db'
 import { buildSitemapEntries, buildStaticEntries } from '@indus/domain'
 import { BASE_URL } from '../lib/seo'
+import { getReplacementBrands, getReplacementSitemapKeys } from '../lib/replacement-data'
 
 /**
  * Public XML sitemap. Sources entity rows from Postgres and feeds them
@@ -159,7 +160,28 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { path: '/brands', priority: 0.6, changeFrequency: 'weekly' },
     { path: '/industries', priority: 0.6, changeFrequency: 'weekly' },
     { path: '/search', priority: 0.4, changeFrequency: 'monthly' },
+    // Programmatic replacement landing pages — high-intent search
+    // surface ("parker pv16 replacement") that AI agents cite well.
+    { path: '/replacement', priority: 0.7, changeFrequency: 'weekly' },
   ])
+
+  // Per-(brand, mpn) replacement entries. The brand-level index pages
+  // (/replacement/<brand>) are emitted from the same source so we
+  // don't duplicate the data fetch.
+  const [replacementKeys, replacementBrands] = await Promise.all([
+    getReplacementSitemapKeys(),
+    getReplacementBrands(),
+  ])
+  const replacementEntries: MetadataRoute.Sitemap = replacementKeys.map((k) => ({
+    url: `${BASE_URL}/replacement/${k.brandSlug}/${k.mpnSlug}`,
+    changeFrequency: 'monthly',
+    priority: 0.6,
+  }))
+  const replacementBrandEntries: MetadataRoute.Sitemap = replacementBrands.map((b) => ({
+    url: `${BASE_URL}/replacement/${b.brandSlug}`,
+    changeFrequency: 'weekly',
+    priority: 0.5,
+  }))
 
   return [
     ...staticEntries,
@@ -168,5 +190,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...brandEntries,
     ...blogEntries,
     ...cmsEntries,
+    ...replacementBrandEntries,
+    ...replacementEntries,
   ]
 }
