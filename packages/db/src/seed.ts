@@ -4,6 +4,7 @@
  */
 import { PrismaClient } from '@prisma/client'
 import crypto from 'crypto'
+import { seedIndustries } from './seed-industries'
 
 const db = new PrismaClient()
 
@@ -142,6 +143,12 @@ async function main() {
 
   const categories = [catPumps, catValves, catCylinders, catHoses, catSeals]
   console.log(`  ✓ ${categories.length} categories`)
+
+  // ── Industries ─────────────────────────────────────────────────────────────
+  // 6 industries with rich marketing data + 3 case studies each, migrated
+  // from the previously hardcoded TS files. See packages/db/src/seed-industries.ts.
+  const industryCount = await seedIndustries(db)
+  console.log(`  ✓ ${industryCount} industries`)
 
   // ── Staff user ──────────────────────────────────────────────────────────────
   const staffUser = await db.staffUser.upsert({

@@ -478,11 +478,31 @@ model Industry {
   slug           String  @unique
   name           String
   description    String?
+  // Storefront-facing display copy. `tagline` is the eyebrow shown
+  // above the H1 on /industries/<slug>; `headline` is the H1 itself;
+  // `breadcrumb` is the all-caps version used in nav crumbs.
+  tagline        String?
+  headline       String?
+  breadcrumb     String?
+  // Visual identity — gradient CSS for the dark hero band per industry.
+  gradient       String?
   seoTitle       String?
   seoDescription String?
   heroId         String?
   hero           Media?  @relation(fields: [heroId], references: [id])
   isPublished    Boolean @default(false)
+  position       Int     @default(0)
+
+  // Structured marketing data. Stored as JSON because each is a small
+  // array of plain objects whose shape rarely changes — keeps the
+  // admin editor surface manageable while preserving the rich page
+  // template. Strongly-typed at the read site via `lib/industry-content.ts`.
+  chips                 Json @default("[]") // string[]
+  stats                 Json @default("[]") // { value, label }[]
+  deliveryAreas         Json @default("[]") // { category, title, description, skuCount }[]
+  supportBlock          Json? // { eyebrow, headline, description, bullets, cta }
+  featuredProductSkus   Json @default("[]") // string[]
+  featuredCategorySlugs Json @default("[]") // string[]
 
   // SEO OS — inline overrides
   canonicalUrl       String?
@@ -499,8 +519,28 @@ model Industry {
 
   accounts     Account[]
   navMenuItems NavMenuItem[]
+  caseStudies  IndustryCaseStudy[]
 
   @@map("industries")
+}
+
+model IndustryCaseStudy {
+  id          String   @id @default(uuid())
+  industryId  String
+  industry    Industry @relation(fields: [industryId], references: [id], onDelete: Cascade)
+  tag         String // e.g. "HPCL · 2024"
+  title       String
+  description String
+  year        String?
+  imageId     String?
+  image       Media?   @relation("IndustryCaseStudyImage", fields: [imageId], references: [id], onDelete: SetNull)
+  position    Int      @default(0)
+  isPublished Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([industryId])
+  @@map("industry_case_studies")
 }
 
 model Product {
@@ -717,6 +757,7 @@ model Media {
   brandLogos         Brand[]           @relation("BrandLogo")
   brandHeroes        Brand[]           @relation("BrandHero")
   industryHeroes     Industry[]
+  industryCaseStudyImages IndustryCaseStudy[] @relation("IndustryCaseStudyImage")
   rfqAttachments     RfqAttachment[]
   quotePdfs          Quote[]
   blogHeroes         BlogPost[]
