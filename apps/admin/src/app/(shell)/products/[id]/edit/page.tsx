@@ -3,6 +3,8 @@ import { notFound } from 'next/navigation'
 import { db } from '@indus/db'
 import { signPreviewToken } from '@indus/domain'
 import ProductEditorClient from './ProductEditorClient'
+import ContentDepthPanel from '../../../../../components/ContentDepthPanel'
+import { scoreFromProduct } from '../../../../../lib/product-content-score'
 
 export const metadata: Metadata = { title: 'Edit product — Indus Admin' }
 
@@ -69,9 +71,31 @@ export default async function EditProductPage({ params }: Props) {
     previewUrl = null
   }
 
+  // Content-depth score (#7-2): pass the loaded relations directly so
+  // we don't refetch counts the page already has in memory.
+  const contentScore = scoreFromProduct({
+    descriptionShort: product.descriptionShort,
+    descriptionLong: product.descriptionLong,
+    brandId: product.brandId,
+    categoryId: product.categoryId,
+    focusKeyword: product.focusKeyword,
+    seoTitle: product.seoTitle,
+    seoDescription: product.seoDescription,
+    weightKg: product.weightKg,
+    countryOfOrigin: product.countryOfOrigin,
+    mpn: product.mpn,
+    faqCount: product.faqs.length,
+    specCount: product.specs.length,
+    crossReferenceCount: product.crossReferences.length,
+    documentCount: product.documents.length,
+    imageCount: product.images.length,
+  })
+
   return (
+    <div className="px-8 py-6 pb-16">
+      <ContentDepthPanel result={contentScore} />
     <ProductEditorClient
-       
+
         previewUrl={previewUrl}
         product={{
           id: product.id,
@@ -191,5 +215,6 @@ export default async function EditProductPage({ params }: Props) {
           originalFilename: m.originalFilename,
         }))}
       />
+    </div>
   )
 }

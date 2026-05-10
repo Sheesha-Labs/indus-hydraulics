@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { db, Prisma } from '@indus/db'
+import ContentScoreBadge from '../../../components/ContentScoreBadge'
+import { scoreFromProduct } from '../../../lib/product-content-score'
 
 export const metadata: Metadata = { title: 'Products — Indus Admin' }
 
@@ -66,7 +68,21 @@ export default async function AdminProductsPage({ params, searchParams }: Props)
     db.product.count({ where }),
     db.product.findMany({
       where,
-      include: { brand: true, category: true },
+      include: {
+        brand: true,
+        category: true,
+        // Counts feed the per-row content-depth score (#7-2). _count
+        // is cheaper than loading the related rows just to get a length.
+        _count: {
+          select: {
+            faqs: true,
+            specs: true,
+            crossReferences: true,
+            documents: true,
+            images: true,
+          },
+        },
+      },
       orderBy: { [sortKey]: sortDir },
       skip: (page - 1) * PAGE_SIZE,
       take: PAGE_SIZE,
@@ -224,7 +240,7 @@ export default async function AdminProductsPage({ params, searchParams }: Props)
         ) : (
           <>
             <div className="border border-[var(--color-border)] bg-white">
-              <div className="grid grid-cols-[140px_1fr_120px_120px_70px_90px_80px] px-4 py-2.5 bg-[var(--color-surface)] border-b border-[var(--color-border)] font-mono text-[10px] tracking-[0.1em] uppercase text-[var(--color-muted)]">
+              <div className="grid grid-cols-[140px_1fr_120px_120px_70px_60px_90px_80px] px-4 py-2.5 bg-[var(--color-surface)] border-b border-[var(--color-border)] font-mono text-[10px] tracking-[0.1em] uppercase text-[var(--color-muted)]">
                 <Link href={sortUrl('sku')} className="hover:text-[var(--color-primary)]">
                   SKU{sortIndicator('sku')}
                 </Link>
@@ -234,6 +250,7 @@ export default async function AdminProductsPage({ params, searchParams }: Props)
                 <div>Brand</div>
                 <div>Category</div>
                 <div className="text-right">Stock</div>
+                <div className="text-center" title="Content depth score (0–100)">Content</div>
                 <Link href={sortUrl('status')} className="text-center hover:text-[var(--color-primary)]">
                   Status{sortIndicator('status')}
                 </Link>
@@ -242,39 +259,45 @@ export default async function AdminProductsPage({ params, searchParams }: Props)
                 </Link>
               </div>
 
-              {products.map((p, i) => (
-                <Link
-                  key={p.id}
-                  href={`/products/${p.id}/edit`}
-                  className={`grid grid-cols-[140px_1fr_120px_120px_70px_90px_80px] px-4 py-3.5 items-center hover:bg-[var(--color-deep)] transition-colors ${
-                    i > 0 ? 'border-t border-[var(--color-border)]' : ''
-                  }`}
-                >
-                  <div className="font-mono text-[12px] text-[var(--color-muted)] truncate">{p.sku}</div>
-                  <div className="text-[13px] font-medium text-[var(--color-primary)] truncate">{p.title}</div>
-                  <div className="text-[12px] text-[var(--color-body)] truncate">
-                    {p.brand?.name ?? <span className="text-[var(--color-caption)]">—</span>}
-                  </div>
-                  <div className="text-[12px] text-[var(--color-body)] truncate">
-                    {p.category?.name ?? <span className="text-[var(--color-caption)]">—</span>}
-                  </div>
-                  <div className={`text-right font-mono text-[12px] ${p.stockQty > 0 ? 'text-[oklch(0.45_0.12_150)] font-semibold' : 'text-[var(--color-caption)]'}`}>
-                    {p.stockQty > 0 ? p.stockQty.toLocaleString() : '—'}
-                  </div>
-                  <div className="flex justify-center">
-                    <span
-                      className={`px-2 py-0.5 font-mono text-[10px] font-semibold capitalize ${
-                        STATUS_COLORS[p.status] ?? ''
-                      }`}
-                    >
-                      {p.status}
-                    </span>
-                  </div>
-                  <div className="text-right font-mono text-[11px] text-[var(--color-muted)]">
-                    {new Date(p.updatedAt).toLocaleDateString()}
-                  </div>
-                </Link>
-              ))}
+              {products.map((p, i) => {
+                const contentScore = scoreFromProduct(p).score
+                return (
+                  <Link
+                    key={p.id}
+                    href={`/products/${p.id}/edit`}
+                    className={`grid grid-cols-[140px_1fr_120px_120px_70px_60px_90px_80px] px-4 py-3.5 items-center hover:bg-[var(--color-deep)] transition-colors ${
+                      i > 0 ? 'border-t border-[var(--color-border)]' : ''
+                    }`}
+                  >
+                    <div className="font-mono text-[12px] text-[var(--color-muted)] truncate">{p.sku}</div>
+                    <div className="text-[13px] font-medium text-[var(--color-primary)] truncate">{p.title}</div>
+                    <div className="text-[12px] text-[var(--color-body)] truncate">
+                      {p.brand?.name ?? <span className="text-[var(--color-caption)]">—</span>}
+                    </div>
+                    <div className="text-[12px] text-[var(--color-body)] truncate">
+                      {p.category?.name ?? <span className="text-[var(--color-caption)]">—</span>}
+                    </div>
+                    <div className={`text-right font-mono text-[12px] ${p.stockQty > 0 ? 'text-[oklch(0.45_0.12_150)] font-semibold' : 'text-[var(--color-caption)]'}`}>
+                      {p.stockQty > 0 ? p.stockQty.toLocaleString() : '—'}
+                    </div>
+                    <div className="flex justify-center">
+                      <ContentScoreBadge score={contentScore} compact />
+                    </div>
+                    <div className="flex justify-center">
+                      <span
+                        className={`px-2 py-0.5 font-mono text-[10px] font-semibold capitalize ${
+                          STATUS_COLORS[p.status] ?? ''
+                        }`}
+                      >
+                        {p.status}
+                      </span>
+                    </div>
+                    <div className="text-right font-mono text-[11px] text-[var(--color-muted)]">
+                      {new Date(p.updatedAt).toLocaleDateString()}
+                    </div>
+                  </Link>
+                )
+              })}
             </div>
 
             {totalPages > 1 && (
