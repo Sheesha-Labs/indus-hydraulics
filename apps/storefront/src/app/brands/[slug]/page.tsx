@@ -46,11 +46,18 @@ export default async function BrandPage({ params }: Props) {
 
   const brand = await db.brand.findUnique({
     where: { slug },
-    include: { logo: true },
+    include: {
+      logo: true,
+      caseStudies: {
+        where: { isPublished: true },
+        orderBy: { position: 'asc' },
+        include: { image: { select: { storagePath: true } } },
+      },
+    },
   })
   if (!brand || !brand.isPublished) notFound()
 
-  const [topProducts, totalCount, seriesCategories, brandDocs] = await Promise.all([
+  const [topProducts, totalCount, inStockCount, seriesCategories, brandDocs] = await Promise.all([
     db.product.findMany({
       where: { brandId: brand.id, status: 'active' },
       include: {
@@ -61,6 +68,10 @@ export default async function BrandPage({ params }: Props) {
       take: 8,
     }),
     db.product.count({ where: { brandId: brand.id, status: 'active' } }),
+    // Real "in stock" count — replaces the previous fake 0.68× multiplier.
+    db.product.count({
+      where: { brandId: brand.id, status: 'active', stockQty: { gt: 0 } },
+    }),
     db.product.groupBy({
       by: ['categoryId'],
       where: { brandId: brand.id, status: 'active', categoryId: { not: null } },
@@ -83,6 +94,27 @@ export default async function BrandPage({ params }: Props) {
       take: 6,
     }),
   ])
+
+  // Stats-row cells render only when admin has populated the value, so
+  // a partially-filled brand still looks intentional rather than empty.
+  type StatCell = { label: string; value: string; context?: string | null }
+  const statCells: StatCell[] = [
+    { label: 'SKUs in stock', value: `${inStockCount} / ${totalCount}` },
+    ...(brand.fastestLeadTime ? [{ label: 'Fastest lead time', value: brand.fastestLeadTime }] : []),
+    ...(brand.largestInstallValue
+      ? [
+          {
+            label: 'Largest install',
+            value: brand.largestInstallValue,
+            context: brand.largestInstallContext,
+          },
+        ]
+      : []),
+    ...(brand.partnerSince
+      ? [{ label: 'Partner since', value: String(brand.partnerSince) }]
+      : []),
+  ]
+  const statCols = Math.max(2, Math.min(4, statCells.length))
 
   const brandUrl = urlFor(`/brands/${brand.slug}`)
   const brandLd = buildOrgLd({
@@ -136,54 +168,56 @@ export default async function BrandPage({ params }: Props) {
             </div>
           </div>
 
-          {/* Specialist card */}
-          <div className="p-5" style={{ background: 'oklch(0.18 0 0)', border: '1px solid oklch(0.3 0 0)', borderRadius: '6px' }}>
-            <div className="font-mono text-[10px] tracking-[0.12em] uppercase mb-2.5" style={{ color: 'oklch(0.6 0 0)' }}>
-              YOUR {brand.name.split(' ')[0]?.toUpperCase()} SPECIALIST
-            </div>
-            <div className="flex gap-3 items-center mb-3.5">
-              <div className="w-11 h-11 rounded-full bg-[var(--color-accent)] text-white grid place-items-center font-semibold text-[14px] shrink-0">
-                SP
+          {/* Specialist card — DB-driven; the whole card hides when no
+              account manager is assigned, so brands without a named
+              specialist don't ship a generic-feeling placeholder. */}
+          {brand.accountManagerName && (
+            <div className="p-5" style={{ background: 'oklch(0.18 0 0)', border: '1px solid oklch(0.3 0 0)', borderRadius: '6px' }}>
+              <div className="font-mono text-[10px] tracking-[0.12em] uppercase mb-2.5" style={{ color: 'oklch(0.6 0 0)' }}>
+                YOUR {brand.name.split(' ')[0]?.toUpperCase()} SPECIALIST
               </div>
-              <div>
-                <div className="font-semibold text-white">Sunil Patel</div>
-                <div className="font-mono text-[11px]" style={{ color: 'oklch(0.7 0 0)' }}>12 yrs · certified</div>
+              <div className="flex gap-3 items-center mb-3.5">
+                <div className="w-11 h-11 rounded-full bg-[var(--color-accent)] text-white grid place-items-center font-semibold text-[14px] shrink-0">
+                  {brand.accountManagerInitials ?? brand.accountManagerName.split(' ').map((w) => w[0] ?? '').join('').slice(0, 2).toUpperCase()}
+                </div>
+                <div>
+                  <div className="font-semibold text-white">{brand.accountManagerName}</div>
+                  {(brand.accountManagerTitle || brand.accountManagerYearsExp) && (
+                    <div className="font-mono text-[11px]" style={{ color: 'oklch(0.7 0 0)' }}>
+                      {[brand.accountManagerTitle, brand.accountManagerYearsExp].filter(Boolean).join(' · ')}
+                    </div>
+                  )}
+                </div>
               </div>
+              <Link
+                href={`/contact`}
+                className="flex items-center justify-center h-9 w-full bg-[var(--color-accent)] text-white font-mono text-[12px] hover:opacity-90 transition-opacity"
+              >
+                Talk to {brand.accountManagerName.split(' ')[0]} →
+              </Link>
             </div>
-            <Link
-              href={`/contact`}
-              className="flex items-center justify-center h-9 w-full bg-[var(--color-accent)] text-white font-mono text-[12px] hover:opacity-90 transition-opacity"
-            >
-              Talk to Sunil →
-            </Link>
-          </div>
+          )}
         </div>
       </section>
 
-      {/* ── Stats row ─────────────────────────────────────────── */}
-      <section className="max-w-[1360px] mx-auto px-8 py-10">
-        <div className="grid grid-cols-4 gap-3.5 mb-8">
-          <div className="p-[18px] bg-[var(--color-elevated)] border border-[var(--color-border)]">
-            <div className="font-mono text-[10px] tracking-[0.1em] text-[var(--color-muted)] uppercase">SKUs in stock</div>
-            <div className="font-mono text-[24px] font-semibold mt-1.5">
-              {Math.round(totalCount * 0.68)}<span className="text-[13px] text-[var(--color-muted)]"> / {totalCount}</span>
-            </div>
+      {/* ── Stats row — cells render only when admin populates them. ── */}
+      {statCells.length > 0 && (
+        <section className="max-w-[1360px] mx-auto px-8 py-10">
+          <div className="grid gap-3.5 mb-8" style={{ gridTemplateColumns: `repeat(${statCols}, minmax(0, 1fr))` }}>
+            {statCells.map((cell) => (
+              <div key={cell.label} className="p-[18px] bg-[var(--color-elevated)] border border-[var(--color-border)]">
+                <div className="font-mono text-[10px] tracking-[0.1em] text-[var(--color-muted)] uppercase">
+                  {cell.label}
+                </div>
+                <div className="font-mono text-[24px] font-semibold mt-1.5">{cell.value}</div>
+                {cell.context && (
+                  <div className="font-mono text-[11px] text-[var(--color-muted)]">{cell.context}</div>
+                )}
+              </div>
+            ))}
           </div>
-          <div className="p-[18px] bg-[var(--color-elevated)] border border-[var(--color-border)]">
-            <div className="font-mono text-[10px] tracking-[0.1em] text-[var(--color-muted)] uppercase">Fastest lead time</div>
-            <div className="font-mono text-[24px] font-semibold mt-1.5">24h</div>
-          </div>
-          <div className="p-[18px] bg-[var(--color-elevated)] border border-[var(--color-border)]">
-            <div className="font-mono text-[10px] tracking-[0.1em] text-[var(--color-muted)] uppercase">Largest install</div>
-            <div className="font-mono text-[24px] font-semibold mt-1.5">740 kW</div>
-            <div className="font-mono text-[11px] text-[var(--color-muted)]">Reliance Steel · Jamnagar</div>
-          </div>
-          <div className="p-[18px] bg-[var(--color-elevated)] border border-[var(--color-border)]">
-            <div className="font-mono text-[10px] tracking-[0.1em] text-[var(--color-muted)] uppercase">Partner since</div>
-            <div className="font-mono text-[24px] font-semibold mt-1.5">1998</div>
-          </div>
-        </div>
-      </section>
+        </section>
+      )}
 
       {/* ── Product series ─────────────────────────────────────── */}
       {seriesCategories.length > 0 && (
@@ -249,27 +283,67 @@ export default async function BrandPage({ params }: Props) {
       )}
 
       {/* ── Case study ─────────────────────────────────────────── */}
-      <section className="bg-[var(--color-elevated)] border-t border-b border-[var(--color-border)]">
-        <div className="max-w-[1360px] mx-auto px-8 py-12 grid grid-cols-2 gap-12 items-center">
-          <div>
-            <div className="font-mono text-[11px] tracking-[0.14em] text-[var(--color-muted)] uppercase mb-2">Case study</div>
-            <h2 className="text-[30px] tracking-[-0.02em] font-semibold leading-[1.15] mb-3">
-              36-hour {brand.name} replacement at a paper mill — line stayed in spec.
-            </h2>
-            <p className="text-[var(--color-body)] mb-4 leading-[1.6]">
-              When the main feed-pump on Line 2 spiked silt-readings overnight, the mill called Sunil at 02:14. We sourced a swap unit, shipped it air-freight with rebuilt rotating group, and our service tech commissioned it on-site by 14:00 the next day. Mill recorded 0 hours of unplanned downtime.
-            </p>
-            <div className="flex gap-6 font-mono text-[12px] text-[var(--color-muted)]">
-              <span><b className="text-[18px] text-[var(--color-primary)] block font-semibold">36h</b>end-to-end</span>
-              <span><b className="text-[18px] text-[var(--color-primary)] block font-semibold">$148k</b>avoided downtime</span>
-              <span><b className="text-[18px] text-[var(--color-primary)] block font-semibold">250cc</b>pump size</span>
-            </div>
+      {/* ── Case studies — DB-driven; the whole section hides when no
+          published case studies exist for the brand, so brands without
+          curated installs don't render a stale templated story. */}
+      {brand.caseStudies.length > 0 && (
+        <section className="bg-[var(--color-elevated)] border-t border-b border-[var(--color-border)]">
+          <div className="max-w-[1360px] mx-auto px-8 py-12 flex flex-col gap-10">
+            {brand.caseStudies.map((cs, idx) => {
+              const csStats = Array.isArray(cs.stats)
+                ? (cs.stats as unknown[])
+                    .filter((x): x is Record<string, unknown> => typeof x === 'object' && x !== null)
+                    .map((x) => ({
+                      value: typeof x.value === 'string' ? x.value : '',
+                      label: typeof x.label === 'string' ? x.label : '',
+                    }))
+                    .filter((s) => s.value || s.label)
+                : []
+              return (
+                <article
+                  key={cs.id}
+                  className={`grid grid-cols-2 gap-12 items-center ${
+                    idx > 0 ? 'border-t border-[var(--color-border)] pt-10' : ''
+                  }`}
+                >
+                  <div>
+                    <div className="font-mono text-[11px] tracking-[0.14em] text-[var(--color-muted)] uppercase mb-2">
+                      {cs.tag}
+                    </div>
+                    <h2 className="text-[30px] tracking-[-0.02em] font-semibold leading-[1.15] mb-3">
+                      {cs.title}
+                    </h2>
+                    <p className="text-[var(--color-body)] mb-4 leading-[1.6]">{cs.description}</p>
+                    {csStats.length > 0 && (
+                      <div className="flex gap-6 font-mono text-[12px] text-[var(--color-muted)]">
+                        {csStats.map((s) => (
+                          <span key={`${s.value}-${s.label}`}>
+                            <b className="text-[18px] text-[var(--color-primary)] block font-semibold">{s.value}</b>
+                            {s.label}
+                          </span>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                  <div className="aspect-[4/3] bg-[var(--color-deep)] border border-[var(--color-border)] grid place-items-center relative overflow-hidden">
+                    {cs.image ? (
+                      <Image
+                        src={mediaUrl(cs.image.storagePath)}
+                        alt={cs.title}
+                        fill
+                        className="object-cover"
+                        sizes="(max-width: 1360px) 50vw, 660px"
+                      />
+                    ) : (
+                      <span className="font-mono text-[11px] text-[var(--color-muted)]">CASE PHOTO · INSTALL</span>
+                    )}
+                  </div>
+                </article>
+              )
+            })}
           </div>
-          <div className="aspect-[4/3] bg-[var(--color-deep)] border border-[var(--color-border)] grid place-items-center">
-            <span className="font-mono text-[11px] text-[var(--color-muted)]">CASE PHOTO · INSTALL</span>
-          </div>
-        </div>
-      </section>
+        </section>
+      )}
 
       {/* ── Datasheets & resources ─────────────────────────────── */}
       {brandDocs.length > 0 && (
