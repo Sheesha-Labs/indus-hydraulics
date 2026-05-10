@@ -617,6 +617,10 @@ model Product {
   specTemplate      SpecTemplate? @relation(fields: [specTemplateId], references: [id], onDelete: SetNull)
   seoTitle          String?
   seoDescription    String?
+  // Persisted content-depth score (0–100) computed by scoreProductContent.
+  // Recomputed on every product mutation; indexed for admin filter/sort
+  // and for the storefront PRODUCT_CONTENT_NOINDEX_BELOW threshold.
+  contentScore      Int           @default(0)
   createdAt         DateTime      @default(now())
   updatedAt         DateTime      @updatedAt
 

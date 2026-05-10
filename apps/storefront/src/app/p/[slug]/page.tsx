@@ -12,9 +12,7 @@ import {
   buildBreadcrumbLd,
   buildFaqLd,
   buildProductLd,
-  scoreProductContent,
   verifyPreviewToken,
-  wordCount,
 } from '@indus/domain'
 import { JsonLd, ProductPrice } from '@indus/ui'
 import type { CurrencyCode } from '@indus/domain'
@@ -47,50 +45,6 @@ function readContentNoindexThreshold(): number | null {
   const parsed = Number.parseInt(raw, 10)
   if (!Number.isFinite(parsed) || parsed <= 0) return null
   return Math.max(1, Math.min(100, parsed))
-}
-
-/**
- * Compute the content-depth score from the loaded product relations.
- * Mirrors the admin's #7-2 adapter; we keep it inline here rather
- * than share with admin because admin has Prisma-typed inputs and
- * storefront has the loaded objects directly.
- */
-function computeContentScore(product: {
-  descriptionShort: string | null
-  descriptionLong: string | null
-  brandId: string | null
-  categoryId: string | null
-  focusKeyword: string | null
-  seoTitle: string | null
-  seoDescription: string | null
-  weightKg: { toString(): string } | number | null
-  countryOfOrigin: string | null
-  mpn: string | null
-  faqs: { length: number }
-  specs: { length: number }
-  crossReferences: { length: number }
-  documents: { length: number }
-  images: { length: number }
-}): number {
-  return scoreProductContent({
-    descriptionShortWords: wordCount(product.descriptionShort),
-    descriptionLongWords: wordCount(product.descriptionLong),
-    faqCount: product.faqs.length,
-    specCount: product.specs.length,
-    crossReferenceCount: product.crossReferences.length,
-    documentCount: product.documents.length,
-    imageCount: product.images.length,
-    hasBrand: product.brandId != null,
-    hasCategory: product.categoryId != null,
-    hasFocusKeyword: !!(product.focusKeyword && product.focusKeyword.trim().length > 0),
-    hasSeoTitleAndDescription:
-      !!(product.seoTitle && product.seoTitle.trim().length > 0) &&
-      !!(product.seoDescription && product.seoDescription.trim().length > 0),
-    hasCommerceAttributes:
-      product.weightKg != null &&
-      !!(product.countryOfOrigin && product.countryOfOrigin.trim().length > 0) &&
-      !!(product.mpn && product.mpn.trim().length > 0),
-  }).score
 }
 
 /**
@@ -140,10 +94,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   // threshold so Google doesn't waste crawl budget on stub pages.
   // The admin's per-product robotsIndex flag still wins over this
   // (an admin actively setting "index" wins regardless of score).
+  // Content score is now persisted on Product.contentScore (#7-3
+  // persistence). The admin / Inngest job recompute it on every
+  // mutation; we just read the column here.
   const threshold = readContentNoindexThreshold()
-  const contentScore = threshold != null ? computeContentScore(product) : null
   const indexFlag =
-    threshold != null && contentScore != null && contentScore < threshold && product.robotsIndex
+    threshold != null && product.contentScore < threshold && product.robotsIndex
       ? false
       : product.robotsIndex
 

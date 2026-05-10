@@ -2,7 +2,6 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { db, Prisma } from '@indus/db'
 import ContentScoreBadge from '../../../components/ContentScoreBadge'
-import { scoreFromProduct } from '../../../lib/product-content-score'
 
 export const metadata: Metadata = { title: 'Products — Indus Admin' }
 
@@ -12,6 +11,7 @@ type Props = {
     status?: string
     brand?: string
     category?: string
+    content?: string
     q?: string
     sort?: string
     dir?: string
@@ -35,7 +35,16 @@ const SORTABLE: Record<string, keyof Prisma.ProductOrderByWithRelationInput> = {
   status: 'status',
   updatedAt: 'updatedAt',
   createdAt: 'createdAt',
+  contentScore: 'contentScore',
 }
+
+// Content-score band filter — uses bandForScore thresholds:
+//   thin   = <50, warn = 50–79, strong = ≥80.
+const CONTENT_BANDS = {
+  thin: { lt: 50 },
+  warn: { gte: 50, lt: 80 },
+  strong: { gte: 80 },
+} as const
 
 export default async function AdminProductsPage({ params, searchParams }: Props) {
   await params
@@ -44,6 +53,7 @@ export default async function AdminProductsPage({ params, searchParams }: Props)
   const statusFilter = sp.status ?? ''
   const brandFilter = sp.brand ?? ''
   const categoryFilter = sp.category ?? ''
+  const contentFilter = (sp.content ?? '') as '' | keyof typeof CONTENT_BANDS
   const query = (sp.q ?? '').trim()
   const sortKey = (sp.sort && SORTABLE[sp.sort]) || 'updatedAt'
   const sortDir: 'asc' | 'desc' = sp.dir === 'asc' ? 'asc' : 'desc'
@@ -53,6 +63,9 @@ export default async function AdminProductsPage({ params, searchParams }: Props)
     ...(statusFilter ? { status: statusFilter as Prisma.ProductWhereInput['status'] } : {}),
     ...(brandFilter ? { brandId: brandFilter } : {}),
     ...(categoryFilter ? { categoryId: categoryFilter } : {}),
+    ...(contentFilter && contentFilter in CONTENT_BANDS
+      ? { contentScore: CONTENT_BANDS[contentFilter] }
+      : {}),
     ...(query
       ? {
           OR: [
@@ -68,21 +81,9 @@ export default async function AdminProductsPage({ params, searchParams }: Props)
     db.product.count({ where }),
     db.product.findMany({
       where,
-      include: {
-        brand: true,
-        category: true,
-        // Counts feed the per-row content-depth score (#7-2). _count
-        // is cheaper than loading the related rows just to get a length.
-        _count: {
-          select: {
-            faqs: true,
-            specs: true,
-            crossReferences: true,
-            documents: true,
-            images: true,
-          },
-        },
-      },
+      include: { brand: true, category: true },
+      // contentScore is now persisted on the row (#7-3); we sort
+      // directly on the column instead of recomputing per render.
       orderBy: { [sortKey]: sortDir },
       skip: (page - 1) * PAGE_SIZE,
       take: PAGE_SIZE,
@@ -102,6 +103,7 @@ export default async function AdminProductsPage({ params, searchParams }: Props)
       status: statusFilter || undefined,
       brand: brandFilter || undefined,
       category: categoryFilter || undefined,
+      content: contentFilter || undefined,
       q: query || undefined,
       sort: sortKey === 'updatedAt' ? undefined : sortKey,
       dir: sortDir === 'desc' ? undefined : sortDir,
@@ -210,7 +212,7 @@ export default async function AdminProductsPage({ params, searchParams }: Props)
         </form>
 
         {/* Status pills with counts */}
-        <div className="flex flex-wrap items-center gap-1.5 mb-6">
+        <div className="flex flex-wrap items-center gap-1.5 mb-3">
           <StatusPill href={buildUrl({ status: undefined, page: undefined })} active={!statusFilter} label="All" count={total} />
           {(['draft', 'active', 'discontinued'] as const).map((s) => (
             <StatusPill
@@ -221,6 +223,37 @@ export default async function AdminProductsPage({ params, searchParams }: Props)
               count={statusCountMap[s] ?? 0}
             />
           ))}
+        </div>
+
+        {/* Content-depth filter — backed by persisted Product.contentScore (#7-3).
+            Thresholds align with bandForScore in @indus/domain. */}
+        <div className="flex flex-wrap items-center gap-1.5 mb-6">
+          <span className="font-mono text-[10px] uppercase tracking-[0.1em] text-[var(--color-muted)] pr-2">
+            Content depth
+          </span>
+          <ContentChip
+            href={buildUrl({ content: undefined, page: undefined })}
+            active={!contentFilter}
+            label="All"
+          />
+          <ContentChip
+            href={buildUrl({ content: 'thin', page: undefined })}
+            active={contentFilter === 'thin'}
+            label="Thin (<50)"
+            band="thin"
+          />
+          <ContentChip
+            href={buildUrl({ content: 'warn', page: undefined })}
+            active={contentFilter === 'warn'}
+            label="Needs work (50–79)"
+            band="warn"
+          />
+          <ContentChip
+            href={buildUrl({ content: 'strong', page: undefined })}
+            active={contentFilter === 'strong'}
+            label="Strong (≥80)"
+            band="strong"
+          />
         </div>
 
         {products.length === 0 ? (
@@ -250,7 +283,13 @@ export default async function AdminProductsPage({ params, searchParams }: Props)
                 <div>Brand</div>
                 <div>Category</div>
                 <div className="text-right">Stock</div>
-                <div className="text-center" title="Content depth score (0–100)">Content</div>
+                <Link
+                  href={sortUrl('contentScore')}
+                  title="Content depth score (0–100)"
+                  className="text-center hover:text-[var(--color-primary)]"
+                >
+                  Content{sortIndicator('contentScore')}
+                </Link>
                 <Link href={sortUrl('status')} className="text-center hover:text-[var(--color-primary)]">
                   Status{sortIndicator('status')}
                 </Link>
@@ -259,9 +298,7 @@ export default async function AdminProductsPage({ params, searchParams }: Props)
                 </Link>
               </div>
 
-              {products.map((p, i) => {
-                const contentScore = scoreFromProduct(p).score
-                return (
+              {products.map((p, i) => (
                   <Link
                     key={p.id}
                     href={`/products/${p.id}/edit`}
@@ -281,7 +318,7 @@ export default async function AdminProductsPage({ params, searchParams }: Props)
                       {p.stockQty > 0 ? p.stockQty.toLocaleString() : '—'}
                     </div>
                     <div className="flex justify-center">
-                      <ContentScoreBadge score={contentScore} compact />
+                      <ContentScoreBadge score={p.contentScore} compact />
                     </div>
                     <div className="flex justify-center">
                       <span
@@ -296,8 +333,7 @@ export default async function AdminProductsPage({ params, searchParams }: Props)
                       {new Date(p.updatedAt).toLocaleDateString()}
                     </div>
                   </Link>
-                )
-              })}
+                ))}
             </div>
 
             {totalPages > 1 && (
@@ -409,6 +445,42 @@ function StatusPill({
     >
       <span>{label}</span>
       <span className={`text-[10px] ${active ? 'opacity-80' : 'text-[var(--color-muted)]'}`}>{count.toLocaleString()}</span>
+    </Link>
+  )
+}
+
+function ContentChip({
+  href,
+  active,
+  label,
+  band,
+}: {
+  href: string
+  active: boolean
+  label: string
+  band?: 'thin' | 'warn' | 'strong'
+}) {
+  // When inactive, leave the chip neutral; only the swatch dot picks up
+  // the band colour so the row stays visually quiet.
+  const dot =
+    band === 'thin'
+      ? 'bg-[oklch(0.55_0.16_25)]'
+      : band === 'warn'
+        ? 'bg-[oklch(0.6_0.15_75)]'
+        : band === 'strong'
+          ? 'bg-[oklch(0.55_0.15_145)]'
+          : ''
+  return (
+    <Link
+      href={href}
+      className={`flex items-center gap-1.5 h-7 px-3 font-mono text-[11px] border transition-colors ${
+        active
+          ? 'border-[var(--color-accent)] bg-[var(--color-accent)] text-white'
+          : 'border-[var(--color-border)] text-[var(--color-body)] hover:border-[var(--color-body)]'
+      }`}
+    >
+      {dot && <span aria-hidden="true" className={`w-1.5 h-1.5 rounded-full ${dot}`} />}
+      <span>{label}</span>
     </Link>
   )
 }

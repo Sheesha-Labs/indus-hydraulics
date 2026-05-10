@@ -10,6 +10,7 @@ import { ROLES, requireRole } from '../../../lib/rbac'
 import { fail, failFromError, ok, type Result } from '../../../lib/result'
 import { STORAGE_BUCKETS, deleteFromStorage, uploadToStorage } from '../../../lib/supabase'
 import { withSeoAudit } from '../../../lib/seo-audit'
+import { recomputeContentScore } from '../../../lib/recompute-content-score'
 
 // ── Helpers ──────────────────────────────────────────────────────────────────
 
@@ -94,6 +95,7 @@ export async function createProduct(formData: FormData): Promise<Result<{ id: st
       },
     })
     createdId = product.id
+    await recomputeContentScore(product.id)
 
     revalidatePath(`/products`)
   } catch (err) {
@@ -158,6 +160,7 @@ export async function updateProductCore(formData: FormData): Promise<Result<void
         status: parsed.status,
       },
     })
+    await recomputeContentScore(parsed.id)
 
     revalidatePath(`//products/${parsed.id}/edit`)
     revalidatePath(`//products`)
@@ -185,6 +188,7 @@ export async function updateProductDescription(formData: FormData): Promise<Resu
       where: { id: parsed.id },
       data: { descriptionLong: parsed.descriptionLong },
     })
+    await recomputeContentScore(parsed.id)
     revalidatePath(`//products/${parsed.id}/edit`)
     return ok(undefined)
   } catch (err) {
@@ -285,6 +289,7 @@ export async function updateProductCommerce(formData: FormData): Promise<Result<
         hsCode: parsed.hsCode,
       },
     })
+    await recomputeContentScore(parsed.id)
 
     revalidatePath(`//products/${parsed.id}/edit`)
     revalidatePath(`//products`)
@@ -458,6 +463,7 @@ export async function updateProductSeo(formData: FormData): Promise<Result<void>
         })
       },
     )
+    await recomputeContentScore(parsed.id)
 
     revalidatePath(`/products/${parsed.id}/edit`)
     revalidatePath('/seo/inspector')
