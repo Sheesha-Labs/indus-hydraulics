@@ -7,6 +7,13 @@ import {
   updateCaseStudy,
   deleteCaseStudy,
 } from './content-actions'
+import MediaPicker from '../../../../../components/MediaPicker'
+import {
+  ChipsEditor,
+  DeliveryAreasEditor,
+  StatsEditor,
+  SupportBlockEditor,
+} from '../../../../../components/StructuredJsonEditors'
 
 type CaseStudy = {
   id: string
@@ -17,6 +24,13 @@ type CaseStudy = {
   imageId: string | null
   position: number
   isPublished: boolean
+}
+
+type MediaItem = {
+  id: string
+  storagePath: string
+  alt: string | null
+  originalFilename: string
 }
 
 type Props = {
@@ -36,20 +50,40 @@ type Props = {
     heroId: string | null
   }
   caseStudies: CaseStudy[]
+  recentImages: MediaItem[]
+  publicUrlBase: string
 }
 
-export default function IndustryContentEditor({ industry, caseStudies }: Props) {
+export default function IndustryContentEditor({
+  industry,
+  caseStudies,
+  recentImages,
+  publicUrlBase,
+}: Props) {
   return (
     <div className="flex flex-col gap-8 max-w-4xl">
-      <ContentForm industry={industry} />
-      <CaseStudiesSection industryId={industry.id} caseStudies={caseStudies} />
+      <ContentForm industry={industry} recentImages={recentImages} publicUrlBase={publicUrlBase} />
+      <CaseStudiesSection
+        industryId={industry.id}
+        caseStudies={caseStudies}
+        recentImages={recentImages}
+        publicUrlBase={publicUrlBase}
+      />
     </div>
   )
 }
 
 // ── Industry content form ────────────────────────────────────────────────
 
-function ContentForm({ industry }: { industry: Props['industry'] }) {
+function ContentForm({
+  industry,
+  recentImages,
+  publicUrlBase,
+}: {
+  industry: Props['industry']
+  recentImages: MediaItem[]
+  publicUrlBase: string
+}) {
   const [pending, startTransition] = useTransition()
   const [message, setMessage] = useState<string | null>(null)
   const [error, setError] = useState<string | null>(null)
@@ -123,34 +157,30 @@ function ContentForm({ industry }: { industry: Props['industry'] }) {
           />
         </Field>
 
-        <Field label="Hero media ID" hint="UUID of an existing image in the media library (optional).">
-          <input
+        <Field label="Hero image" hint="Image shown behind the dark hero band on the storefront industry page.">
+          <MediaPicker
             name="heroId"
-            defaultValue={industry.heroId ?? ''}
-            placeholder="leave empty to clear"
-            className="w-full h-9 px-3 border border-[var(--color-border)] text-[13px] font-mono"
+            defaultValue={industry.heroId}
+            recent={recentImages}
+            publicUrlBase={publicUrlBase}
           />
         </Field>
 
-        <JsonField name="chips" label="Chips (JSON array of strings)" defaultValue={industry.chips} rows={3} />
-        <JsonField
-          name="stats"
-          label="Stats (JSON array of { value, label })"
-          defaultValue={industry.stats}
-          rows={6}
-        />
-        <JsonField
-          name="deliveryAreas"
-          label="Delivery areas (JSON array of { category, title, description, skuCount })"
-          defaultValue={industry.deliveryAreas}
-          rows={8}
-        />
-        <JsonField
-          name="supportBlock"
-          label="Support block (JSON object with eyebrow / headline / description / bullets / cta)"
-          defaultValue={industry.supportBlock}
-          rows={8}
-        />
+        <Field label="Chips" hint="Small badges shown in the hero (one per chip).">
+          <ChipsEditor name="chips" defaultValue={industry.chips} />
+        </Field>
+
+        <Field label="Stats" hint="Number + label pairs shown in the hero stat row.">
+          <StatsEditor name="stats" defaultValue={industry.stats} />
+        </Field>
+
+        <Field label="Delivery areas" hint="Where-we-deliver tiles below the hero.">
+          <DeliveryAreasEditor name="deliveryAreas" defaultValue={industry.deliveryAreas} />
+        </Field>
+
+        <Field label="Support block" hint="Closing CTA section. Leave blank to hide.">
+          <SupportBlockEditor name="supportBlock" defaultValue={industry.supportBlock} />
+        </Field>
 
         <Field label="Featured product SKUs" hint="Comma-separated. When empty the page falls back to featured categories.">
           <input
@@ -188,9 +218,13 @@ function ContentForm({ industry }: { industry: Props['industry'] }) {
 function CaseStudiesSection({
   industryId,
   caseStudies,
+  recentImages,
+  publicUrlBase,
 }: {
   industryId: string
   caseStudies: CaseStudy[]
+  recentImages: MediaItem[]
+  publicUrlBase: string
 }) {
   const [adding, setAdding] = useState(false)
   const [editingId, setEditingId] = useState<string | null>(null)
@@ -219,6 +253,8 @@ function CaseStudiesSection({
             industryId={industryId}
             onDone={() => setAdding(false)}
             mode="create"
+            recentImages={recentImages}
+            publicUrlBase={publicUrlBase}
           />
         )}
 
@@ -233,6 +269,8 @@ function CaseStudiesSection({
                 existing={cs}
                 onDone={() => setEditingId(null)}
                 mode="edit"
+                recentImages={recentImages}
+                publicUrlBase={publicUrlBase}
               />
             ) : (
               <CaseStudyRow
@@ -317,11 +355,15 @@ function CaseStudyForm({
   existing,
   onDone,
   mode,
+  recentImages,
+  publicUrlBase,
 }: {
   industryId: string
   existing?: CaseStudy
   onDone: () => void
   mode: 'create' | 'edit'
+  recentImages: MediaItem[]
+  publicUrlBase: string
 }) {
   const [pending, startTransition] = useTransition()
   const [error, setError] = useState<string | null>(null)
@@ -390,12 +432,12 @@ function CaseStudyForm({
           className="w-full px-3 py-2 border border-[var(--color-border)] text-[13px] resize-vertical"
         />
       </Field>
-      <Field label="Image media ID" hint="Optional UUID — picks up from the media library.">
-        <input
+      <Field label="Image" hint="Optional — picks from the media library or accepts a UUID.">
+        <MediaPicker
           name="imageId"
-          defaultValue={existing?.imageId ?? ''}
-          placeholder="leave empty for no image"
-          className="w-full h-9 px-3 border border-[var(--color-border)] text-[13px] font-mono"
+          defaultValue={existing?.imageId}
+          recent={recentImages}
+          publicUrlBase={publicUrlBase}
         />
       </Field>
 
@@ -449,26 +491,3 @@ function Field({
   )
 }
 
-function JsonField({
-  name,
-  label,
-  defaultValue,
-  rows,
-}: {
-  name: string
-  label: string
-  defaultValue: string
-  rows: number
-}) {
-  return (
-    <Field label={label} hint="JSON. Empty = []. Invalid JSON blocks the save.">
-      <textarea
-        name={name}
-        defaultValue={defaultValue}
-        rows={rows}
-        spellCheck={false}
-        className="w-full px-3 py-2 border border-[var(--color-border)] text-[12px] font-mono resize-vertical"
-      />
-    </Field>
-  )
-}
