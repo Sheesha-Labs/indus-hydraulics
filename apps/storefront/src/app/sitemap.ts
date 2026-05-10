@@ -28,7 +28,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // page reads from db.industry; we include published rows here so
   // Google can finally crawl them (they were excluded before because
   // the hardcoded slug map could 404 on DB-only slugs).
-  const [products, categories, brands, blogPosts, cmsPages, industries] = await Promise.all([
+  const [products, categories, brands, blogPosts, cmsPages, industries, serviceCases] = await Promise.all([
     db.product.findMany({
       where: { status: 'active' },
       select: {
@@ -92,6 +92,19 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       select: {
         slug: true,
         seoUpdatedAt: true,
+        excludeFromSitemap: true,
+        robotsIndex: true,
+        sitemapPriority: true,
+        sitemapChangeFreq: true,
+      },
+    }),
+    db.serviceCase.findMany({
+      where: { status: 'published', publishedAt: { not: null, lte: new Date() } },
+      select: {
+        slug: true,
+        publishedAt: true,
+        seoUpdatedAt: true,
+        updatedAt: true,
         excludeFromSitemap: true,
         robotsIndex: true,
         sitemapPriority: true,
@@ -178,11 +191,23 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: i.sitemapPriority ? Number(i.sitemapPriority) : 0.6,
     }))
 
+  // Service cases — emitted inline because buildSitemapEntries doesn't
+  // know the /services/* prefix yet. Same shape as industries.
+  const serviceCaseEntries: MetadataRoute.Sitemap = serviceCases
+    .filter((c) => !c.excludeFromSitemap && c.robotsIndex)
+    .map((c) => ({
+      url: `${BASE_URL}/services/${c.slug}`,
+      lastModified: c.seoUpdatedAt ?? c.publishedAt ?? c.updatedAt,
+      changeFrequency: c.sitemapChangeFreq ?? ('monthly' as const),
+      priority: c.sitemapPriority ? Number(c.sitemapPriority) : 0.7,
+    }))
+
   const staticEntries = buildStaticEntries(BASE_URL, [
     { path: '', priority: 1.0, changeFrequency: 'weekly' },
     { path: '/blog', priority: 0.6, changeFrequency: 'weekly' },
     { path: '/brands', priority: 0.6, changeFrequency: 'weekly' },
     { path: '/industries', priority: 0.6, changeFrequency: 'weekly' },
+    { path: '/services', priority: 0.8, changeFrequency: 'weekly' },
     { path: '/search', priority: 0.4, changeFrequency: 'monthly' },
     // Programmatic replacement landing pages — high-intent search
     // surface ("parker pv16 replacement") that AI agents cite well.
@@ -215,6 +240,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...blogEntries,
     ...cmsEntries,
     ...industryEntries,
+    ...serviceCaseEntries,
     ...replacementBrandEntries,
     ...replacementEntries,
   ]
