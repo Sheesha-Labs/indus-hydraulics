@@ -34,7 +34,7 @@ const getHomeBrands = unstable_cache(
     db.brand.findMany({
       where: { isPublished: true },
       orderBy: { name: 'asc' },
-      select: { id: true, name: true, slug: true, country: true, description: true, isAuthorizedDistributor: true },
+      select: { id: true, name: true, slug: true, country: true, isAuthorizedDistributor: true },
       take: 12,
     }),
   ['home-brands'],
@@ -398,11 +398,6 @@ export default async function HomePage() {
                   <b className="block text-[18px] font-bold tracking-[-0.01em] text-[var(--color-primary)] normal-case font-sans mb-1">{brand.name}</b>
                   {brand.country?.toUpperCase()}
                 </div>
-                {brand.description && (
-                  <div className="font-mono text-[11px] text-[var(--color-caption)] mt-2 line-clamp-1">
-                    {brand.description}
-                  </div>
-                )}
               </Link>
             ))}
           </div>
