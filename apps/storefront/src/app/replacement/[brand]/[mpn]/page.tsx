@@ -3,10 +3,11 @@ import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import Image from 'next/image'
 import { buildBreadcrumbLd, buildReplacementCollectionLd } from '@indus/domain'
-import { JsonLd } from '@indus/ui'
+import { JsonLd, LeadCapturePanel, buildWhatsappHref, buildMailtoHref } from '@indus/ui'
 import { mediaUrl } from '../../../../lib/media'
 import { ORG_ID, SITE_NAME, pageMetadata, urlFor } from '../../../../lib/seo'
 import { getReplacementMatches } from '../../../../lib/replacement-data'
+import { getStoreSettings } from '../../../../lib/store-settings'
 
 type Props = {
   params: Promise<{ brand: string; mpn: string }>
@@ -28,7 +29,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function ReplacementPage({ params }: Props) {
   const { brand, mpn } = await params
-  const matches = await getReplacementMatches(brand, mpn)
+  const [matches, settings] = await Promise.all([getReplacementMatches(brand, mpn), getStoreSettings()])
   if (matches.length === 0) notFound()
 
   const first = matches[0]!
@@ -133,32 +134,30 @@ export default async function ReplacementPage({ params }: Props) {
         ))}
       </div>
 
-      <section className="border-t border-[var(--color-border)] pt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div>
-          <h3 className="font-semibold text-[16px] mb-2">Need application help?</h3>
-          <p className="text-[13px] text-[var(--color-muted)] leading-[1.55] mb-4">
-            Our engineers can confirm interchangeability, port pattern, mounting, and lead time before you commit. Send us your part number or a photo of the unit on the bench.
-          </p>
-          <Link
-            href={`/contact`}
-            className="inline-flex h-9 px-4 items-center bg-[var(--color-accent)] text-white font-mono text-[12px] hover:opacity-90 transition-opacity"
-          >
-            Talk to an engineer →
-          </Link>
-        </div>
-        <div>
-          <h3 className="font-semibold text-[16px] mb-2">Browse all {competitorBrand} replacements</h3>
-          <p className="text-[13px] text-[var(--color-muted)] leading-[1.55] mb-4">
-            See every {competitorBrand} part we cover, with the matching Indus equivalents.
-          </p>
-          <Link
-            href={`/replacement/${brand}`}
-            className="inline-flex h-9 px-4 items-center border border-[var(--color-border)] bg-[var(--color-elevated)] font-mono text-[12px] text-[var(--color-body)] hover:border-[var(--color-primary)] transition-colors"
-          >
-            All {competitorBrand} parts →
-          </Link>
-        </div>
+      <section className="border-t border-[var(--color-border)] pt-8 mb-10">
+        <h3 className="font-semibold text-[16px] mb-2">Browse all {competitorBrand} replacements</h3>
+        <p className="text-[13px] text-[var(--color-muted)] leading-[1.55] mb-4">
+          See every {competitorBrand} part we cover, with the matching Indus equivalents.
+        </p>
+        <Link
+          href={`/replacement/${brand}`}
+          className="inline-flex h-9 px-4 items-center border border-[var(--color-border)] bg-[var(--color-elevated)] font-mono text-[12px] text-[var(--color-body)] hover:border-[var(--color-primary)] transition-colors"
+        >
+          All {competitorBrand} parts →
+        </Link>
       </section>
+
+      {/* Pre-baked CTAs with the competitor part number in the email
+          subject + WhatsApp opener so the lead lands already scoped. */}
+      <LeadCapturePanel
+        variant="compact"
+        heading={`Quote on ${competitorBrand} ${competitorMpn}`}
+        body={`Our applications team can confirm interchangeability, port pattern, mounting and lead time before you commit. Send your part number or a photo of the unit and we'll come back within one business day.`}
+        whatsappUrl={buildWhatsappHref(settings.contactPhone, `Enquiry: ${competitorBrand} ${competitorMpn} replacement`)}
+        emailUrl={buildMailtoHref(settings.contactEmail, `${competitorBrand} ${competitorMpn} replacement enquiry`)}
+        phone={settings.contactPhone}
+        quoteLabel="Request a quote"
+      />
     </div>
   )
 }

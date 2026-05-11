@@ -3,9 +3,11 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { notFound } from 'next/navigation'
 import { db } from '@indus/db'
+import { LeadCapturePanel, buildWhatsappHref, buildMailtoHref } from '@indus/ui'
 import { mediaUrl } from '../../../lib/media'
 import { pageMetadata } from '../../../lib/seo'
 import { getIndustryBySlug } from '../../../lib/industry-content'
+import { getStoreSettings } from '../../../lib/store-settings'
 
 // Default gradient used when an industry row has no per-row gradient.
 const DEFAULT_GRADIENT = 'linear-gradient(160deg,oklch(0.2 0.02 240),oklch(0.16 0.015 245))'
@@ -35,7 +37,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function IndustryPage({ params }: Props) {
   const { slug } = await params
-  const ind = await getIndustryBySlug(slug)
+  const [ind, settings] = await Promise.all([getIndustryBySlug(slug), getStoreSettings()])
   if (!ind) notFound()
 
   // Featured products come from two signals on the Industry row:
@@ -239,6 +241,19 @@ export default async function IndustryPage({ params }: Props) {
           </div>
         </section>
       )}
+
+      {/* ── Lead capture ──────────────────────────────────────────
+          The historic gap on this template: high-intent organic
+          traffic ("oil & gas hydraulics UAE") with no conversion
+          path. CTAs are pre-baked with industry context so the
+          email subject + WhatsApp text land already framed. */}
+      <LeadCapturePanel
+        heading={`Quoting a project in ${ind.name}?`}
+        body={`Tell our applications team what you're specifying. We reply within one business day with availability, lead time and a fixed-price quote — no obligation.`}
+        whatsappUrl={buildWhatsappHref(settings.contactPhone, `Enquiry: ${ind.name} project`)}
+        emailUrl={buildMailtoHref(settings.contactEmail, `${ind.name} project enquiry`)}
+        phone={settings.contactPhone}
+      />
 
       {/* ── Support section ───────────────────────────────────── */}
       {ind.supportBlock && (
