@@ -22,6 +22,7 @@ import AddToQuoteButton from '../../../components/AddToQuoteButton'
 import AddToCompareButton from '../../../components/AddToCompareButton'
 import ProductTabs from '../../../components/ProductTabs'
 import ProductStickyBar from '../../../components/ProductStickyBar'
+import AnalyticsEvent from '../../../components/AnalyticsEvent'
 
 type Props = {
   params: Promise<{ slug: string }>
@@ -582,6 +583,18 @@ export default async function ProductPage({ params, searchParams }: Props) {
         datasheetUrl={datasheetUrl}
         whatsappUrl={whatsappHref(settings.contactPhone, product.sku)}
         emailUrl={mailtoQuoteHref(settings.contactEmail, product.sku)}
+      />
+
+      {/* Analytics: PDP view */}
+      <AnalyticsEvent
+        name="pdp_view"
+        props={{
+          sku: product.sku,
+          slug: product.slug,
+          brand: product.brand?.name ?? null,
+          category: product.category?.name ?? null,
+          hasListPrice: product.listPrice !== null,
+        }}
       />
     </>
   )

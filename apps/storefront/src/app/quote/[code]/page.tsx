@@ -6,6 +6,7 @@ import { auth } from '../../../lib/auth'
 import { db } from '@indus/db'
 import { mediaUrl } from '../../../lib/media'
 import { verifyQuoteAccessToken } from '@indus/domain'
+import AnalyticsEvent from '../../../components/AnalyticsEvent'
 
 export const metadata: Metadata = { title: 'RFQ Status' }
 
@@ -131,8 +132,25 @@ export default async function RfqStatusPage({ params, searchParams }: Props) {
   const urgencyLabel = URGENCY_LABELS[rfq.urgency] ?? rfq.urgency
   const urgencyColor = URGENCY_COLORS[rfq.urgency] ?? URGENCY_COLORS.routine!
 
+  // Fire `rfq_submitted` only on the first landing from /quote/submit
+  // (server action appends `?confirmed=1`). Subsequent visits to the
+  // same RFQ status page don't emit a duplicate submission event.
+  const isFreshSubmission = sp.confirmed === '1'
+
   return (
     <div className="max-w-[900px] mx-auto px-6 py-10 pb-20">
+
+      {isFreshSubmission && (
+        <AnalyticsEvent
+          name="rfq_submitted"
+          props={{
+            rfqCode: rfq.code,
+            urgency: rfq.urgency,
+            lineCount: rfq.lines.length,
+            anonymous: hasValidToken && !session?.user?.accountId,
+          }}
+        />
+      )}
 
       {/* ── Confirmation header ─────────────────────────────────── */}
       <div className="text-center mb-10">

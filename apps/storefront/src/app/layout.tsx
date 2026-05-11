@@ -3,6 +3,8 @@ import { Inter, IBM_Plex_Mono, Source_Serif_4 } from 'next/font/google'
 import { unstable_cache } from 'next/cache'
 import { Analytics } from '@vercel/analytics/next'
 import { SpeedInsights } from '@vercel/speed-insights/next'
+import { Suspense } from 'react'
+import AnalyticsProvider from '../components/AnalyticsProvider'
 import { db } from '@indus/db'
 import { buildOrgLd, buildWebsiteLd } from '@indus/domain'
 import { JsonLd } from '@indus/ui'
@@ -127,6 +129,12 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         <JsonLd data={[orgLd, websiteLd]} />
         <Analytics />
         <SpeedInsights />
+        {/* PostHog client init + pageview tracking. No-ops without
+            NEXT_PUBLIC_POSTHOG_KEY. Suspense boundary required because
+            AnalyticsProvider uses useSearchParams. */}
+        <Suspense fallback={null}>
+          <AnalyticsProvider />
+        </Suspense>
       </body>
     </html>
   )

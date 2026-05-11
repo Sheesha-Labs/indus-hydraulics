@@ -183,15 +183,19 @@ export async function submitRfq(formData: FormData): Promise<SubmitResult> {
     console.error('[submitRfq] email send error', err)
   }
 
-  // Anonymous submitters don't have a session — sign them a short-lived
-  // access token so they can view their RFQ confirmation + download any
-  // future quote PDF without creating an account.
+  // `?confirmed=1` marks this as the first landing from a fresh submission
+  // so the status page can fire the `rfq_submitted` analytics event exactly
+  // once. Subsequent visits to /quote/<code> won't double-count.
+  //
+  // Anonymous submitters additionally carry a signed access token in the
+  // URL so they can view the RFQ confirmation + download any future quote
+  // PDF without creating an account.
   if (isAnonymous) {
     const token = signQuoteAccessToken(rfq.code)
-    redirect(`/quote/${rfq.code}?token=${encodeURIComponent(token)}`)
+    redirect(`/quote/${rfq.code}?token=${encodeURIComponent(token)}&confirmed=1`)
   }
 
-  redirect(`/quote/${rfq.code}`)
+  redirect(`/quote/${rfq.code}?confirmed=1`)
 }
 
 async function resolveOrCreateAnonymousContact(input: z.infer<typeof AnonymousContactSchema>): Promise<{ accountId: string; contactId: string }> {
