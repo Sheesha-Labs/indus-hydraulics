@@ -8,10 +8,18 @@ export const revalidate = 3600
 const FOUNDING_YEAR = 2003
 
 export async function generateMetadata(): Promise<Metadata> {
-  const page = await db.cmsPage.findUnique({ where: { slug: 'about' } })
+  const [page, skuCount, brandCount] = await Promise.all([
+    db.cmsPage.findUnique({ where: { slug: 'about' } }),
+    db.product.count({ where: { status: 'active' } }),
+    db.brand.count({ where: { isPublished: true } }),
+  ])
+  const yearsInBusiness = new Date().getFullYear() - FOUNDING_YEAR
+  const skuFloor = Math.max(100, Math.floor(skuCount / 100) * 100)
   return {
     title: page?.seoTitle ?? 'About Indus Hydraulics',
-    description: page?.seoDescription ?? 'A specialist hydraulics supplier built by engineers for engineers. 23 years, 1,800+ SKUs, 47 countries.',
+    description:
+      page?.seoDescription ??
+      `A specialist hydraulics supplier built by engineers for engineers. ${yearsInBusiness} years in business, ${skuFloor.toLocaleString()}+ SKUs across ${brandCount} brands, shipped from Dubai HQ.`,
   }
 }
 
@@ -42,6 +50,9 @@ export default async function AboutPage({ params }: Props) {
     db.brand.count({ where: { isPublished: true } }),
   ])
   const yearsInBusiness = new Date().getFullYear() - FOUNDING_YEAR
+  // Floor to the nearest 100 so the hero claim never overstates the
+  // catalogue — adding SKUs only ever ratchets the number up.
+  const skuFloor = Math.max(100, Math.floor(activeSkuCount / 100) * 100)
 
   if (page) {
     return (
@@ -66,7 +77,7 @@ export default async function AboutPage({ params }: Props) {
           </h1>
         </div>
         <p className="text-[17px] text-[var(--color-muted)] leading-[1.55] max-w-[520px]">
-          We started in a 200-square-foot office in Al Quasis with one hydraulics distributorship and a fax machine. Twenty-three years later we ship 1,800+ SKUs to 47 countries — and we still know the bore, rod and stroke of every cylinder we sell.
+          We started in a 200-square-foot office in Al Quasis with one hydraulics distributorship and a fax machine. {yearsInBusiness} years later we ship {skuFloor.toLocaleString()}+ SKUs across the GCC — and we still know the bore, rod and stroke of every cylinder we sell.
         </p>
       </div>
 
@@ -76,7 +87,7 @@ export default async function AboutPage({ params }: Props) {
           {[
             { num: `${yearsInBusiness} yrs`, lbl: 'In business' },
             { num: activeSkuCount.toLocaleString(), lbl: 'Live SKUs' },
-            { num: '47', lbl: 'Countries served' },
+            { num: 'GCC', lbl: 'Service area' },
             { num: String(publishedBrandCount), lbl: 'Partner brands' },
           ].map((s, i) => (
             <div key={s.lbl} className={`px-6 py-6 ${i < 3 ? 'border-r border-[var(--color-border-2)]' : ''}`}>
