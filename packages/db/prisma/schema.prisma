@@ -1751,3 +1751,31 @@ model Counter {
   @@id([scope, year])
   @@map("counters")
 }
+
+// ─────────────────────────────────────────────────────────────────────────────
+// NEWSLETTER — anonymous email capture from homepage + future CTAs. Leads
+// who may or may not become accounts. Status enum lets us reactivate
+// unsubscribes without losing the record (history matters for opt-in proof).
+// ─────────────────────────────────────────────────────────────────────────────
+
+enum NewsletterSubscriberStatus {
+  active
+  unsubscribed
+  bounced
+}
+
+model NewsletterSubscriber {
+  id             String                     @id @default(uuid())
+  email          String                     @unique
+  status         NewsletterSubscriberStatus @default(active)
+  source         String? // e.g. "homepage_footer", "quote_thanks"
+  ipHash         String? // sha256 of submitter IP; never raw
+  userAgent      String?
+  createdAt      DateTime                   @default(now())
+  updatedAt      DateTime                   @updatedAt
+  unsubscribedAt DateTime?
+
+  @@index([status])
+  @@index([createdAt])
+  @@map("newsletter_subscribers")
+}
