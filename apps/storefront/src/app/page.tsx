@@ -6,10 +6,19 @@ import HomeNewsletterForm from '../components/HomeNewsletterForm'
 import HomeHeroCarousel, { type HomeHeroSlide } from '../components/HomeHeroCarousel'
 import { getIndustryList } from '../lib/industry-content'
 
-export const metadata: Metadata = {
-  title: 'Indus Hydraulics — Industrial Components for Hydraulic Systems',
-  description:
-    '1,800+ SKUs across pumps, cylinders, valves and consumables — from 14 specialist brands. ISO-certified, datasheet-backed, ready to ship to 47 countries.',
+export async function generateMetadata(): Promise<Metadata> {
+  // Pull live counts so the meta description matches the catalogue we
+  // actually have, not an aspirational number. Rounded down to the
+  // nearest 100 so the claim stays defensible as new SKUs are added.
+  const [skuCount, brandCount] = await Promise.all([
+    getActiveSkuCount(),
+    getPublishedBrandCount(),
+  ])
+  const skuFloor = Math.max(100, Math.floor(skuCount / 100) * 100)
+  return {
+    title: 'Indus Hydraulics — Industrial Components for Hydraulic Systems',
+    description: `${skuFloor.toLocaleString()}+ SKUs across pumps, cylinders, valves and consumables — from ${brandCount} specialist brands. ISO-certified, datasheet-backed, shipped from our Dubai HQ across the GCC.`,
+  }
 }
 
 // Re-render the static HTML at most once a minute. Combined with the
@@ -126,6 +135,9 @@ export default async function HomePage() {
   ])
 
   const yearsInBusiness = new Date().getFullYear() - 2003
+  // Match the hero claim to the catalogue we actually have. Rounded
+  // down to the nearest 100 so the number can never overstate reality.
+  const heroSkuFloor = Math.max(100, Math.floor(activeSkuCount / 100) * 100)
 
   // Industries are admin-managed in the DB (Tier C migration). Code
   // tokens (IND.01…) are derived from the per-row `position` so the
@@ -170,8 +182,8 @@ export default async function HomePage() {
               <em className="not-italic text-[var(--color-accent)]">can&apos;t afford downtime</em>.
             </h1>
             <p className="text-[17px] text-[var(--color-muted)] max-w-[520px] leading-[1.55]">
-              1,800+ SKUs across pumps, cylinders, valves and consumables — from 14 specialist brands.
-              ISO-certified, datasheet-backed, ready to ship to 47 countries.
+              {heroSkuFloor.toLocaleString()}+ SKUs across pumps, cylinders, valves and consumables — from {publishedBrandCount} specialist brands.
+              ISO-certified, datasheet-backed, shipped from our Dubai HQ across the GCC.
             </p>
 
             {/* Hero search */}
