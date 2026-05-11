@@ -22,6 +22,7 @@ import CaseRail from '../../../components/services/CaseRail'
 import RelatedCases from '../../../components/services/RelatedCases'
 import ArticleRenderer from '../../../components/services/blocks/ArticleRenderer'
 import ServicesCta from '../../../components/services/ServicesCta'
+import { buildWhatsappHref, buildMailtoHref } from '@indus/ui'
 
 type Props = {
   params: Promise<{ slug: string }>
@@ -111,7 +112,10 @@ export default async function ServiceCasePage({ params }: Props) {
       <RelatedCases cases={related} />
 
       <div className="mx-auto max-w-[var(--spacing-max-w)] px-[var(--spacing-page-gutter)]">
-        <ServicesCta />
+        <ServicesCta
+          whatsappUrl={buildWhatsappHref(settings.contactPhone, `Enquiry: ${c.title}`)}
+          emailUrl={buildMailtoHref(settings.contactEmail, `${c.title} — service enquiry`)}
+        />
       </div>
 
       <JsonLd data={articleLd} />

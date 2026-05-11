@@ -18,6 +18,8 @@ import ServiceCaseCard from '../../components/services/ServiceCaseCard'
 import ApproachSteps from '../../components/services/ApproachSteps'
 import StoryCard from '../../components/services/StoryCard'
 import ServicesCta from '../../components/services/ServicesCta'
+import { buildWhatsappHref, buildMailtoHref } from '@indus/ui'
+import { getStoreSettings } from '../../lib/store-settings'
 
 type Props = {
   searchParams: Promise<{
@@ -56,7 +58,7 @@ export default async function ServicesIndexPage({ searchParams }: Props) {
   const category = parseCategory(sp.category)
   const sort = parseSort(sp.sort)
 
-  const [featured, total, perCategory, allCases, twoUp] = await Promise.all([
+  const [featured, total, perCategory, allCases, twoUp, settings] = await Promise.all([
     // Featured only renders when no filter is applied (matches the mock —
     // the "Case of the Week" sits at the top of the unfiltered view).
     !category ? featuredServiceCase() : Promise.resolve(null),
@@ -66,6 +68,7 @@ export default async function ServicesIndexPage({ searchParams }: Props) {
     // Two-up at the bottom always renders the latest 2 stories irrespective
     // of filter — no point hiding them.
     topTwoStoryCases(),
+    getStoreSettings(),
   ])
 
   // When a featured case is shown above the grid, drop it from the grid so
@@ -117,7 +120,10 @@ export default async function ServicesIndexPage({ searchParams }: Props) {
           </section>
         ) : null}
 
-        <ServicesCta />
+        <ServicesCta
+          whatsappUrl={buildWhatsappHref(settings.contactPhone, 'Enquiry: service intake')}
+          emailUrl={buildMailtoHref(settings.contactEmail, 'Service intake enquiry')}
+        />
       </div>
     </main>
   )
