@@ -31,6 +31,7 @@ import {
 import { runSearch } from '../../lib/search'
 import { runBlogSearch } from '../../lib/search-blog'
 import SearchLogger from './SearchLogger'
+import AnalyticsEvent from '../../components/AnalyticsEvent'
 
 type Props = {
   searchParams: Promise<{
@@ -286,6 +287,25 @@ export default async function SearchPage({ searchParams }: Props) {
       {/* Fire-and-forget query log + click-through tracker. */}
       {query.length >= 2 && (
         <SearchLogger query={query} resultsCount={products.length} usedFallback={usedFallback} />
+      )}
+
+      {/* Funnel analytics: every search emits `search_performed`; the
+          zero-results variant fires only when the query actually returned
+          nothing, so we can build a "queries we can't answer" report. */}
+      {query.length >= 2 && (
+        <>
+          <AnalyticsEvent
+            name="search_performed"
+            props={{
+              query,
+              resultCount: products.length,
+              usedFallback,
+            }}
+          />
+          {products.length === 0 && (
+            <AnalyticsEvent name="search_zero_results" props={{ query, usedFallback }} />
+          )}
+        </>
       )}
 
       <div className="flex items-baseline gap-4 flex-wrap mb-3">
