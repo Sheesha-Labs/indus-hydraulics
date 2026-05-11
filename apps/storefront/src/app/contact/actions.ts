@@ -29,10 +29,31 @@ const INQUIRY_TYPE_LABELS: Record<z.infer<typeof InquiryTypeSchema>, string> = {
   general: 'General enquiry',
 }
 
+// Anti-spam: humans take a few seconds to fill the contact form. Bots
+// submit instantly. Threshold kept generous so paste-and-go users aren't
+// blocked.
+const MIN_FORM_DURATION_MS = 1500
+
 export async function submitContactForm(
   _prev: ContactFormState,
   formData: FormData,
 ): Promise<ContactFormState> {
+  // Honeypot — real browsers never populate this. Show a generic success
+  // state so the bot never learns we filtered it.
+  const honeypot = formData.get('website')
+  if (typeof honeypot === 'string' && honeypot.trim().length > 0) {
+    return { status: 'success', ref: 'OK' }
+  }
+
+  const startedAtRaw = formData.get('formStartedAt')
+  const startedAt = typeof startedAtRaw === 'string' ? Number(startedAtRaw) : NaN
+  if (Number.isFinite(startedAt) && startedAt > 0) {
+    const elapsed = Date.now() - startedAt
+    if (elapsed < MIN_FORM_DURATION_MS) {
+      return { status: 'success', ref: 'OK' }
+    }
+  }
+
   const parsed = ContactFormSchema.safeParse({
     inquiryType: formData.get('inquiryType') ?? undefined,
     firstName: formData.get('firstName'),

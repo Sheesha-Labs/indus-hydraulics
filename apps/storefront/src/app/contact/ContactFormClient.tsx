@@ -24,6 +24,9 @@ const initialState: ContactFormState = { status: 'idle' }
 export default function ContactFormClient() {
   const [state, formAction, isPending] = useActionState(submitContactForm, initialState)
   const [inquiryType, setInquiryType] = useState<typeof TABS[number]['id']>('quotation')
+  // Captured once on mount so anti-spam can reject instant submissions.
+  // Bots POST immediately; humans take seconds.
+  const [formStartedAt] = useState<string>(() => String(Date.now()))
 
   const fieldErrors = state.status === 'error' ? state.fieldErrors ?? {} : {}
 
@@ -68,6 +71,17 @@ export default function ContactFormClient() {
       </div>
 
       <form action={formAction} className="space-y-3">
+        {/* Honeypot — must stay empty. Hidden from sighted users + screen readers. */}
+        <input
+          type="text"
+          name="website"
+          tabIndex={-1}
+          autoComplete="off"
+          aria-hidden="true"
+          className="hidden"
+          defaultValue=""
+        />
+        <input type="hidden" name="formStartedAt" value={formStartedAt} />
         <input type="hidden" name="inquiryType" value={inquiryType} />
 
         <div className="grid grid-cols-2 gap-3">

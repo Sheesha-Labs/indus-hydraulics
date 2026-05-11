@@ -1,9 +1,10 @@
 'use server'
 
 import { redirect } from 'next/navigation'
+import { z } from 'zod'
 import { auth } from '../../lib/auth'
-import { db, nextRfqCode } from '@indus/db'
-import { assertTransition } from '@indus/domain'
+import { db, nextRfqCode, nextAccountCode } from '@indus/db'
+import { assertTransition, signQuoteAccessToken } from '@indus/domain'
 import {
   sendEmail,
   renderRfqConfirmation,
@@ -17,11 +18,40 @@ type LineItem = {
   targetPrice?: string
 }
 
-export async function submitRfq(formData: FormData) {
-  const session = await auth()
-  if (!session?.user?.accountId) {
-    throw new Error('Not authenticated')
+type SubmitResult = { success: true } | { success: false; error: string }
+
+const AnonymousContactSchema = z.object({
+  firstName: z.string().trim().min(1).max(100),
+  lastName: z.string().trim().min(1).max(100),
+  email: z.string().trim().toLowerCase().email().max(254),
+  phone: z.string().trim().max(32).optional().or(z.literal('')),
+  company: z.string().trim().min(1).max(200),
+})
+
+// Anti-spam: the visible RFQ form takes humans at least a few seconds to
+// fill in. Bots submit instantly. We hold a generous floor so paste-and-go
+// power users aren't blocked.
+const MIN_FORM_DURATION_MS = 1500
+
+export async function submitRfq(formData: FormData): Promise<SubmitResult> {
+  // Honeypot field — real browsers never populate this. Treat as silent
+  // success: the bot gets a "200 OK" and never knows we ignored it.
+  const honeypot = formData.get('website')
+  if (typeof honeypot === 'string' && honeypot.trim().length > 0) {
+    return { success: true }
   }
+
+  const startedAtRaw = formData.get('formStartedAt')
+  const startedAt = typeof startedAtRaw === 'string' ? Number(startedAtRaw) : NaN
+  if (Number.isFinite(startedAt) && startedAt > 0) {
+    const elapsed = Date.now() - startedAt
+    if (elapsed < MIN_FORM_DURATION_MS) {
+      // Silent success — don't reveal the timing check to a bot.
+      return { success: true }
+    }
+  }
+
+  const session = await auth()
 
   const subject = (formData.get('subject') as string | null) ?? undefined
   const applicationContext = (formData.get('applicationContext') as string | null) ?? undefined
@@ -36,11 +66,51 @@ export async function submitRfq(formData: FormData) {
   try {
     lines = JSON.parse(linesJson)
   } catch {
-    throw new Error('Invalid line items')
+    return { success: false, error: 'Your quote items are unreadable — please rebuild from the catalogue.' }
   }
 
   if (!lines.length) {
-    throw new Error('No items in quote')
+    return { success: false, error: 'No items in your quote.' }
+  }
+
+  // Resolve who is submitting: a logged-in contact, or capture details from
+  // the anonymous form. Anonymous submitters land in (or re-attach to) an
+  // Account so the rest of the pipeline (admin RFQ list, customer-portal
+  // viewing via signed link, email confirmations) treats them identically.
+  let accountId: string
+  let contactId: string
+  const isAnonymous = !session?.user?.accountId
+
+  if (!isAnonymous) {
+    accountId = session!.user.accountId
+    contactId = session!.user.id
+  } else {
+    const contactParsed = AnonymousContactSchema.safeParse({
+      firstName: formData.get('firstName'),
+      lastName: formData.get('lastName'),
+      email: formData.get('email'),
+      phone: formData.get('phone') ?? '',
+      company: formData.get('company'),
+    })
+
+    if (!contactParsed.success) {
+      const issue = contactParsed.error.issues[0]
+      const fieldLabels: Record<string, string> = {
+        firstName: 'first name',
+        lastName: 'last name',
+        email: 'work email',
+        phone: 'phone',
+        company: 'company',
+      }
+      const fieldKey = typeof issue?.path[0] === 'string' ? issue.path[0] : undefined
+      const label = fieldKey ? (fieldLabels[fieldKey] ?? fieldKey) : 'contact details'
+      return { success: false, error: `Please check the ${label} field — ${issue?.message ?? 'invalid value'}.` }
+    }
+
+    const contactData = contactParsed.data
+    const resolved = await resolveOrCreateAnonymousContact(contactData)
+    accountId = resolved.accountId
+    contactId = resolved.contactId
   }
 
   const products = await db.product.findMany({
@@ -55,14 +125,17 @@ export async function submitRfq(formData: FormData) {
     const created = await tx.rfq.create({
       data: {
         code,
-        accountId: session.user.accountId,
-        submittedByContactId: session.user.id,
+        accountId,
+        submittedByContactId: contactId,
         subject: subject || undefined,
         applicationContext: applicationContext || undefined,
         urgency,
         requestedDeliveryDate,
         shipToAddressId: shipToAddressId || undefined,
         customerMessage: customerMessage || undefined,
+        // Flag anonymous submissions so the engineer triages contact-detail
+        // accuracy before fulfilment.
+        internalNotes: isAnonymous ? 'Submitted via anonymous form — verify contact details before fulfilment.' : undefined,
         status: 'submitted',
         submittedAt: new Date(),
         lines: {
@@ -80,11 +153,11 @@ export async function submitRfq(formData: FormData) {
 
     await tx.accountActivity.create({
       data: {
-        accountId: session.user.accountId,
+        accountId,
         actorType: 'contact',
-        actorId: session.user.id,
+        actorId: contactId,
         verb: 'submitted_rfq',
-        payload: { rfqId: created.id, code: created.code },
+        payload: { rfqId: created.id, code: created.code, anonymous: isAnonymous },
       },
     })
 
@@ -101,16 +174,68 @@ export async function submitRfq(formData: FormData) {
       lineCount: lines.length,
       subject: subject ?? null,
       customerMessage: customerMessage ?? null,
-      contactId: session.user.id,
-      accountId: session.user.accountId,
+      contactId,
+      accountId,
       shipToAddressId: shipToAddressId ?? null,
     })
   } catch (err) {
-     
+
     console.error('[submitRfq] email send error', err)
   }
 
+  // Anonymous submitters don't have a session — sign them a short-lived
+  // access token so they can view their RFQ confirmation + download any
+  // future quote PDF without creating an account.
+  if (isAnonymous) {
+    const token = signQuoteAccessToken(rfq.code)
+    redirect(`/quote/${rfq.code}?token=${encodeURIComponent(token)}`)
+  }
+
   redirect(`/quote/${rfq.code}`)
+}
+
+async function resolveOrCreateAnonymousContact(input: z.infer<typeof AnonymousContactSchema>): Promise<{ accountId: string; contactId: string }> {
+  // If the email already exists, reattach to that account. The risk of
+  // someone submitting under a known email is bounded by the fact that the
+  // confirmation email lands at that address — the real owner sees the RFQ
+  // and can flag misuse. Admin sees an `internalNotes` flag either way.
+  const existing = await db.accountContact.findUnique({
+    where: { email: input.email },
+    select: { id: true, accountId: true },
+  })
+
+  if (existing) {
+    return { accountId: existing.accountId, contactId: existing.id }
+  }
+
+  // No existing contact — create a prospect Account + AccountContact. We
+  // skip password-hash creation; the user can claim the account later via
+  // /forgot-password using the same email.
+  return db.$transaction(async (tx) => {
+    const code = await nextAccountCode(tx)
+    const account = await tx.account.create({
+      data: {
+        code,
+        legalName: input.company,
+        displayName: input.company,
+        status: 'prospect',
+        tier: 'bronze',
+      },
+      select: { id: true },
+    })
+    const contact = await tx.accountContact.create({
+      data: {
+        accountId: account.id,
+        email: input.email,
+        firstName: input.firstName,
+        lastName: input.lastName,
+        phone: input.phone || undefined,
+        isActive: true,
+      },
+      select: { id: true },
+    })
+    return { accountId: account.id, contactId: contact.id }
+  })
 }
 
 type SendRfqEmailsInput = {
