@@ -4,9 +4,10 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { db } from '@indus/db'
 import { buildBreadcrumbLd, buildOrgLd } from '@indus/domain'
-import { JsonLd } from '@indus/ui'
+import { JsonLd, LeadCapturePanel, buildWhatsappHref, buildMailtoHref } from '@indus/ui'
 import { mediaUrl } from '../../../lib/media'
 import { pageMetadata, urlFor } from '../../../lib/seo'
+import { getStoreSettings } from '../../../lib/store-settings'
 
 type Props = {
   params: Promise<{ slug: string }>
@@ -44,17 +45,20 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function BrandPage({ params }: Props) {
   const { slug } = await params
 
-  const brand = await db.brand.findUnique({
-    where: { slug },
-    include: {
-      logo: true,
-      caseStudies: {
-        where: { isPublished: true },
-        orderBy: { position: 'asc' },
-        include: { image: { select: { storagePath: true } } },
+  const [brand, settings] = await Promise.all([
+    db.brand.findUnique({
+      where: { slug },
+      include: {
+        logo: true,
+        caseStudies: {
+          where: { isPublished: true },
+          orderBy: { position: 'asc' },
+          include: { image: { select: { storagePath: true } } },
+        },
       },
-    },
-  })
+    }),
+    getStoreSettings(),
+  ])
   if (!brand || !brand.isPublished) notFound()
 
   const [topProducts, totalCount, inStockCount, seriesCategories, brandDocs] = await Promise.all([
@@ -375,22 +379,20 @@ export default async function BrandPage({ params }: Props) {
         </section>
       )}
 
-      {/* ── CTA strip ──────────────────────────────────────────── */}
+      {/* ── Lead capture ──────────────────────────────────────────
+          Replaces the previous quote-only strip — the wide LeadCapturePanel
+          surfaces WhatsApp + Email alongside the primary quote CTA, with
+          context pre-baked into the openers so the lead lands already
+          framed (e.g. WhatsApp text reads "Enquiry: <Brand> products"). */}
       <section className="max-w-[1360px] mx-auto px-8 pb-16">
-        <div className="border border-[var(--color-border)] bg-[var(--color-elevated)] p-6 grid grid-cols-[1fr_auto] gap-4 items-center">
-          <div>
-            <b className="text-[16px]">Need {brand.name} products for your application?</b>
-            <p className="mt-1 text-[14px] text-[var(--color-muted)]">
-              Our applications engineers carry deep {brand.name} expertise — get a quote with lead times in one business day.
-            </p>
-          </div>
-          <Link
-            href={`/quote`}
-            className="shrink-0 h-10 px-6 bg-[var(--color-accent)] text-white font-mono text-[12px] flex items-center hover:opacity-90 transition-opacity whitespace-nowrap"
-          >
-            Request a quote →
-          </Link>
-        </div>
+        <LeadCapturePanel
+          variant="compact"
+          heading={`Need ${brand.name} products for your application?`}
+          body={`Our applications engineers carry deep ${brand.name} expertise. Send us the part number, a photo of the unit on the bench, or a use-case description — we reply within one business day with availability, lead time and a fixed-price quote.`}
+          whatsappUrl={buildWhatsappHref(settings.contactPhone, `Enquiry: ${brand.name} products`)}
+          emailUrl={buildMailtoHref(settings.contactEmail, `${brand.name} enquiry`)}
+          phone={settings.contactPhone}
+        />
       </section>
     </div>
   )

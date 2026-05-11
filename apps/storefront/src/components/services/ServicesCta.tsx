@@ -1,10 +1,20 @@
 import Link from 'next/link'
 
+type Props = {
+  /** Pre-built `wa.me` URL. `null` hides the WhatsApp button (StoreSettings.contactPhone unset). */
+  whatsappUrl?: string | null
+  /** Pre-built `mailto:` URL. Always rendered (falls back to a generic sales inbox upstream). */
+  emailUrl: string
+}
+
 /**
  * Bottom CTA strip — appears at the foot of /services AND /services/[slug].
- * Eyebrow + italic byline + h2 + 2 buttons. Centred.
+ * Eyebrow + italic byline + h2 + three buttons (Open ticket, WhatsApp, Email).
+ * WhatsApp / email URLs are passed in from the page (per the "pages fetch,
+ * components render" rule); WhatsApp button hides itself when no number is
+ * configured, instead of shipping a dead link.
  */
-export default function ServicesCta() {
+export default function ServicesCta({ whatsappUrl, emailUrl }: Props) {
   return (
     <section className="px-4 py-20 text-center">
       <span className="eyebrow">SERVICE INTAKE · OPEN 24×7 · JEBEL ALI</span>
@@ -25,12 +35,23 @@ export default function ServicesCta() {
         >
           Open a service ticket
         </Link>
-        <Link
-          href="/contact"
+        {whatsappUrl && (
+          <a
+            href={whatsappUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-sm px-7 py-3.5 text-[15px] font-medium text-white hover:opacity-90 transition-opacity"
+            style={{ background: '#16a34a' }}
+          >
+            WhatsApp us
+          </a>
+        )}
+        <a
+          href={emailUrl}
           className="inline-flex items-center gap-2 rounded-sm border border-[var(--color-border)] bg-[var(--color-elevated)] px-7 py-3.5 text-[15px] font-medium hover:border-[var(--color-muted)]"
         >
-          Call the workshop →
-        </Link>
+          Email
+        </a>
       </div>
     </section>
   )
