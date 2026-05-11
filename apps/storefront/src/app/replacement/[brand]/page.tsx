@@ -2,9 +2,10 @@ import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import { buildBreadcrumbLd, buildCollectionLd } from '@indus/domain'
-import { JsonLd } from '@indus/ui'
+import { JsonLd, LeadCapturePanel, buildWhatsappHref, buildMailtoHref } from '@indus/ui'
 import { pageMetadata, urlFor } from '../../../lib/seo'
 import { getReplacementsForBrand } from '../../../lib/replacement-data'
+import { getStoreSettings } from '../../../lib/store-settings'
 
 type Props = {
   params: Promise<{ brand: string }>
@@ -24,7 +25,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function BrandReplacementsPage({ params }: Props) {
   const { brand } = await params
-  const items = await getReplacementsForBrand(brand)
+  const [items, settings] = await Promise.all([
+    getReplacementsForBrand(brand),
+    getStoreSettings(),
+  ])
   if (items.length === 0) notFound()
 
   const competitorBrand = items[0]!.competitorBrand
@@ -86,6 +90,18 @@ export default async function BrandReplacementsPage({ params }: Props) {
             <span className="font-mono text-[11px] text-[var(--color-accent)] text-right">View →</span>
           </Link>
         ))}
+      </div>
+
+      {/* CTA scoped to the brand so the lead lands already framed. */}
+      <div className="mt-10">
+        <LeadCapturePanel
+          variant="compact"
+          heading={`Don't see your ${competitorBrand} part?`}
+          body={`We carry over a thousand SKUs that aren't all in the cross-reference table yet. Send us the part number and our applications team will confirm interchangeability and lead time within one business day.`}
+          whatsappUrl={buildWhatsappHref(settings.contactPhone, `Enquiry: ${competitorBrand} part not in cross-reference`)}
+          emailUrl={buildMailtoHref(settings.contactEmail, `${competitorBrand} replacement enquiry`)}
+          phone={settings.contactPhone}
+        />
       </div>
     </div>
   )

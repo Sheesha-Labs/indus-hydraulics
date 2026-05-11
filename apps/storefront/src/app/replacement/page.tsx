@@ -1,9 +1,10 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { buildBreadcrumbLd, buildCollectionLd } from '@indus/domain'
-import { JsonLd } from '@indus/ui'
+import { JsonLd, LeadCapturePanel, buildWhatsappHref, buildMailtoHref } from '@indus/ui'
 import { pageMetadata, urlFor } from '../../lib/seo'
 import { getReplacementBrands } from '../../lib/replacement-data'
+import { getStoreSettings } from '../../lib/store-settings'
 
 export async function generateMetadata(): Promise<Metadata> {
   return pageMetadata({
@@ -15,7 +16,7 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default async function ReplacementIndexPage() {
-  const brands = await getReplacementBrands()
+  const [brands, settings] = await Promise.all([getReplacementBrands(), getStoreSettings()])
   const pageUrl = urlFor('/replacement')
   const totalMpns = brands.reduce((sum, b) => sum + b.mpnCount, 0)
 
@@ -89,6 +90,15 @@ export default async function ReplacementIndexPage() {
           </Link>
         </div>
       )}
+
+      <LeadCapturePanel
+        variant="compact"
+        heading="Can't find the brand you're replacing?"
+        body="Send us the part number or photo of the unit on the bench. Our applications team confirms interchangeability and lead time within one business day."
+        whatsappUrl={buildWhatsappHref(settings.contactPhone, 'Enquiry: replacement part not in catalogue')}
+        emailUrl={buildMailtoHref(settings.contactEmail, 'Replacement enquiry')}
+        phone={settings.contactPhone}
+      />
     </div>
   )
 }
