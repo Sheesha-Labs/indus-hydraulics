@@ -14,6 +14,7 @@ type Address = {
 
 type Props = {
   addresses: Address[]
+  isAuthenticated: boolean
 }
 
 type LineItem = {
@@ -24,18 +25,21 @@ type LineItem = {
   brand?: string
 }
 
-export default function RfqSubmitForm({ addresses }: Props) {
+export default function RfqSubmitForm({ addresses, isAuthenticated }: Props) {
   const [lines, setLines] = useState<LineItem[]>([])
   const [mounted, setMounted] = useState(false)
   const [urgency, setUrgency] = useState<'routine' | 'priority' | 'plant_down'>('routine')
+  const [errorMsg, setErrorMsg] = useState<string | null>(null)
   const [isPending, startTransition] = useTransition()
   const formRef = useRef<HTMLFormElement>(null)
+  const formStartedAt = useRef<number>(0)
 
   useEffect(() => {
     // SSR-safe hydration: localStorage is only available client-side.
     // Read once on mount and flip the gate.
     // eslint-disable-next-line react-hooks/set-state-in-effect
     setMounted(true)
+    formStartedAt.current = Date.now()
     try {
       const raw = localStorage.getItem('quote_items')
       if (raw) setLines(JSON.parse(raw))
@@ -46,13 +50,20 @@ export default function RfqSubmitForm({ addresses }: Props) {
 
   function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault()
+    setErrorMsg(null)
     const fd = new FormData(e.currentTarget)
     fd.set('lines', JSON.stringify(lines))
     fd.set('urgency', urgency)
+    fd.set('formStartedAt', String(formStartedAt.current))
 
     startTransition(async () => {
-      await submitRfq(fd)
+      const result = await submitRfq(fd)
+      if (result && !result.success) {
+        setErrorMsg(result.error)
+        return
+      }
       localStorage.removeItem('quote_items')
+      // On success the server action redirects, so this branch isn't reached.
     })
   }
 
@@ -92,9 +103,103 @@ export default function RfqSubmitForm({ addresses }: Props) {
 
   return (
     <form ref={formRef} onSubmit={handleSubmit}>
+      {/* Honeypot — must stay empty. Hidden from sighted users + screen readers. */}
+      <input
+        type="text"
+        name="website"
+        tabIndex={-1}
+        autoComplete="off"
+        aria-hidden="true"
+        className="hidden"
+        defaultValue=""
+      />
+
       <div className="grid gap-8" style={{ gridTemplateColumns: '1fr 320px', alignItems: 'start' }}>
         {/* ── Main form ─────────────────────────────────────────── */}
         <div className="flex flex-col gap-6">
+
+          {/* Anonymous contact details — shown only for visitors without an account.
+              Signed-in users skip this section and submit under their session. */}
+          {!isAuthenticated && (
+            <section className="border border-[var(--color-border)] bg-[var(--color-elevated)] p-6">
+              <h2 className="text-[18px] font-semibold mb-1">Your contact details</h2>
+              <p className="text-[13px] text-[var(--color-muted)] mb-5">
+                We need a way to reach you with availability and pricing. Already have an account?{' '}
+                <Link href={`/sign-in?next=/quote/submit`} className="text-[var(--color-accent)] hover:underline">
+                  Sign in instead
+                </Link>
+                .
+              </p>
+
+              <div className="flex flex-col gap-4">
+                <div className="grid grid-cols-2 gap-3.5">
+                  <div>
+                    <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+                      First name *
+                    </label>
+                    <input
+                      name="firstName"
+                      type="text"
+                      required
+                      placeholder="e.g. Rohit"
+                      className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-surface)] text-[13px] text-[var(--color-primary)] placeholder:text-[var(--color-caption)] focus:outline-none focus:border-[var(--color-accent)]"
+                    />
+                  </div>
+                  <div>
+                    <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+                      Last name *
+                    </label>
+                    <input
+                      name="lastName"
+                      type="text"
+                      required
+                      placeholder="e.g. Kapoor"
+                      className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-surface)] text-[13px] text-[var(--color-primary)] placeholder:text-[var(--color-caption)] focus:outline-none focus:border-[var(--color-accent)]"
+                    />
+                  </div>
+                </div>
+
+                <div className="grid grid-cols-2 gap-3.5">
+                  <div>
+                    <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+                      Work email *
+                    </label>
+                    <input
+                      name="email"
+                      type="email"
+                      required
+                      placeholder="rohit@company.com"
+                      className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-surface)] text-[13px] text-[var(--color-primary)] placeholder:text-[var(--color-caption)] focus:outline-none focus:border-[var(--color-accent)]"
+                    />
+                  </div>
+                  <div>
+                    <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+                      Phone / WhatsApp
+                    </label>
+                    <input
+                      name="phone"
+                      type="tel"
+                      placeholder="+971 5X XXX XXXX"
+                      className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-surface)] text-[13px] text-[var(--color-primary)] font-mono placeholder:text-[var(--color-caption)] focus:outline-none focus:border-[var(--color-accent)]"
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+                    Company *
+                  </label>
+                  <input
+                    name="company"
+                    type="text"
+                    required
+                    placeholder="Your company / refinery / EPC"
+                    className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-surface)] text-[13px] text-[var(--color-primary)] placeholder:text-[var(--color-caption)] focus:outline-none focus:border-[var(--color-accent)]"
+                  />
+                </div>
+              </div>
+            </section>
+          )}
 
           {/* Project details */}
           <section className="border border-[var(--color-border)] bg-[var(--color-elevated)] p-6">
@@ -232,6 +337,12 @@ export default function RfqSubmitForm({ addresses }: Props) {
               </div>
             </div>
           </section>
+
+          {errorMsg && (
+            <div role="alert" className="border border-[oklch(0.85_0.13_25)] bg-[oklch(0.97_0.04_25)] text-[oklch(0.4_0.15_25)] p-4 text-[13px]">
+              {errorMsg}
+            </div>
+          )}
 
           {/* Footer row */}
           <div className="flex justify-between items-center py-3.5">

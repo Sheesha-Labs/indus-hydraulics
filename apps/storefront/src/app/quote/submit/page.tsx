@@ -1,5 +1,4 @@
 import type { Metadata } from 'next'
-import { redirect } from 'next/navigation'
 import Link from 'next/link'
 import { auth } from '../../../lib/auth'
 import { db } from '@indus/db'
@@ -9,16 +8,19 @@ export const metadata: Metadata = { title: 'Request a Quote' }
 
 export default async function QuoteSubmitPage() {
   const session = await auth()
+  const isAuthenticated = !!session?.user?.accountId
 
-  if (!session?.user?.accountId) {
-    redirect(`/sign-in?next=/quote/submit`)
-  }
-
-  const addresses = await db.accountAddress.findMany({
-    where: { accountId: session.user.accountId, kind: 'ship_to' },
-    select: { id: true, label: true, lines: true, city: true, countryCode: true },
-    orderBy: [{ isDefaultShip: 'desc' }, { createdAt: 'asc' }],
-  })
+  // Authenticated users see their saved ship-to addresses in the form.
+  // Anonymous users get an empty list — the form hides the address dropdown
+  // when none are passed and captures the destination via the project
+  // details / message fields instead.
+  const addresses = isAuthenticated
+    ? await db.accountAddress.findMany({
+        where: { accountId: session!.user.accountId, kind: 'ship_to' },
+        select: { id: true, label: true, lines: true, city: true, countryCode: true },
+        orderBy: [{ isDefaultShip: 'desc' }, { createdAt: 'asc' }],
+      })
+    : []
 
   const mappedAddresses = addresses.map((a) => ({
     id: a.id,
@@ -60,7 +62,7 @@ export default async function QuoteSubmitPage() {
         </div>
       </div>
 
-      <RfqSubmitForm addresses={mappedAddresses} />
+      <RfqSubmitForm addresses={mappedAddresses} isAuthenticated={isAuthenticated} />
     </div>
   )
 }
