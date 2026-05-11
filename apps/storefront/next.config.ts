@@ -25,6 +25,78 @@ const nextConfig: NextConfig = {
         destination: '/c/metallic-hoses',
         permanent: true,
       },
+
+      // BOP services migration (PR #131). The 13 IH-BOP-SVC-* products were
+      // decommissioned and re-modelled as ServiceCase rows under /services.
+      // 3 of them have direct case-study analogs (cases 03, 04, 06 in the
+      // launch wave); the other 10 became their own service-offering pages
+      // (cases 11-20). Old product URLs 301 here so any inbound links / SEO
+      // keep flowing.
+      {
+        source: '/p/bop-api-16a-5-year-major-inspection-recertification',
+        destination: '/services/bop-13-58-10k-cameron-u-5-year-recertification',
+        permanent: true,
+      },
+      {
+        source: '/p/accumulator-koomey-service-api-16d-5-year-recertification',
+        destination: '/services/koomey-accumulator-rebladder-api-16d-recert',
+        permanent: true,
+      },
+      {
+        source: '/p/choke-kill-manifold-testing-5-year-recertification-api-16c',
+        destination: '/services/choke-kill-manifold-3116-10k-api-16c-recert',
+        permanent: true,
+      },
+      {
+        source: '/p/bop-pressure-testing-service-per-api-std-53-5k-10k-15k-stacks',
+        destination: '/services/bop-pressure-testing-service-api-std-53',
+        permanent: true,
+      },
+      {
+        source: '/p/annual-bop-redress-12-month-elastomer-service-per-aramco-specification',
+        destination: '/services/annual-bop-redress-12-month-elastomer-service',
+        permanent: true,
+      },
+      {
+        source: '/p/bop-stack-rental-11-10k-workover-stack-sour-service-nace-mr0175',
+        destination: '/services/bop-stack-rental-11-10k-workover-sour-service',
+        permanent: true,
+      },
+      {
+        source: '/p/bop-field-service-crew-nipple-up-function-test-troubleshooting-h-s-trained',
+        destination: '/services/bop-field-service-crew-h2s-trained-day-rate',
+        permanent: true,
+      },
+      {
+        source: '/p/coiled-tubing-snubbing-wireline-bop-testing-recertification',
+        destination: '/services/ct-snubbing-wireline-bop-testing-recertification',
+        permanent: true,
+      },
+      {
+        source: '/p/subsea-bop-stack-fat-sit-witness-engineering-support',
+        destination: '/services/subsea-bop-stack-fat-sit-witness-engineering-support',
+        permanent: true,
+      },
+      {
+        source: '/p/15k-hpht-bop-service-hail-ghasha-jafurah-sour-gas',
+        destination: '/services/15k-hpht-bop-service-hail-ghasha-jafurah-sour-gas',
+        permanent: true,
+      },
+      {
+        source: '/p/diverter-system-testing-recertification-21-1-4-2k-class',
+        destination: '/services/diverter-system-recertification-21-1-4-2k-offshore',
+        permanent: true,
+      },
+      {
+        source: '/p/rotating-control-device-rcd-service-mpd-equipment-support',
+        destination: '/services/rotating-control-device-rcd-service-mpd-equipment-support',
+        permanent: true,
+      },
+      {
+        source: '/p/iwcf-iadc-wellsharp-well-control-training-levels-2-4-supervisor',
+        destination: '/services/iwcf-iadc-wellsharp-well-control-training-levels-2-4',
+        permanent: true,
+      },
     ]
   },
 }
