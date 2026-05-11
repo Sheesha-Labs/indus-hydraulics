@@ -6,9 +6,11 @@ type Props = {
   title: string
   sku: string
   datasheetUrl?: string
+  whatsappUrl?: string | null
+  emailUrl: string
 }
 
-export default function ProductStickyBar({ title, sku, datasheetUrl }: Props) {
+export default function ProductStickyBar({ title, sku, datasheetUrl, whatsappUrl, emailUrl }: Props) {
   const [visible, setVisible] = useState(false)
 
   useEffect(() => {
@@ -45,20 +47,22 @@ export default function ProductStickyBar({ title, sku, datasheetUrl }: Props) {
             </a>
           )}
           <a
-            href={`mailto:enquiries@indushydraulics.com?subject=Quote for ${sku}`}
+            href={emailUrl}
             className="h-9 px-4 flex items-center border border-[var(--color-primary)] bg-[var(--color-elevated)] font-mono text-[12px] text-[var(--color-primary)] hover:bg-[var(--color-deep)] transition-colors"
           >
             Email Quote
           </a>
-          <a
-            href={`https://wa.me/912240000000?text=Enquiry on ${sku}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="h-9 px-4 flex items-center font-mono text-[12px] text-white transition-opacity hover:opacity-90"
-            style={{ background: '#16a34a' }}
-          >
-            WhatsApp
-          </a>
+          {whatsappUrl && (
+            <a
+              href={whatsappUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="h-9 px-4 flex items-center font-mono text-[12px] text-white transition-opacity hover:opacity-90"
+              style={{ background: '#16a34a' }}
+            >
+              WhatsApp
+            </a>
+          )}
         </div>
       </div>
     </div>

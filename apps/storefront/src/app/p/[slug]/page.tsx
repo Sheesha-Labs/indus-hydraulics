@@ -580,6 +580,8 @@ export default async function ProductPage({ params, searchParams }: Props) {
         title={product.title}
         sku={product.sku}
         datasheetUrl={datasheetUrl}
+        whatsappUrl={whatsappHref(settings.contactPhone, product.sku)}
+        emailUrl={mailtoQuoteHref(settings.contactEmail, product.sku)}
       />
     </>
   )
