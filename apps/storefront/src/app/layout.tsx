@@ -74,9 +74,10 @@ export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL ?? 'https://indushydraulics.com'),
 }
 
-// Co-locate Vercel functions with the Supabase database in Mumbai to avoid
-// transcontinental Prisma round-trips. Propagates to every route segment via
-// the root layout. Belt-and-braces with vercel.json's `regions: ["bom1"]`.
+// Co-locate Vercel functions with the Supabase database region (currently
+// `bom1`) to avoid transcontinental Prisma round-trips. Propagates to every
+// route segment via the root layout. Belt-and-braces with vercel.json's
+// `regions: ["bom1"]`. Revisit once Supabase relocates to a GCC region.
 export const preferredRegion = 'bom1'
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {

@@ -185,23 +185,23 @@ describe('buildOrgLd / buildWebsiteLd', () => {
       foundingDate: '2003',
       sameAs: ['https://linkedin.com/company/indus'],
       address: {
-        streetAddress: 'Andheri East',
-        addressLocality: 'Mumbai',
-        addressRegion: 'Maharashtra',
-        postalCode: '400 059',
-        addressCountry: 'IN',
+        streetAddress: 'Al Nahda Street, Al Quasis-2',
+        addressLocality: 'Dubai',
+        addressRegion: 'Dubai',
+        postalCode: '87556',
+        addressCountry: 'AE',
       },
-      contact: { email: 'sales@example.com', telephone: '+91-22-4000-0000' },
-      areaServed: ['IN', 'AE', 'SG'],
+      contact: { email: 'sales@example.com', telephone: '+971-4-000-0000' },
+      areaServed: ['AE', 'SA', 'SG'],
     })
     expect(ld['@id']).toBe('https://example.com#organization')
     expect(ld.legalName).toBe('Indus Hydraulic Power Trading LLC')
     expect(ld.foundingDate).toBe('2003')
     expect(ld.sameAs).toEqual(['https://linkedin.com/company/indus'])
-    expect((ld.address as Record<string, unknown>).addressCountry).toBe('IN')
+    expect((ld.address as Record<string, unknown>).addressCountry).toBe('AE')
     expect((ld.contactPoint as Record<string, unknown>).contactType).toBe('customer service')
-    expect((ld.contactPoint as Record<string, unknown>).areaServed).toEqual(['IN', 'AE', 'SG'])
-    expect(ld.areaServed).toEqual(['IN', 'AE', 'SG'])
+    expect((ld.contactPoint as Record<string, unknown>).areaServed).toEqual(['AE', 'SA', 'SG'])
+    expect(ld.areaServed).toEqual(['AE', 'SA', 'SG'])
   })
 
   it('omits address entirely when no fields are populated', () => {
@@ -226,25 +226,25 @@ describe('buildOrgLd / buildWebsiteLd', () => {
 describe('buildLocalBusinessLd', () => {
   it('emits LocalBusiness with PostalAddress and parent reference', () => {
     const ld = buildLocalBusinessLd({
-      id: 'https://example.com#location-mumbai-hq',
-      name: 'Indus Hydraulics — Mumbai HQ',
+      id: 'https://example.com#location-dubai-hq',
+      name: 'Indus Hydraulics — Dubai HQ',
       url: 'https://example.com/contact',
-      telephone: '+91-22-4000-0000',
-      email: 'mumbai@example.com',
+      telephone: '+971-4-000-0000',
+      email: 'dubai@example.com',
       address: {
-        streetAddress: 'Andheri East',
-        addressLocality: 'Mumbai',
-        addressRegion: 'Maharashtra',
-        postalCode: '400 059',
-        addressCountry: 'IN',
+        streetAddress: 'Al Nahda Street, Al Quasis-2',
+        addressLocality: 'Dubai',
+        addressRegion: 'Dubai',
+        postalCode: '87556',
+        addressCountry: 'AE',
       },
-      openingHours: ['Mo-Sa 09:00-18:30'],
+      openingHours: ['Mo-Sa 09:00-18:00'],
       parentOrganization: { id: 'https://example.com#organization', name: 'Indus Hydraulics' },
     })
     expect(ld['@type']).toBe('LocalBusiness')
-    expect(ld['@id']).toBe('https://example.com#location-mumbai-hq')
-    expect((ld.address as Record<string, unknown>).addressLocality).toBe('Mumbai')
-    expect(ld.openingHours).toEqual(['Mo-Sa 09:00-18:30'])
+    expect(ld['@id']).toBe('https://example.com#location-dubai-hq')
+    expect((ld.address as Record<string, unknown>).addressLocality).toBe('Dubai')
+    expect(ld.openingHours).toEqual(['Mo-Sa 09:00-18:00'])
     expect((ld.parentOrganization as Record<string, unknown>)['@id']).toBe('https://example.com#organization')
   })
 
@@ -252,7 +252,7 @@ describe('buildLocalBusinessLd', () => {
     const ld = buildLocalBusinessLd({
       type: 'WholesaleStore',
       name: 'Indus Wholesale',
-      address: { addressLocality: 'Mumbai', addressCountry: 'IN' },
+      address: { addressLocality: 'Dubai', addressCountry: 'AE' },
     })
     expect(ld['@type']).toBe('WholesaleStore')
   })
@@ -260,7 +260,7 @@ describe('buildLocalBusinessLd', () => {
   it('omits parentOrganization when no identifiers provided', () => {
     const ld = buildLocalBusinessLd({
       name: 'Indus',
-      address: { addressLocality: 'Mumbai', addressCountry: 'IN' },
+      address: { addressLocality: 'Dubai', addressCountry: 'AE' },
       parentOrganization: {},
     })
     expect(ld.parentOrganization).toBeUndefined()

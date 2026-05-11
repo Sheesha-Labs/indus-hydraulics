@@ -560,11 +560,10 @@ function CommerceTab({
           </Field>
           <Field label="Currency">
             <select name="listPriceCurrency" defaultValue={product.listPriceCurrency} className={selectCls}>
-              <option value="USD">USD</option>
-              <option value="INR">INR</option>
-              <option value="EUR">EUR</option>
               <option value="AED">AED</option>
+              <option value="USD">USD</option>
               <option value="SAR">SAR</option>
+              <option value="EUR">EUR</option>
             </select>
           </Field>
         </div>
@@ -636,11 +635,11 @@ function CommerceTab({
               className={inputCls + ' font-mono'}
             />
           </Field>
-          <Field label="Warehouse label" hint="Free-text shown next to the stock pill (e.g. 'Mumbai')">
+          <Field label="Warehouse label" hint="Free-text shown next to the stock pill (e.g. 'Dubai')">
             <input
               name="stockWarehouse"
               defaultValue={product.stockWarehouse ?? ''}
-              placeholder="Mumbai"
+              placeholder="Dubai"
               className={inputCls}
             />
           </Field>

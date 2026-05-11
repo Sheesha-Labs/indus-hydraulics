@@ -159,7 +159,7 @@ export default function SettingsPageClient({ activeTab, storeSettings, emailTemp
               rows={2}
               maxLength={280}
               defaultValue={storeSettings?.tagline ?? ''}
-              placeholder="India's trusted distributor of industrial hydraulic components since 2005."
+              placeholder="UAE's trusted distributor of industrial hydraulic components since 2003."
               className="w-full px-3 py-2 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] focus:outline-none focus:border-[var(--color-accent)] resize-none"
             />
           </div>
@@ -196,7 +196,7 @@ export default function SettingsPageClient({ activeTab, storeSettings, emailTemp
               type="text"
               maxLength={80}
               defaultValue={storeSettings?.contactLocationLabel ?? ''}
-              placeholder="Mumbai HQ"
+              placeholder="Dubai HQ"
               className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] focus:outline-none focus:border-[var(--color-accent)]"
             />
           </div>
@@ -210,7 +210,7 @@ export default function SettingsPageClient({ activeTab, storeSettings, emailTemp
               type="text"
               maxLength={40}
               defaultValue={storeSettings?.contactPhone ?? ''}
-              placeholder="+91 22 6614 0200"
+              placeholder="+971 4 XXX XXXX"
               className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] focus:outline-none focus:border-[var(--color-accent)]"
             />
           </div>
@@ -237,7 +237,7 @@ export default function SettingsPageClient({ activeTab, storeSettings, emailTemp
               type="text"
               maxLength={120}
               defaultValue={storeSettings?.contactHours ?? ''}
-              placeholder="Mon–Sat 09:00–19:00 IST"
+              placeholder="Mon–Sat 09:00–18:00 GST"
               className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] focus:outline-none focus:border-[var(--color-accent)]"
             />
           </div>

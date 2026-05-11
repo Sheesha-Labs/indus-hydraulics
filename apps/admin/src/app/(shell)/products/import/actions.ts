@@ -16,7 +16,7 @@ import { PRODUCT_IMPORT_COLUMNS, REQUIRED_KEYS, SPEC_ATTR_PREFIX } from './colum
 const MAX_FILE_BYTES = 10 * 1024 * 1024 // 10 MB
 const MAX_ROWS = 5000
 
-const CURRENCIES = ['USD', 'INR', 'EUR', 'AED', 'SAR'] as const
+const CURRENCIES = ['USD', 'EUR', 'AED', 'SAR'] as const
 const UOMS = ['each', 'metre', 'kit', 'set'] as const
 const STATUSES = ['draft', 'active', 'discontinued'] as const
 

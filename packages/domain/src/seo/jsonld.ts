@@ -57,7 +57,7 @@ export type ProductLdInput = {
   category?: { name: string } | null
   /** Product weight in kilograms. Renders as a QuantitativeValue. */
   weightKg?: number | null
-  /** Country of origin — ISO-3166 alpha-2 ("IN") or full name ("India"). */
+  /** Country of origin — ISO-3166 alpha-2 ("DE") or full name ("Germany"). */
   countryOfOrigin?: string | null
   offers?: {
     price?: number | null
@@ -153,7 +153,7 @@ export type OrgLdInput = {
 }
 
 export type LocalBusinessLdInput = {
-  /** Stable @id, e.g. `${baseUrl}#location-mumbai-hq`. */
+  /** Stable @id, e.g. `${baseUrl}#location-dubai-hq`. */
   id?: string
   /** Schema.org subtype — defaults to LocalBusiness. */
   type?: 'LocalBusiness' | 'Store' | 'WholesaleStore' | 'AutomotiveBusiness'

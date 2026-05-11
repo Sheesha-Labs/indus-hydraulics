@@ -34,7 +34,6 @@ enum AccountStatus {
 
 enum Currency {
   USD
-  INR
   EUR
   AED
   SAR
@@ -723,7 +722,7 @@ model Product {
   leadTimeDays      Int?
   warrantyMonths    Int?
   stockQty          Int           @default(0) // Aggregate stock across all warehouses; 0 = out of stock / lead-time-only
-  stockWarehouse    String? // Free-text warehouse identifier for the storefront pill (e.g. "Mumbai")
+  stockWarehouse    String? // Free-text warehouse identifier for the storefront pill (e.g. "Dubai")
   countryOfOrigin   String?
   hsCode            String?
   status            ProductStatus @default(draft)
@@ -992,7 +991,7 @@ model RfqLine {
   product              Product  @relation(fields: [productId], references: [id])
   requestedQty         Int
   customerTargetPrice  Decimal? @db.Decimal(12, 2)
-  shipFromWarehouse    String? // free-text (e.g. "Mumbai", "Dubai") — no warehouse entity in scope
+  shipFromWarehouse    String? // free-text (e.g. "Dubai", "Abu Dhabi") — no warehouse entity in scope
   engineerUnitPrice    Decimal? @db.Decimal(12, 2)
   engineerLeadTimeDays Int?
   appliedRuleIds       Json?    @default("[]") // future: pricing rule references

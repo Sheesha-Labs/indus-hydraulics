@@ -128,7 +128,7 @@ export const FaqEntrySchema = z.object({
 })
 export type FaqEntry = z.infer<typeof FaqEntrySchema>
 
-const CurrencySchema = z.enum(['USD', 'INR', 'EUR', 'AED', 'SAR'])
+const CurrencySchema = z.enum(['USD', 'EUR', 'AED', 'SAR'])
 const UnitOfMeasureSchema = z.enum(['each', 'metre', 'kit', 'set'])
 const ProductStatusSchema = z.enum(['draft', 'active', 'discontinued'])
 

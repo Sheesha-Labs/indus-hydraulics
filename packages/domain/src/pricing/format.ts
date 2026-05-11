@@ -2,7 +2,7 @@
  * Single source of truth for catalogue price formatting.
  *
  * The `Currency` enum is the Prisma enum from packages/db/prisma/schema.prisma
- * (USD | INR | EUR | AED | SAR). Both server and client use this helper so
+ * (USD | EUR | AED | SAR). Both server and client use this helper so
  * the rendered string is identical everywhere — no drift between the admin
  * preview, PLP cards, PDP, search results, and the customer-facing compare
  * page.
@@ -23,7 +23,7 @@
  * fractional prices retain cents.
  */
 
-export type CurrencyCode = 'USD' | 'INR' | 'EUR' | 'AED' | 'SAR'
+export type CurrencyCode = 'USD' | 'EUR' | 'AED' | 'SAR'
 
 export type FormatPriceInput = {
   listPrice: number | null | undefined

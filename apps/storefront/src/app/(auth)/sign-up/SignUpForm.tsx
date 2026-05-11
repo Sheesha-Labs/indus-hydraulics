@@ -9,7 +9,7 @@ type State = { error?: string; success?: boolean } | null
 
 const INDUSTRIES = ['Oil & Gas', 'Marine', 'Mining', 'Steel', 'Construction', 'Power', 'Other']
 const SPEND_RANGES = ['Under $25k', '$25k – $100k', '$100k – $500k', 'Over $500k']
-const COUNTRIES = ['India', 'UAE', 'Singapore', 'Other']
+const COUNTRIES = ['UAE', 'Saudi Arabia', 'Oman', 'Qatar', 'Bahrain', 'Kuwait', 'Other']
 
 const inputCls =
   'h-10 w-full border border-[var(--color-border)] bg-[var(--color-elevated)] px-3 text-sm text-[var(--color-primary)] placeholder:text-[var(--color-caption)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-accent)] transition-colors'
@@ -59,7 +59,7 @@ export default function SignUpForm() {
             </div>
             <div className="flex flex-col gap-1.5">
               <label className="text-xs font-medium text-[var(--color-body)]">Phone *</label>
-              <input name="phone" type="tel" required placeholder="+91 …" className={`${inputCls} font-mono`} />
+              <input name="phone" type="tel" required placeholder="+971 …" className={`${inputCls} font-mono`} />
             </div>
             <div className="flex flex-col gap-1.5 sm:col-span-2">
               <label className="text-xs font-medium text-[var(--color-body)]">Password *</label>
@@ -96,7 +96,7 @@ export default function SignUpForm() {
               </select>
             </div>
             <div className="flex flex-col gap-1.5">
-              <label className="text-xs font-medium text-[var(--color-body)]">GST / Tax ID</label>
+              <label className="text-xs font-medium text-[var(--color-body)]">VAT / TRN</label>
               <input name="taxId" type="text" className={`${inputCls} font-mono`} />
             </div>
             <div className="flex flex-col gap-1.5">

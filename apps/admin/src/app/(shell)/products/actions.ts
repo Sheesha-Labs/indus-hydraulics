@@ -26,7 +26,7 @@ function slugify(input: string): string {
 
 const ProductStatus = z.enum(['draft', 'active', 'discontinued'])
 const Compatibility = z.enum(['direct', 'compatible', 'superseded_by_us'])
-const Currency = z.enum(['USD', 'INR', 'EUR', 'AED', 'SAR'])
+const Currency = z.enum(['USD', 'EUR', 'AED', 'SAR'])
 const UnitOfMeasure = z.enum(['each', 'metre', 'kit', 'set'])
 const DocumentKind = z.enum(['datasheet', 'step', 'iges', 'service_manual', 'installation_guide'])
 

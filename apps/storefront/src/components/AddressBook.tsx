@@ -25,19 +25,21 @@ type Props = {
 }
 
 const COUNTRIES = [
+  // GCC first — primary service region
   { code: 'AE', name: 'United Arab Emirates' },
-  { code: 'AU', name: 'Australia' },
-  { code: 'BH', name: 'Bahrain' },
-  { code: 'CA', name: 'Canada' },
-  { code: 'EG', name: 'Egypt' },
-  { code: 'GB', name: 'United Kingdom' },
-  { code: 'ID', name: 'Indonesia' },
-  { code: 'IN', name: 'India' },
-  { code: 'KW', name: 'Kuwait' },
-  { code: 'MY', name: 'Malaysia' },
+  { code: 'SA', name: 'Saudi Arabia' },
   { code: 'OM', name: 'Oman' },
   { code: 'QA', name: 'Qatar' },
-  { code: 'SA', name: 'Saudi Arabia' },
+  { code: 'BH', name: 'Bahrain' },
+  { code: 'KW', name: 'Kuwait' },
+  // Wider MENA
+  { code: 'EG', name: 'Egypt' },
+  // International
+  { code: 'AU', name: 'Australia' },
+  { code: 'CA', name: 'Canada' },
+  { code: 'GB', name: 'United Kingdom' },
+  { code: 'ID', name: 'Indonesia' },
+  { code: 'MY', name: 'Malaysia' },
   { code: 'SG', name: 'Singapore' },
   { code: 'US', name: 'United States' },
 ]

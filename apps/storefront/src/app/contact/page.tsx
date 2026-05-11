@@ -23,7 +23,7 @@ type Props = { params: Promise<Record<string, never>> }
 
 const FAQS = [
   { q: 'How fast do you respond to RFQs?', a: 'Routine RFQs within 1 business day. Priority within 4 working hours. Plant-down within 30 minutes, 24/7.' },
-  { q: 'Do you supply to customers outside the UAE?', a: 'Yes — we ship internationally to India, GCC markets, Southeast Asia and beyond. Contact us for freight terms and lead times to your country.' },
+  { q: 'Do you supply to customers outside the UAE?', a: 'Yes — we ship across the GCC, wider MENA and beyond. Contact us for freight terms and lead times to your country.' },
   { q: 'Can I get a sample or trial unit?', a: 'For qualified projects above a threshold value, we can arrange trial units with a deposit. Speak to your sales engineer.' },
   { q: 'Do you offer on-site commissioning?', a: 'Yes, for hydraulic systems we supply. Our certified technicians cover major industrial sites across the UAE and partner regions.' },
   { q: 'What brands do you stock?', a: 'Bosch Rexroth, Parker Hannifin, Atos, Hydac, Stauff, Eaton Vickers, Sun Hydraulics, and more. Full brand list on our brands page.' },
