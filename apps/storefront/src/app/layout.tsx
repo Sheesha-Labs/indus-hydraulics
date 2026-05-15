@@ -87,6 +87,15 @@ function readVerification(): Metadata['verification'] {
   return Object.keys(v).length > 0 ? v : undefined
 }
 
+/**
+ * Default share-card title and description used by openGraph + twitter
+ * below. Routes that emit their own metadata (PDP, category, brand, blog
+ * via `pageMetadata`) override these per-page.
+ */
+const DEFAULT_OG_TITLE = 'Indus Hydraulics — Industrial hydraulic distributor'
+const DEFAULT_OG_DESCRIPTION =
+  'Pumps, valves, cylinders and hose assemblies for engineers who can’t afford downtime. Authorized distributor for Parker, Bosch Rexroth, Yuken, and HYDAC, shipped from Dubai across the GCC and beyond.'
+
 export const metadata: Metadata = {
   title: {
     default: 'Indus Hydraulics',
@@ -96,6 +105,27 @@ export const metadata: Metadata = {
     'Pumps, valves, cylinders and hose assemblies for oil & gas, mining, marine and steel industries.',
   metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL ?? 'https://indushydraulics.com'),
   verification: readVerification(),
+  // Open Graph defaults — applied to any route that doesn't emit its own
+  // openGraph block. The OG image itself is supplied by the file-based
+  // convention at app/opengraph-image.tsx, so we don't list images here
+  // (Next merges them automatically). LinkedIn reads exclusively from OG
+  // tags, which is the primary share surface for a B2B audience.
+  openGraph: {
+    type: 'website',
+    siteName: 'Indus Hydraulics',
+    locale: 'en_AE',
+    title: DEFAULT_OG_TITLE,
+    description: DEFAULT_OG_DESCRIPTION,
+    url: process.env.NEXT_PUBLIC_BASE_URL ?? 'https://indushydraulics.com',
+  },
+  // Twitter card defaults — same shape as OG. The image is supplied by
+  // app/twitter-image.tsx; if that file isn't found, Twitter falls back
+  // to the OG image, which is what we want.
+  twitter: {
+    card: 'summary_large_image',
+    title: DEFAULT_OG_TITLE,
+    description: DEFAULT_OG_DESCRIPTION,
+  },
 }
 
 /**
