@@ -1132,13 +1132,20 @@ async function seedNavigationMenus() {
   }
 
   // ── footer_legal ───────────────────────────────────────────────────────────
+  // Two stages: (1) seed the full set when the menu is empty; (2) for existing
+  // databases that were seeded earlier with only Privacy/Terms/Sitemap, add
+  // any missing items (Shipping/Returns/Warranty) idempotently. Reordering is
+  // available to editors via the admin nav CMS.
+  const legalLinks = [
+    { label: 'Privacy', url: '/privacy' },
+    { label: 'Terms', url: '/terms' },
+    { label: 'Shipping', url: '/shipping' },
+    { label: 'Returns', url: '/returns' },
+    { label: 'Warranty', url: '/warranty' },
+    { label: 'Sitemap', url: '/sitemap.xml' },
+  ]
   const footerLegalCount = await db.navMenuItem.count({ where: { menuId: footerLegalMenu.id } })
   if (footerLegalCount === 0) {
-    const legalLinks = [
-      { label: 'Privacy', url: '/privacy' },
-      { label: 'Terms', url: '/terms' },
-      { label: 'Sitemap', url: '/sitemap.xml' },
-    ]
     for (let i = 0; i < legalLinks.length; i++) {
       const item = legalLinks[i]!
       await db.navMenuItem.create({
@@ -1146,6 +1153,28 @@ async function seedNavigationMenus() {
           menuId: footerLegalMenu.id,
           parentId: null,
           position: i,
+          label: item.label,
+          linkType: 'custom_url',
+          customUrl: item.url,
+        },
+      })
+    }
+  } else {
+    for (const item of legalLinks) {
+      const exists = await db.navMenuItem.findFirst({
+        where: { menuId: footerLegalMenu.id, label: item.label },
+        select: { id: true },
+      })
+      if (exists) continue
+      const max = await db.navMenuItem.aggregate({
+        where: { menuId: footerLegalMenu.id },
+        _max: { position: true },
+      })
+      await db.navMenuItem.create({
+        data: {
+          menuId: footerLegalMenu.id,
+          parentId: null,
+          position: (max._max.position ?? -1) + 1,
           label: item.label,
           linkType: 'custom_url',
           customUrl: item.url,

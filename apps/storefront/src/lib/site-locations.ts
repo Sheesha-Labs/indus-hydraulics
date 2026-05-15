@@ -54,9 +54,38 @@ export const OFFICES: Office[] = [
   },
 ]
 
-/** Convenience for the root-layout Org schema. */
-export function areasServed(): string[] {
+/**
+ * Countries where Indus has a verified physical office. Used to derive the
+ * Organization PostalAddress and the LocalBusiness nodes on the contact page.
+ * Single source of truth is the OFFICES array above. Asserting an "office
+ * country" without a real OFFICE row is a misrepresentation — don't do it.
+ */
+function officeCountries(): string[] {
   return Array.from(new Set(OFFICES.map((o) => o.countryCode)))
+}
+
+/**
+ * Countries where Indus regularly services customers via direct export from
+ * the Dubai warehouse — even though no office is physically present there.
+ * Used only for Schema.org `areaServed`, which per the spec is "the
+ * geographic area where a service or offered item is provided" — explicitly
+ * NOT a claim of physical presence.
+ *
+ * Keep this list to markets where (a) the /shipping policy states a typical
+ * lead time and (b) the business actually fulfils orders on a recurring
+ * basis. Today that is the GCC. Broader MENA and African destinations are
+ * quoted case-by-case — they appear on /shipping but are intentionally
+ * NOT in this structured list until shipping there is steady-state.
+ */
+const EXPORT_SERVICE_COUNTRIES = ['SA', 'OM', 'BH', 'QA', 'KW'] as const
+
+/**
+ * `areaServed` for the Organization JSON-LD. Combines office countries with
+ * the verified export-service list above. Honest by construction: every
+ * entry is either a verified office or a recurring shipping lane.
+ */
+export function areasServed(): string[] {
+  return Array.from(new Set([...officeCountries(), ...EXPORT_SERVICE_COUNTRIES]))
 }
 
 /**
