@@ -14,6 +14,7 @@
     "@indus/domain": "workspace:^",
     "@indus/email": "workspace:^",
     "@indus/ui": "workspace:^",
+    "@next/third-parties": "^16.2.6",
     "@prisma/client": "^7.8.0",
     "@radix-ui/react-checkbox": "^1.3.3",
     "@radix-ui/react-dialog": "^1.1.15",
