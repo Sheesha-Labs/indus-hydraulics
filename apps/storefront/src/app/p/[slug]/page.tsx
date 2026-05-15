@@ -72,6 +72,44 @@ const getProduct = cache(async (decoded: string) => {
   })
 })
 
+/**
+ * Number of PDPs to pre-render at build time. We pick the products with the
+ * highest content score (and most recent edit as a tiebreaker) — these are
+ * the pages most likely to rank in search and earn the first click, so they
+ * deserve the snappy SSG path. Everything else renders on-demand via ISR
+ * (see `revalidate` below) on first hit and is then cached.
+ *
+ * Keep this number conservative — every entry adds a Prisma query to CI
+ * and a route to the build output. 200 covers a couple of weeks of organic
+ * traffic comfortably for a catalogue of ~1.8k SKUs.
+ */
+const STATIC_PDP_LIMIT = 200
+
+/**
+ * Refresh interval for both pre-rendered and on-demand PDPs. One hour is a
+ * good balance for a catalogue that changes daily but not minutely. Admin
+ * mutations can punch through faster by calling `revalidatePath('/p/<slug>')`
+ * after a product edit.
+ */
+export const revalidate = 3600
+
+/**
+ * Allow on-demand ISR for slugs not pre-rendered above. Without this, a
+ * fresh slug 404s until the next deploy — which would defeat the point of
+ * having a thousand-plus-product catalogue.
+ */
+export const dynamicParams = true
+
+export async function generateStaticParams(): Promise<{ slug: string }[]> {
+  const rows = await db.product.findMany({
+    where: { status: 'active' },
+    select: { slug: true },
+    orderBy: [{ contentScore: 'desc' }, { updatedAt: 'desc' }],
+    take: STATIC_PDP_LIMIT,
+  })
+  return rows.map((r) => ({ slug: r.slug }))
+}
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params
   const decoded = decodeURIComponent(slug)

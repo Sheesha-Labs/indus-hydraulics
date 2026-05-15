@@ -20,6 +20,31 @@ type Props = {
   searchParams: Promise<SearchParams>
 }
 
+/**
+ * Refresh interval for category pages. Catalogue counts and brand facets
+ * change as products are added; one hour keeps the cached HTML fresh
+ * without hammering Postgres. Admin can punch through with
+ * `revalidatePath('/c/<slug>')` after a category edit.
+ */
+export const revalidate = 3600
+
+/** Allow on-demand ISR for categories created after deploy. */
+export const dynamicParams = true
+
+/**
+ * Pre-render every published category at build. The total count is small
+ * (well under 100 even with sub-categories) so we don't bother with a
+ * top-N cap — the build cost is negligible and the snappy first-paint on
+ * every category beats lazy hydration.
+ */
+export async function generateStaticParams(): Promise<{ slug: string }[]> {
+  const rows = await db.category.findMany({
+    where: { isPublished: true },
+    select: { slug: true },
+  })
+  return rows.map((r) => ({ slug: r.slug }))
+}
+
 export async function generateMetadata({ params, searchParams }: Props): Promise<Metadata> {
   const [{ slug }, sp] = await Promise.all([params, searchParams])
   const [category, seoSetting] = await Promise.all([
