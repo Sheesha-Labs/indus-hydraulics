@@ -3,6 +3,7 @@ import { Inter, IBM_Plex_Mono, Source_Serif_4 } from 'next/font/google'
 import { unstable_cache } from 'next/cache'
 import { Analytics } from '@vercel/analytics/next'
 import { SpeedInsights } from '@vercel/speed-insights/next'
+import { GoogleAnalytics } from '@next/third-parties/google'
 import { Suspense } from 'react'
 import AnalyticsProvider from '../components/AnalyticsProvider'
 import { db } from '@indus/db'
@@ -66,6 +67,35 @@ const sourceSerif = Source_Serif_4({
   display: 'swap',
 })
 
+/**
+ * Build the `verification` block from optional env vars. Each entry is
+ * conditionally included so Next.js only emits the corresponding meta tag
+ * when the verification ID is set in the environment.
+ *
+ *   NEXT_PUBLIC_GSC_VERIFICATION  → <meta name="google-site-verification" …>
+ *   NEXT_PUBLIC_BING_VERIFICATION → <meta name="msvalidate.01" …>
+ *
+ * Returns `undefined` (not an empty object) when nothing is set, so the
+ * Metadata type stays clean.
+ */
+function readVerification(): Metadata['verification'] {
+  const google = process.env.NEXT_PUBLIC_GSC_VERIFICATION?.trim()
+  const bing = process.env.NEXT_PUBLIC_BING_VERIFICATION?.trim()
+  const v: NonNullable<Metadata['verification']> = {}
+  if (google) v.google = google
+  if (bing) v.other = { 'msvalidate.01': bing }
+  return Object.keys(v).length > 0 ? v : undefined
+}
+
+/**
+ * Default share-card title and description used by openGraph + twitter
+ * below. Routes that emit their own metadata (PDP, category, brand, blog
+ * via `pageMetadata`) override these per-page.
+ */
+const DEFAULT_OG_TITLE = 'Indus Hydraulics — Industrial hydraulic distributor'
+const DEFAULT_OG_DESCRIPTION =
+  'Pumps, valves, cylinders and hose assemblies for engineers who can’t afford downtime. Authorized distributor for Parker, Bosch Rexroth, Yuken, and HYDAC, shipped from Dubai across the GCC and beyond.'
+
 export const metadata: Metadata = {
   title: {
     default: 'Indus Hydraulics',
@@ -74,7 +104,38 @@ export const metadata: Metadata = {
   description:
     'Pumps, valves, cylinders and hose assemblies for oil & gas, mining, marine and steel industries.',
   metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL ?? 'https://indushydraulics.com'),
+  verification: readVerification(),
+  // Open Graph defaults — applied to any route that doesn't emit its own
+  // openGraph block. The OG image itself is supplied by the file-based
+  // convention at app/opengraph-image.tsx, so we don't list images here
+  // (Next merges them automatically). LinkedIn reads exclusively from OG
+  // tags, which is the primary share surface for a B2B audience.
+  openGraph: {
+    type: 'website',
+    siteName: 'Indus Hydraulics',
+    locale: 'en_AE',
+    title: DEFAULT_OG_TITLE,
+    description: DEFAULT_OG_DESCRIPTION,
+    url: process.env.NEXT_PUBLIC_BASE_URL ?? 'https://indushydraulics.com',
+  },
+  // Twitter card defaults — same shape as OG. The image is supplied by
+  // app/twitter-image.tsx; if that file isn't found, Twitter falls back
+  // to the OG image, which is what we want.
+  twitter: {
+    card: 'summary_large_image',
+    title: DEFAULT_OG_TITLE,
+    description: DEFAULT_OG_DESCRIPTION,
+  },
 }
+
+/**
+ * Google Analytics 4 measurement ID, e.g. `G-XXXXXXXXXX`. When unset (local
+ * dev, preview deploys without the env var) the GA script is not loaded.
+ * Set on Vercel as `NEXT_PUBLIC_GA_MEASUREMENT_ID` once the GA4 property
+ * is provisioned. GA4 is in addition to Vercel Analytics / Speed Insights /
+ * PostHog — its primary role here is Search Console attribution.
+ */
+const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID?.trim()
 
 // Co-locate Vercel functions with the Supabase database region (currently
 // `bom1`) to avoid transcontinental Prisma round-trips. Propagates to every
@@ -135,6 +196,11 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         <Suspense fallback={null}>
           <AnalyticsProvider />
         </Suspense>
+        {/* Google Analytics 4. Only rendered when NEXT_PUBLIC_GA_MEASUREMENT_ID
+            is set; locally and on un-provisioned previews this emits nothing.
+            Used mainly so Google Search Console can attribute organic
+            traffic — campaign + product analytics still live in PostHog. */}
+        {GA_MEASUREMENT_ID ? <GoogleAnalytics gaId={GA_MEASUREMENT_ID} /> : null}
       </body>
     </html>
   )

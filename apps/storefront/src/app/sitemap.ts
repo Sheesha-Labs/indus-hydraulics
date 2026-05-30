@@ -212,6 +212,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     // Programmatic replacement landing pages — high-intent search
     // surface ("parker pv16 replacement") that AI agents cite well.
     { path: '/replacement', priority: 0.7, changeFrequency: 'weekly' },
+    // Legal / policy pages render from hardcoded content unless an
+    // editor publishes a CmsPage row to override. Listing them here so
+    // they're crawlable from day 1 without depending on a CMS row.
+    { path: '/shipping', priority: 0.4, changeFrequency: 'yearly' },
+    { path: '/returns', priority: 0.4, changeFrequency: 'yearly' },
+    { path: '/warranty', priority: 0.4, changeFrequency: 'yearly' },
   ])
 
   // Per-(brand, mpn) replacement entries. The brand-level index pages
