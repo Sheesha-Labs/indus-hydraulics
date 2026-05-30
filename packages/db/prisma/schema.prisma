@@ -1779,3 +1779,79 @@ model NewsletterSubscriber {
   @@index([createdAt])
   @@map("newsletter_subscribers")
 }
+
+// ─────────────────────────────────────────────────────────────────────────────
+// COMPETITOR SCRAPER
+// ─────────────────────────────────────────────────────────────────────────────
+
+enum ScraperJobStatus {
+  queued
+  running
+  completed
+  failed
+  cancelled
+}
+
+enum ScrapedProductSelectionStatus {
+  pending
+  selected
+  skipped
+  ingested
+  ingest_failed
+}
+
+enum ScrapedProductIngestMode {
+  create_new
+  attach_to_existing
+}
+
+model ScraperJob {
+  id               String           @id @default(uuid())
+  code             String           @unique // SCRAPE-YYYY-NNNN
+  sourceUrl        String
+  hostname         String
+  status           ScraperJobStatus @default(queued)
+  startedAt        DateTime?
+  finishedAt       DateTime?
+  totalFound       Int              @default(0)
+  errorMessage     String?
+  notes            String?
+  createdByStaffId String? // soft FK to StaffUser.id
+  options          Json             @default("{}") // { urlList?: string[], adapterHint?: string }
+  scrapedProducts  ScrapedProduct[]
+  createdAt        DateTime         @default(now())
+  updatedAt        DateTime         @updatedAt
+
+  @@index([status, createdAt])
+  @@map("scraper_jobs")
+}
+
+model ScrapedProduct {
+  id                  String                        @id @default(uuid())
+  jobId               String
+  job                 ScraperJob                    @relation(fields: [jobId], references: [id], onDelete: Cascade)
+  sourceUrl           String
+  sourceTitle         String
+  sourceDescription   String?
+  sourceCategoryText  String?
+  sourceBrandText     String?
+  sourceSku           String?
+  candidateImages     Json // [{url, position, alt?, contentType?, bytes?}]
+  selectionStatus     ScrapedProductSelectionStatus @default(pending)
+  ingestMode          ScrapedProductIngestMode      @default(create_new)
+  targetProductId     String? // soft FK to Product.id — set when ingestMode='attach_to_existing'
+  mappedCategoryId    String? // soft FK to Category.id — only used in create_new mode
+  mappedBrandId       String? // soft FK to Brand.id — only used in create_new mode
+  editedTitle         String? // only used in create_new mode
+  editedSku           String? // only used in create_new mode
+  deselectedImageUrls Json                          @default("[]") // string[]
+  ingestedProductId   String? // soft FK to Product.id — receives images (new OR existing); not unique because attach mode can target same product from multiple rows
+  ingestedAt          DateTime?
+  ingestError         String?
+  createdAt           DateTime                      @default(now())
+  updatedAt           DateTime                      @updatedAt
+
+  @@unique([jobId, sourceUrl])
+  @@index([jobId, selectionStatus])
+  @@map("scraped_products")
+}

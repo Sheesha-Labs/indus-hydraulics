@@ -25,6 +25,8 @@ export const ROLES = {
   CATALOGUE_WRITE: ['super_admin', 'manager'] as const,
   /** Destructive deletes — strictest tier. */
   CATALOGUE_DELETE: ['super_admin', 'manager'] as const,
+  /** Competitor scraper — discover + ingest competitor product images. */
+  COMPETITOR_SCRAPE: ['super_admin', 'manager'] as const,
   /** RFQ engineering review (set price, lead time, status). */
   RFQ_REVIEW: ['super_admin', 'manager', 'engineer', 'sales_rep'] as const,
   /** B2B account management. */

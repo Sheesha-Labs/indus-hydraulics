@@ -54,6 +54,39 @@ export async function uploadToStorage(
 }
 
 /**
+ * Same as `uploadToStorage`, but the caller picks the exact object name
+ * (no timestamp prefix). Used by the competitor scraper at ingest time —
+ * the user's brief was that saved image filenames must match the product
+ * title (e.g. `bosch-rexroth-a10vso-1.jpg`).
+ *
+ * `objectName` is appended verbatim to `pathPrefix` — caller is responsible
+ * for ensuring uniqueness within the prefix. We do NOT sanitize the name
+ * here so the caller has full control; sanitize before passing in.
+ */
+export async function uploadToStorageWithName(
+  bucket: StorageBucket,
+  file: File,
+  pathPrefix: string,
+  objectName: string,
+): Promise<{ storagePath: string; bytes: number; mimeType: string }> {
+  const objectPath = `${pathPrefix}/${objectName}`
+
+  const { error } = await supabaseAdmin().storage.from(bucket).upload(objectPath, file, {
+    cacheControl: '3600',
+    upsert: false,
+    contentType: file.type || 'application/octet-stream',
+  })
+  if (error) throw new Error(`Storage upload failed: ${error.message}`)
+
+  const storagePath =
+    bucket === STORAGE_BUCKETS.images
+      ? supabaseAdmin().storage.from(bucket).getPublicUrl(objectPath).data.publicUrl
+      : `${bucket}/${objectPath}`
+
+  return { storagePath, bytes: file.size, mimeType: file.type || 'application/octet-stream' }
+}
+
+/**
  * Removes an object given the storagePath we persisted. Handles both
  * formats (full public URL or "bucket/path") so callers don't need to care.
  */

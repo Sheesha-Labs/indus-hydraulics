@@ -19,6 +19,7 @@ import {
   Award,
   LayoutTemplate,
   Menu as MenuIcon,
+  Globe,
   type LucideIcon,
 } from 'lucide-react'
 
@@ -48,6 +49,7 @@ const NAV_SECTIONS: { section: string; items: NavItem[] }[] = [
       { id: 'spec-templates', label: 'Spec templates', path: 'spec-templates', Icon: LayoutTemplate },
       { id: 'industries', label: 'Industries', path: 'industries', Icon: ImageIcon },
       { id: 'media', label: 'Media library', path: 'media', Icon: ImageIcon },
+      { id: 'scraper', label: 'Competitor scraper', path: 'scraper', Icon: Globe },
     ],
   },
   {
