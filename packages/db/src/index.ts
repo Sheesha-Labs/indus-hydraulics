@@ -68,6 +68,8 @@ export {
   nextRfqCode,
   nextAccountCode,
   nextQuoteCodeForRfq,
+  nextScrapeCode,
+  formatScrapeCode,
   quoteCodeToSlug,
   COUNTER_SCOPES,
   QUOTE_CODE_BASE,

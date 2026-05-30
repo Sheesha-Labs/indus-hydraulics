@@ -73,10 +73,24 @@ export function quoteCodeToSlug(code: string): string {
   return code.replace(/[^A-Za-z0-9_-]+/g, '-')
 }
 
+export function formatScrapeCode(year: number, value: number): string {
+  return `SCRAPE-${year}-${String(value).padStart(4, '0')}`
+}
+
+export async function nextScrapeCode(
+  client: DbClient = db,
+  now: Date = new Date(),
+): Promise<string> {
+  const year = now.getFullYear()
+  const value = await nextValue(client, 'scrape', year)
+  return formatScrapeCode(year, value)
+}
+
 export const COUNTER_SCOPES = {
   rfq: 'rfq',
   account: 'account',
   quote: 'quote',
+  scrape: 'scrape',
 } as const
 
 export const QUOTE_CODE_BASE = QUOTE_ZOHO_BASE

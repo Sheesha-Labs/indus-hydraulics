@@ -1,4 +1,5 @@
 import { inngest } from './client'
+import { scraperJobRun } from './scraperJob'
 import { db } from '@indus/db'
 import {
   assertTransition,
@@ -523,4 +524,5 @@ export const allFunctions = [
   quoteExpiryReminder,
   quoteAutoExpiry,
   retryFailedEmails,
+  scraperJobRun,
 ]
