@@ -255,7 +255,7 @@ export default function SiteHeaderClient({
           role="menu"
         >
           <div className="max-w-[1360px] mx-auto px-8">
-            <div className="grid" style={{ gridTemplateColumns: '280px 320px 1fr', minHeight: '420px' }}>
+            <div className="grid grid-cols-[360px_420px_1fr] min-h-[420px]">
               {/* ── Column 1: Top-level categories ── */}
               <div className="py-7 pr-0 border-r border-[var(--color-border-2)]">
                 <div className="font-mono text-[11px] tracking-[0.14em] uppercase text-[var(--color-muted)] mb-3">
@@ -275,7 +275,7 @@ export default function SiteHeaderClient({
                       onMouseEnter={() => handleCatHover(i)}
                       onClick={closeDropdownImmediate}
                     >
-                      <span>{cat.label}</span>
+                      <span className="whitespace-nowrap">{cat.label}</span>
                     </Link>
                   ))}
                 </div>
@@ -283,7 +283,7 @@ export default function SiteHeaderClient({
 
               {/* ── Column 2: Sub-categories ── */}
               <div className="py-7 px-6 border-r border-[var(--color-border-2)]">
-                <div className="font-mono text-[11px] tracking-[0.14em] uppercase text-[var(--color-muted)] mb-3">
+                <div className="font-mono text-[11px] tracking-[0.14em] uppercase text-[var(--color-muted)] mb-3 whitespace-nowrap">
                   {activeCat?.label}
                 </div>
                 <div className="flex flex-col">
