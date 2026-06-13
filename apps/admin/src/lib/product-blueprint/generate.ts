@@ -66,7 +66,6 @@ export async function generateProductBlueprint(input: {
         quality: 'high',
         output_format: 'png',
         background: 'opaque',
-        input_fidelity: 'high',
       },
     ],
     tool_choice: { type: 'image_generation' },
