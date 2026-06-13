@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import Link from 'next/link'
 import { unstable_cache } from 'next/cache'
 import { db } from '@indus/db'
@@ -22,7 +23,10 @@ const getHomeCategories = unstable_cache(
     db.category.findMany({
       where: { isPublished: true, parentId: null },
       orderBy: { position: 'asc' },
-      include: { _count: { select: { products: true } } },
+      include: {
+        _count: { select: { products: true } },
+        image: { select: { storagePath: true, alt: true, width: true, height: true } },
+      },
       take: 6,
     }),
   ['home-categories'],
@@ -309,12 +313,22 @@ export default async function HomePage() {
                 href={`/c/${featuredCat.slug}`}
                 className="group bg-[var(--color-elevated)] border border-[var(--color-border)] overflow-hidden flex flex-col lg:flex-row lg:col-span-2 hover:border-[var(--color-muted)] transition-colors"
               >
-                <div className="lg:flex-1 min-h-[220px] lg:min-h-[320px] bg-[var(--color-deep)] border-b lg:border-b-0 lg:border-r border-[var(--color-border)] flex items-center justify-center">
-                  <p className="font-mono text-[11px] text-[var(--color-caption)] text-center px-6">
-                    Hero category visual<br />
-                    &ldquo;{featuredCat.name} line-up&rdquo;<br />
-                    1100×800
-                  </p>
+                <div className="lg:flex-1 min-h-[220px] lg:min-h-[320px] bg-[var(--color-deep)] border-b lg:border-b-0 lg:border-r border-[var(--color-border)] relative overflow-hidden flex items-center justify-center">
+                  {featuredCat.image ? (
+                    <Image
+                      src={featuredCat.image.storagePath}
+                      alt={featuredCat.image.alt ?? `${featuredCat.name} category`}
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 1024px) 100vw, 50vw"
+                    />
+                  ) : (
+                    <p className="font-mono text-[11px] text-[var(--color-caption)] text-center px-6">
+                      Hero category visual<br />
+                      &ldquo;{featuredCat.name} line-up&rdquo;<br />
+                      1100×800
+                    </p>
+                  )}
                 </div>
                 <div className="lg:flex-1 p-8 flex flex-col justify-center gap-2.5">
                   <span className="font-mono text-[11px] tracking-[0.16em] uppercase text-[var(--color-muted)]">FEATURED CATEGORY</span>
@@ -340,10 +354,20 @@ export default async function HomePage() {
                 href={`/c/${cat.slug}`}
                 className="group bg-[var(--color-elevated)] border border-[var(--color-border)] overflow-hidden flex flex-col hover:border-[var(--color-muted)] transition-colors"
               >
-                <div className="aspect-[16/10] bg-[var(--color-deep)] border-b border-[var(--color-border)] flex items-center justify-center">
-                  <p className="font-mono text-[11px] text-[var(--color-caption)] text-center px-4">
-                    &ldquo;{cat.name}&rdquo;<br />720×450
-                  </p>
+                <div className="aspect-[16/10] bg-[var(--color-deep)] border-b border-[var(--color-border)] relative overflow-hidden flex items-center justify-center">
+                  {cat.image ? (
+                    <Image
+                      src={cat.image.storagePath}
+                      alt={cat.image.alt ?? `${cat.name} category`}
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    />
+                  ) : (
+                    <p className="font-mono text-[11px] text-[var(--color-caption)] text-center px-4">
+                      &ldquo;{cat.name}&rdquo;<br />720×450
+                    </p>
+                  )}
                 </div>
                 <div className="p-5 flex flex-col gap-2.5 flex-1">
                   <div className="flex items-baseline justify-between gap-2">
