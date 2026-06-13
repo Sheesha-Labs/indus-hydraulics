@@ -9,8 +9,13 @@ import {
   type ResolvedNavMenu,
 } from '@indus/domain'
 
-// Persistent cross-request cache keyed per location. Admin should call
-// revalidateTag('nav-menu') after any NavMenu mutation.
+// Persistent cross-request cache keyed per location, refreshed on a short TTL.
+// Admin and storefront are SEPARATE deployments with independent data caches and
+// no shared cache handler, so an admin mutation cannot invalidate this entry
+// in-process — propagation is purely time-based (see `revalidate` below). For
+// instant cross-app updates we'd need an on-demand revalidation webhook: a
+// storefront route that calls `revalidateTag('nav-menu')`, hit by admin after a
+// NavMenu mutation. Not wired today; the short TTL keeps staleness bounded.
 const loadRaw = unstable_cache(
   async (location: MenuLocation) => {
     return db.navMenu
@@ -34,7 +39,7 @@ const loadRaw = unstable_cache(
       .catch(() => null)
   },
   ['nav-menu'],
-  { revalidate: 300, tags: ['nav-menu'] },
+  { revalidate: 60, tags: ['nav-menu'] }
 )
 
 type LoadedMenu = NonNullable<Awaited<ReturnType<typeof loadRaw>>>
@@ -131,7 +136,7 @@ const loadNavBrands = unstable_cache(
       .catch(() => [])
   },
   ['nav-brands'],
-  { revalidate: 300, tags: ['nav-brands'] },
+  { revalidate: 60, tags: ['nav-brands'] }
 )
 
 const loadNavIndustries = unstable_cache(
@@ -145,7 +150,7 @@ const loadNavIndustries = unstable_cache(
       .catch(() => [])
   },
   ['nav-industries'],
-  { revalidate: 300, tags: ['nav-industries'] },
+  { revalidate: 60, tags: ['nav-industries'] }
 )
 
 export const getNavBrands = cache(async (): Promise<NavListEntry[]> => {
