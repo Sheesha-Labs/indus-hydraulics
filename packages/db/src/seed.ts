@@ -5,6 +5,7 @@
 import { PrismaClient } from '@prisma/client'
 import crypto from 'crypto'
 import { seedIndustries } from './seed-industries'
+import { MEGAMENU_TREE, type MegamenuSeedNode } from './megamenu-tree'
 
 const db = new PrismaClient()
 
@@ -320,7 +321,8 @@ async function main() {
       slug: 'bosch-rexroth-a10vso-71cc-pump',
       title: 'Bosch Rexroth A10VSO 71cc Axial Piston Pump',
       descriptionShort: 'Variable displacement axial piston pump, 71cc/rev, SAE B mount.',
-      descriptionLong: 'The A10VSO is a high-efficiency variable displacement axial piston swashplate design pump suitable for hydrostatic drives in open circuits. 71cc displacement with through-drive capability.',
+      descriptionLong:
+        'The A10VSO is a high-efficiency variable displacement axial piston swashplate design pump suitable for hydrostatic drives in open circuits. 71cc displacement with through-drive capability.',
       categoryId: catPumps.id,
       brandId: brands[0]!.id,
     },
@@ -330,7 +332,8 @@ async function main() {
       slug: 'bosch-rexroth-a10vso-45cc-pump',
       title: 'Bosch Rexroth A10VSO 45cc Axial Piston Pump',
       descriptionShort: 'Compact variable piston pump, 45cc/rev, suitable for mobile machinery.',
-      descriptionLong: 'Compact variant of the proven A10VSO series. 45cc displacement, robust construction for mobile and industrial applications.',
+      descriptionLong:
+        'Compact variant of the proven A10VSO series. 45cc displacement, robust construction for mobile and industrial applications.',
       categoryId: catPumps.id,
       brandId: brands[0]!.id,
     },
@@ -340,7 +343,8 @@ async function main() {
       slug: 'bosch-rexroth-a10vso-100cc-pump',
       title: 'Bosch Rexroth A10VSO 100cc Axial Piston Pump',
       descriptionShort: 'Large-displacement variable pump for high-power industrial drives.',
-      descriptionLong: 'A10VSO 100cc variant for demanding industrial applications. Pressure compensated with optional load sensing.',
+      descriptionLong:
+        'A10VSO 100cc variant for demanding industrial applications. Pressure compensated with optional load sensing.',
       categoryId: catPumps.id,
       brandId: brands[0]!.id,
     },
@@ -350,7 +354,8 @@ async function main() {
       slug: 'bosch-rexroth-pgh4-gear-pump',
       title: 'Bosch Rexroth PGH4 Gear Pump 20cc',
       descriptionShort: 'High-performance external gear pump, 20cc/rev, SAE A mount.',
-      descriptionLong: 'PGH4 series gear pump for industrial hydraulic power units. Low noise, high efficiency, available in multiple sizes.',
+      descriptionLong:
+        'PGH4 series gear pump for industrial hydraulic power units. Low noise, high efficiency, available in multiple sizes.',
       categoryId: catPumps.id,
       brandId: brands[0]!.id,
     },
@@ -360,7 +365,8 @@ async function main() {
       slug: 'parker-t7b-vane-pump',
       title: 'Parker T7B Vane Pump 09cc',
       descriptionShort: 'Fixed displacement vane pump, quiet operation, ideal for machine tools.',
-      descriptionLong: 'Parker T7B series balanced vane pump. Extremely quiet operation, suitable for machine tool and industrial applications.',
+      descriptionLong:
+        'Parker T7B series balanced vane pump. Extremely quiet operation, suitable for machine tool and industrial applications.',
       categoryId: catPumps.id,
       brandId: brands[1]!.id,
     },
@@ -370,7 +376,8 @@ async function main() {
       slug: 'parker-t6c-vane-pump',
       title: 'Parker T6C Vane Pump 12cc',
       descriptionShort: 'Double-pump capable vane pump, through-drive for tandem configuration.',
-      descriptionLong: 'Parker T6C fixed displacement vane pump with through-drive for tandem mounting. Suitable for power units.',
+      descriptionLong:
+        'Parker T6C fixed displacement vane pump with through-drive for tandem mounting. Suitable for power units.',
       categoryId: catPumps.id,
       brandId: brands[1]!.id,
     },
@@ -382,7 +389,8 @@ async function main() {
       slug: 'yuken-dsg-01-directional-valve',
       title: 'Yuken DSG-01 Solenoid Directional Valve 3C4 24VDC',
       descriptionShort: '4/3 spring-centred solenoid valve, cetop-3, 24VDC coil, 40 L/min.',
-      descriptionLong: 'Yuken DSG-01 series directional control valve with detachable coils. 3C4 spool provides P-to-T connection in centre position. Max 40 L/min, 315 bar.',
+      descriptionLong:
+        'Yuken DSG-01 series directional control valve with detachable coils. 3C4 spool provides P-to-T connection in centre position. Max 40 L/min, 315 bar.',
       categoryId: catValves.id,
       brandId: brands[2]!.id,
     },
@@ -392,7 +400,8 @@ async function main() {
       slug: 'yuken-dsg-01-2b2-valve',
       title: 'Yuken DSG-01 Solenoid Directional Valve 2B2 24VDC',
       descriptionShort: '4/2 spring-offset solenoid valve, cetop-3, dual solenoid.',
-      descriptionLong: 'Yuken DSG-01 2B2 spool for 4/2 directional control. Failsafe spring-offset design for safety-critical applications.',
+      descriptionLong:
+        'Yuken DSG-01 2B2 spool for 4/2 directional control. Failsafe spring-offset design for safety-critical applications.',
       categoryId: catValves.id,
       brandId: brands[2]!.id,
     },
@@ -402,7 +411,8 @@ async function main() {
       slug: 'yuken-mbr-pressure-reducing-valve',
       title: 'Yuken MBR-01 Pressure Reducing Valve 30MPa',
       descriptionShort: 'Direct-acting pressure reducing valve, cetop-3, 0–30MPa range.',
-      descriptionLong: 'Yuken MBR series pressure reducing valves for branch circuit pressure control. Tamper-resistant adjustment, internal drain.',
+      descriptionLong:
+        'Yuken MBR series pressure reducing valves for branch circuit pressure control. Tamper-resistant adjustment, internal drain.',
       categoryId: catValves.id,
       brandId: brands[2]!.id,
     },
@@ -412,7 +422,8 @@ async function main() {
       slug: 'yuken-bg-pressure-relief-valve',
       title: 'Yuken BG-03 Pressure Relief Valve 315 bar',
       descriptionShort: 'Pilot-operated relief valve, cetop-5, 315 bar maximum setting.',
-      descriptionLong: 'Yuken BG series pilot-operated pressure relief valves for high-flow system protection. Low cracking pressure differential.',
+      descriptionLong:
+        'Yuken BG series pilot-operated pressure relief valves for high-flow system protection. Low cracking pressure differential.',
       categoryId: catValves.id,
       brandId: brands[2]!.id,
     },
@@ -422,7 +433,8 @@ async function main() {
       slug: 'rexroth-flcb-proportional-valve',
       title: 'Bosch Rexroth FLCB Proportional Directional Valve',
       descriptionShort: 'Proportional directional control valve, integrated electronics, NG10.',
-      descriptionLong: 'Bosch Rexroth FLCB series proportional directional valve with on-board electronics and position feedback. For precise closed-loop control.',
+      descriptionLong:
+        'Bosch Rexroth FLCB series proportional directional valve with on-board electronics and position feedback. For precise closed-loop control.',
       categoryId: catValves.id,
       brandId: brands[0]!.id,
     },
@@ -434,7 +446,8 @@ async function main() {
       slug: 'iso-tie-rod-cylinder-80x50x300',
       title: 'ISO Tie-Rod Cylinder 80×50×300mm Stroke',
       descriptionShort: 'Double-acting tie-rod cylinder, ISO 6020/2, 80mm bore × 300mm stroke.',
-      descriptionLong: 'Standard ISO 6020/2 tie-rod hydraulic cylinder. 80mm bore, 50mm rod, 300mm stroke. Foot bracket mount standard. NBR seals, chrome rod.',
+      descriptionLong:
+        'Standard ISO 6020/2 tie-rod hydraulic cylinder. 80mm bore, 50mm rod, 300mm stroke. Foot bracket mount standard. NBR seals, chrome rod.',
       categoryId: catCylinders.id,
       brandId: brands[0]!.id,
     },
@@ -444,7 +457,8 @@ async function main() {
       slug: 'iso-tie-rod-cylinder-100x70x500',
       title: 'ISO Tie-Rod Cylinder 100×70×500mm Stroke',
       descriptionShort: 'Heavy-duty tie-rod cylinder, 100mm bore × 500mm stroke.',
-      descriptionLong: 'ISO 6020/2 compliant heavy-duty cylinder. 100mm bore for high-force applications. NBR seals standard, PTFE available on request.',
+      descriptionLong:
+        'ISO 6020/2 compliant heavy-duty cylinder. 100mm bore for high-force applications. NBR seals standard, PTFE available on request.',
       categoryId: catCylinders.id,
       brandId: brands[0]!.id,
     },
@@ -454,7 +468,8 @@ async function main() {
       slug: 'iso-tie-rod-cylinder-63x45x200',
       title: 'ISO Tie-Rod Cylinder 63×45×200mm Stroke',
       descriptionShort: 'Compact tie-rod cylinder, clevis bracket mount, 63mm bore.',
-      descriptionLong: 'Compact ISO cylinder for confined spaces. Clevis bracket mount for pivot applications. 250 bar max working pressure.',
+      descriptionLong:
+        'Compact ISO cylinder for confined spaces. Clevis bracket mount for pivot applications. 250 bar max working pressure.',
       categoryId: catCylinders.id,
       brandId: brands[0]!.id,
     },
@@ -464,7 +479,8 @@ async function main() {
       slug: 'welded-cylinder-120x80x600',
       title: 'Welded Hydraulic Cylinder 120×80×600mm',
       descriptionShort: 'Heavy industrial welded cylinder, 120mm bore, 600mm stroke, MF5 mount.',
-      descriptionLong: 'Custom-configurable welded cylinder for heavy industrial applications. Integral ports, hard chrome rod, steel end caps.',
+      descriptionLong:
+        'Custom-configurable welded cylinder for heavy industrial applications. Integral ports, hard chrome rod, steel end caps.',
       categoryId: catCylinders.id,
       brandId: brands[1]!.id,
     },
@@ -476,7 +492,8 @@ async function main() {
       slug: 'parker-jic-37-elbow-1-2',
       title: 'Parker JIC 37° Elbow 1/2" BSP — Stainless',
       descriptionShort: '90° JIC 37° elbow, 1/2" BSP male, 316 SS, rated to 420 bar.',
-      descriptionLong: 'Parker A-LOK stainless steel JIC elbow for corrosive environments. 1/2" BSP male thread. Full bore design minimises pressure drop.',
+      descriptionLong:
+        'Parker A-LOK stainless steel JIC elbow for corrosive environments. 1/2" BSP male thread. Full bore design minimises pressure drop.',
       categoryId: catHoses.id,
       brandId: brands[1]!.id,
     },
@@ -486,7 +503,8 @@ async function main() {
       slug: 'parker-421-1-2-hose',
       title: 'Parker 421 High-Pressure Hose 1/2" DN13',
       descriptionShort: 'Wire-braided hydraulic hose, 1/2" DN13, 420 bar WP, per metre.',
-      descriptionLong: 'Parker 421 series two-wire braid hose conforming to SAE 100R2AT and EN853-2SN. 420 bar working pressure at 1/2" bore.',
+      descriptionLong:
+        'Parker 421 series two-wire braid hose conforming to SAE 100R2AT and EN853-2SN. 420 bar working pressure at 1/2" bore.',
       categoryId: catHoses.id,
       brandId: brands[1]!.id,
     },
@@ -496,7 +514,8 @@ async function main() {
       slug: 'parker-451-3-4-hose',
       title: 'Parker 451TC Compact Spiral Hose 3/4" DN19',
       descriptionShort: 'Four-spiral compact hose, 3/4" DN19, 360 bar WP, per metre.',
-      descriptionLong: 'Parker 451TC four-wire spiral hose with compact cover. High pressure and impulse resistance. SAE 100R13 compliant.',
+      descriptionLong:
+        'Parker 451TC four-wire spiral hose with compact cover. High pressure and impulse resistance. SAE 100R13 compliant.',
       categoryId: catHoses.id,
       brandId: brands[1]!.id,
     },
@@ -508,7 +527,8 @@ async function main() {
       slug: 'hydac-sb330-bladder-accumulator',
       title: 'HYDAC Bladder Accumulator SB330 10L 330 bar',
       descriptionShort: 'Bladder accumulator, 10 litre, 330 bar max, nitrogen pre-charge.',
-      descriptionLong: 'HYDAC SB330 series bladder accumulator for pulsation dampening and energy storage. 10L capacity, 330 bar max pressure, gas valve on top.',
+      descriptionLong:
+        'HYDAC SB330 series bladder accumulator for pulsation dampening and energy storage. 10L capacity, 330 bar max pressure, gas valve on top.',
       categoryId: catSeals.id,
       brandId: brands[3]!.id,
     },
@@ -518,7 +538,8 @@ async function main() {
       slug: 'hydac-sb330-4l-accumulator',
       title: 'HYDAC Bladder Accumulator SB330 4L 330 bar',
       descriptionShort: 'Compact 4 litre bladder accumulator, 330 bar, carbon steel shell.',
-      descriptionLong: 'HYDAC SB330 4L. Same construction as 10L variant in a more compact body. Suitable for tight installations.',
+      descriptionLong:
+        'HYDAC SB330 4L. Same construction as 10L variant in a more compact body. Suitable for tight installations.',
       categoryId: catSeals.id,
       brandId: brands[3]!.id,
     },
@@ -528,7 +549,8 @@ async function main() {
       slug: 'hydac-0330-return-line-filter',
       title: 'HYDAC 0330R Return Line Filter 10 Micron',
       descriptionShort: 'Return line pressure filter, 10 micron glass fibre element, bypass valve.',
-      descriptionLong: 'HYDAC 0330R series high-capacity return line filter. 10 micron Beta 10 ≥ 200 glass fibre. Visual / electrical clog indicator available.',
+      descriptionLong:
+        'HYDAC 0330R series high-capacity return line filter. 10 micron Beta 10 ≥ 200 glass fibre. Visual / electrical clog indicator available.',
       categoryId: catSeals.id,
       brandId: brands[3]!.id,
     },
@@ -538,7 +560,8 @@ async function main() {
       slug: 'hydac-0160-suction-filter',
       title: 'HYDAC 0160DN Suction Filter 10 Micron',
       descriptionShort: 'Suction strainer / filter, 10 micron, tank top mount, bypass valve.',
-      descriptionLong: 'HYDAC 0160DN series suction filter for hydraulic power units. Tank-top mounting with bypass valve protecting pump from cavitation.',
+      descriptionLong:
+        'HYDAC 0160DN series suction filter for hydraulic power units. Tank-top mounting with bypass valve protecting pump from cavitation.',
       categoryId: catSeals.id,
       brandId: brands[3]!.id,
     },
@@ -548,7 +571,8 @@ async function main() {
       slug: 'rexroth-khb-ball-valve',
       title: 'Bosch Rexroth KHB Ball Valve 1/2" G',
       descriptionShort: 'Screw-in ball valve, 1/2" G, 500 bar rated, stainless steel ball.',
-      descriptionLong: 'Rexroth KHB series high-pressure ball valve. 500 bar rated for use in test benches and high-pressure instrumentation circuits.',
+      descriptionLong:
+        'Rexroth KHB series high-pressure ball valve. 500 bar rated for use in test benches and high-pressure instrumentation circuits.',
       categoryId: catSeals.id,
       brandId: brands[0]!.id,
     },
@@ -558,7 +582,8 @@ async function main() {
       slug: 'standard-power-pack-11kw',
       title: 'Standard Hydraulic Power Pack 11kW 30L/min',
       descriptionShort: '11kW 3-phase electric motor, gear pump 30 L/min, 30L tank, DSG-01 valve.',
-      descriptionLong: 'Ready-to-install hydraulic power unit. 11kW 3-phase 50Hz motor, 30 L/min gear pump, 250 bar max, 30L painted steel tank. Includes pressure gauge, return filter and relief valve.',
+      descriptionLong:
+        'Ready-to-install hydraulic power unit. 11kW 3-phase 50Hz motor, 30 L/min gear pump, 250 bar max, 30L painted steel tank. Includes pressure gauge, return filter and relief valve.',
       categoryId: catSeals.id,
       brandId: brands[0]!.id,
     },
@@ -578,7 +603,9 @@ async function main() {
     }
   }
 
-  console.log(`  ✓ ${productData.length} products (${created} created, ${productData.length - created} skipped)`)
+  console.log(
+    `  ✓ ${productData.length} products (${created} created, ${productData.length - created} skipped)`
+  )
 
   // ── Spec templates + product specs ─────────────────────────────────────────
   // Backfills templates + template-linked ProductSpec rows so Compare works on
@@ -596,7 +623,8 @@ async function main() {
 
   // ── Store settings ──────────────────────────────────────────────────────────
   const brandDefaults = {
-    tagline: 'UAE-based distributor of industrial hydraulic components, serving engineers globally.',
+    tagline:
+      'UAE-based distributor of industrial hydraulic components, serving engineers globally.',
     certificationLine: 'ISO 9001:2015 Certified',
     contactPhone: '+971 52 2477942',
     contactEmail: 'sales@indushydraulics.me',
@@ -896,7 +924,12 @@ async function seedNavigationMenus() {
   })
   await db.navMenu.upsert({
     where: { location: 'mobile_drawer' },
-    create: { slug: 'mobile-drawer', name: 'Mobile drawer', location: 'mobile_drawer', isPublished: false },
+    create: {
+      slug: 'mobile-drawer',
+      name: 'Mobile drawer',
+      location: 'mobile_drawer',
+      isPublished: false,
+    },
     update: {},
   })
 
@@ -928,128 +961,51 @@ async function seedNavigationMenus() {
 
   const megamenuCount = await db.navMenuItem.count({ where: { menuId: megamenu.id } })
   if (megamenuCount === 0) {
-    const TAXONOMY: Array<{
-      slug: string
-      name: string
-      categorySlug: string | null
-      subs: Array<{ id: string; name: string; leaves: string[] }>
-    }> = [
-      {
-        slug: 'hydraulic-pumps',
-        name: 'Hydraulic Pumps',
-        categorySlug: 'hydraulic-pumps',
-        subs: [
-          { id: 'gear', name: 'Gear Pumps', leaves: ['External Gear', 'Internal Gear', 'Gerotor', 'Twin-Flow'] },
-          { id: 'vane', name: 'Vane Pumps', leaves: ['Fixed Displacement', 'Variable Displacement', 'Cartridge Type'] },
-          { id: 'piston', name: 'Piston Pumps', leaves: ['Axial Piston', 'Radial Piston', 'Bent Axis', 'Swashplate Variable'] },
-          { id: 'hand', name: 'Hand & Foot Pumps', leaves: ['Single-Acting', 'Double-Acting', 'Air-Driven'] },
-          { id: 'power', name: 'Power Packs', leaves: ['Mini Power Packs', 'AC Power Units', 'DC Power Units', '3-Phase'] },
-        ],
-      },
-      {
-        slug: 'hydraulic-cylinders',
-        name: 'Hydraulic Cylinders',
-        categorySlug: 'cylinders',
-        subs: [
-          { id: 'tie-rod', name: 'Tie-Rod Cylinders', leaves: ['NFPA Standard', 'ISO 6020', 'ISO 6022', 'Mill-Type'] },
-          { id: 'welded', name: 'Welded Cylinders', leaves: ['Cross-Tube Mount', 'Clevis Mount', 'Trunnion Mount'] },
-          { id: 'telescopic', name: 'Telescopic Cylinders', leaves: ['Single-Acting', 'Double-Acting', 'Tipper Trailer'] },
-          { id: 'compact', name: 'Compact & Block', leaves: ['Block Cylinders', 'Pancake', 'Hollow Plunger'] },
-          { id: 'custom', name: 'Custom Builds', leaves: ['Made-to-Order', 'Repair & Reseal', 'Plating Service'] },
-        ],
-      },
-      {
-        slug: 'valves-manifolds',
-        name: 'Valves & Manifolds',
-        categorySlug: 'valves-manifolds',
-        subs: [
-          { id: 'directional', name: 'Directional Control', leaves: ['Solenoid Operated', 'Manual Lever', 'Pilot Operated', 'Cetop 3 / NG6', 'Cetop 5 / NG10'] },
-          { id: 'pressure', name: 'Pressure Control', leaves: ['Relief', 'Reducing', 'Sequence', 'Counterbalance'] },
-          { id: 'flow', name: 'Flow Control', leaves: ['Throttle', 'Pressure Compensated', 'Proportional'] },
-          { id: 'check', name: 'Check & Logic', leaves: ['Inline Check', 'Pilot Check', 'Logic Elements'] },
-          { id: 'manifolds', name: 'Manifolds', leaves: ['Standard Bar', 'Custom Block', 'Subplates'] },
-        ],
-      },
-      {
-        slug: 'hoses-fittings',
-        name: 'Hoses & Fittings',
-        categorySlug: 'hoses-fittings',
-        subs: [
-          { id: 'hose', name: 'Hydraulic Hose', leaves: ['1-Wire Braid', '2-Wire Braid', '4-Spiral', '6-Spiral', 'Thermoplastic'] },
-          { id: 'fittings', name: 'Hose Fittings', leaves: ['BSP', 'JIC 37°', 'ORFS', 'Metric DIN', 'NPT'] },
-          { id: 'adapters', name: 'Adapters', leaves: ['Straight', 'Elbow 45°', 'Elbow 90°', 'Tee', 'Cross'] },
-          { id: 'couplers', name: 'Quick Couplers', leaves: ['ISO 7241-A', 'ISO 7241-B', 'Flat Face', 'Screw-to-Connect'] },
-        ],
-      },
-      {
-        slug: 'seals-components',
-        name: 'Seals & Components',
-        categorySlug: 'seals-accessories',
-        subs: [
-          { id: 'rod-seals', name: 'Rod Seals', leaves: ['U-Cup', 'Step Seal', 'Stepped Cap', 'Buffer Seal'] },
-          { id: 'piston-seals', name: 'Piston Seals', leaves: ['Twin-Lip', 'Glyd Ring', 'Compact'] },
-          { id: 'wipers', name: 'Wipers & Scrapers', leaves: ['Single-Lip', 'Double-Lip', 'Metallic'] },
-          { id: 'orings', name: 'O-Rings & Back-up', leaves: ['NBR', 'FKM (Viton)', 'EPDM', 'PTFE Back-up'] },
-        ],
-      },
-      {
-        slug: 'accessories-instrumentation',
-        name: 'Accessories & Instrumentation',
-        categorySlug: null,
-        subs: [
-          { id: 'filters', name: 'Filters', leaves: ['Suction', 'Pressure-Line', 'Return-Line', 'Tank Breather'] },
-          { id: 'gauges', name: 'Gauges & Sensors', leaves: ['Bourdon Gauge', 'Glycerin-Filled', 'Digital', 'Pressure Transducer'] },
-          { id: 'accumulators', name: 'Accumulators', leaves: ['Bladder', 'Diaphragm', 'Piston'] },
-          { id: 'coolers', name: 'Coolers', leaves: ['Air-Oil', 'Water-Oil', 'With Bypass'] },
-          { id: 'reservoirs', name: 'Reservoirs', leaves: ['Steel Tanks', 'Aluminum', 'Custom Fab'] },
-        ],
-      },
-    ]
-
     const allCategories = await db.category.findMany({ select: { id: true, slug: true } })
     const categoryBySlug = new Map(allCategories.map((c) => [c.slug, c.id]))
 
-    for (let colIdx = 0; colIdx < TAXONOMY.length; colIdx++) {
-      const col = TAXONOMY[colIdx]!
-      const categoryId = col.categorySlug ? categoryBySlug.get(col.categorySlug) ?? null : null
-      const colItem = await db.navMenuItem.create({
-        data: {
-          menuId: megamenu.id,
-          parentId: null,
-          position: colIdx,
-          label: col.name,
-          linkType: categoryId ? 'category' : 'custom_url',
-          categoryId,
-          customUrl: categoryId ? null : `/c/${col.slug}`,
-        },
-      })
-      for (let subIdx = 0; subIdx < col.subs.length; subIdx++) {
-        const sub = col.subs[subIdx]!
-        const subItem = await db.navMenuItem.create({
+    // Prune the canonical 6-section tree to what this DB can link: drop category
+    // nodes whose slug is absent, and drop any container left with no surviving
+    // children. custom_url leaf links always survive. A minimal seed DB yields a
+    // clean partial menu; a fully populated DB reproduces the whole structure.
+    type PrunedNode = {
+      label: string
+      categoryId: string | null
+      url: string | null
+      children: PrunedNode[]
+    }
+    const prune = (nodes: MegamenuSeedNode[]): PrunedNode[] => {
+      const out: PrunedNode[] = []
+      for (const n of nodes) {
+        const categoryId = n.category ? (categoryBySlug.get(n.category) ?? null) : null
+        const children = prune(n.children ?? [])
+        const originallyContainer = (n.children?.length ?? 0) > 0
+        const keep = children.length > 0 || categoryId !== null || (!!n.url && !originallyContainer)
+        if (!keep) continue
+        out.push({ label: n.label, categoryId, url: n.url ?? null, children })
+      }
+      return out
+    }
+
+    const createNodes = async (nodes: PrunedNode[], parentId: string | null): Promise<void> => {
+      for (let i = 0; i < nodes.length; i++) {
+        const n = nodes[i]!
+        const row = await db.navMenuItem.create({
           data: {
             menuId: megamenu.id,
-            parentId: colItem.id,
-            position: subIdx,
-            label: sub.name,
-            linkType: 'custom_url',
-            customUrl: `/c/${col.slug}?sub=${sub.id}`,
+            parentId,
+            position: i,
+            label: n.label,
+            linkType: n.categoryId ? 'category' : n.url ? 'custom_url' : 'none',
+            categoryId: n.categoryId,
+            customUrl: n.categoryId ? null : n.url,
           },
         })
-        for (let leafIdx = 0; leafIdx < sub.leaves.length; leafIdx++) {
-          const leaf = sub.leaves[leafIdx]!
-          await db.navMenuItem.create({
-            data: {
-              menuId: megamenu.id,
-              parentId: subItem.id,
-              position: leafIdx,
-              label: leaf,
-              linkType: 'custom_url',
-              customUrl: `/c/${col.slug}?sub=${sub.id}&type=${encodeURIComponent(leaf)}`,
-            },
-          })
-        }
+        if (n.children.length > 0) await createNodes(n.children, row.id)
       }
     }
+
+    await createNodes(prune(MEGAMENU_TREE), null)
   }
 
   // ── footer_main ────────────────────────────────────────────────────────────
@@ -1210,15 +1166,84 @@ const TEMPLATES: TemplateDef[] = [
     name: 'Hydraulic pump',
     description: 'Standard spec template for hydraulic pumps (axial piston, gear, vane).',
     fields: [
-      { key: 'displacement',          label: 'Displacement',           unit: 'cm³/rev', dataType: 'number', group: 'Hydraulic',   position: 0, isQuickSpec: true, isKeyFeature: true },
-      { key: 'pressure_peak',         label: 'Pressure (peak)',        unit: 'bar',     dataType: 'number', group: 'Hydraulic',   position: 1, isQuickSpec: true, isKeyFeature: true },
-      { key: 'speed_max',             label: 'Speed (max)',            unit: 'rpm',     dataType: 'number', group: 'Hydraulic',   position: 2, isQuickSpec: true },
-      { key: 'pump_type',             label: 'Pump type',              unit: null,      dataType: 'text',   group: 'Hydraulic',   position: 3 },
-      { key: 'volumetric_efficiency', label: 'Volumetric efficiency',  unit: '%',       dataType: 'number', group: 'Hydraulic',   position: 4 },
-      { key: 'mounting',              label: 'Mounting',               unit: null,      dataType: 'text',   group: 'Mechanical',  position: 0, isQuickSpec: true },
-      { key: 'rotation',              label: 'Rotation',               unit: null,      dataType: 'text',   group: 'Mechanical',  position: 1 },
-      { key: 'weight',                label: 'Weight',                 unit: 'kg',      dataType: 'number', group: 'Mechanical',  position: 2 },
-      { key: 'warranty_months',       label: 'Warranty',               unit: 'months',  dataType: 'number', group: 'Commercial',  position: 0 },
+      {
+        key: 'displacement',
+        label: 'Displacement',
+        unit: 'cm³/rev',
+        dataType: 'number',
+        group: 'Hydraulic',
+        position: 0,
+        isQuickSpec: true,
+        isKeyFeature: true,
+      },
+      {
+        key: 'pressure_peak',
+        label: 'Pressure (peak)',
+        unit: 'bar',
+        dataType: 'number',
+        group: 'Hydraulic',
+        position: 1,
+        isQuickSpec: true,
+        isKeyFeature: true,
+      },
+      {
+        key: 'speed_max',
+        label: 'Speed (max)',
+        unit: 'rpm',
+        dataType: 'number',
+        group: 'Hydraulic',
+        position: 2,
+        isQuickSpec: true,
+      },
+      {
+        key: 'pump_type',
+        label: 'Pump type',
+        unit: null,
+        dataType: 'text',
+        group: 'Hydraulic',
+        position: 3,
+      },
+      {
+        key: 'volumetric_efficiency',
+        label: 'Volumetric efficiency',
+        unit: '%',
+        dataType: 'number',
+        group: 'Hydraulic',
+        position: 4,
+      },
+      {
+        key: 'mounting',
+        label: 'Mounting',
+        unit: null,
+        dataType: 'text',
+        group: 'Mechanical',
+        position: 0,
+        isQuickSpec: true,
+      },
+      {
+        key: 'rotation',
+        label: 'Rotation',
+        unit: null,
+        dataType: 'text',
+        group: 'Mechanical',
+        position: 1,
+      },
+      {
+        key: 'weight',
+        label: 'Weight',
+        unit: 'kg',
+        dataType: 'number',
+        group: 'Mechanical',
+        position: 2,
+      },
+      {
+        key: 'warranty_months',
+        label: 'Warranty',
+        unit: 'months',
+        dataType: 'number',
+        group: 'Commercial',
+        position: 0,
+      },
     ],
   },
   {
@@ -1226,14 +1251,75 @@ const TEMPLATES: TemplateDef[] = [
     name: 'Hydraulic valve',
     description: 'Spec template for solenoid, pressure and proportional hydraulic valves.',
     fields: [
-      { key: 'flow_rate_max',   label: 'Flow rate (max)',  unit: 'L/min', dataType: 'number', group: 'Performance', position: 0, isQuickSpec: true, isKeyFeature: true },
-      { key: 'pressure_max',    label: 'Pressure (max)',   unit: 'bar',   dataType: 'number', group: 'Performance', position: 1, isQuickSpec: true, isKeyFeature: true },
-      { key: 'valve_function',  label: 'Function',         unit: null,    dataType: 'text',   group: 'Performance', position: 2 },
-      { key: 'cetop_size',      label: 'CETOP size',       unit: null,    dataType: 'text',   group: 'Mechanical',  position: 0, isQuickSpec: true },
-      { key: 'weight',          label: 'Weight',           unit: 'kg',    dataType: 'number', group: 'Mechanical',  position: 1 },
-      { key: 'voltage',         label: 'Coil voltage',     unit: null,    dataType: 'text',   group: 'Electrical',  position: 0 },
-      { key: 'coil_power',      label: 'Coil power',       unit: 'W',     dataType: 'number', group: 'Electrical',  position: 1 },
-      { key: 'warranty_months', label: 'Warranty',         unit: 'months',dataType: 'number', group: 'Commercial',  position: 0 },
+      {
+        key: 'flow_rate_max',
+        label: 'Flow rate (max)',
+        unit: 'L/min',
+        dataType: 'number',
+        group: 'Performance',
+        position: 0,
+        isQuickSpec: true,
+        isKeyFeature: true,
+      },
+      {
+        key: 'pressure_max',
+        label: 'Pressure (max)',
+        unit: 'bar',
+        dataType: 'number',
+        group: 'Performance',
+        position: 1,
+        isQuickSpec: true,
+        isKeyFeature: true,
+      },
+      {
+        key: 'valve_function',
+        label: 'Function',
+        unit: null,
+        dataType: 'text',
+        group: 'Performance',
+        position: 2,
+      },
+      {
+        key: 'cetop_size',
+        label: 'CETOP size',
+        unit: null,
+        dataType: 'text',
+        group: 'Mechanical',
+        position: 0,
+        isQuickSpec: true,
+      },
+      {
+        key: 'weight',
+        label: 'Weight',
+        unit: 'kg',
+        dataType: 'number',
+        group: 'Mechanical',
+        position: 1,
+      },
+      {
+        key: 'voltage',
+        label: 'Coil voltage',
+        unit: null,
+        dataType: 'text',
+        group: 'Electrical',
+        position: 0,
+      },
+      {
+        key: 'coil_power',
+        label: 'Coil power',
+        unit: 'W',
+        dataType: 'number',
+        group: 'Electrical',
+        position: 1,
+      },
+      {
+        key: 'warranty_months',
+        label: 'Warranty',
+        unit: 'months',
+        dataType: 'number',
+        group: 'Commercial',
+        position: 0,
+      },
     ],
   },
   {
@@ -1241,14 +1327,75 @@ const TEMPLATES: TemplateDef[] = [
     name: 'Hydraulic cylinder',
     description: 'Spec template for tie-rod and welded hydraulic cylinders.',
     fields: [
-      { key: 'bore',            label: 'Bore',             unit: 'mm',     dataType: 'number', group: 'Dimensions',  position: 0, isQuickSpec: true, isKeyFeature: true },
-      { key: 'rod_diameter',    label: 'Rod diameter',     unit: 'mm',     dataType: 'number', group: 'Dimensions',  position: 1, isQuickSpec: true },
-      { key: 'stroke',          label: 'Stroke',           unit: 'mm',     dataType: 'number', group: 'Dimensions',  position: 2, isQuickSpec: true, isKeyFeature: true },
-      { key: 'pressure_max',    label: 'Pressure (max)',   unit: 'bar',    dataType: 'number', group: 'Performance', position: 0 },
-      { key: 'push_force_kn',   label: 'Push force',       unit: 'kN',     dataType: 'number', group: 'Performance', position: 1 },
-      { key: 'mount_style',     label: 'Mount style',      unit: null,     dataType: 'text',   group: 'Mechanical',  position: 0 },
-      { key: 'seal_type',       label: 'Seal material',    unit: null,     dataType: 'text',   group: 'Mechanical',  position: 1 },
-      { key: 'warranty_months', label: 'Warranty',         unit: 'months', dataType: 'number', group: 'Commercial',  position: 0 },
+      {
+        key: 'bore',
+        label: 'Bore',
+        unit: 'mm',
+        dataType: 'number',
+        group: 'Dimensions',
+        position: 0,
+        isQuickSpec: true,
+        isKeyFeature: true,
+      },
+      {
+        key: 'rod_diameter',
+        label: 'Rod diameter',
+        unit: 'mm',
+        dataType: 'number',
+        group: 'Dimensions',
+        position: 1,
+        isQuickSpec: true,
+      },
+      {
+        key: 'stroke',
+        label: 'Stroke',
+        unit: 'mm',
+        dataType: 'number',
+        group: 'Dimensions',
+        position: 2,
+        isQuickSpec: true,
+        isKeyFeature: true,
+      },
+      {
+        key: 'pressure_max',
+        label: 'Pressure (max)',
+        unit: 'bar',
+        dataType: 'number',
+        group: 'Performance',
+        position: 0,
+      },
+      {
+        key: 'push_force_kn',
+        label: 'Push force',
+        unit: 'kN',
+        dataType: 'number',
+        group: 'Performance',
+        position: 1,
+      },
+      {
+        key: 'mount_style',
+        label: 'Mount style',
+        unit: null,
+        dataType: 'text',
+        group: 'Mechanical',
+        position: 0,
+      },
+      {
+        key: 'seal_type',
+        label: 'Seal material',
+        unit: null,
+        dataType: 'text',
+        group: 'Mechanical',
+        position: 1,
+      },
+      {
+        key: 'warranty_months',
+        label: 'Warranty',
+        unit: 'months',
+        dataType: 'number',
+        group: 'Commercial',
+        position: 0,
+      },
     ],
   },
   {
@@ -1256,13 +1403,66 @@ const TEMPLATES: TemplateDef[] = [
     name: 'Hose / fitting',
     description: 'Spec template for high-pressure hoses and fittings.',
     fields: [
-      { key: 'bore_size',         label: 'Bore size',         unit: null,     dataType: 'text',   group: 'Dimensions',  position: 0, isQuickSpec: true, isKeyFeature: true },
-      { key: 'length_mm',         label: 'Length',            unit: 'mm',     dataType: 'number', group: 'Dimensions',  position: 1 },
-      { key: 'pressure_working',  label: 'Working pressure',  unit: 'bar',    dataType: 'number', group: 'Performance', position: 0, isQuickSpec: true, isKeyFeature: true },
-      { key: 'pressure_burst',    label: 'Burst pressure',    unit: 'bar',    dataType: 'number', group: 'Performance', position: 1 },
-      { key: 'temp_max',          label: 'Temperature (max)', unit: '°C',     dataType: 'number', group: 'Performance', position: 2 },
-      { key: 'reinforcement',     label: 'Reinforcement',     unit: null,     dataType: 'text',   group: 'Construction',position: 0 },
-      { key: 'fitting_type',      label: 'Fitting type',      unit: null,     dataType: 'text',   group: 'Construction',position: 1 },
+      {
+        key: 'bore_size',
+        label: 'Bore size',
+        unit: null,
+        dataType: 'text',
+        group: 'Dimensions',
+        position: 0,
+        isQuickSpec: true,
+        isKeyFeature: true,
+      },
+      {
+        key: 'length_mm',
+        label: 'Length',
+        unit: 'mm',
+        dataType: 'number',
+        group: 'Dimensions',
+        position: 1,
+      },
+      {
+        key: 'pressure_working',
+        label: 'Working pressure',
+        unit: 'bar',
+        dataType: 'number',
+        group: 'Performance',
+        position: 0,
+        isQuickSpec: true,
+        isKeyFeature: true,
+      },
+      {
+        key: 'pressure_burst',
+        label: 'Burst pressure',
+        unit: 'bar',
+        dataType: 'number',
+        group: 'Performance',
+        position: 1,
+      },
+      {
+        key: 'temp_max',
+        label: 'Temperature (max)',
+        unit: '°C',
+        dataType: 'number',
+        group: 'Performance',
+        position: 2,
+      },
+      {
+        key: 'reinforcement',
+        label: 'Reinforcement',
+        unit: null,
+        dataType: 'text',
+        group: 'Construction',
+        position: 0,
+      },
+      {
+        key: 'fitting_type',
+        label: 'Fitting type',
+        unit: null,
+        dataType: 'text',
+        group: 'Construction',
+        position: 1,
+      },
     ],
   },
   {
@@ -1270,12 +1470,58 @@ const TEMPLATES: TemplateDef[] = [
     name: 'Hydraulic accumulator',
     description: 'Spec template for bladder, piston and diaphragm accumulators.',
     fields: [
-      { key: 'capacity_l',      label: 'Capacity',          unit: 'L',     dataType: 'number', group: 'Performance', position: 0, isQuickSpec: true, isKeyFeature: true },
-      { key: 'pressure_max',    label: 'Pressure (max)',    unit: 'bar',   dataType: 'number', group: 'Performance', position: 1, isQuickSpec: true, isKeyFeature: true },
-      { key: 'pre_charge_bar',  label: 'Pre-charge',        unit: 'bar',   dataType: 'number', group: 'Performance', position: 2 },
-      { key: 'bladder_material',label: 'Bladder material',  unit: null,    dataType: 'text',   group: 'Mechanical',  position: 0 },
-      { key: 'weight',          label: 'Weight',            unit: 'kg',    dataType: 'number', group: 'Mechanical',  position: 1 },
-      { key: 'warranty_months', label: 'Warranty',          unit: 'months',dataType: 'number', group: 'Commercial',  position: 0 },
+      {
+        key: 'capacity_l',
+        label: 'Capacity',
+        unit: 'L',
+        dataType: 'number',
+        group: 'Performance',
+        position: 0,
+        isQuickSpec: true,
+        isKeyFeature: true,
+      },
+      {
+        key: 'pressure_max',
+        label: 'Pressure (max)',
+        unit: 'bar',
+        dataType: 'number',
+        group: 'Performance',
+        position: 1,
+        isQuickSpec: true,
+        isKeyFeature: true,
+      },
+      {
+        key: 'pre_charge_bar',
+        label: 'Pre-charge',
+        unit: 'bar',
+        dataType: 'number',
+        group: 'Performance',
+        position: 2,
+      },
+      {
+        key: 'bladder_material',
+        label: 'Bladder material',
+        unit: null,
+        dataType: 'text',
+        group: 'Mechanical',
+        position: 0,
+      },
+      {
+        key: 'weight',
+        label: 'Weight',
+        unit: 'kg',
+        dataType: 'number',
+        group: 'Mechanical',
+        position: 1,
+      },
+      {
+        key: 'warranty_months',
+        label: 'Warranty',
+        unit: 'months',
+        dataType: 'number',
+        group: 'Commercial',
+        position: 0,
+      },
     ],
   },
   {
@@ -1283,12 +1529,57 @@ const TEMPLATES: TemplateDef[] = [
     name: 'Hydraulic filter',
     description: 'Spec template for return-line, suction and pressure filters.',
     fields: [
-      { key: 'filtration_micron',  label: 'Filtration rating',  unit: 'µm',    dataType: 'number', group: 'Performance', position: 0, isQuickSpec: true, isKeyFeature: true },
-      { key: 'flow_rate_max',      label: 'Flow rate (max)',    unit: 'L/min', dataType: 'number', group: 'Performance', position: 1, isQuickSpec: true },
-      { key: 'pressure_drop_bar',  label: 'Pressure drop',      unit: 'bar',   dataType: 'number', group: 'Performance', position: 2 },
-      { key: 'mount_style',        label: 'Mount style',        unit: null,    dataType: 'text',   group: 'Mechanical',  position: 0 },
-      { key: 'weight',             label: 'Weight',             unit: 'kg',    dataType: 'number', group: 'Mechanical',  position: 1 },
-      { key: 'warranty_months',    label: 'Warranty',           unit: 'months',dataType: 'number', group: 'Commercial',  position: 0 },
+      {
+        key: 'filtration_micron',
+        label: 'Filtration rating',
+        unit: 'µm',
+        dataType: 'number',
+        group: 'Performance',
+        position: 0,
+        isQuickSpec: true,
+        isKeyFeature: true,
+      },
+      {
+        key: 'flow_rate_max',
+        label: 'Flow rate (max)',
+        unit: 'L/min',
+        dataType: 'number',
+        group: 'Performance',
+        position: 1,
+        isQuickSpec: true,
+      },
+      {
+        key: 'pressure_drop_bar',
+        label: 'Pressure drop',
+        unit: 'bar',
+        dataType: 'number',
+        group: 'Performance',
+        position: 2,
+      },
+      {
+        key: 'mount_style',
+        label: 'Mount style',
+        unit: null,
+        dataType: 'text',
+        group: 'Mechanical',
+        position: 0,
+      },
+      {
+        key: 'weight',
+        label: 'Weight',
+        unit: 'kg',
+        dataType: 'number',
+        group: 'Mechanical',
+        position: 1,
+      },
+      {
+        key: 'warranty_months',
+        label: 'Warranty',
+        unit: 'months',
+        dataType: 'number',
+        group: 'Commercial',
+        position: 0,
+      },
     ],
   },
 ]
@@ -1297,38 +1588,290 @@ const TEMPLATES: TemplateDef[] = [
  *  template-less (legitimately, like the one-off ball valve and power pack). */
 const PRODUCT_SPECS: Record<string, { templateSlug: string; values: Record<string, string> }> = {
   // Pumps
-  'IH-AP71-D-R-V':  { templateSlug: 'pump-spec', values: { displacement: '71',  pressure_peak: '350', speed_max: '2600', pump_type: 'Axial piston (variable)', volumetric_efficiency: '94', mounting: 'SAE-B 2-bolt',  rotation: 'CW (right)',  weight: '26.5', warranty_months: '24' } },
-  'IH-AP45-D-R-V':  { templateSlug: 'pump-spec', values: { displacement: '45',  pressure_peak: '350', speed_max: '2800', pump_type: 'Axial piston (variable)', volumetric_efficiency: '93', mounting: 'SAE-B 2-bolt',  rotation: 'CW (right)',  weight: '20.0', warranty_months: '24' } },
-  'IH-AP100-D-R-V': { templateSlug: 'pump-spec', values: { displacement: '100', pressure_peak: '350', speed_max: '2400', pump_type: 'Axial piston (variable)', volumetric_efficiency: '95', mounting: 'SAE-C 2-bolt',  rotation: 'CW (right)',  weight: '38.0', warranty_months: '24' } },
-  'IH-PGH4-21-020': { templateSlug: 'pump-spec', values: { displacement: '20',  pressure_peak: '320', speed_max: '3200', pump_type: 'External gear',           volumetric_efficiency: '92', mounting: 'SAE-A 2-bolt',  rotation: 'CW',           weight: '8.5',  warranty_months: '12' } },
-  'IH-T7B-B09-2R00-A100': { templateSlug: 'pump-spec', values: { displacement: '9',  pressure_peak: '210', speed_max: '2400', pump_type: 'Vane (fixed)', volumetric_efficiency: '90', mounting: 'SAE-A 2-bolt', rotation: 'CW', weight: '6.2',  warranty_months: '12' } },
-  'IH-T6C-012-1R00-B1':   { templateSlug: 'pump-spec', values: { displacement: '12', pressure_peak: '210', speed_max: '2400', pump_type: 'Vane (fixed, through-drive)', volumetric_efficiency: '90', mounting: 'SAE-B 2-bolt', rotation: 'CW', weight: '7.4', warranty_months: '12' } },
+  'IH-AP71-D-R-V': {
+    templateSlug: 'pump-spec',
+    values: {
+      displacement: '71',
+      pressure_peak: '350',
+      speed_max: '2600',
+      pump_type: 'Axial piston (variable)',
+      volumetric_efficiency: '94',
+      mounting: 'SAE-B 2-bolt',
+      rotation: 'CW (right)',
+      weight: '26.5',
+      warranty_months: '24',
+    },
+  },
+  'IH-AP45-D-R-V': {
+    templateSlug: 'pump-spec',
+    values: {
+      displacement: '45',
+      pressure_peak: '350',
+      speed_max: '2800',
+      pump_type: 'Axial piston (variable)',
+      volumetric_efficiency: '93',
+      mounting: 'SAE-B 2-bolt',
+      rotation: 'CW (right)',
+      weight: '20.0',
+      warranty_months: '24',
+    },
+  },
+  'IH-AP100-D-R-V': {
+    templateSlug: 'pump-spec',
+    values: {
+      displacement: '100',
+      pressure_peak: '350',
+      speed_max: '2400',
+      pump_type: 'Axial piston (variable)',
+      volumetric_efficiency: '95',
+      mounting: 'SAE-C 2-bolt',
+      rotation: 'CW (right)',
+      weight: '38.0',
+      warranty_months: '24',
+    },
+  },
+  'IH-PGH4-21-020': {
+    templateSlug: 'pump-spec',
+    values: {
+      displacement: '20',
+      pressure_peak: '320',
+      speed_max: '3200',
+      pump_type: 'External gear',
+      volumetric_efficiency: '92',
+      mounting: 'SAE-A 2-bolt',
+      rotation: 'CW',
+      weight: '8.5',
+      warranty_months: '12',
+    },
+  },
+  'IH-T7B-B09-2R00-A100': {
+    templateSlug: 'pump-spec',
+    values: {
+      displacement: '9',
+      pressure_peak: '210',
+      speed_max: '2400',
+      pump_type: 'Vane (fixed)',
+      volumetric_efficiency: '90',
+      mounting: 'SAE-A 2-bolt',
+      rotation: 'CW',
+      weight: '6.2',
+      warranty_months: '12',
+    },
+  },
+  'IH-T6C-012-1R00-B1': {
+    templateSlug: 'pump-spec',
+    values: {
+      displacement: '12',
+      pressure_peak: '210',
+      speed_max: '2400',
+      pump_type: 'Vane (fixed, through-drive)',
+      volumetric_efficiency: '90',
+      mounting: 'SAE-B 2-bolt',
+      rotation: 'CW',
+      weight: '7.4',
+      warranty_months: '12',
+    },
+  },
 
   // Valves
-  'IH-DSG-01-3C4-D24': { templateSlug: 'valve-spec', values: { flow_rate_max: '40', pressure_max: '315', valve_function: '4/3 spring-centred directional',     cetop_size: 'CETOP 3', weight: '1.6', voltage: '24 VDC', coil_power: '30', warranty_months: '12' } },
-  'IH-DSG-01-2B2-D24': { templateSlug: 'valve-spec', values: { flow_rate_max: '40', pressure_max: '315', valve_function: '4/2 spring-offset directional',      cetop_size: 'CETOP 3', weight: '1.6', voltage: '24 VDC', coil_power: '30', warranty_months: '12' } },
-  'IH-MBR-01-30':      { templateSlug: 'valve-spec', values: { flow_rate_max: '30', pressure_max: '300', valve_function: 'Pressure reducing (direct-acting)',  cetop_size: 'CETOP 3', weight: '1.4',                                       warranty_months: '12' } },
-  'IH-BG-03-315':      { templateSlug: 'valve-spec', values: { flow_rate_max: '160',pressure_max: '315', valve_function: 'Pressure relief (pilot-operated)',   cetop_size: 'CETOP 5', weight: '3.2',                                       warranty_months: '12' } },
-  'IH-FLCB-LAN-3C4-D24': { templateSlug: 'valve-spec', values: { flow_rate_max: '100', pressure_max: '315', valve_function: 'Proportional directional (closed-loop)', cetop_size: 'NG10', weight: '4.8', voltage: '24 VDC', coil_power: '40', warranty_months: '24' } },
+  'IH-DSG-01-3C4-D24': {
+    templateSlug: 'valve-spec',
+    values: {
+      flow_rate_max: '40',
+      pressure_max: '315',
+      valve_function: '4/3 spring-centred directional',
+      cetop_size: 'CETOP 3',
+      weight: '1.6',
+      voltage: '24 VDC',
+      coil_power: '30',
+      warranty_months: '12',
+    },
+  },
+  'IH-DSG-01-2B2-D24': {
+    templateSlug: 'valve-spec',
+    values: {
+      flow_rate_max: '40',
+      pressure_max: '315',
+      valve_function: '4/2 spring-offset directional',
+      cetop_size: 'CETOP 3',
+      weight: '1.6',
+      voltage: '24 VDC',
+      coil_power: '30',
+      warranty_months: '12',
+    },
+  },
+  'IH-MBR-01-30': {
+    templateSlug: 'valve-spec',
+    values: {
+      flow_rate_max: '30',
+      pressure_max: '300',
+      valve_function: 'Pressure reducing (direct-acting)',
+      cetop_size: 'CETOP 3',
+      weight: '1.4',
+      warranty_months: '12',
+    },
+  },
+  'IH-BG-03-315': {
+    templateSlug: 'valve-spec',
+    values: {
+      flow_rate_max: '160',
+      pressure_max: '315',
+      valve_function: 'Pressure relief (pilot-operated)',
+      cetop_size: 'CETOP 5',
+      weight: '3.2',
+      warranty_months: '12',
+    },
+  },
+  'IH-FLCB-LAN-3C4-D24': {
+    templateSlug: 'valve-spec',
+    values: {
+      flow_rate_max: '100',
+      pressure_max: '315',
+      valve_function: 'Proportional directional (closed-loop)',
+      cetop_size: 'NG10',
+      weight: '4.8',
+      voltage: '24 VDC',
+      coil_power: '40',
+      warranty_months: '24',
+    },
+  },
 
   // Cylinders
-  'IH-CYL-80-50-300':  { templateSlug: 'cylinder-spec', values: { bore: '80',  rod_diameter: '50', stroke: '300', pressure_max: '250', push_force_kn: '125', mount_style: 'Foot bracket (FB)',  seal_type: 'NBR',  warranty_months: '12' } },
-  'IH-CYL-100-70-500': { templateSlug: 'cylinder-spec', values: { bore: '100', rod_diameter: '70', stroke: '500', pressure_max: '250', push_force_kn: '196', mount_style: 'Foot bracket (FB)',  seal_type: 'NBR',  warranty_months: '12' } },
-  'IH-CYL-63-45-200':  { templateSlug: 'cylinder-spec', values: { bore: '63',  rod_diameter: '45', stroke: '200', pressure_max: '250', push_force_kn: '78',  mount_style: 'Clevis bracket (CB)', seal_type: 'NBR', warranty_months: '12' } },
-  'IH-WC-120-80-600':  { templateSlug: 'cylinder-spec', values: { bore: '120', rod_diameter: '80', stroke: '600', pressure_max: '350', push_force_kn: '395', mount_style: 'MF5 mid-flange',     seal_type: 'PTFE-NBR', warranty_months: '12' } },
+  'IH-CYL-80-50-300': {
+    templateSlug: 'cylinder-spec',
+    values: {
+      bore: '80',
+      rod_diameter: '50',
+      stroke: '300',
+      pressure_max: '250',
+      push_force_kn: '125',
+      mount_style: 'Foot bracket (FB)',
+      seal_type: 'NBR',
+      warranty_months: '12',
+    },
+  },
+  'IH-CYL-100-70-500': {
+    templateSlug: 'cylinder-spec',
+    values: {
+      bore: '100',
+      rod_diameter: '70',
+      stroke: '500',
+      pressure_max: '250',
+      push_force_kn: '196',
+      mount_style: 'Foot bracket (FB)',
+      seal_type: 'NBR',
+      warranty_months: '12',
+    },
+  },
+  'IH-CYL-63-45-200': {
+    templateSlug: 'cylinder-spec',
+    values: {
+      bore: '63',
+      rod_diameter: '45',
+      stroke: '200',
+      pressure_max: '250',
+      push_force_kn: '78',
+      mount_style: 'Clevis bracket (CB)',
+      seal_type: 'NBR',
+      warranty_months: '12',
+    },
+  },
+  'IH-WC-120-80-600': {
+    templateSlug: 'cylinder-spec',
+    values: {
+      bore: '120',
+      rod_diameter: '80',
+      stroke: '600',
+      pressure_max: '350',
+      push_force_kn: '395',
+      mount_style: 'MF5 mid-flange',
+      seal_type: 'PTFE-NBR',
+      warranty_months: '12',
+    },
+  },
 
   // Hoses & fittings
-  'IH-JIC-90-08': { templateSlug: 'hose-fitting-spec', values: { bore_size: '1/2"', pressure_working: '420', pressure_burst: '1680', temp_max: '120', reinforcement: 'Stainless steel (316)', fitting_type: '90° JIC 37° elbow, BSP male' } },
-  'IH-421-08':    { templateSlug: 'hose-fitting-spec', values: { bore_size: '1/2" (DN13)', pressure_working: '420', pressure_burst: '1680', temp_max: '100', reinforcement: '2-wire braid (SAE 100R2AT)', fitting_type: 'Hose, sold per metre' } },
-  'IH-451-12':    { templateSlug: 'hose-fitting-spec', values: { bore_size: '3/4" (DN19)', pressure_working: '360', pressure_burst: '1440', temp_max: '100', reinforcement: '4-spiral compact (SAE 100R13)', fitting_type: 'Hose, sold per metre' } },
+  'IH-JIC-90-08': {
+    templateSlug: 'hose-fitting-spec',
+    values: {
+      bore_size: '1/2"',
+      pressure_working: '420',
+      pressure_burst: '1680',
+      temp_max: '120',
+      reinforcement: 'Stainless steel (316)',
+      fitting_type: '90° JIC 37° elbow, BSP male',
+    },
+  },
+  'IH-421-08': {
+    templateSlug: 'hose-fitting-spec',
+    values: {
+      bore_size: '1/2" (DN13)',
+      pressure_working: '420',
+      pressure_burst: '1680',
+      temp_max: '100',
+      reinforcement: '2-wire braid (SAE 100R2AT)',
+      fitting_type: 'Hose, sold per metre',
+    },
+  },
+  'IH-451-12': {
+    templateSlug: 'hose-fitting-spec',
+    values: {
+      bore_size: '3/4" (DN19)',
+      pressure_working: '360',
+      pressure_burst: '1440',
+      temp_max: '100',
+      reinforcement: '4-spiral compact (SAE 100R13)',
+      fitting_type: 'Hose, sold per metre',
+    },
+  },
 
   // Accumulators
-  'IH-SB330-10A1': { templateSlug: 'accumulator-spec', values: { capacity_l: '10', pressure_max: '330', pre_charge_bar: '100', bladder_material: 'NBR', weight: '14.5', warranty_months: '24' } },
-  'IH-SB330-4A1':  { templateSlug: 'accumulator-spec', values: { capacity_l: '4',  pressure_max: '330', pre_charge_bar: '100', bladder_material: 'NBR', weight: '7.8',  warranty_months: '24' } },
+  'IH-SB330-10A1': {
+    templateSlug: 'accumulator-spec',
+    values: {
+      capacity_l: '10',
+      pressure_max: '330',
+      pre_charge_bar: '100',
+      bladder_material: 'NBR',
+      weight: '14.5',
+      warranty_months: '24',
+    },
+  },
+  'IH-SB330-4A1': {
+    templateSlug: 'accumulator-spec',
+    values: {
+      capacity_l: '4',
+      pressure_max: '330',
+      pre_charge_bar: '100',
+      bladder_material: 'NBR',
+      weight: '7.8',
+      warranty_months: '24',
+    },
+  },
 
   // Filters
-  'IH-0330R010BN4HC':  { templateSlug: 'filter-spec', values: { filtration_micron: '10', flow_rate_max: '330', pressure_drop_bar: '0.4', mount_style: 'Inline / return-line', weight: '3.4', warranty_months: '12' } },
-  'IH-0160DN010BN4HC': { templateSlug: 'filter-spec', values: { filtration_micron: '10', flow_rate_max: '160', pressure_drop_bar: '0.2', mount_style: 'Tank-top suction',     weight: '2.8', warranty_months: '12' } },
+  'IH-0330R010BN4HC': {
+    templateSlug: 'filter-spec',
+    values: {
+      filtration_micron: '10',
+      flow_rate_max: '330',
+      pressure_drop_bar: '0.4',
+      mount_style: 'Inline / return-line',
+      weight: '3.4',
+      warranty_months: '12',
+    },
+  },
+  'IH-0160DN010BN4HC': {
+    templateSlug: 'filter-spec',
+    values: {
+      filtration_micron: '10',
+      flow_rate_max: '160',
+      pressure_drop_bar: '0.2',
+      mount_style: 'Tank-top suction',
+      weight: '2.8',
+      warranty_months: '12',
+    },
+  },
 
   // IH-KHB-G12-14-2X-S (ball valve) and IH-PP-11KW-30-DS (power pack) intentionally omitted —
   // both are one-offs in the catalogue and don't fit any of the templates above. They will
