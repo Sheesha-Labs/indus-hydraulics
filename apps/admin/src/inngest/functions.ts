@@ -1,5 +1,6 @@
 import { inngest } from './client'
 import { scraperJobRun } from './scraperJob'
+import { productBlueprintGenerate } from './productBlueprint'
 import { db } from '@indus/db'
 import {
   assertTransition,
@@ -525,4 +526,5 @@ export const allFunctions = [
   quoteAutoExpiry,
   retryFailedEmails,
   scraperJobRun,
+  productBlueprintGenerate,
 ]

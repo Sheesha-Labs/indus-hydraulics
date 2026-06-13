@@ -5,6 +5,10 @@ import { signPreviewToken } from '@indus/domain'
 import ProductEditorClient from './ProductEditorClient'
 import ContentDepthPanel from '../../../../../components/ContentDepthPanel'
 import { scoreFromProduct } from '../../../../../lib/product-content-score'
+import {
+  BLUEPRINT_REFERENCE_URL,
+  BLUEPRINT_SUGGESTION_FIELD,
+} from '../../../../../lib/product-blueprint/types'
 
 export const metadata: Metadata = { title: 'Edit product — Indus Admin' }
 
@@ -39,7 +43,7 @@ export default async function EditProductPage({ params }: Props) {
 
   if (!product) notFound()
 
-  const [brands, categories, templates, recentMedia, ogMedia] = await Promise.all([
+  const [brands, categories, templates, recentMedia, ogMedia, blueprintSuggestions] = await Promise.all([
     db.brand.findMany({ orderBy: { name: 'asc' } }),
     db.category.findMany({ orderBy: { name: 'asc' } }),
     db.specTemplate.findMany({
@@ -58,6 +62,22 @@ export default async function EditProductPage({ params }: Props) {
           select: { storagePath: true },
         })
       : Promise.resolve(null),
+    db.aiSuggestion.findMany({
+      where: {
+        entityType: 'product',
+        entityId: product.id,
+        field: BLUEPRINT_SUGGESTION_FIELD,
+      },
+      orderBy: { createdAt: 'desc' },
+      take: 10,
+      select: {
+        id: true,
+        status: true,
+        output: true,
+        inputContext: true,
+        createdAt: true,
+      },
+    }),
   ])
 
   const dims = (product.dimensionsMm ?? null) as { l?: number; w?: number; h?: number } | null
@@ -191,6 +211,17 @@ export default async function EditProductPage({ params }: Props) {
           id: i.id,
           url: i.media.storagePath,
           alt: i.alt ?? i.media.alt,
+        }))}
+        blueprintGenerationAvailable={Boolean(process.env.OPENAI_API_KEY)}
+        blueprintReferenceUrl={
+          process.env.OPENAI_BLUEPRINT_REFERENCE_URL ?? BLUEPRINT_REFERENCE_URL
+        }
+        blueprintSuggestions={blueprintSuggestions.map((suggestion) => ({
+          id: suggestion.id,
+          status: suggestion.status,
+          output: suggestion.output,
+          inputContext: suggestion.inputContext,
+          createdAtIso: suggestion.createdAt.toISOString(),
         }))}
         documents={product.documents.map((d) => ({
           id: d.id,

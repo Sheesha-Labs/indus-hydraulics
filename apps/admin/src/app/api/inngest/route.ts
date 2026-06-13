@@ -2,6 +2,8 @@ import { serve } from 'inngest/next'
 import { inngest } from '../../../inngest/client'
 import { allFunctions } from '../../../inngest/functions'
 
+export const maxDuration = 300
+
 /**
  * Inngest webhook handler. Registers all server functions so Inngest
  * can trigger them on cron schedules or via `inngest.send(...)` events.

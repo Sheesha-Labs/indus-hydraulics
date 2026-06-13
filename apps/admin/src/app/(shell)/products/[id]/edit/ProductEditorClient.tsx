@@ -31,6 +31,9 @@ import {
   setProductSpecTemplate,
   saveProductSpecValues,
 } from '../../../spec-templates/actions'
+import BlueprintImagePanel, {
+  type BlueprintSuggestionRow,
+} from './BlueprintImagePanel'
 
 type Product = {
   id: string
@@ -153,6 +156,9 @@ interface Props {
   availableTemplates: TemplateOption[]
   crossRefs: CrossRef[]
   images: Image[]
+  blueprintGenerationAvailable: boolean
+  blueprintReferenceUrl: string
+  blueprintSuggestions: BlueprintSuggestionRow[]
   documents: Document[]
   faqs: Faq[]
   brands: Option[]
@@ -183,6 +189,9 @@ export default function ProductEditorClient({
   availableTemplates,
   crossRefs,
   images,
+  blueprintGenerationAvailable,
+  blueprintReferenceUrl,
+  blueprintSuggestions,
   documents,
   faqs,
   brands,
@@ -278,7 +287,16 @@ export default function ProductEditorClient({
           onSaved={bumpSaved}
         />
       )}
-      {tab === 'images' && <ImagesTab productId={product.id} images={images} onSaved={bumpSaved} />}
+      {tab === 'images' && (
+        <ImagesTab
+          productId={product.id}
+          images={images}
+          blueprintGenerationAvailable={blueprintGenerationAvailable}
+          blueprintReferenceUrl={blueprintReferenceUrl}
+          blueprintSuggestions={blueprintSuggestions}
+          onSaved={bumpSaved}
+        />
+      )}
       {tab === 'documents' && <DocumentsTab productId={product.id} documents={documents} onSaved={bumpSaved} />}
       {tab === 'crossref' && <CrossRefsTab productId={product.id} crossRefs={crossRefs} onSaved={bumpSaved} />}
       {tab === 'faq' && <FaqsTab productId={product.id} faqs={faqs} onSaved={bumpSaved} />}
@@ -1254,10 +1272,16 @@ function AddSpecForm({
 function ImagesTab({
   productId,
   images,
+  blueprintGenerationAvailable,
+  blueprintReferenceUrl,
+  blueprintSuggestions,
   onSaved,
 }: {
   productId: string
   images: Image[]
+  blueprintGenerationAvailable: boolean
+  blueprintReferenceUrl: string
+  blueprintSuggestions: BlueprintSuggestionRow[]
   onSaved: () => void
 }) {
   const [pending, startTransition] = useTransition()
@@ -1294,6 +1318,13 @@ function ImagesTab({
 
   return (
     <div className="flex flex-col gap-6 max-w-4xl">
+      <BlueprintImagePanel
+        productId={productId}
+        generationAvailable={blueprintGenerationAvailable}
+        referenceImageUrl={blueprintReferenceUrl}
+        suggestions={blueprintSuggestions}
+      />
+
       <p className="text-[12px] text-[var(--color-muted)]">
         Upload images directly to Supabase Storage. Hero image (first in the list) appears full-size; the rest become thumbnails. JPEG / PNG / WebP / SVG, up to 10MB each.
       </p>
