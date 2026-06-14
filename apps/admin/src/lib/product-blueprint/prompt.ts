@@ -1,3 +1,8 @@
+import {
+  BLUEPRINT_IMAGE_HEIGHT,
+  BLUEPRINT_IMAGE_WIDTH,
+} from './types'
+
 export type BlueprintProductInput = {
   id: string
   sku: string
@@ -49,15 +54,16 @@ export function buildProductBlueprintPrompt(
 
   const revisionDate = `${date.getUTCFullYear()}-${String(date.getUTCMonth() + 1).padStart(2, '0')}`
 
-  const prompt = `Create a square premium technical blueprint-style product illustration for INDUS Hydraulics.
+  const prompt = `Create a premium landscape technical blueprint-style product illustration for INDUS Hydraulics, composed specifically for a ${BLUEPRINT_IMAGE_WIDTH} x ${BLUEPRINT_IMAGE_HEIGHT} px product-image canvas with a 4:3 aspect ratio.
 
-Use the supplied reference image as the strict visual system for composition, drafting-paper treatment, typography hierarchy, navy accent color, technical callouts, specification icons, border marks, legend, XYZ axis, footer, and bottom-right title block. Create a new illustration of the product below; do not copy the reference product.
+Use the supplied reference image as the strict visual system for drafting-paper treatment, typography hierarchy, navy accent color, technical callouts, specification icons, border marks, legend, XYZ axis, footer, and bottom-right title block. Adapt that visual system to the wider 4:3 landscape canvas. Create a new illustration of the product below; do not copy the reference product.
 
 VERIFIED PRODUCT FACTS:
 ${verifiedFacts}
 ${optionalDirection}
 ART DIRECTION:
-- Square 1:1 technical publication plate, designed for a premium industrial product catalogue.
+- Landscape 4:3 technical publication plate, designed for the product-page image container at exactly ${BLUEPRINT_IMAGE_WIDTH} x ${BLUEPRINT_IMAGE_HEIGHT} px.
+- Use the additional horizontal space intentionally: keep the large product schematic dominant while distributing callouts, specification icons, legend, and title block without crowding.
 - Off-white drafting-paper background with a faint square grid, fine navy border, registration marks, and subtle paper texture.
 - One large isometric engineering schematic dominates the page. Use clean technical linework, graphite cross-hatching, restrained realistic shading, and dark navy blue highlights.
 - Show the product in the most informative three-quarter or isometric orientation. Add a partial cutaway, exploded section, or transparent section only when it genuinely explains the product construction.
@@ -76,7 +82,8 @@ ART DIRECTION:
 - No people, workshop, environmental scene, photorealistic background, decorative props, watermarks, or unrelated branding.
 
 OUTPUT REQUIREMENTS:
-- Produce one polished 1024 x 1024 opaque PNG.
+- Produce one polished ${BLUEPRINT_IMAGE_WIDTH} x ${BLUEPRINT_IMAGE_HEIGHT} opaque PNG in a 4:3 landscape aspect ratio.
+- The final image must use the full ${BLUEPRINT_IMAGE_WIDTH} x ${BLUEPRINT_IMAGE_HEIGHT} canvas. Do not return a square image, portrait image, crop, padded square, or letterboxed composition.
 - Match the reference image's dense but orderly information layout and premium technical-illustration finish.
 - Ensure the main product remains immediately recognizable at ecommerce thumbnail size.
 - Treat this as a finished catalogue plate, not a loose concept sketch.`

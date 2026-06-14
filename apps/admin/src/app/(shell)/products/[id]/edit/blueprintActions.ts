@@ -14,6 +14,8 @@ import {
   deleteBlueprintObject,
 } from '../../../../../lib/product-blueprint/generate'
 import {
+  BLUEPRINT_IMAGE_HEIGHT,
+  BLUEPRINT_IMAGE_WIDTH,
   BLUEPRINT_ORCHESTRATOR_MODEL,
   BLUEPRINT_REFERENCE_URL,
   BLUEPRINT_SUGGESTION_FIELD,
@@ -286,8 +288,8 @@ export async function acceptProductBlueprint(suggestionId: string): Promise<Resu
             originalFilename: promoted.filename,
             storagePath: promoted.storagePath,
             bytes: context.bytes!,
-            width: context.width ?? 1024,
-            height: context.height ?? 1024,
+            width: context.width ?? BLUEPRINT_IMAGE_WIDTH,
+            height: context.height ?? BLUEPRINT_IMAGE_HEIGHT,
             alt,
             uploadedById: session.user.id,
           },

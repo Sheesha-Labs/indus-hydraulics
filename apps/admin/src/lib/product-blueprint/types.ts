@@ -1,6 +1,9 @@
 export const BLUEPRINT_SUGGESTION_FIELD = 'productBlueprint'
 export const BLUEPRINT_ORCHESTRATOR_MODEL = 'gpt-5.5'
 export const BLUEPRINT_IMAGE_MODEL = 'gpt-image-2'
+export const BLUEPRINT_IMAGE_WIDTH = 1600
+export const BLUEPRINT_IMAGE_HEIGHT = 1200
+export const BLUEPRINT_IMAGE_SIZE = `${BLUEPRINT_IMAGE_WIDTH}x${BLUEPRINT_IMAGE_HEIGHT}`
 export const BLUEPRINT_REFERENCE_URL =
   'https://hesezbozronntejnsopr.supabase.co/storage/v1/object/public/product-images/generation-references/indus-technical-blueprint-v1.png'
 

@@ -2,6 +2,7 @@ import 'server-only'
 import OpenAI from 'openai'
 import { supabaseAdmin, STORAGE_BUCKETS } from '../supabase'
 import {
+  BLUEPRINT_IMAGE_SIZE,
   BLUEPRINT_IMAGE_MODEL,
   BLUEPRINT_ORCHESTRATOR_MODEL,
 } from './types'
@@ -62,7 +63,7 @@ export async function generateProductBlueprint(input: {
         type: 'image_generation',
         model: imageModel,
         action: isRefinement ? 'edit' : 'generate',
-        size: '1024x1024',
+        size: BLUEPRINT_IMAGE_SIZE,
         quality: 'high',
         output_format: 'png',
         background: 'opaque',

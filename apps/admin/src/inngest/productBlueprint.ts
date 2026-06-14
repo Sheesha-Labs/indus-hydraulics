@@ -7,6 +7,8 @@ import {
   uploadBlueprintDraft,
 } from '../lib/product-blueprint/generate'
 import {
+  BLUEPRINT_IMAGE_HEIGHT,
+  BLUEPRINT_IMAGE_WIDTH,
   BLUEPRINT_SUGGESTION_FIELD,
   parseBlueprintContext,
   type BlueprintGenerationContext,
@@ -103,8 +105,8 @@ export const productBlueprintGenerate = inngest.createFunction(
         objectPath: generated.objectPath,
         bytes: generated.bytes,
         mimeType: 'image/png',
-        width: 1024,
-        height: 1024,
+        width: BLUEPRINT_IMAGE_WIDTH,
+        height: BLUEPRINT_IMAGE_HEIGHT,
       }
       await step.run(`mark-ready-v${context.attempts}`, () =>
         db.aiSuggestion.update({

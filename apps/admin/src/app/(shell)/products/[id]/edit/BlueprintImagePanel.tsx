@@ -112,7 +112,7 @@ export default function BlueprintImagePanel({
         <img
           src={referenceImageUrl}
           alt="Approved INDUS technical blueprint style reference"
-          className="aspect-square w-[150px] border border-[var(--color-border)] object-cover"
+          className="aspect-[4/3] w-[150px] border border-[var(--color-border)] object-cover"
         />
       </div>
 
@@ -214,7 +214,7 @@ export default function BlueprintImagePanel({
               <img
                 src={context.storagePath}
                 alt={`${context.productSnapshot.title} generated blueprint draft`}
-                className="aspect-square w-full border border-[var(--color-border)] bg-white object-contain"
+                className="aspect-[4/3] w-full border border-[var(--color-border)] bg-white object-contain"
               />
               <p className="mt-2 font-mono text-[10px] text-[var(--color-muted)]">
                 DRAFT · ATTEMPT {context.attempts} · NOT YET ON PRODUCT PAGE

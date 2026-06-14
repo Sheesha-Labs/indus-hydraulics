@@ -29,6 +29,9 @@ describe('buildProductBlueprintPrompt', () => {
     expect(result.prompt).toContain('PERFORMANCE / WORKING PRESSURE — Very high pressure')
     expect(result.prompt).toContain('Show the four spiral reinforcement layers in a cutaway.')
     expect(result.prompt).toContain('DATE — 2026-06')
+    expect(result.prompt).toContain('1600 x 1200')
+    expect(result.prompt).toContain('4:3 landscape aspect ratio')
+    expect(result.prompt).toContain('Do not return a square image')
     expect(result.prompt).toContain('never invent materials, ratings, standards')
   })
 

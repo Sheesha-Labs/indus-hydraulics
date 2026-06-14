@@ -2,7 +2,7 @@
 
 ## Purpose
 
-The product editor can generate square technical blueprint illustrations using the approved INDUS visual reference. Generated images remain drafts until a staff member accepts them.
+The product editor generates 1600×1200 technical blueprint illustrations using the approved INDUS visual reference. The 4:3 landscape output matches the primary product-image container on every product page. Generated images remain drafts until a staff member accepts them.
 
 ## Workflow
 
@@ -28,6 +28,13 @@ The prompt is assembled from:
 - The approved INDUS blueprint reference
 
 The prompt explicitly forbids invented numeric values, materials, standards, certifications, or performance claims.
+
+Every generation request also explicitly requires:
+
+- A 1600×1200 px opaque PNG
+- A native 4:3 landscape composition
+- No square output, padded square, letterboxing, or portrait crop
+- Layout adaptation from the square style reference into the wider product-page canvas
 
 ## Storage Layout
 
