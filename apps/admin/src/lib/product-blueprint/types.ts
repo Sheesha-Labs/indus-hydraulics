@@ -1,4 +1,5 @@
 export const BLUEPRINT_SUGGESTION_FIELD = 'productBlueprint'
+export const BLUEPRINT_PROMPT_MODEL = 'gpt-5.5'
 export const BLUEPRINT_ORCHESTRATOR_MODEL = 'gpt-5.5'
 export const BLUEPRINT_IMAGE_MODEL = 'gpt-image-2'
 export const BLUEPRINT_IMAGE_WIDTH = 1600

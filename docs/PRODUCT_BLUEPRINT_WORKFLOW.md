@@ -7,27 +7,27 @@ The product editor generates 1600×1200 technical blueprint illustrations using 
 ## Workflow
 
 1. Open a product in Admin and select **Images**.
-2. In **Blueprint Studio**, optionally add product-specific visual direction.
-3. Select **Generate draft**.
-4. Inngest runs the OpenAI request in the background.
-5. Review the draft for product geometry, labels, units, manufacturer identity, and invented claims.
-6. Choose:
+2. In **Blueprint Studio**, select **Generate prompt**. The prompt author receives only the product title.
+3. Review or edit the complete image prompt shown in the Studio.
+4. Select **Generate image draft**. The exact visible prompt is saved to the audit context and sent to the image workflow.
+5. Inngest runs the OpenAI image request in the background.
+6. Review the draft for product geometry, labels, units, manufacturer identity, and invented claims.
+7. Choose:
    - **Accept onto product** to create the `Media` and `ProductImage` records.
    - **Refine draft** to continue the same GPT-5.5 image conversation.
    - **Reject** to delete the draft object and retain a rejected audit record.
 
 ## Data Sources
 
-The prompt is assembled from:
+The prompt author receives only the product title. Its code-managed authoring policy carries the
+approved composition, cutaway, callout, icon, title-block, legend, axis, footer, branding, and output
+requirements. The generated prompt remains editable before image generation.
 
-- Product title, SKU, and MPN
-- Brand and category
-- Short description
-- Up to 24 product specifications
-- Optional editor instructions
-- The approved INDUS blueprint reference
+The authoring policy explicitly forbids invented exact dimensions, pressure or temperature values,
+material grades, standards, certifications, model numbers, or performance claims. Familiar product
+terminology can be interpreted into technically plausible geometry and qualitative labels.
 
-The prompt explicitly forbids invented numeric values, materials, standards, certifications, or performance claims.
+The image request also includes the approved INDUS blueprint reference.
 
 Every generation request also explicitly requires:
 
@@ -60,6 +60,7 @@ The rows are visible in **SEO → AI Generation → Suggestion log** as part of 
 
 ```dotenv
 OPENAI_API_KEY="..."
+OPENAI_BLUEPRINT_PROMPT_MODEL="gpt-5.5"
 OPENAI_BLUEPRINT_ORCHESTRATOR_MODEL="gpt-5.5"
 OPENAI_BLUEPRINT_IMAGE_MODEL="gpt-image-2"
 INNGEST_EVENT_KEY="..."

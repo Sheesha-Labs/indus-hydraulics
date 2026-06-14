@@ -1,21 +1,7 @@
 import 'server-only'
-import OpenAI from 'openai'
 import { supabaseAdmin, STORAGE_BUCKETS } from '../supabase'
-import {
-  BLUEPRINT_IMAGE_SIZE,
-  BLUEPRINT_IMAGE_MODEL,
-  BLUEPRINT_ORCHESTRATOR_MODEL,
-} from './types'
-
-let openaiClient: OpenAI | null = null
-
-function openai(): OpenAI {
-  if (openaiClient) return openaiClient
-  const apiKey = process.env.OPENAI_API_KEY
-  if (!apiKey) throw new Error('OPENAI_API_KEY is not set')
-  openaiClient = new OpenAI({ apiKey })
-  return openaiClient
-}
+import { productBlueprintOpenAI } from './openai'
+import { BLUEPRINT_IMAGE_SIZE, BLUEPRINT_IMAGE_MODEL, BLUEPRINT_ORCHESTRATOR_MODEL } from './types'
 
 export type GeneratedBlueprint = {
   buffer: Buffer
@@ -36,7 +22,7 @@ export async function generateProductBlueprint(input: {
   const imageModel = process.env.OPENAI_BLUEPRINT_IMAGE_MODEL ?? BLUEPRINT_IMAGE_MODEL
   const isRefinement = Boolean(input.previousResponseId)
 
-  const response = await openai().responses.create({
+  const response = await productBlueprintOpenAI().responses.create({
     model: orchestratorModel,
     ...(isRefinement
       ? {
@@ -74,7 +60,7 @@ export async function generateProductBlueprint(input: {
 
   const imageCall = response.output.find(
     (item): item is Extract<(typeof response.output)[number], { type: 'image_generation_call' }> =>
-      item.type === 'image_generation_call',
+      item.type === 'image_generation_call'
   )
   if (!imageCall?.result) {
     throw new Error('OpenAI completed without returning an image')
