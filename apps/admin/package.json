@@ -9,7 +9,10 @@
     "lint": "eslint",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
-    "scraper:crawl": "tsx src/lib/scraper/cli.ts"
+    "scraper:crawl": "tsx src/lib/scraper/cli.ts",
+    "scraper:research-images": "tsx --env-file=.env.local src/lib/scraper/imageResearchCli.ts",
+    "scraper:image-review": "tsx src/lib/scraper/imageReviewCli.ts",
+    "scraper:ingest-images": "tsx --env-file=.env.local src/lib/scraper/imageIngestCli.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.92.0",
