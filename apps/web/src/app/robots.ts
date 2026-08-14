@@ -29,7 +29,11 @@ export default async function robots(): Promise<MetadataRoute.Robots> {
   if (setting?.robotsTxt && setting.robotsTxt.trim().length > 0) {
     const parsed = parseRobotsText(setting.robotsTxt)
     return {
-      rules: parsed.rules,
+      // The staff panel is served from this same origin now, and this field
+      // is editable from the SEO console — so the admin disallow is appended
+      // unconditionally rather than trusted to survive whatever someone types
+      // into the textarea.
+      rules: withReservedDisallow(parsed.rules),
       sitemap: setting.robotsTxtAutoAppendSitemap === false ? parsed.sitemap : sitemapUrl,
     }
   }
@@ -43,6 +47,9 @@ export default async function robots(): Promise<MetadataRoute.Robots> {
       // state; API routes return JSON; /search, /compare and the
       // auth pages are session-coupled or thin/duplicative content.
       disallow: [
+        // Reserved — see RESERVED_DISALLOW below.
+        '/admin',
+        '/admin/',
         '/account',
         '/account/',
         '/quote',
@@ -111,4 +118,32 @@ function toRule(c: { userAgent: string; allow: string[]; disallow: string[] }) {
   if (c.allow.length > 0) rule.allow = c.allow
   if (c.disallow.length > 0) rule.disallow = c.disallow
   return rule
+}
+
+/**
+ * Paths that must be disallowed no matter what the admin-managed robots.txt
+ * says. `/admin` is on the public origin after the storefront/admin merge, so
+ * a robots.txt-only defence would be one careless textarea edit away from
+ * evaporating. This is the second of three layers — the others are the
+ * `robots` metadata on app/admin/layout.tsx and the X-Robots-Tag response
+ * header set in proxy.ts.
+ */
+const RESERVED_DISALLOW = ['/admin', '/admin/']
+
+/**
+ * `MetadataRoute.Robots['rules']` is `Rule | RuleWithRequiredUserAgent[]`, so
+ * the two branches are typed separately rather than through one shared alias.
+ */
+type Rules = MetadataRoute.Robots['rules']
+type RuleList = Extract<Rules, readonly unknown[]>
+
+function withDisallow<T extends { disallow?: string | string[] }>(rule: T): T {
+  const existing =
+    rule.disallow == null ? [] : Array.isArray(rule.disallow) ? rule.disallow : [rule.disallow]
+  const missing = RESERVED_DISALLOW.filter((p) => !existing.includes(p))
+  return missing.length ? { ...rule, disallow: [...existing, ...missing] } : rule
+}
+
+function withReservedDisallow(rules: Rules): Rules {
+  return Array.isArray(rules) ? (rules.map(withDisallow) as RuleList) : withDisallow(rules)
 }

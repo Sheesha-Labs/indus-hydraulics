@@ -3,7 +3,7 @@
 import { useState, useTransition, useRef, useCallback } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { updateItemQty, removeItem } from '../app/account/lists/[id]/actions'
+import { updateItemQty, removeItem } from '../app/(storefront)/account/lists/[id]/actions'
 
 type Item = {
   id: string

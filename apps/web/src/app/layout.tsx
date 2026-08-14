@@ -1,47 +1,25 @@
 import type { Metadata } from 'next'
 import { Inter, IBM_Plex_Mono, Source_Serif_4 } from 'next/font/google'
-import { unstable_cache } from 'next/cache'
 import { Analytics } from '@vercel/analytics/next'
-import { SpeedInsights } from '@vercel/speed-insights/next'
-import { GoogleAnalytics } from '@next/third-parties/google'
-import { Suspense } from 'react'
-import AnalyticsProvider from '../components/AnalyticsProvider'
-import { db } from '@indus/db'
-import { buildOrgLd, buildWebsiteLd } from '@indus/domain'
-import { JsonLd } from '@indus/ui'
-import SiteHeader from '../components/SiteHeader'
-import SiteFooter from '../components/SiteFooter'
-import CompareTrayBadge from '../components/CompareTrayBadge'
-import { BASE_URL, ORG_ID, SITE_NAME } from '../lib/seo'
-import { mediaUrl } from '../lib/media'
-import { areasServed, OFFICES } from '../lib/site-locations'
-import { getStoreSettings } from '../lib/store-settings'
 import './globals.css'
 
 /**
- * Optional, comma-separated list of social profile URLs surfaced as
- * `sameAs` on the Organization JSON-LD. Set in Vercel as
- * `NEXT_PUBLIC_SOCIAL_PROFILES`. Empty / unset = no sameAs.
+ * Root layout for BOTH surfaces.
+ *
+ * Deliberately minimal: it owns only what is genuinely shared — the <html>
+ * element, the font variables, the stylesheet, and Vercel Analytics (which
+ * both apps rendered before the merge). Everything surface-specific lives one
+ * level down, in (storefront)/layout.tsx and admin/layout.tsx.
+ *
+ * That split is what keeps `robots: 'noindex, nofollow'` correct. It used to
+ * be a ROOT-layout export in the admin app; leaving it here would apply it to
+ * the entire public site — an inversion, not merely a loss.
+ *
+ * The <body> classes are byte-for-byte the storefront's previous ones, and
+ * (storefront)/layout.tsx returns a fragment, so the storefront's rendered DOM
+ * is unchanged by the merge. The admin wrapper is simply a stretched flex
+ * child.
  */
-function readSameAs(): string[] {
-  const raw = process.env.NEXT_PUBLIC_SOCIAL_PROFILES
-  if (!raw) return []
-  return raw
-    .split(',')
-    .map((s) => s.trim())
-    .filter((s) => s.length > 0)
-}
-
-// Cache the global SEO override row across requests. Admin should call
-// revalidateTag('seo-settings') when changing SeoSetting JSON-LD overrides.
-const getSeoSetting = unstable_cache(
-  async () =>
-    db.seoSetting
-      .findFirst({ select: { organizationJsonLd: true, websiteJsonLd: true } })
-      .catch(() => null),
-  ['seo-settings'],
-  { revalidate: 300, tags: ['seo-settings'] },
-)
 
 const inter = Inter({
   subsets: ['latin'],
@@ -58,7 +36,7 @@ const ibmPlexMono = IBM_Plex_Mono({
 
 // Source Serif 4 — body font for /services case-study articles. Loaded here
 // so the variable is on <html> and available to any route that opts in via
-// .sc-article-body / .sc-lead utilities (or font-serif Tailwind class).
+// .sc-article-body / .sc-lead utilities (or the font-serif Tailwind class).
 const sourceSerif = Source_Serif_4({
   subsets: ['latin'],
   weight: ['400', '500', '600'],
@@ -67,75 +45,13 @@ const sourceSerif = Source_Serif_4({
   display: 'swap',
 })
 
-/**
- * Build the `verification` block from optional env vars. Each entry is
- * conditionally included so Next.js only emits the corresponding meta tag
- * when the verification ID is set in the environment.
- *
- *   NEXT_PUBLIC_GSC_VERIFICATION  → <meta name="google-site-verification" …>
- *   NEXT_PUBLIC_BING_VERIFICATION → <meta name="msvalidate.01" …>
- *
- * Returns `undefined` (not an empty object) when nothing is set, so the
- * Metadata type stays clean.
- */
-function readVerification(): Metadata['verification'] {
-  const google = process.env.NEXT_PUBLIC_GSC_VERIFICATION?.trim()
-  const bing = process.env.NEXT_PUBLIC_BING_VERIFICATION?.trim()
-  const v: NonNullable<Metadata['verification']> = {}
-  if (google) v.google = google
-  if (bing) v.other = { 'msvalidate.01': bing }
-  return Object.keys(v).length > 0 ? v : undefined
-}
-
-/**
- * Default share-card title and description used by openGraph + twitter
- * below. Routes that emit their own metadata (PDP, category, brand, blog
- * via `pageMetadata`) override these per-page.
- */
-const DEFAULT_OG_TITLE = 'Indus Hydraulics — Industrial hydraulic distributor'
-const DEFAULT_OG_DESCRIPTION =
-  'Pumps, valves, cylinders and hose assemblies for engineers who can’t afford downtime. Authorized distributor for Parker, Bosch Rexroth, Yuken, and HYDAC, shipped from Dubai across the GCC and beyond.'
-
 export const metadata: Metadata = {
-  title: {
-    default: 'Indus Hydraulics',
-    template: '%s | Indus Hydraulics',
-  },
-  description:
-    'Pumps, valves, cylinders and hose assemblies for oil & gas, mining, marine and steel industries.',
+  // metadataBase is the one metadata field both surfaces need — it resolves
+  // every relative URL in every nested metadata export. Titles, descriptions,
+  // openGraph, twitter, verification and robots all belong to a surface and
+  // live in the surface layouts.
   metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL ?? 'https://indushydraulics.com'),
-  verification: readVerification(),
-  // Open Graph defaults — applied to any route that doesn't emit its own
-  // openGraph block. The OG image itself is supplied by the file-based
-  // convention at app/opengraph-image.tsx, so we don't list images here
-  // (Next merges them automatically). LinkedIn reads exclusively from OG
-  // tags, which is the primary share surface for a B2B audience.
-  openGraph: {
-    type: 'website',
-    siteName: 'Indus Hydraulics',
-    locale: 'en_AE',
-    title: DEFAULT_OG_TITLE,
-    description: DEFAULT_OG_DESCRIPTION,
-    url: process.env.NEXT_PUBLIC_BASE_URL ?? 'https://indushydraulics.com',
-  },
-  // Twitter card defaults — same shape as OG. The image is supplied by
-  // app/twitter-image.tsx; if that file isn't found, Twitter falls back
-  // to the OG image, which is what we want.
-  twitter: {
-    card: 'summary_large_image',
-    title: DEFAULT_OG_TITLE,
-    description: DEFAULT_OG_DESCRIPTION,
-  },
 }
-
-/**
- * Google Analytics 4 measurement ID, e.g. `G-XXXXXXXXXX`. When unset (local
- * dev, preview deploys without the env var) the GA script is not loaded.
- * Set on Vercel as `NEXT_PUBLIC_GA_MEASUREMENT_ID` once the GA4 property
- * is provisioned. GA4 is in addition to Vercel Analytics / Speed Insights /
- * PostHog — its primary role here is Search Console attribution.
- */
-const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID?.trim()
 
 // Co-locate Vercel functions with the Supabase database region (currently
 // `bom1`) to avoid transcontinental Prisma round-trips. Propagates to every
@@ -143,39 +59,7 @@ const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID?.trim()
 // `regions: ["bom1"]`. Revisit once Supabase relocates to a GCC region.
 export const preferredRegion = 'bom1'
 
-export default async function RootLayout({ children }: { children: React.ReactNode }) {
-  // Pull admin-managed Org/WebSite JSON-LD overrides AND StoreSettings for
-  // contact / legal details that flow into the Organization schema. Both
-  // are cross-request cached.
-  const [seoSetting, settings] = await Promise.all([getSeoSetting(), getStoreSettings()])
-
-  // The HQ office's address feeds the Organization PostalAddress (single
-  // top-level address per Schema.org guidance). Branch offices get their
-  // own LocalBusiness nodes on the contact page.
-  const hq = OFFICES.find((o) => o.kind === 'hq')
-
-  const orgLd = buildOrgLd({
-    id: ORG_ID,
-    name: SITE_NAME,
-    legalName: settings.legalName,
-    url: BASE_URL,
-    logoUrl: settings.logoUrl ? mediaUrl(settings.logoUrl) : null,
-    description:
-      'Industrial hydraulic components — pumps, cylinders, valves, hoses and consumables — for engineers who can’t afford downtime.',
-    foundingDate: '2003',
-    sameAs: readSameAs(),
-    contact: { email: settings.contactEmail, telephone: settings.contactPhone },
-    address: hq?.address ?? null,
-    areaServed: areasServed(),
-    override: seoSetting?.organizationJsonLd,
-  })
-  const websiteLd = buildWebsiteLd({
-    name: SITE_NAME,
-    url: BASE_URL,
-    searchUrlTemplate: `${BASE_URL}/search?q={search_term_string}`,
-    override: seoSetting?.websiteJsonLd,
-  })
-
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html
       lang="en"
@@ -183,24 +67,8 @@ export default async function RootLayout({ children }: { children: React.ReactNo
       suppressHydrationWarning
     >
       <body className="min-h-full flex flex-col bg-[var(--color-surface)] text-[var(--color-primary)]">
-        <SiteHeader />
-        <div className="flex-1">{children}</div>
-        <SiteFooter />
-        <CompareTrayBadge />
-        <JsonLd data={[orgLd, websiteLd]} />
+        {children}
         <Analytics />
-        <SpeedInsights />
-        {/* PostHog client init + pageview tracking. No-ops without
-            NEXT_PUBLIC_POSTHOG_KEY. Suspense boundary required because
-            AnalyticsProvider uses useSearchParams. */}
-        <Suspense fallback={null}>
-          <AnalyticsProvider />
-        </Suspense>
-        {/* Google Analytics 4. Only rendered when NEXT_PUBLIC_GA_MEASUREMENT_ID
-            is set; locally and on un-provisioned previews this emits nothing.
-            Used mainly so Google Search Console can attribute organic
-            traffic — campaign + product analytics still live in PostHog. */}
-        {GA_MEASUREMENT_ID ? <GoogleAnalytics gaId={GA_MEASUREMENT_ID} /> : null}
       </body>
     </html>
   )

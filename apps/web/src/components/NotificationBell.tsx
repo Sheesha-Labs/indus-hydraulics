@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useTransition } from 'react'
-import { markNotificationRead, markAllRead } from '../app/account/notifications/actions'
+import { markNotificationRead, markAllRead } from '../app/(storefront)/account/notifications/actions'
 
 interface Notification {
   id: string

@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useTransition } from 'react'
-import { addAddress, setDefaultAddress, deleteAddress } from '../app/account/addresses/actions'
+import { addAddress, setDefaultAddress, deleteAddress } from '../app/(storefront)/account/addresses/actions'
 
 type Address = {
   id: string

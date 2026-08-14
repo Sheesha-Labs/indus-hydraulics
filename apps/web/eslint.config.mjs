@@ -28,6 +28,60 @@ const eslintConfig = defineConfig([
       ],
     },
   },
+  {
+    // Storefront code must never reach for the STAFF Auth.js instance, and
+    // admin code must never reach for the CUSTOMER one. Both export `auth`,
+    // so a wrong import type-checks cleanly and fails only at runtime — which
+    // is exactly how lib/staff-session.ts ended up calling the customer
+    // instance during the merge, silently locking every staff member out of
+    // /admin while the proxy still let them through.
+    files: ["src/app/admin/**", "src/components/admin/**", "src/inngest/**"],
+    rules: {
+      "no-restricted-imports": [
+        "error",
+        {
+          patterns: [
+            {
+              group: ["**/lib/auth", "**/lib/customer-session"],
+              message:
+                "Admin code must use lib/admin-auth and lib/staff-session — lib/auth is the CUSTOMER Auth.js instance.",
+            },
+          ],
+          paths: [
+            {
+              name: "next-auth/react",
+              message:
+                "Use the server actions — next-auth/react cannot address the right Auth.js instance on a shared origin.",
+            },
+          ],
+        },
+      ],
+    },
+  },
+  {
+    files: ["src/app/(storefront)/**", "src/components/*.tsx", "src/actions/**"],
+    rules: {
+      "no-restricted-imports": [
+        "error",
+        {
+          patterns: [
+            {
+              group: ["**/lib/admin-auth", "**/lib/staff-session", "**/lib/rbac"],
+              message:
+                "Storefront code must use lib/auth and lib/customer-session — lib/admin-auth is the STAFF Auth.js instance.",
+            },
+          ],
+          paths: [
+            {
+              name: "next-auth/react",
+              message:
+                "Use the server actions — next-auth/react cannot address the right Auth.js instance on a shared origin.",
+            },
+          ],
+        },
+      ],
+    },
+  },
   // Override default ignores of eslint-config-next.
   globalIgnores([
     // Default ignores of eslint-config-next:
