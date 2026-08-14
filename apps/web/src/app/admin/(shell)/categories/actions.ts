@@ -1,6 +1,7 @@
 'use server'
 
 import { revalidatePath } from 'next/cache'
+import { invalidateCategories } from '../../../../lib/cache-tags'
 import { z } from 'zod'
 import { db } from '@indus/db'
 import { auth } from '../../../../lib/admin-auth'
@@ -70,6 +71,7 @@ export async function createCategory(formData: FormData): Promise<Result<{ id: s
     })
 
     revalidatePath(`/admin/categories`)
+    invalidateCategories()
     return ok({ id: cat.id })
   } catch (err) {
     return failFromError(err)
@@ -138,6 +140,7 @@ export async function updateCategory(formData: FormData): Promise<Result<void>> 
     })
 
     revalidatePath(`/admin/categories`)
+    invalidateCategories()
     return ok(undefined)
   } catch (err) {
     return failFromError(err)
@@ -167,6 +170,7 @@ export async function deleteCategory(id: string): Promise<Result<void>> {
 
     await db.category.delete({ where: { id } })
     revalidatePath(`/admin/categories`)
+    invalidateCategories()
     return ok(undefined)
   } catch (err) {
     return failFromError(err)

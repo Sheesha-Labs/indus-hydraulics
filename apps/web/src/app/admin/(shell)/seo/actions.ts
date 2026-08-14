@@ -7,6 +7,7 @@ import { ROLES, requireRole } from '../../../../lib/rbac'
 import { failFromError, ok, type Result } from '../../../../lib/result'
 import { withSeoAudit } from '../../../../lib/seo-audit'
 import { revalidatePath } from 'next/cache'
+import { invalidateSeoSettings } from '../../../../lib/cache-tags'
 
 const SeoSettingsSchema = z.object({
   defaultMetaTitleTemplate: z.string().trim().max(180).optional().transform((v) => v ?? null),
@@ -55,6 +56,7 @@ export async function saveSeoSettings(formData: FormData): Promise<Result<void>>
     )
 
     revalidatePath('/admin/seo')
+    invalidateSeoSettings()
     revalidatePath('/admin/seo/settings')
     revalidatePath('/admin/seo/robots')
     return ok(undefined)
@@ -121,6 +123,7 @@ export async function addRedirect(formData: FormData): Promise<Result<void>> {
     )
 
     revalidatePath('/admin/seo')
+    invalidateSeoSettings()
     revalidatePath('/admin/seo/redirects')
     return ok(undefined)
   } catch (err) {
@@ -158,6 +161,7 @@ export async function deleteRedirect(id: string): Promise<Result<void>> {
     )
 
     revalidatePath('/admin/seo')
+    invalidateSeoSettings()
     revalidatePath('/admin/seo/redirects')
     return ok(undefined)
   } catch (err) {

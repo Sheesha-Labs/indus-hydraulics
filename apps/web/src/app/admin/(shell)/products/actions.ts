@@ -1,6 +1,7 @@
 'use server'
 
 import { revalidatePath } from 'next/cache'
+import { invalidateProducts } from '../../../../lib/cache-tags'
 import { redirect } from 'next/navigation'
 import { z } from 'zod'
 import { db, Prisma } from '@indus/db'
@@ -98,6 +99,7 @@ export async function createProduct(formData: FormData): Promise<Result<{ id: st
     await recomputeContentScore(product.id)
 
     revalidatePath(`/admin/products`)
+    invalidateProducts()
   } catch (err) {
     return failFromError(err)
   }
@@ -163,6 +165,7 @@ export async function updateProductCore(formData: FormData): Promise<Result<void
     await recomputeContentScore(parsed.id)
 
     revalidatePath(`/admin/products/${parsed.id}/edit`)
+    invalidateProducts()
     revalidatePath(`/admin/products`)
     return ok(undefined)
   } catch (err) {
@@ -190,6 +193,7 @@ export async function updateProductDescription(formData: FormData): Promise<Resu
     })
     await recomputeContentScore(parsed.id)
     revalidatePath(`/admin/products/${parsed.id}/edit`)
+    invalidateProducts()
     return ok(undefined)
   } catch (err) {
     return failFromError(err)
@@ -292,6 +296,7 @@ export async function updateProductCommerce(formData: FormData): Promise<Result<
     await recomputeContentScore(parsed.id)
 
     revalidatePath(`/admin/products/${parsed.id}/edit`)
+    invalidateProducts()
     revalidatePath(`/admin/products`)
     return ok(undefined)
   } catch (err) {
@@ -466,6 +471,7 @@ export async function updateProductSeo(formData: FormData): Promise<Result<void>
     await recomputeContentScore(parsed.id)
 
     revalidatePath(`/admin/products/${parsed.id}/edit`)
+    invalidateProducts()
     revalidatePath('/admin/seo/inspector')
     return ok(undefined)
   } catch (err) {
@@ -533,6 +539,7 @@ export async function deleteProduct(id: string): Promise<Result<void>> {
     z.string().uuid().parse(id)
     await db.product.delete({ where: { id } })
     revalidatePath(`/admin/products`)
+    invalidateProducts()
   } catch (err) {
     return failFromError(err)
   }
@@ -575,6 +582,7 @@ export async function addProductSpec(formData: FormData): Promise<Result<void>> 
     })
 
     revalidatePath(`/admin/products/${productId}/edit`)
+    invalidateProducts()
     return ok(undefined)
   } catch (err) {
     return failFromError(err)
@@ -596,6 +604,7 @@ export async function updateProductSpec(formData: FormData): Promise<Result<void
 
     await db.productSpec.update({ where: { id }, data: body })
     revalidatePath(`/admin/products/${productId}/edit`)
+    invalidateProducts()
     return ok(undefined)
   } catch (err) {
     return failFromError(err)
@@ -609,6 +618,7 @@ export async function deleteProductSpec(specId: string, productId: string): Prom
     z.string().uuid().parse(productId)
     await db.productSpec.delete({ where: { id: specId } })
     revalidatePath(`/admin/products/${productId}/edit`)
+    invalidateProducts()
     return ok(undefined)
   } catch (err) {
     return failFromError(err)
@@ -635,6 +645,7 @@ export async function addProductCrossReference(formData: FormData): Promise<Resu
 
     await db.productCrossReference.create({ data: { productId, ...body } })
     revalidatePath(`/admin/products/${productId}/edit`)
+    invalidateProducts()
     return ok(undefined)
   } catch (err) {
     return failFromError(err)
@@ -654,6 +665,7 @@ export async function updateProductCrossReference(formData: FormData): Promise<R
 
     await db.productCrossReference.update({ where: { id }, data: body })
     revalidatePath(`/admin/products/${productId}/edit`)
+    invalidateProducts()
     return ok(undefined)
   } catch (err) {
     return failFromError(err)
@@ -667,6 +679,7 @@ export async function deleteProductCrossReference(crId: string, productId: strin
     z.string().uuid().parse(productId)
     await db.productCrossReference.delete({ where: { id: crId } })
     revalidatePath(`/admin/products/${productId}/edit`)
+    invalidateProducts()
     return ok(undefined)
   } catch (err) {
     return failFromError(err)
@@ -732,6 +745,7 @@ export async function uploadProductImage(formData: FormData): Promise<Result<voi
     })
 
     revalidatePath(`/admin/products/${productId}/edit`)
+    invalidateProducts()
     return ok(undefined)
   } catch (err) {
     return failFromError(err)
@@ -794,6 +808,7 @@ export async function addProductImage(formData: FormData): Promise<Result<void>>
     })
 
     revalidatePath(`/admin/products/${parsed.productId}/edit`)
+    invalidateProducts()
     return ok(undefined)
   } catch (err) {
     return failFromError(err)
@@ -817,6 +832,7 @@ export async function deleteProductImage(imageId: string, productId: string): Pr
     // Best-effort storage cleanup — don't fail the whole action if it fails.
     await deleteFromStorage(img.media.storagePath)
     revalidatePath(`/admin/products/${productId}/edit`)
+    invalidateProducts()
     return ok(undefined)
   } catch (err) {
     return failFromError(err)
@@ -848,6 +864,7 @@ export async function reorderProductImage(
       db.productImage.update({ where: { id: b.id }, data: { position: a.position } }),
     ])
     revalidatePath(`/admin/products/${productId}/edit`)
+    invalidateProducts()
     return ok(undefined)
   } catch (err) {
     return failFromError(err)
@@ -985,6 +1002,7 @@ export async function uploadProductDocument(formData: FormData): Promise<Result<
     await bestEffortDeleteFromStorage(staleStoragePaths)
 
     revalidatePath(`/admin/products/${productId}/edit`)
+    invalidateProducts()
     return ok(undefined)
   } catch (err) {
     return failFromError(err)
@@ -1067,6 +1085,7 @@ export async function addProductDocument(formData: FormData): Promise<Result<voi
     )
 
     revalidatePath(`/admin/products/${productId}/edit`)
+    invalidateProducts()
     return ok(undefined)
   } catch (err) {
     return failFromError(err)
@@ -1089,6 +1108,7 @@ export async function deleteProductDocument(docId: string, productId: string): P
     ])
     await deleteFromStorage(doc.media.storagePath)
     revalidatePath(`/admin/products/${productId}/edit`)
+    invalidateProducts()
     return ok(undefined)
   } catch (err) {
     return failFromError(err)
@@ -1125,6 +1145,7 @@ export async function addProductFaq(formData: FormData): Promise<Result<void>> {
     })
 
     revalidatePath(`/admin/products/${productId}/edit`)
+    invalidateProducts()
     return ok(undefined)
   } catch (err) {
     return failFromError(err)
@@ -1143,6 +1164,7 @@ export async function updateProductFaq(formData: FormData): Promise<Result<void>
 
     await db.productFaq.update({ where: { id }, data: body })
     revalidatePath(`/admin/products/${productId}/edit`)
+    invalidateProducts()
     return ok(undefined)
   } catch (err) {
     return failFromError(err)
@@ -1156,6 +1178,7 @@ export async function deleteProductFaq(id: string, productId: string): Promise<R
     z.string().uuid().parse(productId)
     await db.productFaq.delete({ where: { id } })
     revalidatePath(`/admin/products/${productId}/edit`)
+    invalidateProducts()
     return ok(undefined)
   } catch (err) {
     return failFromError(err)
@@ -1187,6 +1210,7 @@ export async function reorderProductFaq(
       db.productFaq.update({ where: { id: b.id }, data: { position: a.position } }),
     ])
     revalidatePath(`/admin/products/${productId}/edit`)
+    invalidateProducts()
     return ok(undefined)
   } catch (err) {
     return failFromError(err)

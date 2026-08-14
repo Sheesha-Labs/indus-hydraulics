@@ -26,7 +26,7 @@ This file is the authoritative engineering guide for this codebase. Claude Code 
 
 ### Rules
 
-1. **All shared UI lives in `packages/ui`.** Never build a one-off component inside `apps/web` or `apps/admin` if it could ever be reused. Move it to `packages/ui` and import it.
+1. **All shared UI lives in `packages/ui`.** Never build a one-off component inside `apps/web` if it could ever be reused. Move it to `packages/ui` and import it. Storefront components live in `src/components/`, admin components in `src/components/admin/`.
 
 2. **Pages are thin.** Route files (`page.tsx`) fetch data and pass typed props to components. No business logic in pages.
 
@@ -100,12 +100,19 @@ This file is the authoritative engineering guide for this codebase. Claude Code 
 
 ### Rules
 
-1. **Two completely separate auth contexts:**
-   - `account_contact` — storefront/customer portal (`apps/web`)
-   - `staff_user` — admin (`apps/admin`)
-   They must never share sessions or auth backends.
+1. **Two completely separate auth contexts, on one origin.** Since the storefront/admin merge both surfaces are served by `apps/web`, so the separation is enforced in code rather than by deployment:
+   - `account_contact` — storefront/customer portal. `lib/auth.ts` + `lib/customer-session.ts`.
+   - `staff_user` — admin at `/admin/*`. `lib/admin-auth.ts` + `lib/staff-session.ts` + `lib/rbac.ts`.
 
-2. **Middleware enforces auth on every protected segment.** Do not rely on page-level redirects. Next.js 16 renamed the middleware file: the `src/proxy.ts` in each app handles auth guards before the page renders.
+   They have **different secrets and different session-cookie names**. The cookie name is Auth.js's HKDF salt (`packages/domain/src/auth-cookies.ts`), so tokens minted by one instance are cryptographically undecryptable by the other — the failure mode of a missed check is "session is null", not "session is a customer's".
+
+   **Never import across the boundary.** Both instances export `auth`, so a wrong import type-checks cleanly and fails only at runtime. Zoned `no-restricted-imports` rules in `apps/web/eslint.config.mjs` block it.
+
+   Every session carries a `kind: 'customer' | 'staff'` claim. Guards **reject** a missing `kind`; never default it.
+
+2. **Middleware enforces auth on every protected segment.** Do not rely on page-level redirects — App Router partial rendering means a layout does not re-run on every request, so layout-only authorization is bypassable. Next.js 16 renamed the middleware file: `apps/web/src/proxy.ts` handles both surfaces (allowlist for the storefront, default-deny for `/admin`) and verifies the token with `getToken`, not merely the presence of a cookie.
+
+   Its matcher exempts `api` **and** `admin/api`. The lookahead is anchored after the leading `/`, so `api` alone exempts only top-level `/api/*` — without `admin/api`, `/admin/api/auth/*` is caught by the denylist and sign-in becomes an infinite redirect loop with no error message.
 
 3. **Role checks happen server-side.** Never trust a role value passed from the client. Always read it from the session.
 
@@ -244,43 +251,38 @@ chore/prisma-schema-update
 
 ## 11. File Structure Reference
 
+**One app serves both surfaces.** `apps/admin` no longer exists.
+
 ```
 apps/web/
   src/
+    proxy.ts                 ← middleware for BOTH surfaces (see §4)
+    types/next-auth.d.ts     ← the single next-auth module augmentation
     app/
-      layout.tsx             ← Root layout (<html lang="en">, fonts)
-      page.tsx               ← Home
-      (auth)/                ← sign-in, sign-up, forgot-password
-      (catalogue)/           ← c/[slug], p/[sku], search, compare, brands, industries
-      (rfq)/                 ← quote, quote/submit, quote/[code]
-      account/               ← account portal (guarded by proxy.ts)
-      sitemap.ts
-    components/              ← storefront-specific components
-    actions/                 ← server actions
-    lib/                     ← utils, formatters, auth config
-    proxy.ts                 ← middleware: auth guard for /account
-
-apps/admin/
-  src/
-    app/
-      layout.tsx
-      (auth)/
-      (shell)/               ← all admin pages (sidebar shell)
-        page.tsx             ← Dashboard
-        products/
-        categories/
-        brands/
-        rfqs/
-        customers/
-        media/
-        cms/
-        seo/
-        users/
-        settings/
-        spec-templates/
-    components/
+      layout.tsx             ← minimal root: <html>, fonts, globals.css, <body>
+      globals.css            ← shared; admin deltas scoped to [data-surface='admin']
+      not-found.tsx  robots.ts  sitemap.ts  opengraph-image.tsx  global-error.tsx
+      api/                   ← auth, health, quotes, search, seo, inngest
+      (storefront)/          ← SiteHeader/Footer + storefront metadata; a FRAGMENT
+        page.tsx  (auth)/  account/  c/  p/  brands/  industries/  search/
+        compare/  quote/  services/  blog/  replacement/  …
+      admin/                 ← robots:noindex + <div data-surface="admin">
+        sign-in/  api/{auth,quotes,rfqs}/
+        (shell)/             ← sidebar shell: products, rfqs, seo, users, cms, …
+    components/              ← storefront components
+    components/admin/        ← admin components (incl. seo/)
+    actions/                 ← storefront server actions
+    inngest/                 ← background jobs (served at /api/inngest)
     lib/
-    proxy.ts
+      auth.ts                ← CUSTOMER Auth.js instance
+      customer-session.ts    ← requireCustomer / isCustomerSession
+      admin-auth.ts          ← STAFF Auth.js instance
+      staff-session.ts       ← requireStaff / requireStaffRole
+      rbac.ts                ← ROLES groups, requireRole / hasRole
+      admin-paths.ts         ← ADMIN_PREFIX, stripAdminPrefix (see §12)
+      cache-tags.ts          ← storefront cache invalidation (see §12)
+      supabase.ts            ← read-side (signed URLs)
+      supabase-admin.ts      ← write-side (uploads, service role)
 
 packages/
   db/
@@ -300,3 +302,19 @@ packages/
       types.ts
       index.ts
 ```
+
+---
+
+## 12. Cross-surface gotchas
+
+Things that fail **silently** now that one app serves two surfaces. Each cost real debugging time.
+
+1. **`/admin` prefix.** Every admin path literal — `href`, `redirect()`, `router.push()`, `revalidatePath()` — must start with `/admin`. A miss no longer 404s; it lands on a storefront route, and an un-prefixed `revalidatePath` purges the public catalogue instead of the admin list. `admin-path-prefix.test.ts` scans for this.
+
+2. **Reading `usePathname()` in admin.** The first segment is always the literal `'admin'`. Route it through `stripAdminPrefix()` from `lib/admin-paths.ts` before treating a segment as a section key, or breadcrumbs collapse and sidebar active-state dies — silently, with no error.
+
+3. **Cache tags are bare strings on both sides.** The storefront registers them via `unstable_cache(..., { tags })`; admin purges them. A rename on one side alone just misses, and looks exactly like a cache that has not expired. Always go through `lib/cache-tags.ts`; `cache-tags.test.ts` asserts the map matches what the storefront actually registers.
+
+4. **Never `next-auth/react`.** Its `signIn`/`signOut` bake a base path from `NEXTAUTH_URL` at build time and always resolve to `/api/auth` — the customer instance. Use the server actions. Banned by lint.
+
+5. **`revalidatePath('//x')` matches nothing.** A protocol-relative path is not a route. 23 of these shipped as silent no-ops before the merge.
