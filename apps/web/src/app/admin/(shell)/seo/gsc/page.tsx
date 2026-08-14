@@ -60,7 +60,7 @@ export default async function GscPage() {
           <li>
             Create a Google Cloud project + OAuth client (Web application). Authorized redirect
             URI: <code className="font-mono text-[11px] bg-[var(--color-deep)] px-1.5 py-0.5">
-              {process.env.NEXT_PUBLIC_ADMIN_URL ?? 'https://admin.indushydraulics.com'}/api/gsc/oauth/callback
+              {process.env.NEXT_PUBLIC_BASE_URL ?? 'https://indushydraulics.com'}/admin/api/gsc/oauth/callback
             </code>.
           </li>
           <li>

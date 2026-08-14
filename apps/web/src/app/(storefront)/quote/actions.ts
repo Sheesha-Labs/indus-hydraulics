@@ -276,7 +276,6 @@ async function sendRfqEmails(input: SendRfqEmailsInput): Promise<void> {
   if (!contact || !account) return
 
   const baseUrl = (process.env.NEXT_PUBLIC_BASE_URL ?? 'http://localhost:3000').replace(/\/$/, '')
-  const adminUrl = (process.env.NEXT_PUBLIC_ADMIN_URL ?? 'http://localhost:3001').replace(/\/$/, '')
 
   const customerName = `${contact.firstName} ${contact.lastName}`.trim() || contact.email
 
@@ -322,7 +321,11 @@ async function sendRfqEmails(input: SendRfqEmailsInput): Promise<void> {
       customerMessage: input.customerMessage,
       shipToCity: shipTo?.city ?? null,
       shipToCountry: shipTo?.countryCode ?? null,
-      adminUrl: `${adminUrl}/rfqs/${input.rfqCode}`,
+      // Admin is served from /admin on this same origin since the merge.
+      // This used to build ${NEXT_PUBLIC_ADMIN_URL}/rfqs/... — on one domain that
+      // resolves to a storefront 404, so the internal 'new RFQ' notification
+      // sent staff to a dead link.
+      adminUrl: `${baseUrl}/admin/rfqs/${input.rfqCode}`,
       branding: {
         legalName: branding.legalName,
         vatTrn: branding.vatTrn,
