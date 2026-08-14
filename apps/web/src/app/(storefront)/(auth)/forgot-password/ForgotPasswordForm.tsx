@@ -31,7 +31,7 @@ export default function ForgotPasswordForm() {
           <b className="text-[var(--color-primary)] text-[12px] uppercase tracking-[0.1em] font-mono block mb-1">
             Didn&apos;t get it?
           </b>
-          Check your spam folder · the sender is noreply@indushydraulics.com
+          Check your spam folder · the sender is noreply@indushydraulics.me
           <br />
           Whitelist the domain with your IT team for B2B accounts
           <br />

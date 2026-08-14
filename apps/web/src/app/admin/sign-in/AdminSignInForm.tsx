@@ -38,7 +38,7 @@ export default function AdminSignInForm({ next }: { next?: string }) {
           type="email"
           autoComplete="email"
           required
-          placeholder="you@indushydraulics.com"
+          placeholder="you@indushydraulics.me"
           className={inputCls}
         />
       </div>

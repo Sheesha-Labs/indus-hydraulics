@@ -198,8 +198,8 @@ export default async function PrivacyPage({ params }: Props) {
       <Section title="13. Contact">
         <p>
           For privacy questions, requests, or complaints, contact us at{' '}
-          <a className="text-[var(--color-accent)] hover:underline" href="mailto:privacy@indushydraulics.com">
-            privacy@indushydraulics.com
+          <a className="text-[var(--color-accent)] hover:underline" href="mailto:privacy@indushydraulics.me">
+            privacy@indushydraulics.me
           </a>
           . For general enquiries, see the channels on our{' '}
           <a className="text-[var(--color-accent)] hover:underline" href="/contact">

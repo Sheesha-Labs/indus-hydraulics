@@ -36,7 +36,7 @@ const FAQS = [
   },
   {
     q: 'How do I file a warranty claim?',
-    a: 'Email sales@indushydraulics.com within seven days of fault discovery. Include the Estimate or invoice number, product serial / batch number, photos of the failure, operating conditions at the time of failure, and installation context. We will issue an RMA and coordinate the manufacturer’s technical evaluation.',
+    a: 'Email sales@indushydraulics.me within seven days of fault discovery. Include the Estimate or invoice number, product serial / batch number, photos of the failure, operating conditions at the time of failure, and installation context. We will issue an RMA and coordinate the manufacturer’s technical evaluation.',
   },
   {
     q: 'What remedies are available?',
@@ -205,8 +205,8 @@ export default async function WarrantyPage({ params }: Props) {
         <ol className="list-decimal pl-6 space-y-1">
           <li>
             <strong>Notify us within 7 days</strong> of discovering the fault. Email{' '}
-            <a className="text-[var(--color-accent)] hover:underline" href="mailto:sales@indushydraulics.com">
-              sales@indushydraulics.com
+            <a className="text-[var(--color-accent)] hover:underline" href="mailto:sales@indushydraulics.me">
+              sales@indushydraulics.me
             </a>{' '}
             with the Estimate or invoice number, product part number and serial / batch number,
             photographs of the failure, the operating conditions at the time of failure
@@ -263,8 +263,8 @@ export default async function WarrantyPage({ params }: Props) {
       <Section title="9. Contact">
         <p>
           To start a warranty claim or ask a coverage question, contact us at{' '}
-          <a className="text-[var(--color-accent)] hover:underline" href="mailto:sales@indushydraulics.com">
-            sales@indushydraulics.com
+          <a className="text-[var(--color-accent)] hover:underline" href="mailto:sales@indushydraulics.me">
+            sales@indushydraulics.me
           </a>{' '}
           or via the channels on our{' '}
           <a className="text-[var(--color-accent)] hover:underline" href="/contact">

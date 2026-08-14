@@ -24,7 +24,7 @@ import robotsParser from 'robots-parser'
 import type { ScraperContext } from './types'
 
 export const USER_AGENT =
-  'IndusHydraulics-Scraper/1.0 (+https://indushydraulics.com; ops@indushydraulics.com)'
+  'IndusHydraulics-Scraper/1.0 (+https://indushydraulics.com; ops@indushydraulics.me)'
 
 export const DEFAULT_REQUESTS_PER_SECOND = 2
 export const HTML_TIMEOUT_MS = 15_000

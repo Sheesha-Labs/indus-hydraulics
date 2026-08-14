@@ -651,7 +651,7 @@ function whatsappHref(phone: string | null, sku: string): string | null {
 }
 
 function mailtoQuoteHref(email: string | null, sku: string): string {
-  const to = email ?? 'enquiries@indushydraulics.com'
+  const to = email ?? 'enquiries@indushydraulics.me'
   const subject = encodeURIComponent(`Quotation for ${sku}`)
   return `mailto:${to}?subject=${subject}`
 }

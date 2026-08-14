@@ -169,8 +169,8 @@ export default async function TermsPage({ params }: Props) {
       <Section title="13. Contact">
         <p>
           For questions about these Terms or any commercial matter, contact us at{' '}
-          <a className="text-[var(--color-accent)] hover:underline" href="mailto:sales@indushydraulics.com">
-            sales@indushydraulics.com
+          <a className="text-[var(--color-accent)] hover:underline" href="mailto:sales@indushydraulics.me">
+            sales@indushydraulics.me
           </a>{' '}
           or via the channels listed on our{' '}
           <a className="text-[var(--color-accent)] hover:underline" href="/contact">
