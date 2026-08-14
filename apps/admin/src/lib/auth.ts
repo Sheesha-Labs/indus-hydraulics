@@ -14,6 +14,14 @@ const signInSchema = z.object({
 
 const nextAuth = NextAuth({
   trustHost: true,
+  // The staff handlers mount at /admin/api/auth/*, keeping the whole staff
+  // surface under one prefix and leaving /api/auth/* to the customer
+  // instance. Three things must stay in lockstep or admin sign-in becomes an
+  // infinite redirect loop with no error message: this basePath, the
+  // `admin/api` exemption in proxy.ts's matcher, and the fact that sign-in
+  // goes through a server action rather than next-auth/react (whose client
+  // helpers hardcode /api/auth from a build-time env var).
+  basePath: '/admin/api/auth',
   // Explicit secret + explicit cookie names are what isolate this instance
   // from the customer one. See packages/domain/src/auth-cookies.ts — the
   // session cookie's name is @auth/core's HKDF salt, so a differing name makes
@@ -101,8 +109,8 @@ const nextAuth = NextAuth({
     },
   },
   pages: {
-    signIn: '/sign-in',
-    error: '/sign-in',
+    signIn: '/admin/sign-in',
+    error: '/admin/sign-in',
   },
 })
 

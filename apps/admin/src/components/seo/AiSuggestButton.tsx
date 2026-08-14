@@ -6,7 +6,7 @@ import {
   generateSuggestion,
   acceptSuggestion,
   rejectSuggestion,
-} from '../../app/(shell)/seo/ai/actions'
+} from '../../app/admin/(shell)/seo/ai/actions'
 
 type Field = 'seoTitle' | 'seoDescription' | 'focusKeyword'
 

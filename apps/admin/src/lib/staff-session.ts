@@ -44,7 +44,7 @@ export function assertStaffSession(session: Session | null | undefined): StaffSe
 /** Redirecting variant — for pages and layouts. */
 export async function requireStaff(): Promise<StaffSession> {
   const session = await auth()
-  if (!isStaffSession(session)) redirect('/sign-in')
+  if (!isStaffSession(session)) redirect('/admin/sign-in')
   return session
 }
 
@@ -57,6 +57,6 @@ export async function requireStaff(): Promise<StaffSession> {
  */
 export async function requireStaffRole(allowed: readonly StaffRole[]): Promise<StaffSession> {
   const session = await requireStaff()
-  if (!allowed.includes(session.user.role)) redirect('/')
+  if (!allowed.includes(session.user.role)) redirect('/admin')
   return session
 }

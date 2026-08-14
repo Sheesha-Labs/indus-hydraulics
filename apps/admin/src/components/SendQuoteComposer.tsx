@@ -1,7 +1,7 @@
 'use client'
 
 import { useRef, useState, useTransition } from 'react'
-import { sendQuote } from '../app/(shell)/rfqs/[code]/actions'
+import { sendQuote } from '../app/admin/(shell)/rfqs/[code]/actions'
 
 type Props = {
   rfqId: string
