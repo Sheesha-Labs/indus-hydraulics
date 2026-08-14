@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import { unstable_cache } from 'next/cache'
-import { auth } from '../../lib/auth'
+import { requireStaff } from '../../lib/staff-session'
 import { db } from '@indus/db'
 import Link from 'next/link'
 
@@ -31,7 +31,8 @@ const getDashboardCounts = unstable_cache(
 
 export default async function AdminDashboardPage({ params }: Props) {
   await params
-  const session = await auth()
+  // Was `await auth()` with every read optional-chained — i.e. no guard at all.
+  const session = await requireStaff()
 
   const firstName = session?.user?.name?.split(' ')[0] ?? 'there'
   const now = new Date()

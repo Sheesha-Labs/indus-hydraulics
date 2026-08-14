@@ -4,14 +4,26 @@ import type { Session } from 'next-auth'
  * Staff roles, ordered loosely by privilege. Mirrors `StaffRole` enum in
  * `packages/db/prisma/schema.prisma`.
  */
-export type StaffRole =
-  | 'super_admin'
-  | 'manager'
-  | 'sales_rep'
-  | 'engineer'
-  | 'warehouse'
-  | 'finance'
-  | 'cms_editor'
+export const STAFF_ROLES = [
+  'super_admin',
+  'manager',
+  'sales_rep',
+  'engineer',
+  'warehouse',
+  'finance',
+  'cms_editor',
+] as const
+
+export type StaffRole = (typeof STAFF_ROLES)[number]
+
+/**
+ * Runtime membership test. Needed because a session's `role` is a plain string
+ * that may have been minted by the *customer* Auth.js instance, whose
+ * `ContactRole` enum overlaps `StaffRole` on the literal `engineer`.
+ */
+export function isStaffRole(value: unknown): value is StaffRole {
+  return typeof value === 'string' && (STAFF_ROLES as readonly string[]).includes(value)
+}
 
 /**
  * Common permission groups. Each constant is the set of roles permitted to
@@ -75,12 +87,18 @@ export function requireRole(
   session: Session | null,
   allowed: readonly StaffRole[]
 ): Session & { user: { id: string; role: StaffRole } } {
-  if (!session?.user?.id) {
+  // `kind === 'staff'` is asserted before the role comparison, so a customer
+  // principal can never satisfy a permission group. This matters because
+  // `ContactRole` and `StaffRole` share the literal `engineer`, which appears
+  // in RFQ_REVIEW (sendQuote prices and emails quotes), SEO_READ and ANY_STAFF.
+  // Hardening here rather than at the ~140 call sites means every one of them
+  // inherits the check with no edit and no chance of being missed.
+  if (!isStaffPrincipal(session)) {
     throw new AuthorizationError('Not authenticated')
   }
-  const role = (session.user as { role?: string }).role as StaffRole | undefined
-  if (!role || !allowed.includes(role)) {
-    throw new ForbiddenError(allowed, role ?? null)
+  const role = session.user.role as StaffRole
+  if (!allowed.includes(role)) {
+    throw new ForbiddenError(allowed, role)
   }
   return session as Session & { user: { id: string; role: StaffRole } }
 }
@@ -90,6 +108,19 @@ export function hasRole(
   session: Session | null,
   allowed: readonly StaffRole[]
 ): boolean {
-  const role = session?.user?.role as StaffRole | undefined
-  return !!role && allowed.includes(role)
+  return isStaffPrincipal(session) && allowed.includes(session.user.role as StaffRole)
+}
+
+/**
+ * Shared precondition for both guards above: minted by the staff Auth.js
+ * instance, and carrying a role that exists in the staff enum.
+ *
+ * `kind` is required, not defaulted. Every decryptable token was minted after
+ * the cookie split, so a legitimate staff session always carries it.
+ */
+function isStaffPrincipal(
+  session: Session | null,
+): session is Session & { user: { id: string; role: string; kind: 'staff' } } {
+  const user = session?.user
+  return !!user && !!user.id && user.kind === 'staff' && isStaffRole(user.role)
 }

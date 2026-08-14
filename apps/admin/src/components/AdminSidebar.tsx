@@ -2,7 +2,7 @@
 
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
-import { signOut } from 'next-auth/react'
+import { adminSignOutAction } from '../app/(auth)/sign-in/actions'
 import {
   LayoutDashboard,
   Package,
@@ -178,7 +178,7 @@ export default function AdminSidebar({ userName, userRole }: Props) {
             <div className="font-mono text-[10px] text-[#6b7079] uppercase truncate">{userRole}</div>
           </div>
           <button
-            onClick={() => signOut({ callbackUrl: `/sign-in` })}
+            onClick={() => void adminSignOutAction()}
             aria-label="Sign out"
             className="text-[#5b6068] hover:text-[#f0ece3] text-[11px] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[oklch(0.62_0.16_45)] rounded-sm p-1"
             title="Sign out"

@@ -1,16 +1,11 @@
-import NextAuth, { type DefaultSession } from 'next-auth'
+import { requireAuthSecret, staffCookies } from '@indus/domain'
+import NextAuth from 'next-auth'
 import Credentials from 'next-auth/providers/credentials'
 import { cache } from 'react'
 import { z } from 'zod'
 
-declare module 'next-auth' {
-  interface Session {
-    user: {
-      id: string
-      role: string
-    } & DefaultSession['user']
-  }
-}
+// The `next-auth` module augmentation lives in src/types/next-auth.d.ts —
+// one declaration for the whole program, shared verbatim with the storefront.
 
 const signInSchema = z.object({
   email: z.string().email(),
@@ -19,6 +14,12 @@ const signInSchema = z.object({
 
 const nextAuth = NextAuth({
   trustHost: true,
+  // Explicit secret + explicit cookie names are what isolate this instance
+  // from the customer one. See packages/domain/src/auth-cookies.ts — the
+  // session cookie's name is @auth/core's HKDF salt, so a differing name makes
+  // the two token families mutually undecryptable even under one secret.
+  secret: requireAuthSecret('STAFF_AUTH_SECRET'),
+  cookies: staffCookies,
   providers: [
     Credentials({
       name: 'credentials',
@@ -53,11 +54,14 @@ const nextAuth = NextAuth({
   ],
   session: {
     strategy: 'jwt',
-    maxAge: 12 * 60 * 60,
+    // Converged with the storefront's 8h. This session now sits on the public
+    // origin, where 12h would let one survive an unattended laptop overnight.
+    maxAge: 8 * 60 * 60,
   },
   callbacks: {
     async jwt({ token, user }) {
       if (user) {
+        token.kind = 'staff'
         token.role = (user as unknown as { role: string }).role
       }
       return token
@@ -69,6 +73,10 @@ const nextAuth = NextAuth({
           ...session.user,
           id: token.sub ?? '',
           role: (token.role as string) ?? '',
+          kind: 'staff' as const,
+          // Present for type-shape parity with the customer session; never
+          // read on this surface, and never non-empty.
+          accountId: '',
         },
       }
     },

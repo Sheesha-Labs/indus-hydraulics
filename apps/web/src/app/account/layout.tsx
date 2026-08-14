@@ -1,14 +1,9 @@
-import { auth } from '../../lib/auth'
-import { redirect } from 'next/navigation'
+import { requireCustomer } from '../../lib/customer-session'
 import { db } from '@indus/db'
 import AccountSidebar from './AccountSidebar'
 
 export default async function AccountLayout({ children }: { children: React.ReactNode }) {
-  const session = await auth()
-
-  if (!session?.user?.id || !session.user.accountId) {
-    redirect(`/sign-in`)
-  }
+  const session = await requireCustomer()
 
   const accountId = session.user.accountId
   const contactId = session.user.id

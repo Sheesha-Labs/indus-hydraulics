@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { db } from '@indus/db'
-import { auth } from '../../../lib/auth'
-import { redirect } from 'next/navigation'
+import { ROLES } from '../../../lib/rbac'
+import { requireStaffRole } from '../../../lib/staff-session'
 import SettingsPageClient from '../../../components/SettingsPageClient'
 
 export const metadata: Metadata = { title: 'Settings — Indus Admin' }
@@ -9,8 +9,7 @@ export const metadata: Metadata = { title: 'Settings — Indus Admin' }
 type Props = { searchParams: Promise<{ tab?: string }> }
 
 export default async function SettingsPage({ searchParams }: Props) {
-  const session = await auth()
-  if (!session) redirect('/sign-in')
+  await requireStaffRole(ROLES.SETTINGS_WRITE)
 
   const { tab = 'store' } = await searchParams
 

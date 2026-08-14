@@ -40,7 +40,6 @@ function SecurityPanel({ phone, hours }: { phone: string | null; hours: string |
         {[
           'Reset links are single-use and expire after 60 minutes',
           'Resets are logged and your account manager is notified',
-          'SSO accounts (Microsoft 365) reset through your IT team',
           lockoutLine,
         ].map((item) => (
           <li key={item} className="grid grid-cols-[24px_1fr] gap-3">

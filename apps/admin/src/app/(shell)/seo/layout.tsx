@@ -1,6 +1,5 @@
-import { redirect } from 'next/navigation'
-import { auth } from '../../../lib/auth'
-import { hasRole, ROLES } from '../../../lib/rbac'
+import { ROLES } from '../../../lib/rbac'
+import { requireStaffRole } from '../../../lib/staff-session'
 import SeoTabsNav from './SeoTabsNav'
 
 /**
@@ -9,9 +8,7 @@ import SeoTabsNav from './SeoTabsNav'
  * SEO_WRITE / SEO_INFRASTRUCTURE checks at the action layer.
  */
 export default async function SeoLayout({ children }: { children: React.ReactNode }) {
-  const session = await auth()
-  if (!session) redirect('/sign-in')
-  if (!hasRole(session, ROLES.SEO_READ)) redirect('/')
+  await requireStaffRole(ROLES.SEO_READ)
 
   return (
     <div className="p-8">

@@ -1,12 +1,19 @@
 import type { Metadata } from 'next'
 import AdminSignInForm from './AdminSignInForm'
+import { safeNextPath } from '../../../lib/safe-next-path'
 
 export const metadata: Metadata = { title: 'Sign in — Admin' }
 
-type Props = { params: Promise<Record<string, never>> }
+type Props = {
+  params: Promise<Record<string, never>>
+  searchParams: Promise<{ next?: string }>
+}
 
-export default async function AdminSignInPage({ params }: Props) {
+export default async function AdminSignInPage({ params, searchParams }: Props) {
   await params
+  // The proxy attaches ?next= when it bounces a deep link. Neither sign-in
+  // page has ever read it, so those links were silently dropped.
+  const next = safeNextPath((await searchParams).next) ?? undefined
 
   return (
     <div className="min-h-screen bg-[#0e1013] flex items-center justify-center p-6">
@@ -31,7 +38,7 @@ export default async function AdminSignInPage({ params }: Props) {
             This portal is for Indus Hydraulics staff only.
           </p>
 
-          <AdminSignInForm />
+          <AdminSignInForm next={next} />
         </div>
 
         <p className="text-center font-mono text-[11px] text-[#3a3f47] mt-6">
