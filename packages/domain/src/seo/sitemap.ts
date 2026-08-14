@@ -1,6 +1,6 @@
 /**
  * Pure sitemap entry builder. Used by BOTH:
- *   - apps/storefront/src/app/sitemap.ts (the public XML)
+ *   - apps/web/src/app/sitemap.ts (the public XML)
  *   - apps/admin /seo/sitemap previewer (so admin sees what the bots see)
  *
  * Inputs are entity rows; outputs are sitemap entries. No DB calls here.

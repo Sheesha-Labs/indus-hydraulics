@@ -5,7 +5,7 @@
  * `JSON.stringify` inside a `<script type="application/ld+json">` element.
  *
  * Storefront pages call these from server components (see
- * `apps/storefront/src/components/JsonLd.tsx` and the per-route page.tsx).
+ * `apps/web/src/components/JsonLd.tsx` and the per-route page.tsx).
  */
 
 export type JsonLd = Record<string, unknown>

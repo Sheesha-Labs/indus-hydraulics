@@ -2,7 +2,7 @@
  * Allow-list HTML sanitiser for `Product.descriptionLong`.
  *
  * Why this exists: the storefront PDP renders descriptionLong via
- * `dangerouslySetInnerHTML` (apps/storefront/src/components/ProductTabs.tsx:106).
+ * `dangerouslySetInnerHTML` (apps/web/src/components/ProductTabs.tsx:106).
  * If a malicious value lands in the DB — through a future CSV import, a
  * compromised data file, or bad copy-paste from a vendor's site — it would
  * execute in users' browsers. We sanitise at import time so that only safe

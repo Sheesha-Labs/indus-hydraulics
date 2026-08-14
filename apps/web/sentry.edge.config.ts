@@ -1,6 +1,6 @@
 import * as Sentry from '@sentry/nextjs'
 
-// Edge runtime — middleware (apps/storefront/src/proxy.ts) and any route
+// Edge runtime — middleware (apps/web/src/proxy.ts) and any route
 // handlers configured with `runtime = 'edge'`.
 Sentry.init({
   dsn: process.env.SENTRY_DSN,

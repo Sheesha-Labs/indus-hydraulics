@@ -5,7 +5,7 @@ navigation tree from **18 top-level sections to 6**, run 2026-06-13.
 
 ## Why
 
-The storefront megamenu (`apps/storefront/src/components/SiteHeaderClient.tsx`)
+The storefront megamenu (`apps/web/src/components/SiteHeaderClient.tsx`)
 renders a 3-column hover panel; **Column 1 listed all 18 L1 sections**, which
 felt overwhelming. This script re-parents the existing sections into 6 broad
 domains. It is a **data change to the live DB**, not a code feature — the
@@ -46,7 +46,7 @@ of the script — edit those to re-shape and re-run.
 ## Caveats
 
 - The storefront caches navigation for ~5 min (`unstable_cache` tag `nav-menu`
-  in `apps/storefront/src/lib/navigation.ts`); changes appear within that window
+  in `apps/web/src/lib/navigation.ts`); changes appear within that window
   or on redeploy.
 - **Seed drift (pre-existing):** `seedNavigationMenus` in `../src/seed.ts` still
   defines only the original 6 *hydraulic* sections and runs only when the menu

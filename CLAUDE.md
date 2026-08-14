@@ -8,7 +8,7 @@ This file is the authoritative engineering guide for this codebase. Claude Code 
 
 | Layer | Technology |
 |---|---|
-| Framework | Next.js 15 (App Router) |
+| Framework | Next.js 16 (App Router) |
 | Language | TypeScript 5 (strict mode) |
 | Styling | Tailwind CSS v4 |
 | Components | shadcn/ui (Radix UI primitives) |
@@ -26,7 +26,7 @@ This file is the authoritative engineering guide for this codebase. Claude Code 
 
 ### Rules
 
-1. **All shared UI lives in `packages/ui`.** Never build a one-off component inside `apps/storefront` or `apps/admin` if it could ever be reused. Move it to `packages/ui` and import it.
+1. **All shared UI lives in `packages/ui`.** Never build a one-off component inside `apps/web` or `apps/admin` if it could ever be reused. Move it to `packages/ui` and import it.
 
 2. **Pages are thin.** Route files (`page.tsx`) fetch data and pass typed props to components. No business logic in pages.
 
@@ -101,11 +101,11 @@ This file is the authoritative engineering guide for this codebase. Claude Code 
 ### Rules
 
 1. **Two completely separate auth contexts:**
-   - `account_contact` — storefront/customer portal (`apps/storefront`)
+   - `account_contact` — storefront/customer portal (`apps/web`)
    - `staff_user` — admin (`apps/admin`)
    They must never share sessions or auth backends.
 
-2. **Middleware enforces auth on every protected segment.** Do not rely on page-level redirects. The `middleware.ts` in each app handles auth guards before the page renders.
+2. **Middleware enforces auth on every protected segment.** Do not rely on page-level redirects. Next.js 16 renamed the middleware file: the `src/proxy.ts` in each app handles auth guards before the page renders.
 
 3. **Role checks happen server-side.** Never trust a role value passed from the client. Always read it from the session.
 
@@ -229,7 +229,6 @@ chore/prisma-schema-update
 - PRs must reference the phase they implement
 - No direct pushes to `main`
 - Squash merge only
-- Every PR that adds English UI copy must include the matching Arabic translation keys
 
 ---
 
@@ -246,7 +245,7 @@ chore/prisma-schema-update
 ## 11. File Structure Reference
 
 ```
-apps/storefront/
+apps/web/
   src/
     app/
       layout.tsx             ← Root layout (<html lang="en">, fonts)

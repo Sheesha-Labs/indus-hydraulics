@@ -10,7 +10,7 @@ interface Props {
 
 /**
  * 301/302/307/308 redirects, surfaced with hit counts so admins can spot
- * dead rules. The middleware (apps/storefront/proxy.ts) is the consumer —
+ * dead rules. The middleware (apps/web/proxy.ts) is the consumer —
  * a future commit wires the `hits` increment.
  */
 export default function RedirectsManager({ redirects: initialRedirects }: Props) {

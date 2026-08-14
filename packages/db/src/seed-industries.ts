@@ -1,6 +1,6 @@
 /**
  * Industry seed data — extracted from the previously hardcoded
- * INDUSTRIES maps in apps/storefront/src/app/industries/*. Lives in a
+ * INDUSTRIES maps in apps/web/src/app/industries/*. Lives in a
  * separate module so seed.ts stays readable and so a future content
  * editor can extend the list without scrolling through pump SKUs.
  *

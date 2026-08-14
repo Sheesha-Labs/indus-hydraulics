@@ -10,7 +10,7 @@
  * validated products onto the template's ordered fields.
  *
  * DB-touching code (Prisma fetch, page rendering) lives in
- * `apps/storefront/src/app/compare/page.tsx`. Everything in this file is
+ * `apps/web/src/app/compare/page.tsx`. Everything in this file is
  * Prisma-free so it can be unit-tested without a DB.
  */
 
