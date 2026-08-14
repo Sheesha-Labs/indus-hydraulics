@@ -153,9 +153,9 @@ async function main() {
 
   // ── Staff user ──────────────────────────────────────────────────────────────
   const staffUser = await db.staffUser.upsert({
-    where: { email: 'admin@indushydraulics.com' },
+    where: { email: 'admin@indushydraulics.me' },
     create: {
-      email: 'admin@indushydraulics.com',
+      email: 'admin@indushydraulics.me',
       name: 'Ravi Bhatt',
       role: 'super_admin',
       isActive: true,
@@ -637,7 +637,7 @@ async function main() {
     await db.storeSettings.create({
       data: {
         name: 'Indus Hydraulics',
-        supportEmail: 'support@indushydraulics.com',
+        supportEmail: 'support@indushydraulics.me',
         defaultCurrency: 'USD',
         defaultIncoterm: 'EXW',
         defaultPaymentTerms: 30,

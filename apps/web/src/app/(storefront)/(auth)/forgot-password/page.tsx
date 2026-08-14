@@ -55,8 +55,8 @@ function SecurityPanel({ phone, hours }: { phone: string | null; hours: string |
         </p>
         <p className="text-[oklch(0.78_0_0)] text-[13px] leading-relaxed">
           Reach{' '}
-          <a href="mailto:portal-support@indushydraulics.com" className="text-white hover:underline">
-            portal-support@indushydraulics.com
+          <a href="mailto:portal-support@indushydraulics.me" className="text-white hover:underline">
+            portal-support@indushydraulics.me
           </a>{' '}
           with your account ID and we&apos;ll get you back in within one business hour.
         </p>

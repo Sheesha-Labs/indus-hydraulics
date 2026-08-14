@@ -245,8 +245,8 @@ export default async function ShippingPage({ params }: Props) {
       <Section title="10. Contact">
         <p>
           For shipping or freight queries, contact our logistics desk at{' '}
-          <a className="text-[var(--color-accent)] hover:underline" href="mailto:sales@indushydraulics.com">
-            sales@indushydraulics.com
+          <a className="text-[var(--color-accent)] hover:underline" href="mailto:sales@indushydraulics.me">
+            sales@indushydraulics.me
           </a>{' '}
           or via the channels on our{' '}
           <a className="text-[var(--color-accent)] hover:underline" href="/contact">

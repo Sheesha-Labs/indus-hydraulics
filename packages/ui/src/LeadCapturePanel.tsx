@@ -142,7 +142,7 @@ export function buildWhatsappHref(phone: string | null | undefined, prefill?: st
  * generic sales inbox when `email` is unset so the CTA is never dead.
  */
 export function buildMailtoHref(email: string | null | undefined, subject?: string): string {
-  const to = email ?? 'enquiries@indushydraulics.com'
+  const to = email ?? 'enquiries@indushydraulics.me'
   const subjectPart = subject ? `?subject=${encodeURIComponent(subject)}` : ''
   return `mailto:${to}${subjectPart}`
 }

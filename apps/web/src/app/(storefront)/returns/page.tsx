@@ -39,7 +39,7 @@ const FAQS = [
   },
   {
     q: 'How do I start a return?',
-    a: 'Email sales@indushydraulics.com with the Estimate number, the items concerned, and photos where applicable. We will issue a written RMA with return instructions before you ship anything back. Unauthorized returns are not accepted.',
+    a: 'Email sales@indushydraulics.me with the Estimate number, the items concerned, and photos where applicable. We will issue a written RMA with return instructions before you ship anything back. Unauthorized returns are not accepted.',
   },
 ]
 
@@ -189,8 +189,8 @@ export default async function ReturnsPage({ params }: Props) {
         <ol className="list-decimal pl-6 space-y-1">
           <li>
             <strong>Request:</strong> Email{' '}
-            <a className="text-[var(--color-accent)] hover:underline" href="mailto:sales@indushydraulics.com">
-              sales@indushydraulics.com
+            <a className="text-[var(--color-accent)] hover:underline" href="mailto:sales@indushydraulics.me">
+              sales@indushydraulics.me
             </a>{' '}
             with the Estimate or invoice number, the items concerned, quantities, and reason for
             return. Include photographs for damage or wrong-item claims.
@@ -224,8 +224,8 @@ export default async function ReturnsPage({ params }: Props) {
       <Section title="9. Contact">
         <p>
           For all return and RMA queries, contact our customer service team at{' '}
-          <a className="text-[var(--color-accent)] hover:underline" href="mailto:sales@indushydraulics.com">
-            sales@indushydraulics.com
+          <a className="text-[var(--color-accent)] hover:underline" href="mailto:sales@indushydraulics.me">
+            sales@indushydraulics.me
           </a>{' '}
           or via the channels on our{' '}
           <a className="text-[var(--color-accent)] hover:underline" href="/contact">

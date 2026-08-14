@@ -1,4 +1,5 @@
 import { db } from '@indus/db'
+import { DEFAULT_FROM_EMAIL } from '@indus/domain'
 
 export type EmailBranding = {
   legalName: string
@@ -14,7 +15,9 @@ export type EmailBranding = {
   internalAlertEmails: string[]
 }
 
-const FALLBACK_FROM_EMAIL = 'sales@indushydraulics.me'
+// Transactional mail must be replyable, so it sends from the domain that
+// actually has mailboxes. See @indus/domain/email-domains.
+const FALLBACK_FROM_EMAIL = DEFAULT_FROM_EMAIL
 const FALLBACK_LEGAL_NAME = 'Indus Hydraulic Power Trading LLC'
 
 /**

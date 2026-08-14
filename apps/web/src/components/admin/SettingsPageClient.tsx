@@ -103,7 +103,7 @@ export default function SettingsPageClient({ activeTab, storeSettings, emailTemp
               name="supportEmail"
               type="email"
               defaultValue={storeSettings?.supportEmail ?? ''}
-              placeholder="support@indushydraulics.com"
+              placeholder="support@indushydraulics.me"
               className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] focus:outline-none focus:border-[var(--color-accent)]"
             />
           </div>
@@ -223,7 +223,7 @@ export default function SettingsPageClient({ activeTab, storeSettings, emailTemp
               name="contactEmail"
               type="email"
               defaultValue={storeSettings?.contactEmail ?? ''}
-              placeholder="sales@indushydraulics.com"
+              placeholder="sales@indushydraulics.me"
               className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] focus:outline-none focus:border-[var(--color-accent)]"
             />
           </div>
