@@ -4,11 +4,8 @@ import path from 'node:path'
 import { describe, expect, test } from 'vitest'
 
 const REPO_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../../..')
-const SCAN_PATHS = [
-  path.join(REPO_ROOT, 'apps/admin/src'),
-  path.join(REPO_ROOT, 'apps/web/src'),
-  path.join(REPO_ROOT, 'packages'),
-]
+// One app since the storefront/admin merge; apps/admin/src is gone.
+const SCAN_PATHS = [path.join(REPO_ROOT, 'apps/web/src'), path.join(REPO_ROOT, 'packages')]
 const SCAN_EXTS = new Set(['.ts', '.tsx', '.json', '.prisma'])
 const IGNORED_DIRS = new Set(['node_modules', '.next', 'generated', 'dist', '.turbo'])
 const SELF = path.basename(fileURLToPath(import.meta.url)) // skip self-references
@@ -69,7 +66,7 @@ describe('i18n removal — static guards (none of these should ever come back)',
 
   test('no [locale] route segments under apps/', () => {
     const hits: string[] = []
-    for (const app of ['admin', 'web']) {
+    for (const app of ['web']) {
       const root = path.join(REPO_ROOT, 'apps', app, 'src')
       if (!existsSync(root)) continue
       for (const file of walk(root)) {
@@ -97,7 +94,6 @@ describe('i18n removal — static guards (none of these should ever come back)',
 
   test('next-intl and @indus/i18n are not declared as dependencies', () => {
     const pkgFiles = [
-      'apps/admin/package.json',
       'apps/web/package.json',
       'packages/db/package.json',
       'packages/domain/package.json',

@@ -2,7 +2,7 @@
 
 import { useRef, useState, useEffect, useTransition } from 'react'
 import Link from 'next/link'
-import { submitRfq } from '../app/quote/actions'
+import { submitRfq } from '../app/(storefront)/quote/actions'
 
 type Address = {
   id: string
