@@ -8,7 +8,7 @@ import { ROLES, requireRole } from '../../../../../lib/rbac'
 import { fail, failFromError, ok, type Result } from '../../../../../lib/result'
 import { scoreFromProduct } from '../../../../../lib/product-content-score'
 import { inngest } from '../../../../../inngest/client'
-import { buildProductBlueprintPrompt } from '../../../../../lib/product-blueprint/prompt'
+import { authorProductBlueprintPrompt } from '../../../../../lib/product-blueprint/author'
 import {
   copyBlueprintDraftToProduct,
   deleteBlueprintObject,
@@ -25,11 +25,40 @@ import {
 
 const ProductIdSchema = z.string().uuid()
 const SuggestionIdSchema = z.string().uuid()
-const CustomInstructionsSchema = z.string().trim().max(1500).optional()
+const BlueprintPromptSchema = z.string().trim().min(400).max(12000)
 const RefinementSchema = z.string().trim().min(3).max(1000)
 
+export async function generateProductBlueprintPrompt(
+  productId: string
+): Promise<Result<{ prompt: string }>> {
+  try {
+    requireRole(await auth(), ROLES.AI_GENERATE)
+    ProductIdSchema.parse(productId)
+
+    if (!process.env.OPENAI_API_KEY) {
+      return fail('PRECONDITION_FAILED', 'OPENAI_API_KEY is not configured')
+    }
+
+    const product = await db.product.findUnique({
+      where: { id: productId },
+      select: { title: true },
+    })
+    if (!product) return fail('NOT_FOUND', 'Product not found')
+
+    try {
+      const authored = await authorProductBlueprintPrompt(product.title)
+      return ok({ prompt: authored.prompt })
+    } catch (error) {
+      console.error('[product-blueprint] prompt authoring failed:', error)
+      return fail('INTERNAL', 'Could not generate the product image prompt')
+    }
+  } catch (error) {
+    return failFromError(error)
+  }
+}
+
 export async function queueProductBlueprintGeneration(
-  formData: FormData,
+  formData: FormData
 ): Promise<Result<{ suggestionId: string }>> {
   try {
     const session = requireRole(await auth(), ROLES.AI_GENERATE)
@@ -38,8 +67,7 @@ export async function queueProductBlueprintGeneration(
     }
 
     const productId = ProductIdSchema.parse(formData.get('productId'))
-    const customInstructions =
-      CustomInstructionsSchema.parse(formData.get('customInstructions') ?? '') || null
+    const prompt = BlueprintPromptSchema.parse(formData.get('prompt'))
 
     const existing = await db.aiSuggestion.findFirst({
       where: {
@@ -53,7 +81,7 @@ export async function queueProductBlueprintGeneration(
     if (existing) {
       return fail(
         'PRECONDITION_FAILED',
-        'This product already has a blueprint draft awaiting review',
+        'This product already has a blueprint draft awaiting review'
       )
     }
 
@@ -67,8 +95,13 @@ export async function queueProductBlueprintGeneration(
     })
     if (!product) return fail('NOT_FOUND', 'Product not found')
 
-    const built = buildProductBlueprintPrompt(
-      {
+    const context: BlueprintGenerationContext = {
+      version: 1,
+      generationStatus: 'queued',
+      prompt,
+      customInstructions: null,
+      referenceImageUrl: process.env.OPENAI_BLUEPRINT_REFERENCE_URL ?? BLUEPRINT_REFERENCE_URL,
+      productSnapshot: {
         id: product.id,
         sku: product.sku,
         mpn: product.mpn,
@@ -76,24 +109,16 @@ export async function queueProductBlueprintGeneration(
         descriptionShort: product.descriptionShort,
         brandName: product.brand?.name ?? null,
         categoryName: product.category?.name ?? null,
-        specs: product.specs.map((spec) => ({
-          group: spec.group,
-          label: spec.label,
-          value: spec.value,
-          unit: spec.unit,
-        })),
+        specs: product.specs
+          .filter((spec) => spec.label.trim() && spec.value.trim())
+          .slice(0, 24)
+          .map((spec) => ({
+            group: spec.group,
+            label: spec.label,
+            value: spec.value,
+            unit: spec.unit,
+          })),
       },
-      customInstructions,
-    )
-
-    const context: BlueprintGenerationContext = {
-      version: 1,
-      generationStatus: 'queued',
-      prompt: built.prompt,
-      customInstructions,
-      referenceImageUrl:
-        process.env.OPENAI_BLUEPRINT_REFERENCE_URL ?? BLUEPRINT_REFERENCE_URL,
-      productSnapshot: built.productSnapshot,
       attempts: 1,
       refinementHistory: [],
     }
@@ -103,9 +128,7 @@ export async function queueProductBlueprintGeneration(
         entityType: 'product',
         entityId: product.id,
         field: BLUEPRINT_SUGGESTION_FIELD,
-        model:
-          process.env.OPENAI_BLUEPRINT_ORCHESTRATOR_MODEL ??
-          BLUEPRINT_ORCHESTRATOR_MODEL,
+        model: process.env.OPENAI_BLUEPRINT_ORCHESTRATOR_MODEL ?? BLUEPRINT_ORCHESTRATOR_MODEL,
         inputContext: context as unknown as Prisma.InputJsonValue,
         output: '',
         status: 'pending',
@@ -142,7 +165,7 @@ export async function queueProductBlueprintGeneration(
 
 export async function refineProductBlueprint(
   suggestionId: string,
-  instruction: string,
+  instruction: string
 ): Promise<Result<void>> {
   try {
     requireRole(await auth(), ROLES.AI_GENERATE)

@@ -57,7 +57,12 @@ export async function discoverAndCrawl(startUrl: string, opts: CrawlOptions = {}
   const adapter = getAdapterForHost(hostname, ctx)
 
   const discoveredUrls = await adapter.discoverProductUrls(startUrl)
-  const limited = discoveredUrls.slice(0, opts.maxUrls ?? DEFAULT_MAX_URLS)
+  // A direct product URL is a useful input even when the host has no
+  // sitemap or its URL shape does not match our generic product heuristic.
+  // In that case, parse the page the operator supplied instead of returning
+  // an empty crawl.
+  const urls = discoveredUrls.length > 0 ? discoveredUrls : [startUrl]
+  const limited = urls.slice(0, opts.maxUrls ?? DEFAULT_MAX_URLS)
   const { products, errors } = await crawlInternal(ctx, adapter, limited, opts)
   return { hostname, startUrl, discoveredUrls: limited, products, errors }
 }

@@ -42,3 +42,9 @@ playwright-report
 
 # TypeScript
 *.tsbuildinfo
+
+# Claude Code worktrees (git worktrees, never source)
+.claude/worktrees/
+
+# Generated catalogue-enrichment artifacts (CLI output, not source)
+data/

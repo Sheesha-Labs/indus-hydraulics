@@ -290,6 +290,7 @@ export default function ProductEditorClient({
       {tab === 'images' && (
         <ImagesTab
           productId={product.id}
+          productTitle={product.title}
           images={images}
           blueprintGenerationAvailable={blueprintGenerationAvailable}
           blueprintReferenceUrl={blueprintReferenceUrl}
@@ -1271,6 +1272,7 @@ function AddSpecForm({
 
 function ImagesTab({
   productId,
+  productTitle,
   images,
   blueprintGenerationAvailable,
   blueprintReferenceUrl,
@@ -1278,6 +1280,7 @@ function ImagesTab({
   onSaved,
 }: {
   productId: string
+  productTitle: string
   images: Image[]
   blueprintGenerationAvailable: boolean
   blueprintReferenceUrl: string
@@ -1320,6 +1323,7 @@ function ImagesTab({
     <div className="flex flex-col gap-6 max-w-4xl">
       <BlueprintImagePanel
         productId={productId}
+        productTitle={productTitle}
         generationAvailable={blueprintGenerationAvailable}
         referenceImageUrl={blueprintReferenceUrl}
         suggestions={blueprintSuggestions}

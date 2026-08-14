@@ -1,57 +1,42 @@
 import { describe, expect, it } from 'vitest'
-import { buildProductBlueprintPrompt } from './prompt'
+import { buildBlueprintPromptAuthoringRequest, normalizeAuthoredBlueprintPrompt } from './prompt'
 
-describe('buildProductBlueprintPrompt', () => {
-  it('includes verified product facts and accuracy guardrails', () => {
-    const result = buildProductBlueprintPrompt(
-      {
-        id: 'product-1',
-        sku: 'IH-4SP',
-        mpn: '4SP',
-        title: '4SP Four-Spiral High-Pressure Hydraulic Hose',
-        descriptionShort: 'Heavy-duty spiral reinforced hydraulic hose.',
-        brandName: 'INDUS',
-        categoryName: 'Hydraulic Hoses',
-        specs: [
-          {
-            group: 'Performance',
-            label: 'Working Pressure',
-            value: 'Very high pressure',
-            unit: null,
-          },
-        ],
-      },
-      'Show the four spiral reinforcement layers in a cutaway.',
-      new Date('2026-06-14T00:00:00Z'),
+describe('buildBlueprintPromptAuthoringRequest', () => {
+  it('uses the title as the only product-specific input', () => {
+    const request = buildBlueprintPromptAuthoringRequest(
+      'INDUS 4SP Four-Spiral High-Pressure Hydraulic Hose',
+      new Date('2026-06-14T00:00:00Z')
     )
 
-    expect(result.prompt).toContain('PRODUCT TITLE — 4SP Four-Spiral High-Pressure Hydraulic Hose')
-    expect(result.prompt).toContain('PERFORMANCE / WORKING PRESSURE — Very high pressure')
-    expect(result.prompt).toContain('Show the four spiral reinforcement layers in a cutaway.')
-    expect(result.prompt).toContain('DATE — 2026-06')
-    expect(result.prompt).toContain('1600 x 1200')
-    expect(result.prompt).toContain('4:3 landscape aspect ratio')
-    expect(result.prompt).toContain('Do not return a square image')
-    expect(result.prompt).toContain('never invent materials, ratings, standards')
+    expect(request.input).toBe(
+      'Author the ready-to-use INDUS blueprint image prompt for this product title:\nINDUS 4SP Four-Spiral High-Pressure Hydraulic Hose'
+    )
+    expect(request.instructions).toContain('product title is the only product-specific source')
+    expect(request.instructions).toContain('1600 x 1200')
+    expect(request.instructions).toContain('landscape 4:3')
+    expect(request.instructions).toContain('Four to six lettered technical callouts')
+    expect(request.instructions).toContain('Three right-side specification icons')
+    expect(request.instructions).toContain('DATE — 2026-06')
+    expect(request.instructions).toContain('INDUS QUALITY. ENGINEERED RELIABILITY.')
   })
 
-  it('does not add absent brand or MPN facts', () => {
-    const result = buildProductBlueprintPrompt(
-      {
-        id: 'product-2',
-        sku: 'IH-001',
-        mpn: null,
-        title: 'Hydraulic Adapter',
-        descriptionShort: null,
-        brandName: null,
-        categoryName: 'Adapters',
-        specs: [],
-      },
-      null,
-      new Date('2026-06-14T00:00:00Z'),
+  it('forbids unsupported exact specifications', () => {
+    const request = buildBlueprintPromptAuthoringRequest(
+      'Hydraulic Adapter',
+      new Date('2026-06-14T00:00:00Z')
     )
 
-    expect(result.prompt).not.toContain('MPN / SERIES')
-    expect(result.prompt).not.toContain('MANUFACTURER / BRAND')
+    expect(request.instructions).toContain('Never invent exact dimensions')
+    expect(request.instructions).toContain('standards, certifications')
+    expect(request.instructions).toContain('use a truthful qualitative description or omit it')
+  })
+})
+
+describe('normalizeAuthoredBlueprintPrompt', () => {
+  it('removes common response wrappers', () => {
+    expect(normalizeAuthoredBlueprintPrompt('```text\nCreate the plate.\n```')).toBe(
+      'Create the plate.'
+    )
+    expect(normalizeAuthoredBlueprintPrompt('“Create the plate.”')).toBe('Create the plate.')
   })
 })
