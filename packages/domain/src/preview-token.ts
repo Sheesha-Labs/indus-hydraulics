@@ -17,9 +17,23 @@ function getSecret(): string {
   return secret
 }
 
+/**
+ * Token type tag, checked immediately after the signature.
+ *
+ * Preview tokens and quote-access tokens shared one secret and one wire
+ * format, so a quote token passed this module's HMAC check and was rejected
+ * only because the payload's key happened to be `rfq` rather than `sku` —
+ * domain separation resting on a JSON key name. `typ` makes it explicit, and
+ * the secrets are split besides.
+ *
+ * Enforced strictly here: this token's TTL is 15 minutes, so no untagged
+ * token minted before this change can still be within its validity window.
+ */
+const TOKEN_TYPE = 'preview'
+
 export function signPreviewToken(sku: string, ttlMs: number = DEFAULT_TTL_MS): string {
   const exp = Date.now() + ttlMs
-  const payload = b64url(Buffer.from(JSON.stringify({ sku, exp })))
+  const payload = b64url(Buffer.from(JSON.stringify({ typ: TOKEN_TYPE, sku, exp })))
   const sig = b64url(createHmac('sha256', getSecret()).update(payload).digest())
   return `${payload}.${sig}`
 }
@@ -27,7 +41,10 @@ export function signPreviewToken(sku: string, ttlMs: number = DEFAULT_TTL_MS): s
 export function verifyPreviewToken(
   token: string | undefined | null,
   sku: string,
-): { valid: boolean; reason?: 'missing' | 'malformed' | 'bad-signature' | 'expired' | 'sku-mismatch' } {
+): {
+  valid: boolean
+  reason?: 'missing' | 'malformed' | 'bad-signature' | 'expired' | 'sku-mismatch' | 'wrong-type'
+} {
   if (!token) return { valid: false, reason: 'missing' }
   const parts = token.split('.')
   if (parts.length !== 2) return { valid: false, reason: 'malformed' }
@@ -37,12 +54,13 @@ export function verifyPreviewToken(
   if (givenSig.length !== expectedSig.length || !timingSafeEqual(givenSig, expectedSig)) {
     return { valid: false, reason: 'bad-signature' }
   }
-  let parsed: { sku: string; exp: number }
+  let parsed: { typ?: string; sku: string; exp: number }
   try {
     parsed = JSON.parse(fromB64url(payload).toString('utf8'))
   } catch {
     return { valid: false, reason: 'malformed' }
   }
+  if (parsed.typ !== TOKEN_TYPE) return { valid: false, reason: 'wrong-type' }
   if (typeof parsed.exp !== 'number' || Date.now() > parsed.exp) {
     return { valid: false, reason: 'expired' }
   }

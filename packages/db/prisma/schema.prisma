@@ -389,6 +389,13 @@ model StaffUser {
   createdAt    DateTime  @default(now())
   updatedAt    DateTime  @updatedAt
 
+  // Brute-force protection, mirroring AccountContact. Staff had none: the
+  // sign-in form accepted unlimited password guesses. Tolerable while it sat
+  // on an obscure admin-only host; not once /admin is on the public domain.
+  lastSignInAt      DateTime?
+  failedSignInCount Int       @default(0)
+  lockedUntil       DateTime?
+
   assignedAccounts Account[]
   assignedRfqs     Rfq[]          @relation("AssignedEngineer")
   repRfqs          Rfq[]          @relation("AssignedRep")

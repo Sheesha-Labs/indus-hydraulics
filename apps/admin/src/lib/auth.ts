@@ -40,8 +40,27 @@ const nextAuth = NextAuth({
 
         if (!staffUser || !staffUser.isActive) return null
 
+        // Lockout mirrors the customer side (apps/web/src/lib/auth.ts). Staff
+        // previously had none — unlimited password guesses — which stops being
+        // acceptable once /admin is reachable on the public domain.
+        if (staffUser.lockedUntil && staffUser.lockedUntil > new Date()) return null
+
         const valid = await verify(parsed.data.password, staffUser.passwordHash ?? '')
-        if (!valid) return null
+
+        if (!valid) {
+          const failedCount = staffUser.failedSignInCount + 1
+          const lockedUntil = failedCount >= 5 ? new Date(Date.now() + 15 * 60 * 1000) : null
+          await db.staffUser.update({
+            where: { id: staffUser.id },
+            data: { failedSignInCount: failedCount, lockedUntil },
+          })
+          return null
+        }
+
+        await db.staffUser.update({
+          where: { id: staffUser.id },
+          data: { failedSignInCount: 0, lockedUntil: null, lastSignInAt: new Date() },
+        })
 
         return {
           id: staffUser.id,
