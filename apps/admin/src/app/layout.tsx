@@ -37,8 +37,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       className={`${inter.variable} ${ibmPlexMono.variable} h-full`}
       suppressHydrationWarning
     >
-      <body className="min-h-full bg-[var(--color-surface)] text-[var(--color-primary)] text-[14px]">
-        {children}
+      <body className="min-h-full bg-[var(--color-surface)] text-[var(--color-primary)]">
+        {/* Carries the admin type scale. See the [data-surface='admin'] block
+            in globals.css — the old text-[14px] utility here was dead code,
+            outranked by the unlayered body rule. */}
+        <div data-surface="admin" className="min-h-full">
+          {children}
+        </div>
         <Analytics />
       </body>
     </html>
