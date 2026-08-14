@@ -1,8 +1,9 @@
 'use client'
 
 import { usePathname } from 'next/navigation'
+import { stripAdminPrefix } from '../lib/admin-paths'
 import Link from 'next/link'
-import { adminSignOutAction } from '../app/(auth)/sign-in/actions'
+import { adminSignOutAction } from '../app/admin/sign-in/actions'
 import {
   LayoutDashboard,
   Package,
@@ -77,7 +78,10 @@ const NAV_SECTIONS: { section: string; items: NavItem[] }[] = [
 ]
 
 export default function AdminSidebar({ userName, userRole }: Props) {
-  const pathname = usePathname()
+  // Compare against the path relative to /admin: after the move every
+  // pathname starts with '/admin', so a raw startsWith test would mark
+  // nothing active.
+  const pathname = stripAdminPrefix(usePathname() ?? '/')
 
   const initials = userName
     .split(' ')

@@ -1,3 +1,5 @@
+import { adminPath, stripAdminPrefix } from '../lib/admin-paths'
+
 // Route label map for breadcrumb derivation. Mirrors the top-level entries
 // in AdminSidebar — keep these in sync if a new admin section is added.
 export const ROUTE_LABELS: Record<string, { section: string; label: string }> = {
@@ -62,7 +64,10 @@ function titleCase(segment: string): string {
 export type Crumb = { label: string; href?: string }
 
 export function deriveCrumbs(pathname: string): Crumb[] {
-  const segments = pathname.split('/').filter(Boolean)
+  // Read the path relative to /admin. Without this every pathname's first
+  // segment is the literal 'admin', which is in no ROUTE_LABELS entry, so
+  // every trail would silently collapse to a single "Admin" crumb.
+  const segments = stripAdminPrefix(pathname).split('/').filter(Boolean)
   const first = segments[0]
   if (!first) return [{ label: 'Dashboard' }]
 
@@ -72,7 +77,7 @@ export function deriveCrumbs(pathname: string): Crumb[] {
 
   const crumbs: Crumb[] = [{ label: top.section }]
   // The top-level item links back to itself only when we're deeper than it.
-  crumbs.push(rest.length > 0 ? { label: top.label, href: `/${first}` } : { label: top.label })
+  crumbs.push(rest.length > 0 ? { label: top.label, href: adminPath(`/${first}`) } : { label: top.label })
 
   for (const seg of rest) {
     if (isIdLike(seg)) continue

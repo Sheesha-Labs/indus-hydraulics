@@ -9,7 +9,10 @@ import { NextRequest, NextResponse } from 'next/server'
 import { isStaffRole } from './lib/rbac'
 
 // All admin routes except sign-in require a staff_user session
-const PUBLIC_ADMIN_PATHS = ['/sign-in', '/api/auth']
+const ADMIN_PREFIX = '/admin'
+
+/** The ONLY paths under /admin reachable without a staff session. */
+const PUBLIC_ADMIN_PATHS = ['/admin/sign-in', '/admin/api/auth']
 
 function isPublicPath(pathname: string): boolean {
   return PUBLIC_ADMIN_PATHS.some((path) => pathname === path || pathname.startsWith(`${path}/`))
@@ -56,7 +59,12 @@ function applySecurityHeaders(response: NextResponse, request: NextRequest): Nex
 export default async function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl
 
-  if (!isPublicPath(pathname)) {
+  // Everything staff lives under /admin now. Requests outside it that still
+  // reach this app (only /api/inngest, which authenticates by request
+  // signature) are not cookie-gated.
+  const isAdmin = pathname === ADMIN_PREFIX || pathname.startsWith(`${ADMIN_PREFIX}/`)
+
+  if (isAdmin && !isPublicPath(pathname)) {
     // Verify the token, don't just look for a cookie. Cookie presence proves
     // nothing — not signature, not expiry, not which surface minted it. Once
     // the storefront and admin share an origin, a customer's cookie is present
@@ -80,7 +88,7 @@ export default async function proxy(request: NextRequest) {
 
     if (!isStaff) {
       const next = pathname + (request.nextUrl.search ?? '')
-      const redirectUrl = new URL(`/sign-in`, request.url)
+      const redirectUrl = new URL(`/admin/sign-in`, request.url)
       redirectUrl.searchParams.set('next', next)
       return applySecurityHeaders(NextResponse.redirect(redirectUrl), request)
     }
@@ -91,6 +99,11 @@ export default async function proxy(request: NextRequest) {
 
 export const config = {
   matcher: [
-    '/((?!api|_next/static|_next/image|favicon.ico|.*\\.(?:svg|png|jpg|jpeg|gif|webp)$).*)',
+    // The lookahead is anchored right after the leading '/', so `api` exempts
+    // ONLY top-level /api/*. `/admin/api/auth/...` would otherwise match, get
+    // caught by the denylist above, and 302 to /admin/sign-in — an
+    // unbreakable sign-in redirect loop with no error message. `admin/api`
+    // must be listed explicitly.
+    '/((?!api|admin/api|_next/static|_next/image|favicon.ico|.*\\.(?:svg|png|jpg|jpeg|gif|webp)$).*)',
   ],
 }
