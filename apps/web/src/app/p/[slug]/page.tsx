@@ -16,7 +16,7 @@ import {
 } from '@indus/domain'
 import { JsonLd, ProductPrice } from '@indus/ui'
 import type { CurrencyCode } from '@indus/domain'
-import { safeAuth } from '../../../lib/auth'
+import { customerSessionOrNull } from '../../../lib/customer-session'
 import ProductGallery from '../../../components/ProductGallery'
 import AddToQuoteButton from '../../../components/AddToQuoteButton'
 import AddToCompareButton from '../../../components/AddToCompareButton'
@@ -157,7 +157,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function ProductPage({ params, searchParams }: Props) {
   const { slug } = await params
   const sp = (await searchParams) ?? {}
-  const session = await safeAuth()
+  const session = await customerSessionOrNull()
   const isSignedIn = !!session
 
   const decoded = decodeURIComponent(slug)

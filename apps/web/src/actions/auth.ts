@@ -1,7 +1,7 @@
 'use server'
 
 import { z } from 'zod'
-import { signIn } from '../lib/auth'
+import { signIn, signOut } from '../lib/auth'
 import { AuthError } from 'next-auth'
 import { redirect } from 'next/navigation'
 
@@ -284,4 +284,16 @@ export async function forgotPasswordAction(formData: FormData): Promise<Result<{
   }
 
   return { success: true, data: { email: parsed.data.email } }
+}
+
+/**
+ * Customer sign-out.
+ *
+ * A server action rather than `signOut` from next-auth/react: that client
+ * helper targets a build-time base path and, once the surfaces share an
+ * origin, would clear the wrong instance's cookie — leaving the real session
+ * alive while the UI claims you signed out.
+ */
+export async function signOutAction(): Promise<void> {
+  await signOut({ redirectTo: '/sign-in' })
 }

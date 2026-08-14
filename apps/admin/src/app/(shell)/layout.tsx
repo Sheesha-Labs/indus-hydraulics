@@ -1,14 +1,9 @@
-import { auth } from '../../lib/auth'
-import { redirect } from 'next/navigation'
+import { requireStaff } from '../../lib/staff-session'
 import AdminSidebar from '../../components/AdminSidebar'
 import AdminTopbar from '../../components/AdminTopbar'
 
 export default async function AdminShellLayout({ children }: { children: React.ReactNode }) {
-  const session = await auth()
-
-  if (!session) {
-    redirect(`/sign-in`)
-  }
+  const session = await requireStaff()
 
   return (
     <div className="flex min-h-screen">

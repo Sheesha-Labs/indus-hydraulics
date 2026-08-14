@@ -2,7 +2,7 @@
 
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
-import { signOut } from 'next-auth/react'
+import { signOutAction } from '../../actions/auth'
 
 interface Props {
   userName: string
@@ -91,7 +91,7 @@ export default function AccountSidebar({ userName, userEmail, counts }: Props) {
       {navLink(`/account/notifications`, 'Notifications', counts?.notifications)}
 
       <button
-        onClick={() => signOut({ callbackUrl: `/sign-in` })}
+        onClick={() => void signOutAction()}
         className="w-full flex items-center px-3 py-2 text-[13px] text-[var(--color-muted)] hover:bg-[var(--color-elevated)] transition-colors text-left mt-1"
       >
         Sign out

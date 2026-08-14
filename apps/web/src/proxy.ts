@@ -1,3 +1,10 @@
+import {
+  CUSTOMER_SESSION_COOKIE,
+  LEGACY_SESSION_COOKIES,
+  USE_SECURE_COOKIES,
+  requireAuthSecret,
+} from '@indus/domain'
+import { getToken } from 'next-auth/jwt'
 import { NextRequest, NextResponse } from 'next/server'
 
 const PROTECTED_ACCOUNT_PATHS = ['/account']
@@ -26,12 +33,19 @@ const CONTENT_SECURITY_POLICY = [
   'upgrade-insecure-requests',
 ].join('; ')
 
-function applySecurityHeaders(response: NextResponse): NextResponse {
+function applySecurityHeaders(response: NextResponse, request: NextRequest): NextResponse {
   response.headers.set('Content-Security-Policy', CONTENT_SECURITY_POLICY)
   response.headers.set('X-Content-Type-Options', 'nosniff')
   response.headers.set('Referrer-Policy', 'strict-origin-when-cross-origin')
   response.headers.set('X-Frame-Options', 'SAMEORIGIN')
   response.headers.set('Permissions-Policy', 'camera=(), microphone=(), geolocation=()')
+
+  // Clear the pre-split Auth.js cookies. They are never accepted, but stale
+  // copies at Path=/ make debugging confusing. Remove this block once the
+  // 8h maxAge has expired every session minted before the cutover.
+  for (const name of LEGACY_SESSION_COOKIES) {
+    if (request.cookies.has(name)) response.cookies.delete({ name, path: '/' })
+  }
   return response
 }
 
@@ -39,24 +53,37 @@ export default async function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl
 
   if (isProtectedAccountPath(pathname)) {
-    // NextAuth v5 (Auth.js) uses 'authjs.session-token' on HTTP,
-    // '__Secure-authjs.session-token' on HTTPS. Keep v4 names as fallback for
-    // any cookies persisted across the v4 → v5 upgrade.
-    const sessionToken =
-      request.cookies.get('authjs.session-token') ??
-      request.cookies.get('__Secure-authjs.session-token') ??
-      request.cookies.get('next-auth.session-token') ??
-      request.cookies.get('__Secure-next-auth.session-token')
+    // Verify the token, don't just look for a cookie. Cookie presence proves
+    // nothing — not signature, not expiry, not which surface minted it.
+    // getToken is HKDF + one AES decrypt with no DB access, unlike auth(),
+    // which would drag the Credentials provider's Prisma import into every
+    // matched request.
+    const token = await getToken({
+      req: request,
+      secret: requireAuthSecret('CUSTOMER_AUTH_SECRET'),
+      cookieName: CUSTOMER_SESSION_COOKIE,
+      // Must equal cookieName: @auth/core uses the cookie name as the HKDF salt.
+      salt: CUSTOMER_SESSION_COOKIE,
+      secureCookie: USE_SECURE_COOKIES,
+    })
 
-    if (!sessionToken) {
+    // accountId is the storefront's real authorization signal — every account
+    // query is scoped by it — so an empty one is not a usable session.
+    const isCustomer =
+      !!token?.sub &&
+      token.kind === 'customer' &&
+      typeof token.accountId === 'string' &&
+      token.accountId.length > 0
+
+    if (!isCustomer) {
       const next = pathname + (request.nextUrl.search ?? '')
       const redirectUrl = new URL(`/sign-in`, request.url)
       redirectUrl.searchParams.set('next', next)
-      return applySecurityHeaders(NextResponse.redirect(redirectUrl))
+      return applySecurityHeaders(NextResponse.redirect(redirectUrl), request)
     }
   }
 
-  return applySecurityHeaders(NextResponse.next())
+  return applySecurityHeaders(NextResponse.next(), request)
 }
 
 export const config = {

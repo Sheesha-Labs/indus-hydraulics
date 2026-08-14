@@ -1,5 +1,4 @@
 import type { Metadata } from 'next'
-import Link from 'next/link'
 import SignInForm from './SignInForm'
 
 export const metadata: Metadata = { title: 'Sign in' }
@@ -35,25 +34,6 @@ export default function SignInPage() {
           <h1 className="text-[36px] font-semibold tracking-tight leading-tight mb-7">Sign in</h1>
 
           <SignInForm />
-
-          <div className="flex items-center gap-3.5 my-6">
-            <div className="flex-1 h-px bg-[var(--color-border)]" />
-            <span className="font-mono text-[11px] tracking-[0.1em] text-[var(--color-caption)]">OR</span>
-            <div className="flex-1 h-px bg-[var(--color-border)]" />
-          </div>
-
-          <Link
-            href="/api/auth/signin/microsoft-entra-id"
-            className="flex items-center justify-center gap-2.5 w-full h-11 border border-[var(--color-border)] bg-[var(--color-elevated)] text-sm font-medium text-[var(--color-primary)] hover:bg-[var(--color-deep)] transition-colors"
-          >
-            <svg width="18" height="18" viewBox="0 0 21 21" fill="none" aria-hidden="true">
-              <rect width="10" height="10" fill="#F25022" />
-              <rect x="11" width="10" height="10" fill="#7FBA00" />
-              <rect y="11" width="10" height="10" fill="#00A4EF" />
-              <rect x="11" y="11" width="10" height="10" fill="#FFB900" />
-            </svg>
-            Sign in with Microsoft 365
-          </Link>
 
           <p className="mt-8 text-[13px] text-[var(--color-muted)]">
             New to Indus Hydraulics?{' '}

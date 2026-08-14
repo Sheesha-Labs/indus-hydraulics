@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { db } from '@indus/db'
 import { auth } from '../../../../lib/auth'
 import { ROLES as PERMS, requireRole } from '../../../../lib/rbac'
+import { requireStaffRole } from '../../../../lib/staff-session'
 
 export const metadata: Metadata = { title: 'Edit Staff — Indus Admin' }
 
@@ -20,8 +21,7 @@ const ROLES = [
 ]
 
 export default async function EditUserPage({ params }: Props) {
-  const session = await auth()
-  if (!session) redirect('/sign-in')
+  await requireStaffRole(PERMS.USERS_WRITE)
 
   const { id } = await params
 

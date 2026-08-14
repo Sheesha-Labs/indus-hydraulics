@@ -4,6 +4,7 @@ import { redirect } from 'next/navigation'
 import { db } from '@indus/db'
 import { auth } from '../../../../lib/auth'
 import { ROLES as PERMS, requireRole } from '../../../../lib/rbac'
+import { requireStaffRole } from '../../../../lib/staff-session'
 
 export const metadata: Metadata = { title: 'Add Staff — Indus Admin' }
 
@@ -18,8 +19,7 @@ const ROLES = [
 ]
 
 export default async function NewUserPage() {
-  const session = await auth()
-  if (!session) redirect('/sign-in')
+  await requireStaffRole(PERMS.USERS_WRITE)
 
   async function createUser(formData: FormData) {
     'use server'

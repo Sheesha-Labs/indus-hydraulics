@@ -1,18 +1,10 @@
-import NextAuth, { type DefaultSession, type Session } from 'next-auth'
+import { customerCookies, requireAuthSecret } from '@indus/domain'
+import NextAuth from 'next-auth'
 import Credentials from 'next-auth/providers/credentials'
-import MicrosoftEntraID from 'next-auth/providers/microsoft-entra-id'
 import { z } from 'zod'
 
-// Extend the built-in session types
-declare module 'next-auth' {
-  interface Session {
-    user: {
-      id: string
-      accountId: string
-      role: string
-    } & DefaultSession['user']
-  }
-}
+// The `next-auth` module augmentation lives in src/types/next-auth.d.ts —
+// one declaration for the whole program, shared verbatim with the admin app.
 
 const signInSchema = z.object({
   email: z.string().email(),
@@ -20,6 +12,13 @@ const signInSchema = z.object({
 })
 
 export const { handlers, auth, signIn, signOut } = NextAuth({
+  trustHost: true,
+  // Explicit secret + explicit cookie names are what isolate this instance
+  // from the staff one. See packages/domain/src/auth-cookies.ts — the session
+  // cookie's name is @auth/core's HKDF salt, so a differing name makes the two
+  // token families mutually undecryptable even under one secret.
+  secret: requireAuthSecret('CUSTOMER_AUTH_SECRET'),
+  cookies: customerCookies,
   providers: [
     Credentials({
       name: 'credentials',
@@ -71,11 +70,6 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
         }
       },
     }),
-    MicrosoftEntraID({
-      clientId: process.env.MICROSOFT_CLIENT_ID ?? '',
-      clientSecret: process.env.MICROSOFT_CLIENT_SECRET ?? '',
-      issuer: `https://login.microsoftonline.com/${process.env.MICROSOFT_TENANT_ID ?? 'common'}/v2.0`,
-    }),
   ],
   session: {
     strategy: 'jwt',
@@ -84,6 +78,7 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
   callbacks: {
     async jwt({ token, user }) {
       if (user) {
+        token.kind = 'customer'
         token.accountId = (user as unknown as { accountId: string }).accountId
         token.role = (user as unknown as { role: string }).role
       }
@@ -97,6 +92,7 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
           id: token.sub ?? '',
           accountId: (token.accountId as string) ?? '',
           role: (token.role as string) ?? '',
+          kind: 'customer' as const,
         },
       }
     },
@@ -106,18 +102,3 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
     error: '/sign-in',
   },
 })
-
-/**
- * Wrapper around `auth()` that swallows JWT-decryption / session-shape errors.
- * Use this on public-facing routes where a stale or malformed cookie should be
- * treated as "signed-out" rather than crashing the layout. For routes that must
- * have a valid session (account/*, server actions), call `auth()` directly so
- * the redirect still fires.
- */
-export async function safeAuth(): Promise<Session | null> {
-  try {
-    return await auth()
-  } catch {
-    return null
-  }
-}

@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { db } from '@indus/db'
-import { auth } from '../../../lib/auth'
-import { redirect } from 'next/navigation'
+import { ROLES } from '../../../lib/rbac'
+import { requireStaffRole } from '../../../lib/staff-session'
 
 export const metadata: Metadata = { title: 'Staff Users — Indus Admin' }
 
@@ -27,8 +27,8 @@ const ROLE_COLORS: Record<string, string> = {
 }
 
 export default async function UsersPage() {
-  const session = await auth()
-  if (!session) redirect('/sign-in')
+  // Lists every staff member's name, email and role — USERS_WRITE, not merely signed-in.
+  await requireStaffRole(ROLES.USERS_WRITE)
 
   const users = await db.staffUser.findMany({
     orderBy: [{ isActive: 'desc' }, { name: 'asc' }],

@@ -1,13 +1,15 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { auth } from '../../lib/auth'
+import { isCustomerSession } from '../../lib/customer-session'
 import QuoteBuilderClient from '../../components/QuoteBuilderClient'
 
 export const metadata: Metadata = { title: 'Quote Builder' }
 
 export default async function QuotePage() {
-  const session = await auth()
-  const isSignedIn = !!session
+  // `!!session` was true for any session at all; ownership on this surface
+  // is carried by accountId, so that is what "signed in" has to mean.
+  const isSignedIn = isCustomerSession(await auth())
 
   return (
     <div className="max-w-[1360px] mx-auto px-8 py-8 pb-20">

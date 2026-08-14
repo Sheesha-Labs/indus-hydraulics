@@ -1,4 +1,4 @@
-import { safeAuth } from '../lib/auth'
+import { customerSessionOrNull } from '../lib/customer-session'
 import { db } from '@indus/db'
 import { getNavMenu, getNavBrands, getNavIndustries } from '../lib/navigation'
 import { getStoreSettings } from '../lib/store-settings'
@@ -6,7 +6,7 @@ import SiteHeaderClient from './SiteHeaderClient'
 import NotificationBell from './NotificationBell'
 
 export default async function SiteHeader() {
-  const session = await safeAuth()
+  const session = await customerSessionOrNull()
 
   const [headerMenu, megamenu, brands, industries, settings, notifications] = await Promise.all([
     getNavMenu('primary_header'),
