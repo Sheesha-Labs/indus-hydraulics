@@ -1,3 +1,17 @@
+> **Superseded 2026-08-14 — the two Vercel projects are now one.**
+>
+> `apps/storefront` and `apps/admin` were merged into a single `apps/web`,
+> deployed as the single **`indus-hydraulics`** project. Admin is served at
+> `/admin/*` on the same origin. `indus-hydraulics-admin` still exists but its
+> build is disabled (Ignored Build Step = `exit 0`); its last good deployment
+> is retained as a rollback path and can be deleted once the merge has been
+> stable for a week.
+>
+> Everything below describes the previous two-project setup and is kept for
+> history. See CLAUDE.md §11 and §12 for the current structure.
+
+---
+
 # Vercel Deployment Handoff — `indus-hydraulics`
 
 > **Resolved 2026-05-04.** The Prisma engine bundling problem was fixed by

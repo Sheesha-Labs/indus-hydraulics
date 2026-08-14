@@ -1,6 +1,7 @@
 'use server'
 
 import { revalidatePath } from 'next/cache'
+import { invalidateBrands } from '../../../../lib/cache-tags'
 import { z } from 'zod'
 import { db } from '@indus/db'
 import { auth } from '../../../../lib/admin-auth'
@@ -69,6 +70,7 @@ export async function createBrand(formData: FormData): Promise<Result<{ id: stri
     })
 
     revalidatePath(`/admin/brands`)
+    invalidateBrands()
     return ok({ id: brand.id })
   } catch (err) {
     return failFromError(err)
@@ -119,6 +121,7 @@ export async function updateBrand(formData: FormData): Promise<Result<void>> {
     })
 
     revalidatePath(`/admin/brands`)
+    invalidateBrands()
     return ok(undefined)
   } catch (err) {
     return failFromError(err)
@@ -141,6 +144,7 @@ export async function deleteBrand(id: string): Promise<Result<void>> {
 
     await db.brand.delete({ where: { id } })
     revalidatePath(`/admin/brands`)
+    invalidateBrands()
     return ok(undefined)
   } catch (err) {
     return failFromError(err)

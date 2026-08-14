@@ -1,6 +1,7 @@
 'use server'
 
 import { revalidatePath } from 'next/cache'
+import { invalidateBlogPosts } from '../../../../../../lib/cache-tags'
 import { redirect } from 'next/navigation'
 import { z } from 'zod'
 import { db, Prisma } from '@indus/db'
@@ -47,6 +48,7 @@ export async function savePost(formData: FormData) {
   if (id === 'new') {
     const post = await db.blogPost.create({ data })
     revalidatePath('/admin/cms')
+    invalidateBlogPosts()
     redirect(`/admin/cms/blog/${post.id}`)
   } else {
     await db.blogPost.update({ where: { id }, data })
@@ -220,6 +222,7 @@ export async function updateBlogPostSeo(formData: FormData): Promise<Result<void
     )
 
     revalidatePath(`/admin/cms/blog/${parsed.id}`)
+    invalidateBlogPosts()
     revalidatePath(`/blog/${before.slug}`)
     revalidatePath('/admin/seo/inspector')
     return ok(undefined)

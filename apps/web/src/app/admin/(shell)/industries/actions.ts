@@ -1,6 +1,7 @@
 'use server'
 
 import { revalidatePath } from 'next/cache'
+import { invalidateIndustries } from '../../../../lib/cache-tags'
 import { z } from 'zod'
 import { db } from '@indus/db'
 import { auth } from '../../../../lib/admin-auth'
@@ -63,6 +64,7 @@ export async function createIndustry(formData: FormData): Promise<Result<{ id: s
     })
 
     revalidatePath(`/admin/industries`)
+    invalidateIndustries()
     return ok({ id: ind.id })
   } catch (err) {
     return failFromError(err)
@@ -107,6 +109,7 @@ export async function updateIndustry(formData: FormData): Promise<Result<void>> 
     })
 
     revalidatePath(`/admin/industries`)
+    invalidateIndustries()
     return ok(undefined)
   } catch (err) {
     return failFromError(err)
@@ -129,6 +132,7 @@ export async function deleteIndustry(id: string): Promise<Result<void>> {
 
     await db.industry.delete({ where: { id } })
     revalidatePath(`/admin/industries`)
+    invalidateIndustries()
     return ok(undefined)
   } catch (err) {
     return failFromError(err)

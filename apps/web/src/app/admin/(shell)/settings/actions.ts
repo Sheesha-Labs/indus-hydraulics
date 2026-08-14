@@ -6,6 +6,7 @@ import { auth } from '../../../../lib/admin-auth'
 import { ROLES, requireRole } from '../../../../lib/rbac'
 import { failFromError, ok, type Result } from '../../../../lib/result'
 import { revalidatePath } from 'next/cache'
+import { invalidateStoreSettings } from '../../../../lib/cache-tags'
 
 const optionalString = (max: number) =>
   z
@@ -145,6 +146,7 @@ export async function saveStoreSettings(formData: FormData): Promise<Result<void
     }
 
     revalidatePath('/admin/settings')
+    invalidateStoreSettings()
     return ok(undefined)
   } catch (err) {
     return failFromError(err)
@@ -173,6 +175,7 @@ export async function saveEmailTemplate(formData: FormData): Promise<Result<void
     })
 
     revalidatePath('/admin/settings')
+    invalidateStoreSettings()
     return ok(undefined)
   } catch (err) {
     return failFromError(err)

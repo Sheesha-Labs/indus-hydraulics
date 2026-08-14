@@ -1,6 +1,7 @@
 'use server'
 
-import { revalidatePath, updateTag } from 'next/cache'
+import { revalidatePath } from 'next/cache'
+import { invalidateNavigation } from '../../../../lib/cache-tags'
 import { z } from 'zod'
 import { db } from '@indus/db'
 import {
@@ -34,7 +35,10 @@ const MenuLinkTypeSchema = z.enum(MENU_LINK_TYPES as readonly [MenuLinkType, ...
 function revalidateNavigation(menuSlug?: string) {
   revalidatePath('/admin/navigation')
   if (menuSlug) revalidatePath(`/admin/navigation/${menuSlug}`)
-  updateTag('navigation')
+  // Was updateTag('navigation') — a tag the storefront never registered, so it
+  // purged nothing and the megamenu waited out its 60s timer regardless.
+  // invalidateNavigation() hits the three tags that actually exist.
+  invalidateNavigation()
 }
 
 // ─── menus ──────────────────────────────────────────────────────────────────
