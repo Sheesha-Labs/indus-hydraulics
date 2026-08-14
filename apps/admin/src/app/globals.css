@@ -82,9 +82,8 @@ body {
   background-color: var(--color-surface);
   color: var(--color-primary);
   font-family: var(--font-sans);
-  /* Admin uses denser typography than storefront */
-  font-size: 13px;
-  line-height: 1.45;
+  font-size: 15px;
+  line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   margin: 0;
@@ -115,7 +114,7 @@ button {
 
 .eyebrow {
   font-family: var(--font-mono);
-  font-size: 10px;
+  font-size: 11px;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--color-muted);
@@ -127,12 +126,44 @@ button {
 }
 
 ::-webkit-scrollbar {
-  width: 5px;
-  height: 5px;
+  width: 6px;
+  height: 6px;
 }
 ::-webkit-scrollbar-track {
   background: var(--color-deep);
 }
 ::-webkit-scrollbar-thumb {
   background: var(--color-border);
+  border-radius: 0;
+}
+
+/* ============================================================
+   ADMIN SURFACE — scoped overrides
+   ============================================================
+
+   The admin runs a denser type scale than the storefront. When the two apps
+   merge into one Next.js program they share a single globals.css and a single
+   <body>, so these cannot stay as global element rules — the last file
+   imported would silently win for both surfaces.
+
+   Scoping them to an attribute on the admin wrapper is enough because
+   font-size and line-height are INHERITED: setting them once on the wrapper
+   cascades through the whole admin subtree without touching <body>.
+   Specificity is not even contested — [data-surface='admin'] (0,1,0) applies
+   to a <div>, body (0,0,1) applies to <body>. Different elements.
+
+   Deliberately left UNLAYERED, like the rest of this file, so its relationship
+   to Tailwind's utility layer is unchanged. (Unlayered CSS beats every cascade
+   layer, which is why the old `text-[14px]` utility on <body> never did
+   anything — the unlayered `body { font-size: 13px }` won. Admin has always
+   rendered at 13px; that is preserved here, not "fixed" to 14.)
+   ============================================================ */
+
+[data-surface='admin'] {
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+[data-surface='admin'] .eyebrow {
+  font-size: 10px;
 }
