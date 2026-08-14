@@ -4,6 +4,7 @@ import { useEffect } from 'react'
 import { usePathname, useSearchParams } from 'next/navigation'
 import posthog from 'posthog-js'
 import { POSTHOG_HOST, POSTHOG_KEY } from '../lib/analytics'
+import { scrubUrl } from '../lib/scrub-url'
 
 /**
  * Initialises PostHog on the client and emits `$pageview` on every
@@ -40,9 +41,7 @@ export default function AnalyticsProvider() {
     if (typeof window === 'undefined') return
     const w = window as unknown as { posthog?: typeof posthog }
     if (!w.posthog) return
-    const search = searchParams?.toString()
-    const url = pathname + (search ? `?${search}` : '')
-    w.posthog.capture('$pageview', { $current_url: url })
+    w.posthog.capture('$pageview', { $current_url: scrubUrl(pathname, searchParams) })
   }, [pathname, searchParams])
 
   return null
