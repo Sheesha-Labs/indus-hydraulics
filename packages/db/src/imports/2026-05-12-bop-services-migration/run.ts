@@ -15,7 +15,7 @@
  *
  * The 3 IH-BOP-SVC-* products that have direct case-study analogs (3, 4, 6 in
  * the launch wave) get 301-redirected to those existing cases via
- * `apps/storefront/next.config.ts`. The other 10 redirect to their newly-created
+ * `apps/web/next.config.ts`. The other 10 redirect to their newly-created
  * cases below.
  */
 import './load-env-stub'

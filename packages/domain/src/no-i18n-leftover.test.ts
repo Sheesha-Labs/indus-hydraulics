@@ -6,7 +6,7 @@ import { describe, expect, test } from 'vitest'
 const REPO_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../../..')
 const SCAN_PATHS = [
   path.join(REPO_ROOT, 'apps/admin/src'),
-  path.join(REPO_ROOT, 'apps/storefront/src'),
+  path.join(REPO_ROOT, 'apps/web/src'),
   path.join(REPO_ROOT, 'packages'),
 ]
 const SCAN_EXTS = new Set(['.ts', '.tsx', '.json', '.prisma'])
@@ -48,6 +48,13 @@ function format(hits: ReturnType<typeof findMatches>): string {
 }
 
 describe('i18n removal — static guards (none of these should ever come back)', () => {
+  // walk() returns silently when a directory is missing, so a renamed app would
+  // leave every guard below passing while scanning nothing. Fail loudly instead.
+  test('every scan path exists', () => {
+    const missing = SCAN_PATHS.filter((p) => !existsSync(p))
+    expect(missing.map((p) => path.relative(REPO_ROOT, p)).join('\n')).toBe('')
+  })
+
   test('no next-intl imports remain', () => {
     expect(format(findMatches(/from ['"]next-intl/))).toBe('')
   })
@@ -62,7 +69,7 @@ describe('i18n removal — static guards (none of these should ever come back)',
 
   test('no [locale] route segments under apps/', () => {
     const hits: string[] = []
-    for (const app of ['admin', 'storefront']) {
+    for (const app of ['admin', 'web']) {
       const root = path.join(REPO_ROOT, 'apps', app, 'src')
       if (!existsSync(root)) continue
       for (const file of walk(root)) {
@@ -91,7 +98,7 @@ describe('i18n removal — static guards (none of these should ever come back)',
   test('next-intl and @indus/i18n are not declared as dependencies', () => {
     const pkgFiles = [
       'apps/admin/package.json',
-      'apps/storefront/package.json',
+      'apps/web/package.json',
       'packages/db/package.json',
       'packages/domain/package.json',
       'packages/ui/package.json',

@@ -100,7 +100,7 @@ Replace the `seo/health/page.tsx` placeholder with:
 
 ### 9. 404 log capture middleware + suggestions UI
 
-- Add a tiny POST endpoint `apps/storefront/src/app/api/seo/404-log/route.ts`
+- Add a tiny POST endpoint `apps/web/src/app/api/seo/404-log/route.ts`
   called from `not-found.tsx`. Upserts `NotFoundLog` (fire-and-forget).
 - New page `seo/redirects/not-found/page.tsx` lists top 404s with
   one-click "Add redirect" workflow.
@@ -120,7 +120,7 @@ Today the page renders counts only. Add:
 
 ### 12. Storefront middleware for redirects + 404 log
 
-`apps/storefront/proxy.ts` — read `Redirect` table cached via
+`apps/web/proxy.ts` — read `Redirect` table cached via
 `unstable_cache(tag: 'redirects')`, issue 301/302/307/308 before page
 render, increment `Redirect.hits` async. Capture 404s into
 `NotFoundLog`.

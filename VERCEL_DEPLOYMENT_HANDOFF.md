@@ -16,7 +16,7 @@ Context for the next Claude agent picking up the storefront deployment bug.
 
 Deploy Turborepo monorepo to Vercel as two projects:
 
-- `indus-hydraulics` → `apps/storefront` → `indus-hydraulics.vercel.app`
+- `indus-hydraulics` → `apps/web` → `indus-hydraulics.vercel.app`
 - `indus-hydraulics-admin` → `apps/admin` → `indus-hydraulics-admin.vercel.app`
 
 Both should auto-deploy on push to `main`.
@@ -88,12 +88,12 @@ Next.js's `@vercel/nft` file tracing follows static `require`s, but Prisma loads
 
 ## Tech Stack Reminders
 
-- Turborepo + pnpm workspaces; apps are `apps/storefront` and `apps/admin`; shared packages `packages/db`, `packages/ui`, `packages/domain`
+- Turborepo + pnpm workspaces; apps are `apps/web` and `apps/admin`; shared packages `packages/db`, `packages/ui`, `packages/domain`
 - Next.js 15 (App Router), TypeScript strict, Tailwind v4
 - Prisma 6.19.x, Postgres on Supabase, with pgbouncer (`connection_limit=1`)
 - Vercel Hobby tier (builds run sequentially; `outputFileTracingRoot` strongly recommended for monorepos)
 - Vercel build runs on Linux (`rhel-openssl-3.0.x`); local dev is macOS arm64
-- Two separate Vercel projects, both pointed at the same GitHub repo, each with its own root directory (`apps/storefront` vs `apps/admin`)
+- Two separate Vercel projects, both pointed at the same GitHub repo, each with its own root directory (`apps/web` vs `apps/admin`)
 
 ---
 
@@ -102,12 +102,12 @@ Next.js's `@vercel/nft` file tracing follows static `require`s, but Prisma loads
 - `turbo.json` — `globalEnv` array
 - `packages/db/package.json` — postinstall script
 - `packages/db/prisma/schema.prisma` — `binaryTargets`
-- `apps/storefront/src/app/layout.tsx` — `.catch(() => null)` on seoSetting query
-- `apps/storefront/src/app/not-found.tsx` — `.catch(() => [])` on category query
-- `apps/storefront/src/components/SiteHeader.tsx` — `.catch(() => 0)` on product count
-- `apps/storefront/src/lib/navigation.ts` — `.catch(() => null)` on navMenu query
-- `apps/storefront/src/lib/store-settings.ts` — `.catch(() => null)` on storeSettings query
-- `apps/storefront/next.config.ts` and `apps/admin/next.config.ts` — `outputFileTracingRoot` + (after PR #19) `outputFileTracingIncludes`
+- `apps/web/src/app/layout.tsx` — `.catch(() => null)` on seoSetting query
+- `apps/web/src/app/not-found.tsx` — `.catch(() => [])` on category query
+- `apps/web/src/components/SiteHeader.tsx` — `.catch(() => 0)` on product count
+- `apps/web/src/lib/navigation.ts` — `.catch(() => null)` on navMenu query
+- `apps/web/src/lib/store-settings.ts` — `.catch(() => null)` on storeSettings query
+- `apps/web/next.config.ts` and `apps/admin/next.config.ts` — `outputFileTracingRoot` + (after PR #19) `outputFileTracingIncludes`
 
 ---
 
