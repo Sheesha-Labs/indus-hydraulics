@@ -1,5 +1,5 @@
 import { db } from '@indus/db'
-import { DEFAULT_FROM_EMAIL } from '@indus/domain'
+import { DEFAULT_FROM_EMAIL, DEFAULT_REPLY_TO } from '@indus/domain'
 
 export type EmailBranding = {
   legalName: string
@@ -15,9 +15,11 @@ export type EmailBranding = {
   internalAlertEmails: string[]
 }
 
-// Transactional mail must be replyable, so it sends from the domain that
-// actually has mailboxes. See @indus/domain/email-domains.
+// App-sent mail goes FROM the website domain (isolated sending reputation)
+// and REPLIES TO the Workspace domain (real, monitored inbox). See
+// @indus/domain/email-domains for why the two are split.
 const FALLBACK_FROM_EMAIL = DEFAULT_FROM_EMAIL
+const FALLBACK_REPLY_TO = DEFAULT_REPLY_TO
 const FALLBACK_LEGAL_NAME = 'Indus Hydraulic Power Trading LLC'
 
 /**
@@ -41,7 +43,10 @@ export async function loadEmailBranding(): Promise<EmailBranding> {
     signatureEmail: settings?.signatureEmail ?? null,
     fromEmail: settings?.quoteFromEmail ?? FALLBACK_FROM_EMAIL,
     fromName: settings?.quoteFromName ?? null,
-    replyTo: settings?.quoteFromEmail ?? FALLBACK_FROM_EMAIL,
+    // NOT the from address. The sending domain has no MX, so replying to it
+    // is a black hole. Replies go to the contact inbox on the Workspace
+    // domain, which is where the sales team actually reads mail.
+    replyTo: settings?.contactEmail ?? FALLBACK_REPLY_TO,
     internalAlertEmails: internal,
   }
 }
