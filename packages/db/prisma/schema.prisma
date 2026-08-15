@@ -403,6 +403,7 @@ model StaffUser {
   importJobs       ImportJob[]
   notifications    Notification[]
   blogPosts        BlogPost[]
+  sentInvitations  StaffInvitation[] @relation("StaffInvitationInvitedBy")
 
   @@map("staff_users")
 }
@@ -1861,4 +1862,44 @@ model ScrapedProduct {
   @@unique([jobId, sourceUrl])
   @@index([jobId, selectionStatus])
   @@map("scraped_products")
+}
+
+/// Why a staff invitation exists. Invites and password resets are the same
+/// mechanism — a single-use, expiring, emailed link that ends at a
+/// set-your-password screen — so they share one table rather than two
+/// near-identical ones. The purpose only changes the copy and the TTL.
+enum InvitationPurpose {
+  invite
+  reset
+}
+
+/// Single-use link for staff onboarding and password resets.
+///
+/// The raw token is NEVER stored. Only sha256(token) is persisted, so a
+/// database read — a backup, a logged query, a leaked connection string —
+/// cannot be turned into account access. Mirrors PasswordResetToken on the
+/// customer side.
+model StaffInvitation {
+  id      String            @id @default(uuid())
+  email   String
+  name    String
+  role    StaffRole
+  purpose InvitationPurpose @default(invite)
+
+  /// sha256 of the emailed token, hex. Unique so lookup is a single indexed
+  /// read rather than a scan-and-compare.
+  tokenHash String @unique
+
+  invitedById String?
+  invitedBy   StaffUser? @relation("StaffInvitationInvitedBy", fields: [invitedById], references: [id], onDelete: SetNull)
+
+  expiresAt DateTime
+  /// Set the moment the link is consumed. This — not the existence of a
+  /// StaffUser row — is what makes a link single-use.
+  activatedAt DateTime?
+  createdAt   DateTime  @default(now())
+
+  @@index([email, purpose])
+  @@index([expiresAt])
+  @@map("staff_invitations")
 }

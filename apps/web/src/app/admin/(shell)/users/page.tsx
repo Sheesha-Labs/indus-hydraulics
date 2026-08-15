@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { db } from '@indus/db'
 import { ROLES } from '../../../../lib/rbac'
 import { requireStaffRole } from '../../../../lib/staff-session'
+import InviteStaffPanel, { type PendingInvite } from './InviteStaffPanel'
 
 export const metadata: Metadata = { title: 'Staff Users — Indus Admin' }
 
@@ -29,6 +30,26 @@ const ROLE_COLORS: Record<string, string> = {
 export default async function UsersPage() {
   // Lists every staff member's name, email and role — USERS_WRITE, not merely signed-in.
   await requireStaffRole(ROLES.USERS_WRITE)
+
+  // Outstanding invitations: not yet used, not yet expired. Expired rows are
+  // left in place rather than swept — they are the record that an invite was
+  // sent and never taken up.
+  const pendingRows = await db.staffInvitation.findMany({
+    where: { purpose: 'invite', activatedAt: null, expiresAt: { gt: new Date() } },
+    orderBy: { createdAt: 'desc' },
+    select: {
+      id: true, email: true, name: true, role: true, expiresAt: true,
+      invitedBy: { select: { name: true } },
+    },
+  })
+  const pending: PendingInvite[] = pendingRows.map((r) => ({
+    id: r.id,
+    email: r.email,
+    name: r.name,
+    role: r.role,
+    expiresAt: r.expiresAt.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' }),
+    invitedByName: r.invitedBy?.name ?? null,
+  }))
 
   const users = await db.staffUser.findMany({
     orderBy: [{ isActive: 'desc' }, { name: 'asc' }],
@@ -59,6 +80,8 @@ export default async function UsersPage() {
           + Add Staff
         </Link>
       </div>
+
+      <InviteStaffPanel pending={pending} />
 
       <div className="border border-[var(--color-border)] overflow-hidden">
         <table className="w-full text-[13px]">

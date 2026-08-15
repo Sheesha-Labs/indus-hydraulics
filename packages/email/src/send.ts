@@ -12,6 +12,8 @@ export type EmailKind =
   | 'quote_expiry_reminder'
   | 'quote_expired'
   | 'email_change_verification'
+  | 'staff_invitation'
+  | 'staff_password_reset'
 
 export type EmailAttachment = {
   filename: string

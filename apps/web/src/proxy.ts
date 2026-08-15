@@ -20,8 +20,21 @@ import { isStaffRole } from './lib/rbac'
 
 const ADMIN_PREFIX = '/admin'
 
-/** The only two paths under /admin reachable without a staff session. */
-const ADMIN_PUBLIC_PATHS = ['/admin/sign-in', '/admin/api/auth']
+/**
+ * The only paths under /admin reachable without a staff session.
+ *
+ * /activate and /forgot-password are public by necessity: the visitor has no
+ * session, and getting one is precisely what they are there to do. Both are
+ * safe to expose — activate requires a single-use token whose sha256 must
+ * match a live row, and forgot-password answers identically whether or not
+ * the address exists.
+ */
+const ADMIN_PUBLIC_PATHS = [
+  '/admin/sign-in',
+  '/admin/api/auth',
+  '/admin/activate',
+  '/admin/forgot-password',
+]
 
 /** Storefront paths requiring a customer session. */
 const PROTECTED_ACCOUNT_PATHS = ['/account']
