@@ -39,6 +39,13 @@ export default async function AdminSignInPage({ params, searchParams }: Props) {
           </p>
 
           <AdminSignInForm next={next} />
+
+          <a
+            href="/admin/forgot-password"
+            className="mt-5 block text-center text-[13px] text-[#6b7079] transition-colors hover:text-[#9aa0a8]"
+          >
+            Forgot your password?
+          </a>
         </div>
 
         <p className="text-center font-mono text-[11px] text-[#3a3f47] mt-6">
