@@ -4,6 +4,7 @@ import { fileURLToPath } from 'node:url'
 import { describe, expect, test } from 'vitest'
 import {
   DEFAULT_FROM_EMAIL,
+  DEFAULT_REPLY_TO,
   MAIL_DOMAIN,
   MARKETING_DOMAIN,
   WEBSITE_DOMAIN,
@@ -77,8 +78,23 @@ describe('domain constants', () => {
     expect(MARKETING_DOMAIN).not.toBe(MAIL_DOMAIN)
   })
 
-  test('the default transactional sender is deliverable', () => {
-    expect(isDeliverableAddress(DEFAULT_FROM_EMAIL)).toBe(true)
+  test('the app sends FROM the website domain, isolating its reputation', () => {
+    // Deliberate: app volume must not sit on the domain the sales team uses
+    // by hand, so nothing this app does can affect their deliverability.
+    expect(DEFAULT_FROM_EMAIL.endsWith(`@${WEBSITE_DOMAIN}`)).toBe(true)
+  })
+
+  test('the sending address cannot receive — which is why Reply-To is mandatory', () => {
+    expect(isDeliverableAddress(DEFAULT_FROM_EMAIL)).toBe(false)
+  })
+
+  test('replies go to an inbox that exists', () => {
+    // The whole point. A customer hitting reply on a quote must reach a human.
+    expect(isDeliverableAddress(DEFAULT_REPLY_TO)).toBe(true)
+  })
+
+  test('From and Reply-To are never the same address', () => {
+    expect(DEFAULT_FROM_EMAIL).not.toBe(DEFAULT_REPLY_TO)
   })
 })
 
@@ -102,5 +118,40 @@ describe('isDeliverableAddress', () => {
     expect(isDeliverableAddress(`sales@${MAIL_DOMAIN}`)).toBe(true)
     expect(isDeliverableAddress(`sales@${WEBSITE_DOMAIN}`)).toBe(false)
     expect(isDeliverableAddress('onboarding@resend.dev')).toBe(false)
+  })
+})
+
+describe('every app send sets Reply-To', () => {
+  /**
+   * The failure this guards against is silent and expensive: mail goes out
+   * FROM a domain with no MX, the customer hits reply, and the message
+   * disappears. Both sides believe it worked.
+   *
+   * Several call sites used to pass `replyTo: fromEmail`, which after moving
+   * sending to the website domain would have done exactly that.
+   */
+  const SEND_SITES = [
+    'apps/web/src/app/admin/(shell)/rfqs/[code]/actions.ts',
+    'apps/web/src/inngest/functions.ts',
+    'apps/web/src/app/(storefront)/quote/actions.ts',
+    'apps/web/src/actions/auth.ts',
+    'apps/web/src/app/(storefront)/account/profile/actions.ts',
+  ]
+
+  test('no call site mirrors the From address into Reply-To', () => {
+    const offenders: string[] = []
+    for (const rel of SEND_SITES) {
+      const full = path.join(REPO_ROOT, rel)
+      if (!existsSync(full)) {
+        offenders.push(`${rel}: MISSING — update SEND_SITES if this moved`)
+        continue
+      }
+      readFileSync(full, 'utf8')
+        .split('\n')
+        .forEach((line, i) => {
+          if (/replyTo:\s*fromEmail\b/.test(line)) offenders.push(`${rel}:${i + 1}: ${line.trim()}`)
+        })
+    }
+    expect(offenders.join('\n')).toBe('')
   })
 })

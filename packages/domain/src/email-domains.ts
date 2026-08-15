@@ -41,8 +41,29 @@ export const MAIL_DOMAIN = 'indushydraulics.me'
  */
 export const MARKETING_DOMAIN = 'indushydraulics.com'
 
-/** Fallback transactional sender when StoreSettings.quoteFromEmail is unset. */
-export const DEFAULT_FROM_EMAIL = `sales@${MAIL_DOMAIN}`
+/**
+ * What every email this app sends is FROM.
+ *
+ * On the website domain, deliberately. All app-originated mail — quotes, RFQ
+ * confirmations, password resets, expiry reminders, and any future campaign —
+ * shares one sending reputation here, isolated from the Google Workspace
+ * mailboxes the sales team uses by hand. Nothing this app does can affect
+ * whether a human-sent email from sales@indushydraulics.me lands.
+ *
+ * This address cannot RECEIVE — the website domain has no MX. That is what
+ * DEFAULT_REPLY_TO is for, and why it is not optional.
+ */
+export const DEFAULT_FROM_EMAIL = `sales@${WEBSITE_DOMAIN}`
+
+/**
+ * Where replies go: the real, monitored inbox.
+ *
+ * Every send MUST set Reply-To. Without it a customer hitting "reply" on a
+ * quote writes to a domain with no MX and the message is silently lost — the
+ * worst possible failure for the quote-out flow, because both sides think it
+ * worked.
+ */
+export const DEFAULT_REPLY_TO = `sales@${MAIL_DOMAIN}`
 
 /**
  * Guard for any future marketing/sequence sender.

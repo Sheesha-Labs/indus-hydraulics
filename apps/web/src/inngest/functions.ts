@@ -2,12 +2,7 @@ import { inngest } from './client'
 import { scraperJobRun } from './scraperJob'
 import { productBlueprintGenerate } from './productBlueprint'
 import { db } from '@indus/db'
-import {
-  assertTransition,
-  scoreEntity,
-  signQuoteAccessToken,
-  type SeoEntityType,
-} from '@indus/domain'
+import { DEFAULT_FROM_EMAIL, DEFAULT_REPLY_TO, assertTransition, scoreEntity, signQuoteAccessToken, type SeoEntityType } from '@indus/domain'
 import {
   findRetryableEmailIds,
   renderQuoteExpired,
@@ -190,7 +185,9 @@ export const quoteExpiryReminder = inngest.createFunction(
     const branding = await step.run('load-branding', () =>
       db.storeSettings.findFirst(),
     )
-    const fromEmail = branding?.quoteFromEmail ?? 'sales@indushydraulics.me'
+    const fromEmail = branding?.quoteFromEmail ?? DEFAULT_FROM_EMAIL
+    // Reply-To is the Workspace inbox — the sending domain cannot receive.
+    const replyTo = branding?.contactEmail ?? DEFAULT_REPLY_TO
     const fromName = branding?.quoteFromName ?? null
     const baseUrl = (process.env.NEXT_PUBLIC_BASE_URL ?? 'http://localhost:3000').replace(
       /\/$/,
@@ -289,7 +286,7 @@ export const quoteExpiryReminder = inngest.createFunction(
           html: email.html,
           fromEmail,
           ...(fromName ? { fromName } : {}),
-          replyTo: fromEmail,
+          replyTo,
           quoteId: quote.id,
         }),
       )
@@ -326,7 +323,9 @@ export const quoteAutoExpiry = inngest.createFunction(
     const branding = await step.run('load-branding', () =>
       db.storeSettings.findFirst(),
     )
-    const fromEmail = branding?.quoteFromEmail ?? 'sales@indushydraulics.me'
+    const fromEmail = branding?.quoteFromEmail ?? DEFAULT_FROM_EMAIL
+    // Reply-To is the Workspace inbox — the sending domain cannot receive.
+    const replyTo = branding?.contactEmail ?? DEFAULT_REPLY_TO
     const fromName = branding?.quoteFromName ?? null
     const baseUrl = (process.env.NEXT_PUBLIC_BASE_URL ?? 'http://localhost:3000').replace(
       /\/$/,
@@ -457,7 +456,7 @@ export const quoteAutoExpiry = inngest.createFunction(
           html: email.html,
           fromEmail,
           ...(fromName ? { fromName } : {}),
-          replyTo: fromEmail,
+          replyTo,
           quoteId: quote.id,
         }),
       )

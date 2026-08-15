@@ -3,7 +3,7 @@
 import { revalidatePath } from 'next/cache'
 import { z } from 'zod'
 import { db } from '@indus/db'
-import { assertTransition } from '@indus/domain'
+import { DEFAULT_FROM_EMAIL, DEFAULT_REPLY_TO, assertTransition } from '@indus/domain'
 import { renderEstimatePdf, uploadQuotePdf, computeTotals } from '@indus/pdf'
 import { sendEmail, renderQuoteSent, renderQuoteAck } from '@indus/email'
 import { signQuoteAccessToken } from '@indus/domain'
@@ -126,7 +126,10 @@ async function fireQuoteAckSideEffects(input: {
 }): Promise<void> {
   try {
     const settings = await db.storeSettings.findFirst()
-    const fromEmail = settings?.quoteFromEmail ?? 'sales@indushydraulics.me'
+    const fromEmail = settings?.quoteFromEmail ?? DEFAULT_FROM_EMAIL
+    // Reply-To must be the Workspace inbox, never the sending address —
+    // the sending domain has no MX, so a customer's reply would vanish.
+    const replyTo = settings?.contactEmail ?? DEFAULT_REPLY_TO
     const fromName = settings?.quoteFromName ?? null
 
     const totalNum = Number(input.quote.total)
@@ -154,7 +157,7 @@ async function fireQuoteAckSideEffects(input: {
       html: ack.html,
       fromEmail,
       ...(fromName ? { fromName } : {}),
-      replyTo: fromEmail,
+      replyTo,
       rfqId: input.rfqId,
       quoteId: input.quote.id,
     })
@@ -471,7 +474,10 @@ export async function sendQuote(formData: FormData): Promise<Result<{ quoteCode:
     // engineer can resend (which produces a new revision).
     try {
       const settings = await db.storeSettings.findFirst()
-      const fromEmail = settings?.quoteFromEmail ?? 'sales@indushydraulics.me'
+      const fromEmail = settings?.quoteFromEmail ?? DEFAULT_FROM_EMAIL
+      // Reply-To must be the Workspace inbox, never the sending address —
+      // the sending domain has no MX, so a customer's reply would vanish.
+      const replyTo = settings?.contactEmail ?? DEFAULT_REPLY_TO
       const fromName = settings?.quoteFromName ?? null
       const customerName = `${rfq.submittedBy.firstName} ${rfq.submittedBy.lastName}`.trim() || rfq.submittedBy.email
 
@@ -508,7 +514,7 @@ export async function sendQuote(formData: FormData): Promise<Result<{ quoteCode:
         html: emailContent.html,
         fromEmail,
         ...(fromName ? { fromName } : {}),
-        replyTo: fromEmail,
+        replyTo,
         attachments: [
           {
             filename: `${quoteCodeToSlug(codeInfo.code)}.pdf`,
