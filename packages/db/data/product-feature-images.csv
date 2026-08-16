@@ -1,0 +1,352 @@
+image,sheetTitle,productSku,productSlug,productTitle,category,confidence,method,score
+HP001.png,R1 1SN,IH-HOSE-R1-1SN,r1-1sn-single-wire-braid-hydraulic-hose,R1 1SN Single Wire Braid Hydraulic Hose,Hydraulic Hoses,strong,prefix,107
+HP002.png,R2 2SN Double Wire,IH-HOSE-R2-2SN,r2-2sn-double-wire-braid-hydraulic-hose,R2 2SN Double Wire Braid Hydraulic Hose,Hydraulic Hoses,strong,prefix,103
+HP004.png,2SC,IH-HOSE-2SC,2sc-compact-two-wire-braid-hose,2SC Compact Two Wire Braid Hose,Hydraulic Hoses,strong,prefix,101
+HP005.png,4SP,IH-HOSE-4SP,4sp-four-spiral-hydraulic-hose,4SP Four-Spiral Hydraulic Hose,Hydraulic Hoses,strong,prefix,102
+HP006.png,4SH,IH-HOSE-4SH,4sh-four-spiral-heavy-duty-hydraulic-hose,4SH Four-Spiral Heavy-Duty Hydraulic Hose,Hydraulic Hoses,strong,prefix,100
+HP007.png,R13,IH-HOSE-R13,r13-multi-spiral-very-high-pressure-hose,R13 Multi-Spiral Very-High-Pressure Hose,Hydraulic Hoses,strong,prefix,100
+HP009.png,R15,IH-HOSE-R15,r15-six-spiral-ultra-high-pressure-hose,R15 Six-Spiral Ultra-High-Pressure Hose,Hydraulic Hoses,strong,prefix,100
+HP010.png,R14,IH-HOSE-R14,r14-ptfe-hydraulic-hose,R14 PTFE Hydraulic Hose,Hydraulic Hoses,strong,prefix,103
+HP012.png,R5,IH-HOSE-R5,r5-textile-cover-single-wire-braid-hose,R5 Textile-Cover Single Wire Braid Hose,Hydraulic Hoses,strong,prefix,100
+HP013.png,R6,IH-HOSE-R6,r6-single-fibre-braid-low-pressure-hose,R6 Single Fibre Braid Low-Pressure Hose,Hydraulic Hoses,strong,prefix,100
+HP014.png,R3,IH-HOSE-R3,r3-two-fibre-braid-hydraulic-hose,R3 Two-Fibre Braid Hydraulic Hose,Hydraulic Hoses,strong,prefix,101
+HP015.png,R7 Thermoplastic Hose,IH-HOSE-R7-TP,r7-thermoplastic-hydraulic-hose,R7 Thermoplastic Hydraulic Hose,Thermoplastic Hoses,good,tokens-subset,91
+HP016.png,R8 Thermoplastic Hose,IH-HOSE-R8-TP,r8-thermoplastic-hydraulic-hose,R8 Thermoplastic Hydraulic Hose,Thermoplastic Hoses,good,tokens-subset,91
+HP017.png,No Skive 1SN-2SN,IH-CF-NS-1SN2SN,no-skive-crimp-ferrule-for-1sn-2sn-hose,No-Skive Crimp Ferrule for 1SN / 2SN Hose,Crimp Ferrules,good,tokens-subset,72
+HP018.png,No Skive R1T-1SN,IH-CF-NS-R1T1SN,no-skive-crimp-ferrule-for-r1at-1sn-hose,No-Skive Crimp Ferrule for R1AT / 1SN Hose,Crimp Ferrules,strong,sku-tail,90
+HP019.png,No Skive R2T-2SN,IH-CF-NS-R2T2SN,no-skive-crimp-ferrule-for-r2at-2sn-hose,No-Skive Crimp Ferrule for R2AT / 2SN Hose,Crimp Ferrules,strong,sku-tail,90
+HP020.png,Skive R1A-1ST,IH-CF-SK-R1A1ST,skive-crimp-ferrule-for-r1a-1st-hose,Skive Crimp Ferrule for R1A / 1ST Hose,Crimp Ferrules,good,tokens-subset,72
+HP021.png,Skive R2A-2ST,IH-CF-SK-R2A2ST,skive-crimp-ferrule-for-r2a-2st-hose,Skive Crimp Ferrule for R2A / 2ST Hose,Crimp Ferrules,good,tokens-subset,72
+HP022.png,Skive R9,IH-CF-SK-R9,skive-crimp-ferrule-for-r9-hose,Skive Crimp Ferrule for R9 Hose,Crimp Ferrules,good,tokens-subset,72
+HP023.png,Skive 4SP,IH-CF-SK-4SP,skive-crimp-ferrule-for-4sp-hose,Skive Crimp Ferrule for 4SP Hose,Crimp Ferrules,good,tokens-subset,72
+HP024.png,Skive 4SH/10-16,IH-CF-SK-4SH-1016,skive-crimp-ferrule-for-4sh-hose-dn10-dn16,"Skive Crimp Ferrule for 4SH Hose, DN10–DN16",Crimp Ferrules,good,sku-fuzzy,81
+HP025.png,Skive R12/06-16,IH-CF-SK-R12-0616,skive-crimp-ferrule-for-r12-hose-dn6-dn16,"Skive Crimp Ferrule for R12 Hose, DN6–DN16",Crimp Ferrules,good,sku-fuzzy,81
+HP026.png,"Skive DIN 20023 4SH, R12-32 Hose",IH-CF-SK-DIN20023,skive-crimp-ferrule-din-20023-for-4sh-r12-32-hose,Skive Crimp Ferrule (DIN 20023) for 4SH / R12-32 Hose,Crimp Ferrules,good,tokens-subset,75
+HP027.png,Skive 4SH - Interlock,IH-CF-SK-4SH-IL,skive-interlock-crimp-ferrule-for-4sh-hose,Skive Interlock Crimp Ferrule for 4SH Hose,Crimp Ferrules,good,tokens-subset,72
+HP028.png,Double Skive R13,IH-CF-DS-R13,double-skive-crimp-ferrule-for-r13-hose,Double-Skive Crimp Ferrule for R13 Hose,Crimp Ferrules,good,tokens-subset,72
+HP029.png,No Skive R7-R8,IH-CF-NS-R7R8,no-skive-crimp-ferrule-for-r7-r8-thermoplastic-hose,No-Skive Crimp Ferrule for R7 / R8 Thermoplastic Hose,Crimp Ferrules,good,tokens-subset,69
+HP030.png,Teflon Hose,IH-CF-TEFLON,specialty-crimp-ferrule-for-ptfe-teflon-hose,Specialty Crimp Ferrule for PTFE / Teflon Hose,Crimp Ferrules,strong,substring,81
+HP031.png,Banjo Bolt Metric,IH-MF-BANJO-BOLT,banjo-bolt-metric-thread,Banjo Bolt — Metric Thread,Metric Hose Fittings,strong,prefix,105
+HP032.png,Metric Banjo,IH-MF-BANJO,banjo-eye-fitting-metric-thread,Banjo Eye Fitting — Metric Thread,Metric Hose Fittings,good,tokens-subset,85
+HP033.png,90° Metric Female 60° Cone,IH-MF-FEM-60-90,90-metric-female-60-cone-hose-fitting,90° Metric Female 60° Cone Hose Fitting,Metric Hose Fittings,strong,prefix,110
+HP034.png,Metric Male 60° Cone Seat,IH-MF-MAL-60-SEAT,metric-male-60-cone-seat-hose-fitting,Metric Male 60° Cone Seat Hose Fitting,Metric Hose Fittings,strong,prefix,94
+HP035.png,Metric Female 60° Cone,IH-MF-FEM-60,metric-female-60-cone-hose-fitting,Metric Female 60° Cone Hose Fitting,Metric Hose Fittings,strong,prefix,94
+HP036.png,90° Metric Standpipe,IH-DF-STANDPIPE-90,90-metric-standpipe-tube-fitting-din-2353,90° Metric Standpipe Tube Fitting (DIN 2353),DIN Hose Fittings,strong,prefix,102
+HP037.png,45° Metric Standpipe,IH-DF-STANDPIPE-45,45-metric-standpipe-tube-fitting-din-2353,45° Metric Standpipe Tube Fitting (DIN 2353),DIN Hose Fittings,strong,prefix,102
+HP038.png,Metric Standpipe,IH-DF-STANDPIPE,metric-standpipe-tube-fitting-din-2353,Metric Standpipe Tube Fitting (DIN 2353),DIN Hose Fittings,strong,prefix,102
+HP039.png,90° Metric Female 24° O-ring Cone L/S,IH-DF-FEM-24-OR-LS-90,90-metric-female-24-o-ring-cone-light-series-hose-fitting,90° Metric Female 24° O-ring Cone (Light Series) Hose Fitting,DIN Hose Fittings,strong,prefix,110
+HP040.png,45° Metric Female 24° O-ring Cone L/S,IH-DF-FEM-24-OR-LS-45,45-metric-female-24-o-ring-cone-light-series-hose-fitting,45° Metric Female 24° O-ring Cone (Light Series) Hose Fitting,DIN Hose Fittings,strong,prefix,110
+HP041.png,Metric Female 24° O-ring Cone L/S,IH-DF-FEM-24-OR-LS,metric-female-24-o-ring-cone-light-series-hose-fitting,Metric Female 24° O-ring Cone (Light Series) Hose Fitting,DIN Hose Fittings,strong,prefix,110
+HP042.png,Metric Male 24° Cone L/S,IH-DF-MAL-24-LS,metric-male-24-cone-light-series-hose-fitting,Metric Male 24° Cone (Light Series) Hose Fitting,DIN Hose Fittings,strong,prefix,94
+HP043.png,Banjo Bolt BSP,IH-BSP-BANJO-BOLT,banjo-bolt-bsp-thread,Banjo Bolt — BSP Thread,BSP Hose Fittings,strong,prefix,105
+HP044.png,BSP Banjo,IH-BSP-BANJO,bsp-banjo-eye-fitting,BSP Banjo Eye Fitting,BSP Hose Fittings,strong,prefix,104
+HP045.png,90° BSP Female 60° Cone Compact Elbow,IH-BSP-FEM-60-90-CP,90-bsp-female-60-cone-compact-elbow-hose-fitting,90° BSP Female 60° Cone Compact Elbow Hose Fitting,BSP Hose Fittings,strong,prefix,110
+HP046.png,90° BSP Female 60° Cone Elbow,IH-BSP-FEM-60-90,90-bsp-female-60-cone-elbow-hose-fitting,90° BSP Female 60° Cone Elbow Hose Fitting,BSP Hose Fittings,strong,prefix,110
+HP047.png,45° BSP Female 60° Cone Elbow,IH-BSP-FEM-60-45,45-bsp-female-60-cone-elbow-hose-fitting,45° BSP Female 60° Cone Elbow Hose Fitting,BSP Hose Fittings,strong,prefix,110
+HP048.png,BSP Female 60° Cone,IH-BSP-FEM-60,bsp-female-60-cone-hose-fitting,BSP Female 60° Cone Hose Fitting,BSP Hose Fittings,strong,prefix,110
+HP049.png,BSP Female Fitting Thrust Wire Nut,IH-BSP-FEM-WN,bsp-female-thrust-wire-nut-hose-fitting,BSP Female Thrust Wire Nut Hose Fitting,BSP Hose Fittings,good,tokens-subset,97
+HP050.png,BSP Female Flat Seat,IH-BSP-FEM-FLAT,bsp-female-flat-seat-hose-fitting,BSP Female Flat Seat Hose Fitting,BSP Hose Fittings,strong,prefix,110
+HP051.png,BSP Male 60° Cone,IH-BSP-MAL-60,bsp-male-60-cone-hose-fitting,BSP Male 60° Cone Hose Fitting,BSP Hose Fittings,strong,prefix,104
+HP052.png,BSPT Male,IH-BSP-MAL-T,bspt-male-hose-fitting-tapered-thread,BSPT Male Hose Fitting (Tapered Thread),BSP Hose Fittings,strong,prefix,102
+HP053.png,90° JIC Female 37° Seat Long Drop,IH-JIC-FEM-37-90-LD,90-jic-female-37-seat-long-drop-hose-fitting,90° JIC Female 37° Seat Long Drop Hose Fitting,JIC 37° Hose Fittings,strong,prefix,110
+HP054.png,90° JIC Female 37° Seat Compact,IH-JIC-FEM-37-90-CP,90-jic-female-37-seat-compact-hose-fitting,90° JIC Female 37° Seat Compact Hose Fitting,JIC 37° Hose Fittings,strong,prefix,110
+HP055.png,90° JIC Female 37° Seat Slip-on Nut,IH-JIC-FEM-37-90-SL,90-jic-female-37-seat-slip-on-nut-hose-fitting,90° JIC Female 37° Seat Slip-on Nut Hose Fitting,JIC 37° Hose Fittings,strong,prefix,110
+HP056.png,90° JIC Female 37° Seat,IH-JIC-FEM-37-90,90-jic-female-37-seat-hose-fitting,90° JIC Female 37° Seat Hose Fitting,JIC 37° Hose Fittings,strong,prefix,110
+HP057.png,JIC Female 37° Seat Slip-on Nut,IH-JIC-FEM-37-SL,jic-female-37-seat-slip-on-nut-hose-fitting,JIC Female 37° Seat Slip-on Nut Hose Fitting,JIC 37° Hose Fittings,strong,prefix,110
+HP058.png,45° JIC Female 37° Seat,IH-JIC-FEM-37-45,45-jic-female-37-seat-hose-fitting,45° JIC Female 37° Seat Hose Fitting,JIC 37° Hose Fittings,strong,prefix,110
+HP059.png,JIC Female Fitting Thrust Wire Nut,IH-JIC-FEM-WN,jic-female-thrust-wire-nut-hose-fitting,JIC Female Thrust Wire Nut Hose Fitting,JIC 37° Hose Fittings,good,tokens-subset,97
+HP060.png,JIC Female 37° Cone Double Hex,IH-JIC-FEM-37-DH,jic-female-37-cone-double-hex-hose-fitting,JIC Female 37° Cone Double Hex Hose Fitting,JIC 37° Hose Fittings,strong,prefix,110
+HP061.png,JIC Male 37° Cone,IH-JIC-MAL-37,jic-male-37-cone-hose-fitting,JIC Male 37° Cone Hose Fitting,JIC 37° Hose Fittings,strong,prefix,104
+HP062.png,JIC Female 37° Seat,IH-JIC-FEM-37,jic-female-37-seat-hose-fitting,JIC Female 37° Seat Hose Fitting,JIC 37° Hose Fittings,strong,prefix,110
+HP063.png,90° “Toyota” Female,IH-JP-TOYOTA-FEM-90,90-toyota-female-hose-fitting-jis-metric,90° Toyota Female Hose Fitting (JIS Metric),Japanese Hose Fittings,strong,prefix,92
+HP064.png,45° “Toyota” Female,IH-JP-TOYOTA-FEM-45,45-toyota-female-hose-fitting-jis-metric,45° Toyota Female Hose Fitting (JIS Metric),Japanese Hose Fittings,strong,prefix,92
+HP065.png,“Toyota” Female,IH-JP-TOYOTA-FEM,toyota-female-hose-fitting-jis-metric,Toyota Female Hose Fitting (JIS Metric),Japanese Hose Fittings,strong,prefix,108
+HP066.png,Komatsu Female,IH-JP-KOMATSU-FEM,komatsu-female-hose-fitting-jis-metric,Komatsu Female Hose Fitting (JIS Metric),Japanese Hose Fittings,strong,prefix,102
+HP067.png,Komatsu Male,IH-JP-KOMATSU-MAL,komatsu-male-hose-fitting-jis-metric,Komatsu Male Hose Fitting (JIS Metric),Japanese Hose Fittings,strong,prefix,102
+HP068.png,90° ORFS Female,IH-ORFS-FEM-90,90-orfs-female-hose-fitting,90° ORFS Female Hose Fitting,ORFS Hose Fittings,strong,prefix,94
+HP069.png,45° ORFS Female,IH-ORFS-FEM-45,45-orfs-female-hose-fitting,45° ORFS Female Hose Fitting,ORFS Hose Fittings,strong,prefix,94
+HP070.png,ORFS Male,IH-ORFS-MAL,orfs-male-hose-fitting,ORFS Male Hose Fitting,ORFS Hose Fittings,strong,prefix,94
+HP071.png,ORFS Female,IH-ORFS-FEM,orfs-female-hose-fitting,ORFS Female Hose Fitting,ORFS Hose Fittings,strong,prefix,110
+HP072.png,90° SAE Inverted Flare,IH-PT-INV-FLARE-90,90-sae-inverted-flare-hose-fitting,90° SAE Inverted Flare Hose Fitting,NPT / NPSM / SAE Hose Fittings,strong,prefix,104
+HP073.png,45° SAE Inverted Flare,IH-PT-INV-FLARE-45,45-sae-inverted-flare-hose-fitting,45° SAE Inverted Flare Hose Fitting,NPT / NPSM / SAE Hose Fittings,strong,prefix,104
+HP074.png,SAE Inverted Flare,IH-PT-INV-FLARE,sae-inverted-flare-hose-fitting,SAE Inverted Flare Hose Fitting,NPT / NPSM / SAE Hose Fittings,strong,prefix,104
+HP075.png,90° SAE Female 45° Cone,IH-PT-SAE-FEM-45-90,90-sae-female-45-cone-hose-fitting,90° SAE Female 45° Cone Hose Fitting,NPT / NPSM / SAE Hose Fittings,strong,prefix,110
+HP076.png,SAE Female 45° Cone,IH-PT-SAE-FEM-45,sae-female-45-cone-hose-fitting,SAE Female 45° Cone Hose Fitting,NPT / NPSM / SAE Hose Fittings,strong,prefix,110
+HP077.png,45° SAE Female 45° Cone,IH-PT-SAE-FEM-45-45,45-sae-female-45-cone-hose-fitting,45° SAE Female 45° Cone Hose Fitting,NPT / NPSM / SAE Hose Fittings,strong,prefix,110
+HP078.png,SAE Male Boss Swivel O-Ring,IH-PT-SAE-MBS-OR,sae-male-boss-swivel-o-ring-hose-fitting,SAE Male Boss Swivel O-Ring Hose Fitting,NPT / NPSM / SAE Hose Fittings,strong,prefix,110
+HP079.png,SAE O-Ring Male,IH-PT-SAE-MAL-OR,sae-o-ring-male-hose-fitting,SAE O-Ring Male Hose Fitting,NPT / NPSM / SAE Hose Fittings,strong,prefix,110
+HP080.png,NPT Male,IH-PT-NPT-MAL,npt-male-hose-fitting,NPT Male Hose Fitting,NPT / NPSM / SAE Hose Fittings,strong,prefix,104
+HP081.png,SAE Male 45° Cone,IH-PT-SAE-MAL-45,sae-male-45-cone-hose-fitting,SAE Male 45° Cone Hose Fitting,NPT / NPSM / SAE Hose Fittings,strong,prefix,110
+HP082.png,Split Flange Clamps Code 62,IH-FL-CLAMP-62,split-flange-clamps-code-62-pair-bolts,Split Flange Clamps Code 62 (Pair + Bolts),SAE Flange Fittings,strong,prefix,94
+HP083.png,Split Flange Clamps Code 61,IH-FL-CLAMP-61,split-flange-clamps-code-61-pair-bolts,Split Flange Clamps Code 61 (Pair + Bolts),SAE Flange Fittings,strong,prefix,104
+HP084.png,90° “Supercat” Flange,IH-FL-SUPERCAT-90,90-supercat-flange-on-fitting-code-62,"90° ""Supercat"" Flange-on-Fitting (Code 62)",SAE Flange Fittings,strong,prefix,102
+HP085.png,“Supercat” Flange Long Drop,IH-FL-SUPERCAT-LD,supercat-flange-on-fitting-long-drop-code-62,"""Supercat"" Flange-on-Fitting Long Drop (Code 62)",SAE Flange Fittings,good,tokens-subset,82
+HP086.png,45° “Supercat” Flange,IH-FL-SUPERCAT-45,45-supercat-flange-on-fitting-code-62,"45° ""Supercat"" Flange-on-Fitting (Code 62)",SAE Flange Fittings,strong,prefix,102
+HP087.png,“Supercat” Flange,IH-FL-SUPERCAT,supercat-flange-on-fitting-code-62,"""Supercat"" Flange-on-Fitting (Code 62)",SAE Flange Fittings,strong,prefix,102
+HP088.png,90° Flange Code 62,IH-FL-62-90,90-flange-code-62-hose-fitting,90° Flange Code 62 Hose Fitting,SAE Flange Fittings,strong,prefix,110
+HP089.png,Flange Code 62 Long Drop,IH-FL-62-LD,flange-code-62-long-drop-hose-fitting,Flange Code 62 Long Drop Hose Fitting,SAE Flange Fittings,strong,prefix,110
+HP090.png,Flange Code 62,IH-FL-62,flange-code-62-hose-fitting,Flange Code 62 Hose Fitting,SAE Flange Fittings,strong,prefix,110
+HP091.png,45° Flange Code 62,IH-FL-62-45,45-flange-code-62-hose-fitting,45° Flange Code 62 Hose Fitting,SAE Flange Fittings,strong,prefix,110
+HP092.png,Flange Code 61 Long Drop,IH-FL-61-LD,flange-code-61-long-drop-hose-fitting,Flange Code 61 Long Drop Hose Fitting,SAE Flange Fittings,strong,prefix,104
+HP093.png,90° Flange Code 61,IH-FL-61-90,90-flange-code-61-hose-fitting,90° Flange Code 61 Hose Fitting,SAE Flange Fittings,strong,prefix,104
+HP094.png,45° Flange Code 61,IH-FL-61-45,45-flange-code-61-hose-fitting,45° Flange Code 61 Hose Fitting,SAE Flange Fittings,strong,prefix,104
+HP095.png,Flange Code 61,IH-FL-61,flange-code-61-hose-fitting,Flange Code 61 Hose Fitting,SAE Flange Fittings,strong,prefix,104
+HP096.png,Orbital Weld Nipple,IH-AD-DIN-001,orbital-weld-nipple,Orbital Weld Nipple,DIN 2353 Bite Type Adapters,strong,exact,116
+HP097.png,Lock Nut for Bulkhead,IH-AD-DIN-002,lock-nut-for-bulkhead,Lock Nut for Bulkhead,DIN 2353 Bite Type Adapters,strong,exact,116
+HP098.png,Cutting Ring for 24° Cone End Nut,IH-AD-DIN-003,cutting-ring-for-24-cone-end-nut,Cutting Ring for 24° Cone End Nut,DIN 2353 Bite Type Adapters,strong,exact,116
+HP099.png,24° Cone End Nut,IH-AD-DIN-004,24-cone-end-nut,24° Cone End Nut,DIN 2353 Bite Type Adapters,strong,exact,116
+HP100.png,Union Cross,IH-AD-DIN-005,union-cross,Union Cross,DIN 2353 Bite Type Adapters,strong,exact,116
+HP101.png,Pump Connector,IH-AD-DIN-006,pump-connector,Pump Connector,DIN 2353 Bite Type Adapters,strong,exact,116
+HP102.png,Swivel Nut Run Tee,IH-AD-DIN-007,swivel-nut-run-tee,Swivel Nut Run Tee,DIN 2353 Bite Type Adapters,strong,exact,116
+HP103.png,Swivel Nut Branch Tee,IH-AD-DIN-008,swivel-nut-branch-tee,Swivel Nut Branch Tee,DIN 2353 Bite Type Adapters,strong,exact,116
+HP104.png,Adjustable BranchTee,IH-AD-DIN-009,adjustable-branchtee,Adjustable BranchTee,DIN 2353 Bite Type Adapters,strong,exact,116
+HP105.png,Adjustable Branch Tee m Metric X m SAE X m Metric,IH-AD-DIN-010,adjustable-branch-tee-m-metric-x-m-sae-x-m-metric,Adjustable Branch Tee m Metric X m SAE X m Metric,DIN 2353 Bite Type Adapters,strong,exact,116
+HP106.png,Adjustable BranchTee,IH-AD-DIN-011,adjustable-branchtee-variant-2,Adjustable BranchTee (Variant 2),DIN 2353 Bite Type Adapters,strong,prefix,110
+HP107.png,Adjustable RunTee,IH-AD-DIN-012,adjustable-runtee,Adjustable RunTee,DIN 2353 Bite Type Adapters,strong,exact,116
+HP108.png,Adjustable Run Tee m Metric X m Metric,IH-AD-DIN-013,adjustable-run-tee-m-metric-x-m-metric,Adjustable Run Tee m Metric X m Metric,DIN 2353 Bite Type Adapters,strong,exact,116
+HP109.png,Union Tee,IH-AD-DIN-014,union-tee,Union Tee,DIN 2353 Bite Type Adapters,strong,exact,116
+HP110.png,Male Female Connector,IH-AD-DIN-015,male-female-connector,Male Female Connector,DIN 2353 Bite Type Adapters,strong,exact,116
+HP111.png,Blanking Plug for Port with ED Seal,IH-AD-DIN-016,blanking-plug-for-port-with-ed-seal,Blanking Plug for Port with ED Seal,DIN 2353 Bite Type Adapters,strong,exact,116
+HP112.png,Blanking Plug with Nut for Cone,IH-AD-DIN-017,blanking-plug-with-nut-for-cone,Blanking Plug with Nut for Cone,DIN 2353 Bite Type Adapters,strong,exact,116
+HP113.png,Blanking Plug,IH-AD-DIN-018,blanking-plug,Blanking Plug,DIN 2353 Bite Type Adapters,strong,exact,116
+HP114.png,Swivel Union,IH-AD-DIN-019,swivel-union,Swivel Union,DIN 2353 Bite Type Adapters,strong,exact,116
+HP115.png,Swivel Connector BSPP Flat,IH-AD-DIN-020,swivel-connector-bspp-flat,Swivel Connector BSPP Flat,DIN 2353 Bite Type Adapters,strong,exact,116
+HP116.png,Swivel Connector BSPT,IH-AD-DIN-021,swivel-connector-bspt,Swivel Connector BSPT,DIN 2353 Bite Type Adapters,strong,exact,116
+HP117.png,Swivel Nut Elbow,IH-AD-DIN-022,swivel-nut-elbow,Swivel Nut Elbow,DIN 2353 Bite Type Adapters,strong,exact,116
+HP118.png,Swivel Connector BSPP 60° Cone Seat,IH-AD-DIN-023,swivel-connector-bspp-60-cone-seat,Swivel Connector BSPP 60° Cone Seat,DIN 2353 Bite Type Adapters,strong,exact,116
+HP119.png,Swivel Nut Union Tube End Reducer,IH-AD-DIN-024,swivel-nut-union-tube-end-reducer,Swivel Nut Union Tube End Reducer,DIN 2353 Bite Type Adapters,strong,exact,116
+HP120.png,Swivel Connector Metric,IH-AD-DIN-025,swivel-connector-metric,Swivel Connector Metric,DIN 2353 Bite Type Adapters,strong,exact,116
+HP121.png,Bulkhead Elbow Union Metric,IH-AD-DIN-026,bulkhead-elbow-union-metric,Bulkhead Elbow Union Metric,DIN 2353 Bite Type Adapters,strong,exact,116
+HP122.png,Bulkhead Elbow Union Metric,IH-AD-DIN-027,bulkhead-elbow-union-metric-variant-2,Bulkhead Elbow Union Metric (Variant 2),DIN 2353 Bite Type Adapters,strong,prefix,110
+HP123.png,Bulkhead Union Metric,IH-AD-DIN-028,bulkhead-union-metric,Bulkhead Union Metric,DIN 2353 Bite Type Adapters,strong,exact,116
+HP124.png,Weld Connector,IH-AD-DIN-029,weld-connector,Weld Connector,DIN 2353 Bite Type Adapters,strong,exact,116
+HP125.png,Male Stud Connector BSPT,IH-AD-DIN-030,male-stud-connector-bspt,Male Stud Connector BSPT,DIN 2353 Bite Type Adapters,strong,exact,116
+HP126.png,Male Stud Elbow BSPT,IH-AD-DIN-031,male-stud-elbow-bspt,Male Stud Elbow BSPT,DIN 2353 Bite Type Adapters,strong,exact,116
+HP127.png,Male Stud Elbow NPT,IH-AD-DIN-032,male-stud-elbow-npt,Male Stud Elbow NPT,DIN 2353 Bite Type Adapters,strong,exact,116
+HP128.png,Male Stud Connector NPT,IH-AD-DIN-033,male-stud-connector-npt,Male Stud Connector NPT,DIN 2353 Bite Type Adapters,strong,exact,116
+HP129.png,Male Stud Connector Metric,IH-AD-DIN-034,male-stud-connector-metric,Male Stud Connector Metric,DIN 2353 Bite Type Adapters,strong,exact,116
+HP130.png,High Pressure Banjo Elbow Metric,IH-AD-DIN-035,high-pressure-banjo-elbow-metric,High Pressure Banjo Elbow Metric,DIN 2353 Bite Type Adapters,strong,exact,116
+HP131.png,Adjustable LockNut Elbow Metric,IH-AD-DIN-036,adjustable-locknut-elbow-metric,Adjustable LockNut Elbow Metric,DIN 2353 Bite Type Adapters,strong,exact,116
+HP132.png,High Pressure Banjo Elbow BSPP,IH-AD-DIN-037,high-pressure-banjo-elbow-bspp,High Pressure Banjo Elbow BSPP,DIN 2353 Bite Type Adapters,strong,exact,116
+HP133.png,Male Stud Connector Metric with ED Seal,IH-AD-DIN-038,male-stud-connector-metric-with-ed-seal,Male Stud Connector Metric with ED Seal,DIN 2353 Bite Type Adapters,strong,exact,116
+HP134.png,Adjustable Lock Nut Elbow BSPP,IH-AD-DIN-039,adjustable-lock-nut-elbow-bspp,Adjustable Lock Nut Elbow BSPP,DIN 2353 Bite Type Adapters,strong,exact,116
+HP135.png,Male Stud Connector BSPP with ED Seal,IH-AD-DIN-040,male-stud-connector-bspp-with-ed-seal,Male Stud Connector BSPP with ED Seal,DIN 2353 Bite Type Adapters,strong,exact,116
+HP136.png,Male Stud Connector,IH-AD-DIN-041,male-stud-connector,Male Stud Connector,DIN 2353 Bite Type Adapters,strong,exact,116
+HP137.png,Elbow Union,IH-AD-DIN-042,elbow-union,Elbow Union,DIN 2353 Bite Type Adapters,strong,exact,116
+HP138.png,Male Stud Connector BSPP,IH-AD-DIN-043,male-stud-connector-bspp,Male Stud Connector BSPP,DIN 2353 Bite Type Adapters,strong,exact,116
+HP139.png,Union Metric,IH-AD-DIN-044,union-metric,Union Metric,DIN 2353 Bite Type Adapters,strong,exact,116
+HP140.png,Union Elbow Metric,IH-AD-DIN-045,union-elbow-metric,Union Elbow Metric,DIN 2353 Bite Type Adapters,strong,exact,116
+HP141.png,Bulkhead Locknut,IH-AD-BSP-001,bulkhead-locknut,Bulkhead Locknut,BSP Adapters,strong,exact,110
+HP142.png,Female Thread Cross,IH-AD-BSP-002,female-thread-cross,Female Thread Cross,BSP Adapters,strong,exact,116
+HP143.png,Swivel Nut Tee,IH-AD-BSP-003,swivel-nut-tee,Swivel Nut Tee,BSP Adapters,strong,exact,116
+HP144.png,Female Thread Tee,IH-AD-BSP-004,female-thread-tee,Female Thread Tee,BSP Adapters,strong,exact,116
+HP145.png,Swivel Nut Branch Tee,IH-AD-BSP-005,swivel-nut-branch-tee-2,Swivel Nut Branch Tee,BSP Adapters,strong,exact,116
+HP146.png,Swivel Nut Run Tee,IH-AD-BSP-006,swivel-nut-run-tee-2,Swivel Nut Run Tee,BSP Adapters,strong,exact,116
+HP147.png,Union Tee BSPT,IH-AD-BSP-007,union-tee-bspt,Union Tee BSPT,BSP Adapters,strong,exact,116
+HP148.png,Male Stud Branch Tee,IH-AD-BSP-008,male-stud-branch-tee,Male Stud Branch Tee,BSP Adapters,strong,exact,116
+HP149.png,Union Tee,IH-AD-BSP-009,union-tee-2,Union Tee,BSP Adapters,strong,exact,116
+HP150.png,Male Stud Run Tee,IH-AD-BSP-010,male-stud-run-tee,Male Stud Run Tee,BSP Adapters,strong,exact,116
+HP151.png,Female Swivel Cap,IH-AD-BSP-011,female-swivel-cap,Female Swivel Cap,BSP Adapters,strong,exact,116
+HP152.png,Hexagon Socket Plug,IH-AD-BSP-012,hexagon-socket-plug,Hexagon Socket Plug,BSP Adapters,strong,exact,116
+HP153.png,Blanking Plug for Ports with ED Seal,IH-AD-BSP-013,blanking-plug-for-ports-with-ed-seal,Blanking Plug for Ports with ED Seal,BSP Adapters,strong,exact,116
+HP154.png,Hex Head Plug,IH-AD-BSP-014,hex-head-plug,Hex Head Plug,BSP Adapters,strong,exact,116
+HP155.png,Female Thread Elbow,IH-AD-BSP-015,female-thread-elbow,Female Thread Elbow,BSP Adapters,strong,exact,116
+HP157.png,BSP Female Connector,IH-AD-BSP-017,bsp-female-connector,BSP Female Connector,BSP Adapters,strong,exact,116
+HP158.png,Male Female Thread Adaptor BSPT,IH-AD-BSP-018,male-female-thread-adaptor-bspt,Male Female Thread Adaptor BSPT,BSP Adapters,strong,exact,116
+HP159.png,Thread Reducer,IH-AD-BSP-019,thread-reducer,Thread Reducer,BSP Adapters,strong,exact,116
+HP160.png,Thread Adaptor BSP ED Seal,IH-AD-BSP-020,thread-adaptor-bsp-ed-seal,Thread Adaptor BSP ED Seal,BSP Adapters,strong,exact,116
+HP161.png,Male Female Thread Elbow,IH-AD-BSP-021,male-female-thread-elbow,Male Female Thread Elbow,BSP Adapters,strong,exact,116
+HP162.png,Thread Expander,IH-AD-BSP-022,thread-expander,Thread Expander,BSP Adapters,strong,exact,116
+HP163.png,Swivel Nut Elbow,IH-AD-BSP-023,swivel-nut-elbow-2,Swivel Nut Elbow,BSP Adapters,strong,exact,116
+HP164.png,Thread Reducer,IH-AD-BSP-024,thread-reducer-variant-2,Thread Reducer (Variant 2),BSP Adapters,strong,prefix,110
+HP165.png,Swivel Nut Union,IH-AD-BSP-025,swivel-nut-union,Swivel Nut Union,BSP Adapters,strong,exact,116
+HP167.png,Swivel Male Elbow NPT,IH-AD-BSP-027,swivel-male-elbow-npt,Swivel Male Elbow NPT,BSP Adapters,strong,exact,116
+HP168.png,Swivel Male Stud NPT,IH-AD-BSP-028,swivel-male-stud-npt,Swivel Male Stud NPT,BSP Adapters,strong,exact,116
+HP169.png,Swivel Male 45° Elbow,IH-AD-BSP-029,swivel-male-45-elbow,Swivel Male 45° Elbow,BSP Adapters,strong,exact,116
+HP170.png,Swivel Male Elbow,IH-AD-BSP-030,swivel-male-elbow,Swivel Male Elbow,BSP Adapters,strong,exact,116
+HP171.png,Bulkhead Union,IH-AD-BSP-031,bulkhead-union,Bulkhead Union,BSP Adapters,strong,exact,116
+HP172.png,Swivel Male Stud,IH-AD-BSP-032,swivel-male-stud,Swivel Male Stud,BSP Adapters,strong,exact,116
+HP173.png,Union Elbow BSPT,IH-AD-BSP-033,union-elbow-bspt,Union Elbow BSPT,BSP Adapters,strong,exact,116
+HP174.png,Union BSPT,IH-AD-BSP-034,union-bspt,Union BSPT,BSP Adapters,strong,exact,116
+HP175.png,Male Stud 45° Elbow BSPT,IH-AD-BSP-035,male-stud-45-elbow-bspt,Male Stud 45° Elbow BSPT,BSP Adapters,strong,exact,116
+HP176.png,Male Stud Elbow BSPT,IH-AD-BSP-036,male-stud-elbow-bspt-2,Male Stud Elbow BSPT,BSP Adapters,strong,exact,116
+HP177.png,Male Stud Elbow UNF O-Ring,IH-AD-BSP-037,male-stud-elbow-unf-o-ring,Male Stud Elbow UNF O-Ring,BSP Adapters,strong,exact,116
+HP178.png,Male Stud Connector BSPT,IH-AD-BSP-038,male-stud-connector-bspt-2,Male Stud Connector BSPT,BSP Adapters,strong,exact,116
+HP179.png,Male Stud 45° Elbow UNF O-Ring,IH-AD-BSP-039,male-stud-45-elbow-unf-o-ring,Male Stud 45° Elbow UNF O-Ring,BSP Adapters,strong,exact,116
+HP180.png,Male Stud Connector UNF O-Ring,IH-AD-BSP-040,male-stud-connector-unf-o-ring,Male Stud Connector UNF O-Ring,BSP Adapters,strong,exact,116
+HP181.png,Male Stud 45° Elbow NPT,IH-AD-BSP-041,male-stud-45-elbow-npt,Male Stud 45° Elbow NPT,BSP Adapters,strong,exact,116
+HP182.png,Male Stud Elbow NPT,IH-AD-BSP-042,male-stud-elbow-npt-2,Male Stud Elbow NPT,BSP Adapters,strong,exact,116
+HP183.png,Male Stud Elbow JIC,IH-AD-BSP-043,male-stud-elbow-jic,Male Stud Elbow JIC,BSP Adapters,strong,exact,116
+HP184.png,Male Stud Connector NPT,IH-AD-BSP-044,male-stud-connector-npt-2,Male Stud Connector NPT,BSP Adapters,strong,exact,116
+HP185.png,Male Stud Connector JIC,IH-AD-BSP-045,male-stud-connector-jic,Male Stud Connector JIC,BSP Adapters,strong,exact,116
+HP186.png,Male Stud Connector Metric O-Ring,IH-AD-BSP-046,male-stud-connector-metric-o-ring,Male Stud Connector Metric O-Ring,BSP Adapters,strong,exact,116
+HP187.png,Male Stud 45° Elbow BSPP O-Ring,IH-AD-BSP-047,male-stud-45-elbow-bspp-o-ring,Male Stud 45° Elbow BSPP O-Ring,BSP Adapters,strong,exact,116
+HP188.png,Male Stud Elbow,IH-AD-BSP-048,male-stud-elbow,Male Stud Elbow,BSP Adapters,strong,exact,116
+HP189.png,Male Stud Connector BSP O-Ring,IH-AD-BSP-049,male-stud-connector-bsp-o-ring,Male Stud Connector BSP O-Ring,BSP Adapters,strong,exact,116
+HP190.png,Male Stud Connector ORFS,IH-AD-BSP-050,male-stud-connector-orfs,Male Stud Connector ORFS,BSP Adapters,strong,exact,116
+HP191.png,Union 45° Elbow,IH-AD-BSP-051,union-45-elbow,Union 45° Elbow,BSP Adapters,strong,exact,116
+HP192.png,Union Elbow,IH-AD-BSP-052,union-elbow,Union Elbow,BSP Adapters,strong,exact,116
+HP193.png,Union,IH-AD-BSP-053,union,Union,BSP Adapters,strong,exact,116
+HP194.png,Lock Nut JIC,IH-AD-JIC-001,lock-nut-jic,Lock Nut JIC,JIC Adapters,strong,exact,116
+HP195.png,Male Cross JIC,IH-AD-JIC-002,male-cross-jic,Male Cross JIC,JIC Adapters,strong,exact,116
+HP196.png,Run Tee Swivel JIC,IH-AD-JIC-003,run-tee-swivel-jic,Run Tee Swivel JIC,JIC Adapters,strong,exact,116
+HP197.png,Female Swivel Tee JIC,IH-AD-JIC-004,female-swivel-tee-jic,Female Swivel Tee JIC,JIC Adapters,strong,exact,116
+HP198.png,Male Tee JIC,IH-AD-JIC-005,male-tee-jic,Male Tee JIC,JIC Adapters,strong,exact,116
+HP199.png,Branch Tee Swivel Connector JIC,IH-AD-JIC-006,branch-tee-swivel-connector-jic,Branch Tee Swivel Connector JIC,JIC Adapters,strong,exact,116
+HP200.png,Adjustable Branch Tee m JIC X m NPT X m JIC,IH-AD-JIC-007,adjustable-branch-tee-m-jic-x-m-npt-x-m-jic,Adjustable Branch Tee m JIC X m NPT X m JIC,JIC Adapters,strong,exact,116
+HP201.png,Adjustable Branch Tee m JIC X m SAE X m JIC,IH-AD-JIC-008,adjustable-branch-tee-m-jic-x-m-sae-x-m-jic,Adjustable Branch Tee m JIC X m SAE X m JIC,JIC Adapters,strong,exact,116
+HP202.png,Adjustable Run Tee m JIC X m JIC X m Metric,IH-AD-JIC-009,adjustable-run-tee-m-jic-x-m-jic-x-m-metric,Adjustable Run Tee m JIC X m JIC X m Metric,JIC Adapters,strong,exact,116
+HP203.png,Adjustable Run Tee m JIC X m JIC X m BSP,IH-AD-JIC-010,adjustable-run-tee-m-jic-x-m-jic-x-m-bsp,Adjustable Run Tee m JIC X m JIC X m BSP,JIC Adapters,strong,exact,116
+HP204.png,90° Male Female Connector m JIC X f JIC,IH-AD-JIC-011,90-male-female-connector-m-jic-x-f-jic,90° Male Female Connector m JIC X f JIC,JIC Adapters,strong,exact,116
+HP205.png,Cap JIC,IH-AD-JIC-012,cap-jic,Cap JIC,JIC Adapters,strong,exact,116
+HP206.png,Male Female Connector m JIC X f JIC,IH-AD-JIC-013,male-female-connector-m-jic-x-f-jic,Male Female Connector m JIC X f JIC,JIC Adapters,strong,exact,116
+HP207.png,Plug JIC,IH-AD-JIC-014,plug-jic,Plug JIC,JIC Adapters,strong,exact,116
+HP208.png,Swivel Cap JIC,IH-AD-JIC-015,swivel-cap-jic,Swivel Cap JIC,JIC Adapters,strong,exact,116
+HP209.png,45°  Female Swivel Connector JIC,IH-AD-JIC-016,45-female-swivel-connector-jic,45°  Female Swivel Connector JIC,JIC Adapters,strong,exact,116
+HP210.png,90°  Female Swivel Connector JIC,IH-AD-JIC-017,90-female-swivel-connector-jic,90°  Female Swivel Connector JIC,JIC Adapters,strong,exact,116
+HP211.png,90° Swivel Connector m JIC X f JIC,IH-AD-JIC-018,90-swivel-connector-m-jic-x-f-jic,90° Swivel Connector m JIC X f JIC,JIC Adapters,strong,exact,116
+HP212.png,Swivel Connector  f JIC x f JIC,IH-AD-JIC-019,swivel-connector-f-jic-x-f-jic,Swivel Connector  f JIC x f JIC,JIC Adapters,strong,exact,116
+HP213.png,45° Swivel Connector m JIC X f JIC,IH-AD-JIC-020,45-swivel-connector-m-jic-x-f-jic,45° Swivel Connector m JIC X f JIC,JIC Adapters,strong,exact,116
+HP214.png,Swivel Connector m JIC X f JIC,IH-AD-JIC-021,swivel-connector-m-jic-x-f-jic,Swivel Connector m JIC X f JIC,JIC Adapters,strong,exact,116
+HP215.png,90° Elbow m JIC X m BSPT,IH-AD-JIC-022,90-elbow-m-jic-x-m-bspt,90° Elbow m JIC X m BSPT,JIC Adapters,strong,exact,116
+HP216.png,Bulkhead Union JIC,IH-AD-JIC-023,bulkhead-union-jic,Bulkhead Union JIC,JIC Adapters,strong,exact,116
+HP217.png,Male Connector m JIC X m BSPT,IH-AD-JIC-024,male-connector-m-jic-x-m-bspt,Male Connector m JIC X m BSPT,JIC Adapters,strong,exact,116
+HP218.png,45° Elbow m JIC X m BSPT,IH-AD-JIC-025,45-elbow-m-jic-x-m-bspt,45° Elbow m JIC X m BSPT,JIC Adapters,strong,exact,116
+HP219.png,Male Connector m JIC X m NPT,IH-AD-JIC-026,male-connector-m-jic-x-m-npt,Male Connector m JIC X m NPT,JIC Adapters,strong,exact,116
+HP220.png,90° Elbow Connector m JIC X m NPT,IH-AD-JIC-027,90-elbow-connector-m-jic-x-m-npt,90° Elbow Connector m JIC X m NPT,JIC Adapters,strong,exact,116
+HP221.png,Adjustable 90° Elbow m JIC X m Metric Flat,IH-AD-JIC-028,adjustable-90-elbow-m-jic-x-m-metric-flat,Adjustable 90° Elbow m JIC X m Metric Flat,JIC Adapters,strong,exact,116
+HP222.png,Male Connector m JIC X m Metric,IH-AD-JIC-029,male-connector-m-jic-x-m-metric,Male Connector m JIC X m Metric,JIC Adapters,strong,exact,116
+HP223.png,Male Connector m JIC X m Metric Flat with Seal,IH-AD-JIC-030,male-connector-m-jic-x-m-metric-flat-with-seal,Male Connector m JIC X m Metric Flat with Seal,JIC Adapters,strong,exact,116
+HP224.png,Adjustable 45° Elbow m JIC X m Metric Flat,IH-AD-JIC-031,adjustable-45-elbow-m-jic-x-m-metric-flat,Adjustable 45° Elbow m JIC X m Metric Flat,JIC Adapters,strong,exact,116
+HP225.png,Adjustable 90° Elbow m JIC X m SAE,IH-AD-JIC-032,adjustable-90-elbow-m-jic-x-m-sae,Adjustable 90° Elbow m JIC X m SAE,JIC Adapters,strong,exact,116
+HP226.png,Adjustable 90° Elbow m JIC X m BSP,IH-AD-JIC-033,adjustable-90-elbow-m-jic-x-m-bsp,Adjustable 90° Elbow m JIC X m BSP,JIC Adapters,strong,exact,116
+HP227.png,Adjustable 45° Elbow m JIC X m SAE,IH-AD-JIC-034,adjustable-45-elbow-m-jic-x-m-sae,Adjustable 45° Elbow m JIC X m SAE,JIC Adapters,strong,exact,116
+HP228.png,Male Connector m JIC X m SAE,IH-AD-JIC-035,male-connector-m-jic-x-m-sae,Male Connector m JIC X m SAE,JIC Adapters,strong,exact,116
+HP229.png,Male Connector JIC,IH-AD-JIC-036,male-connector-jic,Male Connector JIC,JIC Adapters,strong,exact,116
+HP230.png,90° Elbow Connector m JIC,IH-AD-JIC-037,90-elbow-connector-m-jic,90° Elbow Connector m JIC,JIC Adapters,strong,exact,116
+HP231.png,Lock Nut ORFS,IH-AD-ORFS-001,lock-nut-orfs,Lock Nut ORFS,ORFS Adapters,strong,exact,116
+HP232.png,Adjustable Branch Tee m ORFS X m SAE X m ORFS,IH-AD-ORFS-002,adjustable-branch-tee-m-orfs-x-m-sae-x-m-orfs,Adjustable Branch Tee m ORFS X m SAE X m ORFS,ORFS Adapters,strong,exact,116
+HP233.png,Adjustable Branch Tee m ORFS X m BSP X m ORFS,IH-AD-ORFS-003,adjustable-branch-tee-m-orfs-x-m-bsp-x-m-orfs,Adjustable Branch Tee m ORFS X m BSP X m ORFS,ORFS Adapters,strong,exact,116
+HP234.png,Adjustable Branch Tee m ORFS X m Metric X m ORFS,IH-AD-ORFS-004,adjustable-branch-tee-m-orfs-x-m-metric-x-m-orfs,Adjustable Branch Tee m ORFS X m Metric X m ORFS,ORFS Adapters,strong,exact,116
+HP235.png,Adjustable Run Tee m ORFS X m ORFS X m SAE,IH-AD-ORFS-005,adjustable-run-tee-m-orfs-x-m-orfs-x-m-sae,Adjustable Run Tee m ORFS X m ORFS X m SAE,ORFS Adapters,strong,exact,116
+HP236.png,Adjustable Run Tee m ORFS X m ORFS X m Metric,IH-AD-ORFS-006,adjustable-run-tee-m-orfs-x-m-orfs-x-m-metric,Adjustable Run Tee m ORFS X m ORFS X m Metric,ORFS Adapters,strong,exact,116
+HP237.png,Plug ORFS,IH-AD-ORFS-007,plug-orfs,Plug ORFS,ORFS Adapters,strong,exact,116
+HP238.png,Swivel Cap ORFS,IH-AD-ORFS-008,swivel-cap-orfs,Swivel Cap ORFS,ORFS Adapters,strong,exact,116
+HP239.png,Swivel Connector m SAE X f ORFS,IH-AD-ORFS-009,swivel-connector-m-sae-x-f-orfs,Swivel Connector m SAE X f ORFS,ORFS Adapters,strong,exact,116
+HP240.png,90° Swivel Connector m ORFS X f ORFS,IH-AD-ORFS-010,90-swivel-connector-m-orfs-x-f-orfs,90° Swivel Connector m ORFS X f ORFS,ORFS Adapters,strong,exact,116
+HP241.png,Swivel Connector m ORFS X f ORFS,IH-AD-ORFS-011,swivel-connector-m-orfs-x-f-orfs,Swivel Connector m ORFS X f ORFS,ORFS Adapters,strong,exact,116
+HP242.png,45° Swivel Connector m ORFS X f ORFS,IH-AD-ORFS-012,45-swivel-connector-m-orfs-x-f-orfs,45° Swivel Connector m ORFS X f ORFS,ORFS Adapters,strong,exact,116
+HP243.png,Bulkhead Union ORFS,IH-AD-ORFS-013,bulkhead-union-orfs,Bulkhead Union ORFS,ORFS Adapters,strong,exact,116
+HP244.png,Adjustable 90° Elbow m ORFS X m SAE,IH-AD-ORFS-014,adjustable-90-elbow-m-orfs-x-m-sae,Adjustable 90° Elbow m ORFS X m SAE,ORFS Adapters,strong,exact,116
+HP245.png,Male Connector m ORFS X m SAE,IH-AD-ORFS-015,male-connector-m-orfs-x-m-sae,Male Connector m ORFS X m SAE,ORFS Adapters,strong,exact,116
+HP246.png,Adjustable 45° Elbow m ORFS X m SAE,IH-AD-ORFS-016,adjustable-45-elbow-m-orfs-x-m-sae,Adjustable 45° Elbow m ORFS X m SAE,ORFS Adapters,strong,exact,116
+HP247.png,Male Connector m ORFS X m NPT,IH-AD-ORFS-017,male-connector-m-orfs-x-m-npt,Male Connector m ORFS X m NPT,ORFS Adapters,strong,exact,116
+HP248.png,Adjustable 90° Elbow m ORFS X m Metric Flat,IH-AD-ORFS-018,adjustable-90-elbow-m-orfs-x-m-metric-flat,Adjustable 90° Elbow m ORFS X m Metric Flat,ORFS Adapters,strong,exact,116
+HP249.png,Male Connector m ORFS X m Metric Flat,IH-AD-ORFS-019,male-connector-m-orfs-x-m-metric-flat,Male Connector m ORFS X m Metric Flat,ORFS Adapters,strong,exact,116
+HP250.png,Adjustable 90° Elbow m ORFS X m BSP,IH-AD-ORFS-020,adjustable-90-elbow-m-orfs-x-m-bsp,Adjustable 90° Elbow m ORFS X m BSP,ORFS Adapters,strong,exact,116
+HP251.png,Adjustable 45° Elbow m ORFS X m BSP,IH-AD-ORFS-021,adjustable-45-elbow-m-orfs-x-m-bsp,Adjustable 45° Elbow m ORFS X m BSP,ORFS Adapters,strong,exact,116
+HP253.png,90° Elbow Connector m ORFS X m ORFS,IH-AD-ORFS-023,90-elbow-connector-m-orfs-x-m-orfs,90° Elbow Connector m ORFS X m ORFS,ORFS Adapters,strong,exact,116
+HP254.png,Male Connector m ORFS X m ORFS,IH-AD-ORFS-024,male-connector-m-orfs-x-m-orfs,Male Connector m ORFS X m ORFS,ORFS Adapters,strong,exact,116
+HP255.png,BSM Bonded Seal,IH-AD-MET-001,bsm-bonded-seal,BSM Bonded Seal,Metric Adapters,strong,exact,116
+HP256.png,Male Cross Metric,IH-AD-MET-002,male-cross-metric,Male Cross Metric,Metric Adapters,strong,exact,116
+HP258.png,Male Metric Tee,IH-AD-MET-004,male-metric-tee,Male Metric Tee,Metric Adapters,strong,exact,116
+HP259.png,Bulkhead Union Metric Flat,IH-AD-MET-005,bulkhead-union-metric-flat,Bulkhead Union Metric Flat,Metric Adapters,strong,exact,116
+HP260.png,90° Bulkhead Metric Flat,IH-AD-MET-006,90-bulkhead-metric-flat,90° Bulkhead Metric Flat,Metric Adapters,strong,exact,116
+HP261.png,Plug Metric,IH-AD-MET-007,plug-metric,Plug Metric,Metric Adapters,strong,exact,116
+HP262.png,Hollow Hex Plug Metric Flat,IH-AD-MET-008,hollow-hex-plug-metric-flat,Hollow Hex Plug Metric Flat,Metric Adapters,strong,exact,116
+HP263.png,Plug Metric O-Ring,IH-AD-MET-009,plug-metric-o-ring,Plug Metric O-Ring,Metric Adapters,strong,exact,116
+HP264.png,Plug Metric Seal Flat,IH-AD-MET-010,plug-metric-seal-flat,Plug Metric Seal Flat,Metric Adapters,strong,exact,116
+HP265.png,Male Connector m Metric X m Komatsu,IH-AD-MET-011,male-connector-m-metric-x-m-komatsu,Male Connector m Metric X m Komatsu,Metric Adapters,strong,exact,116
+HP266.png,Male Connector m NPT X m Komatsu,IH-AD-MET-012,male-connector-m-npt-x-m-komatsu,Male Connector m NPT X m Komatsu,Metric Adapters,strong,exact,116
+HP267.png,Male Connector m Metric Flat X m Komatsu,IH-AD-MET-013,male-connector-m-metric-flat-x-m-komatsu,Male Connector m Metric Flat X m Komatsu,Metric Adapters,strong,exact,116
+HP268.png,Male Connector m SAE X m Komatsu,IH-AD-MET-014,male-connector-m-sae-x-m-komatsu,Male Connector m SAE X m Komatsu,Metric Adapters,strong,exact,116
+HP269.png,Male Connector m Komatsu,IH-AD-MET-015,male-connector-m-komatsu,Male Connector m Komatsu,Metric Adapters,strong,exact,116
+HP270.png,Male Connector m Metric X m SAE,IH-AD-MET-016,male-connector-m-metric-x-m-sae,Male Connector m Metric X m SAE,Metric Adapters,strong,exact,116
+HP271.png,Male Connector m Metric X m Metric,IH-AD-MET-017,male-connector-m-metric-x-m-metric,Male Connector m Metric X m Metric,Metric Adapters,strong,exact,116
+HP272.png,Female Cross NPT,IH-AD-NPT-001,female-cross-npt,Female Cross NPT,NPT Adapters,strong,exact,116
+HP273.png,Branch Tee Connector f NPT X m NPT X f NPT,IH-AD-NPT-002,branch-tee-connector-f-npt-x-m-npt-x-f-npt,Branch Tee Connector f NPT X m NPT X f NPT,NPT Adapters,strong,exact,116
+HP274.png,Male Tee NPT,IH-AD-NPT-003,male-tee-npt,Male Tee NPT,NPT Adapters,strong,exact,116
+HP275.png,Run Tee Connector f NPT X f NPT X m NPT,IH-AD-NPT-004,run-tee-connector-f-npt-x-f-npt-x-m-npt,Run Tee Connector f NPT X f NPT X m NPT,NPT Adapters,strong,exact,116
+HP276.png,90° Elbow Female f NPT X f Swivel NPSM,IH-AD-NPT-005,90-elbow-female-f-npt-x-f-swivel-npsm,90° Elbow Female f NPT X f Swivel NPSM,NPT Adapters,strong,exact,116
+HP277.png,Female Connector f NPT X f Swivel NPSM,IH-AD-NPT-006,female-connector-f-npt-x-f-swivel-npsm,Female Connector f NPT X f Swivel NPSM,NPT Adapters,strong,exact,116
+HP278.png,90° Elbow Fixed Female NPT,IH-AD-NPT-007,90-elbow-fixed-female-npt,90° Elbow Fixed Female NPT,NPT Adapters,strong,exact,116
+HP279.png,Fixed Female Connector NPT,IH-AD-NPT-008,fixed-female-connector-npt,Fixed Female Connector NPT,NPT Adapters,strong,exact,116
+HP280.png,90° Male Female Connector m NPT X f NPT,IH-AD-NPT-009,90-male-female-connector-m-npt-x-f-npt,90° Male Female Connector m NPT X f NPT,NPT Adapters,strong,exact,116
+HP281.png,Male Female Connector m SAE X f NPT,IH-AD-NPT-010,male-female-connector-m-sae-x-f-npt,Male Female Connector m SAE X f NPT,NPT Adapters,strong,exact,116
+HP282.png,Male Female Connector m NPT X f NPT,IH-AD-NPT-011,male-female-connector-m-npt-x-f-npt,Male Female Connector m NPT X f NPT,NPT Adapters,strong,exact,116
+HP283.png,Reducing Adaptor NPT,IH-AD-NPT-012,reducing-adaptor-npt,Reducing Adaptor NPT,NPT Adapters,strong,exact,116
+HP284.png,Cap NPT,IH-AD-NPT-013,cap-npt,Cap NPT,NPT Adapters,strong,exact,116
+HP285.png,Hollow Hex Insert Plug NPT,IH-AD-NPT-014,hollow-hex-insert-plug-npt,Hollow Hex Insert Plug NPT,NPT Adapters,strong,exact,116
+HP286.png,Plug NPT,IH-AD-NPT-015,plug-npt,Plug NPT,NPT Adapters,strong,exact,116
+HP287.png,Swivel Connector m SAE X f NPSM,IH-AD-NPT-016,swivel-connector-m-sae-x-f-npsm,Swivel Connector m SAE X f NPSM,NPT Adapters,strong,exact,116
+HP288.png,90° Swivel Connector m NPT X f NPSM,IH-AD-NPT-017,90-swivel-connector-m-npt-x-f-npsm,90° Swivel Connector m NPT X f NPSM,NPT Adapters,strong,exact,116
+HP289.png,Swivel Connector m NPT X f NPSM,IH-AD-NPT-018,swivel-connector-m-npt-x-f-npsm,Swivel Connector m NPT X f NPSM,NPT Adapters,strong,exact,116
+HP290.png,Male Connector m NPT X m NPT,IH-AD-NPT-019,male-connector-m-npt-x-m-npt,Male Connector m NPT X m NPT,NPT Adapters,strong,exact,116
+HP291.png,90° Elbow Connector NPT,IH-AD-NPT-020,90-elbow-connector-npt,90° Elbow Connector NPT,NPT Adapters,strong,exact,116
+HP292.png,Weld Flange Connector L-series flange X Weld tube,IH-AD-SAEFL-001,weld-flange-connector-l-series-flange-x-weld-tube,Weld Flange Connector L-series flange X Weld tube,SAE Flange Adapters,strong,exact,110
+HP293.png,Weld Flange Connector S-series flange X Weld tube,IH-AD-SAEFL-002,weld-flange-connector-s-series-flange-x-weld-tube,Weld Flange Connector S-series flange X Weld tube,SAE Flange Adapters,strong,exact,110
+HP294.png,45° Elbow Flange Connector m JIC X L-series flange,IH-AD-SAEFL-003,45-elbow-flange-connector-m-jic-x-l-series-flange,45° Elbow Flange Connector m JIC X L-series flange,SAE Flange Adapters,strong,exact,116
+HP295.png,Male Flange Connector m JIC X L-series flange,IH-AD-SAEFL-004,male-flange-connector-m-jic-x-l-series-flange,Male Flange Connector m JIC X L-series flange,SAE Flange Adapters,strong,exact,116
+HP296.png,90° Elbow Flange Connector m JIC X L-series flange,IH-AD-SAEFL-005,90-elbow-flange-connector-m-jic-x-l-series-flange,90° Elbow Flange Connector m JIC X L-series flange,SAE Flange Adapters,strong,exact,110
+HP297.png,BSP Threaded,IH-AD-HSF-001,bsp-threaded,BSP Threaded,Hydraulic SAE Flanges,strong,exact,116
+HP298.png,BSP Threaded Double Flange,IH-AD-HSF-002,bsp-threaded-double-flange,BSP Threaded Double Flange,Hydraulic SAE Flanges,strong,exact,116
+HP299.png,NPT Threaded Double Flange,IH-AD-HSF-003,npt-threaded-double-flange,NPT Threaded Double Flange,Hydraulic SAE Flanges,strong,exact,116
+HP300.png,NPT Threaded,IH-AD-HSF-004,npt-threaded,NPT Threaded,Hydraulic SAE Flanges,strong,exact,116
+HP301.png,Weld-in Socket Weld,IH-AD-HSF-005,weld-in-socket-weld,Weld-in Socket Weld,Hydraulic SAE Flanges,strong,exact,116
+HP302.png,Socket Weld Double Flange,IH-AD-HSF-006,socket-weld-double-flange,Socket Weld Double Flange,Hydraulic SAE Flanges,strong,exact,116
+HP303.png,SAE Blind Flange,IH-AD-HSF-007,sae-blind-flange,SAE Blind Flange,Hydraulic SAE Flanges,strong,exact,116
+HP304.png,Weld-on Butt Weld,IH-AD-HSF-008,weld-on-butt-weld,Weld-on Butt Weld,Hydraulic SAE Flanges,strong,exact,116
+HP305.png,O-Rings for SAE Hydraulic Flanges,IH-AD-HSF-009,o-rings-for-sae-hydraulic-flanges,O-Rings for SAE Hydraulic Flanges,Hydraulic SAE Flanges,strong,exact,116
+HP306.png,Set of Bolts and Spring Washers,IH-AD-HSF-010,set-of-bolts-and-spring-washers,Set of Bolts and Spring Washers,Hydraulic SAE Flanges,strong,exact,116
+HP307.png,BSP Male Flat Seat,IH-SS-BSP-001,bsp-male-flat-seat,BSP Male Flat Seat,SS316L BSP Fittings,strong,exact,116
+HP308.png,BSP male-parallel 60° cone,IH-SS-BSP-002,bsp-male-parallel-60-cone,BSP male-parallel 60° cone,SS316L BSP Fittings,strong,exact,116
+HP309.png,BSP swivel female 60° (90º compact elbow),IH-SS-BSP-003,bsp-swivel-female-60-90-compact-elbow,BSP swivel female 60° (90º compact elbow),SS316L BSP Fittings,strong,exact,116
+HP310.png,BSP swivel female 60° cone with o-ring (45º elbow),IH-SS-BSP-004,bsp-swivel-female-60-cone-with-o-ring-45-elbow,BSP swivel female 60° cone with o-ring (45º elbow),SS316L BSP Fittings,strong,exact,116
+HP311.png,BSP swivel female 60° cone with o-ring (90º elbow),IH-SS-BSP-005,bsp-swivel-female-60-cone-with-o-ring-90-elbow,BSP swivel female 60° cone with o-ring (90º elbow),SS316L BSP Fittings,strong,exact,116
+HP312.png,BSP swivel female flat seat (45º elbow),IH-SS-BSP-006,bsp-swivel-female-flat-seat-45-elbow,BSP swivel female flat seat (45º elbow),SS316L BSP Fittings,strong,exact,116
+HP313.png,Male BSPT tapered,IH-SS-BSP-007,male-bspt-tapered,Male BSPT tapered,SS316L BSP Fittings,strong,exact,116
+HP314.png,BSP swivel female 60° cone (45º elbow),IH-SS-BSP-008,bsp-swivel-female-60-cone-45-elbow,BSP swivel female 60° cone (45º elbow),SS316L BSP Fittings,strong,exact,116
+HP315.png,BSP swivel female flat seat (90º elbow),IH-SS-BSP-009,bsp-swivel-female-flat-seat-90-elbow,BSP swivel female flat seat (90º elbow),SS316L BSP Fittings,strong,exact,116
+HP316.png,BSP Swivel Female 60° cone (90º elbow),IH-SS-BSP-010,bsp-swivel-female-60-cone-90-elbow,BSP Swivel Female 60° cone (90º elbow),SS316L BSP Fittings,strong,exact,116
+HP317.png,BSP swivel female flat seat,IH-SS-BSP-011,bsp-swivel-female-flat-seat,BSP swivel female flat seat,SS316L BSP Fittings,strong,exact,116
+HP318.png,BSP swivel female 60° cone with o-ring,IH-SS-BSP-012,bsp-swivel-female-60-cone-with-o-ring,BSP swivel female 60° cone with o-ring,SS316L BSP Fittings,strong,exact,116
+HP319.png,BSP swivel female 60° cone,IH-SS-BSP-013,bsp-swivel-female-60-cone,BSP swivel female 60° cone,SS316L BSP Fittings,strong,exact,116
+HP320.png,3000 psi SAE flange (45º elbow) – code 61,IH-SS-SAE-001,3000-psi-sae-flange-45-elbow-code-61,3000 psi SAE flange (45º elbow) – code 61,SS316L SAE Fittings,strong,exact,110
+HP321.png,3000 PSI sae flange 90o elbow code 61,IH-SS-SAE-002,3000-psi-sae-flange-90o-elbow-code-61,3000 PSI sae flange 90o elbow code 61,SS316L SAE Fittings,strong,exact,116
+HP322.png,3000 psi SAE straight flange-code 61,IH-SS-SAE-003,3000-psi-sae-straight-flange-code-61,3000 psi SAE straight flange-code 61,SS316L SAE Fittings,strong,exact,116
+HP323.png,6000 psi SAE flange (45º elbow) – code 62,IH-SS-SAE-004,6000-psi-sae-flange-45-elbow-code-62,6000 psi SAE flange (45º elbow) – code 62,SS316L SAE Fittings,strong,exact,116
+HP324.png,6000 psi sae flange (90º elbow) – code 62,IH-SS-SAE-005,6000-psi-sae-flange-90-elbow-code-62,6000 psi sae flange (90º elbow) – code 62,SS316L SAE Fittings,strong,exact,116
+HP325.png,6000 psi SAE straight flange – code 62,IH-SS-SAE-006,6000-psi-sae-straight-flange-code-62,6000 psi SAE straight flange – code 62,SS316L SAE Fittings,strong,exact,116
+HP326.png,Banjo BSP,IH-SS-BJ-001,banjo-bsp,Banjo BSP,SS316L Banjos,strong,exact,110
+HP327.png,Banjo Metric,IH-SS-BJ-002,banjo-metric,Banjo Metric,SS316L Banjos,strong,exact,110
+HP328.png,JIC 37º swivel female,IH-SS-JIC-001,jic-37-swivel-female,JIC 37º swivel female,SS316L JIC 37° Fittings,strong,exact,116
+HP329.png,JIC 37º swivel female (45º elbow),IH-SS-JIC-002,jic-37-swivel-female-45-elbow,JIC 37º swivel female (45º elbow),SS316L JIC 37° Fittings,strong,exact,116
+HP330.png,JIC 37º swivel female (90º compact elbow),IH-SS-JIC-003,jic-37-swivel-female-90-compact-elbow,JIC 37º swivel female (90º compact elbow),SS316L JIC 37° Fittings,strong,exact,116
+HP331.png,Male JIC 37°,IH-SS-JIC-004,male-jic-37,Male JIC 37°,SS316L JIC 37° Fittings,strong,exact,116
+HP333.png,Metric female swivel with o-ring 24° cone,IH-SS-MET-001,metric-female-swivel-with-o-ring-24-cone,Metric female swivel with o-ring 24° cone,SS316L Metric Fittings,strong,exact,110
+HP334.png,Metric male stud 24° cone,IH-SS-MET-002,metric-male-stud-24-cone,Metric male stud 24° cone,SS316L Metric Fittings,strong,exact,110
+HP335.png,Metric swivel female with o-ring 24° cone (45º elbow),IH-SS-MET-003,metric-swivel-female-with-o-ring-24-cone-45-elbow,Metric swivel female with o-ring 24° cone (45º elbow),SS316L Metric Fittings,strong,exact,110
+HP337.png,Gas tube standpipes,IH-SS-SP-002,gas-tube-standpipes,Gas tube standpipes,SS316L Standpipes,strong,exact,116
+HP338.png,Gas tube standpipes (90º elbow),IH-SS-SP-003,gas-tube-standpipes-90-elbow,Gas tube standpipes (90º elbow),SS316L Standpipes,strong,exact,116
+HP339.png,Metric standpipe DIN 2353 fittings (90º elbow),IH-SS-SP-004,metric-standpipe-din-2353-fittings-90-elbow,Metric standpipe DIN 2353 fittings (90º elbow),SS316L Standpipes,strong,exact,116
+HP341.png,Metric standpipe for DIN 2353 fittings,IH-SS-SP-006,metric-standpipe-for-din-2353-fittings,Metric standpipe for DIN 2353 fittings,SS316L Standpipes,strong,exact,116
+HP342.png,Double hexagonal ORFS swivel female straight,IH-SS-ORFS-001,double-hexagonal-orfs-swivel-female-straight,Double hexagonal ORFS swivel female straight,SS316L ORFS Fittings,strong,exact,110
+HP343.png,ORFS male,IH-SS-ORFS-002,orfs-male,ORFS male,SS316L ORFS Fittings,strong,exact,110
+HP344.png,ORFS swivel female (45º elbow),IH-SS-ORFS-003,orfs-swivel-female-45-elbow,ORFS swivel female (45º elbow),SS316L ORFS Fittings,strong,exact,116
+HP345.png,ORFS swivel female (90º elbow),IH-SS-ORFS-004,orfs-swivel-female-90-elbow,ORFS swivel female (90º elbow),SS316L ORFS Fittings,strong,exact,116
+HP349.png,NPSM swivel female 60° cone,IH-SS-NPT-001,npsm-swivel-female-60-cone,NPSM swivel female 60° cone,SS316L NPT-NPSM Fittings,strong,exact,110
+HP352.png,NPT male pipe straight,IH-SS-NPT-004,npt-male-pipe-straight,NPT male pipe straight,SS316L NPT-NPSM Fittings,strong,exact,116
+HP353.png,Double hexagonal BSP swivel female cone 60º,IH-SS-DH-001,double-hexagonal-bsp-swivel-female-cone-60,Double hexagonal BSP swivel female cone 60º,SS316L Double Hexagonal Fittings,strong,exact,110
+HP354.png,Double hexagonal JIC 37º swivel female,IH-SS-DH-002,double-hexagonal-jic-37-swivel-female,Double hexagonal JIC 37º swivel female,SS316L Double Hexagonal Fittings,strong,exact,110
+HP359.png,Seals for 3000-6000 psi flange,IH-SS-FL-004,seals-for-3000-6000-psi-flange,Seals for 3000-6000 psi flange,SS316L SAE Flanges for Hoses,strong,exact,116
+HP360.png,FGR Combi Grip,,,,,unmatched,UNMATCHED,37
+HP361.png,"FGR Plast Grip, Plast Grip E",,,,,unmatched,UNMATCHED,45
+HP362.png,FGR E-FP,,,,,unmatched,UNMATCHED,39
+HP363.png,FGR REP E,,,,,unmatched,UNMATCHED,38
+HP364.png,"FGR Flex, Flex E",,,,,unmatched,UNMATCHED,38
+HP365.png,Double Bolt Clamp,,,,,unmatched,UNMATCHED,45
+HP366.png,Retaining Pipe Clamp,,,,,unmatched,UNMATCHED,33
+HP367.png,Bolt Safety Clamp,,,,,unmatched,UNMATCHED,37
+HP368.png,Breeze Constant Torque Clamps,,,,,unmatched,UNMATCHED,35
+HP369.png,T-Bolt Clamps,,,,,unmatched,UNMATCHED,33
+HP370.png,Hi Torque Clamps,,,,,unmatched,UNMATCHED,34
