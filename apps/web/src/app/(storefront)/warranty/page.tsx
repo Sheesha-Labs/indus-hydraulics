@@ -4,6 +4,7 @@ import { db } from '@indus/db'
 import { notFound } from 'next/navigation'
 import { buildBreadcrumbLd, buildFaqLd } from '@indus/domain'
 import { JsonLd } from '@indus/ui'
+import PolicyLayout, { PolicySectionBody } from '../../../components/PolicyLayout'
 import { urlFor } from '../../../lib/seo'
 
 export const metadata: Metadata = {
@@ -44,6 +45,18 @@ const FAQS = [
   },
 ]
 
+const SECTIONS = [
+  { id: 'our-role-as-an-authorized-distributor', title: '1. Our role as an authorized distributor' },
+  { id: 'manufacturers-we-administer-warranty-for', title: '2. Manufacturers we administer warranty for' },
+  { id: 'warranty-period', title: '3. Warranty period' },
+  { id: 'what-is-covered', title: '4. What is covered' },
+  { id: 'what-is-excluded', title: '5. What is excluded' },
+  { id: 'claims-process', title: '6. Claims process' },
+  { id: 'remedies', title: '7. Remedies' },
+  { id: 'field-service-and-emergency-support', title: '8. Field service and emergency support' },
+  { id: 'contact', title: '9. Contact' },
+] as const
+
 type Props = { params: Promise<Record<string, never>> }
 
 export default async function WarrantyPage({ params }: Props) {
@@ -78,17 +91,11 @@ export default async function WarrantyPage({ params }: Props) {
   })
 
   return (
-    <article className="max-w-[820px] mx-auto px-8 py-16 pb-24 text-ih-ink-2">
+    <PolicyLayout slug="warranty" title="Warranty Policy" effectiveLine={`Effective ${EFFECTIVE_DATE} · Version 1.0`} sections={SECTIONS}>
       <JsonLd data={[faqLd, breadcrumbLd]} />
 
-      <header className="mb-10">
-        <h1 className="text-[36px] font-semibold tracking-tight mb-3">Warranty Policy</h1>
-        <p className="font-mono text-[12px] text-ih-muted tracking-[0.06em] uppercase">
-          Effective {EFFECTIVE_DATE} · Version 1.0
-        </p>
-      </header>
 
-      <Section title="1. Our role as an authorized distributor">
+      <PolicySectionBody id="our-role-as-an-authorized-distributor" title="1. Our role as an authorized distributor">
         <p>
           Indus Hydraulic Power Trading LLC is an authorized distributor for the manufacturers
           whose products we supply. Every product is sold with the original manufacturer’s warranty
@@ -99,9 +106,9 @@ export default async function WarrantyPage({ params }: Props) {
           We operate under an ISO 9001:2015 quality management system and supply only genuine,
           factory-new product unless otherwise stated explicitly on the Estimate.
         </p>
-      </Section>
+      </PolicySectionBody>
 
-      <Section title="2. Manufacturers we administer warranty for">
+      <PolicySectionBody id="manufacturers-we-administer-warranty-for" title="2. Manufacturers we administer warranty for">
         <p>
           As an authorized distributor we handle warranty claims for the brands listed on our{' '}
           <Link className="text-ih-accent hover:underline" href="/brands">
@@ -124,9 +131,9 @@ export default async function WarrantyPage({ params }: Props) {
           tell you on the Estimate and route the warranty claim through the manufacturer’s
           designated regional channel.
         </p>
-      </Section>
+      </PolicySectionBody>
 
-      <Section title="3. Warranty period">
+      <PolicySectionBody id="warranty-period" title="3. Warranty period">
         <p>
           The warranty period is set by the manufacturer of each product. Typical periods are:
         </p>
@@ -150,9 +157,9 @@ export default async function WarrantyPage({ params }: Props) {
           manufacturer’s warranty document supplied with the product, on the Estimate, or on the
           product datasheet, and that document governs over this page in case of conflict.
         </p>
-      </Section>
+      </PolicySectionBody>
 
-      <Section title="4. What is covered">
+      <PolicySectionBody id="what-is-covered" title="4. What is covered">
         <p>
           Defects in materials and workmanship under normal industrial use within the product’s
           rated operating conditions:
@@ -164,9 +171,9 @@ export default async function WarrantyPage({ params }: Props) {
           <li>Duty cycle and installation orientation as specified</li>
           <li>Cleanliness standard (ISO 4406 / NAS 1638) maintained per manufacturer guidance</li>
         </ul>
-      </Section>
+      </PolicySectionBody>
 
-      <Section title="5. What is excluded">
+      <PolicySectionBody id="what-is-excluded" title="5. What is excluded">
         <ul className="list-disc pl-6 space-y-1">
           <li>
             Operation outside the rated pressure, temperature, fluid, or duty-cycle
@@ -199,9 +206,9 @@ export default async function WarrantyPage({ params }: Props) {
             delivery
           </li>
         </ul>
-      </Section>
+      </PolicySectionBody>
 
-      <Section title="6. Claims process">
+      <PolicySectionBody id="claims-process" title="6. Claims process">
         <ol className="list-decimal pl-6 space-y-1">
           <li>
             <strong>Notify us within 7 days</strong> of discovering the fault. Email{' '}
@@ -235,9 +242,9 @@ export default async function WarrantyPage({ params }: Props) {
             chargeable repair separately.
           </li>
         </ol>
-      </Section>
+      </PolicySectionBody>
 
-      <Section title="7. Remedies">
+      <PolicySectionBody id="remedies" title="7. Remedies">
         <p>
           The remedy under a successful warranty claim is repair, replacement, or credit — at the
           manufacturer’s discretion. We will not provide consequential cover beyond what the
@@ -248,9 +255,9 @@ export default async function WarrantyPage({ params }: Props) {
           </a>
           .
         </p>
-      </Section>
+      </PolicySectionBody>
 
-      <Section title="8. Field service and emergency support">
+      <PolicySectionBody id="field-service-and-emergency-support" title="8. Field service and emergency support">
         <p>
           For hydraulic systems we supplied and commissioned, our technicians can attend on site to
           assess a failure under warranty. Travel, accommodation, and time are charged at standard
@@ -258,9 +265,9 @@ export default async function WarrantyPage({ params }: Props) {
           within warranty, the manufacturer typically reimburses agreed labour rates per their
           policy.
         </p>
-      </Section>
+      </PolicySectionBody>
 
-      <Section title="9. Contact">
+      <PolicySectionBody id="contact" title="9. Contact">
         <p>
           To start a warranty claim or ask a coverage question, contact us at{' '}
           <a className="text-ih-accent hover:underline" href="mailto:sales@indushydraulics.me">
@@ -272,7 +279,7 @@ export default async function WarrantyPage({ params }: Props) {
           </a>
           .
         </p>
-      </Section>
+      </PolicySectionBody>
 
       <footer className="mt-12 pt-6 border-t border-ih-border text-[12px] text-ih-muted-2 leading-[1.6]">
         This policy is the customer-facing companion to section 6 (Warranty) of our{' '}
@@ -286,17 +293,7 @@ export default async function WarrantyPage({ params }: Props) {
         . Where a manufacturer’s warranty document or your contract differs from this page, that
         document takes precedence.
       </footer>
-    </article>
+    </PolicyLayout>
   )
 }
 
-function Section({ title, children }: { title: string; children: React.ReactNode }) {
-  return (
-    <section className="mb-8">
-      <h2 className="text-[18px] font-semibold tracking-[-0.01em] mb-3 text-ih-ink">
-        {title}
-      </h2>
-      <div className="text-[15px] leading-[1.7] space-y-3">{children}</div>
-    </section>
-  )
-}

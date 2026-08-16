@@ -3,6 +3,7 @@ import { db } from '@indus/db'
 import { notFound } from 'next/navigation'
 import { buildBreadcrumbLd, buildFaqLd } from '@indus/domain'
 import { JsonLd } from '@indus/ui'
+import PolicyLayout, { PolicySectionBody } from '../../../components/PolicyLayout'
 import { urlFor } from '../../../lib/seo'
 
 export const metadata: Metadata = {
@@ -43,6 +44,19 @@ const FAQS = [
   },
 ]
 
+const SECTIONS = [
+  { id: 'where-we-ship-from', title: '1. Where we ship from' },
+  { id: 'lead-times', title: '2. Lead times' },
+  { id: 'destinations-and-typical-transit-times', title: '3. Destinations and typical transit times' },
+  { id: 'incoterms-2020', title: '4. Incoterms 2020' },
+  { id: 'freight-insurance-and-packaging', title: '5. Freight, insurance, and packaging' },
+  { id: 'export-documentation', title: '6. Export documentation' },
+  { id: 'hazardous-and-oversized-items', title: '7. Hazardous and oversized items' },
+  { id: 'tracking-and-delivery-confirmation', title: '8. Tracking and delivery confirmation' },
+  { id: 'damaged-short-or-wrong-item-shipments', title: '9. Damaged, short, or wrong-item shipments' },
+  { id: 'contact', title: '10. Contact' },
+] as const
+
 type Props = { params: Promise<Record<string, never>> }
 
 export default async function ShippingPage({ params }: Props) {
@@ -77,25 +91,19 @@ export default async function ShippingPage({ params }: Props) {
   })
 
   return (
-    <article className="max-w-[820px] mx-auto px-8 py-16 pb-24 text-ih-ink-2">
+    <PolicyLayout slug="shipping" title="Shipping Policy" effectiveLine={`Effective ${EFFECTIVE_DATE} · Version 1.0`} sections={SECTIONS}>
       <JsonLd data={[faqLd, breadcrumbLd]} />
 
-      <header className="mb-10">
-        <h1 className="text-[36px] font-semibold tracking-tight mb-3">Shipping Policy</h1>
-        <p className="font-mono text-[12px] text-ih-muted tracking-[0.06em] uppercase">
-          Effective {EFFECTIVE_DATE} · Version 1.0
-        </p>
-      </header>
 
-      <Section title="1. Where we ship from">
+      <PolicySectionBody id="where-we-ship-from" title="1. Where we ship from">
         <p>
           All orders are dispatched from our headquarters and warehouse in Al Quasis, Dubai, UAE,
           operated by Indus Hydraulic Power Trading LLC. Direct factory drop-shipments from
           authorized manufacturers may also be arranged where it shortens the lead time.
         </p>
-      </Section>
+      </PolicySectionBody>
 
-      <Section title="2. Lead times">
+      <PolicySectionBody id="lead-times" title="2. Lead times">
         <p>
           Lead times depend on whether the item is stock, regional, special-order, or drop-ship:
         </p>
@@ -125,9 +133,9 @@ export default async function ShippingPage({ params }: Props) {
           quotation. We are not liable for delays caused by suppliers, carriers, customs, or events
           outside our reasonable control.
         </p>
-      </Section>
+      </PolicySectionBody>
 
-      <Section title="3. Destinations and typical transit times">
+      <PolicySectionBody id="destinations-and-typical-transit-times" title="3. Destinations and typical transit times">
         <ul className="list-disc pl-6 space-y-1">
           <li>
             <strong>UAE:</strong> 1–3 working days from dispatch.
@@ -151,9 +159,9 @@ export default async function ShippingPage({ params }: Props) {
           the Incoterm-defined point are the responsibility of the buyer unless specifically
           included on the Estimate.
         </p>
-      </Section>
+      </PolicySectionBody>
 
-      <Section title="4. Incoterms 2020">
+      <PolicySectionBody id="incoterms-2020" title="4. Incoterms 2020">
         <p>
           We quote on Incoterms 2020. The applicable Incoterm is stated explicitly on every
           Estimate; common defaults are:
@@ -175,9 +183,9 @@ export default async function ShippingPage({ params }: Props) {
           Title and risk transfer in accordance with the agreed Incoterm. See the Terms of Service
           (section on Delivery and risk) for full legal effect.
         </p>
-      </Section>
+      </PolicySectionBody>
 
-      <Section title="5. Freight, insurance, and packaging">
+      <PolicySectionBody id="freight-insurance-and-packaging" title="5. Freight, insurance, and packaging">
         <p>
           Standard packaging is industrial-grade for export. For sea freight and long-haul road
           freight we use marine-grade cartons, shrink-wrapped pallets, and moisture barriers for
@@ -189,9 +197,9 @@ export default async function ShippingPage({ params }: Props) {
           against standard marine and transit risks. Where the buyer arranges freight, the buyer is
           responsible for insurance.
         </p>
-      </Section>
+      </PolicySectionBody>
 
-      <Section title="6. Export documentation">
+      <PolicySectionBody id="export-documentation" title="6. Export documentation">
         <p>Every export shipment includes:</p>
         <ul className="list-disc pl-6 space-y-1">
           <li>Commercial invoice and packing list</li>
@@ -204,9 +212,9 @@ export default async function ShippingPage({ params }: Props) {
             charges apply
           </li>
         </ul>
-      </Section>
+      </PolicySectionBody>
 
-      <Section title="7. Hazardous and oversized items">
+      <PolicySectionBody id="hazardous-and-oversized-items" title="7. Hazardous and oversized items">
         <p>
           Hydraulic oils, greases, sealants, cleaning chemicals, and certain accumulators are
           classified as dangerous goods. They ship under IATA, IMDG, or ADR rules depending on the
@@ -218,18 +226,18 @@ export default async function ShippingPage({ params }: Props) {
           may require open-top container, flat-rack, or breakbulk freight. We will quote freight
           separately for these.
         </p>
-      </Section>
+      </PolicySectionBody>
 
-      <Section title="8. Tracking and delivery confirmation">
+      <PolicySectionBody id="tracking-and-delivery-confirmation" title="8. Tracking and delivery confirmation">
         <p>
           Once dispatched, we share the carrier reference and tracking link by email and WhatsApp.
           For freight-forwarded shipments we coordinate handover and provide the airway bill (AWB)
           or bill of lading (BL). Proof of delivery is provided on request after the shipment is
           marked delivered by the carrier.
         </p>
-      </Section>
+      </PolicySectionBody>
 
-      <Section title="9. Damaged, short, or wrong-item shipments">
+      <PolicySectionBody id="damaged-short-or-wrong-item-shipments" title="9. Damaged, short, or wrong-item shipments">
         <p>
           You must inspect goods on delivery and notify us in writing of any visible damage,
           shortage, or non-conformity within seven (7) days. Take photos of damaged packaging and
@@ -240,9 +248,9 @@ export default async function ShippingPage({ params }: Props) {
           </a>{' '}
           for the RMA process.
         </p>
-      </Section>
+      </PolicySectionBody>
 
-      <Section title="10. Contact">
+      <PolicySectionBody id="contact" title="10. Contact">
         <p>
           For shipping or freight queries, contact our logistics desk at{' '}
           <a className="text-ih-accent hover:underline" href="mailto:sales@indushydraulics.me">
@@ -254,7 +262,7 @@ export default async function ShippingPage({ params }: Props) {
           </a>
           .
         </p>
-      </Section>
+      </PolicySectionBody>
 
       <footer className="mt-12 pt-6 border-t border-ih-border text-[12px] text-ih-muted-2 leading-[1.6]">
         This policy is the customer-facing companion to section 4 (Delivery and risk) of our{' '}
@@ -263,17 +271,7 @@ export default async function ShippingPage({ params }: Props) {
         </a>
         . Where the Estimate or contract document differs, those take precedence.
       </footer>
-    </article>
+    </PolicyLayout>
   )
 }
 
-function Section({ title, children }: { title: string; children: React.ReactNode }) {
-  return (
-    <section className="mb-8">
-      <h2 className="text-[18px] font-semibold tracking-[-0.01em] mb-3 text-ih-ink">
-        {title}
-      </h2>
-      <div className="text-[15px] leading-[1.7] space-y-3">{children}</div>
-    </section>
-  )
-}
