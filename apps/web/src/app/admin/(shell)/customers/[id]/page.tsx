@@ -5,6 +5,7 @@ import { db, Prisma } from '@indus/db'
 import { updateAccountMeta, addActivityNote, deactivateContact, reactivateContact, approveAddress } from './actions'
 import { Input, Select, Textarea } from '@indus/ui'
 import { ADMIN_PREFIX } from '../../../../../lib/admin-paths'
+import AdminPageShell from '../../../../../components/admin/AdminPageShell'
 
 export const metadata: Metadata = { title: 'Customer — Indus Admin' }
 
@@ -125,25 +126,32 @@ export default async function AdminCustomerDetailPage({ params, searchParams }: 
   }
 
   return (
-    <div>
-      {/* Header */}
-      <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-6">
-        <div>
-          <Link href={`/admin/customers`} className="font-mono text-[12px] text-ih-muted hover:text-ih-ink mb-2 inline-block">
-            ← Customers
-          </Link>
-          <h1 className="text-[24px] font-semibold tracking-tight">{account.legalName}</h1>
-          <div className="font-mono text-[12px] text-ih-muted mt-0.5">{account.code}</div>
-        </div>
-        <div className="flex items-center gap-2">
-          <span className={`px-2.5 py-1 font-mono text-[11px] font-semibold capitalize ${TIER_COLORS[account.tier] ?? ''}`}>
+    // The wrapper was a bare <div> with NO padding class, so this page sat
+    // flush against the sidebar. The shell's body supplies the gutter every
+    // other admin page has.
+    <AdminPageShell
+      title={account.legalName}
+      sub={<span className="font-mono">{account.code}</span>}
+      actions={
+        <>
+          {/* Tier and status qualify the account; they are not buttons, but
+              dropping them would remove the at-a-glance state this page
+              exists to show. */}
+          <span className={`rounded-md px-2.5 py-1 font-mono text-[11px] font-semibold capitalize ${TIER_COLORS[account.tier] ?? ''}`}>
             {account.tier}
           </span>
-          <span className={`px-2.5 py-1 font-mono text-[11px] font-semibold capitalize ${STATUS_COLORS[account.status] ?? ''}`}>
+          <span className={`rounded-md px-2.5 py-1 font-mono text-[11px] font-semibold capitalize ${STATUS_COLORS[account.status] ?? ''}`}>
             {account.status.replace('_', ' ')}
           </span>
-        </div>
-      </div>
+          <Link
+            href={`${ADMIN_PREFIX}/customers`}
+            className="flex h-9 items-center rounded-md border border-ih-border bg-ih-surface px-4 text-[13px] font-medium transition-colors hover:border-ih-accent hover:text-ih-accent"
+          >
+            ← Customers
+          </Link>
+        </>
+      }
+    >
 
       {/* Tabs */}
       <div className="flex border-b border-ih-border mb-6">
@@ -591,6 +599,6 @@ export default async function AdminCustomerDetailPage({ params, searchParams }: 
           </div>
         </div>
       )}
-    </div>
+    </AdminPageShell>
   )
 }
