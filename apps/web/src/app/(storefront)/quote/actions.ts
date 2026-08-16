@@ -33,6 +33,9 @@ const AnonymousContactSchema = z.object({
 // power users aren't blocked.
 const MIN_FORM_DURATION_MS = 1500
 
+/** Matches only the paths /api/rfq/attachments/sign generates. */
+const ATTACHMENT_PATH = /^rfq-attachments\/\d{4}-\d{2}-\d{2}\/[0-9a-f-]{36}\.[a-z0-9]{2,5}$/
+
 export async function submitRfq(formData: FormData): Promise<SubmitResult> {
   // Honeypot field — real browsers never populate this. Treat as silent
   // success: the bot gets a "200 OK" and never knows we ignored it.
@@ -113,6 +116,43 @@ export async function submitRfq(formData: FormData): Promise<SubmitResult> {
     contactId = resolved.contactId
   }
 
+  /*
+    Attachments arrive as a manifest of storage paths, never as bytes — the
+    browser uploaded them straight to the private documents bucket against a
+    single-use signed URL (see /api/rfq/attachments/sign).
+
+    Everything here is still treated as untrusted: the path must match the
+    shape this server generates, so a caller cannot point an RfqAttachment at
+    an arbitrary object elsewhere in the bucket.
+  */
+  if (formData.get('attachmentsPending') === '1') {
+    return { success: false, error: 'An attachment is still uploading. Give it a moment and try again.' }
+  }
+
+  const attachments: Array<{ path: string; label: string; size: number; contentType: string }> = []
+  const attachmentsRaw = formData.get('attachments')
+  if (typeof attachmentsRaw === 'string' && attachmentsRaw.trim() && attachmentsRaw !== '[]') {
+    try {
+      const parsed = JSON.parse(attachmentsRaw) as unknown
+      if (Array.isArray(parsed)) {
+        for (const entry of parsed.slice(0, 6)) {
+          if (!entry || typeof entry !== 'object') continue
+          const { path, label, size, contentType } = entry as Record<string, unknown>
+          if (typeof path !== 'string' || !ATTACHMENT_PATH.test(path)) continue
+          attachments.push({
+            path,
+            label: typeof label === 'string' ? label.slice(0, 180) : 'attachment',
+            size: typeof size === 'number' && Number.isFinite(size) ? size : 0,
+            contentType: typeof contentType === 'string' ? contentType.slice(0, 120) : 'application/octet-stream',
+          })
+        }
+      }
+    } catch {
+      // A malformed manifest loses the attachments but must never lose the
+      // RFQ — the enquiry itself is what matters commercially.
+    }
+  }
+
   const products = await db.product.findMany({
     where: { sku: { in: lines.map((l) => l.sku) } },
     select: { id: true, sku: true },
@@ -151,13 +191,46 @@ export async function submitRfq(formData: FormData): Promise<SubmitResult> {
       },
     })
 
+    if (attachments.length > 0) {
+      for (const file of attachments) {
+        const media = await tx.media.create({
+          data: {
+            // MediaKind is a closed enum: an image, a document, or CAD.
+            // Derived from the mime type we already validated at signing.
+            kind: file.contentType.startsWith('image/')
+              ? 'image'
+              : file.contentType === 'application/pdf'
+                ? 'document'
+                : 'cad',
+            storagePath: file.path,
+            originalFilename: file.label,
+            mimeType: file.contentType,
+            bytes: file.size,
+          },
+        })
+        await tx.rfqAttachment.create({
+          data: {
+            rfqId: created.id,
+            mediaId: media.id,
+            uploaderType: 'contact',
+            uploaderId: contactId,
+          },
+        })
+      }
+    }
+
     await tx.accountActivity.create({
       data: {
         accountId,
         actorType: 'contact',
         actorId: contactId,
         verb: 'submitted_rfq',
-        payload: { rfqId: created.id, code: created.code, anonymous: isAnonymous },
+        payload: {
+          rfqId: created.id,
+          code: created.code,
+          anonymous: isAnonymous,
+          attachmentCount: attachments.length,
+        },
       },
     })
 

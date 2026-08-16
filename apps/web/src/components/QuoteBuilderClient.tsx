@@ -51,22 +51,22 @@ export default function QuoteBuilderClient({ isSignedIn }: Props) {
   if (!mounted) {
     return (
       <div className="py-20 text-center">
-        <div className="font-mono text-[12px] text-[var(--color-muted)] animate-pulse">Loading quote…</div>
+        <div className="font-mono text-[12px] text-ih-muted animate-pulse">Loading quote…</div>
       </div>
     )
   }
 
   if (items.length === 0) {
     return (
-      <div className="py-20 text-center border border-dashed border-[var(--color-border)]">
+      <div className="py-20 text-center border border-dashed border-ih-border">
         <div className="text-[40px] mb-4 opacity-20">📋</div>
         <p className="text-[18px] font-semibold mb-2">Your quote is empty</p>
-        <p className="text-[14px] text-[var(--color-muted)] mb-6">
+        <p className="text-[14px] text-ih-muted mb-6">
           Browse the catalogue and add products to build your RFQ.
         </p>
         <Link
           href={`/c`}
-          className="inline-flex h-10 px-6 items-center bg-[var(--color-accent)] text-white text-[13px] font-medium hover:opacity-90"
+          className="inline-flex h-10 px-6 items-center bg-ih-accent text-white text-[13px] font-medium hover:opacity-90"
         >
           Browse Products
         </Link>
@@ -79,14 +79,14 @@ export default function QuoteBuilderClient({ isSignedIn }: Props) {
     : `/sign-in?next=/quote/submit`
 
   return (
-    <div className="grid gap-8" style={{ gridTemplateColumns: '1fr 360px', alignItems: 'start' }}>
+    <div className="grid items-start gap-8 lg:grid-cols-[1fr_360px]">
       {/* ── Main: line items ──────────────────────────────────── */}
       <div>
-        <div className="border border-[var(--color-border)] bg-[var(--color-elevated)] overflow-hidden">
+        <div className="border border-ih-border bg-ih-surface overflow-hidden">
           {/* Table header */}
           <div
-            className="grid gap-4 px-4 py-3 bg-[var(--color-surface)] border-b border-[var(--color-border)] font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)]"
-            style={{ gridTemplateColumns: '60px 1fr 110px 36px' }}
+            className="grid gap-4 px-4 py-3 bg-ih-surface border-b border-ih-border font-mono text-[11px] tracking-[0.1em] uppercase text-ih-muted"
+            style={{ gridTemplateColumns: 'minmax(0,60px) minmax(0,1fr) minmax(0,110px) 36px' }}
           >
             <span />
             <span>Product</span>
@@ -98,34 +98,34 @@ export default function QuoteBuilderClient({ isSignedIn }: Props) {
           {items.map((item) => (
             <div
               key={item.sku}
-              className="grid gap-4 px-4 py-[18px] border-b border-[var(--color-border-2)] last:border-0 items-center"
-              style={{ gridTemplateColumns: '60px 1fr 110px 36px' }}
+              className="grid gap-4 px-4 py-[18px] border-b border-ih-border last:border-0 items-center"
+              style={{ gridTemplateColumns: 'minmax(0,60px) minmax(0,1fr) minmax(0,110px) 36px' }}
             >
               {/* Image */}
-              <div className="aspect-square bg-[var(--color-deep)] border border-[var(--color-border)] relative overflow-hidden">
+              <div className="aspect-square bg-ih-surface-2 border border-ih-border relative overflow-hidden">
                 {item.imageUrl ? (
                   <Image src={item.imageUrl} alt={item.title} fill className="object-contain p-1" sizes="60px" />
                 ) : (
-                  <div className="absolute inset-0 grid place-items-center font-mono text-[9px] text-[var(--color-muted)]">IMG</div>
+                  <div className="absolute inset-0 grid place-items-center font-mono text-[9px] text-ih-muted">IMG</div>
                 )}
               </div>
 
               {/* Product info */}
               <div>
-                <div className="font-mono text-[11px] text-[var(--color-muted)]">{item.sku}</div>
+                <div className="font-mono text-[11px] text-ih-muted">{item.sku}</div>
                 <div className="font-medium text-[14px] mt-0.5 leading-snug">
-                  <Link href={`/p/${item.sku}`} className="hover:text-[var(--color-accent)] transition-colors">
+                  <Link href={`/p/${item.sku}`} className="hover:text-ih-accent transition-colors">
                     {item.title}
                   </Link>
                 </div>
-                {item.brand && <div className="font-mono text-[11px] text-[var(--color-muted)] mt-0.5">{item.brand}</div>}
+                {item.brand && <div className="font-mono text-[11px] text-ih-muted mt-0.5">{item.brand}</div>}
               </div>
 
               {/* Qty stepper */}
-              <div className="flex border border-[var(--color-border)] bg-[var(--color-surface)] overflow-hidden w-fit">
+              <div className="flex border border-ih-border bg-ih-surface overflow-hidden w-fit">
                 <button
                   onClick={() => updateQty(item.sku, item.qty - 1)}
-                  className="w-8 h-8 font-mono text-[14px] text-[var(--color-body)] hover:bg-[var(--color-deep)] transition-colors"
+                  className="w-8 h-8 font-mono text-[14px] text-ih-ink-2 hover:bg-ih-surface-2 transition-colors"
                 >
                   −
                 </button>
@@ -134,11 +134,11 @@ export default function QuoteBuilderClient({ isSignedIn }: Props) {
                   min={1}
                   value={item.qty}
                   onChange={(e) => updateQty(item.sku, parseInt(e.target.value) || 1)}
-                  className="w-10 h-8 border-l border-r border-[var(--color-border)] bg-transparent text-center font-mono text-[13px] text-[var(--color-primary)] focus:outline-none"
+                  className="w-10 h-8 border-l border-r border-ih-border bg-transparent text-center font-mono text-[13px] text-ih-ink focus:outline-none"
                 />
                 <button
                   onClick={() => updateQty(item.sku, item.qty + 1)}
-                  className="w-8 h-8 font-mono text-[14px] text-[var(--color-body)] hover:bg-[var(--color-deep)] transition-colors"
+                  className="w-8 h-8 font-mono text-[14px] text-ih-ink-2 hover:bg-ih-surface-2 transition-colors"
                 >
                   +
                 </button>
@@ -147,7 +147,7 @@ export default function QuoteBuilderClient({ isSignedIn }: Props) {
               {/* Remove */}
               <button
                 onClick={() => remove(item.sku)}
-                className="w-8 h-8 grid place-items-center text-[var(--color-muted)] hover:text-[var(--color-danger)] hover:bg-[var(--color-surface)] transition-colors font-mono text-[16px]"
+                className="w-8 h-8 grid place-items-center text-ih-muted hover:text-ih-danger hover:bg-ih-surface transition-colors font-mono text-[16px]"
                 aria-label={`Remove ${item.sku}`}
               >
                 ✕
@@ -156,13 +156,13 @@ export default function QuoteBuilderClient({ isSignedIn }: Props) {
           ))}
 
           {/* Footer row */}
-          <div className="px-4 py-3.5 bg-[var(--color-surface)] border-t border-[var(--color-border)] flex justify-between items-center">
-            <Link href={`/c`} className="text-[13px] text-[var(--color-accent)] hover:underline">
+          <div className="px-4 py-3.5 bg-ih-surface border-t border-ih-border flex justify-between items-center">
+            <Link href={`/c`} className="text-[13px] text-ih-accent hover:underline">
               + Add another SKU
             </Link>
             <button
               onClick={() => save([])}
-              className="font-mono text-[11px] text-[var(--color-muted)] hover:text-[var(--color-danger)] transition-colors"
+              className="font-mono text-[11px] text-ih-muted hover:text-ih-danger transition-colors"
             >
               Clear all
             </button>
@@ -178,7 +178,7 @@ export default function QuoteBuilderClient({ isSignedIn }: Props) {
             <span className="font-mono text-[14px]">ⓘ</span>
             <div>
               <b className="text-[14px]">Volume break available</b>
-              <p className="mt-1 text-[13px] text-[var(--color-body)]">
+              <p className="mt-1 text-[13px] text-ih-ink-2">
                 Order 4+ units of any single SKU to qualify for tier-2 pricing. Add notes below to let our engineer know your target quantity.
               </p>
             </div>
@@ -187,9 +187,9 @@ export default function QuoteBuilderClient({ isSignedIn }: Props) {
 
         {/* Guest sign-in nudge */}
         {!isSignedIn && (
-          <p className="mt-4 text-[12px] text-[var(--color-muted)] text-center">
+          <p className="mt-4 text-[12px] text-ih-muted text-center">
             Sign in to submit your RFQ —{' '}
-            <Link href={`/sign-in?next=/quote/submit`} className="text-[var(--color-accent)] hover:underline">
+            <Link href={`/sign-in?next=/quote/submit`} className="text-ih-accent hover:underline">
               Sign in
             </Link>
           </p>
@@ -197,29 +197,29 @@ export default function QuoteBuilderClient({ isSignedIn }: Props) {
       </div>
 
       {/* ── Sticky sidebar ────────────────────────────────────── */}
-      <aside className="sticky top-[88px]">
-        <div className="border border-[var(--color-border)] bg-[var(--color-elevated)] overflow-hidden">
+      <aside className="lg:sticky lg:top-[88px]">
+        <div className="border border-ih-border bg-ih-surface overflow-hidden">
           {/* Header */}
-          <div className="px-5 py-4 border-b border-[var(--color-border)]">
+          <div className="px-5 py-4 border-b border-ih-border">
             <h3 className="text-[16px] font-semibold">Your RFQ</h3>
-            <p className="text-[12px] text-[var(--color-muted)] mt-0.5">Final pricing on quote response</p>
+            <p className="text-[12px] text-ih-muted mt-0.5">Final pricing on quote response</p>
           </div>
 
           {/* Line summary */}
-          <div className="px-5 py-4 flex flex-col gap-2.5 text-[13px] border-b border-[var(--color-border)]">
+          <div className="px-5 py-4 flex flex-col gap-2.5 text-[13px] border-b border-ih-border">
             <div className="flex justify-between">
-              <span className="text-[var(--color-muted)]">{items.length} line{items.length !== 1 ? 's' : ''}</span>
-              <span className="font-mono text-[var(--color-muted)]">—</span>
+              <span className="text-ih-muted">{items.length} line{items.length !== 1 ? 's' : ''}</span>
+              <span className="font-mono text-ih-muted">—</span>
             </div>
             <div className="flex justify-between">
-              <span className="text-[var(--color-muted)]">Tax (calc at quote)</span>
-              <span className="font-mono text-[var(--color-muted)]">—</span>
+              <span className="text-ih-muted">Tax (calc at quote)</span>
+              <span className="font-mono text-ih-muted">—</span>
             </div>
             <div className="flex justify-between">
-              <span className="text-[var(--color-muted)]">Shipping (calc at quote)</span>
-              <span className="font-mono text-[var(--color-muted)]">—</span>
+              <span className="text-ih-muted">Shipping (calc at quote)</span>
+              <span className="font-mono text-ih-muted">—</span>
             </div>
-            <hr className="border-[var(--color-border-2)] my-1" />
+            <hr className="border-ih-border my-1" />
             <div className="flex justify-between text-[15px] font-semibold">
               <span>Engineer&apos;s quote</span>
               <span className="font-mono">within 4h</span>
@@ -227,24 +227,24 @@ export default function QuoteBuilderClient({ isSignedIn }: Props) {
           </div>
 
           {/* CTAs */}
-          <div className="px-5 py-4 flex flex-col gap-2.5 border-b border-[var(--color-border)]">
+          <div className="px-5 py-4 flex flex-col gap-2.5 border-b border-ih-border">
             <Link
               href={submitUrl}
-              className="h-11 flex items-center justify-center bg-[var(--color-accent)] text-white font-medium text-[14px] hover:opacity-90 transition-opacity"
+              className="h-11 flex items-center justify-center bg-ih-accent text-white font-medium text-[14px] hover:opacity-90 transition-opacity"
             >
               Request quote →
             </Link>
-            <button className="h-10 flex items-center justify-center border border-[var(--color-border)] text-[var(--color-body)] font-mono text-[12px] hover:bg-[var(--color-deep)] transition-colors">
+            <button className="h-10 flex items-center justify-center border border-ih-border text-ih-ink-2 font-mono text-[12px] hover:bg-ih-surface-2 transition-colors">
               Chat on WhatsApp
             </button>
-            <p className="font-mono text-[11px] text-[var(--color-muted)] text-center">
+            <p className="font-mono text-[11px] text-ih-muted text-center">
               Avg response · 47 min · Mon–Sat
             </p>
           </div>
 
           {/* Why a quote */}
-          <div className="px-5 py-4 bg-[var(--color-surface)] text-[12px] text-[var(--color-muted)] leading-[1.6]">
-            <b className="text-[var(--color-primary)]">Why a quote, not a cart?</b><br />
+          <div className="px-5 py-4 bg-ih-surface text-[12px] text-ih-muted leading-[1.6]">
+            <b className="text-ih-ink">Why a quote, not a cart?</b><br />
             Industrial pricing depends on lead time, freight, customs, and which warehouse stocks the SKU. We&apos;d rather give you a real number than a guess.
           </div>
         </div>
