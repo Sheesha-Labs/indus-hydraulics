@@ -11,16 +11,16 @@ type Props = {
 export default function CaseBreadcrumbs({ caseNumber, title, category }: Props) {
   const catLabel = SERVICE_CASE_CATEGORY_LABELS[category] ?? category
   return (
-    <div className="mono border-b border-[var(--color-border-2)] py-4 text-xs uppercase tracking-[0.04em] text-[var(--color-muted)]">
-      <Link href="/" className="hover:text-[var(--color-primary)]">Home</Link>
+    <div className="mono border-b border-ih-border py-4 text-xs uppercase tracking-[0.04em] text-ih-muted">
+      <Link href="/" className="hover:text-ih-ink">Home</Link>
       <span className="mx-2 opacity-50">/</span>
-      <Link href="/services" className="hover:text-[var(--color-primary)]">Services</Link>
+      <Link href="/services" className="hover:text-ih-ink">Services</Link>
       <span className="mx-2 opacity-50">/</span>
-      <Link href={`/services?category=${category}`} className="hover:text-[var(--color-primary)]">
+      <Link href={`/services?category=${category}`} className="hover:text-ih-ink">
         {catLabel}
       </Link>
       <span className="mx-2 opacity-50">/</span>
-      <span className="text-[var(--color-primary)]">No. {caseNumber} — {title}</span>
+      <span className="text-ih-ink">No. {caseNumber} — {title}</span>
     </div>
   )
 }

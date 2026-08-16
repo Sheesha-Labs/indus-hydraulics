@@ -18,20 +18,20 @@ export default function ServicesCta({ whatsappUrl, emailUrl }: Props) {
   return (
     <section className="px-4 py-20 text-center">
       <span className="eyebrow">SERVICE INTAKE · OPEN 24×7 · JEBEL ALI</span>
-      <p className="mx-auto my-4 max-w-[760px] font-serif text-lg italic leading-[1.45] text-[var(--color-body)] sm:text-xl lg:text-[22px]">
+      <p className="mx-auto my-4 max-w-[760px] font-serif text-lg italic leading-[1.45] text-ih-ink-2 sm:text-xl lg:text-[22px]">
         If it leaks, hums, screams, drips, slips or simply refuses to move — we&rsquo;d like a look at it.
       </p>
       <h2 className="mx-auto mb-5 max-w-[880px] text-4xl font-semibold leading-[1.05] tracking-[-0.025em] sm:text-5xl lg:text-[56px]">
         Send us a photo, an SKU or a part on a pallet. We&rsquo;ll do the rest.
       </h2>
-      <p className="mx-auto mb-8 max-w-[540px] text-[17px] leading-[1.55] text-[var(--color-muted)]">
+      <p className="mx-auto mb-8 max-w-[540px] text-[17px] leading-[1.55] text-ih-muted">
         An applications engineer will read your ticket inside one business day — no charge for the
         conversation, no obligation to use us.
       </p>
       <div className="flex flex-wrap justify-center gap-3">
         <Link
           href="/quote"
-          className="inline-flex items-center gap-2 rounded-sm bg-[var(--color-primary)] px-7 py-3.5 text-[15px] font-medium text-[var(--color-elevated)] hover:bg-[color-mix(in_oklab,var(--color-primary)_88%,white)]"
+          className="inline-flex items-center gap-2 rounded-sm bg-ih-navy px-7 py-3.5 text-[15px] font-medium text-white hover:bg-ih-ink"
         >
           Open a service ticket
         </Link>
@@ -48,7 +48,7 @@ export default function ServicesCta({ whatsappUrl, emailUrl }: Props) {
         )}
         <a
           href={emailUrl}
-          className="inline-flex items-center gap-2 rounded-sm border border-[var(--color-border)] bg-[var(--color-elevated)] px-7 py-3.5 text-[15px] font-medium hover:border-[var(--color-muted)]"
+          className="inline-flex items-center gap-2 rounded-sm border border-ih-border bg-ih-surface px-7 py-3.5 text-[15px] font-medium hover:border-ih-accent"
         >
           Email
         </a>

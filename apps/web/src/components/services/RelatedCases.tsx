@@ -9,7 +9,7 @@ type Props = {
 export default function RelatedCases({ cases }: Props) {
   if (cases.length === 0) return null
   return (
-    <section className="-mx-[var(--spacing-page-gutter)] border-y border-[var(--color-border)] bg-[var(--color-elevated)] px-[var(--spacing-page-gutter)] py-16">
+    <section className="-mx-[var(--spacing-page-gutter)] border-y border-ih-border bg-ih-surface px-[var(--spacing-page-gutter)] py-16">
       <div className="mx-auto max-w-[var(--spacing-max-w)]">
         <div className="mb-6 flex items-baseline justify-between gap-4">
           <div>
@@ -20,7 +20,7 @@ export default function RelatedCases({ cases }: Props) {
           </div>
           <Link
             href="/services"
-            className="inline-flex items-center rounded-sm border border-[var(--color-border)] bg-[var(--color-elevated)] px-4 py-2 text-sm font-medium hover:border-[var(--color-muted)]"
+            className="inline-flex items-center rounded-sm border border-ih-border bg-ih-surface px-4 py-2 text-sm font-medium hover:border-ih-accent"
           >
             All case studies →
           </Link>
@@ -30,7 +30,7 @@ export default function RelatedCases({ cases }: Props) {
             <Link
               key={c.id}
               href={`/services/${c.slug}`}
-              className="flex flex-col overflow-hidden rounded-sm border border-[var(--color-border)] bg-[var(--color-surface)] hover:border-[var(--color-muted)]"
+              className="flex flex-col overflow-hidden rounded-sm border border-ih-border bg-ih-bg hover:border-ih-accent"
             >
               <PlaceholderImage
                 storagePath={c.heroImage?.storagePath}
@@ -40,13 +40,13 @@ export default function RelatedCases({ cases }: Props) {
                 sizes="(min-width: 1100px) 33vw, (min-width: 700px) 50vw, 100vw"
               />
               <div className="p-5">
-                <span className="mono text-[10.5px] uppercase tracking-[0.08em] text-[var(--color-accent)]">
+                <span className="mono text-[10.5px] uppercase tracking-[0.08em] text-ih-accent">
                   NO. {c.caseNumber} · {c.cardTagLabel}
                 </span>
                 <h4 className="mb-2 mt-1.5 text-[18px] font-semibold leading-tight tracking-[-0.01em]">
                   {c.title}
                 </h4>
-                <p className="m-0 text-[13px] leading-[1.5] text-[var(--color-muted)]">
+                <p className="m-0 text-[13px] leading-[1.5] text-ih-muted">
                   {c.cardOneLiner ?? c.deck}
                 </p>
               </div>

@@ -32,7 +32,7 @@ export default function PlaceholderImage({
 }: Props) {
   if (storagePath) {
     return (
-      <div className={`relative overflow-hidden bg-[var(--color-deep)] ${className}`}>
+      <div className={`relative overflow-hidden bg-ih-surface-2 ${className}`}>
         <Image
           src={mediaUrl(storagePath)}
           alt={alt}
@@ -46,12 +46,12 @@ export default function PlaceholderImage({
   }
   return (
     <div
-      className={`relative grid place-items-center bg-[var(--color-deep)] [background-image:repeating-linear-gradient(-45deg,transparent_0,transparent_9px,oklch(0_0_0/0.05)_9px,oklch(0_0_0/0.05)_10px)] ${className}`}
+      className={`relative grid place-items-center bg-ih-surface-2 [background-image:repeating-linear-gradient(-45deg,transparent_0,transparent_9px,oklch(0_0_0/0.05)_9px,oklch(0_0_0/0.05)_10px)] ${className}`}
       role="img"
       aria-label={alt}
     >
       {placeholderLabel ? (
-        <span className="mono whitespace-pre-line px-4 text-center text-[11px] tracking-[0.06em] text-[var(--color-muted)]">
+        <span className="mono whitespace-pre-line px-4 text-center text-[11px] tracking-[0.06em] text-ih-muted">
           {placeholderLabel}
         </span>
       ) : null}

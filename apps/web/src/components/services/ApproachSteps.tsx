@@ -20,7 +20,7 @@ export default function ApproachSteps({ steps }: Props) {
   if (!active) return null
 
   return (
-    <section className="-mx-[var(--spacing-page-gutter)] border-y border-[var(--color-border)] bg-[var(--color-elevated)] px-[var(--spacing-page-gutter)] py-20">
+    <section className="-mx-[var(--spacing-page-gutter)] border-y border-ih-border bg-ih-surface px-[var(--spacing-page-gutter)] py-20">
       <div className="mx-auto max-w-[var(--spacing-max-w)]">
         <span className="eyebrow">HOW WE WORK · A LOOK INSIDE</span>
         <h2 className="my-3 mb-10 max-w-[700px] text-3xl font-semibold leading-[1.05] tracking-[-0.025em] sm:text-4xl">
@@ -40,22 +40,22 @@ export default function ApproachSteps({ steps }: Props) {
                   aria-pressed={isActive}
                   className={`grid grid-cols-[32px_1fr] items-baseline gap-4 rounded-sm p-4 text-left ${
                     isActive
-                      ? 'border border-[var(--color-border)] bg-[var(--color-surface)]'
-                      : 'border border-transparent hover:bg-[var(--color-surface)]'
+                      ? 'border border-ih-border bg-ih-bg'
+                      : 'border border-transparent hover:bg-ih-bg'
                   }`}
                 >
-                  <span className="mono pt-0.5 text-xs text-[var(--color-caption)]">
+                  <span className="mono pt-0.5 text-xs text-ih-muted-2">
                     {step.number}
                   </span>
                   <span>
                     <h4
                       className={`mb-1 text-[16px] font-medium ${
-                        isActive ? 'text-[var(--color-accent)]' : ''
+                        isActive ? 'text-ih-accent' : ''
                       }`}
                     >
                       {step.title}
                     </h4>
-                    <p className="text-[13px] leading-[1.5] text-[var(--color-muted)]">
+                    <p className="text-[13px] leading-[1.5] text-ih-muted">
                       {step.body}
                     </p>
                   </span>
@@ -65,7 +65,7 @@ export default function ApproachSteps({ steps }: Props) {
           </div>
 
           {/* Right: active preview */}
-          <div className="overflow-hidden rounded-sm border border-[var(--color-border)] bg-[var(--color-surface)]">
+          <div className="overflow-hidden rounded-sm border border-ih-border bg-ih-bg">
             <PlaceholderImage
               storagePath={null}
               alt={active.preview.title}
@@ -73,20 +73,20 @@ export default function ApproachSteps({ steps }: Props) {
               className="aspect-video"
             />
             <div className="px-7 pb-7 pt-6">
-              <span className="mono text-[11px] uppercase tracking-[0.12em] text-[var(--color-accent)]">
+              <span className="mono text-[11px] uppercase tracking-[0.12em] text-ih-accent">
                 {active.preview.tagLabel}
               </span>
               <h3 className="my-2 mb-3 text-2xl font-semibold tracking-[-0.015em]">
                 {active.preview.title}
               </h3>
-              <p className="m-0 max-w-[620px] text-[15px] leading-relaxed text-[var(--color-body)]">
+              <p className="m-0 max-w-[620px] text-[15px] leading-relaxed text-ih-ink-2">
                 {active.preview.body}
               </p>
-              <div className="mt-4 flex flex-wrap gap-2 border-t border-[var(--color-border-2)] pt-4">
+              <div className="mt-4 flex flex-wrap gap-2 border-t border-ih-border pt-4">
                 {active.preview.deliverables.map((d) => (
                   <span
                     key={d}
-                    className="mono rounded-sm border border-[var(--color-border)] px-2.5 py-1 text-[11px] tracking-[0.04em] text-[var(--color-body)]"
+                    className="mono rounded-sm border border-ih-border px-2.5 py-1 text-[11px] tracking-[0.04em] text-ih-ink-2"
                   >
                     {d}
                   </span>

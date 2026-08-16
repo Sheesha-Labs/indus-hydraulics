@@ -37,12 +37,12 @@ export default function CaseRail(props: Props) {
   return (
     <aside className="space-y-3.5">
       {(props.ctaCardTitle || props.ctaCardBody) ? (
-        <div className="rounded-sm border border-[var(--color-primary)] bg-[var(--color-primary)] p-4.5 font-sans text-[var(--color-elevated)]">
-          <div className="mono mb-3 text-[10px] uppercase tracking-[0.12em] text-[var(--color-accent)]">
+        <div className="rounded-sm border border-ih-ink bg-ih-navy p-4.5 font-sans text-white">
+          <div className="mono mb-3 text-[10px] uppercase tracking-[0.12em] text-ih-accent">
             Quote a similar job
           </div>
           {props.ctaCardTitle ? (
-            <h4 className="mb-1.5 text-[15px] font-medium tracking-[-0.005em] text-[var(--color-elevated)]">
+            <h4 className="mb-1.5 text-[15px] font-medium tracking-[-0.005em] text-white">
               {props.ctaCardTitle}
             </h4>
           ) : null}
@@ -53,14 +53,14 @@ export default function CaseRail(props: Props) {
           ) : null}
           <Link
             href="/quote"
-            className="mt-3 block w-full rounded-sm bg-[var(--color-accent)] px-3 py-2.5 text-center text-sm font-medium text-white hover:bg-[color-mix(in_oklab,var(--color-accent)_88%,white)]"
+            className="mt-3 block w-full rounded-sm bg-ih-accent px-3 py-2.5 text-center text-sm font-medium text-white hover:bg-ih-accent-hover"
           >
             Open a service ticket
           </Link>
           {props.ctaCardPhone ? (
             <a
               href={`tel:${props.ctaCardPhone.replace(/[^+\d]/g, '')}`}
-              className="mt-1.5 block w-full rounded-sm px-3 py-2 text-center text-sm text-[oklch(0.78_0.01_240)] hover:text-[var(--color-elevated)]"
+              className="mt-1.5 block w-full rounded-sm px-3 py-2 text-center text-sm text-[oklch(0.78_0.01_240)] hover:text-white"
             >
               {props.ctaCardPhone}
             </a>
@@ -69,20 +69,20 @@ export default function CaseRail(props: Props) {
       ) : null}
 
       {props.pullQuoteText ? (
-        <div className="rounded-sm border border-[var(--color-border)] bg-[var(--color-elevated)] p-4.5">
-          <div className="mono mb-3 text-[10px] uppercase tracking-[0.12em] text-[var(--color-caption)]">
+        <div className="rounded-sm border border-ih-border bg-ih-surface p-4.5">
+          <div className="mono mb-3 text-[10px] uppercase tracking-[0.12em] text-ih-muted-2">
             From the field
           </div>
-          <p className="m-0 mb-3 font-serif text-[15px] italic leading-[1.5] text-[var(--color-primary)]">
+          <p className="m-0 mb-3 font-serif text-[15px] italic leading-[1.5] text-ih-ink">
             “{props.pullQuoteText}”
           </p>
           {(props.pullQuoteAuthor || props.pullQuoteRole) ? (
-            <div className="flex items-center gap-2.5 border-t border-[var(--color-border-2)] pt-3">
-              <div className="size-8 rounded-full border border-[var(--color-border)] bg-[var(--color-deep)]" aria-hidden />
+            <div className="flex items-center gap-2.5 border-t border-ih-border pt-3">
+              <div className="size-8 rounded-full border border-ih-border bg-ih-surface-2" aria-hidden />
               <div>
                 {props.pullQuoteAuthor ? <strong className="text-[13px] font-medium">{props.pullQuoteAuthor}</strong> : null}
                 {(props.pullQuoteRole || props.pullQuoteLocation) ? (
-                  <small className="mono mt-0.5 block text-[10px] uppercase tracking-[0.06em] text-[var(--color-muted)]">
+                  <small className="mono mt-0.5 block text-[10px] uppercase tracking-[0.06em] text-ih-muted">
                     {[props.pullQuoteRole, props.pullQuoteLocation].filter(Boolean).join(' · ')}
                   </small>
                 ) : null}
@@ -93,8 +93,8 @@ export default function CaseRail(props: Props) {
       ) : null}
 
       {specs.length > 0 ? (
-        <div className="rounded-sm border border-[var(--color-border)] bg-[var(--color-elevated)] p-4.5">
-          <div className="mono mb-3 text-[10px] uppercase tracking-[0.12em] text-[var(--color-caption)]">
+        <div className="rounded-sm border border-ih-border bg-ih-surface p-4.5">
+          <div className="mono mb-3 text-[10px] uppercase tracking-[0.12em] text-ih-muted-2">
             Specs at a glance
           </div>
           <table className="mono w-full border-collapse text-[11.5px]">
@@ -102,15 +102,15 @@ export default function CaseRail(props: Props) {
               {specs.map((row, i) => (
                 <tr key={i}>
                   <td
-                    className={`py-1.5 text-[var(--color-muted)] ${
-                      i > 0 ? 'border-t border-dashed border-[var(--color-border-2)]' : ''
+                    className={`py-1.5 text-ih-muted ${
+                      i > 0 ? 'border-t border-dashed border-ih-border' : ''
                     }`}
                   >
                     {row.label}
                   </td>
                   <td
                     className={`py-1.5 text-right ${
-                      i > 0 ? 'border-t border-dashed border-[var(--color-border-2)]' : ''
+                      i > 0 ? 'border-t border-dashed border-ih-border' : ''
                     }`}
                   >
                     {row.value}
@@ -123,8 +123,8 @@ export default function CaseRail(props: Props) {
       ) : null}
 
       {props.galleryThumbs.length > 0 ? (
-        <div className="rounded-sm border border-[var(--color-border)] bg-[var(--color-elevated)] p-4.5">
-          <div className="mono mb-3 text-[10px] uppercase tracking-[0.12em] text-[var(--color-caption)]">
+        <div className="rounded-sm border border-ih-border bg-ih-surface p-4.5">
+          <div className="mono mb-3 text-[10px] uppercase tracking-[0.12em] text-ih-muted-2">
             From the case file
           </div>
           <div className="grid grid-cols-2 gap-1.5">
@@ -134,7 +134,7 @@ export default function CaseRail(props: Props) {
                 storagePath={t.storagePath}
                 alt={t.alt ?? `Case figure ${i + 1}`}
                 placeholderLabel={`FIG.0${i + 1}`}
-                className="aspect-square border border-[var(--color-border)]"
+                className="aspect-square border border-ih-border"
                 sizes="120px"
               />
             ))}
@@ -142,7 +142,7 @@ export default function CaseRail(props: Props) {
           {props.galleryTotalCount > 6 ? (
             <Link
               href="#"
-              className="mt-2.5 block rounded-sm border border-[var(--color-border)] bg-[var(--color-surface)] px-3 py-2 text-center text-xs hover:border-[var(--color-muted)]"
+              className="mt-2.5 block rounded-sm border border-ih-border bg-ih-bg px-3 py-2 text-center text-xs hover:border-ih-accent"
             >
               View {props.galleryTotalCount} photos →
             </Link>
@@ -151,8 +151,8 @@ export default function CaseRail(props: Props) {
       ) : galleryIds.length > 0 ? null : null}
 
       {downloads.length > 0 ? (
-        <div className="rounded-sm border border-[var(--color-border)] bg-[var(--color-elevated)] p-4.5">
-          <div className="mono mb-3 text-[10px] uppercase tracking-[0.12em] text-[var(--color-caption)]">
+        <div className="rounded-sm border border-ih-border bg-ih-surface p-4.5">
+          <div className="mono mb-3 text-[10px] uppercase tracking-[0.12em] text-ih-muted-2">
             Downloads
           </div>
           <ul className="mono space-y-0 text-[11.5px]">
@@ -160,17 +160,17 @@ export default function CaseRail(props: Props) {
               <li
                 key={i}
                 className={`flex justify-between py-2 ${
-                  i < downloads.length - 1 ? 'border-b border-dashed border-[var(--color-border-2)]' : ''
+                  i < downloads.length - 1 ? 'border-b border-dashed border-ih-border' : ''
                 }`}
               >
                 <a
                   href={d.url.startsWith('media:') ? mediaUrl(d.url.slice('media:'.length)) : d.url}
-                  className="text-[var(--color-accent)] hover:underline"
+                  className="text-ih-accent hover:underline"
                 >
                   {d.label}
                   {d.format ? ` (${d.format})` : ''}
                 </a>
-                <span className="text-[var(--color-caption)]">{d.size}</span>
+                <span className="text-ih-muted-2">{d.size}</span>
               </li>
             ))}
           </ul>

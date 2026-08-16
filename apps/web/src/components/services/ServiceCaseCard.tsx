@@ -13,7 +13,7 @@ type Props = {
  */
 export default function ServiceCaseCard({ case: c }: Props) {
   const pills = (c.cardOutcomePills as Array<{ label: string; style: string }>) ?? []
-  const tagBg = c.cardTagStyle === 'oil' ? 'bg-[var(--color-accent)] text-white' : 'bg-[var(--color-primary)] text-[var(--color-elevated)]'
+  const tagBg = c.cardTagStyle === 'oil' ? 'bg-ih-accent text-white' : 'bg-ih-navy text-white'
   return (
     <Link href={`/services/${c.slug}`} className="group flex flex-col">
       <div className="relative">
@@ -21,7 +21,7 @@ export default function ServiceCaseCard({ case: c }: Props) {
           storagePath={c.heroImage?.storagePath}
           alt={c.heroImage?.alt ?? c.title}
           placeholderLabel={`"${c.cardTagLabel.toLowerCase()} case\\n520×390"`}
-          className="aspect-[4/3] border border-[var(--color-border)] mb-4 group-hover:outline group-hover:outline-2 group-hover:outline-[var(--color-primary)]"
+          className="aspect-[4/3] border border-ih-border mb-4 group-hover:outline group-hover:outline-2 group-hover:outline-ih-accent"
           sizes="(min-width: 1100px) 33vw, (min-width: 700px) 50vw, 100vw"
         />
         <span className={`absolute left-3 top-3 ${tagBg} mono px-2.5 py-1 text-[10px] uppercase tracking-[0.12em]`}>
@@ -33,14 +33,14 @@ export default function ServiceCaseCard({ case: c }: Props) {
           </span>
         ) : null}
       </div>
-      <div className="mono mb-1.5 flex gap-2.5 text-[11px] uppercase tracking-[0.08em] text-[var(--color-muted)]">
+      <div className="mono mb-1.5 flex gap-2.5 text-[11px] uppercase tracking-[0.08em] text-ih-muted">
         <span>
-          <strong className="font-medium text-[var(--color-primary)]">NO. {c.caseNumber}</strong>
+          <strong className="font-medium text-ih-ink">NO. {c.caseNumber}</strong>
         </span>
         <span>{c.cardTagLabel}</span>
       </div>
       <h3 className="mb-2 text-[22px] font-semibold leading-tight tracking-[-0.015em]">{c.title}</h3>
-      <p className="mb-4 text-sm leading-[1.55] text-[var(--color-muted)]">
+      <p className="mb-4 text-sm leading-[1.55] text-ih-muted">
         {c.cardOneLiner ?? c.deck}
       </p>
       {pills.length > 0 ? (
@@ -61,8 +61,8 @@ export default function ServiceCaseCard({ case: c }: Props) {
 
 function pillClass(style: string): string {
   if (style === 'good')
-    return 'border-[var(--color-good)] bg-[oklch(0.97_0.03_150)] text-[var(--color-good)]'
+    return 'border-ih-success bg-ih-success-soft text-ih-success'
   if (style === 'accent')
-    return 'border-[var(--color-accent)] bg-[var(--color-accent-soft)] text-[var(--color-accent)]'
-  return 'border-[var(--color-border)] bg-[var(--color-elevated)] text-[var(--color-body)]'
+    return 'border-ih-accent bg-ih-accent-soft text-ih-accent'
+  return 'border-ih-border bg-ih-surface text-ih-ink-2'
 }

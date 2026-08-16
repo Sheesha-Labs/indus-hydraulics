@@ -15,7 +15,7 @@ export default function FeaturedCase({ case: c }: Props) {
   // Outcome pills come from the same data the grid card uses; pick first 3
   // to populate the 3-cell metric strip.
   const pills = (c.cardOutcomePills as Array<{ label: string; style: string }>) ?? []
-  const tagBg = c.cardTagStyle === 'oil' ? 'bg-[var(--color-accent)] text-white' : 'bg-[var(--color-primary)] text-[var(--color-elevated)]'
+  const tagBg = c.cardTagStyle === 'oil' ? 'bg-ih-accent text-white' : 'bg-ih-navy text-white'
 
   return (
     <section className="grid gap-8 py-12 lg:grid-cols-[1.5fr_1fr]">
@@ -24,7 +24,7 @@ export default function FeaturedCase({ case: c }: Props) {
           storagePath={c.heroImage?.storagePath}
           alt={c.heroImage?.alt ?? c.title}
           placeholderLabel={`"${c.title}\\nfeatured 1100×760"`}
-          className="aspect-[16/11] border border-[var(--color-border)]"
+          className="aspect-[16/11] border border-ih-border"
           sizes="(min-width: 1024px) 60vw, 100vw"
           priority
         />
@@ -34,35 +34,35 @@ export default function FeaturedCase({ case: c }: Props) {
       </Link>
 
       <div className="flex flex-col gap-4 py-3">
-        <div className="mono flex flex-wrap gap-3.5 text-[11px] uppercase tracking-[0.1em] text-[var(--color-muted)]">
+        <div className="mono flex flex-wrap gap-3.5 text-[11px] uppercase tracking-[0.1em] text-ih-muted">
           <span>
-            <strong className="font-medium text-[var(--color-primary)]">NO. {c.caseNumber}</strong>
+            <strong className="font-medium text-ih-ink">NO. {c.caseNumber}</strong>
           </span>
           <span>· {c.cardTagLabel}</span>
           {c.caseDateLabel ? <span>· {c.caseDateLabel}</span> : null}
         </div>
         <h2 className="text-3xl font-semibold leading-[1.05] tracking-[-0.025em] sm:text-4xl lg:text-[42px]">
-          <Link href={`/services/${c.slug}`} className="hover:text-[var(--color-accent)]">
+          <Link href={`/services/${c.slug}`} className="hover:text-ih-accent">
             {c.titleAccent ? renderTitleWithAccent(c.title, c.titleAccent) : c.title}
           </Link>
         </h2>
-        <p className="text-[16px] leading-[1.55] text-[var(--color-body)]">
+        <p className="text-[16px] leading-[1.55] text-ih-ink-2">
           {c.cardOneLiner ?? c.deck}
         </p>
 
         {pills.length > 0 ? (
-          <div className="mt-2 grid grid-cols-3 gap-px border border-[var(--color-border)] bg-[var(--color-border)]">
+          <div className="mt-2 grid grid-cols-3 gap-px border border-ih-border bg-ih-border">
             {pills.slice(0, 3).map((p, i) => (
-              <div key={i} className="bg-[var(--color-elevated)] p-4">
-                <div className="mono text-[10.5px] uppercase tracking-[0.1em] text-[var(--color-muted)]">
+              <div key={i} className="bg-ih-surface p-4">
+                <div className="mono text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
                   {p.label.replace(/^([^:]+):.*/, '$1') /* if "key: value" pattern, show key */}
                 </div>
                 <div
                   className={`mt-1 text-[22px] font-semibold leading-tight tracking-[-0.01em] ${
                     p.style === 'good'
-                      ? 'text-[var(--color-good)]'
+                      ? 'text-ih-success'
                       : p.style === 'accent'
-                        ? 'text-[var(--color-accent)]'
+                        ? 'text-ih-accent'
                         : ''
                   }`}
                 >
@@ -73,11 +73,11 @@ export default function FeaturedCase({ case: c }: Props) {
           </div>
         ) : null}
 
-        <div className="mt-2 flex items-center gap-3 border-t border-[var(--color-border-2)] pt-3 text-sm">
-          <div className="size-9 rounded-full border border-[var(--color-border)] bg-[var(--color-deep)]" aria-hidden />
+        <div className="mt-2 flex items-center gap-3 border-t border-ih-border pt-3 text-sm">
+          <div className="size-9 rounded-full border border-ih-border bg-ih-surface-2" aria-hidden />
           <div>
             <strong className="font-medium">Indus Hydraulics</strong>
-            <small className="mono mt-0.5 block text-[11px] tracking-[0.04em] text-[var(--color-muted)]">
+            <small className="mono mt-0.5 block text-[11px] tracking-[0.04em] text-ih-muted">
               {c.region ? c.region.toUpperCase() : 'JEBEL ALI · UAE'}
             </small>
           </div>
@@ -94,7 +94,7 @@ function renderTitleWithAccent(title: string, accent: string): React.ReactNode {
   return (
     <>
       {title.slice(0, idx)}
-      <em className="font-normal italic text-[var(--color-accent)]">{accent}</em>
+      <em className="font-normal italic text-ih-accent">{accent}</em>
       {title.slice(idx + accent.length)}
     </>
   )
