@@ -78,7 +78,7 @@ export default function CmsPageEditorClient({ isNew, page, recentImages }: Props
       <div className="mb-6">
         <Link
           href="/admin/cms?tab=pages"
-          className="font-mono text-[12px] text-[var(--color-muted)] hover:text-[var(--color-primary)] mb-2 inline-block"
+          className="font-mono text-[12px] text-ih-muted hover:text-ih-ink mb-2 inline-block"
         >
           ← CMS
         </Link>
@@ -93,7 +93,7 @@ export default function CmsPageEditorClient({ isNew, page, recentImages }: Props
       </div>
 
       {!isNew && (
-        <div className="flex border-b border-[var(--color-border)] mb-6">
+        <div className="flex border-b border-ih-border mb-6">
           {TABS.map((t) => (
             <button
               key={t.id}
@@ -101,8 +101,8 @@ export default function CmsPageEditorClient({ isNew, page, recentImages }: Props
               onClick={() => setTab(t.id)}
               className={`px-4 py-2.5 font-mono text-[12px] border-b-2 -mb-px ${
                 tab === t.id
-                  ? 'border-[var(--color-accent)] text-[var(--color-primary)]'
-                  : 'border-transparent text-[var(--color-muted)] hover:text-[var(--color-body)]'
+                  ? 'border-ih-accent text-ih-ink'
+                  : 'border-transparent text-ih-muted hover:text-ih-ink-2'
               }`}
             >
               {t.label}
@@ -135,7 +135,7 @@ function ContentForm({ isNew, page }: { isNew: boolean; page: CmsPage | null }) 
 
       <div className="grid grid-cols-2 gap-4">
         <div className="col-span-2">
-          <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+          <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
             Title *
           </label>
           <input
@@ -143,11 +143,11 @@ function ContentForm({ isNew, page }: { isNew: boolean; page: CmsPage | null }) 
             required
             defaultValue={page?.title ?? ''}
             type="text"
-            className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[15px] font-semibold focus:outline-none focus:border-[var(--color-accent)]"
+            className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[15px] font-semibold focus:outline-none focus:border-ih-accent"
           />
         </div>
         <div>
-          <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+          <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
             Slug *
           </label>
           <input
@@ -156,13 +156,13 @@ function ContentForm({ isNew, page }: { isNew: boolean; page: CmsPage | null }) 
             defaultValue={page?.slug ?? ''}
             type="text"
             placeholder="about, contact, terms"
-            className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] font-mono focus:outline-none focus:border-[var(--color-accent)]"
+            className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] font-mono focus:outline-none focus:border-ih-accent"
           />
         </div>
       </div>
 
       <div>
-        <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+        <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
           Body *
         </label>
         <textarea
@@ -171,35 +171,35 @@ function ContentForm({ isNew, page }: { isNew: boolean; page: CmsPage | null }) 
           defaultValue={page?.body ?? ''}
           rows={20}
           placeholder="Page content (HTML)"
-          className="w-full px-3 py-2.5 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] font-mono text-[var(--color-primary)] placeholder:text-[var(--color-caption)] focus:outline-none focus:border-[var(--color-accent)] resize-none"
+          className="w-full px-3 py-2.5 border border-ih-border bg-ih-surface text-[13px] font-mono text-ih-ink placeholder:text-ih-muted-2 focus:outline-none focus:border-ih-accent resize-none"
         />
       </div>
 
-      <div className="border-t border-[var(--color-border)] pt-4">
-        <p className="font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-3">
+      <div className="border-t border-ih-border pt-4">
+        <p className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-3">
           SEO basics
         </p>
-        <p className="text-[12px] text-[var(--color-caption)] mb-3">
+        <p className="text-[12px] text-ih-muted-2 mb-3">
           For canonical URLs, OG images, sitemap controls, and robots overrides, switch to the
           SEO tab.
         </p>
         <div className="grid grid-cols-2 gap-4">
           <div>
-            <label className="block font-mono text-[11px] text-[var(--color-muted)] mb-1">Meta Title</label>
+            <label className="block font-mono text-[11px] text-ih-muted mb-1">Meta Title</label>
             <input
               name="seoTitle"
               defaultValue={page?.seoTitle ?? ''}
               type="text"
-              className="w-full h-9 px-3 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] focus:outline-none"
+              className="w-full h-9 px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none"
             />
           </div>
           <div>
-            <label className="block font-mono text-[11px] text-[var(--color-muted)] mb-1">Meta Description</label>
+            <label className="block font-mono text-[11px] text-ih-muted mb-1">Meta Description</label>
             <input
               name="seoDescription"
               defaultValue={page?.seoDescription ?? ''}
               type="text"
-              className="w-full h-9 px-3 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] focus:outline-none"
+              className="w-full h-9 px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none"
             />
           </div>
         </div>
@@ -210,7 +210,7 @@ function ContentForm({ isNew, page }: { isNew: boolean; page: CmsPage | null }) 
           type="submit"
           name="publish"
           value="0"
-          className="h-10 px-6 border border-[var(--color-border)] text-[13px] font-medium hover:bg-[var(--color-deep)]"
+          className="h-10 px-6 border border-ih-border text-[13px] font-medium hover:bg-ih-surface-2"
         >
           Save Draft
         </button>
@@ -218,7 +218,7 @@ function ContentForm({ isNew, page }: { isNew: boolean; page: CmsPage | null }) 
           type="submit"
           name="publish"
           value="1"
-          className="h-10 px-6 bg-[var(--color-accent)] text-white text-[13px] font-medium hover:opacity-90"
+          className="h-10 px-6 bg-ih-accent text-white text-[13px] font-medium hover:opacity-90"
         >
           {page?.isPublished ? 'Update' : 'Publish'}
         </button>

@@ -64,27 +64,27 @@ export default function PromoFormDialog({ item, onClose, onSaved }: Props) {
 
   return (
     <div className="fixed inset-0 z-50 bg-black/40 flex items-start justify-center pt-12 px-4 overflow-y-auto">
-      <div className="bg-white border border-[var(--color-border)] w-full max-w-lg p-6 flex flex-col gap-4">
+      <div className="bg-white border border-ih-border w-full max-w-lg p-6 flex flex-col gap-4">
         <div className="flex items-start justify-between">
           <h2 className="text-[18px] font-semibold">Promo tile</h2>
           <button
             type="button"
             onClick={onClose}
-            className="text-[var(--color-muted)] hover:text-[var(--color-primary)]"
+            className="text-ih-muted hover:text-ih-ink"
             aria-label="Close"
           >
             ✕
           </button>
         </div>
-        <p className="text-[13px] text-[var(--color-muted)]">
+        <p className="text-[13px] text-ih-muted">
           Featured tile shown at the bottom of the <span className="font-medium">{item.label}</span> column.
         </p>
 
         <div className="flex flex-col gap-2">
-          <span className="text-[12px] text-[var(--color-muted)]">Image</span>
+          <span className="text-[12px] text-ih-muted">Image</span>
           {imageUrl ? (
             <div className="flex items-center gap-3">
-              <div className="relative w-20 h-20 border border-[var(--color-border)]">
+              <div className="relative w-20 h-20 border border-ih-border">
                 <Image
                   src={imageUrl}
                   alt=""
@@ -96,7 +96,7 @@ export default function PromoFormDialog({ item, onClose, onSaved }: Props) {
               <button
                 type="button"
                 onClick={clearImage}
-                className="text-[12px] text-[var(--color-danger)] hover:underline"
+                className="text-[12px] text-ih-danger hover:underline"
               >
                 Remove
               </button>
@@ -113,38 +113,38 @@ export default function PromoFormDialog({ item, onClose, onSaved }: Props) {
               className="text-[13px]"
             />
           )}
-          {uploading ? <span className="text-[11px] text-[var(--color-muted)]">Uploading…</span> : null}
+          {uploading ? <span className="text-[11px] text-ih-muted">Uploading…</span> : null}
         </div>
 
         <label className="flex flex-col gap-1 text-[12px]">
-          <span className="text-[var(--color-muted)]">Heading</span>
+          <span className="text-ih-muted">Heading</span>
           <input
             value={heading}
             onChange={(e) => setHeading(e.target.value)}
-            className="h-9 px-3 border border-[var(--color-border)] bg-white text-[13px]"
+            className="h-9 px-3 border border-ih-border bg-white text-[13px]"
           />
         </label>
         <label className="flex flex-col gap-1 text-[12px]">
-          <span className="text-[var(--color-muted)]">Body</span>
+          <span className="text-ih-muted">Body</span>
           <textarea
             value={body}
             onChange={(e) => setBody(e.target.value)}
             rows={3}
-            className="px-3 py-2 border border-[var(--color-border)] bg-white text-[13px]"
+            className="px-3 py-2 border border-ih-border bg-white text-[13px]"
           />
         </label>
         <label className="flex flex-col gap-1 text-[12px]">
-          <span className="text-[var(--color-muted)]">Link URL</span>
+          <span className="text-ih-muted">Link URL</span>
           <input
             value={linkUrl}
             onChange={(e) => setLinkUrl(e.target.value)}
             placeholder="/sale or https://example.com"
-            className="h-9 px-3 border border-[var(--color-border)] bg-white text-[13px] font-mono"
+            className="h-9 px-3 border border-ih-border bg-white text-[13px] font-mono"
           />
         </label>
 
         {error ? (
-          <p role="alert" className="text-[12px] text-[var(--color-danger)]">
+          <p role="alert" className="text-[12px] text-ih-danger">
             {error}
           </p>
         ) : null}
@@ -154,7 +154,7 @@ export default function PromoFormDialog({ item, onClose, onSaved }: Props) {
             type="button"
             onClick={onClose}
             disabled={pending}
-            className="h-9 px-4 border border-[var(--color-border)] text-[13px]"
+            className="h-9 px-4 border border-ih-border text-[13px]"
           >
             Cancel
           </button>
@@ -162,7 +162,7 @@ export default function PromoFormDialog({ item, onClose, onSaved }: Props) {
             type="button"
             onClick={submit}
             disabled={pending}
-            className="h-9 px-4 bg-[var(--color-accent)] text-white text-[13px] disabled:opacity-50"
+            className="h-9 px-4 bg-ih-accent text-white text-[13px] disabled:opacity-50"
           >
             {pending ? 'Saving…' : 'Save'}
           </button>

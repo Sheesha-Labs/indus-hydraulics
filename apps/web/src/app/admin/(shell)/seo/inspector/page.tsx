@@ -99,7 +99,7 @@ export default async function SeoInspectorPage({
       {/* Filters */}
       <form className="flex gap-3 items-end mb-4 flex-wrap" method="get">
         <div className="flex-1 min-w-[240px]">
-          <label className="block font-mono text-[10px] uppercase text-[var(--color-muted)] mb-1">
+          <label className="block font-mono text-[10px] uppercase text-ih-muted mb-1">
             Search
           </label>
           <input
@@ -107,7 +107,7 @@ export default async function SeoInspectorPage({
             name="q"
             defaultValue={sp.q ?? ''}
             placeholder="Title, slug, description…"
-            className="w-full h-9 px-3 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] focus:outline-none focus:border-[var(--color-accent)]"
+            className="w-full h-9 px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent"
           />
         </div>
         <SelectFilter name="type" label="Type" value={sp.type ?? ''}>
@@ -131,23 +131,23 @@ export default async function SeoInspectorPage({
         </SelectFilter>
         <button
           type="submit"
-          className="h-9 px-4 bg-[var(--color-accent)] text-white font-mono text-[12px] hover:opacity-90"
+          className="h-9 px-4 bg-ih-accent text-white font-mono text-[12px] hover:opacity-90"
         >
           Apply
         </button>
         <Link
           href="/admin/seo/inspector"
-          className="h-9 px-4 grid place-items-center border border-[var(--color-border)] font-mono text-[12px] text-[var(--color-muted)] hover:text-[var(--color-body)]"
+          className="h-9 px-4 grid place-items-center border border-ih-border font-mono text-[12px] text-ih-muted hover:text-ih-ink-2"
         >
           Reset
         </Link>
       </form>
 
       {/* Grid */}
-      <div className="border border-[var(--color-border)] overflow-x-auto">
+      <div className="border border-ih-border overflow-x-auto">
         <table className="w-full text-[13px]">
           <thead>
-            <tr className="border-b border-[var(--color-border)] bg-[var(--color-deep)] text-left">
+            <tr className="border-b border-ih-border bg-ih-surface-2 text-left">
               <Th>Health</Th>
               <Th>Type</Th>
               <Th>Title (length)</Th>
@@ -162,7 +162,7 @@ export default async function SeoInspectorPage({
           <tbody>
             {filtered.length === 0 ? (
               <tr>
-                <td colSpan={9} className="px-4 py-12 text-center text-[var(--color-muted)]">
+                <td colSpan={9} className="px-4 py-12 text-center text-ih-muted">
                   No URLs match those filters.
                 </td>
               </tr>
@@ -170,13 +170,13 @@ export default async function SeoInspectorPage({
               filtered.map((row) => (
                 <tr
                   key={`${row.entityType}-${row.entityId}`}
-                  className="border-b border-[var(--color-border)] last:border-0 hover:bg-[var(--color-deep)]"
+                  className="border-b border-ih-border last:border-0 hover:bg-ih-surface-2"
                 >
                   <td className="px-3 py-2">
                     <SeoHealthBadge score={row.score} size="sm" />
                   </td>
                   <td className="px-3 py-2">
-                    <span className="font-mono text-[10px] uppercase tracking-[0.08em] text-[var(--color-muted)]">
+                    <span className="font-mono text-[10px] uppercase tracking-[0.08em] text-ih-muted">
                       {TYPE_LABELS[row.entityType]}
                     </span>
                   </td>
@@ -187,13 +187,13 @@ export default async function SeoInspectorPage({
                       return editPath ? (
                         <Link
                           href={editPath}
-                          className="truncate block text-[var(--color-body)] hover:text-[var(--color-accent)]"
+                          className="truncate block text-ih-ink-2 hover:text-ih-accent"
                           title={titleText}
                         >
                           {titleText}
                         </Link>
                       ) : (
-                        <div className="truncate text-[var(--color-body)]" title={titleText}>
+                        <div className="truncate text-ih-ink-2" title={titleText}>
                           {titleText}
                         </div>
                       )
@@ -205,7 +205,7 @@ export default async function SeoInspectorPage({
                     />
                   </td>
                   <td className="px-3 py-2 max-w-[320px]">
-                    <div className="truncate text-[var(--color-muted)]" title={row.seoDescription ?? ''}>
+                    <div className="truncate text-ih-muted" title={row.seoDescription ?? ''}>
                       {row.seoDescription ?? <em className="opacity-60">missing</em>}
                     </div>
                     <LengthHint
@@ -222,23 +222,23 @@ export default async function SeoInspectorPage({
                     )}
                   </td>
                   <td className="px-3 py-2 font-mono text-[11px]">
-                    {row.ogImagePresent ? '✓' : <span className="text-[var(--color-muted)]">—</span>}
+                    {row.ogImagePresent ? '✓' : <span className="text-ih-muted">—</span>}
                   </td>
                   <td className="px-3 py-2 font-mono text-[11px]">
-                    {row.hasStructuredData ? '✓' : <span className="text-[var(--color-muted)]">—</span>}
+                    {row.hasStructuredData ? '✓' : <span className="text-ih-muted">—</span>}
                   </td>
-                  <td className="px-3 py-2 font-mono text-[11px] text-[var(--color-muted)] max-w-[260px]">
+                  <td className="px-3 py-2 font-mono text-[11px] text-ih-muted max-w-[260px]">
                     <a
                       href={row.url}
                       target="_blank"
                       rel="noopener"
-                      className="hover:text-[var(--color-accent)] truncate inline-block max-w-full align-bottom"
+                      className="hover:text-ih-accent truncate inline-block max-w-full align-bottom"
                       title={row.url}
                     >
                       {row.url.replace(/^https?:\/\//, '')}
                     </a>
                   </td>
-                  <td className="px-3 py-2 font-mono text-[11px] text-[var(--color-muted)] whitespace-nowrap">
+                  <td className="px-3 py-2 font-mono text-[11px] text-ih-muted whitespace-nowrap">
                     {row.lastModified
                       ? row.lastModified.toLocaleDateString('en-GB', {
                           day: 'numeric',
@@ -253,7 +253,7 @@ export default async function SeoInspectorPage({
         </table>
       </div>
 
-      <p className="mt-4 font-mono text-[10px] text-[var(--color-muted)]">
+      <p className="mt-4 font-mono text-[10px] text-ih-muted">
         Showing {filtered.length} of {rows.length} URL(s). Health score is recomputed on every page load.
       </p>
     </div>
@@ -516,7 +516,7 @@ function buildRow(p: {
 
 function Th({ children }: { children: React.ReactNode }) {
   return (
-    <th className="px-3 py-2.5 font-mono text-[10px] uppercase tracking-[0.08em] text-[var(--color-muted)]">
+    <th className="px-3 py-2.5 font-mono text-[10px] uppercase tracking-[0.08em] text-ih-muted">
       {children}
     </th>
   )
@@ -538,10 +538,10 @@ function SummaryTile({
         ? 'text-[oklch(0.5_0.14_70)]'
         : tone === 'danger'
           ? 'text-[oklch(0.5_0.18_25)]'
-          : 'text-[var(--color-body)]'
+          : 'text-ih-ink-2'
   return (
-    <div className="border border-[var(--color-border)] bg-[var(--color-elevated)] p-4">
-      <div className="font-mono text-[10px] uppercase tracking-[0.1em] text-[var(--color-muted)]">
+    <div className="border border-ih-border bg-ih-surface p-4">
+      <div className="font-mono text-[10px] uppercase tracking-[0.1em] text-ih-muted">
         {label}
       </div>
       <div className={`text-[28px] font-semibold mt-1 ${toneClass}`}>{value}</div>
@@ -562,13 +562,13 @@ function SelectFilter({
 }) {
   return (
     <div className="min-w-[150px]">
-      <label className="block font-mono text-[10px] uppercase text-[var(--color-muted)] mb-1">
+      <label className="block font-mono text-[10px] uppercase text-ih-muted mb-1">
         {label}
       </label>
       <select
         name={name}
         defaultValue={value}
-        className="w-full h-9 px-2 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px]"
+        className="w-full h-9 px-2 border border-ih-border bg-ih-surface text-[13px]"
       >
         {children}
       </select>
@@ -602,7 +602,7 @@ function editPathFor(entityType: SeoEntityType, entityId: string): string | null
 function LengthHint({ len, min, max }: { len: number; min: number; max: number }) {
   const tone =
     len === 0
-      ? 'text-[var(--color-muted)]'
+      ? 'text-ih-muted'
       : len < min
         ? 'text-[oklch(0.5_0.14_70)]'
         : len > max

@@ -146,7 +146,7 @@ export default function NavigationEditor({ menu, items: initialItems }: Props) {
       <div className="flex items-start justify-between gap-4 flex-wrap">
         <div>
           <h1 className="text-[24px] font-semibold tracking-tight">{menu.name}</h1>
-          <p className="text-[13px] text-[var(--color-muted)] mt-1">
+          <p className="text-[13px] text-ih-muted mt-1">
             {menu.isPublished
               ? `Published${menu.publishedAt ? ` ${new Date(menu.publishedAt).toLocaleString()}` : ''}`
               : 'Draft — not visible on the storefront yet'}
@@ -161,7 +161,7 @@ export default function NavigationEditor({ menu, items: initialItems }: Props) {
                 initial: { menuId: menu.id, parentId: null },
               })
             }
-            className="h-9 px-4 border border-[var(--color-border)] text-[13px]"
+            className="h-9 px-4 border border-ih-border text-[13px]"
           >
             + Add column
           </button>
@@ -169,7 +169,7 @@ export default function NavigationEditor({ menu, items: initialItems }: Props) {
             type="button"
             onClick={onPublishToggle}
             disabled={pending}
-            className="h-9 px-4 bg-[var(--color-accent)] text-white text-[13px] disabled:opacity-50"
+            className="h-9 px-4 bg-ih-accent text-white text-[13px] disabled:opacity-50"
           >
             {pending ? 'Saving…' : menu.isPublished ? 'Unpublish' : 'Publish'}
           </button>
@@ -177,14 +177,14 @@ export default function NavigationEditor({ menu, items: initialItems }: Props) {
       </div>
 
       {error ? (
-        <div role="alert" className="border border-[var(--color-danger)] bg-[oklch(0.98_0.04_30)] text-[13px] px-3 py-2">
+        <div role="alert" className="border border-ih-danger bg-[oklch(0.98_0.04_30)] text-[13px] px-3 py-2">
           {error}
         </div>
       ) : null}
 
-      <div className="bg-white border border-[var(--color-border)]">
+      <div className="bg-white border border-ih-border">
         {roots.length === 0 ? (
-          <div className="px-4 py-12 text-center text-[13px] text-[var(--color-muted)]">
+          <div className="px-4 py-12 text-center text-[13px] text-ih-muted">
             No items yet — click <span className="font-medium">+ Add column</span> to begin.
           </div>
         ) : (
@@ -322,12 +322,12 @@ function ItemNode({
       <div
         ref={setNodeRef}
         style={style}
-        className="grid grid-cols-[28px_1fr_140px_120px_220px] items-center px-3 py-2 border-b border-[var(--color-border)] last:border-b-0 text-[13px]"
+        className="grid grid-cols-[28px_1fr_140px_120px_220px] items-center px-3 py-2 border-b border-ih-border last:border-b-0 text-[13px]"
       >
         <button
           type="button"
           aria-label="Drag to reorder"
-          className="cursor-grab active:cursor-grabbing text-[var(--color-muted)] hover:text-[var(--color-primary)]"
+          className="cursor-grab active:cursor-grabbing text-ih-muted hover:text-ih-ink"
           {...attributes}
           {...listeners}
         >
@@ -336,21 +336,21 @@ function ItemNode({
         <div style={{ paddingLeft: `${depth * 20}px` }} className="flex items-center gap-2 min-w-0">
           <span className="font-medium truncate">{item.label}</span>
           {item.badge ? (
-            <span className="px-1.5 py-0.5 text-[10px] bg-[var(--color-accent)] text-white">{item.badge}</span>
+            <span className="px-1.5 py-0.5 text-[10px] bg-ih-accent text-white">{item.badge}</span>
           ) : null}
           {!item.isVisible ? (
-            <span className="text-[10px] text-[var(--color-muted)] font-mono uppercase">hidden</span>
+            <span className="text-[10px] text-ih-muted font-mono uppercase">hidden</span>
           ) : null}
         </div>
-        <div className="font-mono text-[11px] text-[var(--color-muted)]">
+        <div className="font-mono text-[11px] text-ih-muted">
           {MENU_LINK_TYPE_LABELS[item.linkType]}
         </div>
-        <div className="font-mono text-[11px] text-[var(--color-muted)] truncate">{targetSummary}</div>
+        <div className="font-mono text-[11px] text-ih-muted truncate">{targetSummary}</div>
         <div className="flex justify-end gap-1">
           <button
             type="button"
             onClick={() => onAddChild(item.id)}
-            className="h-7 px-2 text-[11px] border border-[var(--color-border)] hover:bg-[var(--color-surface)]"
+            className="h-7 px-2 text-[11px] border border-ih-border hover:bg-ih-bg"
           >
             + Child
           </button>
@@ -358,7 +358,7 @@ function ItemNode({
             <button
               type="button"
               onClick={() => onEditPromo(item.id)}
-              className="h-7 px-2 text-[11px] border border-[var(--color-border)] hover:bg-[var(--color-surface)]"
+              className="h-7 px-2 text-[11px] border border-ih-border hover:bg-ih-bg"
             >
               Promo
             </button>
@@ -366,14 +366,14 @@ function ItemNode({
           <button
             type="button"
             onClick={() => onEdit(item)}
-            className="h-7 px-2 text-[11px] border border-[var(--color-border)] hover:bg-[var(--color-surface)]"
+            className="h-7 px-2 text-[11px] border border-ih-border hover:bg-ih-bg"
           >
             Edit
           </button>
           <button
             type="button"
             onClick={() => onDelete(item.id)}
-            className="h-7 px-2 text-[11px] border border-[var(--color-border)] text-[var(--color-danger)] hover:bg-[var(--color-surface)]"
+            className="h-7 px-2 text-[11px] border border-ih-border text-ih-danger hover:bg-ih-bg"
           >
             Delete
           </button>

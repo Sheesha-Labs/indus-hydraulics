@@ -48,7 +48,7 @@ export default function CategoriesClient({ categories, templates }: Props) {
           <button
             type="button"
             onClick={() => setShowCreate(true)}
-            className="h-9 px-4 bg-[var(--color-accent)] text-white text-[13px] font-medium hover:opacity-90"
+            className="h-9 px-4 bg-ih-accent text-white text-[13px] font-medium hover:opacity-90"
           >
             + New category
           </button>
@@ -65,12 +65,12 @@ export default function CategoriesClient({ categories, templates }: Props) {
       )}
 
       {categories.length === 0 ? (
-        <div className="py-16 border border-dashed border-[var(--color-border)] text-center">
-          <p className="text-[var(--color-muted)]">No categories yet — create the first one above.</p>
+        <div className="py-16 border border-dashed border-ih-border text-center">
+          <p className="text-ih-muted">No categories yet — create the first one above.</p>
         </div>
       ) : (
-        <div className="bg-white border border-[var(--color-border)]">
-          <div className="grid grid-cols-[1fr_140px_60px_70px_140px_90px_100px] px-4 py-2.5 bg-[var(--color-surface)] border-b border-[var(--color-border)] font-mono text-[10px] tracking-[0.1em] uppercase text-[var(--color-muted)]">
+        <div className="bg-white border border-ih-border">
+          <div className="grid grid-cols-[1fr_140px_60px_70px_140px_90px_100px] px-4 py-2.5 bg-ih-bg border-b border-ih-border font-mono text-[10px] tracking-[0.1em] uppercase text-ih-muted">
             <div>Name</div>
             <div>Slug</div>
             <div className="text-center">Pos</div>
@@ -138,7 +138,7 @@ function CategoryRows({
   return (
     <>
       {isEditing ? (
-        <div className="border-t border-[var(--color-border)] bg-[var(--color-deep)] p-4">
+        <div className="border-t border-ih-border bg-ih-surface-2 p-4">
           <CategoryForm
            
             parents={parents}
@@ -149,27 +149,27 @@ function CategoryRows({
         </div>
       ) : (
         <div
-          className={`grid grid-cols-[1fr_140px_60px_70px_140px_90px_100px] px-4 py-3 items-center text-[13px] border-t border-[var(--color-border)]`}
+          className={`grid grid-cols-[1fr_140px_60px_70px_140px_90px_100px] px-4 py-3 items-center text-[13px] border-t border-ih-border`}
           style={{ paddingLeft: `${16 + depth * 24}px` }}
         >
-          <div className="text-[var(--color-primary)] font-medium">
-            {depth > 0 && <span className="text-[var(--color-caption)] mr-2">└</span>}
+          <div className="text-ih-ink font-medium">
+            {depth > 0 && <span className="text-ih-muted-2 mr-2">└</span>}
             {cat.name}
           </div>
-          <div className="font-mono text-[11px] text-[var(--color-muted)]">{cat.slug}</div>
-          <div className="text-center font-mono text-[12px] text-[var(--color-muted)]">{cat.position}</div>
-          <div className="text-center font-mono text-[12px] text-[var(--color-primary)]">
+          <div className="font-mono text-[11px] text-ih-muted">{cat.slug}</div>
+          <div className="text-center font-mono text-[12px] text-ih-muted">{cat.position}</div>
+          <div className="text-center font-mono text-[12px] text-ih-ink">
             {cat.productCount}
           </div>
-          <div className="text-[12px] text-[var(--color-body)] truncate">
-            {cat.defaultSpecTemplateName ?? <span className="text-[var(--color-caption)]">—</span>}
+          <div className="text-[12px] text-ih-ink-2 truncate">
+            {cat.defaultSpecTemplateName ?? <span className="text-ih-muted-2">—</span>}
           </div>
           <div className="flex justify-center">
             <span
               className={`px-2 py-0.5 font-mono text-[10px] font-semibold ${
                 cat.isPublished
                   ? 'text-[oklch(0.4_0.14_145)] bg-[oklch(0.94_0.06_145)]'
-                  : 'text-[var(--color-muted)] bg-[var(--color-deep)]'
+                  : 'text-ih-muted bg-ih-surface-2'
               }`}
             >
               {cat.isPublished ? 'Published' : 'Draft'}
@@ -179,13 +179,13 @@ function CategoryRows({
             <button
               type="button"
               onClick={() => setEditingId(cat.id)}
-              className="font-mono text-[10px] text-[var(--color-muted)] hover:text-[var(--color-primary)]"
+              className="font-mono text-[10px] text-ih-muted hover:text-ih-ink"
             >
               Edit
             </button>
             <Link
               href={`/admin/categories/${cat.id}/edit`}
-              className="font-mono text-[10px] text-[var(--color-muted)] hover:text-[var(--color-primary)]"
+              className="font-mono text-[10px] text-ih-muted hover:text-ih-ink"
               title="Open dedicated SEO editor"
             >
               SEO
@@ -246,7 +246,7 @@ function CategoryForm({
   return (
     <form
       action={onSubmit}
-      className="bg-white border border-[var(--color-border)] p-5 flex flex-col gap-4"
+      className="bg-white border border-ih-border p-5 flex flex-col gap-4"
     >
       {existing && <input type="hidden" name="id" value={existing.id} />}
 
@@ -258,7 +258,7 @@ function CategoryForm({
             name="name"
             defaultValue={existing?.name ?? ''}
             placeholder="Hydraulic Pumps"
-            className="h-9 px-3 border border-[var(--color-border)] bg-white text-[13px] w-full"
+            className="h-9 px-3 border border-ih-border bg-white text-[13px] w-full"
           />
         </Field>
 
@@ -267,7 +267,7 @@ function CategoryForm({
             name="slug"
             defaultValue={existing?.slug ?? ''}
             placeholder="hydraulic-pumps"
-            className="h-9 px-3 border border-[var(--color-border)] bg-white font-mono text-[12px] w-full"
+            className="h-9 px-3 border border-ih-border bg-white font-mono text-[12px] w-full"
           />
         </Field>
 
@@ -276,7 +276,7 @@ function CategoryForm({
             name="position"
             type="number"
             defaultValue={existing?.position ?? 0}
-            className="h-9 px-3 border border-[var(--color-border)] bg-white font-mono text-[12px] w-full"
+            className="h-9 px-3 border border-ih-border bg-white font-mono text-[12px] w-full"
           />
         </Field>
 
@@ -284,7 +284,7 @@ function CategoryForm({
           <select
             name="parentId"
             defaultValue={existing?.parentId ?? ''}
-            className="h-9 px-2 border border-[var(--color-border)] bg-white text-[12px] w-full"
+            className="h-9 px-2 border border-ih-border bg-white text-[12px] w-full"
           >
             <option value="">— None —</option>
             {parents
@@ -304,7 +304,7 @@ function CategoryForm({
           <select
             name="defaultSpecTemplateId"
             defaultValue={existing?.defaultSpecTemplateId ?? ''}
-            className="h-9 px-2 border border-[var(--color-border)] bg-white text-[12px] w-full"
+            className="h-9 px-2 border border-ih-border bg-white text-[12px] w-full"
           >
             <option value="">— None —</option>
             {templates.map((t) => (
@@ -315,7 +315,7 @@ function CategoryForm({
           </select>
         </Field>
 
-        <label className="flex items-center gap-2 h-9 mt-[26px] text-[12px] text-[var(--color-body)] whitespace-nowrap">
+        <label className="flex items-center gap-2 h-9 mt-[26px] text-[12px] text-ih-ink-2 whitespace-nowrap">
           <input
             type="checkbox"
             name="isPublished"
@@ -327,7 +327,7 @@ function CategoryForm({
         <button
           type="submit"
           disabled={pending}
-          className="h-9 mt-[26px] px-4 bg-[var(--color-primary)] text-white text-[12px] font-medium hover:opacity-90 disabled:opacity-50 whitespace-nowrap"
+          className="h-9 mt-[26px] px-4 bg-ih-navy text-white text-[12px] font-medium hover:opacity-90 disabled:opacity-50 whitespace-nowrap"
         >
           {pending ? 'Saving…' : existing ? 'Save' : 'Create'}
         </button>
@@ -335,7 +335,7 @@ function CategoryForm({
         <button
           type="button"
           onClick={onDone}
-          className="h-9 mt-[26px] px-3 text-[12px] text-[var(--color-muted)] hover:text-[var(--color-primary)] whitespace-nowrap"
+          className="h-9 mt-[26px] px-3 text-[12px] text-ih-muted hover:text-ih-ink whitespace-nowrap"
         >
           Cancel
         </button>
@@ -383,7 +383,7 @@ function DeleteCategoryButton({
             if (!result.success) setError(result.message)
           })
         }}
-        className="font-mono text-[10px] text-[var(--color-muted)] hover:text-[oklch(0.5_0.18_25)] disabled:opacity-30 disabled:hover:text-[var(--color-muted)] disabled:cursor-not-allowed"
+        className="font-mono text-[10px] text-ih-muted hover:text-[oklch(0.5_0.18_25)] disabled:opacity-30 disabled:hover:text-ih-muted disabled:cursor-not-allowed"
       >
         {pending ? '…' : 'Delete'}
       </button>
@@ -403,9 +403,9 @@ function Field({
 }) {
   return (
     <label className="flex flex-col gap-1.5">
-      <span className="text-[11px] font-medium text-[var(--color-body)]">{label}</span>
+      <span className="text-[11px] font-medium text-ih-ink-2">{label}</span>
       {children}
-      {hint && <span className="text-[10px] text-[var(--color-caption)]">{hint}</span>}
+      {hint && <span className="text-[10px] text-ih-muted-2">{hint}</span>}
     </label>
   )
 }

@@ -31,7 +31,7 @@ const STATUS_COLORS: Record<string, string> = {
   prospect: 'text-[oklch(0.5_0.08_60)] bg-[oklch(0.96_0.04_60)]',
   active: 'text-[oklch(0.4_0.14_145)] bg-[oklch(0.94_0.06_145)]',
   at_risk: 'text-[oklch(0.5_0.12_25)] bg-[oklch(0.96_0.04_25)]',
-  archived: 'text-[var(--color-muted)] bg-[var(--color-deep)]',
+  archived: 'text-ih-muted bg-ih-surface-2',
 }
 
 const RFQ_STATUS_LABELS: Record<string, string> = {
@@ -127,11 +127,11 @@ export default async function AdminCustomerDetailPage({ params, searchParams }: 
       {/* Header */}
       <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-6">
         <div>
-          <Link href={`/admin/customers`} className="font-mono text-[12px] text-[var(--color-muted)] hover:text-[var(--color-primary)] mb-2 inline-block">
+          <Link href={`/admin/customers`} className="font-mono text-[12px] text-ih-muted hover:text-ih-ink mb-2 inline-block">
             ← Customers
           </Link>
           <h1 className="text-[24px] font-semibold tracking-tight">{account.legalName}</h1>
-          <div className="font-mono text-[12px] text-[var(--color-muted)] mt-0.5">{account.code}</div>
+          <div className="font-mono text-[12px] text-ih-muted mt-0.5">{account.code}</div>
         </div>
         <div className="flex items-center gap-2">
           <span className={`px-2.5 py-1 font-mono text-[11px] font-semibold capitalize ${TIER_COLORS[account.tier] ?? ''}`}>
@@ -144,15 +144,15 @@ export default async function AdminCustomerDetailPage({ params, searchParams }: 
       </div>
 
       {/* Tabs */}
-      <div className="flex border-b border-[var(--color-border)] mb-6">
+      <div className="flex border-b border-ih-border mb-6">
         {TABS.map((t) => (
           <Link
             key={t.key}
             href={tabUrl(t.key)}
             className={`px-4 py-2.5 font-mono text-[12px] border-b-2 transition-colors -mb-px ${
               tab === t.key
-                ? 'border-[var(--color-accent)] text-[var(--color-accent)]'
-                : 'border-transparent text-[var(--color-muted)] hover:text-[var(--color-primary)]'
+                ? 'border-ih-accent text-ih-accent'
+                : 'border-transparent text-ih-muted hover:text-ih-ink'
             }`}
           >
             {t.label}
@@ -173,24 +173,24 @@ export default async function AdminCustomerDetailPage({ params, searchParams }: 
             <input type="hidden" name="id" value={account.id} />
             <div className="grid grid-cols-2 gap-4 mb-4">
               <div>
-                <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">Tier</label>
-                <select name="tier" defaultValue={account.tier} className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] focus:outline-none focus:border-[var(--color-accent)]">
+                <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">Tier</label>
+                <select name="tier" defaultValue={account.tier} className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent">
                   {['bronze', 'silver', 'gold', 'platinum'].map((t) => (
                     <option key={t} value={t} className="capitalize">{t}</option>
                   ))}
                 </select>
               </div>
               <div>
-                <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">Status</label>
-                <select name="status" defaultValue={account.status} className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] focus:outline-none focus:border-[var(--color-accent)]">
+                <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">Status</label>
+                <select name="status" defaultValue={account.status} className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent">
                   {['prospect', 'active', 'at_risk', 'archived'].map((s) => (
                     <option key={s} value={s}>{s.replace('_', ' ')}</option>
                   ))}
                 </select>
               </div>
               <div>
-                <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">Assigned Rep</label>
-                <select name="assignedRepId" defaultValue={account.assignedRepId ?? ''} className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] focus:outline-none focus:border-[var(--color-accent)]">
+                <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">Assigned Rep</label>
+                <select name="assignedRepId" defaultValue={account.assignedRepId ?? ''} className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent">
                   <option value="">— Unassigned —</option>
                   {reps.map((r) => (
                     <option key={r.id} value={r.id}>{r.name}</option>
@@ -198,47 +198,47 @@ export default async function AdminCustomerDetailPage({ params, searchParams }: 
                 </select>
               </div>
               <div>
-                <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">Payment Terms (days)</label>
-                <input type="number" name="paymentTermsDays" defaultValue={account.paymentTermsDays} min={0} className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] font-mono focus:outline-none focus:border-[var(--color-accent)]" />
+                <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">Payment Terms (days)</label>
+                <input type="number" name="paymentTermsDays" defaultValue={account.paymentTermsDays} min={0} className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] font-mono focus:outline-none focus:border-ih-accent" />
               </div>
               <div>
-                <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">Credit Limit (USD)</label>
-                <input type="number" name="creditLimit" defaultValue={Number(account.creditLimit)} min={0} step={1000} className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] font-mono focus:outline-none focus:border-[var(--color-accent)]" />
+                <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">Credit Limit (USD)</label>
+                <input type="number" name="creditLimit" defaultValue={Number(account.creditLimit)} min={0} step={1000} className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] font-mono focus:outline-none focus:border-ih-accent" />
               </div>
             </div>
-            <button type="submit" className="h-10 px-6 bg-[var(--color-primary)] text-[var(--color-elevated)] font-mono text-[12px] hover:bg-[var(--color-body)] transition-colors">
+            <button type="submit" className="h-10 px-6 bg-ih-navy text-white font-mono text-[12px] hover:bg-[var(--color-ih-ink-2)] transition-colors">
               Save Changes
             </button>
           </form>
 
           {/* Stats sidebar */}
           <div className="space-y-4">
-            <div className="border border-[var(--color-border)] bg-[var(--color-elevated)] p-4">
-              <h3 className="font-mono text-[10px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-3">Account Stats</h3>
+            <div className="border border-ih-border bg-ih-surface p-4">
+              <h3 className="font-mono text-[10px] tracking-[0.1em] uppercase text-ih-muted mb-3">Account Stats</h3>
               <dl className="space-y-2 text-[13px]">
                 <div className="flex justify-between gap-2">
-                  <dt className="text-[var(--color-muted)]">Industry</dt>
-                  <dd className="font-mono text-[var(--color-primary)]">{account.industry?.name ?? '—'}</dd>
+                  <dt className="text-ih-muted">Industry</dt>
+                  <dd className="font-mono text-ih-ink">{account.industry?.name ?? '—'}</dd>
                 </div>
                 <div className="flex justify-between gap-2">
-                  <dt className="text-[var(--color-muted)]">Region</dt>
-                  <dd className="font-mono text-[var(--color-primary)]">{account.region ?? '—'}</dd>
+                  <dt className="text-ih-muted">Region</dt>
+                  <dd className="font-mono text-ih-ink">{account.region ?? '—'}</dd>
                 </div>
                 <div className="flex justify-between gap-2">
-                  <dt className="text-[var(--color-muted)]">Currency</dt>
-                  <dd className="font-mono text-[var(--color-primary)]">{account.preferredCurrency}</dd>
+                  <dt className="text-ih-muted">Currency</dt>
+                  <dd className="font-mono text-ih-ink">{account.preferredCurrency}</dd>
                 </div>
                 <div className="flex justify-between gap-2">
-                  <dt className="text-[var(--color-muted)]">Credit outstanding</dt>
-                  <dd className="font-mono text-[var(--color-primary)]">USD {Number(account.creditOutstanding).toLocaleString()}</dd>
+                  <dt className="text-ih-muted">Credit outstanding</dt>
+                  <dd className="font-mono text-ih-ink">USD {Number(account.creditOutstanding).toLocaleString()}</dd>
                 </div>
                 <div className="flex justify-between gap-2">
-                  <dt className="text-[var(--color-muted)]">Avg DSO</dt>
-                  <dd className="font-mono text-[var(--color-primary)]">{account.avgDsoDays} days</dd>
+                  <dt className="text-ih-muted">Avg DSO</dt>
+                  <dd className="font-mono text-ih-ink">{account.avgDsoDays} days</dd>
                 </div>
                 <div className="flex justify-between gap-2">
-                  <dt className="text-[var(--color-muted)]">Member since</dt>
-                  <dd className="font-mono text-[var(--color-primary)]">{new Date(account.createdAt).toLocaleDateString()}</dd>
+                  <dt className="text-ih-muted">Member since</dt>
+                  <dd className="font-mono text-ih-ink">{new Date(account.createdAt).toLocaleDateString()}</dd>
                 </div>
               </dl>
             </div>
@@ -250,12 +250,12 @@ export default async function AdminCustomerDetailPage({ params, searchParams }: 
       {tab === 'rfqs' && (
         <div>
           {account.rfqs.length === 0 ? (
-            <div className="py-12 border border-dashed border-[var(--color-border)] text-center">
-              <p className="text-[var(--color-muted)]">No RFQs yet.</p>
+            <div className="py-12 border border-dashed border-ih-border text-center">
+              <p className="text-ih-muted">No RFQs yet.</p>
             </div>
           ) : (
-            <div className="border border-[var(--color-border)]">
-              <div className="grid grid-cols-[1fr_80px_130px_100px] px-4 py-2.5 bg-[var(--color-surface)] border-b border-[var(--color-border)] font-mono text-[10px] tracking-[0.1em] uppercase text-[var(--color-muted)]">
+            <div className="border border-ih-border">
+              <div className="grid grid-cols-[1fr_80px_130px_100px] px-4 py-2.5 bg-ih-bg border-b border-ih-border font-mono text-[10px] tracking-[0.1em] uppercase text-ih-muted">
                 <div>Reference</div>
                 <div className="text-center">Lines</div>
                 <div className="text-center">Status</div>
@@ -265,19 +265,19 @@ export default async function AdminCustomerDetailPage({ params, searchParams }: 
                 <Link
                   key={rfq.id}
                   href={`/admin/rfqs/${rfq.code}`}
-                  className={`grid grid-cols-[1fr_80px_130px_100px] px-4 py-3 items-center bg-[var(--color-elevated)] hover:bg-[var(--color-deep)] transition-colors ${i > 0 ? 'border-t border-[var(--color-border)]' : ''}`}
+                  className={`grid grid-cols-[1fr_80px_130px_100px] px-4 py-3 items-center bg-ih-surface hover:bg-ih-surface-2 transition-colors ${i > 0 ? 'border-t border-ih-border' : ''}`}
                 >
                   <div>
                     <div className="font-mono text-[13px] font-semibold">{rfq.code}</div>
-                    {rfq.subject && <div className="text-[12px] text-[var(--color-muted)] truncate max-w-[280px]">{rfq.subject}</div>}
+                    {rfq.subject && <div className="text-[12px] text-ih-muted truncate max-w-[280px]">{rfq.subject}</div>}
                   </div>
                   <div className="text-center font-mono text-[13px]">{rfq.lines.length}</div>
                   <div className="flex justify-center">
-                    <span className="px-2 py-0.5 font-mono text-[10px] bg-[var(--color-surface)] text-[var(--color-muted)]">
+                    <span className="px-2 py-0.5 font-mono text-[10px] bg-ih-bg text-ih-muted">
                       {RFQ_STATUS_LABELS[rfq.status] ?? rfq.status}
                     </span>
                   </div>
-                  <div className="text-right font-mono text-[12px] text-[var(--color-muted)]">
+                  <div className="text-right font-mono text-[12px] text-ih-muted">
                     {new Date(rfq.createdAt).toLocaleDateString()}
                   </div>
                 </Link>
@@ -290,8 +290,8 @@ export default async function AdminCustomerDetailPage({ params, searchParams }: 
       {/* ── Contacts tab ── */}
       {tab === 'contacts' && (
         <div>
-          <div className="border border-[var(--color-border)] mb-4">
-            <div className="grid grid-cols-[1fr_100px_100px_80px_80px] px-4 py-2.5 bg-[var(--color-surface)] border-b border-[var(--color-border)] font-mono text-[10px] tracking-[0.1em] uppercase text-[var(--color-muted)]">
+          <div className="border border-ih-border mb-4">
+            <div className="grid grid-cols-[1fr_100px_100px_80px_80px] px-4 py-2.5 bg-ih-bg border-b border-ih-border font-mono text-[10px] tracking-[0.1em] uppercase text-ih-muted">
               <div>Contact</div>
               <div>Role</div>
               <div>Last Sign-in</div>
@@ -299,17 +299,17 @@ export default async function AdminCustomerDetailPage({ params, searchParams }: 
               <div />
             </div>
             {account.contacts.map((c, i) => (
-              <div key={c.id} className={`grid grid-cols-[1fr_100px_100px_80px_80px] px-4 py-3 items-center bg-[var(--color-elevated)] ${i > 0 ? 'border-t border-[var(--color-border)]' : ''}`}>
+              <div key={c.id} className={`grid grid-cols-[1fr_100px_100px_80px_80px] px-4 py-3 items-center bg-ih-surface ${i > 0 ? 'border-t border-ih-border' : ''}`}>
                 <div>
                   <div className="text-[13px] font-medium">{c.firstName} {c.lastName}</div>
-                  <div className="font-mono text-[11px] text-[var(--color-muted)]">{c.email}</div>
+                  <div className="font-mono text-[11px] text-ih-muted">{c.email}</div>
                 </div>
-                <div className="font-mono text-[11px] text-[var(--color-muted)] capitalize">{c.role}</div>
-                <div className="font-mono text-[11px] text-[var(--color-muted)]">
+                <div className="font-mono text-[11px] text-ih-muted capitalize">{c.role}</div>
+                <div className="font-mono text-[11px] text-ih-muted">
                   {c.lastSignInAt ? new Date(c.lastSignInAt).toLocaleDateString() : 'Never'}
                 </div>
                 <div className="flex justify-center">
-                  <span className={`px-2 py-0.5 font-mono text-[10px] ${c.isActive ? 'text-[oklch(0.4_0.14_145)] bg-[oklch(0.94_0.06_145)]' : 'text-[var(--color-muted)] bg-[var(--color-deep)]'}`}>
+                  <span className={`px-2 py-0.5 font-mono text-[10px] ${c.isActive ? 'text-[oklch(0.4_0.14_145)] bg-[oklch(0.94_0.06_145)]' : 'text-ih-muted bg-ih-surface-2'}`}>
                     {c.isActive ? 'Active' : 'Inactive'}
                   </span>
                 </div>
@@ -319,7 +319,7 @@ export default async function AdminCustomerDetailPage({ params, searchParams }: 
                       'use server'
                       await deactivateContact(c.id, account.id)
                     }}>
-                      <button type="submit" className="font-mono text-[11px] text-[var(--color-muted)] hover:text-[var(--color-danger)] transition-colors">
+                      <button type="submit" className="font-mono text-[11px] text-ih-muted hover:text-ih-danger transition-colors">
                         Deactivate
                       </button>
                     </form>
@@ -328,7 +328,7 @@ export default async function AdminCustomerDetailPage({ params, searchParams }: 
                       'use server'
                       await reactivateContact(c.id, account.id)
                     }}>
-                      <button type="submit" className="font-mono text-[11px] text-[var(--color-accent)] hover:underline">
+                      <button type="submit" className="font-mono text-[11px] text-ih-accent hover:underline">
                         Reactivate
                       </button>
                     </form>
@@ -344,17 +344,17 @@ export default async function AdminCustomerDetailPage({ params, searchParams }: 
       {tab === 'addresses' && (
         <div className="space-y-3">
           {account.addresses.length === 0 ? (
-            <div className="py-12 border border-dashed border-[var(--color-border)] text-center">
-              <p className="text-[var(--color-muted)]">No addresses on file.</p>
+            <div className="py-12 border border-dashed border-ih-border text-center">
+              <p className="text-ih-muted">No addresses on file.</p>
             </div>
           ) : (
             account.addresses.map((addr) => (
-              <div key={addr.id} className="border border-[var(--color-border)] bg-[var(--color-elevated)] p-4">
+              <div key={addr.id} className="border border-ih-border bg-ih-surface p-4">
                 <div className="flex items-start justify-between gap-4">
                   <div>
                     <div className="flex items-center gap-2 mb-1">
                       <span className="text-[13px] font-semibold">{addr.label}</span>
-                      <span className="font-mono text-[10px] px-1.5 py-0.5 bg-[var(--color-surface)] text-[var(--color-muted)] capitalize">
+                      <span className="font-mono text-[10px] px-1.5 py-0.5 bg-ih-bg text-ih-muted capitalize">
                         {addr.kind.replace('_', '-')}
                       </span>
                       {addr.isDefaultShip && (
@@ -368,11 +368,11 @@ export default async function AdminCustomerDetailPage({ params, searchParams }: 
                         </span>
                       )}
                     </div>
-                    {addr.attention && <div className="text-[12px] text-[var(--color-muted)] mb-0.5">Attn: {addr.attention}</div>}
+                    {addr.attention && <div className="text-[12px] text-ih-muted mb-0.5">Attn: {addr.attention}</div>}
                     {(addr.lines as string[]).map((l, i) => <div key={i} className="text-[13px]">{l}</div>)}
                     <div className="text-[13px]">{addr.city}{addr.region ? `, ${addr.region}` : ''} {addr.postalCode}</div>
                     <div className="text-[13px]">{addr.countryCode}</div>
-                    {addr.phone && <div className="font-mono text-[11px] text-[var(--color-muted)] mt-1">{addr.phone}</div>}
+                    {addr.phone && <div className="font-mono text-[11px] text-ih-muted mt-1">{addr.phone}</div>}
                   </div>
                   <div className="text-right shrink-0">
                     {account.requiresAddressApproval && !addr.approvedAt ? (
@@ -384,13 +384,13 @@ export default async function AdminCustomerDetailPage({ params, searchParams }: 
                           'use server'
                           await approveAddress(addr.id, account.id)
                         }}>
-                          <button type="submit" className="font-mono text-[11px] text-[var(--color-accent)] hover:underline">
+                          <button type="submit" className="font-mono text-[11px] text-ih-accent hover:underline">
                             Approve →
                           </button>
                         </form>
                       </div>
                     ) : addr.approvedAt ? (
-                      <div className="font-mono text-[11px] text-[var(--color-muted)]">
+                      <div className="font-mono text-[11px] text-ih-muted">
                         Approved {new Date(addr.approvedAt).toLocaleDateString()}
                       </div>
                     ) : null}
@@ -406,12 +406,12 @@ export default async function AdminCustomerDetailPage({ params, searchParams }: 
       {tab === 'emails' && (
         <div>
           {sentEmails.length === 0 ? (
-            <p className="text-[var(--color-muted)] text-[13px]">
+            <p className="text-ih-muted text-[13px]">
               No emails sent for this account yet.
             </p>
           ) : (
-            <div className="border border-[var(--color-border)] bg-[var(--color-elevated)]">
-              <div className="grid grid-cols-[140px_140px_1fr_120px_100px] gap-3 px-4 py-2.5 border-b border-[var(--color-border)] font-mono text-[10px] tracking-[0.1em] uppercase text-[var(--color-muted)]">
+            <div className="border border-ih-border bg-ih-surface">
+              <div className="grid grid-cols-[140px_140px_1fr_120px_100px] gap-3 px-4 py-2.5 border-b border-ih-border font-mono text-[10px] tracking-[0.1em] uppercase text-ih-muted">
                 <span>Sent</span>
                 <span>Kind</span>
                 <span>Subject &amp; recipient</span>
@@ -430,13 +430,13 @@ export default async function AdminCustomerDetailPage({ params, searchParams }: 
                       ? 'text-[oklch(0.5_0.08_240)] bg-[oklch(0.94_0.04_240)]'
                       : e.status === 'failed'
                         ? 'text-[oklch(0.5_0.18_25)] bg-[oklch(0.96_0.04_25)]'
-                        : 'text-[var(--color-muted)] bg-[var(--color-deep)]'
+                        : 'text-ih-muted bg-ih-surface-2'
                 return (
                   <div
                     key={e.id}
-                    className="grid grid-cols-[140px_140px_1fr_120px_100px] gap-3 px-4 py-3 border-b border-[var(--color-border-2)] last:border-0 items-start text-[12px]"
+                    className="grid grid-cols-[140px_140px_1fr_120px_100px] gap-3 px-4 py-3 border-b border-ih-border last:border-0 items-start text-[12px]"
                   >
-                    <span className="font-mono text-[var(--color-muted)]">
+                    <span className="font-mono text-ih-muted">
                       {new Date(e.attemptedAt).toLocaleString('en-GB', {
                         day: '2-digit',
                         month: 'short',
@@ -445,15 +445,15 @@ export default async function AdminCustomerDetailPage({ params, searchParams }: 
                         minute: '2-digit',
                       })}
                     </span>
-                    <span className="font-mono text-[11px] text-[var(--color-body)]">
+                    <span className="font-mono text-[11px] text-ih-ink-2">
                       {e.kind.replace(/_/g, ' ')}
                     </span>
                     <div>
-                      <div className="text-[var(--color-primary)] truncate" title={e.subject}>
+                      <div className="text-ih-ink truncate" title={e.subject}>
                         {e.subject}
                       </div>
                       {recipients.length > 0 && (
-                        <div className="font-mono text-[11px] text-[var(--color-muted)] truncate">
+                        <div className="font-mono text-[11px] text-ih-muted truncate">
                           {recipients.join(', ')}
                         </div>
                       )}
@@ -467,12 +467,12 @@ export default async function AdminCustomerDetailPage({ params, searchParams }: 
                       {linkedRfqCode ? (
                         <Link
                           href={`/admin/rfqs/${linkedRfqCode}`}
-                          className="text-[var(--color-accent)] hover:underline"
+                          className="text-ih-accent hover:underline"
                         >
                           {linkedRfqCode}
                         </Link>
                       ) : (
-                        <span className="text-[var(--color-caption)]">—</span>
+                        <span className="text-ih-muted-2">—</span>
                       )}
                     </span>
                     <span
@@ -484,7 +484,7 @@ export default async function AdminCustomerDetailPage({ params, searchParams }: 
                 )
               })}
               {totalEmailPages > 1 && (
-                <div className="px-4 py-2.5 border-t border-[var(--color-border)] flex items-center justify-between gap-3 text-[11px] font-mono text-[var(--color-muted)]">
+                <div className="px-4 py-2.5 border-t border-ih-border flex items-center justify-between gap-3 text-[11px] font-mono text-ih-muted">
                   <span>
                     Showing {(safeEmailsPage - 1) * EMAILS_PAGE_SIZE + 1}–
                     {Math.min(safeEmailsPage * EMAILS_PAGE_SIZE, sentEmailsTotal)} of {sentEmailsTotal}
@@ -493,12 +493,12 @@ export default async function AdminCustomerDetailPage({ params, searchParams }: 
                     {safeEmailsPage > 1 ? (
                       <Link
                         href={`/admin/customers/${id}?tab=emails&emailsPage=${safeEmailsPage - 1}`}
-                        className="px-2 py-1 border border-[var(--color-border)] text-[var(--color-body)] hover:bg-[var(--color-deep)] transition-colors"
+                        className="px-2 py-1 border border-ih-border text-ih-ink-2 hover:bg-ih-surface-2 transition-colors"
                       >
                         ← Prev
                       </Link>
                     ) : (
-                      <span className="px-2 py-1 border border-[var(--color-border)] text-[var(--color-caption)]">
+                      <span className="px-2 py-1 border border-ih-border text-ih-muted-2">
                         ← Prev
                       </span>
                     )}
@@ -508,12 +508,12 @@ export default async function AdminCustomerDetailPage({ params, searchParams }: 
                     {safeEmailsPage < totalEmailPages ? (
                       <Link
                         href={`/admin/customers/${id}?tab=emails&emailsPage=${safeEmailsPage + 1}`}
-                        className="px-2 py-1 border border-[var(--color-border)] text-[var(--color-body)] hover:bg-[var(--color-deep)] transition-colors"
+                        className="px-2 py-1 border border-ih-border text-ih-ink-2 hover:bg-ih-surface-2 transition-colors"
                       >
                         Next →
                       </Link>
                     ) : (
-                      <span className="px-2 py-1 border border-[var(--color-border)] text-[var(--color-caption)]">
+                      <span className="px-2 py-1 border border-ih-border text-ih-muted-2">
                         Next →
                       </span>
                     )}
@@ -542,9 +542,9 @@ export default async function AdminCustomerDetailPage({ params, searchParams }: 
               name="body"
               rows={3}
               placeholder="Add a note visible to all staff…"
-              className="w-full px-3 py-2.5 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] text-[var(--color-primary)] placeholder:text-[var(--color-caption)] focus:outline-none focus:border-[var(--color-accent)] resize-none mb-2"
+              className="w-full px-3 py-2.5 border border-ih-border bg-ih-surface text-[13px] text-ih-ink placeholder:text-ih-muted-2 focus:outline-none focus:border-ih-accent resize-none mb-2"
             />
-            <button type="submit" className="h-9 px-5 bg-[var(--color-primary)] text-[var(--color-elevated)] font-mono text-[12px] hover:bg-[var(--color-body)] transition-colors">
+            <button type="submit" className="h-9 px-5 bg-ih-navy text-white font-mono text-[12px] hover:bg-[var(--color-ih-ink-2)] transition-colors">
               Add Note
             </button>
           </form>
@@ -555,24 +555,24 @@ export default async function AdminCustomerDetailPage({ params, searchParams }: 
               const payload = entry.payload as Record<string, unknown>
               return (
                 <div key={entry.id} className="flex gap-3">
-                  <div className="w-8 h-8 border border-[var(--color-border)] bg-[var(--color-surface)] grid place-items-center font-mono text-[10px] text-[var(--color-muted)] shrink-0 mt-0.5">
+                  <div className="w-8 h-8 border border-ih-border bg-ih-bg grid place-items-center font-mono text-[10px] text-ih-muted shrink-0 mt-0.5">
                     {entry.actorType === 'staff' ? 'ST' : 'CT'}
                   </div>
-                  <div className="flex-1 pb-3 border-b border-[var(--color-border-2)]">
+                  <div className="flex-1 pb-3 border-b border-ih-border">
                     <div className="flex items-center gap-2 mb-0.5">
-                      <span className="font-mono text-[11px] font-semibold text-[var(--color-primary)] capitalize">
+                      <span className="font-mono text-[11px] font-semibold text-ih-ink capitalize">
                         {entry.verb.replace(/_/g, ' ')}
                       </span>
-                      <span className="font-mono text-[10px] text-[var(--color-muted)]">
+                      <span className="font-mono text-[10px] text-ih-muted">
                         {new Date(entry.createdAt).toLocaleString()}
                       </span>
                     </div>
                     {typeof payload.body === 'string' && (
-                      <p className="text-[13px] text-[var(--color-body)] leading-[1.5]">{payload.body}</p>
+                      <p className="text-[13px] text-ih-ink-2 leading-[1.5]">{payload.body}</p>
                     )}
                     {typeof payload.rfqId === 'string' && typeof payload.code === 'string' && (
-                      <p className="font-mono text-[12px] text-[var(--color-muted)]">
-                        RFQ: <Link href={`/admin/rfqs/${payload.code}`} className="text-[var(--color-accent)] hover:underline">{payload.code}</Link>
+                      <p className="font-mono text-[12px] text-ih-muted">
+                        RFQ: <Link href={`/admin/rfqs/${payload.code}`} className="text-ih-accent hover:underline">{payload.code}</Link>
                       </p>
                     )}
                   </div>
@@ -580,7 +580,7 @@ export default async function AdminCustomerDetailPage({ params, searchParams }: 
               )
             })}
             {account.activity.length === 0 && (
-              <p className="text-[var(--color-muted)] text-[13px]">No activity yet.</p>
+              <p className="text-ih-muted text-[13px]">No activity yet.</p>
             )}
           </div>
         </div>

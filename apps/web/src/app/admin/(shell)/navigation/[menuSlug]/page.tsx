@@ -85,7 +85,7 @@ export default async function MenuEditorPage({ params }: Props) {
 
   return (
     <div className="px-8 py-6 pb-16">
-      <div className="mb-2 text-[12px] text-[var(--color-muted)] font-mono uppercase tracking-[0.1em]">
+      <div className="mb-2 text-[12px] text-ih-muted font-mono uppercase tracking-[0.1em]">
         {MENU_LOCATION_LABELS[editorMenu.location]}
       </div>
       <NavigationEditor menu={editorMenu} items={items} />

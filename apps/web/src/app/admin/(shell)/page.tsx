@@ -66,11 +66,11 @@ export default async function AdminDashboardPage({ params }: Props) {
           <h1 className="text-[24px] font-semibold tracking-tight">
             Good {timeOfDay}, {firstName}
           </h1>
-          <p className="text-[13px] text-[var(--color-muted)] mt-1">{dateStr}</p>
+          <p className="text-[13px] text-ih-muted mt-1">{dateStr}</p>
         </div>
         <Link
           href={`/admin/products/new`}
-          className="h-9 px-4 flex items-center bg-[var(--color-accent)] text-white text-[13px] font-medium hover:opacity-90"
+          className="h-9 px-4 flex items-center bg-ih-accent text-white text-[13px] font-medium hover:opacity-90"
         >
           + Add product
         </Link>
@@ -91,7 +91,7 @@ export default async function AdminDashboardPage({ params }: Props) {
               title="Most recently updated products"
               subtitle="Last edited"
               action={
-                <Link href={`/admin/products`} className="text-[13px] text-[var(--color-accent)] hover:underline">
+                <Link href={`/admin/products`} className="text-[13px] text-ih-accent hover:underline">
                   View all →
                 </Link>
               }
@@ -99,9 +99,9 @@ export default async function AdminDashboardPage({ params }: Props) {
             <div className="overflow-auto">
               <table className="w-full text-[13px]">
                 <thead>
-                  <tr className="bg-[var(--color-surface)] border-b border-[var(--color-border)]">
+                  <tr className="bg-ih-bg border-b border-ih-border">
                     {['Product', 'SKU', 'Status', 'Updated'].map((h, i) => (
-                      <th key={h} className={`px-4 py-2.5 font-mono text-[11px] tracking-[0.08em] text-[var(--color-muted)] uppercase ${i === 3 ? 'text-right' : 'text-left'}`}>
+                      <th key={h} className={`px-4 py-2.5 font-mono text-[11px] tracking-[0.08em] text-ih-muted uppercase ${i === 3 ? 'text-right' : 'text-left'}`}>
                         {h}
                       </th>
                     ))}
@@ -110,32 +110,32 @@ export default async function AdminDashboardPage({ params }: Props) {
                 <tbody>
                   {recentProducts.length === 0 ? (
                     <tr>
-                      <td colSpan={4} className="px-4 py-8 text-center text-[var(--color-muted)]">
+                      <td colSpan={4} className="px-4 py-8 text-center text-ih-muted">
                         No products yet.{' '}
-                        <Link href={`/admin/products/new`} className="text-[var(--color-accent)] hover:underline">
+                        <Link href={`/admin/products/new`} className="text-ih-accent hover:underline">
                           Add your first product →
                         </Link>
                       </td>
                     </tr>
                   ) : (
                     recentProducts.map((product) => (
-                      <tr key={product.id} className="border-b border-[var(--color-border-2)] hover:bg-[var(--color-surface)]">
+                      <tr key={product.id} className="border-b border-ih-border hover:bg-ih-bg">
                         <td className="px-4 py-3">
                           <Link
                             href={`/admin/products/${product.id}/edit`}
-                            className="font-medium hover:text-[var(--color-accent)] transition-colors"
+                            className="font-medium hover:text-ih-accent transition-colors"
                           >
                             {product.title}
                           </Link>
                           {product.brand && (
-                            <div className="text-[11px] text-[var(--color-muted)]">{product.brand.name}</div>
+                            <div className="text-[11px] text-ih-muted">{product.brand.name}</div>
                           )}
                         </td>
-                        <td className="px-4 py-3 font-mono text-[12px] text-[var(--color-muted)]">{product.sku}</td>
+                        <td className="px-4 py-3 font-mono text-[12px] text-ih-muted">{product.sku}</td>
                         <td className="px-4 py-3">
                           <StatusPill status={product.status} />
                         </td>
-                        <td className="px-4 py-3 text-right font-mono text-[11px] text-[var(--color-muted)]">
+                        <td className="px-4 py-3 text-right font-mono text-[11px] text-ih-muted">
                           {timeAgo(product.updatedAt)}
                         </td>
                       </tr>
@@ -150,15 +150,15 @@ export default async function AdminDashboardPage({ params }: Props) {
             <CardHead title="Activity feed" />
             <div className="px-4 py-3 flex flex-col gap-3 text-[12px]">
               {recentActivity.length === 0 ? (
-                <p className="text-[var(--color-muted)] py-4 text-center">No recent activity.</p>
+                <p className="text-ih-muted py-4 text-center">No recent activity.</p>
               ) : (
                 recentActivity.map((act) => (
                   <div key={act.id}>
-                    <span className="font-semibold text-[var(--color-primary)]">{act.account.displayName}</span>
+                    <span className="font-semibold text-ih-ink">{act.account.displayName}</span>
                     {' — '}
-                    <span className="text-[var(--color-muted)]">{act.verb.replace(/_/g, ' ')}</span>
+                    <span className="text-ih-muted">{act.verb.replace(/_/g, ' ')}</span>
                     {' · '}
-                    <span className="font-mono text-[11px] text-[var(--color-caption)]">{timeAgo(act.createdAt)}</span>
+                    <span className="font-mono text-[11px] text-ih-muted-2">{timeAgo(act.createdAt)}</span>
                   </div>
                 ))
               )}
@@ -199,9 +199,9 @@ export default async function AdminDashboardPage({ params }: Props) {
             <Link
               key={link.href}
               href={link.href}
-              className="flex items-center gap-3 px-4 py-3.5 border border-[var(--color-border)] bg-white hover:bg-[var(--color-surface)] transition-colors text-[13px] font-medium"
+              className="flex items-center gap-3 px-4 py-3.5 border border-ih-border bg-white hover:bg-ih-bg transition-colors text-[13px] font-medium"
             >
-              <span className="font-mono text-[var(--color-muted)] text-base">{link.icon}</span>
+              <span className="font-mono text-ih-muted text-base">{link.icon}</span>
               {link.label}
             </Link>
           ))}
@@ -213,9 +213,9 @@ export default async function AdminDashboardPage({ params }: Props) {
 function KpiCard({ label, value, delta }: { label: string; value: string; delta: string }) {
   return (
     <div className="bg-white border border-[#e6e1d5] p-4 flex flex-col gap-1.5">
-      <p className="font-mono text-[10px] tracking-[0.1em] uppercase text-[var(--color-muted)]">{label}</p>
+      <p className="font-mono text-[10px] tracking-[0.1em] uppercase text-ih-muted">{label}</p>
       <p className="font-mono text-[26px] font-semibold tracking-tight leading-none">{value}</p>
-      <p className="font-mono text-[11px] text-[var(--color-caption)]">{delta}</p>
+      <p className="font-mono text-[11px] text-ih-muted-2">{delta}</p>
     </div>
   )
 }
@@ -229,7 +229,7 @@ function CardHead({ title, subtitle, action }: { title: string; subtitle?: strin
     <div className="flex justify-between items-center gap-3 px-4 py-3.5 border-b border-[#efebe1]">
       <div>
         <h3 className="font-semibold text-[14px]">{title}</h3>
-        {subtitle && <p className="text-[12px] text-[var(--color-muted)] mt-0.5">{subtitle}</p>}
+        {subtitle && <p className="text-[12px] text-ih-muted mt-0.5">{subtitle}</p>}
       </div>
       {action}
     </div>
@@ -252,7 +252,7 @@ function Alert({ type, children }: { type: 'warn' | 'info' | 'ok'; children: Rea
 function StatusPill({ status }: { status: string }) {
   const styles: Record<string, string> = {
     active: 'bg-[oklch(0.95_0.04_150)] text-[oklch(0.45_0.12_150)]',
-    draft: 'bg-[var(--color-deep)] text-[var(--color-muted)]',
+    draft: 'bg-ih-surface-2 text-ih-muted',
     discontinued: 'bg-[oklch(0.95_0.02_25)] text-[oklch(0.5_0.1_25)]',
   }
   return (

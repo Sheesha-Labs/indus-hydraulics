@@ -46,20 +46,20 @@ export default async function GscPage() {
         />
       </div>
 
-      <div className="border border-[var(--color-border)] bg-[var(--color-elevated)] p-6">
+      <div className="border border-ih-border bg-ih-surface p-6">
         <h2 className="text-[16px] font-semibold mb-2">
           {oauthConfigured ? 'OAuth configured — connection pending' : 'Setup required'}
         </h2>
-        <p className="text-[13px] text-[var(--color-muted)] mb-4">
+        <p className="text-[13px] text-ih-muted mb-4">
           GSC integration pulls per-URL clicks / impressions / CTR / position daily and joins
           them into the Inspector grid. The schema is in place; the OAuth flow needs a Google
           Cloud client.
         </p>
 
-        <ol className="list-decimal pl-5 text-[13px] text-[var(--color-body)] space-y-2 mb-5">
+        <ol className="list-decimal pl-5 text-[13px] text-ih-ink-2 space-y-2 mb-5">
           <li>
             Create a Google Cloud project + OAuth client (Web application). Authorized redirect
-            URI: <code className="font-mono text-[11px] bg-[var(--color-deep)] px-1.5 py-0.5">
+            URI: <code className="font-mono text-[11px] bg-ih-surface-2 px-1.5 py-0.5">
               {process.env.NEXT_PUBLIC_BASE_URL ?? 'https://indushydraulics.com'}/admin/api/gsc/oauth/callback
             </code>.
           </li>
@@ -68,7 +68,7 @@ export default async function GscPage() {
           </li>
           <li>
             Add to admin .env:
-            <pre className="font-mono text-[11px] bg-[var(--color-deep)] p-2 mt-1 leading-relaxed">{`GOOGLE_OAUTH_CLIENT_ID=...
+            <pre className="font-mono text-[11px] bg-ih-surface-2 p-2 mt-1 leading-relaxed">{`GOOGLE_OAUTH_CLIENT_ID=...
 GOOGLE_OAUTH_CLIENT_SECRET=...
 GSC_PROPERTY_URL=https://indushydraulics.com/`}</pre>
           </li>
@@ -82,7 +82,7 @@ GSC_PROPERTY_URL=https://indushydraulics.com/`}</pre>
           className={`px-4 py-3 border ${
             oauthConfigured
               ? 'border-[oklch(0.75_0.12_70)]/40 bg-[oklch(0.96_0.05_70)]/40 text-[oklch(0.5_0.14_70)]'
-              : 'border-[var(--color-border)] bg-[var(--color-deep)] text-[var(--color-muted)]'
+              : 'border-ih-border bg-ih-surface-2 text-ih-muted'
           } text-[13px]`}
         >
           {oauthConfigured ? (
@@ -105,8 +105,8 @@ GSC_PROPERTY_URL=https://indushydraulics.com/`}</pre>
 
 function Tile({ label, value }: { label: string; value: string }) {
   return (
-    <div className="border border-[var(--color-border)] bg-[var(--color-elevated)] p-4">
-      <div className="font-mono text-[10px] uppercase tracking-[0.1em] text-[var(--color-muted)]">
+    <div className="border border-ih-border bg-ih-surface p-4">
+      <div className="font-mono text-[10px] uppercase tracking-[0.1em] text-ih-muted">
         {label}
       </div>
       <div className="text-[28px] font-semibold mt-1">{value}</div>

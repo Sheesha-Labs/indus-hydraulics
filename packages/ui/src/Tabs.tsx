@@ -15,7 +15,7 @@ const TabsList = React.forwardRef<
   <TabsPrimitive.List
     ref={ref}
     className={cn(
-      'flex border-b border-[var(--color-border)] gap-0',
+      'flex border-b border-ih-border gap-0',
       className
     )}
     {...props}
@@ -31,10 +31,10 @@ const TabsTrigger = React.forwardRef<
     ref={ref}
     className={cn(
       'inline-flex items-center justify-center px-4 py-2.5 text-sm font-medium',
-      'text-[var(--color-muted)] border-b-2 border-transparent -mb-px',
-      'hover:text-[var(--color-body)] transition-colors',
-      'data-[state=active]:text-[var(--color-primary)] data-[state=active]:border-[var(--color-primary)]',
-      'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-accent)]',
+      'text-ih-muted border-b-2 border-transparent -mb-px',
+      'hover:text-ih-ink-2 transition-colors',
+      'data-[state=active]:text-ih-ink data-[state=active]:border-ih-ink',
+      'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ih-accent',
       'disabled:pointer-events-none disabled:opacity-50',
       className
     )}
@@ -64,7 +64,7 @@ const SegmentedTabsList = React.forwardRef<
   <TabsPrimitive.List
     ref={ref}
     className={cn(
-      'inline-flex items-center bg-[var(--color-deep)] border border-[var(--color-border)] p-0.5 gap-0.5',
+      'inline-flex items-center bg-ih-surface-2 border border-ih-border p-0.5 gap-0.5',
       className
     )}
     {...props}
@@ -80,9 +80,9 @@ const SegmentedTabsTrigger = React.forwardRef<
     ref={ref}
     className={cn(
       'inline-flex items-center justify-center px-3 py-1.5 text-xs font-medium',
-      'text-[var(--color-muted)] transition-colors',
-      'data-[state=active]:bg-[var(--color-elevated)] data-[state=active]:text-[var(--color-primary)] data-[state=active]:border data-[state=active]:border-[var(--color-border)]',
-      'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-accent)]',
+      'text-ih-muted transition-colors',
+      'data-[state=active]:bg-ih-surface data-[state=active]:text-ih-ink data-[state=active]:border data-[state=active]:border-ih-border',
+      'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ih-accent',
       'disabled:pointer-events-none disabled:opacity-50',
       className
     )}

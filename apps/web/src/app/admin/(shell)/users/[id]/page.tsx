@@ -67,10 +67,10 @@ export default async function EditUserPage({ params }: Props) {
 
   return (
     <div className="p-8">
-      <nav className="flex items-center gap-2 font-mono text-[12px] text-[var(--color-muted)] mb-6">
-        <Link href="/admin/users" className="hover:text-[var(--color-primary)]">Staff Users</Link>
+      <nav className="flex items-center gap-2 font-mono text-[12px] text-ih-muted mb-6">
+        <Link href="/admin/users" className="hover:text-ih-ink">Staff Users</Link>
         <span className="opacity-40">/</span>
-        <span className="text-[var(--color-primary)]">{user.name}</span>
+        <span className="text-ih-ink">{user.name}</span>
       </nav>
 
       <div className="max-w-[560px]">
@@ -78,7 +78,7 @@ export default async function EditUserPage({ params }: Props) {
 
         <form action={saveUser} className="space-y-5">
           <div>
-            <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+            <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
               Full Name
             </label>
             <input
@@ -86,12 +86,12 @@ export default async function EditUserPage({ params }: Props) {
               type="text"
               required
               defaultValue={user.name}
-              className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] focus:outline-none focus:border-[var(--color-accent)]"
+              className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent"
             />
           </div>
 
           <div>
-            <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+            <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
               Email Address
             </label>
             <input
@@ -99,30 +99,30 @@ export default async function EditUserPage({ params }: Props) {
               type="email"
               required
               defaultValue={user.email}
-              className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] focus:outline-none focus:border-[var(--color-accent)]"
+              className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent"
             />
           </div>
 
           <div>
-            <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
-              New Password <span className="normal-case text-[var(--color-caption)]">(leave blank to keep current)</span>
+            <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+              New Password <span className="normal-case text-ih-muted-2">(leave blank to keep current)</span>
             </label>
             <input
               name="password"
               type="password"
               autoComplete="new-password"
-              className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] focus:outline-none focus:border-[var(--color-accent)]"
+              className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent"
             />
           </div>
 
           <div>
-            <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+            <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
               Role
             </label>
             <select
               name="role"
               defaultValue={user.role}
-              className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] focus:outline-none"
+              className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none"
             >
               {ROLES.map((r) => (
                 <option key={r.value} value={r.value}>{r.label}</option>
@@ -139,36 +139,36 @@ export default async function EditUserPage({ params }: Props) {
               defaultChecked={user.isActive}
               className="w-4 h-4"
             />
-            <label htmlFor="isActive" className="text-[13px] text-[var(--color-body)]">
+            <label htmlFor="isActive" className="text-[13px] text-ih-ink-2">
               Active account
             </label>
           </div>
 
-          <div className="flex items-center gap-3 pt-2 border-t border-[var(--color-border)]">
+          <div className="flex items-center gap-3 pt-2 border-t border-ih-border">
             <button
               type="submit"
-              className="h-9 px-5 bg-[var(--color-accent)] text-white font-mono text-[12px] hover:opacity-90"
+              className="h-9 px-5 bg-ih-accent text-white font-mono text-[12px] hover:opacity-90"
             >
               Save Changes
             </button>
             <Link
               href="/admin/users"
-              className="h-9 px-4 flex items-center border border-[var(--color-border)] font-mono text-[12px] text-[var(--color-body)] hover:bg-[var(--color-deep)]"
+              className="h-9 px-4 flex items-center border border-ih-border font-mono text-[12px] text-ih-ink-2 hover:bg-ih-surface-2"
             >
               Cancel
             </Link>
           </div>
         </form>
 
-        <div className="mt-8 pt-6 border-t border-[var(--color-border)]">
-          <p className="font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-3">
+        <div className="mt-8 pt-6 border-t border-ih-border">
+          <p className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-3">
             Danger Zone
           </p>
           {user.isActive ? (
             <form action={deactivateUser}>
               <button
                 type="submit"
-                className="h-9 px-4 border border-[var(--color-danger)] font-mono text-[12px] text-[var(--color-danger)] hover:bg-[var(--color-danger)] hover:text-white transition-colors"
+                className="h-9 px-4 border border-ih-danger font-mono text-[12px] text-ih-danger hover:bg-[var(--color-ih-danger)] hover:text-white transition-colors"
               >
                 Deactivate Account
               </button>
@@ -177,7 +177,7 @@ export default async function EditUserPage({ params }: Props) {
             <form action={activateUser}>
               <button
                 type="submit"
-                className="h-9 px-4 border border-[var(--color-border)] font-mono text-[12px] text-[var(--color-body)] hover:bg-[var(--color-deep)]"
+                className="h-9 px-4 border border-ih-border font-mono text-[12px] text-ih-ink-2 hover:bg-ih-surface-2"
               >
                 Reactivate Account
               </button>

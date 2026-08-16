@@ -31,29 +31,29 @@ export default async function ScraperJobsPage({ params }: Props) {
     <div className="px-8 py-8">
       <header className="flex items-center justify-between mb-6">
         <div>
-          <h1 className="text-[22px] font-semibold text-[var(--color-primary)]">Competitor scraper</h1>
-          <p className="text-[13px] text-[var(--color-muted)] mt-1">
+          <h1 className="text-[22px] font-semibold text-ih-ink">Competitor scraper</h1>
+          <p className="text-[13px] text-ih-muted mt-1">
             Crawl a competitor catalogue, pick the products you want, and ingest their images into your own listings.
           </p>
         </div>
         <Link
           href="/admin/scraper/new"
-          className="h-9 px-4 bg-[var(--color-accent)] text-white font-mono text-[12px] tracking-wider uppercase grid place-items-center hover:opacity-90"
+          className="h-9 px-4 bg-ih-accent text-white font-mono text-[12px] tracking-wider uppercase grid place-items-center hover:opacity-90"
         >
           Start a crawl
         </Link>
       </header>
 
       {jobs.length === 0 ? (
-        <div className="border border-[var(--color-border)] bg-[var(--color-surface)] p-10 text-center">
-          <p className="text-[14px] text-[var(--color-body)]">No crawls yet.</p>
-          <p className="text-[12px] text-[var(--color-muted)] mt-2">
+        <div className="border border-ih-border bg-ih-bg p-10 text-center">
+          <p className="text-[14px] text-ih-ink-2">No crawls yet.</p>
+          <p className="text-[12px] text-ih-muted mt-2">
             Start your first crawl by pasting a competitor sitemap URL or a list of product URLs.
           </p>
         </div>
       ) : (
-        <table className="w-full border border-[var(--color-border)] text-[13px]">
-          <thead className="bg-[var(--color-deep)] text-[var(--color-muted)] uppercase font-mono text-[10px] tracking-wider">
+        <table className="w-full border border-ih-border text-[13px]">
+          <thead className="bg-ih-surface-2 text-ih-muted uppercase font-mono text-[10px] tracking-wider">
             <tr>
               <th className="text-left px-3 py-2">Code</th>
               <th className="text-left px-3 py-2">Host</th>
@@ -64,16 +64,16 @@ export default async function ScraperJobsPage({ params }: Props) {
           </thead>
           <tbody>
             {jobs.map((j) => (
-              <tr key={j.id} className="border-t border-[var(--color-border)] hover:bg-[var(--color-deep)]">
+              <tr key={j.id} className="border-t border-ih-border hover:bg-ih-surface-2">
                 <td className="px-3 py-2 font-mono text-[12px]">
-                  <Link href={`/admin/scraper/${j.id}`} className="text-[var(--color-accent)] hover:underline">
+                  <Link href={`/admin/scraper/${j.id}`} className="text-ih-accent hover:underline">
                     {j.code}
                   </Link>
                 </td>
                 <td className="px-3 py-2">{j.hostname}</td>
                 <td className="px-3 py-2 font-mono text-[11px] uppercase">{j.status}</td>
                 <td className="px-3 py-2 text-right">{j.totalFound}</td>
-                <td className="px-3 py-2 text-[var(--color-muted)]">{j.createdAt.toISOString().slice(0, 10)}</td>
+                <td className="px-3 py-2 text-ih-muted">{j.createdAt.toISOString().slice(0, 10)}</td>
               </tr>
             ))}
           </tbody>

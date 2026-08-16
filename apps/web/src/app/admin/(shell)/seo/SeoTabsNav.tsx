@@ -20,7 +20,7 @@ const TABS: { id: string; label: string; path: string }[] = [
 export default function SeoTabsNav() {
   const pathname = usePathname()
   return (
-    <div className="flex border-b border-[var(--color-border)] mb-6 overflow-x-auto">
+    <div className="flex border-b border-ih-border mb-6 overflow-x-auto">
       {TABS.map((tab) => {
         const active = pathname === tab.path || pathname?.startsWith(`${tab.path}/`)
         return (
@@ -29,8 +29,8 @@ export default function SeoTabsNav() {
             href={tab.path}
             className={`px-4 py-2.5 font-mono text-[12px] border-b-2 -mb-px transition-colors whitespace-nowrap ${
               active
-                ? 'border-[var(--color-accent)] text-[var(--color-primary)]'
-                : 'border-transparent text-[var(--color-muted)] hover:text-[var(--color-body)]'
+                ? 'border-ih-accent text-ih-ink'
+                : 'border-transparent text-ih-muted hover:text-ih-ink-2'
             }`}
           >
             {tab.label}

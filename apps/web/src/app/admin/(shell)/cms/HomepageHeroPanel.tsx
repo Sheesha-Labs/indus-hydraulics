@@ -102,11 +102,11 @@ export default function HomepageHeroPanel({ slides }: Props) {
       {/* Upload form */}
       <form
         action={handleUpload}
-        className="border border-[var(--color-border)] bg-[var(--color-elevated)] p-5 space-y-3"
+        className="border border-ih-border bg-ih-surface p-5 space-y-3"
       >
         <div className="flex items-baseline justify-between">
           <h2 className="text-[14px] font-semibold">Add a new slide</h2>
-          <span className="font-mono text-[10px] tracking-[0.1em] uppercase text-[var(--color-muted)]">
+          <span className="font-mono text-[10px] tracking-[0.1em] uppercase text-ih-muted">
             JPEG / PNG / WebP / GIF · ≤ 10 MB · ~1200×1100 recommended
           </span>
         </div>
@@ -124,12 +124,12 @@ export default function HomepageHeroPanel({ slides }: Props) {
             type="text"
             placeholder="Alt text (for screen readers)"
             maxLength={200}
-            className="border border-[var(--color-border)] bg-[var(--color-surface)] px-3 py-2 text-[13px]"
+            className="border border-ih-border bg-ih-bg px-3 py-2 text-[13px]"
           />
           <button
             type="submit"
             disabled={pending}
-            className="h-10 bg-[var(--color-accent)] text-white font-mono text-[12px] hover:opacity-90 disabled:opacity-50 disabled:cursor-not-allowed"
+            className="h-10 bg-ih-accent text-white font-mono text-[12px] hover:opacity-90 disabled:opacity-50 disabled:cursor-not-allowed"
           >
             {pending ? 'Uploading…' : 'Upload'}
           </button>
@@ -137,20 +137,20 @@ export default function HomepageHeroPanel({ slides }: Props) {
       </form>
 
       {error && (
-        <div className="border border-[var(--color-danger)] bg-[var(--color-danger)]/10 px-4 py-3 text-[13px] text-[var(--color-danger)]">
+        <div className="border border-ih-danger bg-[var(--color-ih-danger)]/10 px-4 py-3 text-[13px] text-ih-danger">
           {error}
         </div>
       )}
 
       {/* Slide list */}
-      <div className="border border-[var(--color-border)]">
+      <div className="border border-ih-border">
         {slides.length === 0 ? (
-          <div className="py-12 text-center text-[var(--color-muted)] text-[13px]">
+          <div className="py-12 text-center text-ih-muted text-[13px]">
             No slides yet. The storefront falls back to the static placeholder until at least one published slide exists.
           </div>
         ) : (
           <>
-            <div className="grid grid-cols-[60px_120px_1fr_200px_100px_120px_60px] px-4 py-2.5 bg-[var(--color-surface)] border-b border-[var(--color-border)] font-mono text-[10px] tracking-[0.1em] uppercase text-[var(--color-muted)]">
+            <div className="grid grid-cols-[60px_120px_1fr_200px_100px_120px_60px] px-4 py-2.5 bg-ih-bg border-b border-ih-border font-mono text-[10px] tracking-[0.1em] uppercase text-ih-muted">
               <div>#</div>
               <div>Preview</div>
               <div>Filename</div>
@@ -162,14 +162,14 @@ export default function HomepageHeroPanel({ slides }: Props) {
             {slides.map((slide, i) => (
               <div
                 key={slide.id}
-                className={`grid grid-cols-[60px_120px_1fr_200px_100px_120px_60px] px-4 py-3 items-center bg-[var(--color-elevated)] gap-3 ${
-                  i > 0 ? 'border-t border-[var(--color-border)]' : ''
+                className={`grid grid-cols-[60px_120px_1fr_200px_100px_120px_60px] px-4 py-3 items-center bg-ih-surface gap-3 ${
+                  i > 0 ? 'border-t border-ih-border' : ''
                 }`}
               >
-                <div className="font-mono text-[12px] text-[var(--color-muted)]">
+                <div className="font-mono text-[12px] text-ih-muted">
                   {String(i + 1).padStart(2, '0')}
                 </div>
-                <div className="relative w-[100px] h-[80px] bg-[var(--color-deep)] overflow-hidden">
+                <div className="relative w-[100px] h-[80px] bg-ih-surface-2 overflow-hidden">
                   <Image
                     src={slide.media.storagePath}
                     alt={slide.alt ?? slide.media.originalFilename}
@@ -178,7 +178,7 @@ export default function HomepageHeroPanel({ slides }: Props) {
                     className="object-cover"
                   />
                 </div>
-                <div className="font-mono text-[11px] text-[var(--color-body)] truncate" title={slide.media.originalFilename}>
+                <div className="font-mono text-[11px] text-ih-ink-2 truncate" title={slide.media.originalFilename}>
                   {slide.media.originalFilename}
                 </div>
                 <input
@@ -191,7 +191,7 @@ export default function HomepageHeroPanel({ slides }: Props) {
                     if (next === (slide.alt ?? '')) return
                     handleUpdate(slide.id, { alt: next || null })
                   }}
-                  className="border border-[var(--color-border)] bg-[var(--color-surface)] px-2 py-1.5 text-[12px]"
+                  className="border border-ih-border bg-ih-bg px-2 py-1.5 text-[12px]"
                 />
                 <div className="flex justify-center">
                   <button
@@ -201,7 +201,7 @@ export default function HomepageHeroPanel({ slides }: Props) {
                     className={`px-2 py-0.5 font-mono text-[10px] font-semibold transition-opacity hover:opacity-80 disabled:opacity-50 ${
                       slide.isPublished
                         ? 'text-[oklch(0.4_0.14_145)] bg-[oklch(0.94_0.06_145)]'
-                        : 'text-[var(--color-muted)] bg-[var(--color-deep)]'
+                        : 'text-ih-muted bg-ih-surface-2'
                     }`}
                   >
                     {slide.isPublished ? 'Published' : 'Hidden'}
@@ -214,7 +214,7 @@ export default function HomepageHeroPanel({ slides }: Props) {
                     disabled={pending || i === 0}
                     aria-label="Move up"
                     title="Move up"
-                    className="w-8 h-8 flex items-center justify-center border border-[var(--color-border)] bg-[var(--color-surface)] hover:bg-[var(--color-deep)] disabled:opacity-30 disabled:cursor-not-allowed font-mono text-[14px]"
+                    className="w-8 h-8 flex items-center justify-center border border-ih-border bg-ih-bg hover:bg-ih-surface-2 disabled:opacity-30 disabled:cursor-not-allowed font-mono text-[14px]"
                   >
                     ↑
                   </button>
@@ -224,7 +224,7 @@ export default function HomepageHeroPanel({ slides }: Props) {
                     disabled={pending || i === slides.length - 1}
                     aria-label="Move down"
                     title="Move down"
-                    className="w-8 h-8 flex items-center justify-center border border-[var(--color-border)] bg-[var(--color-surface)] hover:bg-[var(--color-deep)] disabled:opacity-30 disabled:cursor-not-allowed font-mono text-[14px]"
+                    className="w-8 h-8 flex items-center justify-center border border-ih-border bg-ih-bg hover:bg-ih-surface-2 disabled:opacity-30 disabled:cursor-not-allowed font-mono text-[14px]"
                   >
                     ↓
                   </button>
@@ -235,7 +235,7 @@ export default function HomepageHeroPanel({ slides }: Props) {
                     onClick={() => handleDelete(slide.id)}
                     disabled={pending}
                     aria-label="Delete slide"
-                    className="font-mono text-[11px] text-[var(--color-danger)] hover:underline disabled:opacity-50"
+                    className="font-mono text-[11px] text-ih-danger hover:underline disabled:opacity-50"
                   >
                     Delete
                   </button>

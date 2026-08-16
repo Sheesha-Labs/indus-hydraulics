@@ -44,7 +44,7 @@ const TRANSITION_STYLES: Record<string, string> = {
   quote_sent: 'bg-[oklch(0.4_0.14_160)] text-white hover:opacity-90',
   accepted: 'bg-[oklch(0.4_0.14_145)] text-white hover:opacity-90',
   declined: 'border border-[oklch(0.75_0.1_25)] text-[oklch(0.5_0.1_25)] hover:bg-[oklch(0.97_0.02_25)]',
-  cancelled: 'border border-[var(--color-border)] text-[var(--color-muted)] hover:bg-[var(--color-deep)]',
+  cancelled: 'border border-ih-border text-ih-muted hover:bg-ih-surface-2',
   order_created: 'bg-[oklch(0.45_0.13_260)] text-white hover:opacity-90',
   shipped: 'bg-[oklch(0.45_0.13_220)] text-white hover:opacity-90',
   delivered: 'bg-[oklch(0.4_0.14_145)] text-white hover:opacity-90',
@@ -106,22 +106,22 @@ export default async function AdminRfqDetailPage({ params }: Props) {
       {/* Header */}
       <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-6">
         <div>
-          <Link href={`/admin/rfqs`} className="font-mono text-[12px] text-[var(--color-muted)] hover:text-[var(--color-primary)] mb-2 inline-block">
+          <Link href={`/admin/rfqs`} className="font-mono text-[12px] text-ih-muted hover:text-ih-ink mb-2 inline-block">
             ← RFQ Queue
           </Link>
           <h1 className="text-[24px] font-semibold tracking-tight">{rfq.code}</h1>
-          {rfq.subject && <p className="text-[14px] text-[var(--color-muted)] mt-1">{rfq.subject}</p>}
+          {rfq.subject && <p className="text-[14px] text-ih-muted mt-1">{rfq.subject}</p>}
         </div>
         <div className="flex flex-col items-end gap-2">
           <StatusBadge status={rfq.status} />
-          <div className="font-mono text-[11px] text-[var(--color-muted)]">
+          <div className="font-mono text-[11px] text-ih-muted">
             {URGENCY_LABEL[rfq.urgency] ?? rfq.urgency}
           </div>
         </div>
       </div>
 
       {/* Status action buttons + quote preview link */}
-      <div className="flex flex-wrap items-center gap-2 mb-6 pb-6 border-b border-[var(--color-border)]">
+      <div className="flex flex-wrap items-center gap-2 mb-6 pb-6 border-b border-ih-border">
         {validTransitions.map((transition) => (
           <form
             key={transition}
@@ -132,7 +132,7 @@ export default async function AdminRfqDetailPage({ params }: Props) {
           >
             <button
               type="submit"
-              className={`h-9 px-4 font-mono text-[12px] transition-colors ${TRANSITION_STYLES[transition] ?? 'border border-[var(--color-border)] text-[var(--color-body)] hover:bg-[var(--color-deep)]'}`}
+              className={`h-9 px-4 font-mono text-[12px] transition-colors ${TRANSITION_STYLES[transition] ?? 'border border-ih-border text-ih-ink-2 hover:bg-ih-surface-2'}`}
             >
               {TRANSITION_LABELS[transition] ?? transition}
             </button>
@@ -142,7 +142,7 @@ export default async function AdminRfqDetailPage({ params }: Props) {
           href={`/api/rfqs/${rfq.code}/preview-pdf`}
           target="_blank"
           rel="noopener noreferrer"
-          className="h-9 px-4 ml-auto inline-flex items-center gap-1.5 border border-[var(--color-border)] font-mono text-[12px] text-[var(--color-body)] hover:bg-[var(--color-deep)] transition-colors"
+          className="h-9 px-4 ml-auto inline-flex items-center gap-1.5 border border-ih-border font-mono text-[12px] text-ih-ink-2 hover:bg-ih-surface-2 transition-colors"
           title="Open the quote PDF preview in a new tab. Uses current line prices and store defaults."
         >
           Preview Quote PDF →
@@ -151,31 +151,31 @@ export default async function AdminRfqDetailPage({ params }: Props) {
 
       {/* Issued quotes (revisions history) — show only after the first send */}
       {rfq.quotes.length > 0 ? (
-        <div className="border border-[var(--color-border)] mb-6">
-          <div className="px-4 py-2 bg-[var(--color-deep)] border-b border-[var(--color-border)] font-mono text-[10px] tracking-[0.1em] uppercase text-[var(--color-muted)]">
+        <div className="border border-ih-border mb-6">
+          <div className="px-4 py-2 bg-ih-surface-2 border-b border-ih-border font-mono text-[10px] tracking-[0.1em] uppercase text-ih-muted">
             Issued quotes
           </div>
           {rfq.quotes.map((q) => (
             <div
               key={q.id}
-              className="grid grid-cols-[1fr_140px_120px_140px_auto] gap-3 items-center px-4 py-3 border-b border-[var(--color-border)] last:border-0 text-[13px]"
+              className="grid grid-cols-[1fr_140px_120px_140px_auto] gap-3 items-center px-4 py-3 border-b border-ih-border last:border-0 text-[13px]"
             >
               <div>
-                <div className="font-mono text-[13px] text-[var(--color-primary)]">
+                <div className="font-mono text-[13px] text-ih-ink">
                   {q.code}
-                  {q.revision > 1 ? <span className="text-[var(--color-muted)] ml-2">R{q.revision}</span> : null}
+                  {q.revision > 1 ? <span className="text-ih-muted ml-2">R{q.revision}</span> : null}
                 </div>
-                <div className="font-mono text-[10px] text-[var(--color-caption)] mt-0.5">
+                <div className="font-mono text-[10px] text-ih-muted-2 mt-0.5">
                   Sent {q.sentAt ? formatDayMonthYear(q.sentAt) : '—'}
                 </div>
               </div>
-              <div className="text-right text-[var(--color-body)] font-mono text-[12px]">
+              <div className="text-right text-ih-ink-2 font-mono text-[12px]">
                 {formatAed(Number(q.total))}
               </div>
-              <div className="text-right text-[var(--color-muted)] font-mono text-[11px]">
+              <div className="text-right text-ih-muted font-mono text-[11px]">
                 Net {q.termsValidityDays}d
               </div>
-              <div className="text-right text-[var(--color-muted)] font-mono text-[11px]">
+              <div className="text-right text-ih-muted font-mono text-[11px]">
                 {q.expiresAt ? `exp ${formatDayMonthYear(q.expiresAt)}` : '—'}
               </div>
               <div className="text-right">
@@ -184,12 +184,12 @@ export default async function AdminRfqDetailPage({ params }: Props) {
                     href={`/api/quotes/${q.code}/pdf`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="font-mono text-[11px] text-[var(--color-accent)] hover:underline"
+                    className="font-mono text-[11px] text-ih-accent hover:underline"
                   >
                     Download PDF →
                   </a>
                 ) : (
-                  <span className="font-mono text-[11px] text-[var(--color-muted)]">no PDF</span>
+                  <span className="font-mono text-[11px] text-ih-muted">no PDF</span>
                 )}
               </div>
             </div>
@@ -224,25 +224,25 @@ export default async function AdminRfqDetailPage({ params }: Props) {
           >
             <input type="hidden" name="rfqId" value={rfq.id} />
 
-            <h2 className="font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-3">
+            <h2 className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-3">
               Line Items ({rfq.lines.length})
             </h2>
 
-            <div className="border border-[var(--color-border)] mb-4">
+            <div className="border border-ih-border mb-4">
               {/* Header */}
-              <div className="grid grid-cols-[1fr_120px_120px] px-4 py-2 bg-[var(--color-surface)] border-b border-[var(--color-border)] font-mono text-[10px] tracking-[0.1em] uppercase text-[var(--color-muted)]">
+              <div className="grid grid-cols-[1fr_120px_120px] px-4 py-2 bg-ih-bg border-b border-ih-border font-mono text-[10px] tracking-[0.1em] uppercase text-ih-muted">
                 <div>Product</div>
                 <div className="text-right">Unit Price (AED)</div>
                 <div className="text-right">Lead Time (days)</div>
               </div>
 
               {rfq.lines.map((line, i) => (
-                <div key={line.id} className={`border-b border-[var(--color-border)] last:border-0 ${i % 2 === 0 ? 'bg-[var(--color-elevated)]' : 'bg-[var(--color-surface)]'}`}>
+                <div key={line.id} className={`border-b border-ih-border last:border-0 ${i % 2 === 0 ? 'bg-ih-surface' : 'bg-ih-bg'}`}>
                   <div className="grid grid-cols-[1fr_120px_120px] px-4 py-3 items-center">
                     <div>
                       <div className="text-[13px] font-medium">{line.product.title}</div>
-                      <div className="font-mono text-[11px] text-[var(--color-muted)]">{line.product.sku}</div>
-                      <div className="font-mono text-[11px] text-[var(--color-caption)] mt-0.5">
+                      <div className="font-mono text-[11px] text-ih-muted">{line.product.sku}</div>
+                      <div className="font-mono text-[11px] text-ih-muted-2 mt-0.5">
                         Qty requested: {line.requestedQty}
                         {line.customerTargetPrice && ` · Target: AED ${Number(line.customerTargetPrice).toFixed(2)}`}
                       </div>
@@ -255,7 +255,7 @@ export default async function AdminRfqDetailPage({ params }: Props) {
                         step="0.01"
                         min="0"
                         placeholder="—"
-                        className="w-24 h-8 px-2 border border-[var(--color-border)] bg-[var(--color-elevated)] font-mono text-[13px] text-[var(--color-primary)] text-right focus:outline-none focus:border-[var(--color-accent)] placeholder:text-[var(--color-caption)]"
+                        className="w-24 h-8 px-2 border border-ih-border bg-ih-surface font-mono text-[13px] text-ih-ink text-right focus:outline-none focus:border-ih-accent placeholder:text-ih-muted-2"
                       />
                     </div>
                     <div className="flex justify-end">
@@ -265,7 +265,7 @@ export default async function AdminRfqDetailPage({ params }: Props) {
                         defaultValue={line.engineerLeadTimeDays ?? ''}
                         min="0"
                         placeholder="—"
-                        className="w-24 h-8 px-2 border border-[var(--color-border)] bg-[var(--color-elevated)] font-mono text-[13px] text-[var(--color-primary)] text-right focus:outline-none focus:border-[var(--color-accent)] placeholder:text-[var(--color-caption)]"
+                        className="w-24 h-8 px-2 border border-ih-border bg-ih-surface font-mono text-[13px] text-ih-ink text-right focus:outline-none focus:border-ih-accent placeholder:text-ih-muted-2"
                       />
                     </div>
                   </div>
@@ -276,7 +276,7 @@ export default async function AdminRfqDetailPage({ params }: Props) {
                       name={`lineNote_${line.id}`}
                       defaultValue={line.engineerNotes ?? ''}
                       placeholder="Engineer note for this line (optional)"
-                      className="w-full h-7 px-2 border border-[var(--color-border)] bg-transparent font-mono text-[11px] text-[var(--color-body)] placeholder:text-[var(--color-caption)] focus:outline-none focus:border-[var(--color-accent)]"
+                      className="w-full h-7 px-2 border border-ih-border bg-transparent font-mono text-[11px] text-ih-ink-2 placeholder:text-ih-muted-2 focus:outline-none focus:border-ih-accent"
                     />
                   </div>
                 </div>
@@ -285,7 +285,7 @@ export default async function AdminRfqDetailPage({ params }: Props) {
 
             {/* Internal notes */}
             <div className="mb-4">
-              <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+              <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
                 Internal Notes
               </label>
               <textarea
@@ -293,13 +293,13 @@ export default async function AdminRfqDetailPage({ params }: Props) {
                 defaultValue={rfq.internalNotes ?? ''}
                 rows={4}
                 placeholder="Notes visible to staff only — not shown to customer"
-                className="w-full px-3 py-2.5 border border-[var(--color-border)] bg-[var(--color-elevated)] font-mono text-[13px] text-[var(--color-primary)] placeholder:text-[var(--color-caption)] focus:outline-none focus:border-[var(--color-accent)] resize-none"
+                className="w-full px-3 py-2.5 border border-ih-border bg-ih-surface font-mono text-[13px] text-ih-ink placeholder:text-ih-muted-2 focus:outline-none focus:border-ih-accent resize-none"
               />
             </div>
 
             <button
               type="submit"
-              className="h-10 px-6 bg-[var(--color-primary)] text-[var(--color-elevated)] font-mono text-[12px] hover:bg-[var(--color-body)] transition-colors"
+              className="h-10 px-6 bg-ih-navy text-white font-mono text-[12px] hover:bg-[var(--color-ih-ink-2)] transition-colors"
             >
               Save Review
             </button>
@@ -309,36 +309,36 @@ export default async function AdminRfqDetailPage({ params }: Props) {
         {/* Sidebar */}
         <div className="space-y-4">
           {/* Account */}
-          <div className="border border-[var(--color-border)] bg-[var(--color-elevated)] p-4">
-            <h3 className="font-mono text-[10px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-3">Account</h3>
-            <Link href={`/admin/customers/${rfq.account.id}`} className="text-[13px] font-semibold text-[var(--color-accent)] hover:underline">
+          <div className="border border-ih-border bg-ih-surface p-4">
+            <h3 className="font-mono text-[10px] tracking-[0.1em] uppercase text-ih-muted mb-3">Account</h3>
+            <Link href={`/admin/customers/${rfq.account.id}`} className="text-[13px] font-semibold text-ih-accent hover:underline">
               {rfq.account.legalName}
             </Link>
-            <div className="font-mono text-[11px] text-[var(--color-muted)] mt-0.5">{rfq.account.code}</div>
+            <div className="font-mono text-[11px] text-ih-muted mt-0.5">{rfq.account.code}</div>
             {rfq.submittedBy && (
-              <div className="mt-2 text-[12px] text-[var(--color-body)]">
-                <span className="text-[var(--color-muted)]">Submitted by: </span>
+              <div className="mt-2 text-[12px] text-ih-ink-2">
+                <span className="text-ih-muted">Submitted by: </span>
                 {rfq.submittedBy.firstName} {rfq.submittedBy.lastName}
-                <div className="font-mono text-[11px] text-[var(--color-muted)]">{rfq.submittedBy.email}</div>
+                <div className="font-mono text-[11px] text-ih-muted">{rfq.submittedBy.email}</div>
               </div>
             )}
           </div>
 
           {/* Assignment */}
-          <div className="border border-[var(--color-border)] bg-[var(--color-elevated)] p-4">
-            <h3 className="font-mono text-[10px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-3">Assignment</h3>
+          <div className="border border-ih-border bg-ih-surface p-4">
+            <h3 className="font-mono text-[10px] tracking-[0.1em] uppercase text-ih-muted mb-3">Assignment</h3>
             <form action={async (fd: FormData) => {
               'use server'
               const { assignEngineer } = await import('./actions')
               const eId = fd.get('engineerId') as string
               if (eId) await assignEngineer(rfq.id, eId)
             }}>
-              <label className="block font-mono text-[11px] text-[var(--color-muted)] mb-1">Engineer</label>
+              <label className="block font-mono text-[11px] text-ih-muted mb-1">Engineer</label>
               <div className="flex gap-2">
                 <select
                   name="engineerId"
                   defaultValue={rfq.assignedEngineerId ?? ''}
-                  className="flex-1 h-8 px-2 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] text-[var(--color-primary)] focus:outline-none"
+                  className="flex-1 h-8 px-2 border border-ih-border bg-ih-surface text-[13px] text-ih-ink focus:outline-none"
                 >
                   <option value="">— Unassigned —</option>
                   {engineers.map((eng) => (
@@ -347,7 +347,7 @@ export default async function AdminRfqDetailPage({ params }: Props) {
                     </option>
                   ))}
                 </select>
-                <button type="submit" className="h-8 px-3 border border-[var(--color-border)] font-mono text-[11px] text-[var(--color-body)] hover:bg-[var(--color-deep)] transition-colors">
+                <button type="submit" className="h-8 px-3 border border-ih-border font-mono text-[11px] text-ih-ink-2 hover:bg-ih-surface-2 transition-colors">
                   Save
                 </button>
               </div>
@@ -355,31 +355,31 @@ export default async function AdminRfqDetailPage({ params }: Props) {
           </div>
 
           {/* Dates */}
-          <div className="border border-[var(--color-border)] bg-[var(--color-elevated)] p-4">
-            <h3 className="font-mono text-[10px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-3">Timeline</h3>
+          <div className="border border-ih-border bg-ih-surface p-4">
+            <h3 className="font-mono text-[10px] tracking-[0.1em] uppercase text-ih-muted mb-3">Timeline</h3>
             <dl className="space-y-2 text-[13px]">
               {rfq.submittedAt && (
                 <div className="flex justify-between gap-2">
-                  <dt className="text-[var(--color-muted)]">Submitted</dt>
-                  <dd className="font-mono text-[var(--color-primary)]">{new Date(rfq.submittedAt).toLocaleDateString()}</dd>
+                  <dt className="text-ih-muted">Submitted</dt>
+                  <dd className="font-mono text-ih-ink">{new Date(rfq.submittedAt).toLocaleDateString()}</dd>
                 </div>
               )}
               {rfq.requestedDeliveryDate && (
                 <div className="flex justify-between gap-2">
-                  <dt className="text-[var(--color-muted)]">Req. delivery</dt>
-                  <dd className="font-mono text-[var(--color-primary)]">{new Date(rfq.requestedDeliveryDate).toLocaleDateString()}</dd>
+                  <dt className="text-ih-muted">Req. delivery</dt>
+                  <dd className="font-mono text-ih-ink">{new Date(rfq.requestedDeliveryDate).toLocaleDateString()}</dd>
                 </div>
               )}
               {rfq.quoteSentAt && (
                 <div className="flex justify-between gap-2">
-                  <dt className="text-[var(--color-muted)]">Quote sent</dt>
-                  <dd className="font-mono text-[var(--color-primary)]">{new Date(rfq.quoteSentAt).toLocaleDateString()}</dd>
+                  <dt className="text-ih-muted">Quote sent</dt>
+                  <dd className="font-mono text-ih-ink">{new Date(rfq.quoteSentAt).toLocaleDateString()}</dd>
                 </div>
               )}
               {rfq.acceptedAt && (
                 <div className="flex justify-between gap-2">
-                  <dt className="text-[var(--color-muted)]">Accepted</dt>
-                  <dd className="font-mono text-[var(--color-primary)]">{new Date(rfq.acceptedAt).toLocaleDateString()}</dd>
+                  <dt className="text-ih-muted">Accepted</dt>
+                  <dd className="font-mono text-ih-ink">{new Date(rfq.acceptedAt).toLocaleDateString()}</dd>
                 </div>
               )}
             </dl>
@@ -387,9 +387,9 @@ export default async function AdminRfqDetailPage({ params }: Props) {
 
           {/* Ship-to */}
           {rfq.shipToAddress && (
-            <div className="border border-[var(--color-border)] bg-[var(--color-elevated)] p-4">
-              <h3 className="font-mono text-[10px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-2">Ship-to</h3>
-              <div className="text-[12px] text-[var(--color-body)]">
+            <div className="border border-ih-border bg-ih-surface p-4">
+              <h3 className="font-mono text-[10px] tracking-[0.1em] uppercase text-ih-muted mb-2">Ship-to</h3>
+              <div className="text-[12px] text-ih-ink-2">
                 <div className="font-medium">{rfq.shipToAddress.label}</div>
                 {(rfq.shipToAddress.lines as string[]).map((l, i) => <div key={i}>{l}</div>)}
                 <div>{rfq.shipToAddress.city}, {rfq.shipToAddress.countryCode}</div>
@@ -398,9 +398,9 @@ export default async function AdminRfqDetailPage({ params }: Props) {
           )}
 
           {/* Tracking */}
-          <div className="border border-[var(--color-border)] bg-[var(--color-elevated)] p-4">
-            <h3 className="font-mono text-[10px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-2">Tracking</h3>
-            <p className="text-[11px] text-[var(--color-muted)] mb-3 leading-[1.5]">
+          <div className="border border-ih-border bg-ih-surface p-4">
+            <h3 className="font-mono text-[10px] tracking-[0.1em] uppercase text-ih-muted mb-2">Tracking</h3>
+            <p className="text-[11px] text-ih-muted mb-3 leading-[1.5]">
               Free-text. Surfaces under the Shipped step on the customer&apos;s
               /quote/[code] timeline.
             </p>
@@ -411,25 +411,25 @@ export default async function AdminRfqDetailPage({ params }: Props) {
               if (!r.success) throw new Error(r.message)
             }}>
               <input type="hidden" name="rfqId" value={rfq.id} />
-              <label className="block font-mono text-[11px] text-[var(--color-muted)] mb-1">Carrier</label>
+              <label className="block font-mono text-[11px] text-ih-muted mb-1">Carrier</label>
               <input
                 type="text"
                 name="trackingCarrier"
                 defaultValue={rfq.trackingCarrier ?? ''}
                 placeholder="e.g. Aramex, DHL"
                 maxLength={120}
-                className="w-full h-8 px-2 mb-2 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] text-[var(--color-primary)] placeholder:text-[var(--color-caption)] focus:outline-none focus:border-[var(--color-accent)]"
+                className="w-full h-8 px-2 mb-2 border border-ih-border bg-ih-surface text-[13px] text-ih-ink placeholder:text-ih-muted-2 focus:outline-none focus:border-ih-accent"
               />
-              <label className="block font-mono text-[11px] text-[var(--color-muted)] mb-1">Tracking number</label>
+              <label className="block font-mono text-[11px] text-ih-muted mb-1">Tracking number</label>
               <input
                 type="text"
                 name="trackingNumber"
                 defaultValue={rfq.trackingNumber ?? ''}
                 placeholder="AWB / consignment #"
                 maxLength={120}
-                className="w-full h-8 px-2 mb-2 border border-[var(--color-border)] bg-[var(--color-elevated)] font-mono text-[13px] text-[var(--color-primary)] placeholder:text-[var(--color-caption)] focus:outline-none focus:border-[var(--color-accent)]"
+                className="w-full h-8 px-2 mb-2 border border-ih-border bg-ih-surface font-mono text-[13px] text-ih-ink placeholder:text-ih-muted-2 focus:outline-none focus:border-ih-accent"
               />
-              <button type="submit" className="h-8 px-3 border border-[var(--color-border)] font-mono text-[11px] text-[var(--color-body)] hover:bg-[var(--color-deep)] transition-colors">
+              <button type="submit" className="h-8 px-3 border border-ih-border font-mono text-[11px] text-ih-ink-2 hover:bg-ih-surface-2 transition-colors">
                 Save
               </button>
             </form>
@@ -437,24 +437,24 @@ export default async function AdminRfqDetailPage({ params }: Props) {
 
           {/* Application context */}
           {rfq.applicationContext && (
-            <div className="border border-[var(--color-border)] bg-[var(--color-elevated)] p-4">
-              <h3 className="font-mono text-[10px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-2">Application Context</h3>
-              <p className="text-[12px] text-[var(--color-body)] leading-[1.5]">{rfq.applicationContext}</p>
+            <div className="border border-ih-border bg-ih-surface p-4">
+              <h3 className="font-mono text-[10px] tracking-[0.1em] uppercase text-ih-muted mb-2">Application Context</h3>
+              <p className="text-[12px] text-ih-ink-2 leading-[1.5]">{rfq.applicationContext}</p>
             </div>
           )}
 
           {/* Customer message */}
           {rfq.customerMessage && (
-            <div className="border border-[var(--color-border)] bg-[var(--color-elevated)] p-4">
-              <h3 className="font-mono text-[10px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-2">Customer Message</h3>
-              <p className="text-[12px] text-[var(--color-body)] leading-[1.5]">{rfq.customerMessage}</p>
+            <div className="border border-ih-border bg-ih-surface p-4">
+              <h3 className="font-mono text-[10px] tracking-[0.1em] uppercase text-ih-muted mb-2">Customer Message</h3>
+              <p className="text-[12px] text-ih-ink-2 leading-[1.5]">{rfq.customerMessage}</p>
             </div>
           )}
 
           {/* Attachments */}
           {rfq.attachments.length > 0 && (
-            <div className="border border-[var(--color-border)] bg-[var(--color-elevated)] p-4">
-              <h3 className="font-mono text-[10px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-3">Attachments</h3>
+            <div className="border border-ih-border bg-ih-surface p-4">
+              <h3 className="font-mono text-[10px] tracking-[0.1em] uppercase text-ih-muted mb-3">Attachments</h3>
               <div className="flex flex-col gap-2">
                 {rfq.attachments.map((att) => (
                   <a
@@ -462,7 +462,7 @@ export default async function AdminRfqDetailPage({ params }: Props) {
                     href={att.media.storagePath}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 font-mono text-[12px] text-[var(--color-accent)] hover:underline"
+                    className="flex items-center gap-2 font-mono text-[12px] text-ih-accent hover:underline"
                   >
                     ↓ {att.media.originalFilename}
                   </a>
@@ -487,7 +487,7 @@ function StatusBadge({ status }: { status: string }) {
   }
 
   return (
-    <span className={`inline-flex items-center px-3 py-1 font-mono text-[11px] font-semibold tracking-[0.06em] ${colorMap[status] ?? 'text-[var(--color-muted)] bg-[var(--color-deep)]'}`}>
+    <span className={`inline-flex items-center px-3 py-1 font-mono text-[11px] font-semibold tracking-[0.06em] ${colorMap[status] ?? 'text-ih-muted bg-ih-surface-2'}`}>
       {STATUS_LABELS[status] ?? status}
     </span>
   )

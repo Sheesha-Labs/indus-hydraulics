@@ -27,8 +27,8 @@ export default async function AiRunsPage() {
 
   if (rows.length === 0) {
     return (
-      <div className="border border-dashed border-[var(--color-border)] py-16 text-center max-w-[800px]">
-        <p className="text-[var(--color-muted)] text-[13px]">
+      <div className="border border-dashed border-ih-border py-16 text-center max-w-[800px]">
+        <p className="text-ih-muted text-[13px]">
           No AI suggestions yet. Click &ldquo;Suggest&rdquo; in any SEO drawer to generate one.
         </p>
       </div>
@@ -36,10 +36,10 @@ export default async function AiRunsPage() {
   }
 
   return (
-    <div className="border border-[var(--color-border)] overflow-hidden max-w-full">
+    <div className="border border-ih-border overflow-hidden max-w-full">
       <table className="w-full text-[13px]">
         <thead>
-          <tr className="border-b border-[var(--color-border)] bg-[var(--color-deep)]">
+          <tr className="border-b border-ih-border bg-ih-surface-2">
             <Th>When</Th>
             <Th>Actor</Th>
             <Th>Entity</Th>
@@ -56,9 +56,9 @@ export default async function AiRunsPage() {
             return (
               <tr
                 key={row.id}
-                className="border-b border-[var(--color-border)] last:border-0 hover:bg-[var(--color-deep)] align-top"
+                className="border-b border-ih-border last:border-0 hover:bg-ih-surface-2 align-top"
               >
-                <td className="px-3 py-3 font-mono text-[11px] text-[var(--color-muted)] whitespace-nowrap">
+                <td className="px-3 py-3 font-mono text-[11px] text-ih-muted whitespace-nowrap">
                   {row.createdAt.toLocaleString('en-GB', {
                     day: 'numeric',
                     month: 'short',
@@ -66,16 +66,16 @@ export default async function AiRunsPage() {
                     minute: '2-digit',
                   })}
                 </td>
-                <td className="px-3 py-3 text-[12px] text-[var(--color-body)]">
-                  {actorName ?? <span className="text-[var(--color-muted)]">system</span>}
+                <td className="px-3 py-3 text-[12px] text-ih-ink-2">
+                  {actorName ?? <span className="text-ih-muted">system</span>}
                 </td>
                 <td className="px-3 py-3 font-mono text-[11px]">
                   <div>{row.entityType}</div>
-                  <div className="text-[var(--color-muted)] text-[10px] truncate max-w-[160px]">
+                  <div className="text-ih-muted text-[10px] truncate max-w-[160px]">
                     {row.entityId}
                   </div>
                 </td>
-                <td className="px-3 py-3 font-mono text-[11px] text-[var(--color-body)]">
+                <td className="px-3 py-3 font-mono text-[11px] text-ih-ink-2">
                   {row.field}
                 </td>
                 <td className="px-3 py-3 text-[12px] max-w-[360px] whitespace-pre-wrap break-words">
@@ -84,10 +84,10 @@ export default async function AiRunsPage() {
                 <td className="px-3 py-3">
                   <StatusPill status={row.status} />
                 </td>
-                <td className="px-3 py-3 font-mono text-[11px] text-[var(--color-muted)] tabular-nums whitespace-nowrap">
+                <td className="px-3 py-3 font-mono text-[11px] text-ih-muted tabular-nums whitespace-nowrap">
                   ${(row.costUsdMicros / 1_000_000).toFixed(4)}
                 </td>
-                <td className="px-3 py-3 font-mono text-[11px] text-[var(--color-muted)] tabular-nums">
+                <td className="px-3 py-3 font-mono text-[11px] text-ih-muted tabular-nums">
                   {row.cacheHitRatio !== null
                     ? `${(row.cacheHitRatio * 100).toFixed(0)}%`
                     : '—'}
@@ -108,7 +108,7 @@ function StatusPill({ status }: { status: string }) {
       : status === 'rejected'
         ? 'text-[oklch(0.5_0.18_25)] bg-[oklch(0.97_0.04_25)]'
         : status === 'superseded'
-          ? 'text-[var(--color-muted)] bg-[var(--color-deep)]'
+          ? 'text-ih-muted bg-ih-surface-2'
           : 'text-[oklch(0.5_0.14_70)] bg-[oklch(0.96_0.05_70)]'
   return (
     <span className={`inline-block px-2 py-0.5 font-mono text-[10px] uppercase tracking-wider ${tone}`}>
@@ -119,7 +119,7 @@ function StatusPill({ status }: { status: string }) {
 
 function Th({ children }: { children: React.ReactNode }) {
   return (
-    <th className="text-left px-3 py-2.5 font-mono text-[10px] uppercase tracking-[0.1em] text-[var(--color-muted)]">
+    <th className="text-left px-3 py-2.5 font-mono text-[10px] uppercase tracking-[0.1em] text-ih-muted">
       {children}
     </th>
   )

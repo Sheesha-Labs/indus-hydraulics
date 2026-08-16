@@ -15,7 +15,7 @@ export default async function NotFound() {
   return (
     <div className="max-w-[680px] mx-auto px-8 py-20 pb-32 text-center">
       <NotFoundLogger />
-      <div className="font-mono text-[80px] font-semibold text-[var(--color-border)] leading-none mb-6">
+      <div className="mb-6 font-mono text-[80px] leading-none tabular-nums text-ih-border-strong">
         404
       </div>
       <h1 className="text-[28px] font-semibold tracking-tight mb-3">Page not found</h1>

@@ -42,27 +42,27 @@ export default async function CmsPage({ params, searchParams }: Props) {
       <div className="flex items-center justify-between mb-6">
         <h1 className="text-[24px] font-semibold tracking-tight">Content Management</h1>
         {tab === 'blog' && (
-          <Link href={`/admin/cms/blog/new`} className="h-9 px-4 flex items-center bg-[var(--color-accent)] text-white font-mono text-[12px] hover:opacity-90">
+          <Link href={`/admin/cms/blog/new`} className="h-9 px-4 flex items-center bg-ih-accent text-white font-mono text-[12px] hover:opacity-90">
             + New Post
           </Link>
         )}
         {tab === 'pages' && (
-          <Link href={`/admin/cms/pages/new`} className="h-9 px-4 flex items-center bg-[var(--color-accent)] text-white font-mono text-[12px] hover:opacity-90">
+          <Link href={`/admin/cms/pages/new`} className="h-9 px-4 flex items-center bg-ih-accent text-white font-mono text-[12px] hover:opacity-90">
             + New Page
           </Link>
         )}
       </div>
 
       {/* Tabs */}
-      <div className="flex border-b border-[var(--color-border)] mb-6">
+      <div className="flex border-b border-ih-border mb-6">
         {TABS.map((t) => (
           <Link
             key={t.key}
             href={`/admin/cms?tab=${t.key}`}
             className={`px-4 py-2.5 font-mono text-[12px] border-b-2 transition-colors -mb-px ${
               tab === t.key
-                ? 'border-[var(--color-accent)] text-[var(--color-accent)]'
-                : 'border-transparent text-[var(--color-muted)] hover:text-[var(--color-primary)]'
+                ? 'border-ih-accent text-ih-accent'
+                : 'border-transparent text-ih-muted hover:text-ih-ink'
             }`}
           >
             {t.label}
@@ -71,12 +71,12 @@ export default async function CmsPage({ params, searchParams }: Props) {
       </div>
 
       {tab === 'blog' && (
-        <div className="border border-[var(--color-border)]">
+        <div className="border border-ih-border">
           {posts.length === 0 ? (
-            <div className="py-12 text-center text-[var(--color-muted)]">No blog posts yet.</div>
+            <div className="py-12 text-center text-ih-muted">No blog posts yet.</div>
           ) : (
             <>
-              <div className="grid grid-cols-[1fr_120px_100px_100px_80px] px-4 py-2.5 bg-[var(--color-surface)] border-b border-[var(--color-border)] font-mono text-[10px] tracking-[0.1em] uppercase text-[var(--color-muted)]">
+              <div className="grid grid-cols-[1fr_120px_100px_100px_80px] px-4 py-2.5 bg-ih-bg border-b border-ih-border font-mono text-[10px] tracking-[0.1em] uppercase text-ih-muted">
                 <div>Title</div>
                 <div>Author</div>
                 <div className="text-center">Status</div>
@@ -84,22 +84,22 @@ export default async function CmsPage({ params, searchParams }: Props) {
                 <div />
               </div>
               {posts.map((post, i) => (
-                <div key={post.id} className={`grid grid-cols-[1fr_120px_100px_100px_80px] px-4 py-3.5 items-center bg-[var(--color-elevated)] ${i > 0 ? 'border-t border-[var(--color-border)]' : ''}`}>
+                <div key={post.id} className={`grid grid-cols-[1fr_120px_100px_100px_80px] px-4 py-3.5 items-center bg-ih-surface ${i > 0 ? 'border-t border-ih-border' : ''}`}>
                   <div>
-                    <div className="text-[13px] font-medium text-[var(--color-primary)]">{post.title}</div>
-                    <div className="font-mono text-[11px] text-[var(--color-muted)]">/blog/{post.slug}</div>
+                    <div className="text-[13px] font-medium text-ih-ink">{post.title}</div>
+                    <div className="font-mono text-[11px] text-ih-muted">/blog/{post.slug}</div>
                   </div>
-                  <div className="text-[12px] text-[var(--color-body)] truncate">{post.author?.name ?? '—'}</div>
+                  <div className="text-[12px] text-ih-ink-2 truncate">{post.author?.name ?? '—'}</div>
                   <div className="flex justify-center">
-                    <span className={`px-2 py-0.5 font-mono text-[10px] font-semibold ${post.isPublished ? 'text-[oklch(0.4_0.14_145)] bg-[oklch(0.94_0.06_145)]' : 'text-[var(--color-muted)] bg-[var(--color-deep)]'}`}>
+                    <span className={`px-2 py-0.5 font-mono text-[10px] font-semibold ${post.isPublished ? 'text-[oklch(0.4_0.14_145)] bg-[oklch(0.94_0.06_145)]' : 'text-ih-muted bg-ih-surface-2'}`}>
                       {post.isPublished ? 'Published' : 'Draft'}
                     </span>
                   </div>
-                  <div className="text-right font-mono text-[12px] text-[var(--color-muted)]">
+                  <div className="text-right font-mono text-[12px] text-ih-muted">
                     {post.publishedAt ? new Date(post.publishedAt).toLocaleDateString() : '—'}
                   </div>
                   <div className="flex justify-end">
-                    <Link href={`/admin/cms/blog/${post.id}`} className="font-mono text-[11px] text-[var(--color-accent)] hover:underline">
+                    <Link href={`/admin/cms/blog/${post.id}`} className="font-mono text-[11px] text-ih-accent hover:underline">
                       Edit
                     </Link>
                   </div>
@@ -111,33 +111,33 @@ export default async function CmsPage({ params, searchParams }: Props) {
       )}
 
       {tab === 'pages' && (
-        <div className="border border-[var(--color-border)]">
+        <div className="border border-ih-border">
           {pages.length === 0 ? (
-            <div className="py-12 text-center text-[var(--color-muted)]">No pages yet.</div>
+            <div className="py-12 text-center text-ih-muted">No pages yet.</div>
           ) : (
             <>
-              <div className="grid grid-cols-[1fr_100px_100px_80px] px-4 py-2.5 bg-[var(--color-surface)] border-b border-[var(--color-border)] font-mono text-[10px] tracking-[0.1em] uppercase text-[var(--color-muted)]">
+              <div className="grid grid-cols-[1fr_100px_100px_80px] px-4 py-2.5 bg-ih-bg border-b border-ih-border font-mono text-[10px] tracking-[0.1em] uppercase text-ih-muted">
                 <div>Title</div>
                 <div className="text-center">Status</div>
                 <div className="text-right">Updated</div>
                 <div />
               </div>
               {pages.map((page, i) => (
-                <div key={page.id} className={`grid grid-cols-[1fr_100px_100px_80px] px-4 py-3.5 items-center bg-[var(--color-elevated)] ${i > 0 ? 'border-t border-[var(--color-border)]' : ''}`}>
+                <div key={page.id} className={`grid grid-cols-[1fr_100px_100px_80px] px-4 py-3.5 items-center bg-ih-surface ${i > 0 ? 'border-t border-ih-border' : ''}`}>
                   <div>
-                    <div className="text-[13px] font-medium text-[var(--color-primary)]">{page.title}</div>
-                    <div className="font-mono text-[11px] text-[var(--color-muted)]">/{page.slug}</div>
+                    <div className="text-[13px] font-medium text-ih-ink">{page.title}</div>
+                    <div className="font-mono text-[11px] text-ih-muted">/{page.slug}</div>
                   </div>
                   <div className="flex justify-center">
-                    <span className={`px-2 py-0.5 font-mono text-[10px] font-semibold ${page.isPublished ? 'text-[oklch(0.4_0.14_145)] bg-[oklch(0.94_0.06_145)]' : 'text-[var(--color-muted)] bg-[var(--color-deep)]'}`}>
+                    <span className={`px-2 py-0.5 font-mono text-[10px] font-semibold ${page.isPublished ? 'text-[oklch(0.4_0.14_145)] bg-[oklch(0.94_0.06_145)]' : 'text-ih-muted bg-ih-surface-2'}`}>
                       {page.isPublished ? 'Published' : 'Draft'}
                     </span>
                   </div>
-                  <div className="text-right font-mono text-[12px] text-[var(--color-muted)]">
+                  <div className="text-right font-mono text-[12px] text-ih-muted">
                     {new Date(page.updatedAt).toLocaleDateString()}
                   </div>
                   <div className="flex justify-end">
-                    <Link href={`/admin/cms/pages/${page.id}`} className="font-mono text-[11px] text-[var(--color-accent)] hover:underline">
+                    <Link href={`/admin/cms/pages/${page.id}`} className="font-mono text-[11px] text-ih-accent hover:underline">
                       Edit
                     </Link>
                   </div>

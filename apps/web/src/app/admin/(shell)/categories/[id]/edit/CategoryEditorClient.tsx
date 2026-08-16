@@ -67,7 +67,7 @@ export default function CategoryEditorClient({ category, recentImages }: Props) 
       <div className="flex items-end justify-between mb-1 gap-4">
         <div>
           <h1 className="text-[24px] font-semibold tracking-tight">{category.name}</h1>
-          <p className="font-mono text-[12px] text-[var(--color-muted)] mt-1">/c/{category.slug}</p>
+          <p className="font-mono text-[12px] text-ih-muted mt-1">/c/{category.slug}</p>
         </div>
         <div className="flex items-center gap-2">
           {savedAt && (
@@ -75,14 +75,14 @@ export default function CategoryEditorClient({ category, recentImages }: Props) 
           )}
           <Link
             href="/admin/categories"
-            className="h-9 px-3 grid place-items-center font-mono text-[12px] border border-[var(--color-border)] hover:bg-[var(--color-deep)]"
+            className="h-9 px-3 grid place-items-center font-mono text-[12px] border border-ih-border hover:bg-ih-surface-2"
           >
             ← All categories
           </Link>
         </div>
       </div>
 
-      <div className="flex border-b border-[var(--color-border)] mt-6 mb-6">
+      <div className="flex border-b border-ih-border mt-6 mb-6">
         {TABS.map((t) => (
           <button
             key={t.id}
@@ -90,8 +90,8 @@ export default function CategoryEditorClient({ category, recentImages }: Props) 
             onClick={() => setTab(t.id)}
             className={`px-4 py-2.5 font-mono text-[12px] border-b-2 -mb-px ${
               tab === t.id
-                ? 'border-[var(--color-accent)] text-[var(--color-primary)]'
-                : 'border-transparent text-[var(--color-muted)] hover:text-[var(--color-body)]'
+                ? 'border-ih-accent text-ih-ink'
+                : 'border-transparent text-ih-muted hover:text-ih-ink-2'
             }`}
           >
             {t.label}
@@ -100,7 +100,7 @@ export default function CategoryEditorClient({ category, recentImages }: Props) 
       </div>
 
       {tab === 'core' && (
-        <div className="max-w-2xl text-[13px] text-[var(--color-muted)] border border-dashed border-[var(--color-border)] p-6">
+        <div className="max-w-2xl text-[13px] text-ih-muted border border-dashed border-ih-border p-6">
           The Core editor for category metadata (name, slug, parent, default spec template,
           published flag) still lives on the <Link href="/admin/categories" className="underline">Categories list</Link>{' '}
           modal. Migration of those fields into this dedicated page is a follow-up.

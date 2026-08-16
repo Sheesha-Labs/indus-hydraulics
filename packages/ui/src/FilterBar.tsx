@@ -38,8 +38,8 @@ export function FilterBar({
             className={cn(
               'inline-flex items-center gap-1.5 h-7 px-3 text-xs font-medium border transition-colors',
               isActive
-                ? 'bg-[var(--color-primary)] text-[var(--color-elevated)] border-[var(--color-primary)]'
-                : 'bg-[var(--color-elevated)] text-[var(--color-body)] border-[var(--color-border)] hover:border-[var(--color-primary)] hover:text-[var(--color-primary)]'
+                ? 'bg-ih-navy text-white border-ih-ink'
+                : 'bg-ih-surface text-ih-ink-2 border-ih-border hover:border-ih-ink hover:text-ih-ink'
             )}
             aria-pressed={isActive}
           >
@@ -48,7 +48,7 @@ export function FilterBar({
               <span
                 className={cn(
                   'font-mono text-[10px]',
-                  isActive ? 'opacity-70' : 'text-[var(--color-caption)]'
+                  isActive ? 'opacity-70' : 'text-ih-muted-2'
                 )}
               >
                 {filter.count}
@@ -64,7 +64,7 @@ export function FilterBar({
         <button
           type="button"
           onClick={onClear}
-          className="inline-flex items-center h-7 px-2 text-xs text-[var(--color-danger)] hover:underline"
+          className="inline-flex items-center h-7 px-2 text-xs text-ih-danger hover:underline"
         >
           {clearLabel}
         </button>

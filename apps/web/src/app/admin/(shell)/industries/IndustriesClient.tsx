@@ -29,7 +29,7 @@ export default function IndustriesClient({ industries }: Props) {
         <button
           type="button"
           onClick={() => setShowCreate((v) => !v)}
-          className="h-9 px-4 bg-[var(--color-accent)] text-white text-[13px] font-medium hover:opacity-90"
+          className="h-9 px-4 bg-ih-accent text-white text-[13px] font-medium hover:opacity-90"
         >
           {showCreate ? '× Cancel' : '+ New industry'}
         </button>
@@ -38,12 +38,12 @@ export default function IndustriesClient({ industries }: Props) {
       {showCreate && <IndustryForm onDone={() => setShowCreate(false)} />}
 
       {industries.length === 0 ? (
-        <div className="py-16 border border-dashed border-[var(--color-border)] text-center">
-          <p className="text-[var(--color-muted)]">No industries yet — create the first one above.</p>
+        <div className="py-16 border border-dashed border-ih-border text-center">
+          <p className="text-ih-muted">No industries yet — create the first one above.</p>
         </div>
       ) : (
-        <div className="bg-white border border-[var(--color-border)]">
-          <div className="grid grid-cols-[1fr_140px_80px_100px_120px] px-4 py-2.5 bg-[var(--color-surface)] border-b border-[var(--color-border)] font-mono text-[10px] tracking-[0.1em] uppercase text-[var(--color-muted)]">
+        <div className="bg-white border border-ih-border">
+          <div className="grid grid-cols-[1fr_140px_80px_100px_120px] px-4 py-2.5 bg-ih-bg border-b border-ih-border font-mono text-[10px] tracking-[0.1em] uppercase text-ih-muted">
             <div>Name</div>
             <div>Slug</div>
             <div className="text-center">Accounts</div>
@@ -56,21 +56,21 @@ export default function IndustriesClient({ industries }: Props) {
             return (
               <div key={ind.id}>
                 {isEditing ? (
-                  <div className="border-t border-[var(--color-border)] bg-[var(--color-deep)] p-4">
+                  <div className="border-t border-ih-border bg-ih-surface-2 p-4">
                     <IndustryForm existing={ind} onDone={() => setEditingId(null)} />
                   </div>
                 ) : (
-                  <div className="grid grid-cols-[1fr_140px_80px_100px_120px] px-4 py-3 items-center text-[13px] border-t border-[var(--color-border)]">
+                  <div className="grid grid-cols-[1fr_140px_80px_100px_120px] px-4 py-3 items-center text-[13px] border-t border-ih-border">
                     <div>
-                      <div className="text-[var(--color-primary)] font-medium">{ind.name}</div>
+                      <div className="text-ih-ink font-medium">{ind.name}</div>
                       {ind.description && (
-                        <div className="text-[11px] text-[var(--color-muted)] mt-0.5 line-clamp-1">
+                        <div className="text-[11px] text-ih-muted mt-0.5 line-clamp-1">
                           {ind.description}
                         </div>
                       )}
                     </div>
-                    <div className="font-mono text-[11px] text-[var(--color-muted)]">{ind.slug}</div>
-                    <div className="text-center font-mono text-[12px] text-[var(--color-primary)]">
+                    <div className="font-mono text-[11px] text-ih-muted">{ind.slug}</div>
+                    <div className="text-center font-mono text-[12px] text-ih-ink">
                       {ind.accountCount}
                     </div>
                     <div className="flex justify-center">
@@ -78,7 +78,7 @@ export default function IndustriesClient({ industries }: Props) {
                         className={`px-2 py-0.5 font-mono text-[10px] font-semibold ${
                           ind.isPublished
                             ? 'text-[oklch(0.4_0.14_145)] bg-[oklch(0.94_0.06_145)]'
-                            : 'text-[var(--color-muted)] bg-[var(--color-deep)]'
+                            : 'text-ih-muted bg-ih-surface-2'
                         }`}
                       >
                         {ind.isPublished ? 'Published' : 'Draft'}
@@ -88,13 +88,13 @@ export default function IndustriesClient({ industries }: Props) {
                       <button
                         type="button"
                         onClick={() => setEditingId(ind.id)}
-                        className="font-mono text-[10px] text-[var(--color-muted)] hover:text-[var(--color-primary)]"
+                        className="font-mono text-[10px] text-ih-muted hover:text-ih-ink"
                       >
                         Edit
                       </button>
                       <Link
                         href={`/admin/industries/${ind.id}/edit`}
-                        className="font-mono text-[10px] text-[var(--color-muted)] hover:text-[var(--color-primary)]"
+                        className="font-mono text-[10px] text-ih-muted hover:text-ih-ink"
                         title="Open dedicated SEO editor"
                       >
                         SEO
@@ -141,7 +141,7 @@ function IndustryForm({
   return (
     <form
       action={onSubmit}
-      className="bg-white border border-[var(--color-border)] p-5 grid gap-3"
+      className="bg-white border border-ih-border p-5 grid gap-3"
     >
       {existing && <input type="hidden" name="id" value={existing.id} />}
 
@@ -152,7 +152,7 @@ function IndustryForm({
             name="name"
             defaultValue={existing?.name ?? ''}
             placeholder="Oil & Gas"
-            className="h-9 px-3 border border-[var(--color-border)] bg-white text-[13px]"
+            className="h-9 px-3 border border-ih-border bg-white text-[13px]"
           />
         </Field>
 
@@ -161,7 +161,7 @@ function IndustryForm({
             name="slug"
             defaultValue={existing?.slug ?? ''}
             placeholder="oil-gas"
-            className="h-9 px-3 border border-[var(--color-border)] bg-white font-mono text-[12px]"
+            className="h-9 px-3 border border-ih-border bg-white font-mono text-[12px]"
           />
         </Field>
       </div>
@@ -171,7 +171,7 @@ function IndustryForm({
           name="description"
           defaultValue={existing?.description ?? ''}
           rows={2}
-          className="px-3 py-2 border border-[var(--color-border)] bg-white text-[13px] resize-y"
+          className="px-3 py-2 border border-ih-border bg-white text-[13px] resize-y"
         />
       </Field>
 
@@ -180,19 +180,19 @@ function IndustryForm({
           <input
             name="seoTitle"
             defaultValue={existing?.seoTitle ?? ''}
-            className="h-9 px-3 border border-[var(--color-border)] bg-white text-[13px]"
+            className="h-9 px-3 border border-ih-border bg-white text-[13px]"
           />
         </Field>
         <Field label="SEO description">
           <input
             name="seoDescription"
             defaultValue={existing?.seoDescription ?? ''}
-            className="h-9 px-3 border border-[var(--color-border)] bg-white text-[13px]"
+            className="h-9 px-3 border border-ih-border bg-white text-[13px]"
           />
         </Field>
       </div>
 
-      <label className="flex items-center gap-2 h-9 text-[12px] text-[var(--color-body)]">
+      <label className="flex items-center gap-2 h-9 text-[12px] text-ih-ink-2">
         <input
           type="checkbox"
           name="isPublished"
@@ -205,14 +205,14 @@ function IndustryForm({
         <button
           type="submit"
           disabled={pending}
-          className="h-9 px-4 bg-[var(--color-primary)] text-white text-[12px] font-medium hover:opacity-90 disabled:opacity-50"
+          className="h-9 px-4 bg-ih-navy text-white text-[12px] font-medium hover:opacity-90 disabled:opacity-50"
         >
           {pending ? 'Saving…' : existing ? 'Save' : 'Create'}
         </button>
         <button
           type="button"
           onClick={onDone}
-          className="h-9 px-3 text-[12px] text-[var(--color-muted)] hover:text-[var(--color-primary)]"
+          className="h-9 px-3 text-[12px] text-ih-muted hover:text-ih-ink"
         >
           Cancel
         </button>
@@ -250,7 +250,7 @@ function DeleteIndustryButton({
             if (!res.success) setError(res.message)
           })
         }}
-        className="font-mono text-[10px] text-[var(--color-muted)] hover:text-[oklch(0.5_0.18_25)] disabled:opacity-30 disabled:cursor-not-allowed"
+        className="font-mono text-[10px] text-ih-muted hover:text-[oklch(0.5_0.18_25)] disabled:opacity-30 disabled:cursor-not-allowed"
       >
         {pending ? '…' : 'Delete'}
       </button>
@@ -270,9 +270,9 @@ function Field({
 }) {
   return (
     <label className="flex flex-col gap-1.5">
-      <span className="text-[11px] font-medium text-[var(--color-body)]">{label}</span>
+      <span className="text-[11px] font-medium text-ih-ink-2">{label}</span>
       {children}
-      {hint && <span className="text-[10px] text-[var(--color-caption)]">{hint}</span>}
+      {hint && <span className="text-[10px] text-ih-muted-2">{hint}</span>}
     </label>
   )
 }

@@ -46,7 +46,7 @@ export default function RevertButton({ auditLogId, beforeSummary }: Props) {
         type="button"
         onClick={handleClick}
         disabled={pending}
-        className="font-mono text-[10px] text-[var(--color-muted)] hover:text-[var(--color-primary)] disabled:opacity-50"
+        className="font-mono text-[10px] text-ih-muted hover:text-ih-ink disabled:opacity-50"
       >
         {pending ? 'Reverting…' : 'Revert'}
       </button>

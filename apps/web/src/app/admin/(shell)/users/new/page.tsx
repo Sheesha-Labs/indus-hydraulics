@@ -42,10 +42,10 @@ export default async function NewUserPage() {
 
   return (
     <div className="p-8">
-      <nav className="flex items-center gap-2 font-mono text-[12px] text-[var(--color-muted)] mb-6">
-        <Link href="/admin/users" className="hover:text-[var(--color-primary)]">Staff Users</Link>
+      <nav className="flex items-center gap-2 font-mono text-[12px] text-ih-muted mb-6">
+        <Link href="/admin/users" className="hover:text-ih-ink">Staff Users</Link>
         <span className="opacity-40">/</span>
-        <span className="text-[var(--color-primary)]">New Staff Member</span>
+        <span className="text-ih-ink">New Staff Member</span>
       </nav>
 
       <div className="max-w-[560px]">
@@ -53,31 +53,31 @@ export default async function NewUserPage() {
 
         <form action={createUser} className="space-y-5">
           <div>
-            <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+            <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
               Full Name
             </label>
             <input
               name="name"
               type="text"
               required
-              className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] focus:outline-none focus:border-[var(--color-accent)]"
+              className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent"
             />
           </div>
 
           <div>
-            <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+            <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
               Email Address
             </label>
             <input
               name="email"
               type="email"
               required
-              className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] focus:outline-none focus:border-[var(--color-accent)]"
+              className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent"
             />
           </div>
 
           <div>
-            <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+            <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
               Password
             </label>
             <input
@@ -85,18 +85,18 @@ export default async function NewUserPage() {
               type="password"
               required
               autoComplete="new-password"
-              className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] focus:outline-none focus:border-[var(--color-accent)]"
+              className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent"
             />
           </div>
 
           <div>
-            <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+            <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
               Role
             </label>
             <select
               name="role"
               defaultValue="sales_rep"
-              className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] focus:outline-none"
+              className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none"
             >
               {ROLES.map((r) => (
                 <option key={r.value} value={r.value}>{r.label}</option>
@@ -104,16 +104,16 @@ export default async function NewUserPage() {
             </select>
           </div>
 
-          <div className="flex items-center gap-3 pt-2 border-t border-[var(--color-border)]">
+          <div className="flex items-center gap-3 pt-2 border-t border-ih-border">
             <button
               type="submit"
-              className="h-9 px-5 bg-[var(--color-accent)] text-white font-mono text-[12px] hover:opacity-90"
+              className="h-9 px-5 bg-ih-accent text-white font-mono text-[12px] hover:opacity-90"
             >
               Create Staff Member
             </button>
             <Link
               href="/admin/users"
-              className="h-9 px-4 flex items-center border border-[var(--color-border)] font-mono text-[12px] text-[var(--color-body)] hover:bg-[var(--color-deep)]"
+              className="h-9 px-4 flex items-center border border-ih-border font-mono text-[12px] text-ih-ink-2 hover:bg-ih-surface-2"
             >
               Cancel
             </Link>

@@ -46,7 +46,7 @@ export default function RobotsForm({ seoSetting }: Props) {
       </div>
 
       <div>
-        <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+        <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
           robots.txt content
         </label>
         <textarea
@@ -56,9 +56,9 @@ export default function RobotsForm({ seoSetting }: Props) {
             seoSetting?.robotsTxt ??
             'User-agent: *\nAllow: /\n\nSitemap: https://indushydraulics.com/sitemap.xml'
           }
-          className="w-full px-3 py-2.5 border border-[var(--color-border)] bg-[var(--color-elevated)] font-mono text-[12px] focus:outline-none focus:border-[var(--color-accent)] resize-none"
+          className="w-full px-3 py-2.5 border border-ih-border bg-ih-surface font-mono text-[12px] focus:outline-none focus:border-ih-accent resize-none"
         />
-        <p className="mt-2 text-[11px] text-[var(--color-muted)]">
+        <p className="mt-2 text-[11px] text-ih-muted">
           Lines starting with <code>#</code> are comments. The Sitemap directive is appended
           automatically when present in `SeoSetting.robotsTxtAutoAppendSitemap`.
         </p>
@@ -68,12 +68,12 @@ export default function RobotsForm({ seoSetting }: Props) {
         <button
           type="submit"
           disabled={isPending}
-          className="h-9 px-5 bg-[var(--color-accent)] text-white font-mono text-[12px] hover:opacity-90 disabled:opacity-50"
+          className="h-9 px-5 bg-ih-accent text-white font-mono text-[12px] hover:opacity-90 disabled:opacity-50"
         >
           {isPending ? 'Saving…' : 'Save robots.txt'}
         </button>
         {saved && (
-          <span className="font-mono text-[11px] text-[var(--color-good)]">Saved ✓</span>
+          <span className="font-mono text-[11px] text-ih-success">Saved ✓</span>
         )}
         {error && (
           <span className="font-mono text-[11px] text-[oklch(0.5_0.18_25)]" role="alert">

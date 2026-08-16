@@ -9,9 +9,9 @@ export default function AdminTopbar() {
   const crumbs = deriveCrumbs(pathname)
 
   return (
-    <div className="h-14 bg-white border-b border-[#e6e1d5] flex items-center px-6 gap-5 sticky top-0 z-20">
+    <div className="sticky top-0 z-20 flex h-[60px] items-center gap-5 border-b border-ih-border bg-ih-surface px-[26px]">
       {/* Breadcrumbs */}
-      <nav className="font-mono text-[12px] text-ih-muted flex items-center gap-1">
+      <nav className="flex items-center gap-1 font-mono text-[12px] text-ih-muted">
         {crumbs.map((crumb, i) => {
           const isLast = i === crumbs.length - 1
           return (
@@ -31,7 +31,7 @@ export default function AdminTopbar() {
 
       {/* Search */}
       <div className="flex-1 flex justify-end">
-        <div className="flex items-center gap-2 h-9 px-3 bg-[#f5f3ee] border border-[#d9d4c8] text-[13px] text-ih-muted max-w-[380px] w-full">
+        <div className="flex h-10 w-full max-w-[380px] items-center gap-2 rounded-md border border-ih-border bg-ih-surface-2 px-3 text-[13.5px] text-ih-muted">
           <svg
             width="14"
             height="14"
@@ -44,7 +44,7 @@ export default function AdminTopbar() {
             <circle cx="7" cy="7" r="5" /><path d="M11 11l3 3" />
           </svg>
           <span className="flex-1 text-ih-muted-2">Search products, orders, pages…</span>
-          <span className="font-mono text-[10px] bg-[#ebe7df] border border-[#d9d4c8] px-1.5 py-0.5">
+          <span className="rounded-[3px] border border-ih-border bg-ih-surface px-1.5 py-0.5 font-mono text-[10px]">
             ⌘K
           </span>
         </div>
@@ -53,7 +53,7 @@ export default function AdminTopbar() {
       {/* Actions */}
       <div className="flex items-center gap-2">
         <button
-          className="w-[34px] h-[34px] border border-[#d9d4c8] bg-white grid place-items-center text-ih-ink-2 hover:border-ih-accent transition-colors"
+          className="grid h-9 w-9 place-items-center rounded-md border border-ih-border bg-ih-surface text-ih-ink-2 transition-colors hover:border-ih-accent hover:text-ih-accent"
           title="Help"
         >
           <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
@@ -61,7 +61,7 @@ export default function AdminTopbar() {
           </svg>
         </button>
         <button
-          className="relative w-[34px] h-[34px] border border-[#d9d4c8] bg-white grid place-items-center text-ih-ink-2 hover:border-ih-accent transition-colors"
+          className="relative grid h-9 w-9 place-items-center rounded-md border border-ih-border bg-ih-surface text-ih-ink-2 transition-colors hover:border-ih-accent hover:text-ih-accent"
           title="Notifications"
         >
           <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">

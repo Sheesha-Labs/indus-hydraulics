@@ -97,7 +97,7 @@ export default function BlogPostEditorClient({ isNew, post, recentImages }: Prop
       <div className="mb-6">
         <Link
           href="/admin/cms?tab=blog"
-          className="font-mono text-[12px] text-[var(--color-muted)] hover:text-[var(--color-primary)] mb-2 inline-block"
+          className="font-mono text-[12px] text-ih-muted hover:text-ih-ink mb-2 inline-block"
         >
           ← CMS
         </Link>
@@ -112,7 +112,7 @@ export default function BlogPostEditorClient({ isNew, post, recentImages }: Prop
       </div>
 
       {!isNew && (
-        <div className="flex border-b border-[var(--color-border)] mb-6">
+        <div className="flex border-b border-ih-border mb-6">
           {TABS.map((t) => (
             <button
               key={t.id}
@@ -120,8 +120,8 @@ export default function BlogPostEditorClient({ isNew, post, recentImages }: Prop
               onClick={() => setTab(t.id)}
               className={`px-4 py-2.5 font-mono text-[12px] border-b-2 -mb-px ${
                 tab === t.id
-                  ? 'border-[var(--color-accent)] text-[var(--color-primary)]'
-                  : 'border-transparent text-[var(--color-muted)] hover:text-[var(--color-body)]'
+                  ? 'border-ih-accent text-ih-ink'
+                  : 'border-transparent text-ih-muted hover:text-ih-ink-2'
               }`}
             >
               {t.label}
@@ -161,7 +161,7 @@ function ContentForm({ isNew, post }: { isNew: boolean; post: BlogPost | null })
 
       <div className="grid grid-cols-2 gap-4">
         <div className="col-span-2">
-          <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+          <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
             Title *
           </label>
           <input
@@ -170,12 +170,12 @@ function ContentForm({ isNew, post }: { isNew: boolean; post: BlogPost | null })
             defaultValue={post?.title ?? ''}
             type="text"
             placeholder="Post title"
-            className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[15px] font-semibold text-[var(--color-primary)] placeholder:text-[var(--color-caption)] focus:outline-none focus:border-[var(--color-accent)]"
+            className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[15px] font-semibold text-ih-ink placeholder:text-ih-muted-2 focus:outline-none focus:border-ih-accent"
           />
         </div>
 
         <div>
-          <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+          <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
             Slug *
           </label>
           <input
@@ -184,12 +184,12 @@ function ContentForm({ isNew, post }: { isNew: boolean; post: BlogPost | null })
             defaultValue={post?.slug ?? ''}
             type="text"
             placeholder="url-friendly-slug"
-            className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] font-mono text-[var(--color-primary)] placeholder:text-[var(--color-caption)] focus:outline-none focus:border-[var(--color-accent)]"
+            className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] font-mono text-ih-ink placeholder:text-ih-muted-2 focus:outline-none focus:border-ih-accent"
           />
         </div>
 
         <div>
-          <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+          <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
             Tags (comma-separated)
           </label>
           <input
@@ -197,13 +197,13 @@ function ContentForm({ isNew, post }: { isNew: boolean; post: BlogPost | null })
             defaultValue={post ? post.tags.join(', ') : ''}
             type="text"
             placeholder="hydraulics, maintenance, pumps"
-            className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] text-[var(--color-primary)] placeholder:text-[var(--color-caption)] focus:outline-none focus:border-[var(--color-accent)]"
+            className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] text-ih-ink placeholder:text-ih-muted-2 focus:outline-none focus:border-ih-accent"
           />
         </div>
       </div>
 
       <div>
-        <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+        <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
           Excerpt
         </label>
         <textarea
@@ -211,12 +211,12 @@ function ContentForm({ isNew, post }: { isNew: boolean; post: BlogPost | null })
           defaultValue={post?.excerpt ?? ''}
           rows={2}
           placeholder="Short summary shown in blog listings"
-          className="w-full px-3 py-2.5 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] text-[var(--color-primary)] placeholder:text-[var(--color-caption)] focus:outline-none focus:border-[var(--color-accent)] resize-none"
+          className="w-full px-3 py-2.5 border border-ih-border bg-ih-surface text-[13px] text-ih-ink placeholder:text-ih-muted-2 focus:outline-none focus:border-ih-accent resize-none"
         />
       </div>
 
       <div>
-        <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+        <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
           Body *
         </label>
         <textarea
@@ -225,7 +225,7 @@ function ContentForm({ isNew, post }: { isNew: boolean; post: BlogPost | null })
           defaultValue={post?.body ?? ''}
           rows={18}
           placeholder="Post content (HTML or Markdown)"
-          className="w-full px-3 py-2.5 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] font-mono text-[var(--color-primary)] placeholder:text-[var(--color-caption)] focus:outline-none focus:border-[var(--color-accent)] resize-none"
+          className="w-full px-3 py-2.5 border border-ih-border bg-ih-surface text-[13px] font-mono text-ih-ink placeholder:text-ih-muted-2 focus:outline-none focus:border-ih-accent resize-none"
         />
       </div>
 
@@ -233,31 +233,31 @@ function ContentForm({ isNew, post }: { isNew: boolean; post: BlogPost | null })
           set baseline meta without leaving the editor. The richer SEO drawer
           (canonical, robots, OG image, schema, sitemap, …) lives in the SEO
           tab. Both write to the same row; whichever was saved last wins. */}
-      <div className="border-t border-[var(--color-border)] pt-4">
-        <p className="font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-3">
+      <div className="border-t border-ih-border pt-4">
+        <p className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-3">
           SEO basics
         </p>
-        <p className="text-[12px] text-[var(--color-caption)] mb-3">
+        <p className="text-[12px] text-ih-muted-2 mb-3">
           For canonical URLs, OG images, sitemap controls, and JSON-LD overrides, switch to the
           SEO tab.
         </p>
         <div className="grid grid-cols-2 gap-4">
           <div>
-            <label className="block font-mono text-[11px] text-[var(--color-muted)] mb-1">Meta Title</label>
+            <label className="block font-mono text-[11px] text-ih-muted mb-1">Meta Title</label>
             <input
               name="seoTitle"
               defaultValue={post?.seoTitle ?? ''}
               type="text"
-              className="w-full h-9 px-3 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] focus:outline-none focus:border-[var(--color-accent)]"
+              className="w-full h-9 px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent"
             />
           </div>
           <div>
-            <label className="block font-mono text-[11px] text-[var(--color-muted)] mb-1">Meta Description</label>
+            <label className="block font-mono text-[11px] text-ih-muted mb-1">Meta Description</label>
             <input
               name="seoDescription"
               defaultValue={post?.seoDescription ?? ''}
               type="text"
-              className="w-full h-9 px-3 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] focus:outline-none focus:border-[var(--color-accent)]"
+              className="w-full h-9 px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent"
             />
           </div>
         </div>
@@ -268,7 +268,7 @@ function ContentForm({ isNew, post }: { isNew: boolean; post: BlogPost | null })
           type="submit"
           name="publish"
           value="0"
-          className="h-10 px-6 border border-[var(--color-border)] text-[13px] font-medium text-[var(--color-body)] hover:bg-[var(--color-deep)] transition-colors"
+          className="h-10 px-6 border border-ih-border text-[13px] font-medium text-ih-ink-2 hover:bg-ih-surface-2 transition-colors"
         >
           Save Draft
         </button>
@@ -276,7 +276,7 @@ function ContentForm({ isNew, post }: { isNew: boolean; post: BlogPost | null })
           type="submit"
           name="publish"
           value="1"
-          className="h-10 px-6 bg-[var(--color-accent)] text-white text-[13px] font-medium hover:opacity-90 transition-opacity"
+          className="h-10 px-6 bg-ih-accent text-white text-[13px] font-medium hover:opacity-90 transition-opacity"
         >
           {post?.isPublished ? 'Update & Publish' : 'Publish'}
         </button>
@@ -284,7 +284,7 @@ function ContentForm({ isNew, post }: { isNew: boolean; post: BlogPost | null })
           <Link
             href={`/blog/${post.slug}`}
             target="_blank"
-            className="font-mono text-[12px] text-[var(--color-accent)] hover:underline ml-2"
+            className="font-mono text-[12px] text-ih-accent hover:underline ml-2"
           >
             View post ↗
           </Link>

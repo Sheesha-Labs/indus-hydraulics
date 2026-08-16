@@ -22,7 +22,7 @@ export default async function SettingsPage({ searchParams }: Props) {
     <div className="p-8">
       <div className="mb-6">
         <h1 className="text-[24px] font-semibold tracking-tight">Settings</h1>
-        <p className="text-[13px] text-[var(--color-muted)] mt-1">Store configuration and email templates.</p>
+        <p className="text-[13px] text-ih-muted mt-1">Store configuration and email templates.</p>
       </div>
 
       <SettingsPageClient

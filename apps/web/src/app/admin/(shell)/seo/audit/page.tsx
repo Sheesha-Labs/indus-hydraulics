@@ -30,8 +30,8 @@ export default async function SeoAuditPage() {
 
   if (rows.length === 0) {
     return (
-      <div className="border border-dashed border-[var(--color-border)] py-16 text-center max-w-[800px]">
-        <p className="text-[var(--color-muted)] text-[13px]">
+      <div className="border border-dashed border-ih-border py-16 text-center max-w-[800px]">
+        <p className="text-ih-muted text-[13px]">
           No audit entries yet. Edits made from the SEO entity drawer or
           infrastructure pages will start populating this log.
         </p>
@@ -40,10 +40,10 @@ export default async function SeoAuditPage() {
   }
 
   return (
-    <div className="border border-[var(--color-border)] overflow-hidden max-w-full">
+    <div className="border border-ih-border overflow-hidden max-w-full">
       <table className="w-full text-[13px]">
         <thead>
-          <tr className="border-b border-[var(--color-border)] bg-[var(--color-deep)]">
+          <tr className="border-b border-ih-border bg-ih-surface-2">
             <Th>When</Th>
             <Th>Actor</Th>
             <Th>Entity</Th>
@@ -61,11 +61,11 @@ export default async function SeoAuditPage() {
             return (
               <tr
                 key={row.id}
-                className={`border-b border-[var(--color-border)] last:border-0 align-top hover:bg-[var(--color-deep)] ${
+                className={`border-b border-ih-border last:border-0 align-top hover:bg-ih-surface-2 ${
                   isInfra ? 'bg-[oklch(0.98_0.02_70)]/40' : ''
                 }`}
               >
-                <td className="px-3 py-3 font-mono text-[11px] text-[var(--color-muted)] whitespace-nowrap">
+                <td className="px-3 py-3 font-mono text-[11px] text-ih-muted whitespace-nowrap">
                   {row.createdAt.toLocaleString('en-GB', {
                     day: 'numeric',
                     month: 'short',
@@ -73,31 +73,31 @@ export default async function SeoAuditPage() {
                     minute: '2-digit',
                   })}
                 </td>
-                <td className="px-3 py-3 font-mono text-[11px] text-[var(--color-body)]">
-                  {actorName ?? <span className="text-[var(--color-muted)]">system</span>}
+                <td className="px-3 py-3 font-mono text-[11px] text-ih-ink-2">
+                  {actorName ?? <span className="text-ih-muted">system</span>}
                 </td>
                 <td className="px-3 py-3 font-mono text-[11px]">
                   <div className={isInfra ? 'text-[oklch(0.5_0.14_70)]' : ''}>{row.entityType}</div>
                   {row.entityId && (
-                    <div className="text-[var(--color-muted)] text-[10px] truncate max-w-[160px]">
+                    <div className="text-ih-muted text-[10px] truncate max-w-[160px]">
                       {row.entityId}
                     </div>
                   )}
                 </td>
-                <td className="px-3 py-3 font-mono text-[11px] text-[var(--color-body)]">
+                <td className="px-3 py-3 font-mono text-[11px] text-ih-ink-2">
                   {row.field}
                 </td>
                 <td className="px-3 py-3 text-[12px] max-w-[480px]">
                   <div className="grid grid-cols-2 gap-3">
-                    <div className="font-mono text-[11px] text-[var(--color-muted)] whitespace-pre-wrap break-all">
+                    <div className="font-mono text-[11px] text-ih-muted whitespace-pre-wrap break-all">
                       {formatValue(row.before)}
                     </div>
-                    <div className="font-mono text-[11px] text-[var(--color-body)] whitespace-pre-wrap break-all">
+                    <div className="font-mono text-[11px] text-ih-ink-2 whitespace-pre-wrap break-all">
                       {formatValue(row.after)}
                     </div>
                   </div>
                 </td>
-                <td className="px-3 py-3 text-[12px] text-[var(--color-muted)]">
+                <td className="px-3 py-3 text-[12px] text-ih-muted">
                   {row.reason ?? '—'}
                 </td>
                 <td className="px-3 py-3 text-right whitespace-nowrap">
@@ -125,7 +125,7 @@ function formatValue(v: unknown): string {
 
 function Th({ children }: { children: React.ReactNode }) {
   return (
-    <th className="text-left px-3 py-2.5 font-mono text-[10px] uppercase tracking-[0.1em] text-[var(--color-muted)]">
+    <th className="text-left px-3 py-2.5 font-mono text-[10px] uppercase tracking-[0.1em] text-ih-muted">
       {children}
     </th>
   )

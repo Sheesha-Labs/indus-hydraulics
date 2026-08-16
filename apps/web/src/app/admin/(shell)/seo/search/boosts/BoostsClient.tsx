@@ -49,19 +49,19 @@ export default function BoostsClient({ rows: initialRows }: Props) {
 
   return (
     <div className="max-w-[860px]">
-      <div className="mb-6 max-w-[640px] text-[13px] text-[var(--color-muted)]">
+      <div className="mb-6 max-w-[640px] text-[13px] text-ih-muted">
         Boosts multiply a product&apos;s rank score at search time.
         <strong> 1.0</strong> is neutral, <strong>{'>'}1</strong> lifts, <strong>{'<'}1</strong>{' '}
         buries, <strong>0</strong> effectively hides. Optional expiry auto-clears the boost.
       </div>
 
-      <details className="mb-6 border border-[var(--color-border)] bg-[var(--color-elevated)] p-4">
-        <summary className="font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] cursor-pointer">
+      <details className="mb-6 border border-ih-border bg-ih-surface p-4">
+        <summary className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted cursor-pointer">
           Add product boost
         </summary>
         <form action={handleAdd} className="mt-3 grid grid-cols-[1fr_120px_180px_auto] gap-3 items-end">
           <div>
-            <label className="block font-mono text-[10px] uppercase text-[var(--color-muted)] mb-1">
+            <label className="block font-mono text-[10px] uppercase text-ih-muted mb-1">
               Product SKU
             </label>
             <input
@@ -69,11 +69,11 @@ export default function BoostsClient({ rows: initialRows }: Props) {
               type="text"
               required
               placeholder="ABC-1234"
-              className="w-full h-9 px-3 border border-[var(--color-border)] bg-[var(--color-surface)] text-[13px] focus:outline-none focus:border-[var(--color-accent)]"
+              className="w-full h-9 px-3 border border-ih-border bg-ih-bg text-[13px] focus:outline-none focus:border-ih-accent"
             />
           </div>
           <div>
-            <label className="block font-mono text-[10px] uppercase text-[var(--color-muted)] mb-1">
+            <label className="block font-mono text-[10px] uppercase text-ih-muted mb-1">
               Boost (0–10)
             </label>
             <input
@@ -84,23 +84,23 @@ export default function BoostsClient({ rows: initialRows }: Props) {
               max={10}
               step={0.1}
               defaultValue="1.5"
-              className="w-full h-9 px-3 border border-[var(--color-border)] bg-[var(--color-surface)] text-[13px] focus:outline-none focus:border-[var(--color-accent)]"
+              className="w-full h-9 px-3 border border-ih-border bg-ih-bg text-[13px] focus:outline-none focus:border-ih-accent"
             />
           </div>
           <div>
-            <label className="block font-mono text-[10px] uppercase text-[var(--color-muted)] mb-1">
+            <label className="block font-mono text-[10px] uppercase text-ih-muted mb-1">
               Expires (optional)
             </label>
             <input
               name="expiresAt"
               type="datetime-local"
-              className="w-full h-9 px-3 border border-[var(--color-border)] bg-[var(--color-surface)] text-[13px] focus:outline-none focus:border-[var(--color-accent)]"
+              className="w-full h-9 px-3 border border-ih-border bg-ih-bg text-[13px] focus:outline-none focus:border-ih-accent"
             />
           </div>
           <button
             type="submit"
             disabled={pending}
-            className="h-9 px-4 bg-[var(--color-accent)] text-white font-mono text-[12px] hover:opacity-90 disabled:opacity-50"
+            className="h-9 px-4 bg-ih-accent text-white font-mono text-[12px] hover:opacity-90 disabled:opacity-50"
           >
             Add
           </button>
@@ -114,14 +114,14 @@ export default function BoostsClient({ rows: initialRows }: Props) {
       )}
 
       {rows.length === 0 ? (
-        <div className="py-16 text-center border border-dashed border-[var(--color-border)]">
-          <p className="text-[var(--color-muted)] text-[13px]">No boosts configured.</p>
+        <div className="py-16 text-center border border-dashed border-ih-border">
+          <p className="text-ih-muted text-[13px]">No boosts configured.</p>
         </div>
       ) : (
-        <div className="border border-[var(--color-border)] overflow-hidden">
+        <div className="border border-ih-border overflow-hidden">
           <table className="w-full text-[13px]">
             <thead>
-              <tr className="border-b border-[var(--color-border)] bg-[var(--color-deep)]">
+              <tr className="border-b border-ih-border bg-ih-surface-2">
                 <Th>Product</Th>
                 <Th>Boost</Th>
                 <Th>Expires</Th>
@@ -132,16 +132,16 @@ export default function BoostsClient({ rows: initialRows }: Props) {
               {rows.map((r) => (
                 <tr
                   key={r.id}
-                  className="border-b border-[var(--color-border)] last:border-0 hover:bg-[var(--color-deep)]"
+                  className="border-b border-ih-border last:border-0 hover:bg-ih-surface-2"
                 >
                   <td className="px-3 py-3">
-                    <div className="text-[var(--color-body)] truncate max-w-[400px]">{r.title}</div>
-                    <div className="font-mono text-[11px] text-[var(--color-muted)]">{r.sku}</div>
+                    <div className="text-ih-ink-2 truncate max-w-[400px]">{r.title}</div>
+                    <div className="font-mono text-[11px] text-ih-muted">{r.sku}</div>
                   </td>
-                  <td className="px-3 py-3 font-mono text-[12px] text-[var(--color-body)] tabular-nums">
+                  <td className="px-3 py-3 font-mono text-[12px] text-ih-ink-2 tabular-nums">
                     × {r.boost.toFixed(2)}
                   </td>
-                  <td className="px-3 py-3 font-mono text-[11px] text-[var(--color-muted)]">
+                  <td className="px-3 py-3 font-mono text-[11px] text-ih-muted">
                     {r.expiresAt
                       ? new Date(r.expiresAt).toLocaleDateString('en-GB', {
                           day: 'numeric',
@@ -155,7 +155,7 @@ export default function BoostsClient({ rows: initialRows }: Props) {
                       type="button"
                       onClick={() => handleDelete(r.id)}
                       disabled={pending}
-                      className="font-mono text-[11px] text-[var(--color-danger)] hover:underline disabled:opacity-50"
+                      className="font-mono text-[11px] text-ih-danger hover:underline disabled:opacity-50"
                     >
                       Delete
                     </button>
@@ -172,7 +172,7 @@ export default function BoostsClient({ rows: initialRows }: Props) {
 
 function Th({ children }: { children: React.ReactNode }) {
   return (
-    <th className="text-left px-3 py-2.5 font-mono text-[10px] uppercase tracking-[0.1em] text-[var(--color-muted)]">
+    <th className="text-left px-3 py-2.5 font-mono text-[10px] uppercase tracking-[0.1em] text-ih-muted">
       {children}
     </th>
   )

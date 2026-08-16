@@ -27,14 +27,14 @@ export default async function NewProductPage({ params }: Props) {
             const r = await createProduct(fd)
             if (r && !r.success) throw new Error(r.message)
           }}
-          className="flex flex-col gap-5 bg-white border border-[var(--color-border)] p-6"
+          className="flex flex-col gap-5 bg-white border border-ih-border p-6"
         >
 
           <Field label="SKU *" hint="Unique stock-keeping unit code (e.g. IH-PP-11KW-30-DS)">
             <input
               required
               name="sku"
-              className="h-9 w-full px-3 border border-[var(--color-border)] bg-white font-mono text-[13px]"
+              className="h-9 w-full px-3 border border-ih-border bg-white font-mono text-[13px]"
               placeholder="IH-XXXX-0000"
             />
           </Field>
@@ -43,7 +43,7 @@ export default async function NewProductPage({ params }: Props) {
             <input
               required
               name="title"
-              className="h-9 w-full px-3 border border-[var(--color-border)] bg-white text-[13px]"
+              className="h-9 w-full px-3 border border-ih-border bg-white text-[13px]"
               placeholder="Standard Hydraulic Power Pack 11kW 30L/min"
             />
           </Field>
@@ -53,7 +53,7 @@ export default async function NewProductPage({ params }: Props) {
               <select
                 name="brandId"
                 defaultValue=""
-                className="h-9 w-full px-2 border border-[var(--color-border)] bg-white text-[13px]"
+                className="h-9 w-full px-2 border border-ih-border bg-white text-[13px]"
               >
                 <option value="">— None —</option>
                 {brands.map((b) => (
@@ -68,7 +68,7 @@ export default async function NewProductPage({ params }: Props) {
               <select
                 name="categoryId"
                 defaultValue=""
-                className="h-9 w-full px-2 border border-[var(--color-border)] bg-white text-[13px]"
+                className="h-9 w-full px-2 border border-ih-border bg-white text-[13px]"
               >
                 <option value="">— None —</option>
                 {categories.map((c) => (
@@ -84,7 +84,7 @@ export default async function NewProductPage({ params }: Props) {
             <select
               name="status"
               defaultValue="draft"
-              className="h-9 w-full px-2 border border-[var(--color-border)] bg-white text-[13px]"
+              className="h-9 w-full px-2 border border-ih-border bg-white text-[13px]"
             >
               <option value="draft">Draft</option>
               <option value="active">Active</option>
@@ -95,13 +95,13 @@ export default async function NewProductPage({ params }: Props) {
           <div className="flex items-center gap-3 pt-2">
             <button
               type="submit"
-              className="h-10 px-5 bg-[var(--color-accent)] text-white text-[13px] font-medium hover:opacity-90"
+              className="h-10 px-5 bg-ih-accent text-white text-[13px] font-medium hover:opacity-90"
             >
               Create product
             </button>
             <Link
               href={`/admin/products`}
-              className="h-10 px-5 flex items-center text-[13px] text-[var(--color-muted)] hover:text-[var(--color-primary)]"
+              className="h-10 px-5 flex items-center text-[13px] text-ih-muted hover:text-ih-ink"
             >
               Cancel
             </Link>
@@ -122,9 +122,9 @@ function Field({
 }) {
   return (
     <label className="flex flex-col gap-1.5">
-      <span className="text-[12px] font-medium text-[var(--color-body)]">{label}</span>
+      <span className="text-[12px] font-medium text-ih-ink-2">{label}</span>
       {children}
-      {hint && <span className="text-[11px] text-[var(--color-caption)]">{hint}</span>}
+      {hint && <span className="text-[11px] text-ih-muted-2">{hint}</span>}
     </label>
   )
 }

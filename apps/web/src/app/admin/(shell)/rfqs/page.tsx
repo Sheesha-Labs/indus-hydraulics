@@ -40,7 +40,7 @@ const STATUS_COLORS: Record<string, string> = {
 }
 
 const URGENCY_COLORS: Record<string, string> = {
-  routine: 'text-[var(--color-muted)]',
+  routine: 'text-ih-muted',
   priority: 'text-[oklch(0.5_0.12_60)] font-semibold',
   plant_down: 'text-[oklch(0.5_0.14_25)] font-semibold',
 }
@@ -79,7 +79,7 @@ export default async function AdminRfqsPage({ searchParams }: Props) {
     <div className="px-8 py-6 pb-16">
       <div className="flex items-center justify-between mb-6">
         <h1 className="text-[24px] font-semibold tracking-tight">RFQ Queue</h1>
-        <div className="font-mono text-[13px] text-[var(--color-muted)]">{rfqs.length} requests</div>
+        <div className="font-mono text-[13px] text-ih-muted">{rfqs.length} requests</div>
       </div>
 
       {/* Filters */}
@@ -93,8 +93,8 @@ export default async function AdminRfqsPage({ searchParams }: Props) {
               href={href}
               className={`px-3 py-1.5 font-mono text-[12px] border transition-colors ${
                 active
-                  ? 'border-[var(--color-accent)] bg-[var(--color-accent)] text-white'
-                  : 'border-[var(--color-border)] text-[var(--color-body)] hover:border-[var(--color-body)]'
+                  ? 'border-ih-accent bg-ih-accent text-white'
+                  : 'border-ih-border text-ih-ink-2 hover:border-ih-accent'
               }`}
             >
               {f.label}
@@ -109,8 +109,8 @@ export default async function AdminRfqsPage({ searchParams }: Props) {
               href={filterUrl({ urgency: urgencyFilter === u ? undefined : u })}
               className={`px-3 py-1.5 font-mono text-[12px] border transition-colors ${
                 urgencyFilter === u
-                  ? 'border-[var(--color-accent)] bg-[var(--color-accent)] text-white'
-                  : 'border-[var(--color-border)] text-[var(--color-body)] hover:border-[var(--color-body)]'
+                  ? 'border-ih-accent bg-ih-accent text-white'
+                  : 'border-ih-border text-ih-ink-2 hover:border-ih-accent'
               }`}
             >
               {u === 'plant_down' ? '🔴 Plant Down' : u === 'priority' ? '🟡 Priority' : 'Routine'}
@@ -120,13 +120,13 @@ export default async function AdminRfqsPage({ searchParams }: Props) {
       </div>
 
       {rfqs.length === 0 ? (
-        <div className="py-16 border border-dashed border-[var(--color-border)] text-center">
-          <p className="text-[var(--color-muted)]">No RFQs match these filters.</p>
+        <div className="py-16 border border-dashed border-ih-border text-center">
+          <p className="text-ih-muted">No RFQs match these filters.</p>
         </div>
       ) : (
-        <div className="border border-[var(--color-border)]">
+        <div className="border border-ih-border">
           {/* Header */}
-          <div className="grid grid-cols-[1fr_180px_80px_80px_130px_130px] px-4 py-2.5 bg-[var(--color-surface)] border-b border-[var(--color-border)] font-mono text-[10px] tracking-[0.1em] uppercase text-[var(--color-muted)]">
+          <div className="grid grid-cols-[1fr_180px_80px_80px_130px_130px] px-4 py-2.5 bg-ih-bg border-b border-ih-border font-mono text-[10px] tracking-[0.1em] uppercase text-ih-muted">
             <div>Reference</div>
             <div>Account</div>
             <div className="text-center">Lines</div>
@@ -139,33 +139,33 @@ export default async function AdminRfqsPage({ searchParams }: Props) {
             <Link
               key={rfq.id}
               href={`/admin/rfqs/${rfq.code}`}
-              className={`grid grid-cols-[1fr_180px_80px_80px_130px_130px] px-4 py-3.5 items-center bg-[var(--color-elevated)] hover:bg-[var(--color-deep)] transition-colors ${i > 0 ? 'border-t border-[var(--color-border)]' : ''}`}
+              className={`grid grid-cols-[1fr_180px_80px_80px_130px_130px] px-4 py-3.5 items-center bg-ih-surface hover:bg-ih-surface-2 transition-colors ${i > 0 ? 'border-t border-ih-border' : ''}`}
             >
               <div>
-                <div className="font-mono text-[13px] font-semibold text-[var(--color-primary)]">{rfq.code}</div>
+                <div className="font-mono text-[13px] font-semibold text-ih-ink">{rfq.code}</div>
                 {rfq.subject && (
-                  <div className="text-[12px] text-[var(--color-muted)] mt-0.5 truncate max-w-[260px]">{rfq.subject}</div>
+                  <div className="text-[12px] text-ih-muted mt-0.5 truncate max-w-[260px]">{rfq.subject}</div>
                 )}
                 {rfq.assignedEngineer && (
-                  <div className="font-mono text-[10px] text-[var(--color-caption)] mt-0.5">
+                  <div className="font-mono text-[10px] text-ih-muted-2 mt-0.5">
                     Eng: {rfq.assignedEngineer.name}
                   </div>
                 )}
               </div>
               <div>
-                <div className="text-[13px] font-medium text-[var(--color-primary)] truncate">{rfq.account.legalName}</div>
-                <div className="font-mono text-[11px] text-[var(--color-muted)]">{rfq.account.code}</div>
+                <div className="text-[13px] font-medium text-ih-ink truncate">{rfq.account.legalName}</div>
+                <div className="font-mono text-[11px] text-ih-muted">{rfq.account.code}</div>
               </div>
-              <div className="text-center font-mono text-[13px] text-[var(--color-primary)]">{rfq.lines.length}</div>
+              <div className="text-center font-mono text-[13px] text-ih-ink">{rfq.lines.length}</div>
               <div className={`text-center font-mono text-[11px] capitalize ${URGENCY_COLORS[rfq.urgency] ?? ''}`}>
                 {rfq.urgency === 'plant_down' ? '🔴 P.Down' : rfq.urgency}
               </div>
               <div className="flex justify-center">
-                <span className={`px-2 py-0.5 font-mono text-[10px] font-semibold ${STATUS_COLORS[rfq.status] ?? 'text-[var(--color-muted)] bg-[var(--color-deep)]'}`}>
+                <span className={`px-2 py-0.5 font-mono text-[10px] font-semibold ${STATUS_COLORS[rfq.status] ?? 'text-ih-muted bg-ih-surface-2'}`}>
                   {STATUS_LABELS[rfq.status] ?? rfq.status}
                 </span>
               </div>
-              <div className="text-right font-mono text-[12px] text-[var(--color-muted)]">
+              <div className="text-right font-mono text-[12px] text-ih-muted">
                 {rfq.submittedAt ? new Date(rfq.submittedAt).toLocaleDateString() : '—'}
               </div>
             </Link>

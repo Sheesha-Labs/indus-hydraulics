@@ -65,9 +65,9 @@ const SELECTION_LABEL: Record<ScrapedRowData['selectionStatus'], string> = {
 }
 
 const SELECTION_STYLE: Record<ScrapedRowData['selectionStatus'], string> = {
-  pending: 'text-[var(--color-muted)] bg-[var(--color-deep)]',
+  pending: 'text-ih-muted bg-ih-surface-2',
   selected: 'text-[oklch(0.4_0.14_85)] bg-[oklch(0.94_0.06_85)]',
-  skipped: 'text-[var(--color-muted)] bg-[var(--color-deep)] line-through',
+  skipped: 'text-ih-muted bg-ih-surface-2 line-through',
   ingested: 'text-[oklch(0.4_0.14_145)] bg-[oklch(0.94_0.06_145)]',
   ingest_failed: 'text-[oklch(0.4_0.18_25)] bg-[oklch(0.94_0.06_25)]',
 }
@@ -203,11 +203,11 @@ export default function ScrapedRowCard({ row, brands, categories, jobReady }: Pr
 
   return (
     <article
-      className={`border ${row.selectionStatus === 'ingest_failed' ? 'border-[oklch(0.5_0.18_25)]' : 'border-[var(--color-border)]'} bg-[var(--color-surface)]`}
+      className={`border ${row.selectionStatus === 'ingest_failed' ? 'border-[oklch(0.5_0.18_25)]' : 'border-ih-border'} bg-ih-bg`}
       aria-label={`Scraped product ${row.sourceTitle}`}
     >
       {/* Row header */}
-      <header className="px-4 py-3 border-b border-[var(--color-border)] flex items-center gap-3 flex-wrap">
+      <header className="px-4 py-3 border-b border-ih-border flex items-center gap-3 flex-wrap">
         <span
           className={`px-2 py-0.5 text-[10px] font-mono uppercase tracking-wider ${SELECTION_STYLE[row.selectionStatus]}`}
         >
@@ -225,14 +225,14 @@ export default function ScrapedRowCard({ row, brands, categories, jobReady }: Pr
           href={row.sourceUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-[11px] font-mono text-[var(--color-muted)] hover:text-[var(--color-primary)] truncate flex-1"
+          className="text-[11px] font-mono text-ih-muted hover:text-ih-ink truncate flex-1"
         >
           {row.sourceUrl} ↗
         </a>
         {row.ingestedProductId && (
           <Link
             href={`/admin/products/${row.ingestedProductId}/edit`}
-            className="text-[11px] font-mono uppercase tracking-wider text-[var(--color-accent)] hover:underline"
+            className="text-[11px] font-mono uppercase tracking-wider text-ih-accent hover:underline"
           >
             Open product →
           </Link>
@@ -241,12 +241,12 @@ export default function ScrapedRowCard({ row, brands, categories, jobReady }: Pr
 
       <div className="grid grid-cols-1 lg:grid-cols-[1fr_1fr] gap-0">
         {/* LEFT: image carousel */}
-        <section className="p-4 border-b lg:border-b-0 lg:border-r border-[var(--color-border)]">
-          <h3 className="font-mono uppercase tracking-wider text-[10px] text-[var(--color-muted)] mb-2">
+        <section className="p-4 border-b lg:border-b-0 lg:border-r border-ih-border">
+          <h3 className="font-mono uppercase tracking-wider text-[10px] text-ih-muted mb-2">
             Candidate images ({kept.length} of {row.candidateImages.length} selected)
           </h3>
           {row.candidateImages.length === 0 ? (
-            <p className="text-[12px] text-[var(--color-muted)] italic">No images discovered on this page.</p>
+            <p className="text-[12px] text-ih-muted italic">No images discovered on this page.</p>
           ) : (
             <div className="grid grid-cols-3 sm:grid-cols-4 gap-2">
               {row.candidateImages.map((img) => {
@@ -259,10 +259,10 @@ export default function ScrapedRowCard({ row, brands, categories, jobReady }: Pr
                     disabled={locked}
                     aria-pressed={!isDeselected}
                     aria-label={`Toggle image ${img.position + 1}`}
-                    className={`relative aspect-square border bg-[var(--color-deep)] overflow-hidden focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)] ${
+                    className={`relative aspect-square border bg-ih-surface-2 overflow-hidden focus:outline-none focus:ring-2 focus:ring-ih-accent ${
                       isDeselected
-                        ? 'border-[var(--color-border)] opacity-40'
-                        : 'border-[var(--color-accent)]'
+                        ? 'border-ih-border opacity-40'
+                        : 'border-ih-accent'
                     }`}
                   >
                     {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -289,22 +289,22 @@ export default function ScrapedRowCard({ row, brands, categories, jobReady }: Pr
         {/* RIGHT: mapping form */}
         <section className="p-4 flex flex-col gap-3">
           <div>
-            <h3 className="font-mono uppercase tracking-wider text-[10px] text-[var(--color-muted)] mb-2">
+            <h3 className="font-mono uppercase tracking-wider text-[10px] text-ih-muted mb-2">
               Source signals
             </h3>
-            <p className="text-[13px] text-[var(--color-primary)] font-medium">{row.sourceTitle}</p>
-            <div className="text-[11px] text-[var(--color-muted)] mt-1 flex gap-2 flex-wrap">
+            <p className="text-[13px] text-ih-ink font-medium">{row.sourceTitle}</p>
+            <div className="text-[11px] text-ih-muted mt-1 flex gap-2 flex-wrap">
               {row.sourceSku && <span>SKU: <span className="font-mono">{row.sourceSku}</span></span>}
               {row.sourceBrandText && <span>Brand: {row.sourceBrandText}</span>}
               {row.sourceCategoryText && <span>Category: {row.sourceCategoryText}</span>}
             </div>
           </div>
 
-          <fieldset className="border border-[var(--color-border)] p-3 flex flex-col gap-2">
-            <legend className="font-mono uppercase tracking-wider text-[10px] text-[var(--color-muted)] px-1">
+          <fieldset className="border border-ih-border p-3 flex flex-col gap-2">
+            <legend className="font-mono uppercase tracking-wider text-[10px] text-ih-muted px-1">
               Ingest mode
             </legend>
-            <label className="flex items-start gap-2 text-[12px] text-[var(--color-body)]">
+            <label className="flex items-start gap-2 text-[12px] text-ih-ink-2">
               <input
                 type="radio"
                 name={`mode-${row.id}`}
@@ -318,7 +318,7 @@ export default function ScrapedRowCard({ row, brands, categories, jobReady }: Pr
                 <strong>Create a new product</strong> on indushydraulics.com and attach the selected images to it.
               </span>
             </label>
-            <label className="flex items-start gap-2 text-[12px] text-[var(--color-body)]">
+            <label className="flex items-start gap-2 text-[12px] text-ih-ink-2">
               <input
                 type="radio"
                 name={`mode-${row.id}`}
@@ -339,7 +339,7 @@ export default function ScrapedRowCard({ row, brands, categories, jobReady }: Pr
           ) : (
             <div className="grid grid-cols-2 gap-3">
               <label className="flex flex-col gap-1">
-                <span className="text-[10px] font-mono uppercase tracking-wider text-[var(--color-muted)]">
+                <span className="text-[10px] font-mono uppercase tracking-wider text-ih-muted">
                   Title
                 </span>
                 <input
@@ -347,11 +347,11 @@ export default function ScrapedRowCard({ row, brands, categories, jobReady }: Pr
                   onChange={(e) => setEditedTitle(e.target.value)}
                   placeholder={row.sourceTitle}
                   disabled={locked}
-                  className="h-8 px-2 border border-[var(--color-border)] bg-[var(--color-surface)] text-[12px]"
+                  className="h-8 px-2 border border-ih-border bg-ih-bg text-[12px]"
                 />
               </label>
               <label className="flex flex-col gap-1">
-                <span className="text-[10px] font-mono uppercase tracking-wider text-[var(--color-muted)]">
+                <span className="text-[10px] font-mono uppercase tracking-wider text-ih-muted">
                   SKU
                 </span>
                 <input
@@ -359,21 +359,21 @@ export default function ScrapedRowCard({ row, brands, categories, jobReady }: Pr
                   onChange={(e) => setEditedSku(e.target.value)}
                   placeholder={row.sourceSku ?? row.defaultSku}
                   disabled={locked}
-                  className="h-8 px-2 border border-[var(--color-border)] bg-[var(--color-surface)] text-[12px] font-mono"
+                  className="h-8 px-2 border border-ih-border bg-ih-bg text-[12px] font-mono"
                 />
               </label>
               <label className="flex flex-col gap-1">
-                <span className="text-[10px] font-mono uppercase tracking-wider text-[var(--color-muted)] flex items-baseline gap-1.5">
+                <span className="text-[10px] font-mono uppercase tracking-wider text-ih-muted flex items-baseline gap-1.5">
                   Brand
                   {row.suggestedBrand && brandId === row.suggestedBrand.id && row.mappedBrandId === null && (
-                    <span className="text-[9px] text-[var(--color-accent)] normal-case">auto-matched</span>
+                    <span className="text-[9px] text-ih-accent normal-case">auto-matched</span>
                   )}
                 </span>
                 <select
                   value={brandId}
                   onChange={(e) => setBrandId(e.target.value)}
                   disabled={locked}
-                  className="h-8 px-2 border border-[var(--color-border)] bg-[var(--color-surface)] text-[12px]"
+                  className="h-8 px-2 border border-ih-border bg-ih-bg text-[12px]"
                 >
                   <option value="">— None —</option>
                   {brands.map((b) => (
@@ -384,17 +384,17 @@ export default function ScrapedRowCard({ row, brands, categories, jobReady }: Pr
                 </select>
               </label>
               <label className="flex flex-col gap-1">
-                <span className="text-[10px] font-mono uppercase tracking-wider text-[var(--color-muted)] flex items-baseline gap-1.5">
+                <span className="text-[10px] font-mono uppercase tracking-wider text-ih-muted flex items-baseline gap-1.5">
                   Category
                   {row.suggestedCategory && categoryId === row.suggestedCategory.id && row.mappedCategoryId === null && (
-                    <span className="text-[9px] text-[var(--color-accent)] normal-case">auto-matched</span>
+                    <span className="text-[9px] text-ih-accent normal-case">auto-matched</span>
                   )}
                 </span>
                 <select
                   value={categoryId}
                   onChange={(e) => setCategoryId(e.target.value)}
                   disabled={locked}
-                  className="h-8 px-2 border border-[var(--color-border)] bg-[var(--color-surface)] text-[12px]"
+                  className="h-8 px-2 border border-ih-border bg-ih-bg text-[12px]"
                 >
                   <option value="">— None —</option>
                   {categories.map((c) => (
@@ -409,7 +409,7 @@ export default function ScrapedRowCard({ row, brands, categories, jobReady }: Pr
           )}
 
           {mode === 'create_new' && !locked && (
-            <p className="text-[11px] text-[var(--color-muted)]">
+            <p className="text-[11px] text-ih-muted">
               On ingest, we&rsquo;ll create <code className="font-mono">{effectiveSku}</code> — <span>{effectiveTitle}</span>
             </p>
           )}
@@ -438,7 +438,7 @@ export default function ScrapedRowCard({ row, brands, categories, jobReady }: Pr
                 type="button"
                 onClick={onSelect}
                 disabled={pending}
-                className="h-8 px-3 border border-[var(--color-accent)] text-[var(--color-accent)] font-mono text-[11px] uppercase tracking-wider hover:bg-[var(--color-accent-soft)] disabled:opacity-50"
+                className="h-8 px-3 border border-ih-accent text-ih-accent font-mono text-[11px] uppercase tracking-wider hover:bg-ih-accent-soft disabled:opacity-50"
               >
                 Mark selected
               </button>
@@ -448,7 +448,7 @@ export default function ScrapedRowCard({ row, brands, categories, jobReady }: Pr
                 type="button"
                 onClick={onSkip}
                 disabled={pending}
-                className="h-8 px-3 border border-[var(--color-border)] text-[var(--color-muted)] font-mono text-[11px] uppercase tracking-wider hover:bg-[var(--color-deep)] disabled:opacity-50"
+                className="h-8 px-3 border border-ih-border text-ih-muted font-mono text-[11px] uppercase tracking-wider hover:bg-ih-surface-2 disabled:opacity-50"
               >
                 Skip
               </button>
@@ -458,7 +458,7 @@ export default function ScrapedRowCard({ row, brands, categories, jobReady }: Pr
                 type="button"
                 onClick={onReset}
                 disabled={pending}
-                className="h-8 px-3 text-[11px] text-[var(--color-muted)] hover:text-[var(--color-primary)] disabled:opacity-50"
+                className="h-8 px-3 text-[11px] text-ih-muted hover:text-ih-ink disabled:opacity-50"
               >
                 Reset
               </button>
@@ -468,7 +468,7 @@ export default function ScrapedRowCard({ row, brands, categories, jobReady }: Pr
                 type="button"
                 onClick={onIngest}
                 disabled={pending || kept.length === 0}
-                className="h-8 px-3 bg-[var(--color-accent)] text-white font-mono text-[11px] uppercase tracking-wider ml-auto disabled:opacity-50"
+                className="h-8 px-3 bg-ih-accent text-white font-mono text-[11px] uppercase tracking-wider ml-auto disabled:opacity-50"
                 title={kept.length === 0 ? 'Toggle at least one image back on' : undefined}
               >
                 {pending ? 'Ingesting…' : row.selectionStatus === 'ingest_failed' ? 'Retry ingest' : 'Ingest now'}

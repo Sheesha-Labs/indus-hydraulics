@@ -78,13 +78,13 @@ export default function ItemFormDialog({ initial, onClose, onSaved }: Props) {
 
   return (
     <div className="fixed inset-0 z-50 bg-black/40 flex items-start justify-center pt-12 px-4 overflow-y-auto">
-      <div className="bg-white border border-[var(--color-border)] w-full max-w-lg p-6 flex flex-col gap-4">
+      <div className="bg-white border border-ih-border w-full max-w-lg p-6 flex flex-col gap-4">
         <div className="flex items-start justify-between">
           <h2 className="text-[18px] font-semibold">{initial.id ? 'Edit item' : 'New item'}</h2>
           <button
             type="button"
             onClick={onClose}
-            className="text-[var(--color-muted)] hover:text-[var(--color-primary)]"
+            className="text-ih-muted hover:text-ih-ink"
             aria-label="Close"
           >
             ✕
@@ -95,7 +95,7 @@ export default function ItemFormDialog({ initial, onClose, onSaved }: Props) {
           <input
             value={label}
             onChange={(e) => setLabel(e.target.value)}
-            className="h-9 px-3 border border-[var(--color-border)] bg-white text-[13px]"
+            className="h-9 px-3 border border-ih-border bg-white text-[13px]"
             autoFocus
           />
         </Field>
@@ -107,7 +107,7 @@ export default function ItemFormDialog({ initial, onClose, onSaved }: Props) {
               setLinkType(e.target.value as MenuLinkType)
               setTarget(null)
             }}
-            className="h-9 px-3 border border-[var(--color-border)] bg-white text-[13px]"
+            className="h-9 px-3 border border-ih-border bg-white text-[13px]"
           >
             {MENU_LINK_TYPES.map((t) => (
               <option key={t} value={t}>
@@ -129,13 +129,13 @@ export default function ItemFormDialog({ initial, onClose, onSaved }: Props) {
               value={customUrl}
               onChange={(e) => setCustomUrl(e.target.value)}
               placeholder="/sale or https://example.com"
-              className="h-9 px-3 border border-[var(--color-border)] bg-white text-[13px] font-mono"
+              className="h-9 px-3 border border-ih-border bg-white text-[13px] font-mono"
             />
           </Field>
         ) : null}
 
-        <details className="border-t border-[var(--color-border)] pt-3">
-          <summary className="text-[12px] cursor-pointer text-[var(--color-muted)] uppercase tracking-[0.1em] font-mono">
+        <details className="border-t border-ih-border pt-3">
+          <summary className="text-[12px] cursor-pointer text-ih-muted uppercase tracking-[0.1em] font-mono">
             Optional
           </summary>
           <div className="flex flex-col gap-3 mt-3">
@@ -143,7 +143,7 @@ export default function ItemFormDialog({ initial, onClose, onSaved }: Props) {
               <select
                 value={iconName}
                 onChange={(e) => setIconName(e.target.value)}
-                className="h-9 px-3 border border-[var(--color-border)] bg-white text-[13px]"
+                className="h-9 px-3 border border-ih-border bg-white text-[13px]"
               >
                 <option value="">— None —</option>
                 {ICON_NAMES.map((n) => (
@@ -158,7 +158,7 @@ export default function ItemFormDialog({ initial, onClose, onSaved }: Props) {
                 value={badge}
                 onChange={(e) => setBadge(e.target.value)}
                 placeholder="New, Sale…"
-                className="h-9 px-3 border border-[var(--color-border)] bg-white text-[13px]"
+                className="h-9 px-3 border border-ih-border bg-white text-[13px]"
               />
             </Field>
             <Field label="Description">
@@ -166,7 +166,7 @@ export default function ItemFormDialog({ initial, onClose, onSaved }: Props) {
                 value={description}
                 onChange={(e) => setDescription(e.target.value)}
                 rows={2}
-                className="px-3 py-2 border border-[var(--color-border)] bg-white text-[13px]"
+                className="px-3 py-2 border border-ih-border bg-white text-[13px]"
               />
             </Field>
             <label className="flex items-center gap-2 text-[13px]">
@@ -181,7 +181,7 @@ export default function ItemFormDialog({ initial, onClose, onSaved }: Props) {
         </details>
 
         {error ? (
-          <p role="alert" className="text-[12px] text-[var(--color-danger)]">
+          <p role="alert" className="text-[12px] text-ih-danger">
             {error}
           </p>
         ) : null}
@@ -191,7 +191,7 @@ export default function ItemFormDialog({ initial, onClose, onSaved }: Props) {
             type="button"
             onClick={onClose}
             disabled={pending}
-            className="h-9 px-4 border border-[var(--color-border)] text-[13px]"
+            className="h-9 px-4 border border-ih-border text-[13px]"
           >
             Cancel
           </button>
@@ -199,7 +199,7 @@ export default function ItemFormDialog({ initial, onClose, onSaved }: Props) {
             type="button"
             onClick={submit}
             disabled={pending || !label.trim()}
-            className="h-9 px-4 bg-[var(--color-accent)] text-white text-[13px] disabled:opacity-50"
+            className="h-9 px-4 bg-ih-accent text-white text-[13px] disabled:opacity-50"
           >
             {pending ? 'Saving…' : initial.id ? 'Save' : 'Create'}
           </button>
@@ -212,9 +212,9 @@ export default function ItemFormDialog({ initial, onClose, onSaved }: Props) {
 function Field({ label, hint, children }: { label: string; hint?: string; children: React.ReactNode }) {
   return (
     <label className="flex flex-col gap-1 text-[12px]">
-      <span className="text-[var(--color-muted)]">{label}</span>
+      <span className="text-ih-muted">{label}</span>
       {children}
-      {hint ? <span className="text-[11px] text-[var(--color-muted)]">{hint}</span> : null}
+      {hint ? <span className="text-[11px] text-ih-muted">{hint}</span> : null}
     </label>
   )
 }

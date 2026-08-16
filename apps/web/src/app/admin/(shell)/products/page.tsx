@@ -21,7 +21,7 @@ type Props = {
 
 const STATUS_COLORS: Record<string, string> = {
   active: 'text-[oklch(0.4_0.14_145)] bg-[oklch(0.94_0.06_145)]',
-  draft: 'text-[var(--color-muted)] bg-[var(--color-deep)]',
+  draft: 'text-ih-muted bg-ih-surface-2',
   discontinued: 'text-[oklch(0.5_0.12_25)] bg-[oklch(0.96_0.04_25)]',
 }
 
@@ -131,7 +131,7 @@ export default async function AdminProductsPage({ params, searchParams }: Props)
       <div className="flex items-center justify-between mb-6">
         <div>
           <h1 className="text-[24px] font-semibold tracking-tight">Products</h1>
-          <p className="text-[13px] text-[var(--color-muted)] mt-1">
+          <p className="text-[13px] text-ih-muted mt-1">
             {total === 0
               ? 'No products'
               : `Showing ${showingFrom.toLocaleString()}–${showingTo.toLocaleString()} of ${total.toLocaleString()}`}
@@ -140,13 +140,13 @@ export default async function AdminProductsPage({ params, searchParams }: Props)
         <div className="flex items-center gap-2">
           <Link
             href={`/admin/products/import`}
-            className="h-9 px-4 flex items-center border border-[var(--color-border)] bg-white text-[13px] font-medium hover:border-[var(--color-primary)] transition-colors"
+            className="h-9 px-4 flex items-center border border-ih-border bg-white text-[13px] font-medium hover:border-ih-ink transition-colors"
           >
             ↑ Bulk import
           </Link>
           <Link
             href={`/admin/products/new`}
-            className="h-9 px-4 flex items-center bg-[var(--color-accent)] text-white text-[13px] font-medium hover:opacity-90"
+            className="h-9 px-4 flex items-center bg-ih-accent text-white text-[13px] font-medium hover:opacity-90"
           >
             + Add product
           </Link>
@@ -163,12 +163,12 @@ export default async function AdminProductsPage({ params, searchParams }: Props)
             name="q"
             defaultValue={query}
             placeholder="Search SKU, title, MPN…"
-            className="w-64 h-9 px-3 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] text-[var(--color-primary)] placeholder:text-[var(--color-caption)] focus:outline-none focus:border-[var(--color-primary)]"
+            className="w-64 h-9 px-3 border border-ih-border bg-ih-surface text-[13px] text-ih-ink placeholder:text-ih-muted-2 focus:outline-none focus:border-ih-ink"
           />
           <select
             name="brand"
             defaultValue={brandFilter}
-            className="h-9 px-2 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] focus:outline-none focus:border-[var(--color-primary)]"
+            className="h-9 px-2 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-ink"
             aria-label="Filter by brand"
           >
             <option value="">All brands</option>
@@ -181,7 +181,7 @@ export default async function AdminProductsPage({ params, searchParams }: Props)
           <select
             name="category"
             defaultValue={categoryFilter}
-            className="h-9 px-2 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] focus:outline-none focus:border-[var(--color-primary)]"
+            className="h-9 px-2 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-ink"
             aria-label="Filter by category"
           >
             <option value="">All categories</option>
@@ -197,14 +197,14 @@ export default async function AdminProductsPage({ params, searchParams }: Props)
           {sortDir === 'asc' && <input type="hidden" name="dir" value="asc" />}
           <button
             type="submit"
-            className="h-9 px-4 bg-[var(--color-primary)] text-white text-[12px] font-medium hover:opacity-90"
+            className="h-9 px-4 bg-ih-navy text-white text-[12px] font-medium hover:opacity-90"
           >
             Apply
           </button>
           {(statusFilter || brandFilter || categoryFilter || query) && (
             <Link
               href={`/admin/products`}
-              className="font-mono text-[11px] text-[var(--color-muted)] hover:text-[var(--color-primary)] underline underline-offset-2 ml-1"
+              className="font-mono text-[11px] text-ih-muted hover:text-ih-ink underline underline-offset-2 ml-1"
             >
               Clear all
             </Link>
@@ -228,7 +228,7 @@ export default async function AdminProductsPage({ params, searchParams }: Props)
         {/* Content-depth filter — backed by persisted Product.contentScore (#7-3).
             Thresholds align with bandForScore in @indus/domain. */}
         <div className="flex flex-wrap items-center gap-1.5 mb-6">
-          <span className="font-mono text-[10px] uppercase tracking-[0.1em] text-[var(--color-muted)] pr-2">
+          <span className="font-mono text-[10px] uppercase tracking-[0.1em] text-ih-muted pr-2">
             Content depth
           </span>
           <ContentChip
@@ -257,27 +257,27 @@ export default async function AdminProductsPage({ params, searchParams }: Props)
         </div>
 
         {products.length === 0 ? (
-          <div className="py-16 border border-dashed border-[var(--color-border)] text-center">
-            <p className="text-[var(--color-muted)] mb-3">
+          <div className="py-16 border border-dashed border-ih-border text-center">
+            <p className="text-ih-muted mb-3">
               {query || statusFilter || brandFilter || categoryFilter
                 ? 'No products match these filters.'
                 : 'No products yet.'}
             </p>
             <Link
               href={`/admin/products/new`}
-              className="inline-flex h-9 px-4 items-center bg-[var(--color-accent)] text-white text-[13px] font-medium hover:opacity-90"
+              className="inline-flex h-9 px-4 items-center bg-ih-accent text-white text-[13px] font-medium hover:opacity-90"
             >
               + Add your first product
             </Link>
           </div>
         ) : (
           <>
-            <div className="border border-[var(--color-border)] bg-white">
-              <div className="grid grid-cols-[140px_1fr_120px_120px_70px_60px_90px_80px] px-4 py-2.5 bg-[var(--color-surface)] border-b border-[var(--color-border)] font-mono text-[10px] tracking-[0.1em] uppercase text-[var(--color-muted)]">
-                <Link href={sortUrl('sku')} className="hover:text-[var(--color-primary)]">
+            <div className="border border-ih-border bg-white">
+              <div className="grid grid-cols-[140px_1fr_120px_120px_70px_60px_90px_80px] px-4 py-2.5 bg-ih-bg border-b border-ih-border font-mono text-[10px] tracking-[0.1em] uppercase text-ih-muted">
+                <Link href={sortUrl('sku')} className="hover:text-ih-ink">
                   SKU{sortIndicator('sku')}
                 </Link>
-                <Link href={sortUrl('title')} className="hover:text-[var(--color-primary)]">
+                <Link href={sortUrl('title')} className="hover:text-ih-ink">
                   Title{sortIndicator('title')}
                 </Link>
                 <div>Brand</div>
@@ -286,14 +286,14 @@ export default async function AdminProductsPage({ params, searchParams }: Props)
                 <Link
                   href={sortUrl('contentScore')}
                   title="Content depth score (0–100)"
-                  className="text-center hover:text-[var(--color-primary)]"
+                  className="text-center hover:text-ih-ink"
                 >
                   Content{sortIndicator('contentScore')}
                 </Link>
-                <Link href={sortUrl('status')} className="text-center hover:text-[var(--color-primary)]">
+                <Link href={sortUrl('status')} className="text-center hover:text-ih-ink">
                   Status{sortIndicator('status')}
                 </Link>
-                <Link href={sortUrl('updatedAt')} className="text-right hover:text-[var(--color-primary)]">
+                <Link href={sortUrl('updatedAt')} className="text-right hover:text-ih-ink">
                   Updated{sortIndicator('updatedAt')}
                 </Link>
               </div>
@@ -302,19 +302,19 @@ export default async function AdminProductsPage({ params, searchParams }: Props)
                   <Link
                     key={p.id}
                     href={`/admin/products/${p.id}/edit`}
-                    className={`grid grid-cols-[140px_1fr_120px_120px_70px_60px_90px_80px] px-4 py-3.5 items-center hover:bg-[var(--color-deep)] transition-colors ${
-                      i > 0 ? 'border-t border-[var(--color-border)]' : ''
+                    className={`grid grid-cols-[140px_1fr_120px_120px_70px_60px_90px_80px] px-4 py-3.5 items-center hover:bg-ih-surface-2 transition-colors ${
+                      i > 0 ? 'border-t border-ih-border' : ''
                     }`}
                   >
-                    <div className="font-mono text-[12px] text-[var(--color-muted)] truncate">{p.sku}</div>
-                    <div className="text-[13px] font-medium text-[var(--color-primary)] truncate">{p.title}</div>
-                    <div className="text-[12px] text-[var(--color-body)] truncate">
-                      {p.brand?.name ?? <span className="text-[var(--color-caption)]">—</span>}
+                    <div className="font-mono text-[12px] text-ih-muted truncate">{p.sku}</div>
+                    <div className="text-[13px] font-medium text-ih-ink truncate">{p.title}</div>
+                    <div className="text-[12px] text-ih-ink-2 truncate">
+                      {p.brand?.name ?? <span className="text-ih-muted-2">—</span>}
                     </div>
-                    <div className="text-[12px] text-[var(--color-body)] truncate">
-                      {p.category?.name ?? <span className="text-[var(--color-caption)]">—</span>}
+                    <div className="text-[12px] text-ih-ink-2 truncate">
+                      {p.category?.name ?? <span className="text-ih-muted-2">—</span>}
                     </div>
-                    <div className={`text-right font-mono text-[12px] ${p.stockQty > 0 ? 'text-[oklch(0.45_0.12_150)] font-semibold' : 'text-[var(--color-caption)]'}`}>
+                    <div className={`text-right font-mono text-[12px] ${p.stockQty > 0 ? 'text-[oklch(0.45_0.12_150)] font-semibold' : 'text-ih-muted-2'}`}>
                       {p.stockQty > 0 ? p.stockQty.toLocaleString() : '—'}
                     </div>
                     <div className="flex justify-center">
@@ -329,7 +329,7 @@ export default async function AdminProductsPage({ params, searchParams }: Props)
                         {p.status}
                       </span>
                     </div>
-                    <div className="text-right font-mono text-[11px] text-[var(--color-muted)]">
+                    <div className="text-right font-mono text-[11px] text-ih-muted">
                       {new Date(p.updatedAt).toLocaleDateString()}
                     </div>
                   </Link>
@@ -367,7 +367,7 @@ function Pagination({
       </PageBtn>
       {pages.map((p, i) =>
         p === '…' ? (
-          <span key={`gap-${i}`} className="px-2 text-[var(--color-muted)]">
+          <span key={`gap-${i}`} className="px-2 text-ih-muted">
             …
           </span>
         ) : (
@@ -396,8 +396,8 @@ function PageBtn({
 }) {
   const cls = `min-w-9 h-9 px-3 inline-flex items-center justify-center border ${
     active
-      ? 'bg-[var(--color-primary)] text-white border-[var(--color-primary)]'
-      : 'bg-white text-[var(--color-body)] border-[var(--color-border)] hover:border-[var(--color-body)]'
+      ? 'bg-ih-navy text-white border-ih-ink'
+      : 'bg-white text-ih-ink-2 border-ih-border hover:border-ih-accent'
   } ${disabled ? 'opacity-40 pointer-events-none' : ''}`
   if (disabled) return <span className={cls}>{children}</span>
   return (
@@ -439,12 +439,12 @@ function StatusPill({
       href={href}
       className={`flex items-center gap-1.5 h-7 px-3 font-mono text-[11px] border transition-colors capitalize ${
         active
-          ? 'border-[var(--color-accent)] bg-[var(--color-accent)] text-white'
-          : 'border-[var(--color-border)] text-[var(--color-body)] hover:border-[var(--color-body)]'
+          ? 'border-ih-accent bg-ih-accent text-white'
+          : 'border-ih-border text-ih-ink-2 hover:border-ih-accent'
       }`}
     >
       <span>{label}</span>
-      <span className={`text-[10px] ${active ? 'opacity-80' : 'text-[var(--color-muted)]'}`}>{count.toLocaleString()}</span>
+      <span className={`text-[10px] ${active ? 'opacity-80' : 'text-ih-muted'}`}>{count.toLocaleString()}</span>
     </Link>
   )
 }
@@ -475,8 +475,8 @@ function ContentChip({
       href={href}
       className={`flex items-center gap-1.5 h-7 px-3 font-mono text-[11px] border transition-colors ${
         active
-          ? 'border-[var(--color-accent)] bg-[var(--color-accent)] text-white'
-          : 'border-[var(--color-border)] text-[var(--color-body)] hover:border-[var(--color-body)]'
+          ? 'border-ih-accent bg-ih-accent text-white'
+          : 'border-ih-border text-ih-ink-2 hover:border-ih-accent'
       }`}
     >
       {dot && <span aria-hidden="true" className={`w-1.5 h-1.5 rounded-full ${dot}`} />}
