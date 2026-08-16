@@ -87,3 +87,57 @@ export function assertMarketingSender(fromEmail: string): void {
 export function isDeliverableAddress(email: string): boolean {
   return email.toLowerCase().endsWith(`@${MAIL_DOMAIN}`)
 }
+
+/**
+ * The domain Resend is actually configured to send from.
+ *
+ * Same value as WEBSITE_DOMAIN, named separately because it answers a
+ * different question: not "what is the site called" but "which domain has
+ * DKIM and a verified sender in Resend". Only `indushydraulics.com` carries
+ * those records — `indushydraulics.me` is a Google Workspace mail domain with
+ * no Resend verification, so Resend rejects any send from it outright:
+ *
+ *   The indushydraulics.me domain is not verified.
+ *
+ * Verifying a second domain later is a DNS change plus a change here.
+ */
+export const SENDING_DOMAIN = WEBSITE_DOMAIN
+
+/** True for an address Resend will accept as a From. */
+export function isSendableAddress(email: string): boolean {
+  return email.trim().toLowerCase().endsWith(`@${SENDING_DOMAIN}`)
+}
+
+/**
+ * The From address to actually use, given whatever StoreSettings holds.
+ *
+ * StoreSettings.quoteFromEmail is editable in the admin console, and pointing
+ * it at an unverified domain does not fail on save — it fails silently at
+ * send time, per email, with the message above. That is what happened: the
+ * field held `sales@indushydraulics.me` and EVERY transactional send (quotes,
+ * acknowledgements, expiry reminders, staff password resets) was rejected
+ * while the console showed the address as configured.
+ *
+ * So a configured sender is honoured only if Resend can send from it.
+ * Anything else falls back to the address we know is verified — a mail that
+ * arrives from a slightly different From beats one that never leaves.
+ */
+export function resolveFromEmail(configured: string | null | undefined): string {
+  const value = configured?.trim()
+  if (value && isSendableAddress(value)) return value
+  return DEFAULT_FROM_EMAIL
+}
+
+/**
+ * The Reply-To to actually use.
+ *
+ * Mirror image of the From rule: replies must land in a mailbox that exists,
+ * so a configured address is honoured only if it is on the domain that has
+ * MX records. An address on the sending domain would send every customer
+ * reply into a black hole.
+ */
+export function resolveReplyTo(configured: string | null | undefined): string {
+  const value = configured?.trim()
+  if (value && isDeliverableAddress(value)) return value
+  return DEFAULT_REPLY_TO
+}

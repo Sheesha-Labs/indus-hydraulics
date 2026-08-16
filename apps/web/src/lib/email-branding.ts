@@ -1,5 +1,5 @@
 import { db } from '@indus/db'
-import { DEFAULT_FROM_EMAIL, DEFAULT_REPLY_TO } from '@indus/domain'
+import { resolveFromEmail, resolveReplyTo } from '@indus/domain'
 
 export type EmailBranding = {
   legalName: string
@@ -15,11 +15,11 @@ export type EmailBranding = {
   internalAlertEmails: string[]
 }
 
-// App-sent mail goes FROM the website domain (isolated sending reputation)
-// and REPLIES TO the Workspace domain (real, monitored inbox). See
-// @indus/domain/email-domains for why the two are split.
-const FALLBACK_FROM_EMAIL = DEFAULT_FROM_EMAIL
-const FALLBACK_REPLY_TO = DEFAULT_REPLY_TO
+// App-sent mail goes FROM the website domain (isolated sending reputation,
+// and the only domain verified in Resend) and REPLIES TO the Workspace domain
+// (real, monitored inbox). resolveFromEmail / resolveReplyTo in
+// @indus/domain/email-domains enforce both halves against whatever the admin
+// console has been set to.
 const FALLBACK_LEGAL_NAME = 'Indus Hydraulic Power Trading LLC'
 
 /**
@@ -41,12 +41,14 @@ export async function loadEmailBranding(): Promise<EmailBranding> {
     signatureTitle: settings?.signatureTitle ?? null,
     signaturePhone: settings?.signaturePhone ?? null,
     signatureEmail: settings?.signatureEmail ?? null,
-    fromEmail: settings?.quoteFromEmail ?? FALLBACK_FROM_EMAIL,
+    // resolveFromEmail, not `??`: a configured-but-unverified sender is worse
+    // than no configured sender, because Resend rejects the send outright.
+    fromEmail: resolveFromEmail(settings?.quoteFromEmail),
     fromName: settings?.quoteFromName ?? null,
     // NOT the from address. The sending domain has no MX, so replying to it
     // is a black hole. Replies go to the contact inbox on the Workspace
     // domain, which is where the sales team actually reads mail.
-    replyTo: settings?.contactEmail ?? FALLBACK_REPLY_TO,
+    replyTo: resolveReplyTo(settings?.contactEmail),
     internalAlertEmails: internal,
   }
 }

@@ -3,7 +3,7 @@
 import { revalidatePath } from 'next/cache'
 import { z } from 'zod'
 import { db } from '@indus/db'
-import { DEFAULT_FROM_EMAIL, DEFAULT_REPLY_TO, assertTransition } from '@indus/domain'
+import { assertTransition, resolveFromEmail, resolveReplyTo } from '@indus/domain'
 import { renderEstimatePdf, uploadQuotePdf, computeTotals } from '@indus/pdf'
 import { sendEmail, renderQuoteSent, renderQuoteAck } from '@indus/email'
 import { signQuoteAccessToken } from '@indus/domain'
@@ -126,10 +126,10 @@ async function fireQuoteAckSideEffects(input: {
 }): Promise<void> {
   try {
     const settings = await db.storeSettings.findFirst()
-    const fromEmail = settings?.quoteFromEmail ?? DEFAULT_FROM_EMAIL
+    const fromEmail = resolveFromEmail(settings?.quoteFromEmail)
     // Reply-To must be the Workspace inbox, never the sending address —
     // the sending domain has no MX, so a customer's reply would vanish.
-    const replyTo = settings?.contactEmail ?? DEFAULT_REPLY_TO
+    const replyTo = resolveReplyTo(settings?.contactEmail)
     const fromName = settings?.quoteFromName ?? null
 
     const totalNum = Number(input.quote.total)
@@ -474,10 +474,10 @@ export async function sendQuote(formData: FormData): Promise<Result<{ quoteCode:
     // engineer can resend (which produces a new revision).
     try {
       const settings = await db.storeSettings.findFirst()
-      const fromEmail = settings?.quoteFromEmail ?? DEFAULT_FROM_EMAIL
+      const fromEmail = resolveFromEmail(settings?.quoteFromEmail)
       // Reply-To must be the Workspace inbox, never the sending address —
       // the sending domain has no MX, so a customer's reply would vanish.
-      const replyTo = settings?.contactEmail ?? DEFAULT_REPLY_TO
+      const replyTo = resolveReplyTo(settings?.contactEmail)
       const fromName = settings?.quoteFromName ?? null
       const customerName = `${rfq.submittedBy.firstName} ${rfq.submittedBy.lastName}`.trim() || rfq.submittedBy.email
 
