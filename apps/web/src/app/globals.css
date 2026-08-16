@@ -205,6 +205,20 @@
   }
 }
 
+/* Horizontal scroll rails.
+   `no-scrollbar` was used in three places and defined nowhere — another
+   class that silently produced no CSS. It is defined here so the existing
+   chip rails behave as written. Do NOT add it to a region whose only
+   affordance IS the scrollbar: 03 §6 requires the compare matrix to keep a
+   visible one. */
+.no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
 /* ── Typography utilities ── */
 .mono {
   font-family: var(--font-mono);
