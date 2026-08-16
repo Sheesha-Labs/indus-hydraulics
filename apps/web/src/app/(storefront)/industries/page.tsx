@@ -23,7 +23,9 @@ export async function generateMetadata(): Promise<Metadata> {
 type Props = { params: Promise<Record<string, never>> }
 
 // Default gradient — used when an industry row has no per-row gradient set.
-const DEFAULT_GRADIENT = 'linear-gradient(160deg,oklch(0.2 0.02 240),oklch(0.16 0.015 245))'
+// Hue 252 is the one dark band in the language; every other dark surface on
+// the site (home hero, editorial, longform) uses it too.
+const DEFAULT_GRADIENT = 'linear-gradient(160deg,oklch(0.275 0.055 252),oklch(0.20 0.045 252))'
 
 export default async function IndustriesIndexPage({ params }: Props) {
   await params

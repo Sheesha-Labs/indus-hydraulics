@@ -6,7 +6,7 @@ import { useActionState } from 'react'
 import { activateStaffAccount, type ActivateState } from './actions'
 
 const inputCls =
-  'h-10 w-full border border-[#2a2e35] bg-[#0e1013] px-3 text-sm text-[#f0ece3] placeholder:text-[#3a3f47] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ih-accent transition-colors'
+  'h-10 w-full border border-[var(--color-ih-navy-2)] bg-[var(--color-ih-navy)] px-3 text-sm text-[#ffffff] placeholder:text-[oklch(0.62_0.03_250)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ih-accent transition-colors'
 
 export default function ActivateForm({
   token,
@@ -31,7 +31,7 @@ export default function ActivateForm({
         role="dialog"
         aria-modal="true"
         aria-labelledby="activate-done-title"
-        className="border border-[#2a2e35] bg-[#15181d] p-8 text-center"
+        className="border border-[var(--color-ih-navy-2)] bg-[var(--color-ih-navy-2)] p-8 text-center"
       >
         <div className="mx-auto mb-5 grid h-11 w-11 place-items-center rounded-full bg-[oklch(0.55_0.12_150)]">
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
@@ -49,13 +49,13 @@ export default function ActivateForm({
           {purpose === 'invite' ? 'Account ready' : 'Password updated'}
         </h2>
 
-        <p className="mx-auto mt-2 max-w-[300px] text-[13px] leading-relaxed text-[#9aa0a8]">
+        <p className="mx-auto mt-2 max-w-[300px] text-[13px] leading-relaxed text-[oklch(0.75_0.02_250)]">
           {purpose === 'invite'
             ? 'Your staff account is set up. Sign in to open the admin.'
             : 'Your password has been changed. Sign in with your new password.'}
         </p>
 
-        <p className="mt-4 font-mono text-[11px] text-[#6b7079]">{state.email}</p>
+        <p className="mt-4 font-mono text-[11px] text-[oklch(0.68_0.03_250)]">{state.email}</p>
 
         <Link
           href={`/admin/sign-in?email=${encodeURIComponent(state.email)}`}
@@ -81,7 +81,7 @@ export default function ActivateForm({
       )}
 
       <div className="flex flex-col gap-1.5">
-        <label className="text-[12px] font-medium text-[#9aa0a8]" htmlFor="password">
+        <label className="text-[12px] font-medium text-[oklch(0.75_0.02_250)]" htmlFor="password">
           New password
         </label>
         <input
@@ -93,13 +93,13 @@ export default function ActivateForm({
           minLength={MIN_STAFF_PASSWORD_LENGTH}
           className={inputCls}
         />
-        <p className="text-[11px] text-[#6b7079]">
+        <p className="text-[11px] text-[oklch(0.68_0.03_250)]">
           At least {MIN_STAFF_PASSWORD_LENGTH} characters.
         </p>
       </div>
 
       <div className="flex flex-col gap-1.5">
-        <label className="text-[12px] font-medium text-[#9aa0a8]" htmlFor="confirm">
+        <label className="text-[12px] font-medium text-[oklch(0.75_0.02_250)]" htmlFor="confirm">
           Repeat password
         </label>
         <input

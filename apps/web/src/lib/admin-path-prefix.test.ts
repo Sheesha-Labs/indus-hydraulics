@@ -91,7 +91,38 @@ function scan(pattern: RegExp): Hit[] {
 
 const format = (hits: Hit[]) => hits.map((h) => `${h.file}:${h.line}: ${h.text}`).join('\n')
 
+/**
+ * Dynamically-built paths.
+ *
+ * The literal scan above cannot see `href={`/${path}`}` — the captured value
+ * is the source text `/${path}`, which matches no section name. AdminSidebar
+ * built every primary nav link exactly that way from a data table, so all of
+ * them pointed at the storefront and this file reported clean the whole time.
+ *
+ * Any absolute path interpolated inside an admin tree must start from the
+ * ADMIN_PREFIX constant rather than a bare slash.
+ */
+function scanInterpolated(): Hit[] {
+  const hits: Hit[] = []
+  const files = sourceFiles().filter((f) => !f.endsWith('.test.ts') && !f.endsWith('.test.tsx'))
+  const RE = /(?:href|action)=\{?\s*(?:[^`'"]*\?\s*)?`\/\$\{/g
+
+  for (const rel of files) {
+    const lines = readFileSync(path.join(SRC, rel), 'utf8').split('\n')
+    lines.forEach((line, i) => {
+      if (isComment(line)) return
+      if (RE.test(line)) hits.push({ file: rel, line: i + 1, text: line.trim() })
+      RE.lastIndex = 0
+    })
+  }
+  return hits
+}
+
 describe('admin paths carry the /admin prefix', () => {
+  test('an interpolated href/action starts from ADMIN_PREFIX, not a bare slash', () => {
+    expect(format(scanInterpolated())).toBe('')
+  })
+
   test('revalidatePath targets an admin route, not the storefront equivalent', () => {
     expect(format(scan(/revalidatePath\(\s*[`'"]([^`'"]+)/g))).toBe('')
   })

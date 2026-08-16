@@ -24,19 +24,56 @@ const fieldBase = cn(
 
 const withError = (error?: string) => (error ? 'border-ih-danger' : 'border-ih-border')
 
+/**
+ * Field passes the generated id and the error DOWN rather than making every
+ * caller thread them through by hand.
+ *
+ * The previous API took an optional `htmlFor` and left the matching `id` to
+ * the caller. Nothing enforced the pair, so a label with no htmlFor and a
+ * control with no id looked completely correct in review and shipped with no
+ * association at all — clicking the label focused nothing, and a screen reader
+ * announced the control unlabelled. That failure mode is invisible in a
+ * screenshot, which is how ~150 of them accumulated.
+ *
+ * With the context, association is the default and opting out means passing an
+ * explicit id. An explicit prop always wins so a caller can still override.
+ */
+interface FieldCtx {
+  id: string
+  // Explicit `| undefined` rather than `?:` — the repo runs
+  // exactOptionalPropertyTypes, so an optional property may be ABSENT but not
+  // present-and-undefined, and these are always passed.
+  error: string | undefined
+  describedBy: string | undefined
+}
+const FieldContext = React.createContext<FieldCtx | null>(null)
+
+/** Explicit prop wins; otherwise inherit from the enclosing Field. */
+function useFieldWiring(id?: string, error?: string) {
+  const ctx = React.useContext(FieldContext)
+  return {
+    id: id ?? ctx?.id,
+    error: error ?? ctx?.error,
+    describedBy: ctx?.describedBy,
+  }
+}
+
 export interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
   error?: string
 }
 
 export const Input = React.forwardRef<HTMLInputElement, InputProps>(function Input(
-  { className, error, ...props },
+  { className, error: errorProp, id: idProp, ...props },
   ref
 ) {
+  const { id, error, describedBy } = useFieldWiring(idProp, errorProp)
   return (
     <input
       ref={ref}
+      id={id}
       className={cn(fieldBase, 'h-10', withError(error), className)}
       aria-invalid={error ? true : undefined}
+      aria-describedby={describedBy}
       {...props}
     />
   )
@@ -47,15 +84,18 @@ export interface TextareaProps extends React.TextareaHTMLAttributes<HTMLTextArea
 }
 
 export const Textarea = React.forwardRef<HTMLTextAreaElement, TextareaProps>(function Textarea(
-  { className, error, rows = 4, ...props },
+  { className, error: errorProp, id: idProp, rows = 4, ...props },
   ref
 ) {
+  const { id, error, describedBy } = useFieldWiring(idProp, errorProp)
   return (
     <textarea
       ref={ref}
+      id={id}
       rows={rows}
       className={cn(fieldBase, 'h-auto resize-y py-2.5 leading-[1.55]', withError(error), className)}
       aria-invalid={error ? true : undefined}
+      aria-describedby={describedBy}
       {...props}
     />
   )
@@ -72,12 +112,14 @@ export interface SelectProps extends React.SelectHTMLAttributes<HTMLSelectElemen
 }
 
 export const Select = React.forwardRef<HTMLSelectElement, SelectProps>(function Select(
-  { className, error, style, ...props },
+  { className, error: errorProp, id: idProp, style, ...props },
   ref
 ) {
+  const { id, error, describedBy } = useFieldWiring(idProp, errorProp)
   return (
     <select
       ref={ref}
+      id={id}
       className={cn(fieldBase, 'h-10 appearance-none pr-[30px]', withError(error), className)}
       // Repeat is set here rather than via `bg-no-repeat` so the caret cannot
       // tile if the utility is ever purged or overridden — the three
@@ -89,6 +131,7 @@ export const Select = React.forwardRef<HTMLSelectElement, SelectProps>(function 
         ...style,
       }}
       aria-invalid={error ? true : undefined}
+      aria-describedby={describedBy}
       {...props}
     />
   )
@@ -129,12 +172,29 @@ export interface FieldProps {
  * stacking under it, so the control never changes height on validation.
  */
 export function Field({ label, hint, error, htmlFor, className, children }: FieldProps) {
+  // useId() rather than a name-derived string: these forms render inside
+  // .map()s (address rows, spec rows), so a static id would be duplicated
+  // across instances and the browser would resolve every one of those labels
+  // to whichever control it saw first.
+  const auto = React.useId()
+  const id = htmlFor ?? auto
+  const messageId = `${id}-msg`
+  const hasMessage = Boolean(error || hint)
+
   return (
-    <div className={className}>
-      {label ? <Label htmlFor={htmlFor}>{label}</Label> : null}
-      {children}
-      {error ? <ErrorText>{error}</ErrorText> : hint ? <Hint>{hint}</Hint> : null}
-    </div>
+    <FieldContext.Provider
+      value={{ id, error, describedBy: hasMessage ? messageId : undefined }}
+    >
+      <div className={className}>
+        {label ? <Label htmlFor={id}>{label}</Label> : null}
+        {children}
+        {error ? (
+          <ErrorText id={messageId}>{error}</ErrorText>
+        ) : hint ? (
+          <Hint id={messageId}>{hint}</Hint>
+        ) : null}
+      </div>
+    </FieldContext.Provider>
   )
 }
 

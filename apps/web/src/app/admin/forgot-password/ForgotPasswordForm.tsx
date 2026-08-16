@@ -5,7 +5,7 @@ import { useActionState } from 'react'
 import { NEUTRAL, requestStaffPasswordReset, type ForgotState } from './actions'
 
 const inputCls =
-  'h-10 w-full border border-[#2a2e35] bg-[#0e1013] px-3 text-sm text-[#f0ece3] placeholder:text-[#3a3f47] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ih-accent transition-colors'
+  'h-10 w-full border border-[var(--color-ih-navy-2)] bg-[var(--color-ih-navy)] px-3 text-sm text-[#ffffff] placeholder:text-[oklch(0.62_0.03_250)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ih-accent transition-colors'
 
 export default function ForgotPasswordForm() {
   const [state, formAction, pending] = useActionState<ForgotState, FormData>(
@@ -19,14 +19,14 @@ export default function ForgotPasswordForm() {
     return (
       <div>
         <h1 className="mb-2 text-[22px] font-semibold text-white">Check your email</h1>
-        <p className="mb-2 text-[13px] leading-relaxed text-[#9aa0a8]">{NEUTRAL}</p>
-        <p className="mb-7 text-[13px] leading-relaxed text-[#6b7079]">
+        <p className="mb-2 text-[13px] leading-relaxed text-[oklch(0.75_0.02_250)]">{NEUTRAL}</p>
+        <p className="mb-7 text-[13px] leading-relaxed text-[oklch(0.68_0.03_250)]">
           The link is valid for 60 minutes and can be used once. Your current password keeps
           working until you set a new one.
         </p>
         <Link
           href="/admin/sign-in"
-          className="inline-flex h-11 w-full items-center justify-center border border-[#2a2e35] text-sm font-medium text-[#f0ece3] transition-colors hover:bg-[#0e1013]"
+          className="inline-flex h-11 w-full items-center justify-center border border-[var(--color-ih-navy-2)] text-sm font-medium text-[#ffffff] transition-colors hover:bg-[var(--color-ih-navy)]"
         >
           Back to sign in
         </Link>
@@ -37,7 +37,7 @@ export default function ForgotPasswordForm() {
   return (
     <>
       <h1 className="mb-1 text-[22px] font-semibold text-white">Reset your password</h1>
-      <p className="mb-7 text-[13px] text-[#6b7079]">
+      <p className="mb-7 text-[13px] text-[oklch(0.68_0.03_250)]">
         We&apos;ll email you a single-use link to choose a new one.
       </p>
 
@@ -52,7 +52,7 @@ export default function ForgotPasswordForm() {
         )}
 
         <div className="flex flex-col gap-1.5">
-          <label className="text-[12px] font-medium text-[#9aa0a8]" htmlFor="email">
+          <label className="text-[12px] font-medium text-[oklch(0.75_0.02_250)]" htmlFor="email">
             Work email
           </label>
           <input id="email" name="email" type="email" autoComplete="email" required className={inputCls} />
@@ -69,7 +69,7 @@ export default function ForgotPasswordForm() {
 
       <Link
         href="/admin/sign-in"
-        className="mt-5 block text-center text-[13px] text-[#6b7079] transition-colors hover:text-[#9aa0a8]"
+        className="mt-5 block text-center text-[13px] text-[oklch(0.68_0.03_250)] transition-colors hover:text-[oklch(0.75_0.02_250)]"
       >
         Back to sign in
       </Link>

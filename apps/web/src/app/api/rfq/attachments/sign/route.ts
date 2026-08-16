@@ -22,9 +22,32 @@ import { STORAGE_BUCKETS, supabaseAdmin } from '../../../../../lib/supabase-admi
  *  - Content type and declared size are validated before a URL is issued.
  *  - The URL is single-use and short-lived, issued by Supabase.
  *
- * The remaining abuse case is someone burning storage by requesting URLs in a
- * loop. That is rate-limiting work, not signing work — see the TODO below.
+ * Abuse: an unauthenticated signer can be called in a loop to burn storage.
+ * A per-IP token bucket is applied below. It is in-memory, so it is per
+ * instance and resets on deploy — that is a real limit, not a pretence: it
+ * blunts a single-source loop but not a distributed one. The durable fix is
+ * the shared rate limiter the SEO console already needs; this is deliberately
+ * the cheap version, and it is documented as such rather than left implicit.
  */
+
+/** Per-IP token bucket. Deliberately small — six files is the form's own cap. */
+const RATE_LIMIT = { tokens: 12, windowMs: 60_000 }
+const buckets = new Map<string, { count: number; resetAt: number }>()
+
+function rateLimited(ip: string): boolean {
+  const now = Date.now()
+  const bucket = buckets.get(ip)
+  if (!bucket || now > bucket.resetAt) {
+    buckets.set(ip, { count: 1, resetAt: now + RATE_LIMIT.windowMs })
+    return false
+  }
+  bucket.count += 1
+  if (buckets.size > 5_000) {
+    // Bound the map; drop anything already expired.
+    for (const [k, v] of buckets) if (now > v.resetAt) buckets.delete(k)
+  }
+  return bucket.count > RATE_LIMIT.tokens
+}
 
 const MAX_BYTES = 25 * 1024 * 1024
 
@@ -46,6 +69,14 @@ const ALLOWED = new Map<string, string>([
 type Body = { filename?: unknown; contentType?: unknown; size?: unknown }
 
 export async function POST(request: Request) {
+  const ip =
+    request.headers.get('x-forwarded-for')?.split(',')[0]?.trim() ??
+    request.headers.get('x-real-ip') ??
+    'unknown'
+  if (rateLimited(ip)) {
+    return NextResponse.json({ error: 'Too many uploads. Wait a minute and try again.' }, { status: 429 })
+  }
+
   let body: Body
   try {
     body = (await request.json()) as Body

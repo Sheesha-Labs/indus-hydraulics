@@ -2,6 +2,7 @@
 
 import { useRef, useState, useEffect, useTransition } from 'react'
 import Link from 'next/link'
+import { Input, Select, Textarea } from '@indus/ui'
 import RfqAttachments from './RfqAttachments'
 import { submitRfq } from '../app/(storefront)/quote/actions'
 
@@ -135,68 +136,63 @@ export default function RfqSubmitForm({ addresses, isAuthenticated }: Props) {
               <div className="flex flex-col gap-4">
                 <div className="grid grid-cols-2 gap-3.5">
                   <div>
-                    <label className="mb-1.5 block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">
+                    <label htmlFor="rfq-firstName" className="mb-1.5 block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">
                       First name *
                     </label>
-                    <input
+                    <Input
+                      id="rfq-firstName"
                       name="firstName"
                       type="text"
                       required
-                      placeholder="e.g. Rohit"
-                      className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] text-ih-ink placeholder:text-ih-muted-2 focus:outline-none focus:border-ih-accent"
-                    />
+                      placeholder="e.g. Rohit" />
                   </div>
                   <div>
-                    <label className="mb-1.5 block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">
+                    <label htmlFor="rfq-lastName" className="mb-1.5 block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">
                       Last name *
                     </label>
-                    <input
+                    <Input
+                      id="rfq-lastName"
                       name="lastName"
                       type="text"
                       required
-                      placeholder="e.g. Kapoor"
-                      className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] text-ih-ink placeholder:text-ih-muted-2 focus:outline-none focus:border-ih-accent"
-                    />
+                      placeholder="e.g. Kapoor" />
                   </div>
                 </div>
 
                 <div className="grid grid-cols-2 gap-3.5">
                   <div>
-                    <label className="mb-1.5 block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">
+                    <label htmlFor="rfq-email" className="mb-1.5 block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">
                       Work email *
                     </label>
-                    <input
+                    <Input
+                      id="rfq-email"
                       name="email"
                       type="email"
                       required
-                      placeholder="rohit@company.com"
-                      className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] text-ih-ink placeholder:text-ih-muted-2 focus:outline-none focus:border-ih-accent"
-                    />
+                      placeholder="rohit@company.com" />
                   </div>
                   <div>
-                    <label className="mb-1.5 block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">
+                    <label htmlFor="rfq-phone" className="mb-1.5 block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">
                       Phone / WhatsApp
                     </label>
-                    <input
+                    <Input
+                      id="rfq-phone"
                       name="phone"
                       type="tel"
-                      placeholder="+971 5X XXX XXXX"
-                      className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] text-ih-ink font-mono placeholder:text-ih-muted-2 focus:outline-none focus:border-ih-accent"
-                    />
+                      placeholder="+971 5X XXX XXXX" className="font-mono" />
                   </div>
                 </div>
 
                 <div>
-                  <label className="mb-1.5 block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">
+                  <label htmlFor="rfq-company" className="mb-1.5 block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">
                     Company *
                   </label>
-                  <input
+                  <Input
+                    id="rfq-company"
                     name="company"
                     type="text"
                     required
-                    placeholder="Your company / refinery / EPC"
-                    className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] text-ih-ink placeholder:text-ih-muted-2 focus:outline-none focus:border-ih-accent"
-                  />
+                    placeholder="Your company / refinery / EPC" />
                 </div>
               </div>
             </section>
@@ -209,10 +205,17 @@ export default function RfqSubmitForm({ addresses, isAuthenticated }: Props) {
 
             <div className="flex flex-col gap-4">
               {/* Urgency radio cards */}
-              <div>
-                <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-2">
+              {/*
+                fieldset/legend, not <label>. A <label> names ONE control; a
+                radio set has three, so the caption was associated with
+                nothing and a screen reader read the three options with no
+                idea what question they answered. The reset strips the UA's
+                default fieldset border and padding.
+              */}
+              <fieldset className="min-w-0 border-0 p-0 m-0">
+                <legend className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-2">
                   Urgency *
-                </label>
+                </legend>
                 <div className="grid grid-cols-3 gap-2">
                   {URGENCY_OPTIONS.map((opt) => (
                     <label
@@ -235,80 +238,75 @@ export default function RfqSubmitForm({ addresses, isAuthenticated }: Props) {
                     </label>
                   ))}
                 </div>
-              </div>
+              </fieldset>
 
               {/* Subject */}
               <div>
-                <label className="mb-1.5 block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">
+                <label htmlFor="rfq-subject" className="mb-1.5 block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">
                   RFQ subject
                 </label>
-                <input
+                <Input
+                  id="rfq-subject"
                   name="subject"
                   type="text"
-                  placeholder="e.g. Annual Maintenance Hydraulic Pumps Q2 2026"
-                  className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] text-ih-ink placeholder:text-ih-muted-2 focus:outline-none focus:border-ih-accent"
-                />
+                  placeholder="e.g. Annual Maintenance Hydraulic Pumps Q2 2026" />
               </div>
 
               {/* Use case */}
               <div>
-                <label className="mb-1.5 block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">
+                <label htmlFor="rfq-applicationContext" className="mb-1.5 block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">
                   Use case / application
                 </label>
-                <textarea
+                <Textarea
+                  id="rfq-applicationContext"
                   name="applicationContext"
                   rows={3}
-                  placeholder={`Describe the equipment, line, or system. E.g. 'Replacement on Refinery Line 4, hot-oil duty, 200 bar continuous, 12hr/day'`}
-                  className="w-full rounded-md border border-ih-border bg-ih-surface px-3 py-2.5 text-[13.5px] text-ih-ink outline-none transition-colors placeholder:text-ih-muted focus:border-ih-accent focus:ring-[3px] focus:ring-ih-accent-soft resize-none"
-                />
+                  placeholder={`Describe the equipment, line, or system. E.g. 'Replacement on Refinery Line 4, hot-oil duty, 200 bar continuous, 12hr/day'`} className="resize-none" />
               </div>
 
               {/* Date + incoterm */}
               <div className="grid grid-cols-2 gap-3.5">
                 <div>
-                  <label className="mb-1.5 block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">
+                  <label htmlFor="rfq-requestedDelivery" className="mb-1.5 block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">
                     Target delivery date
                   </label>
-                  <input
+                  <Input
+                    id="rfq-requestedDelivery"
                     name="requestedDelivery"
-                    type="date"
-                    className="w-full h-10 rounded-md border border-ih-border bg-ih-surface px-3 text-[13.5px] text-ih-ink outline-none transition-colors focus:border-ih-accent focus:ring-[3px] focus:ring-ih-accent-soft"
-                  />
+                    type="date" />
                 </div>
                 <div>
-                  <label className="mb-1.5 block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">
+                  <label htmlFor="rfq-incoterm" className="mb-1.5 block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">
                     Incoterm preference
                   </label>
-                  <select
-                    name="incoterm"
-                    className="w-full h-10 rounded-md border border-ih-border bg-ih-surface px-3 text-[13.5px] text-ih-ink outline-none transition-colors focus:border-ih-accent focus:ring-[3px] focus:ring-ih-accent-soft"
-                  >
+                  <Select
+                    id="rfq-incoterm"
+                    name="incoterm">
                     <option value="exw">Ex-works (EXW)</option>
                     <option value="fob">FOB · Jebel Ali, Dubai</option>
                     <option value="cif">CIF · destination port</option>
                     <option value="dap">DAP · door delivery</option>
                     <option value="">Not sure — advise</option>
-                  </select>
+                  </Select>
                 </div>
               </div>
 
               {/* Ship-to address */}
               {addresses.length > 0 && (
                 <div>
-                  <label className="mb-1.5 block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">
+                  <label htmlFor="rfq-shipToAddressId" className="mb-1.5 block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">
                     Delivery address
                   </label>
-                  <select
-                    name="shipToAddressId"
-                    className="w-full h-10 rounded-md border border-ih-border bg-ih-surface px-3 text-[13.5px] text-ih-ink outline-none transition-colors focus:border-ih-accent focus:ring-[3px] focus:ring-ih-accent-soft"
-                  >
+                  <Select
+                    id="rfq-shipToAddressId"
+                    name="shipToAddressId">
                     <option value="">— Select address —</option>
                     {addresses.map((addr) => (
                       <option key={addr.id} value={addr.id}>
                         {addr.label} · {addr.city}, {addr.countryCode}
                       </option>
                     ))}
-                  </select>
+                  </Select>
                 </div>
               )}
 
@@ -318,15 +316,14 @@ export default function RfqSubmitForm({ addresses, isAuthenticated }: Props) {
 
               {/* Additional notes */}
               <div>
-                <label className="mb-1.5 block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">
+                <label htmlFor="rfq-customerMessage" className="mb-1.5 block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">
                   Additional notes
                 </label>
-                <textarea
+                <Textarea
+                  id="rfq-customerMessage"
                   name="customerMessage"
                   rows={2}
-                  placeholder="Any other information for our team"
-                  className="w-full rounded-md border border-ih-border bg-ih-surface px-3 py-2.5 text-[13.5px] text-ih-ink outline-none transition-colors placeholder:text-ih-muted focus:border-ih-accent focus:ring-[3px] focus:ring-ih-accent-soft resize-none"
-                />
+                  placeholder="Any other information for our team" className="resize-none" />
               </div>
             </div>
           </section>

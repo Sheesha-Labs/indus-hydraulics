@@ -2,6 +2,7 @@
 
 import { useState, useTransition } from 'react'
 import { addAddress, setDefaultAddress, deleteAddress } from '../app/(storefront)/account/addresses/actions'
+import { Input, Select } from '@indus/ui'
 
 type Address = {
   id: string
@@ -145,53 +146,63 @@ export default function AddressBook({ addresses, requiresApproval }: Props) {
           <form onSubmit={handleAdd} className="space-y-3">
             <div className="grid grid-cols-2 gap-3">
               <div className="col-span-2">
-                <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1">Label *</label>
-                <input name="label" required type="text" placeholder="e.g. HQ Warehouse, Site A" className="w-full h-9 px-3 border border-ih-border bg-ih-bg text-[13px] focus:outline-none focus:border-ih-accent" />
+                <label htmlFor="addr-label" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1">Label *</label>
+                <Input
+                  id="addr-label" name="label" required type="text" placeholder="e.g. HQ Warehouse, Site A" />
               </div>
               <div>
-                <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1">Type</label>
-                <select name="kind" className="w-full h-9 px-2 border border-ih-border bg-ih-bg text-[13px] focus:outline-none">
+                <label htmlFor="addr-kind" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1">Type</label>
+                <Select
+                  id="addr-kind" name="kind">
                   <option value="ship_to">Ship-to</option>
                   <option value="bill_to">Bill-to</option>
                   <option value="both">Both</option>
-                </select>
+                </Select>
               </div>
               <div>
-                <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1">Attention</label>
-                <input name="attention" type="text" placeholder="Contact name" className="w-full h-9 px-3 border border-ih-border bg-ih-bg text-[13px] focus:outline-none focus:border-ih-accent" />
+                <label htmlFor="addr-attention" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1">Attention</label>
+                <Input
+                  id="addr-attention" name="attention" type="text" placeholder="Contact name" />
               </div>
               <div className="col-span-2">
-                <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1">Address Line 1 *</label>
-                <input name="line1" required type="text" placeholder="Street address, P.O. Box" className="w-full h-9 px-3 border border-ih-border bg-ih-bg text-[13px] focus:outline-none focus:border-ih-accent" />
+                <label htmlFor="addr-line1" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1">Address Line 1 *</label>
+                <Input
+                  id="addr-line1" name="line1" required type="text" placeholder="Street address, P.O. Box" />
               </div>
               <div className="col-span-2">
-                <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1">Address Line 2</label>
-                <input name="line2" type="text" placeholder="Suite, Building, Floor" className="w-full h-9 px-3 border border-ih-border bg-ih-bg text-[13px] focus:outline-none focus:border-ih-accent" />
+                <label htmlFor="addr-line2" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1">Address Line 2</label>
+                <Input
+                  id="addr-line2" name="line2" type="text" placeholder="Suite, Building, Floor" />
               </div>
               <div>
-                <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1">City *</label>
-                <input name="city" required type="text" className="w-full h-9 px-3 border border-ih-border bg-ih-bg text-[13px] focus:outline-none focus:border-ih-accent" />
+                <label htmlFor="addr-city" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1">City *</label>
+                <Input
+                  id="addr-city" name="city" required type="text" />
               </div>
               <div>
-                <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1">State / Region</label>
-                <input name="region" type="text" className="w-full h-9 px-3 border border-ih-border bg-ih-bg text-[13px] focus:outline-none focus:border-ih-accent" />
+                <label htmlFor="addr-region" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1">State / Region</label>
+                <Input
+                  id="addr-region" name="region" type="text" />
               </div>
               <div>
-                <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1">Postal Code</label>
-                <input name="postalCode" type="text" className="w-full h-9 px-3 border border-ih-border bg-ih-bg text-[13px] focus:outline-none focus:border-ih-accent" />
+                <label htmlFor="addr-postalCode" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1">Postal Code</label>
+                <Input
+                  id="addr-postalCode" name="postalCode" type="text" />
               </div>
               <div>
-                <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1">Country *</label>
-                <select name="countryCode" required className="w-full h-9 px-2 border border-ih-border bg-ih-bg text-[13px] focus:outline-none">
+                <label htmlFor="addr-countryCode" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1">Country *</label>
+                <Select
+                  id="addr-countryCode" name="countryCode" required>
                   <option value="">— Select —</option>
                   {COUNTRIES.map((c) => (
                     <option key={c.code} value={c.code}>{c.name}</option>
                   ))}
-                </select>
+                </Select>
               </div>
               <div>
-                <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1">Phone</label>
-                <input name="phone" type="tel" className="w-full h-9 px-3 border border-ih-border bg-ih-bg text-[13px] focus:outline-none focus:border-ih-accent" />
+                <label htmlFor="addr-phone" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1">Phone</label>
+                <Input
+                  id="addr-phone" name="phone" type="tel" />
               </div>
             </div>
 

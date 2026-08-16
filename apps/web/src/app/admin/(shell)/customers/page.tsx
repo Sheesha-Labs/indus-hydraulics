@@ -81,7 +81,7 @@ export default async function AdminCustomersPage({ params, searchParams }: Props
 
       {/* Search + filters */}
       <div className="flex flex-wrap items-center gap-3 mb-6">
-        <form method="GET" action={`/customers`} className="flex border border-ih-border bg-ih-surface h-9">
+        <form method="GET" action={`/admin/customers`} className="flex border border-ih-border bg-ih-surface h-9">
           <input
             name="q"
             defaultValue={query}

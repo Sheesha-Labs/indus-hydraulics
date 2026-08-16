@@ -11,6 +11,7 @@ import {
   renderRfqInternalAlert,
 } from '@indus/email'
 import { loadEmailBranding } from '../../../lib/email-branding'
+import { STORAGE_BUCKETS } from '../../../lib/supabase-admin'
 
 type LineItem = {
   sku: string
@@ -202,7 +203,12 @@ export async function submitRfq(formData: FormData): Promise<SubmitResult> {
               : file.contentType === 'application/pdf'
                 ? 'document'
                 : 'cad',
-            storagePath: file.path,
+            // Bucket-PREFIXED, matching uploadToStorage's convention for
+            // private buckets — signedUrlFor() splits on the first slash to
+            // recover the bucket. Storing the bare object key made every
+            // attachment unreadable: the reader signed against a bucket
+            // called "rfq-attachments", which does not exist.
+            storagePath: `${STORAGE_BUCKETS.documents}/${file.path}`,
             originalFilename: file.label,
             mimeType: file.contentType,
             bytes: file.size,

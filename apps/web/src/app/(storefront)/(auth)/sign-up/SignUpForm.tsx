@@ -2,7 +2,7 @@
 
 import { useActionState } from 'react'
 import { useRouter } from 'next/navigation'
-import { Button } from '@indus/ui'
+import { Button, Input, Select } from '@indus/ui'
 import { signUpAction } from '../../../../actions/auth'
 
 type State = { error?: string; success?: boolean } | null
@@ -46,24 +46,29 @@ export default function SignUpForm() {
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
             <div className="flex flex-col gap-1.5">
-              <label className="text-xs font-medium text-ih-ink-2">Full name *</label>
-              <input name="fullName" type="text" required className={inputCls} />
+              <label htmlFor="signup-fullName" className="text-xs font-medium text-ih-ink-2">Full name *</label>
+              <Input
+                id="signup-fullName" name="fullName" type="text" required className={inputCls} />
             </div>
             <div className="flex flex-col gap-1.5">
-              <label className="text-xs font-medium text-ih-ink-2">Job title</label>
-              <input name="jobTitle" type="text" placeholder="e.g. Procurement Manager" className={inputCls} />
+              <label htmlFor="signup-jobTitle" className="text-xs font-medium text-ih-ink-2">Job title</label>
+              <Input
+                id="signup-jobTitle" name="jobTitle" type="text" placeholder="e.g. Procurement Manager" className={inputCls} />
             </div>
             <div className="flex flex-col gap-1.5">
-              <label className="text-xs font-medium text-ih-ink-2">Work email *</label>
-              <input name="email" type="email" required placeholder="you@company.com" className={inputCls} />
+              <label htmlFor="signup-email" className="text-xs font-medium text-ih-ink-2">Work email *</label>
+              <Input
+                id="signup-email" name="email" type="email" required placeholder="you@company.com" className={inputCls} />
             </div>
             <div className="flex flex-col gap-1.5">
-              <label className="text-xs font-medium text-ih-ink-2">Phone *</label>
-              <input name="phone" type="tel" required placeholder="+971 …" className={`${inputCls} font-mono`} />
+              <label htmlFor="signup-phone" className="text-xs font-medium text-ih-ink-2">Phone *</label>
+              <Input
+                id="signup-phone" name="phone" type="tel" required placeholder="+971 …" className={`${inputCls} font-mono`} />
             </div>
             <div className="flex flex-col gap-1.5 sm:col-span-2">
-              <label className="text-xs font-medium text-ih-ink-2">Password *</label>
-              <input name="password" type="password" required placeholder="Min 10 characters" className={inputCls} />
+              <label htmlFor="signup-password" className="text-xs font-medium text-ih-ink-2">Password *</label>
+              <Input
+                id="signup-password" name="password" type="password" required placeholder="Min 10 characters" className={inputCls} />
             </div>
           </div>
         </div>
@@ -75,37 +80,42 @@ export default function SignUpForm() {
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
             <div className="flex flex-col gap-1.5 sm:col-span-2">
-              <label className="text-xs font-medium text-ih-ink-2">Company name *</label>
-              <input name="companyName" type="text" required className={inputCls} />
+              <label htmlFor="signup-companyName" className="text-xs font-medium text-ih-ink-2">Company name *</label>
+              <Input
+                id="signup-companyName" name="companyName" type="text" required className={inputCls} />
             </div>
             <div className="flex flex-col gap-1.5">
-              <label className="text-xs font-medium text-ih-ink-2">Industry *</label>
-              <select name="industry" required className={selectCls}>
+              <label htmlFor="signup-industry" className="text-xs font-medium text-ih-ink-2">Industry *</label>
+              <Select
+                id="signup-industry" name="industry" required className={selectCls}>
                 <option value="">Select…</option>
                 {INDUSTRIES.map((i) => (
                   <option key={i} value={i}>{i}</option>
                 ))}
-              </select>
+              </Select>
             </div>
             <div className="flex flex-col gap-1.5">
-              <label className="text-xs font-medium text-ih-ink-2">Annual hydraulics spend (est.)</label>
-              <select name="annualSpend" className={selectCls}>
+              <label htmlFor="signup-annualSpend" className="text-xs font-medium text-ih-ink-2">Annual hydraulics spend (est.)</label>
+              <Select
+                id="signup-annualSpend" name="annualSpend" className={selectCls}>
                 {SPEND_RANGES.map((r) => (
                   <option key={r} value={r}>{r}</option>
                 ))}
-              </select>
+              </Select>
             </div>
             <div className="flex flex-col gap-1.5">
-              <label className="text-xs font-medium text-ih-ink-2">VAT / TRN</label>
-              <input name="taxId" type="text" className={`${inputCls} font-mono`} />
+              <label htmlFor="signup-taxId" className="text-xs font-medium text-ih-ink-2">VAT / TRN</label>
+              <Input
+                id="signup-taxId" name="taxId" type="text" className={`${inputCls} font-mono`} />
             </div>
             <div className="flex flex-col gap-1.5">
-              <label className="text-xs font-medium text-ih-ink-2">Country *</label>
-              <select name="country" required className={selectCls}>
+              <label htmlFor="signup-country" className="text-xs font-medium text-ih-ink-2">Country *</label>
+              <Select
+                id="signup-country" name="country" required className={selectCls}>
                 {COUNTRIES.map((c) => (
                   <option key={c} value={c}>{c}</option>
                 ))}
-              </select>
+              </Select>
             </div>
           </div>
         </div>

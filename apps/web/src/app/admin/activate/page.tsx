@@ -28,16 +28,16 @@ export default async function ActivatePage({ searchParams }: Props) {
   const { invitation, state } = await loadActivationLink(token)
 
   return (
-    <div className="grid min-h-screen place-items-center bg-[#0e1013] p-6">
+    <div className="grid min-h-screen place-items-center bg-[var(--color-ih-navy)] p-6">
       <div className="w-full max-w-[380px]">
         <div className="mb-8 flex items-center gap-3">
-          <div className="relative grid h-10 w-10 place-items-center rounded-sm bg-[#f5f3ee] font-mono text-[14px] font-semibold text-[#111]">
+          <div className="relative grid h-10 w-10 place-items-center rounded-sm bg-[#ffffff] font-mono text-[14px] font-semibold text-[#111]">
             IH
             <span className="absolute -bottom-0.5 -right-0.5 h-2 w-2 bg-ih-accent" />
           </div>
           <div>
             <div className="font-semibold leading-tight text-white">Indus Hydraulics</div>
-            <div className="font-mono text-[10px] uppercase tracking-[0.1em] text-[#6b7079]">
+            <div className="font-mono text-[10px] uppercase tracking-[0.1em] text-[oklch(0.68_0.03_250)]">
               Admin Portal
             </div>
           </div>
@@ -54,7 +54,7 @@ export default async function ActivatePage({ searchParams }: Props) {
           />
         )}
 
-        <p className="mt-6 text-center font-mono text-[11px] text-[#3a3f47]">
+        <p className="mt-6 text-center font-mono text-[11px] text-[oklch(0.62_0.03_250)]">
           © {new Date().getFullYear()} Indus Hydraulics Pvt. Ltd.
         </p>
       </div>
@@ -71,13 +71,13 @@ function ActivatePanel({
 }) {
   const copy = activationCopy(invitation.purpose, invitation.name)
   return (
-    <div className="border border-[#2a2e35] bg-[#15181d] p-8">
-      <p className="mb-1.5 font-mono text-[11px] uppercase tracking-[0.16em] text-[#6b7079]">
+    <div className="border border-[var(--color-ih-navy-2)] bg-[var(--color-ih-navy-2)] p-8">
+      <p className="mb-1.5 font-mono text-[11px] uppercase tracking-[0.16em] text-[oklch(0.68_0.03_250)]">
         {copy.eyebrow}
       </p>
       <h1 className="mb-1 text-[22px] font-semibold text-white">{copy.heading}</h1>
-      <p className="mb-2 text-[13px] text-[#6b7079]">{copy.intro}</p>
-      <p className="mb-7 font-mono text-[11px] text-[#6b7079]">{invitation.email}</p>
+      <p className="mb-2 text-[13px] text-[oklch(0.68_0.03_250)]">{copy.intro}</p>
+      <p className="mb-7 font-mono text-[11px] text-[oklch(0.68_0.03_250)]">{invitation.email}</p>
 
       <ActivateForm
         token={token}
@@ -90,9 +90,9 @@ function ActivatePanel({
 
 function DeadLinkPanel({ message }: { message: string }) {
   return (
-    <div className="border border-[#2a2e35] bg-[#15181d] p-8">
+    <div className="border border-[var(--color-ih-navy-2)] bg-[var(--color-ih-navy-2)] p-8">
       <h1 className="mb-2 text-[22px] font-semibold text-white">Link not usable</h1>
-      <p className="mb-7 text-[13px] leading-relaxed text-[#9aa0a8]">{message}</p>
+      <p className="mb-7 text-[13px] leading-relaxed text-[oklch(0.75_0.02_250)]">{message}</p>
       <Link
         href="/admin/forgot-password"
         className="inline-flex h-11 w-full items-center justify-center bg-ih-accent text-sm font-medium text-white transition-opacity hover:opacity-90"
@@ -101,7 +101,7 @@ function DeadLinkPanel({ message }: { message: string }) {
       </Link>
       <Link
         href="/admin/sign-in"
-        className="mt-3 block text-center text-[13px] text-[#6b7079] transition-colors hover:text-[#9aa0a8]"
+        className="mt-3 block text-center text-[13px] text-[oklch(0.68_0.03_250)] transition-colors hover:text-[oklch(0.75_0.02_250)]"
       >
         Back to sign in
       </Link>

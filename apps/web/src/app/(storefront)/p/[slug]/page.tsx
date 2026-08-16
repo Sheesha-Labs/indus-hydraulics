@@ -782,7 +782,7 @@ function StockPill({
   return (
     <span
       className="inline-flex items-center gap-1.5 px-2.5 py-1 font-mono text-[11px] font-medium tracking-[0.04em]"
-      style={{ background: 'var(--color-deep)', color: 'var(--color-ih-muted)' }}
+      style={{ background: 'var(--color-ih-surface-2)', color: 'var(--color-ih-muted)' }}
     >
       <span className="w-1.5 h-1.5 rounded-full" style={{ background: 'var(--color-ih-muted)' }} />
       Contact for availability

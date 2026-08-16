@@ -156,7 +156,7 @@ export default async function AdminProductsPage({ params, searchParams }: Props)
         {/* Search + filter form (single submission to keep URL canonical) */}
         <form
           method="GET"
-          action={`/products`}
+          action={`/admin/products`}
           className="flex flex-wrap items-center gap-2 mb-3"
         >
           <input
