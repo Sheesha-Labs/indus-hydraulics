@@ -204,6 +204,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   const staticEntries = buildStaticEntries(BASE_URL, [
     { path: '', priority: 1.0, changeFrequency: 'weekly' },
+    // /c became a real category index in the v2 migration — it previously
+    // redirected to whichever category sorted first, so it was deliberately
+    // absent here.
+    { path: '/c', priority: 0.8, changeFrequency: 'weekly' },
     { path: '/blog', priority: 0.6, changeFrequency: 'weekly' },
     { path: '/brands', priority: 0.6, changeFrequency: 'weekly' },
     { path: '/industries', priority: 0.6, changeFrequency: 'weekly' },
