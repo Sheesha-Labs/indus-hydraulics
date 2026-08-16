@@ -75,7 +75,7 @@ export default function SignInForm() {
 
       <Button
         type="submit"
-        variant="accent"
+        kind="primary"
         size="lg"
         block
         loading={pending}

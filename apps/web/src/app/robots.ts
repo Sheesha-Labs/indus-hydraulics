@@ -62,6 +62,7 @@ export default async function robots(): Promise<MetadataRoute.Robots> {
         '/forgot-password',
         '/reset-password',
         '/maintenance',
+        '/design',
       ],
     },
     sitemap: sitemapUrl,
@@ -128,7 +129,11 @@ function toRule(c: { userAgent: string; allow: string[]; disallow: string[] }) {
  * `robots` metadata on app/admin/layout.tsx and the X-Robots-Tag response
  * header set in proxy.ts.
  */
-const RESERVED_DISALLOW = ['/admin', '/admin/']
+// `/design` is the internal design-language specimen board. It is reserved
+// rather than merely listed in the default rule because the default rule is
+// editable from the SEO console, and an internal page drifting into the index
+// is the kind of thing nobody notices until it ranks.
+const RESERVED_DISALLOW = ['/admin', '/admin/', '/design']
 
 /**
  * `MetadataRoute.Robots['rules']` is `Rule | RuleWithRequiredUserAgent[]`, so

@@ -81,7 +81,7 @@ export default function ForgotPasswordForm() {
             className="h-10 w-full border border-[var(--color-border)] bg-[var(--color-elevated)] px-3 text-sm text-[var(--color-primary)] placeholder:text-[var(--color-caption)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-accent)] transition-colors"
           />
         </div>
-        <Button type="submit" variant="accent" size="lg" block loading={pending} className="mt-1.5">
+        <Button type="submit" kind="primary" size="lg" block loading={pending} className="mt-1.5">
           Send reset link →
         </Button>
       </form>

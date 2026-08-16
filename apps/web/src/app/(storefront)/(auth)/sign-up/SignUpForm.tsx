@@ -154,7 +154,7 @@ export default function SignUpForm() {
           <span className="font-mono text-[11px] text-[var(--color-muted)]">
             Verification typically completes within 2 working hours.
           </span>
-          <Button type="submit" variant="accent" size="lg" loading={pending}>
+          <Button type="submit" kind="primary" size="lg" loading={pending}>
             Create your B2B account →
           </Button>
         </div>
