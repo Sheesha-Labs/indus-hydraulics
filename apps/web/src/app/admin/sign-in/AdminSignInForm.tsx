@@ -6,7 +6,7 @@ import { adminSignInAction } from './actions'
 type State = { error?: string } | null
 
 const inputCls =
-  'h-10 w-full border border-[#2a2e35] bg-[#0e1013] px-3 text-sm text-[#f0ece3] placeholder:text-[#3a3f47] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[oklch(0.62_0.16_45)] transition-colors'
+  'h-10 w-full border border-[#2a2e35] bg-[#0e1013] px-3 text-sm text-[#f0ece3] placeholder:text-[#3a3f47] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ih-accent transition-colors'
 
 export default function AdminSignInForm({ next }: { next?: string }) {
   // Server action, not `signIn` from next-auth/react — that client helper
@@ -60,7 +60,7 @@ export default function AdminSignInForm({ next }: { next?: string }) {
       <button
         type="submit"
         disabled={pending}
-        className="h-11 bg-[oklch(0.62_0.16_45)] text-white text-sm font-medium hover:opacity-90 transition-opacity disabled:opacity-50 mt-1"
+        className="h-11 bg-ih-accent text-white text-sm font-medium hover:opacity-90 transition-opacity disabled:opacity-50 mt-1"
       >
         {pending ? 'Signing in…' : 'Sign in →'}
       </button>

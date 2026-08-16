@@ -33,7 +33,7 @@ export default async function ActivatePage({ searchParams }: Props) {
         <div className="mb-8 flex items-center gap-3">
           <div className="relative grid h-10 w-10 place-items-center rounded-sm bg-[#f5f3ee] font-mono text-[14px] font-semibold text-[#111]">
             IH
-            <span className="absolute -bottom-0.5 -right-0.5 h-2 w-2 bg-[oklch(0.62_0.16_45)]" />
+            <span className="absolute -bottom-0.5 -right-0.5 h-2 w-2 bg-ih-accent" />
           </div>
           <div>
             <div className="font-semibold leading-tight text-white">Indus Hydraulics</div>
@@ -95,7 +95,7 @@ function DeadLinkPanel({ message }: { message: string }) {
       <p className="mb-7 text-[13px] leading-relaxed text-[#9aa0a8]">{message}</p>
       <Link
         href="/admin/forgot-password"
-        className="inline-flex h-11 w-full items-center justify-center bg-[oklch(0.62_0.16_45)] text-sm font-medium text-white transition-opacity hover:opacity-90"
+        className="inline-flex h-11 w-full items-center justify-center bg-ih-accent text-sm font-medium text-white transition-opacity hover:opacity-90"
       >
         Request a new link
       </Link>

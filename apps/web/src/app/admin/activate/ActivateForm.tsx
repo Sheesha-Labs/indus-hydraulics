@@ -6,7 +6,7 @@ import { useActionState } from 'react'
 import { activateStaffAccount, type ActivateState } from './actions'
 
 const inputCls =
-  'h-10 w-full border border-[#2a2e35] bg-[#0e1013] px-3 text-sm text-[#f0ece3] placeholder:text-[#3a3f47] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[oklch(0.62_0.16_45)] transition-colors'
+  'h-10 w-full border border-[#2a2e35] bg-[#0e1013] px-3 text-sm text-[#f0ece3] placeholder:text-[#3a3f47] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ih-accent transition-colors'
 
 export default function ActivateForm({
   token,
@@ -59,7 +59,7 @@ export default function ActivateForm({
 
         <Link
           href={`/admin/sign-in?email=${encodeURIComponent(state.email)}`}
-          className="mt-6 inline-flex h-11 w-full items-center justify-center bg-[oklch(0.62_0.16_45)] text-sm font-medium text-white transition-opacity hover:opacity-90"
+          className="mt-6 inline-flex h-11 w-full items-center justify-center bg-ih-accent text-sm font-medium text-white transition-opacity hover:opacity-90"
         >
           Go to sign in →
         </Link>
@@ -116,7 +116,7 @@ export default function ActivateForm({
       <button
         type="submit"
         disabled={pending}
-        className="mt-1 h-11 bg-[oklch(0.62_0.16_45)] text-sm font-medium text-white transition-opacity hover:opacity-90 disabled:opacity-50"
+        className="mt-1 h-11 bg-ih-accent text-sm font-medium text-white transition-opacity hover:opacity-90 disabled:opacity-50"
       >
         {pending ? 'Saving…' : submitLabel}
       </button>

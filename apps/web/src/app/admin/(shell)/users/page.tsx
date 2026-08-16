@@ -20,7 +20,7 @@ const ROLE_LABELS: Record<string, string> = {
 const ROLE_COLORS: Record<string, string> = {
   super_admin: 'bg-[var(--color-danger)] text-white',
   manager: 'bg-[var(--color-accent)] text-white',
-  sales_rep: 'bg-[var(--color-info)] text-white',
+  sales_rep: 'bg-ih-steel text-white',
   engineer: 'bg-[var(--color-warn)] text-[var(--color-primary)]',
   warehouse: 'bg-[var(--color-deep)] text-[var(--color-body)]',
   finance: 'bg-[var(--color-deep)] text-[var(--color-body)]',
