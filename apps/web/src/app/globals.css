@@ -219,6 +219,18 @@
   display: none;
 }
 
+/* Compare tray dock. 03 §1 specifies 220ms on cubic-bezier(.32,.72,0,1),
+   entering from translateY(100%). Reduced motion drops the translate via the
+   motion-reduce: variant at the call site. */
+@keyframes ih-dock {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
 /* ── Typography utilities ── */
 .mono {
   font-family: var(--font-mono);

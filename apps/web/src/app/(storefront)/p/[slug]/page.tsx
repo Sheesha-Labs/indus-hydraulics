@@ -510,6 +510,8 @@ export default async function ProductPage({ params, searchParams }: Props) {
                 sku={product.sku}
                 categoryId={product.categoryId}
                 specTemplateId={product.specTemplateId}
+                title={product.title}
+                imageUrl={product.images[0] ? mediaUrl(product.images[0].media.storagePath) : undefined}
               />
             </div>
 

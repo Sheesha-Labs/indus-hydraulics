@@ -9,9 +9,12 @@ type Props = {
   sku: string
   categoryId: string | null
   specTemplateId: string | null
+  /** Display fields for the docked tray's chips. Optional — see compare-tray.ts. */
+  title?: string
+  imageUrl?: string
 }
 
-export default function AddToCompareButton({ sku, categoryId, specTemplateId }: Props) {
+export default function AddToCompareButton({ sku, categoryId, specTemplateId, title, imageUrl }: Props) {
   const [tray, setTray] = useState<CompareTrayItem[]>([])
 
   useEffect(() => {
@@ -30,7 +33,7 @@ export default function AddToCompareButton({ sku, categoryId, specTemplateId }: 
 
   const handleAdd = useCallback(() => {
     if (!categoryId || !specTemplateId) return
-    const incoming: CompareTrayItem = { sku, categoryId, specTemplateId }
+    const incoming: CompareTrayItem = { sku, categoryId, specTemplateId, title, imageUrl }
     const result = addToTray(incoming)
     if (result.ok) {
       setTray(result.items)
@@ -44,7 +47,7 @@ export default function AddToCompareButton({ sku, categoryId, specTemplateId }: 
     } else if (result.reason === 'full') {
       window.alert(`Compare is full — you can compare up to ${result.max} products at a time.`)
     }
-  }, [sku, categoryId, specTemplateId])
+  }, [sku, categoryId, specTemplateId, title, imageUrl])
 
   if (!categoryId || !specTemplateId) {
     return (
