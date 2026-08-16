@@ -7,9 +7,13 @@ import {
   DEFAULT_REPLY_TO,
   MAIL_DOMAIN,
   MARKETING_DOMAIN,
+  SENDING_DOMAIN,
   WEBSITE_DOMAIN,
   assertMarketingSender,
   isDeliverableAddress,
+  isSendableAddress,
+  resolveFromEmail,
+  resolveReplyTo,
 } from './email-domains'
 
 const REPO_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../../..')
@@ -153,5 +157,72 @@ describe('every app send sets Reply-To', () => {
         })
     }
     expect(offenders.join('\n')).toBe('')
+  })
+})
+
+/**
+ * StoreSettings.quoteFromEmail held `sales@indushydraulics.me` — a Google
+ * Workspace address with no Resend verification. Every transactional send was
+ * rejected with "The indushydraulics.me domain is not verified", one email at
+ * a time, while the admin console showed the sender as correctly configured.
+ * These are the rules that stop a value in that field breaking sending again.
+ */
+describe('resolving the configured sender', () => {
+  test('the sending domain is the one Resend is set up for', () => {
+    expect(SENDING_DOMAIN).toBe(WEBSITE_DOMAIN)
+    expect(SENDING_DOMAIN).not.toBe(MAIL_DOMAIN)
+  })
+
+  test('an address on the mail domain is not sendable', () => {
+    // Precisely the address that was configured in production.
+    expect(isSendableAddress(`sales@${MAIL_DOMAIN}`)).toBe(false)
+  })
+
+  test('a configured sender on the mail domain is refused, not passed through', () => {
+    expect(resolveFromEmail(`sales@${MAIL_DOMAIN}`)).toBe(DEFAULT_FROM_EMAIL)
+  })
+
+  test('a configured sender on the sending domain is honoured', () => {
+    const custom = `quotes@${SENDING_DOMAIN}`
+    expect(resolveFromEmail(custom)).toBe(custom)
+  })
+
+  test('null, empty and whitespace all fall back', () => {
+    expect(resolveFromEmail(null)).toBe(DEFAULT_FROM_EMAIL)
+    expect(resolveFromEmail(undefined)).toBe(DEFAULT_FROM_EMAIL)
+    expect(resolveFromEmail('')).toBe(DEFAULT_FROM_EMAIL)
+    expect(resolveFromEmail('   ')).toBe(DEFAULT_FROM_EMAIL)
+  })
+
+  test('case and surrounding space do not defeat the check', () => {
+    expect(resolveFromEmail(` SALES@${SENDING_DOMAIN.toUpperCase()} `)).toBe(
+      `SALES@${SENDING_DOMAIN.toUpperCase()}`,
+    )
+  })
+
+  test('a lookalike domain is not accepted', () => {
+    expect(resolveFromEmail('sales@notindushydraulics.com')).toBe(DEFAULT_FROM_EMAIL)
+    expect(resolveFromEmail(`sales@${SENDING_DOMAIN}.evil.test`)).toBe(DEFAULT_FROM_EMAIL)
+  })
+})
+
+describe('resolving the configured reply-to', () => {
+  test('a reply-to on the sending domain is refused — it cannot receive', () => {
+    // The mirror failure: replies would vanish into a domain with no MX.
+    expect(resolveReplyTo(`sales@${SENDING_DOMAIN}`)).toBe(DEFAULT_REPLY_TO)
+  })
+
+  test('a reply-to on the mail domain is honoured', () => {
+    const custom = `krishan@${MAIL_DOMAIN}`
+    expect(resolveReplyTo(custom)).toBe(custom)
+  })
+
+  test('null and empty fall back to the monitored inbox', () => {
+    expect(resolveReplyTo(null)).toBe(DEFAULT_REPLY_TO)
+    expect(resolveReplyTo('')).toBe(DEFAULT_REPLY_TO)
+  })
+
+  test('From and Reply-To can never resolve to the same address', () => {
+    expect(resolveFromEmail(`sales@${MAIL_DOMAIN}`)).not.toBe(resolveReplyTo(`sales@${SENDING_DOMAIN}`))
   })
 })

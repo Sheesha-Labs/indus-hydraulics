@@ -7,6 +7,7 @@
  *
  * Run: pnpm --filter @indus/db tsx src/seed-quote-defaults.ts
  */
+import { DEFAULT_FROM_EMAIL } from '@indus/domain'
 import { db } from './index'
 
 async function main() {
@@ -29,7 +30,11 @@ async function main() {
     signaturePhone: '+971 52 2477942',
     signatureEmail: 'sales@indushydraulics.me',
 
-    quoteFromEmail: 'sales@indushydraulics.me',
+    // Must be on the Resend-verified sending domain. Seeding a mail-domain
+    // address here is what put an unsendable From into StoreSettings and had
+    // Resend reject every transactional email with
+    // "The indushydraulics.me domain is not verified."
+    quoteFromEmail: DEFAULT_FROM_EMAIL,
     quoteFromName: 'Indus Hydraulics Sales',
     internalAlertEmails: ['sales@indushydraulics.me', 'ayushkbhatia@gmail.com'],
 
