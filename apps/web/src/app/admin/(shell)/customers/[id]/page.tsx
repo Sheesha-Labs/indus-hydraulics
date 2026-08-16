@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { db, Prisma } from '@indus/db'
 import { updateAccountMeta, addActivityNote, deactivateContact, reactivateContact, approveAddress } from './actions'
 import { Input, Select, Textarea } from '@indus/ui'
+import { ADMIN_PREFIX } from '../../../../../lib/admin-paths'
 
 export const metadata: Metadata = { title: 'Customer — Indus Admin' }
 
@@ -120,7 +121,7 @@ export default async function AdminCustomerDetailPage({ params, searchParams }: 
   ]
 
   function tabUrl(t: string) {
-    return `/customers/${id}?tab=${t}`
+    return `${ADMIN_PREFIX}/customers/${id}?tab=${t}`
   }
 
   return (

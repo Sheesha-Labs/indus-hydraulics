@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { db } from '@indus/db'
 import AdminPageShell from '../../../../components/admin/AdminPageShell'
+import { ADMIN_PREFIX } from '../../../../lib/admin-paths'
 
 export const metadata: Metadata = { title: 'RFQ Queue — Indus Admin' }
 
@@ -73,7 +74,7 @@ export default async function AdminRfqsPage({ searchParams }: Props) {
       if (v) params.set(k, v)
     }
     const qs = params.toString()
-    return `/rfqs${qs ? `?${qs}` : ''}`
+    return `${ADMIN_PREFIX}/rfqs${qs ? `?${qs}` : ''}`
   }
 
   return (

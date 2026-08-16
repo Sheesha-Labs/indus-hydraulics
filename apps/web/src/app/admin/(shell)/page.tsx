@@ -3,6 +3,7 @@ import { unstable_cache } from 'next/cache'
 import { requireStaff } from '../../../lib/staff-session'
 import { db } from '@indus/db'
 import Link from 'next/link'
+import { ADMIN_PREFIX } from '../../../lib/admin-paths'
 
 export const metadata: Metadata = { title: 'Dashboard' }
 
@@ -191,10 +192,10 @@ export default async function AdminDashboardPage({ params }: Props) {
         {/* Quick links */}
         <div className="grid grid-cols-2 xl:grid-cols-4 gap-3">
           {[
-            { label: 'Add product', href: `/products/new`, icon: '+' },
-            { label: 'Bulk import', href: `/products/import`, icon: '↑' },
-            { label: 'RFQ queue', href: `/rfqs`, icon: '▤' },
-            { label: 'Customer accounts', href: `/customers`, icon: '◎' },
+            { label: 'Add product', href: `${ADMIN_PREFIX}/products/new`, icon: '+' },
+            { label: 'Bulk import', href: `${ADMIN_PREFIX}/products/import`, icon: '↑' },
+            { label: 'RFQ queue', href: `${ADMIN_PREFIX}/rfqs`, icon: '▤' },
+            { label: 'Customer accounts', href: `${ADMIN_PREFIX}/customers`, icon: '◎' },
           ].map((link) => (
             <Link
               key={link.href}

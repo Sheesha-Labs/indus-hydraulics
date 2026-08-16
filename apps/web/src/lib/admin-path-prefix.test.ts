@@ -118,7 +118,60 @@ function scanInterpolated(): Hit[] {
   return hits
 }
 
+/**
+ * Template-literal paths.
+ *
+ * The scans above see quoted string literals and JSX `href={`/${x}`}`. They do
+ * NOT see a backtick path whose first segment is a real admin section:
+ *
+ *     return `/products${qs ? `?${qs}` : ''}`      // filter + pagination URLs
+ *     href: `/rfqs`                                 // dashboard quick link
+ *     `/customers/${id}?tab=${t}`                   // account detail tabs
+ *
+ * Every one of those shipped. They do not 404 now that one app serves both
+ * surfaces — they navigate OUT of the console onto a storefront route, so the
+ * admin's own filters, pagination, tab strips and dashboard shortcuts quietly
+ * dropped the user on the public site.
+ *
+ * Storefront paths built the same way are legitimate: the navigation editor
+ * shows `/brands/${slug}` as a PREVIEW of where a public menu item points.
+ * Those live in the files listed in STOREFRONT_LINK_FILES.
+ */
+const STOREFRONT_LINK_FILES = new Set([
+  // Menu items point at public routes by design; the admin only previews them.
+  'app/admin/(shell)/navigation/actions.ts',
+  'app/admin/(shell)/navigation/[menuSlug]/page.tsx',
+])
+
+function scanTemplateLiterals(): Hit[] {
+  const hits: Hit[] = []
+  const files = sourceFiles().filter(
+    (f) =>
+      !f.endsWith('.test.ts') &&
+      !f.endsWith('.test.tsx') &&
+      !STOREFRONT_LINK_FILES.has(f.split(path.sep).join('/')),
+  )
+  const RE = /`\/([a-z][a-z0-9-]*)(?=[`/$?])/g
+
+  for (const rel of files) {
+    const lines = readFileSync(path.join(SRC, rel), 'utf8').split('\n')
+    lines.forEach((line, i) => {
+      if (isComment(line)) return
+      for (const m of line.matchAll(RE)) {
+        const first = m[1]!
+        if (!ADMIN_SECTIONS.includes(first)) continue
+        hits.push({ file: rel, line: i + 1, text: line.trim() })
+      }
+    })
+  }
+  return hits
+}
+
 describe('admin paths carry the /admin prefix', () => {
+  test('a template-literal path starts from ADMIN_PREFIX, not a bare slash', () => {
+    expect(format(scanTemplateLiterals())).toBe('')
+  })
+
   test('an interpolated href/action starts from ADMIN_PREFIX, not a bare slash', () => {
     expect(format(scanInterpolated())).toBe('')
   })

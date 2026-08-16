@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { db } from '@indus/db'
 import AdminPageShell from '../../../../components/admin/AdminPageShell'
+import { ADMIN_PREFIX } from '../../../../lib/admin-paths'
 
 export const metadata: Metadata = { title: 'Customers — Indus Admin' }
 
@@ -65,7 +66,7 @@ export default async function AdminCustomersPage({ params, searchParams }: Props
       if (v) params.set(k, v)
     }
     const qs = params.toString()
-    return `/customers${qs ? `?${qs}` : ''}`
+    return `${ADMIN_PREFIX}/customers${qs ? `?${qs}` : ''}`
   }
 
   return (
