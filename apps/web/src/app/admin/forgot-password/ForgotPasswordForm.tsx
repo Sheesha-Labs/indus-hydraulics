@@ -2,7 +2,8 @@
 
 import Link from 'next/link'
 import { useActionState } from 'react'
-import { NEUTRAL, requestStaffPasswordReset, type ForgotState } from './actions'
+import { requestStaffPasswordReset } from './actions'
+import { NEUTRAL, type ForgotState } from './copy'
 
 const inputCls =
   'h-10 w-full border border-[var(--color-ih-navy-2)] bg-[var(--color-ih-navy)] px-3 text-sm text-[#ffffff] placeholder:text-[oklch(0.62_0.03_250)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ih-accent transition-colors'
