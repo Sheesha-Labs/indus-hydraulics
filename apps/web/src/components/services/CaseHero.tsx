@@ -14,15 +14,15 @@ export default function CaseHero({ case: c }: Props) {
   return (
     <section className="pt-10">
       <div className="mb-3.5 flex flex-wrap items-center gap-2.5">
-        <span className="mono bg-[var(--color-accent)] px-3 py-1 text-[11px] uppercase tracking-[0.1em] text-white">
+        <span className="mono bg-ih-accent px-3 py-1 text-[11px] uppercase tracking-[0.1em] text-white">
           {c.topicLabel}
         </span>
         {c.region ? (
-          <span className="mono bg-[var(--color-primary)] px-3 py-1 text-[11px] uppercase tracking-[0.1em] text-[var(--color-elevated)]">
+          <span className="mono bg-ih-navy px-3 py-1 text-[11px] uppercase tracking-[0.1em] text-white">
             {c.region}
           </span>
         ) : null}
-        <span className="mono text-[11px] uppercase tracking-[0.12em] text-[var(--color-muted)]">
+        <span className="mono text-[11px] uppercase tracking-[0.12em] text-ih-muted">
           CASE NO. {c.caseNumber}
           {c.caseDateLabel ? ` · ${c.caseDateLabel}` : ''}
         </span>
@@ -32,11 +32,11 @@ export default function CaseHero({ case: c }: Props) {
         {c.titleAccent ? renderTitleWithAccent(c.title, c.titleAccent) : c.title}
       </h1>
 
-      <p className="mb-8 max-w-[720px] font-serif text-[22px] leading-[1.5] text-[var(--color-muted)]">
+      <p className="mb-8 max-w-[720px] font-serif text-[22px] leading-[1.5] text-ih-muted">
         {c.deck}
       </p>
 
-      <figure className="relative mt-4 border border-[var(--color-border)]">
+      <figure className="relative mt-4 border border-ih-border">
         <PlaceholderImage
           storagePath={c.heroImage?.storagePath}
           alt={c.heroImage?.alt ?? c.title}
@@ -62,7 +62,7 @@ function renderTitleWithAccent(title: string, accent: string): React.ReactNode {
   return (
     <>
       {title.slice(0, idx)}
-      <em className="font-normal italic text-[var(--color-accent)]">{accent}</em>
+      <em className="font-normal italic text-ih-accent">{accent}</em>
       {title.slice(idx + accent.length)}
     </>
   )

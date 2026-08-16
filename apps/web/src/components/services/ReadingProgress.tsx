@@ -48,15 +48,15 @@ export default function ReadingProgress({
   }, [targetSelector])
 
   return (
-    <div className="mt-4 rounded-sm border border-[var(--color-border)] bg-[var(--color-elevated)] p-3.5 font-mono">
-      <small className="text-[var(--color-muted)]">READING</small>
-      <div className="relative my-2 h-0.5 overflow-hidden bg-[var(--color-deep)]">
+    <div className="mt-4 rounded-sm border border-ih-border bg-ih-surface p-3.5 font-mono">
+      <small className="text-ih-muted">READING</small>
+      <div className="relative my-2 h-0.5 overflow-hidden bg-ih-surface-2">
         <div
-          className="absolute left-0 top-0 h-full bg-[var(--color-accent)] transition-[width]"
+          className="absolute left-0 top-0 h-full bg-ih-accent transition-[width]"
           style={{ width: `${progress}%` }}
         />
       </div>
-      <small className="text-[var(--color-muted)]">
+      <small className="text-ih-muted">
         ~ {estimatedMinutes} MIN · {Math.round(progress)}% READ
       </small>
     </div>

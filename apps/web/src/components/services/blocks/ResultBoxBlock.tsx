@@ -3,8 +3,8 @@ import type { ResultBoxBlock } from '@indus/domain'
 export default function ResultBoxBlockView({ block }: { block: ResultBoxBlock }) {
   const cols = Math.min(block.cells.length, 4)
   return (
-    <div className="my-8 rounded-sm bg-[var(--color-primary)] px-8 pb-7 pt-8 font-sans text-[var(--color-elevated)]">
-      <div className="mono mb-2 text-[10.5px] uppercase tracking-[0.14em] text-[var(--color-accent)]">
+    <div className="my-8 rounded-sm bg-ih-navy px-8 pb-7 pt-8 font-sans text-white">
+      <div className="mono mb-2 text-[10.5px] uppercase tracking-[0.14em] text-ih-accent">
         {block.label}
       </div>
       <h3 className="mb-4 text-[28px] font-semibold leading-[1.15] tracking-[-0.02em]">{block.title}</h3>
@@ -16,10 +16,10 @@ export default function ResultBoxBlockView({ block }: { block: ResultBoxBlock })
         style={{ gridTemplateColumns: `repeat(${cols}, 1fr)` }}
       >
         {block.cells.map((cell, i) => (
-          <div key={i} className="bg-[var(--color-primary)] px-4 py-4.5">
+          <div key={i} className="bg-ih-navy px-4 py-4.5">
             <div
               className={`text-[26px] font-semibold leading-none tracking-[-0.02em] ${
-                cell.style === 'accent' ? 'text-[var(--color-accent)]' : ''
+                cell.style === 'accent' ? 'text-ih-accent' : ''
               }`}
             >
               {cell.value}

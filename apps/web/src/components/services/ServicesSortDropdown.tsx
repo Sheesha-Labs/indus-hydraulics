@@ -28,14 +28,14 @@ export default function ServicesSortDropdown({ activeSort, activeCategory }: Pro
   }
 
   return (
-    <div className="mono flex items-center gap-3 text-xs text-[var(--color-muted)]">
+    <div className="mono flex items-center gap-3 text-xs text-ih-muted">
       <span>Sort by</span>
       <select
         value={activeSort}
         onChange={onChange}
         disabled={isPending}
         aria-label="Sort cases"
-        className="rounded-sm border border-[var(--color-border)] bg-[var(--color-elevated)] px-2.5 py-1.5 text-xs"
+        className="rounded-sm border border-ih-border bg-ih-surface px-2.5 py-1.5 text-xs"
       >
         <option value="recent">Most recent</option>
         <option value="savings">Highest savings</option>

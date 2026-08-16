@@ -13,7 +13,7 @@ export default function TeamListBlockView({ block }: { block: TeamListBlock }) {
         ))}
       </ul>
       {block.caseFileMeta ? (
-        <p className="mono mt-8 text-sm tracking-[0.04em] text-[var(--color-muted)]">
+        <p className="mono mt-8 text-sm tracking-[0.04em] text-ih-muted">
           {block.caseFileMeta}
         </p>
       ) : null}

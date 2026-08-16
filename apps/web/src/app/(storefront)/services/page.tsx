@@ -96,7 +96,7 @@ export default async function ServicesIndexPage({ searchParams }: Props) {
             ))}
           </section>
         ) : (
-          <section className="py-16 text-center text-[var(--color-muted)]">
+          <section className="py-16 text-center text-ih-muted">
             <p className="mono text-xs uppercase tracking-[0.1em]">No cases match this filter yet.</p>
           </section>
         )}
@@ -104,7 +104,7 @@ export default async function ServicesIndexPage({ searchParams }: Props) {
         <ApproachSteps steps={APPROACH_STEPS} />
 
         {twoUp.length === 2 && twoUp[0] && twoUp[1] ? (
-          <section className="border-b border-[var(--color-border)] py-20">
+          <section className="border-b border-ih-border py-20">
             <div className="flex items-baseline justify-between gap-4">
               <div>
                 <span className="eyebrow">LONG READS · ENGINEERS WRITING ABOUT THEIR JOBS</span>

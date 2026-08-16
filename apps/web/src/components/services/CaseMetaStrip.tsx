@@ -19,39 +19,39 @@ export default function CaseMetaStrip({ metaCellsRaw, quoteHref = '/quote' }: Pr
   const cols = Math.min(cellCount, 5)
   return (
     <div
-      className={`mt-8 grid border-y border-[var(--color-border-2)] border-t-2 border-t-[var(--color-primary)]`}
+      className={`mt-8 grid border-y border-ih-border border-t-2 border-t-ih-accent`}
       style={{ gridTemplateColumns: `repeat(${cols}, 1fr) auto` }}
     >
       {cells.slice(0, 5).map((cell, i) => (
         <div
           key={i}
-          className="border-r border-[var(--color-border-2)] px-5 pb-5.5 pt-5 last:border-r-0 max-md:col-span-1"
+          className="border-r border-ih-border px-5 pb-5.5 pt-5 last:border-r-0 max-md:col-span-1"
         >
-          <div className="mono text-[10.5px] uppercase tracking-[0.1em] text-[var(--color-muted)]">
+          <div className="mono text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
             {cell.label}
           </div>
           <div
             className={`mt-1 text-[22px] font-semibold leading-tight tracking-[-0.01em] ${
               cell.style === 'accent'
-                ? 'text-[var(--color-accent)]'
+                ? 'text-ih-accent'
                 : cell.style === 'good'
-                  ? 'text-[var(--color-good)]'
+                  ? 'text-ih-success'
                   : ''
             }`}
           >
             {cell.value}
             {cell.valueSmall ? (
-              <small className="ml-1 text-[13px] font-medium text-[var(--color-muted)]">
+              <small className="ml-1 text-[13px] font-medium text-ih-muted">
                 {cell.valueSmall}
               </small>
             ) : null}
           </div>
         </div>
       ))}
-      <div className="flex items-center bg-[var(--color-elevated)] px-5 py-4">
+      <div className="flex items-center bg-ih-surface px-5 py-4">
         <Link
           href={quoteHref}
-          className="inline-flex items-center justify-center rounded-sm bg-[var(--color-primary)] px-5 py-2.5 text-sm font-medium text-[var(--color-elevated)] hover:bg-[color-mix(in_oklab,var(--color-primary)_88%,white)]"
+          className="inline-flex items-center justify-center rounded-sm bg-ih-navy px-5 py-2.5 text-sm font-medium text-white hover:bg-ih-ink"
         >
           Quote a similar job
         </Link>

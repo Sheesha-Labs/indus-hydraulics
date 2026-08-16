@@ -25,7 +25,7 @@ export default function ServicesTopicRail({
   chipOrder,
 }: Props) {
   return (
-    <div className="flex flex-wrap items-center justify-between gap-6 border-b border-[var(--color-border)] py-4">
+    <div className="flex flex-wrap items-center justify-between gap-6 border-b border-ih-border py-4">
       <div className="flex flex-wrap gap-2">
         <Chip
           href={paramsHref({})}
@@ -60,8 +60,8 @@ function Chip({
   count: number
 }) {
   const cls = active
-    ? 'border-[var(--color-primary)] bg-[var(--color-primary)] text-[var(--color-elevated)]'
-    : 'border-[var(--color-border)] bg-[var(--color-elevated)] text-[var(--color-body)] hover:border-[var(--color-muted)]'
+    ? 'border-ih-ink bg-ih-navy text-white'
+    : 'border-ih-border bg-ih-surface text-ih-ink-2 hover:border-ih-accent'
   return (
     <Link
       href={href}
