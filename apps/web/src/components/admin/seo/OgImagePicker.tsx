@@ -70,7 +70,7 @@ export default function OgImagePicker({ value, recent, uploadAction, onChange }:
   return (
     <div className="flex flex-col gap-3">
       <div className="flex gap-3 items-start">
-        <div className="w-32 h-32 border border-[var(--color-border)] bg-[var(--color-deep)] grid place-items-center overflow-hidden flex-shrink-0">
+        <div className="w-32 h-32 border border-ih-border bg-ih-surface-2 grid place-items-center overflow-hidden flex-shrink-0">
           {selected ? (
             // eslint-disable-next-line @next/next/no-img-element
             <img
@@ -79,14 +79,14 @@ export default function OgImagePicker({ value, recent, uploadAction, onChange }:
               className="w-full h-full object-cover"
             />
           ) : (
-            <span className="text-[10px] text-[var(--color-muted)]">No image</span>
+            <span className="text-[10px] text-ih-muted">No image</span>
           )}
         </div>
         <div className="flex-1 flex flex-col gap-2">
           <select
             value={value ?? ''}
             onChange={(e) => handleSelect(e.target.value || null)}
-            className="h-9 px-2 border border-[var(--color-border)] bg-white text-[13px]"
+            className="h-9 px-2 border border-ih-border bg-white text-[13px]"
           >
             <option value="">— Use site default —</option>
             {items.map((item) => (
@@ -95,7 +95,7 @@ export default function OgImagePicker({ value, recent, uploadAction, onChange }:
               </option>
             ))}
           </select>
-          <label className="text-[12px] text-[var(--color-body)] cursor-pointer">
+          <label className="text-[12px] text-ih-ink-2 cursor-pointer">
             <input
               ref={fileRef}
               type="file"
@@ -104,7 +104,7 @@ export default function OgImagePicker({ value, recent, uploadAction, onChange }:
               onChange={handleFileChange}
               disabled={pending}
             />
-            <span className="inline-block h-8 px-3 bg-[var(--color-deep)] border border-[var(--color-border)] hover:bg-[var(--color-elevated)] grid place-items-center font-mono text-[11px]">
+            <span className="inline-block h-8 px-3 bg-ih-surface-2 border border-ih-border hover:bg-ih-surface grid place-items-center font-mono text-[11px]">
               {pending ? 'Uploading…' : 'Upload new image'}
             </span>
           </label>
@@ -113,7 +113,7 @@ export default function OgImagePicker({ value, recent, uploadAction, onChange }:
               {error}
             </span>
           )}
-          <p className="text-[11px] text-[var(--color-caption)]">
+          <p className="text-[11px] text-ih-muted-2">
             JPEG / PNG / WebP. Recommended 1200×630 (1.91:1) for the cleanest social card.
           </p>
         </div>

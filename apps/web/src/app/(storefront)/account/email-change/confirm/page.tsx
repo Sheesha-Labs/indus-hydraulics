@@ -46,13 +46,13 @@ export default async function EmailChangeConfirmPage({ searchParams }: Props) {
         <h1 className="text-[32px] font-semibold tracking-tight mb-2">
           Email updated
         </h1>
-        <p className="text-[15px] text-[var(--color-muted)] leading-[1.6] mb-6">
-          Your sign-in email is now <b className="text-[var(--color-primary)]">{result.newEmail}</b>.
+        <p className="text-[15px] text-ih-muted leading-[1.6] mb-6">
+          Your sign-in email is now <b className="text-ih-ink">{result.newEmail}</b>.
           Use it the next time you sign in.
         </p>
         <Link
           href="/account/profile"
-          className="inline-block h-11 px-6 bg-[var(--color-accent)] text-white text-[14px] font-medium hover:opacity-90 transition-opacity"
+          className="inline-block h-11 px-6 bg-ih-accent text-white text-[14px] font-medium hover:opacity-90 transition-opacity"
         >
           Back to profile
         </Link>
@@ -70,12 +70,12 @@ export default async function EmailChangeConfirmPage({ searchParams }: Props) {
       <h1 className="text-[28px] font-semibold tracking-tight mb-2">
         {message.title}
       </h1>
-      <p className="text-[15px] text-[var(--color-muted)] leading-[1.6] mb-6">
+      <p className="text-[15px] text-ih-muted leading-[1.6] mb-6">
         {message.body}
       </p>
       <Link
         href="/account/profile"
-        className="inline-block h-11 px-6 border border-[var(--color-border)] text-[var(--color-body)] text-[14px] font-medium hover:bg-[var(--color-deep)] transition-colors"
+        className="inline-block h-11 px-6 border border-ih-border text-ih-ink-2 text-[14px] font-medium hover:bg-ih-surface-2 transition-colors"
       >
         Back to profile
       </Link>

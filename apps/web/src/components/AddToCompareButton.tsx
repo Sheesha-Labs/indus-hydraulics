@@ -54,7 +54,7 @@ export default function AddToCompareButton({ sku, categoryId, specTemplateId, ti
       <button
         type="button"
         disabled
-        className="h-12 flex items-center justify-center border border-[var(--color-border)] text-[13px] font-medium text-[var(--color-muted)] cursor-not-allowed"
+        className="h-12 flex items-center justify-center border border-ih-border text-[13px] font-medium text-ih-muted cursor-not-allowed"
         title="This product can't be compared (no spec template assigned)."
       >
         Compare unavailable
@@ -66,7 +66,7 @@ export default function AddToCompareButton({ sku, categoryId, specTemplateId, ti
     return (
       <Link
         href={compareUrl(tray)}
-        className="h-12 flex items-center justify-center border border-[var(--color-border)] text-[13px] font-medium text-[var(--color-primary)] hover:bg-[var(--color-deep)] transition-colors"
+        className="h-12 flex items-center justify-center border border-ih-border text-[13px] font-medium text-ih-ink hover:bg-ih-surface-2 transition-colors"
       >
         ✓ In compare ({trayCount}{trayCount === MAX_COMPARE ? ' · full' : ''}) →
       </Link>
@@ -77,7 +77,7 @@ export default function AddToCompareButton({ sku, categoryId, specTemplateId, ti
     <button
       type="button"
       onClick={handleAdd}
-      className="h-12 flex items-center justify-center border border-[var(--color-border)] text-[13px] font-medium text-[var(--color-body)] hover:bg-[var(--color-deep)] transition-colors"
+      className="h-12 flex items-center justify-center border border-ih-border text-[13px] font-medium text-ih-ink-2 hover:bg-ih-surface-2 transition-colors"
     >
       Add to compare
     </button>

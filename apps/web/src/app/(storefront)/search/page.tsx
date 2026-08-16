@@ -283,7 +283,7 @@ export default async function SearchPage({ searchParams }: Props) {
   const restProducts = products.slice(1)
 
   return (
-    <div className="max-w-[1360px] mx-auto px-8 py-8 pb-16">
+    <div className="mx-auto max-w-[1440px] px-5 sm:px-8 xl:px-12 py-8 pb-16">
       {/* Fire-and-forget query log + click-through tracker. */}
       {query.length >= 2 && (
         <SearchLogger query={query} resultsCount={products.length} usedFallback={usedFallback} />
@@ -311,11 +311,11 @@ export default async function SearchPage({ searchParams }: Props) {
       <div className="flex items-baseline gap-4 flex-wrap mb-3">
         <h1 className="text-[32px] font-semibold tracking-[-0.02em]">Search results</h1>
         {query.length >= 2 && (
-          <span className="font-mono text-[13px] text-[var(--color-muted)]">
-            for &ldquo;<b className="text-[var(--color-primary)]">{query}</b>&rdquo; · {totalProducts} match
+          <span className="font-mono text-[13px] text-ih-muted">
+            for &ldquo;<b className="text-ih-ink">{query}</b>&rdquo; · {totalProducts} match
             {totalProducts !== 1 ? 'es' : ''}
             {usedFallback && (
-              <span className="ml-2 px-1.5 py-0.5 bg-[var(--color-deep)] text-[10px] font-mono uppercase tracking-wider">
+              <span className="ml-2 px-1.5 py-0.5 bg-ih-surface-2 text-[10px] font-mono uppercase tracking-wider">
                 Suggested
               </span>
             )}
@@ -324,17 +324,17 @@ export default async function SearchPage({ searchParams }: Props) {
       </div>
 
       <form method="GET" action="/search" className="mb-4 max-w-[640px]">
-        <div className="flex border border-[var(--color-border)] bg-[var(--color-elevated)]">
+        <div className="flex border border-ih-border bg-ih-surface">
           <input
             name="q"
             defaultValue={query}
             autoFocus
             placeholder="Search products, SKUs, MPNs…"
-            className="flex-1 px-4 py-3 bg-transparent text-[14px] text-[var(--color-primary)] placeholder:text-[var(--color-caption)] focus:outline-none"
+            className="flex-1 px-4 py-3 bg-transparent text-[14px] text-ih-ink placeholder:text-ih-muted-2 focus:outline-none"
           />
           <button
             type="submit"
-            className="h-11 px-5 bg-[var(--color-accent)] text-white font-mono text-[12px] hover:opacity-90 transition-opacity shrink-0"
+            className="h-11 px-5 bg-ih-accent text-white font-mono text-[12px] hover:opacity-90 transition-opacity shrink-0"
           >
             Search
           </button>
@@ -343,14 +343,14 @@ export default async function SearchPage({ searchParams }: Props) {
 
       {alternates.length > 0 && (
         <div className="flex items-center gap-2 flex-wrap mb-8">
-          <span className="font-mono text-[11px] uppercase tracking-[0.1em] text-[var(--color-muted)]">
+          <span className="font-mono text-[11px] uppercase tracking-[0.1em] text-ih-muted">
             Did you mean
           </span>
           {alternates.map((alt) => (
             <Link
               key={alt.query}
               href={`/search?q=${encodeURIComponent(alt.query)}`}
-              className="px-2.5 py-1 border border-[var(--color-border)] bg-[var(--color-elevated)] font-mono text-[12px] text-[var(--color-body)] hover:border-[var(--color-accent)] hover:text-[var(--color-accent)] transition-colors"
+              className="px-2.5 py-1 border border-ih-border bg-ih-surface font-mono text-[12px] text-ih-ink-2 hover:border-ih-accent hover:text-ih-accent transition-colors"
             >
               {alt.query}
             </Link>
@@ -360,11 +360,11 @@ export default async function SearchPage({ searchParams }: Props) {
 
       {query.length < 2 ? (
         <div className="py-20 text-center">
-          <p className="text-[var(--color-muted)] text-sm">
+          <p className="text-ih-muted text-sm">
             Try different keywords or browse our categories.
           </p>
           <div className="mt-6">
-            <Link href="/c" className="font-mono text-[12px] text-[var(--color-accent)] hover:underline">
+            <Link href="/c" className="font-mono text-[12px] text-ih-accent hover:underline">
               Browse Categories →
             </Link>
           </div>
@@ -373,7 +373,7 @@ export default async function SearchPage({ searchParams }: Props) {
         <div className="grid grid-cols-[240px_1fr] gap-8">
           <aside>
             <div className="sticky top-[88px]">
-              <p className="font-mono text-[11px] tracking-[0.12em] uppercase text-[var(--color-muted)] mb-4">
+              <p className="font-mono text-[11px] tracking-[0.12em] uppercase text-ih-muted mb-4">
                 Refine results
               </p>
 
@@ -395,23 +395,23 @@ export default async function SearchPage({ searchParams }: Props) {
                       <Link
                         key={type}
                         href={toggleTypeUrl(type)}
-                        className="flex justify-between items-center text-[var(--color-body)] hover:text-[var(--color-primary)]"
+                        className="flex justify-between items-center text-ih-ink-2 hover:text-ih-ink"
                       >
                         <span className="flex items-center gap-2">
                           <span
                             aria-hidden="true"
                             className={
-                              'w-3.5 h-3.5 border border-[var(--color-border)] flex items-center justify-center text-[10px] ' +
-                              (checked ? 'bg-[var(--color-accent)] text-white' : 'bg-[var(--color-elevated)]')
+                              'w-3.5 h-3.5 border border-ih-border flex items-center justify-center text-[10px] ' +
+                              (checked ? 'bg-ih-accent text-white' : 'bg-ih-surface')
                             }
                           >
                             {checked ? '✓' : ''}
                           </span>
-                          <span className={checked ? 'font-medium text-[var(--color-primary)]' : ''}>
+                          <span className={checked ? 'font-medium text-ih-ink' : ''}>
                             {SEARCH_TYPE_LABELS[type]}
                           </span>
                         </span>
-                        <span className="font-mono text-[11px] text-[var(--color-caption)]">{count}</span>
+                        <span className="font-mono text-[11px] text-ih-muted-2">{count}</span>
                       </Link>
                     )
                   })}
@@ -426,12 +426,12 @@ export default async function SearchPage({ searchParams }: Props) {
                       <Link
                         key={cat.id}
                         href={filterUrl({ category: selectedCategory === cat.slug ? undefined : cat.slug })}
-                        className="flex justify-between items-center text-[var(--color-body)] hover:text-[var(--color-primary)]"
+                        className="flex justify-between items-center text-ih-ink-2 hover:text-ih-ink"
                       >
-                        <span className={selectedCategory === cat.slug ? 'font-medium text-[var(--color-accent)]' : ''}>
+                        <span className={selectedCategory === cat.slug ? 'font-medium text-ih-accent' : ''}>
                           {cat.name}
                         </span>
-                        <span className="font-mono text-[11px] text-[var(--color-caption)]">{cat.count}</span>
+                        <span className="font-mono text-[11px] text-ih-muted-2">{cat.count}</span>
                       </Link>
                     ))}
                   </div>
@@ -446,12 +446,12 @@ export default async function SearchPage({ searchParams }: Props) {
                       <Link
                         key={brand.id}
                         href={toggleBrand(brand.slug)}
-                        className="flex justify-between items-center text-[var(--color-body)] hover:text-[var(--color-primary)]"
+                        className="flex justify-between items-center text-ih-ink-2 hover:text-ih-ink"
                       >
-                        <span className={selectedBrands.includes(brand.slug) ? 'font-medium text-[var(--color-accent)]' : ''}>
+                        <span className={selectedBrands.includes(brand.slug) ? 'font-medium text-ih-accent' : ''}>
                           {brand.name}
                         </span>
-                        <span className="font-mono text-[11px] text-[var(--color-caption)]">{brand.count}</span>
+                        <span className="font-mono text-[11px] text-ih-muted-2">{brand.count}</span>
                       </Link>
                     ))}
                   </div>
@@ -467,18 +467,18 @@ export default async function SearchPage({ searchParams }: Props) {
                       <Link
                         key={mode}
                         href={toggleAvailability(mode)}
-                        className="flex items-center gap-2 text-[var(--color-body)] hover:text-[var(--color-primary)]"
+                        className="flex items-center gap-2 text-ih-ink-2 hover:text-ih-ink"
                       >
                         <span
                           aria-hidden="true"
                           className={
-                            'w-3.5 h-3.5 border border-[var(--color-border)] flex items-center justify-center text-[10px] ' +
-                            (checked ? 'bg-[var(--color-accent)] text-white' : 'bg-[var(--color-elevated)]')
+                            'w-3.5 h-3.5 border border-ih-border flex items-center justify-center text-[10px] ' +
+                            (checked ? 'bg-ih-accent text-white' : 'bg-ih-surface')
                           }
                         >
                           {checked ? '✓' : ''}
                         </span>
-                        <span className={checked ? 'font-medium text-[var(--color-primary)]' : ''}>
+                        <span className={checked ? 'font-medium text-ih-ink' : ''}>
                           {AVAILABILITY_LABELS[mode]}
                         </span>
                       </Link>
@@ -495,7 +495,7 @@ export default async function SearchPage({ searchParams }: Props) {
                     avail: undefined,
                     page: undefined,
                   })}
-                  className="font-mono text-[12px] text-[var(--color-accent)] hover:underline"
+                  className="font-mono text-[12px] text-ih-accent hover:underline"
                 >
                   Clear all filters
                 </Link>
@@ -505,15 +505,15 @@ export default async function SearchPage({ searchParams }: Props) {
 
           <div>
             {!anyResults ? (
-              <div className="py-16 border border-dashed border-[var(--color-border)] text-center">
-                <p className="text-[var(--color-muted)]">No results</p>
-                <p className="text-[var(--color-muted)] text-sm mt-1">
+              <div className="py-16 border border-dashed border-ih-border text-center">
+                <p className="text-ih-muted">No results</p>
+                <p className="text-ih-muted text-sm mt-1">
                   Try different keywords, broaden your Type filter, or browse our categories.
                 </p>
               </div>
             ) : (
               <>
-                <div className="flex justify-between items-center mb-4 text-[13px] text-[var(--color-muted)]">
+                <div className="flex justify-between items-center mb-4 text-[13px] text-ih-muted">
                   <span>
                     {[
                       selectedTypes.includes('products')
@@ -556,7 +556,7 @@ export default async function SearchPage({ searchParams }: Props) {
                       id="sort-select"
                       name="sort"
                       defaultValue={sortMode}
-                      className="font-mono text-[12px] bg-[var(--color-elevated)] border border-[var(--color-border)] px-2 py-1 text-[var(--color-body)]"
+                      className="font-mono text-[12px] bg-ih-surface border border-ih-border px-2 py-1 text-ih-ink-2"
                     >
                       {SORT_MODES.map((mode) => (
                         <option key={mode} value={mode}>
@@ -566,7 +566,7 @@ export default async function SearchPage({ searchParams }: Props) {
                     </select>
                     <button
                       type="submit"
-                      className="font-mono text-[11px] px-2 py-1 border border-[var(--color-border)] hover:bg-[var(--color-deep)]"
+                      className="font-mono text-[11px] px-2 py-1 border border-ih-border hover:bg-ih-surface-2"
                     >
                       Apply
                     </button>
@@ -575,16 +575,16 @@ export default async function SearchPage({ searchParams }: Props) {
 
                 {showProductsSection && topMatch && (
                   <div className="mb-6">
-                    <div className="font-mono text-[11px] tracking-[0.12em] uppercase text-[var(--color-muted)] mb-3">
+                    <div className="font-mono text-[11px] tracking-[0.12em] uppercase text-ih-muted mb-3">
                       Top product match
                     </div>
                     <Link
                       href={`/p/${topMatch.slug}`}
                       data-search-result-sku={topMatch.sku}
                       data-search-result-q={query}
-                      className="grid grid-cols-[140px_1fr] gap-6 p-5 border border-[var(--color-border)] bg-[var(--color-elevated)] border-l-[3px] border-l-[var(--color-accent)] hover:border-[var(--color-body)] hover:border-l-[var(--color-accent)] transition-colors"
+                      className="grid grid-cols-[140px_1fr] gap-6 p-5 border border-ih-border bg-ih-surface border-l-[3px] border-l-ih-accent hover:border-ih-accent hover:border-l-ih-accent transition-colors"
                     >
-                      <div className="aspect-square bg-[var(--color-deep)] border border-[var(--color-border)] relative overflow-hidden">
+                      <div className="aspect-square bg-ih-surface-2 border border-ih-border relative overflow-hidden">
                         {topMatch.images[0] ? (
                           <Image
                             src={mediaUrl(topMatch.images[0]!.media.storagePath)}
@@ -594,24 +594,24 @@ export default async function SearchPage({ searchParams }: Props) {
                             sizes="140px"
                           />
                         ) : (
-                          <div className="absolute inset-0 grid place-items-center font-mono text-[10px] text-[var(--color-muted)]">
+                          <div className="absolute inset-0 grid place-items-center font-mono text-[10px] text-ih-muted">
                             {topMatch.sku.slice(0, 8)}
                           </div>
                         )}
                       </div>
                       <div>
-                        <div className="font-mono text-[11px] text-[var(--color-muted)] tracking-[0.08em] mb-1">
+                        <div className="font-mono text-[11px] text-ih-muted tracking-[0.08em] mb-1">
                           {topMatch.sku} · {topMatch.brand?.name ?? ''}
                         </div>
                         <div className="text-[20px] font-semibold tracking-[-0.01em] mb-2 leading-[1.2]">
                           {topMatch.title}
                         </div>
                         {topMatch.descriptionShort && (
-                          <p className="text-[13px] text-[var(--color-muted)] leading-[1.5] mb-3 line-clamp-2">
+                          <p className="text-[13px] text-ih-muted leading-[1.5] mb-3 line-clamp-2">
                             {topMatch.descriptionShort}
                           </p>
                         )}
-                        <div className="flex gap-4 font-mono text-[11px] text-[var(--color-muted)]">
+                        <div className="flex gap-4 font-mono text-[11px] text-ih-muted">
                           {topMatch.category && <span>● {topMatch.category.name}</span>}
                           {topMatch.brand && <span>● {topMatch.brand.name}</span>}
                         </div>
@@ -630,9 +630,9 @@ export default async function SearchPage({ searchParams }: Props) {
                           href={`/p/${product.slug}`}
                           data-search-result-sku={product.sku}
                           data-search-result-q={query}
-                          className="grid grid-cols-[80px_1fr_auto] gap-5 p-3.5 border border-[var(--color-border)] bg-[var(--color-elevated)] hover:border-[var(--color-body)] transition-colors items-center"
+                          className="grid grid-cols-[80px_1fr_auto] gap-5 p-3.5 border border-ih-border bg-ih-surface hover:border-ih-accent transition-colors items-center"
                         >
-                          <div className="aspect-square bg-[var(--color-deep)] border border-[var(--color-border)] relative overflow-hidden">
+                          <div className="aspect-square bg-ih-surface-2 border border-ih-border relative overflow-hidden">
                             {img ? (
                               <Image
                                 src={mediaUrl(img.media.storagePath)}
@@ -642,24 +642,24 @@ export default async function SearchPage({ searchParams }: Props) {
                                 sizes="80px"
                               />
                             ) : (
-                              <div className="absolute inset-0 grid place-items-center font-mono text-[9px] text-[var(--color-muted)]">
+                              <div className="absolute inset-0 grid place-items-center font-mono text-[9px] text-ih-muted">
                                 IMG
                               </div>
                             )}
                           </div>
                           <div>
-                            <div className="font-mono text-[11px] text-[var(--color-muted)] mb-1">
+                            <div className="font-mono text-[11px] text-ih-muted mb-1">
                               {product.sku}
                               {product.brand ? ` · ${product.brand.name}` : ''}
                             </div>
-                            <div className="font-medium text-[14px] text-[var(--color-primary)]">{product.title}</div>
+                            <div className="font-medium text-[14px] text-ih-ink">{product.title}</div>
                             {product.descriptionShort && (
-                              <p className="text-[13px] text-[var(--color-muted)] mt-0.5 leading-[1.5] line-clamp-1">
+                              <p className="text-[13px] text-ih-muted mt-0.5 leading-[1.5] line-clamp-1">
                                 {product.descriptionShort}
                               </p>
                             )}
                           </div>
-                          <div className="font-mono text-[12px] text-[var(--color-accent)] shrink-0">View →</div>
+                          <div className="font-mono text-[12px] text-ih-accent shrink-0">View →</div>
                         </Link>
                       )
                     })}
@@ -676,14 +676,14 @@ export default async function SearchPage({ searchParams }: Props) {
                         href={filterUrl({ page: currentPage > 2 ? String(currentPage - 1) : undefined })}
                         rel="prev"
                         aria-label="Previous page"
-                        className="w-9 h-9 border border-[var(--color-border)] flex items-center justify-center font-mono text-[13px] text-[var(--color-muted)] hover:bg-[var(--color-deep)]"
+                        className="w-9 h-9 border border-ih-border flex items-center justify-center font-mono text-[13px] text-ih-muted hover:bg-ih-surface-2"
                       >
                         ‹
                       </Link>
                     ) : (
                       <span
                         aria-disabled="true"
-                        className="w-9 h-9 border border-[var(--color-border)] flex items-center justify-center font-mono text-[13px] text-[var(--color-caption)] opacity-50 cursor-not-allowed"
+                        className="w-9 h-9 border border-ih-border flex items-center justify-center font-mono text-[13px] text-ih-muted-2 opacity-50 cursor-not-allowed"
                       >
                         ‹
                       </span>
@@ -694,7 +694,7 @@ export default async function SearchPage({ searchParams }: Props) {
                         <span
                           key={`e-${i}`}
                           aria-hidden="true"
-                          className="w-9 h-9 flex items-center justify-center font-mono text-[13px] text-[var(--color-caption)]"
+                          className="w-9 h-9 flex items-center justify-center font-mono text-[13px] text-ih-muted-2"
                         >
                           …
                         </span>
@@ -702,7 +702,7 @@ export default async function SearchPage({ searchParams }: Props) {
                         <span
                           key={token}
                           aria-current="page"
-                          className="w-9 h-9 border border-[var(--color-accent)] bg-[var(--color-accent)] text-white flex items-center justify-center font-mono text-[13px] font-semibold"
+                          className="w-9 h-9 border border-ih-accent bg-ih-accent text-white flex items-center justify-center font-mono text-[13px] font-semibold"
                         >
                           {token}
                         </span>
@@ -711,7 +711,7 @@ export default async function SearchPage({ searchParams }: Props) {
                           key={token}
                           href={filterUrl({ page: token > 1 ? String(token) : undefined })}
                           aria-label={`Page ${token}`}
-                          className="w-9 h-9 border border-[var(--color-border)] flex items-center justify-center font-mono text-[13px] text-[var(--color-muted)] hover:bg-[var(--color-deep)]"
+                          className="w-9 h-9 border border-ih-border flex items-center justify-center font-mono text-[13px] text-ih-muted hover:bg-ih-surface-2"
                         >
                           {token}
                         </Link>
@@ -723,14 +723,14 @@ export default async function SearchPage({ searchParams }: Props) {
                         href={filterUrl({ page: String(currentPage + 1) })}
                         rel="next"
                         aria-label="Next page"
-                        className="w-9 h-9 border border-[var(--color-border)] flex items-center justify-center font-mono text-[13px] text-[var(--color-muted)] hover:bg-[var(--color-deep)]"
+                        className="w-9 h-9 border border-ih-border flex items-center justify-center font-mono text-[13px] text-ih-muted hover:bg-ih-surface-2"
                       >
                         ›
                       </Link>
                     ) : (
                       <span
                         aria-disabled="true"
-                        className="w-9 h-9 border border-[var(--color-border)] flex items-center justify-center font-mono text-[13px] text-[var(--color-caption)] opacity-50 cursor-not-allowed"
+                        className="w-9 h-9 border border-ih-border flex items-center justify-center font-mono text-[13px] text-ih-muted-2 opacity-50 cursor-not-allowed"
                       >
                         ›
                       </span>
@@ -739,22 +739,22 @@ export default async function SearchPage({ searchParams }: Props) {
                 )}
 
                 {showDatasheetsSection && (
-                  <div className="mt-8 pt-6 border-t border-[var(--color-border)]">
-                    <div className="font-mono text-[11px] tracking-[0.12em] uppercase text-[var(--color-muted)] mb-4">
+                  <div className="mt-8 pt-6 border-t border-ih-border">
+                    <div className="font-mono text-[11px] tracking-[0.12em] uppercase text-ih-muted mb-4">
                       Datasheets &amp; PDFs
                     </div>
                     <div className="flex flex-col gap-2">
                       {relatedDocs.map((doc) => (
                         <div
                           key={doc.id}
-                          className="grid grid-cols-[36px_1fr_auto] gap-4 p-3.5 border border-[var(--color-border)] bg-[var(--color-elevated)] items-center"
+                          className="grid grid-cols-[36px_1fr_auto] gap-4 p-3.5 border border-ih-border bg-ih-surface items-center"
                         >
-                          <div className="w-8 h-9 bg-[var(--color-primary)] text-[var(--color-elevated)] grid place-items-center font-mono text-[9px] font-semibold">
+                          <div className="w-8 h-9 bg-ih-navy text-white grid place-items-center font-mono text-[9px] font-semibold">
                             {doc.kind.toUpperCase().slice(0, 4)}
                           </div>
                           <div>
                             <div className="font-medium text-[13px]">{doc.title}</div>
-                            <div className="font-mono text-[11px] text-[var(--color-muted)]">
+                            <div className="font-mono text-[11px] text-ih-muted">
                               {doc.kind.toUpperCase()} · {doc.product.sku}
                             </div>
                           </div>
@@ -762,7 +762,7 @@ export default async function SearchPage({ searchParams }: Props) {
                             href={mediaUrl(doc.media.storagePath)}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="shrink-0 h-8 px-3 border border-[var(--color-border)] font-mono text-[11px] flex items-center text-[var(--color-body)] hover:bg-[var(--color-deep)] transition-colors"
+                            className="shrink-0 h-8 px-3 border border-ih-border font-mono text-[11px] flex items-center text-ih-ink-2 hover:bg-ih-surface-2 transition-colors"
                           >
                             Download ↓
                           </a>
@@ -773,8 +773,8 @@ export default async function SearchPage({ searchParams }: Props) {
                 )}
 
                 {showArticlesSection && (
-                  <div className="mt-8 pt-6 border-t border-[var(--color-border)]">
-                    <div className="font-mono text-[11px] tracking-[0.12em] uppercase text-[var(--color-muted)] mb-4">
+                  <div className="mt-8 pt-6 border-t border-ih-border">
+                    <div className="font-mono text-[11px] tracking-[0.12em] uppercase text-ih-muted mb-4">
                       From the blog
                     </div>
                     <div className="flex flex-col gap-3">
@@ -782,9 +782,9 @@ export default async function SearchPage({ searchParams }: Props) {
                         <Link
                           key={post.id}
                           href={`/blog/${post.slug}`}
-                          className="grid grid-cols-[120px_1fr] gap-4 p-3.5 border border-[var(--color-border)] bg-[var(--color-elevated)] hover:border-[var(--color-body)] transition-colors"
+                          className="grid grid-cols-[120px_1fr] gap-4 p-3.5 border border-ih-border bg-ih-surface hover:border-ih-accent transition-colors"
                         >
-                          <div className="aspect-[4/3] bg-[var(--color-deep)] border border-[var(--color-border)] relative overflow-hidden">
+                          <div className="aspect-[4/3] bg-ih-surface-2 border border-ih-border relative overflow-hidden">
                             {post.hero ? (
                               <Image
                                 src={mediaUrl(post.hero.storagePath)}
@@ -794,13 +794,13 @@ export default async function SearchPage({ searchParams }: Props) {
                                 sizes="120px"
                               />
                             ) : (
-                              <div className="absolute inset-0 grid place-items-center font-mono text-[9px] text-[var(--color-muted)]">
+                              <div className="absolute inset-0 grid place-items-center font-mono text-[9px] text-ih-muted">
                                 BLOG
                               </div>
                             )}
                           </div>
                           <div>
-                            <div className="font-mono text-[11px] tracking-[0.08em] uppercase text-[var(--color-muted)] mb-1">
+                            <div className="font-mono text-[11px] tracking-[0.08em] uppercase text-ih-muted mb-1">
                               Article
                               {post.publishedAt && (
                                 <>
@@ -815,7 +815,7 @@ export default async function SearchPage({ searchParams }: Props) {
                             </div>
                             <h3 className="font-semibold text-[15px] mb-1.5 leading-snug">{post.title}</h3>
                             {post.excerpt && (
-                              <p className="text-[12px] text-[var(--color-muted)] leading-[1.5] line-clamp-2">
+                              <p className="text-[12px] text-ih-muted leading-[1.5] line-clamp-2">
                                 {post.excerpt}
                               </p>
                             )}

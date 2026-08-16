@@ -48,46 +48,46 @@ export default async function BrandReplacementsPage({ params }: Props) {
   })
 
   return (
-    <div className="max-w-[1100px] mx-auto px-8 py-8 pb-16">
+    <div className="mx-auto max-w-[1100px] px-5 sm:px-8 py-8 pb-16">
       <JsonLd data={[collectionLd, breadcrumbLd]} />
 
-      <nav className="py-2 font-mono text-[12px] text-[var(--color-muted)] flex gap-2 items-center mb-6">
-        <Link href={`/`} className="hover:text-[var(--color-primary)]">Home</Link>
+      <nav className="py-2 font-mono text-[12px] text-ih-muted flex gap-2 items-center mb-6">
+        <Link href={`/`} className="hover:text-ih-ink">Home</Link>
         <span className="opacity-40">/</span>
-        <Link href={`/replacement`} className="hover:text-[var(--color-primary)]">Replacements</Link>
+        <Link href={`/replacement`} className="hover:text-ih-ink">Replacements</Link>
         <span className="opacity-40">/</span>
-        <span className="text-[var(--color-primary)]">{competitorBrand}</span>
+        <span className="text-ih-ink">{competitorBrand}</span>
       </nav>
 
       <header className="mb-8">
-        <p className="font-mono text-[11px] tracking-[0.14em] uppercase text-[var(--color-muted)] mb-2">
+        <p className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-2">
           Replacement catalogue
         </p>
-        <h1 className="text-[clamp(28px,4vw,40px)] font-semibold tracking-[-0.02em] leading-[1.1] mb-3">
+        <h1 className="font-serif text-[clamp(28px,4vw,40px)] font-normal tracking-[-0.02em] leading-[1.1] mb-3">
           {competitorBrand} replacements
         </h1>
-        <p className="text-[15px] text-[var(--color-muted)] max-w-[640px] leading-[1.55]">
-          <b className="text-[var(--color-primary)]">{items.length}</b> {competitorBrand} part{items.length === 1 ? '' : 's'} we cross-reference to in-stock Indus Hydraulics equivalents. Each has datasheets and lead times confirmed by our applications team.
+        <p className="text-[15px] text-ih-muted max-w-[640px] leading-[1.55]">
+          <b className="text-ih-ink">{items.length}</b> {competitorBrand} part{items.length === 1 ? '' : 's'} we cross-reference to in-stock Indus Hydraulics equivalents. Each has datasheets and lead times confirmed by our applications team.
         </p>
       </header>
 
-      <div className="border border-[var(--color-border)] bg-white">
+      <div className="border border-ih-border bg-white">
         {items.map((it, i) => (
           <Link
             key={`${it.brandSlug}/${it.mpnSlug}`}
             href={`/replacement/${it.brandSlug}/${it.mpnSlug}`}
-            className={`grid grid-cols-[1fr_auto_120px] gap-4 px-4 py-3 items-center hover:bg-[var(--color-deep)] transition-colors ${
-              i > 0 ? 'border-t border-[var(--color-border)]' : ''
+            className={`grid grid-cols-[1fr_auto_120px] gap-4 px-4 py-3 items-center hover:bg-ih-surface-2 transition-colors ${
+              i > 0 ? 'border-t border-ih-border' : ''
             }`}
           >
             <div>
-              <div className="font-mono text-[11px] text-[var(--color-muted)] tracking-[0.04em]">{competitorBrand}</div>
-              <div className="text-[14px] font-medium text-[var(--color-primary)]">{it.competitorMpn}</div>
+              <div className="font-mono text-[11px] text-ih-muted tracking-[0.04em]">{competitorBrand}</div>
+              <div className="text-[14px] font-medium text-ih-ink">{it.competitorMpn}</div>
             </div>
-            <span className="font-mono text-[11px] text-[var(--color-muted)]">
+            <span className="font-mono text-[11px] text-ih-muted">
               {it.matchCount} match{it.matchCount === 1 ? '' : 'es'}
             </span>
-            <span className="font-mono text-[11px] text-[var(--color-accent)] text-right">View →</span>
+            <span className="font-mono text-[11px] text-ih-accent text-right">View →</span>
           </Link>
         ))}
       </div>

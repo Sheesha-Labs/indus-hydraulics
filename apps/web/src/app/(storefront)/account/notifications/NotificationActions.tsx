@@ -21,7 +21,7 @@ export default function NotificationActions({ hasUnread }: Props) {
       type="button"
       onClick={handleClick}
       disabled={!hasUnread || isPending}
-      className="h-9 px-4 border border-[var(--color-border)] font-mono text-[12px] text-[var(--color-body)] hover:bg-[var(--color-deep)] disabled:opacity-40 disabled:cursor-not-allowed"
+      className="h-9 px-4 border border-ih-border font-mono text-[12px] text-ih-ink-2 hover:bg-ih-surface-2 disabled:opacity-40 disabled:cursor-not-allowed"
     >
       {isPending ? 'Marking…' : 'Mark all as read'}
     </button>

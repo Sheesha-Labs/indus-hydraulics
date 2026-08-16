@@ -40,7 +40,7 @@ export default function ResetPasswordForm({ token }: Props) {
         </p>
         <Link
           href="/sign-in"
-          className="inline-flex items-center h-10 px-4 bg-[var(--color-primary)] text-white font-mono text-[12px] hover:opacity-90"
+          className="inline-flex items-center h-10 px-4 bg-ih-navy text-white font-mono text-[12px] hover:opacity-90"
         >
           Sign in →
         </Link>
@@ -53,7 +53,7 @@ export default function ResetPasswordForm({ token }: Props) {
       <input type="hidden" name="token" value={token} />
 
       <div>
-        <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+        <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
           New password
         </label>
         <input
@@ -64,12 +64,12 @@ export default function ResetPasswordForm({ token }: Props) {
           autoComplete="new-password"
           value={pw}
           onChange={(e) => setPw(e.target.value)}
-          className="h-10 w-full border border-[var(--color-border)] bg-[var(--color-elevated)] px-3 text-sm text-[var(--color-primary)] placeholder:text-[var(--color-caption)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-accent)] transition-colors"
+          className="h-10 w-full border border-ih-border bg-ih-surface px-3 text-sm text-ih-ink placeholder:text-ih-muted-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ih-accent transition-colors"
         />
       </div>
 
       <div>
-        <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+        <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
           Confirm new password
         </label>
         <input
@@ -79,7 +79,7 @@ export default function ResetPasswordForm({ token }: Props) {
           autoComplete="new-password"
           value={confirm}
           onChange={(e) => setConfirm(e.target.value)}
-          className="h-10 w-full border border-[var(--color-border)] bg-[var(--color-elevated)] px-3 text-sm text-[var(--color-primary)] placeholder:text-[var(--color-caption)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-accent)] transition-colors"
+          className="h-10 w-full border border-ih-border bg-ih-surface px-3 text-sm text-ih-ink placeholder:text-ih-muted-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ih-accent transition-colors"
         />
       </div>
 
@@ -92,13 +92,13 @@ export default function ResetPasswordForm({ token }: Props) {
       <button
         type="submit"
         disabled={isPending || pw.length < 10 || confirm.length < 10}
-        className="h-10 w-full bg-[var(--color-accent)] text-white font-mono text-[12px] hover:opacity-90 disabled:opacity-40 disabled:cursor-not-allowed"
+        className="h-10 w-full bg-ih-accent text-white font-mono text-[12px] hover:opacity-90 disabled:opacity-40 disabled:cursor-not-allowed"
       >
         {isPending ? 'Updating…' : 'Set new password →'}
       </button>
 
-      <p className="text-[12px] text-[var(--color-muted)] pt-2">
-        <Link href="/sign-in" className="hover:text-[var(--color-primary)]">
+      <p className="text-[12px] text-ih-muted pt-2">
+        <Link href="/sign-in" className="hover:text-ih-ink">
           ← Back to sign in
         </Link>
       </p>

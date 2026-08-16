@@ -49,17 +49,17 @@ export default function MediaPicker({
       <input type="hidden" name={name} value={value} />
 
       {/* Current selection row */}
-      <div className="flex items-center gap-3 border border-[var(--color-border)] bg-white p-2">
-        <div className="w-14 h-14 bg-[var(--color-deep)] border border-[var(--color-border)] grid place-items-center overflow-hidden shrink-0">
+      <div className="flex items-center gap-3 border border-ih-border bg-white p-2">
+        <div className="w-14 h-14 bg-ih-surface-2 border border-ih-border grid place-items-center overflow-hidden shrink-0">
           {selected ? (
             // eslint-disable-next-line @next/next/no-img-element
             <img src={thumbUrl(selected)} alt={selected.alt ?? ''} className="max-w-full max-h-full object-contain" />
           ) : value ? (
-            <span className="font-mono text-[9px] text-[var(--color-muted)] text-center px-1">
+            <span className="font-mono text-[9px] text-ih-muted text-center px-1">
               {value.slice(0, 8)}…
             </span>
           ) : (
-            <span className="font-mono text-[10px] text-[var(--color-caption)]">none</span>
+            <span className="font-mono text-[10px] text-ih-muted-2">none</span>
           )}
         </div>
         <div className="flex-1 min-w-0">
@@ -68,10 +68,10 @@ export default function MediaPicker({
             value={value}
             onChange={(e) => setValue(e.target.value)}
             placeholder="Media UUID, or click a thumbnail below"
-            className="w-full h-8 px-2 border border-[var(--color-border)] text-[12px] font-mono"
+            className="w-full h-8 px-2 border border-ih-border text-[12px] font-mono"
           />
           {selected && (
-            <div className="text-[11px] text-[var(--color-muted)] truncate mt-1">
+            <div className="text-[11px] text-ih-muted truncate mt-1">
               {selected.originalFilename}
             </div>
           )}
@@ -80,7 +80,7 @@ export default function MediaPicker({
           <button
             type="button"
             onClick={() => setOpen((v) => !v)}
-            className="h-7 px-3 text-[11px] border border-[var(--color-border)] bg-white hover:border-[var(--color-body)]"
+            className="h-7 px-3 text-[11px] border border-ih-border bg-white hover:border-ih-accent"
           >
             {open ? 'Hide' : 'Browse'}
           </button>
@@ -88,7 +88,7 @@ export default function MediaPicker({
             <button
               type="button"
               onClick={() => setValue('')}
-              className="h-7 px-3 text-[11px] border border-[var(--color-border)] bg-white text-[oklch(0.5_0.16_25)]"
+              className="h-7 px-3 text-[11px] border border-ih-border bg-white text-[oklch(0.5_0.16_25)]"
             >
               Clear
             </button>
@@ -98,9 +98,9 @@ export default function MediaPicker({
 
       {/* Recent grid */}
       {open && (
-        <div className="border border-[var(--color-border)] bg-[var(--color-deep)] p-3">
+        <div className="border border-ih-border bg-ih-surface-2 p-3">
           {recent.length === 0 ? (
-            <p className="text-[12px] text-[var(--color-muted)] py-4 text-center">
+            <p className="text-[12px] text-ih-muted py-4 text-center">
               No images in the media library yet. Upload via the media admin page.
             </p>
           ) : (
@@ -113,7 +113,7 @@ export default function MediaPicker({
                     key={m.id}
                     onClick={() => setValue(m.id)}
                     title={m.originalFilename}
-                    className={`aspect-square bg-white border ${active ? 'border-[var(--color-accent)] outline outline-2 outline-[var(--color-accent)]' : 'border-[var(--color-border)] hover:border-[var(--color-body)]'} grid place-items-center overflow-hidden`}
+                    className={`aspect-square bg-white border ${active ? 'border-ih-accent outline outline-2 outline-ih-accent' : 'border-ih-border hover:border-ih-accent'} grid place-items-center overflow-hidden`}
                   >
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
@@ -129,7 +129,7 @@ export default function MediaPicker({
         </div>
       )}
 
-      {hint && <span className="text-[11px] text-[var(--color-muted)]">{hint}</span>}
+      {hint && <span className="text-[11px] text-ih-muted">{hint}</span>}
     </div>
   )
 }

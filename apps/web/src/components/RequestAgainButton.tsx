@@ -51,7 +51,7 @@ export default function RequestAgainButton({ items, rfqCode }: Props) {
       onClick={handleClick}
       disabled={isPending || items.length === 0}
       title={items.length === 0 ? 'No lines on this RFQ' : `Copy ${items.length} line${items.length === 1 ? '' : 's'} into a new quote`}
-      className="inline-flex items-center justify-center h-7 px-2.5 border border-[var(--color-border)] font-mono text-[10px] text-[var(--color-body)] hover:border-[var(--color-accent)] hover:text-[var(--color-accent)] hover:bg-white transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
+      className="inline-flex items-center justify-center h-7 px-2.5 border border-ih-border font-mono text-[10px] text-ih-ink-2 hover:border-ih-accent hover:text-ih-accent hover:bg-white transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
     >
       ↻ {isPending ? 'Copying…' : 'Re-quote'}
     </button>

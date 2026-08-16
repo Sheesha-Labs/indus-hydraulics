@@ -58,7 +58,7 @@ export default async function WarrantyPage({ params }: Props) {
       <article className="max-w-[820px] mx-auto px-8 py-16 pb-24 prose prose-sm">
         <h1 className="text-[36px] font-semibold tracking-tight mb-2">{cms.title}</h1>
         <div
-          className="text-[15px] leading-[1.7] text-[var(--color-body)]"
+          className="text-[15px] leading-[1.7] text-ih-ink-2"
           dangerouslySetInnerHTML={{ __html: cms.body }}
         />
       </article>
@@ -78,12 +78,12 @@ export default async function WarrantyPage({ params }: Props) {
   })
 
   return (
-    <article className="max-w-[820px] mx-auto px-8 py-16 pb-24 text-[var(--color-body)]">
+    <article className="max-w-[820px] mx-auto px-8 py-16 pb-24 text-ih-ink-2">
       <JsonLd data={[faqLd, breadcrumbLd]} />
 
       <header className="mb-10">
         <h1 className="text-[36px] font-semibold tracking-tight mb-3">Warranty Policy</h1>
-        <p className="font-mono text-[12px] text-[var(--color-muted)] tracking-[0.06em] uppercase">
+        <p className="font-mono text-[12px] text-ih-muted tracking-[0.06em] uppercase">
           Effective {EFFECTIVE_DATE} · Version 1.0
         </p>
       </header>
@@ -104,7 +104,7 @@ export default async function WarrantyPage({ params }: Props) {
       <Section title="2. Manufacturers we administer warranty for">
         <p>
           As an authorized distributor we handle warranty claims for the brands listed on our{' '}
-          <Link className="text-[var(--color-accent)] hover:underline" href="/brands">
+          <Link className="text-ih-accent hover:underline" href="/brands">
             brands page
           </Link>
           , including:
@@ -205,7 +205,7 @@ export default async function WarrantyPage({ params }: Props) {
         <ol className="list-decimal pl-6 space-y-1">
           <li>
             <strong>Notify us within 7 days</strong> of discovering the fault. Email{' '}
-            <a className="text-[var(--color-accent)] hover:underline" href="mailto:sales@indushydraulics.me">
+            <a className="text-ih-accent hover:underline" href="mailto:sales@indushydraulics.me">
               sales@indushydraulics.me
             </a>{' '}
             with the Estimate or invoice number, product part number and serial / batch number,
@@ -243,7 +243,7 @@ export default async function WarrantyPage({ params }: Props) {
           manufacturer’s discretion. We will not provide consequential cover beyond what the
           manufacturer offers (such as loss of production, downtime, or third-party labour costs).
           See the Limitation of Liability section of our{' '}
-          <a className="text-[var(--color-accent)] hover:underline" href="/terms">
+          <a className="text-ih-accent hover:underline" href="/terms">
             Terms of Service
           </a>
           .
@@ -263,18 +263,18 @@ export default async function WarrantyPage({ params }: Props) {
       <Section title="9. Contact">
         <p>
           To start a warranty claim or ask a coverage question, contact us at{' '}
-          <a className="text-[var(--color-accent)] hover:underline" href="mailto:sales@indushydraulics.me">
+          <a className="text-ih-accent hover:underline" href="mailto:sales@indushydraulics.me">
             sales@indushydraulics.me
           </a>{' '}
           or via the channels on our{' '}
-          <a className="text-[var(--color-accent)] hover:underline" href="/contact">
+          <a className="text-ih-accent hover:underline" href="/contact">
             contact page
           </a>
           .
         </p>
       </Section>
 
-      <footer className="mt-12 pt-6 border-t border-[var(--color-border)] text-[12px] text-[var(--color-caption)] leading-[1.6]">
+      <footer className="mt-12 pt-6 border-t border-ih-border text-[12px] text-ih-muted-2 leading-[1.6]">
         This policy is the customer-facing companion to section 6 (Warranty) of our{' '}
         <a className="underline" href="/terms">
           Terms of Service
@@ -293,7 +293,7 @@ export default async function WarrantyPage({ params }: Props) {
 function Section({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <section className="mb-8">
-      <h2 className="text-[18px] font-semibold tracking-[-0.01em] mb-3 text-[var(--color-primary)]">
+      <h2 className="text-[18px] font-semibold tracking-[-0.01em] mb-3 text-ih-ink">
         {title}
       </h2>
       <div className="text-[15px] leading-[1.7] space-y-3">{children}</div>

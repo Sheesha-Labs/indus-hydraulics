@@ -43,10 +43,10 @@ export default async function AccountDashboardPage() {
   const firstName = contact?.firstName ?? session?.user?.name?.split(' ')[0] ?? 'there'
 
   const statusColors: Record<string, string> = {
-    draft: 'text-[var(--color-muted)] bg-[var(--color-deep)] border border-[var(--color-border)]',
+    draft: 'text-ih-muted bg-ih-surface-2 border border-ih-border',
     submitted: 'text-[oklch(0.45_0.15_270)] bg-[oklch(0.96_0.04_270)]',
-    engineer_review: 'text-[var(--color-accent)] bg-[oklch(0.97_0.04_60)]',
-    engineer_questions_pending: 'text-[var(--color-warn)] bg-[oklch(0.97_0.04_80)]',
+    engineer_review: 'text-ih-accent bg-[oklch(0.97_0.04_60)]',
+    engineer_questions_pending: 'text-[oklch(0.46_0.1_62)] bg-ih-warning-soft',
     quote_sent: 'text-[oklch(0.4_0.15_270)] bg-[oklch(0.96_0.04_270)]',
   }
 
@@ -64,14 +64,14 @@ export default async function AccountDashboardPage() {
     <section>
       {/* Header */}
       <div className="mb-6">
-        <p className="font-mono text-[11px] tracking-[0.14em] text-[var(--color-muted)] uppercase">
+        <p className="font-mono text-[11px] tracking-[0.14em] text-ih-muted uppercase">
           Dashboard · {dayOfWeek.toUpperCase()} {dateStr.toUpperCase()}
         </p>
         <h1 className="text-[32px] font-semibold tracking-tight mt-1.5">
           Welcome back, {firstName}.
         </h1>
         {quotesAwaitingApproval > 0 && (
-          <p className="text-[var(--color-muted)] mt-1.5 text-sm">
+          <p className="text-ih-muted mt-1.5 text-sm">
             {quotesAwaitingApproval} quotes need your approval.
           </p>
         )}
@@ -84,27 +84,27 @@ export default async function AccountDashboardPage() {
           value={String(openRfqs.filter((r) => r.status !== 'draft').length)}
           note={
             openRfqs.some((r) => r.urgency === 'plant_down') ? (
-              <span className="text-[var(--color-danger)] font-mono text-[11px]">● plant-down</span>
+              <span className="text-ih-danger font-mono text-[11px]">● plant-down</span>
             ) : null
           }
         />
         <KpiCard
           label="Awaiting Approval"
           value={String(quotesAwaitingApproval)}
-          note={<span className="text-[var(--color-accent)] font-mono text-[11px]">Reply by deadline</span>}
+          note={<span className="text-ih-accent font-mono text-[11px]">Reply by deadline</span>}
         />
         <KpiCard
           label="Contract Tier"
           value={contact?.account?.tier ? capitalise(String(contact.account.tier)) : '—'}
-          note={<span className="text-[var(--color-muted)] font-mono text-[11px]">Preferred rate</span>}
+          note={<span className="text-ih-muted font-mono text-[11px]">Preferred rate</span>}
         />
         <KpiCard label="Saved Lists" value={String(savedLists.length)} note={null} />
       </div>
 
       {/* Active quotes table */}
       <h2 className="text-[18px] font-semibold mb-3">Active quotes</h2>
-      <div className="border border-[var(--color-border)] bg-[var(--color-elevated)] overflow-hidden mb-8">
-        <div className="grid grid-cols-[140px_1fr_80px_100px_120px] gap-3.5 px-4 py-3 bg-[var(--color-surface)] border-b border-[var(--color-border)] font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)]">
+      <div className="border border-ih-border bg-ih-surface overflow-hidden mb-8">
+        <div className="grid grid-cols-[140px_1fr_80px_100px_120px] gap-3.5 px-4 py-3 bg-ih-bg border-b border-ih-border font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">
           <span>RFQ #</span>
           <span>Lines / engineer</span>
           <span className="text-right">Lines</span>
@@ -113,7 +113,7 @@ export default async function AccountDashboardPage() {
         </div>
 
         {openRfqs.length === 0 ? (
-          <div className="px-4 py-10 text-center text-sm text-[var(--color-muted)]">
+          <div className="px-4 py-10 text-center text-sm text-ih-muted">
             No open RFQs. Build a quote to get started.
           </div>
         ) : (
@@ -121,12 +121,12 @@ export default async function AccountDashboardPage() {
             <Link
               key={rfq.id}
               href={`/quote/${rfq.code}`}
-              className="grid grid-cols-[140px_1fr_80px_100px_120px] gap-3.5 px-4 py-3.5 border-b border-[var(--color-border-2)] items-center text-[var(--color-primary)] hover:bg-[var(--color-deep)] transition-colors"
+              className="grid grid-cols-[140px_1fr_80px_100px_120px] gap-3.5 px-4 py-3.5 border-b border-ih-border items-center text-ih-ink hover:bg-ih-surface-2 transition-colors"
             >
               <span className="font-mono text-[13px]">{rfq.code}</span>
               <div>
                 <div className="font-medium text-sm">{rfq.subject ?? 'No description'}</div>
-                <div className="font-mono text-[11px] text-[var(--color-muted)]">
+                <div className="font-mono text-[11px] text-ih-muted">
                   {rfq.urgency === 'plant_down' ? 'plant-down' : capitalise(rfq.urgency ?? 'routine')}
                 </div>
               </div>
@@ -145,20 +145,20 @@ export default async function AccountDashboardPage() {
       {/* Bottom grid */}
       <div className="grid grid-cols-1 xl:grid-cols-2 gap-4">
         {/* Saved lists */}
-        <div className="border border-[var(--color-border)] bg-[var(--color-elevated)] p-4">
+        <div className="border border-ih-border bg-ih-surface p-4">
           <h3 className="text-[15px] font-semibold mb-3">Saved lists</h3>
           {savedLists.length === 0 ? (
-            <p className="text-sm text-[var(--color-muted)]">No saved lists yet.</p>
+            <p className="text-sm text-ih-muted">No saved lists yet.</p>
           ) : (
             <div className="flex flex-col gap-2 text-[13px]">
               {savedLists.map((list) => (
                 <Link
                   key={list.id}
                   href={`/account/lists/${list.id}`}
-                  className="flex justify-between items-center py-1.5 border-b border-[var(--color-border-2)] hover:text-[var(--color-accent)] transition-colors"
+                  className="flex justify-between items-center py-1.5 border-b border-ih-border hover:text-ih-accent transition-colors"
                 >
                   <span>📋 {list.name}</span>
-                  <span className="font-mono text-[var(--color-muted)] text-[11px]">
+                  <span className="font-mono text-ih-muted text-[11px]">
                     {list._count.items} SKUs
                   </span>
                 </Link>
@@ -168,23 +168,23 @@ export default async function AccountDashboardPage() {
         </div>
 
         {/* Get a quote CTA */}
-        <div className="border border-[var(--color-border)] bg-[var(--color-elevated)] p-4 flex flex-col justify-between">
+        <div className="border border-ih-border bg-ih-surface p-4 flex flex-col justify-between">
           <div>
             <h3 className="text-[15px] font-semibold mb-2">Start a new RFQ</h3>
-            <p className="text-[13px] text-[var(--color-muted)] leading-relaxed">
+            <p className="text-[13px] text-ih-muted leading-relaxed">
               Browse the catalogue or search by SKU or MPN to add items to your quote.
             </p>
           </div>
           <div className="flex gap-3 mt-4">
             <Link
               href={`/quote`}
-              className="flex-1 h-10 flex items-center justify-center bg-[var(--color-accent)] text-white text-sm font-medium hover:opacity-90 transition-opacity"
+              className="flex-1 h-10 flex items-center justify-center bg-ih-accent text-white text-sm font-medium hover:opacity-90 transition-opacity"
             >
               Build a quote →
             </Link>
             <Link
               href={`/c`}
-              className="flex-1 h-10 flex items-center justify-center border border-[var(--color-border)] text-sm font-medium hover:bg-[var(--color-deep)] transition-colors"
+              className="flex-1 h-10 flex items-center justify-center border border-ih-border text-sm font-medium hover:bg-ih-surface-2 transition-colors"
             >
               Browse catalogue
             </Link>
@@ -205,8 +205,8 @@ function KpiCard({
   note: React.ReactNode
 }) {
   return (
-    <div className="p-4 border border-[var(--color-border)] bg-[var(--color-elevated)]">
-      <p className="font-mono text-[10px] tracking-[0.1em] uppercase text-[var(--color-muted)]">{label}</p>
+    <div className="p-4 border border-ih-border bg-ih-surface">
+      <p className="font-mono text-[10px] tracking-[0.1em] uppercase text-ih-muted">{label}</p>
       <p className="font-mono text-[28px] font-semibold mt-1.5">{value}</p>
       {note && <div className="mt-1">{note}</div>}
     </div>

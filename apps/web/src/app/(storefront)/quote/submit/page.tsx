@@ -31,7 +31,7 @@ export default async function QuoteSubmitPage() {
   }))
 
   return (
-    <div className="max-w-[1100px] mx-auto px-8 py-8 pb-20">
+    <div className="mx-auto max-w-[1100px] px-5 sm:px-8 py-8 pb-20">
       {/* Breadcrumb */}
       <div className="flex items-center gap-2 font-mono text-[11px] tracking-[0.1em] text-ih-muted mb-2">
         <Link href={`/quote`} className="hover:text-ih-ink uppercase">Quote</Link>

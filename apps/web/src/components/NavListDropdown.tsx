@@ -50,20 +50,20 @@ export default function NavListDropdown({
 
   return (
     <div
-      className="absolute left-0 right-0 bg-[var(--color-elevated)] border-t border-[var(--color-border)]"
+      className="absolute left-0 right-0 bg-ih-surface border-t border-ih-border"
       style={{ top: '100%', boxShadow: '0 24px 64px rgba(33,28,16,0.12)', zIndex: 50 }}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
       role="menu"
     >
-      <div className="max-w-[1360px] mx-auto px-8 py-7">
+      <div className="mx-auto max-w-[1440px] px-5 sm:px-8 xl:px-12 py-7">
         <div
           className="grid gap-10"
           style={hasPromo ? { gridTemplateColumns: '1fr 360px' } : undefined}
         >
           {/* List section */}
           <div>
-            <div className="font-mono text-[11px] tracking-[0.14em] uppercase text-[var(--color-muted)] mb-4 flex justify-between items-center">
+            <div className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-4 flex justify-between items-center">
               <span>{sectionLabel}</span>
               <span className="font-normal">{items.length}</span>
             </div>
@@ -73,18 +73,18 @@ export default function NavListDropdown({
                   key={item.slug}
                   href={`${hrefPrefix}${item.slug}`}
                   role="menuitem"
-                  className="flex justify-between items-center px-3 py-2.5 border-l-2 border-transparent text-[14px] text-[var(--color-body)] hover:bg-[var(--color-surface)] hover:border-[var(--color-accent)] hover:text-[var(--color-primary)] transition-colors"
+                  className="flex justify-between items-center px-3 py-2.5 border-l-2 border-transparent text-[14px] text-ih-ink-2 hover:bg-ih-bg hover:border-ih-accent hover:text-ih-ink transition-colors"
                   onClick={onItemClick}
                 >
                   <span>{item.name}</span>
-                  <span className="font-mono text-[11px] text-[var(--color-caption)]">›</span>
+                  <span className="font-mono text-[11px] text-ih-muted-2">›</span>
                 </Link>
               ))}
             </div>
-            <div className="mt-5 pt-4 border-t border-[var(--color-border-2)]">
+            <div className="mt-5 pt-4 border-t border-ih-border">
               <Link
                 href={viewAllHref}
-                className="inline-flex items-center justify-between gap-2 h-10 px-4 border border-[var(--color-border)] text-[13px] text-[var(--color-body)] hover:bg-[var(--color-deep)] transition-colors"
+                className="inline-flex items-center justify-between gap-2 h-10 px-4 border border-ih-border text-[13px] text-ih-ink-2 hover:bg-ih-surface-2 transition-colors"
                 onClick={onItemClick}
               >
                 <span>{viewAllLabel}</span>
@@ -100,7 +100,7 @@ export default function NavListDropdown({
             <Link
               href={promoLinkUrl ?? viewAllHref}
               onClick={onItemClick}
-              className="block bg-[var(--color-surface)] border border-[var(--color-border)] overflow-hidden self-start"
+              className="block bg-ih-bg border border-ih-border overflow-hidden self-start"
             >
               <div className="relative w-full h-40">
                 <Image
@@ -113,12 +113,12 @@ export default function NavListDropdown({
               </div>
               <div className="px-4 py-3">
                 {promoHeading ? (
-                  <div className="text-[13px] font-medium text-[var(--color-primary)]">
+                  <div className="text-[13px] font-medium text-ih-ink">
                     {promoHeading}
                   </div>
                 ) : null}
                 {promoBody ? (
-                  <div className="text-[12px] text-[var(--color-muted)] mt-1">{promoBody}</div>
+                  <div className="text-[12px] text-ih-muted mt-1">{promoBody}</div>
                 ) : null}
               </div>
             </Link>

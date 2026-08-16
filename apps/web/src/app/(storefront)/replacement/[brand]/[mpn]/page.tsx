@@ -61,32 +61,32 @@ export default async function ReplacementPage({ params }: Props) {
   })
 
   return (
-    <div className="max-w-[1100px] mx-auto px-8 py-8 pb-16">
+    <div className="mx-auto max-w-[1100px] px-5 sm:px-8 py-8 pb-16">
       <JsonLd data={[collectionLd, breadcrumbLd]} />
 
       {/* Breadcrumb */}
-      <nav className="py-2 font-mono text-[12px] text-[var(--color-muted)] flex gap-2 items-center flex-wrap mb-6">
-        <Link href={`/`} className="hover:text-[var(--color-primary)]">Home</Link>
+      <nav className="py-2 font-mono text-[12px] text-ih-muted flex gap-2 items-center flex-wrap mb-6">
+        <Link href={`/`} className="hover:text-ih-ink">Home</Link>
         <span className="opacity-40">/</span>
-        <Link href={`/replacement`} className="hover:text-[var(--color-primary)]">Replacements</Link>
+        <Link href={`/replacement`} className="hover:text-ih-ink">Replacements</Link>
         <span className="opacity-40">/</span>
-        <Link href={`/replacement/${brand}`} className="hover:text-[var(--color-primary)]">{competitorBrand}</Link>
+        <Link href={`/replacement/${brand}`} className="hover:text-ih-ink">{competitorBrand}</Link>
         <span className="opacity-40">/</span>
-        <span className="text-[var(--color-primary)]">{competitorMpn}</span>
+        <span className="text-ih-ink">{competitorMpn}</span>
       </nav>
 
       <header className="mb-8">
-        <p className="font-mono text-[11px] tracking-[0.14em] uppercase text-[var(--color-muted)] mb-2">
+        <p className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-2">
           {SITE_NAME} replacement
         </p>
-        <h1 className="text-[clamp(28px,4vw,40px)] font-semibold tracking-[-0.02em] leading-[1.1] mb-3">
+        <h1 className="font-serif text-[clamp(28px,4vw,40px)] font-normal tracking-[-0.02em] leading-[1.1] mb-3">
           {SITE_NAME} replacement for {competitorBrand} {competitorMpn}
         </h1>
-        <p className="text-[15px] text-[var(--color-muted)] max-w-[680px] leading-[1.55]">
+        <p className="text-[15px] text-ih-muted max-w-[680px] leading-[1.55]">
           {matches.length === 1 ? (
-            <>One verified equivalent for <b className="text-[var(--color-primary)]">{competitorBrand} {competitorMpn}</b> from the {SITE_NAME} catalogue. Datasheet, lead time, and stock are confirmed by our applications team.</>
+            <>One verified equivalent for <b className="text-ih-ink">{competitorBrand} {competitorMpn}</b> from the {SITE_NAME} catalogue. Datasheet, lead time, and stock are confirmed by our applications team.</>
           ) : (
-            <><b className="text-[var(--color-primary)]">{matches.length}</b> verified equivalents for <b className="text-[var(--color-primary)]">{competitorBrand} {competitorMpn}</b> from the {SITE_NAME} catalogue. Each has datasheets and lead times confirmed by our applications team.</>
+            <><b className="text-ih-ink">{matches.length}</b> verified equivalents for <b className="text-ih-ink">{competitorBrand} {competitorMpn}</b> from the {SITE_NAME} catalogue. Each has datasheets and lead times confirmed by our applications team.</>
           )}
         </p>
       </header>
@@ -96,9 +96,9 @@ export default async function ReplacementPage({ params }: Props) {
           <Link
             key={m.productId}
             href={`/p/${m.product.slug}`}
-            className="group flex gap-4 p-4 border border-[var(--color-border)] bg-[var(--color-elevated)] hover:border-[var(--color-body)] transition-colors"
+            className="group flex gap-4 p-4 border border-ih-border bg-ih-surface hover:border-ih-accent transition-colors"
           >
-            <div className="relative w-[120px] h-[120px] shrink-0 bg-[var(--color-deep)] border border-[var(--color-border)]">
+            <div className="relative w-[120px] h-[120px] shrink-0 bg-ih-surface-2 border border-ih-border">
               {m.product.images[0] ? (
                 <Image
                   src={mediaUrl(m.product.images[0]!.media.storagePath)}
@@ -108,25 +108,25 @@ export default async function ReplacementPage({ params }: Props) {
                   sizes="120px"
                 />
               ) : (
-                <div className="absolute inset-0 grid place-items-center font-mono text-[10px] text-[var(--color-muted)]">
+                <div className="absolute inset-0 grid place-items-center font-mono text-[10px] text-ih-muted">
                   {m.product.sku}
                 </div>
               )}
             </div>
             <div className="flex-1 min-w-0 flex flex-col">
               <CompatibilityBadge value={m.compatibility} />
-              <div className="font-mono text-[11px] text-[var(--color-muted)] tracking-[0.04em] mt-2 mb-0.5">
+              <div className="font-mono text-[11px] text-ih-muted tracking-[0.04em] mt-2 mb-0.5">
                 {m.product.sku}{m.product.brand ? ` · ${m.product.brand.name}` : ''}
               </div>
-              <h2 className="text-[15px] font-medium text-[var(--color-primary)] leading-snug group-hover:text-[var(--color-accent)] transition-colors line-clamp-2">
+              <h2 className="text-[15px] font-medium text-ih-ink leading-snug group-hover:text-ih-accent transition-colors line-clamp-2">
                 {m.product.title}
               </h2>
               {m.product.descriptionShort && (
-                <p className="text-[12px] text-[var(--color-muted)] mt-2 leading-[1.5] line-clamp-2">
+                <p className="text-[12px] text-ih-muted mt-2 leading-[1.5] line-clamp-2">
                   {m.product.descriptionShort}
                 </p>
               )}
-              <span className="font-mono text-[11px] text-[var(--color-accent)] mt-auto pt-3">
+              <span className="font-mono text-[11px] text-ih-accent mt-auto pt-3">
                 View product →
               </span>
             </div>
@@ -134,14 +134,14 @@ export default async function ReplacementPage({ params }: Props) {
         ))}
       </div>
 
-      <section className="border-t border-[var(--color-border)] pt-8 mb-10">
+      <section className="border-t border-ih-border pt-8 mb-10">
         <h3 className="font-semibold text-[16px] mb-2">Browse all {competitorBrand} replacements</h3>
-        <p className="text-[13px] text-[var(--color-muted)] leading-[1.55] mb-4">
+        <p className="text-[13px] text-ih-muted leading-[1.55] mb-4">
           See every {competitorBrand} part we cover, with the matching Indus equivalents.
         </p>
         <Link
           href={`/replacement/${brand}`}
-          className="inline-flex h-9 px-4 items-center border border-[var(--color-border)] bg-[var(--color-elevated)] font-mono text-[12px] text-[var(--color-body)] hover:border-[var(--color-primary)] transition-colors"
+          className="inline-flex h-9 px-4 items-center border border-ih-border bg-ih-surface font-mono text-[12px] text-ih-ink-2 hover:border-ih-ink transition-colors"
         >
           All {competitorBrand} parts →
         </Link>

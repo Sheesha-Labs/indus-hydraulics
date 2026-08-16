@@ -52,7 +52,7 @@ export default function NotificationBell({ unreadCount: initialCount, notificati
     <div className="relative">
       <button
         onClick={() => setOpen(!open)}
-        className="relative flex items-center justify-center h-9 w-9 border border-[var(--color-border)] hover:bg-[var(--color-deep)] transition-colors"
+        className="relative flex items-center justify-center h-9 w-9 border border-ih-border hover:bg-ih-surface-2 transition-colors"
         aria-label="Notifications"
       >
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
@@ -60,7 +60,7 @@ export default function NotificationBell({ unreadCount: initialCount, notificati
           <path d="M13.73 21a2 2 0 01-3.46 0" />
         </svg>
         {unreadCount > 0 && (
-          <span className="absolute -top-1 -right-1 w-4 h-4 bg-[var(--color-accent)] text-white font-mono text-[9px] grid place-items-center rounded-full">
+          <span className="absolute -top-1 -right-1 w-4 h-4 bg-ih-accent text-white font-mono text-[9px] grid place-items-center rounded-full">
             {unreadCount > 9 ? '9+' : unreadCount}
           </span>
         )}
@@ -69,15 +69,15 @@ export default function NotificationBell({ unreadCount: initialCount, notificati
       {open && (
         <>
           <div className="fixed inset-0 z-40" onClick={() => setOpen(false)} />
-          <div className="absolute right-0 top-full mt-1 w-[360px] bg-[var(--color-elevated)] border border-[var(--color-border)] shadow-lg z-50">
-            <div className="flex items-center justify-between px-4 py-3 border-b border-[var(--color-border)]">
-              <span className="font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)]">
+          <div className="absolute right-0 top-full mt-1 w-[360px] bg-ih-surface border border-ih-border shadow-lg z-50">
+            <div className="flex items-center justify-between px-4 py-3 border-b border-ih-border">
+              <span className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">
                 Notifications
               </span>
               {unreadCount > 0 && (
                 <button
                   onClick={handleMarkAllRead}
-                  className="font-mono text-[11px] text-[var(--color-accent)] hover:underline"
+                  className="font-mono text-[11px] text-ih-accent hover:underline"
                 >
                   Mark all read
                 </button>
@@ -87,7 +87,7 @@ export default function NotificationBell({ unreadCount: initialCount, notificati
             <div className="max-h-[400px] overflow-y-auto">
               {notifications.length === 0 ? (
                 <div className="py-10 text-center">
-                  <p className="text-[13px] text-[var(--color-muted)]">No notifications yet.</p>
+                  <p className="text-[13px] text-ih-muted">No notifications yet.</p>
                 </div>
               ) : (
                 notifications.map((n) => {
@@ -95,23 +95,23 @@ export default function NotificationBell({ unreadCount: initialCount, notificati
                   return (
                     <div
                       key={n.id}
-                      className={`flex gap-3 px-4 py-3 border-b border-[var(--color-border)] last:border-0 hover:bg-[var(--color-deep)] transition-colors ${
-                        !n.readAt ? 'bg-[var(--color-deep)]' : ''
+                      className={`flex gap-3 px-4 py-3 border-b border-ih-border last:border-0 hover:bg-ih-surface-2 transition-colors ${
+                        !n.readAt ? 'bg-ih-surface-2' : ''
                       }`}
                     >
                       <div className="flex-1 min-w-0">
                         <div className="flex items-center gap-2 mb-0.5">
                           {!n.readAt && (
-                            <span className="w-1.5 h-1.5 rounded-full bg-[var(--color-accent)] shrink-0" />
+                            <span className="w-1.5 h-1.5 rounded-full bg-ih-accent shrink-0" />
                           )}
-                          <span className="font-mono text-[11px] text-[var(--color-muted)]">
+                          <span className="font-mono text-[11px] text-ih-muted">
                             {KIND_LABELS[n.kind] ?? n.kind}
                           </span>
                         </div>
                         {typeof n.payload.message === 'string' && (
-                          <p className="text-[13px] text-[var(--color-body)] truncate">{n.payload.message}</p>
+                          <p className="text-[13px] text-ih-ink-2 truncate">{n.payload.message}</p>
                         )}
-                        <p className="font-mono text-[10px] text-[var(--color-caption)] mt-0.5">
+                        <p className="font-mono text-[10px] text-ih-muted-2 mt-0.5">
                           {new Date(n.createdAt).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' })}
                         </p>
                       </div>
@@ -119,7 +119,7 @@ export default function NotificationBell({ unreadCount: initialCount, notificati
                         {href && (
                           <a
                             href={href}
-                            className="font-mono text-[10px] text-[var(--color-accent)] hover:underline"
+                            className="font-mono text-[10px] text-ih-accent hover:underline"
                             onClick={() => setOpen(false)}
                           >
                             View →
@@ -128,7 +128,7 @@ export default function NotificationBell({ unreadCount: initialCount, notificati
                         {!n.readAt && (
                           <button
                             onClick={() => handleMarkRead(n.id)}
-                            className="font-mono text-[10px] text-[var(--color-muted)] hover:text-[var(--color-body)]"
+                            className="font-mono text-[10px] text-ih-muted hover:text-ih-ink-2"
                           >
                             Dismiss
                           </button>

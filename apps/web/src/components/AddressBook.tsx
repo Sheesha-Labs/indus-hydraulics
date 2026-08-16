@@ -62,18 +62,18 @@ export default function AddressBook({ addresses, requiresApproval }: Props) {
       {/* Address cards */}
       <div className="space-y-3 mb-6">
         {addresses.length === 0 && !showForm && (
-          <div className="py-12 border border-dashed border-[var(--color-border)] text-center">
-            <p className="text-[var(--color-muted)] text-[13px]">No addresses saved yet.</p>
+          <div className="py-12 border border-dashed border-ih-border text-center">
+            <p className="text-ih-muted text-[13px]">No addresses saved yet.</p>
           </div>
         )}
 
         {addresses.map((addr) => (
-          <div key={addr.id} className="border border-[var(--color-border)] bg-[var(--color-elevated)] p-4">
+          <div key={addr.id} className="border border-ih-border bg-ih-surface p-4">
             <div className="flex items-start justify-between gap-4">
               <div>
                 <div className="flex items-center gap-2 mb-1.5 flex-wrap">
                   <span className="text-[14px] font-semibold">{addr.label}</span>
-                  <span className="font-mono text-[10px] px-1.5 py-0.5 bg-[var(--color-surface)] text-[var(--color-muted)] capitalize border border-[var(--color-border)]">
+                  <span className="font-mono text-[10px] px-1.5 py-0.5 bg-ih-bg text-ih-muted capitalize border border-ih-border">
                     {addr.kind.replace('_', '-')}
                   </span>
                   {addr.isDefaultShip && (
@@ -93,12 +93,12 @@ export default function AddressBook({ addresses, requiresApproval }: Props) {
                   )}
                 </div>
                 {addr.attention && (
-                  <div className="text-[12px] text-[var(--color-muted)] mb-0.5">Attn: {addr.attention}</div>
+                  <div className="text-[12px] text-ih-muted mb-0.5">Attn: {addr.attention}</div>
                 )}
                 {addr.lines.map((l, i) => <div key={i} className="text-[13px]">{l}</div>)}
                 <div className="text-[13px]">{addr.city}{addr.region ? `, ${addr.region}` : ''}{addr.postalCode ? ` ${addr.postalCode}` : ''}</div>
                 <div className="text-[13px]">{addr.countryCode}</div>
-                {addr.phone && <div className="font-mono text-[11px] text-[var(--color-muted)] mt-1">{addr.phone}</div>}
+                {addr.phone && <div className="font-mono text-[11px] text-ih-muted mt-1">{addr.phone}</div>}
               </div>
 
               {/* Actions */}
@@ -107,7 +107,7 @@ export default function AddressBook({ addresses, requiresApproval }: Props) {
                   <button
                     onClick={() => startTransition(() => setDefaultAddress(addr.id, 'ship'))}
                     disabled={isPending}
-                    className="font-mono text-[11px] text-[var(--color-accent)] hover:underline disabled:opacity-50"
+                    className="font-mono text-[11px] text-ih-accent hover:underline disabled:opacity-50"
                   >
                     Set default ship
                   </button>
@@ -116,7 +116,7 @@ export default function AddressBook({ addresses, requiresApproval }: Props) {
                   <button
                     onClick={() => startTransition(() => setDefaultAddress(addr.id, 'bill'))}
                     disabled={isPending}
-                    className="font-mono text-[11px] text-[var(--color-accent)] hover:underline disabled:opacity-50"
+                    className="font-mono text-[11px] text-ih-accent hover:underline disabled:opacity-50"
                   >
                     Set default bill
                   </button>
@@ -128,7 +128,7 @@ export default function AddressBook({ addresses, requiresApproval }: Props) {
                     }
                   }}
                   disabled={isPending}
-                  className="font-mono text-[11px] text-[var(--color-muted)] hover:text-[var(--color-danger)] transition-colors disabled:opacity-50"
+                  className="font-mono text-[11px] text-ih-muted hover:text-ih-danger transition-colors disabled:opacity-50"
                 >
                   Delete
                 </button>
@@ -140,49 +140,49 @@ export default function AddressBook({ addresses, requiresApproval }: Props) {
 
       {/* Add address form */}
       {showForm ? (
-        <div className="border border-[var(--color-border)] bg-[var(--color-elevated)] p-5">
+        <div className="border border-ih-border bg-ih-surface p-5">
           <h3 className="text-[14px] font-semibold mb-4">New Address</h3>
           <form onSubmit={handleAdd} className="space-y-3">
             <div className="grid grid-cols-2 gap-3">
               <div className="col-span-2">
-                <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1">Label *</label>
-                <input name="label" required type="text" placeholder="e.g. HQ Warehouse, Site A" className="w-full h-9 px-3 border border-[var(--color-border)] bg-[var(--color-surface)] text-[13px] focus:outline-none focus:border-[var(--color-accent)]" />
+                <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1">Label *</label>
+                <input name="label" required type="text" placeholder="e.g. HQ Warehouse, Site A" className="w-full h-9 px-3 border border-ih-border bg-ih-bg text-[13px] focus:outline-none focus:border-ih-accent" />
               </div>
               <div>
-                <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1">Type</label>
-                <select name="kind" className="w-full h-9 px-2 border border-[var(--color-border)] bg-[var(--color-surface)] text-[13px] focus:outline-none">
+                <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1">Type</label>
+                <select name="kind" className="w-full h-9 px-2 border border-ih-border bg-ih-bg text-[13px] focus:outline-none">
                   <option value="ship_to">Ship-to</option>
                   <option value="bill_to">Bill-to</option>
                   <option value="both">Both</option>
                 </select>
               </div>
               <div>
-                <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1">Attention</label>
-                <input name="attention" type="text" placeholder="Contact name" className="w-full h-9 px-3 border border-[var(--color-border)] bg-[var(--color-surface)] text-[13px] focus:outline-none focus:border-[var(--color-accent)]" />
+                <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1">Attention</label>
+                <input name="attention" type="text" placeholder="Contact name" className="w-full h-9 px-3 border border-ih-border bg-ih-bg text-[13px] focus:outline-none focus:border-ih-accent" />
               </div>
               <div className="col-span-2">
-                <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1">Address Line 1 *</label>
-                <input name="line1" required type="text" placeholder="Street address, P.O. Box" className="w-full h-9 px-3 border border-[var(--color-border)] bg-[var(--color-surface)] text-[13px] focus:outline-none focus:border-[var(--color-accent)]" />
+                <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1">Address Line 1 *</label>
+                <input name="line1" required type="text" placeholder="Street address, P.O. Box" className="w-full h-9 px-3 border border-ih-border bg-ih-bg text-[13px] focus:outline-none focus:border-ih-accent" />
               </div>
               <div className="col-span-2">
-                <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1">Address Line 2</label>
-                <input name="line2" type="text" placeholder="Suite, Building, Floor" className="w-full h-9 px-3 border border-[var(--color-border)] bg-[var(--color-surface)] text-[13px] focus:outline-none focus:border-[var(--color-accent)]" />
+                <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1">Address Line 2</label>
+                <input name="line2" type="text" placeholder="Suite, Building, Floor" className="w-full h-9 px-3 border border-ih-border bg-ih-bg text-[13px] focus:outline-none focus:border-ih-accent" />
               </div>
               <div>
-                <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1">City *</label>
-                <input name="city" required type="text" className="w-full h-9 px-3 border border-[var(--color-border)] bg-[var(--color-surface)] text-[13px] focus:outline-none focus:border-[var(--color-accent)]" />
+                <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1">City *</label>
+                <input name="city" required type="text" className="w-full h-9 px-3 border border-ih-border bg-ih-bg text-[13px] focus:outline-none focus:border-ih-accent" />
               </div>
               <div>
-                <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1">State / Region</label>
-                <input name="region" type="text" className="w-full h-9 px-3 border border-[var(--color-border)] bg-[var(--color-surface)] text-[13px] focus:outline-none focus:border-[var(--color-accent)]" />
+                <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1">State / Region</label>
+                <input name="region" type="text" className="w-full h-9 px-3 border border-ih-border bg-ih-bg text-[13px] focus:outline-none focus:border-ih-accent" />
               </div>
               <div>
-                <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1">Postal Code</label>
-                <input name="postalCode" type="text" className="w-full h-9 px-3 border border-[var(--color-border)] bg-[var(--color-surface)] text-[13px] focus:outline-none focus:border-[var(--color-accent)]" />
+                <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1">Postal Code</label>
+                <input name="postalCode" type="text" className="w-full h-9 px-3 border border-ih-border bg-ih-bg text-[13px] focus:outline-none focus:border-ih-accent" />
               </div>
               <div>
-                <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1">Country *</label>
-                <select name="countryCode" required className="w-full h-9 px-2 border border-[var(--color-border)] bg-[var(--color-surface)] text-[13px] focus:outline-none">
+                <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1">Country *</label>
+                <select name="countryCode" required className="w-full h-9 px-2 border border-ih-border bg-ih-bg text-[13px] focus:outline-none">
                   <option value="">— Select —</option>
                   {COUNTRIES.map((c) => (
                     <option key={c.code} value={c.code}>{c.name}</option>
@@ -190,16 +190,16 @@ export default function AddressBook({ addresses, requiresApproval }: Props) {
                 </select>
               </div>
               <div>
-                <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1">Phone</label>
-                <input name="phone" type="tel" className="w-full h-9 px-3 border border-[var(--color-border)] bg-[var(--color-surface)] text-[13px] focus:outline-none focus:border-[var(--color-accent)]" />
+                <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1">Phone</label>
+                <input name="phone" type="tel" className="w-full h-9 px-3 border border-ih-border bg-ih-bg text-[13px] focus:outline-none focus:border-ih-accent" />
               </div>
             </div>
 
             <div className="flex gap-2 pt-1">
-              <button type="submit" disabled={isPending} className="h-9 px-5 bg-[var(--color-accent)] text-white font-mono text-[12px] hover:opacity-90 disabled:opacity-50">
+              <button type="submit" disabled={isPending} className="h-9 px-5 bg-ih-accent text-white font-mono text-[12px] hover:opacity-90 disabled:opacity-50">
                 {isPending ? 'Saving…' : 'Save Address'}
               </button>
-              <button type="button" onClick={() => setShowForm(false)} className="h-9 px-4 border border-[var(--color-border)] font-mono text-[12px] text-[var(--color-muted)] hover:bg-[var(--color-deep)]">
+              <button type="button" onClick={() => setShowForm(false)} className="h-9 px-4 border border-ih-border font-mono text-[12px] text-ih-muted hover:bg-ih-surface-2">
                 Cancel
               </button>
             </div>
@@ -208,7 +208,7 @@ export default function AddressBook({ addresses, requiresApproval }: Props) {
       ) : (
         <button
           onClick={() => setShowForm(true)}
-          className="flex items-center gap-2 h-10 px-5 border border-[var(--color-border)] font-mono text-[12px] text-[var(--color-body)] hover:border-[var(--color-body)] transition-colors"
+          className="flex items-center gap-2 h-10 px-5 border border-ih-border font-mono text-[12px] text-ih-ink-2 hover:border-ih-accent transition-colors"
         >
           + Add Address
         </button>

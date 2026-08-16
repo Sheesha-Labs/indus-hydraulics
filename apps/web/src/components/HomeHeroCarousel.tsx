@@ -75,7 +75,7 @@ export default function HomeHeroCarousel({ slides }: Props) {
 
   return (
     <div
-      className="relative bg-[var(--color-surface)] border border-[var(--color-border)] overflow-hidden"
+      className="relative bg-ih-bg border border-ih-border overflow-hidden"
       style={{ aspectRatio: '1.05 / 1' }}
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
@@ -138,8 +138,8 @@ export default function HomeHeroCarousel({ slides }: Props) {
               onClick={() => setActive(idx)}
               className={`w-1.5 h-1.5 transition-all ${
                 idx === active
-                  ? 'w-6 bg-[var(--color-accent)]'
-                  : 'bg-[var(--color-muted)] hover:bg-[var(--color-primary)]'
+                  ? 'w-6 bg-ih-accent'
+                  : 'bg-ih-border-strong hover:bg-ih-navy'
               }`}
             />
           ))}
@@ -147,16 +147,16 @@ export default function HomeHeroCarousel({ slides }: Props) {
       )}
 
       {/* Auto-derived spec bar (bottom) — matches industrial CAD aesthetic */}
-      <div className="absolute bottom-0 left-0 right-0 z-20 bg-[var(--color-elevated)] border-t border-[var(--color-border)] px-4 py-3 flex justify-between font-mono text-[12px] text-[var(--color-muted)]">
+      <div className="absolute bottom-0 left-0 right-0 z-20 bg-ih-surface border-t border-ih-border px-4 py-3 flex justify-between font-mono text-[12px] text-ih-muted">
         <span className="truncate">
           FILE:{' '}
-          <strong className="text-[var(--color-primary)] font-medium">
+          <strong className="text-ih-ink font-medium">
             {activeSlide.originalFilename.toUpperCase()}
           </strong>
         </span>
         <span className="shrink-0 ml-4">
           REV:{' '}
-          <strong className="text-[var(--color-primary)] font-medium">
+          <strong className="text-ih-ink font-medium">
             {revNumber} · {revDate}
           </strong>
         </span>

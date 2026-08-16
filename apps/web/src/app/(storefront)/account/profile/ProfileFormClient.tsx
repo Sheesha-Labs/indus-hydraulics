@@ -69,15 +69,15 @@ export default function ProfileFormClient({ initial }: Props) {
     <div className="max-w-[640px]">
       <header className="mb-8">
         <h1 className="text-[28px] font-semibold tracking-tight mb-1">Profile</h1>
-        <p className="text-[14px] text-[var(--color-muted)]">
+        <p className="text-[14px] text-ih-muted">
           Update your name, contact details, and password.
         </p>
       </header>
 
       {/* ── Profile basics ─────────────────────────────────── */}
-      <section className="border border-[var(--color-border)] bg-[var(--color-elevated)] p-6 mb-6">
+      <section className="border border-ih-border bg-ih-surface p-6 mb-6">
         <h2 className="text-[16px] font-semibold mb-1">Your details</h2>
-        <p className="text-[12px] text-[var(--color-muted)] mb-5">
+        <p className="text-[12px] text-ih-muted mb-5">
           Used on RFQs, in email signatures we send back to you, and on your
           account page.
         </p>
@@ -110,12 +110,12 @@ export default function ProfileFormClient({ initial }: Props) {
           />
 
           {basicsState.status === 'error' && !Object.keys(basicsErrors).length && (
-            <p className="text-[13px] text-[var(--color-danger)] py-1">
+            <p className="text-[13px] text-ih-danger py-1">
               {basicsState.message}
             </p>
           )}
           {basicsState.status === 'success' && basicsState.section === 'basics' && (
-            <p className="text-[13px] text-[var(--color-accent)] py-1">
+            <p className="text-[13px] text-ih-accent py-1">
               Saved.
             </p>
           )}
@@ -124,7 +124,7 @@ export default function ProfileFormClient({ initial }: Props) {
             <button
               type="submit"
               disabled={basicsPending}
-              className="h-10 px-5 bg-[var(--color-accent)] text-white text-[13px] font-medium hover:opacity-90 disabled:opacity-50 transition-opacity"
+              className="h-10 px-5 bg-ih-accent text-white text-[13px] font-medium hover:opacity-90 disabled:opacity-50 transition-opacity"
             >
               {basicsPending ? 'Saving…' : 'Save changes'}
             </button>
@@ -133,14 +133,14 @@ export default function ProfileFormClient({ initial }: Props) {
       </section>
 
       {/* ── Sign-in info ───────────────────────────────────── */}
-      <section className="border border-[var(--color-border)] bg-[var(--color-elevated)] p-6 mb-6">
+      <section className="border border-ih-border bg-ih-surface p-6 mb-6">
         <h2 className="text-[16px] font-semibold mb-4">Sign-in</h2>
 
         <dl className="grid grid-cols-[140px_1fr] gap-y-3 text-[13px]">
-          <dt className="text-[var(--color-muted)]">Email</dt>
+          <dt className="text-ih-muted">Email</dt>
           <dd className="font-mono">{initial.email}</dd>
 
-          <dt className="text-[var(--color-muted)]">Sign-in method</dt>
+          <dt className="text-ih-muted">Sign-in method</dt>
           <dd>
             {initial.ssoProvider
               ? `Single sign-on (${initial.ssoProvider})`
@@ -149,29 +149,29 @@ export default function ProfileFormClient({ initial }: Props) {
                 : 'Not configured'}
           </dd>
 
-          <dt className="text-[var(--color-muted)]">Last sign-in</dt>
+          <dt className="text-ih-muted">Last sign-in</dt>
           <dd className="font-mono text-[12px]">{lastSignIn}</dd>
 
-          <dt className="text-[var(--color-muted)]">Role</dt>
+          <dt className="text-ih-muted">Role</dt>
           <dd>{initial.role}</dd>
         </dl>
       </section>
 
       {/* ── Change email ───────────────────────────────────── */}
       {!initial.ssoProvider && (
-        <section className="border border-[var(--color-border)] bg-[var(--color-elevated)] p-6 mb-6">
+        <section className="border border-ih-border bg-ih-surface p-6 mb-6">
           <h2 className="text-[16px] font-semibold mb-1">Change sign-in email</h2>
-          <p className="text-[12px] text-[var(--color-muted)] mb-5">
+          <p className="text-[12px] text-ih-muted mb-5">
             We&apos;ll send a verification link to the new address. Your current
             email keeps working until you click that link.
           </p>
 
           {showPendingFromServer ? (
-            <div className="border border-[var(--color-border-2)] bg-[var(--color-surface)] p-4 mb-3">
-              <p className="text-[13px] text-[var(--color-body)] mb-1">
+            <div className="border border-ih-border bg-ih-bg p-4 mb-3">
+              <p className="text-[13px] text-ih-ink-2 mb-1">
                 Pending change to <b className="font-mono">{initial.pendingEmail!.newEmail}</b>.
               </p>
-              <p className="text-[12px] text-[var(--color-muted)] mb-3">
+              <p className="text-[12px] text-ih-muted mb-3">
                 Verification link sent · expires {new Date(initial.pendingEmail!.expiresAt).toLocaleString('en-GB', {
                   day: 'numeric',
                   month: 'short',
@@ -183,7 +183,7 @@ export default function ProfileFormClient({ initial }: Props) {
                 <button
                   type="submit"
                   disabled={cancelPending}
-                  className="font-mono text-[11px] text-[var(--color-muted)] hover:text-[var(--color-danger)] disabled:opacity-50 transition-colors"
+                  className="font-mono text-[11px] text-ih-muted hover:text-ih-danger disabled:opacity-50 transition-colors"
                 >
                   {cancelPending ? 'Cancelling…' : 'Cancel pending change'}
                 </button>
@@ -203,17 +203,17 @@ export default function ProfileFormClient({ initial }: Props) {
               />
 
               {emailState.status === 'error' && !Object.keys(emailErrors).length && (
-                <p className="text-[13px] text-[var(--color-danger)] py-1">
+                <p className="text-[13px] text-ih-danger py-1">
                   {emailState.message}
                 </p>
               )}
               {emailState.status === 'success' && emailState.section === 'email' && emailState.message && (
-                <p className="text-[13px] text-[var(--color-accent)] py-1">
+                <p className="text-[13px] text-ih-accent py-1">
                   {emailState.message}
                 </p>
               )}
               {cancelState.status === 'success' && cancelState.section === 'email' && cancelState.message && (
-                <p className="text-[13px] text-[var(--color-muted)] py-1">
+                <p className="text-[13px] text-ih-muted py-1">
                   {cancelState.message}
                 </p>
               )}
@@ -222,7 +222,7 @@ export default function ProfileFormClient({ initial }: Props) {
                 <button
                   type="submit"
                   disabled={emailPending}
-                  className="h-10 px-5 bg-[var(--color-accent)] text-white text-[13px] font-medium hover:opacity-90 disabled:opacity-50 transition-opacity"
+                  className="h-10 px-5 bg-ih-accent text-white text-[13px] font-medium hover:opacity-90 disabled:opacity-50 transition-opacity"
                 >
                   {emailPending ? 'Sending verification…' : 'Send verification email'}
                 </button>
@@ -234,9 +234,9 @@ export default function ProfileFormClient({ initial }: Props) {
 
       {/* ── Password change ────────────────────────────────── */}
       {initial.hasPassword && (
-        <section className="border border-[var(--color-border)] bg-[var(--color-elevated)] p-6">
+        <section className="border border-ih-border bg-ih-surface p-6">
           <h2 className="text-[16px] font-semibold mb-1">Change password</h2>
-          <p className="text-[12px] text-[var(--color-muted)] mb-5">
+          <p className="text-[12px] text-ih-muted mb-5">
             Choose a strong password — at least 10 characters, ideally a passphrase.
           </p>
 
@@ -267,12 +267,12 @@ export default function ProfileFormClient({ initial }: Props) {
             />
 
             {pwState.status === 'error' && !Object.keys(pwErrors).length && (
-              <p className="text-[13px] text-[var(--color-danger)] py-1">
+              <p className="text-[13px] text-ih-danger py-1">
                 {pwState.message}
               </p>
             )}
             {pwState.status === 'success' && pwState.section === 'password' && (
-              <p className="text-[13px] text-[var(--color-accent)] py-1">
+              <p className="text-[13px] text-ih-accent py-1">
                 Password updated.
               </p>
             )}
@@ -281,7 +281,7 @@ export default function ProfileFormClient({ initial }: Props) {
               <button
                 type="submit"
                 disabled={pwPending}
-                className="h-10 px-5 bg-[var(--color-accent)] text-white text-[13px] font-medium hover:opacity-90 disabled:opacity-50 transition-opacity"
+                className="h-10 px-5 bg-ih-accent text-white text-[13px] font-medium hover:opacity-90 disabled:opacity-50 transition-opacity"
               >
                 {pwPending ? 'Saving…' : 'Update password'}
               </button>
@@ -291,9 +291,9 @@ export default function ProfileFormClient({ initial }: Props) {
       )}
 
       {!initial.hasPassword && initial.ssoProvider && (
-        <section className="border border-dashed border-[var(--color-border)] bg-[var(--color-surface)] p-6">
-          <p className="text-[13px] text-[var(--color-muted)] leading-[1.6]">
-            You sign in via <b className="text-[var(--color-primary)]">{initial.ssoProvider}</b>.
+        <section className="border border-dashed border-ih-border bg-ih-bg p-6">
+          <p className="text-[13px] text-ih-muted leading-[1.6]">
+            You sign in via <b className="text-ih-ink">{initial.ssoProvider}</b>.
             Password changes are managed through your identity provider.
           </p>
         </section>
@@ -329,7 +329,7 @@ function Field({
 }: FieldProps) {
   return (
     <div>
-      <label className="block text-[12px] font-medium text-[var(--color-body)] mb-1.5">
+      <label className="block text-[12px] font-medium text-ih-ink-2 mb-1.5">
         {label}
       </label>
       <input
@@ -339,15 +339,15 @@ function Field({
         placeholder={placeholder}
         required={required}
         autoComplete={autoComplete}
-        className={`w-full h-10 px-3 border bg-[var(--color-surface)] text-[13px] text-[var(--color-primary)] placeholder:text-[var(--color-caption)] focus:outline-none focus:border-[var(--color-accent)] ${
+        className={`w-full h-10 px-3 border bg-ih-bg text-[13px] text-ih-ink placeholder:text-ih-muted-2 focus:outline-none focus:border-ih-accent ${
           mono ? 'font-mono' : ''
-        } ${error ? 'border-[var(--color-danger)]' : 'border-[var(--color-border)]'}`}
+        } ${error ? 'border-ih-danger' : 'border-ih-border'}`}
       />
       {hint && !error && (
-        <p className="font-mono text-[11px] text-[var(--color-muted)] mt-1">{hint}</p>
+        <p className="font-mono text-[11px] text-ih-muted mt-1">{hint}</p>
       )}
       {error && (
-        <p className="text-[12px] text-[var(--color-danger)] mt-1">{error}</p>
+        <p className="text-[12px] text-ih-danger mt-1">{error}</p>
       )}
     </div>
   )

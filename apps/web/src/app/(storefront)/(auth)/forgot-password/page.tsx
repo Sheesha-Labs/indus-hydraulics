@@ -14,7 +14,7 @@ export default async function ForgotPasswordPage() {
         </div>
       </section>
 
-      <aside className="hidden lg:flex flex-col justify-center bg-[var(--color-primary)] px-16 py-16">
+      <aside className="hidden lg:flex flex-col justify-center bg-ih-navy px-16 py-16">
         <SecurityPanel phone={settings.contactPhone} hours={settings.contactHours} />
       </aside>
     </main>
@@ -30,7 +30,7 @@ function SecurityPanel({ phone, hours }: { phone: string | null; hours: string |
         : 'For account lockouts, contact your account manager'
   return (
     <div className="max-w-[440px]">
-      <p className="font-mono text-[11px] tracking-[0.16em] text-[var(--color-accent)] uppercase mb-2">
+      <p className="font-mono text-[11px] tracking-[0.16em] text-ih-accent uppercase mb-2">
         SECURITY MATTERS
       </p>
       <h2 className="text-[28px] font-semibold text-white leading-snug tracking-tight mb-6">
@@ -43,7 +43,7 @@ function SecurityPanel({ phone, hours }: { phone: string | null; hours: string |
           lockoutLine,
         ].map((item) => (
           <li key={item} className="grid grid-cols-[24px_1fr] gap-3">
-            <span className="font-mono text-[var(--color-accent)]">↪</span>
+            <span className="font-mono text-ih-accent">↪</span>
             <span className="text-[oklch(0.78_0_0)]">{item}</span>
           </li>
         ))}
