@@ -1,5 +1,14 @@
 @import "tailwindcss";
 
+/* Tailwind v4 auto-detects sources relative to this file, which finds
+   apps/web and stops there — it does NOT reach into the workspace packages.
+   Any class used only inside packages/ui therefore produced no CSS at all: no
+   error, no warning, just a missing rule. It went unnoticed because 14 of the
+   20 modules in that package had zero import sites, so almost nothing it
+   styled was ever rendered. Registering the source explicitly is what makes
+   the shared primitive layer actually work. */
+@source "../../../../packages/ui/src";
+
 /* ============================================================
    INDUS HYDRAULICS — DESIGN LANGUAGE v2 ("blue direction")
    Quiet paper · 1px rules · editorial serif · mono for data

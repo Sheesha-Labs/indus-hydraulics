@@ -1,128 +1,89 @@
+'use client'
+
 import * as React from 'react'
 import { cn } from './lib/utils'
 
-// ── Root ─────────────────────────────────────────────────────────────────────
+/**
+ * Design language v2 — `.ih-table`.
+ *
+ * Header: mono 10.5px-500, 0.08em, uppercase, muted, 11×16px padding, bottom
+ * hairline. Cells: 14×16px, bottom hairline, middle-aligned, 13px. The last
+ * row drops its border so the table ends on the container edge, not a rule.
+ *
+ * Row hover fills surface-2 with NO transition — 03-interactions-and-states.md
+ * §1 is explicit that instant response reads as more responsive in dense
+ * tables, and this is the one place the 150ms hover rule does not apply.
+ *
+ * `numeric` on a cell switches it to mono with tabular figures. Use it for
+ * every quantity, price, date and duration so columns align.
+ */
 
-const Table = React.forwardRef<HTMLTableElement, React.HTMLAttributes<HTMLTableElement>>(
-  ({ className, ...props }, ref) => (
-    <div className="w-full overflow-auto">
-      <table
-        ref={ref}
-        className={cn('w-full caption-bottom text-sm border-collapse', className)}
-        {...props}
-      />
+export function Table({ className, ...props }: React.TableHTMLAttributes<HTMLTableElement>) {
+  return (
+    <div className="w-full overflow-x-auto">
+      <table className={cn('w-full border-collapse text-[13px]', className)} {...props} />
     </div>
   )
-)
-Table.displayName = 'Table'
+}
 
-// ── Header ────────────────────────────────────────────────────────────────────
+export function TableHeader({ className, ...props }: React.HTMLAttributes<HTMLTableSectionElement>) {
+  return <thead className={className} {...props} />
+}
 
-const TableHeader = React.forwardRef<
-  HTMLTableSectionElement,
-  React.HTMLAttributes<HTMLTableSectionElement>
->(({ className, ...props }, ref) => (
-  <thead
-    ref={ref}
-    className={cn('bg-[var(--color-deep)] border-b border-[var(--color-border)]', className)}
-    {...props}
-  />
-))
-TableHeader.displayName = 'TableHeader'
+export function TableBody({ className, ...props }: React.HTMLAttributes<HTMLTableSectionElement>) {
+  // The last row drops its bottom rule so the table ends on the container
+  // edge rather than a floating hairline.
+  return <tbody className={cn('[&>tr:last-child>td]:border-b-0', className)} {...props} />
+}
 
-// ── Body ──────────────────────────────────────────────────────────────────────
+export function TableFooter({ className, ...props }: React.HTMLAttributes<HTMLTableSectionElement>) {
+  return <tfoot className={cn('border-t border-ih-border', className)} {...props} />
+}
 
-const TableBody = React.forwardRef<
-  HTMLTableSectionElement,
-  React.HTMLAttributes<HTMLTableSectionElement>
->(({ className, ...props }, ref) => (
-  <tbody
-    ref={ref}
-    className={cn('[&_tr:last-child]:border-0', className)}
-    {...props}
-  />
-))
-TableBody.displayName = 'TableBody'
+export function TableRow({ className, ...props }: React.HTMLAttributes<HTMLTableRowElement>) {
+  return <tr className={cn('hover:[&>td]:bg-ih-surface-2', className)} {...props} />
+}
 
-// ── Footer ────────────────────────────────────────────────────────────────────
+export interface TableHeadProps extends React.ThHTMLAttributes<HTMLTableCellElement> {
+  numeric?: boolean
+}
 
-const TableFooter = React.forwardRef<
-  HTMLTableSectionElement,
-  React.HTMLAttributes<HTMLTableSectionElement>
->(({ className, ...props }, ref) => (
-  <tfoot
-    ref={ref}
-    className={cn('border-t border-[var(--color-border)] bg-[var(--color-deep)] font-medium', className)}
-    {...props}
-  />
-))
-TableFooter.displayName = 'TableFooter'
-
-// ── Row ───────────────────────────────────────────────────────────────────────
-
-const TableRow = React.forwardRef<HTMLTableRowElement, React.HTMLAttributes<HTMLTableRowElement>>(
-  ({ className, ...props }, ref) => (
-    <tr
-      ref={ref}
+/**
+ * Always pass a `scope` — the default is `col`, which is right for a normal
+ * header row; row headers must say so explicitly.
+ */
+export function TableHead({ className, numeric, scope = 'col', ...props }: TableHeadProps) {
+  return (
+    <th
+      scope={scope}
       className={cn(
-        'border-b border-[var(--color-border)] transition-colors',
-        'hover:bg-[var(--color-deep)] data-[state=selected]:bg-[var(--color-accent-soft)]',
+        'whitespace-nowrap border-b border-ih-border px-4 py-[11px] text-left align-bottom',
+        'font-mono text-[10.5px] font-medium uppercase tracking-[0.08em] text-ih-muted',
+        numeric && 'text-right',
         className
       )}
       {...props}
     />
   )
-)
-TableRow.displayName = 'TableRow'
+}
 
-// ── Head cell ─────────────────────────────────────────────────────────────────
+export interface TableCellProps extends React.TdHTMLAttributes<HTMLTableCellElement> {
+  numeric?: boolean
+}
 
-const TableHead = React.forwardRef<
-  HTMLTableCellElement,
-  React.ThHTMLAttributes<HTMLTableCellElement>
->(({ className, ...props }, ref) => (
-  <th
-    ref={ref}
-    className={cn(
-      'h-9 px-3 text-left align-middle text-xs font-medium text-[var(--color-muted)] font-mono uppercase tracking-wider',
-      '[&:has([role=checkbox])]:w-10 [&:has([role=checkbox])]:pr-0',
-      className
-    )}
-    {...props}
-  />
-))
-TableHead.displayName = 'TableHead'
+export function TableCell({ className, numeric, ...props }: TableCellProps) {
+  return (
+    <td
+      className={cn(
+        'border-b border-ih-border px-4 py-3.5 align-middle',
+        numeric && 'text-right font-mono tabular-nums',
+        className
+      )}
+      {...props}
+    />
+  )
+}
 
-// ── Data cell ─────────────────────────────────────────────────────────────────
-
-const TableCell = React.forwardRef<
-  HTMLTableCellElement,
-  React.TdHTMLAttributes<HTMLTableCellElement>
->(({ className, ...props }, ref) => (
-  <td
-    ref={ref}
-    className={cn(
-      'px-3 py-2.5 align-middle text-sm text-[var(--color-body)]',
-      '[&:has([role=checkbox])]:w-10 [&:has([role=checkbox])]:pr-0',
-      className
-    )}
-    {...props}
-  />
-))
-TableCell.displayName = 'TableCell'
-
-// ── Caption ───────────────────────────────────────────────────────────────────
-
-const TableCaption = React.forwardRef<
-  HTMLTableCaptionElement,
-  React.HTMLAttributes<HTMLTableCaptionElement>
->(({ className, ...props }, ref) => (
-  <caption
-    ref={ref}
-    className={cn('mt-3 text-xs text-[var(--color-caption)]', className)}
-    {...props}
-  />
-))
-TableCaption.displayName = 'TableCaption'
-
-export { Table, TableHeader, TableBody, TableFooter, TableHead, TableRow, TableCell, TableCaption }
+export function TableCaption({ className, ...props }: React.HTMLAttributes<HTMLTableCaptionElement>) {
+  return <caption className={cn('pb-3 text-left text-[13px] text-ih-muted', className)} {...props} />
+}
