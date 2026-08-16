@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { db, nextAccountCode } from '@indus/db'
 import { auth } from '../../../../../lib/admin-auth'
 import { ROLES, requireRole } from '../../../../../lib/rbac'
+import { Input, Select } from '@indus/ui'
 
 export const metadata: Metadata = { title: 'New Customer — Indus Admin' }
 
@@ -70,86 +71,89 @@ export default async function NewCustomerPage({ params }: Props) {
 
         <div className="grid grid-cols-2 gap-4">
           <div className="col-span-2">
-            <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+            <label htmlFor="newcustomer-legalName" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
               Legal Name <span className="text-ih-accent">*</span>
             </label>
-            <input
+            <Input
+              id="newcustomer-legalName"
               name="legalName"
               required
               type="text"
-              placeholder="e.g. PT Maju Bersama Tbk"
-              className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] text-ih-ink placeholder:text-ih-muted-2 focus:outline-none focus:border-ih-accent"
-            />
+              placeholder="e.g. PT Maju Bersama Tbk" />
           </div>
 
           <div className="col-span-2">
-            <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+            <label htmlFor="newcustomer-displayName" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
               Display Name
             </label>
-            <input
+            <Input
+              id="newcustomer-displayName"
               name="displayName"
               type="text"
-              placeholder="Short name shown in UI (defaults to legal name)"
-              className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] text-ih-ink placeholder:text-ih-muted-2 focus:outline-none focus:border-ih-accent"
-            />
+              placeholder="Short name shown in UI (defaults to legal name)" />
           </div>
 
           <div>
-            <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">Region</label>
-            <input
+            <label htmlFor="newcustomer-region" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">Region</label>
+            <Input
+              id="newcustomer-region"
               name="region"
               type="text"
-              placeholder="e.g. South East Asia"
-              className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] text-ih-ink placeholder:text-ih-muted-2 focus:outline-none focus:border-ih-accent"
-            />
+              placeholder="e.g. South East Asia" />
           </div>
 
           <div>
-            <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">Industry</label>
-            <select name="industryId" className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent">
+            <label htmlFor="newcustomer-industryId" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">Industry</label>
+            <Select
+              id="newcustomer-industryId" name="industryId">
               <option value="">— Select —</option>
               {industries.map((ind) => (
                 <option key={ind.id} value={ind.id}>{ind.name}</option>
               ))}
-            </select>
+            </Select>
           </div>
 
           <div>
-            <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">Tier</label>
-            <select name="tier" defaultValue="bronze" className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent">
+            <label htmlFor="newcustomer-tier" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">Tier</label>
+            <Select
+              id="newcustomer-tier" name="tier" defaultValue="bronze">
               {['bronze', 'silver', 'gold', 'platinum'].map((t) => (
                 <option key={t} value={t} className="capitalize">{t}</option>
               ))}
-            </select>
+            </Select>
           </div>
 
           <div>
-            <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">Status</label>
-            <select name="status" defaultValue="prospect" className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent">
+            <label htmlFor="newcustomer-status" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">Status</label>
+            <Select
+              id="newcustomer-status" name="status" defaultValue="prospect">
               {['prospect', 'active', 'at_risk', 'archived'].map((s) => (
                 <option key={s} value={s}>{s.replace('_', ' ')}</option>
               ))}
-            </select>
+            </Select>
           </div>
 
           <div>
-            <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">Assigned Rep</label>
-            <select name="assignedRepId" className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent">
+            <label htmlFor="newcustomer-assignedRepId" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">Assigned Rep</label>
+            <Select
+              id="newcustomer-assignedRepId" name="assignedRepId">
               <option value="">— Unassigned —</option>
               {reps.map((r) => (
                 <option key={r.id} value={r.id}>{r.name}</option>
               ))}
-            </select>
+            </Select>
           </div>
 
           <div>
-            <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">Payment Terms (days)</label>
-            <input name="paymentTermsDays" type="number" defaultValue={30} min={0} className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] font-mono focus:outline-none focus:border-ih-accent" />
+            <label htmlFor="newcustomer-paymentTermsDays" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">Payment Terms (days)</label>
+            <Input
+              id="newcustomer-paymentTermsDays" name="paymentTermsDays" type="number" defaultValue={30} min={0} className="font-mono" />
           </div>
 
           <div>
-            <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">Credit Limit (USD)</label>
-            <input name="creditLimit" type="number" defaultValue={0} min={0} step={1000} className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] font-mono focus:outline-none focus:border-ih-accent" />
+            <label htmlFor="newcustomer-creditLimit" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">Credit Limit (USD)</label>
+            <Input
+              id="newcustomer-creditLimit" name="creditLimit" type="number" defaultValue={0} min={0} step={1000} className="font-mono" />
           </div>
         </div>
 

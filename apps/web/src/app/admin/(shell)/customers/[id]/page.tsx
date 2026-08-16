@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import { db, Prisma } from '@indus/db'
 import { updateAccountMeta, addActivityNote, deactivateContact, reactivateContact, approveAddress } from './actions'
+import { Input, Select, Textarea } from '@indus/ui'
 
 export const metadata: Metadata = { title: 'Customer — Indus Admin' }
 
@@ -173,37 +174,42 @@ export default async function AdminCustomerDetailPage({ params, searchParams }: 
             <input type="hidden" name="id" value={account.id} />
             <div className="grid grid-cols-2 gap-4 mb-4">
               <div>
-                <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">Tier</label>
-                <select name="tier" defaultValue={account.tier} className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent">
+                <label htmlFor="customer-tier" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">Tier</label>
+                <Select
+                  id="customer-tier" name="tier" defaultValue={account.tier}>
                   {['bronze', 'silver', 'gold', 'platinum'].map((t) => (
                     <option key={t} value={t} className="capitalize">{t}</option>
                   ))}
-                </select>
+                </Select>
               </div>
               <div>
-                <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">Status</label>
-                <select name="status" defaultValue={account.status} className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent">
+                <label htmlFor="customer-status" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">Status</label>
+                <Select
+                  id="customer-status" name="status" defaultValue={account.status}>
                   {['prospect', 'active', 'at_risk', 'archived'].map((s) => (
                     <option key={s} value={s}>{s.replace('_', ' ')}</option>
                   ))}
-                </select>
+                </Select>
               </div>
               <div>
-                <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">Assigned Rep</label>
-                <select name="assignedRepId" defaultValue={account.assignedRepId ?? ''} className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent">
+                <label htmlFor="customer-assignedRepId" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">Assigned Rep</label>
+                <Select
+                  id="customer-assignedRepId" name="assignedRepId" defaultValue={account.assignedRepId ?? ''}>
                   <option value="">— Unassigned —</option>
                   {reps.map((r) => (
                     <option key={r.id} value={r.id}>{r.name}</option>
                   ))}
-                </select>
+                </Select>
               </div>
               <div>
-                <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">Payment Terms (days)</label>
-                <input type="number" name="paymentTermsDays" defaultValue={account.paymentTermsDays} min={0} className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] font-mono focus:outline-none focus:border-ih-accent" />
+                <label htmlFor="customer-paymentTermsDays" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">Payment Terms (days)</label>
+                <Input
+                  id="customer-paymentTermsDays" type="number" name="paymentTermsDays" defaultValue={account.paymentTermsDays} min={0} className="font-mono" />
               </div>
               <div>
-                <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">Credit Limit (USD)</label>
-                <input type="number" name="creditLimit" defaultValue={Number(account.creditLimit)} min={0} step={1000} className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] font-mono focus:outline-none focus:border-ih-accent" />
+                <label htmlFor="customer-creditLimit" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">Credit Limit (USD)</label>
+                <Input
+                  id="customer-creditLimit" type="number" name="creditLimit" defaultValue={Number(account.creditLimit)} min={0} step={1000} className="font-mono" />
               </div>
             </div>
             <button type="submit" className="h-10 px-6 bg-ih-navy text-white font-mono text-[12px] hover:bg-[var(--color-ih-ink-2)] transition-colors">
@@ -538,12 +544,11 @@ export default async function AdminCustomerDetailPage({ params, searchParams }: 
             className="mb-6"
           >
             <input type="hidden" name="accountId" value={account.id} />
-            <textarea
+            <Textarea
+              id="customer-body"
               name="body"
               rows={3}
-              placeholder="Add a note visible to all staff…"
-              className="w-full px-3 py-2.5 border border-ih-border bg-ih-surface text-[13px] text-ih-ink placeholder:text-ih-muted-2 focus:outline-none focus:border-ih-accent resize-none mb-2"
-            />
+              placeholder="Add a note visible to all staff…" className="resize-none mb-2" />
             <button type="submit" className="h-9 px-5 bg-ih-navy text-white font-mono text-[12px] hover:bg-[var(--color-ih-ink-2)] transition-colors">
               Add Note
             </button>

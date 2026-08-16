@@ -3,6 +3,7 @@
 import { useState, useTransition } from 'react'
 import type { Redirect } from '@indus/db'
 import { addRedirect, deleteRedirect } from '../actions'
+import { Input, Select } from '@indus/ui'
 
 interface Props {
   redirects: Redirect[]
@@ -70,42 +71,39 @@ export default function RedirectsManager({ redirects: initialRedirects }: Props)
         </p>
         <div className="flex gap-3 items-end">
           <div className="flex-1">
-            <label className="block font-mono text-[10px] uppercase text-ih-muted mb-1">
+            <label htmlFor="redirect-fromPath" className="block font-mono text-[10px] uppercase text-ih-muted mb-1">
               From path
             </label>
-            <input
+            <Input
+              id="redirect-fromPath"
               name="fromPath"
               type="text"
               required
-              placeholder="/old-page"
-              className="w-full h-9 px-3 border border-ih-border bg-ih-bg text-[13px] focus:outline-none focus:border-ih-accent"
-            />
+              placeholder="/old-page" />
           </div>
           <div className="flex-1">
-            <label className="block font-mono text-[10px] uppercase text-ih-muted mb-1">
+            <label htmlFor="redirect-toPath" className="block font-mono text-[10px] uppercase text-ih-muted mb-1">
               To path
             </label>
-            <input
+            <Input
+              id="redirect-toPath"
               name="toPath"
               type="text"
               required
-              placeholder="/new-page"
-              className="w-full h-9 px-3 border border-ih-border bg-ih-bg text-[13px] focus:outline-none focus:border-ih-accent"
-            />
+              placeholder="/new-page" />
           </div>
           <div className="w-24">
-            <label className="block font-mono text-[10px] uppercase text-ih-muted mb-1">
+            <label htmlFor="redirect-statusCode" className="block font-mono text-[10px] uppercase text-ih-muted mb-1">
               Code
             </label>
-            <select
-              name="statusCode"
-              className="w-full h-9 px-2 border border-ih-border bg-ih-bg text-[13px] focus:outline-none"
-            >
+            <Select
+              id="redirect-statusCode"
+              name="statusCode">
               <option value="301">301</option>
               <option value="302">302</option>
               <option value="307">307</option>
               <option value="308">308</option>
-            </select>
+            </Select>
           </div>
           <button
             type="submit"

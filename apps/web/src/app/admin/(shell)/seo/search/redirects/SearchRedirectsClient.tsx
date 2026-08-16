@@ -6,6 +6,7 @@ import {
   deleteSearchRedirect,
   toggleSearchRedirect,
 } from './actions'
+import { Input } from '@indus/ui'
 
 type Row = { id: string; query: string; targetUrl: string; isActive: boolean }
 
@@ -87,28 +88,26 @@ export default function SearchRedirectsClient({ rows: initialRows }: Props) {
         </summary>
         <form action={handleAdd} className="mt-3 grid grid-cols-[200px_1fr_auto] gap-3 items-end">
           <div>
-            <label className="block font-mono text-[10px] uppercase text-ih-muted mb-1">
+            <label htmlFor="searchredirect-query" className="block font-mono text-[10px] uppercase text-ih-muted mb-1">
               Query (normalised)
             </label>
-            <input
+            <Input
+              id="searchredirect-query"
               name="query"
               type="text"
               required
-              placeholder="hose fitting"
-              className="w-full h-9 px-3 border border-ih-border bg-ih-bg text-[13px] focus:outline-none focus:border-ih-accent"
-            />
+              placeholder="hose fitting" />
           </div>
           <div>
-            <label className="block font-mono text-[10px] uppercase text-ih-muted mb-1">
+            <label htmlFor="searchredirect-targetUrl" className="block font-mono text-[10px] uppercase text-ih-muted mb-1">
               Target URL
             </label>
-            <input
+            <Input
+              id="searchredirect-targetUrl"
               name="targetUrl"
               type="text"
               required
-              placeholder="/c/hose-fittings"
-              className="w-full h-9 px-3 border border-ih-border bg-ih-bg text-[13px] focus:outline-none focus:border-ih-accent"
-            />
+              placeholder="/c/hose-fittings" />
           </div>
           <button
             type="submit"

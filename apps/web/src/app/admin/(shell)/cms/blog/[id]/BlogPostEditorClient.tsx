@@ -8,6 +8,7 @@ import SeoEntityDrawer, {
 } from '../../../../../../components/admin/seo/SeoEntityDrawer'
 import type { RecentMedia } from '../../../../../../components/admin/seo/OgImagePicker'
 import { savePost, updateBlogPostSeo, uploadBlogPostOgImage } from './actions'
+import { Input, Textarea } from '@indus/ui'
 
 type BlogPost = {
   id: string
@@ -161,72 +162,67 @@ function ContentForm({ isNew, post }: { isNew: boolean; post: BlogPost | null })
 
       <div className="grid grid-cols-2 gap-4">
         <div className="col-span-2">
-          <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+          <label htmlFor="blogpost-title" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
             Title *
           </label>
-          <input
+          <Input
+            id="blogpost-title"
             name="title"
             required
             defaultValue={post?.title ?? ''}
             type="text"
-            placeholder="Post title"
-            className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[15px] font-semibold text-ih-ink placeholder:text-ih-muted-2 focus:outline-none focus:border-ih-accent"
-          />
+            placeholder="Post title" className="text-[15px] font-semibold" />
         </div>
 
         <div>
-          <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+          <label htmlFor="blogpost-slug" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
             Slug *
           </label>
-          <input
+          <Input
+            id="blogpost-slug"
             name="slug"
             required
             defaultValue={post?.slug ?? ''}
             type="text"
-            placeholder="url-friendly-slug"
-            className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] font-mono text-ih-ink placeholder:text-ih-muted-2 focus:outline-none focus:border-ih-accent"
-          />
+            placeholder="url-friendly-slug" className="font-mono" />
         </div>
 
         <div>
-          <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+          <label htmlFor="blogpost-tags" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
             Tags (comma-separated)
           </label>
-          <input
+          <Input
+            id="blogpost-tags"
             name="tags"
             defaultValue={post ? post.tags.join(', ') : ''}
             type="text"
-            placeholder="hydraulics, maintenance, pumps"
-            className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] text-ih-ink placeholder:text-ih-muted-2 focus:outline-none focus:border-ih-accent"
-          />
+            placeholder="hydraulics, maintenance, pumps" />
         </div>
       </div>
 
       <div>
-        <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+        <label htmlFor="blogpost-excerpt" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
           Excerpt
         </label>
-        <textarea
+        <Textarea
+          id="blogpost-excerpt"
           name="excerpt"
           defaultValue={post?.excerpt ?? ''}
           rows={2}
-          placeholder="Short summary shown in blog listings"
-          className="w-full px-3 py-2.5 border border-ih-border bg-ih-surface text-[13px] text-ih-ink placeholder:text-ih-muted-2 focus:outline-none focus:border-ih-accent resize-none"
-        />
+          placeholder="Short summary shown in blog listings" className="resize-none" />
       </div>
 
       <div>
-        <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+        <label htmlFor="blogpost-body" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
           Body *
         </label>
-        <textarea
+        <Textarea
+          id="blogpost-body"
           name="body"
           required
           defaultValue={post?.body ?? ''}
           rows={18}
-          placeholder="Post content (HTML or Markdown)"
-          className="w-full px-3 py-2.5 border border-ih-border bg-ih-surface text-[13px] font-mono text-ih-ink placeholder:text-ih-muted-2 focus:outline-none focus:border-ih-accent resize-none"
-        />
+          placeholder="Post content (HTML or Markdown)" className="font-mono resize-none" />
       </div>
 
       {/* Lightweight SEO fallbacks shown only in the Content tab so authors can
@@ -243,22 +239,20 @@ function ContentForm({ isNew, post }: { isNew: boolean; post: BlogPost | null })
         </p>
         <div className="grid grid-cols-2 gap-4">
           <div>
-            <label className="block font-mono text-[11px] text-ih-muted mb-1">Meta Title</label>
-            <input
+            <label htmlFor="blogpost-seoTitle" className="block font-mono text-[11px] text-ih-muted mb-1">Meta Title</label>
+            <Input
+              id="blogpost-seoTitle"
               name="seoTitle"
               defaultValue={post?.seoTitle ?? ''}
-              type="text"
-              className="w-full h-9 px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent"
-            />
+              type="text" />
           </div>
           <div>
-            <label className="block font-mono text-[11px] text-ih-muted mb-1">Meta Description</label>
-            <input
+            <label htmlFor="blogpost-seoDescription" className="block font-mono text-[11px] text-ih-muted mb-1">Meta Description</label>
+            <Input
+              id="blogpost-seoDescription"
               name="seoDescription"
               defaultValue={post?.seoDescription ?? ''}
-              type="text"
-              className="w-full h-9 px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent"
-            />
+              type="text" />
           </div>
         </div>
       </div>

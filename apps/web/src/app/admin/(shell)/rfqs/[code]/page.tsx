@@ -7,6 +7,7 @@ import { updateRfqStatus, saveLineReview } from './actions'
 import SendQuoteComposer from '../../../../../components/admin/SendQuoteComposer'
 import { formatAed, formatDayMonthYear } from '../../../../../lib/format'
 import { signedUrlFor } from '../../../../../lib/supabase'
+import { Input, Select, Textarea } from '@indus/ui'
 
 export const metadata: Metadata = { title: 'RFQ Detail — Indus Admin' }
 
@@ -296,16 +297,15 @@ export default async function AdminRfqDetailPage({ params }: Props) {
 
             {/* Internal notes */}
             <div className="mb-4">
-              <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+              <label htmlFor="rfqdetail-internalNotes" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
                 Internal Notes
               </label>
-              <textarea
+              <Textarea
+                id="rfqdetail-internalNotes"
                 name="internalNotes"
                 defaultValue={rfq.internalNotes ?? ''}
                 rows={4}
-                placeholder="Notes visible to staff only — not shown to customer"
-                className="w-full px-3 py-2.5 border border-ih-border bg-ih-surface font-mono text-[13px] text-ih-ink placeholder:text-ih-muted-2 focus:outline-none focus:border-ih-accent resize-none"
-              />
+                placeholder="Notes visible to staff only — not shown to customer" className="font-mono resize-none" />
             </div>
 
             <button
@@ -344,20 +344,19 @@ export default async function AdminRfqDetailPage({ params }: Props) {
               const eId = fd.get('engineerId') as string
               if (eId) await assignEngineer(rfq.id, eId)
             }}>
-              <label className="block font-mono text-[11px] text-ih-muted mb-1">Engineer</label>
+              <label htmlFor="rfqdetail-engineerId" className="block font-mono text-[11px] text-ih-muted mb-1">Engineer</label>
               <div className="flex gap-2">
-                <select
+                <Select
+                  id="rfqdetail-engineerId"
                   name="engineerId"
-                  defaultValue={rfq.assignedEngineerId ?? ''}
-                  className="flex-1 h-8 px-2 border border-ih-border bg-ih-surface text-[13px] text-ih-ink focus:outline-none"
-                >
+                  defaultValue={rfq.assignedEngineerId ?? ''} className="flex-1 h-8">
                   <option value="">— Unassigned —</option>
                   {engineers.map((eng) => (
                     <option key={eng.id} value={eng.id}>
                       {eng.name}
                     </option>
                   ))}
-                </select>
+                </Select>
                 <button type="submit" className="h-8 px-3 border border-ih-border font-mono text-[11px] text-ih-ink-2 hover:bg-ih-surface-2 transition-colors">
                   Save
                 </button>
@@ -422,24 +421,22 @@ export default async function AdminRfqDetailPage({ params }: Props) {
               if (!r.success) throw new Error(r.message)
             }}>
               <input type="hidden" name="rfqId" value={rfq.id} />
-              <label className="block font-mono text-[11px] text-ih-muted mb-1">Carrier</label>
-              <input
+              <label htmlFor="rfqdetail-trackingCarrier" className="block font-mono text-[11px] text-ih-muted mb-1">Carrier</label>
+              <Input
+                id="rfqdetail-trackingCarrier"
                 type="text"
                 name="trackingCarrier"
                 defaultValue={rfq.trackingCarrier ?? ''}
                 placeholder="e.g. Aramex, DHL"
-                maxLength={120}
-                className="w-full h-8 px-2 mb-2 border border-ih-border bg-ih-surface text-[13px] text-ih-ink placeholder:text-ih-muted-2 focus:outline-none focus:border-ih-accent"
-              />
-              <label className="block font-mono text-[11px] text-ih-muted mb-1">Tracking number</label>
-              <input
+                maxLength={120} className="h-8 mb-2" />
+              <label htmlFor="rfqdetail-trackingNumber" className="block font-mono text-[11px] text-ih-muted mb-1">Tracking number</label>
+              <Input
+                id="rfqdetail-trackingNumber"
                 type="text"
                 name="trackingNumber"
                 defaultValue={rfq.trackingNumber ?? ''}
                 placeholder="AWB / consignment #"
-                maxLength={120}
-                className="w-full h-8 px-2 mb-2 border border-ih-border bg-ih-surface font-mono text-[13px] text-ih-ink placeholder:text-ih-muted-2 focus:outline-none focus:border-ih-accent"
-              />
+                maxLength={120} className="h-8 mb-2 font-mono" />
               <button type="submit" className="h-8 px-3 border border-ih-border font-mono text-[11px] text-ih-ink-2 hover:bg-ih-surface-2 transition-colors">
                 Save
               </button>

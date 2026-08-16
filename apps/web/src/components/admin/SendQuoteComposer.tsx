@@ -2,6 +2,7 @@
 
 import { useRef, useState, useTransition } from 'react'
 import { sendQuote } from '../../app/admin/(shell)/rfqs/[code]/actions'
+import { Input, Textarea } from '@indus/ui'
 
 type Props = {
   rfqId: string
@@ -162,36 +163,35 @@ export default function SendQuoteComposer(props: Props) {
 
       <div className="grid grid-cols-2 gap-4">
         <div>
-          <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+          <label htmlFor="sendquote-subjectOverride" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
             Subject (optional)
           </label>
-          <input
+          <Input
+            id="sendquote-subjectOverride"
             type="text"
             name="subjectOverride"
             defaultValue={props.rfqSubject ?? ''}
-            placeholder="OFFER FOR …"
-            className="w-full h-9 px-3 border border-ih-border bg-ih-bg text-[13px] focus:outline-none focus:border-ih-accent"
-          />
+            placeholder="OFFER FOR …" />
         </div>
         <div>
-          <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+          <label htmlFor="sendquote-referenceLine" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
             Reference# (optional)
           </label>
-          <input
+          <Input
+            id="sendquote-referenceLine"
             type="text"
             name="referenceLine"
-            placeholder="e.g. REVISED OFFER FOR PROJECT X"
-            className="w-full h-9 px-3 border border-ih-border bg-ih-bg text-[13px] focus:outline-none focus:border-ih-accent"
-          />
+            placeholder="e.g. REVISED OFFER FOR PROJECT X" />
         </div>
       </div>
 
       <div className="grid grid-cols-3 gap-4">
         <div>
-          <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+          <label htmlFor="sendquote-discountTotal" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
             Discount (AED)
           </label>
-          <input
+          <Input
+            id="sendquote-discountTotal"
             type="number"
             name="discountTotal"
             value={discount}
@@ -202,10 +202,11 @@ export default function SendQuoteComposer(props: Props) {
           />
         </div>
         <div>
-          <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+          <label htmlFor="sendquote-shipping" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
             Shipping (AED)
           </label>
-          <input
+          <Input
+            id="sendquote-shipping"
             type="number"
             name="shipping"
             value={shipping}
@@ -216,10 +217,11 @@ export default function SendQuoteComposer(props: Props) {
           />
         </div>
         <div>
-          <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+          <label htmlFor="sendquote-vatRatePctOverride" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
             VAT (%) — auto from ship-to
           </label>
-          <input
+          <Input
+            id="sendquote-vatRatePctOverride"
             type="number"
             name="vatRatePctOverride"
             value={vatPct}
@@ -234,54 +236,50 @@ export default function SendQuoteComposer(props: Props) {
 
       <div className="grid grid-cols-2 gap-4">
         <div>
-          <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+          <label htmlFor="sendquote-validityDays" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
             Validity (days)
           </label>
-          <input
+          <Input
+            id="sendquote-validityDays"
             type="number"
             name="validityDays"
             defaultValue={props.defaultValidityDays}
             min="1"
-            max="365"
-            className="w-full h-9 px-3 border border-ih-border bg-ih-bg text-[13px] focus:outline-none focus:border-ih-accent"
-          />
+            max="365" />
         </div>
         <div>
-          <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+          <label htmlFor="sendquote-paymentTerms" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
             Payment terms
           </label>
-          <input
+          <Input
+            id="sendquote-paymentTerms"
             type="text"
             name="paymentTerms"
-            defaultValue={props.defaultPaymentTerms}
-            className="w-full h-9 px-3 border border-ih-border bg-ih-bg text-[13px] focus:outline-none focus:border-ih-accent"
-          />
+            defaultValue={props.defaultPaymentTerms} />
         </div>
       </div>
 
       <div>
-        <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+        <label htmlFor="sendquote-notesOverride" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
           Notes on the quote PDF (optional)
         </label>
-        <textarea
+        <Textarea
+          id="sendquote-notesOverride"
           name="notesOverride"
           rows={3}
           defaultValue={props.defaultNotes}
-          placeholder="Application-specific notes that should appear on this quote."
-          className="w-full px-3 py-2 border border-ih-border bg-ih-bg text-[13px] focus:outline-none focus:border-ih-accent resize-none"
-        />
+          placeholder="Application-specific notes that should appear on this quote." className="resize-none" />
       </div>
 
       <div>
-        <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+        <label htmlFor="sendquote-customerEmailMessage" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
           Personal note in the email (optional)
         </label>
-        <textarea
+        <Textarea
+          id="sendquote-customerEmailMessage"
           name="customerEmailMessage"
           rows={3}
-          placeholder="A custom intro for the customer. Replaces the default email body if set."
-          className="w-full px-3 py-2 border border-ih-border bg-ih-bg text-[13px] focus:outline-none focus:border-ih-accent resize-none"
-        />
+          placeholder="A custom intro for the customer. Replaces the default email body if set." className="resize-none" />
       </div>
 
       {/* Live total preview */}

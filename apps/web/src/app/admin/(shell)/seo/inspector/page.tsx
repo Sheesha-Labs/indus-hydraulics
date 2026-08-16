@@ -7,7 +7,7 @@ import {
   DESCRIPTION_RANGE,
   type SeoEntityType,
 } from '@indus/domain'
-import { SeoHealthBadge } from '@indus/ui'
+import { Input, Select, SeoHealthBadge } from '@indus/ui'
 
 export const metadata: Metadata = { title: 'SEO Inspector — Indus Admin' }
 
@@ -99,16 +99,15 @@ export default async function SeoInspectorPage({
       {/* Filters */}
       <form className="flex gap-3 items-end mb-4 flex-wrap" method="get">
         <div className="flex-1 min-w-[240px]">
-          <label className="block font-mono text-[10px] uppercase text-ih-muted mb-1">
+          <label htmlFor="inspector-q" className="block font-mono text-[10px] uppercase text-ih-muted mb-1">
             Search
           </label>
-          <input
+          <Input
+            id="inspector-q"
             type="text"
             name="q"
             defaultValue={sp.q ?? ''}
-            placeholder="Title, slug, description…"
-            className="w-full h-9 px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent"
-          />
+            placeholder="Title, slug, description…" />
         </div>
         <SelectFilter name="type" label="Type" value={sp.type ?? ''}>
           <option value="">All types</option>
@@ -560,18 +559,17 @@ function SelectFilter({
   value: string
   children: React.ReactNode
 }) {
+  // Server component — no hooks. The three call sites pass distinct names
+  // ("type", "status", "sort") and each renders once, so the id is unique.
+  const id = `seo-filter-${name}`
   return (
     <div className="min-w-[150px]">
-      <label className="block font-mono text-[10px] uppercase text-ih-muted mb-1">
+      <label htmlFor={id} className="block font-mono text-[10px] uppercase text-ih-muted mb-1">
         {label}
       </label>
-      <select
-        name={name}
-        defaultValue={value}
-        className="w-full h-9 px-2 border border-ih-border bg-ih-surface text-[13px]"
-      >
+      <Select id={id} name={name} defaultValue={value} className="h-9">
         {children}
-      </select>
+      </Select>
     </div>
   )
 }
