@@ -3,18 +3,7 @@
 import { db } from '@indus/db'
 import { headers } from 'next/headers'
 import { issueStaffLink, normaliseEmail } from '../../../lib/staff-invitations'
-
-export type ForgotState = { done: true } | { error: string } | null
-
-/**
- * One response for every outcome.
- *
- * "Sent", "no such staff account" and "account suspended" are indistinguishable
- * to the caller. Anything else turns this form into an oracle for which
- * addresses have admin access — a useful shopping list for whoever wants to
- * phish one.
- */
-const NEUTRAL = 'If that address belongs to a staff account, a reset link is on its way.'
+import type { ForgotState } from './copy'
 
 /** Absolute origin of the live request, so links work on previews and any custom domain. */
 async function requestOrigin(): Promise<string> {
@@ -61,5 +50,3 @@ export async function requestStaffPasswordReset(
 
   return { done: true }
 }
-
-export { NEUTRAL }
