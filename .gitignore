@@ -48,3 +48,7 @@ playwright-report
 
 # Generated catalogue-enrichment artifacts (CLI output, not source)
 data/
+# ...except the frozen image->product mapping, which IS source: it is the
+# input to import-product-feature-images.ts, not an output of it.
+!packages/db/data/
+!packages/db/data/product-feature-images.csv

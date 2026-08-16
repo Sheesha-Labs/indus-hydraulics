@@ -21,6 +21,7 @@
     "zod": "^4.4.1"
   },
   "devDependencies": {
+    "@supabase/supabase-js": "^2.105.1",
     "prisma": "^6.19.3",
     "tsx": "^4.21.0",
     "typescript": "^5.8.3",

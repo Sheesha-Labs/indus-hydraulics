@@ -211,6 +211,9 @@ importers:
         specifier: ^4.4.1
         version: 4.4.1
     devDependencies:
+      '@supabase/supabase-js':
+        specifier: ^2.105.1
+        version: 2.105.1
       prisma:
         specifier: ^6.19.3
         version: 6.19.3(typescript@5.9.3)
