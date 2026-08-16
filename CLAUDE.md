@@ -10,8 +10,8 @@ This file is the authoritative engineering guide for this codebase. Claude Code 
 |---|---|
 | Framework | Next.js 16 (App Router) |
 | Language | TypeScript 5 (strict mode) |
-| Styling | Tailwind CSS v4 |
-| Components | shadcn/ui (Radix UI primitives) |
+| Styling | Tailwind CSS v4 (`@theme` custom properties) |
+| Components | Hand-rolled primitives in `packages/ui` (cva + clsx + tailwind-merge). **Not shadcn/ui** — there is no `components.json` and no `components/ui` directory. Three Radix packages are imported (`react-tabs`, `react-label`, `react-slot`); everything else is ours. |
 | Database | PostgreSQL |
 | ORM | Prisma |
 | Auth | NextAuth v5 (Auth.js) |
@@ -52,24 +52,64 @@ This file is the authoritative engineering guide for this codebase. Claude Code 
 
 ## 2. Styling
 
+> **Design language v2 is landing.** The authoritative visual contract is
+> `design_handoff_indus_hydraulics_v2/design-source/tokens.css` and
+> `design_handoff_indus_hydraulics_v2/01-design-language.md`. The rules below describe the
+> convention that is actually in force; where v2 changes one, it says so. The previous version of
+> this section mandated an orange accent, a 0–2px radius ceiling, a bare-utility token vocabulary
+> that was never implemented, and a dark theme that has never been reachable. All four were wrong.
+
 ### Rules
 
-1. **Tailwind utilities only.** No inline `style=` props. No CSS modules (except for keyframe animations that can't be expressed as utilities). No styled-components.
+1. **Tailwind utilities only.** No CSS modules (except keyframes that can't be expressed as
+   utilities). No styled-components.
 
-2. **Design tokens only.** Never use raw hex colors or pixel values. All values come from the design token system:
+   Inline `style=` is banned in `apps/web` and `packages/ui` — 98 legacy occurrences remain and
+   should be removed on sight. Two exemptions, both because `style` *is* the rendering API:
+   `packages/pdf` (`@react-pdf/renderer`) and `packages/email` (mail clients strip `<style>`).
+   Do not "clean up" either — it breaks the renderer.
+
+2. **Colour comes from the token layer, never from a literal.** Tokens are declared in the
+   `@theme` block of `apps/web/src/app/globals.css` and consumed through arbitrary-value syntax:
+
+   ```tsx
+   className="text-[var(--color-muted)] border-[var(--color-border)]"
    ```
-   bg-surface, bg-elevated, bg-deep
-   text-primary, text-body, text-muted, text-caption
-   border-default
-   accent, accent-soft
-   status-good, status-warn, status-danger, status-info
-   ```
 
-3. **Border radius.** This is an industrial brand. Use `rounded-none` or `rounded-sm` (2px) only. Never `rounded-lg`, `rounded-full`, etc.
+   This is the real convention — there are ~4,600 call sites in this shape and zero uses of bare
+   utilities like `bg-accent`. **The bare-utility names the old rule listed (`border-default`,
+   `status-good`, `status-warn`, `status-danger`, `status-info`) were never implemented and never
+   compiled.** Writing them produces no CSS, silently. Use a token name that is actually defined
+   in `globals.css`; if you need a value that does not exist there, that is a design question —
+   raise it rather than picking a neighbouring shade.
 
-4. **No magic numbers.** Use Tailwind spacing scale (`p-4`, `gap-6`) not arbitrary values (`p-[17px]`).
+   Note the failure mode: because the theme uses `@theme` (not `@theme inline`), every consumer
+   dereferences its token at paint time. A wrong or undefined token name produces no compile
+   error, no lint failure and no test failure — only a wrong colour. Nothing catches it but eyes.
 
-5. **Dark mode.** The design includes a dark theme (`[data-theme='dark']`). Tailwind `dark:` variants are wired to a `data-theme` attribute on `<html>`, not `prefers-color-scheme`. The theme toggle sets this attribute.
+3. **Border radius — v2 ladder.** `--radius-sm` 4px · `--radius` 6px · `--radius-lg` 10px ·
+   `--radius-xl` 16px, plus `rounded-full` (999px) for badges, chips and avatars, and a literal
+   3px on checkboxes and square badge tags. Cards are 10px; buttons, inputs and notes are 6px;
+   small buttons and inset chips are 4px; 16px is reserved for the largest containers.
+   *(Superseded: "0–2px only, never `rounded-lg` or `rounded-full`". That was the v1 flat
+   industrial aesthetic and the client has rejected it.)*
+
+4. **Pixel values are permitted where the design contract specifies pixels.** v2 is specified in
+   raw px throughout — 14px root, 10.5px eyebrows, 40px control height, 48px page gutter, 236px
+   admin sidebar — and those values are the contract. Use them literally. Use the Tailwind spacing
+   scale for everything the contract does not pin. Do not invent a third scale.
+
+5. **No dark theme.** v2 is a single light palette and defines no dark values. The
+   `[data-theme='dark']` block that used to sit in `globals.css` was unreachable — nothing ever
+   set the attribute and no `dark:` variant existed anywhere in the tree — and has been removed.
+   Do not reintroduce one without a design package that specifies it.
+
+6. **Three type families, no exceptions.** Geist (sans), Instrument Serif (display), JetBrains
+   Mono (data and labels). Mono is for machine-readable content only — part numbers, SKUs,
+   quantities, dates, pressures, statuses, table headers, eyebrows. Prose is never mono. A number
+   inside a sentence is not mono; the same number in a stat tile is.
+
+7. **One primary action per view.** If a screen appears to need two, one of them is secondary.
 
 ---
 
@@ -243,9 +283,22 @@ chore/prisma-schema-update
 
 1. All interactive elements have ARIA labels or visible text labels
 2. Color alone never conveys state (always pair color with text or icon)
-3. Focus rings are visible — never `outline: none` without a replacement
+3. Focus rings are visible — never `outline: none` without a replacement. v2 focus-visible is
+   `box-shadow: 0 0 0 3px var(--color-accent-soft)` plus `border-color: var(--color-accent)`.
 4. Keyboard navigation works for all flows
-5. Radix UI primitives (via shadcn) handle most of this — don't bypass them
+5. **Nothing handles this for us.** Dialogs, dropdowns, selects, checkboxes and tooltips are all
+   hand-rolled here — only three Radix primitives are imported, and none of them covers an
+   overlay. Any new overlay owns its own focus trap, `role`/`aria-modal`, Escape handling and
+   focus restoration. *(Superseded: "Radix primitives via shadcn handle most of this" — shadcn is
+   not installed.)*
+6. Every page carries a skip-to-content link: visually hidden until focused, then a standard
+   focused control at top-left.
+7. Honour `prefers-reduced-motion: reduce` — drop translate and scale, keep opacity fades at
+   100ms. Never remove focus indicators as part of it.
+8. Minimum hit target is 40px on the storefront. The 32px small button is permitted only inside
+   dense admin tables and card footers where the surrounding row is itself ≥40px.
+9. `--color-caption` fails WCAG AA on white for body-size text. Restrict it to ≥14px
+   non-essential text and icons; placeholders use `--color-muted`.
 
 ---
 

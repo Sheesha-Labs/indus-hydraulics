@@ -44,7 +44,7 @@ export default function StartScrapeForm() {
           name="sourceUrl"
           type="url"
           placeholder="https://competitor.example/sitemap.xml"
-          className="h-9 w-full px-3 border border-[var(--color-border-default)] bg-[var(--color-surface)] text-[13px] focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)]"
+          className="h-9 w-full px-3 border border-[var(--color-border)] bg-[var(--color-surface)] text-[13px] focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)]"
         />
       </Field>
 
@@ -57,7 +57,7 @@ export default function StartScrapeForm() {
           name="urlListText"
           rows={6}
           placeholder={'https://competitor.example/products/a10vso-71\nhttps://competitor.example/products/a4vg-125\n…'}
-          className="w-full px-3 py-2 border border-[var(--color-border-default)] bg-[var(--color-surface)] text-[13px] font-mono focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)]"
+          className="w-full px-3 py-2 border border-[var(--color-border)] bg-[var(--color-surface)] text-[13px] font-mono focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)]"
         />
       </Field>
 
@@ -65,7 +65,7 @@ export default function StartScrapeForm() {
         <input
           name="notes"
           maxLength={500}
-          className="h-9 w-full px-3 border border-[var(--color-border-default)] bg-[var(--color-surface)] text-[13px]"
+          className="h-9 w-full px-3 border border-[var(--color-border)] bg-[var(--color-surface)] text-[13px]"
           placeholder="e.g. 'New competitor, axial-piston focus'"
         />
       </Field>

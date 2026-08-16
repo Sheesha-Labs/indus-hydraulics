@@ -96,7 +96,7 @@ export default function PromoFormDialog({ item, onClose, onSaved }: Props) {
               <button
                 type="button"
                 onClick={clearImage}
-                className="text-[12px] text-[var(--color-status-danger)] hover:underline"
+                className="text-[12px] text-[var(--color-danger)] hover:underline"
               >
                 Remove
               </button>
@@ -144,7 +144,7 @@ export default function PromoFormDialog({ item, onClose, onSaved }: Props) {
         </label>
 
         {error ? (
-          <p role="alert" className="text-[12px] text-[var(--color-status-danger)]">
+          <p role="alert" className="text-[12px] text-[var(--color-danger)]">
             {error}
           </p>
         ) : null}

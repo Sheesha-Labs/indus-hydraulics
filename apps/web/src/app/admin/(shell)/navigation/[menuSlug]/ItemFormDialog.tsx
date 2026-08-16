@@ -181,7 +181,7 @@ export default function ItemFormDialog({ initial, onClose, onSaved }: Props) {
         </details>
 
         {error ? (
-          <p role="alert" className="text-[12px] text-[var(--color-status-danger)]">
+          <p role="alert" className="text-[12px] text-[var(--color-danger)]">
             {error}
           </p>
         ) : null}

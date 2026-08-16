@@ -45,14 +45,14 @@ export default async function ScraperJobsPage({ params }: Props) {
       </header>
 
       {jobs.length === 0 ? (
-        <div className="border border-[var(--color-border-default)] bg-[var(--color-surface)] p-10 text-center">
+        <div className="border border-[var(--color-border)] bg-[var(--color-surface)] p-10 text-center">
           <p className="text-[14px] text-[var(--color-body)]">No crawls yet.</p>
           <p className="text-[12px] text-[var(--color-muted)] mt-2">
             Start your first crawl by pasting a competitor sitemap URL or a list of product URLs.
           </p>
         </div>
       ) : (
-        <table className="w-full border border-[var(--color-border-default)] text-[13px]">
+        <table className="w-full border border-[var(--color-border)] text-[13px]">
           <thead className="bg-[var(--color-deep)] text-[var(--color-muted)] uppercase font-mono text-[10px] tracking-wider">
             <tr>
               <th className="text-left px-3 py-2">Code</th>
@@ -64,7 +64,7 @@ export default async function ScraperJobsPage({ params }: Props) {
           </thead>
           <tbody>
             {jobs.map((j) => (
-              <tr key={j.id} className="border-t border-[var(--color-border-default)] hover:bg-[var(--color-deep)]">
+              <tr key={j.id} className="border-t border-[var(--color-border)] hover:bg-[var(--color-deep)]">
                 <td className="px-3 py-2 font-mono text-[12px]">
                   <Link href={`/admin/scraper/${j.id}`} className="text-[var(--color-accent)] hover:underline">
                     {j.code}

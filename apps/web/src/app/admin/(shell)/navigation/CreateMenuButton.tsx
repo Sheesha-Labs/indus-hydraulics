@@ -76,7 +76,7 @@ export default function CreateMenuButton({ missing }: Props) {
         />
       </label>
       {error ? (
-        <p role="alert" className="text-[12px] text-[var(--color-status-danger)]">
+        <p role="alert" className="text-[12px] text-[var(--color-danger)]">
           {error}
         </p>
       ) : null}

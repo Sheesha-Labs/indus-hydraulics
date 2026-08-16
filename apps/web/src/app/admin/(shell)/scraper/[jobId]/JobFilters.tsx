@@ -65,7 +65,7 @@ export default function JobFilters({
               className={`h-8 px-3 text-[11px] font-mono uppercase tracking-wider border ${
                 active
                   ? 'bg-[var(--color-primary)] text-white border-[var(--color-primary)]'
-                  : 'bg-[var(--color-surface)] text-[var(--color-body)] border-[var(--color-border-default)] hover:bg-[var(--color-deep)]'
+                  : 'bg-[var(--color-surface)] text-[var(--color-body)] border-[var(--color-border)] hover:bg-[var(--color-deep)]'
               } disabled:opacity-50`}
             >
               {opt.label} {typeof count === 'number' ? `(${count})` : ''}
@@ -80,12 +80,12 @@ export default function JobFilters({
           type="search"
           defaultValue={q}
           placeholder="Search by title or SKU…"
-          className="h-8 w-64 px-2 border border-[var(--color-border-default)] bg-[var(--color-surface)] text-[12px]"
+          className="h-8 w-64 px-2 border border-[var(--color-border)] bg-[var(--color-surface)] text-[12px]"
         />
         <button
           type="submit"
           disabled={pending}
-          className="h-8 px-3 border border-[var(--color-border-default)] text-[var(--color-body)] font-mono text-[11px] uppercase tracking-wider hover:bg-[var(--color-deep)] disabled:opacity-50"
+          className="h-8 px-3 border border-[var(--color-border)] text-[var(--color-body)] font-mono text-[11px] uppercase tracking-wider hover:bg-[var(--color-deep)] disabled:opacity-50"
         >
           Search
         </button>

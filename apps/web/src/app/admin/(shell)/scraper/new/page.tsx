@@ -29,7 +29,7 @@ export default async function NewScrapeJobPage({ params }: Props) {
         </p>
       </header>
 
-      <div className="border border-[var(--color-border-default)] bg-[var(--color-surface)] p-6">
+      <div className="border border-[var(--color-border)] bg-[var(--color-surface)] p-6">
         <StartScrapeForm />
       </div>
 

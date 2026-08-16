@@ -284,7 +284,7 @@ export default async function ScraperJobDetailPage({ params, searchParams }: Pro
       </section>
 
       {/* Timeline */}
-      <section className="border border-[var(--color-border-default)] bg-[var(--color-surface)] p-4 mb-6 text-[12px]">
+      <section className="border border-[var(--color-border)] bg-[var(--color-surface)] p-4 mb-6 text-[12px]">
         <h2 className="font-mono uppercase tracking-wider text-[10px] text-[var(--color-muted)] mb-3">Timeline</h2>
         <dl className="grid grid-cols-3 gap-x-6 gap-y-1.5">
           <Time label="Created" value={job.createdAt} />
@@ -323,7 +323,7 @@ export default async function ScraperJobDetailPage({ params, searchParams }: Pro
 
       {/* Rows */}
       {job.totalFound === 0 ? (
-        <section className="border border-[var(--color-border-default)] bg-[var(--color-surface)] p-6">
+        <section className="border border-[var(--color-border)] bg-[var(--color-surface)] p-6">
           <p className="text-[13px] text-[var(--color-body)]">
             {job.status === 'queued'
               ? 'Crawl is queued — waiting for the background worker.'
@@ -337,7 +337,7 @@ export default async function ScraperJobDetailPage({ params, searchParams }: Pro
           <JobFilters counts={counts as Record<string, number>} q={q} status={filterStatus} />
           <div className="flex flex-col gap-4">
             {rows.length === 0 ? (
-              <p className="text-[13px] text-[var(--color-muted)] px-4 py-6 text-center bg-[var(--color-surface)] border border-[var(--color-border-default)]">
+              <p className="text-[13px] text-[var(--color-muted)] px-4 py-6 text-center bg-[var(--color-surface)] border border-[var(--color-border)]">
                 No products match this filter.
               </p>
             ) : (
@@ -390,7 +390,7 @@ function PageLink({
 
   if (disabled) {
     return (
-      <span className="h-8 px-3 grid place-items-center border border-[var(--color-border-default)] text-[var(--color-muted)] opacity-50 font-mono">
+      <span className="h-8 px-3 grid place-items-center border border-[var(--color-border)] text-[var(--color-muted)] opacity-50 font-mono">
         {label}
       </span>
     )
@@ -398,7 +398,7 @@ function PageLink({
   return (
     <Link
       href={href}
-      className="h-8 px-3 grid place-items-center border border-[var(--color-border-default)] text-[var(--color-body)] hover:bg-[var(--color-deep)] font-mono"
+      className="h-8 px-3 grid place-items-center border border-[var(--color-border)] text-[var(--color-body)] hover:bg-[var(--color-deep)] font-mono"
     >
       {label}
     </Link>
@@ -409,7 +409,7 @@ function Stat({ label, value, highlight }: { label: string; value: string; highl
   return (
     <div
       className={`border bg-[var(--color-surface)] px-3 py-2 ${
-        highlight ? 'border-[oklch(0.4_0.18_25)]' : 'border-[var(--color-border-default)]'
+        highlight ? 'border-[oklch(0.4_0.18_25)]' : 'border-[var(--color-border)]'
       }`}
     >
       <div className="font-mono uppercase tracking-wider text-[10px] text-[var(--color-muted)]">{label}</div>

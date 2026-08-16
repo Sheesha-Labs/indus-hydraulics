@@ -148,7 +148,7 @@ export default function BlueprintImagePanel({
 
       <div className="p-5">
         {error && (
-          <div className="bg-[var(--color-status-danger)]/10 mb-4 border border-[var(--color-status-danger)] px-4 py-3 text-[12px] text-[var(--color-status-danger)]">
+          <div className="bg-[var(--color-danger)]/10 mb-4 border border-[var(--color-danger)] px-4 py-3 text-[12px] text-[var(--color-danger)]">
             {error}
           </div>
         )}
@@ -248,8 +248,8 @@ export default function BlueprintImagePanel({
         )}
 
         {active && context?.generationStatus === 'failed' && (
-          <div className="bg-[var(--color-status-danger)]/5 border border-[var(--color-status-danger)] p-5">
-            <p className="font-mono text-[11px] tracking-[0.12em] text-[var(--color-status-danger)]">
+          <div className="bg-[var(--color-danger)]/5 border border-[var(--color-danger)] p-5">
+            <p className="font-mono text-[11px] tracking-[0.12em] text-[var(--color-danger)]">
               GENERATION FAILED
             </p>
             <p className="mt-2 text-[12px] text-[var(--color-body)]">
@@ -355,7 +355,7 @@ export default function BlueprintImagePanel({
         )}
 
         {active && !context && (
-          <div className="border border-[var(--color-status-danger)] p-4 text-[12px] text-[var(--color-status-danger)]">
+          <div className="border border-[var(--color-danger)] p-4 text-[12px] text-[var(--color-danger)]">
             This draft has invalid generation metadata and cannot be reviewed safely.
           </div>
         )}
