@@ -3,6 +3,7 @@ import { db } from '@indus/db'
 import { notFound } from 'next/navigation'
 import { buildBreadcrumbLd, buildFaqLd } from '@indus/domain'
 import { JsonLd } from '@indus/ui'
+import PolicyLayout, { PolicySectionBody } from '../../../components/PolicyLayout'
 import { urlFor } from '../../../lib/seo'
 
 export const metadata: Metadata = {
@@ -43,6 +44,18 @@ const FAQS = [
   },
 ]
 
+const SECTIONS = [
+  { id: 'how-returns-work-in-our-business', title: '1. How returns work in our business' },
+  { id: 'inspection-window-damage-shortage-wrong-item', title: '2. Inspection window — damage, shortage, wrong item' },
+  { id: 'returnable-items', title: '3. Returnable items' },
+  { id: 'non-returnable-items', title: '4. Non-returnable items' },
+  { id: 'restocking-fee', title: '5. Restocking fee' },
+  { id: 'return-freight', title: '6. Return freight' },
+  { id: 'rma-process-and-timelines', title: '7. RMA process and timelines' },
+  { id: 'refunds-and-credits', title: '8. Refunds and credits' },
+  { id: 'contact', title: '9. Contact' },
+] as const
+
 type Props = { params: Promise<Record<string, never>> }
 
 export default async function ReturnsPage({ params }: Props) {
@@ -77,17 +90,11 @@ export default async function ReturnsPage({ params }: Props) {
   })
 
   return (
-    <article className="max-w-[820px] mx-auto px-8 py-16 pb-24 text-ih-ink-2">
+    <PolicyLayout slug="returns" title="Returns &amp; RMA Policy" effectiveLine={`Effective ${EFFECTIVE_DATE} · Version 1.0`} sections={SECTIONS}>
       <JsonLd data={[faqLd, breadcrumbLd]} />
 
-      <header className="mb-10">
-        <h1 className="text-[36px] font-semibold tracking-tight mb-3">Returns &amp; RMA Policy</h1>
-        <p className="font-mono text-[12px] text-ih-muted tracking-[0.06em] uppercase">
-          Effective {EFFECTIVE_DATE} · Version 1.0
-        </p>
-      </header>
 
-      <Section title="1. How returns work in our business">
+      <PolicySectionBody id="how-returns-work-in-our-business" title="1. How returns work in our business">
         <p>
           We supply industrial hydraulic equipment to operators, OEMs, and service contractors. Our
           returns policy reflects that — it is more permissive than a typical consumer policy when
@@ -99,9 +106,9 @@ export default async function ReturnsPage({ params }: Props) {
           are shipped back. Returns without an RMA are refused at our dock and the buyer remains
           responsible for the goods and any freight incurred.
         </p>
-      </Section>
+      </PolicySectionBody>
 
-      <Section title="2. Inspection window — damage, shortage, wrong item">
+      <PolicySectionBody id="inspection-window-damage-shortage-wrong-item" title="2. Inspection window — damage, shortage, wrong item">
         <p>
           You must inspect goods on delivery and notify us in writing of any visible damage,
           shortage, or non-conformity within <strong>seven (7) calendar days</strong> of delivery.
@@ -109,9 +116,9 @@ export default async function ReturnsPage({ params }: Props) {
           Concealed defects must be reported promptly upon discovery. After this window, goods are
           deemed accepted.
         </p>
-      </Section>
+      </PolicySectionBody>
 
-      <Section title="3. Returnable items">
+      <PolicySectionBody id="returnable-items" title="3. Returnable items">
         <p>Stock items may be returned within thirty (30) calendar days of delivery if they are:</p>
         <ul className="list-disc pl-6 space-y-1">
           <li>Unused and uninstalled</li>
@@ -119,9 +126,9 @@ export default async function ReturnsPage({ params }: Props) {
           <li>Accompanied by the original Estimate or invoice reference and a written RMA from us</li>
           <li>In resaleable condition on inspection at our Dubai warehouse</li>
         </ul>
-      </Section>
+      </PolicySectionBody>
 
-      <Section title="4. Non-returnable items">
+      <PolicySectionBody id="non-returnable-items" title="4. Non-returnable items">
         <p>
           The following items cannot be returned for credit. They may still be replaced under
           warranty if they prove defective — see our{' '}
@@ -156,9 +163,9 @@ export default async function ReturnsPage({ params }: Props) {
             us as a distributor.
           </li>
         </ul>
-      </Section>
+      </PolicySectionBody>
 
-      <Section title="5. Restocking fee">
+      <PolicySectionBody id="restocking-fee" title="5. Restocking fee">
         <p>
           A <strong>15% restocking fee</strong> applies to change-of-mind returns of stock items.
           The fee is calculated on the unit price of the returned items and is deducted from the
@@ -171,9 +178,9 @@ export default async function ReturnsPage({ params }: Props) {
           <li>Transit damage where we arranged the freight (CIF / DAP / CIP terms)</li>
           <li>A warranted defect within the manufacturer’s warranty period</li>
         </ul>
-      </Section>
+      </PolicySectionBody>
 
-      <Section title="6. Return freight">
+      <PolicySectionBody id="return-freight" title="6. Return freight">
         <p>
           For change-of-mind returns and for warranty claims, the buyer arranges and pays return
           freight to our Dubai warehouse unless we agree otherwise in writing. For wrong-item,
@@ -183,9 +190,9 @@ export default async function ReturnsPage({ params }: Props) {
           Returns must be packaged to the same standard they were shipped in. We are not liable for
           further damage caused by inadequate return packaging.
         </p>
-      </Section>
+      </PolicySectionBody>
 
-      <Section title="7. RMA process and timelines">
+      <PolicySectionBody id="rma-process-and-timelines" title="7. RMA process and timelines">
         <ol className="list-decimal pl-6 space-y-1">
           <li>
             <strong>Request:</strong> Email{' '}
@@ -210,18 +217,18 @@ export default async function ReturnsPage({ params }: Props) {
             or replacement is issued within ten (10) business days of inspection.
           </li>
         </ol>
-      </Section>
+      </PolicySectionBody>
 
-      <Section title="8. Refunds and credits">
+      <PolicySectionBody id="refunds-and-credits" title="8. Refunds and credits">
         <p>
           For accounts on credit terms, approved returns are issued as a credit note against the
           original invoice. For prepaid orders, the refund is issued to the original payment
           method, net of any restocking fee. Bank charges or currency-conversion losses on
           international refunds are at the buyer’s cost.
         </p>
-      </Section>
+      </PolicySectionBody>
 
-      <Section title="9. Contact">
+      <PolicySectionBody id="contact" title="9. Contact">
         <p>
           For all return and RMA queries, contact our customer service team at{' '}
           <a className="text-ih-accent hover:underline" href="mailto:sales@indushydraulics.me">
@@ -233,7 +240,7 @@ export default async function ReturnsPage({ params }: Props) {
           </a>
           .
         </p>
-      </Section>
+      </PolicySectionBody>
 
       <footer className="mt-12 pt-6 border-t border-ih-border text-[12px] text-ih-muted-2 leading-[1.6]">
         This policy is the customer-facing companion to section 7 (Returns) of our{' '}
@@ -247,17 +254,7 @@ export default async function ReturnsPage({ params }: Props) {
         </a>
         .
       </footer>
-    </article>
+    </PolicyLayout>
   )
 }
 
-function Section({ title, children }: { title: string; children: React.ReactNode }) {
-  return (
-    <section className="mb-8">
-      <h2 className="text-[18px] font-semibold tracking-[-0.01em] mb-3 text-ih-ink">
-        {title}
-      </h2>
-      <div className="text-[15px] leading-[1.7] space-y-3">{children}</div>
-    </section>
-  )
-}
