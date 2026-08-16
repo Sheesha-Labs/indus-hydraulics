@@ -1,10 +1,12 @@
 'use client'
 
 import { useState, useRef, useCallback } from 'react'
+import { usePathname } from 'next/navigation'
 import type React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import type { ResolvedNavItem } from '@indus/domain'
+import LogoMark from './LogoMark'
 import SearchAutocomplete from './SearchAutocomplete'
 import NavListDropdown from './NavListDropdown'
 
@@ -43,6 +45,26 @@ function getDropdownKind(
   return null
 }
 
+/**
+ * Nav active state.
+ *
+ * 01-design-language.md §5 is emphatic about this: screens belonging to no
+ * top-level section — account, policy, 404 — must highlight NOTHING, and the
+ * design passes an explicit sentinel so they cannot fall through to a default.
+ * "A falsely-lit nav item is a wayfinding bug."
+ *
+ * Deriving it from the pathname gives the same guarantee without threading a
+ * prop through every page, provided `/` is matched exactly. Prefix-matching
+ * the root would light Home on every route in the product, which is precisely
+ * the bug the rule exists to prevent. Anything with no matching header item —
+ * /account, /shipping, a 404 — simply matches nothing.
+ */
+function matchesPath(href: string, pathname: string): boolean {
+  const clean = href.endsWith('/') && href.length > 1 ? href.slice(0, -1) : href
+  if (clean === '/') return pathname === '/'
+  return pathname === clean || pathname.startsWith(`${clean}/`)
+}
+
 export default function SiteHeaderClient({
   headerItems,
   megamenuItems,
@@ -59,6 +81,8 @@ export default function SiteHeaderClient({
   const [activeCatIdx, setActiveCatIdx] = useState(0)
   const [activeSubIdx, setActiveSubIdx] = useState(0)
   const megaTimeout = useRef<ReturnType<typeof setTimeout> | null>(null)
+  const pathname = usePathname()
+  const isActive = useCallback((href: string) => matchesPath(href, pathname), [pathname])
 
   const openDropdown = useCallback((kind: Exclude<DropdownKind, null>) => {
     if (megaTimeout.current) clearTimeout(megaTimeout.current)
@@ -99,21 +123,21 @@ export default function SiteHeaderClient({
   )
 
   return (
-    <header className="sticky top-0 z-50 bg-[var(--color-elevated)]/65 backdrop-blur-lg backdrop-saturate-150 border-b border-[var(--color-border)]">
+    <header className="sticky top-0 z-50 border-b border-ih-border bg-ih-surface">
       {/* Utility bar */}
-      <div className="bg-[var(--color-primary)] text-[var(--color-surface)]">
-        <div className="max-w-[1360px] mx-auto px-8 h-9 flex items-center justify-between font-mono text-[11px] tracking-[0.04em]">
-          <div className="flex gap-6 opacity-85">
+      <div className="bg-ih-navy text-[oklch(0.82_0.02_250)]">
+        <div className="mx-auto flex h-[34px] max-w-[1440px] items-center justify-between px-12 font-mono text-[11px] tracking-[0.04em]">
+          <div className="flex gap-6">
             {contactPhone && <span>{contactPhone}</span>}
             {contactHours && <span>{contactHours}</span>}
           </div>
-          <div className="flex gap-4 opacity-85">
+          <div className="flex gap-4">
             {isSignedIn ? (
-              <Link href={`/account`} className="hover:text-[var(--color-accent)]">
+              <Link href={`/account`} className="hover:text-white">
                 My account
               </Link>
             ) : (
-              <Link href={`/sign-in`} className="hover:text-[var(--color-accent)]">
+              <Link href={`/sign-in`} className="hover:text-white">
                 Sign in
               </Link>
             )}
@@ -122,22 +146,20 @@ export default function SiteHeaderClient({
       </div>
 
       {/* Main nav bar */}
-      <div className="max-w-[1360px] mx-auto px-8 h-16 flex items-center gap-8">
+      <div className="mx-auto flex h-[72px] max-w-[1440px] items-center gap-8 px-12">
         {/* Logo */}
-        <Link href={`/`} className="flex items-center gap-2 shrink-0">
-          <div className="w-8 h-8 bg-[var(--color-primary)] grid place-items-center shrink-0">
-            <span className="text-white font-bold text-sm font-mono">IH</span>
-          </div>
-          <div>
-            <div className="font-semibold text-sm leading-tight">Indus Hydraulics</div>
-            <div className="font-mono text-[9px] tracking-[0.12em] text-[var(--color-muted)] uppercase">
+        <Link href={`/`} className="flex shrink-0 items-center gap-[11px]">
+          <LogoMark />
+          <span className="font-serif text-[21px] leading-none tracking-[-0.01em]">
+            Indus Hydraulics
+            <small className="mt-1 block font-mono text-[9px] uppercase tracking-[0.14em] text-ih-muted">
               Industrial Components Co.
-            </div>
-          </div>
+            </small>
+          </span>
         </Link>
 
         {/* Desktop nav */}
-        <nav className="hidden lg:flex items-center flex-1">
+        <nav className="hidden flex-1 items-center gap-[26px] lg:flex">
           {headerItems.map((item) => {
             const href = item.href ?? '#'
             const kind = getDropdownKind(item, megamenuItems, brands, industries)
@@ -147,10 +169,11 @@ export default function SiteHeaderClient({
                 <div key={item.id} onMouseEnter={() => openDropdown(kind)} onMouseLeave={closeDropdown}>
                   <Link
                     href={href}
-                    className={`flex items-center gap-1 px-3 h-16 text-[14px] font-medium transition-colors ${
-                      isOpen
-                        ? 'text-[var(--color-primary)] bg-[var(--color-deep)]'
-                        : 'text-[var(--color-body)] hover:text-[var(--color-primary)] hover:bg-[var(--color-deep)]'
+                    aria-current={isActive(href) ? 'page' : undefined}
+                    className={`flex items-center gap-1 border-b-[1.5px] py-1.5 text-[13.5px] transition-colors ${
+                      isActive(href) || isOpen
+                        ? 'border-ih-accent text-ih-accent'
+                        : 'border-transparent text-ih-ink-2 hover:text-ih-ink'
                     }`}
                     aria-haspopup="true"
                     aria-expanded={isOpen}
@@ -176,7 +199,12 @@ export default function SiteHeaderClient({
                 href={href}
                 target={item.openInNewTab ? '_blank' : undefined}
                 rel={item.openInNewTab ? 'noopener noreferrer' : undefined}
-                className="px-3 h-16 flex items-center text-[14px] text-[var(--color-body)] hover:text-[var(--color-primary)] hover:bg-[var(--color-deep)] transition-colors"
+                aria-current={isActive(href) ? 'page' : undefined}
+                className={`flex items-center border-b-[1.5px] py-1.5 text-[13.5px] transition-colors ${
+                  isActive(href)
+                    ? 'border-ih-accent text-ih-accent'
+                    : 'border-transparent text-ih-ink-2 hover:text-ih-ink'
+                }`}
               >
                 {item.label}
               </Link>
@@ -197,7 +225,7 @@ export default function SiteHeaderClient({
           {/* Quote basket */}
           <Link
             href={`/quote`}
-            className="relative flex items-center justify-center h-9 w-9 border border-[var(--color-border)] hover:bg-[var(--color-deep)] transition-colors"
+            className="relative flex h-10 w-10 items-center justify-center rounded-md border border-ih-border text-ih-ink-2 transition-colors hover:border-ih-accent hover:text-ih-accent"
             aria-label="Quote"
           >
             <svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
@@ -210,17 +238,17 @@ export default function SiteHeaderClient({
           {isSignedIn ? (
             <Link
               href={`/account`}
-              className="hidden sm:flex items-center gap-1.5 h-9 px-3 bg-[var(--color-primary)] text-[var(--color-elevated)] text-[13px] font-medium hover:bg-[var(--color-body)] transition-colors"
+              className="hidden h-10 items-center gap-2 rounded-md bg-ih-navy px-[18px] text-[13.5px] font-medium text-white transition-colors hover:bg-ih-ink sm:flex"
             >
-              <div className="w-5 h-5 bg-[var(--color-accent)] grid place-items-center text-white text-[9px] font-bold shrink-0">
+              <span className="grid h-5 w-5 shrink-0 place-items-center rounded-full bg-ih-accent text-[9px] font-medium text-white">
                 {(userName ?? 'U').charAt(0).toUpperCase()}
-              </div>
+              </span>
               My account
             </Link>
           ) : (
             <Link
               href={`/sign-in`}
-              className="hidden sm:flex h-9 px-4 items-center border border-[var(--color-border)] text-[13px] font-medium text-[var(--color-body)] hover:bg-[var(--color-deep)] hover:text-[var(--color-primary)] transition-colors"
+              className="hidden h-10 items-center rounded-md border border-ih-border-strong px-[18px] text-[13.5px] font-medium text-ih-ink transition-colors hover:border-ih-accent hover:bg-ih-surface-2 hover:text-ih-accent sm:flex"
             >
               Sign in
             </Link>
@@ -228,7 +256,7 @@ export default function SiteHeaderClient({
 
           {/* Mobile hamburger */}
           <button
-            className="lg:hidden flex items-center justify-center h-9 w-9 border border-[var(--color-border)]"
+            className="flex h-10 w-10 items-center justify-center rounded-md border border-ih-border text-ih-ink-2 lg:hidden"
             onClick={() => setMobileOpen(!mobileOpen)}
             aria-label={mobileOpen ? 'Close menu' : 'Open menu'}
           >
@@ -248,17 +276,17 @@ export default function SiteHeaderClient({
       {/* ── Megamenu ───────────────────────────────────────── */}
       {megamenuOpen && megamenuItems.length > 0 && (
         <div
-          className="absolute left-0 right-0 bg-[var(--color-elevated)] border-t border-[var(--color-border)]"
-          style={{ top: '100%', boxShadow: '0 24px 64px rgba(33,28,16,0.12)', zIndex: 50 }}
+          className="absolute left-0 right-0 border-t border-ih-border bg-ih-surface shadow-[0_4px_12px_rgba(20,28,45,.07),0_18px_48px_rgba(20,28,45,.09)]"
+          style={{ top: '100%', zIndex: 50 }}
           onMouseEnter={() => openDropdown('mega')}
           onMouseLeave={closeDropdown}
           role="menu"
         >
-          <div className="max-w-[1360px] mx-auto px-8">
+          <div className="mx-auto max-w-[1440px] px-12">
             <div className="grid grid-cols-[360px_420px_1fr] min-h-[420px]">
               {/* ── Column 1: Top-level categories ── */}
-              <div className="py-7 pr-0 border-r border-[var(--color-border-2)]">
-                <div className="font-mono text-[11px] tracking-[0.14em] uppercase text-[var(--color-muted)] mb-3">
+              <div className="border-r border-ih-border py-7 pr-0">
+                <div className="mb-3 font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">
                   Categories
                 </div>
                 <div className="flex flex-col">
@@ -267,10 +295,10 @@ export default function SiteHeaderClient({
                       key={cat.id}
                       href={cat.href ?? '#'}
                       role="menuitem"
-                      className={`flex justify-between items-center px-3 py-2.5 border-l-2 transition-colors text-[14px] ${
+                      className={`flex items-center justify-between rounded-sm border-l-2 px-3 py-2.5 text-[13.5px] transition-colors ${
                         i === activeCatIdx
-                          ? 'bg-[var(--color-surface)] border-[var(--color-accent)] text-[var(--color-primary)] font-medium'
-                          : 'border-transparent text-[var(--color-body)] hover:bg-[var(--color-surface)] hover:border-[var(--color-accent)]'
+                          ? 'border-ih-accent bg-ih-accent-soft font-medium text-ih-accent'
+                          : 'border-transparent text-ih-ink-2 hover:border-ih-accent hover:bg-ih-surface-2'
                       }`}
                       onMouseEnter={() => handleCatHover(i)}
                       onClick={closeDropdownImmediate}
@@ -282,8 +310,8 @@ export default function SiteHeaderClient({
               </div>
 
               {/* ── Column 2: Sub-categories ── */}
-              <div className="py-7 px-6 border-r border-[var(--color-border-2)]">
-                <div className="font-mono text-[11px] tracking-[0.14em] uppercase text-[var(--color-muted)] mb-3 whitespace-nowrap">
+              <div className="border-r border-ih-border px-6 py-7">
+                <div className="mb-3 whitespace-nowrap font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">
                   {activeCat?.label}
                 </div>
                 <div className="flex flex-col">
@@ -292,24 +320,24 @@ export default function SiteHeaderClient({
                       key={sub.id}
                       href={sub.href ?? '#'}
                       role="menuitem"
-                      className={`flex justify-between items-center px-3 py-2.5 border-l-2 transition-colors text-[14px] ${
+                      className={`flex items-center justify-between rounded-sm border-l-2 px-3 py-2.5 text-[13.5px] transition-colors ${
                         i === activeSubIdx
-                          ? 'bg-[var(--color-surface)] border-[var(--color-accent)] text-[var(--color-primary)] font-medium'
-                          : 'border-transparent text-[var(--color-body)] hover:bg-[var(--color-surface)] hover:border-[var(--color-accent)]'
+                          ? 'border-ih-accent bg-ih-accent-soft font-medium text-ih-accent'
+                          : 'border-transparent text-ih-ink-2 hover:border-ih-accent hover:bg-ih-surface-2'
                       }`}
                       onMouseEnter={() => handleSubHover(i)}
                       onClick={closeDropdownImmediate}
                     >
                       <span>{sub.label}</span>
-                      <span className="font-mono text-[11px] text-[var(--color-caption)]">›</span>
+                      <span aria-hidden="true" className="font-mono text-[11px] text-ih-muted-2">›</span>
                     </Link>
                   ))}
                 </div>
               </div>
 
               {/* ── Column 3: Leaf items ── */}
-              <div className="py-7 px-6 flex flex-col">
-                <div className="font-mono text-[11px] tracking-[0.14em] uppercase text-[var(--color-muted)] mb-3">
+              <div className="flex flex-col px-6 py-7">
+                <div className="mb-3 font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">
                   {activeSub?.label}
                 </div>
                 <div className="flex flex-col flex-1">
@@ -320,11 +348,11 @@ export default function SiteHeaderClient({
                       role="menuitem"
                       target={leaf.openInNewTab ? '_blank' : undefined}
                       rel={leaf.openInNewTab ? 'noopener noreferrer' : undefined}
-                      className="flex justify-between items-center px-3 py-2.5 border-l-2 border-transparent text-[14px] text-[var(--color-body)] hover:bg-[var(--color-surface)] hover:border-[var(--color-accent)] transition-colors"
+                      className="flex items-center justify-between rounded-sm border-l-2 border-transparent px-3 py-2.5 text-[13.5px] text-ih-ink-2 transition-colors hover:border-ih-accent hover:bg-ih-surface-2"
                       onClick={closeDropdownImmediate}
                     >
                       <span>{leaf.label}</span>
-                      <span className="font-mono text-[11px] text-[var(--color-caption)]">›</span>
+                      <span aria-hidden="true" className="font-mono text-[11px] text-ih-muted-2">›</span>
                     </Link>
                   ))}
                 </div>
@@ -334,7 +362,7 @@ export default function SiteHeaderClient({
                   <Link
                     href={activeCat.promoLinkUrl ?? browseAllHref}
                     onClick={closeDropdownImmediate}
-                    className="mt-4 block bg-[var(--color-surface)] border border-[var(--color-border)] overflow-hidden"
+                    className="mt-4 block overflow-hidden rounded-lg border border-ih-border bg-ih-surface"
                   >
                     <div className="relative w-full h-32">
                       <Image
@@ -347,12 +375,12 @@ export default function SiteHeaderClient({
                     </div>
                     <div className="px-4 py-3">
                       {activeCat.promoHeading ? (
-                        <div className="text-[13px] font-medium text-[var(--color-primary)]">
+                        <div className="text-[14px] font-medium leading-[1.35] text-ih-ink">
                           {activeCat.promoHeading}
                         </div>
                       ) : null}
                       {activeCat.promoBody ? (
-                        <div className="text-[12px] text-[var(--color-muted)] mt-1">{activeCat.promoBody}</div>
+                        <div className="mt-1.5 text-[12.5px] leading-relaxed text-ih-muted">{activeCat.promoBody}</div>
                       ) : null}
                     </div>
                   </Link>
@@ -362,7 +390,7 @@ export default function SiteHeaderClient({
                 <div className="mt-auto pt-4">
                   <Link
                     href={browseAllHref}
-                    className="flex items-center justify-between gap-2 h-10 px-4 border border-[var(--color-border)] text-[13px] text-[var(--color-body)] hover:bg-[var(--color-deep)] transition-colors"
+                    className="flex h-10 items-center justify-between gap-2 rounded-md border border-ih-border-strong px-4 text-[13.5px] text-ih-ink transition-colors hover:border-ih-accent hover:bg-ih-surface-2 hover:text-ih-accent"
                     onClick={closeDropdownImmediate}
                   >
                     <span>Browse all {activeCat?.label}</span>
@@ -372,6 +400,45 @@ export default function SiteHeaderClient({
                   </Link>
                 </div>
               </div>
+            </div>
+          </div>
+
+          {/*
+            Quick-links rail. New in v2 — the artboard puts a cross-reference
+            prompt in the last column of the mega menu, which is the one place
+            a customer holding a dead part number is already looking. Kept as a
+            full-width rail rather than a column so it survives the drill-down
+            layout this menu has to keep (see the note on the grid above).
+          */}
+          <div className="border-t border-ih-border bg-ih-surface-2">
+            <div className="mx-auto flex max-w-[1440px] flex-wrap items-center gap-x-[26px] gap-y-2 px-12 py-3.5">
+              <span className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">
+                Quick links
+              </span>
+              <Link
+                href="/replacement"
+                onClick={closeDropdownImmediate}
+                className="text-[12.5px] text-ih-accent hover:underline"
+              >
+                Obsolete part lookup
+              </Link>
+              <Link
+                href="/compare"
+                onClick={closeDropdownImmediate}
+                className="text-[12.5px] text-ih-accent hover:underline"
+              >
+                Compare specifications
+              </Link>
+              <Link
+                href="/quote"
+                onClick={closeDropdownImmediate}
+                className="text-[12.5px] text-ih-accent hover:underline"
+              >
+                Your quote list
+              </Link>
+              <span className="ml-auto text-[12.5px] text-ih-muted">
+                Can&rsquo;t find the part? Send a photo of the nameplate — we cross-reference obsolete numbers daily.
+              </span>
             </div>
           </div>
         </div>
@@ -415,14 +482,14 @@ export default function SiteHeaderClient({
 
       {/* ── Mobile nav ─────────────────────────────────────── */}
       {mobileOpen && (
-        <div className="lg:hidden border-t border-[var(--color-border)] bg-[var(--color-elevated)]">
+        <div className="border-t border-ih-border bg-ih-surface lg:hidden">
           {headerItems.map((item) => (
             <Link
               key={item.id}
               href={item.href ?? '#'}
               target={item.openInNewTab ? '_blank' : undefined}
               rel={item.openInNewTab ? 'noopener noreferrer' : undefined}
-              className="flex items-center px-8 h-12 text-[14px] text-[var(--color-body)] border-b border-[var(--color-border)] hover:bg-[var(--color-deep)]"
+              className="flex h-12 items-center border-b border-ih-border px-5 text-[13.5px] text-ih-ink-2 hover:bg-ih-surface-2"
               onClick={() => setMobileOpen(false)}
             >
               {item.label}
@@ -430,14 +497,14 @@ export default function SiteHeaderClient({
           ))}
 
           {megamenuItems.length > 0 ? (
-            <div className="px-8 py-4 border-b border-[var(--color-border)]">
-              <p className="font-mono text-[10px] uppercase tracking-[0.12em] text-[var(--color-muted)] mb-3">Categories</p>
+            <div className="border-b border-ih-border px-5 py-4">
+              <p className="mb-3 font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">Categories</p>
               <div className="flex flex-col gap-0.5">
                 {megamenuItems.map((cat) => (
                   <Link
                     key={cat.id}
                     href={cat.href ?? '#'}
-                    className="flex justify-between items-center py-2 text-[13px] text-[var(--color-body)] hover:text-[var(--color-accent)]"
+                    className="flex items-center justify-between py-2 text-[13px] text-ih-ink-2 hover:text-ih-accent"
                     onClick={() => setMobileOpen(false)}
                   >
                     <span>{cat.label}</span>
@@ -448,69 +515,69 @@ export default function SiteHeaderClient({
           ) : null}
 
           {brands.length > 0 ? (
-            <div className="px-8 py-4 border-b border-[var(--color-border)]">
-              <p className="font-mono text-[10px] uppercase tracking-[0.12em] text-[var(--color-muted)] mb-3">Brands</p>
+            <div className="border-b border-ih-border px-5 py-4">
+              <p className="mb-3 font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">Brands</p>
               <div className="flex flex-col gap-0.5">
                 {brands.slice(0, MOBILE_LIST_LIMIT).map((b) => (
                   <Link
                     key={b.slug}
                     href={`/brands/${b.slug}`}
-                    className="flex justify-between items-center py-2 text-[13px] text-[var(--color-body)] hover:text-[var(--color-accent)]"
+                    className="flex items-center justify-between py-2 text-[13px] text-ih-ink-2 hover:text-ih-accent"
                     onClick={() => setMobileOpen(false)}
                   >
                     <span>{b.name}</span>
-                    <span className="font-mono text-[10px] text-[var(--color-caption)]">›</span>
+                    <span aria-hidden="true" className="font-mono text-[10px] text-ih-muted-2">›</span>
                   </Link>
                 ))}
                 <Link
                   href="/brands"
-                  className="flex justify-between items-center py-2 text-[13px] font-medium text-[var(--color-primary)] hover:text-[var(--color-accent)]"
+                  className="flex items-center justify-between py-2 text-[13px] font-medium text-ih-ink hover:text-ih-accent"
                   onClick={() => setMobileOpen(false)}
                 >
                   <span>View all brands</span>
-                  <span className="font-mono text-[10px] text-[var(--color-caption)]">→</span>
+                  <span aria-hidden="true" className="font-mono text-[10px] text-ih-muted-2">→</span>
                 </Link>
               </div>
             </div>
           ) : null}
 
           {industries.length > 0 ? (
-            <div className="px-8 py-4 border-b border-[var(--color-border)]">
-              <p className="font-mono text-[10px] uppercase tracking-[0.12em] text-[var(--color-muted)] mb-3">Industries</p>
+            <div className="border-b border-ih-border px-5 py-4">
+              <p className="mb-3 font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">Industries</p>
               <div className="flex flex-col gap-0.5">
                 {industries.slice(0, MOBILE_LIST_LIMIT).map((ind) => (
                   <Link
                     key={ind.slug}
                     href={`/industries/${ind.slug}`}
-                    className="flex justify-between items-center py-2 text-[13px] text-[var(--color-body)] hover:text-[var(--color-accent)]"
+                    className="flex items-center justify-between py-2 text-[13px] text-ih-ink-2 hover:text-ih-accent"
                     onClick={() => setMobileOpen(false)}
                   >
                     <span>{ind.name}</span>
-                    <span className="font-mono text-[10px] text-[var(--color-caption)]">›</span>
+                    <span aria-hidden="true" className="font-mono text-[10px] text-ih-muted-2">›</span>
                   </Link>
                 ))}
                 <Link
                   href="/industries"
-                  className="flex justify-between items-center py-2 text-[13px] font-medium text-[var(--color-primary)] hover:text-[var(--color-accent)]"
+                  className="flex items-center justify-between py-2 text-[13px] font-medium text-ih-ink hover:text-ih-accent"
                   onClick={() => setMobileOpen(false)}
                 >
                   <span>View all industries</span>
-                  <span className="font-mono text-[10px] text-[var(--color-caption)]">→</span>
+                  <span aria-hidden="true" className="font-mono text-[10px] text-ih-muted-2">→</span>
                 </Link>
               </div>
             </div>
           ) : null}
 
-          <div className="px-8 py-4 flex gap-3">
+          <div className="flex gap-3 px-5 py-4">
             <Link
               href={`/sign-in`}
-              className="flex-1 h-10 flex items-center justify-center border border-[var(--color-border)] text-[13px] font-medium"
+              className="flex h-10 flex-1 items-center justify-center rounded-md border border-ih-border-strong text-[13.5px] font-medium text-ih-ink"
             >
               Sign in
             </Link>
             <Link
               href={`/quote`}
-              className="flex-1 h-10 flex items-center justify-center bg-[var(--color-accent)] text-white text-[13px] font-medium"
+              className="flex h-10 flex-1 items-center justify-center rounded-md bg-ih-accent text-[13.5px] font-medium text-ih-accent-fg"
             >
               Quote
             </Link>
