@@ -45,7 +45,8 @@ import {
  * error, disabled, focus). If something here looks wrong, it is wrong
  * everywhere, and fixing it costs one commit instead of fifty files.
  *
- * Staff-only via the proxy denylist, and noindex below.
+ * Staff-only: proxy.ts requires a valid staff token for /design, the same
+ * check /admin gets. noindex below is belt-and-braces, not the gate.
  */
 
 export const metadata: Metadata = {

@@ -19,6 +19,7 @@ import { isStaffRole } from './lib/rbac'
  */
 
 const ADMIN_PREFIX = '/admin'
+const DESIGN_PREFIX = '/design'
 
 /**
  * The only paths under /admin reachable without a staff session.
@@ -81,19 +82,19 @@ const ADMIN_CSP = [
 function applySecurityHeaders(
   response: NextResponse,
   request: NextRequest,
-  isAdmin: boolean,
+  isStaffOnly: boolean,
 ): NextResponse {
-  response.headers.set('Content-Security-Policy', isAdmin ? ADMIN_CSP : STOREFRONT_CSP)
+  response.headers.set('Content-Security-Policy', isStaffOnly ? ADMIN_CSP : STOREFRONT_CSP)
   response.headers.set('X-Content-Type-Options', 'nosniff')
-  response.headers.set('X-Frame-Options', isAdmin ? 'DENY' : 'SAMEORIGIN')
+  response.headers.set('X-Frame-Options', isStaffOnly ? 'DENY' : 'SAMEORIGIN')
   response.headers.set('Permissions-Policy', 'camera=(), microphone=(), geolocation=()')
   // Admin URLs embed customer ids and RFQ codes — never leak a full URL to an
   // external target, even same-scheme.
   response.headers.set(
     'Referrer-Policy',
-    isAdmin ? 'no-referrer' : 'strict-origin-when-cross-origin',
+    isStaffOnly ? 'no-referrer' : 'strict-origin-when-cross-origin',
   )
-  if (isAdmin) {
+  if (isStaffOnly) {
     // Structural noindex. Third and last layer, after the `robots` metadata on
     // app/admin/layout.tsx and `Disallow: /admin` in robots.ts — and the only
     // one that survives a staff member editing the robots.txt field in the
@@ -119,10 +120,16 @@ function redirectToSignIn(request: NextRequest, signInPath: string): NextRespons
 
 export default async function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl
-  const isAdmin = underPrefix(pathname, ADMIN_PREFIX)
-  const done = (res: NextResponse) => applySecurityHeaders(res, request, isAdmin)
+  // /design is the component gallery. Its own docstring claimed it was
+  // "staff-only via the proxy denylist" — it was not on any denylist and was
+  // reachable by anyone who guessed the URL, which is also why noindex was
+  // doing all the work. Gate it for real: same staff-token check as /admin,
+  // same hardened headers.
+  const isStaffOnly =
+    underPrefix(pathname, ADMIN_PREFIX) || underPrefix(pathname, DESIGN_PREFIX)
+  const done = (res: NextResponse) => applySecurityHeaders(res, request, isStaffOnly)
 
-  if (isAdmin) {
+  if (isStaffOnly) {
     if (ADMIN_PUBLIC_PATHS.some((p) => underPrefix(pathname, p))) {
       return done(NextResponse.next())
     }

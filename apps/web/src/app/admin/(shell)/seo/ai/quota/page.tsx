@@ -46,7 +46,20 @@ export default async function AiQuotaPage() {
             const pct = q.monthlyUsdCapMicros > 0
               ? (q.spentThisMonthMicros / q.monthlyUsdCapMicros) * 100
               : 0
-            const tone = pct >= 90 ? 'oklch(0.5_0.18_25)' : pct >= 60 ? 'oklch(0.5_0.14_70)' : 'var(--color-ih-accent)'
+            /*
+              Plain CSS values: this feeds an inline style, where Tailwind's
+              underscore-for-space arbitrary-value syntax is not valid CSS.
+              The old values were 'oklch(0.5_0.18_25)' etc., so the bar
+              painted NOTHING above 60% — and the else-branch fell through to
+              a hard-coded oklch(0.62 0.16 45), which is the v1 orange this
+              migration removed.
+            */
+            const tone =
+              pct >= 90
+                ? 'var(--color-ih-danger)'
+                : pct >= 60
+                  ? 'var(--color-ih-warning)'
+                  : 'var(--color-ih-accent)'
             return (
               <tr
                 key={q.id}
@@ -61,7 +74,7 @@ export default async function AiQuotaPage() {
                     <div className="flex-1 h-2 bg-ih-surface-2 overflow-hidden">
                       <div
                         className="h-full"
-                        style={{ width: `${Math.min(100, pct)}%`, background: `oklch(${tone.startsWith('oklch') ? tone.replace('oklch(', '').replace(')', '') : '0.62 0.16 45'})` }}
+                        style={{ width: `${Math.min(100, pct)}%`, background: tone }}
                       />
                     </div>
                     <span className="font-mono text-[11px] text-ih-muted tabular-nums whitespace-nowrap">

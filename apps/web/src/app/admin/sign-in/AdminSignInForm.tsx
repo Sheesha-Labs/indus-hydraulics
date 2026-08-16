@@ -6,7 +6,7 @@ import { adminSignInAction } from './actions'
 type State = { error?: string } | null
 
 const inputCls =
-  'h-10 w-full border border-[#2a2e35] bg-[#0e1013] px-3 text-sm text-[#f0ece3] placeholder:text-[#3a3f47] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ih-accent transition-colors'
+  'h-10 w-full border border-[var(--color-ih-navy-2)] bg-[var(--color-ih-navy)] px-3 text-sm text-[#ffffff] placeholder:text-[oklch(0.62_0.03_250)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ih-accent transition-colors'
 
 export default function AdminSignInForm({ next }: { next?: string }) {
   // Server action, not `signIn` from next-auth/react — that client helper
@@ -29,7 +29,7 @@ export default function AdminSignInForm({ next }: { next?: string }) {
       )}
 
       <div className="flex flex-col gap-1.5">
-        <label className="text-[12px] font-medium text-[#9aa0a8]" htmlFor="email">
+        <label className="text-[12px] font-medium text-[oklch(0.75_0.02_250)]" htmlFor="email">
           Work email
         </label>
         <input
@@ -44,7 +44,7 @@ export default function AdminSignInForm({ next }: { next?: string }) {
       </div>
 
       <div className="flex flex-col gap-1.5">
-        <label className="text-[12px] font-medium text-[#9aa0a8]" htmlFor="password">
+        <label className="text-[12px] font-medium text-[oklch(0.75_0.02_250)]" htmlFor="password">
           Password
         </label>
         <input

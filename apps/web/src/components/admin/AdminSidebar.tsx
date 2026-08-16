@@ -1,9 +1,9 @@
 'use client'
 
 import { usePathname } from 'next/navigation'
-import { stripAdminPrefix } from '../../lib/admin-paths'
 import Link from 'next/link'
 import LogoMark from '../LogoMark'
+import { ADMIN_PREFIX, stripAdminPrefix } from '../../lib/admin-paths'
 import { adminSignOutAction } from '../../app/admin/sign-in/actions'
 import {
   LayoutDashboard,
@@ -134,7 +134,7 @@ export default function AdminSidebar({ userName, userRole }: Props) {
               return (
                 <Link
                   key={id}
-                  href={path ? `/${path}` : '/'}
+                  href={path ? `${ADMIN_PREFIX}/${path}` : ADMIN_PREFIX}
                   aria-label={label}
                   aria-current={active ? 'page' : undefined}
                   className={`flex items-center gap-2.5 rounded-md px-[9px] py-2 text-[13px] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ih-accent-soft ${

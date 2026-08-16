@@ -40,6 +40,8 @@ export default function CommandPalette() {
   const inputRef = useRef<HTMLInputElement>(null)
   const dialogRef = useRef<HTMLDivElement>(null)
   const restoreFocusTo = useRef<HTMLElement | null>(null)
+  // Read inside the key handler, which is bound once.
+  const openRef = useRef(false)
 
   const flat = useMemo(() => {
     const out: Array<Row & { group: string }> = []
@@ -67,17 +69,22 @@ export default function CommandPalette() {
     function onKey(e: KeyboardEvent) {
       if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {
         e.preventDefault()
-        setOpen((prev) => {
-          if (!prev) restoreFocusTo.current = document.activeElement as HTMLElement
-          return !prev
-        })
+        // Closing via the shortcut must go through close() so focus is
+        // restored and the query is cleared — toggling `open` directly left
+        // focus on the (now unmounted) input and kept the last search.
+        if (openRef.current) close()
+        else {
+          restoreFocusTo.current = document.activeElement as HTMLElement
+          setOpen(true)
+        }
       }
     }
     document.addEventListener('keydown', onKey)
     return () => document.removeEventListener('keydown', onKey)
-  }, [])
+  }, [close])
 
   useEffect(() => {
+    openRef.current = open
     if (open) inputRef.current?.focus()
   }, [open])
 

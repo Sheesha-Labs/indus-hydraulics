@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import { useState, useTransition } from 'react'
 import { resetPasswordAction } from '../../../../actions/auth'
+import { Input } from '@indus/ui'
 
 type Props = {
   token: string
@@ -53,10 +54,11 @@ export default function ResetPasswordForm({ token }: Props) {
       <input type="hidden" name="token" value={token} />
 
       <div>
-        <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+        <label htmlFor="reset-password" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
           New password
         </label>
-        <input
+        <Input
+          id="reset-password"
           type="password"
           name="password"
           required
@@ -64,22 +66,21 @@ export default function ResetPasswordForm({ token }: Props) {
           autoComplete="new-password"
           value={pw}
           onChange={(e) => setPw(e.target.value)}
-          className="h-10 w-full border border-ih-border bg-ih-surface px-3 text-sm text-ih-ink placeholder:text-ih-muted-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ih-accent transition-colors"
         />
       </div>
 
       <div>
-        <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+        <label htmlFor="reset-confirm" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
           Confirm new password
         </label>
-        <input
+        <Input
+          id="reset-confirm"
           type="password"
           required
           minLength={10}
           autoComplete="new-password"
           value={confirm}
           onChange={(e) => setConfirm(e.target.value)}
-          className="h-10 w-full border border-ih-border bg-ih-surface px-3 text-sm text-ih-ink placeholder:text-ih-muted-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ih-accent transition-colors"
         />
       </div>
 

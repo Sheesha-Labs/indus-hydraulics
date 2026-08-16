@@ -101,9 +101,18 @@
 
      PR #162 added it so the palette could flip in one commit while the
      screens migrated one at a time, and set its own exit condition: delete it
-     when a repo-wide grep for "var(--color-" (excluding --color-ih-) returns
-     nothing. That grep now returns 0 — every consumer in apps/ and packages/
-     reads the v2 tokens directly. */
+     when nothing references the v1 names any more.
+
+     VERIFY IT LIKE THIS — the -o matters:
+       grep -rnoI -E 'var\(--color-[a-z0-9-]+\)' apps/web/src packages
+         | grep -v 'var(--color-ih-'
+     (Do not write a glob with a star-slash in it here — that sequence closes
+     this comment and the rest of the file is then parsed as CSS.)
+     A line-based grep (no -o) silently passes: it drops any line carrying BOTH
+     a dead v1 var and a live --color-ih- one, which is precisely how six
+     dangling references survived the deletion and shipped. An unresolvable
+     var() is invalid-at-computed-value-time — the declaration does not fall
+     back to an earlier rule, it computes to unset. */
 }
 
 /* Dark theme removed — it was never reachable. Nothing in the tree set the
@@ -197,11 +206,16 @@
   }
 }
 
-/* ── Typography utilities ── */
+/* ── Typography utilities ──
+   These are UNLAYERED, so they beat every Tailwind utility regardless of
+   specificity. `.mono` therefore must not set anything a utility is expected
+   to override: it previously pinned letter-spacing: 0, which silently killed
+   the tracking-[...] on every eyebrow that also carried .mono — the eyebrow
+   is defined as mono at 0.13em, so the class was cancelling the thing it
+   exists to express. Family and figures only. */
 .mono {
   font-family: var(--font-mono);
   font-feature-settings: 'tnum';
-  letter-spacing: 0;
 }
 
 .serif {
@@ -250,11 +264,11 @@
   margin: 0 0 22px;
 }
 .sc-article-body strong {
-  color: var(--color-primary);
+  color: var(--color-ih-ink);
   font-weight: 600;
 }
 .sc-article-body a {
-  color: var(--color-accent);
+  color: var(--color-ih-accent);
   text-decoration: underline;
   text-underline-offset: 3px;
 }
@@ -268,7 +282,7 @@
 .sc-lead {
   font-size: 22px;
   line-height: 1.5;
-  color: var(--color-primary);
+  color: var(--color-ih-ink);
 }
 .sc-lead::first-letter {
   font-family: var(--font-sans);
@@ -277,20 +291,29 @@
   line-height: 0.9;
   float: left;
   margin: 6px 12px 0 0;
-  color: var(--color-accent);
+  color: var(--color-ih-accent);
 }
 
-/* ── Scrollbar (webkit) ── */
+/* ── Scrollbar (webkit) ──
+   Declaring ::-webkit-scrollbar at all opts the element OUT of the native
+   scrollbar and onto the custom one, so if these two colours fail to resolve
+   the thumb is not "default" — it is invisible. Both referenced deleted v1
+   tokens and did exactly that across every overflow region in Chromium and
+   WebKit, which also broke 03 §6's requirement that the compare matrix keep
+   "a visible scroll affordance, not a hidden one". */
 ::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
+  width: 8px;
+  height: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: var(--color-deep);
+  background: var(--color-ih-surface-2);
 }
 ::-webkit-scrollbar-thumb {
-  background: var(--color-border);
-  border-radius: 0;
+  background: var(--color-ih-border-strong);
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-ih-muted-2);
 }
 
 /* ============================================================

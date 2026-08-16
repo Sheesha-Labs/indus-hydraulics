@@ -9,6 +9,7 @@ import { buildOrgLd, buildWebsiteLd } from '@indus/domain'
 import { JsonLd } from '@indus/ui'
 import SiteHeader from '../../components/SiteHeader'
 import SiteFooter from '../../components/SiteFooter'
+import { SkipToContent } from '@indus/ui'
 import CommandPalette from '../../components/CommandPalette'
 import CompareTrayBadge from '../../components/CompareTrayBadge'
 import { BASE_URL, ORG_ID, SITE_NAME } from '../../lib/seo'
@@ -149,8 +150,13 @@ export default async function StorefrontLayout({ children }: { children: React.R
   // rendered DOM is identical to before the merge.
   return (
     <>
+        <SkipToContent />
         <SiteHeader />
-        <div className="flex-1">{children}</div>
+        {/* A real <main> with an id, so the skip link has somewhere to go and
+            assistive tech has a landmark. This was a bare div. */}
+        <main id="main" className="flex-1">
+          {children}
+        </main>
         <SiteFooter />
         <CommandPalette />
         <CompareTrayBadge />

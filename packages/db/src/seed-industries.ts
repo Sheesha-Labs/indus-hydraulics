@@ -62,7 +62,7 @@ export const INDUSTRY_SEED: IndustrySeed[] = [
     breadcrumb: 'OIL & GAS',
     headline:
       'Hydraulics for wells, pipelines and refineries — where downtime is never an option.',
-    gradient: 'linear-gradient(160deg,oklch(0.18 0.04 45),oklch(0.14 0.03 50))',
+    gradient: 'linear-gradient(160deg,oklch(0.275 0.055 252),oklch(0.20 0.045 252))',
     position: 1,
     chips: ['API 6A / 16A RATED', 'ATEX / IECEx', 'NACE MR0175', 'H₂S TRIM'],
     stats: [
@@ -105,7 +105,7 @@ export const INDUSTRY_SEED: IndustrySeed[] = [
     tagline: 'UNDERGROUND · OPEN PIT · SURFACE',
     breadcrumb: 'MINING',
     headline: 'Heavy-duty hydraulics for roof supports, haul trucks and continuous miners.',
-    gradient: 'linear-gradient(160deg,oklch(0.2 0.02 80),oklch(0.16 0.015 85))',
+    gradient: 'linear-gradient(160deg,oklch(0.275 0.055 252),oklch(0.20 0.045 252))',
     position: 2,
     chips: ['HIGH-CYCLE RATED', 'IP67 ENCLOSURES', 'COAL MINE APPROVED', 'CBM CERTIFIED'],
     stats: [
@@ -148,7 +148,7 @@ export const INDUSTRY_SEED: IndustrySeed[] = [
     tagline: 'VESSELS · OFFSHORE · DREDGING',
     breadcrumb: 'MARINE & OFFSHORE',
     headline: "Hydraulics that don't quit, when the deck does.",
-    gradient: 'linear-gradient(160deg,oklch(0.22 0.04 230),oklch(0.18 0.03 235))',
+    gradient: 'linear-gradient(160deg,oklch(0.275 0.055 252),oklch(0.20 0.045 252))',
     position: 3,
     chips: ['★ DNV · LR · ABS · IRS APPROVED', 'SS316 / DUPLEX OPTIONS', 'IP66 ENCLOSURES', 'ATEX / IECEx ON REQUEST'],
     stats: [
@@ -191,7 +191,7 @@ export const INDUSTRY_SEED: IndustrySeed[] = [
     tagline: 'ROLLING MILLS · PRESSES · CASTING',
     breadcrumb: 'STEEL & METALS',
     headline: 'Proportional control for rolling mills, presses and casting lines.',
-    gradient: 'linear-gradient(160deg,oklch(0.2 0.01 200),oklch(0.15 0.01 205))',
+    gradient: 'linear-gradient(160deg,oklch(0.275 0.055 252),oklch(0.20 0.045 252))',
     position: 4,
     chips: ['ROLLING MILLS', 'SERVO-HYDRAULIC', 'HIGH-FORCE CYLINDERS', 'HOT-MILL SEALS'],
     stats: [
@@ -234,7 +234,7 @@ export const INDUSTRY_SEED: IndustrySeed[] = [
     tagline: 'EXCAVATORS · CRANES · CONCRETE',
     breadcrumb: 'CONSTRUCTION',
     headline: 'Replacement hydraulics for excavators, cranes and concrete pumps — fast.',
-    gradient: 'linear-gradient(160deg,oklch(0.22 0.03 60),oklch(0.17 0.025 65))',
+    gradient: 'linear-gradient(160deg,oklch(0.275 0.055 252),oklch(0.20 0.045 252))',
     position: 5,
     chips: ['OEM REPLACEMENT', 'NEXT-DAY METRO DELIVERY', 'ALL MAJOR BRANDS', 'GENUINE & AFTERMARKET'],
     stats: [
@@ -277,7 +277,7 @@ export const INDUSTRY_SEED: IndustrySeed[] = [
     tagline: 'HYDRO · WIND · THERMAL · DAM GATES',
     breadcrumb: 'POWER & ENERGY',
     headline: 'Precision actuators for hydro turbines, wind pitch systems and dam gates.',
-    gradient: 'linear-gradient(160deg,oklch(0.2 0.03 300),oklch(0.15 0.025 305))',
+    gradient: 'linear-gradient(160deg,oklch(0.275 0.055 252),oklch(0.20 0.045 252))',
     position: 6,
     chips: ['IEC 61511 FUNCTIONAL SAFETY', 'TURBINE GOVERNORS', 'PITCH CONTROL', 'REDUNDANT SYSTEMS'],
     stats: [

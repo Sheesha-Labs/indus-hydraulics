@@ -2,6 +2,7 @@
 
 import { useActionState, useState } from 'react'
 import { submitContactForm, type ContactFormState } from './actions'
+import { Input, Select, Textarea, Field as UiField } from '@indus/ui'
 
 const TABS = [
   { id: 'quotation', label: 'Quotation request' },
@@ -95,17 +96,16 @@ export default function ContactFormClient() {
         <div className="grid grid-cols-2 gap-3">
           <Field label="Company *" name="company" placeholder="Your company" required error={fieldErrors.company} />
           <div>
-            <label className="block text-[12px] font-medium text-ih-ink-2 mb-1.5">Industry</label>
-            <select
+            <label htmlFor="contact-industry" className="block text-[12px] font-medium text-ih-ink-2 mb-1.5">Industry</label>
+            <Select
+              id="contact-industry"
               name="industry"
-              defaultValue=""
-              className="w-full h-10 px-3 border border-ih-border bg-ih-bg text-[13px] text-ih-ink focus:outline-none focus:border-ih-accent"
-            >
+              defaultValue="">
               <option value="">Select…</option>
               {INDUSTRIES.map((ind) => (
                 <option key={ind} value={ind}>{ind}</option>
               ))}
-            </select>
+            </Select>
           </div>
         </div>
         <Field
@@ -117,13 +117,12 @@ export default function ContactFormClient() {
           error={fieldErrors.skus}
         />
         <div>
-          <label className="block text-[12px] font-medium text-ih-ink-2 mb-1.5">Message / application details</label>
-          <textarea
+          <label htmlFor="contact-message" className="block text-[12px] font-medium text-ih-ink-2 mb-1.5">Message / application details</label>
+          <Textarea
+            id="contact-message"
             name="message"
             rows={4}
-            placeholder="Describe the equipment, failure mode, application, or question…"
-            className="w-full px-3 py-2.5 border border-ih-border bg-ih-bg text-[13px] text-ih-ink placeholder:text-ih-muted-2 focus:outline-none focus:border-ih-accent resize-none"
-          />
+            placeholder="Describe the equipment, failure mode, application, or question…" className="resize-none" />
           {fieldErrors.message && <ErrorText>{fieldErrors.message}</ErrorText>}
         </div>
 
@@ -159,22 +158,24 @@ type FieldProps = {
   error?: string
 }
 
+/**
+ * Thin wrapper over the shared primitive. It used to reimplement the field
+ * from scratch — its own border, its own focus treatment, and a <label> with
+ * no htmlFor, so clicking the label focused nothing. UiField generates the id
+ * and wires the label, the hint, and the error state.
+ */
 function Field({ label, name, type = 'text', placeholder, required, mono, hint, error }: FieldProps) {
   return (
-    <div>
-      <label className="block text-[12px] font-medium text-ih-ink-2 mb-1.5">{label}</label>
-      <input
+    <UiField label={label} hint={hint} error={error}>
+      <Input
         type={type}
         name={name}
         placeholder={placeholder}
         required={required}
-        className={`w-full h-10 px-3 border bg-ih-bg text-[13px] text-ih-ink placeholder:text-ih-muted-2 focus:outline-none focus:border-ih-accent ${
-          mono ? 'font-mono' : ''
-        } ${error ? 'border-ih-danger' : 'border-ih-border'}`}
+        error={error}
+        className={mono ? 'font-mono' : undefined}
       />
-      {hint && !error && <p className="font-mono text-[11px] text-ih-muted mt-1">{hint}</p>}
-      {error && <ErrorText>{error}</ErrorText>}
-    </div>
+    </UiField>
   )
 }
 

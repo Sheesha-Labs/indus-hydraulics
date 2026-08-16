@@ -168,7 +168,35 @@ export default function SiteHeaderClient({
             if (kind !== null) {
               const isOpen = activeDropdown === kind
               return (
-                <div key={item.id} onMouseEnter={() => openDropdown(kind)} onMouseLeave={closeDropdown}>
+                /*
+                  The panel opened on hover ONLY, so there was no keyboard
+                  path to the mega menu at all — and it carries 175 category
+                  links. Focusing the trigger now opens it and Escape closes
+                  it and returns focus to the trigger.
+
+                  Note there is deliberately no blur-close: the panel renders
+                  as a SIBLING of this element, not a child, so a blur handler
+                  here would fire the instant focus moved into the panel and
+                  slam it shut. Dismissal is Escape, clicking away, or
+                  focusing a different top-level item (which just replaces the
+                  open kind).
+
+                  Still missing, and larger than this fix: arrow-key roving
+                  within the three panes.
+                */
+                <div
+                  key={item.id}
+                  onMouseEnter={() => openDropdown(kind)}
+                  onMouseLeave={closeDropdown}
+                  onFocus={() => openDropdown(kind)}
+                  onKeyDown={(e) => {
+                    if (e.key === 'Escape' && isOpen) {
+                      e.preventDefault()
+                      closeDropdownImmediate()
+                      ;(e.currentTarget.querySelector('a') as HTMLElement | null)?.focus()
+                    }
+                  }}
+                >
                   <Link
                     href={href}
                     aria-current={isActive(href) ? 'page' : undefined}

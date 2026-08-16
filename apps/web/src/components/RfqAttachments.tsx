@@ -1,6 +1,6 @@
 'use client'
 
-import { useCallback, useRef, useState } from 'react'
+import { useCallback, useRef, useState, useId } from 'react'
 
 /**
  * The RFQ attachment field.
@@ -117,12 +117,22 @@ export default function RfqAttachments({ name = 'attachments' }: { name?: string
     [upload],
   )
 
+  const fileInputId = useId()
   const ready = rows.filter((r) => r.status === 'done' && r.uploaded).map((r) => r.uploaded!)
   const busy = rows.some((r) => r.status === 'uploading')
 
   return (
     <div>
-      <label className="mb-1.5 block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">
+      {/*
+        The real file input is sr-only and sits inside the dropzone below, so
+        this caption pairs with it by id. It carried no htmlFor before, which
+        left the only keyboard-reachable control in the whole dropzone
+        unnamed.
+      */}
+      <label
+        htmlFor={fileInputId}
+        className="mb-1.5 block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted"
+      >
         Attachments — drawings, schedules, nameplate photos
       </label>
 
@@ -162,6 +172,7 @@ export default function RfqAttachments({ name = 'attachments' }: { name?: string
         </p>
         <input
           ref={inputRef}
+          id={fileInputId}
           type="file"
           multiple
           accept={ACCEPT}

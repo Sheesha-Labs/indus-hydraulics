@@ -7,13 +7,14 @@ import {
   buildCompareRows,
   validateCompareSet,
   type CompareProductInput,
+  type CompareRow,
   type CompareTemplate,
   type CompareValidationResult,
 } from '@indus/domain'
 import { mediaUrl } from '../../../lib/media'
 
 type Props = {
-  searchParams: Promise<{ skus?: string }>
+  searchParams: Promise<{ skus?: string; diff?: string }>
 }
 
 export const metadata: Metadata = { title: 'Compare Products' }
@@ -84,9 +85,44 @@ export default async function ComparePage({ searchParams }: Props) {
 
   const emptySlots = MAX_COMPARE - sortedProducts.length
 
+  const diffOnly = sp.diff === '1'
+
+  /*
+    The point of a spec matrix is the DIFFERENCES. 02-screen-index.md §01:
+    "Rows where values differ get emphasis; identical rows recede."
+
+    Computed over the POPULATED cells only — a missing value is not a
+    difference, it is a gap in the data, and counting it as one would light up
+    half the table on a thin catalogue.
+  */
+  function rowDiffers(row: CompareRow): boolean {
+    const populated = row.cells.map((c) => c.display).filter(Boolean)
+    return new Set(populated).size > 1
+  }
+
+  // "Differences only" hides the identical rows outright; a section with
+  // nothing left drops its heading too rather than leaving a band over empty
+  // space.
+  const visibleSections = diffOnly
+    ? sections
+        .map((section) => ({ ...section, rows: section.rows.filter(rowDiffers) }))
+        .filter((section) => section.rows.length > 0)
+    : sections
+
+  function withView(base: string): string {
+    if (!diffOnly) return base
+    return base.includes('?') ? `${base}&diff=1` : `${base}?diff=1`
+  }
+
   function removeUrl(sku: string): string {
     const remaining = skuList.filter((s) => s !== sku)
-    return remaining.length > 0 ? `/compare?skus=${remaining.join(',')}` : `/compare`
+    return withView(remaining.length > 0 ? `/compare?skus=${remaining.join(',')}` : `/compare`)
+  }
+
+  function viewUrl(wantDiff: boolean): string {
+    const base = skuList.length > 0 ? `/compare?skus=${skuList.join(',')}` : '/compare'
+    if (!wantDiff) return base
+    return base.includes('?') ? `${base}&diff=1` : `${base}?diff=1`
   }
 
   return (
@@ -138,22 +174,54 @@ export default async function ComparePage({ searchParams }: Props) {
         <div>
           {!validation.ok && <ValidationBanner validation={validation} sortedProducts={sortedProducts} removeUrl={removeUrl} />}
 
-          {/* Filter controls row (decorative — TODO wire up) */}
+          {/*
+            These were three <button>s wired to nothing, styled exactly like
+            working controls — one of them even painted as the active state.
+            A control that looks operable and is not is worse than no control:
+            the reader concludes the page is broken, not that the feature is
+            unbuilt.
+
+            "All specs" / "Differences only" now toggle for real, as links
+            carrying a URL parameter so the page stays a server component and
+            the view survives a refresh or a shared link. "Datasheet specs"
+            was removed — no behaviour for it is defined anywhere in the
+            handoff, so there was nothing to wire it to.
+          */}
           <div className="flex justify-between items-center py-[18px] text-[12px]">
-            <div className="flex gap-1.5">
-              <button className="h-8 rounded-sm bg-ih-accent px-3 text-[12.5px] font-medium text-white">All specs</button>
-              <button className="h-8 rounded-sm border border-ih-border px-3 text-[12.5px] text-ih-ink-2 transition-colors hover:border-ih-accent hover:text-ih-accent">Differences only</button>
-              <button className="h-8 rounded-sm border border-ih-border px-3 text-[12.5px] text-ih-ink-2 transition-colors hover:border-ih-accent hover:text-ih-accent">Datasheet specs</button>
+            <div className="flex gap-1.5" role="group" aria-label="Spec rows shown">
+              <Link
+                href={viewUrl(false)}
+                aria-current={diffOnly ? undefined : 'true'}
+                className={
+                  diffOnly
+                    ? 'h-8 grid place-items-center rounded-sm border border-ih-border px-3 text-[12.5px] text-ih-ink-2 transition-colors hover:border-ih-accent hover:text-ih-accent'
+                    : 'h-8 grid place-items-center rounded-sm bg-ih-accent px-3 text-[12.5px] font-medium text-white'
+                }
+              >
+                All specs
+              </Link>
+              <Link
+                href={viewUrl(true)}
+                aria-current={diffOnly ? 'true' : undefined}
+                className={
+                  diffOnly
+                    ? 'h-8 grid place-items-center rounded-sm bg-ih-accent px-3 text-[12.5px] font-medium text-white'
+                    : 'h-8 grid place-items-center rounded-sm border border-ih-border px-3 text-[12.5px] text-ih-ink-2 transition-colors hover:border-ih-accent hover:text-ih-accent'
+                }
+              >
+                Differences only
+              </Link>
             </div>
           </div>
 
-          <div className="overflow-x-auto">
+          <div className="overflow-x-auto" role="table" aria-label="Specification comparison">
             {/* Column headers */}
             <div
+              role="row"
               className="grid border-t border-b border-ih-border"
               style={{ gridTemplateColumns: GRID_COLS }}
             >
-              <div className="p-5 flex items-end font-mono text-[11px] text-ih-muted uppercase tracking-[0.06em]">
+              <div role="columnheader" className="p-5 flex items-end font-mono text-[11px] text-ih-muted uppercase tracking-[0.06em]">
                 {sortedProducts.length} products · compare up to {MAX_COMPARE}
               </div>
               {sortedProducts.map((product) => {
@@ -166,7 +234,7 @@ export default async function ComparePage({ searchParams }: Props) {
                     ? `Low · ${product.stockQty} units${product.stockWarehouse ? ` · ${product.stockWarehouse}` : ''}`
                     : 'Lead time only'
                 return (
-                  <div key={product.id} className="border-l border-ih-border bg-ih-surface p-5 relative">
+                  <div role="columnheader" key={product.id} className="border-l border-ih-border bg-ih-surface p-5 relative">
                     <Link
                       href={removeUrl(product.sku)}
                       aria-label={`Remove ${product.sku}`}
@@ -205,6 +273,7 @@ export default async function ComparePage({ searchParams }: Props) {
               {Array.from({ length: emptySlots }).map((_, i) => (
                 <div
                   key={`empty-${i}`}
+                  role="columnheader"
                   className="flex items-center justify-center border-l border-dashed border-ih-border-strong p-5"
                 >
                   <Link href={`/c`} className="text-center text-ih-muted hover:text-ih-ink transition-colors">
@@ -217,33 +286,28 @@ export default async function ComparePage({ searchParams }: Props) {
             </div>
 
             {/* Spec sections — only when validation passes */}
-            {validation.ok && sections.map((section) => (
-              <div key={section.group}>
+            {validation.ok && visibleSections.map((section) => (
+              <div role="rowgroup" key={section.group}>
                 <div
+                  role="row"
                   className="grid bg-ih-navy font-mono text-[10.5px] uppercase tracking-[0.12em] text-white"
                   style={{ gridTemplateColumns: GRID_COLS }}
                 >
-                  <div className="px-4 py-2.5">{section.group}</div>
-                  {Array.from({ length: MAX_COMPARE }).map((_, i) => <div key={i} />)}
+                  <div role="columnheader" className="px-4 py-2.5">{section.group}</div>
+                  {/* Spacers keep the cell count consistent across rows. */}
+                  {Array.from({ length: MAX_COMPARE }).map((_, i) => <div role="cell" key={i} />)}
                 </div>
                 {section.rows.map((row) => {
-                  /*
-                    The point of a spec matrix is the DIFFERENCES. 02-screen-
-                    index.md §01: "Rows where values differ get emphasis;
-                    identical rows recede." Computed over the populated cells
-                    only — a missing value is not a difference, it is a gap in
-                    the data, and treating it as one would light up half the
-                    table on a thin catalogue.
-                  */
-                  const populated = row.cells.map((c) => c.display).filter(Boolean)
-                  const differs = new Set(populated).size > 1
+                  const differs = rowDiffers(row)
                   return (
                   <div
                     key={row.fieldId}
+                    role="row"
                     className="grid border-b border-ih-border"
                     style={{ gridTemplateColumns: GRID_COLS }}
                   >
                     <div
+                      role="rowheader"
                       className={`sticky left-0 z-10 px-[18px] py-3.5 font-mono text-[11px] uppercase tracking-[0.06em] ${
                         differs ? 'bg-ih-accent-soft text-ih-accent' : 'bg-ih-surface-2 text-ih-muted'
                       }`}
@@ -253,6 +317,7 @@ export default async function ComparePage({ searchParams }: Props) {
                     {row.cells.map((cell, i) => (
                       <div
                         key={`${row.fieldId}-${i}`}
+                        role="cell"
                         className={`border-l border-ih-border px-[18px] py-3.5 text-[13px] leading-[1.5] ${
                           differs ? 'bg-ih-surface text-ih-ink' : 'bg-ih-surface text-ih-muted'
                         }`}
@@ -263,7 +328,7 @@ export default async function ComparePage({ searchParams }: Props) {
                       </div>
                     ))}
                     {Array.from({ length: emptySlots }).map((_, i) => (
-                      <div key={`empty-${i}`} className="border-l border-ih-border px-[18px] py-3.5 font-mono text-[13px] text-ih-muted-2">
+                      <div role="cell" key={`empty-${i}`} className="border-l border-ih-border px-[18px] py-3.5 font-mono text-[13px] text-ih-muted-2">
                         —
                       </div>
                     ))}
@@ -274,30 +339,32 @@ export default async function ComparePage({ searchParams }: Props) {
             ))}
 
             {/* Engineer's take */}
-            {validation.ok && sections.length > 0 && (
-              <div>
+            {validation.ok && visibleSections.length > 0 && (
+              <div role="rowgroup">
                 <div
+                  role="row"
                   className="grid bg-ih-navy font-mono text-[10.5px] uppercase tracking-[0.12em] text-white"
                   style={{ gridTemplateColumns: GRID_COLS }}
                 >
-                  <div className="px-4 py-2.5">Engineer&apos;s take</div>
-                  {Array.from({ length: MAX_COMPARE }).map((_, i) => <div key={i} />)}
+                  <div role="columnheader" className="px-4 py-2.5">Engineer&apos;s take</div>
+                  {Array.from({ length: MAX_COMPARE }).map((_, i) => <div role="cell" key={i} />)}
                 </div>
                 <div
+                  role="row"
                   className="grid border-b border-ih-border"
                   style={{ gridTemplateColumns: GRID_COLS }}
                 >
-                  <div className="px-[18px] py-3.5 font-mono text-[11px] uppercase tracking-[0.06em] text-ih-muted bg-ih-bg">
+                  <div role="rowheader" className="px-[18px] py-3.5 font-mono text-[11px] uppercase tracking-[0.06em] text-ih-muted bg-ih-bg">
                     Best for
                   </div>
                   {sortedProducts.map((product) => (
-                    <div key={product.id} className="px-[18px] py-3.5 border-l border-ih-border bg-ih-surface text-[13px] leading-[1.5]">
+                    <div role="cell" key={product.id} className="px-[18px] py-3.5 border-l border-ih-border bg-ih-surface text-[13px] leading-[1.5]">
                       Contact our engineers for a specific application recommendation for{' '}
                       <span className="font-mono text-[11px] text-ih-muted">{product.sku}</span>
                     </div>
                   ))}
                   {Array.from({ length: emptySlots }).map((_, i) => (
-                    <div key={`empty-${i}`} className="px-[18px] py-3.5 border-l border-ih-border text-ih-muted font-mono text-[13px]">—</div>
+                    <div role="cell" key={`empty-${i}`} className="px-[18px] py-3.5 border-l border-ih-border text-ih-muted font-mono text-[13px]">—</div>
                   ))}
                 </div>
               </div>

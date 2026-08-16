@@ -6,6 +6,7 @@ import { getValidTransitions } from '@indus/domain'
 import { updateRfqStatus, saveLineReview } from './actions'
 import SendQuoteComposer from '../../../../../components/admin/SendQuoteComposer'
 import { formatAed, formatDayMonthYear } from '../../../../../lib/format'
+import { signedUrlFor } from '../../../../../lib/supabase'
 
 export const metadata: Metadata = { title: 'RFQ Detail — Indus Admin' }
 
@@ -81,6 +82,16 @@ export default async function AdminRfqDetailPage({ params }: Props) {
   })
 
   if (!rfq) notFound()
+
+  // Attachments live in a PRIVATE bucket, so the stored path is not a URL.
+  // Mint a short-lived signed URL per attachment at render time.
+  const attachmentLinks = await Promise.all(
+    rfq.attachments.map(async (att) => ({
+      id: att.id,
+      filename: att.media.originalFilename,
+      href: await signedUrlFor(att.media.storagePath),
+    })),
+  )
 
   const [engineers, settings] = await Promise.all([
     db.staffUser.findMany({
@@ -456,15 +467,15 @@ export default async function AdminRfqDetailPage({ params }: Props) {
             <div className="border border-ih-border bg-ih-surface p-4">
               <h3 className="font-mono text-[10px] tracking-[0.1em] uppercase text-ih-muted mb-3">Attachments</h3>
               <div className="flex flex-col gap-2">
-                {rfq.attachments.map((att) => (
+                {attachmentLinks.map((att) => (
                   <a
                     key={att.id}
-                    href={att.media.storagePath}
+                    href={att.href}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 font-mono text-[12px] text-ih-accent hover:underline"
                   >
-                    ↓ {att.media.originalFilename}
+                    ↓ {att.filename}
                   </a>
                 ))}
               </div>

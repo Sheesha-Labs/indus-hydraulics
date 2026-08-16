@@ -1,6 +1,7 @@
 'use client'
 
 import { useActionState } from 'react'
+import { Field as UiField, Input } from '@indus/ui'
 import {
   cancelEmailChange,
   changePassword,
@@ -315,6 +316,12 @@ type FieldProps = {
   error?: string
 }
 
+/**
+ * Thin wrapper over the shared primitive. It used to reimplement the field —
+ * its own border, its own focus treatment, and a <label> with no htmlFor, so
+ * clicking the label focused nothing. UiField generates the id and wires the
+ * label, the hint, and the error state.
+ */
 function Field({
   label,
   name,
@@ -328,27 +335,17 @@ function Field({
   error,
 }: FieldProps) {
   return (
-    <div>
-      <label className="block text-[12px] font-medium text-ih-ink-2 mb-1.5">
-        {label}
-      </label>
-      <input
+    <UiField label={label} hint={hint} error={error}>
+      <Input
         type={type}
         name={name}
         defaultValue={defaultValue}
         placeholder={placeholder}
         required={required}
         autoComplete={autoComplete}
-        className={`w-full h-10 px-3 border bg-ih-bg text-[13px] text-ih-ink placeholder:text-ih-muted-2 focus:outline-none focus:border-ih-accent ${
-          mono ? 'font-mono' : ''
-        } ${error ? 'border-ih-danger' : 'border-ih-border'}`}
+        error={error}
+        className={mono ? 'font-mono' : undefined}
       />
-      {hint && !error && (
-        <p className="font-mono text-[11px] text-ih-muted mt-1">{hint}</p>
-      )}
-      {error && (
-        <p className="text-[12px] text-ih-danger mt-1">{error}</p>
-      )}
-    </div>
+    </UiField>
   )
 }
