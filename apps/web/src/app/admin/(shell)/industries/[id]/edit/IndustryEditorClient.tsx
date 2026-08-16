@@ -7,6 +7,7 @@ import SeoEntityDrawer, {
 } from '../../../../../../components/admin/seo/SeoEntityDrawer'
 import type { RecentMedia } from '../../../../../../components/admin/seo/OgImagePicker'
 import { updateIndustrySeo, uploadIndustryOgImage } from './actions'
+import AdminPageShell from '../../../../../../components/admin/AdminPageShell'
 
 type Industry = {
   id: string
@@ -55,26 +56,23 @@ export default function IndustryEditorClient({ industry, recentImages }: Props) 
   const [savedAt, setSavedAt] = useState<string | null>(null)
 
   return (
-    <div className="px-8 py-6 pb-16">
-      <div className="flex items-end justify-between mb-1 gap-4">
-        <div>
-          <h1 className="text-[24px] font-semibold tracking-tight">{industry.name}</h1>
-          <p className="font-mono text-[12px] text-ih-muted mt-1">
-            /industries/{industry.slug}
-          </p>
-        </div>
-        <div className="flex items-center gap-2">
-          {savedAt && (
-            <span className="text-[12px] text-[oklch(0.55_0.12_150)]">Saved at {savedAt}</span>
-          )}
-          <Link
-            href="/admin/industries"
-            className="h-9 px-3 grid place-items-center font-mono text-[12px] border border-ih-border hover:bg-ih-surface-2"
-          >
-            ← All industries
-          </Link>
-        </div>
-      </div>
+    <AdminPageShell
+      title={industry.name}
+      sub={<span className="font-mono">/industries/{industry.slug}</span>}
+      actions={
+        <>
+        {savedAt && (
+          <span className="text-[12px] text-[oklch(0.55_0.12_150)]">Saved at {savedAt}</span>
+        )}
+        <Link
+          href="/admin/industries"
+          className="h-9 px-3 grid place-items-center font-mono text-[12px] border border-ih-border hover:bg-ih-surface-2"
+        >
+          ← All industries
+        </Link>
+        </>
+      }
+    >
 
       <div className="flex border-b border-ih-border mt-6 mb-6">
         {TABS.map((t) => (
@@ -115,7 +113,7 @@ export default function IndustryEditorClient({ industry, recentImages }: Props) 
           onSaved={() => setSavedAt(new Date().toLocaleTimeString())}
         />
       )}
-    </div>
+    </AdminPageShell>
   )
 }
 

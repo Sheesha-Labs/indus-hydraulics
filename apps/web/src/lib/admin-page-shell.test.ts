@@ -35,15 +35,10 @@ const SHELL = path.resolve(
  * to it without editing this file.
  */
 const PENDING = new Set([
-  'customers/[id]/page.tsx',
-  'rfqs/[code]/page.tsx',
   // Header lives in a 'use client' editor child; the title moves to the server
   // page when those are converted.
-  'brands/[id]/edit/page.tsx',
-  'categories/[id]/edit/page.tsx',
   'cms/blog/[id]/page.tsx',
   'cms/pages/[id]/page.tsx',
-  'industries/[id]/edit/page.tsx',
   'navigation/[menuSlug]/page.tsx',
   'products/[id]/edit/page.tsx',
 ])
@@ -78,9 +73,36 @@ function rendersShell(file: string): boolean {
   return /<AdminPageShell[\s>]/.test(code)
 }
 
-/** True when this page, or any layout above it, renders the shell. */
+/**
+ * Components the page imports from its own directory.
+ *
+ * The editor pages keep their header in a 'use client' child, because it
+ * carries `savedAt` — client state bumped by the editor's own child tabs.
+ * Hoisting that to the server page would sever the indicator from every
+ * writer, so the child renders the shell and the page renders the child.
+ * One level is enough for every case here and keeps the rule easy to reason
+ * about.
+ */
+function localChildren(rel: string): string[] {
+  const file = path.join(SHELL, rel)
+  let src: string
+  try {
+    src = readFileSync(file, 'utf8')
+  } catch {
+    return []
+  }
+  const dir = path.dirname(file)
+  const out: string[] = []
+  for (const m of src.matchAll(/from\s+'(\.\/[^']+)'/g)) {
+    out.push(path.join(dir, `${m[1]!}.tsx`))
+  }
+  return out
+}
+
+/** True when this page, a local child it renders, or a layout above it, renders the shell. */
 function covered(rel: string): boolean {
   if (rendersShell(path.join(SHELL, rel))) return true
+  if (localChildren(rel).some(rendersShell)) return true
 
   let dir = path.dirname(rel)
   for (;;) {

@@ -8,6 +8,8 @@ import SendQuoteComposer from '../../../../../components/admin/SendQuoteComposer
 import { formatAed, formatDayMonthYear } from '../../../../../lib/format'
 import { signedUrlFor } from '../../../../../lib/supabase'
 import { Input, Select, Textarea } from '@indus/ui'
+import AdminPageShell from '../../../../../components/admin/AdminPageShell'
+import { ADMIN_PREFIX } from '../../../../../lib/admin-paths'
 
 export const metadata: Metadata = { title: 'RFQ Detail — Indus Admin' }
 
@@ -114,23 +116,36 @@ export default async function AdminRfqDetailPage({ params }: Props) {
   const canCompose = ['engineer_review', 'engineer_questions_pending', 'quote_sent'].includes(rfq.status)
 
   return (
-    <div className="px-8 py-6 pb-16">
-      {/* Header */}
-      <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-6">
-        <div>
-          <Link href={`/admin/rfqs`} className="font-mono text-[12px] text-ih-muted hover:text-ih-ink mb-2 inline-block">
+    <AdminPageShell
+      // RFQ code — machine-readable, so mono per §2.6.
+      title={<span className="font-mono">{rfq.code}</span>}
+      sub={rfq.subject || undefined}
+      actions={
+        <>
+          {/*
+            Status and urgency, not buttons — but this is the RFQ workflow's
+            primary screen and they are the two facts that decide what an
+            engineer does next.
+
+            The status TRANSITION buttons stay in the body. Each is a
+            <button type="submit"> inside its own <form action={serverAction}>,
+            and moving one out of its form breaks it with no compile error, no
+            lint failure and no runtime error — the click would just stop
+            advancing the RFQ.
+          */}
+          <StatusBadge status={rfq.status} />
+          <span className="font-mono text-[11px] text-ih-muted">
+            {URGENCY_LABEL[rfq.urgency] ?? rfq.urgency}
+          </span>
+          <Link
+            href={`${ADMIN_PREFIX}/rfqs`}
+            className="flex h-9 items-center rounded-md border border-ih-border bg-ih-surface px-4 text-[13px] font-medium transition-colors hover:border-ih-accent hover:text-ih-accent"
+          >
             ← RFQ Queue
           </Link>
-          <h1 className="text-[24px] font-semibold tracking-tight">{rfq.code}</h1>
-          {rfq.subject && <p className="text-[14px] text-ih-muted mt-1">{rfq.subject}</p>}
-        </div>
-        <div className="flex flex-col items-end gap-2">
-          <StatusBadge status={rfq.status} />
-          <div className="font-mono text-[11px] text-ih-muted">
-            {URGENCY_LABEL[rfq.urgency] ?? rfq.urgency}
-          </div>
-        </div>
-      </div>
+        </>
+      }
+    >
 
       {/* Status action buttons + quote preview link */}
       <div className="flex flex-wrap items-center gap-2 mb-6 pb-6 border-b border-ih-border">
@@ -480,7 +495,7 @@ export default async function AdminRfqDetailPage({ params }: Props) {
           )}
         </div>
       </div>
-    </div>
+    </AdminPageShell>
   )
 }
 
