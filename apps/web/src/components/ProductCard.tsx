@@ -91,6 +91,8 @@ export default function ProductCard({ product }: ProductCardProps) {
             sku={product.sku}
             categoryId={product.categoryId}
             specTemplateId={product.specTemplateId}
+            title={product.title}
+            imageUrl={imgUrl ?? undefined}
           />
         </div>
       </div>

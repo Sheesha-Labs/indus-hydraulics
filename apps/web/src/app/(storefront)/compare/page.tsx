@@ -9,9 +9,7 @@ import {
   type CompareProductInput,
   type CompareTemplate,
   type CompareValidationResult,
-  type CurrencyCode,
 } from '@indus/domain'
-import { ProductPrice } from '@indus/ui'
 import { mediaUrl } from '../../../lib/media'
 
 type Props = {
@@ -92,42 +90,42 @@ export default async function ComparePage({ searchParams }: Props) {
   }
 
   return (
-    <div className="max-w-[1400px] mx-auto px-8 py-6 pb-20">
+    <div className="mx-auto max-w-[1440px] px-5 py-6 pb-28 sm:px-8 xl:px-12">
       {/* Breadcrumb */}
-      <nav className="flex items-center gap-3.5 font-mono text-[12px] text-[var(--color-muted)] mb-3.5">
-        <Link href={`/`} className="hover:text-[var(--color-primary)]">Home</Link>
+      <nav className="flex items-center gap-3.5 font-mono text-[12px] text-ih-muted mb-3.5">
+        <Link href={`/`} className="hover:text-ih-ink">Home</Link>
         <span className="opacity-40">/</span>
-        <span className="text-[var(--color-primary)]">
+        <span className="text-ih-ink">
           Compare · {sortedProducts.length} product{sortedProducts.length !== 1 ? 's' : ''}
         </span>
       </nav>
 
       {/* Title bar */}
-      <header className="flex justify-between items-end gap-6 pb-5 border-b border-[var(--color-border)] mb-0">
+      <header className="mb-0 flex flex-col justify-between gap-6 border-b border-ih-border pb-5 lg:flex-row lg:items-end">
         <div>
-          <div className="font-mono text-[11px] tracking-[0.16em] uppercase text-[var(--color-muted)] mb-1.5">
+          <div className="mb-3 font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">
             SIDE-BY-SIDE
           </div>
-          <h1 className="text-[36px] font-semibold tracking-[-0.02em] mb-1">
+          <h1 className="mb-1 font-serif text-[clamp(28px,4vw,36px)] font-normal tracking-[-0.01em]">
             {validation.ok && sortedProducts[0]?.category?.name
               ? sortedProducts[0].category.name
               : 'Compare Products'}
           </h1>
           {sortedProducts.length > 0 && (
-            <p className="text-[14px] text-[var(--color-muted)] max-w-[680px] leading-[1.5]">
+            <p className="text-[14px] text-ih-muted max-w-[680px] leading-[1.5]">
               Comparing {sortedProducts.length} of up to {MAX_COMPARE} products. Specs are aligned row-for-row using the shared spec template.{' '}
               {validation.ok && (
-                <b className="text-[var(--color-primary)]">All matched products can be enquired in a single RFQ.</b>
+                <b className="text-ih-ink">All matched products can be enquired in a single RFQ.</b>
               )}
             </p>
           )}
         </div>
         {sortedProducts.length > 0 && (
-          <div className="flex gap-2 shrink-0">
-            <button className="h-9 px-4 border border-[var(--color-border)] font-mono text-[11px] text-[var(--color-body)] hover:bg-[var(--color-deep)] transition-colors whitespace-nowrap">
+          <div className="flex shrink-0 flex-wrap gap-2">
+            <button className="h-10 whitespace-nowrap rounded-md border border-ih-border-strong px-4 text-[13.5px] text-ih-ink transition-colors hover:border-ih-accent hover:bg-ih-surface-2 hover:text-ih-accent">
               Download spec PDF
             </button>
-            <button className="h-9 px-4 border border-[var(--color-border)] font-mono text-[11px] text-[var(--color-body)] hover:bg-[var(--color-deep)] transition-colors whitespace-nowrap">
+            <button className="h-10 whitespace-nowrap rounded-md border border-ih-border-strong px-4 text-[13.5px] text-ih-ink transition-colors hover:border-ih-accent hover:bg-ih-surface-2 hover:text-ih-accent">
               Email to engineer
             </button>
           </div>
@@ -143,19 +141,19 @@ export default async function ComparePage({ searchParams }: Props) {
           {/* Filter controls row (decorative — TODO wire up) */}
           <div className="flex justify-between items-center py-[18px] text-[12px]">
             <div className="flex gap-1.5">
-              <button className="h-7 px-3 bg-[var(--color-primary)] text-[var(--color-elevated)] font-mono text-[11px]">All specs</button>
-              <button className="h-7 px-3 border border-[var(--color-border)] font-mono text-[11px] text-[var(--color-muted)] hover:bg-[var(--color-deep)] transition-colors">Differences only</button>
-              <button className="h-7 px-3 border border-[var(--color-border)] font-mono text-[11px] text-[var(--color-muted)] hover:bg-[var(--color-deep)] transition-colors">Datasheet specs</button>
+              <button className="h-8 rounded-sm bg-ih-accent px-3 text-[12.5px] font-medium text-white">All specs</button>
+              <button className="h-8 rounded-sm border border-ih-border px-3 text-[12.5px] text-ih-ink-2 transition-colors hover:border-ih-accent hover:text-ih-accent">Differences only</button>
+              <button className="h-8 rounded-sm border border-ih-border px-3 text-[12.5px] text-ih-ink-2 transition-colors hover:border-ih-accent hover:text-ih-accent">Datasheet specs</button>
             </div>
           </div>
 
           <div className="overflow-x-auto">
             {/* Column headers */}
             <div
-              className="grid border-t border-b border-[var(--color-border)]"
+              className="grid border-t border-b border-ih-border"
               style={{ gridTemplateColumns: GRID_COLS }}
             >
-              <div className="p-5 flex items-end font-mono text-[11px] text-[var(--color-muted)] uppercase tracking-[0.06em]">
+              <div className="p-5 flex items-end font-mono text-[11px] text-ih-muted uppercase tracking-[0.06em]">
                 {sortedProducts.length} products · compare up to {MAX_COMPARE}
               </div>
               {sortedProducts.map((product) => {
@@ -168,45 +166,35 @@ export default async function ComparePage({ searchParams }: Props) {
                     ? `Low · ${product.stockQty} units${product.stockWarehouse ? ` · ${product.stockWarehouse}` : ''}`
                     : 'Lead time only'
                 return (
-                  <div key={product.id} className="border-l border-[var(--color-border)] bg-[var(--color-elevated)] p-5 relative">
+                  <div key={product.id} className="border-l border-ih-border bg-ih-surface p-5 relative">
                     <Link
                       href={removeUrl(product.sku)}
                       aria-label={`Remove ${product.sku}`}
-                      className="absolute top-2.5 right-2.5 w-[22px] h-[22px] border border-[var(--color-border)] bg-[var(--color-surface)] grid place-items-center font-mono text-[14px] text-[var(--color-muted)] hover:text-[var(--color-danger)] transition-colors"
+                      className="absolute top-2.5 right-2.5 w-[22px] h-[22px] border border-ih-border bg-ih-bg grid place-items-center font-mono text-[14px] text-ih-muted hover:text-ih-danger transition-colors"
                     >
                       ×
                     </Link>
-                    <div className="aspect-[4/3] bg-[var(--color-deep)] border border-[var(--color-border)] mb-3.5 relative overflow-hidden">
+                    <div className="aspect-[4/3] bg-ih-surface-2 border border-ih-border mb-3.5 relative overflow-hidden">
                       {img ? (
                         <Image src={mediaUrl(img.media.storagePath)} alt={product.title} fill className="object-contain p-4" sizes="25vw" />
                       ) : (
-                        <div className="absolute inset-0 grid place-items-center font-mono text-[11px] text-[var(--color-muted)]">{product.sku}</div>
+                        <div className="absolute inset-0 grid place-items-center font-mono text-[11px] text-ih-muted">{product.sku}</div>
                       )}
                     </div>
                     {product.brand && (
-                      <div className="font-mono text-[10px] tracking-[0.12em] uppercase text-[var(--color-muted)] mb-1">{product.brand.name}</div>
+                      <div className="font-mono text-[10px] tracking-[0.12em] uppercase text-ih-muted mb-1">{product.brand.name}</div>
                     )}
-                    <h3 className="text-[15px] font-semibold leading-snug mb-1.5 tracking-[-0.01em]">{product.title}</h3>
-                    <div className="font-mono text-[11px] text-[var(--color-muted)] mb-2">{product.sku}</div>
-                    <div className="mb-1.5">
-                      <ProductPrice
-                        listPrice={product.listPrice == null ? null : Number(product.listPrice)}
-                        currency={product.listPriceCurrency as CurrencyCode}
-                        compareAtPrice={product.compareAtPrice == null ? null : Number(product.compareAtPrice)}
-                        layout="inline"
-                        size="lg"
-                        quoteCta="Quote on request"
-                      />
-                    </div>
-                    <div className="text-[11px] flex items-center gap-1.5 text-[var(--color-muted)] mb-3.5">
+                    <h3 className="mb-1.5 text-[15px] font-medium leading-snug tracking-[-0.01em]">{product.title}</h3>
+                    <div className="font-mono text-[11px] text-ih-muted mb-2">{product.sku}</div>
+                    <div className="text-[11px] flex items-center gap-1.5 text-ih-muted mb-3.5">
                       <span className="w-1.5 h-1.5 rounded-full" style={{ background: stockColor }} aria-hidden="true" />
                       {stockLabel}
                     </div>
                     <div className="flex flex-col gap-1.5">
-                      <Link href={`/quote`} className="h-8 flex items-center justify-center bg-[var(--color-accent)] text-white text-[12px] font-medium hover:opacity-90 transition-opacity">
+                      <Link href={`/quote`} className="flex h-9 items-center justify-center rounded-sm bg-ih-accent text-[12.5px] font-medium text-ih-accent-fg transition-colors hover:bg-ih-accent-hover">
                         Request quote
                       </Link>
-                      <Link href={`/p/${product.slug}`} className="h-8 flex items-center justify-center border border-[var(--color-border)] text-[12px] text-[var(--color-body)] hover:bg-[var(--color-deep)] transition-colors">
+                      <Link href={`/p/${product.slug}`} className="flex h-9 items-center justify-center rounded-sm border border-ih-border-strong text-[12.5px] text-ih-ink transition-colors hover:border-ih-accent hover:text-ih-accent">
                         View details →
                       </Link>
                     </div>
@@ -217,10 +205,9 @@ export default async function ComparePage({ searchParams }: Props) {
               {Array.from({ length: emptySlots }).map((_, i) => (
                 <div
                   key={`empty-${i}`}
-                  className="border-l border-[var(--color-border)] flex items-center justify-center p-5"
-                  style={{ background: 'repeating-linear-gradient(135deg,var(--color-surface) 0 8px,var(--color-deep) 8px 16px)' }}
+                  className="flex items-center justify-center border-l border-dashed border-ih-border-strong p-5"
                 >
-                  <Link href={`/c`} className="text-center text-[var(--color-muted)] hover:text-[var(--color-primary)] transition-colors">
+                  <Link href={`/c`} className="text-center text-ih-muted hover:text-ih-ink transition-colors">
                     <div className="text-[24px] font-light mb-1.5 opacity-50">+</div>
                     <div className="text-[12px]">Add a {ordinal(sortedProducts.length + i + 1)} product</div>
                     <div className="font-mono text-[10px] mt-0.5 opacity-60">Compare up to {MAX_COMPARE} SKUs</div>
@@ -233,38 +220,56 @@ export default async function ComparePage({ searchParams }: Props) {
             {validation.ok && sections.map((section) => (
               <div key={section.group}>
                 <div
-                  className="grid bg-[var(--color-primary)] text-[var(--color-elevated)] font-mono text-[11px] tracking-[0.14em] uppercase"
+                  className="grid bg-ih-navy font-mono text-[10.5px] uppercase tracking-[0.12em] text-white"
                   style={{ gridTemplateColumns: GRID_COLS }}
                 >
                   <div className="px-4 py-2.5">{section.group}</div>
                   {Array.from({ length: MAX_COMPARE }).map((_, i) => <div key={i} />)}
                 </div>
-                {section.rows.map((row) => (
+                {section.rows.map((row) => {
+                  /*
+                    The point of a spec matrix is the DIFFERENCES. 02-screen-
+                    index.md §01: "Rows where values differ get emphasis;
+                    identical rows recede." Computed over the populated cells
+                    only — a missing value is not a difference, it is a gap in
+                    the data, and treating it as one would light up half the
+                    table on a thin catalogue.
+                  */
+                  const populated = row.cells.map((c) => c.display).filter(Boolean)
+                  const differs = new Set(populated).size > 1
+                  return (
                   <div
                     key={row.fieldId}
-                    className="grid border-b border-[var(--color-border)]"
+                    className="grid border-b border-ih-border"
                     style={{ gridTemplateColumns: GRID_COLS }}
                   >
-                    <div className="px-[18px] py-3.5 font-mono text-[11px] uppercase tracking-[0.06em] text-[var(--color-muted)] bg-[var(--color-surface)]">
+                    <div
+                      className={`sticky left-0 z-10 px-[18px] py-3.5 font-mono text-[11px] uppercase tracking-[0.06em] ${
+                        differs ? 'bg-ih-accent-soft text-ih-accent' : 'bg-ih-surface-2 text-ih-muted'
+                      }`}
+                    >
                       {row.label}
                     </div>
                     {row.cells.map((cell, i) => (
                       <div
                         key={`${row.fieldId}-${i}`}
-                        className="px-[18px] py-3.5 border-l border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] leading-[1.5]"
+                        className={`border-l border-ih-border px-[18px] py-3.5 text-[13px] leading-[1.5] ${
+                          differs ? 'bg-ih-surface text-ih-ink' : 'bg-ih-surface text-ih-muted'
+                        }`}
                       >
                         {cell.display
-                          ? <span className="font-mono">{cell.display}</span>
-                          : <span className="text-[var(--color-muted)]">—</span>}
+                          ? <span className={`font-mono tabular-nums ${differs ? 'font-medium' : ''}`}>{cell.display}</span>
+                          : <span className="text-ih-muted-2">—</span>}
                       </div>
                     ))}
                     {Array.from({ length: emptySlots }).map((_, i) => (
-                      <div key={`empty-${i}`} className="px-[18px] py-3.5 border-l border-[var(--color-border)] text-[var(--color-muted)] font-mono text-[13px]">
+                      <div key={`empty-${i}`} className="border-l border-ih-border px-[18px] py-3.5 font-mono text-[13px] text-ih-muted-2">
                         —
                       </div>
                     ))}
                   </div>
-                ))}
+                  )
+                })}
               </div>
             ))}
 
@@ -272,27 +277,27 @@ export default async function ComparePage({ searchParams }: Props) {
             {validation.ok && sections.length > 0 && (
               <div>
                 <div
-                  className="grid bg-[var(--color-primary)] text-[var(--color-elevated)] font-mono text-[11px] tracking-[0.14em] uppercase"
+                  className="grid bg-ih-navy font-mono text-[10.5px] uppercase tracking-[0.12em] text-white"
                   style={{ gridTemplateColumns: GRID_COLS }}
                 >
                   <div className="px-4 py-2.5">Engineer&apos;s take</div>
                   {Array.from({ length: MAX_COMPARE }).map((_, i) => <div key={i} />)}
                 </div>
                 <div
-                  className="grid border-b border-[var(--color-border)]"
+                  className="grid border-b border-ih-border"
                   style={{ gridTemplateColumns: GRID_COLS }}
                 >
-                  <div className="px-[18px] py-3.5 font-mono text-[11px] uppercase tracking-[0.06em] text-[var(--color-muted)] bg-[var(--color-surface)]">
+                  <div className="px-[18px] py-3.5 font-mono text-[11px] uppercase tracking-[0.06em] text-ih-muted bg-ih-bg">
                     Best for
                   </div>
                   {sortedProducts.map((product) => (
-                    <div key={product.id} className="px-[18px] py-3.5 border-l border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] leading-[1.5]">
+                    <div key={product.id} className="px-[18px] py-3.5 border-l border-ih-border bg-ih-surface text-[13px] leading-[1.5]">
                       Contact our engineers for a specific application recommendation for{' '}
-                      <span className="font-mono text-[11px] text-[var(--color-muted)]">{product.sku}</span>
+                      <span className="font-mono text-[11px] text-ih-muted">{product.sku}</span>
                     </div>
                   ))}
                   {Array.from({ length: emptySlots }).map((_, i) => (
-                    <div key={`empty-${i}`} className="px-[18px] py-3.5 border-l border-[var(--color-border)] text-[var(--color-muted)] font-mono text-[13px]">—</div>
+                    <div key={`empty-${i}`} className="px-[18px] py-3.5 border-l border-ih-border text-ih-muted font-mono text-[13px]">—</div>
                   ))}
                 </div>
               </div>
@@ -302,21 +307,21 @@ export default async function ComparePage({ searchParams }: Props) {
           {/* Dark CTA strip — only when valid */}
           {validation.ok && (
             <div
-              className="grid gap-6 mt-8 px-6 py-5 items-center"
-              style={{ background: 'var(--color-primary)', color: 'white', gridTemplateColumns: '1fr auto' }}
+              className="mt-8 grid items-center gap-6 rounded-lg bg-ih-navy px-6 py-5 text-white"
+              style={{ gridTemplateColumns: '1fr auto' }}
             >
               <div>
-                <div className="font-mono text-[11px] tracking-[0.14em] text-[var(--color-accent)] uppercase mb-1.5">
+                <div className="mb-1.5 font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-steel">
                   NOT SURE WHICH ONE?
                 </div>
                 <div className="text-[18px] tracking-[-0.01em]">
                   Send all {sortedProducts.length} to an Indus engineer · we&apos;ll spec the right one for your application within 1 hour
                 </div>
               </div>
-              <div className="flex gap-2 shrink-0">
+              <div className="flex shrink-0 flex-wrap gap-2">
                 <Link
                   href={`/quote`}
-                  className="h-9 px-4 flex items-center bg-[var(--color-accent)] text-white font-mono text-[12px] hover:opacity-90 transition-opacity whitespace-nowrap"
+                  className="inline-flex h-10 items-center whitespace-nowrap rounded-md bg-ih-accent px-[18px] text-[13.5px] font-medium text-ih-accent-fg transition-colors hover:bg-ih-accent-hover"
                 >
                   RFQ all {sortedProducts.length} →
                 </Link>
@@ -340,12 +345,12 @@ export default async function ComparePage({ searchParams }: Props) {
 
 function EmptyState() {
   return (
-    <div className="py-20 text-center border-t border-[var(--color-border)]">
+    <div className="py-20 text-center border-t border-ih-border">
       <p className="text-[24px] font-semibold mb-3">No products to compare</p>
-      <p className="text-[var(--color-muted)] text-sm mb-6">
+      <p className="text-ih-muted text-sm mb-6">
         Browse the catalogue and add up to {MAX_COMPARE} products from the same category to compare them side by side.
       </p>
-      <Link href={`/c`} className="inline-flex h-10 px-6 items-center bg-[var(--color-accent)] text-white text-sm font-medium hover:opacity-90">
+      <Link href={`/c`} className="inline-flex h-10 items-center rounded-md bg-ih-accent px-6 text-[13.5px] font-medium text-ih-accent-fg transition-colors hover:bg-ih-accent-hover">
         Browse Products
       </Link>
     </div>
@@ -365,14 +370,14 @@ function ValidationBanner({ validation, sortedProducts, removeUrl }: ValidationB
   if (validation.reason === 'missing_template') {
     title = 'Some products have no spec template assigned'
     body = (
-      <p className="text-[13px] leading-[1.55] text-[var(--color-body)]">
+      <p className="text-[13px] leading-[1.55] text-ih-ink-2">
         The compare table aligns rows by spec template. These products have no template yet, so we can&apos;t align them:{' '}
         <span className="font-mono">{validation.offendingSkus.join(', ')}</span>. Remove them, or ask the team to assign a template.
       </p>
     )
   } else if (validation.reason === 'mixed_category') {
     body = (
-      <div className="text-[13px] leading-[1.55] text-[var(--color-body)] space-y-2">
+      <div className="text-[13px] leading-[1.55] text-ih-ink-2 space-y-2">
         <p>Compare only works across products in the <b>same category</b>. The current selection spans:</p>
         <ul className="space-y-1">
           {validation.categoryIds.map((g, idx) => {
@@ -386,7 +391,7 @@ function ValidationBanner({ validation, sortedProducts, removeUrl }: ValidationB
                   <Link
                     key={sku}
                     href={removeUrl(sku)}
-                    className="text-[var(--color-accent)] hover:underline mr-2"
+                    className="text-ih-accent hover:underline mr-2"
                   >
                     remove {sku}
                   </Link>
@@ -399,22 +404,22 @@ function ValidationBanner({ validation, sortedProducts, removeUrl }: ValidationB
     )
   } else if (validation.reason === 'mixed_template') {
     body = (
-      <p className="text-[13px] leading-[1.55] text-[var(--color-body)]">
+      <p className="text-[13px] leading-[1.55] text-ih-ink-2">
         These products are in the same category but use different spec templates, so the rows can&apos;t be aligned 1:1. Remove products until only one template remains.
       </p>
     )
   } else if (validation.reason === 'too_many') {
     title = `Compare supports up to ${validation.max} products`
     body = (
-      <p className="text-[13px] leading-[1.55] text-[var(--color-body)]">
+      <p className="text-[13px] leading-[1.55] text-ih-ink-2">
         You have {validation.count} products selected. Remove at least {validation.count - validation.max} to continue.
       </p>
     )
   }
 
   return (
-    <div className="mt-4 border-l-2 border-[var(--color-accent)] bg-[var(--color-elevated)] p-4">
-      <p className="font-mono text-[11px] tracking-[0.12em] uppercase text-[var(--color-accent)] mb-2">{title}</p>
+    <div className="mt-4 rounded-md border-l-2 border-ih-accent bg-ih-accent-soft p-4">
+      <p className="font-mono text-[11px] tracking-[0.12em] uppercase text-ih-accent mb-2">{title}</p>
       {body}
     </div>
   )

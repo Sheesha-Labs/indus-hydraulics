@@ -7,9 +7,12 @@ type Props = {
   sku: string
   categoryId: string | null
   specTemplateId: string | null
+  /** Display fields for the docked tray's chips. Optional — see compare-tray.ts. */
+  title?: string
+  imageUrl?: string
 }
 
-export default function AddToCompareCardButton({ sku, categoryId, specTemplateId }: Props) {
+export default function AddToCompareCardButton({ sku, categoryId, specTemplateId, title, imageUrl }: Props) {
   const [inTray, setInTray] = useState(false)
 
   useEffect(() => {
@@ -32,7 +35,7 @@ export default function AddToCompareCardButton({ sku, categoryId, specTemplateId
         removeFromTray(sku)
         return
       }
-      const incoming: CompareTrayItem = { sku, categoryId, specTemplateId }
+      const incoming: CompareTrayItem = { sku, categoryId, specTemplateId, title, imageUrl }
       const result = addToTray(incoming)
       if (result.ok) return
       if (result.reason === 'mismatch') {
@@ -44,7 +47,7 @@ export default function AddToCompareCardButton({ sku, categoryId, specTemplateId
         window.alert(`Compare is full — you can compare up to ${result.max} products at a time.`)
       }
     },
-    [sku, categoryId, specTemplateId, inTray],
+    [sku, categoryId, specTemplateId, title, imageUrl, inTray],
   )
 
   if (!categoryId || !specTemplateId) return null

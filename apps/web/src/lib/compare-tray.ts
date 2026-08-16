@@ -27,6 +27,15 @@ export type CompareTrayItem = {
   sku: string
   categoryId: string
   specTemplateId: string
+  /**
+   * Display fields for the docked tray's chips. OPTIONAL on purpose: entries
+   * written before these existed are still valid and simply render as a SKU.
+   * Widening the stored shape with required fields would have broken every
+   * tray already sitting in a customer's browser, and a versioned migration
+   * is not worth it for a session-scoped staging list.
+   */
+  title?: string
+  imageUrl?: string
 }
 
 const STORAGE_KEY = 'compare_items'
