@@ -10,6 +10,7 @@ import { matchTextToOption } from '../../../../../lib/scraper/match'
 import AutoRefresh from './AutoRefresh'
 import JobFilters from './JobFilters'
 import BulkActions from './BulkActions'
+import AdminPageShell from '../../../../../components/admin/AdminPageShell'
 import ScrapedRowCard, {
   type ScrapedRowData,
   type BrandOption,
@@ -248,30 +249,37 @@ export default async function ScraperJobDetailPage({ params, searchParams }: Pro
   const totalPages = Math.max(1, Math.ceil(totalMatched / PAGE_SIZE))
 
   return (
-    <div className="px-8 py-8">
-      <AutoRefresh active={isLive} />
-
-      <header className="mb-6">
-        <Link
-          href="/admin/scraper"
-          className="text-[11px] font-mono uppercase tracking-wider text-ih-muted hover:text-ih-ink"
-        >
-          ← Back to crawls
-        </Link>
-        <div className="flex items-baseline gap-3 mt-2 flex-wrap">
-          <h1 className="text-[22px] font-semibold text-ih-ink font-mono">{job.code}</h1>
-          <span className={`px-2 py-0.5 text-[10px] font-mono uppercase tracking-wider ${STATUS_STYLES[job.status]}`}>
+    <AdminPageShell
+      // font-mono kept: this title is a job CODE, and §2.6 puts machine-readable
+      // content in mono.
+      title={<span className="font-mono">{job.code}</span>}
+      sub={<span className="break-all">{job.sourceUrl}</span>}
+      actions={
+        <>
+          {/* The status badge and the live indicator travel WITH the title —
+              they qualify it, and dropping them (v2's actions slot is nominally
+              buttons-only) would remove the only signal that a crawl is still
+              running. */}
+          <span className={`rounded-md px-2 py-0.5 text-[10px] font-mono uppercase tracking-wider ${STATUS_STYLES[job.status]}`}>
             {STATUS_LABELS[job.status]}
           </span>
           {isLive && (
-            <span className="text-[11px] font-mono uppercase tracking-wider text-ih-muted">
+            <span className="font-mono text-[11px] uppercase tracking-wider text-ih-muted">
               Auto-refreshing every 3s
             </span>
           )}
-        </div>
-        <p className="text-[13px] text-ih-muted mt-1 break-all">{job.sourceUrl}</p>
-        {job.notes && <p className="text-[12px] text-ih-ink-2 mt-1">{job.notes}</p>}
-      </header>
+          <Link
+            href="/admin/scraper"
+            className="flex h-9 items-center rounded-md border border-ih-border bg-ih-surface px-4 text-[13px] font-medium transition-colors hover:border-ih-accent hover:text-ih-accent"
+          >
+            ← Back to crawls
+          </Link>
+        </>
+      }
+    >
+      <AutoRefresh active={isLive} />
+
+      {job.notes && <p className="mb-6 text-[12px] text-ih-ink-2">{job.notes}</p>}
 
       {/* Stat tiles */}
       <section className="grid grid-cols-2 md:grid-cols-6 gap-3 mb-6">
@@ -364,7 +372,7 @@ export default async function ScraperJobDetailPage({ params, searchParams }: Pro
           )}
         </>
       )}
-    </div>
+    </AdminPageShell>
   )
 }
 

@@ -4,6 +4,7 @@ import { redirect } from 'next/navigation'
 import { auth } from '../../../../lib/admin-auth'
 import { hasRole, ROLES } from '../../../../lib/rbac'
 import { db } from '@indus/db'
+import AdminPageShell from '../../../../components/admin/AdminPageShell'
 
 export const metadata: Metadata = { title: 'Competitor scraper — Indus Admin' }
 
@@ -28,21 +29,20 @@ export default async function ScraperJobsPage({ params }: Props) {
   })
 
   return (
-    <div className="px-8 py-8">
-      <header className="flex items-center justify-between mb-6">
-        <div>
-          <h1 className="text-[22px] font-semibold text-ih-ink">Competitor scraper</h1>
-          <p className="text-[13px] text-ih-muted mt-1">
-            Crawl a competitor catalogue, pick the products you want, and ingest their images into your own listings.
-          </p>
-        </div>
+    <AdminPageShell
+      title="Competitor scraper"
+      sub="Crawl a competitor catalogue and ingest their images into your listings"
+      actions={
+        // uppercase dropped: the tracking-wider + uppercase pair rendered this
+        // as "START A CRAWL", and v2 topbar buttons are sentence case.
         <Link
           href="/admin/scraper/new"
-          className="h-9 px-4 bg-ih-accent text-white font-mono text-[12px] tracking-wider uppercase grid place-items-center hover:opacity-90"
+          className="grid h-9 place-items-center rounded-md bg-ih-accent px-4 text-[13px] font-medium text-white transition-opacity hover:opacity-90"
         >
           Start a crawl
         </Link>
-      </header>
+      }
+    >
 
       {jobs.length === 0 ? (
         <div className="border border-ih-border bg-ih-bg p-10 text-center">
@@ -79,6 +79,6 @@ export default async function ScraperJobsPage({ params }: Props) {
           </tbody>
         </table>
       )}
-    </div>
+    </AdminPageShell>
   )
 }

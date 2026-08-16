@@ -4,6 +4,7 @@ import { redirect } from 'next/navigation'
 import { auth } from '../../../../../lib/admin-auth'
 import { hasRole, ROLES } from '../../../../../lib/rbac'
 import StartScrapeForm from './StartScrapeForm'
+import AdminPageShell from '../../../../../components/admin/AdminPageShell'
 
 export const metadata: Metadata = { title: 'Start a crawl — Indus Admin' }
 
@@ -15,19 +16,24 @@ export default async function NewScrapeJobPage({ params }: Props) {
   if (!hasRole(session, ROLES.COMPETITOR_SCRAPE)) redirect('/admin')
 
   return (
-    <div className="px-8 py-8 max-w-[680px]">
-      <header className="mb-6">
+    <AdminPageShell
+      title="Start a new crawl"
+      sub="Paste a sitemap URL, or product URLs one per line"
+      actions={
         <Link
           href="/admin/scraper"
-          className="text-[11px] font-mono uppercase tracking-wider text-ih-muted hover:text-ih-ink"
+          className="flex h-9 items-center rounded-md border border-ih-border bg-ih-surface px-4 text-[13px] font-medium transition-colors hover:border-ih-accent hover:text-ih-accent"
         >
           ← Back to crawls
         </Link>
-        <h1 className="text-[22px] font-semibold text-ih-ink mt-2">Start a new crawl</h1>
-        <p className="text-[13px] text-ih-muted mt-1">
-          Paste a competitor sitemap URL — or a list of product URLs, one per line — and we&rsquo;ll discover their catalogue in the background.
-        </p>
-      </header>
+      }
+      bodyClassName="px-[26px] py-6 pb-16 max-w-[680px]"
+    >
+      {/* Kept in the body: the bar's subtitle is a one-line summary, this is
+          the instruction people follow. */}
+      <p className="mb-6 text-[13px] text-ih-muted">
+        Paste a competitor sitemap URL — or a list of product URLs, one per line — and we&rsquo;ll discover their catalogue in the background.
+      </p>
 
       <div className="border border-ih-border bg-ih-bg p-6">
         <StartScrapeForm />
@@ -44,6 +50,6 @@ export default async function NewScrapeJobPage({ params }: Props) {
           <li>Once finished, you select which products to ingest from the job page.</li>
         </ol>
       </aside>
-    </div>
+    </AdminPageShell>
   )
 }

@@ -6,6 +6,7 @@ import { auth } from '../../../../../lib/admin-auth'
 import { ROLES as PERMS, requireRole } from '../../../../../lib/rbac'
 import { requireStaffRole } from '../../../../../lib/staff-session'
 import { Input, Select } from '@indus/ui'
+import AdminPageShell from '../../../../../components/admin/AdminPageShell'
 
 export const metadata: Metadata = { title: 'Add Staff — Indus Admin' }
 
@@ -42,15 +43,18 @@ export default async function NewUserPage() {
   }
 
   return (
-    <div className="p-8">
-      <nav className="flex items-center gap-2 font-mono text-[12px] text-ih-muted mb-6">
-        <Link href="/admin/users" className="hover:text-ih-ink">Staff Users</Link>
-        <span className="opacity-40">/</span>
-        <span className="text-ih-ink">New Staff Member</span>
-      </nav>
-
+    <AdminPageShell
+      title="Add Staff Member"
+      actions={
+        <Link
+          href="/admin/users"
+          className="flex h-9 items-center rounded-md border border-ih-border bg-ih-surface px-4 text-[13px] font-medium transition-colors hover:border-ih-accent hover:text-ih-accent"
+        >
+          ← All staff
+        </Link>
+      }
+    >
       <div className="max-w-[560px]">
-        <h1 className="text-[24px] font-semibold tracking-tight mb-6">Add Staff Member</h1>
 
         <form action={createUser} className="space-y-5">
           <div>
@@ -117,6 +121,6 @@ export default async function NewUserPage() {
           </div>
         </form>
       </div>
-    </div>
+    </AdminPageShell>
   )
 }
