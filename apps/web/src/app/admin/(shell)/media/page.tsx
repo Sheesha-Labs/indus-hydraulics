@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { db } from '@indus/db'
 import { ADMIN_PREFIX } from '../../../../lib/admin-paths'
+import AdminPageShell from '../../../../components/admin/AdminPageShell'
 
 export const metadata: Metadata = { title: 'Media library — Indus Admin' }
 
@@ -37,15 +38,10 @@ export default async function MediaLibraryPage({ params, searchParams }: Props) 
   const totals = await db.media.groupBy({ by: ['kind'], _count: { _all: true } })
 
   return (
-    <div className="px-8 py-6 pb-16">
-        <div className="flex items-end justify-between mb-6 gap-4">
-          <div>
-            <h1 className="text-[24px] font-semibold tracking-tight">Media library</h1>
-            <p className="text-[13px] text-ih-muted mt-1">
-              {media.length} {media.length === 1 ? 'asset' : 'assets'}
-            </p>
-          </div>
-        </div>
+    <AdminPageShell
+      title="Media library"
+      sub={<>{media.length} {media.length === 1 ? 'asset' : 'assets'}</>}
+    >
 
         <div className="flex items-center gap-1.5 mb-6">
           {KIND_FILTERS.map((k) => {
@@ -112,6 +108,6 @@ export default async function MediaLibraryPage({ params, searchParams }: Props) 
             })}
           </div>
         )}
-    </div>
+    </AdminPageShell>
   )
 }

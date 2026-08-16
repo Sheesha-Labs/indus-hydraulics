@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { db } from '@indus/db'
 import HomepageHeroPanel, { type HeroSlideRow } from './HomepageHeroPanel'
+import AdminPageShell from '../../../../components/admin/AdminPageShell'
 
 export const metadata: Metadata = { title: 'CMS — Indus Admin' }
 
@@ -38,20 +39,23 @@ export default async function CmsPage({ params, searchParams }: Props) {
   ]
 
   return (
-    <div className="px-8 py-6 pb-16">
-      <div className="flex items-center justify-between mb-6">
-        <h1 className="text-[24px] font-semibold tracking-tight">Content Management</h1>
-        {tab === 'blog' && (
-          <Link href={`/admin/cms/blog/new`} className="h-9 px-4 flex items-center bg-ih-accent text-white font-mono text-[12px] hover:opacity-90">
-            + New Post
-          </Link>
-        )}
-        {tab === 'pages' && (
-          <Link href={`/admin/cms/pages/new`} className="h-9 px-4 flex items-center bg-ih-accent text-white font-mono text-[12px] hover:opacity-90">
-            + New Page
-          </Link>
-        )}
-      </div>
+    <AdminPageShell
+      title="Content Management"
+      actions={
+        <>
+          {tab === 'blog' && (
+            <Link href={`/admin/cms/blog/new`} className="flex h-9 items-center rounded-md bg-ih-accent px-4 font-mono text-[12px] text-white transition-opacity hover:opacity-90">
+              + New Post
+            </Link>
+          )}
+          {tab === 'pages' && (
+            <Link href={`/admin/cms/pages/new`} className="flex h-9 items-center rounded-md bg-ih-accent px-4 font-mono text-[12px] text-white transition-opacity hover:opacity-90">
+              + New Page
+            </Link>
+          )}
+        </>
+      }
+    >
 
       {/* Tabs */}
       <div className="flex border-b border-ih-border mb-6">
@@ -149,6 +153,6 @@ export default async function CmsPage({ params, searchParams }: Props) {
       )}
 
       {tab === 'hero' && <HomepageHeroPanel slides={heroSlides} />}
-    </div>
+    </AdminPageShell>
   )
 }

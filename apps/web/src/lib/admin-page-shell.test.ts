@@ -35,12 +35,7 @@ const SHELL = path.resolve(
  * to it without editing this file.
  */
 const PENDING = new Set([
-  'cms/page.tsx',
   'customers/[id]/page.tsx',
-  'media/page.tsx',
-  'page.tsx',
-  'products/import/page.tsx',
-  'products/new/page.tsx',
   'rfqs/[code]/page.tsx',
   'scraper/page.tsx',
   'scraper/new/page.tsx',
