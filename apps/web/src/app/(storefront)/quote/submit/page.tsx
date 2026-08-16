@@ -33,31 +33,31 @@ export default async function QuoteSubmitPage() {
   return (
     <div className="max-w-[1100px] mx-auto px-8 py-8 pb-20">
       {/* Breadcrumb */}
-      <div className="flex items-center gap-2 font-mono text-[11px] tracking-[0.1em] text-[var(--color-muted)] mb-2">
-        <Link href={`/quote`} className="hover:text-[var(--color-primary)] uppercase">Quote</Link>
+      <div className="flex items-center gap-2 font-mono text-[11px] tracking-[0.1em] text-ih-muted mb-2">
+        <Link href={`/quote`} className="hover:text-ih-ink uppercase">Quote</Link>
         <span className="opacity-40">/</span>
-        <span className="text-[var(--color-primary)] uppercase">RFQ Form</span>
+        <span className="text-ih-ink uppercase">RFQ Form</span>
       </div>
 
-      <h1 className="text-[36px] font-semibold tracking-[-0.02em] mb-2">Request a quote</h1>
-      <p className="text-[var(--color-muted)] max-w-[640px] mb-8 leading-[1.5]">
+      <h1 className="font-serif text-[clamp(28px,4vw,36px)] font-normal tracking-[-0.01em] mb-2">Request a quote</h1>
+      <p className="text-ih-muted max-w-[640px] mb-8 leading-[1.5]">
         Fill this once and our applications team replies with availability, lead time and a fixed-price quote. No hidden fees, no auto-renewing terms.
       </p>
 
       {/* Step indicators */}
-      <div className="flex items-center gap-3 mb-8 font-mono text-[11px] tracking-[0.08em]">
-        <div className="flex items-center gap-2 px-3.5 py-2.5 bg-[var(--color-primary)] text-[var(--color-elevated)]">
-          <span className="w-[18px] h-[18px] bg-[var(--color-accent)] text-white rounded-full grid place-items-center text-[10px]">1</span>
+      <div className="mb-8 flex flex-wrap items-center gap-3 font-mono text-[10.5px] tracking-[0.1em]">
+        <div className="flex shrink-0 items-center gap-2 rounded-md bg-ih-navy px-3.5 py-2.5 text-white">
+          <span className="w-[18px] h-[18px] bg-ih-accent text-white rounded-full grid place-items-center text-[10px]">1</span>
           LINES
         </div>
-        <div className="flex-1 h-px bg-[var(--color-border)]" />
-        <div className="flex items-center gap-2 px-3.5 py-2.5 bg-[var(--color-primary)] text-[var(--color-elevated)]">
-          <span className="w-[18px] h-[18px] bg-[var(--color-accent)] text-white rounded-full grid place-items-center text-[10px]">2</span>
+        <div className="hidden h-px flex-1 bg-ih-border sm:block" />
+        <div className="flex shrink-0 items-center gap-2 rounded-md bg-ih-navy px-3.5 py-2.5 text-white">
+          <span className="w-[18px] h-[18px] bg-ih-accent text-white rounded-full grid place-items-center text-[10px]">2</span>
           DETAILS
         </div>
-        <div className="flex-1 h-px bg-[var(--color-border)]" />
-        <div className="flex items-center gap-2 px-3.5 py-2.5 bg-[var(--color-elevated)] border border-[var(--color-border)] text-[var(--color-muted)]">
-          <span className="w-[18px] h-[18px] bg-[var(--color-surface)] border border-[var(--color-border)] rounded-full grid place-items-center text-[10px]">3</span>
+        <div className="hidden h-px flex-1 bg-ih-border sm:block" />
+        <div className="flex shrink-0 items-center gap-2 rounded-md border border-ih-border bg-ih-surface px-3.5 py-2.5 text-ih-muted">
+          <span className="w-[18px] h-[18px] bg-ih-surface border border-ih-border rounded-full grid place-items-center text-[10px]">3</span>
           REVIEW
         </div>
       </div>
