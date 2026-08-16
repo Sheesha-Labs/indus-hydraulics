@@ -126,7 +126,7 @@ export default function SiteHeaderClient({
     <header className="sticky top-0 z-50 border-b border-ih-border bg-ih-surface">
       {/* Utility bar */}
       <div className="bg-ih-navy text-[oklch(0.82_0.02_250)]">
-        <div className="mx-auto flex h-[34px] max-w-[1440px] items-center justify-between px-12 font-mono text-[11px] tracking-[0.04em]">
+        <div className="mx-auto flex h-[34px] max-w-[1440px] items-center justify-between px-5 sm:px-8 xl:px-12 font-mono text-[11px] tracking-[0.04em]">
           <div className="flex gap-6">
             {contactPhone && <span>{contactPhone}</span>}
             {/* 03 §6: below 768 the utility bar drops to the phone number
@@ -148,7 +148,7 @@ export default function SiteHeaderClient({
       </div>
 
       {/* Main nav bar */}
-      <div className="mx-auto flex h-[72px] max-w-[1440px] items-center gap-8 px-12">
+      <div className="mx-auto flex h-[72px] max-w-[1440px] items-center gap-6 px-5 sm:px-8 xl:px-12">
         {/* Logo */}
         <Link href={`/`} className="flex shrink-0 items-center gap-[11px]">
           <LogoMark />
@@ -284,7 +284,7 @@ export default function SiteHeaderClient({
           onMouseLeave={closeDropdown}
           role="menu"
         >
-          <div className="mx-auto max-w-[1440px] px-12">
+          <div className="mx-auto max-w-[1440px] px-5 sm:px-8 xl:px-12">
             <div className="grid grid-cols-[360px_420px_1fr] min-h-[420px]">
               {/* ── Column 1: Top-level categories ── */}
               <div className="border-r border-ih-border py-7 pr-0">
@@ -413,7 +413,7 @@ export default function SiteHeaderClient({
             layout this menu has to keep (see the note on the grid above).
           */}
           <div className="border-t border-ih-border bg-ih-surface-2">
-            <div className="mx-auto flex max-w-[1440px] flex-wrap items-center gap-x-[26px] gap-y-2 px-12 py-3.5">
+            <div className="mx-auto flex max-w-[1440px] flex-wrap items-center gap-x-[26px] gap-y-2 px-5 sm:px-8 xl:px-12 py-3.5">
               <span className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">
                 Quick links
               </span>

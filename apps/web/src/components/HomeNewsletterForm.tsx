@@ -26,7 +26,7 @@ export default function HomeNewsletterForm() {
   return (
     <form onSubmit={handleSubmit} className="flex flex-col gap-3">
       {submitted ? (
-        <span className="font-mono text-[13px] text-[var(--color-accent)]">✓ Subscribed — check your inbox.</span>
+        <span className="text-[13.5px] font-medium text-white">Subscribed — check your inbox.</span>
       ) : (
         <>
           {/* Honeypot — must stay empty. Hidden from sighted users + screen readers. */}
@@ -40,7 +40,7 @@ export default function HomeNewsletterForm() {
             defaultValue=""
           />
           <input type="hidden" name="source" value="homepage_footer" />
-          <div className="flex gap-2">
+          <div className="flex flex-col gap-2 sm:flex-row">
             <input
               type="email"
               name="email"
@@ -49,22 +49,22 @@ export default function HomeNewsletterForm() {
               onChange={(e) => setEmail(e.target.value)}
               placeholder="you@company.com"
               disabled={isPending}
-              className="flex-1 h-11 px-4 bg-[#15181d] border border-[#2a2e35] text-[var(--color-surface)] placeholder:text-[#8a8f97] text-[13px] focus:outline-none focus:border-[var(--color-accent)] disabled:opacity-50"
+              className="h-12 w-full min-w-0 flex-1 rounded-md border border-white/35 bg-white/12 px-4 text-[13.5px] text-white outline-none transition-colors placeholder:text-white/60 focus:border-white focus:ring-[3px] focus:ring-white/25 disabled:opacity-50"
             />
             <button
               type="submit"
               disabled={isPending}
-              className="h-11 px-5 bg-[var(--color-accent)] text-white font-mono text-[12px] hover:opacity-90 transition-opacity shrink-0 disabled:opacity-50"
+              className="h-12 w-full shrink-0 rounded-md bg-white px-6 sm:w-auto text-[14.5px] font-medium text-ih-accent transition-colors hover:bg-white/90 disabled:opacity-50"
             >
               {isPending ? '...' : 'Subscribe'}
             </button>
           </div>
           {errorMsg && (
-            <span role="alert" className="font-mono text-[12px] text-[var(--color-status-danger,#dc2626)]">
+            <span role="alert" className="text-[12.5px] font-medium text-white">
               {errorMsg}
             </span>
           )}
-          <span className="font-mono text-[12px] text-[#8a8f97]">
+          <span className="font-mono text-[11px] text-white/70">
             By subscribing you agree to our privacy policy. Unsubscribe in one click.
           </span>
         </>

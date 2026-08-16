@@ -335,7 +335,7 @@ export default async function ProductPage({ params, searchParams }: Props) {
           PREVIEW MODE · {product.status.toUpperCase()} · not visible to public
         </div>
       )}
-      <div className="mx-auto max-w-[1440px] px-12">
+      <div className="mx-auto max-w-[1440px] px-5 sm:px-8 xl:px-12">
         {/* Breadcrumbs */}
         <div className="border-b border-ih-border py-4">
           <Breadcrumb

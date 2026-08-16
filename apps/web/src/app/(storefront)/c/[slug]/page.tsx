@@ -169,7 +169,7 @@ export default async function CategoryPage({ params, searchParams }: Props) {
   })
 
   return (
-    <div className="mx-auto max-w-[1440px] px-12">
+    <div className="mx-auto max-w-[1440px] px-5 sm:px-8 xl:px-12">
       <JsonLd data={[collectionLd, breadcrumbLd]} />
       {/* Breadcrumbs */}
       <div className="border-b border-ih-border py-4">

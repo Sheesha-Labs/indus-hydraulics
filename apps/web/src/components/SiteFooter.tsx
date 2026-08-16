@@ -1,3 +1,4 @@
+import type React from 'react'
 import Link from 'next/link'
 import type { ResolvedNavItem } from '@indus/domain'
 import LogoMark from './LogoMark'
@@ -15,18 +16,21 @@ export default async function SiteFooter() {
   const legalLinks = legal?.items ?? []
   const year = new Date().getFullYear()
 
-  // Adaptive grid: Brand + N CMS columns + Contact. The number of CMS columns is
-  // editor-controlled, so we compute gridTemplateColumns at render time. This is
-  // the single inline-style exception in this file (CLAUDE.md §2.1) — Tailwind
-  // can't express a runtime-N column template in pure utilities.
+  // Adaptive grid: Brand + N CMS columns + Contact. The column count is
+  // editor-controlled, so the template is computed at render time. It is
+  // passed as a CUSTOM PROPERTY rather than as `gridTemplateColumns`
+  // directly: an inline declaration applies at every width and would beat
+  // the `grid-cols-1` class, forcing N+2 columns onto a 375px screen and
+  // scrolling the whole page sideways. As a variable it only takes effect
+  // where the md: utility below references it.
   const gridStyle = {
-    gridTemplateColumns: `auto repeat(${cmsColumns.length}, minmax(0,1fr)) auto`,
-  } as const
+    '--footer-cols': `auto repeat(${cmsColumns.length}, minmax(0,1fr)) auto`,
+  } as React.CSSProperties
 
   return (
     <footer className="mt-auto bg-ih-navy text-[oklch(0.82_0.02_250)]">
-      <div className="mx-auto max-w-[1440px] px-12 pb-7 pt-16">
-        <div className="grid grid-cols-1 md:grid gap-10" style={gridStyle}>
+      <div className="mx-auto max-w-[1440px] px-5 sm:px-8 xl:px-12 pb-7 pt-16">
+        <div className="grid grid-cols-1 gap-10 md:[grid-template-columns:var(--footer-cols)]" style={gridStyle}>
           <BrandBlock settings={settings} />
           {cmsColumns.map((column) => (
             <FooterColumn key={column.id} column={column} />

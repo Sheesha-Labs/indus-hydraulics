@@ -78,17 +78,23 @@ export default function ProductTabs({
   ]
 
   return (
-    <div className="border-t border-[var(--color-border)] pt-8 mb-8">
+    <div className="mb-8 border-t border-ih-border pt-8">
       {/* Tab headers */}
-      <div className="flex border-b border-[var(--color-border)] mb-8">
+      {/*
+        The tab labels are whitespace-nowrap and five of them do not fit a
+        phone, so the strip scrolls INSIDE its own container. Without
+        overflow-x-auto here the whole page scrolls sideways instead — it was
+        pushing the document to 710px at a 375px viewport.
+      */}
+      <div className="mb-8 flex overflow-x-auto border-b border-ih-border">
         {tabs.map((tab, i) => (
           <button
             key={tab.label}
             onClick={() => setActive(i)}
-            className={`px-6 py-3.5 text-[14px] font-medium border-b-2 -mb-px transition-colors whitespace-nowrap ${
+            className={`-mb-px whitespace-nowrap border-b-[1.5px] px-5 py-3 text-[13.5px] transition-colors ${
               i === active
-                ? 'text-[var(--color-primary)] border-[var(--color-accent)]'
-                : 'text-[var(--color-muted)] border-transparent hover:text-[var(--color-body)]'
+                ? 'border-ih-accent text-ih-accent'
+                : 'border-transparent text-ih-muted hover:text-ih-ink'
             }`}
           >
             {tab.label}
@@ -98,9 +104,9 @@ export default function ProductTabs({
 
       {/* Description */}
       {active === 0 && (
-        <div className="grid gap-12" style={{ gridTemplateColumns: '1.4fr 1fr' }}>
+        <div className="grid gap-12 lg:grid-cols-[1.4fr_1fr]">
           <div>
-            <h2 className="text-[28px] font-semibold tracking-[-0.02em] mb-4">Product description</h2>
+            <h2 className="mb-4 font-serif text-[26px] font-normal tracking-[-0.01em]">Product description</h2>
             {descriptionLong ? (
               <div
                 className="prose prose-sm max-w-none text-[var(--color-body)] leading-[1.65] prose-headings:text-[var(--color-primary)] prose-headings:font-semibold"
@@ -143,7 +149,7 @@ export default function ProductTabs({
 
           {/* Shipping column — driven entirely by product DB fields */}
           <div>
-            <h2 className="text-[28px] font-semibold tracking-[-0.02em] mb-4">Shipping &amp; lead time</h2>
+            <h2 className="mb-4 font-serif text-[26px] font-normal tracking-[-0.01em]">Shipping &amp; lead time</h2>
             <ShippingTable
               leadTimeDays={leadTimeDays}
               warrantyMonths={warrantyMonths}
