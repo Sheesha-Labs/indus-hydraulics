@@ -84,11 +84,26 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(function Button(
   { className, kind, size, block, asChild = false, loading = false, icon, iconAfter, children, ...props },
   ref
 ) {
-  const Comp = asChild ? Slot : 'button'
+  const classes = cn(buttonVariants({ kind, size, block }), className)
+
+  // `asChild` hands rendering to the consumer's element via Radix Slot, which
+  // requires EXACTLY ONE child. Emitting the icon/label/trailing-icon trio
+  // into a Slot throws "React.Children.only expected to receive a single
+  // React element child" at runtime — it type-checks cleanly and fails only
+  // when the button is actually rendered. So in this mode we pass the child
+  // through untouched and the caller composes any icons inside it.
+  if (asChild) {
+    return (
+      <Slot ref={ref} className={classes} aria-busy={loading || undefined} {...props}>
+        {children}
+      </Slot>
+    )
+  }
+
   return (
-    <Comp
+    <button
       ref={ref}
-      className={cn(buttonVariants({ kind, size, block }), className)}
+      className={classes}
       disabled={loading || props.disabled}
       // The accessible name becomes "Submitting" while in flight, per
       // 03-interactions-and-states.md §4. aria-busy carries it to AT.
@@ -98,7 +113,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(function Button(
       {loading ? <Spinner /> : icon}
       {children}
       {!loading && iconAfter}
-    </Comp>
+    </button>
   )
 })
 

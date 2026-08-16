@@ -1,10 +1,11 @@
 'use client'
 
 import { useState } from 'react'
+import { Button } from '@indus/ui'
 
-type Props = { sku: string; title: string }
+type Props = { sku: string; title: string; block?: boolean }
 
-export default function AddToQuoteButton({ sku }: Props) {
+export default function AddToQuoteButton({ sku, block = true }: Props) {
   const [added, setAdded] = useState(false)
 
   function handleAdd() {
@@ -17,20 +18,23 @@ export default function AddToQuoteButton({ sku }: Props) {
       setAdded(true)
       setTimeout(() => setAdded(false), 3000)
     } catch {
-      // localStorage unavailable
+      // localStorage unavailable — the quote list is browser-held today.
     }
   }
 
   return (
-    <button
-      onClick={handleAdd}
-      className={`h-12 flex items-center justify-center text-sm font-medium transition-all ${
-        added
-          ? 'bg-[oklch(0.55_0.12_150)] text-white'
-          : 'bg-[var(--color-accent)] text-white hover:opacity-90'
-      }`}
-    >
-      {added ? `✓ Added to quote` : `Add to Quote →`}
-    </button>
+    <>
+      <Button kind="primary" size="lg" block={block} onClick={handleAdd}>
+        {added ? 'Added to quote' : 'Add to quote'}
+      </Button>
+      {/*
+        The confirmation is announced rather than only shown. A colour flip on
+        the button carries no meaning to a screen reader, and 03 §8 does not
+        allow colour to be the sole signal.
+      */}
+      <span aria-live="polite" className="sr-only">
+        {added ? `${sku} added to your quote list` : ''}
+      </span>
+    </>
   )
 }
