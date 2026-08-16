@@ -3,6 +3,7 @@ import { signedUrlFor } from '../../../../lib/supabase'
 import { ORG_ID, SITE_NAME, pageMetadata, urlFor } from '../../../../lib/seo'
 import { getStoreSettings } from '../../../../lib/store-settings'
 import type { Metadata } from 'next'
+import type React from 'react'
 import { cache } from 'react'
 import { notFound, permanentRedirect } from 'next/navigation'
 import Link from 'next/link'
@@ -14,8 +15,7 @@ import {
   buildProductLd,
   verifyPreviewToken,
 } from '@indus/domain'
-import { JsonLd, ProductPrice } from '@indus/ui'
-import type { CurrencyCode } from '@indus/domain'
+import { Badge, Breadcrumb, Button, JsonLd } from '@indus/ui'
 import { customerSessionOrNull } from '../../../../lib/customer-session'
 import ProductGallery from '../../../../components/ProductGallery'
 import AddToQuoteButton from '../../../../components/AddToQuoteButton'
@@ -331,28 +331,26 @@ export default async function ProductPage({ params, searchParams }: Props) {
     <>
       <JsonLd data={[productLd, breadcrumbLd, faqLd]} />
       {isPreview && (
-        <div className="bg-[oklch(0.95_0.08_85)] border-b border-[oklch(0.75_0.12_85)] py-2.5 px-8 text-center font-mono text-[12px] text-[oklch(0.4_0.12_70)] tracking-[0.04em]">
+        <div className="border-b border-[oklch(0.88_0.06_78)] bg-ih-warning-soft px-8 py-2.5 text-center font-mono text-[11px] tracking-[0.06em] text-[oklch(0.46_0.1_62)]">
           PREVIEW MODE · {product.status.toUpperCase()} · not visible to public
         </div>
       )}
-      <div className="max-w-[1360px] mx-auto px-8">
+      <div className="mx-auto max-w-[1440px] px-12">
         {/* Breadcrumbs */}
-        <nav className="py-4 border-b border-[var(--color-border-2)] font-mono text-[12px] text-[var(--color-muted)] flex gap-2 items-center flex-wrap">
-          <Link href={`/`} className="hover:text-[var(--color-primary)]">Home</Link>
-          {product.category && (
-            <>
-              <span className="opacity-40">/</span>
-              <Link href={`/c/${product.category.slug}`} className="hover:text-[var(--color-primary)]">
-                {product.category.name}
-              </Link>
-            </>
-          )}
-          <span className="opacity-40">/</span>
-          <span className="text-[var(--color-primary)]">{product.sku}</span>
-        </nav>
+        <div className="border-b border-ih-border py-4">
+          <Breadcrumb
+            items={[
+              { label: 'Home', href: '/' },
+              ...(product.category
+                ? [{ label: product.category.name, href: `/c/${product.category.slug}` }]
+                : []),
+              { label: product.sku },
+            ]}
+          />
+        </div>
 
         {product.status === 'discontinued' && (
-          <div className="py-3 px-4 bg-[oklch(0.97_0.02_25)] border border-[oklch(0.75_0.1_25)] text-[14px] text-[oklch(0.5_0.12_25)] font-medium mt-4">
+          <div className="mt-4 rounded-md border border-[oklch(0.88_0.05_28)] bg-ih-danger-soft px-4 py-3 text-[13.5px] font-medium text-[oklch(0.44_0.14_28)]">
             This product has been discontinued.
             {product.supersededBy && (
               <>
@@ -365,65 +363,73 @@ export default async function ProductPage({ params, searchParams }: Props) {
           </div>
         )}
 
-        {/* PDP grid */}
-        <div className="grid gap-14 py-10 pb-16" style={{ gridTemplateColumns: '1.1fr 1fr' }}>
-          {/* Gallery */}
-          <ProductGallery
-            images={product.images.map((img) => ({
-              url: mediaUrl(img.media.storagePath),
-              alt: img.alt ?? img.media.alt ?? product.title,
-            }))}
-            title={product.title}
-          />
+        {/*
+          PDP grid — TITLE-FIRST.
 
-          {/* Info column */}
-          <div className="flex flex-col">
-            {/* Eyebrow */}
-            <div className="flex gap-3 items-center font-mono text-[11px] text-[var(--color-muted)] mb-3 tracking-[0.06em]">
+          02-screen-index.md calls the PDP a restructure, and 03 §6 says the
+          title-first order and the 4:3 hero "exist because of mobile" and must
+          be preserved at every breakpoint. So the identity block is FIRST in
+          the DOM and the gallery follows it; explicit grid placement puts the
+          gallery back on the left at >=lg. Stacked, the product name is the
+          first thing on the page — which is the entire point, and is exactly
+          what a source-order layout with the gallery first cannot give you.
+        */}
+        <div className="grid items-start gap-10 py-10 pb-16 lg:grid-cols-[1.1fr_1fr] lg:gap-14">
+          {/* Identity — row 1, right column on desktop, first on mobile */}
+          <div className="lg:col-start-2 lg:row-start-1">
+            <div className="mb-3 flex flex-wrap items-center gap-2.5">
               {product.brand && (
-                <Link
-                  href={`/brands/${product.brand.slug}`}
-                  className="bg-[var(--color-primary)] text-[var(--color-elevated)] px-2 py-1 hover:bg-[var(--color-body)] transition-colors"
-                >
-                  {product.brand.name.toUpperCase()}
+                <Link href={`/brands/${product.brand.slug}`}>
+                  <Badge kind="navy" square>
+                    {product.brand.name.toUpperCase()}
+                  </Badge>
                 </Link>
               )}
-              {product.category && (
-                <span>{product.category.name.toUpperCase()}</span>
-              )}
+              <span className="font-mono text-[11.5px] text-ih-muted">{product.sku}</span>
               {product.countryOfOrigin && (
-                <span>· MADE IN {product.countryOfOrigin.toUpperCase()}</span>
+                <span className="font-mono text-[11.5px] text-ih-muted">
+                  · MADE IN {product.countryOfOrigin.toUpperCase()}
+                </span>
               )}
             </div>
 
-            <h1 className="text-[clamp(28px,3vw,38px)] font-semibold tracking-[-0.02em] leading-[1.1] mb-3">
+            <h1 className="text-[clamp(26px,3vw,34px)] font-medium leading-[1.12] tracking-[-0.02em]">
               {product.title}
             </h1>
 
-            {/* SKU / MPN / stock row */}
-            <div className="flex gap-4 items-center flex-wrap pb-4 mb-4 font-mono text-[13px] text-[var(--color-muted)]">
-              <span>SKU: <b className="text-[var(--color-primary)] font-medium">{product.sku}</b></span>
+            <div className="mt-3.5 flex flex-wrap items-center gap-3">
+              {product.category && (
+                <span className="text-[14px] text-ih-ink-2">{product.category.name}</span>
+              )}
               {product.mpn && (
-                <span>MFR P/N: <b className="text-[var(--color-primary)] font-medium">{product.mpn}</b></span>
+                <>
+                  <span aria-hidden="true" className="text-ih-border-strong">
+                    ·
+                  </span>
+                  <span className="font-mono text-[12.5px] text-ih-muted">MFR {product.mpn}</span>
+                </>
               )}
               <StockPill stockQty={product.stockQty} warehouse={product.stockWarehouse} leadTimeDays={product.leadTimeDays} />
             </div>
+          </div>
 
-            {/* Price block — prominent, sits below SKU row, above description. */}
-            <div className="flex items-end gap-3 pb-5 mb-5 border-b border-[var(--color-border-2)]">
-              <ProductPrice
-                listPrice={product.listPrice == null ? null : Number(product.listPrice)}
-                currency={product.listPriceCurrency as CurrencyCode}
-                compareAtPrice={product.compareAtPrice == null ? null : Number(product.compareAtPrice)}
-                layout="inline"
-                size="xl"
-                quoteCta="Request quote for pricing"
-              />
-            </div>
+          {/* Gallery — row 1 on desktop, spans down; second in source order */}
+          <div className="lg:col-start-1 lg:row-start-1 lg:row-span-2">
+            <ProductGallery
+              images={product.images.map((img) => ({
+                url: mediaUrl(img.media.storagePath),
+                alt: img.alt ?? img.media.alt ?? product.title,
+              }))}
+              title={product.title}
+            />
+          </div>
+
+          {/* Info column — row 2, right */}
+          <div className="flex flex-col lg:col-start-2 lg:row-start-2">
 
             {/* Short description — prose blurb above the bullet list. */}
             {product.descriptionShort && (
-              <p className="text-[15px] text-[var(--color-body)] leading-[1.55] mb-5 whitespace-pre-line">
+              <p className="mb-5 whitespace-pre-line text-[16px] leading-[1.6] text-ih-ink-2">
                 {product.descriptionShort}
               </p>
             )}
@@ -432,15 +438,15 @@ export default async function ProductPage({ params, searchParams }: Props) {
                 fields are flagged as Key feature, or no values have been entered. */}
             {keyFeatures.length > 0 && (
               <div className="pb-6">
-                <h3 className="font-mono text-[11px] tracking-[0.14em] uppercase text-[var(--color-muted)] mb-3.5">Key features</h3>
+                <h3 className="mb-3.5 font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">Key features</h3>
                 <ul className="flex flex-col gap-2.5">
                   {keyFeatures.map((feat) => (
                     <li
                       key={feat.id}
-                      className="grid gap-2.5 text-[14px] leading-[1.5] text-[var(--color-body)]"
+                      className="grid gap-2.5 text-[14px] leading-[1.5] text-ih-ink-2"
                       style={{ gridTemplateColumns: '16px 1fr' }}
                     >
-                      <span className="text-[var(--color-accent)] font-semibold">✓</span>
+                      <span aria-hidden="true" className="text-ih-steel">✓</span>
                       <span>{feat.text}</span>
                     </li>
                   ))}
@@ -450,15 +456,15 @@ export default async function ProductPage({ params, searchParams }: Props) {
 
             {/* Quick spec table */}
             {quickSpecs.length > 0 && (
-              <div className="border border-[var(--color-border)] bg-[var(--color-elevated)] mb-6">
+              <div className="mb-6 overflow-hidden rounded-lg border border-ih-border bg-ih-surface">
                 <dl className="grid grid-cols-2">
                   {quickSpecs.map((spec, i) => (
                     <div
                       key={spec.id}
-                      className={`flex flex-col px-4 py-3 border-[var(--color-border-2)] ${i % 2 === 0 ? 'border-r' : ''} ${i < quickSpecs.length - 2 ? 'border-b' : ''}`}
+                      className={`flex flex-col border-ih-border px-4 py-3 ${i % 2 === 0 ? 'border-r' : ''} ${i < quickSpecs.length - 2 ? 'border-b' : ''}`}
                     >
-                      <dt className="font-mono text-[10px] tracking-[0.08em] text-[var(--color-caption)] uppercase">{spec.label}</dt>
-                      <dd className="font-mono text-[14px] font-medium text-[var(--color-primary)] mt-1">
+                      <dt className="font-mono text-[10px] uppercase tracking-[0.08em] text-ih-muted">{spec.label}</dt>
+                      <dd className="mt-1 font-mono text-[13px] text-ih-ink">
                         {spec.value}{spec.unit ? ` ${spec.unit}` : ''}
                       </dd>
                     </div>
@@ -467,34 +473,39 @@ export default async function ProductPage({ params, searchParams }: Props) {
               </div>
             )}
 
-            {/* CTA stack — WhatsApp + mailto sourced from StoreSettings so the
-                admin team has a single place to update real numbers. The
-                WhatsApp button hides entirely if no phone is configured
-                (rather than ship a placeholder/dead-link). */}
-            <div className="flex flex-col gap-2.5 pt-2 mb-4">
-              {whatsappHref(settings.contactPhone, product.sku) && (
-                <a
-                  href={whatsappHref(settings.contactPhone, product.sku)!}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="h-12 flex items-center justify-center gap-2 text-[14px] font-medium text-white transition-opacity hover:opacity-90"
-                  style={{ background: '#16a34a' }}
-                >
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                    <path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-1 1.1-.2.2-.4.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.8-.8-1.4-1.7-1.6-2-.2-.3 0-.4.1-.5.1-.1.3-.3.4-.5.1-.2.2-.3.2-.5.1-.2 0-.4 0-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.2-.6-.4zM12 2C6.5 2 2 6.5 2 12c0 1.7.4 3.3 1.2 4.7L2 22l5.4-1.4c1.4.8 2.9 1.2 4.6 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2z" />
-                  </svg>
-                  Enquire on WhatsApp
-                </a>
-              )}
-              <div className="grid grid-cols-2 gap-2">
-                <AddToQuoteButton sku={product.sku} title={product.title} />
-                <a
-                  href={mailtoQuoteHref(settings.contactEmail, product.sku)}
-                  className="h-12 flex items-center justify-center border border-[var(--color-border)] text-[13px] font-medium text-[var(--color-body)] hover:bg-[var(--color-deep)] transition-colors"
-                >
-                  Email for Quotation
-                </a>
+            {/*
+              CTA stack. "Add to quote" is the single primary action — the
+              language allows exactly one per view and reserves the accent for
+              it. The WhatsApp route was previously a full-width saturated
+              green button sitting ABOVE it, which made the loudest thing on
+              the page neither blue nor the action we want taken. It keeps its
+              brand glyph (in WhatsApp green, so it stays recognisable) on an
+              outline button, one rank down where it belongs.
+
+              WhatsApp hides entirely when no number is configured rather than
+              shipping a dead link.
+            */}
+            <div className="mb-4 flex flex-col gap-2.5 pt-2">
+              <AddToQuoteButton sku={product.sku} title={product.title} />
+
+              <div className="grid gap-2.5 sm:grid-cols-2">
+                {whatsappHref(settings.contactPhone, product.sku) && (
+                  <Button asChild kind="outline" size="lg">
+                    <a
+                      href={whatsappHref(settings.contactPhone, product.sku)!}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <WhatsAppGlyph />
+                      Enquire on WhatsApp
+                    </a>
+                  </Button>
+                )}
+                <Button asChild kind="outline" size="lg">
+                  <a href={mailtoQuoteHref(settings.contactEmail, product.sku)}>Email for a quotation</a>
+                </Button>
               </div>
+
               <AddToCompareButton
                 sku={product.sku}
                 categoryId={product.categoryId}
@@ -504,18 +515,18 @@ export default async function ProductPage({ params, searchParams }: Props) {
 
             {/* Datasheet card */}
             {product.documents[0] && (
-              <div className="flex gap-3 items-center p-4 border border-[var(--color-border)] bg-[var(--color-elevated)] mt-1 mb-6">
-                <div className="w-9 h-11 bg-[var(--color-surface)] border border-[var(--color-border)] grid place-items-center font-mono text-[9px] font-semibold text-[var(--color-accent)] shrink-0">
+              <div className="mt-1 mb-6 flex items-center gap-3 rounded-lg border border-ih-border bg-ih-surface p-4">
+                <div className="grid h-11 w-9 shrink-0 place-items-center rounded-sm border border-ih-border bg-ih-surface-2 font-mono text-[9px] font-medium text-ih-accent">
                   {product.documents[0].kind.toUpperCase().slice(0, 4)}
                 </div>
                 <div className="flex-1 min-w-0">
                   <div className="text-[13px] font-medium truncate">{product.documents[0].title}</div>
-                  <div className="font-mono text-[11px] text-[var(--color-muted)] mt-0.5">
+                  <div className="mt-0.5 font-mono text-[11px] text-ih-muted">
                     {product.documents[0].kind} · {product.documents[0].language.toUpperCase()}
                   </div>
                 </div>
                 {product.documents[0].isGated && !isSignedIn ? (
-                  <Link href={`/sign-in`} className="shrink-0 font-mono text-[11px] text-[var(--color-accent)] hover:underline">
+                  <Link href={`/sign-in`} className="shrink-0 font-mono text-[11px] text-ih-accent hover:underline">
                     Sign in →
                   </Link>
                 ) : (
@@ -523,7 +534,7 @@ export default async function ProductPage({ params, searchParams }: Props) {
                     href={mediaUrl(product.documents[0].media.storagePath)}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="shrink-0 h-8 px-3 flex items-center border border-[var(--color-border)] font-mono text-[11px] text-[var(--color-body)] hover:bg-[var(--color-deep)] transition-colors"
+                    className="flex h-8 shrink-0 items-center rounded-sm border border-ih-border-strong px-3 font-mono text-[11px] text-ih-ink transition-colors hover:border-ih-accent hover:text-ih-accent"
                   >
                     ↓ Download
                   </a>
@@ -531,16 +542,27 @@ export default async function ProductPage({ params, searchParams }: Props) {
               </div>
             )}
 
-            {/* Trust row */}
-            <div className="grid grid-cols-3 gap-0 pt-5 border-t border-[var(--color-border-2)]">
+            {/*
+              Assurance row. The artboard runs three bordered cards with a
+              steel icon rather than the old rule-separated columns — the
+              language separates with a border, not a divider.
+            */}
+            <div className="grid gap-3 sm:grid-cols-3">
               {[
-                { title: 'Same-day dispatch', sub: 'Order before 14:00 GST · Dubai HQ' },
-                { title: `${product.warrantyMonths ?? 24}-month warranty`, sub: 'Manufacturer-backed · genuine parts only' },
-                { title: 'Engineering support', sub: 'Free application help · same-day response' },
-              ].map((trust, i) => (
-                <div key={trust.title} className={`px-4 ${i > 0 ? 'border-l border-[var(--color-border-2)]' : 'pl-0'} ${i === 2 ? 'pr-0' : ''}`}>
-                  <div className="text-[13px] font-semibold mb-0.5">{trust.title}</div>
-                  <div className="font-mono text-[11px] text-[var(--color-muted)] leading-[1.4]">{trust.sub}</div>
+                { icon: TruckIcon, title: 'Ships in 24h', sub: 'Order before 14:00 GST · Jebel Ali' },
+                {
+                  icon: ShieldIcon,
+                  title: `${product.warrantyMonths ?? 24}-month warranty`,
+                  sub: 'Manufacturer-backed · genuine parts',
+                },
+                { icon: WrenchIcon, title: 'Engineering support', sub: 'A real applications engineer' },
+              ].map((trust) => (
+                <div key={trust.title} className="flex gap-2.5 rounded-lg border border-ih-border bg-ih-surface p-3.5">
+                  <trust.icon />
+                  <div>
+                    <div className="text-[12.5px] font-medium">{trust.title}</div>
+                    <div className="mt-0.5 text-[11.5px] leading-[1.45] text-ih-muted">{trust.sub}</div>
+                  </div>
                 </div>
               ))}
             </div>
@@ -642,6 +664,72 @@ export default async function ProductPage({ params, searchParams }: Props) {
 // may include +, spaces, dashes) becomes a wa.me-compatible numeric ID.
 // Returns null when no phone is configured so the CTA can be hidden
 // rather than shipping a placeholder/dead-link.
+/**
+ * Assurance-row icons. 24x24 viewBox, currentColor stroke, 1.7 stroke-width,
+ * round caps and joins — the icon spec from the handoff's §8. Kept local
+ * because they are the only three the PDP needs; the shared Icon primitive
+ * (WS-2.5) replaces them when it lands, and mixing two icon families before
+ * then is explicitly banned.
+ */
+/**
+ * WhatsApp brand glyph. Keeps WhatsApp green so the route stays recognisable,
+ * but only as a 17px mark on an outline button — the accent stays the loudest
+ * thing on the page, which is the one rule the colour system is built around.
+ */
+function WhatsAppGlyph() {
+  return (
+    <svg width="17" height="17" viewBox="0 0 24 24" fill="#25D366" aria-hidden="true" className="shrink-0">
+      <path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-1 1.1-.2.2-.4.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.8-.8-1.4-1.7-1.6-2-.2-.3 0-.4.1-.5.1-.1.3-.3.4-.5.1-.2.2-.3.2-.5.1-.2 0-.4 0-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.2-.6-.4zM12 2C6.5 2 2 6.5 2 12c0 1.7.4 3.3 1.2 4.7L2 22l5.4-1.4c1.4.8 2.9 1.2 4.6 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2z" />
+    </svg>
+  )
+}
+
+function IconBase({ children }: { children: React.ReactNode }) {
+  return (
+    <svg
+      width="16"
+      height="16"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth={1.7}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className="mt-0.5 shrink-0 text-ih-steel"
+      aria-hidden="true"
+    >
+      {children}
+    </svg>
+  )
+}
+
+function TruckIcon() {
+  return (
+    <IconBase>
+      <path d="M3 6h11v10H3zM14 9h4l3 3v4h-7z" />
+      <circle cx="7" cy="18" r="1.6" />
+      <circle cx="17.5" cy="18" r="1.6" />
+    </IconBase>
+  )
+}
+
+function ShieldIcon() {
+  return (
+    <IconBase>
+      <path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z" />
+      <path d="m9 12 2 2 4-4" />
+    </IconBase>
+  )
+}
+
+function WrenchIcon() {
+  return (
+    <IconBase>
+      <path d="M15 3a5 5 0 0 0-4.6 7L3 17.4 6.6 21l7.4-7.4A5 5 0 0 0 21 9l-3 3-3-3 3-3a5 5 0 0 0-3-3Z" />
+    </IconBase>
+  )
+}
+
 function whatsappHref(phone: string | null, sku: string): string | null {
   if (!phone) return null
   const digits = phone.replace(/\D/g, '')

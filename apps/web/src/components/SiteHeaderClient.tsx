@@ -129,7 +129,9 @@ export default function SiteHeaderClient({
         <div className="mx-auto flex h-[34px] max-w-[1440px] items-center justify-between px-12 font-mono text-[11px] tracking-[0.04em]">
           <div className="flex gap-6">
             {contactPhone && <span>{contactPhone}</span>}
-            {contactHours && <span>{contactHours}</span>}
+            {/* 03 §6: below 768 the utility bar drops to the phone number
+                only — at 375 the hours string wraps the bar to two lines. */}
+            {contactHours && <span className="hidden sm:inline">{contactHours}</span>}
           </div>
           <div className="flex gap-4">
             {isSignedIn ? (
