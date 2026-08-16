@@ -16,7 +16,7 @@ export default function AdminForgotPasswordPage() {
         <div className="mb-8 flex items-center gap-3">
           <div className="relative grid h-10 w-10 place-items-center rounded-sm bg-[#f5f3ee] font-mono text-[14px] font-semibold text-[#111]">
             IH
-            <span className="absolute -bottom-0.5 -right-0.5 h-2 w-2 bg-[oklch(0.62_0.16_45)]" />
+            <span className="absolute -bottom-0.5 -right-0.5 h-2 w-2 bg-ih-accent" />
           </div>
           <div>
             <div className="font-semibold leading-tight text-white">Indus Hydraulics</div>

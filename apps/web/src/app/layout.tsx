@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Inter, IBM_Plex_Mono, Source_Serif_4 } from 'next/font/google'
+import { Geist, JetBrains_Mono, Instrument_Serif } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
@@ -21,27 +21,38 @@ import './globals.css'
  * child.
  */
 
-const inter = Inter({
+// Design language v2 ships three families and no others: Geist for UI,
+// Instrument Serif for display, JetBrains Mono for data and labels.
+// See design_handoff_indus_hydraulics_v2/01-design-language.md §3.
+//
+// next/font self-hosts and inlines these at build time, so the handoff's
+// "self-host for production" requirement is met by staying on next/font/google.
+
+const geist = Geist({
   subsets: ['latin'],
-  variable: '--font-inter',
+  variable: '--font-geist',
   display: 'swap',
 })
 
-const ibmPlexMono = IBM_Plex_Mono({
+const jetbrainsMono = JetBrains_Mono({
   subsets: ['latin'],
   weight: ['400', '500'],
-  variable: '--font-ibm-plex-mono',
+  variable: '--font-jetbrains-mono',
   display: 'swap',
 })
 
-// Source Serif 4 — body font for /services case-study articles. Loaded here
-// so the variable is on <html> and available to any route that opts in via
-// .sc-article-body / .sc-lead utilities (or the font-serif Tailwind class).
-const sourceSerif = Source_Serif_4({
+// Instrument Serif ships weight 400 ONLY (normal + italic) — verified against
+// next/font's font-data.json. Requesting any other weight throws at build.
+// The display pattern needs exactly this: serif headlines are 400 with an
+// italic closing clause, and 01-design-language.md §3 is explicit that you
+// never bold inside a serif headline. Where the old build used a semibold
+// serif, use Geist 500/600 rather than synthesising a weight this face
+// does not have.
+const instrumentSerif = Instrument_Serif({
   subsets: ['latin'],
-  weight: ['400', '500', '600'],
+  weight: ['400'],
   style: ['normal', 'italic'],
-  variable: '--font-source-serif',
+  variable: '--font-instrument-serif',
   display: 'swap',
 })
 
@@ -63,10 +74,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${ibmPlexMono.variable} ${sourceSerif.variable} h-full`}
+      className={`${geist.variable} ${jetbrainsMono.variable} ${instrumentSerif.variable} h-full`}
       suppressHydrationWarning
     >
-      <body className="min-h-full flex flex-col bg-[var(--color-surface)] text-[var(--color-primary)]">
+      <body className="min-h-full flex flex-col bg-ih-bg text-ih-ink">
         {children}
         <Analytics />
       </body>

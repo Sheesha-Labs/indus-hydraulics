@@ -105,7 +105,7 @@ export default function AdminSidebar({ userName, userRole }: Props) {
       <div className="flex items-center gap-2.5 px-5 py-4 border-b border-[#1f2329]">
         <div className="relative w-8 h-8 bg-[#f5f3ee] grid place-items-center font-mono font-semibold text-[12px] text-[#111] rounded-sm flex-shrink-0">
           IH
-          <span className="absolute -bottom-0.5 -right-0.5 w-[7px] h-[7px] bg-[oklch(0.62_0.16_45)]" />
+          <span className="absolute -bottom-0.5 -right-0.5 w-[7px] h-[7px] bg-ih-accent" />
         </div>
         <div>
           <div className="font-semibold text-[14px] text-[#f5f3ee] leading-tight">Indus Hydraulics</div>
@@ -139,9 +139,9 @@ export default function AdminSidebar({ userName, userRole }: Props) {
                   href={path ? `/${path}` : '/'}
                   aria-label={label}
                   aria-current={active ? 'page' : undefined}
-                  className={`flex items-center gap-2.5 px-2.5 py-2 text-[13px] rounded-sm border-l-2 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[oklch(0.62_0.16_45)] ${
+                  className={`flex items-center gap-2.5 px-2.5 py-2 text-[13px] rounded-sm border-l-2 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ih-accent ${
                     active
-                      ? 'bg-[#15181d] text-[#f5f3ee] border-l-[oklch(0.62_0.16_45)]'
+                      ? 'bg-[#15181d] text-[#f5f3ee] border-l-ih-accent'
                       : 'text-[#b6bac1] border-l-transparent hover:bg-[#15181d] hover:text-[#f0ece3]'
                   }`}
                 >
@@ -166,7 +166,7 @@ export default function AdminSidebar({ userName, userRole }: Props) {
           target="_blank"
           rel="noopener noreferrer"
           aria-label="View storefront in a new tab"
-          className="flex items-center gap-2.5 px-2.5 py-2 text-[13px] text-[#b6bac1] hover:bg-[#15181d] hover:text-[#f0ece3] rounded-sm transition-colors mb-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[oklch(0.62_0.16_45)]"
+          className="flex items-center gap-2.5 px-2.5 py-2 text-[13px] text-[#b6bac1] hover:bg-[#15181d] hover:text-[#f0ece3] rounded-sm transition-colors mb-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ih-accent"
         >
           <ExternalLink size={15} strokeWidth={1.6} aria-hidden="true" />
           <span>View storefront</span>
@@ -174,7 +174,7 @@ export default function AdminSidebar({ userName, userRole }: Props) {
 
         {/* User */}
         <div className="grid grid-cols-[32px_1fr_auto] gap-2.5 items-center px-2 py-2 rounded-sm hover:bg-[#15181d] group">
-          <div className="w-8 h-8 rounded-full bg-[oklch(0.62_0.16_45)] grid place-items-center text-white font-semibold text-[13px]">
+          <div className="w-8 h-8 rounded-full bg-ih-accent grid place-items-center text-white font-semibold text-[13px]">
             {initials}
           </div>
           <div>
@@ -184,7 +184,7 @@ export default function AdminSidebar({ userName, userRole }: Props) {
           <button
             onClick={() => void adminSignOutAction()}
             aria-label="Sign out"
-            className="text-[#5b6068] hover:text-[#f0ece3] text-[11px] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[oklch(0.62_0.16_45)] rounded-sm p-1"
+            className="text-[#5b6068] hover:text-[#f0ece3] text-[11px] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ih-accent rounded-sm p-1"
             title="Sign out"
           >
             <LogOut size={14} strokeWidth={1.6} aria-hidden="true" />

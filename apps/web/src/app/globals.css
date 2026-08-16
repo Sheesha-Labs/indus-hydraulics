@@ -1,67 +1,134 @@
 @import "tailwindcss";
 
 /* ============================================================
-   INDUS HYDRAULICS — DESIGN SYSTEM
-   Industrial B2B · Flat aesthetic · 0-2px radius only
-   Fonts: Inter (UI) + IBM Plex Mono (SKUs, data)
+   INDUS HYDRAULICS — DESIGN LANGUAGE v2 ("blue direction")
+   Quiet paper · 1px rules · editorial serif · mono for data
+   Fonts: Geist (UI) · Instrument Serif (display) · JetBrains Mono (data)
+
+   The contract is design_handoff_indus_hydraulics_v2/design-source/tokens.css.
+   Values are OKLCH and are ported verbatim — do not convert to hex and do not
+   round to a nearby brand blue.
+
+   TWO LAYERS LIVE HERE, DELIBERATELY:
+
+     1. --color-ih-*  the v2 namespace. New and rebuilt code uses only these.
+     2. --color-*     the v1 names, redefined as one-line aliases onto the above.
+
+   The contract calls these tokens --ih-accent, --ih-muted and so on. They are
+   declared here as --color-ih-accent / --color-ih-muted instead, deliberately:
+   Tailwind v4 generates utilities from the --color-* namespace, so this spelling
+   yields real `bg-ih-accent` / `text-ih-muted` / `border-ih-border` classes.
+   That matters beyond ergonomics. Every one of the ~4,600 existing colour
+   references uses the arbitrary-value escape hatch `text-[var(--color-muted)]`,
+   which Tailwind cannot check — a typo or an undefined name emits no CSS, no
+   error and no failing test. That is exactly how 52 dangling references
+   (--color-border-default and friends) survived in the tree for months. A real
+   utility fails loudly and autocompletes. Write `bg-ih-accent`, not
+   `bg-[var(--color-ih-accent)]`.
+
+   Because this is `@theme` and not `@theme inline`, every consumer dereferences
+   its token at paint time, so re-pointing the aliases rebrands ~4,600 call sites
+   across 204 files with no .tsx edits. The aliases exist so the migration can be
+   colour-first and shape-second: the site is correct-palette / old-shape until
+   each screen is rebuilt against --ih-*.
+
+   DELETE THE ALIAS BLOCK when a repo-wide grep for the string "var(--color-"
+   (excluding the --color-ih- names) returns nothing.
    ============================================================ */
 
 @theme {
-  /* ── Fonts ── */
-  --font-sans: var(--font-inter), system-ui, -apple-system, 'Helvetica Neue', sans-serif;
-  --font-mono: var(--font-ibm-plex-mono), ui-monospace, 'SFMono-Regular', Menlo, monospace;
-  --font-serif: var(--font-source-serif), Georgia, 'Times New Roman', serif;
+  /* ══ v2 — the contract ══════════════════════════════════════ */
 
-  /* ── Surface colors ── */
-  --color-surface: #f5f3ee;
-  --color-elevated: #ffffff;
-  --color-deep: #ebe7df;
+  /* Surfaces — cool paper, faint blue cast */
+  --color-ih-bg: oklch(0.976 0.004 250);
+  --color-ih-surface: #ffffff;
+  --color-ih-surface-2: oklch(0.955 0.006 250);
+  --color-ih-surface-3: oklch(0.928 0.009 250);
+  --color-ih-border: oklch(0.902 0.008 250);
+  --color-ih-border-strong: oklch(0.82 0.013 250);
 
-  /* ── Text colors ── */
-  --color-primary: #111418;
-  --color-body: #2b2f36;
-  --color-muted: #5b6068;
-  --color-caption: #8a8f97;
+  /* Ink — blue-black, never pure grey */
+  --color-ih-ink: oklch(0.195 0.016 255);
+  --color-ih-ink-2: oklch(0.33 0.016 255);
+  --color-ih-muted: oklch(0.55 0.013 255);
+  --color-ih-muted-2: oklch(0.685 0.011 255);
 
-  /* ── Border ── */
-  --color-border: #d9d4c8;
-  --color-border-2: #e6e1d5;
+  /* The blue family — client direction. Blue stays the loudest thing on the
+     page; the semantics below are deliberately low-chroma so they never
+     compete with it. */
+  --color-ih-navy: oklch(0.275 0.055 252);
+  --color-ih-navy-2: oklch(0.355 0.062 252);
+  --color-ih-accent: oklch(0.475 0.115 248);
+  --color-ih-accent-hover: oklch(0.4 0.115 248);
+  --color-ih-accent-soft: oklch(0.945 0.026 248);
+  --color-ih-accent-fg: #ffffff;
+  --color-ih-steel: oklch(0.68 0.075 240);
+  --color-ih-steel-soft: oklch(0.955 0.018 240);
 
-  /* ── Accent (industrial orange) ── */
-  --color-accent: oklch(0.62 0.16 45);
-  --color-accent-ink: #ffffff;
-  --color-accent-soft: oklch(0.95 0.04 60);
+  /* Semantic */
+  --color-ih-success: oklch(0.55 0.11 150);
+  --color-ih-success-soft: oklch(0.94 0.04 150);
+  --color-ih-warning: oklch(0.72 0.12 78);
+  --color-ih-warning-soft: oklch(0.955 0.05 80);
+  --color-ih-danger: oklch(0.55 0.17 28);
+  --color-ih-danger-soft: oklch(0.955 0.035 28);
 
-  /* ── Status ── */
-  --color-good: oklch(0.55 0.12 150);
-  --color-good-soft: oklch(0.94 0.04 150);
-  --color-warn: oklch(0.7 0.15 80);
-  --color-danger: oklch(0.55 0.18 25);
-  --color-info: #0e4d92;
+  /* Typography */
+  --font-sans: var(--font-geist), ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-serif: var(--font-instrument-serif), ui-serif, Georgia, serif;
+  --font-mono: var(--font-jetbrains-mono), ui-monospace, 'SFMono-Regular', Menlo, monospace;
 
-  /* ── Technical color ── */
-  --color-tech: oklch(0.45 0.08 240);
+  /* Geometry. Superseded the v1 "0–2px only" ceiling — see CLAUDE.md §2.3.
+     --radius-sm 2px → 4px moves all 49 existing rounded-sm sites in one step. */
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 10px;
+  --radius-xl: 16px;
 
-  /* ── Spacing ── */
-  --spacing-page-gutter: 32px;
-  --spacing-max-w: 1360px;
-  --spacing-max-w-wide: 1400px;
+  --shadow-1: 0 1px 2px rgba(20, 28, 45, 0.04), 0 8px 24px rgba(20, 28, 45, 0.04);
+  --shadow-2: 0 4px 12px rgba(20, 28, 45, 0.07), 0 18px 48px rgba(20, 28, 45, 0.09);
 
-  /* ── Border radius (FLAT industrial — 0-2px ONLY) ── */
-  --radius-xs: 0px;
-  --radius-sm: 2px;
-  --radius-md: 2px;
+  /* Page rhythm. 1440 content width with 48px gutters is the v2 grid; the 53
+     hard-coded max-w-[1360px] literals in the tree bypass these tokens and are
+     retired per screen, not here. */
+  --spacing-page-gutter: 48px;
+  --spacing-max-w: 1440px;
 
-  /* ── Shadows ── */
-  --shadow-1: 0 1px 0 rgba(17, 20, 24, 0.04), 0 1px 2px rgba(17, 20, 24, 0.04);
-  --shadow-2: 0 4px 18px -8px rgba(17, 20, 24, 0.18), 0 1px 0 rgba(17, 20, 24, 0.04);
-  --shadow-pop: 0 24px 60px -24px rgba(17, 20, 24, 0.25);
+  /* ══ v1 aliases — transitional, delete when the grep above is clean ══ */
 
-  /* ── Admin sidebar (admin surface only; harmless elsewhere) ── */
-  --color-sidebar-bg: #111418;
-  --color-sidebar-text: #d4d0c6;
-  --color-sidebar-active: var(--color-accent);
-  --color-sidebar-hover: rgba(255, 255, 255, 0.06);
+  /* ⚠ --color-surface is the PAGE GROUND in v1 but CARD WHITE in v2. It maps to
+     --ih-bg, NOT --ih-surface. Aliasing it to white would put white on white at
+     182 sites. v1's --color-elevated is the one that means card white. */
+  --color-surface: var(--color-ih-bg);
+  --color-elevated: var(--color-ih-surface);
+  --color-deep: var(--color-ih-surface-2);
+
+  --color-primary: var(--color-ih-ink);
+  --color-body: var(--color-ih-ink-2);
+  --color-muted: var(--color-ih-muted);
+  --color-caption: var(--color-ih-muted-2);
+
+  /* ⚠ v1's --color-border-2 is LIGHTER than the base border — a softer rule.
+     v2's second weight (--ih-border-strong) is DARKER — an emphasis rule.
+     Aliasing border-2 onto border-strong would invert the hierarchy at all 80
+     sites, so the two steps collapse into one here and emphasis is
+     reintroduced deliberately, per screen, against --color-ih-border-strong. */
+  --color-border: var(--color-ih-border);
+  --color-border-2: var(--color-ih-border);
+
+  --color-accent: var(--color-ih-accent);
+  --color-accent-ink: var(--color-ih-accent-fg);
+  --color-accent-soft: var(--color-ih-accent-soft);
+
+  --color-good: var(--color-ih-success);
+  --color-good-soft: var(--color-ih-success-soft);
+  --color-warn: var(--color-ih-warning);
+  --color-danger: var(--color-ih-danger);
+
+  /* Removed with the v1 palette: --color-info and --color-tech (no v2 semantic
+     and zero references), --shadow-pop (zero references), and the four
+     --color-sidebar-* tokens (zero references — AdminSidebar hard-codes 30 hex
+     literals instead, which the v2 admin shell replaces wholesale). */
 }
 
 /* Dark theme removed — it was never reachable. Nothing in the tree set the
@@ -69,75 +136,114 @@
    overrides never applied. Design language v2 is a single light palette and
    specifies no dark values; see CLAUDE.md §2.5. */
 
-/* ── Base ── */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+/* ── Base ──
+   These element rules MUST stay inside @layer base.
 
-html {
-  scroll-behavior: smooth;
-  -webkit-text-size-adjust: 100%;
-}
+   Unlayered CSS beats every layered rule regardless of specificity, and
+   Tailwind emits its utilities into @layer utilities. While `a { color:
+   inherit }` sat outside a layer it therefore overrode every text-colour
+   utility on every anchor in the product — so a link's colour came from
+   whatever it happened to inherit, not from its own class. That is a
+   site-wide defect on main today, not a v2 regression: it is why the
+   "Request a service quote" call to action on /services renders dark ink on
+   a dark ink ground and is invisible in production right now. `a { color:
+   inherit }` is still the right default — v2 links are accent-coloured by
+   the component that owns them, not by a global anchor rule — it just has
+   to lose to a utility that says otherwise. */
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
 
-body {
-  background-color: var(--color-surface);
-  color: var(--color-primary);
-  font-family: var(--font-sans);
-  font-size: 15px;
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-  margin: 0;
-  padding: 0;
-}
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
 
-img,
-video {
-  display: block;
-  max-width: 100%;
-}
+  body {
+    background-color: var(--color-ih-bg);
+    color: var(--color-ih-ink);
+    font-family: var(--font-sans);
+    /* v2 root is 14px/1.45 with -0.005em tracking (tokens.css §.ih). Held at
+       15px/1.5 here on purpose: dropping the base size reflows all 94 routes
+       at once, before any of them has been rebuilt to the v2 scale. It moves
+       with the screens, not with the palette. */
+    font-size: 15px;
+    line-height: 1.5;
+    font-feature-settings: 'ss01', 'cv11';
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    margin: 0;
+    padding: 0;
+  }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
+  img,
+  video {
+    display: block;
+    max-width: 100%;
+  }
 
-button {
-  font-family: inherit;
-  cursor: pointer;
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  button {
+    font-family: inherit;
+    cursor: pointer;
+  }
 }
 
 /* ── Typography utilities ── */
 .mono {
   font-family: var(--font-mono);
   font-feature-settings: 'tnum';
+  letter-spacing: 0;
+}
+
+.serif {
+  font-family: var(--font-serif);
+  font-weight: 400;
   letter-spacing: -0.01em;
+}
+.serif em {
+  font-style: italic;
 }
 
 .eyebrow {
   font-family: var(--font-mono);
-  font-size: 11px;
-  letter-spacing: 0.14em;
+  font-size: 10.5px;
+  font-weight: 500;
+  letter-spacing: 0.13em;
   text-transform: uppercase;
-  color: var(--color-muted);
+  color: var(--color-ih-muted);
 }
 
 /* ── Focus ring ── */
+/* v2 focus-visible is an accent border plus a 3px accent-soft halo
+   (03-interactions-and-states.md §2). Kept as an outline at this stage so it
+   still reads on the un-migrated screens, which have no border to recolour;
+   the box-shadow treatment lands with the form primitives. */
 :focus-visible {
-  outline: 2px solid var(--color-accent);
+  outline: 2px solid var(--color-ih-accent);
   outline-offset: 2px;
 }
 
 /* ── Service-case article ── */
-/* Source Serif 4 body for case studies; orange accent drop-cap on first letter
-   of paragraphs marked .sc-lead. */
+/* v2 sets long-form body in the sans at 15.5/1.7 (01-design-language.md §3);
+   the display serif is for headlines and pull quotes only. This block used to
+   set the whole article in Source Serif 4 at 18px, which cannot carry over —
+   Instrument Serif has one weight, so the `strong` rule below would synthesise
+   a fake bold across every case study. Family switched now because the serif
+   variable no longer resolves to a text face; size and leading move to the v2
+   scale with the case-study rebuild. */
 .sc-article-body {
-  font-family: var(--font-serif);
-  font-size: 18px;
-  line-height: 1.65;
-  color: var(--color-body);
+  font-family: var(--font-sans);
+  font-size: 17px;
+  line-height: 1.7;
+  color: var(--color-ih-ink-2);
 }
 .sc-article-body p {
   margin: 0 0 22px;

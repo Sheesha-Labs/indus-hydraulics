@@ -22,7 +22,7 @@ export default async function AdminSignInPage({ params, searchParams }: Props) {
         <div className="flex items-center gap-3 mb-8">
           <div className="relative w-10 h-10 bg-[#f5f3ee] grid place-items-center font-mono font-semibold text-[14px] text-[#111] rounded-sm">
             IH
-            <span className="absolute -bottom-0.5 -right-0.5 w-2 h-2 bg-[oklch(0.62_0.16_45)]" />
+            <span className="absolute -bottom-0.5 -right-0.5 w-2 h-2 bg-ih-accent" />
           </div>
           <div>
             <div className="font-semibold text-white leading-tight">Indus Hydraulics</div>

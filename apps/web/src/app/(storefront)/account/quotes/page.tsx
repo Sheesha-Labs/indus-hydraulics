@@ -37,17 +37,26 @@ const STATUS_LABELS: Record<string, string> = {
   paid: 'PAID',
 }
 
+// Badge pairings come from the v2 contract (tokens.css .ih-badge--*), not from
+// ad-hoc tints. Neutral = the default badge; accent = in the queue; steel =
+// with an engineer; warn = waiting on the customer; success = won.
+const NEUTRAL = { fg: 'var(--color-ih-ink-2)', bg: 'var(--color-ih-surface-2)' }
+const ACCENT = { fg: 'var(--color-ih-accent)', bg: 'var(--color-ih-accent-soft)' }
+const STEEL = { fg: 'oklch(0.42 0.07 240)', bg: 'var(--color-ih-steel-soft)' }
+const WARN = { fg: 'oklch(0.46 0.1 62)', bg: 'var(--color-ih-warning-soft)' }
+const SUCCESS = { fg: 'oklch(0.38 0.09 150)', bg: 'var(--color-ih-success-soft)' }
+
 const STATUS_COLORS: Record<string, { fg: string; bg: string }> = {
-  draft: { fg: 'var(--color-muted)', bg: 'var(--color-surface)' },
-  submitted: { fg: 'oklch(0.4 0.15 270)', bg: 'oklch(0.96 0.04 270)' },
-  engineer_review: { fg: 'oklch(0.62 0.16 45)', bg: 'oklch(0.97 0.04 60)' },
-  engineer_questions_pending: { fg: 'oklch(0.5 0.14 60)', bg: 'oklch(0.97 0.04 60)' },
-  quote_sent: { fg: 'oklch(0.4 0.15 270)', bg: 'oklch(0.96 0.04 270)' },
-  accepted: { fg: 'oklch(0.45 0.13 150)', bg: 'oklch(0.95 0.05 150)' },
-  declined: { fg: 'var(--color-muted)', bg: 'var(--color-surface)' },
-  expired: { fg: 'var(--color-muted)', bg: 'var(--color-surface)' },
-  cancelled: { fg: 'var(--color-muted)', bg: 'var(--color-surface)' },
-  order_created: { fg: 'oklch(0.45 0.13 150)', bg: 'oklch(0.95 0.05 150)' },
+  draft: NEUTRAL,
+  submitted: ACCENT,
+  engineer_review: STEEL,
+  engineer_questions_pending: WARN,
+  quote_sent: ACCENT,
+  accepted: SUCCESS,
+  declined: NEUTRAL,
+  expired: NEUTRAL,
+  cancelled: NEUTRAL,
+  order_created: SUCCESS,
 }
 
 function timeAgo(date: Date): string {
