@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { db } from '@indus/db'
 import ImportClient from './ImportClient'
+import AdminPageShell from '../../../../../components/admin/AdminPageShell'
 
 export const metadata: Metadata = { title: 'Bulk import — Indus Admin' }
 
@@ -17,8 +18,13 @@ export default async function BulkImportPage({ params }: Props) {
   })
 
   return (
-    <div className="px-8 py-6 pb-16">
-        <h1 className="text-[24px] font-semibold tracking-tight mb-1">Bulk product import</h1>
+    <AdminPageShell
+      title="Bulk product import"
+      sub="Create or update many products from a spreadsheet"
+    >
+        {/* The full explanation stays in the body — three sentences do not fit
+            the 11.5px subtitle slot, and this is the text people actually read
+            before uploading. */}
         <p className="text-[13px] text-ih-muted mb-6">
           Upload a spreadsheet to create or update many products at once. Existing rows (matched by SKU) get updated;
           new ones get created. Errors are reported per-row before any DB changes happen.
@@ -56,6 +62,6 @@ export default async function BulkImportPage({ params }: Props) {
             </div>
           </div>
         )}
-    </div>
+    </AdminPageShell>
   )
 }

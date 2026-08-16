@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { db } from '@indus/db'
 import { createProduct } from '../actions'
+import AdminPageShell from '../../../../../components/admin/AdminPageShell'
 
 export const metadata: Metadata = { title: 'New product — Indus Admin' }
 
@@ -15,8 +16,7 @@ export default async function NewProductPage({ params }: Props) {
   ])
 
   return (
-    <div className="px-8 py-6 pb-16 max-w-3xl">
-        <h1 className="text-[24px] font-semibold tracking-tight mb-6">New product</h1>
+    <AdminPageShell title="New product" bodyClassName="px-[26px] py-6 pb-16 max-w-3xl">
 
         {/* createProduct returns Result<...>; the void-returning wrapper
             keeps `<form action>` happy. Errors propagate via `redirect()` /
@@ -107,7 +107,7 @@ export default async function NewProductPage({ params }: Props) {
             </Link>
           </div>
         </form>
-    </div>
+    </AdminPageShell>
   )
 }
 

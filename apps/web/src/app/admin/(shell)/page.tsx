@@ -4,6 +4,7 @@ import { requireStaff } from '../../../lib/staff-session'
 import { db } from '@indus/db'
 import Link from 'next/link'
 import { ADMIN_PREFIX } from '../../../lib/admin-paths'
+import AdminPageShell from '../../../components/admin/AdminPageShell'
 
 export const metadata: Metadata = { title: 'Dashboard' }
 
@@ -61,21 +62,18 @@ export default async function AdminDashboardPage({ params }: Props) {
   ])
 
   return (
-    <div className="px-8 py-6 pb-16">
-      <div className="flex justify-between items-end gap-4 mb-6">
-        <div>
-          <h1 className="text-[24px] font-semibold tracking-tight">
-            Good {timeOfDay}, {firstName}
-          </h1>
-          <p className="text-[13px] text-ih-muted mt-1">{dateStr}</p>
-        </div>
+    <AdminPageShell
+      title={<>Good {timeOfDay}, {firstName}</>}
+      sub={dateStr}
+      actions={
         <Link
-          href={`/admin/products/new`}
-          className="h-9 px-4 flex items-center bg-ih-accent text-white text-[13px] font-medium hover:opacity-90"
+          href={`${ADMIN_PREFIX}/products/new`}
+          className="flex h-9 items-center rounded-md bg-ih-accent px-4 text-[13px] font-medium text-white transition-opacity hover:opacity-90"
         >
           + Add product
         </Link>
-      </div>
+      }
+    >
 
         {/* KPI grid */}
         <div className="grid grid-cols-2 xl:grid-cols-4 gap-3 mb-5">
@@ -207,7 +205,7 @@ export default async function AdminDashboardPage({ params }: Props) {
             </Link>
           ))}
         </div>
-      </div>
+    </AdminPageShell>
   )
 }
 
