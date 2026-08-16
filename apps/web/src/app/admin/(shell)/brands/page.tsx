@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { db } from '@indus/db'
 import BrandsClient from './BrandsClient'
+import AdminPageShell from '../../../../components/admin/AdminPageShell'
 
 export const metadata: Metadata = { title: 'Brands — Indus Admin' }
 
@@ -30,17 +31,12 @@ export default async function BrandsPage({ params }: Props) {
   }))
 
   return (
-    <div className="px-8 py-6 pb-16">
-      <div className="flex items-center justify-between mb-6">
-        <div>
-          <h1 className="text-[24px] font-semibold tracking-tight">Brands</h1>
-          <p className="text-[13px] text-ih-muted mt-1">
-            {brands.length} {brands.length === 1 ? 'brand' : 'brands'}
-          </p>
-        </div>
-      </div>
-
+    <AdminPageShell
+      title={'Brands'}
+      sub={<>{brands.length} {brands.length === 1 ? 'brand' : 'brands'}</>}
+    >
       <BrandsClient brands={brands} />
-    </div>
+    
+    </AdminPageShell>
   )
 }

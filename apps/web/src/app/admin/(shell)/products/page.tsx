@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import AdminPageShell from '../../../../components/admin/AdminPageShell'
 import { db, Prisma } from '@indus/db'
 import ContentScoreBadge from '../../../../components/admin/ContentScoreBadge'
 
@@ -127,31 +128,30 @@ export default async function AdminProductsPage({ params, searchParams }: Props)
   const sortIndicator = (col: keyof typeof SORTABLE) => (sortKey === col ? (sortDir === 'asc' ? ' ↑' : ' ↓') : '')
 
   return (
-    <div className="px-8 py-6 pb-16">
-      <div className="flex items-center justify-between mb-6">
-        <div>
-          <h1 className="text-[24px] font-semibold tracking-tight">Products</h1>
-          <p className="text-[13px] text-ih-muted mt-1">
-            {total === 0
-              ? 'No products'
-              : `Showing ${showingFrom.toLocaleString()}–${showingTo.toLocaleString()} of ${total.toLocaleString()}`}
-          </p>
-        </div>
-        <div className="flex items-center gap-2">
+    <AdminPageShell
+      title="Products"
+      sub={
+        total === 0
+          ? 'No products'
+          : `Showing ${showingFrom.toLocaleString()}–${showingTo.toLocaleString()} of ${total.toLocaleString()}`
+      }
+      actions={
+        <>
           <Link
             href={`/admin/products/import`}
-            className="h-9 px-4 flex items-center border border-ih-border bg-white text-[13px] font-medium hover:border-ih-ink transition-colors"
+            className="flex h-9 items-center rounded-md border border-ih-border bg-ih-surface px-4 text-[13px] font-medium transition-colors hover:border-ih-accent hover:text-ih-accent"
           >
             ↑ Bulk import
           </Link>
           <Link
             href={`/admin/products/new`}
-            className="h-9 px-4 flex items-center bg-ih-accent text-white text-[13px] font-medium hover:opacity-90"
+            className="flex h-9 items-center rounded-md bg-ih-accent px-4 text-[13px] font-medium text-white transition-opacity hover:opacity-90"
           >
             + Add product
           </Link>
-        </div>
-      </div>
+        </>
+      }
+    >
 
         {/* Search + filter form (single submission to keep URL canonical) */}
         <form
@@ -341,7 +341,7 @@ export default async function AdminProductsPage({ params, searchParams }: Props)
             )}
           </>
         )}
-    </div>
+    </AdminPageShell>
   )
 }
 

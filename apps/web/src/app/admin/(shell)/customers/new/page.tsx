@@ -5,6 +5,7 @@ import { db, nextAccountCode } from '@indus/db'
 import { auth } from '../../../../../lib/admin-auth'
 import { ROLES, requireRole } from '../../../../../lib/rbac'
 import { Input, Select } from '@indus/ui'
+import AdminPageShell from '../../../../../components/admin/AdminPageShell'
 
 export const metadata: Metadata = { title: 'New Customer — Indus Admin' }
 
@@ -59,14 +60,9 @@ export default async function NewCustomerPage({ params }: Props) {
   const industries = await db.industry.findMany({ orderBy: { name: 'asc' } })
 
   return (
-    <div className="max-w-[720px]">
-      <div className="mb-6">
-        <Link href={`/admin/customers`} className="font-mono text-[12px] text-ih-muted hover:text-ih-ink mb-2 inline-block">
-          ← Customers
-        </Link>
-        <h1 className="text-[24px] font-semibold tracking-tight">New Account</h1>
-      </div>
-
+    <AdminPageShell
+      title={'New Account'}
+    >
       <form action={createAccount} className="space-y-5">
 
         <div className="grid grid-cols-2 gap-4">
@@ -166,6 +162,7 @@ export default async function NewCustomerPage({ params }: Props) {
           </Link>
         </div>
       </form>
-    </div>
+    
+    </AdminPageShell>
   )
 }

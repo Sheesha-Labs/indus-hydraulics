@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { db } from '@indus/db'
 import { MENU_LOCATION_LABELS, MENU_LOCATIONS, type MenuLocation } from '@indus/domain'
 import CreateMenuButton from './CreateMenuButton'
+import AdminPageShell from '../../../../components/admin/AdminPageShell'
 
 export const metadata: Metadata = { title: 'Navigation — Indus Admin' }
 
@@ -20,17 +21,11 @@ export default async function NavigationListPage({ params }: Props) {
   const missingLocations = MENU_LOCATIONS.filter((loc) => !byLocation.has(loc))
 
   return (
-    <div className="px-8 py-6 pb-16">
-        <div className="flex items-center justify-between mb-6">
-          <div>
-            <h1 className="text-[24px] font-semibold tracking-tight">Navigation menus</h1>
-            <p className="text-[13px] text-ih-muted mt-1">
-              Manage every nav surface — header, megamenu, footer, and mobile drawer.
-            </p>
-          </div>
-          {missingLocations.length > 0 ? <CreateMenuButton missing={missingLocations} /> : null}
-        </div>
-
+    <AdminPageShell
+      title={'Navigation menus'}
+      sub={'Manage every nav surface — header, megamenu, footer, and mobile drawer.'}
+      actions={missingLocations.length > 0 ? <CreateMenuButton missing={missingLocations} /> : null}
+    >
         <div className="bg-white border border-ih-border">
           <div className="grid grid-cols-[1fr_180px_120px_140px_120px] px-4 py-2.5 bg-ih-bg border-b border-ih-border font-mono text-[10px] tracking-[0.1em] uppercase text-ih-muted">
             <div>Name</div>
@@ -77,6 +72,7 @@ export default async function NavigationListPage({ params }: Props) {
             ))
           )}
         </div>
-    </div>
+    
+    </AdminPageShell>
   )
 }

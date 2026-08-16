@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { db } from '@indus/db'
 import TemplateEditorClient from './TemplateEditorClient'
+import AdminPageShell from '../../../../../components/admin/AdminPageShell'
 
 export const metadata: Metadata = { title: 'Edit spec template — Indus Admin' }
 
@@ -60,20 +61,18 @@ export default async function SpecTemplateEditPage({ params }: Props) {
   }))
 
   return (
-    <div className="px-8 py-6 pb-16">
-        <div className="flex items-center justify-between mb-6">
-          <div>
-            <h1 className="text-[24px] font-semibold tracking-tight">{tpl.name}</h1>
-            <p className="text-[13px] text-ih-muted mt-1 font-mono">{tpl.slug}</p>
-          </div>
-          <Link
-            href={`/admin/spec-templates`}
-            className="font-mono text-[11px] text-ih-muted hover:text-ih-ink"
-          >
-            ← Back to templates
-          </Link>
-        </div>
-
+    <AdminPageShell
+      title={tpl.name}
+      sub={tpl.slug}
+      actions={
+        <Link
+        href={`/admin/spec-templates`}
+        className="font-mono text-[11px] text-ih-muted hover:text-ih-ink"
+        >
+        ← Back to templates
+        </Link>
+      }
+    >
         {tpl.categories.length > 0 && (
           <div className="mb-6 px-4 py-3 bg-[oklch(0.97_0.03_240)] border border-[oklch(0.85_0.07_240)] text-[12px]">
             <b>Default for {tpl.categories.length} categor{tpl.categories.length === 1 ? 'y' : 'ies'}:</b>{' '}
@@ -104,6 +103,7 @@ export default async function SpecTemplateEditPage({ params }: Props) {
           products={products}
           totalProductCount={tpl._count.products}
         />
-    </div>
+    
+    </AdminPageShell>
   )
 }
