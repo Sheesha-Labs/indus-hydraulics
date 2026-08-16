@@ -1,4 +1,5 @@
 import { escapeHtml, renderLayout, type LayoutInput } from './_layout'
+import { BRAND } from '@indus/domain'
 
 export type StaffInvitationProps = {
   recipientName: string
@@ -44,14 +45,14 @@ export function renderStaffInvitation(props: StaffInvitationProps): {
 <p style="margin:0 0 16px 0;">${lead}</p>
 
 <p style="margin:0 0 24px 0;">
-  <a href="${escapeHtml(props.activateUrl)}" style="display:inline-block;background-color:#0c4a6e;color:#ffffff;text-decoration:none;padding:12px 24px;font-size:14px;font-weight:500;letter-spacing:0.02em;">${isInvite ? 'Set up your account' : 'Set a new password'}</a>
+  <a href="${escapeHtml(props.activateUrl)}" style="display:inline-block;background-color:${BRAND.accent};color:${BRAND.white};text-decoration:none;padding:12px 24px;font-size:14px;font-weight:500;letter-spacing:0.02em;">${isInvite ? 'Set up your account' : 'Set a new password'}</a>
 </p>
 
-<p style="margin:0 0 8px 0;font-size:13px;color:#57534e;">If the button doesn't work, paste this link into your browser:</p>
-<p style="margin:0 0 24px 0;font-size:12px;font-family:Menlo,Consolas,monospace;color:#44403c;word-break:break-all;">${escapeHtml(props.activateUrl)}</p>
+<p style="margin:0 0 8px 0;font-size:13px;color:${BRAND.ink2};">If the button doesn't work, paste this link into your browser:</p>
+<p style="margin:0 0 24px 0;font-size:12px;font-family:Menlo,Consolas,monospace;color:${BRAND.ink2};word-break:break-all;">${escapeHtml(props.activateUrl)}</p>
 
-<p style="margin:0 0 8px 0;font-size:13px;color:#57534e;">This link can only be used once.</p>
-<p style="margin:0 0 8px 0;font-size:13px;color:#57534e;">${closing}</p>
+<p style="margin:0 0 8px 0;font-size:13px;color:${BRAND.ink2};">This link can only be used once.</p>
+<p style="margin:0 0 8px 0;font-size:13px;color:${BRAND.ink2};">${closing}</p>
 `.trim()
 
   const html = renderLayout({

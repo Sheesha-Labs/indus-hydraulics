@@ -1,4 +1,5 @@
 import { escapeHtml, renderLayout, type LayoutInput } from './_layout'
+import { BRAND } from '@indus/domain'
 
 export type EmailChangeVerificationProps = {
   customerName: string
@@ -41,16 +42,16 @@ export function renderEmailChangeVerification(
 <p style="margin:0 0 24px 0;">
   <a href="${escapeHtml(
     props.confirmUrl,
-  )}" style="display:inline-block;background:#1a4dbe;color:#ffffff;padding:10px 18px;text-decoration:none;font-weight:500;">
+  )}" style="display:inline-block;background:${BRAND.accent};color:${BRAND.white};padding:10px 18px;text-decoration:none;font-weight:500;">
     Confirm new email address
   </a>
 </p>
 
-<p style="margin:0 0 16px 0;font-size:12px;color:#6b6b6b;">
+<p style="margin:0 0 16px 0;font-size:12px;color:${BRAND.muted};">
   This link expires at <b>${escapeHtml(props.expiresOnDisplay)}</b>. After that you&rsquo;ll need to start the change again from your account settings.
 </p>
 
-<p style="margin:0 0 16px 0;font-size:12px;color:#6b6b6b;">
+<p style="margin:0 0 16px 0;font-size:12px;color:${BRAND.muted};">
   If you didn&rsquo;t request this, just ignore this email. Your sign-in email won&rsquo;t change unless you click the link.
 </p>
 `

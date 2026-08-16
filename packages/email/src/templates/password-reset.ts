@@ -1,4 +1,5 @@
 import { escapeHtml, renderLayout, type LayoutInput } from './_layout'
+import { BRAND } from '@indus/domain'
 
 export type PasswordResetProps = {
   customerName: string
@@ -27,13 +28,13 @@ export function renderPasswordReset(props: PasswordResetProps): { subject: strin
 <p style="margin:0 0 16px 0;">We received a request to reset the password for your Indus Hydraulics account. Click the button below to choose a new one — the link is valid for <strong>${escapeHtml(props.validityWindow)}</strong>.</p>
 
 <p style="margin:0 0 24px 0;">
-  <a href="${escapeHtml(props.resetUrl)}" style="display:inline-block;background-color:#0c4a6e;color:#ffffff;text-decoration:none;padding:12px 24px;font-size:14px;font-weight:500;letter-spacing:0.02em;">Reset password</a>
+  <a href="${escapeHtml(props.resetUrl)}" style="display:inline-block;background-color:${BRAND.accent};color:${BRAND.white};text-decoration:none;padding:12px 24px;font-size:14px;font-weight:500;letter-spacing:0.02em;">Reset password</a>
 </p>
 
-<p style="margin:0 0 8px 0;font-size:13px;color:#57534e;">If the button doesn't work, paste this link into your browser:</p>
-<p style="margin:0 0 24px 0;font-size:12px;font-family:Menlo,Consolas,monospace;color:#44403c;word-break:break-all;">${escapeHtml(props.resetUrl)}</p>
+<p style="margin:0 0 8px 0;font-size:13px;color:${BRAND.ink2};">If the button doesn't work, paste this link into your browser:</p>
+<p style="margin:0 0 24px 0;font-size:12px;font-family:Menlo,Consolas,monospace;color:${BRAND.ink2};word-break:break-all;">${escapeHtml(props.resetUrl)}</p>
 
-<p style="margin:0 0 8px 0;font-size:13px;color:#57534e;">If you didn't request a password reset, you can safely ignore this email — your password will stay the same.</p>
+<p style="margin:0 0 8px 0;font-size:13px;color:${BRAND.ink2};">If you didn't request a password reset, you can safely ignore this email — your password will stay the same.</p>
 `.trim()
 
   const html = renderLayout({

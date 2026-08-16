@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@indus/db": "workspace:^",
+    "@indus/domain": "workspace:^",
     "resend": "^4.0.1"
   },
   "devDependencies": {
