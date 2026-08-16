@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { db } from '@indus/db'
 import SpecTemplatesClient from './SpecTemplatesClient'
+import AdminPageShell from '../../../../components/admin/AdminPageShell'
 
 export const metadata: Metadata = { title: 'Spec templates — Indus Admin' }
 
@@ -27,18 +28,17 @@ export default async function SpecTemplatesPage({ params }: Props) {
   }))
 
   return (
-    <div className="px-8 py-6 pb-16">
-      <div className="flex items-center justify-between mb-6">
-        <div>
-          <h1 className="text-[24px] font-semibold tracking-tight">Spec templates</h1>
-          <p className="text-[13px] text-ih-muted mt-1">
-            {templates.length} {templates.length === 1 ? 'template' : 'templates'} — reusable typed
-            schemas for product specs &amp; key features.
-          </p>
-        </div>
-      </div>
-
+    <AdminPageShell
+      title={'Spec templates'}
+      sub={
+        <>
+        {templates.length} {templates.length === 1 ? 'template' : 'templates'} — reusable typed
+        schemas for product specs &amp; key features.
+        </>
+      }
+    >
       <SpecTemplatesClient templates={templates} />
-    </div>
+    
+    </AdminPageShell>
   )
 }

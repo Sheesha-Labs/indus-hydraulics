@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { db } from '@indus/db'
+import AdminPageShell from '../../../../components/admin/AdminPageShell'
 
 export const metadata: Metadata = { title: 'RFQ Queue — Indus Admin' }
 
@@ -76,12 +77,10 @@ export default async function AdminRfqsPage({ searchParams }: Props) {
   }
 
   return (
-    <div className="px-8 py-6 pb-16">
-      <div className="flex items-center justify-between mb-6">
-        <h1 className="text-[24px] font-semibold tracking-tight">RFQ Queue</h1>
-        <div className="font-mono text-[13px] text-ih-muted">{rfqs.length} requests</div>
-      </div>
-
+    <AdminPageShell
+      title={'RFQ Queue'}
+      actions={<><div className="font-mono text-[13px] text-ih-muted">{rfqs.length} requests</div></>}
+    >
       {/* Filters */}
       <div className="flex flex-wrap gap-2 mb-6">
         {STATUS_FILTERS.map((f) => {
@@ -172,6 +171,7 @@ export default async function AdminRfqsPage({ searchParams }: Props) {
           ))}
         </div>
       )}
-    </div>
+    
+    </AdminPageShell>
   )
 }

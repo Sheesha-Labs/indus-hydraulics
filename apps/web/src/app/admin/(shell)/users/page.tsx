@@ -4,6 +4,7 @@ import { db } from '@indus/db'
 import { ROLES } from '../../../../lib/rbac'
 import { requireStaffRole } from '../../../../lib/staff-session'
 import InviteStaffPanel, { type PendingInvite } from './InviteStaffPanel'
+import AdminPageShell from '../../../../components/admin/AdminPageShell'
 
 export const metadata: Metadata = { title: 'Staff Users — Indus Admin' }
 
@@ -65,22 +66,18 @@ export default async function UsersPage() {
   })
 
   return (
-    <div className="p-8">
-      <div className="flex items-center justify-between mb-6">
-        <div>
-          <h1 className="text-[24px] font-semibold tracking-tight">Staff Users</h1>
-          <p className="text-[13px] text-ih-muted mt-1">
-            {users.length} staff member{users.length !== 1 ? 's' : ''}
-          </p>
-        </div>
+    <AdminPageShell
+      title={'Staff Users'}
+      sub={<>{users.length} staff member{users.length !== 1 ? 's' : ''}</>}
+      actions={
         <Link
-          href="/admin/users/new"
-          className="h-9 px-4 bg-ih-accent text-white font-mono text-[12px] flex items-center hover:opacity-90"
+        href="/admin/users/new"
+        className="h-9 px-4 bg-ih-accent text-white font-mono text-[12px] flex items-center hover:opacity-90"
         >
-          + Add Staff
+        + Add Staff
         </Link>
-      </div>
-
+      }
+    >
       <InviteStaffPanel pending={pending} />
 
       <div className="border border-ih-border overflow-hidden">
@@ -146,6 +143,7 @@ export default async function UsersPage() {
           </tbody>
         </table>
       </div>
-    </div>
+    
+    </AdminPageShell>
   )
 }

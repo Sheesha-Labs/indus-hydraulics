@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { db } from '@indus/db'
+import AdminPageShell from '../../../../components/admin/AdminPageShell'
 
 export const metadata: Metadata = { title: 'Customers — Indus Admin' }
 
@@ -68,17 +69,17 @@ export default async function AdminCustomersPage({ params, searchParams }: Props
   }
 
   return (
-    <div className="px-8 py-6 pb-16">
-      <div className="flex items-center justify-between mb-6">
-        <h1 className="text-[24px] font-semibold tracking-tight">Customers</h1>
+    <AdminPageShell
+      title={'Customers'}
+      actions={
         <Link
-          href={`/admin/customers/new`}
-          className="h-9 px-4 flex items-center bg-ih-accent text-white font-mono text-[12px] hover:opacity-90"
+        href={`/admin/customers/new`}
+        className="h-9 px-4 flex items-center bg-ih-accent text-white font-mono text-[12px] hover:opacity-90"
         >
-          + New Account
+        + New Account
         </Link>
-      </div>
-
+      }
+    >
       {/* Search + filters */}
       <div className="flex flex-wrap items-center gap-3 mb-6">
         <form method="GET" action={`/admin/customers`} className="flex border border-ih-border bg-ih-surface h-9">
@@ -179,6 +180,7 @@ export default async function AdminCustomersPage({ params, searchParams }: Props
           ))}
         </div>
       )}
-    </div>
+    
+    </AdminPageShell>
   )
 }
