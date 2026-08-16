@@ -3,7 +3,7 @@ import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import { db } from '@indus/db'
 import { buildBreadcrumbLd, buildCollectionLd } from '@indus/domain'
-import { JsonLd } from '@indus/ui'
+import { Breadcrumb, Button, EmptyState, JsonLd, Note } from '@indus/ui'
 import { pageMetadata, urlFor } from '../../../../lib/seo'
 import ProductCard from '../../../../components/ProductCard'
 
@@ -169,44 +169,46 @@ export default async function CategoryPage({ params, searchParams }: Props) {
   })
 
   return (
-    <div className="max-w-[1360px] mx-auto px-8">
+    <div className="mx-auto max-w-[1440px] px-12">
       <JsonLd data={[collectionLd, breadcrumbLd]} />
       {/* Breadcrumbs */}
-      <nav className="py-4 border-b border-[var(--color-border-2)] font-mono text-[12px] text-[var(--color-muted)] flex gap-2 items-center">
-        <Link href={`/`} className="hover:text-[var(--color-primary)]">Home</Link>
-        <span className="opacity-40">/</span>
-        <Link href={`/c`} className="hover:text-[var(--color-primary)]">Categories</Link>
-        <span className="opacity-40">/</span>
-        <span className="text-[var(--color-primary)]">{category.name}</span>
-      </nav>
+      <div className="border-b border-ih-border py-4">
+        <Breadcrumb
+          items={[
+            { label: 'Home', href: '/' },
+            { label: 'Categories', href: '/c' },
+            { label: category.name },
+          ]}
+        />
+      </div>
 
       {/* Category header */}
-      <div className="py-8 border-b border-[var(--color-border)]">
-        <p className="font-mono text-[11px] tracking-[0.14em] text-[var(--color-muted)] uppercase mb-2">
+      <div className="border-b border-ih-border py-8">
+        <p className="mb-3 font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">
           Category
         </p>
-        <h1 className="text-[clamp(32px,4vw,48px)] font-semibold tracking-[-0.025em] leading-[1.05] mb-3">
+        <h1 className="mb-3 font-serif text-[clamp(30px,4vw,40px)] font-normal leading-[1.06] tracking-[-0.01em]">
           {category.name}
         </h1>
         {category.shortDescription && (
-          <p className="text-[var(--color-muted)] max-w-[620px] leading-[1.55] mb-4">
+          <p className="mb-4 max-w-[620px] text-[14px] leading-[1.55] text-ih-muted">
             {category.shortDescription}
           </p>
         )}
-        <div className="flex gap-6 font-mono text-[12px] text-[var(--color-muted)]">
-          <span><b className="text-[var(--color-primary)] font-medium">{total}</b> SKUs</span>
-          <span><b className="text-[var(--color-primary)] font-medium">{allBrands.length}</b> brands</span>
+        <div className="flex gap-6 font-mono text-[12px] text-ih-muted">
+          <span><b className="font-medium text-ih-ink">{total}</b> SKUs</span>
+          <span><b className="font-medium text-ih-ink">{allBrands.length}</b> brands</span>
         </div>
       </div>
 
       {/* Sub-categories */}
       {category.children.length > 0 && (
-        <div className="flex gap-2 overflow-x-auto py-4 border-b border-[var(--color-border)] no-scrollbar">
+        <div className="no-scrollbar flex gap-2 overflow-x-auto border-b border-ih-border py-4">
           {category.children.map((child) => (
             <Link
               key={child.id}
               href={`/c/${child.slug}`}
-              className="shrink-0 px-4 py-2.5 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] font-medium text-[var(--color-body)] hover:border-[var(--color-primary)] hover:text-[var(--color-primary)] transition-colors whitespace-nowrap"
+              className="inline-flex h-[30px] shrink-0 items-center whitespace-nowrap rounded-full border border-ih-border bg-ih-surface px-3 text-[12.5px] text-ih-ink-2 transition-colors hover:border-ih-accent hover:text-ih-accent"
             >
               {child.name}
             </Link>
@@ -215,49 +217,93 @@ export default async function CategoryPage({ params, searchParams }: Props) {
       )}
 
       {/* Main listing */}
-      <div className="grid grid-cols-[260px_1fr] gap-8 py-8 pb-16">
+      <div className="grid gap-9 py-8 pb-16 lg:grid-cols-[248px_1fr]">
         {/* Filter sidebar */}
-        <aside className="sticky top-[88px] self-start max-h-[calc(100vh-110px)] overflow-y-auto">
-          {/* Brand filter */}
-          {allBrands.length > 0 && (
-            <div className="pb-5 border-b border-[var(--color-border-2)]">
-              <div className="flex justify-between items-center mb-3">
-                <h3 className="font-mono text-[11px] tracking-[0.14em] uppercase text-[var(--color-muted)]">
-                  Brands
-                </h3>
-                {selectedBrands.length > 0 && (
-                  <Link href={filterUrl({ brands: undefined, page: '1' })} className="font-mono text-[10px] text-[var(--color-accent)] hover:underline">
-                    Clear
-                  </Link>
-                )}
-              </div>
-              <div className="flex flex-col gap-2">
-                {allBrands.map((brand) => {
-                  const active = selectedBrands.includes(brand.slug)
-                  return (
-                    <Link key={brand.id} href={toggleBrand(brand.slug)} className="flex items-center gap-2.5 text-[13px] text-[var(--color-body)] hover:text-[var(--color-primary)] cursor-pointer">
-                      <div className={`w-3.5 h-3.5 border shrink-0 flex items-center justify-center ${active ? 'bg-[var(--color-primary)] border-[var(--color-primary)]' : 'border-[var(--color-border)]'}`}>
-                        {active && <svg width="8" height="6" viewBox="0 0 8 6" fill="white"><path d="M1 3l2 2 4-4" stroke="white" strokeWidth="1.5" strokeLinecap="round" fill="none"/></svg>}
-                      </div>
-                      <span className="flex-1">{brand.name}</span>
-                      <span className="font-mono text-[11px] text-[var(--color-muted)]">{brand.count}</span>
-                    </Link>
-                  )
-                })}
-              </div>
+        <aside className="self-start lg:sticky lg:top-[124px] lg:max-h-[calc(100vh-150px)] lg:overflow-y-auto">
+          <div className="flex flex-col gap-6">
+            <div className="flex items-center justify-between">
+              <span className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">
+                Refine{selectedBrands.length > 0 ? ` · ${selectedBrands.length} active` : ''}
+              </span>
+              {selectedBrands.length > 0 && (
+                <Link
+                  href={filterUrl({ brands: undefined, page: '1' })}
+                  className="text-xs text-ih-accent hover:underline"
+                >
+                  Clear
+                </Link>
+              )}
             </div>
-          )}
 
-          {selectedBrands.length > 0 && (
-            <div className="pt-5">
-              <Link
-                href={filterUrl({ brands: undefined, page: '1' })}
-                className="block w-full h-9 border border-[var(--color-border)] text-[13px] text-center leading-9 text-[var(--color-body)] hover:bg-[var(--color-deep)] transition-colors"
-              >
-                Clear filters
-              </Link>
-            </div>
-          )}
+            {allBrands.length > 0 && (
+              <div>
+                <div className="mb-3 border-b border-ih-border pb-2.5">
+                  <span className="text-[12.5px] font-medium">Brand</span>
+                </div>
+                {/*
+                  Facets are links, not form controls: 03 §7 requires facet
+                  state to live in the URL because these pages are the SEO
+                  surface and sales share filtered links. The checkbox is
+                  therefore presentational — the real control is the anchor,
+                  and aria-pressed carries the state that the tick conveys
+                  visually.
+                */}
+                <div className="flex flex-col gap-2.5">
+                  {allBrands.map((brand) => {
+                    const active = selectedBrands.includes(brand.slug)
+                    return (
+                      <Link
+                        key={brand.id}
+                        href={toggleBrand(brand.slug)}
+                        aria-pressed={active}
+                        className={`flex items-center gap-2.5 text-[13px] transition-colors ${
+                          active ? 'text-ih-ink' : 'text-ih-ink-2 hover:text-ih-ink'
+                        }`}
+                      >
+                        <span
+                          aria-hidden="true"
+                          className={`inline-grid h-4 w-4 shrink-0 place-items-center rounded-[3px] border transition-colors ${
+                            active
+                              ? 'border-ih-accent bg-ih-accent text-white'
+                              : 'border-ih-border-strong bg-ih-surface'
+                          }`}
+                        >
+                          {active && (
+                            <svg viewBox="0 0 24 24" className="h-3 w-3" fill="none">
+                              <path
+                                d="m5 12 5 5L20 7"
+                                stroke="currentColor"
+                                strokeWidth="2.6"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                              />
+                            </svg>
+                          )}
+                        </span>
+                        <span className="flex-1">{brand.name}</span>
+                        <span className="font-mono text-[10.5px] tabular-nums text-ih-muted-2">{brand.count}</span>
+                      </Link>
+                    )
+                  })}
+                </div>
+              </div>
+            )}
+
+            {/*
+              The cross-reference prompt from the artboard's facet rail. It is
+              here because a filtered listing that returns nothing useful is
+              exactly where someone with a dead part number gives up.
+            */}
+            <Note>
+              <span className="block text-[13px] font-medium">Can&rsquo;t find the part?</span>
+              <span className="mt-1.5 block leading-[1.5]">
+                Send the number or a photo of the nameplate. We cross-reference obsolete codes daily.
+              </span>
+              <Button asChild kind="primary" size="sm" block className="mt-3">
+                <Link href="/replacement">Cross-reference it</Link>
+              </Button>
+            </Note>
+          </div>
         </aside>
 
         {/* Results */}
@@ -271,31 +317,31 @@ export default async function CategoryPage({ params, searchParams }: Props) {
                   <Link
                     key={b}
                     href={toggleBrand(b)}
-                    className="inline-flex gap-2 items-center px-3 py-1 border border-[var(--color-border)] bg-[var(--color-elevated)] font-mono text-[12px] text-[var(--color-body)] hover:border-[var(--color-primary)]"
+                    className="inline-flex h-[30px] items-center gap-1.5 rounded-full border border-ih-accent bg-ih-accent px-3 text-[12.5px] text-white transition-colors hover:bg-ih-accent-hover"
                   >
                     Brand: {brand?.name ?? b}
-                    <span className="text-[var(--color-muted)] text-[14px] leading-none">×</span>
+                    <span aria-hidden="true" className="text-[14px] leading-none opacity-70">×</span>
                   </Link>
                 )
               })}
-              <Link href={filterUrl({ brands: undefined, page: '1' })} className="px-3 py-1 font-mono text-[12px] text-[var(--color-accent)] hover:underline">
+              <Link href={filterUrl({ brands: undefined, page: '1' })} className="inline-flex h-[30px] items-center px-2 text-[12.5px] text-ih-accent hover:underline">
                 Clear all
               </Link>
             </div>
           )}
 
           {/* Toolbar */}
-          <div className="flex justify-between items-center pb-4 border-b border-[var(--color-border-2)] mb-4">
-            <p className="font-mono text-[12px] text-[var(--color-muted)]">
+          <div className="mb-5 flex flex-wrap items-center justify-between gap-3 border-b border-ih-border pb-4">
+            <p className="font-mono text-[12px] tabular-nums text-ih-muted">
               {total > 0 ? (
-                <>Showing <b className="text-[var(--color-primary)]">{from}–{to}</b> of <b className="text-[var(--color-primary)]">{total}</b> SKUs</>
+                <>Showing <b className="font-medium text-ih-ink">{from}–{to}</b> of <b className="font-medium text-ih-ink">{total}</b> SKUs</>
               ) : (
                 <>No products found</>
               )}
             </p>
             <div className="flex items-center gap-2">
-              <span className="font-mono text-[11px] text-[var(--color-muted)]">Sort by:</span>
-              <div className="flex border border-[var(--color-border)]">
+              <span className="font-mono text-[10.5px] uppercase tracking-[0.08em] text-ih-muted">Sort</span>
+              <div className="flex overflow-hidden rounded-md border border-ih-border">
                 {[
                   { val: '', label: 'Latest' },
                   { val: 'az', label: 'A–Z' },
@@ -304,7 +350,7 @@ export default async function CategoryPage({ params, searchParams }: Props) {
                   <Link
                     key={opt.val}
                     href={filterUrl({ sort: opt.val || undefined, page: '1' })}
-                    className={`px-3 py-1.5 font-mono text-[11px] ${(sp.sort ?? '') === opt.val ? 'bg-[var(--color-primary)] text-[var(--color-elevated)]' : 'text-[var(--color-muted)] hover:bg-[var(--color-deep)]'}`}
+                    className={`px-3 py-1.5 text-[12.5px] transition-colors ${(sp.sort ?? '') === opt.val ? 'bg-ih-accent text-white' : 'text-ih-ink-2 hover:bg-ih-surface-2'}`}
                   >
                     {opt.label}
                   </Link>
@@ -315,12 +361,37 @@ export default async function CategoryPage({ params, searchParams }: Props) {
 
           {/* Product grid */}
           {products.length === 0 ? (
-            <div className="py-16 text-center border border-dashed border-[var(--color-border)]">
-              <p className="text-[var(--color-muted)] text-sm">No products found</p>
-              <p className="text-[var(--color-muted)] text-xs mt-1">Try adjusting your filters or search terms.</p>
+            <div className="rounded-lg border border-ih-border bg-ih-surface">
+              {/*
+                Two different empty states, because they have two different
+                fixes. Filters excluding everything is recoverable in one
+                click; a genuinely empty category is not, and sending someone
+                to "clear filters" they never set reads as broken.
+              */}
+              {selectedBrands.length > 0 ? (
+                <EmptyState
+                  condition="No SKUs match these filters"
+                  message={`Nothing in ${category.name} matches the brands you have selected.`}
+                  action={
+                    <Button asChild kind="outline">
+                      <Link href={filterUrl({ brands: undefined, page: '1' })}>Clear filters</Link>
+                    </Button>
+                  }
+                />
+              ) : (
+                <EmptyState
+                  condition="Nothing listed yet"
+                  message="This category has no published SKUs. Tell us what you need and an engineer will source it."
+                  action={
+                    <Button asChild kind="primary">
+                      <Link href="/quote/submit">Request a quote</Link>
+                    </Button>
+                  }
+                />
+              )}
             </div>
           ) : (
-            <div className="grid grid-cols-2 xl:grid-cols-3 gap-3">
+            <div className="grid grid-cols-2 gap-4 lg:grid-cols-3 xl:grid-cols-4">
               {products.map((product) => (
                 <ProductCard key={product.id} product={product} />
               ))}
@@ -331,7 +402,7 @@ export default async function CategoryPage({ params, searchParams }: Props) {
           {totalPages > 1 && (
             <div className="flex justify-center gap-1 pt-10">
               {page > 1 && (
-                <Link href={filterUrl({ page: String(page - 1) })} className="w-9 h-9 border border-[var(--color-border)] flex items-center justify-center font-mono text-[13px] text-[var(--color-muted)] hover:bg-[var(--color-deep)]">
+                <Link href={filterUrl({ page: String(page - 1) })} className="flex h-9 w-9 items-center justify-center rounded-md border border-ih-border font-mono text-[13px] text-ih-ink-2 transition-colors hover:border-ih-accent hover:text-ih-accent">
                   ‹
                 </Link>
               )}
@@ -341,14 +412,14 @@ export default async function CategoryPage({ params, searchParams }: Props) {
                   <Link
                     key={p}
                     href={filterUrl({ page: String(p) })}
-                    className={`w-9 h-9 border flex items-center justify-center font-mono text-[13px] ${p === page ? 'bg-[var(--color-primary)] text-[var(--color-elevated)] border-[var(--color-primary)]' : 'border-[var(--color-border)] text-[var(--color-muted)] hover:bg-[var(--color-deep)]'}`}
+                    className={`flex h-9 w-9 items-center justify-center rounded-md border font-mono text-[13px] tabular-nums transition-colors ${p === page ? 'border-ih-accent bg-ih-accent text-white' : 'border-ih-border text-ih-ink-2 hover:border-ih-accent hover:text-ih-accent'}`}
                   >
                     {p}
                   </Link>
                 )
               })}
               {page < totalPages && (
-                <Link href={filterUrl({ page: String(page + 1) })} className="w-9 h-9 border border-[var(--color-border)] flex items-center justify-center font-mono text-[13px] text-[var(--color-muted)] hover:bg-[var(--color-deep)]">
+                <Link href={filterUrl({ page: String(page + 1) })} className="flex h-9 w-9 items-center justify-center rounded-md border border-ih-border font-mono text-[13px] text-ih-ink-2 transition-colors hover:border-ih-accent hover:text-ih-accent">
                   ›
                 </Link>
               )}

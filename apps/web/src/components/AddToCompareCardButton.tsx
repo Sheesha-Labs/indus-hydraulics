@@ -55,13 +55,13 @@ export default function AddToCompareCardButton({ sku, categoryId, specTemplateId
       onClick={handleClick}
       aria-pressed={inTray}
       aria-label={inTray ? `Remove ${sku} from compare` : `Add ${sku} to compare`}
-      className={`font-mono text-[10px] uppercase tracking-[0.08em] px-2 py-1 border transition-colors ${
+      className={`inline-flex h-8 w-full items-center justify-center rounded-sm border px-3 text-[12.5px] font-medium transition-colors ${
         inTray
-          ? 'border-[var(--color-accent)] text-[var(--color-accent)] bg-[var(--color-elevated)]'
-          : 'border-[var(--color-border)] text-[var(--color-muted)] hover:text-[var(--color-primary)] hover:border-[var(--color-body)] bg-[var(--color-elevated)]'
+          ? 'border-ih-accent bg-ih-accent-soft text-ih-accent'
+          : 'border-ih-border-strong bg-ih-surface text-ih-ink hover:border-ih-accent hover:bg-ih-surface-2 hover:text-ih-accent'
       }`}
     >
-      {inTray ? '✓ Comparing' : '+ Compare'}
+      {inTray ? 'Comparing' : 'Compare'}
     </button>
   )
 }

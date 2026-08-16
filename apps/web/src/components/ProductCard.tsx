@@ -1,11 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import type { CurrencyCode } from '@indus/domain'
-import { ProductPrice } from '@indus/ui'
 import { mediaUrl } from '../lib/media'
 import AddToCompareCardButton from './AddToCompareCardButton'
-
-type DecimalLike = { toString(): string } | number | null | undefined
 
 type ProductCardProps = {
   product: {
@@ -22,86 +18,82 @@ type ProductCardProps = {
       alt?: string | null
     }>
     specs: Array<{ label: string; value: string; unit?: string | null }>
-    listPrice?: DecimalLike
-    listPriceCurrency?: string
-    compareAtPrice?: DecimalLike
   }
 }
 
-function toNumber(v: DecimalLike): number | null {
-  if (v == null) return null
-  return typeof v === 'number' ? v : Number(v.toString())
-}
-
+/**
+ * Design language v2 — `.ih-prod`.
+ *
+ * 1:1 media, SKU in mono above the title, title at 14px/500, and a meta row
+ * pinned to the bottom so cards in a row align on their last line regardless
+ * of how long the titles run. Hover takes the border to accent — the card
+ * itself is the affordance, so there is no separate "view" action.
+ *
+ * No price. The catalogue is quote-only and 02-screen-index.md §02 is
+ * absolute about it: never render a price field, a cart total, or a checkout
+ * affordance. The card previously rendered a ProductPrice that always
+ * resolved to "Quote on request", which was a stub for a field that must
+ * never populate here.
+ */
 export default function ProductCard({ product }: ProductCardProps) {
   const image = product.images[0]
   const imgUrl = image ? mediaUrl(image.media.storagePath) : null
 
   return (
-    <Link
-      href={`/p/${product.slug}`}
-      className="group border border-[var(--color-border)] bg-[var(--color-elevated)] overflow-hidden flex flex-col hover:border-[var(--color-body)] transition-colors"
-    >
-      {/* Image */}
-      <div className="aspect-square border-b border-[var(--color-border-2)] bg-[var(--color-deep)] relative overflow-hidden">
+    <div className="group relative flex flex-col overflow-hidden rounded-lg border border-ih-border bg-ih-surface transition-colors focus-within:border-ih-accent hover:border-ih-accent">
+      <div className="relative aspect-square border-b border-ih-border bg-ih-surface-2">
         {imgUrl ? (
           <Image
             src={imgUrl}
             alt={image?.alt ?? image?.media.alt ?? product.title}
             fill
             className="object-contain p-4"
-            sizes="(max-width: 768px) 50vw, 33vw"
+            sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 25vw"
           />
         ) : (
-          <div className="absolute inset-0 grid place-items-center">
-            <div className="font-mono text-[11px] tracking-[0.08em] text-[var(--color-muted)] text-center px-4">
-              <div className="text-3xl mb-2 opacity-20">⚙</div>
-              {product.sku}
-            </div>
+          <div className="absolute inset-0 grid place-items-center px-4">
+            <span className="text-center font-mono text-[10.5px] tracking-[0.02em] text-ih-muted">{product.sku}</span>
           </div>
         )}
       </div>
 
-      {/* Body */}
-      <div className="p-4 flex flex-col gap-2 flex-1">
-        <div className="font-mono text-[11px] text-[var(--color-muted)]">{product.sku}</div>
-        <h3 className="text-[14px] font-medium leading-snug group-hover:text-[var(--color-accent)] transition-colors">
-          {product.title}
+      <div className="flex flex-1 flex-col gap-[7px] px-4 pb-4 pt-3.5">
+        <div className="font-mono text-[10.5px] tracking-[0.02em] text-ih-muted">{product.sku}</div>
+
+        {/*
+          The link wraps only the title but is stretched over the whole card
+          with an overlay. That keeps one link per card for assistive tech and
+          for crawlers — the accessible name is the product title, not a soup
+          of SKU, specs and brand — while the entire card stays clickable.
+        */}
+        <h3 className="text-[14px] font-medium leading-[1.35] tracking-[-0.01em]">
+          <Link href={`/p/${product.slug}`} className="after:absolute after:inset-0 after:content-['']">
+            {product.title}
+          </Link>
         </h3>
 
-        {product.specs.length > 0 && (
-          <div className="flex flex-wrap gap-1">
-            {product.specs.slice(0, 3).map((spec) => (
-              <span key={spec.label} className="font-mono text-[10px] px-1.5 py-0.5 border border-[var(--color-border)] text-[var(--color-muted)]">
-                {spec.value}{spec.unit ? ` ${spec.unit}` : ''}
-              </span>
-            ))}
-          </div>
-        )}
+        <div className="mt-auto flex flex-wrap gap-x-2.5 gap-y-1 pt-2 font-mono text-[11px] text-ih-muted">
+          {product.brand && <b className="font-medium text-ih-ink-2">{product.brand.name}</b>}
+          {product.specs.slice(0, 2).map((spec) => (
+            <span key={spec.label}>
+              {spec.value}
+              {spec.unit ? ` ${spec.unit}` : ''}
+            </span>
+          ))}
+        </div>
 
-        {product.brand && (
-          <span className="text-[11px] text-[var(--color-muted)] font-medium truncate">{product.brand.name}</span>
-        )}
-
-        <div className="flex items-end justify-between pt-2 border-t border-[var(--color-border-2)] mt-auto gap-2">
-          <ProductPrice
-            listPrice={toNumber(product.listPrice)}
-            currency={(product.listPriceCurrency ?? 'USD') as CurrencyCode}
-            compareAtPrice={toNumber(product.compareAtPrice)}
-            layout="inline"
-            size="md"
-            quoteCta="Quote on request"
+        {/*
+          Sits above the stretched link so it stays clickable. z-10 rather than
+          a nested button, which would be invalid inside the card's link.
+        */}
+        <div className="relative z-10 mt-3">
+          <AddToCompareCardButton
+            sku={product.sku}
+            categoryId={product.categoryId}
+            specTemplateId={product.specTemplateId}
           />
-          <div className="flex items-center gap-2 shrink-0">
-            <AddToCompareCardButton
-              sku={product.sku}
-              categoryId={product.categoryId}
-              specTemplateId={product.specTemplateId}
-            />
-            <span className="font-mono text-[11px] text-[var(--color-accent)]">RFQ →</span>
-          </div>
         </div>
       </div>
-    </Link>
+    </div>
   )
 }
