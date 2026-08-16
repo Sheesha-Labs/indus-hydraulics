@@ -41,6 +41,8 @@ type Brand = {
 }
 
 interface Props {
+  /** Rendered at the top of the body — the server page owns it. */
+  contentEditor?: React.ReactNode
   brand: Brand
   recentImages: RecentMedia[]
 }
@@ -58,7 +60,7 @@ type TabId = (typeof TABS)[number]['id']
  * (name, slug, country, description, distributor flag, published).
  * Migrating those to a tabbed Core tab here is a follow-up.
  */
-export default function BrandEditorClient({ brand, recentImages }: Props) {
+export default function BrandEditorClient({ contentEditor, brand, recentImages }: Props) {
   const [tab, setTab] = useState<TabId>('seo')
   const [savedAt, setSavedAt] = useState<string | null>(null)
 
@@ -75,6 +77,8 @@ export default function BrandEditorClient({ brand, recentImages }: Props) {
           href="/admin/brands"
           className="h-9 px-3 grid place-items-center font-mono text-[12px] border border-ih-border hover:bg-ih-surface-2"
         >
+      {contentEditor}
+
           ← All brands
         </Link>
         </>

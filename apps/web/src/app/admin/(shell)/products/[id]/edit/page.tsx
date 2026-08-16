@@ -112,9 +112,12 @@ export default async function EditProductPage({ params }: Props) {
   })
 
   return (
-    <div className="px-8 py-6 pb-16">
-      <ContentDepthPanel result={contentScore} />
+    // No wrapper div: ProductEditorClient renders AdminPageShell, whose 60px
+    // bar must be a direct child of the layout column or it renders inset and
+    // loses its full-width border. ContentDepthPanel therefore travels in as a
+    // prop and is rendered inside the shell's body.
     <ProductEditorClient
+      contentPanel={<ContentDepthPanel result={contentScore} />}
 
         previewUrl={previewUrl}
         product={{
@@ -246,6 +249,5 @@ export default async function EditProductPage({ params }: Props) {
           originalFilename: m.originalFilename,
         }))}
       />
-    </div>
   )
 }

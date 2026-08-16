@@ -40,6 +40,8 @@ type Industry = {
 }
 
 interface Props {
+  /** Rendered at the top of the body — the server page owns it. */
+  contentEditor?: React.ReactNode
   industry: Industry
   recentImages: RecentMedia[]
 }
@@ -51,7 +53,7 @@ const TABS = [
 
 type TabId = (typeof TABS)[number]['id']
 
-export default function IndustryEditorClient({ industry, recentImages }: Props) {
+export default function IndustryEditorClient({ contentEditor, industry, recentImages }: Props) {
   const [tab, setTab] = useState<TabId>('seo')
   const [savedAt, setSavedAt] = useState<string | null>(null)
 
@@ -68,6 +70,8 @@ export default function IndustryEditorClient({ industry, recentImages }: Props) 
           href="/admin/industries"
           className="h-9 px-3 grid place-items-center font-mono text-[12px] border border-ih-border hover:bg-ih-surface-2"
         >
+      {contentEditor}
+
           ← All industries
         </Link>
         </>

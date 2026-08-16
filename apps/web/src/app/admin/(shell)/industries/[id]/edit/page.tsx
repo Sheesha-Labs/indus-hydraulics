@@ -46,7 +46,9 @@ export default async function EditIndustryPage({ params }: Props) {
     v == null ? '' : JSON.stringify(v, null, 2)
 
   return (
-    <div className="flex flex-col gap-8 px-8 py-6 pb-16">
+
+    <IndustryEditorClient
+      contentEditor={
       <IndustryContentEditor
         industry={{
           id: industry.id,
@@ -89,8 +91,7 @@ export default async function EditIndustryPage({ params }: Props) {
         }))}
         publicUrlBase={(process.env.NEXT_PUBLIC_R2_PUBLIC_URL ?? '').replace(/\/$/, '')}
       />
-
-      <IndustryEditorClient
+      }
         industry={{
           id: industry.id,
           slug: industry.slug,
@@ -121,6 +122,5 @@ export default async function EditIndustryPage({ params }: Props) {
           originalFilename: m.originalFilename,
         }))}
       />
-    </div>
   )
 }
