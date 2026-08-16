@@ -296,7 +296,7 @@ export default async function BrandPage({ params }: Props) {
           curated installs don't render a stale templated story. */}
       {brand.caseStudies.length > 0 && (
         <section className="bg-ih-surface border-t border-b border-ih-border">
-          <div className="max-w-[1360px] mx-auto px-8 py-12 flex flex-col gap-10">
+          <div className="mx-auto max-w-[1440px] px-5 sm:px-8 xl:px-12 py-12 flex flex-col gap-10">
             {brand.caseStudies.map((cs, idx) => {
               const csStats = Array.isArray(cs.stats)
                 ? (cs.stats as unknown[])
@@ -355,7 +355,7 @@ export default async function BrandPage({ params }: Props) {
 
       {/* ── Datasheets & resources ─────────────────────────────── */}
       {brandDocs.length > 0 && (
-        <section className="max-w-[1360px] mx-auto px-8 py-12">
+        <section className="mx-auto max-w-[1440px] px-5 sm:px-8 xl:px-12 py-12">
           <h2 className="text-[24px] tracking-[-0.01em] font-semibold mb-4">Datasheets &amp; resources</h2>
           <div className="grid grid-cols-2 gap-2.5">
             {brandDocs.map((doc) => (
@@ -388,7 +388,7 @@ export default async function BrandPage({ params }: Props) {
           surfaces WhatsApp + Email alongside the primary quote CTA, with
           context pre-baked into the openers so the lead lands already
           framed (e.g. WhatsApp text reads "Enquiry: <Brand> products"). */}
-      <section className="max-w-[1360px] mx-auto px-8 pb-16">
+      <section className="mx-auto max-w-[1440px] px-5 sm:px-8 xl:px-12 pb-16">
         <LeadCapturePanel
           variant="compact"
           heading={`Need ${brand.name} products for your application?`}

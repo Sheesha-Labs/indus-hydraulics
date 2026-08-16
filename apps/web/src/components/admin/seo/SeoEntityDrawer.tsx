@@ -309,10 +309,10 @@ export default function SeoEntityDrawer({
   return (
     <form
       action={handleSubmit}
-      className="bg-white border border-[var(--color-border)] max-w-5xl"
+      className="bg-white border border-ih-border max-w-5xl"
     >
       {/* Sub-tab nav */}
-      <div className="flex border-b border-[var(--color-border)] px-4 overflow-x-auto">
+      <div className="flex border-b border-ih-border px-4 overflow-x-auto">
         {SUB_TABS.map((tab) => (
           <button
             key={tab.id}
@@ -320,8 +320,8 @@ export default function SeoEntityDrawer({
             onClick={() => setActiveSubTab(tab.id)}
             className={`px-3 py-2.5 font-mono text-[11px] border-b-2 -mb-px whitespace-nowrap ${
               activeSubTab === tab.id
-                ? 'border-[var(--color-accent)] text-[var(--color-primary)]'
-                : 'border-transparent text-[var(--color-muted)] hover:text-[var(--color-body)]'
+                ? 'border-ih-accent text-ih-ink'
+                : 'border-transparent text-ih-muted hover:text-ih-ink-2'
             }`}
           >
             {tab.label}
@@ -457,7 +457,7 @@ export default function SeoEntityDrawer({
 
           {activeSubTab === 'schema' && (
             <>
-              <p className="text-[12px] text-[var(--color-muted)]">
+              <p className="text-[12px] text-ih-muted">
                 The storefront emits JSON-LD on every page using the auto-generated builders.
                 Paste a partial override below to deep-merge into the auto-emitted block. Leave
                 blank to use defaults.
@@ -575,7 +575,7 @@ export default function SeoEntityDrawer({
         {/* RIGHT — previews */}
         <div className="flex flex-col gap-4 sticky top-4 self-start">
           <div>
-            <p className="font-mono text-[10px] tracking-[0.12em] uppercase text-[var(--color-muted)] mb-1.5">
+            <p className="font-mono text-[10px] tracking-[0.12em] uppercase text-ih-muted mb-1.5">
               Google SERP preview
             </p>
             <SerpPreview
@@ -585,7 +585,7 @@ export default function SeoEntityDrawer({
             />
           </div>
           <div>
-            <p className="font-mono text-[10px] tracking-[0.12em] uppercase text-[var(--color-muted)] mb-1.5">
+            <p className="font-mono text-[10px] tracking-[0.12em] uppercase text-ih-muted mb-1.5">
               Open Graph preview
             </p>
             <OgPreview
@@ -597,7 +597,7 @@ export default function SeoEntityDrawer({
           </div>
           {activeSubTab === 'schema' && ldPreview.length > 0 && (
             <div>
-              <p className="font-mono text-[10px] tracking-[0.12em] uppercase text-[var(--color-muted)] mb-1.5">
+              <p className="font-mono text-[10px] tracking-[0.12em] uppercase text-ih-muted mb-1.5">
                 JSON-LD that will be emitted
               </p>
               <JsonLdPreview data={ldPreview} />
@@ -607,11 +607,11 @@ export default function SeoEntityDrawer({
       </div>
 
       {/* Footer */}
-      <div className="flex items-center gap-3 px-6 py-4 border-t border-[var(--color-border)] bg-[var(--color-deep)]">
+      <div className="flex items-center gap-3 px-6 py-4 border-t border-ih-border bg-ih-surface-2">
         <button
           type="submit"
           disabled={pending}
-          className="h-10 px-5 bg-[var(--color-accent)] text-white text-[13px] font-medium hover:opacity-90 disabled:opacity-50"
+          className="h-10 px-5 bg-ih-accent text-white text-[13px] font-medium hover:opacity-90 disabled:opacity-50"
         >
           {pending ? 'Saving…' : 'Save SEO'}
         </button>
@@ -621,7 +621,7 @@ export default function SeoEntityDrawer({
           </span>
         )}
         <span className="ml-auto flex items-center gap-2">
-          <span className="font-mono text-[10px] tracking-[0.1em] uppercase text-[var(--color-muted)]">
+          <span className="font-mono text-[10px] tracking-[0.1em] uppercase text-ih-muted">
             Health
           </span>
           <SeoHealthBadge score={estimateScore({ effectiveTitle, effectiveDescription, focusKeyword, robotsIndex, ogImagePath })} />
@@ -636,11 +636,11 @@ export default function SeoEntityDrawer({
 // ─────────────────────────────────────────────────────────────────────────────
 
 const inputCls =
-  'h-9 w-full px-3 border border-[var(--color-border)] bg-white text-[13px] focus:outline-none focus:border-[var(--color-accent)]'
+  'h-9 w-full px-3 border border-ih-border bg-white text-[13px] focus:outline-none focus:border-ih-accent'
 const textareaCls =
-  'w-full px-3 py-2 border border-[var(--color-border)] bg-white text-[13px] resize-y focus:outline-none focus:border-[var(--color-accent)]'
+  'w-full px-3 py-2 border border-ih-border bg-white text-[13px] resize-y focus:outline-none focus:border-ih-accent'
 const selectCls =
-  'h-9 w-full px-2 border border-[var(--color-border)] bg-white text-[13px] focus:outline-none focus:border-[var(--color-accent)]'
+  'h-9 w-full px-2 border border-ih-border bg-white text-[13px] focus:outline-none focus:border-ih-accent'
 
 function FieldBlock({
   label,
@@ -656,11 +656,11 @@ function FieldBlock({
   return (
     <div className="flex flex-col gap-1.5">
       <div className="flex items-center justify-between">
-        <span className="text-[12px] font-medium text-[var(--color-body)]">{label}</span>
+        <span className="text-[12px] font-medium text-ih-ink-2">{label}</span>
         {rightAdornment}
       </div>
       {children}
-      {hint && <span className="text-[11px] text-[var(--color-caption)]">{hint}</span>}
+      {hint && <span className="text-[11px] text-ih-muted-2">{hint}</span>}
     </div>
   )
 }

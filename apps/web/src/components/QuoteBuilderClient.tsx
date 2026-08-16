@@ -85,7 +85,7 @@ export default function QuoteBuilderClient({ isSignedIn }: Props) {
         <div className="border border-ih-border bg-ih-surface overflow-hidden">
           {/* Table header */}
           <div
-            className="grid gap-4 px-4 py-3 bg-ih-surface border-b border-ih-border font-mono text-[11px] tracking-[0.1em] uppercase text-ih-muted"
+            className="grid gap-4 px-4 py-3 bg-ih-surface border-b border-ih-border font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted"
             style={{ gridTemplateColumns: 'minmax(0,60px) minmax(0,1fr) minmax(0,110px) 36px' }}
           >
             <span />

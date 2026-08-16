@@ -92,13 +92,13 @@ export default function SendQuoteComposer(props: Props) {
 
   if (!open && !result) {
     return (
-      <div className="border border-[var(--color-border)] bg-[var(--color-elevated)] p-5 mb-6">
+      <div className="border border-ih-border bg-ih-surface p-5 mb-6">
         <div className="flex items-start justify-between gap-4">
           <div>
             <h2 className="text-[15px] font-semibold mb-1">
               {props.hasExistingQuote ? 'Send a revised quote' : 'Send quote to customer'}
             </h2>
-            <p className="text-[13px] text-[var(--color-muted)]">
+            <p className="text-[13px] text-ih-muted">
               {props.hasExistingQuote
                 ? 'A previous revision has been sent. Sending again will create a new revision and email the customer with the updated PDF.'
                 : 'Generates the PDF, uploads it, and emails the customer with the quote attached. Will move this RFQ to “Quote Sent.”'}
@@ -107,7 +107,7 @@ export default function SendQuoteComposer(props: Props) {
           <button
             type="button"
             onClick={() => setOpen(true)}
-            className="h-9 px-4 bg-[var(--color-accent)] text-white font-mono text-[12px] hover:opacity-90 whitespace-nowrap"
+            className="h-9 px-4 bg-ih-accent text-white font-mono text-[12px] hover:opacity-90 whitespace-nowrap"
           >
             {props.hasExistingQuote ? 'Compose revision →' : 'Compose quote →'}
           </button>
@@ -143,18 +143,18 @@ export default function SendQuoteComposer(props: Props) {
     <form
       ref={formRef}
       action={handleSubmit}
-      className="border border-[var(--color-accent)] bg-[var(--color-elevated)] p-5 mb-6 space-y-4"
+      className="border border-ih-accent bg-ih-surface p-5 mb-6 space-y-4"
     >
       <input type="hidden" name="rfqId" value={props.rfqId} />
 
-      <div className="flex items-start justify-between gap-4 pb-3 border-b border-[var(--color-border)]">
+      <div className="flex items-start justify-between gap-4 pb-3 border-b border-ih-border">
         <h2 className="text-[15px] font-semibold">
           {props.hasExistingQuote ? 'Compose revised quote' : 'Compose quote'}
         </h2>
         <button
           type="button"
           onClick={() => setOpen(false)}
-          className="font-mono text-[11px] text-[var(--color-muted)] hover:text-[var(--color-primary)]"
+          className="font-mono text-[11px] text-ih-muted hover:text-ih-ink"
         >
           Cancel
         </button>
@@ -162,7 +162,7 @@ export default function SendQuoteComposer(props: Props) {
 
       <div className="grid grid-cols-2 gap-4">
         <div>
-          <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+          <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
             Subject (optional)
           </label>
           <input
@@ -170,25 +170,25 @@ export default function SendQuoteComposer(props: Props) {
             name="subjectOverride"
             defaultValue={props.rfqSubject ?? ''}
             placeholder="OFFER FOR …"
-            className="w-full h-9 px-3 border border-[var(--color-border)] bg-[var(--color-surface)] text-[13px] focus:outline-none focus:border-[var(--color-accent)]"
+            className="w-full h-9 px-3 border border-ih-border bg-ih-bg text-[13px] focus:outline-none focus:border-ih-accent"
           />
         </div>
         <div>
-          <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+          <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
             Reference# (optional)
           </label>
           <input
             type="text"
             name="referenceLine"
             placeholder="e.g. REVISED OFFER FOR PROJECT X"
-            className="w-full h-9 px-3 border border-[var(--color-border)] bg-[var(--color-surface)] text-[13px] focus:outline-none focus:border-[var(--color-accent)]"
+            className="w-full h-9 px-3 border border-ih-border bg-ih-bg text-[13px] focus:outline-none focus:border-ih-accent"
           />
         </div>
       </div>
 
       <div className="grid grid-cols-3 gap-4">
         <div>
-          <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+          <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
             Discount (AED)
           </label>
           <input
@@ -198,11 +198,11 @@ export default function SendQuoteComposer(props: Props) {
             onChange={(e) => setDiscount(e.target.value)}
             min="0"
             step="0.01"
-            className="w-full h-9 px-3 border border-[var(--color-border)] bg-[var(--color-surface)] text-[13px] text-right font-mono focus:outline-none focus:border-[var(--color-accent)]"
+            className="w-full h-9 px-3 border border-ih-border bg-ih-bg text-[13px] text-right font-mono focus:outline-none focus:border-ih-accent"
           />
         </div>
         <div>
-          <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+          <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
             Shipping (AED)
           </label>
           <input
@@ -212,11 +212,11 @@ export default function SendQuoteComposer(props: Props) {
             onChange={(e) => setShipping(e.target.value)}
             min="0"
             step="0.01"
-            className="w-full h-9 px-3 border border-[var(--color-border)] bg-[var(--color-surface)] text-[13px] text-right font-mono focus:outline-none focus:border-[var(--color-accent)]"
+            className="w-full h-9 px-3 border border-ih-border bg-ih-bg text-[13px] text-right font-mono focus:outline-none focus:border-ih-accent"
           />
         </div>
         <div>
-          <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+          <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
             VAT (%) — auto from ship-to
           </label>
           <input
@@ -227,14 +227,14 @@ export default function SendQuoteComposer(props: Props) {
             min="0"
             max="100"
             step="0.01"
-            className="w-full h-9 px-3 border border-[var(--color-border)] bg-[var(--color-surface)] text-[13px] text-right font-mono focus:outline-none focus:border-[var(--color-accent)]"
+            className="w-full h-9 px-3 border border-ih-border bg-ih-bg text-[13px] text-right font-mono focus:outline-none focus:border-ih-accent"
           />
         </div>
       </div>
 
       <div className="grid grid-cols-2 gap-4">
         <div>
-          <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+          <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
             Validity (days)
           </label>
           <input
@@ -243,24 +243,24 @@ export default function SendQuoteComposer(props: Props) {
             defaultValue={props.defaultValidityDays}
             min="1"
             max="365"
-            className="w-full h-9 px-3 border border-[var(--color-border)] bg-[var(--color-surface)] text-[13px] focus:outline-none focus:border-[var(--color-accent)]"
+            className="w-full h-9 px-3 border border-ih-border bg-ih-bg text-[13px] focus:outline-none focus:border-ih-accent"
           />
         </div>
         <div>
-          <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+          <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
             Payment terms
           </label>
           <input
             type="text"
             name="paymentTerms"
             defaultValue={props.defaultPaymentTerms}
-            className="w-full h-9 px-3 border border-[var(--color-border)] bg-[var(--color-surface)] text-[13px] focus:outline-none focus:border-[var(--color-accent)]"
+            className="w-full h-9 px-3 border border-ih-border bg-ih-bg text-[13px] focus:outline-none focus:border-ih-accent"
           />
         </div>
       </div>
 
       <div>
-        <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+        <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
           Notes on the quote PDF (optional)
         </label>
         <textarea
@@ -268,52 +268,52 @@ export default function SendQuoteComposer(props: Props) {
           rows={3}
           defaultValue={props.defaultNotes}
           placeholder="Application-specific notes that should appear on this quote."
-          className="w-full px-3 py-2 border border-[var(--color-border)] bg-[var(--color-surface)] text-[13px] focus:outline-none focus:border-[var(--color-accent)] resize-none"
+          className="w-full px-3 py-2 border border-ih-border bg-ih-bg text-[13px] focus:outline-none focus:border-ih-accent resize-none"
         />
       </div>
 
       <div>
-        <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+        <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
           Personal note in the email (optional)
         </label>
         <textarea
           name="customerEmailMessage"
           rows={3}
           placeholder="A custom intro for the customer. Replaces the default email body if set."
-          className="w-full px-3 py-2 border border-[var(--color-border)] bg-[var(--color-surface)] text-[13px] focus:outline-none focus:border-[var(--color-accent)] resize-none"
+          className="w-full px-3 py-2 border border-ih-border bg-ih-bg text-[13px] focus:outline-none focus:border-ih-accent resize-none"
         />
       </div>
 
       {/* Live total preview */}
-      <div className="border-t border-[var(--color-border)] pt-4">
-        <div className="bg-[var(--color-deep)] p-3 font-mono text-[12px] grid grid-cols-2 gap-y-1">
-          <div className="text-[var(--color-muted)]">Subtotal (from line prices)</div>
-          <div className="text-right text-[var(--color-body)]">{formatAed(props.currentSubtotal)}</div>
+      <div className="border-t border-ih-border pt-4">
+        <div className="bg-ih-surface-2 p-3 font-mono text-[12px] grid grid-cols-2 gap-y-1">
+          <div className="text-ih-muted">Subtotal (from line prices)</div>
+          <div className="text-right text-ih-ink-2">{formatAed(props.currentSubtotal)}</div>
           {discountNum > 0 ? (
             <>
-              <div className="text-[var(--color-muted)]">Discount</div>
-              <div className="text-right text-[var(--color-body)]">−{formatAed(discountNum)}</div>
+              <div className="text-ih-muted">Discount</div>
+              <div className="text-right text-ih-ink-2">−{formatAed(discountNum)}</div>
             </>
           ) : null}
           {vatNum > 0 ? (
             <>
-              <div className="text-[var(--color-muted)]">VAT @ {vatNum}%</div>
-              <div className="text-right text-[var(--color-body)]">{formatAed(vatAmount)}</div>
+              <div className="text-ih-muted">VAT @ {vatNum}%</div>
+              <div className="text-right text-ih-ink-2">{formatAed(vatAmount)}</div>
             </>
           ) : (
             <>
-              <div className="text-[var(--color-muted)]">VAT</div>
-              <div className="text-right text-[var(--color-body)]">— (zero-rated export)</div>
+              <div className="text-ih-muted">VAT</div>
+              <div className="text-right text-ih-ink-2">— (zero-rated export)</div>
             </>
           )}
           {shippingNum > 0 ? (
             <>
-              <div className="text-[var(--color-muted)]">Shipping</div>
-              <div className="text-right text-[var(--color-body)]">{formatAed(shippingNum)}</div>
+              <div className="text-ih-muted">Shipping</div>
+              <div className="text-right text-ih-ink-2">{formatAed(shippingNum)}</div>
             </>
           ) : null}
-          <div className="text-[var(--color-primary)] font-semibold pt-1 border-t border-[var(--color-border)] mt-1">Total</div>
-          <div className="text-right text-[var(--color-primary)] font-semibold pt-1 border-t border-[var(--color-border)] mt-1">
+          <div className="text-ih-ink font-semibold pt-1 border-t border-ih-border mt-1">Total</div>
+          <div className="text-right text-ih-ink font-semibold pt-1 border-t border-ih-border mt-1">
             {formatAed(previewTotal)}
           </div>
         </div>
@@ -323,7 +323,7 @@ export default function SendQuoteComposer(props: Props) {
         <button
           type="submit"
           disabled={isPending || props.currentSubtotal <= 0}
-          className="h-10 px-5 bg-[var(--color-accent)] text-white font-mono text-[12px] hover:opacity-90 disabled:opacity-40 disabled:cursor-not-allowed"
+          className="h-10 px-5 bg-ih-accent text-white font-mono text-[12px] hover:opacity-90 disabled:opacity-40 disabled:cursor-not-allowed"
         >
           {isPending ? 'Sending…' : `Send quote → customer`}
         </button>
@@ -332,11 +332,11 @@ export default function SendQuoteComposer(props: Props) {
           onClick={handlePreview}
           disabled={props.currentSubtotal <= 0}
           title="Render the PDF with the current composer values in a new tab — does not send anything."
-          className="h-10 px-4 border border-[var(--color-border)] font-mono text-[12px] text-[var(--color-body)] hover:bg-[var(--color-deep)] disabled:opacity-40 disabled:cursor-not-allowed"
+          className="h-10 px-4 border border-ih-border font-mono text-[12px] text-ih-ink-2 hover:bg-ih-surface-2 disabled:opacity-40 disabled:cursor-not-allowed"
         >
           Preview PDF →
         </button>
-        <span className="font-mono text-[11px] text-[var(--color-muted)]">
+        <span className="font-mono text-[11px] text-ih-muted">
           {props.currentSubtotal <= 0 ? 'Set engineer unit prices first.' : 'Sends email + PDF, marks RFQ as Quote Sent.'}
         </span>
         {result && !result.ok ? (

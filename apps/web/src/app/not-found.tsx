@@ -19,21 +19,21 @@ export default async function NotFound() {
         404
       </div>
       <h1 className="text-[28px] font-semibold tracking-tight mb-3">Page not found</h1>
-      <p className="text-[14px] text-[var(--color-muted)] mb-8 leading-[1.6]">
+      <p className="text-[14px] text-ih-muted mb-8 leading-[1.6]">
         The page you&apos;re looking for doesn&apos;t exist or may have been moved.
       </p>
 
       <form method="GET" action="/search" className="mb-8">
-        <div className="flex border border-[var(--color-border)] bg-[var(--color-elevated)] max-w-[400px] mx-auto">
+        <div className="flex border border-ih-border bg-ih-surface max-w-[400px] mx-auto">
           <input
             name="q"
             type="text"
             placeholder="Search products…"
-            className="flex-1 px-4 py-2.5 bg-transparent text-[13px] text-[var(--color-primary)] placeholder:text-[var(--color-caption)] focus:outline-none"
+            className="flex-1 px-4 py-2.5 bg-transparent text-[13px] text-ih-ink placeholder:text-ih-muted-2 focus:outline-none"
           />
           <button
             type="submit"
-            className="px-4 border-l border-[var(--color-border)] bg-[var(--color-accent)] text-white font-mono text-[12px] hover:opacity-90"
+            className="px-4 border-l border-ih-border bg-ih-accent text-white font-mono text-[12px] hover:opacity-90"
           >
             Search
           </button>
@@ -42,7 +42,7 @@ export default async function NotFound() {
 
       {categories.length > 0 && (
         <div>
-          <p className="font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-3">
+          <p className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-3">
             Browse Categories
           </p>
           <div className="flex flex-wrap justify-center gap-2">
@@ -50,7 +50,7 @@ export default async function NotFound() {
               <Link
                 key={cat.slug}
                 href={`/c/${cat.slug}`}
-                className="px-4 py-2 border border-[var(--color-border)] bg-[var(--color-elevated)] font-mono text-[12px] text-[var(--color-body)] hover:border-[var(--color-body)] hover:text-[var(--color-primary)] transition-colors"
+                className="px-4 py-2 border border-ih-border bg-ih-surface font-mono text-[12px] text-ih-ink-2 hover:border-ih-accent hover:text-ih-ink transition-colors"
               >
                 {cat.name}
               </Link>
@@ -60,7 +60,7 @@ export default async function NotFound() {
       )}
 
       <div className="mt-8">
-        <Link href="/" className="font-mono text-[12px] text-[var(--color-accent)] hover:underline">
+        <Link href="/" className="font-mono text-[12px] text-ih-accent hover:underline">
           ← Back to home
         </Link>
       </div>

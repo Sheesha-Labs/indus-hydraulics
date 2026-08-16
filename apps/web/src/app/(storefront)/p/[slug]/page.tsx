@@ -595,9 +595,9 @@ export default async function ProductPage({ params, searchParams }: Props) {
 
         {/* Related products */}
         {related.length > 0 && (
-          <section className="border-t border-[var(--color-border)] pt-8 pb-20">
+          <section className="border-t border-ih-border pt-8 pb-20">
             <div className="mb-6">
-              <div className="font-mono text-[11px] tracking-[0.16em] text-[var(--color-muted)] uppercase mb-2">RELATED · OFTEN PAIRED WITH</div>
+              <div className="font-mono text-[11px] tracking-[0.16em] text-ih-muted uppercase mb-2">RELATED · OFTEN PAIRED WITH</div>
               <h2 className="text-[28px] font-semibold tracking-[-0.02em]">Engineers viewing this also looked at</h2>
             </div>
             <div className="grid grid-cols-4 gap-4">
@@ -605,9 +605,9 @@ export default async function ProductPage({ params, searchParams }: Props) {
                 <Link
                   key={rel.id}
                   href={`/p/${rel.slug}`}
-                  className="group border border-[var(--color-border)] bg-[var(--color-elevated)] overflow-hidden flex flex-col hover:border-[var(--color-body)] transition-colors"
+                  className="group border border-ih-border bg-ih-surface overflow-hidden flex flex-col hover:border-ih-accent transition-colors"
                 >
-                  <div className="aspect-square border-b border-[var(--color-border-2)] bg-[var(--color-deep)] relative">
+                  <div className="aspect-square border-b border-ih-border bg-ih-surface-2 relative">
                     {rel.images[0] ? (
                       <Image
                         src={mediaUrl(rel.images[0]!.media.storagePath)}
@@ -617,18 +617,18 @@ export default async function ProductPage({ params, searchParams }: Props) {
                         sizes="25vw"
                       />
                     ) : (
-                      <div className="absolute inset-0 grid place-items-center font-mono text-[10px] text-[var(--color-muted)]">
+                      <div className="absolute inset-0 grid place-items-center font-mono text-[10px] text-ih-muted">
                         {rel.sku}
                       </div>
                     )}
                   </div>
                   <div className="p-4 pb-5">
-                    <div className="font-mono text-[11px] text-[var(--color-caption)] mb-1.5">{rel.sku}</div>
-                    <h4 className="text-[14px] font-medium leading-[1.3] mb-2 group-hover:text-[var(--color-accent)] transition-colors">
+                    <div className="font-mono text-[11px] text-ih-muted-2 mb-1.5">{rel.sku}</div>
+                    <h4 className="text-[14px] font-medium leading-[1.3] mb-2 group-hover:text-ih-accent transition-colors">
                       {rel.title}
                     </h4>
                     {rel.brand && (
-                      <div className="font-mono text-[11px] text-[var(--color-muted)]">{rel.brand.name}</div>
+                      <div className="font-mono text-[11px] text-ih-muted">{rel.brand.name}</div>
                     )}
                   </div>
                 </Link>
@@ -782,9 +782,9 @@ function StockPill({
   return (
     <span
       className="inline-flex items-center gap-1.5 px-2.5 py-1 font-mono text-[11px] font-medium tracking-[0.04em]"
-      style={{ background: 'var(--color-deep)', color: 'var(--color-muted)' }}
+      style={{ background: 'var(--color-deep)', color: 'var(--color-ih-muted)' }}
     >
-      <span className="w-1.5 h-1.5 rounded-full" style={{ background: 'var(--color-muted)' }} />
+      <span className="w-1.5 h-1.5 rounded-full" style={{ background: 'var(--color-ih-muted)' }} />
       Contact for availability
     </span>
   )

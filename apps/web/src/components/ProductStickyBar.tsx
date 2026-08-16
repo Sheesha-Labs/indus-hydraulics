@@ -27,13 +27,13 @@ export default function ProductStickyBar({ title, sku, datasheetUrl, whatsappUrl
 
   return (
     <div
-      className="fixed bottom-0 left-0 right-0 z-30 bg-[var(--color-elevated)] border-t border-[var(--color-border)]"
+      className="fixed bottom-0 left-0 right-0 z-30 bg-ih-surface border-t border-ih-border"
       style={{ boxShadow: '0 -4px 20px -8px rgba(17,20,24,0.1)' }}
     >
-      <div className="max-w-[1360px] mx-auto px-8 py-3 flex gap-4 items-center">
+      <div className="mx-auto max-w-[1440px] px-5 sm:px-8 xl:px-12 py-3 flex gap-4 items-center">
         <div className="flex-1 flex items-center gap-3 min-w-0">
           <b className="text-[14px] font-semibold truncate">{title}</b>
-          <span className="font-mono text-[11px] text-[var(--color-muted)] shrink-0">{sku}</span>
+          <span className="font-mono text-[11px] text-ih-muted shrink-0">{sku}</span>
         </div>
         <div className="flex gap-2 shrink-0">
           {datasheetUrl && (
@@ -41,14 +41,14 @@ export default function ProductStickyBar({ title, sku, datasheetUrl, whatsappUrl
               href={datasheetUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="h-9 px-4 flex items-center border border-[var(--color-border)] font-mono text-[12px] text-[var(--color-body)] hover:bg-[var(--color-deep)] transition-colors"
+              className="h-9 px-4 flex items-center border border-ih-border font-mono text-[12px] text-ih-ink-2 hover:bg-ih-surface-2 transition-colors"
             >
               ↓ Datasheet
             </a>
           )}
           <a
             href={emailUrl}
-            className="h-9 px-4 flex items-center border border-[var(--color-primary)] bg-[var(--color-elevated)] font-mono text-[12px] text-[var(--color-primary)] hover:bg-[var(--color-deep)] transition-colors"
+            className="h-9 px-4 flex items-center border border-ih-ink bg-ih-surface font-mono text-[12px] text-ih-ink hover:bg-ih-surface-2 transition-colors"
           >
             Email Quote
           </a>

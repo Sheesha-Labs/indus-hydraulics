@@ -550,7 +550,7 @@ export default async function HomePage() {
                 </p>
               </div>
               <div className="relative">
-                <span className="font-mono text-[11px] tracking-[0.16em] uppercase text-ih-accent">CUSTOMER · MARINE</span>
+                <span className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-accent">CUSTOMER · MARINE</span>
                 <p className="text-[22px] leading-[1.4] tracking-[-0.01em] max-w-[380px] mt-3">
                   &ldquo;Indus delivered a 6-week-lead Atos servo valve in 4 days. We didn&apos;t lose a single shift.&rdquo;
                 </p>

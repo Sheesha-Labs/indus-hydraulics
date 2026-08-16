@@ -63,15 +63,15 @@ export default function SettingsPageClient({ activeTab, storeSettings, emailTemp
   return (
     <>
       {/* Tabs */}
-      <div className="flex border-b border-[var(--color-border)] mb-6">
+      <div className="flex border-b border-ih-border mb-6">
         {TABS.map((tab) => (
           <Link
             key={tab.id}
             href={`?tab=${tab.id}`}
             className={`px-4 py-2.5 font-mono text-[12px] border-b-2 -mb-px transition-colors ${
               activeTab === tab.id
-                ? 'border-[var(--color-accent)] text-[var(--color-primary)]'
-                : 'border-transparent text-[var(--color-muted)] hover:text-[var(--color-body)]'
+                ? 'border-ih-accent text-ih-ink'
+                : 'border-transparent text-ih-muted hover:text-ih-ink-2'
             }`}
           >
             {tab.label}
@@ -83,7 +83,7 @@ export default function SettingsPageClient({ activeTab, storeSettings, emailTemp
       {activeTab === 'store' && (
         <form action={handleStoreSettings} className="max-w-[560px] space-y-5">
           <div>
-            <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+            <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
               Store Name
             </label>
             <input
@@ -91,12 +91,12 @@ export default function SettingsPageClient({ activeTab, storeSettings, emailTemp
               type="text"
               required
               defaultValue={storeSettings?.name ?? 'Indus Hydraulics'}
-              className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] focus:outline-none focus:border-[var(--color-accent)]"
+              className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent"
             />
           </div>
 
           <div>
-            <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+            <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
               Support Email
             </label>
             <input
@@ -104,18 +104,18 @@ export default function SettingsPageClient({ activeTab, storeSettings, emailTemp
               type="email"
               defaultValue={storeSettings?.supportEmail ?? ''}
               placeholder="support@indushydraulics.me"
-              className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] focus:outline-none focus:border-[var(--color-accent)]"
+              className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent"
             />
           </div>
 
           <div>
-            <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+            <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
               Default Incoterm
             </label>
             <select
               name="defaultIncoterm"
               defaultValue={storeSettings?.defaultIncoterm ?? ''}
-              className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] focus:outline-none"
+              className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none"
             >
               <option value="">— None —</option>
               {INCOTERMS.map((term) => (
@@ -125,13 +125,13 @@ export default function SettingsPageClient({ activeTab, storeSettings, emailTemp
           </div>
 
           <div>
-            <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+            <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
               Default Payment Terms (days)
             </label>
             <select
               name="defaultPaymentTerms"
               defaultValue={storeSettings?.defaultPaymentTerms ?? 30}
-              className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] focus:outline-none"
+              className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none"
             >
               {[0, 7, 14, 30, 45, 60, 90].map((days) => (
                 <option key={days} value={days}>
@@ -141,17 +141,17 @@ export default function SettingsPageClient({ activeTab, storeSettings, emailTemp
             </select>
           </div>
 
-          <div className="pt-4 mt-4 border-t border-[var(--color-border)]">
-            <h3 className="font-mono text-[11px] tracking-[0.12em] uppercase text-[var(--color-muted)] mb-3">
+          <div className="pt-4 mt-4 border-t border-ih-border">
+            <h3 className="font-mono text-[11px] tracking-[0.12em] uppercase text-ih-muted mb-3">
               Brand identity
             </h3>
-            <p className="text-[12px] text-[var(--color-muted)] mb-4">
+            <p className="text-[12px] text-ih-muted mb-4">
               Rendered in the storefront footer brand block. The store name above is reused as the brand name.
             </p>
           </div>
 
           <div>
-            <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+            <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
               Tagline
             </label>
             <textarea
@@ -160,12 +160,12 @@ export default function SettingsPageClient({ activeTab, storeSettings, emailTemp
               maxLength={280}
               defaultValue={storeSettings?.tagline ?? ''}
               placeholder="UAE's trusted distributor of industrial hydraulic components since 2003."
-              className="w-full px-3 py-2 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] focus:outline-none focus:border-[var(--color-accent)] resize-none"
+              className="w-full px-3 py-2 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent resize-none"
             />
           </div>
 
           <div>
-            <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+            <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
               Certification line
             </label>
             <input
@@ -174,21 +174,21 @@ export default function SettingsPageClient({ activeTab, storeSettings, emailTemp
               maxLength={120}
               defaultValue={storeSettings?.certificationLine ?? ''}
               placeholder="ISO 9001:2015 Certified"
-              className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] focus:outline-none focus:border-[var(--color-accent)]"
+              className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent"
             />
           </div>
 
-          <div className="pt-4 mt-4 border-t border-[var(--color-border)]">
-            <h3 className="font-mono text-[11px] tracking-[0.12em] uppercase text-[var(--color-muted)] mb-3">
+          <div className="pt-4 mt-4 border-t border-ih-border">
+            <h3 className="font-mono text-[11px] tracking-[0.12em] uppercase text-ih-muted mb-3">
               Public contact info
             </h3>
-            <p className="text-[12px] text-[var(--color-muted)] mb-4">
+            <p className="text-[12px] text-ih-muted mb-4">
               Rendered in the storefront header topbar (phone + hours) and footer contact block.
             </p>
           </div>
 
           <div>
-            <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+            <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
               Location label
             </label>
             <input
@@ -197,12 +197,12 @@ export default function SettingsPageClient({ activeTab, storeSettings, emailTemp
               maxLength={80}
               defaultValue={storeSettings?.contactLocationLabel ?? ''}
               placeholder="Dubai HQ"
-              className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] focus:outline-none focus:border-[var(--color-accent)]"
+              className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent"
             />
           </div>
 
           <div>
-            <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+            <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
               Phone
             </label>
             <input
@@ -211,12 +211,12 @@ export default function SettingsPageClient({ activeTab, storeSettings, emailTemp
               maxLength={40}
               defaultValue={storeSettings?.contactPhone ?? ''}
               placeholder="+971 4 XXX XXXX"
-              className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] focus:outline-none focus:border-[var(--color-accent)]"
+              className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent"
             />
           </div>
 
           <div>
-            <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+            <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
               Public email
             </label>
             <input
@@ -224,12 +224,12 @@ export default function SettingsPageClient({ activeTab, storeSettings, emailTemp
               type="email"
               defaultValue={storeSettings?.contactEmail ?? ''}
               placeholder="sales@indushydraulics.me"
-              className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] focus:outline-none focus:border-[var(--color-accent)]"
+              className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent"
             />
           </div>
 
           <div>
-            <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+            <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
               Hours
             </label>
             <input
@@ -238,21 +238,21 @@ export default function SettingsPageClient({ activeTab, storeSettings, emailTemp
               maxLength={120}
               defaultValue={storeSettings?.contactHours ?? ''}
               placeholder="Mon–Sat 09:00–18:00 GST"
-              className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] focus:outline-none focus:border-[var(--color-accent)]"
+              className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent"
             />
           </div>
 
-          <div className="pt-4 mt-4 border-t border-[var(--color-border)]">
-            <h3 className="font-mono text-[11px] tracking-[0.12em] uppercase text-[var(--color-muted)] mb-3">
+          <div className="pt-4 mt-4 border-t border-ih-border">
+            <h3 className="font-mono text-[11px] tracking-[0.12em] uppercase text-ih-muted mb-3">
               Legal entity
             </h3>
-            <p className="text-[12px] text-[var(--color-muted)] mb-4">
+            <p className="text-[12px] text-ih-muted mb-4">
               Rendered on every quote PDF and transactional email footer. UAE ship-tos auto-apply 5% VAT; non-UAE ship-tos are zero-rated as exports (TRN still shown).
             </p>
           </div>
 
           <div>
-            <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+            <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
               Legal name
             </label>
             <input
@@ -261,12 +261,12 @@ export default function SettingsPageClient({ activeTab, storeSettings, emailTemp
               maxLength={160}
               defaultValue={storeSettings?.legalName ?? ''}
               placeholder="Indus Hydraulic Power Trading LLC"
-              className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] focus:outline-none focus:border-[var(--color-accent)]"
+              className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent"
             />
           </div>
 
           <div>
-            <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+            <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
               VAT / TRN number
             </label>
             <input
@@ -275,12 +275,12 @@ export default function SettingsPageClient({ activeTab, storeSettings, emailTemp
               maxLength={40}
               defaultValue={storeSettings?.vatTrn ?? ''}
               placeholder="100548997400003"
-              className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] focus:outline-none focus:border-[var(--color-accent)]"
+              className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent"
             />
           </div>
 
           <div>
-            <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+            <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
               Registered address (one line per line)
             </label>
             <textarea
@@ -288,13 +288,13 @@ export default function SettingsPageClient({ activeTab, storeSettings, emailTemp
               rows={4}
               defaultValue={((storeSettings?.registeredAddressLines as string[] | null) ?? []).join('\n')}
               placeholder={'Office No 310 Al Hilal Bank Building, Al Nahda Street\nAl Quasis-2, Dubai\nDubai 87556\nUnited Arab Emirates'}
-              className="w-full px-3 py-2 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] focus:outline-none focus:border-[var(--color-accent)] resize-none font-mono"
+              className="w-full px-3 py-2 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent resize-none font-mono"
             />
           </div>
 
           <div className="grid grid-cols-2 gap-3">
             <div>
-              <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+              <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
                 Country (ISO-2)
               </label>
               <input
@@ -303,11 +303,11 @@ export default function SettingsPageClient({ activeTab, storeSettings, emailTemp
                 maxLength={2}
                 defaultValue={storeSettings?.registeredCountryCode ?? 'AE'}
                 placeholder="AE"
-                className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] focus:outline-none focus:border-[var(--color-accent)] uppercase"
+                className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent uppercase"
               />
             </div>
             <div>
-              <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+              <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
                 Default VAT rate (%)
               </label>
               <input
@@ -317,23 +317,23 @@ export default function SettingsPageClient({ activeTab, storeSettings, emailTemp
                 min="0"
                 max="100"
                 defaultValue={storeSettings?.defaultVatRatePct?.toString() ?? '5.00'}
-                className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] focus:outline-none focus:border-[var(--color-accent)]"
+                className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent"
               />
             </div>
           </div>
 
-          <div className="pt-4 mt-4 border-t border-[var(--color-border)]">
-            <h3 className="font-mono text-[11px] tracking-[0.12em] uppercase text-[var(--color-muted)] mb-3">
+          <div className="pt-4 mt-4 border-t border-ih-border">
+            <h3 className="font-mono text-[11px] tracking-[0.12em] uppercase text-ih-muted mb-3">
               Quote signature block
             </h3>
-            <p className="text-[12px] text-[var(--color-muted)] mb-4">
+            <p className="text-[12px] text-ih-muted mb-4">
               Appears at the bottom of every outgoing quote PDF and email.
             </p>
           </div>
 
           <div className="grid grid-cols-2 gap-3">
             <div>
-              <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+              <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
                 Name
               </label>
               <input
@@ -342,11 +342,11 @@ export default function SettingsPageClient({ activeTab, storeSettings, emailTemp
                 maxLength={120}
                 defaultValue={storeSettings?.signatureName ?? ''}
                 placeholder="Krishan Bhatia"
-                className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] focus:outline-none focus:border-[var(--color-accent)]"
+                className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent"
               />
             </div>
             <div>
-              <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+              <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
                 Title
               </label>
               <input
@@ -355,14 +355,14 @@ export default function SettingsPageClient({ activeTab, storeSettings, emailTemp
                 maxLength={120}
                 defaultValue={storeSettings?.signatureTitle ?? ''}
                 placeholder="Managing Director"
-                className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] focus:outline-none focus:border-[var(--color-accent)]"
+                className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent"
               />
             </div>
           </div>
 
           <div className="grid grid-cols-2 gap-3">
             <div>
-              <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+              <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
                 Phone
               </label>
               <input
@@ -371,11 +371,11 @@ export default function SettingsPageClient({ activeTab, storeSettings, emailTemp
                 maxLength={40}
                 defaultValue={storeSettings?.signaturePhone ?? ''}
                 placeholder="+971 52 2477942"
-                className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] focus:outline-none focus:border-[var(--color-accent)]"
+                className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent"
               />
             </div>
             <div>
-              <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+              <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
                 Email
               </label>
               <input
@@ -383,23 +383,23 @@ export default function SettingsPageClient({ activeTab, storeSettings, emailTemp
                 type="email"
                 defaultValue={storeSettings?.signatureEmail ?? ''}
                 placeholder="sales@indushydraulics.me"
-                className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] focus:outline-none focus:border-[var(--color-accent)]"
+                className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent"
               />
             </div>
           </div>
 
-          <div className="pt-4 mt-4 border-t border-[var(--color-border)]">
-            <h3 className="font-mono text-[11px] tracking-[0.12em] uppercase text-[var(--color-muted)] mb-3">
+          <div className="pt-4 mt-4 border-t border-ih-border">
+            <h3 className="font-mono text-[11px] tracking-[0.12em] uppercase text-ih-muted mb-3">
               Outbound email
             </h3>
-            <p className="text-[12px] text-[var(--color-muted)] mb-4">
+            <p className="text-[12px] text-ih-muted mb-4">
               All transactional email is sent from one shared address. Replies route here too. New-RFQ alerts fan out to the internal recipient list.
             </p>
           </div>
 
           <div className="grid grid-cols-2 gap-3">
             <div>
-              <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+              <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
                 From / Reply-To address
               </label>
               <input
@@ -407,11 +407,11 @@ export default function SettingsPageClient({ activeTab, storeSettings, emailTemp
                 type="email"
                 defaultValue={storeSettings?.quoteFromEmail ?? ''}
                 placeholder="sales@indushydraulics.me"
-                className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] focus:outline-none focus:border-[var(--color-accent)]"
+                className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent"
               />
             </div>
             <div>
-              <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+              <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
                 Sender display name
               </label>
               <input
@@ -420,13 +420,13 @@ export default function SettingsPageClient({ activeTab, storeSettings, emailTemp
                 maxLength={120}
                 defaultValue={storeSettings?.quoteFromName ?? ''}
                 placeholder="Indus Hydraulics Sales"
-                className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] focus:outline-none focus:border-[var(--color-accent)]"
+                className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent"
               />
             </div>
           </div>
 
           <div>
-            <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+            <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
               Internal new-RFQ alert recipients (one email per line)
             </label>
             <textarea
@@ -434,21 +434,21 @@ export default function SettingsPageClient({ activeTab, storeSettings, emailTemp
               rows={3}
               defaultValue={((storeSettings?.internalAlertEmails as string[] | null) ?? []).join('\n')}
               placeholder={'sales@indushydraulics.me\nayushkbhatia@gmail.com'}
-              className="w-full px-3 py-2 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] focus:outline-none focus:border-[var(--color-accent)] resize-none font-mono"
+              className="w-full px-3 py-2 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent resize-none font-mono"
             />
           </div>
 
-          <div className="pt-4 mt-4 border-t border-[var(--color-border)]">
-            <h3 className="font-mono text-[11px] tracking-[0.12em] uppercase text-[var(--color-muted)] mb-3">
+          <div className="pt-4 mt-4 border-t border-ih-border">
+            <h3 className="font-mono text-[11px] tracking-[0.12em] uppercase text-ih-muted mb-3">
               Quote defaults
             </h3>
-            <p className="text-[12px] text-[var(--color-muted)] mb-4">
+            <p className="text-[12px] text-ih-muted mb-4">
               Defaults pre-filled on every new quote. Engineers can override per quote.
             </p>
           </div>
 
           <div>
-            <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+            <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
               Validity (days)
             </label>
             <input
@@ -457,12 +457,12 @@ export default function SettingsPageClient({ activeTab, storeSettings, emailTemp
               min="1"
               max="365"
               defaultValue={storeSettings?.defaultQuoteValidityDays ?? 30}
-              className="w-32 h-10 px-3 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] focus:outline-none focus:border-[var(--color-accent)]"
+              className="w-32 h-10 px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent"
             />
           </div>
 
           <div>
-            <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+            <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
               Default Notes (optional)
             </label>
             <textarea
@@ -470,12 +470,12 @@ export default function SettingsPageClient({ activeTab, storeSettings, emailTemp
               rows={3}
               defaultValue={storeSettings?.defaultQuoteNotes ?? ''}
               placeholder="Any standing notes that should appear on every quote."
-              className="w-full px-3 py-2 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] focus:outline-none focus:border-[var(--color-accent)] resize-none"
+              className="w-full px-3 py-2 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent resize-none"
             />
           </div>
 
           <div>
-            <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+            <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
               Default Terms &amp; Conditions
             </label>
             <textarea
@@ -483,12 +483,12 @@ export default function SettingsPageClient({ activeTab, storeSettings, emailTemp
               rows={4}
               defaultValue={storeSettings?.defaultQuoteTerms ?? ''}
               placeholder={'DELIVERY: DDP destination\nPAYMENT: Advance with order\nPRICE VALID FOR FULL 30 DAYS ONLY.'}
-              className="w-full px-3 py-2 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] focus:outline-none focus:border-[var(--color-accent)] resize-none font-mono"
+              className="w-full px-3 py-2 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent resize-none font-mono"
             />
           </div>
 
           <div>
-            <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+            <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
               Default Disclaimer
             </label>
             <textarea
@@ -496,22 +496,22 @@ export default function SettingsPageClient({ activeTab, storeSettings, emailTemp
               rows={3}
               defaultValue={storeSettings?.defaultQuoteDisclaimer ?? ''}
               placeholder="Once the order is confirmed and processed, the same cannot be changed or cancelled. Material will be supplied as per the offer quoted."
-              className="w-full px-3 py-2 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] focus:outline-none focus:border-[var(--color-accent)] resize-none"
+              className="w-full px-3 py-2 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent resize-none"
             />
           </div>
 
-          <div className="pt-4 mt-4 border-t border-[var(--color-border)]">
-            <h3 className="font-mono text-[11px] tracking-[0.12em] uppercase text-[var(--color-muted)] mb-3">
+          <div className="pt-4 mt-4 border-t border-ih-border">
+            <h3 className="font-mono text-[11px] tracking-[0.12em] uppercase text-ih-muted mb-3">
               Bank details (PDF footer)
             </h3>
-            <p className="text-[12px] text-[var(--color-muted)] mb-4">
+            <p className="text-[12px] text-ih-muted mb-4">
               Rendered on page 2 of every quote PDF below the signature block. All fields optional — leave blank to hide the bank-details section entirely.
             </p>
           </div>
 
           <div className="grid grid-cols-2 gap-3">
             <div>
-              <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+              <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
                 Account name
               </label>
               <input
@@ -520,11 +520,11 @@ export default function SettingsPageClient({ activeTab, storeSettings, emailTemp
                 maxLength={120}
                 defaultValue={storeSettings?.bankAccountName ?? ''}
                 placeholder="Indus Hydraulic Power Trading LLC"
-                className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] focus:outline-none focus:border-[var(--color-accent)]"
+                className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent"
               />
             </div>
             <div>
-              <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+              <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
                 Bank name
               </label>
               <input
@@ -533,14 +533,14 @@ export default function SettingsPageClient({ activeTab, storeSettings, emailTemp
                 maxLength={120}
                 defaultValue={storeSettings?.bankName ?? ''}
                 placeholder="Mashreq Bank"
-                className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] focus:outline-none focus:border-[var(--color-accent)]"
+                className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent"
               />
             </div>
           </div>
 
           <div className="grid grid-cols-2 gap-3">
             <div>
-              <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+              <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
                 Branch
               </label>
               <input
@@ -549,11 +549,11 @@ export default function SettingsPageClient({ activeTab, storeSettings, emailTemp
                 maxLength={120}
                 defaultValue={storeSettings?.bankBranch ?? ''}
                 placeholder="Al Quasis Branch, Dubai"
-                className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] focus:outline-none focus:border-[var(--color-accent)]"
+                className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent"
               />
             </div>
             <div>
-              <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+              <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
                 Account number
               </label>
               <input
@@ -562,14 +562,14 @@ export default function SettingsPageClient({ activeTab, storeSettings, emailTemp
                 maxLength={40}
                 defaultValue={storeSettings?.bankAccountNo ?? ''}
                 placeholder="012345678901"
-                className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] focus:outline-none focus:border-[var(--color-accent)] font-mono"
+                className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent font-mono"
               />
             </div>
           </div>
 
           <div className="grid grid-cols-2 gap-3">
             <div>
-              <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+              <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
                 IBAN
               </label>
               <input
@@ -578,11 +578,11 @@ export default function SettingsPageClient({ activeTab, storeSettings, emailTemp
                 maxLength={40}
                 defaultValue={storeSettings?.bankIban ?? ''}
                 placeholder="AE07 0331 2345 6789 0123 456"
-                className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] focus:outline-none focus:border-[var(--color-accent)] font-mono"
+                className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent font-mono"
               />
             </div>
             <div>
-              <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+              <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
                 SWIFT / BIC
               </label>
               <input
@@ -591,7 +591,7 @@ export default function SettingsPageClient({ activeTab, storeSettings, emailTemp
                 maxLength={20}
                 defaultValue={storeSettings?.bankSwift ?? ''}
                 placeholder="BOMLAEAD"
-                className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] focus:outline-none focus:border-[var(--color-accent)] font-mono"
+                className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent font-mono"
               />
             </div>
           </div>
@@ -600,12 +600,12 @@ export default function SettingsPageClient({ activeTab, storeSettings, emailTemp
             <button
               type="submit"
               disabled={isPending}
-              className="h-9 px-5 bg-[var(--color-accent)] text-white font-mono text-[12px] hover:opacity-90 disabled:opacity-50"
+              className="h-9 px-5 bg-ih-accent text-white font-mono text-[12px] hover:opacity-90 disabled:opacity-50"
             >
               {isPending ? 'Saving…' : 'Save Settings'}
             </button>
             {saved === 'store' && (
-              <span className="font-mono text-[11px] text-[var(--color-good)]">Saved ✓</span>
+              <span className="font-mono text-[11px] text-ih-success">Saved ✓</span>
             )}
             {error && activeTab === 'store' && (
               <span className="font-mono text-[11px] text-[oklch(0.5_0.18_25)]" role="alert">{error}</span>
@@ -618,21 +618,21 @@ export default function SettingsPageClient({ activeTab, storeSettings, emailTemp
       {activeTab === 'emails' && (
         <div className="grid grid-cols-[240px_1fr] gap-6">
           {/* Template list */}
-          <div className="border border-[var(--color-border)] overflow-hidden h-fit">
+          <div className="border border-ih-border overflow-hidden h-fit">
             {EMAIL_KINDS.map((ek) => (
               <button
                 key={ek.kind}
                 onClick={() => setSelectedEmail(ek.kind)}
-                className={`w-full text-left px-4 py-3 border-b border-[var(--color-border)] last:border-0 transition-colors ${
+                className={`w-full text-left px-4 py-3 border-b border-ih-border last:border-0 transition-colors ${
                   selectedEmail === ek.kind
-                    ? 'bg-[var(--color-deep)] border-l-2 border-l-[var(--color-accent)]'
-                    : 'hover:bg-[var(--color-deep)]'
+                    ? 'bg-ih-surface-2 border-l-2 border-l-ih-accent'
+                    : 'hover:bg-ih-surface-2'
                 }`}
               >
-                <div className="text-[13px] font-medium text-[var(--color-primary)] mb-0.5">{ek.label}</div>
-                <div className="font-mono text-[10px] text-[var(--color-muted)]">{ek.description}</div>
+                <div className="text-[13px] font-medium text-ih-ink mb-0.5">{ek.label}</div>
+                <div className="font-mono text-[10px] text-ih-muted">{ek.description}</div>
                 {templateMap[ek.kind] && (
-                  <div className="mt-1 font-mono text-[9px] px-1.5 py-0.5 bg-[var(--color-good-soft)] text-[var(--color-good)] inline-block">
+                  <div className="mt-1 font-mono text-[9px] px-1.5 py-0.5 bg-ih-success-soft text-ih-success inline-block">
                     configured
                   </div>
                 )}
@@ -651,12 +651,12 @@ export default function SettingsPageClient({ activeTab, storeSettings, emailTemp
                   <div>
                     <div className="mb-3">
                       <h2 className="text-[16px] font-semibold">{meta.label}</h2>
-                      <p className="text-[12px] text-[var(--color-muted)]">{meta.description}</p>
+                      <p className="text-[12px] text-ih-muted">{meta.description}</p>
                     </div>
                   </div>
 
                   <div>
-                    <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+                    <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
                       Subject Line
                     </label>
                     <input
@@ -665,20 +665,20 @@ export default function SettingsPageClient({ activeTab, storeSettings, emailTemp
                       required
                       defaultValue={currentTemplate?.subject ?? ''}
                       placeholder={`Email subject for ${meta.label}`}
-                      className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] focus:outline-none focus:border-[var(--color-accent)]"
+                      className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent"
                     />
                   </div>
 
                   <div>
-                    <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+                    <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
                       Body HTML
                     </label>
-                    <div className="border border-[var(--color-border)] bg-[var(--color-elevated)] p-3 mb-1.5">
-                      <p className="font-mono text-[10px] text-[var(--color-muted)]">
+                    <div className="border border-ih-border bg-ih-surface p-3 mb-1.5">
+                      <p className="font-mono text-[10px] text-ih-muted">
                         Available variables:{' '}
-                        <code className="bg-[var(--color-deep)] px-1">{'{{name}}'}</code>{' '}
-                        <code className="bg-[var(--color-deep)] px-1">{'{{rfqCode}}'}</code>{' '}
-                        <code className="bg-[var(--color-deep)] px-1">{'{{link}}'}</code>
+                        <code className="bg-ih-surface-2 px-1">{'{{name}}'}</code>{' '}
+                        <code className="bg-ih-surface-2 px-1">{'{{rfqCode}}'}</code>{' '}
+                        <code className="bg-ih-surface-2 px-1">{'{{link}}'}</code>
                       </p>
                     </div>
                     <textarea
@@ -686,7 +686,7 @@ export default function SettingsPageClient({ activeTab, storeSettings, emailTemp
                       rows={16}
                       required
                       defaultValue={currentTemplate?.bodyHtml ?? ''}
-                      className="w-full px-3 py-2.5 border border-[var(--color-border)] bg-[var(--color-elevated)] font-mono text-[12px] focus:outline-none focus:border-[var(--color-accent)] resize-none"
+                      className="w-full px-3 py-2.5 border border-ih-border bg-ih-surface font-mono text-[12px] focus:outline-none focus:border-ih-accent resize-none"
                     />
                   </div>
 
@@ -694,12 +694,12 @@ export default function SettingsPageClient({ activeTab, storeSettings, emailTemp
                     <button
                       type="submit"
                       disabled={isPending}
-                      className="h-9 px-5 bg-[var(--color-accent)] text-white font-mono text-[12px] hover:opacity-90 disabled:opacity-50"
+                      className="h-9 px-5 bg-ih-accent text-white font-mono text-[12px] hover:opacity-90 disabled:opacity-50"
                     >
                       {isPending ? 'Saving…' : 'Save Template'}
                     </button>
                     {saved === selectedEmail && (
-                      <span className="font-mono text-[11px] text-[var(--color-good)]">Saved ✓</span>
+                      <span className="font-mono text-[11px] text-ih-success">Saved ✓</span>
                     )}
                     {error && activeTab === 'emails' && (
                       <span className="font-mono text-[11px] text-[oklch(0.5_0.18_25)]" role="alert">{error}</span>

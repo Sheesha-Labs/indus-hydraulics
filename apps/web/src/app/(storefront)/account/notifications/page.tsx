@@ -83,14 +83,14 @@ export default async function NotificationsPage() {
     <div>
       <div className="flex items-end justify-between flex-wrap gap-4 mb-6">
         <div>
-          <div className="font-mono text-[11px] tracking-[0.14em] text-[var(--color-muted)] uppercase">
-            <Link href={`/account`} className="hover:text-[var(--color-primary)]">
+          <div className="font-mono text-[11px] tracking-[0.14em] text-ih-muted uppercase">
+            <Link href={`/account`} className="hover:text-ih-ink">
               Account
             </Link>
             {' / '}Notifications
           </div>
           <h1 className="text-[32px] font-semibold tracking-tight mt-1.5">Notifications</h1>
-          <p className="text-[13px] text-[var(--color-muted)] mt-1">
+          <p className="text-[13px] text-ih-muted mt-1">
             {unreadCount === 0 ? 'You’re all caught up.' : `${unreadCount} unread`}
           </p>
         </div>
@@ -98,14 +98,14 @@ export default async function NotificationsPage() {
       </div>
 
       {notifications.length === 0 ? (
-        <div className="py-16 border border-dashed border-[var(--color-border)] text-center">
-          <p className="text-[var(--color-muted)] text-sm">No notifications yet.</p>
-          <p className="text-[12px] text-[var(--color-caption)] mt-2">
+        <div className="py-16 border border-dashed border-ih-border text-center">
+          <p className="text-ih-muted text-sm">No notifications yet.</p>
+          <p className="text-[12px] text-ih-muted-2 mt-2">
             We’ll let you know when there’s an update on one of your quotes.
           </p>
         </div>
       ) : (
-        <div className="border border-[var(--color-border)] bg-[var(--color-elevated)] divide-y divide-[var(--color-border-2)]">
+        <div className="border border-ih-border bg-ih-surface divide-y divide-ih-border">
           {notifications.map((n) => {
             const payload = (n.payload as NotificationPayload) ?? {}
             const { title, href } = describe(n.kind, payload)
@@ -114,26 +114,26 @@ export default async function NotificationsPage() {
               <div className="flex items-start gap-3 px-4 py-3.5">
                 <div
                   className={`mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0 ${
-                    unread ? 'bg-[var(--color-accent)]' : 'bg-transparent'
+                    unread ? 'bg-ih-accent' : 'bg-transparent'
                   }`}
                 />
                 <div className="flex-1 min-w-0">
                   <div className="flex items-baseline justify-between gap-3">
-                    <div className={`text-[13px] ${unread ? 'font-semibold text-[var(--color-primary)]' : 'text-[var(--color-body)]'}`}>
+                    <div className={`text-[13px] ${unread ? 'font-semibold text-ih-ink' : 'text-ih-ink-2'}`}>
                       {title}
                     </div>
-                    <div className="font-mono text-[10px] text-[var(--color-muted)] flex-shrink-0">
+                    <div className="font-mono text-[10px] text-ih-muted flex-shrink-0">
                       {timeAgo(new Date(n.createdAt))}
                     </div>
                   </div>
-                  <div className="font-mono text-[10px] tracking-[0.06em] uppercase text-[var(--color-caption)] mt-0.5">
+                  <div className="font-mono text-[10px] tracking-[0.06em] uppercase text-ih-muted-2 mt-0.5">
                     {KIND_LABELS[n.kind] ?? n.kind}
                   </div>
                 </div>
               </div>
             )
             return href ? (
-              <Link key={n.id} href={href} className="block hover:bg-[var(--color-deep)] transition-colors">
+              <Link key={n.id} href={href} className="block hover:bg-ih-surface-2 transition-colors">
                 {inner}
               </Link>
             ) : (

@@ -8,7 +8,7 @@ type Props = {
   title: string
 }
 
-const HERO_BOX = 'relative w-full aspect-[4/3] max-h-[min(56vh,480px)] border border-[var(--color-border)] bg-[var(--color-elevated)] overflow-hidden'
+const HERO_BOX = 'relative w-full aspect-[4/3] max-h-[min(56vh,480px)] border border-ih-border bg-ih-surface overflow-hidden'
 
 export default function ProductGallery({ images, title }: Props) {
   const [active, setActive] = useState(0)
@@ -16,8 +16,8 @@ export default function ProductGallery({ images, title }: Props) {
   if (images.length === 0) {
     return (
       <div className="flex flex-col gap-3">
-        <div className={HERO_BOX + ' bg-[var(--color-deep)] grid place-items-center'}>
-          <div className="font-mono text-[11px] tracking-[0.08em] text-[var(--color-muted)] text-center">
+        <div className={HERO_BOX + ' bg-ih-surface-2 grid place-items-center'}>
+          <div className="font-mono text-[11px] tracking-[0.08em] text-ih-muted text-center">
             <div className="text-4xl mb-3 opacity-20">⚙</div>
             {title}
           </div>
@@ -44,7 +44,7 @@ export default function ProductGallery({ images, title }: Props) {
         <GridOverlay />
 
         {/* Top-left view callout (matches design's "VIEW 01 · 3/4 PERSPECTIVE") */}
-        <div className="absolute top-4 left-4 bg-[var(--color-primary)] text-[var(--color-elevated)] font-mono text-[10px] tracking-[0.06em] px-2.5 py-1.5 max-w-[60%]">
+        <div className="absolute top-4 left-4 bg-ih-navy text-white font-mono text-[10px] tracking-[0.06em] px-2.5 py-1.5 max-w-[60%]">
           <span className="opacity-70">VIEW {String(active + 1).padStart(2, '0')}</span>
           {calloutLabel && (
             <>
@@ -56,7 +56,7 @@ export default function ProductGallery({ images, title }: Props) {
 
         {/* Bottom-right index counter — minimal, not a fake scale */}
         {images.length > 1 && (
-          <div className="absolute bottom-4 right-4 bg-[var(--color-primary)] text-[var(--color-elevated)] font-mono text-[10px] tracking-[0.06em] px-2.5 py-1.5">
+          <div className="absolute bottom-4 right-4 bg-ih-navy text-white font-mono text-[10px] tracking-[0.06em] px-2.5 py-1.5">
             {active + 1} / {images.length}
           </div>
         )}
@@ -70,17 +70,17 @@ export default function ProductGallery({ images, title }: Props) {
               key={i}
               type="button"
               onClick={() => setActive(i)}
-              className={`relative aspect-square border bg-[var(--color-elevated)] overflow-hidden transition-colors ${
+              className={`relative aspect-square border bg-ih-surface overflow-hidden transition-colors ${
                 i === active
-                  ? 'border-[var(--color-primary)] border-2'
-                  : 'border-[var(--color-border)] hover:border-[var(--color-body)]'
+                  ? 'border-ih-ink border-2'
+                  : 'border-ih-border hover:border-ih-accent'
               }`}
               aria-label={`View ${i + 1}: ${img.alt || `image ${i + 1}`}`}
               aria-current={i === active ? 'true' : undefined}
             >
               <Image src={img.url} alt={img.alt} fill className="object-contain p-2" sizes="12vw" />
               {img.alt && (
-                <span className="absolute bottom-1 left-1 right-1 font-mono text-[9px] tracking-[0.04em] text-[var(--color-muted)] truncate text-left">
+                <span className="absolute bottom-1 left-1 right-1 font-mono text-[9px] tracking-[0.04em] text-ih-muted truncate text-left">
                   {img.alt}
                 </span>
               )}

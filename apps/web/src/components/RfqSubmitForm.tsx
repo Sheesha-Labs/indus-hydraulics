@@ -210,7 +210,7 @@ export default function RfqSubmitForm({ addresses, isAuthenticated }: Props) {
             <div className="flex flex-col gap-4">
               {/* Urgency radio cards */}
               <div>
-                <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-ih-muted mb-2">
+                <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-2">
                   Urgency *
                 </label>
                 <div className="grid grid-cols-3 gap-2">

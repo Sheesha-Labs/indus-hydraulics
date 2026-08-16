@@ -126,8 +126,8 @@ export default async function AccountQuotesPage({ searchParams }: Props) {
       {/* Page header */}
       <div className="flex items-center justify-between flex-wrap gap-4 mb-6">
         <div>
-          <div className="font-mono text-[11px] tracking-[0.14em] text-[var(--color-muted)] uppercase">
-            <Link href={`/account`} className="hover:text-[var(--color-primary)]">Account</Link>
+          <div className="font-mono text-[11px] tracking-[0.14em] text-ih-muted uppercase">
+            <Link href={`/account`} className="hover:text-ih-ink">Account</Link>
             {' / '}Quotes
           </div>
           <h1 className="text-[32px] font-semibold tracking-tight mt-1.5">My quotes</h1>
@@ -135,7 +135,7 @@ export default async function AccountQuotesPage({ searchParams }: Props) {
         <div className="flex gap-2">
           <Link
             href={`/quote`}
-            className="h-9 px-4 flex items-center bg-[var(--color-accent)] text-white font-mono text-[12px] hover:opacity-90 transition-opacity"
+            className="h-9 px-4 flex items-center bg-ih-accent text-white font-mono text-[12px] hover:opacity-90 transition-opacity"
           >
             + New RFQ
           </Link>
@@ -143,7 +143,7 @@ export default async function AccountQuotesPage({ searchParams }: Props) {
       </div>
 
       {/* Status tabs */}
-      <div className="flex gap-0 border-b border-[var(--color-border)] mb-5 overflow-x-auto">
+      <div className="flex gap-0 border-b border-ih-border mb-5 overflow-x-auto">
         {STATUS_TABS.map((tab) => {
           const count = countFor(tab.key)
           const active = statusFilter === tab.key
@@ -153,29 +153,29 @@ export default async function AccountQuotesPage({ searchParams }: Props) {
               href={tab.key ? `/account/quotes?status=${tab.key}` : `/account/quotes`}
               className={`px-4 py-2.5 border-b-2 -mb-px font-mono text-[12px] whitespace-nowrap transition-colors ${
                 active
-                  ? 'border-[var(--color-primary)] text-[var(--color-primary)] font-semibold'
-                  : 'border-transparent text-[var(--color-muted)] hover:text-[var(--color-body)]'
+                  ? 'border-ih-ink text-ih-ink font-semibold'
+                  : 'border-transparent text-ih-muted hover:text-ih-ink-2'
               }`}
             >
               {tab.label}
               {' '}
-              <span className={active ? 'text-[var(--color-muted)]' : 'text-[var(--color-muted)]'}>{count}</span>
+              <span className={active ? 'text-ih-muted' : 'text-ih-muted'}>{count}</span>
             </Link>
           )
         })}
       </div>
 
       {rfqs.length === 0 ? (
-        <div className="py-16 border border-dashed border-[var(--color-border)] text-center">
-          <p className="text-[var(--color-muted)] text-sm">No quotes found.</p>
-          <Link href={`/c`} className="mt-4 inline-block font-mono text-[12px] text-[var(--color-accent)] hover:underline">
+        <div className="py-16 border border-dashed border-ih-border text-center">
+          <p className="text-ih-muted text-sm">No quotes found.</p>
+          <Link href={`/c`} className="mt-4 inline-block font-mono text-[12px] text-ih-accent hover:underline">
             Browse products →
           </Link>
         </div>
       ) : (
-        <div className="border border-[var(--color-border)] bg-[var(--color-elevated)] overflow-hidden">
+        <div className="border border-ih-border bg-ih-surface overflow-hidden">
           {/* Table header */}
-          <div className="grid grid-cols-[130px_1fr_90px_100px_130px_110px_90px] gap-3.5 px-4 py-3 bg-[var(--color-surface)] border-b border-[var(--color-border)] font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)]">
+          <div className="grid grid-cols-[130px_1fr_90px_100px_130px_110px_90px] gap-3.5 px-4 py-3 bg-ih-bg border-b border-ih-border font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">
             <span>RFQ #</span>
             <span>Subject</span>
             <span className="text-right">Lines</span>
@@ -200,7 +200,7 @@ export default async function AccountQuotesPage({ searchParams }: Props) {
               <Link
                 key={rfq.id}
                 href={`/quote/${rfq.code}`}
-                className="grid grid-cols-[130px_1fr_90px_100px_130px_110px_90px] gap-3.5 px-4 py-3.5 border-b border-[var(--color-border-2)] last:border-0 items-center text-[var(--color-primary)] hover:bg-[var(--color-deep)] transition-colors"
+                className="grid grid-cols-[130px_1fr_90px_100px_130px_110px_90px] gap-3.5 px-4 py-3.5 border-b border-ih-border last:border-0 items-center text-ih-ink hover:bg-ih-surface-2 transition-colors"
               >
                 <span className="font-mono text-[12px]">{rfq.code}</span>
                 <div>
@@ -208,12 +208,12 @@ export default async function AccountQuotesPage({ searchParams }: Props) {
                     {rfq.subject ?? rfq.lines.length > 0 ? `${rfq.lines.length} line${rfq.lines.length !== 1 ? 's' : ''}` : 'Draft RFQ'}
                   </div>
                   {rfq.urgency === 'plant_down' && (
-                    <div className="font-mono text-[11px] text-[var(--color-danger)]">plant-down</div>
+                    <div className="font-mono text-[11px] text-ih-danger">plant-down</div>
                   )}
                 </div>
                 <span className="font-mono text-right text-[12px]">{rfq.lines.length}</span>
                 <span className="font-mono text-right text-[13px] font-medium">—</span>
-                <span className="font-mono text-[11px] text-[var(--color-muted)]">{timeAgo(new Date(rfq.updatedAt))}</span>
+                <span className="font-mono text-[11px] text-ih-muted">{timeAgo(new Date(rfq.updatedAt))}</span>
                 <span className="text-right">
                   <span
                     className="font-mono text-[10px] px-2 py-0.5 border"
@@ -232,14 +232,14 @@ export default async function AccountQuotesPage({ searchParams }: Props) {
       )}
 
       {/* Standing PO CTA */}
-      <div className="mt-8 p-5 border border-[var(--color-border)] bg-[var(--color-elevated)] grid grid-cols-[1fr_auto] gap-4 items-center">
+      <div className="mt-8 p-5 border border-ih-border bg-ih-surface grid grid-cols-[1fr_auto] gap-4 items-center">
         <div>
           <b className="text-[14px]">Convert quotes to a standing PO?</b>
-          <p className="mt-1 text-[13px] text-[var(--color-muted)]">
+          <p className="mt-1 text-[13px] text-ih-muted">
             Bundle recurring lines (e.g. seals, filters) into a quarterly schedule. Talk to your sales engineer.
           </p>
         </div>
-        <button className="shrink-0 h-9 px-4 border border-[var(--color-border)] font-mono text-[12px] text-[var(--color-body)] hover:bg-[var(--color-deep)] transition-colors whitespace-nowrap">
+        <button className="shrink-0 h-9 px-4 border border-ih-border font-mono text-[12px] text-ih-ink-2 hover:bg-ih-surface-2 transition-colors whitespace-nowrap">
           Set up standing PO →
         </button>
       </div>

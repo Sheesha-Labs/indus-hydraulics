@@ -23,7 +23,7 @@ export default async function TermsPage({ params }: Props) {
       <article className="max-w-[820px] mx-auto px-8 py-16 pb-24 prose prose-sm">
         <h1 className="text-[36px] font-semibold tracking-tight mb-2">{cms.title}</h1>
         <div
-          className="text-[15px] leading-[1.7] text-[var(--color-body)]"
+          className="text-[15px] leading-[1.7] text-ih-ink-2"
           dangerouslySetInnerHTML={{ __html: cms.body }}
         />
       </article>
@@ -35,10 +35,10 @@ export default async function TermsPage({ params }: Props) {
   }
 
   return (
-    <article className="max-w-[820px] mx-auto px-8 py-16 pb-24 text-[var(--color-body)]">
+    <article className="max-w-[820px] mx-auto px-8 py-16 pb-24 text-ih-ink-2">
       <header className="mb-10">
         <h1 className="text-[36px] font-semibold tracking-tight mb-3">Terms of Service</h1>
-        <p className="font-mono text-[12px] text-[var(--color-muted)] tracking-[0.06em] uppercase">
+        <p className="font-mono text-[12px] text-ih-muted tracking-[0.06em] uppercase">
           Effective {EFFECTIVE_DATE} · Version 1.0
         </p>
       </header>
@@ -169,18 +169,18 @@ export default async function TermsPage({ params }: Props) {
       <Section title="13. Contact">
         <p>
           For questions about these Terms or any commercial matter, contact us at{' '}
-          <a className="text-[var(--color-accent)] hover:underline" href="mailto:sales@indushydraulics.me">
+          <a className="text-ih-accent hover:underline" href="mailto:sales@indushydraulics.me">
             sales@indushydraulics.me
           </a>{' '}
           or via the channels listed on our{' '}
-          <a className="text-[var(--color-accent)] hover:underline" href="/contact">
+          <a className="text-ih-accent hover:underline" href="/contact">
             contact page
           </a>
           .
         </p>
       </Section>
 
-      <footer className="mt-12 pt-6 border-t border-[var(--color-border)] text-[12px] text-[var(--color-caption)] leading-[1.6]">
+      <footer className="mt-12 pt-6 border-t border-ih-border text-[12px] text-ih-muted-2 leading-[1.6]">
         These Terms are written in plain English as a v1 reference. They are not a substitute for
         independent legal advice. For high-value or unusual engagements, the contract document supplied
         with your Estimate takes precedence over these Terms.
@@ -192,7 +192,7 @@ export default async function TermsPage({ params }: Props) {
 function Section({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <section className="mb-8">
-      <h2 className="text-[18px] font-semibold tracking-[-0.01em] mb-3 text-[var(--color-primary)]">
+      <h2 className="text-[18px] font-semibold tracking-[-0.01em] mb-3 text-ih-ink">
         {title}
       </h2>
       <div className="text-[15px] leading-[1.7] space-y-3">{children}</div>

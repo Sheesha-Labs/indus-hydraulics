@@ -200,7 +200,7 @@ export default function SearchAutocomplete({ initialQuery = '', className }: Pro
             global `:focus-visible` outline (orange accent) is suppressed
             on the input itself; visual focus feedback shifts to the
             wrapper border via `focus-within`. */}
-        <div className="relative flex flex-1 border border-[var(--color-border)] bg-[var(--color-elevated)] focus-within:border-[var(--color-body)] transition-colors">
+        <div className="relative flex flex-1 border border-ih-border bg-ih-surface focus-within:border-ih-accent transition-colors">
           <input
             ref={inputRef}
             type="search"
@@ -215,11 +215,11 @@ export default function SearchAutocomplete({ initialQuery = '', className }: Pro
             aria-label="Search"
             aria-autocomplete="list"
             aria-keyshortcuts="Meta+K Control+K"
-            className="flex-1 px-3 py-2 bg-transparent text-[13px] text-[var(--color-primary)] placeholder:text-[var(--color-caption)] focus:outline-none focus-visible:outline-none"
+            className="flex-1 px-3 py-2 bg-transparent text-[13px] text-ih-ink placeholder:text-ih-muted-2 focus:outline-none focus-visible:outline-none"
           />
           <kbd
             aria-hidden="true"
-            className="hidden md:flex items-center px-2 py-1 m-1 self-center font-mono text-[10px] tracking-wider text-[var(--color-caption)] border border-[var(--color-border)] bg-[var(--color-deep)]"
+            className="hidden md:flex items-center px-2 py-1 m-1 self-center font-mono text-[10px] tracking-wider text-ih-muted-2 border border-ih-border bg-ih-surface-2"
           >
             ⌘K
           </kbd>
@@ -227,24 +227,24 @@ export default function SearchAutocomplete({ initialQuery = '', className }: Pro
           {showPanel && (
             <div
               role="listbox"
-              className="absolute left-0 right-0 top-full mt-1 border border-[var(--color-border)] bg-white shadow-md z-30"
+              className="absolute left-0 right-0 top-full mt-1 border border-ih-border bg-white shadow-md z-30"
             >
           {showRecents && (
             <>
-              <div className="px-3 py-1.5 font-mono text-[10px] tracking-[0.1em] uppercase text-[var(--color-caption)] border-b border-[var(--color-border)]">
+              <div className="px-3 py-1.5 font-mono text-[10px] tracking-[0.1em] uppercase text-ih-muted-2 border-b border-ih-border">
                 Recent
               </div>
               {recents.map((recent) => (
                 <div
                   key={recent}
-                  className="flex items-center justify-between gap-2 px-3 py-2 text-[13px] hover:bg-[var(--color-deep)]"
+                  className="flex items-center justify-between gap-2 px-3 py-2 text-[13px] hover:bg-ih-surface-2"
                 >
                   <Link
                     href={`/search?q=${encodeURIComponent(recent)}`}
                     onClick={() => setOpen(false)}
-                    className="flex-1 truncate text-[var(--color-body)]"
+                    className="flex-1 truncate text-ih-ink-2"
                   >
-                    <span aria-hidden="true" className="mr-2 text-[var(--color-caption)]">↺</span>
+                    <span aria-hidden="true" className="mr-2 text-ih-muted-2">↺</span>
                     {recent}
                   </Link>
                   <button
@@ -255,7 +255,7 @@ export default function SearchAutocomplete({ initialQuery = '', className }: Pro
                       e.stopPropagation()
                       clearRecent(recent)
                     }}
-                    className="font-mono text-[11px] text-[var(--color-caption)] hover:text-[var(--color-danger)]"
+                    className="font-mono text-[11px] text-ih-muted-2 hover:text-ih-danger"
                   >
                     ×
                   </button>
@@ -265,7 +265,7 @@ export default function SearchAutocomplete({ initialQuery = '', className }: Pro
           )}
 
           {showSuggestions && pending && items.length === 0 && (
-            <div className="px-3 py-2 font-mono text-[11px] text-[var(--color-muted)]">Searching…</div>
+            <div className="px-3 py-2 font-mono text-[11px] text-ih-muted">Searching…</div>
           )}
           {showSuggestions &&
             items.map((item, i) => (
@@ -279,18 +279,18 @@ export default function SearchAutocomplete({ initialQuery = '', className }: Pro
                   recordSubmit(trimmedQuery)
                   setOpen(false)
                 }}
-                className={`block px-3 py-2 text-[13px] hover:bg-[var(--color-deep)] ${
-                  highlighted === i ? 'bg-[var(--color-deep)]' : ''
+                className={`block px-3 py-2 text-[13px] hover:bg-ih-surface-2 ${
+                  highlighted === i ? 'bg-ih-surface-2' : ''
                 }`}
               >
                 <div className="flex items-baseline justify-between gap-3">
-                  <span className="font-medium text-[var(--color-primary)] truncate">{item.title}</span>
-                  <span className="font-mono text-[10px] text-[var(--color-muted)] whitespace-nowrap">
+                  <span className="font-medium text-ih-ink truncate">{item.title}</span>
+                  <span className="font-mono text-[10px] text-ih-muted whitespace-nowrap">
                     {item.sku}
                   </span>
                 </div>
                 {item.brandName && (
-                  <div className="font-mono text-[10px] text-[var(--color-caption)] mt-0.5">{item.brandName}</div>
+                  <div className="font-mono text-[10px] text-ih-muted-2 mt-0.5">{item.brandName}</div>
                 )}
               </Link>
             ))}
@@ -301,7 +301,7 @@ export default function SearchAutocomplete({ initialQuery = '', className }: Pro
                 recordSubmit(trimmedQuery)
                 setOpen(false)
               }}
-              className="block px-3 py-2 font-mono text-[11px] text-[var(--color-accent)] border-t border-[var(--color-border)] hover:bg-[var(--color-deep)]"
+              className="block px-3 py-2 font-mono text-[11px] text-ih-accent border-t border-ih-border hover:bg-ih-surface-2"
             >
               See all results for &ldquo;{trimmedQuery}&rdquo; →
             </Link>
@@ -311,7 +311,7 @@ export default function SearchAutocomplete({ initialQuery = '', className }: Pro
         </div>
         <button
           type="submit"
-          className="h-9 px-4 bg-[var(--color-accent)] text-white font-mono text-[11px] hover:opacity-90 transition-opacity shrink-0"
+          className="h-9 px-4 bg-ih-accent text-white font-mono text-[11px] hover:opacity-90 transition-opacity shrink-0"
         >
           Search
         </button>
