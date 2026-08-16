@@ -9,6 +9,7 @@ import SeoEntityDrawer, {
 import type { RecentMedia } from '../../../../../../components/admin/seo/OgImagePicker'
 import { savePost, updateBlogPostSeo, uploadBlogPostOgImage } from './actions'
 import { Input, Textarea } from '@indus/ui'
+import AdminPageShell from '../../../../../../components/admin/AdminPageShell'
 
 type BlogPost = {
   id: string
@@ -94,23 +95,27 @@ export default function BlogPostEditorClient({ isNew, post, recentImages }: Prop
   }, [searchParams])
 
   return (
-    <div className="max-w-[960px]">
-      <div className="mb-6">
-        <Link
-          href="/admin/cms?tab=blog"
-          className="font-mono text-[12px] text-ih-muted hover:text-ih-ink mb-2 inline-block"
-        >
-          ← CMS
-        </Link>
-        <div className="flex items-end justify-between gap-4">
-          <h1 className="text-[24px] font-semibold tracking-tight">
-            {isNew ? 'New Blog Post' : post?.title ?? 'Edit Post'}
-          </h1>
+    <AdminPageShell
+      title={isNew ? 'New Blog Post' : post?.title ?? 'Edit Post'}
+      actions={
+        <>
+          {/* savedAt is client state, bumped by this editor's own tabs. The
+              header therefore stays in the client component: moving it up to
+              the server page would sever the indicator from every writer and
+              it would never appear after a save. */}
           {savedAt && (
             <span className="text-[12px] text-[oklch(0.55_0.12_150)]">Saved at {savedAt}</span>
           )}
-        </div>
-      </div>
+          <Link
+            href="/admin/cms?tab=blog"
+            className="flex h-9 items-center rounded-md border border-ih-border bg-ih-surface px-4 text-[13px] font-medium transition-colors hover:border-ih-accent hover:text-ih-accent"
+          >
+            ← CMS
+          </Link>
+        </>
+      }
+      bodyClassName="px-[26px] py-6 pb-16 max-w-[960px]"
+    >
 
       {!isNew && (
         <div className="flex border-b border-ih-border mb-6">
@@ -149,7 +154,7 @@ export default function BlogPostEditorClient({ isNew, post, recentImages }: Prop
           onSaved={() => setSavedAt(new Date().toLocaleTimeString())}
         />
       )}
-    </div>
+    </AdminPageShell>
   )
 }
 

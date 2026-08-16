@@ -34,14 +34,7 @@ const SHELL = path.resolve(
  * is asserted to be exact, so it can only shrink, and a page cannot be added
  * to it without editing this file.
  */
-const PENDING = new Set([
-  // Header lives in a 'use client' editor child; the title moves to the server
-  // page when those are converted.
-  'cms/blog/[id]/page.tsx',
-  'cms/pages/[id]/page.tsx',
-  'navigation/[menuSlug]/page.tsx',
-  'products/[id]/edit/page.tsx',
-])
+const PENDING = new Set<string>([])
 
 /** Pure `redirect()` stubs — no JSX at all, so there is nothing to render. */
 const REDIRECT_STUBS = new Set(['seo/page.tsx', 'seo/search/page.tsx'])

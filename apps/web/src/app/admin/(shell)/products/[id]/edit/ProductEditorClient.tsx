@@ -34,6 +34,7 @@ import {
 import BlueprintImagePanel, {
   type BlueprintSuggestionRow,
 } from './BlueprintImagePanel'
+import AdminPageShell from '../../../../../../components/admin/AdminPageShell'
 
 type Product = {
   id: string
@@ -149,6 +150,8 @@ type Faq = {
 type Option = { id: string; name: string }
 
 interface Props {
+  /** Rendered at the top of the body — the server page owns the content score. */
+  contentPanel?: React.ReactNode
   previewUrl: string | null
   product: Product
   specs: Spec[]
@@ -182,6 +185,7 @@ const TABS = [
 type TabId = (typeof TABS)[number]['id']
 
 export default function ProductEditorClient({
+  contentPanel,
   previewUrl,
   product,
   specs,
@@ -223,13 +227,20 @@ export default function ProductEditorClient({
   }
 
   return (
-    <div className="px-8 py-6 pb-16">
-      <div className="flex items-end justify-between mb-1 gap-4">
-        <div>
-          <h1 className="text-[24px] font-semibold tracking-tight">{product.title}</h1>
-          <p className="font-mono text-[12px] text-ih-muted mt-1">{product.sku}</p>
-        </div>
-        <div className="flex items-center gap-2">
+    <AdminPageShell
+      title={product.title}
+      sub={<span className="font-mono">{product.sku}</span>}
+      actions={
+        <>
+          {/*
+            All three keep their existing wiring. `savedAt` is bumped by NINE
+            sibling tabs through bumpSaved(), so the header has to stay in this
+            client component — from the server page it would have no writer.
+
+            The disabled Preview fallback is preserved deliberately: previewUrl
+            is null when PREVIEW_TOKEN_SECRET is unset, and rendering nothing
+            instead would silently remove the control with no hint as to why.
+          */}
           {savedAt && (
             <span className="text-[12px] text-[oklch(0.55_0.12_150)]">Saved at {savedAt}</span>
           )}
@@ -238,21 +249,24 @@ export default function ProductEditorClient({
               href={previewUrl}
               target="_blank"
               rel="noreferrer"
-              className="h-9 px-3 inline-flex items-center border border-ih-border text-[12px] text-ih-muted hover:text-ih-ink"
+              className="inline-flex h-9 items-center rounded-md border border-ih-border px-3 text-[12px] text-ih-muted transition-colors hover:border-ih-accent hover:text-ih-accent"
             >
               Preview ↗
             </a>
           ) : (
             <span
               title="Set PREVIEW_TOKEN_SECRET in admin env to enable preview"
-              className="h-9 px-3 inline-flex items-center border border-ih-border text-[12px] text-ih-muted-2 cursor-not-allowed"
+              className="inline-flex h-9 cursor-not-allowed items-center rounded-md border border-ih-border px-3 text-[12px] text-ih-muted-2"
             >
               Preview ↗
             </span>
           )}
           <DeleteButton id={product.id} />
-        </div>
-      </div>
+        </>
+      }
+    >
+
+      {contentPanel}
 
       {/* Tabs */}
       <div className="flex gap-0 border-b border-ih-border mt-5 mb-6 overflow-x-auto">
@@ -319,7 +333,7 @@ export default function ProductEditorClient({
           onSaved={bumpSaved}
         />
       )}
-    </div>
+    </AdminPageShell>
   )
 }
 

@@ -27,6 +27,7 @@ import {
 import { deleteItem, publishMenu, reorderItems, unpublishMenu } from '../actions'
 import ItemFormDialog, { type ItemFormInitial } from './ItemFormDialog'
 import PromoFormDialog from './PromoFormDialog'
+import AdminPageShell from '../../../../../components/admin/AdminPageShell'
 
 export interface EditorMenu {
   id: string
@@ -63,11 +64,13 @@ export interface EditorItem {
 }
 
 interface Props {
+  /** Where this menu renders on the storefront — shown in the bar. */
+  locationLabel?: string
   menu: EditorMenu
   items: EditorItem[]
 }
 
-export default function NavigationEditor({ menu, items: initialItems }: Props) {
+export default function NavigationEditor({ menu, items: initialItems, locationLabel }: Props) {
   const router = useRouter()
   const [items, setItems] = useState(initialItems)
   const [pending, startTransition] = useTransition()
@@ -142,17 +145,22 @@ export default function NavigationEditor({ menu, items: initialItems }: Props) {
   }
 
   return (
-    <div className="flex flex-col gap-4">
-      <div className="flex items-start justify-between gap-4 flex-wrap">
-        <div>
-          <h1 className="text-[24px] font-semibold tracking-tight">{menu.name}</h1>
-          <p className="text-[13px] text-ih-muted mt-1">
-            {menu.isPublished
-              ? `Published${menu.publishedAt ? ` ${new Date(menu.publishedAt).toLocaleString()}` : ''}`
-              : 'Draft — not visible on the storefront yet'}
-          </p>
-        </div>
-        <div className="flex gap-2">
+    <AdminPageShell
+      title={menu.name}
+      sub={
+        <>
+          {locationLabel ? <span className="font-mono uppercase tracking-[0.1em]">{locationLabel}</span> : null}
+          {locationLabel ? ' · ' : null}
+          {menu.isPublished
+            ? `Published${menu.publishedAt ? ` ${new Date(menu.publishedAt).toLocaleString()}` : ''}`
+            : 'Draft — not visible on the storefront yet'}
+        </>
+      }
+      actions={
+        <>
+          {/* Both buttons own client state — the first opens a dialog this
+              component renders, the second drives `pending`. They move as JSX
+              inside the same client component, so nothing crosses a boundary. */}
           <button
             type="button"
             onClick={() =>
@@ -161,7 +169,7 @@ export default function NavigationEditor({ menu, items: initialItems }: Props) {
                 initial: { menuId: menu.id, parentId: null },
               })
             }
-            className="h-9 px-4 border border-ih-border text-[13px]"
+            className="h-9 rounded-md border border-ih-border px-4 text-[13px] transition-colors hover:border-ih-accent hover:text-ih-accent"
           >
             + Add column
           </button>
@@ -169,12 +177,14 @@ export default function NavigationEditor({ menu, items: initialItems }: Props) {
             type="button"
             onClick={onPublishToggle}
             disabled={pending}
-            className="h-9 px-4 bg-ih-accent text-white text-[13px] disabled:opacity-50"
+            className="h-9 rounded-md bg-ih-accent px-4 text-[13px] text-white transition-opacity hover:opacity-90 disabled:opacity-50"
           >
             {pending ? 'Saving…' : menu.isPublished ? 'Unpublish' : 'Publish'}
           </button>
-        </div>
-      </div>
+        </>
+      }
+      bodyClassName="flex flex-col gap-4 px-[26px] py-6 pb-16"
+    >
 
       {error ? (
         <div role="alert" className="border border-ih-danger bg-[oklch(0.98_0.04_30)] text-[13px] px-3 py-2">
@@ -250,7 +260,7 @@ export default function NavigationEditor({ menu, items: initialItems }: Props) {
           }}
         />
       ) : null}
-    </div>
+    </AdminPageShell>
   )
 }
 

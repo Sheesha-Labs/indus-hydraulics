@@ -84,11 +84,13 @@ export default async function MenuEditorPage({ params }: Props) {
   })
 
   return (
-    <div className="px-8 py-6 pb-16">
-      <div className="mb-2 text-[12px] text-ih-muted font-mono uppercase tracking-[0.1em]">
-        {MENU_LOCATION_LABELS[editorMenu.location]}
-      </div>
-      <NavigationEditor menu={editorMenu} items={items} />
-    </div>
+    // No wrapper: NavigationEditor renders AdminPageShell, and the 60px bar has
+    // to be a direct child of the layout column or it renders inset. The
+    // location label moves into the bar's subtitle, alongside the publish state.
+    <NavigationEditor
+      menu={editorMenu}
+      items={items}
+      locationLabel={MENU_LOCATION_LABELS[editorMenu.location]}
+    />
   )
 }

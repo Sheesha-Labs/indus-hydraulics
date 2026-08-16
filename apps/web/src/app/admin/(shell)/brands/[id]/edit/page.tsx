@@ -48,7 +48,9 @@ export default async function EditBrandPage({ params }: Props) {
   )
 
   return (
-    <div className="flex flex-col gap-8 px-8 py-6 pb-16">
+
+    <BrandEditorClient
+      contentEditor={
       <BrandContentEditor
         brand={{
           id: brand.id,
@@ -74,8 +76,7 @@ export default async function EditBrandPage({ params }: Props) {
           stats: c.stats == null ? '[]' : JSON.stringify(c.stats, null, 2),
         }))}
       />
-
-      <BrandEditorClient
+      }
         brand={{
           id: brand.id,
           slug: brand.slug,
@@ -106,6 +107,5 @@ export default async function EditBrandPage({ params }: Props) {
           originalFilename: m.originalFilename,
         }))}
       />
-    </div>
   )
 }
