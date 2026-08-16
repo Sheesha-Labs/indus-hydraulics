@@ -34,6 +34,7 @@
 
   /* ── Status ── */
   --color-good: oklch(0.55 0.12 150);
+  --color-good-soft: oklch(0.94 0.04 150);
   --color-warn: oklch(0.7 0.15 80);
   --color-danger: oklch(0.55 0.18 25);
   --color-info: #0e4d92;
@@ -63,18 +64,10 @@
   --color-sidebar-hover: rgba(255, 255, 255, 0.06);
 }
 
-/* ── Dark theme (toggled via data-theme="dark" on <html>) ── */
-[data-theme='dark'] {
-  --color-surface: #0e1013;
-  --color-elevated: #15181d;
-  --color-deep: #0a0c0e;
-  --color-primary: #f0ece3;
-  --color-body: #d4d0c6;
-  --color-muted: #9aa0a8;
-  --color-caption: #6b7079;
-  --color-border: #2a2e35;
-  --color-border-2: #1f2329;
-}
+/* Dark theme removed — it was never reachable. Nothing in the tree set the
+   `data-theme` attribute and no `dark:` variant existed anywhere, so these nine
+   overrides never applied. Design language v2 is a single light palette and
+   specifies no dark values; see CLAUDE.md §2.5. */
 
 /* ── Base ── */
 *,

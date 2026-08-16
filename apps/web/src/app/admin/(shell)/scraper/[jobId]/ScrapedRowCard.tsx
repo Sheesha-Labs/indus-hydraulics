@@ -203,11 +203,11 @@ export default function ScrapedRowCard({ row, brands, categories, jobReady }: Pr
 
   return (
     <article
-      className={`border ${row.selectionStatus === 'ingest_failed' ? 'border-[oklch(0.5_0.18_25)]' : 'border-[var(--color-border-default)]'} bg-[var(--color-surface)]`}
+      className={`border ${row.selectionStatus === 'ingest_failed' ? 'border-[oklch(0.5_0.18_25)]' : 'border-[var(--color-border)]'} bg-[var(--color-surface)]`}
       aria-label={`Scraped product ${row.sourceTitle}`}
     >
       {/* Row header */}
-      <header className="px-4 py-3 border-b border-[var(--color-border-default)] flex items-center gap-3 flex-wrap">
+      <header className="px-4 py-3 border-b border-[var(--color-border)] flex items-center gap-3 flex-wrap">
         <span
           className={`px-2 py-0.5 text-[10px] font-mono uppercase tracking-wider ${SELECTION_STYLE[row.selectionStatus]}`}
         >
@@ -241,7 +241,7 @@ export default function ScrapedRowCard({ row, brands, categories, jobReady }: Pr
 
       <div className="grid grid-cols-1 lg:grid-cols-[1fr_1fr] gap-0">
         {/* LEFT: image carousel */}
-        <section className="p-4 border-b lg:border-b-0 lg:border-r border-[var(--color-border-default)]">
+        <section className="p-4 border-b lg:border-b-0 lg:border-r border-[var(--color-border)]">
           <h3 className="font-mono uppercase tracking-wider text-[10px] text-[var(--color-muted)] mb-2">
             Candidate images ({kept.length} of {row.candidateImages.length} selected)
           </h3>
@@ -261,7 +261,7 @@ export default function ScrapedRowCard({ row, brands, categories, jobReady }: Pr
                     aria-label={`Toggle image ${img.position + 1}`}
                     className={`relative aspect-square border bg-[var(--color-deep)] overflow-hidden focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)] ${
                       isDeselected
-                        ? 'border-[var(--color-border-default)] opacity-40'
+                        ? 'border-[var(--color-border)] opacity-40'
                         : 'border-[var(--color-accent)]'
                     }`}
                   >
@@ -300,7 +300,7 @@ export default function ScrapedRowCard({ row, brands, categories, jobReady }: Pr
             </div>
           </div>
 
-          <fieldset className="border border-[var(--color-border-default)] p-3 flex flex-col gap-2">
+          <fieldset className="border border-[var(--color-border)] p-3 flex flex-col gap-2">
             <legend className="font-mono uppercase tracking-wider text-[10px] text-[var(--color-muted)] px-1">
               Ingest mode
             </legend>
@@ -347,7 +347,7 @@ export default function ScrapedRowCard({ row, brands, categories, jobReady }: Pr
                   onChange={(e) => setEditedTitle(e.target.value)}
                   placeholder={row.sourceTitle}
                   disabled={locked}
-                  className="h-8 px-2 border border-[var(--color-border-default)] bg-[var(--color-surface)] text-[12px]"
+                  className="h-8 px-2 border border-[var(--color-border)] bg-[var(--color-surface)] text-[12px]"
                 />
               </label>
               <label className="flex flex-col gap-1">
@@ -359,7 +359,7 @@ export default function ScrapedRowCard({ row, brands, categories, jobReady }: Pr
                   onChange={(e) => setEditedSku(e.target.value)}
                   placeholder={row.sourceSku ?? row.defaultSku}
                   disabled={locked}
-                  className="h-8 px-2 border border-[var(--color-border-default)] bg-[var(--color-surface)] text-[12px] font-mono"
+                  className="h-8 px-2 border border-[var(--color-border)] bg-[var(--color-surface)] text-[12px] font-mono"
                 />
               </label>
               <label className="flex flex-col gap-1">
@@ -373,7 +373,7 @@ export default function ScrapedRowCard({ row, brands, categories, jobReady }: Pr
                   value={brandId}
                   onChange={(e) => setBrandId(e.target.value)}
                   disabled={locked}
-                  className="h-8 px-2 border border-[var(--color-border-default)] bg-[var(--color-surface)] text-[12px]"
+                  className="h-8 px-2 border border-[var(--color-border)] bg-[var(--color-surface)] text-[12px]"
                 >
                   <option value="">— None —</option>
                   {brands.map((b) => (
@@ -394,7 +394,7 @@ export default function ScrapedRowCard({ row, brands, categories, jobReady }: Pr
                   value={categoryId}
                   onChange={(e) => setCategoryId(e.target.value)}
                   disabled={locked}
-                  className="h-8 px-2 border border-[var(--color-border-default)] bg-[var(--color-surface)] text-[12px]"
+                  className="h-8 px-2 border border-[var(--color-border)] bg-[var(--color-surface)] text-[12px]"
                 >
                   <option value="">— None —</option>
                   {categories.map((c) => (
@@ -448,7 +448,7 @@ export default function ScrapedRowCard({ row, brands, categories, jobReady }: Pr
                 type="button"
                 onClick={onSkip}
                 disabled={pending}
-                className="h-8 px-3 border border-[var(--color-border-default)] text-[var(--color-muted)] font-mono text-[11px] uppercase tracking-wider hover:bg-[var(--color-deep)] disabled:opacity-50"
+                className="h-8 px-3 border border-[var(--color-border)] text-[var(--color-muted)] font-mono text-[11px] uppercase tracking-wider hover:bg-[var(--color-deep)] disabled:opacity-50"
               >
                 Skip
               </button>

@@ -70,7 +70,7 @@ export default function BulkActions({
         type="button"
         onClick={onSkipDupes}
         disabled={skipPending}
-        className="h-9 px-4 border border-[var(--color-border-default)] text-[var(--color-body)] font-mono text-[12px] uppercase tracking-wider hover:bg-[var(--color-deep)] disabled:opacity-50"
+        className="h-9 px-4 border border-[var(--color-border)] text-[var(--color-body)] font-mono text-[12px] uppercase tracking-wider hover:bg-[var(--color-deep)] disabled:opacity-50"
         title="Mark every row whose SKU already exists on indushydraulics.com as 'skipped'"
       >
         {skipPending ? 'Skipping…' : 'Skip duplicates'}
@@ -99,7 +99,7 @@ export default function BulkActions({
       {result.kind === 'skipped' && (
         <div
           role="status"
-          className="border border-[var(--color-border-default)] bg-[var(--color-deep)] text-[var(--color-body)] px-3 py-1.5 text-[12px]"
+          className="border border-[var(--color-border)] bg-[var(--color-deep)] text-[var(--color-body)] px-3 py-1.5 text-[12px]"
         >
           {result.count === 0
             ? 'No duplicate SKUs found — nothing to skip.'

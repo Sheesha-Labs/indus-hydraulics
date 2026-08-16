@@ -36,7 +36,7 @@ export default function AttachToExistingPicker({ selected, onSelect, disabled }:
 
   if (selected) {
     return (
-      <div className="border border-[var(--color-border-default)] bg-[var(--color-deep)] px-3 py-2.5 text-[13px]">
+      <div className="border border-[var(--color-border)] bg-[var(--color-deep)] px-3 py-2.5 text-[13px]">
         <div className="flex items-start justify-between gap-3">
           <div className="min-w-0">
             <div className="font-mono text-[12px] text-[var(--color-primary)] truncate">{selected.sku}</div>
@@ -67,13 +67,13 @@ export default function AttachToExistingPicker({ selected, onSelect, disabled }:
         onChange={(e) => setQuery(e.target.value)}
         placeholder="Search existing products by SKU, title, MPN…"
         disabled={disabled}
-        className="h-9 w-full px-3 border border-[var(--color-border-default)] bg-[var(--color-surface)] text-[13px] focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)] disabled:opacity-50"
+        className="h-9 w-full px-3 border border-[var(--color-border)] bg-[var(--color-surface)] text-[13px] focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)] disabled:opacity-50"
       />
       {error && (
         <p className="text-[11px] text-[oklch(0.5_0.18_25)] mt-1">{error}</p>
       )}
       {query.trim().length >= 2 && (
-        <div className="border border-t-0 border-[var(--color-border-default)] bg-[var(--color-surface)] max-h-[260px] overflow-y-auto">
+        <div className="border border-t-0 border-[var(--color-border)] bg-[var(--color-surface)] max-h-[260px] overflow-y-auto">
           {pending && hits.length === 0 && (
             <p className="px-3 py-2 text-[12px] text-[var(--color-muted)]">Searching…</p>
           )}
@@ -85,7 +85,7 @@ export default function AttachToExistingPicker({ selected, onSelect, disabled }:
               key={h.id}
               type="button"
               onClick={() => onSelect(h)}
-              className="w-full text-left px-3 py-2 border-t border-[var(--color-border-default)] hover:bg-[var(--color-deep)] focus:bg-[var(--color-deep)] focus:outline-none"
+              className="w-full text-left px-3 py-2 border-t border-[var(--color-border)] hover:bg-[var(--color-deep)] focus:bg-[var(--color-deep)] focus:outline-none"
             >
               <div className="flex items-baseline gap-3">
                 <span className="font-mono text-[12px] text-[var(--color-primary)] flex-shrink-0">

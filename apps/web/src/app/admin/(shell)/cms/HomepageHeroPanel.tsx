@@ -137,7 +137,7 @@ export default function HomepageHeroPanel({ slides }: Props) {
       </form>
 
       {error && (
-        <div className="border border-[var(--color-status-danger)] bg-[var(--color-status-danger)]/10 px-4 py-3 text-[13px] text-[var(--color-status-danger)]">
+        <div className="border border-[var(--color-danger)] bg-[var(--color-danger)]/10 px-4 py-3 text-[13px] text-[var(--color-danger)]">
           {error}
         </div>
       )}
@@ -235,7 +235,7 @@ export default function HomepageHeroPanel({ slides }: Props) {
                     onClick={() => handleDelete(slide.id)}
                     disabled={pending}
                     aria-label="Delete slide"
-                    className="font-mono text-[11px] text-[var(--color-status-danger)] hover:underline disabled:opacity-50"
+                    className="font-mono text-[11px] text-[var(--color-danger)] hover:underline disabled:opacity-50"
                   >
                     Delete
                   </button>

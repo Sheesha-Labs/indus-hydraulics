@@ -177,7 +177,7 @@ export default function NavigationEditor({ menu, items: initialItems }: Props) {
       </div>
 
       {error ? (
-        <div role="alert" className="border border-[var(--color-status-danger)] bg-[oklch(0.98_0.04_30)] text-[13px] px-3 py-2">
+        <div role="alert" className="border border-[var(--color-danger)] bg-[oklch(0.98_0.04_30)] text-[13px] px-3 py-2">
           {error}
         </div>
       ) : null}
@@ -373,7 +373,7 @@ function ItemNode({
           <button
             type="button"
             onClick={() => onDelete(item.id)}
-            className="h-7 px-2 text-[11px] border border-[var(--color-border)] text-[var(--color-status-danger)] hover:bg-[var(--color-surface)]"
+            className="h-7 px-2 text-[11px] border border-[var(--color-border)] text-[var(--color-danger)] hover:bg-[var(--color-surface)]"
           >
             Delete
           </button>
