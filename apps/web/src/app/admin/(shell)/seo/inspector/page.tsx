@@ -102,8 +102,10 @@ export default async function SeoInspectorPage({
           <label htmlFor="inspector-q" className="block font-mono text-[10px] uppercase text-ih-muted mb-1">
             Search
           </label>
+          {/* h-9 to match the selects and buttons in this items-end row. */}
           <Input
             id="inspector-q"
+            className="h-9"
             type="text"
             name="q"
             defaultValue={sp.q ?? ''}

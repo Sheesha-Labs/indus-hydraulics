@@ -198,7 +198,7 @@ export default function SendQuoteComposer(props: Props) {
             onChange={(e) => setDiscount(e.target.value)}
             min="0"
             step="0.01"
-            className="w-full h-9 px-3 border border-ih-border bg-ih-bg text-[13px] text-right font-mono focus:outline-none focus:border-ih-accent"
+            className="text-right font-mono"
           />
         </div>
         <div>
@@ -213,7 +213,7 @@ export default function SendQuoteComposer(props: Props) {
             onChange={(e) => setShipping(e.target.value)}
             min="0"
             step="0.01"
-            className="w-full h-9 px-3 border border-ih-border bg-ih-bg text-[13px] text-right font-mono focus:outline-none focus:border-ih-accent"
+            className="text-right font-mono"
           />
         </div>
         <div>
@@ -229,7 +229,7 @@ export default function SendQuoteComposer(props: Props) {
             min="0"
             max="100"
             step="0.01"
-            className="w-full h-9 px-3 border border-ih-border bg-ih-bg text-[13px] text-right font-mono focus:outline-none focus:border-ih-accent"
+            className="text-right font-mono"
           />
         </div>
       </div>

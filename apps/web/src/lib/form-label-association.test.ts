@@ -82,6 +82,80 @@ function orphanedLabels(rel: string): number[] {
   return lines
 }
 
+/**
+ * Static ids, and the two ways they go wrong.
+ *
+ * An id derived from a control's `name` is safe only where the markup renders
+ * once per document. The sweep that produced this file's fixes assigned ids to
+ * EVERY converted control — including unlabelled ones inside a .map() — and
+ * one of those copied an existing id onto a per-row input. That is invalid
+ * HTML, getElementById silently resolves to whichever came first, and the id
+ * makes the control look wired when it has no accessible name at all.
+ *
+ * Neither failure is visible to the label scan below: no <label> is involved.
+ */
+function literalIds(rel: string): { id: string; line: number; inMap: boolean }[] {
+  const src = readFileSync(path.join(SRC, rel), 'utf8')
+  const out: { id: string; line: number; inMap: boolean }[] = []
+
+  // Extents of every .map()/.flatMap() callback, by paren depth.
+  const mapRanges: [number, number][] = []
+  for (const m of src.matchAll(/\.(?:map|flatMap)\(/g)) {
+    let i = m.index! + m[0].length - 1
+    let depth = 0
+    while (i < src.length) {
+      if (src[i] === '(') depth++
+      else if (src[i] === ')') {
+        depth--
+        if (depth === 0) break
+      }
+      i++
+    }
+    mapRanges.push([m.index!, i])
+  }
+
+  for (const m of src.matchAll(/\bid="([^"{]+)"/g)) {
+    const at = m.index!
+    out.push({
+      id: m[1]!,
+      line: src.slice(0, at).split('\n').length,
+      inMap: mapRanges.some(([a, b]) => at > a && at < b),
+    })
+  }
+  return out
+}
+
+describe('static ids', () => {
+  const files = sourceFiles().filter((f) => !f.endsWith('.test.tsx'))
+
+  test('no literal id is declared twice in one file', () => {
+    const dupes: string[] = []
+    for (const rel of files) {
+      const seen = new Map<string, number[]>()
+      for (const { id, line } of literalIds(rel)) {
+        seen.set(id, [...(seen.get(id) ?? []), line])
+      }
+      for (const [id, lines] of seen) {
+        if (lines.length > 1) {
+          dupes.push(`${rel.split(path.sep).join('/')}: id="${id}" at lines ${lines.join(', ')}`)
+        }
+      }
+    }
+    expect(dupes.sort()).toEqual([])
+  })
+
+  test('no literal id is declared inside a .map() callback', () => {
+    // Per-row markup must use useId(), or carry no id plus an aria-label.
+    const repeated: string[] = []
+    for (const rel of files) {
+      for (const { id, line, inMap } of literalIds(rel)) {
+        if (inMap) repeated.push(`${rel.split(path.sep).join('/')}:${line}: id="${id}"`)
+      }
+    }
+    expect(repeated.sort()).toEqual([])
+  })
+})
+
 describe('every form label names a control', () => {
   const counts = new Map<string, number[]>()
   for (const rel of sourceFiles()) {

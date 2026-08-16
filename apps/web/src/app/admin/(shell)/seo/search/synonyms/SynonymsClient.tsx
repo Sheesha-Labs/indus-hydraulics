@@ -153,10 +153,17 @@ export default function SynonymsClient({ groups: initialGroups }: Props) {
                     {editing === g.group ? (
                       <form action={handleSave} className="flex gap-2 items-center">
                         <input type="hidden" name="group" value={g.group} />
+                        {/*
+                          No id: this renders once per row, so a static one
+                          would duplicate the add-form's and every getElementById
+                          would resolve to whichever came first. There is no
+                          visible label in a table row either, so the accessible
+                          name has to come from aria-label.
+                        */}
                         <Input
-                          id="synonym-terms"
                           name="terms"
                           type="text"
+                          aria-label={`Terms for ${g.group}`}
                           defaultValue={g.terms.join(', ')} className="flex-1 h-8 text-[12px]" />
                         <button
                           type="submit"
