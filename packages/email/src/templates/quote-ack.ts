@@ -1,4 +1,5 @@
 import { escapeHtml, renderLayout, type LayoutInput } from './_layout'
+import { BRAND } from '@indus/domain'
 
 export type QuoteAckProps = {
   customerName: string
@@ -43,14 +44,14 @@ export function renderQuoteAck(props: QuoteAckProps): { subject: string; html: s
 
 <p style="margin:0 0 16px 0;">${escapeHtml(copy.intro)}</p>
 
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:24px 0;border:1px solid #e7e5e4;background-color:#fafaf9;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:24px 0;border:1px solid ${BRAND.border};background-color:${BRAND.surface2};">
   <tr>
-    <td style="padding:14px 18px;width:140px;font-size:11px;letter-spacing:0.06em;color:#78716c;text-transform:uppercase;background-color:#fafaf9;border-right:1px solid #e7e5e4;vertical-align:top;">Quotation</td>
-    <td style="padding:14px 18px;font-size:14px;color:#1c1917;font-family:Menlo,Consolas,monospace;">${escapeHtml(codeDisplay)}</td>
+    <td style="padding:14px 18px;width:140px;font-size:11px;letter-spacing:0.06em;color:${BRAND.muted};text-transform:uppercase;background-color:${BRAND.surface2};border-right:1px solid ${BRAND.border};vertical-align:top;">Quotation</td>
+    <td style="padding:14px 18px;font-size:14px;color:${BRAND.ink};font-family:Menlo,Consolas,monospace;">${escapeHtml(codeDisplay)}</td>
   </tr>
   <tr>
-    <td style="padding:14px 18px;width:140px;font-size:11px;letter-spacing:0.06em;color:#78716c;text-transform:uppercase;background-color:#fafaf9;border-right:1px solid #e7e5e4;vertical-align:top;border-top:1px solid #f5f5f4;">Total</td>
-    <td style="padding:14px 18px;font-size:14px;color:#1c1917;font-weight:700;border-top:1px solid #f5f5f4;">${escapeHtml(props.totalDisplay)}</td>
+    <td style="padding:14px 18px;width:140px;font-size:11px;letter-spacing:0.06em;color:${BRAND.muted};text-transform:uppercase;background-color:${BRAND.surface2};border-right:1px solid ${BRAND.border};vertical-align:top;border-top:1px solid ${BRAND.surface2};">Total</td>
+    <td style="padding:14px 18px;font-size:14px;color:${BRAND.ink};font-weight:700;border-top:1px solid ${BRAND.surface2};">${escapeHtml(props.totalDisplay)}</td>
   </tr>
 </table>
 

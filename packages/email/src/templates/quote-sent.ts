@@ -1,4 +1,5 @@
 import { escapeHtml, renderLayout, type LayoutInput } from './_layout'
+import { BRAND } from '@indus/domain'
 
 export type QuoteSentProps = {
   customerName: string
@@ -40,9 +41,9 @@ ${
     : '<p style="margin:0 0 16px 0;">Please find attached our formal quotation against your enquiry. The full breakdown — line items, pricing, lead time, terms — is in the PDF.</p>'
 }
 
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:24px 0;border:1px solid #e7e5e4;background-color:#fafaf9;">
-  ${row('Quotation #', `<span style="font-family:Menlo,Consolas,monospace;font-size:14px;color:#1c1917;">${escapeHtml(codeDisplay)}</span>`)}
-  ${row('Total', `<strong style="font-size:14px;color:#1c1917;">${escapeHtml(props.totalDisplay)}</strong>`)}
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:24px 0;border:1px solid ${BRAND.border};background-color:${BRAND.surface2};">
+  ${row('Quotation #', `<span style="font-family:Menlo,Consolas,monospace;font-size:14px;color:${BRAND.ink};">${escapeHtml(codeDisplay)}</span>`)}
+  ${row('Total', `<strong style="font-size:14px;color:${BRAND.ink};">${escapeHtml(props.totalDisplay)}</strong>`)}
   ${row('Valid until', escapeHtml(props.expiresOnDisplay))}
   ${row('Payment terms', escapeHtml(props.paymentTerms))}
 </table>
@@ -52,12 +53,12 @@ ${
 ${
   props.viewUrl
     ? `<p style="margin:0 0 24px 0;">
-  <a href="${escapeHtml(props.viewUrl)}" style="display:inline-block;background-color:#0c4a6e;color:#ffffff;text-decoration:none;padding:12px 24px;font-size:14px;font-weight:500;letter-spacing:0.02em;">View quotation online</a>
+  <a href="${escapeHtml(props.viewUrl)}" style="display:inline-block;background-color:${BRAND.accent};color:${BRAND.white};text-decoration:none;padding:12px 24px;font-size:14px;font-weight:500;letter-spacing:0.02em;">View quotation online</a>
 </p>`
     : ''
 }
 
-<p style="margin:0 0 8px 0;font-size:13px;color:#57534e;">For any questions, please reply to this email or call us directly.</p>
+<p style="margin:0 0 8px 0;font-size:13px;color:${BRAND.ink2};">For any questions, please reply to this email or call us directly.</p>
 `.trim()
 
   const html = renderLayout({
@@ -72,7 +73,7 @@ ${
 
 function row(label: string, value: string): string {
   return `<tr>
-    <td style="padding:10px 16px;width:140px;background-color:#fafaf9;border-bottom:1px solid #f5f5f4;font-size:11px;letter-spacing:0.06em;color:#78716c;text-transform:uppercase;vertical-align:top;">${escapeHtml(label)}</td>
-    <td style="padding:10px 16px;border-bottom:1px solid #f5f5f4;font-size:14px;color:#1c1917;">${value}</td>
+    <td style="padding:10px 16px;width:140px;background-color:${BRAND.surface2};border-bottom:1px solid ${BRAND.surface2};font-size:11px;letter-spacing:0.06em;color:${BRAND.muted};text-transform:uppercase;vertical-align:top;">${escapeHtml(label)}</td>
+    <td style="padding:10px 16px;border-bottom:1px solid ${BRAND.surface2};font-size:14px;color:${BRAND.ink};">${value}</td>
   </tr>`
 }

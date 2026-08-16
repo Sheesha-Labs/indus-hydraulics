@@ -1,4 +1,5 @@
 import { escapeHtml, renderLayout, type LayoutInput } from './_layout'
+import { BRAND } from '@indus/domain'
 
 export type QuoteExpiryReminderProps = {
   customerName: string
@@ -56,7 +57,7 @@ export function renderQuoteExpiryReminder(
 <p style="margin:0 0 24px 0;">
   <a href="${escapeHtml(
     props.viewUrl,
-  )}" style="display:inline-block;background:#1a4dbe;color:#ffffff;padding:10px 18px;text-decoration:none;font-weight:500;">
+  )}" style="display:inline-block;background:${BRAND.accent};color:${BRAND.white};padding:10px 18px;text-decoration:none;font-weight:500;">
     View the quotation online
   </a>
 </p>

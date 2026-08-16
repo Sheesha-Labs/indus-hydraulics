@@ -1,17 +1,31 @@
 import { Document, Page, Text, View, Image, StyleSheet } from '@react-pdf/renderer'
 import { LOGO_PNG_BASE64 } from './logo-data'
 import { computeTotals, type EstimateInput } from './types'
+import { BRAND } from '@indus/domain'
 
-// Color palette — neutral B2B, matches the Zoho template aesthetic.
+/*
+  Colour palette — design language v2.
+
+  Was a warm neutral stone set "matching the Zoho template aesthetic", which
+  is now the wrong company: the estimate is the document that closes the sale
+  and it should not be the one surface still wearing the old brand.
+
+  Values come from BRAND (packages/domain/src/brand-colors.ts) as hex.
+  @react-pdf/renderer resolves colours itself and does not implement oklch(),
+  so the CSS token layer cannot be used directly here — see the note in that
+  file on why hex is correct for this surface and not for the app.
+*/
 const C = {
-  ink: '#1c1917',
-  body: '#44403c',
-  muted: '#78716c',
-  faint: '#a8a29e',
-  rule: '#e7e5e4',
-  surface: '#ffffff',
-  fill: '#fafaf9',
-  brand: '#0c4a6e',
+  ink: BRAND.ink,
+  body: BRAND.ink2,
+  muted: BRAND.muted,
+  faint: BRAND.muted2,
+  rule: BRAND.border,
+  surface: BRAND.surface,
+  fill: BRAND.surface2,
+  brand: BRAND.accent,
+  navy: BRAND.navy,
+  onNavy: BRAND.onNavy,
 } as const
 
 const styles = StyleSheet.create({
@@ -33,7 +47,12 @@ const styles = StyleSheet.create({
   },
   logo: { width: 110, height: 50, objectFit: 'contain' },
   estimateTitleBlock: { flexDirection: 'column', alignItems: 'flex-end' },
-  estimateTitle: { fontSize: 28, color: C.ink, fontWeight: 300, lineHeight: 1.2 },
+  // The one display moment in the document. The contract sets headlines in
+  // Instrument Serif; @react-pdf only knows its built-in faces unless fonts
+  // are registered as files, so Times-Roman stands in — an editorial serif
+  // rather than another weight of the body sans. Registering the real face
+  // is a follow-up, not a blocker.
+  estimateTitle: { fontFamily: 'Times-Roman', fontSize: 30, color: C.ink, lineHeight: 1.15 },
   estimateNumber: { fontSize: 10, color: C.ink, fontWeight: 700, marginTop: 6 },
 
   // Company info under logo
@@ -108,8 +127,12 @@ const styles = StyleSheet.create({
     color: C.ink,
     paddingVertical: 4,
   },
+  // The grand total is the one thing on the page a reader looks for, so it
+  // takes the accent tint — the language's rule is one signal per view, and
+  // on an estimate this is it. Previously it sat on the same neutral fill as
+  // the table header and read as just another band.
   grandTotalRow: {
-    backgroundColor: C.fill,
+    backgroundColor: BRAND.accentSoft,
     flexDirection: 'row',
     justifyContent: 'flex-end',
     paddingVertical: 8,
@@ -121,14 +144,14 @@ const styles = StyleSheet.create({
     width: 100,
     textAlign: 'right',
     paddingRight: 12,
-    color: C.ink,
+    color: C.brand,
     fontWeight: 700,
     fontSize: 10,
   },
   grandTotalValue: {
     width: 80,
     textAlign: 'right',
-    color: C.ink,
+    color: C.brand,
     fontWeight: 700,
     fontSize: 10,
   },

@@ -1,4 +1,5 @@
 import { escapeHtml, renderLayout, type LayoutInput } from './_layout'
+import { BRAND } from '@indus/domain'
 
 export type RfqInternalAlertProps = {
   rfqCode: string
@@ -31,9 +32,9 @@ export function renderRfqInternalAlert(props: RfqInternalAlertProps): { subject:
   const shipTo = [props.shipToCity, props.shipToCountry].filter(Boolean).join(', ')
 
   const body = `
-<p style="margin:0 0 8px 0;font-size:13px;color:#78716c;">A new request for quote was submitted on the website.</p>
+<p style="margin:0 0 8px 0;font-size:13px;color:${BRAND.muted};">A new request for quote was submitted on the website.</p>
 
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:16px 0 24px 0;border:1px solid #e7e5e4;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:16px 0 24px 0;border:1px solid ${BRAND.border};">
   ${row('Reference', `<span style="font-family:Menlo,Consolas,monospace;">${escapeHtml(props.rfqCode)}</span>`)}
   ${row('Account', escapeHtml(props.accountLegalName))}
   ${row('Submitted by', `${escapeHtml(props.submittedByName)} &lt;${escapeHtml(props.submittedByEmail)}&gt;`)}
@@ -45,12 +46,12 @@ export function renderRfqInternalAlert(props: RfqInternalAlertProps): { subject:
 
 ${
   props.customerMessage
-    ? `<div style="margin:16px 0 24px 0;padding:14px 16px;background-color:#fafaf9;border-left:3px solid #0c4a6e;font-size:13px;line-height:1.5;color:#44403c;white-space:pre-wrap;">${escapeHtml(props.customerMessage)}</div>`
+    ? `<div style="margin:16px 0 24px 0;padding:14px 16px;background-color:${BRAND.surface2};border-left:3px solid ${BRAND.accent};font-size:13px;line-height:1.5;color:${BRAND.ink2};white-space:pre-wrap;">${escapeHtml(props.customerMessage)}</div>`
     : ''
 }
 
 <p style="margin:0 0 24px 0;">
-  <a href="${escapeHtml(props.adminUrl)}" style="display:inline-block;background-color:#0c4a6e;color:#ffffff;text-decoration:none;padding:12px 24px;font-size:14px;font-weight:500;">Open in Admin</a>
+  <a href="${escapeHtml(props.adminUrl)}" style="display:inline-block;background-color:${BRAND.accent};color:${BRAND.white};text-decoration:none;padding:12px 24px;font-size:14px;font-weight:500;">Open in Admin</a>
 </p>
 `.trim()
 
@@ -66,7 +67,7 @@ ${
 
 function row(label: string, value: string): string {
   return `<tr>
-    <td style="padding:10px 16px;width:140px;background-color:#fafaf9;border-bottom:1px solid #f5f5f4;font-size:11px;letter-spacing:0.06em;color:#78716c;text-transform:uppercase;vertical-align:top;">${escapeHtml(label)}</td>
-    <td style="padding:10px 16px;border-bottom:1px solid #f5f5f4;font-size:14px;color:#1c1917;">${value}</td>
+    <td style="padding:10px 16px;width:140px;background-color:${BRAND.surface2};border-bottom:1px solid ${BRAND.surface2};font-size:11px;letter-spacing:0.06em;color:${BRAND.muted};text-transform:uppercase;vertical-align:top;">${escapeHtml(label)}</td>
+    <td style="padding:10px 16px;border-bottom:1px solid ${BRAND.surface2};font-size:14px;color:${BRAND.ink};">${value}</td>
   </tr>`
 }
