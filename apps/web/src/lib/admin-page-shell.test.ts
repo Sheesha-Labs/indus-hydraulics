@@ -37,11 +37,6 @@ const SHELL = path.resolve(
 const PENDING = new Set([
   'customers/[id]/page.tsx',
   'rfqs/[code]/page.tsx',
-  'scraper/page.tsx',
-  'scraper/new/page.tsx',
-  'scraper/[jobId]/page.tsx',
-  'users/new/page.tsx',
-  'users/[id]/page.tsx',
   // Header lives in a 'use client' editor child; the title moves to the server
   // page when those are converted.
   'brands/[id]/edit/page.tsx',
