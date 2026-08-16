@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { db } from '@indus/db'
+import { ADMIN_PREFIX } from '../../../../lib/admin-paths'
 
 export const metadata: Metadata = { title: 'Media library — Indus Admin' }
 
@@ -52,7 +53,7 @@ export default async function MediaLibraryPage({ params, searchParams }: Props) 
               k === ''
                 ? totals.reduce((s, t) => s + t._count._all, 0)
                 : totals.find((t) => t.kind === k)?._count._all ?? 0
-            const url = `/media${k ? `?kind=${k}` : ''}`
+            const url = `${ADMIN_PREFIX}/media${k ? `?kind=${k}` : ''}`
             return (
               <Link
                 key={k}

@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { db, Prisma } from '@indus/db'
 import { scoreEntity, type SeoEntityType } from '@indus/domain'
 import { SeoHealthBadge } from '@indus/ui'
+import { ADMIN_PREFIX } from '../../../../../lib/admin-paths'
 
 export const metadata: Metadata = { title: 'SEO Health — Indus Admin' }
 
@@ -473,17 +474,17 @@ function computeSummary(
 function editPathFor(entityType: SeoEntityType, entityId: string): string | null {
   switch (entityType) {
     case 'product':
-      return `/products/${entityId}/edit?tab=seo`
+      return `${ADMIN_PREFIX}/products/${entityId}/edit?tab=seo`
     case 'category':
-      return `/categories/${entityId}/edit`
+      return `${ADMIN_PREFIX}/categories/${entityId}/edit`
     case 'brand':
-      return `/brands/${entityId}/edit`
+      return `${ADMIN_PREFIX}/brands/${entityId}/edit`
     case 'industry':
-      return `/industries/${entityId}/edit`
+      return `${ADMIN_PREFIX}/industries/${entityId}/edit`
     case 'blog_post':
-      return `/cms/blog/${entityId}?tab=seo`
+      return `${ADMIN_PREFIX}/cms/blog/${entityId}?tab=seo`
     case 'cms_page':
-      return `/cms/pages/${entityId}?tab=seo`
+      return `${ADMIN_PREFIX}/cms/pages/${entityId}?tab=seo`
     default:
       return null
   }

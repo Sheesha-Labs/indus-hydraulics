@@ -3,6 +3,7 @@ import Link from 'next/link'
 import AdminPageShell from '../../../../components/admin/AdminPageShell'
 import { db, Prisma } from '@indus/db'
 import ContentScoreBadge from '../../../../components/admin/ContentScoreBadge'
+import { ADMIN_PREFIX } from '../../../../lib/admin-paths'
 
 export const metadata: Metadata = { title: 'Products — Indus Admin' }
 
@@ -116,7 +117,7 @@ export default async function AdminProductsPage({ params, searchParams }: Props)
       if (v) qp.set(k, v)
     }
     const qs = qp.toString()
-    return `/products${qs ? `?${qs}` : ''}`
+    return `${ADMIN_PREFIX}/products${qs ? `?${qs}` : ''}`
   }
 
   function sortUrl(col: keyof typeof SORTABLE) {
