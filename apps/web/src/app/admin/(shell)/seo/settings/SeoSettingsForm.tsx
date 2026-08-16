@@ -3,6 +3,7 @@
 import { useState, useTransition } from 'react'
 import type { SeoSetting } from '@indus/db'
 import { saveSeoSettings } from '../actions'
+import { Input, Textarea } from '@indus/ui'
 
 interface Props {
   seoSetting: SeoSetting | null
@@ -35,32 +36,30 @@ export default function SeoSettingsForm({ seoSetting }: Props) {
   return (
     <form action={handleSave} className="max-w-[640px] space-y-5">
       <div>
-        <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+        <label htmlFor="seosettings-defaultMetaTitleTemplate" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
           Default Title Template
         </label>
-        <input
+        <Input
+          id="seosettings-defaultMetaTitleTemplate"
           name="defaultMetaTitleTemplate"
           type="text"
           defaultValue={seoSetting?.defaultMetaTitleTemplate ?? ''}
-          placeholder="%s — Indus Hydraulics"
-          className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent"
-        />
+          placeholder="%s — Indus Hydraulics" />
         <p className="mt-1 text-[11px] text-ih-muted">
           Use %s for the page-specific title part. The OS falls back to the plain title if applying the template would push past 70 characters.
         </p>
       </div>
 
       <div>
-        <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+        <label htmlFor="seosettings-defaultMetaDescription" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
           Default Meta Description
         </label>
-        <textarea
+        <Textarea
+          id="seosettings-defaultMetaDescription"
           name="defaultMetaDescription"
           rows={3}
           defaultValue={seoSetting?.defaultMetaDescription ?? ''}
-          placeholder="Indus Hydraulics — precision hydraulic components for industrial applications."
-          className="w-full px-3 py-2.5 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent resize-none"
-        />
+          placeholder="Indus Hydraulics — precision hydraulic components for industrial applications." className="resize-none" />
       </div>
 
       <div className="flex items-center gap-3 pt-2">

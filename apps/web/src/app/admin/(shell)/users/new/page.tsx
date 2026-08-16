@@ -5,6 +5,7 @@ import { db } from '@indus/db'
 import { auth } from '../../../../../lib/admin-auth'
 import { ROLES as PERMS, requireRole } from '../../../../../lib/rbac'
 import { requireStaffRole } from '../../../../../lib/staff-session'
+import { Input, Select } from '@indus/ui'
 
 export const metadata: Metadata = { title: 'Add Staff — Indus Admin' }
 
@@ -53,55 +54,51 @@ export default async function NewUserPage() {
 
         <form action={createUser} className="space-y-5">
           <div>
-            <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+            <label htmlFor="newuser-name" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
               Full Name
             </label>
-            <input
+            <Input
+              id="newuser-name"
               name="name"
               type="text"
-              required
-              className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent"
-            />
+              required />
           </div>
 
           <div>
-            <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+            <label htmlFor="newuser-email" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
               Email Address
             </label>
-            <input
+            <Input
+              id="newuser-email"
               name="email"
               type="email"
-              required
-              className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent"
-            />
+              required />
           </div>
 
           <div>
-            <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+            <label htmlFor="newuser-password" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
               Password
             </label>
-            <input
+            <Input
+              id="newuser-password"
               name="password"
               type="password"
               required
-              autoComplete="new-password"
-              className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent"
-            />
+              autoComplete="new-password" />
           </div>
 
           <div>
-            <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+            <label htmlFor="newuser-role" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
               Role
             </label>
-            <select
+            <Select
+              id="newuser-role"
               name="role"
-              defaultValue="sales_rep"
-              className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none"
-            >
+              defaultValue="sales_rep">
               {ROLES.map((r) => (
                 <option key={r.value} value={r.value}>{r.label}</option>
               ))}
-            </select>
+            </Select>
           </div>
 
           <div className="flex items-center gap-3 pt-2 border-t border-ih-border">

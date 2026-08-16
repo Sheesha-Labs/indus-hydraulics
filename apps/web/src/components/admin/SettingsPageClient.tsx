@@ -4,6 +4,7 @@ import { useTransition, useState } from 'react'
 import Link from 'next/link'
 import type { StoreSettings, EmailTemplate } from '@indus/db'
 import { saveStoreSettings, saveEmailTemplate } from '../../app/admin/(shell)/settings/actions'
+import { Input, Select, Textarea } from '@indus/ui'
 
 interface Props {
   activeTab: string
@@ -83,62 +84,58 @@ export default function SettingsPageClient({ activeTab, storeSettings, emailTemp
       {activeTab === 'store' && (
         <form action={handleStoreSettings} className="max-w-[560px] space-y-5">
           <div>
-            <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+            <label htmlFor="settings-name" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
               Store Name
             </label>
-            <input
+            <Input
+              id="settings-name"
               name="name"
               type="text"
               required
-              defaultValue={storeSettings?.name ?? 'Indus Hydraulics'}
-              className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent"
-            />
+              defaultValue={storeSettings?.name ?? 'Indus Hydraulics'} />
           </div>
 
           <div>
-            <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+            <label htmlFor="settings-supportEmail" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
               Support Email
             </label>
-            <input
+            <Input
+              id="settings-supportEmail"
               name="supportEmail"
               type="email"
               defaultValue={storeSettings?.supportEmail ?? ''}
-              placeholder="support@indushydraulics.me"
-              className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent"
-            />
+              placeholder="support@indushydraulics.me" />
           </div>
 
           <div>
-            <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+            <label htmlFor="settings-defaultIncoterm" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
               Default Incoterm
             </label>
-            <select
+            <Select
+              id="settings-defaultIncoterm"
               name="defaultIncoterm"
-              defaultValue={storeSettings?.defaultIncoterm ?? ''}
-              className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none"
-            >
+              defaultValue={storeSettings?.defaultIncoterm ?? ''}>
               <option value="">— None —</option>
               {INCOTERMS.map((term) => (
                 <option key={term} value={term}>{term}</option>
               ))}
-            </select>
+            </Select>
           </div>
 
           <div>
-            <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+            <label htmlFor="settings-defaultPaymentTerms" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
               Default Payment Terms (days)
             </label>
-            <select
+            <Select
+              id="settings-defaultPaymentTerms"
               name="defaultPaymentTerms"
-              defaultValue={storeSettings?.defaultPaymentTerms ?? 30}
-              className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none"
-            >
+              defaultValue={storeSettings?.defaultPaymentTerms ?? 30}>
               {[0, 7, 14, 30, 45, 60, 90].map((days) => (
                 <option key={days} value={days}>
                   {days === 0 ? 'Prepayment' : `Net ${days}`}
                 </option>
               ))}
-            </select>
+            </Select>
           </div>
 
           <div className="pt-4 mt-4 border-t border-ih-border">
@@ -151,31 +148,29 @@ export default function SettingsPageClient({ activeTab, storeSettings, emailTemp
           </div>
 
           <div>
-            <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+            <label htmlFor="settings-tagline" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
               Tagline
             </label>
-            <textarea
+            <Textarea
+              id="settings-tagline"
               name="tagline"
               rows={2}
               maxLength={280}
               defaultValue={storeSettings?.tagline ?? ''}
-              placeholder="UAE's trusted distributor of industrial hydraulic components since 2003."
-              className="w-full px-3 py-2 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent resize-none"
-            />
+              placeholder="UAE's trusted distributor of industrial hydraulic components since 2003." className="resize-none" />
           </div>
 
           <div>
-            <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+            <label htmlFor="settings-certificationLine" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
               Certification line
             </label>
-            <input
+            <Input
+              id="settings-certificationLine"
               name="certificationLine"
               type="text"
               maxLength={120}
               defaultValue={storeSettings?.certificationLine ?? ''}
-              placeholder="ISO 9001:2015 Certified"
-              className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent"
-            />
+              placeholder="ISO 9001:2015 Certified" />
           </div>
 
           <div className="pt-4 mt-4 border-t border-ih-border">
@@ -188,58 +183,54 @@ export default function SettingsPageClient({ activeTab, storeSettings, emailTemp
           </div>
 
           <div>
-            <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+            <label htmlFor="settings-contactLocationLabel" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
               Location label
             </label>
-            <input
+            <Input
+              id="settings-contactLocationLabel"
               name="contactLocationLabel"
               type="text"
               maxLength={80}
               defaultValue={storeSettings?.contactLocationLabel ?? ''}
-              placeholder="Dubai HQ"
-              className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent"
-            />
+              placeholder="Dubai HQ" />
           </div>
 
           <div>
-            <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+            <label htmlFor="settings-contactPhone" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
               Phone
             </label>
-            <input
+            <Input
+              id="settings-contactPhone"
               name="contactPhone"
               type="text"
               maxLength={40}
               defaultValue={storeSettings?.contactPhone ?? ''}
-              placeholder="+971 4 XXX XXXX"
-              className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent"
-            />
+              placeholder="+971 4 XXX XXXX" />
           </div>
 
           <div>
-            <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+            <label htmlFor="settings-contactEmail" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
               Public email
             </label>
-            <input
+            <Input
+              id="settings-contactEmail"
               name="contactEmail"
               type="email"
               defaultValue={storeSettings?.contactEmail ?? ''}
-              placeholder="sales@indushydraulics.me"
-              className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent"
-            />
+              placeholder="sales@indushydraulics.me" />
           </div>
 
           <div>
-            <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+            <label htmlFor="settings-contactHours" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
               Hours
             </label>
-            <input
+            <Input
+              id="settings-contactHours"
               name="contactHours"
               type="text"
               maxLength={120}
               defaultValue={storeSettings?.contactHours ?? ''}
-              placeholder="Mon–Sat 09:00–18:00 GST"
-              className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent"
-            />
+              placeholder="Mon–Sat 09:00–18:00 GST" />
           </div>
 
           <div className="pt-4 mt-4 border-t border-ih-border">
@@ -252,73 +243,68 @@ export default function SettingsPageClient({ activeTab, storeSettings, emailTemp
           </div>
 
           <div>
-            <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+            <label htmlFor="settings-legalName" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
               Legal name
             </label>
-            <input
+            <Input
+              id="settings-legalName"
               name="legalName"
               type="text"
               maxLength={160}
               defaultValue={storeSettings?.legalName ?? ''}
-              placeholder="Indus Hydraulic Power Trading LLC"
-              className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent"
-            />
+              placeholder="Indus Hydraulic Power Trading LLC" />
           </div>
 
           <div>
-            <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+            <label htmlFor="settings-vatTrn" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
               VAT / TRN number
             </label>
-            <input
+            <Input
+              id="settings-vatTrn"
               name="vatTrn"
               type="text"
               maxLength={40}
               defaultValue={storeSettings?.vatTrn ?? ''}
-              placeholder="100548997400003"
-              className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent"
-            />
+              placeholder="100548997400003" />
           </div>
 
           <div>
-            <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+            <label htmlFor="settings-registeredAddressLines" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
               Registered address (one line per line)
             </label>
-            <textarea
+            <Textarea
+              id="settings-registeredAddressLines"
               name="registeredAddressLines"
               rows={4}
               defaultValue={((storeSettings?.registeredAddressLines as string[] | null) ?? []).join('\n')}
-              placeholder={'Office No 310 Al Hilal Bank Building, Al Nahda Street\nAl Quasis-2, Dubai\nDubai 87556\nUnited Arab Emirates'}
-              className="w-full px-3 py-2 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent resize-none font-mono"
-            />
+              placeholder={'Office No 310 Al Hilal Bank Building, Al Nahda Street\nAl Quasis-2, Dubai\nDubai 87556\nUnited Arab Emirates'} className="resize-none font-mono" />
           </div>
 
           <div className="grid grid-cols-2 gap-3">
             <div>
-              <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+              <label htmlFor="settings-registeredCountryCode" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
                 Country (ISO-2)
               </label>
-              <input
+              <Input
+                id="settings-registeredCountryCode"
                 name="registeredCountryCode"
                 type="text"
                 maxLength={2}
                 defaultValue={storeSettings?.registeredCountryCode ?? 'AE'}
-                placeholder="AE"
-                className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent uppercase"
-              />
+                placeholder="AE" className="uppercase" />
             </div>
             <div>
-              <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+              <label htmlFor="settings-defaultVatRatePct" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
                 Default VAT rate (%)
               </label>
-              <input
+              <Input
+                id="settings-defaultVatRatePct"
                 name="defaultVatRatePct"
                 type="number"
                 step="0.01"
                 min="0"
                 max="100"
-                defaultValue={storeSettings?.defaultVatRatePct?.toString() ?? '5.00'}
-                className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent"
-              />
+                defaultValue={storeSettings?.defaultVatRatePct?.toString() ?? '5.00'} />
             </div>
           </div>
 
@@ -333,58 +319,54 @@ export default function SettingsPageClient({ activeTab, storeSettings, emailTemp
 
           <div className="grid grid-cols-2 gap-3">
             <div>
-              <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+              <label htmlFor="settings-signatureName" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
                 Name
               </label>
-              <input
+              <Input
+                id="settings-signatureName"
                 name="signatureName"
                 type="text"
                 maxLength={120}
                 defaultValue={storeSettings?.signatureName ?? ''}
-                placeholder="Krishan Bhatia"
-                className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent"
-              />
+                placeholder="Krishan Bhatia" />
             </div>
             <div>
-              <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+              <label htmlFor="settings-signatureTitle" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
                 Title
               </label>
-              <input
+              <Input
+                id="settings-signatureTitle"
                 name="signatureTitle"
                 type="text"
                 maxLength={120}
                 defaultValue={storeSettings?.signatureTitle ?? ''}
-                placeholder="Managing Director"
-                className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent"
-              />
+                placeholder="Managing Director" />
             </div>
           </div>
 
           <div className="grid grid-cols-2 gap-3">
             <div>
-              <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+              <label htmlFor="settings-signaturePhone" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
                 Phone
               </label>
-              <input
+              <Input
+                id="settings-signaturePhone"
                 name="signaturePhone"
                 type="text"
                 maxLength={40}
                 defaultValue={storeSettings?.signaturePhone ?? ''}
-                placeholder="+971 52 2477942"
-                className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent"
-              />
+                placeholder="+971 52 2477942" />
             </div>
             <div>
-              <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+              <label htmlFor="settings-signatureEmail" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
                 Email
               </label>
-              <input
+              <Input
+                id="settings-signatureEmail"
                 name="signatureEmail"
                 type="email"
                 defaultValue={storeSettings?.signatureEmail ?? ''}
-                placeholder="sales@indushydraulics.me"
-                className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent"
-              />
+                placeholder="sales@indushydraulics.me" />
             </div>
           </div>
 
@@ -399,43 +381,40 @@ export default function SettingsPageClient({ activeTab, storeSettings, emailTemp
 
           <div className="grid grid-cols-2 gap-3">
             <div>
-              <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+              <label htmlFor="settings-quoteFromEmail" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
                 From / Reply-To address
               </label>
-              <input
+              <Input
+                id="settings-quoteFromEmail"
                 name="quoteFromEmail"
                 type="email"
                 defaultValue={storeSettings?.quoteFromEmail ?? ''}
-                placeholder="sales@indushydraulics.me"
-                className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent"
-              />
+                placeholder="sales@indushydraulics.me" />
             </div>
             <div>
-              <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+              <label htmlFor="settings-quoteFromName" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
                 Sender display name
               </label>
-              <input
+              <Input
+                id="settings-quoteFromName"
                 name="quoteFromName"
                 type="text"
                 maxLength={120}
                 defaultValue={storeSettings?.quoteFromName ?? ''}
-                placeholder="Indus Hydraulics Sales"
-                className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent"
-              />
+                placeholder="Indus Hydraulics Sales" />
             </div>
           </div>
 
           <div>
-            <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+            <label htmlFor="settings-internalAlertEmails" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
               Internal new-RFQ alert recipients (one email per line)
             </label>
-            <textarea
+            <Textarea
+              id="settings-internalAlertEmails"
               name="internalAlertEmails"
               rows={3}
               defaultValue={((storeSettings?.internalAlertEmails as string[] | null) ?? []).join('\n')}
-              placeholder={'sales@indushydraulics.me\nayushkbhatia@gmail.com'}
-              className="w-full px-3 py-2 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent resize-none font-mono"
-            />
+              placeholder={'sales@indushydraulics.me\nayushkbhatia@gmail.com'} className="resize-none font-mono" />
           </div>
 
           <div className="pt-4 mt-4 border-t border-ih-border">
@@ -448,56 +427,52 @@ export default function SettingsPageClient({ activeTab, storeSettings, emailTemp
           </div>
 
           <div>
-            <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+            <label htmlFor="settings-defaultQuoteValidityDays" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
               Validity (days)
             </label>
-            <input
+            <Input
+              id="settings-defaultQuoteValidityDays"
               name="defaultQuoteValidityDays"
               type="number"
               min="1"
               max="365"
-              defaultValue={storeSettings?.defaultQuoteValidityDays ?? 30}
-              className="w-32 h-10 px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent"
-            />
+              defaultValue={storeSettings?.defaultQuoteValidityDays ?? 30} className="w-32" />
           </div>
 
           <div>
-            <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+            <label htmlFor="settings-defaultQuoteNotes" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
               Default Notes (optional)
             </label>
-            <textarea
+            <Textarea
+              id="settings-defaultQuoteNotes"
               name="defaultQuoteNotes"
               rows={3}
               defaultValue={storeSettings?.defaultQuoteNotes ?? ''}
-              placeholder="Any standing notes that should appear on every quote."
-              className="w-full px-3 py-2 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent resize-none"
-            />
+              placeholder="Any standing notes that should appear on every quote." className="resize-none" />
           </div>
 
           <div>
-            <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+            <label htmlFor="settings-defaultQuoteTerms" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
               Default Terms &amp; Conditions
             </label>
-            <textarea
+            <Textarea
+              id="settings-defaultQuoteTerms"
               name="defaultQuoteTerms"
               rows={4}
               defaultValue={storeSettings?.defaultQuoteTerms ?? ''}
-              placeholder={'DELIVERY: DDP destination\nPAYMENT: Advance with order\nPRICE VALID FOR FULL 30 DAYS ONLY.'}
-              className="w-full px-3 py-2 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent resize-none font-mono"
-            />
+              placeholder={'DELIVERY: DDP destination\nPAYMENT: Advance with order\nPRICE VALID FOR FULL 30 DAYS ONLY.'} className="resize-none font-mono" />
           </div>
 
           <div>
-            <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+            <label htmlFor="settings-defaultQuoteDisclaimer" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
               Default Disclaimer
             </label>
-            <textarea
+            <Textarea
+              id="settings-defaultQuoteDisclaimer"
               name="defaultQuoteDisclaimer"
               rows={3}
               defaultValue={storeSettings?.defaultQuoteDisclaimer ?? ''}
-              placeholder="Once the order is confirmed and processed, the same cannot be changed or cancelled. Material will be supplied as per the offer quoted."
-              className="w-full px-3 py-2 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent resize-none"
-            />
+              placeholder="Once the order is confirmed and processed, the same cannot be changed or cancelled. Material will be supplied as per the offer quoted." className="resize-none" />
           </div>
 
           <div className="pt-4 mt-4 border-t border-ih-border">
@@ -511,88 +486,82 @@ export default function SettingsPageClient({ activeTab, storeSettings, emailTemp
 
           <div className="grid grid-cols-2 gap-3">
             <div>
-              <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+              <label htmlFor="settings-bankAccountName" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
                 Account name
               </label>
-              <input
+              <Input
+                id="settings-bankAccountName"
                 name="bankAccountName"
                 type="text"
                 maxLength={120}
                 defaultValue={storeSettings?.bankAccountName ?? ''}
-                placeholder="Indus Hydraulic Power Trading LLC"
-                className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent"
-              />
+                placeholder="Indus Hydraulic Power Trading LLC" />
             </div>
             <div>
-              <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+              <label htmlFor="settings-bankName" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
                 Bank name
               </label>
-              <input
+              <Input
+                id="settings-bankName"
                 name="bankName"
                 type="text"
                 maxLength={120}
                 defaultValue={storeSettings?.bankName ?? ''}
-                placeholder="Mashreq Bank"
-                className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent"
-              />
+                placeholder="Mashreq Bank" />
             </div>
           </div>
 
           <div className="grid grid-cols-2 gap-3">
             <div>
-              <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+              <label htmlFor="settings-bankBranch" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
                 Branch
               </label>
-              <input
+              <Input
+                id="settings-bankBranch"
                 name="bankBranch"
                 type="text"
                 maxLength={120}
                 defaultValue={storeSettings?.bankBranch ?? ''}
-                placeholder="Al Quasis Branch, Dubai"
-                className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent"
-              />
+                placeholder="Al Quasis Branch, Dubai" />
             </div>
             <div>
-              <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+              <label htmlFor="settings-bankAccountNo" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
                 Account number
               </label>
-              <input
+              <Input
+                id="settings-bankAccountNo"
                 name="bankAccountNo"
                 type="text"
                 maxLength={40}
                 defaultValue={storeSettings?.bankAccountNo ?? ''}
-                placeholder="012345678901"
-                className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent font-mono"
-              />
+                placeholder="012345678901" className="font-mono" />
             </div>
           </div>
 
           <div className="grid grid-cols-2 gap-3">
             <div>
-              <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+              <label htmlFor="settings-bankIban" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
                 IBAN
               </label>
-              <input
+              <Input
+                id="settings-bankIban"
                 name="bankIban"
                 type="text"
                 maxLength={40}
                 defaultValue={storeSettings?.bankIban ?? ''}
-                placeholder="AE07 0331 2345 6789 0123 456"
-                className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent font-mono"
-              />
+                placeholder="AE07 0331 2345 6789 0123 456" className="font-mono" />
             </div>
             <div>
-              <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+              <label htmlFor="settings-bankSwift" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
                 SWIFT / BIC
               </label>
-              <input
+              <Input
+                id="settings-bankSwift"
                 name="bankSwift"
                 type="text"
                 maxLength={20}
                 defaultValue={storeSettings?.bankSwift ?? ''}
-                placeholder="BOMLAEAD"
-                className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent font-mono"
-              />
+                placeholder="BOMLAEAD" className="font-mono" />
             </div>
           </div>
 
@@ -656,21 +625,20 @@ export default function SettingsPageClient({ activeTab, storeSettings, emailTemp
                   </div>
 
                   <div>
-                    <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+                    <label htmlFor="settings-subject" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
                       Subject Line
                     </label>
-                    <input
+                    <Input
+                      id="settings-subject"
                       name="subject"
                       type="text"
                       required
                       defaultValue={currentTemplate?.subject ?? ''}
-                      placeholder={`Email subject for ${meta.label}`}
-                      className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent"
-                    />
+                      placeholder={`Email subject for ${meta.label}`} />
                   </div>
 
                   <div>
-                    <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+                    <label htmlFor="settings-bodyHtml" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
                       Body HTML
                     </label>
                     <div className="border border-ih-border bg-ih-surface p-3 mb-1.5">
@@ -681,13 +649,12 @@ export default function SettingsPageClient({ activeTab, storeSettings, emailTemp
                         <code className="bg-ih-surface-2 px-1">{'{{link}}'}</code>
                       </p>
                     </div>
-                    <textarea
+                    <Textarea
+                      id="settings-bodyHtml"
                       name="bodyHtml"
                       rows={16}
                       required
-                      defaultValue={currentTemplate?.bodyHtml ?? ''}
-                      className="w-full px-3 py-2.5 border border-ih-border bg-ih-surface font-mono text-[12px] focus:outline-none focus:border-ih-accent resize-none"
-                    />
+                      defaultValue={currentTemplate?.bodyHtml ?? ''} className="font-mono text-[12px] resize-none" />
                   </div>
 
                   <div className="flex items-center gap-3">

@@ -1,7 +1,7 @@
 'use client'
 
-import { useState, useTransition } from 'react'
-import { DiffView } from '@indus/ui'
+import { useState, useTransition, useId } from 'react'
+import { DiffView, Textarea } from '@indus/ui'
 import {
   generateSuggestion,
   acceptSuggestion,
@@ -41,6 +41,7 @@ export default function AiSuggestButton({
   const [suggestionId, setSuggestionId] = useState<string | null>(null)
   const [suggestion, setSuggestion] = useState<string>('')
   const [editValue, setEditValue] = useState<string>('')
+  const editId = useId()
   const [meta, setMeta] = useState<{ costUsdMicros: number; cacheHitRatio: number | null } | null>(
     null,
   )
@@ -155,14 +156,20 @@ export default function AiSuggestButton({
               />
 
               <div className="mb-3">
-                <label className="block font-mono text-[10px] uppercase text-ih-muted mb-1">
+                {/*
+                  useId, not a static string: this button renders once per SEO
+                  field on the page, so a fixed id would repeat and every
+                  label would resolve to whichever textarea came first.
+                */}
+                <label htmlFor={editId} className="block font-mono text-[10px] uppercase text-ih-muted mb-1">
                   Edit before accepting (optional)
                 </label>
-                <textarea
+                <Textarea
+                  id={editId}
                   value={editValue}
                   onChange={(e) => setEditValue(e.target.value)}
                   rows={field === 'seoDescription' ? 3 : 2}
-                  className="w-full px-2 py-1.5 border border-ih-border bg-white text-[12px] resize-y focus:outline-none focus:border-ih-accent"
+                  className="px-2 py-1.5 text-[12px]"
                 />
               </div>
 

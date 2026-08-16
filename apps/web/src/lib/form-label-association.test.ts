@@ -22,51 +22,36 @@ import { describe, expect, test } from 'vitest'
  * is the default rather than something each caller has to remember. This scan
  * is the backstop for markup that does not go through it.
  *
- * SCOPE: the customer-facing surface is held at zero. The console still has a
- * backlog, recorded in ALLOWED below — every entry there is a real defect, not
- * an exemption. Shrink the list; never add to it.
+ * SCOPE: the whole app — storefront and console — is held at zero.
  */
 
 const SRC = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 
 /**
- * Console files with known-orphaned labels, pending conversion to the Field
- * primitive. Counts are exact so a file cannot quietly get worse: adding an
- * orphan to a listed file fails the test just as adding a new file does.
+ * Files with known-orphaned labels, pending conversion.
+ *
+ * EMPTY, and it should stay that way. Counts are exact, so a listed file
+ * cannot quietly get worse and a fixed file cannot be left stale — the third
+ * test fails if an entry claims more orphans than the file actually has.
+ * Shrink this list; never add to it.
  */
-const ALLOWED: Record<string, number> = {
-  'components/admin/SettingsPageClient.tsx': 34,
-  'components/admin/SendQuoteComposer.tsx': 9,
-  'components/admin/seo/AiSuggestButton.tsx': 1,
-  'app/admin/(shell)/customers/new/page.tsx': 9,
-  'app/admin/(shell)/customers/[id]/page.tsx': 5,
-  'app/admin/(shell)/cms/blog/[id]/BlogPostEditorClient.tsx': 7,
-  'app/admin/(shell)/cms/pages/[id]/CmsPageEditorClient.tsx': 5,
-  'app/admin/(shell)/rfqs/[code]/page.tsx': 4,
-  'app/admin/(shell)/users/new/page.tsx': 4,
-  'app/admin/(shell)/users/[id]/page.tsx': 4,
-  'app/admin/(shell)/seo/search/boosts/BoostsClient.tsx': 3,
-  'app/admin/(shell)/seo/redirects/RedirectsManager.tsx': 3,
-  'app/admin/(shell)/seo/settings/SeoSettingsForm.tsx': 2,
-  'app/admin/(shell)/seo/inspector/page.tsx': 2,
-  'app/admin/(shell)/seo/search/synonyms/SynonymsClient.tsx': 2,
-  'app/admin/(shell)/seo/search/redirects/SearchRedirectsClient.tsx': 2,
-  'app/admin/(shell)/seo/robots/RobotsForm.tsx': 1,
-  'app/admin/(shell)/products/[id]/edit/ProductEditorClient.tsx': 2,
-  'app/admin/(shell)/products/new/page.tsx': 1,
-  'app/admin/(shell)/scraper/new/StartScrapeForm.tsx': 1,
-  'app/admin/(shell)/brands/BrandsClient.tsx': 1,
-  'app/admin/(shell)/brands/[id]/edit/BrandContentEditor.tsx': 1,
-  'app/admin/(shell)/industries/IndustriesClient.tsx': 1,
-  'app/admin/(shell)/industries/[id]/edit/IndustryContentEditor.tsx': 1,
-  'app/admin/(shell)/categories/CategoriesClient.tsx': 1,
-  'app/admin/(shell)/navigation/[menuSlug]/ItemFormDialog.tsx': 1,
-  'app/admin/(shell)/spec-templates/SpecTemplatesClient.tsx': 1,
-  'app/admin/(shell)/spec-templates/[id]/TemplateEditorClient.tsx': 1,
-}
+const ALLOWED: Record<string, number> = {}
 
 /** Anything that puts a control inside the label satisfies the association. */
 const CONTROL = /<(input|textarea|select|Input|Textarea|Select|Checkbox)\b/
+
+/**
+ * A label that renders `{children}` (or any single JSX expression as its
+ * control slot) is the wrapping idiom — the caller passes the control in, so
+ * it IS a descendant at runtime even though no control tag appears in this
+ * file. The console has ~11 of these and they are all correct.
+ *
+ * Whether an arbitrary expression renders a control cannot be decided
+ * statically, so the scan declines to judge these rather than guessing. What
+ * it still catches is the literal-sibling case — a `<label>` and a control
+ * side by side — which is the shape that actually accumulated ~150 times.
+ */
+const RENDERS_CHILDREN = /\{\s*(children|control|field|input)\s*\}/
 
 function sourceFiles(dir = SRC, acc: string[] = []): string[] {
   for (const entry of readdirSync(dir)) {
@@ -91,10 +76,85 @@ function orphanedLabels(rel: string): number[] {
 
     if (head.includes('htmlFor')) continue
     if (CONTROL.test(body)) continue // wrapping label — implicitly associated
+    if (RENDERS_CHILDREN.test(body)) continue // control arrives via props
     lines.push(src.slice(0, i).split('\n').length)
   }
   return lines
 }
+
+/**
+ * Static ids, and the two ways they go wrong.
+ *
+ * An id derived from a control's `name` is safe only where the markup renders
+ * once per document. The sweep that produced this file's fixes assigned ids to
+ * EVERY converted control — including unlabelled ones inside a .map() — and
+ * one of those copied an existing id onto a per-row input. That is invalid
+ * HTML, getElementById silently resolves to whichever came first, and the id
+ * makes the control look wired when it has no accessible name at all.
+ *
+ * Neither failure is visible to the label scan below: no <label> is involved.
+ */
+function literalIds(rel: string): { id: string; line: number; inMap: boolean }[] {
+  const src = readFileSync(path.join(SRC, rel), 'utf8')
+  const out: { id: string; line: number; inMap: boolean }[] = []
+
+  // Extents of every .map()/.flatMap() callback, by paren depth.
+  const mapRanges: [number, number][] = []
+  for (const m of src.matchAll(/\.(?:map|flatMap)\(/g)) {
+    let i = m.index! + m[0].length - 1
+    let depth = 0
+    while (i < src.length) {
+      if (src[i] === '(') depth++
+      else if (src[i] === ')') {
+        depth--
+        if (depth === 0) break
+      }
+      i++
+    }
+    mapRanges.push([m.index!, i])
+  }
+
+  for (const m of src.matchAll(/\bid="([^"{]+)"/g)) {
+    const at = m.index!
+    out.push({
+      id: m[1]!,
+      line: src.slice(0, at).split('\n').length,
+      inMap: mapRanges.some(([a, b]) => at > a && at < b),
+    })
+  }
+  return out
+}
+
+describe('static ids', () => {
+  const files = sourceFiles().filter((f) => !f.endsWith('.test.tsx'))
+
+  test('no literal id is declared twice in one file', () => {
+    const dupes: string[] = []
+    for (const rel of files) {
+      const seen = new Map<string, number[]>()
+      for (const { id, line } of literalIds(rel)) {
+        seen.set(id, [...(seen.get(id) ?? []), line])
+      }
+      for (const [id, lines] of seen) {
+        if (lines.length > 1) {
+          dupes.push(`${rel.split(path.sep).join('/')}: id="${id}" at lines ${lines.join(', ')}`)
+        }
+      }
+    }
+    expect(dupes.sort()).toEqual([])
+  })
+
+  test('no literal id is declared inside a .map() callback', () => {
+    // Per-row markup must use useId(), or carry no id plus an aria-label.
+    const repeated: string[] = []
+    for (const rel of files) {
+      for (const { id, line, inMap } of literalIds(rel)) {
+        if (inMap) repeated.push(`${rel.split(path.sep).join('/')}:${line}: id="${id}"`)
+      }
+    }
+    expect(repeated.sort()).toEqual([])
+  })
+})
 
 describe('every form label names a control', () => {
   const counts = new Map<string, number[]>()

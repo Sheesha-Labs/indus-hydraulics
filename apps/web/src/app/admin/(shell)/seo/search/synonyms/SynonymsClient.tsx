@@ -2,6 +2,7 @@
 
 import { useState, useTransition } from 'react'
 import { upsertSynonymGroup, deleteSynonymGroup, toggleSynonymGroup } from './actions'
+import { Input } from '@indus/ui'
 
 type Group = { group: string; terms: string[]; isActive: boolean }
 
@@ -87,28 +88,26 @@ export default function SynonymsClient({ groups: initialGroups }: Props) {
         </summary>
         <form action={handleSave} className="mt-3 grid grid-cols-[200px_1fr_auto] gap-3 items-end">
           <div>
-            <label className="block font-mono text-[10px] uppercase text-ih-muted mb-1">
+            <label htmlFor="synonym-group" className="block font-mono text-[10px] uppercase text-ih-muted mb-1">
               Group name
             </label>
-            <input
+            <Input
+              id="synonym-group"
               name="group"
               type="text"
               required
-              placeholder="o-ring"
-              className="w-full h-9 px-3 border border-ih-border bg-ih-bg text-[13px] focus:outline-none focus:border-ih-accent"
-            />
+              placeholder="o-ring" />
           </div>
           <div>
-            <label className="block font-mono text-[10px] uppercase text-ih-muted mb-1">
+            <label htmlFor="synonym-terms" className="block font-mono text-[10px] uppercase text-ih-muted mb-1">
               Terms (comma- or newline-separated)
             </label>
-            <input
+            <Input
+              id="synonym-terms"
               name="terms"
               type="text"
               required
-              placeholder="o-ring, oring, o ring"
-              className="w-full h-9 px-3 border border-ih-border bg-ih-bg text-[13px] focus:outline-none focus:border-ih-accent"
-            />
+              placeholder="o-ring, oring, o ring" />
           </div>
           <button
             type="submit"
@@ -154,12 +153,18 @@ export default function SynonymsClient({ groups: initialGroups }: Props) {
                     {editing === g.group ? (
                       <form action={handleSave} className="flex gap-2 items-center">
                         <input type="hidden" name="group" value={g.group} />
-                        <input
+                        {/*
+                          No id: this renders once per row, so a static one
+                          would duplicate the add-form's and every getElementById
+                          would resolve to whichever came first. There is no
+                          visible label in a table row either, so the accessible
+                          name has to come from aria-label.
+                        */}
+                        <Input
                           name="terms"
                           type="text"
-                          defaultValue={g.terms.join(', ')}
-                          className="flex-1 h-8 px-2 border border-ih-border bg-ih-bg text-[12px] focus:outline-none focus:border-ih-accent"
-                        />
+                          aria-label={`Terms for ${g.group}`}
+                          defaultValue={g.terms.join(', ')} className="flex-1 h-8 text-[12px]" />
                         <button
                           type="submit"
                           disabled={pending}

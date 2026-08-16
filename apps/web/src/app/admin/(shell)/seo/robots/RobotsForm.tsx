@@ -2,6 +2,7 @@
 
 import { useState, useTransition } from 'react'
 import { saveSeoSettings } from '../actions'
+import { Textarea } from '@indus/ui'
 
 interface Props {
   seoSetting: {
@@ -46,18 +47,17 @@ export default function RobotsForm({ seoSetting }: Props) {
       </div>
 
       <div>
-        <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+        <label htmlFor="robots-robotsTxt" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
           robots.txt content
         </label>
-        <textarea
+        <Textarea
+          id="robots-robotsTxt"
           name="robotsTxt"
           rows={16}
           defaultValue={
             seoSetting?.robotsTxt ??
             'User-agent: *\nAllow: /\n\nSitemap: https://indushydraulics.com/sitemap.xml'
-          }
-          className="w-full px-3 py-2.5 border border-ih-border bg-ih-surface font-mono text-[12px] focus:outline-none focus:border-ih-accent resize-none"
-        />
+          } className="font-mono text-[12px] resize-none" />
         <p className="mt-2 text-[11px] text-ih-muted">
           Lines starting with <code>#</code> are comments. The Sitemap directive is appended
           automatically when present in `SeoSetting.robotsTxtAutoAppendSitemap`.

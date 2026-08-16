@@ -2,6 +2,7 @@
 
 import { useState, useTransition } from 'react'
 import { upsertSearchBoost, deleteSearchBoost } from './actions'
+import { Input } from '@indus/ui'
 
 type Row = {
   id: string
@@ -61,41 +62,38 @@ export default function BoostsClient({ rows: initialRows }: Props) {
         </summary>
         <form action={handleAdd} className="mt-3 grid grid-cols-[1fr_120px_180px_auto] gap-3 items-end">
           <div>
-            <label className="block font-mono text-[10px] uppercase text-ih-muted mb-1">
+            <label htmlFor="boost-sku" className="block font-mono text-[10px] uppercase text-ih-muted mb-1">
               Product SKU
             </label>
-            <input
+            <Input
+              id="boost-sku"
               name="sku"
               type="text"
               required
-              placeholder="ABC-1234"
-              className="w-full h-9 px-3 border border-ih-border bg-ih-bg text-[13px] focus:outline-none focus:border-ih-accent"
-            />
+              placeholder="ABC-1234" />
           </div>
           <div>
-            <label className="block font-mono text-[10px] uppercase text-ih-muted mb-1">
+            <label htmlFor="boost-boost" className="block font-mono text-[10px] uppercase text-ih-muted mb-1">
               Boost (0–10)
             </label>
-            <input
+            <Input
+              id="boost-boost"
               name="boost"
               type="number"
               required
               min={0}
               max={10}
               step={0.1}
-              defaultValue="1.5"
-              className="w-full h-9 px-3 border border-ih-border bg-ih-bg text-[13px] focus:outline-none focus:border-ih-accent"
-            />
+              defaultValue="1.5" />
           </div>
           <div>
-            <label className="block font-mono text-[10px] uppercase text-ih-muted mb-1">
+            <label htmlFor="boost-expiresAt" className="block font-mono text-[10px] uppercase text-ih-muted mb-1">
               Expires (optional)
             </label>
-            <input
+            <Input
+              id="boost-expiresAt"
               name="expiresAt"
-              type="datetime-local"
-              className="w-full h-9 px-3 border border-ih-border bg-ih-bg text-[13px] focus:outline-none focus:border-ih-accent"
-            />
+              type="datetime-local" />
           </div>
           <button
             type="submit"

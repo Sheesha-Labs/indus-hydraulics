@@ -8,6 +8,7 @@ import SeoEntityDrawer, {
 } from '../../../../../../components/admin/seo/SeoEntityDrawer'
 import type { RecentMedia } from '../../../../../../components/admin/seo/OgImagePicker'
 import { savePage, updateCmsPageSeo, uploadCmsPageOgImage } from './actions'
+import { Input, Textarea } from '@indus/ui'
 
 type CmsPage = {
   id: string
@@ -135,44 +136,41 @@ function ContentForm({ isNew, page }: { isNew: boolean; page: CmsPage | null }) 
 
       <div className="grid grid-cols-2 gap-4">
         <div className="col-span-2">
-          <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+          <label htmlFor="cmspage-title" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
             Title *
           </label>
-          <input
+          <Input
+            id="cmspage-title"
             name="title"
             required
             defaultValue={page?.title ?? ''}
-            type="text"
-            className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[15px] font-semibold focus:outline-none focus:border-ih-accent"
-          />
+            type="text" className="text-[15px] font-semibold" />
         </div>
         <div>
-          <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+          <label htmlFor="cmspage-slug" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
             Slug *
           </label>
-          <input
+          <Input
+            id="cmspage-slug"
             name="slug"
             required
             defaultValue={page?.slug ?? ''}
             type="text"
-            placeholder="about, contact, terms"
-            className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] font-mono focus:outline-none focus:border-ih-accent"
-          />
+            placeholder="about, contact, terms" className="font-mono" />
         </div>
       </div>
 
       <div>
-        <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+        <label htmlFor="cmspage-body" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
           Body *
         </label>
-        <textarea
+        <Textarea
+          id="cmspage-body"
           name="body"
           required
           defaultValue={page?.body ?? ''}
           rows={20}
-          placeholder="Page content (HTML)"
-          className="w-full px-3 py-2.5 border border-ih-border bg-ih-surface text-[13px] font-mono text-ih-ink placeholder:text-ih-muted-2 focus:outline-none focus:border-ih-accent resize-none"
-        />
+          placeholder="Page content (HTML)" className="font-mono resize-none" />
       </div>
 
       <div className="border-t border-ih-border pt-4">
@@ -185,22 +183,20 @@ function ContentForm({ isNew, page }: { isNew: boolean; page: CmsPage | null }) 
         </p>
         <div className="grid grid-cols-2 gap-4">
           <div>
-            <label className="block font-mono text-[11px] text-ih-muted mb-1">Meta Title</label>
-            <input
+            <label htmlFor="cmspage-seoTitle" className="block font-mono text-[11px] text-ih-muted mb-1">Meta Title</label>
+            <Input
+              id="cmspage-seoTitle"
               name="seoTitle"
               defaultValue={page?.seoTitle ?? ''}
-              type="text"
-              className="w-full h-9 px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none"
-            />
+              type="text" />
           </div>
           <div>
-            <label className="block font-mono text-[11px] text-ih-muted mb-1">Meta Description</label>
-            <input
+            <label htmlFor="cmspage-seoDescription" className="block font-mono text-[11px] text-ih-muted mb-1">Meta Description</label>
+            <Input
+              id="cmspage-seoDescription"
               name="seoDescription"
               defaultValue={page?.seoDescription ?? ''}
-              type="text"
-              className="w-full h-9 px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none"
-            />
+              type="text" />
           </div>
         </div>
       </div>
