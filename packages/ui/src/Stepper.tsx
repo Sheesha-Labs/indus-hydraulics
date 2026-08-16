@@ -31,9 +31,9 @@ export function Stepper({ steps, currentStep, className }: StepperProps) {
               <div
                 className={cn(
                   'flex items-center justify-center w-7 h-7 text-xs font-mono font-semibold border',
-                  isCompleted && 'bg-[var(--color-primary)] text-[var(--color-elevated)] border-[var(--color-primary)]',
-                  isActive && 'bg-[var(--color-accent)] text-[var(--color-accent-ink)] border-[var(--color-accent)]',
-                  isUpcoming && 'bg-[var(--color-elevated)] text-[var(--color-caption)] border-[var(--color-border)]'
+                  isCompleted && 'bg-ih-navy text-white border-ih-ink',
+                  isActive && 'bg-ih-accent text-ih-accent-fg border-ih-accent',
+                  isUpcoming && 'bg-ih-surface text-ih-muted-2 border-ih-border'
                 )}
                 aria-current={isActive ? 'step' : undefined}
               >
@@ -51,13 +51,13 @@ export function Stepper({ steps, currentStep, className }: StepperProps) {
                 <p
                   className={cn(
                     'text-xs font-medium',
-                    isActive ? 'text-[var(--color-primary)]' : 'text-[var(--color-muted)]'
+                    isActive ? 'text-ih-ink' : 'text-ih-muted'
                   )}
                 >
                   {step.label}
                 </p>
                 {step.description && (
-                  <p className="text-[10px] text-[var(--color-caption)]">{step.description}</p>
+                  <p className="text-[10px] text-ih-muted-2">{step.description}</p>
                 )}
               </div>
             </div>
@@ -67,7 +67,7 @@ export function Stepper({ steps, currentStep, className }: StepperProps) {
               <div
                 className={cn(
                   'flex-1 mx-3 h-px',
-                  isCompleted ? 'bg-[var(--color-primary)]' : 'bg-[var(--color-border)]'
+                  isCompleted ? 'bg-ih-navy' : 'bg-ih-border'
                 )}
                 aria-hidden="true"
               />

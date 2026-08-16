@@ -60,7 +60,7 @@ export default async function NewCustomerPage({ params }: Props) {
   return (
     <div className="max-w-[720px]">
       <div className="mb-6">
-        <Link href={`/admin/customers`} className="font-mono text-[12px] text-[var(--color-muted)] hover:text-[var(--color-primary)] mb-2 inline-block">
+        <Link href={`/admin/customers`} className="font-mono text-[12px] text-ih-muted hover:text-ih-ink mb-2 inline-block">
           ← Customers
         </Link>
         <h1 className="text-[24px] font-semibold tracking-tight">New Account</h1>
@@ -70,43 +70,43 @@ export default async function NewCustomerPage({ params }: Props) {
 
         <div className="grid grid-cols-2 gap-4">
           <div className="col-span-2">
-            <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
-              Legal Name <span className="text-[var(--color-accent)]">*</span>
+            <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+              Legal Name <span className="text-ih-accent">*</span>
             </label>
             <input
               name="legalName"
               required
               type="text"
               placeholder="e.g. PT Maju Bersama Tbk"
-              className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] text-[var(--color-primary)] placeholder:text-[var(--color-caption)] focus:outline-none focus:border-[var(--color-accent)]"
+              className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] text-ih-ink placeholder:text-ih-muted-2 focus:outline-none focus:border-ih-accent"
             />
           </div>
 
           <div className="col-span-2">
-            <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+            <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
               Display Name
             </label>
             <input
               name="displayName"
               type="text"
               placeholder="Short name shown in UI (defaults to legal name)"
-              className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] text-[var(--color-primary)] placeholder:text-[var(--color-caption)] focus:outline-none focus:border-[var(--color-accent)]"
+              className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] text-ih-ink placeholder:text-ih-muted-2 focus:outline-none focus:border-ih-accent"
             />
           </div>
 
           <div>
-            <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">Region</label>
+            <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">Region</label>
             <input
               name="region"
               type="text"
               placeholder="e.g. South East Asia"
-              className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] text-[var(--color-primary)] placeholder:text-[var(--color-caption)] focus:outline-none focus:border-[var(--color-accent)]"
+              className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] text-ih-ink placeholder:text-ih-muted-2 focus:outline-none focus:border-ih-accent"
             />
           </div>
 
           <div>
-            <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">Industry</label>
-            <select name="industryId" className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] focus:outline-none focus:border-[var(--color-accent)]">
+            <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">Industry</label>
+            <select name="industryId" className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent">
               <option value="">— Select —</option>
               {industries.map((ind) => (
                 <option key={ind.id} value={ind.id}>{ind.name}</option>
@@ -115,8 +115,8 @@ export default async function NewCustomerPage({ params }: Props) {
           </div>
 
           <div>
-            <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">Tier</label>
-            <select name="tier" defaultValue="bronze" className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] focus:outline-none focus:border-[var(--color-accent)]">
+            <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">Tier</label>
+            <select name="tier" defaultValue="bronze" className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent">
               {['bronze', 'silver', 'gold', 'platinum'].map((t) => (
                 <option key={t} value={t} className="capitalize">{t}</option>
               ))}
@@ -124,8 +124,8 @@ export default async function NewCustomerPage({ params }: Props) {
           </div>
 
           <div>
-            <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">Status</label>
-            <select name="status" defaultValue="prospect" className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] focus:outline-none focus:border-[var(--color-accent)]">
+            <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">Status</label>
+            <select name="status" defaultValue="prospect" className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent">
               {['prospect', 'active', 'at_risk', 'archived'].map((s) => (
                 <option key={s} value={s}>{s.replace('_', ' ')}</option>
               ))}
@@ -133,8 +133,8 @@ export default async function NewCustomerPage({ params }: Props) {
           </div>
 
           <div>
-            <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">Assigned Rep</label>
-            <select name="assignedRepId" className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] focus:outline-none focus:border-[var(--color-accent)]">
+            <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">Assigned Rep</label>
+            <select name="assignedRepId" className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent">
               <option value="">— Unassigned —</option>
               {reps.map((r) => (
                 <option key={r.id} value={r.id}>{r.name}</option>
@@ -143,21 +143,21 @@ export default async function NewCustomerPage({ params }: Props) {
           </div>
 
           <div>
-            <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">Payment Terms (days)</label>
-            <input name="paymentTermsDays" type="number" defaultValue={30} min={0} className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] font-mono focus:outline-none focus:border-[var(--color-accent)]" />
+            <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">Payment Terms (days)</label>
+            <input name="paymentTermsDays" type="number" defaultValue={30} min={0} className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] font-mono focus:outline-none focus:border-ih-accent" />
           </div>
 
           <div>
-            <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">Credit Limit (USD)</label>
-            <input name="creditLimit" type="number" defaultValue={0} min={0} step={1000} className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] font-mono focus:outline-none focus:border-[var(--color-accent)]" />
+            <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">Credit Limit (USD)</label>
+            <input name="creditLimit" type="number" defaultValue={0} min={0} step={1000} className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] font-mono focus:outline-none focus:border-ih-accent" />
           </div>
         </div>
 
         <div className="pt-2 flex gap-3">
-          <button type="submit" className="h-10 px-6 bg-[var(--color-accent)] text-white text-[13px] font-medium hover:opacity-90 transition-opacity">
+          <button type="submit" className="h-10 px-6 bg-ih-accent text-white text-[13px] font-medium hover:opacity-90 transition-opacity">
             Create Account
           </button>
-          <Link href={`/admin/customers`} className="h-10 px-4 flex items-center border border-[var(--color-border)] text-[13px] text-[var(--color-body)] hover:bg-[var(--color-deep)] transition-colors">
+          <Link href={`/admin/customers`} className="h-10 px-4 flex items-center border border-ih-border text-[13px] text-ih-ink-2 hover:bg-ih-surface-2 transition-colors">
             Cancel
           </Link>
         </div>

@@ -24,15 +24,15 @@ export default async function NavigationListPage({ params }: Props) {
         <div className="flex items-center justify-between mb-6">
           <div>
             <h1 className="text-[24px] font-semibold tracking-tight">Navigation menus</h1>
-            <p className="text-[13px] text-[var(--color-muted)] mt-1">
+            <p className="text-[13px] text-ih-muted mt-1">
               Manage every nav surface — header, megamenu, footer, and mobile drawer.
             </p>
           </div>
           {missingLocations.length > 0 ? <CreateMenuButton missing={missingLocations} /> : null}
         </div>
 
-        <div className="bg-white border border-[var(--color-border)]">
-          <div className="grid grid-cols-[1fr_180px_120px_140px_120px] px-4 py-2.5 bg-[var(--color-surface)] border-b border-[var(--color-border)] font-mono text-[10px] tracking-[0.1em] uppercase text-[var(--color-muted)]">
+        <div className="bg-white border border-ih-border">
+          <div className="grid grid-cols-[1fr_180px_120px_140px_120px] px-4 py-2.5 bg-ih-bg border-b border-ih-border font-mono text-[10px] tracking-[0.1em] uppercase text-ih-muted">
             <div>Name</div>
             <div>Location</div>
             <div className="text-center">Items</div>
@@ -40,17 +40,17 @@ export default async function NavigationListPage({ params }: Props) {
             <div className="text-right"></div>
           </div>
           {menus.length === 0 ? (
-            <div className="px-4 py-12 text-center text-[13px] text-[var(--color-muted)]">
+            <div className="px-4 py-12 text-center text-[13px] text-ih-muted">
               No menus yet — create one to get started.
             </div>
           ) : (
             menus.map((m) => (
               <div
                 key={m.id}
-                className="grid grid-cols-[1fr_180px_120px_140px_120px] items-center px-4 py-3 border-b border-[var(--color-border)] last:border-b-0 text-[13px]"
+                className="grid grid-cols-[1fr_180px_120px_140px_120px] items-center px-4 py-3 border-b border-ih-border last:border-b-0 text-[13px]"
               >
                 <div className="font-medium">{m.name}</div>
-                <div className="font-mono text-[11px] text-[var(--color-muted)]">
+                <div className="font-mono text-[11px] text-ih-muted">
                   {MENU_LOCATION_LABELS[m.location as MenuLocation]}
                 </div>
                 <div className="text-center">{m._count.items}</div>
@@ -59,7 +59,7 @@ export default async function NavigationListPage({ params }: Props) {
                     className={
                       m.isPublished
                         ? 'inline-block px-2 py-0.5 text-[11px] bg-[oklch(0.93_0.06_140)] text-[oklch(0.32_0.10_140)]'
-                        : 'inline-block px-2 py-0.5 text-[11px] bg-[var(--color-surface)] text-[var(--color-muted)] border border-[var(--color-border)]'
+                        : 'inline-block px-2 py-0.5 text-[11px] bg-ih-bg text-ih-muted border border-ih-border'
                     }
                   >
                     {m.isPublished ? 'Published' : 'Draft'}
@@ -68,7 +68,7 @@ export default async function NavigationListPage({ params }: Props) {
                 <div className="text-right">
                   <Link
                     href={`/admin/navigation/${m.slug}`}
-                    className="text-[12px] text-[var(--color-accent)] hover:underline"
+                    className="text-[12px] text-ih-accent hover:underline"
                   >
                     Edit →
                   </Link>

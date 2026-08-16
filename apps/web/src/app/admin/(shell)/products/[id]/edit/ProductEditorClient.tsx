@@ -227,7 +227,7 @@ export default function ProductEditorClient({
       <div className="flex items-end justify-between mb-1 gap-4">
         <div>
           <h1 className="text-[24px] font-semibold tracking-tight">{product.title}</h1>
-          <p className="font-mono text-[12px] text-[var(--color-muted)] mt-1">{product.sku}</p>
+          <p className="font-mono text-[12px] text-ih-muted mt-1">{product.sku}</p>
         </div>
         <div className="flex items-center gap-2">
           {savedAt && (
@@ -238,14 +238,14 @@ export default function ProductEditorClient({
               href={previewUrl}
               target="_blank"
               rel="noreferrer"
-              className="h-9 px-3 inline-flex items-center border border-[var(--color-border)] text-[12px] text-[var(--color-muted)] hover:text-[var(--color-primary)]"
+              className="h-9 px-3 inline-flex items-center border border-ih-border text-[12px] text-ih-muted hover:text-ih-ink"
             >
               Preview ↗
             </a>
           ) : (
             <span
               title="Set PREVIEW_TOKEN_SECRET in admin env to enable preview"
-              className="h-9 px-3 inline-flex items-center border border-[var(--color-border)] text-[12px] text-[var(--color-caption)] cursor-not-allowed"
+              className="h-9 px-3 inline-flex items-center border border-ih-border text-[12px] text-ih-muted-2 cursor-not-allowed"
             >
               Preview ↗
             </span>
@@ -255,7 +255,7 @@ export default function ProductEditorClient({
       </div>
 
       {/* Tabs */}
-      <div className="flex gap-0 border-b border-[var(--color-border)] mt-5 mb-6 overflow-x-auto">
+      <div className="flex gap-0 border-b border-ih-border mt-5 mb-6 overflow-x-auto">
         {TABS.map((t) => (
           <button
             key={t.id}
@@ -263,8 +263,8 @@ export default function ProductEditorClient({
             onClick={() => setTab(t.id)}
             className={`px-4 py-2.5 text-[13px] font-medium border-b-2 transition-colors -mb-px whitespace-nowrap ${
               tab === t.id
-                ? 'border-[var(--color-accent)] text-[var(--color-primary)]'
-                : 'border-transparent text-[var(--color-muted)] hover:text-[var(--color-primary)]'
+                ? 'border-ih-accent text-ih-ink'
+                : 'border-transparent text-ih-muted hover:text-ih-ink'
             }`}
           >
             {t.label}
@@ -355,7 +355,7 @@ function CoreTab({
   }
 
   return (
-    <form action={onSubmit} className="flex flex-col gap-5 bg-white border border-[var(--color-border)] p-6 max-w-3xl">
+    <form action={onSubmit} className="flex flex-col gap-5 bg-white border border-ih-border p-6 max-w-3xl">
       <input type="hidden" name="id" value={product.id} />
 
       {error && <ErrorBanner message={error} />}
@@ -476,16 +476,16 @@ function DescriptionTab({
   }
 
   return (
-    <form action={onSubmit} className="flex flex-col gap-4 bg-white border border-[var(--color-border)] p-6 max-w-4xl">
+    <form action={onSubmit} className="flex flex-col gap-4 bg-white border border-ih-border p-6 max-w-4xl">
       <input type="hidden" name="id" value={product.id} />
 
       {error && <ErrorBanner message={error} />}
 
       <div className="flex flex-col gap-1.5">
-        <span className="text-[12px] font-medium text-[var(--color-body)]">Long description</span>
+        <span className="text-[12px] font-medium text-ih-ink-2">Long description</span>
 
         {/* Toolbar */}
-        <div className="flex flex-wrap gap-1 px-2 py-1.5 border border-[var(--color-border)] border-b-0 bg-[var(--color-surface)]">
+        <div className="flex flex-wrap gap-1 px-2 py-1.5 border border-ih-border border-b-0 bg-ih-bg">
           <ToolbarBtn onClick={() => wrap('## ', '')}>H2</ToolbarBtn>
           <ToolbarBtn onClick={() => wrap('### ', '')}>H3</ToolbarBtn>
           <Sep />
@@ -511,9 +511,9 @@ function DescriptionTab({
           value={body}
           onChange={(e) => setBody(e.target.value)}
           rows={20}
-          className="w-full px-3 py-2 border border-[var(--color-border)] bg-white text-[13px] font-mono leading-relaxed resize-y"
+          className="w-full px-3 py-2 border border-ih-border bg-white text-[13px] font-mono leading-relaxed resize-y"
         />
-        <span className="text-[11px] text-[var(--color-caption)]">
+        <span className="text-[11px] text-ih-muted-2">
           Markdown supported · {body.length.toLocaleString()} / 20,000 chars · Use <code>![alt](url)</code> to embed images.
         </span>
       </div>
@@ -548,7 +548,7 @@ function CommerceTab({
   }
 
   return (
-    <form action={onSubmit} className="flex flex-col gap-5 bg-white border border-[var(--color-border)] p-6 max-w-3xl">
+    <form action={onSubmit} className="flex flex-col gap-5 bg-white border border-ih-border p-6 max-w-3xl">
       <input type="hidden" name="id" value={product.id} />
 
       {error && <ErrorBanner message={error} />}
@@ -595,7 +595,7 @@ function CommerceTab({
               <option value="set">Set</option>
             </select>
           </Field>
-          <div className="col-span-2 text-[11px] text-[var(--color-muted)] flex items-end pb-2 leading-snug">
+          <div className="col-span-2 text-[11px] text-ih-muted flex items-end pb-2 leading-snug">
             <p>Compare-at price renders as strike-through MSRP on the storefront when set <i>and</i> strictly greater than List price. Leave blank for no strike-through. Leave List price blank to show &ldquo;Request quote&rdquo; instead of a number.</p>
           </div>
         </div>
@@ -805,19 +805,19 @@ function TemplateSelector({
   }
 
   return (
-    <section className="bg-white border border-[var(--color-border)] p-5 flex flex-col gap-3">
+    <section className="bg-white border border-ih-border p-5 flex flex-col gap-3">
       <div className="flex items-center justify-between">
-        <h3 className="text-[14px] font-semibold text-[var(--color-primary)]">Spec template</h3>
+        <h3 className="text-[14px] font-semibold text-ih-ink">Spec template</h3>
         {currentTemplate && (
           <a
             href={`/admin/spec-templates/${currentTemplate.id}`}
-            className="font-mono text-[11px] text-[var(--color-muted)] hover:text-[var(--color-accent)]"
+            className="font-mono text-[11px] text-ih-muted hover:text-ih-accent"
           >
             Edit template fields →
           </a>
         )}
       </div>
-      <p className="text-[12px] text-[var(--color-muted)] -mt-1">
+      <p className="text-[12px] text-ih-muted -mt-1">
         Picks the typed schema this product follows. Each field below comes from the template; values
         are saved into product specs automatically.
       </p>
@@ -825,7 +825,7 @@ function TemplateSelector({
         <select
           value={draftId}
           onChange={(e) => setDraftId(e.target.value)}
-          className="h-9 px-2 border border-[var(--color-border)] bg-white text-[13px] flex-1 max-w-[300px]"
+          className="h-9 px-2 border border-ih-border bg-white text-[13px] flex-1 max-w-[300px]"
         >
           <option value="">— None (free-form specs only) —</option>
           {availableTemplates.map((t) => (
@@ -838,7 +838,7 @@ function TemplateSelector({
           type="button"
           onClick={handleApply}
           disabled={pending || draftId === (currentTemplate?.id ?? '')}
-          className="h-9 px-4 bg-[var(--color-primary)] text-white text-[12px] font-medium hover:opacity-90 disabled:opacity-50"
+          className="h-9 px-4 bg-ih-navy text-white text-[12px] font-medium hover:opacity-90 disabled:opacity-50"
         >
           {pending ? 'Switching…' : 'Apply'}
         </button>
@@ -897,33 +897,33 @@ function TemplateSpecForm({
     <form
       ref={formRef}
       action={onSubmit}
-      className="bg-white border border-[var(--color-border)] flex flex-col"
+      className="bg-white border border-ih-border flex flex-col"
     >
       <input type="hidden" name="productId" value={productId} />
 
-      <div className="px-5 py-3 border-b border-[var(--color-border)] flex items-center justify-between">
-        <h3 className="text-[14px] font-semibold text-[var(--color-primary)]">
+      <div className="px-5 py-3 border-b border-ih-border flex items-center justify-between">
+        <h3 className="text-[14px] font-semibold text-ih-ink">
           {template.name} — fields
         </h3>
-        <span className="font-mono text-[11px] text-[var(--color-muted)]">
+        <span className="font-mono text-[11px] text-ih-muted">
           {template.fields.length} field{template.fields.length === 1 ? '' : 's'}
         </span>
       </div>
 
       {template.fields.length === 0 ? (
-        <div className="px-5 py-6 text-[13px] text-[var(--color-muted)]">
+        <div className="px-5 py-6 text-[13px] text-ih-muted">
           This template has no fields yet.{' '}
           <a
             href={`/admin/spec-templates/${template.id}`}
-            className="text-[var(--color-accent)] hover:underline"
+            className="text-ih-accent hover:underline"
           >
             Add fields here →
           </a>
         </div>
       ) : (
         Object.entries(grouped).map(([group, fields]) => (
-          <div key={group} className="border-b border-[var(--color-border)] last:border-b-0">
-            <div className="px-5 py-2.5 bg-[var(--color-surface)] font-mono text-[10px] tracking-[0.1em] uppercase text-[var(--color-muted)]">
+          <div key={group} className="border-b border-ih-border last:border-b-0">
+            <div className="px-5 py-2.5 bg-ih-bg font-mono text-[10px] tracking-[0.1em] uppercase text-ih-muted">
               {group}
             </div>
             <div className="px-5 py-4 grid grid-cols-2 gap-x-5 gap-y-4">
@@ -936,11 +936,11 @@ function TemplateSpecForm({
       )}
 
       {template.fields.length > 0 && (
-        <div className="px-5 py-3 bg-[var(--color-surface)] flex items-center gap-3 border-t border-[var(--color-border)]">
+        <div className="px-5 py-3 bg-ih-bg flex items-center gap-3 border-t border-ih-border">
           <button
             type="submit"
             disabled={pending}
-            className="h-9 px-4 bg-[var(--color-accent)] text-white text-[12px] font-medium hover:opacity-90 disabled:opacity-50"
+            className="h-9 px-4 bg-ih-accent text-white text-[12px] font-medium hover:opacity-90 disabled:opacity-50"
           >
             {pending ? 'Saving…' : 'Save spec values'}
           </button>
@@ -965,7 +965,7 @@ function TemplateFieldInput({
 }) {
   const inputName = `field:${field.id}`
   const baseCls =
-    'h-9 w-full px-3 border border-[var(--color-border)] bg-white text-[13px] focus:outline-none focus:border-[var(--color-primary)]'
+    'h-9 w-full px-3 border border-ih-border bg-white text-[13px] focus:outline-none focus:border-ih-ink'
 
   let control: React.ReactNode
   if (field.dataType === 'select') {
@@ -1014,10 +1014,10 @@ function TemplateFieldInput({
 
   return (
     <label className="flex flex-col gap-1.5">
-      <span className="text-[12px] font-medium text-[var(--color-body)] flex items-center gap-1.5">
+      <span className="text-[12px] font-medium text-ih-ink-2 flex items-center gap-1.5">
         {field.label}
         {field.unit && (
-          <span className="font-mono text-[11px] text-[var(--color-muted)]">({field.unit})</span>
+          <span className="font-mono text-[11px] text-ih-muted">({field.unit})</span>
         )}
         {field.isRequired && <span className="text-[oklch(0.5_0.18_25)]">*</span>}
         {field.isKeyFeature && (
@@ -1026,13 +1026,13 @@ function TemplateFieldInput({
           </span>
         )}
         {field.isQuickSpec && (
-          <span className="px-1 font-mono text-[9px] text-[var(--color-accent)] bg-[oklch(0.96_0.05_240)] rounded-sm">
+          <span className="px-1 font-mono text-[9px] text-ih-accent bg-[oklch(0.96_0.05_240)] rounded-sm">
             QUICK
           </span>
         )}
       </span>
       {control}
-      {field.helpText && <span className="text-[11px] text-[var(--color-caption)]">{field.helpText}</span>}
+      {field.helpText && <span className="text-[11px] text-ih-muted-2">{field.helpText}</span>}
     </label>
   )
 }
@@ -1059,10 +1059,10 @@ function FreeFormSpecsSection({
   return (
     <section className="flex flex-col gap-4">
       <div>
-        <h3 className="text-[14px] font-semibold text-[var(--color-primary)] mb-1">
+        <h3 className="text-[14px] font-semibold text-ih-ink mb-1">
           {templateAttached ? 'Additional specs' : 'Specs'}
         </h3>
-        <p className="text-[12px] text-[var(--color-muted)]">
+        <p className="text-[12px] text-ih-muted">
           {templateAttached
             ? 'Free-form rows that aren\'t in the template above. Useful for one-offs or values orphaned from a previous template switch.'
             : 'Add typed spec rows. Toggle "Filter" to show a row in the quick-spec table on the product page.'}
@@ -1071,8 +1071,8 @@ function FreeFormSpecsSection({
 
       {specs.length > 0 &&
         Object.entries(groups).map(([group, items]) => (
-          <div key={group} className="bg-white border border-[var(--color-border)]">
-            <div className="px-4 py-2.5 border-b border-[var(--color-border)] bg-[var(--color-surface)] font-mono text-[10px] tracking-[0.1em] uppercase text-[var(--color-muted)]">
+          <div key={group} className="bg-white border border-ih-border">
+            <div className="px-4 py-2.5 border-b border-ih-border bg-ih-bg font-mono text-[10px] tracking-[0.1em] uppercase text-ih-muted">
               {group}
             </div>
             {items.map((s) => (
@@ -1124,7 +1124,7 @@ function SpecRow({
     return (
       <form
         action={onUpdate}
-        className="grid grid-cols-[1fr_1fr_1fr_80px_60px_auto_auto] gap-2 px-4 py-2.5 items-end border-t border-[var(--color-border)] bg-[var(--color-surface)]"
+        className="grid grid-cols-[1fr_1fr_1fr_80px_60px_auto_auto] gap-2 px-4 py-2.5 items-end border-t border-ih-border bg-ih-bg"
       >
         <input type="hidden" name="id" value={spec.id} />
         <input type="hidden" name="productId" value={productId} />
@@ -1132,24 +1132,24 @@ function SpecRow({
           name="group"
           defaultValue={spec.group}
           placeholder="Group"
-          className="h-8 px-2 border border-[var(--color-border)] bg-white text-[12px]"
+          className="h-8 px-2 border border-ih-border bg-white text-[12px]"
         />
         <input
           name="label"
           required
           defaultValue={spec.label}
-          className="h-8 px-2 border border-[var(--color-border)] bg-white text-[12px]"
+          className="h-8 px-2 border border-ih-border bg-white text-[12px]"
         />
         <input
           name="value"
           required
           defaultValue={spec.value}
-          className="h-8 px-2 border border-[var(--color-border)] bg-white font-mono text-[12px]"
+          className="h-8 px-2 border border-ih-border bg-white font-mono text-[12px]"
         />
         <input
           name="unit"
           defaultValue={spec.unit ?? ''}
-          className="h-8 px-2 border border-[var(--color-border)] bg-white font-mono text-[12px]"
+          className="h-8 px-2 border border-ih-border bg-white font-mono text-[12px]"
         />
         <label className="flex items-center gap-1 text-[11px]">
           <input type="checkbox" name="isFilterable" defaultChecked={spec.isFilterable} />
@@ -1158,14 +1158,14 @@ function SpecRow({
         <button
           type="submit"
           disabled={pending}
-          className="h-8 px-3 bg-[var(--color-accent)] text-white text-[11px] font-medium hover:opacity-90 disabled:opacity-50"
+          className="h-8 px-3 bg-ih-accent text-white text-[11px] font-medium hover:opacity-90 disabled:opacity-50"
         >
           Save
         </button>
         <button
           type="button"
           onClick={() => setEditing(false)}
-          className="h-8 px-2 text-[11px] text-[var(--color-muted)] hover:text-[var(--color-primary)]"
+          className="h-8 px-2 text-[11px] text-ih-muted hover:text-ih-ink"
         >
           Cancel
         </button>
@@ -1179,16 +1179,16 @@ function SpecRow({
   }
 
   return (
-    <div className="grid grid-cols-[1fr_1fr_80px_60px_120px] gap-3 px-4 py-2.5 items-center text-[13px] border-t border-[var(--color-border)]">
-      <div className="text-[var(--color-body)]">{spec.label}</div>
-      <div className="font-mono text-[var(--color-primary)]">{spec.value}</div>
-      <div className="font-mono text-[11px] text-[var(--color-muted)]">{spec.unit ?? ''}</div>
-      <div className="font-mono text-[10px] text-[var(--color-caption)]">{spec.isFilterable ? 'filter' : ''}</div>
+    <div className="grid grid-cols-[1fr_1fr_80px_60px_120px] gap-3 px-4 py-2.5 items-center text-[13px] border-t border-ih-border">
+      <div className="text-ih-ink-2">{spec.label}</div>
+      <div className="font-mono text-ih-ink">{spec.value}</div>
+      <div className="font-mono text-[11px] text-ih-muted">{spec.unit ?? ''}</div>
+      <div className="font-mono text-[10px] text-ih-muted-2">{spec.isFilterable ? 'filter' : ''}</div>
       <div className="flex gap-3 justify-end">
         <button
           type="button"
           onClick={() => setEditing(true)}
-          className="font-mono text-[10px] text-[var(--color-muted)] hover:text-[var(--color-accent)]"
+          className="font-mono text-[10px] text-ih-muted hover:text-ih-accent"
         >
           Edit
         </button>
@@ -1196,7 +1196,7 @@ function SpecRow({
           type="button"
           onClick={onDelete}
           disabled={pending}
-          className="font-mono text-[10px] text-[var(--color-muted)] hover:text-[oklch(0.5_0.18_25)] disabled:opacity-50"
+          className="font-mono text-[10px] text-ih-muted hover:text-[oklch(0.5_0.18_25)] disabled:opacity-50"
         >
           Remove
         </button>
@@ -1233,7 +1233,7 @@ function AddSpecForm({
     <form
       ref={formRef}
       action={onSubmit}
-      className="bg-white border border-[var(--color-border)] p-4 grid grid-cols-[1fr_1fr_1fr_80px_auto_auto] gap-3 items-end"
+      className="bg-white border border-ih-border p-4 grid grid-cols-[1fr_1fr_1fr_80px_auto_auto] gap-3 items-end"
     >
       <input type="hidden" name="productId" value={productId} />
       <Field label="Group">
@@ -1248,14 +1248,14 @@ function AddSpecForm({
       <Field label="Unit">
         <input name="unit" placeholder="bar" className={inputCls + ' font-mono'} />
       </Field>
-      <label className="flex items-center gap-1.5 h-9 text-[12px] text-[var(--color-body)]">
+      <label className="flex items-center gap-1.5 h-9 text-[12px] text-ih-ink-2">
         <input type="checkbox" name="isFilterable" />
         Filter
       </label>
       <button
         type="submit"
         disabled={pending}
-        className="h-9 px-4 bg-[var(--color-primary)] text-white text-[12px] font-medium hover:opacity-90 disabled:opacity-50"
+        className="h-9 px-4 bg-ih-navy text-white text-[12px] font-medium hover:opacity-90 disabled:opacity-50"
       >
         {pending ? '…' : 'Add row'}
       </button>
@@ -1329,31 +1329,31 @@ function ImagesTab({
         suggestions={blueprintSuggestions}
       />
 
-      <p className="text-[12px] text-[var(--color-muted)]">
+      <p className="text-[12px] text-ih-muted">
         Upload images directly to Supabase Storage. Hero image (first in the list) appears full-size; the rest become thumbnails. JPEG / PNG / WebP / SVG, up to 10MB each.
       </p>
 
       {images.length === 0 ? (
-        <p className="text-[13px] text-[var(--color-muted)]">No images yet — paste a URL below to add the first one.</p>
+        <p className="text-[13px] text-ih-muted">No images yet — paste a URL below to add the first one.</p>
       ) : (
-        <div className="bg-white border border-[var(--color-border)]">
+        <div className="bg-white border border-ih-border">
           {images.map((img, i) => (
             <div
               key={img.id}
               className={`grid grid-cols-[80px_1fr_120px] gap-4 px-4 py-3 items-center text-[13px] ${
-                i > 0 ? 'border-t border-[var(--color-border)]' : ''
+                i > 0 ? 'border-t border-ih-border' : ''
               }`}
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={img.url}
                 alt={img.alt ?? ''}
-                className="w-20 h-20 object-cover bg-[var(--color-surface)] border border-[var(--color-border)]"
+                className="w-20 h-20 object-cover bg-ih-bg border border-ih-border"
               />
               <div className="flex flex-col gap-1 min-w-0">
-                <span className="font-mono text-[11px] text-[var(--color-muted)] truncate">{img.url}</span>
-                <span className="text-[12px] text-[var(--color-body)]">{img.alt ?? <em className="text-[var(--color-caption)]">no alt</em>}</span>
-                <span className="font-mono text-[10px] text-[var(--color-caption)]">Position {i + 1}</span>
+                <span className="font-mono text-[11px] text-ih-muted truncate">{img.url}</span>
+                <span className="text-[12px] text-ih-ink-2">{img.alt ?? <em className="text-ih-muted-2">no alt</em>}</span>
+                <span className="font-mono text-[10px] text-ih-muted-2">Position {i + 1}</span>
               </div>
               <div className="flex flex-col items-end gap-1.5">
                 <div className="flex gap-1">
@@ -1361,7 +1361,7 @@ function ImagesTab({
                     type="button"
                     onClick={() => onReorder(img.id, 'up')}
                     disabled={pending || i === 0}
-                    className="h-7 w-7 border border-[var(--color-border)] text-[12px] disabled:opacity-30"
+                    className="h-7 w-7 border border-ih-border text-[12px] disabled:opacity-30"
                     aria-label="Move up"
                   >
                     ↑
@@ -1370,7 +1370,7 @@ function ImagesTab({
                     type="button"
                     onClick={() => onReorder(img.id, 'down')}
                     disabled={pending || i === images.length - 1}
-                    className="h-7 w-7 border border-[var(--color-border)] text-[12px] disabled:opacity-30"
+                    className="h-7 w-7 border border-ih-border text-[12px] disabled:opacity-30"
                     aria-label="Move down"
                   >
                     ↓
@@ -1380,7 +1380,7 @@ function ImagesTab({
                   type="button"
                   onClick={() => onDelete(img.id)}
                   disabled={pending}
-                  className="font-mono text-[10px] text-[var(--color-muted)] hover:text-[oklch(0.5_0.18_25)] disabled:opacity-50"
+                  className="font-mono text-[10px] text-ih-muted hover:text-[oklch(0.5_0.18_25)] disabled:opacity-50"
                 >
                   Remove
                 </button>
@@ -1394,7 +1394,7 @@ function ImagesTab({
       <form
         ref={formRef}
         action={onAdd}
-        className="bg-white border border-[var(--color-border)] p-4 flex flex-col gap-3"
+        className="bg-white border border-ih-border p-4 flex flex-col gap-3"
         encType="multipart/form-data"
       >
         <input type="hidden" name="productId" value={productId} />
@@ -1404,7 +1404,7 @@ function ImagesTab({
             name="file"
             type="file"
             accept="image/jpeg,image/png,image/webp,image/gif,image/svg+xml"
-            className="text-[13px] file:mr-3 file:h-9 file:px-3 file:border file:border-[var(--color-border)] file:bg-[var(--color-surface)] file:text-[12px] file:font-medium file:cursor-pointer file:hover:bg-[var(--color-deep)]"
+            className="text-[13px] file:mr-3 file:h-9 file:px-3 file:border file:border-ih-border file:bg-ih-bg file:text-[12px] file:font-medium file:cursor-pointer file:hover:bg-ih-surface-2"
           />
         </Field>
         <Field label="Alt text" hint="Describe the image for accessibility (e.g. '3/4 perspective view of the pump')">
@@ -1414,7 +1414,7 @@ function ImagesTab({
           <button
             type="submit"
             disabled={pending}
-            className="h-9 px-4 bg-[var(--color-primary)] text-white text-[12px] font-medium hover:opacity-90 disabled:opacity-50"
+            className="h-9 px-4 bg-ih-navy text-white text-[12px] font-medium hover:opacity-90 disabled:opacity-50"
           >
             {pending ? 'Uploading…' : '↑ Upload image'}
           </button>
@@ -1477,42 +1477,42 @@ function DocumentsTab({
 
   return (
     <div className="flex flex-col gap-6 max-w-4xl">
-      <p className="text-[12px] text-[var(--color-muted)]">
+      <p className="text-[12px] text-ih-muted">
         Datasheets, STEP/IGES CAD, service manuals — anything customers download. Files go to the private <code>product-documents</code> bucket; gated documents are served via short-lived signed URLs. Up to 50MB per file.
       </p>
 
       {documents.length === 0 ? (
-        <p className="text-[13px] text-[var(--color-muted)]">No documents yet.</p>
+        <p className="text-[13px] text-ih-muted">No documents yet.</p>
       ) : (
-        <div className="bg-white border border-[var(--color-border)]">
+        <div className="bg-white border border-ih-border">
           {documents.map((d, i) => (
             <div
               key={d.id}
               className={`grid grid-cols-[120px_1fr_80px_60px_80px] gap-3 px-4 py-3 items-center text-[13px] ${
-                i > 0 ? 'border-t border-[var(--color-border)]' : ''
+                i > 0 ? 'border-t border-ih-border' : ''
               }`}
             >
-              <span className="font-mono text-[10px] tracking-[0.08em] uppercase text-[var(--color-muted)] bg-[var(--color-surface)] px-2 py-1 inline-block w-fit">
+              <span className="font-mono text-[10px] tracking-[0.08em] uppercase text-ih-muted bg-ih-bg px-2 py-1 inline-block w-fit">
                 {DOC_KIND_LABELS[d.kind] ?? d.kind}
               </span>
               <div className="flex flex-col gap-0.5 min-w-0">
-                <span className="text-[var(--color-body)] truncate">{d.title}</span>
+                <span className="text-ih-ink-2 truncate">{d.title}</span>
                 <a
                   href={d.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-mono text-[11px] text-[var(--color-accent)] truncate hover:underline"
+                  className="font-mono text-[11px] text-ih-accent truncate hover:underline"
                 >
                   {d.url}
                 </a>
               </div>
-              <span className="font-mono text-[11px] text-[var(--color-muted)] uppercase">{d.language}</span>
-              <span className="font-mono text-[10px] text-[var(--color-caption)]">{d.isGated ? 'gated' : 'public'}</span>
+              <span className="font-mono text-[11px] text-ih-muted uppercase">{d.language}</span>
+              <span className="font-mono text-[10px] text-ih-muted-2">{d.isGated ? 'gated' : 'public'}</span>
               <button
                 type="button"
                 onClick={() => onDelete(d.id)}
                 disabled={pending}
-                className="font-mono text-[10px] text-[var(--color-muted)] hover:text-[oklch(0.5_0.18_25)] disabled:opacity-50 text-right"
+                className="font-mono text-[10px] text-ih-muted hover:text-[oklch(0.5_0.18_25)] disabled:opacity-50 text-right"
               >
                 Remove
               </button>
@@ -1524,7 +1524,7 @@ function DocumentsTab({
       <form
         ref={formRef}
         action={onAdd}
-        className="bg-white border border-[var(--color-border)] p-4 grid grid-cols-2 gap-3"
+        className="bg-white border border-ih-border p-4 grid grid-cols-2 gap-3"
         encType="multipart/form-data"
       >
         <input type="hidden" name="productId" value={productId} />
@@ -1560,13 +1560,13 @@ function DocumentsTab({
             name="file"
             type="file"
             accept={isDatasheet ? datasheetAccept : undefined}
-            className="text-[13px] file:mr-3 file:h-9 file:px-3 file:border file:border-[var(--color-border)] file:bg-[var(--color-surface)] file:text-[12px] file:font-medium file:cursor-pointer file:hover:bg-[var(--color-deep)]"
+            className="text-[13px] file:mr-3 file:h-9 file:px-3 file:border file:border-ih-border file:bg-ih-bg file:text-[12px] file:font-medium file:cursor-pointer file:hover:bg-ih-surface-2"
           />
         </Field>
         <Field label="Language">
           <input name="language" defaultValue="en" maxLength={8} className={inputCls + ' font-mono'} />
         </Field>
-        <label className="col-span-2 flex items-center gap-1.5 text-[12px] text-[var(--color-body)]">
+        <label className="col-span-2 flex items-center gap-1.5 text-[12px] text-ih-ink-2">
           <input type="checkbox" name="isGated" />
           Gate behind sign-in (only registered users can download)
         </label>
@@ -1574,7 +1574,7 @@ function DocumentsTab({
           <button
             type="submit"
             disabled={pending}
-            className="h-9 px-4 bg-[var(--color-primary)] text-white text-[12px] font-medium hover:opacity-90 disabled:opacity-50"
+            className="h-9 px-4 bg-ih-navy text-white text-[12px] font-medium hover:opacity-90 disabled:opacity-50"
           >
             {pending ? 'Uploading…' : '↑ Upload document'}
           </button>
@@ -1599,10 +1599,10 @@ function CrossRefsTab({
   return (
     <div className="flex flex-col gap-6 max-w-4xl">
       {crossRefs.length === 0 ? (
-        <p className="text-[13px] text-[var(--color-muted)]">No cross-references yet.</p>
+        <p className="text-[13px] text-ih-muted">No cross-references yet.</p>
       ) : (
-        <div className="bg-white border border-[var(--color-border)]">
-          <div className="grid grid-cols-[1fr_1fr_140px_120px] gap-3 px-4 py-2.5 border-b border-[var(--color-border)] bg-[var(--color-surface)] font-mono text-[10px] tracking-[0.1em] uppercase text-[var(--color-muted)]">
+        <div className="bg-white border border-ih-border">
+          <div className="grid grid-cols-[1fr_1fr_140px_120px] gap-3 px-4 py-2.5 border-b border-ih-border bg-ih-bg font-mono text-[10px] tracking-[0.1em] uppercase text-ih-muted">
             <div>Competitor brand</div>
             <div>MPN</div>
             <div>Compatibility</div>
@@ -1656,7 +1656,7 @@ function CrossRefRow({
     return (
       <form
         action={onUpdate}
-        className="grid grid-cols-[1fr_1fr_140px_140px] gap-2 px-4 py-2.5 items-end border-t border-[var(--color-border)] bg-[var(--color-surface)]"
+        className="grid grid-cols-[1fr_1fr_140px_140px] gap-2 px-4 py-2.5 items-end border-t border-ih-border bg-ih-bg"
       >
         <input type="hidden" name="id" value={cr.id} />
         <input type="hidden" name="productId" value={productId} />
@@ -1664,18 +1664,18 @@ function CrossRefRow({
           name="competitorBrand"
           required
           defaultValue={cr.competitorBrand}
-          className="h-8 px-2 border border-[var(--color-border)] bg-white text-[12px]"
+          className="h-8 px-2 border border-ih-border bg-white text-[12px]"
         />
         <input
           name="competitorMpn"
           required
           defaultValue={cr.competitorMpn}
-          className="h-8 px-2 border border-[var(--color-border)] bg-white font-mono text-[12px]"
+          className="h-8 px-2 border border-ih-border bg-white font-mono text-[12px]"
         />
         <select
           name="compatibility"
           defaultValue={cr.compatibility}
-          className="h-8 px-2 border border-[var(--color-border)] bg-white text-[12px]"
+          className="h-8 px-2 border border-ih-border bg-white text-[12px]"
         >
           <option value="direct">Direct</option>
           <option value="compatible">Compatible</option>
@@ -1685,14 +1685,14 @@ function CrossRefRow({
           <button
             type="submit"
             disabled={pending}
-            className="h-8 px-3 bg-[var(--color-accent)] text-white text-[11px] font-medium hover:opacity-90 disabled:opacity-50"
+            className="h-8 px-3 bg-ih-accent text-white text-[11px] font-medium hover:opacity-90 disabled:opacity-50"
           >
             Save
           </button>
           <button
             type="button"
             onClick={() => setEditing(false)}
-            className="h-8 px-2 text-[11px] text-[var(--color-muted)] hover:text-[var(--color-primary)]"
+            className="h-8 px-2 text-[11px] text-ih-muted hover:text-ih-ink"
           >
             Cancel
           </button>
@@ -1707,17 +1707,17 @@ function CrossRefRow({
   }
 
   return (
-    <div className="grid grid-cols-[1fr_1fr_140px_120px] gap-3 px-4 py-2.5 items-center text-[13px] border-t border-[var(--color-border)]">
-      <div className="text-[var(--color-body)]">{cr.competitorBrand}</div>
-      <div className="font-mono text-[var(--color-primary)]">{cr.competitorMpn}</div>
-      <div className="font-mono text-[11px] text-[var(--color-muted)] capitalize">
+    <div className="grid grid-cols-[1fr_1fr_140px_120px] gap-3 px-4 py-2.5 items-center text-[13px] border-t border-ih-border">
+      <div className="text-ih-ink-2">{cr.competitorBrand}</div>
+      <div className="font-mono text-ih-ink">{cr.competitorMpn}</div>
+      <div className="font-mono text-[11px] text-ih-muted capitalize">
         {cr.compatibility.replace(/_/g, ' ')}
       </div>
       <div className="flex gap-3 justify-end">
         <button
           type="button"
           onClick={() => setEditing(true)}
-          className="font-mono text-[10px] text-[var(--color-muted)] hover:text-[var(--color-accent)]"
+          className="font-mono text-[10px] text-ih-muted hover:text-ih-accent"
         >
           Edit
         </button>
@@ -1725,7 +1725,7 @@ function CrossRefRow({
           type="button"
           onClick={onDelete}
           disabled={pending}
-          className="font-mono text-[10px] text-[var(--color-muted)] hover:text-[oklch(0.5_0.18_25)] disabled:opacity-50"
+          className="font-mono text-[10px] text-ih-muted hover:text-[oklch(0.5_0.18_25)] disabled:opacity-50"
         >
           Remove
         </button>
@@ -1762,7 +1762,7 @@ function AddCrossRefForm({
     <form
       ref={formRef}
       action={onSubmit}
-      className="bg-white border border-[var(--color-border)] p-4 grid grid-cols-[1fr_1fr_140px_auto] gap-3 items-end"
+      className="bg-white border border-ih-border p-4 grid grid-cols-[1fr_1fr_140px_auto] gap-3 items-end"
     >
       <input type="hidden" name="productId" value={productId} />
       <Field label="Competitor brand *">
@@ -1781,7 +1781,7 @@ function AddCrossRefForm({
       <button
         type="submit"
         disabled={pending}
-        className="h-9 px-4 bg-[var(--color-primary)] text-white text-[12px] font-medium hover:opacity-90 disabled:opacity-50"
+        className="h-9 px-4 bg-ih-navy text-white text-[12px] font-medium hover:opacity-90 disabled:opacity-50"
       >
         {pending ? '…' : 'Add'}
       </button>
@@ -1807,13 +1807,13 @@ function FaqsTab({
 }) {
   return (
     <div className="flex flex-col gap-6 max-w-4xl">
-      <p className="text-[12px] text-[var(--color-muted)]">
+      <p className="text-[12px] text-ih-muted">
         Author frequently-asked questions for this product. They render in order on the storefront&apos;s FAQ tab as collapsible Q+A pairs.
       </p>
       {faqs.length === 0 ? (
-        <p className="text-[13px] text-[var(--color-muted)]">No FAQs yet — add the first one below.</p>
+        <p className="text-[13px] text-ih-muted">No FAQs yet — add the first one below.</p>
       ) : (
-        <div className="bg-white border border-[var(--color-border)] flex flex-col">
+        <div className="bg-white border border-ih-border flex flex-col">
           {faqs.map((f, i) => (
             <FaqRow
               key={f.id}
@@ -1881,7 +1881,7 @@ function FaqRow({
     return (
       <form
         action={onUpdate}
-        className="px-4 py-3 flex flex-col gap-2 border-t border-[var(--color-border)] first:border-t-0 bg-[var(--color-surface)]"
+        className="px-4 py-3 flex flex-col gap-2 border-t border-ih-border first:border-t-0 bg-ih-bg"
       >
         <input type="hidden" name="id" value={faq.id} />
         <input type="hidden" name="productId" value={productId} />
@@ -1901,14 +1901,14 @@ function FaqRow({
           <button
             type="submit"
             disabled={pending}
-            className="h-8 px-3 bg-[var(--color-accent)] text-white text-[11px] font-medium hover:opacity-90 disabled:opacity-50"
+            className="h-8 px-3 bg-ih-accent text-white text-[11px] font-medium hover:opacity-90 disabled:opacity-50"
           >
             {pending ? 'Saving…' : 'Save'}
           </button>
           <button
             type="button"
             onClick={() => setEditing(false)}
-            className="h-8 px-2 text-[11px] text-[var(--color-muted)] hover:text-[var(--color-primary)]"
+            className="h-8 px-2 text-[11px] text-ih-muted hover:text-ih-ink"
           >
             Cancel
           </button>
@@ -1923,13 +1923,13 @@ function FaqRow({
   }
 
   return (
-    <div className="px-4 py-3 flex gap-3 items-start border-t border-[var(--color-border)] first:border-t-0">
+    <div className="px-4 py-3 flex gap-3 items-start border-t border-ih-border first:border-t-0">
       <div className="flex flex-col gap-0.5 pt-0.5">
         <button
           type="button"
           onClick={() => onReorder('up')}
           disabled={isFirst || pending}
-          className="font-mono text-[12px] text-[var(--color-muted)] hover:text-[var(--color-primary)] disabled:opacity-30 disabled:cursor-not-allowed"
+          className="font-mono text-[12px] text-ih-muted hover:text-ih-ink disabled:opacity-30 disabled:cursor-not-allowed"
           title="Move up"
         >
           ↑
@@ -1938,15 +1938,15 @@ function FaqRow({
           type="button"
           onClick={() => onReorder('down')}
           disabled={isLast || pending}
-          className="font-mono text-[12px] text-[var(--color-muted)] hover:text-[var(--color-primary)] disabled:opacity-30 disabled:cursor-not-allowed"
+          className="font-mono text-[12px] text-ih-muted hover:text-ih-ink disabled:opacity-30 disabled:cursor-not-allowed"
           title="Move down"
         >
           ↓
         </button>
       </div>
       <div className="flex-1 min-w-0 flex flex-col gap-1">
-        <div className="text-[13px] font-medium text-[var(--color-primary)]">{faq.question}</div>
-        <div className="text-[12px] text-[var(--color-body)] whitespace-pre-wrap leading-[1.5]">
+        <div className="text-[13px] font-medium text-ih-ink">{faq.question}</div>
+        <div className="text-[12px] text-ih-ink-2 whitespace-pre-wrap leading-[1.5]">
           {faq.answer}
         </div>
       </div>
@@ -1954,7 +1954,7 @@ function FaqRow({
         <button
           type="button"
           onClick={() => setEditing(true)}
-          className="font-mono text-[10px] text-[var(--color-muted)] hover:text-[var(--color-accent)]"
+          className="font-mono text-[10px] text-ih-muted hover:text-ih-accent"
         >
           Edit
         </button>
@@ -1962,7 +1962,7 @@ function FaqRow({
           type="button"
           onClick={onDelete}
           disabled={pending}
-          className="font-mono text-[10px] text-[var(--color-muted)] hover:text-[oklch(0.5_0.18_25)] disabled:opacity-50"
+          className="font-mono text-[10px] text-ih-muted hover:text-[oklch(0.5_0.18_25)] disabled:opacity-50"
         >
           Remove
         </button>
@@ -1999,7 +1999,7 @@ function AddFaqForm({
     <form
       ref={formRef}
       action={onSubmit}
-      className="bg-white border border-[var(--color-border)] p-4 flex flex-col gap-3"
+      className="bg-white border border-ih-border p-4 flex flex-col gap-3"
     >
       <input type="hidden" name="productId" value={productId} />
       <Field label="Question *">
@@ -2023,7 +2023,7 @@ function AddFaqForm({
         <button
           type="submit"
           disabled={pending}
-          className="h-9 px-4 bg-[var(--color-primary)] text-white text-[12px] font-medium hover:opacity-90 disabled:opacity-50 self-start"
+          className="h-9 px-4 bg-ih-navy text-white text-[12px] font-medium hover:opacity-90 disabled:opacity-50 self-start"
         >
           {pending ? 'Adding…' : '+ Add FAQ'}
         </button>
@@ -2084,11 +2084,11 @@ function rootOf(url: string): string {
 // ── Shared primitives ───────────────────────────────────────────────────────
 
 const inputCls =
-  'h-9 w-full px-3 border border-[var(--color-border)] bg-white text-[13px] focus:outline-none focus:border-[var(--color-accent)]'
+  'h-9 w-full px-3 border border-ih-border bg-white text-[13px] focus:outline-none focus:border-ih-accent'
 const textareaCls =
-  'w-full px-3 py-2 border border-[var(--color-border)] bg-white text-[13px] resize-y focus:outline-none focus:border-[var(--color-accent)]'
+  'w-full px-3 py-2 border border-ih-border bg-white text-[13px] resize-y focus:outline-none focus:border-ih-accent'
 const selectCls =
-  'h-9 w-full px-2 border border-[var(--color-border)] bg-white text-[13px] focus:outline-none focus:border-[var(--color-accent)]'
+  'h-9 w-full px-2 border border-ih-border bg-white text-[13px] focus:outline-none focus:border-ih-accent'
 
 function Field({
   label,
@@ -2103,14 +2103,14 @@ function Field({
 }) {
   return (
     <label className="flex flex-col gap-1.5">
-      <span className="text-[12px] font-medium text-[var(--color-body)]">{label}</span>
+      <span className="text-[12px] font-medium text-ih-ink-2">{label}</span>
       {children}
       {error ? (
         <span className="text-[11px] text-[oklch(0.5_0.18_25)]" role="alert">
           {error}
         </span>
       ) : (
-        hint && <span className="text-[11px] text-[var(--color-caption)]">{hint}</span>
+        hint && <span className="text-[11px] text-ih-muted-2">{hint}</span>
       )}
     </label>
   )
@@ -2119,7 +2119,7 @@ function Field({
 function Section({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <div className="flex flex-col gap-3">
-      <span className="font-mono text-[10px] tracking-[0.12em] uppercase text-[var(--color-muted)]">{title}</span>
+      <span className="font-mono text-[10px] tracking-[0.12em] uppercase text-ih-muted">{title}</span>
       {children}
     </div>
   )
@@ -2142,7 +2142,7 @@ function SaveButton({ pending, children }: { pending: boolean; children: React.R
       <button
         type="submit"
         disabled={pending}
-        className="h-10 px-5 bg-[var(--color-accent)] text-white text-[13px] font-medium hover:opacity-90 disabled:opacity-50"
+        className="h-10 px-5 bg-ih-accent text-white text-[13px] font-medium hover:opacity-90 disabled:opacity-50"
       >
         {pending ? 'Saving…' : children}
       </button>
@@ -2155,7 +2155,7 @@ function ToolbarBtn({ onClick, children }: { onClick: () => void; children: Reac
     <button
       type="button"
       onClick={onClick}
-      className="h-7 px-2 text-[12px] text-[var(--color-body)] hover:bg-[var(--color-deep)] border border-transparent hover:border-[var(--color-border)] transition-colors"
+      className="h-7 px-2 text-[12px] text-ih-ink-2 hover:bg-ih-surface-2 border border-transparent hover:border-ih-border transition-colors"
     >
       {children}
     </button>
@@ -2163,7 +2163,7 @@ function ToolbarBtn({ onClick, children }: { onClick: () => void; children: Reac
 }
 
 function Sep() {
-  return <span className="w-px bg-[var(--color-border)] mx-1 h-5" />
+  return <span className="w-px bg-ih-border mx-1 h-5" />
 }
 
 function DeleteButton({ id }: { id: string }) {
@@ -2182,7 +2182,7 @@ function DeleteButton({ id }: { id: string }) {
             if (res && !res.success) setError(res.message)
           })
         }}
-        className="h-9 px-3 border border-[var(--color-border)] text-[12px] text-[var(--color-muted)] hover:border-[oklch(0.5_0.18_25)] hover:text-[oklch(0.5_0.18_25)] disabled:opacity-50"
+        className="h-9 px-3 border border-ih-border text-[12px] text-ih-muted hover:border-[oklch(0.5_0.18_25)] hover:text-[oklch(0.5_0.18_25)] disabled:opacity-50"
       >
         {pending ? 'Deleting…' : 'Delete'}
       </button>

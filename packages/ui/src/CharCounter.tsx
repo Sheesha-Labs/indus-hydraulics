@@ -15,7 +15,7 @@ export interface CharCounterProps {
 export function CharCounter({ value, min, max, className }: CharCounterProps) {
   const len = value.length
   const tone = len === 0
-    ? 'text-[var(--color-muted)]'
+    ? 'text-ih-muted'
     : len < min
       ? 'text-[oklch(0.5_0.14_70)]'
       : len > max

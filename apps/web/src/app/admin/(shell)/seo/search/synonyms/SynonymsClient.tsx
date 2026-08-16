@@ -75,19 +75,19 @@ export default function SynonymsClient({ groups: initialGroups }: Props) {
 
   return (
     <div className="max-w-[860px]">
-      <div className="mb-6 max-w-[640px] text-[13px] text-[var(--color-muted)]">
+      <div className="mb-6 max-w-[640px] text-[13px] text-ih-muted">
         Synonyms are bidirectional within a group. When a shopper searches for any term in a
         group, the FTS query expands to include all of the group&apos;s terms.
       </div>
 
       {/* Add new group */}
-      <details className="mb-6 border border-[var(--color-border)] bg-[var(--color-elevated)] p-4">
-        <summary className="font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] cursor-pointer">
+      <details className="mb-6 border border-ih-border bg-ih-surface p-4">
+        <summary className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted cursor-pointer">
           Add synonym group
         </summary>
         <form action={handleSave} className="mt-3 grid grid-cols-[200px_1fr_auto] gap-3 items-end">
           <div>
-            <label className="block font-mono text-[10px] uppercase text-[var(--color-muted)] mb-1">
+            <label className="block font-mono text-[10px] uppercase text-ih-muted mb-1">
               Group name
             </label>
             <input
@@ -95,11 +95,11 @@ export default function SynonymsClient({ groups: initialGroups }: Props) {
               type="text"
               required
               placeholder="o-ring"
-              className="w-full h-9 px-3 border border-[var(--color-border)] bg-[var(--color-surface)] text-[13px] focus:outline-none focus:border-[var(--color-accent)]"
+              className="w-full h-9 px-3 border border-ih-border bg-ih-bg text-[13px] focus:outline-none focus:border-ih-accent"
             />
           </div>
           <div>
-            <label className="block font-mono text-[10px] uppercase text-[var(--color-muted)] mb-1">
+            <label className="block font-mono text-[10px] uppercase text-ih-muted mb-1">
               Terms (comma- or newline-separated)
             </label>
             <input
@@ -107,13 +107,13 @@ export default function SynonymsClient({ groups: initialGroups }: Props) {
               type="text"
               required
               placeholder="o-ring, oring, o ring"
-              className="w-full h-9 px-3 border border-[var(--color-border)] bg-[var(--color-surface)] text-[13px] focus:outline-none focus:border-[var(--color-accent)]"
+              className="w-full h-9 px-3 border border-ih-border bg-ih-bg text-[13px] focus:outline-none focus:border-ih-accent"
             />
           </div>
           <button
             type="submit"
             disabled={pending}
-            className="h-9 px-4 bg-[var(--color-accent)] text-white font-mono text-[12px] hover:opacity-90 disabled:opacity-50"
+            className="h-9 px-4 bg-ih-accent text-white font-mono text-[12px] hover:opacity-90 disabled:opacity-50"
           >
             Add
           </button>
@@ -127,14 +127,14 @@ export default function SynonymsClient({ groups: initialGroups }: Props) {
       )}
 
       {groups.length === 0 ? (
-        <div className="py-16 text-center border border-dashed border-[var(--color-border)]">
-          <p className="text-[var(--color-muted)] text-[13px]">No synonym groups yet.</p>
+        <div className="py-16 text-center border border-dashed border-ih-border">
+          <p className="text-ih-muted text-[13px]">No synonym groups yet.</p>
         </div>
       ) : (
-        <div className="border border-[var(--color-border)] overflow-hidden">
+        <div className="border border-ih-border overflow-hidden">
           <table className="w-full text-[13px]">
             <thead>
-              <tr className="border-b border-[var(--color-border)] bg-[var(--color-deep)]">
+              <tr className="border-b border-ih-border bg-ih-surface-2">
                 <Th>Group</Th>
                 <Th>Terms</Th>
                 <Th>Status</Th>
@@ -145,9 +145,9 @@ export default function SynonymsClient({ groups: initialGroups }: Props) {
               {groups.map((g) => (
                 <tr
                   key={g.group}
-                  className="border-b border-[var(--color-border)] last:border-0 align-top hover:bg-[var(--color-deep)]"
+                  className="border-b border-ih-border last:border-0 align-top hover:bg-ih-surface-2"
                 >
-                  <td className="px-3 py-3 font-mono text-[12px] text-[var(--color-body)] whitespace-nowrap">
+                  <td className="px-3 py-3 font-mono text-[12px] text-ih-ink-2 whitespace-nowrap">
                     {g.group}
                   </td>
                   <td className="px-3 py-3">
@@ -158,19 +158,19 @@ export default function SynonymsClient({ groups: initialGroups }: Props) {
                           name="terms"
                           type="text"
                           defaultValue={g.terms.join(', ')}
-                          className="flex-1 h-8 px-2 border border-[var(--color-border)] bg-[var(--color-surface)] text-[12px] focus:outline-none focus:border-[var(--color-accent)]"
+                          className="flex-1 h-8 px-2 border border-ih-border bg-ih-bg text-[12px] focus:outline-none focus:border-ih-accent"
                         />
                         <button
                           type="submit"
                           disabled={pending}
-                          className="h-8 px-3 bg-[var(--color-accent)] text-white font-mono text-[11px] disabled:opacity-50"
+                          className="h-8 px-3 bg-ih-accent text-white font-mono text-[11px] disabled:opacity-50"
                         >
                           Save
                         </button>
                         <button
                           type="button"
                           onClick={() => setEditing(null)}
-                          className="h-8 px-3 border border-[var(--color-border)] font-mono text-[11px]"
+                          className="h-8 px-3 border border-ih-border font-mono text-[11px]"
                         >
                           Cancel
                         </button>
@@ -180,7 +180,7 @@ export default function SynonymsClient({ groups: initialGroups }: Props) {
                         {g.terms.map((t) => (
                           <span
                             key={t}
-                            className="px-1.5 py-0.5 font-mono text-[11px] bg-[var(--color-deep)] border border-[var(--color-border)]"
+                            className="px-1.5 py-0.5 font-mono text-[11px] bg-ih-surface-2 border border-ih-border"
                           >
                             {t}
                           </span>
@@ -196,7 +196,7 @@ export default function SynonymsClient({ groups: initialGroups }: Props) {
                       className={`font-mono text-[11px] px-2 py-0.5 ${
                         g.isActive
                           ? 'text-[oklch(0.4_0.14_145)] bg-[oklch(0.94_0.06_145)]'
-                          : 'text-[var(--color-muted)] bg-[var(--color-deep)]'
+                          : 'text-ih-muted bg-ih-surface-2'
                       }`}
                     >
                       {g.isActive ? 'Active' : 'Disabled'}
@@ -207,7 +207,7 @@ export default function SynonymsClient({ groups: initialGroups }: Props) {
                       <button
                         type="button"
                         onClick={() => setEditing(g.group)}
-                        className="font-mono text-[11px] text-[var(--color-muted)] hover:text-[var(--color-primary)] mr-3"
+                        className="font-mono text-[11px] text-ih-muted hover:text-ih-ink mr-3"
                       >
                         Edit
                       </button>
@@ -216,7 +216,7 @@ export default function SynonymsClient({ groups: initialGroups }: Props) {
                       type="button"
                       onClick={() => handleDelete(g.group)}
                       disabled={pending}
-                      className="font-mono text-[11px] text-[var(--color-danger)] hover:underline disabled:opacity-50"
+                      className="font-mono text-[11px] text-ih-danger hover:underline disabled:opacity-50"
                     >
                       Delete
                     </button>
@@ -233,7 +233,7 @@ export default function SynonymsClient({ groups: initialGroups }: Props) {
 
 function Th({ children }: { children: React.ReactNode }) {
   return (
-    <th className="text-left px-3 py-2.5 font-mono text-[10px] uppercase tracking-[0.1em] text-[var(--color-muted)]">
+    <th className="text-left px-3 py-2.5 font-mono text-[10px] uppercase tracking-[0.1em] text-ih-muted">
       {children}
     </th>
   )

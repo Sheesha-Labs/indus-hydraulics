@@ -63,14 +63,14 @@ export default function RedirectsManager({ redirects: initialRedirects }: Props)
     <div className="max-w-[960px]">
       <form
         action={handleAdd}
-        className="border border-[var(--color-border)] bg-[var(--color-elevated)] p-4 mb-6"
+        className="border border-ih-border bg-ih-surface p-4 mb-6"
       >
-        <p className="font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-3">
+        <p className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-3">
           Add redirect
         </p>
         <div className="flex gap-3 items-end">
           <div className="flex-1">
-            <label className="block font-mono text-[10px] uppercase text-[var(--color-muted)] mb-1">
+            <label className="block font-mono text-[10px] uppercase text-ih-muted mb-1">
               From path
             </label>
             <input
@@ -78,11 +78,11 @@ export default function RedirectsManager({ redirects: initialRedirects }: Props)
               type="text"
               required
               placeholder="/old-page"
-              className="w-full h-9 px-3 border border-[var(--color-border)] bg-[var(--color-surface)] text-[13px] focus:outline-none focus:border-[var(--color-accent)]"
+              className="w-full h-9 px-3 border border-ih-border bg-ih-bg text-[13px] focus:outline-none focus:border-ih-accent"
             />
           </div>
           <div className="flex-1">
-            <label className="block font-mono text-[10px] uppercase text-[var(--color-muted)] mb-1">
+            <label className="block font-mono text-[10px] uppercase text-ih-muted mb-1">
               To path
             </label>
             <input
@@ -90,16 +90,16 @@ export default function RedirectsManager({ redirects: initialRedirects }: Props)
               type="text"
               required
               placeholder="/new-page"
-              className="w-full h-9 px-3 border border-[var(--color-border)] bg-[var(--color-surface)] text-[13px] focus:outline-none focus:border-[var(--color-accent)]"
+              className="w-full h-9 px-3 border border-ih-border bg-ih-bg text-[13px] focus:outline-none focus:border-ih-accent"
             />
           </div>
           <div className="w-24">
-            <label className="block font-mono text-[10px] uppercase text-[var(--color-muted)] mb-1">
+            <label className="block font-mono text-[10px] uppercase text-ih-muted mb-1">
               Code
             </label>
             <select
               name="statusCode"
-              className="w-full h-9 px-2 border border-[var(--color-border)] bg-[var(--color-surface)] text-[13px] focus:outline-none"
+              className="w-full h-9 px-2 border border-ih-border bg-ih-bg text-[13px] focus:outline-none"
             >
               <option value="301">301</option>
               <option value="302">302</option>
@@ -110,7 +110,7 @@ export default function RedirectsManager({ redirects: initialRedirects }: Props)
           <button
             type="submit"
             disabled={isPending}
-            className="h-9 px-4 bg-[var(--color-accent)] text-white font-mono text-[12px] hover:opacity-90 disabled:opacity-50 shrink-0"
+            className="h-9 px-4 bg-ih-accent text-white font-mono text-[12px] hover:opacity-90 disabled:opacity-50 shrink-0"
           >
             Add
           </button>
@@ -123,14 +123,14 @@ export default function RedirectsManager({ redirects: initialRedirects }: Props)
       </form>
 
       {redirects.length === 0 ? (
-        <div className="py-16 text-center border border-dashed border-[var(--color-border)]">
-          <p className="text-[var(--color-muted)] text-[13px]">No redirects configured.</p>
+        <div className="py-16 text-center border border-dashed border-ih-border">
+          <p className="text-ih-muted text-[13px]">No redirects configured.</p>
         </div>
       ) : (
-        <div className="border border-[var(--color-border)] overflow-hidden">
+        <div className="border border-ih-border overflow-hidden">
           <table className="w-full text-[13px]">
             <thead>
-              <tr className="border-b border-[var(--color-border)] bg-[var(--color-deep)]">
+              <tr className="border-b border-ih-border bg-ih-surface-2">
                 <Th>From</Th>
                 <Th>To</Th>
                 <Th>Code</Th>
@@ -143,24 +143,24 @@ export default function RedirectsManager({ redirects: initialRedirects }: Props)
               {redirects.map((r) => (
                 <tr
                   key={r.id}
-                  className="border-b border-[var(--color-border)] last:border-0 hover:bg-[var(--color-deep)]"
+                  className="border-b border-ih-border last:border-0 hover:bg-ih-surface-2"
                 >
-                  <td className="px-4 py-3 font-mono text-[12px] text-[var(--color-muted)]">
+                  <td className="px-4 py-3 font-mono text-[12px] text-ih-muted">
                     {r.fromPath}
                   </td>
-                  <td className="px-4 py-3 text-[var(--color-body)]">{r.toPath}</td>
+                  <td className="px-4 py-3 text-ih-ink-2">{r.toPath}</td>
                   <td className="px-4 py-3 font-mono text-[12px]">{r.statusCode}</td>
                   <td className="px-4 py-3 font-mono text-[12px] tabular-nums">
                     {r.hits ?? 0}
                   </td>
-                  <td className="px-4 py-3 font-mono text-[11px] text-[var(--color-muted)]">
+                  <td className="px-4 py-3 font-mono text-[11px] text-ih-muted">
                     {r.lastHitAt ? new Date(r.lastHitAt).toLocaleDateString() : '—'}
                   </td>
                   <td className="px-4 py-3 text-right">
                     <button
                       onClick={() => handleDelete(r.id)}
                       disabled={isPending}
-                      className="font-mono text-[11px] text-[var(--color-danger)] hover:underline disabled:opacity-50"
+                      className="font-mono text-[11px] text-ih-danger hover:underline disabled:opacity-50"
                     >
                       Delete
                     </button>
@@ -177,7 +177,7 @@ export default function RedirectsManager({ redirects: initialRedirects }: Props)
 
 function Th({ children }: { children: React.ReactNode }) {
   return (
-    <th className="text-left px-4 py-2.5 font-mono text-[10px] uppercase tracking-[0.1em] text-[var(--color-muted)]">
+    <th className="text-left px-4 py-2.5 font-mono text-[10px] uppercase tracking-[0.1em] text-ih-muted">
       {children}
     </th>
   )

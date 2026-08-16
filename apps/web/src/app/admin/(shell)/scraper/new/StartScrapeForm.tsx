@@ -44,7 +44,7 @@ export default function StartScrapeForm() {
           name="sourceUrl"
           type="url"
           placeholder="https://competitor.example/sitemap.xml"
-          className="h-9 w-full px-3 border border-[var(--color-border)] bg-[var(--color-surface)] text-[13px] focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)]"
+          className="h-9 w-full px-3 border border-ih-border bg-ih-bg text-[13px] focus:outline-none focus:ring-2 focus:ring-ih-accent"
         />
       </Field>
 
@@ -57,7 +57,7 @@ export default function StartScrapeForm() {
           name="urlListText"
           rows={6}
           placeholder={'https://competitor.example/products/a10vso-71\nhttps://competitor.example/products/a4vg-125\n…'}
-          className="w-full px-3 py-2 border border-[var(--color-border)] bg-[var(--color-surface)] text-[13px] font-mono focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)]"
+          className="w-full px-3 py-2 border border-ih-border bg-ih-bg text-[13px] font-mono focus:outline-none focus:ring-2 focus:ring-ih-accent"
         />
       </Field>
 
@@ -65,7 +65,7 @@ export default function StartScrapeForm() {
         <input
           name="notes"
           maxLength={500}
-          className="h-9 w-full px-3 border border-[var(--color-border)] bg-[var(--color-surface)] text-[13px]"
+          className="h-9 w-full px-3 border border-ih-border bg-ih-bg text-[13px]"
           placeholder="e.g. 'New competitor, axial-piston focus'"
         />
       </Field>
@@ -83,11 +83,11 @@ export default function StartScrapeForm() {
         <button
           type="submit"
           disabled={pending}
-          className="h-9 px-4 bg-[var(--color-accent)] text-white font-mono text-[12px] tracking-wider uppercase disabled:opacity-50"
+          className="h-9 px-4 bg-ih-accent text-white font-mono text-[12px] tracking-wider uppercase disabled:opacity-50"
         >
           {pending ? 'Starting…' : 'Start crawl'}
         </button>
-        <p className="text-[11px] text-[var(--color-muted)]">
+        <p className="text-[11px] text-ih-muted">
           Discovery runs in the background — you&rsquo;ll land on the job page and watch progress live.
         </p>
       </div>
@@ -108,14 +108,14 @@ function Field({
 }) {
   return (
     <label className="flex flex-col gap-1.5">
-      <span className="text-[12px] font-mono tracking-wider uppercase text-[var(--color-muted)]">
+      <span className="text-[12px] font-mono tracking-wider uppercase text-ih-muted">
         {label}
       </span>
       {children}
       {error ? (
         <span className="text-[12px] text-[oklch(0.5_0.18_25)]">{error}</span>
       ) : hint ? (
-        <span className="text-[11px] text-[var(--color-muted)]">{hint}</span>
+        <span className="text-[11px] text-ih-muted">{hint}</span>
       ) : null}
     </label>
   )

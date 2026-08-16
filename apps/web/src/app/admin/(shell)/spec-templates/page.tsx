@@ -31,7 +31,7 @@ export default async function SpecTemplatesPage({ params }: Props) {
       <div className="flex items-center justify-between mb-6">
         <div>
           <h1 className="text-[24px] font-semibold tracking-tight">Spec templates</h1>
-          <p className="text-[13px] text-[var(--color-muted)] mt-1">
+          <p className="text-[13px] text-ih-muted mt-1">
             {templates.length} {templates.length === 1 ? 'template' : 'templates'} — reusable typed
             schemas for product specs &amp; key features.
           </p>

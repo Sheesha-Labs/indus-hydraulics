@@ -28,7 +28,7 @@ export function SerpPreview({
   return (
     <div
       className={cn(
-        'border border-[var(--color-border)] bg-white p-4 max-w-[600px]',
+        'border border-ih-border bg-white p-4 max-w-[600px]',
         className,
       )}
     >

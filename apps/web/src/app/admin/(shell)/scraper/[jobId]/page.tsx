@@ -40,11 +40,11 @@ const STATUS_LABELS = {
 } as const
 
 const STATUS_STYLES: Record<keyof typeof STATUS_LABELS, string> = {
-  queued: 'text-[var(--color-muted)] bg-[var(--color-deep)]',
+  queued: 'text-ih-muted bg-ih-surface-2',
   running: 'text-[oklch(0.4_0.14_85)] bg-[oklch(0.94_0.06_85)]',
   completed: 'text-[oklch(0.4_0.14_145)] bg-[oklch(0.94_0.06_145)]',
   failed: 'text-[oklch(0.4_0.18_25)] bg-[oklch(0.94_0.06_25)]',
-  cancelled: 'text-[var(--color-muted)] bg-[var(--color-deep)]',
+  cancelled: 'text-ih-muted bg-ih-surface-2',
 }
 
 const SELECTION_VALUES = ['pending', 'selected', 'skipped', 'ingested', 'ingest_failed'] as const
@@ -254,23 +254,23 @@ export default async function ScraperJobDetailPage({ params, searchParams }: Pro
       <header className="mb-6">
         <Link
           href="/admin/scraper"
-          className="text-[11px] font-mono uppercase tracking-wider text-[var(--color-muted)] hover:text-[var(--color-primary)]"
+          className="text-[11px] font-mono uppercase tracking-wider text-ih-muted hover:text-ih-ink"
         >
           ← Back to crawls
         </Link>
         <div className="flex items-baseline gap-3 mt-2 flex-wrap">
-          <h1 className="text-[22px] font-semibold text-[var(--color-primary)] font-mono">{job.code}</h1>
+          <h1 className="text-[22px] font-semibold text-ih-ink font-mono">{job.code}</h1>
           <span className={`px-2 py-0.5 text-[10px] font-mono uppercase tracking-wider ${STATUS_STYLES[job.status]}`}>
             {STATUS_LABELS[job.status]}
           </span>
           {isLive && (
-            <span className="text-[11px] font-mono uppercase tracking-wider text-[var(--color-muted)]">
+            <span className="text-[11px] font-mono uppercase tracking-wider text-ih-muted">
               Auto-refreshing every 3s
             </span>
           )}
         </div>
-        <p className="text-[13px] text-[var(--color-muted)] mt-1 break-all">{job.sourceUrl}</p>
-        {job.notes && <p className="text-[12px] text-[var(--color-body)] mt-1">{job.notes}</p>}
+        <p className="text-[13px] text-ih-muted mt-1 break-all">{job.sourceUrl}</p>
+        {job.notes && <p className="text-[12px] text-ih-ink-2 mt-1">{job.notes}</p>}
       </header>
 
       {/* Stat tiles */}
@@ -284,8 +284,8 @@ export default async function ScraperJobDetailPage({ params, searchParams }: Pro
       </section>
 
       {/* Timeline */}
-      <section className="border border-[var(--color-border)] bg-[var(--color-surface)] p-4 mb-6 text-[12px]">
-        <h2 className="font-mono uppercase tracking-wider text-[10px] text-[var(--color-muted)] mb-3">Timeline</h2>
+      <section className="border border-ih-border bg-ih-bg p-4 mb-6 text-[12px]">
+        <h2 className="font-mono uppercase tracking-wider text-[10px] text-ih-muted mb-3">Timeline</h2>
         <dl className="grid grid-cols-3 gap-x-6 gap-y-1.5">
           <Time label="Created" value={job.createdAt} />
           <Time label="Started" value={job.startedAt} />
@@ -323,8 +323,8 @@ export default async function ScraperJobDetailPage({ params, searchParams }: Pro
 
       {/* Rows */}
       {job.totalFound === 0 ? (
-        <section className="border border-[var(--color-border)] bg-[var(--color-surface)] p-6">
-          <p className="text-[13px] text-[var(--color-body)]">
+        <section className="border border-ih-border bg-ih-bg p-6">
+          <p className="text-[13px] text-ih-ink-2">
             {job.status === 'queued'
               ? 'Crawl is queued — waiting for the background worker.'
               : job.status === 'running'
@@ -337,7 +337,7 @@ export default async function ScraperJobDetailPage({ params, searchParams }: Pro
           <JobFilters counts={counts as Record<string, number>} q={q} status={filterStatus} />
           <div className="flex flex-col gap-4">
             {rows.length === 0 ? (
-              <p className="text-[13px] text-[var(--color-muted)] px-4 py-6 text-center bg-[var(--color-surface)] border border-[var(--color-border)]">
+              <p className="text-[13px] text-ih-muted px-4 py-6 text-center bg-ih-bg border border-ih-border">
                 No products match this filter.
               </p>
             ) : (
@@ -356,7 +356,7 @@ export default async function ScraperJobDetailPage({ params, searchParams }: Pro
           {totalPages > 1 && (
             <nav className="mt-6 flex items-center justify-center gap-2 text-[12px]" aria-label="Pagination">
               <PageLink page={pageN - 1} disabled={pageN <= 1} label="← Prev" filterStatus={filterStatus} q={q} />
-              <span className="text-[var(--color-muted)] font-mono">
+              <span className="text-ih-muted font-mono">
                 Page {pageN} of {totalPages}
               </span>
               <PageLink page={pageN + 1} disabled={pageN >= totalPages} label="Next →" filterStatus={filterStatus} q={q} />
@@ -390,7 +390,7 @@ function PageLink({
 
   if (disabled) {
     return (
-      <span className="h-8 px-3 grid place-items-center border border-[var(--color-border)] text-[var(--color-muted)] opacity-50 font-mono">
+      <span className="h-8 px-3 grid place-items-center border border-ih-border text-ih-muted opacity-50 font-mono">
         {label}
       </span>
     )
@@ -398,7 +398,7 @@ function PageLink({
   return (
     <Link
       href={href}
-      className="h-8 px-3 grid place-items-center border border-[var(--color-border)] text-[var(--color-body)] hover:bg-[var(--color-deep)] font-mono"
+      className="h-8 px-3 grid place-items-center border border-ih-border text-ih-ink-2 hover:bg-ih-surface-2 font-mono"
     >
       {label}
     </Link>
@@ -408,12 +408,12 @@ function PageLink({
 function Stat({ label, value, highlight }: { label: string; value: string; highlight?: boolean }) {
   return (
     <div
-      className={`border bg-[var(--color-surface)] px-3 py-2 ${
-        highlight ? 'border-[oklch(0.4_0.18_25)]' : 'border-[var(--color-border)]'
+      className={`border bg-ih-bg px-3 py-2 ${
+        highlight ? 'border-[oklch(0.4_0.18_25)]' : 'border-ih-border'
       }`}
     >
-      <div className="font-mono uppercase tracking-wider text-[10px] text-[var(--color-muted)]">{label}</div>
-      <div className={`text-[16px] font-semibold ${highlight ? 'text-[oklch(0.4_0.18_25)]' : 'text-[var(--color-primary)]'}`}>
+      <div className="font-mono uppercase tracking-wider text-[10px] text-ih-muted">{label}</div>
+      <div className={`text-[16px] font-semibold ${highlight ? 'text-[oklch(0.4_0.18_25)]' : 'text-ih-ink'}`}>
         {value}
       </div>
     </div>
@@ -423,8 +423,8 @@ function Stat({ label, value, highlight }: { label: string; value: string; highl
 function Time({ label, value }: { label: string; value: Date | null }) {
   return (
     <>
-      <dt className="font-mono uppercase tracking-wider text-[10px] text-[var(--color-muted)]">{label}</dt>
-      <dd className="col-span-2 text-[12px] text-[var(--color-body)]">
+      <dt className="font-mono uppercase tracking-wider text-[10px] text-ih-muted">{label}</dt>
+      <dd className="col-span-2 text-[12px] text-ih-ink-2">
         {value ? value.toISOString().replace('T', ' ').slice(0, 19) + ' UTC' : '—'}
       </dd>
     </>

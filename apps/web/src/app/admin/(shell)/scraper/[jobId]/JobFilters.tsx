@@ -64,8 +64,8 @@ export default function JobFilters({
               onClick={() => pushParams({ status: opt.value || null })}
               className={`h-8 px-3 text-[11px] font-mono uppercase tracking-wider border ${
                 active
-                  ? 'bg-[var(--color-primary)] text-white border-[var(--color-primary)]'
-                  : 'bg-[var(--color-surface)] text-[var(--color-body)] border-[var(--color-border)] hover:bg-[var(--color-deep)]'
+                  ? 'bg-ih-navy text-white border-ih-ink'
+                  : 'bg-ih-bg text-ih-ink-2 border-ih-border hover:bg-ih-surface-2'
               } disabled:opacity-50`}
             >
               {opt.label} {typeof count === 'number' ? `(${count})` : ''}
@@ -80,12 +80,12 @@ export default function JobFilters({
           type="search"
           defaultValue={q}
           placeholder="Search by title or SKU…"
-          className="h-8 w-64 px-2 border border-[var(--color-border)] bg-[var(--color-surface)] text-[12px]"
+          className="h-8 w-64 px-2 border border-ih-border bg-ih-bg text-[12px]"
         />
         <button
           type="submit"
           disabled={pending}
-          className="h-8 px-3 border border-[var(--color-border)] text-[var(--color-body)] font-mono text-[11px] uppercase tracking-wider hover:bg-[var(--color-deep)] disabled:opacity-50"
+          className="h-8 px-3 border border-ih-border text-ih-ink-2 font-mono text-[11px] uppercase tracking-wider hover:bg-ih-surface-2 disabled:opacity-50"
         >
           Search
         </button>
@@ -93,7 +93,7 @@ export default function JobFilters({
           <button
             type="button"
             onClick={() => pushParams({ q: null, status: null })}
-            className="h-8 px-2 text-[11px] text-[var(--color-muted)] hover:text-[var(--color-primary)]"
+            className="h-8 px-2 text-[11px] text-ih-muted hover:text-ih-ink"
           >
             Clear
           </button>

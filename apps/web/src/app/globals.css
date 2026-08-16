@@ -18,10 +18,8 @@
    Values are OKLCH and are ported verbatim — do not convert to hex and do not
    round to a nearby brand blue.
 
-   TWO LAYERS LIVE HERE, DELIBERATELY:
-
-     1. --color-ih-*  the v2 namespace. New and rebuilt code uses only these.
-     2. --color-*     the v1 names, redefined as one-line aliases onto the above.
+   ONE LAYER: --color-ih-*. The transitional v1 alias layer has been removed
+   now that every consumer reads these names directly.
 
    The contract calls these tokens --ih-accent, --ih-muted and so on. They are
    declared here as --color-ih-accent / --color-ih-muted instead, deliberately:
@@ -36,13 +34,9 @@
    `bg-[var(--color-ih-accent)]`.
 
    Because this is `@theme` and not `@theme inline`, every consumer dereferences
-   its token at paint time, so re-pointing the aliases rebrands ~4,600 call sites
-   across 204 files with no .tsx edits. The aliases exist so the migration can be
-   colour-first and shape-second: the site is correct-palette / old-shape until
-   each screen is rebuilt against --ih-*.
+   its token at paint time. That is what allowed the palette to flip in a single
+   commit while the screens migrated one at a time.
 
-   DELETE THE ALIAS BLOCK when a repo-wide grep for the string "var(--color-"
-   (excluding the --color-ih- names) returns nothing.
    ============================================================ */
 
 @theme {
@@ -103,41 +97,13 @@
   --spacing-page-gutter: 48px;
   --spacing-max-w: 1440px;
 
-  /* ══ v1 aliases — transitional, delete when the grep above is clean ══ */
+  /* The v1 alias layer is GONE.
 
-  /* ⚠ --color-surface is the PAGE GROUND in v1 but CARD WHITE in v2. It maps to
-     --ih-bg, NOT --ih-surface. Aliasing it to white would put white on white at
-     182 sites. v1's --color-elevated is the one that means card white. */
-  --color-surface: var(--color-ih-bg);
-  --color-elevated: var(--color-ih-surface);
-  --color-deep: var(--color-ih-surface-2);
-
-  --color-primary: var(--color-ih-ink);
-  --color-body: var(--color-ih-ink-2);
-  --color-muted: var(--color-ih-muted);
-  --color-caption: var(--color-ih-muted-2);
-
-  /* ⚠ v1's --color-border-2 is LIGHTER than the base border — a softer rule.
-     v2's second weight (--ih-border-strong) is DARKER — an emphasis rule.
-     Aliasing border-2 onto border-strong would invert the hierarchy at all 80
-     sites, so the two steps collapse into one here and emphasis is
-     reintroduced deliberately, per screen, against --color-ih-border-strong. */
-  --color-border: var(--color-ih-border);
-  --color-border-2: var(--color-ih-border);
-
-  --color-accent: var(--color-ih-accent);
-  --color-accent-ink: var(--color-ih-accent-fg);
-  --color-accent-soft: var(--color-ih-accent-soft);
-
-  --color-good: var(--color-ih-success);
-  --color-good-soft: var(--color-ih-success-soft);
-  --color-warn: var(--color-ih-warning);
-  --color-danger: var(--color-ih-danger);
-
-  /* Removed with the v1 palette: --color-info and --color-tech (no v2 semantic
-     and zero references), --shadow-pop (zero references), and the four
-     --color-sidebar-* tokens (zero references — AdminSidebar hard-codes 30 hex
-     literals instead, which the v2 admin shell replaces wholesale). */
+     PR #162 added it so the palette could flip in one commit while the
+     screens migrated one at a time, and set its own exit condition: delete it
+     when a repo-wide grep for "var(--color-" (excluding --color-ih-) returns
+     nothing. That grep now returns 0 — every consumer in apps/ and packages/
+     reads the v2 tokens directly. */
 }
 
 /* Dark theme removed — it was never reachable. Nothing in the tree set the

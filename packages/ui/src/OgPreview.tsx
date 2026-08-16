@@ -25,11 +25,11 @@ export function OgPreview({
   return (
     <div
       className={cn(
-        'border border-[var(--color-border)] bg-white max-w-[500px] overflow-hidden',
+        'border border-ih-border bg-white max-w-[500px] overflow-hidden',
         className,
       )}
     >
-      <div className="aspect-[1.91/1] bg-[var(--color-deep)] flex items-center justify-center text-[var(--color-muted)] text-[11px]">
+      <div className="aspect-[1.91/1] bg-ih-surface-2 flex items-center justify-center text-ih-muted text-[11px]">
         {imageUrl ? (
           // eslint-disable-next-line @next/next/no-img-element
           <img src={imageUrl} alt="OG preview" className="w-full h-full object-cover" />
@@ -39,7 +39,7 @@ export function OgPreview({
       </div>
       <div
         className={cn(
-          'p-3 border-t border-[var(--color-border)]',
+          'p-3 border-t border-ih-border',
           variant === 'twitter' && 'border-t-0',
         )}
       >

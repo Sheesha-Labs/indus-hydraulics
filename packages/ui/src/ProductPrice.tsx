@@ -58,7 +58,7 @@ export function ProductPrice({
     return (
       <span
         className={cn(
-          'font-mono text-[var(--color-muted)] text-[12px] uppercase tracking-wider',
+          'font-mono text-ih-muted text-[12px] uppercase tracking-wider',
           className,
         )}
       >
@@ -74,7 +74,7 @@ export function ProductPrice({
       <div className={cn('flex flex-col items-end gap-0.5', className)}>
         <span className={primaryCls}>{formatted.primary}</span>
         {formatted.compareAt && (
-          <span className="font-mono text-[11px] text-[var(--color-caption)] line-through">
+          <span className="font-mono text-[11px] text-ih-muted-2 line-through">
             {formatted.compareAt}
           </span>
         )}
@@ -86,7 +86,7 @@ export function ProductPrice({
     <span className={cn('inline-flex items-baseline gap-2', className)}>
       <span className={primaryCls}>{formatted.primary}</span>
       {formatted.compareAt && (
-        <span className="font-mono text-[11px] text-[var(--color-caption)] line-through">
+        <span className="font-mono text-[11px] text-ih-muted-2 line-through">
           {formatted.compareAt}
         </span>
       )}

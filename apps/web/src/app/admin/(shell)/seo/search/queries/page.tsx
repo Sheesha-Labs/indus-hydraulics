@@ -105,7 +105,7 @@ export default async function QueryAnalyticsPage() {
       </Section>
 
       <Section title="Zero-result queries">
-        <p className="mb-3 text-[12px] text-[var(--color-muted)]">
+        <p className="mb-3 text-[12px] text-ih-muted">
           These returned nothing. Each one is a synonym candidate — define a group on{' '}
           <code>/seo/search/synonyms</code> to fix in one click.
         </p>
@@ -128,7 +128,7 @@ export default async function QueryAnalyticsPage() {
       </Section>
 
       <Section title="High volume / no clicks">
-        <p className="mb-3 text-[12px] text-[var(--color-muted)]">
+        <p className="mb-3 text-[12px] text-ih-muted">
           Queries that ran ≥5 times, returned results, but nobody clicked. UX or relevance issue
           — fix with synonym groups, query redirects, or boosts.
         </p>
@@ -157,11 +157,11 @@ function formatRate(num: number, den: number): string {
 
 function Tile({ label, value, accent }: { label: string; value: string; accent?: boolean }) {
   return (
-    <div className="border border-[var(--color-border)] bg-[var(--color-elevated)] p-4">
-      <div className="font-mono text-[10px] uppercase tracking-[0.1em] text-[var(--color-muted)]">
+    <div className="border border-ih-border bg-ih-surface p-4">
+      <div className="font-mono text-[10px] uppercase tracking-[0.1em] text-ih-muted">
         {label}
       </div>
-      <div className={`text-[28px] font-semibold mt-1 ${accent ? 'text-[var(--color-accent)]' : ''}`}>
+      <div className={`text-[28px] font-semibold mt-1 ${accent ? 'text-ih-accent' : ''}`}>
         {value}
       </div>
     </div>
@@ -171,7 +171,7 @@ function Tile({ label, value, accent }: { label: string; value: string; accent?:
 function Section({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <div className="mb-8">
-      <h2 className="font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-3">
+      <h2 className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-3">
         {title}
       </h2>
       {children}
@@ -181,7 +181,7 @@ function Section({ title, children }: { title: string; children: React.ReactNode
 
 function Empty({ children }: { children: React.ReactNode }) {
   return (
-    <div className="py-10 text-center border border-dashed border-[var(--color-border)] text-[13px] text-[var(--color-muted)]">
+    <div className="py-10 text-center border border-dashed border-ih-border text-[13px] text-ih-muted">
       {children}
     </div>
   )
@@ -197,14 +197,14 @@ function Table({
   mono: boolean[]
 }) {
   return (
-    <div className="border border-[var(--color-border)] overflow-hidden">
+    <div className="border border-ih-border overflow-hidden">
       <table className="w-full text-[13px]">
         <thead>
-          <tr className="border-b border-[var(--color-border)] bg-[var(--color-deep)]">
+          <tr className="border-b border-ih-border bg-ih-surface-2">
             {cols.map((c) => (
               <th
                 key={c}
-                className="text-left px-3 py-2.5 font-mono text-[10px] uppercase tracking-[0.1em] text-[var(--color-muted)]"
+                className="text-left px-3 py-2.5 font-mono text-[10px] uppercase tracking-[0.1em] text-ih-muted"
               >
                 {c}
               </th>
@@ -213,12 +213,12 @@ function Table({
         </thead>
         <tbody>
           {rows.map((row, i) => (
-            <tr key={i} className="border-b border-[var(--color-border)] last:border-0 hover:bg-[var(--color-deep)]">
+            <tr key={i} className="border-b border-ih-border last:border-0 hover:bg-ih-surface-2">
               {row.map((cell, j) => (
                 <td
                   key={j}
                   className={`px-3 py-2 ${
-                    mono[j] ? 'font-mono text-[12px] text-[var(--color-body)]' : 'text-[var(--color-muted)]'
+                    mono[j] ? 'font-mono text-[12px] text-ih-ink-2' : 'text-ih-muted'
                   }`}
                 >
                   {cell}

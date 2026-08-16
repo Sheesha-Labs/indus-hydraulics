@@ -56,7 +56,7 @@ export default function NotFoundList({ rows: initialRows }: Props) {
 
   return (
     <div className="max-w-[1080px]">
-      <div className="mb-4 max-w-[640px] text-[13px] text-[var(--color-muted)]">
+      <div className="mb-4 max-w-[640px] text-[13px] text-ih-muted">
         Storefront 404s, top hits first. Resolve each by adding a 301
         redirect, or Ignore to stash. The storefront&apos;s{' '}
         <code>not-found.tsx</code> fires a beacon on render — so this list
@@ -73,16 +73,16 @@ export default function NotFoundList({ rows: initialRows }: Props) {
       )}
 
       {rows.length === 0 ? (
-        <div className="py-16 text-center border border-dashed border-[var(--color-border)]">
-          <p className="text-[var(--color-muted)] text-[13px]">
+        <div className="py-16 text-center border border-dashed border-ih-border">
+          <p className="text-ih-muted text-[13px]">
             Nothing unresolved — every captured 404 either has a redirect or was ignored.
           </p>
         </div>
       ) : (
-        <div className="border border-[var(--color-border)] overflow-hidden">
+        <div className="border border-ih-border overflow-hidden">
           <table className="w-full text-[13px]">
             <thead>
-              <tr className="border-b border-[var(--color-border)] bg-[var(--color-deep)]">
+              <tr className="border-b border-ih-border bg-ih-surface-2">
                 <Th>Path</Th>
                 <Th>Hits</Th>
                 <Th>Referer</Th>
@@ -94,18 +94,18 @@ export default function NotFoundList({ rows: initialRows }: Props) {
               {rows.map((r) => (
                 <tr
                   key={r.id}
-                  className="border-b border-[var(--color-border)] last:border-0 align-top hover:bg-[var(--color-deep)]"
+                  className="border-b border-ih-border last:border-0 align-top hover:bg-ih-surface-2"
                 >
-                  <td className="px-3 py-3 font-mono text-[12px] text-[var(--color-body)] truncate max-w-[300px]">
+                  <td className="px-3 py-3 font-mono text-[12px] text-ih-ink-2 truncate max-w-[300px]">
                     {r.path}
                   </td>
-                  <td className="px-3 py-3 font-mono text-[12px] tabular-nums text-[var(--color-body)]">
+                  <td className="px-3 py-3 font-mono text-[12px] tabular-nums text-ih-ink-2">
                     {r.hits.toLocaleString()}
                   </td>
-                  <td className="px-3 py-3 font-mono text-[11px] text-[var(--color-muted)] truncate max-w-[280px]">
+                  <td className="px-3 py-3 font-mono text-[11px] text-ih-muted truncate max-w-[280px]">
                     {r.referer ?? '—'}
                   </td>
-                  <td className="px-3 py-3 font-mono text-[11px] text-[var(--color-muted)] whitespace-nowrap">
+                  <td className="px-3 py-3 font-mono text-[11px] text-ih-muted whitespace-nowrap">
                     {new Date(r.lastSeenAt).toLocaleDateString('en-GB', {
                       day: 'numeric',
                       month: 'short',
@@ -119,12 +119,12 @@ export default function NotFoundList({ rows: initialRows }: Props) {
                           name="toPath"
                           required
                           placeholder="/replacement-path"
-                          className="h-8 px-2 border border-[var(--color-border)] bg-white text-[12px] focus:outline-none focus:border-[var(--color-accent)] w-[200px]"
+                          className="h-8 px-2 border border-ih-border bg-white text-[12px] focus:outline-none focus:border-ih-accent w-[200px]"
                         />
                         <select
                           name="statusCode"
                           defaultValue="301"
-                          className="h-8 px-2 border border-[var(--color-border)] bg-white text-[12px]"
+                          className="h-8 px-2 border border-ih-border bg-white text-[12px]"
                         >
                           <option value="301">301</option>
                           <option value="302">302</option>
@@ -134,14 +134,14 @@ export default function NotFoundList({ rows: initialRows }: Props) {
                         <button
                           type="submit"
                           disabled={pending}
-                          className="h-8 px-3 bg-[var(--color-accent)] text-white font-mono text-[11px] disabled:opacity-50"
+                          className="h-8 px-3 bg-ih-accent text-white font-mono text-[11px] disabled:opacity-50"
                         >
                           Save
                         </button>
                         <button
                           type="button"
                           onClick={() => setEditingId(null)}
-                          className="h-8 px-3 border border-[var(--color-border)] font-mono text-[11px]"
+                          className="h-8 px-3 border border-ih-border font-mono text-[11px]"
                         >
                           Cancel
                         </button>
@@ -152,7 +152,7 @@ export default function NotFoundList({ rows: initialRows }: Props) {
                           type="button"
                           onClick={() => setEditingId(r.id)}
                           disabled={pending}
-                          className="font-mono text-[11px] text-[var(--color-accent)] hover:underline mr-3 disabled:opacity-50"
+                          className="font-mono text-[11px] text-ih-accent hover:underline mr-3 disabled:opacity-50"
                         >
                           Resolve
                         </button>
@@ -160,7 +160,7 @@ export default function NotFoundList({ rows: initialRows }: Props) {
                           type="button"
                           onClick={() => handleIgnore(r.id)}
                           disabled={pending}
-                          className="font-mono text-[11px] text-[var(--color-muted)] hover:underline disabled:opacity-50"
+                          className="font-mono text-[11px] text-ih-muted hover:underline disabled:opacity-50"
                         >
                           Ignore
                         </button>
@@ -179,7 +179,7 @@ export default function NotFoundList({ rows: initialRows }: Props) {
 
 function Th({ children }: { children: React.ReactNode }) {
   return (
-    <th className="text-left px-3 py-2.5 font-mono text-[10px] uppercase tracking-[0.1em] text-[var(--color-muted)]">
+    <th className="text-left px-3 py-2.5 font-mono text-[10px] uppercase tracking-[0.1em] text-ih-muted">
       {children}
     </th>
   )

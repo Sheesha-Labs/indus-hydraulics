@@ -18,13 +18,13 @@ const ROLE_LABELS: Record<string, string> = {
 }
 
 const ROLE_COLORS: Record<string, string> = {
-  super_admin: 'bg-[var(--color-danger)] text-white',
-  manager: 'bg-[var(--color-accent)] text-white',
+  super_admin: 'bg-[var(--color-ih-danger)] text-white',
+  manager: 'bg-ih-accent text-white',
   sales_rep: 'bg-ih-steel text-white',
-  engineer: 'bg-[var(--color-warn)] text-[var(--color-primary)]',
-  warehouse: 'bg-[var(--color-deep)] text-[var(--color-body)]',
-  finance: 'bg-[var(--color-deep)] text-[var(--color-body)]',
-  cms_editor: 'bg-[var(--color-deep)] text-[var(--color-body)]',
+  engineer: 'bg-[var(--color-ih-warning)] text-ih-ink',
+  warehouse: 'bg-ih-surface-2 text-ih-ink-2',
+  finance: 'bg-ih-surface-2 text-ih-ink-2',
+  cms_editor: 'bg-ih-surface-2 text-ih-ink-2',
 }
 
 export default async function UsersPage() {
@@ -69,13 +69,13 @@ export default async function UsersPage() {
       <div className="flex items-center justify-between mb-6">
         <div>
           <h1 className="text-[24px] font-semibold tracking-tight">Staff Users</h1>
-          <p className="text-[13px] text-[var(--color-muted)] mt-1">
+          <p className="text-[13px] text-ih-muted mt-1">
             {users.length} staff member{users.length !== 1 ? 's' : ''}
           </p>
         </div>
         <Link
           href="/admin/users/new"
-          className="h-9 px-4 bg-[var(--color-accent)] text-white font-mono text-[12px] flex items-center hover:opacity-90"
+          className="h-9 px-4 bg-ih-accent text-white font-mono text-[12px] flex items-center hover:opacity-90"
         >
           + Add Staff
         </Link>
@@ -83,16 +83,16 @@ export default async function UsersPage() {
 
       <InviteStaffPanel pending={pending} />
 
-      <div className="border border-[var(--color-border)] overflow-hidden">
+      <div className="border border-ih-border overflow-hidden">
         <table className="w-full text-[13px]">
           <thead>
-            <tr className="border-b border-[var(--color-border)] bg-[var(--color-deep)]">
-              <th className="text-left px-4 py-3 font-mono text-[10px] uppercase tracking-[0.1em] text-[var(--color-muted)]">Name</th>
-              <th className="text-left px-4 py-3 font-mono text-[10px] uppercase tracking-[0.1em] text-[var(--color-muted)]">Email</th>
-              <th className="text-left px-4 py-3 font-mono text-[10px] uppercase tracking-[0.1em] text-[var(--color-muted)]">Role</th>
-              <th className="text-left px-4 py-3 font-mono text-[10px] uppercase tracking-[0.1em] text-[var(--color-muted)]">RFQs</th>
-              <th className="text-left px-4 py-3 font-mono text-[10px] uppercase tracking-[0.1em] text-[var(--color-muted)]">Accounts</th>
-              <th className="text-left px-4 py-3 font-mono text-[10px] uppercase tracking-[0.1em] text-[var(--color-muted)]">Status</th>
+            <tr className="border-b border-ih-border bg-ih-surface-2">
+              <th className="text-left px-4 py-3 font-mono text-[10px] uppercase tracking-[0.1em] text-ih-muted">Name</th>
+              <th className="text-left px-4 py-3 font-mono text-[10px] uppercase tracking-[0.1em] text-ih-muted">Email</th>
+              <th className="text-left px-4 py-3 font-mono text-[10px] uppercase tracking-[0.1em] text-ih-muted">Role</th>
+              <th className="text-left px-4 py-3 font-mono text-[10px] uppercase tracking-[0.1em] text-ih-muted">RFQs</th>
+              <th className="text-left px-4 py-3 font-mono text-[10px] uppercase tracking-[0.1em] text-ih-muted">Accounts</th>
+              <th className="text-left px-4 py-3 font-mono text-[10px] uppercase tracking-[0.1em] text-ih-muted">Status</th>
               <th className="px-4 py-3" />
             </tr>
           </thead>
@@ -100,35 +100,35 @@ export default async function UsersPage() {
             {users.map((user) => (
               <tr
                 key={user.id}
-                className={`border-b border-[var(--color-border)] last:border-0 hover:bg-[var(--color-deep)] transition-colors ${
+                className={`border-b border-ih-border last:border-0 hover:bg-ih-surface-2 transition-colors ${
                   !user.isActive ? 'opacity-50' : ''
                 }`}
               >
                 <td className="px-4 py-3">
                   <div className="flex items-center gap-2.5">
-                    <div className="w-7 h-7 bg-[var(--color-deep)] border border-[var(--color-border)] grid place-items-center font-mono text-[11px] text-[var(--color-muted)] shrink-0">
+                    <div className="w-7 h-7 bg-ih-surface-2 border border-ih-border grid place-items-center font-mono text-[11px] text-ih-muted shrink-0">
                       {user.name.charAt(0).toUpperCase()}
                     </div>
-                    <span className="font-medium text-[var(--color-primary)]">{user.name}</span>
+                    <span className="font-medium text-ih-ink">{user.name}</span>
                   </div>
                 </td>
-                <td className="px-4 py-3 text-[var(--color-muted)]">{user.email}</td>
+                <td className="px-4 py-3 text-ih-muted">{user.email}</td>
                 <td className="px-4 py-3">
-                  <span className={`font-mono text-[10px] px-2 py-0.5 ${ROLE_COLORS[user.role] ?? 'bg-[var(--color-deep)]'}`}>
+                  <span className={`font-mono text-[10px] px-2 py-0.5 ${ROLE_COLORS[user.role] ?? 'bg-ih-surface-2'}`}>
                     {ROLE_LABELS[user.role] ?? user.role}
                   </span>
                 </td>
-                <td className="px-4 py-3 font-mono text-[12px] text-[var(--color-muted)]">
+                <td className="px-4 py-3 font-mono text-[12px] text-ih-muted">
                   {user._count.assignedRfqs}
                 </td>
-                <td className="px-4 py-3 font-mono text-[12px] text-[var(--color-muted)]">
+                <td className="px-4 py-3 font-mono text-[12px] text-ih-muted">
                   {user._count.assignedAccounts}
                 </td>
                 <td className="px-4 py-3">
                   <span className={`font-mono text-[10px] px-2 py-0.5 ${
                     user.isActive
-                      ? 'bg-[var(--color-good-soft)] text-[var(--color-good)]'
-                      : 'bg-[var(--color-deep)] text-[var(--color-muted)]'
+                      ? 'bg-[var(--color-ih-success-soft)] text-ih-success'
+                      : 'bg-ih-surface-2 text-ih-muted'
                   }`}>
                     {user.isActive ? 'Active' : 'Inactive'}
                   </span>
@@ -136,7 +136,7 @@ export default async function UsersPage() {
                 <td className="px-4 py-3 text-right">
                   <Link
                     href={`/admin/users/${user.id}`}
-                    className="font-mono text-[11px] text-[var(--color-accent)] hover:underline"
+                    className="font-mono text-[11px] text-ih-accent hover:underline"
                   >
                     Edit
                   </Link>

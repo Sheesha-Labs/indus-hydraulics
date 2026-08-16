@@ -19,7 +19,7 @@ export default async function SeoRedirectsPage() {
       <div className="flex gap-3 mb-6 flex-wrap">
         <Link
           href="/admin/seo/redirects/not-found"
-          className="inline-flex items-center gap-2 h-9 px-3 border border-[var(--color-border)] bg-[var(--color-elevated)] hover:bg-[var(--color-deep)] font-mono text-[12px]"
+          className="inline-flex items-center gap-2 h-9 px-3 border border-ih-border bg-ih-surface hover:bg-ih-surface-2 font-mono text-[12px]"
         >
           404 log
           {unresolved404Count > 0 && (
@@ -30,10 +30,10 @@ export default async function SeoRedirectsPage() {
         </Link>
         <Link
           href="/admin/seo/redirects/chains"
-          className="inline-flex items-center gap-2 h-9 px-3 border border-[var(--color-border)] bg-[var(--color-elevated)] hover:bg-[var(--color-deep)] font-mono text-[12px]"
+          className="inline-flex items-center gap-2 h-9 px-3 border border-ih-border bg-ih-surface hover:bg-ih-surface-2 font-mono text-[12px]"
         >
           Detect chains
-          <span className="font-mono text-[10px] text-[var(--color-muted)]">
+          <span className="font-mono text-[10px] text-ih-muted">
             {activeCount} active
           </span>
         </Link>

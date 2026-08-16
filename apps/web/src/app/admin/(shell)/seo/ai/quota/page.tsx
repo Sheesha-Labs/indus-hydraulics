@@ -21,8 +21,8 @@ export default async function AiQuotaPage() {
 
   if (quotas.length === 0) {
     return (
-      <div className="border border-dashed border-[var(--color-border)] py-16 text-center max-w-[800px]">
-        <p className="text-[var(--color-muted)] text-[13px]">
+      <div className="border border-dashed border-ih-border py-16 text-center max-w-[800px]">
+        <p className="text-ih-muted text-[13px]">
           No AI usage yet. Quota rows are created on first use.
         </p>
       </div>
@@ -30,10 +30,10 @@ export default async function AiQuotaPage() {
   }
 
   return (
-    <div className="border border-[var(--color-border)] overflow-hidden max-w-[800px]">
+    <div className="border border-ih-border overflow-hidden max-w-[800px]">
       <table className="w-full text-[13px]">
         <thead>
-          <tr className="border-b border-[var(--color-border)] bg-[var(--color-deep)]">
+          <tr className="border-b border-ih-border bg-ih-surface-2">
             <Th>User</Th>
             <Th>Spent</Th>
             <Th>Cap</Th>
@@ -46,25 +46,25 @@ export default async function AiQuotaPage() {
             const pct = q.monthlyUsdCapMicros > 0
               ? (q.spentThisMonthMicros / q.monthlyUsdCapMicros) * 100
               : 0
-            const tone = pct >= 90 ? 'oklch(0.5_0.18_25)' : pct >= 60 ? 'oklch(0.5_0.14_70)' : 'var(--color-accent)'
+            const tone = pct >= 90 ? 'oklch(0.5_0.18_25)' : pct >= 60 ? 'oklch(0.5_0.14_70)' : 'var(--color-ih-accent)'
             return (
               <tr
                 key={q.id}
-                className="border-b border-[var(--color-border)] last:border-0 hover:bg-[var(--color-deep)]"
+                className="border-b border-ih-border last:border-0 hover:bg-ih-surface-2"
               >
                 <td className="px-3 py-3">
-                  <div className="text-[var(--color-body)]">{u?.name ?? '(unknown)'}</div>
-                  <div className="font-mono text-[11px] text-[var(--color-muted)]">{u?.email ?? q.staffUserId}</div>
+                  <div className="text-ih-ink-2">{u?.name ?? '(unknown)'}</div>
+                  <div className="font-mono text-[11px] text-ih-muted">{u?.email ?? q.staffUserId}</div>
                 </td>
                 <td className="px-3 py-3" style={{ minWidth: 220 }}>
                   <div className="flex items-center gap-3">
-                    <div className="flex-1 h-2 bg-[var(--color-deep)] overflow-hidden">
+                    <div className="flex-1 h-2 bg-ih-surface-2 overflow-hidden">
                       <div
                         className="h-full"
                         style={{ width: `${Math.min(100, pct)}%`, background: `oklch(${tone.startsWith('oklch') ? tone.replace('oklch(', '').replace(')', '') : '0.62 0.16 45'})` }}
                       />
                     </div>
-                    <span className="font-mono text-[11px] text-[var(--color-muted)] tabular-nums whitespace-nowrap">
+                    <span className="font-mono text-[11px] text-ih-muted tabular-nums whitespace-nowrap">
                       ${(q.spentThisMonthMicros / 1_000_000).toFixed(2)}
                     </span>
                   </div>
@@ -72,7 +72,7 @@ export default async function AiQuotaPage() {
                 <td className="px-3 py-3 font-mono text-[12px] tabular-nums">
                   ${(q.monthlyUsdCapMicros / 1_000_000).toFixed(0)}
                 </td>
-                <td className="px-3 py-3 font-mono text-[11px] text-[var(--color-muted)]">
+                <td className="px-3 py-3 font-mono text-[11px] text-ih-muted">
                   {q.resetAt.toLocaleDateString('en-GB', {
                     day: 'numeric',
                     month: 'short',
@@ -90,7 +90,7 @@ export default async function AiQuotaPage() {
 
 function Th({ children }: { children: React.ReactNode }) {
   return (
-    <th className="text-left px-3 py-2.5 font-mono text-[10px] uppercase tracking-[0.1em] text-[var(--color-muted)]">
+    <th className="text-left px-3 py-2.5 font-mono text-[10px] uppercase tracking-[0.1em] text-ih-muted">
       {children}
     </th>
   )

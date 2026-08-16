@@ -64,11 +64,11 @@ export default async function SpecTemplateEditPage({ params }: Props) {
         <div className="flex items-center justify-between mb-6">
           <div>
             <h1 className="text-[24px] font-semibold tracking-tight">{tpl.name}</h1>
-            <p className="text-[13px] text-[var(--color-muted)] mt-1 font-mono">{tpl.slug}</p>
+            <p className="text-[13px] text-ih-muted mt-1 font-mono">{tpl.slug}</p>
           </div>
           <Link
             href={`/admin/spec-templates`}
-            className="font-mono text-[11px] text-[var(--color-muted)] hover:text-[var(--color-primary)]"
+            className="font-mono text-[11px] text-ih-muted hover:text-ih-ink"
           >
             ← Back to templates
           </Link>
@@ -82,7 +82,7 @@ export default async function SpecTemplateEditPage({ params }: Props) {
                 {i > 0 && ', '}
                 <Link
                   href={`/admin/categories`}
-                  className="underline hover:text-[var(--color-accent)]"
+                  className="underline hover:text-ih-accent"
                 >
                   {c.name}
                 </Link>

@@ -41,7 +41,7 @@ export default async function CategoriesPage({ params }: Props) {
       <div className="flex items-center justify-between mb-6">
         <div>
           <h1 className="text-[24px] font-semibold tracking-tight">Categories</h1>
-          <p className="text-[13px] text-[var(--color-muted)] mt-1">
+          <p className="text-[13px] text-ih-muted mt-1">
             {categories.length} {categories.length === 1 ? 'category' : 'categories'}
           </p>
         </div>

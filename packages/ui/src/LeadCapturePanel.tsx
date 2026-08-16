@@ -40,8 +40,8 @@ export function LeadCapturePanel({
 }: LeadCapturePanelProps) {
   const containerCls =
     variant === 'wide'
-      ? 'border-t border-[var(--color-border)] bg-[var(--color-elevated)] py-14 px-8'
-      : 'border border-[var(--color-border)] bg-[var(--color-elevated)] py-8 px-6'
+      ? 'border-t border-ih-border bg-ih-surface py-14 px-8'
+      : 'border border-ih-border bg-ih-surface py-8 px-6'
 
   return (
     <section className={containerCls} aria-labelledby="lead-capture-heading">
@@ -50,7 +50,7 @@ export function LeadCapturePanel({
           id="lead-capture-heading"
           className={
             variant === 'wide'
-              ? 'text-[clamp(24px,3vw,36px)] font-semibold tracking-[-0.02em] leading-[1.15] mb-3'
+              ? 'font-serif text-[clamp(24px,3vw,36px)] font-normal tracking-[-0.02em] leading-[1.15] mb-3'
               : 'text-[22px] font-semibold tracking-[-0.01em] mb-2'
           }
         >
@@ -60,8 +60,8 @@ export function LeadCapturePanel({
           <p
             className={
               variant === 'wide'
-                ? 'text-[15px] text-[var(--color-muted)] leading-[1.6] mb-7 max-w-[620px] mx-auto'
-                : 'text-[14px] text-[var(--color-muted)] leading-[1.55] mb-5'
+                ? 'text-[15px] text-ih-muted leading-[1.6] mb-7 max-w-[620px] mx-auto'
+                : 'text-[14px] text-ih-muted leading-[1.55] mb-5'
             }
           >
             {body}
@@ -77,7 +77,7 @@ export function LeadCapturePanel({
         >
           <a
             href={quoteUrl}
-            className="inline-flex items-center h-11 px-6 bg-[var(--color-accent)] text-white font-medium text-[14px] hover:opacity-90 transition-opacity"
+            className="inline-flex items-center h-11 px-6 bg-ih-accent text-white font-medium text-[14px] hover:opacity-90 transition-opacity"
           >
             {quoteLabel} →
           </a>
@@ -96,7 +96,7 @@ export function LeadCapturePanel({
 
           <a
             href={emailUrl}
-            className="inline-flex items-center h-11 px-6 border border-[var(--color-border)] bg-[var(--color-surface)] text-[var(--color-body)] font-medium text-[14px] hover:border-[var(--color-primary)] transition-colors"
+            className="inline-flex items-center h-11 px-6 border border-ih-border bg-ih-bg text-ih-ink-2 font-medium text-[14px] hover:border-ih-ink transition-colors"
           >
             Email
           </a>
@@ -106,12 +106,12 @@ export function LeadCapturePanel({
           <p
             className={
               variant === 'wide'
-                ? 'mt-5 font-mono text-[12px] text-[var(--color-muted)]'
-                : 'mt-3 font-mono text-[12px] text-[var(--color-muted)]'
+                ? 'mt-5 font-mono text-[12px] text-ih-muted'
+                : 'mt-3 font-mono text-[12px] text-ih-muted'
             }
           >
             Plant-down?{' '}
-            <a href={`tel:${phone}`} className="text-[var(--color-accent)] hover:underline">
+            <a href={`tel:${phone}`} className="text-ih-accent hover:underline">
               Call {phone}
             </a>{' '}
             — 24/7

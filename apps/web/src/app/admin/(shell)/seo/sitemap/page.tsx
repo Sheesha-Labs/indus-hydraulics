@@ -33,17 +33,17 @@ export default async function SitemapPage() {
         <Tile label="Total URLs" value={total} accent />
       </div>
 
-      <div className="border border-[var(--color-border)] p-4 mb-4">
-        <h3 className="font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-3">
+      <div className="border border-ih-border p-4 mb-4">
+        <h3 className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-3">
           Exclusions
         </h3>
         <div className="grid grid-cols-2 gap-3 text-[13px]">
           <div>
-            <div className="text-[var(--color-muted)]">Excluded from sitemap (products)</div>
+            <div className="text-ih-muted">Excluded from sitemap (products)</div>
             <div className="font-semibold text-[18px]">{excluded}</div>
           </div>
           <div>
-            <div className="text-[var(--color-muted)]">Noindexed (products)</div>
+            <div className="text-ih-muted">Noindexed (products)</div>
             <div className="font-semibold text-[18px]">{noindexed}</div>
           </div>
         </div>
@@ -53,12 +53,12 @@ export default async function SitemapPage() {
         href="/sitemap.xml"
         target="_blank"
         rel="noopener"
-        className="inline-block h-9 px-4 border border-[var(--color-border)] grid place-items-center font-mono text-[12px] hover:bg-[var(--color-deep)]"
+        className="inline-block h-9 px-4 border border-ih-border grid place-items-center font-mono text-[12px] hover:bg-ih-surface-2"
       >
         Open /sitemap.xml ↗
       </a>
 
-      <p className="mt-4 font-mono text-[11px] text-[var(--color-muted)]">
+      <p className="mt-4 font-mono text-[11px] text-ih-muted">
         Per-entity sitemap priority &amp; changefreq overrides are configured from the SEO drawer
         on each entity edit page. A sitemap-index split (when total &gt; 50k URLs) lands in
         Phase 2.
@@ -69,11 +69,11 @@ export default async function SitemapPage() {
 
 function Tile({ label, value, accent }: { label: string; value: number; accent?: boolean }) {
   return (
-    <div className="border border-[var(--color-border)] bg-[var(--color-elevated)] p-4">
-      <div className="font-mono text-[10px] uppercase tracking-[0.1em] text-[var(--color-muted)]">
+    <div className="border border-ih-border bg-ih-surface p-4">
+      <div className="font-mono text-[10px] uppercase tracking-[0.1em] text-ih-muted">
         {label}
       </div>
-      <div className={`text-[28px] font-semibold mt-1 ${accent ? 'text-[var(--color-accent)]' : ''}`}>
+      <div className={`text-[28px] font-semibold mt-1 ${accent ? 'text-ih-accent' : ''}`}>
         {value}
       </div>
     </div>

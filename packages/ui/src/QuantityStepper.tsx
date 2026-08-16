@@ -33,7 +33,7 @@ export function QuantityStepper({
   return (
     <div
       className={cn(
-        'inline-flex items-center border border-[var(--color-border)] bg-[var(--color-elevated)]',
+        'inline-flex items-center border border-ih-border bg-ih-surface',
         disabled && 'opacity-50 pointer-events-none',
         className
       )}
@@ -42,7 +42,7 @@ export function QuantityStepper({
         type="button"
         onClick={decrement}
         disabled={disabled || value <= min}
-        className="flex items-center justify-center w-8 h-8 text-[var(--color-muted)] hover:text-[var(--color-primary)] hover:bg-[var(--color-deep)] transition-colors disabled:opacity-30"
+        className="flex items-center justify-center w-8 h-8 text-ih-muted hover:text-ih-ink hover:bg-ih-surface-2 transition-colors disabled:opacity-30"
         aria-label="Decrease quantity"
       >
         −
@@ -54,14 +54,14 @@ export function QuantityStepper({
         max={max}
         onChange={handleInput}
         disabled={disabled}
-        className="w-12 h-8 text-center text-sm font-mono font-medium text-[var(--color-primary)] border-x border-[var(--color-border)] bg-transparent focus:outline-none focus:bg-[var(--color-deep)] [appearance:textfield] [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none"
+        className="w-12 h-8 text-center text-sm font-mono font-medium text-ih-ink border-x border-ih-border bg-transparent focus:outline-none focus:bg-ih-surface-2 [appearance:textfield] [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none"
         aria-label="Quantity"
       />
       <button
         type="button"
         onClick={increment}
         disabled={disabled || value >= max}
-        className="flex items-center justify-center w-8 h-8 text-[var(--color-muted)] hover:text-[var(--color-primary)] hover:bg-[var(--color-deep)] transition-colors disabled:opacity-30"
+        className="flex items-center justify-center w-8 h-8 text-ih-muted hover:text-ih-ink hover:bg-ih-surface-2 transition-colors disabled:opacity-30"
         aria-label="Increase quantity"
       >
         +

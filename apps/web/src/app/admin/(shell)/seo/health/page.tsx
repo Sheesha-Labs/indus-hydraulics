@@ -161,10 +161,10 @@ export default async function SeoHealthPage() {
 
       {/* Per-type breakdown */}
       <Section title="By entity type">
-        <div className="border border-[var(--color-border)] overflow-hidden">
+        <div className="border border-ih-border overflow-hidden">
           <table className="w-full text-[13px]">
             <thead>
-              <tr className="border-b border-[var(--color-border)] bg-[var(--color-deep)]">
+              <tr className="border-b border-ih-border bg-ih-surface-2">
                 <Th>Type</Th>
                 <Th>Total</Th>
                 <Th>Avg score</Th>
@@ -177,9 +177,9 @@ export default async function SeoHealthPage() {
               {Object.entries(summary.byType).map(([type, s]) => (
                 <tr
                   key={type}
-                  className="border-b border-[var(--color-border)] last:border-0 hover:bg-[var(--color-deep)]"
+                  className="border-b border-ih-border last:border-0 hover:bg-ih-surface-2"
                 >
-                  <td className="px-3 py-2.5 font-mono text-[11px] uppercase tracking-[0.08em] text-[var(--color-body)]">
+                  <td className="px-3 py-2.5 font-mono text-[11px] uppercase tracking-[0.08em] text-ih-ink-2">
                     {TYPE_LABELS[type as SeoEntityType]}
                   </td>
                   <td className="px-3 py-2.5 font-mono text-[12px] tabular-nums">{s.total}</td>
@@ -207,10 +207,10 @@ export default async function SeoHealthPage() {
         {worstOffenders.length === 0 ? (
           <Empty>Nothing critical right now.</Empty>
         ) : (
-          <div className="border border-[var(--color-border)] overflow-hidden">
+          <div className="border border-ih-border overflow-hidden">
             <table className="w-full text-[13px]">
               <thead>
-                <tr className="border-b border-[var(--color-border)] bg-[var(--color-deep)]">
+                <tr className="border-b border-ih-border bg-ih-surface-2">
                   <Th>Score</Th>
                   <Th>Type</Th>
                   <Th>Title</Th>
@@ -222,21 +222,21 @@ export default async function SeoHealthPage() {
                   return (
                     <tr
                       key={`${r.entityType}-${r.entityId}`}
-                      className="border-b border-[var(--color-border)] last:border-0 hover:bg-[var(--color-deep)]"
+                      className="border-b border-ih-border last:border-0 hover:bg-ih-surface-2"
                     >
                       <td className="px-3 py-2.5">
                         <SeoHealthBadge score={r.score} size="sm" />
                       </td>
-                      <td className="px-3 py-2.5 font-mono text-[10px] uppercase tracking-[0.08em] text-[var(--color-muted)]">
+                      <td className="px-3 py-2.5 font-mono text-[10px] uppercase tracking-[0.08em] text-ih-muted">
                         {TYPE_LABELS[r.entityType]}
                       </td>
                       <td className="px-3 py-2.5">
                         {path ? (
-                          <Link href={path} className="text-[var(--color-body)] hover:text-[var(--color-accent)]">
+                          <Link href={path} className="text-ih-ink-2 hover:text-ih-accent">
                             {r.title}
                           </Link>
                         ) : (
-                          <span className="text-[var(--color-body)]">{r.title}</span>
+                          <span className="text-ih-ink-2">{r.title}</span>
                         )}
                       </td>
                     </tr>
@@ -253,18 +253,18 @@ export default async function SeoHealthPage() {
         <div className="grid grid-cols-2 gap-3 max-w-[640px]">
           <Link
             href="/admin/seo/redirects"
-            className="border border-[var(--color-border)] bg-[var(--color-elevated)] p-4 hover:bg-[var(--color-deep)] transition-colors"
+            className="border border-ih-border bg-ih-surface p-4 hover:bg-ih-surface-2 transition-colors"
           >
-            <p className="font-mono text-[10px] uppercase tracking-[0.1em] text-[var(--color-muted)]">
+            <p className="font-mono text-[10px] uppercase tracking-[0.1em] text-ih-muted">
               Active redirects
             </p>
             <p className="text-[28px] font-semibold mt-1">{totalRedirects}</p>
           </Link>
           <Link
             href="/admin/seo/redirects/not-found"
-            className="border border-[var(--color-border)] bg-[var(--color-elevated)] p-4 hover:bg-[var(--color-deep)] transition-colors"
+            className="border border-ih-border bg-ih-surface p-4 hover:bg-ih-surface-2 transition-colors"
           >
-            <p className="font-mono text-[10px] uppercase tracking-[0.1em] text-[var(--color-muted)]">
+            <p className="font-mono text-[10px] uppercase tracking-[0.1em] text-ih-muted">
               Unresolved 404s
             </p>
             <p
@@ -324,20 +324,20 @@ function SearchPanel({
   warn?: boolean
 }) {
   return (
-    <div className="border border-[var(--color-border)] bg-[var(--color-elevated)] p-4">
+    <div className="border border-ih-border bg-ih-surface p-4">
       <div className="flex items-center justify-between mb-3">
-        <p className="font-mono text-[10px] uppercase tracking-[0.1em] text-[var(--color-muted)]">
+        <p className="font-mono text-[10px] uppercase tracking-[0.1em] text-ih-muted">
           {heading}
         </p>
         <Link
           href={ctaHref}
-          className="font-mono text-[10px] text-[var(--color-accent)] hover:underline"
+          className="font-mono text-[10px] text-ih-accent hover:underline"
         >
           {ctaLabel}
         </Link>
       </div>
       {rows.length === 0 ? (
-        <p className="text-[12px] text-[var(--color-muted)] py-4 text-center">{empty}</p>
+        <p className="text-[12px] text-ih-muted py-4 text-center">{empty}</p>
       ) : (
         <ul className="flex flex-col gap-1">
           {rows.map((r) => (
@@ -347,13 +347,13 @@ function SearchPanel({
             >
               <span
                 className={`truncate ${
-                  warn ? 'text-[oklch(0.5_0.18_25)]' : 'text-[var(--color-body)]'
+                  warn ? 'text-[oklch(0.5_0.18_25)]' : 'text-ih-ink-2'
                 }`}
                 title={r.label}
               >
                 {r.label}
               </span>
-              <span className="text-[var(--color-muted)] tabular-nums whitespace-nowrap">
+              <span className="text-ih-muted tabular-nums whitespace-nowrap">
                 {r.value}
               </span>
             </li>
@@ -501,8 +501,8 @@ function Tile({
   danger?: boolean
 }) {
   return (
-    <div className="border border-[var(--color-border)] bg-[var(--color-elevated)] p-4">
-      <div className="font-mono text-[10px] uppercase tracking-[0.1em] text-[var(--color-muted)]">
+    <div className="border border-ih-border bg-ih-surface p-4">
+      <div className="font-mono text-[10px] uppercase tracking-[0.1em] text-ih-muted">
         {label}
       </div>
       <div
@@ -510,7 +510,7 @@ function Tile({
           danger
             ? 'text-[oklch(0.5_0.18_25)]'
             : accent
-              ? 'text-[var(--color-accent)]'
+              ? 'text-ih-accent'
               : ''
         }`}
       >
@@ -523,7 +523,7 @@ function Tile({
 function Section({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <div className="mb-8">
-      <h2 className="font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-3">
+      <h2 className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-3">
         {title}
       </h2>
       {children}
@@ -533,7 +533,7 @@ function Section({ title, children }: { title: string; children: React.ReactNode
 
 function Empty({ children }: { children: React.ReactNode }) {
   return (
-    <div className="py-10 text-center border border-dashed border-[var(--color-border)] text-[13px] text-[var(--color-muted)]">
+    <div className="py-10 text-center border border-dashed border-ih-border text-[13px] text-ih-muted">
       {children}
     </div>
   )
@@ -541,7 +541,7 @@ function Empty({ children }: { children: React.ReactNode }) {
 
 function Th({ children }: { children: React.ReactNode }) {
   return (
-    <th className="text-left px-3 py-2.5 font-mono text-[10px] uppercase tracking-[0.1em] text-[var(--color-muted)]">
+    <th className="text-left px-3 py-2.5 font-mono text-[10px] uppercase tracking-[0.1em] text-ih-muted">
       {children}
     </th>
   )

@@ -35,7 +35,7 @@ export default function SeoSettingsForm({ seoSetting }: Props) {
   return (
     <form action={handleSave} className="max-w-[640px] space-y-5">
       <div>
-        <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+        <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
           Default Title Template
         </label>
         <input
@@ -43,15 +43,15 @@ export default function SeoSettingsForm({ seoSetting }: Props) {
           type="text"
           defaultValue={seoSetting?.defaultMetaTitleTemplate ?? ''}
           placeholder="%s — Indus Hydraulics"
-          className="w-full h-10 px-3 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] focus:outline-none focus:border-[var(--color-accent)]"
+          className="w-full h-10 px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent"
         />
-        <p className="mt-1 text-[11px] text-[var(--color-muted)]">
+        <p className="mt-1 text-[11px] text-ih-muted">
           Use %s for the page-specific title part. The OS falls back to the plain title if applying the template would push past 70 characters.
         </p>
       </div>
 
       <div>
-        <label className="block font-mono text-[11px] tracking-[0.1em] uppercase text-[var(--color-muted)] mb-1.5">
+        <label className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
           Default Meta Description
         </label>
         <textarea
@@ -59,7 +59,7 @@ export default function SeoSettingsForm({ seoSetting }: Props) {
           rows={3}
           defaultValue={seoSetting?.defaultMetaDescription ?? ''}
           placeholder="Indus Hydraulics — precision hydraulic components for industrial applications."
-          className="w-full px-3 py-2.5 border border-[var(--color-border)] bg-[var(--color-elevated)] text-[13px] focus:outline-none focus:border-[var(--color-accent)] resize-none"
+          className="w-full px-3 py-2.5 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent resize-none"
         />
       </div>
 
@@ -67,12 +67,12 @@ export default function SeoSettingsForm({ seoSetting }: Props) {
         <button
           type="submit"
           disabled={isPending}
-          className="h-9 px-5 bg-[var(--color-accent)] text-white font-mono text-[12px] hover:opacity-90 disabled:opacity-50"
+          className="h-9 px-5 bg-ih-accent text-white font-mono text-[12px] hover:opacity-90 disabled:opacity-50"
         >
           {isPending ? 'Saving…' : 'Save Settings'}
         </button>
         {saved && (
-          <span className="font-mono text-[11px] text-[var(--color-good)]">Saved ✓</span>
+          <span className="font-mono text-[11px] text-ih-success">Saved ✓</span>
         )}
         {error && (
           <span className="font-mono text-[11px] text-[oklch(0.5_0.18_25)]" role="alert">

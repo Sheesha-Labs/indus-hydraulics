@@ -19,22 +19,22 @@ export default async function NewScrapeJobPage({ params }: Props) {
       <header className="mb-6">
         <Link
           href="/admin/scraper"
-          className="text-[11px] font-mono uppercase tracking-wider text-[var(--color-muted)] hover:text-[var(--color-primary)]"
+          className="text-[11px] font-mono uppercase tracking-wider text-ih-muted hover:text-ih-ink"
         >
           ← Back to crawls
         </Link>
-        <h1 className="text-[22px] font-semibold text-[var(--color-primary)] mt-2">Start a new crawl</h1>
-        <p className="text-[13px] text-[var(--color-muted)] mt-1">
+        <h1 className="text-[22px] font-semibold text-ih-ink mt-2">Start a new crawl</h1>
+        <p className="text-[13px] text-ih-muted mt-1">
           Paste a competitor sitemap URL — or a list of product URLs, one per line — and we&rsquo;ll discover their catalogue in the background.
         </p>
       </header>
 
-      <div className="border border-[var(--color-border)] bg-[var(--color-surface)] p-6">
+      <div className="border border-ih-border bg-ih-bg p-6">
         <StartScrapeForm />
       </div>
 
-      <aside className="mt-6 border-l-2 border-[var(--color-accent)] bg-[var(--color-deep)] p-4 text-[12px] text-[var(--color-body)]">
-        <p className="font-mono uppercase tracking-wider text-[10px] text-[var(--color-muted)] mb-1.5">
+      <aside className="mt-6 border-l-2 border-ih-accent bg-ih-surface-2 p-4 text-[12px] text-ih-ink-2">
+        <p className="font-mono uppercase tracking-wider text-[10px] text-ih-muted mb-1.5">
           What happens next
         </p>
         <ol className="list-decimal list-inside space-y-1">

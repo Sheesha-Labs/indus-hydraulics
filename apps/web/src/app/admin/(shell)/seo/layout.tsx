@@ -14,7 +14,7 @@ export default async function SeoLayout({ children }: { children: React.ReactNod
     <div className="p-8">
       <div className="mb-6">
         <h1 className="text-[24px] font-semibold tracking-tight">SEO &amp; Search</h1>
-        <p className="text-[13px] text-[var(--color-muted)] mt-1">
+        <p className="text-[13px] text-ih-muted mt-1">
           Central console for product, category, and content SEO across the storefront.
         </p>
       </div>

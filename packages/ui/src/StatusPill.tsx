@@ -25,8 +25,8 @@ const TONE_CLASSES: Record<StatusTone, string> = {
   warn: 'text-[oklch(0.5_0.14_70)] bg-[oklch(0.96_0.05_70)]',
   danger: 'text-[oklch(0.5_0.18_25)] bg-[oklch(0.97_0.04_25)]',
   info: 'text-[oklch(0.4_0.1_240)] bg-[oklch(0.95_0.03_240)]',
-  muted: 'text-[var(--color-muted)] bg-[var(--color-deep)]',
-  accent: 'text-white bg-[var(--color-accent)]',
+  muted: 'text-ih-muted bg-ih-surface-2',
+  accent: 'text-white bg-ih-accent',
 }
 
 const SIZE_CLASSES = {
