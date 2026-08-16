@@ -62,10 +62,23 @@ const SHARED_CSP = [
   'upgrade-insecure-requests',
 ]
 
+// Google Analytics origins are listed HERE and deliberately not in ADMIN_CSP.
+// (storefront)/layout.tsx mounts <GoogleAnalytics> whenever GA_MEASUREMENT_ID
+// is set, and without googletagmanager.com on script-src the browser refuses
+// gtag/js outright — the tag never loads and GA4 records nothing at all. The
+// only symptom is a CSP violation in the console, so the site looks fine and
+// the analytics dashboard is simply empty.
+//
+// connect-src needs the collect endpoints as well: script-src alone loads the
+// tag but every beacon it then sends is blocked, which fails the same way.
+const GA_SCRIPT_ORIGINS = 'https://www.googletagmanager.com'
+const GA_CONNECT_ORIGINS =
+  'https://www.google-analytics.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com'
+
 const STOREFRONT_CSP = [
   ...SHARED_CSP,
-  "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://va.vercel-scripts.com https://vitals.vercel-insights.com https://*.sentry.io https://*.ingest.sentry.io https://*.i.posthog.com https://*.posthog.com",
-  "connect-src 'self' https://*.supabase.co https://*.sentry.io https://*.ingest.sentry.io https://va.vercel-scripts.com https://vitals.vercel-insights.com https://*.i.posthog.com https://*.posthog.com",
+  `script-src 'self' 'unsafe-inline' 'unsafe-eval' ${GA_SCRIPT_ORIGINS} https://va.vercel-scripts.com https://vitals.vercel-insights.com https://*.sentry.io https://*.ingest.sentry.io https://*.i.posthog.com https://*.posthog.com`,
+  `connect-src 'self' https://*.supabase.co ${GA_CONNECT_ORIGINS} https://*.sentry.io https://*.ingest.sentry.io https://va.vercel-scripts.com https://vitals.vercel-insights.com https://*.i.posthog.com https://*.posthog.com`,
   "frame-ancestors 'self'",
 ].join('; ')
 
