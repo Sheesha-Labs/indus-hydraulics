@@ -125,19 +125,10 @@ export default function SearchAutocomplete({ initialQuery = '', className }: Pro
     return () => document.removeEventListener('mousedown', onDocClick)
   }, [])
 
-  // ⌘K / Ctrl+K from anywhere → focus + select input.
-  useEffect(() => {
-    function onKeydown(e: KeyboardEvent) {
-      const isShortcut = (e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k'
-      if (!isShortcut) return
-      e.preventDefault()
-      inputRef.current?.focus()
-      inputRef.current?.select()
-      setOpen(true)
-    }
-    document.addEventListener('keydown', onKeydown)
-    return () => document.removeEventListener('keydown', onKeydown)
-  }, [])
+  // ⌘K belongs to the command palette (components/CommandPalette.tsx), which
+  // is mounted in the storefront shell and reachable from every route. This
+  // component used to bind the same chord and pull focus into the header
+  // input; with both bound, the palette opened and instantly lost focus.
 
   function recordSubmit(trimmed: string) {
     const next = pushRecentQuery(recents, trimmed)

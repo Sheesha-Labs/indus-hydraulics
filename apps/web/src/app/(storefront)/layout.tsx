@@ -9,6 +9,7 @@ import { buildOrgLd, buildWebsiteLd } from '@indus/domain'
 import { JsonLd } from '@indus/ui'
 import SiteHeader from '../../components/SiteHeader'
 import SiteFooter from '../../components/SiteFooter'
+import CommandPalette from '../../components/CommandPalette'
 import CompareTrayBadge from '../../components/CompareTrayBadge'
 import { BASE_URL, ORG_ID, SITE_NAME } from '../../lib/seo'
 import { mediaUrl } from '../../lib/media'
@@ -151,6 +152,7 @@ export default async function StorefrontLayout({ children }: { children: React.R
         <SiteHeader />
         <div className="flex-1">{children}</div>
         <SiteFooter />
+        <CommandPalette />
         <CompareTrayBadge />
         <JsonLd data={[orgLd, websiteLd]} />
         <SpeedInsights />
