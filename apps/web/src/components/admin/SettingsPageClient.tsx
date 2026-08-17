@@ -4,16 +4,30 @@ import { useTransition, useState } from 'react'
 import Link from 'next/link'
 import type { StoreSettings, EmailTemplate } from '@indus/db'
 import { saveStoreSettings, saveEmailTemplate } from '../../app/admin/(shell)/settings/actions'
+import BrandIdentityForm, {
+  type BrandIdentityInitial,
+} from '../../app/admin/(shell)/settings/BrandIdentityForm'
+import type { BrandImageOption } from '../../app/admin/(shell)/settings/BrandImageFields'
 import { Input, Select, Textarea } from '@indus/ui'
 
 interface Props {
   activeTab: string
   storeSettings: StoreSettings | null
   emailTemplates: EmailTemplate[]
+  /**
+   * Brand image ids, split out of `storeSettings` so the Brand tab has a
+   * stable shape to hydrate from. Null only when the settings row does not
+   * exist yet, in which case the tab renders nothing rather than a form whose
+   * save would create a half-populated row.
+   */
+  brandIdentity: BrandIdentityInitial | null
+  /** Media library rows the brand pickers can choose from, URLs resolved. */
+  mediaOptions: BrandImageOption[]
 }
 
 const TABS = [
   { id: 'store', label: 'Store' },
+  { id: 'brand', label: 'Brand & Identity' },
   { id: 'emails', label: 'Email Templates' },
 ]
 
@@ -26,7 +40,13 @@ const EMAIL_KINDS = [
   { kind: 'order_shipped', label: 'Order Shipped', description: 'Sent to customer when order is shipped' },
 ]
 
-export default function SettingsPageClient({ activeTab, storeSettings, emailTemplates }: Props) {
+export default function SettingsPageClient({
+  activeTab,
+  storeSettings,
+  emailTemplates,
+  brandIdentity,
+  mediaOptions,
+}: Props) {
   const [isPending, startTransition] = useTransition()
   const [saved, setSaved] = useState<string | null>(null)
   const [error, setError] = useState<string | null>(null)
@@ -581,6 +601,19 @@ export default function SettingsPageClient({ activeTab, storeSettings, emailTemp
             )}
           </div>
         </form>
+      )}
+
+      {/* Brand & Identity — the four brand images. Its own form and its own
+          save action: the Store tab above is ~30 inputs across store, legal,
+          quote and bank concerns, so posting all of them to change a logo
+          would let an unrelated validation error there block a logo change. */}
+      {activeTab === 'brand' && brandIdentity && (
+        <BrandIdentityForm
+          initial={brandIdentity}
+          brandName={storeSettings?.name ?? 'Indus Hydraulics'}
+          tagline={storeSettings?.tagline ?? null}
+          options={mediaOptions}
+        />
       )}
 
       {/* Email Templates */}

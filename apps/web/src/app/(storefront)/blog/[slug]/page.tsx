@@ -106,7 +106,8 @@ export default async function BlogPostPage({ params }: Props) {
     modifiedAt: post.updatedAt ?? post.seoUpdatedAt ?? post.publishedAt ?? null,
     publisherId: ORG_ID,
     publisherName: SITE_NAME,
-    publisherLogoUrl: settings.logoUrl ? mediaUrl(settings.logoUrl) : null,
+    // Already an absolute URL — `getStoreSettings` resolves it now.
+    publisherLogoUrl: settings.logoUrl,
     override: post.jsonLdOverride ?? undefined,
   })
 

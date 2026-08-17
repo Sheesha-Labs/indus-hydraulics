@@ -947,6 +947,9 @@ model Media {
   importJobSources        ImportJob[]
   navMenuItemPromos       NavMenuItem[]       @relation("NavMenuItemPromo")
   storeSettingsLogos      StoreSettings[]     @relation("StoreSettingsLogo")
+  storeSettingsFooterLogos StoreSettings[]    @relation("StoreSettingsFooterLogo")
+  storeSettingsFavicons   StoreSettings[]     @relation("StoreSettingsFavicon")
+  storeSettingsSearchLogos StoreSettings[]    @relation("StoreSettingsSearchLogo")
   homepageHeroSlides      HomepageHeroSlide[]
   serviceCaseHeroes       ServiceCase[]       @relation("ServiceCaseHero")
   serviceCaseOgImages     ServiceCase[]       @relation("ServiceCaseOg")
@@ -1584,6 +1587,35 @@ model StoreSettings {
   logoMediaId       String?
   logoMedia         Media?  @relation("StoreSettingsLogo", fields: [logoMediaId], references: [id], onDelete: SetNull)
   certificationLine String?
+
+  // How the header logo relates to the typeset "Indus Hydraulics" wordmark:
+  // "mark_and_name" draws it beside the type, "logo_only" replaces the type.
+  // The header cannot tell a monogram from a finished lockup by looking at the
+  // bytes, so the operator says which. See LOGO_STYLES in lib/brand-identity.ts.
+  logoStyle String @default("mark_and_name")
+
+  // The footer sits on the navy surface, so the file that works there is
+  // normally the reversed (light) variant of the header artwork. Its own
+  // column rather than a reuse of logoMediaId, which would force a choice of
+  // which of the two surfaces to get right. Null keeps the typeset wordmark —
+  // deliberately NOT falling back to logoMedia, because a dark lockup on the
+  // dark footer reads as a broken image where the wordmark always reads.
+  footerLogoMediaId String?
+  footerLogoMedia   Media?  @relation("StoreSettingsFooterLogo", fields: [footerLogoMediaId], references: [id], onDelete: SetNull)
+
+  // The browser-tab icon. Null falls back to the bundled app/favicon.ico.
+  faviconMediaId String?
+  faviconMedia   Media?  @relation("StoreSettingsFavicon", fields: [faviconMediaId], references: [id], onDelete: SetNull)
+
+  // The square mark a search engine draws beside the result and in a knowledge
+  // panel — read from rel="icon" sizes="192x192", apple-touch-icon and the
+  // Organization JSON-LD `logo`. Its own column rather than a reuse of the
+  // favicon: a file authored to survive 16px in a tab strip is normally cruder
+  // than the one that should stand for the brand at ~24px in a result row and
+  // much larger in a panel. Null falls back favicon → logo, so this is
+  // additive for an operator who never touches it.
+  searchLogoMediaId String?
+  searchLogoMedia   Media?  @relation("StoreSettingsSearchLogo", fields: [searchLogoMediaId], references: [id], onDelete: SetNull)
 
   // Public contact info (single location for now; multi-location is a deferred follow-up)
   contactPhone         String?

@@ -6,7 +6,8 @@ import type React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import type { ResolvedNavItem } from '@indus/domain'
-import LogoMark from './LogoMark'
+import BrandLockup from './BrandLockup'
+import type { LogoStyle } from '../lib/brand-identity'
 import SearchAutocomplete from './SearchAutocomplete'
 import NavListDropdown from './NavListDropdown'
 
@@ -20,6 +21,11 @@ interface Props {
   industries: NavListEntry[]
   contactPhone: string | null
   contactHours: string | null
+  /** Store name — the typeset wordmark, and the logo's alt text when it stands alone. */
+  brandName: string
+  /** CMS-uploaded header logo, already resolved to a URL. Null uses LogoMark. */
+  logoUrl: string | null
+  logoStyle: LogoStyle
   isSignedIn: boolean
   userName: string | null
   notificationBell?: React.ReactNode
@@ -72,6 +78,9 @@ export default function SiteHeaderClient({
   industries,
   contactPhone,
   contactHours,
+  brandName,
+  logoUrl,
+  logoStyle,
   isSignedIn,
   userName,
   notificationBell,
@@ -151,13 +160,13 @@ export default function SiteHeaderClient({
       <div className="mx-auto flex h-[72px] max-w-[1440px] items-center gap-6 px-5 sm:px-8 xl:px-12">
         {/* Logo */}
         <Link href={`/`} className="flex shrink-0 items-center gap-[11px]">
-          <LogoMark />
-          <span className="font-serif text-[21px] leading-none tracking-[-0.01em]">
-            Indus Hydraulics
-            <small className="mt-1 block font-mono text-[9px] uppercase tracking-[0.14em] text-ih-muted">
-              Industrial Components Co.
-            </small>
-          </span>
+          <BrandLockup
+            logoUrl={logoUrl}
+            logoStyle={logoStyle}
+            name={brandName}
+            sublabel="Industrial Components Co."
+            surface="header"
+          />
         </Link>
 
         {/* Desktop nav */}

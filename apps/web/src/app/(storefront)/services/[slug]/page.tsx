@@ -72,7 +72,8 @@ export default async function ServiceCasePage({ params }: Props) {
     modifiedAt: c.seoUpdatedAt ?? c.updatedAt ?? null,
     publisherId: ORG_ID,
     publisherName: SITE_NAME,
-    publisherLogoUrl: settings.logoUrl ? mediaUrl(settings.logoUrl) : null,
+    // Already an absolute URL — `getStoreSettings` resolves it now.
+    publisherLogoUrl: settings.logoUrl,
     override: c.jsonLdOverride ?? undefined,
   })
 

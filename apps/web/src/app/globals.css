@@ -194,6 +194,36 @@
   display: none;
 }
 
+/* Transparency checkerboard, behind the brand-image previews in
+   /admin/settings?tab=brand. Brand art is almost always a transparent PNG, and
+   a white swatch on a white card hides exactly the mistake the preview exists
+   to catch — an operator cannot see that the "white" logo they uploaded is
+   actually opaque white until it lands on the navy footer.
+
+   A class rather than the `style=` prop it started as: §2.1 bans inline style
+   in apps/web, and a two-gradient background is not expressible as utilities. */
+.ih-checkerboard {
+  background-image:
+    linear-gradient(
+      45deg,
+      rgba(128, 128, 128, 0.16) 25%,
+      transparent 25%,
+      transparent 75%,
+      rgba(128, 128, 128, 0.16) 75%
+    ),
+    linear-gradient(
+      45deg,
+      rgba(128, 128, 128, 0.16) 25%,
+      transparent 25%,
+      transparent 75%,
+      rgba(128, 128, 128, 0.16) 75%
+    );
+  background-size: 12px 12px;
+  background-position:
+    0 0,
+    6px 6px;
+}
+
 /* Compare tray dock. 03 §1 specifies 220ms on cubic-bezier(.32,.72,0,1),
    entering from translateY(100%). Reduced motion drops the translate via the
    motion-reduce: variant at the call site. */

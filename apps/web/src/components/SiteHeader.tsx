@@ -34,6 +34,9 @@ export default async function SiteHeader() {
       industries={industries}
       contactPhone={settings.contactPhone}
       contactHours={settings.contactHours}
+      brandName={settings.name}
+      logoUrl={settings.logoUrl}
+      logoStyle={settings.logoStyle}
       isSignedIn={!!session}
       userName={session?.user?.name ?? null}
       notificationBell={

@@ -4,9 +4,11 @@ import { z } from 'zod'
 import { db } from '@indus/db'
 import { auth } from '../../../../lib/admin-auth'
 import { ROLES, requireRole } from '../../../../lib/rbac'
-import { failFromError, ok, type Result } from '../../../../lib/result'
+import { fail, failFromError, ok, type Result } from '../../../../lib/result'
 import { revalidatePath } from 'next/cache'
 import { invalidateStoreSettings } from '../../../../lib/cache-tags'
+import { STORAGE_BUCKETS, uploadToStorage } from '../../../../lib/supabase-admin'
+import { DEFAULT_LOGO_STYLE, LOGO_STYLES } from '../../../../lib/brand-identity'
 
 const optionalString = (max: number) =>
   z
@@ -22,6 +24,24 @@ const optionalEmail = z
   .email()
   .or(z.literal(''))
   .transform((v) => (v ? v : null))
+
+/**
+ * A Media id from the brand picker, or null for "cleared".
+ *
+ * The picker emits `''` for an empty slot and a uuid otherwise, so the empty
+ * string has to survive validation and become null rather than failing the
+ * uuid check — clearing a logo is a legitimate save, not a malformed one.
+ */
+const optionalMediaId = z
+  .string()
+  .trim()
+  .max(64)
+  .optional()
+  .transform((v) => (v && v.length ? v : null))
+  .refine(
+    (v) => v === null || /^[0-9a-f-]{36}$/i.test(v),
+    'Pick an image from the library rather than typing an id.',
+  )
 
 const linesToArray = (raw: FormDataEntryValue | null): string[] =>
   ((raw as string | null) ?? '')
@@ -177,6 +197,123 @@ export async function saveEmailTemplate(formData: FormData): Promise<Result<void
     revalidatePath('/admin/settings')
     invalidateStoreSettings()
     return ok(undefined)
+  } catch (err) {
+    return failFromError(err)
+  }
+}
+
+// ─── Brand & identity ───────────────────────────────────────────────────────
+
+/**
+ * The four brand images and the header placement switch.
+ *
+ * Its own action rather than more fields on `saveStoreSettings`: that form is
+ * ~30 text inputs across store/legal/quote/bank concerns, and re-posting all
+ * of them to change a logo means any unrelated validation error there blocks
+ * a logo change here. Each field is a Media id (or empty string to clear),
+ * matching the `logoMediaId` FK the schema has always used — a URL column
+ * would leave the media library unable to tell that the file is in use.
+ */
+const BrandIdentitySchema = z.object({
+  logoMediaId: optionalMediaId,
+  logoStyle: z.enum(LOGO_STYLES).default(DEFAULT_LOGO_STYLE),
+  footerLogoMediaId: optionalMediaId,
+  faviconMediaId: optionalMediaId,
+  searchLogoMediaId: optionalMediaId,
+})
+
+export async function saveBrandIdentity(formData: FormData): Promise<Result<void>> {
+  try {
+    requireRole(await auth(), ROLES.SETTINGS_WRITE)
+    const parsed = BrandIdentitySchema.parse({
+      logoMediaId: formData.get('logoMediaId') ?? '',
+      logoStyle: formData.get('logoStyle') || DEFAULT_LOGO_STYLE,
+      footerLogoMediaId: formData.get('footerLogoMediaId') ?? '',
+      faviconMediaId: formData.get('faviconMediaId') ?? '',
+      searchLogoMediaId: formData.get('searchLogoMediaId') ?? '',
+    })
+
+    // A stale id — the operator picked an image and someone deleted it from the
+    // library before they saved — would otherwise surface as a raw Prisma
+    // foreign-key error. Check first and name the field instead.
+    const ids = [
+      parsed.logoMediaId,
+      parsed.footerLogoMediaId,
+      parsed.faviconMediaId,
+      parsed.searchLogoMediaId,
+    ].filter((v): v is string => v !== null)
+    if (ids.length > 0) {
+      const found = await db.media.findMany({
+        where: { id: { in: ids } },
+        select: { id: true },
+      })
+      const known = new Set(found.map((m) => m.id))
+      const missing = ids.filter((id) => !known.has(id))
+      if (missing.length > 0) {
+        return fail(
+          'NOT_FOUND',
+          'One of the selected images is no longer in the media library. Re-pick it and save again.',
+        )
+      }
+    }
+
+    const existing = await db.storeSettings.findFirst({ select: { id: true } })
+    if (existing) {
+      await db.storeSettings.update({ where: { id: existing.id }, data: parsed })
+    } else {
+      await db.storeSettings.create({ data: parsed })
+    }
+
+    revalidatePath('/admin/settings')
+    // Header, footer, favicon links and the Organization JSON-LD all read the
+    // cached settings. Without this purge an operator sees no change for up to
+    // five minutes and re-uploads, thinking the first attempt failed.
+    invalidateStoreSettings()
+    return ok(undefined)
+  } catch (err) {
+    return failFromError(err)
+  }
+}
+
+/**
+ * Uploads a brand image and returns the Media row the picker should select.
+ *
+ * Separate from the product-image action because brand art lands in its own
+ * `brand/` prefix and is deliberately small — these files are drawn at 16–44px
+ * and are already trimmed client-side before they get here, so the ceiling is
+ * well under the 5 MB a product photo gets.
+ */
+export async function uploadBrandImage(
+  formData: FormData,
+): Promise<Result<{ mediaId: string; url: string; filename: string }>> {
+  try {
+    const session = requireRole(await auth(), ROLES.SETTINGS_WRITE)
+    const file = formData.get('file')
+    if (!(file instanceof File)) return fail('VALIDATION', 'No file provided')
+    if (!file.type.startsWith('image/')) return fail('VALIDATION', 'Only image uploads are allowed')
+    // SVG is rejected on purpose: it can carry script, and these files are
+    // served from a public bucket straight into <img> and <link rel="icon">.
+    if (file.type === 'image/svg+xml')
+      return fail('VALIDATION', 'SVG is not accepted — upload a PNG, WebP or AVIF.')
+    if (file.size > 2_000_000) return fail('VALIDATION', 'Brand image must be under 2 MB')
+
+    const { storagePath, bytes, mimeType } = await uploadToStorage(
+      STORAGE_BUCKETS.images,
+      file,
+      'brand',
+    )
+    const media = await db.media.create({
+      data: {
+        kind: 'image',
+        mimeType,
+        originalFilename: file.name,
+        storagePath,
+        bytes,
+        uploadedById: session.user.id,
+      },
+      select: { id: true, storagePath: true, originalFilename: true },
+    })
+    return ok({ mediaId: media.id, url: media.storagePath, filename: media.originalFilename })
   } catch (err) {
     return failFromError(err)
   }

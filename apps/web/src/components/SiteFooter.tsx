@@ -1,7 +1,7 @@
 import type React from 'react'
 import Link from 'next/link'
 import type { ResolvedNavItem } from '@indus/domain'
-import LogoMark from './LogoMark'
+import BrandLockup from './BrandLockup'
 import { getNavMenu } from '../lib/navigation'
 import { getStoreSettings, type ResolvedStoreSettings } from '../lib/store-settings'
 
@@ -68,14 +68,21 @@ export default async function SiteFooter() {
 function BrandBlock({ settings }: { settings: ResolvedStoreSettings }) {
   return (
     <div>
-      <div className="flex items-center gap-2 mb-4">
-        {settings.logoUrl ? (
-          // eslint-disable-next-line @next/next/no-img-element
-          <img src={settings.logoUrl} alt={`${settings.name} logo`} className="h-[34px] w-[34px] object-contain" />
-        ) : (
-          <LogoMark onNavy />
-        )}
-        <span className="font-serif text-[19px] leading-none text-white">{settings.name}</span>
+      {/*
+        `footerLogoUrl`, deliberately NOT falling back to `logoUrl`. The footer
+        is the navy surface, so the file that works here is the reversed
+        (light) variant of the header artwork — and a dark header lockup drawn
+        on the dark footer reads as a broken image, where the built-in mark
+        always reads. Operators set the two independently in
+        /admin/settings?tab=brand.
+      */}
+      <div className="mb-4">
+        <BrandLockup
+          logoUrl={settings.footerLogoUrl}
+          logoStyle={settings.logoStyle}
+          name={settings.name}
+          surface="footer"
+        />
       </div>
       {settings.tagline && (
         <p className="text-[13px] leading-relaxed">{settings.tagline}</p>
