@@ -2,11 +2,21 @@ import 'server-only'
 import { cache } from 'react'
 import { unstable_cache } from 'next/cache'
 import { db } from '@indus/db'
+import { asLogoStyle, DEFAULT_LOGO_STYLE, type LogoStyle } from './brand-identity'
+import { mediaUrl } from './media'
 
 export type ResolvedStoreSettings = {
   name: string
   tagline: string | null
   logoUrl: string | null
+  /** How the header logo relates to the typeset wordmark. */
+  logoStyle: LogoStyle
+  /** Reversed lockup for the navy footer. Never falls back to `logoUrl`. */
+  footerLogoUrl: string | null
+  /** Browser-tab icon. Null falls back to the bundled app/favicon.ico. */
+  faviconUrl: string | null
+  /** Square mark for SERP rows and knowledge panels. Falls back favicon → logo. */
+  searchLogoUrl: string | null
   certificationLine: string | null
   contactPhone: string | null
   contactEmail: string | null
@@ -22,10 +32,27 @@ export type ResolvedStoreSettings = {
   registeredPoBox: string | null
 }
 
+/**
+ * A stored `Media.storagePath` as a URL a browser or a crawler can fetch.
+ *
+ * Supabase Storage hands back a full public URL for the images bucket, which
+ * `mediaUrl` passes through untouched; the older R2-era rows hold a relative
+ * key, which it prefixes. Resolving here rather than at each call site is what
+ * stops the header, the footer, the icon links and the Organization JSON-LD
+ * from disagreeing about the same file.
+ */
+function toUrl(storagePath: string | null | undefined): string | null {
+  return storagePath ? mediaUrl(storagePath) : null
+}
+
 const FALLBACK: ResolvedStoreSettings = {
   name: 'Indus Hydraulics',
   tagline: null,
   logoUrl: null,
+  logoStyle: DEFAULT_LOGO_STYLE,
+  footerLogoUrl: null,
+  faviconUrl: null,
+  searchLogoUrl: null,
   certificationLine: null,
   contactPhone: null,
   contactEmail: null,
@@ -54,6 +81,10 @@ const loadStoreSettings = unstable_cache(
           contactHours: true,
           contactLocationLabel: true,
           logoMedia: { select: { storagePath: true } },
+          logoStyle: true,
+          footerLogoMedia: { select: { storagePath: true } },
+          faviconMedia: { select: { storagePath: true } },
+          searchLogoMedia: { select: { storagePath: true } },
           legalName: true,
           registeredAddressLines: true,
           registeredCity: true,
@@ -70,7 +101,16 @@ const loadStoreSettings = unstable_cache(
     return {
       name: row.name,
       tagline: row.tagline,
-      logoUrl: row.logoMedia?.storagePath ?? null,
+      // Absolutised here rather than at each call site. `mediaUrl` is a
+      // passthrough for the full public URLs Supabase Storage hands back, and
+      // only prefixes the legacy R2 paths — so it is safe on both, and doing
+      // it once means the header, the footer, the icon links and the JSON-LD
+      // cannot end up disagreeing about the same file.
+      logoUrl: toUrl(row.logoMedia?.storagePath),
+      logoStyle: asLogoStyle(row.logoStyle),
+      footerLogoUrl: toUrl(row.footerLogoMedia?.storagePath),
+      faviconUrl: toUrl(row.faviconMedia?.storagePath),
+      searchLogoUrl: toUrl(row.searchLogoMedia?.storagePath),
       certificationLine: row.certificationLine,
       contactPhone: row.contactPhone,
       contactEmail: row.contactEmail,

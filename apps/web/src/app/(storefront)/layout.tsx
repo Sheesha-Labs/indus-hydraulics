@@ -13,9 +13,9 @@ import { SkipToContent } from '@indus/ui'
 import CommandPalette from '../../components/CommandPalette'
 import CompareTrayBadge from '../../components/CompareTrayBadge'
 import { BASE_URL, ORG_ID, SITE_NAME } from '../../lib/seo'
-import { mediaUrl } from '../../lib/media'
 import { areasServed, OFFICES } from '../../lib/site-locations'
 import { getStoreSettings } from '../../lib/store-settings'
+import { resolveSearchIcon } from '../../lib/brand-identity'
 
 /**
  * Optional, comma-separated list of social profile URLs surfaced as
@@ -71,7 +71,68 @@ const DEFAULT_OG_TITLE = 'Indus Hydraulics — Industrial hydraulic distributor'
 const DEFAULT_OG_DESCRIPTION =
   'Pumps, valves, cylinders and hose assemblies for engineers who can’t afford downtime. Authorized distributor for Parker, Bosch Rexroth, Yuken, and HYDAC, shipped from Dubai across the GCC and beyond.'
 
-export const metadata: Metadata = {
+/**
+ * `generateMetadata` rather than a static `metadata`, so the favicon and the
+ * search-result mark can come from the CMS (/admin/settings?tab=brand).
+ *
+ * The read is `getStoreSettings`, which is `unstable_cache`d and already
+ * awaited by the layout body below — so this adds no per-request work and does
+ * not touch a dynamic API, which means the storefront's prerendering is
+ * unaffected. Do NOT swap it for an uncached query: a dynamic read here takes
+ * every route under this layout off the CDN.
+ */
+export async function generateMetadata(): Promise<Metadata> {
+  const settings = await getStoreSettings()
+
+  /*
+   * The mark search engines read. Google asks for a square that is a multiple
+   * of 48px and takes it from `rel="icon"` or `rel="apple-touch-icon"`, so it
+   * is declared as a second, *sized* icon rather than replacing the tab
+   * favicon: two `rel="icon"` tags that both omit `sizes` is an ambiguity, two
+   * that declare different sizes is the standard way to offer both.
+   */
+  const favicon = settings.faviconUrl
+  const searchIcon = resolveSearchIcon(settings, BASE_URL)
+
+  /*
+   * With nothing set at all, `icons` is omitted entirely and the browser falls
+   * back to requesting /favicon.ico, which `public/favicon.ico` still answers.
+   *
+   * That file lives in `public/` and NOT in `app/` on purpose. Under the
+   * `app/favicon.ico` file convention Next emits its own `<link rel="icon">`
+   * unconditionally — so an operator who uploads a favicon here would get two
+   * competing icon links and no say in which one the browser picks. Moving it
+   * to `public/` keeps the default working (same URL, served statically) while
+   * letting this block be the only thing that declares an icon. Do not move it
+   * back.
+   */
+  const icons: Metadata['icons'] =
+    favicon || searchIcon
+      ? {
+          // The sized entry is added only when it is a *different* file: with
+          // no search logo set the chain resolves back to the favicon, and
+          // emitting the same href twice would be two icon links arguing over
+          // one image.
+          icon:
+            searchIcon && searchIcon !== favicon
+              ? [...(favicon ? [{ url: favicon }] : []), { url: searchIcon, sizes: '192x192' }]
+              : (favicon ?? searchIcon ?? undefined),
+          ...(favicon ? { shortcut: favicon } : {}),
+          // Home-screen bookmarks want a bigger square than a tab strip does —
+          // the search-result mark is authored at exactly that size, so it
+          // serves here too and iOS scales it.
+          ...(searchIcon || favicon ? { apple: searchIcon ?? favicon! } : {}),
+        }
+      : undefined
+
+  return {
+    ...BASE_METADATA,
+    ...(icons ? { icons } : {}),
+  }
+}
+
+/** Everything in the head that does not depend on a database read. */
+const BASE_METADATA: Metadata = {
   title: {
     default: 'Indus Hydraulics',
     template: '%s | Indus Hydraulics',
@@ -128,7 +189,11 @@ export default async function StorefrontLayout({ children }: { children: React.R
     name: SITE_NAME,
     legalName: settings.legalName,
     url: BASE_URL,
-    logoUrl: settings.logoUrl ? mediaUrl(settings.logoUrl) : null,
+    // The same resolved mark the <head> icon links declare, not `logoUrl`
+    // alone. A crawler that reads one image from the head and a different one
+    // from the structured data is exactly the case that produces a blank
+    // generic icon in the result row.
+    logoUrl: resolveSearchIcon(settings, BASE_URL),
     description:
       'Industrial hydraulic components — pumps, cylinders, valves, hoses and consumables — for engineers who can’t afford downtime.',
     foundingDate: '2003',
