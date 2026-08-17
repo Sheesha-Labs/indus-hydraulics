@@ -12,12 +12,15 @@ import type { BlogBlockInput } from '@indus/domain'
  * the submitted object and again on the server. These descriptors decide what
  * the form looks like and what it starts as, nothing more.
  *
- * The service-case-shaped blocks (`spec_table`, `sop_block`, `approach_grid`,
- * `team_list`, `problem_solution`, `result_box`) deliberately have no form.
- * They belong to /services case studies, they carry five-column rebuild tables
- * that no knowledge-base article has used, and a form for each would be a lot
- * of surface area for content nobody is writing here. They still round-trip
- * untouched — see the carry-through card.
+ * Every block type in the union has a form. The six service-case shapes
+ * (`problem_solution`, `approach_grid`, `spec_table`, `result_box`, `sop_block`,
+ * `team_list`) were carry-through only at first, on the reasoning that no
+ * knowledge-base article had used them; a failure-analysis or overhaul
+ * write-up wants exactly those, and "the editor can display it but not create
+ * it" is a worse answer than a form with a few more fields.
+ *
+ * The carry-through card remains for a block whose type is not in this list at
+ * all — a row hand-written against a future schema, or one this build predates.
  */
 
 /** The single-value fields — everything a repeatable row is built from. */
@@ -38,7 +41,33 @@ export type ScalarField =
       label: string
       hint?: string
       options: Array<{ value: string; label: string }>
+      /** MUST match the schema's `.default()`. See `newRow`. */
+      default: string
     }
+  | {
+      kind: 'checkbox'
+      key: string
+      label: string
+      hint?: string
+      /** MUST match the schema's `.default()`. See `newRow`. */
+      default: boolean
+    }
+
+/**
+ * A fresh row, seeded from the descriptors' declared defaults.
+ *
+ * An added row used to start as `{}`, which reads as "unticked" and "first
+ * option" in the form while the schema fills in its own defaults on save. A
+ * task added to a procedure therefore showed as not-done and saved as done.
+ * Declaring the default in one place and rendering from it removes the gap.
+ */
+export function newRow(fields: ScalarField[]): Record<string, unknown> {
+  const row: Record<string, unknown> = {}
+  for (const field of fields) {
+    if (field.kind === 'select' || field.kind === 'checkbox') row[field.key] = field.default
+  }
+  return row
+}
 
 export type Field =
   | ScalarField
@@ -63,6 +92,33 @@ export type Field =
       min: number
       max: number
       fields: ScalarField[]
+    }
+  /** A fixed nested object, e.g. `problem_solution.problem`. */
+  | { kind: 'object'; key: string; label: string; hint?: string; fields: ScalarField[] }
+  /**
+   * An array of objects where one member is itself an array of objects — the
+   * only two-deep shape in the set (`sop_block.phases[].rows[]`). Kept as its
+   * own kind rather than making `rows` recursive: one block needs it, and a
+   * general recursion would let a form nest four deep with no way to read it.
+   */
+  | {
+      kind: 'groups'
+      key: string
+      label: string
+      hint?: string
+      itemLabel: string
+      min: number
+      max: number
+      /** Fields on the group itself, e.g. the phase name. */
+      fields: ScalarField[]
+      /** The nested list every group carries. */
+      nested: {
+        key: string
+        itemLabel: string
+        min: number
+        max: number
+        fields: ScalarField[]
+      }
     }
   /** The comparison table's columns + rows, which have to agree. */
   | { kind: 'matrix'; key: 'rows'; label: string; hint?: string }
@@ -172,6 +228,7 @@ const FORMS: BlockFormSpec[] = [
           { value: 'warning', label: 'Warning' },
           { value: 'danger', label: 'Danger — safety' },
         ],
+        default: 'note',
       },
       { kind: 'text', key: 'title', label: 'Title', required: true },
       { kind: 'textarea', key: 'body', label: 'Body', required: true, rows: 4 },
@@ -354,6 +411,278 @@ const FORMS: BlockFormSpec[] = [
       { kind: 'text', key: 'cite', label: 'Attribution', required: true },
     ],
     template: () => ({ type: 'pull_quote', quote: '', cite: '' }) as BlogBlockInput,
+  },
+  {
+    type: 'problem_solution',
+    label: 'Problem / solution',
+    purpose:
+      'Two columns side by side — what we were told against what we found. Sets a case up before the detail.',
+    fields: [
+      {
+        kind: 'object',
+        key: 'problem',
+        label: 'Problem',
+        fields: [
+          { kind: 'text', key: 'label', label: 'Label', required: true, placeholder: 'What we were told' },
+          { kind: 'text', key: 'title', label: 'Title', required: true },
+          { kind: 'textarea', key: 'body', label: 'Body', required: true, rows: 4 },
+        ],
+      },
+      {
+        kind: 'object',
+        key: 'solution',
+        label: 'Solution',
+        fields: [
+          { kind: 'text', key: 'label', label: 'Label', required: true, placeholder: 'What we found' },
+          { kind: 'text', key: 'title', label: 'Title', required: true },
+          { kind: 'textarea', key: 'body', label: 'Body', required: true, rows: 4 },
+        ],
+      },
+    ],
+    template: () =>
+      ({
+        type: 'problem_solution',
+        problem: { label: 'What we were told', title: '', body: '' },
+        solution: { label: 'What we found', title: '', body: '' },
+      }) as BlogBlockInput,
+  },
+  {
+    type: 'approach_grid',
+    label: 'Approach grid',
+    purpose: 'The phases of a job, as a grid. Two to six of them.',
+    fields: [
+      {
+        kind: 'rows',
+        key: 'phases',
+        label: 'Phases',
+        itemLabel: 'Phase',
+        min: 2,
+        max: 6,
+        fields: [
+          { kind: 'text', key: 'number', label: 'Number', required: true, mono: true, placeholder: 'PHASE 01' },
+          { kind: 'text', key: 'title', label: 'Title', required: true },
+          { kind: 'textarea', key: 'body', label: 'Body', required: true, rows: 3 },
+          { kind: 'text', key: 'duration', label: 'Duration', required: true, mono: true, placeholder: 'Days 0 — 2' },
+        ],
+      },
+    ],
+    template: () =>
+      ({
+        type: 'approach_grid',
+        phases: [
+          { number: 'PHASE 01', title: '', body: '', duration: '' },
+          { number: 'PHASE 02', title: '', body: '', duration: '' },
+        ],
+      }) as BlogBlockInput,
+  },
+  {
+    type: 'spec_table',
+    label: 'Spec table',
+    purpose:
+      'As-found against after-rebuild, row by row. The shape a strip-down report is written in.',
+    fields: [
+      { kind: 'text', key: 'caption', label: 'Caption', required: true },
+      {
+        kind: 'rows',
+        key: 'rows',
+        label: 'Rows',
+        itemLabel: 'Row',
+        min: 1,
+        max: 40,
+        fields: [
+          { kind: 'text', key: 'component', label: 'Component', required: true },
+          { kind: 'text', key: 'spec', label: 'Spec', required: true, mono: true },
+          { kind: 'text', key: 'asFound', label: 'As found', required: true, mono: true },
+          { kind: 'text', key: 'afterRebuild', label: 'After rebuild', required: true, mono: true },
+          { kind: 'text', key: 'status', label: 'Status', required: true },
+          {
+            kind: 'select',
+            key: 'asFoundStyle',
+            label: 'As-found style',
+            options: [
+              { value: 'plain', label: 'Plain' },
+              { value: 'num', label: 'Measurement' },
+              { value: 'bad', label: 'Failure — red' },
+            ],
+            default: 'plain',
+          },
+          {
+            kind: 'select',
+            key: 'afterStyle',
+            label: 'After style',
+            options: [
+              { value: 'good', label: 'Pass — green' },
+              { value: 'num', label: 'Measurement' },
+              { value: 'plain', label: 'Plain' },
+            ],
+            default: 'good',
+          },
+          { kind: 'checkbox', key: 'highlight', label: 'Critical finding', default: false },
+        ],
+      },
+    ],
+    template: () =>
+      ({
+        type: 'spec_table',
+        caption: '',
+        rows: [
+          {
+            component: '',
+            spec: '',
+            asFound: '',
+            afterRebuild: '',
+            status: '',
+            asFoundStyle: 'plain',
+            afterStyle: 'good',
+            highlight: false,
+          },
+        ],
+      }) as BlogBlockInput,
+  },
+  {
+    type: 'result_box',
+    label: 'Result box',
+    purpose: 'Closes a case with the numbers — two to six metric cells under a short summary.',
+    fields: [
+      { kind: 'text', key: 'label', label: 'Label', required: true, mono: true, placeholder: 'Result · summary' },
+      { kind: 'text', key: 'title', label: 'Title', required: true },
+      { kind: 'textarea', key: 'body', label: 'Body', required: true, rows: 4 },
+      {
+        kind: 'rows',
+        key: 'cells',
+        label: 'Metrics',
+        itemLabel: 'Metric',
+        min: 2,
+        max: 6,
+        fields: [
+          { kind: 'text', key: 'value', label: 'Value', required: true, mono: true, placeholder: '32' },
+          { kind: 'text', key: 'valueSmall', label: 'Unit', mono: true, placeholder: 'hrs' },
+          { kind: 'text', key: 'label', label: 'Label', required: true },
+          {
+            kind: 'select',
+            key: 'style',
+            label: 'Style',
+            options: [
+              { value: 'neutral', label: 'Neutral' },
+              { value: 'good', label: 'Good — green' },
+              { value: 'accent', label: 'Accent' },
+            ],
+            default: 'neutral',
+          },
+        ],
+      },
+    ],
+    template: () =>
+      ({
+        type: 'result_box',
+        label: 'Result · summary',
+        title: '',
+        body: '',
+        cells: [
+          { value: '', label: '', style: 'accent' },
+          { value: '', label: '', style: 'neutral' },
+        ],
+      }) as BlogBlockInput,
+  },
+  {
+    type: 'sop_block',
+    label: 'Procedure',
+    purpose:
+      'A checklist with a dark header bar, grouped into phases. Each task carries who did it and with what.',
+    fields: [
+      {
+        kind: 'text',
+        key: 'header',
+        label: 'Header',
+        required: true,
+        mono: true,
+        placeholder: 'SOP-OG-014 · HOSE OVERHAUL · REV 06',
+      },
+      {
+        kind: 'text',
+        key: 'completion',
+        label: 'Completion',
+        required: true,
+        mono: true,
+        placeholder: '32 / 32 COMPLETE',
+      },
+      {
+        kind: 'groups',
+        key: 'phases',
+        label: 'Phases',
+        itemLabel: 'Phase',
+        min: 1,
+        max: 12,
+        fields: [
+          {
+            kind: 'text',
+            key: 'name',
+            label: 'Phase name',
+            required: true,
+            placeholder: 'Phase 01 · Mobilise & inspect',
+          },
+        ],
+        nested: {
+          key: 'rows',
+          itemLabel: 'Task',
+          min: 1,
+          max: 30,
+          fields: [
+            { kind: 'text', key: 'task', label: 'Task', required: true },
+            { kind: 'textarea', key: 'detail', label: 'Detail', required: true, rows: 2 },
+            { kind: 'text', key: 'who', label: 'Who', required: true, placeholder: 'Field tech' },
+            { kind: 'text', key: 'tool', label: 'Tool', required: true, placeholder: 'Torque wrench' },
+            { kind: 'checkbox', key: 'done', label: 'Done', default: true },
+          ],
+        },
+      },
+    ],
+    template: () =>
+      ({
+        type: 'sop_block',
+        header: '',
+        completion: '',
+        phases: [
+          {
+            name: '',
+            rows: [{ task: '', detail: '', who: '', tool: '', done: true }],
+          },
+        ],
+      }) as BlogBlockInput,
+  },
+  {
+    type: 'team_list',
+    label: 'Team list',
+    purpose: 'Who did the work, and what each of them was responsible for.',
+    fields: [
+      { kind: 'textarea', key: 'intro', label: 'Intro', rows: 3 },
+      {
+        kind: 'rows',
+        key: 'members',
+        label: 'Members',
+        itemLabel: 'Member',
+        min: 1,
+        max: 20,
+        fields: [
+          { kind: 'text', key: 'name', label: 'Name', required: true },
+          { kind: 'text', key: 'role', label: 'Role', required: true },
+          { kind: 'text', key: 'location', label: 'Location' },
+          { kind: 'textarea', key: 'scope', label: 'Scope', required: true, rows: 2 },
+        ],
+      },
+      {
+        kind: 'text',
+        key: 'caseFileMeta',
+        label: 'Case file line',
+        mono: true,
+        hint: 'Mono caps foot line, e.g. "Case file · INTAKE-0142 · Published 2026-08".',
+      },
+    ],
+    template: () =>
+      ({
+        type: 'team_list',
+        members: [{ name: '', role: '', scope: '' }],
+      }) as BlogBlockInput,
   },
   {
     type: 'as_of_stamp',

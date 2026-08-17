@@ -3,6 +3,7 @@
 import { useEffect, useId, useRef, useState } from 'react'
 import { Plus, Trash2, X } from 'lucide-react'
 import { BlogBlockSchema, type BlogBlockInput } from '@indus/domain'
+import { newRow } from './block-fields'
 import type { BlockFormSpec, Field, ScalarField } from './block-fields'
 
 type Props = {
@@ -218,6 +219,8 @@ function FieldView({
   onChangeKey: (key: string, next: unknown) => void
 }) {
   const id = `${idPrefix}-${field.key}`
+  // Zod reports issue paths as `phases.0.rows.1.task`, so error lookup is keyed
+  // the same way all the way down rather than being reassembled per level.
   const error = errors[field.key]
 
   if (field.kind === 'matrix') {
@@ -311,7 +314,136 @@ function FieldView({
         <AddButton
           disabled={rows.length >= field.max}
           label={`Add ${field.itemLabel.toLowerCase()}`}
-          onClick={() => onChange([...rows, {}])}
+          onClick={() => onChange([...rows, newRow(field.fields)])}
+        />
+        <FieldError message={error} />
+      </fieldset>
+    )
+  }
+
+  if (field.kind === 'object') {
+    const obj = (value && typeof value === 'object' ? value : {}) as Draft
+    return (
+      <fieldset className="flex flex-col gap-2.5 rounded-md border border-ih-border bg-ih-bg p-3">
+        <Legend label={field.label} hint={field.hint} />
+        {field.fields.map((sub) => (
+          <ScalarFieldView
+            key={sub.key}
+            field={sub}
+            id={`${id}-${sub.key}`}
+            value={obj[sub.key]}
+            error={errors[`${field.key}.${sub.key}`]}
+            onChange={(next) => onChange({ ...obj, [sub.key]: next })}
+          />
+        ))}
+      </fieldset>
+    )
+  }
+
+  if (field.kind === 'groups') {
+    const groups = Array.isArray(value) ? (value as Draft[]) : []
+    const setGroup = (i: number, next: Draft) => {
+      const copy = [...groups]
+      copy[i] = next
+      onChange(copy)
+    }
+    return (
+      <fieldset className="flex flex-col gap-3">
+        <Legend label={field.label} hint={field.hint} />
+        {groups.map((group, i) => {
+          const nested = Array.isArray(group[field.nested.key])
+            ? (group[field.nested.key] as Draft[])
+            : []
+          return (
+            <div key={i} className="rounded-md border border-ih-border bg-ih-bg p-3">
+              <div className="mb-2 flex items-center justify-between">
+                <span className="font-mono text-[10.5px] uppercase tracking-[0.13em] text-ih-muted">
+                  {field.itemLabel} {i + 1}
+                </span>
+                <RemoveButton
+                  disabled={groups.length <= field.min}
+                  label={`Remove ${field.itemLabel.toLowerCase()} ${i + 1}`}
+                  onClick={() => onChange(groups.filter((_, j) => j !== i))}
+                />
+              </div>
+
+              <div className="flex flex-col gap-2.5">
+                {field.fields.map((sub) => (
+                  <ScalarFieldView
+                    key={sub.key}
+                    field={sub}
+                    id={`${id}-${i}-${sub.key}`}
+                    value={group[sub.key]}
+                    error={errors[`${field.key}.${i}.${sub.key}`]}
+                    onChange={(next) => setGroup(i, { ...group, [sub.key]: next })}
+                  />
+                ))}
+              </div>
+
+              {/* The nested list is indented and rule-bordered so the two
+                  levels stay legible — a flat stack of task cards inside a
+                  stack of phase cards reads as one long list. */}
+              <div className="mt-3 flex flex-col gap-2 border-l-2 border-ih-border pl-3">
+                {nested.map((row, j) => (
+                  <div key={j} className="rounded-md border border-ih-border bg-ih-surface p-2.5">
+                    <div className="mb-1.5 flex items-center justify-between">
+                      <span className="font-mono text-[10px] uppercase tracking-[0.13em] text-ih-muted-2">
+                        {field.nested.itemLabel} {j + 1}
+                      </span>
+                      <RemoveButton
+                        disabled={nested.length <= field.nested.min}
+                        label={`Remove ${field.nested.itemLabel.toLowerCase()} ${j + 1} of ${field.itemLabel.toLowerCase()} ${i + 1}`}
+                        onClick={() =>
+                          setGroup(i, {
+                            ...group,
+                            [field.nested.key]: nested.filter((_, k) => k !== j),
+                          })
+                        }
+                      />
+                    </div>
+                    <div className="flex flex-col gap-2">
+                      {field.nested.fields.map((sub) => (
+                        <ScalarFieldView
+                          key={sub.key}
+                          field={sub}
+                          id={`${id}-${i}-${field.nested.key}-${j}-${sub.key}`}
+                          value={row[sub.key]}
+                          error={
+                            errors[`${field.key}.${i}.${field.nested.key}.${j}.${sub.key}`]
+                          }
+                          onChange={(next) => {
+                            const rows = [...nested]
+                            rows[j] = { ...row, [sub.key]: next }
+                            setGroup(i, { ...group, [field.nested.key]: rows })
+                          }}
+                        />
+                      ))}
+                    </div>
+                  </div>
+                ))}
+                <AddButton
+                  disabled={nested.length >= field.nested.max}
+                  label={`Add ${field.nested.itemLabel.toLowerCase()}`}
+                  onClick={() =>
+                    setGroup(i, {
+                      ...group,
+                      [field.nested.key]: [...nested, newRow(field.nested.fields)],
+                    })
+                  }
+                />
+              </div>
+            </div>
+          )
+        })}
+        <AddButton
+          disabled={groups.length >= field.max}
+          label={`Add ${field.itemLabel.toLowerCase()}`}
+          onClick={() =>
+            onChange([
+              ...groups,
+              { ...newRow(field.fields), [field.nested.key]: [newRow(field.nested.fields)] },
+            ])
+          }
         />
         <FieldError message={error} />
       </fieldset>
@@ -336,6 +468,29 @@ function ScalarFieldView({
 }) {
   const text = typeof value === 'string' ? value : ''
 
+  // The checkbox puts its label beside the control rather than above it, and
+  // wraps nothing — `htmlFor` still carries the association, so clicking the
+  // words toggles the box.
+  if (field.kind === 'checkbox') {
+    return (
+      <div className="flex items-center gap-2">
+        <input
+          id={id}
+          type="checkbox"
+          // An absent value means the schema's default applies on save, so the
+          // box has to show that default rather than reading as unticked.
+          checked={value === undefined ? field.default : value === true}
+          onChange={(e) => onChange(e.target.checked)}
+          className="h-4 w-4 rounded-[3px] border-ih-border accent-[var(--color-ih-accent)]"
+        />
+        <label htmlFor={id} className="text-[12.5px] text-ih-ink-2">
+          {field.label}
+        </label>
+        {field.hint ? <span className="text-[11px] text-ih-muted-2">{field.hint}</span> : null}
+      </div>
+    )
+  }
+
   return (
     <div className="flex flex-col gap-1">
       <label
@@ -348,7 +503,7 @@ function ScalarFieldView({
       {field.kind === 'select' ? (
         <select
           id={id}
-          value={text || field.options[0]?.value}
+          value={text || field.default}
           onChange={(e) => onChange(e.target.value)}
           className="h-9 w-full rounded-md border border-ih-border bg-ih-surface px-2 text-[13px] outline-none focus:border-ih-accent"
         >
@@ -577,6 +732,14 @@ function stripEmpty(draft: Draft): Draft {
   const out: Draft = {}
   for (const [key, value] of Object.entries(draft)) {
     if (value === '' || value === undefined || value === null) continue
+    if (value && typeof value === 'object' && !Array.isArray(value)) {
+      // A fixed nested object (`problem_solution.problem`). Stripped rather
+      // than passed through, so its blank optional fields behave like every
+      // other field's — and if it ends up empty the schema says which of its
+      // members is required, which is the message the author needs.
+      out[key] = stripEmpty(value as Draft)
+      continue
+    }
     if (Array.isArray(value)) {
       out[key] = value
         .map((item) =>
