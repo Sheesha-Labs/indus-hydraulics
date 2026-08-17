@@ -56,6 +56,11 @@ type Entry = {
   descriptionLong: string
   seoTitle: string
   seoDescription: string
+  /** Founder-directed corrections. Null when the record is already right. */
+  renameTo: string | null
+  newSlug: string | null
+  categorySlug: string | null
+  oldSlug: string
   faqs: { question: string; answer: string }[]
   specs: Spec[]
   document: { title: string; url: string; filename: string } | null
@@ -204,9 +209,37 @@ async function main() {
     // ── copy, specs, datasheet ───────────────────────────────────────────
     await db.$transaction(
       async (tx) => {
+        // Founder-directed identity corrections: a product filed under the
+        // wrong name, URL or category. Moving the slug leaves a 301 behind so
+        // the indexed URL keeps working.
+        let categoryId: string | undefined
+        if (e.categorySlug) {
+          const cat = await tx.category.findUnique({
+            where: { slug: e.categorySlug },
+            select: { id: true },
+          })
+          if (!cat) throw new Error(`no category with slug ${e.categorySlug}`)
+          categoryId = cat.id
+        }
+        if (e.newSlug && e.newSlug !== e.oldSlug) {
+          await tx.redirect.upsert({
+            where: { fromPath: `/p/${e.oldSlug}` },
+            create: {
+              fromPath: `/p/${e.oldSlug}`,
+              toPath: `/p/${e.newSlug}`,
+              statusCode: 301,
+              notes: `Molykote import: renamed to ${e.renameTo ?? e.newSlug}`,
+            },
+            update: { toPath: `/p/${e.newSlug}`, isActive: true },
+          })
+        }
+
         await tx.product.update({
           where: { id: product.id },
           data: {
+            ...(e.renameTo ? { title: e.renameTo } : {}),
+            ...(e.newSlug ? { slug: e.newSlug } : {}),
+            ...(categoryId ? { categoryId } : {}),
             descriptionShort: e.descriptionShort,
             descriptionLong: e.descriptionLong,
             // The page layout appends "| Indus Hydraulics" itself; the

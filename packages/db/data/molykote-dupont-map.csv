@@ -36,10 +36,10 @@ IH-LUB-P37,Molykote P37,molykote-p-37-antiseize-paste,confirmed,
 IH-LUB-P40,Molykote P40,molykote-p-40-s-paste,confirmed,DuPont lists as P-40 (S)
 IH-LUB-P74,Molykote P74,molykote-p-74-assembly-paste,confirmed,
 IH-LUB-TP42-GREASE-PASTE-126865,Molykote TP42 Grease Paste 126865,molykote-tp-42-paste,confirmed,
-IH-LUB-G4500-MULTI-PURPOSE-SYNTHETIC-GREASE,Molykote G4500 Multi-Purpose Synthetic Grease,,ambiguous,three DuPont variants - G-4500 FM / G-4500 FMS / G-4500 FM Spray. Which do you stock?
-IH-LUB-7439,Molykote 7439,,ambiguous,CU-7439 Plus Paste V1 or the Spray V1? Also overlaps our separate CU 7435 Plus line
-IH-LUB-CU-7435-PLUS,Molykote CU 7435 Plus,,ambiguous,no 7435 on DuPont - is this a typo for CU-7439?
-IH-LUB-33-MED-A,Molykote 33 MED (Variant 2),,ambiguous,duplicate of 33 MED - what distinguishes Variant 2?
+IH-LUB-G4500-MULTI-PURPOSE-SYNTHETIC-GREASE,Molykote G4500 Multi-Purpose Synthetic Grease,molykote-g-4500-fm-multi-purpose-synthetic-grease,confirmed,founder 2026-08-17: stocks the 16 kg pail = the FM grade (its only pack size)
+IH-LUB-7439,Molykote 7439,molykote-cu-7439-plus-paste-v1,confirmed,founder 2026-08-17: nearest item; stocks the paste not the spray; retitled + moved to Pastes
+IH-LUB-CU-7435-PLUS,Molykote CU 7435 Plus,,deleted,founder 2026-08-17: not a real product; deleted and redirected to CU-7439
+IH-LUB-33-MED-A,Molykote 33 MED (Variant 2),molykote-33-medium-extreme-low-temperature-grease,confirmed,founder 2026-08-17: Variant 2 is also the Medium grade - DUPLICATE of IH-LUB-33-MED
 IH-LUB-165-LT,Molykote 165 LT,,not-found,no 165 LT page on DuPont
 IH-LUB-165-LT-A,Molykote 165 LT (Variant 2),,not-found,no 165 LT page on DuPont
 IH-LUB-EP,Molykote EP,,ambiguous,too generic to match safely
