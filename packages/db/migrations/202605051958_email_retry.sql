@@ -3,7 +3,7 @@
 -- transactional emails` PR is merged and Prisma client is regenerated.
 --
 -- Hand-rolled because `prisma db push` would attempt to drop the
--- FTS-managed `products.search_tsv` column (managed by 001_seo_fts.sql,
+-- FTS-managed `products.search_tsv` column (managed by 202605021638_seo_fts.sql,
 -- not Prisma) — destructive false positive that would break /search.
 --
 -- Idempotent: every statement uses IF [NOT] EXISTS / quoted column names

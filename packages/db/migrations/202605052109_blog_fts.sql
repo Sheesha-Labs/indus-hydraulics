@@ -1,6 +1,6 @@
 -- Blog FTS — adds a STORED generated tsvector column on `blog_posts` so
 -- `/search` can return blog articles alongside products. Mirrors the
--- pattern from 001_seo_fts.sql (products.search_tsv).
+-- pattern from 202605021638_seo_fts.sql (products.search_tsv).
 --
 -- Weights:
 --   A — title                 (most important match)
