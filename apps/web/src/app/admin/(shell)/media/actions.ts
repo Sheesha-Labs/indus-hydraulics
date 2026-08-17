@@ -3,12 +3,21 @@
 import { revalidatePath } from 'next/cache'
 import { z } from 'zod'
 import { db } from '@indus/db'
-import { canRemoveStorageObject, canTrash, deriveMediaState } from '@indus/domain'
+import {
+  canRemoveStorageObject,
+  canTrash,
+  checkMediaUpload,
+  deriveMediaState,
+  isMintedMediaKey,
+  MAX_MEDIA_UPLOAD_BYTES,
+  mediaStorageKey,
+} from '@indus/domain'
+import { randomUUID } from 'node:crypto'
 
 import { auth } from '../../../../lib/admin-auth'
 import { invalidateMediaConsumers } from '../../../../lib/cache-tags'
 import { buildMediaUsageIndexFromDb } from '../../../../lib/queries/media-usage'
-import { removeFromStorageStrict } from '../../../../lib/supabase-admin'
+import { removeFromStorageStrict, STORAGE_BUCKETS, supabaseAdmin } from '../../../../lib/supabase-admin'
 import { fail, ok, failFromError, type Result } from '../../../../lib/result'
 import { ROLES, requireRole } from '../../../../lib/rbac'
 
@@ -279,6 +288,151 @@ export async function bulkTrashMedia(
     }
 
     return ok({ trashed: safe.length, skipped })
+  } catch (err) {
+    return failFromError(err)
+  }
+}
+
+// ── Upload ──────────────────────────────────────────────────────────────────
+
+const TicketSchema = z.object({
+  filename: z.string().trim().min(1).max(200),
+  contentType: z.string().trim().min(1).max(120),
+  bytes: z.number().int().positive(),
+})
+
+/**
+ * Step 1 of 3. Mints a single-use signed upload URL.
+ *
+ * The bytes never pass through us. A Server Action caps its request body at
+ * 1 MB and Vercel caps any serverless body at 4.5 MB — with a platform 413
+ * raised *before* the function runs, so we could not even explain it. Real
+ * product photography exceeds that routinely, and the limit does not exist
+ * locally, which is how a "works on my machine" upload path ships. The same
+ * reasoning is spelled out on the RFQ attachment signer.
+ *
+ * Only the ticket and the finalise call go through an action, and both carry a
+ * few hundred bytes.
+ */
+export async function createMediaUploadTicket(
+  input: z.input<typeof TicketSchema>
+): Promise<Result<{ signedUrl: string; token: string; key: string; bucket: string }>> {
+  try {
+    requireRole(await auth(), ROLES.CATALOGUE_WRITE)
+    const parsed = TicketSchema.parse(input)
+
+    const check = checkMediaUpload(parsed)
+    if (!check.ok) return fail('VALIDATION', check.message)
+
+    // The path is generated here, from the DECLARED CONTENT TYPE. The caller
+    // cannot choose where the file lands, cannot overwrite anything, and the
+    // untrusted filename never becomes part of a path — it is kept only as a
+    // display label on the row.
+    const key = mediaStorageKey({ uuid: randomUUID(), ext: check.ext, now: new Date() })
+    const bucket = check.kind === 'image' ? STORAGE_BUCKETS.images : STORAGE_BUCKETS.documents
+
+    const { data, error } = await supabaseAdmin().storage.from(bucket).createSignedUploadUrl(key)
+    if (error || !data) {
+      console.error('[media] failed to sign upload', error)
+      return fail('INTERNAL', 'Could not prepare the upload. Try again.')
+    }
+
+    return ok({ signedUrl: data.signedUrl, token: data.token, key: data.path, bucket })
+  } catch (err) {
+    return failFromError(err)
+  }
+}
+
+const FinaliseSchema = z.object({
+  key: z.string().trim().min(1).max(400),
+  bucket: z.string().trim().min(1).max(100),
+  filename: z.string().trim().min(1).max(200),
+  contentType: z.string().trim().min(1).max(120),
+  alt: z.string().trim().max(300).nullable(),
+})
+
+/**
+ * Step 3 of 3. Records the uploaded object as a `media` row.
+ *
+ * Four defences, because at this point the client is telling us where a file
+ * is and we are about to write a row pointing at it:
+ *
+ *   1. The key must have the shape this server mints, so a caller cannot bind
+ *      a row to an arbitrary object in the bucket.
+ *   2. The object is listed to confirm the bytes actually landed — a
+ *      well-formed key naming nothing is refused rather than stored as a
+ *      broken row.
+ *   3. Its size is re-measured from storage rather than taken on trust, and
+ *      an over-limit object is removed instead of recorded. That also means
+ *      `bytes` is right from the start, unlike the 265 rows a previous import
+ *      left at 0.
+ *   4. If the insert fails the object is rolled back, because an object
+ *      nothing references is invisible to this library and still billable.
+ */
+export async function finaliseMediaUpload(
+  input: z.input<typeof FinaliseSchema>
+): Promise<Result<{ id: string }>> {
+  try {
+    const session = requireRole(await auth(), ROLES.CATALOGUE_WRITE)
+    const parsed = FinaliseSchema.parse(input)
+
+    if (!isMintedMediaKey(parsed.key)) {
+      return fail('VALIDATION', 'That upload could not be verified.')
+    }
+    const check = checkMediaUpload({
+      filename: parsed.filename,
+      contentType: parsed.contentType,
+      bytes: 1,
+    })
+    if (!check.ok) return fail('VALIDATION', check.message)
+
+    const expectedBucket = check.kind === 'image' ? STORAGE_BUCKETS.images : STORAGE_BUCKETS.documents
+    if (parsed.bucket !== expectedBucket) {
+      return fail('VALIDATION', 'That upload could not be verified.')
+    }
+
+    const storage = supabaseAdmin().storage.from(parsed.bucket)
+    const folder = parsed.key.slice(0, parsed.key.lastIndexOf('/'))
+    const name = parsed.key.slice(parsed.key.lastIndexOf('/') + 1)
+    const { data: listed, error: listError } = await storage.list(folder, { limit: 1, search: name })
+    const object = listed?.find((o) => o.name === name)
+    if (listError || !object) {
+      return fail('NOT_FOUND', 'The upload did not complete. Try again.')
+    }
+
+    const actualBytes = (object.metadata as { size?: number } | null)?.size ?? 0
+    if (actualBytes > MAX_MEDIA_UPLOAD_BYTES) {
+      await storage.remove([parsed.key])
+      return fail('VALIDATION', 'That file is larger than the 25 MB limit.')
+    }
+
+    // Images are stored as a full public URL and documents as `bucket/key` —
+    // the shapes the rest of the tree already reads. Diverging here would give
+    // the storefront a path it cannot resolve.
+    const storagePath =
+      parsed.bucket === STORAGE_BUCKETS.images
+        ? storage.getPublicUrl(parsed.key).data.publicUrl
+        : `${parsed.bucket}/${parsed.key}`
+
+    try {
+      const created = await db.media.create({
+        data: {
+          kind: check.kind,
+          mimeType: parsed.contentType,
+          originalFilename: parsed.filename,
+          storagePath,
+          bytes: actualBytes,
+          alt: parsed.alt && parsed.alt.length > 0 ? parsed.alt : null,
+          uploadedById: session.user.id,
+        },
+        select: { id: true },
+      })
+      revalidatePath('/admin/media')
+      return ok({ id: created.id })
+    } catch (err) {
+      await storage.remove([parsed.key])
+      throw err
+    }
   } catch (err) {
     return failFromError(err)
   }

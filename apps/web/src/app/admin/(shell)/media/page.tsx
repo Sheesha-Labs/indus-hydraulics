@@ -31,6 +31,7 @@ import { MediaLibraryBody } from './_components/library-client'
 import { MediaEmptyState } from './_components/media-items'
 import type { MediaDetail } from './_components/types'
 import { MediaSearchBox, MediaSortSelect } from './_components/search-sort'
+import { MediaUploadPanel } from './_components/upload'
 
 export const metadata: Metadata = { title: 'Media library — Indus Admin' }
 
@@ -227,6 +228,8 @@ export default async function MediaLibraryPage({ params, searchParams }: Props) 
           </div>
 
           <KindChips active={kind} counts={kindCounts} buildUrl={buildUrl} />
+
+          {canWrite && !trashed ? <MediaUploadPanel /> : null}
 
           {usageIndex.partial ? (
             <p
