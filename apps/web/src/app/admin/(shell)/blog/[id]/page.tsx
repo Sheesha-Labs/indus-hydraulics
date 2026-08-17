@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { db } from '@indus/db'
+import { parseBlogBlocks } from '@indus/domain'
 import BlogPostEditorClient from './BlogPostEditorClient'
 
 export const metadata: Metadata = { title: 'Edit Post — Indus Admin' }
@@ -22,7 +23,12 @@ export default async function BlogPostEditorPage({ params }: Props) {
     ? null
     : await db.blogPost.findUnique({
         where: { id },
-        include: { hero: true, author: { select: { name: true } } },
+        include: {
+        hero: true,
+        author: { select: { name: true } },
+        blogAuthor: { select: { name: true } },
+        category: { select: { name: true } },
+      },
       })
   if (!isNew && !post) notFound()
 
@@ -49,6 +55,17 @@ export default async function BlogPostEditorPage({ params }: Props) {
   // /blog/author/[slug] — not staff users. A byline is not a login: an
   // outside contributor needs one without an admin account, and a warehouse
   // user should not become a public page merely by existing.
+  // The body's insert dialog browses the library, so it wants more than the
+  // 50 most-recent the OG picker shows. Cheap: four columns, ids and paths.
+  const bodyMedia = isNew
+    ? []
+    : await db.media.findMany({
+        where: { kind: 'image' },
+        orderBy: { createdAt: 'desc' },
+        take: 300,
+        select: { id: true, storagePath: true, alt: true, originalFilename: true },
+      })
+
   const [authors, categories] = await Promise.all([
     db.blogAuthor.findMany({
       where: { isPublished: true },
@@ -79,14 +96,22 @@ export default async function BlogPostEditorPage({ params }: Props) {
               body: post.body,
               tags: (post.tags as string[]) ?? [],
               isPublished: post.isPublished,
+              status: post.status,
               publishedAt: post.publishedAt ? post.publishedAt.toISOString() : null,
+              updatedAt: post.updatedAt.toISOString(),
+              readingMinutes: post.readingMinutes,
+              // Parsed here rather than in the client so an invalid block is
+              // dropped once, server-side, where it can be logged — the editor
+              // then only ever holds blocks the storefront would render.
+              bodyBlocks: parseBlogBlocks(post.bodyBlocks).blocks,
               publicUrl: `${storefrontUrl}/blog/${post.slug}`,
               heroImageUrl: resolveMediaUrl(post.hero?.storagePath ?? null),
               heroId: post.heroId,
               heroStoragePath: post.hero?.storagePath ?? null,
-              authorName: post.author?.name ?? null,
+              authorName: post.blogAuthor?.name ?? post.author?.name ?? null,
               blogAuthorId: post.blogAuthorId,
               categoryId: post.categoryId,
+              categoryName: post.category?.name ?? null,
               seoTitle: post.seoTitle,
               seoDescription: post.seoDescription,
               canonicalUrl: post.canonicalUrl,
@@ -113,6 +138,7 @@ export default async function BlogPostEditorPage({ params }: Props) {
       }))}
       authors={authors}
       categories={categories}
+      bodyMedia={bodyMedia}
     />
   )
 }

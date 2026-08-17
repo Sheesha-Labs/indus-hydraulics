@@ -314,6 +314,57 @@
 .sc-article-body ul li {
   margin: 6px 0;
 }
+.sc-article-body ol {
+  padding-left: 22px;
+  margin: 0 0 22px;
+  list-style: decimal;
+}
+.sc-article-body ol li {
+  margin: 6px 0;
+}
+/* h2 belongs to section_head, which draws its own rule and ordinal. These are
+   the sub-headings a prose block can carry. */
+.sc-article-body h3 {
+  font-size: 19px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 1.3;
+  color: var(--color-ih-ink);
+  margin: 30px 0 10px;
+}
+.sc-article-body h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-ih-ink);
+  margin: 24px 0 8px;
+}
+.sc-article-body blockquote {
+  border-left: 3px solid var(--color-ih-accent);
+  padding-left: 16px;
+  margin: 0 0 22px;
+  color: var(--color-ih-ink);
+  font-style: italic;
+}
+.sc-article-body code {
+  font-family: var(--font-mono);
+  font-size: 0.88em;
+  background: var(--color-ih-surface-2);
+  padding: 2px 5px;
+  border-radius: 4px;
+}
+.sc-article-body pre {
+  background: var(--color-ih-surface-2);
+  border: 1px solid var(--color-ih-border);
+  border-radius: 6px;
+  padding: 14px 16px;
+  margin: 0 0 22px;
+  overflow-x: auto;
+}
+.sc-article-body pre code {
+  background: none;
+  padding: 0;
+}
+
 .sc-lead {
   font-size: 22px;
   line-height: 1.5;
@@ -380,4 +431,115 @@
 
 [data-surface='admin'] .eyebrow {
   font-size: 10px;
+}
+
+/* ============================================================
+   Blog body editor (admin only)
+   ------------------------------------------------------------
+   The editing surface deliberately echoes the article's own type scale rather
+   than a generic textarea: an author judging whether a paragraph is too long
+   is judging it at the size a reader will meet it.
+   ============================================================ */
+[data-surface='admin'] .ih-editor {
+  color: var(--color-ih-ink-2);
+}
+[data-surface='admin'] .ih-editor:focus {
+  outline: none;
+}
+[data-surface='admin'] .ih-editor > * + * {
+  margin-top: 14px;
+}
+[data-surface='admin'] .ih-editor h2 {
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  color: var(--color-ih-ink);
+  border-top: 1px solid var(--color-ih-border);
+  padding-top: 14px;
+  margin-top: 26px;
+}
+[data-surface='admin'] .ih-editor h3 {
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--color-ih-ink);
+  margin-top: 20px;
+}
+[data-surface='admin'] .ih-editor p.ih-editor-lead {
+  font-size: 18px;
+  line-height: 1.5;
+  color: var(--color-ih-ink);
+  border-left: 3px solid var(--color-ih-accent);
+  padding-left: 14px;
+}
+[data-surface='admin'] .ih-editor ul {
+  list-style: disc;
+  padding-left: 22px;
+}
+[data-surface='admin'] .ih-editor ol {
+  list-style: decimal;
+  padding-left: 22px;
+}
+[data-surface='admin'] .ih-editor li {
+  margin: 4px 0;
+}
+[data-surface='admin'] .ih-editor blockquote {
+  border-left: 3px solid var(--color-ih-border-strong);
+  padding-left: 14px;
+  color: var(--color-ih-muted);
+  font-style: italic;
+}
+[data-surface='admin'] .ih-editor a {
+  color: var(--color-ih-accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+[data-surface='admin'] .ih-editor strong {
+  color: var(--color-ih-ink);
+  font-weight: 600;
+}
+[data-surface='admin'] .ih-editor code {
+  font-family: var(--font-mono);
+  font-size: 0.88em;
+  background: var(--color-ih-surface-2);
+  padding: 2px 5px;
+  border-radius: 4px;
+}
+[data-surface='admin'] .ih-editor-figure {
+  border: 1px solid var(--color-ih-border);
+  border-radius: 6px;
+  overflow: hidden;
+  background: var(--color-ih-surface-2);
+}
+[data-surface='admin'] .ih-editor-figure img {
+  display: block;
+  width: 100%;
+  max-height: 320px;
+  object-fit: cover;
+}
+[data-surface='admin'] .ih-editor-figure__empty {
+  display: grid;
+  place-items: center;
+  height: 120px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-ih-muted-2);
+}
+/* The caption is editable content, so it needs to read as a field rather than
+   as part of the picture. */
+[data-surface='admin'] .ih-editor-figure figcaption {
+  font-size: 12px;
+  color: var(--color-ih-muted);
+  padding: 8px 12px;
+  border-top: 1px solid var(--color-ih-border);
+  background: var(--color-ih-surface);
+}
+/* ProseMirror's own class for the selected node — without a visible marker,
+   a selected card looks identical to an unselected one and Delete appears to
+   do nothing. */
+[data-surface='admin'] .ih-editor .ProseMirror-selectednode {
+  outline: 2px solid var(--color-ih-accent);
+  outline-offset: 2px;
 }

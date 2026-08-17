@@ -5,7 +5,14 @@ import { invalidateBlogPosts } from '../../../../../lib/cache-tags'
 import { redirect } from 'next/navigation'
 import { z } from 'zod'
 import { db, Prisma } from '@indus/db'
-import { parseLocalDateTime, projectSeoFields, resolvePublishedAt } from '@indus/domain'
+import {
+  estimateReadingMinutes,
+  parseBlogBlocks,
+  parseLocalDateTime,
+  projectSeoFields,
+  resolvePublishedAt,
+} from '@indus/domain'
+import { blocksToPlainText, readBodyBlocks } from '../../../../../lib/blog-body-save'
 import { auth } from '../../../../../lib/admin-auth'
 import { ROLES, requireRole } from '../../../../../lib/rbac'
 import { fail, failFromError, ok, type Result } from '../../../../../lib/result'
@@ -25,7 +32,6 @@ export async function savePost(formData: FormData) {
   const title = formData.get('title') as string
   const slug = formData.get('slug') as string
   const excerpt = (formData.get('excerpt') as string | null) || undefined
-  const body = formData.get('body') as string
   const seoTitle = (formData.get('seoTitle') as string | null) || undefined
   const seoDescription = (formData.get('seoDescription') as string | null) || undefined
   const tagsRaw = (formData.get('tags') as string | null) || ''
@@ -54,6 +60,15 @@ export async function savePost(formData: FormData) {
   const categoryRaw = (formData.get('categoryId') as string | null) ?? ''
   const categoryId = categoryRaw.trim() ? categoryRaw.trim() : null
 
+  // The body arrives as a JSON array from the block editor. It is opaque here
+  // — the editor's node set constrains what an author can produce in the
+  // browser, not what reaches this action — so every block is re-validated and
+  // every HTML field is re-sanitised before it is stored. `body` keeps the
+  // plain-text shadow of the article for full-text search and for anything
+  // still reading the legacy column.
+  const blocks = readBodyBlocks(formData.get('bodyBlocks'))
+  const bodyText = blocksToPlainText(blocks)
+
   // Explicit publish date, from a datetime-local input. Enables both
   // back-dating and scheduling.
   const publishedAtRaw = (formData.get('publishedAt') as string | null) ?? ''
@@ -63,13 +78,15 @@ export async function savePost(formData: FormData) {
     title,
     slug,
     excerpt,
-    body,
+    body: bodyText,
     seoTitle,
     seoDescription,
     tags,
     heroId,
     blogAuthorId,
     categoryId,
+    bodyBlocks: blocks,
+    readingMinutes: blocks.length > 0 ? estimateReadingMinutes(blocks) : null,
     isPublished: publish,
     // `status` supersedes `isPublished` and the two are kept in lockstep until
     // every read site has moved across. Writing only the boolean is what left
@@ -319,6 +336,17 @@ export async function uploadBlogPostOgImage(
  * Hero upload. Same validation and Media row as the OG picker, but filed
  * under `blog/hero` so the two roles stay separable in storage.
  */
+/**
+ * Body image upload. Filed under `blog/body` so an in-article figure stays
+ * separable in storage from the hero and the OG card, which are different
+ * jobs at different sizes.
+ */
+export async function uploadBlogPostBodyImage(
+  formData: FormData,
+): Promise<Result<UploadedImage>> {
+  return uploadBlogPostImage(formData, 'blog/body')
+}
+
 export async function uploadBlogPostHeroImage(
   formData: FormData,
 ): Promise<Result<UploadedImage>> {
@@ -372,4 +400,92 @@ async function uploadBlogPostImage(
   } catch (err) {
     return failFromError(err)
   }
+}
+
+// ── Publish / archive, from the editor's publish card ──────────────────────
+
+/**
+ * Take a saved post live, or pull it back to draft.
+ *
+ * Publishing reads the row back rather than trusting the caller: a post with
+ * no title or no body has nothing to serve, and a 404-shaped article on the
+ * index is worse than a draft nobody can see. The publish button in the editor
+ * saves first for exactly this reason.
+ */
+export async function setBlogPostPublished(
+  id: string,
+  published: boolean,
+): Promise<Result<{ message: string }>> {
+  try {
+    requireRole(await auth(), ROLES.CMS_WRITE)
+
+    const post = await db.blogPost.findUnique({
+      where: { id },
+      select: {
+        title: true,
+        slug: true,
+        body: true,
+        bodyBlocks: true,
+        publishedAt: true,
+        deletedAt: true,
+      },
+    })
+    if (!post) return fail('NOT_FOUND', 'Post not found')
+    if (post.deletedAt) return fail('VALIDATION', 'Restore it from the trash first.')
+
+    if (published) {
+      if (!post.title.trim()) return fail('VALIDATION', 'A title is required to publish.')
+      const { blocks } = parseBlogBlocks(post.bodyBlocks)
+      if (blocks.length === 0 && !post.body.trim())
+        return fail('VALIDATION', 'The body is empty — write something first.')
+    }
+
+    await db.blogPost.update({
+      where: { id },
+      data: {
+        isPublished: published,
+        status: published ? 'published' : 'draft',
+        // `publishedAt` is the canonical first-publication date and feeds
+        // Article JSON-LD `datePublished`. Un-publishing must not erase it, or
+        // a post that goes back up loses its original date.
+        publishedAt: published ? (post.publishedAt ?? new Date()) : post.publishedAt,
+      },
+    })
+
+    revalidateBlogPost(id, post.slug)
+    return ok({ message: published ? 'Published.' : 'Reverted to draft.' })
+  } catch (err) {
+    return failFromError(err)
+  }
+}
+
+/** Archive keeps the slug reserved; un-archiving returns the post to draft. */
+export async function setBlogPostArchivedFromEditor(
+  id: string,
+  archived: boolean,
+): Promise<Result<{ message: string }>> {
+  try {
+    requireRole(await auth(), ROLES.CMS_WRITE)
+
+    const post = await db.blogPost.findUnique({ where: { id }, select: { slug: true } })
+    if (!post) return fail('NOT_FOUND', 'Post not found')
+
+    await db.blogPost.update({
+      where: { id },
+      data: { status: archived ? 'archived' : 'draft', isPublished: false },
+    })
+
+    revalidateBlogPost(id, post.slug)
+    return ok({ message: archived ? 'Archived.' : 'Moved back to draft.' })
+  } catch (err) {
+    return failFromError(err)
+  }
+}
+
+function revalidateBlogPost(id: string, slug: string) {
+  revalidatePath('/admin/blog')
+  revalidatePath(`/admin/blog/${id}`)
+  revalidatePath('/blog')
+  revalidatePath(`/blog/${slug}`)
+  invalidateBlogPosts()
 }
