@@ -1,0 +1,78 @@
+import { describe, expect, test } from 'vitest'
+import { buildDatasourceUrl } from './datasource-url'
+
+/**
+ * The build-phase pool timeout.
+ *
+ * `next build` static-generates across 9 worker PROCESSES, each with its own
+ * PrismaClient and its own pool. That over-subscribes one pgbouncer, workers
+ * queue past Prisma's 10s default `pool_timeout`, and the build dies with
+ * P2024 — observed on roughly every other run.
+ *
+ * The scoping is the whole point of the fix and is what these pin: the timeout
+ * widens for the BUILD only. At request time a 60s wait for a connection is a
+ * hung page, and failing fast is correct.
+ *
+ * `buildDatasourceUrl` takes env as an argument precisely so this can test the
+ * real function rather than a copy of it — a test that reimplements the logic
+ * it is checking passes happily while the shipped code does something else.
+ */
+
+const BASE = 'postgresql://u:p@host:6543/postgres?pgbouncer=true&connection_limit=1'
+
+const params = (env: NodeJS.ProcessEnv) => {
+  const out = buildDatasourceUrl(env)
+  return out ? new URL(out).searchParams : null
+}
+
+const BUILD = 'phase-production-build'
+
+describe('datasource url', () => {
+  test('request time is untouched — no pool_timeout is added', () => {
+    const p = params({ DATABASE_URL: BASE, DATABASE_CONNECTION_LIMIT: '10' })!
+    expect(p.get('pool_timeout')).toBeNull()
+    expect(p.get('connection_limit')).toBe('10')
+  })
+
+  test('the build phase widens the timeout', () => {
+    const p = params({ DATABASE_URL: BASE, DATABASE_CONNECTION_LIMIT: '10', NEXT_PHASE: BUILD })!
+    expect(p.get('pool_timeout')).toBe('60')
+    expect(p.get('connection_limit')).toBe('10')
+  })
+
+  test('an explicit pool_timeout on the URL is never overwritten', () => {
+    const p = params({ DATABASE_URL: `${BASE}&pool_timeout=5`, NEXT_PHASE: BUILD })!
+    expect(p.get('pool_timeout')).toBe('5')
+  })
+
+  test('DATABASE_POOL_TIMEOUT overrides the default', () => {
+    const p = params({ DATABASE_URL: BASE, NEXT_PHASE: BUILD, DATABASE_POOL_TIMEOUT: '120' })!
+    expect(p.get('pool_timeout')).toBe('120')
+  })
+
+  test('the build phase applies even with no connection-limit override', () => {
+    // This case previously returned undefined, so the build silently ran on
+    // Prisma's 10s default — which is the failure being fixed.
+    const p = params({ DATABASE_URL: BASE, NEXT_PHASE: BUILD })!
+    expect(p.get('pool_timeout')).toBe('60')
+    expect(p.get('connection_limit')).toBe('1') // left as the URL had it
+  })
+
+  test('no override and no build phase returns undefined', () => {
+    expect(buildDatasourceUrl({ DATABASE_URL: BASE })).toBeUndefined()
+  })
+
+  test('a missing DATABASE_URL returns undefined rather than a broken URL', () => {
+    expect(buildDatasourceUrl({ NEXT_PHASE: BUILD })).toBeUndefined()
+  })
+
+  test('a malformed DATABASE_URL falls back rather than throwing', () => {
+    expect(buildDatasourceUrl({ DATABASE_URL: 'not a url', NEXT_PHASE: BUILD })).toBeUndefined()
+  })
+
+  test('a non-build NEXT_PHASE does not trigger the widening', () => {
+    // next dev / next start set other phases; only the build over-subscribes.
+    const p = params({ DATABASE_URL: BASE, DATABASE_CONNECTION_LIMIT: '10', NEXT_PHASE: 'phase-development-server' })!
+    expect(p.get('pool_timeout')).toBeNull()
+  })
+})
