@@ -48,6 +48,7 @@ const ROUTES = [
   '/blog/c/oilfield-pressure-control',
   // Four-column API comparison table.
   '/blog/api-7k-16c-16d-which-standard',
+  '/blog/on-site-hydraulic-hose-service-uae',
   '/blog/chemical-transfer-hose-selection',
   // 15 articles crosses BLOG_PAGE_SIZE, so page 2 finally exists and the
   // pagination row can be checked at 320px for the first time.

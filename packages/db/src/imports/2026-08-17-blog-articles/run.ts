@@ -55,6 +55,10 @@ import ARTICLE_20 from './articles/api-7k-16c-16d-which-standard'
 import ARTICLE_21 from './articles/api-16c-choke-and-kill-lines'
 import ARTICLE_22 from './articles/bop-control-hose-fire-resistance'
 import ARTICLE_23 from './articles/api-7k-rotary-vibrator-hose'
+import ARTICLE_24 from './articles/on-site-hydraulic-hose-service-uae'
+import ARTICLE_25 from './articles/rig-site-hose-replacement-abu-dhabi'
+import ARTICLE_26 from './articles/hose-service-northern-emirates'
+import ARTICLE_27 from './articles/bulk-hose-refit-and-tagging'
 
 const ARTICLES: BlogArticleSeed[] = [
   ARTICLE_01,
@@ -80,6 +84,10 @@ const ARTICLES: BlogArticleSeed[] = [
   ARTICLE_21,
   ARTICLE_22,
   ARTICLE_23,
+  ARTICLE_24,
+  ARTICLE_25,
+  ARTICLE_26,
+  ARTICLE_27,
 ]
 
 const DRY_RUN = process.argv.includes('--dry-run')
