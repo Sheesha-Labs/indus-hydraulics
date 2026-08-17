@@ -355,3 +355,72 @@ export function blogReferencedSkus(blocks: BlogBlocks): string[] {
 export function blogFaqPairs(blocks: BlogBlocks): Array<{ question: string; answer: string }> {
   return blocks.flatMap((block) => (block.type === 'faq_block' ? block.items : []))
 }
+
+/**
+ * Reading time from block text. Counts the words a reader actually sees —
+ * prose, headings, table cells, answers — and ignores anchors, SKUs and block
+ * discriminators, which would otherwise inflate the estimate on a spec-heavy
+ * article that is genuinely quick to skim.
+ */
+export function estimateReadingMinutes(blocks: BlogBlocks): number {
+  const WORDS_PER_MINUTE = 220
+  let words = 0
+
+  const count = (text: string | null | undefined) => {
+    if (!text) return
+    words += text.replace(/<[^>]+>/g, ' ').split(/\s+/).filter(Boolean).length
+  }
+
+  for (const block of blocks) {
+    switch (block.type) {
+      case 'lead':
+      case 'paragraph':
+        count(block.html)
+        break
+      case 'section_head':
+        count(block.title)
+        break
+      case 'key_takeaways':
+        block.items.forEach(count)
+        break
+      case 'direct_answer':
+        count(block.question)
+        count(block.answer)
+        break
+      case 'faq_block':
+        block.items.forEach((i) => {
+          count(i.question)
+          count(i.answer)
+        })
+        break
+      case 'standard_citation':
+        count(block.summary)
+        break
+      case 'callout':
+        count(block.title)
+        count(block.body)
+        break
+      case 'comparison_table':
+        block.rows.forEach((r) => r.cells.forEach(count))
+        break
+      case 'decision_tree':
+        block.branches.forEach((b) => {
+          count(b.condition)
+          count(b.outcome)
+          count(b.detail)
+        })
+        break
+      case 'problem_solution':
+        count(block.problem.body)
+        count(block.solution.body)
+        break
+      case 'pull_quote':
+        count(block.quote)
+        break
+      default:
+        break
+    }
+  }
+
+  return Math.max(1, Math.round(words / WORDS_PER_MINUTE))
+}
