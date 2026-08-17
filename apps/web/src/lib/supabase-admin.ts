@@ -99,6 +99,35 @@ export async function deleteFromStorage(storagePath: string): Promise<void> {
   }
 }
 
+/**
+ * Same removal, but reports whether it worked.
+ *
+ * `deleteFromStorage` above is best-effort by design: its callers delete the
+ * database row first and treat the object as cleanup, so a failure is only
+ * worth a warning. The media library's permanent delete needs the opposite
+ * ordering — remove the object, and only then the row — so that a half-failure
+ * leaves a row pointing at a missing object, which is visible in the library
+ * and fixable, rather than an object nothing references, which is invisible
+ * and still billable. That ordering is only safe if the caller can tell the
+ * removal apart from a silent no-op.
+ *
+ * A path with no resolvable bucket is an external URL an admin pasted. There
+ * is nothing of ours to remove, and reporting that as a failure would make
+ * those rows permanently undeletable, so it counts as done.
+ */
+export async function removeFromStorageStrict(
+  storagePath: string
+): Promise<{ ok: true } | { ok: false; message: string }> {
+  const { bucket, key } = parseStoragePath(storagePath)
+  if (!bucket || !key) return { ok: true }
+  const { error } = await supabaseAdmin().storage.from(bucket).remove([key])
+  // Already gone is the desired end state, not an error.
+  if (error && !error.message.includes('not found')) {
+    return { ok: false, message: error.message }
+  }
+  return { ok: true }
+}
+
 function parseStoragePath(storagePath: string): { bucket: string | null; key: string | null } {
   if (!storagePath) return { bucket: null, key: null }
   // Public URL: https://xxx.supabase.co/storage/v1/object/public/<bucket>/<key>

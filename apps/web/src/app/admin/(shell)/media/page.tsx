@@ -95,7 +95,10 @@ export default async function MediaLibraryPage({ params, searchParams }: Props) 
   ])
   // hasRole, not requireRole — a sales_rep should still be able to browse the
   // library and see where a file is used; they just cannot edit it.
-  const canEdit = hasRole(session, ROLES.CATALOGUE_WRITE)
+  const canWrite = hasRole(session, ROLES.CATALOGUE_WRITE)
+  // Permanent delete is the strictest tier — the only irreversible action on
+  // this screen.
+  const canDestroy = hasRole(session, ROLES.CATALOGUE_DELETE)
 
   // Usage is resolved for every row in scope, not just the page being shown:
   // the folder rail and the state tabs both count the whole library.
@@ -269,7 +272,14 @@ export default async function MediaLibraryPage({ params, searchParams }: Props) 
               resetHref={`${ADMIN_PREFIX}/media${trashed ? '?trash=1' : ''}`}
             />
           ) : (
-            <MediaLibraryBody rows={visible} view={view} canEdit={canEdit} />
+            <MediaLibraryBody
+              rows={visible}
+              view={view}
+              canWrite={canWrite}
+              canDestroy={canDestroy}
+              indexPartial={usageIndex.partial}
+              trashed={trashed}
+            />
           )}
 
           <Pagination
