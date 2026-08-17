@@ -107,6 +107,31 @@ export function invalidateStoreSettings(): void {
 }
 
 /** SEO settings saved — Organization / WebSite JSON-LD overrides. */
+/**
+ * Purge everything a media file's alt text or caption can surface on.
+ *
+ * Deliberately broad. A `media` row is reachable from products, categories,
+ * brands, industries, blog posts, the homepage hero and the site logos, and
+ * which of those a given file feeds is only knowable by resolving the whole
+ * usage index — thirty-odd queries, to save a few cache entries on an edit
+ * that happens a handful of times a day.
+ *
+ * Over-purging costs a re-render; under-purging leaves stale alt text on a
+ * live page, which is an accessibility and SEO regression that nothing
+ * surfaces. The trade is one-sided, so this errs wide.
+ */
+export function invalidateMediaConsumers(): void {
+  purge(
+    STOREFRONT_TAGS.products,
+    STOREFRONT_TAGS.categories,
+    STOREFRONT_TAGS.brands,
+    STOREFRONT_TAGS.industries,
+    STOREFRONT_TAGS.blogPosts,
+    STOREFRONT_TAGS.homepageHero,
+    STOREFRONT_TAGS.storeSettings
+  )
+}
+
 export function invalidateSeoSettings(): void {
   purge(STOREFRONT_TAGS.seoSettings)
 }

@@ -72,6 +72,14 @@ const DialogContent = React.forwardRef<
     <DialogOverlay className={overlayClassName}>
       <DialogPrimitive.Content
         ref={ref}
+        // Radix does NOT set aria-modal. It makes outside content inert the
+        // other way the APG allows — every sibling of the portal gets
+        // aria-hidden="true" while the dialog is open, verified in jsdom
+        // against a real <main> behind it. That is the better-supported half of
+        // the pattern, but CLAUDE.md §10.5 names the attribute, and a reviewer
+        // checking the rule will look for it. Setting both is what most
+        // libraries do and costs nothing.
+        aria-modal="true"
         className={cn(
           // Cards are 10px in v2 (CLAUDE.md §2.3). shadow-2 is the true-overlay
           // shadow; everything resting in this language is a 1px border.
