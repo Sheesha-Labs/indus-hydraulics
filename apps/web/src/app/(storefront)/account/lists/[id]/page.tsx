@@ -127,7 +127,7 @@ export default async function SavedListDetailPage({ params }: Props) {
         </div>
       </div>
 
-      <div className="grid gap-8 mt-6" style={{ gridTemplateColumns: '1fr 320px', alignItems: 'start' }}>
+      <div className="grid grid-cols-1 items-start gap-8 mt-6 lg:grid-cols-[1fr_320px]">
         {/* Items */}
         <div>
           {activeItems.length === 0 ? (
