@@ -294,6 +294,8 @@ async function loadAllRows(): Promise<EntityRow[]> {
     db.brand.findMany({ select: seoSelectNamed() }),
     db.industry.findMany({ select: seoSelectNamed() }),
     db.blogPost.findMany({
+      // Trashed posts are off the site, so an SEO warning about one is noise.
+      where: { deletedAt: null },
       select: {
         ...seoSelectTitled(),
         publishedAt: true,
@@ -592,7 +594,7 @@ function editPathFor(entityType: SeoEntityType, entityId: string): string | null
     case 'industry':
       return `${ADMIN_PREFIX}/industries/${entityId}/edit`
     case 'blog_post':
-      return `${ADMIN_PREFIX}/cms/blog/${entityId}?tab=seo`
+      return `${ADMIN_PREFIX}/blog/${entityId}?tab=seo`
     case 'cms_page':
       return `${ADMIN_PREFIX}/cms/pages/${entityId}?tab=seo`
     default:

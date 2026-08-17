@@ -5,10 +5,10 @@ import Link from 'next/link'
 import { useSearchParams } from 'next/navigation'
 import SeoEntityDrawer, {
   type SeoDrawerEntity,
-} from '../../../../../../components/admin/seo/SeoEntityDrawer'
+} from '../../../../../components/admin/seo/SeoEntityDrawer'
 import OgImagePicker, {
   type RecentMedia,
-} from '../../../../../../components/admin/seo/OgImagePicker'
+} from '../../../../../components/admin/seo/OgImagePicker'
 import {
   savePost,
   updateBlogPostSeo,
@@ -16,7 +16,7 @@ import {
   uploadBlogPostOgImage,
 } from './actions'
 import { Input, Textarea } from '@indus/ui'
-import AdminPageShell from '../../../../../../components/admin/AdminPageShell'
+import AdminPageShell from '../../../../../components/admin/AdminPageShell'
 
 type BlogPost = {
   id: string
@@ -39,6 +39,8 @@ type BlogPost = {
   authorName: string | null
   /** Public byline FK — a BlogAuthor, editable from the Content tab. */
   blogAuthorId: string | null
+  /** Topic hub FK — a BlogCategory, editable from the Content tab. */
+  categoryId: string | null
 
   seoTitle: string | null
   seoDescription: string | null
@@ -68,6 +70,13 @@ export type BylineCandidate = {
   jobTitle: string | null
 }
 
+export type CategoryOption = {
+  id: string
+  name: string
+  /** Unpublished hubs still hold posts, so they stay selectable — flagged. */
+  isPublished: boolean
+}
+
 interface Props {
   /** Whether this is the "new post" path (id === 'new'). */
   isNew: boolean
@@ -76,6 +85,8 @@ interface Props {
   recentImages: RecentMedia[]
   /** Published author profiles that can hold a byline. */
   authors: BylineCandidate[]
+  /** Topic hubs the post can be filed under. */
+  categories: CategoryOption[]
 }
 
 const TABS = [
@@ -99,6 +110,7 @@ export default function BlogPostEditorClient({
   post,
   recentImages,
   authors,
+  categories,
 }: Props) {
   const searchParams = useSearchParams()
   const initialTab: TabId = (() => {
@@ -133,10 +145,10 @@ export default function BlogPostEditorClient({
             <span className="text-[12px] text-[oklch(0.55_0.12_150)]">Saved at {savedAt}</span>
           )}
           <Link
-            href="/admin/cms?tab=blog"
+            href="/admin/blog"
             className="flex h-9 items-center rounded-md border border-ih-border bg-ih-surface px-4 text-[13px] font-medium transition-colors hover:border-ih-accent hover:text-ih-accent"
           >
-            ← CMS
+            ← All posts
           </Link>
         </>
       }
@@ -168,6 +180,7 @@ export default function BlogPostEditorClient({
           post={post}
           recentImages={recentImages}
           authors={authors}
+          categories={categories}
         />
       )}
 
@@ -198,11 +211,13 @@ function ContentForm({
   post,
   recentImages,
   authors,
+  categories,
 }: {
   isNew: boolean
   post: BlogPost | null
   recentImages: RecentMedia[]
   authors: BylineCandidate[]
+  categories: CategoryOption[]
 }) {
   // Hero lives in client state because the picker is interactive; the value
   // reaches the server action through a hidden input rather than a fetch.
@@ -269,6 +284,32 @@ function ContentForm({
       </div>
 
       <div className="grid grid-cols-2 gap-4">
+        <div>
+          <label
+            htmlFor="blogpost-category"
+            className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5"
+          >
+            Category
+          </label>
+          <select
+            id="blogpost-category"
+            name="categoryId"
+            defaultValue={post?.categoryId ?? ''}
+            className="h-10 w-full rounded-md border border-ih-border bg-white px-2 text-[13px]"
+          >
+            <option value="">— Uncategorised —</option>
+            {categories.map((c) => (
+              <option key={c.id} value={c.id}>
+                {c.name}
+                {c.isPublished ? '' : ' (hub unpublished)'}
+              </option>
+            ))}
+          </select>
+          <p className="mt-1 text-[11px] text-ih-muted-2">
+            Files the post under a topic hub at /blog/c/…, and puts its chip on the index card.
+          </p>
+        </div>
+
         <div>
           <label
             htmlFor="blogpost-author"

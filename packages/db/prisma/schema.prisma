@@ -1268,6 +1268,12 @@ model BlogPost {
   createdAt      DateTime @default(now())
   updatedAt      DateTime @updatedAt
 
+  /// Soft delete. A trashed post also has `isPublished` forced false, which is
+  /// what every storefront read already filters on — so trashing removes it
+  /// from the site without a second gate on every query. Restoring returns it
+  /// to draft rather than to live: going back up should be deliberate.
+  deletedAt DateTime?
+
   categoryId String?
   category   BlogCategory? @relation(fields: [categoryId], references: [id])
 
@@ -1301,6 +1307,7 @@ model BlogPost {
   // STORED, weighted A→B→C across title / excerpt / body.
   searchTsv          Unsupported("tsvector")?
 
+  @@index([deletedAt, status])
   @@map("blog_posts")
 }
 

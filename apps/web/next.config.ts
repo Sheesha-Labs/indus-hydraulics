@@ -15,6 +15,22 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
+      // The blog moved out of the CMS tab strip into its own admin section
+      // (Blog Editor). These keep bookmarks and the deep links that shipped in
+      // the SEO inspector working rather than 404ing on a route that no
+      // longer exists.
+      {
+        source: '/admin/cms/blog/:id',
+        destination: '/admin/blog/:id',
+        permanent: false,
+      },
+      {
+        source: '/admin/cms',
+        has: [{ type: 'query', key: 'tab', value: 'blog' }],
+        destination: '/admin/blog',
+        permanent: false,
+      },
+
       // Legacy metallic-ptfe-hoses category was split into the new
       // metallic-hoses parent + 7 sub-categories during the Metallic
       // Hoses initiative (Batch 0, PR #93). The old slug remains in DB
