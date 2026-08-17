@@ -46,17 +46,32 @@ export default async function NewUserPage() {
     <AdminPageShell
       title="Add Staff Member"
       actions={
-        <Link
-          href="/admin/users"
-          className="flex h-9 items-center rounded-md border border-ih-border bg-ih-surface px-4 text-[13px] font-medium transition-colors hover:border-ih-accent hover:text-ih-accent"
-        >
-          ← All staff
-        </Link>
+        <>
+          {/*
+            form="new-staff-form" is what keeps this working from the bar —
+            a submit button outside its <form> is inert, with no compile error,
+            no lint failure and no runtime error; the click just does nothing.
+            form-attribute-association.test.ts pins the pairing.
+          */}
+          <Link
+            href="/admin/users"
+            className="flex h-9 items-center rounded-md border border-ih-border bg-ih-surface px-4 text-[13px] font-medium transition-colors hover:border-ih-accent hover:text-ih-accent"
+          >
+            ← All staff
+          </Link>
+          <button
+            type="submit"
+            form="new-staff-form"
+            className="flex h-9 items-center rounded-md bg-ih-accent px-4 text-[13px] font-medium text-white transition-opacity hover:opacity-90"
+          >
+            Create Staff Member
+          </button>
+        </>
       }
     >
       <div className="max-w-[560px]">
 
-        <form action={createUser} className="space-y-5">
+        <form id="new-staff-form" action={createUser} className="space-y-5">
           <div>
             <label htmlFor="newuser-name" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
               Full Name
@@ -103,21 +118,6 @@ export default async function NewUserPage() {
                 <option key={r.value} value={r.value}>{r.label}</option>
               ))}
             </Select>
-          </div>
-
-          <div className="flex items-center gap-3 pt-2 border-t border-ih-border">
-            <button
-              type="submit"
-              className="h-9 px-5 bg-ih-accent text-white font-mono text-[12px] hover:opacity-90"
-            >
-              Create Staff Member
-            </button>
-            <Link
-              href="/admin/users"
-              className="h-9 px-4 flex items-center border border-ih-border font-mono text-[12px] text-ih-ink-2 hover:bg-ih-surface-2"
-            >
-              Cancel
-            </Link>
           </div>
         </form>
       </div>
