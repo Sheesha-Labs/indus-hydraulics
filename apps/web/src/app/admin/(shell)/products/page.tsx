@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import AdminPageShell from '../../../../components/admin/AdminPageShell'
 import { db, Prisma } from '@indus/db'
+import { Pagination } from '@indus/ui'
 import ContentScoreBadge from '../../../../components/admin/ContentScoreBadge'
 import { ADMIN_PREFIX } from '../../../../lib/admin-paths'
 
@@ -338,88 +339,17 @@ export default async function AdminProductsPage({ params, searchParams }: Props)
             </div>
 
             {totalPages > 1 && (
-              <Pagination currentPage={page} totalPages={totalPages} buildUrl={(n) => buildUrl({ page: n === 1 ? undefined : String(n) })} />
+              <Pagination
+                currentPage={page}
+                totalPages={totalPages}
+                buildUrl={(n) => buildUrl({ page: n === 1 ? undefined : String(n) })}
+                linkComponent={Link}
+              />
             )}
           </>
         )}
     </AdminPageShell>
   )
-}
-
-// ── Pagination ──────────────────────────────────────────────────────────────
-
-function Pagination({
-  currentPage,
-  totalPages,
-  buildUrl,
-}: {
-  currentPage: number
-  totalPages: number
-  buildUrl: (page: number) => string
-}) {
-  const pages = pageRange(currentPage, totalPages)
-  const prevDisabled = currentPage <= 1
-  const nextDisabled = currentPage >= totalPages
-
-  return (
-    <nav className="flex items-center justify-center gap-1 mt-6 font-mono text-[12px]" aria-label="Pagination">
-      <PageBtn href={buildUrl(currentPage - 1)} disabled={prevDisabled}>
-        ← Prev
-      </PageBtn>
-      {pages.map((p, i) =>
-        p === '…' ? (
-          <span key={`gap-${i}`} className="px-2 text-ih-muted">
-            …
-          </span>
-        ) : (
-          <PageBtn key={p} href={buildUrl(p)} active={p === currentPage}>
-            {p}
-          </PageBtn>
-        ),
-      )}
-      <PageBtn href={buildUrl(currentPage + 1)} disabled={nextDisabled}>
-        Next →
-      </PageBtn>
-    </nav>
-  )
-}
-
-function PageBtn({
-  href,
-  children,
-  active,
-  disabled,
-}: {
-  href: string
-  children: React.ReactNode
-  active?: boolean
-  disabled?: boolean
-}) {
-  const cls = `min-w-9 h-9 px-3 inline-flex items-center justify-center border ${
-    active
-      ? 'bg-ih-navy text-white border-ih-ink'
-      : 'bg-white text-ih-ink-2 border-ih-border hover:border-ih-accent'
-  } ${disabled ? 'opacity-40 pointer-events-none' : ''}`
-  if (disabled) return <span className={cls}>{children}</span>
-  return (
-    <Link href={href} className={cls}>
-      {children}
-    </Link>
-  )
-}
-
-// Returns a list like [1, '…', 5, 6, 7, 8, 9, '…', 42] for currentPage=7, totalPages=42.
-// Always shows first, last, current ±2.
-function pageRange(current: number, total: number): (number | '…')[] {
-  if (total <= 7) return Array.from({ length: total }, (_, i) => i + 1)
-  const out: (number | '…')[] = [1]
-  const start = Math.max(2, current - 2)
-  const end = Math.min(total - 1, current + 2)
-  if (start > 2) out.push('…')
-  for (let i = start; i <= end; i++) out.push(i)
-  if (end < total - 1) out.push('…')
-  out.push(total)
-  return out
 }
 
 // ── Bits ────────────────────────────────────────────────────────────────────

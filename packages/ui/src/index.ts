@@ -8,6 +8,16 @@ export * from './Surface'
 export * from './Table'
 export * from './States'
 
+// Overlays. Dialog / DropdownMenu / Tooltip delegate focus management to Radix
+// packages this workspace already declared but had never imported — see the
+// docblock in Dialog.tsx for why that beats a hand-rolled trap. Toast is ours;
+// there is no Radix toast dependency and it is a live region, not a trap.
+export * from './Dialog'
+export * from './DropdownMenu'
+export * from './Tooltip'
+export * from './Toast'
+export * from './Pagination'
+
 // Not yet ported to v2 — still on the v1 grammar, rebuilt with the screens
 // that consume them.
 export * from './Tabs'
