@@ -46,6 +46,9 @@ const ROUTES = [
   '/blog/c/failure-analysis',
   '/blog/c/industrial-hose',
   '/blog/chemical-transfer-hose-selection',
+  // 15 articles crosses BLOG_PAGE_SIZE, so page 2 finally exists and the
+  // pagination row can be checked at 320px for the first time.
+  '/blog/page/2',
   '/tools',
   '/tools/thread-identifier',
   '/tools/pressure-converter',
