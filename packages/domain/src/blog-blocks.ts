@@ -364,6 +364,21 @@ export function blogReferencedSkus(blocks: BlogBlocks): string[] {
 }
 
 /**
+ * Every catalogue category slug referenced by a `category_link`, de-duplicated
+ * and order-preserving. Counterpart to `blogReferencedSkus` — both exist so
+ * the article's outbound links can be mirrored into relation rows, which is
+ * what lets a category or product page ask the reverse question.
+ */
+export function blogReferencedCategorySlugs(blocks: BlogBlocks): string[] {
+  const seen = new Set<string>()
+  for (const block of blocks) {
+    if (block.type !== 'category_link') continue
+    if (!seen.has(block.slug)) seen.add(block.slug)
+  }
+  return [...seen]
+}
+
+/**
  * Q&A pairs across every `faq_block`, for FAQPage JSON-LD. Reading them back
  * out of the blocks — rather than storing them a second time — is what keeps
  * the structured data and the visible accordion from drifting apart.

@@ -25,6 +25,7 @@ import { Prisma } from '@prisma/client'
 import { db } from '../../index'
 import {
   BlogBlocksSchema,
+  blogReferencedCategorySlugs,
   blogReferencedSkus,
   estimateReadingMinutes,
 } from '@indus/domain'
@@ -148,17 +149,74 @@ async function main(): Promise<void> {
       body: '',
     }
 
-    await db.blogPost.upsert({
+    const saved = await db.blogPost.upsert({
       where: { slug: article.slug },
       // publishedAt is create-only: re-importing an edited article must not
       // re-date it, for the same reason the editor must not.
       update: shared,
       create: { ...shared, slug: article.slug, publishedAt: new Date(article.publishedAt) },
+      select: { id: true },
     })
+
+    await syncArticleLinks(saved.id, blocks)
     console.log(`  ✓ /blog/${article.slug}`)
   }
 
   console.log('done')
+}
+
+/**
+ * Mirror the article's outbound links into relation rows.
+ *
+ * The blocks already carry the links, so this is duplication — deliberately.
+ * Without it a product page cannot ask "which articles mention me" without
+ * scanning every JSON body in the table, and that reverse direction is the
+ * half of the loop that makes editorial pay. Reading it out of a relation is
+ * an index lookup; reading it out of JSONB is a sequential scan.
+ *
+ * Rewritten wholesale on every import rather than diffed: an edit that
+ * REMOVES a product embed has to remove the row too, and a diff that only
+ * ever adds would leave the article advertising a part it no longer mentions.
+ */
+async function syncArticleLinks(postId: string, blocks: BlogBlocks): Promise<void> {
+  const skus = blogReferencedSkus(blocks)
+  const categorySlugs = blogReferencedCategorySlugs(blocks)
+
+  const [products, categories] = await Promise.all([
+    skus.length
+      ? db.product.findMany({ where: { sku: { in: skus } }, select: { id: true, sku: true } })
+      : Promise.resolve([]),
+    categorySlugs.length
+      ? db.category.findMany({
+          where: { slug: { in: categorySlugs } },
+          select: { id: true, slug: true },
+        })
+      : Promise.resolve([]),
+  ])
+
+  const productIdBySku = new Map(products.map((p) => [p.sku, p.id]))
+  const categoryIdBySlug = new Map(categories.map((c) => [c.slug, c.id]))
+
+  await db.$transaction([
+    db.blogPostProduct.deleteMany({ where: { postId } }),
+    db.blogPostProduct.createMany({
+      data: skus
+        .map((sku, i) => ({ postId, productId: productIdBySku.get(sku), position: i }))
+        .filter((row): row is { postId: string; productId: string; position: number } =>
+          Boolean(row.productId),
+        ),
+      skipDuplicates: true,
+    }),
+    db.blogPostCategory.deleteMany({ where: { postId } }),
+    db.blogPostCategory.createMany({
+      data: categorySlugs
+        .map((slug, i) => ({ postId, categoryId: categoryIdBySlug.get(slug), position: i }))
+        .filter((row): row is { postId: string; categoryId: string; position: number } =>
+          Boolean(row.categoryId),
+        ),
+      skipDuplicates: true,
+    }),
+  ])
 }
 
 main()

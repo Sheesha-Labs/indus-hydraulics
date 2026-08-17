@@ -2,6 +2,7 @@ import { describe, expect, it } from 'vitest'
 import {
   BlogBlockSchema,
   blogFaqPairs,
+  blogReferencedCategorySlugs,
   estimateReadingMinutes,
   blogReferencedSkus,
   blogTocEntries,
@@ -237,5 +238,22 @@ describe('estimateReadingMinutes', () => {
       { type: 'faq_block', items: [{ question: words(110), answer: words(110) }] },
     ])
     expect(estimateReadingMinutes(blocks)).toBe(1)
+  })
+})
+
+describe('blogReferencedCategorySlugs', () => {
+  it('de-duplicates and preserves first-seen order', () => {
+    const { blocks } = parseBlogBlocks([
+      { type: 'category_link', slug: 'hoses-fittings', label: 'Hoses' },
+      { type: 'paragraph', html: 'text' },
+      { type: 'category_link', slug: 'seals-accessories', label: 'Seals' },
+      { type: 'category_link', slug: 'hoses-fittings', label: 'Hoses again' },
+    ])
+    expect(blogReferencedCategorySlugs(blocks)).toEqual(['hoses-fittings', 'seals-accessories'])
+  })
+
+  it('returns empty when an article links to no categories', () => {
+    const { blocks } = parseBlogBlocks([{ type: 'paragraph', html: 'text' }])
+    expect(blogReferencedCategorySlugs(blocks)).toEqual([])
   })
 })
