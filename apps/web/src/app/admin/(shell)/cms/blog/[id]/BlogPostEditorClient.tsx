@@ -37,8 +37,8 @@ type BlogPost = {
   heroStoragePath: string | null
   /** Author's display name (for Article JSON-LD preview). */
   authorName: string | null
-  /** Author FK — editable from the Content tab. */
-  authorStaffId: string | null
+  /** Public byline FK — a BlogAuthor, editable from the Content tab. */
+  blogAuthorId: string | null
 
   seoTitle: string | null
   seoDescription: string | null
@@ -65,7 +65,7 @@ type BlogPost = {
 export type BylineCandidate = {
   id: string
   name: string
-  role: string
+  jobTitle: string | null
 }
 
 interface Props {
@@ -74,10 +74,8 @@ interface Props {
   /** Post data (only for the edit path; null on new). */
   post: BlogPost | null
   recentImages: RecentMedia[]
-  /** Active staff who can hold a byline. */
+  /** Published author profiles that can hold a byline. */
   authors: BylineCandidate[]
-  /** Signed-in staff id, used to pre-select the byline on a new post. */
-  currentStaffId: string | null
 }
 
 const TABS = [
@@ -101,7 +99,6 @@ export default function BlogPostEditorClient({
   post,
   recentImages,
   authors,
-  currentStaffId,
 }: Props) {
   const searchParams = useSearchParams()
   const initialTab: TabId = (() => {
@@ -171,7 +168,6 @@ export default function BlogPostEditorClient({
           post={post}
           recentImages={recentImages}
           authors={authors}
-          currentStaffId={currentStaffId}
         />
       )}
 
@@ -202,13 +198,11 @@ function ContentForm({
   post,
   recentImages,
   authors,
-  currentStaffId,
 }: {
   isNew: boolean
   post: BlogPost | null
   recentImages: RecentMedia[]
   authors: BylineCandidate[]
-  currentStaffId: string | null
 }) {
   // Hero lives in client state because the picker is interactive; the value
   // reaches the server action through a hidden input rather than a fetch.
@@ -284,19 +278,21 @@ function ContentForm({
           </label>
           <select
             id="blogpost-author"
-            name="authorStaffId"
-            defaultValue={post?.authorStaffId ?? currentStaffId ?? ''}
+            name="blogAuthorId"
+            defaultValue={post?.blogAuthorId ?? ''}
             className="h-10 w-full rounded-md border border-ih-border bg-white px-2 text-[13px]"
           >
-            <option value="">— Unchanged —</option>
+            <option value="">— No public byline —</option>
             {authors.map((a) => (
               <option key={a.id} value={a.id}>
-                {a.name} · {a.role.replace(/_/g, ' ')}
+                {a.name}
+                {a.jobTitle ? ` · ${a.jobTitle}` : ''}
               </option>
             ))}
           </select>
           <p className="mt-1 text-[11px] text-ih-muted-2">
-            Credits the engineer who wrote it, not whoever saved it last.
+            Credits the engineer who wrote it, and links to their profile. Without one the post
+            falls back to the staff name.
           </p>
         </div>
 
