@@ -69,7 +69,7 @@ export default async function AboutPage({ params }: Props) {
   return (
     <div>
       {/* ── Hero ──────────────────────────────────────────────── */}
-      <div className="mx-auto max-w-[1440px] px-5 sm:px-8 xl:px-12 pt-16 pb-8 grid gap-14 items-end" style={{ gridTemplateColumns: '1.2fr 1fr' }}>
+      <div className="mx-auto max-w-[1440px] px-5 sm:px-8 xl:px-12 pt-16 pb-8 grid grid-cols-1 gap-14 items-end lg:grid-cols-[1.2fr_1fr]">
         <div>
           <div className="font-mono text-[11px] tracking-[0.16em] text-ih-muted uppercase mb-3">ABOUT INDUS · EST. 2003</div>
           <h1 className="text-[clamp(44px,5.5vw,72px)] tracking-[-0.035em] leading-[1.02] font-semibold">
@@ -100,7 +100,7 @@ export default async function AboutPage({ params }: Props) {
 
       {/* ── Timeline ──────────────────────────────────────────── */}
       <section className="mx-auto max-w-[1440px] px-5 sm:px-8 xl:px-12 py-16">
-        <div className="grid gap-14" style={{ gridTemplateColumns: '1fr 2fr' }}>
+        <div className="grid grid-cols-1 gap-14 lg:grid-cols-[1fr_2fr]">
           <div>
             <div className="font-mono text-[11px] tracking-[0.16em] text-ih-muted uppercase mb-2">OUR STORY</div>
             <h2 className="text-[36px] font-semibold tracking-[-0.02em] leading-[1.1] mb-4">From a trading desk to an assembly line.</h2>
@@ -112,11 +112,13 @@ export default async function AboutPage({ params }: Props) {
             {TIMELINE.map((item, i) => (
               <div
                 key={item.year}
-                className={`grid gap-6 py-5 ${i < TIMELINE.length - 1 ? 'border-b border-ih-border' : ''}`}
-                style={{ gridTemplateColumns: '80px 1fr' }}
+                /* Class, not inline: an inline gridTemplateColumns beats the
+                   responsive utilities, so the 80px year column plus body
+                   text ran past a 390px viewport. */
+                className={`grid grid-cols-[64px_1fr] gap-4 py-5 sm:grid-cols-[80px_1fr] sm:gap-6 ${i < TIMELINE.length - 1 ? 'border-b border-ih-border' : ''}`}
               >
                 <span className="font-mono text-[16px] text-ih-accent">{item.year}</span>
-                <div>
+                <div className="min-w-0">
                   <h4 className="text-[17px] font-semibold mb-1.5">{item.title}</h4>
                   <p className="text-[14px] text-ih-muted leading-[1.55]">{item.desc}</p>
                 </div>
@@ -175,12 +177,12 @@ export default async function AboutPage({ params }: Props) {
       </section>
 
       {/* ── CTA ───────────────────────────────────────────────── */}
-      <section className="mx-auto max-w-[1440px] px-5 sm:px-8 xl:px-12 py-16 grid gap-8 items-center" style={{ gridTemplateColumns: '1fr auto' }}>
+      <section className="mx-auto max-w-[1440px] px-5 sm:px-8 xl:px-12 py-16 grid grid-cols-1 gap-8 items-center md:grid-cols-[1fr_auto]">
         <div>
           <h2 className="text-[28px] font-semibold tracking-[-0.02em] mb-2">Ready to put us to the test?</h2>
           <p className="text-[14px] text-ih-muted">Send us your hardest-to-source SKU. We respond within 4 hours — often in minutes.</p>
         </div>
-        <div className="flex gap-3 shrink-0">
+        <div className="flex flex-wrap gap-3 sm:shrink-0">
           <Link href={`/quote`} className="h-11 px-6 flex items-center bg-ih-accent text-white text-[14px] font-medium hover:opacity-90 transition-opacity whitespace-nowrap">
             Submit an RFQ →
           </Link>

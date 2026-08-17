@@ -27,7 +27,10 @@ export default function ArticleRenderer({ blocksRaw }: Props) {
     return null
   }
   return (
-    <article className="sc-article-body">
+    // min-w-0: as a grid item this defaults to min-width:auto, so the widest
+    // spec table set the column width and the overflow-x-auto wrapper inside it
+    // never had a constrained parent to scroll within.
+    <article className="sc-article-body min-w-0">
       {parsed.data.map((block, i) => (
         <BlockSwitch key={i} block={block} />
       ))}

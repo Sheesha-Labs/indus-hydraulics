@@ -83,14 +83,22 @@ export default async function ServiceCasePage({ params }: Props) {
         <CaseHero case={c} />
         <CaseMetaStrip metaCellsRaw={c.metaCells} />
 
-        <div className="grid items-start gap-12 py-14 pb-20 lg:grid-cols-[220px_minmax(0,1fr)_300px]">
-          <aside className="lg:sticky lg:top-24">
+        {/*
+          grid-cols-1 is load-bearing, not decoration. A `grid` with no
+          grid-template-columns creates ONE IMPLICIT COLUMN sized `auto`,
+          i.e. max-content — so at mobile this column grew to fit the
+          longest TOC link (458px) instead of the 382px viewport, and the
+          whole page scrolled sideways. Tailwind's grid-cols-1 is
+          repeat(1, minmax(0,1fr)), which constrains to the container.
+        */}
+        <div className="grid grid-cols-1 items-start gap-12 py-14 pb-20 lg:grid-cols-[220px_minmax(0,1fr)_300px]">
+          <aside className="min-w-0 lg:sticky lg:top-24">
             <CaseToc bodyBlocksRaw={c.bodyBlocks} />
           </aside>
 
           <ArticleRenderer blocksRaw={c.bodyBlocks} />
 
-          <aside className="lg:sticky lg:top-24">
+          <aside className="min-w-0 lg:sticky lg:top-24">
             <CaseRail
               ctaCardTitle={c.ctaCardTitle}
               ctaCardBody={c.ctaCardBody}
@@ -109,7 +117,16 @@ export default async function ServiceCasePage({ params }: Props) {
         </div>
       </div>
 
-      <RelatedCases cases={related} />
+      {/*
+        RelatedCases is full-bleed via `-mx-[var(--spacing-page-gutter)]`, which
+        only cancels out inside a parent that HAS that padding. Rendered bare at
+        page level it had nothing to cancel and pushed 48px past the viewport on
+        both sides — 3,086-word case-study pages scrolled sideways. ApproachSteps
+        uses the same trick correctly, from inside this container.
+      */}
+      <div className="mx-auto max-w-[var(--spacing-max-w)] px-[var(--spacing-page-gutter)]">
+        <RelatedCases cases={related} />
+      </div>
 
       <div className="mx-auto max-w-[var(--spacing-max-w)] px-[var(--spacing-page-gutter)]">
         <ServicesCta

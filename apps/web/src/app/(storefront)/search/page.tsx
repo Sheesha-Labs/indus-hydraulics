@@ -370,7 +370,7 @@ export default async function SearchPage({ searchParams }: Props) {
           </div>
         </div>
       ) : (
-        <div className="grid grid-cols-[240px_1fr] gap-8">
+        <div className="grid gap-8 lg:grid-cols-[240px_1fr]">
           <aside>
             <div className="sticky top-[88px]">
               <p className="font-mono text-[11px] tracking-[0.12em] uppercase text-ih-muted mb-4">
@@ -582,7 +582,7 @@ export default async function SearchPage({ searchParams }: Props) {
                       href={`/p/${topMatch.slug}`}
                       data-search-result-sku={topMatch.sku}
                       data-search-result-q={query}
-                      className="grid grid-cols-[140px_1fr] gap-6 p-5 border border-ih-border bg-ih-surface border-l-[3px] border-l-ih-accent hover:border-ih-accent hover:border-l-ih-accent transition-colors"
+                      className="grid gap-6 p-5 border border-ih-border bg-ih-surface border-l-[3px] border-l-ih-accent hover:border-ih-accent hover:border-l-ih-accent transition-colors sm:grid-cols-[140px_1fr]"
                     >
                       <div className="aspect-square bg-ih-surface-2 border border-ih-border relative overflow-hidden">
                         {topMatch.images[0] ? (

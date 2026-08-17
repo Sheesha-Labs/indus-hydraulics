@@ -41,7 +41,7 @@ export default async function IndustriesIndexPage({ params }: Props) {
       {/* Hero */}
       <div className="mx-auto max-w-[1440px] px-5 sm:px-8 xl:px-12 pt-14 pb-10">
         <div className="font-mono text-[11px] tracking-[0.16em] text-ih-muted uppercase mb-3">INDUSTRIES WE SERVE</div>
-        <div className="grid gap-12 items-end" style={{ gridTemplateColumns: '1.2fr 1fr' }}>
+        <div className="grid grid-cols-1 gap-12 items-end lg:grid-cols-[1.2fr_1fr]">
           <h1 className="text-[clamp(40px,5vw,64px)] tracking-[-0.03em] leading-[1.05] font-semibold">
             Specialist supply for the industries that cannot stop.
           </h1>
@@ -121,7 +121,7 @@ export default async function IndustriesIndexPage({ params }: Props) {
               We supply hydraulic components across many more applications. Send us your part number or specification.
             </p>
           </div>
-          <div className="flex gap-3 shrink-0">
+          <div className="flex flex-wrap gap-3 sm:shrink-0">
             <Link
               href={`/quote`}
               className="h-11 px-6 flex items-center bg-ih-accent text-white text-[14px] font-medium hover:opacity-90 transition-opacity whitespace-nowrap"

@@ -7,12 +7,33 @@ import { getReplacementBrands } from '../../../lib/replacement-data'
 import { getStoreSettings } from '../../../lib/store-settings'
 
 export async function generateMetadata(): Promise<Metadata> {
-  return pageMetadata({
-    title: 'Replacements & cross-references — Indus Hydraulics',
-    description:
-      'Find Indus Hydraulics equivalents for Parker, Bosch Rexroth, Eaton, and other major hydraulic-component brands. Cross-references verified by our applications team.',
-    path: `/replacement`,
-  })
+  /*
+    Noindex until there is data.
+
+    `product_cross_references` is EMPTY, so this page ships a heading, a promise
+    of "cross-references verified by our applications team", and then "No
+    cross-references published yet." An indexed page that answers nothing is a
+    thin-content signal working against the rest of the SEO effort, and it is
+    the first impression for anyone who searches a competitor part number.
+
+    The route stays live and reachable — the "ask an engineer" path on it is
+    genuinely useful. Only indexing is switched off.
+
+    REMOVE THIS as soon as rows exist. The count below is the switch: it flips
+    back to indexable on its own, so nobody has to remember.
+  */
+  const brands = await getReplacementBrands()
+  const hasData = brands.length > 0
+
+  return {
+    ...pageMetadata({
+      title: 'Replacements & cross-references — Indus Hydraulics',
+      description:
+        'Find Indus Hydraulics equivalents for Parker, Bosch Rexroth, Eaton, and other major hydraulic-component brands. Cross-references verified by our applications team.',
+      path: `/replacement`,
+    }),
+    ...(hasData ? {} : { robots: { index: false, follow: true } }),
+  }
 }
 
 export default async function ReplacementIndexPage() {
