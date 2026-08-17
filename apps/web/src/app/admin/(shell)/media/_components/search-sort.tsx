@@ -3,7 +3,7 @@
 import { useRouter } from 'next/navigation'
 import { useTransition } from 'react'
 import { Search } from 'lucide-react'
-import { MEDIA_SORT_LABELS, type MediaSort } from '@indus/domain'
+import type { MediaSort } from '@indus/domain'
 import { cn } from '@indus/ui'
 
 /**
@@ -60,13 +60,20 @@ export function MediaSearchBox({
   )
 }
 
+/**
+ * Options are passed as DATA, not as a `buildUrl` function.
+ *
+ * This is a Client Component and the page rendering it is a Server Component,
+ * so a function prop cannot cross the boundary — it is not serializable, and
+ * the page throws at request time even though the build and the tests pass.
+ * The server precomputes one href per option instead.
+ */
 export function MediaSortSelect({
   value,
-  buildUrl,
+  options,
 }: {
   value: MediaSort
-  /** Given a sort, returns the URL for it. Page is reset by the caller. */
-  buildUrl: (sort: MediaSort) => string
+  options: ReadonlyArray<{ value: MediaSort; label: string; href: string }>
 }) {
   const router = useRouter()
   const [pending, startTransition] = useTransition()
@@ -81,8 +88,8 @@ export function MediaSortSelect({
         value={value}
         disabled={pending}
         onChange={(e) => {
-          const next = e.target.value as MediaSort
-          startTransition(() => router.push(buildUrl(next)))
+          const next = options.find((o) => o.value === e.target.value)
+          if (next) startTransition(() => router.push(next.href))
         }}
         className={cn(
           'h-8 rounded-md border border-ih-border bg-ih-surface px-2 text-[12.5px] text-ih-ink-2',
@@ -90,9 +97,9 @@ export function MediaSortSelect({
           pending && 'opacity-60'
         )}
       >
-        {(Object.keys(MEDIA_SORT_LABELS) as MediaSort[]).map((sort) => (
-          <option key={sort} value={sort}>
-            {MEDIA_SORT_LABELS[sort]}
+        {options.map((o) => (
+          <option key={o.value} value={o.value}>
+            {o.label}
           </option>
         ))}
       </select>

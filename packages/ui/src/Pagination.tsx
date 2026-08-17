@@ -1,5 +1,3 @@
-'use client'
-
 import * as React from 'react'
 import { cn } from './lib/utils'
 
@@ -24,6 +22,17 @@ import { cn } from './lib/utils'
  *
  *   import Link from 'next/link'
  *   <Pagination … linkComponent={Link} />
+ *
+ * ⚠ NO `'use client'`, deliberately, and it must stay that way.
+ *
+ * This component has no state, no effects and no event handlers — it is links.
+ * Marking it a Client Component makes its props cross the RSC boundary, and
+ * both `buildUrl` and `linkComponent` are functions. Functions are not
+ * serializable, so every Server Component page rendering it throws at request
+ * time — while the build, typecheck and unit tests all still pass, because
+ * none of them exercises that boundary. That is exactly what happened: it
+ * shipped with `'use client'` and took down /admin/products and /admin/media.
+ * `pagination-is-server.test.ts` guards it.
  */
 
 /**
