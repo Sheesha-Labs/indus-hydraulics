@@ -1,3 +1,5 @@
+'use client'
+
 import Link from 'next/link'
 import { Link2 } from 'lucide-react'
 import {
@@ -9,7 +11,10 @@ import {
   type MediaState,
   type MediaUsage,
 } from '@indus/domain'
-import { Badge, cn } from '@indus/ui'
+import { Badge, Checkbox, cn } from '@indus/ui'
+
+import { MediaRowActions } from './row-actions'
+import type { MediaDetail } from './types'
 
 /**
  * How a media file renders in the grid and the list.
@@ -25,12 +30,28 @@ import { Badge, cn } from '@indus/ui'
  * is amber; Internal and Unused are both neutral, because neither is a problem
  * and tinting them would make a tidy library look alarming. Per CLAUDE.md §10.2
  * every one of them is also a word, never colour alone.
+ *
+ * ⚠ Layout constraint: the card's click target is a <button>, so the checkbox
+ * and the action cluster must be its SIBLINGS, not its children. A button
+ * inside a button is invalid HTML and browsers recover from it unpredictably —
+ * usually by dropping the inner control, which would make the delete button
+ * silently unclickable.
  */
-
-import type { MediaDetail } from './types'
 
 /** Kept as an alias so existing imports of the old name keep resolving. */
 export type MediaRowView = MediaDetail
+
+interface RowProps {
+  rows: MediaRowView[]
+  onOpen: (id: string) => void
+  indexPartial: boolean
+  canWrite: boolean
+  canDestroy: boolean
+  trashed: boolean
+  selected: ReadonlySet<string>
+  onToggleSelect: (id: string) => void
+  onChanged: () => void
+}
 
 // ── State pill ──────────────────────────────────────────────────────────────
 
@@ -86,12 +107,10 @@ function UsageLine({ usages, className }: { usages: MediaUsage[]; className?: st
 
 function Thumb({
   item,
-  usageCount,
   usages,
   className,
 }: {
   item: MediaListItem
-  usageCount: number
   usages: MediaUsage[]
   className?: string
 }) {
@@ -101,9 +120,7 @@ function Thumb({
       {/* A plain <img>, not next/image: storagePath holds four different shapes
           and only some are absolute URLs, so next/image would need a loader per
           shape for no benefit at 4:3 thumbnail size — and its remote patterns
-          would have to allow every third-party host an admin has ever pasted.
-          The disable must sit directly above the element or it silently applies
-          to the wrong line and lint reports it as unused. */}
+          would have to allow every third-party host an admin has ever pasted. */}
       {src ? (
         // eslint-disable-next-line @next/next/no-img-element
         <img
@@ -119,15 +136,15 @@ function Thumb({
         </span>
       )}
 
-      {usageCount > 0 ? (
+      {usages.length > 0 ? (
         <span
           className="absolute bottom-1.5 left-1.5 inline-flex h-5 items-center gap-1 rounded-sm bg-ih-ink/80 px-1.5 text-[10px] font-medium text-white backdrop-blur-[2px]"
           title={summariseUsage(usages)}
         >
           <Link2 size={9} strokeWidth={2} aria-hidden="true" />
-          <span className="tabular-nums">{usageCount}</span>
+          <span className="tabular-nums">{usages.length}</span>
           <span className="sr-only">
-            {usageCount === 1 ? 'used in 1 place' : `used in ${usageCount} places`}
+            {usages.length === 1 ? 'used in 1 place' : `used in ${usages.length} places`}
           </span>
         </span>
       ) : null}
@@ -135,117 +152,170 @@ function Thumb({
   )
 }
 
-/** `image/svg+xml` -> `SVG`. Falls back to the media kind. */
+/** `HP001.png` -> `PNG`. Falls back to the media kind. */
 function subtype(item: MediaListItem): string {
   const tail = item.originalFilename.split('.').pop()
   if (tail && tail.length <= 5 && tail !== item.originalFilename) return tail
   return item.kind
 }
 
-// ── Grid ────────────────────────────────────────────────────────────────────
+// ── Selection checkbox ──────────────────────────────────────────────────────
 
-export function MediaGrid({
-  rows,
-  onOpen,
+function SelectBox({
+  checked,
+  onToggle,
+  filename,
+  className,
 }: {
-  rows: MediaRowView[]
-  onOpen: (id: string) => void
+  checked: boolean
+  onToggle: () => void
+  filename: string
+  className?: string
 }) {
   return (
+    // A <span>, not a <label>: the Checkbox primitive renders its own label
+    // around its input, and nesting labels is invalid — the browser then
+    // associates the inner control with whichever label it resolves first.
+    // stopPropagation keeps a click on the box from also opening the card.
+    <span
+      className={cn('inline-flex items-center justify-center rounded-sm p-1', className)}
+      onClick={(e) => e.stopPropagation()}
+    >
+      <Checkbox checked={checked} onChange={onToggle} aria-label={`Select ${filename}`} />
+    </span>
+  )
+}
+
+// ── Grid ────────────────────────────────────────────────────────────────────
+
+export function MediaGrid(props: RowProps) {
+  const { rows, onOpen, selected, onToggleSelect } = props
+  return (
     <ul className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6">
-      {rows.map((row) => {
-        const { state, usages } = row
-        const item = row
-        return (
+      {rows.map((row) => (
         <li
-          key={item.id}
-          className="flex flex-col overflow-hidden rounded-lg border border-ih-border bg-ih-surface"
+          key={row.id}
+          className={cn(
+            'relative flex flex-col overflow-hidden rounded-lg border bg-ih-surface transition-colors',
+            selected.has(row.id) ? 'border-ih-accent' : 'border-ih-border'
+          )}
         >
-          {/* The whole card is the trigger. A separate info button would be a
-              28px target on a 200px card that does nothing else when clicked. */}
+          <SelectBox
+            checked={selected.has(row.id)}
+            onToggle={() => onToggleSelect(row.id)}
+            filename={row.originalFilename}
+            className="absolute left-1.5 top-1.5 z-10 bg-ih-surface/85 backdrop-blur-[2px]"
+          />
+
           <button
             type="button"
-            onClick={() => onOpen(item.id)}
-            aria-label={`Details for ${item.originalFilename}`}
-            className="flex flex-1 flex-col text-left outline-none transition-colors hover:bg-ih-surface-2 focus-visible:ring-[3px] focus-visible:ring-ih-accent-soft"
+            onClick={() => onOpen(row.id)}
+            aria-label={`Details for ${row.originalFilename}`}
+            className="flex flex-1 flex-col text-left outline-none transition-colors hover:bg-ih-surface-2 focus-visible:ring-[3px] focus-visible:ring-inset focus-visible:ring-ih-accent-soft"
           >
-          <Thumb item={item} usageCount={usages.length} usages={usages} className="aspect-[4/3]" />
-          <div className="flex flex-1 flex-col gap-1.5 px-3 py-2.5">
-            <div className="flex items-start justify-between gap-2">
-              <span className="truncate text-[13px] font-medium" title={item.originalFilename}>
-                {item.originalFilename}
-              </span>
-              <MediaStatePill state={state} />
+            <Thumb item={row} usages={row.usages} className="aspect-[4/3]" />
+            <div className="flex flex-1 flex-col gap-1.5 px-3 pt-2.5">
+              <div className="flex items-start justify-between gap-2">
+                <span className="truncate text-[13px] font-medium" title={row.originalFilename}>
+                  {row.originalFilename}
+                </span>
+                <MediaStatePill state={row.state} />
+              </div>
+              <UsageLine usages={row.usages} />
             </div>
-            <UsageLine usages={usages} />
-            {/* mt-auto pins the meta row to the bottom so ragged filename
-                lengths still leave the grid with a flush baseline. */}
-            <div className="mt-auto flex items-center gap-2 pt-1.5 font-mono text-[11px] text-ih-muted">
-              <span className="tabular-nums" title={item.bytes > 0 ? undefined : 'File size was not recorded at upload'}>
-                {formatBytesOrUnknown(item.bytes)}
-              </span>
-              <span aria-hidden="true">·</span>
-              <span className="truncate uppercase tracking-[0.06em]">{item.kind}</span>
-            </div>
-          </div>
           </button>
+
+          {/* Sibling of the button, not a child — see the warning above. */}
+          <div className="flex items-center gap-2 px-3 pb-2 pt-1.5 font-mono text-[11px] text-ih-muted">
+            <span
+              className="tabular-nums"
+              title={row.bytes > 0 ? undefined : 'File size was not recorded at upload'}
+            >
+              {formatBytesOrUnknown(row.bytes)}
+            </span>
+            <span aria-hidden="true">·</span>
+            <span className="truncate uppercase tracking-[0.06em]">{row.kind}</span>
+            <span className="ml-auto">
+              <MediaRowActions
+                detail={row}
+                indexPartial={props.indexPartial}
+                canWrite={props.canWrite}
+                canDestroy={props.canDestroy}
+                trashed={props.trashed}
+                onOpenDetail={() => onOpen(row.id)}
+                onChanged={props.onChanged}
+              />
+            </span>
+          </div>
         </li>
-        )
-      })}
+      ))}
     </ul>
   )
 }
 
 // ── List ────────────────────────────────────────────────────────────────────
 
-export function MediaList({
-  rows,
-  onOpen,
-}: {
-  rows: MediaRowView[]
-  onOpen: (id: string) => void
-}) {
+export function MediaList(props: RowProps) {
+  const { rows, onOpen, selected, onToggleSelect } = props
   return (
     <div className="overflow-hidden rounded-lg border border-ih-border bg-ih-surface">
       <ul className="divide-y divide-ih-border">
-        {rows.map((row) => {
-          const { state, usages } = row
-          const item = row
-          return (
-          <li key={item.id}>
-          <button
-            type="button"
-            onClick={() => onOpen(item.id)}
-            aria-label={`Details for ${item.originalFilename}`}
-            className="flex w-full items-center gap-4 px-4 py-2.5 text-left text-[13px] outline-none transition-colors hover:bg-ih-surface-2 focus-visible:ring-[3px] focus-visible:ring-inset focus-visible:ring-ih-accent-soft"
+        {rows.map((row) => (
+          <li
+            key={row.id}
+            className={cn(
+              'flex items-center gap-2 pr-3 transition-colors',
+              selected.has(row.id) && 'bg-ih-accent-soft/40'
+            )}
           >
-            <Thumb
-              item={item}
-              usageCount={usages.length}
-              usages={usages}
-              className="h-11 w-14 flex-shrink-0 rounded-sm"
+            <SelectBox
+              checked={selected.has(row.id)}
+              onToggle={() => onToggleSelect(row.id)}
+              filename={row.originalFilename}
+              className="ml-2 flex-shrink-0"
             />
-            <div className="min-w-0 flex-1">
-              <div className="truncate font-medium" title={item.originalFilename}>
-                {item.originalFilename}
-              </div>
-              <UsageLine usages={usages} />
-            </div>
-            <MediaStatePill state={state} />
-            {/* Fixed widths so the columns line up without a table element. */}
-            <span
-              className="w-16 text-right font-mono text-[11px] tabular-nums text-ih-muted"
-              title={item.bytes > 0 ? undefined : 'File size was not recorded at upload'}
+
+            <button
+              type="button"
+              onClick={() => onOpen(row.id)}
+              aria-label={`Details for ${row.originalFilename}`}
+              className="flex min-w-0 flex-1 items-center gap-4 py-2.5 text-left text-[13px] outline-none transition-colors hover:bg-ih-surface-2 focus-visible:ring-[3px] focus-visible:ring-inset focus-visible:ring-ih-accent-soft"
             >
-              {formatBytesOrUnknown(item.bytes)}
-            </span>
-            <span className="hidden w-20 font-mono text-[11px] uppercase tracking-[0.06em] text-ih-muted sm:block">
-              {item.kind}
-            </span>
-          </button>
+              <Thumb
+                item={row}
+                usages={row.usages}
+                className="h-11 w-14 flex-shrink-0 rounded-sm"
+              />
+              <div className="min-w-0 flex-1">
+                <div className="truncate font-medium" title={row.originalFilename}>
+                  {row.originalFilename}
+                </div>
+                <UsageLine usages={row.usages} />
+              </div>
+              <MediaStatePill state={row.state} />
+              {/* Fixed widths so the columns line up without a table element. */}
+              <span
+                className="w-16 text-right font-mono text-[11px] tabular-nums text-ih-muted"
+                title={row.bytes > 0 ? undefined : 'File size was not recorded at upload'}
+              >
+                {formatBytesOrUnknown(row.bytes)}
+              </span>
+              <span className="hidden w-16 font-mono text-[11px] uppercase tracking-[0.06em] text-ih-muted sm:block">
+                {row.kind}
+              </span>
+            </button>
+
+            <MediaRowActions
+              detail={row}
+              indexPartial={props.indexPartial}
+              canWrite={props.canWrite}
+              canDestroy={props.canDestroy}
+              trashed={props.trashed}
+              onOpenDetail={() => onOpen(row.id)}
+              onChanged={props.onChanged}
+            />
           </li>
-          )
-        })}
+        ))}
       </ul>
     </div>
   )
