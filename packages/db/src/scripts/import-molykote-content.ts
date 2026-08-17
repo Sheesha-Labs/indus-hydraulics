@@ -56,6 +56,11 @@ type Entry = {
   descriptionLong: string
   seoTitle: string
   seoDescription: string
+  /** Founder-directed corrections. Null when the record is already right. */
+  renameTo: string | null
+  newSlug: string | null
+  categorySlug: string | null
+  oldSlug: string
   faqs: { question: string; answer: string }[]
   specs: Spec[]
   document: { title: string; url: string; filename: string } | null
@@ -204,9 +209,37 @@ async function main() {
     // ── copy, specs, datasheet ───────────────────────────────────────────
     await db.$transaction(
       async (tx) => {
+        // Founder-directed identity corrections: a product filed under the
+        // wrong name, URL or category. Moving the slug leaves a 301 behind so
+        // the indexed URL keeps working.
+        let categoryId: string | undefined
+        if (e.categorySlug) {
+          const cat = await tx.category.findUnique({
+            where: { slug: e.categorySlug },
+            select: { id: true },
+          })
+          if (!cat) throw new Error(`no category with slug ${e.categorySlug}`)
+          categoryId = cat.id
+        }
+        if (e.newSlug && e.newSlug !== e.oldSlug) {
+          await tx.redirect.upsert({
+            where: { fromPath: `/p/${e.oldSlug}` },
+            create: {
+              fromPath: `/p/${e.oldSlug}`,
+              toPath: `/p/${e.newSlug}`,
+              statusCode: 301,
+              notes: `Molykote import: renamed to ${e.renameTo ?? e.newSlug}`,
+            },
+            update: { toPath: `/p/${e.newSlug}`, isActive: true },
+          })
+        }
+
         await tx.product.update({
           where: { id: product.id },
           data: {
+            ...(e.renameTo ? { title: e.renameTo } : {}),
+            ...(e.newSlug ? { slug: e.newSlug } : {}),
+            ...(categoryId ? { categoryId } : {}),
             descriptionShort: e.descriptionShort,
             descriptionLong: e.descriptionLong,
             // The page layout appends "| Indus Hydraulics" itself; the
@@ -222,11 +255,25 @@ async function main() {
         // and would now contradict the real spec table on the same page.
         // Correct exactly those, matched on question text; leave the
         // brand-level questions alone.
+        // On a product added by this import there are no FAQ rows to correct,
+        // so create them — otherwise a new product ships with none while every
+        // sibling has a full set.
+        let faqPos = await tx.productFaq.count({ where: { productId: product.id } })
         for (const f of e.faqs) {
-          await tx.productFaq.updateMany({
+          const hit = await tx.productFaq.updateMany({
             where: { productId: product.id, question: f.question },
             data: { answer: f.answer },
           })
+          if (hit.count === 0) {
+            await tx.productFaq.create({
+              data: {
+                productId: product.id,
+                question: f.question,
+                answer: f.answer,
+                position: faqPos++,
+              },
+            })
+          }
         }
 
         // Replace: the existing rows are placeholders, not a partial truth.
@@ -285,7 +332,7 @@ async function main() {
         const score = scoreProductContent({
           descriptionShortWords: words(e.descriptionShort),
           descriptionLongWords: words(e.descriptionLong),
-          faqCount: product._count.faqs,
+          faqCount: Math.max(product._count.faqs, e.faqs.length),
           specCount: e.specs.length,
           crossReferenceCount: product._count.crossReferences,
           documentCount: e.document ? 1 : 0,

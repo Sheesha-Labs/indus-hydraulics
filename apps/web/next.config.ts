@@ -113,6 +113,44 @@ const nextConfig: NextConfig = {
         destination: '/services/iwcf-iadc-wellsharp-well-control-training-levels-2-4',
         permanent: true,
       },
+
+      // Molykote cleanup (2026-08-17). "Molykote 7439" was really CU-7439 Plus
+      // Paste — a copper paste filed under anti-friction coatings — so it was
+      // retitled, recategorised and moved to a matching slug. "Molykote CU 7435
+      // Plus" was not a real product at all (DuPont publishes no 7435); it
+      // duplicated CU-7439 and was deleted.
+      //
+      // `permanent: true` emits a 308, not a 301 — Next uses 307/308 so the
+      // request method survives the redirect.
+      //
+      // NOTE: matching rows also exist in the `redirects` table, but nothing
+      // serves that table at runtime — only this array is honoured. See the
+      // admin SEO redirects section, whose entries are currently inert.
+      {
+        source: '/p/molykote-7439',
+        destination: '/p/molykote-cu-7439-plus-paste',
+        permanent: true,
+      },
+      {
+        source: '/p/molykote-cu-7435-plus',
+        destination: '/p/molykote-cu-7439-plus-paste',
+        permanent: true,
+      },
+
+      // "Molykote EP" and "Molykote EP Grease" were not real products either —
+      // DuPont publishes nothing called EP. Both were deleted and replaced by
+      // G-1074 Grease, the one DuPont extreme-pressure grease the catalogue
+      // did not already carry.
+      {
+        source: '/p/molykote-ep',
+        destination: '/p/molykote-g-1074-grease',
+        permanent: true,
+      },
+      {
+        source: '/p/molykote-ep-grease',
+        destination: '/p/molykote-g-1074-grease',
+        permanent: true,
+      },
     ]
   },
 }
