@@ -36,8 +36,21 @@ import ARTICLE_01 from './articles/identify-any-hydraulic-fitting'
 import ARTICLE_02 from './articles/hydraulic-fluid-injection-injury'
 import ARTICLE_03 from './articles/bspp-vs-bspt'
 import ARTICLE_04 from './articles/why-hydraulic-hoses-fail'
+import ARTICLE_05 from './articles/jic-vs-orfs-vs-npt-vs-bsp'
+import ARTICLE_06 from './articles/getting-a-hydraulic-hose-made'
+import ARTICLE_07 from './articles/hydraulic-hose-inspection'
+import ARTICLE_08 from './articles/hose-routing-bend-radius-twist'
 
-const ARTICLES: BlogArticleSeed[] = [ARTICLE_01, ARTICLE_02, ARTICLE_03, ARTICLE_04]
+const ARTICLES: BlogArticleSeed[] = [
+  ARTICLE_01,
+  ARTICLE_02,
+  ARTICLE_03,
+  ARTICLE_04,
+  ARTICLE_05,
+  ARTICLE_06,
+  ARTICLE_07,
+  ARTICLE_08,
+]
 
 const DRY_RUN = process.argv.includes('--dry-run')
 
