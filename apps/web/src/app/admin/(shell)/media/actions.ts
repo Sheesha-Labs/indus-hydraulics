@@ -437,3 +437,98 @@ export async function finaliseMediaUpload(
     return failFromError(err)
   }
 }
+
+// ── Picker ──────────────────────────────────────────────────────────────────
+
+const SearchSchema = z.object({
+  query: z.string().trim().max(120).default(''),
+  kind: z.enum(['image', 'document', 'cad', 'all']).default('image'),
+  limit: z.number().int().min(1).max(60).default(40),
+})
+
+export interface PickerResult {
+  id: string
+  storagePath: string
+  alt: string | null
+  caption: string | null
+  originalFilename: string
+  kind: 'image' | 'document' | 'cad'
+  bytes: number
+}
+
+/**
+ * Searches the whole library for the picker used inside content editors.
+ *
+ * The picker this replaces showed the 50 most recent files and asked the
+ * operator to paste a UUID for anything older — which, with 665 files and
+ * counting, means most of the library was reachable only by copying an id out
+ * of the database. This searches all of it.
+ *
+ * Trashed files are excluded: choosing one would attach a file that is on its
+ * way to being purged, and the purge would then refuse forever because the
+ * file had become used. Restoring is one click away in the library if that is
+ * really what someone wants.
+ */
+export async function searchMediaForPicker(
+  input: z.input<typeof SearchSchema>
+): Promise<Result<PickerResult[]>> {
+  try {
+    // Read-only, so any signed-in staff may browse — the same reasoning as the
+    // library list itself. Writing is gated separately.
+    requireRole(await auth(), ROLES.ANY_STAFF)
+    const { query, kind, limit } = SearchSchema.parse(input)
+
+    const rows = await db.media.findMany({
+      where: {
+        deletedAt: null,
+        ...(kind === 'all' ? {} : { kind }),
+        ...(query
+          ? {
+              OR: [
+                { originalFilename: { contains: query, mode: 'insensitive' } },
+                { alt: { contains: query, mode: 'insensitive' } },
+                { caption: { contains: query, mode: 'insensitive' } },
+              ],
+            }
+          : {}),
+      },
+      select: {
+        id: true,
+        storagePath: true,
+        alt: true,
+        caption: true,
+        originalFilename: true,
+        kind: true,
+        bytes: true,
+      },
+      orderBy: { createdAt: 'desc' },
+      take: limit,
+    })
+    return ok(rows)
+  } catch (err) {
+    return failFromError(err)
+  }
+}
+
+/** Resolves the currently-selected file so a picker can show it by id alone. */
+export async function getMediaById(input: z.input<typeof IdSchema>): Promise<Result<PickerResult | null>> {
+  try {
+    requireRole(await auth(), ROLES.ANY_STAFF)
+    const { id } = IdSchema.parse(input)
+    const row = await db.media.findUnique({
+      where: { id },
+      select: {
+        id: true,
+        storagePath: true,
+        alt: true,
+        caption: true,
+        originalFilename: true,
+        kind: true,
+        bytes: true,
+      },
+    })
+    return ok(row)
+  } catch (err) {
+    return failFromError(err)
+  }
+}
