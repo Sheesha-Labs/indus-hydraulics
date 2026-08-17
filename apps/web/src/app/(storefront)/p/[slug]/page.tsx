@@ -21,6 +21,8 @@ import ProductGallery from '../../../../components/ProductGallery'
 import AddToQuoteButton from '../../../../components/AddToQuoteButton'
 import AddToCompareButton from '../../../../components/AddToCompareButton'
 import ProductTabs from '../../../../components/ProductTabs'
+import RelatedReading from '../../../../components/blog/RelatedReading'
+import { getArticlesForProduct } from '../../../../lib/related-reading'
 import ProductStickyBar from '../../../../components/ProductStickyBar'
 import AnalyticsEvent from '../../../../components/AnalyticsEvent'
 
@@ -230,6 +232,9 @@ export default async function ProductPage({ params, searchParams }: Props) {
         },
       })
     : []
+
+  // The return leg of the internal-link loop: articles that embed this SKU.
+  const relatedArticles = await getArticlesForProduct(product.id)
 
   const firstDatasheet = product.documents.find((d) => !d.isGated || isSignedIn)
   let datasheetUrl: string | undefined
@@ -591,6 +596,12 @@ export default async function ProductPage({ params, searchParams }: Props) {
           countryOfOrigin={product.countryOfOrigin}
           hsCode={product.hsCode}
           weightKg={product.weightKg ? Number(product.weightKg) : null}
+        />
+
+        <RelatedReading
+          articles={relatedArticles}
+          heading="Written about this part"
+          eyebrow="From the blog"
         />
 
         {/* Related products */}
