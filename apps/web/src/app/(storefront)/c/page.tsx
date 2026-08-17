@@ -137,7 +137,7 @@ export default async function CategoriesIndexPage() {
           />
         </div>
       ) : (
-        <div className="mt-8 grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
+        <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-3">
           {categories.map((cat) => {
             const img = cat.image ? mediaUrl(cat.image.storagePath) : null
             return (

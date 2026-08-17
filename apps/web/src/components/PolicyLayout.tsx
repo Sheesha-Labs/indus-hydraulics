@@ -53,7 +53,7 @@ export default function PolicyLayout({
         <Breadcrumb items={[{ label: 'Home', href: '/' }, { label: current?.label ?? title }]} />
       </div>
 
-      <div className="grid gap-10 py-10 lg:grid-cols-[196px_minmax(0,780px)] lg:gap-16">
+      <div className="grid grid-cols-1 gap-10 py-10 lg:grid-cols-[196px_minmax(0,780px)] lg:gap-16">
         {/* Left rail — switcher, then on-this-page. Ordered that way because
             "am I on the right document?" precedes "where in it am I?". */}
         <aside className="lg:sticky lg:top-[100px] lg:self-start">

@@ -79,7 +79,7 @@ export default async function BlogIndexPage() {
         </div>
       ) : (
         <div className="py-8">
-          <div className="grid gap-6 mb-12 md:grid-cols-[1.4fr_1fr]">
+          <div className="grid grid-cols-1 gap-6 mb-12 md:grid-cols-[1.4fr_1fr]">
             {/* Lead card */}
             {featuredPost && (
               <Link
@@ -218,7 +218,7 @@ export default async function BlogIndexPage() {
       )}
 
       {/* ── Editor's picks + Sidebar ──────────────────────── */}
-      <div className="grid gap-14 py-16 border-t border-ih-border lg:grid-cols-[1fr_320px]">
+      <div className="grid grid-cols-1 gap-14 py-16 border-t border-ih-border lg:grid-cols-[1fr_320px]">
         {/* Editor's picks */}
         <div>
           <p className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-2">

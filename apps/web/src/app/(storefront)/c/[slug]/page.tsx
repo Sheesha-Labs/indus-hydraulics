@@ -217,7 +217,7 @@ export default async function CategoryPage({ params, searchParams }: Props) {
       )}
 
       {/* Main listing */}
-      <div className="grid gap-9 py-8 pb-16 lg:grid-cols-[248px_1fr]">
+      <div className="grid grid-cols-1 gap-9 py-8 pb-16 lg:grid-cols-[248px_1fr]">
         {/* Filter sidebar */}
         <aside className="self-start lg:sticky lg:top-[124px] lg:max-h-[calc(100vh-150px)] lg:overflow-y-auto">
           <div className="flex flex-col gap-6">

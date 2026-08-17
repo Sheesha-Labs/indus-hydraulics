@@ -8,7 +8,7 @@ type Props = {
 export default function ServicesHero({ stats }: Props) {
   return (
     <section className="border-b border-ih-border py-14">
-      <div className="grid items-end gap-12 lg:grid-cols-[1.3fr_1fr] lg:gap-16">
+      <div className="grid grid-cols-1 items-end gap-12 lg:grid-cols-[1.3fr_1fr] lg:gap-16">
         <div>
           <span className="eyebrow">SERVICES · WORKSHOPS · ON-SITE</span>
           {/*

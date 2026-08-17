@@ -33,7 +33,7 @@ export default function ContactFormClient() {
 
   if (state.status === 'success') {
     return (
-      <div className="border border-ih-border bg-ih-surface p-9">
+      <div className="min-w-0 border border-ih-border bg-ih-surface p-5 sm:p-9">
         <div className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-accent mb-3">
           Message sent
         </div>
@@ -50,7 +50,7 @@ export default function ContactFormClient() {
   }
 
   return (
-    <div className="border border-ih-border bg-ih-surface p-9">
+    <div className="min-w-0 border border-ih-border bg-ih-surface p-5 sm:p-9">
       <h2 className="text-[22px] font-semibold tracking-[-0.01em] mb-1">Send us a message</h2>
       <p className="text-[14px] text-ih-muted mb-6">Or pick a faster channel on the right →</p>
 
