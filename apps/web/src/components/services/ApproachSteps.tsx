@@ -27,7 +27,7 @@ export default function ApproachSteps({ steps }: Props) {
           The same four steps run every service, every time — from a piston seal to a BOP recert.
         </h2>
 
-        <div className="grid items-start gap-14 lg:grid-cols-[320px_1fr]">
+        <div className="grid grid-cols-1 items-start gap-14 lg:grid-cols-[320px_1fr]">
           {/* Left: step list */}
           <div className="flex flex-col gap-1">
             {steps.map((step, i) => {

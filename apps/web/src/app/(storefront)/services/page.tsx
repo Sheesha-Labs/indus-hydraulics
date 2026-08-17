@@ -90,7 +90,7 @@ export default async function ServicesIndexPage({ searchParams }: Props) {
         {featured ? <FeaturedCase case={featured} /> : null}
 
         {gridCases.length > 0 ? (
-          <section className="grid gap-7 py-6 pb-16 md:grid-cols-2 lg:grid-cols-3">
+          <section className="grid grid-cols-1 gap-7 py-6 pb-16 md:grid-cols-2 lg:grid-cols-3">
             {gridCases.map((c) => (
               <ServiceCaseCard key={c.id} case={c} />
             ))}
@@ -113,7 +113,7 @@ export default async function ServicesIndexPage({ searchParams }: Props) {
                 </h2>
               </div>
             </div>
-            <div className="mt-6 grid gap-8 lg:grid-cols-2">
+            <div className="mt-6 grid grid-cols-1 gap-8 lg:grid-cols-2">
               <StoryCard case={twoUp[0]} variant="dark" />
               <StoryCard case={twoUp[1]} variant="light" />
             </div>

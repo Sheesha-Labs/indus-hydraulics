@@ -374,7 +374,7 @@ export default async function ProductPage({ params, searchParams }: Props) {
           first thing on the page — which is the entire point, and is exactly
           what a source-order layout with the gallery first cannot give you.
         */}
-        <div className="grid items-start gap-10 py-10 pb-16 lg:grid-cols-[1.1fr_1fr] lg:gap-14">
+        <div className="grid grid-cols-1 items-start gap-10 py-10 pb-16 lg:grid-cols-[1.1fr_1fr] lg:gap-14">
           {/* Identity — row 1, right column on desktop, first on mobile */}
           <div className="lg:col-start-2 lg:row-start-1">
             <div className="mb-3 flex flex-wrap items-center gap-2.5">
@@ -488,7 +488,7 @@ export default async function ProductPage({ params, searchParams }: Props) {
             <div className="mb-4 flex flex-col gap-2.5 pt-2">
               <AddToQuoteButton sku={product.sku} title={product.title} />
 
-              <div className="grid gap-2.5 sm:grid-cols-2">
+              <div className="grid grid-cols-1 gap-2.5 sm:grid-cols-2">
                 {whatsappHref(settings.contactPhone, product.sku) && (
                   <Button asChild kind="outline" size="lg">
                     <a
@@ -549,7 +549,7 @@ export default async function ProductPage({ params, searchParams }: Props) {
               steel icon rather than the old rule-separated columns — the
               language separates with a border, not a divider.
             */}
-            <div className="grid gap-3 sm:grid-cols-3">
+            <div className="grid grid-cols-1 gap-3 sm:grid-cols-3">
               {[
                 { icon: TruckIcon, title: 'Ships in 24h', sub: 'Order before 14:00 GST · Jebel Ali' },
                 {

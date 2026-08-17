@@ -79,7 +79,7 @@ export default function QuoteBuilderClient({ isSignedIn }: Props) {
     : `/sign-in?next=/quote/submit`
 
   return (
-    <div className="grid items-start gap-8 lg:grid-cols-[1fr_360px]">
+    <div className="grid grid-cols-1 items-start gap-8 lg:grid-cols-[1fr_360px]">
       {/* ── Main: line items ──────────────────────────────────── */}
       <div>
         <div className="border border-ih-border bg-ih-surface overflow-hidden">

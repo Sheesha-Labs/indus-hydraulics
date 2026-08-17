@@ -53,7 +53,7 @@ export default async function IndustriesIndexPage({ params }: Props) {
 
       {/* Stats strip */}
       <div className="mx-auto max-w-[1440px] px-5 sm:px-8 xl:px-12">
-        <div className="grid grid-cols-4 border-t border-b border-ih-border">
+        <div className="grid grid-cols-2 border-t border-b border-ih-border sm:grid-cols-4">
           {[
             { num: String(industries.length), lbl: 'Industries served' },
             { num: activeSkuCount.toLocaleString(), lbl: 'Live SKUs' },
@@ -70,7 +70,7 @@ export default async function IndustriesIndexPage({ params }: Props) {
 
       {/* Industry cards grid */}
       <div className="mx-auto max-w-[1440px] px-5 sm:px-8 xl:px-12 py-12 pb-20">
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {industries.map((ind) => (
             <Link
               key={ind.slug}
@@ -114,7 +114,7 @@ export default async function IndustriesIndexPage({ params }: Props) {
 
       {/* Bottom CTA */}
       <div className="border-t border-ih-border bg-ih-surface py-14">
-        <div className="mx-auto max-w-[1440px] px-5 sm:px-8 xl:px-12 flex items-center justify-between gap-8">
+        <div className="mx-auto max-w-[1440px] px-5 sm:px-8 xl:px-12 flex flex-wrap items-center justify-between gap-8">
           <div>
             <h2 className="text-[28px] font-semibold tracking-[-0.02em] mb-2">Don&apos;t see your industry listed?</h2>
             <p className="text-[14px] text-ih-muted">

@@ -140,7 +140,7 @@ export default async function BrandPage({ params }: Props) {
       <JsonLd data={[brandLd, breadcrumbLd]} />
       {/* ── Dark hero ─────────────────────────────────────────── */}
       <section className="border-b border-ih-navy-2 bg-ih-navy py-12 text-white">
-        <div className="mx-auto grid max-w-[1440px] items-end gap-12 px-5 sm:px-8 lg:grid-cols-[1fr_320px] xl:px-12">
+        <div className="mx-auto grid grid-cols-1 max-w-[1440px] items-end gap-12 px-5 sm:px-8 lg:grid-cols-[1fr_320px] xl:px-12">
           <div>
             <div className="mb-3 font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-steel">
               <Link href={`/brands`} className="text-ih-steel hover:text-white">BRANDS</Link>
@@ -227,7 +227,7 @@ export default async function BrandPage({ params }: Props) {
       {seriesCategories.length > 0 && (
         <section className="mx-auto max-w-[1440px] px-5 pb-10 sm:px-8 xl:px-12">
           <h2 className="mb-5 font-serif text-[30px] font-normal tracking-[-0.01em]">Product series we carry</h2>
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {seriesCategories.map((cat) => (
               <Link
                 key={cat.id}
