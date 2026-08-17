@@ -303,8 +303,8 @@ function StructuredBlockCard({ node, deleteNode, selected, updateAttributes }: N
         <div className="mt-1 truncate text-[13px] text-ih-ink-2">{summary.detail}</div>
         {!spec && (
           <div className="mt-1.5 text-[11px] text-ih-muted-2">
-            Written for /services case studies — carried through unchanged. Drag to move it, or
-            delete it.
+            This build has no form for a block of this type — it is carried through unchanged.
+            Drag to move it, or delete it.
           </div>
         )}
       </div>
