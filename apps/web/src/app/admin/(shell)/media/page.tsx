@@ -1,113 +1,274 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import { AlertTriangle } from 'lucide-react'
 import { db } from '@indus/db'
-import { ADMIN_PREFIX } from '../../../../lib/admin-paths'
+import {
+  deriveMediaState,
+  formatBytes,
+  MEDIA_FOLDER_ORDER,
+  mediaFolderFor,
+  parseMediaSort,
+  selectMediaPage,
+  type MediaFolder,
+  type MediaListItem,
+  type MediaState,
+} from '@indus/domain'
+import { Pagination } from '@indus/ui'
+
 import AdminPageShell from '../../../../components/admin/AdminPageShell'
+import { ADMIN_PREFIX } from '../../../../lib/admin-paths'
+import { buildMediaUsageIndexFromDb } from '../../../../lib/queries/media-usage'
+import {
+  FolderRail,
+  KindChips,
+  StateTabs,
+  ViewToggle,
+  type MediaViewMode,
+} from './_components/filters'
+import { MediaEmptyState, MediaGrid, MediaList, type MediaRowView } from './_components/media-items'
+import { MediaSearchBox, MediaSortSelect } from './_components/search-sort'
 
 export const metadata: Metadata = { title: 'Media library — Indus Admin' }
 
 type Props = {
   params: Promise<Record<string, never>>
-  searchParams: Promise<{ kind?: string }>
+  searchParams: Promise<{
+    q?: string
+    kind?: string
+    state?: string
+    folder?: string
+    sort?: string
+    view?: string
+    page?: string
+    trash?: string
+  }>
 }
 
-const KIND_FILTERS = ['', 'image', 'document', 'cad'] as const
-
-function formatBytes(bytes: number): string {
-  if (bytes < 1024) return `${bytes} B`
-  if (bytes < 1024 * 1024) return `${(bytes / 1024).toFixed(1)} KB`
-  return `${(bytes / 1024 / 1024).toFixed(1)} MB`
-}
+const KINDS = new Set(['image', 'document', 'cad'])
+const STATES = new Set(['live', 'attached', 'internal', 'unused'])
 
 export default async function MediaLibraryPage({ params, searchParams }: Props) {
   await params
   const sp = await searchParams
-  const kindFilter = sp.kind ?? ''
 
-  const media = await db.media.findMany({
-    where: kindFilter ? { kind: kindFilter as never } : {},
-    orderBy: { createdAt: 'desc' },
-    include: {
-      _count: {
-        select: { productImages: true, productDocuments: true },
+  const trashed = sp.trash === '1'
+  const query = (sp.q ?? '').trim()
+  // Every searchParam is narrowed against a known set before it reaches a
+  // query. The page this replaces cast `?kind=` straight into a Prisma enum
+  // filter, so `?kind=garbage` threw a raw Prisma error into error.tsx.
+  const kind = sp.kind && KINDS.has(sp.kind) ? (sp.kind as 'image' | 'document' | 'cad') : 'all'
+  const state = sp.state && STATES.has(sp.state) ? (sp.state as MediaState) : 'all'
+  const folder =
+    sp.folder && (MEDIA_FOLDER_ORDER as readonly string[]).includes(sp.folder)
+      ? (sp.folder as MediaFolder)
+      : 'all'
+  const sort = parseMediaSort(sp.sort)
+  const view: MediaViewMode = sp.view === 'list' ? 'list' : 'grid'
+  const page = Math.max(1, Number.parseInt(sp.page ?? '1', 10) || 1)
+
+  // Both scopes are loaded because the rail shows a live Trash count while you
+  // are outside it, and vice versa.
+  const [rows, trashCount] = await Promise.all([
+    db.media.findMany({
+      where: trashed ? { deletedAt: { not: null } } : { deletedAt: null },
+      select: {
+        id: true,
+        originalFilename: true,
+        alt: true,
+        caption: true,
+        kind: true,
+        bytes: true,
+        createdAt: true,
+        storagePath: true,
       },
-    },
-    take: 200,
+    }),
+    db.media.count({ where: { deletedAt: { not: null } } }),
+  ])
+
+  // Usage is resolved for every row in scope, not just the page being shown:
+  // the folder rail and the state tabs both count the whole library.
+  const assets = rows.map((r) => ({ id: r.id, storagePath: r.storagePath }))
+  const usageIndex = await buildMediaUsageIndexFromDb(assets)
+
+  const decorated = rows.map((item) => {
+    const usages = usageIndex.byAsset.get(item.id) ?? []
+    return {
+      item: item as MediaListItem,
+      usages,
+      state: deriveMediaState(usages),
+      folder: mediaFolderFor({ mediaKind: item.kind, usages }),
+    }
   })
 
-  const totals = await db.media.groupBy({ by: ['kind'], _count: { _all: true } })
+  // Counts are of the whole scope, so they do not move as you filter — a rail
+  // whose numbers changed on every click would be unusable for finding things.
+  const folderCounts: Partial<Record<MediaFolder, number>> = {}
+  const stateCounts: Record<MediaState | 'all', number> = {
+    all: decorated.length,
+    live: 0,
+    attached: 0,
+    internal: 0,
+    unused: 0,
+  }
+  const kindCounts: Record<string, number> = { all: decorated.length, image: 0, document: 0, cad: 0 }
+  let totalBytes = 0
+  let reclaimableBytes = 0
+  // 265 document rows carry bytes = 0 from an import that never measured the
+  // uploaded object. The storage total is therefore a floor, and saying so is
+  // better than quietly under-reporting it.
+  let unknownSizeCount = 0
+
+  for (const d of decorated) {
+    folderCounts[d.folder] = (folderCounts[d.folder] ?? 0) + 1
+    stateCounts[d.state]++
+    kindCounts[d.item.kind] = (kindCounts[d.item.kind] ?? 0) + 1
+    totalBytes += d.item.bytes
+    if (d.item.bytes === 0) unknownSizeCount++
+    if (d.state === 'unused') reclaimableBytes += d.item.bytes
+  }
+
+  const selected = selectMediaPage(decorated, {
+    filters: { query, kind, state, folder, trashed },
+    sort,
+    page,
+  })
+
+  function buildUrl(overrides: Record<string, string | undefined>): string {
+    const base: Record<string, string | undefined> = {
+      q: query || undefined,
+      kind: kind === 'all' ? undefined : kind,
+      state: state === 'all' ? undefined : state,
+      folder: folder === 'all' ? undefined : folder,
+      sort: sort === 'newest' ? undefined : sort,
+      view: view === 'grid' ? undefined : view,
+      page: selected.page === 1 ? undefined : String(selected.page),
+      trash: trashed ? '1' : undefined,
+    }
+    const qp = new URLSearchParams()
+    for (const [k, v] of Object.entries({ ...base, ...overrides })) if (v) qp.set(k, v)
+    const qs = qp.toString()
+    return `${ADMIN_PREFIX}/media${qs ? `?${qs}` : ''}`
+  }
+
+  // No mapping needed: selectMediaPage is generic over the row, so the `usages`
+  // field added above survives the filter/sort/page pass.
+  const visible: MediaRowView[] = selected.visible
+
+  const isFiltered = Boolean(query) || kind !== 'all' || state !== 'all' || folder !== 'all'
 
   return (
     <AdminPageShell
-      title="Media library"
-      sub={<>{media.length} {media.length === 1 ? 'asset' : 'assets'}</>}
+      title={trashed ? 'Media library — Trash' : 'Media library'}
+      sub={
+        selected.total === 0
+          ? 'No files'
+          : `Showing ${selected.from.toLocaleString()}–${selected.to.toLocaleString()} of ${selected.total.toLocaleString()}`
+      }
     >
+      <div className="flex items-start gap-6">
+        <FolderRail
+          counts={folderCounts}
+          active={folder}
+          total={decorated.length}
+          trashCount={trashCount}
+          trashed={trashed}
+          buildUrl={buildUrl}
+        />
 
-        <div className="flex items-center gap-1.5 mb-6">
-          {KIND_FILTERS.map((k) => {
-            const count =
-              k === ''
-                ? totals.reduce((s, t) => s + t._count._all, 0)
-                : totals.find((t) => t.kind === k)?._count._all ?? 0
-            const url = `${ADMIN_PREFIX}/media${k ? `?kind=${k}` : ''}`
-            return (
-              <Link
-                key={k}
-                href={url}
-                className={`px-3 py-1.5 font-mono text-[11px] border transition-colors capitalize ${
-                  kindFilter === k
-                    ? 'border-ih-accent bg-ih-accent text-white'
-                    : 'border-ih-border text-ih-ink-2 hover:border-ih-accent'
-                }`}
-              >
-                {k || 'All'} <span className="opacity-70">({count})</span>
-              </Link>
-            )
-          })}
-        </div>
+        <div className="flex min-w-0 flex-1 flex-col gap-4">
+          <div className="flex flex-wrap items-center gap-3">
+            <MediaSearchBox
+              action={`${ADMIN_PREFIX}/media`}
+              defaultValue={query}
+              hidden={hiddenFilters({ kind, state, folder, sort, view, trashed })}
+            />
+            {trashed ? null : (
+              <StateTabs counts={stateCounts} active={state} buildUrl={buildUrl} />
+            )}
+            <div className="ml-auto flex items-center gap-3">
+              <MediaSortSelect value={sort} buildUrl={(s) => buildUrl({ sort: s, page: undefined })} />
+              <ViewToggle active={view} buildUrl={buildUrl} />
+            </div>
+          </div>
 
-        {media.length === 0 ? (
-          <div className="py-16 border border-dashed border-ih-border text-center">
-            <p className="text-ih-muted mb-1">No media assets yet.</p>
-            <p className="font-mono text-[11px] text-ih-muted-2">
-              Upload images and documents from a product&apos;s Images / Documents tab.
+          <KindChips active={kind} counts={kindCounts} buildUrl={buildUrl} />
+
+          {usageIndex.partial ? (
+            <p
+              role="alert"
+              className="flex items-start gap-2 rounded-md border border-ih-warning bg-ih-warning-soft px-3 py-2 text-[12.5px] text-[oklch(0.42_0.1_62)]"
+            >
+              <AlertTriangle size={13} strokeWidth={1.9} aria-hidden="true" className="mt-0.5 flex-shrink-0" />
+              <span>
+                Usage couldn&apos;t be read from{' '}
+                <span className="font-mono">{usageIndex.failedSources.join(', ')}</span>. Files may
+                look unused when they are not, so deleting stays disabled until this loads cleanly.
+              </span>
             </p>
-          </div>
-        ) : (
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-3">
-            {media.map((m) => {
-              const usage = m._count.productImages + m._count.productDocuments
-              return (
-                <div
-                  key={m.id}
-                  className="bg-white border border-ih-border flex flex-col"
-                >
-                  <div className="aspect-square bg-ih-surface-2 grid place-items-center text-ih-muted-2 font-mono text-[11px]">
-                    {m.kind === 'image' ? (
-                      // eslint-disable-next-line @next/next/no-img-element
-                      <img
-                        src={m.storagePath}
-                        alt={m.alt ?? m.originalFilename}
-                        className="w-full h-full object-cover"
-                      />
-                    ) : (
-                      <span className="uppercase tracking-[0.1em]">{m.kind}</span>
-                    )}
-                  </div>
-                  <div className="p-3 flex-1 flex flex-col gap-1">
-                    <div className="text-[12px] font-medium text-ih-ink truncate">
-                      {m.originalFilename}
-                    </div>
-                    <div className="font-mono text-[10px] text-ih-muted flex justify-between">
-                      <span>{formatBytes(m.bytes)}</span>
-                      <span>used {usage}×</span>
-                    </div>
-                  </div>
-                </div>
-              )
-            })}
-          </div>
-        )}
+          ) : null}
+
+          <p className="text-[12.5px] text-ih-muted">
+            <span className="font-mono tabular-nums">{selected.total.toLocaleString()}</span> of{' '}
+            <span className="font-mono tabular-nums">{decorated.length.toLocaleString()}</span> files
+            {trashed ? ' in trash' : ''} ·{' '}
+            <span className="font-mono tabular-nums">{formatBytes(totalBytes)}</span>
+            {!trashed && reclaimableBytes > 0 ? (
+              <>
+                {' · '}
+                <span className="font-mono tabular-nums">{formatBytes(reclaimableBytes)}</span>{' '}
+                reclaimable
+              </>
+            ) : null}
+            {unknownSizeCount > 0 ? (
+              <>
+                {' · '}
+                <span title="These were uploaded without their size being recorded, so the total above is a floor.">
+                  <span className="font-mono tabular-nums">{unknownSizeCount.toLocaleString()}</span>{' '}
+                  of unknown size
+                </span>
+              </>
+            ) : null}
+          </p>
+
+          {visible.length === 0 ? (
+            <MediaEmptyState
+              trashed={trashed}
+              filtered={isFiltered}
+              resetHref={`${ADMIN_PREFIX}/media${trashed ? '?trash=1' : ''}`}
+            />
+          ) : view === 'list' ? (
+            <MediaList rows={visible} />
+          ) : (
+            <MediaGrid rows={visible} />
+          )}
+
+          <Pagination
+            currentPage={selected.page}
+            totalPages={selected.totalPages}
+            buildUrl={(n) => buildUrl({ page: n === 1 ? undefined : String(n) })}
+            linkComponent={Link}
+          />
+        </div>
+      </div>
     </AdminPageShell>
   )
+}
+
+/** The filters the search form has to carry through its GET submit. */
+function hiddenFilters(active: {
+  kind: string
+  state: string
+  folder: string
+  sort: string
+  view: string
+  trashed: boolean
+}): Record<string, string> {
+  const out: Record<string, string> = {}
+  if (active.kind !== 'all') out.kind = active.kind
+  if (active.state !== 'all') out.state = active.state
+  if (active.folder !== 'all') out.folder = active.folder
+  if (active.sort !== 'newest') out.sort = active.sort
+  if (active.view !== 'grid') out.view = active.view
+  if (active.trashed) out.trash = '1'
+  return out
 }
