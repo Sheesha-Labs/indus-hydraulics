@@ -930,6 +930,11 @@ model Media {
   uploadedById     String?
   uploadedBy       StaffUser? @relation(fields: [uploadedById], references: [id])
   createdAt        DateTime   @default(now())
+  updatedAt        DateTime   @default(now()) @updatedAt
+
+  /// Trash. NULL is the live library; set is the trash, restorable and still
+  /// holding its storage object. See 202608171847_media_library.sql.
+  deletedAt        DateTime?
 
   productImages           ProductImage[]
   productDocuments        ProductDocument[]
@@ -954,6 +959,21 @@ model Media {
   serviceCaseHeroes       ServiceCase[]       @relation("ServiceCaseHero")
   serviceCaseOgImages     ServiceCase[]       @relation("ServiceCaseOg")
 
+  // storagePath is deliberately NOT @unique — 227 rows currently share one
+  // with another row, and several rows addressing one storage object is a
+  // state the delete path has to keep handling. The index backs the "is any
+  // other row still using this object?" guard. See the migration for the
+  // full note.
+  //
+  // PARTIAL INDEX (Postgres-only, not representable in Prisma schema):
+  //   CREATE INDEX media_uploadedById_idx
+  //     ON media ("uploadedById") WHERE "uploadedById" IS NOT NULL;
+  // Applied via migration `media_library`. 657 of 665 rows have it NULL, so
+  // the partial form stays small. Declaring a plain @@index([uploadedById])
+  // here would describe an index the database does not have.
+  @@index([deletedAt, createdAt(sort: Desc)])
+  @@index([kind, createdAt(sort: Desc)])
+  @@index([storagePath])
   @@map("media")
 }
 
