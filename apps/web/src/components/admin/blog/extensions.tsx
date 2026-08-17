@@ -5,9 +5,13 @@ import {
   ReactNodeViewRenderer,
   type NodeViewProps,
 } from '@tiptap/react'
-import { Trash2 } from 'lucide-react'
+import { useState } from 'react'
+import { createPortal } from 'react-dom'
+import { Pencil, Trash2 } from 'lucide-react'
 import type { BlogBlockInput } from '@indus/domain'
 import { describeBlogBlock } from './block-summary'
+import { blockForm } from './block-fields'
+import BlockFormDialog from './BlockFormDialog'
 
 /**
  * The three node types the article body needs beyond StarterKit's prose.
@@ -88,7 +92,6 @@ declare module '@tiptap/core' {
     }
     structuredBlock: {
       setStructuredBlock: (data: BlogBlockInput) => ReturnType
-      updateStructuredBlock: (position: number, data: BlogBlockInput) => ReturnType
     }
   }
 }
@@ -246,6 +249,24 @@ export const StructuredBlock = Node.create({
     return ['div', mergeAttributes(HTMLAttributes, { class: 'ih-editor-block' })]
   },
 
+  addCommands() {
+    return {
+      setStructuredBlock:
+        (data) =>
+        ({ state, commands }) => {
+          // Inserted AT a position, never into the selection — the same
+          // reasoning as the figure: with a card selected, a plain insert
+          // replaces it.
+          const { selection } = state
+          const at = selection.empty ? selection.from : selection.to
+          return commands.insertContentAt(at, {
+            type: this.name,
+            attrs: { data, blockType: data.type },
+          })
+        },
+    }
+  },
+
   addNodeView() {
     return ReactNodeViewRenderer(StructuredBlockCard)
   },
@@ -260,9 +281,13 @@ export const StructuredBlock = Node.create({
  * still selectable, draggable and deletable, which is what keeps the block
  * under the author's control in the meantime.
  */
-function StructuredBlockCard({ node, deleteNode, selected }: NodeViewProps) {
+function StructuredBlockCard({ node, deleteNode, selected, updateAttributes }: NodeViewProps) {
+  const [editing, setEditing] = useState(false)
   const data = node.attrs.data as BlogBlockInput | null
   const summary = describeBlogBlock(data)
+  // A block with no form is carry-through only — see block-fields.ts for why
+  // the service-case shapes deliberately have none.
+  const spec = blockForm(data?.type)
 
   return (
     <NodeViewWrapper
@@ -276,19 +301,62 @@ function StructuredBlockCard({ node, deleteNode, selected }: NodeViewProps) {
           {summary.label}
         </div>
         <div className="mt-1 truncate text-[13px] text-ih-ink-2">{summary.detail}</div>
-        <div className="mt-1.5 text-[11px] text-ih-muted-2">
-          Fields for this block are not editable here yet — drag to move it, or delete it.
-        </div>
+        {!spec && (
+          <div className="mt-1.5 text-[11px] text-ih-muted-2">
+            Written for /services case studies — carried through unchanged. Drag to move it, or
+            delete it.
+          </div>
+        )}
       </div>
-      <button
-        type="button"
-        onClick={deleteNode}
-        aria-label={`Delete ${summary.label} block`}
-        title={`Delete ${summary.label} block`}
-        className="flex h-7 w-7 shrink-0 items-center justify-center rounded-md text-ih-muted transition-colors hover:bg-ih-danger-soft hover:text-ih-danger"
-      >
-        <Trash2 size={14} strokeWidth={1.7} />
-      </button>
+
+      <div className="flex shrink-0 items-center gap-1">
+        {spec && (
+          <button
+            type="button"
+            onClick={() => setEditing(true)}
+            aria-label={`Edit ${summary.label} block`}
+            title={`Edit ${summary.label} block`}
+            className="flex h-7 w-7 items-center justify-center rounded-md text-ih-muted transition-colors hover:bg-ih-surface hover:text-ih-accent"
+          >
+            <Pencil size={14} strokeWidth={1.7} />
+          </button>
+        )}
+        <button
+          type="button"
+          onClick={deleteNode}
+          aria-label={`Delete ${summary.label} block`}
+          title={`Delete ${summary.label} block`}
+          className="flex h-7 w-7 items-center justify-center rounded-md text-ih-muted transition-colors hover:bg-ih-danger-soft hover:text-ih-danger"
+        >
+          <Trash2 size={14} strokeWidth={1.7} />
+        </button>
+      </div>
+
+      {/*
+        Portalled to the body, NOT rendered in place.
+
+        This card lives inside the editor's contenteditable, and ProseMirror
+        owns that DOM: a click inside the dialog moves the selection, the node
+        view re-renders, and the dialog's React state goes with it — the form
+        closed on the first click every time, discarding whatever had been
+        typed. Outside the editable, ProseMirror never sees the events at all.
+      */}
+      {editing && spec && data
+        ? createPortal(
+            <BlockFormDialog
+              spec={spec}
+              value={data}
+              onCancel={() => setEditing(false)}
+              onSave={(next) => {
+                // `blockType` rides alongside so the parse rule can name the
+                // block before its JSON is read; the two stay in step.
+                updateAttributes({ data: next, blockType: next.type })
+                setEditing(false)
+              }}
+            />,
+            document.body,
+          )
+        : null}
     </NodeViewWrapper>
   )
 }
