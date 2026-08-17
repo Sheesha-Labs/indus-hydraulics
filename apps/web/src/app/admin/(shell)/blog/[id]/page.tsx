@@ -49,11 +49,17 @@ export default async function BlogPostEditorPage({ params }: Props) {
   // /blog/author/[slug] — not staff users. A byline is not a login: an
   // outside contributor needs one without an admin account, and a warehouse
   // user should not become a public page merely by existing.
-  const authors = await db.blogAuthor.findMany({
-    where: { isPublished: true },
-    orderBy: [{ position: 'asc' }, { name: 'asc' }],
-    select: { id: true, name: true, jobTitle: true },
-  })
+  const [authors, categories] = await Promise.all([
+    db.blogAuthor.findMany({
+      where: { isPublished: true },
+      orderBy: [{ position: 'asc' }, { name: 'asc' }],
+      select: { id: true, name: true, jobTitle: true },
+    }),
+    db.blogCategory.findMany({
+      orderBy: [{ position: 'asc' }, { name: 'asc' }],
+      select: { id: true, name: true, isPublished: true },
+    }),
+  ])
 
   const storefrontUrl = (process.env.NEXT_PUBLIC_BASE_URL ?? 'https://indushydraulics.com').replace(
     /\/$/,
@@ -80,6 +86,7 @@ export default async function BlogPostEditorPage({ params }: Props) {
               heroStoragePath: post.hero?.storagePath ?? null,
               authorName: post.author?.name ?? null,
               blogAuthorId: post.blogAuthorId,
+              categoryId: post.categoryId,
               seoTitle: post.seoTitle,
               seoDescription: post.seoDescription,
               canonicalUrl: post.canonicalUrl,
@@ -105,6 +112,7 @@ export default async function BlogPostEditorPage({ params }: Props) {
         originalFilename: m.originalFilename,
       }))}
       authors={authors}
+      categories={categories}
     />
   )
 }

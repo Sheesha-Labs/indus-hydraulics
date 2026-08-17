@@ -22,6 +22,7 @@ import {
   LayoutTemplate,
   Menu as MenuIcon,
   Globe,
+  Newspaper,
   type LucideIcon,
 } from 'lucide-react'
 
@@ -64,7 +65,8 @@ const NAV_SECTIONS: { section: string; items: NavItem[] }[] = [
   {
     section: 'Content',
     items: [
-      { id: 'cms', label: 'Pages & Blog', path: 'cms', Icon: FileText },
+      { id: 'blog', label: 'Blog Editor', path: 'blog', Icon: Newspaper },
+      { id: 'cms', label: 'Pages & Hero', path: 'cms', Icon: FileText },
       { id: 'navigation', label: 'Navigation', path: 'navigation', Icon: MenuIcon },
       { id: 'seo', label: 'SEO & Search', path: 'seo', Icon: Search },
     ],

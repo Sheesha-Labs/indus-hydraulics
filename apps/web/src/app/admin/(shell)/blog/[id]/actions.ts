@@ -1,16 +1,16 @@
 'use server'
 
 import { revalidatePath } from 'next/cache'
-import { invalidateBlogPosts } from '../../../../../../lib/cache-tags'
+import { invalidateBlogPosts } from '../../../../../lib/cache-tags'
 import { redirect } from 'next/navigation'
 import { z } from 'zod'
 import { db, Prisma } from '@indus/db'
 import { parseLocalDateTime, projectSeoFields, resolvePublishedAt } from '@indus/domain'
-import { auth } from '../../../../../../lib/admin-auth'
-import { ROLES, requireRole } from '../../../../../../lib/rbac'
-import { fail, failFromError, ok, type Result } from '../../../../../../lib/result'
-import { STORAGE_BUCKETS, uploadToStorage } from '../../../../../../lib/supabase-admin'
-import { withSeoAudit } from '../../../../../../lib/seo-audit'
+import { auth } from '../../../../../lib/admin-auth'
+import { ROLES, requireRole } from '../../../../../lib/rbac'
+import { fail, failFromError, ok, type Result } from '../../../../../lib/result'
+import { STORAGE_BUCKETS, uploadToStorage } from '../../../../../lib/supabase-admin'
+import { withSeoAudit } from '../../../../../lib/seo-audit'
 
 // ── Existing content save (Content tab) ────────────────────────────────────
 //
@@ -48,6 +48,12 @@ export async function savePost(formData: FormData) {
   const bylineRaw = (formData.get('blogAuthorId') as string | null) ?? ''
   const blogAuthorId = bylineRaw.trim() ? bylineRaw.trim() : null
 
+  // Topic hub the post belongs to. Drives /blog/c/[slug], the chip on the
+  // index card, and the Category column on the Blog Editor list. Empty is a
+  // real choice — an uncategorised post still renders — so it clears.
+  const categoryRaw = (formData.get('categoryId') as string | null) ?? ''
+  const categoryId = categoryRaw.trim() ? categoryRaw.trim() : null
+
   // Explicit publish date, from a datetime-local input. Enables both
   // back-dating and scheduling.
   const publishedAtRaw = (formData.get('publishedAt') as string | null) ?? ''
@@ -63,7 +69,13 @@ export async function savePost(formData: FormData) {
     tags,
     heroId,
     blogAuthorId,
+    categoryId,
     isPublished: publish,
+    // `status` supersedes `isPublished` and the two are kept in lockstep until
+    // every read site has moved across. Writing only the boolean is what left
+    // published posts showing a Draft pill on the list, which reads as data
+    // loss to whoever wrote them.
+    status: publish ? ('published' as const) : ('draft' as const),
   }
 
   if (id === 'new') {
@@ -75,9 +87,9 @@ export async function savePost(formData: FormData) {
         publishedAt: explicitPublishedAt ?? (publish ? new Date() : null),
       },
     })
-    revalidatePath('/admin/cms')
+    revalidatePath('/admin/blog')
     invalidateBlogPosts()
-    redirect(`/admin/cms/blog/${post.id}`)
+    redirect(`/admin/blog/${post.id}`)
   }
 
   // `publishedAt` is the canonical first-publication date and feeds Article
@@ -104,7 +116,7 @@ export async function savePost(formData: FormData) {
     },
   })
 
-  revalidatePath('/admin/cms')
+  revalidatePath('/admin/blog')
   revalidatePath('/blog')
   revalidatePath(`/blog/${slug}`)
   // The homepage rail and the blog index read through `unstable_cache` on the
@@ -277,7 +289,7 @@ export async function updateBlogPostSeo(formData: FormData): Promise<Result<void
       },
     )
 
-    revalidatePath(`/admin/cms/blog/${parsed.id}`)
+    revalidatePath(`/admin/blog/${parsed.id}`)
     invalidateBlogPosts()
     revalidatePath(`/blog/${before.slug}`)
     revalidatePath('/admin/seo/inspector')
