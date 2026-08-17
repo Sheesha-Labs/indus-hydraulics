@@ -6,11 +6,13 @@ import {
   deriveMediaState,
   formatBytes,
   MEDIA_FOLDER_ORDER,
+  MEDIA_SORT_LABELS,
   mediaFolderFor,
   parseMediaSort,
   selectMediaPage,
   type MediaFolder,
   type MediaListItem,
+  type MediaSort,
   type MediaState,
 } from '@indus/domain'
 import { Pagination } from '@indus/ui'
@@ -190,6 +192,14 @@ export default async function MediaLibraryPage({ params, searchParams }: Props) 
   // survives the filter/sort/page pass.
   const visible: MediaDetail[] = selected.visible
 
+  // Precomputed here because MediaSortSelect is a Client Component: a
+  // `buildUrl` function cannot cross the RSC boundary.
+  const sortOptions = (Object.keys(MEDIA_SORT_LABELS) as MediaSort[]).map((s) => ({
+    value: s,
+    label: MEDIA_SORT_LABELS[s],
+    href: buildUrl({ sort: s === 'newest' ? undefined : s, page: undefined }),
+  }))
+
   const isFiltered = Boolean(query) || kind !== 'all' || state !== 'all' || folder !== 'all'
 
   return (
@@ -222,7 +232,7 @@ export default async function MediaLibraryPage({ params, searchParams }: Props) 
               <StateTabs counts={stateCounts} active={state} buildUrl={buildUrl} />
             )}
             <div className="ml-auto flex items-center gap-3">
-              <MediaSortSelect value={sort} buildUrl={(s) => buildUrl({ sort: s, page: undefined })} />
+              <MediaSortSelect value={sort} options={sortOptions} />
               <ViewToggle active={view} buildUrl={buildUrl} />
             </div>
           </div>
