@@ -32,6 +32,7 @@ import {
   TableRow,
   Textarea,
 } from '@indus/ui'
+import OverlaySpecimen from './OverlaySpecimen'
 
 /**
  * The foundation board.
@@ -424,6 +425,14 @@ export default function DesignFoundationPage() {
             <Button kind="onnavy">Talk to an engineer</Button>
           </div>
         </div>
+      </Section>
+
+      <Section
+        n="/10"
+        title="Overlays."
+        note="Dialog, dropdown and tooltip delegate focus management to Radix packages this workspace already declared. Toast is ours — it is a live region, not a focus trap, so politeness is tone-dependent: successes announce politely, failures assertively. Note the second tooltip: it sits over a DISABLED button, which fires no pointer events, so the trigger has to be a wrapper rather than the button itself."
+      >
+        <OverlaySpecimen />
       </Section>
     </main>
   )

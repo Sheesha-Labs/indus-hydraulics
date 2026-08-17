@@ -236,6 +236,63 @@
   }
 }
 
+/* Overlay motion — Dialog, DropdownMenu, Tooltip, Toast in packages/ui.
+
+   The `-out` halves are not decoration. Radix keeps a node mounted until the
+   animation on [data-state='closed'] finishes, so deleting one does not merely
+   remove a transition — it changes when the element unmounts. Keep each pair
+   together. Call sites carry `motion-reduce:animate-none`. */
+@keyframes ih-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes ih-fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes ih-dialog-in {
+  from {
+    opacity: 0;
+    transform: translateY(4px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes ih-dialog-out {
+  from {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(2px) scale(0.99);
+  }
+}
+
+@keyframes ih-toast-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* ── Typography utilities ──
    These are UNLAYERED, so they beat every Tailwind utility regardless of
    specificity. `.mono` therefore must not set anything a utility is expected
