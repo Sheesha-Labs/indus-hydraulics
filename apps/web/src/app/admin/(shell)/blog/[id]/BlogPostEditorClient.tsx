@@ -11,12 +11,21 @@ import OgImagePicker, {
 } from '../../../../../components/admin/seo/OgImagePicker'
 import {
   savePost,
+  setBlogPostArchivedFromEditor,
+  setBlogPostPublished,
   updateBlogPostSeo,
+  uploadBlogPostBodyImage,
   uploadBlogPostHeroImage,
   uploadBlogPostOgImage,
 } from './actions'
 import { Input, Textarea } from '@indus/ui'
 import AdminPageShell from '../../../../../components/admin/AdminPageShell'
+import BlogBodyEditor from '../../../../../components/admin/blog/BlogBodyEditor'
+import BlogPublishCard, {
+  type PublishStatus,
+} from '../../../../../components/admin/blog/BlogPublishCard'
+import type { BodyMedia } from '../../../../../components/admin/blog/ImageInsertDialog'
+import type { BlogBlockInput, BlogBlocks } from '@indus/domain'
 
 type BlogPost = {
   id: string
@@ -26,8 +35,13 @@ type BlogPost = {
   body: string
   tags: string[]
   isPublished: boolean
+  status: PublishStatus
   publishedAt: string | null
+  updatedAt: string
+  readingMinutes: number | null
   publicUrl: string
+  /** Validated body blocks — what the editor actually edits. */
+  bodyBlocks: BlogBlocks
 
   /** Current hero image's resolved public URL (for Article JSON-LD preview). */
   heroImageUrl: string | null
@@ -41,6 +55,8 @@ type BlogPost = {
   blogAuthorId: string | null
   /** Topic hub FK — a BlogCategory, editable from the Content tab. */
   categoryId: string | null
+  /** Current hub's name, for the publish card. */
+  categoryName: string | null
 
   seoTitle: string | null
   seoDescription: string | null
@@ -87,6 +103,8 @@ interface Props {
   authors: BylineCandidate[]
   /** Topic hubs the post can be filed under. */
   categories: CategoryOption[]
+  /** Library images offered by the body editor's insert dialog. */
+  bodyMedia: BodyMedia[]
 }
 
 const TABS = [
@@ -111,6 +129,7 @@ export default function BlogPostEditorClient({
   recentImages,
   authors,
   categories,
+  bodyMedia,
 }: Props) {
   const searchParams = useSearchParams()
   const initialTab: TabId = (() => {
@@ -181,6 +200,8 @@ export default function BlogPostEditorClient({
           recentImages={recentImages}
           authors={authors}
           categories={categories}
+          bodyMedia={bodyMedia}
+          savedAt={savedAt}
         />
       )}
 
@@ -212,16 +233,23 @@ function ContentForm({
   recentImages,
   authors,
   categories,
+  bodyMedia,
+  savedAt,
 }: {
   isNew: boolean
   post: BlogPost | null
   recentImages: RecentMedia[]
   authors: BylineCandidate[]
   categories: CategoryOption[]
+  bodyMedia: BodyMedia[]
+  savedAt: string | null
 }) {
   // Hero lives in client state because the picker is interactive; the value
   // reaches the server action through a hidden input rather than a fetch.
   const [heroId, setHeroId] = useState<string | null>(post?.heroId ?? null)
+  // The body editor is uncontrolled; it pushes its serialised blocks up here
+  // and they ride to the server in a hidden input, the same way the hero does.
+  const [blocks, setBlocks] = useState<BlogBlockInput[]>(post?.bodyBlocks ?? [])
 
   const heroRecent: RecentMedia[] =
     post?.heroId && post.heroStoragePath && !recentImages.some((m) => m.id === post.heroId)
@@ -239,9 +267,15 @@ function ContentForm({
       : recentImages
 
   return (
-    <form action={savePost} className="space-y-5">
+    <form action={savePost}>
       <input type="hidden" name="id" value={isNew ? 'new' : post?.id ?? ''} />
       <input type="hidden" name="heroId" value={heroId ?? ''} />
+      <input type="hidden" name="bodyBlocks" value={JSON.stringify(blocks)} />
+
+      {/* grid-cols-1 explicitly: a bare `grid` makes one implicit max-content
+          column, which a wide block card then widens past the viewport. */}
+      <div className="grid grid-cols-1 items-start gap-6 lg:grid-cols-[minmax(0,1fr)_300px]">
+        <div className="min-w-0 space-y-5">
 
       <div className="grid grid-cols-2 gap-4">
         <div className="col-span-2">
@@ -383,16 +417,19 @@ function ContentForm({
       </div>
 
       <div>
-        <label htmlFor="blogpost-body" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+        <span className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
           Body *
-        </label>
-        <Textarea
-          id="blogpost-body"
-          name="body"
-          required
-          defaultValue={post?.body ?? ''}
-          rows={18}
-          placeholder="Post content (HTML or Markdown)" className="font-mono resize-none" />
+        </span>
+        <BlogBodyEditor
+          initialBlocks={post?.bodyBlocks ?? []}
+          onChange={setBlocks}
+          media={bodyMedia}
+          uploadAction={uploadBlogPostBodyImage}
+        />
+        <p className="mt-1.5 text-[11px] text-ih-muted-2">
+          Headings become the article&apos;s numbered sections and its table of contents. Images
+          are picked from the media library and print with their caption.
+        </p>
       </div>
 
       {/* Lightweight SEO fallbacks shown only in the Content tab so authors can
@@ -427,31 +464,47 @@ function ContentForm({
         </div>
       </div>
 
-      <div className="flex items-center gap-3 pt-2">
-        <button
-          type="submit"
-          name="publish"
-          value="0"
-          className="h-10 px-6 border border-ih-border text-[13px] font-medium text-ih-ink-2 hover:bg-ih-surface-2 transition-colors"
-        >
-          Save Draft
-        </button>
-        <button
-          type="submit"
-          name="publish"
-          value="1"
-          className="h-10 px-6 bg-ih-accent text-white text-[13px] font-medium hover:opacity-90 transition-opacity"
-        >
-          {post?.isPublished ? 'Update & Publish' : 'Publish'}
-        </button>
-        {post?.isPublished && (
-          <Link
-            href={`/blog/${post.slug}`}
-            target="_blank"
-            className="font-mono text-[12px] text-ih-accent hover:underline ml-2"
+      {/* On the new-post path the publish card has no row to act on yet, so
+          the footer keeps the two submit buttons. After the first save the
+          action redirects to the edit URL, where the card takes over. */}
+      {isNew && (
+        <div className="flex items-center gap-3 pt-2">
+          <button
+            type="submit"
+            name="publish"
+            value="0"
+            className="h-10 rounded-md border border-ih-border px-6 text-[13px] font-medium text-ih-ink-2 transition-colors hover:bg-ih-surface-2"
           >
-            View post ↗
-          </Link>
+            Save draft
+          </button>
+          <button
+            type="submit"
+            name="publish"
+            value="1"
+            className="h-10 rounded-md bg-ih-accent px-6 text-[13px] font-medium text-white transition-opacity hover:opacity-90"
+          >
+            Publish
+          </button>
+        </div>
+      )}
+        </div>
+
+        {!isNew && post && (
+          <aside className="min-w-0 lg:sticky lg:top-6">
+            <BlogPublishCard
+              postId={post.id}
+              status={post.status === 'published' && !post.isPublished ? 'draft' : post.status}
+              updatedAt={post.updatedAt}
+              publishedAt={post.publishedAt}
+              authorName={post.authorName}
+              categoryName={post.categoryName}
+              readingMinutes={post.readingMinutes}
+              publicUrl={post.publicUrl}
+              savedAt={savedAt}
+              setPublished={setBlogPostPublished}
+              setArchived={setBlogPostArchivedFromEditor}
+            />
+          </aside>
         )}
       </div>
     </form>

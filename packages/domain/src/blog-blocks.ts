@@ -242,6 +242,27 @@ export const AsOfStampBlockSchema = z.object({
 })
 export type AsOfStampBlock = z.infer<typeof AsOfStampBlockSchema>
 
+// ── Block: prose run ──────────────────────────────────────────────────────
+// A continuous run of formatted writing: paragraphs, sub-headings, lists,
+// quotes, inline links and emphasis, as one HTML fragment.
+//
+// `paragraph` already carries HTML, but it renders inside a `<p>`, so a list
+// or an h3 in that field produces invalid markup the browser silently hoists
+// out of the paragraph. The block editor needs somewhere to put the shapes a
+// writer actually reaches for between the structured blocks, and this is it —
+// one block per uninterrupted run rather than one per paragraph, because that
+// is how the editor's document is shaped.
+//
+// The HTML is written by the editor but NOT trusted from it: it arrives at the
+// server action as an opaque string, and it is rendered with
+// dangerouslySetInnerHTML. `sanitizeBlogProseHtml` in apps/web is the actual
+// boundary; this schema only bounds the size.
+export const ProseBlockSchema = z.object({
+  type: z.literal('prose'),
+  html: NonEmpty(20000),
+})
+export type ProseBlock = z.infer<typeof ProseBlockSchema>
+
 // ── Discriminated union ───────────────────────────────────────────────────
 
 export const BlogBlockSchema = z.discriminatedUnion('type', [
@@ -258,6 +279,7 @@ export const BlogBlockSchema = z.discriminatedUnion('type', [
   ResultBoxBlockSchema,
   TeamListBlockSchema,
   // Blog-specific.
+  ProseBlockSchema,
   KeyTakeawaysBlockSchema,
   DirectAnswerBlockSchema,
   ComparisonTableBlockSchema,
@@ -406,6 +428,7 @@ export function estimateReadingMinutes(blocks: BlogBlocks): number {
     switch (block.type) {
       case 'lead':
       case 'paragraph':
+      case 'prose':
         count(block.html)
         break
       case 'section_head':

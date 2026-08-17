@@ -26,6 +26,7 @@ import DownloadBlockView from './blocks/DownloadBlock'
 import FaqBlockView from './blocks/FaqBlock'
 import KeyTakeawaysBlockView from './blocks/KeyTakeawaysBlock'
 import ProductEmbedBlockView from './blocks/ProductEmbedBlock'
+import ProseBlockView from './blocks/ProseBlock'
 import StandardCitationBlockView from './blocks/StandardCitationBlock'
 
 import type { ResolvedBlogArticle } from '../../lib/blog-article'
@@ -104,6 +105,8 @@ function BlockSwitch({
       return <TeamListBlockView block={block} />
 
     // ── Blog-specific ────────────────────────────────────────────────────
+    case 'prose':
+      return <ProseBlockView block={block} />
     case 'key_takeaways':
       return <KeyTakeawaysBlockView block={block} />
     case 'direct_answer':
