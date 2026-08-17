@@ -57,7 +57,11 @@ export default function BlogArticleRenderer({ article, contact }: Props) {
   }
 
   return (
-    <article className="sc-article-body">
+    // min-w-0: as a grid item this defaults to min-width:auto, so the widest
+    // comparison table would set the column width and the overflow-x-auto
+    // wrapper inside it would have no constrained parent to scroll within.
+    // Same fix as the service ArticleRenderer.
+    <article className="sc-article-body min-w-0">
       {article.blocks.map((block, i) => (
         <BlockSwitch key={i} block={block} article={article} contact={contact} />
       ))}
