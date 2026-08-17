@@ -19,7 +19,7 @@
 --
 -- Column naming:
 --   Prisma in this repo does not @map to snake_case, so Postgres columns are
---   camelCase and MUST be double-quoted. The first version of 001_seo_fts.sql
+--   camelCase and MUST be double-quoted. The first version of 202605021638_seo_fts.sql
 --   was written in snake_case, silently never applied, and surfaced only when
 --   /search returned 500 in production. See migrations/README.md.
 --
@@ -255,7 +255,7 @@ CREATE INDEX IF NOT EXISTS "blog_post_categories_categoryId_idx"
 
 -- ── Row Level Security ───────────────────────────────────────────────────
 --
--- Enabled with NO policies, matching 009. Prisma connects as postgres and
+-- Enabled with NO policies, matching 202605110531_enable_rls_unprotected_tables.sql. Prisma connects as postgres and
 -- bypasses RLS; the only Supabase JS client uses the service role and touches
 -- Storage, not these tables. This locks the anon role out by default.
 
@@ -266,7 +266,7 @@ ALTER TABLE "blog_post_categories"  ENABLE ROW LEVEL SECURITY;
 
 -- ── FTS rebuild ──────────────────────────────────────────────────────────
 --
--- SUPERSEDES 005_blog_fts.sql. That definition draws weight C from `body`
+-- SUPERSEDES 202605052109_blog_fts.sql. That definition draws weight C from `body`
 -- alone. Once article text lives in `bodyBlocks`, a post written entirely in
 -- blocks would be searchable by title and excerpt only — no error, no failing
 -- test, just quietly worse results. This is the failure mode the plan flagged.

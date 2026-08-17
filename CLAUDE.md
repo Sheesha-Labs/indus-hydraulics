@@ -179,6 +179,30 @@ This file is the authoritative engineering guide for this codebase. Claude Code 
 
 4. **Migrations are forward-only.** Never edit a migration file that has already been applied to any environment. Create a new migration instead.
 
+   **Name it `YYYYMMDDHHMM_snake_case_description.sql`** — a timestamp, never a
+   sequence number. Run `date +%Y%m%d%H%M` and use what it prints.
+
+   ```bash
+   echo "packages/db/migrations/$(date +%Y%m%d%H%M)_add_the_thing.sql"
+   ```
+
+   Sequence numbers were the convention until 2026-08-17 and they collide. The
+   next number is a shared counter that every open branch reads at the same
+   moment and increments independently, so two branches pick the same one and
+   the second to merge is always wrong — with a dozen worktrees open that is
+   structural, not bad luck. It happened: two `014_` files, caught only when
+   GitHub refused the merge. `migration-filenames.test.ts` now fails the build
+   on a duplicate prefix, a malformed name, or a file missing from the README
+   table.
+
+   **`pnpm db:push` is broken against this database — do not run it.** It
+   proposes dropping the FTS-managed `products.search_tsv` generated column and
+   stops at Prisma's data-loss guard; `--accept-data-loss` deletes the column
+   and breaks `/search` in production. Apply SQL with `prisma db execute` or the
+   Supabase MCP `apply_migration`, **before** merging the PR that needs it, and
+   regenerate the client with `pnpm --filter @indus/db db:generate`. Full
+   details in `packages/db/migrations/README.md`.
+
 5. **Seed data lives in `packages/db/src/seed.ts`.** It is idempotent — running it twice must not create duplicate records.
 
 6. **Index checklist** (already in schema, enforce on review):

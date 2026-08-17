@@ -1,4 +1,4 @@
--- 015_store_settings_brand_identity.sql
+-- 202608171758_store_settings_brand_identity.sql
 --
 -- Brand & identity: the three brand images an operator could not set, plus the
 -- placement switch the header needs.

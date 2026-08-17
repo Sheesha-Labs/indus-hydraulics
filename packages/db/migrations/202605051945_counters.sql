@@ -3,7 +3,7 @@
 --
 -- This file is hand-rolled rather than relying on `prisma db push` because
 -- `db push` currently wants to drop the FTS-managed `products.search_tsv`
--- column (managed by 001_seo_fts.sql, not by Prisma) — a destructive false
+-- column (managed by 202605021638_seo_fts.sql, not by Prisma) — a destructive false
 -- positive that would break /search.
 --
 -- Applied to production on 2026-05-05 via supabase MCP as

@@ -1,4 +1,4 @@
--- 014_blog_soft_delete.sql
+-- 202608171741_blog_soft_delete.sql
 --
 -- Soft delete for blog posts, backing the Delete action on the Blog Editor
 -- list. Deleting a live article from a table row is one click away from
