@@ -57,8 +57,7 @@ export default function SavedListClient({ listId, items: initialItems }: Props) 
     <div className="border border-ih-border bg-ih-surface overflow-hidden">
       {/* Column header */}
       <div
-        className="grid gap-3.5 px-[18px] py-2.5 bg-ih-surface-2 border-b border-ih-border font-mono text-[10px] tracking-[0.12em] uppercase text-ih-muted"
-        style={{ gridTemplateColumns: '64px 1fr 130px 32px' }}
+        className="grid grid-cols-[48px_1fr_auto_28px] gap-2.5 px-4 py-2.5 bg-ih-surface-2 border-b border-ih-border font-mono text-[10px] tracking-[0.12em] uppercase text-ih-muted sm:grid-cols-[64px_1fr_130px_32px] sm:gap-3.5 sm:px-[18px]"
       >
         <div />
         <div>Product · SKU</div>
@@ -69,11 +68,10 @@ export default function SavedListClient({ listId, items: initialItems }: Props) 
       {items.map((item) => (
         <div
           key={item.id}
-          className="grid gap-3.5 items-center px-[18px] py-3.5 border-b border-ih-border last:border-0"
-          style={{ gridTemplateColumns: '64px 1fr 130px 32px' }}
+          className="grid grid-cols-[48px_1fr_auto_28px] items-center gap-2.5 px-4 py-3.5 border-b border-ih-border last:border-0 sm:grid-cols-[64px_1fr_130px_32px] sm:gap-3.5 sm:px-[18px]"
         >
           {/* Image */}
-          <div className="w-16 h-16 bg-ih-surface-2 border border-ih-border relative overflow-hidden shrink-0">
+          <div className="relative h-12 w-12 shrink-0 overflow-hidden border border-ih-border bg-ih-surface-2 sm:h-16 sm:w-16">
             {item.imageUrl ? (
               <Image src={item.imageUrl} alt={item.title} fill className="object-contain p-1.5" sizes="64px" />
             ) : (
