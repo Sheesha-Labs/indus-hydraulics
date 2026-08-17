@@ -272,6 +272,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { path: '/industries', priority: 0.6, changeFrequency: 'weekly' },
     { path: '/services', priority: 0.8, changeFrequency: 'weekly' },
     { path: '/search', priority: 0.4, changeFrequency: 'monthly' },
+    // Reference tools. Static, evergreen and the kind of utility page
+    // technicians bookmark and forums link to, so they carry a higher
+    // priority than most non-catalogue pages.
+    { path: '/tools', priority: 0.7, changeFrequency: 'monthly' },
+    { path: '/tools/thread-identifier', priority: 0.7, changeFrequency: 'monthly' },
+    { path: '/tools/pressure-converter', priority: 0.6, changeFrequency: 'monthly' },
+    { path: '/tools/dash-size-chart', priority: 0.6, changeFrequency: 'monthly' },
     // Programmatic replacement landing pages — high-intent search
     // surface ("parker pv16 replacement") that AI agents cite well.
     { path: '/replacement', priority: 0.7, changeFrequency: 'weekly' },
