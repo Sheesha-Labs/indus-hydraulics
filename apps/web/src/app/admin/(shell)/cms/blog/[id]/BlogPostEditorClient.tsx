@@ -6,8 +6,15 @@ import { useSearchParams } from 'next/navigation'
 import SeoEntityDrawer, {
   type SeoDrawerEntity,
 } from '../../../../../../components/admin/seo/SeoEntityDrawer'
-import type { RecentMedia } from '../../../../../../components/admin/seo/OgImagePicker'
-import { savePost, updateBlogPostSeo, uploadBlogPostOgImage } from './actions'
+import OgImagePicker, {
+  type RecentMedia,
+} from '../../../../../../components/admin/seo/OgImagePicker'
+import {
+  savePost,
+  updateBlogPostSeo,
+  uploadBlogPostHeroImage,
+  uploadBlogPostOgImage,
+} from './actions'
 import { Input, Textarea } from '@indus/ui'
 import AdminPageShell from '../../../../../../components/admin/AdminPageShell'
 
@@ -24,8 +31,14 @@ type BlogPost = {
 
   /** Current hero image's resolved public URL (for Article JSON-LD preview). */
   heroImageUrl: string | null
+  /** Hero Media id — editable from the Content tab. */
+  heroId: string | null
+  /** Hero Media storage path, so the picker can render a thumbnail. */
+  heroStoragePath: string | null
   /** Author's display name (for Article JSON-LD preview). */
   authorName: string | null
+  /** Author FK — editable from the Content tab. */
+  authorStaffId: string | null
 
   seoTitle: string | null
   seoDescription: string | null
@@ -49,12 +62,22 @@ type BlogPost = {
   jsonLdOverride: string | null
 }
 
+export type BylineCandidate = {
+  id: string
+  name: string
+  role: string
+}
+
 interface Props {
   /** Whether this is the "new post" path (id === 'new'). */
   isNew: boolean
   /** Post data (only for the edit path; null on new). */
   post: BlogPost | null
   recentImages: RecentMedia[]
+  /** Active staff who can hold a byline. */
+  authors: BylineCandidate[]
+  /** Signed-in staff id, used to pre-select the byline on a new post. */
+  currentStaffId: string | null
 }
 
 const TABS = [
@@ -73,7 +96,13 @@ type TabId = (typeof TABS)[number]['id']
  * to attach SEO overrides to. After Save, the Content action redirects
  * to the edit URL where both tabs become available.
  */
-export default function BlogPostEditorClient({ isNew, post, recentImages }: Props) {
+export default function BlogPostEditorClient({
+  isNew,
+  post,
+  recentImages,
+  authors,
+  currentStaffId,
+}: Props) {
   const searchParams = useSearchParams()
   const initialTab: TabId = (() => {
     const t = searchParams?.get('tab')
@@ -136,7 +165,15 @@ export default function BlogPostEditorClient({ isNew, post, recentImages }: Prop
         </div>
       )}
 
-      {(tab === 'content' || isNew) && <ContentForm isNew={isNew} post={post} />}
+      {(tab === 'content' || isNew) && (
+        <ContentForm
+          isNew={isNew}
+          post={post}
+          recentImages={recentImages}
+          authors={authors}
+          currentStaffId={currentStaffId}
+        />
+      )}
 
       {tab === 'seo' && !isNew && post && (
         <SeoEntityDrawer
@@ -160,10 +197,42 @@ export default function BlogPostEditorClient({ isNew, post, recentImages }: Prop
 
 // ── Content tab — preserves the original inline form layout. ────────────────
 
-function ContentForm({ isNew, post }: { isNew: boolean; post: BlogPost | null }) {
+function ContentForm({
+  isNew,
+  post,
+  recentImages,
+  authors,
+  currentStaffId,
+}: {
+  isNew: boolean
+  post: BlogPost | null
+  recentImages: RecentMedia[]
+  authors: BylineCandidate[]
+  currentStaffId: string | null
+}) {
+  // Hero lives in client state because the picker is interactive; the value
+  // reaches the server action through a hidden input rather than a fetch.
+  const [heroId, setHeroId] = useState<string | null>(post?.heroId ?? null)
+
+  const heroRecent: RecentMedia[] =
+    post?.heroId && post.heroStoragePath && !recentImages.some((m) => m.id === post.heroId)
+      ? // The current hero can be older than the 50 most-recent uploads. Without
+        // this it would vanish from the list and silently clear itself on save.
+        [
+          {
+            id: post.heroId,
+            storagePath: post.heroStoragePath,
+            alt: null,
+            originalFilename: 'Current hero image',
+          },
+          ...recentImages,
+        ]
+      : recentImages
+
   return (
     <form action={savePost} className="space-y-5">
       <input type="hidden" name="id" value={isNew ? 'new' : post?.id ?? ''} />
+      <input type="hidden" name="heroId" value={heroId ?? ''} />
 
       <div className="grid grid-cols-2 gap-4">
         <div className="col-span-2">
@@ -203,6 +272,65 @@ function ContentForm({ isNew, post }: { isNew: boolean; post: BlogPost | null })
             type="text"
             placeholder="hydraulics, maintenance, pumps" />
         </div>
+      </div>
+
+      <div className="grid grid-cols-2 gap-4">
+        <div>
+          <label
+            htmlFor="blogpost-author"
+            className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5"
+          >
+            Byline
+          </label>
+          <select
+            id="blogpost-author"
+            name="authorStaffId"
+            defaultValue={post?.authorStaffId ?? currentStaffId ?? ''}
+            className="h-10 w-full rounded-md border border-ih-border bg-white px-2 text-[13px]"
+          >
+            <option value="">— Unchanged —</option>
+            {authors.map((a) => (
+              <option key={a.id} value={a.id}>
+                {a.name} · {a.role.replace(/_/g, ' ')}
+              </option>
+            ))}
+          </select>
+          <p className="mt-1 text-[11px] text-ih-muted-2">
+            Credits the engineer who wrote it, not whoever saved it last.
+          </p>
+        </div>
+
+        <div>
+          <label
+            htmlFor="blogpost-publishedAt"
+            className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5"
+          >
+            Publish date
+          </label>
+          <Input
+            id="blogpost-publishedAt"
+            name="publishedAt"
+            type="datetime-local"
+            defaultValue={toDateTimeLocal(post?.publishedAt ?? null)}
+          />
+          <p className="mt-1 text-[11px] text-ih-muted-2">
+            Leave blank to stamp now on first publish. Editing a live post never moves it.
+          </p>
+        </div>
+      </div>
+
+      <div>
+        <span className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+          Hero image
+        </span>
+        <OgImagePicker
+          value={heroId}
+          recent={heroRecent}
+          uploadAction={uploadBlogPostHeroImage}
+          onChange={(next) => setHeroId(next)}
+          emptyLabel="— No hero image —"
+          hint="Shown at the top of the post and on the blog index card. Landscape, at least 1200px wide."
+        />
       </div>
 
       <div>
@@ -313,4 +441,18 @@ function toSeoEntity(p: BlogPost): SeoDrawerEntity {
     excludeFromSitemap: p.excludeFromSitemap,
     jsonLdOverride: p.jsonLdOverride,
   }
+}
+
+/**
+ * `datetime-local` will not accept an ISO string with a timezone or seconds —
+ * it silently renders an empty field, which reads as "no publish date" and
+ * would clear the date on the next save. Trim to `YYYY-MM-DDTHH:mm` in local
+ * time so what the editor sees is what is stored.
+ */
+function toDateTimeLocal(iso: string | null): string {
+  if (!iso) return ''
+  const d = new Date(iso)
+  if (Number.isNaN(d.getTime())) return ''
+  const pad = (n: number) => String(n).padStart(2, '0')
+  return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}T${pad(d.getHours())}:${pad(d.getMinutes())}`
 }

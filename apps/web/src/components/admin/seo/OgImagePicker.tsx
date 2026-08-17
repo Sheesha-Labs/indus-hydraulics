@@ -19,6 +19,10 @@ interface Props {
   uploadAction: (formData: FormData) => Promise<Result<{ mediaId: string; storagePath: string; alt: string | null; originalFilename: string }>>
   /** Called whenever the selection changes. Parent stores the id in form state. */
   onChange: (value: string | null, preview: { storagePath: string; alt: string | null } | null) => void
+  /** Label for the "nothing selected" option. Defaults to the OG-image wording. */
+  emptyLabel?: string
+  /** Hint line under the picker. Defaults to the OG-image sizing guidance. */
+  hint?: string
 }
 
 /**
@@ -28,7 +32,14 @@ interface Props {
  *
  * The full grid-based media browser ships in Phase 2.
  */
-export default function OgImagePicker({ value, recent, uploadAction, onChange }: Props) {
+export default function OgImagePicker({
+  value,
+  recent,
+  uploadAction,
+  onChange,
+  emptyLabel = '— Use site default —',
+  hint = 'JPEG / PNG / WebP. Recommended 1200×630 (1.91:1) for the cleanest social card.',
+}: Props) {
   const [items, setItems] = useState<RecentMedia[]>(recent)
   const [pending, startTransition] = useTransition()
   const [error, setError] = useState<string | null>(null)
@@ -88,7 +99,7 @@ export default function OgImagePicker({ value, recent, uploadAction, onChange }:
             onChange={(e) => handleSelect(e.target.value || null)}
             className="h-9 px-2 border border-ih-border bg-white text-[13px]"
           >
-            <option value="">— Use site default —</option>
+            <option value="">{emptyLabel}</option>
             {items.map((item) => (
               <option key={item.id} value={item.id}>
                 {truncate(item.alt ?? item.originalFilename, 60)}
@@ -113,9 +124,7 @@ export default function OgImagePicker({ value, recent, uploadAction, onChange }:
               {error}
             </span>
           )}
-          <p className="text-[11px] text-ih-muted-2">
-            JPEG / PNG / WebP. Recommended 1200×630 (1.91:1) for the cleanest social card.
-          </p>
+          <p className="text-[11px] text-ih-muted-2">{hint}</p>
         </div>
       </div>
     </div>

@@ -5,7 +5,7 @@ import { invalidateBlogPosts } from '../../../../../../lib/cache-tags'
 import { redirect } from 'next/navigation'
 import { z } from 'zod'
 import { db, Prisma } from '@indus/db'
-import { projectSeoFields } from '@indus/domain'
+import { parseLocalDateTime, projectSeoFields, resolvePublishedAt } from '@indus/domain'
 import { auth } from '../../../../../../lib/admin-auth'
 import { ROLES, requireRole } from '../../../../../../lib/rbac'
 import { fail, failFromError, ok, type Result } from '../../../../../../lib/result'
@@ -32,7 +32,23 @@ export async function savePost(formData: FormData) {
   const tags = tagsRaw.split(',').map((t) => t.trim()).filter(Boolean)
   const publish = formData.get('publish') === '1'
 
-  const data = {
+  // Hero image. The picker submits '' to mean "no hero", which must clear the
+  // FK rather than be dropped — hence null, not undefined.
+  const heroRaw = (formData.get('heroId') as string | null) ?? ''
+  const heroId = heroRaw.trim() ? heroRaw.trim() : null
+
+  // Author. Falls back to the editing user only when creating; on update an
+  // empty value leaves the existing author alone, so a passing sub-editor
+  // does not silently take the byline off the engineer who wrote the piece.
+  const authorRaw = (formData.get('authorStaffId') as string | null) ?? ''
+  const pickedAuthorId = authorRaw.trim() ? authorRaw.trim() : null
+
+  // Explicit publish date, from a datetime-local input. Enables both
+  // back-dating and scheduling.
+  const publishedAtRaw = (formData.get('publishedAt') as string | null) ?? ''
+  const explicitPublishedAt = parseLocalDateTime(publishedAtRaw)
+
+  const base = {
     title,
     slug,
     excerpt,
@@ -40,21 +56,55 @@ export async function savePost(formData: FormData) {
     seoTitle,
     seoDescription,
     tags,
+    heroId,
     isPublished: publish,
-    publishedAt: publish ? new Date() : undefined,
-    authorStaffId: session.user.id,
   }
 
   if (id === 'new') {
-    const post = await db.blogPost.create({ data })
+    const post = await db.blogPost.create({
+      data: {
+        ...base,
+        authorStaffId: pickedAuthorId ?? session.user.id,
+        publishedAt: explicitPublishedAt ?? (publish ? new Date() : null),
+      },
+    })
     revalidatePath('/admin/cms')
     invalidateBlogPosts()
     redirect(`/admin/cms/blog/${post.id}`)
-  } else {
-    await db.blogPost.update({ where: { id }, data })
-    revalidatePath('/admin/cms')
-    revalidatePath(`/blog/${slug}`)
   }
+
+  // `publishedAt` is the canonical first-publication date and feeds Article
+  // JSON-LD `datePublished`. Re-publishing an edit must not reset it to now,
+  // and un-publishing must not erase it — otherwise a post that goes back up
+  // loses its original date and its search history along with it.
+  const existing = await db.blogPost.findUnique({
+    where: { id },
+    select: { publishedAt: true },
+  })
+
+  const publishedAt = resolvePublishedAt({
+    explicit: explicitPublishedAt,
+    existing: existing?.publishedAt ?? null,
+    publish,
+    now: new Date(),
+  })
+
+  await db.blogPost.update({
+    where: { id },
+    data: {
+      ...base,
+      publishedAt,
+      ...(pickedAuthorId ? { authorStaffId: pickedAuthorId } : {}),
+    },
+  })
+
+  revalidatePath('/admin/cms')
+  revalidatePath('/blog')
+  revalidatePath(`/blog/${slug}`)
+  // The homepage rail and the blog index read through `unstable_cache` on the
+  // `blog-posts` tag. Without this purge an edit is invisible on the
+  // storefront until the tag expires on its own.
+  invalidateBlogPosts()
 }
 
 // ── SEO tab — `updateBlogPostSeo` mirrors updateProductSeo ──────────────────
@@ -234,11 +284,33 @@ export async function updateBlogPostSeo(formData: FormData): Promise<Result<void
 const MAX_IMAGE_BYTES = 10 * 1024 * 1024
 const ACCEPTED_IMAGE_TYPES = ['image/jpeg', 'image/png', 'image/webp', 'image/gif']
 
+type UploadedImage = {
+  mediaId: string
+  storagePath: string
+  alt: string | null
+  originalFilename: string
+}
+
 export async function uploadBlogPostOgImage(
   formData: FormData,
-): Promise<
-  Result<{ mediaId: string; storagePath: string; alt: string | null; originalFilename: string }>
-> {
+): Promise<Result<UploadedImage>> {
+  return uploadBlogPostImage(formData, 'seo/og')
+}
+
+/**
+ * Hero upload. Same validation and Media row as the OG picker, but filed
+ * under `blog/hero` so the two roles stay separable in storage.
+ */
+export async function uploadBlogPostHeroImage(
+  formData: FormData,
+): Promise<Result<UploadedImage>> {
+  return uploadBlogPostImage(formData, 'blog/hero')
+}
+
+async function uploadBlogPostImage(
+  formData: FormData,
+  folder: string,
+): Promise<Result<UploadedImage>> {
   try {
     requireRole(await auth(), ROLES.CMS_WRITE)
     const session = await auth()
@@ -259,7 +331,7 @@ export async function uploadBlogPostOgImage(
     const { storagePath, bytes, mimeType } = await uploadToStorage(
       STORAGE_BUCKETS.images,
       file,
-      'seo/og',
+      folder,
     )
     const media = await db.media.create({
       data: {
