@@ -62,12 +62,18 @@ export const LeadParagraph = Node.create({
   name: 'leadParagraph',
   group: 'block',
   content: 'inline*',
-  // Above StarterKit's paragraph (50). Both match a `<p>`, and at equal
-  // priority the plain paragraph wins — which quietly turned every stored
-  // `lead` block into a `paragraph` on the way in, and back out again on save.
-  priority: 1100,
   parseHTML() {
-    return [{ tag: 'p[data-lead]' }]
+    // The priority is on the RULE, not the extension.
+    //
+    // Both this and StarterKit's paragraph match a `<p>`, and at equal priority
+    // the plain paragraph wins — which quietly turned every stored `lead` block
+    // into a `paragraph`. Raising the EXTENSION's priority fixed that and broke
+    // something worse: extension priority also decides node order in the
+    // schema, and the first block node able to hold inline content is the one
+    // ProseMirror wraps stray text in. Every pasted line, and every heading a
+    // sanitiser had stripped to bare text, silently became a lead paragraph
+    // with a drop cap.
+    return [{ tag: 'p[data-lead]', priority: 60 }]
   },
   renderHTML({ HTMLAttributes }) {
     return ['p', mergeAttributes(HTMLAttributes, { 'data-lead': '', class: 'ih-editor-lead' }), 0]

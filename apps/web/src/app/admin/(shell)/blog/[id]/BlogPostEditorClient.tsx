@@ -22,7 +22,7 @@ import { Input, Textarea } from '@indus/ui'
 import AdminPageShell from '../../../../../components/admin/AdminPageShell'
 import BlogBodyEditor from '../../../../../components/admin/blog/BlogBodyEditor'
 import BlogPublishCard, {
-  type PublishStatus,
+  displayStatus,
 } from '../../../../../components/admin/blog/BlogPublishCard'
 import type { BodyMedia } from '../../../../../components/admin/blog/ImageInsertDialog'
 import type { BlogBlockInput, BlogBlocks } from '@indus/domain'
@@ -35,13 +35,15 @@ type BlogPost = {
   body: string
   tags: string[]
   isPublished: boolean
-  status: PublishStatus
+  status: string
   publishedAt: string | null
   updatedAt: string
   readingMinutes: number | null
   publicUrl: string
   /** Validated body blocks — what the editor actually edits. */
   bodyBlocks: BlogBlocks
+  /** Sanitised legacy `body` HTML, when the post has no blocks yet. */
+  legacyProseHtml: string | null
 
   /** Current hero image's resolved public URL (for Article JSON-LD preview). */
   heroImageUrl: string | null
@@ -249,7 +251,15 @@ function ContentForm({
   const [heroId, setHeroId] = useState<string | null>(post?.heroId ?? null)
   // The body editor is uncontrolled; it pushes its serialised blocks up here
   // and they ride to the server in a hidden input, the same way the hero does.
-  const [blocks, setBlocks] = useState<BlogBlockInput[]>(post?.bodyBlocks ?? [])
+  // A legacy post opens as one prose block holding its old HTML, so the
+  // article is visible and editable and the first save migrates it to blocks.
+  const initialBlocks: BlogBlocks =
+    post?.bodyBlocks.length
+      ? post.bodyBlocks
+      : post?.legacyProseHtml
+        ? [{ type: 'prose', html: post.legacyProseHtml }]
+        : []
+  const [blocks, setBlocks] = useState<BlogBlockInput[]>(initialBlocks)
 
   const heroRecent: RecentMedia[] =
     post?.heroId && post.heroStoragePath && !recentImages.some((m) => m.id === post.heroId)
@@ -385,7 +395,8 @@ function ContentForm({
             defaultValue={toDateTimeLocal(post?.publishedAt ?? null)}
           />
           <p className="mt-1 text-[11px] text-ih-muted-2">
-            Leave blank to stamp now on first publish. Editing a live post never moves it.
+            Leave blank to stamp now on first publish. Editing a live post never moves it. A
+            future date is only a label — publishing puts the post on the site straight away.
           </p>
         </div>
       </div>
@@ -421,7 +432,7 @@ function ContentForm({
           Body *
         </span>
         <BlogBodyEditor
-          initialBlocks={post?.bodyBlocks ?? []}
+          initialBlocks={initialBlocks}
           onChange={setBlocks}
           media={bodyMedia}
           uploadAction={uploadBlogPostBodyImage}
@@ -493,7 +504,7 @@ function ContentForm({
           <aside className="min-w-0 lg:sticky lg:top-6">
             <BlogPublishCard
               postId={post.id}
-              status={post.status === 'published' && !post.isPublished ? 'draft' : post.status}
+              status={displayStatus(post.status, post.isPublished)}
               updatedAt={post.updatedAt}
               publishedAt={post.publishedAt}
               authorName={post.authorName}

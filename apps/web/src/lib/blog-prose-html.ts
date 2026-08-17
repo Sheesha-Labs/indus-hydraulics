@@ -77,3 +77,30 @@ export function isBlankHtml(html: string): boolean {
       .trim().length === 0
   )
 }
+
+/**
+ * Sanitiser for the ONE-TIME migration of a legacy `body` into the editor.
+ *
+ * Same allow-list, plus headings. `sanitizeBlogProseHtml` deliberately drops
+ * `h1` and `h2` — inside a `prose` block a top-level heading is wrong, because
+ * a section heading is a `section_head` block with a number and an anchor.
+ *
+ * But a pre-block-editor article keeps its section headings in exactly those
+ * tags, and stripping them does not merely lose the formatting: the heading
+ * text falls out as a bare text node, and the article loses its structure and
+ * its table of contents in one go. Letting them through means the editor parses
+ * them as headings and the first save writes them as proper `section_head`
+ * blocks — which is the whole point of opening a legacy post in the editor.
+ *
+ * `h1` becomes `h2`: the article template already renders the title as the
+ * page's only `h1`, so a second one is a document-outline error inherited from
+ * whatever wrote the legacy HTML.
+ */
+export function sanitizeLegacyBodyHtml(html: string): string {
+  if (!html) return ''
+  return sanitizeHtml(html, {
+    ...OPTIONS,
+    allowedTags: [...ALLOWED_TAGS, 'h1', 'h2'],
+    transformTags: { ...OPTIONS.transformTags, h1: 'h2' },
+  })
+}
