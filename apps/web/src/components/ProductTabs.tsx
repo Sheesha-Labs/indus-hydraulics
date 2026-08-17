@@ -104,7 +104,7 @@ export default function ProductTabs({
 
       {/* Description */}
       {active === 0 && (
-        <div className="grid gap-12 lg:grid-cols-[1.4fr_1fr]">
+        <div className="grid grid-cols-1 gap-12 lg:grid-cols-[1.4fr_1fr]">
           <div>
             <h2 className="mb-4 font-serif text-[26px] font-normal tracking-[-0.01em]">Product description</h2>
             {descriptionLong ? (

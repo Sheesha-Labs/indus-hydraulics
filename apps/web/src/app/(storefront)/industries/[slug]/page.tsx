@@ -105,7 +105,7 @@ export default async function IndustryPage({ params }: Props) {
             />
           </div>
 
-          <div className="grid items-center gap-12 lg:grid-cols-[1.25fr_1fr]">
+          <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-[1.25fr_1fr]">
             <div>
               {ind.headline && (
                 <h1 className="mb-4 max-w-[16ch] text-balance font-serif text-[clamp(34px,4.5vw,50px)] font-normal leading-[1.05] tracking-[-0.01em]">
@@ -144,7 +144,7 @@ export default async function IndustryPage({ params }: Props) {
           {/* Stat row — the rule-topped device, 4 up. */}
           {ind.stats.length > 0 && (
             <div
-              className="mt-12 grid gap-7 sm:grid-cols-2 lg:grid-cols-4"
+              className="mt-12 grid grid-cols-1 gap-7 sm:grid-cols-2 lg:grid-cols-4"
             >
               {ind.stats.map((stat) => (
                 <div key={stat.label} className="border-t-2 border-ih-accent pt-3.5">
@@ -163,7 +163,10 @@ export default async function IndustryPage({ params }: Props) {
       {ind.deliveryAreas.length > 0 && (
         <section className="mx-auto max-w-[1440px] px-5 sm:px-8 xl:px-12 py-12">
           <h2 className="text-[28px] tracking-[-0.02em] font-semibold mb-6">Where we deliver</h2>
-          <div className="grid grid-cols-4 gap-3.5">
+          {/* Four stat cards leave each cell 66px wide at 360px, holding content
+              that needs 105px — the text spilled out of the cells and the page
+              scrolled. Two up on a phone. */}
+          <div className="grid grid-cols-2 gap-3.5 sm:grid-cols-4">
             {ind.deliveryAreas.map((area) => (
               <div key={area.category} className="p-5 border border-ih-border bg-ih-surface">
                 <div className="font-mono text-[11px] tracking-[0.1em] text-ih-accent uppercase mb-2">

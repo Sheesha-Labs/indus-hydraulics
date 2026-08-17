@@ -116,7 +116,7 @@ export default function RfqSubmitForm({ addresses, isAuthenticated }: Props) {
         defaultValue=""
       />
 
-      <div className="grid items-start gap-8 lg:grid-cols-[1fr_320px]">
+      <div className="grid grid-cols-1 items-start gap-8 lg:grid-cols-[1fr_320px]">
         {/* ── Main form ─────────────────────────────────────────── */}
         <div className="flex flex-col gap-6">
 

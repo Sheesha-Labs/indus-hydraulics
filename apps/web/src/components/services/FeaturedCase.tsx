@@ -18,7 +18,7 @@ export default function FeaturedCase({ case: c }: Props) {
   const tagBg = c.cardTagStyle === 'oil' ? 'bg-ih-accent text-white' : 'bg-ih-navy text-white'
 
   return (
-    <section className="grid gap-8 py-12 lg:grid-cols-[1.5fr_1fr]">
+    <section className="grid grid-cols-1 gap-8 py-12 lg:grid-cols-[1.5fr_1fr]">
       <Link href={`/services/${c.slug}`} className="group relative block">
         <PlaceholderImage
           storagePath={c.heroImage?.storagePath}

@@ -133,13 +133,13 @@ export default async function ContactPage({ params }: Props) {
       </div>
 
       {/* ── Main grid ─────────────────────────────────────────── */}
-      <div className="mx-auto max-w-[1440px] px-5 sm:px-8 xl:px-12 py-8 pb-16 grid gap-14 lg:grid-cols-[1.1fr_1fr]">
+      <div className="mx-auto max-w-[1440px] px-5 sm:px-8 xl:px-12 py-8 pb-16 grid grid-cols-1 gap-14 lg:grid-cols-[1.1fr_1fr]">
 
         {/* ── Form card ─────────────────────────────────────── */}
         <ContactFormClient />
 
         {/* ── Right column: channels + offices ──────────────── */}
-        <div>
+        <div className="min-w-0">
           {/* Channels */}
           <div className="flex flex-col gap-3 mb-8">
             {channels.map((ch) => (
@@ -149,7 +149,7 @@ export default async function ContactPage({ params }: Props) {
                 /* Class, not an inline style: an inline gridTemplateColumns
                    beats every responsive utility, which is what made this
                    card push the page sideways on a phone. */
-                className="grid grid-cols-[44px_1fr_auto] gap-4 items-center p-5 border border-ih-border bg-ih-surface hover:border-ih-accent transition-colors"
+                className="grid grid-cols-[44px_1fr_auto] gap-3 items-center p-4 border border-ih-border bg-ih-surface transition-colors hover:border-ih-accent sm:gap-4 sm:p-5"
               >
                 <div
                   className="w-11 h-11 border grid place-items-center text-[18px]"
@@ -207,7 +207,7 @@ export default async function ContactPage({ params }: Props) {
 
       {/* ── FAQ ───────────────────────────────────────────────── */}
       <div className="border-t border-ih-border py-16">
-        <div className="mx-auto max-w-[1440px] px-5 sm:px-8 xl:px-12 grid gap-14 lg:grid-cols-[1fr_2fr]">
+        <div className="mx-auto max-w-[1440px] px-5 sm:px-8 xl:px-12 grid grid-cols-1 gap-14 lg:grid-cols-[1fr_2fr]">
           <div>
             <h2 className="text-[32px] font-semibold tracking-[-0.02em] leading-snug">Frequently asked questions</h2>
             <p className="mt-3 text-[14px] text-ih-muted leading-[1.6]">
