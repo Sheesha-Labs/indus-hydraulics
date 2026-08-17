@@ -5,35 +5,9 @@ import { useFormStatus } from 'react-dom'
 import { useRouter } from 'next/navigation'
 import { Archive, ArchiveRestore, CheckCircle2, ExternalLink, RotateCcw } from 'lucide-react'
 import type { Result } from '../../../lib/result'
-
-/** No `scheduled` — see the note in the blog list page. */
-export type PublishStatus = 'draft' | 'published' | 'archived'
-
-/**
- * The status a row should DISPLAY.
- *
- * `BlogPostStatus` in the database still has `scheduled`, and `published` can
- * disagree with `isPublished` on a row written before the two were kept in
- * lockstep. Both resolve to Draft: whatever the enum says, a post the site is
- * not serving is a draft to the person looking at the list.
- */
-export function displayStatus(status: string, isPublished: boolean): PublishStatus {
-  if (status === 'archived') return 'archived'
-  if (status === 'published' && isPublished) return 'published'
-  return 'draft'
-}
-
-const STATUS_LABEL: Record<PublishStatus, string> = {
-  draft: 'Draft',
-  published: 'Published',
-  archived: 'Archived',
-}
-
-const STATUS_STYLE: Record<PublishStatus, string> = {
-  draft: 'text-ih-muted bg-ih-surface-2',
-  published: 'text-[color:var(--color-ih-success)] bg-ih-success-soft',
-  archived: 'text-ih-muted-2 bg-ih-surface-3',
-}
+// Imported, never re-exported. Forwarding these from a `'use client'` module
+// is how the list page came to call `displayStatus` across the RSC boundary.
+import { STATUS_LABEL, STATUS_STYLE, type PublishStatus } from '../../../lib/blog-status'
 
 type Props = {
   postId: string

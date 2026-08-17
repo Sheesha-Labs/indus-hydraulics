@@ -27,6 +27,22 @@ import { describe, expect, test } from 'vitest'
  *
  * The rule: if a component is a Client Component, no Server Component may pass
  * it a prop whose value is a function.
+ *
+ * ── The second rule ──
+ *
+ * The mirror image, which shipped a day later and took down /admin/blog:
+ *
+ *   Attempted to call displayStatus() from the server but displayStatus is on
+ *   the client. It's not possible to invoke a client function from the server.
+ *
+ * Every export of a `'use client'` module is a client REFERENCE on the server,
+ * not the value. A Server Component may render a component from one, but it
+ * cannot call a plain function from one — and `displayStatus` had been put in
+ * `BlogPublishCard.tsx` because that was the only place using it at the time.
+ *
+ * It fails exactly the same way as the first: typechecks, lints, builds (the
+ * page is dynamic), and every test passes. Anything both sides need belongs in
+ * a plain module — see lib/blog-status.ts.
  */
 
 const HERE = path.dirname(fileURLToPath(import.meta.url))
@@ -123,6 +139,47 @@ function functionPropsPassedTo(component: string, source: string): string[] {
   return out
 }
 
+/**
+ * Named imports a non-client file takes from a `'use client'` module, minus the
+ * ones that are legitimately components.
+ *
+ * `import type` is erased and cannot be called, so it is skipped. A
+ * PascalCase binding is a component, which a Server Component MAY render.
+ * A lowercase binding is a function or a value, and touching it on the server
+ * throws.
+ */
+function clientValueImports(source: string, file: string): string[] {
+  const out: string[] = []
+  const IMPORT = /import\s+(?:type\s+)?\{([^}]+)\}\s+from\s+['"]([^'"]+)['"]/g
+
+  for (const m of source.matchAll(IMPORT)) {
+    const clause = m[1] ?? ''
+    const spec = m[2] ?? ''
+    if (!spec.startsWith('.')) continue
+    if (/^import\s+type\s/.test(m[0])) continue
+
+    const resolved = ['.tsx', '.ts', '/index.tsx', '/index.ts']
+      .map((ext) => path.resolve(path.dirname(file), spec + ext))
+      .find((candidate) => {
+        try {
+          return statSync(candidate).isFile()
+        } catch {
+          return false
+        }
+      })
+    if (!resolved || !isClientModule(resolved)) continue
+
+    for (const raw of clause.split(',')) {
+      const binding = raw.trim()
+      if (!binding || binding.startsWith('type ')) continue
+      const name = binding.split(/\s+as\s+/).pop()?.trim() ?? ''
+      if (!name || /^[A-Z]/.test(name)) continue
+      out.push(`${name} from ${spec}`)
+    }
+  }
+  return out
+}
+
 describe('RSC boundary', () => {
   const clientComponents = clientUiComponents()
 
@@ -132,6 +189,24 @@ describe('RSC boundary', () => {
     expect(clientComponents.has('Dialog')).toBe(true)
     // Pagination must NOT be one — it is rendered from server pages.
     expect(clientComponents.has('Pagination')).toBe(false)
+  })
+
+  test('no server module imports a plain value from a client module', () => {
+    const offenders: string[] = []
+    for (const file of walk(WEB_SRC)) {
+      if (isClientModule(file)) continue // client → client is fine
+      const rel = path.relative(WEB_SRC, file)
+      for (const binding of clientValueImports(readFileSync(file, 'utf8'), file)) {
+        offenders.push(`${rel} → ${binding}`)
+      }
+    }
+    expect(
+      offenders,
+      'These import a non-component value from a `use client` module into server code. ' +
+        'On the server that binding is a client reference, so calling it throws at request ' +
+        'time — the build and the tests will not tell you. Move the value to a plain module ' +
+        'and import it from both sides.'
+    ).toEqual([])
   })
 
   test('no server component passes a function to a shared client component', () => {

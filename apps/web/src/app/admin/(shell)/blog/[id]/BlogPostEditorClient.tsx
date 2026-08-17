@@ -21,9 +21,8 @@ import {
 import { Input, Textarea } from '@indus/ui'
 import AdminPageShell from '../../../../../components/admin/AdminPageShell'
 import BlogBodyEditor from '../../../../../components/admin/blog/BlogBodyEditor'
-import BlogPublishCard, {
-  displayStatus,
-} from '../../../../../components/admin/blog/BlogPublishCard'
+import BlogPublishCard from '../../../../../components/admin/blog/BlogPublishCard'
+import { displayStatus } from '../../../../../lib/blog-status'
 import type { BodyMedia } from '../../../../../components/admin/blog/ImageInsertDialog'
 import type { BlogBlockInput, BlogBlocks } from '@indus/domain'
 

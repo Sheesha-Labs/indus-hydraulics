@@ -4,7 +4,12 @@ import { db, type Prisma } from '@indus/db'
 import AdminPageShell from '../../../../components/admin/AdminPageShell'
 import { auth } from '../../../../lib/admin-auth'
 import { hasRole, ROLES } from '../../../../lib/rbac'
-import { displayStatus } from '../../../../components/admin/blog/BlogPublishCard'
+import {
+  STATUS_LABEL,
+  STATUS_STYLE,
+  displayStatus,
+  type PublishStatus,
+} from '../../../../lib/blog-status'
 import BlogRowActions from './BlogRowActions'
 
 export const metadata: Metadata = { title: 'Blog Editor — Indus Admin' }
@@ -21,30 +26,6 @@ type Props = {
  * claims to be published while the boolean says otherwise, so a row can never
  * show a green pill for a post the site is not serving.
  */
-/*
-  `BlogPostStatus` also carries `scheduled`. Nothing writes it and nothing
-  honours it: publishing sets `isPublished` true immediately, and no storefront
-  read filters on `publishedAt <= now`, so a future-dated post is live the
-  moment it is published. A chip that is permanently zero and a label that
-  cannot be reached are worse than an absent feature — they claim one.
-
-  Restore this the day scheduling is real: it needs a `publishedAt <= now`
-  filter on all seven read sites plus a job to flip the flag.
-*/
-type PostStatus = 'draft' | 'published' | 'archived'
-
-const STATUS_STYLE: Record<PostStatus, string> = {
-  draft: 'text-ih-muted bg-ih-surface-2',
-  published: 'text-[color:var(--color-ih-success)] bg-ih-success-soft',
-  archived: 'text-ih-muted-2 bg-ih-surface-3',
-}
-
-const STATUS_LABEL: Record<PostStatus, string> = {
-  draft: 'Draft',
-  published: 'Published',
-  archived: 'Archived',
-}
-
 function relative(date: Date | null): string {
   if (!date) return '—'
   const days = Math.floor((Date.now() - date.getTime()) / 86_400_000)
@@ -104,7 +85,7 @@ export default async function AdminBlogListPage({ params, searchParams }: Props)
     auth(),
   ])
 
-  const countFor = (s: PostStatus) =>
+  const countFor = (s: PublishStatus) =>
     statusCounts.find((c) => c.status === s)?._count._all ?? 0
   const liveTotal = statusCounts.reduce((n, c) => n + c._count._all, 0)
   const canDestroy = hasRole(session, ROLES.CATALOGUE_DELETE)
@@ -239,7 +220,7 @@ export default async function AdminBlogListPage({ params, searchParams }: Props)
             <div className="text-right">Actions</div>
           </div>
           {posts.map((post, i) => {
-            const status: PostStatus = displayStatus(post.status, post.isPublished)
+            const status: PublishStatus = displayStatus(post.status, post.isPublished)
             return (
               <div
                 key={post.id}
