@@ -16,12 +16,38 @@ export default async function NewProductPage({ params }: Props) {
   ])
 
   return (
-    <AdminPageShell title="New product" bodyClassName="px-[26px] py-6 pb-16 max-w-3xl">
+    <AdminPageShell
+      title="New product"
+      actions={
+        <>
+          {/*
+            `form="new-product-form"` is what keeps this working from the bar. A
+            submit button outside its <form> is inert — no compile error, no
+            lint failure, no runtime error, the click simply does nothing.
+          */}
+          <Link
+            href={`/admin/products`}
+            className="flex h-9 items-center rounded-md border border-ih-border bg-ih-surface px-4 text-[13px] font-medium transition-colors hover:border-ih-accent hover:text-ih-accent"
+          >
+            Cancel
+          </Link>
+          <button
+            type="submit"
+            form="new-product-form"
+            className="flex h-9 items-center rounded-md bg-ih-accent px-4 text-[13px] font-medium text-white transition-opacity hover:opacity-90"
+          >
+            Create product
+          </button>
+        </>
+      }
+      bodyClassName="px-[26px] py-6 pb-16 max-w-3xl"
+    >
 
         {/* createProduct returns Result<...>; the void-returning wrapper
             keeps `<form action>` happy. Errors propagate via `redirect()` /
             error.tsx — there's no client-state error UI on this thin page. */}
         <form
+          id="new-product-form"
           action={async (fd: FormData) => {
             'use server'
             const r = await createProduct(fd)
@@ -92,20 +118,6 @@ export default async function NewProductPage({ params }: Props) {
             </select>
           </Field>
 
-          <div className="flex items-center gap-3 pt-2">
-            <button
-              type="submit"
-              className="h-10 px-5 bg-ih-accent text-white text-[13px] font-medium hover:opacity-90"
-            >
-              Create product
-            </button>
-            <Link
-              href={`/admin/products`}
-              className="h-10 px-5 flex items-center text-[13px] text-ih-muted hover:text-ih-ink"
-            >
-              Cancel
-            </Link>
-          </div>
         </form>
     </AdminPageShell>
   )

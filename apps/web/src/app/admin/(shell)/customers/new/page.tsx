@@ -62,8 +62,31 @@ export default async function NewCustomerPage({ params }: Props) {
   return (
     <AdminPageShell
       title={'New Account'}
+      actions={
+        <>
+          {/*
+            form="new-account-form" is what keeps this working from the bar —
+            a submit button outside its <form> is inert, with no compile error,
+            no lint failure and no runtime error; the click just does nothing.
+            form-attribute-association.test.ts pins the pairing.
+          */}
+          <Link
+            href="/admin/customers"
+            className="flex h-9 items-center rounded-md border border-ih-border bg-ih-surface px-4 text-[13px] font-medium transition-colors hover:border-ih-accent hover:text-ih-accent"
+          >
+            ← Customers
+          </Link>
+          <button
+            type="submit"
+            form="new-account-form"
+            className="flex h-9 items-center rounded-md bg-ih-accent px-4 text-[13px] font-medium text-white transition-opacity hover:opacity-90"
+          >
+            Create Account
+          </button>
+        </>
+      }
     >
-      <form action={createAccount} className="space-y-5">
+      <form id="new-account-form" action={createAccount} className="space-y-5">
 
         <div className="grid grid-cols-2 gap-4">
           <div className="col-span-2">
@@ -153,14 +176,6 @@ export default async function NewCustomerPage({ params }: Props) {
           </div>
         </div>
 
-        <div className="pt-2 flex gap-3">
-          <button type="submit" className="h-10 px-6 bg-ih-accent text-white text-[13px] font-medium hover:opacity-90 transition-opacity">
-            Create Account
-          </button>
-          <Link href={`/admin/customers`} className="h-10 px-4 flex items-center border border-ih-border text-[13px] text-ih-ink-2 hover:bg-ih-surface-2 transition-colors">
-            Cancel
-          </Link>
-        </div>
       </form>
     
     </AdminPageShell>
