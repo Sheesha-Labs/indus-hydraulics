@@ -28,7 +28,17 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // page reads from db.industry; we include published rows here so
   // Google can finally crawl them (they were excluded before because
   // the hardcoded slug map could 404 on DB-only slugs).
-  const [products, categories, brands, blogPosts, cmsPages, industries, serviceCases] = await Promise.all([
+  const [
+    products,
+    categories,
+    brands,
+    blogPosts,
+    blogCategories,
+    blogAuthors,
+    cmsPages,
+    industries,
+    serviceCases,
+  ] = await Promise.all([
     db.product.findMany({
       where: { status: 'active' },
       select: {
@@ -69,6 +79,30 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         slug: true,
         publishedAt: true,
         seoUpdatedAt: true,
+        excludeFromSitemap: true,
+        robotsIndex: true,
+        sitemapPriority: true,
+        sitemapChangeFreq: true,
+      },
+    }),
+    db.blogCategory.findMany({
+      where: { isPublished: true },
+      select: {
+        slug: true,
+        seoUpdatedAt: true,
+        updatedAt: true,
+        excludeFromSitemap: true,
+        robotsIndex: true,
+        sitemapPriority: true,
+        sitemapChangeFreq: true,
+      },
+    }),
+    db.blogAuthor.findMany({
+      where: { isPublished: true },
+      select: {
+        slug: true,
+        seoUpdatedAt: true,
+        updatedAt: true,
         excludeFromSitemap: true,
         robotsIndex: true,
         sitemapPriority: true,
@@ -202,6 +236,31 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: c.sitemapPriority ? Number(c.sitemapPriority) : 0.7,
     }))
 
+  // Blog category and author hubs — emitted inline for the same reason as
+  // industries and service cases: buildSitemapEntries only knows the prefixes
+  // in URL_SEGMENTS, and these two are not there.
+  //
+  // Category hubs carry a higher default priority than individual articles:
+  // they are the pages that accumulate internal links from every article
+  // filed under them, so they are what a topic actually ranks on.
+  const blogCategoryEntries: MetadataRoute.Sitemap = blogCategories
+    .filter((c) => !c.excludeFromSitemap && c.robotsIndex)
+    .map((c) => ({
+      url: `${BASE_URL}/blog/c/${c.slug}`,
+      lastModified: c.seoUpdatedAt ?? c.updatedAt,
+      changeFrequency: c.sitemapChangeFreq ?? ('weekly' as const),
+      priority: c.sitemapPriority ? Number(c.sitemapPriority) : 0.6,
+    }))
+
+  const blogAuthorEntries: MetadataRoute.Sitemap = blogAuthors
+    .filter((a) => !a.excludeFromSitemap && a.robotsIndex)
+    .map((a) => ({
+      url: `${BASE_URL}/blog/author/${a.slug}`,
+      lastModified: a.seoUpdatedAt ?? a.updatedAt,
+      changeFrequency: a.sitemapChangeFreq ?? ('monthly' as const),
+      priority: a.sitemapPriority ? Number(a.sitemapPriority) : 0.4,
+    }))
+
   const staticEntries = buildStaticEntries(BASE_URL, [
     { path: '', priority: 1.0, changeFrequency: 'weekly' },
     // /c became a real category index in the v2 migration — it previously
@@ -251,6 +310,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...cmsEntries,
     ...industryEntries,
     ...serviceCaseEntries,
+    ...blogCategoryEntries,
+    ...blogAuthorEntries,
     ...replacementBrandEntries,
     ...replacementEntries,
   ]
