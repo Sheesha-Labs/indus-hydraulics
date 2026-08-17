@@ -10,11 +10,15 @@ import {
   htmlMentionsStoragePath,
   isAbsoluteMediaUrl,
   matchesStateFilter,
+  mediaFolderFor,
+  MEDIA_FOLDER_LABELS,
+  MEDIA_FOLDER_ORDER,
   MEDIA_USAGE_KIND_LABELS,
   MEDIA_USAGE_KIND_ORDER,
   normaliseMediaUrl,
   sortUsages,
   summariseUsage,
+  type MediaFolder,
   type MediaUsage,
   type MediaUsageKind,
 } from './media-usage'
@@ -367,6 +371,60 @@ describe('the non-URL fallback', () => {
     expect(htmlMentionsStoragePath('<p>x</p>', '   ')).toBe(false)
     expect(htmlMentionsStoragePath(null, 'a/b.pdf')).toBe(false)
     expect(htmlMentionsStoragePath('', 'a/b.pdf')).toBe(false)
+  })
+})
+
+describe('mediaFolderFor', () => {
+  test('a file nothing references lands in Unused', () => {
+    expect(mediaFolderFor({ mediaKind: 'image', usages: [] })).toBe('unused')
+  })
+
+  test('files by the most prominent usage, not the first one found', () => {
+    // A product photo that also appears in a blog post belongs under Products —
+    // that is where someone looking for it would go first.
+    const usages = [usage({ kind: 'blog_post' }), usage({ kind: 'product' })]
+    expect(mediaFolderFor({ mediaKind: 'image', usages })).toBe('products')
+    expect(mediaFolderFor({ mediaKind: 'image', usages: [...usages].reverse() })).toBe('products')
+  })
+
+  test('a non-image on a product is a document, not a product', () => {
+    // Otherwise 41 PDFs bury 341 photos in the same folder.
+    expect(mediaFolderFor({ mediaKind: 'document', usages: [usage({ kind: 'product' })] })).toBe(
+      'documents'
+    )
+    expect(mediaFolderFor({ mediaKind: 'cad', usages: [usage({ kind: 'product' })] })).toBe(
+      'documents'
+    )
+    expect(mediaFolderFor({ mediaKind: 'image', usages: [usage({ kind: 'product' })] })).toBe(
+      'products'
+    )
+  })
+
+  test('the three blog kinds share one folder', () => {
+    for (const kind of ['blog_post', 'blog_category', 'blog_author'] as const) {
+      expect(mediaFolderFor({ mediaKind: 'image', usages: [usage({ kind })] }), kind).toBe('blog')
+    }
+  })
+
+  test('RFQ attachments get their own folder; quotes and imports are documents', () => {
+    expect(mediaFolderFor({ mediaKind: 'document', usages: [usage({ kind: 'rfq' })] })).toBe('rfq')
+    expect(mediaFolderFor({ mediaKind: 'document', usages: [usage({ kind: 'quote' })] })).toBe(
+      'documents'
+    )
+    expect(mediaFolderFor({ mediaKind: 'document', usages: [usage({ kind: 'import' })] })).toBe(
+      'documents'
+    )
+  })
+
+  test('every usage kind maps to a folder, and every folder has a label', () => {
+    for (const kind of MEDIA_USAGE_KIND_ORDER) {
+      const folder = mediaFolderFor({ mediaKind: 'image', usages: [usage({ kind })] })
+      expect(MEDIA_FOLDER_ORDER, `${kind} mapped to an unlisted folder`).toContain(folder)
+      expect(MEDIA_FOLDER_LABELS[folder], kind).toBeTruthy()
+    }
+    expect([...MEDIA_FOLDER_ORDER].sort()).toEqual(
+      (Object.keys(MEDIA_FOLDER_LABELS) as MediaFolder[]).sort()
+    )
   })
 })
 

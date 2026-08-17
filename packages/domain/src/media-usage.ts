@@ -284,6 +284,110 @@ export function sortUsages(usages: readonly MediaUsage[]): MediaUsage[] {
   })
 }
 
+// ── Folders ─────────────────────────────────────────────────────────────────
+
+/**
+ * The library's left rail. Derived from what actually references a file, never
+ * stored — so it cannot drift out of date and there is nothing to file.
+ *
+ * Bazar stores an enum chosen at upload instead, and its uploader always writes
+ * `listings` regardless of the folder being viewed, so its rail disagrees with
+ * reality the moment anyone uploads from anywhere else.
+ */
+export type MediaFolder =
+  | 'products'
+  | 'categories'
+  | 'brands'
+  | 'industries'
+  | 'services'
+  | 'blog'
+  | 'pages'
+  | 'navigation'
+  | 'homepage'
+  | 'site'
+  | 'documents'
+  | 'rfq'
+  | 'unused'
+
+export const MEDIA_FOLDER_ORDER: readonly MediaFolder[] = [
+  'products',
+  'categories',
+  'brands',
+  'industries',
+  'services',
+  'blog',
+  'pages',
+  'navigation',
+  'homepage',
+  'site',
+  'documents',
+  'rfq',
+  'unused',
+] as const
+
+export const MEDIA_FOLDER_LABELS: Record<MediaFolder, string> = {
+  products: 'Products',
+  categories: 'Categories',
+  brands: 'Brands',
+  industries: 'Industries',
+  services: 'Service cases',
+  blog: 'Blog',
+  pages: 'Pages',
+  navigation: 'Navigation',
+  homepage: 'Homepage',
+  site: 'Site settings',
+  documents: 'Documents',
+  rfq: 'RFQ attachments',
+  unused: 'Unused',
+}
+
+const KIND_TO_FOLDER: Record<MediaUsageKind, MediaFolder> = {
+  product: 'products',
+  category: 'categories',
+  brand: 'brands',
+  industry: 'industries',
+  service_case: 'services',
+  blog_post: 'blog',
+  blog_category: 'blog',
+  blog_author: 'blog',
+  cms_page: 'pages',
+  navigation: 'navigation',
+  homepage: 'homepage',
+  site_settings: 'site',
+  rfq: 'rfq',
+  quote: 'documents',
+  import: 'documents',
+}
+
+/**
+ * Which folder a file appears under.
+ *
+ * A file can legitimately be used in several places; the rail has to pick one,
+ * and it picks the most prominent — first in `MEDIA_USAGE_KIND_ORDER`. That
+ * keeps a product photo that also appears in a blog post filed under Products,
+ * which is where someone looking for it would go first.
+ *
+ * The one exception is a non-image on a product: a datasheet or STEP file is a
+ * document, and filing it under Products would bury 341 photos under 41 PDFs.
+ * `mediaKind` is the row's own `MediaKind`, not the usage.
+ */
+export function mediaFolderFor(opts: {
+  mediaKind: 'image' | 'document' | 'cad'
+  usages: readonly MediaUsage[]
+}): MediaFolder {
+  if (opts.usages.length === 0) return 'unused'
+
+  const rank = new Map(MEDIA_USAGE_KIND_ORDER.map((k, i) => [k, i]))
+  const primary = [...opts.usages].sort(
+    (a, b) =>
+      (rank.get(a.kind) ?? Number.MAX_SAFE_INTEGER) - (rank.get(b.kind) ?? Number.MAX_SAFE_INTEGER)
+  )[0]
+  if (!primary) return 'unused'
+
+  if (primary.kind === 'product' && opts.mediaKind !== 'image') return 'documents'
+  return KIND_TO_FOLDER[primary.kind]
+}
+
 // ── Finding ids inside structured content ───────────────────────────────────
 
 /**
