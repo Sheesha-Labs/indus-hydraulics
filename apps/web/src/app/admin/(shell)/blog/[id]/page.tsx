@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { db } from '@indus/db'
 import { parseBlogBlocks } from '@indus/domain'
+import { sanitizeLegacyBodyHtml } from '../../../../../lib/blog-prose-html'
 import BlogPostEditorClient from './BlogPostEditorClient'
 
 export const metadata: Metadata = { title: 'Edit Post — Indus Admin' }
@@ -104,6 +105,21 @@ export default async function BlogPostEditorPage({ params }: Props) {
               // dropped once, server-side, where it can be logged — the editor
               // then only ever holds blocks the storefront would render.
               bodyBlocks: parseBlogBlocks(post.bodyBlocks).blocks,
+              /*
+                A post written before the block editor holds its article in
+                `body` as HTML and has no blocks at all. Opening one used to
+                show an empty editor — and saving that would have written the
+                empty body back over the only copy of the text.
+
+                Handing the legacy HTML in as a `prose` block instead means the
+                article is there to read and edit, and the first save migrates
+                it across — headings included, which is why this uses the
+                heading-tolerant sanitiser rather than the prose one.
+              */
+              legacyProseHtml:
+                parseBlogBlocks(post.bodyBlocks).blocks.length === 0 && post.body.trim()
+                  ? sanitizeLegacyBodyHtml(post.body)
+                  : null,
               publicUrl: `${storefrontUrl}/blog/${post.slug}`,
               heroImageUrl: resolveMediaUrl(post.hero?.storagePath ?? null),
               heroId: post.heroId,

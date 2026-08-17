@@ -4,6 +4,7 @@ import { db, type Prisma } from '@indus/db'
 import AdminPageShell from '../../../../components/admin/AdminPageShell'
 import { auth } from '../../../../lib/admin-auth'
 import { hasRole, ROLES } from '../../../../lib/rbac'
+import { displayStatus } from '../../../../components/admin/blog/BlogPublishCard'
 import BlogRowActions from './BlogRowActions'
 
 export const metadata: Metadata = { title: 'Blog Editor — Indus Admin' }
@@ -20,18 +21,26 @@ type Props = {
  * claims to be published while the boolean says otherwise, so a row can never
  * show a green pill for a post the site is not serving.
  */
-type PostStatus = 'draft' | 'scheduled' | 'published' | 'archived'
+/*
+  `BlogPostStatus` also carries `scheduled`. Nothing writes it and nothing
+  honours it: publishing sets `isPublished` true immediately, and no storefront
+  read filters on `publishedAt <= now`, so a future-dated post is live the
+  moment it is published. A chip that is permanently zero and a label that
+  cannot be reached are worse than an absent feature — they claim one.
+
+  Restore this the day scheduling is real: it needs a `publishedAt <= now`
+  filter on all seven read sites plus a job to flip the flag.
+*/
+type PostStatus = 'draft' | 'published' | 'archived'
 
 const STATUS_STYLE: Record<PostStatus, string> = {
   draft: 'text-ih-muted bg-ih-surface-2',
-  scheduled: 'text-[color:var(--color-ih-warning)] bg-ih-warning-soft',
   published: 'text-[color:var(--color-ih-success)] bg-ih-success-soft',
   archived: 'text-ih-muted-2 bg-ih-surface-3',
 }
 
 const STATUS_LABEL: Record<PostStatus, string> = {
   draft: 'Draft',
-  scheduled: 'Scheduled',
   published: 'Published',
   archived: 'Archived',
 }
@@ -52,9 +61,7 @@ export default async function AdminBlogListPage({ params, searchParams }: Props)
   await params
   const sp = await searchParams
   const trashed = sp.view === 'trash'
-  const statusFilter = (
-    ['draft', 'scheduled', 'published', 'archived'] as const
-  ).find((s) => s === sp.status)
+  const statusFilter = (['draft', 'published', 'archived'] as const).find((s) => s === sp.status)
   const query = (sp.q ?? '').trim()
 
   const where: Prisma.BlogPostWhereInput = {
@@ -189,7 +196,7 @@ export default async function AdminBlogListPage({ params, searchParams }: Props)
       {!trashed && (
         <div className="mb-5 flex flex-wrap items-center gap-1.5">
           <StatusChip href={href({ status: undefined })} active={!statusFilter} label="All" count={liveTotal} />
-          {(['published', 'draft', 'scheduled', 'archived'] as const).map((s) => (
+          {(['published', 'draft', 'archived'] as const).map((s) => (
             <StatusChip
               key={s}
               href={href({ status: s })}
@@ -232,8 +239,7 @@ export default async function AdminBlogListPage({ params, searchParams }: Props)
             <div className="text-right">Actions</div>
           </div>
           {posts.map((post, i) => {
-            const status: PostStatus =
-              post.status === 'published' && !post.isPublished ? 'draft' : post.status
+            const status: PostStatus = displayStatus(post.status, post.isPublished)
             return (
               <div
                 key={post.id}

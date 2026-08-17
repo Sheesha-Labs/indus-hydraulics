@@ -6,18 +6,31 @@ import { useRouter } from 'next/navigation'
 import { Archive, ArchiveRestore, CheckCircle2, ExternalLink, RotateCcw } from 'lucide-react'
 import type { Result } from '../../../lib/result'
 
-export type PublishStatus = 'draft' | 'scheduled' | 'published' | 'archived'
+/** No `scheduled` — see the note in the blog list page. */
+export type PublishStatus = 'draft' | 'published' | 'archived'
+
+/**
+ * The status a row should DISPLAY.
+ *
+ * `BlogPostStatus` in the database still has `scheduled`, and `published` can
+ * disagree with `isPublished` on a row written before the two were kept in
+ * lockstep. Both resolve to Draft: whatever the enum says, a post the site is
+ * not serving is a draft to the person looking at the list.
+ */
+export function displayStatus(status: string, isPublished: boolean): PublishStatus {
+  if (status === 'archived') return 'archived'
+  if (status === 'published' && isPublished) return 'published'
+  return 'draft'
+}
 
 const STATUS_LABEL: Record<PublishStatus, string> = {
   draft: 'Draft',
-  scheduled: 'Scheduled',
   published: 'Published',
   archived: 'Archived',
 }
 
 const STATUS_STYLE: Record<PublishStatus, string> = {
   draft: 'text-ih-muted bg-ih-surface-2',
-  scheduled: 'text-[color:var(--color-ih-warning)] bg-ih-warning-soft',
   published: 'text-[color:var(--color-ih-success)] bg-ih-success-soft',
   archived: 'text-ih-muted-2 bg-ih-surface-3',
 }

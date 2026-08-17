@@ -12,7 +12,12 @@ import {
   projectSeoFields,
   resolvePublishedAt,
 } from '@indus/domain'
-import { blocksToPlainText, readBodyBlocks } from '../../../../../lib/blog-body-save'
+import {
+  blocksToPlainText,
+  deriveExcerpt,
+  readBodyBlocks,
+  resolveBodyWrite,
+} from '../../../../../lib/blog-body-save'
 import { auth } from '../../../../../lib/admin-auth'
 import { ROLES, requireRole } from '../../../../../lib/rbac'
 import { fail, failFromError, ok, type Result } from '../../../../../lib/result'
@@ -31,7 +36,6 @@ export async function savePost(formData: FormData) {
   const id = formData.get('id') as string
   const title = formData.get('title') as string
   const slug = formData.get('slug') as string
-  const excerpt = (formData.get('excerpt') as string | null) || undefined
   const seoTitle = (formData.get('seoTitle') as string | null) || undefined
   const seoDescription = (formData.get('seoDescription') as string | null) || undefined
   const tagsRaw = (formData.get('tags') as string | null) || ''
@@ -67,10 +71,10 @@ export async function savePost(formData: FormData) {
   // plain-text shadow of the article for full-text search and for anything
   // still reading the legacy column.
   const blocks = readBodyBlocks(formData.get('bodyBlocks'))
-  const bodyText = blocksToPlainText(blocks)
+  const excerpt = deriveExcerpt(formData.get('excerpt') as string | null, blocks) ?? undefined
 
-  // Explicit publish date, from a datetime-local input. Enables both
-  // back-dating and scheduling.
+  // Explicit publish date, from a datetime-local input. Back-dating only —
+  // a future date does NOT hold the post back, because nothing filters on it.
   const publishedAtRaw = (formData.get('publishedAt') as string | null) ?? ''
   const explicitPublishedAt = parseLocalDateTime(publishedAtRaw)
 
@@ -78,7 +82,6 @@ export async function savePost(formData: FormData) {
     title,
     slug,
     excerpt,
-    body: bodyText,
     seoTitle,
     seoDescription,
     tags,
@@ -86,7 +89,6 @@ export async function savePost(formData: FormData) {
     blogAuthorId,
     categoryId,
     bodyBlocks: blocks,
-    readingMinutes: blocks.length > 0 ? estimateReadingMinutes(blocks) : null,
     isPublished: publish,
     // `status` supersedes `isPublished` and the two are kept in lockstep until
     // every read site has moved across. Writing only the boolean is what left
@@ -99,6 +101,8 @@ export async function savePost(formData: FormData) {
     const post = await db.blogPost.create({
       data: {
         ...base,
+        body: blocksToPlainText(blocks),
+        readingMinutes: blocks.length > 0 ? estimateReadingMinutes(blocks) : null,
         // Provenance, not byline: who created the row.
         authorStaffId: session.user.id,
         publishedAt: explicitPublishedAt ?? (publish ? new Date() : null),
@@ -115,7 +119,14 @@ export async function savePost(formData: FormData) {
   // loses its original date and its search history along with it.
   const existing = await db.blogPost.findUnique({
     where: { id },
-    select: { publishedAt: true },
+    select: { publishedAt: true, body: true, readingMinutes: true },
+  })
+
+  const { body, readingMinutes, preservedLegacy } = resolveBodyWrite({
+    blocks,
+    existingBody: existing?.body ?? null,
+    existingReadingMinutes: existing?.readingMinutes ?? null,
+    estimateMinutes: estimateReadingMinutes,
   })
 
   const publishedAt = resolvePublishedAt({
@@ -129,6 +140,13 @@ export async function savePost(formData: FormData) {
     where: { id },
     data: {
       ...base,
+      body,
+      readingMinutes,
+      // Same reasoning as the body: a blank excerpt derived from no blocks
+      // would wipe one that a legacy row already carries.
+      // Same reasoning as the body: a blank excerpt derived from no blocks
+      // would wipe one a legacy row already carries.
+      ...(preservedLegacy && !excerpt ? {} : { excerpt }),
       publishedAt,
     },
   })
