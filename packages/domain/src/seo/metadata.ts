@@ -62,7 +62,7 @@ export type BuiltMetadata = {
 }
 
 export function buildMetadata(input: BuildMetadataInput): BuiltMetadata {
-  const rawTitle = (input.title ?? '').trim()
+  const rawTitle = stripTrailingSiteName((input.title ?? '').trim(), input.siteName)
   const titleApplied = applyTitleTemplate(rawTitle, input.titleTemplate ?? null)
   const description =
     (input.description ?? '').trim() || (input.defaultDescription ?? '').trim() || ''
@@ -105,6 +105,32 @@ export function buildMetadata(input: BuildMetadataInput): BuiltMetadata {
  * we fall back to the plain title. This stops "%s — Indus Hydraulics" from
  * inflating already-long titles past 60 chars.
  */
+/**
+ * Drop a site-name suffix the stored title already carries.
+ *
+ * The storefront layout sets `template: '%s | Indus Hydraulics'`, so Next
+ * appends the site name to every page title. 1,163 catalogue rows were seeded
+ * with the suffix baked into `seoTitle` as well, and every one of those pages
+ * rendered "… | Indus Hydraulics | Indus Hydraulics".
+ *
+ * The stored data is corrected separately; this keeps the rendered title right
+ * even if a bad value is entered again later. Only an exact trailing match is
+ * removed, and never the whole title — a page legitimately titled just
+ * "Indus Hydraulics" keeps its name.
+ */
+export function stripTrailingSiteName(title: string, siteName?: string): string {
+  if (!title || !siteName) return title
+  const escaped = siteName.replace(/[.*+?^${}()|[\]\\]/g, '\\$&').replace(/\s+/g, '\\s+')
+  const suffix = new RegExp(`\\s*\\|\\s*${escaped}\\s*$`, 'i')
+  let out = title.trim()
+  while (suffix.test(out)) {
+    const next = out.replace(suffix, '').trim()
+    if (!next) break
+    out = next
+  }
+  return out
+}
+
 export function applyTitleTemplate(title: string, template: string | null): string {
   if (!title) return template?.replace('%s', '').trim() || ''
   if (!template || !template.includes('%s')) return title

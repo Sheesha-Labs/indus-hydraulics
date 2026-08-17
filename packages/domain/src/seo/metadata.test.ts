@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { applyTitleTemplate, buildMetadata } from './metadata'
+import { applyTitleTemplate, buildMetadata, stripTrailingSiteName } from './metadata'
 
 describe('applyTitleTemplate', () => {
   it('returns title unchanged when template is empty', () => {
@@ -72,5 +72,52 @@ describe('buildMetadata', () => {
     })
     expect(md.openGraph.images).toEqual([{ url: 'https://cdn/foo.jpg' }])
     expect(md.twitter.images).toEqual(['https://cdn/foo.jpg'])
+  })
+
+  it('does not emit the site name twice when the stored title carries it', () => {
+    const md = buildMetadata({
+      title: 'Bauer Type Couplings | Indus Hydraulics',
+      description: 'Bar',
+      pageUrl: 'https://example.com/c/bauer',
+      siteName: 'Indus Hydraulics',
+    })
+    // The storefront layout template appends the site name, so a copy stored
+    // on the entity must be dropped or the page renders it twice.
+    expect(md.title).toBe('Bauer Type Couplings')
+    expect(md.openGraph.title).toBe('Bauer Type Couplings')
+  })
+})
+
+describe('stripTrailingSiteName', () => {
+  it('drops a suffix the stored title already carries', () => {
+    expect(stripTrailingSiteName('Female Thread Cross | Indus Hydraulics', 'Indus Hydraulics')).toBe(
+      'Female Thread Cross',
+    )
+  })
+
+  it('drops it however many times it was appended', () => {
+    expect(
+      stripTrailingSiteName('Foo | Indus Hydraulics | Indus Hydraulics', 'Indus Hydraulics'),
+    ).toBe('Foo')
+  })
+
+  it('is case-insensitive and tolerates spacing', () => {
+    expect(stripTrailingSiteName('Foo  |  indus hydraulics', 'Indus Hydraulics')).toBe('Foo')
+  })
+
+  it('leaves a title that merely mentions the site name mid-string', () => {
+    const t = 'Indus Hydraulics Ltd Catalogue'
+    expect(stripTrailingSiteName(t, 'Indus Hydraulics')).toBe(t)
+  })
+
+  it('never strips the title down to nothing', () => {
+    expect(stripTrailingSiteName('Indus Hydraulics', 'Indus Hydraulics')).toBe('Indus Hydraulics')
+    expect(stripTrailingSiteName('| Indus Hydraulics', 'Indus Hydraulics')).toBe(
+      '| Indus Hydraulics',
+    )
+  })
+
+  it('no-ops without a site name', () => {
+    expect(stripTrailingSiteName('Foo | Indus Hydraulics')).toBe('Foo | Indus Hydraulics')
   })
 })
