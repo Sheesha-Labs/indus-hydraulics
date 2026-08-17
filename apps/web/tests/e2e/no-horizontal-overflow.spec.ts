@@ -40,6 +40,11 @@ const ROUTES = [
   '/blog/identify-any-hydraulic-fitting',
   // Safety article — the SOP table is the widest block in the set.
   '/blog/hydraulic-fluid-injection-injury',
+  '/tools',
+  '/tools/thread-identifier',
+  '/tools/pressure-converter',
+  // The dash chart is a four-column table — the most likely tool page to bleed.
+  '/tools/dash-size-chart',
   '/about',
   '/contact',
   '/quote',
