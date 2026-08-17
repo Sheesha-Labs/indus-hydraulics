@@ -47,6 +47,10 @@ import ARTICLE_12 from './articles/steam-hose-safety'
 import ARTICLE_13 from './articles/food-grade-hose-compliance'
 import ARTICLE_14 from './articles/forklift-hydraulic-hose-replacement'
 import ARTICLE_15 from './articles/tipper-and-transit-mixer-hose'
+import ARTICLE_16 from './articles/skiving-and-fitting-selection'
+import ARTICLE_17 from './articles/hose-whip-restraint-and-burst-protection'
+import ARTICLE_18 from './articles/hose-register-and-replacement-programme'
+import ARTICLE_19 from './articles/water-suction-and-dewatering-hose'
 
 const ARTICLES: BlogArticleSeed[] = [
   ARTICLE_01,
@@ -64,6 +68,10 @@ const ARTICLES: BlogArticleSeed[] = [
   ARTICLE_13,
   ARTICLE_14,
   ARTICLE_15,
+  ARTICLE_16,
+  ARTICLE_17,
+  ARTICLE_18,
+  ARTICLE_19,
 ]
 
 const DRY_RUN = process.argv.includes('--dry-run')
