@@ -204,6 +204,13 @@ enum ChangeFreq {
   never
 }
 
+enum BlogPostStatus {
+  draft
+  scheduled
+  published
+  archived
+}
+
 enum SeoEntityType {
   product
   category
@@ -211,6 +218,8 @@ enum SeoEntityType {
   industry
   cms_page
   blog_post
+  blog_category
+  blog_author
 }
 
 enum AiPromptKind {
@@ -396,14 +405,16 @@ model StaffUser {
   failedSignInCount Int       @default(0)
   lockedUntil       DateTime?
 
-  assignedAccounts Account[]
-  assignedRfqs     Rfq[]          @relation("AssignedEngineer")
-  repRfqs          Rfq[]          @relation("AssignedRep")
-  mediaUploads     Media[]
-  importJobs       ImportJob[]
-  notifications    Notification[]
-  blogPosts        BlogPost[]
-  sentInvitations  StaffInvitation[] @relation("StaffInvitationInvitedBy")
+  assignedAccounts  Account[]
+  assignedRfqs      Rfq[]             @relation("AssignedEngineer")
+  repRfqs           Rfq[]             @relation("AssignedRep")
+  mediaUploads      Media[]
+  importJobs        ImportJob[]
+  notifications     Notification[]
+  blogPosts         BlogPost[]
+  reviewedBlogPosts BlogPost[]        @relation("BlogPostReviewer")
+  blogAuthorProfile BlogAuthor[]      @relation("BlogAuthorStaffUser")
+  sentInvitations   StaffInvitation[] @relation("StaffInvitationInvitedBy")
 
   @@map("staff_users")
 }
@@ -466,6 +477,7 @@ model Category {
 
   products     Product[]
   navMenuItems NavMenuItem[]
+  blogPosts    BlogPostCategory[]
 
   @@map("categories")
 }
@@ -567,12 +579,12 @@ model Industry {
   // array of plain objects whose shape rarely changes — keeps the
   // admin editor surface manageable while preserving the rich page
   // template. Strongly-typed at the read site via `lib/industry-content.ts`.
-  chips                 Json @default("[]") // string[]
-  stats                 Json @default("[]") // { value, label }[]
-  deliveryAreas         Json @default("[]") // { category, title, description, skuCount }[]
+  chips                 Json  @default("[]") // string[]
+  stats                 Json  @default("[]") // { value, label }[]
+  deliveryAreas         Json  @default("[]") // { category, title, description, skuCount }[]
   supportBlock          Json? // { eyebrow, headline, description, bullets, cta }
-  featuredProductSkus   Json @default("[]") // string[]
-  featuredCategorySlugs Json @default("[]") // string[]
+  featuredProductSkus   Json  @default("[]") // string[]
+  featuredCategorySlugs Json  @default("[]") // string[]
 
   // SEO OS — inline overrides
   canonicalUrl       String?
@@ -623,23 +635,23 @@ model IndustryCaseStudy {
 // ─────────────────────────────────────────────────────────────────────────────
 
 model ServiceCase {
-  id          String              @id @default(uuid())
-  slug        String              @unique
+  id          String            @id @default(uuid())
+  slug        String            @unique
   caseNumber  String // Display ordinal, e.g. "07" — not unique
-  status      ServiceCaseStatus   @default(draft)
+  status      ServiceCaseStatus @default(draft)
   publishedAt DateTime?
-  isFeatured  Boolean             @default(false) // Case of the Week — exactly one expected published
+  isFeatured  Boolean           @default(false) // Case of the Week — exactly one expected published
 
   // Hero
-  category       ServiceCaseCategory // For chip-filter & related-cases lookup
-  topicLabel     String // Display pill text, e.g. "Cylinders · Hoses · Oilfield"
-  region         String? // "🇦🇪 UAE · Jebel Ali" — hero region pill (with flag)
-  caseDateLabel  String? // "MAR 2026 · BAY 2 / ON-SITE" — hero meta line
-  title          String
-  titleAccent    String? // Optional italic-accent phrase highlighted within the title
-  deck           String // Serif sub-headline paragraph
-  heroImageId    String?
-  heroImage      Media?  @relation("ServiceCaseHero", fields: [heroImageId], references: [id], onDelete: SetNull)
+  category         ServiceCaseCategory // For chip-filter & related-cases lookup
+  topicLabel       String // Display pill text, e.g. "Cylinders · Hoses · Oilfield"
+  region           String? // "🇦🇪 UAE · Jebel Ali" — hero region pill (with flag)
+  caseDateLabel    String? // "MAR 2026 · BAY 2 / ON-SITE" — hero meta line
+  title            String
+  titleAccent      String? // Optional italic-accent phrase highlighted within the title
+  deck             String // Serif sub-headline paragraph
+  heroImageId      String?
+  heroImage        Media?              @relation("ServiceCaseHero", fields: [heroImageId], references: [id], onDelete: SetNull)
   heroImageCaption String? // Caption under hero image
   heroImageCredit  String? // "PHOTO · K. AL MARZOUQI · 2026-03-04"
 
@@ -658,10 +670,10 @@ model ServiceCase {
   pullQuoteAuthor   String?
   pullQuoteRole     String?
   pullQuoteLocation String?
-  specsAtGlance     Json     @default("[]") // Array<{ label, value }>
-  galleryImageIds   Json     @default("[]") // string[] — Media ids; rendered as 6-up thumb grid
-  galleryTotalCount Int      @default(0) // For "View N photos →" link
-  downloads         Json     @default("[]") // Array<{ label, url, size, format }>
+  specsAtGlance     Json    @default("[]") // Array<{ label, value }>
+  galleryImageIds   Json    @default("[]") // string[] — Media ids; rendered as 6-up thumb grid
+  galleryTotalCount Int     @default(0) // For "View N photos →" link
+  downloads         Json    @default("[]") // Array<{ label, url, size, format }>
 
   // Footer of article
   caseFileMeta String? // "Case file · INTAKE-... · WO-... · Published... · Updated..."
@@ -772,6 +784,7 @@ model Product {
   savedListItems  SavedListItem[]
   orderLines      OrderLine[]
   navMenuItems    NavMenuItem[]
+  blogPosts       BlogPostProduct[]
 
   @@index([categoryId])
   @@index([brandId])
@@ -918,23 +931,25 @@ model Media {
   uploadedBy       StaffUser? @relation(fields: [uploadedById], references: [id])
   createdAt        DateTime   @default(now())
 
-  productImages      ProductImage[]
-  productDocuments   ProductDocument[]
-  categoryImages     Category[]
-  brandLogos         Brand[]           @relation("BrandLogo")
-  brandHeroes        Brand[]           @relation("BrandHero")
-  brandCaseStudyImages BrandCaseStudy[] @relation("BrandCaseStudyImage")
-  industryHeroes     Industry[]
+  productImages           ProductImage[]
+  productDocuments        ProductDocument[]
+  categoryImages          Category[]
+  brandLogos              Brand[]             @relation("BrandLogo")
+  brandHeroes             Brand[]             @relation("BrandHero")
+  brandCaseStudyImages    BrandCaseStudy[]    @relation("BrandCaseStudyImage")
+  industryHeroes          Industry[]
   industryCaseStudyImages IndustryCaseStudy[] @relation("IndustryCaseStudyImage")
-  rfqAttachments     RfqAttachment[]
-  quotePdfs          Quote[]
-  blogHeroes         BlogPost[]
-  importJobSources   ImportJob[]
-  navMenuItemPromos  NavMenuItem[]     @relation("NavMenuItemPromo")
-  storeSettingsLogos StoreSettings[]   @relation("StoreSettingsLogo")
-  homepageHeroSlides HomepageHeroSlide[]
-  serviceCaseHeroes  ServiceCase[]     @relation("ServiceCaseHero")
-  serviceCaseOgImages ServiceCase[]    @relation("ServiceCaseOg")
+  rfqAttachments          RfqAttachment[]
+  quotePdfs               Quote[]
+  blogHeroes              BlogPost[]
+  blogCategoryImages      BlogCategory[]      @relation("BlogCategoryImage")
+  blogAuthorAvatars       BlogAuthor[]        @relation("BlogAuthorAvatar")
+  importJobSources        ImportJob[]
+  navMenuItemPromos       NavMenuItem[]       @relation("NavMenuItemPromo")
+  storeSettingsLogos      StoreSettings[]     @relation("StoreSettingsLogo")
+  homepageHeroSlides      HomepageHeroSlide[]
+  serviceCaseHeroes       ServiceCase[]       @relation("ServiceCaseHero")
+  serviceCaseOgImages     ServiceCase[]       @relation("ServiceCaseOg")
 
   @@map("media")
 }
@@ -1238,9 +1253,75 @@ model BlogPost {
   seoTitle       String?
   seoDescription String?
   publishedAt    DateTime?
-  isPublished    Boolean    @default(false)
+
+  // `isPublished` is retained rather than replaced. `status` supersedes it and
+  // is backfilled to match, but both stay in sync until every read site has
+  // moved — dropping the boolean in the same change would break the storefront
+  // and the admin list on deploy.
+  isPublished Boolean        @default(false)
+  status      BlogPostStatus @default(draft)
+
+  /// Typed block array validated by BlogBlocksSchema in @indus/domain.
+  /// `body` remains the fallback while posts migrate across.
+  bodyBlocks     Json     @default("[]")
+  readingMinutes Int?
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+
+  categoryId String?
+  category   BlogCategory? @relation(fields: [categoryId], references: [id])
+
+  /// Public byline. Falls back to `author` (the staff user who saved the post)
+  /// until every post has one, so nothing renders bylineless in between.
+  blogAuthorId String?
+  blogAuthor   BlogAuthor? @relation(fields: [blogAuthorId], references: [id])
+
+  /// Standards content carries pressure ratings and clause references — a
+  /// named reviewer makes "who checked this" answerable rather than assumed.
+  reviewedById String?
+  reviewedBy   StaffUser? @relation("BlogPostReviewer", fields: [reviewedById], references: [id])
+  reviewedAt   DateTime?
+
+  products         BlogPostProduct[]
+  linkedCategories BlogPostCategory[]
 
   // SEO OS — inline overrides
+  canonicalUrl       String?
+  robotsIndex        Boolean                  @default(true)
+  robotsFollow       Boolean                  @default(true)
+  ogImageMediaId     String?
+  focusKeyword       String?
+  sitemapPriority    Decimal?                 @db.Decimal(2, 1)
+  sitemapChangeFreq  ChangeFreq?
+  excludeFromSitemap Boolean                  @default(false)
+  jsonLdOverride     Json?
+  seoUpdatedAt       DateTime?
+  seoUpdatedById     String?
+  // FTS column managed by raw SQL migration (Unsupported: tsvector).
+  // STORED, weighted A→B→C across title / excerpt / body.
+  searchTsv          Unsupported("tsvector")?
+
+  @@map("blog_posts")
+}
+
+/// Blog taxonomy. Replaces `tags[0]`-as-category: a category with its own row
+/// gets its own URL, and the hub page at /blog/c/[slug] is what accumulates
+/// internal links and ranks for a topic. A JSON string cannot do that.
+model BlogCategory {
+  id          String  @id @default(uuid())
+  slug        String  @unique
+  name        String
+  description String?
+  /// Intro copy rendered above the article list on the hub page.
+  heroCopy    String?
+  position    Int     @default(0)
+  isPublished Boolean @default(true)
+  imageId     String?
+  image       Media?  @relation("BlogCategoryImage", fields: [imageId], references: [id])
+
+  // SEO OS — inline overrides
+  seoTitle           String?
+  seoDescription     String?
   canonicalUrl       String?
   robotsIndex        Boolean     @default(true)
   robotsFollow       Boolean     @default(true)
@@ -1252,11 +1333,91 @@ model BlogPost {
   jsonLdOverride     Json?
   seoUpdatedAt       DateTime?
   seoUpdatedById     String?
-  // FTS column managed by raw SQL migration (Unsupported: tsvector).
-  // STORED, weighted A→B→C across title / excerpt / body.
-  searchTsv          Unsupported("tsvector")?
 
-  @@map("blog_posts")
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  posts BlogPost[]
+
+  @@index([isPublished, position])
+  @@map("blog_categories")
+}
+
+/// Public author profile. Deliberately not extra columns on StaffUser: an auth
+/// table should not carry marketing copy, and a byline is not a login — an
+/// outside contributor needs a profile without an admin account, and a
+/// warehouse user should not become a public page merely by existing.
+model BlogAuthor {
+  id              String     @id @default(uuid())
+  slug            String     @unique
+  name            String
+  jobTitle        String?
+  bio             String?
+  /// Free text, e.g. "BEng Mechanical · IWCF Level 4". Feeds Person JSON-LD
+  /// `hasCredential`, which is much of the reason author pages are worth building.
+  credentials     String?
+  yearsExperience Int?
+  avatarMediaId   String?
+  avatar          Media?     @relation("BlogAuthorAvatar", fields: [avatarMediaId], references: [id])
+  linkedinUrl     String?
+  /// Set when the author is also a staff user. Optional in both directions.
+  staffUserId     String?
+  staffUser       StaffUser? @relation("BlogAuthorStaffUser", fields: [staffUserId], references: [id])
+  isPublished     Boolean    @default(true)
+  position        Int        @default(0)
+
+  seoTitle           String?
+  seoDescription     String?
+  canonicalUrl       String?
+  robotsIndex        Boolean     @default(true)
+  robotsFollow       Boolean     @default(true)
+  ogImageMediaId     String?
+  sitemapPriority    Decimal?    @db.Decimal(2, 1)
+  sitemapChangeFreq  ChangeFreq?
+  excludeFromSitemap Boolean     @default(false)
+  jsonLdOverride     Json?
+  seoUpdatedAt       DateTime?
+  seoUpdatedById     String?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  posts BlogPost[]
+
+  @@index([isPublished, position])
+  @@map("blog_authors")
+}
+
+/// Article → product links, mirrored out of `product_embed` blocks. Stored
+/// relationally so a product page can ask "which articles mention me" without
+/// scanning every JSON body — that reverse direction is the loop that makes
+/// the blog pay.
+model BlogPostProduct {
+  postId    String
+  post      BlogPost @relation(fields: [postId], references: [id], onDelete: Cascade)
+  productId String
+  product   Product  @relation(fields: [productId], references: [id], onDelete: Cascade)
+  position  Int      @default(0)
+  createdAt DateTime @default(now())
+
+  @@id([postId, productId])
+  @@index([productId])
+  @@map("blog_post_products")
+}
+
+/// Article → catalogue category links. Distinct from `BlogPost.categoryId`,
+/// which is the post's own blog category; this points at /c/[slug].
+model BlogPostCategory {
+  postId     String
+  post       BlogPost @relation(fields: [postId], references: [id], onDelete: Cascade)
+  categoryId String
+  category   Category @relation(fields: [categoryId], references: [id], onDelete: Cascade)
+  position   Int      @default(0)
+  createdAt  DateTime @default(now())
+
+  @@id([postId, categoryId])
+  @@index([categoryId])
+  @@map("blog_post_categories")
 }
 
 model Redirect {
@@ -1752,7 +1913,7 @@ model CrawlFinding {
 
 model Counter {
   scope     String
-  year      Int      // 0 for non-year-scoped scopes (e.g. global "quote")
+  year      Int // 0 for non-year-scoped scopes (e.g. global "quote")
   value     Int      @default(0)
   updatedAt DateTime @default(now()) @updatedAt
 
@@ -1893,7 +2054,7 @@ model StaffInvitation {
   invitedById String?
   invitedBy   StaffUser? @relation("StaffInvitationInvitedBy", fields: [invitedById], references: [id], onDelete: SetNull)
 
-  expiresAt DateTime
+  expiresAt   DateTime
   /// Set the moment the link is consumed. This — not the existence of a
   /// StaffUser row — is what makes a link single-use.
   activatedAt DateTime?
