@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { db } from '@indus/db'
+import { auth } from '../../../../../../lib/admin-auth'
 import BlogPostEditorClient from './BlogPostEditorClient'
 
 export const metadata: Metadata = { title: 'Edit Post — Indus Admin' }
@@ -45,6 +46,18 @@ export default async function BlogPostEditorPage({ params }: Props) {
           : Promise.resolve(null),
       ])
 
+  // Byline candidates. Any active staff member can hold a byline — the
+  // editor previously hardcoded the logged-in user, so a post written by an
+  // engineer and published by a sub-editor was credited to the sub-editor.
+  const [authors, session] = await Promise.all([
+    db.staffUser.findMany({
+      where: { isActive: true },
+      orderBy: { name: 'asc' },
+      select: { id: true, name: true, role: true },
+    }),
+    auth(),
+  ])
+
   const storefrontUrl = (process.env.NEXT_PUBLIC_BASE_URL ?? 'https://indushydraulics.com').replace(
     /\/$/,
     '',
@@ -66,7 +79,10 @@ export default async function BlogPostEditorPage({ params }: Props) {
               publishedAt: post.publishedAt ? post.publishedAt.toISOString() : null,
               publicUrl: `${storefrontUrl}/blog/${post.slug}`,
               heroImageUrl: resolveMediaUrl(post.hero?.storagePath ?? null),
+              heroId: post.heroId,
+              heroStoragePath: post.hero?.storagePath ?? null,
               authorName: post.author?.name ?? null,
+              authorStaffId: post.authorStaffId,
               seoTitle: post.seoTitle,
               seoDescription: post.seoDescription,
               canonicalUrl: post.canonicalUrl,
@@ -91,6 +107,8 @@ export default async function BlogPostEditorPage({ params }: Props) {
         alt: m.alt,
         originalFilename: m.originalFilename,
       }))}
+      authors={authors}
+      currentStaffId={session?.user?.id ?? null}
     />
   )
 }
