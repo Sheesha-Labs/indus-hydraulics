@@ -255,11 +255,25 @@ async function main() {
         // and would now contradict the real spec table on the same page.
         // Correct exactly those, matched on question text; leave the
         // brand-level questions alone.
+        // On a product added by this import there are no FAQ rows to correct,
+        // so create them — otherwise a new product ships with none while every
+        // sibling has a full set.
+        let faqPos = await tx.productFaq.count({ where: { productId: product.id } })
         for (const f of e.faqs) {
-          await tx.productFaq.updateMany({
+          const hit = await tx.productFaq.updateMany({
             where: { productId: product.id, question: f.question },
             data: { answer: f.answer },
           })
+          if (hit.count === 0) {
+            await tx.productFaq.create({
+              data: {
+                productId: product.id,
+                question: f.question,
+                answer: f.answer,
+                position: faqPos++,
+              },
+            })
+          }
         }
 
         // Replace: the existing rows are placeholders, not a partial truth.
@@ -318,7 +332,7 @@ async function main() {
         const score = scoreProductContent({
           descriptionShortWords: words(e.descriptionShort),
           descriptionLongWords: words(e.descriptionLong),
-          faqCount: product._count.faqs,
+          faqCount: Math.max(product._count.faqs, e.faqs.length),
           specCount: e.specs.length,
           crossReferenceCount: product._count.crossReferences,
           documentCount: e.document ? 1 : 0,

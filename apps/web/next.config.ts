@@ -136,6 +136,21 @@ const nextConfig: NextConfig = {
         destination: '/p/molykote-cu-7439-plus-paste',
         permanent: true,
       },
+
+      // "Molykote EP" and "Molykote EP Grease" were not real products either —
+      // DuPont publishes nothing called EP. Both were deleted and replaced by
+      // G-1074 Grease, the one DuPont extreme-pressure grease the catalogue
+      // did not already carry.
+      {
+        source: '/p/molykote-ep',
+        destination: '/p/molykote-g-1074-grease',
+        permanent: true,
+      },
+      {
+        source: '/p/molykote-ep-grease',
+        destination: '/p/molykote-g-1074-grease',
+        permanent: true,
+      },
     ]
   },
 }
