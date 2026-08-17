@@ -2,6 +2,7 @@ import { describe, expect, it } from 'vitest'
 import {
   BlogBlockSchema,
   blogFaqPairs,
+  estimateReadingMinutes,
   blogReferencedSkus,
   blogTocEntries,
   parseBlogBlocks,
@@ -187,5 +188,54 @@ describe('derived helpers', () => {
 
   it('collects FAQ pairs for FAQPage JSON-LD', () => {
     expect(blogFaqPairs(blocks)).toEqual([{ question: 'Is 2SN the same as R2AT?', answer: 'No.' }])
+  })
+})
+
+describe('estimateReadingMinutes', () => {
+  const words = (n: number) => Array.from({ length: n }, (_, i) => `word${i}`).join(' ')
+
+  it('never returns zero for a short article', () => {
+    const { blocks } = parseBlogBlocks([{ type: 'paragraph', html: 'Three short words.' }])
+    expect(estimateReadingMinutes(blocks)).toBe(1)
+  })
+
+  it('scales with prose length', () => {
+    // Three blocks rather than one long string: ParagraphBlockSchema caps html
+    // at 4000 characters, so a 660-word paragraph cannot exist as a single
+    // block — it would be dropped as invalid and silently read as zero words.
+    const { blocks } = parseBlogBlocks([
+      { type: 'paragraph', html: words(220) },
+      { type: 'paragraph', html: words(220) },
+      { type: 'paragraph', html: words(220) },
+    ])
+    expect(blocks).toHaveLength(3)
+    expect(estimateReadingMinutes(blocks)).toBe(3)
+  })
+
+  it('strips HTML tags rather than counting them as words', () => {
+    const plain = parseBlogBlocks([{ type: 'paragraph', html: words(220) }]).blocks
+    const tagged = parseBlogBlocks([
+      { type: 'paragraph', html: `<strong>${words(220)}</strong>` },
+    ]).blocks
+    expect(estimateReadingMinutes(tagged)).toBe(estimateReadingMinutes(plain))
+  })
+
+  it('ignores anchors, SKUs and block discriminators', () => {
+    // A spec-heavy article is quick to skim. Counting anchors and SKUs would
+    // inflate the estimate on exactly the articles that read fastest.
+    const { blocks } = parseBlogBlocks([
+      { type: 'section_head', number: '/01', title: 'Grades', anchor: 'grades' },
+      { type: 'product_embed', skus: ['R2AT-08', 'R2AT-12', 'R2AT-16'] },
+      { type: 'as_of_stamp', verifiedOn: '2026-08-17' },
+    ])
+    // Only the two words of the section title count.
+    expect(estimateReadingMinutes(blocks)).toBe(1)
+  })
+
+  it('counts FAQ questions and answers', () => {
+    const { blocks } = parseBlogBlocks([
+      { type: 'faq_block', items: [{ question: words(110), answer: words(110) }] },
+    ])
+    expect(estimateReadingMinutes(blocks)).toBe(1)
   })
 })
