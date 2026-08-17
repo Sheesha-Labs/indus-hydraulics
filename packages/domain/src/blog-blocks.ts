@@ -276,6 +276,22 @@ export type BlogBlock = z.infer<typeof BlogBlockSchema>
 export const BlogBlocksSchema = z.array(BlogBlockSchema)
 export type BlogBlocks = z.infer<typeof BlogBlocksSchema>
 
+/**
+ * The AUTHORING type — what you write, before Zod applies defaults.
+ *
+ * `z.infer` gives the *output* type, in which every field carrying a
+ * `.default()` is required: `comparison_table` rows would demand an explicit
+ * `highlight: false` and every `sop_block` row an explicit `done: true`. That
+ * is correct for a renderer, which is guaranteed those fields exist after
+ * parsing, and wrong for a seed file, where the whole point of a default is
+ * not having to write it.
+ *
+ * Import scripts and any future authoring UI should type their input as this;
+ * everything downstream of `parseBlogBlocks` uses `BlogBlocks`.
+ */
+export type BlogBlocksInput = z.input<typeof BlogBlocksSchema>
+export type BlogBlockInput = z.input<typeof BlogBlockSchema>
+
 // ── Parsing ───────────────────────────────────────────────────────────────
 
 export interface BlogBlockParseResult {

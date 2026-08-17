@@ -32,12 +32,12 @@ const ROUTES = [
   '/brands',
   '/industries',
   '/blog',
-  // Blog hubs render from seeded rows, so they are testable before any
-  // article exists. /blog/[slug] and /blog/page/[n] are not in this list yet
-  // — both need a published post, and a 404 would pass this check trivially
-  // while telling us nothing about the layout.
   '/blog/c/specification-standards',
   '/blog/author/anjali-krishnan',
+  // The article template is the widest layout on the storefront — three
+  // columns, a comparison table and an SOP table — so it is the one most
+  // likely to bleed. /blog/page/[n] still needs a second page of posts.
+  '/blog/identify-any-hydraulic-fitting',
   '/about',
   '/contact',
   '/quote',
