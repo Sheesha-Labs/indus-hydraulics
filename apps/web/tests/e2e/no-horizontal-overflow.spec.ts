@@ -40,6 +40,10 @@ const ROUTES = [
   '/blog/identify-any-hydraulic-fitting',
   // Safety article — the SOP table is the widest block in the set.
   '/blog/hydraulic-fluid-injection-injury',
+  // Five-column comparison table — the widest table shipped in any article.
+  '/blog/jic-vs-orfs-vs-npt-vs-bsp',
+  // Category hubs now carry article cards rather than an empty state.
+  '/blog/c/failure-analysis',
   '/tools',
   '/tools/thread-identifier',
   '/tools/pressure-converter',
