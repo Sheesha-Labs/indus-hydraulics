@@ -37,11 +37,16 @@ export async function savePost(formData: FormData) {
   const heroRaw = (formData.get('heroId') as string | null) ?? ''
   const heroId = heroRaw.trim() ? heroRaw.trim() : null
 
-  // Author. Falls back to the editing user only when creating; on update an
-  // empty value leaves the existing author alone, so a passing sub-editor
-  // does not silently take the byline off the engineer who wrote the piece.
-  const authorRaw = (formData.get('authorStaffId') as string | null) ?? ''
-  const pickedAuthorId = authorRaw.trim() ? authorRaw.trim() : null
+  // Public byline — a BlogAuthor, not the staff user who pressed save.
+  // `authorStaffId` still records who created the row; the two are different
+  // questions and conflating them is what credited posts to whichever
+  // sub-editor happened to touch them last.
+  //
+  // Empty means "no public byline", which is a real choice (the storefront
+  // then falls back to the staff name), so it clears rather than being
+  // ignored.
+  const bylineRaw = (formData.get('blogAuthorId') as string | null) ?? ''
+  const blogAuthorId = bylineRaw.trim() ? bylineRaw.trim() : null
 
   // Explicit publish date, from a datetime-local input. Enables both
   // back-dating and scheduling.
@@ -57,6 +62,7 @@ export async function savePost(formData: FormData) {
     seoDescription,
     tags,
     heroId,
+    blogAuthorId,
     isPublished: publish,
   }
 
@@ -64,7 +70,8 @@ export async function savePost(formData: FormData) {
     const post = await db.blogPost.create({
       data: {
         ...base,
-        authorStaffId: pickedAuthorId ?? session.user.id,
+        // Provenance, not byline: who created the row.
+        authorStaffId: session.user.id,
         publishedAt: explicitPublishedAt ?? (publish ? new Date() : null),
       },
     })
@@ -94,7 +101,6 @@ export async function savePost(formData: FormData) {
     data: {
       ...base,
       publishedAt,
-      ...(pickedAuthorId ? { authorStaffId: pickedAuthorId } : {}),
     },
   })
 

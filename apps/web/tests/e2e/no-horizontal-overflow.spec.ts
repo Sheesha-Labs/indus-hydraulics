@@ -32,6 +32,12 @@ const ROUTES = [
   '/brands',
   '/industries',
   '/blog',
+  // Blog hubs render from seeded rows, so they are testable before any
+  // article exists. /blog/[slug] and /blog/page/[n] are not in this list yet
+  // — both need a published post, and a 404 would pass this check trivially
+  // while telling us nothing about the layout.
+  '/blog/c/specification-standards',
+  '/blog/author/anjali-krishnan',
   '/about',
   '/contact',
   '/quote',
