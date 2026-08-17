@@ -259,6 +259,11 @@
   font-size: 17px;
   line-height: 1.7;
   color: var(--color-ih-ink-2);
+  /* Grid and flex items default to min-width:auto, so the widest spec table
+     inside sized this column and the table's own overflow-x-auto wrapper had
+     no constrained parent to scroll within — the page scrolled instead. */
+  min-width: 0;
+  max-width: 100%;
 }
 .sc-article-body p {
   margin: 0 0 22px;

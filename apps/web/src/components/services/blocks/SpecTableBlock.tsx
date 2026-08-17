@@ -2,7 +2,11 @@ import type { SpecTableBlock } from '@indus/domain'
 
 export default function SpecTableBlockView({ block }: { block: SpecTableBlock }) {
   return (
-    <table className="my-4 mb-8 w-full border-collapse border border-ih-border bg-ih-surface font-sans text-[13.5px]">
+    // A spec table cannot always fit a phone, and shrinking the type to make
+    // it fit makes it unreadable. Per CLAUDE.md §2, wide content scrolls inside
+    // its OWN container so the page body never scrolls sideways.
+    <div className="my-4 mb-8 w-full max-w-full overflow-x-auto">
+      <table className="w-full min-w-[520px] border-collapse border border-ih-border bg-ih-surface font-sans text-[13.5px]">
       <caption className="mono caption-top pb-2.5 text-left text-[10.5px] uppercase tracking-[0.14em] text-ih-muted">
         {block.caption}
       </caption>
@@ -63,5 +67,6 @@ export default function SpecTableBlockView({ block }: { block: SpecTableBlock })
         ))}
       </tbody>
     </table>
+    </div>
   )
 }

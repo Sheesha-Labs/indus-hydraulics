@@ -79,7 +79,7 @@ export default async function BlogIndexPage() {
         </div>
       ) : (
         <div className="py-8">
-          <div className="grid grid-cols-[1.4fr_1fr] gap-6 mb-12">
+          <div className="grid gap-6 mb-12 md:grid-cols-[1.4fr_1fr]">
             {/* Lead card */}
             {featuredPost && (
               <Link
@@ -170,7 +170,7 @@ export default async function BlogIndexPage() {
                   <h2 className="text-[32px] font-semibold tracking-[-0.02em]">More from the workshop</h2>
                 </div>
               </div>
-              <div className="grid grid-cols-3 gap-6">
+              <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
                 {morePosts.slice(0, 6).map((post) => (
                   <Link
                     key={post.id}
@@ -218,7 +218,7 @@ export default async function BlogIndexPage() {
       )}
 
       {/* ── Editor's picks + Sidebar ──────────────────────── */}
-      <div className="grid grid-cols-[1fr_320px] gap-14 py-16 border-t border-ih-border">
+      <div className="grid gap-14 py-16 border-t border-ih-border lg:grid-cols-[1fr_320px]">
         {/* Editor's picks */}
         <div>
           <p className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-2">

@@ -243,9 +243,22 @@ export default function SiteHeaderClient({
         </nav>
 
         {/* Right actions */}
-        <div className="ml-auto flex items-center gap-2">
-          {/* Search bar */}
-          <div className="hidden sm:block" style={{ minWidth: '320px' }}>
+        <div className="ml-auto flex min-w-0 items-center gap-2">
+          {/*
+            The search box used to carry an inline `minWidth: 320px`. An inline
+            style beats every responsive class, so between the nav appearing and
+            the viewport being wide enough for both, the header was 235px wider
+            than the window — every page on the site scrolled sideways at ~1024px.
+            (Inline style is also banned outside packages/pdf and packages/email;
+            this is the third time that exact pattern has caused a layout bug in
+            this migration.)
+
+            Now it shrinks: a max-width instead of a min-width, min-w-0 so flex
+            is allowed to shrink it below content size, and it only appears at
+            xl where there is actually room alongside the nav — at lg the logo, nav,
+            search and three action buttons still did not fit.
+          */}
+          <div className="hidden min-w-0 w-full max-w-[320px] xl:block">
             <SearchAutocomplete className="relative w-full" />
           </div>
 

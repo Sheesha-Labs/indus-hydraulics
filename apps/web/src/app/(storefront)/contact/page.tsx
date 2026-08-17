@@ -133,7 +133,7 @@ export default async function ContactPage({ params }: Props) {
       </div>
 
       {/* ── Main grid ─────────────────────────────────────────── */}
-      <div className="mx-auto max-w-[1440px] px-5 sm:px-8 xl:px-12 py-8 pb-16 grid gap-14" style={{ gridTemplateColumns: '1.1fr 1fr' }}>
+      <div className="mx-auto max-w-[1440px] px-5 sm:px-8 xl:px-12 py-8 pb-16 grid gap-14 lg:grid-cols-[1.1fr_1fr]">
 
         {/* ── Form card ─────────────────────────────────────── */}
         <ContactFormClient />
@@ -146,8 +146,10 @@ export default async function ContactPage({ params }: Props) {
               <a
                 key={ch.title}
                 href={ch.href}
-                className="grid gap-4 items-center p-5 border border-ih-border bg-ih-surface hover:border-ih-accent transition-colors"
-                style={{ gridTemplateColumns: '44px 1fr auto' }}
+                /* Class, not an inline style: an inline gridTemplateColumns
+                   beats every responsive utility, which is what made this
+                   card push the page sideways on a phone. */
+                className="grid grid-cols-[44px_1fr_auto] gap-4 items-center p-5 border border-ih-border bg-ih-surface hover:border-ih-accent transition-colors"
               >
                 <div
                   className="w-11 h-11 border grid place-items-center text-[18px]"
@@ -155,10 +157,10 @@ export default async function ContactPage({ params }: Props) {
                 >
                   {ch.icon}
                 </div>
-                <div>
+                <div className="min-w-0">
                   <h3 className="text-[14px] font-semibold">{ch.title}</h3>
                   <p className="text-[12px] text-ih-muted mt-0.5">{ch.sub}</p>
-                  <div className="font-mono text-[13px] text-ih-ink mt-1">{ch.value}</div>
+                  <div className="font-mono text-[13px] text-ih-ink mt-1 break-words">{ch.value}</div>
                 </div>
                 {ch.badge && (
                   <span className="font-mono text-[10px] px-1.5 py-0.5 shrink-0" style={{ background: ch.badgeBg, color: ch.badgeColor }}>
@@ -173,7 +175,7 @@ export default async function ContactPage({ params }: Props) {
           <div className="font-mono text-[10px] tracking-[0.14em] text-ih-muted uppercase mb-3">
             {OFFICES.length === 1 ? 'Our office' : 'Our offices'}
           </div>
-          <div className={`grid gap-3 mb-8 ${OFFICES.length === 1 ? 'grid-cols-1' : 'grid-cols-2'}`}>
+          <div className={`grid gap-3 mb-8 ${OFFICES.length === 1 ? 'grid-cols-1' : 'sm:grid-cols-2'}`}>
             {OFFICES.map((office) => (
               <div key={office.slug} className="relative border border-ih-border bg-ih-surface p-5 flex flex-col gap-2">
                 {office.kind === 'hq' && (
@@ -205,7 +207,7 @@ export default async function ContactPage({ params }: Props) {
 
       {/* ── FAQ ───────────────────────────────────────────────── */}
       <div className="border-t border-ih-border py-16">
-        <div className="mx-auto max-w-[1440px] px-5 sm:px-8 xl:px-12 grid gap-14" style={{ gridTemplateColumns: '1fr 2fr' }}>
+        <div className="mx-auto max-w-[1440px] px-5 sm:px-8 xl:px-12 grid gap-14 lg:grid-cols-[1fr_2fr]">
           <div>
             <h2 className="text-[32px] font-semibold tracking-[-0.02em] leading-snug">Frequently asked questions</h2>
             <p className="mt-3 text-[14px] text-ih-muted leading-[1.6]">

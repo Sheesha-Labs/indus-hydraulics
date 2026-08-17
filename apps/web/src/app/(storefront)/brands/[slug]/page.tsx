@@ -364,8 +364,7 @@ export default async function BrandPage({ params }: Props) {
                 href={mediaUrl(doc.media.storagePath)}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="grid items-center gap-3.5 rounded-lg border border-ih-border bg-ih-surface p-3.5 transition-colors hover:border-ih-accent"
-                style={{ gridTemplateColumns: '64px 1fr auto' }}
+                className="grid grid-cols-[64px_1fr_auto] items-center gap-3.5 rounded-lg border border-ih-border bg-ih-surface p-3.5 transition-colors hover:border-ih-accent"
               >
                 <div className="rounded-[3px] bg-ih-navy px-2.5 py-1.5 text-center font-mono text-[9px] tracking-[0.06em] text-white">
                   {doc.kind.toUpperCase().slice(0, 8)}
