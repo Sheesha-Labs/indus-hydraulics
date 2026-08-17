@@ -6,6 +6,7 @@ import StarterKit from '@tiptap/starter-kit'
 import Link from '@tiptap/extension-link'
 import {
   Bold,
+  Blocks,
   Heading2,
   Heading3,
   Image as ImageIcon,
@@ -28,6 +29,7 @@ import {
 import type { Result } from '../../../lib/result'
 import { FigureImage, LeadParagraph, SectionHeading, StructuredBlock } from './extensions'
 import ImageInsertDialog, { type BodyMedia } from './ImageInsertDialog'
+import { BLOCK_FORMS } from './block-fields'
 
 type Props = {
   /** Stored body blocks. Parsed server-side, so already valid. */
@@ -133,7 +135,15 @@ export default function BlogBodyEditor({ initialBlocks, onChange, media, uploadA
 
   return (
     <div className="overflow-hidden rounded-lg border border-ih-border bg-ih-surface">
-      <Toolbar editor={editor} onInsertImage={() => setImageOpen(true)} />
+      <Toolbar
+        editor={editor}
+        onInsertImage={() => setImageOpen(true)}
+        onInsertBlock={(type) => {
+          const spec = BLOCK_FORMS.find((f) => f.type === type)
+          if (!spec) return
+          editor?.chain().focus().setStructuredBlock(spec.template()).run()
+        }}
+      />
       <EditorContent editor={editor} />
       <ImageInsertDialog
         open={imageOpen}
@@ -150,9 +160,11 @@ export default function BlogBodyEditor({ initialBlocks, onChange, media, uploadA
 function Toolbar({
   editor,
   onInsertImage,
+  onInsertBlock,
 }: {
   editor: Editor | null
   onInsertImage: () => void
+  onInsertBlock: (type: string) => void
 }) {
   if (!editor) {
     return <div className="h-9 border-b border-ih-border bg-ih-bg" aria-hidden />
@@ -250,6 +262,7 @@ function Toolbar({
       <Btn label="Insert image" onClick={onInsertImage}>
         <ImageIcon size={13} strokeWidth={1.9} />
       </Btn>
+      <InsertBlockMenu onInsert={onInsertBlock} />
       <div className="ml-auto flex gap-0.5">
         <Btn
           label="Undo"
@@ -267,6 +280,48 @@ function Toolbar({
         </Btn>
       </div>
     </div>
+  )
+}
+
+/**
+ * The block palette.
+ *
+ * A `<details>` rather than a hand-rolled dropdown: it opens on click, closes
+ * on Escape and on a click outside, and is keyboard-navigable, all natively —
+ * and this codebase has no dropdown primitive, so the alternative is another
+ * overlay owning its own focus handling for a list of thirteen links.
+ */
+function InsertBlockMenu({ onInsert }: { onInsert: (type: string) => void }) {
+  return (
+    <details className="relative">
+      <summary
+        className="flex h-7 cursor-pointer list-none items-center gap-1.5 rounded-md px-2 text-[12px] text-ih-ink-2 transition-colors hover:bg-ih-surface-2"
+        title="Insert a block"
+      >
+        <Blocks size={13} strokeWidth={1.9} />
+        Block
+      </summary>
+      <div className="absolute left-0 top-8 z-20 max-h-[320px] w-[260px] overflow-y-auto rounded-md border border-ih-border bg-ih-surface py-1 shadow-lg">
+        {BLOCK_FORMS.map((spec) => (
+          <button
+            key={spec.type}
+            type="button"
+            onMouseDown={(e) => {
+              // The click closes the <details>, which would otherwise blur the
+              // editor and drop the selection before the insert runs.
+              e.preventDefault()
+              onInsert(spec.type)
+              ;(e.currentTarget.closest('details') as HTMLDetailsElement | null)?.removeAttribute(
+                'open',
+              )
+            }}
+            className="block w-full px-3 py-1.5 text-left text-[12.5px] text-ih-ink-2 transition-colors hover:bg-ih-surface-2 hover:text-ih-ink"
+          >
+            {spec.label}
+          </button>
+        ))}
+      </div>
+    </details>
   )
 }
 
