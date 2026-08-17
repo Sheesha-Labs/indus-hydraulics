@@ -27,11 +27,10 @@ import { Badge, cn } from '@indus/ui'
  * every one of them is also a word, never colour alone.
  */
 
-export interface MediaRowView {
-  item: MediaListItem
-  state: MediaState
-  usages: MediaUsage[]
-}
+import type { MediaDetail } from './types'
+
+/** Kept as an alias so existing imports of the old name keep resolving. */
+export type MediaRowView = MediaDetail
 
 // ── State pill ──────────────────────────────────────────────────────────────
 
@@ -60,8 +59,8 @@ export function MediaStatePill({ state }: { state: MediaState }) {
 function UsageLine({ usages, className }: { usages: MediaUsage[]; className?: string }) {
   const first = usages[0]
   return (
-    <p
-      className={cn('truncate text-[11.5px] text-ih-muted', className)}
+    <span
+      className={cn('block truncate text-[11.5px] text-ih-muted', className)}
       // The native tooltip carries the full list, so hovering answers "where
       // else?" without opening anything.
       title={
@@ -79,7 +78,7 @@ function UsageLine({ usages, className }: { usages: MediaUsage[]; className?: st
       ) : (
         'Not used anywhere'
       )}
-    </p>
+    </span>
   )
 }
 
@@ -145,14 +144,31 @@ function subtype(item: MediaListItem): string {
 
 // ── Grid ────────────────────────────────────────────────────────────────────
 
-export function MediaGrid({ rows }: { rows: MediaRowView[] }) {
+export function MediaGrid({
+  rows,
+  onOpen,
+}: {
+  rows: MediaRowView[]
+  onOpen: (id: string) => void
+}) {
   return (
     <ul className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6">
-      {rows.map(({ item, state, usages }) => (
+      {rows.map((row) => {
+        const { state, usages } = row
+        const item = row
+        return (
         <li
           key={item.id}
           className="flex flex-col overflow-hidden rounded-lg border border-ih-border bg-ih-surface"
         >
+          {/* The whole card is the trigger. A separate info button would be a
+              28px target on a 200px card that does nothing else when clicked. */}
+          <button
+            type="button"
+            onClick={() => onOpen(item.id)}
+            aria-label={`Details for ${item.originalFilename}`}
+            className="flex flex-1 flex-col text-left outline-none transition-colors hover:bg-ih-surface-2 focus-visible:ring-[3px] focus-visible:ring-ih-accent-soft"
+          >
           <Thumb item={item} usageCount={usages.length} usages={usages} className="aspect-[4/3]" />
           <div className="flex flex-1 flex-col gap-1.5 px-3 py-2.5">
             <div className="flex items-start justify-between gap-2">
@@ -172,20 +188,37 @@ export function MediaGrid({ rows }: { rows: MediaRowView[] }) {
               <span className="truncate uppercase tracking-[0.06em]">{item.kind}</span>
             </div>
           </div>
+          </button>
         </li>
-      ))}
+        )
+      })}
     </ul>
   )
 }
 
 // ── List ────────────────────────────────────────────────────────────────────
 
-export function MediaList({ rows }: { rows: MediaRowView[] }) {
+export function MediaList({
+  rows,
+  onOpen,
+}: {
+  rows: MediaRowView[]
+  onOpen: (id: string) => void
+}) {
   return (
     <div className="overflow-hidden rounded-lg border border-ih-border bg-ih-surface">
       <ul className="divide-y divide-ih-border">
-        {rows.map(({ item, state, usages }) => (
-          <li key={item.id} className="flex items-center gap-4 px-4 py-2.5 text-[13px]">
+        {rows.map((row) => {
+          const { state, usages } = row
+          const item = row
+          return (
+          <li key={item.id}>
+          <button
+            type="button"
+            onClick={() => onOpen(item.id)}
+            aria-label={`Details for ${item.originalFilename}`}
+            className="flex w-full items-center gap-4 px-4 py-2.5 text-left text-[13px] outline-none transition-colors hover:bg-ih-surface-2 focus-visible:ring-[3px] focus-visible:ring-inset focus-visible:ring-ih-accent-soft"
+          >
             <Thumb
               item={item}
               usageCount={usages.length}
@@ -209,8 +242,10 @@ export function MediaList({ rows }: { rows: MediaRowView[] }) {
             <span className="hidden w-20 font-mono text-[11px] uppercase tracking-[0.06em] text-ih-muted sm:block">
               {item.kind}
             </span>
+          </button>
           </li>
-        ))}
+          )
+        })}
       </ul>
     </div>
   )

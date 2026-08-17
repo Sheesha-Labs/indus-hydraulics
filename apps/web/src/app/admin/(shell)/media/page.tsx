@@ -17,6 +17,8 @@ import { Pagination } from '@indus/ui'
 
 import AdminPageShell from '../../../../components/admin/AdminPageShell'
 import { ADMIN_PREFIX } from '../../../../lib/admin-paths'
+import { auth } from '../../../../lib/admin-auth'
+import { ROLES, hasRole } from '../../../../lib/rbac'
 import { buildMediaUsageIndexFromDb } from '../../../../lib/queries/media-usage'
 import {
   FolderRail,
@@ -25,7 +27,9 @@ import {
   ViewToggle,
   type MediaViewMode,
 } from './_components/filters'
-import { MediaEmptyState, MediaGrid, MediaList, type MediaRowView } from './_components/media-items'
+import { MediaLibraryBody } from './_components/library-client'
+import { MediaEmptyState } from './_components/media-items'
+import type { MediaDetail } from './_components/types'
 import { MediaSearchBox, MediaSortSelect } from './_components/search-sort'
 
 export const metadata: Metadata = { title: 'Media library — Indus Admin' }
@@ -68,7 +72,7 @@ export default async function MediaLibraryPage({ params, searchParams }: Props) 
 
   // Both scopes are loaded because the rail shows a live Trash count while you
   // are outside it, and vice versa.
-  const [rows, trashCount] = await Promise.all([
+  const [rows, trashCount, session] = await Promise.all([
     db.media.findMany({
       where: trashed ? { deletedAt: { not: null } } : { deletedAt: null },
       select: {
@@ -80,23 +84,51 @@ export default async function MediaLibraryPage({ params, searchParams }: Props) 
         bytes: true,
         createdAt: true,
         storagePath: true,
+        mimeType: true,
+        width: true,
+        height: true,
+        uploadedBy: { select: { name: true, email: true } },
       },
     }),
     db.media.count({ where: { deletedAt: { not: null } } }),
+    auth(),
   ])
+  // hasRole, not requireRole — a sales_rep should still be able to browse the
+  // library and see where a file is used; they just cannot edit it.
+  const canEdit = hasRole(session, ROLES.CATALOGUE_WRITE)
 
   // Usage is resolved for every row in scope, not just the page being shown:
   // the folder rail and the state tabs both count the whole library.
   const assets = rows.map((r) => ({ id: r.id, storagePath: r.storagePath }))
   const usageIndex = await buildMediaUsageIndexFromDb(assets)
 
-  const decorated = rows.map((item) => {
-    const usages = usageIndex.byAsset.get(item.id) ?? []
-    return {
-      item: item as MediaListItem,
-      usages,
+  const decorated = rows.map((r) => {
+    const usages = usageIndex.byAsset.get(r.id) ?? []
+    const { uploadedBy, createdAt, ...rest } = r
+    const detail: MediaDetail = {
+      ...rest,
+      createdAt,
+      // Formatted server-side so the list and the dialog can never disagree
+      // about a date, and so no locale-dependent string is produced during
+      // hydration.
+      createdAtLabel: createdAt.toLocaleDateString('en-GB', {
+        day: 'numeric',
+        month: 'short',
+        year: 'numeric',
+      }),
+      // Flattened to a name: serialising the staff row would put an internal
+      // email address into the page for every asset.
+      uploadedByName: uploadedBy?.name ?? uploadedBy?.email ?? null,
       state: deriveMediaState(usages),
-      folder: mediaFolderFor({ mediaKind: item.kind, usages }),
+      usages,
+    }
+    return {
+      // `item` is what the list logic filters and sorts on; the row itself
+      // carries everything the dialog needs.
+      item: detail as MediaListItem,
+      ...detail,
+      usages,
+      folder: mediaFolderFor({ mediaKind: r.kind, usages }),
     }
   })
 
@@ -150,9 +182,9 @@ export default async function MediaLibraryPage({ params, searchParams }: Props) 
     return `${ADMIN_PREFIX}/media${qs ? `?${qs}` : ''}`
   }
 
-  // No mapping needed: selectMediaPage is generic over the row, so the `usages`
-  // field added above survives the filter/sort/page pass.
-  const visible: MediaRowView[] = selected.visible
+  // selectMediaPage is generic over the row, so everything added above
+  // survives the filter/sort/page pass.
+  const visible: MediaDetail[] = selected.visible
 
   const isFiltered = Boolean(query) || kind !== 'all' || state !== 'all' || folder !== 'all'
 
@@ -236,10 +268,8 @@ export default async function MediaLibraryPage({ params, searchParams }: Props) 
               filtered={isFiltered}
               resetHref={`${ADMIN_PREFIX}/media${trashed ? '?trash=1' : ''}`}
             />
-          ) : view === 'list' ? (
-            <MediaList rows={visible} />
           ) : (
-            <MediaGrid rows={visible} />
+            <MediaLibraryBody rows={visible} view={view} canEdit={canEdit} />
           )}
 
           <Pagination
