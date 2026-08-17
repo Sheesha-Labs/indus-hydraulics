@@ -1,6 +1,7 @@
 'use client'
 
 import { useRef, useState, useTransition } from 'react'
+import { MediaBrowserDialog } from '../MediaBrowserDialog'
 import type { Result } from '../../../lib/result'
 
 export type RecentMedia = {
@@ -42,6 +43,7 @@ export default function OgImagePicker({
 }: Props) {
   const [items, setItems] = useState<RecentMedia[]>(recent)
   const [pending, startTransition] = useTransition()
+  const [browsing, setBrowsing] = useState(false)
   const [error, setError] = useState<string | null>(null)
   const fileRef = useRef<HTMLInputElement>(null)
 
@@ -94,18 +96,26 @@ export default function OgImagePicker({
           )}
         </div>
         <div className="flex-1 flex flex-col gap-2">
-          <select
-            value={value ?? ''}
-            onChange={(e) => handleSelect(e.target.value || null)}
-            className="h-9 px-2 border border-ih-border bg-white text-[13px]"
-          >
-            <option value="">{emptyLabel}</option>
-            {items.map((item) => (
-              <option key={item.id} value={item.id}>
-                {truncate(item.alt ?? item.originalFilename, 60)}
-              </option>
-            ))}
-          </select>
+          {/* Was a <select> of the 50 most recent files, with no way to reach
+              anything older. Now a search over the whole library. */}
+          <div className="flex items-center gap-2">
+            <button
+              type="button"
+              onClick={() => setBrowsing(true)}
+              className="inline-flex h-9 items-center gap-1.5 rounded-md border border-ih-border bg-ih-surface px-3 text-[12.5px] transition-colors hover:border-ih-accent hover:text-ih-accent"
+            >
+              {selected ? 'Change image' : 'Choose from library'}
+            </button>
+            {value ? (
+              <button
+                type="button"
+                onClick={() => handleSelect(null)}
+                className="inline-flex h-9 items-center rounded-md px-2.5 text-[12.5px] text-ih-muted transition-colors hover:text-ih-ink"
+              >
+                {emptyLabel}
+              </button>
+            ) : null}
+          </div>
           <label className="text-[12px] text-ih-ink-2 cursor-pointer">
             <input
               ref={fileRef}
@@ -127,6 +137,30 @@ export default function OgImagePicker({
           <p className="text-[11px] text-ih-muted-2">{hint}</p>
         </div>
       </div>
+      <MediaBrowserDialog
+        open={browsing}
+        onOpenChange={setBrowsing}
+        selectedId={value}
+        fixedKind="image"
+        title="Choose a social share image"
+        onSelect={(media) => {
+          setItems((prev) =>
+            prev.some((i) => i.id === media.id)
+              ? prev
+              : [
+                  {
+                    id: media.id,
+                    storagePath: media.storagePath,
+                    alt: media.alt,
+                    originalFilename: media.originalFilename,
+                  },
+                  ...prev,
+                ]
+          )
+          onChange(media.id, { storagePath: media.storagePath, alt: media.alt })
+          setBrowsing(false)
+        }}
+      />
     </div>
   )
 }
@@ -138,6 +172,3 @@ function resolveUrl(storagePath: string): string {
   return base ? `${base}/${storagePath}` : storagePath
 }
 
-function truncate(s: string, max: number): string {
-  return s.length > max ? `${s.slice(0, max - 1)}…` : s
-}

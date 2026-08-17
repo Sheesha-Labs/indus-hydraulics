@@ -1,6 +1,12 @@
 'use client'
 
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
+import { ImageOff, Search, X } from 'lucide-react'
+import { mediaThumbnailSrc } from '@indus/domain'
+import { Button, cn } from '@indus/ui'
+
+import { getMediaById, type PickerResult } from '../../app/admin/(shell)/media/actions'
+import { MediaBrowserDialog } from './MediaBrowserDialog'
 
 type MediaRow = {
   id: string
@@ -13,123 +19,142 @@ type Props = {
   /** Hidden input name — emitted into the surrounding <form>. */
   name: string
   defaultValue?: string | null
+  /**
+   * Recent files, still loaded server-side. Used only to render the current
+   * selection without a round-trip; browsing goes through the dialog.
+   */
   recent: MediaRow[]
-  /** Optional R2/public-URL prefix for thumbnails. */
+  /** Retained for source compatibility. Thumbnail resolution now handles the
+   *  storagePath shapes directly, so this is unused. */
   publicUrlBase?: string
   /** Helper text below the picker. */
   hint?: string
 }
 
 /**
- * Tiny media-library picker. Drops into any <form> as a hidden input
- * (`name={name}`) whose value is the selected Media.id. Click a recent
- * thumbnail to set; click the current row's × to clear; type a UUID
- * manually for media that's not in the latest 50.
+ * Media picker for content editors. Drops into any `<form>` as a hidden input
+ * whose value is the selected `Media.id`.
+ *
+ * The external API is unchanged, deliberately — the internals were replaced
+ * rather than the call sites, so every editor that already renders this gets
+ * the library browser without being touched.
+ *
+ * What changed: choosing a file that was not among the 50 most recent used to
+ * mean **pasting a UUID by hand**. With 665 files that made most of the
+ * library reachable only by copying an id out of the database. The free-text
+ * id field is gone; there is a search over the whole library instead.
  */
-export default function MediaPicker({
-  name,
-  defaultValue,
-  recent,
-  publicUrlBase,
-  hint,
-}: Props) {
+export default function MediaPicker({ name, defaultValue, recent, hint }: Props) {
   const [value, setValue] = useState<string>(defaultValue ?? '')
   const [open, setOpen] = useState(false)
+  // Only the fetched row is state. The selection itself is DERIVED, so the
+  // common case — the value is among `recent` — needs no effect and no render
+  // pass to settle. Mirroring it into state instead meant a synchronous
+  // setState inside an effect, which cascades renders and which the React
+  // lint rule correctly rejects.
+  const [fetched, setFetched] = useState<PickerResult | null>(null)
+  const selected: MediaRow | PickerResult | null = value
+    ? (recent.find((m) => m.id === value) ?? (fetched?.id === value ? fetched : null))
+    : null
 
-  const selected = value ? recent.find((m) => m.id === value) : null
+  // Runs only when the saved value is older than the `recent` window — exactly
+  // the case the previous picker could not render at all. The setState here is
+  // asynchronous, inside the resolved promise, not in the effect body.
+  useEffect(() => {
+    if (!value || selected) return
+    let cancelled = false
+    void getMediaById({ id: value }).then((res) => {
+      if (!cancelled && res.success && res.data) setFetched(res.data)
+    })
+    return () => {
+      cancelled = true
+    }
+  }, [value, selected])
 
-  function thumbUrl(m: MediaRow): string {
-    if (m.storagePath.startsWith('http')) return m.storagePath
-    if (publicUrlBase) return `${publicUrlBase}/${m.storagePath}`
-    return m.storagePath
-  }
+  // Always 'image': this picker is image-only (the dialog below is opened
+  // with fixedKind="image"), so there is no other kind a selection can be.
+  // Narrowing the MediaRow | PickerResult union with `in` yields unknown here,
+  // and a cast would be pretending to know something rather than knowing it.
+  const thumb = selected
+    ? mediaThumbnailSrc({ kind: 'image', storagePath: selected.storagePath })
+    : null
 
   return (
     <div className="flex flex-col gap-2">
       <input type="hidden" name={name} value={value} />
 
-      {/* Current selection row */}
-      <div className="flex items-center gap-3 border border-ih-border bg-white p-2">
-        <div className="w-14 h-14 bg-ih-surface-2 border border-ih-border grid place-items-center overflow-hidden shrink-0">
-          {selected ? (
+      <div className="flex items-start gap-3">
+        <div
+          className={cn(
+            'bg-ih-surface-2 grid h-20 w-24 flex-shrink-0 place-items-center overflow-hidden rounded-md border',
+            selected ? 'border-ih-border' : 'border-ih-border border-dashed'
+          )}
+        >
+          {thumb ? (
             // eslint-disable-next-line @next/next/no-img-element
-            <img src={thumbUrl(selected)} alt={selected.alt ?? ''} className="max-w-full max-h-full object-contain" />
-          ) : value ? (
-            <span className="font-mono text-[9px] text-ih-muted text-center px-1">
-              {value.slice(0, 8)}…
-            </span>
+            <img src={thumb} alt={selected?.alt ?? ''} className="h-full w-full object-cover" />
           ) : (
-            <span className="font-mono text-[10px] text-ih-muted-2">none</span>
+            <ImageOff size={16} strokeWidth={1.5} aria-hidden="true" className="text-ih-muted-2" />
           )}
         </div>
-        <div className="flex-1 min-w-0">
-          <input
-            type="text"
-            value={value}
-            onChange={(e) => setValue(e.target.value)}
-            placeholder="Media UUID, or click a thumbnail below"
-            className="w-full h-8 px-2 border border-ih-border text-[12px] font-mono"
-          />
-          {selected && (
-            <div className="text-[11px] text-ih-muted truncate mt-1">
-              {selected.originalFilename}
-            </div>
+
+        <div className="flex min-w-0 flex-1 flex-col gap-1.5">
+          {selected ? (
+            <>
+              <span
+                className="truncate text-[12.5px] font-medium"
+                title={selected.originalFilename}
+              >
+                {selected.originalFilename}
+              </span>
+              <span className="text-ih-muted truncate text-[11.5px]" title={selected.alt ?? ''}>
+                {selected.alt || 'No alt text'}
+              </span>
+            </>
+          ) : (
+            <span className="text-ih-muted text-[12.5px]">No file chosen</span>
           )}
-        </div>
-        <div className="flex flex-col gap-1 shrink-0">
-          <button
-            type="button"
-            onClick={() => setOpen((v) => !v)}
-            className="h-7 px-3 text-[11px] border border-ih-border bg-white hover:border-ih-accent"
-          >
-            {open ? 'Hide' : 'Browse'}
-          </button>
-          {value && (
-            <button
+
+          <div className="flex items-center gap-2">
+            <Button
+              kind="outline"
+              size="sm"
               type="button"
-              onClick={() => setValue('')}
-              className="h-7 px-3 text-[11px] border border-ih-border bg-white text-[oklch(0.5_0.16_25)]"
+              onClick={() => setOpen(true)}
+              icon={<Search size={13} strokeWidth={1.7} />}
             >
-              Clear
-            </button>
-          )}
+              {selected ? 'Change' : 'Choose from library'}
+            </Button>
+            {value ? (
+              <Button
+                kind="ghost"
+                size="sm"
+                type="button"
+                onClick={() => setValue('')}
+                icon={<X size={13} strokeWidth={1.7} />}
+              >
+                Clear
+              </Button>
+            ) : null}
+          </div>
         </div>
       </div>
 
-      {/* Recent grid */}
-      {open && (
-        <div className="border border-ih-border bg-ih-surface-2 p-3">
-          {recent.length === 0 ? (
-            <p className="text-[12px] text-ih-muted py-4 text-center">
-              No images in the media library yet. Upload via the media admin page.
-            </p>
-          ) : (
-            <div className="grid grid-cols-6 gap-2 max-h-[240px] overflow-y-auto">
-              {recent.map((m) => {
-                const active = m.id === value
-                return (
-                  <button
-                    type="button"
-                    key={m.id}
-                    onClick={() => setValue(m.id)}
-                    title={m.originalFilename}
-                    className={`aspect-square bg-white border ${active ? 'border-ih-accent outline outline-2 outline-ih-accent' : 'border-ih-border hover:border-ih-accent'} grid place-items-center overflow-hidden`}
-                  >
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img
-                      src={thumbUrl(m)}
-                      alt={m.alt ?? m.originalFilename}
-                      className="max-w-full max-h-full object-contain"
-                    />
-                  </button>
-                )
-              })}
-            </div>
-          )}
-        </div>
-      )}
+      {hint ? <p className="text-ih-muted text-[11.5px]">{hint}</p> : null}
 
-      {hint && <span className="text-[11px] text-ih-muted">{hint}</span>}
+      <MediaBrowserDialog
+        open={open}
+        onOpenChange={setOpen}
+        selectedId={value || null}
+        fixedKind="image"
+        onSelect={(media) => {
+          setValue(media.id)
+          // Cached so the choice paints immediately even when it is older than
+          // the `recent` window the server sent.
+          setFetched(media)
+          setOpen(false)
+        }}
+      />
     </div>
   )
 }
