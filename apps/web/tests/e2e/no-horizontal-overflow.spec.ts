@@ -44,6 +44,8 @@ const ROUTES = [
   '/blog/jic-vs-orfs-vs-npt-vs-bsp',
   // Category hubs now carry article cards rather than an empty state.
   '/blog/c/failure-analysis',
+  '/blog/c/industrial-hose',
+  '/blog/chemical-transfer-hose-selection',
   '/tools',
   '/tools/thread-identifier',
   '/tools/pressure-converter',
