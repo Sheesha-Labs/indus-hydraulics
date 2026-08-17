@@ -38,6 +38,8 @@ const ROUTES = [
   // columns, a comparison table and an SOP table — so it is the one most
   // likely to bleed. /blog/page/[n] still needs a second page of posts.
   '/blog/identify-any-hydraulic-fitting',
+  // Safety article — the SOP table is the widest block in the set.
+  '/blog/hydraulic-fluid-injection-injury',
   '/about',
   '/contact',
   '/quote',

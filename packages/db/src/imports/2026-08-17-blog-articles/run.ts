@@ -33,8 +33,11 @@ import {
 import type { BlogBlocks } from '@indus/domain'
 import type { BlogArticleSeed } from './shared'
 import ARTICLE_01 from './articles/identify-any-hydraulic-fitting'
+import ARTICLE_02 from './articles/hydraulic-fluid-injection-injury'
+import ARTICLE_03 from './articles/bspp-vs-bspt'
+import ARTICLE_04 from './articles/why-hydraulic-hoses-fail'
 
-const ARTICLES: BlogArticleSeed[] = [ARTICLE_01]
+const ARTICLES: BlogArticleSeed[] = [ARTICLE_01, ARTICLE_02, ARTICLE_03, ARTICLE_04]
 
 const DRY_RUN = process.argv.includes('--dry-run')
 
