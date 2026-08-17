@@ -779,6 +779,15 @@ export async function addProductImage(formData: FormData): Promise<Result<void>>
       alt: formData.get('alt') ?? '',
     })
 
+    // Same as the URL-based document attach below: the file is hosted
+    // elsewhere, so the only way to know its size is to ask the host. Measured
+    // outside the transaction, and best-effort — a host that will not answer
+    // must not stop an editor attaching an image.
+    const measured = await measureRemoteBytes(parsed.url, { fetchImpl: fetch as never })
+    if (!measured.ok) {
+      console.warn('[products] could not measure image', parsed.url, measured.reason, measured.detail)
+    }
+
     // Create Media row + ProductImage row in one transaction.
     const max = await db.productImage.aggregate({
       where: { productId: parsed.productId },
@@ -792,7 +801,7 @@ export async function addProductImage(formData: FormData): Promise<Result<void>>
           mimeType: inferMime(parsed.url),
           originalFilename: parsed.url.split('/').pop()?.slice(0, 200) ?? 'image',
           storagePath: parsed.url,
-          bytes: 0,
+          bytes: measured.ok ? measured.bytes : 0,
           alt: parsed.alt,
           uploadedById: session?.user?.id ?? null,
         },
