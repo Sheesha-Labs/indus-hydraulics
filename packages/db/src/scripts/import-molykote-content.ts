@@ -35,7 +35,7 @@ import { readFileSync, existsSync } from 'node:fs'
 import { resolve } from 'node:path'
 import { PrismaClient } from '@prisma/client'
 import { createClient } from '@supabase/supabase-js'
-import { scoreProductContent } from '@indus/domain'
+import { measureRemoteBytes, scoreProductContent } from '@indus/domain'
 
 const db = new PrismaClient()
 
@@ -207,6 +207,32 @@ async function main() {
     }
 
     // ── copy, specs, datasheet ───────────────────────────────────────────
+
+    // The datasheet is linked at DuPont, not re-hosted, so there is no
+    // uploaded object to read a size back from the way `finaliseMediaUpload`
+    // does. Ask the host instead — a `Content-Length` is the same fact.
+    //
+    // Measured BEFORE the transaction opens, not inside it: this is a network
+    // round trip to a third party, and the transaction below runs with a 30s
+    // timeout. A slow DuPont response inside it would roll back the product's
+    // copy and specs over a number that is only cosmetic.
+    //
+    // A failure is not fatal. `bytes` stays 0, which the media library already
+    // renders as "unknown" rather than "0 B", and the problem is reported so
+    // the run says so out loud instead of silently leaving another 265 rows
+    // for someone to find later.
+    let datasheetBytes = 0
+    if (e.document) {
+      const measured = await measureRemoteBytes(e.document.url, { fetchImpl: fetch as never })
+      if (measured.ok) {
+        datasheetBytes = measured.bytes
+      } else {
+        problems.push(
+          `${e.sku}: datasheet size unmeasured (${measured.reason}: ${measured.detail}) — ${e.document.url}`,
+        )
+      }
+    }
+
     await db.$transaction(
       async (tx) => {
         // Founder-directed identity corrections: a product filed under the
@@ -311,7 +337,11 @@ async function main() {
               // Full URL — mediaUrl() passes http through untouched, so the
               // sheet is always served fresh from DuPont.
               storagePath: e.document.url,
-              bytes: 0,
+              // DuPont's size, not ours. The file occupies no storage of our
+              // own; this is recorded so the library can show a real size
+              // instead of a dash, and it is 0 only when the host would not
+              // tell us.
+              bytes: datasheetBytes,
               alt: e.document.title,
             },
             select: { id: true },
