@@ -43,6 +43,10 @@ import ARTICLE_08 from './articles/hose-routing-bend-radius-twist'
 import ARTICLE_09 from './articles/industrial-hose-is-not-hydraulic-hose'
 import ARTICLE_10 from './articles/excavator-hydraulic-hose-replacement'
 import ARTICLE_11 from './articles/chemical-transfer-hose-selection'
+import ARTICLE_12 from './articles/steam-hose-safety'
+import ARTICLE_13 from './articles/food-grade-hose-compliance'
+import ARTICLE_14 from './articles/forklift-hydraulic-hose-replacement'
+import ARTICLE_15 from './articles/tipper-and-transit-mixer-hose'
 
 const ARTICLES: BlogArticleSeed[] = [
   ARTICLE_01,
@@ -56,6 +60,10 @@ const ARTICLES: BlogArticleSeed[] = [
   ARTICLE_09,
   ARTICLE_10,
   ARTICLE_11,
+  ARTICLE_12,
+  ARTICLE_13,
+  ARTICLE_14,
+  ARTICLE_15,
 ]
 
 const DRY_RUN = process.argv.includes('--dry-run')
