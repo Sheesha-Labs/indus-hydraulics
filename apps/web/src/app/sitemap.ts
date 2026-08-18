@@ -1,6 +1,6 @@
 import type { MetadataRoute } from 'next'
 import { db } from '@indus/db'
-import { buildSitemapEntries, buildStaticEntries } from '@indus/domain'
+import { buildSitemapEntries, buildStaticEntries, serviceAreasOrdered } from '@indus/domain'
 import { BASE_URL } from '../lib/seo'
 import { getReplacementBrands, getReplacementSitemapKeys } from '../lib/replacement-data'
 
@@ -261,6 +261,14 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: a.sitemapPriority ? Number(a.sitemapPriority) : 0.4,
     }))
 
+  // Service areas — static data, so no query. Emitted inline for the same
+  // reason as industries: buildSitemapEntries only knows URL_SEGMENTS.
+  const serviceAreaEntries: MetadataRoute.Sitemap = serviceAreasOrdered().map((a) => ({
+    url: `${BASE_URL}/locations/${a.slug}`,
+    changeFrequency: 'monthly' as const,
+    priority: 0.7,
+  }))
+
   const staticEntries = buildStaticEntries(BASE_URL, [
     { path: '', priority: 1.0, changeFrequency: 'weekly' },
     // /c became a real category index in the v2 migration — it previously
@@ -276,6 +284,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     // technicians bookmark and forums link to, so they carry a higher
     // priority than most non-catalogue pages.
     { path: '/tools', priority: 0.7, changeFrequency: 'monthly' },
+    // On-site service areas. High-intent local surface ("hydraulic hose
+    // repair sharjah"), so they carry the same priority as the tools.
+    { path: '/locations', priority: 0.7, changeFrequency: 'monthly' },
     { path: '/tools/thread-identifier', priority: 0.7, changeFrequency: 'monthly' },
     { path: '/tools/pressure-converter', priority: 0.6, changeFrequency: 'monthly' },
     { path: '/tools/dash-size-chart', priority: 0.6, changeFrequency: 'monthly' },
@@ -319,6 +330,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...serviceCaseEntries,
     ...blogCategoryEntries,
     ...blogAuthorEntries,
+    ...serviceAreaEntries,
     ...replacementBrandEntries,
     ...replacementEntries,
   ]

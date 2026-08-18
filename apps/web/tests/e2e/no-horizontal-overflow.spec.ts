@@ -58,6 +58,10 @@ const ROUTES = [
   '/tools/pressure-converter',
   // The dash chart is a four-column table — the most likely tool page to bleed.
   '/tools/dash-size-chart',
+  '/locations',
+  // Habshan carries the longest constraint copy and the most zone chips.
+  '/locations/habshan',
+  '/locations/sharjah',
   '/about',
   '/contact',
   '/quote',
