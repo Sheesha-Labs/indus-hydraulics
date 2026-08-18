@@ -162,7 +162,7 @@ export default function BlogPostEditorClient({
               the server page would sever the indicator from every writer and
               it would never appear after a save. */}
           {savedAt && (
-            <span className="text-[12px] text-[oklch(0.55_0.12_150)]">Saved at {savedAt}</span>
+            <span className="text-[12px] text-ih-success-ink">Saved at {savedAt}</span>
           )}
           <Link
             href="/admin/blog"
@@ -284,7 +284,7 @@ function ContentForm({
       {/* grid-cols-1 explicitly: a bare `grid` makes one implicit max-content
           column, which a wide block card then widens past the viewport. */}
       <div className="grid grid-cols-1 items-start gap-6 lg:grid-cols-[minmax(0,1fr)_300px]">
-        <div className="min-w-0 space-y-5">
+        <div className="min-w-0 flex flex-col gap-5">
 
       <div className="grid grid-cols-2 gap-4">
         <div className="col-span-2">
@@ -297,7 +297,7 @@ function ContentForm({
             required
             defaultValue={post?.title ?? ''}
             type="text"
-            placeholder="Post title" className="text-[15px] font-semibold" />
+            placeholder="Post title" className="text-[15px] font-medium" />
         </div>
 
         <div>
@@ -338,7 +338,7 @@ function ContentForm({
             id="blogpost-category"
             name="categoryId"
             defaultValue={post?.categoryId ?? ''}
-            className="h-10 w-full rounded-md border border-ih-border bg-white px-2 text-[13px]"
+            className="h-10 w-full rounded-md border border-ih-border bg-ih-surface px-2 text-[13px]"
           >
             <option value="">— Uncategorised —</option>
             {categories.map((c) => (
@@ -364,7 +364,7 @@ function ContentForm({
             id="blogpost-author"
             name="blogAuthorId"
             defaultValue={post?.blogAuthorId ?? ''}
-            className="h-10 w-full rounded-md border border-ih-border bg-white px-2 text-[13px]"
+            className="h-10 w-full rounded-md border border-ih-border bg-ih-surface px-2 text-[13px]"
           >
             <option value="">— No public byline —</option>
             {authors.map((a) => (
@@ -491,7 +491,7 @@ function ContentForm({
             type="submit"
             name="publish"
             value="1"
-            className="h-10 rounded-md bg-ih-accent px-6 text-[13px] font-medium text-white transition-opacity hover:opacity-90"
+            className="h-10 rounded-md bg-ih-accent px-6 text-[13px] font-medium text-ih-accent-fg transition-opacity hover:bg-ih-accent-hover"
           >
             Publish
           </button>

@@ -131,14 +131,14 @@ function Thumb({
           className="h-full w-full object-cover"
         />
       ) : (
-        <span className="grid h-full w-full place-items-center font-mono text-[10px] uppercase tracking-[0.1em] text-ih-muted-2">
+        <span className="grid h-full w-full place-items-center font-mono text-[10.5px] uppercase tracking-[0.1em] text-ih-muted-2">
           {subtype(item)}
         </span>
       )}
 
       {usages.length > 0 ? (
         <span
-          className="absolute bottom-1.5 left-1.5 inline-flex h-5 items-center gap-1 rounded-sm bg-ih-ink/80 px-1.5 text-[10px] font-medium text-white backdrop-blur-[2px]"
+          className="absolute bottom-1.5 left-1.5 inline-flex h-5 items-center gap-1 rounded-sm bg-ih-ink/80 px-1.5 text-[11px] font-medium text-white backdrop-blur-[2px]"
           title={summariseUsage(usages)}
         >
           <Link2 size={9} strokeWidth={2} aria-hidden="true" />
@@ -333,7 +333,7 @@ export function MediaEmptyState({
   resetHref: string
 }) {
   return (
-    <div className="rounded-lg border border-dashed border-ih-border py-16 text-center">
+    <div className="rounded-lg rounded-lg border border-ih-border py-16 text-center">
       {trashed ? (
         <>
           <p className="text-[13.5px] text-ih-ink-2">Trash is empty.</p>

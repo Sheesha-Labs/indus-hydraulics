@@ -85,7 +85,7 @@ export default function CmsPageEditorClient({ isNew, page, recentImages }: Props
               the server page would sever the indicator from every writer and
               it would never appear after a save. */}
           {savedAt && (
-            <span className="text-[12px] text-[oklch(0.55_0.12_150)]">Saved at {savedAt}</span>
+            <span className="text-[12px] text-ih-success-ink">Saved at {savedAt}</span>
           )}
           <Link
             href="/admin/cms?tab=pages"
@@ -136,7 +136,7 @@ export default function CmsPageEditorClient({ isNew, page, recentImages }: Props
 
 function ContentForm({ isNew, page }: { isNew: boolean; page: CmsPage | null }) {
   return (
-    <form action={savePage} className="space-y-5">
+    <form action={savePage} className="flex flex-col gap-5">
       <input type="hidden" name="id" value={isNew ? 'new' : page?.id ?? ''} />
 
       <div className="grid grid-cols-2 gap-4">
@@ -149,7 +149,7 @@ function ContentForm({ isNew, page }: { isNew: boolean; page: CmsPage | null }) 
             name="title"
             required
             defaultValue={page?.title ?? ''}
-            type="text" className="text-[15px] font-semibold" />
+            type="text" className="text-[15px] font-medium" />
         </div>
         <div>
           <label htmlFor="cmspage-slug" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
@@ -219,7 +219,7 @@ function ContentForm({ isNew, page }: { isNew: boolean; page: CmsPage | null }) 
           type="submit"
           name="publish"
           value="1"
-          className="h-10 px-6 bg-ih-accent text-white text-[13px] font-medium hover:opacity-90"
+          className="h-10 px-6 bg-ih-accent text-ih-accent-fg text-[13px] font-medium hover:bg-ih-accent-hover"
         >
           {page?.isPublished ? 'Update' : 'Publish'}
         </button>

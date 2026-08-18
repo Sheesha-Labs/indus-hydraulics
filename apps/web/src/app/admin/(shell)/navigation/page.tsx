@@ -26,8 +26,8 @@ export default async function NavigationListPage({ params }: Props) {
       sub={'Manage every nav surface — header, megamenu, footer, and mobile drawer.'}
       actions={missingLocations.length > 0 ? <CreateMenuButton missing={missingLocations} /> : null}
     >
-        <div className="bg-white border border-ih-border">
-          <div className="grid grid-cols-[1fr_180px_120px_140px_120px] px-4 py-2.5 bg-ih-bg border-b border-ih-border font-mono text-[10px] tracking-[0.1em] uppercase text-ih-muted">
+        <div className="bg-ih-surface border border-ih-border">
+          <div className="grid grid-cols-[1fr_180px_120px_140px_120px] px-4 py-2.5 bg-ih-bg border-b border-ih-border font-mono text-[10.5px] tracking-[0.1em] uppercase text-ih-muted">
             <div>Name</div>
             <div>Location</div>
             <div className="text-center">Items</div>

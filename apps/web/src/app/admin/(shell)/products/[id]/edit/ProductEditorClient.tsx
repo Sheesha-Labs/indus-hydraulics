@@ -242,7 +242,7 @@ export default function ProductEditorClient({
             instead would silently remove the control with no hint as to why.
           */}
           {savedAt && (
-            <span className="text-[12px] text-[oklch(0.55_0.12_150)]">Saved at {savedAt}</span>
+            <span className="text-[12px] text-ih-success-ink">Saved at {savedAt}</span>
           )}
           {previewUrl ? (
             <a
@@ -369,7 +369,7 @@ function CoreTab({
   }
 
   return (
-    <form action={onSubmit} className="flex flex-col gap-5 bg-white border border-ih-border p-6 max-w-3xl">
+    <form action={onSubmit} className="flex flex-col gap-5 bg-ih-surface border border-ih-border p-6 max-w-3xl">
       <input type="hidden" name="id" value={product.id} />
 
       {error && <ErrorBanner message={error} />}
@@ -490,7 +490,7 @@ function DescriptionTab({
   }
 
   return (
-    <form action={onSubmit} className="flex flex-col gap-4 bg-white border border-ih-border p-6 max-w-4xl">
+    <form action={onSubmit} className="flex flex-col gap-4 bg-ih-surface border border-ih-border p-6 max-w-4xl">
       <input type="hidden" name="id" value={product.id} />
 
       {error && <ErrorBanner message={error} />}
@@ -525,7 +525,7 @@ function DescriptionTab({
           value={body}
           onChange={(e) => setBody(e.target.value)}
           rows={20}
-          className="w-full px-3 py-2 border border-ih-border bg-white text-[13px] font-mono leading-relaxed resize-y"
+          className="w-full px-3 py-2 border border-ih-border bg-ih-surface text-[13px] font-mono leading-relaxed resize-y"
         />
         <span className="text-[11px] text-ih-muted-2">
           Markdown supported · {body.length.toLocaleString()} / 20,000 chars · Use <code>![alt](url)</code> to embed images.
@@ -562,7 +562,7 @@ function CommerceTab({
   }
 
   return (
-    <form action={onSubmit} className="flex flex-col gap-5 bg-white border border-ih-border p-6 max-w-3xl">
+    <form action={onSubmit} className="flex flex-col gap-5 bg-ih-surface border border-ih-border p-6 max-w-3xl">
       <input type="hidden" name="id" value={product.id} />
 
       {error && <ErrorBanner message={error} />}
@@ -819,9 +819,9 @@ function TemplateSelector({
   }
 
   return (
-    <section className="bg-white border border-ih-border p-5 flex flex-col gap-3">
+    <section className="bg-ih-surface border border-ih-border p-5 flex flex-col gap-3">
       <div className="flex items-center justify-between">
-        <h3 className="text-[14px] font-semibold text-ih-ink">Spec template</h3>
+        <h3 className="text-[14px] font-medium text-ih-ink">Spec template</h3>
         {currentTemplate && (
           <a
             href={`/admin/spec-templates/${currentTemplate.id}`}
@@ -839,7 +839,7 @@ function TemplateSelector({
         <select
           value={draftId}
           onChange={(e) => setDraftId(e.target.value)}
-          className="h-9 px-2 border border-ih-border bg-white text-[13px] flex-1 max-w-[300px]"
+          className="h-9 px-2 border border-ih-border bg-ih-surface text-[13px] flex-1 max-w-[300px]"
         >
           <option value="">— None (free-form specs only) —</option>
           {availableTemplates.map((t) => (
@@ -852,12 +852,12 @@ function TemplateSelector({
           type="button"
           onClick={handleApply}
           disabled={pending || draftId === (currentTemplate?.id ?? '')}
-          className="h-9 px-4 bg-ih-navy text-white text-[12px] font-medium hover:opacity-90 disabled:opacity-50"
+          className="h-9 px-4 bg-ih-navy text-ih-bg text-[12px] font-medium hover:bg-ih-ink disabled:opacity-50"
         >
           {pending ? 'Switching…' : 'Apply'}
         </button>
         {error && (
-          <span className="font-mono text-[11px] text-[oklch(0.5_0.18_25)]" role="alert">
+          <span className="font-mono text-[11px] text-ih-danger-ink" role="alert">
             {error}
           </span>
         )}
@@ -911,12 +911,12 @@ function TemplateSpecForm({
     <form
       ref={formRef}
       action={onSubmit}
-      className="bg-white border border-ih-border flex flex-col"
+      className="bg-ih-surface border border-ih-border flex flex-col"
     >
       <input type="hidden" name="productId" value={productId} />
 
       <div className="px-5 py-3 border-b border-ih-border flex items-center justify-between">
-        <h3 className="text-[14px] font-semibold text-ih-ink">
+        <h3 className="text-[14px] font-medium text-ih-ink">
           {template.name} — fields
         </h3>
         <span className="font-mono text-[11px] text-ih-muted">
@@ -937,7 +937,7 @@ function TemplateSpecForm({
       ) : (
         Object.entries(grouped).map(([group, fields]) => (
           <div key={group} className="border-b border-ih-border last:border-b-0">
-            <div className="px-5 py-2.5 bg-ih-bg font-mono text-[10px] tracking-[0.1em] uppercase text-ih-muted">
+            <div className="px-5 py-2.5 bg-ih-bg font-mono text-[10.5px] tracking-[0.1em] uppercase text-ih-muted">
               {group}
             </div>
             <div className="px-5 py-4 grid grid-cols-2 gap-x-5 gap-y-4">
@@ -954,13 +954,13 @@ function TemplateSpecForm({
           <button
             type="submit"
             disabled={pending}
-            className="h-9 px-4 bg-ih-accent text-white text-[12px] font-medium hover:opacity-90 disabled:opacity-50"
+            className="h-9 px-4 bg-ih-accent text-ih-accent-fg text-[12px] font-medium hover:bg-ih-accent-hover disabled:opacity-50"
           >
             {pending ? 'Saving…' : 'Save spec values'}
           </button>
-          {saved && <span className="font-mono text-[11px] text-[oklch(0.4_0.14_145)]">✓ Saved</span>}
+          {saved && <span className="font-mono text-[11px] text-ih-success-ink">✓ Saved</span>}
           {error && (
-            <span className="font-mono text-[11px] text-[oklch(0.5_0.18_25)]" role="alert">
+            <span className="font-mono text-[11px] text-ih-danger-ink" role="alert">
               {error}
             </span>
           )}
@@ -979,7 +979,7 @@ function TemplateFieldInput({
 }) {
   const inputName = `field:${field.id}`
   const baseCls =
-    'h-9 w-full px-3 border border-ih-border bg-white text-[13px] focus:outline-none focus:border-ih-ink'
+    'h-9 w-full px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-ink'
 
   let control: React.ReactNode
   if (field.dataType === 'select') {
@@ -1033,14 +1033,14 @@ function TemplateFieldInput({
         {field.unit && (
           <span className="font-mono text-[11px] text-ih-muted">({field.unit})</span>
         )}
-        {field.isRequired && <span className="text-[oklch(0.5_0.18_25)]">*</span>}
+        {field.isRequired && <span className="text-ih-danger-ink">*</span>}
         {field.isKeyFeature && (
-          <span className="px-1 font-mono text-[9px] text-[oklch(0.4_0.14_145)] bg-[oklch(0.94_0.06_145)] rounded-sm">
+          <span className="px-1 font-mono text-[10.5px] text-ih-success-ink bg-ih-success-soft rounded-sm">
             KEY
           </span>
         )}
         {field.isQuickSpec && (
-          <span className="px-1 font-mono text-[9px] text-ih-accent bg-[oklch(0.96_0.05_240)] rounded-sm">
+          <span className="px-1 font-mono text-[10.5px] text-ih-accent bg-[oklch(0.96_0.05_240)] rounded-sm">
             QUICK
           </span>
         )}
@@ -1073,7 +1073,7 @@ function FreeFormSpecsSection({
   return (
     <section className="flex flex-col gap-4">
       <div>
-        <h3 className="text-[14px] font-semibold text-ih-ink mb-1">
+        <h3 className="text-[14px] font-medium text-ih-ink mb-1">
           {templateAttached ? 'Additional specs' : 'Specs'}
         </h3>
         <p className="text-[12px] text-ih-muted">
@@ -1085,8 +1085,8 @@ function FreeFormSpecsSection({
 
       {specs.length > 0 &&
         Object.entries(groups).map(([group, items]) => (
-          <div key={group} className="bg-white border border-ih-border">
-            <div className="px-4 py-2.5 border-b border-ih-border bg-ih-bg font-mono text-[10px] tracking-[0.1em] uppercase text-ih-muted">
+          <div key={group} className="bg-ih-surface border border-ih-border">
+            <div className="px-4 py-2.5 border-b border-ih-border bg-ih-bg font-mono text-[10.5px] tracking-[0.1em] uppercase text-ih-muted">
               {group}
             </div>
             {items.map((s) => (
@@ -1146,24 +1146,24 @@ function SpecRow({
           name="group"
           defaultValue={spec.group}
           placeholder="Group"
-          className="h-8 px-2 border border-ih-border bg-white text-[12px]"
+          className="h-8 px-2 border border-ih-border bg-ih-surface text-[12px]"
         />
         <input
           name="label"
           required
           defaultValue={spec.label}
-          className="h-8 px-2 border border-ih-border bg-white text-[12px]"
+          className="h-8 px-2 border border-ih-border bg-ih-surface text-[12px]"
         />
         <input
           name="value"
           required
           defaultValue={spec.value}
-          className="h-8 px-2 border border-ih-border bg-white font-mono text-[12px]"
+          className="h-8 px-2 border border-ih-border bg-ih-surface font-mono text-[12px]"
         />
         <input
           name="unit"
           defaultValue={spec.unit ?? ''}
-          className="h-8 px-2 border border-ih-border bg-white font-mono text-[12px]"
+          className="h-8 px-2 border border-ih-border bg-ih-surface font-mono text-[12px]"
         />
         <label className="flex items-center gap-1 text-[11px]">
           <input type="checkbox" name="isFilterable" defaultChecked={spec.isFilterable} />
@@ -1172,7 +1172,7 @@ function SpecRow({
         <button
           type="submit"
           disabled={pending}
-          className="h-8 px-3 bg-ih-accent text-white text-[11px] font-medium hover:opacity-90 disabled:opacity-50"
+          className="h-8 px-3 bg-ih-accent text-ih-accent-fg text-[11px] font-medium hover:bg-ih-accent-hover disabled:opacity-50"
         >
           Save
         </button>
@@ -1184,7 +1184,7 @@ function SpecRow({
           Cancel
         </button>
         {error && (
-          <p className="col-span-full text-[11px] text-[oklch(0.5_0.18_25)]" role="alert">
+          <p className="col-span-full text-[11px] text-ih-danger-ink" role="alert">
             {error}
           </p>
         )}
@@ -1197,12 +1197,12 @@ function SpecRow({
       <div className="text-ih-ink-2">{spec.label}</div>
       <div className="font-mono text-ih-ink">{spec.value}</div>
       <div className="font-mono text-[11px] text-ih-muted">{spec.unit ?? ''}</div>
-      <div className="font-mono text-[10px] text-ih-muted-2">{spec.isFilterable ? 'filter' : ''}</div>
+      <div className="font-mono text-[11px] text-ih-muted-2">{spec.isFilterable ? 'filter' : ''}</div>
       <div className="flex gap-3 justify-end">
         <button
           type="button"
           onClick={() => setEditing(true)}
-          className="font-mono text-[10px] text-ih-muted hover:text-ih-accent"
+          className="font-mono text-[11px] text-ih-muted hover:text-ih-accent"
         >
           Edit
         </button>
@@ -1210,7 +1210,7 @@ function SpecRow({
           type="button"
           onClick={onDelete}
           disabled={pending}
-          className="font-mono text-[10px] text-ih-muted hover:text-[oklch(0.5_0.18_25)] disabled:opacity-50"
+          className="font-mono text-[11px] text-ih-muted hover:text-ih-danger-ink disabled:opacity-50"
         >
           Remove
         </button>
@@ -1247,7 +1247,7 @@ function AddSpecForm({
     <form
       ref={formRef}
       action={onSubmit}
-      className="bg-white border border-ih-border p-4 grid grid-cols-[1fr_1fr_1fr_80px_auto_auto] gap-3 items-end"
+      className="bg-ih-surface border border-ih-border p-4 grid grid-cols-[1fr_1fr_1fr_80px_auto_auto] gap-3 items-end"
     >
       <input type="hidden" name="productId" value={productId} />
       <Field label="Group">
@@ -1269,12 +1269,12 @@ function AddSpecForm({
       <button
         type="submit"
         disabled={pending}
-        className="h-9 px-4 bg-ih-navy text-white text-[12px] font-medium hover:opacity-90 disabled:opacity-50"
+        className="h-9 px-4 bg-ih-navy text-ih-bg text-[12px] font-medium hover:bg-ih-ink disabled:opacity-50"
       >
         {pending ? '…' : 'Add row'}
       </button>
       {error && (
-        <p className="col-span-full text-[11px] text-[oklch(0.5_0.18_25)]" role="alert">
+        <p className="col-span-full text-[11px] text-ih-danger-ink" role="alert">
           {error}
         </p>
       )}
@@ -1350,7 +1350,7 @@ function ImagesTab({
       {images.length === 0 ? (
         <p className="text-[13px] text-ih-muted">No images yet — paste a URL below to add the first one.</p>
       ) : (
-        <div className="bg-white border border-ih-border">
+        <div className="bg-ih-surface border border-ih-border">
           {images.map((img, i) => (
             <div
               key={img.id}
@@ -1367,7 +1367,7 @@ function ImagesTab({
               <div className="flex flex-col gap-1 min-w-0">
                 <span className="font-mono text-[11px] text-ih-muted truncate">{img.url}</span>
                 <span className="text-[12px] text-ih-ink-2">{img.alt ?? <em className="text-ih-muted-2">no alt</em>}</span>
-                <span className="font-mono text-[10px] text-ih-muted-2">Position {i + 1}</span>
+                <span className="font-mono text-[11px] text-ih-muted-2">Position {i + 1}</span>
               </div>
               <div className="flex flex-col items-end gap-1.5">
                 <div className="flex gap-1">
@@ -1394,7 +1394,7 @@ function ImagesTab({
                   type="button"
                   onClick={() => onDelete(img.id)}
                   disabled={pending}
-                  className="font-mono text-[10px] text-ih-muted hover:text-[oklch(0.5_0.18_25)] disabled:opacity-50"
+                  className="font-mono text-[11px] text-ih-muted hover:text-ih-danger-ink disabled:opacity-50"
                 >
                   Remove
                 </button>
@@ -1408,7 +1408,7 @@ function ImagesTab({
       <form
         ref={formRef}
         action={onAdd}
-        className="bg-white border border-ih-border p-4 flex flex-col gap-3"
+        className="bg-ih-surface border border-ih-border p-4 flex flex-col gap-3"
         encType="multipart/form-data"
       >
         <input type="hidden" name="productId" value={productId} />
@@ -1428,11 +1428,11 @@ function ImagesTab({
           <button
             type="submit"
             disabled={pending}
-            className="h-9 px-4 bg-ih-navy text-white text-[12px] font-medium hover:opacity-90 disabled:opacity-50"
+            className="h-9 px-4 bg-ih-navy text-ih-bg text-[12px] font-medium hover:bg-ih-ink disabled:opacity-50"
           >
             {pending ? 'Uploading…' : '↑ Upload image'}
           </button>
-          {error && <span className="text-[11px] text-[oklch(0.5_0.18_25)]">{error}</span>}
+          {error && <span className="text-[11px] text-ih-danger-ink">{error}</span>}
         </div>
       </form>
     </div>
@@ -1498,7 +1498,7 @@ function DocumentsTab({
       {documents.length === 0 ? (
         <p className="text-[13px] text-ih-muted">No documents yet.</p>
       ) : (
-        <div className="bg-white border border-ih-border">
+        <div className="bg-ih-surface border border-ih-border">
           {documents.map((d, i) => (
             <div
               key={d.id}
@@ -1506,7 +1506,7 @@ function DocumentsTab({
                 i > 0 ? 'border-t border-ih-border' : ''
               }`}
             >
-              <span className="font-mono text-[10px] tracking-[0.08em] uppercase text-ih-muted bg-ih-bg px-2 py-1 inline-block w-fit">
+              <span className="font-mono text-[10.5px] tracking-[0.08em] uppercase text-ih-muted bg-ih-bg px-2 py-1 inline-block w-fit">
                 {DOC_KIND_LABELS[d.kind] ?? d.kind}
               </span>
               <div className="flex flex-col gap-0.5 min-w-0">
@@ -1521,12 +1521,12 @@ function DocumentsTab({
                 </a>
               </div>
               <span className="font-mono text-[11px] text-ih-muted uppercase">{d.language}</span>
-              <span className="font-mono text-[10px] text-ih-muted-2">{d.isGated ? 'gated' : 'public'}</span>
+              <span className="font-mono text-[10.5px] text-ih-muted-2">{d.isGated ? 'gated' : 'public'}</span>
               <button
                 type="button"
                 onClick={() => onDelete(d.id)}
                 disabled={pending}
-                className="font-mono text-[10px] text-ih-muted hover:text-[oklch(0.5_0.18_25)] disabled:opacity-50 text-right"
+                className="font-mono text-[11px] text-ih-muted hover:text-ih-danger-ink disabled:opacity-50 text-right"
               >
                 Remove
               </button>
@@ -1538,7 +1538,7 @@ function DocumentsTab({
       <form
         ref={formRef}
         action={onAdd}
-        className="bg-white border border-ih-border p-4 grid grid-cols-2 gap-3"
+        className="bg-ih-surface border border-ih-border p-4 grid grid-cols-2 gap-3"
         encType="multipart/form-data"
       >
         <input type="hidden" name="productId" value={productId} />
@@ -1588,11 +1588,11 @@ function DocumentsTab({
           <button
             type="submit"
             disabled={pending}
-            className="h-9 px-4 bg-ih-navy text-white text-[12px] font-medium hover:opacity-90 disabled:opacity-50"
+            className="h-9 px-4 bg-ih-navy text-ih-bg text-[12px] font-medium hover:bg-ih-ink disabled:opacity-50"
           >
             {pending ? 'Uploading…' : '↑ Upload document'}
           </button>
-          {error && <span className="text-[11px] text-[oklch(0.5_0.18_25)]">{error}</span>}
+          {error && <span className="text-[11px] text-ih-danger-ink">{error}</span>}
         </div>
       </form>
     </div>
@@ -1615,8 +1615,8 @@ function CrossRefsTab({
       {crossRefs.length === 0 ? (
         <p className="text-[13px] text-ih-muted">No cross-references yet.</p>
       ) : (
-        <div className="bg-white border border-ih-border">
-          <div className="grid grid-cols-[1fr_1fr_140px_120px] gap-3 px-4 py-2.5 border-b border-ih-border bg-ih-bg font-mono text-[10px] tracking-[0.1em] uppercase text-ih-muted">
+        <div className="bg-ih-surface border border-ih-border">
+          <div className="grid grid-cols-[1fr_1fr_140px_120px] gap-3 px-4 py-2.5 border-b border-ih-border bg-ih-bg font-mono text-[10.5px] tracking-[0.1em] uppercase text-ih-muted">
             <div>Competitor brand</div>
             <div>MPN</div>
             <div>Compatibility</div>
@@ -1678,18 +1678,18 @@ function CrossRefRow({
           name="competitorBrand"
           required
           defaultValue={cr.competitorBrand}
-          className="h-8 px-2 border border-ih-border bg-white text-[12px]"
+          className="h-8 px-2 border border-ih-border bg-ih-surface text-[12px]"
         />
         <input
           name="competitorMpn"
           required
           defaultValue={cr.competitorMpn}
-          className="h-8 px-2 border border-ih-border bg-white font-mono text-[12px]"
+          className="h-8 px-2 border border-ih-border bg-ih-surface font-mono text-[12px]"
         />
         <select
           name="compatibility"
           defaultValue={cr.compatibility}
-          className="h-8 px-2 border border-ih-border bg-white text-[12px]"
+          className="h-8 px-2 border border-ih-border bg-ih-surface text-[12px]"
         >
           <option value="direct">Direct</option>
           <option value="compatible">Compatible</option>
@@ -1699,7 +1699,7 @@ function CrossRefRow({
           <button
             type="submit"
             disabled={pending}
-            className="h-8 px-3 bg-ih-accent text-white text-[11px] font-medium hover:opacity-90 disabled:opacity-50"
+            className="h-8 px-3 bg-ih-accent text-ih-accent-fg text-[11px] font-medium hover:bg-ih-accent-hover disabled:opacity-50"
           >
             Save
           </button>
@@ -1712,7 +1712,7 @@ function CrossRefRow({
           </button>
         </div>
         {error && (
-          <p className="col-span-full text-[11px] text-[oklch(0.5_0.18_25)]" role="alert">
+          <p className="col-span-full text-[11px] text-ih-danger-ink" role="alert">
             {error}
           </p>
         )}
@@ -1731,7 +1731,7 @@ function CrossRefRow({
         <button
           type="button"
           onClick={() => setEditing(true)}
-          className="font-mono text-[10px] text-ih-muted hover:text-ih-accent"
+          className="font-mono text-[11px] text-ih-muted hover:text-ih-accent"
         >
           Edit
         </button>
@@ -1739,7 +1739,7 @@ function CrossRefRow({
           type="button"
           onClick={onDelete}
           disabled={pending}
-          className="font-mono text-[10px] text-ih-muted hover:text-[oklch(0.5_0.18_25)] disabled:opacity-50"
+          className="font-mono text-[11px] text-ih-muted hover:text-ih-danger-ink disabled:opacity-50"
         >
           Remove
         </button>
@@ -1776,7 +1776,7 @@ function AddCrossRefForm({
     <form
       ref={formRef}
       action={onSubmit}
-      className="bg-white border border-ih-border p-4 grid grid-cols-[1fr_1fr_140px_auto] gap-3 items-end"
+      className="bg-ih-surface border border-ih-border p-4 grid grid-cols-[1fr_1fr_140px_auto] gap-3 items-end"
     >
       <input type="hidden" name="productId" value={productId} />
       <Field label="Competitor brand *">
@@ -1795,12 +1795,12 @@ function AddCrossRefForm({
       <button
         type="submit"
         disabled={pending}
-        className="h-9 px-4 bg-ih-navy text-white text-[12px] font-medium hover:opacity-90 disabled:opacity-50"
+        className="h-9 px-4 bg-ih-navy text-ih-bg text-[12px] font-medium hover:bg-ih-ink disabled:opacity-50"
       >
         {pending ? '…' : 'Add'}
       </button>
       {error && (
-        <p className="col-span-full text-[11px] text-[oklch(0.5_0.18_25)]" role="alert">
+        <p className="col-span-full text-[11px] text-ih-danger-ink" role="alert">
           {error}
         </p>
       )}
@@ -1827,7 +1827,7 @@ function FaqsTab({
       {faqs.length === 0 ? (
         <p className="text-[13px] text-ih-muted">No FAQs yet — add the first one below.</p>
       ) : (
-        <div className="bg-white border border-ih-border flex flex-col">
+        <div className="bg-ih-surface border border-ih-border flex flex-col">
           {faqs.map((f, i) => (
             <FaqRow
               key={f.id}
@@ -1915,7 +1915,7 @@ function FaqRow({
           <button
             type="submit"
             disabled={pending}
-            className="h-8 px-3 bg-ih-accent text-white text-[11px] font-medium hover:opacity-90 disabled:opacity-50"
+            className="h-8 px-3 bg-ih-accent text-ih-accent-fg text-[11px] font-medium hover:bg-ih-accent-hover disabled:opacity-50"
           >
             {pending ? 'Saving…' : 'Save'}
           </button>
@@ -1927,7 +1927,7 @@ function FaqRow({
             Cancel
           </button>
           {error && (
-            <span className="text-[11px] text-[oklch(0.5_0.18_25)]" role="alert">
+            <span className="text-[11px] text-ih-danger-ink" role="alert">
               {error}
             </span>
           )}
@@ -1968,7 +1968,7 @@ function FaqRow({
         <button
           type="button"
           onClick={() => setEditing(true)}
-          className="font-mono text-[10px] text-ih-muted hover:text-ih-accent"
+          className="font-mono text-[11px] text-ih-muted hover:text-ih-accent"
         >
           Edit
         </button>
@@ -1976,7 +1976,7 @@ function FaqRow({
           type="button"
           onClick={onDelete}
           disabled={pending}
-          className="font-mono text-[10px] text-ih-muted hover:text-[oklch(0.5_0.18_25)] disabled:opacity-50"
+          className="font-mono text-[11px] text-ih-muted hover:text-ih-danger-ink disabled:opacity-50"
         >
           Remove
         </button>
@@ -2013,7 +2013,7 @@ function AddFaqForm({
     <form
       ref={formRef}
       action={onSubmit}
-      className="bg-white border border-ih-border p-4 flex flex-col gap-3"
+      className="bg-ih-surface border border-ih-border p-4 flex flex-col gap-3"
     >
       <input type="hidden" name="productId" value={productId} />
       <Field label="Question *">
@@ -2037,12 +2037,12 @@ function AddFaqForm({
         <button
           type="submit"
           disabled={pending}
-          className="h-9 px-4 bg-ih-navy text-white text-[12px] font-medium hover:opacity-90 disabled:opacity-50 self-start"
+          className="h-9 px-4 bg-ih-navy text-ih-bg text-[12px] font-medium hover:bg-ih-ink disabled:opacity-50 self-start"
         >
           {pending ? 'Adding…' : '+ Add FAQ'}
         </button>
         {error && (
-          <span className="text-[11px] text-[oklch(0.5_0.18_25)]" role="alert">
+          <span className="text-[11px] text-ih-danger-ink" role="alert">
             {error}
           </span>
         )}
@@ -2098,11 +2098,11 @@ function rootOf(url: string): string {
 // ── Shared primitives ───────────────────────────────────────────────────────
 
 const inputCls =
-  'h-9 w-full px-3 border border-ih-border bg-white text-[13px] focus:outline-none focus:border-ih-accent'
+  'h-9 w-full px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent'
 const textareaCls =
-  'w-full px-3 py-2 border border-ih-border bg-white text-[13px] resize-y focus:outline-none focus:border-ih-accent'
+  'w-full px-3 py-2 border border-ih-border bg-ih-surface text-[13px] resize-y focus:outline-none focus:border-ih-accent'
 const selectCls =
-  'h-9 w-full px-2 border border-ih-border bg-white text-[13px] focus:outline-none focus:border-ih-accent'
+  'h-9 w-full px-2 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent'
 
 function Field({
   label,
@@ -2120,7 +2120,7 @@ function Field({
       <span className="text-[12px] font-medium text-ih-ink-2">{label}</span>
       {children}
       {error ? (
-        <span className="text-[11px] text-[oklch(0.5_0.18_25)]" role="alert">
+        <span className="text-[11px] text-ih-danger-ink" role="alert">
           {error}
         </span>
       ) : (
@@ -2133,7 +2133,7 @@ function Field({
 function Section({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <div className="flex flex-col gap-3">
-      <span className="font-mono text-[10px] tracking-[0.12em] uppercase text-ih-muted">{title}</span>
+      <span className="font-mono text-[10.5px] tracking-[0.12em] uppercase text-ih-muted">{title}</span>
       {children}
     </div>
   )
@@ -2142,7 +2142,7 @@ function Section({ title, children }: { title: string; children: React.ReactNode
 function ErrorBanner({ message }: { message: string }) {
   return (
     <div
-      className="px-4 py-3 border border-[oklch(0.4_0.18_25)] bg-[oklch(0.97_0.04_25)] text-[13px] text-[oklch(0.5_0.18_25)]"
+      className="px-4 py-3 border border-[oklch(0.4_0.18_25)] bg-ih-danger-soft text-[13px] text-ih-danger-ink"
       role="alert"
     >
       {message}
@@ -2156,7 +2156,7 @@ function SaveButton({ pending, children }: { pending: boolean; children: React.R
       <button
         type="submit"
         disabled={pending}
-        className="h-10 px-5 bg-ih-accent text-white text-[13px] font-medium hover:opacity-90 disabled:opacity-50"
+        className="h-10 px-5 bg-ih-accent text-ih-accent-fg text-[13px] font-medium hover:bg-ih-accent-hover disabled:opacity-50"
       >
         {pending ? 'Saving…' : children}
       </button>
@@ -2196,11 +2196,11 @@ function DeleteButton({ id }: { id: string }) {
             if (res && !res.success) setError(res.message)
           })
         }}
-        className="h-9 px-3 border border-ih-border text-[12px] text-ih-muted hover:border-[oklch(0.5_0.18_25)] hover:text-[oklch(0.5_0.18_25)] disabled:opacity-50"
+        className="h-9 px-3 border border-ih-border text-[12px] text-ih-muted hover:border-[oklch(0.5_0.18_25)] hover:text-ih-danger-ink disabled:opacity-50"
       >
         {pending ? 'Deleting…' : 'Delete'}
       </button>
-      {error && <span className="text-[10px] text-[oklch(0.5_0.18_25)]">{error}</span>}
+      {error && <span className="text-[11px] text-ih-danger-ink">{error}</span>}
     </>
   )
 }

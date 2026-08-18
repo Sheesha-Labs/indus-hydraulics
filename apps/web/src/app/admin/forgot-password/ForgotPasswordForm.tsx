@@ -19,7 +19,7 @@ export default function ForgotPasswordForm() {
   if (state && 'done' in state) {
     return (
       <div>
-        <h1 className="mb-2 text-[22px] font-semibold text-white">Check your email</h1>
+        <h1 className="mb-2 text-[22px] font-medium text-white">Check your email</h1>
         <p className="mb-2 text-[13px] leading-relaxed text-[oklch(0.75_0.02_250)]">{NEUTRAL}</p>
         <p className="mb-7 text-[13px] leading-relaxed text-[oklch(0.68_0.03_250)]">
           The link is valid for 60 minutes and can be used once. Your current password keeps
@@ -37,7 +37,7 @@ export default function ForgotPasswordForm() {
 
   return (
     <>
-      <h1 className="mb-1 text-[22px] font-semibold text-white">Reset your password</h1>
+      <h1 className="mb-1 text-[22px] font-medium text-white">Reset your password</h1>
       <p className="mb-7 text-[13px] text-[oklch(0.68_0.03_250)]">
         We&apos;ll email you a single-use link to choose a new one.
       </p>
@@ -62,7 +62,7 @@ export default function ForgotPasswordForm() {
         <button
           type="submit"
           disabled={pending}
-          className="mt-1 h-11 bg-ih-accent text-sm font-medium text-white transition-opacity hover:opacity-90 disabled:opacity-50"
+          className="mt-1 h-11 bg-ih-accent text-sm font-medium text-ih-accent-fg transition-opacity hover:bg-ih-accent-hover disabled:opacity-50"
         >
           {pending ? 'Sending…' : 'Email me a link'}
         </button>

@@ -60,7 +60,7 @@ export default function AdminSignInForm({ next }: { next?: string }) {
       <button
         type="submit"
         disabled={pending}
-        className="h-11 bg-ih-accent text-white text-sm font-medium hover:opacity-90 transition-opacity disabled:opacity-50 mt-1"
+        className="h-11 bg-ih-accent text-ih-accent-fg text-sm font-medium hover:bg-ih-accent-hover transition-opacity disabled:opacity-50 mt-1"
       >
         {pending ? 'Signing in…' : 'Sign in →'}
       </button>

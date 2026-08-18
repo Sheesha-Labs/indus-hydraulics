@@ -55,12 +55,12 @@ export default function FocusKeywordChecklist({ focusKeyword, title, description
         <li
           key={item.id}
           className={`flex items-center gap-2 ${
-            item.pass ? 'text-[oklch(0.4_0.14_145)]' : 'text-ih-muted'
+            item.pass ? 'text-ih-success-ink' : 'text-ih-muted'
           }`}
         >
           <span
             aria-hidden
-            className={`inline-block w-3.5 h-3.5 grid place-items-center text-[10px] ${
+            className={`inline-block w-3.5 h-3.5 grid place-items-center text-[11px] ${
               item.pass
                 ? 'bg-[oklch(0.4_0.14_145)] text-white'
                 : 'border border-ih-border text-transparent'

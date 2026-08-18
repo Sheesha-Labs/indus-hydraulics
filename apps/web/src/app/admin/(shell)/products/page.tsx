@@ -23,9 +23,9 @@ type Props = {
 }
 
 const STATUS_COLORS: Record<string, string> = {
-  active: 'text-[oklch(0.4_0.14_145)] bg-[oklch(0.94_0.06_145)]',
+  active: 'text-ih-success-ink bg-ih-success-soft',
   draft: 'text-ih-muted bg-ih-surface-2',
-  discontinued: 'text-[oklch(0.5_0.12_25)] bg-[oklch(0.96_0.04_25)]',
+  discontinued: 'text-ih-danger-ink bg-ih-danger-soft',
 }
 
 const PAGE_SIZE = 50
@@ -147,7 +147,7 @@ export default async function AdminProductsPage({ params, searchParams }: Props)
           </Link>
           <Link
             href={`/admin/products/new`}
-            className="flex h-9 items-center rounded-md bg-ih-accent px-4 text-[13px] font-medium text-white transition-opacity hover:opacity-90"
+            className="flex h-9 items-center rounded-md bg-ih-accent px-4 text-[13px] font-medium text-ih-accent-fg transition-opacity hover:bg-ih-accent-hover"
           >
             + Add product
           </Link>
@@ -199,7 +199,7 @@ export default async function AdminProductsPage({ params, searchParams }: Props)
           {sortDir === 'asc' && <input type="hidden" name="dir" value="asc" />}
           <button
             type="submit"
-            className="h-9 px-4 bg-ih-navy text-white text-[12px] font-medium hover:opacity-90"
+            className="h-9 px-4 bg-ih-navy text-ih-bg text-[12px] font-medium hover:bg-ih-ink"
           >
             Apply
           </button>
@@ -230,7 +230,7 @@ export default async function AdminProductsPage({ params, searchParams }: Props)
         {/* Content-depth filter — backed by persisted Product.contentScore (#7-3).
             Thresholds align with bandForScore in @indus/domain. */}
         <div className="flex flex-wrap items-center gap-1.5 mb-6">
-          <span className="font-mono text-[10px] uppercase tracking-[0.1em] text-ih-muted pr-2">
+          <span className="font-mono text-[10.5px] uppercase tracking-[0.1em] text-ih-muted pr-2">
             Content depth
           </span>
           <ContentChip
@@ -259,7 +259,7 @@ export default async function AdminProductsPage({ params, searchParams }: Props)
         </div>
 
         {products.length === 0 ? (
-          <div className="py-16 border border-dashed border-ih-border text-center">
+          <div className="py-16 rounded-lg border border-ih-border text-center">
             <p className="text-ih-muted mb-3">
               {query || statusFilter || brandFilter || categoryFilter
                 ? 'No products match these filters.'
@@ -267,15 +267,15 @@ export default async function AdminProductsPage({ params, searchParams }: Props)
             </p>
             <Link
               href={`/admin/products/new`}
-              className="inline-flex h-9 px-4 items-center bg-ih-accent text-white text-[13px] font-medium hover:opacity-90"
+              className="inline-flex h-9 px-4 items-center bg-ih-accent text-ih-accent-fg text-[13px] font-medium hover:bg-ih-accent-hover"
             >
               + Add your first product
             </Link>
           </div>
         ) : (
           <>
-            <div className="border border-ih-border bg-white">
-              <div className="grid grid-cols-[140px_1fr_120px_120px_70px_60px_90px_80px] px-4 py-2.5 bg-ih-bg border-b border-ih-border font-mono text-[10px] tracking-[0.1em] uppercase text-ih-muted">
+            <div className="border border-ih-border bg-ih-surface">
+              <div className="grid grid-cols-[140px_1fr_120px_120px_70px_60px_90px_80px] px-4 py-2.5 bg-ih-bg border-b border-ih-border font-mono text-[10.5px] tracking-[0.1em] uppercase text-ih-muted">
                 <Link href={sortUrl('sku')} className="hover:text-ih-ink">
                   SKU{sortIndicator('sku')}
                 </Link>
@@ -316,7 +316,7 @@ export default async function AdminProductsPage({ params, searchParams }: Props)
                     <div className="text-[12px] text-ih-ink-2 truncate">
                       {p.category?.name ?? <span className="text-ih-muted-2">—</span>}
                     </div>
-                    <div className={`text-right font-mono text-[12px] ${p.stockQty > 0 ? 'text-[oklch(0.45_0.12_150)] font-semibold' : 'text-ih-muted-2'}`}>
+                    <div className={`text-right font-mono text-[12px] ${p.stockQty > 0 ? 'text-[oklch(0.45_0.12_150)] font-medium' : 'text-ih-muted-2'}`}>
                       {p.stockQty > 0 ? p.stockQty.toLocaleString() : '—'}
                     </div>
                     <div className="flex justify-center">
@@ -324,7 +324,7 @@ export default async function AdminProductsPage({ params, searchParams }: Props)
                     </div>
                     <div className="flex justify-center">
                       <span
-                        className={`px-2 py-0.5 font-mono text-[10px] font-semibold capitalize ${
+                        className={`px-2 py-0.5 font-mono text-[11px] font-medium capitalize ${
                           STATUS_COLORS[p.status] ?? ''
                         }`}
                       >
@@ -370,12 +370,12 @@ function StatusPill({
       href={href}
       className={`flex items-center gap-1.5 h-7 px-3 font-mono text-[11px] border transition-colors capitalize ${
         active
-          ? 'border-ih-accent bg-ih-accent text-white'
+          ? 'border-ih-accent bg-ih-accent text-ih-accent-fg'
           : 'border-ih-border text-ih-ink-2 hover:border-ih-accent'
       }`}
     >
       <span>{label}</span>
-      <span className={`text-[10px] ${active ? 'opacity-80' : 'text-ih-muted'}`}>{count.toLocaleString()}</span>
+      <span className={`text-[11px] ${active ? 'opacity-80' : 'text-ih-muted'}`}>{count.toLocaleString()}</span>
     </Link>
   )
 }
@@ -406,7 +406,7 @@ function ContentChip({
       href={href}
       className={`flex items-center gap-1.5 h-7 px-3 font-mono text-[11px] border transition-colors ${
         active
-          ? 'border-ih-accent bg-ih-accent text-white'
+          ? 'border-ih-accent bg-ih-accent text-ih-accent-fg'
           : 'border-ih-border text-ih-ink-2 hover:border-ih-accent'
       }`}
     >

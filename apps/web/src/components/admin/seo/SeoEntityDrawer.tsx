@@ -309,7 +309,7 @@ export default function SeoEntityDrawer({
   return (
     <form
       action={handleSubmit}
-      className="bg-white border border-ih-border max-w-5xl"
+      className="bg-ih-surface border border-ih-border max-w-5xl"
     >
       {/* Sub-tab nav */}
       <div className="flex border-b border-ih-border px-4 overflow-x-auto">
@@ -331,7 +331,7 @@ export default function SeoEntityDrawer({
 
       {error && (
         <div
-          className="m-4 px-4 py-3 border border-[oklch(0.4_0.18_25)] bg-[oklch(0.97_0.04_25)] text-[13px] text-[oklch(0.5_0.18_25)]"
+          className="m-4 px-4 py-3 border border-[oklch(0.4_0.18_25)] bg-ih-danger-soft text-[13px] text-ih-danger-ink"
           role="alert"
         >
           {error}
@@ -467,10 +467,10 @@ export default function SeoEntityDrawer({
                 rightAdornment={
                   jsonLdOverride.trim().length > 0 ? (
                     <span
-                      className={`font-mono text-[10px] uppercase tracking-wider ${
+                      className={`font-mono text-[10.5px] uppercase tracking-wider ${
                         overrideValidation.ok
-                          ? 'text-[oklch(0.4_0.14_145)]'
-                          : 'text-[oklch(0.5_0.18_25)]'
+                          ? 'text-ih-success-ink'
+                          : 'text-ih-danger-ink'
                       }`}
                     >
                       {overrideValidation.ok ? 'valid' : 'invalid'}
@@ -490,7 +490,7 @@ export default function SeoEntityDrawer({
                 />
                 {!overrideValidation.ok && (
                   <p
-                    className="font-mono text-[11px] text-[oklch(0.5_0.18_25)] mt-1"
+                    className="font-mono text-[11px] text-ih-danger-ink mt-1"
                     role="alert"
                   >
                     {overrideValidation.message} — preview below shows the unmerged base.
@@ -549,7 +549,7 @@ export default function SeoEntityDrawer({
 
           {activeSubTab === 'advanced' && (
             <>
-              <p className="text-[12px] text-[oklch(0.5_0.14_70)] bg-[oklch(0.96_0.05_70)]/50 border border-[oklch(0.75_0.12_70)]/40 px-3 py-2">
+              <p className="text-[12px] text-ih-warning-ink bg-ih-warning-soft/50 border border-[oklch(0.75_0.12_70)]/40 px-3 py-2">
                 Robots directives change indexability. Audited as infrastructure changes.
               </p>
               <label className="flex items-center gap-2 text-[13px]">
@@ -575,7 +575,7 @@ export default function SeoEntityDrawer({
         {/* RIGHT — previews */}
         <div className="flex flex-col gap-4 sticky top-4 self-start">
           <div>
-            <p className="font-mono text-[10px] tracking-[0.12em] uppercase text-ih-muted mb-1.5">
+            <p className="font-mono text-[10.5px] tracking-[0.12em] uppercase text-ih-muted mb-1.5">
               Google SERP preview
             </p>
             <SerpPreview
@@ -585,7 +585,7 @@ export default function SeoEntityDrawer({
             />
           </div>
           <div>
-            <p className="font-mono text-[10px] tracking-[0.12em] uppercase text-ih-muted mb-1.5">
+            <p className="font-mono text-[10.5px] tracking-[0.12em] uppercase text-ih-muted mb-1.5">
               Open Graph preview
             </p>
             <OgPreview
@@ -597,7 +597,7 @@ export default function SeoEntityDrawer({
           </div>
           {activeSubTab === 'schema' && ldPreview.length > 0 && (
             <div>
-              <p className="font-mono text-[10px] tracking-[0.12em] uppercase text-ih-muted mb-1.5">
+              <p className="font-mono text-[10.5px] tracking-[0.12em] uppercase text-ih-muted mb-1.5">
                 JSON-LD that will be emitted
               </p>
               <JsonLdPreview data={ldPreview} />
@@ -611,17 +611,17 @@ export default function SeoEntityDrawer({
         <button
           type="submit"
           disabled={pending}
-          className="h-10 px-5 bg-ih-accent text-white text-[13px] font-medium hover:opacity-90 disabled:opacity-50"
+          className="h-10 px-5 bg-ih-accent text-ih-accent-fg text-[13px] font-medium hover:bg-ih-accent-hover disabled:opacity-50"
         >
           {pending ? 'Saving…' : 'Save SEO'}
         </button>
         {savedAt && (
-          <span className="font-mono text-[11px] text-[oklch(0.4_0.14_145)]">
+          <span className="font-mono text-[11px] text-ih-success-ink">
             Saved at {savedAt.toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit', second: '2-digit' })}
           </span>
         )}
         <span className="ml-auto flex items-center gap-2">
-          <span className="font-mono text-[10px] tracking-[0.1em] uppercase text-ih-muted">
+          <span className="font-mono text-[10.5px] tracking-[0.1em] uppercase text-ih-muted">
             Health
           </span>
           <SeoHealthBadge score={estimateScore({ effectiveTitle, effectiveDescription, focusKeyword, robotsIndex, ogImagePath })} />
@@ -636,11 +636,11 @@ export default function SeoEntityDrawer({
 // ─────────────────────────────────────────────────────────────────────────────
 
 const inputCls =
-  'h-9 w-full px-3 border border-ih-border bg-white text-[13px] focus:outline-none focus:border-ih-accent'
+  'h-9 w-full px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent'
 const textareaCls =
-  'w-full px-3 py-2 border border-ih-border bg-white text-[13px] resize-y focus:outline-none focus:border-ih-accent'
+  'w-full px-3 py-2 border border-ih-border bg-ih-surface text-[13px] resize-y focus:outline-none focus:border-ih-accent'
 const selectCls =
-  'h-9 w-full px-2 border border-ih-border bg-white text-[13px] focus:outline-none focus:border-ih-accent'
+  'h-9 w-full px-2 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent'
 
 function FieldBlock({
   label,

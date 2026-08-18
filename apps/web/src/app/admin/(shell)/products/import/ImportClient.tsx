@@ -88,12 +88,12 @@ export default function ImportClient() {
 
   return (
     <div className="flex flex-col gap-6 max-w-5xl">
-      <div className="bg-white border border-ih-border p-6">
+      <div className="bg-ih-surface border border-ih-border p-6">
         <Stepper steps={STEPS} currentStep={stepNumber} />
       </div>
 
       {error && (
-        <div className="border border-[oklch(0.7_0.18_25)] bg-[oklch(0.97_0.05_25)] px-4 py-3 text-[13px] text-[oklch(0.4_0.18_25)]">
+        <div className="border border-[oklch(0.7_0.18_25)] bg-[oklch(0.97_0.05_25)] px-4 py-3 text-[13px] text-ih-danger-ink">
           {error}
         </div>
       )}
@@ -124,9 +124,9 @@ function UploadStep({
       ref={formRef}
       action={onSubmit}
       encType="multipart/form-data"
-      className="bg-white border border-ih-border p-8"
+      className="bg-ih-surface border border-ih-border p-8"
     >
-      <h2 className="text-[16px] font-semibold mb-2">Step 1 — Upload your file</h2>
+      <h2 className="text-[15px] font-medium mb-2">Step 1 — Upload your file</h2>
       <p className="text-[13px] text-ih-muted mb-2">
         CSV or XLSX, up to 10 MB and 5,000 rows. Required columns: <span className="font-mono">sku</span>,{' '}
         <span className="font-mono">title</span>. Brand and category must reference existing slugs.
@@ -148,14 +148,14 @@ function UploadStep({
         <button
           type="submit"
           disabled={pending}
-          className="h-9 px-4 bg-ih-navy text-white text-[12px] font-medium hover:opacity-90 disabled:opacity-50"
+          className="h-9 px-4 bg-ih-navy text-ih-bg text-[12px] font-medium hover:bg-ih-ink disabled:opacity-50"
         >
           {pending ? 'Parsing…' : '→ Parse file'}
         </button>
         <button
           type="button"
           onClick={onTemplate}
-          className="h-9 px-4 border border-ih-border bg-white text-[12px] font-medium hover:bg-ih-surface-2"
+          className="h-9 px-4 border border-ih-border bg-ih-surface text-[12px] font-medium hover:bg-ih-surface-2"
         >
           ↓ Download template CSV
         </button>
@@ -207,8 +207,8 @@ function PreviewStep({
 }) {
   const canCommit = phase.rowsToCreate + phase.rowsToUpdate > 0
   return (
-    <div className="bg-white border border-ih-border p-8">
-      <h2 className="text-[16px] font-semibold mb-4">Step 2 — Review preview</h2>
+    <div className="bg-ih-surface border border-ih-border p-8">
+      <h2 className="text-[15px] font-medium mb-4">Step 2 — Review preview</h2>
 
       <div className="grid grid-cols-4 gap-3 mb-6">
         <Stat label="Total rows" value={phase.totalRows} />
@@ -217,7 +217,7 @@ function PreviewStep({
         <Stat label="Errors" value={phase.rowsWithErrors} tone={phase.rowsWithErrors > 0 ? 'warn' : 'ok'} />
       </div>
 
-      <div className="border border-ih-border mb-5 overflow-auto" style={{ maxHeight: 440 }}>
+      <div className="mb-5 max-h-[440px] overflow-auto rounded-lg border border-ih-border">
         <table className="w-full text-[12px]">
           <thead className="bg-ih-bg sticky top-0">
             <tr>
@@ -257,7 +257,7 @@ function PreviewStep({
           type="button"
           onClick={onCommit}
           disabled={!canCommit || pending}
-          className="h-10 px-5 bg-ih-accent text-white text-[13px] font-medium hover:opacity-90 disabled:opacity-50"
+          className="h-10 px-5 bg-ih-accent text-ih-accent-fg text-[13px] font-medium hover:bg-ih-accent-hover disabled:opacity-50"
         >
           {pending ? 'Working…' : `Commit ${phase.rowsToCreate + phase.rowsToUpdate} product${phase.rowsToCreate + phase.rowsToUpdate === 1 ? '' : 's'}`}
         </button>
@@ -265,12 +265,12 @@ function PreviewStep({
           type="button"
           onClick={onCancel}
           disabled={pending}
-          className="h-10 px-5 border border-ih-border bg-white text-[13px] font-medium hover:bg-ih-surface-2 disabled:opacity-50"
+          className="h-10 px-5 border border-ih-border bg-ih-surface text-[13px] font-medium hover:bg-ih-surface-2 disabled:opacity-50"
         >
           Cancel & start over
         </button>
         {!canCommit && (
-          <span className="text-[12px] text-[oklch(0.5_0.18_25)]">
+          <span className="text-[12px] text-ih-danger-ink">
             All rows have errors — fix them in the file and re-upload.
           </span>
         )}
@@ -283,8 +283,8 @@ function PreviewStep({
 
 function CommittingStep() {
   return (
-    <div className="bg-white border border-ih-border p-12 text-center">
-      <h2 className="text-[16px] font-semibold mb-2">Committing…</h2>
+    <div className="bg-ih-surface border border-ih-border p-12 text-center">
+      <h2 className="text-[15px] font-medium mb-2">Committing…</h2>
       <p className="text-[13px] text-ih-muted">
         Creating and updating products in batches of 50. This may take a minute for large files — please don&apos;t close the tab.
       </p>
@@ -302,8 +302,8 @@ function DoneStep({
   onAnother: () => void
 }) {
   return (
-    <div className="bg-white border border-ih-border p-8">
-      <h2 className="text-[16px] font-semibold mb-4">Done.</h2>
+    <div className="bg-ih-surface border border-ih-border p-8">
+      <h2 className="text-[15px] font-medium mb-4">Done.</h2>
       <div className="grid grid-cols-3 gap-3 mb-6 max-w-lg">
         <Stat label="Created" value={phase.created} tone="ok" />
         <Stat label="Updated" value={phase.updated} tone="info" />
@@ -312,14 +312,14 @@ function DoneStep({
       <div className="flex items-center gap-3">
         <Link
           href={`/admin/products`}
-          className="h-10 px-5 inline-flex items-center bg-ih-navy text-white text-[13px] font-medium hover:opacity-90"
+          className="h-10 px-5 inline-flex items-center bg-ih-navy text-ih-bg text-[13px] font-medium hover:bg-ih-ink"
         >
           View products
         </Link>
         <button
           type="button"
           onClick={onAnother}
-          className="h-10 px-5 border border-ih-border bg-white text-[13px] font-medium hover:bg-ih-surface-2"
+          className="h-10 px-5 border border-ih-border bg-ih-surface text-[13px] font-medium hover:bg-ih-surface-2"
         >
           Import another file
         </button>
@@ -335,14 +335,14 @@ function Stat({ label, value, tone = 'neutral' }: { label: string; value: number
     tone === 'ok'
       ? 'text-[oklch(0.45_0.15_150)]'
       : tone === 'warn'
-        ? 'text-[oklch(0.5_0.18_25)]'
+        ? 'text-ih-danger-ink'
         : tone === 'info'
           ? 'text-ih-accent'
           : 'text-ih-ink'
   return (
     <div className="border border-ih-border p-3">
-      <p className="font-mono text-[10px] tracking-[0.1em] uppercase text-ih-muted">{label}</p>
-      <p className={`font-mono text-[24px] font-semibold ${toneCls}`}>{value}</p>
+      <p className="font-mono text-[10.5px] tracking-[0.1em] uppercase text-ih-muted">{label}</p>
+      <p className={`font-mono text-[22px] font-medium ${toneCls}`}>{value}</p>
     </div>
   )
 }
@@ -355,7 +355,7 @@ function OutcomePill({ outcome }: { outcome: string }) {
         ? 'bg-[oklch(0.95_0.05_240)] text-[oklch(0.4_0.15_240)]'
         : 'bg-[oklch(0.95_0.05_25)] text-[oklch(0.45_0.18_25)]'
   return (
-    <span className={`inline-block px-2 py-0.5 font-mono text-[10px] tracking-[0.04em] uppercase ${cls}`}>
+    <span className={`inline-block px-2 py-0.5 font-mono text-[10.5px] tracking-[0.04em] uppercase ${cls}`}>
       {outcome}
     </span>
   )

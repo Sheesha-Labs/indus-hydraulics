@@ -64,9 +64,9 @@ export default function PromoFormDialog({ item, onClose, onSaved }: Props) {
 
   return (
     <div className="fixed inset-0 z-50 bg-black/40 flex items-start justify-center pt-12 px-4 overflow-y-auto">
-      <div className="bg-white border border-ih-border w-full max-w-lg p-6 flex flex-col gap-4">
+      <div className="bg-ih-surface border border-ih-border w-full max-w-lg p-6 flex flex-col gap-4">
         <div className="flex items-start justify-between">
-          <h2 className="text-[18px] font-semibold">Promo tile</h2>
+          <h2 className="text-[18px] font-medium">Promo tile</h2>
           <button
             type="button"
             onClick={onClose}
@@ -121,7 +121,7 @@ export default function PromoFormDialog({ item, onClose, onSaved }: Props) {
           <input
             value={heading}
             onChange={(e) => setHeading(e.target.value)}
-            className="h-9 px-3 border border-ih-border bg-white text-[13px]"
+            className="h-9 px-3 border border-ih-border bg-ih-surface text-[13px]"
           />
         </label>
         <label className="flex flex-col gap-1 text-[12px]">
@@ -130,7 +130,7 @@ export default function PromoFormDialog({ item, onClose, onSaved }: Props) {
             value={body}
             onChange={(e) => setBody(e.target.value)}
             rows={3}
-            className="px-3 py-2 border border-ih-border bg-white text-[13px]"
+            className="px-3 py-2 border border-ih-border bg-ih-surface text-[13px]"
           />
         </label>
         <label className="flex flex-col gap-1 text-[12px]">
@@ -139,7 +139,7 @@ export default function PromoFormDialog({ item, onClose, onSaved }: Props) {
             value={linkUrl}
             onChange={(e) => setLinkUrl(e.target.value)}
             placeholder="/sale or https://example.com"
-            className="h-9 px-3 border border-ih-border bg-white text-[13px] font-mono"
+            className="h-9 px-3 border border-ih-border bg-ih-surface text-[13px] font-mono"
           />
         </label>
 
@@ -162,7 +162,7 @@ export default function PromoFormDialog({ item, onClose, onSaved }: Props) {
             type="button"
             onClick={submit}
             disabled={pending}
-            className="h-9 px-4 bg-ih-accent text-white text-[13px] disabled:opacity-50"
+            className="h-9 px-4 bg-ih-accent text-ih-accent-fg text-[13px] disabled:opacity-50"
           >
             {pending ? 'Saving…' : 'Save'}
           </button>

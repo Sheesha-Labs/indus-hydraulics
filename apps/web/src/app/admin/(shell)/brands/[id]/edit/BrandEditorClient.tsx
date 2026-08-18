@@ -71,7 +71,7 @@ export default function BrandEditorClient({ contentEditor, brand, recentImages }
       actions={
         <>
         {savedAt && (
-          <span className="text-[12px] text-[oklch(0.55_0.12_150)]">Saved at {savedAt}</span>
+          <span className="text-[12px] text-ih-success-ink">Saved at {savedAt}</span>
         )}
         <Link
           href="/admin/brands"
@@ -103,7 +103,7 @@ export default function BrandEditorClient({ contentEditor, brand, recentImages }
       </div>
 
       {tab === 'core' && (
-        <div className="max-w-2xl text-[13px] text-ih-muted border border-dashed border-ih-border p-6">
+        <div className="max-w-2xl text-[13px] text-ih-muted rounded-lg border border-ih-border p-6">
           The Core editor for brand metadata (name, slug, country, description, distributor
           status, logo, hero) still lives on the{' '}
           <Link href="/admin/brands" className="underline">

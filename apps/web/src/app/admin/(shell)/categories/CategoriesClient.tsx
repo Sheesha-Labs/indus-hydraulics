@@ -48,7 +48,7 @@ export default function CategoriesClient({ categories, templates }: Props) {
           <button
             type="button"
             onClick={() => setShowCreate(true)}
-            className="h-9 px-4 bg-ih-accent text-white text-[13px] font-medium hover:opacity-90"
+            className="h-9 px-4 bg-ih-accent text-ih-accent-fg text-[13px] font-medium hover:bg-ih-accent-hover"
           >
             + New category
           </button>
@@ -65,12 +65,12 @@ export default function CategoriesClient({ categories, templates }: Props) {
       )}
 
       {categories.length === 0 ? (
-        <div className="py-16 border border-dashed border-ih-border text-center">
+        <div className="py-16 rounded-lg border border-ih-border text-center">
           <p className="text-ih-muted">No categories yet — create the first one above.</p>
         </div>
       ) : (
-        <div className="bg-white border border-ih-border">
-          <div className="grid grid-cols-[1fr_140px_60px_70px_140px_90px_100px] px-4 py-2.5 bg-ih-bg border-b border-ih-border font-mono text-[10px] tracking-[0.1em] uppercase text-ih-muted">
+        <div className="bg-ih-surface border border-ih-border">
+          <div className="grid grid-cols-[1fr_140px_60px_70px_140px_90px_100px] px-4 py-2.5 bg-ih-bg border-b border-ih-border font-mono text-[10.5px] tracking-[0.1em] uppercase text-ih-muted">
             <div>Name</div>
             <div>Slug</div>
             <div className="text-center">Pos</div>
@@ -166,9 +166,9 @@ function CategoryRows({
           </div>
           <div className="flex justify-center">
             <span
-              className={`px-2 py-0.5 font-mono text-[10px] font-semibold ${
+              className={`px-2 py-0.5 font-mono text-[11px] font-medium ${
                 cat.isPublished
-                  ? 'text-[oklch(0.4_0.14_145)] bg-[oklch(0.94_0.06_145)]'
+                  ? 'text-ih-success-ink bg-ih-success-soft'
                   : 'text-ih-muted bg-ih-surface-2'
               }`}
             >
@@ -179,13 +179,13 @@ function CategoryRows({
             <button
               type="button"
               onClick={() => setEditingId(cat.id)}
-              className="font-mono text-[10px] text-ih-muted hover:text-ih-ink"
+              className="font-mono text-[11px] text-ih-muted hover:text-ih-ink"
             >
               Edit
             </button>
             <Link
               href={`/admin/categories/${cat.id}/edit`}
-              className="font-mono text-[10px] text-ih-muted hover:text-ih-ink"
+              className="font-mono text-[11px] text-ih-muted hover:text-ih-ink"
               title="Open dedicated SEO editor"
             >
               SEO
@@ -246,7 +246,7 @@ function CategoryForm({
   return (
     <form
       action={onSubmit}
-      className="bg-white border border-ih-border p-5 flex flex-col gap-4"
+      className="bg-ih-surface border border-ih-border p-5 flex flex-col gap-4"
     >
       {existing && <input type="hidden" name="id" value={existing.id} />}
 
@@ -258,7 +258,7 @@ function CategoryForm({
             name="name"
             defaultValue={existing?.name ?? ''}
             placeholder="Hydraulic Pumps"
-            className="h-9 px-3 border border-ih-border bg-white text-[13px] w-full"
+            className="h-9 px-3 border border-ih-border bg-ih-surface text-[13px] w-full"
           />
         </Field>
 
@@ -267,7 +267,7 @@ function CategoryForm({
             name="slug"
             defaultValue={existing?.slug ?? ''}
             placeholder="hydraulic-pumps"
-            className="h-9 px-3 border border-ih-border bg-white font-mono text-[12px] w-full"
+            className="h-9 px-3 border border-ih-border bg-ih-surface font-mono text-[12px] w-full"
           />
         </Field>
 
@@ -276,7 +276,7 @@ function CategoryForm({
             name="position"
             type="number"
             defaultValue={existing?.position ?? 0}
-            className="h-9 px-3 border border-ih-border bg-white font-mono text-[12px] w-full"
+            className="h-9 px-3 border border-ih-border bg-ih-surface font-mono text-[12px] w-full"
           />
         </Field>
 
@@ -284,7 +284,7 @@ function CategoryForm({
           <select
             name="parentId"
             defaultValue={existing?.parentId ?? ''}
-            className="h-9 px-2 border border-ih-border bg-white text-[12px] w-full"
+            className="h-9 px-2 border border-ih-border bg-ih-surface text-[12px] w-full"
           >
             <option value="">— None —</option>
             {parents
@@ -304,7 +304,7 @@ function CategoryForm({
           <select
             name="defaultSpecTemplateId"
             defaultValue={existing?.defaultSpecTemplateId ?? ''}
-            className="h-9 px-2 border border-ih-border bg-white text-[12px] w-full"
+            className="h-9 px-2 border border-ih-border bg-ih-surface text-[12px] w-full"
           >
             <option value="">— None —</option>
             {templates.map((t) => (
@@ -327,7 +327,7 @@ function CategoryForm({
         <button
           type="submit"
           disabled={pending}
-          className="h-9 mt-[26px] px-4 bg-ih-navy text-white text-[12px] font-medium hover:opacity-90 disabled:opacity-50 whitespace-nowrap"
+          className="h-9 mt-[26px] px-4 bg-ih-navy text-ih-bg text-[12px] font-medium hover:bg-ih-ink disabled:opacity-50 whitespace-nowrap"
         >
           {pending ? 'Saving…' : existing ? 'Save' : 'Create'}
         </button>
@@ -342,7 +342,7 @@ function CategoryForm({
       </div>
 
       {error && (
-        <p className="text-[11px] text-[oklch(0.5_0.18_25)]" role="alert">
+        <p className="text-[11px] text-ih-danger-ink" role="alert">
           {error}
         </p>
       )}
@@ -383,11 +383,11 @@ function DeleteCategoryButton({
             if (!result.success) setError(result.message)
           })
         }}
-        className="font-mono text-[10px] text-ih-muted hover:text-[oklch(0.5_0.18_25)] disabled:opacity-30 disabled:hover:text-ih-muted disabled:cursor-not-allowed"
+        className="font-mono text-[11px] text-ih-muted hover:text-ih-danger-ink disabled:opacity-30 disabled:hover:text-ih-muted disabled:cursor-not-allowed"
       >
         {pending ? '…' : 'Delete'}
       </button>
-      {error && <span className="text-[10px] text-[oklch(0.5_0.18_25)]">{error}</span>}
+      {error && <span className="text-[11px] text-ih-danger-ink">{error}</span>}
     </>
   )
 }
@@ -405,7 +405,7 @@ function Field({
     <label className="flex flex-col gap-1.5">
       <span className="text-[11px] font-medium text-ih-ink-2">{label}</span>
       {children}
-      {hint && <span className="text-[10px] text-ih-muted-2">{hint}</span>}
+      {hint && <span className="text-[11px] text-ih-muted-2">{hint}</span>}
     </label>
   )
 }

@@ -57,7 +57,7 @@ export default function BulkActions({
         type="button"
         onClick={onClick}
         disabled={pending || selectedCount === 0}
-        className="h-9 px-4 bg-ih-accent text-white font-mono text-[12px] uppercase tracking-wider disabled:opacity-50"
+        className="h-9 px-4 bg-ih-accent text-ih-accent-fg font-mono text-[12px] uppercase tracking-wider disabled:opacity-50"
       >
         {pending
           ? `Ingesting ${selectedCount}…`
@@ -79,7 +79,7 @@ export default function BulkActions({
       {result.kind === 'done' && (
         <div
           role="status"
-          className="border border-[oklch(0.4_0.14_145)] bg-[oklch(0.94_0.06_145)] text-[oklch(0.3_0.14_145)] px-3 py-1.5 text-[12px]"
+          className="border border-[oklch(0.4_0.14_145)] bg-ih-success-soft text-[oklch(0.3_0.14_145)] px-3 py-1.5 text-[12px]"
         >
           {result.ingested} ingested
           {result.failed > 0 ? `, ${result.failed} failed` : ''}.
@@ -110,7 +110,7 @@ export default function BulkActions({
       {result.kind === 'error' && (
         <div
           role="alert"
-          className="border border-[oklch(0.4_0.18_25)] bg-[oklch(0.94_0.06_25)] text-[oklch(0.3_0.18_25)] px-3 py-1.5 text-[12px]"
+          className="border border-[oklch(0.4_0.18_25)] bg-ih-danger-soft text-[oklch(0.3_0.18_25)] px-3 py-1.5 text-[12px]"
         >
           {result.message}
         </div>

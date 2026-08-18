@@ -41,7 +41,7 @@ export default function InviteStaffPanel({ pending }: { pending: PendingInvite[]
     <div className="mb-8">
       <div className="flex items-center justify-between">
         <div>
-          <h2 className="text-[15px] font-semibold">Invite a colleague</h2>
+          <h2 className="text-[15px] font-medium">Invite a colleague</h2>
           <p className="mt-0.5 text-[12px] text-ih-muted">
             They&apos;ll get an email link to set their own password. Any email address works.
           </p>
@@ -49,7 +49,7 @@ export default function InviteStaffPanel({ pending }: { pending: PendingInvite[]
         <button
           type="button"
           onClick={() => setOpen((v) => !v)}
-          className="h-9 bg-ih-accent px-4 text-[13px] font-medium text-white transition-opacity hover:opacity-90"
+          className="h-9 bg-ih-accent px-4 text-[13px] font-medium text-ih-accent-fg transition-opacity hover:bg-ih-accent-hover"
         >
           {open ? 'Close' : 'Invite staff'}
         </button>
@@ -88,7 +88,7 @@ export default function InviteStaffPanel({ pending }: { pending: PendingInvite[]
             <button
               type="submit"
               disabled={submitting}
-              className="h-9 w-full bg-ih-accent px-4 text-[13px] font-medium text-white transition-opacity hover:opacity-90 disabled:opacity-50 sm:w-auto"
+              className="h-9 w-full bg-ih-accent px-4 text-[13px] font-medium text-ih-accent-fg transition-opacity hover:bg-ih-accent-hover disabled:opacity-50 sm:w-auto"
             >
               {submitting ? 'Sending…' : 'Send invite'}
             </button>
@@ -125,7 +125,7 @@ function PendingTable({ rows }: { rows: PendingInvite[] }) {
 
   return (
     <div className="mt-6">
-      <h3 className="mb-2 text-[13px] font-semibold">
+      <h3 className="mb-2 text-[13px] font-medium">
         Pending invitations <span className="text-ih-muted">({rows.length})</span>
       </h3>
       {msg && <Notice tone="good">{msg}</Notice>}

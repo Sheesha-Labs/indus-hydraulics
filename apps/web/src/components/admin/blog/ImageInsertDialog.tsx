@@ -333,7 +333,7 @@ function ImageInsertForm({ onClose, media, uploadAction, onUploaded, onInsert }:
             type="button"
             onClick={insert}
             disabled={!picked}
-            className="h-9 rounded-md bg-ih-accent px-4 text-[13px] font-medium text-white transition-opacity hover:opacity-90 disabled:opacity-40"
+            className="h-9 rounded-md bg-ih-accent px-4 text-[13px] font-medium text-ih-accent-fg transition-opacity hover:bg-ih-accent-hover disabled:opacity-40"
           >
             Insert image
           </button>

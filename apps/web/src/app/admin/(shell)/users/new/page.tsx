@@ -62,7 +62,7 @@ export default async function NewUserPage() {
           <button
             type="submit"
             form="new-staff-form"
-            className="flex h-9 items-center rounded-md bg-ih-accent px-4 text-[13px] font-medium text-white transition-opacity hover:opacity-90"
+            className="flex h-9 items-center rounded-md bg-ih-accent px-4 text-[13px] font-medium text-ih-accent-fg transition-opacity hover:bg-ih-accent-hover"
           >
             Create Staff Member
           </button>
@@ -71,7 +71,7 @@ export default async function NewUserPage() {
     >
       <div className="max-w-[560px]">
 
-        <form id="new-staff-form" action={createUser} className="space-y-5">
+        <form id="new-staff-form" action={createUser} className="flex flex-col gap-5">
           <div>
             <label htmlFor="newuser-name" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
               Full Name

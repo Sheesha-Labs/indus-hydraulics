@@ -27,7 +27,7 @@ export default async function AiRunsPage() {
 
   if (rows.length === 0) {
     return (
-      <div className="border border-dashed border-ih-border py-16 text-center max-w-[800px]">
+      <div className="rounded-lg border border-ih-border py-16 text-center max-w-[800px]">
         <p className="text-ih-muted text-[13px]">
           No AI suggestions yet. Click &ldquo;Suggest&rdquo; in any SEO drawer to generate one.
         </p>
@@ -71,7 +71,7 @@ export default async function AiRunsPage() {
                 </td>
                 <td className="px-3 py-3 font-mono text-[11px]">
                   <div>{row.entityType}</div>
-                  <div className="text-ih-muted text-[10px] truncate max-w-[160px]">
+                  <div className="text-ih-muted text-[11px] truncate max-w-[160px]">
                     {row.entityId}
                   </div>
                 </td>
@@ -104,14 +104,14 @@ export default async function AiRunsPage() {
 function StatusPill({ status }: { status: string }) {
   const tone =
     status === 'accepted'
-      ? 'text-[oklch(0.4_0.14_145)] bg-[oklch(0.94_0.06_145)]'
+      ? 'text-ih-success-ink bg-ih-success-soft'
       : status === 'rejected'
-        ? 'text-[oklch(0.5_0.18_25)] bg-[oklch(0.97_0.04_25)]'
+        ? 'text-ih-danger-ink bg-ih-danger-soft'
         : status === 'superseded'
           ? 'text-ih-muted bg-ih-surface-2'
-          : 'text-[oklch(0.5_0.14_70)] bg-[oklch(0.96_0.05_70)]'
+          : 'text-ih-warning-ink bg-ih-warning-soft'
   return (
-    <span className={`inline-block px-2 py-0.5 font-mono text-[10px] uppercase tracking-wider ${tone}`}>
+    <span className={`inline-block px-2 py-0.5 font-mono text-[10.5px] uppercase tracking-wider ${tone}`}>
       {status}
     </span>
   )
@@ -119,7 +119,7 @@ function StatusPill({ status }: { status: string }) {
 
 function Th({ children }: { children: React.ReactNode }) {
   return (
-    <th className="text-left px-3 py-2.5 font-mono text-[10px] uppercase tracking-[0.1em] text-ih-muted">
+    <th className="text-left px-3 py-2.5 font-mono text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
       {children}
     </th>
   )

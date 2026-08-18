@@ -82,7 +82,7 @@ export default async function EditUserPage({ params }: Props) {
     >
       <div className="max-w-[560px]">
 
-        <form action={saveUser} className="space-y-5">
+        <form action={saveUser} className="flex flex-col gap-5">
           <div>
             <label htmlFor="user-name" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
               Full Name
@@ -149,7 +149,7 @@ export default async function EditUserPage({ params }: Props) {
           <div className="flex items-center gap-3 pt-2 border-t border-ih-border">
             <button
               type="submit"
-              className="h-9 px-5 bg-ih-accent text-white font-mono text-[12px] hover:opacity-90"
+              className="h-9 px-5 bg-ih-accent text-ih-accent-fg font-mono text-[12px] hover:bg-ih-accent-hover"
             >
               Save Changes
             </button>

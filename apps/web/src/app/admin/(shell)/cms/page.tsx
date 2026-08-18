@@ -48,7 +48,7 @@ export default async function CmsPage({ params, searchParams }: Props) {
       title="Pages & Hero"
       actions={
         tab === 'pages' ? (
-          <Link href={`/admin/cms/pages/new`} className="flex h-9 items-center rounded-md bg-ih-accent px-4 font-mono text-[12px] text-white transition-opacity hover:opacity-90">
+          <Link href={`/admin/cms/pages/new`} className="flex h-9 items-center rounded-md bg-ih-accent px-4 font-mono text-[12px] text-ih-accent-fg transition-opacity hover:bg-ih-accent-hover">
             + New Page
           </Link>
         ) : null
@@ -78,7 +78,7 @@ export default async function CmsPage({ params, searchParams }: Props) {
             <div className="py-12 text-center text-ih-muted">No pages yet.</div>
           ) : (
             <>
-              <div className="grid grid-cols-[1fr_100px_100px_80px] px-4 py-2.5 bg-ih-bg border-b border-ih-border font-mono text-[10px] tracking-[0.1em] uppercase text-ih-muted">
+              <div className="grid grid-cols-[1fr_100px_100px_80px] px-4 py-2.5 bg-ih-bg border-b border-ih-border font-mono text-[10.5px] tracking-[0.1em] uppercase text-ih-muted">
                 <div>Title</div>
                 <div className="text-center">Status</div>
                 <div className="text-right">Updated</div>
@@ -91,7 +91,7 @@ export default async function CmsPage({ params, searchParams }: Props) {
                     <div className="font-mono text-[11px] text-ih-muted">/{page.slug}</div>
                   </div>
                   <div className="flex justify-center">
-                    <span className={`px-2 py-0.5 font-mono text-[10px] font-semibold ${page.isPublished ? 'text-[oklch(0.4_0.14_145)] bg-[oklch(0.94_0.06_145)]' : 'text-ih-muted bg-ih-surface-2'}`}>
+                    <span className={`px-2 py-0.5 font-mono text-[11px] font-medium ${page.isPublished ? 'text-ih-success-ink bg-ih-success-soft' : 'text-ih-muted bg-ih-surface-2'}`}>
                       {page.isPublished ? 'Published' : 'Draft'}
                     </span>
                   </div>

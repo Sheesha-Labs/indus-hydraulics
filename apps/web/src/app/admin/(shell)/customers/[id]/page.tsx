@@ -31,9 +31,9 @@ const TIER_COLORS: Record<string, string> = {
 }
 
 const STATUS_COLORS: Record<string, string> = {
-  prospect: 'text-[oklch(0.5_0.08_60)] bg-[oklch(0.96_0.04_60)]',
-  active: 'text-[oklch(0.4_0.14_145)] bg-[oklch(0.94_0.06_145)]',
-  at_risk: 'text-[oklch(0.5_0.12_25)] bg-[oklch(0.96_0.04_25)]',
+  prospect: 'text-[oklch(0.5_0.08_60)] bg-ih-warning-soft',
+  active: 'text-ih-success-ink bg-ih-success-soft',
+  at_risk: 'text-ih-danger-ink bg-ih-danger-soft',
   archived: 'text-ih-muted bg-ih-surface-2',
 }
 
@@ -137,10 +137,10 @@ export default async function AdminCustomerDetailPage({ params, searchParams }: 
           {/* Tier and status qualify the account; they are not buttons, but
               dropping them would remove the at-a-glance state this page
               exists to show. */}
-          <span className={`rounded-md px-2.5 py-1 font-mono text-[11px] font-semibold capitalize ${TIER_COLORS[account.tier] ?? ''}`}>
+          <span className={`rounded-md px-2.5 py-1 font-mono text-[11px] font-medium capitalize ${TIER_COLORS[account.tier] ?? ''}`}>
             {account.tier}
           </span>
-          <span className={`rounded-md px-2.5 py-1 font-mono text-[11px] font-semibold capitalize ${STATUS_COLORS[account.status] ?? ''}`}>
+          <span className={`rounded-md px-2.5 py-1 font-mono text-[11px] font-medium capitalize ${STATUS_COLORS[account.status] ?? ''}`}>
             {account.status.replace('_', ' ')}
           </span>
           <Link
@@ -221,16 +221,16 @@ export default async function AdminCustomerDetailPage({ params, searchParams }: 
                   id="customer-creditLimit" type="number" name="creditLimit" defaultValue={Number(account.creditLimit)} min={0} step={1000} className="font-mono" />
               </div>
             </div>
-            <button type="submit" className="h-10 px-6 bg-ih-navy text-white font-mono text-[12px] hover:bg-[var(--color-ih-ink-2)] transition-colors">
+            <button type="submit" className="h-10 px-6 bg-ih-navy text-ih-bg font-mono text-[12px] hover:bg-[var(--color-ih-ink-2)] transition-colors">
               Save Changes
             </button>
           </form>
 
           {/* Stats sidebar */}
-          <div className="space-y-4">
+          <div className="flex flex-col gap-4">
             <div className="border border-ih-border bg-ih-surface p-4">
-              <h3 className="font-mono text-[10px] tracking-[0.1em] uppercase text-ih-muted mb-3">Account Stats</h3>
-              <dl className="space-y-2 text-[13px]">
+              <h3 className="font-mono text-[10.5px] tracking-[0.1em] uppercase text-ih-muted mb-3">Account Stats</h3>
+              <dl className="flex flex-col gap-2 text-[13px]">
                 <div className="flex justify-between gap-2">
                   <dt className="text-ih-muted">Industry</dt>
                   <dd className="font-mono text-ih-ink">{account.industry?.name ?? '—'}</dd>
@@ -265,12 +265,12 @@ export default async function AdminCustomerDetailPage({ params, searchParams }: 
       {tab === 'rfqs' && (
         <div>
           {account.rfqs.length === 0 ? (
-            <div className="py-12 border border-dashed border-ih-border text-center">
+            <div className="py-12 rounded-lg border border-ih-border text-center">
               <p className="text-ih-muted">No RFQs yet.</p>
             </div>
           ) : (
             <div className="border border-ih-border">
-              <div className="grid grid-cols-[1fr_80px_130px_100px] px-4 py-2.5 bg-ih-bg border-b border-ih-border font-mono text-[10px] tracking-[0.1em] uppercase text-ih-muted">
+              <div className="grid grid-cols-[1fr_80px_130px_100px] px-4 py-2.5 bg-ih-bg border-b border-ih-border font-mono text-[10.5px] tracking-[0.1em] uppercase text-ih-muted">
                 <div>Reference</div>
                 <div className="text-center">Lines</div>
                 <div className="text-center">Status</div>
@@ -283,12 +283,12 @@ export default async function AdminCustomerDetailPage({ params, searchParams }: 
                   className={`grid grid-cols-[1fr_80px_130px_100px] px-4 py-3 items-center bg-ih-surface hover:bg-ih-surface-2 transition-colors ${i > 0 ? 'border-t border-ih-border' : ''}`}
                 >
                   <div>
-                    <div className="font-mono text-[13px] font-semibold">{rfq.code}</div>
+                    <div className="font-mono text-[13px] font-medium">{rfq.code}</div>
                     {rfq.subject && <div className="text-[12px] text-ih-muted truncate max-w-[280px]">{rfq.subject}</div>}
                   </div>
                   <div className="text-center font-mono text-[13px]">{rfq.lines.length}</div>
                   <div className="flex justify-center">
-                    <span className="px-2 py-0.5 font-mono text-[10px] bg-ih-bg text-ih-muted">
+                    <span className="px-2 py-0.5 font-mono text-[11px] bg-ih-bg text-ih-muted">
                       {RFQ_STATUS_LABELS[rfq.status] ?? rfq.status}
                     </span>
                   </div>
@@ -306,7 +306,7 @@ export default async function AdminCustomerDetailPage({ params, searchParams }: 
       {tab === 'contacts' && (
         <div>
           <div className="border border-ih-border mb-4">
-            <div className="grid grid-cols-[1fr_100px_100px_80px_80px] px-4 py-2.5 bg-ih-bg border-b border-ih-border font-mono text-[10px] tracking-[0.1em] uppercase text-ih-muted">
+            <div className="grid grid-cols-[1fr_100px_100px_80px_80px] px-4 py-2.5 bg-ih-bg border-b border-ih-border font-mono text-[10.5px] tracking-[0.1em] uppercase text-ih-muted">
               <div>Contact</div>
               <div>Role</div>
               <div>Last Sign-in</div>
@@ -324,7 +324,7 @@ export default async function AdminCustomerDetailPage({ params, searchParams }: 
                   {c.lastSignInAt ? new Date(c.lastSignInAt).toLocaleDateString() : 'Never'}
                 </div>
                 <div className="flex justify-center">
-                  <span className={`px-2 py-0.5 font-mono text-[10px] ${c.isActive ? 'text-[oklch(0.4_0.14_145)] bg-[oklch(0.94_0.06_145)]' : 'text-ih-muted bg-ih-surface-2'}`}>
+                  <span className={`px-2 py-0.5 font-mono text-[11px] ${c.isActive ? 'text-ih-success-ink bg-ih-success-soft' : 'text-ih-muted bg-ih-surface-2'}`}>
                     {c.isActive ? 'Active' : 'Inactive'}
                   </span>
                 </div>
@@ -357,9 +357,9 @@ export default async function AdminCustomerDetailPage({ params, searchParams }: 
 
       {/* ── Addresses tab ── */}
       {tab === 'addresses' && (
-        <div className="space-y-3">
+        <div className="flex flex-col gap-3">
           {account.addresses.length === 0 ? (
-            <div className="py-12 border border-dashed border-ih-border text-center">
+            <div className="py-12 rounded-lg border border-ih-border text-center">
               <p className="text-ih-muted">No addresses on file.</p>
             </div>
           ) : (
@@ -368,17 +368,17 @@ export default async function AdminCustomerDetailPage({ params, searchParams }: 
                 <div className="flex items-start justify-between gap-4">
                   <div>
                     <div className="flex items-center gap-2 mb-1">
-                      <span className="text-[13px] font-semibold">{addr.label}</span>
-                      <span className="font-mono text-[10px] px-1.5 py-0.5 bg-ih-bg text-ih-muted capitalize">
+                      <span className="text-[13px] font-medium">{addr.label}</span>
+                      <span className="font-mono text-[11px] px-1.5 py-0.5 bg-ih-bg text-ih-muted capitalize">
                         {addr.kind.replace('_', '-')}
                       </span>
                       {addr.isDefaultShip && (
-                        <span className="font-mono text-[10px] px-1.5 py-0.5 bg-[oklch(0.94_0.06_145)] text-[oklch(0.4_0.14_145)]">
+                        <span className="font-mono text-[11px] px-1.5 py-0.5 bg-ih-success-soft text-ih-success-ink">
                           Default Ship
                         </span>
                       )}
                       {addr.isDefaultBill && (
-                        <span className="font-mono text-[10px] px-1.5 py-0.5 bg-[oklch(0.94_0.06_145)] text-[oklch(0.4_0.14_145)]">
+                        <span className="font-mono text-[11px] px-1.5 py-0.5 bg-ih-success-soft text-ih-success-ink">
                           Default Bill
                         </span>
                       )}
@@ -392,7 +392,7 @@ export default async function AdminCustomerDetailPage({ params, searchParams }: 
                   <div className="text-right shrink-0">
                     {account.requiresAddressApproval && !addr.approvedAt ? (
                       <div className="flex flex-col items-end gap-2">
-                        <span className="font-mono text-[11px] px-2 py-0.5 bg-[oklch(0.96_0.04_60)] text-[oklch(0.5_0.08_60)]">
+                        <span className="font-mono text-[11px] px-2 py-0.5 bg-ih-warning-soft text-[oklch(0.5_0.08_60)]">
                           Pending Approval
                         </span>
                         <form action={async () => {
@@ -426,7 +426,7 @@ export default async function AdminCustomerDetailPage({ params, searchParams }: 
             </p>
           ) : (
             <div className="border border-ih-border bg-ih-surface">
-              <div className="grid grid-cols-[140px_140px_1fr_120px_100px] gap-3 px-4 py-2.5 border-b border-ih-border font-mono text-[10px] tracking-[0.1em] uppercase text-ih-muted">
+              <div className="grid grid-cols-[140px_140px_1fr_120px_100px] gap-3 px-4 py-2.5 border-b border-ih-border font-mono text-[10.5px] tracking-[0.1em] uppercase text-ih-muted">
                 <span>Sent</span>
                 <span>Kind</span>
                 <span>Subject &amp; recipient</span>
@@ -440,11 +440,11 @@ export default async function AdminCustomerDetailPage({ params, searchParams }: 
                 const linkedRfqCode = e.rfq?.code ?? e.quote?.rfq?.code ?? null
                 const statusColor =
                   e.status === 'sent'
-                    ? 'text-[oklch(0.4_0.14_145)] bg-[oklch(0.94_0.06_145)]'
+                    ? 'text-ih-success-ink bg-ih-success-soft'
                     : e.status === 'sandboxed'
                       ? 'text-[oklch(0.5_0.08_240)] bg-[oklch(0.94_0.04_240)]'
                       : e.status === 'failed'
-                        ? 'text-[oklch(0.5_0.18_25)] bg-[oklch(0.96_0.04_25)]'
+                        ? 'text-ih-danger-ink bg-ih-danger-soft'
                         : 'text-ih-muted bg-ih-surface-2'
                 return (
                   <div
@@ -473,7 +473,7 @@ export default async function AdminCustomerDetailPage({ params, searchParams }: 
                         </div>
                       )}
                       {e.status === 'failed' && e.error && (
-                        <div className="font-mono text-[11px] text-[oklch(0.5_0.18_25)] mt-0.5 truncate" title={e.error}>
+                        <div className="font-mono text-[11px] text-ih-danger-ink mt-0.5 truncate" title={e.error}>
                           {e.error}
                         </div>
                       )}
@@ -491,7 +491,7 @@ export default async function AdminCustomerDetailPage({ params, searchParams }: 
                       )}
                     </span>
                     <span
-                      className={`inline-block px-2 py-0.5 font-mono text-[10px] font-semibold capitalize w-fit ${statusColor}`}
+                      className={`inline-block px-2 py-0.5 font-mono text-[11px] font-medium capitalize w-fit ${statusColor}`}
                     >
                       {e.status}
                     </span>
@@ -558,26 +558,26 @@ export default async function AdminCustomerDetailPage({ params, searchParams }: 
               name="body"
               rows={3}
               placeholder="Add a note visible to all staff…" className="resize-none mb-2" />
-            <button type="submit" className="h-9 px-5 bg-ih-navy text-white font-mono text-[12px] hover:bg-[var(--color-ih-ink-2)] transition-colors">
+            <button type="submit" className="h-9 px-5 bg-ih-navy text-ih-bg font-mono text-[12px] hover:bg-[var(--color-ih-ink-2)] transition-colors">
               Add Note
             </button>
           </form>
 
           {/* Activity feed */}
-          <div className="space-y-3">
+          <div className="flex flex-col gap-3">
             {account.activity.map((entry) => {
               const payload = entry.payload as Record<string, unknown>
               return (
                 <div key={entry.id} className="flex gap-3">
-                  <div className="w-8 h-8 border border-ih-border bg-ih-bg grid place-items-center font-mono text-[10px] text-ih-muted shrink-0 mt-0.5">
+                  <div className="w-8 h-8 border border-ih-border bg-ih-bg grid place-items-center font-mono text-[11px] text-ih-muted shrink-0 mt-0.5">
                     {entry.actorType === 'staff' ? 'ST' : 'CT'}
                   </div>
                   <div className="flex-1 pb-3 border-b border-ih-border">
                     <div className="flex items-center gap-2 mb-0.5">
-                      <span className="font-mono text-[11px] font-semibold text-ih-ink capitalize">
+                      <span className="font-mono text-[11px] font-medium text-ih-ink capitalize">
                         {entry.verb.replace(/_/g, ' ')}
                       </span>
-                      <span className="font-mono text-[10px] text-ih-muted">
+                      <span className="font-mono text-[11px] text-ih-muted">
                         {new Date(entry.createdAt).toLocaleString()}
                       </span>
                     </div>

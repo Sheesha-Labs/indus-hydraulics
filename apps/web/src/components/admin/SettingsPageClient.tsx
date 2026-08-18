@@ -102,7 +102,7 @@ export default function SettingsPageClient({
 
       {/* Store Settings */}
       {activeTab === 'store' && (
-        <form action={handleStoreSettings} className="max-w-[560px] space-y-5">
+        <form action={handleStoreSettings} className="max-w-[560px] flex flex-col gap-5">
           <div>
             <label htmlFor="settings-name" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
               Store Name
@@ -589,7 +589,7 @@ export default function SettingsPageClient({
             <button
               type="submit"
               disabled={isPending}
-              className="h-9 px-5 bg-ih-accent text-white font-mono text-[12px] hover:opacity-90 disabled:opacity-50"
+              className="h-9 px-5 bg-ih-accent text-ih-accent-fg font-mono text-[12px] hover:bg-ih-accent-hover disabled:opacity-50"
             >
               {isPending ? 'Saving…' : 'Save Settings'}
             </button>
@@ -597,7 +597,7 @@ export default function SettingsPageClient({
               <span className="font-mono text-[11px] text-ih-success">Saved ✓</span>
             )}
             {error && activeTab === 'store' && (
-              <span className="font-mono text-[11px] text-[oklch(0.5_0.18_25)]" role="alert">{error}</span>
+              <span className="font-mono text-[11px] text-ih-danger-ink" role="alert">{error}</span>
             )}
           </div>
         </form>
@@ -632,9 +632,9 @@ export default function SettingsPageClient({
                 }`}
               >
                 <div className="text-[13px] font-medium text-ih-ink mb-0.5">{ek.label}</div>
-                <div className="font-mono text-[10px] text-ih-muted">{ek.description}</div>
+                <div className="font-mono text-[11px] text-ih-muted">{ek.description}</div>
                 {templateMap[ek.kind] && (
-                  <div className="mt-1 font-mono text-[9px] px-1.5 py-0.5 bg-ih-success-soft text-ih-success inline-block">
+                  <div className="mt-1 font-mono text-[10.5px] px-1.5 py-0.5 bg-ih-success-soft text-ih-success inline-block">
                     configured
                   </div>
                 )}
@@ -647,12 +647,12 @@ export default function SettingsPageClient({
             {(() => {
               const meta = EMAIL_KINDS.find((e) => e.kind === selectedEmail)!
               return (
-                <form action={handleEmailTemplate} key={selectedEmail} className="space-y-4">
+                <form action={handleEmailTemplate} key={selectedEmail} className="flex flex-col gap-4">
                   <input type="hidden" name="kind" value={selectedEmail} />
 
                   <div>
                     <div className="mb-3">
-                      <h2 className="text-[16px] font-semibold">{meta.label}</h2>
+                      <h2 className="text-[15px] font-medium">{meta.label}</h2>
                       <p className="text-[12px] text-ih-muted">{meta.description}</p>
                     </div>
                   </div>
@@ -675,7 +675,7 @@ export default function SettingsPageClient({
                       Body HTML
                     </label>
                     <div className="border border-ih-border bg-ih-surface p-3 mb-1.5">
-                      <p className="font-mono text-[10px] text-ih-muted">
+                      <p className="font-mono text-[11px] text-ih-muted">
                         Available variables:{' '}
                         <code className="bg-ih-surface-2 px-1">{'{{name}}'}</code>{' '}
                         <code className="bg-ih-surface-2 px-1">{'{{rfqCode}}'}</code>{' '}
@@ -694,7 +694,7 @@ export default function SettingsPageClient({
                     <button
                       type="submit"
                       disabled={isPending}
-                      className="h-9 px-5 bg-ih-accent text-white font-mono text-[12px] hover:opacity-90 disabled:opacity-50"
+                      className="h-9 px-5 bg-ih-accent text-ih-accent-fg font-mono text-[12px] hover:bg-ih-accent-hover disabled:opacity-50"
                     >
                       {isPending ? 'Saving…' : 'Save Template'}
                     </button>
@@ -702,7 +702,7 @@ export default function SettingsPageClient({
                       <span className="font-mono text-[11px] text-ih-success">Saved ✓</span>
                     )}
                     {error && activeTab === 'emails' && (
-                      <span className="font-mono text-[11px] text-[oklch(0.5_0.18_25)]" role="alert">{error}</span>
+                      <span className="font-mono text-[11px] text-ih-danger-ink" role="alert">{error}</span>
                     )}
                   </div>
                 </form>

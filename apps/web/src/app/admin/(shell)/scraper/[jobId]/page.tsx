@@ -43,8 +43,8 @@ const STATUS_LABELS = {
 const STATUS_STYLES: Record<keyof typeof STATUS_LABELS, string> = {
   queued: 'text-ih-muted bg-ih-surface-2',
   running: 'text-[oklch(0.4_0.14_85)] bg-[oklch(0.94_0.06_85)]',
-  completed: 'text-[oklch(0.4_0.14_145)] bg-[oklch(0.94_0.06_145)]',
-  failed: 'text-[oklch(0.4_0.18_25)] bg-[oklch(0.94_0.06_25)]',
+  completed: 'text-ih-success-ink bg-ih-success-soft',
+  failed: 'text-ih-danger-ink bg-ih-danger-soft',
   cancelled: 'text-ih-muted bg-ih-surface-2',
 }
 
@@ -260,7 +260,7 @@ export default async function ScraperJobDetailPage({ params, searchParams }: Pro
               they qualify it, and dropping them (v2's actions slot is nominally
               buttons-only) would remove the only signal that a crawl is still
               running. */}
-          <span className={`rounded-md px-2 py-0.5 text-[10px] font-mono uppercase tracking-wider ${STATUS_STYLES[job.status]}`}>
+          <span className={`rounded-md px-2 py-0.5 text-[10.5px] font-mono uppercase tracking-wider ${STATUS_STYLES[job.status]}`}>
             {STATUS_LABELS[job.status]}
           </span>
           {isLive && (
@@ -293,7 +293,7 @@ export default async function ScraperJobDetailPage({ params, searchParams }: Pro
 
       {/* Timeline */}
       <section className="border border-ih-border bg-ih-bg p-4 mb-6 text-[12px]">
-        <h2 className="font-mono uppercase tracking-wider text-[10px] text-ih-muted mb-3">Timeline</h2>
+        <h2 className="font-mono uppercase tracking-wider text-[10.5px] text-ih-muted mb-3">Timeline</h2>
         <dl className="grid grid-cols-3 gap-x-6 gap-y-1.5">
           <Time label="Created" value={job.createdAt} />
           <Time label="Started" value={job.startedAt} />
@@ -302,8 +302,8 @@ export default async function ScraperJobDetailPage({ params, searchParams }: Pro
       </section>
 
       {job.errorMessage && (
-        <section role="alert" className="border border-[oklch(0.4_0.18_25)] bg-[oklch(0.97_0.04_25)] p-4 mb-6">
-          <h2 className="font-mono uppercase tracking-wider text-[10px] text-[oklch(0.4_0.18_25)] mb-1">Error</h2>
+        <section role="alert" className="border border-[oklch(0.4_0.18_25)] bg-ih-danger-soft p-4 mb-6">
+          <h2 className="font-mono uppercase tracking-wider text-[10.5px] text-ih-danger-ink mb-1">Error</h2>
           <p className="text-[13px] text-[oklch(0.3_0.18_25)]">{job.errorMessage}</p>
         </section>
       )}
@@ -320,7 +320,7 @@ export default async function ScraperJobDetailPage({ params, searchParams }: Pro
           >
             <button
               type="submit"
-              className="h-9 px-4 border border-[oklch(0.4_0.18_25)] text-[oklch(0.4_0.18_25)] font-mono text-[12px] uppercase tracking-wider hover:bg-[oklch(0.97_0.04_25)]"
+              className="h-9 px-4 border border-[oklch(0.4_0.18_25)] text-ih-danger-ink font-mono text-[12px] uppercase tracking-wider hover:bg-ih-danger-soft"
             >
               Cancel crawl
             </button>
@@ -420,8 +420,8 @@ function Stat({ label, value, highlight }: { label: string; value: string; highl
         highlight ? 'border-[oklch(0.4_0.18_25)]' : 'border-ih-border'
       }`}
     >
-      <div className="font-mono uppercase tracking-wider text-[10px] text-ih-muted">{label}</div>
-      <div className={`text-[16px] font-semibold ${highlight ? 'text-[oklch(0.4_0.18_25)]' : 'text-ih-ink'}`}>
+      <div className="font-mono uppercase tracking-wider text-[10.5px] text-ih-muted">{label}</div>
+      <div className={`text-[15px] font-medium ${highlight ? 'text-ih-danger-ink' : 'text-ih-ink'}`}>
         {value}
       </div>
     </div>
@@ -431,7 +431,7 @@ function Stat({ label, value, highlight }: { label: string; value: string; highl
 function Time({ label, value }: { label: string; value: Date | null }) {
   return (
     <>
-      <dt className="font-mono uppercase tracking-wider text-[10px] text-ih-muted">{label}</dt>
+      <dt className="font-mono uppercase tracking-wider text-[10.5px] text-ih-muted">{label}</dt>
       <dd className="col-span-2 text-[12px] text-ih-ink-2">
         {value ? value.toISOString().replace('T', ' ').slice(0, 19) + ' UTC' : '—'}
       </dd>

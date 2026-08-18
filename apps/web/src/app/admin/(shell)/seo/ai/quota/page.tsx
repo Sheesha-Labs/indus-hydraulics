@@ -21,7 +21,7 @@ export default async function AiQuotaPage() {
 
   if (quotas.length === 0) {
     return (
-      <div className="border border-dashed border-ih-border py-16 text-center max-w-[800px]">
+      <div className="rounded-lg border border-ih-border py-16 text-center max-w-[800px]">
         <p className="text-ih-muted text-[13px]">
           No AI usage yet. Quota rows are created on first use.
         </p>
@@ -69,7 +69,7 @@ export default async function AiQuotaPage() {
                   <div className="text-ih-ink-2">{u?.name ?? '(unknown)'}</div>
                   <div className="font-mono text-[11px] text-ih-muted">{u?.email ?? q.staffUserId}</div>
                 </td>
-                <td className="px-3 py-3" style={{ minWidth: 220 }}>
+                <td className="min-w-[220px] px-3 py-3">
                   <div className="flex items-center gap-3">
                     <div className="flex-1 h-2 bg-ih-surface-2 overflow-hidden">
                       <div
@@ -103,7 +103,7 @@ export default async function AiQuotaPage() {
 
 function Th({ children }: { children: React.ReactNode }) {
   return (
-    <th className="text-left px-3 py-2.5 font-mono text-[10px] uppercase tracking-[0.1em] text-ih-muted">
+    <th className="text-left px-3 py-2.5 font-mono text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
       {children}
     </th>
   )

@@ -145,7 +145,7 @@ function BrowserBody({
                   className={cn(
                     'h-7 rounded-sm px-2.5 text-[12px] transition-colors',
                     kind === k.value
-                      ? 'bg-ih-navy font-medium text-white'
+                      ? 'bg-ih-navy font-medium text-ih-bg'
                       : 'text-ih-ink-2 hover:text-ih-ink'
                   )}
                 >
@@ -196,12 +196,12 @@ function BrowserBody({
                             className="h-full w-full object-cover"
                           />
                         ) : (
-                          <span className="text-ih-muted-2 grid h-full w-full place-items-center font-mono text-[10px] uppercase tracking-[0.1em]">
+                          <span className="text-ih-muted-2 grid h-full w-full place-items-center font-mono text-[10.5px] uppercase tracking-[0.1em]">
                             {m.kind}
                           </span>
                         )}
                         {isChosen ? (
-                          <span className="bg-ih-accent absolute right-1 top-1 inline-flex h-5 w-5 items-center justify-center rounded-full text-white">
+                          <span className="bg-ih-accent absolute right-1 top-1 inline-flex h-5 w-5 items-center justify-center rounded-full text-ih-accent-fg">
                             <Check size={11} strokeWidth={2.4} aria-hidden="true" />
                           </span>
                         ) : null}

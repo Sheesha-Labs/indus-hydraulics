@@ -40,7 +40,7 @@ export default async function NewScrapeJobPage({ params }: Props) {
       </div>
 
       <aside className="mt-6 border-l-2 border-ih-accent bg-ih-surface-2 p-4 text-[12px] text-ih-ink-2">
-        <p className="font-mono uppercase tracking-wider text-[10px] text-ih-muted mb-1.5">
+        <p className="font-mono uppercase tracking-wider text-[10.5px] text-ih-muted mb-1.5">
           What happens next
         </p>
         <ol className="list-decimal list-inside space-y-1">

@@ -92,7 +92,7 @@ export default function OgImagePicker({
               className="w-full h-full object-cover"
             />
           ) : (
-            <span className="text-[10px] text-ih-muted">No image</span>
+            <span className="text-[11px] text-ih-muted">No image</span>
           )}
         </div>
         <div className="flex-1 flex flex-col gap-2">
@@ -130,7 +130,7 @@ export default function OgImagePicker({
             </span>
           </label>
           {error && (
-            <span className="text-[11px] text-[oklch(0.5_0.18_25)]" role="alert">
+            <span className="text-[11px] text-ih-danger-ink" role="alert">
               {error}
             </span>
           )}

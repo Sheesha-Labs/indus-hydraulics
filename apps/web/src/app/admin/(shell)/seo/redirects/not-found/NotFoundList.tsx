@@ -67,13 +67,13 @@ export default function NotFoundList({ rows: initialRows }: Props) {
       </div>
 
       {error && (
-        <p className="mb-4 font-mono text-[12px] text-[oklch(0.5_0.18_25)]" role="alert">
+        <p className="mb-4 font-mono text-[12px] text-ih-danger-ink" role="alert">
           {error}
         </p>
       )}
 
       {rows.length === 0 ? (
-        <div className="py-16 text-center border border-dashed border-ih-border">
+        <div className="py-16 text-center rounded-lg border border-ih-border">
           <p className="text-ih-muted text-[13px]">
             Nothing unresolved — every captured 404 either has a redirect or was ignored.
           </p>
@@ -119,12 +119,12 @@ export default function NotFoundList({ rows: initialRows }: Props) {
                           name="toPath"
                           required
                           placeholder="/replacement-path"
-                          className="h-8 px-2 border border-ih-border bg-white text-[12px] focus:outline-none focus:border-ih-accent w-[200px]"
+                          className="h-8 px-2 border border-ih-border bg-ih-surface text-[12px] focus:outline-none focus:border-ih-accent w-[200px]"
                         />
                         <select
                           name="statusCode"
                           defaultValue="301"
-                          className="h-8 px-2 border border-ih-border bg-white text-[12px]"
+                          className="h-8 px-2 border border-ih-border bg-ih-surface text-[12px]"
                         >
                           <option value="301">301</option>
                           <option value="302">302</option>
@@ -134,7 +134,7 @@ export default function NotFoundList({ rows: initialRows }: Props) {
                         <button
                           type="submit"
                           disabled={pending}
-                          className="h-8 px-3 bg-ih-accent text-white font-mono text-[11px] disabled:opacity-50"
+                          className="h-8 px-3 bg-ih-accent text-ih-accent-fg font-mono text-[11px] disabled:opacity-50"
                         >
                           Save
                         </button>
@@ -179,7 +179,7 @@ export default function NotFoundList({ rows: initialRows }: Props) {
 
 function Th({ children }: { children: React.ReactNode }) {
   return (
-    <th className="text-left px-3 py-2.5 font-mono text-[10px] uppercase tracking-[0.1em] text-ih-muted">
+    <th className="text-left px-3 py-2.5 font-mono text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
       {children}
     </th>
   )

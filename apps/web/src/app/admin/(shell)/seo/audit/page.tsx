@@ -30,7 +30,7 @@ export default async function SeoAuditPage() {
 
   if (rows.length === 0) {
     return (
-      <div className="border border-dashed border-ih-border py-16 text-center max-w-[800px]">
+      <div className="rounded-lg border border-ih-border py-16 text-center max-w-[800px]">
         <p className="text-ih-muted text-[13px]">
           No audit entries yet. Edits made from the SEO entity drawer or
           infrastructure pages will start populating this log.
@@ -77,9 +77,9 @@ export default async function SeoAuditPage() {
                   {actorName ?? <span className="text-ih-muted">system</span>}
                 </td>
                 <td className="px-3 py-3 font-mono text-[11px]">
-                  <div className={isInfra ? 'text-[oklch(0.5_0.14_70)]' : ''}>{row.entityType}</div>
+                  <div className={isInfra ? 'text-ih-warning-ink' : ''}>{row.entityType}</div>
                   {row.entityId && (
-                    <div className="text-ih-muted text-[10px] truncate max-w-[160px]">
+                    <div className="text-ih-muted text-[11px] truncate max-w-[160px]">
                       {row.entityId}
                     </div>
                   )}
@@ -125,7 +125,7 @@ function formatValue(v: unknown): string {
 
 function Th({ children }: { children: React.ReactNode }) {
   return (
-    <th className="text-left px-3 py-2.5 font-mono text-[10px] uppercase tracking-[0.1em] text-ih-muted">
+    <th className="text-left px-3 py-2.5 font-mono text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
       {children}
     </th>
   )

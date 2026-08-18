@@ -47,7 +47,7 @@ export default async function GscPage() {
       </div>
 
       <div className="border border-ih-border bg-ih-surface p-6">
-        <h2 className="text-[16px] font-semibold mb-2">
+        <h2 className="text-[15px] font-medium mb-2">
           {oauthConfigured ? 'OAuth configured — connection pending' : 'Setup required'}
         </h2>
         <p className="text-[13px] text-ih-muted mb-4">
@@ -81,7 +81,7 @@ GSC_PROPERTY_URL=https://indushydraulics.com/`}</pre>
         <div
           className={`px-4 py-3 border ${
             oauthConfigured
-              ? 'border-[oklch(0.75_0.12_70)]/40 bg-[oklch(0.96_0.05_70)]/40 text-[oklch(0.5_0.14_70)]'
+              ? 'border-[oklch(0.75_0.12_70)]/40 bg-ih-warning-soft/40 text-ih-warning-ink'
               : 'border-ih-border bg-ih-surface-2 text-ih-muted'
           } text-[13px]`}
         >
@@ -106,10 +106,10 @@ GSC_PROPERTY_URL=https://indushydraulics.com/`}</pre>
 function Tile({ label, value }: { label: string; value: string }) {
   return (
     <div className="border border-ih-border bg-ih-surface p-4">
-      <div className="font-mono text-[10px] uppercase tracking-[0.1em] text-ih-muted">
+      <div className="font-mono text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
         {label}
       </div>
-      <div className="text-[28px] font-semibold mt-1">{value}</div>
+      <div className="text-[28px] font-medium mt-1">{value}</div>
     </div>
   )
 }

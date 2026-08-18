@@ -111,10 +111,10 @@ function monthStart(): Date {
 function Tile({ label, value, accent }: { label: string; value: string; accent?: boolean }) {
   return (
     <div className="border border-ih-border bg-ih-surface p-4">
-      <div className="font-mono text-[10px] uppercase tracking-[0.1em] text-ih-muted">
+      <div className="font-mono text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
         {label}
       </div>
-      <div className={`text-[28px] font-semibold mt-1 ${accent ? 'text-ih-accent' : ''}`}>
+      <div className={`text-[28px] font-medium mt-1 ${accent ? 'text-ih-accent' : ''}`}>
         {value}
       </div>
     </div>

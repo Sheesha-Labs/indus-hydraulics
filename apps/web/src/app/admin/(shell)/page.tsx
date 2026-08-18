@@ -68,7 +68,7 @@ export default async function AdminDashboardPage({ params }: Props) {
       actions={
         <Link
           href={`${ADMIN_PREFIX}/products/new`}
-          className="flex h-9 items-center rounded-md bg-ih-accent px-4 text-[13px] font-medium text-white transition-opacity hover:opacity-90"
+          className="flex h-9 items-center rounded-md bg-ih-accent px-4 text-[13px] font-medium text-ih-accent-fg transition-opacity hover:bg-ih-accent-hover"
         >
           + Add product
         </Link>
@@ -153,7 +153,7 @@ export default async function AdminDashboardPage({ params }: Props) {
               ) : (
                 recentActivity.map((act) => (
                   <div key={act.id}>
-                    <span className="font-semibold text-ih-ink">{act.account.displayName}</span>
+                    <span className="font-medium text-ih-ink">{act.account.displayName}</span>
                     {' — '}
                     <span className="text-ih-muted">{act.verb.replace(/_/g, ' ')}</span>
                     {' · '}
@@ -198,7 +198,7 @@ export default async function AdminDashboardPage({ params }: Props) {
             <Link
               key={link.href}
               href={link.href}
-              className="flex items-center gap-3 px-4 py-3.5 border border-ih-border bg-white hover:bg-ih-bg transition-colors text-[13px] font-medium"
+              className="flex items-center gap-3 px-4 py-3.5 border border-ih-border bg-ih-surface hover:bg-ih-bg transition-colors text-[13px] font-medium"
             >
               <span className="font-mono text-ih-muted text-base">{link.icon}</span>
               {link.label}
@@ -211,23 +211,23 @@ export default async function AdminDashboardPage({ params }: Props) {
 
 function KpiCard({ label, value, delta }: { label: string; value: string; delta: string }) {
   return (
-    <div className="bg-white border border-[#e6e1d5] p-4 flex flex-col gap-1.5">
-      <p className="font-mono text-[10px] tracking-[0.1em] uppercase text-ih-muted">{label}</p>
-      <p className="font-mono text-[26px] font-semibold tracking-tight leading-none">{value}</p>
+    <div className="bg-ih-surface border border-ih-border p-4 flex flex-col gap-1.5">
+      <p className="font-mono text-[10.5px] tracking-[0.1em] uppercase text-ih-muted">{label}</p>
+      <p className="font-mono text-[22px] font-medium tracking-tight leading-none">{value}</p>
       <p className="font-mono text-[11px] text-ih-muted-2">{delta}</p>
     </div>
   )
 }
 
 function Card({ children }: { children: React.ReactNode }) {
-  return <div className="bg-white border border-[#e6e1d5]">{children}</div>
+  return <div className="bg-ih-surface border border-ih-border">{children}</div>
 }
 
 function CardHead({ title, subtitle, action }: { title: string; subtitle?: string; action?: React.ReactNode }) {
   return (
-    <div className="flex justify-between items-center gap-3 px-4 py-3.5 border-b border-[#efebe1]">
+    <div className="flex justify-between items-center gap-3 px-4 py-3.5 border-b border-ih-border">
       <div>
-        <h3 className="font-semibold text-[14px]">{title}</h3>
+        <h3 className="font-medium text-[14px]">{title}</h3>
         {subtitle && <p className="text-[12px] text-ih-muted mt-0.5">{subtitle}</p>}
       </div>
       {action}
@@ -252,10 +252,10 @@ function StatusPill({ status }: { status: string }) {
   const styles: Record<string, string> = {
     active: 'bg-[oklch(0.95_0.04_150)] text-[oklch(0.45_0.12_150)]',
     draft: 'bg-ih-surface-2 text-ih-muted',
-    discontinued: 'bg-[oklch(0.95_0.02_25)] text-[oklch(0.5_0.1_25)]',
+    discontinued: 'bg-[oklch(0.95_0.02_25)] text-ih-danger-ink',
   }
   return (
-    <span className={`font-mono text-[10px] tracking-[0.06em] uppercase px-2 py-0.5 ${styles[status] ?? styles['draft'] ?? ''}`}>
+    <span className={`font-mono text-[10.5px] tracking-[0.06em] uppercase px-2 py-0.5 ${styles[status] ?? styles['draft'] ?? ''}`}>
       {status}
     </span>
   )

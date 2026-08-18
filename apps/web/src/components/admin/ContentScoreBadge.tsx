@@ -7,9 +7,9 @@ type ContentScoreBadgeProps = {
 }
 
 const BAND_CLASSES: Record<ReturnType<typeof bandForScore>, string> = {
-  good: 'bg-[oklch(0.94_0.06_145)] text-[oklch(0.4_0.14_145)]',
+  good: 'bg-ih-success-soft text-ih-success-ink',
   warn: 'bg-[oklch(0.96_0.07_85)] text-[oklch(0.45_0.13_75)]',
-  danger: 'bg-[oklch(0.96_0.04_25)] text-[oklch(0.5_0.12_25)]',
+  danger: 'bg-ih-danger-soft text-ih-danger-ink',
 }
 
 const BAND_LABELS: Record<ReturnType<typeof bandForScore>, string> = {
@@ -23,7 +23,7 @@ export default function ContentScoreBadge({ score, compact = false }: ContentSco
   if (compact) {
     return (
       <span
-        className={`inline-flex items-center justify-center min-w-[36px] h-5 px-1.5 font-mono text-[11px] font-semibold ${BAND_CLASSES[band]}`}
+        className={`inline-flex items-center justify-center min-w-[36px] h-5 px-1.5 font-mono text-[11px] font-medium ${BAND_CLASSES[band]}`}
         title={`Content depth: ${BAND_LABELS[band]}`}
       >
         {score}
@@ -32,7 +32,7 @@ export default function ContentScoreBadge({ score, compact = false }: ContentSco
   }
   return (
     <span
-      className={`inline-flex items-center gap-2 px-2.5 py-1 font-mono text-[11px] font-semibold ${BAND_CLASSES[band]}`}
+      className={`inline-flex items-center gap-2 px-2.5 py-1 font-mono text-[11px] font-medium ${BAND_CLASSES[band]}`}
     >
       <span>{score}</span>
       <span className="opacity-80">·</span>

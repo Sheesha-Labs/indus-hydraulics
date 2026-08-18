@@ -16,12 +16,12 @@ export default function ContentDepthPanel({ result }: ContentDepthPanelProps) {
   const failing = result.breakdown.filter((c) => !c.pass).length
   return (
     <section
-      className="border border-ih-border bg-white p-5 mb-6"
+      className="border border-ih-border bg-ih-surface p-5 mb-6"
       aria-label="Product content depth"
     >
       <header className="flex items-center justify-between mb-4 gap-4 flex-wrap">
         <div>
-          <h2 className="font-semibold text-[16px] tracking-tight">Content depth</h2>
+          <h2 className="font-medium text-[15px] tracking-tight">Content depth</h2>
           <p className="text-[12px] text-ih-muted mt-0.5">
             How richly this product page is described — drives organic search and AI citation eligibility.
           </p>
@@ -37,7 +37,7 @@ export default function ContentDepthPanel({ result }: ContentDepthPanelProps) {
           >
             <span
               aria-hidden="true"
-              className={`mt-0.5 font-mono text-[12px] ${check.pass ? 'text-[oklch(0.45_0.12_150)]' : 'text-[oklch(0.55_0.16_25)]'}`}
+              className={`mt-0.5 font-mono text-[12px] ${check.pass ? 'text-[oklch(0.45_0.12_150)]' : 'text-ih-danger-ink'}`}
             >
               {check.pass ? '✓' : '✕'}
             </span>

@@ -64,7 +64,7 @@ export default function IndustryEditorClient({ contentEditor, industry, recentIm
       actions={
         <>
         {savedAt && (
-          <span className="text-[12px] text-[oklch(0.55_0.12_150)]">Saved at {savedAt}</span>
+          <span className="text-[12px] text-ih-success-ink">Saved at {savedAt}</span>
         )}
         <Link
           href="/admin/industries"
@@ -96,7 +96,7 @@ export default function IndustryEditorClient({ contentEditor, industry, recentIm
       </div>
 
       {tab === 'core' && (
-        <div className="max-w-2xl text-[13px] text-ih-muted border border-dashed border-ih-border p-6">
+        <div className="max-w-2xl text-[13px] text-ih-muted rounded-lg border border-ih-border p-6">
           The Core editor for industry metadata (name, slug, description, hero, published)
           still lives on the{' '}
           <Link href="/admin/industries" className="underline">

@@ -87,7 +87,7 @@ export default function MediaPicker({ name, defaultValue, recent, hint }: Props)
         <div
           className={cn(
             'bg-ih-surface-2 grid h-20 w-24 flex-shrink-0 place-items-center overflow-hidden rounded-md border',
-            selected ? 'border-ih-border' : 'border-ih-border border-dashed'
+            selected ? 'border-ih-border' : 'border-ih-rounded-lg border'
           )}
         >
           {thumb ? (

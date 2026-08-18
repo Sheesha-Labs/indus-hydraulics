@@ -181,7 +181,7 @@ export function MediaUploader({ onUploaded }: { onUploaded?: () => void }) {
           if (e.dataTransfer.files.length) enqueue(e.dataTransfer.files)
         }}
         className={cn(
-          'flex flex-col items-center gap-1.5 rounded-lg border border-dashed px-4 py-7 text-center transition-colors',
+          'flex flex-col items-center gap-1.5 rounded-lg rounded-lg border px-4 py-7 text-center transition-colors',
           over ? 'border-ih-accent bg-ih-accent-soft' : 'border-ih-border bg-ih-bg'
         )}
       >
@@ -232,7 +232,7 @@ export function MediaUploader({ onUploaded }: { onUploaded?: () => void }) {
                     aria-hidden="true"
                   />
                 ) : (
-                  <span className="font-mono text-[10px] tabular-nums text-ih-muted">
+                  <span className="font-mono text-[11px] tabular-nums text-ih-muted">
                     {item.status === 'uploading' ? `${Math.round(item.progress * 100)}%` : '—'}
                   </span>
                 )}

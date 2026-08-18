@@ -146,10 +146,10 @@ export default function AdminSidebar({ userName, userRole }: Props) {
         <Link href={ADMIN_PREFIX} className="flex items-center gap-2.5">
           <LogoMark size={30} />
           <span className="min-w-0">
-            <span className="block truncate font-serif text-[17px] leading-none text-ih-ink">
+            <span className="block truncate font-serif text-[18px] leading-none text-ih-ink">
               Indus Hydraulics
             </span>
-            <span className="mt-1 block font-mono text-[9.5px] uppercase tracking-[0.14em] text-ih-muted-2">
+            <span className="mt-1 block font-mono text-[10.5px] uppercase tracking-[0.14em] text-ih-muted-2">
               Admin · v1.0.0
             </span>
           </span>

@@ -37,7 +37,7 @@ export function ChipsEditor({ name, defaultValue }: { name: string; defaultValue
           <button
             type="button"
             onClick={() => update(items.filter((_, idx) => idx !== i))}
-            className="h-9 px-3 text-[11px] border border-ih-border bg-white text-[oklch(0.5_0.16_25)]"
+            className="h-9 px-3 text-[11px] border border-ih-border bg-ih-surface text-ih-danger-ink"
           >
             Remove
           </button>
@@ -46,7 +46,7 @@ export function ChipsEditor({ name, defaultValue }: { name: string; defaultValue
       <button
         type="button"
         onClick={() => update([...items, ''])}
-        className="self-start h-8 px-3 text-[11px] border border-ih-border bg-white hover:border-ih-accent"
+        className="self-start h-8 px-3 text-[11px] border border-ih-border bg-ih-surface hover:border-ih-accent"
       >
         + Add chip
       </button>
@@ -94,7 +94,7 @@ export function StatsEditor({ name, defaultValue }: { name: string; defaultValue
           <button
             type="button"
             onClick={() => update(items.filter((_, idx) => idx !== i))}
-            className="h-9 px-3 text-[11px] border border-ih-border bg-white text-[oklch(0.5_0.16_25)]"
+            className="h-9 px-3 text-[11px] border border-ih-border bg-ih-surface text-ih-danger-ink"
           >
             Remove
           </button>
@@ -103,7 +103,7 @@ export function StatsEditor({ name, defaultValue }: { name: string; defaultValue
       <button
         type="button"
         onClick={() => update([...items, { value: '', label: '' }])}
-        className="self-start h-8 px-3 text-[11px] border border-ih-border bg-white hover:border-ih-accent"
+        className="self-start h-8 px-3 text-[11px] border border-ih-border bg-ih-surface hover:border-ih-accent"
       >
         + Add stat
       </button>
@@ -173,7 +173,7 @@ export function DeliveryAreasEditor({
             <button
               type="button"
               onClick={() => update(items.filter((_, idx) => idx !== i))}
-              className="h-9 px-3 text-[11px] border border-ih-border bg-white text-[oklch(0.5_0.16_25)]"
+              className="h-9 px-3 text-[11px] border border-ih-border bg-ih-surface text-ih-danger-ink"
             >
               Remove
             </button>
@@ -196,7 +196,7 @@ export function DeliveryAreasEditor({
         onClick={() =>
           update([...items, { category: '', title: '', description: '', skuCount: '' }])
         }
-        className="self-start h-8 px-3 text-[11px] border border-ih-border bg-white hover:border-ih-accent"
+        className="self-start h-8 px-3 text-[11px] border border-ih-border bg-ih-surface hover:border-ih-accent"
       >
         + Add delivery area
       </button>
@@ -303,7 +303,7 @@ export function SupportBlockEditor({
               onClick={() => {
                 setState({ ...state, bullets: state.bullets.filter((_, idx) => idx !== i) })
               }}
-              className="h-9 px-3 text-[11px] border border-ih-border bg-white text-[oklch(0.5_0.16_25)]"
+              className="h-9 px-3 text-[11px] border border-ih-border bg-ih-surface text-ih-danger-ink"
             >
               Remove
             </button>
@@ -312,7 +312,7 @@ export function SupportBlockEditor({
         <button
           type="button"
           onClick={() => setState({ ...state, bullets: [...state.bullets, ''] })}
-          className="self-start h-8 px-3 text-[11px] border border-ih-border bg-white hover:border-ih-accent"
+          className="self-start h-8 px-3 text-[11px] border border-ih-border bg-ih-surface hover:border-ih-accent"
         >
           + Add bullet
         </button>

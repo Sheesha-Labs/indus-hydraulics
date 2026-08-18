@@ -113,7 +113,7 @@ export default async function AdminBlogListPage({ params, searchParams }: Props)
       actions={
         <Link
           href="/admin/blog/new"
-          className="flex h-9 items-center rounded-md bg-ih-accent px-4 font-mono text-[12px] text-white transition-opacity hover:opacity-90"
+          className="flex h-9 items-center rounded-md bg-ih-accent px-4 font-mono text-[12px] text-ih-accent-fg transition-opacity hover:bg-ih-accent-hover"
         >
           + New Post
         </Link>
@@ -127,7 +127,7 @@ export default async function AdminBlogListPage({ params, searchParams }: Props)
             href={href({ view: undefined, status: undefined })}
             aria-current={trashed ? undefined : 'page'}
             className={`flex h-7 items-center rounded px-3 font-mono text-[11.5px] transition-colors ${
-              trashed ? 'text-ih-muted hover:text-ih-ink' : 'bg-ih-navy font-medium text-white'
+              trashed ? 'text-ih-muted hover:text-ih-ink' : 'bg-ih-navy font-medium text-ih-bg'
             }`}
           >
             Articles
@@ -136,11 +136,11 @@ export default async function AdminBlogListPage({ params, searchParams }: Props)
             href={href({ view: 'trash', status: undefined })}
             aria-current={trashed ? 'page' : undefined}
             className={`flex h-7 items-center gap-1.5 rounded px-3 font-mono text-[11.5px] transition-colors ${
-              trashed ? 'bg-ih-navy font-medium text-white' : 'text-ih-muted hover:text-ih-ink'
+              trashed ? 'bg-ih-navy font-medium text-ih-bg' : 'text-ih-muted hover:text-ih-ink'
             }`}
           >
             Trash
-            <span className={trashed ? 'text-white/70' : 'text-ih-muted-2'}>{trashCount}</span>
+            <span className={trashed ? 'text-ih-bg/70' : 'text-ih-muted-2'}>{trashCount}</span>
           </Link>
         </div>
 
@@ -159,7 +159,7 @@ export default async function AdminBlogListPage({ params, searchParams }: Props)
           />
           <button
             type="submit"
-            className="h-8 rounded-md bg-ih-navy px-3 text-[12px] font-medium text-white hover:opacity-90"
+            className="h-8 rounded-md bg-ih-navy px-3 text-[12px] font-medium text-ih-bg hover:bg-ih-ink"
           >
             Search
           </button>
@@ -190,7 +190,7 @@ export default async function AdminBlogListPage({ params, searchParams }: Props)
       )}
 
       {posts.length === 0 ? (
-        <div className="border border-dashed border-ih-border py-16 text-center">
+        <div className="rounded-lg border border-ih-border py-16 text-center">
           <p className="mb-3 text-ih-muted">
             {trashed
               ? 'Trash is empty. Posts you delete land here first.'
@@ -201,7 +201,7 @@ export default async function AdminBlogListPage({ params, searchParams }: Props)
           {!trashed && (
             <Link
               href="/admin/blog/new"
-              className="inline-flex h-9 items-center rounded-md bg-ih-accent px-4 text-[13px] font-medium text-white hover:opacity-90"
+              className="inline-flex h-9 items-center rounded-md bg-ih-accent px-4 text-[13px] font-medium text-ih-accent-fg hover:bg-ih-accent-hover"
             >
               + Write your first post
             </Link>
@@ -210,7 +210,7 @@ export default async function AdminBlogListPage({ params, searchParams }: Props)
       ) : (
         <div className="border border-ih-border bg-ih-surface">
           <div
-            className={`${COLUMNS} border-b border-ih-border bg-ih-bg px-4 py-2.5 font-mono text-[10px] uppercase tracking-[0.1em] text-ih-muted`}
+            className={`${COLUMNS} border-b border-ih-border bg-ih-bg px-4 py-2.5 font-mono text-[10.5px] uppercase tracking-[0.1em] text-ih-muted`}
           >
             <div>Title</div>
             <div className="text-center">Status</div>
@@ -239,7 +239,7 @@ export default async function AdminBlogListPage({ params, searchParams }: Props)
                 </div>
                 <div className="flex justify-center">
                   <span
-                    className={`rounded-full px-2 py-0.5 font-mono text-[10px] font-semibold ${STATUS_STYLE[status]}`}
+                    className={`rounded-full px-2 py-0.5 font-mono text-[11px] font-medium ${STATUS_STYLE[status]}`}
                   >
                     {STATUS_LABEL[status]}
                   </span>

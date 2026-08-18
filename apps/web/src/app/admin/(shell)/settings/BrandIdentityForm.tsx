@@ -67,7 +67,7 @@ export default function BrandIdentityForm({
   }
 
   return (
-    <form action={handleSubmit} className="max-w-[720px] space-y-4">
+    <form action={handleSubmit} className="max-w-[720px] flex flex-col gap-4">
       <p className="text-[13px] leading-[1.6] text-ih-muted">
         The marks that stand for Indus Hydraulics on the storefront. Each surface takes its own file
         because each one wants a different one — the footer is dark, a tab strip is 16px wide, and a

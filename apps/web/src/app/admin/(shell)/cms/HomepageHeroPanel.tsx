@@ -98,15 +98,15 @@ export default function HomepageHeroPanel({ slides }: Props) {
   }
 
   return (
-    <div className="space-y-6">
+    <div className="flex flex-col gap-6">
       {/* Upload form */}
       <form
         action={handleUpload}
-        className="border border-ih-border bg-ih-surface p-5 space-y-3"
+        className="border border-ih-border bg-ih-surface p-5 flex flex-col gap-3"
       >
         <div className="flex items-baseline justify-between">
-          <h2 className="text-[14px] font-semibold">Add a new slide</h2>
-          <span className="font-mono text-[10px] tracking-[0.1em] uppercase text-ih-muted">
+          <h2 className="text-[14px] font-medium">Add a new slide</h2>
+          <span className="font-mono text-[10.5px] tracking-[0.1em] uppercase text-ih-muted">
             JPEG / PNG / WebP / GIF · ≤ 10 MB · ~1200×1100 recommended
           </span>
         </div>
@@ -129,7 +129,7 @@ export default function HomepageHeroPanel({ slides }: Props) {
           <button
             type="submit"
             disabled={pending}
-            className="h-10 bg-ih-accent text-white font-mono text-[12px] hover:opacity-90 disabled:opacity-50 disabled:cursor-not-allowed"
+            className="h-10 bg-ih-accent text-ih-accent-fg font-mono text-[12px] hover:bg-ih-accent-hover disabled:opacity-50 disabled:cursor-not-allowed"
           >
             {pending ? 'Uploading…' : 'Upload'}
           </button>
@@ -150,7 +150,7 @@ export default function HomepageHeroPanel({ slides }: Props) {
           </div>
         ) : (
           <>
-            <div className="grid grid-cols-[60px_120px_1fr_200px_100px_120px_60px] px-4 py-2.5 bg-ih-bg border-b border-ih-border font-mono text-[10px] tracking-[0.1em] uppercase text-ih-muted">
+            <div className="grid grid-cols-[60px_120px_1fr_200px_100px_120px_60px] px-4 py-2.5 bg-ih-bg border-b border-ih-border font-mono text-[10.5px] tracking-[0.1em] uppercase text-ih-muted">
               <div>#</div>
               <div>Preview</div>
               <div>Filename</div>
@@ -198,9 +198,9 @@ export default function HomepageHeroPanel({ slides }: Props) {
                     type="button"
                     onClick={() => handleUpdate(slide.id, { isPublished: !slide.isPublished })}
                     disabled={pending}
-                    className={`px-2 py-0.5 font-mono text-[10px] font-semibold transition-opacity hover:opacity-80 disabled:opacity-50 ${
+                    className={`px-2 py-0.5 font-mono text-[11px] font-medium transition-opacity hover:opacity-80 disabled:opacity-50 ${
                       slide.isPublished
-                        ? 'text-[oklch(0.4_0.14_145)] bg-[oklch(0.94_0.06_145)]'
+                        ? 'text-ih-success-ink bg-ih-success-soft'
                         : 'text-ih-muted bg-ih-surface-2'
                     }`}
                   >

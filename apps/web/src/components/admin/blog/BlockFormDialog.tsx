@@ -161,7 +161,7 @@ export default function BlockFormDialog({ spec, value, onCancel, onSave }: Props
             <button
               type="button"
               onClick={save}
-              className="h-9 rounded-md bg-ih-accent px-4 text-[13px] font-medium text-white transition-opacity hover:opacity-90"
+              className="h-9 rounded-md bg-ih-accent px-4 text-[13px] font-medium text-ih-accent-fg transition-opacity hover:bg-ih-accent-hover"
             >
               Done
             </button>
@@ -387,7 +387,7 @@ function FieldView({
                 {nested.map((row, j) => (
                   <div key={j} className="rounded-md border border-ih-border bg-ih-surface p-2.5">
                     <div className="mb-1.5 flex items-center justify-between">
-                      <span className="font-mono text-[10px] uppercase tracking-[0.13em] text-ih-muted-2">
+                      <span className="font-mono text-[10.5px] uppercase tracking-[0.13em] text-ih-muted-2">
                         {field.nested.itemLabel} {j + 1}
                       </span>
                       <RemoveButton
