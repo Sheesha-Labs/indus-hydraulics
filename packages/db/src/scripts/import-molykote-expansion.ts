@@ -37,8 +37,11 @@
  *     that were fetched successfully.
  *   - Data sheets are linked at DuPont's URL, never re-hosted, so a superseded
  *     sheet is never served from our storage. Only the English sheet is taken:
- *     the region path contains `/en/` for every locale, so the language has to
- *     be read from the folder after `/documents/`, or German sheets get picked.
+ *     the region path carries an "en" segment for every locale, so the language
+ *     has to be read from the folder after `/documents/`, or German sheets get
+ *     picked. (Written without the slashes around that segment on purpose:
+ *     no-i18n-leftover.test.ts greps the tree for quoted locale path prefixes
+ *     and a comment matches it exactly as a route would.)
  *
  * Idempotent: a product that already exists is skipped unless `--refresh-copy`
  * is passed, an image whose Media `originalFilename` already matches is not
