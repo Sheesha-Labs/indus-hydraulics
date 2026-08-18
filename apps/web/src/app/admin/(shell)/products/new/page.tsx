@@ -40,7 +40,7 @@ export default async function NewProductPage({ params }: Props) {
           </button>
         </>
       }
-      bodyClassName="px-[26px] py-6 pb-16 max-w-3xl"
+      bodyClassName="max-w-2xl"
     >
 
         {/* createProduct returns Result<...>; the void-returning wrapper

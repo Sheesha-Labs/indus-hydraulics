@@ -183,7 +183,7 @@ export default function NavigationEditor({ menu, items: initialItems, locationLa
           </button>
         </>
       }
-      bodyClassName="flex flex-col gap-4 px-[26px] py-6 pb-16"
+      bodyClassName="flex flex-col gap-6"
     >
 
       {error ? (

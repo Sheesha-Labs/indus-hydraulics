@@ -27,7 +27,7 @@ export default async function NewScrapeJobPage({ params }: Props) {
           ← Back to crawls
         </Link>
       }
-      bodyClassName="px-[26px] py-6 pb-16 max-w-[680px]"
+      bodyClassName="max-w-2xl"
     >
       {/* Kept in the body: the bar's subtitle is a one-line summary, this is
           the instruction people follow. */}

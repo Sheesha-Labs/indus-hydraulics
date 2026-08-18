@@ -172,7 +172,7 @@ export default function BlogPostEditorClient({
           </Link>
         </>
       }
-      bodyClassName="px-[26px] py-6 pb-16 max-w-[960px]"
+      bodyClassName="max-w-[860px]"
     >
 
       {!isNew && (

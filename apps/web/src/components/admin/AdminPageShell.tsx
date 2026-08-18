@@ -54,32 +54,51 @@ import type { ReactNode } from 'react'
  */
 export default function AdminPageShell({
   title,
+  breadcrumbs,
   sub,
   actions,
   children,
   bodyClassName,
 }: {
   title: ReactNode
+  /**
+   * The location line, ABOVE the title — "Content · Blog", or a link back to
+   * the parent record. Bazar puts it here rather than below because a reader
+   * scanning down hits "where am I" before "what is this", which is the order
+   * they actually want it in.
+   */
+  breadcrumbs?: ReactNode
+  /** @deprecated Use `breadcrumbs`. Rendered in the same slot while pages migrate. */
   sub?: ReactNode
   actions?: ReactNode
   children: ReactNode
-  /** Escape hatch for a page that needs a different gutter (e.g. a full-bleed table). */
+  /** Extra classes on `<main>` — a width cap, normally. The gutter is fixed. */
   bodyClassName?: string
 }) {
   return (
     <>
-      <div className="sticky top-0 z-20 flex h-[60px] items-center gap-[14px] border-b border-ih-border bg-ih-surface px-[26px]">
-        <div className="min-w-0">
-          <h1 className="truncate text-[18px] font-medium tracking-[-0.015em] text-ih-ink">
-            {title}
-          </h1>
-          {sub ? <div className="mt-px truncate text-[11.5px] text-ih-muted">{sub}</div> : null}
+      {/*
+        Not sticky. The shell layout pins this column to the viewport with
+        `md:overflow-hidden`, so the bar stays put because <main> beneath it is
+        the thing that scrolls. A sticky bar here would be redundant AND would
+        open a stacking context every later overlay has to out-rank.
+
+        px-7 matches <main>'s p-7 exactly: that is what puts the page title's
+        left edge over the first content element below it, which is the single
+        most visible alignment in the console.
+      */}
+      <header className="flex h-[60px] shrink-0 items-center gap-4 border-b border-ih-border bg-ih-surface px-7">
+        <div className="min-w-0 flex-1">
+          {breadcrumbs ?? sub ? (
+            <div className="mb-0.5 truncate text-[11.5px] text-ih-muted">{breadcrumbs ?? sub}</div>
+          ) : null}
+          <h1 className="truncate text-[18px] font-medium tracking-tight text-ih-ink">{title}</h1>
         </div>
         {/* Rendered only when there are actions — an empty flex box would still
             eat the gap and shift the title's optical centre. */}
-        {actions ? <div className="ml-auto flex items-center gap-2">{actions}</div> : null}
-      </div>
-      <div className={bodyClassName ?? 'px-[26px] py-6 pb-16'}>{children}</div>
+        {actions ? <div className="flex shrink-0 items-center gap-2">{actions}</div> : null}
+      </header>
+      <main className={`flex-1 overflow-auto p-4 md:p-7 ${bodyClassName ?? ''}`}>{children}</main>
     </>
   )
 }
