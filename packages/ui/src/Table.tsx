@@ -6,9 +6,19 @@ import { cn } from './lib/utils'
 /**
  * Design language v2 — `.ih-table`.
  *
- * Header: mono 10.5px-500, 0.08em, uppercase, muted, 11×16px padding, bottom
- * hairline. Cells: 14×16px, bottom hairline, middle-aligned, 13px. The last
- * row drops its border so the table ends on the container edge, not a rule.
+ * Cells are 14px on a 12×12px pad, and the header is 13px MEDIUM SANS —
+ * not the 10px mono uppercase this used to be. At 10px the header read as
+ * noise rather than structure, and the body text was smaller than the row was
+ * tall: more air wrapped around less weight, which is precisely what "the
+ * admin is not well proportioned" meant. Mono survives inside cells, for the
+ * machine values it exists for — SKUs, slugs, codes, quantities — via
+ * `numeric` and the caller's own classes.
+ *
+ * This AMENDS CLAUDE.md §2.6, which mandates mono for table headers. See
+ * docs/admin-design-language.md.
+ *
+ * The last row drops its border so the table ends on the container edge, not
+ * a rule.
  *
  * Row hover fills surface-2 with NO transition — 03-interactions-and-states.md
  * §1 is explicit that instant response reads as more responsive in dense
@@ -20,8 +30,15 @@ import { cn } from './lib/utils'
 
 export function Table({ className, ...props }: React.TableHTMLAttributes<HTMLTableElement>) {
   return (
-    <div className="w-full overflow-x-auto">
-      <table className={cn('w-full border-collapse text-[13px]', className)} {...props} />
+    /*
+      The wrapper IS the card — border, radius, surface — not a bare scroll
+      box. A table drawn edge-to-edge with square corners on a page where every
+      button, chip and input is rounded stops reading as a card and starts
+      reading as a data dump; that was the single most-cited finding in the
+      admin audit.
+    */
+    <div className="w-full overflow-x-auto rounded-lg border border-ih-border bg-ih-surface">
+      <table className={cn('w-full border-collapse text-[14px]', className)} {...props} />
     </div>
   )
 }
@@ -57,8 +74,8 @@ export function TableHead({ className, numeric, scope = 'col', ...props }: Table
     <th
       scope={scope}
       className={cn(
-        'whitespace-nowrap border-b border-ih-border px-4 py-[11px] text-left align-bottom',
-        'font-mono text-[10.5px] font-medium uppercase tracking-[0.08em] text-ih-muted',
+        'whitespace-nowrap border-b border-ih-border px-3 py-3 text-left align-middle first:pl-4',
+        'text-[13px] font-medium text-ih-muted-2',
         numeric && 'text-right',
         className
       )}
@@ -75,7 +92,7 @@ export function TableCell({ className, numeric, ...props }: TableCellProps) {
   return (
     <td
       className={cn(
-        'border-b border-ih-border px-4 py-3.5 align-middle',
+        'border-b border-ih-border px-3 py-3 align-middle first:pl-4',
         numeric && 'text-right font-mono tabular-nums',
         className
       )}

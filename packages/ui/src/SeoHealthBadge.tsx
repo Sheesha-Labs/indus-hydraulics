@@ -4,14 +4,15 @@ import { StatusPill } from './StatusPill'
 export interface SeoHealthBadgeProps {
   score: number
   className?: string
-  size?: 'sm' | 'md' | 'lg'
+  /** Mirrors StatusPill's ladder — `sm` for a rail's `<dl>` rows. */
+  size?: 'default' | 'sm'
 }
 
 /**
  * Visual health indicator for the SEO inspector grid + entity drawer.
  * Tones map: ≥80 good (green), 50–79 warn (amber), <50 danger (red).
  */
-export function SeoHealthBadge({ score, className, size = 'md' }: SeoHealthBadgeProps) {
+export function SeoHealthBadge({ score, className, size = 'default' }: SeoHealthBadgeProps) {
   const tone = score >= 80 ? 'good' : score >= 50 ? 'warn' : 'danger'
   return (
     <StatusPill tone={tone} size={size} {...(className ? { className } : {})}>

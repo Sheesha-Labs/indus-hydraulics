@@ -15,10 +15,10 @@ import { cn } from './lib/utils'
  */
 
 const fieldBase = cn(
-  'w-full rounded-md border bg-ih-surface px-3 text-[13.5px] text-ih-ink',
+  'w-full rounded-lg border bg-ih-surface px-2.5 text-[14px] text-ih-ink',
   'transition-[border-color,box-shadow] duration-150 ease-[ease]',
   'placeholder:text-ih-muted',
-  'outline-none focus:border-ih-accent focus:ring-[3px] focus:ring-ih-accent-soft',
+  'outline-none focus-visible:border-ih-accent focus-visible:ring-[3px] focus-visible:ring-ih-accent-soft',
   'disabled:cursor-not-allowed disabled:opacity-45'
 )
 
@@ -71,7 +71,7 @@ export const Input = React.forwardRef<HTMLInputElement, InputProps>(function Inp
     <input
       ref={ref}
       id={id}
-      className={cn(fieldBase, 'h-10', withError(error), className)}
+      className={cn(fieldBase, 'h-9', withError(error), className)}
       aria-invalid={error ? true : undefined}
       aria-describedby={describedBy}
       {...props}
@@ -120,7 +120,7 @@ export const Select = React.forwardRef<HTMLSelectElement, SelectProps>(function 
     <select
       ref={ref}
       id={id}
-      className={cn(fieldBase, 'h-10 appearance-none pr-[30px]', withError(error), className)}
+      className={cn(fieldBase, 'h-9 appearance-none pr-[30px]', withError(error), className)}
       // Repeat is set here rather than via `bg-no-repeat` so the caret cannot
       // tile if the utility is ever purged or overridden — the three
       // background longhands travel together.
@@ -142,7 +142,7 @@ export const Label = React.forwardRef<HTMLLabelElement, React.LabelHTMLAttribute
     return (
       <label
         ref={ref}
-        className={cn('mb-1.5 block text-xs font-medium text-ih-ink-2', className)}
+        className={cn('block text-[13px] font-medium leading-none text-ih-ink', className)}
         {...props}
       />
     )
@@ -150,11 +150,11 @@ export const Label = React.forwardRef<HTMLLabelElement, React.LabelHTMLAttribute
 )
 
 export function Hint({ className, ...props }: React.HTMLAttributes<HTMLParagraphElement>) {
-  return <p className={cn('mt-[5px] text-[11.5px] text-ih-muted', className)} {...props} />
+  return <p className={cn('text-[11.5px] text-ih-muted', className)} {...props} />
 }
 
 export function ErrorText({ className, ...props }: React.HTMLAttributes<HTMLParagraphElement>) {
-  return <p className={cn('mt-[5px] text-[11.5px] text-ih-danger', className)} {...props} />
+  return <p className={cn('text-[11.5px] text-ih-danger-ink', className)} {...props} />
 }
 
 export interface FieldProps {
@@ -185,7 +185,13 @@ export function Field({ label, hint, error, htmlFor, className, children }: Fiel
     <FieldContext.Provider
       value={{ id, error, describedBy: hasMessage ? messageId : undefined }}
     >
-      <div className={className}>
+      {/*
+        The stack owns the spacing, not the parts. Label/Hint/ErrorText used to
+        carry their own `mb-1.5` / `mt-[5px]` margins, so a field composed
+        without one of them collapsed by a different amount than one composed
+        with it, and no two forms in the admin had the same pitch.
+      */}
+      <div className={cn('flex flex-col gap-1.5', className)}>
         {label ? <Label htmlFor={id}>{label}</Label> : null}
         {children}
         {error ? (
