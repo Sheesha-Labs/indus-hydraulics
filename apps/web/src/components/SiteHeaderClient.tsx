@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useRef, useCallback } from 'react'
+import { useState, useRef, useCallback, useEffect } from 'react'
 import { usePathname } from 'next/navigation'
 import type React from 'react'
 import Link from 'next/link'
@@ -71,6 +71,39 @@ function matchesPath(href: string, pathname: string): boolean {
   return pathname === clean || pathname.startsWith(`${clean}/`)
 }
 
+/**
+ * True once the document has scrolled past `offset` px.
+ *
+ * rAF-coalesced so a fling doesn't queue one setState per scroll event, and
+ * seeded on mount so a restored scroll position — back/forward navigation, an
+ * anchor link, a reload partway down a category page — starts in the right
+ * state instead of flashing the top-of-page treatment for a frame.
+ */
+function useScrolled(offset: number): boolean {
+  const [scrolled, setScrolled] = useState(false)
+
+  useEffect(() => {
+    let frame = 0
+    const read = () => {
+      frame = 0
+      setScrolled(window.scrollY > offset)
+    }
+    const onScroll = () => {
+      if (frame) return
+      frame = requestAnimationFrame(read)
+    }
+
+    read()
+    window.addEventListener('scroll', onScroll, { passive: true })
+    return () => {
+      window.removeEventListener('scroll', onScroll)
+      if (frame) cancelAnimationFrame(frame)
+    }
+  }, [offset])
+
+  return scrolled
+}
+
 export default function SiteHeaderClient({
   headerItems,
   megamenuItems,
@@ -116,6 +149,8 @@ export default function SiteHeaderClient({
     setActiveSubIdx(idx)
   }, [])
 
+  const scrolled = useScrolled(8)
+
   const megamenuOpen = activeDropdown === 'mega'
   const brandsOpen = activeDropdown === 'brands'
   const industriesOpen = activeDropdown === 'industries'
@@ -131,9 +166,44 @@ export default function SiteHeaderClient({
     (item) => item.href === '/industries' || item.href === '/industries/',
   )
 
+  /*
+    Opaque whenever a solid surface is docked to the bar. The megamenu, the two
+    list dropdowns and the mobile drawer all paint `bg-ih-surface`, so a
+    see-through bar sitting on top of them reads as a seam, not as an effect.
+  */
+  const solid = activeDropdown !== null || mobileOpen
+
   return (
-    <header className="sticky top-0 z-50 border-b border-ih-border bg-ih-surface">
-      {/* Utility bar */}
+    /*
+      Translucent bar. The frosted pane is a sibling layer rather than a
+      `backdrop-blur` class on the bar itself, because `backdrop-filter`
+      establishes a containing block for positioned descendants — and the
+      notification panel's click-away scrim (NotificationBell) is
+      `fixed inset-0`, which would then be trapped inside the 72px bar
+      instead of covering the viewport. Painting the blur in a layer nothing
+      is nested inside keeps that escape hatch intact.
+
+      Both bars keep their solid colour as the base class and only add the
+      alpha under `supports-[backdrop-filter]`, so a browser without the
+      filter gets the old fully-opaque header rather than a washed-out one
+      it cannot blur.
+    */
+    <header
+      className={`sticky top-0 z-50 border-b transition-[border-color,box-shadow] duration-200 ease-out motion-reduce:transition-none ${
+        scrolled || solid ? 'border-ih-border' : 'border-transparent'
+      } ${
+        scrolled && !solid
+          ? 'shadow-[0_1px_20px_-10px_color-mix(in_oklab,var(--color-ih-ink)_45%,transparent)]'
+          : ''
+      }`}
+    >
+      {/*
+        Utility bar — deliberately NOT translucent. Its 11px mono text is
+        oklch(0.82 0.02 250) on navy: solid that is 12:1, but at even 80%
+        alpha over a white section scrolling underneath it drops to ~3.4:1,
+        which is below AA for text this small. The frosted treatment is worth
+        having on the main bar and is not worth an unreadable contact strip.
+      */}
       <div className="bg-ih-navy text-[oklch(0.82_0.02_250)]">
         <div className="mx-auto flex h-[34px] max-w-[1440px] items-center justify-between px-5 sm:px-8 xl:px-12 font-mono text-[11px] tracking-[0.04em]">
           <div className="flex gap-6">
@@ -157,27 +227,53 @@ export default function SiteHeaderClient({
       </div>
 
       {/* Main nav bar */}
-      <div className="mx-auto flex h-[72px] max-w-[1440px] items-center gap-6 px-5 sm:px-8 xl:px-12">
-        {/* Logo */}
-        <Link href={`/`} className="flex shrink-0 items-center gap-[11px]">
-          <BrandLockup
-            logoUrl={logoUrl}
-            logoStyle={logoStyle}
-            name={brandName}
-            sublabel="Industrial Components Co."
-            surface="header"
-          />
-        </Link>
+      <div className="relative">
+        {/*
+          The pane is full-bleed while the bar's content is capped at 1440px,
+          so it cannot live on the content row itself — above that width the
+          frost would stop at the container edge and the gutters would show
+          bare page. `-z-10` puts it behind the row: the row's children are
+          in flow and unpositioned, so without it an absolutely-positioned
+          sibling paints over the whole nav.
 
-        {/* Desktop nav */}
-        <nav className="hidden flex-1 items-center gap-[26px] lg:flex">
-          {headerItems.map((item) => {
-            const href = item.href ?? '#'
-            const kind = getDropdownKind(item, megamenuItems, brands, industries)
-            if (kind !== null) {
-              const isOpen = activeDropdown === kind
-              return (
-                /*
+          85% is the alpha, not the 72% the reference implementation uses.
+          Indus has full-width `bg-ih-navy` bands and dark hero art that pass
+          under this bar; at 72% the active nav item (`text-ih-accent`) falls
+          to 3.3:1 over them. At 85% the worst case across navy, ih-ink and
+          pure black is 4.69:1 — still visibly frosted, still AA.
+
+          The blur stays mounted in both states and only the alpha animates.
+          Transitioning `backdrop-filter` itself is janky, and at full opacity
+          the blur is invisible anyway.
+        */}
+        <div
+          aria-hidden
+          className={`bg-ih-surface pointer-events-none absolute inset-0 -z-10 transition-colors duration-200 ease-out supports-[backdrop-filter]:backdrop-blur-xl supports-[backdrop-filter]:backdrop-saturate-150 motion-reduce:transition-none ${
+            solid ? '' : 'supports-[backdrop-filter]:bg-ih-surface/85'
+          }`}
+        />
+
+        <div className="mx-auto flex h-[72px] max-w-[1440px] items-center gap-6 px-5 sm:px-8 xl:px-12">
+          {/* Logo */}
+          <Link href={`/`} className="flex shrink-0 items-center gap-[11px]">
+            <BrandLockup
+              logoUrl={logoUrl}
+              logoStyle={logoStyle}
+              name={brandName}
+              sublabel="Industrial Components Co."
+              surface="header"
+            />
+          </Link>
+
+          {/* Desktop nav */}
+          <nav className="hidden flex-1 items-center gap-[26px] lg:flex">
+            {headerItems.map((item) => {
+              const href = item.href ?? '#'
+              const kind = getDropdownKind(item, megamenuItems, brands, industries)
+              if (kind !== null) {
+                const isOpen = activeDropdown === kind
+                return (
+                  /*
                   The panel opened on hover ONLY, so there was no keyboard
                   path to the mega menu at all — and it carries 175 category
                   links. Focusing the trigger now opens it and Escape closes
@@ -193,67 +289,72 @@ export default function SiteHeaderClient({
                   Still missing, and larger than this fix: arrow-key roving
                   within the three panes.
                 */
-                <div
-                  key={item.id}
-                  onMouseEnter={() => openDropdown(kind)}
-                  onMouseLeave={closeDropdown}
-                  onFocus={() => openDropdown(kind)}
-                  onKeyDown={(e) => {
-                    if (e.key === 'Escape' && isOpen) {
-                      e.preventDefault()
-                      closeDropdownImmediate()
-                      ;(e.currentTarget.querySelector('a') as HTMLElement | null)?.focus()
-                    }
-                  }}
-                >
-                  <Link
-                    href={href}
-                    aria-current={isActive(href) ? 'page' : undefined}
-                    className={`flex items-center gap-1 border-b-[1.5px] py-1.5 text-[13.5px] transition-colors ${
-                      isActive(href) || isOpen
-                        ? 'border-ih-accent text-ih-accent'
-                        : 'border-transparent text-ih-ink-2 hover:text-ih-ink'
-                    }`}
-                    aria-haspopup="true"
-                    aria-expanded={isOpen}
+                  <div
+                    key={item.id}
+                    onMouseEnter={() => openDropdown(kind)}
+                    onMouseLeave={closeDropdown}
+                    onFocus={() => openDropdown(kind)}
+                    onKeyDown={(e) => {
+                      if (e.key === 'Escape' && isOpen) {
+                        e.preventDefault()
+                        closeDropdownImmediate()
+                        ;(e.currentTarget.querySelector('a') as HTMLElement | null)?.focus()
+                      }
+                    }}
                   >
-                    {item.label}
-                    <svg
-                      width="10"
-                      height="10"
-                      viewBox="0 0 10 10"
-                      fill="none"
-                      className={`transition-transform duration-150 ${isOpen ? 'rotate-180' : ''}`}
-                      aria-hidden="true"
+                    <Link
+                      href={href}
+                      aria-current={isActive(href) ? 'page' : undefined}
+                      className={`flex items-center gap-1 border-b-[1.5px] py-1.5 text-[13.5px] transition-colors ${
+                        isActive(href) || isOpen
+                          ? 'border-ih-accent text-ih-accent'
+                          : 'text-ih-ink-2 hover:text-ih-ink border-transparent'
+                      }`}
+                      aria-haspopup="true"
+                      aria-expanded={isOpen}
                     >
-                      <path d="M2 4l3 3 3-3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-                    </svg>
-                  </Link>
-                </div>
+                      {item.label}
+                      <svg
+                        width="10"
+                        height="10"
+                        viewBox="0 0 10 10"
+                        fill="none"
+                        className={`transition-transform duration-150 ${isOpen ? 'rotate-180' : ''}`}
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M2 4l3 3 3-3"
+                          stroke="currentColor"
+                          strokeWidth="1.5"
+                          strokeLinecap="round"
+                        />
+                      </svg>
+                    </Link>
+                  </div>
+                )
+              }
+              return (
+                <Link
+                  key={item.id}
+                  href={href}
+                  target={item.openInNewTab ? '_blank' : undefined}
+                  rel={item.openInNewTab ? 'noopener noreferrer' : undefined}
+                  aria-current={isActive(href) ? 'page' : undefined}
+                  className={`flex items-center border-b-[1.5px] py-1.5 text-[13.5px] transition-colors ${
+                    isActive(href)
+                      ? 'border-ih-accent text-ih-accent'
+                      : 'text-ih-ink-2 hover:text-ih-ink border-transparent'
+                  }`}
+                >
+                  {item.label}
+                </Link>
               )
-            }
-            return (
-              <Link
-                key={item.id}
-                href={href}
-                target={item.openInNewTab ? '_blank' : undefined}
-                rel={item.openInNewTab ? 'noopener noreferrer' : undefined}
-                aria-current={isActive(href) ? 'page' : undefined}
-                className={`flex items-center border-b-[1.5px] py-1.5 text-[13.5px] transition-colors ${
-                  isActive(href)
-                    ? 'border-ih-accent text-ih-accent'
-                    : 'border-transparent text-ih-ink-2 hover:text-ih-ink'
-                }`}
-              >
-                {item.label}
-              </Link>
-            )
-          })}
-        </nav>
+            })}
+          </nav>
 
-        {/* Right actions */}
-        <div className="ml-auto flex min-w-0 items-center gap-2">
-          {/*
+          {/* Right actions */}
+          <div className="ml-auto flex min-w-0 items-center gap-2">
+            {/*
             The search box used to carry an inline `minWidth: 320px`. An inline
             style beats every responsive class, so between the nav appearing and
             the viewport being wide enough for both, the header was 235px wider
@@ -267,78 +368,103 @@ export default function SiteHeaderClient({
             xl where there is actually room alongside the nav — at lg the logo, nav,
             search and three action buttons still did not fit.
           */}
-          <div className="hidden min-w-0 w-full max-w-[320px] xl:block">
-            <SearchAutocomplete className="relative w-full" />
-          </div>
+            <div className="hidden w-full min-w-0 max-w-[320px] xl:block">
+              <SearchAutocomplete className="relative w-full" />
+            </div>
 
-          {/* Notification bell */}
-          {notificationBell}
+            {/* Notification bell */}
+            {notificationBell}
 
-          {/* Quote basket */}
-          <Link
-            href={`/quote`}
-            className="relative flex h-10 w-10 items-center justify-center rounded-md border border-ih-border text-ih-ink-2 transition-colors hover:border-ih-accent hover:text-ih-accent"
-            aria-label="Quote"
-          >
-            <svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
-              <rect x="4" y="3" width="12" height="14" rx="1" />
-              <path d="M7 7h6M7 10h6M7 13h4" />
-            </svg>
-          </Link>
-
-          {/* Account */}
-          {isSignedIn ? (
+            {/* Quote basket */}
             <Link
-              href={`/account`}
-              className="hidden h-10 items-center gap-2 rounded-md bg-ih-navy px-[18px] text-[13.5px] font-medium text-white transition-colors hover:bg-ih-ink sm:flex"
+              href={`/quote`}
+              className="border-ih-border text-ih-ink-2 hover:border-ih-accent hover:text-ih-accent relative flex h-10 w-10 items-center justify-center rounded-md border transition-colors"
+              aria-label="Quote"
             >
-              <span className="grid h-5 w-5 shrink-0 place-items-center rounded-full bg-ih-accent text-[9px] font-medium text-white">
-                {(userName ?? 'U').charAt(0).toUpperCase()}
-              </span>
-              My account
-            </Link>
-          ) : (
-            <Link
-              href={`/sign-in`}
-              className="hidden h-10 items-center rounded-md border border-ih-border-strong px-[18px] text-[13.5px] font-medium text-ih-ink transition-colors hover:border-ih-accent hover:bg-ih-surface-2 hover:text-ih-accent sm:flex"
-            >
-              Sign in
-            </Link>
-          )}
-
-          {/* Mobile hamburger */}
-          <button
-            className="flex h-10 w-10 items-center justify-center rounded-md border border-ih-border text-ih-ink-2 lg:hidden"
-            onClick={() => setMobileOpen(!mobileOpen)}
-            aria-label={mobileOpen ? 'Close menu' : 'Open menu'}
-          >
-            {mobileOpen ? (
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
-                <path d="M2 2l12 12M14 2L2 14" />
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 20 20"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.5"
+                aria-hidden="true"
+              >
+                <rect x="4" y="3" width="12" height="14" rx="1" />
+                <path d="M7 7h6M7 10h6M7 13h4" />
               </svg>
+            </Link>
+
+            {/* Account */}
+            {isSignedIn ? (
+              <Link
+                href={`/account`}
+                className="bg-ih-navy hover:bg-ih-ink hidden h-10 items-center gap-2 rounded-md px-[18px] text-[13.5px] font-medium text-white transition-colors sm:flex"
+              >
+                <span className="bg-ih-accent grid h-5 w-5 shrink-0 place-items-center rounded-full text-[9px] font-medium text-white">
+                  {(userName ?? 'U').charAt(0).toUpperCase()}
+                </span>
+                My account
+              </Link>
             ) : (
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
-                <path d="M2 4h12M2 8h12M2 12h12" />
-              </svg>
+              <Link
+                href={`/sign-in`}
+                className="border-ih-border-strong text-ih-ink hover:border-ih-accent hover:bg-ih-surface-2 hover:text-ih-accent hidden h-10 items-center rounded-md border px-[18px] text-[13.5px] font-medium transition-colors sm:flex"
+              >
+                Sign in
+              </Link>
             )}
-          </button>
+
+            {/* Mobile hamburger */}
+            <button
+              className="border-ih-border text-ih-ink-2 flex h-10 w-10 items-center justify-center rounded-md border lg:hidden"
+              onClick={() => setMobileOpen(!mobileOpen)}
+              aria-label={mobileOpen ? 'Close menu' : 'Open menu'}
+            >
+              {mobileOpen ? (
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                  aria-hidden="true"
+                >
+                  <path d="M2 2l12 12M14 2L2 14" />
+                </svg>
+              ) : (
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                  aria-hidden="true"
+                >
+                  <path d="M2 4h12M2 8h12M2 12h12" />
+                </svg>
+              )}
+            </button>
+          </div>
         </div>
       </div>
 
       {/* ── Megamenu ───────────────────────────────────────── */}
       {megamenuOpen && megamenuItems.length > 0 && (
         <div
-          className="absolute left-0 right-0 border-t border-ih-border bg-ih-surface shadow-[0_4px_12px_rgba(20,28,45,.07),0_18px_48px_rgba(20,28,45,.09)]"
+          className="border-ih-border bg-ih-surface absolute left-0 right-0 border-t shadow-[0_4px_12px_rgba(20,28,45,.07),0_18px_48px_rgba(20,28,45,.09)]"
           style={{ top: '100%', zIndex: 50 }}
           onMouseEnter={() => openDropdown('mega')}
           onMouseLeave={closeDropdown}
           role="menu"
         >
           <div className="mx-auto max-w-[1440px] px-5 sm:px-8 xl:px-12">
-            <div className="grid grid-cols-[360px_420px_1fr] min-h-[420px]">
+            <div className="grid min-h-[420px] grid-cols-[360px_420px_1fr]">
               {/* ── Column 1: Top-level categories ── */}
-              <div className="border-r border-ih-border py-7 pr-0">
-                <div className="mb-3 font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">
+              <div className="border-ih-border border-r py-7 pr-0">
+                <div className="text-ih-muted mb-3 font-mono text-[10.5px] font-medium uppercase tracking-[0.13em]">
                   Categories
                 </div>
                 <div className="flex flex-col">
@@ -349,8 +475,8 @@ export default function SiteHeaderClient({
                       role="menuitem"
                       className={`flex items-center justify-between rounded-sm border-l-2 px-3 py-2.5 text-[13.5px] transition-colors ${
                         i === activeCatIdx
-                          ? 'border-ih-accent bg-ih-accent-soft font-medium text-ih-accent'
-                          : 'border-transparent text-ih-ink-2 hover:border-ih-accent hover:bg-ih-surface-2'
+                          ? 'border-ih-accent bg-ih-accent-soft text-ih-accent font-medium'
+                          : 'text-ih-ink-2 hover:border-ih-accent hover:bg-ih-surface-2 border-transparent'
                       }`}
                       onMouseEnter={() => handleCatHover(i)}
                       onClick={closeDropdownImmediate}
@@ -362,8 +488,8 @@ export default function SiteHeaderClient({
               </div>
 
               {/* ── Column 2: Sub-categories ── */}
-              <div className="border-r border-ih-border px-6 py-7">
-                <div className="mb-3 whitespace-nowrap font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">
+              <div className="border-ih-border border-r px-6 py-7">
+                <div className="text-ih-muted mb-3 whitespace-nowrap font-mono text-[10.5px] font-medium uppercase tracking-[0.13em]">
                   {activeCat?.label}
                 </div>
                 <div className="flex flex-col">
@@ -374,14 +500,16 @@ export default function SiteHeaderClient({
                       role="menuitem"
                       className={`flex items-center justify-between rounded-sm border-l-2 px-3 py-2.5 text-[13.5px] transition-colors ${
                         i === activeSubIdx
-                          ? 'border-ih-accent bg-ih-accent-soft font-medium text-ih-accent'
-                          : 'border-transparent text-ih-ink-2 hover:border-ih-accent hover:bg-ih-surface-2'
+                          ? 'border-ih-accent bg-ih-accent-soft text-ih-accent font-medium'
+                          : 'text-ih-ink-2 hover:border-ih-accent hover:bg-ih-surface-2 border-transparent'
                       }`}
                       onMouseEnter={() => handleSubHover(i)}
                       onClick={closeDropdownImmediate}
                     >
                       <span>{sub.label}</span>
-                      <span aria-hidden="true" className="font-mono text-[11px] text-ih-muted-2">›</span>
+                      <span aria-hidden="true" className="text-ih-muted-2 font-mono text-[11px]">
+                        ›
+                      </span>
                     </Link>
                   ))}
                 </div>
@@ -389,10 +517,10 @@ export default function SiteHeaderClient({
 
               {/* ── Column 3: Leaf items ── */}
               <div className="flex flex-col px-6 py-7">
-                <div className="mb-3 font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">
+                <div className="text-ih-muted mb-3 font-mono text-[10.5px] font-medium uppercase tracking-[0.13em]">
                   {activeSub?.label}
                 </div>
-                <div className="flex flex-col flex-1">
+                <div className="flex flex-1 flex-col">
                   {(activeSub?.children ?? []).map((leaf) => (
                     <Link
                       key={leaf.id}
@@ -400,11 +528,13 @@ export default function SiteHeaderClient({
                       role="menuitem"
                       target={leaf.openInNewTab ? '_blank' : undefined}
                       rel={leaf.openInNewTab ? 'noopener noreferrer' : undefined}
-                      className="flex items-center justify-between rounded-sm border-l-2 border-transparent px-3 py-2.5 text-[13.5px] text-ih-ink-2 transition-colors hover:border-ih-accent hover:bg-ih-surface-2"
+                      className="text-ih-ink-2 hover:border-ih-accent hover:bg-ih-surface-2 flex items-center justify-between rounded-sm border-l-2 border-transparent px-3 py-2.5 text-[13.5px] transition-colors"
                       onClick={closeDropdownImmediate}
                     >
                       <span>{leaf.label}</span>
-                      <span aria-hidden="true" className="font-mono text-[11px] text-ih-muted-2">›</span>
+                      <span aria-hidden="true" className="text-ih-muted-2 font-mono text-[11px]">
+                        ›
+                      </span>
                     </Link>
                   ))}
                 </div>
@@ -414,9 +544,9 @@ export default function SiteHeaderClient({
                   <Link
                     href={activeCat.promoLinkUrl ?? browseAllHref}
                     onClick={closeDropdownImmediate}
-                    className="mt-4 block overflow-hidden rounded-lg border border-ih-border bg-ih-surface"
+                    className="border-ih-border bg-ih-surface mt-4 block overflow-hidden rounded-lg border"
                   >
-                    <div className="relative w-full h-32">
+                    <div className="relative h-32 w-full">
                       <Image
                         src={activeCat.promoImageUrl}
                         alt=""
@@ -427,12 +557,14 @@ export default function SiteHeaderClient({
                     </div>
                     <div className="px-4 py-3">
                       {activeCat.promoHeading ? (
-                        <div className="text-[14px] font-medium leading-[1.35] text-ih-ink">
+                        <div className="text-ih-ink text-[14px] font-medium leading-[1.35]">
                           {activeCat.promoHeading}
                         </div>
                       ) : null}
                       {activeCat.promoBody ? (
-                        <div className="mt-1.5 text-[12.5px] leading-relaxed text-ih-muted">{activeCat.promoBody}</div>
+                        <div className="text-ih-muted mt-1.5 text-[12.5px] leading-relaxed">
+                          {activeCat.promoBody}
+                        </div>
                       ) : null}
                     </div>
                   </Link>
@@ -442,11 +574,19 @@ export default function SiteHeaderClient({
                 <div className="mt-auto pt-4">
                   <Link
                     href={browseAllHref}
-                    className="flex h-10 items-center justify-between gap-2 rounded-md border border-ih-border-strong px-4 text-[13.5px] text-ih-ink transition-colors hover:border-ih-accent hover:bg-ih-surface-2 hover:text-ih-accent"
+                    className="border-ih-border-strong text-ih-ink hover:border-ih-accent hover:bg-ih-surface-2 hover:text-ih-accent flex h-10 items-center justify-between gap-2 rounded-md border px-4 text-[13.5px] transition-colors"
                     onClick={closeDropdownImmediate}
                   >
                     <span>Browse all {activeCat?.label}</span>
-                    <svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
+                    <svg
+                      width="12"
+                      height="12"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="1.5"
+                      aria-hidden="true"
+                    >
                       <path d="M3 8h10M9 4l4 4-4 4" />
                     </svg>
                   </Link>
@@ -462,34 +602,35 @@ export default function SiteHeaderClient({
             full-width rail rather than a column so it survives the drill-down
             layout this menu has to keep (see the note on the grid above).
           */}
-          <div className="border-t border-ih-border bg-ih-surface-2">
-            <div className="mx-auto flex max-w-[1440px] flex-wrap items-center gap-x-[26px] gap-y-2 px-5 sm:px-8 xl:px-12 py-3.5">
-              <span className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">
+          <div className="border-ih-border bg-ih-surface-2 border-t">
+            <div className="mx-auto flex max-w-[1440px] flex-wrap items-center gap-x-[26px] gap-y-2 px-5 py-3.5 sm:px-8 xl:px-12">
+              <span className="text-ih-muted font-mono text-[10.5px] font-medium uppercase tracking-[0.13em]">
                 Quick links
               </span>
               <Link
                 href="/replacement"
                 onClick={closeDropdownImmediate}
-                className="text-[12.5px] text-ih-accent hover:underline"
+                className="text-ih-accent text-[12.5px] hover:underline"
               >
                 Obsolete part lookup
               </Link>
               <Link
                 href="/compare"
                 onClick={closeDropdownImmediate}
-                className="text-[12.5px] text-ih-accent hover:underline"
+                className="text-ih-accent text-[12.5px] hover:underline"
               >
                 Compare specifications
               </Link>
               <Link
                 href="/quote"
                 onClick={closeDropdownImmediate}
-                className="text-[12.5px] text-ih-accent hover:underline"
+                className="text-ih-accent text-[12.5px] hover:underline"
               >
                 Your quote list
               </Link>
-              <span className="ml-auto text-[12.5px] text-ih-muted">
-                Can&rsquo;t find the part? Send a photo of the nameplate — we cross-reference obsolete numbers daily.
+              <span className="text-ih-muted ml-auto text-[12.5px]">
+                Can&rsquo;t find the part? Send a photo of the nameplate — we cross-reference
+                obsolete numbers daily.
               </span>
             </div>
           </div>
@@ -534,14 +675,14 @@ export default function SiteHeaderClient({
 
       {/* ── Mobile nav ─────────────────────────────────────── */}
       {mobileOpen && (
-        <div className="border-t border-ih-border bg-ih-surface lg:hidden">
+        <div className="border-ih-border bg-ih-surface border-t lg:hidden">
           {headerItems.map((item) => (
             <Link
               key={item.id}
               href={item.href ?? '#'}
               target={item.openInNewTab ? '_blank' : undefined}
               rel={item.openInNewTab ? 'noopener noreferrer' : undefined}
-              className="flex h-12 items-center border-b border-ih-border px-5 text-[13.5px] text-ih-ink-2 hover:bg-ih-surface-2"
+              className="border-ih-border text-ih-ink-2 hover:bg-ih-surface-2 flex h-12 items-center border-b px-5 text-[13.5px]"
               onClick={() => setMobileOpen(false)}
             >
               {item.label}
@@ -549,14 +690,16 @@ export default function SiteHeaderClient({
           ))}
 
           {megamenuItems.length > 0 ? (
-            <div className="border-b border-ih-border px-5 py-4">
-              <p className="mb-3 font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">Categories</p>
+            <div className="border-ih-border border-b px-5 py-4">
+              <p className="text-ih-muted mb-3 font-mono text-[10.5px] font-medium uppercase tracking-[0.13em]">
+                Categories
+              </p>
               <div className="flex flex-col gap-0.5">
                 {megamenuItems.map((cat) => (
                   <Link
                     key={cat.id}
                     href={cat.href ?? '#'}
-                    className="flex items-center justify-between py-2 text-[13px] text-ih-ink-2 hover:text-ih-accent"
+                    className="text-ih-ink-2 hover:text-ih-accent flex items-center justify-between py-2 text-[13px]"
                     onClick={() => setMobileOpen(false)}
                   >
                     <span>{cat.label}</span>
@@ -567,54 +710,66 @@ export default function SiteHeaderClient({
           ) : null}
 
           {brands.length > 0 ? (
-            <div className="border-b border-ih-border px-5 py-4">
-              <p className="mb-3 font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">Brands</p>
+            <div className="border-ih-border border-b px-5 py-4">
+              <p className="text-ih-muted mb-3 font-mono text-[10.5px] font-medium uppercase tracking-[0.13em]">
+                Brands
+              </p>
               <div className="flex flex-col gap-0.5">
                 {brands.slice(0, MOBILE_LIST_LIMIT).map((b) => (
                   <Link
                     key={b.slug}
                     href={`/brands/${b.slug}`}
-                    className="flex items-center justify-between py-2 text-[13px] text-ih-ink-2 hover:text-ih-accent"
+                    className="text-ih-ink-2 hover:text-ih-accent flex items-center justify-between py-2 text-[13px]"
                     onClick={() => setMobileOpen(false)}
                   >
                     <span>{b.name}</span>
-                    <span aria-hidden="true" className="font-mono text-[10px] text-ih-muted-2">›</span>
+                    <span aria-hidden="true" className="text-ih-muted-2 font-mono text-[10px]">
+                      ›
+                    </span>
                   </Link>
                 ))}
                 <Link
                   href="/brands"
-                  className="flex items-center justify-between py-2 text-[13px] font-medium text-ih-ink hover:text-ih-accent"
+                  className="text-ih-ink hover:text-ih-accent flex items-center justify-between py-2 text-[13px] font-medium"
                   onClick={() => setMobileOpen(false)}
                 >
                   <span>View all brands</span>
-                  <span aria-hidden="true" className="font-mono text-[10px] text-ih-muted-2">→</span>
+                  <span aria-hidden="true" className="text-ih-muted-2 font-mono text-[10px]">
+                    →
+                  </span>
                 </Link>
               </div>
             </div>
           ) : null}
 
           {industries.length > 0 ? (
-            <div className="border-b border-ih-border px-5 py-4">
-              <p className="mb-3 font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">Industries</p>
+            <div className="border-ih-border border-b px-5 py-4">
+              <p className="text-ih-muted mb-3 font-mono text-[10.5px] font-medium uppercase tracking-[0.13em]">
+                Industries
+              </p>
               <div className="flex flex-col gap-0.5">
                 {industries.slice(0, MOBILE_LIST_LIMIT).map((ind) => (
                   <Link
                     key={ind.slug}
                     href={`/industries/${ind.slug}`}
-                    className="flex items-center justify-between py-2 text-[13px] text-ih-ink-2 hover:text-ih-accent"
+                    className="text-ih-ink-2 hover:text-ih-accent flex items-center justify-between py-2 text-[13px]"
                     onClick={() => setMobileOpen(false)}
                   >
                     <span>{ind.name}</span>
-                    <span aria-hidden="true" className="font-mono text-[10px] text-ih-muted-2">›</span>
+                    <span aria-hidden="true" className="text-ih-muted-2 font-mono text-[10px]">
+                      ›
+                    </span>
                   </Link>
                 ))}
                 <Link
                   href="/industries"
-                  className="flex items-center justify-between py-2 text-[13px] font-medium text-ih-ink hover:text-ih-accent"
+                  className="text-ih-ink hover:text-ih-accent flex items-center justify-between py-2 text-[13px] font-medium"
                   onClick={() => setMobileOpen(false)}
                 >
                   <span>View all industries</span>
-                  <span aria-hidden="true" className="font-mono text-[10px] text-ih-muted-2">→</span>
+                  <span aria-hidden="true" className="text-ih-muted-2 font-mono text-[10px]">
+                    →
+                  </span>
                 </Link>
               </div>
             </div>
@@ -623,13 +778,13 @@ export default function SiteHeaderClient({
           <div className="flex gap-3 px-5 py-4">
             <Link
               href={`/sign-in`}
-              className="flex h-10 flex-1 items-center justify-center rounded-md border border-ih-border-strong text-[13.5px] font-medium text-ih-ink"
+              className="border-ih-border-strong text-ih-ink flex h-10 flex-1 items-center justify-center rounded-md border text-[13.5px] font-medium"
             >
               Sign in
             </Link>
             <Link
               href={`/quote`}
-              className="flex h-10 flex-1 items-center justify-center rounded-md bg-ih-accent text-[13.5px] font-medium text-ih-accent-fg"
+              className="bg-ih-accent text-ih-accent-fg flex h-10 flex-1 items-center justify-center rounded-md text-[13.5px] font-medium"
             >
               Quote
             </Link>

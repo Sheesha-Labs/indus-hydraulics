@@ -12,7 +12,7 @@ type Surface = 'header' | 'footer'
 
 const GEOMETRY: Record<
   Surface,
-  { markPx: number; mark: string; lockup: string; name: string }
+  { markPx: number; mark: string; lockup: string; name: string; sublabel: string }
 > = {
   // 34px mark inside the 72px top bar, per 01-design-language.md §5. The
   // standalone lockup gets 44px: it carries the name as artwork, so it is
@@ -22,6 +22,12 @@ const GEOMETRY: Record<
     mark: 'h-[34px] w-[34px]',
     lockup: 'h-11 min-w-[34px] max-w-[200px]',
     name: 'text-[21px]',
+    // Secondary ink, not `--ih-muted`, and only on this surface. The top bar
+    // is translucent, so this 9px line is read against whatever scrolls under
+    // it: measured over the navy bands the storefront uses, muted lands at
+    // 3.7:1 — under AA — while ink-2 holds 9.3:1. Muted is fine on the
+    // footer's solid navy and stays there.
+    sublabel: 'text-ih-ink-2',
   },
   // The footer's existing mark is 34px next to a 19px serif name; a standalone
   // lockup there is drawn at 40px.
@@ -30,6 +36,7 @@ const GEOMETRY: Record<
     mark: 'h-[34px] w-[34px]',
     lockup: 'h-10 min-w-[34px] max-w-[240px]',
     name: 'text-[19px] text-white',
+    sublabel: 'text-ih-muted',
   },
 }
 
@@ -105,7 +112,9 @@ export default function BrandLockup({
         <span className={`font-serif leading-none tracking-[-0.01em] ${g.name}`}>
           {name}
           {sublabel ? (
-            <small className="mt-1 block font-mono text-[9px] uppercase tracking-[0.14em] text-ih-muted">
+            <small
+              className={`mt-1 block font-mono text-[9px] uppercase tracking-[0.14em] ${g.sublabel}`}
+            >
               {sublabel}
             </small>
           ) : null}
