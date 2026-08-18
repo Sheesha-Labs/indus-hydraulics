@@ -70,7 +70,7 @@ export default function AttachToExistingPicker({ selected, onSelect, disabled }:
         className="h-9 w-full px-3 border border-ih-border bg-ih-bg text-[13px] focus:outline-none focus:ring-2 focus:ring-ih-accent disabled:opacity-50"
       />
       {error && (
-        <p className="text-[11px] text-[oklch(0.5_0.18_25)] mt-1">{error}</p>
+        <p className="text-[11px] text-ih-danger-ink mt-1">{error}</p>
       )}
       {query.trim().length >= 2 && (
         <div className="border border-t-0 border-ih-border bg-ih-bg max-h-[260px] overflow-y-auto">
@@ -93,7 +93,7 @@ export default function AttachToExistingPicker({ selected, onSelect, disabled }:
                 </span>
                 <span className="text-[12px] text-ih-ink-2 truncate">{h.title}</span>
               </div>
-              <div className="text-[10px] text-ih-muted mt-0.5">
+              <div className="text-[11px] text-ih-muted mt-0.5">
                 {h.brandName ? `${h.brandName} · ` : ''}
                 {h.imageCount} image{h.imageCount === 1 ? '' : 's'}
               </div>

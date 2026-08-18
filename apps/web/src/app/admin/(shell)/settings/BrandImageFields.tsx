@@ -139,7 +139,7 @@ function BrandImagePicker({
   }
 
   return (
-    <div className="border border-ih-border bg-white p-4">
+    <div className="border border-ih-border bg-ih-surface p-4">
       <input type="hidden" name={name} value={value} />
 
       <label
@@ -170,7 +170,7 @@ function BrandImagePicker({
             />
           ) : (
             <span
-              className={`absolute inset-0 grid place-items-center font-mono text-[10px] ${
+              className={`absolute inset-0 grid place-items-center font-mono text-[11px] ${
                 previewOnInk ? 'text-white/45' : 'text-ih-muted-2'
               }`}
             >
@@ -182,7 +182,7 @@ function BrandImagePicker({
         <div className="flex-1 min-w-0 flex flex-col gap-2">
           <select
             id={selectId}
-            className="w-full h-8 px-2 border border-ih-border bg-white text-[12px] focus:border-ih-accent outline-none"
+            className="w-full h-8 px-2 border border-ih-border bg-ih-surface text-[12px] focus:border-ih-accent outline-none"
             value={value}
             onChange={(e) => onChange(e.target.value)}
           >
@@ -467,7 +467,7 @@ export function SearchLogoField({
       <div className="mt-4">
         <div className="border border-ih-border bg-ih-surface-2 px-3 py-2.5">
           <div className="flex items-center gap-2">
-            <span className="grid h-7 w-7 shrink-0 place-items-center overflow-hidden rounded-full border border-ih-border bg-white">
+            <span className="grid h-7 w-7 shrink-0 place-items-center overflow-hidden rounded-full border border-ih-border bg-ih-surface">
               {shown ? (
                 /* Plain <img>: 28px is below every optimizer breakpoint. */
                 /* eslint-disable-next-line @next/next/no-img-element */

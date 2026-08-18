@@ -100,7 +100,7 @@ export default async function SeoInspectorPage({
       {/* Filters */}
       <form className="flex gap-3 items-end mb-4 flex-wrap" method="get">
         <div className="flex-1 min-w-[240px]">
-          <label htmlFor="inspector-q" className="block font-mono text-[10px] uppercase text-ih-muted mb-1">
+          <label htmlFor="inspector-q" className="block font-mono text-[10.5px] uppercase text-ih-muted mb-1">
             Search
           </label>
           {/* h-9 to match the selects and buttons in this items-end row. */}
@@ -133,7 +133,7 @@ export default async function SeoInspectorPage({
         </SelectFilter>
         <button
           type="submit"
-          className="h-9 px-4 bg-ih-accent text-white font-mono text-[12px] hover:opacity-90"
+          className="h-9 px-4 bg-ih-accent text-ih-accent-fg font-mono text-[12px] hover:bg-ih-accent-hover"
         >
           Apply
         </button>
@@ -178,7 +178,7 @@ export default async function SeoInspectorPage({
                     <SeoHealthBadge score={row.score} size="sm" />
                   </td>
                   <td className="px-3 py-2">
-                    <span className="font-mono text-[10px] uppercase tracking-[0.08em] text-ih-muted">
+                    <span className="font-mono text-[10.5px] uppercase tracking-[0.08em] text-ih-muted">
                       {TYPE_LABELS[row.entityType]}
                     </span>
                   </td>
@@ -218,9 +218,9 @@ export default async function SeoInspectorPage({
                   </td>
                   <td className="px-3 py-2 font-mono text-[11px]">
                     {row.robotsIndex ? (
-                      <span className="text-[oklch(0.4_0.14_145)]">index</span>
+                      <span className="text-ih-success-ink">index</span>
                     ) : (
-                      <span className="text-[oklch(0.5_0.18_25)]">noindex</span>
+                      <span className="text-ih-danger-ink">noindex</span>
                     )}
                   </td>
                   <td className="px-3 py-2 font-mono text-[11px]">
@@ -255,7 +255,7 @@ export default async function SeoInspectorPage({
         </table>
       </div>
 
-      <p className="mt-4 font-mono text-[10px] text-ih-muted">
+      <p className="mt-4 font-mono text-[11px] text-ih-muted">
         Showing {filtered.length} of {rows.length} URL(s). Health score is recomputed on every page load.
       </p>
     </div>
@@ -520,7 +520,7 @@ function buildRow(p: {
 
 function Th({ children }: { children: React.ReactNode }) {
   return (
-    <th className="px-3 py-2.5 font-mono text-[10px] uppercase tracking-[0.08em] text-ih-muted">
+    <th className="px-3 py-2.5 font-mono text-[10.5px] uppercase tracking-[0.08em] text-ih-muted">
       {children}
     </th>
   )
@@ -537,18 +537,18 @@ function SummaryTile({
 }) {
   const toneClass =
     tone === 'good'
-      ? 'text-[oklch(0.4_0.14_145)]'
+      ? 'text-ih-success-ink'
       : tone === 'warn'
-        ? 'text-[oklch(0.5_0.14_70)]'
+        ? 'text-ih-warning-ink'
         : tone === 'danger'
-          ? 'text-[oklch(0.5_0.18_25)]'
+          ? 'text-ih-danger-ink'
           : 'text-ih-ink-2'
   return (
     <div className="border border-ih-border bg-ih-surface p-4">
-      <div className="font-mono text-[10px] uppercase tracking-[0.1em] text-ih-muted">
+      <div className="font-mono text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
         {label}
       </div>
-      <div className={`text-[28px] font-semibold mt-1 ${toneClass}`}>{value}</div>
+      <div className={`text-[28px] font-medium mt-1 ${toneClass}`}>{value}</div>
     </div>
   )
 }
@@ -569,7 +569,7 @@ function SelectFilter({
   const id = `seo-filter-${name}`
   return (
     <div className="min-w-[150px]">
-      <label htmlFor={id} className="block font-mono text-[10px] uppercase text-ih-muted mb-1">
+      <label htmlFor={id} className="block font-mono text-[10.5px] uppercase text-ih-muted mb-1">
         {label}
       </label>
       <Select id={id} name={name} defaultValue={value} className="h-9">
@@ -607,9 +607,9 @@ function LengthHint({ len, min, max }: { len: number; min: number; max: number }
     len === 0
       ? 'text-ih-muted'
       : len < min
-        ? 'text-[oklch(0.5_0.14_70)]'
+        ? 'text-ih-warning-ink'
         : len > max
-          ? 'text-[oklch(0.5_0.18_25)]'
-          : 'text-[oklch(0.4_0.14_145)]'
-  return <span className={`font-mono text-[10px] tabular-nums ${tone}`}>{len}/{max}</span>
+          ? 'text-ih-danger-ink'
+          : 'text-ih-success-ink'
+  return <span className={`font-mono text-[11px] tabular-nums ${tone}`}>{len}/{max}</span>
 }

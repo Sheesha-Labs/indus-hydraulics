@@ -64,7 +64,7 @@ export default function JobFilters({
               onClick={() => pushParams({ status: opt.value || null })}
               className={`h-8 px-3 text-[11px] font-mono uppercase tracking-wider border ${
                 active
-                  ? 'bg-ih-navy text-white border-ih-ink'
+                  ? 'bg-ih-navy text-ih-bg border-ih-ink'
                   : 'bg-ih-bg text-ih-ink-2 border-ih-border hover:bg-ih-surface-2'
               } disabled:opacity-50`}
             >

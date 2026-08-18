@@ -102,9 +102,9 @@ function ContentForm({
   }
 
   return (
-    <section className="border border-ih-border bg-white">
+    <section className="border border-ih-border bg-ih-surface">
       <header className="px-5 py-4 border-b border-ih-border">
-        <h2 className="text-[16px] font-semibold">Content & layout</h2>
+        <h2 className="text-[15px] font-medium">Content & layout</h2>
         <p className="text-[12px] text-ih-muted mt-1">
           Display copy and structured marketing data for the storefront industry page. JSON fields
           (chips, stats, delivery areas, support block) edit in place — invalid JSON blocks the save
@@ -201,12 +201,12 @@ function ContentForm({
           <button
             type="submit"
             disabled={pending}
-            className="h-9 px-4 bg-ih-accent text-white text-[13px] font-medium hover:opacity-90 disabled:opacity-50"
+            className="h-9 px-4 bg-ih-accent text-ih-accent-fg text-[13px] font-medium hover:bg-ih-accent-hover disabled:opacity-50"
           >
             {pending ? 'Saving…' : 'Save content'}
           </button>
-          {message && <span className="text-[12px] text-[oklch(0.4_0.14_145)] font-medium">{message}</span>}
-          {error && <span className="text-[12px] text-[oklch(0.5_0.16_25)] font-medium">{error}</span>}
+          {message && <span className="text-[12px] text-ih-success-ink font-medium">{message}</span>}
+          {error && <span className="text-[12px] text-ih-danger-ink font-medium">{error}</span>}
         </div>
       </form>
     </section>
@@ -230,10 +230,10 @@ function CaseStudiesSection({
   const [editingId, setEditingId] = useState<string | null>(null)
 
   return (
-    <section className="border border-ih-border bg-white">
+    <section className="border border-ih-border bg-ih-surface">
       <header className="px-5 py-4 border-b border-ih-border flex items-center justify-between">
         <div>
-          <h2 className="text-[16px] font-semibold">Case studies</h2>
+          <h2 className="text-[15px] font-medium">Case studies</h2>
           <p className="text-[12px] text-ih-muted mt-1">
             Customer install stories surfaced on the storefront industry page.
           </p>
@@ -241,7 +241,7 @@ function CaseStudiesSection({
         <button
           type="button"
           onClick={() => setAdding((v) => !v)}
-          className="h-8 px-3 bg-ih-accent text-white text-[12px] font-medium hover:opacity-90"
+          className="h-8 px-3 bg-ih-accent text-ih-accent-fg text-[12px] font-medium hover:bg-ih-accent-hover"
         >
           {adding ? '× Cancel' : '+ Add case study'}
         </button>
@@ -312,15 +312,15 @@ function CaseStudyRow({
     <div className="border border-ih-border bg-ih-surface-2 p-4 flex items-start justify-between gap-4">
       <div className="flex-1 min-w-0">
         <div className="flex items-center gap-2 mb-1">
-          <span className="font-mono text-[10px] tracking-[0.08em] uppercase text-ih-muted">
+          <span className="font-mono text-[10.5px] tracking-[0.08em] uppercase text-ih-muted">
             {caseStudy.tag}
           </span>
           {!caseStudy.isPublished && (
-            <span className="font-mono text-[9px] px-1.5 py-0.5 bg-ih-bg text-ih-muted">
+            <span className="font-mono text-[10.5px] px-1.5 py-0.5 bg-ih-bg text-ih-muted">
               DRAFT
             </span>
           )}
-          <span className="font-mono text-[10px] text-ih-muted">
+          <span className="font-mono text-[11px] text-ih-muted">
             #{caseStudy.position}
           </span>
         </div>
@@ -333,7 +333,7 @@ function CaseStudyRow({
         <button
           type="button"
           onClick={onEdit}
-          className="h-7 px-3 text-[11px] border border-ih-border bg-white hover:border-ih-accent"
+          className="h-7 px-3 text-[11px] border border-ih-border bg-ih-surface hover:border-ih-accent"
         >
           Edit
         </button>
@@ -341,7 +341,7 @@ function CaseStudyRow({
           type="button"
           onClick={onDelete}
           disabled={pending}
-          className="h-7 px-3 text-[11px] border border-ih-border bg-white text-[oklch(0.5_0.16_25)] hover:border-[oklch(0.55_0.16_25)] disabled:opacity-50"
+          className="h-7 px-3 text-[11px] border border-ih-border bg-ih-surface text-ih-danger-ink hover:border-[oklch(0.55_0.16_25)] disabled:opacity-50"
         >
           {pending ? 'Deleting…' : 'Delete'}
         </button>
@@ -454,18 +454,18 @@ function CaseStudyForm({
         <button
           type="submit"
           disabled={pending}
-          className="h-9 px-4 bg-ih-accent text-white text-[12px] font-medium hover:opacity-90 disabled:opacity-50"
+          className="h-9 px-4 bg-ih-accent text-ih-accent-fg text-[12px] font-medium hover:bg-ih-accent-hover disabled:opacity-50"
         >
           {pending ? 'Saving…' : mode === 'create' ? 'Add case study' : 'Save changes'}
         </button>
         <button
           type="button"
           onClick={onDone}
-          className="h-9 px-4 border border-ih-border text-[12px] font-medium hover:bg-white"
+          className="h-9 px-4 border border-ih-border text-[12px] font-medium hover:bg-ih-surface"
         >
           Cancel
         </button>
-        {error && <span className="text-[12px] text-[oklch(0.5_0.16_25)] font-medium">{error}</span>}
+        {error && <span className="text-[12px] text-ih-danger-ink font-medium">{error}</span>}
       </div>
     </form>
   )

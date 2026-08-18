@@ -189,13 +189,13 @@ export default async function SeoHealthPage() {
                   <td className="px-3 py-2.5">
                     <SeoHealthBadge score={Math.round(s.avg)} size="sm" />
                   </td>
-                  <td className="px-3 py-2.5 font-mono text-[12px] tabular-nums text-[oklch(0.4_0.14_145)]">
+                  <td className="px-3 py-2.5 font-mono text-[12px] tabular-nums text-ih-success-ink">
                     {s.healthy}
                   </td>
-                  <td className="px-3 py-2.5 font-mono text-[12px] tabular-nums text-[oklch(0.5_0.14_70)]">
+                  <td className="px-3 py-2.5 font-mono text-[12px] tabular-nums text-ih-warning-ink">
                     {s.warn}
                   </td>
-                  <td className="px-3 py-2.5 font-mono text-[12px] tabular-nums text-[oklch(0.5_0.18_25)]">
+                  <td className="px-3 py-2.5 font-mono text-[12px] tabular-nums text-ih-danger-ink">
                     {s.critical}
                   </td>
                 </tr>
@@ -230,7 +230,7 @@ export default async function SeoHealthPage() {
                       <td className="px-3 py-2.5">
                         <SeoHealthBadge score={r.score} size="sm" />
                       </td>
-                      <td className="px-3 py-2.5 font-mono text-[10px] uppercase tracking-[0.08em] text-ih-muted">
+                      <td className="px-3 py-2.5 font-mono text-[10.5px] uppercase tracking-[0.08em] text-ih-muted">
                         {TYPE_LABELS[r.entityType]}
                       </td>
                       <td className="px-3 py-2.5">
@@ -258,21 +258,21 @@ export default async function SeoHealthPage() {
             href="/admin/seo/redirects"
             className="border border-ih-border bg-ih-surface p-4 hover:bg-ih-surface-2 transition-colors"
           >
-            <p className="font-mono text-[10px] uppercase tracking-[0.1em] text-ih-muted">
+            <p className="font-mono text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
               Active redirects
             </p>
-            <p className="text-[28px] font-semibold mt-1">{totalRedirects}</p>
+            <p className="text-[28px] font-medium mt-1">{totalRedirects}</p>
           </Link>
           <Link
             href="/admin/seo/redirects/not-found"
             className="border border-ih-border bg-ih-surface p-4 hover:bg-ih-surface-2 transition-colors"
           >
-            <p className="font-mono text-[10px] uppercase tracking-[0.1em] text-ih-muted">
+            <p className="font-mono text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
               Unresolved 404s
             </p>
             <p
-              className={`text-[28px] font-semibold mt-1 ${
-                unresolved404 > 0 ? 'text-[oklch(0.5_0.18_25)]' : ''
+              className={`text-[28px] font-medium mt-1 ${
+                unresolved404 > 0 ? 'text-ih-danger-ink' : ''
               }`}
             >
               {unresolved404}
@@ -329,12 +329,12 @@ function SearchPanel({
   return (
     <div className="border border-ih-border bg-ih-surface p-4">
       <div className="flex items-center justify-between mb-3">
-        <p className="font-mono text-[10px] uppercase tracking-[0.1em] text-ih-muted">
+        <p className="font-mono text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
           {heading}
         </p>
         <Link
           href={ctaHref}
-          className="font-mono text-[10px] text-ih-accent hover:underline"
+          className="font-mono text-[11px] text-ih-accent hover:underline"
         >
           {ctaLabel}
         </Link>
@@ -350,7 +350,7 @@ function SearchPanel({
             >
               <span
                 className={`truncate ${
-                  warn ? 'text-[oklch(0.5_0.18_25)]' : 'text-ih-ink-2'
+                  warn ? 'text-ih-danger-ink' : 'text-ih-ink-2'
                 }`}
                 title={r.label}
               >
@@ -505,13 +505,13 @@ function Tile({
 }) {
   return (
     <div className="border border-ih-border bg-ih-surface p-4">
-      <div className="font-mono text-[10px] uppercase tracking-[0.1em] text-ih-muted">
+      <div className="font-mono text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
         {label}
       </div>
       <div
-        className={`text-[28px] font-semibold mt-1 ${
+        className={`text-[28px] font-medium mt-1 ${
           danger
-            ? 'text-[oklch(0.5_0.18_25)]'
+            ? 'text-ih-danger-ink'
             : accent
               ? 'text-ih-accent'
               : ''
@@ -536,7 +536,7 @@ function Section({ title, children }: { title: string; children: React.ReactNode
 
 function Empty({ children }: { children: React.ReactNode }) {
   return (
-    <div className="py-10 text-center border border-dashed border-ih-border text-[13px] text-ih-muted">
+    <div className="py-10 text-center rounded-lg border border-ih-border text-[13px] text-ih-muted">
       {children}
     </div>
   )
@@ -544,7 +544,7 @@ function Empty({ children }: { children: React.ReactNode }) {
 
 function Th({ children }: { children: React.ReactNode }) {
   return (
-    <th className="text-left px-3 py-2.5 font-mono text-[10px] uppercase tracking-[0.1em] text-ih-muted">
+    <th className="text-left px-3 py-2.5 font-mono text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
       {children}
     </th>
   )

@@ -10,8 +10,8 @@ export const metadata: Metadata = { title: 'Structured Data — Indus Admin' }
  */
 export default function StructuredDataPage() {
   return (
-    <div className="max-w-[640px] border border-dashed border-ih-border p-8 text-[13px] text-ih-muted">
-      <h2 className="text-[18px] font-semibold text-ih-ink mb-2">
+    <div className="max-w-[640px] rounded-lg border border-ih-border p-8 text-[13px] text-ih-muted">
+      <h2 className="text-[18px] font-medium text-ih-ink mb-2">
         Structured data globals
       </h2>
       <p className="mb-3">

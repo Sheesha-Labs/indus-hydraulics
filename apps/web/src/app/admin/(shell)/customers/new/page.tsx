@@ -79,14 +79,14 @@ export default async function NewCustomerPage({ params }: Props) {
           <button
             type="submit"
             form="new-account-form"
-            className="flex h-9 items-center rounded-md bg-ih-accent px-4 text-[13px] font-medium text-white transition-opacity hover:opacity-90"
+            className="flex h-9 items-center rounded-md bg-ih-accent px-4 text-[13px] font-medium text-ih-accent-fg transition-opacity hover:bg-ih-accent-hover"
           >
             Create Account
           </button>
         </>
       }
     >
-      <form id="new-account-form" action={createAccount} className="space-y-5">
+      <form id="new-account-form" action={createAccount} className="flex flex-col gap-5">
 
         <div className="grid grid-cols-2 gap-4">
           <div className="col-span-2">

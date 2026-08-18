@@ -73,7 +73,7 @@ export default function StartScrapeForm() {
       {state.kind === 'error' && (
         <div
           role="alert"
-          className="border border-[oklch(0.4_0.18_25)] bg-[oklch(0.97_0.04_25)] text-[oklch(0.3_0.18_25)] px-4 py-3 text-[13px]"
+          className="border border-[oklch(0.4_0.18_25)] bg-ih-danger-soft text-[oklch(0.3_0.18_25)] px-4 py-3 text-[13px]"
         >
           {state.message}
         </div>
@@ -83,7 +83,7 @@ export default function StartScrapeForm() {
         <button
           type="submit"
           disabled={pending}
-          className="h-9 px-4 bg-ih-accent text-white font-mono text-[12px] tracking-wider uppercase disabled:opacity-50"
+          className="h-9 px-4 bg-ih-accent text-ih-accent-fg font-mono text-[12px] tracking-wider uppercase disabled:opacity-50"
         >
           {pending ? 'Starting…' : 'Start crawl'}
         </button>
@@ -113,7 +113,7 @@ function Field({
       </span>
       {children}
       {error ? (
-        <span className="text-[12px] text-[oklch(0.5_0.18_25)]">{error}</span>
+        <span className="text-[12px] text-ih-danger-ink">{error}</span>
       ) : hint ? (
         <span className="text-[11px] text-ih-muted">{hint}</span>
       ) : null}

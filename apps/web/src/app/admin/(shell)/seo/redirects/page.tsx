@@ -23,7 +23,7 @@ export default async function SeoRedirectsPage() {
         >
           404 log
           {unresolved404Count > 0 && (
-            <span className="font-mono text-[10px] px-1.5 py-0.5 bg-[oklch(0.5_0.18_25)] text-white">
+            <span className="font-mono text-[11px] px-1.5 py-0.5 bg-[oklch(0.5_0.18_25)] text-white">
               {unresolved404Count}
             </span>
           )}
@@ -33,7 +33,7 @@ export default async function SeoRedirectsPage() {
           className="inline-flex items-center gap-2 h-9 px-3 border border-ih-border bg-ih-surface hover:bg-ih-surface-2 font-mono text-[12px]"
         >
           Detect chains
-          <span className="font-mono text-[10px] text-ih-muted">
+          <span className="font-mono text-[11px] text-ih-muted">
             {activeCount} active
           </span>
         </Link>

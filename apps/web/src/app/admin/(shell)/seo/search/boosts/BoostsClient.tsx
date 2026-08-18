@@ -62,7 +62,7 @@ export default function BoostsClient({ rows: initialRows }: Props) {
         </summary>
         <form action={handleAdd} className="mt-3 grid grid-cols-[1fr_120px_180px_auto] gap-3 items-end">
           <div>
-            <label htmlFor="boost-sku" className="block font-mono text-[10px] uppercase text-ih-muted mb-1">
+            <label htmlFor="boost-sku" className="block font-mono text-[10.5px] uppercase text-ih-muted mb-1">
               Product SKU
             </label>
             <Input
@@ -73,7 +73,7 @@ export default function BoostsClient({ rows: initialRows }: Props) {
               placeholder="ABC-1234" />
           </div>
           <div>
-            <label htmlFor="boost-boost" className="block font-mono text-[10px] uppercase text-ih-muted mb-1">
+            <label htmlFor="boost-boost" className="block font-mono text-[10.5px] uppercase text-ih-muted mb-1">
               Boost (0–10)
             </label>
             <Input
@@ -87,7 +87,7 @@ export default function BoostsClient({ rows: initialRows }: Props) {
               defaultValue="1.5" />
           </div>
           <div>
-            <label htmlFor="boost-expiresAt" className="block font-mono text-[10px] uppercase text-ih-muted mb-1">
+            <label htmlFor="boost-expiresAt" className="block font-mono text-[10.5px] uppercase text-ih-muted mb-1">
               Expires (optional)
             </label>
             <Input
@@ -98,7 +98,7 @@ export default function BoostsClient({ rows: initialRows }: Props) {
           <button
             type="submit"
             disabled={pending}
-            className="h-9 px-4 bg-ih-accent text-white font-mono text-[12px] hover:opacity-90 disabled:opacity-50"
+            className="h-9 px-4 bg-ih-accent text-ih-accent-fg font-mono text-[12px] hover:bg-ih-accent-hover disabled:opacity-50"
           >
             Add
           </button>
@@ -106,13 +106,13 @@ export default function BoostsClient({ rows: initialRows }: Props) {
       </details>
 
       {error && (
-        <p className="mb-4 font-mono text-[12px] text-[oklch(0.5_0.18_25)]" role="alert">
+        <p className="mb-4 font-mono text-[12px] text-ih-danger-ink" role="alert">
           {error}
         </p>
       )}
 
       {rows.length === 0 ? (
-        <div className="py-16 text-center border border-dashed border-ih-border">
+        <div className="py-16 text-center rounded-lg border border-ih-border">
           <p className="text-ih-muted text-[13px]">No boosts configured.</p>
         </div>
       ) : (
@@ -170,7 +170,7 @@ export default function BoostsClient({ rows: initialRows }: Props) {
 
 function Th({ children }: { children: React.ReactNode }) {
   return (
-    <th className="text-left px-3 py-2.5 font-mono text-[10px] uppercase tracking-[0.1em] text-ih-muted">
+    <th className="text-left px-3 py-2.5 font-mono text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
       {children}
     </th>
   )

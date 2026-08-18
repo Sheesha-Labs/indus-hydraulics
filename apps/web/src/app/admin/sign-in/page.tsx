@@ -20,20 +20,20 @@ export default async function AdminSignInPage({ params, searchParams }: Props) {
       <div className="w-full max-w-[380px]">
         {/* Brand */}
         <div className="flex items-center gap-3 mb-8">
-          <div className="relative w-10 h-10 bg-[#ffffff] grid place-items-center font-mono font-semibold text-[14px] text-[#111] rounded-sm">
+          <div className="relative w-10 h-10 bg-[#ffffff] grid place-items-center font-mono font-medium text-[14px] text-[#111] rounded-sm">
             IH
             <span className="absolute -bottom-0.5 -right-0.5 w-2 h-2 bg-ih-accent" />
           </div>
           <div>
-            <div className="font-semibold text-white leading-tight">Indus Hydraulics</div>
-            <div className="font-mono text-[10px] tracking-[0.1em] text-[oklch(0.68_0.03_250)] uppercase">
+            <div className="font-medium text-white leading-tight">Indus Hydraulics</div>
+            <div className="font-mono text-[10.5px] tracking-[0.1em] text-[oklch(0.68_0.03_250)] uppercase">
               Admin Portal
             </div>
           </div>
         </div>
 
         <div className="bg-[var(--color-ih-navy-2)] border border-[var(--color-ih-navy-2)] p-8">
-          <h1 className="text-[22px] font-semibold text-white mb-1">Staff sign in</h1>
+          <h1 className="text-[22px] font-medium text-white mb-1">Staff sign in</h1>
           <p className="text-[13px] text-[oklch(0.68_0.03_250)] mb-7">
             This portal is for Indus Hydraulics staff only.
           </p>

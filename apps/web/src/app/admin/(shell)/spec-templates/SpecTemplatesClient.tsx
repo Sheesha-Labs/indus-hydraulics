@@ -27,7 +27,7 @@ export default function SpecTemplatesClient({ templates }: Props) {
         <button
           type="button"
           onClick={() => setShowCreate((v) => !v)}
-          className="h-9 px-4 bg-ih-accent text-white text-[13px] font-medium hover:opacity-90"
+          className="h-9 px-4 bg-ih-accent text-ih-accent-fg text-[13px] font-medium hover:bg-ih-accent-hover"
         >
           {showCreate ? '× Cancel' : '+ New template'}
         </button>
@@ -36,7 +36,7 @@ export default function SpecTemplatesClient({ templates }: Props) {
       {showCreate && <CreateTemplateForm onDone={() => setShowCreate(false)} />}
 
       {templates.length === 0 ? (
-        <div className="py-16 border border-dashed border-ih-border text-center">
+        <div className="py-16 rounded-lg border border-ih-border text-center">
           <p className="text-ih-muted mb-3">
             No templates yet. Templates define the typed schema for a category of products
             (e.g. &quot;Hydraulic Hose&quot; defines bore, pressure, and construction fields).
@@ -44,14 +44,14 @@ export default function SpecTemplatesClient({ templates }: Props) {
           <button
             type="button"
             onClick={() => setShowCreate(true)}
-            className="inline-flex h-9 px-4 items-center bg-ih-accent text-white text-[13px] font-medium hover:opacity-90"
+            className="inline-flex h-9 px-4 items-center bg-ih-accent text-ih-accent-fg text-[13px] font-medium hover:bg-ih-accent-hover"
           >
             + Create your first template
           </button>
         </div>
       ) : (
-        <div className="bg-white border border-ih-border">
-          <div className="grid grid-cols-[1fr_140px_80px_100px_100px_100px] px-4 py-2.5 bg-ih-bg border-b border-ih-border font-mono text-[10px] tracking-[0.1em] uppercase text-ih-muted">
+        <div className="bg-ih-surface border border-ih-border">
+          <div className="grid grid-cols-[1fr_140px_80px_100px_100px_100px] px-4 py-2.5 bg-ih-bg border-b border-ih-border font-mono text-[10.5px] tracking-[0.1em] uppercase text-ih-muted">
             <div>Name</div>
             <div>Slug</div>
             <div className="text-center">Fields</div>
@@ -91,7 +91,7 @@ export default function SpecTemplatesClient({ templates }: Props) {
               <div className="flex items-center justify-end gap-2">
                 <Link
                   href={`/admin/spec-templates/${t.id}`}
-                  className="font-mono text-[10px] text-ih-muted hover:text-ih-ink"
+                  className="font-mono text-[11px] text-ih-muted hover:text-ih-ink"
                 >
                   Edit
                 </Link>
@@ -122,21 +122,21 @@ function CreateTemplateForm({ onDone }: { onDone: () => void }) {
   }
 
   return (
-    <form action={onSubmit} className="bg-white border border-ih-border p-5 grid gap-3">
+    <form action={onSubmit} className="bg-ih-surface border border-ih-border p-5 grid gap-3">
       <div className="grid grid-cols-2 gap-3">
         <Field label="Name *">
           <input
             required
             name="name"
             placeholder="Hydraulic Hose"
-            className="h-9 px-3 border border-ih-border bg-white text-[13px]"
+            className="h-9 px-3 border border-ih-border bg-ih-surface text-[13px]"
           />
         </Field>
         <Field label="Slug" hint="Auto-generated from name">
           <input
             name="slug"
             placeholder="hydraulic-hose"
-            className="h-9 px-3 border border-ih-border bg-white font-mono text-[12px]"
+            className="h-9 px-3 border border-ih-border bg-ih-surface font-mono text-[12px]"
           />
         </Field>
       </div>
@@ -145,14 +145,14 @@ function CreateTemplateForm({ onDone }: { onDone: () => void }) {
           name="description"
           rows={2}
           placeholder="What kinds of products use this template?"
-          className="px-3 py-2 border border-ih-border bg-white text-[13px] resize-y"
+          className="px-3 py-2 border border-ih-border bg-ih-surface text-[13px] resize-y"
         />
       </Field>
       <div className="flex items-center gap-2 pt-2">
         <button
           type="submit"
           disabled={pending}
-          className="h-9 px-4 bg-ih-navy text-white text-[12px] font-medium hover:opacity-90 disabled:opacity-50"
+          className="h-9 px-4 bg-ih-navy text-ih-bg text-[12px] font-medium hover:bg-ih-ink disabled:opacity-50"
         >
           {pending ? 'Creating…' : 'Create template'}
         </button>
@@ -164,7 +164,7 @@ function CreateTemplateForm({ onDone }: { onDone: () => void }) {
           Cancel
         </button>
         {error && (
-          <span className="font-mono text-[11px] text-[oklch(0.5_0.18_25)]" role="alert">
+          <span className="font-mono text-[11px] text-ih-danger-ink" role="alert">
             {error}
           </span>
         )}
@@ -197,11 +197,11 @@ function DeleteTemplateButton({
             if (!res.success) setError(res.message)
           })
         }}
-        className="font-mono text-[10px] text-ih-muted hover:text-[oklch(0.5_0.18_25)] disabled:opacity-30 disabled:cursor-not-allowed"
+        className="font-mono text-[11px] text-ih-muted hover:text-ih-danger-ink disabled:opacity-30 disabled:cursor-not-allowed"
       >
         {pending ? '…' : 'Delete'}
       </button>
-      {error && <span className="text-[10px] text-[oklch(0.5_0.18_25)]">{error}</span>}
+      {error && <span className="text-[11px] text-ih-danger-ink">{error}</span>}
     </>
   )
 }
@@ -219,7 +219,7 @@ function Field({
     <label className="flex flex-col gap-1.5">
       <span className="text-[11px] font-medium text-ih-ink-2">{label}</span>
       {children}
-      {hint && <span className="text-[10px] text-ih-muted-2">{hint}</span>}
+      {hint && <span className="text-[11px] text-ih-muted-2">{hint}</span>}
     </label>
   )
 }

@@ -19,9 +19,9 @@ const TIER_COLORS: Record<string, string> = {
 }
 
 const STATUS_COLORS: Record<string, string> = {
-  prospect: 'text-[oklch(0.5_0.08_60)] bg-[oklch(0.96_0.04_60)]',
-  active: 'text-[oklch(0.4_0.14_145)] bg-[oklch(0.94_0.06_145)]',
-  at_risk: 'text-[oklch(0.5_0.12_25)] bg-[oklch(0.96_0.04_25)]',
+  prospect: 'text-[oklch(0.5_0.08_60)] bg-ih-warning-soft',
+  active: 'text-ih-success-ink bg-ih-success-soft',
+  at_risk: 'text-ih-danger-ink bg-ih-danger-soft',
   archived: 'text-ih-muted bg-ih-surface-2',
 }
 
@@ -75,7 +75,7 @@ export default async function AdminCustomersPage({ params, searchParams }: Props
       actions={
         <Link
         href={`/admin/customers/new`}
-        className="h-9 px-4 flex items-center bg-ih-accent text-white font-mono text-[12px] hover:opacity-90"
+        className="h-9 px-4 flex items-center bg-ih-accent text-ih-accent-fg font-mono text-[12px] hover:bg-ih-accent-hover"
         >
         + New Account
         </Link>
@@ -104,7 +104,7 @@ export default async function AdminCustomersPage({ params, searchParams }: Props
               href={filterUrl({ status: s || undefined })}
               className={`px-3 py-1.5 font-mono text-[11px] border transition-colors capitalize ${
                 statusFilter === s
-                  ? 'border-ih-accent bg-ih-accent text-white'
+                  ? 'border-ih-accent bg-ih-accent text-ih-accent-fg'
                   : 'border-ih-border text-ih-ink-2 hover:border-ih-accent'
               }`}
             >
@@ -120,7 +120,7 @@ export default async function AdminCustomersPage({ params, searchParams }: Props
               href={filterUrl({ tier: t || undefined })}
               className={`px-3 py-1.5 font-mono text-[11px] border transition-colors capitalize ${
                 tierFilter === t
-                  ? 'border-ih-accent bg-ih-accent text-white'
+                  ? 'border-ih-accent bg-ih-accent text-ih-accent-fg'
                   : 'border-ih-border text-ih-ink-2 hover:border-ih-accent'
               }`}
             >
@@ -133,13 +133,13 @@ export default async function AdminCustomersPage({ params, searchParams }: Props
       </div>
 
       {accounts.length === 0 ? (
-        <div className="py-16 border border-dashed border-ih-border text-center">
+        <div className="py-16 rounded-lg border border-ih-border text-center">
           <p className="text-ih-muted">No accounts match these filters.</p>
         </div>
       ) : (
         <div className="border border-ih-border">
           {/* Header */}
-          <div className="grid grid-cols-[1fr_80px_100px_120px_100px_80px_80px] px-4 py-2.5 bg-ih-bg border-b border-ih-border font-mono text-[10px] tracking-[0.1em] uppercase text-ih-muted">
+          <div className="grid grid-cols-[1fr_80px_100px_120px_100px_80px_80px] px-4 py-2.5 bg-ih-bg border-b border-ih-border font-mono text-[10.5px] tracking-[0.1em] uppercase text-ih-muted">
             <div>Account</div>
             <div className="text-center">Tier</div>
             <div className="text-center">Status</div>
@@ -156,16 +156,16 @@ export default async function AdminCustomersPage({ params, searchParams }: Props
               className={`grid grid-cols-[1fr_80px_100px_120px_100px_80px_80px] px-4 py-3.5 items-center bg-ih-surface hover:bg-ih-surface-2 transition-colors ${i > 0 ? 'border-t border-ih-border' : ''}`}
             >
               <div>
-                <div className="text-[13px] font-semibold text-ih-ink">{acc.legalName}</div>
+                <div className="text-[13px] font-medium text-ih-ink">{acc.legalName}</div>
                 <div className="font-mono text-[11px] text-ih-muted">{acc.code}</div>
               </div>
               <div className="flex justify-center">
-                <span className={`px-2 py-0.5 font-mono text-[10px] font-semibold capitalize ${TIER_COLORS[acc.tier] ?? ''}`}>
+                <span className={`px-2 py-0.5 font-mono text-[11px] font-medium capitalize ${TIER_COLORS[acc.tier] ?? ''}`}>
                   {acc.tier}
                 </span>
               </div>
               <div className="flex justify-center">
-                <span className={`px-2 py-0.5 font-mono text-[10px] font-semibold capitalize ${STATUS_COLORS[acc.status] ?? ''}`}>
+                <span className={`px-2 py-0.5 font-mono text-[11px] font-medium capitalize ${STATUS_COLORS[acc.status] ?? ''}`}>
                   {acc.status.replace('_', ' ')}
                 </span>
               </div>

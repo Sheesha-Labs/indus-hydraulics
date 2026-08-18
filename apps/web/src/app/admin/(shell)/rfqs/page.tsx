@@ -33,18 +33,18 @@ const STATUS_LABELS: Record<string, string> = {
 }
 
 const STATUS_COLORS: Record<string, string> = {
-  submitted: 'text-[oklch(0.4_0.12_220)] bg-[oklch(0.95_0.05_220)]',
-  engineer_review: 'text-[oklch(0.4_0.12_220)] bg-[oklch(0.95_0.05_220)]',
-  engineer_questions_pending: 'text-[oklch(0.5_0.12_60)] bg-[oklch(0.95_0.08_60)]',
+  submitted: 'text-ih-info-ink bg-ih-steel-soft',
+  engineer_review: 'text-ih-info-ink bg-ih-steel-soft',
+  engineer_questions_pending: 'text-ih-warning-ink bg-[oklch(0.95_0.08_60)]',
   quote_sent: 'text-[oklch(0.4_0.14_160)] bg-[oklch(0.95_0.06_160)]',
-  accepted: 'text-[oklch(0.4_0.14_145)] bg-[oklch(0.93_0.08_145)]',
-  declined: 'text-[oklch(0.5_0.1_25)] bg-[oklch(0.95_0.04_25)]',
+  accepted: 'text-ih-success-ink bg-[oklch(0.93_0.08_145)]',
+  declined: 'text-ih-danger-ink bg-[oklch(0.95_0.04_25)]',
 }
 
 const URGENCY_COLORS: Record<string, string> = {
   routine: 'text-ih-muted',
-  priority: 'text-[oklch(0.5_0.12_60)] font-semibold',
-  plant_down: 'text-[oklch(0.5_0.14_25)] font-semibold',
+  priority: 'text-ih-warning-ink font-medium',
+  plant_down: 'text-ih-danger-ink font-medium',
 }
 
 export default async function AdminRfqsPage({ searchParams }: Props) {
@@ -93,7 +93,7 @@ export default async function AdminRfqsPage({ searchParams }: Props) {
               href={href}
               className={`px-3 py-1.5 font-mono text-[12px] border transition-colors ${
                 active
-                  ? 'border-ih-accent bg-ih-accent text-white'
+                  ? 'border-ih-accent bg-ih-accent text-ih-accent-fg'
                   : 'border-ih-border text-ih-ink-2 hover:border-ih-accent'
               }`}
             >
@@ -109,7 +109,7 @@ export default async function AdminRfqsPage({ searchParams }: Props) {
               href={filterUrl({ urgency: urgencyFilter === u ? undefined : u })}
               className={`px-3 py-1.5 font-mono text-[12px] border transition-colors ${
                 urgencyFilter === u
-                  ? 'border-ih-accent bg-ih-accent text-white'
+                  ? 'border-ih-accent bg-ih-accent text-ih-accent-fg'
                   : 'border-ih-border text-ih-ink-2 hover:border-ih-accent'
               }`}
             >
@@ -120,13 +120,13 @@ export default async function AdminRfqsPage({ searchParams }: Props) {
       </div>
 
       {rfqs.length === 0 ? (
-        <div className="py-16 border border-dashed border-ih-border text-center">
+        <div className="py-16 rounded-lg border border-ih-border text-center">
           <p className="text-ih-muted">No RFQs match these filters.</p>
         </div>
       ) : (
         <div className="border border-ih-border">
           {/* Header */}
-          <div className="grid grid-cols-[1fr_180px_80px_80px_130px_130px] px-4 py-2.5 bg-ih-bg border-b border-ih-border font-mono text-[10px] tracking-[0.1em] uppercase text-ih-muted">
+          <div className="grid grid-cols-[1fr_180px_80px_80px_130px_130px] px-4 py-2.5 bg-ih-bg border-b border-ih-border font-mono text-[10.5px] tracking-[0.1em] uppercase text-ih-muted">
             <div>Reference</div>
             <div>Account</div>
             <div className="text-center">Lines</div>
@@ -142,12 +142,12 @@ export default async function AdminRfqsPage({ searchParams }: Props) {
               className={`grid grid-cols-[1fr_180px_80px_80px_130px_130px] px-4 py-3.5 items-center bg-ih-surface hover:bg-ih-surface-2 transition-colors ${i > 0 ? 'border-t border-ih-border' : ''}`}
             >
               <div>
-                <div className="font-mono text-[13px] font-semibold text-ih-ink">{rfq.code}</div>
+                <div className="font-mono text-[13px] font-medium text-ih-ink">{rfq.code}</div>
                 {rfq.subject && (
                   <div className="text-[12px] text-ih-muted mt-0.5 truncate max-w-[260px]">{rfq.subject}</div>
                 )}
                 {rfq.assignedEngineer && (
-                  <div className="font-mono text-[10px] text-ih-muted-2 mt-0.5">
+                  <div className="font-mono text-[11px] text-ih-muted-2 mt-0.5">
                     Eng: {rfq.assignedEngineer.name}
                   </div>
                 )}
@@ -161,7 +161,7 @@ export default async function AdminRfqsPage({ searchParams }: Props) {
                 {rfq.urgency === 'plant_down' ? '🔴 P.Down' : rfq.urgency}
               </div>
               <div className="flex justify-center">
-                <span className={`px-2 py-0.5 font-mono text-[10px] font-semibold ${STATUS_COLORS[rfq.status] ?? 'text-ih-muted bg-ih-surface-2'}`}>
+                <span className={`px-2 py-0.5 font-mono text-[11px] font-medium ${STATUS_COLORS[rfq.status] ?? 'text-ih-muted bg-ih-surface-2'}`}>
                   {STATUS_LABELS[rfq.status] ?? rfq.status}
                 </span>
               </div>

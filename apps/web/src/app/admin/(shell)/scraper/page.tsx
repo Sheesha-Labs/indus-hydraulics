@@ -37,7 +37,7 @@ export default async function ScraperJobsPage({ params }: Props) {
         // as "START A CRAWL", and v2 topbar buttons are sentence case.
         <Link
           href="/admin/scraper/new"
-          className="grid h-9 place-items-center rounded-md bg-ih-accent px-4 text-[13px] font-medium text-white transition-opacity hover:opacity-90"
+          className="grid h-9 place-items-center rounded-md bg-ih-accent px-4 text-[13px] font-medium text-ih-accent-fg transition-opacity hover:bg-ih-accent-hover"
         >
           Start a crawl
         </Link>
@@ -53,7 +53,7 @@ export default async function ScraperJobsPage({ params }: Props) {
         </div>
       ) : (
         <table className="w-full border border-ih-border text-[13px]">
-          <thead className="bg-ih-surface-2 text-ih-muted uppercase font-mono text-[10px] tracking-wider">
+          <thead className="bg-ih-surface-2 text-ih-muted uppercase font-mono text-[10.5px] tracking-wider">
             <tr>
               <th className="text-left px-3 py-2">Code</th>
               <th className="text-left px-3 py-2">Host</th>

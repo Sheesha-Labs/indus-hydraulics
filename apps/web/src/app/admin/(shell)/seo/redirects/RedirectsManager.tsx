@@ -71,7 +71,7 @@ export default function RedirectsManager({ redirects: initialRedirects }: Props)
         </p>
         <div className="flex gap-3 items-end">
           <div className="flex-1">
-            <label htmlFor="redirect-fromPath" className="block font-mono text-[10px] uppercase text-ih-muted mb-1">
+            <label htmlFor="redirect-fromPath" className="block font-mono text-[10.5px] uppercase text-ih-muted mb-1">
               From path
             </label>
             <Input
@@ -82,7 +82,7 @@ export default function RedirectsManager({ redirects: initialRedirects }: Props)
               placeholder="/old-page" />
           </div>
           <div className="flex-1">
-            <label htmlFor="redirect-toPath" className="block font-mono text-[10px] uppercase text-ih-muted mb-1">
+            <label htmlFor="redirect-toPath" className="block font-mono text-[10.5px] uppercase text-ih-muted mb-1">
               To path
             </label>
             <Input
@@ -93,7 +93,7 @@ export default function RedirectsManager({ redirects: initialRedirects }: Props)
               placeholder="/new-page" />
           </div>
           <div className="w-24">
-            <label htmlFor="redirect-statusCode" className="block font-mono text-[10px] uppercase text-ih-muted mb-1">
+            <label htmlFor="redirect-statusCode" className="block font-mono text-[10.5px] uppercase text-ih-muted mb-1">
               Code
             </label>
             <Select
@@ -108,20 +108,20 @@ export default function RedirectsManager({ redirects: initialRedirects }: Props)
           <button
             type="submit"
             disabled={isPending}
-            className="h-9 px-4 bg-ih-accent text-white font-mono text-[12px] hover:opacity-90 disabled:opacity-50 shrink-0"
+            className="h-9 px-4 bg-ih-accent text-ih-accent-fg font-mono text-[12px] hover:bg-ih-accent-hover disabled:opacity-50 shrink-0"
           >
             Add
           </button>
         </div>
         {error && (
-          <p className="mt-2 font-mono text-[11px] text-[oklch(0.5_0.18_25)]" role="alert">
+          <p className="mt-2 font-mono text-[11px] text-ih-danger-ink" role="alert">
             {error}
           </p>
         )}
       </form>
 
       {redirects.length === 0 ? (
-        <div className="py-16 text-center border border-dashed border-ih-border">
+        <div className="py-16 text-center rounded-lg border border-ih-border">
           <p className="text-ih-muted text-[13px]">No redirects configured.</p>
         </div>
       ) : (
@@ -175,7 +175,7 @@ export default function RedirectsManager({ redirects: initialRedirects }: Props)
 
 function Th({ children }: { children: React.ReactNode }) {
   return (
-    <th className="text-left px-4 py-2.5 font-mono text-[10px] uppercase tracking-[0.1em] text-ih-muted">
+    <th className="text-left px-4 py-2.5 font-mono text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
       {children}
     </th>
   )

@@ -126,7 +126,7 @@ function DetailBody({
               // eslint-disable-next-line @next/next/no-img-element
               <img src={thumb} alt={detail.alt ?? ''} className="h-full w-full object-cover" />
             ) : (
-              <span className="grid h-full w-full place-items-center font-mono text-[10px] uppercase tracking-[0.1em] text-ih-muted-2">
+              <span className="grid h-full w-full place-items-center font-mono text-[10.5px] uppercase tracking-[0.1em] text-ih-muted-2">
                 {detail.kind}
               </span>
             )}
@@ -184,7 +184,7 @@ function DetailBody({
 
         {/* ── Usage list ──────────────────────────────────────────────── */}
         <div className="flex flex-col gap-2 border-t border-ih-border pt-4">
-          <h3 className="font-mono text-[10px] uppercase tracking-[0.1em] text-ih-muted">
+          <h3 className="font-mono text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
             Where this is used
           </h3>
           {usages.length === 0 ? (
@@ -220,7 +220,7 @@ function UsageRow({ usage }: { usage: MediaUsage }) {
     <li className="flex items-center gap-3 py-2">
       {/* Fixed-width mono eyebrow. That column is what makes a mixed list of
           products, blog posts and RFQs scannable rather than a wall of text. */}
-      <span className="w-24 flex-shrink-0 font-mono text-[10px] uppercase tracking-[0.09em] text-ih-muted">
+      <span className="w-24 flex-shrink-0 font-mono text-[10.5px] uppercase tracking-[0.09em] text-ih-muted">
         {MEDIA_USAGE_KIND_LABELS[usage.kind].one}
       </span>
       <span className="min-w-0 flex-1 truncate" title={usage.label}>
@@ -266,7 +266,7 @@ function Meta({
 }) {
   return (
     <div className="min-w-0">
-      <dt className="font-mono text-[10px] uppercase tracking-[0.09em] text-ih-muted">{label}</dt>
+      <dt className="font-mono text-[10.5px] uppercase tracking-[0.09em] text-ih-muted">{label}</dt>
       <dd className={cn('truncate text-ih-ink-2', mono && 'font-mono text-[11.5px]')} title={hint}>
         {value}
       </dd>

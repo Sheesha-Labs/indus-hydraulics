@@ -28,20 +28,20 @@ export default function AdminPublicError({
     <div className="grid min-h-screen place-items-center bg-[var(--color-ih-navy)] p-6">
       <div className="w-full max-w-[380px]">
         <div className="mb-8 flex items-center gap-3">
-          <div className="relative grid h-10 w-10 place-items-center rounded-sm bg-[#ffffff] font-mono text-[14px] font-semibold text-[#111]">
+          <div className="relative grid h-10 w-10 place-items-center rounded-sm bg-[#ffffff] font-mono text-[14px] font-medium text-[#111]">
             IH
             <span className="absolute -bottom-0.5 -right-0.5 h-2 w-2 bg-ih-accent" />
           </div>
           <div>
-            <div className="font-semibold leading-tight text-white">Indus Hydraulics</div>
-            <div className="font-mono text-[10px] uppercase tracking-[0.1em] text-[oklch(0.68_0.03_250)]">
+            <div className="font-medium leading-tight text-white">Indus Hydraulics</div>
+            <div className="font-mono text-[10.5px] uppercase tracking-[0.1em] text-[oklch(0.68_0.03_250)]">
               Admin Portal
             </div>
           </div>
         </div>
 
         <div className="border border-[var(--color-ih-navy-2)] bg-[var(--color-ih-navy-2)] p-8">
-          <h1 className="mb-1 text-[22px] font-semibold text-white">That didn&apos;t work</h1>
+          <h1 className="mb-1 text-[22px] font-medium text-white">That didn&apos;t work</h1>
           <p className="mb-6 text-[13px] leading-relaxed text-[oklch(0.75_0.02_250)]">
             Something went wrong on our side. Nothing you entered was lost — try again, and if it
             keeps happening tell us the reference below.
@@ -50,7 +50,7 @@ export default function AdminPublicError({
           <button
             type="button"
             onClick={reset}
-            className="h-11 w-full bg-ih-accent text-sm font-medium text-white transition-opacity hover:opacity-90"
+            className="h-11 w-full bg-ih-accent text-sm font-medium text-ih-accent-fg transition-opacity hover:bg-ih-accent-hover"
           >
             Try again
           </button>

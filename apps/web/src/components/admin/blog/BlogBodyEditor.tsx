@@ -351,7 +351,7 @@ function Btn({
       aria-label={label}
       title={label}
       className={`flex h-7 w-7 items-center justify-center rounded-md transition-colors ${
-        active ? 'bg-ih-navy text-white' : 'text-ih-ink-2 hover:bg-ih-surface-2'
+        active ? 'bg-ih-navy text-ih-bg' : 'text-ih-ink-2 hover:bg-ih-surface-2'
       } ${disabled ? 'cursor-not-allowed opacity-40' : ''}`}
     >
       {children}

@@ -149,7 +149,7 @@ function RailItem({
         className={cn(
           'flex items-center gap-2 rounded-sm px-3 py-2 text-[13px] transition-colors',
           active
-            ? 'bg-ih-navy font-medium text-white'
+            ? 'bg-ih-navy font-medium text-ih-bg'
             : muted
               ? 'text-ih-muted hover:bg-ih-surface-2 hover:text-ih-ink-2'
               : 'text-ih-ink-2 hover:bg-ih-surface-2 hover:text-ih-ink'
@@ -200,7 +200,7 @@ export function StateTabs({
             className={cn(
               'inline-flex h-7 items-center gap-1.5 rounded-sm px-2.5 text-[12px] transition-colors',
               isActive
-                ? 'bg-ih-navy font-medium text-white'
+                ? 'bg-ih-navy font-medium text-ih-bg'
                 : 'text-ih-ink-2 hover:text-ih-ink'
             )}
           >
@@ -208,7 +208,7 @@ export function StateTabs({
             <span
               className={cn(
                 'font-mono text-[10.5px] tabular-nums',
-                isActive ? 'text-white/75' : 'text-ih-muted'
+                isActive ? 'text-ih-bg/75' : 'text-ih-muted'
               )}
             >
               {counts[state]}
@@ -246,7 +246,7 @@ export function ViewToggle({ active, buildUrl }: { active: MediaViewMode; buildU
             title={label}
             className={cn(
               'inline-flex h-7 w-8 items-center justify-center rounded-sm transition-colors',
-              isActive ? 'bg-ih-navy text-white' : 'text-ih-muted hover:text-ih-ink'
+              isActive ? 'bg-ih-navy text-ih-bg' : 'text-ih-muted hover:text-ih-ink'
             )}
           >
             <Icon size={13} strokeWidth={1.7} aria-hidden="true" />

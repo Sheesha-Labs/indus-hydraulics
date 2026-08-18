@@ -49,9 +49,9 @@ interface Props {
 }
 
 const STATUS_COLORS: Record<string, string> = {
-  active: 'text-[oklch(0.4_0.14_145)] bg-[oklch(0.94_0.06_145)]',
+  active: 'text-ih-success-ink bg-ih-success-soft',
   draft: 'text-ih-muted bg-ih-surface-2',
-  discontinued: 'text-[oklch(0.5_0.12_25)] bg-[oklch(0.96_0.04_25)]',
+  discontinued: 'text-ih-danger-ink bg-ih-danger-soft',
 }
 
 export default function TemplateEditorClient({
@@ -99,7 +99,7 @@ function BasicInfoForm({ template }: { template: Template }) {
   }
 
   return (
-    <form action={onSubmit} className="bg-white border border-ih-border p-5 grid gap-3">
+    <form action={onSubmit} className="bg-ih-surface border border-ih-border p-5 grid gap-3">
       <input type="hidden" name="id" value={template.id} />
       <div className="grid grid-cols-2 gap-3">
         <Field label="Name *">
@@ -107,7 +107,7 @@ function BasicInfoForm({ template }: { template: Template }) {
             required
             name="name"
             defaultValue={template.name}
-            className="h-9 px-3 border border-ih-border bg-white text-[13px]"
+            className="h-9 px-3 border border-ih-border bg-ih-surface text-[13px]"
           />
         </Field>
         <Field label="Slug *">
@@ -115,7 +115,7 @@ function BasicInfoForm({ template }: { template: Template }) {
             required
             name="slug"
             defaultValue={template.slug}
-            className="h-9 px-3 border border-ih-border bg-white font-mono text-[12px]"
+            className="h-9 px-3 border border-ih-border bg-ih-surface font-mono text-[12px]"
           />
         </Field>
       </div>
@@ -124,20 +124,20 @@ function BasicInfoForm({ template }: { template: Template }) {
           name="description"
           defaultValue={template.description ?? ''}
           rows={2}
-          className="px-3 py-2 border border-ih-border bg-white text-[13px] resize-y"
+          className="px-3 py-2 border border-ih-border bg-ih-surface text-[13px] resize-y"
         />
       </Field>
       <div className="flex items-center gap-2 pt-2">
         <button
           type="submit"
           disabled={pending}
-          className="h-9 px-4 bg-ih-navy text-white text-[12px] font-medium hover:opacity-90 disabled:opacity-50"
+          className="h-9 px-4 bg-ih-navy text-ih-bg text-[12px] font-medium hover:bg-ih-ink disabled:opacity-50"
         >
           {pending ? 'Saving…' : 'Save details'}
         </button>
-        {saved && <span className="font-mono text-[11px] text-[oklch(0.4_0.14_145)]">✓ Saved</span>}
+        {saved && <span className="font-mono text-[11px] text-ih-success-ink">✓ Saved</span>}
         {error && (
-          <span className="font-mono text-[11px] text-[oklch(0.5_0.18_25)]" role="alert">
+          <span className="font-mono text-[11px] text-ih-danger-ink" role="alert">
             {error}
           </span>
         )}
@@ -167,19 +167,19 @@ function FieldManager({
       </p>
 
       {fields.length === 0 ? (
-        <div className="py-10 border border-dashed border-ih-border text-center">
+        <div className="py-10 rounded-lg border border-ih-border text-center">
           <p className="text-ih-muted mb-3 text-[13px]">No fields yet.</p>
           <button
             type="button"
             onClick={() => setShowAdd(true)}
-            className="inline-flex h-9 px-4 items-center bg-ih-accent text-white text-[13px] font-medium hover:opacity-90"
+            className="inline-flex h-9 px-4 items-center bg-ih-accent text-ih-accent-fg text-[13px] font-medium hover:bg-ih-accent-hover"
           >
             + Add first field
           </button>
         </div>
       ) : (
-        <div className="bg-white border border-ih-border">
-          <div className="grid grid-cols-[40px_1fr_140px_120px_80px_140px_100px] px-4 py-2.5 bg-ih-bg border-b border-ih-border font-mono text-[10px] tracking-[0.1em] uppercase text-ih-muted">
+        <div className="bg-ih-surface border border-ih-border">
+          <div className="grid grid-cols-[40px_1fr_140px_120px_80px_140px_100px] px-4 py-2.5 bg-ih-bg border-b border-ih-border font-mono text-[10.5px] tracking-[0.1em] uppercase text-ih-muted">
             <div />
             <div>Label / key</div>
             <div>Group</div>
@@ -240,7 +240,7 @@ function FieldManager({
                       <button
                         type="button"
                         onClick={() => setEditingId(f.id)}
-                        className="font-mono text-[10px] text-ih-muted hover:text-ih-ink"
+                        className="font-mono text-[11px] text-ih-muted hover:text-ih-ink"
                       >
                         Edit
                       </button>
@@ -259,7 +259,7 @@ function FieldManager({
           <button
             type="button"
             onClick={() => setShowAdd(true)}
-            className="h-9 px-4 bg-ih-accent text-white text-[12px] font-medium hover:opacity-90"
+            className="h-9 px-4 bg-ih-accent text-ih-accent-fg text-[12px] font-medium hover:bg-ih-accent-hover"
           >
             + Add field
           </button>
@@ -301,7 +301,7 @@ function FieldForm({
   }
 
   return (
-    <form action={onSubmit} className="bg-white border border-ih-border p-5 grid gap-3">
+    <form action={onSubmit} className="bg-ih-surface border border-ih-border p-5 grid gap-3">
       <input type="hidden" name="templateId" value={templateId} />
       {existing && <input type="hidden" name="id" value={existing.id} />}
 
@@ -312,7 +312,7 @@ function FieldForm({
             name="label"
             defaultValue={existing?.label ?? ''}
             placeholder="Operating pressure"
-            className="h-9 px-3 border border-ih-border bg-white text-[13px]"
+            className="h-9 px-3 border border-ih-border bg-ih-surface text-[13px]"
           />
         </Field>
         <Field
@@ -327,7 +327,7 @@ function FieldForm({
             name="key"
             defaultValue={existing?.key ?? ''}
             placeholder="operating_pressure"
-            className="h-9 px-3 border border-ih-border bg-white font-mono text-[12px]"
+            className="h-9 px-3 border border-ih-border bg-ih-surface font-mono text-[12px]"
           />
         </Field>
       </div>
@@ -338,7 +338,7 @@ function FieldForm({
             name="dataType"
             value={dataType}
             onChange={(e) => setDataType(e.target.value as FieldRow['dataType'])}
-            className="h-9 px-2 border border-ih-border bg-white text-[13px]"
+            className="h-9 px-2 border border-ih-border bg-ih-surface text-[13px]"
           >
             <option value="text">Text</option>
             <option value="number">Number</option>
@@ -351,7 +351,7 @@ function FieldForm({
             name="unit"
             defaultValue={existing?.unit ?? ''}
             placeholder="bar"
-            className="h-9 px-3 border border-ih-border bg-white font-mono text-[12px]"
+            className="h-9 px-3 border border-ih-border bg-ih-surface font-mono text-[12px]"
           />
         </Field>
         <Field label="Group" hint="Section header in the tech-specs tab">
@@ -359,7 +359,7 @@ function FieldForm({
             name="group"
             defaultValue={existing?.group ?? ''}
             placeholder="Hydraulic performance"
-            className="h-9 px-3 border border-ih-border bg-white text-[13px]"
+            className="h-9 px-3 border border-ih-border bg-ih-surface text-[13px]"
           />
         </Field>
       </div>
@@ -371,7 +371,7 @@ function FieldForm({
             defaultValue={existing?.options?.join('\n') ?? ''}
             rows={4}
             placeholder={'1-wire\n2-wire\nspiral'}
-            className="px-3 py-2 border border-ih-border bg-white text-[13px] font-mono resize-y"
+            className="px-3 py-2 border border-ih-border bg-ih-surface text-[13px] font-mono resize-y"
           />
         </Field>
       )}
@@ -380,7 +380,7 @@ function FieldForm({
         <input
           name="helpText"
           defaultValue={existing?.helpText ?? ''}
-          className="h-9 px-3 border border-ih-border bg-white text-[13px]"
+          className="h-9 px-3 border border-ih-border bg-ih-surface text-[13px]"
         />
       </Field>
 
@@ -420,7 +420,7 @@ function FieldForm({
         <button
           type="submit"
           disabled={pending}
-          className="h-9 px-4 bg-ih-navy text-white text-[12px] font-medium hover:opacity-90 disabled:opacity-50"
+          className="h-9 px-4 bg-ih-navy text-ih-bg text-[12px] font-medium hover:bg-ih-ink disabled:opacity-50"
         >
           {pending ? 'Saving…' : existing ? 'Save field' : 'Add field'}
         </button>
@@ -432,7 +432,7 @@ function FieldForm({
           Cancel
         </button>
         {error && (
-          <span className="font-mono text-[11px] text-[oklch(0.5_0.18_25)]" role="alert">
+          <span className="font-mono text-[11px] text-ih-danger-ink" role="alert">
             {error}
           </span>
         )}
@@ -459,7 +459,7 @@ function PdpZonePreview({
     'border border-ih-accent bg-[oklch(0.96_0.06_70)] ring-1 ring-ih-accent'
   return (
     <div className="flex items-start gap-3">
-      <div className="w-[180px] border border-ih-border bg-white p-2 flex flex-col gap-1.5 select-none">
+      <div className="w-[180px] border border-ih-border bg-ih-surface p-2 flex flex-col gap-1.5 select-none">
         <div className="flex gap-2">
           {/* Image placeholder */}
           <div className="w-[72px] h-[80px] bg-ih-surface-2 border border-ih-border shrink-0" />
@@ -479,20 +479,20 @@ function PdpZonePreview({
             {/* Quick spec zone — 6-cell grid */}
             <div className={`p-1 grid grid-cols-3 gap-px ${isQuickSpec ? onHi : off}`}>
               {Array.from({ length: 6 }).map((_, i) => (
-                <div key={i} className="h-3 bg-white" />
+                <div key={i} className="h-3 bg-ih-surface" />
               ))}
             </div>
           </div>
         </div>
       </div>
-      <div className="flex flex-col gap-1 pt-0.5 text-[10px] font-mono tracking-[0.04em] text-ih-muted min-w-[120px]">
-        <div className="font-semibold text-ih-muted-2 uppercase mb-0.5">
+      <div className="flex flex-col gap-1 pt-0.5 text-[10.5px] font-mono tracking-[0.04em] text-ih-muted min-w-[120px]">
+        <div className="font-medium text-ih-muted-2 uppercase mb-0.5">
           Renders here
         </div>
-        <div className={isKeyFeature ? 'text-ih-accent font-semibold' : ''}>
+        <div className={isKeyFeature ? 'text-ih-accent font-medium' : ''}>
           {isKeyFeature ? '● Key-feature bullet' : '○ Key feature off'}
         </div>
-        <div className={isQuickSpec ? 'text-ih-accent font-semibold' : ''}>
+        <div className={isQuickSpec ? 'text-ih-accent font-medium' : ''}>
           {isQuickSpec ? '● Quick-spec cell' : '○ Quick spec off'}
         </div>
         {!isKeyFeature && !isQuickSpec && (
@@ -527,7 +527,7 @@ function ReorderButton({
         })
       }
       title={direction === 'up' ? 'Move up' : 'Move down'}
-      className="font-mono text-[10px] text-ih-muted hover:text-ih-ink disabled:opacity-30"
+      className="font-mono text-[11px] text-ih-muted hover:text-ih-ink disabled:opacity-30"
     >
       {direction === 'up' ? '↑' : '↓'}
     </button>
@@ -561,11 +561,11 @@ function DeleteFieldButton({
             if (!res.success) setError(res.message)
           })
         }}
-        className="font-mono text-[10px] text-ih-muted hover:text-[oklch(0.5_0.18_25)] disabled:opacity-30"
+        className="font-mono text-[11px] text-ih-muted hover:text-ih-danger-ink disabled:opacity-30"
       >
         {pending ? '…' : 'Delete'}
       </button>
-      {error && <span className="text-[10px] text-[oklch(0.5_0.18_25)]">{error}</span>}
+      {error && <span className="text-[11px] text-ih-danger-ink">{error}</span>}
     </>
   )
 }
@@ -589,8 +589,8 @@ function AttachedProductsList({
   }
 
   return (
-    <div className="bg-white border border-ih-border">
-      <div className="grid grid-cols-[140px_1fr_140px_100px_100px] px-4 py-2.5 bg-ih-bg border-b border-ih-border font-mono text-[10px] tracking-[0.1em] uppercase text-ih-muted">
+    <div className="bg-ih-surface border border-ih-border">
+      <div className="grid grid-cols-[140px_1fr_140px_100px_100px] px-4 py-2.5 bg-ih-bg border-b border-ih-border font-mono text-[10.5px] tracking-[0.1em] uppercase text-ih-muted">
         <div>SKU</div>
         <div>Title</div>
         <div>Category</div>
@@ -610,7 +610,7 @@ function AttachedProductsList({
             {p.categoryName ?? <span className="text-ih-muted-2">—</span>}
           </div>
           <div className="flex justify-center">
-            <span className={`px-2 py-0.5 font-mono text-[10px] font-semibold capitalize ${STATUS_COLORS[p.status] ?? ''}`}>
+            <span className={`px-2 py-0.5 font-mono text-[11px] font-medium capitalize ${STATUS_COLORS[p.status] ?? ''}`}>
               {p.status}
             </span>
           </div>
@@ -634,7 +634,7 @@ function AttachedProductsList({
 function Section({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <div>
-      <h2 className="text-[14px] font-semibold mb-3 text-ih-ink">{title}</h2>
+      <h2 className="text-[14px] font-medium mb-3 text-ih-ink">{title}</h2>
       {children}
     </div>
   )
@@ -653,7 +653,7 @@ function Field({
     <label className="flex flex-col gap-1.5">
       <span className="text-[11px] font-medium text-ih-ink-2">{label}</span>
       {children}
-      {hint && <span className="text-[10px] text-ih-muted-2">{hint}</span>}
+      {hint && <span className="text-[11px] text-ih-muted-2">{hint}</span>}
     </label>
   )
 }
@@ -661,12 +661,12 @@ function Field({
 function Pill({ children, tone }: { children: React.ReactNode; tone: 'ok' | 'warn' | 'info' }) {
   const cls =
     tone === 'ok'
-      ? 'text-[oklch(0.4_0.14_145)] bg-[oklch(0.94_0.06_145)]'
+      ? 'text-ih-success-ink bg-ih-success-soft'
       : tone === 'warn'
         ? 'text-[oklch(0.5_0.15_60)] bg-[oklch(0.97_0.04_60)]'
         : 'text-ih-accent bg-[oklch(0.96_0.05_240)]'
   return (
-    <span className={`inline-block px-1.5 py-0.5 font-mono text-[9px] font-semibold uppercase ${cls}`}>
+    <span className={`inline-block px-1.5 py-0.5 font-mono text-[10.5px] font-medium uppercase ${cls}`}>
       {children}
     </span>
   )

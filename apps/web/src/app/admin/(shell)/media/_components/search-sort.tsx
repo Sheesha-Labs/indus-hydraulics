@@ -80,7 +80,7 @@ export function MediaSortSelect({
 
   return (
     <div className="flex items-center gap-1.5">
-      <label htmlFor="media-sort" className="font-mono text-[10px] uppercase tracking-[0.1em] text-ih-muted">
+      <label htmlFor="media-sort" className="font-mono text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
         Sort
       </label>
       <select

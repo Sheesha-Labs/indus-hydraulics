@@ -177,7 +177,7 @@ export default function NavigationEditor({ menu, items: initialItems, locationLa
             type="button"
             onClick={onPublishToggle}
             disabled={pending}
-            className="h-9 rounded-md bg-ih-accent px-4 text-[13px] text-white transition-opacity hover:opacity-90 disabled:opacity-50"
+            className="h-9 rounded-md bg-ih-accent px-4 text-[13px] text-ih-accent-fg transition-opacity hover:bg-ih-accent-hover disabled:opacity-50"
           >
             {pending ? 'Saving…' : menu.isPublished ? 'Unpublish' : 'Publish'}
           </button>
@@ -192,7 +192,7 @@ export default function NavigationEditor({ menu, items: initialItems, locationLa
         </div>
       ) : null}
 
-      <div className="bg-white border border-ih-border">
+      <div className="bg-ih-surface border border-ih-border">
         {roots.length === 0 ? (
           <div className="px-4 py-12 text-center text-[13px] text-ih-muted">
             No items yet — click <span className="font-medium">+ Add column</span> to begin.
@@ -346,10 +346,10 @@ function ItemNode({
         <div style={{ paddingLeft: `${depth * 20}px` }} className="flex items-center gap-2 min-w-0">
           <span className="font-medium truncate">{item.label}</span>
           {item.badge ? (
-            <span className="px-1.5 py-0.5 text-[10px] bg-ih-accent text-white">{item.badge}</span>
+            <span className="px-1.5 py-0.5 text-[11px] bg-ih-accent text-ih-accent-fg">{item.badge}</span>
           ) : null}
           {!item.isVisible ? (
-            <span className="text-[10px] text-ih-muted font-mono uppercase">hidden</span>
+            <span className="text-[10.5px] text-ih-muted font-mono uppercase">hidden</span>
           ) : null}
         </div>
         <div className="font-mono text-[11px] text-ih-muted">

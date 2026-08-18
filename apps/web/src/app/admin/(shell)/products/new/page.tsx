@@ -34,7 +34,7 @@ export default async function NewProductPage({ params }: Props) {
           <button
             type="submit"
             form="new-product-form"
-            className="flex h-9 items-center rounded-md bg-ih-accent px-4 text-[13px] font-medium text-white transition-opacity hover:opacity-90"
+            className="flex h-9 items-center rounded-md bg-ih-accent px-4 text-[13px] font-medium text-ih-accent-fg transition-opacity hover:bg-ih-accent-hover"
           >
             Create product
           </button>
@@ -53,14 +53,14 @@ export default async function NewProductPage({ params }: Props) {
             const r = await createProduct(fd)
             if (r && !r.success) throw new Error(r.message)
           }}
-          className="flex flex-col gap-5 bg-white border border-ih-border p-6"
+          className="flex flex-col gap-5 bg-ih-surface border border-ih-border p-6"
         >
 
           <Field label="SKU *" hint="Unique stock-keeping unit code (e.g. IH-PP-11KW-30-DS)">
             <input
               required
               name="sku"
-              className="h-9 w-full px-3 border border-ih-border bg-white font-mono text-[13px]"
+              className="h-9 w-full px-3 border border-ih-border bg-ih-surface font-mono text-[13px]"
               placeholder="IH-XXXX-0000"
             />
           </Field>
@@ -69,7 +69,7 @@ export default async function NewProductPage({ params }: Props) {
             <input
               required
               name="title"
-              className="h-9 w-full px-3 border border-ih-border bg-white text-[13px]"
+              className="h-9 w-full px-3 border border-ih-border bg-ih-surface text-[13px]"
               placeholder="Standard Hydraulic Power Pack 11kW 30L/min"
             />
           </Field>
@@ -79,7 +79,7 @@ export default async function NewProductPage({ params }: Props) {
               <select
                 name="brandId"
                 defaultValue=""
-                className="h-9 w-full px-2 border border-ih-border bg-white text-[13px]"
+                className="h-9 w-full px-2 border border-ih-border bg-ih-surface text-[13px]"
               >
                 <option value="">— None —</option>
                 {brands.map((b) => (
@@ -94,7 +94,7 @@ export default async function NewProductPage({ params }: Props) {
               <select
                 name="categoryId"
                 defaultValue=""
-                className="h-9 w-full px-2 border border-ih-border bg-white text-[13px]"
+                className="h-9 w-full px-2 border border-ih-border bg-ih-surface text-[13px]"
               >
                 <option value="">— None —</option>
                 {categories.map((c) => (
@@ -110,7 +110,7 @@ export default async function NewProductPage({ params }: Props) {
             <select
               name="status"
               defaultValue="draft"
-              className="h-9 w-full px-2 border border-ih-border bg-white text-[13px]"
+              className="h-9 w-full px-2 border border-ih-border bg-ih-surface text-[13px]"
             >
               <option value="draft">Draft</option>
               <option value="active">Active</option>

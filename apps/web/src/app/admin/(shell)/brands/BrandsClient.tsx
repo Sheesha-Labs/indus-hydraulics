@@ -31,7 +31,7 @@ export default function BrandsClient({ brands }: Props) {
         <button
           type="button"
           onClick={() => setShowCreate((v) => !v)}
-          className="h-9 px-4 bg-ih-accent text-white text-[13px] font-medium hover:opacity-90"
+          className="h-9 px-4 bg-ih-accent text-ih-accent-fg text-[13px] font-medium hover:bg-ih-accent-hover"
         >
           {showCreate ? '× Cancel' : '+ New brand'}
         </button>
@@ -40,12 +40,12 @@ export default function BrandsClient({ brands }: Props) {
       {showCreate && <BrandForm onDone={() => setShowCreate(false)} />}
 
       {brands.length === 0 ? (
-        <div className="py-16 border border-dashed border-ih-border text-center">
+        <div className="py-16 rounded-lg border border-ih-border text-center">
           <p className="text-ih-muted">No brands yet — create the first one above.</p>
         </div>
       ) : (
-        <div className="bg-white border border-ih-border">
-          <div className="grid grid-cols-[1fr_140px_120px_80px_100px_100px_120px] px-4 py-2.5 bg-ih-bg border-b border-ih-border font-mono text-[10px] tracking-[0.1em] uppercase text-ih-muted">
+        <div className="bg-ih-surface border border-ih-border">
+          <div className="grid grid-cols-[1fr_140px_120px_80px_100px_100px_120px] px-4 py-2.5 bg-ih-bg border-b border-ih-border font-mono text-[10.5px] tracking-[0.1em] uppercase text-ih-muted">
             <div>Name</div>
             <div>Slug</div>
             <div>Country</div>
@@ -80,8 +80,7 @@ export default function BrandsClient({ brands }: Props) {
                     <div className="text-center">
                       {b.isAuthorizedDistributor ? (
                         <span
-                          className="inline-block px-1.5 py-0.5 font-mono text-[10px] font-semibold"
-                          style={{ background: 'oklch(0.95 0.05 240)', color: 'oklch(0.4 0.15 240)' }}
+                          className="inline-block rounded-full bg-ih-steel-soft px-1.5 py-0.5 font-mono text-[11px] font-medium text-ih-info-ink"
                           title="Authorized distributor"
                         >
                           ✓ Auth
@@ -95,9 +94,9 @@ export default function BrandsClient({ brands }: Props) {
                     </div>
                     <div className="flex justify-center">
                       <span
-                        className={`px-2 py-0.5 font-mono text-[10px] font-semibold ${
+                        className={`px-2 py-0.5 font-mono text-[11px] font-medium ${
                           b.isPublished
-                            ? 'text-[oklch(0.4_0.14_145)] bg-[oklch(0.94_0.06_145)]'
+                            ? 'text-ih-success-ink bg-ih-success-soft'
                             : 'text-ih-muted bg-ih-surface-2'
                         }`}
                       >
@@ -108,13 +107,13 @@ export default function BrandsClient({ brands }: Props) {
                       <button
                         type="button"
                         onClick={() => setEditingId(b.id)}
-                        className="font-mono text-[10px] text-ih-muted hover:text-ih-ink"
+                        className="font-mono text-[11px] text-ih-muted hover:text-ih-ink"
                       >
                         Edit
                       </button>
                       <Link
                         href={`/admin/brands/${b.id}/edit`}
-                        className="font-mono text-[10px] text-ih-muted hover:text-ih-ink"
+                        className="font-mono text-[11px] text-ih-muted hover:text-ih-ink"
                         title="Open dedicated SEO editor"
                       >
                         SEO
@@ -161,7 +160,7 @@ function BrandForm({
   return (
     <form
       action={onSubmit}
-      className="bg-white border border-ih-border p-5 grid gap-3"
+      className="bg-ih-surface border border-ih-border p-5 grid gap-3"
     >
       {existing && <input type="hidden" name="id" value={existing.id} />}
 
@@ -172,7 +171,7 @@ function BrandForm({
             name="name"
             defaultValue={existing?.name ?? ''}
             placeholder="Bosch Rexroth"
-            className="h-9 px-3 border border-ih-border bg-white text-[13px]"
+            className="h-9 px-3 border border-ih-border bg-ih-surface text-[13px]"
           />
         </Field>
 
@@ -181,7 +180,7 @@ function BrandForm({
             name="slug"
             defaultValue={existing?.slug ?? ''}
             placeholder="bosch-rexroth"
-            className="h-9 px-3 border border-ih-border bg-white font-mono text-[12px]"
+            className="h-9 px-3 border border-ih-border bg-ih-surface font-mono text-[12px]"
           />
         </Field>
       </div>
@@ -191,7 +190,7 @@ function BrandForm({
           name="country"
           defaultValue={existing?.country ?? ''}
           placeholder="Germany"
-          className="h-9 px-3 border border-ih-border bg-white text-[13px]"
+          className="h-9 px-3 border border-ih-border bg-ih-surface text-[13px]"
         />
       </Field>
 
@@ -200,7 +199,7 @@ function BrandForm({
           name="description"
           defaultValue={existing?.description ?? ''}
           rows={2}
-          className="px-3 py-2 border border-ih-border bg-white text-[13px] resize-y"
+          className="px-3 py-2 border border-ih-border bg-ih-surface text-[13px] resize-y"
         />
       </Field>
 
@@ -209,14 +208,14 @@ function BrandForm({
           <input
             name="seoTitle"
             defaultValue={existing?.seoTitle ?? ''}
-            className="h-9 px-3 border border-ih-border bg-white text-[13px]"
+            className="h-9 px-3 border border-ih-border bg-ih-surface text-[13px]"
           />
         </Field>
         <Field label="SEO description">
           <input
             name="seoDescription"
             defaultValue={existing?.seoDescription ?? ''}
-            className="h-9 px-3 border border-ih-border bg-white text-[13px]"
+            className="h-9 px-3 border border-ih-border bg-ih-surface text-[13px]"
           />
         </Field>
       </div>
@@ -243,7 +242,7 @@ function BrandForm({
         <button
           type="submit"
           disabled={pending}
-          className="h-9 px-4 bg-ih-navy text-white text-[12px] font-medium hover:opacity-90 disabled:opacity-50"
+          className="h-9 px-4 bg-ih-navy text-ih-bg text-[12px] font-medium hover:bg-ih-ink disabled:opacity-50"
         >
           {pending ? 'Saving…' : existing ? 'Save' : 'Create'}
         </button>
@@ -255,7 +254,7 @@ function BrandForm({
           Cancel
         </button>
         {error && (
-          <span className="font-mono text-[11px] text-[oklch(0.5_0.18_25)]" role="alert">
+          <span className="font-mono text-[11px] text-ih-danger-ink" role="alert">
             {error}
           </span>
         )}
@@ -288,11 +287,11 @@ function DeleteBrandButton({
             if (!res.success) setError(res.message)
           })
         }}
-        className="font-mono text-[10px] text-ih-muted hover:text-[oklch(0.5_0.18_25)] disabled:opacity-30 disabled:cursor-not-allowed"
+        className="font-mono text-[11px] text-ih-muted hover:text-ih-danger-ink disabled:opacity-30 disabled:cursor-not-allowed"
       >
         {pending ? '…' : 'Delete'}
       </button>
-      {error && <span className="text-[10px] text-[oklch(0.5_0.18_25)]">{error}</span>}
+      {error && <span className="text-[11px] text-ih-danger-ink">{error}</span>}
     </>
   )
 }
@@ -310,7 +309,7 @@ function Field({
     <label className="flex flex-col gap-1.5">
       <span className="text-[11px] font-medium text-ih-ink-2">{label}</span>
       {children}
-      {hint && <span className="text-[10px] text-ih-muted-2">{hint}</span>}
+      {hint && <span className="text-[11px] text-ih-muted-2">{hint}</span>}
     </label>
   )
 }

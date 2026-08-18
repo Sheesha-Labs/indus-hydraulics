@@ -45,7 +45,7 @@ export default function ActivateForm({
           </svg>
         </div>
 
-        <h2 id="activate-done-title" className="text-[20px] font-semibold text-white">
+        <h2 id="activate-done-title" className="text-[20px] font-medium text-white">
           {purpose === 'invite' ? 'Account ready' : 'Password updated'}
         </h2>
 
@@ -59,7 +59,7 @@ export default function ActivateForm({
 
         <Link
           href={`/admin/sign-in?email=${encodeURIComponent(state.email)}`}
-          className="mt-6 inline-flex h-11 w-full items-center justify-center bg-ih-accent text-sm font-medium text-white transition-opacity hover:opacity-90"
+          className="mt-6 inline-flex h-11 w-full items-center justify-center bg-ih-accent text-sm font-medium text-ih-accent-fg transition-opacity hover:bg-ih-accent-hover"
         >
           Go to sign in →
         </Link>
@@ -116,7 +116,7 @@ export default function ActivateForm({
       <button
         type="submit"
         disabled={pending}
-        className="mt-1 h-11 bg-ih-accent text-sm font-medium text-white transition-opacity hover:opacity-90 disabled:opacity-50"
+        className="mt-1 h-11 bg-ih-accent text-sm font-medium text-ih-accent-fg transition-opacity hover:bg-ih-accent-hover disabled:opacity-50"
       >
         {pending ? 'Saving…' : submitLabel}
       </button>

@@ -34,7 +34,7 @@ export default function SeoSettingsForm({ seoSetting }: Props) {
   }
 
   return (
-    <form action={handleSave} className="max-w-[640px] space-y-5">
+    <form action={handleSave} className="max-w-[640px] flex flex-col gap-5">
       <div>
         <label htmlFor="seosettings-defaultMetaTitleTemplate" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
           Default Title Template
@@ -66,7 +66,7 @@ export default function SeoSettingsForm({ seoSetting }: Props) {
         <button
           type="submit"
           disabled={isPending}
-          className="h-9 px-5 bg-ih-accent text-white font-mono text-[12px] hover:opacity-90 disabled:opacity-50"
+          className="h-9 px-5 bg-ih-accent text-ih-accent-fg font-mono text-[12px] hover:bg-ih-accent-hover disabled:opacity-50"
         >
           {isPending ? 'Saving…' : 'Save Settings'}
         </button>
@@ -74,7 +74,7 @@ export default function SeoSettingsForm({ seoSetting }: Props) {
           <span className="font-mono text-[11px] text-ih-success">Saved ✓</span>
         )}
         {error && (
-          <span className="font-mono text-[11px] text-[oklch(0.5_0.18_25)]" role="alert">
+          <span className="font-mono text-[11px] text-ih-danger-ink" role="alert">
             {error}
           </span>
         )}

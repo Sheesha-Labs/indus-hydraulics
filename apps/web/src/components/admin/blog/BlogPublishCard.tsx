@@ -93,7 +93,7 @@ export default function BlogPublishCard({
       <dl className="flex flex-col gap-2 text-[12.5px]">
         <Row label="Status">
           <span
-            className={`rounded-full px-2 py-0.5 font-mono text-[10px] font-semibold ${STATUS_STYLE[status]}`}
+            className={`rounded-full px-2 py-0.5 font-mono text-[11px] font-medium ${STATUS_STYLE[status]}`}
           >
             {STATUS_LABEL[status]}
           </span>
@@ -123,7 +123,7 @@ export default function BlogPublishCard({
               name="publish"
               value="1"
               disabled={busy}
-              className="flex h-9 items-center justify-center gap-1.5 rounded-md bg-ih-accent text-[13px] font-medium text-white transition-opacity hover:opacity-90 disabled:opacity-50"
+              className="flex h-9 items-center justify-center gap-1.5 rounded-md bg-ih-accent text-[13px] font-medium text-ih-accent-fg transition-opacity hover:bg-ih-accent-hover disabled:opacity-50"
             >
               <CheckCircle2 size={14} strokeWidth={1.8} />
               Save &amp; update live post
@@ -153,7 +153,7 @@ export default function BlogPublishCard({
             name="publish"
             value="1"
             disabled={busy}
-            className="flex h-9 items-center justify-center gap-1.5 rounded-md bg-ih-accent text-[13px] font-medium text-white transition-opacity hover:opacity-90 disabled:opacity-50"
+            className="flex h-9 items-center justify-center gap-1.5 rounded-md bg-ih-accent text-[13px] font-medium text-ih-accent-fg transition-opacity hover:bg-ih-accent-hover disabled:opacity-50"
           >
             <CheckCircle2 size={14} strokeWidth={1.8} />
             Save &amp; publish

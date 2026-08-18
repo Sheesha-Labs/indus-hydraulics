@@ -40,11 +40,11 @@ export default async function SitemapPage() {
         <div className="grid grid-cols-2 gap-3 text-[13px]">
           <div>
             <div className="text-ih-muted">Excluded from sitemap (products)</div>
-            <div className="font-semibold text-[18px]">{excluded}</div>
+            <div className="font-medium text-[18px]">{excluded}</div>
           </div>
           <div>
             <div className="text-ih-muted">Noindexed (products)</div>
-            <div className="font-semibold text-[18px]">{noindexed}</div>
+            <div className="font-medium text-[18px]">{noindexed}</div>
           </div>
         </div>
       </div>
@@ -70,10 +70,10 @@ export default async function SitemapPage() {
 function Tile({ label, value, accent }: { label: string; value: number; accent?: boolean }) {
   return (
     <div className="border border-ih-border bg-ih-surface p-4">
-      <div className="font-mono text-[10px] uppercase tracking-[0.1em] text-ih-muted">
+      <div className="font-mono text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
         {label}
       </div>
-      <div className={`text-[28px] font-semibold mt-1 ${accent ? 'text-ih-accent' : ''}`}>
+      <div className={`text-[28px] font-medium mt-1 ${accent ? 'text-ih-accent' : ''}`}>
         {value}
       </div>
     </div>

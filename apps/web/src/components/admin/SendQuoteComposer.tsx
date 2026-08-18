@@ -96,7 +96,7 @@ export default function SendQuoteComposer(props: Props) {
       <div className="border border-ih-border bg-ih-surface p-5 mb-6">
         <div className="flex items-start justify-between gap-4">
           <div>
-            <h2 className="text-[15px] font-semibold mb-1">
+            <h2 className="text-[15px] font-medium mb-1">
               {props.hasExistingQuote ? 'Send a revised quote' : 'Send quote to customer'}
             </h2>
             <p className="text-[13px] text-ih-muted">
@@ -108,7 +108,7 @@ export default function SendQuoteComposer(props: Props) {
           <button
             type="button"
             onClick={() => setOpen(true)}
-            className="h-9 px-4 bg-ih-accent text-white font-mono text-[12px] hover:opacity-90 whitespace-nowrap"
+            className="h-9 px-4 bg-ih-accent text-ih-accent-fg font-mono text-[12px] hover:bg-ih-accent-hover whitespace-nowrap"
           >
             {props.hasExistingQuote ? 'Compose revision →' : 'Compose quote →'}
           </button>
@@ -120,7 +120,7 @@ export default function SendQuoteComposer(props: Props) {
   if (result?.ok) {
     return (
       <div className="border border-[oklch(0.85_0.13_145)] bg-[oklch(0.97_0.04_145)] p-5 mb-6">
-        <div className="text-[14px] font-semibold text-[oklch(0.35_0.12_145)] mb-1">
+        <div className="text-[14px] font-medium text-[oklch(0.35_0.12_145)] mb-1">
           ✓ Quote {result.code} sent
         </div>
         <p className="text-[13px] text-[oklch(0.4_0.08_145)] mb-3">
@@ -132,7 +132,7 @@ export default function SendQuoteComposer(props: Props) {
             setResult(null)
             setOpen(false)
           }}
-          className="h-8 px-3 border border-[oklch(0.85_0.13_145)] bg-white text-[oklch(0.35_0.12_145)] font-mono text-[11px] hover:bg-[oklch(0.97_0.04_145)]"
+          className="h-8 px-3 border border-[oklch(0.85_0.13_145)] bg-ih-surface text-[oklch(0.35_0.12_145)] font-mono text-[11px] hover:bg-[oklch(0.97_0.04_145)]"
         >
           Done
         </button>
@@ -144,12 +144,12 @@ export default function SendQuoteComposer(props: Props) {
     <form
       ref={formRef}
       action={handleSubmit}
-      className="border border-ih-accent bg-ih-surface p-5 mb-6 space-y-4"
+      className="border border-ih-accent bg-ih-surface p-5 mb-6 flex flex-col gap-4"
     >
       <input type="hidden" name="rfqId" value={props.rfqId} />
 
       <div className="flex items-start justify-between gap-4 pb-3 border-b border-ih-border">
-        <h2 className="text-[15px] font-semibold">
+        <h2 className="text-[15px] font-medium">
           {props.hasExistingQuote ? 'Compose revised quote' : 'Compose quote'}
         </h2>
         <button
@@ -310,8 +310,8 @@ export default function SendQuoteComposer(props: Props) {
               <div className="text-right text-ih-ink-2">{formatAed(shippingNum)}</div>
             </>
           ) : null}
-          <div className="text-ih-ink font-semibold pt-1 border-t border-ih-border mt-1">Total</div>
-          <div className="text-right text-ih-ink font-semibold pt-1 border-t border-ih-border mt-1">
+          <div className="text-ih-ink font-medium pt-1 border-t border-ih-border mt-1">Total</div>
+          <div className="text-right text-ih-ink font-medium pt-1 border-t border-ih-border mt-1">
             {formatAed(previewTotal)}
           </div>
         </div>
@@ -321,7 +321,7 @@ export default function SendQuoteComposer(props: Props) {
         <button
           type="submit"
           disabled={isPending || props.currentSubtotal <= 0}
-          className="h-10 px-5 bg-ih-accent text-white font-mono text-[12px] hover:opacity-90 disabled:opacity-40 disabled:cursor-not-allowed"
+          className="h-10 px-5 bg-ih-accent text-ih-accent-fg font-mono text-[12px] hover:bg-ih-accent-hover disabled:opacity-40 disabled:cursor-not-allowed"
         >
           {isPending ? 'Sending…' : `Send quote → customer`}
         </button>
@@ -338,7 +338,7 @@ export default function SendQuoteComposer(props: Props) {
           {props.currentSubtotal <= 0 ? 'Set engineer unit prices first.' : 'Sends email + PDF, marks RFQ as Quote Sent.'}
         </span>
         {result && !result.ok ? (
-          <span className="font-mono text-[11px] text-[oklch(0.5_0.18_25)] ml-auto" role="alert">
+          <span className="font-mono text-[11px] text-ih-danger-ink ml-auto" role="alert">
             {result.message}
           </span>
         ) : null}

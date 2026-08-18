@@ -68,8 +68,8 @@ const SELECTION_STYLE: Record<ScrapedRowData['selectionStatus'], string> = {
   pending: 'text-ih-muted bg-ih-surface-2',
   selected: 'text-[oklch(0.4_0.14_85)] bg-[oklch(0.94_0.06_85)]',
   skipped: 'text-ih-muted bg-ih-surface-2 line-through',
-  ingested: 'text-[oklch(0.4_0.14_145)] bg-[oklch(0.94_0.06_145)]',
-  ingest_failed: 'text-[oklch(0.4_0.18_25)] bg-[oklch(0.94_0.06_25)]',
+  ingested: 'text-ih-success-ink bg-ih-success-soft',
+  ingest_failed: 'text-ih-danger-ink bg-ih-danger-soft',
 }
 
 export default function ScrapedRowCard({ row, brands, categories, jobReady }: Props) {
@@ -209,13 +209,13 @@ export default function ScrapedRowCard({ row, brands, categories, jobReady }: Pr
       {/* Row header */}
       <header className="px-4 py-3 border-b border-ih-border flex items-center gap-3 flex-wrap">
         <span
-          className={`px-2 py-0.5 text-[10px] font-mono uppercase tracking-wider ${SELECTION_STYLE[row.selectionStatus]}`}
+          className={`px-2 py-0.5 text-[10.5px] font-mono uppercase tracking-wider ${SELECTION_STYLE[row.selectionStatus]}`}
         >
           {SELECTION_LABEL[row.selectionStatus]}
         </span>
         {row.hasSkuClash && row.selectionStatus !== 'ingested' && (
           <span
-            className="px-2 py-0.5 text-[10px] font-mono uppercase tracking-wider text-[oklch(0.4_0.14_85)] bg-[oklch(0.94_0.06_85)]"
+            className="px-2 py-0.5 text-[10.5px] font-mono uppercase tracking-wider text-[oklch(0.4_0.14_85)] bg-[oklch(0.94_0.06_85)]"
             title="A product with this SKU already exists on indushydraulics.com — consider attach-mode or skipping this row."
           >
             Existing SKU
@@ -242,7 +242,7 @@ export default function ScrapedRowCard({ row, brands, categories, jobReady }: Pr
       <div className="grid grid-cols-1 lg:grid-cols-[1fr_1fr] gap-0">
         {/* LEFT: image carousel */}
         <section className="p-4 border-b lg:border-b-0 lg:border-r border-ih-border">
-          <h3 className="font-mono uppercase tracking-wider text-[10px] text-ih-muted mb-2">
+          <h3 className="font-mono uppercase tracking-wider text-[10.5px] text-ih-muted mb-2">
             Candidate images ({kept.length} of {row.candidateImages.length} selected)
           </h3>
           {row.candidateImages.length === 0 ? (
@@ -276,7 +276,7 @@ export default function ScrapedRowCard({ row, brands, categories, jobReady }: Pr
                         ;(e.currentTarget as HTMLImageElement).style.display = 'none'
                       }}
                     />
-                    <span className="absolute bottom-1 left-1 font-mono text-[10px] bg-black/60 text-white px-1">
+                    <span className="absolute bottom-1 left-1 font-mono text-[11px] bg-black/60 text-white px-1">
                       #{img.position + 1}
                     </span>
                   </button>
@@ -289,7 +289,7 @@ export default function ScrapedRowCard({ row, brands, categories, jobReady }: Pr
         {/* RIGHT: mapping form */}
         <section className="p-4 flex flex-col gap-3">
           <div>
-            <h3 className="font-mono uppercase tracking-wider text-[10px] text-ih-muted mb-2">
+            <h3 className="font-mono uppercase tracking-wider text-[10.5px] text-ih-muted mb-2">
               Source signals
             </h3>
             <p className="text-[13px] text-ih-ink font-medium">{row.sourceTitle}</p>
@@ -301,7 +301,7 @@ export default function ScrapedRowCard({ row, brands, categories, jobReady }: Pr
           </div>
 
           <fieldset className="border border-ih-border p-3 flex flex-col gap-2">
-            <legend className="font-mono uppercase tracking-wider text-[10px] text-ih-muted px-1">
+            <legend className="font-mono uppercase tracking-wider text-[10.5px] text-ih-muted px-1">
               Ingest mode
             </legend>
             <label className="flex items-start gap-2 text-[12px] text-ih-ink-2">
@@ -339,7 +339,7 @@ export default function ScrapedRowCard({ row, brands, categories, jobReady }: Pr
           ) : (
             <div className="grid grid-cols-2 gap-3">
               <label className="flex flex-col gap-1">
-                <span className="text-[10px] font-mono uppercase tracking-wider text-ih-muted">
+                <span className="text-[10.5px] font-mono uppercase tracking-wider text-ih-muted">
                   Title
                 </span>
                 <input
@@ -351,7 +351,7 @@ export default function ScrapedRowCard({ row, brands, categories, jobReady }: Pr
                 />
               </label>
               <label className="flex flex-col gap-1">
-                <span className="text-[10px] font-mono uppercase tracking-wider text-ih-muted">
+                <span className="text-[10.5px] font-mono uppercase tracking-wider text-ih-muted">
                   SKU
                 </span>
                 <input
@@ -363,10 +363,10 @@ export default function ScrapedRowCard({ row, brands, categories, jobReady }: Pr
                 />
               </label>
               <label className="flex flex-col gap-1">
-                <span className="text-[10px] font-mono uppercase tracking-wider text-ih-muted flex items-baseline gap-1.5">
+                <span className="text-[10.5px] font-mono uppercase tracking-wider text-ih-muted flex items-baseline gap-1.5">
                   Brand
                   {row.suggestedBrand && brandId === row.suggestedBrand.id && row.mappedBrandId === null && (
-                    <span className="text-[9px] text-ih-accent normal-case">auto-matched</span>
+                    <span className="text-[10.5px] text-ih-accent normal-case">auto-matched</span>
                   )}
                 </span>
                 <select
@@ -384,10 +384,10 @@ export default function ScrapedRowCard({ row, brands, categories, jobReady }: Pr
                 </select>
               </label>
               <label className="flex flex-col gap-1">
-                <span className="text-[10px] font-mono uppercase tracking-wider text-ih-muted flex items-baseline gap-1.5">
+                <span className="text-[10.5px] font-mono uppercase tracking-wider text-ih-muted flex items-baseline gap-1.5">
                   Category
                   {row.suggestedCategory && categoryId === row.suggestedCategory.id && row.mappedCategoryId === null && (
-                    <span className="text-[9px] text-ih-accent normal-case">auto-matched</span>
+                    <span className="text-[10.5px] text-ih-accent normal-case">auto-matched</span>
                   )}
                 </span>
                 <select
@@ -417,7 +417,7 @@ export default function ScrapedRowCard({ row, brands, categories, jobReady }: Pr
           {row.ingestError && (
             <p
               role="alert"
-              className="text-[11px] text-[oklch(0.5_0.18_25)] bg-[oklch(0.97_0.04_25)] border border-[oklch(0.4_0.18_25)] px-2 py-1.5"
+              className="text-[11px] text-ih-danger-ink bg-ih-danger-soft border border-[oklch(0.4_0.18_25)] px-2 py-1.5"
             >
               {row.ingestError}
             </p>
@@ -426,7 +426,7 @@ export default function ScrapedRowCard({ row, brands, categories, jobReady }: Pr
           {error && (
             <p
               role="alert"
-              className="text-[11px] text-[oklch(0.5_0.18_25)] bg-[oklch(0.97_0.04_25)] border border-[oklch(0.4_0.18_25)] px-2 py-1.5"
+              className="text-[11px] text-ih-danger-ink bg-ih-danger-soft border border-[oklch(0.4_0.18_25)] px-2 py-1.5"
             >
               {error}
             </p>
@@ -468,7 +468,7 @@ export default function ScrapedRowCard({ row, brands, categories, jobReady }: Pr
                 type="button"
                 onClick={onIngest}
                 disabled={pending || kept.length === 0}
-                className="h-8 px-3 bg-ih-accent text-white font-mono text-[11px] uppercase tracking-wider ml-auto disabled:opacity-50"
+                className="h-8 px-3 bg-ih-accent text-ih-accent-fg font-mono text-[11px] uppercase tracking-wider ml-auto disabled:opacity-50"
                 title={kept.length === 0 ? 'Toggle at least one image back on' : undefined}
               >
                 {pending ? 'Ingesting…' : row.selectionStatus === 'ingest_failed' ? 'Retry ingest' : 'Ingest now'}

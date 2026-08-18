@@ -90,7 +90,7 @@ export default async function RedirectChainsPage() {
       </div>
 
       {chains.length === 0 ? (
-        <div className="border border-dashed border-ih-border py-16 text-center">
+        <div className="rounded-lg border border-ih-border py-16 text-center">
           <p className="text-ih-muted text-[13px]">
             No chains or cycles. Every redirect hops exactly once.
           </p>
@@ -110,13 +110,13 @@ export default async function RedirectChainsPage() {
                 <tr
                   key={c.fromPath}
                   className={`border-b border-ih-border last:border-0 hover:bg-ih-surface-2 align-top ${
-                    c.isCycle ? 'bg-[oklch(0.97_0.04_25)]/40' : ''
+                    c.isCycle ? 'bg-ih-danger-soft/40' : ''
                   }`}
                 >
                   <td className="px-3 py-3 font-mono text-[12px] text-ih-ink-2">
                     {c.fromPath}
                     {c.isCycle && (
-                      <div className="font-mono text-[10px] text-[oklch(0.5_0.18_25)] uppercase tracking-wider mt-1">
+                      <div className="font-mono text-[10.5px] text-ih-danger-ink uppercase tracking-wider mt-1">
                         cycle
                       </div>
                     )}
@@ -159,13 +159,13 @@ function Tile({
 }) {
   return (
     <div className="border border-ih-border bg-ih-surface p-4">
-      <div className="font-mono text-[10px] uppercase tracking-[0.1em] text-ih-muted">
+      <div className="font-mono text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
         {label}
       </div>
       <div
-        className={`text-[28px] font-semibold mt-1 ${
+        className={`text-[28px] font-medium mt-1 ${
           danger
-            ? 'text-[oklch(0.5_0.18_25)]'
+            ? 'text-ih-danger-ink'
             : accent
               ? 'text-ih-accent'
               : ''
@@ -179,7 +179,7 @@ function Tile({
 
 function Th({ children }: { children: React.ReactNode }) {
   return (
-    <th className="text-left px-3 py-2.5 font-mono text-[10px] uppercase tracking-[0.1em] text-ih-muted">
+    <th className="text-left px-3 py-2.5 font-mono text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
       {children}
     </th>
   )

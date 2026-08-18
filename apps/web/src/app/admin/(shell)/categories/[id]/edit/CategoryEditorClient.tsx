@@ -70,7 +70,7 @@ export default function CategoryEditorClient({ category, recentImages }: Props) 
       actions={
         <>
         {savedAt && (
-          <span className="text-[12px] text-[oklch(0.55_0.12_150)]">Saved at {savedAt}</span>
+          <span className="text-[12px] text-ih-success-ink">Saved at {savedAt}</span>
         )}
         <Link
           href="/admin/categories"
@@ -100,7 +100,7 @@ export default function CategoryEditorClient({ category, recentImages }: Props) 
       </div>
 
       {tab === 'core' && (
-        <div className="max-w-2xl text-[13px] text-ih-muted border border-dashed border-ih-border p-6">
+        <div className="max-w-2xl text-[13px] text-ih-muted rounded-lg border border-ih-border p-6">
           The Core editor for category metadata (name, slug, parent, default spec template,
           published flag) still lives on the <Link href="/admin/categories" className="underline">Categories list</Link>{' '}
           modal. Migration of those fields into this dedicated page is a follow-up.
