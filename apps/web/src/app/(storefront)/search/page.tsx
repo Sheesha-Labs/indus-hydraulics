@@ -325,12 +325,19 @@ export default async function SearchPage({ searchParams }: Props) {
 
       <form method="GET" action="/search" className="mb-4 max-w-[640px]">
         <div className="flex border border-ih-border bg-ih-surface">
+          {/* `min-w-0` is load-bearing. A flex item defaults to
+              `min-width: auto`, and on an input that resolves to its
+              intrinsic width — about 20 characters, per the default `size`.
+              At 320px the row could not shrink past that, and because the
+              button is `shrink-0` the excess was pushed off the right edge
+              rather than absorbed. See cause 3 in
+              tests/e2e/no-horizontal-overflow.spec.ts. */}
           <input
             name="q"
             defaultValue={query}
             autoFocus
             placeholder="Search products, SKUs, MPNs…"
-            className="flex-1 px-4 py-3 bg-transparent text-[14px] text-ih-ink placeholder:text-ih-muted-2 focus:outline-none"
+            className="min-w-0 flex-1 px-4 py-3 bg-transparent text-[14px] text-ih-ink placeholder:text-ih-muted-2 focus:outline-none"
           />
           <button
             type="submit"
