@@ -10,8 +10,17 @@
  *      candidate images, upserts a `ScrapedProduct` row.
  *   4. Marks the job `completed` (or `failed` on irrecoverable errors).
  *
- * Cancellation: at every step boundary we re-read `ScraperJob.status` and
- * throw `NonRetriableError('cancelled')` if the operator hit cancel.
+ * Cancellation: the crawl consults `ScraperJob.status` between URLs via the
+ * `shouldStop` hook and abandons the rest of the run when the operator hits
+ * cancel. Step boundaries re-check as well and throw `NonRetriableError`.
+ * (Previously the only check ran *after* the crawl step had completed, so
+ * cancelling a 500-URL job still fetched all 500 pages and merely discarded
+ * the results.)
+ *
+ * Failure: `onFailure` stamps `status='failed'` when Inngest gives up after
+ * the configured retries — without it a timed-out or repeatedly-failing job
+ * sat at `running` forever, because the only other write of 'failed' is the
+ * robots-disallow branch below.
  *
  * Concurrency: `{ limit: 1, key: 'event.data.host' }` ensures we never run
  * two crawls against the same competitor at the same time — global
@@ -34,6 +43,15 @@ import type { ScrapedProductDraft } from '../lib/scraper/types'
 /** Cap on total URLs we'll parse in one job — sanity bound. */
 const MAX_URLS_PER_JOB = 500
 
+/** How many URLs between cancellation checks during a crawl. */
+const CANCEL_CHECK_EVERY = 10
+
+/** ScraperJob.errorMessage is a plain column; keep stack traces out of it. */
+function truncate(message: string, max = 500): string {
+  const first = message.split('\n')[0] ?? message
+  return first.length > max ? `${first.slice(0, max - 1)}…` : first
+}
+
 type ScraperJobEventData = {
   jobId: string
   host: string
@@ -44,6 +62,24 @@ export const scraperJobRun = inngest.createFunction(
     id: 'scraper.job.run',
     concurrency: { limit: 1, key: 'event.data.host' },
     retries: 2,
+    /**
+     * Inngest calls this once, after the final retry has failed. Without it the
+     * job row keeps whatever status it had — in practice `running` — and the
+     * admin list shows a crawl that never ends. A cancelled job is left alone:
+     * `cancelled` is already terminal and is the more informative status.
+     */
+    onFailure: async ({ event, error }) => {
+      const { jobId } = (event.data?.event?.data ?? {}) as Partial<ScraperJobEventData>
+      if (!jobId) return
+      await db.scraperJob.updateMany({
+        where: { id: jobId, status: { in: ['queued', 'running'] } },
+        data: {
+          status: 'failed',
+          finishedAt: new Date(),
+          errorMessage: truncate(error?.message ?? 'Job failed with no error message'),
+        },
+      })
+    },
   },
   { event: 'scraper/job.requested' },
   async ({ event, step, logger }) => {
@@ -76,9 +112,27 @@ export const scraperJobRun = inngest.createFunction(
     let result: CrawlResult
     try {
       // 2. Discover (sitemap mode) OR use the pasted list directly.
+      // Re-read the job status periodically so "Cancel crawl" actually stops
+      // the fetching. Throttled to every CANCEL_CHECK_EVERY URLs: at 2 req/s a
+      // per-URL query would add a round trip to every fetch for no benefit.
+      let lastCancelCheck = 0
+      let cancelSeen = false
       const crawlOpts: CrawlOptions = {
         maxUrls: MAX_URLS_PER_JOB,
         skipImageProbes: false,
+        shouldStop: async ({ parsed }) => {
+          if (cancelSeen) return true
+          if (parsed - lastCancelCheck < CANCEL_CHECK_EVERY) return false
+          lastCancelCheck = parsed
+          const fresh = await db.scraperJob.findUnique({
+            where: { id: jobId },
+            select: { status: true },
+          })
+          // Anything that is no longer 'running' ends the crawl — cancelled by
+          // the operator, or failed//completed by a concurrent run.
+          cancelSeen = fresh?.status !== 'running'
+          return cancelSeen
+        },
       }
       if (explicitUrls.length > 0) {
         result = await step.run('crawl-url-list', () =>
@@ -112,7 +166,11 @@ export const scraperJobRun = inngest.createFunction(
       return fresh?.status === 'cancelled'
     })
     if (cancelled) {
-      logger.info('Scraper job cancelled mid-crawl; skipping persist')
+      logger.info('Scraper job cancelled mid-crawl; skipping persist', {
+        jobId,
+        parsed: result.products.length,
+        stoppedEarly: result.stopped,
+      })
       throw new NonRetriableError('cancelled')
     }
 
@@ -135,10 +193,17 @@ export const scraperJobRun = inngest.createFunction(
           status: 'completed',
           finishedAt: new Date(),
           totalFound: result.products.length,
+          // A crawl that stopped early is not a clean completion — say so,
+          // otherwise a half-crawled competitor looks fully catalogued.
           errorMessage:
-            result.errors.length > 0
-              ? `Completed with ${result.errors.length} per-URL errors`
-              : null,
+            [
+              result.stopped
+                ? `Stopped early after ${result.products.length} of ${result.discoveredUrls.length} URLs`
+                : null,
+              result.errors.length > 0 ? `${result.errors.length} per-URL errors` : null,
+            ]
+              .filter(Boolean)
+              .join('; ') || null,
         },
       }),
     )

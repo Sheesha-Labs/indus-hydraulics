@@ -35,6 +35,16 @@ export type CrawlOptions = {
   maxUrls?: number
   /** Called after each product is parsed. */
   onProgress?: (event: { parsed: number; total: number; lastUrl: string }) => void
+  /**
+   * Consulted between URLs; returning true abandons the rest of the crawl and
+   * returns what has been gathered so far.
+   *
+   * This is what makes "Cancel crawl" real. The caller used to check the job
+   * status only after the crawl step had finished, so cancelling a 500-URL job
+   * still fetched all 500 pages from the competitor and merely discarded the
+   * results.
+   */
+  shouldStop?: (progress: { parsed: number; total: number }) => boolean | Promise<boolean>
 }
 
 export type CrawlResult = {
@@ -43,6 +53,8 @@ export type CrawlResult = {
   discoveredUrls: string[]
   products: ScrapedProductDraft[]
   errors: Array<{ url: string; message: string }>
+  /** True when `shouldStop` ended the crawl before every URL was visited. */
+  stopped: boolean
 }
 
 const DEFAULT_MAX_URLS = 500
@@ -63,8 +75,8 @@ export async function discoverAndCrawl(startUrl: string, opts: CrawlOptions = {}
   // an empty crawl.
   const urls = discoveredUrls.length > 0 ? discoveredUrls : [startUrl]
   const limited = urls.slice(0, opts.maxUrls ?? DEFAULT_MAX_URLS)
-  const { products, errors } = await crawlInternal(ctx, adapter, limited, opts)
-  return { hostname, startUrl, discoveredUrls: limited, products, errors }
+  const { products, errors, stopped } = await crawlInternal(ctx, adapter, limited, opts)
+  return { hostname, startUrl, discoveredUrls: limited, products, errors, stopped }
 }
 
 export async function crawlUrlList(
@@ -80,8 +92,8 @@ export async function crawlUrlList(
   })
   const adapter = getAdapterForHost(hostname, ctx)
   const limited = urls.slice(0, opts.maxUrls ?? DEFAULT_MAX_URLS)
-  const { products, errors } = await crawlInternal(ctx, adapter, limited, opts)
-  return { hostname, startUrl, discoveredUrls: limited, products, errors }
+  const { products, errors, stopped } = await crawlInternal(ctx, adapter, limited, opts)
+  return { hostname, startUrl, discoveredUrls: limited, products, errors, stopped }
 }
 
 async function crawlInternal(
@@ -89,11 +101,20 @@ async function crawlInternal(
   adapter: Adapter,
   urls: string[],
   opts: CrawlOptions,
-): Promise<{ products: ScrapedProductDraft[]; errors: Array<{ url: string; message: string }> }> {
+): Promise<{
+  products: ScrapedProductDraft[]
+  errors: Array<{ url: string; message: string }>
+  stopped: boolean
+}> {
   const products: ScrapedProductDraft[] = []
   const errors: Array<{ url: string; message: string }> = []
+  let stopped = false
 
   for (let i = 0; i < urls.length; i++) {
+    if (opts.shouldStop && (await opts.shouldStop({ parsed: i, total: urls.length }))) {
+      stopped = true
+      break
+    }
     const url = urls[i]!
     try {
       const fetched = await ctx.fetchHtml(url)
@@ -126,7 +147,7 @@ async function crawlInternal(
     }
   }
 
-  return { products, errors }
+  return { products, errors, stopped }
 }
 
 function hostnameOf(url: string): string {
