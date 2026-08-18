@@ -9,6 +9,7 @@ import {
   buildOrgLd,
   buildWebsiteLd,
   mergeJsonLd,
+  buildServiceLd,
 } from './jsonld'
 
 describe('buildProductLd', () => {
@@ -286,5 +287,45 @@ describe('mergeJsonLd', () => {
     expect(mergeJsonLd({ a: 1 } as Record<string, unknown>, undefined)).toEqual({ a: 1 })
     expect(mergeJsonLd({ a: 1 } as Record<string, unknown>, null)).toEqual({ a: 1 })
     expect(mergeJsonLd({ a: 1 } as Record<string, unknown>, [1, 2])).toEqual({ a: 1 })
+  })
+})
+
+describe('buildServiceLd', () => {
+  const base = {
+    name: 'Hydraulic hose service in Sharjah',
+    url: 'https://example.com/locations/sharjah',
+    areaServed: ['Sharjah'],
+    providerId: 'https://example.com#organization',
+    providerName: 'Indus Hydraulics',
+  }
+
+  it('emits Service, never LocalBusiness', () => {
+    // Load-bearing: a coverage area is not premises. LocalBusiness for an
+    // address that does not exist risks a false-business-presence penalty.
+    const ld = buildServiceLd(base) as Record<string, unknown>
+    expect(ld['@type']).toBe('Service')
+    expect(JSON.stringify(ld)).not.toContain('LocalBusiness')
+  })
+
+  it('hangs the service off the real Organization node', () => {
+    const ld = buildServiceLd(base) as Record<string, unknown>
+    expect(ld.provider).toMatchObject({
+      '@type': 'Organization',
+      '@id': 'https://example.com#organization',
+    })
+  })
+
+  it('maps areaServed to AdministrativeArea entries', () => {
+    const ld = buildServiceLd({ ...base, areaServed: ['Dubai', 'Fujairah'] }) as Record<string, unknown>
+    expect(ld.areaServed).toEqual([
+      { '@type': 'AdministrativeArea', name: 'Dubai' },
+      { '@type': 'AdministrativeArea', name: 'Fujairah' },
+    ])
+  })
+
+  it('omits optional fields rather than emitting nulls', () => {
+    const ld = buildServiceLd(base) as Record<string, unknown>
+    expect(ld).not.toHaveProperty('description')
+    expect(ld).not.toHaveProperty('serviceType')
   })
 })

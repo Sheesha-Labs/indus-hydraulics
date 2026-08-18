@@ -320,6 +320,50 @@ export function buildArticleLd(input: ArticleLdInput): JsonLd {
   return mergeJsonLd(base, input.override)
 }
 
+export type ServiceLdInput = {
+  name: string
+  description?: string | null
+  url: string
+  /** Plain place names — "Dubai", "Sharjah". Emitted as AdministrativeArea. */
+  areaServed: string[]
+  /** @id of the providing Organization, so the Service hangs off the real entity. */
+  providerId: string
+  providerName: string
+  /** e.g. "Hydraulic hose assembly and repair". */
+  serviceType?: string | null
+  override?: unknown
+}
+
+/**
+ * Service with areaServed.
+ *
+ * Deliberately NOT LocalBusiness. A coverage area is somewhere we send people,
+ * not somewhere we have premises, and emitting LocalBusiness for an address
+ * that does not exist risks the site being penalised for false business
+ * presence — see the warning in apps/web/src/lib/site-locations.ts. The
+ * provider reference points at the one real Organization node instead.
+ */
+export function buildServiceLd(input: ServiceLdInput): JsonLd {
+  const base: JsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    name: input.name,
+    url: input.url,
+    ...(input.description ? { description: input.description } : {}),
+    ...(input.serviceType ? { serviceType: input.serviceType } : {}),
+    provider: {
+      '@type': 'Organization',
+      '@id': input.providerId,
+      name: input.providerName,
+    },
+    areaServed: input.areaServed.map((name) => ({
+      '@type': 'AdministrativeArea',
+      name,
+    })),
+  }
+  return mergeJsonLd(base, input.override)
+}
+
 export function buildOrgLd(input: OrgLdInput): JsonLd {
   const base: JsonLd = {
     '@context': 'https://schema.org',
