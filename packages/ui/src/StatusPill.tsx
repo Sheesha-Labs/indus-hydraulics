@@ -1,4 +1,5 @@
 import * as React from 'react'
+import { Badge, type BadgeProps } from './Badge'
 import { cn } from './lib/utils'
 
 /**
@@ -20,31 +21,45 @@ export type StatusTone =
   /** Accent — uses the brand orange; reserve for "current" / pending CTA. */
   | 'accent'
 
-const TONE_CLASSES: Record<StatusTone, string> = {
-  good: 'text-[oklch(0.4_0.14_145)] bg-[oklch(0.94_0.06_145)]',
-  warn: 'text-[oklch(0.5_0.14_70)] bg-[oklch(0.96_0.05_70)]',
-  danger: 'text-[oklch(0.5_0.18_25)] bg-[oklch(0.97_0.04_25)]',
-  info: 'text-[oklch(0.4_0.1_240)] bg-[oklch(0.95_0.03_240)]',
-  muted: 'text-ih-muted bg-ih-surface-2',
-  accent: 'text-white bg-ih-accent',
-}
+/*
+  Tone → the Badge kind that already draws it.
 
-const SIZE_CLASSES = {
-  sm: 'px-1.5 py-0 text-[9px]',
-  md: 'px-2 py-0.5 text-[10px]',
-  lg: 'px-2.5 py-1 text-[11px]',
-} as const
+  StatusPill and Badge were two components doing one job in two geometries:
+  Badge at the contract's 22px/11px pill, StatusPill at 9/10/11px with mono,
+  semibold and capitalize bolted on. Badge was the correct one, so this is now
+  a thin semantic wrapper over it — callers keep saying "this is a good status"
+  rather than "this is a green pill", and there is one set of metrics.
+
+  The raw oklch() literals that used to live here are gone: the -ink tokens
+  added in Unit 1 are what a label on a -soft tint should use.
+*/
+const TONE_KIND: Record<StatusTone, BadgeProps['kind']> = {
+  good: 'success',
+  warn: 'warn',
+  danger: 'danger',
+  info: 'steel',
+  muted: 'default',
+  accent: 'accent',
+}
 
 export interface StatusPillProps {
   tone?: StatusTone
-  size?: keyof typeof SIZE_CLASSES
+  /**
+   * `sm` is 20px/10.5px and exists for a rail's `<dl>` rows, where a 22px pill
+   * sits taller than the line it labels. Everywhere else takes the default.
+   */
+  size?: 'default' | 'sm'
   className?: string
   children: React.ReactNode
 }
 
 /**
- * Small status badge. Use for product/category/RFQ/account status indicators
- * where a single semantic tone applies.
+ * A status, said semantically.
+ *
+ * Callers name the MEANING — good / warn / danger — and this maps it to the
+ * one pill geometry in `Badge`. Thirty-odd admin sites drew their own version
+ * of this with their own oklch() literals, four distinct greens among them for
+ * a single meaning.
  *
  * @example
  *   <StatusPill tone="good">Active</StatusPill>
@@ -52,21 +67,17 @@ export interface StatusPillProps {
  */
 export function StatusPill({
   tone = 'muted',
-  size = 'md',
+  size = 'default',
   className,
   children,
 }: StatusPillProps) {
   return (
-    <span
-      className={cn(
-        'inline-flex items-center font-mono font-semibold capitalize tracking-tight',
-        TONE_CLASSES[tone],
-        SIZE_CLASSES[size],
-        className
-      )}
+    <Badge
+      kind={TONE_KIND[tone]}
+      className={cn(size === 'sm' && 'h-[20px] px-1.5 text-[10.5px]', className)}
     >
       {children}
-    </span>
+    </Badge>
   )
 }
 
