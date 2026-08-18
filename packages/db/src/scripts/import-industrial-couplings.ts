@@ -111,6 +111,8 @@ type NavGroup = {
   parentLabel: string
   /** The existing sibling it is placed after. */
   afterLabel: string
+  /** Header link, matching the `?sub=` convention of its siblings. */
+  url: string
 }
 
 type Payload = {
@@ -334,7 +336,12 @@ async function main() {
           parentId: section.id,
           position: at,
           label: g.label,
-          linkType: 'none',
+          // Every sibling container in this section links to the parent
+          // category with a `?sub=` marker. The param is decorative — the
+          // category page ignores it — but matching them means the column
+          // header goes somewhere instead of rendering as a dead `#`.
+          linkType: 'custom_url',
+          customUrl: g.url,
         },
         select: { id: true, menuId: true },
       })
