@@ -35,7 +35,7 @@ export default async function BulkImportPage({ params }: Props) {
         {recentJobs.length > 0 && (
           <div className="mt-10 max-w-5xl">
             <h2 className="text-[14px] font-medium mb-3">Recent imports</h2>
-            <div className="bg-ih-surface border border-ih-border">
+            <div className="rounded-lg border border-ih-border bg-ih-surface">
               <div className="grid grid-cols-[1fr_120px_120px_140px_120px] gap-3 px-4 py-2.5 text-[11px] font-mono uppercase tracking-[0.04em] text-ih-muted border-b border-ih-border">
                 <div>Code</div>
                 <div>Status</div>

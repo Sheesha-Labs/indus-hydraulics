@@ -1,6 +1,7 @@
 'use client'
 
 import { useActionState, useState, useTransition } from 'react'
+import { controlClassName, controlHeightClassName } from '@indus/ui'
 import {
   inviteStaffUser,
   resendStaffInvite,
@@ -18,8 +19,7 @@ const ROLE_OPTIONS = [
   { value: 'finance', label: 'Finance' },
 ]
 
-const inputCls =
-  'h-9 w-full border border-ih-border bg-ih-surface px-2.5 text-[13px] text-ih-ink focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ih-accent'
+const inputCls = `${controlClassName} ${controlHeightClassName}`
 
 export type PendingInvite = {
   id: string

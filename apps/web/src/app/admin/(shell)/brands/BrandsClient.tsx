@@ -164,7 +164,7 @@ function BrandForm({
   return (
     <form
       action={onSubmit}
-      className="bg-ih-surface border border-ih-border p-5 grid gap-3"
+      className="rounded-lg border border-ih-border bg-ih-surface p-5 grid gap-3"
     >
       {existing && <input type="hidden" name="id" value={existing.id} />}
 

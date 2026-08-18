@@ -88,7 +88,7 @@ export default function ImportClient() {
 
   return (
     <div className="flex flex-col gap-6 max-w-5xl">
-      <div className="bg-ih-surface border border-ih-border p-6">
+      <div className="rounded-lg border border-ih-border bg-ih-surface p-6">
         <Stepper steps={STEPS} currentStep={stepNumber} />
       </div>
 
@@ -124,7 +124,7 @@ function UploadStep({
       ref={formRef}
       action={onSubmit}
       encType="multipart/form-data"
-      className="bg-ih-surface border border-ih-border p-8"
+      className="rounded-lg border border-ih-border bg-ih-surface p-8"
     >
       <h2 className="text-[15px] font-medium mb-2">Step 1 — Upload your file</h2>
       <p className="text-[13px] text-ih-muted mb-2">
@@ -155,7 +155,7 @@ function UploadStep({
         <button
           type="button"
           onClick={onTemplate}
-          className="h-9 px-4 border border-ih-border bg-ih-surface text-[12px] font-medium hover:bg-ih-surface-2"
+          className="h-9 px-4 rounded-lg border border-ih-border bg-ih-surface text-[12px] font-medium hover:bg-ih-surface-2"
         >
           ↓ Download template CSV
         </button>
@@ -207,7 +207,7 @@ function PreviewStep({
 }) {
   const canCommit = phase.rowsToCreate + phase.rowsToUpdate > 0
   return (
-    <div className="bg-ih-surface border border-ih-border p-8">
+    <div className="rounded-lg border border-ih-border bg-ih-surface p-8">
       <h2 className="text-[15px] font-medium mb-4">Step 2 — Review preview</h2>
 
       <div className="grid grid-cols-4 gap-3 mb-6">
@@ -265,7 +265,7 @@ function PreviewStep({
           type="button"
           onClick={onCancel}
           disabled={pending}
-          className="h-10 px-5 border border-ih-border bg-ih-surface text-[13px] font-medium hover:bg-ih-surface-2 disabled:opacity-50"
+          className="h-10 px-5 rounded-lg border border-ih-border bg-ih-surface text-[13px] font-medium hover:bg-ih-surface-2 disabled:opacity-50"
         >
           Cancel & start over
         </button>
@@ -283,7 +283,7 @@ function PreviewStep({
 
 function CommittingStep() {
   return (
-    <div className="bg-ih-surface border border-ih-border p-12 text-center">
+    <div className="rounded-lg border border-ih-border bg-ih-surface p-12 text-center">
       <h2 className="text-[15px] font-medium mb-2">Committing…</h2>
       <p className="text-[13px] text-ih-muted">
         Creating and updating products in batches of 50. This may take a minute for large files — please don&apos;t close the tab.
@@ -302,7 +302,7 @@ function DoneStep({
   onAnother: () => void
 }) {
   return (
-    <div className="bg-ih-surface border border-ih-border p-8">
+    <div className="rounded-lg border border-ih-border bg-ih-surface p-8">
       <h2 className="text-[15px] font-medium mb-4">Done.</h2>
       <div className="grid grid-cols-3 gap-3 mb-6 max-w-lg">
         <Stat label="Created" value={phase.created} tone="ok" />
@@ -319,7 +319,7 @@ function DoneStep({
         <button
           type="button"
           onClick={onAnother}
-          className="h-10 px-5 border border-ih-border bg-ih-surface text-[13px] font-medium hover:bg-ih-surface-2"
+          className="h-10 px-5 rounded-lg border border-ih-border bg-ih-surface text-[13px] font-medium hover:bg-ih-surface-2"
         >
           Import another file
         </button>

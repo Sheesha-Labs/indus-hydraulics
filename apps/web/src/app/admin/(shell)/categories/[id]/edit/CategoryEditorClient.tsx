@@ -74,7 +74,7 @@ export default function CategoryEditorClient({ category, recentImages }: Props) 
         )}
         <Link
           href="/admin/categories"
-          className="h-9 px-3 grid place-items-center font-mono text-[12px] border border-ih-border hover:bg-ih-surface-2"
+          className="flex h-8 items-center rounded-lg border border-ih-border-strong px-2.5 text-[14px] font-medium text-ih-ink transition-colors hover:bg-ih-surface-2"
         >
           ← All categories
         </Link>

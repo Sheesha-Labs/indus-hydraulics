@@ -131,7 +131,7 @@ function CreateTemplateForm({ onDone }: { onDone: () => void }) {
   }
 
   return (
-    <form action={onSubmit} className="bg-ih-surface border border-ih-border p-5 grid gap-3">
+    <form action={onSubmit} className="rounded-lg border border-ih-border bg-ih-surface p-5 grid gap-3">
       <div className="grid grid-cols-2 gap-3">
         <Field label="Name *">
           <Input

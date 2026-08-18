@@ -59,7 +59,7 @@ export default function CategoriesClient({ categories, templates }: Props) {
           <button
             type="button"
             onClick={() => setShowCreate(true)}
-            className="h-9 px-4 bg-ih-accent text-ih-accent-fg text-[13px] font-medium hover:bg-ih-accent-hover"
+            className="flex h-8 items-center rounded-lg bg-ih-accent px-2.5 text-[14px] font-medium text-ih-accent-fg transition-colors hover:bg-ih-accent-hover"
           >
             + New category
           </button>
@@ -275,7 +275,7 @@ function CategoryForm({
   return (
     <form
       action={onSubmit}
-      className="bg-ih-surface border border-ih-border p-5 flex flex-col gap-4"
+      className="rounded-lg border border-ih-border bg-ih-surface p-5 flex flex-col gap-4"
     >
       {existing && <input type="hidden" name="id" value={existing.id} />}
 
@@ -287,7 +287,7 @@ function CategoryForm({
             name="name"
             defaultValue={existing?.name ?? ''}
             placeholder="Hydraulic Pumps"
-            className="h-9 px-3 border border-ih-border bg-ih-surface text-[13px] w-full"
+            className="h-9 px-3 rounded-lg border border-ih-border bg-ih-surface text-[13px] w-full"
           />
         </Field>
 
@@ -296,7 +296,7 @@ function CategoryForm({
             name="slug"
             defaultValue={existing?.slug ?? ''}
             placeholder="hydraulic-pumps"
-            className="h-9 px-3 border border-ih-border bg-ih-surface font-mono text-[12px] w-full"
+            className="h-9 px-3 rounded-lg border border-ih-border bg-ih-surface font-mono text-[12px] w-full"
           />
         </Field>
 
@@ -305,7 +305,7 @@ function CategoryForm({
             name="position"
             type="number"
             defaultValue={existing?.position ?? 0}
-            className="h-9 px-3 border border-ih-border bg-ih-surface font-mono text-[12px] w-full"
+            className="h-9 px-3 rounded-lg border border-ih-border bg-ih-surface font-mono text-[12px] w-full"
           />
         </Field>
 
@@ -313,7 +313,7 @@ function CategoryForm({
           <select
             name="parentId"
             defaultValue={existing?.parentId ?? ''}
-            className="h-9 px-2 border border-ih-border bg-ih-surface text-[12px] w-full"
+            className="h-9 px-2 rounded-lg border border-ih-border bg-ih-surface text-[12px] w-full"
           >
             <option value="">— None —</option>
             {parents
@@ -333,7 +333,7 @@ function CategoryForm({
           <select
             name="defaultSpecTemplateId"
             defaultValue={existing?.defaultSpecTemplateId ?? ''}
-            className="h-9 px-2 border border-ih-border bg-ih-surface text-[12px] w-full"
+            className="h-9 px-2 rounded-lg border border-ih-border bg-ih-surface text-[12px] w-full"
           >
             <option value="">— None —</option>
             {templates.map((t) => (

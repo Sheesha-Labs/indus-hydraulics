@@ -75,23 +75,21 @@ export default function BrandEditorClient({ contentEditor, brand, recentImages }
         )}
         <Link
           href="/admin/brands"
-          className="h-9 px-3 grid place-items-center font-mono text-[12px] border border-ih-border hover:bg-ih-surface-2"
+          className="flex h-8 items-center rounded-lg border border-ih-border-strong px-2.5 text-[14px] font-medium text-ih-ink transition-colors hover:bg-ih-surface-2"
         >
-      {contentEditor}
-
           ← All brands
         </Link>
         </>
       }
     >
 
-      <div className="flex border-b border-ih-border mt-6 mb-6">
+      <div className="mb-6 flex border-b border-ih-border">
         {TABS.map((t) => (
           <button
             key={t.id}
             type="button"
             onClick={() => setTab(t.id)}
-            className={`px-4 py-2.5 font-mono text-[12px] border-b-2 -mb-px ${
+            className={`-mb-px border-b-2 px-3 py-2.5 text-[14px] font-medium ${
               tab === t.id
                 ? 'border-ih-accent text-ih-ink'
                 : 'border-transparent text-ih-muted hover:text-ih-ink-2'
@@ -102,16 +100,15 @@ export default function BrandEditorClient({ contentEditor, brand, recentImages }
         ))}
       </div>
 
-      {tab === 'core' && (
-        <div className="max-w-2xl text-[13px] text-ih-muted rounded-lg border border-ih-border p-6">
-          The Core editor for brand metadata (name, slug, country, description, distributor
-          status, logo, hero) still lives on the{' '}
-          <Link href="/admin/brands" className="underline">
-            Brands list
-          </Link>{' '}
-          modal. Migration of those fields into this dedicated page is a follow-up.
-        </div>
-      )}
+      {/*
+        `contentEditor` used to be rendered INSIDE the back-link anchor in the
+        topbar — roughly 450 lines of forms, two <section> cards and every one
+        of their controls, nested in an <a>. That is invalid HTML, it put every
+        field inside a link's activation region, and it was a rendering
+        accident rather than a decision. It belongs here, under the tab whose
+        job it is.
+      */}
+      {tab === 'core' && contentEditor}
 
       {tab === 'seo' && (
         <SeoEntityDrawer
