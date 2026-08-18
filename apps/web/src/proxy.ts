@@ -8,6 +8,7 @@ import {
 import { getToken } from 'next-auth/jwt'
 import { NextRequest, NextResponse } from 'next/server'
 import { isStaffRole } from './lib/rbac'
+import { findRedirect, recordRedirectHit } from './lib/redirects'
 
 /**
  * One middleware, two surfaces.
@@ -124,6 +125,37 @@ function applySecurityHeaders(
   return response
 }
 
+/**
+ * Paths that can never be a redirect target, skipped before the lookup.
+ * Everything under /admin is already handled above.
+ */
+const REDIRECT_SKIP = /^\/(api|_next|design)(\/|$)|\.[a-z0-9]+$/i
+
+/**
+ * Serve a staff-created redirect, if the requested path has one.
+ *
+ * See lib/redirects.ts: the table was CRUD-managed but never read, so every
+ * redirect created in the SEO console did nothing. The lookup is an in-memory
+ * Map refreshed at most once a minute, so this costs no query per request.
+ */
+async function serveStoredRedirect(request: NextRequest): Promise<NextResponse | null> {
+  const { pathname, search } = request.nextUrl
+  if (REDIRECT_SKIP.test(pathname)) return null
+
+  const hit = await findRedirect(pathname).catch(() => null)
+  if (!hit) return null
+
+  recordRedirectHit(hit.id) // fire-and-forget
+
+  const url = new URL(hit.toPath, request.url)
+  // Carry the query string across, so campaign tags survive the hop.
+  if (search && !hit.toPath.includes('?')) url.search = search
+  // 301/308 are permanent; anything else stays temporary, so a staff mistake
+  // is not cached in visitors' browsers forever.
+  const permanent = hit.statusCode === 301 || hit.statusCode === 308
+  return NextResponse.redirect(url, permanent ? 308 : 307)
+}
+
 function redirectToSignIn(request: NextRequest, signInPath: string): NextResponse {
   const { pathname, search } = request.nextUrl
   const url = new URL(signInPath, request.url)
@@ -190,6 +222,10 @@ export default async function proxy(request: NextRequest) {
 
     if (!isCustomer) return done(redirectToSignIn(request, '/sign-in'))
   }
+
+  // Last, so a live route always wins over a stale redirect row pointing at it.
+  const stored = await serveStoredRedirect(request)
+  if (stored) return done(stored)
 
   return done(NextResponse.next())
 }
