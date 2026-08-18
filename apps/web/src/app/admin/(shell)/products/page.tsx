@@ -4,6 +4,8 @@ import AdminPageShell from '../../../../components/admin/AdminPageShell'
 import { db, Prisma } from '@indus/db'
 import { Pagination } from '@indus/ui'
 import ContentScoreBadge from '../../../../components/admin/ContentScoreBadge'
+import { DataTable, NavTabs, StatusPill, productStatusTone } from '@indus/ui'
+import { relativeTime } from '@indus/domain'
 import { ADMIN_PREFIX } from '../../../../lib/admin-paths'
 
 export const metadata: Metadata = { title: 'Products — Indus Admin' }
@@ -20,12 +22,6 @@ type Props = {
     dir?: string
     page?: string
   }>
-}
-
-const STATUS_COLORS: Record<string, string> = {
-  active: 'text-ih-success-ink bg-ih-success-soft',
-  draft: 'text-ih-muted bg-ih-surface-2',
-  discontinued: 'text-ih-danger-ink bg-ih-danger-soft',
 }
 
 const PAGE_SIZE = 50
@@ -129,6 +125,14 @@ export default async function AdminProductsPage({ params, searchParams }: Props)
 
   const sortIndicator = (col: keyof typeof SORTABLE) => (sortKey === col ? (sortDir === 'asc' ? ' ↑' : ' ↓') : '')
 
+  // Defined here rather than hoisted out: it closes over the current sort.
+  const sortHeader = (col: keyof typeof SORTABLE, label: string) => (
+    <Link href={sortUrl(col)} className="hover:text-ih-ink">
+      {label}
+      {sortIndicator(col)}
+    </Link>
+  )
+
   return (
     <AdminPageShell
       title="Products"
@@ -141,36 +145,39 @@ export default async function AdminProductsPage({ params, searchParams }: Props)
         <>
           <Link
             href={`/admin/products/import`}
-            className="flex h-9 items-center rounded-md border border-ih-border bg-ih-surface px-4 text-[13px] font-medium transition-colors hover:border-ih-accent hover:text-ih-accent"
+            className="flex h-8 items-center rounded-lg border border-ih-border-strong bg-ih-surface px-2.5 text-[14px] font-medium text-ih-ink transition-colors hover:bg-ih-surface-2"
           >
             ↑ Bulk import
           </Link>
           <Link
             href={`/admin/products/new`}
-            className="flex h-9 items-center rounded-md bg-ih-accent px-4 text-[13px] font-medium text-ih-accent-fg transition-opacity hover:bg-ih-accent-hover"
+            className="flex h-8 items-center rounded-lg bg-ih-accent px-2.5 text-[14px] font-medium text-ih-accent-fg transition-colors hover:bg-ih-accent-hover"
           >
             + Add product
           </Link>
         </>
       }
     >
-
+      {/* One stack owns the page's vertical rhythm. This was four sections
+          each carrying its own mb-3 / mb-6, which is why no two admin lists
+          had the same spacing. */}
+      <div className="flex flex-col gap-6">
         {/* Search + filter form (single submission to keep URL canonical) */}
         <form
           method="GET"
           action={`/admin/products`}
-          className="flex flex-wrap items-center gap-2 mb-3"
+          className="flex flex-wrap items-center gap-2"
         >
           <input
             name="q"
             defaultValue={query}
             placeholder="Search SKU, title, MPN…"
-            className="w-64 h-9 px-3 border border-ih-border bg-ih-surface text-[13px] text-ih-ink placeholder:text-ih-muted-2 focus:outline-none focus:border-ih-ink"
+            className="h-9 w-64 rounded-lg border border-ih-border bg-ih-surface px-2.5 text-[14px] text-ih-ink outline-none placeholder:text-ih-muted-2 focus-visible:border-ih-accent focus-visible:ring-[3px] focus-visible:ring-ih-accent-soft"
           />
           <select
             name="brand"
             defaultValue={brandFilter}
-            className="h-9 px-2 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-ink"
+            className="h-9 rounded-lg border border-ih-border bg-ih-surface px-2.5 text-[14px] outline-none focus-visible:border-ih-accent focus-visible:ring-[3px] focus-visible:ring-ih-accent-soft"
             aria-label="Filter by brand"
           >
             <option value="">All brands</option>
@@ -183,7 +190,7 @@ export default async function AdminProductsPage({ params, searchParams }: Props)
           <select
             name="category"
             defaultValue={categoryFilter}
-            className="h-9 px-2 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-ink"
+            className="h-9 rounded-lg border border-ih-border bg-ih-surface px-2.5 text-[14px] outline-none focus-visible:border-ih-accent focus-visible:ring-[3px] focus-visible:ring-ih-accent-soft"
             aria-label="Filter by category"
           >
             <option value="">All categories</option>
@@ -199,7 +206,7 @@ export default async function AdminProductsPage({ params, searchParams }: Props)
           {sortDir === 'asc' && <input type="hidden" name="dir" value="asc" />}
           <button
             type="submit"
-            className="h-9 px-4 bg-ih-navy text-ih-bg text-[12px] font-medium hover:bg-ih-ink"
+            className="h-9 rounded-lg bg-ih-navy px-4 text-[14px] font-medium text-ih-bg hover:bg-ih-ink"
           >
             Apply
           </button>
@@ -213,205 +220,139 @@ export default async function AdminProductsPage({ params, searchParams }: Props)
           )}
         </form>
 
-        {/* Status pills with counts */}
-        <div className="flex flex-wrap items-center gap-1.5 mb-3">
-          <StatusPill href={buildUrl({ status: undefined, page: undefined })} active={!statusFilter} label="All" count={total} />
-          {(['draft', 'active', 'discontinued'] as const).map((s) => (
-            <StatusPill
-              key={s}
-              href={buildUrl({ status: s, page: undefined })}
-              active={statusFilter === s}
-              label={s}
-              count={statusCountMap[s] ?? 0}
-            />
-          ))}
-        </div>
+        {/* One partition, one refinement — both as chip rows rather than
+            two locally-invented chip languages. */}
+        <NavTabs
+          variant="chip"
+          label="Filter by status"
+          items={[
+            { href: buildUrl({ status: undefined, page: undefined }), active: !statusFilter, label: 'All', count: total },
+            ...(['draft', 'active', 'discontinued'] as const).map((s) => ({
+              href: buildUrl({ status: s, page: undefined }),
+              active: statusFilter === s,
+              label: s[0]!.toUpperCase() + s.slice(1),
+              count: statusCountMap[s] ?? 0,
+            })),
+          ]}
+        />
 
-        {/* Content-depth filter — backed by persisted Product.contentScore (#7-3).
+        {/* Content-depth filter — backed by persisted Product.contentScore.
             Thresholds align with bandForScore in @indus/domain. */}
-        <div className="flex flex-wrap items-center gap-1.5 mb-6">
-          <span className="font-mono text-[10.5px] uppercase tracking-[0.1em] text-ih-muted pr-2">
+        <div className="flex flex-wrap items-center gap-2">
+          <span className="font-mono text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
             Content depth
           </span>
-          <ContentChip
-            href={buildUrl({ content: undefined, page: undefined })}
-            active={!contentFilter}
-            label="All"
-          />
-          <ContentChip
-            href={buildUrl({ content: 'thin', page: undefined })}
-            active={contentFilter === 'thin'}
-            label="Thin (<50)"
-            band="thin"
-          />
-          <ContentChip
-            href={buildUrl({ content: 'warn', page: undefined })}
-            active={contentFilter === 'warn'}
-            label="Needs work (50–79)"
-            band="warn"
-          />
-          <ContentChip
-            href={buildUrl({ content: 'strong', page: undefined })}
-            active={contentFilter === 'strong'}
-            label="Strong (≥80)"
-            band="strong"
+          <NavTabs
+            variant="chip"
+            label="Filter by content depth"
+            items={[
+              { href: buildUrl({ content: undefined, page: undefined }), active: !contentFilter, label: 'All' },
+              { href: buildUrl({ content: 'thin', page: undefined }), active: contentFilter === 'thin', label: 'Thin (<50)' },
+              { href: buildUrl({ content: 'warn', page: undefined }), active: contentFilter === 'warn', label: 'Needs work (50–79)' },
+              { href: buildUrl({ content: 'strong', page: undefined }), active: contentFilter === 'strong', label: 'Strong (≥80)' },
+            ]}
           />
         </div>
 
-        {products.length === 0 ? (
-          <div className="py-16 rounded-lg border border-ih-border text-center">
-            <p className="text-ih-muted mb-3">
-              {query || statusFilter || brandFilter || categoryFilter
-                ? 'No products match these filters.'
-                : 'No products yet.'}
-            </p>
-            <Link
-              href={`/admin/products/new`}
-              className="inline-flex h-9 px-4 items-center bg-ih-accent text-ih-accent-fg text-[13px] font-medium hover:bg-ih-accent-hover"
-            >
-              + Add your first product
-            </Link>
-          </div>
-        ) : (
-          <>
-            <div className="border border-ih-border bg-ih-surface">
-              <div className="grid grid-cols-[140px_1fr_120px_120px_70px_60px_90px_80px] px-4 py-2.5 bg-ih-bg border-b border-ih-border font-mono text-[10.5px] tracking-[0.1em] uppercase text-ih-muted">
-                <Link href={sortUrl('sku')} className="hover:text-ih-ink">
-                  SKU{sortIndicator('sku')}
-                </Link>
-                <Link href={sortUrl('title')} className="hover:text-ih-ink">
-                  Title{sortIndicator('title')}
-                </Link>
-                <div>Brand</div>
-                <div>Category</div>
-                <div className="text-right">Stock</div>
+        <DataTable
+          minWidth="lg"
+          rows={products}
+          rowKey={(p) => p.id}
+          emptyState={
+            <>
+              <p className="mb-3">
+                {query || statusFilter || brandFilter || categoryFilter
+                  ? 'No products match these filters.'
+                  : 'No products yet.'}
+              </p>
+              <Link
+                href={`/admin/products/new`}
+                className="inline-flex h-8 items-center rounded-lg bg-ih-accent px-2.5 text-[14px] font-medium text-ih-accent-fg hover:bg-ih-accent-hover"
+              >
+                + Add your first product
+              </Link>
+            </>
+          }
+          columns={[
+            {
+              key: 'sku',
+              header: sortHeader('sku', 'SKU'),
+              cell: (p) => <span className="font-mono text-[12px] text-ih-muted">{p.sku}</span>,
+            },
+            {
+              key: 'title',
+              header: sortHeader('title', 'Title'),
+              width: '35%',
+              /*
+                The LINK is the title cell, not the row.
+
+                The row used to be one big <Link> wrapping an eight-column
+                grid, which puts a brand name, a stock figure and a status
+                pill inside an anchor's activation region and gives a screen
+                reader one link whose name is the whole row read out.
+              */
+              cell: (p) => (
                 <Link
-                  href={sortUrl('contentScore')}
-                  title="Content depth score (0–100)"
-                  className="text-center hover:text-ih-ink"
+                  href={`/admin/products/${p.id}/edit`}
+                  className="block truncate font-medium text-ih-ink hover:text-ih-accent"
                 >
-                  Content{sortIndicator('contentScore')}
+                  {p.title}
                 </Link>
-                <Link href={sortUrl('status')} className="text-center hover:text-ih-ink">
-                  Status{sortIndicator('status')}
-                </Link>
-                <Link href={sortUrl('updatedAt')} className="text-right hover:text-ih-ink">
-                  Updated{sortIndicator('updatedAt')}
-                </Link>
-              </div>
+              ),
+            },
+            {
+              key: 'brand',
+              header: 'Brand',
+              secondary: true,
+              cell: (p) => p.brand?.name ?? <span className="text-ih-muted-2">—</span>,
+            },
+            {
+              key: 'category',
+              header: 'Category',
+              secondary: true,
+              cell: (p) => p.category?.name ?? <span className="text-ih-muted-2">—</span>,
+            },
+            {
+              key: 'stock',
+              header: 'Stock',
+              numeric: true,
+              cell: (p) =>
+                p.stockQty > 0 ? (
+                  <span className="font-medium text-ih-success-ink">{p.stockQty.toLocaleString()}</span>
+                ) : (
+                  <span className="text-ih-muted-2">—</span>
+                ),
+            },
+            {
+              key: 'content',
+              header: sortHeader('contentScore', 'Content'),
+              align: 'center',
+              cell: (p) => <ContentScoreBadge score={p.contentScore} compact />,
+            },
+            {
+              key: 'status',
+              header: sortHeader('status', 'Status'),
+              align: 'center',
+              cell: (p) => <StatusPill tone={productStatusTone(p.status)} className="capitalize">{p.status}</StatusPill>,
+            },
+            {
+              key: 'updated',
+              header: sortHeader('updatedAt', 'Updated'),
+              align: 'right',
+              cell: (p) => <span className="text-ih-muted">{relativeTime(p.updatedAt)}</span>,
+            },
+          ]}
+        />
 
-              {products.map((p, i) => (
-                  <Link
-                    key={p.id}
-                    href={`/admin/products/${p.id}/edit`}
-                    className={`grid grid-cols-[140px_1fr_120px_120px_70px_60px_90px_80px] px-4 py-3.5 items-center hover:bg-ih-surface-2 transition-colors ${
-                      i > 0 ? 'border-t border-ih-border' : ''
-                    }`}
-                  >
-                    <div className="font-mono text-[12px] text-ih-muted truncate">{p.sku}</div>
-                    <div className="text-[13px] font-medium text-ih-ink truncate">{p.title}</div>
-                    <div className="text-[12px] text-ih-ink-2 truncate">
-                      {p.brand?.name ?? <span className="text-ih-muted-2">—</span>}
-                    </div>
-                    <div className="text-[12px] text-ih-ink-2 truncate">
-                      {p.category?.name ?? <span className="text-ih-muted-2">—</span>}
-                    </div>
-                    <div className={`text-right font-mono text-[12px] ${p.stockQty > 0 ? 'text-[oklch(0.45_0.12_150)] font-medium' : 'text-ih-muted-2'}`}>
-                      {p.stockQty > 0 ? p.stockQty.toLocaleString() : '—'}
-                    </div>
-                    <div className="flex justify-center">
-                      <ContentScoreBadge score={p.contentScore} compact />
-                    </div>
-                    <div className="flex justify-center">
-                      <span
-                        className={`px-2 py-0.5 font-mono text-[11px] font-medium capitalize ${
-                          STATUS_COLORS[p.status] ?? ''
-                        }`}
-                      >
-                        {p.status}
-                      </span>
-                    </div>
-                    <div className="text-right font-mono text-[11px] text-ih-muted">
-                      {new Date(p.updatedAt).toLocaleDateString()}
-                    </div>
-                  </Link>
-                ))}
-            </div>
-
-            {totalPages > 1 && (
-              <Pagination
-                currentPage={page}
-                totalPages={totalPages}
-                buildUrl={(n) => buildUrl({ page: n === 1 ? undefined : String(n) })}
-                linkComponent={Link}
-              />
-            )}
-          </>
+        {totalPages > 1 && (
+          <Pagination
+            currentPage={page}
+            totalPages={totalPages}
+            buildUrl={(n) => buildUrl({ page: n === 1 ? undefined : String(n) })}
+            linkComponent={Link}
+          />
         )}
+      </div>
     </AdminPageShell>
-  )
-}
-
-// ── Bits ────────────────────────────────────────────────────────────────────
-
-function StatusPill({
-  href,
-  active,
-  label,
-  count,
-}: {
-  href: string
-  active: boolean
-  label: string
-  count: number
-}) {
-  return (
-    <Link
-      href={href}
-      className={`flex items-center gap-1.5 h-7 px-3 font-mono text-[11px] border transition-colors capitalize ${
-        active
-          ? 'border-ih-accent bg-ih-accent text-ih-accent-fg'
-          : 'border-ih-border text-ih-ink-2 hover:border-ih-accent'
-      }`}
-    >
-      <span>{label}</span>
-      <span className={`text-[11px] ${active ? 'opacity-80' : 'text-ih-muted'}`}>{count.toLocaleString()}</span>
-    </Link>
-  )
-}
-
-function ContentChip({
-  href,
-  active,
-  label,
-  band,
-}: {
-  href: string
-  active: boolean
-  label: string
-  band?: 'thin' | 'warn' | 'strong'
-}) {
-  // When inactive, leave the chip neutral; only the swatch dot picks up
-  // the band colour so the row stays visually quiet.
-  const dot =
-    band === 'thin'
-      ? 'bg-[oklch(0.55_0.16_25)]'
-      : band === 'warn'
-        ? 'bg-[oklch(0.6_0.15_75)]'
-        : band === 'strong'
-          ? 'bg-[oklch(0.55_0.15_145)]'
-          : ''
-  return (
-    <Link
-      href={href}
-      className={`flex items-center gap-1.5 h-7 px-3 font-mono text-[11px] border transition-colors ${
-        active
-          ? 'border-ih-accent bg-ih-accent text-ih-accent-fg'
-          : 'border-ih-border text-ih-ink-2 hover:border-ih-accent'
-      }`}
-    >
-      {dot && <span aria-hidden="true" className={`w-1.5 h-1.5 rounded-full ${dot}`} />}
-      <span>{label}</span>
-    </Link>
   )
 }

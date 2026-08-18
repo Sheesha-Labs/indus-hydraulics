@@ -3,6 +3,18 @@
 import Link from 'next/link'
 import { useState, useTransition } from 'react'
 import { createBrand, updateBrand, deleteBrand } from './actions'
+import {
+  Field,
+  Input,
+  StatusPill,
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+  Textarea,
+} from '@indus/ui'
 
 type Brand = {
   id: string
@@ -26,12 +38,12 @@ export default function BrandsClient({ brands }: Props) {
   const [showCreate, setShowCreate] = useState(false)
 
   return (
-    <div className="flex flex-col gap-6 max-w-5xl">
+    <div className="flex flex-col gap-6">
       <div className="flex items-center justify-end">
         <button
           type="button"
           onClick={() => setShowCreate((v) => !v)}
-          className="h-9 px-4 bg-ih-accent text-ih-accent-fg text-[13px] font-medium hover:bg-ih-accent-hover"
+          className="flex h-8 items-center rounded-lg bg-ih-accent px-2.5 text-[14px] font-medium text-ih-accent-fg transition-colors hover:bg-ih-accent-hover"
         >
           {showCreate ? '× Cancel' : '+ New brand'}
         </button>
@@ -39,98 +51,90 @@ export default function BrandsClient({ brands }: Props) {
 
       {showCreate && <BrandForm onDone={() => setShowCreate(false)} />}
 
-      {brands.length === 0 ? (
-        <div className="py-16 rounded-lg border border-ih-border text-center">
-          <p className="text-ih-muted">No brands yet — create the first one above.</p>
-        </div>
-      ) : (
-        <div className="bg-ih-surface border border-ih-border">
-          <div className="grid grid-cols-[1fr_140px_120px_80px_100px_100px_120px] px-4 py-2.5 bg-ih-bg border-b border-ih-border font-mono text-[10.5px] tracking-[0.1em] uppercase text-ih-muted">
-            <div>Name</div>
-            <div>Slug</div>
-            <div>Country</div>
-            <div className="text-center">Auth.</div>
-            <div className="text-center">Products</div>
-            <div className="text-center">Status</div>
-            <div className="text-right" />
-          </div>
-
-          {brands.map((b) => {
-            const isEditing = editingId === b.id
-            return (
-              <div key={b.id}>
-                {isEditing ? (
-                  <div className="border-t border-ih-border bg-ih-surface-2 p-4">
+      <Table>
+        <TableHeader>
+          <TableRow>
+            <TableHead className="w-[34%]">Name</TableHead>
+            <TableHead>Slug</TableHead>
+            <TableHead>Country</TableHead>
+            <TableHead className="text-center">Auth.</TableHead>
+            <TableHead numeric>Products</TableHead>
+            <TableHead className="text-center">Status</TableHead>
+            <TableHead className="text-right">Actions</TableHead>
+          </TableRow>
+        </TableHeader>
+        <TableBody>
+          {brands.length === 0 ? (
+            <TableRow>
+              <TableCell colSpan={7} className="py-14 text-center text-ih-muted">
+                No brands yet — create the first one above.
+              </TableCell>
+            </TableRow>
+          ) : (
+            brands.map((b) =>
+              editingId === b.id ? (
+                /*
+                  The edit form replaces the row in place, spanning every
+                  column. A <tr> is the only child a <tbody> may have, so the
+                  form cannot sit beside the row — it has to BE one.
+                */
+                <TableRow key={b.id}>
+                  <TableCell colSpan={7} className="bg-ih-surface-2 p-4">
                     <BrandForm existing={b} onDone={() => setEditingId(null)} />
-                  </div>
-                ) : (
-                  <div className="grid grid-cols-[1fr_140px_120px_80px_100px_100px_120px] px-4 py-3 items-center text-[13px] border-t border-ih-border">
-                    <div>
-                      <div className="text-ih-ink font-medium">{b.name}</div>
-                      {b.description && (
-                        <div className="text-[11px] text-ih-muted mt-0.5 line-clamp-1">
-                          {b.description}
-                        </div>
-                      )}
-                    </div>
-                    <div className="font-mono text-[11px] text-ih-muted">{b.slug}</div>
-                    <div className="text-[12px] text-ih-ink-2">
-                      {b.country ?? <span className="text-ih-muted-2">—</span>}
-                    </div>
-                    <div className="text-center">
-                      {b.isAuthorizedDistributor ? (
-                        <span
-                          className="inline-block rounded-full bg-ih-steel-soft px-1.5 py-0.5 font-mono text-[11px] font-medium text-ih-info-ink"
-                          title="Authorized distributor"
-                        >
-                          ✓ Auth
-                        </span>
-                      ) : (
-                        <span className="text-ih-muted-2 font-mono text-[11px]">—</span>
-                      )}
-                    </div>
-                    <div className="text-center font-mono text-[12px] text-ih-ink">
-                      {b.productCount}
-                    </div>
-                    <div className="flex justify-center">
-                      <span
-                        className={`px-2 py-0.5 font-mono text-[11px] font-medium ${
-                          b.isPublished
-                            ? 'text-ih-success-ink bg-ih-success-soft'
-                            : 'text-ih-muted bg-ih-surface-2'
-                        }`}
-                      >
-                        {b.isPublished ? 'Published' : 'Draft'}
-                      </span>
-                    </div>
-                    <div className="flex items-center justify-end gap-2">
+                  </TableCell>
+                </TableRow>
+              ) : (
+                <TableRow key={b.id}>
+                  <TableCell>
+                    <div className="font-medium text-ih-ink">{b.name}</div>
+                    {b.description && (
+                      <div className="mt-0.5 line-clamp-1 text-[12px] text-ih-muted">
+                        {b.description}
+                      </div>
+                    )}
+                  </TableCell>
+                  <TableCell className="font-mono text-[12px] text-ih-muted">{b.slug}</TableCell>
+                  <TableCell className="text-ih-ink-2">
+                    {b.country ?? <span className="text-ih-muted-2">—</span>}
+                  </TableCell>
+                  <TableCell className="text-center">
+                    {b.isAuthorizedDistributor ? (
+                      <StatusPill tone="info">Auth</StatusPill>
+                    ) : (
+                      <span className="text-ih-muted-2">—</span>
+                    )}
+                  </TableCell>
+                  <TableCell numeric>{b.productCount}</TableCell>
+                  <TableCell className="text-center">
+                    <StatusPill tone={b.isPublished ? 'good' : 'muted'}>
+                      {b.isPublished ? 'Published' : 'Draft'}
+                    </StatusPill>
+                  </TableCell>
+                  <TableCell className="text-right">
+                    <span className="inline-flex items-center justify-end gap-2">
                       <button
                         type="button"
                         onClick={() => setEditingId(b.id)}
-                        className="font-mono text-[11px] text-ih-muted hover:text-ih-ink"
+                        className="text-[12px] text-ih-muted hover:text-ih-ink"
                       >
                         Edit
                       </button>
                       <Link
                         href={`/admin/brands/${b.id}/edit`}
-                        className="font-mono text-[11px] text-ih-muted hover:text-ih-ink"
+                        className="text-[12px] text-ih-muted hover:text-ih-ink"
                         title="Open dedicated SEO editor"
                       >
                         SEO
                       </Link>
-                      <DeleteBrandButton
-                        id={b.id}
-                       
-                        hasProducts={b.productCount > 0}
-                      />
-                    </div>
-                  </div>
-                )}
-              </div>
+                      <DeleteBrandButton id={b.id} hasProducts={b.productCount > 0} />
+                    </span>
+                  </TableCell>
+                </TableRow>
+              )
             )
-          })}
-        </div>
-      )}
+          )}
+        </TableBody>
+      </Table>
     </div>
   )
 }
@@ -166,62 +170,57 @@ function BrandForm({
 
       <div className="grid grid-cols-2 gap-3">
         <Field label="Name *">
-          <input
+          <Input
             required
             name="name"
             defaultValue={existing?.name ?? ''}
             placeholder="Bosch Rexroth"
-            className="h-9 px-3 border border-ih-border bg-ih-surface text-[13px]"
           />
         </Field>
 
         <Field label="Slug" hint="Auto-generated from name">
-          <input
+          <Input
             name="slug"
             defaultValue={existing?.slug ?? ''}
             placeholder="bosch-rexroth"
-            className="h-9 px-3 border border-ih-border bg-ih-surface font-mono text-[12px]"
+          className="font-mono"
           />
         </Field>
       </div>
 
       <Field label="Country">
-        <input
+        <Input
           name="country"
           defaultValue={existing?.country ?? ''}
           placeholder="Germany"
-          className="h-9 px-3 border border-ih-border bg-ih-surface text-[13px]"
         />
       </Field>
 
       <Field label="Description">
-        <textarea
+        <Textarea
           name="description"
           defaultValue={existing?.description ?? ''}
           rows={2}
-          className="px-3 py-2 border border-ih-border bg-ih-surface text-[13px] resize-y"
         />
       </Field>
 
       <div className="grid grid-cols-2 gap-3">
         <Field label="SEO title">
-          <input
+          <Input
             name="seoTitle"
             defaultValue={existing?.seoTitle ?? ''}
-            className="h-9 px-3 border border-ih-border bg-ih-surface text-[13px]"
           />
         </Field>
         <Field label="SEO description">
-          <input
+          <Input
             name="seoDescription"
             defaultValue={existing?.seoDescription ?? ''}
-            className="h-9 px-3 border border-ih-border bg-ih-surface text-[13px]"
           />
         </Field>
       </div>
 
       <label className="flex items-center gap-2 h-9 text-[12px] text-ih-ink-2">
-        <input
+        <Input
           type="checkbox"
           name="isAuthorizedDistributor"
           defaultChecked={existing?.isAuthorizedDistributor ?? false}
@@ -230,7 +229,7 @@ function BrandForm({
       </label>
 
       <label className="flex items-center gap-2 h-9 text-[12px] text-ih-ink-2">
-        <input
+        <Input
           type="checkbox"
           name="isPublished"
           defaultChecked={existing?.isPublished ?? false}
@@ -293,23 +292,5 @@ function DeleteBrandButton({
       </button>
       {error && <span className="text-[11px] text-ih-danger-ink">{error}</span>}
     </>
-  )
-}
-
-function Field({
-  label,
-  hint,
-  children,
-}: {
-  label: string
-  hint?: string
-  children: React.ReactNode
-}) {
-  return (
-    <label className="flex flex-col gap-1.5">
-      <span className="text-[11px] font-medium text-ih-ink-2">{label}</span>
-      {children}
-      {hint && <span className="text-[11px] text-ih-muted-2">{hint}</span>}
-    </label>
   )
 }

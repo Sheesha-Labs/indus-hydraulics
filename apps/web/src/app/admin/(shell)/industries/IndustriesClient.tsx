@@ -1,6 +1,18 @@
 'use client'
 
 import Link from 'next/link'
+import {
+  Field,
+  Input,
+  StatusPill,
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+  Textarea,
+} from '@indus/ui'
 import { useState, useTransition } from 'react'
 import { createIndustry, updateIndustry, deleteIndustry } from './actions'
 
@@ -24,12 +36,12 @@ export default function IndustriesClient({ industries }: Props) {
   const [showCreate, setShowCreate] = useState(false)
 
   return (
-    <div className="flex flex-col gap-6 max-w-4xl">
+    <div className="flex flex-col gap-6">
       <div className="flex items-center justify-end">
         <button
           type="button"
           onClick={() => setShowCreate((v) => !v)}
-          className="h-9 px-4 bg-ih-accent text-ih-accent-fg text-[13px] font-medium hover:bg-ih-accent-hover"
+          className="flex h-8 items-center rounded-lg bg-ih-accent px-2.5 text-[14px] font-medium text-ih-accent-fg transition-colors hover:bg-ih-accent-hover"
         >
           {showCreate ? '× Cancel' : '+ New industry'}
         </button>
@@ -37,81 +49,73 @@ export default function IndustriesClient({ industries }: Props) {
 
       {showCreate && <IndustryForm onDone={() => setShowCreate(false)} />}
 
-      {industries.length === 0 ? (
-        <div className="py-16 rounded-lg border border-ih-border text-center">
-          <p className="text-ih-muted">No industries yet — create the first one above.</p>
-        </div>
-      ) : (
-        <div className="bg-ih-surface border border-ih-border">
-          <div className="grid grid-cols-[1fr_140px_80px_100px_120px] px-4 py-2.5 bg-ih-bg border-b border-ih-border font-mono text-[10.5px] tracking-[0.1em] uppercase text-ih-muted">
-            <div>Name</div>
-            <div>Slug</div>
-            <div className="text-center">Accounts</div>
-            <div className="text-center">Status</div>
-            <div className="text-right" />
-          </div>
-
-          {industries.map((ind) => {
-            const isEditing = editingId === ind.id
-            return (
-              <div key={ind.id}>
-                {isEditing ? (
-                  <div className="border-t border-ih-border bg-ih-surface-2 p-4">
+      <Table>
+        <TableHeader>
+          <TableRow>
+            <TableHead className="w-[40%]">Name</TableHead>
+            <TableHead>Slug</TableHead>
+            <TableHead numeric>Accounts</TableHead>
+            <TableHead className="text-center">Status</TableHead>
+            <TableHead className="text-right">Actions</TableHead>
+          </TableRow>
+        </TableHeader>
+        <TableBody>
+          {industries.length === 0 ? (
+            <TableRow>
+              <TableCell colSpan={5} className="py-14 text-center text-ih-muted">
+                No industries yet — create the first one above.
+              </TableCell>
+            </TableRow>
+          ) : (
+            industries.map((ind) =>
+              editingId === ind.id ? (
+                <TableRow key={ind.id}>
+                  <TableCell colSpan={5} className="bg-ih-surface-2 p-4">
                     <IndustryForm existing={ind} onDone={() => setEditingId(null)} />
-                  </div>
-                ) : (
-                  <div className="grid grid-cols-[1fr_140px_80px_100px_120px] px-4 py-3 items-center text-[13px] border-t border-ih-border">
-                    <div>
-                      <div className="text-ih-ink font-medium">{ind.name}</div>
-                      {ind.description && (
-                        <div className="text-[11px] text-ih-muted mt-0.5 line-clamp-1">
-                          {ind.description}
-                        </div>
-                      )}
-                    </div>
-                    <div className="font-mono text-[11px] text-ih-muted">{ind.slug}</div>
-                    <div className="text-center font-mono text-[12px] text-ih-ink">
-                      {ind.accountCount}
-                    </div>
-                    <div className="flex justify-center">
-                      <span
-                        className={`px-2 py-0.5 font-mono text-[11px] font-medium ${
-                          ind.isPublished
-                            ? 'text-ih-success-ink bg-ih-success-soft'
-                            : 'text-ih-muted bg-ih-surface-2'
-                        }`}
-                      >
-                        {ind.isPublished ? 'Published' : 'Draft'}
-                      </span>
-                    </div>
-                    <div className="flex items-center justify-end gap-2">
+                  </TableCell>
+                </TableRow>
+              ) : (
+                <TableRow key={ind.id}>
+                  <TableCell>
+                    <div className="font-medium text-ih-ink">{ind.name}</div>
+                    {ind.description && (
+                      <div className="mt-0.5 line-clamp-1 text-[12px] text-ih-muted">
+                        {ind.description}
+                      </div>
+                    )}
+                  </TableCell>
+                  <TableCell className="font-mono text-[12px] text-ih-muted">{ind.slug}</TableCell>
+                  <TableCell numeric>{ind.accountCount}</TableCell>
+                  <TableCell className="text-center">
+                    <StatusPill tone={ind.isPublished ? 'good' : 'muted'}>
+                      {ind.isPublished ? 'Published' : 'Draft'}
+                    </StatusPill>
+                  </TableCell>
+                  <TableCell className="text-right">
+                    <span className="inline-flex items-center justify-end gap-2">
                       <button
                         type="button"
                         onClick={() => setEditingId(ind.id)}
-                        className="font-mono text-[11px] text-ih-muted hover:text-ih-ink"
+                        className="text-[12px] text-ih-muted hover:text-ih-ink"
                       >
                         Edit
                       </button>
                       <Link
                         href={`/admin/industries/${ind.id}/edit`}
-                        className="font-mono text-[11px] text-ih-muted hover:text-ih-ink"
+                        className="text-[12px] text-ih-muted hover:text-ih-ink"
                         title="Open dedicated SEO editor"
                       >
                         SEO
                       </Link>
-                      <DeleteIndustryButton
-                        id={ind.id}
-                       
-                        hasAccounts={ind.accountCount > 0}
-                      />
-                    </div>
-                  </div>
-                )}
-              </div>
+                      <DeleteIndustryButton id={ind.id} hasAccounts={ind.accountCount > 0} />
+                    </span>
+                  </TableCell>
+                </TableRow>
+              )
             )
-          })}
-        </div>
-      )}
+          )}
+        </TableBody>
+      </Table>
     </div>
   )
 }
@@ -147,53 +151,49 @@ function IndustryForm({
 
       <div className="grid grid-cols-2 gap-3">
         <Field label="Name *">
-          <input
+          <Input
             required
             name="name"
             defaultValue={existing?.name ?? ''}
             placeholder="Oil & Gas"
-            className="h-9 px-3 border border-ih-border bg-ih-surface text-[13px]"
           />
         </Field>
 
         <Field label="Slug" hint="Auto-generated from name">
-          <input
+          <Input
             name="slug"
             defaultValue={existing?.slug ?? ''}
             placeholder="oil-gas"
-            className="h-9 px-3 border border-ih-border bg-ih-surface font-mono text-[12px]"
+          className="font-mono"
           />
         </Field>
       </div>
 
       <Field label="Description">
-        <textarea
+        <Textarea
           name="description"
           defaultValue={existing?.description ?? ''}
           rows={2}
-          className="px-3 py-2 border border-ih-border bg-ih-surface text-[13px] resize-y"
         />
       </Field>
 
       <div className="grid grid-cols-2 gap-3">
         <Field label="SEO title">
-          <input
+          <Input
             name="seoTitle"
             defaultValue={existing?.seoTitle ?? ''}
-            className="h-9 px-3 border border-ih-border bg-ih-surface text-[13px]"
           />
         </Field>
         <Field label="SEO description">
-          <input
+          <Input
             name="seoDescription"
             defaultValue={existing?.seoDescription ?? ''}
-            className="h-9 px-3 border border-ih-border bg-ih-surface text-[13px]"
           />
         </Field>
       </div>
 
       <label className="flex items-center gap-2 h-9 text-[12px] text-ih-ink-2">
-        <input
+        <Input
           type="checkbox"
           name="isPublished"
           defaultChecked={existing?.isPublished ?? false}
@@ -256,23 +256,5 @@ function DeleteIndustryButton({
       </button>
       {error && <span className="text-[11px] text-ih-danger-ink">{error}</span>}
     </>
-  )
-}
-
-function Field({
-  label,
-  hint,
-  children,
-}: {
-  label: string
-  hint?: string
-  children: React.ReactNode
-}) {
-  return (
-    <label className="flex flex-col gap-1.5">
-      <span className="text-[11px] font-medium text-ih-ink-2">{label}</span>
-      {children}
-      {hint && <span className="text-[11px] text-ih-muted-2">{hint}</span>}
-    </label>
   )
 }

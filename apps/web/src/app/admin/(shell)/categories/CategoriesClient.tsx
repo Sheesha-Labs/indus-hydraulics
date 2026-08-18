@@ -1,6 +1,17 @@
 'use client'
 
 import Link from 'next/link'
+import {
+  Field,
+  Input,
+  StatusPill,
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from '@indus/ui'
 import { useState, useTransition } from 'react'
 import { createCategory, updateCategory, deleteCategory } from './actions'
 
@@ -42,7 +53,7 @@ export default function CategoriesClient({ categories, templates }: Props) {
   }
 
   return (
-    <div className="flex flex-col gap-6 max-w-4xl">
+    <div className="flex flex-col gap-6">
       <div className="flex items-center justify-end">
         {!showCreate && (
           <button
@@ -64,57 +75,79 @@ export default function CategoriesClient({ categories, templates }: Props) {
         />
       )}
 
-      {categories.length === 0 ? (
-        <div className="py-16 rounded-lg border border-ih-border text-center">
-          <p className="text-ih-muted">No categories yet — create the first one above.</p>
-        </div>
-      ) : (
-        <div className="bg-ih-surface border border-ih-border">
-          <div className="grid grid-cols-[1fr_140px_60px_70px_140px_90px_100px] px-4 py-2.5 bg-ih-bg border-b border-ih-border font-mono text-[10.5px] tracking-[0.1em] uppercase text-ih-muted">
-            <div>Name</div>
-            <div>Slug</div>
-            <div className="text-center">Pos</div>
-            <div className="text-center">Prod</div>
-            <div>Default template</div>
-            <div className="text-center">Status</div>
-            <div className="text-right"></div>
-          </div>
+      <Table>
+        <TableHeader>
+          <TableRow>
+            <TableHead className="w-[30%]">Name</TableHead>
+            <TableHead>Slug</TableHead>
+            <TableHead numeric>Pos</TableHead>
+            <TableHead numeric>Prod</TableHead>
+            <TableHead>Default template</TableHead>
+            <TableHead className="text-center">Status</TableHead>
+            <TableHead className="text-right">Actions</TableHead>
+          </TableRow>
+        </TableHeader>
+        <TableBody>
+          {categories.length === 0 ? (
+            <TableRow>
+              <TableCell colSpan={7} className="py-14 text-center text-ih-muted">
+                No categories yet — create the first one above.
+              </TableCell>
+            </TableRow>
+          ) : (
+            <>
+              {roots.map((root) => (
+                <CategoryRows
+                  key={root.id}
+                  cat={root}
+                  subRows={childrenByParent[root.id] ?? []}
+                  depth={0}
+                  editingId={editingId}
+                  setEditingId={setEditingId}
+                  parents={categories}
+                  templates={templates}
+                />
+              ))}
 
-          {roots.map((root) => (
-            <CategoryRows
-              key={root.id}
-              cat={root}
-              subRows={childrenByParent[root.id] ?? []}
-              depth={0}
-              editingId={editingId}
-              setEditingId={setEditingId}
-              parents={categories}
-              templates={templates}
-
-            />
-          ))}
-
-          {/* Orphans (categories whose parent is missing) */}
-          {categories
-            .filter((c) => c.parentId && !categories.find((p) => p.id === c.parentId))
-            .map((c) => (
-              <CategoryRows
-                key={c.id}
-                cat={c}
-                subRows={childrenByParent[c.id] ?? []}
-                depth={0}
-                editingId={editingId}
-                setEditingId={setEditingId}
-                parents={categories}
-                templates={templates}
-
-              />
-            ))}
-        </div>
-      )}
+              {/* Orphans (categories whose parent is missing) */}
+              {categories
+                .filter((c) => c.parentId && !categories.find((p) => p.id === c.parentId))
+                .map((c) => (
+                  <CategoryRows
+                    key={c.id}
+                    cat={c}
+                    subRows={childrenByParent[c.id] ?? []}
+                    depth={0}
+                    editingId={editingId}
+                    setEditingId={setEditingId}
+                    parents={categories}
+                    templates={templates}
+                  />
+                ))}
+            </>
+          )}
+        </TableBody>
+      </Table>
     </div>
   )
 }
+
+/**
+ * Depth indent, as a class rather than an inline style.
+ *
+ * The tree was indenting with `style={{ paddingLeft: 16 + depth * 24 }}`,
+ * which CLAUDE.md §2.1 bans and Tailwind could not have produced from a
+ * runtime value anyway. Depth only ever reaches 1 here — a root and its
+ * children — so a small map covers it with room to spare.
+ *
+ * The padding goes on the label INSIDE the cell, not on the cell. TableCell
+ * carries `first:pl-4`, and a `pl-10` on the same element does not beat it:
+ * they are different Tailwind variants, so tailwind-merge cannot dedupe them
+ * and the `first:` rule still applies. Putting it on the cell rendered all 161
+ * child categories flush with their parents — a flat tree that type-checked,
+ * linted and built, and was only visible by measuring the computed padding.
+ */
+const DEPTH_INDENT = ['pl-0', 'pl-6', 'pl-12', 'pl-[72px]'] as const
 
 function CategoryRows({
   cat,
@@ -138,7 +171,8 @@ function CategoryRows({
   return (
     <>
       {isEditing ? (
-        <div className="border-t border-ih-border bg-ih-surface-2 p-4">
+        <TableRow>
+          <TableCell colSpan={7} className="bg-ih-surface-2 p-4">
           <CategoryForm
            
             parents={parents}
@@ -146,58 +180,53 @@ function CategoryRows({
             existing={cat}
             onDone={() => setEditingId(null)}
           />
-        </div>
+          </TableCell>
+        </TableRow>
       ) : (
-        <div
-          className={`grid grid-cols-[1fr_140px_60px_70px_140px_90px_100px] px-4 py-3 items-center text-[13px] border-t border-ih-border`}
-          style={{ paddingLeft: `${16 + depth * 24}px` }}
-        >
-          <div className="text-ih-ink font-medium">
-            {depth > 0 && <span className="text-ih-muted-2 mr-2">└</span>}
-            {cat.name}
-          </div>
-          <div className="font-mono text-[11px] text-ih-muted">{cat.slug}</div>
-          <div className="text-center font-mono text-[12px] text-ih-muted">{cat.position}</div>
-          <div className="text-center font-mono text-[12px] text-ih-ink">
-            {cat.productCount}
-          </div>
-          <div className="text-[12px] text-ih-ink-2 truncate">
-            {cat.defaultSpecTemplateName ?? <span className="text-ih-muted-2">—</span>}
-          </div>
-          <div className="flex justify-center">
+        <TableRow>
+          <TableCell>
             <span
-              className={`px-2 py-0.5 font-mono text-[11px] font-medium ${
-                cat.isPublished
-                  ? 'text-ih-success-ink bg-ih-success-soft'
-                  : 'text-ih-muted bg-ih-surface-2'
-              }`}
+              className={`block font-medium text-ih-ink ${DEPTH_INDENT[Math.min(depth, 3)]}`}
             >
-              {cat.isPublished ? 'Published' : 'Draft'}
+              {depth > 0 && <span className="mr-2 text-ih-muted-2">└</span>}
+              {cat.name}
             </span>
-          </div>
-          <div className="flex items-center justify-end gap-2">
-            <button
-              type="button"
-              onClick={() => setEditingId(cat.id)}
-              className="font-mono text-[11px] text-ih-muted hover:text-ih-ink"
-            >
-              Edit
-            </button>
-            <Link
-              href={`/admin/categories/${cat.id}/edit`}
-              className="font-mono text-[11px] text-ih-muted hover:text-ih-ink"
-              title="Open dedicated SEO editor"
-            >
-              SEO
-            </Link>
-            <DeleteCategoryButton
-              id={cat.id}
-             
-              hasChildren={cat.childCount > 0}
-              hasProducts={cat.productCount > 0}
-            />
-          </div>
-        </div>
+          </TableCell>
+          <TableCell className="font-mono text-[12px] text-ih-muted">{cat.slug}</TableCell>
+          <TableCell numeric className="text-ih-muted">{cat.position}</TableCell>
+          <TableCell numeric>{cat.productCount}</TableCell>
+          <TableCell className="text-ih-ink-2">
+            {cat.defaultSpecTemplateName ?? <span className="text-ih-muted-2">—</span>}
+          </TableCell>
+          <TableCell className="text-center">
+            <StatusPill tone={cat.isPublished ? 'good' : 'muted'}>
+              {cat.isPublished ? 'Published' : 'Draft'}
+            </StatusPill>
+          </TableCell>
+          <TableCell className="text-right">
+            <span className="inline-flex items-center justify-end gap-2">
+              <button
+                type="button"
+                onClick={() => setEditingId(cat.id)}
+                className="text-[12px] text-ih-muted hover:text-ih-ink"
+              >
+                Edit
+              </button>
+              <Link
+                href={`/admin/categories/${cat.id}/edit`}
+                className="text-[12px] text-ih-muted hover:text-ih-ink"
+                title="Open dedicated SEO editor"
+              >
+                SEO
+              </Link>
+              <DeleteCategoryButton
+                id={cat.id}
+                hasChildren={cat.childCount > 0}
+                hasProducts={cat.productCount > 0}
+              />
+            </span>
+          </TableCell>
+        </TableRow>
       )}
 
       {subRows.map((child) => (
@@ -253,7 +282,7 @@ function CategoryForm({
       {/* Row 1: Name, Slug, Position, Parent */}
       <div className="grid grid-cols-[1fr_1fr_80px_180px] gap-3 items-start">
         <Field label="Name *">
-          <input
+          <Input
             required
             name="name"
             defaultValue={existing?.name ?? ''}
@@ -263,7 +292,7 @@ function CategoryForm({
         </Field>
 
         <Field label="Slug" hint="Auto from name">
-          <input
+          <Input
             name="slug"
             defaultValue={existing?.slug ?? ''}
             placeholder="hydraulic-pumps"
@@ -272,7 +301,7 @@ function CategoryForm({
         </Field>
 
         <Field label="Position">
-          <input
+          <Input
             name="position"
             type="number"
             defaultValue={existing?.position ?? 0}
@@ -316,7 +345,7 @@ function CategoryForm({
         </Field>
 
         <label className="flex items-center gap-2 h-9 mt-[26px] text-[12px] text-ih-ink-2 whitespace-nowrap">
-          <input
+          <Input
             type="checkbox"
             name="isPublished"
             defaultChecked={existing?.isPublished ?? false}
@@ -389,23 +418,5 @@ function DeleteCategoryButton({
       </button>
       {error && <span className="text-[11px] text-ih-danger-ink">{error}</span>}
     </>
-  )
-}
-
-function Field({
-  label,
-  hint,
-  children,
-}: {
-  label: string
-  hint?: string
-  children: React.ReactNode
-}) {
-  return (
-    <label className="flex flex-col gap-1.5">
-      <span className="text-[11px] font-medium text-ih-ink-2">{label}</span>
-      {children}
-      {hint && <span className="text-[11px] text-ih-muted-2">{hint}</span>}
-    </label>
   )
 }
