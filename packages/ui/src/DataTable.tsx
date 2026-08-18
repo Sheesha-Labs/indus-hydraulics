@@ -137,6 +137,16 @@ export function DataTable<Row>({
                   key={column.key}
                   {...(column.numeric ? { numeric: true } : {})}
                   className={cn(
+                    /*
+                      Cells do not wrap. A SKU or a category name breaking onto
+                      a second line makes that ONE row taller than its
+                      neighbours, and a list whose rows are three different
+                      heights reads as broken even when every row is correct.
+                      The container scrolls instead — that is what `minWidth`
+                      is for. A column that genuinely holds prose truncates in
+                      its own `cell`.
+                    */
+                    'whitespace-nowrap',
                     column.align && ALIGN[column.align],
                     column.secondary && 'hidden md:table-cell'
                   )}
