@@ -1,3 +1,5 @@
+import type { Metadata } from 'next'
+
 /**
  * Shared vocabulary for the Brand & identity settings panel.
  *
@@ -60,4 +62,63 @@ export function resolveSearchIcon(
   const picked = urls.searchLogoUrl ?? urls.faviconUrl ?? urls.logoUrl
   if (!picked) return null
   return picked.startsWith('/') ? `${baseUrl.replace(/\/+$/, '')}${picked}` : picked
+}
+
+/**
+ * `Metadata['icons']` is a union: a bare URL, an array of icons, or the keyed
+ * block with `icon` / `shortcut` / `apple`. We always build the keyed block —
+ * narrowing here is what lets a caller (and a test) read `.icon` off the
+ * result without asserting.
+ */
+type IconsBlock = Exclude<NonNullable<Metadata['icons']>, string | URL | readonly unknown[]>
+
+/**
+ * The whole `icons` block for the document head, or undefined when the
+ * operator has uploaded nothing.
+ *
+ * Pure and here rather than inline in the root layout so it can be tested
+ * without booting a layout, a font loader or a database — the bug this exists
+ * to prevent (icons declared on one layout, absent on the surfaces that do not
+ * nest under it) is invisible to typecheck, lint and every rendering test.
+ *
+ * Undefined means the browser falls back to requesting /favicon.ico, which
+ * `public/favicon.ico` answers with the brand mark. That file lives in
+ * `public/` and NOT in `app/` on purpose: under the `app/favicon.ico` file
+ * convention Next emits its own `<link rel="icon">` unconditionally, so an
+ * operator who uploads a favicon would get two competing icon links and no say
+ * in which one the browser picks. Do not move it back.
+ */
+export function buildIconMetadata(
+  urls: {
+    searchLogoUrl: string | null
+    faviconUrl: string | null
+    logoUrl: string | null
+  },
+  baseUrl: string,
+): IconsBlock | undefined {
+  const favicon = urls.faviconUrl
+  /*
+   * The mark search engines read. Google asks for a square that is a multiple
+   * of 48px and takes it from `rel="icon"` or `rel="apple-touch-icon"`, so it
+   * is declared as a second, *sized* icon rather than replacing the tab
+   * favicon: two `rel="icon"` tags that both omit `sizes` is an ambiguity, two
+   * that declare different sizes is the standard way to offer both.
+   */
+  const searchIcon = resolveSearchIcon(urls, baseUrl)
+  if (!favicon && !searchIcon) return undefined
+
+  return {
+    // The sized entry is added only when it is a *different* file: with no
+    // search logo set the chain resolves back to the favicon, and emitting the
+    // same href twice would be two icon links arguing over one image.
+    icon:
+      searchIcon && searchIcon !== favicon
+        ? [...(favicon ? [{ url: favicon }] : []), { url: searchIcon, sizes: '192x192' }]
+        : (favicon ?? searchIcon ?? undefined),
+    ...(favicon ? { shortcut: favicon } : {}),
+    // Home-screen bookmarks want a bigger square than a tab strip does — the
+    // search-result mark is authored at exactly that size, so it serves here
+    // too and iOS scales it.
+    ...(searchIcon || favicon ? { apple: searchIcon ?? favicon! } : {}),
+  }
 }

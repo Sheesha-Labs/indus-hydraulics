@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { asLogoStyle, DEFAULT_LOGO_STYLE, resolveSearchIcon } from './brand-identity'
+import { asLogoStyle, buildIconMetadata, DEFAULT_LOGO_STYLE, resolveSearchIcon } from './brand-identity'
 
 describe('asLogoStyle', () => {
   it('passes through the two styles the header can render', () => {
@@ -94,5 +94,65 @@ describe('resolveSearchIcon', () => {
         BASE,
       ),
     ).toBe('https://xyz.supabase.co/storage/v1/object/public/x.png')
+  })
+})
+
+describe('buildIconMetadata', () => {
+  const BASE = 'https://indushydraulics.com'
+  const NONE = { searchLogoUrl: null, faviconUrl: null, logoUrl: null }
+
+  it('is undefined when the operator has uploaded nothing', () => {
+    expect(buildIconMetadata(NONE, BASE)).toBeUndefined()
+  })
+
+  /**
+   * The favicon and the search mark are two files by design, and the sized
+   * entry is what Google reads. Both have to be emitted, and only the sized
+   * one may carry `sizes` — see the comment on the builder.
+   */
+  it('emits the favicon plus a sized search mark when they differ', () => {
+    const icons = buildIconMetadata(
+      {
+        searchLogoUrl: 'https://cdn.test/search.png',
+        faviconUrl: 'https://cdn.test/favicon.png',
+        logoUrl: null,
+      },
+      BASE,
+    )
+    expect(icons?.icon).toEqual([
+      { url: 'https://cdn.test/favicon.png' },
+      { url: 'https://cdn.test/search.png', sizes: '192x192' },
+    ])
+    expect(icons?.shortcut).toBe('https://cdn.test/favicon.png')
+    expect(icons?.apple).toBe('https://cdn.test/search.png')
+  })
+
+  /**
+   * With no search logo set, `resolveSearchIcon` chains back to the favicon.
+   * Emitting it twice would be two icon links arguing over one image, and the
+   * browser is free to pick either — which is how a stale mark survives an
+   * upload.
+   */
+  it('collapses to a single icon link when both resolve to the same file', () => {
+    const icons = buildIconMetadata(
+      { searchLogoUrl: null, faviconUrl: 'https://cdn.test/favicon.png', logoUrl: null },
+      BASE,
+    )
+    expect(icons?.icon).toBe('https://cdn.test/favicon.png')
+    expect(icons?.apple).toBe('https://cdn.test/favicon.png')
+  })
+
+  it('absolutises a same-origin search mark, since crawlers read it without page context', () => {
+    const icons = buildIconMetadata(
+      { searchLogoUrl: '/brand/mark.png', faviconUrl: null, logoUrl: null },
+      BASE,
+    )
+    expect(icons?.icon).toEqual([
+      { url: 'https://indushydraulics.com/brand/mark.png', sizes: '192x192' },
+    ])
+    expect(icons?.apple).toBe('https://indushydraulics.com/brand/mark.png')
+    // No favicon uploaded, so nothing claims the unsized slot and the browser
+    // still has /favicon.ico to fall back to.
+    expect(icons?.shortcut).toBeUndefined()
   })
 })

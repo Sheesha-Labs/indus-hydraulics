@@ -2,6 +2,9 @@ import type { Metadata } from 'next'
 import { Geist, JetBrains_Mono, Instrument_Serif } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
+import { buildIconMetadata } from '../lib/brand-identity'
+import { getStoreSettings } from '../lib/store-settings'
+import { BASE_URL } from '../lib/seo'
 
 /**
  * Root layout for BOTH surfaces.
@@ -56,12 +59,36 @@ const instrumentSerif = Instrument_Serif({
   display: 'swap',
 })
 
-export const metadata: Metadata = {
-  // metadataBase is the one metadata field both surfaces need — it resolves
-  // every relative URL in every nested metadata export. Titles, descriptions,
-  // openGraph, twitter, verification and robots all belong to a surface and
-  // live in the surface layouts.
-  metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL ?? 'https://indushydraulics.com'),
+/**
+ * The two metadata fields both surfaces need: `metadataBase` and the icon
+ * links. Titles, descriptions, openGraph, twitter, verification and robots all
+ * belong to a surface and live in the surface layouts.
+ *
+ * The icons live HERE rather than in (storefront)/layout.tsx, where they were
+ * until the tab strip proved it. Next resolves metadata root -> page and a
+ * segment inherits every field it does not set itself, so icons declared on
+ * the storefront layout covered the storefront and nothing else: /admin, its
+ * sign-in page, the root not-found and global-error all fell through to the
+ * browser's implicit request for /favicon.ico and drew the bundled default.
+ * An operator's uploaded favicon appearing on the public site but not on the
+ * admin they spend their day in is the shape that reported it.
+ *
+ * `generateMetadata` rather than a static `metadata`, so the favicon and the
+ * search-result mark can come from the CMS (/admin/settings?tab=brand). The
+ * read is `getStoreSettings` — `unstable_cache`d with a 300s revalidate and
+ * already awaited by the storefront layout body — so this adds no per-request
+ * work and touches no dynamic API, which means prerendering is unaffected.
+ * Do NOT swap it for an uncached query: a dynamic read in the ROOT layout
+ * takes every route in the app off the CDN, both surfaces at once.
+ */
+export async function generateMetadata(): Promise<Metadata> {
+  const icons = buildIconMetadata(await getStoreSettings(), BASE_URL)
+
+  return {
+    // Resolves every relative URL in every nested metadata export.
+    metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL ?? 'https://indushydraulics.com'),
+    ...(icons ? { icons } : {}),
+  }
 }
 
 // Co-locate Vercel functions with the Supabase database region (currently
