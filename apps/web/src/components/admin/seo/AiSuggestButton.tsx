@@ -120,7 +120,7 @@ export default function AiSuggestButton({
       </button>
 
       {open && (
-        <div className="absolute z-20 right-0 mt-1 w-[480px] border border-ih-border bg-ih-surface shadow-lg p-4">
+        <div className="absolute z-20 right-0 mt-1 w-[480px] rounded-lg border border-ih-border bg-ih-surface shadow-lg p-4">
           <div className="flex items-center justify-between mb-3">
             <p className="font-mono text-[10.5px] tracking-[0.1em] uppercase text-ih-muted">
               AI Suggestion

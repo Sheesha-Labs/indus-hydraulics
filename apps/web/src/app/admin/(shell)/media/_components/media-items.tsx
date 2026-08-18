@@ -333,7 +333,7 @@ export function MediaEmptyState({
   resetHref: string
 }) {
   return (
-    <div className="rounded-lg rounded-lg border border-ih-border py-16 text-center">
+    <div className="rounded-lg border border-ih-border py-16 text-center">
       {trashed ? (
         <>
           <p className="text-[13.5px] text-ih-ink-2">Trash is empty.</p>

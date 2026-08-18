@@ -12,13 +12,7 @@ import {
   type SeoEntityType,
   type ChangeFreq,
 } from '@indus/domain'
-import {
-  CharCounter,
-  JsonLdPreview,
-  OgPreview,
-  SerpPreview,
-  SeoHealthBadge,
-} from '@indus/ui'
+import { CharCounter, JsonLdPreview, OgPreview, SeoHealthBadge, SerpPreview, controlClassName, controlHeightClassName } from '@indus/ui'
 import type { Result } from '../../../lib/result'
 import OgImagePicker, { type RecentMedia } from './OgImagePicker'
 import FocusKeywordChecklist from './FocusKeywordChecklist'
@@ -309,7 +303,7 @@ export default function SeoEntityDrawer({
   return (
     <form
       action={handleSubmit}
-      className="bg-ih-surface border border-ih-border max-w-5xl"
+      className="rounded-lg border border-ih-border bg-ih-surface max-w-5xl"
     >
       {/* Sub-tab nav */}
       <div className="flex border-b border-ih-border px-4 overflow-x-auto">
@@ -635,12 +629,16 @@ export default function SeoEntityDrawer({
 // Local helpers
 // ─────────────────────────────────────────────────────────────────────────────
 
-const inputCls =
-  'h-9 w-full px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent'
-const textareaCls =
-  'w-full px-3 py-2 border border-ih-border bg-ih-surface text-[13px] resize-y focus:outline-none focus:border-ih-accent'
-const selectCls =
-  'h-9 w-full px-2 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent'
+/*
+  One definition, in packages/ui. These used to be three private copies of a
+  36px box with `focus:` instead of `focus-visible:` and no radius — so a click
+  on a filled field drew a ring, and no control in the admin matched the design
+  language. They dress ~258 raw controls between them, which is why they are
+  re-pointed rather than each call site being rewritten.
+*/
+const inputCls = `${controlClassName} ${controlHeightClassName}`
+const textareaCls = `${controlClassName} resize-y py-2`
+const selectCls = `${controlClassName} ${controlHeightClassName}`
 
 function FieldBlock({
   label,

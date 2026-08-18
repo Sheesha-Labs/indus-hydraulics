@@ -118,7 +118,7 @@ export default function BlueprintImagePanel({
   }
 
   return (
-    <section className="border border-ih-border bg-ih-surface">
+    <section className="rounded-lg border border-ih-border bg-ih-surface">
       <div className="grid grid-cols-[1fr_150px] gap-5 border-b border-ih-border p-5">
         <div>
           <div className="mb-2 flex items-center gap-2">
@@ -154,7 +154,7 @@ export default function BlueprintImagePanel({
         )}
 
         {!generationAvailable && (
-          <div className="mb-4 border border-ih-border bg-ih-surface-2 px-4 py-3 text-[12px] text-ih-muted">
+          <div className="mb-4 rounded-lg border border-ih-border bg-ih-surface-2 px-4 py-3 text-[12px] text-ih-muted">
             Generation is installed but inactive. Configure <code>OPENAI_API_KEY</code> in the admin
             environment and ensure the Inngest worker is connected.
           </div>
@@ -202,7 +202,7 @@ export default function BlueprintImagePanel({
                 rows={16}
                 maxLength={12000}
                 placeholder="Select Generate prompt to author a complete blueprint image brief from this product title."
-                className="w-full border border-ih-border bg-ih-surface px-3 py-3 font-mono text-[11px] leading-5"
+                className="w-full rounded-lg border border-ih-border bg-ih-surface px-3 py-3 font-mono text-[11px] leading-5"
               />
             </label>
             <div className="flex items-center justify-between gap-4">
@@ -283,7 +283,7 @@ export default function BlueprintImagePanel({
               <img
                 src={context.storagePath}
                 alt={`${context.productSnapshot.title} generated blueprint draft`}
-                className="aspect-[4/3] w-full border border-ih-border bg-ih-surface object-contain"
+                className="aspect-[4/3] w-full rounded-lg border border-ih-border bg-ih-surface object-contain"
               />
               <p className="mt-2 font-mono text-[11px] text-ih-muted">
                 DRAFT · ATTEMPT {context.attempts} · NOT YET ON PRODUCT PAGE
@@ -311,7 +311,7 @@ export default function BlueprintImagePanel({
                   rows={4}
                   maxLength={1000}
                   placeholder="Example: Correct the temperature label to -40°C to +100°C and make the twin steel helix more visible."
-                  className="w-full border border-ih-border bg-ih-surface px-3 py-2 text-[13px] leading-5"
+                  className="w-full rounded-lg border border-ih-border bg-ih-surface px-3 py-2 text-[13px] leading-5"
                 />
               </label>
 

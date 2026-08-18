@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useRef, useState, useTransition } from 'react'
+import { controlClassName, controlHeightClassName } from '@indus/ui'
 import { useSearchParams } from 'next/navigation'
 import SeoEntityDrawer, { type SeoDrawerEntity } from '../../../../../../components/admin/seo/SeoEntityDrawer'
 import type { RecentMedia } from '../../../../../../components/admin/seo/OgImagePicker'
@@ -369,7 +370,7 @@ function CoreTab({
   }
 
   return (
-    <form action={onSubmit} className="flex flex-col gap-5 bg-ih-surface border border-ih-border p-6 max-w-3xl">
+    <form action={onSubmit} className="flex flex-col gap-5 rounded-lg border border-ih-border bg-ih-surface p-6 max-w-3xl">
       <input type="hidden" name="id" value={product.id} />
 
       {error && <ErrorBanner message={error} />}
@@ -490,7 +491,7 @@ function DescriptionTab({
   }
 
   return (
-    <form action={onSubmit} className="flex flex-col gap-4 bg-ih-surface border border-ih-border p-6 max-w-4xl">
+    <form action={onSubmit} className="flex flex-col gap-4 rounded-lg border border-ih-border bg-ih-surface p-6 max-w-4xl">
       <input type="hidden" name="id" value={product.id} />
 
       {error && <ErrorBanner message={error} />}
@@ -525,7 +526,7 @@ function DescriptionTab({
           value={body}
           onChange={(e) => setBody(e.target.value)}
           rows={20}
-          className="w-full px-3 py-2 border border-ih-border bg-ih-surface text-[13px] font-mono leading-relaxed resize-y"
+          className="w-full px-3 py-2 rounded-lg border border-ih-border bg-ih-surface text-[13px] font-mono leading-relaxed resize-y"
         />
         <span className="text-[11px] text-ih-muted-2">
           Markdown supported · {body.length.toLocaleString()} / 20,000 chars · Use <code>![alt](url)</code> to embed images.
@@ -562,7 +563,7 @@ function CommerceTab({
   }
 
   return (
-    <form action={onSubmit} className="flex flex-col gap-5 bg-ih-surface border border-ih-border p-6 max-w-3xl">
+    <form action={onSubmit} className="flex flex-col gap-5 rounded-lg border border-ih-border bg-ih-surface p-6 max-w-3xl">
       <input type="hidden" name="id" value={product.id} />
 
       {error && <ErrorBanner message={error} />}
@@ -819,7 +820,7 @@ function TemplateSelector({
   }
 
   return (
-    <section className="bg-ih-surface border border-ih-border p-5 flex flex-col gap-3">
+    <section className="rounded-lg border border-ih-border bg-ih-surface p-5 flex flex-col gap-3">
       <div className="flex items-center justify-between">
         <h3 className="text-[14px] font-medium text-ih-ink">Spec template</h3>
         {currentTemplate && (
@@ -839,7 +840,7 @@ function TemplateSelector({
         <select
           value={draftId}
           onChange={(e) => setDraftId(e.target.value)}
-          className="h-9 px-2 border border-ih-border bg-ih-surface text-[13px] flex-1 max-w-[300px]"
+          className="h-9 px-2 rounded-lg border border-ih-border bg-ih-surface text-[13px] flex-1 max-w-[300px]"
         >
           <option value="">— None (free-form specs only) —</option>
           {availableTemplates.map((t) => (
@@ -911,7 +912,7 @@ function TemplateSpecForm({
     <form
       ref={formRef}
       action={onSubmit}
-      className="bg-ih-surface border border-ih-border flex flex-col"
+      className="rounded-lg border border-ih-border bg-ih-surface flex flex-col"
     >
       <input type="hidden" name="productId" value={productId} />
 
@@ -979,7 +980,7 @@ function TemplateFieldInput({
 }) {
   const inputName = `field:${field.id}`
   const baseCls =
-    'h-9 w-full px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-ink'
+    'h-9 w-full px-3 rounded-lg border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-ink'
 
   let control: React.ReactNode
   if (field.dataType === 'select') {
@@ -1085,7 +1086,7 @@ function FreeFormSpecsSection({
 
       {specs.length > 0 &&
         Object.entries(groups).map(([group, items]) => (
-          <div key={group} className="bg-ih-surface border border-ih-border">
+          <div key={group} className="rounded-lg border border-ih-border bg-ih-surface">
             <div className="px-4 py-2.5 border-b border-ih-border bg-ih-bg font-mono text-[10.5px] tracking-[0.1em] uppercase text-ih-muted">
               {group}
             </div>
@@ -1138,7 +1139,7 @@ function SpecRow({
     return (
       <form
         action={onUpdate}
-        className="grid grid-cols-[1fr_1fr_1fr_80px_60px_auto_auto] gap-2 px-4 py-2.5 items-end border-t border-ih-border bg-ih-bg"
+        className={`${SPEC_COLS_EDIT} items-end border-t border-ih-border bg-ih-bg px-4 py-2.5`}
       >
         <input type="hidden" name="id" value={spec.id} />
         <input type="hidden" name="productId" value={productId} />
@@ -1146,24 +1147,24 @@ function SpecRow({
           name="group"
           defaultValue={spec.group}
           placeholder="Group"
-          className="h-8 px-2 border border-ih-border bg-ih-surface text-[12px]"
+          className="h-8 px-2 rounded-lg border border-ih-border bg-ih-surface text-[12px]"
         />
         <input
           name="label"
           required
           defaultValue={spec.label}
-          className="h-8 px-2 border border-ih-border bg-ih-surface text-[12px]"
+          className="h-8 px-2 rounded-lg border border-ih-border bg-ih-surface text-[12px]"
         />
         <input
           name="value"
           required
           defaultValue={spec.value}
-          className="h-8 px-2 border border-ih-border bg-ih-surface font-mono text-[12px]"
+          className="h-8 px-2 rounded-lg border border-ih-border bg-ih-surface font-mono text-[12px]"
         />
         <input
           name="unit"
           defaultValue={spec.unit ?? ''}
-          className="h-8 px-2 border border-ih-border bg-ih-surface font-mono text-[12px]"
+          className="h-8 px-2 rounded-lg border border-ih-border bg-ih-surface font-mono text-[12px]"
         />
         <label className="flex items-center gap-1 text-[11px]">
           <input type="checkbox" name="isFilterable" defaultChecked={spec.isFilterable} />
@@ -1193,7 +1194,7 @@ function SpecRow({
   }
 
   return (
-    <div className="grid grid-cols-[1fr_1fr_80px_60px_120px] gap-3 px-4 py-2.5 items-center text-[13px] border-t border-ih-border">
+    <div className={`${SPEC_COLS_DISPLAY} items-center border-t border-ih-border px-4 py-2.5 text-[14px]`}>
       <div className="text-ih-ink-2">{spec.label}</div>
       <div className="font-mono text-ih-ink">{spec.value}</div>
       <div className="font-mono text-[11px] text-ih-muted">{spec.unit ?? ''}</div>
@@ -1247,7 +1248,7 @@ function AddSpecForm({
     <form
       ref={formRef}
       action={onSubmit}
-      className="bg-ih-surface border border-ih-border p-4 grid grid-cols-[1fr_1fr_1fr_80px_auto_auto] gap-3 items-end"
+      className="rounded-lg border border-ih-border bg-ih-surface p-4 grid grid-cols-[1fr_1fr_1fr_80px_auto_auto] gap-3 items-end"
     >
       <input type="hidden" name="productId" value={productId} />
       <Field label="Group">
@@ -1350,7 +1351,7 @@ function ImagesTab({
       {images.length === 0 ? (
         <p className="text-[13px] text-ih-muted">No images yet — paste a URL below to add the first one.</p>
       ) : (
-        <div className="bg-ih-surface border border-ih-border">
+        <div className="rounded-lg border border-ih-border bg-ih-surface">
           {images.map((img, i) => (
             <div
               key={img.id}
@@ -1408,7 +1409,7 @@ function ImagesTab({
       <form
         ref={formRef}
         action={onAdd}
-        className="bg-ih-surface border border-ih-border p-4 flex flex-col gap-3"
+        className="rounded-lg border border-ih-border bg-ih-surface p-4 flex flex-col gap-3"
         encType="multipart/form-data"
       >
         <input type="hidden" name="productId" value={productId} />
@@ -1498,7 +1499,7 @@ function DocumentsTab({
       {documents.length === 0 ? (
         <p className="text-[13px] text-ih-muted">No documents yet.</p>
       ) : (
-        <div className="bg-ih-surface border border-ih-border">
+        <div className="rounded-lg border border-ih-border bg-ih-surface">
           {documents.map((d, i) => (
             <div
               key={d.id}
@@ -1538,7 +1539,7 @@ function DocumentsTab({
       <form
         ref={formRef}
         action={onAdd}
-        className="bg-ih-surface border border-ih-border p-4 grid grid-cols-2 gap-3"
+        className="rounded-lg border border-ih-border bg-ih-surface p-4 grid grid-cols-2 gap-3"
         encType="multipart/form-data"
       >
         <input type="hidden" name="productId" value={productId} />
@@ -1615,8 +1616,8 @@ function CrossRefsTab({
       {crossRefs.length === 0 ? (
         <p className="text-[13px] text-ih-muted">No cross-references yet.</p>
       ) : (
-        <div className="bg-ih-surface border border-ih-border">
-          <div className="grid grid-cols-[1fr_1fr_140px_120px] gap-3 px-4 py-2.5 border-b border-ih-border bg-ih-bg font-mono text-[10.5px] tracking-[0.1em] uppercase text-ih-muted">
+        <div className="rounded-lg border border-ih-border bg-ih-surface">
+          <div className={`${XREF_COLS_DISPLAY} border-b border-ih-border bg-ih-bg px-4 py-2.5 text-[13px] font-medium text-ih-muted-2`}>
             <div>Competitor brand</div>
             <div>MPN</div>
             <div>Compatibility</div>
@@ -1670,7 +1671,7 @@ function CrossRefRow({
     return (
       <form
         action={onUpdate}
-        className="grid grid-cols-[1fr_1fr_140px_140px] gap-2 px-4 py-2.5 items-end border-t border-ih-border bg-ih-bg"
+        className={`${XREF_COLS_EDIT} items-end border-t border-ih-border bg-ih-bg px-4 py-2.5`}
       >
         <input type="hidden" name="id" value={cr.id} />
         <input type="hidden" name="productId" value={productId} />
@@ -1678,18 +1679,18 @@ function CrossRefRow({
           name="competitorBrand"
           required
           defaultValue={cr.competitorBrand}
-          className="h-8 px-2 border border-ih-border bg-ih-surface text-[12px]"
+          className="h-8 px-2 rounded-lg border border-ih-border bg-ih-surface text-[12px]"
         />
         <input
           name="competitorMpn"
           required
           defaultValue={cr.competitorMpn}
-          className="h-8 px-2 border border-ih-border bg-ih-surface font-mono text-[12px]"
+          className="h-8 px-2 rounded-lg border border-ih-border bg-ih-surface font-mono text-[12px]"
         />
         <select
           name="compatibility"
           defaultValue={cr.compatibility}
-          className="h-8 px-2 border border-ih-border bg-ih-surface text-[12px]"
+          className="h-8 px-2 rounded-lg border border-ih-border bg-ih-surface text-[12px]"
         >
           <option value="direct">Direct</option>
           <option value="compatible">Compatible</option>
@@ -1721,7 +1722,7 @@ function CrossRefRow({
   }
 
   return (
-    <div className="grid grid-cols-[1fr_1fr_140px_120px] gap-3 px-4 py-2.5 items-center text-[13px] border-t border-ih-border">
+    <div className={`${XREF_COLS_DISPLAY} items-center border-t border-ih-border px-4 py-2.5 text-[14px]`}>
       <div className="text-ih-ink-2">{cr.competitorBrand}</div>
       <div className="font-mono text-ih-ink">{cr.competitorMpn}</div>
       <div className="font-mono text-[11px] text-ih-muted capitalize">
@@ -1776,7 +1777,7 @@ function AddCrossRefForm({
     <form
       ref={formRef}
       action={onSubmit}
-      className="bg-ih-surface border border-ih-border p-4 grid grid-cols-[1fr_1fr_140px_auto] gap-3 items-end"
+      className="rounded-lg border border-ih-border bg-ih-surface p-4 grid grid-cols-[1fr_1fr_140px_auto] gap-3 items-end"
     >
       <input type="hidden" name="productId" value={productId} />
       <Field label="Competitor brand *">
@@ -1827,7 +1828,7 @@ function FaqsTab({
       {faqs.length === 0 ? (
         <p className="text-[13px] text-ih-muted">No FAQs yet — add the first one below.</p>
       ) : (
-        <div className="bg-ih-surface border border-ih-border flex flex-col">
+        <div className="rounded-lg border border-ih-border bg-ih-surface flex flex-col">
           {faqs.map((f, i) => (
             <FaqRow
               key={f.id}
@@ -2013,7 +2014,7 @@ function AddFaqForm({
     <form
       ref={formRef}
       action={onSubmit}
-      className="bg-ih-surface border border-ih-border p-4 flex flex-col gap-3"
+      className="rounded-lg border border-ih-border bg-ih-surface p-4 flex flex-col gap-3"
     >
       <input type="hidden" name="productId" value={productId} />
       <Field label="Question *">
@@ -2095,14 +2096,36 @@ function rootOf(url: string): string {
   }
 }
 
+/*
+  Sub-table column templates, named.
+
+  These were inline strings repeated per row, and the display and edit
+  templates for one table sat ~50 lines apart with no way to compare them:
+  the spec table's display row declares five columns at gap-3 and its edit row
+  seven at gap-2, so the layout shifts the instant you click Edit. The counts
+  differ for a real reason — editing splits a combined cell into separate
+  inputs — but the GAP difference was drift, and neither was visible before.
+
+  Naming them is the interim fix. Moving these tables to DataTable is the
+  correct one and belongs with whatever change next opens this file.
+*/
+const SPEC_COLS_DISPLAY = 'grid grid-cols-[1fr_1fr_80px_60px_120px] gap-3'
+const SPEC_COLS_EDIT = 'grid grid-cols-[1fr_1fr_1fr_80px_60px_auto_auto] gap-3'
+const XREF_COLS_DISPLAY = 'grid grid-cols-[1fr_1fr_140px_120px] gap-3'
+const XREF_COLS_EDIT = 'grid grid-cols-[1fr_1fr_140px_140px] gap-3'
+
 // ── Shared primitives ───────────────────────────────────────────────────────
 
-const inputCls =
-  'h-9 w-full px-3 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent'
-const textareaCls =
-  'w-full px-3 py-2 border border-ih-border bg-ih-surface text-[13px] resize-y focus:outline-none focus:border-ih-accent'
-const selectCls =
-  'h-9 w-full px-2 border border-ih-border bg-ih-surface text-[13px] focus:outline-none focus:border-ih-accent'
+/*
+  One definition, in packages/ui. These used to be three private copies of a
+  36px box with `focus:` instead of `focus-visible:` and no radius — so a click
+  on a filled field drew a ring, and no control in the admin matched the design
+  language. They dress ~258 raw controls between them, which is why they are
+  re-pointed rather than each call site being rewritten.
+*/
+const inputCls = `${controlClassName} ${controlHeightClassName}`
+const textareaCls = `${controlClassName} resize-y py-2`
+const selectCls = `${controlClassName} ${controlHeightClassName}`
 
 function Field({
   label,

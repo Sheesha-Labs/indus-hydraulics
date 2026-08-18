@@ -99,7 +99,7 @@ function BasicInfoForm({ template }: { template: Template }) {
   }
 
   return (
-    <form action={onSubmit} className="bg-ih-surface border border-ih-border p-5 grid gap-3">
+    <form action={onSubmit} className="rounded-lg border border-ih-border bg-ih-surface p-5 grid gap-3">
       <input type="hidden" name="id" value={template.id} />
       <div className="grid grid-cols-2 gap-3">
         <Field label="Name *">
@@ -107,7 +107,7 @@ function BasicInfoForm({ template }: { template: Template }) {
             required
             name="name"
             defaultValue={template.name}
-            className="h-9 px-3 border border-ih-border bg-ih-surface text-[13px]"
+            className="h-9 px-3 rounded-lg border border-ih-border bg-ih-surface text-[13px]"
           />
         </Field>
         <Field label="Slug *">
@@ -115,7 +115,7 @@ function BasicInfoForm({ template }: { template: Template }) {
             required
             name="slug"
             defaultValue={template.slug}
-            className="h-9 px-3 border border-ih-border bg-ih-surface font-mono text-[12px]"
+            className="h-9 px-3 rounded-lg border border-ih-border bg-ih-surface font-mono text-[12px]"
           />
         </Field>
       </div>
@@ -124,7 +124,7 @@ function BasicInfoForm({ template }: { template: Template }) {
           name="description"
           defaultValue={template.description ?? ''}
           rows={2}
-          className="px-3 py-2 border border-ih-border bg-ih-surface text-[13px] resize-y"
+          className="px-3 py-2 rounded-lg border border-ih-border bg-ih-surface text-[13px] resize-y"
         />
       </Field>
       <div className="flex items-center gap-2 pt-2">
@@ -178,7 +178,7 @@ function FieldManager({
           </button>
         </div>
       ) : (
-        <div className="bg-ih-surface border border-ih-border">
+        <div className="rounded-lg border border-ih-border bg-ih-surface">
           <div className="grid grid-cols-[40px_1fr_140px_120px_80px_140px_100px] px-4 py-2.5 bg-ih-bg border-b border-ih-border font-mono text-[10.5px] tracking-[0.1em] uppercase text-ih-muted">
             <div />
             <div>Label / key</div>
@@ -301,7 +301,7 @@ function FieldForm({
   }
 
   return (
-    <form action={onSubmit} className="bg-ih-surface border border-ih-border p-5 grid gap-3">
+    <form action={onSubmit} className="rounded-lg border border-ih-border bg-ih-surface p-5 grid gap-3">
       <input type="hidden" name="templateId" value={templateId} />
       {existing && <input type="hidden" name="id" value={existing.id} />}
 
@@ -312,7 +312,7 @@ function FieldForm({
             name="label"
             defaultValue={existing?.label ?? ''}
             placeholder="Operating pressure"
-            className="h-9 px-3 border border-ih-border bg-ih-surface text-[13px]"
+            className="h-9 px-3 rounded-lg border border-ih-border bg-ih-surface text-[13px]"
           />
         </Field>
         <Field
@@ -327,7 +327,7 @@ function FieldForm({
             name="key"
             defaultValue={existing?.key ?? ''}
             placeholder="operating_pressure"
-            className="h-9 px-3 border border-ih-border bg-ih-surface font-mono text-[12px]"
+            className="h-9 px-3 rounded-lg border border-ih-border bg-ih-surface font-mono text-[12px]"
           />
         </Field>
       </div>
@@ -338,7 +338,7 @@ function FieldForm({
             name="dataType"
             value={dataType}
             onChange={(e) => setDataType(e.target.value as FieldRow['dataType'])}
-            className="h-9 px-2 border border-ih-border bg-ih-surface text-[13px]"
+            className="h-9 px-2 rounded-lg border border-ih-border bg-ih-surface text-[13px]"
           >
             <option value="text">Text</option>
             <option value="number">Number</option>
@@ -351,7 +351,7 @@ function FieldForm({
             name="unit"
             defaultValue={existing?.unit ?? ''}
             placeholder="bar"
-            className="h-9 px-3 border border-ih-border bg-ih-surface font-mono text-[12px]"
+            className="h-9 px-3 rounded-lg border border-ih-border bg-ih-surface font-mono text-[12px]"
           />
         </Field>
         <Field label="Group" hint="Section header in the tech-specs tab">
@@ -359,7 +359,7 @@ function FieldForm({
             name="group"
             defaultValue={existing?.group ?? ''}
             placeholder="Hydraulic performance"
-            className="h-9 px-3 border border-ih-border bg-ih-surface text-[13px]"
+            className="h-9 px-3 rounded-lg border border-ih-border bg-ih-surface text-[13px]"
           />
         </Field>
       </div>
@@ -371,7 +371,7 @@ function FieldForm({
             defaultValue={existing?.options?.join('\n') ?? ''}
             rows={4}
             placeholder={'1-wire\n2-wire\nspiral'}
-            className="px-3 py-2 border border-ih-border bg-ih-surface text-[13px] font-mono resize-y"
+            className="px-3 py-2 rounded-lg border border-ih-border bg-ih-surface text-[13px] font-mono resize-y"
           />
         </Field>
       )}
@@ -380,7 +380,7 @@ function FieldForm({
         <input
           name="helpText"
           defaultValue={existing?.helpText ?? ''}
-          className="h-9 px-3 border border-ih-border bg-ih-surface text-[13px]"
+          className="h-9 px-3 rounded-lg border border-ih-border bg-ih-surface text-[13px]"
         />
       </Field>
 
@@ -454,12 +454,12 @@ function PdpZonePreview({
   isKeyFeature: boolean
   isQuickSpec: boolean
 }) {
-  const off = 'border border-ih-border bg-ih-surface-2'
+  const off = 'rounded-lg border border-ih-border bg-ih-surface-2'
   const onHi =
     'border border-ih-accent bg-[oklch(0.96_0.06_70)] ring-1 ring-ih-accent'
   return (
     <div className="flex items-start gap-3">
-      <div className="w-[180px] border border-ih-border bg-ih-surface p-2 flex flex-col gap-1.5 select-none">
+      <div className="w-[180px] rounded-lg border border-ih-border bg-ih-surface p-2 flex flex-col gap-1.5 select-none">
         <div className="flex gap-2">
           {/* Image placeholder */}
           <div className="w-[72px] h-[80px] bg-ih-surface-2 border border-ih-border shrink-0" />
@@ -589,7 +589,7 @@ function AttachedProductsList({
   }
 
   return (
-    <div className="bg-ih-surface border border-ih-border">
+    <div className="rounded-lg border border-ih-border bg-ih-surface">
       <div className="grid grid-cols-[140px_1fr_140px_100px_100px] px-4 py-2.5 bg-ih-bg border-b border-ih-border font-mono text-[10.5px] tracking-[0.1em] uppercase text-ih-muted">
         <div>SKU</div>
         <div>Title</div>

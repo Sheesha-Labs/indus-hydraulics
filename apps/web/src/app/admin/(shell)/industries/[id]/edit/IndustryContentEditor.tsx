@@ -102,7 +102,7 @@ function ContentForm({
   }
 
   return (
-    <section className="border border-ih-border bg-ih-surface">
+    <section className="rounded-lg border border-ih-border bg-ih-surface">
       <header className="px-5 py-4 border-b border-ih-border">
         <h2 className="text-[15px] font-medium">Content & layout</h2>
         <p className="text-[12px] text-ih-muted mt-1">
@@ -201,7 +201,7 @@ function ContentForm({
           <button
             type="submit"
             disabled={pending}
-            className="h-9 px-4 bg-ih-accent text-ih-accent-fg text-[13px] font-medium hover:bg-ih-accent-hover disabled:opacity-50"
+            className="flex h-8 items-center rounded-lg bg-ih-accent px-2.5 text-[14px] font-medium text-ih-accent-fg transition-colors hover:bg-ih-accent-hover disabled:opacity-50"
           >
             {pending ? 'Saving…' : 'Save content'}
           </button>
@@ -230,7 +230,7 @@ function CaseStudiesSection({
   const [editingId, setEditingId] = useState<string | null>(null)
 
   return (
-    <section className="border border-ih-border bg-ih-surface">
+    <section className="rounded-lg border border-ih-border bg-ih-surface">
       <header className="px-5 py-4 border-b border-ih-border flex items-center justify-between">
         <div>
           <h2 className="text-[15px] font-medium">Case studies</h2>
@@ -309,7 +309,7 @@ function CaseStudyRow({
   }
 
   return (
-    <div className="border border-ih-border bg-ih-surface-2 p-4 flex items-start justify-between gap-4">
+    <div className="rounded-lg border border-ih-border bg-ih-surface-2 p-4 flex items-start justify-between gap-4">
       <div className="flex-1 min-w-0">
         <div className="flex items-center gap-2 mb-1">
           <span className="font-mono text-[10.5px] tracking-[0.08em] uppercase text-ih-muted">
@@ -333,7 +333,7 @@ function CaseStudyRow({
         <button
           type="button"
           onClick={onEdit}
-          className="h-7 px-3 text-[11px] border border-ih-border bg-ih-surface hover:border-ih-accent"
+          className="h-7 px-3 text-[11px] rounded-lg border border-ih-border bg-ih-surface hover:border-ih-accent"
         >
           Edit
         </button>
@@ -341,7 +341,7 @@ function CaseStudyRow({
           type="button"
           onClick={onDelete}
           disabled={pending}
-          className="h-7 px-3 text-[11px] border border-ih-border bg-ih-surface text-ih-danger-ink hover:border-[oklch(0.55_0.16_25)] disabled:opacity-50"
+          className="h-7 px-3 text-[11px] rounded-lg border border-ih-border bg-ih-surface text-ih-danger-ink hover:border-[oklch(0.55_0.16_25)] disabled:opacity-50"
         >
           {pending ? 'Deleting…' : 'Delete'}
         </button>

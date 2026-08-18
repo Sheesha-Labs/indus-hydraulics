@@ -68,23 +68,21 @@ export default function IndustryEditorClient({ contentEditor, industry, recentIm
         )}
         <Link
           href="/admin/industries"
-          className="h-9 px-3 grid place-items-center font-mono text-[12px] border border-ih-border hover:bg-ih-surface-2"
+          className="flex h-8 items-center rounded-lg border border-ih-border-strong px-2.5 text-[14px] font-medium text-ih-ink transition-colors hover:bg-ih-surface-2"
         >
-      {contentEditor}
-
           ← All industries
         </Link>
         </>
       }
     >
 
-      <div className="flex border-b border-ih-border mt-6 mb-6">
+      <div className="mb-6 flex border-b border-ih-border">
         {TABS.map((t) => (
           <button
             key={t.id}
             type="button"
             onClick={() => setTab(t.id)}
-            className={`px-4 py-2.5 font-mono text-[12px] border-b-2 -mb-px ${
+            className={`-mb-px border-b-2 px-3 py-2.5 text-[14px] font-medium ${
               tab === t.id
                 ? 'border-ih-accent text-ih-ink'
                 : 'border-transparent text-ih-muted hover:text-ih-ink-2'
@@ -95,16 +93,9 @@ export default function IndustryEditorClient({ contentEditor, industry, recentIm
         ))}
       </div>
 
-      {tab === 'core' && (
-        <div className="max-w-2xl text-[13px] text-ih-muted rounded-lg border border-ih-border p-6">
-          The Core editor for industry metadata (name, slug, description, hero, published)
-          still lives on the{' '}
-          <Link href="/admin/industries" className="underline">
-            Industries list
-          </Link>{' '}
-          modal. Migrating those fields to this dedicated page is a follow-up.
-        </div>
-      )}
+      {/* Same fix as the brand editor: this was nested inside the topbar's
+          back-link anchor. See BrandEditorClient for the full note. */}
+      {tab === 'core' && contentEditor}
 
       {tab === 'seo' && (
         <SeoEntityDrawer

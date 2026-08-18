@@ -14,13 +14,30 @@ import { cn } from './lib/utils'
  * its own — the message does — so `error` is a string, not a boolean.
  */
 
-const fieldBase = cn(
+/**
+ * The control's own class string, exported.
+ *
+ * Three admin files keep their own `inputCls` / `selectCls` / `textareaCls`
+ * constants — the product editor, the SEO drawer and the staff invite panel —
+ * each a slightly different 36px box with `focus:` rather than
+ * `focus-visible:` and no radius. Between them they dress ~258 raw controls,
+ * which is far too many call sites to convert by hand in one change.
+ *
+ * So they point AT this instead. One definition, three one-line edits, and the
+ * next person who writes `const inputCls` has somewhere obvious to point.
+ */
+export const controlClassName = cn(
   'w-full rounded-lg border bg-ih-surface px-2.5 text-[14px] text-ih-ink',
   'transition-[border-color,box-shadow] duration-150 ease-[ease]',
   'placeholder:text-ih-muted',
   'outline-none focus-visible:border-ih-accent focus-visible:ring-[3px] focus-visible:ring-ih-accent-soft',
   'disabled:cursor-not-allowed disabled:opacity-45'
 )
+
+/** Height for a single-line control. Textareas set their own. */
+export const controlHeightClassName = 'h-9'
+
+const fieldBase = controlClassName
 
 const withError = (error?: string) => (error ? 'border-ih-danger' : 'border-ih-border')
 

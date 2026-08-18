@@ -83,7 +83,7 @@ export default function OgImagePicker({
   return (
     <div className="flex flex-col gap-3">
       <div className="flex gap-3 items-start">
-        <div className="w-32 h-32 border border-ih-border bg-ih-surface-2 grid place-items-center overflow-hidden flex-shrink-0">
+        <div className="w-32 h-32 rounded-lg border border-ih-border bg-ih-surface-2 grid place-items-center overflow-hidden flex-shrink-0">
           {selected ? (
             // eslint-disable-next-line @next/next/no-img-element
             <img
@@ -102,7 +102,7 @@ export default function OgImagePicker({
             <button
               type="button"
               onClick={() => setBrowsing(true)}
-              className="inline-flex h-9 items-center gap-1.5 rounded-md border border-ih-border bg-ih-surface px-3 text-[12.5px] transition-colors hover:border-ih-accent hover:text-ih-accent"
+              className="inline-flex h-9 items-center gap-1.5 rounded-md rounded-lg border border-ih-border bg-ih-surface px-3 text-[12.5px] transition-colors hover:border-ih-accent hover:text-ih-accent"
             >
               {selected ? 'Change image' : 'Choose from library'}
             </button>
