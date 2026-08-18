@@ -1,0 +1,2386 @@
+{
+ "removedOn": "2026-08-18",
+ "reason": "No DuPont source page exists for any of these; their specs and FAQs were placeholder content (score 41, 8 specs, 8 FAQs, no data sheet). Owner chose deletion over unpublishing.",
+ "products": [
+  {
+   "id": "4989d8a6-dac5-4d56-b8ab-a5b62df4295e",
+   "sku": "IH-LUB-7438",
+   "slug": "molykote-7438",
+   "title": "Molykote 7438",
+   "status": "active",
+   "contentScore": 41,
+   "descriptionShort": "Molykote 7438 — Molykote Anti-Friction Coating. A bonded dry-film Molykote anti-friction coating that lubricates without grease.",
+   "descriptionLong": "<p>The <strong>Molykote 7438</strong> is a Molykote Anti-Friction Coating from the DuPont / Dow Performance Lubricants range. A bonded dry-film Molykote anti-friction coating that lubricates without grease. Suitable where grease cannot be retained — extreme temperature, vacuum, dust, or food contact.</p>\n<h3>Product type</h3>\n<ul>\n<li>Type: Anti-Friction Coating</li>\n<li>NLGI grade: N/A (dry film coating)</li>\n<li>Base oil / chemistry: Resin-bonded MoS2 / graphite / PTFE (binder per datasheet)</li>\n<li>Operating temperature range: -180°C to +450°C (bonded dry-film coatings withstand extreme temperature beyond grease range)</li>\n</ul>\n<h3>Typical applications</h3>\n<p>Sliding contacts, fasteners, locks, hinges, mechanisms in dust / vacuum / extreme temperature where grease cannot be retained.</p>\n<h3>Container sizes</h3>\n<p>Available in standard Molykote container sizes — typically 50 g tubes, 1 kg tins, 5 kg pails, and 25 kg drums depending on the product. Confirm exact pack sizes on the RFQ.</p>\n<h3>Compatibility &amp; certifications</h3>\n<p>Many Molykote products carry NSF H1 / H2 food-grade approvals, OEM specifications (Caterpillar, Komatsu, JCB, Volvo, etc.), and ISO 12922 / DIN 51825 / ISO 6743 industrial classifications. Refer to the product datasheet for specific approvals — Indus engineering will confirm compatibility for your application on the RFQ.</p>\n<h3>How to order</h3>\n<p>Specify (a) the Molykote part number (this product is <strong>Molykote 7438</strong>), (b) container size, and (c) quantity. For multi-pack discounts and project-quantity pricing, mention the project name and target delivery date.</p>\n<h3>Companion products</h3>\n<p>Browse the Molykote sub-section under Lubricants for compatible greases, pastes, compounds, and anti-friction coatings. Indus is an authorised Molykote distributor — full product range available on quote.</p>",
+   "seoTitle": "Molykote 7438 — Molykote Anti-Friction Coating",
+   "seoDescription": "Molykote 7438 — Molykote Anti-Friction Coating. A bonded dry-film Molykote anti-friction coating that lubricates without grease.",
+   "categoryId": "050be78b-b862-4a70-8a13-782a82ffcce5",
+   "brandId": "cce429b2-c7bb-452a-9266-7f728a20c23c",
+   "category": {
+    "slug": "molykote-anti-friction-coatings"
+   },
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Product Type",
+     "value": "anti-friction",
+     "unit": null,
+     "position": 0
+    },
+    {
+     "group": "Identification",
+     "label": "NLGI Grade",
+     "value": "N/A (dry film coating)",
+     "unit": null,
+     "position": 1
+    },
+    {
+     "group": "Composition",
+     "label": "Base Oil / Chemistry",
+     "value": "Resin-bonded MoS2 / graphite / PTFE (binder per datasheet)",
+     "unit": null,
+     "position": 2
+    },
+    {
+     "group": "Performance",
+     "label": "Operating Temperature Range",
+     "value": "-180°C to +450°C (bonded dry-film coatings withstand extreme temperature beyond grease range)",
+     "unit": null,
+     "position": 5
+    },
+    {
+     "group": "Application",
+     "label": "Typical Applications",
+     "value": "Sliding contacts, fasteners, locks, hinges, mechanisms in dust / vacuum / extreme temperature where grease cannot be retained.",
+     "unit": null,
+     "position": 9
+    },
+    {
+     "group": "Commercial",
+     "label": "Container Sizes",
+     "value": "Standard Molykote sizes (50 g tube, 1 kg tin, 5 kg pail, 25 kg drum — varies by product)",
+     "unit": null,
+     "position": 10
+    },
+    {
+     "group": "Compliance",
+     "label": "Food-Grade Status",
+     "value": "Per product datasheet (some Molykote products are NSF H1 / H2 certified — confirm specific approvals on RFQ)",
+     "unit": null,
+     "position": 8
+    },
+    {
+     "group": "Compliance",
+     "label": "Applicable Standards",
+     "value": "Per product datasheet (ISO 12922 / DIN 51825 / ISO 6743 / OEM spec as applicable)",
+     "unit": null,
+     "position": 11
+    }
+   ],
+   "faqs": [
+    {
+     "question": "What is this product used for?",
+     "answer": "Sliding contacts, fasteners, locks, hinges, mechanisms in dust / vacuum / extreme temperature where grease cannot be retained.",
+     "position": 0
+    },
+    {
+     "question": "What is the operating temperature range?",
+     "answer": "-180°C to +450°C (bonded dry-film coatings withstand extreme temperature beyond grease range). The product datasheet specifies the exact limit for Molykote 7438 — Indus engineering will confirm on the RFQ if you provide your operating conditions.",
+     "position": 1
+    },
+    {
+     "question": "What container sizes are available?",
+     "answer": "Standard Molykote container sizes — typically 50 g tubes, 1 kg tins, 5 kg pails, and 25 kg drums depending on the product. Some specialty products are also available in 400 g cartridges. Confirm exact pack sizes on the RFQ.",
+     "position": 2
+    },
+    {
+     "question": "Is this product food-grade certified?",
+     "answer": "Some Molykote products carry NSF H1 (incidental food contact) or NSF H2 (no food contact) approvals. Check the product datasheet for Molykote 7438 specifically — Indus engineering will confirm on the RFQ. NEVER assume food-grade unless explicitly certified.",
+     "position": 3
+    },
+    {
+     "question": "How does this compare to standard greases?",
+     "answer": "Bonded dry-film coatings adhere permanently to the substrate and lubricate without bleeding — ideal where any grease residue would attract contaminants (food contact, vacuum service, semiconductor manufacturing).",
+     "position": 4
+    },
+    {
+     "question": "Is Indus an authorised Molykote distributor?",
+     "answer": "Yes — Indus Hydraulics is an authorised Molykote distributor in the UAE. All Molykote products supplied by Indus are factory-original, with valid batch records and shelf-life dates. Counterfeit Molykote is prevalent in the regional market — always insist on authorised-distributor channels.",
+     "position": 5
+    },
+    {
+     "question": "What is the shelf life?",
+     "answer": "Most Molykote greases and pastes have a 24-36 month shelf life from manufacture date when stored in the original sealed container at +5°C to +35°C. Anti-friction coatings (liquid pre-coat form) typically have 12 months. Bonded coatings already applied to parts are essentially indefinite. Indus rotates stock — newer batches go to the customer.",
+     "position": 6
+    },
+    {
+     "question": "Lead time?",
+     "answer": "Common Molykote products are ex-stock from Dubai. Less-common specialty products typically ship within 2-3 weeks from RFQ confirmation (factory order from DuPont).",
+     "position": 7
+    }
+   ],
+   "images": [],
+   "documents": []
+  },
+  {
+   "id": "93e35db6-356f-4e60-a5a5-1353ebd18d43",
+   "sku": "IH-LUB-739",
+   "slug": "molykote-739",
+   "title": "Molykote 739",
+   "status": "active",
+   "contentScore": 41,
+   "descriptionShort": "Molykote 739 — Molykote Compound. A specialty Molykote compound (silicone, sealant, or grinding) for industrial sealing, dielectric, corrosion-protection, or grinding/lapping service.",
+   "descriptionLong": "<p>The <strong>Molykote 739</strong> is a Molykote Compound from the DuPont / Dow Performance Lubricants range. A specialty Molykote compound (silicone, sealant, or grinding) for industrial sealing, dielectric, corrosion-protection, or grinding/lapping service.</p>\n<h3>Product type</h3>\n<ul>\n<li>Type: Compound</li>\n<li>NLGI grade: N/A (compound, not NLGI-graded)</li>\n<li>Base oil / chemistry: Silicone (typical) — per datasheet</li>\n<li>Operating temperature range: -40°C to +200°C (silicone compounds, typical)</li>\n</ul>\n<h3>Typical applications</h3>\n<p>Electrical insulation, dielectric protection, gasket sealing, valve-stem corrosion protection, optical-fibre splice, grinding / lapping.</p>\n<h3>Container sizes</h3>\n<p>Available in standard Molykote container sizes — typically 50 g tubes, 1 kg tins, 5 kg pails, and 25 kg drums depending on the product. Confirm exact pack sizes on the RFQ.</p>\n<h3>Compatibility &amp; certifications</h3>\n<p>Many Molykote products carry NSF H1 / H2 food-grade approvals, OEM specifications (Caterpillar, Komatsu, JCB, Volvo, etc.), and ISO 12922 / DIN 51825 / ISO 6743 industrial classifications. Refer to the product datasheet for specific approvals — Indus engineering will confirm compatibility for your application on the RFQ.</p>\n<h3>How to order</h3>\n<p>Specify (a) the Molykote part number (this product is <strong>Molykote 739</strong>), (b) container size, and (c) quantity. For multi-pack discounts and project-quantity pricing, mention the project name and target delivery date.</p>\n<h3>Companion products</h3>\n<p>Browse the Molykote sub-section under Lubricants for compatible greases, pastes, compounds, and anti-friction coatings. Indus is an authorised Molykote distributor — full product range available on quote.</p>",
+   "seoTitle": "Molykote 739 — Molykote Compound",
+   "seoDescription": "Molykote 739 — Molykote Compound. A specialty Molykote compound (silicone, sealant, or grinding) for industrial sealing, dielectric, corrosion-protection, or grinding/lapping service.",
+   "categoryId": "9ec4cec0-7c56-4dbd-9cf7-f89a500ce40c",
+   "brandId": "cce429b2-c7bb-452a-9266-7f728a20c23c",
+   "category": {
+    "slug": "molykote-compounds"
+   },
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Product Type",
+     "value": "compound",
+     "unit": null,
+     "position": 0
+    },
+    {
+     "group": "Identification",
+     "label": "NLGI Grade",
+     "value": "N/A (compound, not NLGI-graded)",
+     "unit": null,
+     "position": 1
+    },
+    {
+     "group": "Composition",
+     "label": "Base Oil / Chemistry",
+     "value": "Silicone (typical) — per datasheet",
+     "unit": null,
+     "position": 2
+    },
+    {
+     "group": "Performance",
+     "label": "Operating Temperature Range",
+     "value": "-40°C to +200°C (silicone compounds, typical)",
+     "unit": null,
+     "position": 5
+    },
+    {
+     "group": "Application",
+     "label": "Typical Applications",
+     "value": "Electrical insulation, dielectric protection, gasket sealing, valve-stem corrosion protection, optical-fibre splice, grinding / lapping.",
+     "unit": null,
+     "position": 9
+    },
+    {
+     "group": "Commercial",
+     "label": "Container Sizes",
+     "value": "Standard Molykote sizes (50 g tube, 1 kg tin, 5 kg pail, 25 kg drum — varies by product)",
+     "unit": null,
+     "position": 10
+    },
+    {
+     "group": "Compliance",
+     "label": "Food-Grade Status",
+     "value": "Per product datasheet (some Molykote products are NSF H1 / H2 certified — confirm specific approvals on RFQ)",
+     "unit": null,
+     "position": 8
+    },
+    {
+     "group": "Compliance",
+     "label": "Applicable Standards",
+     "value": "Per product datasheet (ISO 12922 / DIN 51825 / ISO 6743 / OEM spec as applicable)",
+     "unit": null,
+     "position": 11
+    }
+   ],
+   "faqs": [
+    {
+     "question": "What is this product used for?",
+     "answer": "Electrical insulation, dielectric protection, gasket sealing, valve-stem corrosion protection, optical-fibre splice, grinding / lapping.",
+     "position": 0
+    },
+    {
+     "question": "What is the operating temperature range?",
+     "answer": "-40°C to +200°C (silicone compounds, typical). The product datasheet specifies the exact limit for Molykote 739 — Indus engineering will confirm on the RFQ if you provide your operating conditions.",
+     "position": 1
+    },
+    {
+     "question": "What container sizes are available?",
+     "answer": "Standard Molykote container sizes — typically 50 g tubes, 1 kg tins, 5 kg pails, and 25 kg drums depending on the product. Some specialty products are also available in 400 g cartridges. Confirm exact pack sizes on the RFQ.",
+     "position": 2
+    },
+    {
+     "question": "Is this product food-grade certified?",
+     "answer": "Some Molykote products carry NSF H1 (incidental food contact) or NSF H2 (no food contact) approvals. Check the product datasheet for Molykote 739 specifically — Indus engineering will confirm on the RFQ. NEVER assume food-grade unless explicitly certified.",
+     "position": 3
+    },
+    {
+     "question": "How does this compare to standard greases?",
+     "answer": "Compounds are silicone-based or sealant-grade — they provide dielectric protection, corrosion sealing, or grinding action rather than rolling-element lubrication.",
+     "position": 4
+    },
+    {
+     "question": "Is Indus an authorised Molykote distributor?",
+     "answer": "Yes — Indus Hydraulics is an authorised Molykote distributor in the UAE. All Molykote products supplied by Indus are factory-original, with valid batch records and shelf-life dates. Counterfeit Molykote is prevalent in the regional market — always insist on authorised-distributor channels.",
+     "position": 5
+    },
+    {
+     "question": "What is the shelf life?",
+     "answer": "Most Molykote greases and pastes have a 24-36 month shelf life from manufacture date when stored in the original sealed container at +5°C to +35°C. Anti-friction coatings (liquid pre-coat form) typically have 12 months. Bonded coatings already applied to parts are essentially indefinite. Indus rotates stock — newer batches go to the customer.",
+     "position": 6
+    },
+    {
+     "question": "Lead time?",
+     "answer": "Common Molykote products are ex-stock from Dubai. Less-common specialty products typically ship within 2-3 weeks from RFQ confirmation (factory order from DuPont).",
+     "position": 7
+    }
+   ],
+   "images": [],
+   "documents": []
+  },
+  {
+   "id": "c8f72e99-8494-470f-905b-ed6489c79724",
+   "sku": "IH-LUB-340",
+   "slug": "molykote-340",
+   "title": "Molykote 340",
+   "status": "active",
+   "contentScore": 41,
+   "descriptionShort": "Molykote 340 — Molykote Anti-Friction Coating. A bonded dry-film Molykote anti-friction coating that lubricates without grease.",
+   "descriptionLong": "<p>The <strong>Molykote 340</strong> is a Molykote Anti-Friction Coating from the DuPont / Dow Performance Lubricants range. A bonded dry-film Molykote anti-friction coating that lubricates without grease. Suitable where grease cannot be retained — extreme temperature, vacuum, dust, or food contact.</p>\n<h3>Product type</h3>\n<ul>\n<li>Type: Anti-Friction Coating</li>\n<li>NLGI grade: N/A (dry film coating)</li>\n<li>Base oil / chemistry: Resin-bonded MoS2 / graphite / PTFE (binder per datasheet)</li>\n<li>Operating temperature range: -180°C to +450°C (bonded dry-film coatings withstand extreme temperature beyond grease range)</li>\n</ul>\n<h3>Typical applications</h3>\n<p>Sliding contacts, fasteners, locks, hinges, mechanisms in dust / vacuum / extreme temperature where grease cannot be retained.</p>\n<h3>Container sizes</h3>\n<p>Available in standard Molykote container sizes — typically 50 g tubes, 1 kg tins, 5 kg pails, and 25 kg drums depending on the product. Confirm exact pack sizes on the RFQ.</p>\n<h3>Compatibility &amp; certifications</h3>\n<p>Many Molykote products carry NSF H1 / H2 food-grade approvals, OEM specifications (Caterpillar, Komatsu, JCB, Volvo, etc.), and ISO 12922 / DIN 51825 / ISO 6743 industrial classifications. Refer to the product datasheet for specific approvals — Indus engineering will confirm compatibility for your application on the RFQ.</p>\n<h3>How to order</h3>\n<p>Specify (a) the Molykote part number (this product is <strong>Molykote 340</strong>), (b) container size, and (c) quantity. For multi-pack discounts and project-quantity pricing, mention the project name and target delivery date.</p>\n<h3>Companion products</h3>\n<p>Browse the Molykote sub-section under Lubricants for compatible greases, pastes, compounds, and anti-friction coatings. Indus is an authorised Molykote distributor — full product range available on quote.</p>",
+   "seoTitle": "Molykote 340 — Molykote Anti-Friction Coating",
+   "seoDescription": "Molykote 340 — Molykote Anti-Friction Coating. A bonded dry-film Molykote anti-friction coating that lubricates without grease.",
+   "categoryId": "050be78b-b862-4a70-8a13-782a82ffcce5",
+   "brandId": "cce429b2-c7bb-452a-9266-7f728a20c23c",
+   "category": {
+    "slug": "molykote-anti-friction-coatings"
+   },
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Product Type",
+     "value": "anti-friction",
+     "unit": null,
+     "position": 0
+    },
+    {
+     "group": "Identification",
+     "label": "NLGI Grade",
+     "value": "N/A (dry film coating)",
+     "unit": null,
+     "position": 1
+    },
+    {
+     "group": "Composition",
+     "label": "Base Oil / Chemistry",
+     "value": "Resin-bonded MoS2 / graphite / PTFE (binder per datasheet)",
+     "unit": null,
+     "position": 2
+    },
+    {
+     "group": "Performance",
+     "label": "Operating Temperature Range",
+     "value": "-180°C to +450°C (bonded dry-film coatings withstand extreme temperature beyond grease range)",
+     "unit": null,
+     "position": 5
+    },
+    {
+     "group": "Application",
+     "label": "Typical Applications",
+     "value": "Sliding contacts, fasteners, locks, hinges, mechanisms in dust / vacuum / extreme temperature where grease cannot be retained.",
+     "unit": null,
+     "position": 9
+    },
+    {
+     "group": "Commercial",
+     "label": "Container Sizes",
+     "value": "Standard Molykote sizes (50 g tube, 1 kg tin, 5 kg pail, 25 kg drum — varies by product)",
+     "unit": null,
+     "position": 10
+    },
+    {
+     "group": "Compliance",
+     "label": "Food-Grade Status",
+     "value": "Per product datasheet (some Molykote products are NSF H1 / H2 certified — confirm specific approvals on RFQ)",
+     "unit": null,
+     "position": 8
+    },
+    {
+     "group": "Compliance",
+     "label": "Applicable Standards",
+     "value": "Per product datasheet (ISO 12922 / DIN 51825 / ISO 6743 / OEM spec as applicable)",
+     "unit": null,
+     "position": 11
+    }
+   ],
+   "faqs": [
+    {
+     "question": "What is this product used for?",
+     "answer": "Sliding contacts, fasteners, locks, hinges, mechanisms in dust / vacuum / extreme temperature where grease cannot be retained.",
+     "position": 0
+    },
+    {
+     "question": "What is the operating temperature range?",
+     "answer": "-180°C to +450°C (bonded dry-film coatings withstand extreme temperature beyond grease range). The product datasheet specifies the exact limit for Molykote 340 — Indus engineering will confirm on the RFQ if you provide your operating conditions.",
+     "position": 1
+    },
+    {
+     "question": "What container sizes are available?",
+     "answer": "Standard Molykote container sizes — typically 50 g tubes, 1 kg tins, 5 kg pails, and 25 kg drums depending on the product. Some specialty products are also available in 400 g cartridges. Confirm exact pack sizes on the RFQ.",
+     "position": 2
+    },
+    {
+     "question": "Is this product food-grade certified?",
+     "answer": "Some Molykote products carry NSF H1 (incidental food contact) or NSF H2 (no food contact) approvals. Check the product datasheet for Molykote 340 specifically — Indus engineering will confirm on the RFQ. NEVER assume food-grade unless explicitly certified.",
+     "position": 3
+    },
+    {
+     "question": "How does this compare to standard greases?",
+     "answer": "Bonded dry-film coatings adhere permanently to the substrate and lubricate without bleeding — ideal where any grease residue would attract contaminants (food contact, vacuum service, semiconductor manufacturing).",
+     "position": 4
+    },
+    {
+     "question": "Is Indus an authorised Molykote distributor?",
+     "answer": "Yes — Indus Hydraulics is an authorised Molykote distributor in the UAE. All Molykote products supplied by Indus are factory-original, with valid batch records and shelf-life dates. Counterfeit Molykote is prevalent in the regional market — always insist on authorised-distributor channels.",
+     "position": 5
+    },
+    {
+     "question": "What is the shelf life?",
+     "answer": "Most Molykote greases and pastes have a 24-36 month shelf life from manufacture date when stored in the original sealed container at +5°C to +35°C. Anti-friction coatings (liquid pre-coat form) typically have 12 months. Bonded coatings already applied to parts are essentially indefinite. Indus rotates stock — newer batches go to the customer.",
+     "position": 6
+    },
+    {
+     "question": "Lead time?",
+     "answer": "Common Molykote products are ex-stock from Dubai. Less-common specialty products typically ship within 2-3 weeks from RFQ confirmation (factory order from DuPont).",
+     "position": 7
+    }
+   ],
+   "images": [],
+   "documents": []
+  },
+  {
+   "id": "a9dc9734-bef1-41f3-903e-d1449263bc02",
+   "sku": "IH-LUB-P44-HIGH-TEMPERATURE-LUBRICANT",
+   "slug": "molykote-p44-high-temperature-lubricant",
+   "title": "Molykote P44 High Temperature Lubricant",
+   "status": "active",
+   "contentScore": 41,
+   "descriptionShort": "Molykote P44 High Temperature Lubricant — Molykote Grease. A specialty Molykote grease formulated for hydraulic, bearing, gear, or food-grade service.",
+   "descriptionLong": "<p>The <strong>Molykote P44 High Temperature Lubricant</strong> is a Molykote Grease from the DuPont / Dow Performance Lubricants range. A specialty Molykote grease formulated for hydraulic, bearing, gear, or food-grade service. Pair with the host equipment per its OEM lubricant chart.</p>\n<h3>Product type</h3>\n<ul>\n<li>Type: Grease</li>\n<li>NLGI grade: Refer to datasheet (typical: NLGI 2)</li>\n<li>Base oil / chemistry: Mineral / synthetic / silicone / PFPE (per product datasheet)</li>\n<li>Operating temperature range: -40°C to +200°C (typical; refer to datasheet for product-specific limits)</li>\n</ul>\n<h3>Typical applications</h3>\n<p>Bearings, gears, slides, seals, valve stems, and general industrial / hydraulic lubrication.</p>\n<h3>Container sizes</h3>\n<p>Available in standard Molykote container sizes — typically 50 g tubes, 1 kg tins, 5 kg pails, and 25 kg drums depending on the product. Confirm exact pack sizes on the RFQ.</p>\n<h3>Compatibility &amp; certifications</h3>\n<p>Many Molykote products carry NSF H1 / H2 food-grade approvals, OEM specifications (Caterpillar, Komatsu, JCB, Volvo, etc.), and ISO 12922 / DIN 51825 / ISO 6743 industrial classifications. Refer to the product datasheet for specific approvals — Indus engineering will confirm compatibility for your application on the RFQ.</p>\n<h3>How to order</h3>\n<p>Specify (a) the Molykote part number (this product is <strong>Molykote P44 High Temperature Lubricant</strong>), (b) container size, and (c) quantity. For multi-pack discounts and project-quantity pricing, mention the project name and target delivery date.</p>\n<h3>Companion products</h3>\n<p>Browse the Molykote sub-section under Lubricants for compatible greases, pastes, compounds, and anti-friction coatings. Indus is an authorised Molykote distributor — full product range available on quote.</p>",
+   "seoTitle": "Molykote P44 High Temperature Lubricant — Molykote Grease",
+   "seoDescription": "Molykote P44 High Temperature Lubricant — Molykote Grease. A specialty Molykote grease formulated for hydraulic, bearing, gear, or food-grade service.",
+   "categoryId": "2f9a7d66-034f-4a3e-965c-d3e402c5d1b0",
+   "brandId": "cce429b2-c7bb-452a-9266-7f728a20c23c",
+   "category": {
+    "slug": "molykote-greases"
+   },
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Product Type",
+     "value": "grease",
+     "unit": null,
+     "position": 0
+    },
+    {
+     "group": "Identification",
+     "label": "NLGI Grade",
+     "value": "Refer to datasheet (typical: NLGI 2)",
+     "unit": null,
+     "position": 1
+    },
+    {
+     "group": "Composition",
+     "label": "Base Oil / Chemistry",
+     "value": "Mineral / synthetic / silicone / PFPE (per product datasheet)",
+     "unit": null,
+     "position": 2
+    },
+    {
+     "group": "Performance",
+     "label": "Operating Temperature Range",
+     "value": "-40°C to +200°C (typical; refer to datasheet for product-specific limits)",
+     "unit": null,
+     "position": 5
+    },
+    {
+     "group": "Application",
+     "label": "Typical Applications",
+     "value": "Bearings, gears, slides, seals, valve stems, and general industrial / hydraulic lubrication.",
+     "unit": null,
+     "position": 9
+    },
+    {
+     "group": "Commercial",
+     "label": "Container Sizes",
+     "value": "Standard Molykote sizes (50 g tube, 1 kg tin, 5 kg pail, 25 kg drum — varies by product)",
+     "unit": null,
+     "position": 10
+    },
+    {
+     "group": "Compliance",
+     "label": "Food-Grade Status",
+     "value": "Per product datasheet (some Molykote products are NSF H1 / H2 certified — confirm specific approvals on RFQ)",
+     "unit": null,
+     "position": 8
+    },
+    {
+     "group": "Compliance",
+     "label": "Applicable Standards",
+     "value": "Per product datasheet (ISO 12922 / DIN 51825 / ISO 6743 / OEM spec as applicable)",
+     "unit": null,
+     "position": 11
+    }
+   ],
+   "faqs": [
+    {
+     "question": "What is this product used for?",
+     "answer": "Bearings, gears, slides, seals, valve stems, and general industrial / hydraulic lubrication.",
+     "position": 0
+    },
+    {
+     "question": "What is the operating temperature range?",
+     "answer": "-40°C to +200°C (typical; refer to datasheet for product-specific limits). The product datasheet specifies the exact limit for Molykote P44 High Temperature Lubricant — Indus engineering will confirm on the RFQ if you provide your operating conditions.",
+     "position": 1
+    },
+    {
+     "question": "What container sizes are available?",
+     "answer": "Standard Molykote container sizes — typically 50 g tubes, 1 kg tins, 5 kg pails, and 25 kg drums depending on the product. Some specialty products are also available in 400 g cartridges. Confirm exact pack sizes on the RFQ.",
+     "position": 2
+    },
+    {
+     "question": "Is this product food-grade certified?",
+     "answer": "Some Molykote products carry NSF H1 (incidental food contact) or NSF H2 (no food contact) approvals. Check the product datasheet for Molykote P44 High Temperature Lubricant specifically — Indus engineering will confirm on the RFQ. NEVER assume food-grade unless explicitly certified.",
+     "position": 3
+    },
+    {
+     "question": "How does this compare to standard greases?",
+     "answer": "Molykote greases are formulated for specific applications (chemical-resistant, food-grade, high/low temperature, EP, etc.) where standard mineral greases would fail. Match the product to your operating conditions.",
+     "position": 4
+    },
+    {
+     "question": "Is Indus an authorised Molykote distributor?",
+     "answer": "Yes — Indus Hydraulics is an authorised Molykote distributor in the UAE. All Molykote products supplied by Indus are factory-original, with valid batch records and shelf-life dates. Counterfeit Molykote is prevalent in the regional market — always insist on authorised-distributor channels.",
+     "position": 5
+    },
+    {
+     "question": "What is the shelf life?",
+     "answer": "Most Molykote greases and pastes have a 24-36 month shelf life from manufacture date when stored in the original sealed container at +5°C to +35°C. Anti-friction coatings (liquid pre-coat form) typically have 12 months. Bonded coatings already applied to parts are essentially indefinite. Indus rotates stock — newer batches go to the customer.",
+     "position": 6
+    },
+    {
+     "question": "Lead time?",
+     "answer": "Common Molykote products are ex-stock from Dubai. Less-common specialty products typically ship within 2-3 weeks from RFQ confirmation (factory order from DuPont).",
+     "position": 7
+    }
+   ],
+   "images": [],
+   "documents": []
+  },
+  {
+   "id": "3574b178-bfca-4e30-a7f2-b598778161d1",
+   "sku": "IH-LUB-165-LT-A",
+   "slug": "molykote-165-lt-variant-2",
+   "title": "Molykote 165 LT (Variant 2)",
+   "status": "active",
+   "contentScore": 41,
+   "descriptionShort": "Molykote 165 LT (Variant 2) — Molykote Grease. A specialty Molykote grease formulated for hydraulic, bearing, gear, or food-grade service.",
+   "descriptionLong": "<p>The <strong>Molykote 165 LT (Variant 2)</strong> is a Molykote Grease from the DuPont / Dow Performance Lubricants range. A specialty Molykote grease formulated for hydraulic, bearing, gear, or food-grade service. Pair with the host equipment per its OEM lubricant chart.</p>\n<h3>Product type</h3>\n<ul>\n<li>Type: Grease</li>\n<li>NLGI grade: Refer to datasheet (typical: NLGI 2)</li>\n<li>Base oil / chemistry: Mineral / synthetic / silicone / PFPE (per product datasheet)</li>\n<li>Operating temperature range: -40°C to +200°C (typical; refer to datasheet for product-specific limits)</li>\n</ul>\n<h3>Typical applications</h3>\n<p>Bearings, gears, slides, seals, valve stems, and general industrial / hydraulic lubrication.</p>\n<h3>Container sizes</h3>\n<p>Available in standard Molykote container sizes — typically 50 g tubes, 1 kg tins, 5 kg pails, and 25 kg drums depending on the product. Confirm exact pack sizes on the RFQ.</p>\n<h3>Compatibility &amp; certifications</h3>\n<p>Many Molykote products carry NSF H1 / H2 food-grade approvals, OEM specifications (Caterpillar, Komatsu, JCB, Volvo, etc.), and ISO 12922 / DIN 51825 / ISO 6743 industrial classifications. Refer to the product datasheet for specific approvals — Indus engineering will confirm compatibility for your application on the RFQ.</p>\n<h3>How to order</h3>\n<p>Specify (a) the Molykote part number (this product is <strong>Molykote 165 LT (Variant 2)</strong>), (b) container size, and (c) quantity. For multi-pack discounts and project-quantity pricing, mention the project name and target delivery date.</p>\n<h3>Companion products</h3>\n<p>Browse the Molykote sub-section under Lubricants for compatible greases, pastes, compounds, and anti-friction coatings. Indus is an authorised Molykote distributor — full product range available on quote.</p>",
+   "seoTitle": "Molykote 165 LT (Variant 2) — Molykote Grease",
+   "seoDescription": "Molykote 165 LT (Variant 2) — Molykote Grease. A specialty Molykote grease formulated for hydraulic, bearing, gear, or food-grade service.",
+   "categoryId": "2f9a7d66-034f-4a3e-965c-d3e402c5d1b0",
+   "brandId": "cce429b2-c7bb-452a-9266-7f728a20c23c",
+   "category": {
+    "slug": "molykote-greases"
+   },
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Product Type",
+     "value": "grease",
+     "unit": null,
+     "position": 0
+    },
+    {
+     "group": "Identification",
+     "label": "NLGI Grade",
+     "value": "Refer to datasheet (typical: NLGI 2)",
+     "unit": null,
+     "position": 1
+    },
+    {
+     "group": "Composition",
+     "label": "Base Oil / Chemistry",
+     "value": "Mineral / synthetic / silicone / PFPE (per product datasheet)",
+     "unit": null,
+     "position": 2
+    },
+    {
+     "group": "Performance",
+     "label": "Operating Temperature Range",
+     "value": "-40°C to +200°C (typical; refer to datasheet for product-specific limits)",
+     "unit": null,
+     "position": 5
+    },
+    {
+     "group": "Application",
+     "label": "Typical Applications",
+     "value": "Bearings, gears, slides, seals, valve stems, and general industrial / hydraulic lubrication.",
+     "unit": null,
+     "position": 9
+    },
+    {
+     "group": "Commercial",
+     "label": "Container Sizes",
+     "value": "Standard Molykote sizes (50 g tube, 1 kg tin, 5 kg pail, 25 kg drum — varies by product)",
+     "unit": null,
+     "position": 10
+    },
+    {
+     "group": "Compliance",
+     "label": "Food-Grade Status",
+     "value": "Per product datasheet (some Molykote products are NSF H1 / H2 certified — confirm specific approvals on RFQ)",
+     "unit": null,
+     "position": 8
+    },
+    {
+     "group": "Compliance",
+     "label": "Applicable Standards",
+     "value": "Per product datasheet (ISO 12922 / DIN 51825 / ISO 6743 / OEM spec as applicable)",
+     "unit": null,
+     "position": 11
+    }
+   ],
+   "faqs": [
+    {
+     "question": "What is this product used for?",
+     "answer": "Bearings, gears, slides, seals, valve stems, and general industrial / hydraulic lubrication.",
+     "position": 0
+    },
+    {
+     "question": "What is the operating temperature range?",
+     "answer": "-40°C to +200°C (typical; refer to datasheet for product-specific limits). The product datasheet specifies the exact limit for Molykote 165 LT (Variant 2) — Indus engineering will confirm on the RFQ if you provide your operating conditions.",
+     "position": 1
+    },
+    {
+     "question": "What container sizes are available?",
+     "answer": "Standard Molykote container sizes — typically 50 g tubes, 1 kg tins, 5 kg pails, and 25 kg drums depending on the product. Some specialty products are also available in 400 g cartridges. Confirm exact pack sizes on the RFQ.",
+     "position": 2
+    },
+    {
+     "question": "Is this product food-grade certified?",
+     "answer": "Some Molykote products carry NSF H1 (incidental food contact) or NSF H2 (no food contact) approvals. Check the product datasheet for Molykote 165 LT (Variant 2) specifically — Indus engineering will confirm on the RFQ. NEVER assume food-grade unless explicitly certified.",
+     "position": 3
+    },
+    {
+     "question": "How does this compare to standard greases?",
+     "answer": "Molykote greases are formulated for specific applications (chemical-resistant, food-grade, high/low temperature, EP, etc.) where standard mineral greases would fail. Match the product to your operating conditions.",
+     "position": 4
+    },
+    {
+     "question": "Is Indus an authorised Molykote distributor?",
+     "answer": "Yes — Indus Hydraulics is an authorised Molykote distributor in the UAE. All Molykote products supplied by Indus are factory-original, with valid batch records and shelf-life dates. Counterfeit Molykote is prevalent in the regional market — always insist on authorised-distributor channels.",
+     "position": 5
+    },
+    {
+     "question": "What is the shelf life?",
+     "answer": "Most Molykote greases and pastes have a 24-36 month shelf life from manufacture date when stored in the original sealed container at +5°C to +35°C. Anti-friction coatings (liquid pre-coat form) typically have 12 months. Bonded coatings already applied to parts are essentially indefinite. Indus rotates stock — newer batches go to the customer.",
+     "position": 6
+    },
+    {
+     "question": "Lead time?",
+     "answer": "Common Molykote products are ex-stock from Dubai. Less-common specialty products typically ship within 2-3 weeks from RFQ confirmation (factory order from DuPont).",
+     "position": 7
+    }
+   ],
+   "images": [],
+   "documents": []
+  },
+  {
+   "id": "361ab93c-6494-4139-b1c6-fed662cfcf66",
+   "sku": "IH-LUB-165-LT",
+   "slug": "molykote-165-lt",
+   "title": "Molykote 165 LT",
+   "status": "active",
+   "contentScore": 41,
+   "descriptionShort": "Molykote 165 LT — Molykote Grease. A specialty Molykote grease formulated for hydraulic, bearing, gear, or food-grade service.",
+   "descriptionLong": "<p>The <strong>Molykote 165 LT</strong> is a Molykote Grease from the DuPont / Dow Performance Lubricants range. A specialty Molykote grease formulated for hydraulic, bearing, gear, or food-grade service. Pair with the host equipment per its OEM lubricant chart.</p>\n<h3>Product type</h3>\n<ul>\n<li>Type: Grease</li>\n<li>NLGI grade: Refer to datasheet (typical: NLGI 2)</li>\n<li>Base oil / chemistry: Mineral / synthetic / silicone / PFPE (per product datasheet)</li>\n<li>Operating temperature range: -40°C to +200°C (typical; refer to datasheet for product-specific limits)</li>\n</ul>\n<h3>Typical applications</h3>\n<p>Bearings, gears, slides, seals, valve stems, and general industrial / hydraulic lubrication.</p>\n<h3>Container sizes</h3>\n<p>Available in standard Molykote container sizes — typically 50 g tubes, 1 kg tins, 5 kg pails, and 25 kg drums depending on the product. Confirm exact pack sizes on the RFQ.</p>\n<h3>Compatibility &amp; certifications</h3>\n<p>Many Molykote products carry NSF H1 / H2 food-grade approvals, OEM specifications (Caterpillar, Komatsu, JCB, Volvo, etc.), and ISO 12922 / DIN 51825 / ISO 6743 industrial classifications. Refer to the product datasheet for specific approvals — Indus engineering will confirm compatibility for your application on the RFQ.</p>\n<h3>How to order</h3>\n<p>Specify (a) the Molykote part number (this product is <strong>Molykote 165 LT</strong>), (b) container size, and (c) quantity. For multi-pack discounts and project-quantity pricing, mention the project name and target delivery date.</p>\n<h3>Companion products</h3>\n<p>Browse the Molykote sub-section under Lubricants for compatible greases, pastes, compounds, and anti-friction coatings. Indus is an authorised Molykote distributor — full product range available on quote.</p>",
+   "seoTitle": "Molykote 165 LT — Molykote Grease",
+   "seoDescription": "Molykote 165 LT — Molykote Grease. A specialty Molykote grease formulated for hydraulic, bearing, gear, or food-grade service.",
+   "categoryId": "2f9a7d66-034f-4a3e-965c-d3e402c5d1b0",
+   "brandId": "cce429b2-c7bb-452a-9266-7f728a20c23c",
+   "category": {
+    "slug": "molykote-greases"
+   },
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Product Type",
+     "value": "grease",
+     "unit": null,
+     "position": 0
+    },
+    {
+     "group": "Identification",
+     "label": "NLGI Grade",
+     "value": "Refer to datasheet (typical: NLGI 2)",
+     "unit": null,
+     "position": 1
+    },
+    {
+     "group": "Composition",
+     "label": "Base Oil / Chemistry",
+     "value": "Mineral / synthetic / silicone / PFPE (per product datasheet)",
+     "unit": null,
+     "position": 2
+    },
+    {
+     "group": "Performance",
+     "label": "Operating Temperature Range",
+     "value": "-40°C to +200°C (typical; refer to datasheet for product-specific limits)",
+     "unit": null,
+     "position": 5
+    },
+    {
+     "group": "Application",
+     "label": "Typical Applications",
+     "value": "Bearings, gears, slides, seals, valve stems, and general industrial / hydraulic lubrication.",
+     "unit": null,
+     "position": 9
+    },
+    {
+     "group": "Commercial",
+     "label": "Container Sizes",
+     "value": "Standard Molykote sizes (50 g tube, 1 kg tin, 5 kg pail, 25 kg drum — varies by product)",
+     "unit": null,
+     "position": 10
+    },
+    {
+     "group": "Compliance",
+     "label": "Food-Grade Status",
+     "value": "Per product datasheet (some Molykote products are NSF H1 / H2 certified — confirm specific approvals on RFQ)",
+     "unit": null,
+     "position": 8
+    },
+    {
+     "group": "Compliance",
+     "label": "Applicable Standards",
+     "value": "Per product datasheet (ISO 12922 / DIN 51825 / ISO 6743 / OEM spec as applicable)",
+     "unit": null,
+     "position": 11
+    }
+   ],
+   "faqs": [
+    {
+     "question": "What is this product used for?",
+     "answer": "Bearings, gears, slides, seals, valve stems, and general industrial / hydraulic lubrication.",
+     "position": 0
+    },
+    {
+     "question": "What is the operating temperature range?",
+     "answer": "-40°C to +200°C (typical; refer to datasheet for product-specific limits). The product datasheet specifies the exact limit for Molykote 165 LT — Indus engineering will confirm on the RFQ if you provide your operating conditions.",
+     "position": 1
+    },
+    {
+     "question": "What container sizes are available?",
+     "answer": "Standard Molykote container sizes — typically 50 g tubes, 1 kg tins, 5 kg pails, and 25 kg drums depending on the product. Some specialty products are also available in 400 g cartridges. Confirm exact pack sizes on the RFQ.",
+     "position": 2
+    },
+    {
+     "question": "Is this product food-grade certified?",
+     "answer": "Some Molykote products carry NSF H1 (incidental food contact) or NSF H2 (no food contact) approvals. Check the product datasheet for Molykote 165 LT specifically — Indus engineering will confirm on the RFQ. NEVER assume food-grade unless explicitly certified.",
+     "position": 3
+    },
+    {
+     "question": "How does this compare to standard greases?",
+     "answer": "Molykote greases are formulated for specific applications (chemical-resistant, food-grade, high/low temperature, EP, etc.) where standard mineral greases would fail. Match the product to your operating conditions.",
+     "position": 4
+    },
+    {
+     "question": "Is Indus an authorised Molykote distributor?",
+     "answer": "Yes — Indus Hydraulics is an authorised Molykote distributor in the UAE. All Molykote products supplied by Indus are factory-original, with valid batch records and shelf-life dates. Counterfeit Molykote is prevalent in the regional market — always insist on authorised-distributor channels.",
+     "position": 5
+    },
+    {
+     "question": "What is the shelf life?",
+     "answer": "Most Molykote greases and pastes have a 24-36 month shelf life from manufacture date when stored in the original sealed container at +5°C to +35°C. Anti-friction coatings (liquid pre-coat form) typically have 12 months. Bonded coatings already applied to parts are essentially indefinite. Indus rotates stock — newer batches go to the customer.",
+     "position": 6
+    },
+    {
+     "question": "Lead time?",
+     "answer": "Common Molykote products are ex-stock from Dubai. Less-common specialty products typically ship within 2-3 weeks from RFQ confirmation (factory order from DuPont).",
+     "position": 7
+    }
+   ],
+   "images": [],
+   "documents": []
+  },
+  {
+   "id": "f6354892-4c4a-4540-9900-f5d743edfcac",
+   "sku": "IH-LUB-SEPARATOR-SPRAY",
+   "slug": "molykote-separator-spray",
+   "title": "Molykote Separator Spray",
+   "status": "active",
+   "contentScore": 41,
+   "descriptionShort": "Molykote Separator Spray — Molykote Specialty Lubricant. A specialty Molykote lubricant — refer to product datasheet for application guidance.",
+   "descriptionLong": "<p>The <strong>Molykote Separator Spray</strong> is a Molykote Specialty Lubricant from the DuPont / Dow Performance Lubricants range. A specialty Molykote lubricant — refer to product datasheet for application guidance.</p>\n<h3>Product type</h3>\n<ul>\n<li>Type: Specialty Lubricant</li>\n<li>NLGI grade: N/A</li>\n<li>Base oil / chemistry: Per datasheet</li>\n<li>Operating temperature range: -30°C to +250°C (typical)</li>\n</ul>\n<h3>Typical applications</h3>\n<p>Refer to product datasheet for application guidance.</p>\n<h3>Container sizes</h3>\n<p>Available in standard Molykote container sizes — typically 50 g tubes, 1 kg tins, 5 kg pails, and 25 kg drums depending on the product. Confirm exact pack sizes on the RFQ.</p>\n<h3>Compatibility &amp; certifications</h3>\n<p>Many Molykote products carry NSF H1 / H2 food-grade approvals, OEM specifications (Caterpillar, Komatsu, JCB, Volvo, etc.), and ISO 12922 / DIN 51825 / ISO 6743 industrial classifications. Refer to the product datasheet for specific approvals — Indus engineering will confirm compatibility for your application on the RFQ.</p>\n<h3>How to order</h3>\n<p>Specify (a) the Molykote part number (this product is <strong>Molykote Separator Spray</strong>), (b) container size, and (c) quantity. For multi-pack discounts and project-quantity pricing, mention the project name and target delivery date.</p>\n<h3>Companion products</h3>\n<p>Browse the Molykote sub-section under Lubricants for compatible greases, pastes, compounds, and anti-friction coatings. Indus is an authorised Molykote distributor — full product range available on quote.</p>",
+   "seoTitle": "Molykote Separator Spray — Molykote Specialty Lubricant",
+   "seoDescription": "Molykote Separator Spray — Molykote Specialty Lubricant. A specialty Molykote lubricant — refer to product datasheet for application guidance.",
+   "categoryId": "bde41845-9e97-41c9-81eb-6ce0c99067aa",
+   "brandId": "cce429b2-c7bb-452a-9266-7f728a20c23c",
+   "category": {
+    "slug": "molykote-specialty-lubricants"
+   },
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Product Type",
+     "value": "specialty",
+     "unit": null,
+     "position": 0
+    },
+    {
+     "group": "Identification",
+     "label": "NLGI Grade",
+     "value": "N/A",
+     "unit": null,
+     "position": 1
+    },
+    {
+     "group": "Composition",
+     "label": "Base Oil / Chemistry",
+     "value": "Per datasheet",
+     "unit": null,
+     "position": 2
+    },
+    {
+     "group": "Performance",
+     "label": "Operating Temperature Range",
+     "value": "-30°C to +250°C (typical)",
+     "unit": null,
+     "position": 5
+    },
+    {
+     "group": "Application",
+     "label": "Typical Applications",
+     "value": "Refer to product datasheet for application guidance.",
+     "unit": null,
+     "position": 9
+    },
+    {
+     "group": "Commercial",
+     "label": "Container Sizes",
+     "value": "Standard Molykote sizes (50 g tube, 1 kg tin, 5 kg pail, 25 kg drum — varies by product)",
+     "unit": null,
+     "position": 10
+    },
+    {
+     "group": "Compliance",
+     "label": "Food-Grade Status",
+     "value": "Per product datasheet (some Molykote products are NSF H1 / H2 certified — confirm specific approvals on RFQ)",
+     "unit": null,
+     "position": 8
+    },
+    {
+     "group": "Compliance",
+     "label": "Applicable Standards",
+     "value": "Per product datasheet (ISO 12922 / DIN 51825 / ISO 6743 / OEM spec as applicable)",
+     "unit": null,
+     "position": 11
+    }
+   ],
+   "faqs": [
+    {
+     "question": "What is this product used for?",
+     "answer": "Refer to product datasheet for application guidance.",
+     "position": 0
+    },
+    {
+     "question": "What is the operating temperature range?",
+     "answer": "-30°C to +250°C (typical). The product datasheet specifies the exact limit for Molykote Separator Spray — Indus engineering will confirm on the RFQ if you provide your operating conditions.",
+     "position": 1
+    },
+    {
+     "question": "What container sizes are available?",
+     "answer": "Standard Molykote container sizes — typically 50 g tubes, 1 kg tins, 5 kg pails, and 25 kg drums depending on the product. Some specialty products are also available in 400 g cartridges. Confirm exact pack sizes on the RFQ.",
+     "position": 2
+    },
+    {
+     "question": "Is this product food-grade certified?",
+     "answer": "Some Molykote products carry NSF H1 (incidental food contact) or NSF H2 (no food contact) approvals. Check the product datasheet for Molykote Separator Spray specifically — Indus engineering will confirm on the RFQ. NEVER assume food-grade unless explicitly certified.",
+     "position": 3
+    },
+    {
+     "question": "How does this compare to standard greases?",
+     "answer": "Refer to the product datasheet — specialty Molykote products are formulated for specific industries / OEM specifications.",
+     "position": 4
+    },
+    {
+     "question": "Is Indus an authorised Molykote distributor?",
+     "answer": "Yes — Indus Hydraulics is an authorised Molykote distributor in the UAE. All Molykote products supplied by Indus are factory-original, with valid batch records and shelf-life dates. Counterfeit Molykote is prevalent in the regional market — always insist on authorised-distributor channels.",
+     "position": 5
+    },
+    {
+     "question": "What is the shelf life?",
+     "answer": "Most Molykote greases and pastes have a 24-36 month shelf life from manufacture date when stored in the original sealed container at +5°C to +35°C. Anti-friction coatings (liquid pre-coat form) typically have 12 months. Bonded coatings already applied to parts are essentially indefinite. Indus rotates stock — newer batches go to the customer.",
+     "position": 6
+    },
+    {
+     "question": "Lead time?",
+     "answer": "Common Molykote products are ex-stock from Dubai. Less-common specialty products typically ship within 2-3 weeks from RFQ confirmation (factory order from DuPont).",
+     "position": 7
+    }
+   ],
+   "images": [],
+   "documents": []
+  },
+  {
+   "id": "d8c17410-8513-41f8-bb73-1d3d93494d3a",
+   "sku": "IH-LUB-1292",
+   "slug": "molykote-1292",
+   "title": "Molykote 1292",
+   "status": "active",
+   "contentScore": 41,
+   "descriptionShort": "Molykote 1292 — Molykote Grease. A specialty Molykote grease formulated for hydraulic, bearing, gear, or food-grade service.",
+   "descriptionLong": "<p>The <strong>Molykote 1292</strong> is a Molykote Grease from the DuPont / Dow Performance Lubricants range. A specialty Molykote grease formulated for hydraulic, bearing, gear, or food-grade service. Pair with the host equipment per its OEM lubricant chart.</p>\n<h3>Product type</h3>\n<ul>\n<li>Type: Grease</li>\n<li>NLGI grade: Refer to datasheet (typical: NLGI 2)</li>\n<li>Base oil / chemistry: Mineral / synthetic / silicone / PFPE (per product datasheet)</li>\n<li>Operating temperature range: -40°C to +200°C (typical; refer to datasheet for product-specific limits)</li>\n</ul>\n<h3>Typical applications</h3>\n<p>Bearings, gears, slides, seals, valve stems, and general industrial / hydraulic lubrication.</p>\n<h3>Container sizes</h3>\n<p>Available in standard Molykote container sizes — typically 50 g tubes, 1 kg tins, 5 kg pails, and 25 kg drums depending on the product. Confirm exact pack sizes on the RFQ.</p>\n<h3>Compatibility &amp; certifications</h3>\n<p>Many Molykote products carry NSF H1 / H2 food-grade approvals, OEM specifications (Caterpillar, Komatsu, JCB, Volvo, etc.), and ISO 12922 / DIN 51825 / ISO 6743 industrial classifications. Refer to the product datasheet for specific approvals — Indus engineering will confirm compatibility for your application on the RFQ.</p>\n<h3>How to order</h3>\n<p>Specify (a) the Molykote part number (this product is <strong>Molykote 1292</strong>), (b) container size, and (c) quantity. For multi-pack discounts and project-quantity pricing, mention the project name and target delivery date.</p>\n<h3>Companion products</h3>\n<p>Browse the Molykote sub-section under Lubricants for compatible greases, pastes, compounds, and anti-friction coatings. Indus is an authorised Molykote distributor — full product range available on quote.</p>",
+   "seoTitle": "Molykote 1292 — Molykote Grease",
+   "seoDescription": "Molykote 1292 — Molykote Grease. A specialty Molykote grease formulated for hydraulic, bearing, gear, or food-grade service.",
+   "categoryId": "2f9a7d66-034f-4a3e-965c-d3e402c5d1b0",
+   "brandId": "cce429b2-c7bb-452a-9266-7f728a20c23c",
+   "category": {
+    "slug": "molykote-greases"
+   },
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Product Type",
+     "value": "grease",
+     "unit": null,
+     "position": 0
+    },
+    {
+     "group": "Identification",
+     "label": "NLGI Grade",
+     "value": "Refer to datasheet (typical: NLGI 2)",
+     "unit": null,
+     "position": 1
+    },
+    {
+     "group": "Composition",
+     "label": "Base Oil / Chemistry",
+     "value": "Mineral / synthetic / silicone / PFPE (per product datasheet)",
+     "unit": null,
+     "position": 2
+    },
+    {
+     "group": "Performance",
+     "label": "Operating Temperature Range",
+     "value": "-40°C to +200°C (typical; refer to datasheet for product-specific limits)",
+     "unit": null,
+     "position": 5
+    },
+    {
+     "group": "Application",
+     "label": "Typical Applications",
+     "value": "Bearings, gears, slides, seals, valve stems, and general industrial / hydraulic lubrication.",
+     "unit": null,
+     "position": 9
+    },
+    {
+     "group": "Commercial",
+     "label": "Container Sizes",
+     "value": "Standard Molykote sizes (50 g tube, 1 kg tin, 5 kg pail, 25 kg drum — varies by product)",
+     "unit": null,
+     "position": 10
+    },
+    {
+     "group": "Compliance",
+     "label": "Food-Grade Status",
+     "value": "Per product datasheet (some Molykote products are NSF H1 / H2 certified — confirm specific approvals on RFQ)",
+     "unit": null,
+     "position": 8
+    },
+    {
+     "group": "Compliance",
+     "label": "Applicable Standards",
+     "value": "Per product datasheet (ISO 12922 / DIN 51825 / ISO 6743 / OEM spec as applicable)",
+     "unit": null,
+     "position": 11
+    }
+   ],
+   "faqs": [
+    {
+     "question": "What is this product used for?",
+     "answer": "Bearings, gears, slides, seals, valve stems, and general industrial / hydraulic lubrication.",
+     "position": 0
+    },
+    {
+     "question": "What is the operating temperature range?",
+     "answer": "-40°C to +200°C (typical; refer to datasheet for product-specific limits). The product datasheet specifies the exact limit for Molykote 1292 — Indus engineering will confirm on the RFQ if you provide your operating conditions.",
+     "position": 1
+    },
+    {
+     "question": "What container sizes are available?",
+     "answer": "Standard Molykote container sizes — typically 50 g tubes, 1 kg tins, 5 kg pails, and 25 kg drums depending on the product. Some specialty products are also available in 400 g cartridges. Confirm exact pack sizes on the RFQ.",
+     "position": 2
+    },
+    {
+     "question": "Is this product food-grade certified?",
+     "answer": "Some Molykote products carry NSF H1 (incidental food contact) or NSF H2 (no food contact) approvals. Check the product datasheet for Molykote 1292 specifically — Indus engineering will confirm on the RFQ. NEVER assume food-grade unless explicitly certified.",
+     "position": 3
+    },
+    {
+     "question": "How does this compare to standard greases?",
+     "answer": "Molykote greases are formulated for specific applications (chemical-resistant, food-grade, high/low temperature, EP, etc.) where standard mineral greases would fail. Match the product to your operating conditions.",
+     "position": 4
+    },
+    {
+     "question": "Is Indus an authorised Molykote distributor?",
+     "answer": "Yes — Indus Hydraulics is an authorised Molykote distributor in the UAE. All Molykote products supplied by Indus are factory-original, with valid batch records and shelf-life dates. Counterfeit Molykote is prevalent in the regional market — always insist on authorised-distributor channels.",
+     "position": 5
+    },
+    {
+     "question": "What is the shelf life?",
+     "answer": "Most Molykote greases and pastes have a 24-36 month shelf life from manufacture date when stored in the original sealed container at +5°C to +35°C. Anti-friction coatings (liquid pre-coat form) typically have 12 months. Bonded coatings already applied to parts are essentially indefinite. Indus rotates stock — newer batches go to the customer.",
+     "position": 6
+    },
+    {
+     "question": "Lead time?",
+     "answer": "Common Molykote products are ex-stock from Dubai. Less-common specialty products typically ship within 2-3 weeks from RFQ confirmation (factory order from DuPont).",
+     "position": 7
+    }
+   ],
+   "images": [],
+   "documents": []
+  },
+  {
+   "id": "2b420d27-90b4-4c06-98cc-904fe7c7569a",
+   "sku": "IH-LUB-LONG-TERM-W2-MULTI-PURPOSE",
+   "slug": "molykote-long-term-w2-multi-purpose",
+   "title": "Molykote Long Term W2 Multi-Purpose",
+   "status": "active",
+   "contentScore": 41,
+   "descriptionShort": "Molykote Long Term W2 Multi-Purpose — Molykote Specialty Lubricant. A specialty Molykote lubricant — refer to product datasheet for application guidance.",
+   "descriptionLong": "<p>The <strong>Molykote Long Term W2 Multi-Purpose</strong> is a Molykote Specialty Lubricant from the DuPont / Dow Performance Lubricants range. A specialty Molykote lubricant — refer to product datasheet for application guidance.</p>\n<h3>Product type</h3>\n<ul>\n<li>Type: Specialty Lubricant</li>\n<li>NLGI grade: N/A</li>\n<li>Base oil / chemistry: Per datasheet</li>\n<li>Operating temperature range: -30°C to +250°C (typical)</li>\n</ul>\n<h3>Typical applications</h3>\n<p>Refer to product datasheet for application guidance.</p>\n<h3>Container sizes</h3>\n<p>Available in standard Molykote container sizes — typically 50 g tubes, 1 kg tins, 5 kg pails, and 25 kg drums depending on the product. Confirm exact pack sizes on the RFQ.</p>\n<h3>Compatibility &amp; certifications</h3>\n<p>Many Molykote products carry NSF H1 / H2 food-grade approvals, OEM specifications (Caterpillar, Komatsu, JCB, Volvo, etc.), and ISO 12922 / DIN 51825 / ISO 6743 industrial classifications. Refer to the product datasheet for specific approvals — Indus engineering will confirm compatibility for your application on the RFQ.</p>\n<h3>How to order</h3>\n<p>Specify (a) the Molykote part number (this product is <strong>Molykote Long Term W2 Multi-Purpose</strong>), (b) container size, and (c) quantity. For multi-pack discounts and project-quantity pricing, mention the project name and target delivery date.</p>\n<h3>Companion products</h3>\n<p>Browse the Molykote sub-section under Lubricants for compatible greases, pastes, compounds, and anti-friction coatings. Indus is an authorised Molykote distributor — full product range available on quote.</p>",
+   "seoTitle": "Molykote Long Term W2 Multi-Purpose — Molykote Specialty Lubricant",
+   "seoDescription": "Molykote Long Term W2 Multi-Purpose — Molykote Specialty Lubricant. A specialty Molykote lubricant — refer to product datasheet for application guidance.",
+   "categoryId": "bde41845-9e97-41c9-81eb-6ce0c99067aa",
+   "brandId": "cce429b2-c7bb-452a-9266-7f728a20c23c",
+   "category": {
+    "slug": "molykote-specialty-lubricants"
+   },
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Product Type",
+     "value": "specialty",
+     "unit": null,
+     "position": 0
+    },
+    {
+     "group": "Identification",
+     "label": "NLGI Grade",
+     "value": "N/A",
+     "unit": null,
+     "position": 1
+    },
+    {
+     "group": "Composition",
+     "label": "Base Oil / Chemistry",
+     "value": "Per datasheet",
+     "unit": null,
+     "position": 2
+    },
+    {
+     "group": "Performance",
+     "label": "Operating Temperature Range",
+     "value": "-30°C to +250°C (typical)",
+     "unit": null,
+     "position": 5
+    },
+    {
+     "group": "Application",
+     "label": "Typical Applications",
+     "value": "Refer to product datasheet for application guidance.",
+     "unit": null,
+     "position": 9
+    },
+    {
+     "group": "Commercial",
+     "label": "Container Sizes",
+     "value": "Standard Molykote sizes (50 g tube, 1 kg tin, 5 kg pail, 25 kg drum — varies by product)",
+     "unit": null,
+     "position": 10
+    },
+    {
+     "group": "Compliance",
+     "label": "Food-Grade Status",
+     "value": "Per product datasheet (some Molykote products are NSF H1 / H2 certified — confirm specific approvals on RFQ)",
+     "unit": null,
+     "position": 8
+    },
+    {
+     "group": "Compliance",
+     "label": "Applicable Standards",
+     "value": "Per product datasheet (ISO 12922 / DIN 51825 / ISO 6743 / OEM spec as applicable)",
+     "unit": null,
+     "position": 11
+    }
+   ],
+   "faqs": [
+    {
+     "question": "What is this product used for?",
+     "answer": "Refer to product datasheet for application guidance.",
+     "position": 0
+    },
+    {
+     "question": "What is the operating temperature range?",
+     "answer": "-30°C to +250°C (typical). The product datasheet specifies the exact limit for Molykote Long Term W2 Multi-Purpose — Indus engineering will confirm on the RFQ if you provide your operating conditions.",
+     "position": 1
+    },
+    {
+     "question": "What container sizes are available?",
+     "answer": "Standard Molykote container sizes — typically 50 g tubes, 1 kg tins, 5 kg pails, and 25 kg drums depending on the product. Some specialty products are also available in 400 g cartridges. Confirm exact pack sizes on the RFQ.",
+     "position": 2
+    },
+    {
+     "question": "Is this product food-grade certified?",
+     "answer": "Some Molykote products carry NSF H1 (incidental food contact) or NSF H2 (no food contact) approvals. Check the product datasheet for Molykote Long Term W2 Multi-Purpose specifically — Indus engineering will confirm on the RFQ. NEVER assume food-grade unless explicitly certified.",
+     "position": 3
+    },
+    {
+     "question": "How does this compare to standard greases?",
+     "answer": "Refer to the product datasheet — specialty Molykote products are formulated for specific industries / OEM specifications.",
+     "position": 4
+    },
+    {
+     "question": "Is Indus an authorised Molykote distributor?",
+     "answer": "Yes — Indus Hydraulics is an authorised Molykote distributor in the UAE. All Molykote products supplied by Indus are factory-original, with valid batch records and shelf-life dates. Counterfeit Molykote is prevalent in the regional market — always insist on authorised-distributor channels.",
+     "position": 5
+    },
+    {
+     "question": "What is the shelf life?",
+     "answer": "Most Molykote greases and pastes have a 24-36 month shelf life from manufacture date when stored in the original sealed container at +5°C to +35°C. Anti-friction coatings (liquid pre-coat form) typically have 12 months. Bonded coatings already applied to parts are essentially indefinite. Indus rotates stock — newer batches go to the customer.",
+     "position": 6
+    },
+    {
+     "question": "Lead time?",
+     "answer": "Common Molykote products are ex-stock from Dubai. Less-common specialty products typically ship within 2-3 weeks from RFQ confirmation (factory order from DuPont).",
+     "position": 7
+    }
+   ],
+   "images": [],
+   "documents": []
+  },
+  {
+   "id": "fd342a4c-e356-4703-b3a7-11b3e829199f",
+   "sku": "IH-LUB-P-1600",
+   "slug": "molykote-p-1600",
+   "title": "Molykote P-1600",
+   "status": "active",
+   "contentScore": 41,
+   "descriptionShort": "Molykote P-1600 — Molykote Paste. A solid-lubricant Molykote paste for assembly, anti-seize, threaded-fastener, or running-in service.",
+   "descriptionLong": "<p>The <strong>Molykote P-1600</strong> is a Molykote Paste from the DuPont / Dow Performance Lubricants range. A solid-lubricant Molykote paste for assembly, anti-seize, threaded-fastener, or running-in service. Withstands extreme assembly temperatures.</p>\n<h3>Product type</h3>\n<ul>\n<li>Type: Paste</li>\n<li>NLGI grade: N/A (paste, not NLGI-graded)</li>\n<li>Base oil / chemistry: Mineral oil + solid lubricants (MoS2 / graphite / copper / PTFE per datasheet)</li>\n<li>Operating temperature range: -30°C to +1100°C (Molykote pastes can withstand assembly temperatures into the copper-melt range)</li>\n</ul>\n<h3>Typical applications</h3>\n<p>Threaded-fastener anti-seize, press-fit assembly, valve stems, splines, running-in of new components, high-temperature bolt lubrication.</p>\n<h3>Container sizes</h3>\n<p>Available in standard Molykote container sizes — typically 50 g tubes, 1 kg tins, 5 kg pails, and 25 kg drums depending on the product. Confirm exact pack sizes on the RFQ.</p>\n<h3>Compatibility &amp; certifications</h3>\n<p>Many Molykote products carry NSF H1 / H2 food-grade approvals, OEM specifications (Caterpillar, Komatsu, JCB, Volvo, etc.), and ISO 12922 / DIN 51825 / ISO 6743 industrial classifications. Refer to the product datasheet for specific approvals — Indus engineering will confirm compatibility for your application on the RFQ.</p>\n<h3>How to order</h3>\n<p>Specify (a) the Molykote part number (this product is <strong>Molykote P-1600</strong>), (b) container size, and (c) quantity. For multi-pack discounts and project-quantity pricing, mention the project name and target delivery date.</p>\n<h3>Companion products</h3>\n<p>Browse the Molykote sub-section under Lubricants for compatible greases, pastes, compounds, and anti-friction coatings. Indus is an authorised Molykote distributor — full product range available on quote.</p>",
+   "seoTitle": "Molykote P-1600 — Molykote Paste",
+   "seoDescription": "Molykote P-1600 — Molykote Paste. A solid-lubricant Molykote paste for assembly, anti-seize, threaded-fastener, or running-in service.",
+   "categoryId": "0bf8c1ac-d073-42fc-b912-de8e8a4eab02",
+   "brandId": "cce429b2-c7bb-452a-9266-7f728a20c23c",
+   "category": {
+    "slug": "molykote-pastes"
+   },
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Product Type",
+     "value": "paste",
+     "unit": null,
+     "position": 0
+    },
+    {
+     "group": "Identification",
+     "label": "NLGI Grade",
+     "value": "N/A (paste, not NLGI-graded)",
+     "unit": null,
+     "position": 1
+    },
+    {
+     "group": "Composition",
+     "label": "Base Oil / Chemistry",
+     "value": "Mineral oil + solid lubricants (MoS2 / graphite / copper / PTFE per datasheet)",
+     "unit": null,
+     "position": 2
+    },
+    {
+     "group": "Performance",
+     "label": "Operating Temperature Range",
+     "value": "-30°C to +1100°C (Molykote pastes can withstand assembly temperatures into the copper-melt range)",
+     "unit": null,
+     "position": 5
+    },
+    {
+     "group": "Application",
+     "label": "Typical Applications",
+     "value": "Threaded-fastener anti-seize, press-fit assembly, valve stems, splines, running-in of new components, high-temperature bolt lubrication.",
+     "unit": null,
+     "position": 9
+    },
+    {
+     "group": "Commercial",
+     "label": "Container Sizes",
+     "value": "Standard Molykote sizes (50 g tube, 1 kg tin, 5 kg pail, 25 kg drum — varies by product)",
+     "unit": null,
+     "position": 10
+    },
+    {
+     "group": "Compliance",
+     "label": "Food-Grade Status",
+     "value": "Per product datasheet (some Molykote products are NSF H1 / H2 certified — confirm specific approvals on RFQ)",
+     "unit": null,
+     "position": 8
+    },
+    {
+     "group": "Compliance",
+     "label": "Applicable Standards",
+     "value": "Per product datasheet (ISO 12922 / DIN 51825 / ISO 6743 / OEM spec as applicable)",
+     "unit": null,
+     "position": 11
+    }
+   ],
+   "faqs": [
+    {
+     "question": "What is this product used for?",
+     "answer": "Threaded-fastener anti-seize, press-fit assembly, valve stems, splines, running-in of new components, high-temperature bolt lubrication.",
+     "position": 0
+    },
+    {
+     "question": "What is the operating temperature range?",
+     "answer": "-30°C to +1100°C (Molykote pastes can withstand assembly temperatures into the copper-melt range). The product datasheet specifies the exact limit for Molykote P-1600 — Indus engineering will confirm on the RFQ if you provide your operating conditions.",
+     "position": 1
+    },
+    {
+     "question": "What container sizes are available?",
+     "answer": "Standard Molykote container sizes — typically 50 g tubes, 1 kg tins, 5 kg pails, and 25 kg drums depending on the product. Some specialty products are also available in 400 g cartridges. Confirm exact pack sizes on the RFQ.",
+     "position": 2
+    },
+    {
+     "question": "Is this product food-grade certified?",
+     "answer": "Some Molykote products carry NSF H1 (incidental food contact) or NSF H2 (no food contact) approvals. Check the product datasheet for Molykote P-1600 specifically — Indus engineering will confirm on the RFQ. NEVER assume food-grade unless explicitly certified.",
+     "position": 3
+    },
+    {
+     "question": "How does this compare to standard greases?",
+     "answer": "Pastes contain a high concentration of solid lubricants (MoS2, graphite, copper, PTFE) — they protect threads, splines, and contact surfaces under load and at temperatures where grease would melt out.",
+     "position": 4
+    },
+    {
+     "question": "Is Indus an authorised Molykote distributor?",
+     "answer": "Yes — Indus Hydraulics is an authorised Molykote distributor in the UAE. All Molykote products supplied by Indus are factory-original, with valid batch records and shelf-life dates. Counterfeit Molykote is prevalent in the regional market — always insist on authorised-distributor channels.",
+     "position": 5
+    },
+    {
+     "question": "What is the shelf life?",
+     "answer": "Most Molykote greases and pastes have a 24-36 month shelf life from manufacture date when stored in the original sealed container at +5°C to +35°C. Anti-friction coatings (liquid pre-coat form) typically have 12 months. Bonded coatings already applied to parts are essentially indefinite. Indus rotates stock — newer batches go to the customer.",
+     "position": 6
+    },
+    {
+     "question": "Lead time?",
+     "answer": "Common Molykote products are ex-stock from Dubai. Less-common specialty products typically ship within 2-3 weeks from RFQ confirmation (factory order from DuPont).",
+     "position": 7
+    }
+   ],
+   "images": [],
+   "documents": []
+  },
+  {
+   "id": "a7d8dd97-d042-4ace-b858-82d14a81f15e",
+   "sku": "IH-LUB-PG-75-PLASTISLIP-GREASE",
+   "slug": "molykote-pg-75-plastislip-grease",
+   "title": "Molykote PG-75 Plastislip Grease",
+   "status": "active",
+   "contentScore": 41,
+   "descriptionShort": "Molykote PG-75 Plastislip Grease — Molykote Grease. A specialty Molykote grease formulated for hydraulic, bearing, gear, or food-grade service.",
+   "descriptionLong": "<p>The <strong>Molykote PG-75 Plastislip Grease</strong> is a Molykote Grease from the DuPont / Dow Performance Lubricants range. A specialty Molykote grease formulated for hydraulic, bearing, gear, or food-grade service. Pair with the host equipment per its OEM lubricant chart.</p>\n<h3>Product type</h3>\n<ul>\n<li>Type: Grease</li>\n<li>NLGI grade: Refer to datasheet (typical: NLGI 2)</li>\n<li>Base oil / chemistry: Mineral / synthetic / silicone / PFPE (per product datasheet)</li>\n<li>Operating temperature range: -40°C to +200°C (typical; refer to datasheet for product-specific limits)</li>\n</ul>\n<h3>Typical applications</h3>\n<p>Bearings, gears, slides, seals, valve stems, and general industrial / hydraulic lubrication.</p>\n<h3>Container sizes</h3>\n<p>Available in standard Molykote container sizes — typically 50 g tubes, 1 kg tins, 5 kg pails, and 25 kg drums depending on the product. Confirm exact pack sizes on the RFQ.</p>\n<h3>Compatibility &amp; certifications</h3>\n<p>Many Molykote products carry NSF H1 / H2 food-grade approvals, OEM specifications (Caterpillar, Komatsu, JCB, Volvo, etc.), and ISO 12922 / DIN 51825 / ISO 6743 industrial classifications. Refer to the product datasheet for specific approvals — Indus engineering will confirm compatibility for your application on the RFQ.</p>\n<h3>How to order</h3>\n<p>Specify (a) the Molykote part number (this product is <strong>Molykote PG-75 Plastislip Grease</strong>), (b) container size, and (c) quantity. For multi-pack discounts and project-quantity pricing, mention the project name and target delivery date.</p>\n<h3>Companion products</h3>\n<p>Browse the Molykote sub-section under Lubricants for compatible greases, pastes, compounds, and anti-friction coatings. Indus is an authorised Molykote distributor — full product range available on quote.</p>",
+   "seoTitle": "Molykote PG-75 Plastislip Grease — Molykote Grease",
+   "seoDescription": "Molykote PG-75 Plastislip Grease — Molykote Grease. A specialty Molykote grease formulated for hydraulic, bearing, gear, or food-grade service.",
+   "categoryId": "2f9a7d66-034f-4a3e-965c-d3e402c5d1b0",
+   "brandId": "cce429b2-c7bb-452a-9266-7f728a20c23c",
+   "category": {
+    "slug": "molykote-greases"
+   },
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Product Type",
+     "value": "grease",
+     "unit": null,
+     "position": 0
+    },
+    {
+     "group": "Identification",
+     "label": "NLGI Grade",
+     "value": "Refer to datasheet (typical: NLGI 2)",
+     "unit": null,
+     "position": 1
+    },
+    {
+     "group": "Composition",
+     "label": "Base Oil / Chemistry",
+     "value": "Mineral / synthetic / silicone / PFPE (per product datasheet)",
+     "unit": null,
+     "position": 2
+    },
+    {
+     "group": "Performance",
+     "label": "Operating Temperature Range",
+     "value": "-40°C to +200°C (typical; refer to datasheet for product-specific limits)",
+     "unit": null,
+     "position": 5
+    },
+    {
+     "group": "Application",
+     "label": "Typical Applications",
+     "value": "Bearings, gears, slides, seals, valve stems, and general industrial / hydraulic lubrication.",
+     "unit": null,
+     "position": 9
+    },
+    {
+     "group": "Commercial",
+     "label": "Container Sizes",
+     "value": "Standard Molykote sizes (50 g tube, 1 kg tin, 5 kg pail, 25 kg drum — varies by product)",
+     "unit": null,
+     "position": 10
+    },
+    {
+     "group": "Compliance",
+     "label": "Food-Grade Status",
+     "value": "Per product datasheet (some Molykote products are NSF H1 / H2 certified — confirm specific approvals on RFQ)",
+     "unit": null,
+     "position": 8
+    },
+    {
+     "group": "Compliance",
+     "label": "Applicable Standards",
+     "value": "Per product datasheet (ISO 12922 / DIN 51825 / ISO 6743 / OEM spec as applicable)",
+     "unit": null,
+     "position": 11
+    }
+   ],
+   "faqs": [
+    {
+     "question": "What is this product used for?",
+     "answer": "Bearings, gears, slides, seals, valve stems, and general industrial / hydraulic lubrication.",
+     "position": 0
+    },
+    {
+     "question": "What is the operating temperature range?",
+     "answer": "-40°C to +200°C (typical; refer to datasheet for product-specific limits). The product datasheet specifies the exact limit for Molykote PG-75 Plastislip Grease — Indus engineering will confirm on the RFQ if you provide your operating conditions.",
+     "position": 1
+    },
+    {
+     "question": "What container sizes are available?",
+     "answer": "Standard Molykote container sizes — typically 50 g tubes, 1 kg tins, 5 kg pails, and 25 kg drums depending on the product. Some specialty products are also available in 400 g cartridges. Confirm exact pack sizes on the RFQ.",
+     "position": 2
+    },
+    {
+     "question": "Is this product food-grade certified?",
+     "answer": "Some Molykote products carry NSF H1 (incidental food contact) or NSF H2 (no food contact) approvals. Check the product datasheet for Molykote PG-75 Plastislip Grease specifically — Indus engineering will confirm on the RFQ. NEVER assume food-grade unless explicitly certified.",
+     "position": 3
+    },
+    {
+     "question": "How does this compare to standard greases?",
+     "answer": "Molykote greases are formulated for specific applications (chemical-resistant, food-grade, high/low temperature, EP, etc.) where standard mineral greases would fail. Match the product to your operating conditions.",
+     "position": 4
+    },
+    {
+     "question": "Is Indus an authorised Molykote distributor?",
+     "answer": "Yes — Indus Hydraulics is an authorised Molykote distributor in the UAE. All Molykote products supplied by Indus are factory-original, with valid batch records and shelf-life dates. Counterfeit Molykote is prevalent in the regional market — always insist on authorised-distributor channels.",
+     "position": 5
+    },
+    {
+     "question": "What is the shelf life?",
+     "answer": "Most Molykote greases and pastes have a 24-36 month shelf life from manufacture date when stored in the original sealed container at +5°C to +35°C. Anti-friction coatings (liquid pre-coat form) typically have 12 months. Bonded coatings already applied to parts are essentially indefinite. Indus rotates stock — newer batches go to the customer.",
+     "position": 6
+    },
+    {
+     "question": "Lead time?",
+     "answer": "Common Molykote products are ex-stock from Dubai. Less-common specialty products typically ship within 2-3 weeks from RFQ confirmation (factory order from DuPont).",
+     "position": 7
+    }
+   ],
+   "images": [],
+   "documents": []
+  },
+  {
+   "id": "acb8f9af-4dff-4bff-9d47-73d49b2d630f",
+   "sku": "IH-LUB-PG-54-PLASTISLIP-GREASE",
+   "slug": "molykote-pg-54-plastislip-grease",
+   "title": "Molykote PG-54 Plastislip Grease",
+   "status": "active",
+   "contentScore": 41,
+   "descriptionShort": "Molykote PG-54 Plastislip Grease — Molykote Grease. A specialty Molykote grease formulated for hydraulic, bearing, gear, or food-grade service.",
+   "descriptionLong": "<p>The <strong>Molykote PG-54 Plastislip Grease</strong> is a Molykote Grease from the DuPont / Dow Performance Lubricants range. A specialty Molykote grease formulated for hydraulic, bearing, gear, or food-grade service. Pair with the host equipment per its OEM lubricant chart.</p>\n<h3>Product type</h3>\n<ul>\n<li>Type: Grease</li>\n<li>NLGI grade: Refer to datasheet (typical: NLGI 2)</li>\n<li>Base oil / chemistry: Mineral / synthetic / silicone / PFPE (per product datasheet)</li>\n<li>Operating temperature range: -40°C to +200°C (typical; refer to datasheet for product-specific limits)</li>\n</ul>\n<h3>Typical applications</h3>\n<p>Bearings, gears, slides, seals, valve stems, and general industrial / hydraulic lubrication.</p>\n<h3>Container sizes</h3>\n<p>Available in standard Molykote container sizes — typically 50 g tubes, 1 kg tins, 5 kg pails, and 25 kg drums depending on the product. Confirm exact pack sizes on the RFQ.</p>\n<h3>Compatibility &amp; certifications</h3>\n<p>Many Molykote products carry NSF H1 / H2 food-grade approvals, OEM specifications (Caterpillar, Komatsu, JCB, Volvo, etc.), and ISO 12922 / DIN 51825 / ISO 6743 industrial classifications. Refer to the product datasheet for specific approvals — Indus engineering will confirm compatibility for your application on the RFQ.</p>\n<h3>How to order</h3>\n<p>Specify (a) the Molykote part number (this product is <strong>Molykote PG-54 Plastislip Grease</strong>), (b) container size, and (c) quantity. For multi-pack discounts and project-quantity pricing, mention the project name and target delivery date.</p>\n<h3>Companion products</h3>\n<p>Browse the Molykote sub-section under Lubricants for compatible greases, pastes, compounds, and anti-friction coatings. Indus is an authorised Molykote distributor — full product range available on quote.</p>",
+   "seoTitle": "Molykote PG-54 Plastislip Grease — Molykote Grease",
+   "seoDescription": "Molykote PG-54 Plastislip Grease — Molykote Grease. A specialty Molykote grease formulated for hydraulic, bearing, gear, or food-grade service.",
+   "categoryId": "2f9a7d66-034f-4a3e-965c-d3e402c5d1b0",
+   "brandId": "cce429b2-c7bb-452a-9266-7f728a20c23c",
+   "category": {
+    "slug": "molykote-greases"
+   },
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Product Type",
+     "value": "grease",
+     "unit": null,
+     "position": 0
+    },
+    {
+     "group": "Identification",
+     "label": "NLGI Grade",
+     "value": "Refer to datasheet (typical: NLGI 2)",
+     "unit": null,
+     "position": 1
+    },
+    {
+     "group": "Composition",
+     "label": "Base Oil / Chemistry",
+     "value": "Mineral / synthetic / silicone / PFPE (per product datasheet)",
+     "unit": null,
+     "position": 2
+    },
+    {
+     "group": "Performance",
+     "label": "Operating Temperature Range",
+     "value": "-40°C to +200°C (typical; refer to datasheet for product-specific limits)",
+     "unit": null,
+     "position": 5
+    },
+    {
+     "group": "Application",
+     "label": "Typical Applications",
+     "value": "Bearings, gears, slides, seals, valve stems, and general industrial / hydraulic lubrication.",
+     "unit": null,
+     "position": 9
+    },
+    {
+     "group": "Commercial",
+     "label": "Container Sizes",
+     "value": "Standard Molykote sizes (50 g tube, 1 kg tin, 5 kg pail, 25 kg drum — varies by product)",
+     "unit": null,
+     "position": 10
+    },
+    {
+     "group": "Compliance",
+     "label": "Food-Grade Status",
+     "value": "Per product datasheet (some Molykote products are NSF H1 / H2 certified — confirm specific approvals on RFQ)",
+     "unit": null,
+     "position": 8
+    },
+    {
+     "group": "Compliance",
+     "label": "Applicable Standards",
+     "value": "Per product datasheet (ISO 12922 / DIN 51825 / ISO 6743 / OEM spec as applicable)",
+     "unit": null,
+     "position": 11
+    }
+   ],
+   "faqs": [
+    {
+     "question": "What is this product used for?",
+     "answer": "Bearings, gears, slides, seals, valve stems, and general industrial / hydraulic lubrication.",
+     "position": 0
+    },
+    {
+     "question": "What is the operating temperature range?",
+     "answer": "-40°C to +200°C (typical; refer to datasheet for product-specific limits). The product datasheet specifies the exact limit for Molykote PG-54 Plastislip Grease — Indus engineering will confirm on the RFQ if you provide your operating conditions.",
+     "position": 1
+    },
+    {
+     "question": "What container sizes are available?",
+     "answer": "Standard Molykote container sizes — typically 50 g tubes, 1 kg tins, 5 kg pails, and 25 kg drums depending on the product. Some specialty products are also available in 400 g cartridges. Confirm exact pack sizes on the RFQ.",
+     "position": 2
+    },
+    {
+     "question": "Is this product food-grade certified?",
+     "answer": "Some Molykote products carry NSF H1 (incidental food contact) or NSF H2 (no food contact) approvals. Check the product datasheet for Molykote PG-54 Plastislip Grease specifically — Indus engineering will confirm on the RFQ. NEVER assume food-grade unless explicitly certified.",
+     "position": 3
+    },
+    {
+     "question": "How does this compare to standard greases?",
+     "answer": "Molykote greases are formulated for specific applications (chemical-resistant, food-grade, high/low temperature, EP, etc.) where standard mineral greases would fail. Match the product to your operating conditions.",
+     "position": 4
+    },
+    {
+     "question": "Is Indus an authorised Molykote distributor?",
+     "answer": "Yes — Indus Hydraulics is an authorised Molykote distributor in the UAE. All Molykote products supplied by Indus are factory-original, with valid batch records and shelf-life dates. Counterfeit Molykote is prevalent in the regional market — always insist on authorised-distributor channels.",
+     "position": 5
+    },
+    {
+     "question": "What is the shelf life?",
+     "answer": "Most Molykote greases and pastes have a 24-36 month shelf life from manufacture date when stored in the original sealed container at +5°C to +35°C. Anti-friction coatings (liquid pre-coat form) typically have 12 months. Bonded coatings already applied to parts are essentially indefinite. Indus rotates stock — newer batches go to the customer.",
+     "position": 6
+    },
+    {
+     "question": "Lead time?",
+     "answer": "Common Molykote products are ex-stock from Dubai. Less-common specialty products typically ship within 2-3 weeks from RFQ confirmation (factory order from DuPont).",
+     "position": 7
+    }
+   ],
+   "images": [],
+   "documents": []
+  },
+  {
+   "id": "15788ec9-eaaf-4609-98d4-b8f5dd1783de",
+   "sku": "IH-LUB-2-POWDER",
+   "slug": "molykote-2-powder",
+   "title": "Molykote 2 Powder",
+   "status": "active",
+   "contentScore": 41,
+   "descriptionShort": "Molykote 2 Powder — Molykote Specialty Lubricant. A specialty Molykote lubricant — refer to product datasheet for application guidance.",
+   "descriptionLong": "<p>The <strong>Molykote 2 Powder</strong> is a Molykote Specialty Lubricant from the DuPont / Dow Performance Lubricants range. A specialty Molykote lubricant — refer to product datasheet for application guidance.</p>\n<h3>Product type</h3>\n<ul>\n<li>Type: Specialty Lubricant</li>\n<li>NLGI grade: N/A</li>\n<li>Base oil / chemistry: Per datasheet</li>\n<li>Operating temperature range: -30°C to +250°C (typical)</li>\n</ul>\n<h3>Typical applications</h3>\n<p>Refer to product datasheet for application guidance.</p>\n<h3>Container sizes</h3>\n<p>Available in standard Molykote container sizes — typically 50 g tubes, 1 kg tins, 5 kg pails, and 25 kg drums depending on the product. Confirm exact pack sizes on the RFQ.</p>\n<h3>Compatibility &amp; certifications</h3>\n<p>Many Molykote products carry NSF H1 / H2 food-grade approvals, OEM specifications (Caterpillar, Komatsu, JCB, Volvo, etc.), and ISO 12922 / DIN 51825 / ISO 6743 industrial classifications. Refer to the product datasheet for specific approvals — Indus engineering will confirm compatibility for your application on the RFQ.</p>\n<h3>How to order</h3>\n<p>Specify (a) the Molykote part number (this product is <strong>Molykote 2 Powder</strong>), (b) container size, and (c) quantity. For multi-pack discounts and project-quantity pricing, mention the project name and target delivery date.</p>\n<h3>Companion products</h3>\n<p>Browse the Molykote sub-section under Lubricants for compatible greases, pastes, compounds, and anti-friction coatings. Indus is an authorised Molykote distributor — full product range available on quote.</p>",
+   "seoTitle": "Molykote 2 Powder — Molykote Specialty Lubricant",
+   "seoDescription": "Molykote 2 Powder — Molykote Specialty Lubricant. A specialty Molykote lubricant — refer to product datasheet for application guidance.",
+   "categoryId": "bde41845-9e97-41c9-81eb-6ce0c99067aa",
+   "brandId": "cce429b2-c7bb-452a-9266-7f728a20c23c",
+   "category": {
+    "slug": "molykote-specialty-lubricants"
+   },
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Product Type",
+     "value": "specialty",
+     "unit": null,
+     "position": 0
+    },
+    {
+     "group": "Identification",
+     "label": "NLGI Grade",
+     "value": "N/A",
+     "unit": null,
+     "position": 1
+    },
+    {
+     "group": "Composition",
+     "label": "Base Oil / Chemistry",
+     "value": "Per datasheet",
+     "unit": null,
+     "position": 2
+    },
+    {
+     "group": "Performance",
+     "label": "Operating Temperature Range",
+     "value": "-30°C to +250°C (typical)",
+     "unit": null,
+     "position": 5
+    },
+    {
+     "group": "Application",
+     "label": "Typical Applications",
+     "value": "Refer to product datasheet for application guidance.",
+     "unit": null,
+     "position": 9
+    },
+    {
+     "group": "Commercial",
+     "label": "Container Sizes",
+     "value": "Standard Molykote sizes (50 g tube, 1 kg tin, 5 kg pail, 25 kg drum — varies by product)",
+     "unit": null,
+     "position": 10
+    },
+    {
+     "group": "Compliance",
+     "label": "Food-Grade Status",
+     "value": "Per product datasheet (some Molykote products are NSF H1 / H2 certified — confirm specific approvals on RFQ)",
+     "unit": null,
+     "position": 8
+    },
+    {
+     "group": "Compliance",
+     "label": "Applicable Standards",
+     "value": "Per product datasheet (ISO 12922 / DIN 51825 / ISO 6743 / OEM spec as applicable)",
+     "unit": null,
+     "position": 11
+    }
+   ],
+   "faqs": [
+    {
+     "question": "What is this product used for?",
+     "answer": "Refer to product datasheet for application guidance.",
+     "position": 0
+    },
+    {
+     "question": "What is the operating temperature range?",
+     "answer": "-30°C to +250°C (typical). The product datasheet specifies the exact limit for Molykote 2 Powder — Indus engineering will confirm on the RFQ if you provide your operating conditions.",
+     "position": 1
+    },
+    {
+     "question": "What container sizes are available?",
+     "answer": "Standard Molykote container sizes — typically 50 g tubes, 1 kg tins, 5 kg pails, and 25 kg drums depending on the product. Some specialty products are also available in 400 g cartridges. Confirm exact pack sizes on the RFQ.",
+     "position": 2
+    },
+    {
+     "question": "Is this product food-grade certified?",
+     "answer": "Some Molykote products carry NSF H1 (incidental food contact) or NSF H2 (no food contact) approvals. Check the product datasheet for Molykote 2 Powder specifically — Indus engineering will confirm on the RFQ. NEVER assume food-grade unless explicitly certified.",
+     "position": 3
+    },
+    {
+     "question": "How does this compare to standard greases?",
+     "answer": "Refer to the product datasheet — specialty Molykote products are formulated for specific industries / OEM specifications.",
+     "position": 4
+    },
+    {
+     "question": "Is Indus an authorised Molykote distributor?",
+     "answer": "Yes — Indus Hydraulics is an authorised Molykote distributor in the UAE. All Molykote products supplied by Indus are factory-original, with valid batch records and shelf-life dates. Counterfeit Molykote is prevalent in the regional market — always insist on authorised-distributor channels.",
+     "position": 5
+    },
+    {
+     "question": "What is the shelf life?",
+     "answer": "Most Molykote greases and pastes have a 24-36 month shelf life from manufacture date when stored in the original sealed container at +5°C to +35°C. Anti-friction coatings (liquid pre-coat form) typically have 12 months. Bonded coatings already applied to parts are essentially indefinite. Indus rotates stock — newer batches go to the customer.",
+     "position": 6
+    },
+    {
+     "question": "Lead time?",
+     "answer": "Common Molykote products are ex-stock from Dubai. Less-common specialty products typically ship within 2-3 weeks from RFQ confirmation (factory order from DuPont).",
+     "position": 7
+    }
+   ],
+   "images": [],
+   "documents": []
+  },
+  {
+   "id": "ab26e314-7274-43e6-9383-675e4b21eaf1",
+   "sku": "IH-LUB-P33-LOW-TEMPERATURE-LUBRICANT",
+   "slug": "molykote-p33-low-temperature-lubricant",
+   "title": "Molykote P33 Low Temperature Lubricant",
+   "status": "active",
+   "contentScore": 41,
+   "descriptionShort": "Molykote P33 Low Temperature Lubricant — Molykote Grease. A specialty Molykote grease formulated for hydraulic, bearing, gear, or food-grade service.",
+   "descriptionLong": "<p>The <strong>Molykote P33 Low Temperature Lubricant</strong> is a Molykote Grease from the DuPont / Dow Performance Lubricants range. A specialty Molykote grease formulated for hydraulic, bearing, gear, or food-grade service. Pair with the host equipment per its OEM lubricant chart.</p>\n<h3>Product type</h3>\n<ul>\n<li>Type: Grease</li>\n<li>NLGI grade: Refer to datasheet (typical: NLGI 2)</li>\n<li>Base oil / chemistry: Mineral / synthetic / silicone / PFPE (per product datasheet)</li>\n<li>Operating temperature range: -40°C to +200°C (typical; refer to datasheet for product-specific limits)</li>\n</ul>\n<h3>Typical applications</h3>\n<p>Bearings, gears, slides, seals, valve stems, and general industrial / hydraulic lubrication.</p>\n<h3>Container sizes</h3>\n<p>Available in standard Molykote container sizes — typically 50 g tubes, 1 kg tins, 5 kg pails, and 25 kg drums depending on the product. Confirm exact pack sizes on the RFQ.</p>\n<h3>Compatibility &amp; certifications</h3>\n<p>Many Molykote products carry NSF H1 / H2 food-grade approvals, OEM specifications (Caterpillar, Komatsu, JCB, Volvo, etc.), and ISO 12922 / DIN 51825 / ISO 6743 industrial classifications. Refer to the product datasheet for specific approvals — Indus engineering will confirm compatibility for your application on the RFQ.</p>\n<h3>How to order</h3>\n<p>Specify (a) the Molykote part number (this product is <strong>Molykote P33 Low Temperature Lubricant</strong>), (b) container size, and (c) quantity. For multi-pack discounts and project-quantity pricing, mention the project name and target delivery date.</p>\n<h3>Companion products</h3>\n<p>Browse the Molykote sub-section under Lubricants for compatible greases, pastes, compounds, and anti-friction coatings. Indus is an authorised Molykote distributor — full product range available on quote.</p>",
+   "seoTitle": "Molykote P33 Low Temperature Lubricant — Molykote Grease",
+   "seoDescription": "Molykote P33 Low Temperature Lubricant — Molykote Grease. A specialty Molykote grease formulated for hydraulic, bearing, gear, or food-grade service.",
+   "categoryId": "2f9a7d66-034f-4a3e-965c-d3e402c5d1b0",
+   "brandId": "cce429b2-c7bb-452a-9266-7f728a20c23c",
+   "category": {
+    "slug": "molykote-greases"
+   },
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Product Type",
+     "value": "grease",
+     "unit": null,
+     "position": 0
+    },
+    {
+     "group": "Identification",
+     "label": "NLGI Grade",
+     "value": "Refer to datasheet (typical: NLGI 2)",
+     "unit": null,
+     "position": 1
+    },
+    {
+     "group": "Composition",
+     "label": "Base Oil / Chemistry",
+     "value": "Mineral / synthetic / silicone / PFPE (per product datasheet)",
+     "unit": null,
+     "position": 2
+    },
+    {
+     "group": "Performance",
+     "label": "Operating Temperature Range",
+     "value": "-40°C to +200°C (typical; refer to datasheet for product-specific limits)",
+     "unit": null,
+     "position": 5
+    },
+    {
+     "group": "Application",
+     "label": "Typical Applications",
+     "value": "Bearings, gears, slides, seals, valve stems, and general industrial / hydraulic lubrication.",
+     "unit": null,
+     "position": 9
+    },
+    {
+     "group": "Commercial",
+     "label": "Container Sizes",
+     "value": "Standard Molykote sizes (50 g tube, 1 kg tin, 5 kg pail, 25 kg drum — varies by product)",
+     "unit": null,
+     "position": 10
+    },
+    {
+     "group": "Compliance",
+     "label": "Food-Grade Status",
+     "value": "Per product datasheet (some Molykote products are NSF H1 / H2 certified — confirm specific approvals on RFQ)",
+     "unit": null,
+     "position": 8
+    },
+    {
+     "group": "Compliance",
+     "label": "Applicable Standards",
+     "value": "Per product datasheet (ISO 12922 / DIN 51825 / ISO 6743 / OEM spec as applicable)",
+     "unit": null,
+     "position": 11
+    }
+   ],
+   "faqs": [
+    {
+     "question": "What is this product used for?",
+     "answer": "Bearings, gears, slides, seals, valve stems, and general industrial / hydraulic lubrication.",
+     "position": 0
+    },
+    {
+     "question": "What is the operating temperature range?",
+     "answer": "-40°C to +200°C (typical; refer to datasheet for product-specific limits). The product datasheet specifies the exact limit for Molykote P33 Low Temperature Lubricant — Indus engineering will confirm on the RFQ if you provide your operating conditions.",
+     "position": 1
+    },
+    {
+     "question": "What container sizes are available?",
+     "answer": "Standard Molykote container sizes — typically 50 g tubes, 1 kg tins, 5 kg pails, and 25 kg drums depending on the product. Some specialty products are also available in 400 g cartridges. Confirm exact pack sizes on the RFQ.",
+     "position": 2
+    },
+    {
+     "question": "Is this product food-grade certified?",
+     "answer": "Some Molykote products carry NSF H1 (incidental food contact) or NSF H2 (no food contact) approvals. Check the product datasheet for Molykote P33 Low Temperature Lubricant specifically — Indus engineering will confirm on the RFQ. NEVER assume food-grade unless explicitly certified.",
+     "position": 3
+    },
+    {
+     "question": "How does this compare to standard greases?",
+     "answer": "Molykote greases are formulated for specific applications (chemical-resistant, food-grade, high/low temperature, EP, etc.) where standard mineral greases would fail. Match the product to your operating conditions.",
+     "position": 4
+    },
+    {
+     "question": "Is Indus an authorised Molykote distributor?",
+     "answer": "Yes — Indus Hydraulics is an authorised Molykote distributor in the UAE. All Molykote products supplied by Indus are factory-original, with valid batch records and shelf-life dates. Counterfeit Molykote is prevalent in the regional market — always insist on authorised-distributor channels.",
+     "position": 5
+    },
+    {
+     "question": "What is the shelf life?",
+     "answer": "Most Molykote greases and pastes have a 24-36 month shelf life from manufacture date when stored in the original sealed container at +5°C to +35°C. Anti-friction coatings (liquid pre-coat form) typically have 12 months. Bonded coatings already applied to parts are essentially indefinite. Indus rotates stock — newer batches go to the customer.",
+     "position": 6
+    },
+    {
+     "question": "Lead time?",
+     "answer": "Common Molykote products are ex-stock from Dubai. Less-common specialty products typically ship within 2-3 weeks from RFQ confirmation (factory order from DuPont).",
+     "position": 7
+    }
+   ],
+   "images": [],
+   "documents": []
+  },
+  {
+   "id": "f78ac979-bb73-47ae-b51d-ca7b62d5ab8e",
+   "sku": "IH-LUB-1102-GAS-COCK-GREASE",
+   "slug": "molykote-1102-gas-cock-grease",
+   "title": "Molykote 1102 Gas Cock Grease",
+   "status": "active",
+   "contentScore": 41,
+   "descriptionShort": "Molykote 1102 Gas Cock Grease — Molykote Grease. A specialty Molykote grease formulated for hydraulic, bearing, gear, or food-grade service.",
+   "descriptionLong": "<p>The <strong>Molykote 1102 Gas Cock Grease</strong> is a Molykote Grease from the DuPont / Dow Performance Lubricants range. A specialty Molykote grease formulated for hydraulic, bearing, gear, or food-grade service. Pair with the host equipment per its OEM lubricant chart.</p>\n<h3>Product type</h3>\n<ul>\n<li>Type: Grease</li>\n<li>NLGI grade: Refer to datasheet (typical: NLGI 2)</li>\n<li>Base oil / chemistry: Mineral / synthetic / silicone / PFPE (per product datasheet)</li>\n<li>Operating temperature range: -40°C to +200°C (typical; refer to datasheet for product-specific limits)</li>\n</ul>\n<h3>Typical applications</h3>\n<p>Bearings, gears, slides, seals, valve stems, and general industrial / hydraulic lubrication.</p>\n<h3>Container sizes</h3>\n<p>Available in standard Molykote container sizes — typically 50 g tubes, 1 kg tins, 5 kg pails, and 25 kg drums depending on the product. Confirm exact pack sizes on the RFQ.</p>\n<h3>Compatibility &amp; certifications</h3>\n<p>Many Molykote products carry NSF H1 / H2 food-grade approvals, OEM specifications (Caterpillar, Komatsu, JCB, Volvo, etc.), and ISO 12922 / DIN 51825 / ISO 6743 industrial classifications. Refer to the product datasheet for specific approvals — Indus engineering will confirm compatibility for your application on the RFQ.</p>\n<h3>How to order</h3>\n<p>Specify (a) the Molykote part number (this product is <strong>Molykote 1102 Gas Cock Grease</strong>), (b) container size, and (c) quantity. For multi-pack discounts and project-quantity pricing, mention the project name and target delivery date.</p>\n<h3>Companion products</h3>\n<p>Browse the Molykote sub-section under Lubricants for compatible greases, pastes, compounds, and anti-friction coatings. Indus is an authorised Molykote distributor — full product range available on quote.</p>",
+   "seoTitle": "Molykote 1102 Gas Cock Grease — Molykote Grease",
+   "seoDescription": "Molykote 1102 Gas Cock Grease — Molykote Grease. A specialty Molykote grease formulated for hydraulic, bearing, gear, or food-grade service.",
+   "categoryId": "2f9a7d66-034f-4a3e-965c-d3e402c5d1b0",
+   "brandId": "cce429b2-c7bb-452a-9266-7f728a20c23c",
+   "category": {
+    "slug": "molykote-greases"
+   },
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Product Type",
+     "value": "grease",
+     "unit": null,
+     "position": 0
+    },
+    {
+     "group": "Identification",
+     "label": "NLGI Grade",
+     "value": "Refer to datasheet (typical: NLGI 2)",
+     "unit": null,
+     "position": 1
+    },
+    {
+     "group": "Composition",
+     "label": "Base Oil / Chemistry",
+     "value": "Mineral / synthetic / silicone / PFPE (per product datasheet)",
+     "unit": null,
+     "position": 2
+    },
+    {
+     "group": "Performance",
+     "label": "Operating Temperature Range",
+     "value": "-40°C to +200°C (typical; refer to datasheet for product-specific limits)",
+     "unit": null,
+     "position": 5
+    },
+    {
+     "group": "Application",
+     "label": "Typical Applications",
+     "value": "Bearings, gears, slides, seals, valve stems, and general industrial / hydraulic lubrication.",
+     "unit": null,
+     "position": 9
+    },
+    {
+     "group": "Commercial",
+     "label": "Container Sizes",
+     "value": "Standard Molykote sizes (50 g tube, 1 kg tin, 5 kg pail, 25 kg drum — varies by product)",
+     "unit": null,
+     "position": 10
+    },
+    {
+     "group": "Compliance",
+     "label": "Food-Grade Status",
+     "value": "Per product datasheet (some Molykote products are NSF H1 / H2 certified — confirm specific approvals on RFQ)",
+     "unit": null,
+     "position": 8
+    },
+    {
+     "group": "Compliance",
+     "label": "Applicable Standards",
+     "value": "Per product datasheet (ISO 12922 / DIN 51825 / ISO 6743 / OEM spec as applicable)",
+     "unit": null,
+     "position": 11
+    }
+   ],
+   "faqs": [
+    {
+     "question": "What is this product used for?",
+     "answer": "Bearings, gears, slides, seals, valve stems, and general industrial / hydraulic lubrication.",
+     "position": 0
+    },
+    {
+     "question": "What is the operating temperature range?",
+     "answer": "-40°C to +200°C (typical; refer to datasheet for product-specific limits). The product datasheet specifies the exact limit for Molykote 1102 Gas Cock Grease — Indus engineering will confirm on the RFQ if you provide your operating conditions.",
+     "position": 1
+    },
+    {
+     "question": "What container sizes are available?",
+     "answer": "Standard Molykote container sizes — typically 50 g tubes, 1 kg tins, 5 kg pails, and 25 kg drums depending on the product. Some specialty products are also available in 400 g cartridges. Confirm exact pack sizes on the RFQ.",
+     "position": 2
+    },
+    {
+     "question": "Is this product food-grade certified?",
+     "answer": "Some Molykote products carry NSF H1 (incidental food contact) or NSF H2 (no food contact) approvals. Check the product datasheet for Molykote 1102 Gas Cock Grease specifically — Indus engineering will confirm on the RFQ. NEVER assume food-grade unless explicitly certified.",
+     "position": 3
+    },
+    {
+     "question": "How does this compare to standard greases?",
+     "answer": "Molykote greases are formulated for specific applications (chemical-resistant, food-grade, high/low temperature, EP, etc.) where standard mineral greases would fail. Match the product to your operating conditions.",
+     "position": 4
+    },
+    {
+     "question": "Is Indus an authorised Molykote distributor?",
+     "answer": "Yes — Indus Hydraulics is an authorised Molykote distributor in the UAE. All Molykote products supplied by Indus are factory-original, with valid batch records and shelf-life dates. Counterfeit Molykote is prevalent in the regional market — always insist on authorised-distributor channels.",
+     "position": 5
+    },
+    {
+     "question": "What is the shelf life?",
+     "answer": "Most Molykote greases and pastes have a 24-36 month shelf life from manufacture date when stored in the original sealed container at +5°C to +35°C. Anti-friction coatings (liquid pre-coat form) typically have 12 months. Bonded coatings already applied to parts are essentially indefinite. Indus rotates stock — newer batches go to the customer.",
+     "position": 6
+    },
+    {
+     "question": "Lead time?",
+     "answer": "Common Molykote products are ex-stock from Dubai. Less-common specialty products typically ship within 2-3 weeks from RFQ confirmation (factory order from DuPont).",
+     "position": 7
+    }
+   ],
+   "images": [],
+   "documents": []
+  },
+  {
+   "id": "51a2e683-df62-4313-b144-113fa7eda4ec",
+   "sku": "IH-LUB-7414",
+   "slug": "molykote-7414",
+   "title": "Molykote 7414",
+   "status": "active",
+   "contentScore": 41,
+   "descriptionShort": "Molykote 7414 — Molykote Anti-Friction Coating. A bonded dry-film Molykote anti-friction coating that lubricates without grease.",
+   "descriptionLong": "<p>The <strong>Molykote 7414</strong> is a Molykote Anti-Friction Coating from the DuPont / Dow Performance Lubricants range. A bonded dry-film Molykote anti-friction coating that lubricates without grease. Suitable where grease cannot be retained — extreme temperature, vacuum, dust, or food contact.</p>\n<h3>Product type</h3>\n<ul>\n<li>Type: Anti-Friction Coating</li>\n<li>NLGI grade: N/A (dry film coating)</li>\n<li>Base oil / chemistry: Resin-bonded MoS2 / graphite / PTFE (binder per datasheet)</li>\n<li>Operating temperature range: -180°C to +450°C (bonded dry-film coatings withstand extreme temperature beyond grease range)</li>\n</ul>\n<h3>Typical applications</h3>\n<p>Sliding contacts, fasteners, locks, hinges, mechanisms in dust / vacuum / extreme temperature where grease cannot be retained.</p>\n<h3>Container sizes</h3>\n<p>Available in standard Molykote container sizes — typically 50 g tubes, 1 kg tins, 5 kg pails, and 25 kg drums depending on the product. Confirm exact pack sizes on the RFQ.</p>\n<h3>Compatibility &amp; certifications</h3>\n<p>Many Molykote products carry NSF H1 / H2 food-grade approvals, OEM specifications (Caterpillar, Komatsu, JCB, Volvo, etc.), and ISO 12922 / DIN 51825 / ISO 6743 industrial classifications. Refer to the product datasheet for specific approvals — Indus engineering will confirm compatibility for your application on the RFQ.</p>\n<h3>How to order</h3>\n<p>Specify (a) the Molykote part number (this product is <strong>Molykote 7414</strong>), (b) container size, and (c) quantity. For multi-pack discounts and project-quantity pricing, mention the project name and target delivery date.</p>\n<h3>Companion products</h3>\n<p>Browse the Molykote sub-section under Lubricants for compatible greases, pastes, compounds, and anti-friction coatings. Indus is an authorised Molykote distributor — full product range available on quote.</p>",
+   "seoTitle": "Molykote 7414 — Molykote Anti-Friction Coating",
+   "seoDescription": "Molykote 7414 — Molykote Anti-Friction Coating. A bonded dry-film Molykote anti-friction coating that lubricates without grease.",
+   "categoryId": "050be78b-b862-4a70-8a13-782a82ffcce5",
+   "brandId": "cce429b2-c7bb-452a-9266-7f728a20c23c",
+   "category": {
+    "slug": "molykote-anti-friction-coatings"
+   },
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Product Type",
+     "value": "anti-friction",
+     "unit": null,
+     "position": 0
+    },
+    {
+     "group": "Identification",
+     "label": "NLGI Grade",
+     "value": "N/A (dry film coating)",
+     "unit": null,
+     "position": 1
+    },
+    {
+     "group": "Composition",
+     "label": "Base Oil / Chemistry",
+     "value": "Resin-bonded MoS2 / graphite / PTFE (binder per datasheet)",
+     "unit": null,
+     "position": 2
+    },
+    {
+     "group": "Performance",
+     "label": "Operating Temperature Range",
+     "value": "-180°C to +450°C (bonded dry-film coatings withstand extreme temperature beyond grease range)",
+     "unit": null,
+     "position": 5
+    },
+    {
+     "group": "Application",
+     "label": "Typical Applications",
+     "value": "Sliding contacts, fasteners, locks, hinges, mechanisms in dust / vacuum / extreme temperature where grease cannot be retained.",
+     "unit": null,
+     "position": 9
+    },
+    {
+     "group": "Commercial",
+     "label": "Container Sizes",
+     "value": "Standard Molykote sizes (50 g tube, 1 kg tin, 5 kg pail, 25 kg drum — varies by product)",
+     "unit": null,
+     "position": 10
+    },
+    {
+     "group": "Compliance",
+     "label": "Food-Grade Status",
+     "value": "Per product datasheet (some Molykote products are NSF H1 / H2 certified — confirm specific approvals on RFQ)",
+     "unit": null,
+     "position": 8
+    },
+    {
+     "group": "Compliance",
+     "label": "Applicable Standards",
+     "value": "Per product datasheet (ISO 12922 / DIN 51825 / ISO 6743 / OEM spec as applicable)",
+     "unit": null,
+     "position": 11
+    }
+   ],
+   "faqs": [
+    {
+     "question": "What is this product used for?",
+     "answer": "Sliding contacts, fasteners, locks, hinges, mechanisms in dust / vacuum / extreme temperature where grease cannot be retained.",
+     "position": 0
+    },
+    {
+     "question": "What is the operating temperature range?",
+     "answer": "-180°C to +450°C (bonded dry-film coatings withstand extreme temperature beyond grease range). The product datasheet specifies the exact limit for Molykote 7414 — Indus engineering will confirm on the RFQ if you provide your operating conditions.",
+     "position": 1
+    },
+    {
+     "question": "What container sizes are available?",
+     "answer": "Standard Molykote container sizes — typically 50 g tubes, 1 kg tins, 5 kg pails, and 25 kg drums depending on the product. Some specialty products are also available in 400 g cartridges. Confirm exact pack sizes on the RFQ.",
+     "position": 2
+    },
+    {
+     "question": "Is this product food-grade certified?",
+     "answer": "Some Molykote products carry NSF H1 (incidental food contact) or NSF H2 (no food contact) approvals. Check the product datasheet for Molykote 7414 specifically — Indus engineering will confirm on the RFQ. NEVER assume food-grade unless explicitly certified.",
+     "position": 3
+    },
+    {
+     "question": "How does this compare to standard greases?",
+     "answer": "Bonded dry-film coatings adhere permanently to the substrate and lubricate without bleeding — ideal where any grease residue would attract contaminants (food contact, vacuum service, semiconductor manufacturing).",
+     "position": 4
+    },
+    {
+     "question": "Is Indus an authorised Molykote distributor?",
+     "answer": "Yes — Indus Hydraulics is an authorised Molykote distributor in the UAE. All Molykote products supplied by Indus are factory-original, with valid batch records and shelf-life dates. Counterfeit Molykote is prevalent in the regional market — always insist on authorised-distributor channels.",
+     "position": 5
+    },
+    {
+     "question": "What is the shelf life?",
+     "answer": "Most Molykote greases and pastes have a 24-36 month shelf life from manufacture date when stored in the original sealed container at +5°C to +35°C. Anti-friction coatings (liquid pre-coat form) typically have 12 months. Bonded coatings already applied to parts are essentially indefinite. Indus rotates stock — newer batches go to the customer.",
+     "position": 6
+    },
+    {
+     "question": "Lead time?",
+     "answer": "Common Molykote products are ex-stock from Dubai. Less-common specialty products typically ship within 2-3 weeks from RFQ confirmation (factory order from DuPont).",
+     "position": 7
+    }
+   ],
+   "images": [],
+   "documents": []
+  },
+  {
+   "id": "2d82a75c-2466-455d-bc38-993a77254208",
+   "sku": "IH-LUB-G5700",
+   "slug": "molykote-g5700",
+   "title": "Molykote G5700",
+   "status": "active",
+   "contentScore": 41,
+   "descriptionShort": "Molykote G5700 — Molykote Grease. A specialty Molykote grease formulated for hydraulic, bearing, gear, or food-grade service.",
+   "descriptionLong": "<p>The <strong>Molykote G5700</strong> is a Molykote Grease from the DuPont / Dow Performance Lubricants range. A specialty Molykote grease formulated for hydraulic, bearing, gear, or food-grade service. Pair with the host equipment per its OEM lubricant chart.</p>\n<h3>Product type</h3>\n<ul>\n<li>Type: Grease</li>\n<li>NLGI grade: Refer to datasheet (typical: NLGI 2)</li>\n<li>Base oil / chemistry: Mineral / synthetic / silicone / PFPE (per product datasheet)</li>\n<li>Operating temperature range: -40°C to +200°C (typical; refer to datasheet for product-specific limits)</li>\n</ul>\n<h3>Typical applications</h3>\n<p>Bearings, gears, slides, seals, valve stems, and general industrial / hydraulic lubrication.</p>\n<h3>Container sizes</h3>\n<p>Available in standard Molykote container sizes — typically 50 g tubes, 1 kg tins, 5 kg pails, and 25 kg drums depending on the product. Confirm exact pack sizes on the RFQ.</p>\n<h3>Compatibility &amp; certifications</h3>\n<p>Many Molykote products carry NSF H1 / H2 food-grade approvals, OEM specifications (Caterpillar, Komatsu, JCB, Volvo, etc.), and ISO 12922 / DIN 51825 / ISO 6743 industrial classifications. Refer to the product datasheet for specific approvals — Indus engineering will confirm compatibility for your application on the RFQ.</p>\n<h3>How to order</h3>\n<p>Specify (a) the Molykote part number (this product is <strong>Molykote G5700</strong>), (b) container size, and (c) quantity. For multi-pack discounts and project-quantity pricing, mention the project name and target delivery date.</p>\n<h3>Companion products</h3>\n<p>Browse the Molykote sub-section under Lubricants for compatible greases, pastes, compounds, and anti-friction coatings. Indus is an authorised Molykote distributor — full product range available on quote.</p>",
+   "seoTitle": "Molykote G5700 — Molykote Grease",
+   "seoDescription": "Molykote G5700 — Molykote Grease. A specialty Molykote grease formulated for hydraulic, bearing, gear, or food-grade service.",
+   "categoryId": "2f9a7d66-034f-4a3e-965c-d3e402c5d1b0",
+   "brandId": "cce429b2-c7bb-452a-9266-7f728a20c23c",
+   "category": {
+    "slug": "molykote-greases"
+   },
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Product Type",
+     "value": "grease",
+     "unit": null,
+     "position": 0
+    },
+    {
+     "group": "Identification",
+     "label": "NLGI Grade",
+     "value": "Refer to datasheet (typical: NLGI 2)",
+     "unit": null,
+     "position": 1
+    },
+    {
+     "group": "Composition",
+     "label": "Base Oil / Chemistry",
+     "value": "Mineral / synthetic / silicone / PFPE (per product datasheet)",
+     "unit": null,
+     "position": 2
+    },
+    {
+     "group": "Performance",
+     "label": "Operating Temperature Range",
+     "value": "-40°C to +200°C (typical; refer to datasheet for product-specific limits)",
+     "unit": null,
+     "position": 5
+    },
+    {
+     "group": "Application",
+     "label": "Typical Applications",
+     "value": "Bearings, gears, slides, seals, valve stems, and general industrial / hydraulic lubrication.",
+     "unit": null,
+     "position": 9
+    },
+    {
+     "group": "Commercial",
+     "label": "Container Sizes",
+     "value": "Standard Molykote sizes (50 g tube, 1 kg tin, 5 kg pail, 25 kg drum — varies by product)",
+     "unit": null,
+     "position": 10
+    },
+    {
+     "group": "Compliance",
+     "label": "Food-Grade Status",
+     "value": "Per product datasheet (some Molykote products are NSF H1 / H2 certified — confirm specific approvals on RFQ)",
+     "unit": null,
+     "position": 8
+    },
+    {
+     "group": "Compliance",
+     "label": "Applicable Standards",
+     "value": "Per product datasheet (ISO 12922 / DIN 51825 / ISO 6743 / OEM spec as applicable)",
+     "unit": null,
+     "position": 11
+    }
+   ],
+   "faqs": [
+    {
+     "question": "What is this product used for?",
+     "answer": "Bearings, gears, slides, seals, valve stems, and general industrial / hydraulic lubrication.",
+     "position": 0
+    },
+    {
+     "question": "What is the operating temperature range?",
+     "answer": "-40°C to +200°C (typical; refer to datasheet for product-specific limits). The product datasheet specifies the exact limit for Molykote G5700 — Indus engineering will confirm on the RFQ if you provide your operating conditions.",
+     "position": 1
+    },
+    {
+     "question": "What container sizes are available?",
+     "answer": "Standard Molykote container sizes — typically 50 g tubes, 1 kg tins, 5 kg pails, and 25 kg drums depending on the product. Some specialty products are also available in 400 g cartridges. Confirm exact pack sizes on the RFQ.",
+     "position": 2
+    },
+    {
+     "question": "Is this product food-grade certified?",
+     "answer": "Some Molykote products carry NSF H1 (incidental food contact) or NSF H2 (no food contact) approvals. Check the product datasheet for Molykote G5700 specifically — Indus engineering will confirm on the RFQ. NEVER assume food-grade unless explicitly certified.",
+     "position": 3
+    },
+    {
+     "question": "How does this compare to standard greases?",
+     "answer": "Molykote greases are formulated for specific applications (chemical-resistant, food-grade, high/low temperature, EP, etc.) where standard mineral greases would fail. Match the product to your operating conditions.",
+     "position": 4
+    },
+    {
+     "question": "Is Indus an authorised Molykote distributor?",
+     "answer": "Yes — Indus Hydraulics is an authorised Molykote distributor in the UAE. All Molykote products supplied by Indus are factory-original, with valid batch records and shelf-life dates. Counterfeit Molykote is prevalent in the regional market — always insist on authorised-distributor channels.",
+     "position": 5
+    },
+    {
+     "question": "What is the shelf life?",
+     "answer": "Most Molykote greases and pastes have a 24-36 month shelf life from manufacture date when stored in the original sealed container at +5°C to +35°C. Anti-friction coatings (liquid pre-coat form) typically have 12 months. Bonded coatings already applied to parts are essentially indefinite. Indus rotates stock — newer batches go to the customer.",
+     "position": 6
+    },
+    {
+     "question": "Lead time?",
+     "answer": "Common Molykote products are ex-stock from Dubai. Less-common specialty products typically ship within 2-3 weeks from RFQ confirmation (factory order from DuPont).",
+     "position": 7
+    }
+   ],
+   "images": [],
+   "documents": []
+  },
+  {
+   "id": "dacb3e2f-74d3-43a6-ba86-820923e8b71b",
+   "sku": "IH-LUB-7405",
+   "slug": "molykote-7405",
+   "title": "Molykote 7405",
+   "status": "active",
+   "contentScore": 41,
+   "descriptionShort": "Molykote 7405 — Molykote Anti-Friction Coating. A bonded dry-film Molykote anti-friction coating that lubricates without grease.",
+   "descriptionLong": "<p>The <strong>Molykote 7405</strong> is a Molykote Anti-Friction Coating from the DuPont / Dow Performance Lubricants range. A bonded dry-film Molykote anti-friction coating that lubricates without grease. Suitable where grease cannot be retained — extreme temperature, vacuum, dust, or food contact.</p>\n<h3>Product type</h3>\n<ul>\n<li>Type: Anti-Friction Coating</li>\n<li>NLGI grade: N/A (dry film coating)</li>\n<li>Base oil / chemistry: Resin-bonded MoS2 / graphite / PTFE (binder per datasheet)</li>\n<li>Operating temperature range: -180°C to +450°C (bonded dry-film coatings withstand extreme temperature beyond grease range)</li>\n</ul>\n<h3>Typical applications</h3>\n<p>Sliding contacts, fasteners, locks, hinges, mechanisms in dust / vacuum / extreme temperature where grease cannot be retained.</p>\n<h3>Container sizes</h3>\n<p>Available in standard Molykote container sizes — typically 50 g tubes, 1 kg tins, 5 kg pails, and 25 kg drums depending on the product. Confirm exact pack sizes on the RFQ.</p>\n<h3>Compatibility &amp; certifications</h3>\n<p>Many Molykote products carry NSF H1 / H2 food-grade approvals, OEM specifications (Caterpillar, Komatsu, JCB, Volvo, etc.), and ISO 12922 / DIN 51825 / ISO 6743 industrial classifications. Refer to the product datasheet for specific approvals — Indus engineering will confirm compatibility for your application on the RFQ.</p>\n<h3>How to order</h3>\n<p>Specify (a) the Molykote part number (this product is <strong>Molykote 7405</strong>), (b) container size, and (c) quantity. For multi-pack discounts and project-quantity pricing, mention the project name and target delivery date.</p>\n<h3>Companion products</h3>\n<p>Browse the Molykote sub-section under Lubricants for compatible greases, pastes, compounds, and anti-friction coatings. Indus is an authorised Molykote distributor — full product range available on quote.</p>",
+   "seoTitle": "Molykote 7405 — Molykote Anti-Friction Coating",
+   "seoDescription": "Molykote 7405 — Molykote Anti-Friction Coating. A bonded dry-film Molykote anti-friction coating that lubricates without grease.",
+   "categoryId": "050be78b-b862-4a70-8a13-782a82ffcce5",
+   "brandId": "cce429b2-c7bb-452a-9266-7f728a20c23c",
+   "category": {
+    "slug": "molykote-anti-friction-coatings"
+   },
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Product Type",
+     "value": "anti-friction",
+     "unit": null,
+     "position": 0
+    },
+    {
+     "group": "Identification",
+     "label": "NLGI Grade",
+     "value": "N/A (dry film coating)",
+     "unit": null,
+     "position": 1
+    },
+    {
+     "group": "Composition",
+     "label": "Base Oil / Chemistry",
+     "value": "Resin-bonded MoS2 / graphite / PTFE (binder per datasheet)",
+     "unit": null,
+     "position": 2
+    },
+    {
+     "group": "Performance",
+     "label": "Operating Temperature Range",
+     "value": "-180°C to +450°C (bonded dry-film coatings withstand extreme temperature beyond grease range)",
+     "unit": null,
+     "position": 5
+    },
+    {
+     "group": "Application",
+     "label": "Typical Applications",
+     "value": "Sliding contacts, fasteners, locks, hinges, mechanisms in dust / vacuum / extreme temperature where grease cannot be retained.",
+     "unit": null,
+     "position": 9
+    },
+    {
+     "group": "Commercial",
+     "label": "Container Sizes",
+     "value": "Standard Molykote sizes (50 g tube, 1 kg tin, 5 kg pail, 25 kg drum — varies by product)",
+     "unit": null,
+     "position": 10
+    },
+    {
+     "group": "Compliance",
+     "label": "Food-Grade Status",
+     "value": "Per product datasheet (some Molykote products are NSF H1 / H2 certified — confirm specific approvals on RFQ)",
+     "unit": null,
+     "position": 8
+    },
+    {
+     "group": "Compliance",
+     "label": "Applicable Standards",
+     "value": "Per product datasheet (ISO 12922 / DIN 51825 / ISO 6743 / OEM spec as applicable)",
+     "unit": null,
+     "position": 11
+    }
+   ],
+   "faqs": [
+    {
+     "question": "What is this product used for?",
+     "answer": "Sliding contacts, fasteners, locks, hinges, mechanisms in dust / vacuum / extreme temperature where grease cannot be retained.",
+     "position": 0
+    },
+    {
+     "question": "What is the operating temperature range?",
+     "answer": "-180°C to +450°C (bonded dry-film coatings withstand extreme temperature beyond grease range). The product datasheet specifies the exact limit for Molykote 7405 — Indus engineering will confirm on the RFQ if you provide your operating conditions.",
+     "position": 1
+    },
+    {
+     "question": "What container sizes are available?",
+     "answer": "Standard Molykote container sizes — typically 50 g tubes, 1 kg tins, 5 kg pails, and 25 kg drums depending on the product. Some specialty products are also available in 400 g cartridges. Confirm exact pack sizes on the RFQ.",
+     "position": 2
+    },
+    {
+     "question": "Is this product food-grade certified?",
+     "answer": "Some Molykote products carry NSF H1 (incidental food contact) or NSF H2 (no food contact) approvals. Check the product datasheet for Molykote 7405 specifically — Indus engineering will confirm on the RFQ. NEVER assume food-grade unless explicitly certified.",
+     "position": 3
+    },
+    {
+     "question": "How does this compare to standard greases?",
+     "answer": "Bonded dry-film coatings adhere permanently to the substrate and lubricate without bleeding — ideal where any grease residue would attract contaminants (food contact, vacuum service, semiconductor manufacturing).",
+     "position": 4
+    },
+    {
+     "question": "Is Indus an authorised Molykote distributor?",
+     "answer": "Yes — Indus Hydraulics is an authorised Molykote distributor in the UAE. All Molykote products supplied by Indus are factory-original, with valid batch records and shelf-life dates. Counterfeit Molykote is prevalent in the regional market — always insist on authorised-distributor channels.",
+     "position": 5
+    },
+    {
+     "question": "What is the shelf life?",
+     "answer": "Most Molykote greases and pastes have a 24-36 month shelf life from manufacture date when stored in the original sealed container at +5°C to +35°C. Anti-friction coatings (liquid pre-coat form) typically have 12 months. Bonded coatings already applied to parts are essentially indefinite. Indus rotates stock — newer batches go to the customer.",
+     "position": 6
+    },
+    {
+     "question": "Lead time?",
+     "answer": "Common Molykote products are ex-stock from Dubai. Less-common specialty products typically ship within 2-3 weeks from RFQ confirmation (factory order from DuPont).",
+     "position": 7
+    }
+   ],
+   "images": [],
+   "documents": []
+  },
+  {
+   "id": "ebc59b23-3bec-42dd-be94-a8d8bfc66e3e",
+   "sku": "IH-LUB-CLOVER-COMPOUND",
+   "slug": "molykote-clover-compound",
+   "title": "Molykote Clover Compound",
+   "status": "active",
+   "contentScore": 41,
+   "descriptionShort": "Molykote Clover Compound — Molykote Compound. A specialty Molykote compound (silicone, sealant, or grinding) for industrial sealing, dielectric, corrosion-protection, or grinding/lapping service.",
+   "descriptionLong": "<p>The <strong>Molykote Clover Compound</strong> is a Molykote Compound from the DuPont / Dow Performance Lubricants range. A specialty Molykote compound (silicone, sealant, or grinding) for industrial sealing, dielectric, corrosion-protection, or grinding/lapping service.</p>\n<h3>Product type</h3>\n<ul>\n<li>Type: Compound</li>\n<li>NLGI grade: N/A (compound, not NLGI-graded)</li>\n<li>Base oil / chemistry: Silicone (typical) — per datasheet</li>\n<li>Operating temperature range: -40°C to +200°C (silicone compounds, typical)</li>\n</ul>\n<h3>Typical applications</h3>\n<p>Electrical insulation, dielectric protection, gasket sealing, valve-stem corrosion protection, optical-fibre splice, grinding / lapping.</p>\n<h3>Container sizes</h3>\n<p>Available in standard Molykote container sizes — typically 50 g tubes, 1 kg tins, 5 kg pails, and 25 kg drums depending on the product. Confirm exact pack sizes on the RFQ.</p>\n<h3>Compatibility &amp; certifications</h3>\n<p>Many Molykote products carry NSF H1 / H2 food-grade approvals, OEM specifications (Caterpillar, Komatsu, JCB, Volvo, etc.), and ISO 12922 / DIN 51825 / ISO 6743 industrial classifications. Refer to the product datasheet for specific approvals — Indus engineering will confirm compatibility for your application on the RFQ.</p>\n<h3>How to order</h3>\n<p>Specify (a) the Molykote part number (this product is <strong>Molykote Clover Compound</strong>), (b) container size, and (c) quantity. For multi-pack discounts and project-quantity pricing, mention the project name and target delivery date.</p>\n<h3>Companion products</h3>\n<p>Browse the Molykote sub-section under Lubricants for compatible greases, pastes, compounds, and anti-friction coatings. Indus is an authorised Molykote distributor — full product range available on quote.</p>",
+   "seoTitle": "Molykote Clover Compound — Molykote Compound",
+   "seoDescription": "Molykote Clover Compound — Molykote Compound. A specialty Molykote compound (silicone, sealant, or grinding) for industrial sealing, dielectric, corrosion-protection, or grinding/lapping service.",
+   "categoryId": "9ec4cec0-7c56-4dbd-9cf7-f89a500ce40c",
+   "brandId": "cce429b2-c7bb-452a-9266-7f728a20c23c",
+   "category": {
+    "slug": "molykote-compounds"
+   },
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Product Type",
+     "value": "compound",
+     "unit": null,
+     "position": 0
+    },
+    {
+     "group": "Identification",
+     "label": "NLGI Grade",
+     "value": "N/A (compound, not NLGI-graded)",
+     "unit": null,
+     "position": 1
+    },
+    {
+     "group": "Composition",
+     "label": "Base Oil / Chemistry",
+     "value": "Silicone (typical) — per datasheet",
+     "unit": null,
+     "position": 2
+    },
+    {
+     "group": "Performance",
+     "label": "Operating Temperature Range",
+     "value": "-40°C to +200°C (silicone compounds, typical)",
+     "unit": null,
+     "position": 5
+    },
+    {
+     "group": "Application",
+     "label": "Typical Applications",
+     "value": "Electrical insulation, dielectric protection, gasket sealing, valve-stem corrosion protection, optical-fibre splice, grinding / lapping.",
+     "unit": null,
+     "position": 9
+    },
+    {
+     "group": "Commercial",
+     "label": "Container Sizes",
+     "value": "Standard Molykote sizes (50 g tube, 1 kg tin, 5 kg pail, 25 kg drum — varies by product)",
+     "unit": null,
+     "position": 10
+    },
+    {
+     "group": "Compliance",
+     "label": "Food-Grade Status",
+     "value": "Per product datasheet (some Molykote products are NSF H1 / H2 certified — confirm specific approvals on RFQ)",
+     "unit": null,
+     "position": 8
+    },
+    {
+     "group": "Compliance",
+     "label": "Applicable Standards",
+     "value": "Per product datasheet (ISO 12922 / DIN 51825 / ISO 6743 / OEM spec as applicable)",
+     "unit": null,
+     "position": 11
+    }
+   ],
+   "faqs": [
+    {
+     "question": "What is this product used for?",
+     "answer": "Electrical insulation, dielectric protection, gasket sealing, valve-stem corrosion protection, optical-fibre splice, grinding / lapping.",
+     "position": 0
+    },
+    {
+     "question": "What is the operating temperature range?",
+     "answer": "-40°C to +200°C (silicone compounds, typical). The product datasheet specifies the exact limit for Molykote Clover Compound — Indus engineering will confirm on the RFQ if you provide your operating conditions.",
+     "position": 1
+    },
+    {
+     "question": "What container sizes are available?",
+     "answer": "Standard Molykote container sizes — typically 50 g tubes, 1 kg tins, 5 kg pails, and 25 kg drums depending on the product. Some specialty products are also available in 400 g cartridges. Confirm exact pack sizes on the RFQ.",
+     "position": 2
+    },
+    {
+     "question": "Is this product food-grade certified?",
+     "answer": "Some Molykote products carry NSF H1 (incidental food contact) or NSF H2 (no food contact) approvals. Check the product datasheet for Molykote Clover Compound specifically — Indus engineering will confirm on the RFQ. NEVER assume food-grade unless explicitly certified.",
+     "position": 3
+    },
+    {
+     "question": "How does this compare to standard greases?",
+     "answer": "Compounds are silicone-based or sealant-grade — they provide dielectric protection, corrosion sealing, or grinding action rather than rolling-element lubrication.",
+     "position": 4
+    },
+    {
+     "question": "Is Indus an authorised Molykote distributor?",
+     "answer": "Yes — Indus Hydraulics is an authorised Molykote distributor in the UAE. All Molykote products supplied by Indus are factory-original, with valid batch records and shelf-life dates. Counterfeit Molykote is prevalent in the regional market — always insist on authorised-distributor channels.",
+     "position": 5
+    },
+    {
+     "question": "What is the shelf life?",
+     "answer": "Most Molykote greases and pastes have a 24-36 month shelf life from manufacture date when stored in the original sealed container at +5°C to +35°C. Anti-friction coatings (liquid pre-coat form) typically have 12 months. Bonded coatings already applied to parts are essentially indefinite. Indus rotates stock — newer batches go to the customer.",
+     "position": 6
+    },
+    {
+     "question": "Lead time?",
+     "answer": "Common Molykote products are ex-stock from Dubai. Less-common specialty products typically ship within 2-3 weeks from RFQ confirmation (factory order from DuPont).",
+     "position": 7
+    }
+   ],
+   "images": [],
+   "documents": []
+  },
+  {
+   "id": "3cdd49e6-5a47-4b38-bae8-30765f068060",
+   "sku": "IH-LUB-7093",
+   "slug": "molykote-7093",
+   "title": "Molykote 7093",
+   "status": "active",
+   "contentScore": 41,
+   "descriptionShort": "Molykote 7093 — Molykote Anti-Friction Coating. A bonded dry-film Molykote anti-friction coating that lubricates without grease.",
+   "descriptionLong": "<p>The <strong>Molykote 7093</strong> is a Molykote Anti-Friction Coating from the DuPont / Dow Performance Lubricants range. A bonded dry-film Molykote anti-friction coating that lubricates without grease. Suitable where grease cannot be retained — extreme temperature, vacuum, dust, or food contact.</p>\n<h3>Product type</h3>\n<ul>\n<li>Type: Anti-Friction Coating</li>\n<li>NLGI grade: N/A (dry film coating)</li>\n<li>Base oil / chemistry: Resin-bonded MoS2 / graphite / PTFE (binder per datasheet)</li>\n<li>Operating temperature range: -180°C to +450°C (bonded dry-film coatings withstand extreme temperature beyond grease range)</li>\n</ul>\n<h3>Typical applications</h3>\n<p>Sliding contacts, fasteners, locks, hinges, mechanisms in dust / vacuum / extreme temperature where grease cannot be retained.</p>\n<h3>Container sizes</h3>\n<p>Available in standard Molykote container sizes — typically 50 g tubes, 1 kg tins, 5 kg pails, and 25 kg drums depending on the product. Confirm exact pack sizes on the RFQ.</p>\n<h3>Compatibility &amp; certifications</h3>\n<p>Many Molykote products carry NSF H1 / H2 food-grade approvals, OEM specifications (Caterpillar, Komatsu, JCB, Volvo, etc.), and ISO 12922 / DIN 51825 / ISO 6743 industrial classifications. Refer to the product datasheet for specific approvals — Indus engineering will confirm compatibility for your application on the RFQ.</p>\n<h3>How to order</h3>\n<p>Specify (a) the Molykote part number (this product is <strong>Molykote 7093</strong>), (b) container size, and (c) quantity. For multi-pack discounts and project-quantity pricing, mention the project name and target delivery date.</p>\n<h3>Companion products</h3>\n<p>Browse the Molykote sub-section under Lubricants for compatible greases, pastes, compounds, and anti-friction coatings. Indus is an authorised Molykote distributor — full product range available on quote.</p>",
+   "seoTitle": "Molykote 7093 — Molykote Anti-Friction Coating",
+   "seoDescription": "Molykote 7093 — Molykote Anti-Friction Coating. A bonded dry-film Molykote anti-friction coating that lubricates without grease.",
+   "categoryId": "050be78b-b862-4a70-8a13-782a82ffcce5",
+   "brandId": "cce429b2-c7bb-452a-9266-7f728a20c23c",
+   "category": {
+    "slug": "molykote-anti-friction-coatings"
+   },
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Product Type",
+     "value": "anti-friction",
+     "unit": null,
+     "position": 0
+    },
+    {
+     "group": "Identification",
+     "label": "NLGI Grade",
+     "value": "N/A (dry film coating)",
+     "unit": null,
+     "position": 1
+    },
+    {
+     "group": "Composition",
+     "label": "Base Oil / Chemistry",
+     "value": "Resin-bonded MoS2 / graphite / PTFE (binder per datasheet)",
+     "unit": null,
+     "position": 2
+    },
+    {
+     "group": "Performance",
+     "label": "Operating Temperature Range",
+     "value": "-180°C to +450°C (bonded dry-film coatings withstand extreme temperature beyond grease range)",
+     "unit": null,
+     "position": 5
+    },
+    {
+     "group": "Application",
+     "label": "Typical Applications",
+     "value": "Sliding contacts, fasteners, locks, hinges, mechanisms in dust / vacuum / extreme temperature where grease cannot be retained.",
+     "unit": null,
+     "position": 9
+    },
+    {
+     "group": "Commercial",
+     "label": "Container Sizes",
+     "value": "Standard Molykote sizes (50 g tube, 1 kg tin, 5 kg pail, 25 kg drum — varies by product)",
+     "unit": null,
+     "position": 10
+    },
+    {
+     "group": "Compliance",
+     "label": "Food-Grade Status",
+     "value": "Per product datasheet (some Molykote products are NSF H1 / H2 certified — confirm specific approvals on RFQ)",
+     "unit": null,
+     "position": 8
+    },
+    {
+     "group": "Compliance",
+     "label": "Applicable Standards",
+     "value": "Per product datasheet (ISO 12922 / DIN 51825 / ISO 6743 / OEM spec as applicable)",
+     "unit": null,
+     "position": 11
+    }
+   ],
+   "faqs": [
+    {
+     "question": "How does this compare to standard greases?",
+     "answer": "Bonded dry-film coatings adhere permanently to the substrate and lubricate without bleeding — ideal where any grease residue would attract contaminants (food contact, vacuum service, semiconductor manufacturing).",
+     "position": 4
+    },
+    {
+     "question": "What is this product used for?",
+     "answer": "Sliding contacts, fasteners, locks, hinges, mechanisms in dust / vacuum / extreme temperature where grease cannot be retained.",
+     "position": 0
+    },
+    {
+     "question": "What is the operating temperature range?",
+     "answer": "-180°C to +450°C (bonded dry-film coatings withstand extreme temperature beyond grease range). The product datasheet specifies the exact limit for Molykote 7093 — Indus engineering will confirm on the RFQ if you provide your operating conditions.",
+     "position": 1
+    },
+    {
+     "question": "What container sizes are available?",
+     "answer": "Standard Molykote container sizes — typically 50 g tubes, 1 kg tins, 5 kg pails, and 25 kg drums depending on the product. Some specialty products are also available in 400 g cartridges. Confirm exact pack sizes on the RFQ.",
+     "position": 2
+    },
+    {
+     "question": "Is this product food-grade certified?",
+     "answer": "Some Molykote products carry NSF H1 (incidental food contact) or NSF H2 (no food contact) approvals. Check the product datasheet for Molykote 7093 specifically — Indus engineering will confirm on the RFQ. NEVER assume food-grade unless explicitly certified.",
+     "position": 3
+    },
+    {
+     "question": "Is Indus an authorised Molykote distributor?",
+     "answer": "Yes — Indus Hydraulics is an authorised Molykote distributor in the UAE. All Molykote products supplied by Indus are factory-original, with valid batch records and shelf-life dates. Counterfeit Molykote is prevalent in the regional market — always insist on authorised-distributor channels.",
+     "position": 5
+    },
+    {
+     "question": "What is the shelf life?",
+     "answer": "Most Molykote greases and pastes have a 24-36 month shelf life from manufacture date when stored in the original sealed container at +5°C to +35°C. Anti-friction coatings (liquid pre-coat form) typically have 12 months. Bonded coatings already applied to parts are essentially indefinite. Indus rotates stock — newer batches go to the customer.",
+     "position": 6
+    },
+    {
+     "question": "Lead time?",
+     "answer": "Common Molykote products are ex-stock from Dubai. Less-common specialty products typically ship within 2-3 weeks from RFQ confirmation (factory order from DuPont).",
+     "position": 7
+    }
+   ],
+   "images": [],
+   "documents": []
+  }
+ ]
+}
