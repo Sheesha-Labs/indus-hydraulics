@@ -76,6 +76,21 @@
   --color-ih-danger: oklch(0.55 0.17 28);
   --color-ih-danger-soft: oklch(0.955 0.035 28);
 
+  /* Status INK — the readable text colour on the matching `-soft` tint.
+     The base `--color-ih-*` status colours are fill colours: at 11px on a pale
+     tint they sit around 3:1, under the 4.5:1 the admin's status pills need.
+     These are the same hues pulled down to the lightness that clears it, and
+     they are what a pill's LABEL uses while its background uses `-soft`.
+     Before these existed, 63 raw oklch() literals across the admin were doing
+     this job in ten slightly different values — four distinct greens for one
+     meaning. */
+  --color-ih-success-ink: oklch(0.4 0.14 150);
+  --color-ih-warning-ink: oklch(0.45 0.1 70);
+  --color-ih-danger-ink: oklch(0.45 0.16 28);
+  --color-ih-info-ink: oklch(0.42 0.1 240);
+  /* Hover step for a destructive control, and the ring its focus state uses. */
+  --color-ih-danger-hover: oklch(0.47 0.17 28);
+
   /* Typography */
   --font-sans: var(--font-geist), ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
   --font-serif: var(--font-instrument-serif), ui-serif, Georgia, serif;
