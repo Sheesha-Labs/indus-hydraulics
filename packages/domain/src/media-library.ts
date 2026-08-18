@@ -196,14 +196,25 @@ export function formatBytes(bytes: number): string {
 /**
  * Byte size for display, distinguishing "empty" from "not recorded".
  *
- * `bytes` is `Int` and not nullable, so a row that never had its size measured
- * holds 0 — and 265 of the 267 document rows are exactly that, from a datasheet
- * import that inserted without reading the uploaded object back. Those files
- * are real and do occupy storage; only the number is missing.
+ * `bytes` is `Int` and not nullable, so a row whose size was never measured
+ * holds 0 rather than NULL, and 0 has to be read as "unknown".
  *
- * Rendering them as "0 B" would state something false, and it would make the
+ * Rendering it as "0 B" would state something false, and it would make the
  * library look broken rather than the data look incomplete. A stored file is
- * never genuinely zero bytes, so 0 is read as unknown.
+ * never genuinely zero bytes.
+ *
+ * The 322 rows that used to be in this state were backfilled on 2026-08-17
+ * (`packages/db/src/scripts/backfill-media-bytes.ts`) and both producers that
+ * wrote `bytes: 0` now measure the file first, so nothing should currently hit
+ * this branch. It stays because the column still cannot express "unknown" any
+ * other way and a measurement can still fail — a host that will not answer must
+ * not block an editor attaching a datasheet.
+ *
+ * Note what those rows were, since the earlier note here had it wrong: they
+ * were externally-hosted datasheets linked at the vendor's own URL, not
+ * uploads whose size went unrecorded. Nothing had been uploaded at all, so
+ * they occupied none of our storage — see the script for what that means for
+ * the "reclaimable" total.
  */
 export function formatBytesOrUnknown(bytes: number): string {
   return bytes > 0 ? formatBytes(bytes) : '—'
