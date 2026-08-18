@@ -33,7 +33,7 @@ import { readFileSync, existsSync } from 'node:fs'
 import { resolve } from 'node:path'
 import { PrismaClient } from '@prisma/client'
 import { createClient } from '@supabase/supabase-js'
-import { scoreProductContent } from '@indus/domain'
+import { measureRemoteBytes, scoreProductContent } from '@indus/domain'
 
 const db = new PrismaClient()
 
@@ -211,6 +211,31 @@ async function main() {
       continue
     }
 
+    // The data sheet is linked at Seal Fast's own URL, not re-hosted, so there
+    // is no uploaded object to read a size back from the way
+    // `finaliseMediaUpload` does. Ask the host — a `Content-Length` is the same
+    // fact, and recording it is what keeps these rows out of the media
+    // library's "unknown size" bucket.
+    //
+    // Measured BEFORE the transaction opens: this is a third-party round trip,
+    // and the transaction below holds write locks. A slow Seal Fast response
+    // inside it would roll back the product's specs over a cosmetic number.
+    //
+    // Not fatal on failure. `bytes` stays 0, which the library renders as
+    // unknown rather than "0 B", and the run says so instead of silently
+    // leaving another batch of sizeless rows behind.
+    let datasheetBytes = 0
+    if (e.document) {
+      const measured = await measureRemoteBytes(e.document.url, { fetchImpl: fetch as never })
+      if (measured.ok) {
+        datasheetBytes = measured.bytes
+      } else {
+        problems.push(
+          `${e.sku}: datasheet size unmeasured (${measured.reason}: ${measured.detail}) — ${e.document.url}`,
+        )
+      }
+    }
+
     // ── specs, datasheet ─────────────────────────────────────────────────
     //
     // Deliberately surgical, unlike the Molykote import. The existing Sealfast
@@ -262,7 +287,10 @@ async function main() {
               // Full URL — mediaUrl() passes http through, so the sheet is
               // always served fresh from Seal Fast.
               storagePath: e.document.url,
-              bytes: 0,
+              // Seal Fast's size, not ours. The file occupies none of our own
+              // storage; this is recorded so the library shows a real size
+              // instead of a dash, and stays 0 only when the host refused.
+              bytes: datasheetBytes,
               alt: e.document.title,
             },
             select: { id: true },

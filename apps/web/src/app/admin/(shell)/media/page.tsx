@@ -151,9 +151,17 @@ export default async function MediaLibraryPage({ params, searchParams }: Props) 
   const kindCounts: Record<string, number> = { all: decorated.length, image: 0, document: 0, cad: 0 }
   let totalBytes = 0
   let reclaimableBytes = 0
-  // 265 document rows carry bytes = 0 from an import that never measured the
-  // uploaded object. The storage total is therefore a floor, and saying so is
-  // better than quietly under-reporting it.
+  // A row whose size could not be measured still holds 0, and the total is
+  // then a floor — saying so is better than quietly under-reporting it. The
+  // 322 rows that were in that state were backfilled on 2026-08-17, so this
+  // should now be 0 in practice; it is kept because a future measurement can
+  // still fail. See packages/db/src/scripts/backfill-media-bytes.ts.
+  //
+  // Caveat on the two totals below: `bytes` is the file's size, which for an
+  // externally-hosted datasheet is a vendor's file on a vendor's server. Those
+  // rows count towards `totalBytes` and, when unused, `reclaimableBytes`, but
+  // deleting them frees nothing of ours. Excluding them is a product decision
+  // that has not been taken.
   let unknownSizeCount = 0
 
   for (const d of decorated) {

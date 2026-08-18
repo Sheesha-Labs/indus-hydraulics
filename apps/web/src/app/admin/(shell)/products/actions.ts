@@ -5,7 +5,7 @@ import { invalidateProducts } from '../../../../lib/cache-tags'
 import { redirect } from 'next/navigation'
 import { z } from 'zod'
 import { db, Prisma } from '@indus/db'
-import { projectSeoFields } from '@indus/domain'
+import { measureRemoteBytes, projectSeoFields } from '@indus/domain'
 import { auth } from '../../../../lib/admin-auth'
 import { ROLES, requireRole } from '../../../../lib/rbac'
 import { fail, failFromError, ok, type Result } from '../../../../lib/result'
@@ -779,6 +779,15 @@ export async function addProductImage(formData: FormData): Promise<Result<void>>
       alt: formData.get('alt') ?? '',
     })
 
+    // Same as the URL-based document attach below: the file is hosted
+    // elsewhere, so the only way to know its size is to ask the host. Measured
+    // outside the transaction, and best-effort — a host that will not answer
+    // must not stop an editor attaching an image.
+    const measured = await measureRemoteBytes(parsed.url, { fetchImpl: fetch as never })
+    if (!measured.ok) {
+      console.warn('[products] could not measure image', parsed.url, measured.reason, measured.detail)
+    }
+
     // Create Media row + ProductImage row in one transaction.
     const max = await db.productImage.aggregate({
       where: { productId: parsed.productId },
@@ -792,7 +801,7 @@ export async function addProductImage(formData: FormData): Promise<Result<void>>
           mimeType: inferMime(parsed.url),
           originalFilename: parsed.url.split('/').pop()?.slice(0, 200) ?? 'image',
           storagePath: parsed.url,
-          bytes: 0,
+          bytes: measured.ok ? measured.bytes : 0,
           alt: parsed.alt,
           uploadedById: session?.user?.id ?? null,
         },
@@ -1040,6 +1049,23 @@ export async function addProductDocument(formData: FormData): Promise<Result<voi
       )
     }
 
+    // The file is hosted by someone else, so there is no upload to read a size
+    // back from — ask the host for it. Same intent as the storage re-list in
+    // `finaliseMediaUpload`: never record a size nobody measured.
+    //
+    // Done before the transaction opens, because it is a third-party round
+    // trip and holding a write transaction open across one is how a slow
+    // remote host turns into lock contention here.
+    //
+    // Best-effort by design. A host that will not answer must not stop an
+    // editor attaching a datasheet; `bytes` stays 0, which the media library
+    // shows as unknown rather than as "0 B".
+    const measured = await measureRemoteBytes(body.url, { fetchImpl: fetch as never })
+    if (!measured.ok) {
+      console.warn('[products] could not measure document', body.url, measured.reason, measured.detail)
+    }
+    const bytes = measured.ok ? measured.bytes : 0
+
     let staleStoragePaths: string[] = []
     await db.$transaction(async (tx) => {
       let preservedPosition: number | null = null
@@ -1061,7 +1087,7 @@ export async function addProductDocument(formData: FormData): Promise<Result<voi
           mimeType: 'application/pdf',
           originalFilename: body.url.split('/').pop()?.slice(0, 200) ?? body.title,
           storagePath: body.url,
-          bytes: 0,
+          bytes,
           uploadedById: session?.user?.id ?? null,
         },
       })
