@@ -813,6 +813,31 @@ export const MEGAMENU_TREE: MegamenuSeedNode[] = [
         ],
       },
       {
+        label: 'Clamps, Air & Regional Couplings',
+        children: [
+          {
+            label: 'Universal Air Hose Couplings',
+            category: 'universal-air-couplings',
+          },
+          {
+            label: 'Clamps, Sleeves & Ferrules',
+            category: 'hose-clamps-sleeves-ferrules',
+          },
+          {
+            label: 'Russian GOST Couplings',
+            category: 'gost-couplings',
+          },
+          {
+            label: 'Barcelona & Geka Couplings',
+            category: 'barcelona-geka-couplings',
+          },
+          {
+            label: 'EN 14420-5 Fittings',
+            category: 'en14420-5-fittings',
+          },
+        ],
+      },
+      {
         label: 'Metallic Hoses',
         url: '/c/industrial-hoses?sub=metallic-hoses',
         children: [
