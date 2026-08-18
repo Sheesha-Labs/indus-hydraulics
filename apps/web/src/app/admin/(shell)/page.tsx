@@ -5,6 +5,7 @@ import { db } from '@indus/db'
 import Link from 'next/link'
 import { ADMIN_PREFIX } from '../../../lib/admin-paths'
 import AdminPageShell from '../../../components/admin/AdminPageShell'
+import { Card, Note, StatTile, StatusPill, productStatusTone } from '@indus/ui'
 
 export const metadata: Metadata = { title: 'Dashboard' }
 
@@ -77,10 +78,10 @@ export default async function AdminDashboardPage({ params }: Props) {
 
         {/* KPI grid */}
         <div className="grid grid-cols-2 xl:grid-cols-4 gap-3 mb-5">
-          <KpiCard label="Products" value={String(productCount)} delta="Total catalogue" />
-          <KpiCard label="Open RFQs" value={String(openRfqs)} delta="In progress" />
-          <KpiCard label="Accounts" value={String(customerCount)} delta="B2B customers" />
-          <KpiCard label="Media assets" value={String(mediaCount)} delta="Total files" />
+          <StatTile label="Products" value={productCount} delta="Total catalogue" />
+          <StatTile label="Open RFQs" value={openRfqs} delta="In progress" />
+          <StatTile label="Accounts" value={customerCount} delta="B2B customers" />
+          <StatTile label="Media assets" value={mediaCount} delta="Total files" />
         </div>
 
         {/* Main grid */}
@@ -132,7 +133,9 @@ export default async function AdminDashboardPage({ params }: Props) {
                         </td>
                         <td className="px-4 py-3 font-mono text-[12px] text-ih-muted">{product.sku}</td>
                         <td className="px-4 py-3">
-                          <StatusPill status={product.status} />
+                          <StatusPill tone={productStatusTone(product.status)}>
+                            {product.status}
+                          </StatusPill>
                         </td>
                         <td className="px-4 py-3 text-right font-mono text-[11px] text-ih-muted">
                           {timeAgo(product.updatedAt)}
@@ -167,24 +170,23 @@ export default async function AdminDashboardPage({ params }: Props) {
 
         {/* Alerts */}
         <div className="grid grid-cols-1 xl:grid-cols-3 gap-3 mb-4">
-          {productsWithoutDatasheets > 0 && (
-            <Alert type="warn">
+          {productsWithoutDatasheets > 0 ? (
+            <Note tone="warn">
               <b>{productsWithoutDatasheets} active product{productsWithoutDatasheets !== 1 ? 's' : ''} missing datasheets</b> — upload specs to improve RFQ conversion.{' '}
-              <Link href={`/admin/products`} className="underline">Review →</Link>
-            </Alert>
-          )}
-          {productsWithoutDatasheets === 0 && (
-            <Alert type="ok">
+              <Link href={`${ADMIN_PREFIX}/products`} className="underline">Review →</Link>
+            </Note>
+          ) : (
+            <Note tone="success">
               <b>All active products have datasheets</b> — catalogue is complete.
-            </Alert>
+            </Note>
           )}
-          <Alert type="info">
+          <Note tone="accent">
             <b>Open RFQ queue</b> — {openRfqs} RFQs await engineer review.{' '}
-            <Link href={`/admin/rfqs`} className="underline">Open queue →</Link>
-          </Alert>
-          <Alert type="ok">
+            <Link href={`${ADMIN_PREFIX}/rfqs`} className="underline">Open queue →</Link>
+          </Note>
+          <Note tone="success">
             <b>System healthy</b> — all services running normally.
-          </Alert>
+          </Note>
         </div>
 
         {/* Quick links */}
@@ -198,7 +200,7 @@ export default async function AdminDashboardPage({ params }: Props) {
             <Link
               key={link.href}
               href={link.href}
-              className="flex items-center gap-3 px-4 py-3.5 border border-ih-border bg-white hover:bg-ih-bg transition-colors text-[13px] font-medium"
+              className="flex items-center gap-3 rounded-lg border border-ih-border bg-ih-surface px-4 py-3.5 text-[13px] font-medium transition-colors hover:border-ih-border-strong hover:bg-ih-bg"
             >
               <span className="font-mono text-ih-muted text-base">{link.icon}</span>
               {link.label}
@@ -209,55 +211,20 @@ export default async function AdminDashboardPage({ params }: Props) {
   )
 }
 
-function KpiCard({ label, value, delta }: { label: string; value: string; delta: string }) {
-  return (
-    <div className="bg-white border border-[#e6e1d5] p-4 flex flex-col gap-1.5">
-      <p className="font-mono text-[10px] tracking-[0.1em] uppercase text-ih-muted">{label}</p>
-      <p className="font-mono text-[26px] font-semibold tracking-tight leading-none">{value}</p>
-      <p className="font-mono text-[11px] text-ih-muted-2">{delta}</p>
-    </div>
-  )
-}
-
-function Card({ children }: { children: React.ReactNode }) {
-  return <div className="bg-white border border-[#e6e1d5]">{children}</div>
-}
-
+/**
+ * Card header. Kept local because packages/ui's SectionHead is the editorial
+ * form (eyebrow + serif + number) and does not fit a console panel; everything
+ * else on this page now comes from the shared primitives.
+ */
 function CardHead({ title, subtitle, action }: { title: string; subtitle?: string; action?: React.ReactNode }) {
   return (
-    <div className="flex justify-between items-center gap-3 px-4 py-3.5 border-b border-[#efebe1]">
+    <div className="flex items-center justify-between gap-3 border-b border-ih-border px-4 py-3.5">
       <div>
-        <h3 className="font-semibold text-[14px]">{title}</h3>
-        {subtitle && <p className="text-[12px] text-ih-muted mt-0.5">{subtitle}</p>}
+        <h3 className="text-[14px] font-semibold">{title}</h3>
+        {subtitle && <p className="mt-0.5 text-[12px] text-ih-muted">{subtitle}</p>}
       </div>
       {action}
     </div>
-  )
-}
-
-function Alert({ type, children }: { type: 'warn' | 'info' | 'ok'; children: React.ReactNode }) {
-  const styles = {
-    warn: 'border-[oklch(0.7_0.15_80)] bg-[oklch(0.98_0.02_80)] text-[oklch(0.5_0.15_60)]',
-    info: 'border-[oklch(0.6_0.1_240)] bg-[oklch(0.97_0.02_240)] text-[oklch(0.4_0.1_240)]',
-    ok: 'border-[oklch(0.55_0.12_150)] bg-[oklch(0.97_0.02_150)] text-[oklch(0.4_0.12_150)]',
-  }
-  return (
-    <div className={`flex items-start gap-3 px-4 py-3 border text-[13px] leading-relaxed ${styles[type]}`}>
-      {children}
-    </div>
-  )
-}
-
-function StatusPill({ status }: { status: string }) {
-  const styles: Record<string, string> = {
-    active: 'bg-[oklch(0.95_0.04_150)] text-[oklch(0.45_0.12_150)]',
-    draft: 'bg-ih-surface-2 text-ih-muted',
-    discontinued: 'bg-[oklch(0.95_0.02_25)] text-[oklch(0.5_0.1_25)]',
-  }
-  return (
-    <span className={`font-mono text-[10px] tracking-[0.06em] uppercase px-2 py-0.5 ${styles[status] ?? styles['draft'] ?? ''}`}>
-      {status}
-    </span>
   )
 }
 

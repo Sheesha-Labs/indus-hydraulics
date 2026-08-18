@@ -93,22 +93,32 @@ export function Avatar({ initials, size = 32, accent, className, style, ...props
 /* ─── Note ─────────────────────────────────────────────────────────────── */
 
 export interface NoteProps extends React.HTMLAttributes<HTMLDivElement> {
-  tone?: 'accent' | 'danger'
+  tone?: NoteTone
 }
+
+export type NoteTone = 'accent' | 'danger' | 'warn' | 'success'
 
 /**
  * The one editorial aside per page. `danger` is the inline error treatment
  * from 03-interactions-and-states.md §5 — used within a failed region, never
  * as a full-page takeover for a partial failure.
+ *
+ * `warn` and `success` exist so console alert rails stop hand-rolling their
+ * own oklch literals; they mirror the `warn` / `good` tones in StatusPill.
  */
+const NOTE_TONES: Record<NoteTone, string> = {
+  accent: 'border-[oklch(0.88_0.04_248)] bg-ih-accent-soft text-[oklch(0.38_0.09_248)]',
+  danger: 'border-[oklch(0.88_0.05_28)] bg-ih-danger-soft text-[oklch(0.44_0.14_28)]',
+  warn: 'border-[oklch(0.88_0.05_70)] bg-[oklch(0.98_0.03_70)] text-[oklch(0.44_0.12_70)]',
+  success: 'border-[oklch(0.86_0.06_145)] bg-[oklch(0.97_0.03_145)] text-[oklch(0.38_0.12_145)]',
+}
+
 export function Note({ className, tone = 'accent', ...props }: NoteProps) {
   return (
     <div
       className={cn(
         'rounded-md border px-[14px] py-3 text-[12.5px] leading-relaxed',
-        tone === 'accent'
-          ? 'border-[oklch(0.88_0.04_248)] bg-ih-accent-soft text-[oklch(0.38_0.09_248)]'
-          : 'border-[oklch(0.88_0.05_28)] bg-ih-danger-soft text-[oklch(0.44_0.14_28)]',
+        NOTE_TONES[tone],
         className
       )}
       {...props}
