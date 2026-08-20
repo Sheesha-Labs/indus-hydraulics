@@ -46,6 +46,10 @@ const ROUTES = [
   '/blog/c/failure-analysis',
   '/blog/c/industrial-hose',
   '/blog/c/oilfield-pressure-control',
+  '/blog/c/specification-standards',
+  // Six- and seven-column pressure tables — the widest content on the site.
+  '/blog/hydraulic-hose-pressure-by-size',
+  '/blog/compact-hose-1sc-2sc',
   // Four-column API comparison table.
   '/blog/api-7k-16c-16d-which-standard',
   '/blog/on-site-hydraulic-hose-service-uae',

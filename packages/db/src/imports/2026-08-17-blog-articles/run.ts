@@ -59,6 +59,9 @@ import ARTICLE_24 from './articles/on-site-hydraulic-hose-service-uae'
 import ARTICLE_25 from './articles/rig-site-hose-replacement-abu-dhabi'
 import ARTICLE_26 from './articles/hose-service-northern-emirates'
 import ARTICLE_27 from './articles/bulk-hose-refit-and-tagging'
+import ARTICLE_28 from './articles/hydraulic-hose-pressure-by-size'
+import ARTICLE_29 from './articles/braid-vs-spiral-hydraulic-hose'
+import ARTICLE_30 from './articles/compact-hose-1sc-2sc'
 
 const ARTICLES: BlogArticleSeed[] = [
   ARTICLE_01,
@@ -88,6 +91,9 @@ const ARTICLES: BlogArticleSeed[] = [
   ARTICLE_25,
   ARTICLE_26,
   ARTICLE_27,
+  ARTICLE_28,
+  ARTICLE_29,
+  ARTICLE_30,
 ]
 
 const DRY_RUN = process.argv.includes('--dry-run')
