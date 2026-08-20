@@ -19,7 +19,62 @@ type Props = {
 
 export const metadata: Metadata = { title: 'Compare Products' }
 
-const GRID_COLS = `220px repeat(${MAX_COMPARE}, minmax(0, 1fr))`
+/*
+  The matrix is a set of sibling CSS grids — one per row — that must agree on
+  their column template, inside a horizontal scroller.
+
+  It used to be a single template, `220px repeat(4, minmax(0, 1fr))`, with no
+  floor on the product columns. A `1fr` track shrinks below its content, so
+  the grid always fitted the viewport and the scroller never had anything to
+  scroll: at 375px each product column computed to 28.75px and the table
+  turned into slivers of one letter per line.
+
+  So the template is now built per breakpoint, with real minimums:
+
+  - phones get fixed 244px product columns, a 124px label rail and narrow
+    124px placeholder columns, so unclaimed slots cost one thumb-flick
+    instead of a full screen each;
+  - tablets get the same fixed scheme with more generous tracks;
+  - from `lg` up — where four columns genuinely fit — the original
+    `220px repeat(N, minmax(0, 1fr))` returns and nothing scrolls.
+
+  Below `lg` the rows also need `min-width: max-content`. A block-level grid
+  is as wide as its CONTAINER, not its tracks, so the row box stayed 375px
+  while its columns overflowed it — and `position: sticky` is clamped to its
+  containing block, which is that 375px box. The already-sticky spec labels
+  therefore slid off screen after ~250px of scroll instead of pinning. Widening
+  the row to its tracks is what makes the rail hold.
+
+  The tracks must stay FIXED wherever the table can scroll: `max-content` over
+  `1fr` tracks would size each row's columns to that row's own content, and the
+  rows would stop lining up with each other.
+
+  `repeat()` rejects a count of 0, so each segment is emitted only when its
+  count is positive.
+*/
+const COMPARE_GRID_CLASS = 'ih-compare-grid'
+
+/*
+  Every row's first cell is pinned to the left edge of the scroller, so the
+  spec name stays on screen while the product columns are swiped past it.
+  Each rail cell paints its own background — a sticky cell slides OVER its
+  siblings, and a transparent one would drag their text through it. The drop
+  shadow only exists while the table can actually scroll under the rail.
+*/
+const RAIL = 'sticky left-0 z-20 shadow-[2px_0_4px_-2px_rgba(0,0,0,0.18)] md:shadow-none'
+
+function gridTemplate(
+  label: string,
+  product: string,
+  placeholder: string,
+  productCount: number,
+  placeholderCount: number,
+): string {
+  const parts = [label]
+  if (productCount > 0) parts.push(`repeat(${productCount}, ${product})`)
+  if (placeholderCount > 0) parts.push(`repeat(${placeholderCount}, ${placeholder})`)
+  return parts.join(' ')
+}
 
 export default async function ComparePage({ searchParams }: Props) {
   const sp = await searchParams
@@ -119,6 +174,23 @@ export default async function ComparePage({ searchParams }: Props) {
     return withView(remaining.length > 0 ? `/compare?skus=${remaining.join(',')}` : `/compare`)
   }
 
+  const n = sortedProducts.length
+  const gridStyles = `
+.${COMPARE_GRID_CLASS} {
+  min-width: max-content;
+  grid-template-columns: ${gridTemplate('124px', '244px', '124px', n, emptySlots)};
+}
+@media (min-width: 768px) {
+  .${COMPARE_GRID_CLASS} { grid-template-columns: ${gridTemplate('180px', '228px', '160px', n, emptySlots)}; }
+}
+@media (min-width: 1024px) {
+  .${COMPARE_GRID_CLASS} {
+    min-width: 0;
+    grid-template-columns: ${gridTemplate('220px', 'minmax(0, 1fr)', 'minmax(0, 1fr)', n, emptySlots)};
+  }
+}
+`
+
   function viewUrl(wantDiff: boolean): string {
     const base = skuList.length > 0 ? `/compare?skus=${skuList.join(',')}` : '/compare'
     if (!wantDiff) return base
@@ -214,15 +286,37 @@ export default async function ComparePage({ searchParams }: Props) {
             </div>
           </div>
 
-          <div className="overflow-x-auto" role="table" aria-label="Specification comparison">
+          {/* The template depends on how many products are staged, so it cannot
+              be a static utility class — it is emitted per render. */}
+          <style>{gridStyles}</style>
+
+          {sortedProducts.length > 1 && (
+            <p className="mb-2 flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-[0.06em] text-ih-muted lg:hidden">
+              Swipe to compare all {sortedProducts.length}
+              <span aria-hidden="true">→</span>
+            </p>
+          )}
+
+          {/* Bleeds to the screen edges on phones: the rail is worth more
+              pinned to the actual edge than inset by the page gutter. */}
+          <div
+            className="-mx-5 overflow-x-auto overscroll-x-contain sm:mx-0"
+            role="table"
+            aria-label="Specification comparison"
+          >
             {/* Column headers */}
             <div
               role="row"
-              className="grid border-t border-b border-ih-border"
-              style={{ gridTemplateColumns: GRID_COLS }}
+              className={`grid border-t border-b border-ih-border ${COMPARE_GRID_CLASS}`}
             >
-              <div role="columnheader" className="p-5 flex items-end font-mono text-[11px] text-ih-muted uppercase tracking-[0.06em]">
-                {sortedProducts.length} products · compare up to {MAX_COMPARE}
+              <div
+                role="columnheader"
+                className={`flex items-end bg-ih-bg px-4 py-4 font-mono text-[11px] uppercase leading-[1.45] tracking-[0.06em] text-ih-muted md:p-5 ${RAIL}`}
+              >
+                {/* "4 products · compare up to 4" needs three lines in a 124px
+                    rail. The phone gets the count alone. */}
+                <span className="md:hidden">{sortedProducts.length} / {MAX_COMPARE} staged</span>
+                <span className="hidden md:inline">{sortedProducts.length} products · compare up to {MAX_COMPARE}</span>
               </div>
               {sortedProducts.map((product) => {
                 const img = product.images[0]
@@ -281,12 +375,14 @@ export default async function ComparePage({ searchParams }: Props) {
                 <div
                   key={`empty-${i}`}
                   role="columnheader"
-                  className="flex items-center justify-center border-l border-dashed border-ih-border-strong p-5"
+                  className="flex items-center justify-center border-l border-dashed border-ih-border-strong p-3 md:p-5"
                 >
-                  <Link href={`/c`} className="text-center text-ih-muted hover:text-ih-ink transition-colors">
-                    <div className="text-[24px] font-light mb-1.5 opacity-50">+</div>
-                    <div className="text-[12px]">Add a {ordinal(sortedProducts.length + i + 1)} product</div>
-                    <div className="font-mono text-[10px] mt-0.5 opacity-60">Compare up to {MAX_COMPARE} SKUs</div>
+                  <Link href={`/c`} className="text-center text-ih-muted transition-colors hover:text-ih-ink">
+                    <div className="mb-1.5 text-[24px] font-light opacity-50">+</div>
+                    <div className="text-[12px] leading-[1.35]">
+                      Add a<span className="hidden md:inline"> {ordinal(sortedProducts.length + i + 1)}</span> product
+                    </div>
+                    <div className="mt-0.5 hidden font-mono text-[10px] opacity-60 md:block">Compare up to {MAX_COMPARE} SKUs</div>
                   </Link>
                 </div>
               ))}
@@ -297,10 +393,9 @@ export default async function ComparePage({ searchParams }: Props) {
               <div role="rowgroup" key={section.group}>
                 <div
                   role="row"
-                  className="grid bg-ih-navy font-mono text-[10.5px] uppercase tracking-[0.12em] text-white"
-                  style={{ gridTemplateColumns: GRID_COLS }}
+                  className={`grid bg-ih-navy font-mono text-[10.5px] uppercase tracking-[0.12em] text-white ${COMPARE_GRID_CLASS}`}
                 >
-                  <div role="columnheader" className="px-4 py-2.5">{section.group}</div>
+                  <div role="columnheader" className={`bg-ih-navy px-4 py-2.5 ${RAIL}`}>{section.group}</div>
                   {/* Spacers keep the cell count consistent across rows. */}
                   {Array.from({ length: MAX_COMPARE }).map((_, i) => <div role="cell" key={i} />)}
                 </div>
@@ -310,12 +405,11 @@ export default async function ComparePage({ searchParams }: Props) {
                   <div
                     key={row.fieldId}
                     role="row"
-                    className="grid border-b border-ih-border"
-                    style={{ gridTemplateColumns: GRID_COLS }}
+                    className={`grid border-b border-ih-border ${COMPARE_GRID_CLASS}`}
                   >
                     <div
                       role="rowheader"
-                      className={`sticky left-0 z-10 px-[18px] py-3.5 font-mono text-[11px] uppercase tracking-[0.06em] ${
+                      className={`px-3 py-3.5 font-mono text-[11px] uppercase leading-[1.45] tracking-[0.06em] md:px-[18px] ${RAIL} ${
                         differs ? 'bg-ih-accent-soft text-ih-accent' : 'bg-ih-surface-2 text-ih-muted'
                       }`}
                     >
@@ -325,7 +419,7 @@ export default async function ComparePage({ searchParams }: Props) {
                       <div
                         key={`${row.fieldId}-${i}`}
                         role="cell"
-                        className={`border-l border-ih-border px-[18px] py-3.5 text-[13px] leading-[1.5] ${
+                        className={`border-l border-ih-border px-3.5 py-3.5 text-[13px] leading-[1.5] md:px-[18px] ${
                           differs ? 'bg-ih-surface text-ih-ink' : 'bg-ih-surface text-ih-muted'
                         }`}
                       >
@@ -335,7 +429,7 @@ export default async function ComparePage({ searchParams }: Props) {
                       </div>
                     ))}
                     {Array.from({ length: emptySlots }).map((_, i) => (
-                      <div role="cell" key={`empty-${i}`} className="border-l border-ih-border px-[18px] py-3.5 font-mono text-[13px] text-ih-muted-2">
+                      <div role="cell" key={`empty-${i}`} className="border-l border-ih-border px-3.5 py-3.5 font-mono text-[13px] text-ih-muted-2 md:px-[18px]">
                         —
                       </div>
                     ))}
@@ -350,28 +444,29 @@ export default async function ComparePage({ searchParams }: Props) {
               <div role="rowgroup">
                 <div
                   role="row"
-                  className="grid bg-ih-navy font-mono text-[10.5px] uppercase tracking-[0.12em] text-white"
-                  style={{ gridTemplateColumns: GRID_COLS }}
+                  className={`grid bg-ih-navy font-mono text-[10.5px] uppercase tracking-[0.12em] text-white ${COMPARE_GRID_CLASS}`}
                 >
-                  <div role="columnheader" className="px-4 py-2.5">Engineer&apos;s take</div>
+                  <div role="columnheader" className={`bg-ih-navy px-4 py-2.5 ${RAIL}`}>Engineer&apos;s take</div>
                   {Array.from({ length: MAX_COMPARE }).map((_, i) => <div role="cell" key={i} />)}
                 </div>
                 <div
                   role="row"
-                  className="grid border-b border-ih-border"
-                  style={{ gridTemplateColumns: GRID_COLS }}
+                  className={`grid border-b border-ih-border ${COMPARE_GRID_CLASS}`}
                 >
-                  <div role="rowheader" className="px-[18px] py-3.5 font-mono text-[11px] uppercase tracking-[0.06em] text-ih-muted bg-ih-bg">
+                  <div
+                    role="rowheader"
+                    className={`bg-ih-bg px-3 py-3.5 font-mono text-[11px] uppercase tracking-[0.06em] text-ih-muted md:px-[18px] ${RAIL}`}
+                  >
                     Best for
                   </div>
                   {sortedProducts.map((product) => (
-                    <div role="cell" key={product.id} className="px-[18px] py-3.5 border-l border-ih-border bg-ih-surface text-[13px] leading-[1.5]">
+                    <div role="cell" key={product.id} className="border-l border-ih-border bg-ih-surface px-3.5 py-3.5 text-[13px] leading-[1.5] md:px-[18px]">
                       Contact our engineers for a specific application recommendation for{' '}
                       <span className="font-mono text-[11px] text-ih-muted">{product.sku}</span>
                     </div>
                   ))}
                   {Array.from({ length: emptySlots }).map((_, i) => (
-                    <div role="cell" key={`empty-${i}`} className="px-[18px] py-3.5 border-l border-ih-border text-ih-muted font-mono text-[13px]">—</div>
+                    <div role="cell" key={`empty-${i}`} className="border-l border-ih-border px-3.5 py-3.5 font-mono text-[13px] text-ih-muted md:px-[18px]">—</div>
                   ))}
                 </div>
               </div>
@@ -380,16 +475,16 @@ export default async function ComparePage({ searchParams }: Props) {
 
           {/* Dark CTA strip — only when valid */}
           {validation.ok && (
-            <div
-              className="mt-8 grid items-center gap-6 rounded-lg bg-ih-navy px-6 py-5 text-white"
-              style={{ gridTemplateColumns: '1fr auto' }}
-            >
+            <div className="mt-8 grid grid-cols-1 items-center gap-5 rounded-lg bg-ih-navy px-5 py-5 text-white sm:gap-6 sm:px-6 md:grid-cols-[1fr_auto]">
               <div>
                 <div className="mb-1.5 font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-steel">
                   NOT SURE WHICH ONE?
                 </div>
-                <div className="text-[18px] tracking-[-0.01em]">
-                  Send all {sortedProducts.length} to an Indus engineer · we&apos;ll spec the right one for your application within 1 hour
+                {/* One expression, not text-around-an-expression: the space after
+                    the count was being eaten at compile time and production read
+                    "Send all 2to an Indus engineer". */}
+                <div className="text-[17px] leading-[1.45] tracking-[-0.01em] sm:text-[18px]">
+                  {`Send all ${sortedProducts.length} to an Indus engineer · we'll spec the right one for your application within 1 hour`}
                 </div>
               </div>
               <div className="flex shrink-0 flex-wrap gap-2">
