@@ -1,5 +1,11 @@
 import { describe, expect, it } from 'vitest'
-import { asLogoStyle, buildIconMetadata, DEFAULT_LOGO_STYLE, resolveSearchIcon } from './brand-identity'
+import {
+  asLogoStyle,
+  buildIconMetadata,
+  DEFAULT_LOGO_STYLE,
+  resolveSearchIcon,
+  searchIconUrl,
+} from './brand-identity'
 
 describe('asLogoStyle', () => {
   it('passes through the two styles the header can render', () => {
@@ -97,8 +103,45 @@ describe('resolveSearchIcon', () => {
   })
 })
 
+describe('searchIconUrl', () => {
+  const BASE = 'https://indushydraulics.com'
+
+  /**
+   * The point of the indirection: whatever the operator uploaded, crawlers are
+   * pointed at this app's own route. Supabase Storage answers every public
+   * object with `x-robots-tag: none`, so a storage URL here is a mark Google
+   * is told not to index.
+   */
+  it('is this site\u2019s own icon route whichever field is set', () => {
+    const stable = 'https://indushydraulics.com/brand-icon.png'
+    expect(
+      searchIconUrl(
+        { searchLogoUrl: 'https://xyz.supabase.co/storage/mark.png', faviconUrl: null, logoUrl: null },
+        BASE,
+      ),
+    ).toBe(stable)
+    expect(
+      searchIconUrl({ searchLogoUrl: null, faviconUrl: 'https://xyz.supabase.co/f.png', logoUrl: null }, BASE),
+    ).toBe(stable)
+    expect(
+      searchIconUrl({ searchLogoUrl: null, faviconUrl: null, logoUrl: 'https://xyz.supabase.co/l.png' }, BASE),
+    ).toBe(stable)
+  })
+
+  it('is null when there is nothing behind it to serve', () => {
+    expect(searchIconUrl({ searchLogoUrl: null, faviconUrl: null, logoUrl: null }, BASE)).toBeNull()
+  })
+
+  it('does not double the slash on a base URL with a trailing one', () => {
+    expect(
+      searchIconUrl({ searchLogoUrl: '/brand/mark.png', faviconUrl: null, logoUrl: null }, `${BASE}/`),
+    ).toBe('https://indushydraulics.com/brand-icon.png')
+  })
+})
+
 describe('buildIconMetadata', () => {
   const BASE = 'https://indushydraulics.com'
+  const STABLE = 'https://indushydraulics.com/brand-icon.png'
   const NONE = { searchLogoUrl: null, faviconUrl: null, logoUrl: null }
 
   it('is undefined when the operator has uploaded nothing', () => {
@@ -106,51 +149,52 @@ describe('buildIconMetadata', () => {
   })
 
   /**
-   * The favicon and the search mark are two files by design, and the sized
-   * entry is what Google reads. Both have to be emitted, and only the sized
-   * one may carry `sizes` — see the comment on the builder.
+   * Two links by design. The tab favicon keeps the storage URL — browsers do
+   * not read `x-robots-tag`, and a URL that changes on re-upload busts their
+   * cache, which is what you want there. The sized entry is the one Google
+   * reads, so it goes through the crawlable route.
    */
-  it('emits the favicon plus a sized search mark when they differ', () => {
+  it('emits the uploaded favicon for the tab and the crawlable route for search', () => {
     const icons = buildIconMetadata(
       {
-        searchLogoUrl: 'https://cdn.test/search.png',
-        faviconUrl: 'https://cdn.test/favicon.png',
+        searchLogoUrl: 'https://xyz.supabase.co/storage/search.png',
+        faviconUrl: 'https://xyz.supabase.co/storage/favicon.png',
         logoUrl: null,
       },
       BASE,
     )
     expect(icons?.icon).toEqual([
-      { url: 'https://cdn.test/favicon.png' },
-      { url: 'https://cdn.test/search.png', sizes: '192x192' },
+      { url: 'https://xyz.supabase.co/storage/favicon.png' },
+      { url: STABLE, sizes: '192x192' },
     ])
-    expect(icons?.shortcut).toBe('https://cdn.test/favicon.png')
-    expect(icons?.apple).toBe('https://cdn.test/search.png')
+    expect(icons?.shortcut).toBe('https://xyz.supabase.co/storage/favicon.png')
+    expect(icons?.apple).toBe(STABLE)
   })
 
   /**
-   * With no search logo set, `resolveSearchIcon` chains back to the favicon.
-   * Emitting it twice would be two icon links arguing over one image, and the
-   * browser is free to pick either — which is how a stale mark survives an
-   * upload.
+   * Regression guard for the bug this replaced: with only a favicon set, the
+   * search entry used to resolve back to the same storage URL and collapse to
+   * one link — leaving Google with nothing but a noindexed file.
    */
-  it('collapses to a single icon link when both resolve to the same file', () => {
+  it('still emits a sized crawlable entry when only the favicon is set', () => {
     const icons = buildIconMetadata(
-      { searchLogoUrl: null, faviconUrl: 'https://cdn.test/favicon.png', logoUrl: null },
+      { searchLogoUrl: null, faviconUrl: 'https://xyz.supabase.co/storage/favicon.png', logoUrl: null },
       BASE,
     )
-    expect(icons?.icon).toBe('https://cdn.test/favicon.png')
-    expect(icons?.apple).toBe('https://cdn.test/favicon.png')
+    expect(icons?.icon).toEqual([
+      { url: 'https://xyz.supabase.co/storage/favicon.png' },
+      { url: STABLE, sizes: '192x192' },
+    ])
+    expect(icons?.apple).toBe(STABLE)
   })
 
-  it('absolutises a same-origin search mark, since crawlers read it without page context', () => {
+  it('serves search and apple from the route even with no favicon uploaded', () => {
     const icons = buildIconMetadata(
       { searchLogoUrl: '/brand/mark.png', faviconUrl: null, logoUrl: null },
       BASE,
     )
-    expect(icons?.icon).toEqual([
-      { url: 'https://indushydraulics.com/brand/mark.png', sizes: '192x192' },
-    ])
-    expect(icons?.apple).toBe('https://indushydraulics.com/brand/mark.png')
+    expect(icons?.icon).toEqual([{ url: STABLE, sizes: '192x192' }])
+    expect(icons?.apple).toBe(STABLE)
     // No favicon uploaded, so nothing claims the unsized slot and the browser
     // still has /favicon.ico to fall back to.
     expect(icons?.shortcut).toBeUndefined()

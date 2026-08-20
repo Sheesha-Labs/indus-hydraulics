@@ -65,6 +65,37 @@ export function resolveSearchIcon(
 }
 
 /**
+ * The path the crawlable copy of the search mark is served from. Same origin,
+ * and fixed forever — see the route handler for why both matter.
+ */
+export const BRAND_ICON_PATH = '/brand-icon.png'
+
+/**
+ * The URL to hand a crawler for the search mark: this site's own
+ * `/brand-icon.png`, or null when the operator has uploaded nothing at all.
+ *
+ * A same-origin indirection rather than the storage URL `resolveSearchIcon`
+ * returns, because Supabase Storage answers public objects with
+ * `x-robots-tag: none` — Googlebot-Image is told not to index the file, so the
+ * result row keeps its generic globe no matter how correct the markup is. The
+ * route re-serves the same bytes from a response this app controls.
+ *
+ * Both consumers — the `<head>` icon links and the Organization JSON-LD
+ * `logo` — go through here, so they cannot disagree.
+ */
+export function searchIconUrl(
+  urls: {
+    searchLogoUrl: string | null
+    faviconUrl: string | null
+    logoUrl: string | null
+  },
+  baseUrl: string,
+): string | null {
+  if (!resolveSearchIcon(urls, baseUrl)) return null
+  return `${baseUrl.replace(/\/+$/, '')}${BRAND_ICON_PATH}`
+}
+
+/**
  * `Metadata['icons']` is a union: a bare URL, an array of icons, or the keyed
  * block with `icon` / `shortcut` / `apple`. We always build the keyed block —
  * narrowing here is what lets a caller (and a test) read `.icon` off the
@@ -98,13 +129,14 @@ export function buildIconMetadata(
 ): IconsBlock | undefined {
   const favicon = urls.faviconUrl
   /*
-   * The mark search engines read. Google asks for a square that is a multiple
-   * of 48px and takes it from `rel="icon"` or `rel="apple-touch-icon"`, so it
-   * is declared as a second, *sized* icon rather than replacing the tab
+   * The mark search engines read, as the crawlable same-origin URL rather than
+   * the storage one — Google takes it from `rel="icon"` or
+   * `rel="apple-touch-icon"`, and storage answers both with a `noindex`
+   * header. Declared as a second, *sized* icon rather than replacing the tab
    * favicon: two `rel="icon"` tags that both omit `sizes` is an ambiguity, two
    * that declare different sizes is the standard way to offer both.
    */
-  const searchIcon = resolveSearchIcon(urls, baseUrl)
+  const searchIcon = searchIconUrl(urls, baseUrl)
   if (!favicon && !searchIcon) return undefined
 
   return {
