@@ -89,6 +89,44 @@ async function main(): Promise<void> {
 
     console.log(`\n${table.sku}  [${table.standard}]  ${rows.length} sizes in range`)
 
+    // descriptionLong repeats the same figures in marketing prose, in two
+    // shapes: a Performance sentence carrying working + burst, and an intro
+    // line for the spiral grades ("uniform 345 bar working pressure").
+    // Replacement is targeted on the exact old string rather than a loose
+    // number swap — other legitimate figures live in these descriptions, and
+    // 415 bar is a correct rating for the SAE J518 Code 62 flanges elsewhere
+    // in the catalogue.
+    const full = await db.product.findUnique({
+      where: { id: product.id },
+      select: { descriptionLong: true },
+    })
+    if (full?.descriptionLong) {
+      let desc = full.descriptionLong
+      const perf =
+        /Working pressures up to (\d+) bar at the smallest bore, with a minimum burst of (\d+) bar/
+      const pm = desc.match(perf)
+      if (pm && (Number(pm[1]) !== top.workingBar || Number(pm[2]) !== top.burstBar)) {
+        desc = desc.replace(
+          perf,
+          `Working pressures up to ${top.workingBar} bar at ${dash(top.dash)}, falling to ` +
+            `${bottom.workingBar} bar at ${dash(bottom.dash)}, with a minimum burst of ` +
+            `${top.burstBar} bar`,
+        )
+      }
+      const uniform = /uniform (\d+) bar working pressure/
+      const um = desc.match(uniform)
+      if (um && Number(um[1]) !== top.workingBar) {
+        desc = desc.replace(uniform, `uniform ${top.workingBar} bar working pressure`)
+      }
+      if (desc !== full.descriptionLong) {
+        console.log(`   ~ descriptionLong`)
+        changed++
+        if (!DRY_RUN) {
+          await db.product.update({ where: { id: product.id }, data: { descriptionLong: desc } })
+        }
+      }
+    }
+
     // The FAQ repeats the pressure figure in prose and feeds FAQPage JSON-LD.
     // Its framing was already the honest one — "at the smallest bore, scaling
     // down" — so only the numbers need correcting, and the range can now be
