@@ -12,6 +12,12 @@
  *
  * Rows with `confidence=unmatched` have no catalogue product and are skipped.
  *
+ * Rows with `confidence=superseded` are also skipped: the client has since
+ * delivered a better render for that product and the frame here was retired
+ * from storage. Without this the nine hose lines re-imported by
+ * `replace-hydraulic-hose-renders.ts` would come back on the next run and push
+ * the branded render off position 0.
+ *
  * Idempotent: a product that already has an image whose Media
  * `originalFilename` matches the CSV row is left alone, so re-running after a
  * partial failure only fills the gaps.
@@ -123,10 +129,11 @@ async function main() {
   if (!existsSync(dir)) throw new Error(`Image folder not found: ${dir}`)
 
   const rows = parseCsv(readFileSync(CSV_PATH, 'utf8'))
-  const usable = rows.filter((r) => r.confidence !== 'unmatched' && r.productSku)
+  const skip = new Set(['unmatched', 'superseded'])
+  const usable = rows.filter((r) => !skip.has(r.confidence) && r.productSku)
   console.log(
     `[import] ${rows.length} CSV rows, ${usable.length} with a product, ` +
-      `${rows.length - usable.length} unmatched (skipped)`,
+      `${rows.length - usable.length} unmatched or superseded (skipped)`,
   )
 
   // A handful of source files carry stray spaces the spreadsheet doesn't
