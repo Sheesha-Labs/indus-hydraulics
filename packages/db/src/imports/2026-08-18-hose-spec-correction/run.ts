@@ -12,7 +12,13 @@
  *     say we stock (1SN runs to 3"), and widening the offer is a commercial
  *     decision, not a data-correction one.
  *
- *  2. `Working Pressure Range` is added as a new field. It is the whole point:
+ *  2. Product FAQs are corrected too. They carry the same pressure figure in
+ *     prose and feed FAQPage JSON-LD, so leaving them stale would have put
+ *     contradictory numbers on the same page — and wrong ones into structured
+ *     data. Caught only because the live page still showed 415 bar after the
+ *     spec said 400.
+ *
+ *  3. `Working Pressure Range` is added as a new field. It is the whole point:
  *     a single "max working pressure" is the figure at the SMALLEST bore, and
  *     quoting it alone is what made 2SC look stronger than 4SH.
  *
@@ -82,6 +88,29 @@ async function main(): Promise<void> {
     ]
 
     console.log(`\n${table.sku}  [${table.standard}]  ${rows.length} sizes in range`)
+
+    // The FAQ repeats the pressure figure in prose and feeds FAQPage JSON-LD.
+    // Its framing was already the honest one — "at the smallest bore, scaling
+    // down" — so only the numbers need correcting, and the range can now be
+    // stated rather than deferred to an RFQ.
+    const faq = await db.productFaq.findFirst({
+      where: { productId: product.id, question: { contains: 'working pressure', mode: 'insensitive' } },
+      select: { id: true, answer: true },
+    })
+    if (faq) {
+      const answer =
+        `Up to ${top.workingBar} bar at ${dash(top.dash)}, scaling down to ` +
+        `${bottom.workingBar} bar at ${dash(bottom.dash)}. Minimum burst is four times ` +
+        `working pressure at every size. Take the exact figure for your bore from the ` +
+        `datasheet for the assembly supplied.`
+      if (faq.answer !== answer) {
+        console.log(`   ~ FAQ: maximum working pressure`)
+        console.log(`       was: ${faq.answer.slice(0, 80)}…`)
+        console.log(`       now: ${answer.slice(0, 80)}…`)
+        changed++
+        if (!DRY_RUN) await db.productFaq.update({ where: { id: faq.id }, data: { answer } })
+      }
+    }
     for (const u of updates) {
       const existing = specBy(u.label)
       const before = existing ? `${existing.value}${existing.unit ? ' ' + existing.unit : ''}` : '(absent)'
