@@ -15,7 +15,7 @@ import CompareTrayBadge from '../../components/CompareTrayBadge'
 import { BASE_URL, ORG_ID, SITE_NAME } from '../../lib/seo'
 import { areasServed, OFFICES } from '../../lib/site-locations'
 import { getStoreSettings } from '../../lib/store-settings'
-import { resolveSearchIcon } from '../../lib/brand-identity'
+import { searchIconUrl } from '../../lib/brand-identity'
 
 /**
  * Optional, comma-separated list of social profile URLs surfaced as
@@ -135,11 +135,13 @@ export default async function StorefrontLayout({ children }: { children: React.R
     name: SITE_NAME,
     legalName: settings.legalName,
     url: BASE_URL,
-    // The same resolved mark the <head> icon links declare, not `logoUrl`
-    // alone. A crawler that reads one image from the head and a different one
-    // from the structured data is exactly the case that produces a blank
-    // generic icon in the result row.
-    logoUrl: resolveSearchIcon(settings, BASE_URL),
+    // The same crawlable URL the <head> icon links carry, not `logoUrl` alone.
+    // A crawler that reads one mark from the head and a different one from the
+    // structured data is exactly the case that produces a blank generic icon
+    // in the result row — and the storage URL this used to resolve to is
+    // served `x-robots-tag: none`, so it could not be indexed as the
+    // organisation logo either.
+    logoUrl: searchIconUrl(settings, BASE_URL),
     description:
       'Industrial hydraulic components — pumps, cylinders, valves, hoses and consumables — for engineers who can’t afford downtime.',
     foundingDate: '2003',
