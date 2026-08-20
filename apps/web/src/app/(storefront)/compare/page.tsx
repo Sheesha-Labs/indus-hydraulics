@@ -235,19 +235,26 @@ export default async function ComparePage({ searchParams }: Props) {
                     : 'Lead time only'
                 return (
                   <div role="columnheader" key={product.id} className="border-l border-ih-border bg-ih-surface p-5 relative">
-                    <Link
-                      href={removeUrl(product.sku)}
-                      aria-label={`Remove ${product.sku}`}
-                      className="absolute top-2.5 right-2.5 w-[22px] h-[22px] border border-ih-border bg-ih-bg grid place-items-center font-mono text-[14px] text-ih-muted hover:text-ih-danger transition-colors"
-                    >
-                      ×
-                    </Link>
                     <div className="aspect-[4/3] bg-ih-surface-2 border border-ih-border mb-3.5 relative overflow-hidden">
                       {img ? (
                         <Image src={mediaUrl(img.media.storagePath)} alt={product.title} fill className="object-contain p-4" sizes="25vw" />
                       ) : (
                         <div className="absolute inset-0 grid place-items-center font-mono text-[11px] text-ih-muted">{product.sku}</div>
                       )}
+                      {/* The dismiss lives inside the image frame and above it. It
+                          used to sit on the card corner with no z-index, so the
+                          frame — a later sibling with `position: relative` — painted
+                          over its lower half and swallowed those clicks. The
+                          pseudo-element widens the tap target to ~42px without
+                          growing the 26px chip. */}
+                      <Link
+                        href={removeUrl(product.sku)}
+                        aria-label={`Remove ${product.sku}`}
+                        title={`Remove ${product.sku}`}
+                        className="absolute top-1.5 right-1.5 z-10 grid h-[26px] w-[26px] place-items-center rounded-sm border border-ih-border bg-ih-bg font-mono text-[14px] leading-none text-ih-muted transition-colors before:absolute before:-inset-2 before:content-[''] hover:border-ih-danger hover:bg-ih-danger-soft hover:text-ih-danger"
+                      >
+                        ×
+                      </Link>
                     </div>
                     {product.brand && (
                       <div className="font-mono text-[10px] tracking-[0.12em] uppercase text-ih-muted mb-1">{product.brand.name}</div>
