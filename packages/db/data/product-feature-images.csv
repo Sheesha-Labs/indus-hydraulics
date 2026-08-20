@@ -1,14 +1,14 @@
 image,sheetTitle,productSku,productSlug,productTitle,category,confidence,method,score
-HP001.png,R1 1SN,IH-HOSE-R1-1SN,r1-1sn-single-wire-braid-hydraulic-hose,R1 1SN Single Wire Braid Hydraulic Hose,Hydraulic Hoses,strong,prefix,107
-HP002.png,R2 2SN Double Wire,IH-HOSE-R2-2SN,r2-2sn-double-wire-braid-hydraulic-hose,R2 2SN Double Wire Braid Hydraulic Hose,Hydraulic Hoses,strong,prefix,103
-HP004.png,2SC,IH-HOSE-2SC,2sc-compact-two-wire-braid-hose,2SC Compact Two Wire Braid Hose,Hydraulic Hoses,strong,prefix,101
-HP005.png,4SP,IH-HOSE-4SP,4sp-four-spiral-hydraulic-hose,4SP Four-Spiral Hydraulic Hose,Hydraulic Hoses,strong,prefix,102
-HP006.png,4SH,IH-HOSE-4SH,4sh-four-spiral-heavy-duty-hydraulic-hose,4SH Four-Spiral Heavy-Duty Hydraulic Hose,Hydraulic Hoses,strong,prefix,100
-HP007.png,R13,IH-HOSE-R13,r13-multi-spiral-very-high-pressure-hose,R13 Multi-Spiral Very-High-Pressure Hose,Hydraulic Hoses,strong,prefix,100
-HP009.png,R15,IH-HOSE-R15,r15-six-spiral-ultra-high-pressure-hose,R15 Six-Spiral Ultra-High-Pressure Hose,Hydraulic Hoses,strong,prefix,100
+HP001.png,R1 1SN,IH-HOSE-R1-1SN,r1-1sn-single-wire-braid-hydraulic-hose,R1 1SN Single Wire Braid Hydraulic Hose,Hydraulic Hoses,superseded,prefix,107
+HP002.png,R2 2SN Double Wire,IH-HOSE-R2-2SN,r2-2sn-double-wire-braid-hydraulic-hose,R2 2SN Double Wire Braid Hydraulic Hose,Hydraulic Hoses,superseded,prefix,103
+HP004.png,2SC,IH-HOSE-2SC,2sc-compact-two-wire-braid-hose,2SC Compact Two Wire Braid Hose,Hydraulic Hoses,superseded,prefix,101
+HP005.png,4SP,IH-HOSE-4SP,4sp-four-spiral-hydraulic-hose,4SP Four-Spiral Hydraulic Hose,Hydraulic Hoses,superseded,prefix,102
+HP006.png,4SH,IH-HOSE-4SH,4sh-four-spiral-heavy-duty-hydraulic-hose,4SH Four-Spiral Heavy-Duty Hydraulic Hose,Hydraulic Hoses,superseded,prefix,100
+HP007.png,R13,IH-HOSE-R13,r13-multi-spiral-very-high-pressure-hose,R13 Multi-Spiral Very-High-Pressure Hose,Hydraulic Hoses,superseded,prefix,100
+HP009.png,R15,IH-HOSE-R15,r15-six-spiral-ultra-high-pressure-hose,R15 Six-Spiral Ultra-High-Pressure Hose,Hydraulic Hoses,superseded,prefix,100
 HP010.png,R14,IH-HOSE-R14,r14-ptfe-hydraulic-hose,R14 PTFE Hydraulic Hose,Hydraulic Hoses,strong,prefix,103
-HP012.png,R5,IH-HOSE-R5,r5-textile-cover-single-wire-braid-hose,R5 Textile-Cover Single Wire Braid Hose,Hydraulic Hoses,strong,prefix,100
-HP013.png,R6,IH-HOSE-R6,r6-single-fibre-braid-low-pressure-hose,R6 Single Fibre Braid Low-Pressure Hose,Hydraulic Hoses,strong,prefix,100
+HP012.png,R5,IH-HOSE-R5,r5-textile-cover-single-wire-braid-hose,R5 Textile-Cover Single Wire Braid Hose,Hydraulic Hoses,superseded,prefix,100
+HP013.png,R6,IH-HOSE-R6,r6-single-fibre-braid-low-pressure-hose,R6 Single Fibre Braid Low-Pressure Hose,Hydraulic Hoses,superseded,prefix,100
 HP014.png,R3,IH-HOSE-R3,r3-two-fibre-braid-hydraulic-hose,R3 Two-Fibre Braid Hydraulic Hose,Hydraulic Hoses,strong,prefix,101
 HP015.png,R7 Thermoplastic Hose,IH-HOSE-R7-TP,r7-thermoplastic-hydraulic-hose,R7 Thermoplastic Hydraulic Hose,Thermoplastic Hoses,good,tokens-subset,91
 HP016.png,R8 Thermoplastic Hose,IH-HOSE-R8-TP,r8-thermoplastic-hydraulic-hose,R8 Thermoplastic Hydraulic Hose,Thermoplastic Hoses,good,tokens-subset,91
