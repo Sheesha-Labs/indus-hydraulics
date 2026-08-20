@@ -25,22 +25,21 @@
  *
  * The 4:1 design factor holds on every row here, which is asserted by a test.
  *
- * UNRESOLVED: THIS DOES NOT MATCH ProductSpec, AND MUST NOT OVERWRITE IT
+ * RESOLVED — ProductSpec NOW DERIVES FROM THIS
  *
- * Eight of the twelve grades disagree with the single max-working-pressure
- * figure stored on the corresponding product:
+ * The founder confirmed Intertraco as the source of truth, and
+ * `packages/db/src/imports/2026-08-18-hose-spec-correction` rewrote the
+ * affected fields on 2026-08-18. Seven grades moved: 1SN 230→225, 2SN
+ * 415→400, 1SC 250→225, 2SC 450→400, R13 345→350, R6 21→28, R14 210→200.
+ * 4SP, 4SH, R15, R5 and R7 already matched.
  *
- *   1SN   spec 230 · source 225      2SN   spec 415 · source 400
- *   1SC   spec 250 · source 225      2SC   spec 450 · source 400
- *   4SH   spec 420 · source 450      R13   spec 345 · source 350
- *   R6    spec  21 · source  28      R14   spec 210 · source 275
- *   (4SP, R15, R5 and R7 match.)
- *
- * That is expected rather than alarming — these are one manufacturer's
- * products meeting a standard, and the products actually stocked may be
- * another's. But it means this dataset is a REFERENCE for how pressure varies
- * with bore, attributed to its source, and not a correction to the catalogue.
- * Resolving the two is a technical-review decision, not a transcription one.
+ * One methodological point worth keeping. Ranges are computed only over the
+ * dash sizes inside each product's stated bore range, not over the whole
+ * catalogue table. Intertraco lists 1SN to 3" and 4SH from -10; our products
+ * claim narrower ranges. Comparing unfiltered maxima made 4SH look like a
+ * mismatch when it was not — the apparent discrepancy was an artefact of
+ * comparing across different size ranges, which is the same error this whole
+ * module exists to prevent.
  *
  * `idMm` is null for the grades whose catalogue tables publish outside
  * diameter only — R6, R7 and R14. Absent, not zero.
