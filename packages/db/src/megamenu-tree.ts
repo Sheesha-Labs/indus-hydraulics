@@ -1244,8 +1244,12 @@ export const MEGAMENU_TREE: MegamenuSeedNode[] = [
             category: 'molykote-anti-friction-coatings',
           },
           {
-            label: 'Specialty Lubricants',
-            category: 'molykote-specialty-lubricants',
+            label: 'Oils & Fluids',
+            category: 'molykote-oils',
+          },
+          {
+            label: 'Dispersions',
+            category: 'molykote-dispersions',
           },
         ],
       },

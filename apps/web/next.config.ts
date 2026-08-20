@@ -42,6 +42,17 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
 
+      // Molykote Specialty Lubricants was folded into Molykote Greases. Three
+      // of its four products were deleted as unsourced placeholder listings
+      // (PR #247) and the fourth, Long Term 2 Plus, is a bearing grease. The
+      // category row stays (now unpublished, so the page 404s) and inbound
+      // links are best served by the Greases landing page.
+      {
+        source: '/c/molykote-specialty-lubricants',
+        destination: '/c/molykote-greases',
+        permanent: true,
+      },
+
       // BOP services migration (PR #131). The 13 IH-BOP-SVC-* products were
       // decommissioned and re-modelled as ServiceCase rows under /services.
       // 3 of them have direct case-study analogs (cases 03, 04, 06 in the
