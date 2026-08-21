@@ -38,10 +38,14 @@ export function LeadCapturePanel({
   quoteLabel = 'Request a quote',
   variant = 'wide',
 }: LeadCapturePanelProps) {
+  // `sc-cta-panel` is a styling opt-out, not a look: article bodies style bare
+  // anchors (accent + underline) at a specificity that beats the button
+  // utilities below. The marker keeps this panel's CTAs looking like buttons
+  // wherever it is embedded, including inside a blog article.
   const containerCls =
     variant === 'wide'
-      ? 'border-t border-ih-border bg-ih-surface py-14 px-8'
-      : 'border border-ih-border bg-ih-surface py-8 px-6'
+      ? 'sc-cta-panel border-t border-ih-border bg-ih-surface py-14 px-8'
+      : 'sc-cta-panel border border-ih-border bg-ih-surface py-8 px-6'
 
   return (
     <section className={containerCls} aria-labelledby="lead-capture-heading">
