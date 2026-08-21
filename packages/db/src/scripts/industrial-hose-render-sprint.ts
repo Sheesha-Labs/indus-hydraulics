@@ -145,6 +145,20 @@ const PAIRS: readonly { file: string; sku: string }[] = [
   { file: 'multiutility-hose-20-bar-green.png', sku: 'IH-IH-A105HP' },
   { file: 'air-water-hose-20-bar-mandrel-black.png', sku: 'IH-IH-A190' },
   { file: 'air-water-hose-20-bar-mandrel-yellow.png', sku: 'IH-IH-A190Y' },
+
+  // Steam / brew gap-fill, plus a correction.
+  //
+  // SANB comes FIRST deliberately. The red "Food and Bev" render was attached
+  // to SANF on an earlier pass, before either of us had the cover-colour spec.
+  // The specs settle it: SANB's cover is "Red smooth cloth finish", SANF's is
+  // "Blue smooth cloth finish", and the render is red — so it belongs to SANB.
+  // Uploading it under SANB's own key first means the SANF copy it displaces
+  // can be retired safely; the two live at different storage paths, so
+  // `canRemoveStorageObject` sees no sibling and the correct object survives.
+  { file: 'Food and Bev Suction and Delivery.png', sku: 'IH-IH-SANB' },
+  { file: 'san-hygienic-food-suction-delivery-hose-10-bar.png', sku: 'IH-IH-SANF' },
+  { file: 'high-pressure-red-saturated-steam-hose-18-bar.png', sku: 'IH-IH-A230' },
+  { file: 'steam-hot-water-food-hose-7-bar.png', sku: 'IH-IH-A235BU' },
 ] as const
 
 /** `IndustrialHoseCover.png` is a category cover, explicitly out of scope. */
