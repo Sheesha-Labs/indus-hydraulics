@@ -11,8 +11,11 @@ interface Props {
 
 /**
  * 301/302/307/308 redirects, surfaced with hit counts so admins can spot
- * dead rules. The middleware (apps/web/proxy.ts) is the consumer —
- * a future commit wires the `hits` increment.
+ * dead rules. apps/web/src/proxy.ts is the consumer, via
+ * src/lib/redirects.ts, which also increments `hits` on every serve.
+ *
+ * Rows here are not all hand-written: renaming a category slug creates one
+ * automatically (see lib/slug-redirect.ts).
  */
 export default function RedirectsManager({ redirects: initialRedirects }: Props) {
   const [isPending, startTransition] = useTransition()

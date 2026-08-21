@@ -7,6 +7,8 @@ import { db } from '@indus/db'
 import { auth } from '../../../../lib/admin-auth'
 import { ROLES, requireRole } from '../../../../lib/rbac'
 import { fail, failFromError, ok, type Result } from '../../../../lib/result'
+import { withSeoAudit } from '../../../../lib/seo-audit'
+import { recordSlugRedirect } from '../../../../lib/slug-redirect'
 
 function slugify(input: string): string {
   return (
@@ -90,7 +92,7 @@ const UpdateCategorySchema = z.object({
 
 export async function updateCategory(formData: FormData): Promise<Result<void>> {
   try {
-    requireRole(await auth(), ROLES.CATALOGUE_WRITE)
+    const session = requireRole(await auth(), ROLES.CATALOGUE_WRITE)
     const parsed = UpdateCategorySchema.parse({
       id: formData.get('id'),
       name: formData.get('name'),
@@ -125,21 +127,73 @@ export async function updateCategory(formData: FormData): Promise<Result<void>> 
       }
     }
 
-    const slug = await uniqueSlug(parsed.slug, parsed.id)
-
-    await db.category.update({
+    const current = await db.category.findUnique({
       where: { id: parsed.id },
-      data: {
-        name: parsed.name,
-        slug,
-        parentId: parsed.parentId,
-        defaultSpecTemplateId: parsed.defaultSpecTemplateId,
-        position: parsed.position,
-        isPublished: parsed.isPublished,
-      },
+      select: { slug: true },
     })
+    if (!current) return fail('NOT_FOUND', 'Category not found')
+
+    // Deliberately NOT `uniqueSlug` here. On create, silently appending `-2`
+    // is fine — the editor is naming something new. On update the slug is
+    // usually being set for SEO reasons, and quietly landing on
+    // `bsp-hose-fittings-uae-2` produces a URL nobody asked for and a redirect
+    // pointing at it. Report the clash instead.
+    const slug = slugify(parsed.slug)
+    const clash = await db.category.findUnique({ where: { slug }, select: { id: true, name: true } })
+    if (clash && clash.id !== parsed.id) {
+      return fail('VALIDATION', `The slug "${slug}" is already used by "${clash.name}"`, {
+        slug: ['Already in use by another category'],
+      })
+    }
+
+    const renamed = slug !== current.slug
+    const oldPath = `/c/${current.slug}`
+    const newPath = `/c/${slug}`
+
+    const data = {
+      name: parsed.name,
+      slug,
+      parentId: parsed.parentId,
+      defaultSpecTemplateId: parsed.defaultSpecTemplateId,
+      position: parsed.position,
+      isPublished: parsed.isPublished,
+    }
+
+    if (renamed) {
+      // Rename and redirect land in one transaction, so the old URL can never
+      // be left 404ing because a second write failed.
+      await withSeoAudit(
+        {
+          entityType: 'redirect',
+          entityId: null,
+          before: { fromPath: null, toPath: null, statusCode: null },
+          after: { fromPath: oldPath, toPath: newPath, statusCode: 301 },
+          actorId: session.user.id,
+          reason: 'category slug renamed',
+        },
+        async (tx) => {
+          await tx.category.update({ where: { id: parsed.id }, data })
+          await recordSlugRedirect(tx, {
+            fromPath: oldPath,
+            toPath: newPath,
+            notes: `Auto-created when category "${parsed.name}" was renamed`,
+          })
+        },
+      )
+    } else {
+      await db.category.update({ where: { id: parsed.id }, data })
+    }
 
     revalidatePath(`/admin/categories`)
+    // `invalidateCategories()` purges the shared category/nav tags, but the
+    // storefront category page is ISR (revalidate = 3600) and keyed by slug —
+    // both paths need purging by hand or the old URL serves a stale 200 from
+    // cache for up to an hour instead of the new redirect.
+    if (renamed) {
+      revalidatePath(oldPath)
+      revalidatePath(newPath)
+      revalidatePath('/admin/seo/redirects')
+    }
     invalidateCategories()
     return ok(undefined)
   } catch (err) {

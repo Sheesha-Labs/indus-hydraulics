@@ -134,9 +134,10 @@ const nextConfig: NextConfig = {
       // `permanent: true` emits a 308, not a 301 — Next uses 307/308 so the
       // request method survives the redirect.
       //
-      // NOTE: matching rows also exist in the `redirects` table, but nothing
-      // serves that table at runtime — only this array is honoured. See the
-      // admin SEO redirects section, whose entries are currently inert.
+      // NOTE: matching rows also exist in the `redirects` table, which IS
+      // served at runtime (src/lib/redirects.ts, called from proxy.ts). This
+      // array wins because Next applies config redirects before the proxy
+      // runs; the duplicate rows are harmless but redundant.
       {
         source: '/p/molykote-7439',
         destination: '/p/molykote-cu-7439-plus-paste',
