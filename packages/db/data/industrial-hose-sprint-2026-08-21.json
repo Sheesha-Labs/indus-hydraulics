@@ -1,10 +1,28 @@
 {
-  "at": "2026-08-21T12:52:43.862Z",
+  "at": "2026-08-21T18:51:39.371Z",
   "dryRun": false,
   "attached": [
     {
-      "file": "air-water-hose-20-bar-black.png",
-      "sku": "IH-IH-A101HP",
+      "file": "Food and Bev Suction and Delivery.png",
+      "sku": "IH-IH-SANB",
+      "size": {
+        "width": 1448,
+        "height": 1086
+      },
+      "displaced": 0
+    },
+    {
+      "file": "san-hygienic-food-suction-delivery-hose-10-bar.png",
+      "sku": "IH-IH-SANF",
+      "size": {
+        "width": 1448,
+        "height": 1086
+      },
+      "displaced": 1
+    },
+    {
+      "file": "high-pressure-red-saturated-steam-hose-18-bar.png",
+      "sku": "IH-IH-A230",
       "size": {
         "width": 1536,
         "height": 1024
@@ -12,26 +30,8 @@
       "displaced": 0
     },
     {
-      "file": "multiutility-hose-20-bar-green.png",
-      "sku": "IH-IH-A105HP",
-      "size": {
-        "width": 1536,
-        "height": 1024
-      },
-      "displaced": 0
-    },
-    {
-      "file": "air-water-hose-20-bar-mandrel-black.png",
-      "sku": "IH-IH-A190",
-      "size": {
-        "width": 1536,
-        "height": 1024
-      },
-      "displaced": 0
-    },
-    {
-      "file": "air-water-hose-20-bar-mandrel-yellow.png",
-      "sku": "IH-IH-A190Y",
+      "file": "steam-hot-water-food-hose-7-bar.png",
+      "sku": "IH-IH-A235BU",
       "size": {
         "width": 1536,
         "height": 1024
@@ -39,5 +39,7 @@
       "displaced": 0
     }
   ],
-  "displaced": []
+  "displaced": [
+    "Food and Bev Suction and Delivery.png"
+  ]
 }
