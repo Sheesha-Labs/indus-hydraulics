@@ -374,7 +374,12 @@
   color: var(--color-ih-ink);
   font-weight: 600;
 }
-.sc-article-body a {
+/* Body-copy links only. Anchors inside a self-styling block — the lead-capture
+   panel's buttons, which carry their own background and text colour — opt out
+   via .sc-cta-panel. Without the exclusion this rule (0,1,1) outranks the
+   `text-white` utility (0,1,0) and paints the primary button's label accent
+   blue on an accent-blue background, i.e. invisible. */
+.sc-article-body a:not(.sc-cta-panel a) {
   color: var(--color-ih-accent);
   text-decoration: underline;
   text-underline-offset: 3px;
