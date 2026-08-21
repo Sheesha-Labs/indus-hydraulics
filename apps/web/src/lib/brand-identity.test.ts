@@ -4,7 +4,9 @@ import {
   buildIconMetadata,
   DEFAULT_LOGO_STYLE,
   resolveSearchIcon,
+  resolveTabIcon,
   searchIconUrl,
+  tabIconUrl,
 } from './brand-identity'
 
 describe('asLogoStyle', () => {
@@ -139,9 +141,67 @@ describe('searchIconUrl', () => {
   })
 })
 
+describe('resolveTabIcon', () => {
+  const BASE = 'https://indushydraulics.com'
+
+  /** The mirror of resolveSearchIcon: the file authored for the tab wins. */
+  it('prefers the favicon, then the search mark, then the header logo', () => {
+    expect(
+      resolveTabIcon(
+        {
+          searchLogoUrl: 'https://cdn.test/search.png',
+          faviconUrl: 'https://cdn.test/favicon.png',
+          logoUrl: 'https://cdn.test/logo.png',
+        },
+        BASE,
+      ),
+    ).toBe('https://cdn.test/favicon.png')
+    expect(
+      resolveTabIcon(
+        { searchLogoUrl: 'https://cdn.test/search.png', faviconUrl: null, logoUrl: 'https://cdn.test/logo.png' },
+        BASE,
+      ),
+    ).toBe('https://cdn.test/search.png')
+    expect(
+      resolveTabIcon({ searchLogoUrl: null, faviconUrl: null, logoUrl: 'https://cdn.test/logo.png' }, BASE),
+    ).toBe('https://cdn.test/logo.png')
+  })
+
+  it('is null when the operator has uploaded nothing', () => {
+    expect(resolveTabIcon({ searchLogoUrl: null, faviconUrl: null, logoUrl: null }, BASE)).toBeNull()
+  })
+})
+
+describe('tabIconUrl', () => {
+  const BASE = 'https://indushydraulics.com'
+  const STABLE = 'https://indushydraulics.com/tab-icon.png'
+
+  /**
+   * The reason the tab link stopped pointing at storage: Google reads every
+   * `rel="icon"`, storage answers `x-robots-tag: none`, and the storage key
+   * changes on every re-upload.
+   */
+  it('is this site\u2019s own route whichever field is set', () => {
+    expect(
+      tabIconUrl({ searchLogoUrl: null, faviconUrl: 'https://xyz.supabase.co/f.png', logoUrl: null }, BASE),
+    ).toBe(STABLE)
+    expect(
+      tabIconUrl({ searchLogoUrl: 'https://xyz.supabase.co/s.png', faviconUrl: null, logoUrl: null }, BASE),
+    ).toBe(STABLE)
+    expect(tabIconUrl({ searchLogoUrl: null, faviconUrl: null, logoUrl: '/brand/mark.png' }, `${BASE}/`)).toBe(
+      STABLE,
+    )
+  })
+
+  it('is null when there is nothing behind it to serve', () => {
+    expect(tabIconUrl({ searchLogoUrl: null, faviconUrl: null, logoUrl: null }, BASE)).toBeNull()
+  })
+})
+
 describe('buildIconMetadata', () => {
   const BASE = 'https://indushydraulics.com'
-  const STABLE = 'https://indushydraulics.com/brand-icon.png'
+  const SEARCH = 'https://indushydraulics.com/brand-icon.png'
+  const TAB = 'https://indushydraulics.com/tab-icon.png'
   const NONE = { searchLogoUrl: null, faviconUrl: null, logoUrl: null }
 
   it('is undefined when the operator has uploaded nothing', () => {
@@ -149,12 +209,32 @@ describe('buildIconMetadata', () => {
   })
 
   /**
-   * Two links by design. The tab favicon keeps the storage URL — browsers do
-   * not read `x-robots-tag`, and a URL that changes on re-upload busts their
-   * cache, which is what you want there. The sized entry is the one Google
-   * reads, so it goes through the crawlable route.
+   * The regression this file exists to hold: NO href in the emitted head may
+   * be a storage URL. Google reads every `rel="icon"`, and storage answers
+   * every public object with `x-robots-tag: none` — a mark the crawler has
+   * been told to ignore — at a key that changes on each re-upload.
    */
-  it('emits the uploaded favicon for the tab and the crawlable route for search', () => {
+  it('emits no storage URL anywhere, whichever files are uploaded', () => {
+    for (const urls of [
+      {
+        searchLogoUrl: 'https://xyz.supabase.co/storage/search.png',
+        faviconUrl: 'https://xyz.supabase.co/storage/favicon.png',
+        logoUrl: 'https://xyz.supabase.co/storage/logo.png',
+      },
+      { searchLogoUrl: null, faviconUrl: 'https://xyz.supabase.co/storage/favicon.png', logoUrl: null },
+      { searchLogoUrl: 'https://xyz.supabase.co/storage/search.png', faviconUrl: null, logoUrl: null },
+      { searchLogoUrl: null, faviconUrl: null, logoUrl: 'https://xyz.supabase.co/storage/logo.png' },
+    ]) {
+      expect(JSON.stringify(buildIconMetadata(urls, BASE))).not.toContain('supabase.co')
+    }
+  })
+
+  /**
+   * Two sized links, not one: two `rel="icon"` tags that both omit `sizes` is
+   * an ambiguity a crawler has to break for itself, two that declare different
+   * sizes is the documented way to offer both a tab mark and a result mark.
+   */
+  it('emits the tab route unsized and the search route at 192px', () => {
     const icons = buildIconMetadata(
       {
         searchLogoUrl: 'https://xyz.supabase.co/storage/search.png',
@@ -164,39 +244,40 @@ describe('buildIconMetadata', () => {
       BASE,
     )
     expect(icons?.icon).toEqual([
-      { url: 'https://xyz.supabase.co/storage/favicon.png' },
-      { url: STABLE, sizes: '192x192' },
+      { url: TAB, type: 'image/png' },
+      { url: SEARCH, sizes: '192x192', type: 'image/png' },
     ])
-    expect(icons?.shortcut).toBe('https://xyz.supabase.co/storage/favicon.png')
-    expect(icons?.apple).toBe(STABLE)
+    expect(icons?.shortcut).toBe(TAB)
+    expect(icons?.apple).toBe(SEARCH)
   })
 
   /**
-   * Regression guard for the bug this replaced: with only a favicon set, the
-   * search entry used to resolve back to the same storage URL and collapse to
-   * one link — leaving Google with nothing but a noindexed file.
+   * One uploaded file has to light up both links: the two chains fall back to
+   * each other, so the routes serve the same bytes rather than one of them
+   * 307-ing to the bundled ICO while the head claims a brand mark.
    */
-  it('still emits a sized crawlable entry when only the favicon is set', () => {
+  it('emits both links when the operator uploaded only a favicon', () => {
     const icons = buildIconMetadata(
       { searchLogoUrl: null, faviconUrl: 'https://xyz.supabase.co/storage/favicon.png', logoUrl: null },
       BASE,
     )
     expect(icons?.icon).toEqual([
-      { url: 'https://xyz.supabase.co/storage/favicon.png' },
-      { url: STABLE, sizes: '192x192' },
+      { url: TAB, type: 'image/png' },
+      { url: SEARCH, sizes: '192x192', type: 'image/png' },
     ])
-    expect(icons?.apple).toBe(STABLE)
+    expect(icons?.shortcut).toBe(TAB)
+    expect(icons?.apple).toBe(SEARCH)
   })
 
-  it('serves search and apple from the route even with no favicon uploaded', () => {
+  it('emits both links when the operator uploaded only a search mark', () => {
     const icons = buildIconMetadata(
       { searchLogoUrl: '/brand/mark.png', faviconUrl: null, logoUrl: null },
       BASE,
     )
-    expect(icons?.icon).toEqual([{ url: STABLE, sizes: '192x192' }])
-    expect(icons?.apple).toBe(STABLE)
-    // No favicon uploaded, so nothing claims the unsized slot and the browser
-    // still has /favicon.ico to fall back to.
-    expect(icons?.shortcut).toBeUndefined()
+    expect(icons?.icon).toEqual([
+      { url: TAB, type: 'image/png' },
+      { url: SEARCH, sizes: '192x192', type: 'image/png' },
+    ])
+    expect(icons?.apple).toBe(SEARCH)
   })
 })

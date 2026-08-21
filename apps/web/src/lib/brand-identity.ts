@@ -38,6 +38,13 @@ export function asLogoStyle(value: string | null | undefined): LogoStyle {
   return value === 'logo_only' ? 'logo_only' : DEFAULT_LOGO_STYLE
 }
 
+/** The three brand images an operator can upload, as stored. */
+export type BrandUrls = {
+  searchLogoUrl: string | null
+  faviconUrl: string | null
+  logoUrl: string | null
+}
+
 /**
  * The mark a search engine should draw for this site, or null when the
  * operator has set none of the three.
@@ -51,24 +58,35 @@ export function asLogoStyle(value: string | null | undefined): LogoStyle {
  * Absolutises a same-origin path, since structured data and icon links are
  * both read by crawlers that have no page context to resolve against.
  */
-export function resolveSearchIcon(
-  urls: {
-    searchLogoUrl: string | null
-    faviconUrl: string | null
-    logoUrl: string | null
-  },
-  baseUrl: string,
-): string | null {
+export function resolveSearchIcon(urls: BrandUrls, baseUrl: string): string | null {
   const picked = urls.searchLogoUrl ?? urls.faviconUrl ?? urls.logoUrl
   if (!picked) return null
   return picked.startsWith('/') ? `${baseUrl.replace(/\/+$/, '')}${picked}` : picked
 }
 
 /**
- * The path the crawlable copy of the search mark is served from. Same origin,
- * and fixed forever — see the route handler for why both matter.
+ * The paths the crawlable copies of the two brand marks are served from. Same
+ * origin, and fixed forever — see the route handlers for why both matter.
+ *
+ * Two rather than one because the operator uploads two files for two jobs: a
+ * favicon authored to survive 16px in a tab strip, and a search mark authored
+ * to stand for the brand in a result row. They are declared as two icon links
+ * of different sizes, which is the documented way to offer both.
  */
 export const BRAND_ICON_PATH = '/brand-icon.png'
+export const TAB_ICON_PATH = '/tab-icon.png'
+
+/**
+ * The tab favicon's source of truth, resolved the other way round from
+ * `resolveSearchIcon`: the file authored for the tab wins, and the search mark
+ * or the header logo stand in when there is none.
+ */
+export function resolveTabIcon(urls: BrandUrls, baseUrl: string): string | null {
+  return resolveSearchIcon(
+    { searchLogoUrl: urls.faviconUrl, faviconUrl: urls.searchLogoUrl, logoUrl: urls.logoUrl },
+    baseUrl,
+  )
+}
 
 /**
  * The URL to hand a crawler for the search mark: this site's own
@@ -83,16 +101,33 @@ export const BRAND_ICON_PATH = '/brand-icon.png'
  * Both consumers — the `<head>` icon links and the Organization JSON-LD
  * `logo` — go through here, so they cannot disagree.
  */
-export function searchIconUrl(
-  urls: {
-    searchLogoUrl: string | null
-    faviconUrl: string | null
-    logoUrl: string | null
-  },
-  baseUrl: string,
-): string | null {
+export function searchIconUrl(urls: BrandUrls, baseUrl: string): string | null {
   if (!resolveSearchIcon(urls, baseUrl)) return null
   return `${baseUrl.replace(/\/+$/, '')}${BRAND_ICON_PATH}`
+}
+
+/**
+ * The URL to declare for the tab favicon: this site's own `/tab-icon.png`, or
+ * null when nothing is uploaded.
+ *
+ * Same-origin for the same two reasons the search mark is, and both of them
+ * apply to this link too, because Google reads *every* `rel="icon"` on the
+ * page — not only the sized one:
+ *
+ *  - a storage URL answers `x-robots-tag: none`, so the icon Google is most
+ *    likely to treat as *the* favicon (the unsized one) resolves to a file it
+ *    has been told not to index;
+ *  - storage keys are minted `${Date.now()}-${filename}`, so the URL changed on
+ *    every re-upload, and Google's favicon guidance asks for a stable one.
+ *
+ * The browser-cache argument for keeping the volatile storage URL here does
+ * not survive the route: it answers with `max-age=3600`, so a re-uploaded
+ * favicon reaches a returning visitor within the hour, and immediately for
+ * everyone else.
+ */
+export function tabIconUrl(urls: BrandUrls, baseUrl: string): string | null {
+  if (!resolveTabIcon(urls, baseUrl)) return null
+  return `${baseUrl.replace(/\/+$/, '')}${TAB_ICON_PATH}`
 }
 
 /**
@@ -107,6 +142,12 @@ type IconsBlock = Exclude<NonNullable<Metadata['icons']>, string | URL | readonl
  * The whole `icons` block for the document head, or undefined when the
  * operator has uploaded nothing.
  *
+ * Every href it emits is same-origin, fixed, and served with
+ * `x-robots-tag: all`. That is the whole point: the head used to mix three
+ * URLs across four links — two of them on a host that answers `noindex` and
+ * changes on re-upload — and a crawler resolving one site's favicon from a set
+ * like that is the case that leaves the generic mark in the result row.
+ *
  * Pure and here rather than inline in the root layout so it can be tested
  * without booting a layout, a font loader or a database — the bug this exists
  * to prevent (icons declared on one layout, absent on the surfaces that do not
@@ -119,38 +160,26 @@ type IconsBlock = Exclude<NonNullable<Metadata['icons']>, string | URL | readonl
  * operator who uploads a favicon would get two competing icon links and no say
  * in which one the browser picks. Do not move it back.
  */
-export function buildIconMetadata(
-  urls: {
-    searchLogoUrl: string | null
-    faviconUrl: string | null
-    logoUrl: string | null
-  },
-  baseUrl: string,
-): IconsBlock | undefined {
-  const favicon = urls.faviconUrl
-  /*
-   * The mark search engines read, as the crawlable same-origin URL rather than
-   * the storage one — Google takes it from `rel="icon"` or
-   * `rel="apple-touch-icon"`, and storage answers both with a `noindex`
-   * header. Declared as a second, *sized* icon rather than replacing the tab
-   * favicon: two `rel="icon"` tags that both omit `sizes` is an ambiguity, two
-   * that declare different sizes is the standard way to offer both.
-   */
-  const searchIcon = searchIconUrl(urls, baseUrl)
-  if (!favicon && !searchIcon) return undefined
+export function buildIconMetadata(urls: BrandUrls, baseUrl: string): IconsBlock | undefined {
+  const tab = tabIconUrl(urls, baseUrl)
+  const search = searchIconUrl(urls, baseUrl)
+  if (!tab && !search) return undefined
 
   return {
-    // The sized entry is added only when it is a *different* file: with no
-    // search logo set the chain resolves back to the favicon, and emitting the
-    // same href twice would be two icon links arguing over one image.
-    icon:
-      searchIcon && searchIcon !== favicon
-        ? [...(favicon ? [{ url: favicon }] : []), { url: searchIcon, sizes: '192x192' }]
-        : (favicon ?? searchIcon ?? undefined),
-    ...(favicon ? { shortcut: favicon } : {}),
+    // Two entries, distinguished by `sizes`: two `rel="icon"` tags that both
+    // omit it is an ambiguity, two that declare different sizes is the
+    // standard way to offer a tab-sized and a result-row-sized mark. Both
+    // resolve even when the operator uploaded only one file — the chains fall
+    // back to each other, and the two routes then serve the same bytes.
+    icon: [
+      ...(tab ? [{ url: tab, type: 'image/png' }] : []),
+      ...(search ? [{ url: search, sizes: '192x192', type: 'image/png' }] : []),
+    ],
+    ...(tab ? { shortcut: tab } : {}),
     // Home-screen bookmarks want a bigger square than a tab strip does — the
     // search-result mark is authored at exactly that size, so it serves here
-    // too and iOS scales it.
-    ...(searchIcon || favicon ? { apple: searchIcon ?? favicon! } : {}),
+    // too and iOS scales it. Google documents reading this link for the
+    // favicon as well, which is the second reason it must not be a storage URL.
+    ...(search || tab ? { apple: search ?? tab! } : {}),
   }
 }
