@@ -1,7 +1,8 @@
 /**
  * Blog authors.
  *
- * Seeded from the team already published on /about — name, role and years of
+ * Seeded from the team already published on the company page
+ * (/hydraulic-components-supplier-uae) — name, role and years of
  * experience are existing site copy, not new claims.
  *
  * `bio` and `credentials` are deliberately LEFT NULL. Those fields feed

@@ -1,30 +1,51 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { db } from '@indus/db'
-import { urlFor } from '../../../lib/seo'
+import { pageMetadata } from '../../../lib/seo'
 
 // Static-ish marketing page; cache for 1 hour.
 export const revalidate = 3600
 
 const FOUNDING_YEAR = 2003
 
+/**
+ * The company page lives at a descriptive URL rather than `/about`.
+ *
+ * "About us" describes the page to us; it describes nothing to someone
+ * searching for a supplier. The content here — founding year, facility,
+ * certifications, leadership — is exactly what a buyer evaluating a supplier
+ * is looking for, so the URL says that. `/about` 301s here via the redirects
+ * table.
+ *
+ * The CmsPage override key stays `'about'`: it identifies the content, not
+ * the route, and decoupling the two avoids a data migration every time a URL
+ * is tuned.
+ */
+export const ABOUT_CMS_SLUG = 'about'
+const PATH = '/hydraulic-components-supplier-uae'
+
 export async function generateMetadata(): Promise<Metadata> {
   const [page, skuCount, brandCount] = await Promise.all([
-    db.cmsPage.findUnique({ where: { slug: 'about' } }),
+    // `isPublished` matters here as much as it does in the body query below.
+    // Without it a draft row supplied the title and description while the
+    // body still rendered the hardcoded fallback — a half-published page.
+    db.cmsPage.findUnique({ where: { slug: ABOUT_CMS_SLUG, isPublished: true } }),
     db.product.count({ where: { status: 'active' } }),
     db.brand.count({ where: { isPublished: true } }),
   ])
   const yearsInBusiness = new Date().getFullYear() - FOUNDING_YEAR
   const skuFloor = Math.max(100, Math.floor(skuCount / 100) * 100)
-  return {
-    title: page?.seoTitle ?? 'About Indus Hydraulics',
+  return pageMetadata({
+    // No brand name here. The storefront layout applies
+    // `template: '%s | Indus Hydraulics'`, so a title carrying the brand
+    // itself rendered as "About Indus Hydraulics | Indus Hydraulics".
+    title: page?.seoTitle ?? 'Hydraulic Components Supplier in UAE',
     description:
       page?.seoDescription ??
-      `A specialist hydraulics supplier built by engineers for engineers. ${yearsInBusiness} years in business, ${skuFloor.toLocaleString()}+ SKUs across ${brandCount} brands, shipped from Dubai HQ.`,
-    // Hand-built metadata, so it never went through `pageMetadata` and never
-    // declared one. Same omission as the home page's.
-    alternates: { canonical: urlFor('/about') },
-  }
+      `Hydraulic hoses, fittings, adapters, valves and cylinders supplied across the UAE and GCC since ${FOUNDING_YEAR}. ${yearsInBusiness} years in business, ${skuFloor.toLocaleString()}+ SKUs across ${brandCount} brands, shipped from our Dubai warehouse.`,
+    path: PATH,
+    canonicalUrl: page?.canonicalUrl ?? null,
+  })
 }
 
 type Props = { params: Promise<Record<string, never>> }
@@ -49,7 +70,7 @@ const TEAM = [
 export default async function AboutPage({ params }: Props) {
   await params
   const [page, activeSkuCount, publishedBrandCount] = await Promise.all([
-    db.cmsPage.findUnique({ where: { slug: 'about', isPublished: true } }),
+    db.cmsPage.findUnique({ where: { slug: ABOUT_CMS_SLUG, isPublished: true } }),
     db.product.count({ where: { status: 'active' } }),
     db.brand.count({ where: { isPublished: true } }),
   ])

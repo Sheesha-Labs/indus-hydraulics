@@ -66,7 +66,7 @@ const ROUTES = [
   // Habshan carries the longest constraint copy and the most zone chips.
   '/locations/habshan',
   '/locations/sharjah',
-  '/about',
+  '/hydraulic-components-supplier-uae',
   '/contact',
   '/quote',
   '/search?q=valve&sort=price_asc',
