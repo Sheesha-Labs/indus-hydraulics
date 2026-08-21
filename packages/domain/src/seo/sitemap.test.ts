@@ -62,4 +62,53 @@ describe('buildStaticEntries', () => {
     ])
     expect(home?.url).toBe('https://example.com')
   })
+
+  // The root `loc` has to be byte-identical to what the home page renders in
+  // `<link rel="canonical">` / `og:url`. That is the bare origin: the home
+  // page sets `alternates.canonical = BASE_URL`, and `buildMetadata` strips a
+  // trailing slash off any canonical it is handed, so no trailing-slash form
+  // is reachable on the canonical side. A sitemap entry of
+  // "https://example.com/" would therefore point at a page whose canonical
+  // disagrees with it.
+  //
+  // Every other entry in the sitemap is likewise slash-free — `entityUrl`
+  // ends on a slug and the other static paths end on a segment — so the bare
+  // origin is the consistent spelling, not the outlier.
+  it('emits the root without a trailing slash, matching the home canonical', () => {
+    const [home] = buildStaticEntries('https://example.com', [
+      { path: '', priority: 1, changeFrequency: 'weekly' },
+    ])
+    expect(home?.url).toBe('https://example.com')
+    expect(home?.url.endsWith('/')).toBe(false)
+  })
+
+  it("treats '/' as the root and normalises it to the same bare origin", () => {
+    const [slash] = buildStaticEntries('https://example.com', [
+      { path: '/', priority: 1, changeFrequency: 'weekly' },
+    ])
+    expect(slash?.url).toBe('https://example.com')
+  })
+
+  it('strips a trailing slash from the origin before building the root', () => {
+    const [home] = buildStaticEntries('https://example.com/', [
+      { path: '', priority: 1, changeFrequency: 'weekly' },
+    ])
+    expect(home?.url).toBe('https://example.com')
+  })
+
+  it('leaves non-root paths untouched and slash-free', () => {
+    const entries = buildStaticEntries('https://example.com', [
+      { path: '', priority: 1, changeFrequency: 'weekly' },
+      { path: '/c', priority: 0.8, changeFrequency: 'weekly' },
+      { path: '/tools/dash-size-chart', priority: 0.6, changeFrequency: 'monthly' },
+    ])
+    expect(entries.map((e) => e.url)).toEqual([
+      'https://example.com',
+      'https://example.com/c',
+      'https://example.com/tools/dash-size-chart',
+    ])
+    for (const entry of entries) {
+      expect(entry.url.endsWith('/')).toBe(false)
+    }
+  })
 })
