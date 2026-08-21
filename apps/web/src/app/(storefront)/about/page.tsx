@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { db } from '@indus/db'
+import { urlFor } from '../../../lib/seo'
 
 // Static-ish marketing page; cache for 1 hour.
 export const revalidate = 3600
@@ -20,6 +21,9 @@ export async function generateMetadata(): Promise<Metadata> {
     description:
       page?.seoDescription ??
       `A specialist hydraulics supplier built by engineers for engineers. ${yearsInBusiness} years in business, ${skuFloor.toLocaleString()}+ SKUs across ${brandCount} brands, shipped from Dubai HQ.`,
+    // Hand-built metadata, so it never went through `pageMetadata` and never
+    // declared one. Same omission as the home page's.
+    alternates: { canonical: urlFor('/about') },
   }
 }
 

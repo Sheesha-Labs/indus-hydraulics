@@ -6,6 +6,7 @@ import { db } from '@indus/db'
 import HomeNewsletterForm from '../../components/HomeNewsletterForm'
 import HomeHeroCarousel, { type HomeHeroSlide } from '../../components/HomeHeroCarousel'
 import { getIndustryList } from '../../lib/industry-content'
+import { BASE_URL } from '../../lib/seo'
 
 export async function generateMetadata(): Promise<Metadata> {
   // Pull live counts so the meta description matches the catalogue we
@@ -19,6 +20,13 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: 'Indus Hydraulics — Industrial Components for Hydraulic Systems',
     description: `${skuFloor.toLocaleString()}+ SKUs across pumps, cylinders, valves and consumables — from ${brandCount} specialist brands. ISO-certified, datasheet-backed, shipped from our Dubai HQ across the GCC.`,
+    // Every other indexable route declares one through `pageMetadata`; the
+    // home page built its metadata by hand and so shipped none. It is the one
+    // URL where that matters most — Google resolves a site's favicon and its
+    // Organization entity against the home page, and an unresolved canonical
+    // is a weaker anchor for both. No trailing slash, so it matches the
+    // sitemap's `loc` and the `og:url` byte for byte.
+    alternates: { canonical: BASE_URL },
   }
 }
 
