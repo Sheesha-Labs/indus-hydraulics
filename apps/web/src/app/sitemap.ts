@@ -3,6 +3,7 @@ import { db } from '@indus/db'
 import { buildSitemapEntries, buildStaticEntries, serviceAreasOrdered } from '@indus/domain'
 import { BASE_URL } from '../lib/seo'
 import { getReplacementBrands, getReplacementSitemapKeys } from '../lib/replacement-data'
+import { STATIC_SITEMAP_PATHS } from '../lib/crawl-policy'
 
 /**
  * Public XML sitemap. Sources entity rows from Postgres and feeds them
@@ -269,37 +270,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.7,
   }))
 
-  const staticEntries = buildStaticEntries(BASE_URL, [
-    { path: '', priority: 1.0, changeFrequency: 'weekly' },
-    // /c became a real category index in the v2 migration — it previously
-    // redirected to whichever category sorted first, so it was deliberately
-    // absent here.
-    { path: '/c', priority: 0.8, changeFrequency: 'weekly' },
-    { path: '/blog', priority: 0.6, changeFrequency: 'weekly' },
-    { path: '/brands', priority: 0.6, changeFrequency: 'weekly' },
-    { path: '/industries', priority: 0.6, changeFrequency: 'weekly' },
-    { path: '/services', priority: 0.8, changeFrequency: 'weekly' },
-    { path: '/search', priority: 0.4, changeFrequency: 'monthly' },
-    // Reference tools. Static, evergreen and the kind of utility page
-    // technicians bookmark and forums link to, so they carry a higher
-    // priority than most non-catalogue pages.
-    { path: '/tools', priority: 0.7, changeFrequency: 'monthly' },
-    // On-site service areas. High-intent local surface ("hydraulic hose
-    // repair sharjah"), so they carry the same priority as the tools.
-    { path: '/locations', priority: 0.7, changeFrequency: 'monthly' },
-    { path: '/tools/thread-identifier', priority: 0.7, changeFrequency: 'monthly' },
-    { path: '/tools/pressure-converter', priority: 0.6, changeFrequency: 'monthly' },
-    { path: '/tools/dash-size-chart', priority: 0.6, changeFrequency: 'monthly' },
-    // Programmatic replacement landing pages — high-intent search
-    // surface ("parker pv16 replacement") that AI agents cite well.
-    { path: '/replacement', priority: 0.7, changeFrequency: 'weekly' },
-    // Legal / policy pages render from hardcoded content unless an
-    // editor publishes a CmsPage row to override. Listing them here so
-    // they're crawlable from day 1 without depending on a CMS row.
-    { path: '/shipping', priority: 0.4, changeFrequency: 'yearly' },
-    { path: '/returns', priority: 0.4, changeFrequency: 'yearly' },
-    { path: '/warranty', priority: 0.4, changeFrequency: 'yearly' },
-  ])
+  const staticEntries = buildStaticEntries(BASE_URL, STATIC_SITEMAP_PATHS)
 
   // Per-(brand, mpn) replacement entries. The brand-level index pages
   // (/replacement/<brand>) are emitted from the same source so we
