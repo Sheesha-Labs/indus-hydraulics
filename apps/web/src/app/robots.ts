@@ -1,6 +1,7 @@
 import type { MetadataRoute } from 'next'
 import { db } from '@indus/db'
 import { BASE_URL } from '../lib/seo'
+import { DEFAULT_DISALLOW } from '../lib/crawl-policy'
 
 /**
  * Serves /robots.txt from the admin-managed `SeoSetting.robotsTxt` value.
@@ -42,28 +43,10 @@ export default async function robots(): Promise<MetadataRoute.Robots> {
     rules: {
       userAgent: '*',
       allow: '/',
-      // Crawl budget hygiene. None of these surfaces are useful as
-      // landing pages: account/quote/RFQ require auth or session
-      // state; API routes return JSON; /search, /compare and the
-      // auth pages are session-coupled or thin/duplicative content.
-      disallow: [
-        // Reserved — see RESERVED_DISALLOW below.
-        '/admin',
-        '/admin/',
-        '/account',
-        '/account/',
-        '/quote',
-        '/quote/',
-        '/api/',
-        '/search',
-        '/compare',
-        '/sign-in',
-        '/sign-up',
-        '/forgot-password',
-        '/reset-password',
-        '/maintenance',
-        '/design',
-      ],
+      // Crawl budget hygiene — the list lives in lib/crawl-policy beside the
+      // sitemap's static paths, so the two cannot contradict each other. They
+      // did: /search was disallowed here and listed in the sitemap.
+      disallow: [...DEFAULT_DISALLOW],
     },
     sitemap: sitemapUrl,
   }
