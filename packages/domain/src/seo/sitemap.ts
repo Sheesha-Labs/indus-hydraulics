@@ -41,7 +41,7 @@ export type SitemapEntry = {
 
 /**
  * Build the URL for an entity. CmsPage uses the raw slug at the root
- * ("/about", "/contact"); everything else is prefixed by URL_SEGMENTS.
+ * ("/contact", "/warranty"); everything else is prefixed by URL_SEGMENTS.
  */
 export function entityUrl(
   origin: string,

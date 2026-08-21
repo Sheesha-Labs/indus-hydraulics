@@ -15,6 +15,17 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
+      // The company page moved from /about to a URL that describes what the
+      // company sells. Kept here rather than in the `redirects` table because
+      // this move is coupled to the route folder: config redirects ship in the
+      // same deploy as the new route, so there is no window where /about is
+      // dead or the redirect points at a 404. Table rows are the right home
+      // for moves decided after a deploy — see lib/slug-redirect.ts.
+      {
+        source: '/about',
+        destination: '/hydraulic-components-supplier-uae',
+        permanent: true,
+      },
       // The blog moved out of the CMS tab strip into its own admin section
       // (Blog Editor). These keep bookmarks and the deep links that shipped in
       // the SEO inspector working rather than 404ing on a route that no

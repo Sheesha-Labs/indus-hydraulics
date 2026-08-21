@@ -81,6 +81,14 @@ export const STATIC_SITEMAP_PATHS: StaticSitemapPath[] = [
   // Programmatic replacement landing pages — high-intent search
   // surface ("parker pv16 replacement") that AI agents cite well.
   { path: '/replacement', priority: 0.7, changeFrequency: 'weekly' },
+  // Company pages. Both were missing entirely: neither is in
+  // STATIC_SITEMAP_PATHS and neither has a CmsPage row to generate an
+  // entry, so the two pages carrying our credibility signals — founding
+  // year, facility, certifications, leadership, real address — were in no
+  // sitemap at all. They rank for supplier-evaluation queries and feed the
+  // Organization/LocalBusiness entity, so they sit above the policy pages.
+  { path: '/hydraulic-components-supplier-uae', priority: 0.7, changeFrequency: 'monthly' },
+  { path: '/contact', priority: 0.6, changeFrequency: 'monthly' },
   // Legal / policy pages render from hardcoded content unless an
   // editor publishes a CmsPage row to override. Listing them here so
   // they're crawlable from day 1 without depending on a CMS row.

@@ -52,7 +52,7 @@ export async function GET(): Promise<NextResponse> {
 
   lines.push('## About the company')
   lines.push('')
-  lines.push(`- [About Indus Hydraulics](${urlFor('/about')}): company history, leadership team, certifications, founding year (2003), and operating model.`)
+  lines.push(`- [About Indus Hydraulics](${urlFor('/hydraulic-components-supplier-uae')}): company history, leadership team, certifications, founding year (2003), and operating model.`)
   lines.push(`- [Industries we serve](${urlFor('/industries')}): the sectors and applications our engineers cover.`)
   lines.push(`- [Brand partners](${urlFor('/brands')}): the authorized-distributor relationships behind our catalogue.`)
   lines.push(`- [Contact](${urlFor('/contact')}): Dubai HQ address, phone, WhatsApp, email, hours.`)

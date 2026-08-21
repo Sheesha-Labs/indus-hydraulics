@@ -941,7 +941,7 @@ async function seedNavigationMenus() {
       { label: 'Brands', customUrl: '/brands' },
       { label: 'Industries', customUrl: '/industries' },
       { label: 'Blog', customUrl: '/blog' },
-      { label: 'About', customUrl: '/about' },
+      { label: 'About', customUrl: '/hydraulic-components-supplier-uae' },
       { label: 'Contact', customUrl: '/contact' },
     ]
     for (let i = 0; i < headerItems.length; i++) {
@@ -1066,7 +1066,7 @@ async function seedNavigationMenus() {
       },
     })
     const companyLinks = [
-      { label: 'About', url: '/about' },
+      { label: 'About', url: '/hydraulic-components-supplier-uae' },
       { label: 'Brands', url: '/brands' },
       { label: 'Industries', url: '/industries' },
       { label: 'Blog', url: '/blog' },
