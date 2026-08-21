@@ -82,6 +82,17 @@ export function buildSitemapEntries(
 
 /**
  * For static / hardcoded landing pages (home, /search, /brands index).
+ *
+ * The home page is spelled as the bare origin ("https://example.com"), never
+ * with a trailing slash. That is not cosmetic: the home page's canonical is
+ * `BASE_URL` and `buildMetadata` strips any trailing slash from a canonical,
+ * so the bare form is the only one that matches the `<link rel="canonical">`
+ * and `og:url` the page actually renders. A `loc` that disagrees with the
+ * canonical it points at is a self-contradicting sitemap.
+ *
+ * Both `''` and `'/'` are accepted spellings of the root and both normalise
+ * to the bare origin, so adding `{ path: '/' }` to the static list cannot
+ * reintroduce the mismatch.
  */
 export function buildStaticEntries(
   origin: string,
@@ -89,10 +100,15 @@ export function buildStaticEntries(
 ): SitemapEntry[] {
   const trimmed = origin.replace(/\/$/, '')
   return paths.map((p) => ({
-    url: p.path === '' ? trimmed : `${trimmed}${p.path}`,
+    url: isRootPath(p.path) ? trimmed : `${trimmed}${p.path}`,
     priority: clamp01(p.priority),
     changeFrequency: p.changeFrequency,
   }))
+}
+
+/** Both spellings of the site root. */
+function isRootPath(path: string): boolean {
+  return path === '' || path === '/'
 }
 
 function clamp01(n: number): number {
