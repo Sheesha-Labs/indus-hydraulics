@@ -67,6 +67,14 @@ const WEB_ENV = resolve(__dirname, '../../../../apps/web/.env.local')
 const BACKUP_DIR = resolve(__dirname, '../../data')
 const INDUS_BRAND_SLUG = 'indus'
 
+/**
+ * Product detail pages are served from `/p/<slug>` (see
+ * `apps/web/src/app/(storefront)/p`). The first run of this script wrote its
+ * redirects against `/products/<slug>`, which is not a route — every one of
+ * the 30 rows resolved to a 404. `--only=fixredirects` repairs them.
+ */
+const pdpPath = (slug: string) => `/p/${slug}`
+
 /** The eight non-metallic hose categories. Couplings and fittings stay Dixon. */
 const HOSE_CATEGORY_SLUGS = [
   'abrasive-hoses',
@@ -249,6 +257,33 @@ function transformDescription(html: string, newTitle: string): string {
   return out
 }
 
+/**
+ * The same de-branding applied to `product_faqs`, which the first run missed
+ * entirely. These rows are rendered into FAQPage JSON-LD, so the Dixon PED
+ * 2014/68/EU + BSI ISO 9001 claim was live in structured data even after the
+ * identical sentence had been stripped from the body copy.
+ *
+ * Returns null when the row should be deleted rather than rewritten.
+ */
+function transformFaq(question: string, answer: string): { answer: string } | null {
+  // The compliance FAQ is Dixon's certification. Same call as the body: remove,
+  // never reattribute.
+  if (/Pressure Equipment Directive/i.test(question)) return null
+
+  let a = answer
+  // "ex-Dixon UK" is a supply-chain fact about someone else's factory.
+  a = a.replace(/\bex-Dixon UK\b/gi, 'ex-works')
+  // "Dixon supplies multiple bore sizes per family code"
+  a = a.replace(/\bDixon supplies\b/g, 'We supply')
+  // "Indus expedites Dixon factory orders for urgent requirements" — the same
+  // Lead-time answer carries a second mention after the "ex-Dixon UK" one.
+  a = a.replace(/\bexpedites Dixon factory orders\b/gi, 'expedites factory orders')
+  // The printed-branding answer quotes the lay-line, which is now Indus.
+  if (/printed branding/i.test(question)) a = a.replace(/\bDIXON\b/gi, 'INDUS')
+
+  return { answer: a }
+}
+
 /** Retargets the pressure figures a rebuild changes, inside the body copy. */
 function repointBar(html: string, oldBar: number, newBar: number): string {
   return html
@@ -427,11 +462,11 @@ async function main() {
           })
           if (newSlug !== p.slug) {
             await tx.redirect.upsert({
-              where: { fromPath: `/products/${p.slug}` },
-              update: { toPath: `/products/${newSlug}`, statusCode: 301, isActive: true },
+              where: { fromPath: pdpPath(p.slug) },
+              update: { toPath: pdpPath(newSlug), statusCode: 301, isActive: true },
               create: {
-                fromPath: `/products/${p.slug}`,
-                toPath: `/products/${newSlug}`,
+                fromPath: pdpPath(p.slug),
+                toPath: pdpPath(newSlug),
                 statusCode: 301,
                 isActive: true,
               },
@@ -541,6 +576,11 @@ async function main() {
               status: old.status,
               seoTitle: `${r.title} — Indus ${r.sku.replace(/^IH-IH-/, '')}`,
               seoDescription: old.seoDescription,
+              // Dropped on the first run, leaving the five rebuilds with a
+              // null focus keyword; phase 4c backfills the existing ones.
+              focusKeyword: old.focusKeyword
+                ? `Indus ${r.sku.replace(/^IH-IH-/, '')} ${r.title}`
+                : old.focusKeyword,
               specTemplateId: old.specTemplateId,
               stockQty: old.stockQty,
               stockWarehouse: old.stockWarehouse,
@@ -549,11 +589,11 @@ async function main() {
             select: { id: true },
           })
           await tx.redirect.upsert({
-            where: { fromPath: `/products/${old.slug}` },
-            update: { toPath: `/products/${newSlug}`, statusCode: 301, isActive: true },
+            where: { fromPath: pdpPath(old.slug) },
+            update: { toPath: pdpPath(newSlug), statusCode: 301, isActive: true },
             create: {
-              fromPath: `/products/${old.slug}`,
-              toPath: `/products/${newSlug}`,
+              fromPath: pdpPath(old.slug),
+              toPath: pdpPath(newSlug),
               statusCode: 301,
               isActive: true,
             },
@@ -683,6 +723,121 @@ async function main() {
     audit.displaced = displaced.map((d) => d.media.originalFilename)
   }
 
+  // ── Phase 4: product FAQs ─────────────────────────────────────────────────
+  let faqUpdated = 0
+  let faqDeleted = 0
+  if (run('faqs')) {
+    const faqs = await db.productFaq.findMany({
+      where: {
+        product: { categoryId: { in: catIds } },
+        OR: [
+          { question: { contains: 'Dixon', mode: 'insensitive' } },
+          { answer: { contains: 'Dixon', mode: 'insensitive' } },
+        ],
+      },
+      select: { id: true, question: true, answer: true, productId: true },
+    })
+    console.log(`\n── faqs: ${faqs.length} Dixon-bearing rows ──`)
+
+    for (const f of faqs) {
+      const next = transformFaq(f.question, f.answer)
+      if (!next) {
+        if (!dryRun) await db.productFaq.delete({ where: { id: f.id } })
+        faqDeleted++
+        continue
+      }
+      if (/dixon/i.test(next.answer) || /dixon/i.test(f.question)) {
+        problems.push(`faq ${f.id}: Dixon survives — ${f.question.slice(0, 60)}`)
+        continue
+      }
+      if (!dryRun) {
+        await db.productFaq.update({ where: { id: f.id }, data: { answer: next.answer } })
+      }
+      faqUpdated++
+    }
+    console.log(`faqs updated ${faqUpdated}, deleted ${faqDeleted}`)
+    audit.faqUpdated = faqUpdated
+    audit.faqDeleted = faqDeleted
+  }
+
+  // ── Phase 4b: the printed-branding spec ───────────────────────────────────
+  // `Hose Branding (Printed)` records the lay-line physically printed on the
+  // cover. The new artwork prints an Indus lay-line, so this follows the body
+  // and FAQ copies of the same string. Found only after the first run, by
+  // sweeping every product-attached table rather than the three I assumed.
+  let specsUpdated = 0
+  if (run('specs')) {
+    const rows = await db.productSpec.findMany({
+      where: {
+        product: { categoryId: { in: catIds } },
+        label: 'Hose Branding (Printed)',
+        value: { contains: 'Dixon', mode: 'insensitive' },
+      },
+      select: { id: true, value: true },
+    })
+    console.log(`\n── specs: ${rows.length} printed-branding rows ──`)
+    for (const row of rows) {
+      const value = row.value.replace(/\bDIXON\b/gi, 'INDUS')
+      if (/dixon/i.test(value)) {
+        problems.push(`spec ${row.id}: Dixon survives — ${value.slice(0, 60)}`)
+        continue
+      }
+      if (!dryRun) await db.productSpec.update({ where: { id: row.id }, data: { value } })
+      specsUpdated++
+    }
+    console.log(`specs updated ${specsUpdated}`)
+    audit.specsUpdated = specsUpdated
+  }
+
+  // ── Phase 4c: SEO focus keywords ──────────────────────────────────────────
+  // `focusKeyword` reads "Dixon <part code> <family>" on 34 rows, and is null
+  // on the five rebuilds because the first run did not carry it across.
+  let keywordsUpdated = 0
+  if (run('keywords')) {
+    const rows = await db.product.findMany({
+      where: { categoryId: { in: catIds } },
+      select: { id: true, sku: true, title: true, focusKeyword: true },
+    })
+    const stale = rows.filter((r) => !r.focusKeyword || /dixon/i.test(r.focusKeyword))
+    console.log(`\n── keywords: ${stale.length} rows ──`)
+    for (const row of stale) {
+      const partCode = row.sku.replace(/^IH-IH-/, '')
+      const focusKeyword = row.focusKeyword
+        ? row.focusKeyword.replace(/^Dixon\b/i, 'Indus')
+        : `Indus ${partCode} ${row.title}`
+      if (/dixon/i.test(focusKeyword)) {
+        problems.push(`${row.sku}: Dixon survives in focusKeyword — ${focusKeyword}`)
+        continue
+      }
+      if (!dryRun) await db.product.update({ where: { id: row.id }, data: { focusKeyword } })
+      keywordsUpdated++
+    }
+    console.log(`keywords updated ${keywordsUpdated}`)
+    audit.keywordsUpdated = keywordsUpdated
+  }
+
+  // ── Phase 5: repair the mis-pathed redirects from the first run ───────────
+  let redirectsFixed = 0
+  if (run('fixredirects')) {
+    const stale = await db.redirect.findMany({
+      where: { fromPath: { startsWith: '/products/' } },
+      select: { id: true, fromPath: true, toPath: true },
+    })
+    console.log(`\n── fixredirects: ${stale.length} rows on the wrong prefix ──`)
+    for (const r of stale) {
+      const fromPath = r.fromPath.replace(/^\/products\//, '/p/')
+      const toPath = r.toPath.replace(/^\/products\//, '/p/')
+      const clash = await db.redirect.findUnique({ where: { fromPath }, select: { id: true } })
+      if (!dryRun) {
+        if (clash) await db.redirect.delete({ where: { id: r.id } })
+        else await db.redirect.update({ where: { id: r.id }, data: { fromPath, toPath } })
+      }
+      redirectsFixed++
+    }
+    console.log(`redirects repaired ${redirectsFixed}`)
+    audit.redirectsFixed = redirectsFixed
+  }
+
   // ── report ────────────────────────────────────────────────────────────────
   if (!dryRun) {
     const stamp = new Date().toISOString().slice(0, 10)
@@ -692,7 +847,10 @@ async function main() {
   }
 
   console.log(`\n── summary ──`)
-  console.log(`rebranded ${rebranded.length}  rebuilt ${rebuilt.length}  attached ${attached.length}`)
+  console.log(
+    `rebranded ${rebranded.length}  rebuilt ${rebuilt.length}  attached ${attached.length}  ` +
+      `faqs ${faqUpdated}/${faqDeleted}  specs ${specsUpdated}  keywords ${keywordsUpdated}  redirects ${redirectsFixed}`
+  )
   if (problems.length) {
     console.log(`\n${problems.length} problem(s):`)
     for (const p of problems) console.log(`  - ${p}`)
