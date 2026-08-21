@@ -1,5 +1,43 @@
 {
-  "at": "2026-08-21T12:08:59.145Z",
+  "at": "2026-08-21T12:52:43.862Z",
   "dryRun": false,
-  "keywordsUpdated": 39
+  "attached": [
+    {
+      "file": "air-water-hose-20-bar-black.png",
+      "sku": "IH-IH-A101HP",
+      "size": {
+        "width": 1536,
+        "height": 1024
+      },
+      "displaced": 0
+    },
+    {
+      "file": "multiutility-hose-20-bar-green.png",
+      "sku": "IH-IH-A105HP",
+      "size": {
+        "width": 1536,
+        "height": 1024
+      },
+      "displaced": 0
+    },
+    {
+      "file": "air-water-hose-20-bar-mandrel-black.png",
+      "sku": "IH-IH-A190",
+      "size": {
+        "width": 1536,
+        "height": 1024
+      },
+      "displaced": 0
+    },
+    {
+      "file": "air-water-hose-20-bar-mandrel-yellow.png",
+      "sku": "IH-IH-A190Y",
+      "size": {
+        "width": 1536,
+        "height": 1024
+      },
+      "displaced": 0
+    }
+  ],
+  "displaced": []
 }

@@ -132,6 +132,19 @@ const PAIRS: readonly { file: string; sku: string }[] = [
   // Founder's call: the red "Food & Bev" render represents the Food line, not
   // Brew. SANB is consequently left without an image.
   { file: 'Food and Bev Suction and Delivery.png', sku: 'IH-IH-SANF' },
+
+  // Cover-colour and cover-construction variants, generated from the siblings
+  // above. Four products share the title "Air/Water Hose 20 Bar", so the SKU is
+  // the only thing that distinguishes them — each pairing below comes from the
+  // product's own `Cover Material` spec, never from the title:
+  //   A101HP  Black smooth extruded   (A102HP is Yellow smooth extruded)
+  //   A105HP  Green smooth extruded   (A103HP is Blue)
+  //   A190    Black mandrel wrap      — different cover construction, not a
+  //   A190Y   Yellow mandrel wrap       recolour; 13-76 mm vs A102HP's 13-25 mm
+  { file: 'air-water-hose-20-bar-black.png', sku: 'IH-IH-A101HP' },
+  { file: 'multiutility-hose-20-bar-green.png', sku: 'IH-IH-A105HP' },
+  { file: 'air-water-hose-20-bar-mandrel-black.png', sku: 'IH-IH-A190' },
+  { file: 'air-water-hose-20-bar-mandrel-yellow.png', sku: 'IH-IH-A190Y' },
 ] as const
 
 /** `IndustrialHoseCover.png` is a category cover, explicitly out of scope. */
