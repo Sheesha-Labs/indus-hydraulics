@@ -212,17 +212,6 @@ export default function SiteHeaderClient({
                 only — at 375 the hours string wraps the bar to two lines. */}
             {contactHours && <span className="hidden sm:inline">{contactHours}</span>}
           </div>
-          <div className="flex gap-4">
-            {isSignedIn ? (
-              <Link href={`/account`} className="hover:text-white">
-                My account
-              </Link>
-            ) : (
-              <Link href={`/sign-in`} className="hover:text-white">
-                Sign in
-              </Link>
-            )}
-          </div>
         </div>
       </div>
 
@@ -266,7 +255,7 @@ export default function SiteHeaderClient({
           </Link>
 
           {/* Desktop nav */}
-          <nav className="hidden flex-1 items-center gap-[26px] lg:flex">
+          <nav className="hidden items-center gap-[26px] lg:flex">
             {headerItems.map((item) => {
               const href = item.href ?? '#'
               const kind = getDropdownKind(item, megamenuItems, brands, industries)
@@ -363,12 +352,17 @@ export default function SiteHeaderClient({
             this is the third time that exact pattern has caused a layout bug in
             this migration.)
 
-            Now it shrinks: a max-width instead of a min-width, min-w-0 so flex
-            is allowed to shrink it below content size, and it only appears at
-            xl where there is actually room alongside the nav — at lg the logo, nav,
+            Now it shrinks: a plain width instead of a min-width, min-w-0 so flex
+            is allowed to shrink it below that, and it only appears at xl where
+            there is actually room alongside the nav — at lg the logo, nav,
             search and three action buttons still did not fit.
+
+            It is also the only shrinkable item in this row: the icon buttons and
+            the account button are all shrink-0, so the squeeze lands here and
+            nowhere else. Widening it to 400 needed the nav to stop being flex-1
+            (see above) — with the nav growing, this box never reached its width.
           */}
-            <div className="hidden w-full min-w-0 max-w-[320px] xl:block">
+            <div className="hidden w-[400px] min-w-0 xl:block">
               <SearchAutocomplete className="relative w-full" />
             </div>
 
@@ -378,7 +372,7 @@ export default function SiteHeaderClient({
             {/* Quote basket */}
             <Link
               href={`/quote`}
-              className="border-ih-border text-ih-ink-2 hover:border-ih-accent hover:text-ih-accent relative flex h-10 w-10 items-center justify-center rounded-md border transition-colors"
+              className="border-ih-border text-ih-ink-2 hover:border-ih-accent hover:text-ih-accent relative flex h-10 w-10 shrink-0 items-center justify-center rounded-md border transition-colors"
               aria-label="Quote"
             >
               <svg
@@ -399,7 +393,7 @@ export default function SiteHeaderClient({
             {isSignedIn ? (
               <Link
                 href={`/account`}
-                className="bg-ih-navy hover:bg-ih-ink hidden h-10 items-center gap-2 rounded-md px-[18px] text-[13.5px] font-medium text-white transition-colors sm:flex"
+                className="bg-ih-navy hover:bg-ih-ink hidden h-10 shrink-0 items-center gap-2 whitespace-nowrap rounded-md px-[18px] text-[13.5px] font-medium text-white transition-colors sm:flex"
               >
                 <span className="bg-ih-accent grid h-5 w-5 shrink-0 place-items-center rounded-full text-[9px] font-medium text-white">
                   {(userName ?? 'U').charAt(0).toUpperCase()}
@@ -409,7 +403,7 @@ export default function SiteHeaderClient({
             ) : (
               <Link
                 href={`/sign-in`}
-                className="border-ih-border-strong text-ih-ink hover:border-ih-accent hover:bg-ih-surface-2 hover:text-ih-accent hidden h-10 items-center rounded-md border px-[18px] text-[13.5px] font-medium transition-colors sm:flex"
+                className="border-ih-border-strong text-ih-ink hover:border-ih-accent hover:bg-ih-surface-2 hover:text-ih-accent hidden h-10 shrink-0 items-center whitespace-nowrap rounded-md border px-[18px] text-[13.5px] font-medium transition-colors sm:flex"
               >
                 Sign in
               </Link>
@@ -417,7 +411,7 @@ export default function SiteHeaderClient({
 
             {/* Mobile hamburger */}
             <button
-              className="border-ih-border text-ih-ink-2 flex h-10 w-10 items-center justify-center rounded-md border lg:hidden"
+              className="border-ih-border text-ih-ink-2 flex h-10 w-10 shrink-0 items-center justify-center rounded-md border lg:hidden"
               onClick={() => setMobileOpen(!mobileOpen)}
               aria-label={mobileOpen ? 'Close menu' : 'Open menu'}
             >

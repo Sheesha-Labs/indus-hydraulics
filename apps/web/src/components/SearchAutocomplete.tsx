@@ -34,8 +34,6 @@ const RECENTS_KEY = 'indus.recent-searches'
  * shared/printed/copied URLs always render server-side.
  *
  * Polish layer (PR 5):
- *   - ⌘K (or Ctrl+K) from anywhere on the storefront focuses + selects
- *     the search input.
  *   - Recent queries — last 5, sessionStorage-scoped — render above
  *     suggestions when the input is empty.
  *   - "I'm feeling lucky" Enter — when the trimmed query exactly matches
@@ -214,15 +212,8 @@ export default function SearchAutocomplete({ initialQuery = '', className }: Pro
             placeholder="Search products, SKUs, MPNs…"
             aria-label="Search"
             aria-autocomplete="list"
-            aria-keyshortcuts="Meta+K Control+K"
             className="flex-1 px-3 py-2 bg-transparent text-[13px] text-ih-ink placeholder:text-ih-muted-2 focus:outline-none focus-visible:outline-none"
           />
-          <kbd
-            aria-hidden="true"
-            className="hidden md:flex items-center px-2 py-1 m-1 self-center font-mono text-[10px] tracking-wider text-ih-muted-2 border border-ih-border bg-ih-surface-2"
-          >
-            ⌘K
-          </kbd>
 
           {showPanel && (
             <div
@@ -311,7 +302,7 @@ export default function SearchAutocomplete({ initialQuery = '', className }: Pro
         </div>
         <button
           type="submit"
-          className="h-9 px-4 bg-ih-accent text-white font-mono text-[11px] hover:opacity-90 transition-opacity shrink-0"
+          className="h-9 px-4 bg-ih-accent text-white text-[13px] font-medium hover:opacity-90 transition-opacity shrink-0"
         >
           Search
         </button>
