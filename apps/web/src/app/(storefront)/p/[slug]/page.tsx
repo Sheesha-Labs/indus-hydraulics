@@ -78,42 +78,39 @@ const getProduct = cache(async (decoded: string) => {
 })
 
 /**
- * Number of PDPs to pre-render at build time. We pick the products with the
- * highest content score (and most recent edit as a tiebreaker) — these are
- * the pages most likely to rank in search and earn the first click, so they
- * deserve the snappy SSG path. Everything else renders on-demand via ISR
- * (see `revalidate` below) on first hit and is then cached.
+ * Refresh interval for the PDP. One hour is a good balance for a catalogue
+ * that changes daily but not minutely. Admin mutations can punch through
+ * faster by calling `revalidatePath('/p/<slug>')` after a product edit.
  *
- * Keep this number conservative — every entry adds a Prisma query to CI
- * and a route to the build output. 200 covers a couple of weeks of organic
- * traffic comfortably for a catalogue of ~1.8k SKUs.
- */
-const STATIC_PDP_LIMIT = 200
-
-/**
- * Refresh interval for both pre-rendered and on-demand PDPs. One hour is a
- * good balance for a catalogue that changes daily but not minutely. Admin
- * mutations can punch through faster by calling `revalidatePath('/p/<slug>')`
- * after a product edit.
+ * NOTE: this is currently inert. The component below awaits `searchParams`
+ * (the `?preview=` token) and `customerSessionOrNull()` (the login cookie),
+ * both of which are per-request, so Next marks `/p/[slug]` `ƒ` (dynamic) and
+ * serves it `no-store` — verified against production. The export stays because
+ * it becomes live the moment those two reads move to a client/route boundary,
+ * which is the real fix for PDP caching.
  */
 export const revalidate = 3600
 
-/**
- * Allow on-demand ISR for slugs not pre-rendered above. Without this, a
- * fresh slug 404s until the next deploy — which would defeat the point of
- * having a thousand-plus-product catalogue.
+/*
+ * There is deliberately no `generateStaticParams` here.
+ *
+ * It used to pre-render the 200 highest-scoring PDPs. Because the page is
+ * dynamic (see above), Next rendered all 200 at build time, hit the first
+ * per-request read, bailed out, and threw the result away — the deployed
+ * route was `ƒ` either way. The only thing the list bought was build time:
+ * 200 full page renders, each firing several Prisma queries at Supabase from
+ * the build region, against a build pool deliberately capped at a low
+ * `connection_limit` (see packages/db/src/datasource-url.ts). Those queries
+ * queued, and the Vercel build log showed them failing outright with
+ * `FATAL: (ECHECKOUTRETRIES) failed to check out a connection after multiple
+ * retries` before retrying.
+ *
+ * Across this route and /c/[slug] the pre-render phase was 7m18s of a 9m
+ * deploy for six actually-static pages.
+ *
+ * Put a list back ONLY together with the fix that makes this page cacheable.
+ * Reinstating it while the page is dynamic just buys the build time back.
  */
-export const dynamicParams = true
-
-export async function generateStaticParams(): Promise<{ slug: string }[]> {
-  const rows = await db.product.findMany({
-    where: { status: 'active' },
-    select: { slug: true },
-    orderBy: [{ contentScore: 'desc' }, { updatedAt: 'desc' }],
-    take: STATIC_PDP_LIMIT,
-  })
-  return rows.map((r) => ({ slug: r.slug }))
-}
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params
