@@ -159,6 +159,10 @@ export default async function ShippingPage({ params }: Props) {
             are stated on the Estimate for the specific consignment rather than against a
             standing schedule.
           </li>
+          <li>
+            <strong>Asia and the CIS:</strong> quoted on a case-by-case basis, on the same terms
+            — the routing that applies to a consignment is named on its Estimate.
+          </li>
         </ul>
         <p>
           For all destinations, customs clearance, port-handling charges, and inland delivery beyond
