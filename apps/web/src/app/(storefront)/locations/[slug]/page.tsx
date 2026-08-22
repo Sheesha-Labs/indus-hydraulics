@@ -14,14 +14,15 @@ import { getStoreSettings } from '../../../../lib/store-settings'
 
 type Props = { params: Promise<{ slug: string }> }
 
-/*
- * No `generateStaticParams` on purpose — see /p/[slug] for the full note.
- * Short version: every route under (storefront) currently builds as `ƒ`
- * (dynamic), so listing params here rendered 9 service-area pages at build time and
- * threw every one away. Re-add the list together with the change that makes
- * the storefront layout statically renderable; `revalidate` above stays put
- * for the same reason.
+/**
+ * Present so the route uses the incremental cache at all — without a
+ * `generateStaticParams` a dynamic route is served `no-store`. Only a couple
+ * are built ahead; `dynamicParams` lets the rest render on first hit and cache
+ * from there. See /p/[slug] for the full reasoning and the build-time cost.
  */
+export function generateStaticParams() {
+  return serviceAreasOrdered().slice(0, 2).map((a) => ({ slug: a.slug }))
+}
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params

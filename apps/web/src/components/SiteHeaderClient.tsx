@@ -10,6 +10,8 @@ import BrandLockup from './BrandLockup'
 import type { LogoStyle } from '../lib/brand-identity'
 import SearchAutocomplete from './SearchAutocomplete'
 import NavListDropdown from './NavListDropdown'
+import NotificationBell from './NotificationBell'
+import { useViewer } from './useViewer'
 
 type NavListEntry = { slug: string; name: string }
 type DropdownKind = 'mega' | 'brands' | 'industries' | null
@@ -26,9 +28,6 @@ interface Props {
   /** CMS-uploaded header logo, already resolved to a URL. Null uses LogoMark. */
   logoUrl: string | null
   logoStyle: LogoStyle
-  isSignedIn: boolean
-  userName: string | null
-  notificationBell?: React.ReactNode
 }
 
 const MOBILE_LIST_LIMIT = 5
@@ -114,10 +113,11 @@ export default function SiteHeaderClient({
   brandName,
   logoUrl,
   logoStyle,
-  isSignedIn,
-  userName,
-  notificationBell,
 }: Props) {
+  // Who is looking at this page. Resolved client-side, because reading the
+  // session on the server here made every storefront route dynamic — see
+  // SiteHeader and app/api/me.
+  const viewer = useViewer()
   const [mobileOpen, setMobileOpen] = useState(false)
   const [activeDropdown, setActiveDropdown] = useState<DropdownKind>(null)
   const [activeCatIdx, setActiveCatIdx] = useState(0)
@@ -367,7 +367,9 @@ export default function SiteHeaderClient({
             </div>
 
             {/* Notification bell */}
-            {notificationBell}
+            {viewer.signedIn ? (
+              <NotificationBell unreadCount={viewer.unreadCount} notifications={viewer.notifications} />
+            ) : null}
 
             {/* Quote basket */}
             <Link
@@ -390,13 +392,13 @@ export default function SiteHeaderClient({
             </Link>
 
             {/* Account */}
-            {isSignedIn ? (
+            {viewer.signedIn ? (
               <Link
                 href={`/account`}
                 className="bg-ih-navy hover:bg-ih-ink hidden h-10 shrink-0 items-center gap-2 whitespace-nowrap rounded-md px-[18px] text-[13.5px] font-medium text-white transition-colors sm:flex"
               >
                 <span className="bg-ih-accent grid h-5 w-5 shrink-0 place-items-center rounded-full text-[9px] font-medium text-white">
-                  {(userName ?? 'U').charAt(0).toUpperCase()}
+                  {(viewer.name ?? 'U').charAt(0).toUpperCase()}
                 </span>
                 My account
               </Link>
