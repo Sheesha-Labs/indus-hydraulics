@@ -729,7 +729,7 @@ model Product {
   brandId           String?
   brand             Brand?        @relation(fields: [brandId], references: [id])
   descriptionShort  String?
-  descriptionLong   String? // markdown/rich text
+  descriptionLong   String? // HTML — rendered with dangerouslySetInnerHTML on the PDP, edited by the admin rich-text editor
   listPrice         Decimal?      @db.Decimal(12, 2)
   listPriceCurrency Currency      @default(USD)
   // Optional MSRP / "compare at" price. Renders as strike-through above

@@ -605,6 +605,19 @@
   font-weight: 500;
 }
 
+/* The provenance line under a manufacturer's spec table. 152 descriptions end
+   on one — every Molykote listing carries DuPont's attribution — and until now
+   the class carried no styling at all, so it read as one more body paragraph
+   with no signal that it is the source rather than our own copy. */
+.ih-rich-text .source-note {
+  margin-top: 20px;
+  padding-top: 12px;
+  border-top: 1px solid var(--color-ih-border);
+  font-size: 12.5px;
+  line-height: 1.55;
+  color: var(--color-ih-muted);
+}
+
 /* ── Scrollbar (webkit) ──
    Declaring ::-webkit-scrollbar at all opts the element OUT of the native
    scrollbar and onto the custom one, so if these two colours fail to resolve
@@ -767,4 +780,57 @@
 [data-surface='admin'] .ih-editor .ProseMirror-selectednode {
   outline: 2px solid var(--color-ih-accent);
   outline-offset: 2px;
+}
+
+/* ── The product description editor ──
+   Tables, images and the source note only became editable when the product
+   long description moved off a raw-HTML textarea. The editor deliberately
+   shows them close to how `.ih-rich-text` renders them on the product page:
+   an author choosing "Source" or adding a table is choosing how the page
+   reads, and a surface that looks nothing like the page makes that a guess. */
+[data-surface='admin'] .ih-editor p.source-note {
+  padding-top: 12px;
+  border-top: 1px solid var(--color-ih-border);
+  font-size: 13px;
+  color: var(--color-ih-muted);
+}
+[data-surface='admin'] .ih-editor table {
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: fixed;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  line-height: 1.4;
+  overflow: hidden;
+}
+[data-surface='admin'] .ih-editor th,
+[data-surface='admin'] .ih-editor td {
+  padding: 6px 10px;
+  text-align: left;
+  vertical-align: top;
+  border: 1px solid var(--color-ih-border);
+  /* A cell being edited has to be able to grow — the storefront's `nowrap` is
+     for reading a finished table, not for writing one. */
+  min-width: 60px;
+}
+[data-surface='admin'] .ih-editor th {
+  background: var(--color-ih-surface-2);
+  font-weight: 500;
+  color: var(--color-ih-ink);
+}
+/* prosemirror-tables' own class for a selected cell range. */
+[data-surface='admin'] .ih-editor .selectedCell::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: color-mix(in srgb, var(--color-ih-accent) 16%, transparent);
+  pointer-events: none;
+}
+[data-surface='admin'] .ih-editor .selectedCell {
+  position: relative;
+}
+[data-surface='admin'] .ih-editor img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--radius-md);
 }
