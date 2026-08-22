@@ -2,9 +2,29 @@
 
 import { useEffect, useRef, useState, useTransition } from 'react'
 import { controlClassName, controlHeightClassName } from '@indus/ui'
+import dynamic from 'next/dynamic'
 import { useSearchParams } from 'next/navigation'
 import SeoEntityDrawer, { type SeoDrawerEntity } from '../../../../../../components/admin/seo/SeoEntityDrawer'
 import type { RecentMedia } from '../../../../../../components/admin/seo/OgImagePicker'
+
+/**
+ * The long description is the only tab that needs a rich-text engine, and
+ * TipTap plus prosemirror-tables is the single heaviest thing this page could
+ * pull in. Loading it on demand keeps it out of the bundle for the eight tabs
+ * that never open it. `ssr: false` because ProseMirror wants a real document.
+ */
+const RichTextEditor = dynamic(
+  () => import('../../../../../../components/admin/rich-text/RichTextEditor'),
+  {
+    ssr: false,
+    loading: () => (
+      <div className="h-[480px] animate-pulse rounded-lg border border-ih-border bg-ih-surface-2" />
+    ),
+  },
+)
+
+/** Matches the `max()` on `descriptionLong` in the server action. */
+const DESCRIPTION_MAX_LENGTH = 20000
 import {
   updateProductCore,
   updateProductCommerce,
@@ -436,7 +456,7 @@ function CoreTab({
   )
 }
 
-// ── Description tab (long description with markdown helpers) ────────────────
+// ── Description tab (the product page's long description) ───────────────────
 
 function DescriptionTab({
   product,
@@ -448,34 +468,6 @@ function DescriptionTab({
   const [pending, startTransition] = useTransition()
   const [error, setError] = useState<string | null>(null)
   const [body, setBody] = useState(product.descriptionLong ?? '')
-  const ref = useRef<HTMLTextAreaElement>(null)
-
-  function wrap(prefix: string, suffix = '') {
-    const ta = ref.current
-    if (!ta) return
-    const start = ta.selectionStart
-    const end = ta.selectionEnd
-    const before = body.slice(0, start)
-    const selected = body.slice(start, end) || ''
-    const after = body.slice(end)
-    const next = `${before}${prefix}${selected}${suffix}${after}`
-    setBody(next)
-    setTimeout(() => {
-      ta.focus()
-      const cursor = before.length + prefix.length + selected.length + suffix.length
-      ta.setSelectionRange(cursor, cursor)
-    }, 0)
-  }
-
-  function insertImage() {
-    const url = prompt('Image URL (https://...)')?.trim()
-    if (!url) return
-    const alt = prompt('Alt text (optional)')?.trim() ?? ''
-    const md = `\n\n![${alt}](${url})\n\n`
-    const ta = ref.current
-    const cursor = ta?.selectionStart ?? body.length
-    setBody(body.slice(0, cursor) + md + body.slice(cursor))
-  }
 
   function onSubmit(formData: FormData) {
     setError(null)
@@ -498,39 +490,12 @@ function DescriptionTab({
 
       <div className="flex flex-col gap-1.5">
         <span className="text-[12px] font-medium text-ih-ink-2">Long description</span>
-
-        {/* Toolbar */}
-        <div className="flex flex-wrap gap-1 px-2 py-1.5 border border-ih-border border-b-0 bg-ih-bg">
-          <ToolbarBtn onClick={() => wrap('## ', '')}>H2</ToolbarBtn>
-          <ToolbarBtn onClick={() => wrap('### ', '')}>H3</ToolbarBtn>
-          <Sep />
-          <ToolbarBtn onClick={() => wrap('**', '**')}>
-            <b>B</b>
-          </ToolbarBtn>
-          <ToolbarBtn onClick={() => wrap('*', '*')}>
-            <i>I</i>
-          </ToolbarBtn>
-          <ToolbarBtn onClick={() => wrap('`', '`')}>
-            <span className="font-mono">{`<>`}</span>
-          </ToolbarBtn>
-          <Sep />
-          <ToolbarBtn onClick={() => wrap('- ', '')}>• List</ToolbarBtn>
-          <ToolbarBtn onClick={() => wrap('1. ', '')}>1. List</ToolbarBtn>
-          <Sep />
-          <ToolbarBtn onClick={() => wrap('[', '](https://)')}>Link</ToolbarBtn>
-          <ToolbarBtn onClick={insertImage}>🖼 Image</ToolbarBtn>
-        </div>
-
-        <textarea
-          ref={ref}
+        <RichTextEditor
           value={body}
-          onChange={(e) => setBody(e.target.value)}
-          rows={20}
-          className="w-full px-3 py-2 rounded-lg border border-ih-border bg-ih-surface text-[13px] font-mono leading-relaxed resize-y"
+          onChange={setBody}
+          maxLength={DESCRIPTION_MAX_LENGTH}
+          ariaLabel="Long description"
         />
-        <span className="text-[11px] text-ih-muted-2">
-          Markdown supported · {body.length.toLocaleString()} / 20,000 chars · Use <code>![alt](url)</code> to embed images.
-        </span>
       </div>
 
       <SaveButton pending={pending}>Save description</SaveButton>
@@ -2185,22 +2150,6 @@ function SaveButton({ pending, children }: { pending: boolean; children: React.R
       </button>
     </div>
   )
-}
-
-function ToolbarBtn({ onClick, children }: { onClick: () => void; children: React.ReactNode }) {
-  return (
-    <button
-      type="button"
-      onClick={onClick}
-      className="h-7 px-2 text-[12px] text-ih-ink-2 hover:bg-ih-surface-2 border border-transparent hover:border-ih-border transition-colors"
-    >
-      {children}
-    </button>
-  )
-}
-
-function Sep() {
-  return <span className="w-px bg-ih-border mx-1 h-5" />
 }
 
 function DeleteButton({ id }: { id: string }) {
