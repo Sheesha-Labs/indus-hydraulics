@@ -106,7 +106,7 @@ test.describe('homepage rotating term', () => {
     const html = await (await request.get('/')).text()
     const inHeading = html.slice(html.indexOf('<h1'), html.indexOf('</h1>'))
     expect(inHeading).toContain('hydraulic hoses')
-    for (const other of ['industrial hoses', 'oil &amp; gas hoses', 'Molykote lubricants']) {
+    for (const other of ['hydraulic adapters', 'industrial hoses', 'oil &amp; gas hoses', 'Molykote lubricants']) {
       expect(inHeading, `${other} should not be in the <h1>`).not.toContain(other)
     }
   })
@@ -117,8 +117,9 @@ test.describe('homepage rotating term', () => {
     await page.goto('/')
     for (const href of [
       '/c/hydraulic-hoses',
+      '/c/hydraulic-adapters',
+      '/c/hydraulic-fittings',
       '/c/industrial-hose-suppliers-uae',
-      '/c/hydraulic-hose-fittings-suppliers-uae',
       '/c/oil-gas-hoses',
       '/c/metallic-hose-suppliers-uae',
       '/c/industrial-lubricant-suppliers-uae',

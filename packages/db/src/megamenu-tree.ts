@@ -550,7 +550,7 @@ export const MEGAMENU_TREE: MegamenuSeedNode[] = [
       },
       {
         label: 'Hose Fittings',
-        url: '/c/hydraulic-hose-fittings-suppliers-uae?sub=fittings',
+        category: 'hydraulic-fittings',
         children: [
           {
             label: 'Crimp Ferrules',
@@ -629,7 +629,7 @@ export const MEGAMENU_TREE: MegamenuSeedNode[] = [
       },
       {
         label: 'Adapters',
-        url: '/c/hydraulic-hose-fittings-suppliers-uae?sub=adapters',
+        category: 'hydraulic-adapters',
         children: [
           {
             label: 'DIN 2353 Bite Type Adapters',
@@ -667,7 +667,7 @@ export const MEGAMENU_TREE: MegamenuSeedNode[] = [
       },
       {
         label: 'Quick Couplers',
-        url: '/c/hydraulic-hose-fittings-suppliers-uae?sub=couplers',
+        category: 'quick-couplers',
         children: [
           {
             label: 'Quick Couplers',
@@ -677,7 +677,7 @@ export const MEGAMENU_TREE: MegamenuSeedNode[] = [
       },
       {
         label: 'SS316L Fittings',
-        url: '/c/hydraulic-hose-fittings-suppliers-uae?sub=ss316l-fittings',
+        category: 'stainless-steel-hydraulic-fittings',
         children: [
           {
             label: 'SS316L BSP Fittings',

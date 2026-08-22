@@ -97,14 +97,18 @@ export default function HeroTermRotator({ terms, className }: Props) {
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
     >
-      <em
-        className={`italic text-ih-accent transition-opacity duration-300 ease-in-out motion-reduce:transition-none ${
+      {/* The full stop fades inside the same element as the word. Left as a
+          sibling it stays at full opacity through the crossfade, parked at the
+          outgoing word's width, and jumps sideways when the new one swaps in —
+          which is exactly the cheap-looking reflow the two-line layout exists
+          to avoid. */}
+      <span
+        className={`inline-block transition-opacity duration-300 ease-in-out motion-reduce:transition-none ${
           fading ? 'opacity-0' : 'opacity-100'
         }`}
       >
-        {term.word}
-      </em>
-      .
+        <em className="italic text-ih-accent">{term.word}</em>.
+      </span>
     </span>
   )
 }

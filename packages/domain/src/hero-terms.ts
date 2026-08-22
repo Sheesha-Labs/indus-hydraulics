@@ -14,15 +14,18 @@
  *
  * That rule is why several categories the founder asked for are absent:
  *
- *   - "hydraulic fittings" and "hydraulic adapters" have 113 and 201 live SKUs
- *     but no parent page of their own; they are spread across 17 and 7 sibling
- *     categories. Until those hubs exist, the honest destination is the shared
- *     "Hoses & Fittings" parent, which is what `hose fittings & adapters`
- *     below points at.
  *   - "chemical hoses" (14) and "air hoses" (25) are buried inside combined
  *     categories named something else.
  *   - "marine hoses" has no category and no products. Dropped by the founder
  *     on 2026-08-22 rather than pointed somewhere approximate.
+ *   - "hydraulic couplings" resolves to `quick-couplers`, 29 SKUs. Retargeted
+ *     for search by `regroup-hose-fittings.ts` but left out of the rotation:
+ *     29 is thin next to the 140 and 201 either side of it, and seven terms is
+ *     already at the point where the line starts to read as a slot machine.
+ *
+ * `hydraulic adapters` and `hydraulic fittings` were a single compromise entry
+ * ("hose fittings & adapters", pointing at the shared parent) until
+ * `regroup-hose-fittings.ts` gave each family a hub of its own on 2026-08-22.
  *
  * ## Order
  *
@@ -46,8 +49,9 @@ export type HeroTerm = {
 
 export const HERO_TERMS: readonly HeroTerm[] = [
   { word: 'hydraulic hoses', href: '/c/hydraulic-hoses' },
+  { word: 'hydraulic adapters', href: '/c/hydraulic-adapters' },
+  { word: 'hydraulic fittings', href: '/c/hydraulic-fittings' },
   { word: 'industrial hoses', href: '/c/industrial-hose-suppliers-uae' },
-  { word: 'hose fittings & adapters', href: '/c/hydraulic-hose-fittings-suppliers-uae' },
   { word: 'oil & gas hoses', href: '/c/oil-gas-hoses' },
   { word: 'metallic & PTFE hoses', href: '/c/metallic-hose-suppliers-uae' },
   { word: 'Molykote lubricants', href: '/c/industrial-lubricant-suppliers-uae' },
