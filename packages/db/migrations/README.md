@@ -115,6 +115,7 @@ traceable.
 | Was | Now |
 |-----|-----|
 | `20260501_enforce_one_datasheet_per_product.sql` | `202605011736_enforce_one_datasheet_per_product.sql` |
+| `202608222040_variant_second_end.sql` | Adds `product_variants."port2Label"`, `"port3Label"`, `"weightG"` and `"pressureBar"`. `product_variants` was designed for a hose fitting — one hose end and one port — and an adapter has no hose end and two or three threaded ones, so `portLabel` becomes the first end and these carry the rest. The two figures exist because the adapter catalogue publishes a weight and a working pressure per size where the hose-fitting catalogue publishes neither; pressure is stored in bar, since the source prints MPa on most pages and bar on the rest and one of the two has to be converted. A plain `ALTER TABLE`: unlike `202608221217_product_variants.sql` this touches no column that `products.search_tsv` reads, so the generated column is left alone. Every existing row keeps NULL and every existing size table renders unchanged. | pending |
 | `001_seo_fts.sql` | `202605021638_seo_fts.sql` |
 | `002_counters.sql` | `202605051945_counters.sql` |
 | `003_email_retry.sql` | `202605051958_email_retry.sql` |

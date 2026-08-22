@@ -65,6 +65,12 @@ type Variant = {
   hoseDn: number | null
   portLabel: string | null
   portDash: number | null
+  /** Second and third threaded end — adapters only; null on hose fittings. */
+  port2Label?: string | null
+  port3Label?: string | null
+  /** Manufacturer's published figures, where the source states them. */
+  weightG?: number | null
+  pressureBar?: number | null
   dimensions: Record<string, number | string>
   sourcePart: string
 }
@@ -191,6 +197,10 @@ async function main() {
             hoseDn: v.hoseDn,
             portLabel: v.portLabel,
             portDash: v.portDash,
+            port2Label: v.port2Label ?? null,
+            port3Label: v.port3Label ?? null,
+            weightG: v.weightG ?? null,
+            pressureBar: v.pressureBar ?? null,
             dimensions: v.dimensions,
           })),
         })

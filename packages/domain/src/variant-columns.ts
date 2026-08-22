@@ -102,9 +102,54 @@ export type VariantLike = {
   hoseInch?: string | null
   hoseDn?: number | null
   portLabel?: string | null
+  port2Label?: string | null
+  port3Label?: string | null
+  weightG?: number | null
+  pressureBar?: number | null
   competitorBrand?: string | null
   competitorMpn?: string | null
   dimensions?: unknown
+}
+
+/** One threaded end of a fitting that has more than one. */
+export type VariantEndColumn = {
+  key: 'portLabel' | 'port2Label' | 'port3Label'
+  label: string
+  help: string
+}
+
+/**
+ * The end columns a set of variants populates.
+ *
+ * A hose fitting has one port and gets a single column headed by what the
+ * value is — `variantPortHeading` can read "thread" or "flange size" off the
+ * value itself. An adapter has two or three ends and no such tell: `9/16"X18`
+ * is the same thread on a JIC 37° male, an ORFS male and an SAE O-ring boss,
+ * and only the seat differs. Naming those columns after a seat we cannot see
+ * would be the guess this module exists to avoid, so they are numbered and the
+ * listing's own title says which end is which.
+ */
+export function variantEndColumns(variants: readonly VariantLike[]): VariantEndColumn[] {
+  const has2 = variants.some((v) => Boolean(v.port2Label))
+  const has3 = variants.some((v) => Boolean(v.port3Label))
+  if (!has2 && !has3) return []
+  const help = 'Thread or flange nominal size at this end, exactly as the manufacturer prints it.'
+  const cols: VariantEndColumn[] = [
+    { key: 'portLabel', label: 'End 1', help },
+    { key: 'port2Label', label: 'End 2', help },
+  ]
+  if (has3) cols.push({ key: 'port3Label', label: 'End 3', help })
+  return cols
+}
+
+/** True when at least one variant carries a published weight. */
+export function hasVariantWeights(variants: readonly VariantLike[]): boolean {
+  return variants.some((v) => typeof v.weightG === 'number')
+}
+
+/** True when at least one variant carries a published working pressure. */
+export function hasVariantPressures(variants: readonly VariantLike[]): boolean {
+  return variants.some((v) => typeof v.pressureBar === 'number')
 }
 
 /** Narrow `dimensions` jsonb to a numeric record without trusting its shape. */

@@ -850,6 +850,22 @@ model ProductVariant {
   portLabel String?
   portDash  Int?
 
+  /// Adapters have no hose end and two or three threaded ones, so `portLabel`
+  /// is the first end and these are the rest. A tee whose three ends are the
+  /// same size fills only `portLabel`; a reducing tee fills all three. Printed
+  /// verbatim like `portLabel`, because a thread and a flange nominal size
+  /// share the column and the source states which is which only in the title.
+  port2Label String?
+  port3Label String?
+
+  /// Manufacturer's published figures for THIS size, where the source states
+  /// them. The hose-fitting catalogue publishes neither; the adapter one
+  /// publishes both. Pressure is stored in bar — the source prints MPa on most
+  /// pages and bar on the rest, so one of the two has to be converted, and bar
+  /// is what the rest of the catalogue quotes.
+  weightG     Int?
+  pressureBar Int?
+
   /// Lettered dimensions from the source catalogue, e.g. `{"A":51,"B":30,"E":24}`.
   dimensions Json?
 

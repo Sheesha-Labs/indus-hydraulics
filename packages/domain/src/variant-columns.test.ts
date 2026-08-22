@@ -8,9 +8,12 @@ import {
   variantBoreRange,
   variantDimensionColumns,
   variantDimensions,
+  variantEndColumns,
   variantEquivalentBrand,
   variantHoseLabel,
   variantPortHeading,
+  hasVariantPressures,
+  hasVariantWeights,
   type VariantLike,
 } from './variant-columns'
 
@@ -181,5 +184,58 @@ describe('variantBoreRange', () => {
   it('is null when no variant carries a bore', () => {
     expect(variantBoreRange([v({ hoseDash: null })])).toBeNull()
     expect(variantBoreRange([])).toBeNull()
+  })
+})
+
+describe('variantEndColumns', () => {
+  /** An adapter row: no hose bore, two or three threaded ends. */
+  const a = (over: Partial<VariantLike> = {}): VariantLike => ({
+    partNumber: 'IH-AD-MET-017-1418',
+    hoseDash: null,
+    hoseInch: null,
+    hoseDn: null,
+    portLabel: 'M14X1.5',
+    port2Label: 'M18X1.5',
+    dimensions: { L1: 30, S1: 17 },
+    ...over,
+  })
+
+  it('is empty for a hose fitting, which keeps its single port column', () => {
+    expect(variantEndColumns([v()])).toEqual([])
+  })
+
+  it('gives two columns to a two-ended adapter', () => {
+    expect(variantEndColumns([a()]).map((c) => c.label)).toEqual(['End 1', 'End 2'])
+  })
+
+  it('adds a third only when some row carries a third end', () => {
+    expect(variantEndColumns([a(), a({ port3Label: 'M22X1.5' })]).map((c) => c.label)).toEqual([
+      'End 1',
+      'End 2',
+      'End 3',
+    ])
+  })
+
+  it('numbers the ends rather than naming a seat the thread does not identify', () => {
+    // 9/16"X18 is the same thread on a JIC 37 male, an ORFS male and an SAE
+    // O-ring boss. Only the seat differs, and the seat is not in the table.
+    const jicLike = a({ portLabel: '9/16"X18', port2Label: '9/16"X18' })
+    for (const c of variantEndColumns([jicLike])) {
+      expect(c.label).toMatch(/^End [123]$/)
+      expect(c.help).not.toMatch(/JIC|ORFS|O-ring boss/i)
+    }
+  })
+})
+
+describe('published figures', () => {
+  it('reports a weight or a pressure only when some row carries one', () => {
+    expect(hasVariantWeights([v()])).toBe(false)
+    expect(hasVariantPressures([v()])).toBe(false)
+    expect(hasVariantWeights([v(), v({ weightG: 121 })])).toBe(true)
+    expect(hasVariantPressures([v(), v({ pressureBar: 630 })])).toBe(true)
+  })
+
+  it('counts a zero, which is a figure, not an absence', () => {
+    expect(hasVariantWeights([v({ weightG: 0 })])).toBe(true)
   })
 })

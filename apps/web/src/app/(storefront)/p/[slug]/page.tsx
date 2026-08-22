@@ -285,6 +285,10 @@ export default async function ProductPage({ params }: Props) {
     hoseInch: v.hoseInch,
     hoseDn: v.hoseDn,
     portLabel: v.portLabel,
+    port2Label: v.port2Label,
+    port3Label: v.port3Label,
+    weightG: v.weightG,
+    pressureBar: v.pressureBar,
     competitorBrand: v.competitorBrand,
     competitorMpn: v.competitorMpn,
     dimensions: v.dimensions,
@@ -328,7 +332,16 @@ export default async function ProductPage({ params }: Props) {
     countryOfOrigin: product.countryOfOrigin,
     variants: product.variants.map((v) => ({
       sku: v.partNumber,
-      name: [product.title, v.hoseInch ? `${v.hoseInch} hose` : null, v.portLabel]
+      // A hose fitting names itself by its bore and its port; an adapter has no
+      // bore and two or three ends, so the ends are what distinguish one
+      // offer from the next.
+      name: [
+        product.title,
+        v.hoseInch ? `${v.hoseInch} hose` : null,
+        v.portLabel,
+        v.port2Label,
+        v.port3Label,
+      ]
         .filter(Boolean)
         .join(' · '),
       equivalentBrand: v.competitorBrand,
