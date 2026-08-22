@@ -121,7 +121,11 @@ describe('buildMarketMapModel', () => {
  * leaving the Gulf transits Hormuz, so a box flags 23 innocent sea lanes and
  * teaches everyone to ignore it.
  */
-describe('lane routing through sanctioned territory', () => {
+// Both suites below project every authored record — work that grows with each
+// market added, and already runs several times longer on CI than locally. The
+// 5s default timed the projection suite out at 126 records; the headroom here
+// is for the record count, not for a slow assertion.
+describe('lane routing through sanctioned territory', { timeout: 60_000 }, () => {
   const topology = rawTopology as Parameters<typeof feature>[0]
   const objects = (topology as unknown as { objects: Record<string, object> }).objects
   const features = (
@@ -191,7 +195,7 @@ describe('lane routing through sanctioned territory', () => {
  * Every written record has to project, not just the released ones — otherwise
  * a market's map is first checked on the day it goes live.
  */
-describe('every written record projects a map', () => {
+describe('every written record projects a map', { timeout: 60_000 }, () => {
   it('matches Natural Earth geometry for every one', () => {
     // Counted, not hard-coded: the set grows every time a market is authored,
     // and a test named for today's total is a test nobody updates.
