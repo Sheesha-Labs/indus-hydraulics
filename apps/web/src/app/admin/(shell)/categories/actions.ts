@@ -3,12 +3,11 @@
 import { revalidatePath } from 'next/cache'
 import { invalidateCategories } from '../../../../lib/cache-tags'
 import { z } from 'zod'
-import { db } from '@indus/db'
+import { db, recordSlugRedirect } from '@indus/db'
 import { auth } from '../../../../lib/admin-auth'
 import { ROLES, requireRole } from '../../../../lib/rbac'
 import { fail, failFromError, ok, type Result } from '../../../../lib/result'
 import { withSeoAudit } from '../../../../lib/seo-audit'
-import { recordSlugRedirect } from '../../../../lib/slug-redirect'
 
 function slugify(input: string): string {
   return (

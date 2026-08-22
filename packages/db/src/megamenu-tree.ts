@@ -532,11 +532,11 @@ export const MEGAMENU_TREE: MegamenuSeedNode[] = [
   },
   {
     label: 'Hose, Tube, Fittings & Adapters',
-    category: 'hoses-fittings',
+    category: 'hydraulic-hose-fittings-suppliers-uae',
     children: [
       {
         label: 'Hydraulic Hose',
-        url: '/c/hoses-fittings?sub=hose',
+        url: '/c/hydraulic-hose-fittings-suppliers-uae?sub=hose',
         children: [
           {
             label: 'Hydraulic Hoses',
@@ -550,7 +550,7 @@ export const MEGAMENU_TREE: MegamenuSeedNode[] = [
       },
       {
         label: 'Hose Fittings',
-        url: '/c/hoses-fittings?sub=fittings',
+        url: '/c/hydraulic-hose-fittings-suppliers-uae?sub=fittings',
         children: [
           {
             label: 'Crimp Ferrules',
@@ -592,15 +592,15 @@ export const MEGAMENU_TREE: MegamenuSeedNode[] = [
       },
       {
         label: 'Adapters',
-        url: '/c/hoses-fittings?sub=adapters',
+        url: '/c/hydraulic-hose-fittings-suppliers-uae?sub=adapters',
         children: [
           {
             label: 'DIN 2353 Bite Type Adapters',
-            category: 'din-2353-bite-type-adapters',
+            category: 'din-2353-bite-type-adapters-uae',
           },
           {
             label: 'BSP Adapters',
-            category: 'bsp-adapters',
+            category: 'bsp-hydraulic-adapters-uae',
           },
           {
             label: 'JIC Adapters',
@@ -630,7 +630,7 @@ export const MEGAMENU_TREE: MegamenuSeedNode[] = [
       },
       {
         label: 'Quick Couplers',
-        url: '/c/hoses-fittings?sub=couplers',
+        url: '/c/hydraulic-hose-fittings-suppliers-uae?sub=couplers',
         children: [
           {
             label: 'Quick Couplers',
@@ -640,7 +640,7 @@ export const MEGAMENU_TREE: MegamenuSeedNode[] = [
       },
       {
         label: 'SS316L Fittings',
-        url: '/c/hoses-fittings?sub=ss316l-fittings',
+        url: '/c/hydraulic-hose-fittings-suppliers-uae?sub=ss316l-fittings',
         children: [
           {
             label: 'SS316L BSP Fittings',
@@ -692,11 +692,11 @@ export const MEGAMENU_TREE: MegamenuSeedNode[] = [
   },
   {
     label: 'Industrial & Oilfield Hoses',
-    category: 'industrial-hoses',
+    category: 'industrial-hose-suppliers-uae',
     children: [
       {
         label: 'Hoses by Service',
-        url: '/c/industrial-hoses?sub=hoses-by-service',
+        url: '/c/industrial-hose-suppliers-uae?sub=hoses-by-service',
         children: [
           {
             label: 'Air & Water',
@@ -734,7 +734,7 @@ export const MEGAMENU_TREE: MegamenuSeedNode[] = [
       },
       {
         label: 'Couplings',
-        url: '/c/industrial-hoses?sub=couplings',
+        url: '/c/industrial-hose-suppliers-uae?sub=couplings',
         children: [
           {
             label: 'Cam & Groove Couplings',
@@ -756,7 +756,7 @@ export const MEGAMENU_TREE: MegamenuSeedNode[] = [
       },
       {
         label: 'Specialty Couplings & Flanges',
-        url: '/c/industrial-hoses?sub=specialty-couplings-flanges',
+        url: '/c/industrial-hose-suppliers-uae?sub=specialty-couplings-flanges',
         children: [
           {
             label: 'Sandblast Couplings',
@@ -839,7 +839,7 @@ export const MEGAMENU_TREE: MegamenuSeedNode[] = [
       },
       {
         label: 'Metallic Hoses',
-        url: '/c/industrial-hoses?sub=metallic-hoses',
+        url: '/c/industrial-hose-suppliers-uae?sub=metallic-hoses',
         children: [
           {
             label: 'Stainless Corrugated',
@@ -905,7 +905,7 @@ export const MEGAMENU_TREE: MegamenuSeedNode[] = [
     children: [
       {
         label: 'Oilfield Valves',
-        category: 'oilfield-valves',
+        category: 'oilfield-valve-suppliers-uae',
         children: [
           {
             label: 'Ball Valves',
@@ -955,7 +955,7 @@ export const MEGAMENU_TREE: MegamenuSeedNode[] = [
       },
       {
         label: 'Flow Iron & Wellhead',
-        category: 'flow-iron-wellhead',
+        category: 'flow-iron-wellhead-equipment-uae',
         children: [
           {
             label: 'Adapters',
@@ -963,7 +963,7 @@ export const MEGAMENU_TREE: MegamenuSeedNode[] = [
           },
           {
             label: 'Fittings',
-            category: 'flow-iron-fittings',
+            category: 'flow-iron-fittings-suppliers-uae',
           },
           {
             label: 'API Flanges',
@@ -1225,11 +1225,11 @@ export const MEGAMENU_TREE: MegamenuSeedNode[] = [
     children: [
       {
         label: 'Lubricants (Molykote)',
-        category: 'lubricants',
+        category: 'industrial-lubricant-suppliers-uae',
         children: [
           {
             label: 'Greases',
-            category: 'molykote-greases',
+            category: 'molykote-grease-suppliers-uae',
           },
           {
             label: 'Pastes',

@@ -133,7 +133,7 @@ export const INDUSTRY_SEED: IndustrySeed[] = [
       ],
       cta: 'Request mining support →',
     },
-    featuredCategorySlugs: ['hydraulic-pumps', 'cylinders', 'hoses-fittings'],
+    featuredCategorySlugs: ['hydraulic-pumps', 'cylinders', 'hydraulic-hose-fittings-suppliers-uae'],
     caseStudies: [
       { tag: 'COAL INDIA · 2024', year: '2024', position: 1, title: 'Singrauli — 48-unit roof support valve overhaul', description: '48 proportional valves on DBT shield supports replaced during panel setup. Zero unplanned downtime.' },
       { tag: 'VEDANTA · 2024', year: '2024', position: 2, title: 'Lanjigarh — Komatsu 930E haul truck fleet', description: 'Hydraulic pump kits for 12 × Komatsu 930E trucks. Site delivery to Odisha in 72h.' },
@@ -262,7 +262,7 @@ export const INDUSTRY_SEED: IndustrySeed[] = [
       ],
       cta: 'Check availability now →',
     },
-    featuredCategorySlugs: ['hydraulic-pumps', 'cylinders', 'hoses-fittings'],
+    featuredCategorySlugs: ['hydraulic-pumps', 'cylinders', 'hydraulic-hose-fittings-suppliers-uae'],
     caseStudies: [
       { tag: 'SHAPOORJI PALLONJI · 2024', year: '2024', position: 1, title: 'Bandra Dharavi — Cat 390 main pump', description: 'Emergency replacement of twin-pump assembly on Cat 390 excavator. Site delivery to Mumbai in 18h.' },
       { tag: 'AFCONS · 2025', year: '2025', position: 2, title: 'Zojila tunnel — Liebherr LTM crane', description: 'Slewing pump kit for LTM 1100-5.2. Altitude delivery to J&K site. 48h turnaround.' },
