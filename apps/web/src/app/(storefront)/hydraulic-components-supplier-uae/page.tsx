@@ -84,7 +84,7 @@ export default async function AboutPage({ params }: Props) {
       <div className="max-w-[860px] mx-auto px-8 py-10 pb-20">
         <h1 className="text-[32px] font-semibold tracking-tight mb-8">{page.title}</h1>
         <div
-          className="prose prose-sm max-w-none text-ih-ink-2 leading-[1.7] prose-headings:text-ih-ink prose-a:text-ih-accent"
+          className="ih-rich-text max-w-none leading-[1.7]"
           dangerouslySetInnerHTML={{ __html: page.body }}
         />
       </div>

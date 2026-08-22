@@ -232,13 +232,13 @@ export default async function BlogPostPage({ params }: Props) {
           // min-w-0 for the same reason the renderer carries it: as a grid item
           // this defaults to min-width:auto, so a wide table or long code line
           // sets the column width and nothing constrains it.
+          //
+          // Styling is `ih-rich-text` (globals.css). The eleven `prose*` classes
+          // that were here compiled to nothing — @tailwindcss/typography is not
+          // installed — while preflight still stripped heading sizes and list
+          // markers, so a legacy post rendered as one undifferentiated block.
           <div
-            className="prose prose-sm min-w-0 max-w-none leading-[1.7] text-ih-ink-2
-              prose-headings:font-semibold prose-headings:tracking-tight prose-headings:text-ih-ink
-              prose-h2:text-[20px] prose-h3:text-[17px]
-              prose-a:text-ih-accent prose-a:no-underline hover:prose-a:underline
-              prose-code:bg-ih-surface-2 prose-code:px-1 prose-code:py-0.5 prose-code:font-mono prose-code:text-[13px]
-              prose-blockquote:border-l-4 prose-blockquote:border-ih-accent prose-blockquote:pl-4 prose-blockquote:italic"
+            className="ih-rich-text min-w-0 max-w-none"
             dangerouslySetInnerHTML={{ __html: post.body }}
           />
         )}

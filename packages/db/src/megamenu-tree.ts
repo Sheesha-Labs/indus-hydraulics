@@ -591,6 +591,43 @@ export const MEGAMENU_TREE: MegamenuSeedNode[] = [
         ],
       },
       {
+        // Unlike its siblings this column links to a real category rather than
+        // a decorative `?sub=` marker: Ferrules has its own page, and the
+        // category route ignores `sub` entirely.
+        label: 'Ferrules',
+        category: 'ferrules',
+        children: [
+          {
+            label: 'M00110 / M00120 / M00130 Skive Ferrules',
+            category: 'm00110-m00120-m00130-skive-ferrules',
+          },
+          {
+            label: 'M00910 / M00920 Skive Ferrules',
+            category: 'm00910-m00920-skive-ferrules',
+          },
+          {
+            label: 'M03300 No-Skive Ferrules',
+            category: 'm03300-no-skive-ferrules',
+          },
+          {
+            label: 'M03400 No-Skive Ferrules',
+            category: 'm03400-no-skive-ferrules',
+          },
+          {
+            label: 'M03500 No-Skive Ferrules',
+            category: 'm03500-no-skive-ferrules',
+          },
+          {
+            label: 'M00310 / M00320 No-Skive Ferrules',
+            category: 'm00310-m00320-no-skive-ferrules',
+          },
+          {
+            label: 'M00820 / M00830 No-Skive Ferrules',
+            category: 'm00820-m00830-no-skive-ferrules',
+          },
+        ],
+      },
+      {
         label: 'Adapters',
         url: '/c/hydraulic-hose-fittings-suppliers-uae?sub=adapters',
         children: [

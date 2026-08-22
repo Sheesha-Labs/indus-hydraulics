@@ -37,10 +37,10 @@ export default async function TermsPage({ params }: Props) {
 
   if (cms?.isPublished) {
     return (
-      <article className="max-w-[820px] mx-auto px-8 py-16 pb-24 prose prose-sm">
+      <article className="max-w-[820px] mx-auto px-8 py-16 pb-24">
         <h1 className="text-[36px] font-semibold tracking-tight mb-2">{cms.title}</h1>
         <div
-          className="text-[15px] leading-[1.7] text-ih-ink-2"
+          className="ih-rich-text text-[15px] leading-[1.7]"
           dangerouslySetInnerHTML={{ __html: cms.body }}
         />
       </article>
