@@ -116,14 +116,18 @@ async function main() {
     update: {},
   })
 
+  // Slug carries the search phrase; `name` stays clean for the on-page label
+  // and the megamenu. The two are deliberately decoupled — see
+  // src/scripts/rename-categories-intent-slugs.ts.
   const catHoses = await db.category.upsert({
-    where: { slug: 'hoses-fittings' },
+    where: { slug: 'hydraulic-hose-fittings-suppliers-uae' },
     create: {
       name: 'Hoses & Fittings',
-      slug: 'hoses-fittings',
+      slug: 'hydraulic-hose-fittings-suppliers-uae',
       position: 4,
       isPublished: true,
-      seoTitle: 'Hydraulic Hoses & Fittings',
+      seoTitle: 'Hydraulic Hose Fittings Suppliers in UAE',
+      focusKeyword: 'hydraulic hose fittings suppliers',
       seoDescription: 'High-pressure hydraulic hoses, JIC, BSP and metric fittings.',
     },
     update: {},
@@ -1033,7 +1037,7 @@ async function seedNavigationMenus() {
       { label: 'Hydraulic Pumps', categorySlug: 'hydraulic-pumps' },
       { label: 'Valves & Manifolds', categorySlug: 'valves-manifolds' },
       { label: 'Hydraulic Cylinders', categorySlug: 'hydraulic-cylinders' },
-      { label: 'Hoses & Fittings', categorySlug: 'hoses-fittings' },
+      { label: 'Hoses & Fittings', categorySlug: 'hydraulic-hose-fittings-suppliers-uae' },
       { label: 'Power Packs', categorySlug: null },
       { label: 'Seals & Accessories', categorySlug: null },
     ]

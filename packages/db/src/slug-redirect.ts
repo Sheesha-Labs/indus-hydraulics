@@ -1,7 +1,21 @@
-import type { Prisma } from '@indus/db'
-import { normalisePath } from './redirects'
+import type { Prisma } from '@prisma/client'
 
 type Tx = Prisma.TransactionClient
+
+/**
+ * Trailing slashes are not significant; `/c/foo/` and `/c/foo` are one path.
+ *
+ * Deliberately a local copy of the same rule in
+ * `apps/web/src/lib/redirects.ts`. That one sits on the request path, where
+ * the runtime redirect lookup uses it on every miss; this one runs at write
+ * time in a server action or a script. Four lines of duplication is a smaller
+ * risk than making the request path depend on this module.
+ */
+function normalisePath(path: string): string {
+  const trimmed = path.split('?')[0]?.split('#')[0] ?? path
+  if (trimmed.length > 1 && trimmed.endsWith('/')) return trimmed.slice(0, -1)
+  return trimmed
+}
 
 /**
  * Record a 301 for a slug that just moved, and keep the redirect graph flat.

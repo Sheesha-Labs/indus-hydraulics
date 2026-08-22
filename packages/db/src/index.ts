@@ -39,3 +39,4 @@ export {
   QUOTE_CODE_BASE,
   type NextQuoteCode,
 } from './codes'
+export { recordSlugRedirect } from './slug-redirect'

@@ -1,7 +1,5 @@
 import { describe, it, expect, vi, beforeEach } from 'vitest'
 
-vi.mock('@indus/db', () => ({ db: {} }))
-
 const { recordSlugRedirect } = await import('./slug-redirect')
 
 function makeTx() {

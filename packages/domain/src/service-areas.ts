@@ -63,7 +63,7 @@ export const SERVICE_AREAS: ServiceArea[] = [
         'Distance is rarely the issue in Dubai; the working day is. Where a site needs induction before a contractor can work, arranging it ahead of a failure is worth more than any amount of speed afterwards.',
     },
     relatedArticles: ['on-site-hydraulic-hose-service-uae', 'getting-a-hydraulic-hose-made', 'bulk-hose-refit-and-tagging'],
-    relatedCategories: ['hoses-fittings', 'hydraulic-hoses'],
+    relatedCategories: ['hydraulic-hose-fittings-suppliers-uae', 'hydraulic-hoses'],
     position: 1,
   },
   {
@@ -88,7 +88,7 @@ export const SERVICE_AREAS: ServiceArea[] = [
         'Most Mussafah and ICAD work can be dispatched and inducted the same day. Restricted and industrial-estate sites need passes arranged in advance — tell us the access regime when you call, not at the gate.',
     },
     relatedArticles: ['on-site-hydraulic-hose-service-uae', 'rig-site-hose-replacement-abu-dhabi', 'excavator-hydraulic-hose-replacement'],
-    relatedCategories: ['hoses-fittings', 'hydraulic-hoses'],
+    relatedCategories: ['hydraulic-hose-fittings-suppliers-uae', 'hydraulic-hoses'],
     position: 2,
   },
   {
@@ -138,7 +138,7 @@ export const SERVICE_AREAS: ServiceArea[] = [
         'Nothing is far away here, so the lever is how many machines you can put in front of one visit. Tell us everything that is waiting when you call rather than one machine at a time — the mobilisation is the cost, not the extra assembly.',
     },
     relatedArticles: ['hose-service-northern-emirates', 'on-site-hydraulic-hose-service-uae', 'tipper-and-transit-mixer-hose'],
-    relatedCategories: ['hoses-fittings', 'hydraulic-hoses'],
+    relatedCategories: ['hydraulic-hose-fittings-suppliers-uae', 'hydraulic-hoses'],
     position: 4,
   },
   {
@@ -162,7 +162,7 @@ export const SERVICE_AREAS: ServiceArea[] = [
         'Access is rarely the problem, so the difference between one visit and two is whether we knew the bore, construction and fitting type before setting off. Have those ready when you call.',
     },
     relatedArticles: ['hose-service-northern-emirates', 'getting-a-hydraulic-hose-made', 'forklift-hydraulic-hose-replacement'],
-    relatedCategories: ['hoses-fittings', 'crimp-ferrules'],
+    relatedCategories: ['hydraulic-hose-fittings-suppliers-uae', 'crimp-ferrules'],
     position: 5,
   },
   {
@@ -187,7 +187,7 @@ export const SERVICE_AREAS: ServiceArea[] = [
         'The useful visit here is the one where somebody looks at why a run keeps failing — a clamp that has gone, a guard never fitted, a route that should have changed when the attachment did. A heavier hose in the same bad position fails the same way, slightly later.',
     },
     relatedArticles: ['hose-service-northern-emirates', 'why-hydraulic-hoses-fail', 'hose-routing-bend-radius-twist'],
-    relatedCategories: ['hydraulic-hoses', 'hoses-fittings'],
+    relatedCategories: ['hydraulic-hoses', 'hydraulic-hose-fittings-suppliers-uae'],
     position: 6,
   },
   {
@@ -212,7 +212,7 @@ export const SERVICE_AREAS: ServiceArea[] = [
         'Gate passes and site induction are not arranged at short notice. Customers who work to vessel schedules benefit disproportionately from having the paperwork in place before it is needed rather than starting it during a failure.',
     },
     relatedArticles: ['hose-service-northern-emirates', 'industrial-hose-is-not-hydraulic-hose', 'chemical-transfer-hose-selection'],
-    relatedCategories: ['industrial-hoses', 'composite-hoses'],
+    relatedCategories: ['industrial-hose-suppliers-uae', 'composite-hoses'],
     position: 7,
   },
 ]
