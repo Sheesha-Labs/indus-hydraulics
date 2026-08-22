@@ -317,8 +317,16 @@ describe('the records carry their compliance source', () => {
 
 describe('every record carries a dial code', () => {
   it('is a plausible E.164 prefix', () => {
+    /*
+      Allows a space-separated second group, for the North American Numbering
+      Plan. Trinidad, Jamaica and the Dominican Republic all share country code
+      +1 and are reached on an area code — "+1 868" is how a Trinidadian writes
+      their own number, and collapsing it to "+1868" or truncating it to "+1"
+      would both make the form placeholder less useful than the thing it is
+      copying.
+    */
     for (const page of MARKET_PAGE_RECORDS) {
-      expect(page.dialCode, page.slug).toMatch(/^\+\d{1,4}$/)
+      expect(page.dialCode, page.slug).toMatch(/^\+\d{1,4}( \d{2,4})?$/)
     }
   })
 
