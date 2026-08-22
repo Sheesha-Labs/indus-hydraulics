@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import { db } from '@indus/db'
-import { buildBreadcrumbLd, buildServiceLd, marketBySlug, marketsOrdered } from '@indus/domain'
+import { buildBreadcrumbLd, buildServiceLd, marketBySlug, marketCountryName, marketsOrdered } from '@indus/domain'
 import { JsonLd, LeadCapturePanel, buildMailtoHref, buildWhatsappHref } from '@indus/ui'
 import { ORG_ID, SITE_NAME, pageMetadata, urlFor } from '../../../../lib/seo'
 import { getStoreSettings } from '../../../../lib/store-settings'
@@ -78,7 +78,7 @@ export default async function MarketPage({ params }: Props) {
             name: `Hydraulic and industrial hose supply to ${market.name}`,
             description: market.summary,
             url: urlFor(`/markets/${market.slug}`),
-            areaServed: [{ name: market.name, type: 'Country' }],
+            areaServed: [{ name: marketCountryName(market), type: 'Country' }],
             providerId: ORG_ID,
             providerName: SITE_NAME,
             serviceType: 'Export supply of hydraulic and industrial hose, fittings and adapters',
