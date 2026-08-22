@@ -1772,6 +1772,1176 @@ const PERU: MarketPage = {
 }
 
 
+// ─────────────────────────────────────────────────────────────────────────────
+// CAUCASUS AND WESTERN CIS — the Middle Corridor
+//
+// Extends the built Caspian cluster. Read Kazakhstan, Azerbaijan and Uzbekistan
+// first: the corridor is already traced there and the conformity framing — the
+// EAEU split — is already established.
+//
+// STANDING PROJECT RULE: NOTHING ROUTES THROUGH RUSSIA. That is why the built
+// corridor takes the long way round, down the Gulf, round Arabia, up the Red
+// Sea, through Suez and across the Black Sea to Poti. It applies to all four
+// markets here. `apps/web/src/lib/market-geometry.test.ts` asserts it against
+// real polygons.
+// ─────────────────────────────────────────────────────────────────────────────
+
+/** Jebel Ali to Poti — the Middle Corridor's sea leg, avoiding Iran and Russia. */
+const BLACK_SEA_CORRIDOR = [
+  [55.03, 25.01],
+  [56.6, 26.55],
+  [59.9, 22.3],
+  [57.0, 15.5],
+  [52.0, 12.5],
+  [45.0, 12.3],
+  [43.4, 12.6],
+  [38.0, 20.0],
+  [35.0, 27.0],
+  [32.6, 29.9],
+  [32.3, 31.3],
+  [28.0, 33.5],
+  [26.0, 36.5],
+  [29.0, 41.0],
+  [35.0, 42.5],
+] as const
+
+/** DXB north-west over Arabia and Türkiye — the shared air leg for the cluster. */
+const CAUCASUS_AIR = [
+  [55.36, 25.25],
+  [48.0, 30.0],
+  [42.0, 36.0],
+] as const
+
+const GEORGIA: MarketPage = {
+  slug: 'georgia',
+  regulatoryCopy: 'unverified',
+  released: false,
+  lane: 'DXB → GE',
+  dialCode: '+995',
+  currency: 'USD',
+  localName: 'საქართველო',
+  lede: 'Georgia is the easiest market in this cluster because it sits on a corridor we already run. Poti and Batumi are where the Middle Corridor reaches the Black Sea, so the sea leg is the same one that serves Baku and Aktau and the goods simply stop earlier. Georgia is outside the Eurasian Economic Union, so there is no EAC certificate to obtain — a national conformity declaration where the line is regulated, and otherwise a clean customs file.',
+  facts: [
+    { label: 'Typical transit', value: 'Typically 22–28 days by sea from dispatch' },
+    {
+      label: 'Freight',
+      value:
+        'Sea freight from Jebel Ali through Suez and the Black Sea to Poti · Batumi where the berth suits the cargo · Air freight into Tbilisi where the schedule is tighter',
+    },
+    { label: 'Incoterms 2020', value: 'CIF Poti · DAP to the buyer’s site · FOB Jebel Ali · EXW Dubai for a nominated forwarder' },
+    {
+      label: 'Documentation',
+      value:
+        'Customs declaration raised by the importer · National conformity declaration where the line is regulated · Certificate of Origin, Dubai Chamber attested · No EAC certificate — Georgia is outside the union',
+    },
+  ],
+  manifest: [
+    { label: 'Origin', value: 'Jebel Ali · Dubai' },
+    { label: 'Primary mode', value: 'Sea, via Suez' },
+    { label: 'Port of entry', value: 'Poti' },
+    { label: 'Transit', value: '22–28 days' },
+    { label: 'Quoted in', value: 'USD' },
+    { label: 'Docs prepared', value: 'Before the vessel sails' },
+  ],
+  map: {
+    geoNames: ['Georgia'],
+    fit: 'crossing',
+    origin: [55.03, 25.01],
+    originLabel: 'JEBEL ALI · DXB',
+    crossing: { name: 'POTI · PORT', coords: [41.67, 42.15], legend: 'Port of entry', dx: -11, dy: 8, anchor: 'end' },
+    routes: [
+      { mode: 'SEA · SUEZ', primary: true, points: leg(BLACK_SEA_CORRIDOR, [38.0, 42.6], [41.67, 42.15]) },
+      { mode: 'AIR', points: leg(CAUCASUS_AIR, [44.95, 41.67]) },
+    ],
+  },
+  freight: [
+    { name: 'Sea, FCL', transit: '22–28 days', route: 'Jebel Ali to Poti, via Suez', useCase: 'Default for most orders' },
+    { name: 'Air freight', transit: '3–5 days', route: 'DXB to TBS', useCase: 'When the line is down' },
+    { name: 'Sea, LCL', transit: '28–36 days', route: 'Consolidated, with transhipment', useCase: 'Small mixed orders' },
+  ],
+  orderSteps: {
+    third: 'Where a line is regulated the national conformity declaration is prepared before the container is loaded; there is no union certificate to obtain here.',
+    fourth: 'Goods sail from Jebel Ali through Suez to Poti, and you get the paperwork and tracking together.',
+  },
+  cities: [
+    { name: 'Tbilisi', coords: [44.8, 41.72], region: 'Tbilisi', plot: true, dx: 9, dy: -5 },
+    { name: 'Poti', coords: [41.67, 42.15], region: 'Samegrelo-Zemo Svaneti' },
+    { name: 'Batumi', coords: [41.64, 41.64], region: 'Adjara', plot: true, dx: -9, dy: 8, anchor: 'end' },
+    { name: 'Kutaisi', coords: [42.7, 42.27], region: 'Imereti', plot: true, dx: 9, dy: -4 },
+    { name: 'Zestaponi', coords: [43.05, 42.11], region: 'Imereti' },
+    { name: 'Rustavi', coords: [45.0, 41.55], region: 'Kvemo Kartli', plot: true, dx: 9, dy: 8 },
+    { name: 'Gori', coords: [44.11, 41.98], region: 'Shida Kartli' },
+    { name: 'Zugdidi', coords: [41.87, 42.51], region: 'Samegrelo-Zemo Svaneti', plot: true, dx: -9, dy: -4, anchor: 'end' },
+    { name: 'Telavi', coords: [45.47, 41.92], region: 'Kakheti' },
+    { name: 'Marneuli', coords: [44.81, 41.48], region: 'Kvemo Kartli' },
+    { name: 'Sadakhlo', coords: [44.6, 41.21], region: 'Kvemo Kartli', plot: true, dx: -9, dy: 8, anchor: 'end' },
+    { name: 'Akhaltsikhe', coords: [42.98, 41.64], region: 'Samtskhe-Javakheti' },
+  ],
+  sectors: [
+    { slug: 'construction', name: 'Construction', description: 'Excavator, crane and batching-plant hydraulics for the corridor road, rail and port programme.' },
+    { slug: 'power', name: 'Power & Energy', description: 'Actuator and governor hydraulics for the hydro cascade and thermal plant.' },
+    { slug: 'marine', name: 'Marine & Offshore', description: 'Deck machinery and terminal hydraulics for the Poti and Batumi port fleet.' },
+    { slug: 'steel', name: 'Steel & Metals', description: 'High-force cylinders and servo valves for the Zestaponi and Rustavi lines.' },
+    { slug: 'mining', name: 'Mining', description: 'Manganese and aggregate plant — dust-rated, high-cycle components.' },
+    { slug: 'oil-gas', name: 'Oil & Gas', description: 'Terminal and pipeline support at Batumi and Supsa.' },
+  ],
+  faqs: [
+    { question: 'Do you have a branch in Georgia?', answer: 'No. Georgia is supplied from our Dubai warehouse, by sea through Suez into Poti or Batumi.' },
+    {
+      question: 'Do we need EAC certification?',
+      answer:
+        'No. Georgia is outside the Eurasian Economic Union, so the EAC documents that Kazakhstan requires do not apply here. Where a line falls under a national technical regulation a conformity declaration is prepared at origin; otherwise there is nothing to obtain.',
+    },
+    { question: 'Poti or Batumi?', answer: 'Poti for containerised cargo, which is most of what we ship. Batumi where the berth or the onward road leg suits it better. It is worth naming the delivery town so we can choose.' },
+    { question: 'Why does it go through Suez rather than overland?', answer: 'Because the overland routes from the Gulf cross jurisdictions we will not route through without an export-compliance ruling. The sea corridor through Suez and the Black Sea is longer and it is the one we run.' },
+    { question: 'Can you deliver on to Armenia from here?', answer: 'Yes. Poti is also the entry for a great deal of Armenian cargo, and the road leg through Sadakhlo is quoted rather than estimated. It is a different customs file, so tell us at quotation.' },
+    { question: 'What currency do you quote in?', answer: 'USD. It is what import contracts here are written in.' },
+    { question: 'Do you crimp assemblies to length?', answer: 'Yes, in Dubai, pressure-tested and tagged before packing. Send bore, thread and pressure, or a photo of the failed assembly, plus the length between fitting faces.' },
+    { question: 'Is air freight worth it on this lane?', answer: 'For a line that is down, yes — three to five days against three to four weeks. For planned work the sea lane is predictable enough to order against.' },
+  ],
+  compliance: {
+    heading: 'Outside the union, and that simplifies it',
+    body:
+      'The conformity question in this region is whether a market is inside the Eurasian Economic Union. Kazakhstan is, and needs EAC documents raised in the importer’s name. Georgia is not, so none of that applies: where a line falls under a national technical regulation a conformity declaration is prepared at origin, and where it does not there is nothing to obtain at all. That leaves a short file — the declaration, the invoice and packing list, and an attested certificate of origin. The other thing worth knowing is that Poti is not only Georgia’s gate. It is where the Middle Corridor reaches the Black Sea, and a good deal of what lands there travels on to Armenia or by rail and ferry to Baku and Aktau. If your consignment is doing that, say so at quotation, because it is a different customs file from the outset rather than a variation applied later.',
+    documents: [
+      { ref: 'DECL', name: 'Customs import declaration', issuer: 'The importer, through the Revenue Service', when: 'Before arrival' },
+      { ref: 'DOC', name: 'Conformity declaration, where the line is regulated', issuer: 'Prepared at origin', when: 'Before the vessel sails' },
+      { ref: 'COO', name: 'Certificate of Origin', issuer: 'Dubai Chamber attested', when: 'Before dispatch' },
+      { ref: 'BL', name: 'Bill of lading or air waybill', issuer: 'The carrier', when: 'On dispatch' },
+      { ref: 'MTC', name: 'Material and test certificates', issuer: 'Mill, or our test bench', when: 'Where the order calls for them' },
+    ],
+  },
+}
+
+const ARMENIA: MarketPage = {
+  slug: 'armenia',
+  regulatoryCopy: 'unverified',
+  released: false,
+  lane: 'DXB → AM',
+  dialCode: '+374',
+  currency: 'USD',
+  localName: 'Հայաստան',
+  lede: 'Armenia is landlocked with two of its four borders closed, so the routing is decided before anything else. Cargo lands at Poti in Georgia and comes south by road through Sadakhlo — there is no alternative worth quoting. Armenia is also inside the Eurasian Economic Union, which means EAC documents raised in the importer’s name, the same framework Kazakhstan works under and the opposite of neighbouring Georgia. Those two facts together are the whole page.',
+  facts: [
+    { label: 'Typical transit', value: 'Typically 26–34 days from dispatch, sea and road combined' },
+    {
+      label: 'Freight',
+      value:
+        'Sea freight from Jebel Ali through Suez to Poti, then road through Sadakhlo · Air freight into Yerevan where the schedule is tighter · No routing through closed borders',
+    },
+    { label: 'Incoterms 2020', value: 'DAP to the buyer’s site · CIF Poti · FOB Jebel Ali · EXW Dubai for a nominated forwarder' },
+    {
+      label: 'Documentation',
+      value:
+        'EAC declaration or certificate of conformity in the importer’s name · Georgian transit documents for the road leg · Certificate of Origin, Dubai Chamber attested',
+    },
+  ],
+  manifest: [
+    { label: 'Origin', value: 'Jebel Ali · Dubai' },
+    { label: 'Primary mode', value: 'Sea + road' },
+    { label: 'Border crossing', value: 'Sadakhlo · Bagratashen' },
+    { label: 'Transit', value: '26–34 days' },
+    { label: 'Quoted in', value: 'USD' },
+    { label: 'Docs prepared', value: 'Before the vessel sails' },
+  ],
+  map: {
+    geoNames: ['Armenia'],
+    fit: 'crossing',
+    origin: [55.03, 25.01],
+    originLabel: 'JEBEL ALI · DXB',
+    crossing: { name: 'BAGRATASHEN · SADAKHLO', coords: [44.81, 41.25], dx: 11, dy: -8, anchor: 'start' },
+    routes: [
+      { mode: 'SEA + ROAD', primary: true, points: leg(BLACK_SEA_CORRIDOR, [38.0, 42.6], [41.67, 42.15], [43.0, 41.9], [44.81, 41.25]) },
+      { mode: 'AIR', points: leg(CAUCASUS_AIR, [44.4, 40.15]) },
+    ],
+  },
+  freight: [
+    { name: 'Sea + road', transit: '26–34 days', route: 'Poti, then road through Sadakhlo', useCase: 'Default for most orders' },
+    { name: 'Air freight', transit: '3–5 days', route: 'DXB to EVN', useCase: 'When the line is down' },
+    { name: 'Sea + road, LCL', transit: '32–42 days', route: 'Consolidated to Poti, then road', useCase: 'Small mixed orders' },
+  ],
+  orderSteps: {
+    third: 'The EAC declaration is raised in your name before the goods move, and the Georgian transit documents for the road leg are prepared alongside it.',
+    fourth: 'Goods sail to Poti and come south by road, and you get the paperwork and tracking together.',
+  },
+  cities: [
+    { name: 'Yerevan', coords: [44.51, 40.18], region: 'Yerevan', plot: true, dx: 9, dy: 4 },
+    { name: 'Bagratashen', coords: [44.82, 41.25], region: 'Tavush' },
+    { name: 'Vanadzor', coords: [44.49, 40.81], region: 'Lori', plot: true, dx: -9, dy: -4, anchor: 'end' },
+    { name: 'Alaverdi', coords: [44.66, 41.1], region: 'Lori' },
+    { name: 'Gyumri', coords: [43.85, 40.79], region: 'Shirak', plot: true, dx: -9, dy: 6, anchor: 'end' },
+    { name: 'Hrazdan', coords: [44.77, 40.5], region: 'Kotayk', plot: true, dx: 9, dy: -4 },
+    { name: 'Abovyan', coords: [44.63, 40.27], region: 'Kotayk' },
+    { name: 'Charentsavan', coords: [44.64, 40.41], region: 'Kotayk' },
+    { name: 'Armavir', coords: [44.03, 40.15], region: 'Armavir' },
+    { name: 'Ararat', coords: [44.7, 39.83], region: 'Ararat', plot: true, dx: 9, dy: 8 },
+    { name: 'Kajaran', coords: [46.15, 39.15], region: 'Syunik', plot: true, dx: 9, dy: 4 },
+    { name: 'Kapan', coords: [46.41, 39.2], region: 'Syunik' },
+  ],
+  sectors: [
+    { slug: 'mining', name: 'Mining', description: 'Copper and molybdenum at Kajaran and Kapan — dust-rated, high-cycle components for shovel and mill.' },
+    { slug: 'power', name: 'Power & Energy', description: 'Actuator and governor hydraulics for the hydro cascade and thermal plant.' },
+    { slug: 'steel', name: 'Steel & Metals', description: 'High-force cylinders and servo valves for smelter and forming lines.' },
+    { slug: 'construction', name: 'Construction', description: 'Excavator, crane and batching-plant hydraulics for road and infrastructure contracts.' },
+    { slug: 'oil-gas', name: 'Oil & Gas', description: 'Terminal, pipeline and compressor-station support.' },
+    { slug: 'marine', name: 'Marine & Offshore', description: 'Winch and deck hydraulics for inland water and lifting equipment.' },
+  ],
+  faqs: [
+    { question: 'Do you have a branch in Armenia?', answer: 'No. Armenia is supplied from our Dubai warehouse, by sea to Poti in Georgia and then by road through Sadakhlo.' },
+    {
+      question: 'Do we need EAC certification?',
+      answer:
+        'Yes. Armenia is a member of the Eurasian Economic Union, so the EAC declaration or certificate applies and it is raised in the importer’s name. It is the same framework as Kazakhstan and the opposite of neighbouring Georgia, which is outside the union.',
+    },
+    { question: 'Is there another way in?', answer: 'Not one we would quote. Two of the four land borders are closed, and the routes that remain either cross jurisdictions we will not route through without an export-compliance ruling or are not commercially served. Poti and the road south is the lane.' },
+    { question: 'Why is it longer than Georgia?', answer: 'Because it is Georgia plus a road leg and a second customs file. The sea time to Poti is identical; the difference is Georgian transit clearance, the drive south and the border at Bagratashen.' },
+    { question: 'Can you deliver to the Syunik mines?', answer: 'Yes, on DAP terms to the mine gate at Kajaran or Kapan. It is a long road leg from the border and it is quoted rather than estimated.' },
+    { question: 'What do you need from us before shipping?', answer: 'Confirmation that the EAC documentation is in place in your name and covers the goods. It is not something that can be arranged after arrival.' },
+    { question: 'What currency do you quote in?', answer: 'USD. It is what import contracts here are written in.' },
+    { question: 'Can you supply sour-service material documentation?', answer: 'Yes. NACE MR0175 / ISO 15156 documentation where the contract requires it, confirmed at quotation rather than produced afterwards.' },
+  ],
+  compliance: {
+    heading: 'Inside the union, and only one way in',
+    body:
+      'Two facts decide everything about an Armenian consignment, and neither is negotiable. The first is that Armenia is inside the Eurasian Economic Union, so goods need EAC conformity documentation raised in the importer’s name before they move — the same framework Kazakhstan works under, and the exact opposite of Georgia next door, which is outside the union and needs none of it. Getting that backwards is the commonest error on this lane, because the two countries sit on the same corridor and share the same port. The second is that there is one usable route. Two of Armenia’s four land borders are closed, and the alternatives either cross jurisdictions we will not route through without an export-compliance ruling or are not commercially served. Poti, then road south through Sadakhlo. We quote that and nothing else, because quoting an option we would not actually use is worse than admitting there is one road.',
+    documents: [
+      { ref: 'EAC', name: 'EAC declaration or certificate of conformity', issuer: 'Accredited body, in the importer’s name', when: 'Before anything else' },
+      { ref: 'TRANSIT', name: 'Georgian transit documents for the road leg', issuer: 'The forwarder, at Poti', when: 'Before the road leg' },
+      { ref: 'DECL', name: 'Customs import declaration', issuer: 'The importer, through State Revenue Committee', when: 'Before arrival at the border' },
+      { ref: 'COO', name: 'Certificate of Origin', issuer: 'Dubai Chamber attested', when: 'Before dispatch' },
+      { ref: 'MTC', name: 'Material and test certificates', issuer: 'Mill, or our test bench', when: 'Where the order calls for them' },
+    ],
+  },
+}
+
+const MOLDOVA: MarketPage = {
+  slug: 'moldova',
+  regulatoryCopy: 'unverified',
+  released: false,
+  lane: 'DXB → MD',
+  dialCode: '+373',
+  currency: 'EUR',
+  localName: 'Republica Moldova',
+  lede: 'Moldova is landlocked and served through Romania, which shapes both halves of the file. Containers discharge at Constanța and come north by road to Leușeni; the transit runs under EU customs procedure, and the technical documentation Moldova asks for is aligned to the European framework its trade agreement follows. That is why we quote here in euros rather than dollars — it is the currency the contracts and the Romanian leg are actually settled in.',
+  facts: [
+    { label: 'Typical transit', value: 'Typically 24–32 days from dispatch, sea and road combined' },
+    {
+      label: 'Freight',
+      value:
+        'Sea freight from Jebel Ali through Suez to Constanța, then road through Leușeni · Air freight into Chișinău where the schedule is tighter',
+    },
+    { label: 'Incoterms 2020', value: 'DAP to the buyer’s site · CIF Constanța · FOB Jebel Ali · EXW Dubai for a nominated forwarder' },
+    {
+      label: 'Documentation',
+      value:
+        'EU transit declaration for the Romanian leg · Moldovan customs declaration raised by the importer · Declaration of conformity where the line is regulated · Certificate of Origin, Dubai Chamber attested',
+    },
+  ],
+  manifest: [
+    { label: 'Origin', value: 'Jebel Ali · Dubai' },
+    { label: 'Primary mode', value: 'Sea + road' },
+    { label: 'Border crossing', value: 'Leușeni · Albița' },
+    { label: 'Transit', value: '24–32 days' },
+    { label: 'Quoted in', value: 'EUR' },
+    { label: 'Docs prepared', value: 'Before the vessel sails' },
+  ],
+  map: {
+    geoNames: ['Moldova'],
+    fit: 'crossing',
+    origin: [55.03, 25.01],
+    originLabel: 'JEBEL ALI · DXB',
+    crossing: { name: 'LEUȘENI · ALBIȚA', coords: [28.14, 46.79], dx: -11, dy: 8, anchor: 'end' },
+    routes: [
+      { mode: 'SEA + ROAD', primary: true, points: leg(BLACK_SEA_CORRIDOR, [30.0, 42.5], [28.65, 44.17], [27.6, 45.4], [28.14, 46.79]) },
+      { mode: 'AIR', points: leg(CAUCASUS_AIR, [35.0, 42.0], [28.93, 46.93]) },
+    ],
+  },
+  freight: [
+    { name: 'Sea + road', transit: '24–32 days', route: 'Constanța, then road through Leușeni', useCase: 'Default for most orders' },
+    { name: 'Air freight', transit: '3–5 days', route: 'DXB to KIV, usually with a connection', useCase: 'When the line is down' },
+    { name: 'Sea + road, LCL', transit: '30–40 days', route: 'Consolidated to Constanța, then road', useCase: 'Small mixed orders' },
+  ],
+  orderSteps: {
+    third: 'The EU transit declaration for the Romanian leg is raised alongside the Moldovan file, and where a line is regulated the conformity declaration is prepared before the container is loaded.',
+    fourth: 'Goods sail to Constanța and come north by road, and you get the paperwork and tracking together.',
+  },
+  cities: [
+    { name: 'Chișinău', coords: [28.86, 47.01], region: 'Chișinău', plot: true, dx: 9, dy: -5 },
+    { name: 'Leușeni', coords: [28.14, 46.79], region: 'Hîncești' },
+    { name: 'Bălți', coords: [27.93, 47.76], region: 'Bălți', plot: true, dx: -9, dy: -4, anchor: 'end' },
+    { name: 'Ungheni', coords: [27.8, 47.2], region: 'Ungheni', plot: true, dx: -9, dy: 4, anchor: 'end' },
+    { name: 'Cahul', coords: [28.19, 45.9], region: 'Cahul', plot: true, dx: 9, dy: 6 },
+    { name: 'Giurgiulești', coords: [28.2, 45.47], region: 'Cahul', plot: true, dx: 9, dy: 8 },
+    { name: 'Orhei', coords: [28.82, 47.38], region: 'Orhei' },
+    { name: 'Soroca', coords: [28.3, 48.16], region: 'Soroca', plot: true, dx: 9, dy: -4 },
+    { name: 'Comrat', coords: [28.66, 46.3], region: 'Gagauzia' },
+    { name: 'Rezina', coords: [28.96, 47.75], region: 'Rezina' },
+    { name: 'Strășeni', coords: [28.61, 47.14], region: 'Strășeni' },
+    { name: 'Anenii Noi', coords: [29.23, 46.88], region: 'Anenii Noi' },
+  ],
+  sectors: [
+    { slug: 'construction', name: 'Construction', description: 'Excavator, crane and batching-plant hydraulics for road and infrastructure contracts.' },
+    { slug: 'power', name: 'Power & Energy', description: 'Actuator and governor hydraulics for thermal and hydro generation.' },
+    { slug: 'steel', name: 'Steel & Metals', description: 'High-force cylinders and servo valves for the Rezina and Bălți industrial plant.' },
+    { slug: 'mining', name: 'Mining', description: 'Dust-rated, high-cycle components for cement, gypsum and quarry plant.' },
+    { slug: 'oil-gas', name: 'Oil & Gas', description: 'Terminal and bulk-handling support at Giurgiulești on the Danube.' },
+    { slug: 'marine', name: 'Marine & Offshore', description: 'Winch and deck hydraulics for the Danube river and port fleet.' },
+  ],
+  faqs: [
+    { question: 'Do you have a branch in Moldova?', answer: 'No. Moldova is supplied from our Dubai warehouse, by sea to Constanța in Romania and then by road through Leușeni.' },
+    {
+      question: 'Why do you quote in euros here?',
+      answer:
+        'Because that is what the contracts and the Romanian transit leg are settled in. Quoting dollars would put a conversion in the middle of a file that is otherwise entirely euro-denominated, and the buyer would carry it.',
+    },
+    { question: 'What certification do we need?', answer: 'Moldova’s technical documentation is aligned to the European framework. Where a line falls under a regulation a declaration of conformity is prepared at origin; otherwise the file is the transit declaration, the customs entry and the origin certificate.' },
+    { question: 'Can you route through Giurgiulești instead?', answer: 'Sometimes. Moldova has its own Danube port and for bulk or project cargo it can be the better answer. For containerised stock Constanța and the road is faster, and we will say which suits the actual order.' },
+    { question: 'What is the real variable on this lane?', answer: 'The Romanian transit leg, not the sea time. The EU transit declaration has to agree with the Moldovan entry line for line; where they do not, the consignment waits at Leușeni rather than at either customs office.' },
+    { question: 'How long does the road leg take?', answer: 'Constanța to Chișinău is a day once cleared. What varies is clearance, which is why the transit file is prepared before the vessel sails rather than on arrival.' },
+    { question: 'Do you crimp assemblies to length?', answer: 'Yes, in Dubai, pressure-tested and tagged before packing. Send bore, thread and pressure, or a photo of the failed assembly, plus the length between fitting faces.' },
+    { question: 'Is there a minimum order?', answer: 'No. On a lane with a road leg it is usually worth consolidating so one transit declaration covers the lot, and we will say when an item is better added to the next consignment.' },
+  ],
+  compliance: {
+    heading: 'A Romanian transit file, then a Moldovan entry',
+    body:
+      'Moldova is landlocked and served through Romania, so every consignment carries two customs files rather than one. The goods discharge at Constanța and move north under EU transit procedure to Leușeni, where the Moldovan entry is made. Those two documents describe the same cargo and have to agree line for line; where they do not, the consignment stops at the border rather than at either office, and the border is the expensive place to discover a discrepancy. The technical side is comparatively simple — Moldova’s documentation is aligned to the European framework, so a declaration of conformity where a line is regulated and nothing where it is not. We prepare both files before the vessel sails, and we quote in euros because that is the currency the Romanian leg and the buyer’s own contracts settle in.',
+    documents: [
+      { ref: 'T1', name: 'EU transit declaration for the Romanian leg', issuer: 'The forwarder, at Constanța', when: 'Before the road leg' },
+      { ref: 'DECL', name: 'Moldovan customs import declaration', issuer: 'The importer, through the Customs Service', when: 'Before arrival at the border' },
+      { ref: 'DOC', name: 'Declaration of conformity, where the line is regulated', issuer: 'Prepared at origin', when: 'Before the vessel sails' },
+      { ref: 'COO', name: 'Certificate of Origin', issuer: 'Dubai Chamber attested', when: 'Before dispatch' },
+      { ref: 'MTC', name: 'Material and test certificates', issuer: 'Mill, or our test bench', when: 'Where the order calls for them' },
+    ],
+  },
+}
+
+const UKRAINE: MarketPage = {
+  slug: 'ukraine',
+  regulatoryCopy: 'unverified',
+  released: false,
+  lane: 'DXB → UA',
+  dialCode: '+380',
+  currency: 'USD',
+  localName: 'Україна',
+  lede: 'Ukraine is supplied under wartime conditions and this page will not pretend otherwise. Routing and timings are confirmed per consignment rather than published: the Danube ports at Izmail and Reni, the Black Sea corridor, and the road approach through Romania and Poland each open and close on circumstances no supplier controls. What we can state is the rest of it — what we hold, what the conformity file looks like, and that we quote the route that is actually running on the day rather than the one that reads best.',
+  facts: [
+    { label: 'Typical transit', value: 'Confirmed per consignment — routing depends on which corridor is operating' },
+    {
+      label: 'Freight',
+      value:
+        'Sea freight from Jebel Ali through Suez to the Danube ports at Izmail or Reni · Constanța and road through Romania where that is the running route · Onward road from Poland for the western oblasts',
+    },
+    { label: 'Incoterms 2020', value: 'DAP to the buyer’s site where the route allows · CIF the nominated port · FOB Jebel Ali · EXW Dubai for a nominated forwarder' },
+    {
+      label: 'Documentation',
+      value:
+        'Ukrainian customs declaration raised by the importer · Declaration of conformity where the line is regulated · Transit documents for the Romanian or Polish leg · Certificate of Origin, Dubai Chamber attested',
+    },
+  ],
+  manifest: [
+    { label: 'Origin', value: 'Jebel Ali · Dubai' },
+    { label: 'Primary mode', value: 'Sea + road' },
+    { label: 'Port of entry', value: 'Izmail · Danube' },
+    { label: 'Transit', value: 'Quoted per consignment' },
+    { label: 'Quoted in', value: 'USD' },
+    { label: 'Docs prepared', value: 'Before the vessel sails' },
+  ],
+  map: {
+    geoNames: ['Ukraine'],
+    fit: 'crossing',
+    origin: [55.03, 25.01],
+    originLabel: 'JEBEL ALI · DXB',
+    crossing: { name: 'IZMAIL · DANUBE', coords: [28.84, 45.35], legend: 'Port of entry', dx: -11, dy: 10, anchor: 'end' },
+    routes: [
+      { mode: 'SEA + ROAD', primary: true, points: leg(BLACK_SEA_CORRIDOR, [30.0, 42.5], [29.5, 44.0], [29.6, 45.2], [28.84, 45.35]) },
+      { mode: 'ROAD VIA PL', points: [[21.0, 52.2], [22.7, 50.6], [24.02, 49.84], [26.0, 49.55]] },
+    ],
+  },
+  freight: [
+    { name: 'Sea + road', transit: 'Quoted per consignment', route: 'Danube ports, or Constanța and road', useCase: 'Route confirmed at order' },
+    { name: 'Road via Poland', transit: 'Quoted per consignment', route: 'Overland for the western oblasts', useCase: 'When the southern corridor is closed' },
+    { name: 'Air freight', transit: 'Quoted per consignment', route: 'To the nearest operating airport, then road', useCase: 'Where the schedule allows it' },
+  ],
+  orderSteps: {
+    third: 'The route is confirmed against what is actually operating on the day, and the transit and conformity documents are prepared for that route rather than a default one.',
+    fourth: 'Goods move on the confirmed routing, and you get the paperwork and tracking together.',
+  },
+  cities: [
+    { name: 'Kyiv', coords: [30.52, 50.45], region: 'Kyiv', plot: true, dx: 9, dy: -5 },
+    { name: 'Lviv', coords: [24.03, 49.84], region: 'Lviv Oblast', plot: true, dx: -9, dy: -4, anchor: 'end' },
+    { name: 'Izmail', coords: [28.84, 45.35], region: 'Odesa Oblast' },
+    { name: 'Reni', coords: [28.28, 45.46], region: 'Odesa Oblast' },
+    { name: 'Odesa', coords: [30.73, 46.48], region: 'Odesa Oblast', plot: true, dx: 9, dy: 8 },
+    { name: 'Vinnytsia', coords: [28.47, 49.23], region: 'Vinnytsia Oblast', plot: true, dx: -9, dy: 4, anchor: 'end' },
+    { name: 'Ternopil', coords: [25.59, 49.55], region: 'Ternopil Oblast' },
+    { name: 'Ivano-Frankivsk', coords: [24.71, 48.92], region: 'Ivano-Frankivsk Oblast' },
+    { name: 'Uzhhorod', coords: [22.29, 48.62], region: 'Zakarpattia Oblast', plot: true, dx: -9, dy: 6, anchor: 'end' },
+    { name: 'Chernivtsi', coords: [25.94, 48.29], region: 'Chernivtsi Oblast' },
+    { name: 'Zhytomyr', coords: [28.66, 50.25], region: 'Zhytomyr Oblast' },
+    { name: 'Rivne', coords: [26.25, 50.62], region: 'Rivne Oblast', plot: true, dx: 9, dy: -4 },
+    { name: 'Khmelnytskyi', coords: [26.99, 49.42], region: 'Khmelnytskyi Oblast' },
+    { name: 'Cherkasy', coords: [32.06, 49.44], region: 'Cherkasy Oblast' },
+    { name: 'Kropyvnytskyi', coords: [32.26, 48.51], region: 'Kirovohrad Oblast' },
+    { name: 'Poltava', coords: [34.55, 49.59], region: 'Poltava Oblast', plot: true, dx: 9, dy: 4 },
+  ],
+  sectors: [
+    { slug: 'power', name: 'Power & Energy', description: 'Actuator and governor hydraulics for thermal, hydro and substation plant under repair and reconstruction.' },
+    { slug: 'construction', name: 'Construction', description: 'Excavator, crane and batching-plant hydraulics for reconstruction and infrastructure work.' },
+    { slug: 'steel', name: 'Steel & Metals', description: 'High-force cylinders and servo valves for rolling and forming lines.' },
+    { slug: 'mining', name: 'Mining', description: 'Dust-rated, high-cycle components for iron ore, cement and quarry plant.' },
+    { slug: 'oil-gas', name: 'Oil & Gas', description: 'Pipeline, compressor-station and storage support.' },
+    { slug: 'marine', name: 'Marine & Offshore', description: 'Winch and deck hydraulics for the Danube river and port fleet.' },
+  ],
+  faqs: [
+    { question: 'Do you have a branch in Ukraine?', answer: 'No. Ukraine is supplied from our Dubai warehouse, on whichever corridor is operating when the order is placed.' },
+    {
+      question: 'Why does the page not state a transit time?',
+      answer:
+        'Because we would be inventing it. The Danube ports, the Black Sea corridor and the road approaches through Romania and Poland each open and close on circumstances no supplier controls. We confirm the route and the timing per consignment, against what is actually running, rather than publishing a number that reads well and holds for nobody.',
+    },
+    { question: 'Which route will our order take?', answer: 'Whichever is running and suits the delivery oblast. Izmail or Reni on the Danube for the south, Constanța and road through Romania, or overland from Poland for the west. We say which at quotation rather than after the goods have moved.' },
+    { question: 'What certification do we need?', answer: 'A declaration of conformity where the line falls under a technical regulation, prepared at origin. Beyond that the file is the customs declaration, the transit documents for the road leg and an attested certificate of origin.' },
+    { question: 'Can you deliver to the site, or only to the border?', answer: 'DAP to the site where the route allows it, and we will say plainly when it does not. Where the final leg cannot be committed we quote to a nominated point and your forwarder takes it from there.' },
+    { question: 'Do you carry insurance on this lane?', answer: 'Cargo cover is arranged per consignment and its scope varies with the routing. It is priced into the quotation rather than assumed, and we state what is and is not covered before you accept.' },
+    { question: 'What currency do you quote in?', answer: 'USD. It is what import contracts here are written in and what the bank will settle against.' },
+    { question: 'Can you supply against a reconstruction tender?', answer: 'Yes. Send the specification and the schedule; we will quote from stock and say plainly where a lead time depends on a route we cannot commit to at the time of quoting.' },
+  ],
+  compliance: {
+    heading: 'The route is confirmed per consignment, and that is the honest version',
+    body:
+      'Every other market page on this site states a transit band because a lane runs the same way most weeks. Ukraine does not, and a page that published one would be making a promise about circumstances no supplier controls. The Danube ports at Izmail and Reni, the Black Sea corridor out of Odesa, and the overland approaches through Romania and Poland each operate or do not, and which is available shapes the cost, the timing and the transit documents. So the routing is confirmed per consignment against what is actually running, and it is quoted that way rather than defaulted. The rest of the file is ordinary: a Ukrainian customs declaration, a declaration of conformity where the line falls under a technical regulation, transit documents for whichever road leg applies, and an attested certificate of origin. Cargo cover is arranged per consignment and its scope is stated before acceptance rather than assumed.',
+    documents: [
+      { ref: 'ROUTE', name: 'Confirmed routing for the consignment', issuer: 'Agreed at quotation', when: 'Before anything else' },
+      { ref: 'DECL', name: 'Ukrainian customs import declaration', issuer: 'The importer, through the State Customs Service', when: 'Before arrival' },
+      { ref: 'TRANSIT', name: 'Transit documents for the Romanian or Polish leg', issuer: 'The forwarder', when: 'Before the road leg' },
+      { ref: 'DOC', name: 'Declaration of conformity, where the line is regulated', issuer: 'Prepared at origin', when: 'Before dispatch' },
+      { ref: 'COO', name: 'Certificate of Origin', issuer: 'Dubai Chamber attested', when: 'Before dispatch' },
+    ],
+  },
+}
+
+
+
+const COLOMBIA: MarketPage = {
+  slug: 'colombia',
+  regulatoryCopy: 'unverified',
+  released: false,
+  lane: 'DXB → CO',
+  dialCode: '+57',
+  currency: 'USD',
+  lede: 'Colombia has two coasts and the choice between them is the whole planning question. Cartagena on the Caribbean is the shorter lane and serves the north and the interior; Buenaventura on the Pacific serves the Cauca valley and the south-west, and reaching it means the Panama Canal and another fortnight. Above that sits the import registry and, where a line is regulated, an ICONTEC conformity certificate obtained against the product rather than the shipment.',
+  facts: [
+    { label: 'Typical transit', value: 'Typically 32–40 days by sea from dispatch to Cartagena' },
+    {
+      label: 'Freight',
+      value:
+        'Sea freight from Jebel Ali round the Cape to Cartagena or Barranquilla for the Caribbean coast · Buenaventura via the Panama Canal for the Pacific side · Air freight into Bogotá where the schedule is tighter',
+    },
+    { label: 'Incoterms 2020', value: 'CIF Cartagena · DAP to the buyer’s site · FOB Jebel Ali · EXW Dubai for a nominated forwarder' },
+    {
+      label: 'Documentation',
+      value:
+        'Import registry entry raised by the importer · ICONTEC conformity certificate where the line is regulated · Certificate of Origin, Dubai Chamber attested · Documents in Spanish',
+    },
+  ],
+  manifest: [
+    { label: 'Origin', value: 'Jebel Ali · Dubai' },
+    { label: 'Primary mode', value: 'Sea, via the Cape' },
+    { label: 'Port of entry', value: 'Cartagena' },
+    { label: 'Transit', value: '32–40 days' },
+    { label: 'Quoted in', value: 'USD' },
+    { label: 'Docs prepared', value: 'Before the vessel sails' },
+  ],
+  map: {
+    geoNames: ['Colombia'],
+    fit: 'crossing',
+    origin: [55.03, 25.01],
+    originLabel: 'JEBEL ALI · DXB',
+    crossing: { name: 'CARTAGENA · PORT', coords: [-75.51, 10.4], legend: 'Port of entry', dx: -11, dy: 8, anchor: 'end' },
+    routes: [
+      { mode: 'SEA · CAPE', primary: true, points: leg(CAPE_TO_SOUTH_ATLANTIC, [-32.0, -12.0], [-42.0, 0.0], [-58.0, 9.0], [-70.0, 11.5], [-75.51, 10.4]) },
+      { mode: 'AIR', points: leg(SOUTH_AMERICA_AIR, [-50.0, 0.0], [-74.15, 4.7]) },
+    ],
+  },
+  freight: [
+    { name: 'Sea, FCL', transit: '32–40 days', route: 'Jebel Ali to Cartagena, via the Cape', useCase: 'Default for most orders' },
+    { name: 'Air freight', transit: '5–8 days', route: 'DXB to BOG, with a connection', useCase: 'When the line is down' },
+    { name: 'Sea, Pacific coast', transit: '44–56 days', route: 'Buenaventura, via the Panama Canal', useCase: 'The Cauca valley and south-west' },
+  ],
+  orderSteps: {
+    third: 'The coast is fixed against the delivery city rather than assumed, and where a line is regulated the ICONTEC certification is arranged before the container is loaded.',
+    fourth: 'Goods sail from Jebel Ali round the Cape, and you get the paperwork and tracking together.',
+  },
+  cities: [
+    { name: 'Bogotá', coords: [-74.07, 4.71], region: 'Cundinamarca', plot: true, dx: 9, dy: 4 },
+    { name: 'Cartagena', coords: [-75.51, 10.4], region: 'Bolívar' },
+    { name: 'Barranquilla', coords: [-74.8, 10.96], region: 'Atlántico', plot: true, dx: 9, dy: -4 },
+    { name: 'Santa Marta', coords: [-74.2, 11.24], region: 'Magdalena' },
+    { name: 'Medellín', coords: [-75.56, 6.25], region: 'Antioquia', plot: true, dx: -9, dy: -4, anchor: 'end' },
+    { name: 'Cali', coords: [-76.53, 3.45], region: 'Valle del Cauca', plot: true, dx: -9, dy: 4, anchor: 'end' },
+    { name: 'Buenaventura', coords: [-77.03, 3.88], region: 'Valle del Cauca', plot: true, dx: -9, dy: -4, anchor: 'end' },
+    { name: 'Barrancabermeja', coords: [-73.85, 7.06], region: 'Santander', plot: true, dx: 9, dy: 4 },
+    { name: 'Bucaramanga', coords: [-73.12, 7.13], region: 'Santander' },
+    { name: 'Yopal', coords: [-72.4, 5.34], region: 'Casanare', plot: true, dx: 9, dy: 6 },
+    { name: 'Villavicencio', coords: [-73.63, 4.14], region: 'Meta' },
+    { name: 'Pereira', coords: [-75.69, 4.81], region: 'Risaralda' },
+    { name: 'Manizales', coords: [-75.51, 5.07], region: 'Caldas' },
+    { name: 'Cúcuta', coords: [-72.51, 7.89], region: 'Norte de Santander' },
+    { name: 'La Guajira', coords: [-72.9, 11.54], region: 'La Guajira' },
+    { name: 'Ibagué', coords: [-75.21, 4.44], region: 'Tolima' },
+  ],
+  sectors: [
+    { slug: 'oil-gas', name: 'Oil & Gas', description: 'Llanos and Magdalena basin support, and the Barrancabermeja and Cartagena refineries.' },
+    { slug: 'mining', name: 'Mining', description: 'Coal in La Guajira and Cesar, and gold in Antioquia — dust-rated, high-cycle components.' },
+    { slug: 'power', name: 'Power & Energy', description: 'Actuator and governor hydraulics for hydro and thermal generation.' },
+    { slug: 'construction', name: 'Construction', description: 'Excavator, crane and batching-plant hydraulics for the road concession programme.' },
+    { slug: 'marine', name: 'Marine & Offshore', description: 'Deck machinery and terminal hydraulics for the Caribbean and Pacific port fleets.' },
+    { slug: 'steel', name: 'Steel & Metals', description: 'High-force cylinders and servo valves for rolling and forming lines.' },
+  ],
+  faqs: [
+    { question: 'Do you have a branch in Colombia?', answer: 'No. Colombia is supplied from our Dubai warehouse, round the Cape into Cartagena, or through the Panama Canal to Buenaventura for the Pacific side.' },
+    { question: 'Cartagena or Buenaventura?', answer: 'Cartagena for the coast, Bogotá and the interior — it is nearly a fortnight shorter. Buenaventura only when the delivery is in the Cauca valley or the south-west, where the road leg from the Caribbean would undo the saving.' },
+    {
+      question: 'What is ICONTEC and does it apply to us?',
+      answer:
+        'ICONTEC is the certification body for Colombia’s regulated products. The list is defined and much industrial hose and fittings falls outside it. Where a line is inside, the certificate attaches to the product rather than the shipment, so it is obtained once and holds for future orders.',
+    },
+    { question: 'What do you need from us before shipping?', answer: 'Your import registry entry and confirmation that it covers the tariff lines on the order. It is checked before the goods are, not after.' },
+    { question: 'Can you deliver to the Llanos fields?', answer: 'Yes, on DAP terms to the base or the site gate at Yopal or Villavicencio. The leg beyond Bogotá is quoted rather than estimated, because the road over the cordillera is a real climb.' },
+    { question: 'What language do the documents need to be in?', answer: 'Spanish, with the description agreeing across the invoice, the packing list and the declaration. We fix the wording at quotation.' },
+    { question: 'What currency do you quote in?', answer: 'USD. It is what the import registry and the supply contracts are denominated in.' },
+    { question: 'Can you supply API-monogrammed equipment?', answer: 'Yes. API 6A wellhead, API 16A BOP, API 16C choke and kill and API 7K drilling hose, with NACE MR0175 material documentation where the contract requires it.' },
+  ],
+  compliance: {
+    heading: 'Which coast, and whether ICONTEC applies',
+    body:
+      'Colombia is the one South American market where the port choice changes the transit by weeks rather than days. Cartagena and Barranquilla sit on the Caribbean and are reached round the Cape; Buenaventura sits on the Pacific and needs the Panama Canal on top of it. For a delivery in Bogotá or Medellín the Caribbean is obviously right; for Cali it is genuinely arguable, and we settle it against the delivery city at quotation rather than defaulting. The regulatory side is more familiar: the importer’s registry entry has to cover the tariff lines before anything else matters, and ICONTEC certification applies to a defined list of products — much of what we ship sits outside it, and where a line is inside, the certificate attaches to the product and holds for future orders rather than being repeated per shipment.',
+    documents: [
+      { ref: 'REG', name: 'Import registry entry and tariff coverage', issuer: 'The importer, through VUCE', when: 'Before anything else' },
+      { ref: 'ICONTEC', name: 'Conformity certificate, where the product is regulated', issuer: 'ICONTEC or an accredited body', when: 'At quotation, per product' },
+      { ref: 'DECL', name: 'Customs import declaration', issuer: 'The importer, through DIAN', when: 'Before arrival' },
+      { ref: 'COO', name: 'Certificate of Origin', issuer: 'Dubai Chamber attested', when: 'Before dispatch' },
+      { ref: 'MTC', name: 'Material and test certificates', issuer: 'Mill, or our test bench', when: 'Where the order calls for them' },
+    ],
+  },
+}
+
+const ECUADOR: MarketPage = {
+  slug: 'ecuador',
+  regulatoryCopy: 'unverified',
+  released: false,
+  lane: 'DXB → EC',
+  dialCode: '+593',
+  currency: 'USD',
+  lede: 'Ecuador runs on the Pacific lane through the Panama Canal into Guayaquil, and the thing worth settling before the goods move is the INEN technical regulation. Ecuador applies conformity requirements more broadly than its neighbours, and a line that would clear Chile or Peru without a certificate can need one here. The currency question, unusually, does not arise: the country is dollarised, so the quote and the settlement are in the same money.',
+  facts: [
+    { label: 'Typical transit', value: 'Typically 38–48 days by sea from dispatch' },
+    {
+      label: 'Freight',
+      value:
+        'Sea freight from Jebel Ali round the Cape and through the Panama Canal to Guayaquil · Posorja for the deep-water berth · Manta for the northern coast · Air freight into Quito or Guayaquil where the schedule is tighter',
+    },
+    { label: 'Incoterms 2020', value: 'CIF Guayaquil · DAP to the buyer’s site · FOB Jebel Ali · EXW Dubai for a nominated forwarder' },
+    {
+      label: 'Documentation',
+      value:
+        'INEN certificate of conformity where the line is regulated · Customs declaration raised by the importer · Certificate of Origin, Dubai Chamber attested · Documents in Spanish',
+    },
+  ],
+  manifest: [
+    { label: 'Origin', value: 'Jebel Ali · Dubai' },
+    { label: 'Primary mode', value: 'Sea, via the Canal' },
+    { label: 'Port of entry', value: 'Guayaquil' },
+    { label: 'Transit', value: '38–48 days' },
+    { label: 'Quoted in', value: 'USD' },
+    { label: 'Docs prepared', value: 'Before the vessel sails' },
+  ],
+  map: {
+    geoNames: ['Ecuador'],
+    fit: 'crossing',
+    origin: [55.03, 25.01],
+    originLabel: 'JEBEL ALI · DXB',
+    crossing: { name: 'GUAYAQUIL · PORT', coords: [-79.9, -2.19], legend: 'Port of entry', dx: -11, dy: 8, anchor: 'end' },
+    routes: [
+      {
+        mode: 'SEA · CANAL',
+        primary: true,
+        points: leg(CAPE_TO_SOUTH_ATLANTIC, [-32.0, -12.0], [-42.0, 0.0], [-62.0, 10.0], [-77.0, 9.5], [-79.5, 8.0], [-81.0, 2.0], [-79.9, -2.19]),
+      },
+      { mode: 'AIR', points: leg(SOUTH_AMERICA_AIR, [-50.0, -2.0], [-78.36, -0.13]) },
+    ],
+  },
+  freight: [
+    { name: 'Sea, FCL', transit: '38–48 days', route: 'Jebel Ali to Guayaquil, via the Canal', useCase: 'Default for most orders' },
+    { name: 'Air freight', transit: '6–9 days', route: 'DXB to UIO or GYE, with a connection', useCase: 'When the line is down' },
+    { name: 'Sea, LCL', transit: '46–58 days', route: 'Consolidated, with transhipment', useCase: 'Small mixed orders' },
+  ],
+  orderSteps: {
+    third: 'The INEN position is settled line by line — which parts need a certificate of conformity and which do not — and the certification is arranged before the container is loaded.',
+    fourth: 'Goods sail from Jebel Ali round the Cape and through the Canal, and you get the paperwork and tracking together.',
+  },
+  cities: [
+    { name: 'Guayaquil', coords: [-79.9, -2.19], region: 'Guayas' },
+    { name: 'Posorja', coords: [-80.25, -2.71], region: 'Guayas' },
+    { name: 'Quito', coords: [-78.47, -0.18], region: 'Pichincha', plot: true, dx: 9, dy: -5 },
+    { name: 'Manta', coords: [-80.73, -0.95], region: 'Manabí', plot: true, dx: -9, dy: -4, anchor: 'end' },
+    { name: 'Esmeraldas', coords: [-79.66, 0.97], region: 'Esmeraldas', plot: true, dx: 9, dy: -4 },
+    { name: 'Cuenca', coords: [-79.0, -2.9], region: 'Azuay', plot: true, dx: 9, dy: 6 },
+    { name: 'Machala', coords: [-79.96, -3.26], region: 'El Oro', plot: true, dx: -9, dy: 6, anchor: 'end' },
+    { name: 'Ambato', coords: [-78.62, -1.24], region: 'Tungurahua' },
+    { name: 'Riobamba', coords: [-78.65, -1.67], region: 'Chimborazo' },
+    { name: 'Santo Domingo', coords: [-79.17, -0.25], region: 'Santo Domingo' },
+    { name: 'Lago Agrio', coords: [-76.88, 0.09], region: 'Sucumbíos', plot: true, dx: 9, dy: 4 },
+    { name: 'Coca', coords: [-76.99, -0.46], region: 'Orellana' },
+    { name: 'Shushufindi', coords: [-76.65, -0.19], region: 'Sucumbíos' },
+    { name: 'Loja', coords: [-79.2, -3.99], region: 'Loja' },
+    { name: 'Ibarra', coords: [-78.12, 0.35], region: 'Imbabura' },
+    { name: 'La Libertad', coords: [-80.9, -2.23], region: 'Santa Elena' },
+  ],
+  sectors: [
+    { slug: 'oil-gas', name: 'Oil & Gas', description: 'Oriente basin support at Lago Agrio and Coca, and the Esmeraldas refinery.' },
+    { slug: 'marine', name: 'Marine & Offshore', description: 'Deck machinery and vessel hydraulics for the fishing and shrimp fleet at Manta and Posorja.' },
+    { slug: 'power', name: 'Power & Energy', description: 'Actuator and governor hydraulics for the hydro cascade and thermal plant.' },
+    { slug: 'mining', name: 'Mining', description: 'Copper and gold development in the south — dust-rated, high-cycle components.' },
+    { slug: 'construction', name: 'Construction', description: 'Excavator, crane and batching-plant hydraulics for road and port works.' },
+    { slug: 'steel', name: 'Steel & Metals', description: 'Cylinders and valves for forming and fabrication lines.' },
+  ],
+  faqs: [
+    { question: 'Do you have a branch in Ecuador?', answer: 'No. Ecuador is supplied from our Dubai warehouse, round the Cape and through the Panama Canal into Guayaquil.' },
+    {
+      question: 'What is INEN and why does it matter more here?',
+      answer:
+        'INEN is Ecuador’s standards body, and the country applies conformity requirements across a broader list than Chile or Peru. A line that clears those markets without a certificate can need one here, so the part list has to be assessed against the Ecuadorian list specifically rather than assumed from a neighbour.',
+    },
+    { question: 'Why does it take six or seven weeks?', answer: 'Because the Pacific coast is reached round the Cape of Good Hope and then through the Panama Canal. It is distance, not documentation, and the certification work costs nothing in time if it runs while the order is picked.' },
+    { question: 'What currency do you quote in?', answer: 'USD — which is also Ecuador’s own currency, so there is no conversion anywhere in the transaction.' },
+    { question: 'Can you deliver to the Oriente fields?', answer: 'Yes, on DAP terms to the base at Lago Agrio, Coca or Shushufindi. The leg over the cordillera and into the Oriente is quoted rather than estimated.' },
+    { question: 'Guayaquil or Posorja?', answer: 'Guayaquil for most cargo. Posorja where the deep-water berth suits the vessel or the sailing schedule is better; it is a short road leg from there.' },
+    { question: 'What language do the documents need to be in?', answer: 'Spanish, with the description agreeing across the invoice, the packing list and the declaration.' },
+    { question: 'Can you supply API-monogrammed equipment?', answer: 'Yes. API 6A wellhead, API 16A BOP, API 16C choke and kill and API 7K drilling hose, with NACE MR0175 material documentation where the contract requires it.' },
+  ],
+  compliance: {
+    heading: 'A broader conformity list than its neighbours',
+    body:
+      'The mistake to avoid on this lane is assuming Ecuador behaves like Chile or Peru because it sits on the same coast and the same sailing. It does not. Ecuador applies INEN technical regulations across a broader list of products, and a line that clears Callao or San Antonio on a plain declaration can require a certificate of conformity here. That certificate is obtained at origin before shipment, so discovering the requirement at the pier means the goods sit while it is arranged six weeks from home. We assess the part list against the Ecuadorian list specifically at quotation, and say which lines are affected. Everything else is straightforward: a customs declaration in Spanish, an attested certificate of origin, and no currency question at all — the country is dollarised, so the quote and the settlement are the same money.',
+    documents: [
+      { ref: 'INEN', name: 'Certificate of conformity, where the line is regulated', issuer: 'INEN or an accredited body', when: 'At quotation, per product' },
+      { ref: 'DAI', name: 'Customs import declaration', issuer: 'The importer, through SENAE', when: 'Before arrival' },
+      { ref: 'COO', name: 'Certificate of Origin', issuer: 'Dubai Chamber attested', when: 'Before dispatch' },
+      { ref: 'PL', name: 'Packing list in Spanish, matching the declaration', issuer: 'Us, at dispatch', when: 'Before the vessel sails' },
+      { ref: 'MTC', name: 'Material and test certificates', issuer: 'Mill, or our test bench', when: 'Where the order calls for them' },
+    ],
+  },
+}
+
+const ARGENTINA: MarketPage = {
+  slug: 'argentina',
+  regulatoryCopy: 'unverified',
+  released: false,
+  lane: 'DXB → AR',
+  dialCode: '+54',
+  currency: 'USD',
+  lede: 'Argentina is the market on this network where the licensing regime moves faster than the freight. Containers round the Cape and cross the South Atlantic to Buenos Aires in about six weeks; what has to be confirmed before any of that is the current state of the import authorisation and the foreign-exchange approval, because both have changed more than once inside a single shipping cycle. We check where they stand at quotation rather than quoting against how they worked last year.',
+  facts: [
+    { label: 'Typical transit', value: 'Typically 35–45 days by sea from dispatch' },
+    {
+      label: 'Freight',
+      value:
+        'Sea freight from Jebel Ali round the Cape to Buenos Aires · Bahía Blanca and Rosario for bulk and the river ports · Air freight into Buenos Aires where the schedule is tighter',
+    },
+    { label: 'Incoterms 2020', value: 'CIF Buenos Aires · DAP to the buyer’s site · FOB Jebel Ali · EXW Dubai for a nominated forwarder' },
+    {
+      label: 'Documentation',
+      value:
+        'Import authorisation, current regime confirmed at quotation · Foreign-exchange approval for the payment · Certificate of Origin, Dubai Chamber attested · Documents in Spanish',
+    },
+  ],
+  manifest: [
+    { label: 'Origin', value: 'Jebel Ali · Dubai' },
+    { label: 'Primary mode', value: 'Sea, via the Cape' },
+    { label: 'Port of entry', value: 'Buenos Aires' },
+    { label: 'Transit', value: '35–45 days' },
+    { label: 'Quoted in', value: 'USD' },
+    { label: 'Docs prepared', value: 'Before the vessel sails' },
+  ],
+  map: {
+    geoNames: ['Argentina'],
+    fit: 'crossing',
+    origin: [55.03, 25.01],
+    originLabel: 'JEBEL ALI · DXB',
+    crossing: { name: 'BUENOS AIRES · PORT', coords: [-58.37, -34.6], legend: 'Port of entry', dx: -11, dy: 8, anchor: 'end' },
+    routes: [
+      { mode: 'SEA · CAPE', primary: true, points: leg(CAPE_TO_SOUTH_ATLANTIC, [-30.0, -30.0], [-45.0, -34.0], [-55.0, -35.0], [-58.37, -34.6]) },
+      { mode: 'AIR', points: leg(SOUTH_AMERICA_AIR, [-45.0, -25.0], [-58.54, -34.82]) },
+    ],
+  },
+  freight: [
+    { name: 'Sea, FCL', transit: '35–45 days', route: 'Jebel Ali to Buenos Aires, via the Cape', useCase: 'Default for most orders' },
+    { name: 'Air freight', transit: '5–8 days', route: 'DXB to EZE, with a connection', useCase: 'When the line is down' },
+    { name: 'Sea, LCL', transit: '42–55 days', route: 'Consolidated, with transhipment', useCase: 'Small mixed orders' },
+  ],
+  orderSteps: {
+    third: 'The current state of the import authorisation and the foreign-exchange approval is confirmed — not assumed from the last shipment — and the file is built to whatever regime is actually in force.',
+    fourth: 'Goods sail from Jebel Ali round the Cape, and you get the paperwork and tracking together.',
+  },
+  cities: [
+    { name: 'Buenos Aires', coords: [-58.38, -34.6], region: 'Buenos Aires', plot: true, dx: 9, dy: 6 },
+    { name: 'La Plata', coords: [-57.95, -34.92], region: 'Buenos Aires' },
+    { name: 'Campana', coords: [-58.96, -34.16], region: 'Buenos Aires' },
+    { name: 'Rosario', coords: [-60.64, -32.94], region: 'Santa Fe', plot: true, dx: -9, dy: -4, anchor: 'end' },
+    { name: 'Bahía Blanca', coords: [-62.27, -38.72], region: 'Buenos Aires', plot: true, dx: -9, dy: 6, anchor: 'end' },
+    { name: 'Córdoba', coords: [-64.18, -31.42], region: 'Córdoba', plot: true, dx: -9, dy: -4, anchor: 'end' },
+    { name: 'Mendoza', coords: [-68.84, -32.89], region: 'Mendoza', plot: true, dx: 9, dy: -4 },
+    { name: 'Neuquén', coords: [-68.06, -38.95], region: 'Neuquén', plot: true, dx: 9, dy: -4 },
+    { name: 'Añelo', coords: [-68.79, -38.35], region: 'Neuquén' },
+    { name: 'Comodoro Rivadavia', coords: [-67.5, -45.86], region: 'Chubut', plot: true, dx: 9, dy: 4 },
+    { name: 'Río Gallegos', coords: [-69.22, -51.62], region: 'Santa Cruz' },
+    { name: 'San Juan', coords: [-68.54, -31.54], region: 'San Juan' },
+    { name: 'Salta', coords: [-65.41, -24.79], region: 'Salta', plot: true, dx: 9, dy: 4 },
+    { name: 'Tucumán', coords: [-65.22, -26.83], region: 'Tucumán' },
+    { name: 'Zárate', coords: [-59.03, -34.1], region: 'Buenos Aires' },
+    { name: 'Ushuaia', coords: [-68.3, -54.8], region: 'Tierra del Fuego' },
+  ],
+  sectors: [
+    { slug: 'oil-gas', name: 'Oil & Gas', description: 'Vaca Muerta support at Añelo and Neuquén, and the Comodoro Rivadavia and Campana operations.' },
+    { slug: 'mining', name: 'Mining', description: 'Lithium and copper in the north-west — dust-rated, high-cycle components rated for altitude.' },
+    { slug: 'construction', name: 'Construction', description: 'Excavator, crane and batching-plant hydraulics for infrastructure and well-pad development.' },
+    { slug: 'power', name: 'Power & Energy', description: 'Actuator and governor hydraulics for hydro, thermal and wind plant.' },
+    { slug: 'steel', name: 'Steel & Metals', description: 'High-force cylinders and servo valves for the Campana and Rosario rolling lines.' },
+    { slug: 'marine', name: 'Marine & Offshore', description: 'Deck machinery and vessel hydraulics for the Atlantic fishing and port fleet.' },
+  ],
+  faqs: [
+    { question: 'Do you have a branch in Argentina?', answer: 'No. Argentina is supplied from our Dubai warehouse, round the Cape of Good Hope into Buenos Aires.' },
+    {
+      question: 'What is the position on import licensing?',
+      answer:
+        'It changes, and we will not publish a description that ages badly. The authorisation regime and the foreign-exchange approval that pays for the goods have both been revised more than once inside a single shipping cycle. We confirm where both stand at quotation and build the file to the regime actually in force.',
+    },
+    { question: 'Can you quote before the authorisation is in place?', answer: 'Yes, and we will say plainly that the quotation is subject to it. What we will not do is ship against an authorisation nobody has checked and leave the consignment sitting at Buenos Aires.' },
+    { question: 'How long does the sea leg take?', answer: 'Five to six weeks round the Cape. That part is predictable; the licensing is the variable, which is the reverse of most markets on this network.' },
+    { question: 'Can you deliver to Vaca Muerta?', answer: 'Yes, on DAP terms to the pad or the base at Añelo or Neuquén. The road leg from Buenos Aires is long and it is quoted rather than estimated.' },
+    { question: 'What currency do you quote in?', answer: 'USD. The foreign-exchange approval is raised against the dollar value, so quoting in anything else adds a step at your bank.' },
+    { question: 'What language do the documents need to be in?', answer: 'Spanish, with the description agreeing across the invoice, the packing list and the declaration.' },
+    { question: 'Can you supply API-monogrammed equipment?', answer: 'Yes. API 6A wellhead, API 16A BOP, API 16C choke and kill and API 7K drilling hose, with NACE MR0175 material documentation where the contract requires it.' },
+  ],
+  compliance: {
+    heading: 'The regime is the variable, not the freight',
+    body:
+      'Almost every market page on this site treats the paperwork as the predictable half and the freight as the estimate. Argentina inverts that. Five to six weeks round the Cape is reliable; what is not is the state of the import authorisation regime and the foreign-exchange approval that pays for the goods, both of which have been revised more than once inside a single shipping cycle. Publishing a description of how they work would produce a page that is confidently wrong within months, so this one does not. What we do instead is check where both stand at the point of quotation, tell you plainly, and build the file to whatever is actually in force. A quotation may be issued subject to an authorisation not yet granted — we will say so — but we will not load a container against a regime nobody has confirmed and leave it sitting at Buenos Aires while it is sorted out.',
+    documents: [
+      { ref: 'AUTH', name: 'Import authorisation under the current regime', issuer: 'The importer, confirmed at quotation', when: 'Before anything else' },
+      { ref: 'FX', name: 'Foreign-exchange approval for the payment', issuer: 'The importer, through their bank', when: 'Before the vessel sails' },
+      { ref: 'DECL', name: 'Customs import declaration', issuer: 'The importer, through Aduana', when: 'Before arrival' },
+      { ref: 'COO', name: 'Certificate of Origin', issuer: 'Dubai Chamber attested', when: 'Before dispatch' },
+      { ref: 'MTC', name: 'Material and test certificates', issuer: 'Mill, or our test bench', when: 'Where the order calls for them' },
+    ],
+  },
+}
+
+const SURINAME: MarketPage = {
+  slug: 'suriname',
+  regulatoryCopy: 'unverified',
+  released: false,
+  lane: 'DXB → SR',
+  dialCode: '+597',
+  lede: 'Suriname is the quieter half of the Guyana Basin story and it is at an earlier stage. Offshore appraisal work is pulling in a supply chain that barely existed, and Paramaribo is reached by the same transhipped Caribbean feeder that serves Georgetown. The import regime is light and Dutch is the language of the file, which is unusual on this network and worth getting right rather than translating late.',
+  currency: 'USD',
+  facts: [
+    { label: 'Typical transit', value: 'Typically 35–45 days by sea from dispatch' },
+    {
+      label: 'Freight',
+      value:
+        'Sea freight from Jebel Ali round the Cape, transhipped through Trinidad or a Caribbean hub, to Paramaribo · Air freight into Paramaribo where the schedule is tighter, with at least one connection',
+    },
+    { label: 'Incoterms 2020', value: 'CIF Paramaribo · DAP to the buyer’s site or shore base · FOB Jebel Ali · EXW Dubai for a nominated forwarder' },
+    {
+      label: 'Documentation',
+      value: 'Customs declaration raised by the importer · Documents in Dutch or English · Certificate of Origin, Dubai Chamber attested · Material and test certificates where the operator’s specification calls for them',
+    },
+  ],
+  manifest: [
+    { label: 'Origin', value: 'Jebel Ali · Dubai' },
+    { label: 'Primary mode', value: 'Sea, transhipped' },
+    { label: 'Port of entry', value: 'Paramaribo' },
+    { label: 'Transit', value: '35–45 days' },
+    { label: 'Quoted in', value: 'USD' },
+    { label: 'Docs prepared', value: 'Before the vessel sails' },
+  ],
+  map: {
+    geoNames: ['Suriname'],
+    fit: 'crossing',
+    origin: [55.03, 25.01],
+    originLabel: 'JEBEL ALI · DXB',
+    crossing: { name: 'PARAMARIBO · PORT', coords: [-55.17, 5.85], legend: 'Port of entry', dx: 11, dy: -8, anchor: 'start' },
+    routes: [
+      { mode: 'SEA · TRANSHIP', primary: true, points: leg(CAPE_TO_SOUTH_ATLANTIC, [-32.0, -12.0], [-38.0, -2.0], [-48.0, 4.0], [-53.0, 6.5], [-55.17, 5.85]) },
+      { mode: 'AIR', points: leg(SOUTH_AMERICA_AIR, [-45.0, 0.0], [-55.19, 5.45]) },
+    ],
+  },
+  freight: [
+    { name: 'Sea, FCL', transit: '35–45 days', route: 'Jebel Ali to Paramaribo, transhipped', useCase: 'Default when planned ahead' },
+    { name: 'Air freight', transit: '5–9 days', route: 'DXB to PBM, with at least one connection', useCase: 'When the line is down' },
+    { name: 'Sea, LCL', transit: '42–55 days', route: 'Consolidated, with two transhipments', useCase: 'Small mixed orders' },
+  ],
+  orderSteps: {
+    third: 'The specification is confirmed line by line against the operator’s requirement, and the documents are prepared in the language the file will actually be read in.',
+    fourth: 'Goods sail from Jebel Ali and tranship for Paramaribo, and you get the paperwork and tracking together.',
+  },
+  cities: [
+    { name: 'Paramaribo', coords: [-55.17, 5.85], region: 'Paramaribo' },
+    { name: 'Nieuw Nickerie', coords: [-56.97, 5.94], region: 'Nickerie', plot: true, dx: -9, dy: -4, anchor: 'end' },
+    { name: 'Wanica', coords: [-55.24, 5.73], region: 'Wanica' },
+    { name: 'Lelydorp', coords: [-55.23, 5.7], region: 'Wanica', plot: true, dx: -9, dy: 6, anchor: 'end' },
+    { name: 'Moengo', coords: [-54.4, 5.61], region: 'Marowijne', plot: true, dx: 9, dy: 6 },
+    { name: 'Albina', coords: [-54.05, 5.5], region: 'Marowijne', plot: true, dx: 9, dy: -4 },
+    { name: 'Nieuw Amsterdam', coords: [-55.09, 5.88], region: 'Commewijne' },
+    { name: 'Groningen', coords: [-55.47, 5.8], region: 'Saramacca' },
+    { name: 'Onverwacht', coords: [-55.19, 5.59], region: 'Para', plot: true, dx: 9, dy: 8 },
+    { name: 'Zanderij', coords: [-55.19, 5.45], region: 'Para' },
+    { name: 'Brokopondo', coords: [-54.97, 5.06], region: 'Brokopondo', plot: true, dx: -9, dy: 6, anchor: 'end' },
+    { name: 'Apoera', coords: [-57.19, 5.16], region: 'Sipaliwini', plot: true, dx: -9, dy: 4, anchor: 'end' },
+  ],
+  sectors: [
+    { slug: 'oil-gas', name: 'Oil & Gas', description: 'Offshore appraisal and development support, and the Paramaribo shore-base build-out.' },
+    { slug: 'mining', name: 'Mining', description: 'Gold and bauxite in the interior — dust-rated, high-cycle components.' },
+    { slug: 'marine', name: 'Marine & Offshore', description: 'Deck machinery and vessel hydraulics for the offshore support and river fleet.' },
+    { slug: 'power', name: 'Power & Energy', description: 'Actuator and governor hydraulics for the Brokopondo hydro and diesel generation.' },
+    { slug: 'construction', name: 'Construction', description: 'Excavator, crane and batching-plant hydraulics for shore base and road works.' },
+    { slug: 'steel', name: 'Steel & Metals', description: 'Cylinders and valves for fabrication and workshop equipment.' },
+  ],
+  faqs: [
+    { question: 'Do you have a branch in Suriname?', answer: 'No. Suriname is supplied from our Dubai warehouse, transhipped into Paramaribo.' },
+    { question: 'Why would we buy from Dubai rather than Trinidad?', answer: 'For anything urgent, you should not — Trinidad is closer and that is the honest answer. What we compete on is the planned order: hose, fittings and valve consumables held as real stock, quoted against a specification and shipped once.' },
+    { question: 'What certification do we need?', answer: 'There is no general pre-shipment conformity scheme. What matters is the operator’s specification — API monogram, NACE MR0175 material documentation, mill certificates — confirmed at quotation.' },
+    { question: 'What language do the documents need to be in?', answer: 'Dutch or English are both workable. We issue in English and make sure the description is one a Dutch-language declaration can carry without a translator inventing a term.' },
+    { question: 'How far ahead do we need to order?', answer: 'Five to seven weeks for the sea lane. That is the whole reason to use it — planned consumables at a fraction of what the same parts cost arriving against a rig date.' },
+    { question: 'Can you deliver to the shore base?', answer: 'Yes, on DAP terms to the base gate at Paramaribo. The leg beyond the port is short and it is priced, not estimated.' },
+    { question: 'What currency do you quote in?', answer: 'USD, which is what the offshore supply contracts here are written in.' },
+    { question: 'Can you supply API-monogrammed equipment?', answer: 'Yes. API 6A wellhead, API 16A BOP, API 16C choke and kill and API 7K drilling hose, with NACE MR0175 material documentation where the contract requires it.' },
+  ],
+  compliance: {
+    heading: 'An earlier stage of the same story',
+    body:
+      'Suriname sits in the same offshore basin as Guyana and is a few years behind it. The supply chain is correspondingly thinner, the operator specifications are just as strict, and the import regime is light — a customs declaration against the invoice and packing list, an attested certificate of origin, and no general pre-shipment conformity scheme. Two things are worth planning around. The first is the language: the file is read in Dutch, and a description that has to be translated at the pier by someone guessing at a technical term is a description that gets queried. We write one that carries. The second is the schedule: Paramaribo is fed by the same transhipped Caribbean feeder that serves Georgetown, so this is a lane that rewards ordering against the drilling programme rather than against a failure.',
+    documents: [
+      { ref: 'DECL', name: 'Customs import declaration', issuer: 'The importer, through Douane Suriname', when: 'Before arrival' },
+      { ref: 'COO', name: 'Certificate of Origin', issuer: 'Dubai Chamber attested', when: 'Before dispatch' },
+      { ref: 'MTC', name: 'Material and test certificates', issuer: 'Mill, or our test bench', when: 'Where the specification calls for them' },
+      { ref: 'API', name: 'Monogram and licence documentation', issuer: 'The manufacturer', when: 'At quotation, per product' },
+      { ref: 'BL', name: 'Bill of lading or air waybill', issuer: 'The carrier', when: 'On dispatch' },
+    ],
+  },
+}
+
+const BOLIVIA: MarketPage = {
+  slug: 'bolivia',
+  regulatoryCopy: 'unverified',
+  released: false,
+  lane: 'DXB → BO',
+  dialCode: '+591',
+  currency: 'USD',
+  lede: 'Bolivia is landlocked, mining-anchored and reached through Chile, which makes the Chilean transit file half the job. Containers discharge at Arica or Iquique and climb to Tambo Quemado at four thousand five hundred metres before they are anywhere near a Bolivian customs office. Altitude is not a detail here — it is where the goods work, and seal compounds and cooling behave differently at that height whatever the part number says.',
+  facts: [
+    { label: 'Typical transit', value: 'Typically 45–58 days from dispatch, sea and road combined' },
+    {
+      label: 'Freight',
+      value:
+        'Sea freight from Jebel Ali round the Cape and through the Panama Canal to Arica or Iquique, then bonded road over Tambo Quemado · Air freight into Santa Cruz or La Paz where the schedule is tighter',
+    },
+    { label: 'Incoterms 2020', value: 'DAP to the buyer’s site · CIF Arica · FOB Jebel Ali · EXW Dubai for a nominated forwarder' },
+    {
+      label: 'Documentation',
+      value:
+        'Chilean transit documents for the bonded move · Bolivian customs declaration raised by the importer · Certificate of Origin, Dubai Chamber attested · Documents in Spanish',
+    },
+  ],
+  manifest: [
+    { label: 'Origin', value: 'Jebel Ali · Dubai' },
+    { label: 'Primary mode', value: 'Sea + road' },
+    { label: 'Border crossing', value: 'Tambo Quemado · Chungará' },
+    { label: 'Transit', value: '45–58 days' },
+    { label: 'Quoted in', value: 'USD' },
+    { label: 'Docs prepared', value: 'Before the vessel sails' },
+  ],
+  map: {
+    geoNames: ['Bolivia'],
+    fit: 'crossing',
+    origin: [55.03, 25.01],
+    originLabel: 'JEBEL ALI · DXB',
+    crossing: { name: 'TAMBO QUEMADO', coords: [-69.03, -18.27], dx: -11, dy: 8, anchor: 'end' },
+    routes: [
+      {
+        mode: 'SEA + ROAD',
+        primary: true,
+        points: leg(CAPE_TO_SOUTH_ATLANTIC, [-32.0, -12.0], [-42.0, 0.0], [-62.0, 10.0], [-77.0, 9.5], [-79.5, 8.0], [-82.0, 0.0], [-78.0, -12.0], [-70.31, -18.48], [-69.03, -18.27]),
+      },
+      { mode: 'AIR', points: leg(SOUTH_AMERICA_AIR, [-45.0, -14.0], [-63.14, -17.65]) },
+    ],
+  },
+  freight: [
+    { name: 'Sea + road', transit: '45–58 days', route: 'Arica or Iquique, then bonded over Tambo Quemado', useCase: 'Default for most orders' },
+    { name: 'Air freight', transit: '6–10 days', route: 'DXB to VVI or LPB, with connections', useCase: 'When the line is down' },
+    { name: 'Sea + road, LCL', transit: '52–68 days', route: 'Consolidated to Arica, then road', useCase: 'Small mixed orders' },
+  ],
+  orderSteps: {
+    third: 'The Chilean transit documents for the bonded move are raised alongside the Bolivian declaration, and the site altitude is confirmed so the specification is checked against it.',
+    fourth: 'Goods sail to Arica and climb over Tambo Quemado, and you get the paperwork and tracking together.',
+  },
+  cities: [
+    { name: 'Santa Cruz', coords: [-63.18, -17.78], region: 'Santa Cruz', plot: true, dx: 9, dy: 4 },
+    { name: 'La Paz', coords: [-68.15, -16.5], region: 'La Paz', plot: true, dx: -9, dy: -4, anchor: 'end' },
+    { name: 'El Alto', coords: [-68.19, -16.5], region: 'La Paz' },
+    { name: 'Oruro', coords: [-67.11, -17.98], region: 'Oruro', plot: true, dx: 9, dy: -4 },
+    { name: 'Cochabamba', coords: [-66.16, -17.39], region: 'Cochabamba', plot: true, dx: 9, dy: -5 },
+    { name: 'Potosí', coords: [-65.75, -19.59], region: 'Potosí', plot: true, dx: 9, dy: 4 },
+    { name: 'Sucre', coords: [-65.26, -19.03], region: 'Chuquisaca' },
+    { name: 'Tarija', coords: [-64.73, -21.53], region: 'Tarija', plot: true, dx: 9, dy: 4 },
+    { name: 'Uyuni', coords: [-66.83, -20.46], region: 'Potosí', plot: true, dx: -9, dy: 6, anchor: 'end' },
+    { name: 'San Cristóbal', coords: [-67.18, -21.12], region: 'Potosí' },
+    { name: 'Montero', coords: [-63.25, -17.34], region: 'Santa Cruz' },
+    { name: 'Yacuiba', coords: [-63.64, -22.02], region: 'Tarija' },
+  ],
+  sectors: [
+    { slug: 'mining', name: 'Mining', description: 'Silver, zinc, tin and lithium across the altiplano — dust-rated, high-cycle components rated for altitude.' },
+    { slug: 'oil-gas', name: 'Oil & Gas', description: 'Gas field and compressor-station support in Tarija and the southern basin.' },
+    { slug: 'power', name: 'Power & Energy', description: 'Actuator and governor hydraulics for hydro, gas and thermal generation.' },
+    { slug: 'construction', name: 'Construction', description: 'Excavator, crane and batching-plant hydraulics for road and mine development.' },
+    { slug: 'steel', name: 'Steel & Metals', description: 'Cylinders and valves for smelter, concentrator and forming lines.' },
+    { slug: 'marine', name: 'Marine & Offshore', description: 'Winch and deck hydraulics for river barge and lifting equipment.' },
+  ],
+  faqs: [
+    { question: 'Do you have a branch in Bolivia?', answer: 'No. Bolivia is supplied from our Dubai warehouse, by sea to Arica or Iquique in Chile and then under bond over Tambo Quemado.' },
+    { question: 'Why is this the longest lane you run?', answer: 'Because it is the Pacific lane plus a mountain. Six weeks by sea round the Cape and through the Panama Canal, then a bonded road leg that climbs to four and a half thousand metres before it reaches a Bolivian customs office.' },
+    { question: 'What certification do we need?', answer: 'There is no general pre-shipment conformity scheme for industrial hose and fittings. The file that matters is the transit file — the Chilean documents for the bonded move and the Bolivian declaration, which have to agree line for line.' },
+    {
+      question: 'Does altitude change what you supply?',
+      answer:
+        'It changes what we recommend, and it should. Most Bolivian industrial sites sit between three and four and a half thousand metres. Seal compounds, cooling capacity and cycle life all behave differently up there. Tell us the site at quotation and we will flag where a standard specification is the wrong choice.',
+    },
+    { question: 'Arica or Iquique?', answer: 'Whichever has the better sailing for the order. Both feed the same road over Tambo Quemado, so the choice is schedule rather than geography.' },
+    { question: 'Can you deliver to the mine sites?', answer: 'Yes, on DAP terms to the mine gate. The leg beyond Oruro or Potosí is quoted rather than estimated — these are real roads at real altitude.' },
+    { question: 'What currency do you quote in?', answer: 'USD. It is what mining supply contracts here are written in and it avoids a second conversion at the Chilean transit stage.' },
+    { question: 'Is it worth batching orders?', answer: 'Strongly. On a lane this long a single consolidated consignment under one transit declaration lands far better than several small ones each carrying their own border risk.' },
+  ],
+  compliance: {
+    heading: 'A Chilean transit file, then four and a half thousand metres',
+    body:
+      'Bolivia is landlocked and served through Chile, so every consignment carries two customs files. The goods discharge at Arica or Iquique and travel under Chilean bond to Tambo Quemado, where the Bolivian entry is made; the two documents describe the same cargo and must agree line for line, because a discrepancy stops the truck at a border post at four and a half thousand metres rather than at either customs office. Neither country applies a general pre-shipment conformity scheme to industrial hose and fittings, so there is nothing to certify before the goods move. The other half of this page is the altitude itself, and it is a specification question rather than a logistics one: most Bolivian industrial sites sit above three thousand metres, where seal compounds, cooling capacity and cycle life all behave differently from the datasheet. We would rather be told the site and flag it than supply exactly to the part number and be right on paper.',
+    documents: [
+      { ref: 'TRANSIT', name: 'Chilean transit declaration for the bonded move', issuer: 'The forwarder, at Arica or Iquique', when: 'Before the road leg' },
+      { ref: 'DUI', name: 'Bolivian customs import declaration', issuer: 'The importer, through Aduana Nacional', when: 'Before arrival at the border' },
+      { ref: 'COO', name: 'Certificate of Origin', issuer: 'Dubai Chamber attested', when: 'Before dispatch' },
+      { ref: 'PL', name: 'Packing list in Spanish, matching both declarations', issuer: 'Us, at dispatch', when: 'Before the vessel sails' },
+      { ref: 'MTC', name: 'Material and test certificates', issuer: 'Mill, or our test bench', when: 'Where the mine specification calls for them' },
+    ],
+  },
+}
+
+const PARAGUAY: MarketPage = {
+  slug: 'paraguay',
+  regulatoryCopy: 'unverified',
+  released: false,
+  lane: 'DXB → PY',
+  dialCode: '+595',
+  currency: 'USD',
+  lede: 'Paraguay is landlocked and reached up a river. Containers discharge at Montevideo or Buenos Aires and travel fifteen hundred kilometres north by barge on the Paraná to Asunción, which is slow, cheap and entirely dependent on the water level. In a dry season the barge convoys lighten their loads and the schedule stretches; that is the single most useful thing to know about this lane and it is why we quote the river leg rather than estimating it.',
+  facts: [
+    { label: 'Typical transit', value: 'Typically 45–60 days from dispatch, sea and river combined' },
+    {
+      label: 'Freight',
+      value:
+        'Sea freight from Jebel Ali round the Cape to Montevideo, then barge up the Paraná to Asunción · Buenos Aires where the sailing suits · Road from Montevideo where the river is low · Air freight into Asunción where the schedule is tighter',
+    },
+    { label: 'Incoterms 2020', value: 'DAP to the buyer’s site · CIF Montevideo · FOB Jebel Ali · EXW Dubai for a nominated forwarder' },
+    {
+      label: 'Documentation',
+      value:
+        'Uruguayan or Argentine transit documents for the river leg · Paraguayan customs declaration raised by the importer · Certificate of Origin, Dubai Chamber attested · Documents in Spanish',
+    },
+  ],
+  manifest: [
+    { label: 'Origin', value: 'Jebel Ali · Dubai' },
+    { label: 'Primary mode', value: 'Sea + river' },
+    { label: 'Port of entry', value: 'Asunción · river port' },
+    { label: 'Transit', value: '45–60 days' },
+    { label: 'Quoted in', value: 'USD' },
+    { label: 'Docs prepared', value: 'Before the vessel sails' },
+  ],
+  map: {
+    geoNames: ['Paraguay'],
+    fit: 'crossing',
+    origin: [55.03, 25.01],
+    originLabel: 'JEBEL ALI · DXB',
+    crossing: { name: 'ASUNCIÓN · RIVER PORT', coords: [-57.63, -25.27], legend: 'Port of entry', dx: -11, dy: 10, anchor: 'end' },
+    routes: [
+      {
+        mode: 'SEA + RIVER',
+        primary: true,
+        points: leg(CAPE_TO_SOUTH_ATLANTIC, [-30.0, -30.0], [-45.0, -34.0], [-56.2, -34.9], [-58.3, -34.5], [-58.5, -32.5], [-58.2, -29.0], [-57.9, -27.3], [-57.63, -25.27]),
+      },
+      { mode: 'AIR', points: leg(SOUTH_AMERICA_AIR, [-45.0, -22.0], [-57.52, -25.24]) },
+    ],
+  },
+  freight: [
+    { name: 'Sea + river', transit: '45–60 days', route: 'Montevideo, then barge up the Paraná', useCase: 'Default for most orders' },
+    { name: 'Air freight', transit: '6–9 days', route: 'DXB to ASU, with connections', useCase: 'When the line is down' },
+    { name: 'Sea + road', transit: '42–52 days', route: 'Montevideo, then road', useCase: 'When the river is low' },
+  ],
+  orderSteps: {
+    third: 'The river leg is quoted against the current water level rather than a seasonal average, and the transit documents are raised for whichever routing that produces.',
+    fourth: 'Goods sail to Montevideo and travel north by barge or road, and you get the paperwork and tracking together.',
+  },
+  cities: [
+    { name: 'Asunción', coords: [-57.58, -25.28], region: 'Asunción', plot: true, dx: -9, dy: -4, anchor: 'end' },
+    { name: 'Villeta', coords: [-57.55, -25.51], region: 'Central' },
+    { name: 'San Lorenzo', coords: [-57.51, -25.34], region: 'Central' },
+    { name: 'Ciudad del Este', coords: [-54.61, -25.51], region: 'Alto Paraná', plot: true, dx: 9, dy: 4 },
+    { name: 'Hernandarias', coords: [-54.64, -25.4], region: 'Alto Paraná' },
+    { name: 'Encarnación', coords: [-55.87, -27.33], region: 'Itapúa', plot: true, dx: 9, dy: 6 },
+    { name: 'Concepción', coords: [-57.43, -23.4], region: 'Concepción', plot: true, dx: 9, dy: -4 },
+    { name: 'Pedro Juan Caballero', coords: [-55.73, -22.55], region: 'Amambay', plot: true, dx: 9, dy: -4 },
+    { name: 'Villarrica', coords: [-56.44, -25.75], region: 'Guairá' },
+    { name: 'Coronel Oviedo', coords: [-56.44, -25.44], region: 'Caaguazú' },
+    { name: 'Filadelfia', coords: [-60.55, -22.35], region: 'Boquerón', plot: true, dx: -9, dy: -4, anchor: 'end' },
+    { name: 'Mariscal Estigarribia', coords: [-60.62, -22.03], region: 'Boquerón' },
+  ],
+  sectors: [
+    { slug: 'construction', name: 'Construction', description: 'Excavator, crane and batching-plant hydraulics for road, dam and silo works.' },
+    { slug: 'power', name: 'Power & Energy', description: 'Actuator and governor hydraulics for the Itaipú and Yacyretá hydro plant and their maintenance programmes.' },
+    { slug: 'mining', name: 'Mining', description: 'Dust-rated, high-cycle components for cement, aggregate and lime plant.' },
+    { slug: 'marine', name: 'Marine & Offshore', description: 'Winch, deck and hatch hydraulics for the Paraná barge fleet — the country’s main freight artery.' },
+    { slug: 'steel', name: 'Steel & Metals', description: 'Cylinders and valves for forming, fabrication and processing lines.' },
+    { slug: 'oil-gas', name: 'Oil & Gas', description: 'Fuel terminal and bulk-handling support on the river.' },
+  ],
+  faqs: [
+    { question: 'Do you have a branch in Paraguay?', answer: 'No. Paraguay is supplied from our Dubai warehouse, by sea to Montevideo and then north by barge on the Paraná.' },
+    {
+      question: 'Why does the transit vary so much?',
+      answer:
+        'The river. Barge convoys on the Paraná lighten their loads when the water is low, which stretches the schedule and sometimes moves cargo onto the road instead. We quote the leg against the level at the time rather than a seasonal average that would be wrong half the year.',
+    },
+    { question: 'What certification do we need?', answer: 'There is no general pre-shipment conformity scheme for industrial hose and fittings. The file is the transit documents for the river leg, the Paraguayan declaration and the origin certificate.' },
+    { question: 'Montevideo or Buenos Aires?', answer: 'Whichever has the better sailing and the better barge connection for the week in question. Both feed the same river, so it is a schedule decision rather than a geographic one.' },
+    { question: 'Can you deliver to Ciudad del Este?', answer: 'Yes, on DAP terms. For the eastern border region the road leg from Asunción is straightforward and it is priced, not estimated.' },
+    { question: 'Can you deliver to the Chaco?', answer: 'Yes, to Filadelfia and Mariscal Estigarribia. It is a long road leg across the Chaco and it is quoted rather than estimated, because the surface changes materially with the rain.' },
+    { question: 'What currency do you quote in?', answer: 'USD. It is what import contracts here are written in.' },
+    { question: 'Is it worth batching orders?', answer: 'Yes. On a river lane a single consignment under one transit declaration is far better than several small ones, each of which carries its own barge schedule and its own border risk.' },
+  ],
+  compliance: {
+    heading: 'The river level is the schedule',
+    body:
+      'Paraguay is landlocked and reached up the Paraná, so its lane has a variable no other market on this network has: the water. Containers discharge at Montevideo or Buenos Aires and travel roughly fifteen hundred kilometres north by barge, which is slow and cheap and entirely dependent on the level. In a dry season convoys lighten their loads, the schedule stretches, and cargo sometimes moves to the road instead at a different price. That is not a risk to hide in a transit band — it is the most useful thing a buyer here can be told, so we quote the river leg against the actual level rather than a seasonal average. The paperwork is ordinary by comparison: transit documents for the Uruguayan or Argentine leg, a Paraguayan declaration that has to agree with them line for line, an attested certificate of origin, and no product conformity scheme to satisfy.',
+    documents: [
+      { ref: 'TRANSIT', name: 'Uruguayan or Argentine transit documents for the river leg', issuer: 'The forwarder, at the discharge port', when: 'Before the river leg' },
+      { ref: 'DECL', name: 'Paraguayan customs import declaration', issuer: 'The importer, through Aduanas', when: 'Before arrival' },
+      { ref: 'COO', name: 'Certificate of Origin', issuer: 'Dubai Chamber attested', when: 'Before dispatch' },
+      { ref: 'PL', name: 'Packing list in Spanish, matching both declarations', issuer: 'Us, at dispatch', when: 'Before the vessel sails' },
+      { ref: 'MTC', name: 'Material and test certificates', issuer: 'Mill, or our test bench', when: 'Where the order calls for them' },
+    ],
+  },
+}
+
+const URUGUAY: MarketPage = {
+  slug: 'uruguay',
+  regulatoryCopy: 'unverified',
+  released: false,
+  lane: 'DXB → UY',
+  dialCode: '+598',
+  currency: 'USD',
+  lede: 'Uruguay is a small market with a disproportionately useful port. Montevideo is the entry for its own industry and the transhipment point for a great deal of Paraguayan and Bolivian cargo, and the free-port regime is why: goods can sit, be consolidated and be re-dispatched without entering the country’s customs territory. For a buyer here that means a light import file. For a buyer further up the river it means Montevideo is where a consignment is put together.',
+  facts: [
+    { label: 'Typical transit', value: 'Typically 33–42 days by sea from dispatch' },
+    {
+      label: 'Freight',
+      value:
+        'Sea freight from Jebel Ali round the Cape to Montevideo · Nueva Palmira for river-bound cargo · Air freight into Montevideo where the schedule is tighter',
+    },
+    { label: 'Incoterms 2020', value: 'CIF Montevideo · DAP to the buyer’s site · FOB Jebel Ali · EXW Dubai for a nominated forwarder' },
+    {
+      label: 'Documentation',
+      value:
+        'Customs declaration raised by the importer · Free-port storage documentation where the cargo is transhipping · Certificate of Origin, Dubai Chamber attested · Documents in Spanish',
+    },
+  ],
+  manifest: [
+    { label: 'Origin', value: 'Jebel Ali · Dubai' },
+    { label: 'Primary mode', value: 'Sea, via the Cape' },
+    { label: 'Port of entry', value: 'Montevideo' },
+    { label: 'Transit', value: '33–42 days' },
+    { label: 'Quoted in', value: 'USD' },
+    { label: 'Docs prepared', value: 'Before the vessel sails' },
+  ],
+  map: {
+    geoNames: ['Uruguay'],
+    fit: 'crossing',
+    origin: [55.03, 25.01],
+    originLabel: 'JEBEL ALI · DXB',
+    crossing: { name: 'MONTEVIDEO · PORT', coords: [-56.21, -34.9], legend: 'Port of entry', dx: 11, dy: 10, anchor: 'start' },
+    routes: [
+      { mode: 'SEA · CAPE', primary: true, points: leg(CAPE_TO_SOUTH_ATLANTIC, [-30.0, -30.0], [-45.0, -34.0], [-53.0, -35.5], [-56.21, -34.9]) },
+      { mode: 'AIR', points: leg(SOUTH_AMERICA_AIR, [-45.0, -28.0], [-56.03, -34.84]) },
+    ],
+  },
+  freight: [
+    { name: 'Sea, FCL', transit: '33–42 days', route: 'Jebel Ali to Montevideo, via the Cape', useCase: 'Default for most orders' },
+    { name: 'Air freight', transit: '5–8 days', route: 'DXB to MVD, with a connection', useCase: 'When the line is down' },
+    { name: 'Sea, LCL', transit: '40–52 days', route: 'Consolidated, with transhipment', useCase: 'Small mixed orders' },
+  ],
+  orderSteps: {
+    third: 'Where the cargo is transhipping onward the free-port documentation is arranged so it never enters customs territory; where it is staying, the ordinary declaration is prepared.',
+    fourth: 'Goods sail from Jebel Ali round the Cape, and you get the paperwork and tracking together.',
+  },
+  cities: [
+    { name: 'Montevideo', coords: [-56.19, -34.9], region: 'Montevideo', plot: true, dx: 9, dy: 6 },
+    { name: 'Nueva Palmira', coords: [-58.41, -33.88], region: 'Colonia', plot: true, dx: -9, dy: -4, anchor: 'end' },
+    { name: 'Colonia del Sacramento', coords: [-57.84, -34.47], region: 'Colonia' },
+    { name: 'Fray Bentos', coords: [-58.3, -33.13], region: 'Río Negro', plot: true, dx: -9, dy: -4, anchor: 'end' },
+    { name: 'Paysandú', coords: [-58.08, -32.32], region: 'Paysandú', plot: true, dx: -9, dy: -4, anchor: 'end' },
+    { name: 'Salto', coords: [-57.96, -31.39], region: 'Salto', plot: true, dx: -9, dy: -4, anchor: 'end' },
+    { name: 'Rivera', coords: [-55.55, -30.9], region: 'Rivera', plot: true, dx: 9, dy: -4 },
+    { name: 'Canelones', coords: [-56.28, -34.52], region: 'Canelones' },
+    { name: 'La Paz', coords: [-56.22, -34.76], region: 'Canelones' },
+    { name: 'Punta del Este', coords: [-54.95, -34.95], region: 'Maldonado', plot: true, dx: 9, dy: 8 },
+    { name: 'Durazno', coords: [-56.52, -33.38], region: 'Durazno' },
+    { name: 'Tacuarembó', coords: [-55.98, -31.71], region: 'Tacuarembó' },
+  ],
+  sectors: [
+    { slug: 'marine', name: 'Marine & Offshore', description: 'Deck machinery, winch and terminal hydraulics for the Montevideo port and the river fleet.' },
+    { slug: 'power', name: 'Power & Energy', description: 'Actuator and governor hydraulics for hydro, thermal and wind generation.' },
+    { slug: 'construction', name: 'Construction', description: 'Excavator, crane and batching-plant hydraulics for infrastructure and mill projects.' },
+    { slug: 'steel', name: 'Steel & Metals', description: 'Cylinders and valves for forming and fabrication lines.' },
+    { slug: 'mining', name: 'Mining', description: 'Dust-rated, high-cycle components for cement, aggregate and quarry plant.' },
+    { slug: 'oil-gas', name: 'Oil & Gas', description: 'Refinery and terminal support at La Teja and the coastal storage.' },
+  ],
+  faqs: [
+    { question: 'Do you have a branch in Uruguay?', answer: 'No. Uruguay is supplied from our Dubai warehouse, round the Cape of Good Hope into Montevideo.' },
+    {
+      question: 'What is the free-port regime and does it help us?',
+      answer:
+        'It lets goods be stored, consolidated and re-dispatched at Montevideo without entering Uruguayan customs territory. If your cargo is staying it makes no difference. If it is going on to Paraguay or Bolivia it is the reason Montevideo is worth using at all.',
+    },
+    { question: 'What certification do we need?', answer: 'There is no general pre-shipment conformity scheme for industrial hose and fittings. The file is the declaration, the invoice and packing list, and the origin certificate.' },
+    { question: 'Can you consolidate here for onward shipment?', answer: 'Yes, and it is often the right answer for the river markets. A consignment assembled under free-port storage and dispatched once travels better than several small ones arriving separately.' },
+    { question: 'Montevideo or Nueva Palmira?', answer: 'Montevideo for almost everything. Nueva Palmira where the cargo is river-bound and the barge connection there is better than trucking from the capital.' },
+    { question: 'What language do the documents need to be in?', answer: 'Spanish, with the description agreeing across the invoice, the packing list and the declaration.' },
+    { question: 'What currency do you quote in?', answer: 'USD. It is what import and transhipment contracts here are written in.' },
+    { question: 'Do you crimp assemblies to length?', answer: 'Yes, in Dubai, pressure-tested and tagged before packing. Send bore, thread and pressure, or a photo of the failed assembly, plus the length between fitting faces.' },
+  ],
+  compliance: {
+    heading: 'A light file, and a port that works for other people’s cargo',
+    body:
+      'Uruguay applies no general pre-shipment conformity scheme to industrial hose and fittings, so a consignment staying here clears on a short file: a declaration against the invoice and packing list, in Spanish, with an attested certificate of origin. What makes Montevideo worth more than its own market size is the free-port regime. Goods can be landed, stored, consolidated and re-dispatched without entering Uruguayan customs territory at all, which is why a great deal of Paraguayan and Bolivian cargo is assembled here rather than shipped piecemeal up the river. If your consignment is transhipping, say so at quotation: the documentation is different from the outset, and a consignment declared for import and then re-exported is a far more expensive way to reach the same place.',
+    documents: [
+      { ref: 'DUA', name: 'Customs import declaration', issuer: 'The importer, through Aduanas', when: 'Before arrival' },
+      { ref: 'FREE', name: 'Free-port storage documentation, where transhipping', issuer: 'The port operator', when: 'On arrival' },
+      { ref: 'COO', name: 'Certificate of Origin', issuer: 'Dubai Chamber attested', when: 'Before dispatch' },
+      { ref: 'PL', name: 'Packing list in Spanish, matching the declaration', issuer: 'Us, at dispatch', when: 'Before the vessel sails' },
+      { ref: 'MTC', name: 'Material and test certificates', issuer: 'Mill, or our test bench', when: 'Where the order calls for them' },
+    ],
+  },
+}
+
+
 export const MARKET_PAGE_RECORDS_2: readonly MarketPage[] = [
   SINGAPORE,
   MALAYSIA,
@@ -1787,4 +2957,15 @@ export const MARKET_PAGE_RECORDS_2: readonly MarketPage[] = [
   GUYANA,
   CHILE,
   PERU,
+  COLOMBIA,
+  ECUADOR,
+  ARGENTINA,
+  SURINAME,
+  BOLIVIA,
+  PARAGUAY,
+  URUGUAY,
+  GEORGIA,
+  ARMENIA,
+  MOLDOVA,
+  UKRAINE,
 ]
