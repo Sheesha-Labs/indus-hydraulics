@@ -1383,6 +1383,238 @@ export const MARKETS: Market[] = [
     },
     position: 64,
   },
+  {
+    slug: 'singapore',
+    name: 'Singapore',
+    countryCode: 'SG',
+    summary:
+      'Hydraulic hose, fittings, adapters, valves and marine transfer hose supplied to Singapore from our Dubai warehouse, quoted per consignment.',
+    intro:
+      'Singapore is the busiest bunkering port in the world and has a dense, competitive supply base of its own. What travels this far is usually marine transfer product where the certification regime, rather than the hose, is the difficult part.',
+    leadTime: 'Quoted per consignment',
+    routes: ['Sea freight', 'Air freight where the schedule is tighter'],
+    incoterms: ['CIF', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
+    conformity: [
+      'Certificate of Origin, Dubai Chamber attested',
+      'Manufacturer certificate of conformity on request',
+    ],
+    context: {
+      heading: 'Transfer hose is certified, then re-certified',
+      body: 'A hose used to move fuel or cargo between a vessel and a shore installation is not simply bought and fitted. It carries a test certificate from new, and it has to be pressure tested again at defined intervals for the rest of its working life, with the records kept and available. That obligation sits with the operator, but it starts with what was supplied: an assembly delivered without its original certification cannot be brought into a compliant regime afterwards. So for transfer duty the documentation is part of the specification, and we issue it with the goods rather than as a later request.',
+    },
+    position: 65,
+  },
+  {
+    slug: 'malaysia',
+    name: 'Malaysia',
+    countryCode: 'MY',
+    summary:
+      'Hydraulic hose, fittings, adapters, valves and industrial hose supplied to Malaysia from our Dubai warehouse, quoted per consignment.',
+    intro:
+      'Malaysian demand divides between offshore oil and gas and one of the largest palm oil processing sectors anywhere. The second of those moves a medium that behaves differently from mineral oil, and the difference is not obvious from a pressure rating.',
+    leadTime: 'Quoted per consignment',
+    routes: ['Sea freight', 'Air freight where the schedule is tighter'],
+    incoterms: ['CIF', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
+    conformity: [
+      'Certificate of Origin, Dubai Chamber attested',
+      'Manufacturer certificate of conformity on request',
+    ],
+    context: {
+      heading: 'Vegetable oil is not mineral oil to a seal',
+      body: 'Elastomers are chosen against the fluid they will meet, and a compound perfectly stable in mineral hydraulic oil can swell or harden in vegetable esters. It matters wherever plant handles palm or other biologically derived oils, and it matters again where a machine has been converted to a biodegradable hydraulic fluid without anyone revisiting the seals and hoses that were specified for the old one. Conversions are where this usually bites, because nothing is replaced and the failure arrives months later looking like ordinary wear. Tell us the actual fluid, not the category, and we will specify the compound against it.',
+    },
+    position: 66,
+  },
+  {
+    slug: 'indonesia',
+    name: 'Indonesia',
+    countryCode: 'ID',
+    summary:
+      'Hydraulic hose, fittings, adapters, valves and industrial hose supplied to Indonesia from our Dubai warehouse, quoted per consignment.',
+    intro:
+      'Indonesia is an archipelago of thousands of islands with coal and nickel extraction spread widely across them. Where a consignment lands is a bigger decision here than in almost any other market we ship to.',
+    leadTime: 'Quoted per consignment',
+    routes: ['Sea freight', 'Air freight where the schedule is tighter'],
+    incoterms: ['CIF to the nominated port', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
+    conformity: [
+      'Certificate of Origin, Dubai Chamber attested',
+      'Pre-shipment inspection where the destination requires it',
+    ],
+    context: {
+      heading: 'Nominate the port, not just the country',
+      body: 'Landing goods at the main gateway and moving them onward by domestic vessel is sometimes right and sometimes adds a week and a second handling for no benefit. It depends entirely on which island the site is on and what feeder services run there. That is a decision worth making before the booking rather than after, because reconsigning a container once it has arrived is expensive and slow. Tell us the actual destination rather than the head office address and we will quote against a port that makes sense for it, including the case where the obvious gateway is the wrong answer.',
+    },
+    position: 67,
+  },
+  {
+    slug: 'thailand',
+    name: 'Thailand',
+    countryCode: 'TH',
+    summary:
+      'Hydraulic hose, fittings, adapters, valves and industrial hose supplied to Thailand from our Dubai warehouse, quoted per consignment.',
+    intro:
+      'Thailand has a substantial manufacturing base, particularly in automotive and electronics, where hydraulics serve production equipment running to fixed cycle times. That is a different buying pattern from maintenance-driven markets.',
+    leadTime: 'Quoted per consignment',
+    routes: ['Sea freight', 'Air freight where the schedule is tighter'],
+    incoterms: ['CIF', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
+    conformity: [
+      'Certificate of Origin, Dubai Chamber attested',
+      'Manufacturer certificate of conformity on request',
+    ],
+    context: {
+      heading: 'On a production line, consistency beats specification',
+      body: 'Equipment that runs a fixed cycle thousands of times a day is validated as a whole, and a replacement part that performs slightly differently is a problem even when it is nominally better. A hose with a different wall stiffness changes a response time; a fitting with a marginally different bore changes a flow. Neither is a defect and both can put a line out of tolerance. For that reason we would rather supply the same construction from the same source every time than optimise each order, and where a product changes we will say so before shipping rather than let a line find out.',
+    },
+    position: 68,
+  },
+  {
+    slug: 'vietnam',
+    name: 'Vietnam',
+    countryCode: 'VN',
+    summary:
+      'Hydraulic hose, fittings, adapters, valves and industrial hose supplied to Vietnam from our Dubai warehouse, quoted per consignment.',
+    intro:
+      'Vietnam has been building industrial capacity quickly, which means a great deal of the plant in service is new and has no maintenance history behind it. Deciding what to hold as spares is harder without one.',
+    leadTime: 'Quoted per consignment',
+    routes: ['Sea freight', 'Air freight where the schedule is tighter'],
+    incoterms: ['CIF', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
+    conformity: [
+      'Certificate of Origin, Dubai Chamber attested',
+      'Pre-shipment inspection where the destination requires it',
+    ],
+    context: {
+      heading: 'Build the first spares list from the machine',
+      body: 'Everyone eventually knows which three assemblies fail on a given machine, but that knowledge takes a couple of years to accumulate and a new plant does not have it. In the meantime the list can be derived rather than guessed: the assemblies that move with the machine, the ones routed near heat, the ones with the shortest radius, and anything whose failure stops production rather than degrading it. That is a reading exercise on the hydraulic schematic, not experience, and we will do it from a drawing or a set of photographs. It produces a far shorter list than buying one of everything.',
+    },
+    position: 69,
+  },
+  {
+    slug: 'philippines',
+    name: 'Philippines',
+    countryCode: 'PH',
+    summary:
+      'Hydraulic hose, fittings, adapters, valves and industrial hose supplied to the Philippines from our Dubai warehouse, quoted per consignment.',
+    intro:
+      'The Philippines is one of the largest geothermal producers in the world alongside its mining and shipping sectors. Geothermal service is unlike anything else in this catalogue, because the medium arrives hot, wet and chemically unhelpful all at once.',
+    leadTime: 'Quoted per consignment',
+    routes: ['Sea freight', 'Air freight where the schedule is tighter'],
+    incoterms: ['CIF', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
+    conformity: [
+      'Certificate of Origin, Dubai Chamber attested',
+      'Manufacturer certificate of conformity on request',
+    ],
+    context: {
+      heading: 'Steam and sulphide rule out most of the catalogue',
+      body: 'Geothermal fluid combines high temperature, wet steam and hydrogen sulphide, and that combination narrows the options sharply. Ordinary rubber constructions are out on temperature before chemistry is even considered, and several stainless grades that behave well elsewhere are vulnerable to sulphide attack under stress. What tends to survive is PTFE-lined or specific alloy metallic assemblies, chosen against the actual analysis rather than against the word geothermal. If you have a fluid composition, send it — the specification follows from it, and guessing at this duty is expensive in a way that ordinary hydraulic work is not.',
+    },
+    position: 70,
+  },
+  {
+    slug: 'myanmar',
+    name: 'Myanmar',
+    countryCode: 'MM',
+    summary:
+      'Hydraulic hose, fittings, adapters and industrial hose supplied to Myanmar from our Dubai warehouse, subject to counterparty and end-use screening before quotation.',
+    intro:
+      'Myanmar has mining, agriculture and general industry, and it also sits under international measures that reach particular organisations and activities. We establish who the goods are for before we price them, and we would rather say that on this page than after an enquiry arrives.',
+    leadTime: 'Quoted per consignment',
+    routes: ['Sea freight', 'Air freight where the schedule is tighter'],
+    incoterms: ['CIF', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
+    conformity: [
+      'Certificate of Origin, Dubai Chamber attested',
+      'Counterparty and end-use screening prior to quotation',
+      'Pre-shipment inspection where the destination requires it',
+    ],
+    context: {
+      heading: 'Who receives it decides whether we can quote',
+      body: 'Restrictions attached to this market are drawn around particular organisations and particular activities rather than around the country as a whole, so the determining fact is the identity of the ultimate recipient and what the equipment will be used for. An enquiry that includes the end user, the site and the application can be assessed quickly. One that does not cannot be assessed at all, and chasing it afterwards wastes time on both sides. Where an enquiry falls outside what we are able to supply we will tell you at that point, clearly, rather than allowing it to lapse into silence.',
+    },
+    position: 71,
+  },
+  {
+    slug: 'cambodia',
+    name: 'Cambodia',
+    countryCode: 'KH',
+    summary:
+      'Hydraulic hose, fittings, adapters, valves and industrial hose supplied to Cambodia from our Dubai warehouse, quoted per consignment.',
+    intro:
+      'Construction, agriculture and light manufacturing account for most Cambodian demand, and a large share of the plant doing that work arrived second-hand from elsewhere in the region. Machines like that have usually been repaired before you owned them.',
+    leadTime: 'Quoted per consignment',
+    routes: ['Sea freight', 'Air freight where the schedule is tighter'],
+    incoterms: ['CIF', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
+    conformity: [
+      'Certificate of Origin, Dubai Chamber attested',
+      'Pre-shipment inspection where the destination requires it',
+    ],
+    context: {
+      heading: 'The parts book may not describe what is fitted',
+      body: 'On a machine that has passed through several owners, a previous repair may have substituted a fitting, changed a hose route or adapted a port to whatever was available at the time. The manufacturer documentation then describes a machine that no longer exists, and ordering from it produces a part that will not go on. Measuring what is actually there beats trusting the parts book, every time. Send dimensions or photographs of the component you are replacing rather than the reference from the manual, and if the two disagree we will say so — that disagreement is itself useful information about the machine.',
+    },
+    position: 72,
+  },
+  {
+    slug: 'laos',
+    name: 'Laos',
+    countryCode: 'LA',
+    summary:
+      'Hydraulic hose, fittings, adapters, valves and industrial hose supplied to Laos from our Dubai warehouse, quoted per consignment.',
+    intro:
+      'Laos is landlocked and its largest industrial installations are hydroelectric. Dam hydraulics look nothing like mobile plant: very large actuators, very long strokes, and duty cycles measured in operations per week rather than per minute.',
+    leadTime: 'Quoted per consignment',
+    routes: ['Sea freight to a regional port, then overland', 'Air freight where the schedule is tighter'],
+    incoterms: ['CIF to the port of entry', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
+    conformity: [
+      'Certificate of Origin, Dubai Chamber attested',
+      'Pre-shipment inspection where the destination requires it',
+    ],
+    context: {
+      heading: 'Equipment that sits still needs different seals',
+      body: 'A gate actuator that operates a handful of times a month spends almost all of its life stationary, and stationary is where seals take a set, where fluid separates and where corrosion starts on a rod that is not being wiped. Wear is barely the issue. What matters is the condition of a system between operations: rod protection, fluid that has not degraded sitting in a reservoir for months, and seals chosen for long static periods rather than for high cycle counts. It is the opposite of the specification logic that serves mobile plant, and applying mobile-plant thinking to it produces components that fail early.',
+    },
+    position: 73,
+  },
+  {
+    slug: 'brunei',
+    name: 'Brunei',
+    countryCode: 'BN',
+    summary:
+      'Hydraulic hose, fittings, adapters, valves and industrial hose supplied to Brunei from our Dubai warehouse, quoted per consignment.',
+    intro:
+      'Brunei is small and its industrial activity is concentrated almost entirely in oil and gas under a small number of operators. That concentration means procurement runs through formal approval processes more often than it does in a fragmented market.',
+    leadTime: 'Quoted per consignment',
+    routes: ['Sea freight', 'Air freight where the schedule is tighter'],
+    incoterms: ['CIF', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
+    conformity: [
+      'Certificate of Origin, Dubai Chamber attested',
+      'Manufacturer certificate of conformity on request',
+    ],
+    context: {
+      heading: 'Approved-brand lists are a hard constraint, not a preference',
+      body: 'Where an operator maintains a list of accepted manufacturers, an equivalent product is not an equivalent answer however well it performs. It will be rejected at goods inward, and the rejection costs the lead time twice over. So the useful thing to establish before quoting is whether a named brand is mandated or merely referenced, because those look identical in an enquiry and lead to completely different quotations. We hold authorised lines across the major manufacturers and will quote the named brand where one is required, saying plainly what the alternative would have cost if that is useful to know.',
+    },
+    position: 74,
+  },
+  {
+    slug: 'timor-leste',
+    name: 'Timor-Leste',
+    countryCode: 'TL',
+    summary:
+      'Hydraulic hose, fittings, adapters, valves and industrial hose supplied to Timor-Leste from our Dubai warehouse, quoted per consignment.',
+    intro:
+      'Timor-Leste is a small market with offshore hydrocarbon activity and limited onshore industrial infrastructure. Consignments are correspondingly infrequent, and the customs and logistics chain is younger than in the larger economies around it.',
+    leadTime: 'Quoted per consignment',
+    routes: ['Sea freight', 'Air freight where the schedule is tighter'],
+    incoterms: ['CIF', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
+    conformity: [
+      'Certificate of Origin, Dubai Chamber attested',
+      'Pre-shipment inspection where the destination requires it',
+    ],
+    context: {
+      heading: 'A simple consignment clears more easily than a clever one',
+      body: 'Where a clearance chain handles lower volumes, the shipments that move smoothly are the ones that are easy to reconcile: a packing list that matches the invoice line for line, descriptions that say what something is rather than quoting an internal code, and no partial deliveries splitting one order across two arrivals. None of that is a requirement anyone publishes; it is simply what causes fewer questions. We would rather build a consignment that way from the outset than optimise it for our own picking convenience and leave the difficulty at the other end.',
+    },
+    position: 75,
+  },
 ]
 
 export function marketBySlug(slug: string): Market | undefined {
