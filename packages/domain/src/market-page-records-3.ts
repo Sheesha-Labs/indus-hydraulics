@@ -948,6 +948,230 @@ const LUXEMBOURG: MarketPage = {
   },
 }
 
+
+// ─────────────────────────────────────────────────────────────────────────────
+// BRITISH ISLES — the one European market that diverged
+//
+// The UK left the customs union, so a consignment clears at Felixstowe or
+// Southampton on its own entry and UKCA sits alongside CE. Ireland stayed in,
+// which makes the pair genuinely different pages rather than two spellings of
+// the same one — and makes the Irish Sea a customs border it was not before.
+// ─────────────────────────────────────────────────────────────────────────────
+
+const UNITED_KINGDOM: MarketPage = {
+  slug: 'united-kingdom',
+  regulatoryCopy: 'unverified',
+  released: false,
+  lane: 'DXB → GB',
+  dialCode: '+44',
+  currency: 'EUR',
+  lede: 'The United Kingdom is the one European market that clears on its own entry rather than the union’s, and the conformity picture has two marks rather than one. Goods arrive at Felixstowe or Southampton in three to four weeks and enter on a UK declaration; a hose assembly above the pressure threshold needs a UKCA declaration for Great Britain, while CE still governs what moves into Northern Ireland. Aberdeen is the reason most of our cargo comes here at all — North Sea specification work, where the material documentation matters more than the lead time.',
+  facts: [
+    { label: 'Typical transit', value: 'Typically 24–30 days by sea from dispatch' },
+    {
+      label: 'Freight',
+      value:
+        'Sea freight from Jebel Ali through Suez to Felixstowe or Southampton · London Gateway where the inland leg is shorter · Aberdeen by road for the offshore supply base · Air freight into London where the schedule is tighter',
+    },
+    { label: 'Incoterms 2020', value: 'CIF Felixstowe · DAP to the buyer’s site · FOB Jebel Ali · EXW Dubai for a nominated forwarder' },
+    {
+      label: 'Documentation',
+      value:
+        'UKCA declaration for Great Britain, CE where the goods move into Northern Ireland · UK customs declaration raised by the importer · UK REACH position on the compounds · Certificate of Origin, Dubai Chamber attested',
+    },
+  ],
+  manifest: [
+    { label: 'Origin', value: 'Jebel Ali · Dubai' },
+    { label: 'Primary mode', value: 'Sea, via Suez' },
+    { label: 'Port of entry', value: 'Felixstowe' },
+    { label: 'Transit', value: '24–30 days' },
+    { label: 'Quoted in', value: 'EUR' },
+    { label: 'Docs prepared', value: 'Before the vessel sails' },
+  ],
+  map: {
+    geoNames: ['United Kingdom'],
+    fit: 'crossing',
+    origin: [55.03, 25.01],
+    originLabel: 'JEBEL ALI · DXB',
+    crossing: { name: 'FELIXSTOWE · PORT', coords: [1.32, 51.95], legend: 'Port of entry', dx: 11, dy: 10, anchor: 'start' },
+    routes: [
+      { mode: 'SEA · SUEZ', primary: true, points: leg(MED_TO_ATLANTIC, [-9.5, 38.7], [-9.5, 45.0], [-6.0, 49.0], [-1.0, 50.3], [1.32, 51.95]) },
+      { mode: 'AIR', points: leg(EUROPE_AIR, [10.0, 48.0], [-0.46, 51.47]) },
+    ],
+  },
+  freight: [
+    { name: 'Sea, FCL', transit: '24–30 days', route: 'Jebel Ali to Felixstowe, via Suez', useCase: 'Default for most orders' },
+    { name: 'Air freight', transit: '2–4 days', route: 'DXB to LHR', useCase: 'When the line is down' },
+    { name: 'Sea, LCL', transit: '30–38 days', route: 'Consolidated, via a European hub', useCase: 'Small mixed orders' },
+  ],
+  orderSteps: {
+    third:
+      'The right mark is settled before anything ships — UKCA for Great Britain, CE where the goods are going to Northern Ireland — and the UK REACH position on the compounds is stated with it.',
+    fourth: 'Goods sail from Jebel Ali through Suez, and you get the paperwork and tracking together.',
+  },
+  cities: [
+    { name: 'Felixstowe', coords: [1.35, 51.96], region: 'England' },
+    { name: 'London', coords: [-0.13, 51.51], region: 'England', plot: true, dx: -9, dy: 6, anchor: 'end' },
+    { name: 'Southampton', coords: [-1.4, 50.9], region: 'England', plot: true, dx: -9, dy: 8, anchor: 'end' },
+    { name: 'Birmingham', coords: [-1.9, 52.48], region: 'England', plot: true, dx: -9, dy: -4, anchor: 'end' },
+    { name: 'Manchester', coords: [-2.24, 53.48], region: 'England' },
+    { name: 'Sheffield', coords: [-1.47, 53.38], region: 'England' },
+    { name: 'Leeds', coords: [-1.55, 53.8], region: 'England', plot: true, dx: 9, dy: -4 },
+    { name: 'Hull', coords: [-0.34, 53.74], region: 'England' },
+    { name: 'Teesside', coords: [-1.23, 54.58], region: 'England', plot: true, dx: 9, dy: 4 },
+    { name: 'Newcastle', coords: [-1.61, 54.98], region: 'England' },
+    { name: 'Aberdeen', coords: [-2.1, 57.15], region: 'Scotland', plot: true, dx: 9, dy: -4 },
+    { name: 'Peterhead', coords: [-1.78, 57.51], region: 'Scotland' },
+    { name: 'Glasgow', coords: [-4.25, 55.86], region: 'Scotland', plot: true, dx: -9, dy: -4, anchor: 'end' },
+    { name: 'Grangemouth', coords: [-3.72, 56.02], region: 'Scotland' },
+    { name: 'Cardiff', coords: [-3.18, 51.48], region: 'Wales', plot: true, dx: -9, dy: 6, anchor: 'end' },
+    { name: 'Belfast', coords: [-5.93, 54.6], region: 'Northern Ireland', plot: true, dx: -9, dy: -4, anchor: 'end' },
+  ],
+  sectors: [
+    { slug: 'oil-gas', name: 'Oil & Gas', description: 'North Sea support out of Aberdeen and Peterhead, and the Grangemouth and Teesside process estates.' },
+    { slug: 'marine', name: 'Marine & Offshore', description: 'Deck machinery, winch and subsea hydraulics for the offshore support fleet.' },
+    { slug: 'power', name: 'Power & Energy', description: 'Actuator and governor hydraulics for thermal plant and offshore wind maintenance.' },
+    { slug: 'steel', name: 'Steel & Metals', description: 'High-force cylinders and servo valves for rolling and forming lines.' },
+    { slug: 'construction', name: 'Construction', description: 'Excavator, crane and tunnelling hydraulics for civil works.' },
+    { slug: 'mining', name: 'Mining', description: 'Dust-rated, high-cycle components for aggregate and cement plant.' },
+  ],
+  faqs: [
+    { question: 'Do you have a branch in the United Kingdom?', answer: 'No. The UK is supplied from our Dubai warehouse, by sea through Suez into Felixstowe or Southampton.' },
+    {
+      question: 'Is it UKCA or CE that we need?',
+      answer:
+        'UKCA for goods placed on the market in Great Britain; CE for goods moving into Northern Ireland. A hose assembly above the pressure threshold needs the relevant declaration travelling with it, and we settle which before shipping rather than after — they are not interchangeable and a wrong mark is a rejected consignment.',
+    },
+    {
+      question: 'Why buy from Dubai rather than a UK distributor?',
+      answer:
+        'For a standard item on a short lead time you should not. The reason our cargo comes here is Aberdeen: North Sea work specified to a material grade with traceable documentation, where the specification decides the order rather than the delivery date.',
+    },
+    { question: 'Does the UK clear separately from the EU now?', answer: 'Yes. A UK entry is its own declaration — goods do not arrive in free circulation from a European port. If a consignment is destined for both the UK and an EU site it is two files, and we say so at quotation rather than discovering it at the quay.' },
+    { question: 'What is your UK REACH position?', answer: 'We state it on the elastomer compounds at quotation. UK REACH and EU REACH have diverged in places, so we give the UK position for UK-bound goods rather than assuming the European one carries across.' },
+    { question: 'Can you deliver to Aberdeen?', answer: 'Yes, on DAP terms to the supply base. It is a long domestic road leg from Felixstowe and it is priced with the order, not estimated.' },
+    { question: 'What currency do you quote in?', answer: 'EUR. Our export desk settles European trade in euros; we do not quote in sterling, and the Estimate, invoice and customs value all carry the same figure.' },
+    { question: 'Can you supply sour-service material documentation?', answer: 'Yes. NACE MR0175 / ISO 15156 documentation with traceability where the contract requires it, confirmed at quotation rather than produced afterwards.' },
+  ],
+  compliance: {
+    heading: 'Two marks, and they are not interchangeable',
+    body:
+      'The UK is the one European market on this network that clears on its own entry rather than the union’s, and that has two consequences worth stating precisely. The first is customs: goods arriving from a European port are not in free circulation here, so a UK declaration is made in its own right, and a consignment split between a British and a continental site is two files rather than one. The second is conformity. A hose assembly above the pressure threshold needs a UKCA declaration to be placed on the market in Great Britain, and a CE declaration where the goods are moving into Northern Ireland. They are not interchangeable, a wrong mark is a rejected consignment, and the answer depends on where the goods are going rather than who is buying them. We settle both before the vessel sails. UK REACH has also diverged from the EU regime in places, so we give the UK position on the compounds rather than assuming the European one carries across.',
+    documents: [
+      { ref: 'UKCA', name: 'Declaration of conformity for Great Britain', issuer: 'Us, as the assembler', when: 'Before dispatch' },
+      { ref: 'CE', name: 'Declaration of conformity, Northern Ireland movements', issuer: 'Us, as the assembler', when: 'Before dispatch' },
+      { ref: 'UK-REACH', name: 'Compound position under the UK regime', issuer: 'Us, at quotation', when: 'At quotation' },
+      { ref: 'DECL', name: 'UK customs import declaration', issuer: 'The importer, through HMRC', when: 'Before arrival' },
+      { ref: 'MTC', name: 'Material and test certificates', issuer: 'Mill, or our test bench', when: 'Where the order calls for them' },
+    ],
+  },
+}
+
+const IRELAND: MarketPage = {
+  slug: 'ireland',
+  regulatoryCopy: 'unverified',
+  released: false,
+  lane: 'DXB → IE',
+  dialCode: '+353',
+  currency: 'EUR',
+  localName: 'Éire',
+  lede: 'Ireland stayed in the customs union when its nearest neighbour left, and that single fact reorganised how goods reach it. The land bridge through Britain became a customs movement, so direct sailings to Dublin and Cork carry far more than they used to. For us the practical effect is simple: we route direct rather than through a British port, and a consignment clears once into free circulation on arrival. Pharmaceutical and medical-device plant is what most of the specification work here is for.',
+  facts: [
+    { label: 'Typical transit', value: 'Typically 26–32 days by sea from dispatch' },
+    {
+      label: 'Freight',
+      value:
+        'Sea freight from Jebel Ali through Suez direct to Dublin or Cork · Rotterdam and a direct feeder where the sailing suits · Air freight into Dublin where the schedule is tighter',
+    },
+    { label: 'Incoterms 2020', value: 'CIF Dublin · DAP to the buyer’s site · FOB Jebel Ali · EXW Dubai for a nominated forwarder' },
+    {
+      label: 'Documentation',
+      value:
+        'CE marking and the PED declaration where the assembly is above threshold · REACH position on the elastomer compounds · Certificate of Origin, Dubai Chamber attested · EU customs entry raised by the importer',
+    },
+  ],
+  manifest: [
+    { label: 'Origin', value: 'Jebel Ali · Dubai' },
+    { label: 'Primary mode', value: 'Sea, via Suez' },
+    { label: 'Port of entry', value: 'Dublin' },
+    { label: 'Transit', value: '26–32 days' },
+    { label: 'Quoted in', value: 'EUR' },
+    { label: 'Docs prepared', value: 'Before the vessel sails' },
+  ],
+  map: {
+    geoNames: ['Ireland'],
+    fit: 'crossing',
+    origin: [55.03, 25.01],
+    originLabel: 'JEBEL ALI · DXB',
+    crossing: { name: 'DUBLIN · PORT', coords: [-6.21, 53.35], legend: 'Port of entry', dx: 11, dy: 8, anchor: 'start' },
+    routes: [
+      { mode: 'SEA · SUEZ', primary: true, points: leg(MED_TO_ATLANTIC, [-9.5, 38.7], [-9.5, 45.0], [-9.0, 50.0], [-7.5, 52.0], [-6.21, 53.35]) },
+      { mode: 'AIR', points: leg(EUROPE_AIR, [10.0, 48.0], [-6.27, 53.43]) },
+    ],
+  },
+  freight: [
+    { name: 'Sea, FCL', transit: '26–32 days', route: 'Jebel Ali direct to Dublin or Cork', useCase: 'Default for most orders' },
+    { name: 'Air freight', transit: '2–4 days', route: 'DXB to DUB', useCase: 'When the line is down' },
+    { name: 'Sea, LCL', transit: '32–42 days', route: 'Consolidated via Rotterdam, then feeder', useCase: 'Small mixed orders' },
+  ],
+  orderSteps: {
+    third: 'The routing is direct rather than through a British port, so the file is one EU entry rather than a transit through a third country and back.',
+    fourth: 'Goods sail from Jebel Ali through Suez to Dublin or Cork, and you get the paperwork and tracking together.',
+  },
+  cities: [
+    { name: 'Dublin', coords: [-6.26, 53.35], region: 'Leinster', plot: true, dx: 9, dy: -5 },
+    { name: 'Cork', coords: [-8.47, 51.9], region: 'Munster', plot: true, dx: -9, dy: 8, anchor: 'end' },
+    { name: 'Ringaskiddy', coords: [-8.31, 51.83], region: 'Munster' },
+    { name: 'Limerick', coords: [-8.62, 52.66], region: 'Munster', plot: true, dx: -9, dy: -4, anchor: 'end' },
+    { name: 'Shannon', coords: [-8.87, 52.71], region: 'Munster' },
+    { name: 'Waterford', coords: [-7.11, 52.26], region: 'Munster', plot: true, dx: 9, dy: 8 },
+    { name: 'Galway', coords: [-9.05, 53.27], region: 'Connacht', plot: true, dx: -9, dy: -4, anchor: 'end' },
+    { name: 'Athlone', coords: [-7.94, 53.42], region: 'Leinster' },
+    { name: 'Dundalk', coords: [-6.4, 54.0], region: 'Leinster', plot: true, dx: 9, dy: -4 },
+    { name: 'Drogheda', coords: [-6.35, 53.72], region: 'Leinster' },
+    { name: 'Sligo', coords: [-8.48, 54.27], region: 'Connacht', plot: true, dx: -9, dy: -4, anchor: 'end' },
+    { name: 'Carlow', coords: [-6.93, 52.84], region: 'Leinster' },
+  ],
+  sectors: [
+    { slug: 'power', name: 'Power & Energy', description: 'Actuator and governor hydraulics for thermal, hydro and wind generation.' },
+    { slug: 'construction', name: 'Construction', description: 'Excavator, crane and batching-plant hydraulics for civil and data-centre works.' },
+    { slug: 'marine', name: 'Marine & Offshore', description: 'Deck machinery and vessel hydraulics for the Dublin, Cork and fishing fleets.' },
+    { slug: 'steel', name: 'Steel & Metals', description: 'Cylinders and valves for fabrication and forming lines.' },
+    { slug: 'oil-gas', name: 'Oil & Gas', description: 'Terminal, tank-farm and process support at Whitegate and the Shannon estuary.' },
+    { slug: 'mining', name: 'Mining', description: 'Zinc, lead and aggregate plant — dust-rated, high-cycle components.' },
+  ],
+  faqs: [
+    { question: 'Do you have a branch in Ireland?', answer: 'No. Ireland is supplied from our Dubai warehouse, on a direct sailing through Suez into Dublin or Cork.' },
+    {
+      question: 'Do you route through Britain?',
+      answer:
+        'No, and that is deliberate. The land bridge became a customs movement through a third country when the UK left the union; a direct sailing keeps the consignment inside the union and clears once on arrival. It is a few days longer and materially simpler.',
+    },
+    { question: 'Do we need CE marking?', answer: 'For a hose assembly above the pressure-volume threshold in PED 2014/68/EU, yes, and the declaration travels with the goods. Below it, sound engineering practice applies and there is no mark.' },
+    {
+      question: 'Can you supply to pharmaceutical plant requirements?',
+      answer:
+        'Where the specification names a surface finish, a material grade or a compound, tell us at quotation and we will state what the item carries. We supply industrial hose and fittings; we do not certify a hose as suitable for a validated process, and we say so rather than implying otherwise.',
+    },
+    { question: 'Dublin or Cork?', answer: 'Dublin for the eastern half and the midlands, Cork for Munster and the Ringaskiddy plants. The inland leg is short either way but the port is chosen against the delivery town.' },
+    { question: 'What is your REACH position?', answer: 'We state it on the elastomer compounds at quotation. Ireland follows EU REACH, so the European position applies here rather than the divergent UK one.' },
+    { question: 'What currency do you quote in?', answer: 'EUR. Our export desk settles European trade in euros, and the Estimate, the invoice and the customs value all carry the same figure so there is no conversion to reconcile at your end.' },
+    { question: 'Is there a minimum order?', answer: 'No, but the direct sailings are less frequent than the North Sea ones, so consolidating usually lands sooner than shipping each line as it is raised. We will say when that applies.' },
+  ],
+  compliance: {
+    heading: 'Direct, because the land bridge became a border',
+    body:
+      'Ireland is inside the customs union and its nearest neighbour is not, which changed the logistics more than the paperwork. Cargo that used to cross Britain by road now makes a customs movement through a third country in each direction, so we route direct to Dublin or Cork instead: a few days longer, one entry into free circulation on arrival, and no transit file. The conformity set is the ordinary European one — a declaration of conformity for assemblies above the PED 2014/68/EU threshold, and our REACH position on the compounds under the EU regime rather than the divergent UK one. The other thing worth stating plainly is a limit: a good deal of Irish specification work sits in pharmaceutical and medical-device plant, and while we will state exactly what a material or compound carries, we do not certify a hose as suitable for a validated process. Being clear about that at quotation is more useful than a claim that has to be walked back.',
+    documents: [
+      { ref: 'PED', name: 'Declaration of conformity, assemblies above threshold', issuer: 'Us, as the assembler', when: 'Before dispatch' },
+      { ref: 'REACH', name: 'Compound position under the EU regime', issuer: 'Us, at quotation', when: 'At quotation' },
+      { ref: 'COO', name: 'Certificate of Origin', issuer: 'Dubai Chamber attested', when: 'Before dispatch' },
+      { ref: 'EU-ENTRY', name: 'Customs entry into free circulation', issuer: 'The importer, through Irish Revenue', when: 'On arrival' },
+      { ref: 'MTC', name: 'Material and test certificates', issuer: 'Mill, or our test bench', when: 'Where the order calls for them' },
+    ],
+  },
+}
+
 export const MARKET_PAGE_RECORDS_3: readonly MarketPage[] = [
   TURKEY,
   NORWAY,
@@ -957,4 +1181,6 @@ export const MARKET_PAGE_RECORDS_3: readonly MarketPage[] = [
   GERMANY,
   BELGIUM,
   LUXEMBOURG,
+  UNITED_KINGDOM,
+  IRELAND,
 ]
