@@ -72,6 +72,22 @@ const MED_TO_ATLANTIC = [
   [-5.6, 35.95],
 ] as const
 
+/**
+ * On past Iberia and up the Atlantic into the North Sea.
+ *
+ * Rotterdam, Antwerp and Hamburg are one decision, not three: goods clear once
+ * into the EU customs union and move inland under it. Which gate a consignment
+ * uses is a routing choice about the inland leg, not a customs one — that is
+ * the framing every North Sea page here shares.
+ */
+const ATLANTIC_TO_NORTH_SEA = [
+  [-9.5, 38.7],
+  [-9.5, 44.0],
+  [-6.0, 48.0],
+  [-1.5, 50.0],
+  [2.0, 51.2],
+] as const
+
 /** DXB north-west over Arabia and Türkiye — the shared air leg into Europe. */
 const EUROPE_AIR = [
   [55.36, 25.25],
@@ -502,9 +518,669 @@ const PANAMA: MarketPage = {
   },
 }
 
+
+// ─────────────────────────────────────────────────────────────────────────────
+// THE NORTH SEA GATEWAY — Netherlands, Belgium, Germany, Luxembourg
+//
+// One customs union, one clearance. A container discharged at Rotterdam is in
+// free circulation across twenty-seven member states, so the port is a routing
+// decision about the inland leg rather than a customs one. That is the shared
+// framing; what differs market to market is the industry behind the gate and
+// how far inland the goods actually go.
+// ─────────────────────────────────────────────────────────────────────────────
+
+const NETHERLANDS: MarketPage = {
+  slug: 'netherlands',
+  regulatoryCopy: 'unverified',
+  released: false,
+  lane: 'DXB → NL',
+  dialCode: '+31',
+  currency: 'EUR',
+  localName: 'Nederland',
+  lede: 'The Netherlands is the gate rather than the destination for a great deal of what we ship here. Rotterdam clears goods into free circulation across the whole customs union, and a consignment for a German or Austrian buyer very often lands here first. For Dutch industry itself the draw is narrower and worth stating: offshore and dredging work run on specifications — sour-service material, API monograms, SS316L thread forms — that a general distributor stocks slowly and we hold.',
+  facts: [
+    { label: 'Typical transit', value: 'Typically 22–28 days by sea from dispatch' },
+    {
+      label: 'Freight',
+      value:
+        'Sea freight from Jebel Ali through Suez and up the Atlantic to Rotterdam · Amsterdam and Vlissingen where the berth suits · Air freight into Schiphol where the schedule is tighter',
+    },
+    { label: 'Incoterms 2020', value: 'CIF Rotterdam · DAP to the buyer’s site · FOB Jebel Ali · EXW Dubai for a nominated forwarder' },
+    {
+      label: 'Documentation',
+      value:
+        'CE marking and the PED declaration where the assembly is above threshold · REACH position on the elastomer compounds · Certificate of Origin, Dubai Chamber attested · EU customs entry raised by the importer',
+    },
+  ],
+  manifest: [
+    { label: 'Origin', value: 'Jebel Ali · Dubai' },
+    { label: 'Primary mode', value: 'Sea, via Suez' },
+    { label: 'Port of entry', value: 'Rotterdam' },
+    { label: 'Transit', value: '22–28 days' },
+    { label: 'Quoted in', value: 'EUR' },
+    { label: 'Docs prepared', value: 'Before the vessel sails' },
+  ],
+  map: {
+    geoNames: ['Netherlands'],
+    fit: 'crossing',
+    origin: [55.03, 25.01],
+    originLabel: 'JEBEL ALI · DXB',
+    crossing: { name: 'ROTTERDAM · PORT', coords: [4.13, 51.95], legend: 'Port of entry', dx: -11, dy: 10, anchor: 'end' },
+    routes: [
+      { mode: 'SEA · SUEZ', primary: true, points: leg(MED_TO_ATLANTIC, ...ATLANTIC_TO_NORTH_SEA.map((p) => [p[0], p[1]] as [number, number]), [4.13, 51.95]) },
+      { mode: 'AIR', points: leg(EUROPE_AIR, [15.0, 48.0], [4.76, 52.31]) },
+    ],
+  },
+  freight: [
+    { name: 'Sea, FCL', transit: '22–28 days', route: 'Jebel Ali to Rotterdam, via Suez', useCase: 'Default for most orders' },
+    { name: 'Air freight', transit: '2–4 days', route: 'DXB to AMS', useCase: 'When the line is down' },
+    { name: 'Sea, LCL', transit: '28–36 days', route: 'Consolidated, via a European hub', useCase: 'Small mixed orders' },
+  ],
+  orderSteps: {
+    third: 'The CE declaration is prepared where the assembly is above the PED threshold, and the REACH position on the compounds is stated rather than left to be asked for.',
+    fourth: 'Goods sail from Jebel Ali through Suez to Rotterdam, and you get the paperwork and tracking together.',
+  },
+  cities: [
+    { name: 'Rotterdam', coords: [4.48, 51.92], region: 'South Holland' },
+    { name: 'Amsterdam', coords: [4.9, 52.37], region: 'North Holland', plot: true, dx: 9, dy: -4 },
+    { name: 'Vlissingen', coords: [3.57, 51.44], region: 'Zeeland', plot: true, dx: -9, dy: 8, anchor: 'end' },
+    { name: 'Terneuzen', coords: [3.83, 51.33], region: 'Zeeland' },
+    { name: 'Moerdijk', coords: [4.61, 51.7], region: 'North Brabant' },
+    { name: 'Dordrecht', coords: [4.68, 51.81], region: 'South Holland' },
+    { name: 'Eindhoven', coords: [5.47, 51.44], region: 'North Brabant', plot: true, dx: 9, dy: 8 },
+    { name: 'Utrecht', coords: [5.12, 52.09], region: 'Utrecht' },
+    { name: 'Arnhem', coords: [5.9, 51.99], region: 'Gelderland', plot: true, dx: 9, dy: 4 },
+    { name: 'Enschede', coords: [6.9, 52.22], region: 'Overijssel', plot: true, dx: 9, dy: -4 },
+    { name: 'Groningen', coords: [6.57, 53.22], region: 'Groningen', plot: true, dx: 9, dy: -4 },
+    { name: 'Delfzijl', coords: [6.92, 53.33], region: 'Groningen' },
+    { name: 'Den Helder', coords: [4.76, 52.96], region: 'North Holland', plot: true, dx: -9, dy: -4, anchor: 'end' },
+    { name: 'IJmuiden', coords: [4.61, 52.46], region: 'North Holland' },
+    { name: 'Velsen', coords: [4.66, 52.46], region: 'North Holland' },
+    { name: 'Geleen', coords: [5.83, 50.97], region: 'Limburg', plot: true, dx: 9, dy: 8 },
+  ],
+  sectors: [
+    { slug: 'marine', name: 'Marine & Offshore', description: 'Dredging, heavy-lift and offshore support — deck machinery, winch and cutter hydraulics.' },
+    { slug: 'oil-gas', name: 'Oil & Gas', description: 'North Sea support out of Den Helder, and the Rotterdam and Geleen petrochemical estates.' },
+    { slug: 'steel', name: 'Steel & Metals', description: 'High-force cylinders and servo valves for the IJmuiden and Velsen lines.' },
+    { slug: 'construction', name: 'Construction', description: 'Excavator, crane and piling-rig hydraulics for civil and reclamation works.' },
+    { slug: 'power', name: 'Power & Energy', description: 'Actuator and governor hydraulics for thermal plant and offshore wind maintenance.' },
+    { slug: 'mining', name: 'Mining', description: 'Dust-rated, high-cycle components for aggregate, cement and bulk-terminal plant.' },
+  ],
+  faqs: [
+    { question: 'Do you have a branch in the Netherlands?', answer: 'No. The Netherlands is supplied from our Dubai warehouse, by sea through Suez into Rotterdam.' },
+    {
+      question: 'Why buy from Dubai when Dutch distribution is excellent?',
+      answer:
+        'For a standard item on a short lead time you should not, and we will say so. What brings buyers here to us is the pattern that is not stocked locally — SS316L thread forms, GOST couplings, API-monogrammed assemblies, sour-service material with traceable documentation — which is a factory order locally and stock for us.',
+    },
+    {
+      question: 'Do we need CE marking?',
+      answer:
+        'For a hose assembly above the pressure-volume threshold in PED 2014/68/EU, yes, and the declaration travels with the goods. Below it the directive requires sound engineering practice and no mark. We state which side each item falls on at quotation rather than marking everything to be safe.',
+    },
+    { question: 'What is your REACH position?', answer: 'We state the position on the elastomer compounds in the quotation rather than waiting to be asked. Where a compound carries a restriction relevant to your application we say so and offer the alternative.' },
+    { question: 'Can you clear into the Netherlands for onward EU delivery?', answer: 'Yes — that is what a great deal of this lane is. Goods clear once at Rotterdam into free circulation and move inland under the union. Tell us the final destination and we will quote the inland leg rather than stopping at the quay.' },
+    { question: 'Can you deliver to Den Helder?', answer: 'Yes, on DAP terms to the offshore supply base. The road leg from Rotterdam is short and it is priced, not estimated.' },
+    { question: 'What currency do you quote in?', answer: 'EUR. Our export desk settles European trade in euros, and the Estimate, the invoice and the customs value all carry the same figure so there is no conversion to reconcile at your end.' },
+    { question: 'Can you supply sour-service material documentation?', answer: 'Yes. NACE MR0175 / ISO 15156 documentation with traceability where the contract requires it, confirmed at quotation rather than produced afterwards.' },
+  ],
+  compliance: {
+    heading: 'One clearance, then twenty-seven countries',
+    body:
+      'The single most useful fact about this lane is that clearance happens once. A container discharged at Rotterdam and entered into free circulation is in free circulation everywhere in the customs union, so a consignment for a buyer in Germany, Austria or Czechia does not clear again at a second border — the inland leg is domestic movement. That is why so much of what we ship into the Netherlands is not for the Netherlands, and why the useful question at quotation is the final delivery address rather than the port. On the product side two things travel with the goods: a declaration of conformity where the assembly sits above the PED 2014/68/EU pressure-volume threshold, and our position on the elastomer compounds under REACH. We state both rather than waiting to be asked, because a buyer who has to ask has already lost a week.',
+    documents: [
+      { ref: 'PED', name: 'Declaration of conformity, assemblies above threshold', issuer: 'Us, as the assembler', when: 'Before dispatch' },
+      { ref: 'REACH', name: 'Compound position on the elastomers supplied', issuer: 'Us, at quotation', when: 'At quotation' },
+      { ref: 'COO', name: 'Certificate of Origin', issuer: 'Dubai Chamber attested', when: 'Before dispatch' },
+      { ref: 'EU-ENTRY', name: 'Customs entry into free circulation', issuer: 'The importer, through Dutch Customs', when: 'On arrival' },
+      { ref: 'MTC', name: 'Material and test certificates', issuer: 'Mill, or our test bench', when: 'Where the order calls for them' },
+    ],
+  },
+}
+
+const GERMANY: MarketPage = {
+  slug: 'germany',
+  regulatoryCopy: 'unverified',
+  released: false,
+  lane: 'DXB → DE',
+  dialCode: '+49',
+  currency: 'EUR',
+  localName: 'Deutschland',
+  lede: 'Germany makes more hydraulic equipment than it imports, and any page pretending otherwise is not worth reading. What we are asked for here is narrow and consistent: the pattern a German plant needs for machinery it is exporting — GOST couplings for a Central Asian contract, API-monogrammed assemblies for an oilfield package, SS316L thread forms — held as stock rather than ordered from a factory queue. Hamburg or Rotterdam clears it, and the inland leg is domestic movement under the customs union.',
+  facts: [
+    { label: 'Typical transit', value: 'Typically 24–30 days by sea from dispatch' },
+    {
+      label: 'Freight',
+      value:
+        'Sea freight from Jebel Ali through Suez to Hamburg or Bremerhaven · Rotterdam and Antwerp where the inland leg is shorter · Air freight into Frankfurt where the schedule is tighter',
+    },
+    { label: 'Incoterms 2020', value: 'CIF Hamburg · DAP to the buyer’s site · FOB Jebel Ali · EXW Dubai for a nominated forwarder' },
+    {
+      label: 'Documentation',
+      value:
+        'CE marking and the PED declaration where the assembly is above threshold · REACH position on the elastomer compounds · Certificate of Origin, Dubai Chamber attested · EU customs entry raised by the importer',
+    },
+  ],
+  manifest: [
+    { label: 'Origin', value: 'Jebel Ali · Dubai' },
+    { label: 'Primary mode', value: 'Sea, via Suez' },
+    { label: 'Port of entry', value: 'Hamburg' },
+    { label: 'Transit', value: '24–30 days' },
+    { label: 'Quoted in', value: 'EUR' },
+    { label: 'Docs prepared', value: 'Before the vessel sails' },
+  ],
+  map: {
+    geoNames: ['Germany'],
+    fit: 'crossing',
+    origin: [55.03, 25.01],
+    originLabel: 'JEBEL ALI · DXB',
+    crossing: { name: 'HAMBURG · PORT', coords: [9.97, 53.54], legend: 'Port of entry', dx: -11, dy: -8, anchor: 'end' },
+    routes: [
+      { mode: 'SEA · SUEZ', primary: true, points: leg(MED_TO_ATLANTIC, ...ATLANTIC_TO_NORTH_SEA.map((p) => [p[0], p[1]] as [number, number]), [4.5, 53.5], [8.2, 54.0], [9.97, 53.54]) },
+      { mode: 'AIR', points: leg(EUROPE_AIR, [15.0, 47.0], [8.57, 50.05]) },
+    ],
+  },
+  freight: [
+    { name: 'Sea, FCL', transit: '24–30 days', route: 'Jebel Ali to Hamburg, via Suez', useCase: 'Default for most orders' },
+    { name: 'Air freight', transit: '2–4 days', route: 'DXB to FRA', useCase: 'When the line is down' },
+    { name: 'Sea via Rotterdam', transit: '22–28 days', route: 'Rotterdam, then road for the west and south', useCase: 'When the inland leg is shorter' },
+  ],
+  orderSteps: {
+    third: 'The CE declaration is prepared where the assembly is above the PED threshold, and the pattern and thread form are confirmed against the drawing rather than the part description.',
+    fourth: 'Goods sail from Jebel Ali through Suez, and you get the paperwork and tracking together.',
+  },
+  cities: [
+    { name: 'Hamburg', coords: [9.99, 53.55], region: 'Hamburg' },
+    { name: 'Bremerhaven', coords: [8.58, 53.54], region: 'Bremen', plot: true, dx: -9, dy: -4, anchor: 'end' },
+    { name: 'Duisburg', coords: [6.76, 51.43], region: 'North Rhine-Westphalia', plot: true, dx: -9, dy: 4, anchor: 'end' },
+    { name: 'Essen', coords: [7.01, 51.46], region: 'North Rhine-Westphalia' },
+    { name: 'Cologne', coords: [6.96, 50.94], region: 'North Rhine-Westphalia' },
+    { name: 'Frankfurt', coords: [8.68, 50.11], region: 'Hesse', plot: true, dx: 9, dy: 4 },
+    { name: 'Mannheim', coords: [8.47, 49.49], region: 'Baden-Württemberg' },
+    { name: 'Stuttgart', coords: [9.18, 48.78], region: 'Baden-Württemberg', plot: true, dx: -9, dy: 8, anchor: 'end' },
+    { name: 'Munich', coords: [11.58, 48.14], region: 'Bavaria', plot: true, dx: 9, dy: 8 },
+    { name: 'Nuremberg', coords: [11.08, 49.45], region: 'Bavaria' },
+    { name: 'Leipzig', coords: [12.37, 51.34], region: 'Saxony', plot: true, dx: 9, dy: 4 },
+    { name: 'Dresden', coords: [13.74, 51.05], region: 'Saxony' },
+    { name: 'Berlin', coords: [13.4, 52.52], region: 'Berlin', plot: true, dx: 9, dy: -4 },
+    { name: 'Hanover', coords: [9.73, 52.37], region: 'Lower Saxony' },
+    { name: 'Wilhelmshaven', coords: [8.11, 53.53], region: 'Lower Saxony' },
+    { name: 'Rostock', coords: [12.13, 54.09], region: 'Mecklenburg-Vorpommern', plot: true, dx: 9, dy: -4 },
+  ],
+  sectors: [
+    { slug: 'steel', name: 'Steel & Metals', description: 'High-force cylinders and servo valves for the Ruhr and Saxony rolling and forming lines.' },
+    { slug: 'construction', name: 'Construction', description: 'Machinery builders exporting plant — the pattern the destination market requires, held as stock.' },
+    { slug: 'power', name: 'Power & Energy', description: 'Actuator and governor hydraulics for thermal, hydro and wind plant.' },
+    { slug: 'oil-gas', name: 'Oil & Gas', description: 'Refinery and terminal support, and oilfield packages built here for export.' },
+    { slug: 'marine', name: 'Marine & Offshore', description: 'Deck machinery and vessel hydraulics for the Hamburg, Bremerhaven and Rostock yards.' },
+    { slug: 'mining', name: 'Mining', description: 'Dust-rated, high-cycle components for lignite, aggregate and cement plant.' },
+  ],
+  faqs: [
+    { question: 'Do you have a branch in Germany?', answer: 'No. Germany is supplied from our Dubai warehouse, through Suez into Hamburg, Bremerhaven or Rotterdam.' },
+    {
+      question: 'Why would a German plant buy hydraulics from Dubai?',
+      answer:
+        'Usually it would not, and we would rather say that than pretend. The exception is consistent: a machine being built here for export to a market with a different standard — GOST couplings for Central Asia, API monograms for an oilfield package, SS316L thread forms — where the pattern is a factory order locally and stock for us.',
+    },
+    { question: 'Do we need CE marking?', answer: 'For a hose assembly above the pressure-volume threshold in PED 2014/68/EU, yes, and the declaration travels with the goods. Below it, sound engineering practice applies and there is no mark. We state which at quotation.' },
+    { question: 'Hamburg or Rotterdam?', answer: 'Whichever gives the shorter inland leg. Clearance is the same either way — the goods enter free circulation once and move on domestically — so the port is chosen on the road distance to your plant, not on customs.' },
+    { question: 'What is your REACH position?', answer: 'We state it on the elastomer compounds at quotation. Where a compound carries a restriction relevant to your application we say so and offer the alternative rather than shipping and leaving you to discover it.' },
+    { question: 'Can you supply GOST-pattern couplings?', answer: 'Yes, alongside the DIN, BSP, JIC and ORFS ranges, so a machine destined for a GOST market can be plumbed from one order rather than two suppliers.' },
+    { question: 'What currency do you quote in?', answer: 'EUR. Our export desk settles European trade in euros, and the Estimate, the invoice and the customs value all carry the same figure so there is no conversion to reconcile at your end.' },
+    { question: 'Can you supply API-monogrammed equipment?', answer: 'Yes. API 6A wellhead, API 16A BOP, API 16C choke and kill and API 7K drilling hose, with NACE MR0175 material documentation where the contract requires it.' },
+  ],
+  compliance: {
+    heading: 'The pattern for somewhere else',
+    body:
+      'It is worth being blunt about why this page exists. Germany manufactures hydraulic components to a standard nobody needs to import against, and for a plant that wants a DIN fitting tomorrow we are the wrong supplier by a wide margin. What we are actually asked for here is the pattern a German machine needs when it is being built for somewhere else: GOST couplings for a Central Asian contract, an API-monogrammed assembly for an oilfield package, SS316L thread forms for a chemical duty. Locally those are a factory order with a lead time measured in weeks; here they are stock. That is the whole proposition, and it is why the useful thing to send us is the drawing and the destination standard rather than a part number. On documentation, a declaration of conformity travels with any assembly above the PED 2014/68/EU threshold, and we state the REACH position on the compounds at quotation rather than waiting to be asked.',
+    documents: [
+      { ref: 'PED', name: 'Declaration of conformity, assemblies above threshold', issuer: 'Us, as the assembler', when: 'Before dispatch' },
+      { ref: 'REACH', name: 'Compound position on the elastomers supplied', issuer: 'Us, at quotation', when: 'At quotation' },
+      { ref: 'COO', name: 'Certificate of Origin', issuer: 'Dubai Chamber attested', when: 'Before dispatch' },
+      { ref: 'EU-ENTRY', name: 'Customs entry into free circulation', issuer: 'The importer, at the port of entry', when: 'On arrival' },
+      { ref: 'MTC', name: 'Material and test certificates', issuer: 'Mill, or our test bench', when: 'Where the order calls for them' },
+    ],
+  },
+}
+
+
+const BELGIUM: MarketPage = {
+  slug: 'belgium',
+  regulatoryCopy: 'unverified',
+  released: false,
+  lane: 'DXB → BE',
+  dialCode: '+32',
+  currency: 'EUR',
+  localName: 'België · Belgique',
+  lede: 'Antwerp is the second gate into the customs union and the one that suits the chemical belt behind it. For Belgian buyers the specification that comes up most often is material rather than pattern: PTFE and composite hose for aggressive duty, SS316L fittings, and compound documentation that has to satisfy a plant safety case rather than a purchasing form. The lane itself is three to four weeks and unremarkable, which is the point — the work is in the specification.',
+  facts: [
+    { label: 'Typical transit', value: 'Typically 22–28 days by sea from dispatch' },
+    {
+      label: 'Freight',
+      value: 'Sea freight from Jebel Ali through Suez to Antwerp · Zeebrugge and Ghent where the berth suits · Air freight into Brussels where the schedule is tighter',
+    },
+    { label: 'Incoterms 2020', value: 'CIF Antwerp · DAP to the buyer’s site · FOB Jebel Ali · EXW Dubai for a nominated forwarder' },
+    {
+      label: 'Documentation',
+      value:
+        'CE marking and the PED declaration where the assembly is above threshold · REACH position on the elastomer and PTFE compounds · Certificate of Origin, Dubai Chamber attested · EU customs entry raised by the importer',
+    },
+  ],
+  manifest: [
+    { label: 'Origin', value: 'Jebel Ali · Dubai' },
+    { label: 'Primary mode', value: 'Sea, via Suez' },
+    { label: 'Port of entry', value: 'Antwerp' },
+    { label: 'Transit', value: '22–28 days' },
+    { label: 'Quoted in', value: 'EUR' },
+    { label: 'Docs prepared', value: 'Before the vessel sails' },
+  ],
+  map: {
+    geoNames: ['Belgium'],
+    fit: 'crossing',
+    origin: [55.03, 25.01],
+    originLabel: 'JEBEL ALI · DXB',
+    crossing: { name: 'ANTWERP · PORT', coords: [4.34, 51.29], legend: 'Port of entry', dx: 11, dy: -8, anchor: 'start' },
+    routes: [
+      { mode: 'SEA · SUEZ', primary: true, points: leg(MED_TO_ATLANTIC, ...ATLANTIC_TO_NORTH_SEA.map((p) => [p[0], p[1]] as [number, number]), [3.2, 51.35], [4.34, 51.29]) },
+      { mode: 'AIR', points: leg(EUROPE_AIR, [15.0, 48.0], [4.48, 50.9]) },
+    ],
+  },
+  freight: [
+    { name: 'Sea, FCL', transit: '22–28 days', route: 'Jebel Ali to Antwerp, via Suez', useCase: 'Default for most orders' },
+    { name: 'Air freight', transit: '2–4 days', route: 'DXB to BRU', useCase: 'When the line is down' },
+    { name: 'Sea, LCL', transit: '28–36 days', route: 'Consolidated, via a European hub', useCase: 'Small mixed orders' },
+  ],
+  orderSteps: {
+    third: 'The compound documentation is assembled to the level a plant safety case needs, not a purchasing form, and the CE declaration is prepared where the assembly is above threshold.',
+    fourth: 'Goods sail from Jebel Ali through Suez to Antwerp, and you get the paperwork and tracking together.',
+  },
+  cities: [
+    { name: 'Antwerp', coords: [4.4, 51.22], region: 'Flanders' },
+    { name: 'Brussels', coords: [4.35, 50.85], region: 'Brussels-Capital', plot: true, dx: -9, dy: 6, anchor: 'end' },
+    { name: 'Ghent', coords: [3.72, 51.05], region: 'Flanders', plot: true, dx: -9, dy: -4, anchor: 'end' },
+    { name: 'Zeebrugge', coords: [3.2, 51.33], region: 'Flanders', plot: true, dx: -9, dy: -4, anchor: 'end' },
+    { name: 'Geel', coords: [4.99, 51.16], region: 'Flanders' },
+    { name: 'Tessenderlo', coords: [5.08, 51.07], region: 'Flanders', plot: true, dx: 9, dy: -4 },
+    { name: 'Genk', coords: [5.5, 50.97], region: 'Flanders' },
+    { name: 'Liège', coords: [5.57, 50.63], region: 'Wallonia', plot: true, dx: 9, dy: 4 },
+    { name: 'Charleroi', coords: [4.44, 50.41], region: 'Wallonia', plot: true, dx: 9, dy: 8 },
+    { name: 'Mons', coords: [3.95, 50.45], region: 'Wallonia' },
+    { name: 'Feluy', coords: [4.28, 50.53], region: 'Wallonia' },
+    { name: 'Kallo', coords: [4.27, 51.25], region: 'Flanders' },
+  ],
+  sectors: [
+    { slug: 'oil-gas', name: 'Oil & Gas', description: 'The Antwerp chemical cluster — aggressive-duty hose, PTFE and composite assemblies with compound documentation.' },
+    { slug: 'marine', name: 'Marine & Offshore', description: 'Deck machinery, winch and terminal hydraulics for the Antwerp, Ghent and Zeebrugge port fleet.' },
+    { slug: 'steel', name: 'Steel & Metals', description: 'High-force cylinders and servo valves for the Liège and Genk lines.' },
+    { slug: 'construction', name: 'Construction', description: 'Excavator, crane and piling-rig hydraulics for civil and lock works.' },
+    { slug: 'power', name: 'Power & Energy', description: 'Actuator and governor hydraulics for thermal and combined-cycle plant.' },
+    { slug: 'mining', name: 'Mining', description: 'Dust-rated, high-cycle components for aggregate, cement and bulk-terminal plant.' },
+  ],
+  faqs: [
+    { question: 'Do you have a branch in Belgium?', answer: 'No. Belgium is supplied from our Dubai warehouse, by sea through Suez into Antwerp, Ghent or Zeebrugge.' },
+    {
+      question: 'Why buy from Dubai rather than locally?',
+      answer:
+        'For a standard fitting, you should not. What we are asked for is the aggressive-duty specification — PTFE and composite hose, SS316L fittings, compound documentation for a plant safety case — where the local answer is often a factory build and ours is stock.',
+    },
+    { question: 'Do we need CE marking?', answer: 'For a hose assembly above the pressure-volume threshold in PED 2014/68/EU, yes, and the declaration travels with the goods. Below it, sound engineering practice applies and there is no mark.' },
+    {
+      question: 'Can you supply compound documentation for a safety case?',
+      answer:
+        'Yes, and it is the commonest reason a Belgian chemical plant calls us. Tell us the medium, the temperature and the concentration at quotation and we will state the compound, its position under REACH, and where it is unsuitable — rather than supplying to the bore and pressure alone.',
+    },
+    { question: 'Antwerp, Ghent or Zeebrugge?', answer: 'Antwerp for almost everything, and it is the shortest inland leg for the chemical belt. The other two where a berth or a sailing suits better; clearance is identical either way.' },
+    { question: 'Can you clear here for onward EU delivery?', answer: 'Yes. Goods enter free circulation once at Antwerp and move inland under the union, so a consignment for a French or German site does not clear twice. Give us the final address and we will quote the inland leg.' },
+    { question: 'What currency do you quote in?', answer: 'EUR. Our export desk settles European trade in euros, and the Estimate, the invoice and the customs value all carry the same figure so there is no conversion to reconcile at your end.' },
+    { question: 'Can you supply PTFE and composite hose?', answer: 'Yes, including flanged composite assemblies for chemical transfer and PTFE-lined hose for high-temperature aggressive duty, built and pressure-tested in Dubai.' },
+  ],
+  compliance: {
+    heading: 'Compound documentation, not just bore and pressure',
+    body:
+      'Belgium’s customs position is the same as every other member state: goods clear once into free circulation at Antwerp and move inland domestically, so the port is an inland-leg decision rather than a customs one. What is specific here is the chemical cluster behind the port and what it asks of a hose supplier. A plant safety case does not accept a hose specified on bore, pressure and temperature — it wants the compound named, its resistance to the actual medium at the actual concentration stated, and its position under REACH documented. That is a different quotation from a normal one and it is the one worth asking us for: tell us the medium rather than the part number, and we will say where a compound is unsuitable rather than supplying to the dimensions and letting the plant find out. A declaration of conformity travels with any assembly above the PED threshold.',
+    documents: [
+      { ref: 'PED', name: 'Declaration of conformity, assemblies above threshold', issuer: 'Us, as the assembler', when: 'Before dispatch' },
+      { ref: 'REACH', name: 'Compound position on the elastomers and PTFE supplied', issuer: 'Us, at quotation', when: 'At quotation' },
+      { ref: 'COMPAT', name: 'Chemical compatibility statement for the named medium', issuer: 'Us, at quotation', when: 'At quotation, per duty' },
+      { ref: 'COO', name: 'Certificate of Origin', issuer: 'Dubai Chamber attested', when: 'Before dispatch' },
+      { ref: 'EU-ENTRY', name: 'Customs entry into free circulation', issuer: 'The importer, through Belgian Customs', when: 'On arrival' },
+    ],
+  },
+}
+
+const LUXEMBOURG: MarketPage = {
+  slug: 'luxembourg',
+  regulatoryCopy: 'unverified',
+  released: false,
+  lane: 'DXB → LU',
+  dialCode: '+352',
+  currency: 'EUR',
+  localName: 'Lëtzebuerg',
+  lede: 'Luxembourg is the smallest market on this network and the one where the page has least to claim. There is no port, no border formality worth describing — goods clear at Antwerp or Rotterdam and arrive by road as domestic movement — and the industrial base is narrow: steel, logistics equipment and a handful of specialist manufacturers. What brings a buyer here to Dubai is the same thing as in Germany, and no more: a pattern held as stock that would otherwise be a factory order.',
+  facts: [
+    { label: 'Typical transit', value: 'Typically 24–30 days from dispatch, sea and road combined' },
+    {
+      label: 'Freight',
+      value: 'Sea freight from Jebel Ali through Suez to Antwerp or Rotterdam, then road · Air freight into Luxembourg or Frankfurt where the schedule is tighter',
+    },
+    { label: 'Incoterms 2020', value: 'DAP to the buyer’s site · CIF Antwerp · FOB Jebel Ali · EXW Dubai for a nominated forwarder' },
+    {
+      label: 'Documentation',
+      value:
+        'CE marking and the PED declaration where the assembly is above threshold · REACH position on the elastomer compounds · Certificate of Origin, Dubai Chamber attested · EU customs entry raised at the port',
+    },
+  ],
+  manifest: [
+    { label: 'Origin', value: 'Jebel Ali · Dubai' },
+    { label: 'Primary mode', value: 'Sea + road' },
+    { label: 'Port of entry', value: 'Antwerp, then road' },
+    { label: 'Transit', value: '24–30 days' },
+    { label: 'Quoted in', value: 'EUR' },
+    { label: 'Docs prepared', value: 'Before the vessel sails' },
+  ],
+  map: {
+    geoNames: ['Luxembourg'],
+    fit: 'crossing',
+    origin: [55.03, 25.01],
+    originLabel: 'JEBEL ALI · DXB',
+    crossing: { name: 'ANTWERP · PORT', coords: [4.34, 51.29], legend: 'Port of entry', dx: -11, dy: -8, anchor: 'end' },
+    routes: [
+      { mode: 'SEA + ROAD', primary: true, points: leg(MED_TO_ATLANTIC, ...ATLANTIC_TO_NORTH_SEA.map((p) => [p[0], p[1]] as [number, number]), [3.2, 51.35], [4.34, 51.29], [5.0, 50.5], [6.13, 49.61]) },
+      { mode: 'AIR', points: leg(EUROPE_AIR, [15.0, 48.0], [6.21, 49.63]) },
+    ],
+  },
+  freight: [
+    { name: 'Sea + road', transit: '24–30 days', route: 'Antwerp or Rotterdam, then road', useCase: 'Default for most orders' },
+    { name: 'Air freight', transit: '2–4 days', route: 'DXB to LUX or FRA, then road', useCase: 'When the line is down' },
+    { name: 'Sea, LCL', transit: '30–38 days', route: 'Consolidated, via a European hub', useCase: 'Small mixed orders' },
+  ],
+  orderSteps: {
+    third: 'Clearance happens at the port rather than at a Luxembourg border, so the file is the EU entry and the road leg is domestic movement — priced with the order rather than added afterwards.',
+    fourth: 'Goods sail to Antwerp or Rotterdam and come on by road, and you get the paperwork and tracking together.',
+  },
+  cities: [
+    { name: 'Luxembourg City', coords: [6.13, 49.61], region: 'Luxembourg', plot: true, dx: 9, dy: -5 },
+    { name: 'Esch-sur-Alzette', coords: [5.98, 49.5], region: 'Esch-sur-Alzette', plot: true, dx: -9, dy: 6, anchor: 'end' },
+    { name: 'Differdange', coords: [5.89, 49.52], region: 'Esch-sur-Alzette' },
+    { name: 'Dudelange', coords: [6.09, 49.48], region: 'Esch-sur-Alzette' },
+    { name: 'Bettembourg', coords: [6.1, 49.52], region: 'Esch-sur-Alzette', plot: true, dx: 9, dy: 8 },
+    { name: 'Rodange', coords: [5.84, 49.55], region: 'Esch-sur-Alzette' },
+    { name: 'Belval', coords: [5.94, 49.5], region: 'Esch-sur-Alzette' },
+    { name: 'Contern', coords: [6.23, 49.57], region: 'Luxembourg' },
+    { name: 'Grevenmacher', coords: [6.44, 49.68], region: 'Grevenmacher', plot: true, dx: 9, dy: 4 },
+    { name: 'Ettelbruck', coords: [6.1, 49.85], region: 'Diekirch', plot: true, dx: -9, dy: -4, anchor: 'end' },
+    { name: 'Diekirch', coords: [6.16, 49.87], region: 'Diekirch' },
+    { name: 'Wiltz', coords: [5.93, 49.97], region: 'Diekirch', plot: true, dx: -9, dy: -4, anchor: 'end' },
+  ],
+  sectors: [
+    { slug: 'steel', name: 'Steel & Metals', description: 'High-force cylinders and servo valves for the Belval and Differdange rolling lines.' },
+    { slug: 'construction', name: 'Construction', description: 'Excavator, crane and materials-handling hydraulics, including equipment built here for export.' },
+    { slug: 'power', name: 'Power & Energy', description: 'Actuator and governor hydraulics for generation and grid plant.' },
+    { slug: 'oil-gas', name: 'Oil & Gas', description: 'Terminal and fuel-handling support, and packages assembled here for export.' },
+    { slug: 'marine', name: 'Marine & Offshore', description: 'Winch and deck hydraulics for Moselle river and lifting equipment.' },
+    { slug: 'mining', name: 'Mining', description: 'Dust-rated, high-cycle components for quarry and aggregate plant.' },
+  ],
+  faqs: [
+    { question: 'Do you have a branch in Luxembourg?', answer: 'No. Luxembourg is supplied from our Dubai warehouse, by sea to Antwerp or Rotterdam and then by road.' },
+    {
+      question: 'Is there any reason to buy from Dubai here?',
+      answer:
+        'Only one, and it is narrow: a pattern that is not stocked in the region — GOST couplings, SS316L thread forms, API-monogrammed assemblies — usually for equipment being built here for export. For anything standard, a Belgian or German distributor is closer, faster and the right answer.',
+    },
+    { question: 'Is there a border formality?', answer: 'No. Goods clear once at Antwerp or Rotterdam into free circulation and reach Luxembourg as domestic movement. There is no second clearance and nothing to arrange at the border.' },
+    { question: 'Do we need CE marking?', answer: 'For a hose assembly above the pressure-volume threshold in PED 2014/68/EU, yes, and the declaration travels with the goods. Below it, sound engineering practice applies and there is no mark.' },
+    { question: 'How is the road leg priced?', answer: 'With the order rather than after it. Antwerp to Luxembourg is a short domestic run and we quote it as part of a DAP price rather than stopping at the quay and leaving you to arrange it.' },
+    { question: 'Can you supply GOST-pattern couplings?', answer: 'Yes, alongside the DIN, BSP, JIC and ORFS ranges, so a machine destined for a GOST market can be plumbed from one order.' },
+    { question: 'What currency do you quote in?', answer: 'EUR. Our export desk settles European trade in euros, and the Estimate, the invoice and the customs value all carry the same figure so there is no conversion to reconcile at your end.' },
+    { question: 'Is there a minimum order?', answer: 'No, but on a lane where the freight is a road leg from a port three weeks away, consolidating is usually worth more than speed. We will say when an item is better added to the next consignment.' },
+  ],
+  compliance: {
+    heading: 'No port, no border, and a narrow reason to be here',
+    body:
+      'This is the shortest compliance story on the network because there is almost nothing to tell. Luxembourg is inside the customs union and landlocked within it, so goods clear once at Antwerp or Rotterdam and arrive as domestic movement — no second entry, no border formality, no transit document. The product documentation is the European set: a declaration of conformity for assemblies above the PED 2014/68/EU threshold, and our REACH position on the compounds. What is worth saying plainly instead is why a Luxembourg buyer would import from Dubai at all, and the honest answer is that mostly they would not. The exception is narrow and real: a pattern not stocked in the region, usually for equipment being built here for export to a market with a different standard. Outside that, a Belgian or German distributor is closer, faster and correct.',
+    documents: [
+      { ref: 'PED', name: 'Declaration of conformity, assemblies above threshold', issuer: 'Us, as the assembler', when: 'Before dispatch' },
+      { ref: 'REACH', name: 'Compound position on the elastomers supplied', issuer: 'Us, at quotation', when: 'At quotation' },
+      { ref: 'COO', name: 'Certificate of Origin', issuer: 'Dubai Chamber attested', when: 'Before dispatch' },
+      { ref: 'EU-ENTRY', name: 'Customs entry into free circulation', issuer: 'The importer, at Antwerp or Rotterdam', when: 'On arrival' },
+      { ref: 'MTC', name: 'Material and test certificates', issuer: 'Mill, or our test bench', when: 'Where the order calls for them' },
+    ],
+  },
+}
+
+
+// ─────────────────────────────────────────────────────────────────────────────
+// BRITISH ISLES — the one European market that diverged
+//
+// The UK left the customs union, so a consignment clears at Felixstowe or
+// Southampton on its own entry and UKCA sits alongside CE. Ireland stayed in,
+// which makes the pair genuinely different pages rather than two spellings of
+// the same one — and makes the Irish Sea a customs border it was not before.
+// ─────────────────────────────────────────────────────────────────────────────
+
+const UNITED_KINGDOM: MarketPage = {
+  slug: 'united-kingdom',
+  regulatoryCopy: 'unverified',
+  released: false,
+  lane: 'DXB → GB',
+  dialCode: '+44',
+  currency: 'EUR',
+  lede: 'The United Kingdom is the one European market that clears on its own entry rather than the union’s, and the conformity picture has two marks rather than one. Goods arrive at Felixstowe or Southampton in three to four weeks and enter on a UK declaration; a hose assembly above the pressure threshold needs a UKCA declaration for Great Britain, while CE still governs what moves into Northern Ireland. Aberdeen is the reason most of our cargo comes here at all — North Sea specification work, where the material documentation matters more than the lead time.',
+  facts: [
+    { label: 'Typical transit', value: 'Typically 24–30 days by sea from dispatch' },
+    {
+      label: 'Freight',
+      value:
+        'Sea freight from Jebel Ali through Suez to Felixstowe or Southampton · London Gateway where the inland leg is shorter · Aberdeen by road for the offshore supply base · Air freight into London where the schedule is tighter',
+    },
+    { label: 'Incoterms 2020', value: 'CIF Felixstowe · DAP to the buyer’s site · FOB Jebel Ali · EXW Dubai for a nominated forwarder' },
+    {
+      label: 'Documentation',
+      value:
+        'UKCA declaration for Great Britain, CE where the goods move into Northern Ireland · UK customs declaration raised by the importer · UK REACH position on the compounds · Certificate of Origin, Dubai Chamber attested',
+    },
+  ],
+  manifest: [
+    { label: 'Origin', value: 'Jebel Ali · Dubai' },
+    { label: 'Primary mode', value: 'Sea, via Suez' },
+    { label: 'Port of entry', value: 'Felixstowe' },
+    { label: 'Transit', value: '24–30 days' },
+    { label: 'Quoted in', value: 'EUR' },
+    { label: 'Docs prepared', value: 'Before the vessel sails' },
+  ],
+  map: {
+    geoNames: ['United Kingdom'],
+    fit: 'crossing',
+    origin: [55.03, 25.01],
+    originLabel: 'JEBEL ALI · DXB',
+    crossing: { name: 'FELIXSTOWE · PORT', coords: [1.32, 51.95], legend: 'Port of entry', dx: 11, dy: 10, anchor: 'start' },
+    routes: [
+      { mode: 'SEA · SUEZ', primary: true, points: leg(MED_TO_ATLANTIC, [-9.5, 38.7], [-9.5, 45.0], [-6.0, 49.0], [-1.0, 50.3], [1.32, 51.95]) },
+      { mode: 'AIR', points: leg(EUROPE_AIR, [10.0, 48.0], [-0.46, 51.47]) },
+    ],
+  },
+  freight: [
+    { name: 'Sea, FCL', transit: '24–30 days', route: 'Jebel Ali to Felixstowe, via Suez', useCase: 'Default for most orders' },
+    { name: 'Air freight', transit: '2–4 days', route: 'DXB to LHR', useCase: 'When the line is down' },
+    { name: 'Sea, LCL', transit: '30–38 days', route: 'Consolidated, via a European hub', useCase: 'Small mixed orders' },
+  ],
+  orderSteps: {
+    third:
+      'The right mark is settled before anything ships — UKCA for Great Britain, CE where the goods are going to Northern Ireland — and the UK REACH position on the compounds is stated with it.',
+    fourth: 'Goods sail from Jebel Ali through Suez, and you get the paperwork and tracking together.',
+  },
+  cities: [
+    { name: 'Felixstowe', coords: [1.35, 51.96], region: 'England' },
+    { name: 'London', coords: [-0.13, 51.51], region: 'England', plot: true, dx: -9, dy: 6, anchor: 'end' },
+    { name: 'Southampton', coords: [-1.4, 50.9], region: 'England', plot: true, dx: -9, dy: 8, anchor: 'end' },
+    { name: 'Birmingham', coords: [-1.9, 52.48], region: 'England', plot: true, dx: -9, dy: -4, anchor: 'end' },
+    { name: 'Manchester', coords: [-2.24, 53.48], region: 'England' },
+    { name: 'Sheffield', coords: [-1.47, 53.38], region: 'England' },
+    { name: 'Leeds', coords: [-1.55, 53.8], region: 'England', plot: true, dx: 9, dy: -4 },
+    { name: 'Hull', coords: [-0.34, 53.74], region: 'England' },
+    { name: 'Teesside', coords: [-1.23, 54.58], region: 'England', plot: true, dx: 9, dy: 4 },
+    { name: 'Newcastle', coords: [-1.61, 54.98], region: 'England' },
+    { name: 'Aberdeen', coords: [-2.1, 57.15], region: 'Scotland', plot: true, dx: 9, dy: -4 },
+    { name: 'Peterhead', coords: [-1.78, 57.51], region: 'Scotland' },
+    { name: 'Glasgow', coords: [-4.25, 55.86], region: 'Scotland', plot: true, dx: -9, dy: -4, anchor: 'end' },
+    { name: 'Grangemouth', coords: [-3.72, 56.02], region: 'Scotland' },
+    { name: 'Cardiff', coords: [-3.18, 51.48], region: 'Wales', plot: true, dx: -9, dy: 6, anchor: 'end' },
+    { name: 'Belfast', coords: [-5.93, 54.6], region: 'Northern Ireland', plot: true, dx: -9, dy: -4, anchor: 'end' },
+  ],
+  sectors: [
+    { slug: 'oil-gas', name: 'Oil & Gas', description: 'North Sea support out of Aberdeen and Peterhead, and the Grangemouth and Teesside process estates.' },
+    { slug: 'marine', name: 'Marine & Offshore', description: 'Deck machinery, winch and subsea hydraulics for the offshore support fleet.' },
+    { slug: 'power', name: 'Power & Energy', description: 'Actuator and governor hydraulics for thermal plant and offshore wind maintenance.' },
+    { slug: 'steel', name: 'Steel & Metals', description: 'High-force cylinders and servo valves for rolling and forming lines.' },
+    { slug: 'construction', name: 'Construction', description: 'Excavator, crane and tunnelling hydraulics for civil works.' },
+    { slug: 'mining', name: 'Mining', description: 'Dust-rated, high-cycle components for aggregate and cement plant.' },
+  ],
+  faqs: [
+    { question: 'Do you have a branch in the United Kingdom?', answer: 'No. The UK is supplied from our Dubai warehouse, by sea through Suez into Felixstowe or Southampton.' },
+    {
+      question: 'Is it UKCA or CE that we need?',
+      answer:
+        'UKCA for goods placed on the market in Great Britain; CE for goods moving into Northern Ireland. A hose assembly above the pressure threshold needs the relevant declaration travelling with it, and we settle which before shipping rather than after — they are not interchangeable and a wrong mark is a rejected consignment.',
+    },
+    {
+      question: 'Why buy from Dubai rather than a UK distributor?',
+      answer:
+        'For a standard item on a short lead time you should not. The reason our cargo comes here is Aberdeen: North Sea work specified to a material grade with traceable documentation, where the specification decides the order rather than the delivery date.',
+    },
+    { question: 'Does the UK clear separately from the EU now?', answer: 'Yes. A UK entry is its own declaration — goods do not arrive in free circulation from a European port. If a consignment is destined for both the UK and an EU site it is two files, and we say so at quotation rather than discovering it at the quay.' },
+    { question: 'What is your UK REACH position?', answer: 'We state it on the elastomer compounds at quotation. UK REACH and EU REACH have diverged in places, so we give the UK position for UK-bound goods rather than assuming the European one carries across.' },
+    { question: 'Can you deliver to Aberdeen?', answer: 'Yes, on DAP terms to the supply base. It is a long domestic road leg from Felixstowe and it is priced with the order, not estimated.' },
+    { question: 'What currency do you quote in?', answer: 'EUR. Our export desk settles European trade in euros; we do not quote in sterling, and the Estimate, invoice and customs value all carry the same figure.' },
+    { question: 'Can you supply sour-service material documentation?', answer: 'Yes. NACE MR0175 / ISO 15156 documentation with traceability where the contract requires it, confirmed at quotation rather than produced afterwards.' },
+  ],
+  compliance: {
+    heading: 'Two marks, and they are not interchangeable',
+    body:
+      'The UK is the one European market on this network that clears on its own entry rather than the union’s, and that has two consequences worth stating precisely. The first is customs: goods arriving from a European port are not in free circulation here, so a UK declaration is made in its own right, and a consignment split between a British and a continental site is two files rather than one. The second is conformity. A hose assembly above the pressure threshold needs a UKCA declaration to be placed on the market in Great Britain, and a CE declaration where the goods are moving into Northern Ireland. They are not interchangeable, a wrong mark is a rejected consignment, and the answer depends on where the goods are going rather than who is buying them. We settle both before the vessel sails. UK REACH has also diverged from the EU regime in places, so we give the UK position on the compounds rather than assuming the European one carries across.',
+    documents: [
+      { ref: 'UKCA', name: 'Declaration of conformity for Great Britain', issuer: 'Us, as the assembler', when: 'Before dispatch' },
+      { ref: 'CE', name: 'Declaration of conformity, Northern Ireland movements', issuer: 'Us, as the assembler', when: 'Before dispatch' },
+      { ref: 'UK-REACH', name: 'Compound position under the UK regime', issuer: 'Us, at quotation', when: 'At quotation' },
+      { ref: 'DECL', name: 'UK customs import declaration', issuer: 'The importer, through HMRC', when: 'Before arrival' },
+      { ref: 'MTC', name: 'Material and test certificates', issuer: 'Mill, or our test bench', when: 'Where the order calls for them' },
+    ],
+  },
+}
+
+const IRELAND: MarketPage = {
+  slug: 'ireland',
+  regulatoryCopy: 'unverified',
+  released: false,
+  lane: 'DXB → IE',
+  dialCode: '+353',
+  currency: 'EUR',
+  localName: 'Éire',
+  lede: 'Ireland stayed in the customs union when its nearest neighbour left, and that single fact reorganised how goods reach it. The land bridge through Britain became a customs movement, so direct sailings to Dublin and Cork carry far more than they used to. For us the practical effect is simple: we route direct rather than through a British port, and a consignment clears once into free circulation on arrival. Pharmaceutical and medical-device plant is what most of the specification work here is for.',
+  facts: [
+    { label: 'Typical transit', value: 'Typically 26–32 days by sea from dispatch' },
+    {
+      label: 'Freight',
+      value:
+        'Sea freight from Jebel Ali through Suez direct to Dublin or Cork · Rotterdam and a direct feeder where the sailing suits · Air freight into Dublin where the schedule is tighter',
+    },
+    { label: 'Incoterms 2020', value: 'CIF Dublin · DAP to the buyer’s site · FOB Jebel Ali · EXW Dubai for a nominated forwarder' },
+    {
+      label: 'Documentation',
+      value:
+        'CE marking and the PED declaration where the assembly is above threshold · REACH position on the elastomer compounds · Certificate of Origin, Dubai Chamber attested · EU customs entry raised by the importer',
+    },
+  ],
+  manifest: [
+    { label: 'Origin', value: 'Jebel Ali · Dubai' },
+    { label: 'Primary mode', value: 'Sea, via Suez' },
+    { label: 'Port of entry', value: 'Dublin' },
+    { label: 'Transit', value: '26–32 days' },
+    { label: 'Quoted in', value: 'EUR' },
+    { label: 'Docs prepared', value: 'Before the vessel sails' },
+  ],
+  map: {
+    geoNames: ['Ireland'],
+    fit: 'crossing',
+    origin: [55.03, 25.01],
+    originLabel: 'JEBEL ALI · DXB',
+    crossing: { name: 'DUBLIN · PORT', coords: [-6.21, 53.35], legend: 'Port of entry', dx: 11, dy: 8, anchor: 'start' },
+    routes: [
+      { mode: 'SEA · SUEZ', primary: true, points: leg(MED_TO_ATLANTIC, [-9.5, 38.7], [-9.5, 45.0], [-9.0, 50.0], [-7.5, 52.0], [-6.21, 53.35]) },
+      { mode: 'AIR', points: leg(EUROPE_AIR, [10.0, 48.0], [-6.27, 53.43]) },
+    ],
+  },
+  freight: [
+    { name: 'Sea, FCL', transit: '26–32 days', route: 'Jebel Ali direct to Dublin or Cork', useCase: 'Default for most orders' },
+    { name: 'Air freight', transit: '2–4 days', route: 'DXB to DUB', useCase: 'When the line is down' },
+    { name: 'Sea, LCL', transit: '32–42 days', route: 'Consolidated via Rotterdam, then feeder', useCase: 'Small mixed orders' },
+  ],
+  orderSteps: {
+    third: 'The routing is direct rather than through a British port, so the file is one EU entry rather than a transit through a third country and back.',
+    fourth: 'Goods sail from Jebel Ali through Suez to Dublin or Cork, and you get the paperwork and tracking together.',
+  },
+  cities: [
+    { name: 'Dublin', coords: [-6.26, 53.35], region: 'Leinster', plot: true, dx: 9, dy: -5 },
+    { name: 'Cork', coords: [-8.47, 51.9], region: 'Munster', plot: true, dx: -9, dy: 8, anchor: 'end' },
+    { name: 'Ringaskiddy', coords: [-8.31, 51.83], region: 'Munster' },
+    { name: 'Limerick', coords: [-8.62, 52.66], region: 'Munster', plot: true, dx: -9, dy: -4, anchor: 'end' },
+    { name: 'Shannon', coords: [-8.87, 52.71], region: 'Munster' },
+    { name: 'Waterford', coords: [-7.11, 52.26], region: 'Munster', plot: true, dx: 9, dy: 8 },
+    { name: 'Galway', coords: [-9.05, 53.27], region: 'Connacht', plot: true, dx: -9, dy: -4, anchor: 'end' },
+    { name: 'Athlone', coords: [-7.94, 53.42], region: 'Leinster' },
+    { name: 'Dundalk', coords: [-6.4, 54.0], region: 'Leinster', plot: true, dx: 9, dy: -4 },
+    { name: 'Drogheda', coords: [-6.35, 53.72], region: 'Leinster' },
+    { name: 'Sligo', coords: [-8.48, 54.27], region: 'Connacht', plot: true, dx: -9, dy: -4, anchor: 'end' },
+    { name: 'Carlow', coords: [-6.93, 52.84], region: 'Leinster' },
+  ],
+  sectors: [
+    { slug: 'power', name: 'Power & Energy', description: 'Actuator and governor hydraulics for thermal, hydro and wind generation.' },
+    { slug: 'construction', name: 'Construction', description: 'Excavator, crane and batching-plant hydraulics for civil and data-centre works.' },
+    { slug: 'marine', name: 'Marine & Offshore', description: 'Deck machinery and vessel hydraulics for the Dublin, Cork and fishing fleets.' },
+    { slug: 'steel', name: 'Steel & Metals', description: 'Cylinders and valves for fabrication and forming lines.' },
+    { slug: 'oil-gas', name: 'Oil & Gas', description: 'Terminal, tank-farm and process support at Whitegate and the Shannon estuary.' },
+    { slug: 'mining', name: 'Mining', description: 'Zinc, lead and aggregate plant — dust-rated, high-cycle components.' },
+  ],
+  faqs: [
+    { question: 'Do you have a branch in Ireland?', answer: 'No. Ireland is supplied from our Dubai warehouse, on a direct sailing through Suez into Dublin or Cork.' },
+    {
+      question: 'Do you route through Britain?',
+      answer:
+        'No, and that is deliberate. The land bridge became a customs movement through a third country when the UK left the union; a direct sailing keeps the consignment inside the union and clears once on arrival. It is a few days longer and materially simpler.',
+    },
+    { question: 'Do we need CE marking?', answer: 'For a hose assembly above the pressure-volume threshold in PED 2014/68/EU, yes, and the declaration travels with the goods. Below it, sound engineering practice applies and there is no mark.' },
+    {
+      question: 'Can you supply to pharmaceutical plant requirements?',
+      answer:
+        'Where the specification names a surface finish, a material grade or a compound, tell us at quotation and we will state what the item carries. We supply industrial hose and fittings; we do not certify a hose as suitable for a validated process, and we say so rather than implying otherwise.',
+    },
+    { question: 'Dublin or Cork?', answer: 'Dublin for the eastern half and the midlands, Cork for Munster and the Ringaskiddy plants. The inland leg is short either way but the port is chosen against the delivery town.' },
+    { question: 'What is your REACH position?', answer: 'We state it on the elastomer compounds at quotation. Ireland follows EU REACH, so the European position applies here rather than the divergent UK one.' },
+    { question: 'What currency do you quote in?', answer: 'EUR. Our export desk settles European trade in euros, and the Estimate, the invoice and the customs value all carry the same figure so there is no conversion to reconcile at your end.' },
+    { question: 'Is there a minimum order?', answer: 'No, but the direct sailings are less frequent than the North Sea ones, so consolidating usually lands sooner than shipping each line as it is raised. We will say when that applies.' },
+  ],
+  compliance: {
+    heading: 'Direct, because the land bridge became a border',
+    body:
+      'Ireland is inside the customs union and its nearest neighbour is not, which changed the logistics more than the paperwork. Cargo that used to cross Britain by road now makes a customs movement through a third country in each direction, so we route direct to Dublin or Cork instead: a few days longer, one entry into free circulation on arrival, and no transit file. The conformity set is the ordinary European one — a declaration of conformity for assemblies above the PED 2014/68/EU threshold, and our REACH position on the compounds under the EU regime rather than the divergent UK one. The other thing worth stating plainly is a limit: a good deal of Irish specification work sits in pharmaceutical and medical-device plant, and while we will state exactly what a material or compound carries, we do not certify a hose as suitable for a validated process. Being clear about that at quotation is more useful than a claim that has to be walked back.',
+    documents: [
+      { ref: 'PED', name: 'Declaration of conformity, assemblies above threshold', issuer: 'Us, as the assembler', when: 'Before dispatch' },
+      { ref: 'REACH', name: 'Compound position under the EU regime', issuer: 'Us, at quotation', when: 'At quotation' },
+      { ref: 'COO', name: 'Certificate of Origin', issuer: 'Dubai Chamber attested', when: 'Before dispatch' },
+      { ref: 'EU-ENTRY', name: 'Customs entry into free circulation', issuer: 'The importer, through Irish Revenue', when: 'On arrival' },
+      { ref: 'MTC', name: 'Material and test certificates', issuer: 'Mill, or our test bench', when: 'Where the order calls for them' },
+    ],
+  },
+}
+
 export const MARKET_PAGE_RECORDS_3: readonly MarketPage[] = [
   TURKEY,
   NORWAY,
   TRINIDAD_AND_TOBAGO,
   PANAMA,
+  NETHERLANDS,
+  GERMANY,
+  BELGIUM,
+  LUXEMBOURG,
+  UNITED_KINGDOM,
+  IRELAND,
 ]
