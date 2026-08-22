@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest'
 import { geoContains } from 'd3-geo'
 import { feature } from 'topojson-client'
 import rawTopology from 'world-atlas/countries-50m.json'
-import { MARKET_PAGE_RECORDS, marketPageBySlug, type MarketPage } from '@indus/domain'
+import { ALL_MARKET_PAGE_RECORDS as MARKET_PAGE_RECORDS, marketPageBySlug, type MarketPage } from '@indus/domain'
 import { buildMarketMapModel } from './market-geometry'
 
 /**
@@ -191,12 +191,39 @@ describe('lane routing through sanctioned territory', () => {
  * Every written record has to project, not just the released ones — otherwise
  * a market's map is first checked on the day it goes live.
  */
-describe('all 46 records project a map', () => {
+describe('every written record projects a map', () => {
   it('matches Natural Earth geometry for every one', () => {
+    // Counted, not hard-coded: the set grows every time a market is authored,
+    // and a test named for today's total is a test nobody updates.
     const failed = MARKET_PAGE_RECORDS.filter(
       (page) => buildMarketMapModel(page, page.slug) === null
     ).map((p) => p.slug)
     expect(failed).toEqual([])
+  })
+
+  it('places every PLOTTED CITY inside the frame on every one', () => {
+    /*
+      The crossing is fitted to, so it is always in shot. A city is not: the
+      frame is fitted to the country polygon plus the crossing, and Natural
+      Earth's 50m outline is simplified — Singapore's western tip is inside the
+      real coastline and outside the simplified one, so Tuas projected 14px off
+      the left edge and drew a dot with no country under it.
+
+      Caught by hand on the first wave-2 record. Asserted here so it cannot
+      recur silently across the remaining markets, where nobody is looking at
+      every map.
+    */
+    for (const page of MARKET_PAGE_RECORDS) {
+      const model = buildMarketMapModel(page, page.slug)!
+      for (const city of model.cities) {
+        const inFrame =
+          city.x >= model.pad &&
+          city.x <= model.width - model.pad &&
+          city.y >= model.pad &&
+          city.y <= model.height - model.pad
+        expect(inFrame, `${page.slug}: ${city.label.text} at ${Math.round(city.x)},${Math.round(city.y)}`).toBe(true)
+      }
+    }
   })
 
   it('places the crossing marker inside the frame on every one', () => {

@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest'
-import { MARKET_PAGE_RECORDS } from './market-page-records'
+
 import {
+  ALL_MARKET_PAGE_RECORDS as MARKET_PAGE_RECORDS,
   freightBarPercents,
   isRightToLeft,
   marketOrderSequence,
@@ -11,6 +12,7 @@ import {
   releasedMarketPageSlugs,
   transitScore,
 } from './market-pages'
+import { marketBySlug } from './markets'
 
 /**
  * The template's branch coverage.
@@ -173,8 +175,19 @@ describe('coverage — quoting currency', () => {
 describe('coverage — local-language breadcrumb', () => {
   const withLocalName = MARKET_PAGE_RECORDS.filter((p) => p.localName)
 
-  it('is set on 34 markets and omitted where English is official', () => {
-    expect(withLocalName).toHaveLength(34)
+  it('is set where it says something, and omitted where English is official', () => {
+    /*
+      Not a count — that was a wave-1 fixture and it broke the moment wave 2
+      added a record. What matters is that the field earns its place: it exists
+      to show a buyer their own country's name, so it must differ from the
+      English one, and it must be absent where English is official rather than
+      transliterated for the sake of filling the field.
+    */
+    expect(withLocalName.length).toBeGreaterThan(30)
+    for (const page of withLocalName) {
+      const market = marketBySlug(page.slug)!
+      expect(page.localName, `${page.slug} repeats the English name`).not.toBe(market.name)
+    }
     // Nigeria, Ghana, South Africa and the rest of the English-official set
     // omit it rather than transliterating for the sake of the field.
     for (const slug of ['nigeria', 'ghana', 'south-africa', 'zimbabwe', 'zambia']) {
@@ -250,11 +263,15 @@ describe('coverage — port of entry versus border crossing', () => {
 })
 
 describe('the release gate', () => {
-  it('serves every market whose copy has been cleared', () => {
-    // All 46 signed off 2026-08-22. This asserts the COUNT rather than a
-    // hard-coded list, so market 47 arriving unreleased is not a failure.
-    expect(releasedMarketPageSlugs()).toHaveLength(MARKET_PAGE_RECORDS.length)
-    expect(pendingMarketPageSlugs()).toEqual([])
+  it('accounts for every record, released or held', () => {
+    // Deliberately NOT a fixed list, and deliberately not "pending is empty".
+    // The first 46 cleared review on 2026-08-22; wave 2 is authored and held.
+    // Both states are normal, and a test that pins today's split just breaks
+    // on the next sign-off.
+    expect(releasedMarketPageSlugs().length).toBeGreaterThan(0)
+    expect(pendingMarketPageSlugs().length + releasedMarketPageSlugs().length).toBe(
+      MARKET_PAGE_RECORDS.length
+    )
   })
 
   it('never releases a market whose copy is unverified', () => {
