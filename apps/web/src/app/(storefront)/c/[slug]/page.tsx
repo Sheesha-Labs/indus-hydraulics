@@ -86,6 +86,30 @@ export async function generateMetadata({ params, searchParams }: Props): Promise
   })
 }
 
+/**
+ * A category id plus every published category beneath it.
+ *
+ * Breadth-first and level-by-level, so it costs one query per level of depth
+ * rather than one per category. `MAX_DEPTH` bounds it: the tree is three deep
+ * today, and a cycle introduced by bad data must not turn this into an
+ * infinite loop inside a request.
+ */
+const MAX_DEPTH = 6
+
+async function descendantCategoryIds(rootId: string): Promise<string[]> {
+  const all = [rootId]
+  let frontier = [rootId]
+  for (let depth = 0; depth < MAX_DEPTH && frontier.length > 0; depth++) {
+    const children = await db.category.findMany({
+      where: { parentId: { in: frontier }, isPublished: true },
+      select: { id: true },
+    })
+    frontier = children.map((c) => c.id).filter((id) => !all.includes(id))
+    all.push(...frontier)
+  }
+  return all
+}
+
 export default async function CategoryPage({ params, searchParams }: Props) {
   const { slug } = await params
   const sp = await searchParams
@@ -103,8 +127,17 @@ export default async function CategoryPage({ params, searchParams }: Props) {
   const page = Math.max(1, parseInt(sp.page ?? '1', 10))
   const selectedBrands = sp.brands ? sp.brands.split(',').filter(Boolean) : []
 
+  // Products roll up from the whole sub-tree, not just this category.
+  //
+  // Listings hang off leaf categories, so a hub with children of its own owned
+  // nothing directly and rendered "0 SKUs · 0 brands" over the "NOTHING LISTED
+  // YET" empty state — while its own sub-category chips sat directly above,
+  // linking to pages full of products. Every branch category in the tree did
+  // this: Ferrules, Metallic Hoses, and every root reached from /c.
+  const categoryIds = await descendantCategoryIds(category.id)
+
   const where = {
-    categoryId: category.id,
+    categoryId: { in: categoryIds },
     status: 'active' as const,
     ...(selectedBrands.length > 0 ? {
       brand: { slug: { in: selectedBrands } },
@@ -126,7 +159,7 @@ export default async function CategoryPage({ params, searchParams }: Props) {
     db.product.count({ where }),
     db.product.groupBy({
       by: ['brandId'],
-      where: { categoryId: category.id, status: 'active' },
+      where: { categoryId: { in: categoryIds }, status: 'active' },
       _count: { _all: true },
     }).then(async (groups) => {
       const ids = groups.map((g) => g.brandId).filter(Boolean) as string[]

@@ -108,8 +108,15 @@ export default function ProductTabs({
           <div>
             <h2 className="mb-4 font-serif text-[26px] font-normal tracking-[-0.01em]">Product description</h2>
             {descriptionLong ? (
+              /*
+                `ih-rich-text` (globals.css), not `prose`. @tailwindcss/typography
+                is not installed and globals.css declares no `@plugin`, so every
+                `prose*` class here compiled to nothing while preflight still
+                stripped heading sizes and list markers — headings, bullets and
+                tables in stored product HTML all rendered as flat body text.
+              */
               <div
-                className="prose prose-sm max-w-none text-ih-ink-2 leading-[1.65] prose-headings:text-ih-ink prose-headings:font-semibold"
+                className="ih-rich-text max-w-none"
                 dangerouslySetInnerHTML={{ __html: descriptionLong }}
               />
             ) : descriptionShort ? (

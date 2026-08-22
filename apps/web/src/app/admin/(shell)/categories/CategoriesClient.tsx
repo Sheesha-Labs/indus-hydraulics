@@ -100,7 +100,7 @@ export default function CategoriesClient({ categories, templates }: Props) {
                 <CategoryRows
                   key={root.id}
                   cat={root}
-                  subRows={childrenByParent[root.id] ?? []}
+                  childrenByParent={childrenByParent}
                   depth={0}
                   editingId={editingId}
                   setEditingId={setEditingId}
@@ -116,7 +116,7 @@ export default function CategoriesClient({ categories, templates }: Props) {
                   <CategoryRows
                     key={c.id}
                     cat={c}
-                    subRows={childrenByParent[c.id] ?? []}
+                    childrenByParent={childrenByParent}
                     depth={0}
                     editingId={editingId}
                     setEditingId={setEditingId}
@@ -137,8 +137,9 @@ export default function CategoriesClient({ categories, templates }: Props) {
  *
  * The tree was indenting with `style={{ paddingLeft: 16 + depth * 24 }}`,
  * which CLAUDE.md §2.1 bans and Tailwind could not have produced from a
- * runtime value anyway. Depth only ever reaches 1 here — a root and its
- * children — so a small map covers it with room to spare.
+ * runtime value anyway. A small map covers the depths this tree actually
+ * reaches; anything deeper clamps to the last entry rather than losing its
+ * indent entirely.
  *
  * The padding goes on the label INSIDE the cell, not on the cell. TableCell
  * carries `first:pl-4`, and a `pl-10` on the same element does not beat it:
@@ -151,7 +152,7 @@ const DEPTH_INDENT = ['pl-0', 'pl-6', 'pl-12', 'pl-[72px]'] as const
 
 function CategoryRows({
   cat,
-  subRows,
+  childrenByParent,
   depth,
   editingId,
   setEditingId,
@@ -159,7 +160,18 @@ function CategoryRows({
   templates,
 }: {
   cat: Cat
-  subRows: Cat[]
+  /**
+   * The whole parent → children index, not this row's children.
+   *
+   * This used to take a `subRows` array, and the recursive call passed `[]` —
+   * so a category three levels down existed, had products, and was reachable
+   * on the storefront, but never appeared on this page at all. Eight of them
+   * did (Industrial Hoses › Metallic Hoses › PTFE Hoses and its siblings), and
+   * the only symptom was a row count that quietly did not match the header.
+   * Passing the index down means depth is bounded by the data, not by the
+   * component.
+   */
+  childrenByParent: Record<string, Cat[]>
   depth: number
   editingId: string | null
   setEditingId: (id: string | null) => void
@@ -229,21 +241,42 @@ function CategoryRows({
         </TableRow>
       )}
 
-      {subRows.map((child) => (
+      {(childrenByParent[cat.id] ?? []).map((child) => (
         <CategoryRows
           key={child.id}
           cat={child}
-          subRows={[]}
+          childrenByParent={childrenByParent}
           depth={depth + 1}
           editingId={editingId}
           setEditingId={setEditingId}
           parents={parents}
           templates={templates}
-         
         />
       ))}
     </>
   )
+}
+
+/**
+ * "Hoses & Fittings › Ferrules" for the parent picker.
+ *
+ * A flat list of names is ambiguous the moment the tree is three deep: several
+ * series categories read almost identically, and the picker gave no way to tell
+ * which branch one sat on. Walking up by parentId is bounded by `all.length`
+ * so a cycle in the data cannot hang the render — the server's own cycle check
+ * should prevent one, but this runs on whatever the DB actually holds.
+ */
+function categoryPath(cat: Cat, all: Cat[]): string {
+  const byId = new Map(all.map((c) => [c.id, c]))
+  const names = [cat.name]
+  let cursor = cat.parentId
+  for (let hops = 0; cursor && hops < all.length; hops++) {
+    const parent = byId.get(cursor)
+    if (!parent) break
+    names.unshift(parent.name)
+    cursor = parent.parentId
+  }
+  return names.join(' › ')
 }
 
 function CategoryForm({
@@ -320,7 +353,7 @@ function CategoryForm({
               .filter((p) => p.id !== existing?.id)
               .map((p) => (
                 <option key={p.id} value={p.id}>
-                  {p.name}
+                  {categoryPath(p, parents)}
                 </option>
               ))}
           </select>
