@@ -64,7 +64,10 @@ const getProduct = cache(async (decoded: string) => {
       images: { orderBy: { position: 'asc' }, include: { media: true } },
       specs: { orderBy: { position: 'asc' } },
       documents: { orderBy: { position: 'asc' }, include: { media: true } },
-      crossReferences: { take: 12 },
+      // Ordered so the Compatibility tab and the equivalence line above the
+      // size table list the same references in the same order every render.
+      crossReferences: { take: 12, orderBy: { competitorMpn: 'asc' } },
+      variants: { orderBy: { position: 'asc' } },
       faqs: { orderBy: { position: 'asc' } },
       supersededBy: { select: { sku: true, title: true, slug: true } },
       specTemplate: {
@@ -278,6 +281,33 @@ export default async function ProductPage({ params, searchParams }: Props) {
     compatibility: r.compatibility,
   }))
 
+  // Size table. `dimensions` crosses the server/client boundary as plain JSON,
+  // which it already is — the mapper exists to drop the columns the table does
+  // not read rather than to reshape anything.
+  const tabVariants = product.variants.map((v) => ({
+    partNumber: v.partNumber,
+    hoseDash: v.hoseDash,
+    hoseInch: v.hoseInch,
+    hoseDn: v.hoseDn,
+    portLabel: v.portLabel,
+    competitorBrand: v.competitorBrand,
+    competitorMpn: v.competitorMpn,
+    dimensions: v.dimensions,
+  }))
+  // One line above the table naming what this listing replaces. Built from the
+  // cross-reference rows rather than restated in copy, so it cannot drift from
+  // what the Compatibility tab shows.
+  const equivalenceBrand = (() => {
+    const first = product.crossReferences[0]?.competitorBrand
+    if (!first) return null
+    return product.crossReferences.every((r) => r.competitorBrand === first) ? first : null
+  })()
+  const equivalenceNote = equivalenceBrand
+    ? `Replaces the ${equivalenceBrand} ${product.crossReferences
+        .map((r) => r.competitorMpn)
+        .join(' / ')} series. Quote the Indus part number, or send us the ${equivalenceBrand} number and we will cross it.`
+    : null
+
   // JSON-LD assembly. Pages with FAQs additionally emit a FAQPage entity.
   const productUrl = urlFor(`/p/${product.slug}`)
   const availability =
@@ -301,6 +331,14 @@ export default async function ProductPage({ params, searchParams }: Props) {
     category: product.category ? { name: product.category.name } : null,
     weightKg: product.weightKg ? Number(product.weightKg) : null,
     countryOfOrigin: product.countryOfOrigin,
+    variants: product.variants.map((v) => ({
+      sku: v.partNumber,
+      name: [product.title, v.hoseInch ? `${v.hoseInch} hose` : null, v.portLabel]
+        .filter(Boolean)
+        .join(' · '),
+      equivalentBrand: v.competitorBrand,
+      equivalentMpn: v.competitorMpn,
+    })),
     // Always emit an Offer for active SKUs — RFQ-only products get
     // availability + seller without a price, which AI shopping agents
     // and Google's Merchant Center treat as "request quote" rather than
@@ -585,6 +623,9 @@ export default async function ProductPage({ params, searchParams }: Props) {
           specGroups={tabSpecGroups}
           documents={tabDocuments}
           crossReferences={tabCrossRefs}
+          variants={tabVariants}
+          variantEquivalenceNote={equivalenceNote}
+          variantEquivalenceBrand={equivalenceBrand}
           faqs={product.faqs.map((f) => ({
             id: f.id,
             question: f.question,

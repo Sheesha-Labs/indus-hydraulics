@@ -59,6 +59,21 @@ export type ProductLdInput = {
   weightKg?: number | null
   /** Country of origin — ISO-3166 alpha-2 ("DE") or full name ("Germany"). */
   countryOfOrigin?: string | null
+  /**
+   * Orderable sizes under this listing, emitted as `hasVariant`.
+   *
+   * A crawler that only sees the listing-level SKU cannot answer "do you make
+   * this in -12 with a 3/4-16 thread", and neither can an AI shopping agent —
+   * the size table is markup-invisible without this. Where a variant states a
+   * competitor equivalent it rides along as an `additionalProperty`, since
+   * that identifier is the query these pages are actually found by.
+   */
+  variants?: Array<{
+    sku: string
+    name: string
+    equivalentBrand?: string | null
+    equivalentMpn?: string | null
+  }> | null
   offers?: {
     price?: number | null
     currency?: string | null
@@ -222,6 +237,19 @@ export function buildProductLd(input: ProductLdInput): JsonLd {
     }
   }
   if (input.countryOfOrigin) base.countryOfOrigin = input.countryOfOrigin
+  if (input.variants && input.variants.length > 0) {
+    base.hasVariant = input.variants.map((v) => {
+      const node: JsonLd = { '@type': 'Product', sku: v.sku, name: v.name, mpn: v.sku }
+      if (v.equivalentBrand && v.equivalentMpn) {
+        node.additionalProperty = {
+          '@type': 'PropertyValue',
+          name: `${v.equivalentBrand} equivalent part number`,
+          value: v.equivalentMpn,
+        }
+      }
+      return node
+    })
+  }
   if (input.offers) {
     const o: JsonLd = { '@type': 'Offer' }
     const price = input.offers.price

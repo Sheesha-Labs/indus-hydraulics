@@ -772,11 +772,20 @@ model Product {
   jsonLdOverride     Json?
   seoUpdatedAt       DateTime?
   seoUpdatedById     String?
+  /// Extra tokens folded into `searchTsv` at weight A, space-separated.
+  /// Holds the identifiers a buyer types that are NOT this row's own sku or
+  /// mpn — competitor part numbers and per-size variant part numbers. The
+  /// FTS column is `GENERATED ALWAYS`, so it cannot reach into
+  /// `product_cross_references` or `product_variants`; denormalising those
+  /// identifiers here is what makes them findable. Written by the importer
+  /// that owns them — never hand-edited.
+  searchAliases      String?
   // FTS column managed by raw SQL migration (Unsupported: tsvector)
   searchTsv          Unsupported("tsvector")?
 
   images          ProductImage[]
   specs           ProductSpec[]
+  variants        ProductVariant[]
   documents       ProductDocument[]
   crossReferences ProductCrossReference[]
   faqs            ProductFaq[]
@@ -803,6 +812,55 @@ model ProductImage {
 
   @@index([productId])
   @@map("product_images")
+}
+
+/// One orderable size inside a product listing.
+///
+/// A catalogue family like "JIC 37° female swivel 90° elbow crimp fitting" is
+/// ONE listing with one page, one description and one image — and twenty-odd
+/// orderable sizes underneath it. Splitting those sizes into separate
+/// `Product` rows would give us twenty near-identical thin pages competing
+/// with each other; folding them into `ProductSpec` would flatten a table
+/// into key/value prose. This is the size table, kept as a table.
+///
+/// `dimensions` is deliberately open. Every catalogue prints a different set
+/// of lettered dimensions (A/B/H on a rigid fitting, A/B/E on an elbow,
+/// A/B/F on a flange head) and pinning them to fixed columns would mean a
+/// migration per catalogue. The column ORDER and the human labels live in
+/// `@indus/domain/variant-columns`, which is also what stops the storefront
+/// from rendering a raw JSON key at a customer.
+model ProductVariant {
+  id        String  @id @default(uuid())
+  productId String
+  product   Product @relation(fields: [productId], references: [id], onDelete: Cascade)
+
+  /// Our orderable part number for this size. Unique catalogue-wide — this is
+  /// what a customer quotes back to us on a PO.
+  partNumber String  @unique
+  position   Int     @default(0)
+
+  /// Hose bore the fitting crimps onto: dash size, inch label, DN.
+  hoseDash Int?
+  hoseInch String?
+  hoseDn   Int?
+
+  /// The other end. `portLabel` is printed verbatim (`3/4"-16`, `M18X1.5`,
+  /// `1.1/4"` for a flange head); `portDash` is the SAE dash equivalent where
+  /// one exists, for filtering.
+  portLabel String?
+  portDash  Int?
+
+  /// Lettered dimensions from the source catalogue, e.g. `{"A":51,"B":30,"E":24}`.
+  dimensions Json?
+
+  /// Equivalent competitor part number for THIS size (not the family), when
+  /// the source lets us state one. Rendered beside our own part number.
+  competitorBrand String?
+  competitorMpn   String?
+
+  @@index([productId])
+  @@index([hoseDash])
+  @@map("product_variants")
 }
 
 model ProductSpec {
