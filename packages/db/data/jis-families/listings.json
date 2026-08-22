@@ -1,0 +1,490 @@
+{
+ "source": "Master supplier hydraulic hose fitting catalogue",
+ "products": [
+  {
+   "sku": "IH-JP-KOMATSU-FEM-90",
+   "title": "90° Komatsu Female Hose Fitting (JIS Metric)",
+   "slug": "90-komatsu-female-hose-fitting-jis-metric",
+   "categorySlug": "japanese-hose-fittings",
+   "specTemplateSlug": "threaded-fitting-spec",
+   "focusKeyword": "Komatsu 90 elbow hose fitting",
+   "imageFromSku": "IH-JP-KOMATSU-FEM",
+   "descriptionShort": "90° Komatsu Female (JIS Metric) — 30° cone seat, 60° included (JIS B8363), 10 sizes, -04 to -24.",
+   "descriptionLong": "<p>The <strong>90° Komatsu Female Hose Fitting (JIS Metric)</strong> is a hydraulic hose fitting with 30° cone seat, 60° included (JIS B8363).</p>\n<p>Completes the Komatsu family — the straight male and female have been on the site, the 90° elbow had not. The seat is the same 30° cone (60° included) as the rest of the family.</p>\n<h3>Construction</h3>\n<ul>\n<li>Configuration: 90 elbow</li>\n<li>Thread: M14×1.5 to M42×1.5</li>\n<li>Sealing form: 30° cone seat, 60° included (JIS B8363)</li>\n<li>Gender: female-swivel</li>\n<li>Material: carbon steel, zinc-plated and Cr3+ passivated (316 stainless on request)</li>\n</ul>\n<h3>Sizes</h3>\n<p>10 sizes, -04 to -24, threads M14×1.5 to M42×1.5. The full size and dimension table is on this page.</p>\n<h3>How to order</h3>\n<p>Quote the Indus part number for the size you need. Tell us the hose grade and bore and we will include the matching crimp ferrule — the ferrule follows the hose, not the fitting. Indus crimps and pressure-tests assemblies before dispatch.</p>",
+   "seoTitle": "90° Komatsu Female Hose Fitting (JIS Metric) | M14×1.5–M42×1.5",
+   "seoDescription": "90° Komatsu Female Hose Fitting (JIS Metric) — 10 sizes (-04 to -24), M14×1.5 to M42×1.5. Carbon steel or 316 stainless, ex-Dubai.",
+   "faqs": [
+    {
+     "question": "Is this a 30° cone or a 60° cone?",
+     "answer": "Both names describe this seat. 30° is the angle measured from the centreline, 60° is the angle across the full cone. Our supplier uses one convention in one catalogue and the other in another, which is a common source of confusion on Japanese fittings. If a drawing or a competitor part number quotes either number for a JIS metric fitting, it is this seat."
+    },
+    {
+     "question": "What is the sealing form?",
+     "answer": "30° cone seat, 60° included (JIS B8363). Pair it with the matching counterpart — a mismatched sealing form will seat but will not hold pressure."
+    },
+    {
+     "question": "What sizes are available?",
+     "answer": "10 sizes, -04 to -24, threads M14×1.5 to M42×1.5. Every row in the table on this page is an orderable part number."
+    },
+    {
+     "question": "What is the maximum working pressure?",
+     "answer": "The hose grade and bore set the assembly rating, not the fitting. A correctly crimped fitting does not derate the hose. Tell us the grade and bore on the RFQ and we will confirm the figure in writing."
+    },
+    {
+     "question": "Which ferrule pairs with this fitting?",
+     "answer": "The one that matches your hose grade — the skive/no-skive choice follows the hose construction, not the fitting end. Send the hose grade with your enquiry and we will specify the ferrule and the crimp diameter."
+    },
+    {
+     "question": "Is stainless steel available?",
+     "answer": "Yes — 316 stainless on request across the range. Standard supply is carbon steel, zinc-plated and Cr3+ passivated. Add \"-SS\" to the part number when you enquire."
+    },
+    {
+     "question": "Can Indus crimp the assembly?",
+     "answer": "Yes. We crimp, pressure-test and certify assemblies in Dubai and ship UAE-wide. Send the hose grade, bore, both end fittings, overall length and orientation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Fitting Configuration",
+     "value": "90-elbow",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "fitting_configuration"
+    },
+    {
+     "group": "Identification",
+     "label": "Thread Form",
+     "value": "M14×1.5 to M42×1.5",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "thread_form"
+    },
+    {
+     "group": "Identification",
+     "label": "Sealing Form",
+     "value": "30° cone seat, 60° included (JIS B8363)",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "sealing_form"
+    },
+    {
+     "group": "Identification",
+     "label": "Thread Gender",
+     "value": "female-swivel",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "gender"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size Range",
+     "value": "-04 to -24",
+     "unit": null,
+     "position": 4,
+     "isFilterable": true,
+     "templateKey": "nominal_size_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "Carbon steel (316 stainless on request)",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "material"
+    },
+    {
+     "group": "Construction",
+     "label": "Surface Treatment",
+     "value": "Zinc-plated, Cr3+ passivated, RoHS-compliant",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "surface_treatment"
+    },
+    {
+     "group": "Compliance",
+     "label": "Applicable Standards",
+     "value": "JIS B8363",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": "applicable_standards"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-JP-KOMATSU-FEM-90-0414",
+     "hoseDash": 4,
+     "hoseInch": "1/4\"",
+     "hoseDn": 6,
+     "portLabel": "M14×1.5",
+     "portDash": 14,
+     "dimensions": {
+      "S1": 19.0,
+      "S2": 19.0,
+      "A": 30.0,
+      "C": 10.5,
+      "H": 38.0
+     },
+     "sourcePart": "28691-14-04",
+     "position": 0
+    },
+    {
+     "partNumber": "IH-JP-KOMATSU-FEM-90-0516",
+     "hoseDash": 5,
+     "hoseInch": "5/16\"",
+     "hoseDn": 8,
+     "portLabel": "M16×1.5",
+     "portDash": 16,
+     "dimensions": {
+      "S1": 22.0,
+      "S2": 22.0,
+      "A": 33.0,
+      "C": 10.0,
+      "H": 44.0
+     },
+     "sourcePart": "28691-16-05",
+     "position": 1
+    },
+    {
+     "partNumber": "IH-JP-KOMATSU-FEM-90-0614",
+     "hoseDash": 6,
+     "hoseInch": "3/8\"",
+     "hoseDn": 10,
+     "portLabel": "M14×1.5",
+     "portDash": 14,
+     "dimensions": {
+      "S1": 19.0,
+      "S2": 19.0,
+      "A": 35.5,
+      "C": 10.5,
+      "H": 43.3
+     },
+     "sourcePart": "28691-14-06",
+     "position": 2
+    },
+    {
+     "partNumber": "IH-JP-KOMATSU-FEM-90-0618",
+     "hoseDash": 6,
+     "hoseInch": "3/8\"",
+     "hoseDn": 10,
+     "portLabel": "M18×1.5",
+     "portDash": 18,
+     "dimensions": {
+      "S1": 24.0,
+      "S2": 24.0,
+      "A": 35.3,
+      "C": 11.5,
+      "H": 46.3
+     },
+     "sourcePart": "28691-18-06",
+     "position": 3
+    },
+    {
+     "partNumber": "IH-JP-KOMATSU-FEM-90-0822",
+     "hoseDash": 8,
+     "hoseInch": "1/2\"",
+     "hoseDn": 12,
+     "portLabel": "M22×1.5",
+     "portDash": 22,
+     "dimensions": {
+      "S1": 27.0,
+      "S2": 27.0,
+      "A": 41.0,
+      "C": 14.0,
+      "H": 52.5
+     },
+     "sourcePart": "28691-22-08",
+     "position": 4
+    },
+    {
+     "partNumber": "IH-JP-KOMATSU-FEM-90-1024",
+     "hoseDash": 10,
+     "hoseInch": "5/8\"",
+     "hoseDn": 16,
+     "portLabel": "M24×1.5",
+     "portDash": 24,
+     "dimensions": {
+      "S1": 32.0,
+      "S2": 32.0,
+      "A": 56.5,
+      "C": 15.0,
+      "H": 59.0
+     },
+     "sourcePart": "28691-24-10",
+     "position": 5
+    },
+    {
+     "partNumber": "IH-JP-KOMATSU-FEM-90-1230",
+     "hoseDash": 12,
+     "hoseInch": "3/4\"",
+     "hoseDn": 20,
+     "portLabel": "M30×1.5",
+     "portDash": 30,
+     "dimensions": {
+      "S1": 36.0,
+      "S2": 36.0,
+      "A": 65.5,
+      "C": 18.3,
+      "H": 68.5
+     },
+     "sourcePart": "28691-30-12",
+     "position": 6
+    },
+    {
+     "partNumber": "IH-JP-KOMATSU-FEM-90-1633",
+     "hoseDash": 16,
+     "hoseInch": "1\"",
+     "hoseDn": 25,
+     "portLabel": "M33×1.5",
+     "portDash": 33,
+     "dimensions": {
+      "S1": 41.0,
+      "S2": 41.0,
+      "A": 76.7,
+      "C": 21.3,
+      "H": 76.0
+     },
+     "sourcePart": "28691-33-16",
+     "position": 7
+    },
+    {
+     "partNumber": "IH-JP-KOMATSU-FEM-90-2036",
+     "hoseDash": 20,
+     "hoseInch": "1.1/4\"",
+     "hoseDn": 32,
+     "portLabel": "M36×1.5",
+     "portDash": 36,
+     "dimensions": {
+      "S1": 46.0,
+      "S2": 46.0,
+      "A": 93.0,
+      "C": 20.0,
+      "H": 90.0
+     },
+     "sourcePart": "28691-36-20",
+     "position": 8
+    },
+    {
+     "partNumber": "IH-JP-KOMATSU-FEM-90-2442",
+     "hoseDash": 24,
+     "hoseInch": "1.1/2\"",
+     "hoseDn": 40,
+     "portLabel": "M42×1.5",
+     "portDash": 42,
+     "dimensions": {
+      "S1": 55.0,
+      "S2": 55.0,
+      "A": 109.4,
+      "C": 18.8,
+      "H": 103.0
+     },
+     "sourcePart": "28691-42-24W",
+     "position": 9
+    }
+   ],
+   "sourceFamily": "28691 (p92)"
+  },
+  {
+   "sku": "IH-JP-GAS-MAL",
+   "title": "JIS Gas Male 60° Cone Hose Fitting",
+   "slug": "jis-gas-male-60-cone-hose-fitting",
+   "categorySlug": "japanese-hose-fittings",
+   "specTemplateSlug": "threaded-fitting-spec",
+   "focusKeyword": "JIS gas male hose fitting",
+   "imageFromSku": "IH-JP-KOMATSU-MAL",
+   "descriptionShort": "JIS Gas Male 60° Cone — 30° cone seat, 60° included (JIS B8363), 5 sizes, -04 to -16.",
+   "descriptionLong": "<p>The <strong>JIS Gas Male 60° Cone Hose Fitting</strong> is a hydraulic hose fitting with 30° cone seat, 60° included (JIS B8363).</p>\n<p>The male half of the JIS gas range — a BSP-form thread used on Japanese equipment, distinct from the JIS metric (Komatsu) threads in the same category. Check which thread your port carries before ordering; the two are not interchangeable.</p>\n<h3>Construction</h3>\n<ul>\n<li>Configuration: straight</li>\n<li>Thread: G1&quot;×11 to G3/8&quot;×19</li>\n<li>Sealing form: 30° cone seat, 60° included (JIS B8363)</li>\n<li>Gender: male</li>\n<li>Material: carbon steel, zinc-plated and Cr3+ passivated (316 stainless on request)</li>\n</ul>\n<h3>Sizes</h3>\n<p>5 sizes, -04 to -16, threads G1&quot;×11 to G3/8&quot;×19. The full size and dimension table is on this page.</p>\n<h3>How to order</h3>\n<p>Quote the Indus part number for the size you need. Tell us the hose grade and bore and we will include the matching crimp ferrule — the ferrule follows the hose, not the fitting. Indus crimps and pressure-tests assemblies before dispatch.</p>",
+   "seoTitle": "JIS Gas Male 60° Cone Hose Fitting | G1\"×11–G3/8\"×19",
+   "seoDescription": "JIS Gas Male 60° Cone Hose Fitting — 5 sizes (-04 to -16), G1\"×11 to G3/8\"×19. Carbon steel or 316 stainless, ex-Dubai.",
+   "faqs": [
+    {
+     "question": "How is JIS gas different from JIS metric?",
+     "answer": "The thread. JIS gas uses a BSP-form parallel thread; JIS metric (the Komatsu style) uses a metric thread. The 30° cone seat (60° included) is the same on both, so the seat will look right and the thread will not fit."
+    },
+    {
+     "question": "What is the sealing form?",
+     "answer": "30° cone seat, 60° included (JIS B8363). Pair it with the matching counterpart — a mismatched sealing form will seat but will not hold pressure."
+    },
+    {
+     "question": "What sizes are available?",
+     "answer": "5 sizes, -04 to -16, threads G1\"×11 to G3/8\"×19. Every row in the table on this page is an orderable part number."
+    },
+    {
+     "question": "What is the maximum working pressure?",
+     "answer": "The hose grade and bore set the assembly rating, not the fitting. A correctly crimped fitting does not derate the hose. Tell us the grade and bore on the RFQ and we will confirm the figure in writing."
+    },
+    {
+     "question": "Which ferrule pairs with this fitting?",
+     "answer": "The one that matches your hose grade — the skive/no-skive choice follows the hose construction, not the fitting end. Send the hose grade with your enquiry and we will specify the ferrule and the crimp diameter."
+    },
+    {
+     "question": "Is stainless steel available?",
+     "answer": "Yes — 316 stainless on request across the range. Standard supply is carbon steel, zinc-plated and Cr3+ passivated. Add \"-SS\" to the part number when you enquire."
+    },
+    {
+     "question": "Can Indus crimp the assembly?",
+     "answer": "Yes. We crimp, pressure-test and certify assemblies in Dubai and ship UAE-wide. Send the hose grade, bore, both end fittings, overall length and orientation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Fitting Configuration",
+     "value": "straight",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "fitting_configuration"
+    },
+    {
+     "group": "Identification",
+     "label": "Thread Form",
+     "value": "G1\"×11 to G3/8\"×19",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "thread_form"
+    },
+    {
+     "group": "Identification",
+     "label": "Sealing Form",
+     "value": "30° cone seat, 60° included (JIS B8363)",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "sealing_form"
+    },
+    {
+     "group": "Identification",
+     "label": "Thread Gender",
+     "value": "male",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "gender"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size Range",
+     "value": "-04 to -16",
+     "unit": null,
+     "position": 4,
+     "isFilterable": true,
+     "templateKey": "nominal_size_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "Carbon steel (316 stainless on request)",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "material"
+    },
+    {
+     "group": "Construction",
+     "label": "Surface Treatment",
+     "value": "Zinc-plated, Cr3+ passivated, RoHS-compliant",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "surface_treatment"
+    },
+    {
+     "group": "Compliance",
+     "label": "Applicable Standards",
+     "value": "JIS B8363",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": "applicable_standards"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-JP-GAS-MAL-0404",
+     "hoseDash": 4,
+     "hoseInch": "1/4\"",
+     "hoseDn": 6,
+     "portLabel": "G1/4\"×19",
+     "portDash": 4,
+     "dimensions": {
+      "S1": 17.0,
+      "A": 29.0,
+      "B": 16.0
+     },
+     "sourcePart": "19611-04-04",
+     "position": 0
+    },
+    {
+     "partNumber": "IH-JP-GAS-MAL-0606",
+     "hoseDash": 6,
+     "hoseInch": "3/8\"",
+     "hoseDn": 10,
+     "portLabel": "G3/8\"×19",
+     "portDash": 6,
+     "dimensions": {
+      "S1": 19.0,
+      "A": 31.0,
+      "B": 18.0
+     },
+     "sourcePart": "19611-06-06",
+     "position": 1
+    },
+    {
+     "partNumber": "IH-JP-GAS-MAL-0808",
+     "hoseDash": 8,
+     "hoseInch": "1/2\"",
+     "hoseDn": 12,
+     "portLabel": "G1/2\"×14",
+     "portDash": 8,
+     "dimensions": {
+      "S1": 22.0,
+      "A": 35.5,
+      "B": 20.0
+     },
+     "sourcePart": "19611-08-08",
+     "position": 2
+    },
+    {
+     "partNumber": "IH-JP-GAS-MAL-1212",
+     "hoseDash": 12,
+     "hoseInch": "3/4\"",
+     "hoseDn": 20,
+     "portLabel": "G3/4\"×14",
+     "portDash": 12,
+     "dimensions": {
+      "S1": 30.0,
+      "A": 41.0,
+      "B": 22.0
+     },
+     "sourcePart": "19611-12-12",
+     "position": 3
+    },
+    {
+     "partNumber": "IH-JP-GAS-MAL-1616",
+     "hoseDash": 16,
+     "hoseInch": "1\"",
+     "hoseDn": 25,
+     "portLabel": "G1\"×11",
+     "portDash": 16,
+     "dimensions": {
+      "S1": 36.0,
+      "A": 45.5,
+      "B": 24.0
+     },
+     "sourcePart": "19611-16-16",
+     "position": 4
+    }
+   ],
+   "sourceFamily": "19611 (p93)"
+  }
+ ]
+}
