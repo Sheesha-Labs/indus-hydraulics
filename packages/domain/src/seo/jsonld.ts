@@ -320,12 +320,22 @@ export function buildArticleLd(input: ArticleLdInput): JsonLd {
   return mergeJsonLd(base, input.override)
 }
 
+/** A place a service covers, when the schema.org type is not the default. */
+export type AreaServed = { name: string; type: 'AdministrativeArea' | 'Country' }
+
 export type ServiceLdInput = {
   name: string
   description?: string | null
   url: string
-  /** Plain place names — "Dubai", "Sharjah". Emitted as AdministrativeArea. */
-  areaServed: string[]
+  /**
+   * Places the service covers.
+   *
+   * A plain string is emitted as `AdministrativeArea`, which is correct for
+   * an emirate or a region and is what every existing caller passes. Pass
+   * `{ name, type: 'Country' }` for a sovereign state — `AdministrativeArea`
+   * is a subdivision, so using it for Saudi Arabia is simply the wrong type.
+   */
+  areaServed: (string | AreaServed)[]
   /** @id of the providing Organization, so the Service hangs off the real entity. */
   providerId: string
   providerName: string
@@ -356,10 +366,11 @@ export function buildServiceLd(input: ServiceLdInput): JsonLd {
       '@id': input.providerId,
       name: input.providerName,
     },
-    areaServed: input.areaServed.map((name) => ({
-      '@type': 'AdministrativeArea',
-      name,
-    })),
+    areaServed: input.areaServed.map((a) =>
+      typeof a === 'string'
+        ? { '@type': 'AdministrativeArea', name: a }
+        : { '@type': a.type, name: a.name },
+    ),
   }
   return mergeJsonLd(base, input.override)
 }

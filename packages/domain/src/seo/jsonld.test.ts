@@ -323,6 +323,27 @@ describe('buildServiceLd', () => {
     ])
   })
 
+  it('emits Country for a sovereign state', () => {
+    // AdministrativeArea is a subdivision type. Correct for an emirate, wrong
+    // for Saudi Arabia — which is what the /markets pages pass.
+    const ld = buildServiceLd({
+      ...base,
+      areaServed: [{ name: 'Saudi Arabia', type: 'Country' }],
+    }) as Record<string, unknown>
+    expect(ld.areaServed).toEqual([{ '@type': 'Country', name: 'Saudi Arabia' }])
+  })
+
+  it('accepts both shapes in one call', () => {
+    const ld = buildServiceLd({
+      ...base,
+      areaServed: ['Dubai', { name: 'Oman', type: 'Country' }],
+    }) as Record<string, unknown>
+    expect(ld.areaServed).toEqual([
+      { '@type': 'AdministrativeArea', name: 'Dubai' },
+      { '@type': 'Country', name: 'Oman' },
+    ])
+  })
+
   it('omits optional fields rather than emitting nulls', () => {
     const ld = buildServiceLd(base) as Record<string, unknown>
     expect(ld).not.toHaveProperty('description')

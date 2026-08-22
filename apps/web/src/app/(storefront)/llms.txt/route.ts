@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server'
 import { db } from '@indus/db'
+import { marketsOrdered, serviceAreaNames } from '@indus/domain'
 import { BASE_URL, urlFor } from '../../../lib/seo'
 
 /**
@@ -56,6 +57,24 @@ export async function GET(): Promise<NextResponse> {
   lines.push(`- [Industries we serve](${urlFor('/industries')}): the sectors and applications our engineers cover.`)
   lines.push(`- [Brand partners](${urlFor('/brands')}): the authorized-distributor relationships behind our catalogue.`)
   lines.push(`- [Contact](${urlFor('/contact')}): Dubai HQ address, phone, WhatsApp, email, hours.`)
+  lines.push('')
+
+  // Where we operate. Two distinct things, and the distinction matters to an
+  // assistant answering "do they cover X": /locations is on-site service we
+  // drive to inside the UAE, /markets is export from the Dubai warehouse. We
+  // hold no premises outside Dubai.
+  lines.push('## Where we operate')
+  lines.push('')
+  lines.push(
+    `- [Service areas](${urlFor('/locations')}): UAE emirates where we do on-site hose assembly and replacement — ${serviceAreaNames().join(', ')}. On-site service, from the Dubai base.`,
+  )
+  for (const m of marketsOrdered()) {
+    lines.push(
+      // `leadTime` already reads "Typically 3 working days from dispatch" —
+      // do not append the qualifier again.
+      `- [${m.name}](${urlFor(`/markets/${m.slug}`)}): export from the Dubai warehouse. ${m.leadTime}. ${m.routes.join(' or ')}. No premises in ${m.name}.`,
+    )
+  }
   lines.push('')
 
   if (categories.length > 0) {

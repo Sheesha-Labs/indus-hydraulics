@@ -1073,6 +1073,11 @@ async function seedNavigationMenus() {
       { label: 'About', url: '/hydraulic-components-supplier-uae' },
       { label: 'Brands', url: '/brands' },
       { label: 'Industries', url: '/industries' },
+      // Both surfaces were reachable only from sitemap.xml before this — no
+      // page on the site linked to either, which is why /locations never
+      // accumulated internal links.
+      { label: 'Service areas', url: '/locations' },
+      { label: 'Export markets', url: '/markets' },
       { label: 'Blog', url: '/blog' },
       { label: 'Contact', url: '/contact' },
     ]
