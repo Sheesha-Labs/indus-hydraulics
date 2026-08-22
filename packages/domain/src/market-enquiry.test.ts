@@ -122,11 +122,40 @@ describe('buildApplicationContext', () => {
     ])
   })
 
-  it('distinguishes the two forms, so the split is countable', () => {
+  it('distinguishes all three forms, so the split is countable', () => {
     const base = { marketName: 'Nigeria', countryCode: 'NG' } as const
     const long = buildApplicationContext({ ...base, source: 'market_quote_form' })
     const short = buildApplicationContext({ ...base, source: 'market_quick_enquiry' })
-    expect(long).not.toBe(short)
+    const index = buildApplicationContext({ marketName: 'Nigeria', source: 'markets_index_enquiry' })
+    expect(new Set([long, short, index]).size).toBe(3)
+  })
+
+  it('flags an index enquiry as an unverified destination', () => {
+    /*
+      The index form's destination field is free text, so the name in the
+      first line is whatever the buyer typed and may not be a lane we run at
+      all. Saying so in line two is what stops the desk quoting freight for a
+      country nobody has checked — and it is the reason `countryCode` is
+      optional rather than filled in with a fuzzy match.
+    */
+    const context = buildApplicationContext({
+      marketName: 'Mongolia',
+      source: 'markets_index_enquiry',
+    })
+    expect(context.split('\n')).toEqual([
+      'Export market: Mongolia',
+      'Destination typed by the buyer — not a listed market. Confirm the lane before quoting.',
+      'Source: markets index — destination enquiry',
+    ])
+  })
+
+  it('does not flag a market-page enquiry, which came from a real market', () => {
+    const context = buildApplicationContext({
+      marketName: 'Nigeria',
+      countryCode: 'NG',
+      source: 'market_quick_enquiry',
+    })
+    expect(context).not.toContain('typed by the buyer')
   })
 })
 

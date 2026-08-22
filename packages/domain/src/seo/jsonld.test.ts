@@ -5,6 +5,7 @@ import {
   buildBreadcrumbLd,
   buildFaqLd,
   buildCollectionLd,
+  buildItemListLd,
   buildLocalBusinessLd,
   buildOrgLd,
   buildWebsiteLd,
@@ -392,5 +393,44 @@ describe('buildServiceLd', () => {
     const ld = buildServiceLd(base) as Record<string, unknown>
     expect(ld).not.toHaveProperty('description')
     expect(ld).not.toHaveProperty('serviceType')
+  })
+})
+
+describe('buildItemListLd', () => {
+  it('numbers items in the order the page renders them', () => {
+    const ld = buildItemListLd({
+      name: 'Export markets served from Dubai',
+      items: [
+        { name: 'Saudi Arabia', url: 'https://example.com/markets/saudi-arabia' },
+        { name: 'Oman', url: 'https://example.com/markets/oman' },
+      ],
+    }) as Record<string, unknown>
+
+    expect(ld['@type']).toBe('ItemList')
+    expect(ld.name).toBe('Export markets served from Dubai')
+    expect(ld.numberOfItems).toBe(2)
+    expect(ld.itemListElement).toEqual([
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'Saudi Arabia',
+        url: 'https://example.com/markets/saudi-arabia',
+      },
+      { '@type': 'ListItem', position: 2, name: 'Oman', url: 'https://example.com/markets/oman' },
+    ])
+  })
+
+  it('emits name and position only for an entry with no page', () => {
+    // A real state on an index, not a fallback. Inventing a URL to fill the
+    // slot would put a 404 in the structured data.
+    const ld = buildItemListLd({ items: [{ name: 'Mongolia' }] }) as Record<string, unknown>
+    expect(ld.itemListElement).toEqual([{ '@type': 'ListItem', position: 1, name: 'Mongolia' }])
+    expect(ld.name).toBeUndefined()
+  })
+
+  it('reports an empty list as empty rather than omitting the count', () => {
+    const ld = buildItemListLd({ items: [] }) as Record<string, unknown>
+    expect(ld.numberOfItems).toBe(0)
+    expect(ld.itemListElement).toEqual([])
   })
 })
