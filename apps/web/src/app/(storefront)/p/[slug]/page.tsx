@@ -10,9 +10,11 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { db } from '@indus/db'
 import {
+  buildAlternateNames,
   buildBreadcrumbLd,
   buildFaqLd,
   buildProductLd,
+  readFittingAttributes,
 } from '@indus/domain'
 import { Badge, Breadcrumb, Button, JsonLd } from '@indus/ui'
 import ProductGallery from '../../../../components/ProductGallery'
@@ -211,6 +213,18 @@ export default async function ProductPage({ params }: Props) {
 
   const quickSpecs = product.specs.filter((s) => s.isFilterable).slice(0, 6)
 
+  // Trade names in the languages buyers actually search. Composed from the
+  // specs and title at render time rather than stored, so they can never drift
+  // out of step with the attributes they describe. Returns nothing at all for
+  // products whose attributes do not resolve confidently — see
+  // packages/domain/src/product-alternate-names.ts.
+  const alternateNames = buildAlternateNames(
+    readFittingAttributes({
+      title: product.title,
+      specs: product.specs.map((s) => ({ label: s.label, value: s.value })),
+    }),
+  )
+
   // Template-driven key features. For every template field flagged
   // isKeyFeature with a value entered on the product, produce a bullet.
   // descriptionShort renders as its own paragraph elsewhere — it is no
@@ -313,6 +327,7 @@ export default async function ProductPage({ params }: Props) {
         : 'lead_time'
   const productLd = buildProductLd({
     name: product.title,
+    alternateName: alternateNames.map((n) => n.name),
     description: product.descriptionShort,
     sku: product.sku,
     mpn: product.mpn,
@@ -626,6 +641,37 @@ export default async function ProductPage({ params }: Props) {
           hsCode={product.hsCode}
           weightKg={product.weightKg ? Number(product.weightKg) : null}
         />
+
+        {/*
+          Trade names in other languages. Rendered as visible text rather than
+          hidden markup — a term only earns a search impression if it is on the
+          page, and a buyer who knows the part as a DKO-L needs to see it to
+          believe they are on the right page. Absent entirely when the
+          composer declined to name the product.
+        */}
+        {alternateNames.length > 0 && (
+          <section className="border-t border-ih-border pt-8 pb-2">
+            <div className="mb-4">
+              <div className="mono mb-2 text-[11px] uppercase tracking-[0.16em] text-ih-muted">
+                Also known as
+              </div>
+              <p className="max-w-[720px] text-[14px] leading-[1.6] text-ih-muted">
+                The same part, in the designations used across European and Gulf trade
+                catalogues.
+              </p>
+            </div>
+            <dl className="grid grid-cols-1 gap-x-8 gap-y-2 sm:grid-cols-2">
+              {alternateNames.map((n) => (
+                <div key={n.lang} className="flex gap-3 border-b border-ih-border py-2">
+                  <dt className="mono w-8 shrink-0 pt-[2px] text-[11px] uppercase tracking-[0.1em] text-ih-muted">
+                    {n.lang}
+                  </dt>
+                  <dd className="text-[14px] leading-[1.5] text-ih-ink-2">{n.name}</dd>
+                </div>
+              ))}
+            </dl>
+          </section>
+        )}
 
         <RelatedReading
           articles={relatedArticles}
