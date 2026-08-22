@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import {
-  MARKET_PAGE_RECORDS,
+  ALL_MARKET_PAGE_RECORDS as MARKET_PAGE_RECORDS,
   marketBySlug,
   primaryRoute,
   transitScore,

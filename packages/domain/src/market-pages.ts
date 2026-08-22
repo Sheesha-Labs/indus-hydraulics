@@ -37,7 +37,17 @@
  * market's block reviewed before it goes live.
  */
 
-import { MARKET_PAGE_RECORDS } from './market-page-records'
+import { MARKET_PAGE_RECORDS as WAVE_1 } from './market-page-records'
+import { MARKET_PAGE_RECORDS_2 as WAVE_2 } from './market-page-records-2'
+
+/**
+ * Every written record, in registry order across both authoring waves.
+ *
+ * Split across two files only because one would be eleven thousand lines. The
+ * route, the tests and the admin queue treat them identically — a wave-2
+ * record is not a lesser record, it is a later one.
+ */
+export const ALL_MARKET_PAGE_RECORDS: readonly MarketPage[] = [...WAVE_1, ...WAVE_2]
 
 /** `[lon, lat]`, in that order — the order d3-geo and GeoJSON both use. */
 export type LonLat = readonly [lon: number, lat: number]
@@ -522,7 +532,7 @@ export type MarketUrgencyOption = (typeof MARKET_URGENCY_OPTIONS)[number]
  * renders.
  */
 export const MARKET_PAGES: Readonly<Record<string, MarketPage>> = Object.fromEntries(
-  MARKET_PAGE_RECORDS.map((page) => [page.slug, page])
+  ALL_MARKET_PAGE_RECORDS.map((page) => [page.slug, page])
 )
 
 /** Raw lookup, ignoring the release gate. For tests and admin tooling. */
@@ -546,16 +556,16 @@ export function releasedMarketPage(slug: string): MarketPage | undefined {
 
 /** Slugs the route should statically generate the designed page for. */
 export function releasedMarketPageSlugs(): string[] {
-  return MARKET_PAGE_RECORDS.filter((p) => p.released).map((p) => p.slug)
+  return ALL_MARKET_PAGE_RECORDS.filter((p) => p.released).map((p) => p.slug)
 }
 
 /** Written but held back — the queue a forwarder review works through. */
 export function pendingMarketPageSlugs(): string[] {
-  return MARKET_PAGE_RECORDS.filter((p) => !p.released).map((p) => p.slug)
+  return ALL_MARKET_PAGE_RECORDS.filter((p) => !p.released).map((p) => p.slug)
 }
 
 export function marketPageSlugs(): string[] {
-  return MARKET_PAGE_RECORDS.map((p) => p.slug)
+  return ALL_MARKET_PAGE_RECORDS.map((p) => p.slug)
 }
 
 // ─────────────────────────────────────────────────────────────────────────────

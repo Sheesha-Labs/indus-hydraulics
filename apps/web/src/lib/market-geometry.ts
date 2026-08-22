@@ -311,9 +311,23 @@ function describeLane(map: MarketMap, countryName: string, km: number, mode: str
   return `Freight corridor from ${titleCase(map.originLabel)} to ${destination} in ${countryName} — ${km.toLocaleString('en-GB')} km by ${mode.toLowerCase()}.`
 }
 
+/**
+ * "JEBEL ALI · DXB" → "Jebel Ali, DXB", for the spoken aria-label.
+ *
+ * Short all-caps tokens are left alone: they are codes, not words. Naively
+ * title-casing every part turned the airport code into "Dxb", which a screen
+ * reader pronounces as a word rather than spelling out.
+ */
 function titleCase(value: string): string {
   return value
     .split(/\s*·\s*/)
-    .map((part) => part.charAt(0) + part.slice(1).toLowerCase())
+    .map((part) =>
+      part.length <= 3 && part === part.toUpperCase()
+        ? part
+        : part
+            .split(/\s+/)
+            .map((word) => word.charAt(0) + word.slice(1).toLowerCase())
+            .join(' ')
+    )
     .join(', ')
 }
