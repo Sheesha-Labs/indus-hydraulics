@@ -4,12 +4,20 @@ import { db } from '@indus/db'
 import { buildBreadcrumbLd, buildFaqLd, buildLocalBusinessLd } from '@indus/domain'
 import { JsonLd } from '@indus/ui'
 import ContactFormClient from './ContactFormClient'
+import ContactChannels, { type Channel } from './_components/ContactChannels'
+import HelpGrid from './_components/HelpGrid'
+import HqMap from './_components/HqMap'
+import { parseOpeningHours } from './_components/hours'
 import { BASE_URL, ORG_ID, urlFor, SITE_NAME } from '../../../lib/seo'
-import { OFFICES, formatOfficeAddress } from '../../../lib/site-locations'
+import { OFFICES, formatOfficeAddress, officeMapQuery } from '../../../lib/site-locations'
 import { getStoreSettings } from '../../../lib/store-settings'
 
 // Static-ish marketing page; cache for 1 hour.
 export const revalidate = 3600
+
+/** Shared page gutter. Responsive rather than the flat 48px token — this page
+ *  reads on a phone in a workshop as often as on a desk. */
+const CONTAINER = 'mx-auto max-w-[1440px] px-5 sm:px-8 xl:px-12'
 
 export async function generateMetadata(): Promise<Metadata> {
   const page = await db.cmsPage.findUnique({ where: { slug: 'contact' } })
@@ -20,6 +28,22 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 type Props = { params: Promise<Record<string, never>> }
+
+/**
+ * The response promises made here are also made by the channel notes and the
+ * hero tiles. They are stated once, in this array, so the three cannot drift.
+ */
+const RESPONSE = {
+  whatsapp: 'typically under 15 minutes',
+  email: 'within 4 business hours',
+  plantDown: 'within 30 minutes, 24/7',
+} as const
+
+const HERO_STATS = [
+  { value: '< 15 min', label: 'WhatsApp reply' },
+  { value: '4 hrs', label: 'Email response' },
+  { value: '30 min', label: 'Plant-down callback' },
+]
 
 const FAQS = [
   { q: 'How fast do you respond to RFQs?', a: 'Routine RFQs within 1 business day. Priority within 4 working hours. Plant-down within 30 minutes, 24/7.' },
@@ -34,70 +58,62 @@ export default async function ContactPage({ params }: Props) {
   const settings = await getStoreSettings()
   const hq = OFFICES.find((o) => o.kind === 'hq') ?? OFFICES[0]
 
-  // Channels read live values from StoreSettings (admin-editable). When
-  // a value is unset we drop the channel entirely rather than ship a
-  // placeholder. WhatsApp uses the same digit-stripping pattern as the
-  // PDP CTA so wa.me accepts the number.
+  // Channels read live values from StoreSettings (admin-editable). When a
+  // value is unset we drop the channel entirely rather than ship a
+  // placeholder. WhatsApp uses the same digit-stripping pattern as the PDP CTA
+  // so wa.me accepts the number.
   const phoneE164 = hq?.telephone ?? settings.contactPhone
   const phoneDigits = phoneE164 ? phoneE164.replace(/\D/g, '') : null
   const email = hq?.email ?? settings.contactEmail
-  const hours = hq?.hoursLabel ?? settings.contactHours
-  type Channel = {
-    title: string
-    sub: string
-    value: string
-    href: string
-    iconBg: string
-    icon: string
-    badge: string | null
-    badgeColor: string
-    badgeBg: string
-  }
+  const counterHours = hq?.hoursLabel ?? settings.contactHours
+
   const channels: Channel[] = []
   if (phoneDigits && phoneE164) {
     channels.push({
-      title: 'WhatsApp',
-      sub: 'Fastest response · typically < 15 min',
+      kind: 'whatsapp',
+      label: 'WhatsApp — fastest',
       value: phoneE164,
       href: `https://wa.me/${phoneDigits}`,
-      iconBg: '#16a34a',
-      icon: '💬',
-      badge: 'Online now',
-      badgeColor: 'oklch(0.4 0.12 150)',
-      badgeBg: 'oklch(0.95 0.05 150)',
+      external: true,
+      note: `Send a photo of the failed part or a circuit diagram. Replies ${RESPONSE.whatsapp} in working hours.`,
+    })
+    channels.push({
+      kind: 'phone',
+      label: 'Call us',
+      value: phoneE164,
+      href: `tel:${phoneE164.replace(/\s/g, '')}`,
+      note: `Plant down? Say so on the call — we come back ${RESPONSE.plantDown}.`,
     })
   }
   if (email) {
     channels.push({
-      title: 'Email',
-      sub: 'Response within 4 business hours',
+      kind: 'email',
+      label: 'Email us',
       value: email,
       href: `mailto:${email}`,
-      iconBg: 'var(--color-ih-navy)',
-      icon: '✉',
-      badge: null,
-      badgeColor: '',
-      badgeBg: '',
+      note: `Answered ${RESPONSE.email}. Attach the drawing or the part list.`,
     })
   }
-  if (phoneE164) {
+  if (hq) {
     channels.push({
-      title: 'Phone',
-      sub: hours ?? 'Mon–Fri · 09:00–18:00 GST',
-      value: phoneE164,
-      href: `tel:${phoneE164.replace(/\s/g, '')}`,
-      iconBg: 'var(--color-ih-accent)',
-      icon: '📞',
-      badge: null,
-      badgeColor: '',
-      badgeBg: '',
+      kind: 'office',
+      label: 'Visit the office',
+      value: formatOfficeAddress(hq),
+      lines: formatOfficeAddress(hq).split('\n'),
+      href: `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(officeMapQuery(hq))}`,
+      external: true,
+      note: null,
     })
   }
 
-  // JSON-LD entity graph: a LocalBusiness per office (each linked back to
-  // the root Organization), plus FAQPage from the FAQS array and a
-  // breadcrumb. The contact page is the canonical "where are you located"
-  // signal for Google + AI search engines.
+  // The week the hours card reads is the same array the LocalBusiness JSON-LD
+  // publishes, so what a visitor is told and what Google is told cannot drift.
+  const hoursRows = parseOpeningHours(hq?.openingHours ?? [])
+
+  // JSON-LD entity graph: a LocalBusiness per office (each linked back to the
+  // root Organization), plus FAQPage from the FAQS array and a breadcrumb. The
+  // contact page is the canonical "where are you located" signal for Google +
+  // AI search engines.
   const localBusinessLds = OFFICES.map((office) =>
     buildLocalBusinessLd({
       id: `${BASE_URL}#location-${office.slug}`,
@@ -121,112 +137,108 @@ export default async function ContactPage({ params }: Props) {
   return (
     <div>
       <JsonLd data={[...localBusinessLds, faqLd, breadcrumbLd]} />
+
       {/* ── Hero ──────────────────────────────────────────────── */}
-      <div className="mx-auto max-w-[1440px] px-5 sm:px-8 xl:px-12 pt-14 pb-6">
-        <div className="font-mono text-[11px] tracking-[0.16em] text-ih-muted uppercase mb-3">CONTACT · WE PICK UP THE PHONE</div>
-        <h1 className="text-[clamp(40px,5vw,60px)] tracking-[-0.03em] leading-[1.05] max-w-[780px] mb-4 font-semibold">
-          Talk to a real applications engineer.
-        </h1>
-        <p className="text-[17px] text-ih-muted max-w-[580px] leading-[1.55]">
-          Send us a circuit diagram, a part number, or a photo of the failure. We&apos;ll respond within 4 business hours — often within minutes via WhatsApp.
-        </p>
-      </div>
-
-      {/* ── Main grid ─────────────────────────────────────────── */}
-      <div className="mx-auto max-w-[1440px] px-5 sm:px-8 xl:px-12 py-8 pb-16 grid grid-cols-1 gap-14 lg:grid-cols-[1.1fr_1fr]">
-
-        {/* ── Form card ─────────────────────────────────────── */}
-        <ContactFormClient />
-
-        {/* ── Right column: channels + offices ──────────────── */}
-        <div className="min-w-0">
-          {/* Channels */}
-          <div className="flex flex-col gap-3 mb-8">
-            {channels.map((ch) => (
-              <a
-                key={ch.title}
-                href={ch.href}
-                /* Class, not an inline style: an inline gridTemplateColumns
-                   beats every responsive utility, which is what made this
-                   card push the page sideways on a phone. */
-                className="grid grid-cols-[44px_1fr_auto] gap-3 items-center p-4 border border-ih-border bg-ih-surface transition-colors hover:border-ih-accent sm:gap-4 sm:p-5"
-              >
-                <div
-                  className="w-11 h-11 border grid place-items-center text-[18px]"
-                  style={{ background: ch.iconBg, borderColor: ch.iconBg, color: 'white' }}
-                >
-                  {ch.icon}
-                </div>
-                <div className="min-w-0">
-                  <h3 className="text-[14px] font-semibold">{ch.title}</h3>
-                  <p className="text-[12px] text-ih-muted mt-0.5">{ch.sub}</p>
-                  <div className="font-mono text-[13px] text-ih-ink mt-1 break-words">{ch.value}</div>
-                </div>
-                {ch.badge && (
-                  <span className="font-mono text-[10px] px-1.5 py-0.5 shrink-0" style={{ background: ch.badgeBg, color: ch.badgeColor }}>
-                    {ch.badge}
-                  </span>
-                )}
-              </a>
-            ))}
+      <section className={`${CONTAINER} border-b border-ih-border py-14`}>
+        <div className="grid grid-cols-1 items-end gap-10 lg:grid-cols-[1.3fr_1fr] lg:gap-16">
+          <div>
+            <span className="eyebrow">Contact · we pick up the phone</span>
+            {/* The v2 display pattern: a declarative sentence ending in a
+                period, closing clause in italic serif. 01-design-language.md §3. */}
+            <h1 className="my-4 max-w-[22ch] text-balance font-serif text-[clamp(38px,5.5vw,60px)] font-normal leading-[1.04] tracking-[-0.01em]">
+              Talk to a real <em className="italic">applications engineer.</em>
+            </h1>
+            <p className="max-w-xl text-[17px] leading-[1.55] text-ih-muted">
+              Send us a circuit diagram, a part number, or a photo of the failure. We&apos;ll respond{' '}
+              {RESPONSE.email} — often within minutes on WhatsApp.
+            </p>
           </div>
 
-          {/* Offices — single column when only one verified location, two columns otherwise. */}
-          <div className="font-mono text-[10px] tracking-[0.14em] text-ih-muted uppercase mb-3">
-            {OFFICES.length === 1 ? 'Our office' : 'Our offices'}
-          </div>
-          <div className={`grid gap-3 mb-8 ${OFFICES.length === 1 ? 'grid-cols-1' : 'sm:grid-cols-2'}`}>
-            {OFFICES.map((office) => (
-              <div key={office.slug} className="relative border border-ih-border bg-ih-surface p-5 flex flex-col gap-2">
-                {office.kind === 'hq' && (
-                  <span className="absolute top-4 right-4 font-mono text-[10px] bg-ih-navy text-white px-1.5 py-0.5 tracking-[0.06em]">HQ</span>
-                )}
-                <div className="font-mono text-[11px] text-ih-accent tracking-[0.06em]">{office.flag}</div>
-                <h4 className="text-[16px] font-semibold tracking-[-0.01em]">{office.city}</h4>
-                <address className="not-italic text-[13px] text-ih-muted leading-[1.5] whitespace-pre-line">{formatOfficeAddress(office)}</address>
-                <div className="font-mono text-[11px] text-ih-muted mt-auto pt-2 border-t border-ih-border">
-                  {office.hoursLabel}
+          {/* The response promises as figures. This column is where an office
+              photograph would sit; the promises are the honest stand-in, and
+              they are the reason a visitor picks a channel. */}
+          <div className="grid grid-cols-3 gap-3">
+            {HERO_STATS.map((stat) => (
+              <div key={stat.label} className="rounded-sm border border-ih-border bg-ih-surface px-4 pb-4 pt-3.5">
+                <div className="whitespace-nowrap text-[clamp(17px,4.4vw,28px)] font-semibold leading-none tracking-[-0.02em]">
+                  {stat.value}
+                </div>
+                <div className="mono mt-2 text-[10.5px] uppercase leading-[1.35] tracking-[0.1em] text-ih-muted">
+                  {stat.label}
                 </div>
               </div>
             ))}
           </div>
-
-          {/* RFQ CTA */}
-          <div className="border border-ih-border bg-ih-surface p-5">
-            <b className="text-[14px]">Prefer to submit a formal RFQ?</b>
-            <p className="mt-1 text-[13px] text-ih-muted mb-3">Use our quote builder to add specific SKUs with quantities and we&apos;ll respond with pricing within 4 hours.</p>
-            <Link
-              href={`/quote`}
-              className="inline-flex h-9 px-4 items-center border border-ih-border font-mono text-[12px] text-ih-ink-2 hover:bg-ih-surface-2 transition-colors"
-            >
-              Submit an RFQ →
-            </Link>
-          </div>
         </div>
-      </div>
+      </section>
+
+      {/* ── Channels + form ───────────────────────────────────── */}
+      <section className={`${CONTAINER} py-12 lg:py-16`}>
+        <div className="grid grid-cols-1 items-start gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:gap-16">
+          <div className="min-w-0">
+            <ContactChannels channels={channels} hoursRows={hoursRows} hoursLabel="Opening hours" />
+            {/* RFQ CTA — the one thing a contact form is worse at than a
+                purpose-built page, so it is offered rather than buried. */}
+            <div className="mt-8 rounded-lg border border-ih-border bg-ih-surface p-5">
+              <b className="text-[14px]">Prefer to submit a formal RFQ?</b>
+              <p className="mb-3 mt-1 text-[13px] leading-[1.55] text-ih-muted">
+                Use the quote builder to add specific SKUs with quantities and we&apos;ll respond with
+                pricing {RESPONSE.email}.
+              </p>
+              <Link
+                href="/quote"
+                className="mono inline-flex h-9 items-center rounded-sm border border-ih-border px-4 text-[12px] text-ih-ink-2 transition-colors hover:border-ih-accent hover:text-ih-ink"
+              >
+                Submit an RFQ →
+              </Link>
+            </div>
+          </div>
+
+          <ContactFormClient />
+        </div>
+      </section>
+
+      {/* ── Head office ───────────────────────────────────────── */}
+      {hq ? (
+        <HqMap
+          city={hq.city}
+          addressLines={formatOfficeAddress(hq).split('\n')}
+          mapQuery={officeMapQuery(hq)}
+          note={counterHours ? `Counter and warehouse: ${counterHours}. Outside those hours, WhatsApp reaches the on-call engineer.` : null}
+          photo={hq.photo ?? null}
+        />
+      ) : null}
+
+      {/* ── How can we help? ──────────────────────────────────── */}
+      <HelpGrid />
 
       {/* ── FAQ ───────────────────────────────────────────────── */}
-      <div className="border-t border-ih-border py-16">
-        <div className="mx-auto max-w-[1440px] px-5 sm:px-8 xl:px-12 grid grid-cols-1 gap-14 lg:grid-cols-[1fr_2fr]">
+      <section className="border-t border-ih-border py-16">
+        <div className={`${CONTAINER} grid grid-cols-1 gap-10 lg:grid-cols-[1fr_2fr] lg:gap-14`}>
           <div>
-            <h2 className="text-[32px] font-semibold tracking-[-0.02em] leading-snug">Frequently asked questions</h2>
-            <p className="mt-3 text-[14px] text-ih-muted leading-[1.6]">
-              Can&apos;t find your answer? Call us or use WhatsApp — we&apos;re the fastest channel.
+            <span className="eyebrow">Before you ask</span>
+            <h2 className="mt-2 font-serif text-[clamp(26px,3vw,36px)] font-normal leading-[1.1] tracking-[-0.01em]">
+              Frequently asked questions
+            </h2>
+            <p className="mt-3 text-[14px] leading-[1.6] text-ih-muted">
+              Can&apos;t find your answer? Call us or use WhatsApp — those are the fastest channels.
             </p>
           </div>
           <div className="flex flex-col">
             {FAQS.map((faq) => (
-              <details key={faq.q} className="border-b border-ih-border py-[18px] first:pt-0 group">
-                <summary className="list-none flex justify-between items-center gap-4 cursor-pointer">
-                  <h4 className="text-[16px] font-medium flex-1">{faq.q}</h4>
-                  <span className="font-mono text-[18px] text-ih-muted group-open:text-ih-accent transition-colors shrink-0">+</span>
+              <details key={faq.q} className="group border-b border-ih-border py-[18px] first:pt-0">
+                <summary className="flex cursor-pointer list-none items-center justify-between gap-4">
+                  <h3 className="flex-1 text-[16px] font-medium">{faq.q}</h3>
+                  <span className="mono shrink-0 text-[18px] text-ih-muted transition-colors group-open:text-ih-accent">
+                    +
+                  </span>
                 </summary>
-                <p className="mt-3 text-[14px] text-ih-muted leading-[1.6]">{faq.a}</p>
+                <p className="mt-3 text-[14px] leading-[1.6] text-ih-muted">{faq.a}</p>
               </details>
             ))}
           </div>
         </div>
-      </div>
+      </section>
     </div>
   )
 }
