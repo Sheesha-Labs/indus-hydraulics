@@ -48,8 +48,10 @@ test.describe('homepage geo headline', () => {
   })
 
   test('falls back to Dubai for a country with no wording', async ({ browser }) => {
+    // China, not the US — every export market now has its own line, and the US
+    // is one of them. This has to be a country we deliberately do not ship to.
     const context = await browser.newContext({
-      extraHTTPHeaders: { 'x-vercel-ip-country': 'US' },
+      extraHTTPHeaders: { 'x-vercel-ip-country': 'CN' },
     })
     const page = await context.newPage()
     await page.goto('/')
