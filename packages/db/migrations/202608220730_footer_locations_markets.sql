@@ -12,8 +12,11 @@
 -- Inserted after "Industries" and before "Blog", matching the seed order.
 -- Existing rows at position >= 3 shift down by two to make room.
 --
--- Idempotent: the INSERT is skipped when a row with the same customUrl
--- already exists under the Company column.
+-- Idempotent. Both statements are guarded on the links being absent, not just
+-- the INSERT: guarding only the INSERT leaves the shift unguarded, so a second
+-- run pushes every trailing row down another two and the positions drift into
+-- gaps (0,1,2,5,6,7,8). Order survives that, but it is untidy and a third run
+-- makes it worse — so the shift checks for the same condition the INSERT does.
 
 WITH company AS (
   SELECT i.id
@@ -27,7 +30,12 @@ WITH company AS (
 UPDATE nav_menu_items
 SET position = position + 2
 WHERE "parentId" = (SELECT id FROM company)
-  AND position >= 3;
+  AND position >= 3
+  AND NOT EXISTS (
+    SELECT 1 FROM nav_menu_items e
+    WHERE e."parentId" = (SELECT id FROM company)
+      AND e."customUrl" IN ('/locations', '/markets')
+  );
 
 WITH company AS (
   SELECT i.id
