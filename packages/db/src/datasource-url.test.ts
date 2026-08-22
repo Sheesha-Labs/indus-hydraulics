@@ -37,7 +37,58 @@ describe('datasource url', () => {
   test('the build phase widens the timeout', () => {
     const p = params({ DATABASE_URL: BASE, DATABASE_CONNECTION_LIMIT: '10', NEXT_PHASE: BUILD })!
     expect(p.get('pool_timeout')).toBe('60')
+  })
+
+  /**
+   * The build's connection FOOTPRINT, which is a different failure from the
+   * timeout above and is not fixed by it.
+   *
+   * 9 build workers each hold their own pool. At the request-time limit of 10
+   * that is 90 client connections per build against a pooler capped at 200 for
+   * the whole project, so two concurrent builds sit at 180 and a third is
+   * refused outright with EMAXCONN — refused, not queued, so no pool_timeout
+   * helps. Capping the build pool at 4 puts five builds inside the cap.
+   */
+  test('the build caps the pool below the request-time limit', () => {
+    const p = params({ DATABASE_URL: BASE, DATABASE_CONNECTION_LIMIT: '10', NEXT_PHASE: BUILD })!
+    expect(p.get('connection_limit')).toBe('4')
+  })
+
+  test('request time keeps the full pool — the cap is build-only', () => {
+    const p = params({ DATABASE_URL: BASE, DATABASE_CONNECTION_LIMIT: '10' })!
     expect(p.get('connection_limit')).toBe('10')
+  })
+
+  test('the cap only ever lowers', () => {
+    // A URL already asking for fewer keeps its own number. Raising it would be
+    // this fix causing the exhaustion it exists to prevent.
+    const p = params({ DATABASE_URL: BASE, NEXT_PHASE: BUILD })!
+    expect(p.get('connection_limit')).toBe('1')
+  })
+
+  test('DATABASE_BUILD_CONNECTION_LIMIT overrides the cap', () => {
+    const p = params({
+      DATABASE_URL: BASE,
+      DATABASE_CONNECTION_LIMIT: '10',
+      NEXT_PHASE: BUILD,
+      DATABASE_BUILD_CONNECTION_LIMIT: '6',
+    })!
+    expect(p.get('connection_limit')).toBe('6')
+  })
+
+  test('a junk override falls back to the default, it does not disable the cap', () => {
+    // Failing OPEN here would restore the 90-connections-per-build footprint
+    // from a dashboard typo, and nothing would report it — the build would just
+    // start dying again whenever two ran together.
+    for (const bad of ['abc', '0', '-2', '']) {
+      const p = params({
+        DATABASE_URL: BASE,
+        DATABASE_CONNECTION_LIMIT: '10',
+        NEXT_PHASE: BUILD,
+        DATABASE_BUILD_CONNECTION_LIMIT: bad,
+      })!
+      expect(p.get('connection_limit')).toBe('4')
+    }
   })
 
   test('an explicit pool_timeout on the URL is never overwritten', () => {
