@@ -41,7 +41,13 @@
  *
  * Usage:
  *   pnpm --filter @indus/db exec tsx src/scripts/backfill-fitting-size-tables.ts \
- *     [--dry-run] [--only=SKU] [--limit=N]
+ *     [--payload=DIR] [--dry-run] [--only=SKU] [--limit=N]
+ *
+ * `--payload` defaults to the original `fitting-size-tables`. A second payload
+ * exists because one source table can serve several of our listings: the
+ * `00400` ferrule table covers 4SP, 4SH DN10–16 and R12 DN6–16, and the first
+ * pass gave it to 4SP alone, leaving the other two with an empty table beside
+ * a source that describes them.
  */
 import { readFileSync } from 'node:fs'
 import { resolve } from 'node:path'
@@ -49,7 +55,7 @@ import { PrismaClient } from '@prisma/client'
 import { scoreProductContent } from '@indus/domain'
 
 const db = new PrismaClient()
-const DATA = resolve(__dirname, '../../data/fitting-size-tables/size-tables.json')
+
 
 type Variant = {
   partNumber: string
@@ -101,6 +107,9 @@ async function main() {
   const onlyArg = argv.find((a) => a.startsWith('--only='))
   const limitArg = argv.find((a) => a.startsWith('--limit='))
   const only = onlyArg ? onlyArg.split('=')[1] : null
+  const payloadArg = argv.find((a) => a.startsWith('--payload='))
+  const payloadName = payloadArg ? payloadArg.split('=')[1] : 'fitting-size-tables'
+  const DATA = resolve(__dirname, `../../data/${payloadName}/size-tables.json`)
   const limit = limitArg ? Number(limitArg.split('=')[1]) : Infinity
 
   const payload: Payload = JSON.parse(readFileSync(DATA, 'utf8'))
@@ -226,11 +235,11 @@ async function main() {
     })
     await db.product.update({ where: { id: productId }, data: { contentScore: score.score } })
 
-    if (updated % 15 === 0) console.log(`[size-tables] ${updated} listings processed…`)
+    if (updated % 15 === 0) console.log(`[${payloadName}] ${updated} listings processed…`)
   }
 
   console.log(
-    `\n[size-tables] done — ${updated} listings updated, ${variantsWritten} sizes written, ` +
+    `\n[${payloadName}] done — ${updated} listings updated, ${variantsWritten} sizes written, ` +
       `${replaced} listings already had a table, ${problems.length} problems`,
   )
   if (payload.sizeFieldCorrections.length > 0) {
