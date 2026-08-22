@@ -6,6 +6,7 @@ import { db } from '@indus/db'
 import HomeNewsletterForm from '../../components/HomeNewsletterForm'
 import HomeHeroCarousel, { type HomeHeroSlide } from '../../components/HomeHeroCarousel'
 import { getIndustryList } from '../../lib/industry-content'
+import { mediaUrl } from '../../lib/media'
 import { BASE_URL } from '../../lib/seo'
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -80,7 +81,16 @@ const getHomeBlogPosts = unstable_cache(
       where: { isPublished: true },
       orderBy: { publishedAt: 'desc' },
       take: 3,
-      include: { hero: { select: { storagePath: true, alt: true } }, author: { select: { name: true } } },
+      include: {
+        hero: { select: { storagePath: true, alt: true } },
+        // Category, not `tags`. The teaser used to label each card from
+        // `tags`, which nothing populates — all 30 published articles carry an
+        // empty array — so the eyebrow rendered as a bare separator and a
+        // date. The rest of the blog (index, category hubs, author pages) has
+        // always labelled cards by category; this matches it.
+        category: { select: { name: true, isPublished: true } },
+        author: { select: { name: true } },
+      },
     }),
   ['home-blog-posts'],
   { revalidate: 300, tags: ['blog-posts'] },
@@ -601,22 +611,46 @@ export default async function HomePage() {
                   href={`/blog/${post.slug}`}
                   className="group flex flex-col overflow-hidden rounded-lg border border-ih-border bg-ih-surface transition-colors hover:border-ih-accent"
                 >
-                  <div className={`bg-ih-surface-2 border-b border-ih-border flex items-center justify-center ${i === 0 ? 'aspect-[4/3]' : 'aspect-[16/9]'}`}>
-                    <p className="font-mono text-[11px] text-ih-muted-2 text-center px-4">
-                      Blog image<br />{i === 0 ? '900×680' : '520×290'}
-                    </p>
+                  {/* The hero photograph, same Media row the article page and
+                      the blog index render. The card used to draw a grey
+                      "900×680" spec box here — the query has always fetched
+                      the hero, the markup simply never used it. */}
+                  <div className={`relative overflow-hidden bg-ih-surface-2 border-b border-ih-border ${i === 0 ? 'aspect-[4/3]' : 'aspect-[16/9]'}`}>
+                    {post.hero ? (
+                      <Image
+                        src={mediaUrl(post.hero.storagePath)}
+                        alt={post.hero.alt ?? post.title}
+                        fill
+                        // The lead card is ~45vw of the three-column grid, the
+                        // two followers ~28vw each; both go full-bleed once the
+                        // grid stacks at md.
+                        sizes={i === 0 ? '(max-width: 768px) 100vw, 45vw' : '(max-width: 768px) 100vw, 30vw'}
+                        className="object-cover transition-transform duration-500 group-hover:scale-[1.02]"
+                      />
+                    ) : (
+                      <span className="font-mono absolute inset-0 grid place-items-center text-[11px] text-ih-muted-2">
+                        Indus Hydraulics
+                      </span>
+                    )}
                   </div>
                   <div className="p-5 flex flex-col gap-2.5 flex-1">
-                    <div className="flex gap-3 font-mono text-[11px] text-ih-muted tracking-[0.04em] uppercase">
-                      {(post.tags as string[]).slice(0, 1).map((tag) => (
-                        <span key={tag}>{tag}</span>
-                      ))}
-                      {post.publishedAt && (
-                        <>
-                          <span>·</span>
-                          <span>{new Date(post.publishedAt).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })}</span>
-                        </>
-                      )}
+                    {/* Built by joining the parts that exist, so a missing
+                        category or date never leaves a dangling separator. */}
+                    <div className="flex flex-wrap items-center gap-x-2.5 gap-y-1 font-mono text-[11px] text-ih-muted tracking-[0.04em] uppercase">
+                      {[
+                        post.category?.isPublished ? post.category.name : null,
+                        post.publishedAt
+                          ? new Date(post.publishedAt).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })
+                          : null,
+                        post.readingMinutes ? `${post.readingMinutes} min` : null,
+                      ]
+                        .filter((part): part is string => part !== null)
+                        .map((part, index) => (
+                          <span key={index} className="flex items-center gap-2.5">
+                            {index > 0 && <span className="opacity-40">·</span>}
+                            {part}
+                          </span>
+                        ))}
                     </div>
                     <h3 className={`font-semibold tracking-[-0.01em] leading-[1.3] group-hover:text-ih-accent transition-colors ${i === 0 ? 'text-[22px]' : 'text-[17px]'}`}>
                       {post.title}
@@ -629,52 +663,21 @@ export default async function HomePage() {
               ))}
             </div>
           ) : (
-            /* Static placeholder when no posts yet */
-            <div className="grid grid-cols-1 md:grid-cols-[1.5fr_1fr_1fr] gap-4">
-              {[
-                {
-                  tag: 'SIZING GUIDE', time: '12 MIN READ', date: '2026-04-18',
-                  title: 'How to size a hydraulic cylinder without overspending: a working engineer\'s checklist.',
-                  body: 'Bore, rod, stroke, mounting and cushioning — get these five right and you\'ve solved 90% of the application problem.',
-                  lead: true,
-                },
-                {
-                  tag: 'TEARDOWN', time: '8 MIN', date: '',
-                  title: 'Inside an A10VSO: what fails first, and why.',
-                  body: 'Swashplate wear, port plate scoring, bias spring fatigue — a teardown of three returned units.',
-                  lead: false,
-                },
-                {
-                  tag: 'SPECIFICATION', time: '5 MIN', date: '',
-                  title: 'NBR vs FKM: choosing rod seals for high-temp service.',
-                  body: 'A short, opinionated guide to picking the right elastomer for fluid & ambient.',
-                  lead: false,
-                },
-              ].map((post, i) => (
-                <Link
-                  key={post.tag + i}
-                  href={`/blog`}
-                  className="group flex flex-col overflow-hidden rounded-lg border border-ih-border bg-ih-surface transition-colors hover:border-ih-accent"
-                >
-                  <div className={`bg-ih-surface-2 border-b border-ih-border flex items-center justify-center ${post.lead ? 'aspect-[4/3]' : 'aspect-[16/9]'}`}>
-                    <p className="font-mono text-[11px] text-ih-muted-2 text-center px-4">
-                      Blog illustration<br />{post.lead ? '900×680' : '520×290'}
-                    </p>
-                  </div>
-                  <div className="p-5 flex flex-col gap-2.5 flex-1">
-                    <div className="flex gap-2 font-mono text-[11px] text-ih-muted tracking-[0.04em]">
-                      <span>{post.tag}</span>
-                      <span>·</span>
-                      <span>{post.time}</span>
-                      {post.date && <><span>·</span><span>{post.date}</span></>}
-                    </div>
-                    <h3 className={`font-semibold tracking-[-0.01em] leading-[1.3] group-hover:text-ih-accent transition-colors ${post.lead ? 'text-[22px]' : 'text-[17px]'}`}>
-                      {post.title}
-                    </h3>
-                    <p className="text-[13px] text-ih-muted leading-[1.5]">{post.body}</p>
-                  </div>
-                </Link>
-              ))}
+            /* Nothing published yet. This branch used to render three
+               hardcoded articles — invented titles, an invented date, and
+               links that all went to /blog — which reads as real editorial to
+               a visitor and to a crawler. An empty rail is honest; a fake one
+               is a credibility problem the moment it renders. */
+            <div className="rounded-lg border border-ih-border bg-ih-surface px-6 py-10 text-center">
+              <p className="text-[15px] text-ih-muted">
+                Field notes and sizing guides are on the way.
+              </p>
+              <Link
+                href={`/blog`}
+                className="mt-4 inline-flex h-10 items-center border border-ih-border px-4 font-mono text-[12px] text-ih-ink-2 transition-colors hover:bg-ih-surface-2"
+              >
+                Visit the blog →
+              </Link>
             </div>
           )}
         </div>
