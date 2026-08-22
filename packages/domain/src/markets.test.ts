@@ -2,14 +2,39 @@ import { describe, expect, it } from 'vitest'
 import { MARKETS, marketBySlug, marketCountryCodes, marketNames, marketsOrdered } from './markets'
 
 describe('export markets', () => {
-  it('covers the five GCC lanes we ship on a recurring basis', () => {
-    expect(MARKETS).toHaveLength(5)
+  it('covers the markets we ship on a recurring basis, GCC first', () => {
+    expect(MARKETS).toHaveLength(24)
     expect(marketsOrdered().map((m) => m.slug)).toEqual([
+      // GCC — the original five, on the three-day lane.
       'saudi-arabia',
       'oman',
       'qatar',
       'bahrain',
       'kuwait',
+      // Wider Middle East and North Africa.
+      'iraq',
+      'egypt',
+      'morocco',
+      // East and Southern Africa.
+      'kenya',
+      'tanzania',
+      'rwanda',
+      'burundi',
+      'south-africa',
+      // West Africa.
+      'ghana',
+      'guinea',
+      'ivory-coast',
+      // Asia.
+      'india',
+      'china',
+      // CIS.
+      'russia',
+      'kazakhstan',
+      'uzbekistan',
+      'ukraine',
+      'armenia',
+      'belarus',
     ])
   })
 
@@ -63,7 +88,28 @@ describe('export markets', () => {
   })
 
   it('hedges every lead time rather than committing to one', () => {
-    for (const m of MARKETS) expect(m.leadTime.toLowerCase(), m.slug).toMatch(/typically|approx/)
+    // "Quoted per consignment" is the honest form for a lane with no standing
+    // schedule. Publishing an invented number for those would be worse than
+    // publishing none — see /shipping, which quotes West Africa, North Africa
+    // and landlocked destinations case by case.
+    for (const m of MARKETS) {
+      expect(m.leadTime.toLowerCase(), m.slug).toMatch(/typically|approx|quoted per consignment/)
+    }
+  })
+
+  it('never states a lead time /shipping does not support', () => {
+    // The published bands are: GCC 3–10 working days, wider Middle East 5–15,
+    // East African ports 10–20 by sea. Anything else is quoted per
+    // consignment. A market page must not invent a tighter number than the
+    // shipping policy it links to.
+    const GCC = ['saudi-arabia', 'oman', 'qatar', 'bahrain', 'kuwait', 'iraq']
+    const EAST_AFRICAN_PORTS = ['kenya', 'tanzania']
+    for (const m of MARKETS) {
+      if (GCC.includes(m.slug)) expect(m.leadTime, m.slug).toMatch(/3 working days/)
+      else if (m.slug === 'egypt') expect(m.leadTime, m.slug).toMatch(/5–15 working days/)
+      else if (EAST_AFRICAN_PORTS.includes(m.slug)) expect(m.leadTime, m.slug).toMatch(/10–20 working days/)
+      else expect(m.leadTime, m.slug).toBe('Quoted per consignment')
+    }
   })
 
   it('gives each market its own opening paragraph', () => {
@@ -102,13 +148,18 @@ describe('export markets', () => {
 
   it('resolves by slug and returns undefined for an unknown one', () => {
     expect(marketBySlug('oman')?.name).toBe('Oman')
-    expect(marketBySlug('iraq')).toBeUndefined()
-    // A UAE emirate is a service area, not an export market.
+    expect(marketBySlug('iraq')?.name).toBe('Iraq')
+    expect(marketBySlug('narnia')).toBeUndefined()
+    // A UAE emirate is a service area, not an export market. Dubai and
+    // Sharjah are where the competitor's country-page set starts, and putting
+    // them here would assert export to our own warehouse.
     expect(marketBySlug('dubai')).toBeUndefined()
+    expect(marketBySlug('sharjah')).toBeUndefined()
   })
 
   it('exposes names and country codes in display order', () => {
     expect(marketNames()[0]).toBe('Saudi Arabia')
-    expect(marketCountryCodes()).toEqual(['SA', 'OM', 'QA', 'BH', 'KW'])
+    expect(marketCountryCodes().slice(0, 6)).toEqual(['SA', 'OM', 'QA', 'BH', 'KW', 'IQ'])
+    expect(marketCountryCodes()).toHaveLength(MARKETS.length)
   })
 })
