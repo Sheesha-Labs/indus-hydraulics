@@ -47,6 +47,12 @@ In the Vercel dashboard, for **each project** (`indus-hydraulics` storefront and
    - `SENTRY_AUTH_TOKEN` — the auth token from step 2 (mark as **Sensitive** so it's not shown in logs)
 3. Save and trigger a redeploy of each project so the build picks up the env vars.
 
+> **`SENTRY_AUTH_TOKEN` is the switch for the build-time half.** Without it,
+> `next.config.ts` turns source-map upload and release creation off entirely,
+> so builds stay silent instead of printing "No auth token provided" twice per
+> run. The moment the token exists in Vercel, both switch back on with no code
+> change. Runtime error capture only needs the DSN and is unaffected either way.
+
 ### 4. Verify
 
 After the redeploy, force an error to confirm events arrive:

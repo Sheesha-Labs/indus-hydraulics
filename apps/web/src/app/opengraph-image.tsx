@@ -13,9 +13,14 @@ import { ImageResponse } from 'next/og'
  *
  * Kept JSX-free of any custom font fetch — Satori's bundled Noto Sans
  * renders consistently across regions without a network dependency.
+ *
+ * Deliberately NOT `export const runtime = 'edge'`. Edge runtime on a route
+ * opts it out of static generation, so the card was re-rendered per request
+ * and every build logged "Using edge runtime on a page currently disables
+ * static generation for that page". On the Node runtime Next renders the PNG
+ * once at build time and serves it as a static asset — faster for the
+ * scrapers that fetch it, and one less warning forever.
  */
-
-export const runtime = 'edge'
 
 export const alt =
   'Indus Hydraulics — Industrial hydraulic distributor in Dubai, UAE'
