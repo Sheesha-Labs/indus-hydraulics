@@ -3,7 +3,7 @@ import { MARKETS, marketBySlug, marketCountryCodes, marketNames, marketsOrdered 
 
 describe('export markets', () => {
   it('covers the markets we ship on a recurring basis, GCC first', () => {
-    expect(MARKETS).toHaveLength(41)
+    expect(MARKETS).toHaveLength(52)
     expect(marketsOrdered().map((m) => m.slug)).toEqual([
       // GCC — the original five, on the three-day lane.
       'saudi-arabia',
@@ -48,6 +48,17 @@ describe('export markets', () => {
       // Southern Africa.
       'namibia',
       'botswana',
+      'tunisia',
+      'mali',
+      'burkina-faso',
+      'niger',
+      'liberia',
+      'sierra-leone',
+      'cameroon',
+      'chad',
+      'ethiopia',
+      'djibouti',
+      'madagascar',
       // CIS.
       'russia',
       'kazakhstan',
@@ -123,7 +134,8 @@ describe('export markets', () => {
     // consignment. A market page must not invent a tighter number than the
     // shipping policy it links to.
     const GCC = ['saudi-arabia', 'oman', 'qatar', 'bahrain', 'kuwait', 'iraq']
-    const EAST_AFRICAN_PORTS = ['kenya', 'tanzania']
+    // /shipping names exactly three: Mombasa, Dar es Salaam, Djibouti.
+    const EAST_AFRICAN_PORTS = ['kenya', 'tanzania', 'djibouti']
     for (const m of MARKETS) {
       if (GCC.includes(m.slug)) expect(m.leadTime, m.slug).toMatch(/3 working days/)
       else if (m.slug === 'egypt') expect(m.leadTime, m.slug).toMatch(/5–15 working days/)
