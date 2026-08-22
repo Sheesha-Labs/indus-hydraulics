@@ -1,0 +1,581 @@
+{
+ "source": "Master catalogue + crimp catalogue, onto listings that already existed",
+ "sizeFieldCorrections": [],
+ "duplicateRowsDropped": [],
+ "products": [
+  {
+   "sku": "IH-DF-FEM-24-HS",
+   "sources": [
+    "20511C (master p27)"
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-DF-FEM-24-HS-0418",
+     "position": 0,
+     "hoseDash": 4,
+     "hoseInch": "1/4\"",
+     "hoseDn": 6,
+     "portLabel": "M18×1.5",
+     "portDash": null,
+     "dimensions": {
+      "OD": 10.0,
+      "S2": 22.0,
+      "A": 21.0,
+      "C": 3.0
+     },
+     "sourcePart": "20511C-18-04T"
+    },
+    {
+     "partNumber": "IH-DF-FEM-24-HS-0520",
+     "position": 1,
+     "hoseDash": 5,
+     "hoseInch": "5/16\"",
+     "hoseDn": 8,
+     "portLabel": "M20×1.5",
+     "portDash": null,
+     "dimensions": {
+      "OD": 12.0,
+      "S2": 24.0,
+      "A": 21.5,
+      "C": 4.5
+     },
+     "sourcePart": "20511C-20-05T"
+    },
+    {
+     "partNumber": "IH-DF-FEM-24-HS-0620",
+     "position": 2,
+     "hoseDash": 6,
+     "hoseInch": "3/8\"",
+     "hoseDn": 10,
+     "portLabel": "M20×1.5",
+     "portDash": null,
+     "dimensions": {
+      "OD": 12.0,
+      "S2": 24.0,
+      "A": 21.5,
+      "C": 4.5
+     },
+     "sourcePart": "20511C-20-06T"
+    },
+    {
+     "partNumber": "IH-DF-FEM-24-HS-0622",
+     "position": 3,
+     "hoseDash": 6,
+     "hoseInch": "3/8\"",
+     "hoseDn": 10,
+     "portLabel": "M22×1.5",
+     "portDash": null,
+     "dimensions": {
+      "OD": 14.0,
+      "S2": 27.0,
+      "A": 21.5,
+      "C": 4.5
+     },
+     "sourcePart": "20511C-22-06T"
+    },
+    {
+     "partNumber": "IH-DF-FEM-24-HS-0824",
+     "position": 4,
+     "hoseDash": 8,
+     "hoseInch": "1/2\"",
+     "hoseDn": 12,
+     "portLabel": "M24×1.5",
+     "portDash": null,
+     "dimensions": {
+      "OD": 16.0,
+      "S2": 30.0,
+      "A": 23.0,
+      "C": 5.0
+     },
+     "sourcePart": "20511C-24-08T"
+    },
+    {
+     "partNumber": "IH-DF-FEM-24-HS-1030",
+     "position": 5,
+     "hoseDash": 10,
+     "hoseInch": "5/8\"",
+     "hoseDn": 16,
+     "portLabel": "M30×2",
+     "portDash": null,
+     "dimensions": {
+      "OD": 20.0,
+      "S2": 36.0,
+      "A": 26.5,
+      "C": 7.0
+     },
+     "sourcePart": "20511C-30-10T"
+    },
+    {
+     "partNumber": "IH-DF-FEM-24-HS-1236",
+     "position": 6,
+     "hoseDash": 12,
+     "hoseInch": "3/4\"",
+     "hoseDn": 20,
+     "portLabel": "M36×2",
+     "portDash": null,
+     "dimensions": {
+      "OD": 25.0,
+      "S2": 41.0,
+      "A": 27.0,
+      "C": 6.5
+     },
+     "sourcePart": "20511C-36-12T"
+    },
+    {
+     "partNumber": "IH-DF-FEM-24-HS-1642",
+     "position": 7,
+     "hoseDash": 16,
+     "hoseInch": "1\"",
+     "hoseDn": 25,
+     "portLabel": "M42×2",
+     "portDash": null,
+     "dimensions": {
+      "OD": 30.0,
+      "S2": 50.0,
+      "A": 29.5,
+      "C": 9.0
+     },
+     "sourcePart": "20511C-42-16T"
+    },
+    {
+     "partNumber": "IH-DF-FEM-24-HS-2052",
+     "position": 8,
+     "hoseDash": 20,
+     "hoseInch": "1.1/4\"",
+     "hoseDn": 32,
+     "portLabel": "M52×2",
+     "portDash": null,
+     "dimensions": {
+      "OD": 38.0,
+      "S2": 60.0,
+      "A": 34.0,
+      "C": 8.0
+     },
+     "sourcePart": "20511C-52-20T"
+    }
+   ]
+  },
+  {
+   "sku": "IH-DF-FEM-24-HS-45",
+   "sources": [
+    "20541C (master p29)"
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-DF-FEM-24-HS-45-0416",
+     "position": 0,
+     "hoseDash": 4,
+     "hoseInch": "1/4\"",
+     "hoseDn": 6,
+     "portLabel": "M16×1.5",
+     "portDash": null,
+     "dimensions": {
+      "OD": 8.0,
+      "S2": 19.0,
+      "A": 44.8,
+      "C": 3.0,
+      "H": 22.7
+     },
+     "sourcePart": "20541C-16-04"
+    },
+    {
+     "partNumber": "IH-DF-FEM-24-HS-45-0418",
+     "position": 1,
+     "hoseDash": 4,
+     "hoseInch": "1/4\"",
+     "hoseDn": 6,
+     "portLabel": "M18×1.5",
+     "portDash": null,
+     "dimensions": {
+      "OD": 10.0,
+      "S2": 22.0,
+      "A": 43.7,
+      "C": 3.0,
+      "H": 21.5
+     },
+     "sourcePart": "20541C-18-04T"
+    },
+    {
+     "partNumber": "IH-DF-FEM-24-HS-45-0620",
+     "position": 2,
+     "hoseDash": 6,
+     "hoseInch": "3/8\"",
+     "hoseDn": 10,
+     "portLabel": "M20×1.5",
+     "portDash": null,
+     "dimensions": {
+      "OD": 12.0,
+      "S2": 24.0,
+      "A": 48.9,
+      "C": 4.5,
+      "H": 24.6
+     },
+     "sourcePart": "20541C-20-06T"
+    },
+    {
+     "partNumber": "IH-DF-FEM-24-HS-45-0824",
+     "position": 3,
+     "hoseDash": 8,
+     "hoseInch": "1/2\"",
+     "hoseDn": 12,
+     "portLabel": "M24×1.5",
+     "portDash": null,
+     "dimensions": {
+      "OD": 16.0,
+      "S2": 30.0,
+      "A": 61.4,
+      "C": 2.5,
+      "H": 26.5
+     },
+     "sourcePart": "20541C-24-08T"
+    }
+   ]
+  },
+  {
+   "sku": "IH-DF-FEM-24-HS-90",
+   "sources": [
+    "20591C (master p31)"
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-DF-FEM-24-HS-90-0416",
+     "position": 0,
+     "hoseDash": 4,
+     "hoseInch": "1/4\"",
+     "hoseDn": 6,
+     "portLabel": "M16×1.5",
+     "portDash": null,
+     "dimensions": {
+      "OD": 8.0,
+      "S2": 22.0,
+      "A": 30.0,
+      "C": 3.0,
+      "H": 40.0
+     },
+     "sourcePart": "20591C-16-04"
+    },
+    {
+     "partNumber": "IH-DF-FEM-24-HS-90-0418",
+     "position": 1,
+     "hoseDash": 4,
+     "hoseInch": "1/4\"",
+     "hoseDn": 6,
+     "portLabel": "M18×1.5",
+     "portDash": null,
+     "dimensions": {
+      "OD": 10.0,
+      "S2": 22.0,
+      "A": 30.0,
+      "C": 3.0,
+      "H": 38.5
+     },
+     "sourcePart": "20591C-18-04T"
+    },
+    {
+     "partNumber": "IH-DF-FEM-24-HS-90-0520",
+     "position": 2,
+     "hoseDash": 5,
+     "hoseInch": "5/16\"",
+     "hoseDn": 8,
+     "portLabel": "M20×1.5",
+     "portDash": null,
+     "dimensions": {
+      "OD": 12.0,
+      "S2": 24.0,
+      "A": 33.0,
+      "C": 4.5,
+      "H": 42.0
+     },
+     "sourcePart": "20591C-20-05T"
+    },
+    {
+     "partNumber": "IH-DF-FEM-24-HS-90-0620",
+     "position": 3,
+     "hoseDash": 6,
+     "hoseInch": "3/8\"",
+     "hoseDn": 10,
+     "portLabel": "M20×1.5",
+     "portDash": null,
+     "dimensions": {
+      "OD": 12.0,
+      "S2": 24.0,
+      "A": 35.3,
+      "C": 4.5,
+      "H": 45.7
+     },
+     "sourcePart": "20591C-20-06T"
+    },
+    {
+     "partNumber": "IH-DF-FEM-24-HS-90-0622",
+     "position": 4,
+     "hoseDash": 6,
+     "hoseInch": "3/8\"",
+     "hoseDn": 10,
+     "portLabel": "M22×1.5",
+     "portDash": null,
+     "dimensions": {
+      "OD": 14.0,
+      "S2": 27.0,
+      "A": 35.3,
+      "C": 4.5,
+      "H": 44.7
+     },
+     "sourcePart": "20591C-22-06T"
+    },
+    {
+     "partNumber": "IH-DF-FEM-24-HS-90-0824",
+     "position": 5,
+     "hoseDash": 8,
+     "hoseInch": "1/2\"",
+     "hoseDn": 12,
+     "portLabel": "M24×1.5",
+     "portDash": null,
+     "dimensions": {
+      "OD": 16.0,
+      "S2": 30.0,
+      "A": 41.0,
+      "C": 5.0,
+      "H": 52.0
+     },
+     "sourcePart": "20591C-24-08T"
+    },
+    {
+     "partNumber": "IH-DF-FEM-24-HS-90-1030",
+     "position": 6,
+     "hoseDash": 10,
+     "hoseInch": "5/8\"",
+     "hoseDn": 16,
+     "portLabel": "M30×2",
+     "portDash": null,
+     "dimensions": {
+      "OD": 20.0,
+      "S2": 36.0,
+      "A": 56.5,
+      "C": 7.0,
+      "H": 56.5
+     },
+     "sourcePart": "20591C-30-10T"
+    },
+    {
+     "partNumber": "IH-DF-FEM-24-HS-90-1236",
+     "position": 7,
+     "hoseDash": 12,
+     "hoseInch": "3/4\"",
+     "hoseDn": 20,
+     "portLabel": "M36×2",
+     "portDash": null,
+     "dimensions": {
+      "OD": 25.0,
+      "S2": 41.0,
+      "A": 65.5,
+      "C": 6.5,
+      "H": 66.5
+     },
+     "sourcePart": "20591C-36-12T"
+    },
+    {
+     "partNumber": "IH-DF-FEM-24-HS-90-1642",
+     "position": 8,
+     "hoseDash": 16,
+     "hoseInch": "1\"",
+     "hoseDn": 25,
+     "portLabel": "M42×2",
+     "portDash": null,
+     "dimensions": {
+      "OD": 30.0,
+      "S2": 50.0,
+      "A": 78.0,
+      "C": 9.0,
+      "H": 73.5
+     },
+     "sourcePart": "20591C-42-16T"
+    },
+    {
+     "partNumber": "IH-DF-FEM-24-HS-90-2052",
+     "position": 9,
+     "hoseDash": 20,
+     "hoseInch": "1.1/4\"",
+     "hoseDn": 32,
+     "portLabel": "M52×2",
+     "portDash": null,
+     "dimensions": {
+      "OD": 38.0,
+      "S2": 60.0,
+      "A": 93.0,
+      "C": 8.0,
+      "H": 87.5
+     },
+     "sourcePart": "20591C-52-20T"
+    }
+   ]
+  },
+  {
+   "sku": "IH-JIC-FEM-37-90-LD",
+   "sources": [
+    "TP43-FJ9L (crimp p10)"
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-JIC-FEM-37-90-LD-0404",
+     "position": 0,
+     "hoseDash": 4,
+     "hoseInch": "1/4\"",
+     "hoseDn": 6,
+     "portLabel": "7/16\"-20",
+     "portDash": 4,
+     "dimensions": {
+      "W": 14.2,
+      "A": 51.0,
+      "B": 30.0,
+      "E": 46.0
+     },
+     "sourcePart": "TP43-04-04FJ9L"
+    },
+    {
+     "partNumber": "IH-JIC-FEM-37-90-LD-0405",
+     "position": 1,
+     "hoseDash": 4,
+     "hoseInch": "1/4\"",
+     "hoseDn": 6,
+     "portLabel": "1/2\"-20",
+     "portDash": 5,
+     "dimensions": {
+      "W": 17.4,
+      "A": 51.0,
+      "B": 30.0,
+      "E": 46.0
+     },
+     "sourcePart": "TP43-04-05FJ9L"
+    },
+    {
+     "partNumber": "IH-JIC-FEM-37-90-LD-0606",
+     "position": 2,
+     "hoseDash": 6,
+     "hoseInch": "3/8\"",
+     "hoseDn": 10,
+     "portLabel": "9/16\"-18",
+     "portDash": 6,
+     "dimensions": {
+      "W": 17.4,
+      "A": 69.0,
+      "B": 42.0,
+      "E": 55.0
+     },
+     "sourcePart": "TP43-06-06FJ9L"
+    },
+    {
+     "partNumber": "IH-JIC-FEM-37-90-LD-0608",
+     "position": 3,
+     "hoseDash": 6,
+     "hoseInch": "3/8\"",
+     "hoseDn": 10,
+     "portLabel": "3/4\"-16",
+     "portDash": 8,
+     "dimensions": {
+      "W": 22.2,
+      "A": 69.0,
+      "B": 42.0,
+      "E": 62.0
+     },
+     "sourcePart": "TP43-06-08FJ9L"
+    },
+    {
+     "partNumber": "IH-JIC-FEM-37-90-LD-0808",
+     "position": 4,
+     "hoseDash": 8,
+     "hoseInch": "1/2\"",
+     "hoseDn": 12,
+     "portLabel": "3/4\"-16",
+     "portDash": 8,
+     "dimensions": {
+      "W": 22.2,
+      "A": 70.0,
+      "B": 38.0,
+      "E": 62.0
+     },
+     "sourcePart": "TP43-08-08FJ9L"
+    },
+    {
+     "partNumber": "IH-JIC-FEM-37-90-LD-0810",
+     "position": 5,
+     "hoseDash": 8,
+     "hoseInch": "1/2\"",
+     "hoseDn": 12,
+     "portLabel": "7/8\"-14",
+     "portDash": 10,
+     "dimensions": {
+      "W": 25.4,
+      "A": 70.0,
+      "B": 38.0,
+      "E": 65.0
+     },
+     "sourcePart": "TP43-08-10FJ9L"
+    },
+    {
+     "partNumber": "IH-JIC-FEM-37-90-LD-1010",
+     "position": 6,
+     "hoseDash": 10,
+     "hoseInch": "5/8\"",
+     "hoseDn": 16,
+     "portLabel": "7/8\"-14",
+     "portDash": 10,
+     "dimensions": {
+      "W": 25.4,
+      "A": 71.0,
+      "B": 42.0,
+      "E": 65.0
+     },
+     "sourcePart": "TP43-10-10FJ9L"
+    },
+    {
+     "partNumber": "IH-JIC-FEM-37-90-LD-1212",
+     "position": 7,
+     "hoseDash": 12,
+     "hoseInch": "3/4\"",
+     "hoseDn": 20,
+     "portLabel": "1.1/16\"-12",
+     "portDash": 12,
+     "dimensions": {
+      "W": 31.7,
+      "A": 101.0,
+      "B": 61.0,
+      "E": 95.0
+     },
+     "sourcePart": "TP43-12-12FJ9L"
+    },
+    {
+     "partNumber": "IH-JIC-FEM-37-90-LD-1616",
+     "position": 8,
+     "hoseDash": 16,
+     "hoseInch": "1\"",
+     "hoseDn": 25,
+     "portLabel": "1.5/16\"-12",
+     "portDash": 16,
+     "dimensions": {
+      "W": 38.1,
+      "A": 126.0,
+      "B": 81.0,
+      "E": 110.0
+     },
+     "sourcePart": "TP43-16-16FJ9L"
+    },
+    {
+     "partNumber": "IH-JIC-FEM-37-90-LD-2020",
+     "position": 9,
+     "hoseDash": 20,
+     "hoseInch": "1.1/4\"",
+     "hoseDn": 32,
+     "portLabel": "1.5/8\"-12",
+     "portDash": 20,
+     "dimensions": {
+      "W": 50.8,
+      "A": 140.0,
+      "B": 93.0,
+      "E": 134.0
+     },
+     "sourcePart": "TP43-20-20FJ9L"
+    }
+   ]
+  }
+ ]
+}
