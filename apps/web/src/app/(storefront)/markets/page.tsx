@@ -1,13 +1,22 @@
 import Link from 'next/link'
-import { buildBreadcrumbLd, buildServiceLd, marketCountryName, marketsOrdered } from '@indus/domain'
+import { MARKETS, buildBreadcrumbLd, buildServiceLd, marketCountryName, marketsOrdered } from '@indus/domain'
 import { JsonLd } from '@indus/ui'
 import { ORG_ID, SITE_NAME, pageMetadata, urlFor } from '../../../lib/seo'
 
+/*
+  This used to name five markets — "Saudi Arabia, Oman, Qatar, Bahrain and
+  Kuwait" — and the closing paragraph then said anything outside "these five"
+  was quoted case by case, while the body linked 126 destinations. The index
+  contradicted every market page it links to, which is the sort of thing a
+  buyer notices on the page that is supposed to establish that we do this
+  routinely. The count is derived so it can never fall out of date again.
+*/
 const DESCRIPTION =
-  'We export hydraulic hose, fittings, adapters, valves and industrial hose from our Dubai warehouse to Saudi Arabia, Oman, Qatar, Bahrain and Kuwait, typically within three working days of dispatch.'
+  'We export hydraulic hose, fittings, adapters, valves and industrial hose from our Dubai warehouse to ' +
+  `${MARKETS.length} destinations, with the transit band and the conformity documents stated per market rather than quoted case by case.`
 
 export const metadata = pageMetadata({
-  title: 'Export Markets — GCC Supply from Dubai',
+  title: 'Export Markets — Hydraulic & Industrial Hose Supplied from Dubai',
   description: DESCRIPTION,
   path: '/markets',
 })
@@ -80,7 +89,8 @@ export default function MarketsPage() {
 
       <section className="border-t border-ih-border py-8">
         <p className="max-w-[720px] text-[14.5px] leading-[1.6] text-ih-muted">
-          Shipping outside these five is quoted case by case — see{' '}
+          Everything ships from the same Dubai warehouse, so a mixed order travels as one
+          consignment under one set of documents — see{' '}
           <Link href="/shipping" className="underline hover:text-ih-ink">
             shipping and lead times
           </Link>
