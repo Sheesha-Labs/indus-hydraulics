@@ -26,6 +26,21 @@ const nextConfig: NextConfig = {
         destination: '/hydraulic-components-supplier-uae',
         permanent: true,
       },
+      // India and China shipped with the /markets expansion and were withdrawn
+      // the same day — not markets we serve. They were publicly reachable in
+      // between, and the sitemap listed them, so they redirect rather than
+      // 404. Config redirects rather than table rows because these are coupled
+      // to the route existing at all.
+      {
+        source: '/markets/india',
+        destination: '/markets',
+        permanent: true,
+      },
+      {
+        source: '/markets/china',
+        destination: '/markets',
+        permanent: true,
+      },
       // The blog moved out of the CMS tab strip into its own admin section
       // (Blog Editor). These keep bookmarks and the deep links that shipped in
       // the SEO inspector working rather than 404ing on a route that no
