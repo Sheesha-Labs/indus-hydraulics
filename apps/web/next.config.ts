@@ -193,18 +193,39 @@ const nextConfig: NextConfig = {
   },
 }
 
-// Sentry build-time wrapper. Source-map upload only runs when SENTRY_AUTH_TOKEN
-// is set (in CI / Vercel); locally the build still succeeds without it.
+// Sentry build-time wrapper.
+//
+// Everything the bundler plugin does at build time — creating a release,
+// uploading source maps — needs an auth token, which only exists on Vercel
+// (SENTRY_AUTH_TOKEN). Without one it used to print two warnings on every
+// single build. Rather than let that noise become permanent, the whole
+// upload/release half is gated on the token: no token, nothing to warn about;
+// token present, full behaviour with zero config changes. Runtime error
+// reporting is unaffected either way — that comes from the sentry.*.config.ts
+// files and only needs the DSN.
+const sentryAuthToken = process.env.SENTRY_AUTH_TOKEN
+
 export default withSentryConfig(nextConfig, {
   org: process.env.SENTRY_ORG,
   project: process.env.SENTRY_PROJECT,
+  authToken: sentryAuthToken,
   // Quiet build output unless we're in CI where logs are useful.
   silent: !process.env.CI,
   // Upload all client bundles' source maps for cleaner stack traces.
   widenClientFileUpload: true,
   // Source maps are generated for upload to Sentry, then removed from the
   // build output so they aren't shipped to the browser.
-  sourcemaps: { deleteSourcemapsAfterUpload: true },
-  // Strip Sentry's own logger from the prod bundle.
-  disableLogger: true,
+  sourcemaps: sentryAuthToken
+    ? { deleteSourcemapsAfterUpload: true }
+    : { disable: true },
+  // Tokenless builds must not even look like they want a release, or the
+  // bundler plugin warns once per build. `create: false` stops the Next SDK
+  // resolving a release name, and the empty `name` stops the bundler plugin
+  // filling one back in from the git SHA — both are needed, the first alone
+  // is not enough.
+  release: sentryAuthToken ? { create: true } : { create: false, name: '' },
+  // Strip Sentry's own logger from the prod bundle. This is the replacement
+  // for the deprecated top-level `disableLogger`; the SDK maps one to the
+  // other internally, so behaviour is identical.
+  webpack: { treeshake: { removeDebugLogging: true } },
 })
