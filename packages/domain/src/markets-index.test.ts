@@ -3,9 +3,10 @@ import {
   MARKET_PAGES,
   MARKET_REGIONS,
   pendingMarketPageSlugs,
+  releasedMarketPage,
   releasedMarketPageSlugs,
 } from './market-pages'
-import { MARKETS, marketBySlug } from './markets'
+import { MARKETS, marketBySlug, type Market } from './markets'
 import {
   MARKET_GEO_ALIASES,
   MARKET_REGION_NOTES,
@@ -56,12 +57,25 @@ describe('marketTransitBand', () => {
   })
 
   it('shortens a lead time to something that fits a card', () => {
-    const saudi = marketBySlug('saudi-arabia')!
-    expect(saudi.leadTime).toBe('Typically 3 working days from dispatch')
-    expect(marketTransitBand(saudi)).toBe('3 working days')
+    /*
+      Exercised against SYNTHETIC registry rows, not real markets.
 
-    const kenya = marketBySlug('kenya')!
-    expect(marketTransitBand(kenya)).toBe('10–20 working days by sea')
+      Every market whose registry row states a band now also has a released
+      designed record, so `marketTransitBand` reads the manifest for all of
+      them and this branch is unreachable through real data. It is still the
+      right fallback — market 127 arrives with a registry row and no record,
+      and a market set back to `released: false` returns to it — so it is
+      tested on inputs rather than on whichever markets happen to be released
+      this week. Pinning it to Kenya is what broke when Kenya shipped.
+    */
+    const row = (leadTime: string): Market =>
+      ({ ...marketBySlug('brazil')!, slug: 'nowhere', leadTime }) as Market
+
+    expect(marketTransitBand(row('Typically 3 working days from dispatch'))).toBe('3 working days')
+    expect(marketTransitBand(row('Typically 10–20 working days by sea from dispatch'))).toBe(
+      '10–20 working days by sea'
+    )
+    expect(marketTransitBand(row('Quoted per consignment'))).toBeNull()
   })
 
   it('prefers a designed market’s own manifest row over the registry prose', () => {
@@ -232,9 +246,35 @@ describe('the release gate', () => {
   */
   const cards = new Map(marketIndexRegions().flatMap((r) => r.cards.map((c) => [c.slug, c])))
 
-  it('has something to check', () => {
-    expect(pendingMarketPageSlugs().length).toBeGreaterThan(0)
+  it('has released markets to check', () => {
+    /*
+      The pending list is now EMPTY — all 46 records cleared forwarder review
+      on 2026-08-22 — so the held-market loop below is vacuous rather than
+      wrong. It is kept, and the behaviour it guards is asserted against a
+      synthetic held card in `gives a held market nothing to contradict its
+      page`, because the mechanism has to keep working for market 47: written,
+      unreleased, and shown on the index as a plain card until someone signs
+      the conformity sequence off.
+    */
     expect(releasedMarketPageSlugs().length).toBeGreaterThan(0)
+    expect(pendingMarketPageSlugs().length + releasedMarketPageSlugs().length).toBe(
+      Object.keys(MARKET_PAGES).length
+    )
+  })
+
+  it('gives a held market nothing to contradict its page', () => {
+    /*
+      The mechanism, on a synthetic record, so it survives every market being
+      released. `marketPrimaryMode` and `marketTransitBand` both route through
+      `releasedMarketPage`, which returns undefined for anything held — so a
+      held market falls back to its registry row and can never print a lane its
+      page does not mention.
+    */
+    const held = marketBySlug('brazil')!
+    expect(releasedMarketPage(held.slug)).toBeUndefined()
+    expect(marketPrimaryMode(held)).toBeNull()
+    expect(held.leadTime).toBe('Quoted per consignment')
+    expect(marketTransitBand(held)).toBeNull()
   })
 
   it('gives a held market no freight-mode tag and no page-derived band', () => {
