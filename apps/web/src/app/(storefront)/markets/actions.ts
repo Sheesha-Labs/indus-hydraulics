@@ -7,7 +7,7 @@ import {
   enquiryUrgency,
   marketBySlug,
   marketEnquirySubject,
-  marketPageBySlug,
+  releasedMarketPage,
   normaliseIncoterm,
   normaliseNeededBy,
   signQuoteAccessToken,
@@ -140,7 +140,14 @@ export async function submitMarketEnquiry(formData: FormData): Promise<SubmitRes
   }
 
   const destinationName = market?.name ?? input.destinationCountry ?? ''
-  const page = market ? marketPageBySlug(market.slug) : undefined
+  /*
+    `releasedMarketPage`, not the raw lookup. All 46 records exist, but a market
+    still waiting on its forwarder sign-off renders the plain layout — so the
+    buyer never saw the designed page's quoting currency and an Estimate raised
+    in it would come out of nowhere. An unreleased market quotes in the store
+    default, same as one with no record at all.
+  */
+  const page = market ? releasedMarketPage(market.slug) : undefined
 
   if (formData.get('attachmentsPending') === '1') {
     return { success: false, error: 'An attachment is still uploading. Give it a moment and try again.' }

@@ -1,5 +1,10 @@
 import { describe, expect, it } from 'vitest'
-import { MARKET_PAGES, MARKET_REGIONS } from './market-pages'
+import {
+  MARKET_PAGES,
+  MARKET_REGIONS,
+  pendingMarketPageSlugs,
+  releasedMarketPageSlugs,
+} from './market-pages'
 import { MARKETS, marketBySlug } from './markets'
 import {
   MARKET_GEO_ALIASES,
@@ -188,8 +193,12 @@ describe('marketIndexTotals', () => {
     expect(totals.regions).toBe(MARKET_REGIONS.length)
   })
 
-  it('counts designed pages from MARKET_PAGES', () => {
-    expect(totals.designed).toBe(Object.keys(MARKET_PAGES).length)
+  it('counts only the market pages that are actually served', () => {
+    // Not `Object.keys(MARKET_PAGES).length`. All 46 records exist; most are
+    // held pending a forwarder sign-off and their routes serve the plain
+    // layout.
+    expect(totals.designed).toBe(releasedMarketPageSlugs().length)
+    expect(totals.designed).toBeLessThanOrEqual(Object.keys(MARKET_PAGES).length)
   })
 
   it('never claims more stated bands than there are destinations', () => {
@@ -205,5 +214,61 @@ describe('marketDatalistNames', () => {
     expect(names).toContain('United States')
     expect(names.some((n) => n.startsWith('the '))).toBe(false)
     expect([...names].sort((a, b) => a.localeCompare(b))).toEqual(names)
+  })
+})
+
+describe('the release gate', () => {
+  /*
+    THE INVARIANT THIS PAGE EXISTS TO PROTECT, FROM THE OTHER DIRECTION.
+
+    All 46 designed records live in the repo; only the ones whose regulatory
+    prose a forwarder has signed off are served. Reading the raw record here
+    would put a freight-mode tag and a precise transit band on a card that
+    links to a page saying "quoted per consignment" — an index contradicting
+    its own pages, which is exactly the bug this rebuild removed.
+
+    These walk the pending list rather than naming markets, so they keep
+    working as records are released one at a time.
+  */
+  const cards = new Map(marketIndexRegions().flatMap((r) => r.cards.map((c) => [c.slug, c])))
+
+  it('has something to check', () => {
+    expect(pendingMarketPageSlugs().length).toBeGreaterThan(0)
+    expect(releasedMarketPageSlugs().length).toBeGreaterThan(0)
+  })
+
+  it('gives a held market no freight-mode tag and no page-derived band', () => {
+    for (const slug of pendingMarketPageSlugs()) {
+      const card = cards.get(slug)
+      expect(card, `${slug} is missing from the index`).toBeDefined()
+      expect(card!.mode, `${slug} is held but tagged with a freight mode`).toBeNull()
+      expect(card!.designed, `${slug} is held but counted as designed`).toBe(false)
+
+      /*
+        The sharp case: a held market whose registry row says "Quoted per
+        consignment" while its held record states a band. Nigeria is exactly
+        this shape — registry "Quoted per consignment", record "26–32 days" —
+        so a card reading the held record would print a lane the page behind it
+        does not mention. Comparing the two strings is no good on its own:
+        Qatar's held record and its registry row both say three working days,
+        and agreeing proves nothing.
+      */
+      const market = marketBySlug(slug)!
+      if (market.leadTime === 'Quoted per consignment') {
+        expect(card!.transit, `${slug} is showing its held page's transit band`).toBeNull()
+      }
+    }
+  })
+
+  it('gives a released market its tag and its own band', () => {
+    for (const slug of releasedMarketPageSlugs()) {
+      const card = cards.get(slug)
+      expect(card, `${slug} is missing from the index`).toBeDefined()
+      expect(card!.designed).toBe(true)
+      expect(card!.mode, `${slug} is released but has no freight-mode tag`).toBeTruthy()
+
+      const transit = MARKET_PAGES[slug]?.manifest.find((row) => row.label === 'Transit')?.value
+      if (transit) expect(card!.transit).toBe(transit)
+    }
   })
 })

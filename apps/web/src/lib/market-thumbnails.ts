@@ -2,7 +2,7 @@ import 'server-only'
 
 import { geoArea, geoBounds, geoMercator, geoPath } from 'd3-geo'
 import type { GeoPermissibleObjects, GeoStream } from 'd3-geo'
-import { MARKET_PAGES, marketGeoNames, type Market } from '@indus/domain'
+import { marketGeoNames, releasedMarketPage, type Market } from '@indus/domain'
 import { findCountryFeature, type CountryFeature } from './natural-earth'
 
 /**
@@ -180,7 +180,13 @@ function compute(market: Market): MarketThumbnail | null {
   const path = geoPath(thinned).digits(DIGITS)(target as unknown as GeoPermissibleObjects)
   if (!path) return null
 
-  const page = MARKET_PAGES[market.slug]
+  /*
+    `releasedMarketPage`, not the raw record. The dot marks a port on a lane the
+    linked page publishes; a market still waiting on its forwarder sign-off
+    serves the plain layout, which shows no lane at all. Marking a port for it
+    would put a claim on the card that the page behind it does not make.
+  */
+  const page = releasedMarketPage(market.slug)
   const projected = page ? projection(page.map.crossing.coords as unknown as [number, number]) : null
   const port =
     projected && Number.isFinite(projected[0]) && Number.isFinite(projected[1])

@@ -1,4 +1,4 @@
-import { MARKET_PAGES, MARKET_REGIONS, primaryRoute } from './market-pages'
+import { MARKET_PAGES, MARKET_REGIONS, primaryRoute, releasedMarketPage } from './market-pages'
 import { MARKETS, marketBySlug, marketSlugByName, type Market } from './markets'
 
 /**
@@ -32,6 +32,20 @@ import { MARKETS, marketBySlug, marketSlugByName, type Market } from './markets'
  * a card shows a transit band when we have one to state, and "Quoted per
  * consignment" when we do not. That is the same two-state card, keyed on the
  * fact the buyer actually cares about rather than on our build progress.
+ *
+ * EVERY CUSTOMER-FACING CLAIM ON A CARD GOES THROUGH `releasedMarketPage`,
+ * NEVER `MARKET_PAGES`.
+ *
+ * All 46 designed records exist in the repo, but a market whose regulatory
+ * prose has not been checked by a forwarder is held back and its route serves
+ * the plain layout instead. Reading the raw record here would put "26–32 days"
+ * and a `SEA` tag on a card that links to a page saying "quoted per
+ * consignment" — which is precisely the index-contradicts-its-own-pages
+ * failure this rebuild exists to end, reintroduced from the other direction.
+ *
+ * The one exception is `marketGeoNames`, and it is deliberate: a record's
+ * Natural Earth spellings are cartography, not a claim to a buyer, so an
+ * unreleased record's aliases are used and simply draw a better map.
  */
 
 /**
@@ -104,8 +118,9 @@ export const MARKET_GEO_ALIASES: Readonly<Record<string, readonly string[]>> = {
 /**
  * Every Natural Earth spelling worth trying for a destination, best first.
  *
- * A designed market answers from its own record; everything else falls back to
- * the alias table and then to the bare name with any leading article removed.
+ * Answered from the market's own record when one is written — released or not,
+ * because these are Natural Earth spellings rather than a claim to a buyer —
+ * then the alias table, then the bare name with any leading article removed.
  */
 export function marketGeoNames(market: Market): readonly string[] {
   const page = MARKET_PAGES[market.slug]
@@ -120,7 +135,7 @@ export function marketGeoNames(market: Market): readonly string[] {
  *
  * Three sources, in falling order of precision:
  *
- *   1. A designed market's own manifest row. Nigeria's "26–32 days" is a
+ *   1. A RELEASED designed market's own manifest row. Nigeria's "26–32 days" is a
  *      measured lane, not a rounded lead time, and it is the number the market
  *      page itself prints — reading it here is what keeps the card and the
  *      page it links to from ever disagreeing.
@@ -137,7 +152,7 @@ export function marketGeoNames(market: Market): readonly string[] {
  * written in a new shape breaks the build instead of silently losing its band.
  */
 export function marketTransitBand(market: Market): string | null {
-  const page = MARKET_PAGES[market.slug]
+  const page = releasedMarketPage(market.slug)
   const stated = page?.manifest.find((row) => row.label === 'Transit')?.value
   if (stated) return stated
 
@@ -149,12 +164,13 @@ export function marketTransitBand(market: Market): string | null {
 /**
  * The freight mode tag in the corner of a thumbnail — `SEA`, `ROAD`, `AIR`.
  *
- * Only designed markets have a plotted route to read it from, so this is null
- * for the rest rather than guessed from the prose in `routes`. The tag is a
- * claim about the lane we drew; without the drawing there is no claim.
+ * Only a RELEASED designed market has a published lane to read it from, so this
+ * is null for the rest rather than guessed from the prose in `routes`. The tag
+ * is a claim about a lane the linked page actually shows; without that page
+ * there is no claim.
  */
 export function marketPrimaryMode(market: Market): string | null {
-  const page = MARKET_PAGES[market.slug]
+  const page = releasedMarketPage(market.slug)
   if (!page) return null
   return primaryRoute(page.map).mode.split(' ')[0]?.toUpperCase() ?? null
 }
@@ -170,7 +186,7 @@ export type MarketIndexCard = {
   readonly transit: string | null
   /** Null renders no corner tag. */
   readonly mode: string | null
-  /** True once the market has a designed `/markets/{slug}`. */
+  /** True once the market's designed `/markets/{slug}` is actually served. */
   readonly designed: boolean
   /** Lowercased haystack for the client-side filter — name plus region. */
   readonly search: string
@@ -232,7 +248,7 @@ export function marketIndexRegions(): MarketIndexRegion[] {
           countryCode: market.countryCode,
           transit: marketTransitBand(market),
           mode: marketPrimaryMode(market),
-          designed: MARKET_PAGES[slug] !== undefined,
+          designed: releasedMarketPage(slug) !== undefined,
           search: `${name} ${region}`.toLowerCase(),
         },
       ]

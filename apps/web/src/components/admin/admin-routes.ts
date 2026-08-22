@@ -14,6 +14,7 @@ export const ROUTE_LABELS: Record<string, { section: string; label: string }> = 
   cms: { section: 'Content', label: 'Pages & Blog' },
   navigation: { section: 'Content', label: 'Navigation' },
   seo: { section: 'Content', label: 'SEO & Search' },
+  markets: { section: 'Content', label: 'Export markets' },
   users: { section: 'System', label: 'Users & Roles' },
   settings: { section: 'System', label: 'Settings' },
 }
