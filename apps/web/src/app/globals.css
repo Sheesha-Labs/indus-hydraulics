@@ -161,6 +161,18 @@
     -webkit-text-size-adjust: 100%;
   }
 
+  /* CLAUDE.md §10.7. `scroll-behavior: smooth` above is site-wide and was
+     unguarded; the export-market pages are the first surface with a long
+     in-page jump (the hero CTA to the mid-page quote form), and animating
+     twelve thousand pixels of scroll is exactly what this preference exists to
+     stop. Scoped to the scroll only — a blanket animation kill would change
+     motion on screens nobody has reviewed for it. */
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+
   body {
     background-color: var(--color-ih-bg);
     color: var(--color-ih-ink);

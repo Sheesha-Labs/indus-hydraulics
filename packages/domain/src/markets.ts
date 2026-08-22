@@ -2720,3 +2720,16 @@ export function marketNames(): string[] {
 export function marketCountryCodes(): string[] {
   return marketsOrdered().map((m) => m.countryCode)
 }
+
+/**
+ * Country name → market slug.
+ *
+ * The market sitemap on every market page is written as prose — "the United
+ * Kingdom", "Trinidad and Tobago" — and has to resolve each name to a route.
+ * Deriving the slug from the name looks like it works and does not: "Republic
+ * of the Congo" slugs to `republic-of-congo`, not `republic-of-the-congo`, and
+ * that one case would have shipped as a dead link on 126 pages. Look it up.
+ */
+export function marketSlugByName(): Map<string, string> {
+  return new Map(MARKETS.map((m) => [m.name, m.slug]))
+}
