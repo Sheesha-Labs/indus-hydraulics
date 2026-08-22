@@ -32,6 +32,18 @@ export type Office = {
   /** E.164 phone if known. Placeholder when null. */
   telephone: string | null
   email: string | null
+  /**
+   * What the contact-page map is centred on. Defaults to the formatted
+   * address, which Google geocodes; set it to "lat,lng" once the pin has been
+   * checked on the ground, so the map can't drift with Google's geocoder.
+   */
+  mapQuery?: string
+  /**
+   * A photograph of this office, shown beside the map. Null until a real photo
+   * exists — a rendered or stock building is worse than no picture on the one
+   * page whose job is to prove the company is real.
+   */
+  photo?: { src: string; alt: string } | null
 }
 
 export const OFFICES: Office[] = [
@@ -51,8 +63,15 @@ export const OFFICES: Office[] = [
     openingHours: ['Mo-Fr 09:00-18:00'],
     telephone: '+971 52 2477942',
     email: 'sales@indushydraulics.me',
+    mapQuery: 'Al Hilal Bank Building, Al Nahda Street, Al Qusais 2, Dubai, United Arab Emirates',
+    photo: null,
   },
 ]
+
+/** The map query for an office — its own if set, otherwise its address. */
+export function officeMapQuery(office: Office): string {
+  return office.mapQuery ?? formatOfficeAddress(office).split('\n').join(', ')
+}
 
 /**
  * Countries where Indus has a verified physical office. Used to derive the
