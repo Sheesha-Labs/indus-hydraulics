@@ -1,0 +1,121 @@
+{
+ "source": "Master supplier catalogue p13 — the 00400 table serves three of our listings",
+ "sizeFieldCorrections": [],
+ "duplicateRowsDropped": [],
+ "products": [
+  {
+   "sku": "IH-CF-SK-4SH-1016",
+   "sources": [
+    "00400 (p13)"
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-CF-SK-4SH-1016-06",
+     "position": 0,
+     "hoseDash": 6,
+     "hoseInch": "3/8\"",
+     "hoseDn": 10,
+     "portLabel": null,
+     "portDash": null,
+     "dimensions": {
+      "D": 25.5,
+      "L": 39.0
+     },
+     "sourcePart": "00400-06"
+    },
+    {
+     "partNumber": "IH-CF-SK-4SH-1016-08",
+     "position": 1,
+     "hoseDash": 8,
+     "hoseInch": "1/2\"",
+     "hoseDn": 12,
+     "portLabel": null,
+     "portDash": null,
+     "dimensions": {
+      "D": 29.0,
+      "L": 41.0
+     },
+     "sourcePart": "00400-08"
+    },
+    {
+     "partNumber": "IH-CF-SK-4SH-1016-10",
+     "position": 2,
+     "hoseDash": 10,
+     "hoseInch": "5/8\"",
+     "hoseDn": 16,
+     "portLabel": null,
+     "portDash": null,
+     "dimensions": {
+      "D": 32.5,
+      "L": 43.0
+     },
+     "sourcePart": "00400-10"
+    }
+   ]
+  },
+  {
+   "sku": "IH-CF-SK-R12-0616",
+   "sources": [
+    "00400 (p13)"
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-CF-SK-R12-0616-04",
+     "position": 0,
+     "hoseDash": 4,
+     "hoseInch": "1/4\"",
+     "hoseDn": 6,
+     "portLabel": null,
+     "portDash": null,
+     "dimensions": {
+      "D": 22.0,
+      "L": 37.5
+     },
+     "sourcePart": "00400-04"
+    },
+    {
+     "partNumber": "IH-CF-SK-R12-0616-06",
+     "position": 1,
+     "hoseDash": 6,
+     "hoseInch": "3/8\"",
+     "hoseDn": 10,
+     "portLabel": null,
+     "portDash": null,
+     "dimensions": {
+      "D": 25.5,
+      "L": 39.0
+     },
+     "sourcePart": "00400-06"
+    },
+    {
+     "partNumber": "IH-CF-SK-R12-0616-08",
+     "position": 2,
+     "hoseDash": 8,
+     "hoseInch": "1/2\"",
+     "hoseDn": 12,
+     "portLabel": null,
+     "portDash": null,
+     "dimensions": {
+      "D": 29.0,
+      "L": 41.0
+     },
+     "sourcePart": "00400-08"
+    },
+    {
+     "partNumber": "IH-CF-SK-R12-0616-10",
+     "position": 3,
+     "hoseDash": 10,
+     "hoseInch": "5/8\"",
+     "hoseDn": 16,
+     "portLabel": null,
+     "portDash": null,
+     "dimensions": {
+      "D": 32.5,
+      "L": 43.0
+     },
+     "sourcePart": "00400-10"
+    }
+   ]
+  }
+ ]
+}
