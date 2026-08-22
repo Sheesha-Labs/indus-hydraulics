@@ -141,11 +141,12 @@ export default async function ShippingPage({ params }: Props) {
             <strong>UAE:</strong> 1–3 working days from dispatch.
           </li>
           <li>
-            <strong>GCC (Saudi Arabia, Oman, Bahrain, Qatar, Kuwait):</strong> typically 3–10
-            working days from dispatch, subject to land or air freight choice and border clearance.
+            <strong>GCC (Saudi Arabia, Oman, Bahrain, Qatar, Kuwait) and Iraq:</strong> typically
+            3–10 working days from dispatch, subject to land or air freight choice and border
+            clearance.
           </li>
           <li>
-            <strong>Wider Middle East (e.g. Jordan, Iraq, Yemen, Egypt):</strong> 5–15 working days
+            <strong>Wider Middle East (e.g. Jordan, Yemen, Egypt):</strong> 5–15 working days
             depending on the lane.
           </li>
           <li>
