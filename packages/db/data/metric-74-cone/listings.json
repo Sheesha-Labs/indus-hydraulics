@@ -1,0 +1,1702 @@
+{
+ "source": "Master supplier hydraulic hose fitting catalogue, pp36-39",
+ "products": [
+  {
+   "sku": "IH-MF-MAL-74",
+   "title": "Metric Male 74° Cone Hose Fitting",
+   "slug": "metric-male-74-cone-hose-fitting",
+   "categorySlug": "metric-hose-fittings",
+   "specTemplateSlug": "threaded-fitting-spec",
+   "focusKeyword": "metric male 74 cone hose fitting",
+   "imageFromSku": "IH-MF-MAL-60-SEAT",
+   "descriptionShort": "Metric Male 74° Cone — metric thread with a 74° included cone seat (37° per side), in 19 sizes from -02. Not interchangeable with the metric 60° cone.",
+   "descriptionLong": "<p>The <strong>Metric Male 74° Cone Hose Fitting</strong> is the male half — a metric thread with the cone machined on the fitting of the metric 74° cone range — a hydraulic hose fitting with a metric thread and a 74° included cone seat, sealing metal-to-metal against the mating cone.</p>\n<h3>What the 74° seat is</h3>\n<p>74° is the included angle — 37° per side, the same seat geometry the JIC 37° flare uses. The seat is the only thing the two share: this fitting carries a metric thread, so it will not mate with a JIC port and a JIC fitting will not mate with this one. If the port you are facing is metric and the seat is a cone rather than a flat face or an O-ring groove, measure the cone before ordering — the metric 60° cone in this same category looks near-identical and does not seal against a 74° mating half.</p>\n<h3>Construction</h3>\n<ul>\n<li>Configuration: straight</li>\n<li>Thread form: Metric (M10×1 to M45×2)</li>\n<li>Sealing form: 74° included cone seat (37° per side), metal-to-metal</li>\n<li>Gender: male</li>\n<li>Material: carbon steel, zinc-plated and Cr3+ passivated (316 stainless on request)</li>\n</ul>\n<h3>Sizes</h3>\n<p>19 sizes, hose bore -02 to -20, threads M10×1 to M45×2. The full size and dimension table is on this page.</p>\n<h3>How to order</h3>\n<p>Quote the Indus part number for the size you need. Tell us the hose grade and bore and we will include the matching crimp ferrule — the ferrule follows the hose, not the fitting. Indus crimps and pressure-tests assemblies before dispatch.</p>",
+   "seoTitle": "Metric Male 74° Cone Hose Fitting | M10×1–M45×2",
+   "seoDescription": "Metric Male 74° Cone Hose Fitting — 74° cone seat on a metric thread, 19 sizes (-02 to -20), M10×1 to M45×2. Carbon steel or 316 stainless, ex-Dubai.",
+   "faqs": [
+    {
+     "question": "How is this different from a JIC 37° fitting?",
+     "answer": "The seat is the same — 74° included, 37° per side — and the thread is not. This fitting is metric; JIC is UN/UNF. They will not screw together. If your port is metric and the seat is a cone, this is the family you want; if the thread is inch, use the JIC range."
+    },
+    {
+     "question": "How is this different from the metric 60° cone in the same category?",
+     "answer": "Only the cone angle, and it matters. A 74° male will not seal against a 60° female — the two cones touch on a line instead of a face and the joint weeps under pressure. Both use metric threads of the same nominal sizes, so the thread will happily start. Measure the cone, not the thread."
+    },
+    {
+     "question": "What thread sizes are available?",
+     "answer": "Metric (M10×1 to M45×2). The table on this page lists every thread against every hose bore, including the fine-pitch variants where the catalogue carries both — M12×1.25 and M12×1.5 are separate part numbers, not the same fitting."
+    },
+    {
+     "question": "What sizes are available?",
+     "answer": "19 sizes, hose bore -02 to -20. Every combination in the table is an orderable part number."
+    },
+    {
+     "question": "What is the maximum working pressure?",
+     "answer": "The hose grade and bore set the assembly rating, not the fitting. A correctly crimped fitting does not derate the hose. Tell us the grade and bore on the RFQ and we will confirm the figure in writing."
+    },
+    {
+     "question": "Which ferrule pairs with this fitting?",
+     "answer": "The one that matches your hose grade — the skive/no-skive choice follows the hose construction, not the fitting end. Send the hose grade with your enquiry and we will specify the ferrule and the crimp diameter."
+    },
+    {
+     "question": "Is stainless steel available?",
+     "answer": "Yes — 316 stainless on request across the range, for marine, offshore and washdown service. Standard supply is carbon steel, zinc-plated and Cr3+ passivated. Add \"-SS\" to the part number when you enquire."
+    },
+    {
+     "question": "Can Indus crimp the assembly?",
+     "answer": "Yes. We crimp, pressure-test and certify assemblies in Dubai and ship UAE-wide. Send the hose grade, bore, both end fittings, overall length and orientation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Fitting Configuration",
+     "value": "straight",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "fitting_configuration"
+    },
+    {
+     "group": "Identification",
+     "label": "Thread Form",
+     "value": "Metric (M10×1 to M45×2)",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "thread_form"
+    },
+    {
+     "group": "Identification",
+     "label": "Sealing Form",
+     "value": "74° included cone seat (37° per side), metal-to-metal",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "sealing_form"
+    },
+    {
+     "group": "Identification",
+     "label": "Thread Gender",
+     "value": "male",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "gender"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size Range",
+     "value": "-02 to -20",
+     "unit": null,
+     "position": 4,
+     "isFilterable": true,
+     "templateKey": "nominal_size_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "Carbon steel (316 stainless on request)",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "material"
+    },
+    {
+     "group": "Construction",
+     "label": "Surface Treatment",
+     "value": "Zinc-plated, Cr3+ passivated, RoHS-compliant",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "surface_treatment"
+    },
+    {
+     "group": "Compliance",
+     "label": "Applicable Standards",
+     "value": "Metric thread to ISO 261 (coarse and fine pitch)",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": "applicable_standards"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-MF-MAL-74-0210",
+     "hoseDash": 2,
+     "hoseInch": "1/8\"",
+     "hoseDn": 4,
+     "portLabel": "M10×1",
+     "portDash": null,
+     "dimensions": {
+      "S1": 14.0,
+      "A": 23.0,
+      "C": 12.5
+     },
+     "sourcePart": "10711-10-02",
+     "position": 0
+    },
+    {
+     "partNumber": "IH-MF-MAL-74-0310",
+     "hoseDash": 3,
+     "hoseInch": "3/16\"",
+     "hoseDn": 5,
+     "portLabel": "M10×1",
+     "portDash": null,
+     "dimensions": {
+      "S1": 14.0,
+      "A": 23.0,
+      "C": 12.5
+     },
+     "sourcePart": "10711-10-03",
+     "position": 1
+    },
+    {
+     "partNumber": "IH-MF-MAL-74-0312C",
+     "hoseDash": 3,
+     "hoseInch": "3/16\"",
+     "hoseDn": 5,
+     "portLabel": "M12×1.25",
+     "portDash": null,
+     "dimensions": {
+      "S1": 14.0,
+      "A": 24.5,
+      "C": 14.0
+     },
+     "sourcePart": "10711-12-03C",
+     "position": 2
+    },
+    {
+     "partNumber": "IH-MF-MAL-74-0312",
+     "hoseDash": 3,
+     "hoseInch": "3/16\"",
+     "hoseDn": 5,
+     "portLabel": "M12×1.5",
+     "portDash": null,
+     "dimensions": {
+      "S1": 14.0,
+      "A": 26.5,
+      "C": 15.7
+     },
+     "sourcePart": "10711-12-03",
+     "position": 3
+    },
+    {
+     "partNumber": "IH-MF-MAL-74-0414",
+     "hoseDash": 4,
+     "hoseInch": "1/4\"",
+     "hoseDn": 6,
+     "portLabel": "M14×1.5",
+     "portDash": null,
+     "dimensions": {
+      "S1": 17.0,
+      "A": 30.5,
+      "C": 18.0
+     },
+     "sourcePart": "10711-14-04",
+     "position": 4
+    },
+    {
+     "partNumber": "IH-MF-MAL-74-0516",
+     "hoseDash": 5,
+     "hoseInch": "5/16\"",
+     "hoseDn": 8,
+     "portLabel": "M16×1.5",
+     "portDash": null,
+     "dimensions": {
+      "S1": 17.0,
+      "A": 31.5,
+      "C": 19.0
+     },
+     "sourcePart": "10711-16-05",
+     "position": 5
+    },
+    {
+     "partNumber": "IH-MF-MAL-74-0614",
+     "hoseDash": 6,
+     "hoseInch": "3/8\"",
+     "hoseDn": 10,
+     "portLabel": "M14×1.5",
+     "portDash": null,
+     "dimensions": {
+      "S1": 17.0,
+      "A": 30.5,
+      "C": 18.0
+     },
+     "sourcePart": "10711-14-06",
+     "position": 6
+    },
+    {
+     "partNumber": "IH-MF-MAL-74-0616",
+     "hoseDash": 6,
+     "hoseInch": "3/8\"",
+     "hoseDn": 10,
+     "portLabel": "M16×1.5",
+     "portDash": null,
+     "dimensions": {
+      "S1": 17.0,
+      "A": 31.5,
+      "C": 19.0
+     },
+     "sourcePart": "10711-16-06",
+     "position": 7
+    },
+    {
+     "partNumber": "IH-MF-MAL-74-0618",
+     "hoseDash": 6,
+     "hoseInch": "3/8\"",
+     "hoseDn": 10,
+     "portLabel": "M18×1.5",
+     "portDash": null,
+     "dimensions": {
+      "S1": 19.0,
+      "A": 31.5,
+      "C": 19.0
+     },
+     "sourcePart": "10711-18-06",
+     "position": 8
+    },
+    {
+     "partNumber": "IH-MF-MAL-74-0822",
+     "hoseDash": 8,
+     "hoseInch": "1/2\"",
+     "hoseDn": 12,
+     "portLabel": "M22×1.5",
+     "portDash": null,
+     "dimensions": {
+      "S1": 22.0,
+      "A": 35.0,
+      "C": 19.5
+     },
+     "sourcePart": "10711-22-08",
+     "position": 9
+    },
+    {
+     "partNumber": "IH-MF-MAL-74-0824",
+     "hoseDash": 8,
+     "hoseInch": "1/2\"",
+     "hoseDn": 12,
+     "portLabel": "M24×1.5",
+     "portDash": null,
+     "dimensions": {
+      "S1": 24.0,
+      "A": 37.0,
+      "C": 20.0
+     },
+     "sourcePart": "10711-24-08",
+     "position": 10
+    },
+    {
+     "partNumber": "IH-MF-MAL-74-1027",
+     "hoseDash": 10,
+     "hoseInch": "5/8\"",
+     "hoseDn": 16,
+     "portLabel": "M27×1.5",
+     "portDash": null,
+     "dimensions": {
+      "S1": 27.0,
+      "A": 38.5,
+      "C": 20.5
+     },
+     "sourcePart": "10711-27-10",
+     "position": 11
+    },
+    {
+     "partNumber": "IH-MF-MAL-74-1230",
+     "hoseDash": 12,
+     "hoseInch": "3/4\"",
+     "hoseDn": 20,
+     "portLabel": "M30×1.5",
+     "portDash": null,
+     "dimensions": {
+      "S1": 32.0,
+      "A": 42.5,
+      "C": 23.0
+     },
+     "sourcePart": "10711-30-12",
+     "position": 12
+    },
+    {
+     "partNumber": "IH-MF-MAL-74-1230E",
+     "hoseDash": 12,
+     "hoseInch": "3/4\"",
+     "hoseDn": 20,
+     "portLabel": "M30×2",
+     "portDash": null,
+     "dimensions": {
+      "S1": 32.0,
+      "A": 45.5,
+      "C": 26.0
+     },
+     "sourcePart": "10711-30-12E",
+     "position": 13
+    },
+    {
+     "partNumber": "IH-MF-MAL-74-1233",
+     "hoseDash": 12,
+     "hoseInch": "3/4\"",
+     "hoseDn": 20,
+     "portLabel": "M33×2",
+     "portDash": null,
+     "dimensions": {
+      "S1": 36.0,
+      "A": 45.0,
+      "C": 26.0
+     },
+     "sourcePart": "10711-33-12",
+     "position": 14
+    },
+    {
+     "partNumber": "IH-MF-MAL-74-1436",
+     "hoseDash": 14,
+     "hoseInch": "7/8\"",
+     "hoseDn": 22,
+     "portLabel": "M36×2",
+     "portDash": null,
+     "dimensions": {
+      "S1": 38.0,
+      "A": 45.0,
+      "C": 26.0
+     },
+     "sourcePart": "10711-36-14",
+     "position": 15
+    },
+    {
+     "partNumber": "IH-MF-MAL-74-1639",
+     "hoseDash": 16,
+     "hoseInch": "1\"",
+     "hoseDn": 25,
+     "portLabel": "M39×2",
+     "portDash": null,
+     "dimensions": {
+      "S1": 41.0,
+      "A": 48.0,
+      "C": 27.5
+     },
+     "sourcePart": "10711-39-16",
+     "position": 16
+    },
+    {
+     "partNumber": "IH-MF-MAL-74-2042",
+     "hoseDash": 20,
+     "hoseInch": "1.1/4\"",
+     "hoseDn": 32,
+     "portLabel": "M42×2",
+     "portDash": null,
+     "dimensions": {
+      "S1": 46.0,
+      "A": 52.0,
+      "C": 28.5
+     },
+     "sourcePart": "10711-42-20",
+     "position": 17
+    },
+    {
+     "partNumber": "IH-MF-MAL-74-2045",
+     "hoseDash": 20,
+     "hoseInch": "1.1/4\"",
+     "hoseDn": 32,
+     "portLabel": "M45×2",
+     "portDash": null,
+     "dimensions": {
+      "S1": 46.0,
+      "A": 52.0,
+      "C": 28.5
+     },
+     "sourcePart": "10711-45-20",
+     "position": 18
+    }
+   ],
+   "sourceFamily": "10711 (p36)"
+  },
+  {
+   "sku": "IH-MF-FEM-74",
+   "title": "Metric Female 74° Cone Seat Hose Fitting",
+   "slug": "metric-female-74-cone-seat-hose-fitting",
+   "categorySlug": "metric-hose-fittings",
+   "specTemplateSlug": "threaded-fitting-spec",
+   "focusKeyword": "metric female 74 cone hose fitting",
+   "imageFromSku": "IH-MF-FEM-60",
+   "descriptionShort": "Metric Female 74° Cone Seat — metric thread with a 74° included cone seat (37° per side), in 28 sizes from -02. Not interchangeable with the metric 60° cone.",
+   "descriptionLong": "<p>The <strong>Metric Female 74° Cone Seat Hose Fitting</strong> is the female swivel — the nut turns, so the hose does not have to of the metric 74° cone range — a hydraulic hose fitting with a metric thread and a 74° included cone seat, sealing metal-to-metal against the mating cone.</p>\n<h3>What the 74° seat is</h3>\n<p>74° is the included angle — 37° per side, the same seat geometry the JIC 37° flare uses. The seat is the only thing the two share: this fitting carries a metric thread, so it will not mate with a JIC port and a JIC fitting will not mate with this one. If the port you are facing is metric and the seat is a cone rather than a flat face or an O-ring groove, measure the cone before ordering — the metric 60° cone in this same category looks near-identical and does not seal against a 74° mating half.</p>\n<h3>Construction</h3>\n<ul>\n<li>Configuration: straight</li>\n<li>Thread form: Metric (M10×1 to M52×2)</li>\n<li>Sealing form: 74° included cone seat (37° per side), metal-to-metal</li>\n<li>Gender: female-swivel</li>\n<li>Material: carbon steel, zinc-plated and Cr3+ passivated (316 stainless on request)</li>\n</ul>\n<h3>Sizes</h3>\n<p>28 sizes, hose bore -02 to -24, threads M10×1 to M52×2. The full size and dimension table is on this page.</p>\n<h3>How to order</h3>\n<p>Quote the Indus part number for the size you need. Tell us the hose grade and bore and we will include the matching crimp ferrule — the ferrule follows the hose, not the fitting. Indus crimps and pressure-tests assemblies before dispatch.</p>",
+   "seoTitle": "Metric Female 74° Cone Seat Hose Fitting | M10×1–M52×2",
+   "seoDescription": "Metric Female 74° Cone Seat Hose Fitting — 74° cone seat on a metric thread, 28 sizes (-02 to -24), M10×1 to M52×2. Carbon steel or 316 stainless, ex-Dubai.",
+   "faqs": [
+    {
+     "question": "How is this different from a JIC 37° fitting?",
+     "answer": "The seat is the same — 74° included, 37° per side — and the thread is not. This fitting is metric; JIC is UN/UNF. They will not screw together. If your port is metric and the seat is a cone, this is the family you want; if the thread is inch, use the JIC range."
+    },
+    {
+     "question": "How is this different from the metric 60° cone in the same category?",
+     "answer": "Only the cone angle, and it matters. A 74° male will not seal against a 60° female — the two cones touch on a line instead of a face and the joint weeps under pressure. Both use metric threads of the same nominal sizes, so the thread will happily start. Measure the cone, not the thread."
+    },
+    {
+     "question": "What thread sizes are available?",
+     "answer": "Metric (M10×1 to M52×2). The table on this page lists every thread against every hose bore, including the fine-pitch variants where the catalogue carries both — M12×1.25 and M12×1.5 are separate part numbers, not the same fitting."
+    },
+    {
+     "question": "What sizes are available?",
+     "answer": "28 sizes, hose bore -02 to -24. Every combination in the table is an orderable part number."
+    },
+    {
+     "question": "What is the maximum working pressure?",
+     "answer": "The hose grade and bore set the assembly rating, not the fitting. A correctly crimped fitting does not derate the hose. Tell us the grade and bore on the RFQ and we will confirm the figure in writing."
+    },
+    {
+     "question": "Which ferrule pairs with this fitting?",
+     "answer": "The one that matches your hose grade — the skive/no-skive choice follows the hose construction, not the fitting end. Send the hose grade with your enquiry and we will specify the ferrule and the crimp diameter."
+    },
+    {
+     "question": "Is stainless steel available?",
+     "answer": "Yes — 316 stainless on request across the range, for marine, offshore and washdown service. Standard supply is carbon steel, zinc-plated and Cr3+ passivated. Add \"-SS\" to the part number when you enquire."
+    },
+    {
+     "question": "Can Indus crimp the assembly?",
+     "answer": "Yes. We crimp, pressure-test and certify assemblies in Dubai and ship UAE-wide. Send the hose grade, bore, both end fittings, overall length and orientation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Fitting Configuration",
+     "value": "straight",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "fitting_configuration"
+    },
+    {
+     "group": "Identification",
+     "label": "Thread Form",
+     "value": "Metric (M10×1 to M52×2)",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "thread_form"
+    },
+    {
+     "group": "Identification",
+     "label": "Sealing Form",
+     "value": "74° included cone seat (37° per side), metal-to-metal",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "sealing_form"
+    },
+    {
+     "group": "Identification",
+     "label": "Thread Gender",
+     "value": "female-swivel",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "gender"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size Range",
+     "value": "-02 to -24",
+     "unit": null,
+     "position": 4,
+     "isFilterable": true,
+     "templateKey": "nominal_size_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "Carbon steel (316 stainless on request)",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "material"
+    },
+    {
+     "group": "Construction",
+     "label": "Surface Treatment",
+     "value": "Zinc-plated, Cr3+ passivated, RoHS-compliant",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "surface_treatment"
+    },
+    {
+     "group": "Compliance",
+     "label": "Applicable Standards",
+     "value": "Metric thread to ISO 261 (coarse and fine pitch)",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": "applicable_standards"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-MF-FEM-74-0210",
+     "hoseDash": 2,
+     "hoseInch": "1/8\"",
+     "hoseDn": 4,
+     "portLabel": "M10×1",
+     "portDash": null,
+     "dimensions": {
+      "S2": 14.0,
+      "A": 14.0,
+      "C": 7.5
+     },
+     "sourcePart": "20711-10-02",
+     "position": 0
+    },
+    {
+     "partNumber": "IH-MF-FEM-74-0412",
+     "hoseDash": 4,
+     "hoseInch": "1/4\"",
+     "hoseDn": 6,
+     "portLabel": "M12×1.5",
+     "portDash": null,
+     "dimensions": {
+      "S2": 17.0,
+      "A": 14.5,
+      "C": 10.0
+     },
+     "sourcePart": "20711-12-04",
+     "position": 1
+    },
+    {
+     "partNumber": "IH-MF-FEM-74-0414",
+     "hoseDash": 4,
+     "hoseInch": "1/4\"",
+     "hoseDn": 6,
+     "portLabel": "M14×1.5",
+     "portDash": null,
+     "dimensions": {
+      "S2": 19.0,
+      "A": 15.5,
+      "C": 8.5
+     },
+     "sourcePart": "20711-14-04",
+     "position": 2
+    },
+    {
+     "partNumber": "IH-MF-FEM-74-0416",
+     "hoseDash": 4,
+     "hoseInch": "1/4\"",
+     "hoseDn": 6,
+     "portLabel": "M16×1.5",
+     "portDash": null,
+     "dimensions": {
+      "S2": 22.0,
+      "A": 16.5,
+      "C": 8.0
+     },
+     "sourcePart": "20711-16-04",
+     "position": 3
+    },
+    {
+     "partNumber": "IH-MF-FEM-74-0514",
+     "hoseDash": 5,
+     "hoseInch": "5/16\"",
+     "hoseDn": 8,
+     "portLabel": "M14×1.5",
+     "portDash": null,
+     "dimensions": {
+      "S2": 19.0,
+      "A": 15.5,
+      "C": 8.5
+     },
+     "sourcePart": "20711-14-05",
+     "position": 4
+    },
+    {
+     "partNumber": "IH-MF-FEM-74-0518",
+     "hoseDash": 5,
+     "hoseInch": "5/16\"",
+     "hoseDn": 8,
+     "portLabel": "M18×1.5",
+     "portDash": null,
+     "dimensions": {
+      "S2": 22.0,
+      "A": 16.0,
+      "C": 8.0
+     },
+     "sourcePart": "20711-18-05T",
+     "position": 5
+    },
+    {
+     "partNumber": "IH-MF-FEM-74-0616",
+     "hoseDash": 6,
+     "hoseInch": "3/8\"",
+     "hoseDn": 10,
+     "portLabel": "M16×1.5",
+     "portDash": null,
+     "dimensions": {
+      "S2": 22.0,
+      "A": 16.0,
+      "C": 8.0
+     },
+     "sourcePart": "20711-16-06",
+     "position": 6
+    },
+    {
+     "partNumber": "IH-MF-FEM-74-0618",
+     "hoseDash": 6,
+     "hoseInch": "3/8\"",
+     "hoseDn": 10,
+     "portLabel": "M18×1.5",
+     "portDash": null,
+     "dimensions": {
+      "S2": 24.0,
+      "A": 17.5,
+      "C": 10.0
+     },
+     "sourcePart": "20711-18-06",
+     "position": 7
+    },
+    {
+     "partNumber": "IH-MF-FEM-74-0620",
+     "hoseDash": 6,
+     "hoseInch": "3/8\"",
+     "hoseDn": 10,
+     "portLabel": "M20×1.5",
+     "portDash": null,
+     "dimensions": {
+      "S2": 24.0,
+      "A": 16.0,
+      "C": 10.0
+     },
+     "sourcePart": "20711-20-06T",
+     "position": 8
+    },
+    {
+     "partNumber": "IH-MF-FEM-74-0622",
+     "hoseDash": 6,
+     "hoseInch": "3/8\"",
+     "hoseDn": 10,
+     "portLabel": "M22×1.5",
+     "portDash": null,
+     "dimensions": {
+      "S2": 27.0,
+      "A": 16.0,
+      "C": 10.0
+     },
+     "sourcePart": "20711-22-06T",
+     "position": 9
+    },
+    {
+     "partNumber": "IH-MF-FEM-74-0820",
+     "hoseDash": 8,
+     "hoseInch": "1/2\"",
+     "hoseDn": 12,
+     "portLabel": "M20×1.5",
+     "portDash": null,
+     "dimensions": {
+      "S2": 27.0,
+      "A": 18.5,
+      "C": 10.0
+     },
+     "sourcePart": "20711-20-08",
+     "position": 10
+    },
+    {
+     "partNumber": "IH-MF-FEM-74-0822",
+     "hoseDash": 8,
+     "hoseInch": "1/2\"",
+     "hoseDn": 12,
+     "portLabel": "M22×1.5",
+     "portDash": null,
+     "dimensions": {
+      "S2": 27.0,
+      "A": 18.5,
+      "C": 10.0
+     },
+     "sourcePart": "20711-22-08",
+     "position": 11
+    },
+    {
+     "partNumber": "IH-MF-FEM-74-0824",
+     "hoseDash": 8,
+     "hoseInch": "1/2\"",
+     "hoseDn": 12,
+     "portLabel": "M24×1.5",
+     "portDash": null,
+     "dimensions": {
+      "S2": 30.0,
+      "A": 16.5,
+      "C": 11.0
+     },
+     "sourcePart": "20711-24-08T",
+     "position": 12
+    },
+    {
+     "partNumber": "IH-MF-FEM-74-0827",
+     "hoseDash": 8,
+     "hoseInch": "1/2\"",
+     "hoseDn": 12,
+     "portLabel": "M27×1.5",
+     "portDash": null,
+     "dimensions": {
+      "S2": 32.0,
+      "A": 18.5,
+      "C": 11.0
+     },
+     "sourcePart": "20711-27-08T",
+     "position": 13
+    },
+    {
+     "partNumber": "IH-MF-FEM-74-1022",
+     "hoseDash": 10,
+     "hoseInch": "5/8\"",
+     "hoseDn": 16,
+     "portLabel": "M22×1.5",
+     "portDash": null,
+     "dimensions": {
+      "S2": 27.0,
+      "A": 19.5,
+      "C": 10.0
+     },
+     "sourcePart": "20711-22-10",
+     "position": 14
+    },
+    {
+     "partNumber": "IH-MF-FEM-74-1027",
+     "hoseDash": 10,
+     "hoseInch": "5/8\"",
+     "hoseDn": 16,
+     "portLabel": "M27×1.5",
+     "portDash": null,
+     "dimensions": {
+      "S2": 32.0,
+      "A": 19.5,
+      "C": 11.0
+     },
+     "sourcePart": "20711-27-10T",
+     "position": 15
+    },
+    {
+     "partNumber": "IH-MF-FEM-74-1030",
+     "hoseDash": 10,
+     "hoseInch": "5/8\"",
+     "hoseDn": 16,
+     "portLabel": "M30×1.5",
+     "portDash": null,
+     "dimensions": {
+      "S2": 36.0,
+      "A": 18.5,
+      "C": 11.0
+     },
+     "sourcePart": "20711-30-10T",
+     "position": 16
+    },
+    {
+     "partNumber": "IH-MF-FEM-74-1033",
+     "hoseDash": 10,
+     "hoseInch": "5/8\"",
+     "hoseDn": 22,
+     "portLabel": "M33×2",
+     "portDash": null,
+     "dimensions": {
+      "S2": 41.0,
+      "A": 20.0,
+      "C": 13.0
+     },
+     "sourcePart": "20711-33-10T",
+     "position": 17
+    },
+    {
+     "partNumber": "IH-MF-FEM-74-1227",
+     "hoseDash": 12,
+     "hoseInch": "3/4\"",
+     "hoseDn": 20,
+     "portLabel": "M27×1.5",
+     "portDash": null,
+     "dimensions": {
+      "S2": 32.0,
+      "A": 21.5,
+      "C": 11.0
+     },
+     "sourcePart": "20711-27-12",
+     "position": 18
+    },
+    {
+     "partNumber": "IH-MF-FEM-74-1230",
+     "hoseDash": 12,
+     "hoseInch": "3/4\"",
+     "hoseDn": 20,
+     "portLabel": "M30×1.5",
+     "portDash": null,
+     "dimensions": {
+      "S2": 36.0,
+      "A": 21.5,
+      "C": 11.0
+     },
+     "sourcePart": "20711-30-12",
+     "position": 19
+    },
+    {
+     "partNumber": "IH-MF-FEM-74-1233",
+     "hoseDash": 12,
+     "hoseInch": "3/4\"",
+     "hoseDn": 20,
+     "portLabel": "M33×2",
+     "portDash": null,
+     "dimensions": {
+      "S2": 41.0,
+      "A": 20.0,
+      "C": 13.0
+     },
+     "sourcePart": "20711-33-12T",
+     "position": 20
+    },
+    {
+     "partNumber": "IH-MF-FEM-74-1236",
+     "hoseDash": 12,
+     "hoseInch": "3/4\"",
+     "hoseDn": 20,
+     "portLabel": "M36×2",
+     "portDash": null,
+     "dimensions": {
+      "S2": 41.0,
+      "A": 20.0,
+      "C": 14.0
+     },
+     "sourcePart": "20711-36-12T",
+     "position": 21
+    },
+    {
+     "partNumber": "IH-MF-FEM-74-1436",
+     "hoseDash": 14,
+     "hoseInch": "7/8\"",
+     "hoseDn": 22,
+     "portLabel": "M36×2",
+     "portDash": null,
+     "dimensions": {
+      "S2": 41.0,
+      "A": 20.0,
+      "C": 14.0
+     },
+     "sourcePart": "20711-36-14T",
+     "position": 22
+    },
+    {
+     "partNumber": "IH-MF-FEM-74-1636",
+     "hoseDash": 16,
+     "hoseInch": "1\"",
+     "hoseDn": 25,
+     "portLabel": "M36×2",
+     "portDash": null,
+     "dimensions": {
+      "S2": 41.0,
+      "A": 23.0,
+      "C": 14.0
+     },
+     "sourcePart": "20711-36-16",
+     "position": 23
+    },
+    {
+     "partNumber": "IH-MF-FEM-74-1642",
+     "hoseDash": 16,
+     "hoseInch": "1\"",
+     "hoseDn": 25,
+     "portLabel": "M42×2",
+     "portDash": null,
+     "dimensions": {
+      "S2": 50.0,
+      "A": 23.5,
+      "C": 15.0
+     },
+     "sourcePart": "20711-42-16T",
+     "position": 24
+    },
+    {
+     "partNumber": "IH-MF-FEM-74-2042",
+     "hoseDash": 20,
+     "hoseInch": "1.1/4\"",
+     "hoseDn": 32,
+     "portLabel": "M42×2",
+     "portDash": null,
+     "dimensions": {
+      "S2": 50.0,
+      "A": 26.0,
+      "C": 15.0
+     },
+     "sourcePart": "20711-42-20",
+     "position": 25
+    },
+    {
+     "partNumber": "IH-MF-FEM-74-2045",
+     "hoseDash": 20,
+     "hoseInch": "1.1/4\"",
+     "hoseDn": 32,
+     "portLabel": "M45×2",
+     "portDash": null,
+     "dimensions": {
+      "S2": 55.0,
+      "A": 25.0,
+      "C": 15.0
+     },
+     "sourcePart": "20711-45-20T",
+     "position": 26
+    },
+    {
+     "partNumber": "IH-MF-FEM-74-2452",
+     "hoseDash": 24,
+     "hoseInch": "1.1/2\"",
+     "hoseDn": 40,
+     "portLabel": "M52×2",
+     "portDash": null,
+     "dimensions": {
+      "S2": 60.0,
+      "A": 25.0,
+      "C": 17.0
+     },
+     "sourcePart": "20711-52-24",
+     "position": 27
+    }
+   ],
+   "sourceFamily": "20711 (p37)"
+  },
+  {
+   "sku": "IH-MF-FEM-74-45",
+   "title": "45° Metric Female 74° Cone Seat Hose Fitting",
+   "slug": "45-metric-female-74-cone-seat-hose-fitting",
+   "categorySlug": "metric-hose-fittings",
+   "specTemplateSlug": "threaded-fitting-spec",
+   "focusKeyword": "metric 74 cone 45 elbow hose fitting",
+   "imageFromSku": "IH-DF-FEM-24-OR-LS-45",
+   "descriptionShort": "45° Metric Female 74° Cone Seat — metric thread with a 74° included cone seat (37° per side), in 13 sizes from -04. Not interchangeable with the metric 60° cone.",
+   "descriptionLong": "<p>The <strong>45° Metric Female 74° Cone Seat Hose Fitting</strong> is the 45° elbow, for a hose that has to leave the port at an angle of the metric 74° cone range — a hydraulic hose fitting with a metric thread and a 74° included cone seat, sealing metal-to-metal against the mating cone.</p>\n<h3>What the 74° seat is</h3>\n<p>74° is the included angle — 37° per side, the same seat geometry the JIC 37° flare uses. The seat is the only thing the two share: this fitting carries a metric thread, so it will not mate with a JIC port and a JIC fitting will not mate with this one. If the port you are facing is metric and the seat is a cone rather than a flat face or an O-ring groove, measure the cone before ordering — the metric 60° cone in this same category looks near-identical and does not seal against a 74° mating half.</p>\n<h3>Construction</h3>\n<ul>\n<li>Configuration: 45 elbow</li>\n<li>Thread form: Metric (M14×1.5 to M52×2)</li>\n<li>Sealing form: 74° included cone seat (37° per side), metal-to-metal</li>\n<li>Gender: female-swivel</li>\n<li>Material: carbon steel, zinc-plated and Cr3+ passivated (316 stainless on request)</li>\n</ul>\n<h3>Sizes</h3>\n<p>13 sizes, hose bore -04 to -24, threads M14×1.5 to M52×2. The full size and dimension table is on this page.</p>\n<h3>How to order</h3>\n<p>Quote the Indus part number for the size you need. Tell us the hose grade and bore and we will include the matching crimp ferrule — the ferrule follows the hose, not the fitting. Indus crimps and pressure-tests assemblies before dispatch.</p>",
+   "seoTitle": "45° Metric Female 74° Cone Seat Hose Fitting | M14×1.5–M52×2",
+   "seoDescription": "45° Metric Female 74° Cone Seat Hose Fitting — 74° cone seat on a metric thread, 13 sizes (-04 to -24), M14×1.5 to M52×2. Carbon steel or 316 stainless",
+   "faqs": [
+    {
+     "question": "How is this different from a JIC 37° fitting?",
+     "answer": "The seat is the same — 74° included, 37° per side — and the thread is not. This fitting is metric; JIC is UN/UNF. They will not screw together. If your port is metric and the seat is a cone, this is the family you want; if the thread is inch, use the JIC range."
+    },
+    {
+     "question": "How is this different from the metric 60° cone in the same category?",
+     "answer": "Only the cone angle, and it matters. A 74° male will not seal against a 60° female — the two cones touch on a line instead of a face and the joint weeps under pressure. Both use metric threads of the same nominal sizes, so the thread will happily start. Measure the cone, not the thread."
+    },
+    {
+     "question": "What thread sizes are available?",
+     "answer": "Metric (M14×1.5 to M52×2). The table on this page lists every thread against every hose bore, including the fine-pitch variants where the catalogue carries both — M12×1.25 and M12×1.5 are separate part numbers, not the same fitting."
+    },
+    {
+     "question": "What sizes are available?",
+     "answer": "13 sizes, hose bore -04 to -24. Every combination in the table is an orderable part number."
+    },
+    {
+     "question": "What is the maximum working pressure?",
+     "answer": "The hose grade and bore set the assembly rating, not the fitting. A correctly crimped fitting does not derate the hose. Tell us the grade and bore on the RFQ and we will confirm the figure in writing."
+    },
+    {
+     "question": "Which ferrule pairs with this fitting?",
+     "answer": "The one that matches your hose grade — the skive/no-skive choice follows the hose construction, not the fitting end. Send the hose grade with your enquiry and we will specify the ferrule and the crimp diameter."
+    },
+    {
+     "question": "Is stainless steel available?",
+     "answer": "Yes — 316 stainless on request across the range, for marine, offshore and washdown service. Standard supply is carbon steel, zinc-plated and Cr3+ passivated. Add \"-SS\" to the part number when you enquire."
+    },
+    {
+     "question": "Can Indus crimp the assembly?",
+     "answer": "Yes. We crimp, pressure-test and certify assemblies in Dubai and ship UAE-wide. Send the hose grade, bore, both end fittings, overall length and orientation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Fitting Configuration",
+     "value": "45-elbow",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "fitting_configuration"
+    },
+    {
+     "group": "Identification",
+     "label": "Thread Form",
+     "value": "Metric (M14×1.5 to M52×2)",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "thread_form"
+    },
+    {
+     "group": "Identification",
+     "label": "Sealing Form",
+     "value": "74° included cone seat (37° per side), metal-to-metal",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "sealing_form"
+    },
+    {
+     "group": "Identification",
+     "label": "Thread Gender",
+     "value": "female-swivel",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "gender"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size Range",
+     "value": "-04 to -24",
+     "unit": null,
+     "position": 4,
+     "isFilterable": true,
+     "templateKey": "nominal_size_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "Carbon steel (316 stainless on request)",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "material"
+    },
+    {
+     "group": "Construction",
+     "label": "Surface Treatment",
+     "value": "Zinc-plated, Cr3+ passivated, RoHS-compliant",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "surface_treatment"
+    },
+    {
+     "group": "Compliance",
+     "label": "Applicable Standards",
+     "value": "Metric thread to ISO 261 (coarse and fine pitch)",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": "applicable_standards"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-MF-FEM-74-45-0414",
+     "hoseDash": 4,
+     "hoseInch": "1/4\"",
+     "hoseDn": 6,
+     "portLabel": "M14×1.5",
+     "portDash": null,
+     "dimensions": {
+      "S2": 19.0,
+      "A": 40.5,
+      "C": 8.5,
+      "H": 18.5
+     },
+     "sourcePart": "20741-14-04",
+     "position": 0
+    },
+    {
+     "partNumber": "IH-MF-FEM-74-45-0516",
+     "hoseDash": 5,
+     "hoseInch": "5/16\"",
+     "hoseDn": 8,
+     "portLabel": "M16×1.5",
+     "portDash": null,
+     "dimensions": {
+      "S2": 22.0,
+      "A": 44.4,
+      "C": 8.0,
+      "H": 20.0
+     },
+     "sourcePart": "20741-16-05",
+     "position": 1
+    },
+    {
+     "partNumber": "IH-MF-FEM-74-45-0618",
+     "hoseDash": 6,
+     "hoseInch": "3/8\"",
+     "hoseDn": 10,
+     "portLabel": "M18×1.5",
+     "portDash": null,
+     "dimensions": {
+      "S2": 24.0,
+      "A": 45.7,
+      "C": 10.0,
+      "H": 21.4
+     },
+     "sourcePart": "20741-18-06",
+     "position": 2
+    },
+    {
+     "partNumber": "IH-MF-FEM-74-45-0822",
+     "hoseDash": 8,
+     "hoseInch": "1/2\"",
+     "hoseDn": 12,
+     "portLabel": "M22×1.5",
+     "portDash": null,
+     "dimensions": {
+      "S2": 27.0,
+      "A": 58.9,
+      "C": 10.0,
+      "H": 24.0
+     },
+     "sourcePart": "20741-22-08",
+     "position": 3
+    },
+    {
+     "partNumber": "IH-MF-FEM-74-45-1027",
+     "hoseDash": 10,
+     "hoseInch": "5/8\"",
+     "hoseDn": 16,
+     "portLabel": "M27×1.5",
+     "portDash": null,
+     "dimensions": {
+      "S2": 32.0,
+      "A": 71.2,
+      "C": 11.0,
+      "H": 26.4
+     },
+     "sourcePart": "20741-27-10",
+     "position": 4
+    },
+    {
+     "partNumber": "IH-MF-FEM-74-45-1230",
+     "hoseDash": 12,
+     "hoseInch": "3/4\"",
+     "hoseDn": 20,
+     "portLabel": "M30×1.5",
+     "portDash": null,
+     "dimensions": {
+      "S2": 36.0,
+      "A": 78.1,
+      "C": 11.0,
+      "H": 30.0
+     },
+     "sourcePart": "20741-30-12",
+     "position": 5
+    },
+    {
+     "partNumber": "IH-MF-FEM-74-45-1233",
+     "hoseDash": 12,
+     "hoseInch": "3/4\"",
+     "hoseDn": 20,
+     "portLabel": "M33×2",
+     "portDash": null,
+     "dimensions": {
+      "S2": 41.0,
+      "A": 77.4,
+      "C": 13.0,
+      "H": 30.0
+     },
+     "sourcePart": "20741-33-12",
+     "position": 6
+    },
+    {
+     "partNumber": "IH-MF-FEM-74-45-1436",
+     "hoseDash": 14,
+     "hoseInch": "7/8\"",
+     "hoseDn": 22,
+     "portLabel": "M36×2",
+     "portDash": null,
+     "dimensions": {
+      "S2": 41.0,
+      "A": 79.8,
+      "C": 14.0,
+      "H": 29.6
+     },
+     "sourcePart": "20741-36-14",
+     "position": 7
+    },
+    {
+     "partNumber": "IH-MF-FEM-74-45-1633",
+     "hoseDash": 16,
+     "hoseInch": "1\"",
+     "hoseDn": 25,
+     "portLabel": "M33×2",
+     "portDash": null,
+     "dimensions": {
+      "S2": 41.0,
+      "A": 85.0,
+      "C": 13.0,
+      "H": 30.8
+     },
+     "sourcePart": "20741-33-16",
+     "position": 8
+    },
+    {
+     "partNumber": "IH-MF-FEM-74-45-1636",
+     "hoseDash": 16,
+     "hoseInch": "1\"",
+     "hoseDn": 25,
+     "portLabel": "M36×2",
+     "portDash": null,
+     "dimensions": {
+      "S2": 41.0,
+      "A": 85.7,
+      "C": 14.0,
+      "H": 31.5
+     },
+     "sourcePart": "20741-36-16",
+     "position": 9
+    },
+    {
+     "partNumber": "IH-MF-FEM-74-45-1639",
+     "hoseDash": 16,
+     "hoseInch": "1\"",
+     "hoseDn": 25,
+     "portLabel": "M39×2",
+     "portDash": null,
+     "dimensions": {
+      "S2": 46.0,
+      "A": 86.1,
+      "C": 14.0,
+      "H": 31.8
+     },
+     "sourcePart": "20741-39-16",
+     "position": 10
+    },
+    {
+     "partNumber": "IH-MF-FEM-74-45-2045",
+     "hoseDash": 20,
+     "hoseInch": "1.1/4\"",
+     "hoseDn": 32,
+     "portLabel": "M45×2",
+     "portDash": null,
+     "dimensions": {
+      "S2": 55.0,
+      "A": 97.0,
+      "C": 15.0,
+      "H": 36.2
+     },
+     "sourcePart": "20741-45-20W",
+     "position": 11
+    },
+    {
+     "partNumber": "IH-MF-FEM-74-45-2452",
+     "hoseDash": 24,
+     "hoseInch": "1.1/2\"",
+     "hoseDn": 40,
+     "portLabel": "M52×2",
+     "portDash": null,
+     "dimensions": {
+      "S2": 60.0,
+      "A": 112.9,
+      "C": 17.0,
+      "H": 40.9
+     },
+     "sourcePart": "20741-52-24W",
+     "position": 12
+    }
+   ],
+   "sourceFamily": "20741 (p38)"
+  },
+  {
+   "sku": "IH-MF-FEM-74-90",
+   "title": "90° Metric Female 74° Cone Seat Hose Fitting",
+   "slug": "90-metric-female-74-cone-seat-hose-fitting",
+   "categorySlug": "metric-hose-fittings",
+   "specTemplateSlug": "threaded-fitting-spec",
+   "focusKeyword": "metric 74 cone 90 elbow hose fitting",
+   "imageFromSku": "IH-MF-FEM-60-90",
+   "descriptionShort": "90° Metric Female 74° Cone Seat — metric thread with a 74° included cone seat (37° per side), in 18 sizes from -04. Not interchangeable with the metric 60° cone.",
+   "descriptionLong": "<p>The <strong>90° Metric Female 74° Cone Seat Hose Fitting</strong> is the 90° elbow, for a tight exit off the port of the metric 74° cone range — a hydraulic hose fitting with a metric thread and a 74° included cone seat, sealing metal-to-metal against the mating cone.</p>\n<h3>What the 74° seat is</h3>\n<p>74° is the included angle — 37° per side, the same seat geometry the JIC 37° flare uses. The seat is the only thing the two share: this fitting carries a metric thread, so it will not mate with a JIC port and a JIC fitting will not mate with this one. If the port you are facing is metric and the seat is a cone rather than a flat face or an O-ring groove, measure the cone before ordering — the metric 60° cone in this same category looks near-identical and does not seal against a 74° mating half.</p>\n<h3>Construction</h3>\n<ul>\n<li>Configuration: 90 elbow</li>\n<li>Thread form: Metric (M12×1.5 to M52×2)</li>\n<li>Sealing form: 74° included cone seat (37° per side), metal-to-metal</li>\n<li>Gender: female-swivel</li>\n<li>Material: carbon steel, zinc-plated and Cr3+ passivated (316 stainless on request)</li>\n</ul>\n<h3>Sizes</h3>\n<p>18 sizes, hose bore -04 to -24, threads M12×1.5 to M52×2. The full size and dimension table is on this page.</p>\n<h3>How to order</h3>\n<p>Quote the Indus part number for the size you need. Tell us the hose grade and bore and we will include the matching crimp ferrule — the ferrule follows the hose, not the fitting. Indus crimps and pressure-tests assemblies before dispatch.</p>",
+   "seoTitle": "90° Metric Female 74° Cone Seat Hose Fitting | M12×1.5–M52×2",
+   "seoDescription": "90° Metric Female 74° Cone Seat Hose Fitting — 74° cone seat on a metric thread, 18 sizes (-04 to -24), M12×1.5 to M52×2. Carbon steel or 316 stainless",
+   "faqs": [
+    {
+     "question": "How is this different from a JIC 37° fitting?",
+     "answer": "The seat is the same — 74° included, 37° per side — and the thread is not. This fitting is metric; JIC is UN/UNF. They will not screw together. If your port is metric and the seat is a cone, this is the family you want; if the thread is inch, use the JIC range."
+    },
+    {
+     "question": "How is this different from the metric 60° cone in the same category?",
+     "answer": "Only the cone angle, and it matters. A 74° male will not seal against a 60° female — the two cones touch on a line instead of a face and the joint weeps under pressure. Both use metric threads of the same nominal sizes, so the thread will happily start. Measure the cone, not the thread."
+    },
+    {
+     "question": "What thread sizes are available?",
+     "answer": "Metric (M12×1.5 to M52×2). The table on this page lists every thread against every hose bore, including the fine-pitch variants where the catalogue carries both — M12×1.25 and M12×1.5 are separate part numbers, not the same fitting."
+    },
+    {
+     "question": "What sizes are available?",
+     "answer": "18 sizes, hose bore -04 to -24. Every combination in the table is an orderable part number."
+    },
+    {
+     "question": "What is the maximum working pressure?",
+     "answer": "The hose grade and bore set the assembly rating, not the fitting. A correctly crimped fitting does not derate the hose. Tell us the grade and bore on the RFQ and we will confirm the figure in writing."
+    },
+    {
+     "question": "Which ferrule pairs with this fitting?",
+     "answer": "The one that matches your hose grade — the skive/no-skive choice follows the hose construction, not the fitting end. Send the hose grade with your enquiry and we will specify the ferrule and the crimp diameter."
+    },
+    {
+     "question": "Is stainless steel available?",
+     "answer": "Yes — 316 stainless on request across the range, for marine, offshore and washdown service. Standard supply is carbon steel, zinc-plated and Cr3+ passivated. Add \"-SS\" to the part number when you enquire."
+    },
+    {
+     "question": "Can Indus crimp the assembly?",
+     "answer": "Yes. We crimp, pressure-test and certify assemblies in Dubai and ship UAE-wide. Send the hose grade, bore, both end fittings, overall length and orientation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Fitting Configuration",
+     "value": "90-elbow",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "fitting_configuration"
+    },
+    {
+     "group": "Identification",
+     "label": "Thread Form",
+     "value": "Metric (M12×1.5 to M52×2)",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "thread_form"
+    },
+    {
+     "group": "Identification",
+     "label": "Sealing Form",
+     "value": "74° included cone seat (37° per side), metal-to-metal",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "sealing_form"
+    },
+    {
+     "group": "Identification",
+     "label": "Thread Gender",
+     "value": "female-swivel",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "gender"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size Range",
+     "value": "-04 to -24",
+     "unit": null,
+     "position": 4,
+     "isFilterable": true,
+     "templateKey": "nominal_size_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "Carbon steel (316 stainless on request)",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "material"
+    },
+    {
+     "group": "Construction",
+     "label": "Surface Treatment",
+     "value": "Zinc-plated, Cr3+ passivated, RoHS-compliant",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "surface_treatment"
+    },
+    {
+     "group": "Compliance",
+     "label": "Applicable Standards",
+     "value": "Metric thread to ISO 261 (coarse and fine pitch)",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": "applicable_standards"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-MF-FEM-74-90-0412",
+     "hoseDash": 4,
+     "hoseInch": "1/4\"",
+     "hoseDn": 6,
+     "portLabel": "M12×1.5",
+     "portDash": null,
+     "dimensions": {
+      "S2": 17.0,
+      "A": 30.0,
+      "C": 10.0,
+      "H": 33.5
+     },
+     "sourcePart": "20791-12-04",
+     "position": 0
+    },
+    {
+     "partNumber": "IH-MF-FEM-74-90-0412C",
+     "hoseDash": 4,
+     "hoseInch": "1/4\"",
+     "hoseDn": 6,
+     "portLabel": "M12×1.5",
+     "portDash": null,
+     "dimensions": {
+      "S2": 17.0,
+      "A": 30.0,
+      "C": 9.0,
+      "H": 33.5
+     },
+     "sourcePart": "20791-12-04C",
+     "position": 1
+    },
+    {
+     "partNumber": "IH-MF-FEM-74-90-0414",
+     "hoseDash": 4,
+     "hoseInch": "1/4\"",
+     "hoseDn": 6,
+     "portLabel": "M14×1.5",
+     "portDash": null,
+     "dimensions": {
+      "S2": 19.0,
+      "A": 30.0,
+      "C": 8.5,
+      "H": 34.0
+     },
+     "sourcePart": "20791-14-04",
+     "position": 2
+    },
+    {
+     "partNumber": "IH-MF-FEM-74-90-0416",
+     "hoseDash": 4,
+     "hoseInch": "1/4\"",
+     "hoseDn": 6,
+     "portLabel": "M16×1.5",
+     "portDash": null,
+     "dimensions": {
+      "S2": 22.0,
+      "A": 30.0,
+      "C": 8.0,
+      "H": 35.0
+     },
+     "sourcePart": "20791-16-04",
+     "position": 3
+    },
+    {
+     "partNumber": "IH-MF-FEM-74-90-0516",
+     "hoseDash": 5,
+     "hoseInch": "5/16\"",
+     "hoseDn": 8,
+     "portLabel": "M16×1.5",
+     "portDash": null,
+     "dimensions": {
+      "S2": 22.0,
+      "A": 34.0,
+      "C": 8.0,
+      "H": 38.0
+     },
+     "sourcePart": "20791-16-05",
+     "position": 4
+    },
+    {
+     "partNumber": "IH-MF-FEM-74-90-0618",
+     "hoseDash": 6,
+     "hoseInch": "3/8\"",
+     "hoseDn": 10,
+     "portLabel": "M18×1.5",
+     "portDash": null,
+     "dimensions": {
+      "S2": 24.0,
+      "A": 35.3,
+      "C": 10.0,
+      "H": 41.3
+     },
+     "sourcePart": "20791-18-06",
+     "position": 5
+    },
+    {
+     "partNumber": "IH-MF-FEM-74-90-0822",
+     "hoseDash": 8,
+     "hoseInch": "1/2\"",
+     "hoseDn": 12,
+     "portLabel": "M22×1.5",
+     "portDash": null,
+     "dimensions": {
+      "S2": 27.0,
+      "A": 41.0,
+      "C": 10.0,
+      "H": 48.0
+     },
+     "sourcePart": "20791-22-08",
+     "position": 6
+    },
+    {
+     "partNumber": "IH-MF-FEM-74-90-1022",
+     "hoseDash": 10,
+     "hoseInch": "5/8\"",
+     "hoseDn": 16,
+     "portLabel": "M22×1.5",
+     "portDash": null,
+     "dimensions": {
+      "S2": 27.0,
+      "A": 56.5,
+      "C": 10.0,
+      "H": 52.5
+     },
+     "sourcePart": "20791-22-10",
+     "position": 7
+    },
+    {
+     "partNumber": "IH-MF-FEM-74-90-1027",
+     "hoseDash": 10,
+     "hoseInch": "5/8\"",
+     "hoseDn": 16,
+     "portLabel": "M27×1.5",
+     "portDash": null,
+     "dimensions": {
+      "S2": 32.0,
+      "A": 56.5,
+      "C": 11.0,
+      "H": 54.0
+     },
+     "sourcePart": "20791-27-10",
+     "position": 8
+    },
+    {
+     "partNumber": "IH-MF-FEM-74-90-1230",
+     "hoseDash": 12,
+     "hoseInch": "3/4\"",
+     "hoseDn": 20,
+     "portLabel": "M30×1.5",
+     "portDash": null,
+     "dimensions": {
+      "S2": 36.0,
+      "A": 66.2,
+      "C": 11.0,
+      "H": 63.5
+     },
+     "sourcePart": "20791-30-12",
+     "position": 9
+    },
+    {
+     "partNumber": "IH-MF-FEM-74-90-1233",
+     "hoseDash": 12,
+     "hoseInch": "3/4\"",
+     "hoseDn": 20,
+     "portLabel": "M33×2",
+     "portDash": null,
+     "dimensions": {
+      "S2": 41.0,
+      "A": 65.5,
+      "C": 13.0,
+      "H": 63.5
+     },
+     "sourcePart": "20791-33-12",
+     "position": 10
+    },
+    {
+     "partNumber": "IH-MF-FEM-74-90-1236",
+     "hoseDash": 12,
+     "hoseInch": "3/4\"",
+     "hoseDn": 20,
+     "portLabel": "M36×2",
+     "portDash": null,
+     "dimensions": {
+      "S2": 41.0,
+      "A": 65.5,
+      "C": 14.0,
+      "H": 63.5
+     },
+     "sourcePart": "20791-36-12",
+     "position": 11
+    },
+    {
+     "partNumber": "IH-MF-FEM-74-90-1436",
+     "hoseDash": 14,
+     "hoseInch": "7/8\"",
+     "hoseDn": 22,
+     "portLabel": "M36×2",
+     "portDash": null,
+     "dimensions": {
+      "S2": 41.0,
+      "A": 71.2,
+      "C": 14.0,
+      "H": 64.5
+     },
+     "sourcePart": "20791-36-14",
+     "position": 12
+    },
+    {
+     "partNumber": "IH-MF-FEM-74-90-1633",
+     "hoseDash": 16,
+     "hoseInch": "1\"",
+     "hoseDn": 25,
+     "portLabel": "M33×2",
+     "portDash": null,
+     "dimensions": {
+      "S2": 41.0,
+      "A": 76.7,
+      "C": 13.0,
+      "H": 69.0
+     },
+     "sourcePart": "20791-33-16",
+     "position": 13
+    },
+    {
+     "partNumber": "IH-MF-FEM-74-90-1639",
+     "hoseDash": 16,
+     "hoseInch": "1\"",
+     "hoseDn": 25,
+     "portLabel": "M39×2",
+     "portDash": null,
+     "dimensions": {
+      "S2": 46.0,
+      "A": 76.7,
+      "C": 14.0,
+      "H": 70.5
+     },
+     "sourcePart": "20791-39-16",
+     "position": 14
+    },
+    {
+     "partNumber": "IH-MF-FEM-74-90-2045",
+     "hoseDash": 20,
+     "hoseInch": "1.1/4\"",
+     "hoseDn": 32,
+     "portLabel": "M45×2",
+     "portDash": null,
+     "dimensions": {
+      "S2": 55.0,
+      "A": 91.5,
+      "C": 15.0,
+      "H": 83.0
+     },
+     "sourcePart": "20791-45-20W",
+     "position": 15
+    },
+    {
+     "partNumber": "IH-MF-FEM-74-90-2052",
+     "hoseDash": 20,
+     "hoseInch": "1.1/4\"",
+     "hoseDn": 32,
+     "portLabel": "M52×2",
+     "portDash": null,
+     "dimensions": {
+      "S2": 60.0,
+      "A": 93.0,
+      "C": 17.0,
+      "H": 84.5
+     },
+     "sourcePart": "20791-52-20W",
+     "position": 16
+    },
+    {
+     "partNumber": "IH-MF-FEM-74-90-2452",
+     "hoseDash": 24,
+     "hoseInch": "1.1/2\"",
+     "hoseDn": 40,
+     "portLabel": "M52×2",
+     "portDash": null,
+     "dimensions": {
+      "S2": 60.0,
+      "A": 110.7,
+      "C": 17.0,
+      "H": 96.5
+     },
+     "sourcePart": "20791-52-24W",
+     "position": 17
+    }
+   ],
+   "sourceFamily": "20791 (p39)"
+  }
+ ]
+}
