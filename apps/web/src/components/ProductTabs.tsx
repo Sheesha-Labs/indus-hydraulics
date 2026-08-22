@@ -2,7 +2,8 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import { replacementUrlPath } from '@indus/domain'
+import { replacementUrlPath, type VariantLike } from '@indus/domain'
+import ProductSizeTable from './ProductSizeTable'
 
 type Spec = {
   id: string
@@ -43,6 +44,11 @@ type Props = {
   specGroups: Record<string, Spec[]>
   documents: Doc[]
   crossReferences: CrossRef[]
+  variants: VariantLike[]
+  /** Shown above the size table, e.g. "Parker 13943 / 1L943". */
+  variantEquivalenceNote?: string | null
+  /** Competitor named by the cross-references, for the not-affiliated line. */
+  variantEquivalenceBrand?: string | null
   faqs: Faq[]
   isSignedIn: boolean
   leadTimeDays?: number | null
@@ -58,6 +64,9 @@ export default function ProductTabs({
   specGroups,
   documents,
   crossReferences,
+  variants,
+  variantEquivalenceNote,
+  variantEquivalenceBrand,
   faqs,
   isSignedIn,
   leadTimeDays,
@@ -69,13 +78,22 @@ export default function ProductTabs({
   const [active, setActive] = useState(0)
 
   const allSpecs = Object.values(specGroups).flat()
+  /*
+    Keyed rather than positional. The sizes tab only exists for products that
+    have a size table, so `active === 3` no longer names one panel — every
+    index below it would shift under a product without variants.
+  */
   const tabs = [
-    { label: 'Description' },
-    { label: 'Shipping & Lead Time' },
-    { label: `Documents${documents.length > 0 ? ` (${documents.length})` : ''}` },
-    { label: 'Compatibility' },
-    { label: `FAQ${faqs.length > 0 ? ` (${faqs.length})` : ''}` },
+    { id: 'description', label: 'Description' },
+    ...(variants.length > 0
+      ? [{ id: 'sizes' as const, label: `Sizes & Part Numbers (${variants.length})` }]
+      : []),
+    { id: 'shipping', label: 'Shipping & Lead Time' },
+    { id: 'documents', label: `Documents${documents.length > 0 ? ` (${documents.length})` : ''}` },
+    { id: 'compatibility', label: 'Compatibility' },
+    { id: 'faq', label: `FAQ${faqs.length > 0 ? ` (${faqs.length})` : ''}` },
   ]
+  const activeId = tabs[Math.min(active, tabs.length - 1)]?.id ?? 'description'
 
   return (
     <div className="mb-8 border-t border-ih-border pt-8">
@@ -89,7 +107,7 @@ export default function ProductTabs({
       <div className="mb-8 flex overflow-x-auto border-b border-ih-border">
         {tabs.map((tab, i) => (
           <button
-            key={tab.label}
+            key={tab.id}
             onClick={() => setActive(i)}
             className={`-mb-px whitespace-nowrap border-b-[1.5px] px-5 py-3 text-[13.5px] transition-colors ${
               i === active
@@ -103,7 +121,7 @@ export default function ProductTabs({
       </div>
 
       {/* Description */}
-      {active === 0 && (
+      {activeId === 'description' && (
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-[1.4fr_1fr]">
           <div>
             <h2 className="mb-4 font-serif text-[26px] font-normal tracking-[-0.01em]">Product description</h2>
@@ -168,8 +186,17 @@ export default function ProductTabs({
         </div>
       )}
 
+      {/* Sizes & part numbers — the orderable variants under this listing */}
+      {activeId === 'sizes' && (
+        <ProductSizeTable
+          variants={variants}
+          equivalenceNote={variantEquivalenceNote}
+          equivalenceBrand={variantEquivalenceBrand}
+        />
+      )}
+
       {/* Shipping & Lead Time — driven entirely by product DB fields */}
-      {active === 1 && (
+      {activeId === 'shipping' && (
         <div className="max-w-[680px]">
           <ShippingTable
             leadTimeDays={leadTimeDays}
@@ -182,7 +209,7 @@ export default function ProductTabs({
       )}
 
       {/* Documents */}
-      {active === 2 && (
+      {activeId === 'documents' && (
         <div>
           {documents.length === 0 ? (
             <p className="text-[14px] text-ih-muted">No documents available for this product.</p>
@@ -219,7 +246,7 @@ export default function ProductTabs({
       )}
 
       {/* Compatibility */}
-      {active === 3 && (
+      {activeId === 'compatibility' && (
         <div>
           {crossReferences.length === 0 ? (
             <p className="text-[14px] text-ih-muted">No cross-reference data available. Contact our team for compatibility assistance.</p>
@@ -262,7 +289,7 @@ export default function ProductTabs({
       )}
 
       {/* FAQ */}
-      {active === 4 && (
+      {activeId === 'faq' && (
         <div className="max-w-[820px]">
           {faqs.length === 0 ? (
             <p className="text-[14px] text-ih-muted">

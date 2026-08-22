@@ -70,6 +70,55 @@ export async function runSearch(rawQuery: string): Promise<SearchPlan> {
     if (exact) {
       return { kind: 'redirect', targetUrl: `/p/${exact.sku}` }
     }
+
+    // Same short-circuit, one step out: the identifier a procurement buyer
+    // pastes is very often NOT our listing SKU. It is the size-level part
+    // number under a listing, or the competitor part number the listing
+    // replaces — neither of which lives on `products`. Both take you to
+    // exactly one page, so both deserve the jump rather than a results list.
+    //
+    // Variants first: an exact hit there is our own number and unambiguous.
+    // Cross-references can legitimately fan out to several products (two
+    // Indus parts superseding one competitor part), so a redirect is only
+    // correct when there is exactly one.
+    const variantHit = await db.productVariant.findFirst({
+      where: {
+        partNumber: { equals: skuCandidate, mode: 'insensitive' },
+        product: { status: 'active' },
+      },
+      select: { product: { select: { sku: true } } },
+    })
+    if (variantHit) {
+      return { kind: 'redirect', targetUrl: `/p/${variantHit.product.sku}` }
+    }
+
+    const variantEquivalents = await db.productVariant.findMany({
+      where: {
+        competitorMpn: { equals: skuCandidate, mode: 'insensitive' },
+        product: { status: 'active' },
+      },
+      select: { product: { select: { sku: true } } },
+      take: 2,
+    })
+    const equivalentSkus = new Set(variantEquivalents.map((v) => v.product.sku))
+    if (equivalentSkus.size === 1) {
+      return { kind: 'redirect', targetUrl: `/p/${[...equivalentSkus][0]!}` }
+    }
+
+    if (equivalentSkus.size === 0) {
+      const crossRefs = await db.productCrossReference.findMany({
+        where: {
+          competitorMpn: { equals: skuCandidate, mode: 'insensitive' },
+          product: { status: 'active' },
+        },
+        select: { product: { select: { sku: true } } },
+        take: 2,
+      })
+      const crossRefSkus = new Set(crossRefs.map((r) => r.product.sku))
+      if (crossRefSkus.size === 1) {
+        return { kind: 'redirect', targetUrl: `/p/${[...crossRefSkus][0]!}` }
+      }
+    }
   }
 
   const [synonymRows, redirectRows] = await Promise.all([
@@ -135,12 +184,20 @@ export async function runSearch(rawQuery: string): Promise<SearchPlan> {
   }
 
   // pg_trgm fallback — typo-tolerant similarity over identifying fields.
+  //
+  // `searchAliases` is in here for the same reason it is in `search_tsv`: the
+  // identifier a buyer mistypes is as likely to be a competitor part number or
+  // a size-level part number as it is to be our listing SKU. It is scored at
+  // 0.9 of its raw similarity so that, on a tie, the product whose OWN sku
+  // matches still outranks one that merely lists the string as an alias — the
+  // alias blob is long, and long haystacks make cheap matches.
   const trgmRows = await db.$queryRaw<Array<{ id: string; score: number }>>(Prisma.sql`
     SELECT p.id::text AS id,
            GREATEST(
              similarity(p.sku, ${plan.trigramTerm}),
              similarity(COALESCE(p.mpn, ''), ${plan.trigramTerm}),
-             similarity(p.title, ${plan.trigramTerm})
+             similarity(p.title, ${plan.trigramTerm}),
+             similarity(COALESCE(p."searchAliases", ''), ${plan.trigramTerm}) * 0.9
            ) AS score
     FROM products p
     WHERE p.status::text = 'active'
@@ -148,6 +205,7 @@ export async function runSearch(rawQuery: string): Promise<SearchPlan> {
         p.sku % ${plan.trigramTerm}
         OR COALESCE(p.mpn, '') % ${plan.trigramTerm}
         OR p.title % ${plan.trigramTerm}
+        OR COALESCE(p."searchAliases", '') % ${plan.trigramTerm}
       )
     ORDER BY score DESC
     LIMIT ${FTS_FETCH_LIMIT}

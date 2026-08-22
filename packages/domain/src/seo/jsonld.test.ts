@@ -28,6 +28,50 @@ describe('buildProductLd', () => {
     expect((ld.brand as Record<string, unknown>).name).toBe('Parker')
   })
 
+  it('emits orderable sizes as hasVariant, carrying the competitor equivalent', () => {
+    const ld = buildProductLd({
+      name: 'JIC 37° Female Swivel 90° Elbow Crimp Fitting for Braided Hose',
+      sku: 'IH-CF43-JICF-90',
+      url: 'https://example.com/p/foo',
+      imageUrls: [],
+      variants: [
+        {
+          sku: 'IH-CF43-JICF-90-0808',
+          name: 'JIC 90° · 1/2" hose · 3/4"-16',
+          equivalentBrand: 'Parker',
+          equivalentMpn: '13943-8-8',
+        },
+        { sku: 'IH-CF43-JICF-90-1212', name: 'JIC 90° · 3/4" hose · 1.1/16"-12' },
+      ],
+    })
+    const variants = ld.hasVariant as Array<Record<string, unknown>>
+    expect(variants).toHaveLength(2)
+    expect(variants[0]!['@type']).toBe('Product')
+    // The size-level part number is both our sku and our mpn — there is no
+    // separate manufacturer number for it.
+    expect(variants[0]!.sku).toBe('IH-CF43-JICF-90-0808')
+    expect(variants[0]!.mpn).toBe('IH-CF43-JICF-90-0808')
+    expect(variants[0]!.additionalProperty).toEqual({
+      '@type': 'PropertyValue',
+      name: 'Parker equivalent part number',
+      value: '13943-8-8',
+    })
+    // A size with no stated equivalent must not invent one.
+    expect(variants[1]!.additionalProperty).toBeUndefined()
+  })
+
+  it('omits hasVariant entirely for a product with no size table', () => {
+    const base = {
+      name: 'Thing',
+      sku: 'IH-1',
+      url: 'https://example.com/p/thing',
+      imageUrls: [],
+    }
+    expect(buildProductLd(base).hasVariant).toBeUndefined()
+    expect(buildProductLd({ ...base, variants: [] }).hasVariant).toBeUndefined()
+    expect(buildProductLd({ ...base, variants: null }).hasVariant).toBeUndefined()
+  })
+
   it('respects override deep-merge', () => {
     const ld = buildProductLd({
       name: 'Parker Fitting',
