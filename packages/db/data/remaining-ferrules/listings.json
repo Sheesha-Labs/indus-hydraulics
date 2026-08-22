@@ -1,0 +1,1139 @@
+{
+ "source": "Master supplier hydraulic hose fitting catalogue",
+ "products": [
+  {
+   "sku": "IH-CF-SK-CN1",
+   "title": "Skive Crimp Ferrule for China 1-Wire Hose",
+   "slug": "skive-crimp-ferrule-for-china-1-wire-hose",
+   "categorySlug": "crimp-ferrules",
+   "specTemplateSlug": "threaded-fitting-spec",
+   "focusKeyword": "china 1 wire hose ferrule",
+   "imageFromSku": "IH-CF-SK-R1A1ST",
+   "descriptionShort": "Skive Crimp Ferrule for China 1-Wire Hose — 12 sizes, -03 to -32.",
+   "descriptionLong": "<p>The <strong>Skive Crimp Ferrule for China 1-Wire Hose</strong> is part of the Indus hydraulic connection range.</p>\n<p>Sized for GB-standard Chinese wire-braid hose, which is dimensioned differently from the SAE and EN grades in the rest of this category. Match the ferrule to the hose it is crimping, not to the bore alone — an SAE 1SN and a China 1-wire of the same nominal bore do not take the same ferrule.</p>\n<h3>Construction</h3>\n<ul>\n<li>Configuration: straight</li>\n<li>Material: carbon steel, zinc-plated and Cr3+ passivated (316 stainless on request)</li>\n</ul>\n<h3>Sizes</h3>\n<p>12 sizes, -03 to -32. The full size and dimension table is on this page.</p>\n<h3>How to order</h3>\n<p>Quote the Indus part number for the size you need. Tell us the hose grade and bore and we will include the matching crimp ferrule — the ferrule follows the hose, not the fitting. Indus crimps and pressure-tests assemblies before dispatch.</p>",
+   "seoTitle": "Skive Crimp Ferrule for China 1-Wire Hose",
+   "seoDescription": "Skive Crimp Ferrule for China 1-Wire Hose — 12 sizes (-03 to -32). Carbon steel or 316 stainless, ex-Dubai.",
+   "faqs": [
+    {
+     "question": "What sizes are available?",
+     "answer": "12 sizes, -03 to -32. Every row in the table on this page is an orderable part number."
+    },
+    {
+     "question": "What is the maximum working pressure?",
+     "answer": "The hose grade and bore set the assembly rating, not the fitting. A correctly crimped fitting does not derate the hose. Tell us the grade and bore on the RFQ and we will confirm the figure in writing."
+    },
+    {
+     "question": "Which ferrule pairs with this fitting?",
+     "answer": "The one that matches your hose grade — the skive/no-skive choice follows the hose construction, not the fitting end. Send the hose grade with your enquiry and we will specify the ferrule and the crimp diameter."
+    },
+    {
+     "question": "Is stainless steel available?",
+     "answer": "Yes — 316 stainless on request across the range. Standard supply is carbon steel, zinc-plated and Cr3+ passivated. Add \"-SS\" to the part number when you enquire."
+    },
+    {
+     "question": "Can Indus crimp the assembly?",
+     "answer": "Yes. We crimp, pressure-test and certify assemblies in Dubai and ship UAE-wide. Send the hose grade, bore, both end fittings, overall length and orientation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Fitting Configuration",
+     "value": "straight",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "fitting_configuration"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size Range",
+     "value": "-03 to -32",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "nominal_size_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "Carbon steel (316 stainless on request)",
+     "unit": null,
+     "position": 2,
+     "isFilterable": false,
+     "templateKey": "material"
+    },
+    {
+     "group": "Construction",
+     "label": "Surface Treatment",
+     "value": "Zinc-plated, Cr3+ passivated, RoHS-compliant",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "surface_treatment"
+    },
+    {
+     "group": "Compliance",
+     "label": "Applicable Standards",
+     "value": "GB-standard 1-wire braided hose",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "applicable_standards"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-CF-SK-CN1-03",
+     "hoseDash": 3,
+     "hoseInch": "3/16\"",
+     "hoseDn": 5,
+     "portLabel": null,
+     "portDash": null,
+     "dimensions": {
+      "D": 17.0,
+      "L": 28.0
+     },
+     "sourcePart": "01100-03",
+     "position": 0
+    },
+    {
+     "partNumber": "IH-CF-SK-CN1-04",
+     "hoseDash": 4,
+     "hoseInch": "1/4\"",
+     "hoseDn": 6,
+     "portLabel": null,
+     "portDash": null,
+     "dimensions": {
+      "D": 19.0,
+      "L": 30.0
+     },
+     "sourcePart": "01100-04",
+     "position": 1
+    },
+    {
+     "partNumber": "IH-CF-SK-CN1-05",
+     "hoseDash": 5,
+     "hoseInch": "5/16\"",
+     "hoseDn": 8,
+     "portLabel": null,
+     "portDash": null,
+     "dimensions": {
+      "D": 21.0,
+      "L": 32.0
+     },
+     "sourcePart": "01100-05",
+     "position": 2
+    },
+    {
+     "partNumber": "IH-CF-SK-CN1-06",
+     "hoseDash": 6,
+     "hoseInch": "3/8\"",
+     "hoseDn": 10,
+     "portLabel": null,
+     "portDash": null,
+     "dimensions": {
+      "D": 23.0,
+      "L": 32.0
+     },
+     "sourcePart": "01100-06",
+     "position": 3
+    },
+    {
+     "partNumber": "IH-CF-SK-CN1-08",
+     "hoseDash": 8,
+     "hoseInch": "1/2\"",
+     "hoseDn": 12,
+     "portLabel": null,
+     "portDash": null,
+     "dimensions": {
+      "D": 28.0,
+      "L": 34.0
+     },
+     "sourcePart": "01100-08",
+     "position": 4
+    },
+    {
+     "partNumber": "IH-CF-SK-CN1-10",
+     "hoseDash": 10,
+     "hoseInch": "5/8\"",
+     "hoseDn": 16,
+     "portLabel": null,
+     "portDash": null,
+     "dimensions": {
+      "D": 31.0,
+      "L": 39.0
+     },
+     "sourcePart": "01100-10",
+     "position": 5
+    },
+    {
+     "partNumber": "IH-CF-SK-CN1-12",
+     "hoseDash": 12,
+     "hoseInch": "3/4\"",
+     "hoseDn": 20,
+     "portLabel": null,
+     "portDash": null,
+     "dimensions": {
+      "D": 34.0,
+      "L": 43.0
+     },
+     "sourcePart": "01100-12",
+     "position": 6
+    },
+    {
+     "partNumber": "IH-CF-SK-CN1-14",
+     "hoseDash": 14,
+     "hoseInch": "7/8\"",
+     "hoseDn": 22,
+     "portLabel": null,
+     "portDash": null,
+     "dimensions": {
+      "D": 37.0,
+      "L": 43.0
+     },
+     "sourcePart": "01100-14",
+     "position": 7
+    },
+    {
+     "partNumber": "IH-CF-SK-CN1-16",
+     "hoseDash": 16,
+     "hoseInch": "1\"",
+     "hoseDn": 25,
+     "portLabel": null,
+     "portDash": null,
+     "dimensions": {
+      "D": 41.0,
+      "L": 50.0
+     },
+     "sourcePart": "01100-16",
+     "position": 8
+    },
+    {
+     "partNumber": "IH-CF-SK-CN1-20",
+     "hoseDash": 20,
+     "hoseInch": "1.1/4\"",
+     "hoseDn": 32,
+     "portLabel": null,
+     "portDash": null,
+     "dimensions": {
+      "D": 49.0,
+      "L": 59.0
+     },
+     "sourcePart": "01100-20",
+     "position": 9
+    },
+    {
+     "partNumber": "IH-CF-SK-CN1-24",
+     "hoseDash": 24,
+     "hoseInch": "1.1/2\"",
+     "hoseDn": 38,
+     "portLabel": null,
+     "portDash": null,
+     "dimensions": {
+      "D": 55.0,
+      "L": 74.0
+     },
+     "sourcePart": "01100-24",
+     "position": 10
+    },
+    {
+     "partNumber": "IH-CF-SK-CN1-32",
+     "hoseDash": 32,
+     "hoseInch": "2\"",
+     "hoseDn": 51,
+     "portLabel": null,
+     "portDash": null,
+     "dimensions": {
+      "D": 68.0,
+      "L": 78.0
+     },
+     "sourcePart": "01100-32",
+     "position": 11
+    }
+   ],
+   "sourceFamily": "01100 (p8)"
+  },
+  {
+   "sku": "IH-CF-SK-CN2",
+   "title": "Skive Crimp Ferrule for China 2-Wire Hose",
+   "slug": "skive-crimp-ferrule-for-china-2-wire-hose",
+   "categorySlug": "crimp-ferrules",
+   "specTemplateSlug": "threaded-fitting-spec",
+   "focusKeyword": "china 2 wire hose ferrule",
+   "imageFromSku": "IH-CF-SK-R2A2ST",
+   "descriptionShort": "Skive Crimp Ferrule for China 2-Wire Hose — 12 sizes, -03 to -32.",
+   "descriptionLong": "<p>The <strong>Skive Crimp Ferrule for China 2-Wire Hose</strong> is part of the Indus hydraulic connection range.</p>\n<p>Sized for GB-standard Chinese wire-braid hose, which is dimensioned differently from the SAE and EN grades in the rest of this category. Match the ferrule to the hose it is crimping, not to the bore alone — an SAE 1SN and a China 1-wire of the same nominal bore do not take the same ferrule.</p>\n<h3>Construction</h3>\n<ul>\n<li>Configuration: straight</li>\n<li>Material: carbon steel, zinc-plated and Cr3+ passivated (316 stainless on request)</li>\n</ul>\n<h3>Sizes</h3>\n<p>12 sizes, -03 to -32. The full size and dimension table is on this page.</p>\n<h3>How to order</h3>\n<p>Quote the Indus part number for the size you need. Tell us the hose grade and bore and we will include the matching crimp ferrule — the ferrule follows the hose, not the fitting. Indus crimps and pressure-tests assemblies before dispatch.</p>",
+   "seoTitle": "Skive Crimp Ferrule for China 2-Wire Hose",
+   "seoDescription": "Skive Crimp Ferrule for China 2-Wire Hose — 12 sizes (-03 to -32). Carbon steel or 316 stainless, ex-Dubai.",
+   "faqs": [
+    {
+     "question": "What sizes are available?",
+     "answer": "12 sizes, -03 to -32. Every row in the table on this page is an orderable part number."
+    },
+    {
+     "question": "What is the maximum working pressure?",
+     "answer": "The hose grade and bore set the assembly rating, not the fitting. A correctly crimped fitting does not derate the hose. Tell us the grade and bore on the RFQ and we will confirm the figure in writing."
+    },
+    {
+     "question": "Which ferrule pairs with this fitting?",
+     "answer": "The one that matches your hose grade — the skive/no-skive choice follows the hose construction, not the fitting end. Send the hose grade with your enquiry and we will specify the ferrule and the crimp diameter."
+    },
+    {
+     "question": "Is stainless steel available?",
+     "answer": "Yes — 316 stainless on request across the range. Standard supply is carbon steel, zinc-plated and Cr3+ passivated. Add \"-SS\" to the part number when you enquire."
+    },
+    {
+     "question": "Can Indus crimp the assembly?",
+     "answer": "Yes. We crimp, pressure-test and certify assemblies in Dubai and ship UAE-wide. Send the hose grade, bore, both end fittings, overall length and orientation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Fitting Configuration",
+     "value": "straight",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "fitting_configuration"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size Range",
+     "value": "-03 to -32",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "nominal_size_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "Carbon steel (316 stainless on request)",
+     "unit": null,
+     "position": 2,
+     "isFilterable": false,
+     "templateKey": "material"
+    },
+    {
+     "group": "Construction",
+     "label": "Surface Treatment",
+     "value": "Zinc-plated, Cr3+ passivated, RoHS-compliant",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "surface_treatment"
+    },
+    {
+     "group": "Compliance",
+     "label": "Applicable Standards",
+     "value": "GB-standard 2-wire braided hose",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "applicable_standards"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-CF-SK-CN2-03",
+     "hoseDash": 3,
+     "hoseInch": "3/16\"",
+     "hoseDn": 5,
+     "portLabel": null,
+     "portDash": null,
+     "dimensions": {
+      "D": 18.5,
+      "L": 28.0
+     },
+     "sourcePart": "01200-03",
+     "position": 0
+    },
+    {
+     "partNumber": "IH-CF-SK-CN2-04",
+     "hoseDash": 4,
+     "hoseInch": "1/4\"",
+     "hoseDn": 6,
+     "portLabel": null,
+     "portDash": null,
+     "dimensions": {
+      "D": 21.0,
+      "L": 30.0
+     },
+     "sourcePart": "01200-04",
+     "position": 1
+    },
+    {
+     "partNumber": "IH-CF-SK-CN2-05",
+     "hoseDash": 5,
+     "hoseInch": "5/16\"",
+     "hoseDn": 8,
+     "portLabel": null,
+     "portDash": null,
+     "dimensions": {
+      "D": 23.0,
+      "L": 32.0
+     },
+     "sourcePart": "01200-05",
+     "position": 2
+    },
+    {
+     "partNumber": "IH-CF-SK-CN2-06",
+     "hoseDash": 6,
+     "hoseInch": "3/8\"",
+     "hoseDn": 10,
+     "portLabel": null,
+     "portDash": null,
+     "dimensions": {
+      "D": 25.0,
+      "L": 32.0
+     },
+     "sourcePart": "01200-06",
+     "position": 3
+    },
+    {
+     "partNumber": "IH-CF-SK-CN2-08",
+     "hoseDash": 8,
+     "hoseInch": "1/2\"",
+     "hoseDn": 12,
+     "portLabel": null,
+     "portDash": null,
+     "dimensions": {
+      "D": 31.0,
+      "L": 34.0
+     },
+     "sourcePart": "01200-08",
+     "position": 4
+    },
+    {
+     "partNumber": "IH-CF-SK-CN2-10",
+     "hoseDash": 10,
+     "hoseInch": "5/8\"",
+     "hoseDn": 16,
+     "portLabel": null,
+     "portDash": null,
+     "dimensions": {
+      "D": 34.0,
+      "L": 39.0
+     },
+     "sourcePart": "01200-10",
+     "position": 5
+    },
+    {
+     "partNumber": "IH-CF-SK-CN2-12",
+     "hoseDash": 12,
+     "hoseInch": "3/4\"",
+     "hoseDn": 20,
+     "portLabel": null,
+     "portDash": null,
+     "dimensions": {
+      "D": 37.0,
+      "L": 43.0
+     },
+     "sourcePart": "01200-12",
+     "position": 6
+    },
+    {
+     "partNumber": "IH-CF-SK-CN2-14",
+     "hoseDash": 14,
+     "hoseInch": "7/8\"",
+     "hoseDn": 22,
+     "portLabel": null,
+     "portDash": null,
+     "dimensions": {
+      "D": 40.0,
+      "L": 43.0
+     },
+     "sourcePart": "01200-14",
+     "position": 7
+    },
+    {
+     "partNumber": "IH-CF-SK-CN2-16",
+     "hoseDash": 16,
+     "hoseInch": "1\"",
+     "hoseDn": 25,
+     "portLabel": null,
+     "portDash": null,
+     "dimensions": {
+      "D": 43.0,
+      "L": 50.0
+     },
+     "sourcePart": "01200-16",
+     "position": 8
+    },
+    {
+     "partNumber": "IH-CF-SK-CN2-20",
+     "hoseDash": 20,
+     "hoseInch": "1.1/4\"",
+     "hoseDn": 32,
+     "portLabel": null,
+     "portDash": null,
+     "dimensions": {
+      "D": 51.0,
+      "L": 59.0
+     },
+     "sourcePart": "01200-20",
+     "position": 9
+    },
+    {
+     "partNumber": "IH-CF-SK-CN2-24",
+     "hoseDash": 24,
+     "hoseInch": "1.1/2\"",
+     "hoseDn": 38,
+     "portLabel": null,
+     "portDash": null,
+     "dimensions": {
+      "D": 57.0,
+      "L": 74.0
+     },
+     "sourcePart": "01200-24",
+     "position": 10
+    },
+    {
+     "partNumber": "IH-CF-SK-CN2-32",
+     "hoseDash": 32,
+     "hoseInch": "2\"",
+     "hoseDn": 51,
+     "portLabel": null,
+     "portDash": null,
+     "dimensions": {
+      "D": 70.0,
+      "L": 78.0
+     },
+     "sourcePart": "01200-32",
+     "position": 11
+    }
+   ],
+   "sourceFamily": "01200 (p8)"
+  },
+  {
+   "sku": "IH-CF-SK-CN3",
+   "title": "Skive Crimp Ferrule for China 3-Wire Hose",
+   "slug": "skive-crimp-ferrule-for-china-3-wire-hose",
+   "categorySlug": "crimp-ferrules",
+   "specTemplateSlug": "threaded-fitting-spec",
+   "focusKeyword": "china 3 wire hose ferrule",
+   "imageFromSku": "IH-CF-SK-4SP",
+   "descriptionShort": "Skive Crimp Ferrule for China 3-Wire Hose — 11 sizes, -04 to -32.",
+   "descriptionLong": "<p>The <strong>Skive Crimp Ferrule for China 3-Wire Hose</strong> is part of the Indus hydraulic connection range.</p>\n<p>Sized for GB-standard Chinese wire-braid hose, which is dimensioned differently from the SAE and EN grades in the rest of this category. Match the ferrule to the hose it is crimping, not to the bore alone — an SAE 1SN and a China 1-wire of the same nominal bore do not take the same ferrule.</p>\n<h3>Construction</h3>\n<ul>\n<li>Configuration: straight</li>\n<li>Material: carbon steel, zinc-plated and Cr3+ passivated (316 stainless on request)</li>\n</ul>\n<h3>Sizes</h3>\n<p>11 sizes, -04 to -32. The full size and dimension table is on this page.</p>\n<h3>How to order</h3>\n<p>Quote the Indus part number for the size you need. Tell us the hose grade and bore and we will include the matching crimp ferrule — the ferrule follows the hose, not the fitting. Indus crimps and pressure-tests assemblies before dispatch.</p>",
+   "seoTitle": "Skive Crimp Ferrule for China 3-Wire Hose",
+   "seoDescription": "Skive Crimp Ferrule for China 3-Wire Hose — 11 sizes (-04 to -32). Carbon steel or 316 stainless, ex-Dubai.",
+   "faqs": [
+    {
+     "question": "What sizes are available?",
+     "answer": "11 sizes, -04 to -32. Every row in the table on this page is an orderable part number."
+    },
+    {
+     "question": "What is the maximum working pressure?",
+     "answer": "The hose grade and bore set the assembly rating, not the fitting. A correctly crimped fitting does not derate the hose. Tell us the grade and bore on the RFQ and we will confirm the figure in writing."
+    },
+    {
+     "question": "Which ferrule pairs with this fitting?",
+     "answer": "The one that matches your hose grade — the skive/no-skive choice follows the hose construction, not the fitting end. Send the hose grade with your enquiry and we will specify the ferrule and the crimp diameter."
+    },
+    {
+     "question": "Is stainless steel available?",
+     "answer": "Yes — 316 stainless on request across the range. Standard supply is carbon steel, zinc-plated and Cr3+ passivated. Add \"-SS\" to the part number when you enquire."
+    },
+    {
+     "question": "Can Indus crimp the assembly?",
+     "answer": "Yes. We crimp, pressure-test and certify assemblies in Dubai and ship UAE-wide. Send the hose grade, bore, both end fittings, overall length and orientation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Fitting Configuration",
+     "value": "straight",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "fitting_configuration"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size Range",
+     "value": "-04 to -32",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "nominal_size_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "Carbon steel (316 stainless on request)",
+     "unit": null,
+     "position": 2,
+     "isFilterable": false,
+     "templateKey": "material"
+    },
+    {
+     "group": "Construction",
+     "label": "Surface Treatment",
+     "value": "Zinc-plated, Cr3+ passivated, RoHS-compliant",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "surface_treatment"
+    },
+    {
+     "group": "Compliance",
+     "label": "Applicable Standards",
+     "value": "GB-standard 3-wire braided hose",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "applicable_standards"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-CF-SK-CN3-04",
+     "hoseDash": 4,
+     "hoseInch": "1/4\"",
+     "hoseDn": 6,
+     "portLabel": null,
+     "portDash": null,
+     "dimensions": {
+      "D": 23.0,
+      "L": 30.0
+     },
+     "sourcePart": "01300-04",
+     "position": 0
+    },
+    {
+     "partNumber": "IH-CF-SK-CN3-05",
+     "hoseDash": 5,
+     "hoseInch": "5/16\"",
+     "hoseDn": 8,
+     "portLabel": null,
+     "portDash": null,
+     "dimensions": {
+      "D": 25.0,
+      "L": 32.0
+     },
+     "sourcePart": "01300-05",
+     "position": 1
+    },
+    {
+     "partNumber": "IH-CF-SK-CN3-06",
+     "hoseDash": 6,
+     "hoseInch": "3/8\"",
+     "hoseDn": 10,
+     "portLabel": null,
+     "portDash": null,
+     "dimensions": {
+      "D": 27.0,
+      "L": 32.0
+     },
+     "sourcePart": "01300-06",
+     "position": 2
+    },
+    {
+     "partNumber": "IH-CF-SK-CN3-08",
+     "hoseDash": 8,
+     "hoseInch": "1/2\"",
+     "hoseDn": 12,
+     "portLabel": null,
+     "portDash": null,
+     "dimensions": {
+      "D": 33.0,
+      "L": 34.0
+     },
+     "sourcePart": "01300-08",
+     "position": 3
+    },
+    {
+     "partNumber": "IH-CF-SK-CN3-10",
+     "hoseDash": 10,
+     "hoseInch": "5/8\"",
+     "hoseDn": 16,
+     "portLabel": null,
+     "portDash": null,
+     "dimensions": {
+      "D": 36.0,
+      "L": 39.0
+     },
+     "sourcePart": "01300-10",
+     "position": 4
+    },
+    {
+     "partNumber": "IH-CF-SK-CN3-12",
+     "hoseDash": 12,
+     "hoseInch": "3/4\"",
+     "hoseDn": 20,
+     "portLabel": null,
+     "portDash": null,
+     "dimensions": {
+      "D": 39.0,
+      "L": 43.0
+     },
+     "sourcePart": "01300-12",
+     "position": 5
+    },
+    {
+     "partNumber": "IH-CF-SK-CN3-14",
+     "hoseDash": 14,
+     "hoseInch": "7/8\"",
+     "hoseDn": 22,
+     "portLabel": null,
+     "portDash": null,
+     "dimensions": {
+      "D": 42.0,
+      "L": 43.0
+     },
+     "sourcePart": "01300-14",
+     "position": 6
+    },
+    {
+     "partNumber": "IH-CF-SK-CN3-16",
+     "hoseDash": 16,
+     "hoseInch": "1\"",
+     "hoseDn": 25,
+     "portLabel": null,
+     "portDash": null,
+     "dimensions": {
+      "D": 45.0,
+      "L": 50.0
+     },
+     "sourcePart": "01300-16",
+     "position": 7
+    },
+    {
+     "partNumber": "IH-CF-SK-CN3-20",
+     "hoseDash": 20,
+     "hoseInch": "1.1/4\"",
+     "hoseDn": 32,
+     "portLabel": null,
+     "portDash": null,
+     "dimensions": {
+      "D": 53.0,
+      "L": 59.0
+     },
+     "sourcePart": "01300-20",
+     "position": 8
+    },
+    {
+     "partNumber": "IH-CF-SK-CN3-24",
+     "hoseDash": 24,
+     "hoseInch": "1.1/2\"",
+     "hoseDn": 38,
+     "portLabel": null,
+     "portDash": null,
+     "dimensions": {
+      "D": 59.0,
+      "L": 74.0
+     },
+     "sourcePart": "01300-24",
+     "position": 9
+    },
+    {
+     "partNumber": "IH-CF-SK-CN3-32",
+     "hoseDash": 32,
+     "hoseInch": "2\"",
+     "hoseDn": 51,
+     "portLabel": null,
+     "portDash": null,
+     "dimensions": {
+      "D": 72.0,
+      "L": 78.0
+     },
+     "sourcePart": "01300-32",
+     "position": 10
+    }
+   ],
+   "sourceFamily": "01300 (p9)"
+  },
+  {
+   "sku": "IH-CF-SK-R12-4SP",
+   "title": "Skive Crimp Ferrule for R12 Four-Spiral Hose",
+   "slug": "skive-crimp-ferrule-for-r12-four-spiral-hose",
+   "categorySlug": "crimp-ferrules",
+   "specTemplateSlug": "threaded-fitting-spec",
+   "focusKeyword": "R12 four spiral crimp ferrule",
+   "imageFromSku": "IH-CF-SK-4SP",
+   "descriptionShort": "Skive Crimp Ferrule for R12 Four-Spiral Hose — 10 sizes, -04 to -32.",
+   "descriptionLong": "<p>The <strong>Skive Crimp Ferrule for R12 Four-Spiral Hose</strong> is part of the Indus hydraulic connection range.</p>\n<p>A distinct ferrule from the R12 pair already in this category, and the dimensions say so — at DN10 this one crimps to 27.5 mm where the other reaches 25.5 mm. It runs the full DN6 to DN51 range in one part series. Check which R12 construction your hose is before ordering.</p>\n<h3>Construction</h3>\n<ul>\n<li>Configuration: straight</li>\n<li>Material: carbon steel, zinc-plated and Cr3+ passivated (316 stainless on request)</li>\n</ul>\n<h3>Sizes</h3>\n<p>10 sizes, -04 to -32. The full size and dimension table is on this page.</p>\n<h3>How to order</h3>\n<p>Quote the Indus part number for the size you need. Tell us the hose grade and bore and we will include the matching crimp ferrule — the ferrule follows the hose, not the fitting. Indus crimps and pressure-tests assemblies before dispatch.</p>",
+   "seoTitle": "Skive Crimp Ferrule for R12 Four-Spiral Hose",
+   "seoDescription": "Skive Crimp Ferrule for R12 Four-Spiral Hose — 10 sizes (-04 to -32). Carbon steel or 316 stainless, ex-Dubai.",
+   "faqs": [
+    {
+     "question": "What sizes are available?",
+     "answer": "10 sizes, -04 to -32. Every row in the table on this page is an orderable part number."
+    },
+    {
+     "question": "What is the maximum working pressure?",
+     "answer": "The hose grade and bore set the assembly rating, not the fitting. A correctly crimped fitting does not derate the hose. Tell us the grade and bore on the RFQ and we will confirm the figure in writing."
+    },
+    {
+     "question": "Which ferrule pairs with this fitting?",
+     "answer": "The one that matches your hose grade — the skive/no-skive choice follows the hose construction, not the fitting end. Send the hose grade with your enquiry and we will specify the ferrule and the crimp diameter."
+    },
+    {
+     "question": "Is stainless steel available?",
+     "answer": "Yes — 316 stainless on request across the range. Standard supply is carbon steel, zinc-plated and Cr3+ passivated. Add \"-SS\" to the part number when you enquire."
+    },
+    {
+     "question": "Can Indus crimp the assembly?",
+     "answer": "Yes. We crimp, pressure-test and certify assemblies in Dubai and ship UAE-wide. Send the hose grade, bore, both end fittings, overall length and orientation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Fitting Configuration",
+     "value": "straight",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "fitting_configuration"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size Range",
+     "value": "-04 to -32",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "nominal_size_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "Carbon steel (316 stainless on request)",
+     "unit": null,
+     "position": 2,
+     "isFilterable": false,
+     "templateKey": "material"
+    },
+    {
+     "group": "Construction",
+     "label": "Surface Treatment",
+     "value": "Zinc-plated, Cr3+ passivated, RoHS-compliant",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "surface_treatment"
+    },
+    {
+     "group": "Compliance",
+     "label": "Applicable Standards",
+     "value": "SAE 100R12, four-spiral construction",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "applicable_standards"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-CF-SK-R12-4SP-04",
+     "hoseDash": 4,
+     "hoseInch": "1/4\"",
+     "hoseDn": 6,
+     "portLabel": null,
+     "portDash": null,
+     "dimensions": {
+      "D": 22.0,
+      "L": 37.5
+     },
+     "sourcePart": "01400-04",
+     "position": 0
+    },
+    {
+     "partNumber": "IH-CF-SK-R12-4SP-06",
+     "hoseDash": 6,
+     "hoseInch": "3/8\"",
+     "hoseDn": 10,
+     "portLabel": null,
+     "portDash": null,
+     "dimensions": {
+      "D": 27.5,
+      "L": 39.0
+     },
+     "sourcePart": "01400-06",
+     "position": 1
+    },
+    {
+     "partNumber": "IH-CF-SK-R12-4SP-08",
+     "hoseDash": 8,
+     "hoseInch": "1/2\"",
+     "hoseDn": 12,
+     "portLabel": null,
+     "portDash": null,
+     "dimensions": {
+      "D": 31.5,
+      "L": 41.0
+     },
+     "sourcePart": "01400-08",
+     "position": 2
+    },
+    {
+     "partNumber": "IH-CF-SK-R12-4SP-10",
+     "hoseDash": 10,
+     "hoseInch": "5/8\"",
+     "hoseDn": 16,
+     "portLabel": null,
+     "portDash": null,
+     "dimensions": {
+      "D": 34.0,
+      "L": 43.0
+     },
+     "sourcePart": "01400-10",
+     "position": 3
+    },
+    {
+     "partNumber": "IH-CF-SK-R12-4SP-12",
+     "hoseDash": 12,
+     "hoseInch": "3/4\"",
+     "hoseDn": 20,
+     "portLabel": null,
+     "portDash": null,
+     "dimensions": {
+      "D": 39.0,
+      "L": 51.0
+     },
+     "sourcePart": "01400-12",
+     "position": 4
+    },
+    {
+     "partNumber": "IH-CF-SK-R12-4SP-14",
+     "hoseDash": 14,
+     "hoseInch": "7/8\"",
+     "hoseDn": 22,
+     "portLabel": null,
+     "portDash": null,
+     "dimensions": {
+      "D": 43.5,
+      "L": 54.0
+     },
+     "sourcePart": "01400-14",
+     "position": 5
+    },
+    {
+     "partNumber": "IH-CF-SK-R12-4SP-16",
+     "hoseDash": 16,
+     "hoseInch": "1\"",
+     "hoseDn": 25,
+     "portLabel": null,
+     "portDash": null,
+     "dimensions": {
+      "D": 46.5,
+      "L": 61.5
+     },
+     "sourcePart": "01400-16",
+     "position": 6
+    },
+    {
+     "partNumber": "IH-CF-SK-R12-4SP-20",
+     "hoseDash": 20,
+     "hoseInch": "1.1/4\"",
+     "hoseDn": 32,
+     "portLabel": null,
+     "portDash": null,
+     "dimensions": {
+      "D": 55.5,
+      "L": 67.5
+     },
+     "sourcePart": "01400-20",
+     "position": 7
+    },
+    {
+     "partNumber": "IH-CF-SK-R12-4SP-24",
+     "hoseDash": 24,
+     "hoseInch": "1.1/2\"",
+     "hoseDn": 38,
+     "portLabel": null,
+     "portDash": null,
+     "dimensions": {
+      "D": 63.5,
+      "L": 75.0
+     },
+     "sourcePart": "01400-24",
+     "position": 8
+    },
+    {
+     "partNumber": "IH-CF-SK-R12-4SP-32",
+     "hoseDash": 32,
+     "hoseInch": "2\"",
+     "hoseDn": 51,
+     "portLabel": null,
+     "portDash": null,
+     "dimensions": {
+      "D": 78.0,
+      "L": 79.0
+     },
+     "sourcePart": "01400-32",
+     "position": 9
+    }
+   ],
+   "sourceFamily": "01400 (p9)"
+  },
+  {
+   "sku": "IH-MF-FEM-WW",
+   "title": "Metric Female Waterwash Insert",
+   "slug": "metric-female-waterwash-insert",
+   "categorySlug": "metric-hose-fittings",
+   "specTemplateSlug": "threaded-fitting-spec",
+   "focusKeyword": "metric waterwash insert hose fitting",
+   "imageFromSku": "IH-MF-FEM-60",
+   "descriptionShort": "Metric Female Waterwash Insert — o-ring seal in the insert face, 3 sizes, -04 to -06.",
+   "descriptionLong": "<p>The <strong>Metric Female Waterwash Insert</strong> is a hydraulic hose fitting with o-ring seal in the insert face.</p>\n<p>An insert for high-pressure water-wash equipment rather than a general hydraulic fitting. One thread across the range — M22×1.5 — in three hose bores, each supplied with the O-ring size listed in the table.</p>\n<h3>Construction</h3>\n<ul>\n<li>Configuration: straight</li>\n<li>Thread: M22×1.5</li>\n<li>Sealing form: O-ring seal in the insert face</li>\n<li>Gender: female-swivel</li>\n<li>Material: carbon steel, zinc-plated and Cr3+ passivated (316 stainless on request)</li>\n</ul>\n<h3>Sizes</h3>\n<p>3 sizes, -04 to -06, threads M22×1.5. The full size and dimension table is on this page.</p>\n<h3>How to order</h3>\n<p>Quote the Indus part number for the size you need. Tell us the hose grade and bore and we will include the matching crimp ferrule — the ferrule follows the hose, not the fitting. Indus crimps and pressure-tests assemblies before dispatch.</p>",
+   "seoTitle": "Metric Female Waterwash Insert",
+   "seoDescription": "Metric Female Waterwash Insert — 3 sizes (-04 to -06), M22×1.5. Carbon steel or 316 stainless, ex-Dubai.",
+   "faqs": [
+    {
+     "question": "What is the sealing form?",
+     "answer": "O-ring seal in the insert face. Pair it with the matching counterpart — a mismatched sealing form will seat but will not hold pressure."
+    },
+    {
+     "question": "What sizes are available?",
+     "answer": "3 sizes, -04 to -06, threads M22×1.5. Every row in the table on this page is an orderable part number."
+    },
+    {
+     "question": "What is the maximum working pressure?",
+     "answer": "The hose grade and bore set the assembly rating, not the fitting. A correctly crimped fitting does not derate the hose. Tell us the grade and bore on the RFQ and we will confirm the figure in writing."
+    },
+    {
+     "question": "Which ferrule pairs with this fitting?",
+     "answer": "The one that matches your hose grade — the skive/no-skive choice follows the hose construction, not the fitting end. Send the hose grade with your enquiry and we will specify the ferrule and the crimp diameter."
+    },
+    {
+     "question": "Is stainless steel available?",
+     "answer": "Yes — 316 stainless on request across the range. Standard supply is carbon steel, zinc-plated and Cr3+ passivated. Add \"-SS\" to the part number when you enquire."
+    },
+    {
+     "question": "Can Indus crimp the assembly?",
+     "answer": "Yes. We crimp, pressure-test and certify assemblies in Dubai and ship UAE-wide. Send the hose grade, bore, both end fittings, overall length and orientation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Fitting Configuration",
+     "value": "straight",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "fitting_configuration"
+    },
+    {
+     "group": "Identification",
+     "label": "Thread Form",
+     "value": "M22×1.5",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "thread_form"
+    },
+    {
+     "group": "Identification",
+     "label": "Sealing Form",
+     "value": "O-ring seal in the insert face",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "sealing_form"
+    },
+    {
+     "group": "Identification",
+     "label": "Thread Gender",
+     "value": "female-swivel",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "gender"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size Range",
+     "value": "-04 to -06",
+     "unit": null,
+     "position": 4,
+     "isFilterable": true,
+     "templateKey": "nominal_size_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "Carbon steel (316 stainless on request)",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "material"
+    },
+    {
+     "group": "Construction",
+     "label": "Surface Treatment",
+     "value": "Zinc-plated, Cr3+ passivated, RoHS-compliant",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "surface_treatment"
+    },
+    {
+     "group": "Compliance",
+     "label": "Applicable Standards",
+     "value": "Metric thread to ISO 261",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": "applicable_standards"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-MF-FEM-WW-0422",
+     "hoseDash": 4,
+     "hoseInch": "1/4\"",
+     "hoseDn": 6,
+     "portLabel": "M22×1.5",
+     "portDash": 22,
+     "dimensions": {
+      "A": 25.0,
+      "B": 14.0,
+      "D": 34.5,
+      "oRing": "10.0×2.0"
+     },
+     "sourcePart": "20011-22-04T",
+     "position": 0
+    },
+    {
+     "partNumber": "IH-MF-FEM-WW-0522",
+     "hoseDash": 5,
+     "hoseInch": "5/16\"",
+     "hoseDn": 8,
+     "portLabel": "M22×1.5",
+     "portDash": 22,
+     "dimensions": {
+      "A": 32.7,
+      "B": 14.0,
+      "D": 34.5,
+      "oRing": "10.0×2.0"
+     },
+     "sourcePart": "20011-22-05T",
+     "position": 1
+    },
+    {
+     "partNumber": "IH-MF-FEM-WW-0622",
+     "hoseDash": 6,
+     "hoseInch": "3/8\"",
+     "hoseDn": 10,
+     "portLabel": "M22×1.5",
+     "portDash": 22,
+     "dimensions": {
+      "A": 28.0,
+      "B": 14.0,
+      "D": 34.5,
+      "oRing": "10.0×2.0"
+     },
+     "sourcePart": "20011-22-06T",
+     "position": 2
+    }
+   ],
+   "sourceFamily": "20011 (p49)"
+  }
+ ]
+}
