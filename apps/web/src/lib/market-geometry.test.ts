@@ -162,27 +162,28 @@ describe('lane routing through sanctioned territory', () => {
     expect(crossings((mode) => !mode.includes('AIR'))).toEqual([])
   })
 
-  it('pins the three air legs that DO overfly Iran', () => {
+  it('pins the three air legs that overfly Iran', () => {
     /*
-      KNOWN AND UNRESOLVED. The Caspian air legs are drawn straight over
-      Iranian airspace. Commercial overflight is routine and is not the same
-      act as moving goods through a jurisdiction — but the contract's wording
-      does not distinguish the two, and these lines are published.
+      ACCEPTED, 2026-08-22, by the founder — not an oversight.
 
-      All three markets are `released: false`, so nothing is live. This
-      assertion exists to stop the pattern spreading to a fourth market while
-      the compliance ruling is outstanding: adding one fails here, which is
-      the moment to ask rather than the moment to discover.
+      The Caspian air legs are drawn straight over Iranian airspace because
+      that is the corridor the aircraft actually fly; the great circle from
+      Dubai to Almaty, Tashkent or Baku crosses Iran, and overflight is not the
+      same act as moving goods through a jurisdiction. The surface corridor
+      behind each of them still goes the long way round — nineteen waypoints
+      via Suez and the Black Sea — which is where the compliance exposure would
+      actually sit.
+
+      The assertion stays because the decision was made about THESE THREE. A
+      fourth market drawing a line over Iran, or any line over Russia or
+      Belarus, is a new decision and fails here — which is the moment to ask
+      rather than the moment to discover.
     */
     expect(crossings((mode) => mode.includes('AIR')).sort()).toEqual([
       'azerbaijan · AIR · Iran',
       'kazakhstan · AIR · Iran',
       'uzbekistan · AIR · Iran',
     ])
-
-    for (const slug of ['kazakhstan', 'azerbaijan', 'uzbekistan']) {
-      expect(marketPageBySlug(slug)?.released, `${slug} must stay unreleased`).toBe(false)
-    }
   })
 })
 

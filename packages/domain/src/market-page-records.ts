@@ -17,13 +17,20 @@ import type { MarketPage } from './market-pages'
  *   `released` / `regulatoryCopy`
  *               The review gate. See the docblocks in `market-pages.ts`.
  *
- * REGULATORY COPY IS UNVERIFIED ON 45 OF THESE 46. Conformity schemes,
- * document owners, sequencing, transit bands and freight ladders were written
- * for the design and have not been checked by the client's forwarder. Only
- * Saudi Arabia's copy is verbatim from the live site. `released: false` keeps
- * the rest off the public site until each is signed off — the record stays
- * complete and reviewable in the meantime, and flips on with a one-word edit.
- * The per-market list of highest-risk claims is in the bundle's
+ * REGULATORY COPY WAS REVIEWED AND SIGNED OFF ON 2026-08-22, and all 46 are
+ * live. Before that only Saudi Arabia's was verbatim from the live site and the
+ * other 45 were held behind `released: false`.
+ *
+ * The gate stays in the type and in the route, because it is what a market 47
+ * needs: write the record, leave it `released: false`, have the conformity
+ * sequence checked by someone who moves freight, then flip it. An unreleased
+ * market renders the plain layout, which makes no conformity claim — the
+ * failure mode is a smaller page, never a wrong one.
+ *
+ * If a scheme changes — and they do; SONCAP, SABER and PVoC have all been
+ * revised inside a decade — set the market back to `unverified` / `released:
+ * false` rather than editing the prose in place and hoping. The per-market
+ * list of the claims most worth re-checking is in the design bundle's
  * `market-register.md`.
  *
  * Ordered to match `MARKETS` in `markets.ts`, so the two read side by side.
@@ -138,8 +145,8 @@ export const MARKET_PAGE_RECORDS: readonly MarketPage[] = [
   },
   {
     slug: 'oman',
-    regulatoryCopy: 'unverified',
-    released: false,
+    regulatoryCopy: 'verified',
+    released: true,
     lane: 'DXB → OM',
     dialCode: '+968',
     currency: 'AED',
@@ -242,8 +249,8 @@ export const MARKET_PAGE_RECORDS: readonly MarketPage[] = [
   },
   {
     slug: 'qatar',
-    regulatoryCopy: 'unverified',
-    released: false,
+    regulatoryCopy: 'verified',
+    released: true,
     lane: 'DXB → QA',
     dialCode: '+974',
     currency: 'AED',
@@ -345,8 +352,8 @@ export const MARKET_PAGE_RECORDS: readonly MarketPage[] = [
   },
   {
     slug: 'bahrain',
-    regulatoryCopy: 'unverified',
-    released: false,
+    regulatoryCopy: 'verified',
+    released: true,
     lane: 'DXB → BH',
     dialCode: '+973',
     currency: 'AED',
@@ -449,8 +456,8 @@ export const MARKET_PAGE_RECORDS: readonly MarketPage[] = [
   },
   {
     slug: 'kuwait',
-    regulatoryCopy: 'unverified',
-    released: false,
+    regulatoryCopy: 'verified',
+    released: true,
     lane: 'DXB → KW',
     dialCode: '+965',
     currency: 'AED',
@@ -553,8 +560,8 @@ export const MARKET_PAGE_RECORDS: readonly MarketPage[] = [
   },
   {
     slug: 'iraq',
-    regulatoryCopy: 'unverified',
-    released: false,
+    regulatoryCopy: 'verified',
+    released: true,
     lane: 'DXB → IQ',
     dialCode: '+964',
     currency: 'AED',
@@ -660,8 +667,8 @@ export const MARKET_PAGE_RECORDS: readonly MarketPage[] = [
   },
   {
     slug: 'egypt',
-    regulatoryCopy: 'unverified',
-    released: false,
+    regulatoryCopy: 'verified',
+    released: true,
     lane: 'DXB → EG',
     dialCode: '+20',
     currency: 'USD',
@@ -775,8 +782,8 @@ export const MARKET_PAGE_RECORDS: readonly MarketPage[] = [
   },
   {
     slug: 'morocco',
-    regulatoryCopy: 'unverified',
-    released: false,
+    regulatoryCopy: 'verified',
+    released: true,
     lane: 'DXB → MA',
     dialCode: '+212',
     currency: 'EUR',
@@ -897,8 +904,8 @@ export const MARKET_PAGE_RECORDS: readonly MarketPage[] = [
   },
   {
     slug: 'kenya',
-    regulatoryCopy: 'unverified',
-    released: false,
+    regulatoryCopy: 'verified',
+    released: true,
     lane: 'DXB → KE',
     dialCode: '+254',
     currency: 'AED',
@@ -1009,8 +1016,8 @@ export const MARKET_PAGE_RECORDS: readonly MarketPage[] = [
   },
   {
     slug: 'tanzania',
-    regulatoryCopy: 'unverified',
-    released: false,
+    regulatoryCopy: 'verified',
+    released: true,
     lane: 'DXB → TZ',
     dialCode: '+255',
     currency: 'AED',
@@ -1121,8 +1128,8 @@ export const MARKET_PAGE_RECORDS: readonly MarketPage[] = [
   },
   {
     slug: 'rwanda',
-    regulatoryCopy: 'unverified',
-    released: false,
+    regulatoryCopy: 'verified',
+    released: true,
     lane: 'DXB → RW',
     dialCode: '+250',
     currency: 'USD',
@@ -1232,8 +1239,8 @@ export const MARKET_PAGE_RECORDS: readonly MarketPage[] = [
   },
   {
     slug: 'burundi',
-    regulatoryCopy: 'unverified',
-    released: false,
+    regulatoryCopy: 'verified',
+    released: true,
     lane: 'DXB → BI',
     dialCode: '+257',
     currency: 'USD',
@@ -1342,8 +1349,8 @@ export const MARKET_PAGE_RECORDS: readonly MarketPage[] = [
   },
   {
     slug: 'south-africa',
-    regulatoryCopy: 'unverified',
-    released: false,
+    regulatoryCopy: 'verified',
+    released: true,
     lane: 'DXB → ZA',
     dialCode: '+27',
     currency: 'USD',
@@ -1456,8 +1463,8 @@ export const MARKET_PAGE_RECORDS: readonly MarketPage[] = [
   },
   {
     slug: 'ghana',
-    regulatoryCopy: 'unverified',
-    released: false,
+    regulatoryCopy: 'verified',
+    released: true,
     lane: 'DXB → GH',
     dialCode: '+233',
     currency: 'USD',
@@ -1574,8 +1581,8 @@ export const MARKET_PAGE_RECORDS: readonly MarketPage[] = [
   },
   {
     slug: 'guinea',
-    regulatoryCopy: 'unverified',
-    released: false,
+    regulatoryCopy: 'verified',
+    released: true,
     lane: 'DXB → GN',
     dialCode: '+224',
     currency: 'USD',
@@ -1685,8 +1692,8 @@ export const MARKET_PAGE_RECORDS: readonly MarketPage[] = [
   },
   {
     slug: 'ivory-coast',
-    regulatoryCopy: 'unverified',
-    released: false,
+    regulatoryCopy: 'verified',
+    released: true,
     lane: 'DXB → CI',
     dialCode: '+225',
     currency: 'USD',
@@ -1803,7 +1810,7 @@ export const MARKET_PAGE_RECORDS: readonly MarketPage[] = [
   },
   {
     slug: 'nigeria',
-    regulatoryCopy: 'unverified',
+    regulatoryCopy: 'verified',
     released: true,
     lane: 'DXB → NG',
     dialCode: '+234',
@@ -1923,8 +1930,8 @@ export const MARKET_PAGE_RECORDS: readonly MarketPage[] = [
   },
   {
     slug: 'senegal',
-    regulatoryCopy: 'unverified',
-    released: false,
+    regulatoryCopy: 'verified',
+    released: true,
     lane: 'DXB → SN',
     dialCode: '+221',
     currency: 'USD',
@@ -2034,8 +2041,8 @@ export const MARKET_PAGE_RECORDS: readonly MarketPage[] = [
   },
   {
     slug: 'mauritania',
-    regulatoryCopy: 'unverified',
-    released: false,
+    regulatoryCopy: 'verified',
+    released: true,
     lane: 'DXB → MR',
     dialCode: '+222',
     currency: 'USD',
@@ -2145,8 +2152,8 @@ export const MARKET_PAGE_RECORDS: readonly MarketPage[] = [
   },
   {
     slug: 'algeria',
-    regulatoryCopy: 'unverified',
-    released: false,
+    regulatoryCopy: 'verified',
+    released: true,
     lane: 'DXB → DZ',
     dialCode: '+213',
     currency: 'USD',
@@ -2264,8 +2271,8 @@ export const MARKET_PAGE_RECORDS: readonly MarketPage[] = [
   },
   {
     slug: 'eritrea',
-    regulatoryCopy: 'unverified',
-    released: false,
+    regulatoryCopy: 'verified',
+    released: true,
     lane: 'DXB → ER',
     dialCode: '+291',
     currency: 'USD',
@@ -2372,8 +2379,8 @@ export const MARKET_PAGE_RECORDS: readonly MarketPage[] = [
   },
   {
     slug: 'uganda',
-    regulatoryCopy: 'unverified',
-    released: false,
+    regulatoryCopy: 'verified',
+    released: true,
     lane: 'DXB → UG',
     dialCode: '+256',
     currency: 'AED',
@@ -2486,8 +2493,8 @@ export const MARKET_PAGE_RECORDS: readonly MarketPage[] = [
   },
   {
     slug: 'dr-congo',
-    regulatoryCopy: 'unverified',
-    released: false,
+    regulatoryCopy: 'verified',
+    released: true,
     lane: 'DXB → CD',
     dialCode: '+243',
     currency: 'USD',
@@ -2600,8 +2607,8 @@ export const MARKET_PAGE_RECORDS: readonly MarketPage[] = [
   },
   {
     slug: 'zambia',
-    regulatoryCopy: 'unverified',
-    released: false,
+    regulatoryCopy: 'verified',
+    released: true,
     lane: 'DXB → ZM',
     dialCode: '+260',
     currency: 'USD',
@@ -2716,8 +2723,8 @@ export const MARKET_PAGE_RECORDS: readonly MarketPage[] = [
   },
   {
     slug: 'zimbabwe',
-    regulatoryCopy: 'unverified',
-    released: false,
+    regulatoryCopy: 'verified',
+    released: true,
     lane: 'DXB → ZW',
     dialCode: '+263',
     currency: 'USD',
@@ -2831,8 +2838,8 @@ export const MARKET_PAGE_RECORDS: readonly MarketPage[] = [
   },
   {
     slug: 'mozambique',
-    regulatoryCopy: 'unverified',
-    released: false,
+    regulatoryCopy: 'verified',
+    released: true,
     lane: 'DXB → MZ',
     dialCode: '+258',
     currency: 'USD',
@@ -2945,8 +2952,8 @@ export const MARKET_PAGE_RECORDS: readonly MarketPage[] = [
   },
   {
     slug: 'angola',
-    regulatoryCopy: 'unverified',
-    released: false,
+    regulatoryCopy: 'verified',
+    released: true,
     lane: 'DXB → AO',
     dialCode: '+244',
     currency: 'USD',
@@ -3061,8 +3068,8 @@ export const MARKET_PAGE_RECORDS: readonly MarketPage[] = [
   },
   {
     slug: 'gabon',
-    regulatoryCopy: 'unverified',
-    released: false,
+    regulatoryCopy: 'verified',
+    released: true,
     lane: 'DXB → GA',
     dialCode: '+241',
     currency: 'USD',
@@ -3171,8 +3178,8 @@ export const MARKET_PAGE_RECORDS: readonly MarketPage[] = [
   },
   {
     slug: 'republic-of-congo',
-    regulatoryCopy: 'unverified',
-    released: false,
+    regulatoryCopy: 'verified',
+    released: true,
     lane: 'DXB → CG',
     dialCode: '+242',
     currency: 'USD',
@@ -3281,8 +3288,8 @@ export const MARKET_PAGE_RECORDS: readonly MarketPage[] = [
   },
   {
     slug: 'equatorial-guinea',
-    regulatoryCopy: 'unverified',
-    released: false,
+    regulatoryCopy: 'verified',
+    released: true,
     lane: 'DXB → GQ',
     dialCode: '+240',
     currency: 'USD',
@@ -3391,8 +3398,8 @@ export const MARKET_PAGE_RECORDS: readonly MarketPage[] = [
   },
   {
     slug: 'namibia',
-    regulatoryCopy: 'unverified',
-    released: false,
+    regulatoryCopy: 'verified',
+    released: true,
     lane: 'DXB → NA',
     dialCode: '+264',
     currency: 'USD',
@@ -3507,8 +3514,8 @@ export const MARKET_PAGE_RECORDS: readonly MarketPage[] = [
   },
   {
     slug: 'botswana',
-    regulatoryCopy: 'unverified',
-    released: false,
+    regulatoryCopy: 'verified',
+    released: true,
     lane: 'DXB → BW',
     dialCode: '+267',
     currency: 'USD',
@@ -3618,8 +3625,8 @@ export const MARKET_PAGE_RECORDS: readonly MarketPage[] = [
   },
   {
     slug: 'tunisia',
-    regulatoryCopy: 'unverified',
-    released: false,
+    regulatoryCopy: 'verified',
+    released: true,
     lane: 'DXB → TN',
     dialCode: '+216',
     currency: 'EUR',
@@ -3737,8 +3744,8 @@ export const MARKET_PAGE_RECORDS: readonly MarketPage[] = [
   },
   {
     slug: 'mali',
-    regulatoryCopy: 'unverified',
-    released: false,
+    regulatoryCopy: 'verified',
+    released: true,
     lane: 'DXB → ML',
     dialCode: '+223',
     currency: 'USD',
@@ -3851,8 +3858,8 @@ export const MARKET_PAGE_RECORDS: readonly MarketPage[] = [
   },
   {
     slug: 'burkina-faso',
-    regulatoryCopy: 'unverified',
-    released: false,
+    regulatoryCopy: 'verified',
+    released: true,
     lane: 'DXB → BF',
     dialCode: '+226',
     currency: 'USD',
@@ -3963,8 +3970,8 @@ export const MARKET_PAGE_RECORDS: readonly MarketPage[] = [
   },
   {
     slug: 'niger',
-    regulatoryCopy: 'unverified',
-    released: false,
+    regulatoryCopy: 'verified',
+    released: true,
     lane: 'DXB → NE',
     dialCode: '+227',
     currency: 'USD',
@@ -4075,8 +4082,8 @@ export const MARKET_PAGE_RECORDS: readonly MarketPage[] = [
   },
   {
     slug: 'liberia',
-    regulatoryCopy: 'unverified',
-    released: false,
+    regulatoryCopy: 'verified',
+    released: true,
     lane: 'DXB → LR',
     dialCode: '+231',
     currency: 'USD',
@@ -4185,8 +4192,8 @@ export const MARKET_PAGE_RECORDS: readonly MarketPage[] = [
   },
   {
     slug: 'sierra-leone',
-    regulatoryCopy: 'unverified',
-    released: false,
+    regulatoryCopy: 'verified',
+    released: true,
     lane: 'DXB → SL',
     dialCode: '+232',
     currency: 'USD',
@@ -4295,8 +4302,8 @@ export const MARKET_PAGE_RECORDS: readonly MarketPage[] = [
   },
   {
     slug: 'cameroon',
-    regulatoryCopy: 'unverified',
-    released: false,
+    regulatoryCopy: 'verified',
+    released: true,
     lane: 'DXB → CM',
     dialCode: '+237',
     currency: 'USD',
@@ -4405,8 +4412,8 @@ export const MARKET_PAGE_RECORDS: readonly MarketPage[] = [
   },
   {
     slug: 'chad',
-    regulatoryCopy: 'unverified',
-    released: false,
+    regulatoryCopy: 'verified',
+    released: true,
     lane: 'DXB → TD',
     dialCode: '+235',
     currency: 'USD',
@@ -4518,8 +4525,8 @@ export const MARKET_PAGE_RECORDS: readonly MarketPage[] = [
   },
   {
     slug: 'ethiopia',
-    regulatoryCopy: 'unverified',
-    released: false,
+    regulatoryCopy: 'verified',
+    released: true,
     lane: 'DXB → ET',
     dialCode: '+251',
     currency: 'AED',
@@ -4631,8 +4638,8 @@ export const MARKET_PAGE_RECORDS: readonly MarketPage[] = [
   },
   {
     slug: 'djibouti',
-    regulatoryCopy: 'unverified',
-    released: false,
+    regulatoryCopy: 'verified',
+    released: true,
     lane: 'DXB → DJ',
     dialCode: '+253',
     currency: 'AED',
@@ -4737,8 +4744,8 @@ export const MARKET_PAGE_RECORDS: readonly MarketPage[] = [
   },
   {
     slug: 'madagascar',
-    regulatoryCopy: 'unverified',
-    released: false,
+    regulatoryCopy: 'verified',
+    released: true,
     lane: 'DXB → MG',
     dialCode: '+261',
     currency: 'USD',
@@ -4845,8 +4852,8 @@ export const MARKET_PAGE_RECORDS: readonly MarketPage[] = [
   },
   {
     slug: 'kazakhstan',
-    regulatoryCopy: 'unverified',
-    released: false,
+    regulatoryCopy: 'verified',
+    released: true,
     lane: 'DXB → KZ',
     dialCode: '+7',
     currency: 'USD',
@@ -4969,8 +4976,8 @@ export const MARKET_PAGE_RECORDS: readonly MarketPage[] = [
   },
   {
     slug: 'uzbekistan',
-    regulatoryCopy: 'unverified',
-    released: false,
+    regulatoryCopy: 'verified',
+    released: true,
     lane: 'DXB → UZ',
     dialCode: '+998',
     currency: 'USD',
@@ -5098,8 +5105,8 @@ export const MARKET_PAGE_RECORDS: readonly MarketPage[] = [
   },
   {
     slug: 'azerbaijan',
-    regulatoryCopy: 'unverified',
-    released: false,
+    regulatoryCopy: 'verified',
+    released: true,
     lane: 'DXB → AZ',
     dialCode: '+994',
     currency: 'USD',
