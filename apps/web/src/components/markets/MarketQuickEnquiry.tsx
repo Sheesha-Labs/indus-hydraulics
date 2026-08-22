@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState, useTransition } from 'react'
 import { Button, Field, Input, Textarea } from '@indus/ui'
 import { submitMarketEnquiry } from '../../app/(storefront)/markets/actions'
+import { MarketEnquiryError } from './MarketEnquiryError'
 import { MarketEnquiryResult } from './MarketEnquiryResult'
 
 /**
@@ -107,24 +108,7 @@ export default function MarketQuickEnquiry({
             />
           </Field>
 
-          {error && (
-            <p
-              role="alert"
-              className="mt-4 rounded-md border border-ih-danger bg-ih-danger-soft px-3.5 py-2.5 text-[13px] leading-[1.55] text-ih-danger-ink"
-            >
-              {error}
-              {contactEmail && (
-                <>
-                  {' '}
-                  Or email{' '}
-                  <a className="underline underline-offset-2" href={`mailto:${contactEmail}`}>
-                    {contactEmail}
-                  </a>
-                  .
-                </>
-              )}
-            </p>
-          )}
+          {error && <MarketEnquiryError error={error} contactEmail={contactEmail} className="mt-4" />}
 
           <Button type="submit" kind="primary" size="lg" disabled={isPending} className="mt-4 w-full">
             {isPending ? 'Sending…' : 'Send the enquiry'}

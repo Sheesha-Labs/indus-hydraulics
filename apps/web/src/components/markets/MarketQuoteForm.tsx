@@ -4,6 +4,7 @@ import { useEffect, useRef, useState, useTransition } from 'react'
 import { Button, Checkbox, Field, Input, Select, Textarea } from '@indus/ui'
 import RfqAttachments from '../RfqAttachments'
 import { submitMarketEnquiry } from '../../app/(storefront)/markets/actions'
+import { MarketEnquiryError } from './MarketEnquiryError'
 import { MarketEnquiryResult } from './MarketEnquiryResult'
 
 /**
@@ -188,22 +189,12 @@ export default function MarketQuoteForm({
               </div>
 
               {error && (
-                <p
-                  role="alert"
-                  className="mt-5 rounded-md border border-ih-danger bg-ih-danger-soft px-3.5 py-2.5 text-[13px] leading-[1.55] text-ih-danger-ink"
-                >
-                  {error}
-                  {contactEmail && (
-                    <>
-                      {' '}
-                      You can also send it straight to{' '}
-                      <a className="underline underline-offset-2" href={`mailto:${contactEmail}`}>
-                        {contactEmail}
-                      </a>
-                      .
-                    </>
-                  )}
-                </p>
+                <MarketEnquiryError
+                  error={error}
+                  contactEmail={contactEmail}
+                  lead="You can also send it straight to"
+                  className="mt-5"
+                />
               )}
 
               <div className="mt-6 flex flex-wrap items-center gap-3.5">
