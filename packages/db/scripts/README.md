@@ -1,3 +1,16 @@
+# Data migrations
+
+One-off scripts that change live catalogue data rather than code. Each writes a
+backup to `backups/` before it applies anything, and each can be replayed in
+reverse from that file.
+
+| Script | Ran | What it did |
+|---|---|---|
+| `consolidate-megamenu.mjs` | 2026-06-13 | Megamenu 18 → 6 top-level sections |
+| `../src/scripts/regroup-hose-fittings.ts` | 2026-08-22 | Gave fittings, adapters and SS316L their own hub pages; "Hoses & Fittings" 35 → 9 direct children |
+
+---
+
 # `consolidate-megamenu.mjs`
 
 One-off data migration that collapsed the `primary_megamenu` ("Products")
