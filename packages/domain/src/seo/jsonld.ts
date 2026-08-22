@@ -37,6 +37,12 @@ export function mergeJsonLd<T extends JsonLd>(base: T, override?: unknown): T {
 
 export type ProductLdInput = {
   name: string
+  /**
+   * Other names the product is genuinely known by — trade designations in
+   * the languages buyers use, not translations of `name`. schema.org allows
+   * an array here. Omitted entirely when empty rather than emitted as `[]`.
+   */
+  alternateName?: string[] | null
   description?: string | null
   sku: string
   mpn?: string | null
@@ -226,6 +232,9 @@ export function buildProductLd(input: ProductLdInput): JsonLd {
     name: input.name,
     sku: input.sku,
     url: input.url,
+  }
+  if (input.alternateName && input.alternateName.length > 0) {
+    base.alternateName = input.alternateName
   }
   if (input.description) base.description = input.description
   if (input.mpn) base.mpn = input.mpn
