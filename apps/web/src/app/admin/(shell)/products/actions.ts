@@ -13,6 +13,28 @@ import { STORAGE_BUCKETS, deleteFromStorage, uploadToStorage } from '../../../..
 import { withSeoAudit } from '../../../../lib/seo-audit'
 import { recomputeContentScore } from '../../../../lib/recompute-content-score'
 
+/**
+ * Drop the storefront's cached copy of a product page.
+ *
+ * The PDP is prerendered and ISR-cached (see the storefront route's
+ * `revalidate`), so without this an admin edit would not reach visitors until
+ * the hour was up. Before that route became cacheable this file revalidated
+ * only its own admin paths, which was correct then and silently wrong the
+ * moment the storefront started serving cached HTML.
+ *
+ * Takes the id rather than the slug because most callers here only hold the
+ * id, and looks the slug up so a rename revalidates the address that is
+ * actually cached. A rename leaves the OLD slug cached until it expires; that
+ * URL 308s to the new one through the redirects table, so it self-heals.
+ */
+async function revalidateStorefrontProduct(productId: string): Promise<void> {
+  const row = await db.product.findUnique({
+    where: { id: productId },
+    select: { slug: true },
+  })
+  if (row?.slug) revalidatePath(`/p/${row.slug}`)
+}
+
 // ── Helpers ──────────────────────────────────────────────────────────────────
 
 function slugify(input: string): string {
@@ -165,6 +187,7 @@ export async function updateProductCore(formData: FormData): Promise<Result<void
     await recomputeContentScore(parsed.id)
 
     revalidatePath(`/admin/products/${parsed.id}/edit`)
+    await revalidateStorefrontProduct(parsed.id)
     invalidateProducts()
     revalidatePath(`/admin/products`)
     return ok(undefined)
@@ -193,6 +216,7 @@ export async function updateProductDescription(formData: FormData): Promise<Resu
     })
     await recomputeContentScore(parsed.id)
     revalidatePath(`/admin/products/${parsed.id}/edit`)
+    await revalidateStorefrontProduct(parsed.id)
     invalidateProducts()
     return ok(undefined)
   } catch (err) {
@@ -296,6 +320,7 @@ export async function updateProductCommerce(formData: FormData): Promise<Result<
     await recomputeContentScore(parsed.id)
 
     revalidatePath(`/admin/products/${parsed.id}/edit`)
+    await revalidateStorefrontProduct(parsed.id)
     invalidateProducts()
     revalidatePath(`/admin/products`)
     return ok(undefined)
@@ -471,6 +496,7 @@ export async function updateProductSeo(formData: FormData): Promise<Result<void>
     await recomputeContentScore(parsed.id)
 
     revalidatePath(`/admin/products/${parsed.id}/edit`)
+    await revalidateStorefrontProduct(parsed.id)
     invalidateProducts()
     revalidatePath('/admin/seo/inspector')
     return ok(undefined)
@@ -582,6 +608,7 @@ export async function addProductSpec(formData: FormData): Promise<Result<void>> 
     })
 
     revalidatePath(`/admin/products/${productId}/edit`)
+    await revalidateStorefrontProduct(productId)
     invalidateProducts()
     return ok(undefined)
   } catch (err) {
@@ -604,6 +631,7 @@ export async function updateProductSpec(formData: FormData): Promise<Result<void
 
     await db.productSpec.update({ where: { id }, data: body })
     revalidatePath(`/admin/products/${productId}/edit`)
+    await revalidateStorefrontProduct(productId)
     invalidateProducts()
     return ok(undefined)
   } catch (err) {
@@ -618,6 +646,7 @@ export async function deleteProductSpec(specId: string, productId: string): Prom
     z.string().uuid().parse(productId)
     await db.productSpec.delete({ where: { id: specId } })
     revalidatePath(`/admin/products/${productId}/edit`)
+    await revalidateStorefrontProduct(productId)
     invalidateProducts()
     return ok(undefined)
   } catch (err) {
@@ -645,6 +674,7 @@ export async function addProductCrossReference(formData: FormData): Promise<Resu
 
     await db.productCrossReference.create({ data: { productId, ...body } })
     revalidatePath(`/admin/products/${productId}/edit`)
+    await revalidateStorefrontProduct(productId)
     invalidateProducts()
     return ok(undefined)
   } catch (err) {
@@ -665,6 +695,7 @@ export async function updateProductCrossReference(formData: FormData): Promise<R
 
     await db.productCrossReference.update({ where: { id }, data: body })
     revalidatePath(`/admin/products/${productId}/edit`)
+    await revalidateStorefrontProduct(productId)
     invalidateProducts()
     return ok(undefined)
   } catch (err) {
@@ -679,6 +710,7 @@ export async function deleteProductCrossReference(crId: string, productId: strin
     z.string().uuid().parse(productId)
     await db.productCrossReference.delete({ where: { id: crId } })
     revalidatePath(`/admin/products/${productId}/edit`)
+    await revalidateStorefrontProduct(productId)
     invalidateProducts()
     return ok(undefined)
   } catch (err) {
@@ -745,6 +777,7 @@ export async function uploadProductImage(formData: FormData): Promise<Result<voi
     })
 
     revalidatePath(`/admin/products/${productId}/edit`)
+    await revalidateStorefrontProduct(productId)
     invalidateProducts()
     return ok(undefined)
   } catch (err) {
@@ -817,6 +850,7 @@ export async function addProductImage(formData: FormData): Promise<Result<void>>
     })
 
     revalidatePath(`/admin/products/${parsed.productId}/edit`)
+    await revalidateStorefrontProduct(parsed.productId)
     invalidateProducts()
     return ok(undefined)
   } catch (err) {
@@ -841,6 +875,7 @@ export async function deleteProductImage(imageId: string, productId: string): Pr
     // Best-effort storage cleanup — don't fail the whole action if it fails.
     await deleteFromStorage(img.media.storagePath)
     revalidatePath(`/admin/products/${productId}/edit`)
+    await revalidateStorefrontProduct(productId)
     invalidateProducts()
     return ok(undefined)
   } catch (err) {
@@ -873,6 +908,7 @@ export async function reorderProductImage(
       db.productImage.update({ where: { id: b.id }, data: { position: a.position } }),
     ])
     revalidatePath(`/admin/products/${productId}/edit`)
+    await revalidateStorefrontProduct(productId)
     invalidateProducts()
     return ok(undefined)
   } catch (err) {
@@ -1011,6 +1047,7 @@ export async function uploadProductDocument(formData: FormData): Promise<Result<
     await bestEffortDeleteFromStorage(staleStoragePaths)
 
     revalidatePath(`/admin/products/${productId}/edit`)
+    await revalidateStorefrontProduct(productId)
     invalidateProducts()
     return ok(undefined)
   } catch (err) {
@@ -1111,6 +1148,7 @@ export async function addProductDocument(formData: FormData): Promise<Result<voi
     )
 
     revalidatePath(`/admin/products/${productId}/edit`)
+    await revalidateStorefrontProduct(productId)
     invalidateProducts()
     return ok(undefined)
   } catch (err) {
@@ -1134,6 +1172,7 @@ export async function deleteProductDocument(docId: string, productId: string): P
     ])
     await deleteFromStorage(doc.media.storagePath)
     revalidatePath(`/admin/products/${productId}/edit`)
+    await revalidateStorefrontProduct(productId)
     invalidateProducts()
     return ok(undefined)
   } catch (err) {
@@ -1171,6 +1210,7 @@ export async function addProductFaq(formData: FormData): Promise<Result<void>> {
     })
 
     revalidatePath(`/admin/products/${productId}/edit`)
+    await revalidateStorefrontProduct(productId)
     invalidateProducts()
     return ok(undefined)
   } catch (err) {
@@ -1190,6 +1230,7 @@ export async function updateProductFaq(formData: FormData): Promise<Result<void>
 
     await db.productFaq.update({ where: { id }, data: body })
     revalidatePath(`/admin/products/${productId}/edit`)
+    await revalidateStorefrontProduct(productId)
     invalidateProducts()
     return ok(undefined)
   } catch (err) {
@@ -1204,6 +1245,7 @@ export async function deleteProductFaq(id: string, productId: string): Promise<R
     z.string().uuid().parse(productId)
     await db.productFaq.delete({ where: { id } })
     revalidatePath(`/admin/products/${productId}/edit`)
+    await revalidateStorefrontProduct(productId)
     invalidateProducts()
     return ok(undefined)
   } catch (err) {
@@ -1236,6 +1278,7 @@ export async function reorderProductFaq(
       db.productFaq.update({ where: { id: b.id }, data: { position: a.position } }),
     ])
     revalidatePath(`/admin/products/${productId}/edit`)
+    await revalidateStorefrontProduct(productId)
     invalidateProducts()
     return ok(undefined)
   } catch (err) {

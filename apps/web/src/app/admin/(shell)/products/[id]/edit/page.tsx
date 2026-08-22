@@ -86,7 +86,12 @@ export default async function EditProductPage({ params }: Props) {
   let previewUrl: string | null = null
   try {
     const token = signPreviewToken(product.sku)
-    previewUrl = `${storefrontUrl}/p/${encodeURIComponent(product.slug)}?preview=${encodeURIComponent(token)}`
+    // Goes through /api/preview, which verifies the token, checks for a staff
+    // session and turns on draft mode before redirecting to the PDP. The old
+    // form put the token on the PDP URL itself, which forced that page to
+    // render dynamically for every visitor on the site.
+    const q = new URLSearchParams({ token, sku: product.sku, slug: product.slug })
+    previewUrl = `${storefrontUrl}/api/preview?${q.toString()}`
   } catch {
     previewUrl = null
   }

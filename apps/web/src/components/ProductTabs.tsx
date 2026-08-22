@@ -50,7 +50,6 @@ type Props = {
   /** Competitor named by the cross-references, for the not-affiliated line. */
   variantEquivalenceBrand?: string | null
   faqs: Faq[]
-  isSignedIn: boolean
   leadTimeDays?: number | null
   warrantyMonths?: number | null
   countryOfOrigin?: string | null
@@ -68,7 +67,6 @@ export default function ProductTabs({
   variantEquivalenceNote,
   variantEquivalenceBrand,
   faqs,
-  isSignedIn,
   leadTimeDays,
   warrantyMonths,
   countryOfOrigin,
@@ -224,20 +222,20 @@ export default function ProductTabs({
                     <div className="text-[14px] font-medium truncate">{doc.title}</div>
                     <div className="font-mono text-[11px] text-ih-muted mt-0.5">{doc.kind} · {doc.language.toUpperCase()}</div>
                   </div>
-                  {doc.isGated && !isSignedIn ? (
-                    <Link href={`/sign-in`} className="shrink-0 h-8 px-4 flex items-center border border-ih-border font-mono text-[11px] text-ih-ink-2 hover:bg-ih-surface-2 transition-colors">
-                      Sign in to download →
-                    </Link>
-                  ) : doc.mediaUrl ? (
-                    <a
-                      href={doc.mediaUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="shrink-0 h-8 px-4 flex items-center border border-ih-border font-mono text-[11px] text-ih-ink-2 hover:bg-ih-surface-2 transition-colors"
-                    >
-                      ↓ Download
-                    </a>
-                  ) : null}
+                  {/*
+                    Always a link. /api/documents/<id> checks the session at
+                    request time and sends anonymous visitors to sign-in, so
+                    this component no longer needs to know who is looking —
+                    which is what keeps the PDP statically renderable.
+                  */}
+                  <a
+                    href={doc.mediaUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="shrink-0 h-8 px-4 flex items-center border border-ih-border font-mono text-[11px] text-ih-ink-2 hover:bg-ih-surface-2 transition-colors"
+                  >
+                    {doc.isGated ? '🔒 Sign in to download' : '↓ Download'}
+                  </a>
                 </div>
               ))}
             </div>

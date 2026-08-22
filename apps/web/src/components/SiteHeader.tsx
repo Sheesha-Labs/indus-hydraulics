@@ -1,30 +1,30 @@
-import { customerSessionOrNull } from '../lib/customer-session'
-import { db } from '@indus/db'
 import { getNavMenu, getNavBrands, getNavIndustries } from '../lib/navigation'
 import { getStoreSettings } from '../lib/store-settings'
 import SiteHeaderClient from './SiteHeaderClient'
-import NotificationBell from './NotificationBell'
 
+/**
+ * The site header, and nothing per-visitor in it.
+ *
+ * This used to `await customerSessionOrNull()` to decide between "Sign in" and
+ * "My account", and to load the notification list. Because the header is
+ * mounted in the storefront layout, that one cookie read made EVERY page under
+ * (storefront) render dynamically — /privacy and /terms included, pages with
+ * no per-visitor content at all. The whole catalogue was uncacheable to pay
+ * for one button.
+ *
+ * Everything here is now either static or cross-request cached, so the header
+ * prerenders. The signed-in half moved to SiteHeaderClient, which asks
+ * /api/me after hydration. Do not reintroduce a session or cookie read in this
+ * component or anything it renders on the server.
+ */
 export default async function SiteHeader() {
-  const session = await customerSessionOrNull()
-
-  const [headerMenu, megamenu, brands, industries, settings, notifications] = await Promise.all([
+  const [headerMenu, megamenu, brands, industries, settings] = await Promise.all([
     getNavMenu('primary_header'),
     getNavMenu('primary_megamenu'),
     getNavBrands(),
     getNavIndustries(),
     getStoreSettings(),
-    session?.user?.id
-      ? db.notification.findMany({
-          where: { contactId: session.user.id },
-          orderBy: { createdAt: 'desc' },
-          take: 20,
-          select: { id: true, kind: true, payload: true, readAt: true, createdAt: true },
-        })
-      : Promise.resolve([]),
   ])
-
-  const unreadCount = notifications.filter((n) => !n.readAt).length
 
   return (
     <SiteHeaderClient
@@ -37,19 +37,6 @@ export default async function SiteHeader() {
       brandName={settings.name}
       logoUrl={settings.logoUrl}
       logoStyle={settings.logoStyle}
-      isSignedIn={!!session}
-      userName={session?.user?.name ?? null}
-      notificationBell={
-        session ? (
-          <NotificationBell
-            unreadCount={unreadCount}
-            notifications={notifications.map((n) => ({
-              ...n,
-              payload: n.payload as Record<string, unknown>,
-            }))}
-          />
-        ) : null
-      }
     />
   )
 }

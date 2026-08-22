@@ -1,11 +1,11 @@
 import { mediaUrl } from '../../../../lib/media'
-import { signedUrlFor } from '../../../../lib/supabase'
 import { ORG_ID, SITE_NAME, pageMetadata, urlFor } from '../../../../lib/seo'
 import { getStoreSettings } from '../../../../lib/store-settings'
 import type { Metadata } from 'next'
 import type React from 'react'
 import { cache } from 'react'
 import { notFound, permanentRedirect } from 'next/navigation'
+import { draftMode } from 'next/headers'
 import Link from 'next/link'
 import Image from 'next/image'
 import { db } from '@indus/db'
@@ -13,10 +13,8 @@ import {
   buildBreadcrumbLd,
   buildFaqLd,
   buildProductLd,
-  verifyPreviewToken,
 } from '@indus/domain'
 import { Badge, Breadcrumb, Button, JsonLd } from '@indus/ui'
-import { customerSessionOrNull } from '../../../../lib/customer-session'
 import ProductGallery from '../../../../components/ProductGallery'
 import AddToQuoteButton from '../../../../components/AddToQuoteButton'
 import AddToCompareButton from '../../../../components/AddToCompareButton'
@@ -28,7 +26,6 @@ import AnalyticsEvent from '../../../../components/AnalyticsEvent'
 
 type Props = {
   params: Promise<{ slug: string }>
-  searchParams: Promise<{ preview?: string }>
 }
 
 /**
@@ -78,39 +75,61 @@ const getProduct = cache(async (decoded: string) => {
 })
 
 /**
- * Refresh interval for the PDP. One hour is a good balance for a catalogue
- * that changes daily but not minutely. Admin mutations can punch through
- * faster by calling `revalidatePath('/p/<slug>')` after a product edit.
+ * Refresh interval for the PDP. One hour for a catalogue that changes daily
+ * but not minutely; admin mutations punch through with
+ * `revalidatePath('/p/<slug>')` after an edit.
  *
- * NOTE: this is currently inert. The component below awaits `searchParams`
- * (the `?preview=` token) and `customerSessionOrNull()` (the login cookie),
- * both of which are per-request, so Next marks `/p/[slug]` `ƒ` (dynamic) and
- * serves it `no-store` — verified against production. The export stays because
- * it becomes live the moment those two reads move to a client/route boundary,
- * which is the real fix for PDP caching.
+ * This is live again. It was inert for as long as the page rendered
+ * dynamically — three per-request reads did that, and all three are gone:
+ *
+ *   `searchParams` (`?preview=`)     -> draft mode, via /api/preview
+ *   `customerSessionOrNull()`        -> /api/documents/<id> decides access
+ *   the header's own session read    -> /api/me, after hydration
+ *
+ * Nothing in this file may read cookies, headers or searchParams without
+ * putting the route back to `ƒ` and undoing all of it. `draftMode()` is the
+ * one exception: Next prerenders with it false and serves the cached page,
+ * and only requests carrying its bypass cookie render fresh.
  */
 export const revalidate = 3600
 
-/*
- * There is deliberately no `generateStaticParams` here.
- *
- * It used to pre-render the 200 highest-scoring PDPs. Because the page is
- * dynamic (see above), Next rendered all 200 at build time, hit the first
- * per-request read, bailed out, and threw the result away — the deployed
- * route was `ƒ` either way. The only thing the list bought was build time:
- * 200 full page renders, each firing several Prisma queries at Supabase from
- * the build region, against a build pool deliberately capped at a low
- * `connection_limit` (see packages/db/src/datasource-url.ts). Those queries
- * queued, and the Vercel build log showed them failing outright with
- * `FATAL: (ECHECKOUTRETRIES) failed to check out a connection after multiple
- * retries` before retrying.
- *
- * Across this route and /c/[slug] the pre-render phase was 7m18s of a 9m
- * deploy for six actually-static pages.
- *
- * Put a list back ONLY together with the fix that makes this page cacheable.
- * Reinstating it while the page is dynamic just buys the build time back.
+/**
+ * Serve slugs that are not in the list below on demand rather than 404ing
+ * them, so a product added after the last deploy is reachable immediately.
  */
+export const dynamicParams = true
+
+/**
+ * A deliberately tiny prerender list — and the size is not the point.
+ *
+ * What matters is that this function EXISTS. A dynamic route with no
+ * `generateStaticParams` is served fully dynamically, `no-store`, however
+ * statically renderable its code is — measured, not assumed. Give it a list
+ * and the route switches to the incremental cache: the listed slugs are built
+ * ahead of time, and with `dynamicParams` every OTHER product renders on first
+ * request and is cached from then on (`x-nextjs-cache: MISS` then `HIT`).
+ *
+ * So the list unlocks caching for all ~1.8k products; its length only decides
+ * how many are already warm when a deploy lands. Length is expensive —
+ * 200 products plus the market pages took the Vercel build from 2m to 9m,
+ * each entry being a full render against Supabase from the build region on a
+ * pool capped for the build (packages/db/src/datasource-url.ts).
+ *
+ * Hence: a handful, highest content score first. Deploy speed was the
+ * explicit call here; raising this number is the one lever that trades it
+ * back for fewer cold first-hits.
+ */
+const STATIC_PDP_LIMIT = 5
+
+export async function generateStaticParams(): Promise<{ slug: string }[]> {
+  const rows = await db.product.findMany({
+    where: { status: 'active' },
+    select: { slug: true },
+    orderBy: [{ contentScore: 'desc' }, { updatedAt: 'desc' }],
+    take: STATIC_PDP_LIMIT,
+  })
+  return rows.map((r) => ({ slug: r.slug }))
+}
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params
@@ -156,11 +175,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   })
 }
 
-export default async function ProductPage({ params, searchParams }: Props) {
+export default async function ProductPage({ params }: Props) {
   const { slug } = await params
-  const sp = (await searchParams) ?? {}
-  const session = await customerSessionOrNull()
-  const isSignedIn = !!session
+  // Draft mode rather than a `?preview=` search param. Reading searchParams
+  // here would make this route dynamic for every visitor; `draftMode()` does
+  // not, and is false for everyone who did not come through /api/preview.
+  const { isEnabled: isPreview } = await draftMode()
 
   const decoded = decodeURIComponent(slug)
 
@@ -173,21 +193,9 @@ export default async function ProductPage({ params, searchParams }: Props) {
 
   if (!product) notFound()
 
-  // Preview tokens are signed against the product SKU (the stable
-  // identifier admins generate them from). Verify against product.sku
-  // regardless of which key resolved the URL.
-  let isPreview = false
-  if (sp.preview) {
-    try {
-      isPreview = verifyPreviewToken(sp.preview, product.sku).valid
-    } catch {
-      isPreview = false
-    }
-  }
-
   // Hit via SKU rather than slug → 308 permanent redirect to the
   // canonical slug URL so search engines collapse to a single address.
-  // Skip the redirect in preview mode so the signed token isn't stripped.
+  // Skipped in preview mode, as before.
   if (decoded !== product.slug && !isPreview) {
     permanentRedirect(`/p/${product.slug}`)
   }
@@ -236,12 +244,12 @@ export default async function ProductPage({ params, searchParams }: Props) {
   // The return leg of the internal-link loop: articles that embed this SKU.
   const relatedArticles = await getArticlesForProduct(product.id)
 
-  const firstDatasheet = product.documents.find((d) => !d.isGated || isSignedIn)
-  let datasheetUrl: string | undefined
-  if (firstDatasheet) {
-    const path = firstDatasheet.media.storagePath
-    datasheetUrl = path.startsWith('product-documents/') ? await signedUrlFor(path) : mediaUrl(path)
-  }
+  // Every document is linkable by everyone; /api/documents/<id> decides at
+  // request time whether this visitor gets a URL or a trip to sign-in. The
+  // page therefore holds no session-dependent and no expiring value, which is
+  // what lets it prerender.
+  const firstDatasheet = product.documents[0]
+  const datasheetUrl = firstDatasheet ? `/api/documents/${firstDatasheet.id}` : undefined
 
   const tabSpecGroups = Object.fromEntries(
     Object.entries(specGroups).map(([g, specs]) =>
@@ -249,27 +257,17 @@ export default async function ProductPage({ params, searchParams }: Props) {
     )
   )
 
-  // Resolve each doc to a download URL. Public bucket → mediaUrl gives the
-  // direct public URL. Private bucket → mint a short-lived signed URL when
-  // the user is signed in (or the doc isn't gated).
-  const tabDocuments = await Promise.all(
-    product.documents.map(async (d) => {
-      const isPrivateBucket = d.media.storagePath.startsWith('product-documents/')
-      const canAccess = !d.isGated || isSignedIn
-      let url = ''
-      if (canAccess) {
-        url = isPrivateBucket ? await signedUrlFor(d.media.storagePath) : mediaUrl(d.media.storagePath)
-      }
-      return {
-        id: d.id,
-        title: d.title,
-        kind: d.kind,
-        language: d.language,
-        isGated: d.isGated,
-        mediaUrl: url,
-      }
-    }),
-  )
+  // Same for the documents tab: point at the route, not at a signed URL.
+  // `isGated` still travels so the UI can mark which downloads will ask for
+  // a sign-in first.
+  const tabDocuments = product.documents.map((d) => ({
+    id: d.id,
+    title: d.title,
+    kind: d.kind,
+    language: d.language,
+    isGated: d.isGated,
+    mediaUrl: `/api/documents/${d.id}`,
+  }))
 
   const tabCrossRefs = product.crossReferences.map((r) => ({
     id: r.id,
@@ -567,20 +565,14 @@ export default async function ProductPage({ params, searchParams }: Props) {
                     {product.documents[0].kind} · {product.documents[0].language.toUpperCase()}
                   </div>
                 </div>
-                {product.documents[0].isGated && !isSignedIn ? (
-                  <Link href={`/sign-in`} className="shrink-0 font-mono text-[11px] text-ih-accent hover:underline">
-                    Sign in →
-                  </Link>
-                ) : (
-                  <a
-                    href={mediaUrl(product.documents[0].media.storagePath)}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex h-8 shrink-0 items-center rounded-sm border border-ih-border-strong px-3 font-mono text-[11px] text-ih-ink transition-colors hover:border-ih-accent hover:text-ih-accent"
-                  >
-                    ↓ Download
-                  </a>
-                )}
+                <a
+                  href={`/api/documents/${product.documents[0].id}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex h-8 shrink-0 items-center rounded-sm border border-ih-border-strong px-3 font-mono text-[11px] text-ih-ink transition-colors hover:border-ih-accent hover:text-ih-accent"
+                >
+                  {product.documents[0].isGated ? '🔒 Download' : '↓ Download'}
+                </a>
               </div>
             )}
 
@@ -628,7 +620,6 @@ export default async function ProductPage({ params, searchParams }: Props) {
             question: f.question,
             answer: f.answer,
           }))}
-          isSignedIn={isSignedIn}
           leadTimeDays={product.leadTimeDays}
           warrantyMonths={product.warrantyMonths}
           countryOfOrigin={product.countryOfOrigin}
