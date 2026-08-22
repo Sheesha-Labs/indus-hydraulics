@@ -1,0 +1,4600 @@
+{
+ "source": "Master supplier hydraulic hose fitting catalogue",
+ "products": [
+  {
+   "sku": "IH-MF-MAL-FLAT",
+   "title": "Metric Male Flat Seat Hose Fitting",
+   "slug": "metric-male-flat-seat-hose-fitting",
+   "categorySlug": "metric-hose-fittings",
+   "specTemplateSlug": "threaded-fitting-spec",
+   "focusKeyword": "metric male flat seat hose fitting",
+   "imageFromSku": "IH-MF-MAL-60-SEAT",
+   "descriptionShort": "Metric Male Flat Seat — flat face with an O-ring, seating against a flat mating face, in 13 sizes from -04.",
+   "descriptionLong": "<p>The <strong>Metric Male Flat Seat Hose Fitting</strong> is a hydraulic hose fitting with flat face with an O-ring, seating against a flat mating face.</p>\n<p>The O-ring does the sealing, not the thread — a flat-seat joint tightens against a face, so it does not need the cone angle a 60° or 74° port depends on.</p>\n<h3>Construction</h3>\n<ul>\n<li>Configuration: straight</li>\n<li>Thread: M14×1.5 to M64×2</li>\n<li>Sealing form: Flat face with an O-ring, seating against a flat mating face</li>\n<li>Gender: male</li>\n<li>Material: carbon steel, zinc-plated and Cr3+ passivated (316 stainless on request)</li>\n</ul>\n<h3>Sizes</h3>\n<p>13 sizes, hose bore -04 to -32, threads M14×1.5 to M64×2. The full size and dimension table is on this page.</p>\n<h3>How to order</h3>\n<p>Quote the Indus part number for the size you need. Tell us the hose grade and bore and we will include the matching crimp ferrule — the ferrule follows the hose, not the fitting. Indus crimps and pressure-tests assemblies before dispatch.</p>",
+   "seoTitle": "Metric Male Flat Seat Hose Fitting | M14×1.5–M64×2",
+   "seoDescription": "Metric Male Flat Seat Hose Fitting — 13 sizes (-04 to -32), M14×1.5 to M64×2. Carbon steel or 316 stainless, ex-Dubai.",
+   "faqs": [
+    {
+     "question": "What is the sealing form?",
+     "answer": "Flat face with an O-ring, seating against a flat mating face. Pair it with the matching counterpart — a mismatched sealing form will seat but will not hold pressure."
+    },
+    {
+     "question": "What sizes are available?",
+     "answer": "13 sizes, hose bore -04 to -32, threads M14×1.5 to M64×2. Every combination in the table on this page is an orderable part number."
+    },
+    {
+     "question": "What is the maximum working pressure?",
+     "answer": "The hose grade and bore set the assembly rating, not the fitting. A correctly crimped fitting does not derate the hose. Tell us the grade and bore on the RFQ and we will confirm the figure in writing."
+    },
+    {
+     "question": "Which ferrule pairs with this fitting?",
+     "answer": "The one that matches your hose grade — the skive/no-skive choice follows the hose construction, not the fitting end. Send the hose grade with your enquiry and we will specify the ferrule and the crimp diameter."
+    },
+    {
+     "question": "Is stainless steel available?",
+     "answer": "Yes — 316 stainless on request across the range. Standard supply is carbon steel, zinc-plated and Cr3+ passivated. Add \"-SS\" to the part number when you enquire."
+    },
+    {
+     "question": "Can Indus crimp the assembly?",
+     "answer": "Yes. We crimp, pressure-test and certify assemblies in Dubai and ship UAE-wide. Send the hose grade, bore, both end fittings, overall length and orientation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Fitting Configuration",
+     "value": "straight",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "fitting_configuration"
+    },
+    {
+     "group": "Identification",
+     "label": "Thread Form",
+     "value": "M14×1.5 to M64×2",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "thread_form"
+    },
+    {
+     "group": "Identification",
+     "label": "Sealing Form",
+     "value": "Flat face with an O-ring, seating against a flat mating face",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "sealing_form"
+    },
+    {
+     "group": "Identification",
+     "label": "Thread Gender",
+     "value": "male",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "gender"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size Range",
+     "value": "-04 to -32",
+     "unit": null,
+     "position": 4,
+     "isFilterable": true,
+     "templateKey": "nominal_size_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "Carbon steel (316 stainless on request)",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "material"
+    },
+    {
+     "group": "Construction",
+     "label": "Surface Treatment",
+     "value": "Zinc-plated, Cr3+ passivated, RoHS-compliant",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "surface_treatment"
+    },
+    {
+     "group": "Compliance",
+     "label": "Applicable Standards",
+     "value": "Metric thread to ISO 261 (coarse and fine pitch)",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": "applicable_standards"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-MF-MAL-FLAT-0414",
+     "hoseDash": 4,
+     "hoseInch": "1/4\"",
+     "hoseDn": 6,
+     "portLabel": "M14×1.5",
+     "portDash": 14,
+     "dimensions": {
+      "S2": 17.0,
+      "C": 11.0
+     },
+     "sourcePart": "10311-14-04",
+     "position": 0
+    },
+    {
+     "partNumber": "IH-MF-MAL-FLAT-0516",
+     "hoseDash": 5,
+     "hoseInch": "5/16\"",
+     "hoseDn": 8,
+     "portLabel": "M16×1.5",
+     "portDash": 16,
+     "dimensions": {
+      "S2": 17.0,
+      "C": 11.0
+     },
+     "sourcePart": "10311-16-05",
+     "position": 1
+    },
+    {
+     "partNumber": "IH-MF-MAL-FLAT-0618",
+     "hoseDash": 6,
+     "hoseInch": "3/8\"",
+     "hoseDn": 10,
+     "portLabel": "M18×1.5",
+     "portDash": 18,
+     "dimensions": {
+      "S2": 19.0,
+      "C": 11.0
+     },
+     "sourcePart": "10311-18-06",
+     "position": 2
+    },
+    {
+     "partNumber": "IH-MF-MAL-FLAT-0622",
+     "hoseDash": 6,
+     "hoseInch": "3/8\"",
+     "hoseDn": 10,
+     "portLabel": "M22×1.5",
+     "portDash": 22,
+     "dimensions": {
+      "S2": 24.0,
+      "C": 12.0
+     },
+     "sourcePart": "10311-22-06",
+     "position": 3
+    },
+    {
+     "partNumber": "IH-MF-MAL-FLAT-0816",
+     "hoseDash": 8,
+     "hoseInch": "1/2\"",
+     "hoseDn": 12,
+     "portLabel": "M16×1.5",
+     "portDash": 16,
+     "dimensions": {
+      "S2": 17.0,
+      "C": 11.0
+     },
+     "sourcePart": "10311-16-08",
+     "position": 4
+    },
+    {
+     "partNumber": "IH-MF-MAL-FLAT-0822",
+     "hoseDash": 8,
+     "hoseInch": "1/2\"",
+     "hoseDn": 12,
+     "portLabel": "M22×1.5",
+     "portDash": 22,
+     "dimensions": {
+      "S2": 24.0,
+      "C": 12.0
+     },
+     "sourcePart": "10311-22-08",
+     "position": 5
+    },
+    {
+     "partNumber": "IH-MF-MAL-FLAT-1027",
+     "hoseDash": 10,
+     "hoseInch": "5/8\"",
+     "hoseDn": 16,
+     "portLabel": "M27×1.5",
+     "portDash": 27,
+     "dimensions": {
+      "S2": 30.0,
+      "C": 13.0
+     },
+     "sourcePart": "10311-27-10",
+     "position": 6
+    },
+    {
+     "partNumber": "IH-MF-MAL-FLAT-1230",
+     "hoseDash": 12,
+     "hoseInch": "3/4\"",
+     "hoseDn": 20,
+     "portLabel": "M30×1.5",
+     "portDash": 30,
+     "dimensions": {
+      "S2": 32.0,
+      "C": 14.0
+     },
+     "sourcePart": "10311-30-12",
+     "position": 7
+    },
+    {
+     "partNumber": "IH-MF-MAL-FLAT-1436",
+     "hoseDash": 14,
+     "hoseInch": "7/8\"",
+     "hoseDn": 22,
+     "portLabel": "M36×2",
+     "portDash": 36,
+     "dimensions": {
+      "S2": 38.0,
+      "C": 16.0
+     },
+     "sourcePart": "10311-36-14",
+     "position": 8
+    },
+    {
+     "partNumber": "IH-MF-MAL-FLAT-1639",
+     "hoseDash": 16,
+     "hoseInch": "1\"",
+     "hoseDn": 25,
+     "portLabel": "M39×2",
+     "portDash": 39,
+     "dimensions": {
+      "S2": 41.0,
+      "C": 16.0
+     },
+     "sourcePart": "10311-39-16",
+     "position": 9
+    },
+    {
+     "partNumber": "IH-MF-MAL-FLAT-2045",
+     "hoseDash": 20,
+     "hoseInch": "1.1/4\"",
+     "hoseDn": 32,
+     "portLabel": "M45×2",
+     "portDash": 45,
+     "dimensions": {
+      "S2": 46.0,
+      "C": 20.0
+     },
+     "sourcePart": "10311-45-20",
+     "position": 10
+    },
+    {
+     "partNumber": "IH-MF-MAL-FLAT-2452",
+     "hoseDash": 24,
+     "hoseInch": "1.1/2\"",
+     "hoseDn": 38,
+     "portLabel": "M52×2",
+     "portDash": 52,
+     "dimensions": {
+      "S2": 55.0,
+      "C": 22.0
+     },
+     "sourcePart": "10311-52-24",
+     "position": 11
+    },
+    {
+     "partNumber": "IH-MF-MAL-FLAT-3264",
+     "hoseDash": 32,
+     "hoseInch": "2\"",
+     "hoseDn": 51,
+     "portLabel": "M64×2",
+     "portDash": 64,
+     "dimensions": {
+      "S2": 65.0,
+      "C": 27.0
+     },
+     "sourcePart": "10311-64-32",
+     "position": 12
+    }
+   ],
+   "sourceFamily": "10311 (p16)"
+  },
+  {
+   "sku": "IH-MF-FEM-FLAT",
+   "title": "Metric Female Flat Seat Hose Fitting",
+   "slug": "metric-female-flat-seat-hose-fitting",
+   "categorySlug": "metric-hose-fittings",
+   "specTemplateSlug": "threaded-fitting-spec",
+   "focusKeyword": "metric female flat seat hose fitting",
+   "imageFromSku": "IH-MF-FEM-60",
+   "descriptionShort": "Metric Female Flat Seat — flat seat, sealing against the mating face, in 20 sizes from -03.",
+   "descriptionLong": "<p>The <strong>Metric Female Flat Seat Hose Fitting</strong> is a hydraulic hose fitting with flat seat, sealing against the mating face.</p>\n<p>The swivel nut turns so the hose does not have to. Seats flat — it will not seal against a 60° or 74° cone port.</p>\n<h3>Construction</h3>\n<ul>\n<li>Configuration: straight</li>\n<li>Thread: M10×1 to M33×2</li>\n<li>Sealing form: Flat seat, sealing against the mating face</li>\n<li>Gender: female-swivel</li>\n<li>Material: carbon steel, zinc-plated and Cr3+ passivated (316 stainless on request)</li>\n</ul>\n<h3>Sizes</h3>\n<p>20 sizes, hose bore -03 to -16, threads M10×1 to M33×2. The full size and dimension table is on this page.</p>\n<h3>How to order</h3>\n<p>Quote the Indus part number for the size you need. Tell us the hose grade and bore and we will include the matching crimp ferrule — the ferrule follows the hose, not the fitting. Indus crimps and pressure-tests assemblies before dispatch.</p>",
+   "seoTitle": "Metric Female Flat Seat Hose Fitting | M10×1–M33×2",
+   "seoDescription": "Metric Female Flat Seat Hose Fitting — 20 sizes (-03 to -16), M10×1 to M33×2. Carbon steel or 316 stainless, ex-Dubai.",
+   "faqs": [
+    {
+     "question": "What is the sealing form?",
+     "answer": "Flat seat, sealing against the mating face. Pair it with the matching counterpart — a mismatched sealing form will seat but will not hold pressure."
+    },
+    {
+     "question": "What sizes are available?",
+     "answer": "20 sizes, hose bore -03 to -16, threads M10×1 to M33×2. Every combination in the table on this page is an orderable part number."
+    },
+    {
+     "question": "What is the maximum working pressure?",
+     "answer": "The hose grade and bore set the assembly rating, not the fitting. A correctly crimped fitting does not derate the hose. Tell us the grade and bore on the RFQ and we will confirm the figure in writing."
+    },
+    {
+     "question": "Which ferrule pairs with this fitting?",
+     "answer": "The one that matches your hose grade — the skive/no-skive choice follows the hose construction, not the fitting end. Send the hose grade with your enquiry and we will specify the ferrule and the crimp diameter."
+    },
+    {
+     "question": "Is stainless steel available?",
+     "answer": "Yes — 316 stainless on request across the range. Standard supply is carbon steel, zinc-plated and Cr3+ passivated. Add \"-SS\" to the part number when you enquire."
+    },
+    {
+     "question": "Can Indus crimp the assembly?",
+     "answer": "Yes. We crimp, pressure-test and certify assemblies in Dubai and ship UAE-wide. Send the hose grade, bore, both end fittings, overall length and orientation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Fitting Configuration",
+     "value": "straight",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "fitting_configuration"
+    },
+    {
+     "group": "Identification",
+     "label": "Thread Form",
+     "value": "M10×1 to M33×2",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "thread_form"
+    },
+    {
+     "group": "Identification",
+     "label": "Sealing Form",
+     "value": "Flat seat, sealing against the mating face",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "sealing_form"
+    },
+    {
+     "group": "Identification",
+     "label": "Thread Gender",
+     "value": "female-swivel",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "gender"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size Range",
+     "value": "-03 to -16",
+     "unit": null,
+     "position": 4,
+     "isFilterable": true,
+     "templateKey": "nominal_size_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "Carbon steel (316 stainless on request)",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "material"
+    },
+    {
+     "group": "Construction",
+     "label": "Surface Treatment",
+     "value": "Zinc-plated, Cr3+ passivated, RoHS-compliant",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "surface_treatment"
+    },
+    {
+     "group": "Compliance",
+     "label": "Applicable Standards",
+     "value": "Metric thread to ISO 261 (coarse and fine pitch)",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": "applicable_standards"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-MF-FEM-FLAT-0310",
+     "hoseDash": 3,
+     "hoseInch": "3/16\"",
+     "hoseDn": 5,
+     "portLabel": "M10×1",
+     "portDash": 10,
+     "dimensions": {
+      "S2": 14.0,
+      "C": 6.0
+     },
+     "sourcePart": "20211-10-03",
+     "position": 0
+    },
+    {
+     "partNumber": "IH-MF-FEM-FLAT-0312",
+     "hoseDash": 3,
+     "hoseInch": "3/16\"",
+     "hoseDn": 4,
+     "portLabel": "M12×1.25",
+     "portDash": 12,
+     "dimensions": {
+      "S2": 17.0,
+      "C": 8.0
+     },
+     "sourcePart": "20211-12-03",
+     "position": 1
+    },
+    {
+     "partNumber": "IH-MF-FEM-FLAT-0410",
+     "hoseDash": 4,
+     "hoseInch": "1/4\"",
+     "hoseDn": 6,
+     "portLabel": "M10×1",
+     "portDash": 10,
+     "dimensions": {
+      "S2": 14.0,
+      "C": 6.0
+     },
+     "sourcePart": "20211-10-04",
+     "position": 2
+    },
+    {
+     "partNumber": "IH-MF-FEM-FLAT-0412",
+     "hoseDash": 4,
+     "hoseInch": "1/4\"",
+     "hoseDn": 6,
+     "portLabel": "M12×1.25",
+     "portDash": 12,
+     "dimensions": {
+      "S2": 17.0,
+      "C": 8.0
+     },
+     "sourcePart": "20211-12-04",
+     "position": 3
+    },
+    {
+     "partNumber": "IH-MF-FEM-FLAT-0414",
+     "hoseDash": 4,
+     "hoseInch": "1/4\"",
+     "hoseDn": 6,
+     "portLabel": "M14×1.5",
+     "portDash": 14,
+     "dimensions": {
+      "S2": 19.0,
+      "C": 8.5
+     },
+     "sourcePart": "20211-14-04",
+     "position": 4
+    },
+    {
+     "partNumber": "IH-MF-FEM-FLAT-0416",
+     "hoseDash": 4,
+     "hoseInch": "1/4\"",
+     "hoseDn": 6,
+     "portLabel": "M16×1.5",
+     "portDash": 16,
+     "dimensions": {
+      "S2": 22.0,
+      "C": 8.0
+     },
+     "sourcePart": "20211-16-04",
+     "position": 5
+    },
+    {
+     "partNumber": "IH-MF-FEM-FLAT-0514",
+     "hoseDash": 5,
+     "hoseInch": "5/16\"",
+     "hoseDn": 8,
+     "portLabel": "M14×1.5",
+     "portDash": 14,
+     "dimensions": {
+      "S2": 19.0,
+      "C": 8.5
+     },
+     "sourcePart": "20211-14-05",
+     "position": 6
+    },
+    {
+     "partNumber": "IH-MF-FEM-FLAT-0516",
+     "hoseDash": 5,
+     "hoseInch": "5/16\"",
+     "hoseDn": 8,
+     "portLabel": "M16×1.5",
+     "portDash": 16,
+     "dimensions": {
+      "S2": 22.0,
+      "C": 8.0
+     },
+     "sourcePart": "20211-16-05",
+     "position": 7
+    },
+    {
+     "partNumber": "IH-MF-FEM-FLAT-0518",
+     "hoseDash": 5,
+     "hoseInch": "5/16\"",
+     "hoseDn": 8,
+     "portLabel": "M18×1.5",
+     "portDash": 18,
+     "dimensions": {
+      "S2": 24.0,
+      "C": 8.0
+     },
+     "sourcePart": "20211-18-05",
+     "position": 8
+    },
+    {
+     "partNumber": "IH-MF-FEM-FLAT-0616",
+     "hoseDash": 6,
+     "hoseInch": "3/8\"",
+     "hoseDn": 10,
+     "portLabel": "M16×1.5",
+     "portDash": 16,
+     "dimensions": {
+      "S2": 22.0,
+      "C": 8.0
+     },
+     "sourcePart": "20211-16-06",
+     "position": 9
+    },
+    {
+     "partNumber": "IH-MF-FEM-FLAT-0618",
+     "hoseDash": 6,
+     "hoseInch": "3/8\"",
+     "hoseDn": 10,
+     "portLabel": "M18×1.5",
+     "portDash": 18,
+     "dimensions": {
+      "S2": 24.0,
+      "C": 8.0
+     },
+     "sourcePart": "20211-18-06",
+     "position": 10
+    },
+    {
+     "partNumber": "IH-MF-FEM-FLAT-0814",
+     "hoseDash": 8,
+     "hoseInch": "1/2\"",
+     "hoseDn": 12,
+     "portLabel": "M14×1.5",
+     "portDash": 14,
+     "dimensions": {
+      "S2": 19.0,
+      "C": 8.5
+     },
+     "sourcePart": "20211-14-08",
+     "position": 11
+    },
+    {
+     "partNumber": "IH-MF-FEM-FLAT-0818",
+     "hoseDash": 8,
+     "hoseInch": "1/2\"",
+     "hoseDn": 12,
+     "portLabel": "M18×1.5",
+     "portDash": 18,
+     "dimensions": {
+      "S2": 24.0,
+      "C": 8.0
+     },
+     "sourcePart": "20211-18-08",
+     "position": 12
+    },
+    {
+     "partNumber": "IH-MF-FEM-FLAT-0820",
+     "hoseDash": 8,
+     "hoseInch": "1/2\"",
+     "hoseDn": 12,
+     "portLabel": "M20×1.5",
+     "portDash": 20,
+     "dimensions": {
+      "S2": 27.0,
+      "C": 10.0
+     },
+     "sourcePart": "20211-20-08",
+     "position": 13
+    },
+    {
+     "partNumber": "IH-MF-FEM-FLAT-0822",
+     "hoseDash": 8,
+     "hoseInch": "1/2\"",
+     "hoseDn": 12,
+     "portLabel": "M22×1.5",
+     "portDash": 22,
+     "dimensions": {
+      "S2": 27.0,
+      "C": 10.0
+     },
+     "sourcePart": "20211-22-08",
+     "position": 14
+    },
+    {
+     "partNumber": "IH-MF-FEM-FLAT-1027",
+     "hoseDash": 10,
+     "hoseInch": "5/8\"",
+     "hoseDn": 16,
+     "portLabel": "M27×1.5",
+     "portDash": 27,
+     "dimensions": {
+      "S2": 32.0,
+      "C": 10.0
+     },
+     "sourcePart": "20211-27-10",
+     "position": 15
+    },
+    {
+     "partNumber": "IH-MF-FEM-FLAT-1227",
+     "hoseDash": 12,
+     "hoseInch": "3/4\"",
+     "hoseDn": 20,
+     "portLabel": "M27×1.5",
+     "portDash": 27,
+     "dimensions": {
+      "S2": 32.0,
+      "C": 10.0
+     },
+     "sourcePart": "20211-27-12",
+     "position": 16
+    },
+    {
+     "partNumber": "IH-MF-FEM-FLAT-1230",
+     "hoseDash": 12,
+     "hoseInch": "3/4\"",
+     "hoseDn": 20,
+     "portLabel": "M30×1.5",
+     "portDash": 30,
+     "dimensions": {
+      "S2": 36.0,
+      "C": 11.0
+     },
+     "sourcePart": "20211-30-12",
+     "position": 17
+    },
+    {
+     "partNumber": "IH-MF-FEM-FLAT-1433",
+     "hoseDash": 14,
+     "hoseInch": "7/8\"",
+     "hoseDn": 22,
+     "portLabel": "M33×2",
+     "portDash": 33,
+     "dimensions": {
+      "S2": 41.0,
+      "C": 13.0
+     },
+     "sourcePart": "20211-33-14",
+     "position": 18
+    },
+    {
+     "partNumber": "IH-MF-FEM-FLAT-1633",
+     "hoseDash": 16,
+     "hoseInch": "1\"",
+     "hoseDn": 25,
+     "portLabel": "M33×2",
+     "portDash": 33,
+     "dimensions": {
+      "S2": 41.0,
+      "C": 13.0
+     },
+     "sourcePart": "20211-33-16",
+     "position": 19
+    }
+   ],
+   "sourceFamily": "20211 (p17)"
+  },
+  {
+   "sku": "IH-MF-FEM-FLAT-45",
+   "title": "45° Metric Female Flat Seat Hose Fitting",
+   "slug": "45-metric-female-flat-seat-hose-fitting",
+   "categorySlug": "metric-hose-fittings",
+   "specTemplateSlug": "threaded-fitting-spec",
+   "focusKeyword": "metric flat seat 45 elbow hose fitting",
+   "imageFromSku": "IH-DF-FEM-24-OR-LS-45",
+   "descriptionShort": "45° Metric Female Flat Seat — flat seat, sealing against the mating face, in 7 sizes from -04.",
+   "descriptionLong": "<p>The <strong>45° Metric Female Flat Seat Hose Fitting</strong> is a hydraulic hose fitting with flat seat, sealing against the mating face.</p>\n<p>The 45° elbow of the metric flat-seat family, for a hose that has to leave the port at an angle.</p>\n<h3>Construction</h3>\n<ul>\n<li>Configuration: 45 elbow</li>\n<li>Thread: M14×1.5 to M42×2</li>\n<li>Sealing form: Flat seat, sealing against the mating face</li>\n<li>Gender: female-swivel</li>\n<li>Material: carbon steel, zinc-plated and Cr3+ passivated (316 stainless on request)</li>\n</ul>\n<h3>Sizes</h3>\n<p>7 sizes, hose bore -04 to -20, threads M14×1.5 to M42×2. The full size and dimension table is on this page.</p>\n<h3>How to order</h3>\n<p>Quote the Indus part number for the size you need. Tell us the hose grade and bore and we will include the matching crimp ferrule — the ferrule follows the hose, not the fitting. Indus crimps and pressure-tests assemblies before dispatch.</p>",
+   "seoTitle": "45° Metric Female Flat Seat Hose Fitting | M14×1.5–M42×2",
+   "seoDescription": "45° Metric Female Flat Seat Hose Fitting — 7 sizes (-04 to -20), M14×1.5 to M42×2. Carbon steel or 316 stainless, ex-Dubai.",
+   "faqs": [
+    {
+     "question": "What is the sealing form?",
+     "answer": "Flat seat, sealing against the mating face. Pair it with the matching counterpart — a mismatched sealing form will seat but will not hold pressure."
+    },
+    {
+     "question": "What sizes are available?",
+     "answer": "7 sizes, hose bore -04 to -20, threads M14×1.5 to M42×2. Every combination in the table on this page is an orderable part number."
+    },
+    {
+     "question": "What is the maximum working pressure?",
+     "answer": "The hose grade and bore set the assembly rating, not the fitting. A correctly crimped fitting does not derate the hose. Tell us the grade and bore on the RFQ and we will confirm the figure in writing."
+    },
+    {
+     "question": "Which ferrule pairs with this fitting?",
+     "answer": "The one that matches your hose grade — the skive/no-skive choice follows the hose construction, not the fitting end. Send the hose grade with your enquiry and we will specify the ferrule and the crimp diameter."
+    },
+    {
+     "question": "Is stainless steel available?",
+     "answer": "Yes — 316 stainless on request across the range. Standard supply is carbon steel, zinc-plated and Cr3+ passivated. Add \"-SS\" to the part number when you enquire."
+    },
+    {
+     "question": "Can Indus crimp the assembly?",
+     "answer": "Yes. We crimp, pressure-test and certify assemblies in Dubai and ship UAE-wide. Send the hose grade, bore, both end fittings, overall length and orientation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Fitting Configuration",
+     "value": "45-elbow",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "fitting_configuration"
+    },
+    {
+     "group": "Identification",
+     "label": "Thread Form",
+     "value": "M14×1.5 to M42×2",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "thread_form"
+    },
+    {
+     "group": "Identification",
+     "label": "Sealing Form",
+     "value": "Flat seat, sealing against the mating face",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "sealing_form"
+    },
+    {
+     "group": "Identification",
+     "label": "Thread Gender",
+     "value": "female-swivel",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "gender"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size Range",
+     "value": "-04 to -20",
+     "unit": null,
+     "position": 4,
+     "isFilterable": true,
+     "templateKey": "nominal_size_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "Carbon steel (316 stainless on request)",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "material"
+    },
+    {
+     "group": "Construction",
+     "label": "Surface Treatment",
+     "value": "Zinc-plated, Cr3+ passivated, RoHS-compliant",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "surface_treatment"
+    },
+    {
+     "group": "Compliance",
+     "label": "Applicable Standards",
+     "value": "Metric thread to ISO 261 (coarse and fine pitch)",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": "applicable_standards"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-MF-FEM-FLAT-45-0414",
+     "hoseDash": 4,
+     "hoseInch": "1/4\"",
+     "hoseDn": 6,
+     "portLabel": "M14×1.5",
+     "portDash": 14,
+     "dimensions": {
+      "S2": 19.0,
+      "C": 8.5,
+      "H": 18.4
+     },
+     "sourcePart": "20241-14-04",
+     "position": 0
+    },
+    {
+     "partNumber": "IH-MF-FEM-FLAT-45-0516",
+     "hoseDash": 5,
+     "hoseInch": "5/16\"",
+     "hoseDn": 8,
+     "portLabel": "M16×1.5",
+     "portDash": 16,
+     "dimensions": {
+      "S2": 22.0,
+      "C": 8.5,
+      "H": 20.0
+     },
+     "sourcePart": "20241-16-05",
+     "position": 1
+    },
+    {
+     "partNumber": "IH-MF-FEM-FLAT-45-0618",
+     "hoseDash": 6,
+     "hoseInch": "3/8\"",
+     "hoseDn": 10,
+     "portLabel": "M18×1.5",
+     "portDash": 18,
+     "dimensions": {
+      "S2": 24.0,
+      "C": 8.5,
+      "H": 21.4
+     },
+     "sourcePart": "20241-18-06",
+     "position": 2
+    },
+    {
+     "partNumber": "IH-MF-FEM-FLAT-45-0822",
+     "hoseDash": 8,
+     "hoseInch": "1/2\"",
+     "hoseDn": 12,
+     "portLabel": "M22×1.5",
+     "portDash": 22,
+     "dimensions": {
+      "S2": 27.0,
+      "C": 10.0,
+      "H": 24.0
+     },
+     "sourcePart": "20241-22-08",
+     "position": 3
+    },
+    {
+     "partNumber": "IH-MF-FEM-FLAT-45-1027",
+     "hoseDash": 10,
+     "hoseInch": "5/8\"",
+     "hoseDn": 16,
+     "portLabel": "M27×1.5",
+     "portDash": 27,
+     "dimensions": {
+      "S2": 32.0,
+      "C": 10.0,
+      "H": 26.4
+     },
+     "sourcePart": "20241-27-10",
+     "position": 4
+    },
+    {
+     "partNumber": "IH-MF-FEM-FLAT-45-1230",
+     "hoseDash": 12,
+     "hoseInch": "3/4\"",
+     "hoseDn": 20,
+     "portLabel": "M30×1.5",
+     "portDash": 30,
+     "dimensions": {
+      "S2": 36.0,
+      "C": 11.0,
+      "H": 30.0
+     },
+     "sourcePart": "20241-30-12",
+     "position": 5
+    },
+    {
+     "partNumber": "IH-MF-FEM-FLAT-45-2042",
+     "hoseDash": 20,
+     "hoseInch": "1.1/4\"",
+     "hoseDn": 32,
+     "portLabel": "M42×2",
+     "portDash": 42,
+     "dimensions": {
+      "S2": 50.0,
+      "C": 15.0,
+      "H": 36.6
+     },
+     "sourcePart": "20241-42-20",
+     "position": 6
+    }
+   ],
+   "sourceFamily": "20241 (p18)"
+  },
+  {
+   "sku": "IH-MF-FEM-FLAT-90",
+   "title": "90° Metric Female Flat Seat Hose Fitting",
+   "slug": "90-metric-female-flat-seat-hose-fitting",
+   "categorySlug": "metric-hose-fittings",
+   "specTemplateSlug": "threaded-fitting-spec",
+   "focusKeyword": "metric flat seat 90 elbow hose fitting",
+   "imageFromSku": "IH-MF-FEM-60-90",
+   "descriptionShort": "90° Metric Female Flat Seat — flat seat, sealing against the mating face, in 11 sizes from -03.",
+   "descriptionLong": "<p>The <strong>90° Metric Female Flat Seat Hose Fitting</strong> is a hydraulic hose fitting with flat seat, sealing against the mating face.</p>\n<p>The 90° elbow of the metric flat-seat family, for a tight exit off the port.</p>\n<h3>Construction</h3>\n<ul>\n<li>Configuration: 90 elbow</li>\n<li>Thread: M12×1.25 to M42×2</li>\n<li>Sealing form: Flat seat, sealing against the mating face</li>\n<li>Gender: female-swivel</li>\n<li>Material: carbon steel, zinc-plated and Cr3+ passivated (316 stainless on request)</li>\n</ul>\n<h3>Sizes</h3>\n<p>11 sizes, hose bore -03 to -20, threads M12×1.25 to M42×2. The full size and dimension table is on this page.</p>\n<h3>How to order</h3>\n<p>Quote the Indus part number for the size you need. Tell us the hose grade and bore and we will include the matching crimp ferrule — the ferrule follows the hose, not the fitting. Indus crimps and pressure-tests assemblies before dispatch.</p>",
+   "seoTitle": "90° Metric Female Flat Seat Hose Fitting | M12×1.25–M42×2",
+   "seoDescription": "90° Metric Female Flat Seat Hose Fitting — 11 sizes (-03 to -20), M12×1.25 to M42×2. Carbon steel or 316 stainless, ex-Dubai.",
+   "faqs": [
+    {
+     "question": "What is the sealing form?",
+     "answer": "Flat seat, sealing against the mating face. Pair it with the matching counterpart — a mismatched sealing form will seat but will not hold pressure."
+    },
+    {
+     "question": "What sizes are available?",
+     "answer": "11 sizes, hose bore -03 to -20, threads M12×1.25 to M42×2. Every combination in the table on this page is an orderable part number."
+    },
+    {
+     "question": "What is the maximum working pressure?",
+     "answer": "The hose grade and bore set the assembly rating, not the fitting. A correctly crimped fitting does not derate the hose. Tell us the grade and bore on the RFQ and we will confirm the figure in writing."
+    },
+    {
+     "question": "Which ferrule pairs with this fitting?",
+     "answer": "The one that matches your hose grade — the skive/no-skive choice follows the hose construction, not the fitting end. Send the hose grade with your enquiry and we will specify the ferrule and the crimp diameter."
+    },
+    {
+     "question": "Is stainless steel available?",
+     "answer": "Yes — 316 stainless on request across the range. Standard supply is carbon steel, zinc-plated and Cr3+ passivated. Add \"-SS\" to the part number when you enquire."
+    },
+    {
+     "question": "Can Indus crimp the assembly?",
+     "answer": "Yes. We crimp, pressure-test and certify assemblies in Dubai and ship UAE-wide. Send the hose grade, bore, both end fittings, overall length and orientation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Fitting Configuration",
+     "value": "90-elbow",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "fitting_configuration"
+    },
+    {
+     "group": "Identification",
+     "label": "Thread Form",
+     "value": "M12×1.25 to M42×2",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "thread_form"
+    },
+    {
+     "group": "Identification",
+     "label": "Sealing Form",
+     "value": "Flat seat, sealing against the mating face",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "sealing_form"
+    },
+    {
+     "group": "Identification",
+     "label": "Thread Gender",
+     "value": "female-swivel",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "gender"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size Range",
+     "value": "-03 to -20",
+     "unit": null,
+     "position": 4,
+     "isFilterable": true,
+     "templateKey": "nominal_size_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "Carbon steel (316 stainless on request)",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "material"
+    },
+    {
+     "group": "Construction",
+     "label": "Surface Treatment",
+     "value": "Zinc-plated, Cr3+ passivated, RoHS-compliant",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "surface_treatment"
+    },
+    {
+     "group": "Compliance",
+     "label": "Applicable Standards",
+     "value": "Metric thread to ISO 261 (coarse and fine pitch)",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": "applicable_standards"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-MF-FEM-FLAT-90-0312",
+     "hoseDash": 3,
+     "hoseInch": "3/16\"",
+     "hoseDn": 5,
+     "portLabel": "M12×1.25",
+     "portDash": 12,
+     "dimensions": {
+      "S2": 17.0,
+      "C": 8.0,
+      "H": 30.5
+     },
+     "sourcePart": "20291-12-03",
+     "position": 0
+    },
+    {
+     "partNumber": "IH-MF-FEM-FLAT-90-0414",
+     "hoseDash": 4,
+     "hoseInch": "1/4\"",
+     "hoseDn": 6,
+     "portLabel": "M14×1.5",
+     "portDash": 14,
+     "dimensions": {
+      "S2": 19.0,
+      "C": 8.5,
+      "H": 34.0
+     },
+     "sourcePart": "20291-14-04",
+     "position": 1
+    },
+    {
+     "partNumber": "IH-MF-FEM-FLAT-90-0514",
+     "hoseDash": 5,
+     "hoseInch": "5/16\"",
+     "hoseDn": 8,
+     "portLabel": "M14×1.5",
+     "portDash": 14,
+     "dimensions": {
+      "S2": 19.0,
+      "C": 8.5,
+      "H": 34.0
+     },
+     "sourcePart": "20291-14-05",
+     "position": 2
+    },
+    {
+     "partNumber": "IH-MF-FEM-FLAT-90-0516",
+     "hoseDash": 5,
+     "hoseInch": "5/16\"",
+     "hoseDn": 8,
+     "portLabel": "M16×1.5",
+     "portDash": 16,
+     "dimensions": {
+      "S2": 22.0,
+      "C": 8.5,
+      "H": 38.0
+     },
+     "sourcePart": "20291-16-05",
+     "position": 3
+    },
+    {
+     "partNumber": "IH-MF-FEM-FLAT-90-0618",
+     "hoseDash": 6,
+     "hoseInch": "3/8\"",
+     "hoseDn": 10,
+     "portLabel": "M18×1.5",
+     "portDash": 18,
+     "dimensions": {
+      "S2": 24.0,
+      "C": 8.5,
+      "H": 41.3
+     },
+     "sourcePart": "20291-18-06",
+     "position": 4
+    },
+    {
+     "partNumber": "IH-MF-FEM-FLAT-90-0822",
+     "hoseDash": 8,
+     "hoseInch": "1/2\"",
+     "hoseDn": 12,
+     "portLabel": "M22×1.5",
+     "portDash": 22,
+     "dimensions": {
+      "S2": 27.0,
+      "C": 10.0,
+      "H": 48.0
+     },
+     "sourcePart": "20291-22-08",
+     "position": 5
+    },
+    {
+     "partNumber": "IH-MF-FEM-FLAT-90-1027",
+     "hoseDash": 10,
+     "hoseInch": "5/8\"",
+     "hoseDn": 16,
+     "portLabel": "M27×1.5",
+     "portDash": 27,
+     "dimensions": {
+      "S2": 32.0,
+      "C": 10.0,
+      "H": 54.0
+     },
+     "sourcePart": "20291-27-10",
+     "position": 6
+    },
+    {
+     "partNumber": "IH-MF-FEM-FLAT-90-1222",
+     "hoseDash": 12,
+     "hoseInch": "3/4\"",
+     "hoseDn": 20,
+     "portLabel": "M22×1.5",
+     "portDash": 22,
+     "dimensions": {
+      "S2": 27.0,
+      "C": 10.0,
+      "H": 62.0
+     },
+     "sourcePart": "20291-22-12",
+     "position": 7
+    },
+    {
+     "partNumber": "IH-MF-FEM-FLAT-90-1230",
+     "hoseDash": 12,
+     "hoseInch": "3/4\"",
+     "hoseDn": 20,
+     "portLabel": "M30×1.5",
+     "portDash": 30,
+     "dimensions": {
+      "S2": 36.0,
+      "C": 11.0,
+      "H": 63.5
+     },
+     "sourcePart": "20291-30-12",
+     "position": 8
+    },
+    {
+     "partNumber": "IH-MF-FEM-FLAT-90-1636",
+     "hoseDash": 16,
+     "hoseInch": "1\"",
+     "hoseDn": 25,
+     "portLabel": "M36×2",
+     "portDash": 36,
+     "dimensions": {
+      "S2": 41.0,
+      "C": 13.0,
+      "H": 70.0
+     },
+     "sourcePart": "20291-36-16",
+     "position": 9
+    },
+    {
+     "partNumber": "IH-MF-FEM-FLAT-90-2042",
+     "hoseDash": 20,
+     "hoseInch": "1.1/4\"",
+     "hoseDn": 32,
+     "portLabel": "M42×2",
+     "portDash": 42,
+     "dimensions": {
+      "S2": 50.0,
+      "C": 15.0,
+      "H": 82.5
+     },
+     "sourcePart": "20291-42-20",
+     "position": 10
+    }
+   ],
+   "sourceFamily": "20291 (p18)"
+  },
+  {
+   "sku": "IH-BSP-MAL-FLAT",
+   "title": "BSP Male Flat Seal Hose Fitting",
+   "slug": "bsp-male-flat-seal-hose-fitting",
+   "categorySlug": "bsp-hose-fittings",
+   "specTemplateSlug": "threaded-fitting-spec",
+   "focusKeyword": "BSP male flat seal hose fitting",
+   "imageFromSku": "IH-BSP-MAL-60",
+   "descriptionShort": "BSP Male Flat Seal — flat face with an O-ring, seating against a flat mating face, in 12 sizes from -04.",
+   "descriptionLong": "<p>The <strong>BSP Male Flat Seal Hose Fitting</strong> is a hydraulic hose fitting with flat face with an O-ring, seating against a flat mating face.</p>\n<p>We already sell this form in 316 stainless. This is the carbon-steel half of the same range.</p>\n<h3>Construction</h3>\n<ul>\n<li>Configuration: straight</li>\n<li>Thread: G1&quot;×11 to G5/8&quot;×14</li>\n<li>Sealing form: Flat face with an O-ring, seating against a flat mating face</li>\n<li>Gender: male</li>\n<li>Material: carbon steel, zinc-plated and Cr3+ passivated (316 stainless on request)</li>\n</ul>\n<h3>Sizes</h3>\n<p>12 sizes, hose bore -04 to -20, threads G1&quot;×11 to G5/8&quot;×14. The full size and dimension table is on this page.</p>\n<h3>How to order</h3>\n<p>Quote the Indus part number for the size you need. Tell us the hose grade and bore and we will include the matching crimp ferrule — the ferrule follows the hose, not the fitting. Indus crimps and pressure-tests assemblies before dispatch.</p>",
+   "seoTitle": "BSP Male Flat Seal Hose Fitting | G1\"×11–G5/8\"×14",
+   "seoDescription": "BSP Male Flat Seal Hose Fitting — 12 sizes (-04 to -20), G1\"×11 to G5/8\"×14. Carbon steel or 316 stainless, ex-Dubai.",
+   "faqs": [
+    {
+     "question": "What is the sealing form?",
+     "answer": "Flat face with an O-ring, seating against a flat mating face. Pair it with the matching counterpart — a mismatched sealing form will seat but will not hold pressure."
+    },
+    {
+     "question": "What sizes are available?",
+     "answer": "12 sizes, hose bore -04 to -20, threads G1\"×11 to G5/8\"×14. Every combination in the table on this page is an orderable part number."
+    },
+    {
+     "question": "What is the maximum working pressure?",
+     "answer": "The hose grade and bore set the assembly rating, not the fitting. A correctly crimped fitting does not derate the hose. Tell us the grade and bore on the RFQ and we will confirm the figure in writing."
+    },
+    {
+     "question": "Which ferrule pairs with this fitting?",
+     "answer": "The one that matches your hose grade — the skive/no-skive choice follows the hose construction, not the fitting end. Send the hose grade with your enquiry and we will specify the ferrule and the crimp diameter."
+    },
+    {
+     "question": "Is stainless steel available?",
+     "answer": "Yes — 316 stainless on request across the range. Standard supply is carbon steel, zinc-plated and Cr3+ passivated. Add \"-SS\" to the part number when you enquire."
+    },
+    {
+     "question": "Can Indus crimp the assembly?",
+     "answer": "Yes. We crimp, pressure-test and certify assemblies in Dubai and ship UAE-wide. Send the hose grade, bore, both end fittings, overall length and orientation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Fitting Configuration",
+     "value": "straight",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "fitting_configuration"
+    },
+    {
+     "group": "Identification",
+     "label": "Thread Form",
+     "value": "G1\"×11 to G5/8\"×14",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "thread_form"
+    },
+    {
+     "group": "Identification",
+     "label": "Sealing Form",
+     "value": "Flat face with an O-ring, seating against a flat mating face",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "sealing_form"
+    },
+    {
+     "group": "Identification",
+     "label": "Thread Gender",
+     "value": "male",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "gender"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size Range",
+     "value": "-04 to -20",
+     "unit": null,
+     "position": 4,
+     "isFilterable": true,
+     "templateKey": "nominal_size_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "Carbon steel (316 stainless on request)",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "material"
+    },
+    {
+     "group": "Construction",
+     "label": "Surface Treatment",
+     "value": "Zinc-plated, Cr3+ passivated, RoHS-compliant",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "surface_treatment"
+    },
+    {
+     "group": "Compliance",
+     "label": "Applicable Standards",
+     "value": "BSP parallel thread to ISO 228-1",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": "applicable_standards"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-BSP-MAL-FLAT-0408",
+     "hoseDash": 4,
+     "hoseInch": "1/4\"",
+     "hoseDn": 6,
+     "portLabel": "G1/2\"×14",
+     "portDash": 8,
+     "dimensions": {
+      "S1": 27.0,
+      "A": 33.5,
+      "C": 14.0,
+      "oRing": "115"
+     },
+     "sourcePart": "12211-08-04",
+     "position": 0
+    },
+    {
+     "partNumber": "IH-BSP-MAL-FLAT-0404",
+     "hoseDash": 4,
+     "hoseInch": "1/4\"",
+     "hoseDn": 6,
+     "portLabel": "G1/4\"×19",
+     "portDash": 4,
+     "dimensions": {
+      "S1": 19.0,
+      "A": 23.5,
+      "C": 11.0,
+      "oRing": "111"
+     },
+     "sourcePart": "12211-04-04",
+     "position": 1
+    },
+    {
+     "partNumber": "IH-BSP-MAL-FLAT-0608",
+     "hoseDash": 6,
+     "hoseInch": "3/8\"",
+     "hoseDn": 10,
+     "portLabel": "G1/2\"×14",
+     "portDash": 8,
+     "dimensions": {
+      "S1": 27.0,
+      "A": 33.5,
+      "C": 14.0,
+      "oRing": "115"
+     },
+     "sourcePart": "12211-08-06",
+     "position": 2
+    },
+    {
+     "partNumber": "IH-BSP-MAL-FLAT-0604",
+     "hoseDash": 6,
+     "hoseInch": "3/8\"",
+     "hoseDn": 10,
+     "portLabel": "G1/4\"×19",
+     "portDash": 4,
+     "dimensions": {
+      "S1": 19.0,
+      "A": 23.5,
+      "C": 11.0,
+      "oRing": "111"
+     },
+     "sourcePart": "12211-04-06",
+     "position": 3
+    },
+    {
+     "partNumber": "IH-BSP-MAL-FLAT-0606",
+     "hoseDash": 6,
+     "hoseInch": "3/8\"",
+     "hoseDn": 10,
+     "portLabel": "G3/8\"×19",
+     "portDash": 6,
+     "dimensions": {
+      "S1": 22.0,
+      "A": 26.5,
+      "C": 12.0,
+      "oRing": "113"
+     },
+     "sourcePart": "12211-06-06",
+     "position": 4
+    },
+    {
+     "partNumber": "IH-BSP-MAL-FLAT-0808",
+     "hoseDash": 8,
+     "hoseInch": "1/2\"",
+     "hoseDn": 12,
+     "portLabel": "G1/2\"×14",
+     "portDash": 8,
+     "dimensions": {
+      "S1": 27.0,
+      "A": 34.0,
+      "C": 14.0,
+      "oRing": "115"
+     },
+     "sourcePart": "12211-08-08",
+     "position": 5
+    },
+    {
+     "partNumber": "IH-BSP-MAL-FLAT-1012",
+     "hoseDash": 10,
+     "hoseInch": "5/8\"",
+     "hoseDn": 16,
+     "portLabel": "G3/4\"×14",
+     "portDash": 12,
+     "dimensions": {
+      "S1": 32.0,
+      "A": 33.5,
+      "C": 15.5,
+      "oRing": "119"
+     },
+     "sourcePart": "12211-12-10",
+     "position": 6
+    },
+    {
+     "partNumber": "IH-BSP-MAL-FLAT-1010",
+     "hoseDash": 10,
+     "hoseInch": "5/8\"",
+     "hoseDn": 16,
+     "portLabel": "G5/8\"×14",
+     "portDash": 10,
+     "dimensions": {
+      "S1": 30.0,
+      "A": 36.0,
+      "C": 15.5,
+      "oRing": "910"
+     },
+     "sourcePart": "12211-10-10",
+     "position": 7
+    },
+    {
+     "partNumber": "IH-BSP-MAL-FLAT-1212",
+     "hoseDash": 12,
+     "hoseInch": "3/4\"",
+     "hoseDn": 20,
+     "portLabel": "G3/4\"×14",
+     "portDash": 12,
+     "dimensions": {
+      "S1": 32.0,
+      "A": 38.0,
+      "C": 15.5,
+      "oRing": "119"
+     },
+     "sourcePart": "12211-12-12",
+     "position": 8
+    },
+    {
+     "partNumber": "IH-BSP-MAL-FLAT-1616",
+     "hoseDash": 16,
+     "hoseInch": "1\"",
+     "hoseDn": 25,
+     "portLabel": "G1\"×11",
+     "portDash": 16,
+     "dimensions": {
+      "S1": 41.0,
+      "A": 44.5,
+      "C": 18.5,
+      "oRing": "217"
+     },
+     "sourcePart": "12211-16-16",
+     "position": 9
+    },
+    {
+     "partNumber": "IH-BSP-MAL-FLAT-1612",
+     "hoseDash": 16,
+     "hoseInch": "1\"",
+     "hoseDn": 25,
+     "portLabel": "G3/4\"×14",
+     "portDash": 12,
+     "dimensions": {
+      "S1": 32.0,
+      "A": 36.0,
+      "C": 15.5,
+      "oRing": "119"
+     },
+     "sourcePart": "12211-12-16",
+     "position": 10
+    },
+    {
+     "partNumber": "IH-BSP-MAL-FLAT-2020",
+     "hoseDash": 20,
+     "hoseInch": "1.1/4\"",
+     "hoseDn": 32,
+     "portLabel": "G1.1/4\"×11",
+     "portDash": 20,
+     "dimensions": {
+      "S1": 50.0,
+      "A": 46.0,
+      "C": 20.0,
+      "oRing": "222"
+     },
+     "sourcePart": "12211-20-20",
+     "position": 11
+    }
+   ],
+   "sourceFamily": "12211 (p51)"
+  },
+  {
+   "sku": "IH-BSP-FEM-FLAT-45",
+   "title": "45° BSP Female Flat Seat Hose Fitting",
+   "slug": "45-bsp-female-flat-seat-hose-fitting",
+   "categorySlug": "bsp-hose-fittings",
+   "specTemplateSlug": "threaded-fitting-spec",
+   "focusKeyword": "BSP flat seat 45 elbow hose fitting",
+   "imageFromSku": "IH-BSP-FEM-60-45",
+   "descriptionShort": "45° BSP Female Flat Seat — flat seat, sealing against the mating face, in 6 sizes from -04.",
+   "descriptionLong": "<p>The <strong>45° BSP Female Flat Seat Hose Fitting</strong> is a hydraulic hose fitting with flat seat, sealing against the mating face.</p>\n<p>The 45° elbow of the BSP flat-seat family. The straight version has been on the site; the two elbows had not.</p>\n<h3>Construction</h3>\n<ul>\n<li>Configuration: 45 elbow</li>\n<li>Thread: G1&quot;×11 to G3/8&quot;×19</li>\n<li>Sealing form: Flat seat, sealing against the mating face</li>\n<li>Gender: female-swivel</li>\n<li>Material: carbon steel, zinc-plated and Cr3+ passivated (316 stainless on request)</li>\n</ul>\n<h3>Sizes</h3>\n<p>6 sizes, hose bore -04 to -20, threads G1&quot;×11 to G3/8&quot;×19. The full size and dimension table is on this page.</p>\n<h3>How to order</h3>\n<p>Quote the Indus part number for the size you need. Tell us the hose grade and bore and we will include the matching crimp ferrule — the ferrule follows the hose, not the fitting. Indus crimps and pressure-tests assemblies before dispatch.</p>",
+   "seoTitle": "45° BSP Female Flat Seat Hose Fitting | G1\"×11–G3/8\"×19",
+   "seoDescription": "45° BSP Female Flat Seat Hose Fitting — 6 sizes (-04 to -20), G1\"×11 to G3/8\"×19. Carbon steel or 316 stainless, ex-Dubai.",
+   "faqs": [
+    {
+     "question": "What is the sealing form?",
+     "answer": "Flat seat, sealing against the mating face. Pair it with the matching counterpart — a mismatched sealing form will seat but will not hold pressure."
+    },
+    {
+     "question": "What sizes are available?",
+     "answer": "6 sizes, hose bore -04 to -20, threads G1\"×11 to G3/8\"×19. Every combination in the table on this page is an orderable part number."
+    },
+    {
+     "question": "What is the maximum working pressure?",
+     "answer": "The hose grade and bore set the assembly rating, not the fitting. A correctly crimped fitting does not derate the hose. Tell us the grade and bore on the RFQ and we will confirm the figure in writing."
+    },
+    {
+     "question": "Which ferrule pairs with this fitting?",
+     "answer": "The one that matches your hose grade — the skive/no-skive choice follows the hose construction, not the fitting end. Send the hose grade with your enquiry and we will specify the ferrule and the crimp diameter."
+    },
+    {
+     "question": "Is stainless steel available?",
+     "answer": "Yes — 316 stainless on request across the range. Standard supply is carbon steel, zinc-plated and Cr3+ passivated. Add \"-SS\" to the part number when you enquire."
+    },
+    {
+     "question": "Can Indus crimp the assembly?",
+     "answer": "Yes. We crimp, pressure-test and certify assemblies in Dubai and ship UAE-wide. Send the hose grade, bore, both end fittings, overall length and orientation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Fitting Configuration",
+     "value": "45-elbow",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "fitting_configuration"
+    },
+    {
+     "group": "Identification",
+     "label": "Thread Form",
+     "value": "G1\"×11 to G3/8\"×19",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "thread_form"
+    },
+    {
+     "group": "Identification",
+     "label": "Sealing Form",
+     "value": "Flat seat, sealing against the mating face",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "sealing_form"
+    },
+    {
+     "group": "Identification",
+     "label": "Thread Gender",
+     "value": "female-swivel",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "gender"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size Range",
+     "value": "-04 to -20",
+     "unit": null,
+     "position": 4,
+     "isFilterable": true,
+     "templateKey": "nominal_size_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "Carbon steel (316 stainless on request)",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "material"
+    },
+    {
+     "group": "Construction",
+     "label": "Surface Treatment",
+     "value": "Zinc-plated, Cr3+ passivated, RoHS-compliant",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "surface_treatment"
+    },
+    {
+     "group": "Compliance",
+     "label": "Applicable Standards",
+     "value": "BSP parallel thread to ISO 228-1",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": "applicable_standards"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-BSP-FEM-FLAT-45-0404",
+     "hoseDash": 4,
+     "hoseInch": "1/4\"",
+     "hoseDn": 6,
+     "portLabel": "G1/4\"×19",
+     "portDash": 4,
+     "dimensions": {
+      "S2": 19.0,
+      "A": 40.9,
+      "C": 8.0,
+      "H": 18.8
+     },
+     "sourcePart": "22241-04-04",
+     "position": 0
+    },
+    {
+     "partNumber": "IH-BSP-FEM-FLAT-45-0606",
+     "hoseDash": 6,
+     "hoseInch": "3/8\"",
+     "hoseDn": 10,
+     "portLabel": "G3/8\"×19",
+     "portDash": 6,
+     "dimensions": {
+      "S2": 22.0,
+      "A": 45.3,
+      "C": 9.0,
+      "H": 21.0
+     },
+     "sourcePart": "22241-06-06",
+     "position": 1
+    },
+    {
+     "partNumber": "IH-BSP-FEM-FLAT-45-0808",
+     "hoseDash": 8,
+     "hoseInch": "1/2\"",
+     "hoseDn": 12,
+     "portLabel": "G1/2\"×14",
+     "portDash": 8,
+     "dimensions": {
+      "S2": 27.0,
+      "A": 58.9,
+      "C": 10.5,
+      "H": 24.0
+     },
+     "sourcePart": "22241-08-08",
+     "position": 2
+    },
+    {
+     "partNumber": "IH-BSP-FEM-FLAT-45-1212",
+     "hoseDash": 12,
+     "hoseInch": "3/4\"",
+     "hoseDn": 20,
+     "portLabel": "G3/4\"×14",
+     "portDash": 12,
+     "dimensions": {
+      "S2": 32.0,
+      "A": 77.4,
+      "C": 13.5,
+      "H": 30.0
+     },
+     "sourcePart": "22241-12-12",
+     "position": 3
+    },
+    {
+     "partNumber": "IH-BSP-FEM-FLAT-45-1616",
+     "hoseDash": 16,
+     "hoseInch": "1\"",
+     "hoseDn": 25,
+     "portLabel": "G1\"×11",
+     "portDash": 16,
+     "dimensions": {
+      "S2": 41.0,
+      "A": 82.7,
+      "C": 15.5,
+      "H": 31.5
+     },
+     "sourcePart": "22241-16-16",
+     "position": 4
+    },
+    {
+     "partNumber": "IH-BSP-FEM-FLAT-45-2020",
+     "hoseDash": 20,
+     "hoseInch": "1.1/4\"",
+     "hoseDn": 32,
+     "portLabel": "G1.1/4\"×11",
+     "portDash": 20,
+     "dimensions": {
+      "S2": 50.0,
+      "A": 97.3,
+      "C": 15.5,
+      "H": 36.6
+     },
+     "sourcePart": "22241-20-20W",
+     "position": 5
+    }
+   ],
+   "sourceFamily": "22241 (p51)"
+  },
+  {
+   "sku": "IH-BSP-FEM-FLAT-90",
+   "title": "90° BSP Female Flat Seat Hose Fitting",
+   "slug": "90-bsp-female-flat-seat-hose-fitting",
+   "categorySlug": "bsp-hose-fittings",
+   "specTemplateSlug": "threaded-fitting-spec",
+   "focusKeyword": "BSP flat seat 90 elbow hose fitting",
+   "imageFromSku": "IH-BSP-FEM-60-90",
+   "descriptionShort": "90° BSP Female Flat Seat — flat seat, sealing against the mating face, in 7 sizes from -04.",
+   "descriptionLong": "<p>The <strong>90° BSP Female Flat Seat Hose Fitting</strong> is a hydraulic hose fitting with flat seat, sealing against the mating face.</p>\n<p>The 90° elbow of the BSP flat-seat family.</p>\n<h3>Construction</h3>\n<ul>\n<li>Configuration: 90 elbow</li>\n<li>Thread: G1&quot;×11 to G3/8&quot;×19</li>\n<li>Sealing form: Flat seat, sealing against the mating face</li>\n<li>Gender: female-swivel</li>\n<li>Material: carbon steel, zinc-plated and Cr3+ passivated (316 stainless on request)</li>\n</ul>\n<h3>Sizes</h3>\n<p>7 sizes, hose bore -04 to -24, threads G1&quot;×11 to G3/8&quot;×19. The full size and dimension table is on this page.</p>\n<h3>How to order</h3>\n<p>Quote the Indus part number for the size you need. Tell us the hose grade and bore and we will include the matching crimp ferrule — the ferrule follows the hose, not the fitting. Indus crimps and pressure-tests assemblies before dispatch.</p>",
+   "seoTitle": "90° BSP Female Flat Seat Hose Fitting | G1\"×11–G3/8\"×19",
+   "seoDescription": "90° BSP Female Flat Seat Hose Fitting — 7 sizes (-04 to -24), G1\"×11 to G3/8\"×19. Carbon steel or 316 stainless, ex-Dubai.",
+   "faqs": [
+    {
+     "question": "What is the sealing form?",
+     "answer": "Flat seat, sealing against the mating face. Pair it with the matching counterpart — a mismatched sealing form will seat but will not hold pressure."
+    },
+    {
+     "question": "What sizes are available?",
+     "answer": "7 sizes, hose bore -04 to -24, threads G1\"×11 to G3/8\"×19. Every combination in the table on this page is an orderable part number."
+    },
+    {
+     "question": "What is the maximum working pressure?",
+     "answer": "The hose grade and bore set the assembly rating, not the fitting. A correctly crimped fitting does not derate the hose. Tell us the grade and bore on the RFQ and we will confirm the figure in writing."
+    },
+    {
+     "question": "Which ferrule pairs with this fitting?",
+     "answer": "The one that matches your hose grade — the skive/no-skive choice follows the hose construction, not the fitting end. Send the hose grade with your enquiry and we will specify the ferrule and the crimp diameter."
+    },
+    {
+     "question": "Is stainless steel available?",
+     "answer": "Yes — 316 stainless on request across the range. Standard supply is carbon steel, zinc-plated and Cr3+ passivated. Add \"-SS\" to the part number when you enquire."
+    },
+    {
+     "question": "Can Indus crimp the assembly?",
+     "answer": "Yes. We crimp, pressure-test and certify assemblies in Dubai and ship UAE-wide. Send the hose grade, bore, both end fittings, overall length and orientation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Fitting Configuration",
+     "value": "90-elbow",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "fitting_configuration"
+    },
+    {
+     "group": "Identification",
+     "label": "Thread Form",
+     "value": "G1\"×11 to G3/8\"×19",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "thread_form"
+    },
+    {
+     "group": "Identification",
+     "label": "Sealing Form",
+     "value": "Flat seat, sealing against the mating face",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "sealing_form"
+    },
+    {
+     "group": "Identification",
+     "label": "Thread Gender",
+     "value": "female-swivel",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "gender"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size Range",
+     "value": "-04 to -24",
+     "unit": null,
+     "position": 4,
+     "isFilterable": true,
+     "templateKey": "nominal_size_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "Carbon steel (316 stainless on request)",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "material"
+    },
+    {
+     "group": "Construction",
+     "label": "Surface Treatment",
+     "value": "Zinc-plated, Cr3+ passivated, RoHS-compliant",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "surface_treatment"
+    },
+    {
+     "group": "Compliance",
+     "label": "Applicable Standards",
+     "value": "BSP parallel thread to ISO 228-1",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": "applicable_standards"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-BSP-FEM-FLAT-90-0404",
+     "hoseDash": 4,
+     "hoseInch": "1/4\"",
+     "hoseDn": 6,
+     "portLabel": "G1/4\"×19",
+     "portDash": 4,
+     "dimensions": {
+      "S2": 19.0,
+      "A": 30.0,
+      "C": 8.0,
+      "H": 34.5
+     },
+     "sourcePart": "22291-04-04",
+     "position": 0
+    },
+    {
+     "partNumber": "IH-BSP-FEM-FLAT-90-0606",
+     "hoseDash": 6,
+     "hoseInch": "3/8\"",
+     "hoseDn": 10,
+     "portLabel": "G3/8\"×19",
+     "portDash": 6,
+     "dimensions": {
+      "S2": 22.0,
+      "A": 35.3,
+      "C": 9.0,
+      "H": 41.3
+     },
+     "sourcePart": "22291-06-06",
+     "position": 1
+    },
+    {
+     "partNumber": "IH-BSP-FEM-FLAT-90-0808",
+     "hoseDash": 8,
+     "hoseInch": "1/2\"",
+     "hoseDn": 12,
+     "portLabel": "G1/2\"×14",
+     "portDash": 8,
+     "dimensions": {
+      "S2": 27.0,
+      "A": 41.0,
+      "C": 10.5,
+      "H": 48.0
+     },
+     "sourcePart": "22291-08-08",
+     "position": 2
+    },
+    {
+     "partNumber": "IH-BSP-FEM-FLAT-90-1212",
+     "hoseDash": 12,
+     "hoseInch": "3/4\"",
+     "hoseDn": 20,
+     "portLabel": "G3/4\"×14",
+     "portDash": 12,
+     "dimensions": {
+      "S2": 32.0,
+      "A": 65.5,
+      "C": 13.5,
+      "H": 63.5
+     },
+     "sourcePart": "22291-12-12",
+     "position": 3
+    },
+    {
+     "partNumber": "IH-BSP-FEM-FLAT-90-1616",
+     "hoseDash": 16,
+     "hoseInch": "1\"",
+     "hoseDn": 25,
+     "portLabel": "G1\"×11",
+     "portDash": 16,
+     "dimensions": {
+      "S2": 41.0,
+      "A": 76.7,
+      "C": 15.5,
+      "H": 70.0
+     },
+     "sourcePart": "22291-16-16",
+     "position": 4
+    },
+    {
+     "partNumber": "IH-BSP-FEM-FLAT-90-2020",
+     "hoseDash": 20,
+     "hoseInch": "1.1/4\"",
+     "hoseDn": 32,
+     "portLabel": "G1.1/4\"×11",
+     "portDash": 20,
+     "dimensions": {
+      "S2": 50.0,
+      "A": 91.5,
+      "C": 15.5,
+      "H": 82.5
+     },
+     "sourcePart": "22291-20-20W",
+     "position": 5
+    },
+    {
+     "partNumber": "IH-BSP-FEM-FLAT-90-2424",
+     "hoseDash": 24,
+     "hoseInch": "1.1/2\"",
+     "hoseDn": 40,
+     "portLabel": "G1.1/2\"×11",
+     "portDash": 24,
+     "dimensions": {
+      "S2": 55.0,
+      "A": 109.4,
+      "C": 17.5,
+      "H": 98.5
+     },
+     "sourcePart": "22291-24-24W",
+     "position": 6
+    }
+   ],
+   "sourceFamily": "22291 (p53)"
+  },
+  {
+   "sku": "IH-BSP-MAL-60-BS",
+   "title": "BSP Male 60° Cone or Bonded Seal Hose Fitting",
+   "slug": "bsp-male-60-cone-or-bonded-seal-hose-fitting",
+   "categorySlug": "bsp-hose-fittings",
+   "specTemplateSlug": "threaded-fitting-spec",
+   "focusKeyword": "BSP male bonded seal hose fitting",
+   "imageFromSku": "IH-BSP-MAL-60",
+   "descriptionShort": "BSP Male 60° Cone or Bonded Seal — 60° cone, or a flat face with a bonded seal washer — the body accepts either, in 19 sizes from -03.",
+   "descriptionLong": "<p>The <strong>BSP Male 60° Cone or Bonded Seal Hose Fitting</strong> is a hydraulic hose fitting with 60° cone, or a flat face with a bonded seal washer — the body accepts either.</p>\n<p>A double-use body: it seals on the 60° cone against a coned port, or on the face with a bonded seal washer against a flat one. One fitting instead of two on a mixed machine.</p>\n<h3>Construction</h3>\n<ul>\n<li>Configuration: straight</li>\n<li>Thread: G1&quot;×11 to G5/8&quot;×14</li>\n<li>Sealing form: 60° cone, or a flat face with a bonded seal washer — the body accepts either</li>\n<li>Gender: male</li>\n<li>Material: carbon steel, zinc-plated and Cr3+ passivated (316 stainless on request)</li>\n</ul>\n<h3>Sizes</h3>\n<p>19 sizes, hose bore -03 to -32, threads G1&quot;×11 to G5/8&quot;×14. The full size and dimension table is on this page.</p>\n<h3>How to order</h3>\n<p>Quote the Indus part number for the size you need. Tell us the hose grade and bore and we will include the matching crimp ferrule — the ferrule follows the hose, not the fitting. Indus crimps and pressure-tests assemblies before dispatch.</p>",
+   "seoTitle": "BSP Male 60° Cone or Bonded Seal Hose Fitting | G1\"×11–G5/8\"×14",
+   "seoDescription": "BSP Male 60° Cone or Bonded Seal Hose Fitting — 19 sizes (-03 to -32), G1\"×11 to G5/8\"×14. Carbon steel or 316 stainless, ex-Dubai.",
+   "faqs": [
+    {
+     "question": "What is the sealing form?",
+     "answer": "60° cone, or a flat face with a bonded seal washer — the body accepts either. Pair it with the matching counterpart — a mismatched sealing form will seat but will not hold pressure."
+    },
+    {
+     "question": "What sizes are available?",
+     "answer": "19 sizes, hose bore -03 to -32, threads G1\"×11 to G5/8\"×14. Every combination in the table on this page is an orderable part number."
+    },
+    {
+     "question": "What is the maximum working pressure?",
+     "answer": "The hose grade and bore set the assembly rating, not the fitting. A correctly crimped fitting does not derate the hose. Tell us the grade and bore on the RFQ and we will confirm the figure in writing."
+    },
+    {
+     "question": "Which ferrule pairs with this fitting?",
+     "answer": "The one that matches your hose grade — the skive/no-skive choice follows the hose construction, not the fitting end. Send the hose grade with your enquiry and we will specify the ferrule and the crimp diameter."
+    },
+    {
+     "question": "Is stainless steel available?",
+     "answer": "Yes — 316 stainless on request across the range. Standard supply is carbon steel, zinc-plated and Cr3+ passivated. Add \"-SS\" to the part number when you enquire."
+    },
+    {
+     "question": "Can Indus crimp the assembly?",
+     "answer": "Yes. We crimp, pressure-test and certify assemblies in Dubai and ship UAE-wide. Send the hose grade, bore, both end fittings, overall length and orientation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Fitting Configuration",
+     "value": "straight",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "fitting_configuration"
+    },
+    {
+     "group": "Identification",
+     "label": "Thread Form",
+     "value": "G1\"×11 to G5/8\"×14",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "thread_form"
+    },
+    {
+     "group": "Identification",
+     "label": "Sealing Form",
+     "value": "60° cone, or a flat face with a bonded seal washer — the body accepts either",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "sealing_form"
+    },
+    {
+     "group": "Identification",
+     "label": "Thread Gender",
+     "value": "male",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "gender"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size Range",
+     "value": "-03 to -32",
+     "unit": null,
+     "position": 4,
+     "isFilterable": true,
+     "templateKey": "nominal_size_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "Carbon steel (316 stainless on request)",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "material"
+    },
+    {
+     "group": "Construction",
+     "label": "Surface Treatment",
+     "value": "Zinc-plated, Cr3+ passivated, RoHS-compliant",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "surface_treatment"
+    },
+    {
+     "group": "Compliance",
+     "label": "Applicable Standards",
+     "value": "BSP parallel thread to ISO 228-1",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": "applicable_standards"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-BSP-MAL-60-BS-0302",
+     "hoseDash": 3,
+     "hoseInch": "3/16\"",
+     "hoseDn": 5,
+     "portLabel": "G1/8\"×28",
+     "portDash": 2,
+     "dimensions": {
+      "S2": 12.0,
+      "A": 22.0,
+      "C": 10.0
+     },
+     "sourcePart": "12611A-02-03",
+     "position": 0
+    },
+    {
+     "partNumber": "IH-BSP-MAL-60-BS-0404",
+     "hoseDash": 4,
+     "hoseInch": "1/4\"",
+     "hoseDn": 6,
+     "portLabel": "G1/4\"×19",
+     "portDash": 4,
+     "dimensions": {
+      "S2": 14.0,
+      "A": 24.5,
+      "C": 12.0
+     },
+     "sourcePart": "12611A-04-04",
+     "position": 1
+    },
+    {
+     "partNumber": "IH-BSP-MAL-60-BS-0506",
+     "hoseDash": 5,
+     "hoseInch": "5/16\"",
+     "hoseDn": 8,
+     "portLabel": "G3/8\"×19",
+     "portDash": 6,
+     "dimensions": {
+      "S2": 17.0,
+      "A": 26.0,
+      "C": 13.5
+     },
+     "sourcePart": "12611A-06-05",
+     "position": 2
+    },
+    {
+     "partNumber": "IH-BSP-MAL-60-BS-0608",
+     "hoseDash": 6,
+     "hoseInch": "3/8\"",
+     "hoseDn": 10,
+     "portLabel": "G1/2\"×14",
+     "portDash": 8,
+     "dimensions": {
+      "S2": 22.0,
+      "A": 30.5,
+      "C": 16.0
+     },
+     "sourcePart": "12611A-08-06",
+     "position": 3
+    },
+    {
+     "partNumber": "IH-BSP-MAL-60-BS-0606",
+     "hoseDash": 6,
+     "hoseInch": "3/8\"",
+     "hoseDn": 10,
+     "portLabel": "G3/8\"×19",
+     "portDash": 6,
+     "dimensions": {
+      "S2": 17.0,
+      "A": 27.5,
+      "C": 13.5
+     },
+     "sourcePart": "12611A-06-06",
+     "position": 4
+    },
+    {
+     "partNumber": "IH-BSP-MAL-60-BS-0808",
+     "hoseDash": 8,
+     "hoseInch": "1/2\"",
+     "hoseDn": 12,
+     "portLabel": "G1/2\"×14",
+     "portDash": 8,
+     "dimensions": {
+      "S2": 22.0,
+      "A": 31.0,
+      "C": 16.0
+     },
+     "sourcePart": "12611A-08-08",
+     "position": 5
+    },
+    {
+     "partNumber": "IH-BSP-MAL-60-BS-0812",
+     "hoseDash": 8,
+     "hoseInch": "1/2\"",
+     "hoseDn": 12,
+     "portLabel": "G3/4\"×14",
+     "portDash": 12,
+     "dimensions": {
+      "S2": 27.0,
+      "A": 35.5,
+      "C": 18.5
+     },
+     "sourcePart": "12611A-12-08",
+     "position": 6
+    },
+    {
+     "partNumber": "IH-BSP-MAL-60-BS-0806",
+     "hoseDash": 8,
+     "hoseInch": "1/2\"",
+     "hoseDn": 12,
+     "portLabel": "G3/8\"×19",
+     "portDash": 6,
+     "dimensions": {
+      "S2": 19.0,
+      "A": 26.5,
+      "C": 13.5
+     },
+     "sourcePart": "12611A-06-08",
+     "position": 7
+    },
+    {
+     "partNumber": "IH-BSP-MAL-60-BS-0810",
+     "hoseDash": 8,
+     "hoseInch": "1/2\"",
+     "hoseDn": 12,
+     "portLabel": "G5/8\"×14",
+     "portDash": 10,
+     "dimensions": {
+      "S2": 24.0,
+      "A": 32.5,
+      "C": 17.5
+     },
+     "sourcePart": "12611A-10-08",
+     "position": 8
+    },
+    {
+     "partNumber": "IH-BSP-MAL-60-BS-1012",
+     "hoseDash": 10,
+     "hoseInch": "5/8\"",
+     "hoseDn": 16,
+     "portLabel": "G3/4\"×14",
+     "portDash": 12,
+     "dimensions": {
+      "S2": 27.0,
+      "A": 37.0,
+      "C": 18.5
+     },
+     "sourcePart": "12611A-12-10",
+     "position": 9
+    },
+    {
+     "partNumber": "IH-BSP-MAL-60-BS-1010",
+     "hoseDash": 10,
+     "hoseInch": "5/8\"",
+     "hoseDn": 16,
+     "portLabel": "G5/8\"×14",
+     "portDash": 10,
+     "dimensions": {
+      "S2": 24.0,
+      "A": 33.5,
+      "C": 17.5
+     },
+     "sourcePart": "12611A-10-10",
+     "position": 10
+    },
+    {
+     "partNumber": "IH-BSP-MAL-60-BS-1216",
+     "hoseDash": 12,
+     "hoseInch": "3/4\"",
+     "hoseDn": 20,
+     "portLabel": "G1\"×11",
+     "portDash": 16,
+     "dimensions": {
+      "S2": 36.0,
+      "A": 40.5,
+      "C": 20.5
+     },
+     "sourcePart": "12611A-16-12",
+     "position": 11
+    },
+    {
+     "partNumber": "IH-BSP-MAL-60-BS-1212",
+     "hoseDash": 12,
+     "hoseInch": "3/4\"",
+     "hoseDn": 20,
+     "portLabel": "G3/4\"×14",
+     "portDash": 12,
+     "dimensions": {
+      "S2": 27.0,
+      "A": 36.5,
+      "C": 18.5
+     },
+     "sourcePart": "12611A-12-12",
+     "position": 12
+    },
+    {
+     "partNumber": "IH-BSP-MAL-60-BS-1616",
+     "hoseDash": 16,
+     "hoseInch": "1\"",
+     "hoseDn": 25,
+     "portLabel": "G1\"×11",
+     "portDash": 16,
+     "dimensions": {
+      "S2": 36.0,
+      "A": 41.5,
+      "C": 20.5
+     },
+     "sourcePart": "12611A-16-16",
+     "position": 13
+    },
+    {
+     "partNumber": "IH-BSP-MAL-60-BS-1620",
+     "hoseDash": 16,
+     "hoseInch": "1\"",
+     "hoseDn": 25,
+     "portLabel": "G1.1/4\"×11",
+     "portDash": 20,
+     "dimensions": {
+      "S2": 46.0,
+      "A": 43.5,
+      "C": 20.5
+     },
+     "sourcePart": "12611A-20-16",
+     "position": 14
+    },
+    {
+     "partNumber": "IH-BSP-MAL-60-BS-2024",
+     "hoseDash": 20,
+     "hoseInch": "1.1/4\"",
+     "hoseDn": 32,
+     "portLabel": "G1.1/2\"×11",
+     "portDash": 24,
+     "dimensions": {
+      "S2": 50.0,
+      "A": 49.0,
+      "C": 23.0
+     },
+     "sourcePart": "12611A-24-20",
+     "position": 15
+    },
+    {
+     "partNumber": "IH-BSP-MAL-60-BS-2020",
+     "hoseDash": 20,
+     "hoseInch": "1.1/4\"",
+     "hoseDn": 32,
+     "portLabel": "G1.1/4\"×11",
+     "portDash": 20,
+     "dimensions": {
+      "S2": 46.0,
+      "A": 44.5,
+      "C": 20.5
+     },
+     "sourcePart": "12611A-20-20",
+     "position": 16
+    },
+    {
+     "partNumber": "IH-BSP-MAL-60-BS-2424",
+     "hoseDash": 24,
+     "hoseInch": "1.1/2\"",
+     "hoseDn": 40,
+     "portLabel": "G1.1/2\"×11",
+     "portDash": 24,
+     "dimensions": {
+      "S2": 50.0,
+      "A": 46.0,
+      "C": 23.0
+     },
+     "sourcePart": "12611A-24-24",
+     "position": 17
+    },
+    {
+     "partNumber": "IH-BSP-MAL-60-BS-3232",
+     "hoseDash": 32,
+     "hoseInch": "2\"",
+     "hoseDn": 50,
+     "portLabel": "G2\"×11",
+     "portDash": 32,
+     "dimensions": {
+      "S2": 65.0,
+      "A": 53.5,
+      "C": 25.5
+     },
+     "sourcePart": "12611A-32-32",
+     "position": 18
+    }
+   ],
+   "sourceFamily": "12611A (p55)"
+  },
+  {
+   "sku": "IH-BSP-MAL-T-SP",
+   "title": "BSPT Male Tapered Hose Fitting (SP Body)",
+   "slug": "bspt-male-tapered-hose-fitting-sp-body",
+   "categorySlug": "bsp-hose-fittings",
+   "specTemplateSlug": "threaded-fitting-spec",
+   "focusKeyword": "BSPT male SP hose fitting",
+   "imageFromSku": "IH-BSP-MAL-T",
+   "descriptionShort": "BSPT Male Tapered (SP Body) — tapered thread, self-sealing on engagement, in 23 sizes from -03.",
+   "descriptionLong": "<p>The <strong>BSPT Male Tapered Hose Fitting (SP Body)</strong> is a hydraulic hose fitting with tapered thread, self-sealing on engagement.</p>\n<p>The SP body of the BSPT male. Same tapered thread and the same size range as the standard body; the catalogue lists it as its own series.</p>\n<h3>Construction</h3>\n<ul>\n<li>Configuration: straight</li>\n<li>Thread: R1&quot;×11 to R3/8&quot;×19</li>\n<li>Sealing form: Tapered thread, self-sealing on engagement</li>\n<li>Gender: male</li>\n<li>Material: carbon steel, zinc-plated and Cr3+ passivated (316 stainless on request)</li>\n</ul>\n<h3>Sizes</h3>\n<p>23 sizes, hose bore -03 to -32, threads R1&quot;×11 to R3/8&quot;×19. The full size and dimension table is on this page.</p>\n<h3>How to order</h3>\n<p>Quote the Indus part number for the size you need. Tell us the hose grade and bore and we will include the matching crimp ferrule — the ferrule follows the hose, not the fitting. Indus crimps and pressure-tests assemblies before dispatch.</p>",
+   "seoTitle": "BSPT Male Tapered Hose Fitting (SP Body) | R1\"×11–R3/8\"×19",
+   "seoDescription": "BSPT Male Tapered Hose Fitting (SP Body) — 23 sizes (-03 to -32), R1\"×11 to R3/8\"×19. Carbon steel or 316 stainless, ex-Dubai.",
+   "faqs": [
+    {
+     "question": "What is the sealing form?",
+     "answer": "Tapered thread, self-sealing on engagement. Pair it with the matching counterpart — a mismatched sealing form will seat but will not hold pressure."
+    },
+    {
+     "question": "What sizes are available?",
+     "answer": "23 sizes, hose bore -03 to -32, threads R1\"×11 to R3/8\"×19. Every combination in the table on this page is an orderable part number."
+    },
+    {
+     "question": "What is the maximum working pressure?",
+     "answer": "The hose grade and bore set the assembly rating, not the fitting. A correctly crimped fitting does not derate the hose. Tell us the grade and bore on the RFQ and we will confirm the figure in writing."
+    },
+    {
+     "question": "Which ferrule pairs with this fitting?",
+     "answer": "The one that matches your hose grade — the skive/no-skive choice follows the hose construction, not the fitting end. Send the hose grade with your enquiry and we will specify the ferrule and the crimp diameter."
+    },
+    {
+     "question": "Is stainless steel available?",
+     "answer": "Yes — 316 stainless on request across the range. Standard supply is carbon steel, zinc-plated and Cr3+ passivated. Add \"-SS\" to the part number when you enquire."
+    },
+    {
+     "question": "Can Indus crimp the assembly?",
+     "answer": "Yes. We crimp, pressure-test and certify assemblies in Dubai and ship UAE-wide. Send the hose grade, bore, both end fittings, overall length and orientation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Fitting Configuration",
+     "value": "straight",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "fitting_configuration"
+    },
+    {
+     "group": "Identification",
+     "label": "Thread Form",
+     "value": "R1\"×11 to R3/8\"×19",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "thread_form"
+    },
+    {
+     "group": "Identification",
+     "label": "Sealing Form",
+     "value": "Tapered thread, self-sealing on engagement",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "sealing_form"
+    },
+    {
+     "group": "Identification",
+     "label": "Thread Gender",
+     "value": "male",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "gender"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size Range",
+     "value": "-03 to -32",
+     "unit": null,
+     "position": 4,
+     "isFilterable": true,
+     "templateKey": "nominal_size_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "Carbon steel (316 stainless on request)",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "material"
+    },
+    {
+     "group": "Construction",
+     "label": "Surface Treatment",
+     "value": "Zinc-plated, Cr3+ passivated, RoHS-compliant",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "surface_treatment"
+    },
+    {
+     "group": "Compliance",
+     "label": "Applicable Standards",
+     "value": "BSP taper (R) thread to ISO 7-1",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": "applicable_standards"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-BSP-MAL-T-SP-0302",
+     "hoseDash": 3,
+     "hoseInch": "3/16\"",
+     "hoseDn": 5,
+     "portLabel": "R1/8\"×28",
+     "portDash": 2,
+     "dimensions": {
+      "S2": 12.0,
+      "A": 22.0,
+      "C": 10.0
+     },
+     "sourcePart": "13011-02-03SP",
+     "position": 0
+    },
+    {
+     "partNumber": "IH-BSP-MAL-T-SP-0404",
+     "hoseDash": 4,
+     "hoseInch": "1/4\"",
+     "hoseDn": 6,
+     "portLabel": "R1/4\"×19",
+     "portDash": 4,
+     "dimensions": {
+      "S2": 14.0,
+      "A": 27.0,
+      "C": 14.5
+     },
+     "sourcePart": "13011-04-04SP",
+     "position": 1
+    },
+    {
+     "partNumber": "IH-BSP-MAL-T-SP-0402",
+     "hoseDash": 4,
+     "hoseInch": "1/4\"",
+     "hoseDn": 6,
+     "portLabel": "R1/8\"×28",
+     "portDash": 2,
+     "dimensions": {
+      "S2": 12.0,
+      "A": 22.5,
+      "C": 10.0
+     },
+     "sourcePart": "13011-02-04SP",
+     "position": 2
+    },
+    {
+     "partNumber": "IH-BSP-MAL-T-SP-0406",
+     "hoseDash": 4,
+     "hoseInch": "1/4\"",
+     "hoseDn": 6,
+     "portLabel": "R3/8\"×19",
+     "portDash": 6,
+     "dimensions": {
+      "S2": 17.0,
+      "A": 27.5,
+      "C": 15.0
+     },
+     "sourcePart": "13011-06-04SP",
+     "position": 3
+    },
+    {
+     "partNumber": "IH-BSP-MAL-T-SP-0504",
+     "hoseDash": 5,
+     "hoseInch": "5/16\"",
+     "hoseDn": 8,
+     "portLabel": "R1/4\"×19",
+     "portDash": 4,
+     "dimensions": {
+      "S2": 14.0,
+      "A": 25.0,
+      "C": 54.4
+     },
+     "sourcePart": "13011-04-05SP",
+     "position": 4
+    },
+    {
+     "partNumber": "IH-BSP-MAL-T-SP-0506",
+     "hoseDash": 5,
+     "hoseInch": "5/16\"",
+     "hoseDn": 8,
+     "portLabel": "R3/8\"×19",
+     "portDash": 6,
+     "dimensions": {
+      "S2": 17.0,
+      "A": 26.5,
+      "C": 15.0
+     },
+     "sourcePart": "13011-06-05SP",
+     "position": 5
+    },
+    {
+     "partNumber": "IH-BSP-MAL-T-SP-0608",
+     "hoseDash": 6,
+     "hoseInch": "3/8\"",
+     "hoseDn": 10,
+     "portLabel": "R1/2\"×14",
+     "portDash": 8,
+     "dimensions": {
+      "S2": 22.0,
+      "A": 34.5,
+      "C": 20.0
+     },
+     "sourcePart": "13011-08-06SP",
+     "position": 6
+    },
+    {
+     "partNumber": "IH-BSP-MAL-T-SP-0604",
+     "hoseDash": 6,
+     "hoseInch": "3/8\"",
+     "hoseDn": 10,
+     "portLabel": "R1/4\"×19",
+     "portDash": 4,
+     "dimensions": {
+      "S2": 17.0,
+      "A": 27.0,
+      "C": 14.5
+     },
+     "sourcePart": "13011-04-06SP",
+     "position": 7
+    },
+    {
+     "partNumber": "IH-BSP-MAL-T-SP-0606",
+     "hoseDash": 6,
+     "hoseInch": "3/8\"",
+     "hoseDn": 10,
+     "portLabel": "R3/8\"×19",
+     "portDash": 6,
+     "dimensions": {
+      "S2": 17.0,
+      "A": 27.5,
+      "C": 15.0
+     },
+     "sourcePart": "13011-06-06SP",
+     "position": 8
+    },
+    {
+     "partNumber": "IH-BSP-MAL-T-SP-0808",
+     "hoseDash": 8,
+     "hoseInch": "1/2\"",
+     "hoseDn": 12,
+     "portLabel": "R1/2\"×14",
+     "portDash": 8,
+     "dimensions": {
+      "S2": 22.0,
+      "A": 35.0,
+      "C": 20.0
+     },
+     "sourcePart": "13011-08-08SP",
+     "position": 9
+    },
+    {
+     "partNumber": "IH-BSP-MAL-T-SP-0812",
+     "hoseDash": 8,
+     "hoseInch": "1/2\"",
+     "hoseDn": 12,
+     "portLabel": "R3/4\"×14",
+     "portDash": 12,
+     "dimensions": {
+      "S2": 27.0,
+      "A": 37.0,
+      "C": 20.0
+     },
+     "sourcePart": "13011-12-08SP",
+     "position": 10
+    },
+    {
+     "partNumber": "IH-BSP-MAL-T-SP-0806",
+     "hoseDash": 8,
+     "hoseInch": "1/2\"",
+     "hoseDn": 12,
+     "portLabel": "R3/8\"×19",
+     "portDash": 6,
+     "dimensions": {
+      "S2": 19.0,
+      "A": 30.0,
+      "C": 15.0
+     },
+     "sourcePart": "13011-06-08SP",
+     "position": 11
+    },
+    {
+     "partNumber": "IH-BSP-MAL-T-SP-1008",
+     "hoseDash": 10,
+     "hoseInch": "5/8\"",
+     "hoseDn": 16,
+     "portLabel": "R1/2\"×14",
+     "portDash": 8,
+     "dimensions": {
+      "S2": 22.0,
+      "A": 38.0,
+      "C": 20.0
+     },
+     "sourcePart": "13011-08-10SP",
+     "position": 12
+    },
+    {
+     "partNumber": "IH-BSP-MAL-T-SP-1012",
+     "hoseDash": 10,
+     "hoseInch": "5/8\"",
+     "hoseDn": 16,
+     "portLabel": "R3/4\"×14",
+     "portDash": 12,
+     "dimensions": {
+      "S2": 27.0,
+      "A": 38.0,
+      "C": 20.0
+     },
+     "sourcePart": "13011-12-10SP",
+     "position": 13
+    },
+    {
+     "partNumber": "IH-BSP-MAL-T-SP-1216",
+     "hoseDash": 12,
+     "hoseInch": "3/4\"",
+     "hoseDn": 20,
+     "portLabel": "R1\"×11",
+     "portDash": 16,
+     "dimensions": {
+      "S2": 36.0,
+      "A": 44.0,
+      "C": 25.5
+     },
+     "sourcePart": "13011-16-12SP",
+     "position": 14
+    },
+    {
+     "partNumber": "IH-BSP-MAL-T-SP-1208",
+     "hoseDash": 12,
+     "hoseInch": "3/4\"",
+     "hoseDn": 20,
+     "portLabel": "R1/2\"×14",
+     "portDash": 8,
+     "dimensions": {
+      "S2": 27.0,
+      "A": 38.0,
+      "C": 20.0
+     },
+     "sourcePart": "13011-08-12SP",
+     "position": 15
+    },
+    {
+     "partNumber": "IH-BSP-MAL-T-SP-1212",
+     "hoseDash": 12,
+     "hoseInch": "3/4\"",
+     "hoseDn": 20,
+     "portLabel": "R3/4\"×14",
+     "portDash": 12,
+     "dimensions": {
+      "S2": 27.0,
+      "A": 38.5,
+      "C": 20.0
+     },
+     "sourcePart": "13011-12-12SP",
+     "position": 16
+    },
+    {
+     "partNumber": "IH-BSP-MAL-T-SP-1616",
+     "hoseDash": 16,
+     "hoseInch": "1\"",
+     "hoseDn": 25,
+     "portLabel": "R1\"×11",
+     "portDash": 16,
+     "dimensions": {
+      "S2": 36.0,
+      "A": 45.0,
+      "C": 25.5
+     },
+     "sourcePart": "13011-16-16SP",
+     "position": 17
+    },
+    {
+     "partNumber": "IH-BSP-MAL-T-SP-1612",
+     "hoseDash": 16,
+     "hoseInch": "1\"",
+     "hoseDn": 25,
+     "portLabel": "R3/4\"×14",
+     "portDash": 12,
+     "dimensions": {
+      "S2": 32.0,
+      "A": 39.5,
+      "C": 20.0
+     },
+     "sourcePart": "13011-12-16SP",
+     "position": 18
+    },
+    {
+     "partNumber": "IH-BSP-MAL-T-SP-2020",
+     "hoseDash": 20,
+     "hoseInch": "1.1/4\"",
+     "hoseDn": 32,
+     "portLabel": "R1.1/4\"×11",
+     "portDash": 20,
+     "dimensions": {
+      "S2": 46.0,
+      "A": 49.5,
+      "C": 26.5
+     },
+     "sourcePart": "13011-20-20SP",
+     "position": 19
+    },
+    {
+     "partNumber": "IH-BSP-MAL-T-SP-2424",
+     "hoseDash": 24,
+     "hoseInch": "1.1/2\"",
+     "hoseDn": 40,
+     "portLabel": "R1.1/2\"×11",
+     "portDash": 24,
+     "dimensions": {
+      "S2": 50.0,
+      "A": 51.5,
+      "C": 26.5
+     },
+     "sourcePart": "13011-24-24SP",
+     "position": 20
+    },
+    {
+     "partNumber": "IH-BSP-MAL-T-SP-2432",
+     "hoseDash": 24,
+     "hoseInch": "1.1/2\"",
+     "hoseDn": 40,
+     "portLabel": "R2\"×11",
+     "portDash": 32,
+     "dimensions": {
+      "S2": 65.0,
+      "A": 57.0,
+      "C": 30.0
+     },
+     "sourcePart": "13011-32-24SP",
+     "position": 21
+    },
+    {
+     "partNumber": "IH-BSP-MAL-T-SP-3232",
+     "hoseDash": 32,
+     "hoseInch": "2\"",
+     "hoseDn": 50,
+     "portLabel": "R2\"×11",
+     "portDash": 32,
+     "dimensions": {
+      "S2": 65.0,
+      "A": 57.0,
+      "C": 30.0
+     },
+     "sourcePart": "13011-32-32SP",
+     "position": 22
+    }
+   ],
+   "sourceFamily": "13011-SP (p65)"
+  },
+  {
+   "sku": "IH-MF-FEM-60-45",
+   "title": "45° Metric Female 60° Cone Hose Fitting",
+   "slug": "45-metric-female-60-cone-hose-fitting",
+   "categorySlug": "metric-hose-fittings",
+   "specTemplateSlug": "threaded-fitting-spec",
+   "focusKeyword": "metric female 60 cone 45 elbow",
+   "imageFromSku": "IH-DF-FEM-24-OR-LS-45",
+   "descriptionShort": "45° Metric Female 60° Cone — 60° cone seat, metal-to-metal, in 10 sizes from -04.",
+   "descriptionLong": "<p>The <strong>45° Metric Female 60° Cone Hose Fitting</strong> is a hydraulic hose fitting with 60° cone seat, metal-to-metal.</p>\n<p>Completes the metric 60° cone family — the straight and the 90° have been on the site, the 45° had not.</p>\n<h3>Construction</h3>\n<ul>\n<li>Configuration: 45 elbow</li>\n<li>Thread: M14×1.5 to M52×2</li>\n<li>Sealing form: 60° cone seat, metal-to-metal</li>\n<li>Gender: female-swivel</li>\n<li>Material: carbon steel, zinc-plated and Cr3+ passivated (316 stainless on request)</li>\n</ul>\n<h3>Sizes</h3>\n<p>10 sizes, hose bore -04 to -24, threads M14×1.5 to M52×2. The full size and dimension table is on this page.</p>\n<h3>How to order</h3>\n<p>Quote the Indus part number for the size you need. Tell us the hose grade and bore and we will include the matching crimp ferrule — the ferrule follows the hose, not the fitting. Indus crimps and pressure-tests assemblies before dispatch.</p>",
+   "seoTitle": "45° Metric Female 60° Cone Hose Fitting | M14×1.5–M52×2",
+   "seoDescription": "45° Metric Female 60° Cone Hose Fitting — 10 sizes (-04 to -24), M14×1.5 to M52×2. Carbon steel or 316 stainless, ex-Dubai.",
+   "faqs": [
+    {
+     "question": "What is the sealing form?",
+     "answer": "60° cone seat, metal-to-metal. Pair it with the matching counterpart — a mismatched sealing form will seat but will not hold pressure."
+    },
+    {
+     "question": "What sizes are available?",
+     "answer": "10 sizes, hose bore -04 to -24, threads M14×1.5 to M52×2. Every combination in the table on this page is an orderable part number."
+    },
+    {
+     "question": "What is the maximum working pressure?",
+     "answer": "The hose grade and bore set the assembly rating, not the fitting. A correctly crimped fitting does not derate the hose. Tell us the grade and bore on the RFQ and we will confirm the figure in writing."
+    },
+    {
+     "question": "Which ferrule pairs with this fitting?",
+     "answer": "The one that matches your hose grade — the skive/no-skive choice follows the hose construction, not the fitting end. Send the hose grade with your enquiry and we will specify the ferrule and the crimp diameter."
+    },
+    {
+     "question": "Is stainless steel available?",
+     "answer": "Yes — 316 stainless on request across the range. Standard supply is carbon steel, zinc-plated and Cr3+ passivated. Add \"-SS\" to the part number when you enquire."
+    },
+    {
+     "question": "Can Indus crimp the assembly?",
+     "answer": "Yes. We crimp, pressure-test and certify assemblies in Dubai and ship UAE-wide. Send the hose grade, bore, both end fittings, overall length and orientation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Fitting Configuration",
+     "value": "45-elbow",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "fitting_configuration"
+    },
+    {
+     "group": "Identification",
+     "label": "Thread Form",
+     "value": "M14×1.5 to M52×2",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "thread_form"
+    },
+    {
+     "group": "Identification",
+     "label": "Sealing Form",
+     "value": "60° cone seat, metal-to-metal",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "sealing_form"
+    },
+    {
+     "group": "Identification",
+     "label": "Thread Gender",
+     "value": "female-swivel",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "gender"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size Range",
+     "value": "-04 to -24",
+     "unit": null,
+     "position": 4,
+     "isFilterable": true,
+     "templateKey": "nominal_size_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "Carbon steel (316 stainless on request)",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "material"
+    },
+    {
+     "group": "Construction",
+     "label": "Surface Treatment",
+     "value": "Zinc-plated, Cr3+ passivated, RoHS-compliant",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "surface_treatment"
+    },
+    {
+     "group": "Compliance",
+     "label": "Applicable Standards",
+     "value": "Metric thread to ISO 261 (coarse and fine pitch)",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": "applicable_standards"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-MF-FEM-60-45-0414",
+     "hoseDash": 4,
+     "hoseInch": "1/4\"",
+     "hoseDn": 6,
+     "portLabel": "M14×1.5",
+     "portDash": 14,
+     "dimensions": {
+      "S2": 19.0,
+      "A": 42.7,
+      "C": 5.5,
+      "H": 20.6
+     },
+     "sourcePart": "20641-14-04",
+     "position": 0
+    },
+    {
+     "partNumber": "IH-MF-FEM-60-45-0516",
+     "hoseDash": 5,
+     "hoseInch": "5/16\"",
+     "hoseDn": 8,
+     "portLabel": "M16×1.5",
+     "portDash": 16,
+     "dimensions": {
+      "S2": 22.0,
+      "A": 45.1,
+      "C": 5.5,
+      "H": 21.8
+     },
+     "sourcePart": "20641-16-05",
+     "position": 1
+    },
+    {
+     "partNumber": "IH-MF-FEM-60-45-0618",
+     "hoseDash": 6,
+     "hoseInch": "3/8\"",
+     "hoseDn": 10,
+     "portLabel": "M18×1.5",
+     "portDash": 18,
+     "dimensions": {
+      "S2": 24.0,
+      "A": 47.4,
+      "C": 5.5,
+      "H": 23.2
+     },
+     "sourcePart": "20641-18-06",
+     "position": 2
+    },
+    {
+     "partNumber": "IH-MF-FEM-60-45-0822",
+     "hoseDash": 8,
+     "hoseInch": "1/2\"",
+     "hoseDn": 12,
+     "portLabel": "M22×1.5",
+     "portDash": 22,
+     "dimensions": {
+      "S2": 27.0,
+      "A": 61.8,
+      "C": 6.0,
+      "H": 26.8
+     },
+     "sourcePart": "20641-22-08",
+     "position": 3
+    },
+    {
+     "partNumber": "IH-MF-FEM-60-45-1027",
+     "hoseDash": 10,
+     "hoseInch": "5/8\"",
+     "hoseDn": 16,
+     "portLabel": "M27×1.5",
+     "portDash": 27,
+     "dimensions": {
+      "S2": 32.0,
+      "A": 71.4,
+      "C": 6.0,
+      "H": 27.1
+     },
+     "sourcePart": "20641-27-10DT",
+     "position": 4
+    },
+    {
+     "partNumber": "IH-MF-FEM-60-45-1230",
+     "hoseDash": 12,
+     "hoseInch": "3/4\"",
+     "hoseDn": 20,
+     "portLabel": "M30×1.5",
+     "portDash": 30,
+     "dimensions": {
+      "S2": 36.0,
+      "A": 81.6,
+      "C": 6.0,
+      "H": 33.5
+     },
+     "sourcePart": "20641-30-12D",
+     "position": 5
+    },
+    {
+     "partNumber": "IH-MF-FEM-60-45-1436",
+     "hoseDash": 14,
+     "hoseInch": "7/8\"",
+     "hoseDn": 22,
+     "portLabel": "M36×2",
+     "portDash": 36,
+     "dimensions": {
+      "S2": 41.0,
+      "A": 81.9,
+      "C": 6.5,
+      "H": 31.6
+     },
+     "sourcePart": "20641-36-14T",
+     "position": 6
+    },
+    {
+     "partNumber": "IH-MF-FEM-60-45-1639",
+     "hoseDash": 16,
+     "hoseInch": "1\"",
+     "hoseDn": 25,
+     "portLabel": "M39×2",
+     "portDash": 39,
+     "dimensions": {
+      "S2": 46.0,
+      "A": 88.5,
+      "C": 6.5,
+      "H": 34.3
+     },
+     "sourcePart": "20641-39-16T",
+     "position": 7
+    },
+    {
+     "partNumber": "IH-MF-FEM-60-45-2045",
+     "hoseDash": 20,
+     "hoseInch": "1.1/4\"",
+     "hoseDn": 32,
+     "portLabel": "M45×2",
+     "portDash": 45,
+     "dimensions": {
+      "S2": 55.0,
+      "A": 99.1,
+      "C": 8.5,
+      "H": 39.4
+     },
+     "sourcePart": "20641-45-20T",
+     "position": 8
+    },
+    {
+     "partNumber": "IH-MF-FEM-60-45-2452",
+     "hoseDash": 24,
+     "hoseInch": "1.1/2\"",
+     "hoseDn": 40,
+     "portLabel": "M52×2",
+     "portDash": 52,
+     "dimensions": {
+      "S2": 60.0,
+      "A": 113.4,
+      "C": 10.0,
+      "H": 42.7
+     },
+     "sourcePart": "20641-52-24T",
+     "position": 9
+    }
+   ],
+   "sourceFamily": "20641 (p34)"
+  },
+  {
+   "sku": "IH-MF-MAL-90",
+   "title": "Metric Male 90° Cone Hose Fitting",
+   "slug": "metric-male-90-cone-hose-fitting",
+   "categorySlug": "metric-hose-fittings",
+   "specTemplateSlug": "threaded-fitting-spec",
+   "focusKeyword": "metric male 90 cone hose fitting",
+   "imageFromSku": "IH-MF-MAL-60-SEAT",
+   "descriptionShort": "Metric Male 90° Cone — 90° included cone (45° per side), metal-to-metal, in 9 sizes from -04.",
+   "descriptionLong": "<p>The <strong>Metric Male 90° Cone Hose Fitting</strong> is a hydraulic hose fitting with 90° included cone (45° per side), metal-to-metal.</p>\n<p>90° is the included angle — 45° per side, the same seat geometry as an SAE 45° flare, on a metric thread. It will not mate with a 60° or a 74° port.</p>\n<h3>Construction</h3>\n<ul>\n<li>Configuration: straight</li>\n<li>Thread: M12×1 to M22×1.5</li>\n<li>Sealing form: 90° included cone (45° per side), metal-to-metal</li>\n<li>Gender: male</li>\n<li>Material: carbon steel, zinc-plated and Cr3+ passivated (316 stainless on request)</li>\n</ul>\n<h3>Sizes</h3>\n<p>9 sizes, hose bore -04 to -08, threads M12×1 to M22×1.5. The full size and dimension table is on this page.</p>\n<h3>How to order</h3>\n<p>Quote the Indus part number for the size you need. Tell us the hose grade and bore and we will include the matching crimp ferrule — the ferrule follows the hose, not the fitting. Indus crimps and pressure-tests assemblies before dispatch.</p>",
+   "seoTitle": "Metric Male 90° Cone Hose Fitting | M12×1–M22×1.5",
+   "seoDescription": "Metric Male 90° Cone Hose Fitting — 9 sizes (-04 to -08), M12×1 to M22×1.5. Carbon steel or 316 stainless, ex-Dubai.",
+   "faqs": [
+    {
+     "question": "What is the sealing form?",
+     "answer": "90° included cone (45° per side), metal-to-metal. Pair it with the matching counterpart — a mismatched sealing form will seat but will not hold pressure."
+    },
+    {
+     "question": "What sizes are available?",
+     "answer": "9 sizes, hose bore -04 to -08, threads M12×1 to M22×1.5. Every combination in the table on this page is an orderable part number."
+    },
+    {
+     "question": "What is the maximum working pressure?",
+     "answer": "The hose grade and bore set the assembly rating, not the fitting. A correctly crimped fitting does not derate the hose. Tell us the grade and bore on the RFQ and we will confirm the figure in writing."
+    },
+    {
+     "question": "Which ferrule pairs with this fitting?",
+     "answer": "The one that matches your hose grade — the skive/no-skive choice follows the hose construction, not the fitting end. Send the hose grade with your enquiry and we will specify the ferrule and the crimp diameter."
+    },
+    {
+     "question": "Is stainless steel available?",
+     "answer": "Yes — 316 stainless on request across the range. Standard supply is carbon steel, zinc-plated and Cr3+ passivated. Add \"-SS\" to the part number when you enquire."
+    },
+    {
+     "question": "Can Indus crimp the assembly?",
+     "answer": "Yes. We crimp, pressure-test and certify assemblies in Dubai and ship UAE-wide. Send the hose grade, bore, both end fittings, overall length and orientation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Fitting Configuration",
+     "value": "straight",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "fitting_configuration"
+    },
+    {
+     "group": "Identification",
+     "label": "Thread Form",
+     "value": "M12×1 to M22×1.5",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "thread_form"
+    },
+    {
+     "group": "Identification",
+     "label": "Sealing Form",
+     "value": "90° included cone (45° per side), metal-to-metal",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "sealing_form"
+    },
+    {
+     "group": "Identification",
+     "label": "Thread Gender",
+     "value": "male",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "gender"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size Range",
+     "value": "-04 to -08",
+     "unit": null,
+     "position": 4,
+     "isFilterable": true,
+     "templateKey": "nominal_size_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "Carbon steel (316 stainless on request)",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "material"
+    },
+    {
+     "group": "Construction",
+     "label": "Surface Treatment",
+     "value": "Zinc-plated, Cr3+ passivated, RoHS-compliant",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "surface_treatment"
+    },
+    {
+     "group": "Compliance",
+     "label": "Applicable Standards",
+     "value": "Metric thread to ISO 261 (coarse and fine pitch)",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": "applicable_standards"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-MF-MAL-90-0412A",
+     "hoseDash": 4,
+     "hoseInch": "1/4\"",
+     "hoseDn": 6,
+     "portLabel": "M12×1",
+     "portDash": 12,
+     "dimensions": {
+      "S2": 17.0,
+      "A": 44.5,
+      "C": 32.5,
+      "H": 18.0
+     },
+     "sourcePart": "10811L-12-04A",
+     "position": 0
+    },
+    {
+     "partNumber": "IH-MF-MAL-90-0412",
+     "hoseDash": 4,
+     "hoseInch": "1/4\"",
+     "hoseDn": 6,
+     "portLabel": "M12×1.5",
+     "portDash": 12,
+     "dimensions": {
+      "S2": 17.0,
+      "A": 46.0,
+      "C": 34.0,
+      "H": 17.0
+     },
+     "sourcePart": "10811L-12-04",
+     "position": 1
+    },
+    {
+     "partNumber": "IH-MF-MAL-90-0414",
+     "hoseDash": 4,
+     "hoseInch": "1/4\"",
+     "hoseDn": 6,
+     "portLabel": "M14×1.5",
+     "portDash": 14,
+     "dimensions": {
+      "S2": 19.0,
+      "A": 46.0,
+      "C": 34.0,
+      "H": 19.0
+     },
+     "sourcePart": "10811L-14-04",
+     "position": 2
+    },
+    {
+     "partNumber": "IH-MF-MAL-90-0416",
+     "hoseDash": 4,
+     "hoseInch": "1/4\"",
+     "hoseDn": 6,
+     "portLabel": "M16×1.5",
+     "portDash": 16,
+     "dimensions": {
+      "S2": 22.0,
+      "A": 46.5,
+      "C": 34.0,
+      "H": 19.0
+     },
+     "sourcePart": "10811L-16-04",
+     "position": 3
+    },
+    {
+     "partNumber": "IH-MF-MAL-90-0614",
+     "hoseDash": 6,
+     "hoseInch": "3/8\"",
+     "hoseDn": 10,
+     "portLabel": "M14×1.5",
+     "portDash": 14,
+     "dimensions": {
+      "S2": 19.0,
+      "A": 46.5,
+      "C": 34.0,
+      "H": 17.0
+     },
+     "sourcePart": "10811L-14-06",
+     "position": 4
+    },
+    {
+     "partNumber": "IH-MF-MAL-90-0616",
+     "hoseDash": 6,
+     "hoseInch": "3/8\"",
+     "hoseDn": 10,
+     "portLabel": "M16×1.5",
+     "portDash": 16,
+     "dimensions": {
+      "S2": 22.0,
+      "A": 46.5,
+      "C": 34.0,
+      "H": 22.0
+     },
+     "sourcePart": "10811L-16-06",
+     "position": 5
+    },
+    {
+     "partNumber": "IH-MF-MAL-90-0620",
+     "hoseDash": 6,
+     "hoseInch": "3/8\"",
+     "hoseDn": 10,
+     "portLabel": "M20×1.5",
+     "portDash": 20,
+     "dimensions": {
+      "S2": 27.0,
+      "A": 57.0,
+      "C": 40.0,
+      "H": 27.0
+     },
+     "sourcePart": "10811L-20-06",
+     "position": 6
+    },
+    {
+     "partNumber": "IH-MF-MAL-90-0820",
+     "hoseDash": 8,
+     "hoseInch": "1/2\"",
+     "hoseDn": 12,
+     "portLabel": "M20×1.5",
+     "portDash": 20,
+     "dimensions": {
+      "S2": 27.0,
+      "A": 57.5,
+      "C": 40.0,
+      "H": 27.0
+     },
+     "sourcePart": "10811L-20-08",
+     "position": 7
+    },
+    {
+     "partNumber": "IH-MF-MAL-90-0822",
+     "hoseDash": 8,
+     "hoseInch": "1/2\"",
+     "hoseDn": 12,
+     "portLabel": "M22×1.5",
+     "portDash": 22,
+     "dimensions": {
+      "S2": 27.0,
+      "A": 62.5,
+      "C": 45.0,
+      "H": 27.0
+     },
+     "sourcePart": "10811L-22-08",
+     "position": 8
+    }
+   ],
+   "sourceFamily": "10811L (p40)"
+  },
+  {
+   "sku": "IH-JIC-MAL-37-LONG",
+   "title": "JIC Male 37° Cone Long Hose Fitting",
+   "slug": "jic-male-37-cone-long-hose-fitting",
+   "categorySlug": "jic-37-hose-fittings",
+   "specTemplateSlug": "threaded-fitting-spec",
+   "focusKeyword": "JIC male 37 long hose fitting",
+   "imageFromSku": "IH-JIC-MAL-37",
+   "descriptionShort": "JIC Male 37° Cone Long — 37° cone seat (JIC), metal-to-metal, in 20 sizes from -04.",
+   "descriptionLong": "<p>The <strong>JIC Male 37° Cone Long Hose Fitting</strong> is a hydraulic hose fitting with 37° cone seat (JIC), metal-to-metal.</p>\n<p>The long version of the JIC male. Same thread and seat as the standard body, with more length between the seat and the hose — for reaching past a bracket or a manifold face.</p>\n<h3>Construction</h3>\n<ul>\n<li>Configuration: straight</li>\n<li>Thread: 1.1/16&quot;×12 to 9/16&quot;×18</li>\n<li>Sealing form: 37° cone seat (JIC), metal-to-metal</li>\n<li>Gender: male</li>\n<li>Material: carbon steel, zinc-plated and Cr3+ passivated (316 stainless on request)</li>\n</ul>\n<h3>Sizes</h3>\n<p>20 sizes, hose bore -04 to -24, threads 1.1/16&quot;×12 to 9/16&quot;×18. The full size and dimension table is on this page.</p>\n<h3>How to order</h3>\n<p>Quote the Indus part number for the size you need. Tell us the hose grade and bore and we will include the matching crimp ferrule — the ferrule follows the hose, not the fitting. Indus crimps and pressure-tests assemblies before dispatch.</p>",
+   "seoTitle": "JIC Male 37° Cone Long Hose Fitting | 1.1/16\"×12–9/16\"×18",
+   "seoDescription": "JIC Male 37° Cone Long Hose Fitting — 20 sizes (-04 to -24), 1.1/16\"×12 to 9/16\"×18. Carbon steel or 316 stainless, ex-Dubai.",
+   "faqs": [
+    {
+     "question": "What is the sealing form?",
+     "answer": "37° cone seat (JIC), metal-to-metal. Pair it with the matching counterpart — a mismatched sealing form will seat but will not hold pressure."
+    },
+    {
+     "question": "What sizes are available?",
+     "answer": "20 sizes, hose bore -04 to -24, threads 1.1/16\"×12 to 9/16\"×18. Every combination in the table on this page is an orderable part number."
+    },
+    {
+     "question": "What is the maximum working pressure?",
+     "answer": "The hose grade and bore set the assembly rating, not the fitting. A correctly crimped fitting does not derate the hose. Tell us the grade and bore on the RFQ and we will confirm the figure in writing."
+    },
+    {
+     "question": "Which ferrule pairs with this fitting?",
+     "answer": "The one that matches your hose grade — the skive/no-skive choice follows the hose construction, not the fitting end. Send the hose grade with your enquiry and we will specify the ferrule and the crimp diameter."
+    },
+    {
+     "question": "Is stainless steel available?",
+     "answer": "Yes — 316 stainless on request across the range. Standard supply is carbon steel, zinc-plated and Cr3+ passivated. Add \"-SS\" to the part number when you enquire."
+    },
+    {
+     "question": "Can Indus crimp the assembly?",
+     "answer": "Yes. We crimp, pressure-test and certify assemblies in Dubai and ship UAE-wide. Send the hose grade, bore, both end fittings, overall length and orientation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Fitting Configuration",
+     "value": "straight",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "fitting_configuration"
+    },
+    {
+     "group": "Identification",
+     "label": "Thread Form",
+     "value": "1.1/16\"×12 to 9/16\"×18",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "thread_form"
+    },
+    {
+     "group": "Identification",
+     "label": "Sealing Form",
+     "value": "37° cone seat (JIC), metal-to-metal",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "sealing_form"
+    },
+    {
+     "group": "Identification",
+     "label": "Thread Gender",
+     "value": "male",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "gender"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size Range",
+     "value": "-04 to -24",
+     "unit": null,
+     "position": 4,
+     "isFilterable": true,
+     "templateKey": "nominal_size_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "Carbon steel (316 stainless on request)",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "material"
+    },
+    {
+     "group": "Construction",
+     "label": "Surface Treatment",
+     "value": "Zinc-plated, Cr3+ passivated, RoHS-compliant",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "surface_treatment"
+    },
+    {
+     "group": "Compliance",
+     "label": "Applicable Standards",
+     "value": "SAE J514, ISO 8434-2",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": "applicable_standards"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-JIC-MAL-37-LONG-0405",
+     "hoseDash": 4,
+     "hoseInch": "1/4\"",
+     "hoseDn": 6,
+     "portLabel": "1/2\"×20",
+     "portDash": 5,
+     "dimensions": {
+      "S1": 19.0,
+      "A": 43.0,
+      "C": 30.5
+     },
+     "sourcePart": "16711L-05-04",
+     "position": 0
+    },
+    {
+     "partNumber": "IH-JIC-MAL-37-LONG-0404",
+     "hoseDash": 4,
+     "hoseInch": "1/4\"",
+     "hoseDn": 6,
+     "portLabel": "7/16\"×20",
+     "portDash": 4,
+     "dimensions": {
+      "S1": 17.0,
+      "A": 43.0,
+      "C": 30.5
+     },
+     "sourcePart": "16711L-04-04",
+     "position": 1
+    },
+    {
+     "partNumber": "IH-JIC-MAL-37-LONG-0406",
+     "hoseDash": 4,
+     "hoseInch": "1/4\"",
+     "hoseDn": 6,
+     "portLabel": "9/16\"×18",
+     "portDash": 6,
+     "dimensions": {
+      "S1": 22.0,
+      "A": 47.0,
+      "C": 32.5
+     },
+     "sourcePart": "16711L-06-04",
+     "position": 2
+    },
+    {
+     "partNumber": "IH-JIC-MAL-37-LONG-0505",
+     "hoseDash": 5,
+     "hoseInch": "5/16\"",
+     "hoseDn": 8,
+     "portLabel": "1/2\"×20",
+     "portDash": 5,
+     "dimensions": {
+      "S1": 19.0,
+      "A": 43.0,
+      "C": 30.5
+     },
+     "sourcePart": "16711L-05-05",
+     "position": 3
+    },
+    {
+     "partNumber": "IH-JIC-MAL-37-LONG-0506",
+     "hoseDash": 5,
+     "hoseInch": "5/16\"",
+     "hoseDn": 8,
+     "portLabel": "9/16\"×18",
+     "portDash": 6,
+     "dimensions": {
+      "S1": 22.0,
+      "A": 47.0,
+      "C": 32.5
+     },
+     "sourcePart": "16711L-06-05",
+     "position": 4
+    },
+    {
+     "partNumber": "IH-JIC-MAL-37-LONG-0608",
+     "hoseDash": 6,
+     "hoseInch": "3/8\"",
+     "hoseDn": 10,
+     "portLabel": "3/4\"×16",
+     "portDash": 8,
+     "dimensions": {
+      "S1": 24.0,
+      "A": 51.0,
+      "C": 36.5
+     },
+     "sourcePart": "16711L-08-06",
+     "position": 5
+    },
+    {
+     "partNumber": "IH-JIC-MAL-37-LONG-0610",
+     "hoseDash": 6,
+     "hoseInch": "3/8\"",
+     "hoseDn": 10,
+     "portLabel": "7/8\"×14",
+     "portDash": 10,
+     "dimensions": {
+      "S1": 30.0,
+      "A": 56.5,
+      "C": 40.0
+     },
+     "sourcePart": "16711L-10-06",
+     "position": 6
+    },
+    {
+     "partNumber": "IH-JIC-MAL-37-LONG-0606",
+     "hoseDash": 6,
+     "hoseInch": "3/8\"",
+     "hoseDn": 10,
+     "portLabel": "9/16\"×18",
+     "portDash": 6,
+     "dimensions": {
+      "S1": 22.0,
+      "A": 47.0,
+      "C": 32.5
+     },
+     "sourcePart": "16711L-06-06",
+     "position": 7
+    },
+    {
+     "partNumber": "IH-JIC-MAL-37-LONG-0812",
+     "hoseDash": 8,
+     "hoseInch": "1/2\"",
+     "hoseDn": 12,
+     "portLabel": "1.1/16\"×12",
+     "portDash": 12,
+     "dimensions": {
+      "S1": 36.0,
+      "A": 63.0,
+      "C": 44.5
+     },
+     "sourcePart": "16711L-12-08",
+     "position": 8
+    },
+    {
+     "partNumber": "IH-JIC-MAL-37-LONG-0808",
+     "hoseDash": 8,
+     "hoseInch": "1/2\"",
+     "hoseDn": 12,
+     "portLabel": "3/4\"×16",
+     "portDash": 8,
+     "dimensions": {
+      "S1": 24.0,
+      "A": 51.5,
+      "C": 36.5
+     },
+     "sourcePart": "16711L-08-08",
+     "position": 9
+    },
+    {
+     "partNumber": "IH-JIC-MAL-37-LONG-0810",
+     "hoseDash": 8,
+     "hoseInch": "1/2\"",
+     "hoseDn": 12,
+     "portLabel": "7/8\"×14",
+     "portDash": 10,
+     "dimensions": {
+      "S1": 30.0,
+      "A": 57.0,
+      "C": 40.0
+     },
+     "sourcePart": "16711L-10-08",
+     "position": 10
+    },
+    {
+     "partNumber": "IH-JIC-MAL-37-LONG-1012",
+     "hoseDash": 10,
+     "hoseInch": "5/8\"",
+     "hoseDn": 16,
+     "portLabel": "1.1/16\"×12",
+     "portDash": 12,
+     "dimensions": {
+      "S1": 36.0,
+      "A": 64.0,
+      "C": 44.5
+     },
+     "sourcePart": "16711L-12-10",
+     "position": 11
+    },
+    {
+     "partNumber": "IH-JIC-MAL-37-LONG-1010",
+     "hoseDash": 10,
+     "hoseInch": "5/8\"",
+     "hoseDn": 16,
+     "portLabel": "7/8\"×14",
+     "portDash": 10,
+     "dimensions": {
+      "S1": 30.0,
+      "A": 58.0,
+      "C": 40.0
+     },
+     "sourcePart": "16711L-10-10",
+     "position": 12
+    },
+    {
+     "partNumber": "IH-JIC-MAL-37-LONG-1212",
+     "hoseDash": 12,
+     "hoseInch": "3/4\"",
+     "hoseDn": 20,
+     "portLabel": "1.1/16\"×12",
+     "portDash": 12,
+     "dimensions": {
+      "S1": 36.0,
+      "A": 64.0,
+      "C": 44.5
+     },
+     "sourcePart": "16711L-12-12",
+     "position": 13
+    },
+    {
+     "partNumber": "IH-JIC-MAL-37-LONG-1216",
+     "hoseDash": 12,
+     "hoseInch": "3/4\"",
+     "hoseDn": 20,
+     "portLabel": "1.5/16\"×12",
+     "portDash": 16,
+     "dimensions": {
+      "S1": 41.0,
+      "A": 66.0,
+      "C": 44.5
+     },
+     "sourcePart": "16711L-16-12",
+     "position": 14
+    },
+    {
+     "partNumber": "IH-JIC-MAL-37-LONG-1616",
+     "hoseDash": 16,
+     "hoseInch": "1\"",
+     "hoseDn": 25,
+     "portLabel": "1.5/16\"×12",
+     "portDash": 16,
+     "dimensions": {
+      "S1": 41.0,
+      "A": 67.0,
+      "C": 44.5
+     },
+     "sourcePart": "16711L-16-16",
+     "position": 15
+    },
+    {
+     "partNumber": "IH-JIC-MAL-37-LONG-1620",
+     "hoseDash": 16,
+     "hoseInch": "1\"",
+     "hoseDn": 25,
+     "portLabel": "1.5/8\"×12",
+     "portDash": 20,
+     "dimensions": {
+      "S1": 50.0,
+      "A": 70.5,
+      "C": 45.7
+     },
+     "sourcePart": "16711L-20-16",
+     "position": 16
+    },
+    {
+     "partNumber": "IH-JIC-MAL-37-LONG-2020",
+     "hoseDash": 20,
+     "hoseInch": "1.1/4\"",
+     "hoseDn": 32,
+     "portLabel": "1.5/8\"×12",
+     "portDash": 20,
+     "dimensions": {
+      "S1": 50.0,
+      "A": 71.2,
+      "C": 45.7
+     },
+     "sourcePart": "16711L-20-20",
+     "position": 17
+    },
+    {
+     "partNumber": "IH-JIC-MAL-37-LONG-2024",
+     "hoseDash": 20,
+     "hoseInch": "1.1/4\"",
+     "hoseDn": 32,
+     "portLabel": "1.7/8\"×12",
+     "portDash": 24,
+     "dimensions": {
+      "S1": 55.0,
+      "A": 71.5,
+      "C": 46.0
+     },
+     "sourcePart": "16711L-24-20",
+     "position": 18
+    },
+    {
+     "partNumber": "IH-JIC-MAL-37-LONG-2424",
+     "hoseDash": 24,
+     "hoseInch": "1.1/2\"",
+     "hoseDn": 40,
+     "portLabel": "1.7/8\"×12",
+     "portDash": 24,
+     "dimensions": {
+      "S1": 55.0,
+      "A": 71.5,
+      "C": 46.0
+     },
+     "sourcePart": "16711L-24-24",
+     "position": 19
+    }
+   ],
+   "sourceFamily": "16711L (p74)"
+  },
+  {
+   "sku": "IH-BSP-FEM-60-DH",
+   "title": "BSP Female 60° Cone Double Hex Hose Fitting",
+   "slug": "bsp-female-60-cone-double-hex-hose-fitting",
+   "categorySlug": "bsp-hose-fittings",
+   "specTemplateSlug": "threaded-fitting-spec",
+   "focusKeyword": "BSP female double hex hose fitting",
+   "imageFromSku": "IH-BSP-FEM-60",
+   "descriptionShort": "BSP Female 60° Cone Double Hex — 60° cone seat, in 16 sizes from -04.",
+   "descriptionLong": "<p>The <strong>BSP Female 60° Cone Double Hex Hose Fitting</strong> is a hydraulic hose fitting with 60° cone seat.</p>\n<p>Two hexagons instead of one, so the fitting can be held while the nut is turned. We already sell the JIC double hex and the stainless BSP one; this is the carbon-steel BSP.</p>\n<h3>Construction</h3>\n<ul>\n<li>Configuration: straight</li>\n<li>Thread: G1&quot;×11 to G5/8&quot;×14</li>\n<li>Sealing form: 60° cone seat</li>\n<li>Gender: female-swivel</li>\n<li>Material: carbon steel, zinc-plated and Cr3+ passivated (316 stainless on request)</li>\n</ul>\n<h3>Sizes</h3>\n<p>16 sizes, hose bore -04 to -20, threads G1&quot;×11 to G5/8&quot;×14. The full size and dimension table is on this page.</p>\n<h3>How to order</h3>\n<p>Quote the Indus part number for the size you need. Tell us the hose grade and bore and we will include the matching crimp ferrule — the ferrule follows the hose, not the fitting. Indus crimps and pressure-tests assemblies before dispatch.</p>",
+   "seoTitle": "BSP Female 60° Cone Double Hex Hose Fitting | G1\"×11–G5/8\"×14",
+   "seoDescription": "BSP Female 60° Cone Double Hex Hose Fitting — 16 sizes (-04 to -20), G1\"×11 to G5/8\"×14. Carbon steel or 316 stainless, ex-Dubai.",
+   "faqs": [
+    {
+     "question": "What is the sealing form?",
+     "answer": "60° cone seat. Pair it with the matching counterpart — a mismatched sealing form will seat but will not hold pressure."
+    },
+    {
+     "question": "What sizes are available?",
+     "answer": "16 sizes, hose bore -04 to -20, threads G1\"×11 to G5/8\"×14. Every combination in the table on this page is an orderable part number."
+    },
+    {
+     "question": "What is the maximum working pressure?",
+     "answer": "The hose grade and bore set the assembly rating, not the fitting. A correctly crimped fitting does not derate the hose. Tell us the grade and bore on the RFQ and we will confirm the figure in writing."
+    },
+    {
+     "question": "Which ferrule pairs with this fitting?",
+     "answer": "The one that matches your hose grade — the skive/no-skive choice follows the hose construction, not the fitting end. Send the hose grade with your enquiry and we will specify the ferrule and the crimp diameter."
+    },
+    {
+     "question": "Is stainless steel available?",
+     "answer": "Yes — 316 stainless on request across the range. Standard supply is carbon steel, zinc-plated and Cr3+ passivated. Add \"-SS\" to the part number when you enquire."
+    },
+    {
+     "question": "Can Indus crimp the assembly?",
+     "answer": "Yes. We crimp, pressure-test and certify assemblies in Dubai and ship UAE-wide. Send the hose grade, bore, both end fittings, overall length and orientation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Fitting Configuration",
+     "value": "straight",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "fitting_configuration"
+    },
+    {
+     "group": "Identification",
+     "label": "Thread Form",
+     "value": "G1\"×11 to G5/8\"×14",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "thread_form"
+    },
+    {
+     "group": "Identification",
+     "label": "Sealing Form",
+     "value": "60° cone seat",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "sealing_form"
+    },
+    {
+     "group": "Identification",
+     "label": "Thread Gender",
+     "value": "female-swivel",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "gender"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size Range",
+     "value": "-04 to -20",
+     "unit": null,
+     "position": 4,
+     "isFilterable": true,
+     "templateKey": "nominal_size_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "Carbon steel (316 stainless on request)",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "material"
+    },
+    {
+     "group": "Construction",
+     "label": "Surface Treatment",
+     "value": "Zinc-plated, Cr3+ passivated, RoHS-compliant",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "surface_treatment"
+    },
+    {
+     "group": "Compliance",
+     "label": "Applicable Standards",
+     "value": "BSP parallel thread to ISO 228-1",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": "applicable_standards"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-BSP-FEM-60-DH-0404",
+     "hoseDash": 4,
+     "hoseInch": "1/4\"",
+     "hoseDn": 6,
+     "portLabel": "G1/4\"×19",
+     "portDash": 4,
+     "dimensions": {
+      "S1": 19.0,
+      "S2": 19.0,
+      "A": 23.5,
+      "C": 5.5
+     },
+     "sourcePart": "22611D-04-04",
+     "position": 0
+    },
+    {
+     "partNumber": "IH-BSP-FEM-60-DH-0404SM",
+     "hoseDash": 4,
+     "hoseInch": "1/4\"",
+     "hoseDn": 6,
+     "portLabel": "G1/4\"×19",
+     "portDash": 4,
+     "dimensions": {
+      "S1": 14.0,
+      "S2": 19.0,
+      "A": 23.0,
+      "C": 5.5
+     },
+     "sourcePart": "22611D-04-04SM",
+     "position": 1
+    },
+    {
+     "partNumber": "IH-BSP-FEM-60-DH-0606",
+     "hoseDash": 6,
+     "hoseInch": "3/8\"",
+     "hoseDn": 10,
+     "portLabel": "G3/8\"×19",
+     "portDash": 6,
+     "dimensions": {
+      "S1": 22.0,
+      "S2": 22.0,
+      "A": 26.5,
+      "C": 6.3
+     },
+     "sourcePart": "22611D-06-06",
+     "position": 2
+    },
+    {
+     "partNumber": "IH-BSP-FEM-60-DH-0606SM",
+     "hoseDash": 6,
+     "hoseInch": "3/8\"",
+     "hoseDn": 10,
+     "portLabel": "G3/8\"×19",
+     "portDash": 6,
+     "dimensions": {
+      "S1": 17.0,
+      "S2": 22.0,
+      "A": 25.0,
+      "C": 6.3
+     },
+     "sourcePart": "22611D-06-06SM",
+     "position": 3
+    },
+    {
+     "partNumber": "IH-BSP-FEM-60-DH-0808",
+     "hoseDash": 8,
+     "hoseInch": "1/2\"",
+     "hoseDn": 12,
+     "portLabel": "G1/2\"×14",
+     "portDash": 8,
+     "dimensions": {
+      "S1": 27.0,
+      "S2": 27.0,
+      "A": 31.0,
+      "C": 7.5
+     },
+     "sourcePart": "22611D-08-08",
+     "position": 4
+    },
+    {
+     "partNumber": "IH-BSP-FEM-60-DH-0808SM",
+     "hoseDash": 8,
+     "hoseInch": "1/2\"",
+     "hoseDn": 12,
+     "portLabel": "G1/2\"×14",
+     "portDash": 8,
+     "dimensions": {
+      "S1": 22.0,
+      "S2": 27.0,
+      "A": 28.5,
+      "C": 7.5
+     },
+     "sourcePart": "22611D-08-08SM",
+     "position": 5
+    },
+    {
+     "partNumber": "IH-BSP-FEM-60-DH-0812",
+     "hoseDash": 8,
+     "hoseInch": "1/2\"",
+     "hoseDn": 12,
+     "portLabel": "G3/4\"×14",
+     "portDash": 12,
+     "dimensions": {
+      "S1": 32.0,
+      "S2": 32.0,
+      "A": 33.0,
+      "C": 10.9
+     },
+     "sourcePart": "22611D-12-08",
+     "position": 6
+    },
+    {
+     "partNumber": "IH-BSP-FEM-60-DH-0812SM",
+     "hoseDash": 8,
+     "hoseInch": "1/2\"",
+     "hoseDn": 12,
+     "portLabel": "G3/4\"×14",
+     "portDash": 12,
+     "dimensions": {
+      "S1": 27.0,
+      "S2": 32.0,
+      "A": 32.1,
+      "C": 10.9
+     },
+     "sourcePart": "22611D-12-08SM",
+     "position": 7
+    },
+    {
+     "partNumber": "IH-BSP-FEM-60-DH-0810",
+     "hoseDash": 8,
+     "hoseInch": "1/2\"",
+     "hoseDn": 12,
+     "portLabel": "G5/8\"×14",
+     "portDash": 10,
+     "dimensions": {
+      "S1": 30.0,
+      "S2": 30.0,
+      "A": 32.0,
+      "C": 9.5
+     },
+     "sourcePart": "22611D-10-08",
+     "position": 8
+    },
+    {
+     "partNumber": "IH-BSP-FEM-60-DH-0810SM",
+     "hoseDash": 8,
+     "hoseInch": "1/2\"",
+     "hoseDn": 12,
+     "portLabel": "G5/8\"×14",
+     "portDash": 10,
+     "dimensions": {
+      "S1": 22.0,
+      "S2": 30.0,
+      "A": 30.0,
+      "C": 9.5
+     },
+     "sourcePart": "22611D-10-08SM",
+     "position": 9
+    },
+    {
+     "partNumber": "IH-BSP-FEM-60-DH-1212",
+     "hoseDash": 12,
+     "hoseInch": "3/4\"",
+     "hoseDn": 20,
+     "portLabel": "G3/4\"×14",
+     "portDash": 12,
+     "dimensions": {
+      "S1": 32.0,
+      "S2": 32.0,
+      "A": 34.0,
+      "C": 10.9
+     },
+     "sourcePart": "22611D-12-12",
+     "position": 10
+    },
+    {
+     "partNumber": "IH-BSP-FEM-60-DH-1212SM",
+     "hoseDash": 12,
+     "hoseInch": "3/4\"",
+     "hoseDn": 20,
+     "portLabel": "G3/4\"×14",
+     "portDash": 12,
+     "dimensions": {
+      "S1": 27.0,
+      "S2": 32.0,
+      "A": 32.5,
+      "C": 10.9
+     },
+     "sourcePart": "22611D-12-12SM",
+     "position": 11
+    },
+    {
+     "partNumber": "IH-BSP-FEM-60-DH-1616",
+     "hoseDash": 16,
+     "hoseInch": "1\"",
+     "hoseDn": 25,
+     "portLabel": "G1\"×11",
+     "portDash": 16,
+     "dimensions": {
+      "S1": 41.0,
+      "S2": 41.0,
+      "A": 35.5,
+      "C": 11.7
+     },
+     "sourcePart": "22611D-16-16",
+     "position": 12
+    },
+    {
+     "partNumber": "IH-BSP-FEM-60-DH-1616SM",
+     "hoseDash": 16,
+     "hoseInch": "1\"",
+     "hoseDn": 25,
+     "portLabel": "G1\"×11",
+     "portDash": 16,
+     "dimensions": {
+      "S1": 32.0,
+      "S2": 41.0,
+      "A": 36.3,
+      "C": 11.7
+     },
+     "sourcePart": "22611D-16-16SM",
+     "position": 13
+    },
+    {
+     "partNumber": "IH-BSP-FEM-60-DH-2020",
+     "hoseDash": 20,
+     "hoseInch": "1.1/4\"",
+     "hoseDn": 32,
+     "portLabel": "G1.1/4\"×11",
+     "portDash": 20,
+     "dimensions": {
+      "S1": 50.0,
+      "S2": 50.0,
+      "A": 43.5,
+      "C": 11.0
+     },
+     "sourcePart": "22611D-20-20",
+     "position": 14
+    },
+    {
+     "partNumber": "IH-BSP-FEM-60-DH-2020SM",
+     "hoseDash": 20,
+     "hoseInch": "1.1/4\"",
+     "hoseDn": 32,
+     "portLabel": "G1.1/4\"×11",
+     "portDash": 20,
+     "dimensions": {
+      "S1": 41.0,
+      "S2": 50.0,
+      "A": 41.5,
+      "C": 11.0
+     },
+     "sourcePart": "22611D-20-20SM",
+     "position": 15
+    }
+   ],
+   "sourceFamily": "22611D (p57)"
+  },
+  {
+   "sku": "IH-BSP-FEM-60-DH-90",
+   "title": "90° BSP Female 60° Cone Double Hex Hose Fitting",
+   "slug": "90-bsp-female-60-cone-double-hex-hose-fitting",
+   "categorySlug": "bsp-hose-fittings",
+   "specTemplateSlug": "threaded-fitting-spec",
+   "focusKeyword": "BSP double hex 90 elbow hose fitting",
+   "imageFromSku": "IH-BSP-FEM-60-90",
+   "descriptionShort": "90° BSP Female 60° Cone Double Hex — 60° cone seat, in 5 sizes from -04.",
+   "descriptionLong": "<p>The <strong>90° BSP Female 60° Cone Double Hex Hose Fitting</strong> is a hydraulic hose fitting with 60° cone seat.</p>\n<p>The 90° elbow of the BSP double-hex family.</p>\n<h3>Construction</h3>\n<ul>\n<li>Configuration: 90 elbow</li>\n<li>Thread: G1&quot;-11 to G3/8&quot;-19</li>\n<li>Sealing form: 60° cone seat</li>\n<li>Gender: female-swivel</li>\n<li>Material: carbon steel, zinc-plated and Cr3+ passivated (316 stainless on request)</li>\n</ul>\n<h3>Sizes</h3>\n<p>5 sizes, hose bore -04 to -16, threads G1&quot;-11 to G3/8&quot;-19. The full size and dimension table is on this page.</p>\n<h3>How to order</h3>\n<p>Quote the Indus part number for the size you need. Tell us the hose grade and bore and we will include the matching crimp ferrule — the ferrule follows the hose, not the fitting. Indus crimps and pressure-tests assemblies before dispatch.</p>",
+   "seoTitle": "90° BSP Female 60° Cone Double Hex Hose Fitting | G1\"-11–G3/8\"-19",
+   "seoDescription": "90° BSP Female 60° Cone Double Hex Hose Fitting — 5 sizes (-04 to -16), G1\"-11 to G3/8\"-19. Carbon steel or 316 stainless, ex-Dubai.",
+   "faqs": [
+    {
+     "question": "What is the sealing form?",
+     "answer": "60° cone seat. Pair it with the matching counterpart — a mismatched sealing form will seat but will not hold pressure."
+    },
+    {
+     "question": "What sizes are available?",
+     "answer": "5 sizes, hose bore -04 to -16, threads G1\"-11 to G3/8\"-19. Every combination in the table on this page is an orderable part number."
+    },
+    {
+     "question": "What is the maximum working pressure?",
+     "answer": "The hose grade and bore set the assembly rating, not the fitting. A correctly crimped fitting does not derate the hose. Tell us the grade and bore on the RFQ and we will confirm the figure in writing."
+    },
+    {
+     "question": "Which ferrule pairs with this fitting?",
+     "answer": "The one that matches your hose grade — the skive/no-skive choice follows the hose construction, not the fitting end. Send the hose grade with your enquiry and we will specify the ferrule and the crimp diameter."
+    },
+    {
+     "question": "Is stainless steel available?",
+     "answer": "Yes — 316 stainless on request across the range. Standard supply is carbon steel, zinc-plated and Cr3+ passivated. Add \"-SS\" to the part number when you enquire."
+    },
+    {
+     "question": "Can Indus crimp the assembly?",
+     "answer": "Yes. We crimp, pressure-test and certify assemblies in Dubai and ship UAE-wide. Send the hose grade, bore, both end fittings, overall length and orientation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Fitting Configuration",
+     "value": "90-elbow",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "fitting_configuration"
+    },
+    {
+     "group": "Identification",
+     "label": "Thread Form",
+     "value": "G1\"-11 to G3/8\"-19",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "thread_form"
+    },
+    {
+     "group": "Identification",
+     "label": "Sealing Form",
+     "value": "60° cone seat",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "sealing_form"
+    },
+    {
+     "group": "Identification",
+     "label": "Thread Gender",
+     "value": "female-swivel",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "gender"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size Range",
+     "value": "-04 to -16",
+     "unit": null,
+     "position": 4,
+     "isFilterable": true,
+     "templateKey": "nominal_size_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "Carbon steel (316 stainless on request)",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "material"
+    },
+    {
+     "group": "Construction",
+     "label": "Surface Treatment",
+     "value": "Zinc-plated, Cr3+ passivated, RoHS-compliant",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "surface_treatment"
+    },
+    {
+     "group": "Compliance",
+     "label": "Applicable Standards",
+     "value": "BSP parallel thread to ISO 228-1",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": "applicable_standards"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-BSP-FEM-60-DH-90-0404",
+     "hoseDash": 4,
+     "hoseInch": "1/4\"",
+     "hoseDn": 6,
+     "portLabel": "G1/4\"-19",
+     "portDash": 4,
+     "dimensions": {
+      "S1": 19.0,
+      "S2": 19.0,
+      "C": 5.5,
+      "H": 40.5
+     },
+     "sourcePart": "22691D-04-04",
+     "position": 0
+    },
+    {
+     "partNumber": "IH-BSP-FEM-60-DH-90-0606",
+     "hoseDash": 6,
+     "hoseInch": "3/8\"",
+     "hoseDn": 10,
+     "portLabel": "G3/8\"-19",
+     "portDash": 6,
+     "dimensions": {
+      "S1": 22.0,
+      "S2": 22.0,
+      "C": 6.3,
+      "H": 49.0
+     },
+     "sourcePart": "22691D-06-06",
+     "position": 1
+    },
+    {
+     "partNumber": "IH-BSP-FEM-60-DH-90-0808",
+     "hoseDash": 8,
+     "hoseInch": "1/2\"",
+     "hoseDn": 12,
+     "portLabel": "G1/2\"-14",
+     "portDash": 8,
+     "dimensions": {
+      "S1": 27.0,
+      "S2": 27.0,
+      "C": 7.5,
+      "H": 58.0
+     },
+     "sourcePart": "22691D-08-08",
+     "position": 2
+    },
+    {
+     "partNumber": "IH-BSP-FEM-60-DH-90-1212",
+     "hoseDash": 12,
+     "hoseInch": "3/4\"",
+     "hoseDn": 20,
+     "portLabel": "G3/4\"-14",
+     "portDash": 12,
+     "dimensions": {
+      "S1": 32.0,
+      "S2": 32.0,
+      "C": 10.9,
+      "H": 74.0
+     },
+     "sourcePart": "22691D-12-12",
+     "position": 3
+    },
+    {
+     "partNumber": "IH-BSP-FEM-60-DH-90-1616",
+     "hoseDash": 16,
+     "hoseInch": "1\"",
+     "hoseDn": 25,
+     "portLabel": "G1\"-11",
+     "portDash": 16,
+     "dimensions": {
+      "S1": 41.0,
+      "S2": 41.0,
+      "C": 11.7,
+      "H": 82.8
+     },
+     "sourcePart": "22691D-16-16",
+     "position": 4
+    }
+   ],
+   "sourceFamily": "22691D (p59)"
+  },
+  {
+   "sku": "IH-BSP-FEM-60-DH-CP",
+   "title": "BSP Female 60° Cone Compact Double Hex Hose Fitting",
+   "slug": "bsp-female-60-cone-compact-double-hex-hose-fitting",
+   "categorySlug": "bsp-hose-fittings",
+   "specTemplateSlug": "threaded-fitting-spec",
+   "focusKeyword": "BSP compact double hex hose fitting",
+   "imageFromSku": "IH-BSP-FEM-60",
+   "descriptionShort": "BSP Female 60° Cone Compact Double Hex — 60° cone seat, in 9 sizes from -04.",
+   "descriptionLong": "<p>The <strong>BSP Female 60° Cone Compact Double Hex Hose Fitting</strong> is a hydraulic hose fitting with 60° cone seat.</p>\n<p>The compact double hex — a shorter body than the standard double hex, for a crowded manifold. The catalogue prints this series as 226191K in its own table and 22691K in its contents.</p>\n<h3>Construction</h3>\n<ul>\n<li>Configuration: straight</li>\n<li>Thread: G1&quot;×11 to G5/8&quot;×14</li>\n<li>Sealing form: 60° cone seat</li>\n<li>Gender: female-swivel</li>\n<li>Material: carbon steel, zinc-plated and Cr3+ passivated (316 stainless on request)</li>\n</ul>\n<h3>Sizes</h3>\n<p>9 sizes, hose bore -04 to -16, threads G1&quot;×11 to G5/8&quot;×14. The full size and dimension table is on this page.</p>\n<h3>How to order</h3>\n<p>Quote the Indus part number for the size you need. Tell us the hose grade and bore and we will include the matching crimp ferrule — the ferrule follows the hose, not the fitting. Indus crimps and pressure-tests assemblies before dispatch.</p>",
+   "seoTitle": "BSP Female 60° Cone Compact Double Hex Hose Fitting | G1\"×11–G5/8\"×14",
+   "seoDescription": "BSP Female 60° Cone Compact Double Hex Hose Fitting — 9 sizes (-04 to -16), G1\"×11 to G5/8\"×14. Carbon steel or 316 stainless, ex-Dubai.",
+   "faqs": [
+    {
+     "question": "What is the sealing form?",
+     "answer": "60° cone seat. Pair it with the matching counterpart — a mismatched sealing form will seat but will not hold pressure."
+    },
+    {
+     "question": "What sizes are available?",
+     "answer": "9 sizes, hose bore -04 to -16, threads G1\"×11 to G5/8\"×14. Every combination in the table on this page is an orderable part number."
+    },
+    {
+     "question": "What is the maximum working pressure?",
+     "answer": "The hose grade and bore set the assembly rating, not the fitting. A correctly crimped fitting does not derate the hose. Tell us the grade and bore on the RFQ and we will confirm the figure in writing."
+    },
+    {
+     "question": "Which ferrule pairs with this fitting?",
+     "answer": "The one that matches your hose grade — the skive/no-skive choice follows the hose construction, not the fitting end. Send the hose grade with your enquiry and we will specify the ferrule and the crimp diameter."
+    },
+    {
+     "question": "Is stainless steel available?",
+     "answer": "Yes — 316 stainless on request across the range. Standard supply is carbon steel, zinc-plated and Cr3+ passivated. Add \"-SS\" to the part number when you enquire."
+    },
+    {
+     "question": "Can Indus crimp the assembly?",
+     "answer": "Yes. We crimp, pressure-test and certify assemblies in Dubai and ship UAE-wide. Send the hose grade, bore, both end fittings, overall length and orientation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Fitting Configuration",
+     "value": "straight",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "fitting_configuration"
+    },
+    {
+     "group": "Identification",
+     "label": "Thread Form",
+     "value": "G1\"×11 to G5/8\"×14",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "thread_form"
+    },
+    {
+     "group": "Identification",
+     "label": "Sealing Form",
+     "value": "60° cone seat",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "sealing_form"
+    },
+    {
+     "group": "Identification",
+     "label": "Thread Gender",
+     "value": "female-swivel",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "gender"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size Range",
+     "value": "-04 to -16",
+     "unit": null,
+     "position": 4,
+     "isFilterable": true,
+     "templateKey": "nominal_size_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "Carbon steel (316 stainless on request)",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "material"
+    },
+    {
+     "group": "Construction",
+     "label": "Surface Treatment",
+     "value": "Zinc-plated, Cr3+ passivated, RoHS-compliant",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "surface_treatment"
+    },
+    {
+     "group": "Compliance",
+     "label": "Applicable Standards",
+     "value": "BSP parallel thread to ISO 228-1",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": "applicable_standards"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-BSP-FEM-60-DH-CP-0404",
+     "hoseDash": 4,
+     "hoseInch": "1/4\"",
+     "hoseDn": 6,
+     "portLabel": "G1/4\"×19",
+     "portDash": 4,
+     "dimensions": {
+      "S1": 11.0,
+      "S2": 19.0,
+      "A": 17.5,
+      "C": 5.5,
+      "H": 18.5
+     },
+     "sourcePart": "226191K-04-04",
+     "position": 0
+    },
+    {
+     "partNumber": "IH-BSP-FEM-60-DH-CP-0406",
+     "hoseDash": 4,
+     "hoseInch": "1/4\"",
+     "hoseDn": 6,
+     "portLabel": "G3/8\"×19",
+     "portDash": 6,
+     "dimensions": {
+      "S1": 16.0,
+      "S2": 22.0,
+      "A": 20.0,
+      "C": 6.3,
+      "H": 23.0
+     },
+     "sourcePart": "226191K-06-04",
+     "position": 1
+    },
+    {
+     "partNumber": "IH-BSP-FEM-60-DH-CP-0506",
+     "hoseDash": 5,
+     "hoseInch": "5/16\"",
+     "hoseDn": 8,
+     "portLabel": "G3/8\"×19",
+     "portDash": 6,
+     "dimensions": {
+      "S1": 16.0,
+      "S2": 22.0,
+      "A": 20.0,
+      "C": 6.3,
+      "H": 23.0
+     },
+     "sourcePart": "226191K-06-05",
+     "position": 2
+    },
+    {
+     "partNumber": "IH-BSP-FEM-60-DH-CP-0608",
+     "hoseDash": 6,
+     "hoseInch": "3/8\"",
+     "hoseDn": 10,
+     "portLabel": "G1/2\"×14",
+     "portDash": 8,
+     "dimensions": {
+      "S1": 19.0,
+      "S2": 27.0,
+      "A": 23.0,
+      "C": 7.5,
+      "H": 26.5
+     },
+     "sourcePart": "226191K-08-06",
+     "position": 3
+    },
+    {
+     "partNumber": "IH-BSP-FEM-60-DH-CP-0606",
+     "hoseDash": 6,
+     "hoseInch": "3/8\"",
+     "hoseDn": 10,
+     "portLabel": "G3/8\"×19",
+     "portDash": 6,
+     "dimensions": {
+      "S1": 16.0,
+      "S2": 22.0,
+      "A": 20.0,
+      "C": 6.3,
+      "H": 24.0
+     },
+     "sourcePart": "226191K-06-06",
+     "position": 4
+    },
+    {
+     "partNumber": "IH-BSP-FEM-60-DH-CP-0808",
+     "hoseDash": 8,
+     "hoseInch": "1/2\"",
+     "hoseDn": 12,
+     "portLabel": "G1/2\"×14",
+     "portDash": 8,
+     "dimensions": {
+      "S1": 19.0,
+      "S2": 27.0,
+      "A": 23.5,
+      "C": 7.5,
+      "H": 28.5
+     },
+     "sourcePart": "226191K-08-08",
+     "position": 5
+    },
+    {
+     "partNumber": "IH-BSP-FEM-60-DH-CP-1010",
+     "hoseDash": 10,
+     "hoseInch": "5/8\"",
+     "hoseDn": 16,
+     "portLabel": "G5/8\"×14",
+     "portDash": 10,
+     "dimensions": {
+      "S1": 22.0,
+      "S2": 30.0,
+      "A": 25.0,
+      "C": 9.5,
+      "H": 29.2
+     },
+     "sourcePart": "226191K-10-10",
+     "position": 6
+    },
+    {
+     "partNumber": "IH-BSP-FEM-60-DH-CP-1212",
+     "hoseDash": 12,
+     "hoseInch": "3/4\"",
+     "hoseDn": 20,
+     "portLabel": "G3/4\"×14",
+     "portDash": 12,
+     "dimensions": {
+      "S1": 27.0,
+      "S2": 32.0,
+      "A": 27.5,
+      "C": 10.9,
+      "H": 33.0
+     },
+     "sourcePart": "226191K-12-12",
+     "position": 7
+    },
+    {
+     "partNumber": "IH-BSP-FEM-60-DH-CP-1616",
+     "hoseDash": 16,
+     "hoseInch": "1\"",
+     "hoseDn": 25,
+     "portLabel": "G1\"×11",
+     "portDash": 16,
+     "dimensions": {
+      "S1": 33.0,
+      "S2": 41.0,
+      "A": 32.5,
+      "C": 11.7,
+      "H": 38.1
+     },
+     "sourcePart": "226191K-16-16",
+     "position": 8
+    }
+   ],
+   "sourceFamily": "226191K (p59)"
+  }
+ ]
+}
