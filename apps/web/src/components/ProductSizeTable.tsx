@@ -1,7 +1,10 @@
 import {
   hasVariantEquivalents,
+  hasVariantPressures,
+  hasVariantWeights,
   variantDimensionColumns,
   variantDimensions,
+  variantEndColumns,
   variantEquivalentBrand,
   variantHoseLabel,
   variantPortHeading,
@@ -59,8 +62,14 @@ export default function ProductSizeTable({
   const showEquivalents = hasVariantEquivalents(variants)
   const equivalentBrand = variantEquivalentBrand(variants)
   const disclaimerBrand = equivalenceBrand ?? equivalentBrand
+  const endColumns = variantEndColumns(variants)
   const showHose = variants.some((v) => variantHoseLabel(v) !== null)
-  const showPort = variants.some((v) => Boolean(v.portLabel))
+  // A hose fitting gets one port column headed by what the value is. An
+  // adapter has two or three ends, so it gets numbered end columns instead and
+  // this single one steps aside.
+  const showPort = endColumns.length === 0 && variants.some((v) => Boolean(v.portLabel))
+  const showWeight = hasVariantWeights(variants)
+  const showPressure = hasVariantPressures(variants)
 
   return (
     <div>
@@ -99,6 +108,16 @@ export default function ProductSizeTable({
                   {portHeading}
                 </th>
               )}
+              {endColumns.map((c) => (
+                <th
+                  key={c.key}
+                  scope="col"
+                  title={c.help}
+                  className="px-3.5 py-2.5 text-left font-medium whitespace-nowrap"
+                >
+                  {c.label}
+                </th>
+              ))}
               {dimensionColumns.map((c) => (
                 <th
                   key={c.key}
@@ -119,6 +138,16 @@ export default function ProductSizeTable({
                   {c.label}
                 </th>
               ))}
+              {showWeight && (
+                <th scope="col" className="px-3.5 py-2.5 text-right font-medium whitespace-nowrap">
+                  Weight <span className="text-ih-muted-2">(g)</span>
+                </th>
+              )}
+              {showPressure && (
+                <th scope="col" className="px-3.5 py-2.5 text-right font-medium whitespace-nowrap">
+                  Working pressure <span className="text-ih-muted-2">(bar)</span>
+                </th>
+              )}
             </tr>
           </thead>
           <tbody>
@@ -137,6 +166,11 @@ export default function ProductSizeTable({
                   {showPort && (
                     <td className="px-3.5 py-2.5 text-ih-ink-2">{v.portLabel ?? '—'}</td>
                   )}
+                  {endColumns.map((c) => (
+                    <td key={c.key} className="px-3.5 py-2.5 whitespace-nowrap text-ih-ink-2">
+                      {v[c.key] ?? '—'}
+                    </td>
+                  ))}
                   {dimensionColumns.map((c) => (
                     <td key={c.key} className="px-3.5 py-2.5 text-right text-ih-ink-2">
                       {dims[c.key] ?? '—'}
@@ -147,6 +181,14 @@ export default function ProductSizeTable({
                       {variantText(v.dimensions, c.key) ?? '—'}
                     </td>
                   ))}
+                  {showWeight && (
+                    <td className="px-3.5 py-2.5 text-right text-ih-ink-2">{v.weightG ?? '—'}</td>
+                  )}
+                  {showPressure && (
+                    <td className="px-3.5 py-2.5 text-right text-ih-ink-2">
+                      {v.pressureBar ?? '—'}
+                    </td>
+                  )}
                 </tr>
               )
             })}
@@ -155,12 +197,19 @@ export default function ProductSizeTable({
       </div>
 
       <div className="mt-4 flex flex-col gap-1.5 text-[12.5px] leading-[1.55] text-ih-muted">
-        {(dimensionColumns.length > 0 || textColumns.length > 0) && (
+        {(endColumns.length > 0 || dimensionColumns.length > 0 || textColumns.length > 0) && (
           <p>
-            {[...dimensionColumns, ...textColumns]
+            {[...endColumns, ...dimensionColumns, ...textColumns]
               .map((c) => `${c.label} — ${c.help}`)
               .join(' ')}{' '}
             Ask us for the dimension drawing if you need it stamped.
+          </p>
+        )}
+        {showPressure && (
+          <p>
+            Working pressure is the manufacturer&rsquo;s published rating for the fitting itself. An
+            assembly is limited by its lowest-rated component, so check it against the hose, the
+            tube and the port you are mating to.
           </p>
         )}
         <p>
