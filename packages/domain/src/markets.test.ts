@@ -10,7 +10,7 @@ import {
 
 describe('export markets', () => {
   it('covers the markets we ship on a recurring basis, GCC first', () => {
-    expect(MARKETS).toHaveLength(102)
+    expect(MARKETS).toHaveLength(126)
     expect(marketsOrdered().map((m) => m.slug)).toEqual([
       // GCC — the original five, on the three-day lane.
       'saudi-arabia',
@@ -127,6 +127,31 @@ describe('export markets', () => {
       'iceland',
       'austria',
       'switzerland',
+      // Central, Eastern and Southern Europe, and the Caucasus.
+      'poland',
+      'czechia',
+      'slovakia',
+      'hungary',
+      'romania',
+      'bulgaria',
+      'greece',
+      'cyprus',
+      'malta',
+      'turkey',
+      'croatia',
+      'slovenia',
+      'serbia',
+      'bosnia-and-herzegovina',
+      'north-macedonia',
+      'montenegro',
+      'albania',
+      'kosovo',
+      'moldova',
+      'georgia',
+      'azerbaijan',
+      'estonia',
+      'latvia',
+      'lithuania',
     ])
   })
 
