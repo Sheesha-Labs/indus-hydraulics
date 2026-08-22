@@ -1825,6 +1825,366 @@ export const MARKETS: Market[] = [
     },
     position: 85,
   },
+  {
+    slug: 'united-kingdom',
+    name: 'the United Kingdom',
+    countryCode: 'GB',
+    summary:
+      'Hydraulic hose, fittings, adapters and offshore-specification assemblies supplied to the United Kingdom from our Dubai warehouse, quoted per consignment.',
+    intro:
+      'The United Kingdom is well supplied domestically for general hydraulics. Where enquiries reach us they tend to come from the North Sea, and increasingly from decommissioning work rather than from production.',
+    leadTime: 'Quoted per consignment',
+    routes: ['Air freight', 'Sea freight where the schedule allows'],
+    incoterms: ['CIF', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
+    conformity: [
+      'Certificate of Origin, Dubai Chamber attested',
+      'Manufacturer certificate of conformity on request',
+    ],
+    context: {
+      heading: 'Decommissioning is not maintenance run backwards',
+      body: 'Taking a structure apart puts loads through equipment that installation never did, and it does so on plant that has already served its design life. Cutting, lifting and recovery tooling gets used hard for a short campaign and then not at all, which makes rental and short-life consumables the sensible pattern rather than a spares holding nobody will ever draw down. It also means the hydraulics have to be right first time on equipment that may be unfamiliar to the crew operating it. Tell us the tool rather than the vessel, and the specification follows from what it actually does.',
+    },
+    position: 86,
+  },
+  {
+    slug: 'norway',
+    name: 'Norway',
+    countryCode: 'NO',
+    summary:
+      'Hydraulic hose, fittings, adapters and offshore-specification assemblies supplied to Norway from our Dubai warehouse, quoted per consignment.',
+    intro:
+      'Norwegian offshore work runs to its own material and documentation standards, developed for the North Sea and applied rigorously. Those standards, rather than the hardware, are what usually decide whether a product is acceptable.',
+    leadTime: 'Quoted per consignment',
+    routes: ['Air freight', 'Sea freight where the schedule allows'],
+    incoterms: ['CIF', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
+    conformity: [
+      'Certificate of Origin, Dubai Chamber attested',
+      'Manufacturer certificate of conformity on request',
+      'Material certification to EN 10204 3.1 where specified',
+    ],
+    context: {
+      heading: 'Material certification is the deliverable',
+      body: 'On a project working to Norwegian offshore practice, a component without the correct material documentation is not a component — it is an item that cannot be installed, however well it performs. The distinction that catches people is between a general certificate of conformity and a certificate tied to the actual heat of material, inspected independently. The second is what tends to be required and it has to be requested before manufacture, not after delivery. Say which level applies at the enquiry and we will confirm what is obtainable for each line before you commit to it.',
+    },
+    position: 87,
+  },
+  {
+    slug: 'netherlands',
+    name: 'the Netherlands',
+    countryCode: 'NL',
+    summary:
+      'Hydraulic hose, fittings, adapters and large-bore transfer hose supplied to the Netherlands from our Dubai warehouse, quoted per consignment.',
+    intro:
+      'Dutch dredging and marine contractors work all over the world, and a good deal of the equipment registered here spends its life somewhere else entirely. That changes where goods should actually be sent.',
+    leadTime: 'Quoted per consignment',
+    routes: ['Air freight', 'Sea freight where the schedule allows'],
+    incoterms: ['CIF', 'FOB Jebel Ali', 'DAP to a project site', 'EXW Dubai for a nominated forwarder'],
+    conformity: [
+      'Certificate of Origin, Dubai Chamber attested',
+      'Manufacturer certificate of conformity on request',
+    ],
+    context: {
+      heading: 'Buy in Rotterdam, deliver to the project',
+      body: 'Where procurement sits in one country and the equipment is working in another, shipping to head office and forwarding on is usually the expensive way round — particularly when the project happens to be somewhere we already ship to weekly. We are frequently closer to a dredger working in the Gulf or East Africa than the buyer ordering for it is. So the useful question at the enquiry is not where to invoice but where the equipment actually is, and those two answers can differ without any difficulty at all: one Estimate, delivery wherever the work is.',
+    },
+    position: 88,
+  },
+  {
+    slug: 'germany',
+    name: 'Germany',
+    countryCode: 'DE',
+    summary:
+      'Hydraulic hose, fittings, adapters and DIN-standard assemblies supplied to Germany from our Dubai warehouse, quoted per consignment.',
+    intro:
+      'Germany manufactures a large share of the hydraulics in this catalogue, so importing standard product here makes no sense at all. What does make sense involves German equipment that has left Germany.',
+    leadTime: 'Quoted per consignment',
+    routes: ['Air freight', 'Sea freight where the schedule allows'],
+    incoterms: ['CIF', 'FOB Jebel Ali', 'DAP to a project site', 'EXW Dubai for a nominated forwarder'],
+    conformity: [
+      'Certificate of Origin, Dubai Chamber attested',
+      'Manufacturer certificate of conformity on request',
+    ],
+    context: {
+      heading: 'Support the installed base where it is working',
+      body: 'German machine builders sell heavily into the Gulf, Africa and Central Asia, and every one of those machines eventually needs a hose. Supporting them from Europe means air freight and a week; supporting them from Dubai often means the same day. For a manufacturer with an installed base in our region, holding a small stock of the DIN fittings and hose specifications those machines use, here rather than there, turns a warranty problem into a routine one. That is worth a conversation whether or not anything is ordered from us today.',
+    },
+    position: 89,
+  },
+  {
+    slug: 'france',
+    name: 'France',
+    countryCode: 'FR',
+    summary:
+      'Hydraulic hose, fittings, adapters, valves and industrial hose supplied to France from our Dubai warehouse, quoted per consignment.',
+    intro:
+      'French engineering and construction groups operate extensively across West and North Africa, in several of the markets we already ship to. Procurement for those sites is frequently run from France even though nothing is destined for it.',
+    leadTime: 'Quoted per consignment',
+    routes: ['Air freight', 'Sea freight where the schedule allows'],
+    incoterms: ['CIF', 'FOB Jebel Ali', 'DAP to a project site', 'EXW Dubai for a nominated forwarder'],
+    conformity: [
+      'Certificate of Origin, Dubai Chamber attested',
+      'Manufacturer certificate of conformity on request',
+    ],
+    context: {
+      heading: 'One supplier, sites in several countries',
+      body: 'A group running projects across a region ends up with a different local supplier at each one, and therefore different hose, different fittings and no common spares holding. Consolidating that on a single source has an obvious advantage in price and a much larger one in interchangeability: an assembly built for a site in one country fits the identical machine in another. We already ship to most of the African markets French contractors work in, so the practical arrangement is usually one agreement centrally and delivery direct to each site.',
+    },
+    position: 90,
+  },
+  {
+    slug: 'italy',
+    name: 'Italy',
+    countryCode: 'IT',
+    summary:
+      'Hydraulic hose, fittings, adapters and marine-specification assemblies supplied to Italy from our Dubai warehouse, quoted per consignment.',
+    intro:
+      'Italy is a major hose manufacturing country in its own right, and it is also the centre of the world\'s yacht building industry. The second of those has requirements that industrial hydraulics rarely encounters.',
+    leadTime: 'Quoted per consignment',
+    routes: ['Air freight', 'Sea freight where the schedule allows'],
+    incoterms: ['CIF', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
+    conformity: [
+      'Certificate of Origin, Dubai Chamber attested',
+      'Manufacturer certificate of conformity on request',
+    ],
+    context: {
+      heading: 'On a yacht the hose has to look right as well as work',
+      body: 'Stabiliser, passerelle, hatch and steering circuits on a large yacht run through spaces that people see, and an assembly that would be entirely acceptable in a plant room is not acceptable there. Cover finish, sleeving, consistent cut lengths and clean identification all matter, alongside fire performance where a line passes through a machinery space. None of that appears on a standard hydraulic specification, and all of it gets noticed at survey. Tell us the assembly is for a visible run and we will build and finish it accordingly.',
+    },
+    position: 91,
+  },
+  {
+    slug: 'spain',
+    name: 'Spain',
+    countryCode: 'ES',
+    summary:
+      'Hydraulic hose, fittings, adapters and high-temperature transfer hose supplied to Spain from our Dubai warehouse, quoted per consignment.',
+    intro:
+      'Spain built much of the world\'s early concentrated solar capacity and continues to engineer it for export, including into the Gulf. Those plants circulate heat transfer fluid at temperatures that rule out ordinary hose entirely.',
+    leadTime: 'Quoted per consignment',
+    routes: ['Air freight', 'Sea freight where the schedule allows'],
+    incoterms: ['CIF', 'FOB Jebel Ali', 'DAP to a project site', 'EXW Dubai for a nominated forwarder'],
+    conformity: [
+      'Certificate of Origin, Dubai Chamber attested',
+      'Manufacturer certificate of conformity on request',
+    ],
+    context: {
+      heading: 'Thermal fluid is a temperature problem and a leak problem',
+      body: 'Synthetic heat transfer fluids run far above what any rubber construction tolerates, and they are searching liquids that will find a joint a hydraulic oil would never trouble. That combination points to metallic hose with the appropriate braid and to end connections that seal by metal-to-metal contact rather than by an elastomer. Flexibility still matters, because a collector field moves as it tracks and expands as it heats. If you are engineering a plant for a hot climate, the ambient at the site belongs in the specification alongside the fluid temperature.',
+    },
+    position: 92,
+  },
+  {
+    slug: 'portugal',
+    name: 'Portugal',
+    countryCode: 'PT',
+    summary:
+      'Hydraulic hose, fittings, adapters and process transfer hose supplied to Portugal from our Dubai warehouse, quoted per consignment.',
+    intro:
+      'Pulp and paper is among Portugal\'s larger heavy industries, and a pulp mill is an unusually demanding hydraulic environment — hot, wet, chemically active and running continuously for months between shutdowns.',
+    leadTime: 'Quoted per consignment',
+    routes: ['Air freight', 'Sea freight where the schedule allows'],
+    incoterms: ['CIF', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
+    conformity: [
+      'Certificate of Origin, Dubai Chamber attested',
+      'Manufacturer certificate of conformity on request',
+    ],
+    context: {
+      heading: 'Steam does the damage from the outside in',
+      body: 'Most hose specification concentrates on what is inside the tube, and in a mill the harder problem is often what is outside the cover. A line running near a steam leak or through a humid, hot section ages from the outside, and by the time the cover is cracking the reinforcement beneath it has already been exposed to moisture for months. Corrosion of the wire then finishes it. Where a run cannot be moved away from heat, sleeving and a cover compound chosen for external conditions is what extends its life, and both are cheaper than the unplanned stop.',
+    },
+    position: 93,
+  },
+  {
+    slug: 'ireland',
+    name: 'Ireland',
+    countryCode: 'IE',
+    summary:
+      'Hydraulic hose, fittings, adapters and sanitary transfer hose supplied to Ireland from our Dubai warehouse, quoted per consignment.',
+    intro:
+      'Pharmaceutical manufacturing and dairy processing account for a large share of Irish industry, and both are audited environments where what can be evidenced matters as much as what was installed.',
+    leadTime: 'Quoted per consignment',
+    routes: ['Air freight', 'Sea freight where the schedule allows'],
+    incoterms: ['CIF', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
+    conformity: [
+      'Certificate of Origin, Dubai Chamber attested',
+      'Manufacturer certificate of conformity on request',
+      'Material certification to EN 10204 3.1 where specified',
+    ],
+    context: {
+      heading: 'If it is not documented it did not happen',
+      body: 'In a validated facility a component carries a paper trail from the material it was made of through to the person who installed it, and a substitution made sensibly on the floor becomes a deviation that has to be written up. That is why an equivalent part is rarely welcome even when it is technically better. What helps is knowing before the order which certification level applies to each line, because obtaining it retrospectively ranges from expensive to impossible. Ask us for the documentation at quotation and it travels with the goods.',
+    },
+    position: 94,
+  },
+  {
+    slug: 'belgium',
+    name: 'Belgium',
+    countryCode: 'BE',
+    summary:
+      'Hydraulic hose, fittings, adapters and chemical transfer hose supplied to Belgium from our Dubai warehouse, quoted per consignment.',
+    intro:
+      'Antwerp hosts one of the largest chemical clusters anywhere, and the range of media handled across a single site there is wider than almost any other industrial environment we supply.',
+    leadTime: 'Quoted per consignment',
+    routes: ['Air freight', 'Sea freight where the schedule allows'],
+    incoterms: ['CIF', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
+    conformity: [
+      'Certificate of Origin, Dubai Chamber attested',
+      'Manufacturer certificate of conformity on request',
+    ],
+    context: {
+      heading: 'One site, twenty media, twenty different answers',
+      body: 'Where a plant handles many chemicals, the temptation is to standardise on one hose that is compatible with most of them and accept a shorter life on the rest. That works until the day an assembly is moved from one duty to another because it was on the shelf and physically fitted. Colour coding and permanent tagging by service are worth more here than anywhere else, and we will tag assemblies to a customer scheme rather than to ours. It costs nothing at build and removes an entire category of mistake later on.',
+    },
+    position: 95,
+  },
+  {
+    slug: 'luxembourg',
+    name: 'Luxembourg',
+    countryCode: 'LU',
+    summary:
+      'Hydraulic hose, fittings, adapters and high-temperature assemblies supplied to Luxembourg from our Dubai warehouse, quoted per consignment.',
+    intro:
+      'Steel production and the engineering around it remain central to Luxembourg industry. A rolling mill exposes hydraulics to radiant heat and to the risk of ignition, which is a combination with very few acceptable answers.',
+    leadTime: 'Quoted per consignment',
+    routes: ['Air freight', 'Sea freight where the schedule allows'],
+    incoterms: ['CIF', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
+    conformity: [
+      'Certificate of Origin, Dubai Chamber attested',
+      'Manufacturer certificate of conformity on request',
+    ],
+    context: {
+      heading: 'Near hot metal, a pinhole is an ignition source',
+      body: 'Mineral oil released as a fine spray onto hot steel ignites, and the failure that causes it need not be dramatic — a pinhole in a cover is enough. That is why mill hydraulics move to fire-resistant fluids, and why the hose has to be compatible with whichever type was chosen, since water-glycol and phosphate ester attack quite different things. Protective sleeving matters too, both to keep radiant heat off the cover and to contain a spray if one occurs. Tell us the fluid designation rather than the phrase fire-resistant; the four families are not interchangeable.',
+    },
+    position: 96,
+  },
+  {
+    slug: 'denmark',
+    name: 'Denmark',
+    countryCode: 'DK',
+    summary:
+      'Hydraulic hose, fittings, adapters and offshore-specification assemblies supplied to Denmark from our Dubai warehouse, quoted per consignment.',
+    intro:
+      'Danish industry is closely tied to offshore wind, both in manufacturing and in the service operations that keep installed turbines running. Turbine hydraulics are a peculiar duty: small in volume, awkward to reach and expensive to attend.',
+    leadTime: 'Quoted per consignment',
+    routes: ['Air freight', 'Sea freight where the schedule allows'],
+    incoterms: ['CIF', 'FOB Jebel Ali', 'DAP to a project site', 'EXW Dubai for a nominated forwarder'],
+    conformity: [
+      'Certificate of Origin, Dubai Chamber attested',
+      'Manufacturer certificate of conformity on request',
+    ],
+    context: {
+      heading: 'The part is cheap and reaching it is not',
+      body: 'A pitch or brake assembly costs very little against the vessel, the weather window and the technician time required to change it offshore. That inverts the usual economics completely: it is worth paying considerably more for a longer-lived component, and worth changing anything marginal while somebody is already up there rather than scheduling a second visit. It also means every assembly on the trip should be correct and identified before departure, because there is no second chance that day. We build and tag to a turbine-specific list for exactly that reason.',
+    },
+    position: 97,
+  },
+  {
+    slug: 'sweden',
+    name: 'Sweden',
+    countryCode: 'SE',
+    summary:
+      'Hydraulic hose, fittings, adapters and fire-resistant fluid compatible assemblies supplied to Sweden from our Dubai warehouse, quoted per consignment.',
+    intro:
+      'Swedish underground mining operates at depth and at scale, and underground is where a hydraulic fire stops being a machine problem and becomes an evacuation. Fluid choice follows from that, and hose choice follows from fluid.',
+    leadTime: 'Quoted per consignment',
+    routes: ['Air freight', 'Sea freight where the schedule allows'],
+    incoterms: ['CIF', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
+    conformity: [
+      'Certificate of Origin, Dubai Chamber attested',
+      'Manufacturer certificate of conformity on request',
+    ],
+    context: {
+      heading: 'Underground, the fluid dictates everything downstream',
+      body: 'Once a fleet moves to a fire-resistant fluid, seals, hose linings and even permissible operating pressures change with it, because these fluids carry less load and are harder on components than mineral oil. Retrofitting one into a machine specified for the other, without revisiting what it touches, produces failures that look random and are not. The conversion is straightforward when planned and troublesome when discovered. If a machine is being converted, send the fluid designation and the existing hose specifications together and we will identify what has to change.',
+    },
+    position: 98,
+  },
+  {
+    slug: 'finland',
+    name: 'Finland',
+    countryCode: 'FI',
+    summary:
+      'Hydraulic hose, fittings, adapters and high-flex assemblies supplied to Finland from our Dubai warehouse, quoted per consignment.',
+    intro:
+      'Finnish forestry machinery is exported worldwide and works its hydraulics unusually hard. A harvester crane articulates constantly, and the hose running along it flexes on every movement rather than sitting still under pressure.',
+    leadTime: 'Quoted per consignment',
+    routes: ['Air freight', 'Sea freight where the schedule allows'],
+    incoterms: ['CIF', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
+    conformity: [
+      'Certificate of Origin, Dubai Chamber attested',
+      'Manufacturer certificate of conformity on request',
+    ],
+    context: {
+      heading: 'Routing decides the life of a hose that never stops moving',
+      body: 'On articulating equipment the hose fails where it is constrained, not where it is loaded. A clamp positioned so that bending happens at the fitting rather than along the free length will destroy assemblies indefinitely, and replacing them with a better hose changes nothing at all. The fix is geometric: enough free length, the bend taken in the middle of the run, and clamps that locate rather than pinch. If a particular assembly on a machine keeps failing and its neighbours do not, that is a routing problem and we would rather help solve it than keep supplying the replacement.',
+    },
+    position: 99,
+  },
+  {
+    slug: 'iceland',
+    name: 'Iceland',
+    countryCode: 'IS',
+    summary:
+      'Hydraulic hose, fittings, adapters and marine deck assemblies supplied to Iceland from our Dubai warehouse, quoted per consignment.',
+    intro:
+      'Fishing and onboard processing dominate Icelandic industry, which puts hydraulics into permanent contact with salt water and, on the processing side, into direct proximity with food.',
+    leadTime: 'Quoted per consignment',
+    routes: ['Air freight', 'Sea freight where the schedule allows'],
+    incoterms: ['CIF', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
+    conformity: [
+      'Certificate of Origin, Dubai Chamber attested',
+      'Manufacturer certificate of conformity on request',
+    ],
+    context: {
+      heading: 'Deck and factory are two different specifications',
+      body: 'On the same vessel, a trawl winch line and a line inside the processing deck face opposite problems. The first needs salt resistance and mechanical toughness; the second needs to be cleanable, to tolerate wash-down chemicals and hot water, and to be acceptable near product. A single hose specified for the whole boat does one of those jobs adequately and the other badly. Splitting the list by where each assembly actually runs takes a few minutes at the enquiry and produces a materially better answer than treating the vessel as one environment.',
+    },
+    position: 100,
+  },
+  {
+    slug: 'austria',
+    name: 'Austria',
+    countryCode: 'AT',
+    summary:
+      'Hydraulic hose, fittings, adapters and safety-critical assemblies supplied to Austria from our Dubai warehouse, quoted per consignment.',
+    intro:
+      'Austrian engineering has a strong position in ropeways and Alpine infrastructure, exported to mountain and desert resorts alike. Passenger-carrying equipment is governed differently from industrial plant, and that governs the hydraulics too.',
+    leadTime: 'Quoted per consignment',
+    routes: ['Air freight', 'Sea freight where the schedule allows'],
+    incoterms: ['CIF', 'FOB Jebel Ali', 'DAP to a project site', 'EXW Dubai for a nominated forwarder'],
+    conformity: [
+      'Certificate of Origin, Dubai Chamber attested',
+      'Manufacturer certificate of conformity on request',
+      'Material certification to EN 10204 3.1 where specified',
+    ],
+    context: {
+      heading: 'Where people are carried, substitution is not a decision you make',
+      body: 'On equipment that carries passengers, components are approved as part of a certified system and an inspector will ask what was fitted and on whose authority. An equivalent hose is not equivalent in that context, whatever its rating, because the approval attaches to the specific item rather than to the specification. So the correct answer here is almost always the originally specified part with its documentation, and where we cannot obtain that we will say so rather than propose something that would put a certificate at risk.',
+    },
+    position: 101,
+  },
+  {
+    slug: 'switzerland',
+    name: 'Switzerland',
+    countryCode: 'CH',
+    summary:
+      'Hydraulic hose, fittings, adapters and heavy-duty assemblies supplied to Switzerland from our Dubai warehouse, quoted per consignment.',
+    intro:
+      'Swiss engineering has an outsized position in tunnelling, and tunnel boring machines are among the most hydraulically intensive pieces of equipment built. They also work in a place nothing can easily be brought to.',
+    leadTime: 'Quoted per consignment',
+    routes: ['Air freight', 'Sea freight where the schedule allows'],
+    incoterms: ['CIF', 'FOB Jebel Ali', 'DAP to a project site', 'EXW Dubai for a nominated forwarder'],
+    conformity: [
+      'Certificate of Origin, Dubai Chamber attested',
+      'Manufacturer certificate of conformity on request',
+    ],
+    context: {
+      heading: 'Kilometres underground, everything is a planned change',
+      body: 'A boring machine cannot be pulled out for a repair, so maintenance happens in the tunnel, in confined space, during whatever window the excavation cycle allows. Under those conditions a failed assembly is not a component problem but a schedule problem, and the response is to change things before they fail rather than after. That requires knowing what is fitted, in what length, at what point in the machine — which is a labelling and records exercise as much as an engineering one. We tag and document assemblies against a machine list for exactly this kind of work.',
+    },
+    position: 102,
+  },
 ]
 
 export function marketBySlug(slug: string): Market | undefined {

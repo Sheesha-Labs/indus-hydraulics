@@ -10,7 +10,7 @@ import {
 
 describe('export markets', () => {
   it('covers the markets we ship on a recurring basis, GCC first', () => {
-    expect(MARKETS).toHaveLength(85)
+    expect(MARKETS).toHaveLength(102)
     expect(marketsOrdered().map((m) => m.slug)).toEqual([
       // GCC — the original five, on the three-day lane.
       'saudi-arabia',
@@ -109,6 +109,24 @@ describe('export markets', () => {
       'costa-rica',
       'guatemala',
       'honduras',
+      // Western and Northern Europe.
+      'united-kingdom',
+      'norway',
+      'netherlands',
+      'germany',
+      'france',
+      'italy',
+      'spain',
+      'portugal',
+      'ireland',
+      'belgium',
+      'luxembourg',
+      'denmark',
+      'sweden',
+      'finland',
+      'iceland',
+      'austria',
+      'switzerland',
     ])
   })
 
@@ -245,7 +263,18 @@ describe('export markets', () => {
 
     // Everything else is unchanged by it.
     expect(marketCountryName(marketBySlug('oman')!)).toBe('Oman')
-    expect(marketNames()).not.toContain('the United States')
+
+    // General, rather than naming the two that happened to exist first —
+    // "the United Kingdom" and "the Netherlands" were added later and would
+    // have slipped past a test that only checked the United States.
+    const articled = MARKETS.filter((m) => m.name.startsWith('the '))
+    expect(articled.length).toBeGreaterThan(0)
+    for (const m of articled) {
+      expect(marketCountryName(m).startsWith('the '), m.slug).toBe(false)
+    }
+    for (const name of marketNames()) {
+      expect(name.startsWith('the '), name).toBe(false)
+    }
   })
 
   it('exposes names and country codes in display order', () => {
