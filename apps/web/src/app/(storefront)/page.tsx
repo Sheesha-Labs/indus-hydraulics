@@ -1,10 +1,13 @@
 import type { Metadata } from 'next'
+import { headers } from 'next/headers'
 import Image from 'next/image'
 import Link from 'next/link'
 import { unstable_cache } from 'next/cache'
 import { db } from '@indus/db'
+import { HERO_TERMS, heroLeadFor } from '@indus/domain'
 import HomeNewsletterForm from '../../components/HomeNewsletterForm'
 import HomeHeroCarousel, { type HomeHeroSlide } from '../../components/HomeHeroCarousel'
+import HeroTermRotator from '../../components/HeroTermRotator'
 import { getIndustryList } from '../../lib/industry-content'
 import { mediaUrl } from '../../lib/media'
 import { BASE_URL } from '../../lib/seo'
@@ -31,9 +34,13 @@ export async function generateMetadata(): Promise<Metadata> {
   }
 }
 
-// Re-render the static HTML at most once a minute. Combined with the
-// per-query unstable_cache wrappers below, the cold path stays fast and
-// most visitors hit the CDN-cached HTML.
+// Nominal ISR window. In practice this route renders per request — production
+// serves `/` with `cache-control: private, no-cache, no-store`, so the CDN
+// never holds a copy. Reading the geo header below depends on that and would
+// break silently if the page ever became static, which is what the
+// `hero-geo` e2e spec is there to catch. Left as-is rather than removed: it is
+// pre-existing, and the right fix is to make this page cacheable again, not to
+// delete the intent.
 export const revalidate = 60
 
 const getHomeCategories = unstable_cache(
@@ -145,7 +152,13 @@ const getHomeHeroSlides = unstable_cache(
   { revalidate: 600, tags: ['homepage-hero'] },
 )
 
-export default async function HomePage() {
+export default async function HomePage({
+  searchParams,
+}: {
+  // Next's own contract: a repeated param arrives as an array, which is why
+  // this is not narrowed to `string`. heroLeadFor handles both.
+  searchParams: Promise<{ geo?: string | string[] }>
+}) {
   const [categories, brands, featuredProducts, blogPosts, activeSkuCount, publishedBrandCount, heroSlides] = await Promise.all([
     getHomeCategories(),
     getHomeBrands(),
@@ -155,6 +168,20 @@ export default async function HomePage() {
     getPublishedBrandCount(),
     getHomeHeroSlides(),
   ])
+
+  // First line of the headline, chosen from the visitor's country.
+  //
+  // `x-vercel-ip-country` is set by Vercel's edge on every request: no service
+  // to call, no cookie, nothing to consent to. It is absent locally and on any
+  // other host, and it is absent for search crawlers in every country we have
+  // no wording for — all of which resolve to the Dubai fallback, so there is no
+  // path that renders a headline with a hole in it.
+  //
+  // `?geo=XX` overrides it. Left enabled in production deliberately: it is how
+  // the wording gets reviewed without leaving the country, and it exposes
+  // nothing a visitor could not already see by travelling.
+  const [{ geo }, requestHeaders] = await Promise.all([searchParams, headers()])
+  const heroLead = heroLeadFor(geo ?? requestHeaders.get('x-vercel-ip-country'))
 
   const yearsInBusiness = new Date().getFullYear() - 2003
   // Match the hero claim to the catalogue we actually have. Rounded
@@ -199,14 +226,35 @@ export default async function HomePage() {
             <span className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">
               EST. 2003 — DUBAI · UNITED ARAB EMIRATES
             </span>
+            {/* The rotating term sits on its own line deliberately. The six
+                terms differ in length; inline, every swap reflows the whole
+                headline, which reads as cheap. On its own line the reflow is
+                invisible and the term carries the emphasis anyway. */}
             <h1 className="mb-5 mt-5 text-balance font-serif text-[clamp(38px,5vw,56px)] font-normal leading-[1.04] tracking-[-0.01em]">
-              Niche hydraulic components, sourced for engineers who{' '}
-              <em className="italic">can&apos;t afford downtime</em>.
+              <span className="block">{heroLead}</span>
+              <HeroTermRotator terms={HERO_TERMS} className="block" />
             </h1>
             <p className="max-w-[540px] text-[16px] leading-[1.6] text-ih-ink-2">
               {heroSkuFloor.toLocaleString()}+ SKUs across pumps, cylinders, valves and consumables — from {publishedBrandCount} specialist brands.
               ISO-certified, datasheet-backed, shipped from our Dubai HQ across the GCC.
             </p>
+
+            {/* Static mirror of the rotating terms. Two jobs: a moving word is
+                a poor click target, and these are the only crawlable links the
+                hero contributes — without them the homepage passes its ranking
+                strength to no category page at all. */}
+            <ul className="mt-6 flex max-w-[540px] flex-wrap gap-2">
+              {HERO_TERMS.map((t) => (
+                <li key={t.href}>
+                  <Link
+                    href={t.href}
+                    className="inline-flex min-h-10 items-center rounded-md border border-ih-border px-3 text-[13px] text-ih-ink-2 transition-colors hover:border-ih-accent hover:text-ih-accent focus-visible:border-ih-accent focus-visible:shadow-[0_0_0_3px_var(--color-ih-accent-soft)] focus-visible:outline-none"
+                  >
+                    {t.word}
+                  </Link>
+                </li>
+              ))}
+            </ul>
 
             {/* Hero search */}
             <form action={`/search`} method="GET" className="mt-8 flex max-w-[540px] flex-col gap-1.5 rounded-md border border-ih-border bg-ih-surface p-1.5 sm:flex-row">
