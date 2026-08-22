@@ -1,6 +1,9 @@
 import { describe, it, expect } from 'vitest'
 import {
   VARIANT_DIMENSION_COLUMNS,
+  VARIANT_TEXT_COLUMNS,
+  variantText,
+  variantTextColumns,
   hasVariantEquivalents,
   variantBoreRange,
   variantDimensionColumns,
@@ -35,8 +38,8 @@ describe('variantDimensions', () => {
 
 describe('variantDimensionColumns', () => {
   it('keeps canonical order regardless of key order in the payload', () => {
-    const cols = variantDimensionColumns([v({ dimensions: { B: 1, A: 2, W: 3 } })])
-    expect(cols.map((c) => c.key)).toEqual(['W', 'A', 'B'])
+    const cols = variantDimensionColumns([v({ dimensions: { B: 1, A: 2, W: 3, S2: 4, L: 5 } })])
+    expect(cols.map((c) => c.key)).toEqual(['W', 'S2', 'A', 'B', 'L'])
   })
 
   it('drops columns no variant populates', () => {
@@ -68,6 +71,37 @@ describe('VARIANT_DIMENSION_COLUMNS', () => {
       (c) => !c.help.includes('dimension drawing'),
     ).map((c) => c.key)
     expect(guessed).toEqual(['OD', 'W'])
+  })
+})
+
+describe('text columns', () => {
+  it('reads a string dimension entry and ignores numbers', () => {
+    expect(variantText({ oRing: '12.0×2.0', A: 26 }, 'oRing')).toBe('12.0×2.0')
+    expect(variantText({ oRing: 26 }, 'oRing')).toBeNull()
+    expect(variantText({ oRing: '  ' }, 'oRing')).toBeNull()
+    expect(variantText(null, 'oRing')).toBeNull()
+  })
+
+  it('renders a text column only when some variant carries it', () => {
+    expect(variantTextColumns([v()])).toEqual([])
+    const cols = variantTextColumns([v(), v({ dimensions: { oRing: '9.25×1.78' } })])
+    expect(cols.map((c) => c.key)).toEqual(['oRing'])
+  })
+
+  it('keeps a string entry out of the numeric columns', () => {
+    // Both halves of the same jsonb blob — the numeric reader must not try to
+    // coerce "12.0×2.0" into a millimetre figure.
+    const dims = { A: 26, oRing: '12.0×2.0' }
+    expect(variantDimensions(dims)).toEqual({ A: 26 })
+    expect(variantDimensionColumns([v({ dimensions: dims })]).map((c) => c.key)).toEqual(['A'])
+  })
+
+  it('does not claim S1 or S2 mean across-flats', () => {
+    expect(VARIANT_TEXT_COLUMNS.map((c) => c.key)).toEqual(['oRing'])
+    for (const key of ['S1', 'S2'] as const) {
+      const col = VARIANT_DIMENSION_COLUMNS.find((c) => c.key === key)!
+      expect(col.help).toContain('dimension drawing')
+    }
   })
 })
 

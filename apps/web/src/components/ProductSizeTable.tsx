@@ -5,6 +5,8 @@ import {
   variantEquivalentBrand,
   variantHoseLabel,
   variantPortHeading,
+  variantText,
+  variantTextColumns,
   type VariantLike,
 } from '@indus/domain'
 
@@ -52,6 +54,7 @@ export default function ProductSizeTable({
   }
 
   const dimensionColumns = variantDimensionColumns(variants)
+  const textColumns = variantTextColumns(variants)
   const portHeading = variantPortHeading(variants)
   const showEquivalents = hasVariantEquivalents(variants)
   const equivalentBrand = variantEquivalentBrand(variants)
@@ -106,6 +109,16 @@ export default function ProductSizeTable({
                   {c.label} <span className="text-ih-muted-2">({c.unit})</span>
                 </th>
               ))}
+              {textColumns.map((c) => (
+                <th
+                  key={c.key}
+                  scope="col"
+                  title={c.help}
+                  className="px-3.5 py-2.5 text-left font-medium whitespace-nowrap"
+                >
+                  {c.label}
+                </th>
+              ))}
             </tr>
           </thead>
           <tbody>
@@ -129,6 +142,11 @@ export default function ProductSizeTable({
                       {dims[c.key] ?? '—'}
                     </td>
                   ))}
+                  {textColumns.map((c) => (
+                    <td key={c.key} className="px-3.5 py-2.5 text-ih-ink-2">
+                      {variantText(v.dimensions, c.key) ?? '—'}
+                    </td>
+                  ))}
                 </tr>
               )
             })}
@@ -137,10 +155,12 @@ export default function ProductSizeTable({
       </div>
 
       <div className="mt-4 flex flex-col gap-1.5 text-[12.5px] leading-[1.55] text-ih-muted">
-        {dimensionColumns.length > 0 && (
+        {(dimensionColumns.length > 0 || textColumns.length > 0) && (
           <p>
-            {dimensionColumns.map((c) => `${c.label} — ${c.help}`).join(' ')} Ask us for the
-            dimension drawing if you need it stamped.
+            {[...dimensionColumns, ...textColumns]
+              .map((c) => `${c.label} — ${c.help}`)
+              .join(' ')}{' '}
+            Ask us for the dimension drawing if you need it stamped.
           </p>
         )}
         <p>

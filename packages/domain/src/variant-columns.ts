@@ -20,7 +20,26 @@
  * copied down a whole category.
  */
 
-export type VariantDimensionKey = 'OD' | 'W' | 'A' | 'B' | 'E' | 'F' | 'H'
+export type VariantDimensionKey =
+  | 'OD'
+  | 'W'
+  | 'S1'
+  | 'S2'
+  | 'A'
+  | 'B'
+  | 'C'
+  | 'D'
+  | 'E'
+  | 'F'
+  | 'H'
+  | 'L'
+
+/**
+ * Keys inside `dimensions` whose value is a string rather than a millimetre
+ * figure — an O-ring size is `12.0×2.0`, not a number. They render in their own
+ * columns after the numeric ones.
+ */
+export type VariantTextKey = 'oRing'
 
 export type VariantColumn = {
   /** Key inside `ProductVariant.dimensions`. */
@@ -49,11 +68,32 @@ export const VARIANT_DIMENSION_COLUMNS: readonly VariantColumn[] = [
     unit: 'mm',
     help: 'Nut / hex across flats — the spanner size.',
   },
+  { key: 'S1', label: 'S1', unit: 'mm', help: 'Dimension S1 on the manufacturer dimension drawing.' },
+  { key: 'S2', label: 'S2', unit: 'mm', help: 'Dimension S2 on the manufacturer dimension drawing.' },
   { key: 'A', label: 'A', unit: 'mm', help: 'Dimension A on the manufacturer dimension drawing.' },
   { key: 'B', label: 'B', unit: 'mm', help: 'Dimension B on the manufacturer dimension drawing.' },
+  { key: 'C', label: 'C', unit: 'mm', help: 'Dimension C on the manufacturer dimension drawing.' },
+  { key: 'D', label: 'D', unit: 'mm', help: 'Dimension D on the manufacturer dimension drawing.' },
   { key: 'E', label: 'E', unit: 'mm', help: 'Dimension E on the manufacturer dimension drawing.' },
   { key: 'F', label: 'F', unit: 'mm', help: 'Dimension F on the manufacturer dimension drawing.' },
   { key: 'H', label: 'H', unit: 'mm', help: 'Dimension H on the manufacturer dimension drawing.' },
+  { key: 'L', label: 'L', unit: 'mm', help: 'Dimension L on the manufacturer dimension drawing.' },
+]
+
+export type VariantTextColumn = { key: VariantTextKey; label: string; help: string }
+
+/**
+ * Non-numeric columns. `S1`/`S2` deliberately are NOT here: the master
+ * catalogue prints them as bare letters against a drawing, exactly like A/B/C,
+ * and calling either one "across flats" would be the guess this module exists
+ * to avoid — even though that is what they almost certainly are.
+ */
+export const VARIANT_TEXT_COLUMNS: readonly VariantTextColumn[] = [
+  {
+    key: 'oRing',
+    label: 'O-ring',
+    help: 'O-ring size supplied with the fitting, as inside diameter × section.',
+  },
 ]
 
 export type VariantLike = {
@@ -76,6 +116,18 @@ export function variantDimensions(value: unknown): Record<string, number> {
     if (Number.isFinite(n)) out[k] = n
   }
   return out
+}
+
+/** Narrow one `dimensions` entry to a string, for the text columns. */
+export function variantText(value: unknown, key: VariantTextKey): string | null {
+  if (!value || typeof value !== 'object' || Array.isArray(value)) return null
+  const v = (value as Record<string, unknown>)[key]
+  return typeof v === 'string' && v.trim() !== '' ? v.trim() : null
+}
+
+/** Text columns this set of variants populates, in canonical order. */
+export function variantTextColumns(variants: readonly VariantLike[]): VariantTextColumn[] {
+  return VARIANT_TEXT_COLUMNS.filter((c) => variants.some((v) => variantText(v.dimensions, c.key)))
 }
 
 /**
