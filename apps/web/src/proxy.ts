@@ -76,10 +76,19 @@ const GA_SCRIPT_ORIGINS = 'https://www.googletagmanager.com'
 const GA_CONNECT_ORIGINS =
   'https://www.google-analytics.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com'
 
+// /contact embeds the head-office location as a keyless Google Maps iframe.
+// There is no `frame-src` in SHARED_CSP, so without this line it falls back to
+// `default-src 'self'` and the browser refuses the frame outright — the band
+// renders as an empty bordered box with only a console violation to say why.
+// Listed on the storefront only: nothing under /admin embeds a third party,
+// and admin URLs carry customer ids that must not reach one.
+const MAP_FRAME_ORIGINS = 'https://www.google.com'
+
 const STOREFRONT_CSP = [
   ...SHARED_CSP,
   `script-src 'self' 'unsafe-inline' 'unsafe-eval' ${GA_SCRIPT_ORIGINS} https://va.vercel-scripts.com https://vitals.vercel-insights.com https://*.sentry.io https://*.ingest.sentry.io https://*.i.posthog.com https://*.posthog.com`,
   `connect-src 'self' https://*.supabase.co ${GA_CONNECT_ORIGINS} https://*.sentry.io https://*.ingest.sentry.io https://va.vercel-scripts.com https://vitals.vercel-insights.com https://*.i.posthog.com https://*.posthog.com`,
+  `frame-src 'self' ${MAP_FRAME_ORIGINS}`,
   "frame-ancestors 'self'",
 ].join('; ')
 

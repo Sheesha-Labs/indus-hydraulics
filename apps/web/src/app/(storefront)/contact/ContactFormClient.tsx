@@ -33,7 +33,7 @@ export default function ContactFormClient() {
 
   if (state.status === 'success') {
     return (
-      <div className="min-w-0 border border-ih-border bg-ih-surface p-5 sm:p-9">
+      <div className="min-w-0 rounded-lg border border-ih-border bg-ih-surface p-5 sm:p-9">
         <div className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-accent mb-3">
           Message sent
         </div>
@@ -50,17 +50,17 @@ export default function ContactFormClient() {
   }
 
   return (
-    <div className="min-w-0 border border-ih-border bg-ih-surface p-5 sm:p-9">
+    <div className="min-w-0 rounded-lg border border-ih-border bg-ih-surface p-5 sm:p-9">
       <h2 className="text-[22px] font-semibold tracking-[-0.01em] mb-1">Send us a message</h2>
-      <p className="text-[14px] text-ih-muted mb-6">Or pick a faster channel on the right →</p>
+      <p className="text-[14px] text-ih-muted mb-6">Or use a faster channel — WhatsApp, phone or email, listed alongside.</p>
 
-      <div className="flex gap-1 mb-6 p-1 bg-ih-bg border border-ih-border">
+      <div className="flex gap-1 mb-6 p-1 rounded-md bg-ih-bg border border-ih-border">
         {TABS.map((tab) => (
           <button
             key={tab.id}
             type="button"
             onClick={() => setInquiryType(tab.id)}
-            className={`flex-1 py-2.5 px-3.5 text-[13px] font-medium transition-colors ${
+            className={`flex-1 rounded-sm py-2.5 px-3.5 text-[13px] font-medium transition-colors ${
               inquiryType === tab.id
                 ? 'bg-ih-navy text-white'
                 : 'text-ih-muted hover:text-ih-ink-2'
@@ -137,7 +137,7 @@ export default function ContactFormClient() {
           <button
             type="submit"
             disabled={isPending}
-            className="h-10 px-6 bg-ih-accent text-white text-[13px] font-medium hover:opacity-90 disabled:opacity-50 transition-opacity whitespace-nowrap"
+            className="h-10 rounded-md px-6 bg-ih-accent text-white text-[13px] font-medium hover:bg-ih-accent-hover disabled:opacity-50 transition-colors whitespace-nowrap"
           >
             {isPending ? 'Sending…' : 'Send message →'}
           </button>
