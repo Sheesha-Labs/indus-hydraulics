@@ -6,8 +6,8 @@ import {
   buildServiceLd,
   marketBySlug,
   marketCountryName,
-  marketPageBySlug,
-  marketPageSlugs,
+  releasedMarketPage,
+  releasedMarketPageSlugs,
   marketsOrdered,
 } from '@indus/domain'
 import { JsonLd, buildWhatsappHref } from '@indus/ui'
@@ -53,7 +53,7 @@ export function generateStaticParams() {
     they are the ones with paid traffic pointed at them, so paying for them
     once at build beats paying on a visitor's first request.
   */
-  const designed = marketPageSlugs()
+  const designed = releasedMarketPageSlugs()
   const rest = marketsOrdered()
     .map((m) => m.slug)
     .filter((slug) => !designed.includes(slug))
@@ -77,7 +77,7 @@ export default async function MarketPage({ params }: Props) {
   const market = marketBySlug(slug)
   if (!market) notFound()
 
-  const page = marketPageBySlug(slug)
+  const page = releasedMarketPage(slug)
 
   const structuredData = [
     buildServiceLd({

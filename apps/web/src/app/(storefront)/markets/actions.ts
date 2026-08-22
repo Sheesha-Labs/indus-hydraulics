@@ -7,7 +7,7 @@ import {
   enquiryUrgency,
   marketBySlug,
   marketEnquirySubject,
-  marketPageBySlug,
+  releasedMarketPage,
   normaliseIncoterm,
   normaliseNeededBy,
   signQuoteAccessToken,
@@ -110,7 +110,7 @@ export async function submitMarketEnquiry(formData: FormData): Promise<SubmitRes
   const input = parsed.data
   const market = marketBySlug(input.marketSlug)
   if (!market) return { success: false, error: 'That market is no longer listed. Email sales@indushydraulics.me.' }
-  const page = marketPageBySlug(input.marketSlug)
+  const page = releasedMarketPage(input.marketSlug)
 
   if (formData.get('attachmentsPending') === '1') {
     return { success: false, error: 'An attachment is still uploading. Give it a moment and try again.' }

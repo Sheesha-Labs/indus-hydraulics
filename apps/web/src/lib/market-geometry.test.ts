@@ -1,5 +1,8 @@
 import { describe, expect, it } from 'vitest'
-import { marketPageBySlug, type MarketPage } from '@indus/domain'
+import { geoContains } from 'd3-geo'
+import { feature } from 'topojson-client'
+import rawTopology from 'world-atlas/countries-50m.json'
+import { MARKET_PAGE_RECORDS, marketPageBySlug, type MarketPage } from '@indus/domain'
 import { buildMarketMapModel } from './market-geometry'
 
 /**
@@ -102,5 +105,126 @@ describe('buildMarketMapModel', () => {
   it('returns null rather than throwing when the country cannot be matched', () => {
     const unmatched: MarketPage = { ...nigeria, map: { ...nigeria.map, geoNames: ['Wakanda'] } }
     expect(buildMarketMapModel(unmatched, 'Wakanda')).toBeNull()
+  })
+})
+
+/**
+ * Where the lanes actually go.
+ *
+ * The data contract's rule is "never route through Iran or Russia without an
+ * export-compliance ruling", and it is a rule about the drawn line, not just
+ * the prose: these maps are published, and a corridor traced across a
+ * sanctioned jurisdiction is a claim about how the goods travel.
+ *
+ * Tested with real polygons and `geoContains`, not a latitude/longitude box.
+ * A box cannot tell Iranian soil from the Strait of Hormuz — and every vessel
+ * leaving the Gulf transits Hormuz, so a box flags 23 innocent sea lanes and
+ * teaches everyone to ignore it.
+ */
+describe('lane routing through sanctioned territory', () => {
+  const topology = rawTopology as Parameters<typeof feature>[0]
+  const objects = (topology as unknown as { objects: Record<string, object> }).objects
+  const features = (
+    feature(topology, objects.countries as Parameters<typeof feature>[1]) as unknown as {
+      features: { properties: { name?: string } | null }[]
+    }
+  ).features
+
+  const polygonFor = (name: string) => {
+    const match = features.find((f) => f.properties?.name === name)
+    expect(match, `Natural Earth has no feature named ${name}`).toBeDefined()
+    return match as unknown as Parameters<typeof geoContains>[0]
+  }
+
+  const WATCHED = ['Iran', 'Russia', 'Belarus'] as const
+
+  function crossings(filter: (mode: string) => boolean) {
+    const out: string[] = []
+    for (const page of MARKET_PAGE_RECORDS) {
+      for (const route of page.map.routes) {
+        if (!filter(route.mode)) continue
+        for (const country of WATCHED) {
+          const hit = route.points.some((p) => geoContains(polygonFor(country), [p[0], p[1]]))
+          if (hit) out.push(`${page.slug} · ${route.mode} · ${country}`)
+        }
+      }
+    }
+    return out
+  }
+
+  it('never draws a SURFACE route across Iran, Russia or Belarus', () => {
+    /*
+      The rule that matters, and the reason the Caspian markets are routed the
+      long way round: down the Gulf, round Arabia, up the Red Sea, through
+      Suez, across the Mediterranean and the Black Sea to Poti, then east by
+      rail and ferry to Baku and Aktau. Nineteen waypoints to avoid a border.
+    */
+    expect(crossings((mode) => !mode.includes('AIR'))).toEqual([])
+  })
+
+  it('pins the three air legs that DO overfly Iran', () => {
+    /*
+      KNOWN AND UNRESOLVED. The Caspian air legs are drawn straight over
+      Iranian airspace. Commercial overflight is routine and is not the same
+      act as moving goods through a jurisdiction — but the contract's wording
+      does not distinguish the two, and these lines are published.
+
+      All three markets are `released: false`, so nothing is live. This
+      assertion exists to stop the pattern spreading to a fourth market while
+      the compliance ruling is outstanding: adding one fails here, which is
+      the moment to ask rather than the moment to discover.
+    */
+    expect(crossings((mode) => mode.includes('AIR')).sort()).toEqual([
+      'azerbaijan · AIR · Iran',
+      'kazakhstan · AIR · Iran',
+      'uzbekistan · AIR · Iran',
+    ])
+
+    for (const slug of ['kazakhstan', 'azerbaijan', 'uzbekistan']) {
+      expect(marketPageBySlug(slug)?.released, `${slug} must stay unreleased`).toBe(false)
+    }
+  })
+})
+
+/**
+ * Every written record has to project, not just the released ones — otherwise
+ * a market's map is first checked on the day it goes live.
+ */
+describe('all 46 records project a map', () => {
+  it('matches Natural Earth geometry for every one', () => {
+    const failed = MARKET_PAGE_RECORDS.filter(
+      (page) => buildMarketMapModel(page, page.slug) === null
+    ).map((p) => p.slug)
+    expect(failed).toEqual([])
+  })
+
+  it('places the crossing marker inside the frame on every one', () => {
+    for (const page of MARKET_PAGE_RECORDS) {
+      const model = buildMarketMapModel(page, page.slug)!
+      const { crossing, pad, width, height } = model
+      expect(crossing.x, page.slug).toBeGreaterThanOrEqual(pad)
+      expect(crossing.x, page.slug).toBeLessThanOrEqual(width - pad)
+      expect(crossing.y, page.slug).toBeGreaterThanOrEqual(pad)
+      expect(crossing.y, page.slug).toBeLessThanOrEqual(height - pad)
+    }
+  })
+
+  it('shows the origin marker only on the three lanes fitted to it', () => {
+    const shown = MARKET_PAGE_RECORDS.filter(
+      (page) => buildMarketMapModel(page, page.slug)!.origin !== null
+    ).map((p) => p.slug)
+    expect(shown.sort()).toEqual(['iraq', 'oman', 'saudi-arabia'])
+  })
+
+  it('appends the origin to the corridor annotation whenever the marker is hidden', () => {
+    // Otherwise the dashed line enters from the edge of the frame unexplained.
+    for (const page of MARKET_PAGE_RECORDS) {
+      const model = buildMarketMapModel(page, page.slug)!
+      if (model.origin === null) {
+        expect(model.corridor, page.slug).toContain(`FROM ${model.originLabel}`)
+      } else {
+        expect(model.corridor, page.slug).not.toContain('FROM')
+      }
+    }
   })
 })
