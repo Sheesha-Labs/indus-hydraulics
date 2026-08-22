@@ -32,7 +32,6 @@ const ROUTES = [
   '/brands',
   '/industries',
   '/blog',
-  '/blog/c/specification-standards',
   '/blog/author/anjali-krishnan',
   // The article template is the widest layout on the storefront — three
   // columns, a comparison table and an SOP table — so it is the one most
@@ -66,6 +65,11 @@ const ROUTES = [
   // Habshan carries the longest constraint copy and the most zone chips.
   '/locations/habshan',
   '/locations/sharjah',
+  '/markets',
+  // One market detail page rather than all 24 — they share a template, and
+  // the only thing that varies in width is the four-column facts strip.
+  // Saudi Arabia has the longest values in it (three conformity entries).
+  '/markets/saudi-arabia',
   '/hydraulic-components-supplier-uae',
   '/contact',
   '/quote',
