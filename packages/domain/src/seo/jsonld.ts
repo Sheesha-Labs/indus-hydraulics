@@ -111,6 +111,16 @@ export type CollectionLdInput = {
   override?: unknown
 }
 
+export type ItemListLdInput = {
+  name?: string | null
+  /**
+   * In the order the page renders them. `position` is assigned from the array
+   * index, so the schema and the visible sequence cannot drift.
+   */
+  items: { name: string; url?: string | null }[]
+  override?: unknown
+}
+
 export type ArticleLdInput = {
   headline: string
   description?: string | null
@@ -315,6 +325,31 @@ export function buildCollectionLd(input: CollectionLdInput): JsonLd {
     url: input.url,
   }
   if (input.description) base.description = input.description
+  return mergeJsonLd(base, input.override)
+}
+
+/**
+ * ItemList — what tells a crawler an index page is an index rather than a
+ * link dump.
+ *
+ * Entries without a `url` are emitted with their name and position only. That
+ * is a real state, not a fallback: an index may legitimately list something it
+ * does not yet have a page for, and inventing a URL to fill the slot would put
+ * a 404 in the structured data.
+ */
+export function buildItemListLd(input: ItemListLdInput): JsonLd {
+  const base: JsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    numberOfItems: input.items.length,
+    itemListElement: input.items.map((item, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      name: item.name,
+      ...(item.url ? { url: item.url } : {}),
+    })),
+  }
+  if (input.name) base.name = input.name
   return mergeJsonLd(base, input.override)
 }
 
