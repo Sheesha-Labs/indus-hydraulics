@@ -2,8 +2,6 @@ import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import { db } from '@indus/db'
-import RelatedReading from '../../../../components/blog/RelatedReading'
-import { getArticlesForCategory } from '../../../../lib/related-reading'
 import { buildBreadcrumbLd, buildCollectionLd } from '@indus/domain'
 import { Breadcrumb, Button, EmptyState, JsonLd, Note } from '@indus/ui'
 import { pageMetadata, urlFor } from '../../../../lib/seo'
@@ -120,9 +118,6 @@ export default async function CategoryPage({ params, searchParams }: Props) {
   })
 
   if (!category || !category.isPublished) notFound()
-
-  // Articles whose category_link blocks point at this category.
-  const relatedArticles = await getArticlesForCategory(category.id)
 
   const page = Math.max(1, parseInt(sp.page ?? '1', 10))
   const selectedBrands = sp.brands ? sp.brands.split(',').filter(Boolean) : []
@@ -464,12 +459,6 @@ export default async function CategoryPage({ params, searchParams }: Props) {
             </div>
           )}
         </section>
-
-        <RelatedReading
-          articles={relatedArticles}
-          heading="Guides for this range"
-          eyebrow="From the blog"
-        />
       </div>
     </div>
   )
