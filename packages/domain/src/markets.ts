@@ -388,42 +388,6 @@ export const MARKETS: Market[] = [
     position: 16,
   },
   {
-    slug: 'india',
-    name: 'India',
-    countryCode: 'IN',
-    summary:
-      'Hydraulic hose, fittings, adapters, valves and industrial hose supplied to India from our Dubai warehouse, quoted per consignment with full export documentation.',
-    intro:
-      'India manufactures a great deal of what we sell, so this is not a lane where we compete on ordinary items. The enquiries that reach us are for specific brands, specific standards, or the consolidation of a mixed order that would otherwise mean dealing with several suppliers.',
-    leadTime: 'Quoted per consignment',
-    routes: ['Sea freight', 'Air freight where the schedule is tighter'],
-    incoterms: ['CIF', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
-    conformity: ['Certificate of Origin, Dubai Chamber attested'],
-    context: {
-      heading: 'Brand and standard, rather than price',
-      body: 'There is no sensible argument for importing a commodity fitting into a country that makes them well and cheaply, and we will say so if that is what is being asked for. Where we are genuinely useful is narrower: a specific authorised brand a project specification names and will not accept a substitute for, a standard that is common in the Gulf but not stocked locally, or a lubricant that has to arrive with its documentation intact. Those are worth importing. A drum of ordinary hydraulic oil is not, and an Estimate from us will reflect that rather than quoting anyway.',
-    },
-    position: 17,
-  },
-  {
-    slug: 'china',
-    name: 'China',
-    countryCode: 'CN',
-    summary:
-      'Hydraulic hose, fittings, adapters, valves and industrial hose supplied to China from our Dubai warehouse, quoted per consignment with full export documentation.',
-    intro:
-      'China is a manufacturing centre for much of this industry, so enquiries from here are usually for specific authorised-brand product rather than for general supply. Project specifications that name a European or American brand are the common reason.',
-    leadTime: 'Quoted per consignment',
-    routes: ['Sea freight', 'Air freight where the schedule is tighter'],
-    incoterms: ['CIF', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
-    conformity: ['Certificate of Origin, Dubai Chamber attested'],
-    context: {
-      heading: 'Traceability is usually the actual requirement',
-      body: 'When an enquiry comes from a manufacturing economy it is rarely about availability, it is about provenance. A specification that names a brand generally also wants the paperwork proving what arrived is that brand — a manufacturer certificate of conformity, batch traceability where the product carries it, documentation that survives an audit rather than an assurance over email. We supply that on request as a matter of course, and where we cannot trace something to the standard being asked for we will tell you before quoting rather than after delivery.',
-    },
-    position: 18,
-  },
-  {
     slug: 'russia',
     name: 'Russia',
     countryCode: 'RU',
@@ -439,7 +403,7 @@ export const MARKETS: Market[] = [
       heading: 'GOST alongside DIN, in one order',
       body: 'Equipment fleets in this region are rarely all one standard. Older plant runs GOST, newer imported machines run DIN or JIC, and a workshop maintaining both ends up sourcing from two supply chains that do not talk to each other. We stock GOST couplings, adapters and caps as a catalogue range rather than as a special order, which means a single Estimate can cover both sides of that fleet. Where an interface has to bridge the two standards we would rather specify the adapter than leave it to be improvised at the machine, so tell us what is on each end.',
     },
-    position: 19,
+    position: 17,
   },
   {
     slug: 'kazakhstan',
@@ -457,7 +421,7 @@ export const MARKETS: Market[] = [
       heading: 'Wellsite standards and GOST on the same order',
       body: 'Oilfield work here runs to API specifications while the general plant around it runs to GOST, and those are usually two separate procurement exercises. They do not have to be. Rotary and vibrator hose, choke and kill assemblies, flow iron and wellhead fittings sit in the same catalogue as the GOST couplings and adapters that serve the workshop and the yard, so a site can order both against one Estimate and receive both in one consignment. On a landlocked lane where each delivery is an event rather than a routine, that consolidation is worth more than it would be closer to home.',
     },
-    position: 20,
+    position: 18,
   },
   {
     slug: 'uzbekistan',
@@ -475,7 +439,7 @@ export const MARKETS: Market[] = [
       heading: 'Every border is a place documents get checked',
       body: 'A route that crosses more than one frontier is checked more than once, and the paperwork therefore has to be right for each crossing rather than merely right at the destination. That is a documentation problem more than a freight problem, and it is the part we would rather sort out before goods move: commercial invoice and packing list that match the consignment exactly, Certificate of Origin attested, safety data sheets travelling with anything that needs them. A discrepancy between what the paperwork says and what is in the crate is the most common cause of a consignment sitting still on a route like this.',
     },
-    position: 21,
+    position: 19,
   },
   {
     slug: 'ukraine',
@@ -493,7 +457,7 @@ export const MARKETS: Market[] = [
       heading: 'Routing confirmed at enquiry, not assumed',
       body: 'We do not publish a transit time for this destination because a published figure would imply a standing arrangement we would then be held to. What we do instead is establish the routing when the enquiry arrives and put it on the Estimate alongside the goods, so the timeline you are quoted is the timeline for that consignment rather than an average. Where a buyer already works with a forwarder they trust, quoting Ex Works Dubai and letting them run the lane is frequently the cleaner and faster arrangement, and we will suggest it rather than insisting on arranging freight ourselves.',
     },
-    position: 22,
+    position: 20,
   },
   {
     slug: 'armenia',
@@ -511,7 +475,7 @@ export const MARKETS: Market[] = [
       heading: 'Small orders are worth quoting properly',
       body: 'A market this size generates enquiries for two or three line items rather than for pallets, and suppliers geared to volume tend to treat those as a nuisance. We would rather quote them properly. The catalogue is 1,200-odd active SKUs and the same engineering desk answers a two-item enquiry as a two-hundred-item one, so if what you need is a pair of adapters in a thread form nobody stocks locally, that is a perfectly reasonable thing to ask us for. The freight economics on a small consignment are what they are, and we will show them rather than bury them.',
     },
-    position: 23,
+    position: 21,
   },
   {
     slug: 'belarus',
@@ -529,7 +493,7 @@ export const MARKETS: Market[] = [
       heading: 'Maintenance supply, so interchangeability decides everything',
       body: 'Supplying plant that is already running is a different exercise from supplying a build. The question is never simply what a part is, it is what will interchange with what is fitted — and an assembly that is dimensionally close but wrong on seat angle or thread form will fit, will appear to work, and will weep within weeks. Seat angle, thread form and sealing method are the three things worth confirming before an order rather than after, and photographs of the existing fitting are usually enough for us to confirm all three without anything being dismantled.',
     },
-    position: 24,
+    position: 22,
   },
 ]
 
