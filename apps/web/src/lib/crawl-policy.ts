@@ -75,6 +75,9 @@ export const STATIC_SITEMAP_PATHS: StaticSitemapPath[] = [
   // On-site service areas. High-intent local surface ("hydraulic hose
   // repair sharjah"), so they carry the same priority as the tools.
   { path: '/locations', priority: 0.7, changeFrequency: 'monthly' },
+  // Export markets. Same high-intent local surface as /locations, one level
+  // out: "hydraulic hose supplier in saudi arabia" rather than "in sharjah".
+  { path: '/markets', priority: 0.7, changeFrequency: 'monthly' },
   { path: '/tools/thread-identifier', priority: 0.7, changeFrequency: 'monthly' },
   { path: '/tools/pressure-converter', priority: 0.6, changeFrequency: 'monthly' },
   { path: '/tools/dash-size-chart', priority: 0.6, changeFrequency: 'monthly' },

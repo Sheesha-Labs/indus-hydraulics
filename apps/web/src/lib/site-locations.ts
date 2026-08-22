@@ -1,4 +1,4 @@
-import type { PostalAddressLd } from '@indus/domain'
+import { marketCountryCodes, type PostalAddressLd } from '@indus/domain'
 
 /**
  * Static office directory used by the contact page UI and the LocalBusiness
@@ -76,8 +76,16 @@ function officeCountries(): string[] {
  * basis. Today that is the GCC. Broader MENA and African destinations are
  * quoted case-by-case — they appear on /shipping but are intentionally
  * NOT in this structured list until shipping there is steady-state.
+ *
+ * Derived from MARKETS rather than restated, so the countries asserted in the
+ * Organization JSON-LD and the countries that have a published /markets page
+ * cannot drift apart. Adding a market adds the country here automatically —
+ * which is the point: a country we claim to serve should have a page saying
+ * how, and a page should not exist for a country we do not claim.
  */
-const EXPORT_SERVICE_COUNTRIES = ['SA', 'OM', 'BH', 'QA', 'KW'] as const
+function exportServiceCountries(): string[] {
+  return marketCountryCodes()
+}
 
 /**
  * `areaServed` for the Organization JSON-LD. Combines office countries with
@@ -85,7 +93,7 @@ const EXPORT_SERVICE_COUNTRIES = ['SA', 'OM', 'BH', 'QA', 'KW'] as const
  * entry is either a verified office or a recurring shipping lane.
  */
 export function areasServed(): string[] {
-  return Array.from(new Set([...officeCountries(), ...EXPORT_SERVICE_COUNTRIES]))
+  return Array.from(new Set([...officeCountries(), ...exportServiceCountries()]))
 }
 
 /**

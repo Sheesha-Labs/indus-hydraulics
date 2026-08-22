@@ -1,6 +1,6 @@
 import type { MetadataRoute } from 'next'
 import { db } from '@indus/db'
-import { buildSitemapEntries, buildStaticEntries, serviceAreasOrdered } from '@indus/domain'
+import { buildSitemapEntries, buildStaticEntries, marketsOrdered, serviceAreasOrdered } from '@indus/domain'
 import { BASE_URL } from '../lib/seo'
 import { getReplacementBrands, getReplacementSitemapKeys } from '../lib/replacement-data'
 import { STATIC_SITEMAP_PATHS } from '../lib/crawl-policy'
@@ -270,6 +270,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.7,
   }))
 
+  // Export markets — static data, same reasoning as the service areas above.
+  const marketEntries: MetadataRoute.Sitemap = marketsOrdered().map((m) => ({
+    url: `${BASE_URL}/markets/${m.slug}`,
+    changeFrequency: 'monthly' as const,
+    priority: 0.7,
+  }))
+
   const staticEntries = buildStaticEntries(BASE_URL, STATIC_SITEMAP_PATHS)
 
   // Per-(brand, mpn) replacement entries. The brand-level index pages
@@ -302,6 +309,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...blogCategoryEntries,
     ...blogAuthorEntries,
     ...serviceAreaEntries,
+    ...marketEntries,
     ...replacementBrandEntries,
     ...replacementEntries,
   ]
