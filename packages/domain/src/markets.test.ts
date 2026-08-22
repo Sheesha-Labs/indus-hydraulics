@@ -3,7 +3,7 @@ import { MARKETS, marketBySlug, marketCountryCodes, marketNames, marketsOrdered 
 
 describe('export markets', () => {
   it('covers the markets we ship on a recurring basis, GCC first', () => {
-    expect(MARKETS).toHaveLength(52)
+    expect(MARKETS).toHaveLength(64)
     expect(marketsOrdered().map((m) => m.slug)).toEqual([
       // GCC — the original five, on the three-day lane.
       'saudi-arabia',
@@ -66,6 +66,19 @@ describe('export markets', () => {
       'ukraine',
       'armenia',
       'belarus',
+      // South America.
+      'chile',
+      'peru',
+      'bolivia',
+      'argentina',
+      'colombia',
+      'ecuador',
+      'guyana',
+      'suriname',
+      'brazil',
+      'venezuela',
+      'paraguay',
+      'uruguay',
     ])
   })
 
