@@ -2,8 +2,6 @@ import 'server-only'
 
 import { geoCentroid, geoDistance, geoGraticule, geoMercator, geoPath } from 'd3-geo'
 import type { GeoPermissibleObjects } from 'd3-geo'
-import { feature } from 'topojson-client'
-import rawTopology from 'world-atlas/countries-50m.json'
 import {
   corridorKm,
   formatLatTick,
@@ -18,6 +16,7 @@ import {
   type MarketMap,
   type MarketPage,
 } from '@indus/domain'
+import { countryFeatures, findCountryFeature, type CountryFeature } from './natural-earth'
 
 /**
  * The hero map for `/markets/{slug}` — projection, collision rules and every
@@ -92,34 +91,6 @@ export type MarketMapModel = {
   readonly ariaLabel: string
 }
 
-type CountryFeature = {
-  type: 'Feature'
-  properties: { name?: string } | null
-  geometry: unknown
-}
-
-/**
- * Decoded Natural Earth features, computed once per process.
- *
- * ~240 features and a topology decode. Doing it per market page would repeat
- * the work 46 times in one build for no benefit.
- */
-let countryCache: CountryFeature[] | null = null
-
-function countries(): CountryFeature[] {
-  if (countryCache) return countryCache
-  // The one cast the `unknown` declaration in types/world-atlas.d.ts buys. See
-  // that file for why the JSON is not typed structurally.
-  const topology = rawTopology as Parameters<typeof feature>[0]
-  const objects = (topology as unknown as { objects: Record<string, object> }).objects
-  const collection = feature(
-    topology,
-    objects.countries as Parameters<typeof feature>[1]
-  ) as unknown as { features: CountryFeature[] }
-  countryCache = collection.features
-  return countryCache
-}
-
 /** Neighbour sets are stable per country; keyed by the target's own name. */
 const neighbourCache = new Map<string, CountryFeature[]>()
 
@@ -135,9 +106,7 @@ const neighbourCache = new Map<string, CountryFeature[]>()
  */
 export function buildMarketMapModel(page: MarketPage, countryName: string): MarketMapModel | null {
   const map = page.map
-  const target = countries().find(
-    (f) => f.properties?.name != null && map.geoNames.includes(f.properties.name)
-  )
+  const target = findCountryFeature(map.geoNames)
   if (!target) return null
 
   const anchor: LonLat = map.fit === 'crossing' ? map.crossing.coords : map.origin
@@ -178,7 +147,7 @@ export function buildMarketMapModel(page: MarketPage, countryName: string): Mark
   const cacheKey = target.properties?.name ?? page.slug
   let near = neighbourCache.get(cacheKey)
   if (!near) {
-    near = countries().filter(
+    near = countryFeatures().filter(
       (f) =>
         f !== target &&
         geoDistance(geoCentroid(f as unknown as GeoPermissibleObjects), targetCentroid) < NEIGHBOUR_RADIUS

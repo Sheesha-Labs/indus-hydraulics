@@ -17,15 +17,21 @@ import { resolveOrCreateAnonymousContact, sendRfqEmails } from '../../../lib/rfq
 import { STORAGE_BUCKETS } from '../../../lib/supabase-admin'
 
 /**
- * Lead capture on the export-market pages.
+ * Lead capture on the export-market pages and on the `/markets` index.
  *
- * Two forms feed this — the full quote form after the catalogue index and the
- * short card in the closing band — and they are NOT redundant. The mid-page
- * form catches a reader who has just seen the catalogue and knows what they
- * want; the closing card catches one who scrolled to the bottom undecided.
- * They post to the same action with different `source` values so the split is
- * measurable, and so a change in the ratio is a signal about the page rather
- * than noise.
+ * Three forms feed this, and they are NOT redundant. The mid-page quote form
+ * catches a reader who has just seen the catalogue and knows what they want;
+ * the closing card on a market page catches one who scrolled to the bottom
+ * undecided; the index form catches someone whose destination has no page at
+ * all. They post to the same action with different `source` values so the
+ * split is measurable, and so a change in the ratio is a signal about the
+ * pages rather than noise.
+ *
+ * THE INDEX FORM HAS NO MARKET. Its destination field is free text — the whole
+ * reason it exists is destinations outside the 126 — so it sends
+ * `destinationCountry` instead of `marketSlug` and the enquiry is recorded
+ * against a name the buyer typed. `buildApplicationContext` flags that in the
+ * first two lines so the desk confirms the lane before quoting one.
  *
  * WHY THIS IS NOT `submitRfq`. The catalogue quote builder posts product
  * lines: SKUs resolved against the catalogue, with quantities. A market
@@ -60,8 +66,10 @@ const MIN_FORM_DURATION_MS = 1500
 const ATTACHMENT_PATH = /^rfq-attachments\/\d{4}-\d{2}-\d{2}\/[0-9a-f-]{36}\.[a-z0-9]{2,5}$/
 
 const EnquirySchema = z.object({
-  marketSlug: z.string().trim().min(1).max(80),
-  source: z.enum(['market_quote_form', 'market_quick_enquiry']),
+  /** Absent on an index enquiry, which names a free-text destination instead. */
+  marketSlug: z.string().trim().max(80).optional().or(z.literal('')),
+  destinationCountry: z.string().trim().max(120).optional().or(z.literal('')),
+  source: z.enum(['market_quote_form', 'market_quick_enquiry', 'markets_index_enquiry']),
   company: z.string().trim().min(1, 'a company name').max(200),
   contactName: z.string().trim().min(1, 'a contact name').max(200),
   email: z.string().trim().toLowerCase().email('a valid work email').max(254),
@@ -89,7 +97,8 @@ export async function submitMarketEnquiry(formData: FormData): Promise<SubmitRes
   }
 
   const parsed = EnquirySchema.safeParse({
-    marketSlug: formData.get('marketSlug'),
+    marketSlug: formData.get('marketSlug') ?? '',
+    destinationCountry: formData.get('destinationCountry') ?? '',
     source: formData.get('source'),
     company: formData.get('company'),
     contactName: formData.get('contactName'),
@@ -108,9 +117,37 @@ export async function submitMarketEnquiry(formData: FormData): Promise<SubmitRes
   }
 
   const input = parsed.data
-  const market = marketBySlug(input.marketSlug)
-  if (!market) return { success: false, error: 'That market is no longer listed. Email sales@indushydraulics.me.' }
-  const page = releasedMarketPage(input.marketSlug)
+
+  /*
+    Two shapes of destination, and only one of them is a registry lookup.
+
+    A market-page enquiry MUST resolve — its slug came from a rendered page, so
+    a miss means the market was retired mid-session and quoting it would be
+    wrong. An index enquiry never resolves, by design: the buyer typed a
+    country and we take it as typed. Recording it against a market we guessed
+    from a fuzzy name match would be the one genuinely dangerous behaviour
+    here — the desk would quote a lane the buyer never asked about.
+  */
+  const isIndexEnquiry = input.source === 'markets_index_enquiry'
+  const market = input.marketSlug ? marketBySlug(input.marketSlug) : undefined
+
+  if (isIndexEnquiry) {
+    if (!input.destinationCountry) {
+      return { success: false, error: 'Please check the form — we need a destination country.' }
+    }
+  } else if (!market) {
+    return { success: false, error: 'That market is no longer listed. Email sales@indushydraulics.me.' }
+  }
+
+  const destinationName = market?.name ?? input.destinationCountry ?? ''
+  /*
+    `releasedMarketPage`, not the raw lookup. All 46 records exist, but a market
+    still waiting on its forwarder sign-off renders the plain layout — so the
+    buyer never saw the designed page's quoting currency and an Estimate raised
+    in it would come out of nowhere. An unreleased market quotes in the store
+    default, same as one with no record at all.
+  */
+  const page = market ? releasedMarketPage(market.slug) : undefined
 
   if (formData.get('attachmentsPending') === '1') {
     return { success: false, error: 'An attachment is still uploading. Give it a moment and try again.' }
@@ -146,10 +183,10 @@ export async function submitMarketEnquiry(formData: FormData): Promise<SubmitRes
     company: input.company,
   })
 
-  const subject = marketEnquirySubject(market.name)
+  const subject = marketEnquirySubject(destinationName)
   const applicationContext = buildApplicationContext({
-    marketName: market.name,
-    countryCode: market.countryCode,
+    marketName: destinationName,
+    countryCode: market?.countryCode ?? null,
     deliveryCity: input.deliveryCity ?? null,
     neededBy,
     wantsChecklist: input.wantsChecklist === true,
@@ -211,7 +248,8 @@ export async function submitMarketEnquiry(formData: FormData): Promise<SubmitRes
           code: created.code,
           anonymous: true,
           attachmentCount: attachments.length,
-          market: market.slug,
+          market: market?.slug ?? null,
+          destination: market ? null : destinationName,
           source: input.source,
         },
       },
