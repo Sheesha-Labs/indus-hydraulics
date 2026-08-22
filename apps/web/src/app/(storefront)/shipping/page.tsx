@@ -154,6 +154,11 @@ export default async function ShippingPage({ params }: Props) {
             Djibouti) are typically 10–20 working days by sea, faster by air. West Africa, North
             Africa, and landlocked destinations are quoted on a case-by-case basis.
           </li>
+          <li>
+            <strong>South America:</strong> quoted on a case-by-case basis. Routing and transit
+            are stated on the Estimate for the specific consignment rather than against a
+            standing schedule.
+          </li>
         </ul>
         <p>
           For all destinations, customs clearance, port-handling charges, and inland delivery beyond

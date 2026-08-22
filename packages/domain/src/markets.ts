@@ -1127,6 +1127,262 @@ export const MARKETS: Market[] = [
     },
     position: 52,
   },
+  {
+    slug: 'chile',
+    name: 'Chile',
+    countryCode: 'CL',
+    summary:
+      'Hydraulic hose, fittings, adapters, valves and industrial hose supplied to Chile from our Dubai warehouse, quoted per consignment with full export documentation.',
+    intro:
+      'Chile is the largest copper producer in the world and has a mature industrial supply base to match, so the enquiries that travel this far are specific ones. It is also among the most seismically active countries anywhere, which affects how installations behave.',
+    leadTime: 'Quoted per consignment',
+    routes: ['Sea freight', 'Air freight where the schedule is tighter'],
+    incoterms: ['CIF', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
+    conformity: [
+      'Certificate of Origin, Dubai Chamber attested',
+      'Pre-shipment inspection where the destination requires it',
+    ],
+    context: {
+      heading: 'Rigid plumbing is what breaks when the ground moves',
+      body: 'Hard pipework transmits ground movement straight into whatever it is bolted to, and in seismic country that is how a fracture appears at a flange rather than in the middle of a run. Flexible sections are what absorb it, and they only work if they were installed with slack and a bend radius that lets them move — a hose pulled tight between two fixed points is structurally a rigid member with a weaker wall. Where a line has to cross between independently mounted equipment, that is the place to specify flexibility deliberately. Metallic hose with braid does the same job where temperature or media rule out rubber.',
+    },
+    position: 53,
+  },
+  {
+    slug: 'peru',
+    name: 'Peru',
+    countryCode: 'PE',
+    summary:
+      'Hydraulic hose, fittings, adapters, valves and industrial hose supplied to Peru from our Dubai warehouse, quoted per consignment with full export documentation.',
+    intro:
+      'Copper, gold and zinc extraction dominate Peruvian industry, and much of it involves moving processed material in volume rather than under high pressure. That shifts the specification question away from pressure ratings and toward bore and wall.',
+    leadTime: 'Quoted per consignment',
+    routes: ['Sea freight', 'Air freight where the schedule is tighter'],
+    incoterms: ['CIF', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
+    conformity: [
+      'Certificate of Origin, Dubai Chamber attested',
+      'Pre-shipment inspection where the destination requires it',
+    ],
+    context: {
+      heading: 'Large bore is a different product, not a bigger one',
+      body: 'Above a certain diameter a hose stops being a scaled-up version of a small one. Wall construction changes, the reinforcement does different work, handling and support become design considerations rather than afterthoughts, and the end connections are usually flanged rather than threaded. A specification written for a half-inch hydraulic line does not extend upward by arithmetic. For thickener underflow, tailings transfer or any duty carrying processed material in bulk, tell us the bore, the medium and the solids content, and expect a different family of product than the one that serves the machines around it.',
+    },
+    position: 54,
+  },
+  {
+    slug: 'bolivia',
+    name: 'Bolivia',
+    countryCode: 'BO',
+    summary:
+      'Hydraulic hose, fittings, adapters, valves and industrial hose supplied to Bolivia from our Dubai warehouse, quoted per consignment with full export documentation.',
+    intro:
+      'Bolivia is landlocked and much of its mining sits at extreme altitude — several thousand metres above sea level, where the air is thin enough to change how a hydraulic system behaves. That is a real engineering consideration, not a curiosity.',
+    leadTime: 'Quoted per consignment',
+    routes: ['Sea freight to a regional port, then overland', 'Air freight where the schedule is tighter'],
+    incoterms: ['CIF to the port of entry', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
+    conformity: [
+      'Certificate of Origin, Dubai Chamber attested',
+      'Pre-shipment inspection where the destination requires it',
+    ],
+    context: {
+      heading: 'Thin air changes what a pump can pull',
+      body: 'Atmospheric pressure is what pushes fluid into a pump inlet, and at high altitude there is measurably less of it. A suction line that works at sea level can cavitate on the same machine at four thousand metres, and the damage shows up as pitting and noise rather than as an obvious leak. The countermeasures are on the inlet side: a larger bore than the calculation suggests, the shortest practical run, minimal fittings and a hose that will not collapse under the greater vacuum it now sees. If a machine has been relocated to altitude and started misbehaving, the inlet is the first place to look.',
+    },
+    position: 55,
+  },
+  {
+    slug: 'argentina',
+    name: 'Argentina',
+    countryCode: 'AR',
+    summary:
+      'Hydraulic hose, fittings, adapters, valves and industrial hose supplied to Argentina from our Dubai warehouse, quoted per consignment with full export documentation.',
+    intro:
+      'Argentine industrial demand splits between agriculture, conventional mining and the unconventional oil and gas development in the Neuquén basin. The last of those puts equipment through pressure cycling of a kind most hydraulics never see.',
+    leadTime: 'Quoted per consignment',
+    routes: ['Sea freight', 'Air freight where the schedule is tighter'],
+    incoterms: ['CIF', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
+    conformity: [
+      'Certificate of Origin, Dubai Chamber attested',
+      'Manufacturer certificate of conformity on request',
+      'Pre-shipment inspection where the destination requires it',
+    ],
+    context: {
+      heading: 'Cycle life matters more than burst pressure',
+      body: 'A burst rating tells you what a hose survives once. Stimulation work asks a different question entirely: how many pressure cycles it survives before the reinforcement fatigues, which is a property the headline figure says nothing about. Two hoses with the same rating can differ several-fold in impulse life depending on construction and how the ends were attached. For any duty that pressurises and depressurises repeatedly, impulse performance is the number worth comparing, and it is worth asking for explicitly. We will quote against it where a manufacturer publishes it and say so where none does.',
+    },
+    position: 56,
+  },
+  {
+    slug: 'colombia',
+    name: 'Colombia',
+    countryCode: 'CO',
+    summary:
+      'Hydraulic hose, fittings, adapters, valves and industrial hose supplied to Colombia from our Dubai warehouse, quoted per consignment with full export documentation.',
+    intro:
+      'Oil, coal and increasingly diversified manufacturing drive Colombian demand. A great deal of the plant is North American in origin, which means enquiries usually arrive as an original-equipment part number rather than as a specification.',
+    leadTime: 'Quoted per consignment',
+    routes: ['Sea freight', 'Air freight where the schedule is tighter'],
+    incoterms: ['CIF', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
+    conformity: [
+      'Certificate of Origin, Dubai Chamber attested',
+      'Pre-shipment inspection where the destination requires it',
+    ],
+    context: {
+      heading: 'Send the number you have, whoever printed it',
+      body: 'An original-equipment part number is a supplier catalogue reference, not a description of the part, and it usually maps to something we hold under an entirely different code. Working out which is ordinary work rather than a favour: our replacement cross-reference covers a large set of manufacturer numbers and will take you straight to what matches. Where a number resolves to more than one candidate the difference is normally seal material or seat angle, and we would rather ask which applies than guess. There is no need to translate anything into our numbering before enquiring.',
+    },
+    position: 57,
+  },
+  {
+    slug: 'ecuador',
+    name: 'Ecuador',
+    countryCode: 'EC',
+    summary:
+      'Hydraulic hose, fittings, adapters, valves and industrial hose supplied to Ecuador from our Dubai warehouse, quoted per consignment with full export documentation.',
+    intro:
+      'Much of Ecuador\'s oil production sits in the Amazon basin, on sites that are genuinely difficult to reach and sometimes served by air rather than road. Access constraints shape what is practical to order as much as the specification does.',
+    leadTime: 'Quoted per consignment',
+    routes: ['Sea freight', 'Air freight where the schedule is tighter'],
+    incoterms: ['CIF', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
+    conformity: [
+      'Certificate of Origin, Dubai Chamber attested',
+      'Pre-shipment inspection where the destination requires it',
+    ],
+    context: {
+      heading: 'Weight and package size decide the last leg',
+      body: 'Where the final delivery is by light aircraft or river craft, the binding constraint stops being cost and becomes dimensions and mass. A coiled assembly that travels perfectly well in a container may simply not fit, and an item split into two lighter packages often moves when one heavy one will not. That is worth telling us at the order rather than discovering at the airstrip. We can coil to a specified diameter, split a consignment into stated maximum weights, and mark each package with its own contents so a partial delivery is still usable rather than a puzzle.',
+    },
+    position: 58,
+  },
+  {
+    slug: 'guyana',
+    name: 'Guyana',
+    countryCode: 'GY',
+    summary:
+      'Hydraulic hose, fittings, adapters, valves and industrial hose supplied to Guyana from our Dubai warehouse, quoted per consignment with full export documentation.',
+    intro:
+      'Guyana has gone from almost no oil industry to a significant offshore producer in a very short time, and the onshore supply base has not caught up. Nearly everything an operation needs still arrives from somewhere else.',
+    leadTime: 'Quoted per consignment',
+    routes: ['Sea freight', 'Air freight where the schedule is tighter'],
+    incoterms: ['CIF', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
+    conformity: [
+      'Certificate of Origin, Dubai Chamber attested',
+      'Manufacturer certificate of conformity on request',
+      'Pre-shipment inspection where the destination requires it',
+    ],
+    context: {
+      heading: 'In a boom the constraint is availability, not price',
+      body: 'When an industry scales faster than the supply chain serving it, the scarce thing is not budget but the item itself and the slot to move it. Ordinary catalogue stock stays ordinary; the long-lead items are what bite, and they bite everyone at once because every operator hit the same growth curve in the same quarter. The useful discipline is separating the two early — identify what is genuinely long-lead for your equipment and order it against a forecast rather than a requisition, and leave the commodity items to be bought when needed. We will say plainly which of a line list falls into which category.',
+    },
+    position: 59,
+  },
+  {
+    slug: 'suriname',
+    name: 'Suriname',
+    countryCode: 'SR',
+    summary:
+      'Hydraulic hose, fittings, adapters, valves and industrial hose supplied to Suriname from our Dubai warehouse, quoted per consignment with full export documentation.',
+    intro:
+      'Suriname sits alongside the same offshore geology as its neighbour and is earlier in the same development cycle, so much of the activity is exploration and appraisal carried out on contracted equipment rather than owned assets.',
+    leadTime: 'Quoted per consignment',
+    routes: ['Sea freight', 'Air freight where the schedule is tighter'],
+    incoterms: ['CIF', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
+    conformity: [
+      'Certificate of Origin, Dubai Chamber attested',
+      'Pre-shipment inspection where the destination requires it',
+    ],
+    context: {
+      heading: 'Supplying kit you do not own changes the question',
+      body: 'On contracted or rented equipment the person who needs the part frequently has no drawings, no history and no authority to modify anything. What they have is the machine in front of them and a contract that says it goes back as it came. That rules out improvised adapters and anything that alters a fitting permanently, and it makes exact identification more important than it would be on owned plant. Send photographs and measurements and we will match rather than approximate — and where the only correct answer is a part from the original manufacturer, we will tell you that instead of selling you a near-miss.',
+    },
+    position: 60,
+  },
+  {
+    slug: 'brazil',
+    name: 'Brazil',
+    countryCode: 'BR',
+    summary:
+      'Hydraulic hose, fittings, adapters, valves and industrial hose supplied to Brazil from our Dubai warehouse, quoted per consignment with full export documentation.',
+    intro:
+      'Brazil manufactures a great deal of what we sell and has deep domestic distribution, so importing a routine item here rarely makes sense. Where enquiries do reach us they are almost always driven by a specification naming something that is not made locally.',
+    leadTime: 'Quoted per consignment',
+    routes: ['Sea freight', 'Air freight where the schedule is tighter'],
+    incoterms: ['CIF', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
+    conformity: [
+      'Certificate of Origin, Dubai Chamber attested',
+      'Manufacturer certificate of conformity on request',
+      'Pre-shipment inspection where the destination requires it',
+    ],
+    context: {
+      heading: 'Import the exception, buy the rest at home',
+      body: 'A country with its own hose manufacturers and a dense distributor network does not need a supplier eight thousand kilometres away for standard product, and we would be wasting your time to suggest otherwise. The exceptions are narrow and real: an authorised brand a project specification names and will not accept an equivalent for, an alloy or construction outside what local production runs to, or a documented item where the certification is the deliverable. Send us those. For anything a domestic distributor carries, the freight and the wait are costs with nothing on the other side of them.',
+    },
+    position: 61,
+  },
+  {
+    slug: 'venezuela',
+    name: 'Venezuela',
+    countryCode: 'VE',
+    summary:
+      'Hydraulic hose, fittings, adapters and industrial hose supplied to Venezuela from our Dubai warehouse, subject to counterparty and end-use screening before quotation.',
+    intro:
+      'Venezuela has substantial industrial infrastructure and a correspondingly complex trade environment. We screen the counterparty and the intended end use before quoting anything for this destination, and we would rather set that expectation here than raise it after an enquiry has been sent.',
+    leadTime: 'Quoted per consignment',
+    routes: ['Sea freight', 'Air freight where the schedule is tighter'],
+    incoterms: ['CIF', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
+    conformity: [
+      'Certificate of Origin, Dubai Chamber attested',
+      'Counterparty and end-use screening prior to quotation',
+      'Pre-shipment inspection where the destination requires it',
+    ],
+    context: {
+      heading: 'Screening comes before pricing, not after',
+      body: 'International restrictions apply to certain entities, sectors and end uses connected with this market, and they bind the supplier rather than the buyer. So for enquiries here the first step is establishing who the ultimate recipient is and what the goods are for — not as a formality, but because the answer determines whether a quotation can be issued at all. Providing the end user, the site and the application up front is the fastest route to an answer either way. Where we are able to supply we will proceed normally; where we are not, we will say so directly rather than letting an enquiry go quiet.',
+    },
+    position: 62,
+  },
+  {
+    slug: 'paraguay',
+    name: 'Paraguay',
+    countryCode: 'PY',
+    summary:
+      'Hydraulic hose, fittings, adapters, valves and industrial hose supplied to Paraguay from our Dubai warehouse, quoted per consignment with full export documentation.',
+    intro:
+      'Paraguay is landlocked, and unusually among the markets we ship to, a large share of its freight arrives by river rather than by road. Agricultural processing and materials handling account for most of the hydraulics demand.',
+    leadTime: 'Quoted per consignment',
+    routes: ['Sea freight to a regional port, then river barge or road', 'Air freight where the schedule is tighter'],
+    incoterms: ['CIF to the port of entry', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
+    conformity: [
+      'Certificate of Origin, Dubai Chamber attested',
+      'Pre-shipment inspection where the destination requires it',
+    ],
+    context: {
+      heading: 'River freight runs to water levels, not timetables',
+      body: 'Barge transport up an inland waterway is economical and slow, and its capacity varies with the season in a way road freight does not — low water reduces what a convoy can carry and lengthens the journey. None of that is a problem for planned maintenance stock, and all of it is a problem for something needed next week. The practical answer is to route deliberately by urgency rather than treating freight as one decision: routine replenishment on the water, anything time-critical by air. We will price both against the same line list rather than assuming which you want.',
+    },
+    position: 63,
+  },
+  {
+    slug: 'uruguay',
+    name: 'Uruguay',
+    countryCode: 'UY',
+    summary:
+      'Hydraulic hose, fittings, adapters, valves and industrial hose supplied to Uruguay from our Dubai warehouse, quoted per consignment with full export documentation.',
+    intro:
+      'Uruguay has a modest domestic industrial base but a well-established free-zone and transit regime, and a fair amount of what enters the country is destined onward. That makes the customs treatment of a consignment as relevant as its contents.',
+    leadTime: 'Quoted per consignment',
+    routes: ['Sea freight', 'Air freight where the schedule is tighter'],
+    incoterms: ['CIF', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
+    conformity: [
+      'Certificate of Origin, Dubai Chamber attested',
+      'Pre-shipment inspection where the destination requires it',
+    ],
+    context: {
+      heading: 'Tell us if the goods are staying or passing through',
+      body: 'Whether a consignment clears for domestic use or enters a free zone for onward movement changes the documentation it needs, and the two are not interchangeable after the fact. Goods held in bond for regional distribution want paperwork that supports a later re-export; goods being imported outright do not. Getting that wrong is recoverable but tedious, and it is entirely avoidable by saying at the order which applies. It also affects how the shipment should be split and labelled, because a bonded consignment broken down later is easier to handle if it was packed with that in mind.',
+    },
+    position: 64,
+  },
 ]
 
 export function marketBySlug(slug: string): Market | undefined {
