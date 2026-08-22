@@ -28,22 +28,20 @@ type Props = {
  */
 export const revalidate = 3600
 
-/** Allow on-demand ISR for categories created after deploy. */
-export const dynamicParams = true
-
-/**
- * Pre-render every published category at build. The total count is small
- * (well under 100 even with sub-categories) so we don't bother with a
- * top-N cap — the build cost is negligible and the snappy first-paint on
- * every category beats lazy hydration.
+/*
+ * There is deliberately no `generateStaticParams` here.
+ *
+ * It used to pre-render every published category. The page awaits
+ * `searchParams` (the brand / sort / page facets) in both `generateMetadata`
+ * and the component, which is per-request, so Next marks `/c/[slug]` `ƒ`
+ * (dynamic). Every pre-rendered category was therefore rendered at build,
+ * bailed out at the first facet read, and discarded — the deployed route was
+ * dynamic regardless. All it cost was build time against a Supabase pool
+ * capped for the build (packages/db/src/datasource-url.ts).
+ *
+ * Same rule as /p/[slug]: put a list back only alongside the change that
+ * makes this page cacheable. `revalidate` above stays for the same reason.
  */
-export async function generateStaticParams(): Promise<{ slug: string }[]> {
-  const rows = await db.category.findMany({
-    where: { isPublished: true },
-    select: { slug: true },
-  })
-  return rows.map((r) => ({ slug: r.slug }))
-}
 
 export async function generateMetadata({ params, searchParams }: Props): Promise<Metadata> {
   const [{ slug }, sp] = await Promise.all([params, searchParams])

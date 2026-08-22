@@ -11,9 +11,14 @@ type Props = { params: Promise<{ slug: string }> }
 
 export const revalidate = 3600
 
-export function generateStaticParams() {
-  return marketsOrdered().map((m) => ({ slug: m.slug }))
-}
+/*
+ * No `generateStaticParams` on purpose — see /p/[slug] for the full note.
+ * Short version: every route under (storefront) currently builds as `ƒ`
+ * (dynamic), so listing params here rendered 128 market pages at build time and
+ * threw every one away. Re-add the list together with the change that makes
+ * the storefront layout statically renderable; `revalidate` above stays put
+ * for the same reason.
+ */
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params
