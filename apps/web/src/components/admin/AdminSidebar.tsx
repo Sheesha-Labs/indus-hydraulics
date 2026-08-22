@@ -83,6 +83,7 @@ const NAV_SECTIONS: { section: string; items: NavItem[] }[] = [
       { id: 'cms', label: 'Pages & Hero', path: 'cms', Icon: FileText },
       { id: 'navigation', label: 'Navigation', path: 'navigation', Icon: MenuIcon },
       { id: 'seo', label: 'SEO & Search', path: 'seo', Icon: Search },
+      { id: 'markets', label: 'Export markets', path: 'markets', Icon: Globe },
     ],
   },
   {

@@ -37,6 +37,8 @@
  * market's block reviewed before it goes live.
  */
 
+import { MARKET_PAGE_RECORDS } from './market-page-records'
+
 /** `[lon, lat]`, in that order — the order d3-geo and GeoJSON both use. */
 export type LonLat = readonly [lon: number, lat: number]
 
@@ -149,6 +151,35 @@ export type MarketSector = {
 
 export type MarketFaq = { readonly question: string; readonly answer: string }
 
+export type MarketComplianceDoc = {
+  /** Short reference as the trade uses it — "FORM M", "SC", "PAAR". */
+  readonly ref: string
+  readonly name: string
+  /** Who issues it. The question a buyer actually asks. */
+  readonly issuer: string
+  /** Where it sits in the sequence — "Before the vessel sails". */
+  readonly when: string
+}
+
+/**
+ * The destination's conformity regime, in full.
+ *
+ * NOT RENDERED. The standalone compliance section was cut from the design at
+ * the client's request, and its content now lives distributed across the hero
+ * fact table, the operations-band caption and the FAQ.
+ *
+ * It is kept because it is the source those three were written FROM, and
+ * because it is the part of the record a forwarder reviews. Deleting it would
+ * mean the next person editing a conformity claim has only the three
+ * paraphrases and no statement of the sequence they paraphrase. Do not render
+ * it, and do not delete it.
+ */
+export type MarketCompliance = {
+  readonly heading: string
+  readonly body: string
+  readonly documents: readonly MarketComplianceDoc[]
+}
+
 export type MarketPage = {
   /** Matches a `Market.slug` in `markets.ts`. Enforced by the tests. */
   readonly slug: string
@@ -176,10 +207,30 @@ export type MarketPage = {
    */
   readonly localName?: string
   /**
-   * The destination's conformity scheme, named in the meta description.
-   * Omit rather than invent one where the market has none worth naming.
+   * Has this market's regulatory prose been checked by the client's forwarder?
+   *
+   * The conformity schemes, document owners, sequencing, transit bands and
+   * freight ladders on these pages were WRITTEN FOR THE DESIGN. They read as
+   * fact, so they have to be checked as fact — a page that misstates a
+   * conformity sequence is worse than one that omits it, because a buyer acts
+   * on it.
+   *
+   * Only Saudi Arabia's copy is verbatim from the live site and therefore
+   * already client-verified. Everything else is `unverified` until a forwarder
+   * signs it off, and `releasedMarketPage` will not serve it — the record sits
+   * in the repo, complete and reviewable, and flips on with a one-word edit.
+   *
+   * Nigeria is the exception: it shipped before this gate existed and is live
+   * today. It is marked honestly rather than quietly withdrawn, and it is on
+   * the review list like the rest.
    */
-  readonly conformityScheme?: string
+  readonly regulatoryCopy: 'verified' | 'unverified'
+  /**
+   * True once the copy has cleared review AND the market is meant to be
+   * public. Separate from `regulatoryCopy` so a market can be held back for a
+   * commercial reason without implying its copy is wrong.
+   */
+  readonly released: boolean
   /** 3–4 sentences on what is DISTINCTIVE about this lane. Never restates the H1. */
   readonly lede: string
   /** Exactly four rows, always these four keys, in this order. */
@@ -211,6 +262,8 @@ export type MarketPage = {
    * a question is a structured-data violation, not just bad writing.
    */
   readonly faqs: readonly MarketFaq[]
+  /** Source of record for the conformity claims. Never rendered — see above. */
+  readonly compliance: MarketCompliance
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -460,202 +513,49 @@ export type MarketUrgencyOption = (typeof MARKET_URGENCY_OPTIONS)[number]
 // Records
 // ─────────────────────────────────────────────────────────────────────────────
 
-const NIGERIA: MarketPage = {
-  slug: 'nigeria',
-  lane: 'DXB → NG',
-  dialCode: '+234',
-  currency: 'USD',
-  conformityScheme: 'SONCAP',
-  lede:
-    'Nigeria is the longest lane we run and the one with the most paperwork in front of it. Containers sail from Jebel Ali around the Cape of Good Hope to Onne or Lagos, which is why transit is measured in weeks rather than days. Before any of that, the order needs a Form M raised through the buyer’s bank and a SONCAP certificate issued at origin. Neither can be done retrospectively, so the part list has to be right early.',
-  facts: [
-    { label: 'Typical transit', value: 'Typically 26–32 days by sea from dispatch' },
-    {
-      label: 'Freight',
-      value:
-        'Sea freight from Jebel Ali to Onne for oilfield cargo · Lagos, Apapa and Tin Can for general cargo · Air freight into Lagos or Port Harcourt where the schedule is tighter',
-    },
-    {
-      label: 'Incoterms 2020',
-      value: 'CIF Onne or Lagos · DAP to the buyer’s site · FOB Jebel Ali · EXW Dubai for a nominated forwarder',
-    },
-    {
-      label: 'Documentation',
-      value:
-        'Form M raised through the buyer’s bank · SONCAP Product Certificate and SONCAP Certificate before shipment · PAAR from Nigeria Customs · Certificate of Origin, Dubai Chamber attested',
-    },
-  ],
-  manifest: [
-    { label: 'Origin', value: 'Jebel Ali · Dubai' },
-    { label: 'Primary mode', value: 'Sea, via the Cape' },
-    { label: 'Port of entry', value: 'Onne · Port Harcourt' },
-    { label: 'Transit', value: '26–32 days' },
-    { label: 'Quoted in', value: 'USD' },
-    { label: 'Docs prepared', value: 'Before the vessel sails' },
-  ],
-  map: {
-    geoNames: ['Nigeria'],
-    fit: 'crossing',
-    origin: [55.03, 25.01],
-    originLabel: 'JEBEL ALI · DXB',
-    crossing: { name: 'ONNE · PORT', coords: [7.15, 4.7], legend: 'Port of entry', dx: 12, dy: 10, anchor: 'start' },
-    routes: [
-      {
-        mode: 'SEA VIA THE CAPE',
-        primary: true,
-        points: [
-          [55.03, 25.01],
-          [56.6, 26.55],
-          [59.9, 22.3],
-          [57.0, 15.5],
-          [52.0, 8.0],
-          [45.0, -2.0],
-          [42.0, -10.0],
-          [37.0, -22.0],
-          [30.0, -33.0],
-          [20.0, -35.5],
-          [12.0, -30.0],
-          [10.0, -20.0],
-          [11.0, -10.0],
-          [8.0, -3.0],
-          [4.5, 3.0],
-          [7.15, 4.7],
-        ],
-      },
-      {
-        mode: 'AIR',
-        points: [
-          [55.36, 25.25],
-          [40.0, 15.0],
-          [20.0, 8.0],
-          [3.32, 6.58],
-        ],
-      },
-    ],
-  },
-  freight: [
-    { name: 'Sea, FCL', transit: '26–32 days', route: 'Jebel Ali to Onne or Lagos, via the Cape', useCase: 'Default for most orders' },
-    { name: 'Air freight', transit: '4–6 days', route: 'DXB to LOS or PHC', useCase: 'When the line is down' },
-    { name: 'Sea, LCL', transit: '30–38 days', route: 'Consolidated, with transshipment', useCase: 'Small mixed orders' },
-  ],
-  orderSteps: {
-    third:
-      'Once the Form M is in place, the SONCAP certification and shipping documents are arranged before the container is loaded.',
-    fourth: 'Goods sail from Jebel Ali, and you get the paperwork and tracking together.',
-  },
-  cities: [
-    { name: 'Lagos', coords: [3.39, 6.45], region: 'Lagos State', plot: true, dx: -9, dy: 4, anchor: 'end' },
-    { name: 'Ibadan', coords: [3.9, 7.38], region: 'Oyo State', plot: true, dx: -9, dy: -4, anchor: 'end' },
-    { name: 'Abuja', coords: [7.49, 9.06], region: 'Federal Capital Territory', plot: true, dx: 9, dy: -6 },
-    { name: 'Kano', coords: [8.52, 12.0], region: 'Kano State', plot: true, dx: 9, dy: 4 },
-    { name: 'Kaduna', coords: [7.44, 10.52], region: 'Kaduna State', plot: true, dx: -9, dy: 4, anchor: 'end' },
-    { name: 'Warri', coords: [5.75, 5.52], region: 'Delta State', plot: true, dx: -9, dy: 8, anchor: 'end' },
-    { name: 'Calabar', coords: [8.32, 4.98], region: 'Cross River State', plot: true, dx: 9, dy: 4 },
-    { name: 'Port Harcourt', coords: [7.01, 4.82], region: 'Rivers State' },
-    { name: 'Onne', coords: [7.15, 4.7], region: 'Rivers State' },
-    { name: 'Bonny', coords: [7.17, 4.45], region: 'Rivers State' },
-    { name: 'Eket', coords: [7.94, 4.64], region: 'Akwa Ibom State' },
-    { name: 'Uyo', coords: [7.93, 5.04], region: 'Akwa Ibom State' },
-    { name: 'Yenagoa', coords: [6.27, 4.92], region: 'Bayelsa State' },
-    { name: 'Escravos', coords: [5.2, 5.62], region: 'Delta State' },
-    { name: 'Sapele', coords: [5.68, 5.89], region: 'Delta State' },
-    { name: 'Benin City', coords: [5.63, 6.34], region: 'Edo State' },
-  ],
-  sectors: [
-    {
-      slug: 'oil-gas',
-      name: 'Oil & Gas',
-      description:
-        'Wellhead, BOP, flow iron and choke-and-kill support for swamp, land and deepwater operations.',
-    },
-    {
-      slug: 'marine',
-      name: 'Marine & Offshore',
-      description: 'Deck machinery and vessel hydraulics for the offshore support fleet at Onne and Lagos.',
-    },
-    {
-      slug: 'power',
-      name: 'Power & Energy',
-      description: 'Actuator and governor hydraulics for gas turbine plant and independent generation.',
-    },
-    {
-      slug: 'construction',
-      name: 'Construction',
-      description: 'Excavator, crane and batching-plant hydraulics for infrastructure contracts.',
-    },
-    {
-      slug: 'steel',
-      name: 'Steel & Metals',
-      description: 'High-force cylinders and servo valves for rolling and forming lines.',
-    },
-    {
-      slug: 'mining',
-      name: 'Mining',
-      description: 'Dust-rated, high-cycle components for cement, quarry and processing plant.',
-    },
-  ],
-  faqs: [
-    {
-      question: 'Do you have a branch in Nigeria?',
-      answer:
-        'No. Nigeria is supplied from our Dubai warehouse, with the SONCAP certification done at origin before the container is loaded.',
-    },
-    {
-      question: 'What is SONCAP and who arranges it?',
-      answer:
-        'The Standards Organisation of Nigeria conformity programme. An accredited firm issues a Product Certificate against the goods, and SON issues the SONCAP certificate customs will ask for. We arrange both from the part numbers on the order.',
-    },
-    {
-      question: 'What do you need from us before shipping?',
-      answer:
-        'The Form M, raised through your bank. Nothing moves without it, and the PAAR that customs issues is tied to it.',
-    },
-    {
-      question: 'Why does sea freight take a month?',
-      answer:
-        'Because the routing is around the Cape of Good Hope rather than through the Red Sea. It is a long lane, which is why the conformity work costs nothing in time if it is done while the order is picked.',
-    },
-    {
-      question: 'Can you supply Nigerian content requirements?',
-      answer:
-        'We supply the goods and the certification. Where a tender requires Nigerian content, we quote through a locally registered partner rather than claiming a status we do not hold.',
-    },
-    {
-      question: 'Can you deliver to Warri, Eket and the swamp locations?',
-      answer:
-        'Yes, on DAP terms to the base or the site gate. The leg beyond Onne or Warri is quoted rather than estimated.',
-    },
-    {
-      question: 'What currency do you quote in?',
-      answer:
-        'USD. The Form M and the letter of credit are raised in the same currency, so quoting in anything else creates work for your bank.',
-    },
-    {
-      question: 'Can you supply API-monogrammed equipment?',
-      answer:
-        'Yes. API 6A wellhead, API 16A BOP, API 16C choke and kill and API 7K drilling hose, with NACE MR0175 material documentation where the contract requires it.',
-    },
-  ],
-}
-
 /**
- * Every market with a designed page. Keyed by slug for O(1) lookup; the route
- * falls back to the plain layout for any market not listed here.
+ * Every written record, keyed by slug — released or not.
  *
- * 45 further records are written and waiting in the design bundle
- * (`design_handoff_market_page/market-data.jsx`). They land one at a time as
- * each market's regulatory copy clears review — see the docblock at the top.
+ * This is the review surface: the tests run against all 46, so a record that
+ * is still waiting on its forwarder sign-off is held to exactly the same
+ * contract as one that is live. Use `releasedMarketPage` for anything that
+ * renders.
  */
-export const MARKET_PAGES: Readonly<Record<string, MarketPage>> = {
-  nigeria: NIGERIA,
-}
+export const MARKET_PAGES: Readonly<Record<string, MarketPage>> = Object.fromEntries(
+  MARKET_PAGE_RECORDS.map((page) => [page.slug, page])
+)
 
+/** Raw lookup, ignoring the release gate. For tests and admin tooling. */
 export function marketPageBySlug(slug: string): MarketPage | undefined {
   return MARKET_PAGES[slug]
 }
 
+/**
+ * The record the ROUTE should render, or undefined.
+ *
+ * Everything customer-facing goes through here. A market whose regulatory
+ * prose has not been checked by a forwarder falls back to the plain layout,
+ * which makes no conformity claims beyond what `markets.ts` already carries —
+ * so the failure mode of an un-reviewed market is a smaller page, never a
+ * wrong one.
+ */
+export function releasedMarketPage(slug: string): MarketPage | undefined {
+  const page = MARKET_PAGES[slug]
+  return page?.released ? page : undefined
+}
+
+/** Slugs the route should statically generate the designed page for. */
+export function releasedMarketPageSlugs(): string[] {
+  return MARKET_PAGE_RECORDS.filter((p) => p.released).map((p) => p.slug)
+}
+
+/** Written but held back — the queue a forwarder review works through. */
+export function pendingMarketPageSlugs(): string[] {
+  return MARKET_PAGE_RECORDS.filter((p) => !p.released).map((p) => p.slug)
+}
+
 export function marketPageSlugs(): string[] {
-  return Object.keys(MARKET_PAGES)
+  return MARKET_PAGE_RECORDS.map((p) => p.slug)
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
