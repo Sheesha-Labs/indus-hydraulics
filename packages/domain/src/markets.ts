@@ -1615,6 +1615,216 @@ export const MARKETS: Market[] = [
     },
     position: 75,
   },
+  {
+    slug: 'united-states',
+    name: 'the United States',
+    countryCode: 'US',
+    summary:
+      'Metric, DIN and GOST-pattern hydraulic fittings, adapters and hose supplied to the United States from our Dubai warehouse, quoted per consignment.',
+    intro:
+      'The United States manufactures hydraulics at scale and stocks them densely, so we are no use at all for ordinary domestic product. Where we are useful is the reverse of the usual case: the metric and Eastern-standard fittings that are commonplace in the Gulf and awkward to source in an SAE market.',
+    leadTime: 'Quoted per consignment',
+    routes: ['Air freight', 'Sea freight where the schedule allows'],
+    incoterms: ['CIF', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
+    conformity: [
+      'Certificate of Origin, Dubai Chamber attested',
+      'Manufacturer certificate of conformity on request',
+    ],
+    context: {
+      heading: 'The awkward standard here is the ordinary one there',
+      body: 'An SAE-based supply chain handles JIC, NPT and code-61 flanges without thinking and then stalls on a DIN 2353 bite-type in an unusual tube size, a BSP taper in a large diameter, or a GOST coupling on an imported machine. Those are catalogue items for us because the markets we serve run on them daily. If a piece of imported equipment has arrived with connections nobody locally can match, that is the enquiry worth sending — and a photograph with a caliper reading is usually enough to identify it. For anything a domestic distributor stocks, buy it there.',
+    },
+    position: 76,
+  },
+  {
+    slug: 'canada',
+    name: 'Canada',
+    countryCode: 'CA',
+    summary:
+      'Hydraulic hose, fittings, adapters and industrial hose supplied to Canada from our Dubai warehouse, quoted per consignment, including low-temperature constructions.',
+    intro:
+      'Canada is well supplied domestically, and the enquiries that travel are usually specification-driven. The one condition worth talking about is cold, because sustained low temperature changes what a hose can physically do rather than merely shortening its life.',
+    leadTime: 'Quoted per consignment',
+    routes: ['Air freight', 'Sea freight where the schedule allows'],
+    incoterms: ['CIF', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
+    conformity: [
+      'Certificate of Origin, Dubai Chamber attested',
+      'Manufacturer certificate of conformity on request',
+    ],
+    context: {
+      heading: 'Cold takes the flex out before it takes the life out',
+      body: 'Every elastomer has a point below which it stops behaving like rubber and starts behaving like plastic. Above it a hose flexes and recovers; below it the same hose is stiff, and bending one that has been sitting outside overnight can crack the tube without leaving a mark on the cover. The failure then appears hours later when the machine warms up and pressurises. Standard compounds are not rated for it and low-temperature ones are, which is a specification choice rather than a quality one. If equipment works through a winter outdoors, the minimum ambient is the number we need, not the working pressure.',
+    },
+    position: 77,
+  },
+  {
+    slug: 'mexico',
+    name: 'Mexico',
+    countryCode: 'MX',
+    summary:
+      'Hydraulic hose, fittings, adapters, valves and industrial hose supplied to Mexico from our Dubai warehouse, quoted per consignment.',
+    intro:
+      'Mexico has a large and repetitive manufacturing base, which produces a buying pattern seen in few of the markets we serve: the same items, in the same quantities, on a predictable cycle, rather than one-off replacement orders.',
+    leadTime: 'Quoted per consignment',
+    routes: ['Sea freight', 'Air freight where the schedule is tighter'],
+    incoterms: ['CIF', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
+    conformity: [
+      'Certificate of Origin, Dubai Chamber attested',
+      'Manufacturer certificate of conformity on request',
+    ],
+    context: {
+      heading: 'Repeat consumption is worth pricing as a whole',
+      body: 'Quoting the same line list every quarter serves nobody well. Where consumption is genuinely predictable, agreeing quantities and prices once and drawing against them removes the quotation cycle entirely and lets us hold the right stock rather than reacting to each order. It also makes the freight decision sensible, because a scheduled call-off can go by sea while an unplanned one cannot. Send twelve months of what you actually consumed rather than a forecast — historical usage is a far better basis for an agreement than an estimate, and we would rather price against the real number.',
+    },
+    position: 78,
+  },
+  {
+    slug: 'panama',
+    name: 'Panama',
+    countryCode: 'PA',
+    summary:
+      'Hydraulic hose, fittings, adapters, deck machinery hose and industrial hose supplied to Panama from our Dubai warehouse, quoted per consignment.',
+    intro:
+      'Panama\'s industrial hydraulics sit around the canal and the ports serving it — tugs, line handling, deck machinery and terminal equipment. Towing and mooring work loads a hydraulic circuit in a way most industrial duty never does.',
+    leadTime: 'Quoted per consignment',
+    routes: ['Sea freight', 'Air freight where the schedule is tighter'],
+    incoterms: ['CIF', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
+    conformity: [
+      'Certificate of Origin, Dubai Chamber attested',
+      'Manufacturer certificate of conformity on request',
+    ],
+    context: {
+      heading: 'Shock loading is not the same as high pressure',
+      body: 'A towing winch does not see a steady working pressure, it sees surges as a line comes taut and a vessel takes the weight. Those spikes are brief, far above the nominal figure, and repeated thousands of times over a season. A hose selected on steady-state pressure is comfortably rated for the average and progressively destroyed by the peaks, which is why deck machinery lines fail at the fitting rather than in the middle. Impulse-rated construction and correct crimp retention are what survive it. If a line is on a winch, a crane or anything that snatches, tell us — the specification changes.',
+    },
+    position: 79,
+  },
+  {
+    slug: 'trinidad-and-tobago',
+    name: 'Trinidad and Tobago',
+    countryCode: 'TT',
+    summary:
+      'Hydraulic hose, fittings, adapters and chemical transfer hose supplied to Trinidad and Tobago from our Dubai warehouse, quoted per consignment.',
+    intro:
+      'Trinidad runs one of the larger petrochemical clusters in the region — ammonia and methanol production alongside offshore gas. Ammonia in particular rules out materials that are otherwise unremarkable choices.',
+    leadTime: 'Quoted per consignment',
+    routes: ['Sea freight', 'Air freight where the schedule is tighter'],
+    incoterms: ['CIF', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
+    conformity: [
+      'Certificate of Origin, Dubai Chamber attested',
+      'Manufacturer certificate of conformity on request',
+    ],
+    context: {
+      heading: 'Ammonia and brass do not coexist',
+      body: 'Copper alloys are attacked by ammonia, and brass fittings in ammonia service crack rather than corrode gracefully — stress corrosion cracking, which gives very little warning and fails suddenly. Brass is the default material for a great many couplings and adapters, so this is an easy specification to get wrong by simply not thinking about it. Steel and stainless are the answer, and the same care applies to any seal or gasket in the circuit. Where a line list mixes ammonia service with ordinary duty, say which items go where and we will separate them rather than quoting one material across the whole order.',
+    },
+    position: 80,
+  },
+  {
+    slug: 'jamaica',
+    name: 'Jamaica',
+    countryCode: 'JM',
+    summary:
+      'Hydraulic hose, fittings, adapters and chemical transfer hose supplied to Jamaica from our Dubai warehouse, quoted per consignment.',
+    intro:
+      'Bauxite mining and alumina refining dominate Jamaican heavy industry. Refining runs on hot caustic soda at concentration, which is an aggressive medium in a way that is easy to underestimate because it is so ordinary a chemical.',
+    leadTime: 'Quoted per consignment',
+    routes: ['Sea freight', 'Air freight where the schedule is tighter'],
+    incoterms: ['CIF', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
+    conformity: [
+      'Certificate of Origin, Dubai Chamber attested',
+      'Manufacturer certificate of conformity on request',
+    ],
+    context: {
+      heading: 'Hot caustic is worse than cold caustic by a long way',
+      body: 'A material rated for sodium hydroxide at ambient may have no useful life at all in the same solution at process temperature, and compatibility tables that give a single answer per chemical hide exactly that. Concentration and temperature together determine what survives, and aluminium is attacked by caustic outright, which matters because aluminium turns up in fittings and quick-couplings where nobody expected chemistry to be relevant. Give us the concentration and the operating temperature rather than the chemical name alone, and we will specify tube, cover and end fittings against all three.',
+    },
+    position: 81,
+  },
+  {
+    slug: 'dominican-republic',
+    name: 'the Dominican Republic',
+    countryCode: 'DO',
+    summary:
+      'Hydraulic hose, fittings, adapters, valves and industrial hose supplied to the Dominican Republic from our Dubai warehouse, quoted per consignment.',
+    intro:
+      'Gold mining, construction and food processing all contribute to Dominican demand, and all three sit in a hurricane belt. Resupply is reliable for most of the year and can be interrupted precisely when demand for repairs spikes.',
+    leadTime: 'Quoted per consignment',
+    routes: ['Sea freight', 'Air freight where the schedule is tighter'],
+    incoterms: ['CIF', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
+    conformity: [
+      'Certificate of Origin, Dubai Chamber attested',
+      'Pre-shipment inspection where the destination requires it',
+    ],
+    context: {
+      heading: 'The repairs and the disruption arrive together',
+      body: 'A storm season creates its damage and closes the resupply route in the same week, which is an unusually unhelpful combination. Holding a modest buffer of the assemblies that fail most often is cheap insurance against it, and the time to establish that buffer is well before the season rather than during it. The items worth holding are rarely exotic: the standard lengths on the machines that matter, a spread of the common adapters, and the couplings that get damaged when equipment is moved in a hurry. We will help put that list together from what you have been buying.',
+    },
+    position: 82,
+  },
+  {
+    slug: 'costa-rica',
+    name: 'Costa Rica',
+    countryCode: 'CR',
+    summary:
+      'Hydraulic hose, fittings, adapters and clean-service industrial hose supplied to Costa Rica from our Dubai warehouse, quoted per consignment.',
+    intro:
+      'Costa Rica has built an unusual industrial profile for the region, with medical-device and precision manufacturing alongside agriculture. Production environments of that kind impose requirements on hydraulics that ordinary factories do not.',
+    leadTime: 'Quoted per consignment',
+    routes: ['Air freight', 'Sea freight where the schedule allows'],
+    incoterms: ['CIF', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
+    conformity: [
+      'Certificate of Origin, Dubai Chamber attested',
+      'Manufacturer certificate of conformity on request',
+    ],
+    context: {
+      heading: 'In a controlled environment the cover matters as much as the tube',
+      body: 'Equipment operating in or beside a cleanroom is judged on what it sheds and what it can be wiped down with, not only on what it contains. A textile-braided cover holds particulate and cannot be properly cleaned; a smooth cover can. Fluids and greases have to be compatible with the cleaning regime, and anything that migrates or outgasses is a problem regardless of how well it lubricates. These are rarely the constraints written into a hydraulic specification, so they tend to surface at validation. Tell us the environment and they can be designed in instead.',
+    },
+    position: 83,
+  },
+  {
+    slug: 'guatemala',
+    name: 'Guatemala',
+    countryCode: 'GT',
+    summary:
+      'Hydraulic hose, fittings, adapters, valves and industrial hose supplied to Guatemala from our Dubai warehouse, quoted per consignment.',
+    intro:
+      'Sugar is among the largest industrial employers in Guatemala, and sugar mills run to a campaign: months of continuous crushing followed by a complete stop. Every mill in the country follows roughly the same calendar.',
+    leadTime: 'Quoted per consignment',
+    routes: ['Sea freight', 'Air freight where the schedule is tighter'],
+    incoterms: ['CIF', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
+    conformity: [
+      'Certificate of Origin, Dubai Chamber attested',
+      'Pre-shipment inspection where the destination requires it',
+    ],
+    context: {
+      heading: 'When a whole industry stops at once, so does its supply',
+      body: 'Maintenance concentrated into an off-season is efficient for a mill and difficult for everyone supplying it, because demand for the same components arrives from every mill in the same few weeks. Whoever ordered first is served first, and that is the entire mechanism. Ordering against the previous campaign rather than the coming one is the way out of it: what wore this year is a reliable guide to what to hold for next, and placing that order early costs nothing beyond storing it. Leaving it until the crush ends puts you in a queue with the whole industry.',
+    },
+    position: 84,
+  },
+  {
+    slug: 'honduras',
+    name: 'Honduras',
+    countryCode: 'HN',
+    summary:
+      'Hydraulic hose, fittings, adapters, valves and industrial hose supplied to Honduras from our Dubai warehouse, quoted per consignment.',
+    intro:
+      'Agriculture, food processing and port activity account for most Honduran demand, often through businesses buying directly from outside the region for the first time. Comparing an imported price with a local one is less straightforward than it looks.',
+    leadTime: 'Quoted per consignment',
+    routes: ['Sea freight', 'Air freight where the schedule is tighter'],
+    incoterms: ['CIF', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
+    conformity: [
+      'Certificate of Origin, Dubai Chamber attested',
+      'Pre-shipment inspection where the destination requires it',
+    ],
+    context: {
+      heading: 'Compare landed against landed, not goods against landed',
+      body: 'A local supplier quotes a price with everything already inside it — freight, duty, clearance, delivery. An export quotation may not, and depending on the Incoterm it may cover only the goods sitting on a pallet in Dubai. Comparing those two figures directly makes the import look cheaper than it is and produces an unpleasant surprise at clearance. We would rather set that out plainly than win an order on a misunderstanding, so ask us for the delivered figure if that is what you are comparing against, and we will say what is included and what is not.',
+    },
+    position: 85,
+  },
 ]
 
 export function marketBySlug(slug: string): Market | undefined {
@@ -1625,9 +1835,20 @@ export function marketsOrdered(): Market[] {
   return [...MARKETS].sort((a, b) => a.position - b.position)
 }
 
+/**
+ * Country name with any leading article removed.
+ *
+ * `name` carries the article because the page templates read "supplier in
+ * {name}", and "supplier in United States" is wrong. A schema.org Country
+ * node wants the bare name, so anything feeding JSON-LD goes through this.
+ */
+export function marketCountryName(market: Market): string {
+  return market.name.replace(/^the /, '')
+}
+
 /** Country names for `areaServed` on the Service JSON-LD. */
 export function marketNames(): string[] {
-  return marketsOrdered().map((m) => m.name)
+  return marketsOrdered().map(marketCountryName)
 }
 
 /** ISO codes, for the Organization `areaServed`. */

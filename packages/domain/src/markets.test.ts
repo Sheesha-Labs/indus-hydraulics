@@ -1,9 +1,16 @@
 import { describe, expect, it } from 'vitest'
-import { MARKETS, marketBySlug, marketCountryCodes, marketNames, marketsOrdered } from './markets'
+import {
+  MARKETS,
+  marketBySlug,
+  marketCountryCodes,
+  marketCountryName,
+  marketNames,
+  marketsOrdered,
+} from './markets'
 
 describe('export markets', () => {
   it('covers the markets we ship on a recurring basis, GCC first', () => {
-    expect(MARKETS).toHaveLength(75)
+    expect(MARKETS).toHaveLength(85)
     expect(marketsOrdered().map((m) => m.slug)).toEqual([
       // GCC — the original five, on the three-day lane.
       'saudi-arabia',
@@ -91,6 +98,17 @@ describe('export markets', () => {
       'laos',
       'brunei',
       'timor-leste',
+      // North America, Central America and the Caribbean.
+      'united-states',
+      'canada',
+      'mexico',
+      'panama',
+      'trinidad-and-tobago',
+      'jamaica',
+      'dominican-republic',
+      'costa-rica',
+      'guatemala',
+      'honduras',
     ])
   })
 
@@ -212,6 +230,22 @@ describe('export markets', () => {
     // them here would assert export to our own warehouse.
     expect(marketBySlug('dubai')).toBeUndefined()
     expect(marketBySlug('sharjah')).toBeUndefined()
+  })
+
+  it('strips the leading article for schema.org Country nodes', () => {
+    // `name` carries the article because the templates read "supplier in
+    // {name}", and "supplier in United States" is wrong. A Country node wants
+    // the bare name, so the two diverge for exactly these entries.
+    const usa = marketBySlug('united-states')!
+    expect(usa.name).toBe('the United States')
+    expect(marketCountryName(usa)).toBe('United States')
+
+    const dr = marketBySlug('dominican-republic')!
+    expect(marketCountryName(dr)).toBe('Dominican Republic')
+
+    // Everything else is unchanged by it.
+    expect(marketCountryName(marketBySlug('oman')!)).toBe('Oman')
+    expect(marketNames()).not.toContain('the United States')
   })
 
   it('exposes names and country codes in display order', () => {

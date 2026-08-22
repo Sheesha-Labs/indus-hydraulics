@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { buildBreadcrumbLd, buildServiceLd, marketsOrdered } from '@indus/domain'
+import { buildBreadcrumbLd, buildServiceLd, marketCountryName, marketsOrdered } from '@indus/domain'
 import { JsonLd } from '@indus/ui'
 import { ORG_ID, SITE_NAME, pageMetadata, urlFor } from '../../../lib/seo'
 
@@ -30,7 +30,7 @@ export default function MarketsPage() {
             name: 'Export supply of hydraulic and industrial hose from Dubai',
             description: DESCRIPTION,
             url: urlFor('/markets'),
-            areaServed: markets.map((m) => ({ name: m.name, type: 'Country' as const })),
+            areaServed: markets.map((m) => ({ name: marketCountryName(m), type: 'Country' as const })),
             providerId: ORG_ID,
             providerName: SITE_NAME,
             serviceType: 'Export supply of hydraulic and industrial hose, fittings and adapters',
