@@ -3,7 +3,7 @@ import { MARKETS, marketBySlug, marketCountryCodes, marketNames, marketsOrdered 
 
 describe('export markets', () => {
   it('covers the markets we ship on a recurring basis, GCC first', () => {
-    expect(MARKETS).toHaveLength(22)
+    expect(MARKETS).toHaveLength(41)
     expect(marketsOrdered().map((m) => m.slug)).toEqual([
       // GCC — the original five, on the three-day lane.
       'saudi-arabia',
@@ -25,6 +25,29 @@ describe('export markets', () => {
       'ghana',
       'guinea',
       'ivory-coast',
+      'nigeria',
+      'senegal',
+      'mauritania',
+      // North and North-East Africa.
+      'algeria',
+      'libya',
+      'sudan',
+      'south-sudan',
+      'eritrea',
+      // East and Central Africa.
+      'uganda',
+      'dr-congo',
+      'zambia',
+      'zimbabwe',
+      'mozambique',
+      // Atlantic Africa.
+      'angola',
+      'gabon',
+      'republic-of-congo',
+      'equatorial-guinea',
+      // Southern Africa.
+      'namibia',
+      'botswana',
       // CIS.
       'russia',
       'kazakhstan',
