@@ -409,26 +409,13 @@ const TYPE_WORD: Record<AlternateNameLang, string> = {
  * the gender word as well produced "femelle JIC bouchon femelle", which reads
  * as a mistake rather than a designation.
  */
-const GENDERED_BODY: ReadonlySet<BodyType> = new Set<BodyType>(['cap', 'plug'])
-
-/**
- * Bodies that are sized by tube OD rather than by a thread.
- *
- * A cutting ring and a hose shank have no thread of their own — the ring grips
- * a tube, the shank goes inside a hose. Requiring a thread declined them at
- * 100%, and their own names are complete designations: "Schneidring" is a
- * Schneidring.
- */
-const THREADLESS_BODY: ReadonlySet<BodyType> = new Set<BodyType>([
-  'cutting-ring',
-  'hose-shank',
-  'wing-nut',
-  'hex-nut',
-  'lock-nut',
-  'bonded-seal',
-  'ed-seal',
-  'nozzle-holder',
-  'swivel-joint',
+const GENDERED_BODY: ReadonlySet<BodyType> = new Set<BodyType>([
+  'cap',
+  'plug',
+  // "union simple mâle" and "racor macho" already say male, and a German
+  // Einschraubverschraubung is a male stud fitting by definition. Emitting the
+  // gender word too produced "mâle union simple mâle".
+  'male-stud-connector',
 ])
 
 /**
@@ -670,16 +657,19 @@ export function hasEnoughToName(a: FittingAttributes): boolean {
   // true. One end alone was the bug that labelled an ORFS part as BSP.
   if (a.endB) return !!a.thread && !!a.endB.thread
 
-  // Some bodies are sized by tube OD and have no thread at all. Their own name
-  // is the designation, so they qualify without one.
-  if (a.body && THREADLESS_BODY.has(a.body)) return true
+  // A body type is a designation on its own, with or without a thread. A
+  // Verschlusskappe is a cap whatever it screws onto; a Schneidring grips a
+  // tube and has no thread to state.
+  //
+  // This was previously gated on an allowlist of "threadless" bodies, which
+  // was the wrong shape: the list had to be remembered every time a body was
+  // added, it was not, and 40 products — every Blanking Plug, Swivel Union,
+  // Union Cross and Male Stud Connector without a parsed thread — declined
+  // because `plug`, `union`, `cross` and `male-stud-connector` were missing
+  // from it. The rule is simpler than the list.
+  if (a.body) return true
 
   if (!a.thread) return false
-
-  // A body type identifies a part better than its thread does — a
-  // Verschlusskappe is a cap whatever it screws onto — so thread plus body is
-  // enough on its own.
-  if (a.body) return true
 
   // `straight` is the default body and identifies nothing. Counting it lets
   // "mâle BSP" through, which is a pair of words rather than a designation
@@ -693,6 +683,11 @@ export function hasEnoughToName(a: FittingAttributes): boolean {
     // a buyer types; "ORFS Außengewinde" alone is a pair of words. Excluding
     // it declined every crimp fitting whose only other attribute was gender.
     a.kind,
+    // So does the O-ring, which several of these languages name explicitly and
+    // the composer already prints. Leaving it uncounted declined
+    // "90° Elbow Metric O-Ring" — which has a thread, a bend AND a seal, and
+    // reads perfectly as "90° Bogen metrisch mit O-Ring".
+    a.oring ? 'oring' : null,
   ].filter(Boolean).length
   return identifying >= 2
 }
