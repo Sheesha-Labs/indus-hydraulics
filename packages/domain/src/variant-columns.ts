@@ -25,14 +25,26 @@ export type VariantDimensionKey =
   | 'W'
   | 'S1'
   | 'S2'
+  | 'S3'
+  | 'S4'
   | 'A'
   | 'B'
   | 'C'
   | 'D'
+  | 'D1'
+  | 'D2'
+  | 'D3'
+  | 'D4'
   | 'E'
   | 'F'
   | 'H'
   | 'L'
+  | 'L1'
+  | 'L2'
+  | 'L3'
+  | 'L4'
+  | 'L5'
+  | 'L6'
 
 /**
  * Keys inside `dimensions` whose value is a string rather than a millimetre
@@ -54,6 +66,11 @@ export type VariantColumn = {
 /**
  * Every dimension column we know how to render, in the order a table should
  * present them. A product shows the subset its own rows populate.
+ *
+ * The numbered runs — S1..S4, D..D4, L..L6 — come from the adapter catalogue,
+ * which needs more of them than a hose fitting does: an adapter has two or
+ * three ends, so it prints a length and an across-flats for each. They carry
+ * no more meaning than the bare letters do, for the same reason.
  */
 export const VARIANT_DIMENSION_COLUMNS: readonly VariantColumn[] = [
   {
@@ -70,14 +87,26 @@ export const VARIANT_DIMENSION_COLUMNS: readonly VariantColumn[] = [
   },
   { key: 'S1', label: 'S1', unit: 'mm', help: 'Dimension S1 on the manufacturer dimension drawing.' },
   { key: 'S2', label: 'S2', unit: 'mm', help: 'Dimension S2 on the manufacturer dimension drawing.' },
+  { key: 'S3', label: 'S3', unit: 'mm', help: 'Dimension S3 on the manufacturer dimension drawing.' },
+  { key: 'S4', label: 'S4', unit: 'mm', help: 'Dimension S4 on the manufacturer dimension drawing.' },
   { key: 'A', label: 'A', unit: 'mm', help: 'Dimension A on the manufacturer dimension drawing.' },
   { key: 'B', label: 'B', unit: 'mm', help: 'Dimension B on the manufacturer dimension drawing.' },
   { key: 'C', label: 'C', unit: 'mm', help: 'Dimension C on the manufacturer dimension drawing.' },
   { key: 'D', label: 'D', unit: 'mm', help: 'Dimension D on the manufacturer dimension drawing.' },
+  { key: 'D1', label: 'D1', unit: 'mm', help: 'Dimension D1 on the manufacturer dimension drawing.' },
+  { key: 'D2', label: 'D2', unit: 'mm', help: 'Dimension D2 on the manufacturer dimension drawing.' },
+  { key: 'D3', label: 'D3', unit: 'mm', help: 'Dimension D3 on the manufacturer dimension drawing.' },
+  { key: 'D4', label: 'D4', unit: 'mm', help: 'Dimension D4 on the manufacturer dimension drawing.' },
   { key: 'E', label: 'E', unit: 'mm', help: 'Dimension E on the manufacturer dimension drawing.' },
   { key: 'F', label: 'F', unit: 'mm', help: 'Dimension F on the manufacturer dimension drawing.' },
   { key: 'H', label: 'H', unit: 'mm', help: 'Dimension H on the manufacturer dimension drawing.' },
   { key: 'L', label: 'L', unit: 'mm', help: 'Dimension L on the manufacturer dimension drawing.' },
+  { key: 'L1', label: 'L1', unit: 'mm', help: 'Dimension L1 on the manufacturer dimension drawing.' },
+  { key: 'L2', label: 'L2', unit: 'mm', help: 'Dimension L2 on the manufacturer dimension drawing.' },
+  { key: 'L3', label: 'L3', unit: 'mm', help: 'Dimension L3 on the manufacturer dimension drawing.' },
+  { key: 'L4', label: 'L4', unit: 'mm', help: 'Dimension L4 on the manufacturer dimension drawing.' },
+  { key: 'L5', label: 'L5', unit: 'mm', help: 'Dimension L5 on the manufacturer dimension drawing.' },
+  { key: 'L6', label: 'L6', unit: 'mm', help: 'Dimension L6 on the manufacturer dimension drawing.' },
 ]
 
 export type VariantTextColumn = { key: VariantTextKey; label: string; help: string }
