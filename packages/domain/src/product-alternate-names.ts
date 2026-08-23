@@ -38,12 +38,29 @@ export type AlternateName = { lang: AlternateNameLang; name: string }
 export type Configuration = 'straight' | 'elbow-45' | 'elbow-90'
 export type Gender = 'male' | 'female'
 /** Thread standard. Most are international designations left as-is. */
-export type ThreadStandard = 'metric' | 'bsp' | 'jic' | 'npt' | 'npsm' | 'orfs' | 'jis' | 'sae'
+export type ThreadStandard =
+  | 'metric'
+  | 'bsp'
+  // BSP taper, kept separate from parallel BSP. Each of these trades has its
+  // own name for the taper and buyers use it — "gaz conique", "gas cónica".
+  | 'bspt'
+  | 'jic'
+  | 'npt'
+  | 'npsm'
+  | 'orfs'
+  | 'jis'
+  | 'sae'
+  | 'unf'
+  // A manufacturer port designation, like Storz or Geka. Komatsu everywhere.
+  | 'komatsu'
+  // SAE J1926 straight-thread O-ring port. A PORT FORM, not a seal — must not
+  // be conflated with the `oring` flag, which says the seal carries an O-ring.
+  | 'orb'
 /** Sealing geometry — the angle is part of the designation, not a dimension. */
 export type Seat = 'cone-24' | 'cone-37' | 'cone-45' | 'cone-60' | 'flat' | 'oring-flat' | 'inverted-flare'
 /** DIN 2353 tube series. */
 export type Series = 'light' | 'heavy'
-export type Kind = 'hose-fitting' | 'adapter' | 'coupling' | 'nut'
+export type Kind = 'hose-fitting' | 'crimp-fitting' | 'adapter' | 'coupling' | 'nut'
 
 /**
  * What the part physically is, where that is more identifying than its thread.
@@ -63,6 +80,22 @@ export type BodyType =
   | 'banjo'
   | 'union'
   | 'nipple'
+  // DIN 2353 / DIN 3861 vocabulary. German-origin standards, so the German is
+  // the catalogue heading rather than a rendering of the English.
+  | 'male-stud-connector'
+  | 'cutting-ring'
+  | 'weld-connector'
+  | 'ed-seal'
+  | 'bonded-seal'
+  // The jam nut on an adjustable stud end. Distinct from KIND.nut, which is
+  // the compression nut — substituting one for the other ships a wrong part.
+  | 'lock-nut'
+  | 'hex-nut'
+  | 'wing-nut'
+  | 'hose-shank'
+  | 'flange'
+  | 'swivel-joint'
+  | 'nozzle-holder'
 
 /**
  * Coupling systems that are named by their family rather than by a thread.
@@ -85,6 +118,16 @@ export type CouplingFamily =
   | 'bauer'
   | 'guillemin'
   | 'sae-flange'
+  | 'geka'
+  | 'gost'
+  // Large-bore suction / slurry coupling. "KC" is the designation everywhere.
+  | 'kc'
+  // Shell / clamp hose fitting to EN 14420-5. GA and GI ride as couplingType.
+  | 'en14420-5'
+  // Tank-truck coupling, DIN 28450 / EN 14420-6. "TW" rides as couplingType.
+  | 'tank-truck'
+  // Thorburn's proprietary metallic-hose range. Series codes ride as type.
+  | 'met-o-seal'
 
 export type FittingAttributes = {
   configuration?: Configuration | null
@@ -136,6 +179,24 @@ const THREAD: Record<ThreadStandard, Record<AlternateNameLang, string>> = {
   orfs: { de: 'ORFS', fr: 'ORFS', es: 'ORFS', it: 'ORFS' },
   jis: { de: 'JIS', fr: 'JIS', es: 'JIS', it: 'JIS' },
   sae: { de: 'SAE', fr: 'SAE', es: 'SAE', it: 'SAE' },
+  unf: { de: 'UNF', fr: 'UNF', es: 'UNF', it: 'UNF' },
+  komatsu: { de: 'Komatsu', fr: 'Komatsu', es: 'Komatsu', it: 'Komatsu' },
+  // The designation stays; the parenthetical is the name each trade actually
+  // uses for the taper, so both searches land. German "R-Gewinde" is ISO 7-1.
+  bspt: {
+    de: 'BSPT (kegeliges R-Gewinde)',
+    fr: 'BSPT (gaz conique)',
+    es: 'BSPT (gas cónica)',
+    it: 'BSPT (gas conico)',
+  },
+  // Kept English in all four. The German long form "SAE-Einschraubzapfen mit
+  // O-Ring" exists but is not what anyone types.
+  orb: {
+    de: 'O-Ring Boss (ORB)',
+    fr: 'O-Ring Boss (ORB)',
+    es: 'O-Ring Boss (ORB)',
+    it: 'O-Ring Boss (ORB)',
+  },
 }
 
 const BODY: Record<BodyType, Record<AlternateNameLang, string>> = {
@@ -157,6 +218,83 @@ const BODY: Record<BodyType, Record<AlternateNameLang, string>> = {
   banjo: { de: 'Ringstück (Banjo)', fr: 'banjo', es: 'banjo', it: 'banjo' },
   union: { de: 'Verschraubung', fr: 'union', es: 'unión', it: 'giunto' },
   nipple: { de: 'Nippel', fr: 'mamelon', es: 'niple', it: 'nipplo' },
+  // HANSA-FLEX and Parker Ermeto both head this range
+  // "Einschraubverschraubung"; the French is Parker Ermeto FR's own term.
+  'male-stud-connector': {
+    de: 'Einschraubverschraubung',
+    fr: 'union simple mâle',
+    es: 'racor macho',
+    it: 'raccordo maschio',
+  },
+  // DIN 3861. Italian is "anello tagliente", never "ogiva" — that is the
+  // pneumatic olive, a different profile.
+  'cutting-ring': {
+    de: 'Schneidring',
+    fr: 'bague coupante',
+    es: 'anillo cortante',
+    it: 'anello tagliente',
+  },
+  'weld-connector': {
+    de: 'Anschweißstutzen',
+    fr: 'raccord à souder',
+    es: 'racor para soldar',
+    it: 'raccordo a saldare',
+  },
+  // DIN 3869. The two letters are the designation in every language.
+  'ed-seal': {
+    de: 'ED-Dichtring',
+    fr: 'joint ED',
+    es: 'junta ED',
+    it: 'guarnizione ED',
+  },
+  // German has its own name and it is the one buyers type; the other three
+  // keep the English designation, which is what their catalogues print.
+  'bonded-seal': {
+    de: 'Usit-Ring (Bonded Seal)',
+    fr: 'joint Bonded Seal',
+    es: 'junta Bonded Seal',
+    it: 'guarnizione Bonded Seal',
+  },
+  'lock-nut': {
+    de: 'Kontermutter',
+    fr: 'contre-écrou',
+    es: 'contratuerca',
+    it: 'controdado',
+  },
+  'hex-nut': {
+    de: 'Sechskantmutter',
+    fr: 'écrou hexagonal',
+    es: 'tuerca hexagonal',
+    it: 'dado esagonale',
+  },
+  'wing-nut': {
+    de: 'Flügelmutter',
+    fr: 'écrou à oreilles',
+    es: 'tuerca de mariposa',
+    it: 'dado ad alette',
+  },
+  // The barbed tail a hose clamps onto. German "Schlauchstutzen" is an
+  // accepted synonym.
+  'hose-shank': {
+    de: 'Schlauchtülle',
+    fr: 'douille cannelée',
+    es: 'espiga portamanguera',
+    it: 'portagomma',
+  },
+  flange: { de: 'Flansch', fr: 'bride', es: 'brida', it: 'flangia' },
+  // A component, not the `swivel` adjective — never compose the two.
+  'swivel-joint': {
+    de: 'Drehgelenk',
+    fr: 'joint tournant',
+    es: 'junta giratoria',
+    it: 'giunto girevole',
+  },
+  'nozzle-holder': {
+    de: 'Düsenhalter',
+    fr: 'porte-buse',
+    es: 'portaboquillas',
+    it: 'portaugello',
+  },
 }
 
 /**
@@ -227,6 +365,30 @@ const COUPLING: Record<CouplingFamily, Record<AlternateNameLang, string>> = {
     es: 'brida SAE',
     it: 'flangia SAE',
   },
+  // Geka is a German trade name (Karasto), so German is authoritative. Spanish
+  // prints "racor" rather than "acoplamiento" for this one specifically.
+  geka: { de: 'Geka-Kupplung', fr: 'raccord Geka', es: 'racor Geka', it: 'raccordo Geka' },
+  gost: { de: 'GOST-Kupplung', fr: 'raccord GOST', es: 'acoplamiento GOST', it: 'raccordo GOST' },
+  kc: { de: 'KC-Kupplung', fr: 'raccord KC', es: 'acoplamiento KC', it: 'raccordo KC' },
+  'en14420-5': {
+    de: 'Schalenverschraubung EN 14420-5',
+    fr: 'raccord EN 14420-5',
+    es: 'racor EN 14420-5',
+    it: 'raccordo EN 14420-5',
+  },
+  'tank-truck': {
+    de: 'Tankwagenkupplung',
+    fr: 'raccord pour camion-citerne',
+    es: 'acoplamiento para camión cisterna',
+    it: 'raccordo per autocisterna',
+  },
+  // Proprietary. Never localised — the name is the product.
+  'met-o-seal': {
+    de: 'Met-O-Seal',
+    fr: 'Met-O-Seal',
+    es: 'Met-O-Seal',
+    it: 'Met-O-Seal',
+  },
 }
 
 /** "with" — needed to join two ends in a readable way. */
@@ -248,6 +410,35 @@ const TYPE_WORD: Record<AlternateNameLang, string> = {
  * as a mistake rather than a designation.
  */
 const GENDERED_BODY: ReadonlySet<BodyType> = new Set<BodyType>(['cap', 'plug'])
+
+/**
+ * Bodies that are sized by tube OD rather than by a thread.
+ *
+ * A cutting ring and a hose shank have no thread of their own — the ring grips
+ * a tube, the shank goes inside a hose. Requiring a thread declined them at
+ * 100%, and their own names are complete designations: "Schneidring" is a
+ * Schneidring.
+ */
+const THREADLESS_BODY: ReadonlySet<BodyType> = new Set<BodyType>([
+  'cutting-ring',
+  'hose-shank',
+  'wing-nut',
+  'hex-nut',
+  'lock-nut',
+  'bonded-seal',
+  'ed-seal',
+  'nozzle-holder',
+  'swivel-joint',
+])
+
+/**
+ * Body types whose own term is already the German word for a union.
+ *
+ * `BODY.union.de` and the generic connector noun are both "Verschraubung", so
+ * emitting the body word after a head noun that already carries it produces
+ * "Verschraubung Verschraubung". German drops the second.
+ */
+const DE_UNION_WORD = 'Verschraubung'
 
 const SEAT: Record<Seat, Record<AlternateNameLang, string>> = {
   'cone-24': { de: '24° Konus', fr: 'cône 24°', es: 'cono 24°', it: 'cono 24°' },
@@ -285,10 +476,30 @@ const KIND: Record<Kind, Record<AlternateNameLang, string>> = {
     de: 'Schlaucharmatur',
     fr: 'embout de flexible',
     es: 'racor de manguera',
-    it: 'raccordo per tubo',
+    // "raccordo per tubo" is a rigid pipe fitting. The flexible-hose end is
+    // "raccordo per tubo flessibile", and the qualifier is the whole
+    // distinction — corrected on review of the trade vocabulary.
+    it: 'raccordo per tubo flessibile',
+  },
+  // The crimped hose end, as distinct from the generic hose fitting.
+  'crimp-fitting': {
+    de: 'Pressarmatur',
+    fr: 'embout à sertir',
+    es: 'racor de prensar',
+    it: 'raccordo a pressare',
   },
   adapter: { de: 'Adapter', fr: 'adaptateur', es: 'adaptador', it: 'adattatore' },
-  coupling: { de: 'Kupplung', fr: 'raccord', es: 'acoplamiento', it: 'giunto' },
+  coupling: {
+    de: 'Kupplung',
+    fr: 'raccord',
+    es: 'acoplamiento',
+    // Was "giunto", which is the swivel-JOINT sense — a different component.
+    // Italian catalogues print "raccordo" for a coupling.
+    it: 'raccordo',
+  },
+  // The compression / union nut that pulls a cone seat home. NOT a lock nut:
+  // BODY['lock-nut'] is the jam nut on an adjustable stud end, a separate
+  // sellable part, and substituting one for the other ships the wrong item.
   nut: { de: 'Überwurfmutter', fr: 'écrou tournant', es: 'tuerca giratoria', it: 'dado girevole' },
 }
 
@@ -365,7 +576,11 @@ function composeCoupling(lang: AlternateNameLang, a: FittingAttributes): string 
   return join([
     a.couplingFamily ? COUPLING[a.couplingFamily][lang] : null,
     type,
-    a.gender ? GENDER[a.gender][lang] : null,
+    // The body must survive. Without it a "Geka Cap" was named
+    // "Geka-Kupplung" — a cap described as a coupling, which is the
+    // wrong-component failure, not a stylistic one.
+    a.body ? BODY[a.body][lang] : null,
+    a.gender && !(a.body && GENDERED_BODY.has(a.body)) ? GENDER[a.gender][lang] : null,
     a.thread ? THREAD[a.thread][lang] : null,
   ])
 }
@@ -382,7 +597,13 @@ function composeDe(a: FittingAttributes): string {
     a.gender && !(a.body && GENDERED_BODY.has(a.body)) ? GENDER[a.gender].de : null,
     a.oring ? ORING.de : null,
     a.seat ? SEAT[a.seat].de : null,
-    a.body ? BODY[a.body].de : a.kind ? KIND[a.kind].de : null,
+    // Guard C4: BODY.union.de and the generic connector noun are the same
+    // German word, so never print it twice.
+    a.body
+      ? (a.kind && KIND[a.kind].de === BODY[a.body].de ? null : BODY[a.body].de)
+      : a.kind
+        ? KIND[a.kind].de
+        : null,
   ])
 }
 
@@ -449,6 +670,10 @@ export function hasEnoughToName(a: FittingAttributes): boolean {
   // true. One end alone was the bug that labelled an ORFS part as BSP.
   if (a.endB) return !!a.thread && !!a.endB.thread
 
+  // Some bodies are sized by tube OD and have no thread at all. Their own name
+  // is the designation, so they qualify without one.
+  if (a.body && THREADLESS_BODY.has(a.body)) return true
+
   if (!a.thread) return false
 
   // A body type identifies a part better than its thread does — a
@@ -464,6 +689,10 @@ export function hasEnoughToName(a: FittingAttributes): boolean {
     a.seat,
     a.configuration && a.configuration !== 'straight' ? a.configuration : null,
     a.series,
+    // The head noun counts. "ORFS Außengewinde Pressarmatur" is a designation
+    // a buyer types; "ORFS Außengewinde" alone is a pair of words. Excluding
+    // it declined every crimp fitting whose only other attribute was gender.
+    a.kind,
   ].filter(Boolean).length
   return identifying >= 2
 }
