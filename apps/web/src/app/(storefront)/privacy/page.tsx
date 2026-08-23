@@ -1,39 +1,38 @@
 import type { Metadata } from 'next'
 import { db } from '@indus/db'
 import { notFound } from 'next/navigation'
-import PolicyLayout, { PolicySectionBody } from '../../../components/PolicyLayout'
+import PolicyPage from '../../../components/PolicyPage'
+import { getMasterPageContent } from '../../../lib/page-content'
 
 export const metadata: Metadata = { title: 'Privacy Policy' }
 
 // Legal page rarely changes; cache for 1 hour.
 export const revalidate = 3600
 
-const EFFECTIVE_DATE = '2026-05-04'
-
-const SECTIONS = [
-  { id: 'who-we-are', title: '1. Who we are' },
-  { id: 'information-we-collect', title: '2. Information we collect' },
-  { id: 'why-we-use-your-information', title: '3. Why we use your information' },
-  { id: 'lawful-basis', title: '4. Lawful basis' },
-  { id: 'how-we-store-and-protect-data', title: '5. How we store and protect data' },
-  { id: 'sharing-with-third-parties', title: '6. Sharing with third parties' },
-  { id: 'international-transfers', title: '7. International transfers' },
-  { id: 'cookies', title: '8. Cookies' },
-  { id: 'data-retention', title: '9. Data retention' },
-  { id: 'your-rights', title: '10. Your rights' },
-  { id: 'security-incidents', title: '11. Security incidents' },
-  { id: 'changes-to-this-policy', title: '12. Changes to this policy' },
-  { id: 'contact', title: '13. Contact' },
-] as const
-
 type Props = { params: Promise<Record<string, never>> }
 
+/**
+ * The privacy policy.
+ *
+ * TWO CONTENT SOURCES, in this order:
+ *
+ *  1. A published `cms_pages` row with slug `privacy` replaces the WHOLE body
+ *     with its own rich text. That is the escape hatch for a lawyer-supplied
+ *     document that does not fit the clause structure, and it predates the
+ *     section editor.
+ *  2. Otherwise the clauses come from Pages & Blocks · Privacy policy, where
+ *     each is a section that can be re-worded, hidden or reordered.
+ *
+ * An UNPUBLISHED row still 404s the page, which is the pre-existing "the
+ * policy is being rewritten, do not serve the old one" behaviour.
+ */
 export default async function PrivacyPage({ params }: Props) {
   await params
 
-  const cms = await db.cmsPage.findUnique({
-    where: { slug: 'privacy' },
-  })
+  const [cms, content] = await Promise.all([
+    db.cmsPage.findUnique({ where: { slug: 'privacy' } }),
+    getMasterPageContent('privacy'),
+  ])
 
   if (cms?.isPublished) {
     return (
@@ -47,186 +46,7 @@ export default async function PrivacyPage({ params }: Props) {
     )
   }
 
-  if (cms) {
-    notFound()
-  }
+  if (cms) notFound()
 
-  return (
-    <PolicyLayout slug="privacy" title="Privacy Policy" effectiveLine={`Effective ${EFFECTIVE_DATE} · Version 1.0`} sections={SECTIONS}>
-
-      <PolicySectionBody id="who-we-are" title="1. Who we are">
-        <p>
-          This Privacy Policy explains how Indus Hydraulic Power Trading LLC
-          (&ldquo;Indus Hydraulics&rdquo;, &ldquo;we&rdquo;, &ldquo;us&rdquo;) collects, uses, and
-          protects personal information through indushydraulics.com and our customer portal. We are
-          the data controller for the personal data described below.
-        </p>
-      </PolicySectionBody>
-
-      <PolicySectionBody id="information-we-collect" title="2. Information we collect">
-        <p>We collect personal information in the following situations:</p>
-        <ul className="list-disc pl-5 space-y-1.5">
-          <li>
-            <b>Account creation:</b> name, business email, phone number, company name, role, and
-            shipping/billing addresses you provide.
-          </li>
-          <li>
-            <b>Quotation requests:</b> the part numbers, quantities, application context, and any
-            attachments you submit through the RFQ flow or contact form.
-          </li>
-          <li>
-            <b>Contact form submissions:</b> the fields you submit on the contact page, including
-            inquiry type, company, industry, and message.
-          </li>
-          <li>
-            <b>Operational records:</b> emails we exchange with you about quotes, deliveries,
-            invoices, and warranty claims.
-          </li>
-          <li>
-            <b>Site usage:</b> server logs (IP address, user agent, request timestamps), session
-            cookies required for authentication, and basic analytics about which pages are viewed.
-          </li>
-        </ul>
-        <p>We do not knowingly collect personal data from individuals under 18 years of age.</p>
-      </PolicySectionBody>
-
-      <PolicySectionBody id="why-we-use-your-information" title="3. Why we use your information">
-        <p>We use personal information to:</p>
-        <ul className="list-disc pl-5 space-y-1.5">
-          <li>respond to RFQs and prepare Estimates;</li>
-          <li>process orders, arrange delivery, and handle warranty claims;</li>
-          <li>operate your customer portal account and remember preferences;</li>
-          <li>send transactional emails (quote confirmations, status updates, invoices);</li>
-          <li>send service-related notices about changes to our terms or platform;</li>
-          <li>maintain financial and accounting records as required by UAE law;</li>
-          <li>investigate and prevent fraud, abuse, or security incidents;</li>
-          <li>improve the catalogue, search, and overall site experience.</li>
-        </ul>
-      </PolicySectionBody>
-
-      <PolicySectionBody id="lawful-basis" title="4. Lawful basis">
-        <p>
-          We process personal data on the basis of (a) your explicit consent where applicable, (b)
-          performance of the contract for goods or services you have requested, (c) compliance with
-          legal and regulatory obligations under UAE law, and (d) our legitimate interests in
-          operating and improving the business.
-        </p>
-      </PolicySectionBody>
-
-      <PolicySectionBody id="how-we-store-and-protect-data" title="5. How we store and protect data">
-        <p>
-          Personal data is stored in a Postgres database hosted on Supabase, with encryption at rest
-          and in transit. Access is restricted to authorised staff using individual credentials, and
-          is audit-logged where appropriate. Authentication is handled by Auth.js using secure,
-          HTTP-only session cookies.
-        </p>
-      </PolicySectionBody>
-
-      <PolicySectionBody id="sharing-with-third-parties" title="6. Sharing with third parties">
-        <p>We do not sell personal data. We share information only as necessary with:</p>
-        <ul className="list-disc pl-5 space-y-1.5">
-          <li>
-            <b>Email service:</b> Resend, for delivery of transactional emails (quote confirmations,
-            password resets, contact-form alerts).
-          </li>
-          <li>
-            <b>Hosting and database:</b> Vercel (web hosting) and Supabase (database, file storage),
-            both bound by their respective data-processing agreements.
-          </li>
-          <li>
-            <b>Manufacturers and suppliers:</b> when needed to fulfil an order, raise a warranty
-            claim, or arrange technical support, we may share the minimum information required.
-          </li>
-          <li>
-            <b>Logistics partners:</b> shipping and customs information when arranging delivery.
-          </li>
-          <li>
-            <b>Professional advisers and authorities:</b> auditors, lawyers, banks, and government
-            authorities where required by law or to protect our legal rights.
-          </li>
-        </ul>
-      </PolicySectionBody>
-
-      <PolicySectionBody id="international-transfers" title="7. International transfers">
-        <p>
-          Some of our service providers (including Vercel, Supabase, and Resend) operate from data
-          centres outside the United Arab Emirates. Where this is the case, transfers are governed by
-          the providers&apos; standard contractual safeguards.
-        </p>
-      </PolicySectionBody>
-
-      <PolicySectionBody id="cookies" title="8. Cookies">
-        <p>
-          We use a small number of strictly-necessary cookies, primarily for authentication and basic
-          load balancing. We do not use third-party advertising or behavioural tracking cookies. You
-          can disable cookies in your browser settings, but doing so will prevent sign-in to the
-          customer portal.
-        </p>
-      </PolicySectionBody>
-
-      <PolicySectionBody id="data-retention" title="9. Data retention">
-        <p>
-          We keep personal data for as long as your account is active and for a further period
-          required to comply with UAE accounting and tax record-keeping obligations (currently five
-          years from the relevant transaction). RFQ and quote records may be kept for longer where
-          needed to honour ongoing warranty obligations. Server logs are retained for shorter
-          operational windows (typically 30–90 days).
-        </p>
-      </PolicySectionBody>
-
-      <PolicySectionBody id="your-rights" title="10. Your rights">
-        <p>You have the right, subject to UAE law, to:</p>
-        <ul className="list-disc pl-5 space-y-1.5">
-          <li>access the personal data we hold about you;</li>
-          <li>request correction of inaccurate or incomplete data;</li>
-          <li>request deletion of personal data, subject to legal retention requirements;</li>
-          <li>object to or restrict certain processing;</li>
-          <li>withdraw consent where processing is based on consent;</li>
-          <li>complain to the relevant supervisory authority.</li>
-        </ul>
-        <p>
-          To exercise any of these rights, contact us at the address below. We may need to verify
-          your identity before responding and will reply within 30 days.
-        </p>
-      </PolicySectionBody>
-
-      <PolicySectionBody id="security-incidents" title="11. Security incidents">
-        <p>
-          In the unlikely event of a personal-data breach that is likely to affect you, we will
-          notify the affected account holders without undue delay and outline the steps we are taking
-          and any actions we recommend you take.
-        </p>
-      </PolicySectionBody>
-
-      <PolicySectionBody id="changes-to-this-policy" title="12. Changes to this policy">
-        <p>
-          We may update this Privacy Policy as our practices evolve or as legal requirements change.
-          The current version is always the one published at this URL with the effective date shown
-          above. Material changes will be notified to active account holders by email.
-        </p>
-      </PolicySectionBody>
-
-      <PolicySectionBody id="contact" title="13. Contact">
-        <p>
-          For privacy questions, requests, or complaints, contact us at{' '}
-          <a className="text-ih-accent hover:underline" href="mailto:privacy@indushydraulics.me">
-            privacy@indushydraulics.me
-          </a>
-          . For general enquiries, see the channels on our{' '}
-          <a className="text-ih-accent hover:underline" href="/contact">
-            contact page
-          </a>
-          .
-        </p>
-      </PolicySectionBody>
-
-      <footer className="mt-12 pt-6 border-t border-ih-border text-[12px] text-ih-muted-2 leading-[1.6]">
-        This Privacy Policy is written in plain English as a v1 reference. It is not a substitute
-        for independent legal advice. If your data-protection requirements are governed by a regime
-        outside the UAE (for example, EU GDPR or UK GDPR), please contact us so we can address
-        any additional obligations.
-      </footer>
-    </PolicyLayout>
-  )
+  return <PolicyPage slug="privacy" content={content} />
 }
-
