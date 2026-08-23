@@ -2,13 +2,17 @@ import {
   buildBreadcrumbLd,
   buildItemListLd,
   buildServiceLd,
+  interpolate,
+  list,
   marketBySlug,
   marketDatalistNames,
   marketIndexRegions,
   marketIndexTotals,
+  str,
 } from '@indus/domain'
 import { JsonLd, buildWhatsappHref } from '@indus/ui'
-import MarketsIndex from '../../../components/markets/MarketsIndex'
+import MarketsIndex, { type MarketsIndexCopy } from '../../../components/markets/MarketsIndex'
+import { getMasterPageContent } from '../../../lib/page-content'
 import { buildMarketThumbnail, type MarketThumbnail } from '../../../lib/market-thumbnails'
 import { ORG_ID, SITE_NAME, pageMetadata, urlFor } from '../../../lib/seo'
 import { getStoreSettings } from '../../../lib/store-settings'
@@ -57,7 +61,11 @@ export const revalidate = 3600
 
 export default async function MarketsPage() {
   const regions = marketIndexRegions()
-  const settings = await getStoreSettings()
+  const [settings, content] = await Promise.all([
+    getStoreSettings(),
+    // Section order, visibility and copy, edited under Pages & Blocks.
+    getMasterPageContent('markets'),
+  ])
 
   /*
     126 projections, all on the server. `buildMarketThumbnail` memoises per
@@ -75,6 +83,51 @@ export default async function MarketsPage() {
   }
 
   const cards = regions.flatMap((region) => region.cards)
+
+  /*
+    The counts are live and must stay live: an editor rewriting the standfirst
+    must not freeze "126 destinations" into the sentence. `{markets}`,
+    `{regions}` and `{transitBands}` substitute here, and `{hours}` carries the
+    export desk's opening hours from store settings.
+  */
+  const t = (value: string | null): string | null =>
+    interpolate(value, {
+      markets: totals.destinations,
+      regions: totals.regions,
+      transitBands: totals.withStatedTransit,
+      hours: settings.contactHours ?? 'Mon–Fri 09:00–18:00 GST',
+    })
+
+  const heroCopy = content.values('hero')
+  const manifestCopy = content.values('manifest')
+  const ctaCopy = content.values('cta')
+
+  const pairs = (values: Parameters<typeof str>[0], key: string) =>
+    list<{ label?: string; value?: string }>(values, key)
+      .map((row) => ({ label: row.label ?? '', value: t(row.value ?? '') ?? '' }))
+      .filter((row) => row.label !== '' || row.value !== '')
+
+  const copy: MarketsIndexCopy = {
+    hero: {
+      eyebrow: t(str(heroCopy, 'eyebrow')),
+      heading: t(str(heroCopy, 'heading')),
+      body: t(str(heroCopy, 'body')),
+      primaryCtaLabel: str(heroCopy, 'primary_cta_label'),
+      whatsappCtaLabel: str(heroCopy, 'whatsapp_cta_label'),
+      tiles: pairs(heroCopy, 'tiles'),
+    },
+    manifest: pairs(manifestCopy, 'items'),
+    cta: {
+      eyebrow: t(str(ctaCopy, 'eyebrow')),
+      heading: t(str(ctaCopy, 'heading')),
+      body: t(str(ctaCopy, 'body')),
+      whatsappCtaLabel: str(ctaCopy, 'whatsapp_cta_label'),
+      emailCtaLabel: str(ctaCopy, 'email_cta_label'),
+      phonePrefix: str(ctaCopy, 'phone_prefix'),
+      phoneSuffix: str(ctaCopy, 'phone_suffix'),
+    },
+    order: content.order,
+  }
 
   return (
     <>
@@ -119,6 +172,7 @@ export default async function MarketsPage() {
           whatsappUrl: buildWhatsappHref(settings.contactPhone, 'Export enquiry'),
         }}
         showAuditStrip={process.env.VERCEL_ENV !== 'production'}
+        copy={copy}
       />
     </>
   )
