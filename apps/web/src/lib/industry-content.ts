@@ -2,6 +2,7 @@ import 'server-only'
 import { cache } from 'react'
 import { unstable_cache } from 'next/cache'
 import { db } from '@indus/db'
+import { DESIGNED_INDUSTRY_PAGES } from '@indus/domain'
 
 /**
  * Storefront-facing helpers for the DB-backed Industry rows landed in
@@ -147,6 +148,33 @@ const loadIndustryList = unstable_cache(
   { revalidate: 300, tags: ['industries'] },
 )
 
+/**
+ * The designed pages, shaped as index cards.
+ *
+ * They have no `industries` row — their route is dispatched from the code
+ * registry before the table is read — so without this they would be reachable
+ * only by typing the URL. Position is negative so a designed page leads the
+ * grid: it is the one the paid traffic is pointed at, and the index is ordered
+ * by `position` ascending.
+ *
+ * `id` and `gradient` are the two fields with nothing behind them. `id` is a
+ * synthetic key the grid uses for nothing but React reconciliation, and the
+ * gradient is deliberately null so the card takes the shared default rather
+ * than a colour invented for one page.
+ */
+function designedIndustryCards(): IndustryListItem[] {
+  return DESIGNED_INDUSTRY_PAGES.map((page, i) => ({
+    id: `designed:${page.slug}`,
+    slug: page.slug,
+    name: page.card.name,
+    tagline: page.card.tagline,
+    description: page.card.description,
+    gradient: null,
+    chips: [...page.card.chips],
+    position: -DESIGNED_INDUSTRY_PAGES.length + i,
+  }))
+}
+
 const loadIndustryBySlug = unstable_cache(
   async (slug: string): Promise<IndustryDetail | null> => {
     const ind = await db.industry.findUnique({
@@ -199,7 +227,18 @@ const loadIndustryBySlug = unstable_cache(
   { revalidate: 300, tags: ['industries'] },
 )
 
-export const getIndustryList = cache(loadIndustryList)
+/**
+ * The index grid's rows: the designed pages first, then the published table
+ * rows, in `position` order. Merging here rather than in the page keeps the
+ * grid a single sorted list — the alternative was a second grid above the
+ * first, which reads as two categories of industry when there is only one.
+ */
+export const getIndustryList = cache(async (): Promise<IndustryListItem[]> => {
+  const rows = await loadIndustryList()
+  return [...designedIndustryCards(), ...rows].sort(
+    (a, b) => a.position - b.position || a.name.localeCompare(b.name),
+  )
+})
 export const getIndustryBySlug = cache(async (slug: string) => loadIndustryBySlug(slug))
 
 /** Sitemap helper — slugs + lastModified for the sitemap route. */

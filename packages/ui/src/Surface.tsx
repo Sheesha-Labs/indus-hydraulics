@@ -290,17 +290,32 @@ export function Breadcrumb({ items, className }: { items: readonly BreadcrumbIte
  * inside a bordered, radius-10 container. Produces a hairline-separated set
  * with no double borders — which is why it exists rather than per-cell
  * borders. Used for application areas, method steps, range-by-category.
+ *
+ * `columns` is OPTIONAL, and omitting it is the responsive form: the count then
+ * comes from `grid-cols-*` utilities in `className`, which can carry
+ * breakpoints. Passing the number sets `grid-template-columns` inline, and an
+ * inline value beats every utility — a fixed `columns={4}` with
+ * `sm:grid-cols-2` in the class list silently stays at four on a phone.
+ *
+ * `tone="navy"` inverts the rules for the dark band. The cell fill has to match
+ * the band exactly or the 1px gaps read as seams, which is why the tone lives
+ * on both halves of the pair rather than being a class the caller remembers.
  */
 export function HairlineGrid({
-  columns = 4,
+  columns,
+  tone = 'light',
   className,
   children,
   ...props
-}: React.HTMLAttributes<HTMLDivElement> & { columns?: number }) {
+}: React.HTMLAttributes<HTMLDivElement> & { columns?: number; tone?: 'light' | 'navy' }) {
   return (
     <div
-      className={cn('grid gap-px overflow-hidden rounded-lg border border-ih-border bg-ih-border', className)}
-      style={{ gridTemplateColumns: `repeat(${columns}, minmax(0, 1fr))` }}
+      className={cn(
+        'grid gap-px overflow-hidden rounded-lg border',
+        tone === 'navy' ? 'border-white/15 bg-white/15' : 'border-ih-border bg-ih-border',
+        className
+      )}
+      style={columns ? { gridTemplateColumns: `repeat(${columns}, minmax(0, 1fr))` } : undefined}
       {...props}
     >
       {children}
@@ -308,6 +323,19 @@ export function HairlineGrid({
   )
 }
 
-export function HairlineCell({ className, ...props }: React.HTMLAttributes<HTMLDivElement>) {
-  return <div className={cn('bg-ih-surface px-5 py-[18px]', className)} {...props} />
+export function HairlineCell({
+  tone = 'light',
+  className,
+  ...props
+}: React.HTMLAttributes<HTMLDivElement> & { tone?: 'light' | 'navy' }) {
+  return (
+    <div
+      className={cn(
+        'px-5 py-[18px]',
+        tone === 'navy' ? 'bg-ih-navy' : 'bg-ih-surface',
+        className
+      )}
+      {...props}
+    />
+  )
 }

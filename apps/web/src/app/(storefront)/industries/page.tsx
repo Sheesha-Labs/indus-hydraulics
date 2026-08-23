@@ -12,10 +12,15 @@ export const revalidate = 300
 const FOUNDING_YEAR = 2003
 
 export async function generateMetadata(): Promise<Metadata> {
-  const [activeSkuCount, industryCount] = await Promise.all([
+  // The count comes from `getIndustryList`, not `db.industry.count` — the list
+  // includes the designed pages, which have no table row. Counting the table
+  // would print one number in the meta description and render a different
+  // number of cards on the page.
+  const [activeSkuCount, industries] = await Promise.all([
     db.product.count({ where: { status: 'active' } }),
-    db.industry.count({ where: { isPublished: true } }),
+    getIndustryList(),
   ])
+  const industryCount = industries.length
   const yearsInBusiness = new Date().getFullYear() - FOUNDING_YEAR
   return {
     title: 'Industries We Serve',
