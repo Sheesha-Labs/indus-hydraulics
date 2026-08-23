@@ -38,8 +38,14 @@ function readGender(text: string): Gender | null {
 }
 
 function readThread(text: string): ThreadStandard | null {
+  if (/\bkomatsu\b/i.test(text)) return 'komatsu'
+  // Before SAE and before the oring flag: ORB is a port form.
+  if (/o-?ring\s*boss|\bORB\b/i.test(text)) return 'orb'
+  if (/\bunf\b|\bun\/unf\b/i.test(text)) return 'unf'
   if (/\bmetric\b/i.test(text)) return 'metric'
-  if (/\bbsp[pt]?\b/i.test(text)) return 'bsp'
+  // BSPT before BSP, or the taper is swallowed by the parallel row.
+  if (/\bbspt\b/i.test(text)) return 'bspt'
+  if (/\bbspp?\b/i.test(text)) return 'bsp'
   if (/\bjic\b/i.test(text)) return 'jic'
   if (/\bnpsm\b/i.test(text)) return 'npsm'
   if (/\bnpt\b/i.test(text)) return 'npt'
@@ -84,6 +90,7 @@ function readSeries(text: string): Series | null {
 }
 
 function readKind(text: string): Kind | null {
+  if (/crimp\s*fitting/i.test(text)) return 'crimp-fitting'
   if (/hose\s*fitting/i.test(text)) return 'hose-fitting'
   if (/\badapter\b/i.test(text)) return 'adapter'
   if (/\bcoupling\b/i.test(text)) return 'coupling'
@@ -107,18 +114,14 @@ function allThreads(text: string): ThreadStandard[] {
     ['orfs', /\borfs\b/gi],
     ['jis', /\bjis\b/gi],
     ['sae', /\bsae\b/gi],
+    ['unf', /\bunf\b/gi],
+    ['komatsu', /\bkomatsu\b/gi],
+    ['orb', /o-?ring\s*boss|\bORB\b/gi],
   ]
   for (const [std, re] of patterns) if (re.test(text)) found.push(std)
   return found
 }
 
-/**
- * Coupling family from the category slug.
- *
- * More reliable than the title, because a Guillemin coupling filed under
- * `guillemin-couplings` may not repeat the word in its own title. Category is
- * checked first for that reason.
- */
 /**
  * Parts that sit in a coupling category without being a coupling.
  *
@@ -129,11 +132,26 @@ function allThreads(text: string): ThreadStandard[] {
  * named "Set of Bolts and Spring Washers" as a flange in all four languages.
  */
 function isAccessory(title: string): boolean {
-  return /\b(bolt|washer|screw|nut kit|seal kit|gasket|o-?ring kit|repair kit|spare part|accessor)/i.test(
-    title,
-  )
+  if (
+    /\b(bolt|washer|screw|nut kit|seal kit|gasket|o-?ring kit|repair kit|spare part|accessor)/i.test(
+      title,
+    )
+  ) {
+    return true
+  }
+  // Components that share a shelf with a coupling family but are a different
+  // thing entirely. A hose mender is a splice joining two hose ends; naming it
+  // "KC-Kupplung" because it sits in kc-nipple-fittings describes a coupling
+  // the buyer will not receive. Caught by reading the output, not by a test.
+  return /\b(mender|splice|dust cap|lever ring|nozzle)\b/i.test(title)
 }
 
+/**
+ * Coupling family from the category slug.
+ *
+ * More reliable than the title, because a Guillemin coupling filed under
+ * `guillemin-couplings` need not repeat the word in its own title.
+ */
 function familyFromCategory(slug: string | null | undefined): CouplingFamily | null {
   if (!slug) return null
   if (/storz/.test(slug)) return 'storz'
@@ -146,6 +164,11 @@ function familyFromCategory(slug: string | null | undefined): CouplingFamily | n
   if (/air-coupling/.test(slug)) return 'air-coupling'
   if (/quick-coupl/.test(slug)) return 'quick-coupling'
   if (/flow-iron/.test(slug)) return 'hammer-union'
+  if (/geka|barcelona/.test(slug)) return 'geka'
+  if (/gost/.test(slug)) return 'gost'
+  if (/kc-nipple/.test(slug)) return 'kc'
+  if (/en14420/.test(slug)) return 'en14420-5'
+  if (/metallic-hose-coupling/.test(slug)) return 'met-o-seal'
   return null
 }
 
@@ -159,6 +182,12 @@ function readCouplingFamily(text: string): CouplingFamily | null {
   if (/\bstorz\b/i.test(text)) return 'storz'
   if (/\bbauer\b/i.test(text)) return 'bauer'
   if (/\bguillemin\b/i.test(text)) return 'guillemin'
+  if (/\bgeka\b|\bbarcelona\b/i.test(text)) return 'geka'
+  if (/\bgost\b/i.test(text)) return 'gost'
+  if (/\bmet-?o-?seal\b|\bthorburn\b/i.test(text)) return 'met-o-seal'
+  if (/EN\s*14420/i.test(text)) return 'en14420-5'
+  if (/tank(er|\s*truck)\s*coupling|\bTW\s*coupling\b/i.test(text)) return 'tank-truck'
+  if (/\bKC\b/.test(text)) return 'kc'
   if (/sae\s*(code\s*6[12]\s*)?flange|\bcode\s*6[12]\b/i.test(text)) return 'sae-flange'
   if (/cam[\s-]*(and|&)?[\s-]*groove|camlock|\bcam\s*lock\b/i.test(text)) return 'cam-groove'
   if (/\bferrule\b/i.test(text)) return 'crimp-ferrule'
@@ -185,6 +214,16 @@ function readCouplingType(text: string, family: CouplingFamily | null): string |
     const m = text.match(/\b(\d{3,4})\s*series\b/i)
     return m ? m[1]! : null
   }
+  if (family === 'en14420-5') {
+    // GA (clamp shell) and GI (safety-collar) are the EN 14420-5 forms.
+    const m = text.match(/\b(GA|GI)\b/)
+    return m ? m[1]! : null
+  }
+  if (family === 'met-o-seal') {
+    // Thorburn series codes: T52, UO, SJ, MTS4, MT3TL, TS25.
+    const m = text.match(/\b(T\d{2}|UO|SJ|MTS\d|MT\d[A-Z]{2}|TS\d{2})\b/)
+    return m ? m[1]! : null
+  }
   if (family === 'storz') {
     // Storz sizes are letter codes — A, B, C, D, F — and identify the coupling.
     const m = text.match(/\bstorz\s+([A-F])\b/i)
@@ -195,6 +234,21 @@ function readCouplingType(text: string, family: CouplingFamily | null): string |
 
 /** What the part physically is, where the title names it. */
 function readBody(text: string): BodyType | null {
+  // Most specific first. A "Swivel Nut Branch Tee" is a tee, but a "Cutting
+  // Ring for 24° Cone End Nut" is a cutting ring rather than a nut.
+  if (/cutting\s*ring/i.test(text)) return 'cutting-ring'
+  if (/\bbonded\s*seal\b/i.test(text)) return 'bonded-seal'
+  if (/\bED\s*seal\b/.test(text)) return 'ed-seal'
+  if (/lock\s*nut\b/i.test(text)) return 'lock-nut'
+  if (/wing\s*nut\b/i.test(text)) return 'wing-nut'
+  if (/hexagon(al)?\s*nut|hex\s*nut\b/i.test(text)) return 'hex-nut'
+  if (/nozzle\s*holder/i.test(text)) return 'nozzle-holder'
+  if (/swivel\s*joint/i.test(text)) return 'swivel-joint'
+  // "Male Stud Connector", "Male Stud 45° Elbow" — the DIN 2353 stud end.
+  if (/male\s*stud/i.test(text)) return 'male-stud-connector'
+  if (/\bweld\s*(connector|nipple)\b|butt-?weld|weld-?on/i.test(text)) return 'weld-connector'
+  // "shank" and "hose stem" and "hose tail" are the same barbed component.
+  if (/\bshank\b|hose\s*stem\b|hose\s*tail\b|hose\s*nipple\b/i.test(text)) return 'hose-shank'
   if (/\bbulkhead\b/i.test(text)) return 'bulkhead'
   if (/\bbanjo\b/i.test(text)) return 'banjo'
   if (/\bcross\b/i.test(text)) return 'cross'
@@ -204,6 +258,7 @@ function readBody(text: string): BodyType | null {
   if (/\bcap\b/i.test(text)) return 'cap'
   if (/\bnipple\b/i.test(text)) return 'nipple'
   if (/\bunion\b/i.test(text)) return 'union'
+  if (/\bflange\b/i.test(text)) return 'flange'
   return null
 }
 
@@ -218,13 +273,31 @@ function readBody(text: string): BodyType | null {
  *     happens when the spec describes the stud end and the title the port end.
  */
 function readTwoEnded(title: string, threadSpec: string | null): boolean {
+  // Strong signals only, and both are in the TITLE.
+  //
+  // This deliberately no longer fires on a title/spec disagreement. That was a
+  // weak signal with a catastrophic failure mode: when the title then could
+  // not be split, the product was declined outright. Specs routinely name a
+  // standard alongside the reference it derives from — "SAE J1926 O-Ring
+  // Boss", "JIC 37° / SAE J514" — so the disagreement usually meant the spec
+  // was more verbose, not that the part had two ends. Measured: it silently
+  // declined 13 of 16 jic-adapters and every ORFS crimp fitting.
   if (/\s[x×]\s/i.test(title)) return true
-  const inTitle = allThreads(title)
-  if (inTitle.length > 1) return true
-  const inSpec = threadSpec ? allThreads(threadSpec) : []
-  if (inSpec.length > 1) return true
-  if (inTitle.length === 1 && inSpec.length === 1 && inTitle[0] !== inSpec[0]) return true
-  return false
+  void threadSpec
+  return countDistinctEnds(allThreads(title)) > 1
+}
+
+/**
+ * Distinct connection standards, collapsing ones that co-occur by definition.
+ *
+ * An O-Ring Boss port IS an SAE port (J1926), so a title naming both describes
+ * one end, not two. Counting them separately is what made "SAE O-Ring Boss
+ * Male Crimp Fitting" look like an adapter between two standards.
+ */
+function countDistinctEnds(found: ThreadStandard[]): number {
+  const set = new Set(found)
+  if (set.has('orb')) set.delete('sae')
+  return set.size
 }
 
 /**
@@ -251,6 +324,10 @@ function splitEnds(title: string): [string, string] | null {
     orfs: /\borfs\b/i,
     jis: /\bjis\b/i,
     sae: /\bsae\b/i,
+    bspt: /\bbspt\b/i,
+    unf: /\bunf\b/i,
+    komatsu: /\bkomatsu\b/i,
+    orb: /o-?ring\s*boss|\bORB\b/i,
   }
   const idx = title.search(patterns[threads[1]!])
   if (idx <= 0) return null
@@ -306,6 +383,10 @@ export function readFittingAttributes(input: {
     return {
       couplingFamily,
       couplingType: readCouplingType(title, couplingFamily),
+      // A family member can still be a cap, a shank or a nut. Omitting the
+      // body here is what named "Geka Cap" as "Geka-Kupplung" — a cap
+      // described as a coupling.
+      body,
       gender: readGender(title),
       // Only where the title states one explicitly — many couplings have a
       // threaded end, and where they do it belongs in the name.
@@ -336,7 +417,10 @@ export function readFittingAttributes(input: {
 
   return {
     gender: (genderSpec ? readGender(genderSpec) : null) ?? readGender(title),
-    thread: (threadSpec ? readThread(threadSpec) : null) ?? readThread(title),
+    // Title first. The alternate name mirrors what we publish, and where a
+    // spec names a different standard it is usually describing the other
+    // end or the reference the thread derives from.
+    thread: readThread(title) ?? (threadSpec ? readThread(threadSpec) : null),
     seat: (sealSpec ? readSeat(sealSpec) : null) ?? readSeat(title),
     configuration,
     series: readSeries(title),

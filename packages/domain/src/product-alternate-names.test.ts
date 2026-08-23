@@ -93,14 +93,39 @@ describe('two-ended adapters', () => {
     expect(buildAlternateNames(a).length).toBe(4)
   })
 
-  it('declines when two standards are present but the title cannot be split', () => {
-    // "Male Stud Connector ORFS" with a BSPP spec names two standards and
-    // gives no way to say which end is which. Silence is still correct here.
+  it('names by the title when only the spec hints at a second standard', () => {
+    // The alternate name should be exactly as complete as the English title,
+    // not more cautious than it. This product is published as "Male Stud
+    // Connector ORFS"; a German buyer searching the ORFS stud connector should
+    // find it, and saying so introduces no error the English does not already
+    // carry.
+    //
+    // Treating a title/spec disagreement as two-ended was measured to decline
+    // 13 of 16 jic-adapters and every ORFS crimp fitting, because specs name a
+    // standard alongside the reference it derives from ("JIC 37° / SAE J514").
     const a = readFittingAttributes({
       title: 'Male Stud Connector ORFS',
       specs: [{ label: 'Thread Form', value: 'BSPP G1/8 to G2 (parallel)' }],
     })
-    expect(buildAlternateNames(a)).toEqual([])
+    expect(a.thread).toBe('orfs')
+    expect(buildAlternateNames(a).length).toBe(4)
+  })
+
+  it('still declines when the TITLE itself names two standards without a separator', () => {
+    // This is the genuine wrong-part case the gate exists for.
+    const a = readFittingAttributes({ title: 'Male Stud Elbow NPT (BSP)' })
+    expect(a.endB).toBeTruthy()
+  })
+
+  it('treats an O-Ring Boss port as one end, not two', () => {
+    // ORB is an SAE port form (J1926), so a title naming both describes one
+    // connection. Counting them separately made every SAE ORB crimp fitting
+    // look like an adapter and decline.
+    const a = readFittingAttributes({
+      title: 'SAE O-Ring Boss Male Crimp Fitting for Braided Hose',
+    })
+    expect(a.endB).toBeFalsy()
+    expect(buildAlternateNames(a).length).toBe(4)
   })
 
   it('still names a single-standard part', () => {
@@ -144,6 +169,25 @@ describe('coupling families', () => {
       title: 'Set of Bolts and Spring Washers',
       categorySlug: 'sae-flange-fittings',
     })
+    expect(a.couplingFamily).toBeFalsy()
+    expect(buildAlternateNames(a)).toEqual([])
+  })
+
+  it('keeps the body when the part is a family member but not a coupling', () => {
+    // "Geka Cap" was named "Geka-Kupplung" — a cap described as a coupling.
+    // The family early-return dropped the body entirely.
+    const a = readFittingAttributes({ title: 'Geka Cap', categorySlug: 'barcelona-geka-couplings' })
+    expect(a.couplingFamily).toBe('geka')
+    expect(a.body).toBe('cap')
+    const de = buildAlternateNames(a).find((n) => n.lang === 'de')!.name
+    expect(de).toContain('Verschlusskappe')
+  })
+
+  it('declines a component that merely shares a shelf with a family', () => {
+    // A hose mender is a splice joining two hose ends. It sits in
+    // kc-nipple-fittings and was named "KC-Kupplung", describing a coupling
+    // the buyer would not receive.
+    const a = readFittingAttributes({ title: 'Hose Mender', categorySlug: 'kc-nipple-fittings' })
     expect(a.couplingFamily).toBeFalsy()
     expect(buildAlternateNames(a)).toEqual([])
   })
