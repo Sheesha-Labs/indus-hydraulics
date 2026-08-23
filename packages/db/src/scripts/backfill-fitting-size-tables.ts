@@ -90,6 +90,8 @@ type Payload = {
   duplicateRowsDropped: string[]
   /** Part numbers the SOURCE prints twice against different sizes. */
   sourceConflicts?: string[]
+  /** Columns present in the source that this payload does not publish. */
+  columnsNotPublished?: string[]
   products: Entry[]
 }
 
@@ -266,6 +268,10 @@ async function main() {
         `against different sizes — the first printing is loaded, the second is not:`,
     )
     for (const c of payload.sourceConflicts) console.log(`      ${c}`)
+  }
+  if (payload.columnsNotPublished && payload.columnsNotPublished.length > 0) {
+    console.log(`  \u00b7 ${payload.columnsNotPublished.length} source column(s) not published:`)
+    for (const c of payload.columnsNotPublished) console.log(`      ${c}`)
   }
   if (payload.duplicateRowsDropped.length > 0) {
     console.log(
