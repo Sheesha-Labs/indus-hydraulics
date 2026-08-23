@@ -49,6 +49,11 @@ export default async function SubPageKindIndex({ params }: Props) {
   const live = rows.filter((r) => r.live)
   const held = rows.filter((r) => !r.live)
 
+  const storefront = (process.env.NEXT_PUBLIC_BASE_URL ?? 'https://indushydraulics.com').replace(
+    /\/$/,
+    '',
+  )
+
   return (
     <AdminPageShell
       title={kindDef.label}
@@ -73,6 +78,7 @@ export default async function SubPageKindIndex({ params }: Props) {
         rows={live}
         kind={kind}
         pathPrefix={kindDef.publicPath}
+        storefront={storefront}
       />
       <SubPageTable
         heading={kind === 'market' ? 'Not yet released' : 'Not published'}
@@ -85,6 +91,7 @@ export default async function SubPageKindIndex({ params }: Props) {
         rows={held}
         kind={kind}
         pathPrefix={kindDef.publicPath}
+        storefront={storefront}
       />
     </AdminPageShell>
   )
@@ -103,6 +110,7 @@ function SubPageTable({
   rows,
   kind,
   pathPrefix,
+  storefront,
   emptyMessage,
   note,
 }: {
@@ -110,6 +118,7 @@ function SubPageTable({
   rows: Row[]
   kind: string
   pathPrefix: string
+  storefront: string
   emptyMessage: string
   note?: string
 }) {
@@ -142,9 +151,18 @@ function SubPageTable({
               key={row.slug}
               className={`grid grid-cols-[1fr_70px_120px_70px] items-center bg-ih-surface px-4 py-3 ${i > 0 ? 'border-t border-ih-border' : ''}`}
             >
+              {/* The NAME is the link to the editor, the way every other admin
+                  list works (products, blog). A row whose only target was a
+                  four-letter "Edit" at the far right read as inert — the thing
+                  a reader points at is the title. */}
               <div className="min-w-0">
-                <div className="truncate text-[13px] font-medium text-ih-ink">{row.name}</div>
-                <div className="font-mono text-[11px] text-ih-muted">
+                <Link
+                  href={`/admin/pages/sub/${kind}/${row.slug}`}
+                  className="block truncate text-[13px] font-medium text-ih-ink hover:text-ih-accent"
+                >
+                  {row.name}
+                </Link>
+                <div className="truncate font-mono text-[11px] text-ih-muted">
                   {pathPrefix}/{row.slug}
                 </div>
               </div>
@@ -154,13 +172,26 @@ function SubPageTable({
                   ? row.updatedAt.toLocaleDateString('en-GB', { day: 'numeric', month: 'short' })
                   : '—'}
               </div>
+              {/* The trailing column is the PUBLIC page, not a second route to
+                  the editor. Two links to the same place in one row is noise;
+                  the one thing the row could not otherwise reach is the page
+                  itself. Only for a page that is actually reachable, and
+                  absolute — one app serves both surfaces, so a root-relative
+                  storefront path from inside the console is the shape
+                  `admin-path-prefix.test.ts` exists to catch. */}
               <div className="flex justify-end">
-                <Link
-                  href={`/admin/pages/sub/${kind}/${row.slug}`}
-                  className="font-mono text-[11px] text-ih-accent hover:underline"
-                >
-                  Edit
-                </Link>
+                {row.live ? (
+                  <a
+                    href={`${storefront}${pathPrefix}/${row.slug}`}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="font-mono text-[11px] text-ih-accent hover:underline"
+                  >
+                    View ↗
+                  </a>
+                ) : (
+                  <span className="font-mono text-[11px] text-ih-muted-2">—</span>
+                )}
               </div>
             </div>
           ))}

@@ -54,6 +54,11 @@ export default async function AdminPagesIndex({ params }: Props) {
   // rather than implying an edit history that does not exist.
   const editedByKey = new Map(edited.map((row) => [row.key, row.updatedAt]))
 
+  const storefront = (process.env.NEXT_PUBLIC_BASE_URL ?? 'https://indushydraulics.com').replace(
+    /\/$/,
+    '',
+  )
+
   return (
     <AdminPageShell
       title="Pages & Blocks"
@@ -186,11 +191,15 @@ export default async function AdminPagesIndex({ params }: Props) {
                 key={page.id}
                 className={`grid grid-cols-[1fr_100px_110px_70px] items-center bg-ih-surface px-4 py-3.5 ${i > 0 ? 'border-t border-ih-border' : ''}`}
               >
+                {/* Title is the link, matching every other admin list. */}
                 <div className="min-w-0">
-                  <div className="flex items-center gap-1.5 text-[13px] font-medium text-ih-ink">
+                  <Link
+                    href={`/admin/pages/static/${page.id}`}
+                    className="flex items-center gap-1.5 text-[13px] font-medium text-ih-ink hover:text-ih-accent"
+                  >
                     <FileText size={13} strokeWidth={1.7} aria-hidden="true" />
                     <span className="truncate">{page.title}</span>
-                  </div>
+                  </Link>
                   <div className="font-mono text-[11px] text-ih-muted">/{page.slug}</div>
                 </div>
                 <div className="flex justify-center">
@@ -207,13 +216,23 @@ export default async function AdminPagesIndex({ params }: Props) {
                     year: 'numeric',
                   })}
                 </div>
+                {/* The public page, not a second route to the editor.
+                    Absolute, not root-relative: one app serves both surfaces,
+                    so a bare `/slug` from inside the console is exactly the
+                    shape `admin-path-prefix.test.ts` exists to catch. */}
                 <div className="flex justify-end">
-                  <Link
-                    href={`/admin/pages/static/${page.id}`}
-                    className="font-mono text-[11px] text-ih-accent hover:underline"
-                  >
-                    Edit
-                  </Link>
+                  {page.isPublished ? (
+                    <a
+                      href={`${storefront}/${page.slug}`}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="font-mono text-[11px] text-ih-accent hover:underline"
+                    >
+                      View ↗
+                    </a>
+                  ) : (
+                    <span className="font-mono text-[11px] text-ih-muted-2">—</span>
+                  )}
                 </div>
               </div>
             ))}
@@ -232,7 +251,7 @@ export default async function AdminPagesIndex({ params }: Props) {
         </Link>
         .{' '}
         <a
-          href={process.env.NEXT_PUBLIC_BASE_URL ?? 'https://indushydraulics.com'}
+          href={storefront}
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-1 text-ih-accent hover:underline"
