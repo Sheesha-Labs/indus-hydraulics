@@ -65,33 +65,136 @@ describe('readFittingAttributes', () => {
 })
 
 describe('two-ended adapters', () => {
-  it('declines a part that joins two thread standards', () => {
-    // This model holds one thread. "ORFS X Metric" is ORFS at one end and
-    // metric at the other, and naming it by either sends the wrong part.
+  it('names both ends rather than picking one', () => {
+    // Previously declined outright. Naming it by either end alone sends the
+    // wrong part; naming it by both says what it actually does.
     const a = readFittingAttributes({ title: 'Male Connector m ORFS X m Metric Flat' })
-    expect(a.twoEnded).toBe(true)
-    expect(buildAlternateNames(a)).toEqual([])
+    expect(a.endB).toBeTruthy()
+    expect(a.thread).toBe('orfs')
+    expect(a.endB?.thread).toBe('metric')
+
+    const names = buildAlternateNames(a)
+    expect(names.length).toBe(4)
+    const de = names.find((n) => n.lang === 'de')!.name
+    // Both standards present, in order, joined by the German preposition.
+    expect(de).toMatch(/ORFS/)
+    expect(de).toMatch(/metrisch/)
+    expect(de.indexOf('ORFS')).toBeLessThan(de.indexOf('metrisch'))
+    expect(de).toContain('auf')
   })
 
-  it('declines when the title and the specs name different standards', () => {
-    // The spec describes the stud end, the title the port end. Whichever
-    // parsed first would have won, silently.
+  it('reads each end separately across the separator', () => {
+    const a = readFittingAttributes({
+      title: 'Standard Type B: Female Coupler × Male NPT Cam and Groove Coupling',
+    })
+    // Camlock is a coupling family, so it is named as one rather than by
+    // thread — the family wins over the two-ended path.
+    expect(a.couplingFamily).toBe('cam-groove')
+    expect(buildAlternateNames(a).length).toBe(4)
+  })
+
+  it('declines when two standards are present but the title cannot be split', () => {
+    // "Male Stud Connector ORFS" with a BSPP spec names two standards and
+    // gives no way to say which end is which. Silence is still correct here.
     const a = readFittingAttributes({
       title: 'Male Stud Connector ORFS',
       specs: [{ label: 'Thread Form', value: 'BSPP G1/8 to G2 (parallel)' }],
     })
-    expect(a.twoEnded).toBe(true)
     expect(buildAlternateNames(a)).toEqual([])
-  })
-
-  it('declines when two standards appear in one title', () => {
-    expect(readFittingAttributes({ title: 'Male Stud Elbow NPT (BSP)' }).twoEnded).toBe(true)
   })
 
   it('still names a single-standard part', () => {
     const a = readFittingAttributes(DKOL_45)
-    expect(a.twoEnded).toBe(false)
+    expect(a.endB).toBeFalsy()
     expect(buildAlternateNames(a).length).toBe(4)
+  })
+})
+
+describe('coupling families', () => {
+  it('names a Storz coupling, which has no thread at all', () => {
+    const a = readFittingAttributes({ title: 'Storz FDC UL Listed-H. Anodized' })
+    expect(a.couplingFamily).toBe('storz')
+    const names = buildAlternateNames(a)
+    expect(names.length).toBe(4)
+    expect(names.find((n) => n.lang === 'de')!.name).toContain('Storz-Kupplung')
+    expect(names.find((n) => n.lang === 'fr')!.name).toContain('raccord Storz')
+  })
+
+  it('keeps the Camlock type designation verbatim', () => {
+    const a = readFittingAttributes({
+      title: 'Standard Type C: Female Coupler × Hose Shank Cam and Groove Coupling',
+    })
+    // Only the letter is stored; the word in front of it is per-language.
+    expect(a.couplingType).toBe('C')
+    const names = buildAlternateNames(a)
+    expect(names.find((n) => n.lang === 'de')!.name).toContain('Typ C')
+    expect(names.find((n) => n.lang === 'fr')!.name).toContain('type C')
+    expect(names.find((n) => n.lang === 'es')!.name).toContain('tipo C')
+    expect(names.find((n) => n.lang === 'it')!.name).toContain('tipo C')
+    // "Typ" is German and must not leak into the Romance languages.
+    for (const lang of ['fr', 'es', 'it'] as const) {
+      expect(names.find((n) => n.lang === lang)!.name).not.toContain('Typ ')
+    }
+  })
+
+  it('does not name an accessory after the shelf it sits on', () => {
+    // A category is a shelf, not a description. This exact title was named
+    // "SAE-Flansch" in all four languages before the accessory guard.
+    const a = readFittingAttributes({
+      title: 'Set of Bolts and Spring Washers',
+      categorySlug: 'sae-flange-fittings',
+    })
+    expect(a.couplingFamily).toBeFalsy()
+    expect(buildAlternateNames(a)).toEqual([])
+  })
+
+  it('names a crimp ferrule', () => {
+    const a = readFittingAttributes({ title: 'Skive Crimp Ferrule for R9 Hose' })
+    expect(a.couplingFamily).toBe('crimp-ferrule')
+    expect(buildAlternateNames(a).find((n) => n.lang === 'de')!.name).toContain('Presshülse')
+  })
+})
+
+describe('body types', () => {
+  it('names a cap by what it is, not by its thread alone', () => {
+    // Declined before: thread plus one attribute. A Verschlusskappe is a cap
+    // whatever it screws onto, and that is what a buyer searches.
+    const a = readFittingAttributes({ title: 'Swivel Cap JIC' })
+    expect(a.body).toBe('cap')
+    const names = buildAlternateNames(a)
+    expect(names.find((n) => n.lang === 'de')!.name).toContain('Verschlusskappe')
+    // "bouchon femelle" already says female; adding the gender word produced
+    // "femelle JIC bouchon femelle", which reads as a mistake.
+    const fr = names.find((n) => n.lang === 'fr')!.name
+    expect(fr).toContain('bouchon femelle')
+    expect(fr.match(/femelle/g)).toHaveLength(1)
+  })
+
+  it('names a bulkhead fitting', () => {
+    const a = readFittingAttributes({ title: 'Bulkhead Elbow Union Metric' })
+    expect(a.body).toBe('bulkhead')
+    expect(buildAlternateNames(a).find((n) => n.lang === 'es')!.name).toContain('pasamuros')
+  })
+
+  it('distinguishes a plug from a cap across languages', () => {
+    const plug = readFittingAttributes({ title: 'Blanking Plug for Ports with ED Seal, BSP' })
+    expect(plug.body).toBe('plug')
+    const de = buildAlternateNames(plug).find((n) => n.lang === 'de')
+    if (de) expect(de.name).toContain('Verschlussstopfen')
+  })
+})
+
+describe('SAE', () => {
+  it('recognises SAE as a thread standard', () => {
+    const a = readFittingAttributes({ title: '90° SAE Female 45° Cone Hose Fitting' })
+    expect(a.thread).toBe('sae')
+    expect(a.seat).toBe('cone-45')
+    expect(buildAlternateNames(a).length).toBe(4)
+  })
+
+  it('reads an inverted flare as its own seat, not a 45° cone', () => {
+    const a = readFittingAttributes({ title: '45° SAE Inverted Flare Hose Fitting' })
+    expect(a.seat).toBe('inverted-flare')
   })
 })
 
