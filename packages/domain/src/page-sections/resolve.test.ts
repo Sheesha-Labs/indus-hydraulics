@@ -340,3 +340,31 @@ describe('sub-pages', () => {
     expect(resolved).toHaveLength(def.sections.length)
   })
 })
+
+describe('brand sub-pages', () => {
+  test('the brand template is reachable and its copy fields are overrides too', () => {
+    const def = subPageDef('brand', { name: 'Eaton', slug: 'eaton' })
+    expect(def.path).toBe('/brands/eaton')
+    for (const section of def.sections) {
+      for (const field of section.fields) {
+        expect(
+          section.defaults[field.key] ?? null,
+          `${section.key}/${field.key} ships a value instead of an override`,
+        ).toBeNull()
+      }
+    }
+  })
+
+  test('the two kinds do not share a content key', () => {
+    expect(subPageContentKey('brand', 'eaton')).toBe('brand/eaton')
+    expect(subPageContentKey('brand', 'eaton')).not.toBe(subPageContentKey('market', 'eaton'))
+  })
+
+  test('every kind in the registry has a template', () => {
+    for (const kind of SUBPAGE_KINDS) {
+      const def = subPageDef(kind.kind, { name: 'X', slug: 'x' })
+      expect(def.sections.length, `${kind.kind} has no bands`).toBeGreaterThan(0)
+      expect(def.path.startsWith(kind.publicPath)).toBe(true)
+    }
+  })
+})
