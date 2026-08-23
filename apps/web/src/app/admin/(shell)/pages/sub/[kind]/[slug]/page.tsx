@@ -2,9 +2,10 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { ChevronLeft, ExternalLink } from 'lucide-react'
-import { getSubPageKind, isSubPageKind, marketBySlug, releasedMarketPage } from '@indus/domain'
+import { getSubPageKind, isSubPageKind } from '@indus/domain'
 import AdminPageShell from '../../../../../../../components/admin/AdminPageShell'
 import { getSubPageContentFresh } from '../../../../../../../lib/page-content'
+import { findSubPageRecord } from '../../../../../../../lib/sub-page-records'
 import { requireStaffRole } from '../../../../../../../lib/staff-session'
 import { ROLES } from '../../../../../../../lib/rbac'
 import SubPageEditorClient from './SubPageEditorClient'
@@ -14,9 +15,10 @@ export const dynamic = 'force-dynamic'
 type Props = { params: Promise<{ kind: string; slug: string }> }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { slug } = await params
-  const market = marketBySlug(slug)
-  return { title: market ? `${market.name} — Pages & Blocks` : 'Pages & Blocks' }
+  const { kind, slug } = await params
+  if (!isSubPageKind(kind)) return { title: 'Pages & Blocks' }
+  const record = await findSubPageRecord(kind, slug)
+  return { title: record ? `${record.name} — Pages & Blocks` : 'Pages & Blocks' }
 }
 
 /**
@@ -34,11 +36,10 @@ export default async function SubPageEditorRoute({ params }: Props) {
   const kindDef = getSubPageKind(kind)
   if (!kindDef) notFound()
 
-  const market = marketBySlug(slug)
-  if (!market) notFound()
+  const record = await findSubPageRecord(kind, slug)
+  if (!record) notFound()
 
-  const content = await getSubPageContentFresh(kind, { name: market.name, slug: market.slug })
-  const released = releasedMarketPage(slug) !== null
+  const content = await getSubPageContentFresh(kind, { name: record.name, slug: record.slug })
 
   const storefront = (process.env.NEXT_PUBLIC_BASE_URL ?? 'https://indushydraulics.com').replace(
     /\/$/,
@@ -48,7 +49,7 @@ export default async function SubPageEditorRoute({ params }: Props) {
 
   return (
     <AdminPageShell
-      title={market.name}
+      title={record.name}
       breadcrumbs={
         <Link
           href={kindDef.adminPath}
@@ -70,29 +71,42 @@ export default async function SubPageEditorRoute({ params }: Props) {
       }
       bodyClassName="max-w-[900px]"
     >
-      {released ? (
-        <p className="mb-5 text-[13px] leading-[1.6] text-ih-ink-2">
-          Drag a band to move it, use the eye to hide one, and open it to override a heading. Every
-          field here is an override — leave it blank and the band keeps the wording the template
-          builds from the market record.
-        </p>
-      ) : (
+      <p className="mb-5 text-[13px] leading-[1.6] text-ih-ink-2">
+        Drag a band to move it, use the eye to hide one, and open it to override a heading. Every
+        field here is an override — leave it blank and the band keeps the wording the template
+        builds from the {kind === 'market' ? 'market' : 'brand'} record.
+      </p>
+
+      {record.live ? null : (
         <div className="mb-5 rounded-lg border border-ih-warning bg-ih-warning-soft px-4 py-3">
           <p className="text-[13px] leading-[1.55] text-ih-warning-ink">
-            This market renders the plain layout, not the designed template — its regulatory copy
-            has not been signed off by a forwarder yet, so the sections below are not live. Edits
-            save and will apply the moment it is released. See{' '}
-            <Link href="/admin/markets" className="underline">
-              Export markets
-            </Link>{' '}
-            for the review queue.
+            {kind === 'market' ? (
+              <>
+                This market renders the plain layout, not the designed template — its regulatory
+                copy has not been signed off by a forwarder yet, so the bands below are not live.
+                Edits save and apply the moment it is released. See{' '}
+                <Link href="/admin/markets" className="underline">
+                  Export markets
+                </Link>{' '}
+                for the review queue.
+              </>
+            ) : (
+              <>
+                This brand is unpublished, so its page is not reachable. Edits save and apply the
+                moment it is published under{' '}
+                <Link href="/admin/brands" className="underline">
+                  Catalogue · Brands
+                </Link>
+                .
+              </>
+            )}
           </p>
         </div>
       )}
 
       <SubPageEditorClient
         pageId={`${kind}:${slug}`}
-        pageLabel={market.name}
+        pageLabel={record.name}
         path={path}
         usingDefaults={content.usingDefaults}
         seeds={{}}

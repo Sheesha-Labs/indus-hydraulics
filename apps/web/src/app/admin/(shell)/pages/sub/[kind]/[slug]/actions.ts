@@ -16,6 +16,7 @@ import { revalidatePath } from 'next/cache'
 import { db } from '@indus/db'
 import {
   defaultDocument,
+  getSubPageKind,
   isSubPageKind,
   subPageContentKey,
   subPageDef,
@@ -73,7 +74,12 @@ async function persist(
   }
 
   invalidatePageContent()
-  revalidatePath(`/markets/${slug}`)
+  // The public path comes from the kind registry rather than a literal — a
+  // hardcoded `/markets/${slug}` here would silently purge nothing once a
+  // second kind existed, and a missed purge looks exactly like a cache that
+  // has not expired.
+  const publicPath = getSubPageKind(kind)?.publicPath
+  if (publicPath) revalidatePath(`${publicPath}/${slug}`)
   revalidatePath(`/admin/pages/sub/${kind}/${slug}`)
   revalidatePath(`/admin/pages/sub/${kind}`)
   return { status: 'ok', message: 'Saved.' }

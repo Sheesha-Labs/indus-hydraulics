@@ -21,7 +21,7 @@ import type { MasterPageDef, SectionDef, SimpleFieldDef } from './types'
  * makes `subPageDef`'s switch fail to compile until the new kind has a
  * template — which is the point of writing it exhaustively.
  */
-export type SubPageKind = 'market'
+export type SubPageKind = 'market' | 'brand'
 
 export type SubPageKindDef = {
   kind: SubPageKind
@@ -48,6 +48,15 @@ export const SUBPAGE_KINDS: readonly SubPageKindDef[] = [
     description:
       'One landing per export market, built from a shared template. Reorder its bands, hide the ones a market does not need, and override any heading.',
     itemLabel: 'market page',
+  },
+  {
+    kind: 'brand',
+    label: 'Brands',
+    publicPath: '/brands',
+    adminPath: '/admin/pages/sub/brand',
+    description:
+      'One page per partner brand, built from a shared template. Reorder its bands, hide the ones a brand has nothing to fill, and override any heading. The brand’s own facts — description, specialist, figures, case studies — are edited under Catalogue · Brands.',
+    itemLabel: 'brand page',
   },
 ]
 
@@ -211,6 +220,87 @@ export const MARKET_SECTIONS: readonly SectionDef[] = [
   },
 ]
 
+// ── the brand template ───────────────────────────────────────────────────
+
+export const BRAND_SECTIONS: readonly SectionDef[] = [
+  {
+    key: 'hero',
+    label: 'Hero',
+    description: 'The navy band: name, description, badges and the specialist card.',
+    locked: true,
+    dataNote:
+      'The name, description, country, partner badge and specialist all come from the brand record under Catalogue · Brands. Use {brand} in a heading for the brand name.',
+    fields: [
+      override('heading', 'Headline'),
+      overrideBody('description', 'Description'),
+      override('specialist_label', 'Specialist card eyebrow'),
+      override('specialist_cta_label', 'Specialist card button', { max: 60 }),
+    ],
+    defaults: {
+      heading: null,
+      description: null,
+      specialist_label: null,
+      specialist_cta_label: null,
+    },
+  },
+  structural(
+    'stats',
+    'Figures strip',
+    'Lead time, largest install, partner-since.',
+    'Each cell renders only when the brand record carries that figure, so a brand with none shows no strip at all.',
+  ),
+  {
+    key: 'series',
+    label: 'Product series',
+    description: 'The categories this brand’s catalogue falls under.',
+    dataNote: 'The cards are the categories this brand has active products in.',
+    fields: [override('heading', 'Heading')],
+    defaults: { heading: null },
+  },
+  {
+    key: 'top_skus',
+    label: 'Top SKUs',
+    description: 'Four products, and the link to the rest.',
+    dataNote: 'The cards are this brand’s active products.',
+    fields: [override('heading', 'Heading'), override('cta_label', 'Link text', { max: 60 })],
+    defaults: { heading: null, cta_label: null },
+  },
+  structural(
+    'case_studies',
+    'Case studies',
+    'The curated installs for this brand.',
+    'The cases come from the brand record. The band hides itself when a brand has none.',
+  ),
+  {
+    key: 'resources',
+    label: 'Datasheets and resources',
+    description: 'Downloadable documents attached to this brand’s products.',
+    dataNote: 'The documents are the ones attached to this brand’s products.',
+    fields: [override('heading', 'Heading')],
+    defaults: { heading: null },
+  },
+  {
+    key: 'lead',
+    label: 'Closing call to action',
+    description: 'The lead-capture panel at the foot of the page.',
+    dataNote:
+      'The WhatsApp and email links build from the values in System · Settings, and each opener is pre-framed with the brand name.',
+    fields: [override('heading', 'Heading'), overrideBody('body', 'Body')],
+    defaults: { heading: null, body: null },
+  },
+]
+
+/** The definition for one brand's page. */
+export function brandPageDef(record: { name: string; slug: string }): MasterPageDef {
+  return {
+    key: record.slug,
+    label: record.name,
+    path: `/brands/${record.slug}`,
+    description: `The brand page for ${record.name}.`,
+    sections: [...BRAND_SECTIONS],
+  }
+}
+
 /** The definition for one market's page. */
 export function marketPageDef(record: { name: string; slug: string }): MasterPageDef {
   return {
@@ -230,6 +320,8 @@ export function subPageDef(
   switch (kind) {
     case 'market':
       return marketPageDef(record)
+    case 'brand':
+      return brandPageDef(record)
     // Every kind in SUBPAGE_KINDS has a case; the switch is exhaustive and the
     // type checker enforces it as kinds are added.
     default: {

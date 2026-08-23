@@ -2,8 +2,9 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { ExternalLink, Images, FileText, Plus } from 'lucide-react'
 import { db } from '@indus/db'
-import { MASTER_PAGES, SUBPAGE_KINDS, marketsOrdered, masterContentKey } from '@indus/domain'
+import { MASTER_PAGES, SUBPAGE_KINDS, masterContentKey } from '@indus/domain'
 import AdminPageShell from '../../../../components/admin/AdminPageShell'
+import { countSubPageRecords } from '../../../../lib/sub-page-records'
 
 export const metadata: Metadata = { title: 'Pages & Blocks — Indus Admin' }
 
@@ -29,7 +30,7 @@ type Props = { params: Promise<Record<string, never>> }
 export default async function AdminPagesIndex({ params }: Props) {
   await params
 
-  const [standalone, heroSlideCount, edited, subEditedByKind] = await Promise.all([
+  const [standalone, heroSlideCount, edited, subEditedByKind, totalByKind] = await Promise.all([
     db.cmsPage.findMany({ orderBy: { updatedAt: 'desc' } }),
     db.homepageHeroSlide.count(),
     db.pageContent.findMany({
@@ -41,13 +42,13 @@ export default async function AdminPagesIndex({ params }: Props) {
       where: { kind: { in: SUBPAGE_KINDS.map((k) => k.kind) } },
       _count: { _all: true },
     }),
+    countSubPageRecords(SUBPAGE_KINDS.map((k) => k.kind)),
   ])
 
-  const editedCount = new Map(subEditedByKind.map((row) => [row.kind, row._count._all]))
-  // How many pages of each kind EXIST, against how many have been touched.
-  // A count of records alone would read as "12 markets edited" on a section
+  // How many pages of each kind EXIST, against how many have been touched. A
+  // count of records alone would read as "126 markets edited" on a section
   // nobody has opened.
-  const totalByKind: Record<string, number> = { market: marketsOrdered().length }
+  const editedCount = new Map(subEditedByKind.map((row) => [row.kind, row._count._all]))
 
   // Which master pages have ever been saved, so a card can say "never edited"
   // rather than implying an edit history that does not exist.
