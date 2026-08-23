@@ -222,6 +222,9 @@ export default async function ProductPage({ params }: Props) {
     readFittingAttributes({
       title: product.title,
       specs: product.specs.map((s) => ({ label: s.label, value: s.value })),
+      // Settles coupling families the title does not name — a Guillemin
+      // coupling filed under `guillemin-couplings` need not repeat the word.
+      categorySlug: product.category?.slug ?? null,
     }),
   )
 
