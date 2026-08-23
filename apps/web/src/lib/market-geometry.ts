@@ -67,6 +67,16 @@ export type MarketMapModel = {
   readonly uid: string
   readonly graticule: string | null
   readonly target: string
+  /**
+   * The drawn country's own projected extent, `[width, height]` in pixels.
+   *
+   * Exposed so a test can assert the country actually fills the frame. It is
+   * the cheapest signal that a feature is bigger than the country it names —
+   * an overseas territory drags the fit outward and leaves the mainland a
+   * smudge in the middle, which is exactly what happened to France before
+   * `mainland` existed.
+   */
+  readonly targetExtent: readonly [number, number]
   readonly neighbours: readonly string[]
   readonly neighbourLabels: readonly MapLabel[]
   readonly routes: readonly { readonly d: string; readonly primary: boolean }[]
@@ -91,6 +101,47 @@ export type MarketMapModel = {
   readonly ariaLabel: string
 }
 
+/**
+ * Drop the polygons that sit outside a country's mainland box.
+ *
+ * See `mainland` in the data contract for why this exists. Implemented on the
+ * GeoJSON rather than the projection because the outline has to lose the
+ * territories too — clipping only the FIT would still draw French Guiana in
+ * the corner of a map of France.
+ *
+ * A Polygon is kept or dropped whole; a MultiPolygon keeps the members whose
+ * first ring's average position falls inside the box. Average position rather
+ * than a true centroid because the test is "is this landmass in Europe or the
+ * Caribbean", which no amount of precision changes.
+ */
+function clipToMainland(
+  feature_: CountryFeature,
+  [west, south, east, north]: readonly [number, number, number, number]
+): CountryFeature {
+  const geometry = feature_.geometry as { type?: string; coordinates?: unknown }
+  if (geometry?.type !== 'MultiPolygon' || !Array.isArray(geometry.coordinates)) return feature_
+
+  const inside = (polygon: number[][][]) => {
+    const ring = polygon[0]
+    if (!ring || ring.length === 0) return false
+    let lon = 0
+    let lat = 0
+    for (const [x, y] of ring) {
+      lon += x!
+      lat += y!
+    }
+    lon /= ring.length
+    lat /= ring.length
+    return lon >= west && lon <= east && lat >= south && lat <= north
+  }
+
+  const kept = (geometry.coordinates as number[][][][]).filter(inside)
+  // Never clip a country out of existence — an empty result means the box is
+  // wrong, and a wrong box should be visible as a wrong map, not a missing one.
+  if (kept.length === 0) return feature_
+  return { ...feature_, geometry: { ...geometry, coordinates: kept } }
+}
+
 /** Neighbour sets are stable per country; keyed by the target's own name. */
 const neighbourCache = new Map<string, CountryFeature[]>()
 
@@ -106,8 +157,11 @@ const neighbourCache = new Map<string, CountryFeature[]>()
  */
 export function buildMarketMapModel(page: MarketPage, countryName: string): MarketMapModel | null {
   const map = page.map
-  const target = findCountryFeature(map.geoNames)
-  if (!target) return null
+  const matched = findCountryFeature(map.geoNames)
+  if (!matched) return null
+  // Drop overseas territories where the record asks for it — see the docblock
+  // on `clipToMainland` and on `mainland` in the data contract.
+  const target = map.mainland ? clipToMainland(matched, map.mainland) : matched
 
   const anchor: LonLat = map.fit === 'crossing' ? map.crossing.coords : map.origin
   const focus = {
@@ -214,6 +268,10 @@ export function buildMarketMapModel(page: MarketPage, countryName: string): Mark
     uid: page.slug,
     graticule: path(graticule as unknown as GeoPermissibleObjects),
     target: path(target as unknown as GeoPermissibleObjects) ?? '',
+    targetExtent: (() => {
+      const [[x0, y0], [x1, y1]] = path.bounds(target as unknown as GeoPermissibleObjects)
+      return [x1 - x0, y1 - y0] as [number, number]
+    })(),
     neighbours: near
       .map((f) => path(f as unknown as GeoPermissibleObjects))
       .filter((d): d is string => d != null),

@@ -255,6 +255,9 @@ const NORWAY: MarketPage = {
   ],
   map: {
     geoNames: ['Norway'],
+    // Mainland Norway only — the feature also carries Svalbard and Jan Mayen,
+    // which sit far enough north to swallow the frame.
+    mainland: [4.0, 57.5, 31.5, 71.5],
     fit: 'crossing',
     origin: [55.03, 25.01],
     originLabel: 'JEBEL ALI · DXB',
@@ -578,6 +581,9 @@ const NETHERLANDS: MarketPage = {
   ],
   map: {
     geoNames: ['Netherlands'],
+    // European Netherlands only — the feature also carries the Caribbean
+    // municipalities of Bonaire, Sint Eustatius and Saba.
+    mainland: [3.0, 50.5, 7.5, 53.8],
     fit: 'crossing',
     origin: [55.03, 25.01],
     originLabel: 'JEBEL ALI · DXB',
@@ -1849,6 +1855,440 @@ const SWITZERLAND: MarketPage = {
   },
 }
 
+
+// ─────────────────────────────────────────────────────────────────────────────
+// THE WESTERN MEDITERRANEAN — the shortest European lanes
+//
+// Everything here is reached without leaving the Mediterranean after Suez,
+// which makes these the quickest European transits on the network. It also
+// makes the ports genuine hubs: Algeciras, Genoa, Marseille-Fos and Sines all
+// tranship for somewhere else, and a consignment routed through one of them is
+// often not for that country at all.
+// ─────────────────────────────────────────────────────────────────────────────
+
+const ITALY: MarketPage = {
+  slug: 'italy',
+  regulatoryCopy: 'unverified',
+  released: false,
+  lane: 'DXB → IT',
+  dialCode: '+39',
+  currency: 'EUR',
+  localName: 'Italia',
+  lede: 'Italy builds oilfield and process packages for export on a scale that makes it a customer for patterns rather than parts. A skid assembled in Lombardy for a Gulf or West African contract has to be plumbed to the destination’s standard, not Italy’s, and that is where a GOST coupling or an API-monogrammed assembly stops being a factory order and starts being stock. Genoa and Trieste are two weeks from Jebel Ali — the shortest European lane we run after Türkiye.',
+  facts: [
+    { label: 'Typical transit', value: 'Typically 16–22 days by sea from dispatch' },
+    {
+      label: 'Freight',
+      value:
+        'Sea freight from Jebel Ali through Suez to Genoa for the north-west · Trieste for the north-east and the Alpine corridor · Gioia Tauro and Taranto for the south · Air freight into Milan where the schedule is tighter',
+    },
+    { label: 'Incoterms 2020', value: 'CIF Genoa · DAP to the buyer’s site · FOB Jebel Ali · EXW Dubai for a nominated forwarder' },
+    {
+      label: 'Documentation',
+      value:
+        'CE marking and the PED declaration where the assembly is above threshold · REACH position on the elastomer compounds · Certificate of Origin, Dubai Chamber attested · EU customs entry raised by the importer',
+    },
+  ],
+  manifest: [
+    { label: 'Origin', value: 'Jebel Ali · Dubai' },
+    { label: 'Primary mode', value: 'Sea, via Suez' },
+    { label: 'Port of entry', value: 'Genoa' },
+    { label: 'Transit', value: '16–22 days' },
+    { label: 'Quoted in', value: 'EUR' },
+    { label: 'Docs prepared', value: 'Before the vessel sails' },
+  ],
+  map: {
+    geoNames: ['Italy'],
+    fit: 'crossing',
+    origin: [55.03, 25.01],
+    originLabel: 'JEBEL ALI · DXB',
+    crossing: { name: 'GENOA · PORT', coords: [8.92, 44.4], legend: 'Port of entry', dx: -11, dy: 8, anchor: 'end' },
+    routes: [
+      { mode: 'SEA · SUEZ', primary: true, points: leg(SUEZ_TO_MED, [26.0, 33.5], [18.0, 35.5], [12.0, 38.0], [9.5, 43.0], [8.92, 44.4]) },
+      { mode: 'AIR', points: leg(EUROPE_AIR, [15.0, 45.0], [8.72, 45.63]) },
+    ],
+  },
+  freight: [
+    { name: 'Sea, FCL', transit: '16–22 days', route: 'Jebel Ali to Genoa, via Suez', useCase: 'Default for most orders' },
+    { name: 'Air freight', transit: '2–4 days', route: 'DXB to MXP', useCase: 'When the line is down' },
+    { name: 'Sea, LCL', transit: '22–30 days', route: 'Consolidated, with transhipment', useCase: 'Small mixed orders' },
+  ],
+  orderSteps: {
+    third:
+      'Where the goods are being built into a package for export, the destination standard is confirmed rather than the Italian one, and the CE declaration is prepared where the assembly is above threshold.',
+    fourth: 'Goods sail from Jebel Ali through Suez to Genoa or Trieste, and you get the paperwork and tracking together.',
+  },
+  cities: [
+    { name: 'Genoa', coords: [8.93, 44.41], region: 'Liguria' },
+    { name: 'Milan', coords: [9.19, 45.46], region: 'Lombardy', plot: true, dx: 9, dy: -5 },
+    { name: 'Bergamo', coords: [9.67, 45.7], region: 'Lombardy' },
+    { name: 'Brescia', coords: [10.22, 45.54], region: 'Lombardy' },
+    { name: 'Turin', coords: [7.69, 45.07], region: 'Piedmont', plot: true, dx: -9, dy: -4, anchor: 'end' },
+    { name: 'Trieste', coords: [13.77, 45.65], region: 'Friuli Venezia Giulia', plot: true, dx: 9, dy: -4 },
+    { name: 'Venice', coords: [12.34, 45.44], region: 'Veneto' },
+    { name: 'Ravenna', coords: [12.2, 44.42], region: 'Emilia-Romagna', plot: true, dx: 9, dy: 4 },
+    { name: 'Bologna', coords: [11.34, 44.49], region: 'Emilia-Romagna' },
+    { name: 'Florence', coords: [11.26, 43.77], region: 'Tuscany' },
+    { name: 'Livorno', coords: [10.31, 43.55], region: 'Tuscany', plot: true, dx: -9, dy: 6, anchor: 'end' },
+    { name: 'Rome', coords: [12.5, 41.9], region: 'Lazio', plot: true, dx: 9, dy: 4 },
+    { name: 'Naples', coords: [14.27, 40.85], region: 'Campania', plot: true, dx: 9, dy: 4 },
+    { name: 'Taranto', coords: [17.24, 40.46], region: 'Apulia', plot: true, dx: 9, dy: 4 },
+    { name: 'Gioia Tauro', coords: [15.9, 38.43], region: 'Calabria', plot: true, dx: -9, dy: 6, anchor: 'end' },
+    { name: 'Augusta', coords: [15.22, 37.23], region: 'Sicily' },
+  ],
+  sectors: [
+    { slug: 'oil-gas', name: 'Oil & Gas', description: 'Skid and package builders assembling for Gulf, African and Caspian contracts — plumbed to the destination standard.' },
+    { slug: 'steel', name: 'Steel & Metals', description: 'High-force cylinders and servo valves for the Taranto and Brescia rolling lines.' },
+    { slug: 'construction', name: 'Construction', description: 'Excavator, crane and tunnelling hydraulics — and the machinery builders who export them.' },
+    { slug: 'marine', name: 'Marine & Offshore', description: 'Deck machinery and vessel hydraulics for the Genoa, Trieste and Naples yards.' },
+    { slug: 'power', name: 'Power & Energy', description: 'Actuator and governor hydraulics for thermal, hydro and geothermal plant.' },
+    { slug: 'mining', name: 'Mining', description: 'Dust-rated, high-cycle components for marble, aggregate and cement plant.' },
+  ],
+  faqs: [
+    { question: 'Do you have a branch in Italy?', answer: 'No. Italy is supplied from our Dubai warehouse, by sea through Suez into Genoa, Trieste or the southern ports.' },
+    {
+      question: 'Why would an Italian builder import hydraulics?',
+      answer:
+        'Because the package is not for Italy. A skid built in Lombardy for a Gulf, West African or Caspian contract has to be plumbed to the destination’s standard — GOST couplings, API monograms, SS316L thread forms — and those are stock for us and a factory order locally.',
+    },
+    { question: 'Do we need CE marking?', answer: 'For a hose assembly above the pressure-volume threshold in PED 2014/68/EU, yes, and the declaration travels with the goods. Below it, sound engineering practice applies and there is no mark.' },
+    { question: 'Genoa or Trieste?', answer: 'Genoa for the north-west and the Turin–Milan belt; Trieste for the north-east and anything continuing into Austria or Hungary. The southern ports where the delivery is south of Rome.' },
+    { question: 'Can you supply to the destination standard rather than ours?', answer: 'That is usually the point of the order. Send the destination specification and we will quote against it, including the material documentation the receiving country will ask for.' },
+    { question: 'What currency do you quote in?', answer: 'EUR. Italy is in the eurozone, so the Estimate, the invoice and the customs value all carry the same figure with nothing to convert.' },
+    { question: 'Can you supply API-monogrammed equipment?', answer: 'Yes. API 6A wellhead, API 16A BOP, API 16C choke and kill and API 7K drilling hose, with NACE MR0175 material documentation where the contract requires it.' },
+    { question: 'How quickly can you get here?', answer: 'Two to three weeks by sea, which is the shortest European lane we run after Türkiye. For a line that is down a local distributor is still faster and we will say so.' },
+  ],
+  compliance: {
+    heading: 'Plumbed for somewhere else',
+    body:
+      'The useful thing to understand about this lane is that a large share of what we ship into Italy is not staying. Italian builders assemble oilfield skids, process packages and machinery for Gulf, African and Caspian contracts, and a package has to be plumbed to the destination’s standard rather than the one next door to the workshop. A GOST coupling for a Kazakh contract, an API-monogrammed assembly for a West African wellhead, an SS316L thread form for a chemical duty — locally each is a factory order with weeks of lead time; here each is stock. That changes what a useful quotation looks like: send the destination specification rather than an Italian part number, and we will quote against it including the material documentation the receiving country will ask for. Customs itself is unremarkable — one entry into free circulation at Genoa or Trieste, a PED declaration above threshold, and the REACH position on the compounds.',
+    documents: [
+      { ref: 'PED', name: 'Declaration of conformity, assemblies above threshold', issuer: 'Us, as the assembler', when: 'Before dispatch' },
+      { ref: 'DEST', name: 'Destination-standard confirmation for export packages', issuer: 'Us, at quotation', when: 'At quotation, per package' },
+      { ref: 'REACH', name: 'Compound position on the elastomers supplied', issuer: 'Us, at quotation', when: 'At quotation' },
+      { ref: 'COO', name: 'Certificate of Origin', issuer: 'Dubai Chamber attested', when: 'Before dispatch' },
+      { ref: 'EU-ENTRY', name: 'Customs entry into free circulation', issuer: 'The importer, through Italian Customs', when: 'On arrival' },
+    ],
+  },
+}
+
+const FRANCE: MarketPage = {
+  slug: 'france',
+  regulatoryCopy: 'unverified',
+  released: false,
+  lane: 'DXB → FR',
+  dialCode: '+33',
+  currency: 'EUR',
+  lede: 'France has two coasts and the difference between them is a week. Marseille-Fos is a fortnight from Jebel Ali through Suez; Le Havre means carrying on past Gibraltar and up the Atlantic. Most of our cargo takes the Mediterranean gate. What the market itself asks for is documentation discipline — nuclear and defence supply chains want traceability written down before the goods move, not assembled afterwards when an auditor asks.',
+  facts: [
+    { label: 'Typical transit', value: 'Typically 18–24 days by sea from dispatch to Fos' },
+    {
+      label: 'Freight',
+      value:
+        'Sea freight from Jebel Ali through Suez to Marseille-Fos for the south and the Rhône corridor · Le Havre for the north and Paris · Dunkirk where the berth suits · Air freight into Paris where the schedule is tighter',
+    },
+    { label: 'Incoterms 2020', value: 'CIF Marseille-Fos · DAP to the buyer’s site · FOB Jebel Ali · EXW Dubai for a nominated forwarder' },
+    {
+      label: 'Documentation',
+      value:
+        'CE marking and the PED declaration where the assembly is above threshold · REACH position on the elastomer compounds · Material traceability where the supply chain requires it · Certificate of Origin, Dubai Chamber attested',
+    },
+  ],
+  manifest: [
+    { label: 'Origin', value: 'Jebel Ali · Dubai' },
+    { label: 'Primary mode', value: 'Sea, via Suez' },
+    { label: 'Port of entry', value: 'Marseille-Fos' },
+    { label: 'Transit', value: '18–24 days' },
+    { label: 'Quoted in', value: 'EUR' },
+    { label: 'Docs prepared', value: 'Before the vessel sails' },
+  ],
+  map: {
+    geoNames: ['France'],
+    // Metropolitan France only — the feature also carries French Guiana,
+    // Réunion, Mayotte and the Antilles.
+    mainland: [-5.5, 41.0, 10.0, 51.5],
+    fit: 'crossing',
+    origin: [55.03, 25.01],
+    originLabel: 'JEBEL ALI · DXB',
+    crossing: { name: 'MARSEILLE-FOS', coords: [4.87, 43.4], legend: 'Port of entry', dx: 11, dy: 10, anchor: 'start' },
+    routes: [
+      { mode: 'SEA · SUEZ', primary: true, points: leg(SUEZ_TO_MED, [26.0, 33.5], [16.0, 36.0], [8.0, 39.0], [5.5, 42.5], [4.87, 43.4]) },
+      { mode: 'AIR', points: leg(EUROPE_AIR, [12.0, 46.0], [2.55, 49.01]) },
+    ],
+  },
+  freight: [
+    { name: 'Sea, FCL', transit: '18–24 days', route: 'Jebel Ali to Marseille-Fos, via Suez', useCase: 'Default for most orders' },
+    { name: 'Air freight', transit: '2–4 days', route: 'DXB to CDG', useCase: 'When the line is down' },
+    { name: 'Sea via Le Havre', transit: '25–32 days', route: 'On past Gibraltar and up the Atlantic', useCase: 'The north and Paris' },
+  ],
+  orderSteps: {
+    third:
+      'Traceability is assembled before dispatch rather than after an audit asks — mill certificates to heat number where the supply chain requires it, and the CE declaration where the assembly is above threshold.',
+    fourth: 'Goods sail from Jebel Ali through Suez to Fos, and you get the paperwork and tracking together.',
+  },
+  cities: [
+    { name: 'Marseille', coords: [5.37, 43.3], region: "Provence-Alpes-Côte d'Azur", plot: true, dx: 9, dy: 8 },
+    { name: 'Fos-sur-Mer', coords: [4.94, 43.44], region: "Provence-Alpes-Côte d'Azur" },
+    { name: 'Lyon', coords: [4.84, 45.76], region: 'Auvergne-Rhône-Alpes', plot: true, dx: 9, dy: 4 },
+    { name: 'Grenoble', coords: [5.72, 45.19], region: 'Auvergne-Rhône-Alpes' },
+    { name: 'Saint-Étienne', coords: [4.39, 45.44], region: 'Auvergne-Rhône-Alpes' },
+    { name: 'Paris', coords: [2.35, 48.86], region: 'Île-de-France', plot: true, dx: 9, dy: -5 },
+    { name: 'Le Havre', coords: [0.11, 49.49], region: 'Normandy', plot: true, dx: -9, dy: -4, anchor: 'end' },
+    { name: 'Rouen', coords: [1.1, 49.44], region: 'Normandy' },
+    { name: 'Dunkirk', coords: [2.38, 51.03], region: 'Hauts-de-France', plot: true, dx: 9, dy: -4 },
+    { name: 'Lille', coords: [3.06, 50.63], region: 'Hauts-de-France' },
+    { name: 'Strasbourg', coords: [7.75, 48.57], region: 'Grand Est', plot: true, dx: 9, dy: -4 },
+    { name: 'Nancy', coords: [6.18, 48.69], region: 'Grand Est' },
+    { name: 'Toulouse', coords: [1.44, 43.6], region: 'Occitanie', plot: true, dx: -9, dy: 6, anchor: 'end' },
+    { name: 'Bordeaux', coords: [-0.58, 44.84], region: 'Nouvelle-Aquitaine', plot: true, dx: -9, dy: -4, anchor: 'end' },
+    { name: 'Nantes', coords: [-1.55, 47.22], region: 'Pays de la Loire' },
+    { name: 'Saint-Nazaire', coords: [-2.21, 47.28], region: 'Pays de la Loire' },
+  ],
+  sectors: [
+    { slug: 'power', name: 'Power & Energy', description: 'Nuclear and hydro plant — actuator and governor hydraulics with traceability written down before dispatch.' },
+    { slug: 'marine', name: 'Marine & Offshore', description: 'Deck machinery and vessel hydraulics for the Saint-Nazaire and Marseille yards.' },
+    { slug: 'steel', name: 'Steel & Metals', description: 'High-force cylinders and servo valves for the Dunkirk and Fos rolling lines.' },
+    { slug: 'construction', name: 'Construction', description: 'Excavator, crane and tunnelling hydraulics for civil and rail works.' },
+    { slug: 'oil-gas', name: 'Oil & Gas', description: 'Refinery and terminal support at Fos, Lavéra and Donges.' },
+    { slug: 'mining', name: 'Mining', description: 'Dust-rated, high-cycle components for aggregate, salt and cement plant.' },
+  ],
+  faqs: [
+    { question: 'Do you have a branch in France?', answer: 'No. France is supplied from our Dubai warehouse, by sea through Suez into Marseille-Fos, or on past Gibraltar to Le Havre.' },
+    {
+      question: 'Fos or Le Havre?',
+      answer:
+        'Fos unless the delivery is in the north. The Mediterranean gate is a week shorter out of Suez, so a container for Lyon or Toulouse should not be going round Iberia. Le Havre or Dunkirk where the road leg from the south would give the week back.',
+    },
+    {
+      question: 'Can you supply traceable material documentation?',
+      answer:
+        'Yes, and in these supply chains it is worth asking for at quotation rather than at audit. Mill certificates to heat number, the material standard named, and the documentation issued with the goods rather than reconstructed later when someone asks for it.',
+    },
+    { question: 'Do we need CE marking?', answer: 'For a hose assembly above the pressure-volume threshold in PED 2014/68/EU, yes, and the declaration travels with the goods. Below it, sound engineering practice applies and there is no mark.' },
+    { question: 'Why buy from Dubai rather than locally?', answer: 'For a standard item you should not. What we hold is the pattern a French plant needs for equipment destined elsewhere, or a material grade a local distributor orders in rather than stocks.' },
+    { question: 'What is your REACH position?', answer: 'We state it on the elastomer compounds at quotation, including where a compound carries a restriction relevant to your application.' },
+    { question: 'What currency do you quote in?', answer: 'EUR. France is in the eurozone, so the Estimate, the invoice and the customs value all carry the same figure with nothing to convert.' },
+    { question: 'Can you deliver to a site rather than the port?', answer: 'Yes, on DAP terms. The inland leg from Fos is domestic movement and it is priced with the order rather than left to be arranged.' },
+  ],
+  compliance: {
+    heading: 'A week between two coasts, and paperwork before the audit',
+    body:
+      'Two things are worth being precise about here. The first is geography: Marseille-Fos is roughly a week closer to Jebel Ali than Le Havre, because the Mediterranean gate does not require carrying on past Gibraltar and up the Atlantic. A container for Lyon, Toulouse or Grenoble that routes via the Channel has given a week away for nothing, so we choose against the delivery town rather than a forwarder’s habit. The second is documentation culture. French nuclear, defence and rail supply chains expect traceability to exist before the goods move — the material standard named, mill certificates to heat number, the file issued with the consignment rather than reconstructed months later when an auditor asks. That is a different discipline from a commercial delivery and it is far cheaper to do at quotation than retrospectively, so we ask which regime an order sits under rather than assuming the commercial one.',
+    documents: [
+      { ref: 'PED', name: 'Declaration of conformity, assemblies above threshold', issuer: 'Us, as the assembler', when: 'Before dispatch' },
+      { ref: 'MTC', name: 'Mill certificates traceable to heat number', issuer: 'Mill, or our test bench', when: 'Before dispatch' },
+      { ref: 'REACH', name: 'Compound position on the elastomers supplied', issuer: 'Us, at quotation', when: 'At quotation' },
+      { ref: 'COO', name: 'Certificate of Origin', issuer: 'Dubai Chamber attested', when: 'Before dispatch' },
+      { ref: 'EU-ENTRY', name: 'Customs entry into free circulation', issuer: 'The importer, through French Customs', when: 'On arrival' },
+    ],
+  },
+}
+
+
+const SPAIN: MarketPage = {
+  slug: 'spain',
+  regulatoryCopy: 'unverified',
+  released: false,
+  lane: 'DXB → ES',
+  dialCode: '+34',
+  currency: 'EUR',
+  localName: 'España',
+  lede: 'Spain has the busiest transhipment port in the Mediterranean and it is worth knowing whether your consignment is using it as a gate or a hub. Algeciras handles a great deal of cargo that never enters Spain; Valencia and Barcelona are where goods for Spanish industry actually land. Behind them the demand is shipyards, mining in Andalusia and a machinery sector that exports — which is the familiar pattern of needing the destination’s standard rather than the local one.',
+  facts: [
+    { label: 'Typical transit', value: 'Typically 18–24 days by sea from dispatch' },
+    {
+      label: 'Freight',
+      value:
+        'Sea freight from Jebel Ali through Suez to Valencia for the east and Madrid · Barcelona for Catalonia · Algeciras and Bilbao where the berth or the onward leg suits · Air freight into Madrid where the schedule is tighter',
+    },
+    { label: 'Incoterms 2020', value: 'CIF Valencia · DAP to the buyer’s site · FOB Jebel Ali · EXW Dubai for a nominated forwarder' },
+    {
+      label: 'Documentation',
+      value:
+        'CE marking and the PED declaration where the assembly is above threshold · REACH position on the elastomer compounds · Certificate of Origin, Dubai Chamber attested · EU customs entry raised by the importer',
+    },
+  ],
+  manifest: [
+    { label: 'Origin', value: 'Jebel Ali · Dubai' },
+    { label: 'Primary mode', value: 'Sea, via Suez' },
+    { label: 'Port of entry', value: 'Valencia' },
+    { label: 'Transit', value: '18–24 days' },
+    { label: 'Quoted in', value: 'EUR' },
+    { label: 'Docs prepared', value: 'Before the vessel sails' },
+  ],
+  map: {
+    geoNames: ['Spain'],
+    fit: 'crossing',
+    origin: [55.03, 25.01],
+    originLabel: 'JEBEL ALI · DXB',
+    crossing: { name: 'VALENCIA · PORT', coords: [-0.32, 39.44], legend: 'Port of entry', dx: 11, dy: 10, anchor: 'start' },
+    routes: [
+      { mode: 'SEA · SUEZ', primary: true, points: leg(SUEZ_TO_MED, [26.0, 33.5], [16.0, 35.5], [8.0, 37.5], [2.0, 38.5], [-0.32, 39.44]) },
+      { mode: 'AIR', points: leg(EUROPE_AIR, [10.0, 44.0], [-3.57, 40.49]) },
+    ],
+  },
+  freight: [
+    { name: 'Sea, FCL', transit: '18–24 days', route: 'Jebel Ali to Valencia, via Suez', useCase: 'Default for most orders' },
+    { name: 'Air freight', transit: '2–4 days', route: 'DXB to MAD', useCase: 'When the line is down' },
+    { name: 'Sea, LCL', transit: '24–32 days', route: 'Consolidated, transhipped at Algeciras', useCase: 'Small mixed orders' },
+  ],
+  orderSteps: {
+    third: 'Whether the consignment is entering Spain or transhipping onward is settled first, because Algeciras handles a great deal of cargo that never clears here.',
+    fourth: 'Goods sail from Jebel Ali through Suez to Valencia or Barcelona, and you get the paperwork and tracking together.',
+  },
+  cities: [
+    { name: 'Valencia', coords: [-0.38, 39.47], region: 'Valencian Community' },
+    { name: 'Barcelona', coords: [2.17, 41.39], region: 'Catalonia', plot: true, dx: 9, dy: -4 },
+    { name: 'Tarragona', coords: [1.25, 41.12], region: 'Catalonia' },
+    { name: 'Madrid', coords: [-3.7, 40.42], region: 'Madrid', plot: true, dx: 9, dy: -5 },
+    { name: 'Zaragoza', coords: [-0.88, 41.65], region: 'Aragon', plot: true, dx: 9, dy: -4 },
+    { name: 'Bilbao', coords: [-2.93, 43.26], region: 'Basque Country', plot: true, dx: -9, dy: -4, anchor: 'end' },
+    { name: 'Santander', coords: [-3.8, 43.46], region: 'Cantabria' },
+    { name: 'Gijón', coords: [-5.66, 43.54], region: 'Asturias' },
+    { name: 'Avilés', coords: [-5.92, 43.56], region: 'Asturias' },
+    { name: 'Vigo', coords: [-8.72, 42.24], region: 'Galicia', plot: true, dx: -9, dy: -4, anchor: 'end' },
+    { name: 'Ferrol', coords: [-8.24, 43.48], region: 'Galicia' },
+    { name: 'Algeciras', coords: [-5.45, 36.13], region: 'Andalusia', plot: true, dx: -9, dy: 6, anchor: 'end' },
+    { name: 'Huelva', coords: [-6.94, 37.26], region: 'Andalusia', plot: true, dx: -9, dy: 6, anchor: 'end' },
+    { name: 'Seville', coords: [-5.98, 37.39], region: 'Andalusia' },
+    { name: 'Cartagena', coords: [-0.99, 37.6], region: 'Murcia', plot: true, dx: 9, dy: 8 },
+    { name: 'Cádiz', coords: [-6.29, 36.53], region: 'Andalusia' },
+  ],
+  sectors: [
+    { slug: 'marine', name: 'Marine & Offshore', description: 'Deck machinery and vessel hydraulics for the Ferrol, Cádiz and Vigo yards.' },
+    { slug: 'mining', name: 'Mining', description: 'Copper and pyrite in Andalusia — dust-rated, high-cycle components for shovel and mill.' },
+    { slug: 'steel', name: 'Steel & Metals', description: 'High-force cylinders and servo valves for the Avilés, Gijón and Bilbao lines.' },
+    { slug: 'construction', name: 'Construction', description: 'Excavator, crane and tunnelling hydraulics — and the machinery builders who export them.' },
+    { slug: 'power', name: 'Power & Energy', description: 'Actuator and governor hydraulics for thermal, hydro and solar-thermal plant.' },
+    { slug: 'oil-gas', name: 'Oil & Gas', description: 'Refinery and terminal support at Cartagena, Huelva and Bilbao.' },
+  ],
+  faqs: [
+    { question: 'Do you have a branch in Spain?', answer: 'No. Spain is supplied from our Dubai warehouse, by sea through Suez into Valencia, Barcelona or Algeciras.' },
+    {
+      question: 'Is Algeciras a gate or a hub for us?',
+      answer:
+        'Both, and it matters which. Algeciras transhipes an enormous volume that never enters Spain. If your goods are for Spanish delivery we usually route Valencia or Barcelona instead; if they are staging onward we say so on the file rather than importing and re-exporting.',
+    },
+    { question: 'Do we need CE marking?', answer: 'For a hose assembly above the pressure-volume threshold in PED 2014/68/EU, yes, and the declaration travels with the goods. Below it, sound engineering practice applies and there is no mark.' },
+    { question: 'Valencia or Barcelona?', answer: 'Valencia for Madrid, the east and the centre; Barcelona for Catalonia and anything continuing into southern France. Bilbao where the delivery is on the north coast.' },
+    { question: 'Can you deliver to the Andalusian mines?', answer: 'Yes, on DAP terms to the mine gate. The road leg from Huelva or Algeciras is priced with the order rather than estimated.' },
+    { question: 'Why buy from Dubai rather than locally?', answer: 'For a standard item you should not. What we hold is the pattern for equipment being built here for export, or a material grade a local distributor orders in rather than stocks.' },
+    { question: 'What currency do you quote in?', answer: 'EUR. Spain is in the eurozone, so the Estimate, the invoice and the customs value all carry the same figure with nothing to convert.' },
+    { question: 'What language do the documents need to be in?', answer: 'Spanish, with the description agreeing across the invoice, the packing list and the declaration. We fix the wording at quotation.' },
+  ],
+  compliance: {
+    heading: 'Gate or hub — decide before it sails',
+    body:
+      'Spain hosts the busiest transhipment port in the Mediterranean, and the single most useful question on this lane is whether your consignment is using it. Algeciras moves an enormous volume of cargo that never enters Spain at all, and a box routed there for a Spanish delivery is often further from the customer than one discharged at Valencia. Conversely, goods staging onward should be documented as staging rather than imported and re-exported, which pays for a customs round trip nobody needed. We settle that at quotation and pick the port against the delivery town rather than the sailing schedule alone. The product documentation is the ordinary European set — a declaration of conformity above the PED 2014/68/EU threshold, and our position on the compounds under REACH — with the description agreed in Spanish across the invoice, the packing list and the entry.',
+    documents: [
+      { ref: 'PED', name: 'Declaration of conformity, assemblies above threshold', issuer: 'Us, as the assembler', when: 'Before dispatch' },
+      { ref: 'REACH', name: 'Compound position on the elastomers supplied', issuer: 'Us, at quotation', when: 'At quotation' },
+      { ref: 'ROUTE', name: 'Gate or transhipment decision for the consignment', issuer: 'Agreed at quotation', when: 'Before the vessel sails' },
+      { ref: 'COO', name: 'Certificate of Origin', issuer: 'Dubai Chamber attested', when: 'Before dispatch' },
+      { ref: 'EU-ENTRY', name: 'Customs entry into free circulation', issuer: 'The importer, through Spanish Customs', when: 'On arrival' },
+    ],
+  },
+}
+
+const PORTUGAL: MarketPage = {
+  slug: 'portugal',
+  regulatoryCopy: 'unverified',
+  released: false,
+  lane: 'DXB → PT',
+  dialCode: '+351',
+  currency: 'EUR',
+  lede: 'Portugal is the far end of the Mediterranean lane and the only western European market that is not on the way to anywhere else on this network. Sines is a deep-water port that takes the largest vessels and is a fortnight and a half from Jebel Ali; Leixões serves the industrial north. The market is compact — moulds and tooling, shipyards, pulp and paper plant — and the reason to import is the same narrow one as the rest of Europe: the pattern rather than the part.',
+  facts: [
+    { label: 'Typical transit', value: 'Typically 22–28 days by sea from dispatch' },
+    {
+      label: 'Freight',
+      value: 'Sea freight from Jebel Ali through Suez and past Gibraltar to Sines or Lisbon · Leixões for the industrial north · Air freight into Lisbon where the schedule is tighter',
+    },
+    { label: 'Incoterms 2020', value: 'CIF Sines · DAP to the buyer’s site · FOB Jebel Ali · EXW Dubai for a nominated forwarder' },
+    {
+      label: 'Documentation',
+      value:
+        'CE marking and the PED declaration where the assembly is above threshold · REACH position on the elastomer compounds · Certificate of Origin, Dubai Chamber attested · EU customs entry raised by the importer',
+    },
+  ],
+  manifest: [
+    { label: 'Origin', value: 'Jebel Ali · Dubai' },
+    { label: 'Primary mode', value: 'Sea, via Suez' },
+    { label: 'Port of entry', value: 'Sines' },
+    { label: 'Transit', value: '22–28 days' },
+    { label: 'Quoted in', value: 'EUR' },
+    { label: 'Docs prepared', value: 'Before the vessel sails' },
+  ],
+  map: {
+    geoNames: ['Portugal'],
+    fit: 'crossing',
+    origin: [55.03, 25.01],
+    originLabel: 'JEBEL ALI · DXB',
+    crossing: { name: 'SINES · PORT', coords: [-8.87, 37.95], legend: 'Port of entry', dx: 11, dy: 10, anchor: 'start' },
+    routes: [
+      { mode: 'SEA · SUEZ', primary: true, points: leg(MED_TO_ATLANTIC, [-7.0, 36.5], [-8.87, 37.95]) },
+      { mode: 'AIR', points: leg(EUROPE_AIR, [8.0, 44.0], [-9.14, 38.77]) },
+    ],
+  },
+  freight: [
+    { name: 'Sea, FCL', transit: '22–28 days', route: 'Jebel Ali to Sines, via Suez', useCase: 'Default for most orders' },
+    { name: 'Air freight', transit: '2–5 days', route: 'DXB to LIS, with a connection', useCase: 'When the line is down' },
+    { name: 'Sea, LCL', transit: '28–36 days', route: 'Consolidated, transhipped at Algeciras', useCase: 'Small mixed orders' },
+  ],
+  orderSteps: {
+    third: 'The port is chosen against the delivery region — Sines or Lisbon for the south, Leixões for the north — and the CE declaration is prepared where the assembly is above threshold.',
+    fourth: 'Goods sail from Jebel Ali through Suez and past Gibraltar, and you get the paperwork and tracking together.',
+  },
+  cities: [
+    { name: 'Sines', coords: [-8.87, 37.95], region: 'Alentejo' },
+    { name: 'Lisbon', coords: [-9.14, 38.72], region: 'Lisbon', plot: true, dx: -9, dy: -4, anchor: 'end' },
+    { name: 'Setúbal', coords: [-8.89, 38.52], region: 'Setúbal', plot: true, dx: 9, dy: 8 },
+    { name: 'Porto', coords: [-8.61, 41.15], region: 'Porto', plot: true, dx: -9, dy: -4, anchor: 'end' },
+    { name: 'Leixões', coords: [-8.7, 41.19], region: 'Porto' },
+    { name: 'Matosinhos', coords: [-8.69, 41.18], region: 'Porto' },
+    { name: 'Braga', coords: [-8.43, 41.55], region: 'Braga', plot: true, dx: 9, dy: -4 },
+    { name: 'Aveiro', coords: [-8.65, 40.64], region: 'Aveiro', plot: true, dx: -9, dy: -4, anchor: 'end' },
+    { name: 'Marinha Grande', coords: [-8.93, 39.75], region: 'Leiria', plot: true, dx: -9, dy: -4, anchor: 'end' },
+    { name: 'Coimbra', coords: [-8.43, 40.21], region: 'Coimbra' },
+    { name: 'Figueira da Foz', coords: [-8.86, 40.15], region: 'Coimbra' },
+    { name: 'Faro', coords: [-7.93, 37.02], region: 'Algarve', plot: true, dx: 9, dy: 8 },
+  ],
+  sectors: [
+    { slug: 'marine', name: 'Marine & Offshore', description: 'Deck machinery and vessel hydraulics for the Setúbal, Viana and Lisbon yards.' },
+    { slug: 'construction', name: 'Construction', description: 'Excavator, crane and batching-plant hydraulics — and the mould and tooling sector around Marinha Grande.' },
+    { slug: 'steel', name: 'Steel & Metals', description: 'High-force cylinders and precision valves for forming, moulding and machining lines.' },
+    { slug: 'power', name: 'Power & Energy', description: 'Actuator and governor hydraulics for hydro, thermal and wind plant.' },
+    { slug: 'oil-gas', name: 'Oil & Gas', description: 'Refinery and terminal support at Sines and the Lisbon estuary.' },
+    { slug: 'mining', name: 'Mining', description: 'Copper and tin in the Alentejo — dust-rated, high-cycle components.' },
+  ],
+  faqs: [
+    { question: 'Do you have a branch in Portugal?', answer: 'No. Portugal is supplied from our Dubai warehouse, by sea through Suez and past Gibraltar into Sines, Lisbon or Leixões.' },
+    {
+      question: 'Why is Portugal further than Spain?',
+      answer:
+        'Because it is past Gibraltar rather than inside the Mediterranean. Valencia is roughly a Suez-to-Med run; Sines carries on into the Atlantic. It is only a few days, but it is the reason a Spanish port is sometimes the better gate for a northern Portuguese delivery.',
+    },
+    { question: 'Sines, Lisbon or Leixões?', answer: 'Sines takes the largest vessels and suits the south and the Alentejo; Lisbon for the estuary; Leixões for Porto and the industrial north, where the road leg from Sines is most of a day.' },
+    { question: 'Do we need CE marking?', answer: 'For a hose assembly above the pressure-volume threshold in PED 2014/68/EU, yes, and the declaration travels with the goods. Below it, sound engineering practice applies and there is no mark.' },
+    { question: 'Can you supply for mould and tooling machinery?', answer: 'Yes — precision valves and high-force cylinders for injection and forming plant. Tell us the cycle time and the duty rather than the part number, because that is what decides the seal choice.' },
+    { question: 'Why buy from Dubai rather than locally?', answer: 'For a standard item you should not, and Iberian distribution is good. The narrow reason is the pattern held as stock — SS316L thread forms, API-monogrammed assemblies — usually for equipment being built here for export.' },
+    { question: 'What currency do you quote in?', answer: 'EUR. Portugal is in the eurozone, so the Estimate, the invoice and the customs value all carry the same figure with nothing to convert.' },
+    { question: 'What language do the documents need to be in?', answer: 'Portuguese, with the description agreeing across the invoice, the packing list and the declaration.' },
+  ],
+  compliance: {
+    heading: 'Past Gibraltar, and the end of the line',
+    body:
+      'Portugal is the only western European market on this network that is not on the way to anywhere else, and that shapes the lane in one practical way: cargo carries on past Gibraltar into the Atlantic rather than stopping in the Mediterranean, which adds a few days over Valencia and occasionally makes a Spanish port the better gate for a northern Portuguese delivery. Sines itself is a serious deep-water port and takes the largest vessels; Leixões is the answer for Porto and the industrial north. Customs is the ordinary single entry into free circulation, with a declaration of conformity above the PED 2014/68/EU threshold and the REACH position on the compounds. The market behind it is compact and specific — moulds and tooling around Marinha Grande, shipyards, pulp and paper — where the useful question is cycle time and duty rather than a catalogue number.',
+    documents: [
+      { ref: 'PED', name: 'Declaration of conformity, assemblies above threshold', issuer: 'Us, as the assembler', when: 'Before dispatch' },
+      { ref: 'REACH', name: 'Compound position on the elastomers supplied', issuer: 'Us, at quotation', when: 'At quotation' },
+      { ref: 'COO', name: 'Certificate of Origin', issuer: 'Dubai Chamber attested', when: 'Before dispatch' },
+      { ref: 'PL', name: 'Packing list in Portuguese, matching the declaration', issuer: 'Us, at dispatch', when: 'Before the vessel sails' },
+      { ref: 'EU-ENTRY', name: 'Customs entry into free circulation', issuer: 'The importer, through Portuguese Customs', when: 'On arrival' },
+    ],
+  },
+}
+
 export const MARKET_PAGE_RECORDS_3: readonly MarketPage[] = [
   TURKEY,
   NORWAY,
@@ -1866,4 +2306,8 @@ export const MARKET_PAGE_RECORDS_3: readonly MarketPage[] = [
   ICELAND,
   AUSTRIA,
   SWITZERLAND,
+  ITALY,
+  FRANCE,
+  SPAIN,
+  PORTUGAL,
 ]
