@@ -3,11 +3,45 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { notFound } from 'next/navigation'
 import { db } from '@indus/db'
-import { Breadcrumb, LeadCapturePanel, buildWhatsappHref, buildMailtoHref } from '@indus/ui'
+import {
+  buildBreadcrumbLd,
+  buildServiceLd,
+  designedIndustryPage,
+  designedIndustrySlugs,
+  type DesignedIndustryPage,
+} from '@indus/domain'
+import {
+  Breadcrumb,
+  JsonLd,
+  LeadCapturePanel,
+  buildWhatsappHref,
+  buildMailtoHref,
+} from '@indus/ui'
+import DesignedIndustryLanding from '../../../../components/industries/DesignedIndustryLanding'
 import { mediaUrl } from '../../../../lib/media'
-import { pageMetadata } from '../../../../lib/seo'
+import { ORG_ID, SITE_NAME, pageMetadata, urlFor } from '../../../../lib/seo'
 import { getIndustryBySlug } from '../../../../lib/industry-content'
 import { getStoreSettings } from '../../../../lib/store-settings'
+
+/**
+ * TWO LAYOUTS, ONE ROUTE — the same split `/markets/[slug]` uses.
+ *
+ * A slug with a record in `DESIGNED_INDUSTRY_PAGES` renders the designed page:
+ * its own sections, its own photography and its own enquiry form, all held in
+ * code. Every other slug renders the DB-backed template below, driven by
+ * editable columns on the `industries` row.
+ *
+ * The designed page is checked FIRST and never touches the table, so it does
+ * not need a row to exist and cannot be unpublished into a 404 from the admin
+ * while its nav entry and index card — which come from the same record — stay
+ * up. Route, card, nav entry and sitemap URL ship and revert together.
+ *
+ * Structured data is emitted here rather than inside either layout so the two
+ * cannot drift apart on schema.
+ */
+
+/** Founding year, matching the industries index. Feeds the `{years}` token. */
+const FOUNDING_YEAR = 2003
 
 // The per-industry hero gradient and its chip tint are gone with the dark
 // hero band — see the note on the hero section below. `Industry.gradient`
@@ -17,8 +51,27 @@ type Props = {
   params: Promise<{ slug: string }>
 }
 
+export function generateStaticParams() {
+  /*
+    Present so the designed pages are built ahead and served from the
+    incremental cache. `dynamicParams` stays on, so the six DB-backed
+    industries still render on first hit and cache from there.
+  */
+  return designedIndustrySlugs().map((slug) => ({ slug }))
+}
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params
+
+  const designed = designedIndustryPage(slug)
+  if (designed) {
+    return pageMetadata({
+      title: designed.seo.title,
+      description: designed.seo.description,
+      path: `/industries/${slug}`,
+    })
+  }
+
   const ind = await getIndustryBySlug(slug)
   if (!ind) return {}
   return pageMetadata({
@@ -33,6 +86,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function IndustryPage({ params }: Props) {
   const { slug } = await params
+
+  const designed = designedIndustryPage(slug)
+  if (designed) return renderDesigned(designed)
+
   const [ind, settings] = await Promise.all([getIndustryBySlug(slug), getStoreSettings()])
   if (!ind) notFound()
 
@@ -296,5 +353,58 @@ export default async function IndustryPage({ params }: Props) {
         </section>
       )}
     </div>
+  )
+}
+
+/**
+ * The designed layout, plus the structured data that goes with it.
+ *
+ * `Service` and not `Product`: the four families are a supply capability
+ * described by connection method, not four SKUs with a price, an availability
+ * and an identifier. Emitting `Product` without `offers` for something that
+ * cannot be added to a basket is the kind of markup that gets a site's rich
+ * results turned off. `areaServed` is the UAE as a `Country`, matching the
+ * market pages — we ship from Dubai and hold no premises anywhere else.
+ */
+async function renderDesigned(page: DesignedIndustryPage) {
+  const settings = await getStoreSettings()
+  const yearsInBusiness = new Date().getFullYear() - FOUNDING_YEAR
+  const pageUrl = urlFor(`/industries/${page.slug}`)
+
+  return (
+    <>
+      <JsonLd
+        data={buildBreadcrumbLd({
+          items: [
+            { name: 'Home', url: urlFor('/') },
+            { name: 'Industries', url: urlFor('/industries') },
+            { name: page.card.name, url: pageUrl },
+          ],
+        })}
+      />
+      {page.families.items.map((family) => (
+        <JsonLd
+          key={family.title}
+          data={buildServiceLd({
+            name: `${family.title} for data centre liquid cooling`,
+            description: family.includes,
+            url: `${pageUrl}#product-families`,
+            areaServed: [{ name: 'United Arab Emirates', type: 'Country' }],
+            providerId: ORG_ID,
+            providerName: SITE_NAME,
+            serviceType: 'Stainless steel component supply',
+          })}
+        />
+      ))}
+
+      <DesignedIndustryLanding
+        page={page}
+        yearsInBusiness={yearsInBusiness}
+        contactPhone={settings.contactPhone}
+        contactEmail={settings.contactEmail}
+        whatsappHref={buildWhatsappHref(settings.contactPhone, `Enquiry: ${page.card.name}`)}
+        mailtoHref={buildMailtoHref(settings.contactEmail, `${page.card.name} project enquiry`)}
+      />
+    </>
   )
 }

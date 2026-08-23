@@ -1,6 +1,12 @@
 import type { MetadataRoute } from 'next'
 import { db } from '@indus/db'
-import { buildSitemapEntries, buildStaticEntries, marketsOrdered, serviceAreasOrdered } from '@indus/domain'
+import {
+  buildSitemapEntries,
+  buildStaticEntries,
+  designedIndustrySlugs,
+  marketsOrdered,
+  serviceAreasOrdered,
+} from '@indus/domain'
 import { BASE_URL } from '../lib/seo'
 import { getReplacementBrands, getReplacementSitemapKeys } from '../lib/replacement-data'
 import { STATIC_SITEMAP_PATHS } from '../lib/crawl-policy'
@@ -226,6 +232,18 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: i.sitemapPriority ? Number(i.sitemapPriority) : 0.6,
     }))
 
+  // Designed industry pages — held in code, not in the `industries` table, so
+  // the query above cannot see them. Higher priority than a template industry
+  // because these are the pages built to rank for a specific buying intent.
+  // No `lastModified`: the content changes on deploy, and a date pulled from
+  // the request clock would tell a crawler the page changed every time it
+  // fetched the sitemap.
+  const designedIndustryEntries: MetadataRoute.Sitemap = designedIndustrySlugs().map((slug) => ({
+    url: `${BASE_URL}/industries/${slug}`,
+    changeFrequency: 'monthly' as const,
+    priority: 0.8,
+  }))
+
   // Service cases — emitted inline because buildSitemapEntries doesn't
   // know the /services/* prefix yet. Same shape as industries.
   const serviceCaseEntries: MetadataRoute.Sitemap = serviceCases
@@ -305,6 +323,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...blogEntries,
     ...cmsEntries,
     ...industryEntries,
+    ...designedIndustryEntries,
     ...serviceCaseEntries,
     ...blogCategoryEntries,
     ...blogAuthorEntries,

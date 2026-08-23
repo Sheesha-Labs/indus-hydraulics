@@ -3,6 +3,7 @@ import { cache } from 'react'
 import { unstable_cache } from 'next/cache'
 import { db } from '@indus/db'
 import {
+  DESIGNED_INDUSTRY_PAGES,
   type MenuLinkType,
   type MenuLocation,
   type ResolvedNavItem,
@@ -157,6 +158,21 @@ export const getNavBrands = cache(async (): Promise<NavListEntry[]> => {
   return loadNavBrands()
 })
 
+/**
+ * The Industries dropdown: designed pages first, then the published table rows.
+ *
+ * The designed pages have no `industries` row — see `industry-pages.ts` — so
+ * they have to be unioned in here or the header's Industries menu is the one
+ * place on the site that does not know they exist.
+ *
+ * `navName` rather than `card.name`: the dropdown is a narrow column, and the
+ * index card can afford a longer title than a menu row can.
+ */
 export const getNavIndustries = cache(async (): Promise<NavListEntry[]> => {
-  return loadNavIndustries()
+  const rows = await loadNavIndustries()
+  const designed = DESIGNED_INDUSTRY_PAGES.map((page) => ({
+    slug: page.slug,
+    name: page.card.navName,
+  }))
+  return [...designed, ...rows]
 })

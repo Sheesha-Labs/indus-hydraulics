@@ -54,6 +54,14 @@ const MAX_BYTES = 25 * 1024 * 1024
 // Kept deliberately tight. The design's copy offers JPG/PNG/HEIC/PDF; the
 // existing form additionally advertised STEP and DWG, which engineers really
 // do send, so both CAD types are accepted. Anything executable is not.
+//
+// The spreadsheet and archive types below were added for the industry pages,
+// where the ask is explicitly "drawing, BOM or specification" — a BOM arrives
+// as a workbook and a multi-part drawing set arrives zipped. Neither widens the
+// real surface: `application/octet-stream` is already on the list because
+// browsers leave `type` empty for CAD files they do not recognise, so arbitrary
+// bytes could always be uploaded. What these entries buy is a correct extension
+// on the stored object, so the desk can open the file it was sent.
 const ALLOWED = new Map<string, string>([
   ['application/pdf', 'pdf'],
   ['image/jpeg', 'jpg'],
@@ -63,6 +71,14 @@ const ALLOWED = new Map<string, string>([
   ['image/webp', 'webp'],
   ['model/step', 'step'],
   ['application/step', 'step'],
+  ['image/vnd.dwg', 'dwg'],
+  ['application/acad', 'dwg'],
+  ['image/vnd.dxf', 'dxf'],
+  ['application/dxf', 'dxf'],
+  ['application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'xlsx'],
+  ['application/vnd.ms-excel', 'xls'],
+  ['application/zip', 'zip'],
+  ['application/x-zip-compressed', 'zip'],
   ['application/octet-stream', 'bin'],
 ])
 

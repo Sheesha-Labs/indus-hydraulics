@@ -278,7 +278,7 @@ export default function DesignFoundationPage() {
         </div>
 
         <div className="mt-6">
-          <HairlineGrid>
+          <HairlineGrid columns={4}>
             {[
               ['WELLHEAD & BOP', 'Pressure control', 'Rated to API 6A/16A.'],
               ['ROTATING', 'Top drive & swivel', 'Seal kits and rebuilds.'],

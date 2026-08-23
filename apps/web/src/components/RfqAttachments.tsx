@@ -33,7 +33,7 @@ type Row = {
 
 const MAX_BYTES = 25 * 1024 * 1024
 const MAX_FILES = 6
-const ACCEPT = '.pdf,.jpg,.jpeg,.png,.heic,.heif,.webp,.step,.stp,.dwg,.dxf'
+const ACCEPT = '.pdf,.jpg,.jpeg,.png,.heic,.heif,.webp,.step,.stp,.dwg,.dxf,.xlsx,.xls,.zip'
 
 function humanSize(bytes: number): string {
   if (bytes < 1024) return `${bytes} B`
@@ -41,7 +41,28 @@ function humanSize(bytes: number): string {
   return `${(bytes / (1024 * 1024)).toFixed(1)} MB`
 }
 
-export default function RfqAttachments({ name = 'attachments' }: { name?: string }) {
+/**
+ * `label` and `hint` are overridable because the copy is placement-specific,
+ * not component-specific: the market forms ask for "drawings, schedules,
+ * nameplate photos" from someone replacing a failed part, the industry pages
+ * ask for a drawing or BOM from someone specifying a build. The defaults are
+ * the market wording, so existing callers are untouched.
+ *
+ * `inputId` lets a caller address the file input from elsewhere on the page —
+ * the industry pages' "Submit drawing or BOM" buttons scroll to the form and
+ * focus it, which needs a known id rather than a generated one.
+ */
+export default function RfqAttachments({
+  name = 'attachments',
+  label = 'Attachments — drawings, schedules, nameplate photos',
+  hint,
+  inputId,
+}: {
+  name?: string
+  label?: string
+  hint?: string
+  inputId?: string
+}) {
   const [rows, setRows] = useState<Row[]>([])
   const [dragging, setDragging] = useState(false)
   const inputRef = useRef<HTMLInputElement>(null)
@@ -117,7 +138,8 @@ export default function RfqAttachments({ name = 'attachments' }: { name?: string
     [upload],
   )
 
-  const fileInputId = useId()
+  const autoId = useId()
+  const fileInputId = inputId ?? autoId
   const ready = rows.filter((r) => r.status === 'done' && r.uploaded).map((r) => r.uploaded!)
   const busy = rows.some((r) => r.status === 'uploading')
 
@@ -133,7 +155,7 @@ export default function RfqAttachments({ name = 'attachments' }: { name?: string
         htmlFor={fileInputId}
         className="mb-1.5 block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted"
       >
-        Attachments — drawings, schedules, nameplate photos
+        {label}
       </label>
 
       {/* The paths, not the bytes, travel with the form. */}
@@ -168,7 +190,7 @@ export default function RfqAttachments({ name = 'attachments' }: { name?: string
           </button>
         </p>
         <p className="mt-1.5 font-mono text-[10.5px] text-ih-muted">
-          PDF · JPG · PNG · HEIC · STEP · DWG — up to 25 MB each, {MAX_FILES} files
+          {hint ?? `PDF · JPG · PNG · HEIC · STEP · DWG — up to 25 MB each`}, {MAX_FILES} files
         </p>
         <input
           ref={inputRef}
