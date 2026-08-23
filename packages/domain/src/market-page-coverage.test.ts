@@ -224,12 +224,16 @@ describe('coverage — geo as an alias array', () => {
   const aliased = MARKET_PAGE_RECORDS.filter((p) => p.map.geoNames.length > 1)
 
   it('is still reachable', () => {
-    expect(aliased.map((p) => p.slug).sort()).toEqual([
-      'dr-congo',
-      'equatorial-guinea',
-      'ivory-coast',
-      'republic-of-congo',
-    ])
+    // A count and a floor, not a fixed list — wave 2 and wave 3 both added
+    // markets whose trade name differs from Natural Earth's spelling, and a
+    // hard-coded list breaks every time one arrives. What matters is that the
+    // mechanism is exercised at all, and that nothing declares an alias array
+    // it does not need.
+    expect(aliased.length).toBeGreaterThanOrEqual(4)
+    for (const page of aliased) {
+      const unique = new Set(page.map.geoNames)
+      expect(unique.size, `${page.slug} repeats a geo name`).toBe(page.map.geoNames.length)
+    }
   })
 
   it('carries the Natural Earth spelling, not just the trade name', () => {

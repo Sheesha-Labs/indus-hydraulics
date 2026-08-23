@@ -2819,6 +2819,439 @@ const BULGARIA: MarketPage = {
   },
 }
 
+
+// ─────────────────────────────────────────────────────────────────────────────
+// THE ADRIATIC AND THE WESTERN BALKANS
+//
+// Eight markets on one short sea lane and two completely different customs
+// stories. Slovenia and Croatia are inside the union with their own ports, so
+// goods clear once and move domestically. The other six are outside it: some
+// have a port and make their own entry, and the landlocked ones carry a
+// transit file through a neighbour on top of their own declaration.
+//
+// That EU/non-EU line is the differentiator on every page here. It is also the
+// commonest thing to get wrong, because the countries sit side by side and
+// share a coastline.
+// ─────────────────────────────────────────────────────────────────────────────
+
+/** Through Suez, up the Adriatic — the shared leg for the whole cluster. */
+const ADRIATIC = [
+  ...SUEZ_TO_MED,
+  [26.0, 33.5],
+  [20.0, 35.5],
+  [17.5, 38.5],
+  [18.5, 41.5],
+] as const
+
+const SLOVENIA: MarketPage = {
+  slug: 'slovenia',
+  regulatoryCopy: 'unverified',
+  released: false,
+  lane: 'DXB → SI',
+  dialCode: '+386',
+  currency: 'EUR',
+  localName: 'Slovenija',
+  lede: 'Slovenia has the shortest route from Suez into central Europe and most of what lands at Koper is not for Slovenia. The port clears goods into the customs union for Austria, Hungary, Czechia and southern Germany, which makes it a gate first and a market second. Slovenian industry itself is machinery and white goods — precise, export-oriented, and interested in the pattern a destination market needs rather than the one next door.',
+  facts: [
+    { label: 'Typical transit', value: 'Typically 17–23 days by sea from dispatch' },
+    {
+      label: 'Freight',
+      value: 'Sea freight from Jebel Ali through Suez and up the Adriatic to Koper · Trieste where the berth suits · Air freight into Ljubljana where the schedule is tighter',
+    },
+    { label: 'Incoterms 2020', value: 'CIF Koper · DAP to the buyer’s site · FOB Jebel Ali · EXW Dubai for a nominated forwarder' },
+    {
+      label: 'Documentation',
+      value:
+        'CE marking and the PED declaration where the assembly is above threshold · REACH position on the elastomer compounds · Certificate of Origin, Dubai Chamber attested · EU customs entry raised by the importer',
+    },
+  ],
+  manifest: [
+    { label: 'Origin', value: 'Jebel Ali · Dubai' },
+    { label: 'Primary mode', value: 'Sea, via Suez' },
+    { label: 'Port of entry', value: 'Koper' },
+    { label: 'Transit', value: '17–23 days' },
+    { label: 'Quoted in', value: 'EUR' },
+    { label: 'Docs prepared', value: 'Before the vessel sails' },
+  ],
+  map: {
+    geoNames: ['Slovenia'],
+    fit: 'crossing',
+    origin: [55.03, 25.01],
+    originLabel: 'JEBEL ALI · DXB',
+    crossing: { name: 'KOPER · PORT', coords: [13.73, 45.55], legend: 'Port of entry', dx: -11, dy: 10, anchor: 'end' },
+    routes: [
+      { mode: 'SEA · SUEZ', primary: true, points: leg(ADRIATIC, [15.5, 43.5], [13.73, 45.55]) },
+      { mode: 'AIR', points: leg(EUROPE_AIR, [14.46, 46.22]) },
+    ],
+  },
+  freight: [
+    { name: 'Sea, FCL', transit: '17–23 days', route: 'Jebel Ali to Koper, via Suez', useCase: 'Default for most orders' },
+    { name: 'Air freight', transit: '2–4 days', route: 'DXB to LJU, with a connection', useCase: 'When the line is down' },
+    { name: 'Sea, LCL', transit: '23–31 days', route: 'Consolidated, with transhipment', useCase: 'Small mixed orders' },
+  ],
+  orderSteps: {
+    third: 'Whether Koper is the destination or the gate is settled first, because a consignment continuing inland is quoted to the delivery address rather than the quay.',
+    fourth: 'Goods sail from Jebel Ali through Suez to Koper, and you get the paperwork and tracking together.',
+  },
+  cities: [
+    { name: 'Koper', coords: [13.73, 45.55], region: 'Coastal–Karst' },
+    { name: 'Ljubljana', coords: [14.51, 46.06], region: 'Central Slovenia', plot: true, dx: 9, dy: -5 },
+    { name: 'Maribor', coords: [15.65, 46.56], region: 'Drava', plot: true, dx: 9, dy: -4 },
+    { name: 'Celje', coords: [15.27, 46.23], region: 'Savinja', plot: true, dx: 9, dy: 6 },
+    { name: 'Kranj', coords: [14.36, 46.24], region: 'Upper Carniola', plot: true, dx: -9, dy: -4, anchor: 'end' },
+    { name: 'Velenje', coords: [15.11, 46.36], region: 'Savinja' },
+    { name: 'Novo Mesto', coords: [15.17, 45.8], region: 'Southeast Slovenia', plot: true, dx: 9, dy: 8 },
+    { name: 'Jesenice', coords: [14.06, 46.43], region: 'Upper Carniola' },
+    { name: 'Nova Gorica', coords: [13.65, 45.96], region: 'Gorizia', plot: true, dx: -9, dy: -4, anchor: 'end' },
+    { name: 'Trbovlje', coords: [15.05, 46.15], region: 'Central Sava' },
+    { name: 'Murska Sobota', coords: [16.17, 46.66], region: 'Mura' },
+    { name: 'Ptuj', coords: [15.87, 46.42], region: 'Drava' },
+  ],
+  sectors: [
+    { slug: 'construction', name: 'Construction', description: 'Excavator, crane and batching-plant hydraulics — and the machinery builders exporting them.' },
+    { slug: 'steel', name: 'Steel & Metals', description: 'High-force cylinders and servo valves for the Jesenice and Ravne forming lines.' },
+    { slug: 'power', name: 'Power & Energy', description: 'Actuator and governor hydraulics for the Sava hydro cascade and thermal plant.' },
+    { slug: 'marine', name: 'Marine & Offshore', description: 'Deck machinery and terminal hydraulics for the Koper port fleet.' },
+    { slug: 'mining', name: 'Mining', description: 'Lignite at Velenje and aggregate plant — dust-rated, high-cycle components.' },
+    { slug: 'oil-gas', name: 'Oil & Gas', description: 'Terminal and process support, and packages built here for export.' },
+  ],
+  faqs: [
+    { question: 'Do you have a branch in Slovenia?', answer: 'No. Slovenia is supplied from our Dubai warehouse, by sea through Suez and up the Adriatic into Koper.' },
+    {
+      question: 'Is Koper a gate or a destination for our cargo?',
+      answer:
+        'Often a gate. Koper clears goods into free circulation for Austria, Hungary, Czechia and southern Germany, and it is the shortest route from Suez into central Europe. If your delivery is inland we quote to the address rather than stopping at the quay.',
+    },
+    { question: 'Do we need CE marking?', answer: 'For a hose assembly above the pressure-volume threshold in PED 2014/68/EU, yes, and the declaration travels with the goods. Below it, sound engineering practice applies and there is no mark.' },
+    { question: 'Why is Koper faster than a northern port?', answer: 'Because it does not require carrying on past Gibraltar and up the Atlantic. For central European delivery the Adriatic saves most of a week over Hamburg or Rotterdam.' },
+    { question: 'Why buy from Dubai rather than locally?', answer: 'For a standard item you should not. The consistent reason is a machine being built here for export — a GOST coupling, an API-monogrammed assembly, an SS316L thread form — held as stock rather than ordered from a factory queue.' },
+    { question: 'Can you deliver on to Austria or Hungary from Koper?', answer: 'Yes. Once entered into free circulation the inland leg is domestic movement, so a delivery in Graz or Budapest is a road quote rather than a second customs file.' },
+    { question: 'What currency do you quote in?', answer: 'EUR. Slovenia is in the eurozone, so the Estimate, the invoice and the customs value all carry the same figure with nothing to convert.' },
+    { question: 'What is your REACH position?', answer: 'We state it on the elastomer compounds at quotation, including where a compound carries a restriction relevant to your application.' },
+  ],
+  compliance: {
+    heading: 'The shortest way from Suez into central Europe',
+    body:
+      'Koper’s value is geographic and it belongs to more countries than Slovenia. A container discharged here is entered into free circulation for the whole customs union and is a few hours from Graz, most of a day from Budapest or Vienna, and materially closer to southern Germany than the same box routed round Iberia to Hamburg. That makes the first question on any consignment whether Slovenia is the destination or the gate — and if it is the gate, the useful quotation runs to the inland address rather than stopping at the quay, because the leg beyond the port is domestic movement rather than a second customs event. For Slovenian industry itself the pattern is the familiar central European one: machinery built for export, needing the destination market’s standard rather than the local one. Product documentation is the ordinary European set.',
+    documents: [
+      { ref: 'EU-ENTRY', name: 'Customs entry into free circulation', issuer: 'The importer, through Slovenian Customs', when: 'On arrival' },
+      { ref: 'PED', name: 'Declaration of conformity, assemblies above threshold', issuer: 'Us, as the assembler', when: 'Before dispatch' },
+      { ref: 'REACH', name: 'Compound position on the elastomers supplied', issuer: 'Us, at quotation', when: 'At quotation' },
+      { ref: 'COO', name: 'Certificate of Origin', issuer: 'Dubai Chamber attested', when: 'Before dispatch' },
+      { ref: 'MTC', name: 'Material and test certificates', issuer: 'Mill, or our test bench', when: 'Where the order calls for them' },
+    ],
+  },
+}
+
+const CROATIA: MarketPage = {
+  slug: 'croatia',
+  regulatoryCopy: 'unverified',
+  released: false,
+  lane: 'DXB → HR',
+  dialCode: '+385',
+  currency: 'EUR',
+  localName: 'Hrvatska',
+  lede: 'Croatia has two ports doing different jobs. Rijeka is the container gate and a corridor into Hungary and beyond; Ploče exists largely to serve Bosnia and Herzegovina, which has almost no coast of its own. For Croatian industry the demand is shipyards, refineries and tourism-driven marine work — and, unusually for this region, a genuine domestic fleet that buys spares against class approvals rather than plant schedules.',
+  facts: [
+    { label: 'Typical transit', value: 'Typically 18–24 days by sea from dispatch' },
+    {
+      label: 'Freight',
+      value: 'Sea freight from Jebel Ali through Suez and up the Adriatic to Rijeka · Ploče for the south and Bosnian transit · Air freight into Zagreb where the schedule is tighter',
+    },
+    { label: 'Incoterms 2020', value: 'CIF Rijeka · DAP to the buyer’s site · FOB Jebel Ali · EXW Dubai for a nominated forwarder' },
+    {
+      label: 'Documentation',
+      value:
+        'CE marking and the PED declaration where the assembly is above threshold · Class society approval where the item is for marine service · Certificate of Origin, Dubai Chamber attested · EU customs entry raised by the importer',
+    },
+  ],
+  manifest: [
+    { label: 'Origin', value: 'Jebel Ali · Dubai' },
+    { label: 'Primary mode', value: 'Sea, via Suez' },
+    { label: 'Port of entry', value: 'Rijeka' },
+    { label: 'Transit', value: '18–24 days' },
+    { label: 'Quoted in', value: 'EUR' },
+    { label: 'Docs prepared', value: 'Before the vessel sails' },
+  ],
+  map: {
+    geoNames: ['Croatia'],
+    fit: 'crossing',
+    origin: [55.03, 25.01],
+    originLabel: 'JEBEL ALI · DXB',
+    crossing: { name: 'RIJEKA · PORT', coords: [14.44, 45.33], legend: 'Port of entry', dx: -11, dy: 10, anchor: 'end' },
+    routes: [
+      { mode: 'SEA · SUEZ', primary: true, points: leg(ADRIATIC, [16.0, 43.0], [14.9, 44.6], [14.44, 45.33]) },
+      { mode: 'AIR', points: leg(EUROPE_AIR, [16.07, 45.74]) },
+    ],
+  },
+  freight: [
+    { name: 'Sea, FCL', transit: '18–24 days', route: 'Jebel Ali to Rijeka, via Suez', useCase: 'Default for most orders' },
+    { name: 'Air freight', transit: '2–4 days', route: 'DXB to ZAG, with a connection', useCase: 'When the line is down' },
+    { name: 'Sea via Ploče', transit: '20–26 days', route: 'Ploče, for the south and Bosnian transit', useCase: 'Southern and Bosnian cargo' },
+  ],
+  orderSteps: {
+    third:
+      'The port is chosen against the delivery region, and where the cargo continues into Bosnia the transit file is raised at the port rather than after the goods have been entered for Croatian free circulation.',
+    fourth: 'Goods sail from Jebel Ali through Suez and up the Adriatic, and you get the paperwork and tracking together.',
+  },
+  cities: [
+    { name: 'Rijeka', coords: [14.44, 45.33], region: 'Primorje-Gorski Kotar' },
+    { name: 'Zagreb', coords: [15.98, 45.81], region: 'Zagreb', plot: true, dx: 9, dy: -5 },
+    { name: 'Split', coords: [16.44, 43.51], region: 'Split-Dalmatia', plot: true, dx: 9, dy: 6 },
+    { name: 'Ploče', coords: [17.43, 43.05], region: 'Dubrovnik-Neretva', plot: true, dx: 9, dy: 8 },
+    { name: 'Osijek', coords: [18.69, 45.55], region: 'Osijek-Baranja', plot: true, dx: 9, dy: -4 },
+    { name: 'Sisak', coords: [16.37, 45.49], region: 'Sisak-Moslavina' },
+    { name: 'Slavonski Brod', coords: [18.01, 45.16], region: 'Brod-Posavina' },
+    { name: 'Karlovac', coords: [15.55, 45.49], region: 'Karlovac' },
+    { name: 'Varaždin', coords: [16.34, 46.31], region: 'Varaždin', plot: true, dx: -9, dy: -4, anchor: 'end' },
+    { name: 'Pula', coords: [13.85, 44.87], region: 'Istria', plot: true, dx: -9, dy: 6, anchor: 'end' },
+    { name: 'Zadar', coords: [15.23, 44.12], region: 'Zadar' },
+    { name: 'Dubrovnik', coords: [18.09, 42.65], region: 'Dubrovnik-Neretva' },
+  ],
+  sectors: [
+    { slug: 'marine', name: 'Marine & Offshore', description: 'Shipyard and fleet work at Pula, Rijeka and Split — deck, steering and mooring hydraulics with class certificates.' },
+    { slug: 'oil-gas', name: 'Oil & Gas', description: 'Refinery and terminal support at Rijeka and Sisak.' },
+    { slug: 'construction', name: 'Construction', description: 'Excavator, crane and batching-plant hydraulics for road, port and tourism infrastructure.' },
+    { slug: 'power', name: 'Power & Energy', description: 'Actuator and governor hydraulics for hydro and thermal generation.' },
+    { slug: 'steel', name: 'Steel & Metals', description: 'Cylinders and valves for fabrication and forming lines.' },
+    { slug: 'mining', name: 'Mining', description: 'Dust-rated, high-cycle components for cement, aggregate and quarry plant.' },
+  ],
+  faqs: [
+    { question: 'Do you have a branch in Croatia?', answer: 'No. Croatia is supplied from our Dubai warehouse, by sea through Suez and up the Adriatic into Rijeka or Ploče.' },
+    { question: 'Rijeka or Ploče?', answer: 'Rijeka for containers, the north and the Hungarian corridor. Ploče for the south and for anything continuing into Bosnia and Herzegovina, which it largely exists to serve.' },
+    {
+      question: 'Can you ship on to Bosnia through a Croatian port?',
+      answer:
+        'Yes, and it is the normal routing. Bosnia is outside the customs union, so the goods travel under transit rather than entering Croatian free circulation. Tell us at quotation — raising a transit file after a Croatian entry is the expensive way round.',
+    },
+    { question: 'Do you supply to class society approval?', answer: 'Where the specification names one, tell us the society and the approval at quotation and we will say plainly whether the item carries it rather than letting survey discover it.' },
+    { question: 'Do we need CE marking?', answer: 'For a hose assembly above the pressure-volume threshold in PED 2014/68/EU, yes, and the declaration travels with the goods. Below it, sound engineering practice applies and there is no mark.' },
+    { question: 'Can you deliver to the yards?', answer: 'Yes, on DAP terms to Pula, Rijeka or Split. The road leg is domestic movement and it is priced with the order.' },
+    { question: 'What currency do you quote in?', answer: 'EUR. Croatia is in the eurozone, so the Estimate, the invoice and the customs value all carry the same figure with nothing to convert.' },
+    { question: 'Why buy from Dubai rather than locally?', answer: 'For a standard item you should not. The reason is the pattern or the class-approved item held as stock rather than ordered from a factory queue.' },
+  ],
+  compliance: {
+    heading: 'Two ports, and one of them is mostly for the neighbours',
+    body:
+      'Croatia is inside the customs union, so its own consignments clear once at Rijeka or Ploče and move domestically. What complicates this lane is that Ploče exists in large part to serve Bosnia and Herzegovina, which is outside the union and has almost no coastline. Cargo for Bosnia must travel under transit rather than being entered into Croatian free circulation, and the two are not interchangeable: goods entered for Croatia and then moved onward have paid for an entry they did not need and still require a Bosnian declaration. We ask at quotation which side of that line a consignment falls on and raise the file accordingly. For Croatian cargo the documentation is the ordinary European set, with the addition that a genuine domestic fleet buys against class society approvals — so the certificate travels with the item rather than the invoice.',
+    documents: [
+      { ref: 'EU-ENTRY', name: 'Customs entry into free circulation, for Croatian cargo', issuer: 'The importer, through Croatian Customs', when: 'On arrival' },
+      { ref: 'T1', name: 'Transit declaration, where the cargo continues to Bosnia', issuer: 'The forwarder, at Rijeka or Ploče', when: 'Before the onward leg' },
+      { ref: 'CLASS', name: 'Class society approval, where the specification names one', issuer: 'The society, via the manufacturer', when: 'At quotation, per product' },
+      { ref: 'PED', name: 'Declaration of conformity, assemblies above threshold', issuer: 'Us, as the assembler', when: 'Before dispatch' },
+      { ref: 'COO', name: 'Certificate of Origin', issuer: 'Dubai Chamber attested', when: 'Before dispatch' },
+    ],
+  },
+}
+
+
+const SERBIA: MarketPage = {
+  slug: 'serbia',
+  regulatoryCopy: 'unverified',
+  released: false,
+  lane: 'DXB → RS',
+  dialCode: '+381',
+  currency: 'EUR',
+  localName: 'Србија',
+  lede: 'Serbia is landlocked and outside the customs union, which means every consignment carries two files: a transit through whichever member state it lands in, and a Serbian entry at the border. Rijeka and Koper are the usual gates, Thessaloniki and Constanța the alternatives. The industry behind it is real — copper at Bor, steel at Smederevo, an automotive supply chain — and the reason to import is the pattern those plants need for equipment they are exporting.',
+  facts: [
+    { label: 'Typical transit', value: 'Typically 22–30 days from dispatch, sea and road combined' },
+    {
+      label: 'Freight',
+      value:
+        'Sea freight from Jebel Ali through Suez to Rijeka or Koper, then bonded road through Batrovci · Thessaloniki and the Corridor X where the southern gate suits · Air freight into Belgrade where the schedule is tighter',
+    },
+    { label: 'Incoterms 2020', value: 'DAP to the buyer’s site · CIF Rijeka · FOB Jebel Ali · EXW Dubai for a nominated forwarder' },
+    {
+      label: 'Documentation',
+      value:
+        'EU transit declaration for the bonded move · Serbian customs entry raised by the importer · Serbian conformity mark where the line is regulated · Certificate of Origin, Dubai Chamber attested',
+    },
+  ],
+  manifest: [
+    { label: 'Origin', value: 'Jebel Ali · Dubai' },
+    { label: 'Primary mode', value: 'Sea + road' },
+    { label: 'Border crossing', value: 'Batrovci · Bajakovo' },
+    { label: 'Transit', value: '22–30 days' },
+    { label: 'Quoted in', value: 'EUR' },
+    { label: 'Docs prepared', value: 'Before the vessel sails' },
+  ],
+  map: {
+    geoNames: ['Serbia'],
+    fit: 'crossing',
+    origin: [55.03, 25.01],
+    originLabel: 'JEBEL ALI · DXB',
+    crossing: { name: 'BATROVCI · BAJAKOVO', coords: [19.15, 45.1], dx: -11, dy: 10, anchor: 'end' },
+    routes: [
+      { mode: 'SEA + ROAD', primary: true, points: leg(ADRIATIC, [16.0, 43.0], [14.9, 44.6], [14.44, 45.33], [16.0, 45.5], [19.15, 45.1]) },
+      { mode: 'AIR', points: leg(EUROPE_AIR, [20.29, 44.82]) },
+    ],
+  },
+  freight: [
+    { name: 'Sea + road', transit: '22–30 days', route: 'Rijeka or Koper, then bonded through Batrovci', useCase: 'Default for most orders' },
+    { name: 'Air freight', transit: '2–4 days', route: 'DXB to BEG', useCase: 'When the line is down' },
+    { name: 'Sea + road, southern', transit: '24–32 days', route: 'Thessaloniki and Corridor X', useCase: 'When the southern gate suits' },
+  ],
+  orderSteps: {
+    third:
+      'The EU transit declaration and the Serbian entry are raised from the same invoice and packing list, so the two agree line for line before the truck reaches Batrovci.',
+    fourth: 'Goods sail to Rijeka or Koper and come on by bonded road, and you get the paperwork and tracking together.',
+  },
+  cities: [
+    { name: 'Belgrade', coords: [20.46, 44.79], region: 'Belgrade', plot: true, dx: 9, dy: -5 },
+    { name: 'Novi Sad', coords: [19.83, 45.26], region: 'Vojvodina', plot: true, dx: 9, dy: -4 },
+    { name: 'Subotica', coords: [19.67, 46.1], region: 'Vojvodina' },
+    { name: 'Pančevo', coords: [20.64, 44.87], region: 'Vojvodina' },
+    { name: 'Smederevo', coords: [20.93, 44.66], region: 'Šumadija', plot: true, dx: 9, dy: 6 },
+    { name: 'Kragujevac', coords: [20.91, 44.01], region: 'Šumadija', plot: true, dx: 9, dy: 4 },
+    { name: 'Bor', coords: [22.1, 44.07], region: 'Eastern Serbia', plot: true, dx: 9, dy: -4 },
+    { name: 'Majdanpek', coords: [21.94, 44.42], region: 'Eastern Serbia' },
+    { name: 'Niš', coords: [21.9, 43.32], region: 'Southern Serbia', plot: true, dx: 9, dy: 4 },
+    { name: 'Čačak', coords: [20.35, 43.89], region: 'Šumadija' },
+    { name: 'Kruševac', coords: [21.33, 43.58], region: 'Southern Serbia' },
+    { name: 'Užice', coords: [19.85, 43.86], region: 'Western Serbia', plot: true, dx: -9, dy: 6, anchor: 'end' },
+    { name: 'Šabac', coords: [19.69, 44.75], region: 'Western Serbia' },
+    { name: 'Zrenjanin', coords: [20.39, 45.38], region: 'Vojvodina' },
+    { name: 'Loznica', coords: [19.22, 44.53], region: 'Western Serbia' },
+    { name: 'Vranje', coords: [21.9, 42.55], region: 'Southern Serbia' },
+  ],
+  sectors: [
+    { slug: 'mining', name: 'Mining', description: 'Copper and gold at Bor and Majdanpek — dust-rated, high-cycle components for shovel and mill.' },
+    { slug: 'steel', name: 'Steel & Metals', description: 'High-force cylinders and servo valves for the Smederevo rolling lines.' },
+    { slug: 'construction', name: 'Construction', description: 'Excavator, crane and batching-plant hydraulics for the corridor road and rail programme.' },
+    { slug: 'power', name: 'Power & Energy', description: 'Actuator and governor hydraulics for lignite, hydro and thermal plant.' },
+    { slug: 'oil-gas', name: 'Oil & Gas', description: 'Refinery and terminal support at Pančevo and Novi Sad.' },
+    { slug: 'marine', name: 'Marine & Offshore', description: 'Winch and deck hydraulics for the Danube barge and river fleet.' },
+  ],
+  faqs: [
+    { question: 'Do you have a branch in Serbia?', answer: 'No. Serbia is supplied from our Dubai warehouse, by sea to Rijeka or Koper and then by bonded road through Batrovci.' },
+    {
+      question: 'Why does Serbia take longer than Croatia?',
+      answer:
+        'Because it is Croatia plus a border. Serbia is outside the customs union, so the goods travel under EU transit rather than entering free circulation, and a Serbian declaration is made at Batrovci. The sea leg is identical; the difference is the second file and the crossing.',
+    },
+    { question: 'What certification do we need?', answer: 'Where a line falls under a Serbian technical regulation a conformity mark applies and is arranged before shipment. Much industrial hose and fittings sits outside it, and the part list settles which at quotation.' },
+    { question: 'What is the real variable on this lane?', answer: 'The border. The transit declaration and the Serbian entry describe the same goods and must agree line for line; where they do not, the truck waits at Batrovci rather than at either customs office.' },
+    { question: 'Can you route through Thessaloniki instead?', answer: 'Yes, on Corridor X, and for southern Serbia it is sometimes the better answer. We compare both against the delivery town rather than defaulting to the Adriatic.' },
+    { question: 'Can you deliver to the Bor mine?', answer: 'Yes, on DAP terms to the mine gate. The road leg east from Belgrade is quoted rather than estimated.' },
+    { question: 'What currency do you quote in?', answer: 'EUR. Our export desk settles European trade in euros; we do not quote in dinars, and the Estimate, invoice and customs value all carry the same figure.' },
+    { question: 'Why buy from Dubai rather than locally?', answer: 'For a standard item you should not. The reason is the pattern a plant needs for equipment it is exporting — GOST couplings, API-monogrammed assemblies, SS316L thread forms — held as stock rather than ordered from a factory queue.' },
+  ],
+  compliance: {
+    heading: 'Two files, and the border decides',
+    body:
+      'Serbia sits inside Europe and outside the customs union, so every consignment carries two customs documents rather than one. The goods land at Rijeka, Koper or Thessaloniki and travel under EU transit bond to the frontier, where a Serbian entry is made. Those two declarations describe the same cargo and have to agree line for line — a description or a quantity that differs stops the truck at Batrovci rather than at either customs office, and a border post is the most expensive place to resolve a discrepancy. We raise both from the same invoice and packing list before the vessel sails. On the product side, Serbia applies technical regulations to a defined list; a great deal of industrial hose and fittings falls outside it, and where a line is inside the conformity mark is arranged at origin rather than discovered at the crossing.',
+    documents: [
+      { ref: 'T1', name: 'EU transit declaration for the bonded move', issuer: 'The forwarder, at the port of discharge', when: 'Before the road leg' },
+      { ref: 'JCI', name: 'Serbian customs import declaration', issuer: 'The importer, through the Customs Administration', when: 'At the border' },
+      { ref: 'CONF', name: 'Serbian conformity mark, where the line is regulated', issuer: 'Accredited body', when: 'At quotation, per product' },
+      { ref: 'COO', name: 'Certificate of Origin', issuer: 'Dubai Chamber attested', when: 'Before dispatch' },
+      { ref: 'MTC', name: 'Material and test certificates', issuer: 'Mill, or our test bench', when: 'Where the order calls for them' },
+    ],
+  },
+}
+
+const BOSNIA_AND_HERZEGOVINA: MarketPage = {
+  slug: 'bosnia-and-herzegovina',
+  regulatoryCopy: 'unverified',
+  released: false,
+  lane: 'DXB → BA',
+  dialCode: '+387',
+  currency: 'EUR',
+  localName: 'Bosna i Hercegovina',
+  lede: 'Bosnia has twenty kilometres of coast and no working container port on it, so in practice it is landlocked and served through Ploče in Croatia. That makes every consignment a transit followed by a Bosnian entry at Bijača. The industry is heavier than the country’s size suggests — aluminium at Mostar, steel at Zenica, coal and hydro — and it buys against specification rather than catalogue, which is the reason a Dubai warehouse is worth calling at all.',
+  facts: [
+    { label: 'Typical transit', value: 'Typically 22–30 days from dispatch, sea and road combined' },
+    {
+      label: 'Freight',
+      value:
+        'Sea freight from Jebel Ali through Suez to Ploče, then bonded road through Bijača · Rijeka and the northern corridor for Banja Luka · Air freight into Sarajevo where the schedule is tighter',
+    },
+    { label: 'Incoterms 2020', value: 'DAP to the buyer’s site · CIF Ploče · FOB Jebel Ali · EXW Dubai for a nominated forwarder' },
+    {
+      label: 'Documentation',
+      value:
+        'EU transit declaration for the bonded move · Bosnian customs entry raised by the importer · Certificate of Origin, Dubai Chamber attested · Material and test certificates where the specification calls for them',
+    },
+  ],
+  manifest: [
+    { label: 'Origin', value: 'Jebel Ali · Dubai' },
+    { label: 'Primary mode', value: 'Sea + road' },
+    { label: 'Border crossing', value: 'Bijača · Nova Sela' },
+    { label: 'Transit', value: '22–30 days' },
+    { label: 'Quoted in', value: 'EUR' },
+    { label: 'Docs prepared', value: 'Before the vessel sails' },
+  ],
+  map: {
+    geoNames: ['Bosnia and Herz.', 'Bosnia and Herzegovina'],
+    fit: 'crossing',
+    origin: [55.03, 25.01],
+    originLabel: 'JEBEL ALI · DXB',
+    crossing: { name: 'BIJAČA · NOVA SELA', coords: [17.55, 43.05], dx: 11, dy: 10, anchor: 'start' },
+    routes: [
+      { mode: 'SEA + ROAD', primary: true, points: leg(ADRIATIC, [17.0, 42.5], [17.43, 43.05], [17.55, 43.05], [17.81, 43.34]) },
+      { mode: 'AIR', points: leg(EUROPE_AIR, [18.33, 43.82]) },
+    ],
+  },
+  freight: [
+    { name: 'Sea + road', transit: '22–30 days', route: 'Ploče, then bonded through Bijača', useCase: 'Default for most orders' },
+    { name: 'Air freight', transit: '3–5 days', route: 'DXB to SJJ, with a connection', useCase: 'When the line is down' },
+    { name: 'Sea + road, northern', transit: '24–32 days', route: 'Rijeka and the corridor to Banja Luka', useCase: 'The north' },
+  ],
+  orderSteps: {
+    third: 'The transit declaration and the Bosnian entry are raised from the same invoice and packing list, because the border will not reconcile a difference between them.',
+    fourth: 'Goods sail to Ploče and cross at Bijača under bond, and you get the paperwork and tracking together.',
+  },
+  cities: [
+    { name: 'Sarajevo', coords: [18.41, 43.86], region: 'Federation of BiH', plot: true, dx: 9, dy: -5 },
+    { name: 'Mostar', coords: [17.81, 43.34], region: 'Federation of BiH', plot: true, dx: -9, dy: 6, anchor: 'end' },
+    { name: 'Zenica', coords: [17.91, 44.2], region: 'Federation of BiH', plot: true, dx: -9, dy: -4, anchor: 'end' },
+    { name: 'Tuzla', coords: [18.68, 44.54], region: 'Federation of BiH', plot: true, dx: 9, dy: -4 },
+    { name: 'Banja Luka', coords: [17.19, 44.77], region: 'Republika Srpska', plot: true, dx: -9, dy: -4, anchor: 'end' },
+    { name: 'Prijedor', coords: [16.71, 44.98], region: 'Republika Srpska' },
+    { name: 'Doboj', coords: [18.09, 44.73], region: 'Republika Srpska' },
+    { name: 'Bijeljina', coords: [19.22, 44.76], region: 'Republika Srpska', plot: true, dx: 9, dy: -4 },
+    { name: 'Brčko', coords: [18.81, 44.87], region: 'Brčko District' },
+    { name: 'Kakanj', coords: [18.12, 44.13], region: 'Federation of BiH' },
+    { name: 'Lukavac', coords: [18.53, 44.54], region: 'Federation of BiH' },
+    { name: 'Bijača', coords: [17.55, 43.05], region: 'Federation of BiH' },
+  ],
+  sectors: [
+    { slug: 'steel', name: 'Steel & Metals', description: 'High-force cylinders and servo valves for the Zenica steel and Mostar aluminium lines.' },
+    { slug: 'mining', name: 'Mining', description: 'Coal and bauxite in the central belt — dust-rated, high-cycle components.' },
+    { slug: 'power', name: 'Power & Energy', description: 'Actuator and governor hydraulics for the Neretva and Drina hydro cascades and thermal plant.' },
+    { slug: 'construction', name: 'Construction', description: 'Excavator, crane and batching-plant hydraulics for the corridor road programme.' },
+    { slug: 'oil-gas', name: 'Oil & Gas', description: 'Refinery and terminal support at Bosanski Brod and Modriča.' },
+    { slug: 'marine', name: 'Marine & Offshore', description: 'Winch and deck hydraulics for river and lifting equipment.' },
+  ],
+  faqs: [
+    { question: 'Do you have a branch in Bosnia and Herzegovina?', answer: 'No. Bosnia is supplied from our Dubai warehouse, by sea to Ploče in Croatia and then by bonded road through Bijača.' },
+    {
+      question: 'Bosnia has a coastline — why route through Croatia?',
+      answer:
+        'Because the twenty kilometres at Neum has no working container port. In practice the country is landlocked, and Ploče exists largely to serve it. We say so rather than implying a direct sea route that does not exist.',
+    },
+    { question: 'What certification do we need?', answer: 'There is no blanket pre-shipment conformity scheme for industrial hose and fittings. What has to be right is the transit file and the entry, and they have to match.' },
+    { question: 'What is the real variable on this lane?', answer: 'The border at Bijača. The EU transit declaration and the Bosnian entry describe the same goods and must agree line for line; a discrepancy stops the truck there rather than at either customs office.' },
+    { question: 'Can you deliver to Banja Luka?', answer: 'Yes, and for the north the Rijeka corridor is often the better routing than coming up from Ploče. We compare both against the delivery town rather than defaulting.' },
+    { question: 'Can you supply for the Zenica and Mostar plants?', answer: 'Yes — high-force cylinders, servo valves and high-temperature assemblies for steel and aluminium duty. Tell us the working temperature and the cycle rather than the part number.' },
+    { question: 'What currency do you quote in?', answer: 'EUR. Our export desk settles European trade in euros, and the Estimate, the invoice and the customs value all carry the same figure so there is no conversion to reconcile at your end.' },
+    { question: 'How far ahead should we order?', answer: 'Three to four weeks for the sea and road legs together. This is a planned-consumables lane; for a line that is down, air into Sarajevo is the honest answer and we will say so.' },
+  ],
+  compliance: {
+    heading: 'A coastline that does not help',
+    body:
+      'Bosnia and Herzegovina has about twenty kilometres of Adriatic coast at Neum and no working container port on it, so for freight purposes the country is landlocked. The practical route is Ploče in Croatia — a port that exists in large part to serve Bosnia — followed by a bonded road move and a Bosnian entry at Bijača. That means two customs documents describing the same cargo, raised from the same invoice and packing list, agreeing line for line. Where they do not, the truck stops at the crossing rather than at either customs office. There is no blanket product conformity scheme to satisfy, which makes this a lane where everything that can go wrong is on the transit file and everything on the transit file can be prepared before the vessel sails. For the north, the Rijeka corridor into Banja Luka is often the better routing and we compare the two rather than defaulting to Ploče.',
+    documents: [
+      { ref: 'T1', name: 'EU transit declaration for the bonded move', issuer: 'The forwarder, at Ploče or Rijeka', when: 'Before the road leg' },
+      { ref: 'JCI', name: 'Bosnian customs import declaration', issuer: 'The importer, through the Indirect Taxation Authority', when: 'At the border' },
+      { ref: 'COO', name: 'Certificate of Origin', issuer: 'Dubai Chamber attested', when: 'Before dispatch' },
+      { ref: 'MTC', name: 'Material and test certificates', issuer: 'Mill, or our test bench', when: 'Where the specification calls for them' },
+      { ref: 'BL', name: 'Bill of lading or air waybill', issuer: 'The carrier', when: 'On dispatch' },
+    ],
+  },
+}
+
 export const MARKET_PAGE_RECORDS_3: readonly MarketPage[] = [
   TURKEY,
   NORWAY,
@@ -2845,4 +3278,8 @@ export const MARKET_PAGE_RECORDS_3: readonly MarketPage[] = [
   MALTA,
   ROMANIA,
   BULGARIA,
+  SLOVENIA,
+  CROATIA,
+  SERBIA,
+  BOSNIA_AND_HERZEGOVINA,
 ]
