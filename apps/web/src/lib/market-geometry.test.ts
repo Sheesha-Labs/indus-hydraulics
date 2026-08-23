@@ -142,12 +142,31 @@ describe('lane routing through sanctioned territory', { timeout: 60_000 }, () =>
 
   const WATCHED = ['Iran', 'Russia', 'Belarus'] as const
 
+  /**
+   * A market's own geography is not a transit violation.
+   *
+   * The rule forbids ROUTING THROUGH a watched jurisdiction on the way to
+   * somewhere else. It cannot forbid a waypoint inside the destination itself,
+   * or a page for Russia could not draw a line to a Russian port — which is
+   * the wrong reading of a rule about transit. `geoNames` identifies the
+   * destination, so a record is exempted from its own territory and from
+   * nowhere else.
+   */
+  const DESTINATION_ALIASES: Record<string, readonly string[]> = {
+    Russia: ['Russia'],
+    Belarus: ['Belarus'],
+    Iran: ['Iran'],
+  }
+
   function crossings(filter: (mode: string) => boolean) {
     const out: string[] = []
     for (const page of MARKET_PAGE_RECORDS) {
+      const isOwnTerritory = (country: string) =>
+        (DESTINATION_ALIASES[country] ?? [country]).some((name) => page.map.geoNames.includes(name))
       for (const route of page.map.routes) {
         if (!filter(route.mode)) continue
         for (const country of WATCHED) {
+          if (isOwnTerritory(country)) continue
           const hit = route.points.some((p) => geoContains(polygonFor(country), [p[0], p[1]]))
           if (hit) out.push(`${page.slug} · ${route.mode} · ${country}`)
         }
@@ -162,6 +181,10 @@ describe('lane routing through sanctioned territory', { timeout: 60_000 }, () =>
       long way round: down the Gulf, round Arabia, up the Red Sea, through
       Suez, across the Mediterranean and the Black Sea to Poti, then east by
       rail and ferry to Baku and Aktau. Nineteen waypoints to avoid a border.
+
+      A destination is exempt from its own territory — see DESTINATION_ALIASES.
+      Russia and Belarus have pages of their own, and a rule about transit
+      cannot forbid them from drawing a line to their own port.
     */
     expect(crossings((mode) => !mode.includes('AIR'))).toEqual([])
   })
