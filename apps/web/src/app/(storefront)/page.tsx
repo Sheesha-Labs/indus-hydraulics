@@ -393,9 +393,23 @@ export default async function HomePage({
                 href={`/c/${featuredCat.slug}`}
                 className="group flex flex-col overflow-hidden rounded-lg border border-ih-border bg-ih-surface transition-colors hover:border-ih-accent lg:col-span-2 lg:flex-row"
               >
-                {/* Visual panel — intentionally empty. Render the category
-                    artwork here (featuredCat.image) or another visual. */}
-                <div className="lg:flex-1 min-h-[220px] lg:min-h-[320px] bg-ih-surface-2 border-b lg:border-b-0 lg:border-r border-ih-border relative overflow-hidden" />
+                {/* The category feature image — a studio group shot of the real
+                    products in that category. This panel crops much squarer
+                    than the tiles below (near 4:3 on desktop, a 220px band on
+                    mobile), which is what the artwork is composed for. */}
+                <div className="lg:flex-1 min-h-[220px] lg:min-h-[320px] bg-ih-surface-2 border-b lg:border-b-0 lg:border-r border-ih-border relative overflow-hidden">
+                  {featuredCat.image && (
+                    <Image
+                      src={mediaUrl(featuredCat.image.storagePath)}
+                      alt={featuredCat.image.alt ?? featuredCat.name}
+                      fill
+                      // Half of a two-column span on desktop, full-bleed once
+                      // the card stacks at lg.
+                      sizes="(max-width: 1024px) 100vw, 30vw"
+                      className="object-cover transition-transform duration-500 group-hover:scale-[1.02]"
+                    />
+                  )}
+                </div>
                 <div className="lg:flex-1 p-8 flex flex-col justify-center gap-2.5">
                   <span className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">FEATURED CATEGORY</span>
                   <div className="flex items-baseline justify-between gap-3">
@@ -420,9 +434,18 @@ export default async function HomePage({
                 href={`/c/${cat.slug}`}
                 className="group flex flex-col overflow-hidden rounded-lg border border-ih-border bg-ih-surface transition-colors hover:border-ih-accent"
               >
-                {/* Visual panel — intentionally empty. Render the category
-                    artwork here (cat.image) or another visual. */}
-                <div className="aspect-[16/10] bg-ih-surface-2 border-b border-ih-border relative overflow-hidden" />
+                {/* The category feature image, cropped 16:10. */}
+                <div className="aspect-[16/10] bg-ih-surface-2 border-b border-ih-border relative overflow-hidden">
+                  {cat.image && (
+                    <Image
+                      src={mediaUrl(cat.image.storagePath)}
+                      alt={cat.image.alt ?? cat.name}
+                      fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 30vw"
+                      className="object-cover transition-transform duration-500 group-hover:scale-[1.02]"
+                    />
+                  )}
+                </div>
                 <div className="p-5 flex flex-col gap-2.5 flex-1">
                   <div className="flex items-baseline justify-between gap-2">
                     <h3 className="text-[18px] font-semibold tracking-[-0.015em]">{cat.name}</h3>
