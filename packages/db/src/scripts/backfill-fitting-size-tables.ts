@@ -88,6 +88,8 @@ type Payload = {
   sizeFieldCorrections: string[]
   /** Rows folded away because a listing's two source tables repeat a size. */
   duplicateRowsDropped: string[]
+  /** Part numbers the SOURCE prints twice against different sizes. */
+  sourceConflicts?: string[]
   products: Entry[]
 }
 
@@ -257,6 +259,13 @@ async function main() {
       `  · source rows whose DASH cell contradicted their own part number, taken from the part number: ` +
         payload.sizeFieldCorrections.join(', '),
     )
+  }
+  if (payload.sourceConflicts && payload.sourceConflicts.length > 0) {
+    console.log(
+      `  \u00b7 ${payload.sourceConflicts.length} part number(s) the source itself prints twice ` +
+        `against different sizes — the first printing is loaded, the second is not:`,
+    )
+    for (const c of payload.sourceConflicts) console.log(`      ${c}`)
   }
   if (payload.duplicateRowsDropped.length > 0) {
     console.log(

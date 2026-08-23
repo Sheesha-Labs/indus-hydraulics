@@ -8,6 +8,7 @@ import {
   variantBoreRange,
   variantDimensionColumns,
   variantDimensions,
+  VARIANT_DIMENSION_COLUMNS as DIMS,
   variantEndColumns,
   variantEquivalentBrand,
   variantHoseLabel,
@@ -237,5 +238,23 @@ describe('published figures', () => {
 
   it('counts a zero, which is a figure, not an absence', () => {
     expect(hasVariantWeights([v({ weightG: 0 })])).toBe(true)
+  })
+})
+
+describe('adapter dimension columns', () => {
+  it('renders the numbered runs an adapter prints', () => {
+    // An adapter has two or three ends, so it prints a length and an
+    // across-flats for each. A key the module does not know is dropped
+    // silently, which is how a whole column of the size table goes missing.
+    const cols = variantDimensionColumns([
+      { partNumber: 'x', dimensions: { L: 31, L1: 14, L2: 10.5, S1: 12 } },
+      { partNumber: 'y', dimensions: { L3: 24.5, S2: 17, D1: 6 } },
+    ])
+    expect(cols.map((c) => c.key)).toEqual(['S1', 'S2', 'D1', 'L', 'L1', 'L2', 'L3'])
+  })
+
+  it('lists every key once, in one order', () => {
+    const keys = DIMS.map((c) => c.key)
+    expect(new Set(keys).size).toBe(keys.length)
   })
 })
