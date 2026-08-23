@@ -14,6 +14,7 @@ import { JsonLd, buildWhatsappHref } from '@indus/ui'
 import MarketLanding from '../../../../components/markets/MarketLanding'
 import MarketLandingLegacy from '../../../../components/markets/MarketLandingLegacy'
 import { buildMarketMapModel } from '../../../../lib/market-geometry'
+import { getSubPageContent } from '../../../../lib/page-content'
 import { marketCatalogueClusters, marketStockedBrands } from '../../../../lib/market-catalogue'
 import { ORG_ID, SITE_NAME, pageMetadata, urlFor } from '../../../../lib/seo'
 import { getStoreSettings } from '../../../../lib/store-settings'
@@ -79,6 +80,10 @@ export default async function MarketPage({ params }: Props) {
 
   const page = releasedMarketPage(slug)
 
+  // Read before the schema is built: whether the FAQ band is on decides
+  // whether FAQPage may be emitted at all.
+  const content = await getSubPageContent('market', { name: market.name, slug: market.slug })
+
   const structuredData = [
     buildServiceLd({
       name: `Hydraulic and industrial hose supply to ${marketCountryName(market)}`,
@@ -96,9 +101,16 @@ export default async function MarketPage({ params }: Props) {
         { name: market.name, url: urlFor(`/markets/${market.slug}`) },
       ],
     }),
-    // Built from the same array the page renders, so the schema answers and
-    // the visible answers are the same strings by construction.
-    ...(page ? [buildFaqLd({ faqs: page.faqs.map((f) => ({ question: f.question, answer: f.answer })) })] : []),
+    /*
+      Built from the same array the page renders, so the schema answers and the
+      visible answers are the same strings by construction — and emitted only
+      when the FAQ band is actually ON. Google requires the answers in the
+      markup to match visible text, so a hidden band with live FAQPage markup
+      is a structured-data violation rather than merely stale.
+    */
+    ...(page && content.isOn('faq')
+      ? [buildFaqLd({ faqs: page.faqs.map((f) => ({ question: f.question, answer: f.answer })) })]
+      : []),
   ].filter((node): node is NonNullable<typeof node> => node !== null)
 
   if (!page) {
@@ -146,6 +158,7 @@ export default async function MarketPage({ params }: Props) {
           market. VERCEL_ENV is 'preview' there, and unset locally.
         */
         showAuditStrip={process.env.VERCEL_ENV !== 'production'}
+        content={content}
       />
     </>
   )

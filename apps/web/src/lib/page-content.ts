@@ -7,9 +7,12 @@ import {
   masterContentKey,
   parseStoredSections,
   resolveSections,
+  subPageContentKey,
+  subPageDef,
   type MasterPageDef,
   type ResolvedSection,
   type SectionValues,
+  type SubPageKind,
 } from '@indus/domain'
 import { mediaUrl } from './media'
 
@@ -100,6 +103,39 @@ export async function getMasterPageContent(key: string): Promise<PageContent> {
     console.error(`[page-content] failed to load master page "${key}"`, error)
     return build(resolveSections(def, null), true)
   }
+}
+
+/**
+ * Content for one sub-page — a market landing, and later a brand page.
+ *
+ * Same total contract as the master pages: a failed read renders the template
+ * exactly as it renders with no document at all, because every copy field on a
+ * sub-page is an OVERRIDE and blank means "keep the built-in wording".
+ */
+export async function getSubPageContent(
+  kind: SubPageKind,
+  record: { name: string; slug: string },
+): Promise<PageContent> {
+  const def = subPageDef(kind, record)
+  try {
+    return await hydrate(def, await readDocument(subPageContentKey(kind, record.slug)))
+  } catch (error) {
+    console.error(`[page-content] failed to load ${kind} page "${record.slug}"`, error)
+    return build(resolveSections(def, null), true)
+  }
+}
+
+/** Admin-side read: uncached, so the editor never opens on a stale document. */
+export async function getSubPageContentFresh(
+  kind: SubPageKind,
+  record: { name: string; slug: string },
+): Promise<PageContent> {
+  const def = subPageDef(kind, record)
+  const row = await db.pageContent.findUnique({
+    where: { key: subPageContentKey(kind, record.slug) },
+    select: { sections: true },
+  })
+  return hydrate(def, row?.sections ?? null)
 }
 
 /** Admin-side read: uncached, so the editor never opens on a stale document. */

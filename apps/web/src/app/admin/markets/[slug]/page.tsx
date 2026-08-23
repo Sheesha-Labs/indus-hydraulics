@@ -10,6 +10,7 @@ import { buildWhatsappHref } from '@indus/ui'
 import MarketLanding from '../../../../components/markets/MarketLanding'
 import { marketCatalogueClusters, marketStockedBrands } from '../../../../lib/market-catalogue'
 import { buildMarketMapModel } from '../../../../lib/market-geometry'
+import { getSubPageContentFresh } from '../../../../lib/page-content'
 import { requireStaff } from '../../../../lib/staff-session'
 import { getStoreSettings } from '../../../../lib/store-settings'
 
@@ -45,10 +46,14 @@ export default async function MarketDraftPreviewPage({ params }: Props) {
 
   const isReleased = releasedMarketPage(slug) !== undefined
 
-  const [clusters, brands, settings] = await Promise.all([
+  const [clusters, brands, settings, content] = await Promise.all([
     marketCatalogueClusters(),
     marketStockedBrands(),
     getStoreSettings(),
+    // The uncached read, deliberately: this IS the review surface, so it has
+    // to show the arrangement as it stands right now rather than whatever the
+    // storefront cache is still serving.
+    getSubPageContentFresh('market', { name: market.name, slug: market.slug }),
   ])
 
   return (
@@ -87,6 +92,7 @@ export default async function MarketDraftPreviewPage({ params }: Props) {
             hours: settings.contactHours,
             whatsappUrl: buildWhatsappHref(settings.contactPhone, `Export enquiry — ${market.name}`),
           }}
+          content={content}
           showAuditStrip
         />
       </div>
