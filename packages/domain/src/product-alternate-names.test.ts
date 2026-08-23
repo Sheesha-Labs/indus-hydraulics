@@ -228,6 +228,46 @@ describe('body types', () => {
   })
 })
 
+describe('a body type stands alone', () => {
+  it('names a part that has a body and no thread at all', () => {
+    // Previously gated on an allowlist of "threadless" bodies that `plug`,
+    // `union`, `cross` and `male-stud-connector` were missing from, declining
+    // 40 products. A Verschlussstopfen is a plug whatever it screws into.
+    for (const [title, de] of [
+      ['Blanking Plug', 'Verschlussstopfen'],
+      ['Union Cross', 'Kreuzstück'],
+      ['Weld Connector', 'Anschweißstutzen'],
+      ['Union Tee (DIN 2353)', 'T-Stück'],
+    ] as const) {
+      const a = readFittingAttributes({ title })
+      expect(a.thread, title).toBeFalsy()
+      const names = buildAlternateNames(a)
+      expect(names.length, title).toBe(4)
+      expect(names.find((n) => n.lang === 'de')!.name, title).toContain(de)
+    }
+  })
+
+  it('does not repeat gender that the body term already carries', () => {
+    // "mâle union simple mâle" — the French and Spanish stud-connector terms
+    // state the gender, and a German Einschraubverschraubung is male by
+    // definition.
+    const names = buildAlternateNames(readFittingAttributes({ title: 'Male Stud Connector' }))
+    const fr = names.find((n) => n.lang === 'fr')!.name
+    expect(fr).toBe('union simple mâle')
+    expect(fr.match(/mâle/g)).toHaveLength(1)
+    expect(names.find((n) => n.lang === 'de')!.name).toBe('Einschraubverschraubung')
+  })
+
+  it('counts the O-ring toward the identifying attributes', () => {
+    // "90° Elbow Metric O-Ring" has a thread, a bend and a seal, and the
+    // composer already prints the seal. Not counting it declined the product.
+    const a = readFittingAttributes({ title: '90° Elbow Metric O-Ring' })
+    expect(a.oring).toBe(true)
+    const de = buildAlternateNames(a).find((n) => n.lang === 'de')!.name
+    expect(de).toBe('90° Bogen metrisch mit O-Ring')
+  })
+})
+
 describe('SAE', () => {
   it('recognises SAE as a thread standard', () => {
     const a = readFittingAttributes({ title: '90° SAE Female 45° Cone Hose Fitting' })
