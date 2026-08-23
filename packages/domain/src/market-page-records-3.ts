@@ -4098,6 +4098,327 @@ const HUNGARY: MarketPage = {
   },
 }
 
+
+// ─────────────────────────────────────────────────────────────────────────────
+// THE BALTIC STATES — three markets that had to earn separate pages
+//
+// Estonia, Latvia and Lithuania share a sea, a customs position, a size and a
+// history, and the obvious risk was three spellings of one page. Each has a
+// real distinction and it is the distinction the page is built on:
+//
+//   Estonia    oil shale — a duty that exists at scale almost nowhere else
+//   Latvia     the transit country, and the 1520 mm rail gauge that shapes it
+//   Lithuania  the northernmost ice-free port on the eastern Baltic
+//
+// All three border or neighbour jurisdictions on the compliance-hold list. We
+// do not route through them and the Lithuania record says so on the page.
+// ─────────────────────────────────────────────────────────────────────────────
+
+const ESTONIA: MarketPage = {
+  slug: 'estonia',
+  regulatoryCopy: 'unverified',
+  released: false,
+  lane: 'DXB → EE',
+  dialCode: '+372',
+  currency: 'EUR',
+  localName: 'Eesti',
+  lede: 'Estonia runs an industry that exists at scale almost nowhere else: oil shale, mined and retorted for power and fuel around Narva and Kohtla-Järve. It is abrasive, hot and hard on everything downstream of the crusher, and a hose chosen from a catalogue on bore and pressure will not survive it. The lane itself is ordinary — Muuga, four weeks, one customs entry — and the customs file is the most digital on the network, which genuinely removes a class of delay.',
+  facts: [
+    { label: 'Typical transit', value: 'Typically 28–36 days by sea from dispatch' },
+    {
+      label: 'Freight',
+      value: 'Sea freight from Jebel Ali through Suez and the Baltic to Muuga · Paldiski where the berth suits · Air freight into Tallinn where the schedule is tighter',
+    },
+    { label: 'Incoterms 2020', value: 'CIF Muuga · DAP to the buyer’s site · FOB Jebel Ali · EXW Dubai for a nominated forwarder' },
+    {
+      label: 'Documentation',
+      value:
+        'CE marking and the PED declaration where the assembly is above threshold · REACH position on the elastomer compounds · Certificate of Origin, Dubai Chamber attested · EU customs entry raised electronically by the importer',
+    },
+  ],
+  manifest: [
+    { label: 'Origin', value: 'Jebel Ali · Dubai' },
+    { label: 'Primary mode', value: 'Sea, via Suez' },
+    { label: 'Port of entry', value: 'Muuga · Tallinn' },
+    { label: 'Transit', value: '28–36 days' },
+    { label: 'Quoted in', value: 'EUR' },
+    { label: 'Docs prepared', value: 'Before the vessel sails' },
+  ],
+  map: {
+    geoNames: ['Estonia'],
+    fit: 'crossing',
+    origin: [55.03, 25.01],
+    originLabel: 'JEBEL ALI · DXB',
+    crossing: { name: 'MUUGA · PORT', coords: [25.02, 59.48], legend: 'Port of entry', dx: 11, dy: -8, anchor: 'start' },
+    routes: [
+      { mode: 'SEA · SUEZ', primary: true, points: leg(NORTH_SEA_TO_BALTIC, [12.7, 55.7], [15.5, 55.5], [19.5, 57.5], [22.5, 59.2], [25.02, 59.48]) },
+      { mode: 'AIR', points: leg(EUROPE_AIR, [24.8, 59.41]) },
+    ],
+  },
+  freight: [
+    { name: 'Sea, FCL', transit: '28–36 days', route: 'Jebel Ali to Muuga, via Suez and the Baltic', useCase: 'Default for most orders' },
+    { name: 'Air freight', transit: '2–4 days', route: 'DXB to TLL, with a connection', useCase: 'When the line is down' },
+    { name: 'Sea, LCL', transit: '34–44 days', route: 'Consolidated via a North Sea hub, then feeder', useCase: 'Small mixed orders' },
+  ],
+  orderSteps: {
+    third:
+      'For oil shale duty the cover material and the working temperature are confirmed rather than the pressure rating alone, and the CE declaration is prepared where the assembly is above threshold.',
+    fourth: 'Goods sail from Jebel Ali through Suez and the Baltic to Muuga, and you get the paperwork and tracking together.',
+  },
+  cities: [
+    { name: 'Tallinn', coords: [24.75, 59.44], region: 'Harju', plot: true, dx: -9, dy: -4, anchor: 'end' },
+    { name: 'Muuga', coords: [25.02, 59.48], region: 'Harju' },
+    { name: 'Maardu', coords: [25.02, 59.48], region: 'Harju' },
+    { name: 'Paldiski', coords: [24.05, 59.35], region: 'Harju', plot: true, dx: -9, dy: 6, anchor: 'end' },
+    { name: 'Narva', coords: [28.19, 59.38], region: 'Ida-Viru', plot: true, dx: 9, dy: -4 },
+    { name: 'Kohtla-Järve', coords: [27.28, 59.4], region: 'Ida-Viru', plot: true, dx: 9, dy: 8 },
+    { name: 'Sillamäe', coords: [27.77, 59.39], region: 'Ida-Viru' },
+    { name: 'Jõhvi', coords: [27.42, 59.36], region: 'Ida-Viru' },
+    { name: 'Tartu', coords: [26.72, 58.38], region: 'Tartu', plot: true, dx: 9, dy: 4 },
+    { name: 'Pärnu', coords: [24.5, 58.39], region: 'Pärnu', plot: true, dx: -9, dy: 6, anchor: 'end' },
+    { name: 'Viljandi', coords: [25.59, 58.36], region: 'Viljandi' },
+    { name: 'Rakvere', coords: [26.36, 59.35], region: 'Lääne-Viru' },
+  ],
+  sectors: [
+    { slug: 'mining', name: 'Mining', description: 'Oil shale at Narva and Kohtla-Järve — abrasion covers, high-temperature compounds and dust-rated assemblies.' },
+    { slug: 'power', name: 'Power & Energy', description: 'Actuator and governor hydraulics for the oil-shale generating fleet and the retorting plant.' },
+    { slug: 'oil-gas', name: 'Oil & Gas', description: 'Shale-oil processing and the Sillamäe and Muuga terminal estates.' },
+    { slug: 'marine', name: 'Marine & Offshore', description: 'Deck machinery and terminal hydraulics for the Muuga and Paldiski port fleet.' },
+    { slug: 'construction', name: 'Construction', description: 'Excavator, crane and batching-plant hydraulics for civil and port works.' },
+    { slug: 'steel', name: 'Steel & Metals', description: 'Cylinders and valves for fabrication and forming lines.' },
+  ],
+  faqs: [
+    { question: 'Do you have a branch in Estonia?', answer: 'No. Estonia is supplied from our Dubai warehouse, by sea through Suez and the Baltic into Muuga.' },
+    {
+      question: 'Can you specify for oil shale duty?',
+      answer:
+        'Yes, and it is the reason most Estonian enquiries reach us. Oil shale is abrasive and hot, and it destroys covers long before the reinforcement is troubled. Tell us where in the process the assembly sits — crusher, retort, ash handling — and we will specify against it rather than a pressure rating.',
+    },
+    { question: 'Why is the customs step quick here?', answer: 'Because it is genuinely electronic end to end. Estonian entries are filed digitally and cleared against the same data we put on the invoice, which removes the reconciliation delay that costs days elsewhere. What still has to be right is that our description matches.' },
+    { question: 'Do we need CE marking?', answer: 'For a hose assembly above the pressure-volume threshold in PED 2014/68/EU, yes, and the declaration travels with the goods. Below it, sound engineering practice applies and there is no mark.' },
+    { question: 'Does the cold change what you supply?', answer: 'It should for outdoor and ash-handling duty. A standard nitrile stiffens well above Estonian winter temperatures, so we specify a low-temperature compound where the assembly is exposed and say plainly when a catalogue item is unsuitable.' },
+    { question: 'Can you deliver to Narva?', answer: 'Yes, on DAP terms to the plant gate. The road leg east from Tallinn is domestic movement and it is priced with the order.' },
+    { question: 'What currency do you quote in?', answer: 'EUR. Estonia is in the eurozone, so the Estimate, the invoice and the customs value all carry the same figure with nothing to convert.' },
+    { question: 'Is air freight worth it on this lane?', answer: 'For a line that is down, yes — two to four days against five weeks. For planned consumables the sea lane is predictable enough to order against.' },
+  ],
+  compliance: {
+    heading: 'A duty that exists at scale almost nowhere else',
+    body:
+      'Estonia mines and retorts oil shale for power and fuel on a scale no other country matches, and it is the reason this page is not interchangeable with its neighbours. Shale is abrasive and the process is hot: an assembly near a crusher, a retort or an ash-handling line fails at the cover long before the reinforcement is troubled, so the specification that matters is cover material and temperature range rather than the burst rating. A hose selected from a catalogue on bore and pressure will pass inspection and fail early, and we would rather ask where in the process it sits than supply exactly what was asked for. The customs half is the opposite kind of story — Estonian entries are electronic end to end and clear against the same data we put on the invoice, which removes a class of reconciliation delay that costs days elsewhere. What still has to be right is that our description matches, which is why we fix it at quotation.',
+    documents: [
+      { ref: 'DUTY', name: 'Cover and temperature statement for shale service', issuer: 'Us, at quotation', when: 'At quotation, per duty' },
+      { ref: 'PED', name: 'Declaration of conformity, assemblies above threshold', issuer: 'Us, as the assembler', when: 'Before dispatch' },
+      { ref: 'REACH', name: 'Compound position on the elastomers supplied', issuer: 'Us, at quotation', when: 'At quotation' },
+      { ref: 'COO', name: 'Certificate of Origin', issuer: 'Dubai Chamber attested', when: 'Before dispatch' },
+      { ref: 'EU-ENTRY', name: 'Electronic customs entry into free circulation', issuer: 'The importer, through Estonian Tax and Customs', when: 'On arrival' },
+    ],
+  },
+}
+
+const LATVIA: MarketPage = {
+  slug: 'latvia',
+  regulatoryCopy: 'unverified',
+  released: false,
+  lane: 'DXB → LV',
+  dialCode: '+371',
+  currency: 'EUR',
+  localName: 'Latvija',
+  lede: 'Latvia has more port capacity than its own economy needs, because it was built to move other countries’ cargo. Riga and Ventspils are transit infrastructure first, and the rail behind them runs on 1520 mm gauge rather than the European standard — which matters the moment a consignment continues inland by rail rather than road. For Latvian industry itself the demand is timber processing, rolling stock and the port equipment that handles everything else.',
+  facts: [
+    { label: 'Typical transit', value: 'Typically 28–36 days by sea from dispatch' },
+    {
+      label: 'Freight',
+      value: 'Sea freight from Jebel Ali through Suez and the Baltic to Riga · Ventspils for deep-water and bulk · Liepāja where the berth suits · Air freight into Riga where the schedule is tighter',
+    },
+    { label: 'Incoterms 2020', value: 'CIF Riga · DAP to the buyer’s site · FOB Jebel Ali · EXW Dubai for a nominated forwarder' },
+    {
+      label: 'Documentation',
+      value:
+        'CE marking and the PED declaration where the assembly is above threshold · REACH position on the elastomer compounds · Certificate of Origin, Dubai Chamber attested · EU customs entry raised by the importer',
+    },
+  ],
+  manifest: [
+    { label: 'Origin', value: 'Jebel Ali · Dubai' },
+    { label: 'Primary mode', value: 'Sea, via Suez' },
+    { label: 'Port of entry', value: 'Riga' },
+    { label: 'Transit', value: '28–36 days' },
+    { label: 'Quoted in', value: 'EUR' },
+    { label: 'Docs prepared', value: 'Before the vessel sails' },
+  ],
+  map: {
+    geoNames: ['Latvia'],
+    fit: 'crossing',
+    origin: [55.03, 25.01],
+    originLabel: 'JEBEL ALI · DXB',
+    crossing: { name: 'RIGA · PORT', coords: [24.09, 57.0], legend: 'Port of entry', dx: 11, dy: -8, anchor: 'start' },
+    routes: [
+      { mode: 'SEA · SUEZ', primary: true, points: leg(NORTH_SEA_TO_BALTIC, [12.7, 55.7], [15.5, 55.5], [19.5, 56.8], [22.0, 57.4], [24.09, 57.0]) },
+      { mode: 'AIR', points: leg(EUROPE_AIR, [23.97, 56.92]) },
+    ],
+  },
+  freight: [
+    { name: 'Sea, FCL', transit: '28–36 days', route: 'Jebel Ali to Riga, via Suez and the Baltic', useCase: 'Default for most orders' },
+    { name: 'Air freight', transit: '2–4 days', route: 'DXB to RIX, with a connection', useCase: 'When the line is down' },
+    { name: 'Sea, deep-water', transit: '28–36 days', route: 'Ventspils, for bulk and heavy lift', useCase: 'Project cargo' },
+  ],
+  orderSteps: {
+    third: 'Where the consignment continues inland by rail the 1520 mm gauge is accounted for at quotation, because a transhipment nobody planned for is the expensive kind.',
+    fourth: 'Goods sail from Jebel Ali through Suez and the Baltic to Riga, and you get the paperwork and tracking together.',
+  },
+  cities: [
+    { name: 'Riga', coords: [24.11, 56.95], region: 'Riga', plot: true, dx: 9, dy: -5 },
+    { name: 'Ventspils', coords: [21.56, 57.39], region: 'Kurzeme', plot: true, dx: -9, dy: -4, anchor: 'end' },
+    { name: 'Liepāja', coords: [21.01, 56.51], region: 'Kurzeme', plot: true, dx: -9, dy: 6, anchor: 'end' },
+    { name: 'Jelgava', coords: [23.73, 56.65], region: 'Zemgale', plot: true, dx: -9, dy: 6, anchor: 'end' },
+    { name: 'Daugavpils', coords: [26.54, 55.87], region: 'Latgale', plot: true, dx: 9, dy: 6 },
+    { name: 'Rēzekne', coords: [27.34, 56.51], region: 'Latgale', plot: true, dx: 9, dy: -4 },
+    { name: 'Jūrmala', coords: [23.77, 56.97], region: 'Riga' },
+    { name: 'Ogre', coords: [24.6, 56.82], region: 'Riga' },
+    { name: 'Valmiera', coords: [25.42, 57.54], region: 'Vidzeme', plot: true, dx: 9, dy: -4 },
+    { name: 'Salaspils', coords: [24.36, 56.86], region: 'Riga' },
+    { name: 'Tukums', coords: [23.15, 56.97], region: 'Zemgale' },
+    { name: 'Olaine', coords: [23.94, 56.79], region: 'Riga' },
+  ],
+  sectors: [
+    { slug: 'marine', name: 'Marine & Offshore', description: 'Deck machinery, crane and terminal hydraulics for the Riga, Ventspils and Liepāja port estates.' },
+    { slug: 'construction', name: 'Construction', description: 'Excavator, crane and timber-handling hydraulics for forestry and civil works.' },
+    { slug: 'steel', name: 'Steel & Metals', description: 'Cylinders and valves for rolling stock, fabrication and forming lines.' },
+    { slug: 'power', name: 'Power & Energy', description: 'Actuator and governor hydraulics for the Daugava hydro cascade and thermal plant.' },
+    { slug: 'oil-gas', name: 'Oil & Gas', description: 'Terminal, tank-farm and transhipment support at Ventspils and Riga.' },
+    { slug: 'mining', name: 'Mining', description: 'Dust-rated, high-cycle components for peat, aggregate and cement plant.' },
+  ],
+  faqs: [
+    { question: 'Do you have a branch in Latvia?', answer: 'No. Latvia is supplied from our Dubai warehouse, by sea through Suez and the Baltic into Riga or Ventspils.' },
+    {
+      question: 'Why does the rail gauge matter to us?',
+      answer:
+        'Only if your consignment continues inland by rail. Latvian rail runs on 1520 mm rather than the European 1435 mm, so a box moving on by rail beyond the region transhipes at a gauge break. It rarely affects a container delivered by road, and it is worth flagging at quotation rather than discovering.',
+    },
+    { question: 'Riga or Ventspils?', answer: 'Riga for containers and most industrial cargo. Ventspils is deep-water and built for bulk and heavy lift, which suits project loads rather than stock orders.' },
+    { question: 'Do we need CE marking?', answer: 'For a hose assembly above the pressure-volume threshold in PED 2014/68/EU, yes, and the declaration travels with the goods. Below it, sound engineering practice applies and there is no mark.' },
+    { question: 'Can you supply for port and terminal equipment?', answer: 'Yes — crane, spreader, conveyor and ramp hydraulics specified for salt, cold and continuous duty rather than a workshop environment. Cover material matters as much as the reinforcement.' },
+    { question: 'Does the cold change what you supply?', answer: 'For outdoor and quayside duty, yes. A standard compound stiffens well above Latvian winter temperatures, so we specify low-temperature material where the assembly is exposed.' },
+    { question: 'What currency do you quote in?', answer: 'EUR. Latvia is in the eurozone, so the Estimate, the invoice and the customs value all carry the same figure with nothing to convert.' },
+    { question: 'Why buy from Dubai rather than locally?', answer: 'For a standard item you should not. The reason is the pattern or the duty-specific compound held as stock rather than ordered in — port equipment and timber machinery both run specifications a general distributor stocks slowly.' },
+  ],
+  compliance: {
+    heading: 'Built to move other people’s cargo',
+    body:
+      'Latvia has considerably more port capacity than its own economy requires, because Riga, Ventspils and Liepāja were built as transit infrastructure for a hinterland much larger than the country. That legacy shows up in two practical ways. The first is equipment: a great deal of what we supply here is for cranes, spreaders, conveyors and ramps working outdoors on a quay in salt and cold, which is a cover-material problem before it is a pressure one. The second is the railway. Latvian rail runs on 1520 mm gauge rather than the European 1435 mm, so a consignment continuing inland by rail beyond the region meets a gauge break and a transhipment. It rarely affects a container delivered by road, but it is worth raising at quotation rather than leaving to be discovered — an unplanned transhipment is the expensive kind. Customs is the ordinary single European entry.',
+    documents: [
+      { ref: 'PED', name: 'Declaration of conformity, assemblies above threshold', issuer: 'Us, as the assembler', when: 'Before dispatch' },
+      { ref: 'GAUGE', name: 'Rail-gauge note where the cargo continues inland by rail', issuer: 'Us, at quotation', when: 'At quotation' },
+      { ref: 'REACH', name: 'Compound position on the elastomers supplied', issuer: 'Us, at quotation', when: 'At quotation' },
+      { ref: 'COO', name: 'Certificate of Origin', issuer: 'Dubai Chamber attested', when: 'Before dispatch' },
+      { ref: 'EU-ENTRY', name: 'Customs entry into free circulation', issuer: 'The importer, through Latvian Customs', when: 'On arrival' },
+    ],
+  },
+}
+
+const LITHUANIA: MarketPage = {
+  slug: 'lithuania',
+  regulatoryCopy: 'unverified',
+  released: false,
+  lane: 'DXB → LT',
+  dialCode: '+370',
+  currency: 'EUR',
+  localName: 'Lietuva',
+  lede: 'Klaipėda is the northernmost port on the eastern Baltic that does not freeze, and in a region where January can mean icebreaker assistance and a surcharge that is worth real money. Behind it sits the only refinery in the Baltic states, at Mažeikiai, which is where most of our cargo goes. Lithuania borders two jurisdictions on our compliance-hold list and we route through neither — the lane runs by sea and stops at the Lithuanian border.',
+  facts: [
+    { label: 'Typical transit', value: 'Typically 27–35 days by sea from dispatch' },
+    {
+      label: 'Freight',
+      value: 'Sea freight from Jebel Ali through Suez and the Baltic to Klaipėda, ice-free year round · Air freight into Vilnius where the schedule is tighter · No routing through Belarus or Kaliningrad',
+    },
+    { label: 'Incoterms 2020', value: 'CIF Klaipėda · DAP to the buyer’s site · FOB Jebel Ali · EXW Dubai for a nominated forwarder' },
+    {
+      label: 'Documentation',
+      value:
+        'CE marking and the PED declaration where the assembly is above threshold · REACH position on the elastomer compounds · Certificate of Origin, Dubai Chamber attested · EU customs entry raised by the importer',
+    },
+  ],
+  manifest: [
+    { label: 'Origin', value: 'Jebel Ali · Dubai' },
+    { label: 'Primary mode', value: 'Sea, via Suez' },
+    { label: 'Port of entry', value: 'Klaipėda' },
+    { label: 'Transit', value: '27–35 days' },
+    { label: 'Quoted in', value: 'EUR' },
+    { label: 'Docs prepared', value: 'Before the vessel sails' },
+  ],
+  map: {
+    geoNames: ['Lithuania'],
+    fit: 'crossing',
+    origin: [55.03, 25.01],
+    originLabel: 'JEBEL ALI · DXB',
+    crossing: { name: 'KLAIPĖDA · PORT', coords: [21.13, 55.7], legend: 'Port of entry', dx: -11, dy: 10, anchor: 'end' },
+    routes: [
+      { mode: 'SEA · SUEZ', primary: true, points: leg(NORTH_SEA_TO_BALTIC, [12.7, 55.7], [15.5, 55.4], [19.0, 55.6], [21.13, 55.7]) },
+      { mode: 'AIR', points: leg(EUROPE_AIR, [25.29, 54.63]) },
+    ],
+  },
+  freight: [
+    { name: 'Sea, FCL', transit: '27–35 days', route: 'Jebel Ali to Klaipėda, ice-free year round', useCase: 'Default for most orders' },
+    { name: 'Air freight', transit: '2–4 days', route: 'DXB to VNO, with a connection', useCase: 'When the line is down' },
+    { name: 'Sea, LCL', transit: '33–43 days', route: 'Consolidated via a North Sea hub, then feeder', useCase: 'Small mixed orders' },
+  ],
+  orderSteps: {
+    third: 'Where the duty is refinery service the compound is confirmed against the medium and temperature, and the CE declaration is prepared where the assembly is above threshold.',
+    fourth: 'Goods sail from Jebel Ali through Suez and the Baltic to Klaipėda, and you get the paperwork and tracking together.',
+  },
+  cities: [
+    { name: 'Klaipėda', coords: [21.14, 55.71], region: 'Klaipėda' },
+    { name: 'Vilnius', coords: [25.28, 54.69], region: 'Vilnius', plot: true, dx: 9, dy: 6 },
+    { name: 'Kaunas', coords: [23.9, 54.9], region: 'Kaunas', plot: true, dx: 9, dy: -4 },
+    { name: 'Mažeikiai', coords: [22.34, 56.31], region: 'Telšiai', plot: true, dx: 9, dy: -4 },
+    { name: 'Šiauliai', coords: [23.32, 55.93], region: 'Šiauliai', plot: true, dx: 9, dy: -4 },
+    { name: 'Panevėžys', coords: [24.36, 55.73], region: 'Panevėžys', plot: true, dx: 9, dy: -4 },
+    { name: 'Jonava', coords: [24.28, 55.08], region: 'Kaunas' },
+    { name: 'Kėdainiai', coords: [23.97, 55.29], region: 'Kaunas' },
+    { name: 'Alytus', coords: [24.05, 54.4], region: 'Alytus', plot: true, dx: -9, dy: 6, anchor: 'end' },
+    { name: 'Marijampolė', coords: [23.35, 54.56], region: 'Marijampolė' },
+    { name: 'Utena', coords: [25.6, 55.5], region: 'Utena' },
+    { name: 'Palanga', coords: [21.07, 55.92], region: 'Klaipėda' },
+  ],
+  sectors: [
+    { slug: 'oil-gas', name: 'Oil & Gas', description: 'The Mažeikiai refinery and the Klaipėda terminal estate — aggressive-duty hose with compound documentation.' },
+    { slug: 'marine', name: 'Marine & Offshore', description: 'Deck machinery, crane and terminal hydraulics for the Klaipėda port and yard.' },
+    { slug: 'construction', name: 'Construction', description: 'Excavator, crane and batching-plant hydraulics for civil and rail works.' },
+    { slug: 'steel', name: 'Steel & Metals', description: 'Cylinders and valves for fabrication, forming and machinery lines.' },
+    { slug: 'power', name: 'Power & Energy', description: 'Actuator and governor hydraulics for thermal, hydro and wind plant.' },
+    { slug: 'mining', name: 'Mining', description: 'Dust-rated, high-cycle components for aggregate, cement and fertiliser plant.' },
+  ],
+  faqs: [
+    { question: 'Do you have a branch in Lithuania?', answer: 'No. Lithuania is supplied from our Dubai warehouse, by sea through Suez and the Baltic into Klaipėda.' },
+    {
+      question: 'Why is Klaipėda better than the other Baltic ports in winter?',
+      answer:
+        'Because it does not freeze. It is the northernmost ice-free port on the eastern Baltic, so a January consignment arrives on the same terms as a June one — no ice-class requirement, no surcharge, no waiting on an icebreaker. On this coast that is worth real money.',
+    },
+    {
+      question: 'Do you route through Belarus or Kaliningrad?',
+      answer:
+        'No. Both are on our compliance-hold list and we will not route through either, whatever the map suggests about distance. The lane runs by sea into Klaipėda and stops at the Lithuanian border.',
+    },
+    { question: 'Can you supply for refinery duty?', answer: 'Yes — Mažeikiai is where most of this lane goes. Tell us the medium, the temperature and the concentration rather than the part number, because a compound correct for one stream is wrong for another.' },
+    { question: 'Do we need CE marking?', answer: 'For a hose assembly above the pressure-volume threshold in PED 2014/68/EU, yes, and the declaration travels with the goods. Below it, sound engineering practice applies and there is no mark.' },
+    { question: 'Does the cold change what you supply?', answer: 'For outdoor and quayside duty, yes. A standard compound stiffens well above Lithuanian winter temperatures, so we specify low-temperature material where the assembly is exposed and say plainly when a catalogue item is unsuitable.' },
+    { question: 'Can you deliver inland?', answer: 'Yes, on DAP terms to Vilnius, Kaunas or Mažeikiai. The road leg is domestic movement and it is priced with the order.' },
+    { question: 'What currency do you quote in?', answer: 'EUR. Lithuania is in the eurozone, so the Estimate, the invoice and the customs value all carry the same figure with nothing to convert.' },
+  ],
+  compliance: {
+    heading: 'Ice-free, and it stops at the border',
+    body:
+      'Klaipėda’s advantage over the rest of this coast is simple and seasonal: it does not freeze. Riga and the Gulf of Finland can require ice-class navigation and an assistance surcharge between roughly December and April, and Klaipėda does not — so a January arrival is quoted on the same terms as a June one, which on the Baltic is unusual enough to be the reason to route here. Behind the port sits the only refinery in the Baltic states, at Mažeikiai, and refinery duty is a compound question rather than a dimensional one: name the medium, the temperature and the concentration rather than the bore. The other thing worth stating plainly is where this lane does not go. Lithuania borders Belarus and Kaliningrad, both on our compliance-hold list, and we route through neither regardless of what the distance suggests. The cargo arrives by sea and stops at the Lithuanian border.',
+    documents: [
+      { ref: 'COMPAT', name: 'Chemical compatibility statement for the named medium', issuer: 'Us, at quotation', when: 'At quotation, per duty' },
+      { ref: 'PED', name: 'Declaration of conformity, assemblies above threshold', issuer: 'Us, as the assembler', when: 'Before dispatch' },
+      { ref: 'REACH', name: 'Compound position on the elastomers supplied', issuer: 'Us, at quotation', when: 'At quotation' },
+      { ref: 'COO', name: 'Certificate of Origin', issuer: 'Dubai Chamber attested', when: 'Before dispatch' },
+      { ref: 'EU-ENTRY', name: 'Customs entry into free circulation', issuer: 'The importer, through Lithuanian Customs', when: 'On arrival' },
+    ],
+  },
+}
+
 export const MARKET_PAGE_RECORDS_3: readonly MarketPage[] = [
   TURKEY,
   NORWAY,
@@ -4136,4 +4457,7 @@ export const MARKET_PAGE_RECORDS_3: readonly MarketPage[] = [
   CZECHIA,
   SLOVAKIA,
   HUNGARY,
+  ESTONIA,
+  LATVIA,
+  LITHUANIA,
 ]
