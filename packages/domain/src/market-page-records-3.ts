@@ -4419,6 +4419,887 @@ const LITHUANIA: MarketPage = {
   },
 }
 
+
+// ─────────────────────────────────────────────────────────────────────────────
+// NORTH AMERICA — where we are usually the wrong supplier, and say so
+//
+// The United States and Canada have the deepest industrial distribution
+// networks in the world. For a plant that needs a fitting tomorrow, a Dubai
+// warehouse is not a serious answer and pretending otherwise would discredit
+// everything else on the site.
+//
+// What IS true is narrower and worth stating precisely: a North American
+// operator's assets are often not in North America. A Houston company's West
+// African rig is closer to Jebel Ali than to Houston, and a package built in
+// Alberta for a Gulf contract has to be plumbed to the destination's standard.
+// Those are the pages. Everything else defers to the local distributor.
+// ─────────────────────────────────────────────────────────────────────────────
+
+/** Suez, the Med, Gibraltar and west across the Atlantic to the US Gulf. */
+const ATLANTIC_TO_US_GULF = [
+  ...MED_TO_ATLANTIC,
+  [-14.0, 32.0],
+  [-40.0, 26.0],
+  [-65.0, 24.0],
+  [-80.0, 24.5],
+  [-84.0, 25.5],
+  [-90.0, 27.5],
+] as const
+
+const UNITED_STATES: MarketPage = {
+  slug: 'united-states',
+  regulatoryCopy: 'unverified',
+  released: false,
+  lane: 'DXB → US',
+  dialCode: '+1',
+  currency: 'USD',
+  lede: 'For a plant in Texas that needs a fitting tomorrow, we are the wrong supplier and a local distributor is the right one. What brings American companies to Dubai is the opposite problem: their assets are frequently not in America. A Houston operator’s West African rig is closer to Jebel Ali than to Houston, and a skid built here for a Gulf or Caspian contract has to be plumbed to the destination’s standard. That is what this lane carries — and Houston is where the packages are built.',
+  facts: [
+    { label: 'Typical transit', value: 'Typically 32–40 days by sea from dispatch to Houston' },
+    {
+      label: 'Freight',
+      value:
+        'Sea freight from Jebel Ali through Suez and across the Atlantic to Houston for the energy belt · Savannah and New York for the east · Air freight into Houston where the schedule is tighter · Direct supply to your overseas sites where that is nearer',
+    },
+    { label: 'Incoterms 2020', value: 'CIF Houston · DAP to the buyer’s site · FOB Jebel Ali · EXW Dubai for a nominated forwarder' },
+    {
+      label: 'Documentation',
+      value:
+        'Customs entry raised by the importer of record · API monogram and licence documentation where the specification names one · Certificate of Origin, Dubai Chamber attested · Material and test certificates traceable to heat number',
+    },
+  ],
+  manifest: [
+    { label: 'Origin', value: 'Jebel Ali · Dubai' },
+    { label: 'Primary mode', value: 'Sea, via Suez' },
+    { label: 'Port of entry', value: 'Houston' },
+    { label: 'Transit', value: '32–40 days' },
+    { label: 'Quoted in', value: 'USD' },
+    { label: 'Docs prepared', value: 'Before the vessel sails' },
+  ],
+  map: {
+    geoNames: ['United States of America', 'United States'],
+    // The contiguous states. The Natural Earth feature also carries Alaska,
+    // Hawaii and the Pacific territories, which would span the frame across
+    // half the planet — see `mainland` in the data contract.
+    mainland: [-125.0, 24.0, -66.0, 50.0],
+    fit: 'crossing',
+    origin: [55.03, 25.01],
+    originLabel: 'JEBEL ALI · DXB',
+    crossing: { name: 'HOUSTON · PORT', coords: [-95.28, 29.74], legend: 'Port of entry', dx: 11, dy: 10, anchor: 'start' },
+    routes: [
+      { mode: 'SEA · SUEZ', primary: true, points: leg(ATLANTIC_TO_US_GULF, [-94.0, 29.3], [-95.28, 29.74]) },
+      { mode: 'AIR', points: leg(EUROPE_AIR, [0.0, 50.0], [-40.0, 45.0], [-95.34, 29.98]) },
+    ],
+  },
+  freight: [
+    { name: 'Sea, FCL', transit: '32–40 days', route: 'Jebel Ali to Houston, via Suez', useCase: 'Packages and planned stock' },
+    { name: 'Air freight', transit: '3–6 days', route: 'DXB to IAH, with a connection', useCase: 'When the line is down' },
+    { name: 'Direct to your overseas site', transit: 'Per destination', route: 'Jebel Ali to the field, not via the US', useCase: 'Usually the cheaper answer' },
+  ],
+  orderSteps: {
+    third:
+      'Where the goods are for an overseas asset we quote the direct lane rather than routing them through the United States first, because shipping a part to Houston to send it to Angola costs twice.',
+    fourth: 'Goods sail from Jebel Ali on whichever lane actually serves the destination, and you get the paperwork and tracking together.',
+  },
+  cities: [
+    { name: 'Houston', coords: [-95.37, 29.76], region: 'Texas' },
+    { name: 'Midland', coords: [-102.08, 31.99], region: 'Texas', plot: true, dx: -9, dy: -4, anchor: 'end' },
+    { name: 'Odessa', coords: [-102.37, 31.85], region: 'Texas' },
+    { name: 'Corpus Christi', coords: [-97.4, 27.8], region: 'Texas', plot: true, dx: -9, dy: 6, anchor: 'end' },
+    { name: 'Dallas', coords: [-96.8, 32.78], region: 'Texas', plot: true, dx: 9, dy: -4 },
+    { name: 'New Orleans', coords: [-90.07, 29.95], region: 'Louisiana', plot: true, dx: 9, dy: 8 },
+    { name: 'Baton Rouge', coords: [-91.15, 30.45], region: 'Louisiana' },
+    { name: 'Lafayette', coords: [-92.02, 30.22], region: 'Louisiana' },
+    { name: 'Oklahoma City', coords: [-97.52, 35.47], region: 'Oklahoma' },
+    { name: 'Tulsa', coords: [-95.99, 36.15], region: 'Oklahoma' },
+    { name: 'Denver', coords: [-104.99, 39.74], region: 'Colorado', plot: true, dx: -9, dy: -4, anchor: 'end' },
+    { name: 'Casper', coords: [-106.31, 42.85], region: 'Wyoming' },
+    { name: 'Bakersfield', coords: [-119.02, 35.37], region: 'California', plot: true, dx: -9, dy: 6, anchor: 'end' },
+    { name: 'Pittsburgh', coords: [-79.99, 40.44], region: 'Pennsylvania', plot: true, dx: 9, dy: -4 },
+    { name: 'Savannah', coords: [-81.09, 32.08], region: 'Georgia', plot: true, dx: 9, dy: 6 },
+    { name: 'Williston', coords: [-103.62, 48.15], region: 'North Dakota', plot: true, dx: 9, dy: -4 },
+  ],
+  sectors: [
+    { slug: 'oil-gas', name: 'Oil & Gas', description: 'Package and skid builders assembling for Gulf, African and Caspian contracts — plumbed to the destination standard.' },
+    { slug: 'marine', name: 'Marine & Offshore', description: 'Offshore support and subsea equipment built for deployment outside North America.' },
+    { slug: 'mining', name: 'Mining', description: 'Equipment builders supplying overseas mine sites — dust-rated, high-cycle components.' },
+    { slug: 'construction', name: 'Construction', description: 'Machinery exported to markets where the destination pattern differs from the domestic one.' },
+    { slug: 'power', name: 'Power & Energy', description: 'Turbine and generation packages assembled for overseas installation.' },
+    { slug: 'steel', name: 'Steel & Metals', description: 'High-force cylinders and servo valves specified against an export contract.' },
+  ],
+  faqs: [
+    {
+      question: 'Do you have a branch in the United States?',
+      answer: 'No. For domestic supply you should use a domestic distributor — American industrial distribution is the deepest in the world and we are not competing with it. We are supplied from Dubai, and this page is about the cases where that is genuinely the better answer.',
+    },
+    {
+      question: 'Then why would we buy from Dubai?',
+      answer:
+        'Two reasons, both narrow. Your assets may not be in America — a West African or Middle Eastern rig is far closer to Jebel Ali than to Houston, and we can supply it directly. Or you are building a package here for export and need the destination market’s pattern, which we hold as stock.',
+    },
+    {
+      question: 'Can you supply our overseas sites directly?',
+      answer:
+        'Yes, and it is usually the cheaper answer. Shipping a part to Houston in order to send it to Angola pays for the Atlantic twice. Tell us where the equipment actually is and we will quote the lane that serves it.',
+    },
+    { question: 'Can you supply API-monogrammed equipment?', answer: 'Yes. API 6A wellhead, API 16A BOP, API 16C choke and kill and API 7K drilling hose, with NACE MR0175 material documentation and traceability to heat number where the contract requires it.' },
+    { question: 'Who is the importer of record?', answer: 'You or your nominated broker. We supply the commercial documentation and the origin certificate; the entry itself is raised on your side, and we will not act as importer of record.' },
+    { question: 'Why is the sea lane so long?', answer: 'Because it crosses Suez and the Atlantic. For a domestic requirement that is the wrong trade entirely — this lane exists for planned packages and for cargo that is not staying in the United States.' },
+    { question: 'What currency do you quote in?', answer: 'USD. It is what the supply contracts are written in and what the customs value will be declared against.' },
+    { question: 'Can you supply sour-service material documentation?', answer: 'Yes. NACE MR0175 / ISO 15156 documentation with traceability where the contract requires it, confirmed at quotation rather than produced afterwards.' },
+  ],
+  compliance: {
+    heading: 'Where we are the wrong supplier, and where we are not',
+    body:
+      'It is worth being blunt on this page, because a claim that fails the first sanity check discredits the rest of the site. American industrial distribution is the deepest in the world; for a plant that needs a fitting tomorrow a Dubai warehouse is not a serious proposition and we will say so rather than quote against it. Two things are genuinely true instead. The first is geography that runs the other way: a great many American operators hold assets that are nowhere near America, and a West African or Middle Eastern rig is far closer to Jebel Ali than to Houston — so the right answer is often to supply that site directly rather than shipping a part across the Atlantic twice. The second is the package trade. Skids and equipment built in Houston for a Gulf, Caspian or African contract have to be plumbed to the destination’s standard, and a GOST coupling or an API-monogrammed assembly is stock for us and a factory order locally. Those two cases are this lane. Everything else defers to the distributor down the road.',
+    documents: [
+      { ref: 'DEST', name: 'Destination check — is the cargo actually staying in the US?', issuer: 'Agreed at quotation', when: 'Before anything else' },
+      { ref: 'API', name: 'Monogram and licence documentation', issuer: 'The manufacturer', when: 'At quotation, per product' },
+      { ref: 'MTC', name: 'Material certificates traceable to heat number', issuer: 'Mill, or our test bench', when: 'Before dispatch' },
+      { ref: 'COO', name: 'Certificate of Origin', issuer: 'Dubai Chamber attested', when: 'Before dispatch' },
+      { ref: 'ENTRY', name: 'Customs entry', issuer: 'The importer of record, on your side', when: 'Before arrival' },
+    ],
+  },
+}
+
+const CANADA: MarketPage = {
+  slug: 'canada',
+  regulatoryCopy: 'unverified',
+  released: false,
+  lane: 'DXB → CA',
+  dialCode: '+1',
+  currency: 'USD',
+  lede: 'Canada is the one market on this network reached across two different oceans. Montreal and Halifax are Atlantic ports served through Suez; Vancouver is a Pacific port and the sensible routing there runs east through Malacca instead — a different lane, a different transit, and the wrong choice costs a fortnight. Behind the ports, the reason to call Dubai is the same as in the United States: equipment built here for deployment somewhere else, plumbed to that market’s standard.',
+  facts: [
+    { label: 'Typical transit', value: 'Typically 30–38 days by sea to Montreal, 28–36 eastbound to Vancouver' },
+    {
+      label: 'Freight',
+      value:
+        'Sea freight from Jebel Ali through Suez and across the Atlantic to Montreal or Halifax · Eastbound through Malacca and the Pacific to Vancouver · Air freight into Calgary or Toronto where the schedule is tighter',
+    },
+    { label: 'Incoterms 2020', value: 'CIF Montreal · DAP to the buyer’s site · FOB Jebel Ali · EXW Dubai for a nominated forwarder' },
+    {
+      label: 'Documentation',
+      value:
+        'Customs entry raised by the importer of record · API monogram and licence documentation where the specification names one · Certificate of Origin, Dubai Chamber attested · Material and test certificates traceable to heat number',
+    },
+  ],
+  manifest: [
+    { label: 'Origin', value: 'Jebel Ali · Dubai' },
+    { label: 'Primary mode', value: 'Sea, via Suez' },
+    { label: 'Port of entry', value: 'Montreal' },
+    { label: 'Transit', value: '30–38 days' },
+    { label: 'Quoted in', value: 'USD' },
+    { label: 'Docs prepared', value: 'Before the vessel sails' },
+  ],
+  map: {
+    geoNames: ['Canada'],
+    fit: 'crossing',
+    origin: [55.03, 25.01],
+    originLabel: 'JEBEL ALI · DXB',
+    crossing: { name: 'MONTREAL · PORT', coords: [-73.55, 45.51], legend: 'Port of entry', dx: 11, dy: 10, anchor: 'start' },
+    routes: [
+      { mode: 'SEA · SUEZ', primary: true, points: leg(MED_TO_ATLANTIC, [-14.0, 34.0], [-40.0, 40.0], [-55.0, 46.0], [-65.0, 48.5], [-71.0, 46.8], [-73.55, 45.51]) },
+      { mode: 'SEA · PACIFIC', points: [[55.03, 25.01], [61.0, 21.5], [75.0, 8.5], [95.0, 5.0], [103.5, 1.3], [110.0, 12.0], [125.0, 25.0], [145.0, 40.0], [170.0, 50.0], [-170.0, 53.0], [-140.0, 52.0], [-125.0, 49.3], [-123.1, 49.29]] },
+    ],
+  },
+  freight: [
+    { name: 'Sea, FCL, Atlantic', transit: '30–38 days', route: 'Jebel Ali to Montreal, via Suez', useCase: 'Central and eastern Canada' },
+    { name: 'Air freight', transit: '3–6 days', route: 'DXB to YYC or YYZ, with a connection', useCase: 'When the line is down' },
+    { name: 'Sea, FCL, Pacific', transit: '28–36 days', route: 'Eastbound through Malacca to Vancouver', useCase: 'British Columbia and the west' },
+  ],
+  orderSteps: {
+    third:
+      'The ocean is chosen before the port — Atlantic through Suez for the east, Pacific through Malacca for the west — because on this lane the wrong one costs a fortnight rather than a day.',
+    fourth: 'Goods sail from Jebel Ali on whichever ocean serves the destination, and you get the paperwork and tracking together.',
+  },
+  cities: [
+    { name: 'Montreal', coords: [-73.57, 45.5], region: 'Quebec' },
+    { name: 'Toronto', coords: [-79.38, 43.65], region: 'Ontario', plot: true, dx: 9, dy: 8 },
+    { name: 'Hamilton', coords: [-79.87, 43.26], region: 'Ontario' },
+    { name: 'Halifax', coords: [-63.57, 44.65], region: 'Nova Scotia', plot: true, dx: 9, dy: 6 },
+    { name: "St. John's", coords: [-52.71, 47.56], region: 'Newfoundland', plot: true, dx: 9, dy: -4 },
+    { name: 'Calgary', coords: [-114.07, 51.05], region: 'Alberta', plot: true, dx: -9, dy: -4, anchor: 'end' },
+    { name: 'Edmonton', coords: [-113.49, 53.55], region: 'Alberta', plot: true, dx: -9, dy: -4, anchor: 'end' },
+    { name: 'Fort McMurray', coords: [-111.38, 56.73], region: 'Alberta', plot: true, dx: 9, dy: -4 },
+    { name: 'Vancouver', coords: [-123.12, 49.28], region: 'British Columbia', plot: true, dx: -9, dy: 6, anchor: 'end' },
+    { name: 'Prince Rupert', coords: [-130.32, 54.31], region: 'British Columbia' },
+    { name: 'Saskatoon', coords: [-106.67, 52.13], region: 'Saskatchewan' },
+    { name: 'Regina', coords: [-104.62, 50.45], region: 'Saskatchewan' },
+    { name: 'Winnipeg', coords: [-97.14, 49.9], region: 'Manitoba', plot: true, dx: 9, dy: 4 },
+    { name: 'Sudbury', coords: [-80.99, 46.49], region: 'Ontario' },
+    { name: 'Sarnia', coords: [-82.4, 42.97], region: 'Ontario' },
+    { name: 'Thunder Bay', coords: [-89.25, 48.38], region: 'Ontario' },
+  ],
+  sectors: [
+    { slug: 'oil-gas', name: 'Oil & Gas', description: 'Oil sands and heavy-oil equipment builders assembling for deployment at home and overseas.' },
+    { slug: 'mining', name: 'Mining', description: 'Nickel, potash and gold plant, and the equipment builders supplying overseas mine sites.' },
+    { slug: 'power', name: 'Power & Energy', description: 'Actuator and governor hydraulics for hydro and thermal generation packages.' },
+    { slug: 'construction', name: 'Construction', description: 'Machinery exported to markets where the destination pattern differs from the domestic one.' },
+    { slug: 'marine', name: 'Marine & Offshore', description: 'Deck machinery and vessel hydraulics for the Atlantic and Pacific fleets.' },
+    { slug: 'steel', name: 'Steel & Metals', description: 'High-force cylinders and servo valves specified against an export contract.' },
+  ],
+  faqs: [
+    {
+      question: 'Do you have a branch in Canada?',
+      answer: 'No. For domestic supply a Canadian distributor is the right answer and we are not competing with local distribution on a standard item. Canada is supplied from our Dubai warehouse, across whichever ocean serves the delivery.',
+    },
+    {
+      question: 'Atlantic or Pacific — which lane are we on?',
+      answer:
+        'Whichever ocean your delivery is nearer. Montreal and Halifax are served through Suez and the Atlantic; Vancouver is reached eastbound through Malacca and the Pacific. They are genuinely different lanes and the wrong choice costs a fortnight, so we fix it against the delivery city rather than the map.',
+    },
+    {
+      question: 'Then why buy from Dubai at all?',
+      answer:
+        'The same narrow reasons as the United States. Equipment built here for deployment in the Gulf, Africa or the Caspian has to be plumbed to that market’s standard, which is stock for us. And if your assets are overseas we can supply them directly rather than shipping through Canada first.',
+    },
+    { question: 'Can you supply our overseas sites directly?', answer: 'Yes, and it is usually cheaper. Tell us where the equipment actually is and we will quote the lane that serves it rather than routing everything through a Canadian port.' },
+    { question: 'Can you supply API-monogrammed equipment?', answer: 'Yes. API 6A wellhead, API 16A BOP, API 16C choke and kill and API 7K drilling hose, with NACE MR0175 material documentation where the contract requires it.' },
+    { question: 'Does the cold change what you supply?', answer: 'For anything working outdoors in Alberta or Saskatchewan, yes. A standard compound stiffens well above prairie winter temperatures and we specify low-temperature material where the assembly is exposed.' },
+    { question: 'Who is the importer of record?', answer: 'You or your nominated broker. We supply the commercial documentation and the origin certificate; the entry is raised on your side.' },
+    { question: 'What currency do you quote in?', answer: 'USD. It is what the supply contracts are written in and what the customs value will be declared against.' },
+  ],
+  compliance: {
+    heading: 'Two oceans, and the wrong one costs a fortnight',
+    body:
+      'Canada is the only market on this network where the first question is which ocean rather than which port. Montreal and Halifax are Atlantic ports reached through Suez; Vancouver is a Pacific port and the sensible routing runs east through Malacca and across the Pacific instead. These are not variations of one lane — they are different lanes with different transit times, and a container for Vancouver routed through Suez has taken the long way round the world. We fix the ocean against the delivery city before anything else. Beyond routing, the honest position is the same as for the United States: Canadian industrial distribution is excellent and closer, so a standard item on a short lead time is not our trade. What is our trade is equipment built here for deployment in the Gulf, Africa or the Caspian and needing that market’s pattern — and supplying your overseas assets directly rather than shipping them through Canada first.',
+    documents: [
+      { ref: 'OCEAN', name: 'Atlantic or Pacific routing, fixed against the delivery city', issuer: 'Us, at quotation', when: 'Before anything else' },
+      { ref: 'API', name: 'Monogram and licence documentation', issuer: 'The manufacturer', when: 'At quotation, per product' },
+      { ref: 'MTC', name: 'Material certificates traceable to heat number', issuer: 'Mill, or our test bench', when: 'Before dispatch' },
+      { ref: 'COO', name: 'Certificate of Origin', issuer: 'Dubai Chamber attested', when: 'Before dispatch' },
+      { ref: 'ENTRY', name: 'Customs entry', issuer: 'The importer of record, on your side', when: 'Before arrival' },
+    ],
+  },
+}
+
+
+const MEXICO: MarketPage = {
+  slug: 'mexico',
+  regulatoryCopy: 'unverified',
+  released: false,
+  lane: 'DXB → MX',
+  dialCode: '+52',
+  currency: 'USD',
+  localName: 'México',
+  lede: 'Mexico has an Atlantic coast and a Pacific one and they are reached by different oceans — Veracruz through Suez, Manzanillo eastbound through Malacca. Getting that wrong is a fortnight, not a day. Above the freight sits NOM certification, which applies to a defined list and is obtained against the product rather than the shipment, so it is worth settling once at quotation. The demand is mining in the north, the refinery estates on the Gulf, and the maquiladora belt.',
+  facts: [
+    { label: 'Typical transit', value: 'Typically 30–38 days by sea to Veracruz, 26–34 eastbound to Manzanillo' },
+    {
+      label: 'Freight',
+      value:
+        'Sea freight from Jebel Ali through Suez and across the Atlantic to Veracruz or Altamira · Eastbound through Malacca and the Pacific to Manzanillo or Lázaro Cárdenas · Air freight into Mexico City where the schedule is tighter',
+    },
+    { label: 'Incoterms 2020', value: 'CIF Veracruz · DAP to the buyer’s site · FOB Jebel Ali · EXW Dubai for a nominated forwarder' },
+    {
+      label: 'Documentation',
+      value:
+        'NOM certification where the product is on the regulated list · Customs entry raised by the importer through a licensed broker · Certificate of Origin, Dubai Chamber attested · Documents in Spanish',
+    },
+  ],
+  manifest: [
+    { label: 'Origin', value: 'Jebel Ali · Dubai' },
+    { label: 'Primary mode', value: 'Sea, via Suez' },
+    { label: 'Port of entry', value: 'Veracruz' },
+    { label: 'Transit', value: '30–38 days' },
+    { label: 'Quoted in', value: 'USD' },
+    { label: 'Docs prepared', value: 'Before the vessel sails' },
+  ],
+  map: {
+    geoNames: ['Mexico'],
+    fit: 'crossing',
+    origin: [55.03, 25.01],
+    originLabel: 'JEBEL ALI · DXB',
+    crossing: { name: 'VERACRUZ · PORT', coords: [-96.13, 19.19], legend: 'Port of entry', dx: 11, dy: 10, anchor: 'start' },
+    routes: [
+      { mode: 'SEA · SUEZ', primary: true, points: leg(ATLANTIC_TO_US_GULF, [-92.0, 24.0], [-96.13, 19.19]) },
+      { mode: 'SEA · PACIFIC', points: [[55.03, 25.01], [61.0, 21.5], [75.0, 8.5], [95.0, 5.0], [103.5, 1.3], [120.0, 15.0], [145.0, 28.0], [175.0, 33.0], [-160.0, 30.0], [-120.0, 22.0], [-104.33, 19.05]] },
+    ],
+  },
+  freight: [
+    { name: 'Sea, FCL, Atlantic', transit: '30–38 days', route: 'Jebel Ali to Veracruz, via Suez', useCase: 'The Gulf coast and the centre' },
+    { name: 'Air freight', transit: '3–6 days', route: 'DXB to MEX, with a connection', useCase: 'When the line is down' },
+    { name: 'Sea, FCL, Pacific', transit: '26–34 days', route: 'Eastbound through Malacca to Manzanillo', useCase: 'The west and the Bajío' },
+  ],
+  orderSteps: {
+    third:
+      'The ocean is fixed against the delivery state, and the NOM position is settled line by line — which parts are on the regulated list and which are not.',
+    fourth: 'Goods sail from Jebel Ali on whichever ocean serves the destination, and you get the paperwork and tracking together.',
+  },
+  cities: [
+    { name: 'Veracruz', coords: [-96.13, 19.19], region: 'Veracruz' },
+    { name: 'Altamira', coords: [-97.88, 22.39], region: 'Tamaulipas', plot: true, dx: 9, dy: -4 },
+    { name: 'Mexico City', coords: [-99.13, 19.43], region: 'Ciudad de México', plot: true, dx: -9, dy: 8, anchor: 'end' },
+    { name: 'Monterrey', coords: [-100.31, 25.69], region: 'Nuevo León', plot: true, dx: 9, dy: -4 },
+    { name: 'Saltillo', coords: [-100.99, 25.42], region: 'Coahuila' },
+    { name: 'Manzanillo', coords: [-104.33, 19.05], region: 'Colima', plot: true, dx: -9, dy: 6, anchor: 'end' },
+    { name: 'Lázaro Cárdenas', coords: [-102.19, 17.96], region: 'Michoacán' },
+    { name: 'Guadalajara', coords: [-103.35, 20.66], region: 'Jalisco', plot: true, dx: -9, dy: -4, anchor: 'end' },
+    { name: 'Querétaro', coords: [-100.39, 20.59], region: 'Querétaro' },
+    { name: 'León', coords: [-101.68, 21.12], region: 'Guanajuato' },
+    { name: 'Hermosillo', coords: [-110.96, 29.07], region: 'Sonora', plot: true, dx: -9, dy: -4, anchor: 'end' },
+    { name: 'Cananea', coords: [-110.3, 30.98], region: 'Sonora' },
+    { name: 'Chihuahua', coords: [-106.07, 28.63], region: 'Chihuahua', plot: true, dx: 9, dy: -4 },
+    { name: 'Torreón', coords: [-103.41, 25.54], region: 'Coahuila' },
+    { name: 'Coatzacoalcos', coords: [-94.42, 18.14], region: 'Veracruz', plot: true, dx: 9, dy: 8 },
+    { name: 'Villahermosa', coords: [-92.93, 17.99], region: 'Tabasco' },
+  ],
+  sectors: [
+    { slug: 'mining', name: 'Mining', description: 'Silver, copper and gold across the north — dust-rated, high-cycle components for shovel and mill.' },
+    { slug: 'oil-gas', name: 'Oil & Gas', description: 'Refinery and offshore support on the Gulf coast at Coatzacoalcos, Villahermosa and Ciudad del Carmen.' },
+    { slug: 'construction', name: 'Construction', description: 'Excavator, crane and batching-plant hydraulics for infrastructure and the maquiladora belt.' },
+    { slug: 'steel', name: 'Steel & Metals', description: 'High-force cylinders and servo valves for the Monclova and Lázaro Cárdenas rolling lines.' },
+    { slug: 'power', name: 'Power & Energy', description: 'Actuator and governor hydraulics for thermal, hydro and geothermal plant.' },
+    { slug: 'marine', name: 'Marine & Offshore', description: 'Deck machinery and vessel hydraulics for the Gulf and Pacific port fleets.' },
+  ],
+  faqs: [
+    { question: 'Do you have a branch in Mexico?', answer: 'No. Mexico is supplied from our Dubai warehouse, across the Atlantic into Veracruz or eastbound across the Pacific into Manzanillo.' },
+    {
+      question: 'Which coast should our cargo use?',
+      answer:
+        'Whichever ocean your delivery is nearer, and they are genuinely different lanes. Veracruz and Altamira are reached through Suez and the Atlantic; Manzanillo and Lázaro Cárdenas eastbound through Malacca and the Pacific. The wrong choice costs a fortnight rather than a day.',
+    },
+    {
+      question: 'What is NOM and does it apply to us?',
+      answer:
+        'NOM is the Mexican official standard system. It covers a defined list of products and much industrial hose and fittings falls outside it. Where a line is inside, the certification attaches to the product rather than the shipment, so it is obtained once and holds for future orders.',
+    },
+    { question: 'What do you need from us before shipping?', answer: 'Your importer registration and the licensed broker who will make the entry. Mexican entries are made through a broker, and the description on our invoice has to match what they declare.' },
+    { question: 'Can you deliver to the northern mines?', answer: 'Yes, on DAP terms to the mine gate in Sonora, Chihuahua or Zacatecas. The road leg is long and it is quoted rather than estimated.' },
+    { question: 'What language do the documents need to be in?', answer: 'Spanish, with the description agreeing across the invoice, the packing list and the entry. We fix the wording at quotation.' },
+    { question: 'Why buy from Dubai rather than from the United States?', answer: 'For a standard item, you probably should not — the US border is closer. The reason to call us is the pattern or the monogram held as stock, or a package being built here for export to a Gulf or African contract.' },
+    { question: 'What currency do you quote in?', answer: 'USD. It is what import contracts here are written in and what the customs value will be declared against.' },
+  ],
+  compliance: {
+    heading: 'Two oceans, and NOM attaches to the product',
+    body:
+      'Mexico is the second market on this network reached across two different oceans, and the choice is not cosmetic: Veracruz and Altamira are Atlantic ports served through Suez, while Manzanillo and Lázaro Cárdenas are Pacific ports reached eastbound through Malacca. A container for Guadalajara routed through Suez has taken the long way round the world, so we fix the ocean against the delivery state before anything else. The regulatory half is more forgiving than it first looks. NOM covers a defined list of products, much industrial hose and fittings sits outside it, and where a line is inside the certification attaches to the product rather than the consignment — so it is obtained once and holds for every future order of that line. The entry itself is made by a licensed broker, which makes matching our description to their declaration the practical thing to get right.',
+    documents: [
+      { ref: 'OCEAN', name: 'Atlantic or Pacific routing, fixed against the delivery state', issuer: 'Us, at quotation', when: 'Before anything else' },
+      { ref: 'NOM', name: 'NOM certification, where the product is listed', issuer: 'Accredited certification body', when: 'At quotation, per product' },
+      { ref: 'PEDIMENTO', name: 'Customs entry through a licensed broker', issuer: 'The importer’s broker', when: 'Before arrival' },
+      { ref: 'COO', name: 'Certificate of Origin', issuer: 'Dubai Chamber attested', when: 'Before dispatch' },
+      { ref: 'PL', name: 'Packing list in Spanish, matching the entry', issuer: 'Us, at dispatch', when: 'Before the vessel sails' },
+    ],
+  },
+}
+
+const JAMAICA: MarketPage = {
+  slug: 'jamaica',
+  regulatoryCopy: 'unverified',
+  released: false,
+  lane: 'DXB → JM',
+  dialCode: '+1 876',
+  currency: 'USD',
+  lede: 'Jamaica runs on bauxite and alumina, and alumina refining is one of the harder duties a hose can be given: caustic liquor, heat and abrasive slurry in the same circuit. A compound chosen for hydraulic oil is the wrong compound there. Kingston is a major transhipment hub, so the first question is whether cargo is staying — a great deal that touches the port never enters the island.',
+  facts: [
+    { label: 'Typical transit', value: 'Typically 30–38 days by sea from dispatch' },
+    {
+      label: 'Freight',
+      value: 'Sea freight from Jebel Ali through Suez and across the Atlantic to Kingston · Montego Bay and Port Esquivel where the berth suits · Air freight into Kingston where the schedule is tighter',
+    },
+    { label: 'Incoterms 2020', value: 'CIF Kingston · DAP to the buyer’s site or plant · FOB Jebel Ali · EXW Dubai for a nominated forwarder' },
+    {
+      label: 'Documentation',
+      value:
+        'Customs declaration raised by the importer · Chemical compatibility statement for caustic and slurry duty · Certificate of Origin, Dubai Chamber attested · Material and test certificates where the plant specification calls for them',
+    },
+  ],
+  manifest: [
+    { label: 'Origin', value: 'Jebel Ali · Dubai' },
+    { label: 'Primary mode', value: 'Sea, via Suez' },
+    { label: 'Port of entry', value: 'Kingston' },
+    { label: 'Transit', value: '30–38 days' },
+    { label: 'Quoted in', value: 'USD' },
+    { label: 'Docs prepared', value: 'Before the vessel sails' },
+  ],
+  map: {
+    geoNames: ['Jamaica'],
+    fit: 'crossing',
+    origin: [55.03, 25.01],
+    originLabel: 'JEBEL ALI · DXB',
+    crossing: { name: 'KINGSTON · PORT', coords: [-76.79, 17.97], legend: 'Port of entry', dx: 11, dy: 10, anchor: 'start' },
+    routes: [
+      { mode: 'SEA · SUEZ', primary: true, points: leg(MED_TO_ATLANTIC, [-14.0, 32.0], [-40.0, 24.0], [-65.0, 19.0], [-74.0, 18.2], [-76.79, 17.97]) },
+      { mode: 'AIR', points: leg(EUROPE_AIR, [0.0, 45.0], [-45.0, 25.0], [-76.79, 17.94]) },
+    ],
+  },
+  freight: [
+    { name: 'Sea, FCL', transit: '30–38 days', route: 'Jebel Ali to Kingston, via Suez', useCase: 'Default for most orders' },
+    { name: 'Air freight', transit: '4–7 days', route: 'DXB to KIN, with connections', useCase: 'When the line is down' },
+    { name: 'Sea, LCL', transit: '36–48 days', route: 'Consolidated, with transhipment', useCase: 'Small mixed orders' },
+  ],
+  orderSteps: {
+    third:
+      'For alumina duty the compound is confirmed against caustic concentration, temperature and slurry abrasion rather than pressure alone, because that circuit destroys a general-purpose hose.',
+    fourth: 'Goods sail from Jebel Ali through Suez and across the Atlantic to Kingston, and you get the paperwork and tracking together.',
+  },
+  cities: [
+    { name: 'Kingston', coords: [-76.79, 17.99], region: 'Surrey', plot: true, dx: 9, dy: 8 },
+    { name: 'Spanish Town', coords: [-76.95, 17.99], region: 'Middlesex' },
+    { name: 'Port Esquivel', coords: [-77.13, 17.89], region: 'Middlesex', plot: true, dx: -9, dy: 8, anchor: 'end' },
+    { name: 'Mandeville', coords: [-77.5, 18.04], region: 'Middlesex', plot: true, dx: -9, dy: 6, anchor: 'end' },
+    { name: 'Nain', coords: [-77.6, 17.98], region: 'Middlesex' },
+    { name: 'May Pen', coords: [-77.24, 17.96], region: 'Middlesex' },
+    { name: 'Ocho Rios', coords: [-77.11, 18.4], region: 'Middlesex', plot: true, dx: 9, dy: -4 },
+    { name: 'Discovery Bay', coords: [-77.4, 18.46], region: 'Middlesex' },
+    { name: 'Montego Bay', coords: [-77.92, 18.47], region: 'Cornwall', plot: true, dx: -9, dy: -4, anchor: 'end' },
+    { name: 'Falmouth', coords: [-77.65, 18.49], region: 'Cornwall' },
+    { name: 'Savanna-la-Mar', coords: [-78.13, 18.22], region: 'Cornwall', plot: true, dx: -9, dy: 6, anchor: 'end' },
+    { name: 'Port Antonio', coords: [-76.45, 18.18], region: 'Surrey', plot: true, dx: 9, dy: -4 },
+  ],
+  sectors: [
+    { slug: 'mining', name: 'Mining', description: 'Bauxite and alumina — caustic-resistant compounds, slurry hose and abrasion covers for the refining circuit.' },
+    { slug: 'power', name: 'Power & Energy', description: 'Actuator and governor hydraulics for diesel and thermal generation.' },
+    { slug: 'marine', name: 'Marine & Offshore', description: 'Deck machinery, crane and terminal hydraulics for the Kingston container and bulk terminals.' },
+    { slug: 'construction', name: 'Construction', description: 'Excavator, crane and batching-plant hydraulics for road, port and resort works.' },
+    { slug: 'oil-gas', name: 'Oil & Gas', description: 'Refinery and fuel terminal support at Kingston.' },
+    { slug: 'steel', name: 'Steel & Metals', description: 'Cylinders and valves for fabrication and workshop equipment.' },
+  ],
+  faqs: [
+    { question: 'Do you have a branch in Jamaica?', answer: 'No. Jamaica is supplied from our Dubai warehouse, by sea through Suez and across the Atlantic into Kingston.' },
+    {
+      question: 'Can you supply for alumina refining duty?',
+      answer:
+        'Yes, and it is the reason most Jamaican enquiries reach us. Caustic liquor, heat and abrasive slurry in one circuit will destroy a general-purpose hose in weeks. Tell us the concentration, the temperature and where in the circuit the assembly sits and we will specify against it.',
+    },
+    { question: 'Is Kingston a gate or a hub for our cargo?', answer: 'Both, and it is worth saying which. Kingston transhipes a great deal that never enters Jamaica. If your goods are staying we say so on the file; if they are staging onward it is documented that way from the outset.' },
+    { question: 'What certification do we need?', answer: 'There is no blanket pre-shipment conformity scheme for industrial hose and fittings. What matters is the compatibility statement for the duty and the material documentation the plant asks for.' },
+    { question: 'Can you deliver to the refineries?', answer: 'Yes, on DAP terms to the plant gate at Nain, Ewarton or Port Esquivel. The road leg from Kingston is priced with the order rather than estimated.' },
+    { question: 'Why buy from Dubai rather than from the United States?', answer: 'For a standard item, Florida is closer and often right. What we hold is the caustic and slurry specification as stock rather than a special order, which on a plant with a shutdown calendar is worth more than the freight difference.' },
+    { question: 'What currency do you quote in?', answer: 'USD. It is what the bauxite and alumina supply contracts here are written in.' },
+    { question: 'Is it worth batching orders?', answer: 'Yes. On a five-week lane a consolidated consignment against the shutdown calendar lands far better than several small ones ordered as items fail.' },
+  ],
+  compliance: {
+    heading: 'Caustic, heat and slurry in one circuit',
+    body:
+      'Jamaica’s industrial demand is dominated by bauxite mining and alumina refining, and alumina is one of the least forgiving duties in this catalogue. The Bayer circuit combines hot caustic liquor with abrasive slurry, which attacks a hose from the inside and the outside at once: a compound selected for hydraulic oil will not last, and a cover selected for a workshop will not either. So the useful quotation starts from the concentration, the temperature and the position in the circuit rather than a bore and a pressure, and we will say plainly where a catalogue item is unsuitable rather than supplying to the dimensions. Customs is straightforward — a declaration against the invoice and packing list, no blanket conformity scheme — with the one caveat that Kingston transhipes a large volume that never enters Jamaica, so cargo staging onward should be documented as such from the outset.',
+    documents: [
+      { ref: 'COMPAT', name: 'Compatibility statement for caustic concentration and slurry', issuer: 'Us, at quotation', when: 'At quotation, per duty' },
+      { ref: 'DECL', name: 'Customs import declaration', issuer: 'The importer, through Jamaica Customs', when: 'Before arrival' },
+      { ref: 'COO', name: 'Certificate of Origin', issuer: 'Dubai Chamber attested', when: 'Before dispatch' },
+      { ref: 'MTC', name: 'Material and test certificates', issuer: 'Mill, or our test bench', when: 'Where the plant specification calls for them' },
+      { ref: 'BL', name: 'Bill of lading or air waybill', issuer: 'The carrier', when: 'On dispatch' },
+    ],
+  },
+}
+
+
+const DOMINICAN_REPUBLIC: MarketPage = {
+  slug: 'dominican-republic',
+  regulatoryCopy: 'unverified',
+  released: false,
+  lane: 'DXB → DO',
+  dialCode: '+1 809',
+  currency: 'USD',
+  localName: 'República Dominicana',
+  lede: 'The Dominican Republic runs on free zones, and that changes the customs question rather than the freight one. Goods entering a zone are not entering the country’s customs territory, so a consignment for a zone manufacturer is a different file from one for a domestic buyer — and converting between them afterwards is expensive. Caucedo is a transhipment port as well as a gate. The industrial demand is ferronickel, cement, and the packing and processing plant behind the zones.',
+  facts: [
+    { label: 'Typical transit', value: 'Typically 30–38 days by sea from dispatch' },
+    {
+      label: 'Freight',
+      value: 'Sea freight from Jebel Ali through Suez and across the Atlantic to Caucedo · Haina and Puerto Plata where the berth suits · Air freight into Santo Domingo where the schedule is tighter',
+    },
+    { label: 'Incoterms 2020', value: 'CIF Caucedo · DAP to the buyer’s site or zone · FOB Jebel Ali · EXW Dubai for a nominated forwarder' },
+    {
+      label: 'Documentation',
+      value:
+        'Customs declaration, or free-zone admission where the consignee is a zone operator · Certificate of Origin, Dubai Chamber attested · Documents in Spanish · Material and test certificates where the specification calls for them',
+    },
+  ],
+  manifest: [
+    { label: 'Origin', value: 'Jebel Ali · Dubai' },
+    { label: 'Primary mode', value: 'Sea, via Suez' },
+    { label: 'Port of entry', value: 'Caucedo' },
+    { label: 'Transit', value: '30–38 days' },
+    { label: 'Quoted in', value: 'USD' },
+    { label: 'Docs prepared', value: 'Before the vessel sails' },
+  ],
+  map: {
+    geoNames: ['Dominican Rep.', 'Dominican Republic'],
+    fit: 'crossing',
+    origin: [55.03, 25.01],
+    originLabel: 'JEBEL ALI · DXB',
+    crossing: { name: 'CAUCEDO · PORT', coords: [-69.63, 18.42], legend: 'Port of entry', dx: 11, dy: 10, anchor: 'start' },
+    routes: [
+      { mode: 'SEA · SUEZ', primary: true, points: leg(MED_TO_ATLANTIC, [-14.0, 32.0], [-40.0, 24.0], [-60.0, 19.5], [-67.0, 18.6], [-69.63, 18.42]) },
+      { mode: 'AIR', points: leg(EUROPE_AIR, [0.0, 45.0], [-45.0, 25.0], [-69.67, 18.43]) },
+    ],
+  },
+  freight: [
+    { name: 'Sea, FCL', transit: '30–38 days', route: 'Jebel Ali to Caucedo, via Suez', useCase: 'Default for most orders' },
+    { name: 'Air freight', transit: '4–7 days', route: 'DXB to SDQ, with connections', useCase: 'When the line is down' },
+    { name: 'Sea, LCL', transit: '36–48 days', route: 'Consolidated, with transhipment', useCase: 'Small mixed orders' },
+  ],
+  orderSteps: {
+    third:
+      'Whether the consignee is a free-zone operator or a domestic importer is settled first, because the two are different files and converting one into the other after arrival is expensive.',
+    fourth: 'Goods sail from Jebel Ali through Suez and across the Atlantic to Caucedo, and you get the paperwork and tracking together.',
+  },
+  cities: [
+    { name: 'Santo Domingo', coords: [-69.93, 18.49], region: 'Distrito Nacional', plot: true, dx: -9, dy: 8, anchor: 'end' },
+    { name: 'Caucedo', coords: [-69.63, 18.42], region: 'Santo Domingo' },
+    { name: 'Haina', coords: [-70.03, 18.42], region: 'San Cristóbal' },
+    { name: 'Santiago', coords: [-70.7, 19.45], region: 'Santiago', plot: true, dx: -9, dy: -4, anchor: 'end' },
+    { name: 'Puerto Plata', coords: [-70.69, 19.79], region: 'Puerto Plata', plot: true, dx: -9, dy: -4, anchor: 'end' },
+    { name: 'La Romana', coords: [-68.97, 18.43], region: 'La Romana', plot: true, dx: 9, dy: 8 },
+    { name: 'San Pedro de Macorís', coords: [-69.3, 18.46], region: 'San Pedro' },
+    { name: 'Bonao', coords: [-70.41, 18.94], region: 'Monseñor Nouel', plot: true, dx: 9, dy: -4 },
+    { name: 'Barahona', coords: [-71.1, 18.21], region: 'Barahona', plot: true, dx: -9, dy: 6, anchor: 'end' },
+    { name: 'La Vega', coords: [-70.53, 19.22], region: 'La Vega' },
+    { name: 'San Francisco de Macorís', coords: [-70.25, 19.3], region: 'Duarte' },
+    { name: 'Higüey', coords: [-68.71, 18.62], region: 'La Altagracia' },
+  ],
+  sectors: [
+    { slug: 'mining', name: 'Mining', description: 'Ferronickel at Bonao and gold in the centre — dust-rated, high-cycle components for shovel and mill.' },
+    { slug: 'construction', name: 'Construction', description: 'Excavator, crane and batching-plant hydraulics for cement, infrastructure and resort works.' },
+    { slug: 'power', name: 'Power & Energy', description: 'Actuator and governor hydraulics for thermal, hydro and the coal-fired plant at Punta Catalina.' },
+    { slug: 'marine', name: 'Marine & Offshore', description: 'Deck machinery, crane and terminal hydraulics for the Caucedo and Haina port estates.' },
+    { slug: 'oil-gas', name: 'Oil & Gas', description: 'Fuel terminal and bulk-handling support at Haina and San Pedro.' },
+    { slug: 'steel', name: 'Steel & Metals', description: 'Cylinders and valves for the free-zone processing and fabrication lines.' },
+  ],
+  faqs: [
+    { question: 'Do you have a branch in the Dominican Republic?', answer: 'No. The Dominican Republic is supplied from our Dubai warehouse, by sea through Suez and across the Atlantic into Caucedo.' },
+    {
+      question: 'We are in a free zone — does that change anything?',
+      answer:
+        'Yes, and it is the first thing to settle. Goods admitted to a zone have not entered the country’s customs territory, so the file is a zone admission rather than an import entry. Converting one into the other after arrival is expensive, so tell us at quotation which applies.',
+    },
+    { question: 'What certification do we need?', answer: 'There is no blanket pre-shipment conformity scheme for industrial hose and fittings. The file is the declaration or the zone admission, the invoice and packing list, and the origin certificate.' },
+    { question: 'Can you deliver to the Bonao ferronickel plant?', answer: 'Yes, on DAP terms to the plant gate. The road leg north from Santo Domingo is priced with the order rather than estimated.' },
+    { question: 'Is Caucedo a gate or a hub?', answer: 'Both. It transhipes for the wider Caribbean as well as serving the island, so cargo staging onward should be documented that way from the outset rather than imported and re-exported.' },
+    { question: 'Why buy from Dubai rather than from Florida?', answer: 'For a standard item, Florida is closer and often right. What we hold is the pattern or the duty-specific compound as stock — for a plant with a shutdown calendar that is worth more than the freight difference.' },
+    { question: 'What language do the documents need to be in?', answer: 'Spanish, with the description agreeing across the invoice, the packing list and the declaration.' },
+    { question: 'What currency do you quote in?', answer: 'USD. It is what import and free-zone contracts here are written in.' },
+  ],
+  compliance: {
+    heading: 'Zone admission is not an import entry',
+    body:
+      'The Dominican Republic’s free zones are large enough that the first question on any consignment is which side of the line the consignee sits. Goods admitted to a zone have not entered the country’s customs territory: the paperwork is a zone admission, the duty treatment is different, and the goods can be re-exported without ever having been imported. Goods for a domestic buyer are an ordinary import entry. The two are not interchangeable, and converting one into the other after the container has arrived costs both time and duty that a single question at quotation would have avoided. Beyond that the file is short — no blanket conformity scheme for industrial hose and fittings, a declaration in Spanish against the invoice and packing list, and an attested certificate of origin. Caucedo also transhipes for the wider Caribbean, so cargo staging onward is documented as staging from the outset.',
+    documents: [
+      { ref: 'ZONE', name: 'Free-zone admission, where the consignee is a zone operator', issuer: 'The zone operator', when: 'Before arrival' },
+      { ref: 'DECL', name: 'Customs import declaration, for domestic consignees', issuer: 'The importer, through the DGA', when: 'Before arrival' },
+      { ref: 'COO', name: 'Certificate of Origin', issuer: 'Dubai Chamber attested', when: 'Before dispatch' },
+      { ref: 'PL', name: 'Packing list in Spanish, matching the declaration', issuer: 'Us, at dispatch', when: 'Before the vessel sails' },
+      { ref: 'MTC', name: 'Material and test certificates', issuer: 'Mill, or our test bench', when: 'Where the specification calls for them' },
+    ],
+  },
+}
+
+const GUATEMALA: MarketPage = {
+  slug: 'guatemala',
+  regulatoryCopy: 'unverified',
+  released: false,
+  lane: 'DXB → GT',
+  dialCode: '+502',
+  currency: 'USD',
+  lede: 'Guatemala has a coast on each ocean and a sugar harvest that concentrates demand into six months of the year. The mills run flat out from November to May and a hose that fails in February cannot wait for a five-week lane — so this is a market where ordering against the zafra calendar rather than against failures is the whole argument. Puerto Quetzal on the Pacific and Santo Tomás on the Atlantic are genuinely different lanes.',
+  facts: [
+    { label: 'Typical transit', value: 'Typically 34–42 days by sea to Santo Tomás, 30–38 eastbound to Puerto Quetzal' },
+    {
+      label: 'Freight',
+      value:
+        'Sea freight from Jebel Ali through Suez and across the Atlantic to Santo Tomás de Castilla · Eastbound through Malacca and the Pacific to Puerto Quetzal · Air freight into Guatemala City where the schedule is tighter',
+    },
+    { label: 'Incoterms 2020', value: 'CIF Puerto Quetzal · DAP to the buyer’s site or mill · FOB Jebel Ali · EXW Dubai for a nominated forwarder' },
+    {
+      label: 'Documentation',
+      value:
+        'Customs declaration raised by the importer · Certificate of Origin, Dubai Chamber attested · Documents in Spanish · Material and test certificates where the mill specification calls for them',
+    },
+  ],
+  manifest: [
+    { label: 'Origin', value: 'Jebel Ali · Dubai' },
+    { label: 'Primary mode', value: 'Sea, via the Pacific' },
+    { label: 'Port of entry', value: 'Puerto Quetzal' },
+    { label: 'Transit', value: '30–38 days' },
+    { label: 'Quoted in', value: 'USD' },
+    { label: 'Docs prepared', value: 'Before the vessel sails' },
+  ],
+  map: {
+    geoNames: ['Guatemala'],
+    fit: 'crossing',
+    origin: [55.03, 25.01],
+    originLabel: 'JEBEL ALI · DXB',
+    crossing: { name: 'PUERTO QUETZAL', coords: [-90.79, 13.92], legend: 'Port of entry', dx: -11, dy: 10, anchor: 'end' },
+    routes: [
+      {
+        mode: 'SEA · PACIFIC',
+        primary: true,
+        points: [[55.03, 25.01], [61.0, 21.5], [75.0, 8.5], [95.0, 5.0], [103.5, 1.3], [120.0, 12.0], [145.0, 22.0], [175.0, 25.0], [-155.0, 20.0], [-115.0, 16.0], [-95.0, 14.0], [-90.79, 13.92]],
+      },
+      { mode: 'SEA · ATLANTIC', points: leg(MED_TO_ATLANTIC, [-14.0, 32.0], [-45.0, 24.0], [-70.0, 19.0], [-83.0, 17.0], [-88.6, 15.7]) },
+    ],
+  },
+  freight: [
+    { name: 'Sea, FCL, Pacific', transit: '30–38 days', route: 'Eastbound through Malacca to Puerto Quetzal', useCase: 'Default — the mills are on the coast' },
+    { name: 'Air freight', transit: '4–8 days', route: 'DXB to GUA, with connections', useCase: 'Mid-harvest, when a mill is down' },
+    { name: 'Sea, FCL, Atlantic', transit: '34–42 days', route: 'Suez and the Atlantic to Santo Tomás', useCase: 'The east and the nickel belt' },
+  ],
+  orderSteps: {
+    third:
+      'The order is set against the zafra calendar rather than against failures, because a five-week lane cannot rescue a mill in February and everybody knows the harvest dates a year in advance.',
+    fourth: 'Goods sail from Jebel Ali on whichever ocean serves the destination, and you get the paperwork and tracking together.',
+  },
+  cities: [
+    { name: 'Guatemala City', coords: [-90.51, 14.63], region: 'Guatemala', plot: true, dx: 9, dy: -5 },
+    { name: 'Puerto Quetzal', coords: [-90.79, 13.92], region: 'Escuintla' },
+    { name: 'Escuintla', coords: [-90.79, 14.3], region: 'Escuintla', plot: true, dx: -9, dy: 6, anchor: 'end' },
+    { name: 'Santa Lucía Cotzumalguapa', coords: [-91.02, 14.33], region: 'Escuintla' },
+    { name: 'Retalhuleu', coords: [-91.68, 14.54], region: 'Retalhuleu', plot: true, dx: -9, dy: -4, anchor: 'end' },
+    { name: 'Mazatenango', coords: [-91.5, 14.53], region: 'Suchitepéquez' },
+    { name: 'Quetzaltenango', coords: [-91.52, 14.84], region: 'Quetzaltenango', plot: true, dx: -9, dy: -4, anchor: 'end' },
+    { name: 'Santo Tomás de Castilla', coords: [-88.61, 15.69], region: 'Izabal', plot: true, dx: 9, dy: -4 },
+    { name: 'Puerto Barrios', coords: [-88.6, 15.73], region: 'Izabal' },
+    { name: 'El Estor', coords: [-89.35, 15.53], region: 'Izabal', plot: true, dx: 9, dy: 6 },
+    { name: 'Cobán', coords: [-90.37, 15.47], region: 'Alta Verapaz', plot: true, dx: 9, dy: -4 },
+    { name: 'Chiquimula', coords: [-89.55, 14.8], region: 'Chiquimula' },
+  ],
+  sectors: [
+    { slug: 'construction', name: 'Construction', description: 'Sugar mill, cane handling and crushing hydraulics — the harvest concentrates the demand into six months.' },
+    { slug: 'mining', name: 'Mining', description: 'Nickel at El Estor and aggregate plant — dust-rated, high-cycle components.' },
+    { slug: 'power', name: 'Power & Energy', description: 'Actuator and governor hydraulics for hydro, bagasse cogeneration and thermal plant.' },
+    { slug: 'marine', name: 'Marine & Offshore', description: 'Deck machinery, crane and terminal hydraulics for the Pacific and Atlantic port estates.' },
+    { slug: 'oil-gas', name: 'Oil & Gas', description: 'Fuel terminal and bulk-handling support on both coasts.' },
+    { slug: 'steel', name: 'Steel & Metals', description: 'Cylinders and valves for fabrication and mill workshop equipment.' },
+  ],
+  faqs: [
+    { question: 'Do you have a branch in Guatemala?', answer: 'No. Guatemala is supplied from our Dubai warehouse, eastbound across the Pacific into Puerto Quetzal or through Suez to Santo Tomás.' },
+    {
+      question: 'How should we order around the zafra?',
+      answer:
+        'Ahead of it. The mills run from roughly November to May and a five-week lane cannot rescue a crusher in February. Everybody knows the harvest dates a year in advance, so the useful order is placed against the calendar rather than against the first failure.',
+    },
+    { question: 'Which coast should our cargo use?', answer: 'Puerto Quetzal for the Pacific mills and the capital, which is most of the demand. Santo Tomás for the east and the nickel belt. They are different oceans and different transits, so we fix it against the delivery town.' },
+    { question: 'Can you supply for cane handling duty?', answer: 'Yes — abrasion covers and high-cycle assemblies for cane tables, crushers and bagasse handling. Tell us the duty and the shift pattern rather than the part number.' },
+    { question: 'What certification do we need?', answer: 'There is no blanket pre-shipment conformity scheme for industrial hose and fittings. The file is the declaration, the invoice and packing list, and the origin certificate.' },
+    { question: 'Can you deliver to the mills?', answer: 'Yes, on DAP terms to the mill gate on the Pacific plain. The road leg from Puerto Quetzal is short and it is priced with the order.' },
+    { question: 'What language do the documents need to be in?', answer: 'Spanish, with the description agreeing across the invoice, the packing list and the declaration.' },
+    { question: 'What currency do you quote in?', answer: 'USD. It is what import contracts here are written in and what the customs value will be declared against.' },
+  ],
+  compliance: {
+    heading: 'The harvest is the calendar',
+    body:
+      'Guatemala’s industrial demand concentrates around the sugar zafra, which runs from roughly November to May and puts the mills on the Pacific plain under continuous load for half the year. That makes this the clearest planning market on the network. A hose that fails in February cannot be rescued by a lane that takes five weeks, and no amount of freight cleverness changes it — but the harvest dates are known a year ahead, which means the failure is avoidable by ordering against the calendar rather than against breakdowns. We would rather quote a consolidated pre-season order than an urgent one at four times the freight cost. The second thing to settle is the ocean: Puerto Quetzal is Pacific and reached eastbound through Malacca, Santo Tomás is Atlantic through Suez, and they are different lanes rather than variants. Customs itself is short and carries no conformity scheme.',
+    documents: [
+      { ref: 'SEASON', name: 'Order set against the zafra calendar, not against failures', issuer: 'Agreed at quotation', when: 'Ahead of the harvest' },
+      { ref: 'OCEAN', name: 'Pacific or Atlantic routing, fixed against the delivery town', issuer: 'Us, at quotation', when: 'At quotation' },
+      { ref: 'DECL', name: 'Customs import declaration', issuer: 'The importer, through SAT', when: 'Before arrival' },
+      { ref: 'COO', name: 'Certificate of Origin', issuer: 'Dubai Chamber attested', when: 'Before dispatch' },
+      { ref: 'PL', name: 'Packing list in Spanish, matching the declaration', issuer: 'Us, at dispatch', when: 'Before the vessel sails' },
+    ],
+  },
+}
+
+const HONDURAS: MarketPage = {
+  slug: 'honduras',
+  regulatoryCopy: 'unverified',
+  released: false,
+  lane: 'DXB → HN',
+  dialCode: '+504',
+  currency: 'USD',
+  lede: 'Puerto Cortés is the deepest natural harbour in Central America and it takes larger vessels than anything else on the isthmus, which is why cargo for Honduras rarely needs a feeder. Behind it the demand is palm oil mills, textile maquila and mining — and palm processing is a specific duty: hot oil, steam and constant washdown, which asks more of a compound than a pressure rating captures.',
+  facts: [
+    { label: 'Typical transit', value: 'Typically 32–40 days by sea from dispatch' },
+    {
+      label: 'Freight',
+      value: 'Sea freight from Jebel Ali through Suez and across the Atlantic to Puerto Cortés · San Lorenzo on the Pacific where the delivery is southern · Air freight into San Pedro Sula where the schedule is tighter',
+    },
+    { label: 'Incoterms 2020', value: 'CIF Puerto Cortés · DAP to the buyer’s site or mill · FOB Jebel Ali · EXW Dubai for a nominated forwarder' },
+    {
+      label: 'Documentation',
+      value:
+        'Customs declaration raised by the importer · Certificate of Origin, Dubai Chamber attested · Documents in Spanish · Material and test certificates where the mill specification calls for them',
+    },
+  ],
+  manifest: [
+    { label: 'Origin', value: 'Jebel Ali · Dubai' },
+    { label: 'Primary mode', value: 'Sea, via Suez' },
+    { label: 'Port of entry', value: 'Puerto Cortés' },
+    { label: 'Transit', value: '32–40 days' },
+    { label: 'Quoted in', value: 'USD' },
+    { label: 'Docs prepared', value: 'Before the vessel sails' },
+  ],
+  map: {
+    geoNames: ['Honduras'],
+    fit: 'crossing',
+    origin: [55.03, 25.01],
+    originLabel: 'JEBEL ALI · DXB',
+    crossing: { name: 'PUERTO CORTÉS', coords: [-87.95, 15.85], legend: 'Port of entry', dx: 11, dy: -8, anchor: 'start' },
+    routes: [
+      { mode: 'SEA · SUEZ', primary: true, points: leg(MED_TO_ATLANTIC, [-14.0, 32.0], [-45.0, 24.0], [-70.0, 19.0], [-83.0, 17.0], [-87.95, 15.85]) },
+      { mode: 'AIR', points: leg(EUROPE_AIR, [0.0, 45.0], [-50.0, 25.0], [-87.92, 15.45]) },
+    ],
+  },
+  freight: [
+    { name: 'Sea, FCL', transit: '32–40 days', route: 'Jebel Ali to Puerto Cortés, via Suez', useCase: 'Default for most orders' },
+    { name: 'Air freight', transit: '4–8 days', route: 'DXB to SAP, with connections', useCase: 'When a mill is down' },
+    { name: 'Sea, LCL', transit: '38–50 days', route: 'Consolidated, with transhipment', useCase: 'Small mixed orders' },
+  ],
+  orderSteps: {
+    third:
+      'For palm processing the compound is confirmed against hot oil, steam and washdown rather than pressure alone, because that combination defeats a general-purpose cover.',
+    fourth: 'Goods sail from Jebel Ali through Suez and across the Atlantic to Puerto Cortés, and you get the paperwork and tracking together.',
+  },
+  cities: [
+    { name: 'Puerto Cortés', coords: [-87.93, 15.84], region: 'Cortés' },
+    { name: 'San Pedro Sula', coords: [-88.03, 15.5], region: 'Cortés', plot: true, dx: -9, dy: 6, anchor: 'end' },
+    { name: 'Choloma', coords: [-87.95, 15.61], region: 'Cortés' },
+    { name: 'Villanueva', coords: [-88.02, 15.32], region: 'Cortés' },
+    { name: 'Tegucigalpa', coords: [-87.19, 14.08], region: 'Francisco Morazán', plot: true, dx: 9, dy: 8 },
+    { name: 'La Ceiba', coords: [-86.79, 15.77], region: 'Atlántida', plot: true, dx: 9, dy: -4 },
+    { name: 'Tela', coords: [-87.46, 15.78], region: 'Atlántida' },
+    { name: 'El Progreso', coords: [-87.8, 15.4], region: 'Yoro', plot: true, dx: 9, dy: 4 },
+    { name: 'Trujillo', coords: [-85.95, 15.92], region: 'Colón', plot: true, dx: 9, dy: -4 },
+    { name: 'San Lorenzo', coords: [-87.45, 13.42], region: 'Valle', plot: true, dx: -9, dy: 6, anchor: 'end' },
+    { name: 'Choluteca', coords: [-87.19, 13.3], region: 'Choluteca' },
+    { name: 'Comayagua', coords: [-87.64, 14.45], region: 'Comayagua' },
+  ],
+  sectors: [
+    { slug: 'construction', name: 'Construction', description: 'Palm oil mill, press and cane-handling hydraulics, and plant for the maquila and infrastructure programme.' },
+    { slug: 'mining', name: 'Mining', description: 'Zinc, lead and aggregate plant — dust-rated, high-cycle components.' },
+    { slug: 'power', name: 'Power & Energy', description: 'Actuator and governor hydraulics for hydro, thermal and biomass cogeneration.' },
+    { slug: 'marine', name: 'Marine & Offshore', description: 'Deck machinery, crane and terminal hydraulics for Puerto Cortés and the Caribbean fleet.' },
+    { slug: 'oil-gas', name: 'Oil & Gas', description: 'Fuel terminal and bulk-handling support at Puerto Cortés and San Lorenzo.' },
+    { slug: 'steel', name: 'Steel & Metals', description: 'Cylinders and valves for fabrication and mill workshop equipment.' },
+  ],
+  faqs: [
+    { question: 'Do you have a branch in Honduras?', answer: 'No. Honduras is supplied from our Dubai warehouse, by sea through Suez and across the Atlantic into Puerto Cortés.' },
+    {
+      question: 'Why does Puerto Cortés matter?',
+      answer:
+        'Because it is the deepest natural harbour in Central America and takes larger vessels than anything else on the isthmus. That means cargo for Honduras usually arrives on a direct call rather than waiting for a feeder, which is a real advantage over its neighbours.',
+    },
+    {
+      question: 'Can you supply for palm oil processing?',
+      answer:
+        'Yes, and it is the duty most worth getting right here. Hot oil, steam and constant washdown defeat a general-purpose cover, so tell us the temperature and the cleaning regime rather than the part number and we will specify against it.',
+    },
+    { question: 'What certification do we need?', answer: 'There is no blanket pre-shipment conformity scheme for industrial hose and fittings. The file is the declaration, the invoice and packing list, and the origin certificate.' },
+    { question: 'Can you deliver to the mills?', answer: 'Yes, on DAP terms to the mill gate in the Sula valley or the Aguán. The road leg from Puerto Cortés is short and it is priced with the order.' },
+    { question: 'What about southern deliveries?', answer: 'San Lorenzo on the Pacific coast is sometimes the better gate for Choluteca and the south, though the sailings are fewer. We compare rather than defaulting to the Caribbean side.' },
+    { question: 'What language do the documents need to be in?', answer: 'Spanish, with the description agreeing across the invoice, the packing list and the declaration.' },
+    { question: 'What currency do you quote in?', answer: 'USD. It is what import contracts here are written in and what the customs value will be declared against.' },
+  ],
+  compliance: {
+    heading: 'A deep harbour, and a washdown problem',
+    body:
+      'Puerto Cortés is the deepest natural harbour in Central America and takes larger vessels than any other port on the isthmus, so Honduran cargo usually arrives on a direct call rather than waiting for a feeder — a real advantage over neighbours whose consignments transhipe. Behind the port the duty worth understanding is palm oil processing. A mill combines hot oil, live steam and constant high-pressure washdown, and that combination attacks a general-purpose cover from three directions at once: temperature at the bore, oil at the liner, and water and detergent outside. A hose chosen on bore and pressure will pass its first inspection and be replaced within a season. So the useful quotation starts from the temperature and the cleaning regime. Customs is short — a declaration in Spanish against the invoice and packing list, with no conformity scheme to satisfy.',
+    documents: [
+      { ref: 'DUTY', name: 'Compound statement for hot oil, steam and washdown', issuer: 'Us, at quotation', when: 'At quotation, per duty' },
+      { ref: 'DECL', name: 'Customs import declaration', issuer: 'The importer, through the customs administration', when: 'Before arrival' },
+      { ref: 'COO', name: 'Certificate of Origin', issuer: 'Dubai Chamber attested', when: 'Before dispatch' },
+      { ref: 'PL', name: 'Packing list in Spanish, matching the declaration', issuer: 'Us, at dispatch', when: 'Before the vessel sails' },
+      { ref: 'MTC', name: 'Material and test certificates', issuer: 'Mill, or our test bench', when: 'Where the specification calls for them' },
+    ],
+  },
+}
+
+const COSTA_RICA: MarketPage = {
+  slug: 'costa-rica',
+  regulatoryCopy: 'unverified',
+  released: false,
+  lane: 'DXB → CR',
+  dialCode: '+506',
+  currency: 'USD',
+  lede: 'Costa Rica generates almost all of its electricity from hydro, geothermal and wind, and that shapes what we ship here more than anything else. Governor and wicket-gate hydraulics on a plant that never gets a demand-led shutdown are maintained to a schedule and specified for it. The other half is agricultural processing — pineapple and banana packing lines, where washdown and food-contact requirements matter more than pressure. Moín is the gate.',
+  facts: [
+    { label: 'Typical transit', value: 'Typically 33–41 days by sea from dispatch' },
+    {
+      label: 'Freight',
+      value: 'Sea freight from Jebel Ali through Suez and across the Atlantic to Moín · Caldera on the Pacific where the delivery is western · Air freight into San José where the schedule is tighter',
+    },
+    { label: 'Incoterms 2020', value: 'CIF Moín · DAP to the buyer’s site or plant · FOB Jebel Ali · EXW Dubai for a nominated forwarder' },
+    {
+      label: 'Documentation',
+      value:
+        'Customs declaration raised by the importer · Food-contact documentation where the line is for a packing plant · Certificate of Origin, Dubai Chamber attested · Documents in Spanish',
+    },
+  ],
+  manifest: [
+    { label: 'Origin', value: 'Jebel Ali · Dubai' },
+    { label: 'Primary mode', value: 'Sea, via Suez' },
+    { label: 'Port of entry', value: 'Moín · Limón' },
+    { label: 'Transit', value: '33–41 days' },
+    { label: 'Quoted in', value: 'USD' },
+    { label: 'Docs prepared', value: 'Before the vessel sails' },
+  ],
+  map: {
+    geoNames: ['Costa Rica'],
+    fit: 'crossing',
+    origin: [55.03, 25.01],
+    originLabel: 'JEBEL ALI · DXB',
+    crossing: { name: 'MOÍN · LIMÓN', coords: [-83.08, 10.0], legend: 'Port of entry', dx: 11, dy: -8, anchor: 'start' },
+    routes: [
+      { mode: 'SEA · SUEZ', primary: true, points: leg(MED_TO_ATLANTIC, [-14.0, 32.0], [-45.0, 24.0], [-70.0, 17.0], [-79.0, 12.0], [-83.08, 10.0]) },
+      { mode: 'AIR', points: leg(EUROPE_AIR, [0.0, 45.0], [-50.0, 22.0], [-84.21, 9.99]) },
+    ],
+  },
+  freight: [
+    { name: 'Sea, FCL', transit: '33–41 days', route: 'Jebel Ali to Moín, via Suez', useCase: 'Default for most orders' },
+    { name: 'Air freight', transit: '4–8 days', route: 'DXB to SJO, with connections', useCase: 'When the line is down' },
+    { name: 'Sea via Caldera', transit: '35–45 days', route: 'Pacific coast, transhipped', useCase: 'Western deliveries' },
+  ],
+  orderSteps: {
+    third:
+      'For generation plant the maintenance window is confirmed and the order set against it; for packing lines the food-contact and washdown requirements are settled before the compound is chosen.',
+    fourth: 'Goods sail from Jebel Ali through Suez and across the Atlantic to Moín, and you get the paperwork and tracking together.',
+  },
+  cities: [
+    { name: 'Moín', coords: [-83.08, 10.0], region: 'Limón' },
+    { name: 'Limón', coords: [-83.03, 9.99], region: 'Limón', plot: true, dx: 9, dy: 8 },
+    { name: 'San José', coords: [-84.09, 9.93], region: 'San José', plot: true, dx: 9, dy: -5 },
+    { name: 'Alajuela', coords: [-84.21, 10.02], region: 'Alajuela', plot: true, dx: -9, dy: -4, anchor: 'end' },
+    { name: 'Cartago', coords: [-83.92, 9.86], region: 'Cartago' },
+    { name: 'Heredia', coords: [-84.12, 9.99], region: 'Heredia' },
+    { name: 'Caldera', coords: [-84.72, 9.92], region: 'Puntarenas', plot: true, dx: -9, dy: 6, anchor: 'end' },
+    { name: 'Puntarenas', coords: [-84.83, 9.98], region: 'Puntarenas' },
+    { name: 'Liberia', coords: [-85.44, 10.63], region: 'Guanacaste', plot: true, dx: -9, dy: -4, anchor: 'end' },
+    { name: 'Guápiles', coords: [-83.79, 10.22], region: 'Limón', plot: true, dx: 9, dy: -4 },
+    { name: 'Siquirres', coords: [-83.51, 10.1], region: 'Limón' },
+    { name: 'San Isidro', coords: [-83.71, 9.37], region: 'San José', plot: true, dx: 9, dy: 6 },
+  ],
+  sectors: [
+    { slug: 'power', name: 'Power & Energy', description: 'Hydro, geothermal and wind — governor and wicket-gate hydraulics maintained to a schedule rather than to failure.' },
+    { slug: 'construction', name: 'Construction', description: 'Packing-line, conveyor and materials-handling hydraulics for the pineapple and banana estates.' },
+    { slug: 'marine', name: 'Marine & Offshore', description: 'Deck machinery, crane and terminal hydraulics for the Moín and Caldera port estates.' },
+    { slug: 'mining', name: 'Mining', description: 'Dust-rated, high-cycle components for aggregate and cement plant.' },
+    { slug: 'oil-gas', name: 'Oil & Gas', description: 'Fuel terminal and bulk-handling support at Moín.' },
+    { slug: 'steel', name: 'Steel & Metals', description: 'Cylinders and valves for fabrication and free-zone processing lines.' },
+  ],
+  faqs: [
+    { question: 'Do you have a branch in Costa Rica?', answer: 'No. Costa Rica is supplied from our Dubai warehouse, by sea through Suez and across the Atlantic into Moín.' },
+    {
+      question: 'Can you supply for hydro and geothermal plant?',
+      answer:
+        'Yes, and it is most of what this lane carries. A plant that runs continuously is maintained to a window rather than to failure, so the useful order is placed against the outage schedule. Tell us the window and we will land ahead of it rather than during it.',
+    },
+    {
+      question: 'Can you supply for food-contact packing lines?',
+      answer:
+        'Where the line requires it, tell us at quotation and we will state exactly what a compound carries. We supply industrial hose and fittings and will document what we can evidence; we do not certify an assembly as food-contact compliant on our own authority.',
+    },
+    { question: 'What certification do we need?', answer: 'There is no blanket pre-shipment conformity scheme for industrial hose and fittings. The file is the declaration, the invoice and packing list, and the origin certificate.' },
+    { question: 'Moín or Caldera?', answer: 'Moín for almost everything — it is the container gate and it is closer to the central valley. Caldera for western and Guanacaste deliveries where the road leg would otherwise cross the country.' },
+    { question: 'Can you deliver to the plantations?', answer: 'Yes, on DAP terms to the packhouse. The road leg from Moín into the Caribbean lowlands is short and it is priced with the order.' },
+    { question: 'What language do the documents need to be in?', answer: 'Spanish, with the description agreeing across the invoice, the packing list and the declaration.' },
+    { question: 'What currency do you quote in?', answer: 'USD. It is what import contracts here are written in and what the customs value will be declared against.' },
+  ],
+  compliance: {
+    heading: 'A grid that never stops, and a line that gets washed down',
+    body:
+      'Costa Rica generates almost all of its electricity from hydro, geothermal and wind, which produces an unusual maintenance culture: plant that runs continuously is serviced to a planned outage window rather than to failure, and the window is known well in advance. That makes this a lane where the right order is a scheduled one landed before the window opens, and where an urgent shipment usually means somebody missed a date rather than that something broke. We would rather quote against the schedule. The second thread is agricultural processing — pineapple and banana packing lines — where the constraint is washdown and food contact rather than pressure. On that we will state precisely what a compound carries and document what we can evidence, and we will not certify an assembly as food-contact compliant on our own authority. Saying so at quotation is more useful than a claim that has to be withdrawn.',
+    documents: [
+      { ref: 'WINDOW', name: 'Order set against the plant’s outage schedule', issuer: 'Agreed at quotation', when: 'Ahead of the window' },
+      { ref: 'CONTACT', name: 'Compound documentation for washdown and food-contact lines', issuer: 'Us, at quotation', when: 'At quotation, per duty' },
+      { ref: 'DECL', name: 'Customs import declaration', issuer: 'The importer, through the customs administration', when: 'Before arrival' },
+      { ref: 'COO', name: 'Certificate of Origin', issuer: 'Dubai Chamber attested', when: 'Before dispatch' },
+      { ref: 'PL', name: 'Packing list in Spanish, matching the declaration', issuer: 'Us, at dispatch', when: 'Before the vessel sails' },
+    ],
+  },
+}
+
 export const MARKET_PAGE_RECORDS_3: readonly MarketPage[] = [
   TURKEY,
   NORWAY,
@@ -4460,4 +5341,12 @@ export const MARKET_PAGE_RECORDS_3: readonly MarketPage[] = [
   ESTONIA,
   LATVIA,
   LITHUANIA,
+  UNITED_STATES,
+  CANADA,
+  MEXICO,
+  JAMAICA,
+  DOMINICAN_REPUBLIC,
+  GUATEMALA,
+  HONDURAS,
+  COSTA_RICA,
 ]
