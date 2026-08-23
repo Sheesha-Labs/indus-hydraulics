@@ -4,6 +4,7 @@ import { buildBreadcrumbLd } from '@indus/domain'
 import { JsonLd } from '@indus/ui'
 import BlogIndexView from '../../../../../components/blog/BlogIndexView'
 import { getBlogIndexPage } from '../../../../../lib/blog-index'
+import { getMasterPageContent } from '../../../../../lib/page-content'
 import { pageMetadata, urlFor } from '../../../../../lib/seo'
 
 type Props = { params: Promise<{ n: string }> }
@@ -35,7 +36,12 @@ export default async function BlogPaginatedPage({ params }: Props) {
   const page = parsePage(n)
   if (!page) notFound()
 
-  const { posts, topics, totalPosts, totalPages } = await getBlogIndexPage(page)
+  const [{ posts, topics, totalPosts, totalPages }, content] = await Promise.all([
+    getBlogIndexPage(page),
+    // Same document as /blog — a paged view is the same page with a different
+    // slice of articles, so it must not drift from page one's wording.
+    getMasterPageContent('blog'),
+  ])
   if (posts.length === 0) notFound()
 
   return (
@@ -55,6 +61,7 @@ export default async function BlogPaginatedPage({ params }: Props) {
         totalPosts={totalPosts}
         page={page}
         totalPages={totalPages}
+        content={content}
       />
     </>
   )

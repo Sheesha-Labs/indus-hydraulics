@@ -14,12 +14,27 @@
  * itself.
  */
 
+/**
+ * The named tokens are the ones documented in the editor's help text. The
+ * index signature is what lets a page add its own — the contact page's
+ * `{hours}`, `{phone}` and `{email}` come from store settings, not from the
+ * catalogue, and inventing a union member per page would mean editing this
+ * file every time a page grew a figure.
+ */
 export type CopyTokens = Partial<
   Record<
-    'skus' | 'skusFloor' | 'brands' | 'categories' | 'industries' | 'countries' | 'markets' | 'years',
+    | 'skus'
+    | 'skusFloor'
+    | 'brands'
+    | 'categories'
+    | 'industries'
+    | 'countries'
+    | 'markets'
+    | 'years',
     string | number
   >
->
+> &
+  Record<string, string | number | undefined>
 
 const TOKEN = /\{([a-zA-Z]+)\}/g
 

@@ -194,7 +194,11 @@ function ScalarField({
   }
 
   if (isSelectField(field)) {
-    const options = seeds[field.optionsKey] ?? []
+    // A fixed list declared in code wins over a live one; a field carries one
+    // or the other, never both.
+    const options: SeedItem[] = field.options
+      ? field.options.map((o) => ({ slug: o.value, name: o.label }))
+      : (field.optionsKey ? (seeds[field.optionsKey] ?? []) : [])
     const picked = typeof value === 'string' ? value : ''
     const missing = picked !== '' && !options.some((o) => o.slug === picked)
     return (

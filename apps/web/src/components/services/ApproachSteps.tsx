@@ -6,6 +6,9 @@ import type { ApproachStep } from '../../lib/services-config'
 
 type Props = {
   steps: ApproachStep[]
+  /** Copy from Pages & Blocks; each falls back to the shipped string. */
+  eyebrow?: string | null
+  heading?: string | null
 }
 
 /**
@@ -13,7 +16,7 @@ type Props = {
  * preview panel showing the active step's detail + deliverable pills. Mirrors
  * the mock exactly: single-active state, hover non-active to highlight.
  */
-export default function ApproachSteps({ steps }: Props) {
+export default function ApproachSteps({ steps, eyebrow, heading }: Props) {
   // step 02 default-active per the mock; clamp into range so we never read undefined
   const [activeIdx, setActiveIdx] = useState(Math.min(1, steps.length - 1))
   const active = steps[activeIdx] ?? steps[0]
@@ -22,9 +25,10 @@ export default function ApproachSteps({ steps }: Props) {
   return (
     <section className="-mx-[var(--spacing-page-gutter)] border-y border-ih-border bg-ih-surface px-[var(--spacing-page-gutter)] py-20">
       <div className="mx-auto max-w-[var(--spacing-max-w)]">
-        <span className="eyebrow">HOW WE WORK · A LOOK INSIDE</span>
+        <span className="eyebrow">{eyebrow ?? 'HOW WE WORK · A LOOK INSIDE'}</span>
         <h2 className="my-3 mb-10 max-w-[700px] text-3xl font-semibold leading-[1.05] tracking-[-0.025em] sm:text-4xl">
-          The same four steps run every service, every time — from a piston seal to a BOP recert.
+          {heading ??
+            'The same four steps run every service, every time — from a piston seal to a BOP recert.'}
         </h2>
 
         <div className="grid grid-cols-1 items-start gap-14 lg:grid-cols-[320px_1fr]">

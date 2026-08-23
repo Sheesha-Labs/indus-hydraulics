@@ -7,7 +7,7 @@ export * from './types'
 export * from './fields'
 export * from './resolve'
 export * from './tokens'
-export { MASTER_PAGES } from './pages'
+export { MASTER_PAGES, HELP_TILE_ICONS } from './pages'
 import { MASTER_PAGES } from './pages'
 import type { MasterPageDef } from './types'
 

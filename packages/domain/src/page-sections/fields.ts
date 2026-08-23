@@ -88,6 +88,14 @@ export const select = (
   extra: Partial<Omit<SelectFieldDef, 'kind' | 'optionsKey'>> = {},
 ): SelectFieldDef => ({ key, label, kind: 'select', optionsKey, ...extra })
 
+/** A pick from a fixed set declared in code rather than from live records. */
+export const choice = (
+  key: string,
+  label: string,
+  options: readonly { value: string; label: string }[],
+  extra: Partial<Omit<SelectFieldDef, 'kind' | 'options' | 'optionsKey'>> = {},
+): SelectFieldDef => ({ key, label, kind: 'select', options, ...extra })
+
 export const eyebrow = (extra: Partial<SimpleFieldDef> = {}) =>
   text('eyebrow', 'Eyebrow', { max: 80, optional: true, ...extra })
 
@@ -108,7 +116,11 @@ export const ctaPair = (
   ]
 }
 
-export const statList = (max = 6, label = 'Stats'): ListFieldDef => ({
+export const statList = (
+  max = 6,
+  label = 'Stats',
+  opts: { withSuffix?: boolean } = {},
+): ListFieldDef => ({
   key: 'stats',
   label,
   kind: 'list',
@@ -116,6 +128,13 @@ export const statList = (max = 6, label = 'Stats'): ListFieldDef => ({
   max,
   fields: [
     text('value', 'Figure', { max: 40 }),
+    // A unit that is set SMALLER than the figure beside it — the `h` in "96h",
+    // the `%` in "100%". It is a separate field rather than part of the figure
+    // because the design sizes the two differently, and a suffix typed into
+    // `value` would render at full size with no way to tell.
+    ...(opts.withSuffix
+      ? [text('suffix', 'Small unit', { max: 8, optional: true })]
+      : []),
     text('label', 'Caption', { max: 60 }),
   ],
 })
