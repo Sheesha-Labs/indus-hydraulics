@@ -10,7 +10,7 @@
  *   deleteHomeHeroSlide   — delete slide + dedicated Media row + storage object
  *
  * Every mutation calls revalidateTag('homepage-hero') so the storefront
- * carousel reflects the change on the next request, and revalidatePath('/admin/cms')
+ * carousel reflects the change on the next request, and revalidatePath('/admin/pages/hero')
  * so the admin tab refreshes after the action returns.
  *
  * Auth: ROLES.CMS_WRITE (super_admin / manager / cms_editor).
@@ -19,10 +19,10 @@
 import { revalidatePath, updateTag } from 'next/cache'
 import { z } from 'zod'
 import { db } from '@indus/db'
-import { auth } from '../../../../lib/admin-auth'
-import { ROLES, requireRole } from '../../../../lib/rbac'
-import { fail, failFromError, ok, type Result } from '../../../../lib/result'
-import { STORAGE_BUCKETS, deleteFromStorage, uploadToStorage } from '../../../../lib/supabase-admin'
+import { auth } from '../../../../../lib/admin-auth'
+import { ROLES, requireRole } from '../../../../../lib/rbac'
+import { fail, failFromError, ok, type Result } from '../../../../../lib/result'
+import { STORAGE_BUCKETS, deleteFromStorage, uploadToStorage } from '../../../../../lib/supabase-admin'
 
 const MAX_BYTES = 10 * 1024 * 1024 // 10 MB
 const ALLOWED_MIME = new Set(['image/jpeg', 'image/png', 'image/webp', 'image/gif'])
@@ -98,7 +98,7 @@ export async function uploadHomeHeroSlide(formData: FormData): Promise<Result<{ 
     })
 
     updateTag('homepage-hero')
-    revalidatePath('/admin/cms')
+    revalidatePath('/admin/pages/hero')
     return ok({ slideId: slide.id })
   } catch (err) {
     return failFromError(err)
@@ -131,7 +131,7 @@ export async function updateHomeHeroSlide(
     await db.homepageHeroSlide.update({ where: { id: parsed.id }, data })
 
     updateTag('homepage-hero')
-    revalidatePath('/admin/cms')
+    revalidatePath('/admin/pages/hero')
     return ok(undefined)
   } catch (err) {
     return failFromError(err)
@@ -176,7 +176,7 @@ export async function moveHomeHeroSlide(
     ])
 
     updateTag('homepage-hero')
-    revalidatePath('/admin/cms')
+    revalidatePath('/admin/pages/hero')
     return ok(undefined)
   } catch (err) {
     return failFromError(err)
@@ -214,7 +214,7 @@ export async function deleteHomeHeroSlide(id: string): Promise<Result<void>> {
     }
 
     updateTag('homepage-hero')
-    revalidatePath('/admin/cms')
+    revalidatePath('/admin/pages/hero')
     return ok(undefined)
   } catch (err) {
     return failFromError(err)

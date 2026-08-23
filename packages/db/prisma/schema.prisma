@@ -415,6 +415,7 @@ model StaffUser {
   reviewedBlogPosts BlogPost[]        @relation("BlogPostReviewer")
   blogAuthorProfile BlogAuthor[]      @relation("BlogAuthorStaffUser")
   sentInvitations   StaffInvitation[] @relation("StaffInvitationInvitedBy")
+  pageContentEdits  PageContent[]     @relation("PageContentEditor")
 
   @@map("staff_users")
 }
@@ -1334,6 +1335,34 @@ model CmsPage {
   navMenuItems NavMenuItem[]
 
   @@map("cms_pages")
+}
+
+/// Section documents for the Pages & Blocks editor.
+///
+/// One row per editable page. `key` is `master/<page>` for a master page and
+/// `<kind>/<slug>` for a sub-page built from a record — `market/nigeria`,
+/// `brand/eaton`. `sections` holds the ordered `StoredSection[]` the registry
+/// in `@indus/domain/page-sections` merges over its code defaults.
+///
+/// Deliberately NOT columns per field. What an editor may change is declared
+/// in code and changes with the design; a schema that mirrored it would need a
+/// migration every time a section gained a caption. The registry is the
+/// contract, this table is just where the overrides land, and a document that
+/// predates a section (or outlives one) still resolves — see `resolveSections`.
+model PageContent {
+  id          String     @id @default(uuid())
+  key         String     @unique
+  /// "master" | "market" | "brand". Lets the admin count and list by family
+  /// without parsing `key`.
+  kind        String
+  sections    Json       @default("[]")
+  createdAt   DateTime   @default(now())
+  updatedAt   DateTime   @default(now()) @updatedAt
+  updatedById String?
+  updatedBy   StaffUser? @relation("PageContentEditor", fields: [updatedById], references: [id], onDelete: SetNull)
+
+  @@index([kind])
+  @@map("page_content")
 }
 
 model BlogPost {

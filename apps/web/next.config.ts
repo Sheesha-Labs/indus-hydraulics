@@ -56,6 +56,26 @@ const nextConfig: NextConfig = {
         destination: '/admin/blog',
         permanent: false,
       },
+      // "Pages & Hero" became "Pages & Blocks" at /admin/pages. The old
+      // section is gone entirely, so these are the only thing standing between
+      // a bookmarked editor link and a 404. Ordered before the bare /admin/cms
+      // rule, which would otherwise swallow the editor path.
+      {
+        source: '/admin/cms/pages/:id',
+        destination: '/admin/pages/static/:id',
+        permanent: false,
+      },
+      {
+        source: '/admin/cms',
+        has: [{ type: 'query', key: 'tab', value: 'hero' }],
+        destination: '/admin/pages/hero',
+        permanent: false,
+      },
+      {
+        source: '/admin/cms',
+        destination: '/admin/pages',
+        permanent: false,
+      },
 
       // Legacy metallic-ptfe-hoses category was split into the new
       // metallic-hoses parent + 7 sub-categories during the Metallic
