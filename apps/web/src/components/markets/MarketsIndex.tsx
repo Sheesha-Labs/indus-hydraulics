@@ -34,6 +34,37 @@ import MarketsIndexToolbar from './MarketsIndexToolbar'
  * plus the closing band. Country names are LINK TEXT, not headings. Promoting
  * them would hang 126 H3s off the outline and destroy it.
  */
+/**
+ * Copy for the four editable bands, from Pages & Blocks · Export markets.
+ *
+ * Passed in rather than read here: this is a shared presentational component
+ * and the page is the only node that knows which document it is rendering.
+ * Every field is nullable, and every use falls back to what the page shipped
+ * with, so a blanked field is a hidden element rather than a hole.
+ */
+export type MarketsIndexCopy = {
+  hero: {
+    eyebrow: string | null
+    heading: string | null
+    body: string | null
+    primaryCtaLabel: string | null
+    whatsappCtaLabel: string | null
+    tiles: { label: string; value: string }[]
+  }
+  manifest: { label: string; value: string }[]
+  cta: {
+    eyebrow: string | null
+    heading: string | null
+    body: string | null
+    whatsappCtaLabel: string | null
+    emailCtaLabel: string | null
+    phonePrefix: string | null
+    phoneSuffix: string | null
+  }
+  /** Section keys that are switched on, in the editor's order. */
+  order: string[]
+}
+
 export default function MarketsIndex({
   regions,
   thumbnails,
@@ -41,6 +72,7 @@ export default function MarketsIndex({
   destinationNames,
   contact,
   showAuditStrip,
+  copy,
 }: {
   regions: readonly MarketIndexRegion[]
   /** Keyed by market slug. Null for a country Natural Earth cannot match. */
@@ -50,22 +82,11 @@ export default function MarketsIndex({
   contact: { phone: string | null; email: string | null; hours: string | null; whatsappUrl: string | null }
   /** The build-time audit strip. Staging only — see the gate at the call site. */
   showAuditStrip: boolean
+  copy: MarketsIndexCopy
 }) {
-  const manifest: [string, string][] = [
-    ['Origin', 'Jebel Ali · Dubai'],
-    ['Modes', 'Road · Sea · Air'],
-    ['Incoterms', 'DAP · CIF · FOB · EXW'],
-    ['Docs prepared', 'Before dispatch, in Dubai'],
-    ['Quoted in', 'AED · USD · EUR'],
-    ['Export desk', contact.hours ?? 'Mon–Fri 09:00–18:00 GST'],
-  ]
-
-  const tiles: [string, number | string][] = [
-    ['Destinations served', totals.destinations],
-    ['Regions', totals.regions],
-    ['Stated transit bands', totals.withStatedTransit],
-    ['Origin', 'Jebel Ali'],
-  ]
+  const manifest = copy.manifest
+  const tiles = copy.hero.tiles
+  const on = (key: string) => copy.order.includes(key)
 
   return (
     <div className="bg-ih-surface">
@@ -92,33 +113,31 @@ export default function MarketsIndex({
         <div className="mx-auto grid max-w-[1440px] grid-cols-1 items-end gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,420px)] lg:gap-16">
           <div>
             <p className="mono text-[10px] uppercase tracking-[0.14em] text-ih-muted">
-              Export from Dubai
+              {copy.hero.eyebrow}
             </p>
             {/* Deliberately short. The H1 on a hub page should not compete with
                 the 126 country names below it. */}
             <h1 className="mt-[18px] font-serif text-[38px] leading-[1.02] tracking-[-0.01em] sm:text-[48px] lg:text-[62px] lg:leading-none">
-              Export markets
+              {copy.hero.heading}
             </h1>
             <p className="mt-5 max-w-[680px] text-pretty text-[16px] leading-[1.6] text-ih-ink-2">
-              We ship hydraulic hose, fittings, adapters, valves and industrial hose from our Dubai
-              warehouse to {totals.destinations} destinations. Every lane below is a real one: a
-              named origin, a named port or border crossing, and documents prepared here before the
-              goods leave. Follow any country through for its transit times, conformity set and
-              delivery cities.
+              {copy.hero.body}
             </p>
 
             <div className="mt-[26px] flex flex-wrap gap-2.5">
-              <Button asChild kind="primary" size="lg">
-                {/* An in-page jump, not a navigation — the form is already on
-                    this page and the reader keeps their place. */}
-                <a href="#enquiry">
-                  Request an export quote <span aria-hidden="true">→</span>
-                </a>
-              </Button>
-              {contact.whatsappUrl && (
+              {copy.hero.primaryCtaLabel && (
+                <Button asChild kind="primary" size="lg">
+                  {/* An in-page jump, not a navigation — the form is already on
+                      this page and the reader keeps their place. */}
+                  <a href="#enquiry">
+                    {copy.hero.primaryCtaLabel} <span aria-hidden="true">→</span>
+                  </a>
+                </Button>
+              )}
+              {contact.whatsappUrl && copy.hero.whatsappCtaLabel && (
                 <Button asChild kind="outline" size="lg">
                   <a href={contact.whatsappUrl} target="_blank" rel="noopener noreferrer">
-                    WhatsApp the export desk
+                    {copy.hero.whatsappCtaLabel}
                   </a>
                 </Button>
               )}
@@ -127,43 +146,51 @@ export default function MarketsIndex({
 
           {/* The 1px gap over the border colour IS the divider — there are no
               internal rules in this grid. */}
-          <dl className="grid grid-cols-2 gap-px overflow-hidden rounded-lg border border-ih-border bg-ih-border">
-            {tiles.map(([label, value]) => (
-              <div key={label} className="bg-ih-surface px-5 pb-5 pt-[18px]">
-                <dt className="mono text-[9.5px] uppercase tracking-[0.13em] text-ih-muted">
-                  {label}
-                </dt>
-                {/* A count and a place name are different kinds of fact, so
-                    they are set in different faces: tabular numerals for the
-                    first, the display serif for the second. */}
-                {typeof value === 'number' ? (
-                  <dd className="m-0 mt-1.5 text-[30px] font-medium tabular-nums leading-none tracking-[-0.025em]">
-                    {value}
-                  </dd>
-                ) : (
-                  <dd className="m-0 mt-1.5 font-serif text-[24px] leading-none tracking-[-0.025em]">
-                    {value}
-                  </dd>
-                )}
-              </div>
-            ))}
-          </dl>
+          {tiles.length > 0 && (
+            <dl className="grid grid-cols-2 gap-px overflow-hidden rounded-lg border border-ih-border bg-ih-border">
+              {tiles.map((tile) => (
+                <div key={tile.label} className="bg-ih-surface px-5 pb-5 pt-[18px]">
+                  <dt className="mono text-[9.5px] uppercase tracking-[0.13em] text-ih-muted">
+                    {tile.label}
+                  </dt>
+                  {/* A count and a place name are different kinds of fact, so
+                      they are set in different faces: tabular numerals for the
+                      first, the display serif for the second. The test is what
+                      the value IS after the live counts are substituted, not
+                      what the editor typed. */}
+                  {/^\d[\d,]*$/.test(tile.value) ? (
+                    <dd className="m-0 mt-1.5 text-[30px] font-medium tabular-nums leading-none tracking-[-0.025em]">
+                      {tile.value}
+                    </dd>
+                  ) : (
+                    <dd className="m-0 mt-1.5 font-serif text-[24px] leading-none tracking-[-0.025em]">
+                      {tile.value}
+                    </dd>
+                  )}
+                </div>
+              ))}
+            </dl>
+          )}
         </div>
       </section>
 
       {/* ── Manifest strip ── */}
-      <div className="bg-ih-navy px-5 sm:px-8 lg:px-12">
-        <dl className="mx-auto grid max-w-[1440px] grid-cols-2 gap-px bg-white/15 sm:grid-cols-3 lg:grid-cols-6">
-          {manifest.map(([label, value]) => (
-            <div key={label} className="bg-ih-navy px-5 pb-6 pt-[22px]">
-              <dt className="mono text-[9px] uppercase tracking-[0.16em] text-ih-steel">{label}</dt>
-              <dd className="mono m-0 mt-2 text-[14px] leading-[1.35] tracking-[-0.01em] text-white">
-                {value}
-              </dd>
-            </div>
-          ))}
-        </dl>
-      </div>
+      {on('manifest') && manifest.length > 0 && (
+        <div className="bg-ih-navy px-5 sm:px-8 lg:px-12">
+          <dl className="mx-auto grid max-w-[1440px] grid-cols-2 gap-px bg-white/15 sm:grid-cols-3 lg:grid-cols-6">
+            {manifest.map((fact) => (
+              <div key={fact.label} className="bg-ih-navy px-5 pb-6 pt-[22px]">
+                <dt className="mono text-[9px] uppercase tracking-[0.16em] text-ih-steel">
+                  {fact.label}
+                </dt>
+                <dd className="mono m-0 mt-2 text-[14px] leading-[1.35] tracking-[-0.01em] text-white">
+                  {fact.value}
+                </dd>
+              </div>
+            ))}
+          </dl>
+        </div>
+      )}
 
       <MarketsIndexToolbar
         regions={regions.map((region) => ({
@@ -239,47 +266,47 @@ export default function MarketsIndex({
       <section id="enquiry" className="scroll-mt-[120px] bg-ih-navy px-5 py-14 sm:px-8 lg:px-12 lg:py-[60px]">
         <div className="mx-auto grid max-w-[1440px] grid-cols-1 items-center gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,470px)] lg:gap-14">
           <div>
-            <p className="mono text-[10px] uppercase tracking-[0.14em] text-ih-steel">Next step</p>
+            <p className="mono text-[10px] uppercase tracking-[0.14em] text-ih-steel">
+              {copy.cta.eyebrow}
+            </p>
             <h2 className="mt-3.5 font-serif text-[32px] leading-[1.05] tracking-[-0.01em] text-white sm:text-[42px]">
-              Not seeing your country?
+              {copy.cta.heading}
             </h2>
             {/*
-              The second sentence is the compliance line, and it belongs here
-              rather than on the cards. An earlier design badged individual
-              markets as screened; that read as a political statement about
-              those countries. Said once, in the register of how we quote, it
-              is a statement about our process. Keep it.
+              The second sentence of the body is the compliance line, and it
+              belongs here rather than on the cards. An earlier design badged
+              individual markets as screened; that read as a political
+              statement about those countries. Said once, in the register of
+              how we quote, it is a statement about our process. Keep it.
             */}
             <p className="mt-3.5 max-w-[620px] text-[15px] leading-[1.65] text-[oklch(0.84_0.02_250)]">
-              Tell us the destination and the part numbers and we will quote the lane, the documents
-              and the freight together. Where a market needs counterparty and end-use screening we
-              say so before quoting rather than after.
+              {copy.cta.body}
             </p>
 
             <div className="mt-[26px] flex flex-wrap gap-2.5">
-              {contact.whatsappUrl && (
+              {contact.whatsappUrl && copy.cta.whatsappCtaLabel && (
                 <Button asChild kind="onnavy" size="lg">
                   <a href={contact.whatsappUrl} target="_blank" rel="noopener noreferrer">
-                    WhatsApp us
+                    {copy.cta.whatsappCtaLabel}
                   </a>
                 </Button>
               )}
-              {contact.email && (
+              {contact.email && copy.cta.emailCtaLabel && (
                 <Button asChild kind="onnavy" size="lg">
                   <a href={`mailto:${contact.email}?subject=${encodeURIComponent('Export enquiry')}`}>
-                    Email the export desk
+                    {copy.cta.emailCtaLabel}
                   </a>
                 </Button>
               )}
             </div>
 
-            {contact.phone && (
+            {contact.phone && copy.cta.phonePrefix && (
               <p className="mono mt-[26px] text-[11px] uppercase tracking-[0.08em] text-[oklch(0.75_0.03_250)]">
-                Plant-down? Call{' '}
+                {copy.cta.phonePrefix}{' '}
                 <a href={`tel:${contact.phone.replace(/\s+/g, '')}`} className="underline underline-offset-4">
                   {contact.phone}
-                </a>{' '}
-                — 24/7
+                </a>
+                {copy.cta.phoneSuffix ? ` ${copy.cta.phoneSuffix}` : null}
               </p>
             )}
           </div>
