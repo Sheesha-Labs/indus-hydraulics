@@ -152,6 +152,23 @@ export function visibleList<T>(values: SectionValues, key: string): T[] {
   )
 }
 
+/**
+ * A textarea edited as one item per line.
+ *
+ * A list field's sub-fields hold scalars, so a list inside a list item is not
+ * expressible in the section model — and for six short deliverable names a
+ * textarea is a better control than six rows of inputs anyway. Blank lines are
+ * dropped and each line trimmed, so a trailing newline or a pasted indent
+ * doesn't render as an empty pill.
+ */
+export function lines(value: unknown): string[] {
+  if (typeof value !== 'string') return []
+  return value
+    .split(/\r?\n/)
+    .map((line) => line.trim())
+    .filter((line) => line !== '')
+}
+
 // ── writing ──────────────────────────────────────────────────────────────
 
 export type ValidationIssue = { section: string; field: string; message: string }

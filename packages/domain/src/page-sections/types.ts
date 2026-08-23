@@ -54,7 +54,15 @@ export type SelectFieldDef = {
   key: string
   label: string
   kind: 'select'
-  optionsKey: SeedKey
+  /** Options fetched live by the admin route — brands, industries, categories. */
+  optionsKey?: SeedKey
+  /**
+   * A fixed option list, for a pick that is a code choice rather than a
+   * record — which icon a tile shows, say. Declared here so the set the
+   * renderer can actually resolve and the set the editor offers are the same
+   * list, instead of a free-text field with a help string nobody reads.
+   */
+  options?: readonly { value: string; label: string }[]
   help?: string
   /** Placeholder for the empty option. */
   placeholder?: string

@@ -3,14 +3,39 @@ import type { HeroStat } from '../../lib/services-config'
 
 type Props = {
   stats: HeroStat[]
+  /**
+   * Copy from Pages & Blocks. Every field falls back to the string this
+   * component shipped with, so the component still renders correctly if it is
+   * ever mounted without a document behind it.
+   */
+  eyebrow?: string | null
+  headingLead?: string | null
+  headingEmphasis?: string | null
+  headingTail?: string | null
+  body?: string | null
+  primaryLabel?: string | null
+  primaryHref?: string | null
+  secondaryLabel?: string | null
+  secondaryHref?: string | null
 }
 
-export default function ServicesHero({ stats }: Props) {
+export default function ServicesHero({
+  stats,
+  eyebrow,
+  headingLead,
+  headingEmphasis,
+  headingTail,
+  body,
+  primaryLabel,
+  primaryHref,
+  secondaryLabel,
+  secondaryHref,
+}: Props) {
   return (
     <section className="border-b border-ih-border py-14">
       <div className="grid grid-cols-1 items-end gap-12 lg:grid-cols-[1.3fr_1fr] lg:gap-16">
         <div>
-          <span className="eyebrow">SERVICES · WORKSHOPS · ON-SITE</span>
+          <span className="eyebrow">{eyebrow ?? 'SERVICES · WORKSHOPS · ON-SITE'}</span>
           {/*
             The display pattern: a full declarative sentence ending in a
             period, with the closing clause in ITALIC. 01-design-language.md
@@ -20,11 +45,13 @@ export default function ServicesHero({ stats }: Props) {
             decoration.
           */}
           <h1 className="my-4 max-w-[15ch] text-balance font-serif text-[clamp(38px,5.5vw,60px)] font-normal leading-[1.04] tracking-[-0.01em]">
-            Things people <em className="italic">bring us broken</em>, and what we sent back.
+            {headingLead ?? 'Things people'}{' '}
+            {headingEmphasis ? <em className="italic">{headingEmphasis}</em> : null}
+            {headingTail ?? ', and what we sent back.'}
           </h1>
           <p className="max-w-xl text-[17px] leading-[1.55] text-ih-muted">
-            Service jobs run out of our Jebel Ali yard — written as case studies, with photos, measurements
-            and what it actually cost. Browse the cases or jump straight to a quote.
+            {body ??
+              'Service jobs run out of our Jebel Ali yard — written as case studies, with photos, measurements and what it actually cost. Browse the cases or jump straight to a quote.'}
           </p>
         </div>
 
@@ -50,18 +77,22 @@ export default function ServicesHero({ stats }: Props) {
             ))}
           </div>
           <div className="flex flex-wrap gap-3">
-            <Link
-              href="/quote"
-              className="inline-flex items-center gap-2 rounded-sm bg-ih-navy px-5 py-3 text-sm font-medium text-white hover:bg-ih-ink"
-            >
-              Request a service quote
-            </Link>
-            <Link
-              href="/contact"
-              className="inline-flex items-center gap-2 rounded-sm border border-ih-border bg-ih-surface px-5 py-3 text-sm font-medium hover:border-ih-accent"
-            >
-              Talk to an engineer →
-            </Link>
+            {primaryLabel ? (
+              <Link
+                href={primaryHref ?? '/quote'}
+                className="inline-flex items-center gap-2 rounded-sm bg-ih-navy px-5 py-3 text-sm font-medium text-white hover:bg-ih-ink"
+              >
+                {primaryLabel}
+              </Link>
+            ) : null}
+            {secondaryLabel ? (
+              <Link
+                href={secondaryHref ?? '/contact'}
+                className="inline-flex items-center gap-2 rounded-sm border border-ih-border bg-ih-surface px-5 py-3 text-sm font-medium hover:border-ih-accent"
+              >
+                {secondaryLabel}
+              </Link>
+            ) : null}
           </div>
         </div>
       </div>

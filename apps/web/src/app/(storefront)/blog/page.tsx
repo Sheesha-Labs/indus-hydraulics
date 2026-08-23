@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { buildBreadcrumbLd, buildCollectionLd } from '@indus/domain'
 import { JsonLd } from '@indus/ui'
 import BlogIndexView from '../../../components/blog/BlogIndexView'
+import { getMasterPageContent } from '../../../lib/page-content'
 import { getBlogIndexPage } from '../../../lib/blog-index'
 import { pageMetadata, urlFor } from '../../../lib/seo'
 
@@ -23,7 +24,10 @@ export const metadata: Metadata = {
 }
 
 export default async function BlogIndexPage() {
-  const { posts, topics, totalPosts, totalPages } = await getBlogIndexPage(1)
+  const [{ posts, topics, totalPosts, totalPages }, content] = await Promise.all([
+    getBlogIndexPage(1),
+    getMasterPageContent('blog'),
+  ])
 
   return (
     <>
@@ -48,6 +52,7 @@ export default async function BlogIndexPage() {
         totalPosts={totalPosts}
         page={1}
         totalPages={totalPages}
+        content={content}
       />
     </>
   )
