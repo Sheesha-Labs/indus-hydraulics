@@ -130,6 +130,22 @@ export type MarketMap = {
    * frame its marker suppresses itself and the corridor annotation gains
    * "· FROM {originLabel}" so the lane still reads.
    */
+  /**
+   * Clip the drawn country to a bounding box, `[west, south, east, north]`.
+   *
+   * Natural Earth files a country's overseas territories inside the SAME
+   * feature as its mainland. France carries French Guiana, Réunion and the
+   * Antilles; the Netherlands carries the Caribbean municipalities; Norway
+   * carries Svalbard and Jan Mayen. Fitting the frame to that feature spans
+   * half the planet — France's map came out at an 800 km scale bar with
+   * fifty-three "neighbours" and Dubai inside the frame, which is not a map of
+   * France in any useful sense.
+   *
+   * Where this is set, only the polygons whose centroid falls inside the box
+   * are drawn and fitted. Leave it unset for a country whose feature is
+   * already just the country — which is nearly all of them.
+   */
+  readonly mainland?: readonly [number, number, number, number]
   readonly fit: 'origin' | 'crossing'
   readonly origin: LonLat
   readonly originLabel: string

@@ -230,6 +230,30 @@ describe('every written record projects a map', { timeout: 60_000 }, () => {
     }
   })
 
+  it('draws a country that actually fills its frame', () => {
+    /*
+      The guard against a feature that is bigger than the country it names.
+
+      Natural Earth files overseas territories inside the mainland's feature —
+      France carries French Guiana and Réunion, the Netherlands the Caribbean
+      municipalities, Norway Svalbard. Fitting to that spans half the planet
+      and leaves the mainland a smudge: France came out at an 800 km scale bar
+      with fifty-three neighbour labels and Dubai inside the frame.
+
+      Nothing else caught it. The map still projected, the crossing was still
+      in frame, every city still plotted — it was simply a map of the wrong
+      thing. `mainland` on the record fixes it; this makes the next one fail.
+    */
+    for (const page of MARKET_PAGE_RECORDS) {
+      const model = buildMarketMapModel(page, page.slug)!
+      const [w, h] = model.targetExtent
+      const usableW = model.width - model.pad * 2
+      const usableH = model.height - model.pad * 2
+      const fill = Math.max(w / usableW, h / usableH)
+      expect(fill, `${page.slug} fills only ${(fill * 100).toFixed(0)}% of its frame`).toBeGreaterThan(0.25)
+    }
+  })
+
   it('places the crossing marker inside the frame on every one', () => {
     for (const page of MARKET_PAGE_RECORDS) {
       const model = buildMarketMapModel(page, page.slug)!
