@@ -2289,6 +2289,536 @@ const PORTUGAL: MarketPage = {
   },
 }
 
+
+// ─────────────────────────────────────────────────────────────────────────────
+// THE EASTERN MEDITERRANEAN AND THE BLACK SEA
+//
+// Greece, Cyprus and Malta are the shortest lanes on the whole network after
+// the GCC — nothing has to leave the Mediterranean. All three are also hubs
+// rather than only destinations, so the useful first question is whether the
+// cargo is staying. Romania and Bulgaria sit past the Bosphorus and are the
+// gate for a good deal of landlocked central Europe behind them.
+// ─────────────────────────────────────────────────────────────────────────────
+
+const GREECE: MarketPage = {
+  slug: 'greece',
+  regulatoryCopy: 'unverified',
+  released: false,
+  lane: 'DXB → GR',
+  dialCode: '+30',
+  currency: 'EUR',
+  localName: 'Ελλάδα',
+  lede: 'Greece is a shipping market before it is an industrial one, and that changes what a hose supplier is asked for. Piraeus is twelve days from Jebel Ali and the buyers behind it are ship managers holding spares for vessels that will be somewhere else when the part is fitted — so what matters is the class approval, the certificate that travels with the item, and packaging that survives a year in a locker. The rest of Greek demand is refineries, aluminium and quarry plant.',
+  facts: [
+    { label: 'Typical transit', value: 'Typically 12–18 days by sea from dispatch' },
+    {
+      label: 'Freight',
+      value: 'Sea freight from Jebel Ali through Suez to Piraeus · Thessaloniki for the north and the Balkan corridor · Air freight into Athens where the schedule is tighter',
+    },
+    { label: 'Incoterms 2020', value: 'CIF Piraeus · DAP to the buyer’s site · FOB Jebel Ali · EXW Dubai for a nominated forwarder' },
+    {
+      label: 'Documentation',
+      value:
+        'CE marking and the PED declaration where the assembly is above threshold · Class society approval where the item is for marine service · Certificate of Origin, Dubai Chamber attested · EU customs entry raised by the importer',
+    },
+  ],
+  manifest: [
+    { label: 'Origin', value: 'Jebel Ali · Dubai' },
+    { label: 'Primary mode', value: 'Sea, via Suez' },
+    { label: 'Port of entry', value: 'Piraeus' },
+    { label: 'Transit', value: '12–18 days' },
+    { label: 'Quoted in', value: 'EUR' },
+    { label: 'Docs prepared', value: 'Before the vessel sails' },
+  ],
+  map: {
+    geoNames: ['Greece'],
+    fit: 'crossing',
+    origin: [55.03, 25.01],
+    originLabel: 'JEBEL ALI · DXB',
+    crossing: { name: 'PIRAEUS · PORT', coords: [23.63, 37.94], legend: 'Port of entry', dx: 11, dy: 10, anchor: 'start' },
+    routes: [
+      { mode: 'SEA · SUEZ', primary: true, points: leg(SUEZ_TO_MED, [30.0, 33.0], [26.0, 35.0], [23.63, 37.94]) },
+      { mode: 'AIR', points: leg(EUROPE_AIR, [23.95, 37.94]) },
+    ],
+  },
+  freight: [
+    { name: 'Sea, FCL', transit: '12–18 days', route: 'Jebel Ali to Piraeus, via Suez', useCase: 'Default for most orders' },
+    { name: 'Air freight', transit: '2–4 days', route: 'DXB to ATH', useCase: 'When the line is down' },
+    { name: 'Sea, LCL', transit: '18–26 days', route: 'Consolidated, with transhipment', useCase: 'Small mixed orders' },
+  ],
+  orderSteps: {
+    third:
+      'Where the item is for marine service the class approval is confirmed and the certificate is packed with the goods, because a spare fitted at sea is inspected against its paperwork rather than its invoice.',
+    fourth: 'Goods sail from Jebel Ali through Suez to Piraeus, and you get the paperwork and tracking together.',
+  },
+  cities: [
+    { name: 'Piraeus', coords: [23.64, 37.94], region: 'Attica' },
+    { name: 'Athens', coords: [23.73, 37.98], region: 'Attica', plot: true, dx: 9, dy: -5 },
+    { name: 'Elefsina', coords: [23.54, 38.04], region: 'Attica', plot: true, dx: -9, dy: -4, anchor: 'end' },
+    { name: 'Aspropyrgos', coords: [23.59, 38.06], region: 'Attica' },
+    { name: 'Thessaloniki', coords: [22.94, 40.64], region: 'Central Macedonia', plot: true, dx: 9, dy: -4 },
+    { name: 'Volos', coords: [22.94, 39.36], region: 'Thessaly', plot: true, dx: 9, dy: 4 },
+    { name: 'Larissa', coords: [22.42, 39.64], region: 'Thessaly' },
+    { name: 'Patras', coords: [21.73, 38.25], region: 'Western Greece', plot: true, dx: -9, dy: -4, anchor: 'end' },
+    { name: 'Corinth', coords: [22.94, 37.94], region: 'Peloponnese' },
+    { name: 'Kavala', coords: [24.41, 40.94], region: 'Eastern Macedonia', plot: true, dx: 9, dy: -4 },
+    { name: 'Alexandroupoli', coords: [25.87, 40.85], region: 'Eastern Macedonia' },
+    { name: 'Heraklion', coords: [25.14, 35.34], region: 'Crete', plot: true, dx: 9, dy: 8 },
+    { name: 'Chalkida', coords: [23.6, 38.46], region: 'Central Greece' },
+    { name: 'Agios Nikolaos', coords: [25.72, 35.19], region: 'Crete' },
+    { name: 'Igoumenitsa', coords: [20.27, 39.5], region: 'Epirus', plot: true, dx: -9, dy: 6, anchor: 'end' },
+    { name: 'Syros', coords: [24.94, 37.44], region: 'South Aegean' },
+  ],
+  sectors: [
+    { slug: 'marine', name: 'Marine & Offshore', description: 'Ship management spares — deck, hatch, steering and mooring hydraulics, with class certificates packed alongside.' },
+    { slug: 'oil-gas', name: 'Oil & Gas', description: 'Refinery and terminal support at Elefsina, Aspropyrgos and Corinth.' },
+    { slug: 'steel', name: 'Steel & Metals', description: 'High-force cylinders and servo valves for the aluminium and rolling lines.' },
+    { slug: 'mining', name: 'Mining', description: 'Bauxite, marble and aggregate plant — dust-rated, high-cycle components.' },
+    { slug: 'power', name: 'Power & Energy', description: 'Actuator and governor hydraulics for thermal, hydro and island generation.' },
+    { slug: 'construction', name: 'Construction', description: 'Excavator, crane and batching-plant hydraulics for civil and port works.' },
+  ],
+  faqs: [
+    { question: 'Do you have a branch in Greece?', answer: 'No. Greece is supplied from our Dubai warehouse, by sea through Suez into Piraeus or Thessaloniki.' },
+    {
+      question: 'Can you supply spares for our fleet rather than a plant?',
+      answer:
+        'Yes, and it is most of what this lane carries. A ship spare is bought against a class approval and fitted somewhere else months later, so we pack the certificate with the item and mark it to the vessel rather than to a purchase order.',
+    },
+    {
+      question: 'Do you supply to class society approval?',
+      answer:
+        'Where the specification names one, tell us the society and the approval at quotation and we will say plainly whether the item carries it. We will not ship against a class requirement we cannot evidence and let survey discover it.',
+    },
+    { question: 'Do we need CE marking?', answer: 'For a hose assembly above the pressure-volume threshold in PED 2014/68/EU, yes, and the declaration travels with the goods. Below it, sound engineering practice applies and there is no mark.' },
+    { question: 'Piraeus or Thessaloniki?', answer: 'Piraeus for Attica, the islands and anything for the fleet. Thessaloniki for the north and for cargo continuing into the Balkan corridor, where it is the shorter gate.' },
+    { question: 'How is this one of your shortest lanes?', answer: 'Because nothing has to leave the Mediterranean after Suez. Twelve to eighteen days makes Greece quicker than most of Europe and comparable with the GCC road lanes.' },
+    { question: 'Can you deliver to the islands?', answer: 'Yes, to Crete and the larger Aegean ports. The domestic feeder leg is quoted rather than estimated, because sailings are less frequent than the mainland assumes.' },
+    { question: 'What currency do you quote in?', answer: 'EUR. Greece is in the eurozone, so the Estimate, the invoice and the customs value all carry the same figure with nothing to convert.' },
+  ],
+  compliance: {
+    heading: 'A spare is bought against its certificate, not its invoice',
+    body:
+      'Greek demand is dominated by ship management, and that changes the shape of an order in a way no other European market does. A plant buys a hose to fit this week; a ship manager buys one to sit in a locker until a vessel needs it, possibly in another ocean, possibly a year later. What arrives with the item therefore matters more than what arrives with the shipment: the class society approval where the specification names one, the certificate packed with the goods rather than emailed to an office, and marking that identifies the vessel rather than the purchase order. We confirm the class requirement at quotation and decline plainly where we cannot evidence one, because survey is an expensive place to find out. Customs is the ordinary single European entry, with a PED declaration above threshold.',
+    documents: [
+      { ref: 'CLASS', name: 'Class society approval, where the specification names one', issuer: 'The society, via the manufacturer', when: 'At quotation, per product' },
+      { ref: 'PED', name: 'Declaration of conformity, assemblies above threshold', issuer: 'Us, as the assembler', when: 'Before dispatch' },
+      { ref: 'CERT-PACK', name: 'Certificates packed with the item, marked to the vessel', issuer: 'Us, at dispatch', when: 'Before the vessel sails' },
+      { ref: 'COO', name: 'Certificate of Origin', issuer: 'Dubai Chamber attested', when: 'Before dispatch' },
+      { ref: 'EU-ENTRY', name: 'Customs entry into free circulation', issuer: 'The importer, through Greek Customs', when: 'On arrival' },
+    ],
+  },
+}
+
+const CYPRUS: MarketPage = {
+  slug: 'cyprus',
+  regulatoryCopy: 'unverified',
+  released: false,
+  lane: 'DXB → CY',
+  dialCode: '+357',
+  currency: 'EUR',
+  localName: 'Κύπρος',
+  lede: 'Cyprus is the closest European market to Jebel Ali — ten days, and nothing leaves the Mediterranean. Limassol is a ship management centre rather than an industrial port, so most of what we send here is fleet spares held against a vessel rather than a plant. The offshore gas programme is the second thread, and it asks for the specification discipline the East Mediterranean fields expect rather than anything the island itself manufactures.',
+  facts: [
+    { label: 'Typical transit', value: 'Typically 10–15 days by sea from dispatch' },
+    {
+      label: 'Freight',
+      value: 'Sea freight from Jebel Ali through Suez to Limassol · Larnaca where the berth suits · Air freight into Larnaca where the schedule is tighter',
+    },
+    { label: 'Incoterms 2020', value: 'CIF Limassol · DAP to the buyer’s site · FOB Jebel Ali · EXW Dubai for a nominated forwarder' },
+    {
+      label: 'Documentation',
+      value:
+        'CE marking and the PED declaration where the assembly is above threshold · Class society approval where the item is for marine service · Certificate of Origin, Dubai Chamber attested · EU customs entry raised by the importer',
+    },
+  ],
+  manifest: [
+    { label: 'Origin', value: 'Jebel Ali · Dubai' },
+    { label: 'Primary mode', value: 'Sea, via Suez' },
+    { label: 'Port of entry', value: 'Limassol' },
+    { label: 'Transit', value: '10–15 days' },
+    { label: 'Quoted in', value: 'EUR' },
+    { label: 'Docs prepared', value: 'Before the vessel sails' },
+  ],
+  map: {
+    geoNames: ['Cyprus'],
+    fit: 'crossing',
+    origin: [55.03, 25.01],
+    originLabel: 'JEBEL ALI · DXB',
+    crossing: { name: 'LIMASSOL · PORT', coords: [33.02, 34.65], legend: 'Port of entry', dx: -11, dy: 10, anchor: 'end' },
+    routes: [
+      { mode: 'SEA · SUEZ', primary: true, points: leg(SUEZ_TO_MED, [32.5, 32.5], [33.02, 34.65]) },
+      { mode: 'AIR', points: leg(EUROPE_AIR, [33.62, 34.88]) },
+    ],
+  },
+  freight: [
+    { name: 'Sea, FCL', transit: '10–15 days', route: 'Jebel Ali to Limassol, via Suez', useCase: 'Default for most orders' },
+    { name: 'Air freight', transit: '2–3 days', route: 'DXB to LCA', useCase: 'When the line is down' },
+    { name: 'Sea, LCL', transit: '16–24 days', route: 'Consolidated, with transhipment', useCase: 'Small mixed orders' },
+  ],
+  orderSteps: {
+    third: 'The class approval is confirmed where the item is for marine service, and the certificate is packed with the goods rather than sent separately.',
+    fourth: 'Goods sail from Jebel Ali through Suez to Limassol, and you get the paperwork and tracking together.',
+  },
+  cities: [
+    { name: 'Limassol', coords: [33.04, 34.71], region: 'Limassol', plot: true, dx: -9, dy: 8, anchor: 'end' },
+    { name: 'Nicosia', coords: [33.36, 35.17], region: 'Nicosia', plot: true, dx: 9, dy: -5 },
+    { name: 'Larnaca', coords: [33.62, 34.92], region: 'Larnaca', plot: true, dx: 9, dy: 6 },
+    { name: 'Vasilikos', coords: [33.34, 34.72], region: 'Larnaca', plot: true, dx: 9, dy: 8 },
+    { name: 'Paphos', coords: [32.43, 34.78], region: 'Paphos', plot: true, dx: -9, dy: -4, anchor: 'end' },
+    { name: 'Zygi', coords: [33.33, 34.73], region: 'Larnaca' },
+    { name: 'Dhekelia', coords: [33.72, 34.99], region: 'Larnaca' },
+    { name: 'Famagusta', coords: [33.94, 35.12], region: 'Famagusta', plot: true, dx: 9, dy: -4 },
+    { name: 'Kyrenia', coords: [33.32, 35.34], region: 'Kyrenia' },
+    { name: 'Ypsonas', coords: [32.95, 34.7], region: 'Limassol' },
+    { name: 'Moni', coords: [33.19, 34.71], region: 'Limassol' },
+    { name: 'Polis', coords: [32.43, 35.04], region: 'Paphos' },
+  ],
+  sectors: [
+    { slug: 'marine', name: 'Marine & Offshore', description: 'Ship management spares — deck, hatch and steering hydraulics with class certificates packed alongside.' },
+    { slug: 'oil-gas', name: 'Oil & Gas', description: 'East Mediterranean offshore support and the Vasilikos terminal.' },
+    { slug: 'power', name: 'Power & Energy', description: 'Actuator and governor hydraulics for the Vasilikos and Dhekelia generating plant.' },
+    { slug: 'construction', name: 'Construction', description: 'Excavator, crane and batching-plant hydraulics for civil and port works.' },
+    { slug: 'mining', name: 'Mining', description: 'Dust-rated, high-cycle components for quarry, cement and aggregate plant.' },
+    { slug: 'steel', name: 'Steel & Metals', description: 'Cylinders and valves for fabrication and workshop equipment.' },
+  ],
+  faqs: [
+    { question: 'Do you have a branch in Cyprus?', answer: 'No. Cyprus is supplied from our Dubai warehouse, by sea through Suez into Limassol.' },
+    { question: 'Is this really your closest European market?', answer: 'Yes. Ten to fifteen days, and nothing leaves the Mediterranean after Suez. It is closer in transit terms than several of the North African lanes.' },
+    {
+      question: 'Can you supply fleet spares rather than plant items?',
+      answer:
+        'Yes, and it is most of what this lane carries. A ship spare is bought against a class approval and fitted somewhere else later, so we pack the certificate with the item and mark it to the vessel rather than to a purchase order.',
+    },
+    { question: 'Do we need CE marking?', answer: 'For a hose assembly above the pressure-volume threshold in PED 2014/68/EU, yes, and the declaration travels with the goods. Below it, sound engineering practice applies and there is no mark.' },
+    { question: 'Can you supply for East Mediterranean offshore work?', answer: 'Yes — API-monogrammed assemblies, sour-service material documentation and flow-iron consumables, confirmed against the operator’s specification at quotation.' },
+    { question: 'Limassol or Larnaca?', answer: 'Limassol for almost everything; it is the container port and the ship management centre. Larnaca where a berth or a sailing suits better.' },
+    { question: 'What currency do you quote in?', answer: 'EUR. Cyprus is in the eurozone, so the Estimate, the invoice and the customs value all carry the same figure with nothing to convert.' },
+    { question: 'Is air freight worth it here?', answer: 'Occasionally, for a vessel sailing in two days. Otherwise the sea lane is short enough that air rarely repays the difference.' },
+  ],
+  compliance: {
+    heading: 'Closest to Dubai, and mostly buying for ships',
+    body:
+      'Cyprus is the shortest European lane on this network — ten to fifteen days, with nothing leaving the Mediterranean after Suez — and the shape of its demand is unusual for its size. Limassol is a ship management centre rather than an industrial port, so a large share of what we send is fleet spares: bought against a class society approval, stored, and fitted on a vessel that will be somewhere else entirely when the time comes. That makes the certificate more important than the delivery note. We confirm the class requirement at quotation, pack the certificate with the item, and mark to the vessel rather than the purchase order. The second thread is the East Mediterranean gas programme, which asks for the same API and sour-service discipline as any offshore province. Customs is the ordinary single European entry with a PED declaration above threshold.',
+    documents: [
+      { ref: 'CLASS', name: 'Class society approval, where the specification names one', issuer: 'The society, via the manufacturer', when: 'At quotation, per product' },
+      { ref: 'PED', name: 'Declaration of conformity, assemblies above threshold', issuer: 'Us, as the assembler', when: 'Before dispatch' },
+      { ref: 'CERT-PACK', name: 'Certificates packed with the item, marked to the vessel', issuer: 'Us, at dispatch', when: 'Before the vessel sails' },
+      { ref: 'COO', name: 'Certificate of Origin', issuer: 'Dubai Chamber attested', when: 'Before dispatch' },
+      { ref: 'EU-ENTRY', name: 'Customs entry into free circulation', issuer: 'The importer, through Cypriot Customs', when: 'On arrival' },
+    ],
+  },
+}
+
+
+const MALTA: MarketPage = {
+  slug: 'malta',
+  regulatoryCopy: 'unverified',
+  released: false,
+  lane: 'DXB → MT',
+  dialCode: '+356',
+  currency: 'EUR',
+  lede: 'Malta is small, in the middle of the Mediterranean, and busier than its size suggests because it repairs and bunkers other people’s ships. The Freeport at Marsaxlokk transhipes an enormous volume that never enters the island; the yards at Marsa are where our cargo actually goes. A drydock buys against a class approval and a date the vessel sails, so the useful thing we can do is confirm both before shipping rather than after.',
+  facts: [
+    { label: 'Typical transit', value: 'Typically 14–20 days by sea from dispatch' },
+    {
+      label: 'Freight',
+      value: 'Sea freight from Jebel Ali through Suez to the Malta Freeport at Marsaxlokk · Valletta and Marsa for yard cargo · Air freight into Luqa where the schedule is tighter',
+    },
+    { label: 'Incoterms 2020', value: 'CIF Marsaxlokk · DAP to the yard or site · FOB Jebel Ali · EXW Dubai for a nominated forwarder' },
+    {
+      label: 'Documentation',
+      value:
+        'CE marking and the PED declaration where the assembly is above threshold · Class society approval where the item is for marine service · Certificate of Origin, Dubai Chamber attested · EU customs entry raised by the importer',
+    },
+  ],
+  manifest: [
+    { label: 'Origin', value: 'Jebel Ali · Dubai' },
+    { label: 'Primary mode', value: 'Sea, via Suez' },
+    { label: 'Port of entry', value: 'Marsaxlokk' },
+    { label: 'Transit', value: '14–20 days' },
+    { label: 'Quoted in', value: 'EUR' },
+    { label: 'Docs prepared', value: 'Before the vessel sails' },
+  ],
+  map: {
+    geoNames: ['Malta'],
+    fit: 'crossing',
+    origin: [55.03, 25.01],
+    originLabel: 'JEBEL ALI · DXB',
+    crossing: { name: 'MARSAXLOKK · FREEPORT', coords: [14.54, 35.83], legend: 'Port of entry', dx: 11, dy: 10, anchor: 'start' },
+    routes: [
+      { mode: 'SEA · SUEZ', primary: true, points: leg(SUEZ_TO_MED, [26.0, 33.5], [20.0, 34.5], [14.54, 35.83]) },
+      { mode: 'AIR', points: leg(EUROPE_AIR, [20.0, 40.0], [14.48, 35.86]) },
+    ],
+  },
+  freight: [
+    { name: 'Sea, FCL', transit: '14–20 days', route: 'Jebel Ali to Marsaxlokk, via Suez', useCase: 'Default for most orders' },
+    { name: 'Air freight', transit: '2–4 days', route: 'DXB to MLA, with a connection', useCase: 'When a vessel sails soon' },
+    { name: 'Sea, LCL', transit: '20–28 days', route: 'Consolidated, with transhipment', useCase: 'Small mixed orders' },
+  ],
+  orderSteps: {
+    third: 'The class approval and the vessel’s sailing date are both confirmed, because a drydock order that arrives after the ship has gone is worth nothing to the buyer.',
+    fourth: 'Goods sail from Jebel Ali through Suez to Marsaxlokk, and you get the paperwork and tracking together.',
+  },
+  cities: [
+    { name: 'Valletta', coords: [14.51, 35.9], region: 'Southern Harbour', plot: true, dx: 9, dy: -5 },
+    { name: 'Marsa', coords: [14.49, 35.88], region: 'Southern Harbour', plot: true, dx: -9, dy: 6, anchor: 'end' },
+    { name: 'Marsaxlokk', coords: [14.54, 35.84], region: 'South Eastern' },
+    { name: 'Birżebbuġa', coords: [14.53, 35.82], region: 'South Eastern', plot: true, dx: 9, dy: 8 },
+    { name: 'Ħal Far', coords: [14.51, 35.81], region: 'South Eastern' },
+    { name: 'Luqa', coords: [14.49, 35.86], region: 'Southern Harbour' },
+    { name: 'Mrieħel', coords: [14.46, 35.89], region: 'Northern Harbour', plot: true, dx: -9, dy: -4, anchor: 'end' },
+    { name: 'Qormi', coords: [14.47, 35.88], region: 'Northern Harbour' },
+    { name: 'Mosta', coords: [14.43, 35.91], region: 'Northern', plot: true, dx: -9, dy: -4, anchor: 'end' },
+    { name: 'Naxxar', coords: [14.44, 35.92], region: 'Northern' },
+    { name: 'Mellieħa', coords: [14.36, 35.95], region: 'Northern', plot: true, dx: -9, dy: -4, anchor: 'end' },
+    { name: 'Victoria', coords: [14.24, 36.05], region: 'Gozo', plot: true, dx: -9, dy: -4, anchor: 'end' },
+  ],
+  sectors: [
+    { slug: 'marine', name: 'Marine & Offshore', description: 'Ship repair and drydock work at Marsa — deck, hatch, steering and mooring hydraulics against a sailing date.' },
+    { slug: 'oil-gas', name: 'Oil & Gas', description: 'Bunkering, terminal and offshore support in the central Mediterranean.' },
+    { slug: 'power', name: 'Power & Energy', description: 'Actuator and governor hydraulics for the Delimara generating plant.' },
+    { slug: 'construction', name: 'Construction', description: 'Excavator, crane and batching-plant hydraulics for civil and quarry works.' },
+    { slug: 'mining', name: 'Mining', description: 'Dust-rated, high-cycle components for limestone quarry and crushing plant.' },
+    { slug: 'steel', name: 'Steel & Metals', description: 'Cylinders and valves for fabrication and workshop equipment.' },
+  ],
+  faqs: [
+    { question: 'Do you have a branch in Malta?', answer: 'No. Malta is supplied from our Dubai warehouse, by sea through Suez into Marsaxlokk or Valletta.' },
+    {
+      question: 'Is the Freeport a gate or a hub for us?',
+      answer:
+        'Mostly a hub — Marsaxlokk transhipes a very large volume that never enters Malta. If your cargo is for the island we say so on the file; if it is staging onward, it is documented that way from the outset rather than imported and re-exported.',
+    },
+    {
+      question: 'Can you work to a drydock date?',
+      answer:
+        'Tell us the date the vessel sails at quotation, not after. A repair item that arrives the week after the ship has left is worth nothing, so we would rather quote air freight honestly than a sea lane that misses.',
+    },
+    { question: 'Do you supply to class society approval?', answer: 'Where the specification names one, tell us the society and the approval and we will say plainly whether the item carries it rather than shipping and letting survey find out.' },
+    { question: 'Do we need CE marking?', answer: 'For a hose assembly above the pressure-volume threshold in PED 2014/68/EU, yes, and the declaration travels with the goods. Below it, sound engineering practice applies and there is no mark.' },
+    { question: 'Can you deliver to the yard rather than the port?', answer: 'Yes, on DAP terms to Marsa or Ħal Far. The island is small enough that the road leg is minutes, and it is priced with the order.' },
+    { question: 'What currency do you quote in?', answer: 'EUR. Malta is in the eurozone, so the Estimate, the invoice and the customs value all carry the same figure with nothing to convert.' },
+    { question: 'Is there a minimum order?', answer: 'No. On a repair lane a single urgent item is a normal order, and we would rather ship one hose that matters than insist on a consolidation that misses the sailing.' },
+  ],
+  compliance: {
+    heading: 'A sailing date is a deadline, not a preference',
+    body:
+      'Two things about Malta are worth stating plainly. The first is that the Freeport at Marsaxlokk is one of the busiest transhipment hubs in the Mediterranean, and most of what passes through it never enters the island — so the first question on any consignment is whether Malta is the destination or the waypoint, because importing goods that were only staging pays for a customs round trip nobody needed. The second is that the yard work at Marsa runs to a sailing date rather than a delivery week. A repair item that arrives after the vessel has left is not late, it is useless, and the buyer will have sourced it elsewhere at a premium. So we ask for the sailing date at quotation and will recommend air freight against our own sea lane where the dates do not work — an honest schedule is worth more than a cheaper one that misses.',
+    documents: [
+      { ref: 'ROUTE', name: 'Destination or transhipment decision for the consignment', issuer: 'Agreed at quotation', when: 'Before the vessel sails' },
+      { ref: 'CLASS', name: 'Class society approval, where the specification names one', issuer: 'The society, via the manufacturer', when: 'At quotation, per product' },
+      { ref: 'PED', name: 'Declaration of conformity, assemblies above threshold', issuer: 'Us, as the assembler', when: 'Before dispatch' },
+      { ref: 'COO', name: 'Certificate of Origin', issuer: 'Dubai Chamber attested', when: 'Before dispatch' },
+      { ref: 'EU-ENTRY', name: 'Customs entry into free circulation', issuer: 'The importer, through Maltese Customs', when: 'On arrival' },
+    ],
+  },
+}
+
+const ROMANIA: MarketPage = {
+  slug: 'romania',
+  regulatoryCopy: 'unverified',
+  released: false,
+  lane: 'DXB → RO',
+  dialCode: '+40',
+  currency: 'EUR',
+  localName: 'România',
+  lede: 'Constanța is the Black Sea gate and it serves more than Romania. Cargo for Moldova, Serbia and a good deal of Hungary lands here, and the Danube carries barge traffic upriver from Galați and Brăila. For Romanian industry itself the demand is refineries, shipyards and a growing machinery sector — and, as everywhere in central Europe, the pattern a plant needs for equipment it is exporting rather than the one it uses at home.',
+  facts: [
+    { label: 'Typical transit', value: 'Typically 18–24 days by sea from dispatch' },
+    {
+      label: 'Freight',
+      value:
+        'Sea freight from Jebel Ali through Suez and the Bosphorus to Constanța · Galați and Brăila for Danube barge onward · Air freight into Bucharest where the schedule is tighter',
+    },
+    { label: 'Incoterms 2020', value: 'CIF Constanța · DAP to the buyer’s site · FOB Jebel Ali · EXW Dubai for a nominated forwarder' },
+    {
+      label: 'Documentation',
+      value:
+        'CE marking and the PED declaration where the assembly is above threshold · REACH position on the elastomer compounds · Certificate of Origin, Dubai Chamber attested · EU customs entry raised by the importer',
+    },
+  ],
+  manifest: [
+    { label: 'Origin', value: 'Jebel Ali · Dubai' },
+    { label: 'Primary mode', value: 'Sea, via Suez' },
+    { label: 'Port of entry', value: 'Constanța' },
+    { label: 'Transit', value: '18–24 days' },
+    { label: 'Quoted in', value: 'EUR' },
+    { label: 'Docs prepared', value: 'Before the vessel sails' },
+  ],
+  map: {
+    geoNames: ['Romania'],
+    fit: 'crossing',
+    origin: [55.03, 25.01],
+    originLabel: 'JEBEL ALI · DXB',
+    crossing: { name: 'CONSTANȚA · PORT', coords: [28.65, 44.17], legend: 'Port of entry', dx: 11, dy: 10, anchor: 'start' },
+    routes: [
+      { mode: 'SEA · SUEZ', primary: true, points: leg(SUEZ_TO_MED, [30.0, 33.0], [26.0, 36.0], [26.2, 40.0], [29.1, 41.2], [29.5, 42.5], [28.65, 44.17]) },
+      { mode: 'AIR', points: leg(EUROPE_AIR, [26.09, 44.57]) },
+    ],
+  },
+  freight: [
+    { name: 'Sea, FCL', transit: '18–24 days', route: 'Jebel Ali to Constanța, via Suez and the Bosphorus', useCase: 'Default for most orders' },
+    { name: 'Air freight', transit: '2–4 days', route: 'DXB to OTP', useCase: 'When the line is down' },
+    { name: 'Sea + barge', transit: '24–32 days', route: 'Constanța, then Danube barge upriver', useCase: 'Bulk and project cargo' },
+  ],
+  orderSteps: {
+    third: 'Whether the consignment is for Romania or continuing to Moldova, Serbia or Hungary is settled first, because the onward leg is a different file.',
+    fourth: 'Goods sail from Jebel Ali through Suez and the Bosphorus to Constanța, and you get the paperwork and tracking together.',
+  },
+  cities: [
+    { name: 'Constanța', coords: [28.65, 44.17], region: 'Constanța' },
+    { name: 'Bucharest', coords: [26.1, 44.44], region: 'Bucharest', plot: true, dx: -9, dy: -4, anchor: 'end' },
+    { name: 'Ploiești', coords: [26.03, 44.94], region: 'Prahova', plot: true, dx: -9, dy: -4, anchor: 'end' },
+    { name: 'Galați', coords: [28.03, 45.44], region: 'Galați', plot: true, dx: 9, dy: -4 },
+    { name: 'Brăila', coords: [27.97, 45.27], region: 'Brăila' },
+    { name: 'Brașov', coords: [25.6, 45.66], region: 'Brașov', plot: true, dx: -9, dy: 6, anchor: 'end' },
+    { name: 'Cluj-Napoca', coords: [23.6, 46.77], region: 'Cluj', plot: true, dx: -9, dy: -4, anchor: 'end' },
+    { name: 'Timișoara', coords: [21.23, 45.75], region: 'Timiș', plot: true, dx: -9, dy: 6, anchor: 'end' },
+    { name: 'Arad', coords: [21.31, 46.17], region: 'Arad' },
+    { name: 'Sibiu', coords: [24.15, 45.79], region: 'Sibiu' },
+    { name: 'Craiova', coords: [23.79, 44.32], region: 'Dolj', plot: true, dx: -9, dy: 6, anchor: 'end' },
+    { name: 'Pitești', coords: [24.87, 44.86], region: 'Argeș' },
+    { name: 'Iași', coords: [27.6, 47.16], region: 'Iași', plot: true, dx: 9, dy: -4 },
+    { name: 'Oradea', coords: [21.92, 47.06], region: 'Bihor' },
+    { name: 'Midia', coords: [28.68, 44.34], region: 'Constanța' },
+    { name: 'Târgu Mureș', coords: [24.56, 46.54], region: 'Mureș' },
+  ],
+  sectors: [
+    { slug: 'oil-gas', name: 'Oil & Gas', description: 'Refinery and terminal support at Ploiești, Midia and Constanța, and Black Sea offshore work.' },
+    { slug: 'marine', name: 'Marine & Offshore', description: 'Deck machinery and vessel hydraulics for the Galați, Brăila and Constanța yards and the Danube fleet.' },
+    { slug: 'steel', name: 'Steel & Metals', description: 'High-force cylinders and servo valves for the Galați and Târgoviște rolling lines.' },
+    { slug: 'construction', name: 'Construction', description: 'Excavator, crane and batching-plant hydraulics for the motorway and rail programme.' },
+    { slug: 'power', name: 'Power & Energy', description: 'Actuator and governor hydraulics for hydro, thermal and nuclear plant.' },
+    { slug: 'mining', name: 'Mining', description: 'Dust-rated, high-cycle components for lignite, salt and aggregate plant.' },
+  ],
+  faqs: [
+    { question: 'Do you have a branch in Romania?', answer: 'No. Romania is supplied from our Dubai warehouse, by sea through Suez and the Bosphorus into Constanța.' },
+    {
+      question: 'Is Constanța only for Romanian cargo?',
+      answer:
+        'No, and it is worth saying which yours is. Constanța is the Black Sea gate for Moldova, Serbia and part of Hungary as well. If the goods are continuing, the onward leg is a separate transit file and we raise it from the outset rather than after arrival.',
+    },
+    { question: 'Do we need CE marking?', answer: 'For a hose assembly above the pressure-volume threshold in PED 2014/68/EU, yes, and the declaration travels with the goods. Below it, sound engineering practice applies and there is no mark.' },
+    { question: 'Can you ship by Danube barge?', answer: 'For bulk and project cargo, yes — Galați and Brăila handle barge traffic upriver. For containerised stock the road leg from Constanța is faster and we will say which suits the order.' },
+    { question: 'Why buy from Dubai rather than locally?', answer: 'For a standard item you should not. The pattern that is not stocked locally — GOST couplings, API-monogrammed assemblies, SS316L thread forms — is the consistent reason, usually for equipment being built here for export.' },
+    { question: 'Can you deliver inland?', answer: 'Yes, on DAP terms. The road leg from Constanța to Bucharest, Cluj or Timișoara is domestic movement and it is priced with the order rather than left to be arranged.' },
+    { question: 'What currency do you quote in?', answer: 'EUR. Our export desk settles European trade in euros; we do not quote in lei, and the Estimate, invoice and customs value all carry the same figure.' },
+    { question: 'What is your REACH position?', answer: 'We state it on the elastomer compounds at quotation, including where a compound carries a restriction relevant to your application.' },
+  ],
+  compliance: {
+    heading: 'A gate for more countries than its own',
+    body:
+      'Constanța is the largest port on the Black Sea and it does not only serve Romania. Cargo for Moldova, Serbia and part of Hungary lands here, and the Danube carries barge traffic upriver from Galați and Brăila into central Europe. That makes the first useful question on any consignment whether Romania is the destination or the gate: a box continuing to Chișinău or Belgrade needs a transit file raised from the outset, and retro-fitting one after the goods have been entered for Romanian free circulation is the expensive way round. For cargo staying, everything is the ordinary European set — one entry into free circulation, a declaration of conformity above the PED 2014/68/EU threshold, and our position on the compounds under REACH — with the inland leg to Bucharest, Cluj or Timișoara priced as domestic movement rather than left at the quay.',
+    documents: [
+      { ref: 'EU-ENTRY', name: 'Customs entry into free circulation', issuer: 'The importer, through Romanian Customs', when: 'On arrival' },
+      { ref: 'T1', name: 'Transit declaration, where the cargo continues onward', issuer: 'The forwarder, at Constanța', when: 'Before the onward leg' },
+      { ref: 'PED', name: 'Declaration of conformity, assemblies above threshold', issuer: 'Us, as the assembler', when: 'Before dispatch' },
+      { ref: 'REACH', name: 'Compound position on the elastomers supplied', issuer: 'Us, at quotation', when: 'At quotation' },
+      { ref: 'COO', name: 'Certificate of Origin', issuer: 'Dubai Chamber attested', when: 'Before dispatch' },
+    ],
+  },
+}
+
+
+const BULGARIA: MarketPage = {
+  slug: 'bulgaria',
+  regulatoryCopy: 'unverified',
+  released: false,
+  lane: 'DXB → BG',
+  dialCode: '+359',
+  currency: 'EUR',
+  localName: 'България',
+  lede: 'Bulgaria has two Black Sea ports and a refinery that dominates the industrial picture. Burgas sits next to the largest refining complex in the region and takes most of our process cargo; Varna serves the north and the shipyards. Both are past the Bosphorus, which puts them three weeks from Jebel Ali. What is asked for here is aggressive-duty material and the documentation to go with it, rather than anything the country does not already make.',
+  facts: [
+    { label: 'Typical transit', value: 'Typically 18–24 days by sea from dispatch' },
+    {
+      label: 'Freight',
+      value: 'Sea freight from Jebel Ali through Suez and the Bosphorus to Burgas for the refinery belt · Varna for the north and the yards · Air freight into Sofia where the schedule is tighter',
+    },
+    { label: 'Incoterms 2020', value: 'CIF Burgas · DAP to the buyer’s site · FOB Jebel Ali · EXW Dubai for a nominated forwarder' },
+    {
+      label: 'Documentation',
+      value:
+        'CE marking and the PED declaration where the assembly is above threshold · REACH position on the elastomer compounds · Certificate of Origin, Dubai Chamber attested · EU customs entry raised by the importer',
+    },
+  ],
+  manifest: [
+    { label: 'Origin', value: 'Jebel Ali · Dubai' },
+    { label: 'Primary mode', value: 'Sea, via Suez' },
+    { label: 'Port of entry', value: 'Burgas' },
+    { label: 'Transit', value: '18–24 days' },
+    { label: 'Quoted in', value: 'EUR' },
+    { label: 'Docs prepared', value: 'Before the vessel sails' },
+  ],
+  map: {
+    geoNames: ['Bulgaria'],
+    fit: 'crossing',
+    origin: [55.03, 25.01],
+    originLabel: 'JEBEL ALI · DXB',
+    crossing: { name: 'BURGAS · PORT', coords: [27.47, 42.49], legend: 'Port of entry', dx: 11, dy: 10, anchor: 'start' },
+    routes: [
+      { mode: 'SEA · SUEZ', primary: true, points: leg(SUEZ_TO_MED, [30.0, 33.0], [26.0, 36.0], [26.2, 40.0], [29.1, 41.2], [28.5, 42.2], [27.47, 42.49]) },
+      { mode: 'AIR', points: leg(EUROPE_AIR, [23.41, 42.7]) },
+    ],
+  },
+  freight: [
+    { name: 'Sea, FCL', transit: '18–24 days', route: 'Jebel Ali to Burgas, via Suez and the Bosphorus', useCase: 'Default for most orders' },
+    { name: 'Air freight', transit: '2–4 days', route: 'DXB to SOF', useCase: 'When the line is down' },
+    { name: 'Sea, LCL', transit: '24–32 days', route: 'Consolidated, transhipped in the Med', useCase: 'Small mixed orders' },
+  ],
+  orderSteps: {
+    third: 'Where the duty is refinery service the compound is confirmed against the medium and temperature, and the CE declaration is prepared where the assembly is above threshold.',
+    fourth: 'Goods sail from Jebel Ali through Suez and the Bosphorus, and you get the paperwork and tracking together.',
+  },
+  cities: [
+    { name: 'Burgas', coords: [27.47, 42.5], region: 'Burgas' },
+    { name: 'Sofia', coords: [23.32, 42.7], region: 'Sofia-City', plot: true, dx: -9, dy: -4, anchor: 'end' },
+    { name: 'Varna', coords: [27.91, 43.21], region: 'Varna', plot: true, dx: 9, dy: -4 },
+    { name: 'Devnya', coords: [27.57, 43.22], region: 'Varna' },
+    { name: 'Plovdiv', coords: [24.75, 42.14], region: 'Plovdiv', plot: true, dx: -9, dy: 6, anchor: 'end' },
+    { name: 'Stara Zagora', coords: [25.63, 42.43], region: 'Stara Zagora' },
+    { name: 'Ruse', coords: [25.97, 43.85], region: 'Ruse', plot: true, dx: -9, dy: -4, anchor: 'end' },
+    { name: 'Pleven', coords: [24.62, 43.42], region: 'Pleven' },
+    { name: 'Pernik', coords: [23.03, 42.6], region: 'Pernik', plot: true, dx: -9, dy: 6, anchor: 'end' },
+    { name: 'Sliven', coords: [26.32, 42.68], region: 'Sliven' },
+    { name: 'Radnevo', coords: [25.94, 42.29], region: 'Stara Zagora', plot: true, dx: 9, dy: 8 },
+    { name: 'Dimitrovgrad', coords: [25.6, 42.05], region: 'Haskovo' },
+  ],
+  sectors: [
+    { slug: 'oil-gas', name: 'Oil & Gas', description: 'The Burgas refining complex and the Black Sea terminals — aggressive-duty hose with compound documentation.' },
+    { slug: 'power', name: 'Power & Energy', description: 'Actuator and governor hydraulics for the Maritsa lignite plant, hydro and nuclear generation.' },
+    { slug: 'mining', name: 'Mining', description: 'Lignite at Radnevo and copper in the south — dust-rated, high-cycle components.' },
+    { slug: 'steel', name: 'Steel & Metals', description: 'High-force cylinders and servo valves for the Pernik and Debelt lines.' },
+    { slug: 'marine', name: 'Marine & Offshore', description: 'Deck machinery and vessel hydraulics for the Varna and Burgas yards.' },
+    { slug: 'construction', name: 'Construction', description: 'Excavator, crane and batching-plant hydraulics for road and infrastructure works.' },
+  ],
+  faqs: [
+    { question: 'Do you have a branch in Bulgaria?', answer: 'No. Bulgaria is supplied from our Dubai warehouse, by sea through Suez and the Bosphorus into Burgas or Varna.' },
+    { question: 'Burgas or Varna?', answer: 'Burgas for the refinery belt and the south, which is most of our cargo. Varna for the north, the yards and the Danube corridor at Ruse.' },
+    {
+      question: 'Can you supply for refinery duty?',
+      answer:
+        'Yes, and it is the commonest request here. Tell us the medium, the temperature and the concentration rather than the part number — a compound that suits one hydrocarbon stream is wrong for another, and we would rather say so at quotation than after a failure.',
+    },
+    { question: 'Do we need CE marking?', answer: 'For a hose assembly above the pressure-volume threshold in PED 2014/68/EU, yes, and the declaration travels with the goods. Below it, sound engineering practice applies and there is no mark.' },
+    { question: 'Why buy from Dubai rather than locally?', answer: 'For a standard item you should not. The reason to call us is a material or a pattern held as stock that is otherwise a factory order — aggressive-duty compounds, SS316L thread forms, API-monogrammed assemblies.' },
+    { question: 'Can you deliver inland?', answer: 'Yes, on DAP terms to Sofia, Plovdiv or the Maritsa plant. The road leg is domestic movement and it is priced with the order.' },
+    { question: 'What currency do you quote in?', answer: 'EUR. Our export desk settles European trade in euros, and the Estimate, the invoice and the customs value all carry the same figure so there is no conversion to reconcile at your end.' },
+    { question: 'What is your REACH position?', answer: 'We state it on the elastomer compounds at quotation, including where a compound carries a restriction relevant to your application.' },
+  ],
+  compliance: {
+    heading: 'Name the medium, not the part number',
+    body:
+      'Bulgaria’s customs position is the ordinary European one — a single entry into free circulation at Burgas or Varna, a declaration of conformity above the PED 2014/68/EU threshold, and our position on the compounds under REACH. What is specific is the refinery complex behind Burgas, which is the largest in the region and generates most of the demand on this lane. Refinery duty is a compound question rather than a dimensional one: a hose specified correctly for one hydrocarbon stream can be the wrong choice for another at a different temperature or concentration, and the failure is not a leak on a workshop floor. So the useful quotation here starts from the medium, the temperature and the concentration rather than a bore and a pressure, and we will say plainly where a compound is unsuitable rather than supplying to the dimensions and letting the plant discover it.',
+    documents: [
+      { ref: 'COMPAT', name: 'Chemical compatibility statement for the named medium', issuer: 'Us, at quotation', when: 'At quotation, per duty' },
+      { ref: 'PED', name: 'Declaration of conformity, assemblies above threshold', issuer: 'Us, as the assembler', when: 'Before dispatch' },
+      { ref: 'REACH', name: 'Compound position on the elastomers supplied', issuer: 'Us, at quotation', when: 'At quotation' },
+      { ref: 'COO', name: 'Certificate of Origin', issuer: 'Dubai Chamber attested', when: 'Before dispatch' },
+      { ref: 'EU-ENTRY', name: 'Customs entry into free circulation', issuer: 'The importer, through Bulgarian Customs', when: 'On arrival' },
+    ],
+  },
+}
+
 export const MARKET_PAGE_RECORDS_3: readonly MarketPage[] = [
   TURKEY,
   NORWAY,
@@ -2310,4 +2840,9 @@ export const MARKET_PAGE_RECORDS_3: readonly MarketPage[] = [
   FRANCE,
   SPAIN,
   PORTUGAL,
+  GREECE,
+  CYPRUS,
+  MALTA,
+  ROMANIA,
+  BULGARIA,
 ]
