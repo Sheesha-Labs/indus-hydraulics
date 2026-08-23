@@ -3252,6 +3252,413 @@ const BOSNIA_AND_HERZEGOVINA: MarketPage = {
   },
 }
 
+
+const ALBANIA: MarketPage = {
+  slug: 'albania',
+  regulatoryCopy: 'unverified',
+  released: false,
+  lane: 'DXB → AL',
+  dialCode: '+355',
+  currency: 'EUR',
+  localName: 'Shqipëria',
+  lede: 'Albania is the one Balkan market with an oilfield rather than a factory as its anchor. Patos-Marinza is the largest onshore field in continental Europe, it is heavy-oil production with all the wear that implies, and it buys abrasion covers, high-pressure assemblies and sour-service documentation rather than general hydraulics. Durrës is its own port, three weeks from Jebel Ali, and Albania is outside the customs union so the entry is made here rather than inherited from a neighbour.',
+  facts: [
+    { label: 'Typical transit', value: 'Typically 20–28 days by sea from dispatch' },
+    {
+      label: 'Freight',
+      value:
+        'Sea freight from Jebel Ali through Suez and up the Adriatic to Durrës, usually transhipped in the Mediterranean · Vlorë for the southern fields · Air freight into Tirana where the schedule is tighter',
+    },
+    { label: 'Incoterms 2020', value: 'CIF Durrës · DAP to the buyer’s site or field · FOB Jebel Ali · EXW Dubai for a nominated forwarder' },
+    {
+      label: 'Documentation',
+      value:
+        'Albanian customs declaration raised by the importer · Certificate of Origin, Dubai Chamber attested · Material and test certificates where the field specification calls for them · Documents in Albanian or English',
+    },
+  ],
+  manifest: [
+    { label: 'Origin', value: 'Jebel Ali · Dubai' },
+    { label: 'Primary mode', value: 'Sea, via Suez' },
+    { label: 'Port of entry', value: 'Durrës' },
+    { label: 'Transit', value: '20–28 days' },
+    { label: 'Quoted in', value: 'EUR' },
+    { label: 'Docs prepared', value: 'Before the vessel sails' },
+  ],
+  map: {
+    geoNames: ['Albania'],
+    fit: 'crossing',
+    origin: [55.03, 25.01],
+    originLabel: 'JEBEL ALI · DXB',
+    crossing: { name: 'DURRËS · PORT', coords: [19.45, 41.31], legend: 'Port of entry', dx: -11, dy: 10, anchor: 'end' },
+    routes: [
+      { mode: 'SEA · SUEZ', primary: true, points: leg(ADRIATIC, [19.0, 40.0], [19.45, 41.31]) },
+      { mode: 'AIR', points: leg(EUROPE_AIR, [19.72, 41.41]) },
+    ],
+  },
+  freight: [
+    { name: 'Sea, FCL', transit: '20–28 days', route: 'Jebel Ali to Durrës, usually transhipped', useCase: 'Default for most orders' },
+    { name: 'Air freight', transit: '3–5 days', route: 'DXB to TIA, with a connection', useCase: 'When the line is down' },
+    { name: 'Sea, LCL', transit: '26–36 days', route: 'Consolidated, with two transhipments', useCase: 'Small mixed orders' },
+  ],
+  orderSteps: {
+    third:
+      'The field specification is confirmed line by line — abrasion cover, working pressure, sour-service documentation — because heavy-oil duty is harder on a hose than the pressure rating alone suggests.',
+    fourth: 'Goods sail from Jebel Ali through Suez and up the Adriatic to Durrës, and you get the paperwork and tracking together.',
+  },
+  cities: [
+    { name: 'Durrës', coords: [19.45, 41.32], region: 'Durrës' },
+    { name: 'Tirana', coords: [19.82, 41.33], region: 'Tirana', plot: true, dx: 9, dy: -5 },
+    { name: 'Patos', coords: [19.62, 40.68], region: 'Fier', plot: true, dx: 9, dy: 4 },
+    { name: 'Marinza', coords: [19.6, 40.77], region: 'Fier' },
+    { name: 'Fier', coords: [19.56, 40.73], region: 'Fier' },
+    { name: 'Ballsh', coords: [19.74, 40.6], region: 'Fier' },
+    { name: 'Vlorë', coords: [19.49, 40.47], region: 'Vlorë', plot: true, dx: -9, dy: 6, anchor: 'end' },
+    { name: 'Elbasan', coords: [20.08, 41.11], region: 'Elbasan', plot: true, dx: 9, dy: 6 },
+    { name: 'Shkodër', coords: [19.51, 42.07], region: 'Shkodër', plot: true, dx: -9, dy: -4, anchor: 'end' },
+    { name: 'Lezhë', coords: [19.64, 41.78], region: 'Lezhë' },
+    { name: 'Korçë', coords: [20.78, 40.62], region: 'Korçë', plot: true, dx: 9, dy: 4 },
+    { name: 'Bulqizë', coords: [20.22, 41.49], region: 'Dibër', plot: true, dx: 9, dy: -4 },
+  ],
+  sectors: [
+    { slug: 'oil-gas', name: 'Oil & Gas', description: 'Patos-Marinza heavy-oil production and the Ballsh refinery — abrasion covers, high-pressure assemblies, sour-service documentation.' },
+    { slug: 'mining', name: 'Mining', description: 'Chrome at Bulqizë and copper in the north — dust-rated, high-cycle components.' },
+    { slug: 'power', name: 'Power & Energy', description: 'Actuator and governor hydraulics for the Drin hydro cascade.' },
+    { slug: 'construction', name: 'Construction', description: 'Excavator, crane and batching-plant hydraulics for road and port works.' },
+    { slug: 'marine', name: 'Marine & Offshore', description: 'Deck machinery and terminal hydraulics for the Durrës and Vlorë port fleet.' },
+    { slug: 'steel', name: 'Steel & Metals', description: 'High-force cylinders and servo valves for the Elbasan forming lines.' },
+  ],
+  faqs: [
+    { question: 'Do you have a branch in Albania?', answer: 'No. Albania is supplied from our Dubai warehouse, by sea through Suez and up the Adriatic into Durrës.' },
+    {
+      question: 'Can you supply for heavy-oil duty at Patos-Marinza?',
+      answer:
+        'Yes, and it is what most of this lane carries. Heavy oil is harder on a hose than its pressure rating suggests — abrasion at the cover, temperature at the bore, and cycle life under workover. Tell us the duty and we will specify against it rather than the catalogue.',
+    },
+    { question: 'Is Albania in the EU customs union?', answer: 'No. The customs entry is made at Durrës in its own right rather than inherited from a neighbour, which actually makes it simpler than the landlocked markets nearby — one file rather than two.' },
+    { question: 'What certification do we need?', answer: 'There is no blanket pre-shipment conformity scheme for industrial hose and fittings. What matters is the field specification and the material documentation that goes with it.' },
+    { question: 'Why is it transhipped rather than direct?', answer: 'Because Durrës does not take a mainline call from the Gulf. Cargo transhipes in the Mediterranean and waits for a feeder, which is most of the difference between this lane and the Greek one.' },
+    { question: 'Can you deliver to the field?', answer: 'Yes, on DAP terms to the field or the base at Patos or Fier. The road leg south from Durrës is short and it is priced with the order.' },
+    { question: 'What currency do you quote in?', answer: 'EUR. Our export desk settles European trade in euros, and the Estimate, the invoice and the customs value all carry the same figure so there is no conversion to reconcile at your end.' },
+    { question: 'Can you supply sour-service material documentation?', answer: 'Yes. NACE MR0175 / ISO 15156 documentation where the contract requires it, confirmed at quotation rather than produced afterwards.' },
+  ],
+  compliance: {
+    heading: 'An oilfield, not a factory',
+    body:
+      'Albania is the only market in this cluster whose demand is upstream rather than industrial. Patos-Marinza is the largest onshore oil field in continental Europe and it produces heavy crude, which is harder on equipment than the numbers on a datasheet suggest: abrasion at the cover, temperature at the bore, and cycle life under repeated workover. A hose selected on bore and working pressure alone is the wrong hose there, so the useful quotation starts from the duty. On customs the picture is simpler than its neighbours — Albania is outside the union but has its own port, so there is one entry at Durrës rather than a transit plus a border declaration. There is no blanket conformity scheme for industrial hose and fittings; what travels with the goods is the material documentation the field asks for, confirmed at quotation rather than assembled after a rejection.',
+    documents: [
+      { ref: 'DECL', name: 'Albanian customs import declaration', issuer: 'The importer, through the General Directorate of Customs', when: 'Before arrival' },
+      { ref: 'DUTY', name: 'Heavy-oil duty statement — cover, temperature, cycle', issuer: 'Us, at quotation', when: 'At quotation, per duty' },
+      { ref: 'MTC', name: 'Material and test certificates', issuer: 'Mill, or our test bench', when: 'Where the field specification calls for them' },
+      { ref: 'COO', name: 'Certificate of Origin', issuer: 'Dubai Chamber attested', when: 'Before dispatch' },
+      { ref: 'BL', name: 'Bill of lading or air waybill', issuer: 'The carrier', when: 'On dispatch' },
+    ],
+  },
+}
+
+const MONTENEGRO: MarketPage = {
+  slug: 'montenegro',
+  regulatoryCopy: 'unverified',
+  released: false,
+  lane: 'DXB → ME',
+  dialCode: '+382',
+  currency: 'EUR',
+  localName: 'Crna Gora',
+  lede: 'Montenegro is the smallest market on the Adriatic and it has its own port, which is more useful than it sounds — Bar means one customs entry rather than a transit through a neighbour plus a border declaration. Sailings are infrequent enough that batching matters more than speed. The industrial base is narrow: aluminium at Podgorica, steel at Nikšić, hydro on the Piva and Tara, and a growing marine sector around Bar and Tivat.',
+  facts: [
+    { label: 'Typical transit', value: 'Typically 22–30 days by sea from dispatch, feeder-dependent' },
+    {
+      label: 'Freight',
+      value: 'Sea freight from Jebel Ali through Suez to Bar, transhipped in the Mediterranean · Ploče or Durrës and road where the feeder schedule is poor · Air freight into Podgorica where the schedule is tighter',
+    },
+    { label: 'Incoterms 2020', value: 'CIF Bar · DAP to the buyer’s site · FOB Jebel Ali · EXW Dubai for a nominated forwarder' },
+    {
+      label: 'Documentation',
+      value:
+        'Montenegrin customs declaration raised by the importer · Certificate of Origin, Dubai Chamber attested · Material and test certificates where the specification calls for them',
+    },
+  ],
+  manifest: [
+    { label: 'Origin', value: 'Jebel Ali · Dubai' },
+    { label: 'Primary mode', value: 'Sea, transhipped' },
+    { label: 'Port of entry', value: 'Bar' },
+    { label: 'Transit', value: '22–30 days' },
+    { label: 'Quoted in', value: 'EUR' },
+    { label: 'Docs prepared', value: 'Before the vessel sails' },
+  ],
+  map: {
+    geoNames: ['Montenegro'],
+    fit: 'crossing',
+    origin: [55.03, 25.01],
+    originLabel: 'JEBEL ALI · DXB',
+    crossing: { name: 'BAR · PORT', coords: [19.09, 42.09], legend: 'Port of entry', dx: -11, dy: 10, anchor: 'end' },
+    routes: [
+      { mode: 'SEA · TRANSHIP', primary: true, points: leg(ADRIATIC, [18.8, 41.5], [19.09, 42.09]) },
+      { mode: 'AIR', points: leg(EUROPE_AIR, [19.25, 42.36]) },
+    ],
+  },
+  freight: [
+    { name: 'Sea, FCL', transit: '22–30 days', route: 'Jebel Ali to Bar, transhipped', useCase: 'Default for most orders' },
+    { name: 'Air freight', transit: '3–5 days', route: 'DXB to TGD, with a connection', useCase: 'When the line is down' },
+    { name: 'Sea + road', transit: '24–32 days', route: 'Ploče or Durrës, then road', useCase: 'When the feeder schedule is poor' },
+  ],
+  orderSteps: {
+    third: 'The consignment is built to catch a named feeder rather than an average schedule, because Bar is served infrequently and a missed sailing costs a fortnight.',
+    fourth: 'Goods sail from Jebel Ali and tranship for Bar, and you get the paperwork and tracking together.',
+  },
+  cities: [
+    { name: 'Bar', coords: [19.09, 42.09], region: 'Coastal' },
+    { name: 'Podgorica', coords: [19.26, 42.44], region: 'Central', plot: true, dx: 9, dy: -5 },
+    { name: 'Nikšić', coords: [18.94, 42.77], region: 'Central', plot: true, dx: -9, dy: -4, anchor: 'end' },
+    { name: 'Pljevlja', coords: [19.36, 43.36], region: 'Northern', plot: true, dx: 9, dy: -4 },
+    { name: 'Bijelo Polje', coords: [19.75, 43.04], region: 'Northern' },
+    { name: 'Berane', coords: [19.87, 42.84], region: 'Northern' },
+    { name: 'Tivat', coords: [18.7, 42.43], region: 'Coastal', plot: true, dx: -9, dy: 6, anchor: 'end' },
+    { name: 'Kotor', coords: [18.77, 42.42], region: 'Coastal' },
+    { name: 'Herceg Novi', coords: [18.54, 42.45], region: 'Coastal' },
+    { name: 'Budva', coords: [18.84, 42.29], region: 'Coastal', plot: true, dx: -9, dy: 6, anchor: 'end' },
+    { name: 'Ulcinj', coords: [19.21, 41.93], region: 'Coastal' },
+    { name: 'Mojkovac', coords: [19.58, 42.96], region: 'Northern' },
+  ],
+  sectors: [
+    { slug: 'steel', name: 'Steel & Metals', description: 'High-force cylinders and servo valves for the Nikšić steel and Podgorica aluminium plant.' },
+    { slug: 'power', name: 'Power & Energy', description: 'Actuator and governor hydraulics for the Piva and Perućica hydro plant and the Pljevlja thermal station.' },
+    { slug: 'marine', name: 'Marine & Offshore', description: 'Deck machinery, winch and refit hydraulics for the Bar and Tivat marine sector.' },
+    { slug: 'mining', name: 'Mining', description: 'Bauxite and coal — dust-rated, high-cycle components for shovel and crusher.' },
+    { slug: 'construction', name: 'Construction', description: 'Excavator, crane and tunnelling hydraulics for the motorway programme.' },
+    { slug: 'oil-gas', name: 'Oil & Gas', description: 'Terminal and fuel-handling support at Bar.' },
+  ],
+  faqs: [
+    { question: 'Do you have a branch in Montenegro?', answer: 'No. Montenegro is supplied from our Dubai warehouse, transhipped into Bar.' },
+    {
+      question: 'Why does having its own port matter?',
+      answer:
+        'Because it means one customs file rather than two. Serbia, Bosnia, Kosovo and North Macedonia all need a transit through a neighbour plus their own entry; Montenegro makes its entry at Bar. For a small consignment that is a real saving in both cost and risk.',
+    },
+    { question: 'Why is the transit so variable?', answer: 'Because Bar is fed by feeder rather than a mainline call, and sailings are infrequent. A missed connection costs a fortnight, so we build a consignment to catch a named sailing rather than an average schedule.' },
+    { question: 'What certification do we need?', answer: 'There is no blanket pre-shipment conformity scheme for industrial hose and fittings. The file is the declaration, the invoice and packing list, and the origin certificate.' },
+    { question: 'Is it worth batching orders?', answer: 'Strongly, on this lane. One consolidated consignment catching a sailing lands sooner and cheaper than three chasing separate feeders, and we will say when that applies.' },
+    { question: 'Can you deliver inland?', answer: 'Yes, on DAP terms to Podgorica, Nikšić or Pljevlja. The road leg from Bar is short by regional standards and it is priced with the order.' },
+    { question: 'What currency do you quote in?', answer: 'EUR, which is also the currency in circulation in Montenegro, so there is nothing to convert at either end.' },
+    { question: 'Can you supply for aluminium and steel duty?', answer: 'Yes — high-force cylinders, servo valves and high-temperature assemblies. Tell us the working temperature and the cycle rather than the part number, because that is what decides the seal choice.' },
+  ],
+  compliance: {
+    heading: 'A small port, and why it is worth having',
+    body:
+      'Montenegro is the smallest market on this coast and one of the few in the western Balkans with its own working port, which matters more than the volume suggests. Serbia, Bosnia, Kosovo and North Macedonia all need an EU transit through a neighbour and then their own border declaration — two files, two chances of a mismatch, and a truck that can be stopped at a frontier. Montenegro makes a single entry at Bar. The trade-off is schedule: Bar is fed by feeder rather than a mainline call and sailings are infrequent, so a missed connection costs a fortnight rather than a few days. That makes this a lane where consolidation is worth more than speed, and where we build a consignment to catch a named sailing rather than quoting against an average that will be wrong. There is no blanket product conformity scheme to satisfy.',
+    documents: [
+      { ref: 'DECL', name: 'Montenegrin customs import declaration', issuer: 'The importer, through the Customs Administration', when: 'Before arrival' },
+      { ref: 'COO', name: 'Certificate of Origin', issuer: 'Dubai Chamber attested', when: 'Before dispatch' },
+      { ref: 'SAILING', name: 'Named feeder sailing the consignment is built to catch', issuer: 'Us, at quotation', when: 'At quotation' },
+      { ref: 'MTC', name: 'Material and test certificates', issuer: 'Mill, or our test bench', when: 'Where the specification calls for them' },
+      { ref: 'BL', name: 'Bill of lading or air waybill', issuer: 'The carrier', when: 'On dispatch' },
+    ],
+  },
+}
+
+
+const NORTH_MACEDONIA: MarketPage = {
+  slug: 'north-macedonia',
+  regulatoryCopy: 'unverified',
+  released: false,
+  lane: 'DXB → MK',
+  dialCode: '+389',
+  currency: 'EUR',
+  localName: 'Северна Македонија',
+  lede: 'North Macedonia is landlocked and served through Thessaloniki, which is the shortest corridor of its kind in the region — the port is closer to Skopje than most European capitals are to their own coast. That keeps the road leg cheap and the two-file customs arithmetic manageable. The industry behind it is lead and zinc mining, the Skopje steel and forming plants, and an automotive components sector in the free zones that ships to Germany.',
+  facts: [
+    { label: 'Typical transit', value: 'Typically 18–26 days from dispatch, sea and road combined' },
+    {
+      label: 'Freight',
+      value:
+        'Sea freight from Jebel Ali through Suez to Thessaloniki, then bonded road through Bogorodica · Durrës and the western corridor where that suits · Air freight into Skopje where the schedule is tighter',
+    },
+    { label: 'Incoterms 2020', value: 'DAP to the buyer’s site · CIF Thessaloniki · FOB Jebel Ali · EXW Dubai for a nominated forwarder' },
+    {
+      label: 'Documentation',
+      value:
+        'EU transit declaration for the bonded move · Macedonian customs entry raised by the importer · Certificate of Origin, Dubai Chamber attested · Material and test certificates where the specification calls for them',
+    },
+  ],
+  manifest: [
+    { label: 'Origin', value: 'Jebel Ali · Dubai' },
+    { label: 'Primary mode', value: 'Sea + road' },
+    { label: 'Border crossing', value: 'Bogorodica · Evzoni' },
+    { label: 'Transit', value: '18–26 days' },
+    { label: 'Quoted in', value: 'EUR' },
+    { label: 'Docs prepared', value: 'Before the vessel sails' },
+  ],
+  map: {
+    geoNames: ['Macedonia', 'North Macedonia'],
+    fit: 'crossing',
+    origin: [55.03, 25.01],
+    originLabel: 'JEBEL ALI · DXB',
+    crossing: { name: 'BOGORODICA · EVZONI', coords: [22.51, 41.14], dx: 11, dy: 10, anchor: 'start' },
+    routes: [
+      { mode: 'SEA + ROAD', primary: true, points: leg(SUEZ_TO_MED, [30.0, 33.0], [26.0, 35.0], [24.0, 38.5], [22.94, 40.64], [22.51, 41.14], [21.43, 41.99]) },
+      { mode: 'AIR', points: leg(EUROPE_AIR, [21.62, 41.96]) },
+    ],
+  },
+  freight: [
+    { name: 'Sea + road', transit: '18–26 days', route: 'Thessaloniki, then bonded through Bogorodica', useCase: 'Default for most orders' },
+    { name: 'Air freight', transit: '3–5 days', route: 'DXB to SKP, with a connection', useCase: 'When the line is down' },
+    { name: 'Sea + road, western', transit: '24–32 days', route: 'Durrës and the western corridor', useCase: 'When the Greek gate does not suit' },
+  ],
+  orderSteps: {
+    third: 'The EU transit declaration and the Macedonian entry are raised from the same invoice and packing list, so they agree line for line before the truck reaches Bogorodica.',
+    fourth: 'Goods sail to Thessaloniki and cross at Bogorodica under bond, and you get the paperwork and tracking together.',
+  },
+  cities: [
+    { name: 'Skopje', coords: [21.43, 41.99], region: 'Skopje', plot: true, dx: 9, dy: -5 },
+    { name: 'Bogorodica', coords: [22.51, 41.14], region: 'Southeastern' },
+    { name: 'Bitola', coords: [21.33, 41.03], region: 'Pelagonia', plot: true, dx: -9, dy: 6, anchor: 'end' },
+    { name: 'Prilep', coords: [21.56, 41.35], region: 'Pelagonia' },
+    { name: 'Kumanovo', coords: [21.72, 42.13], region: 'Northeastern', plot: true, dx: 9, dy: -4 },
+    { name: 'Tetovo', coords: [20.97, 42.01], region: 'Polog', plot: true, dx: -9, dy: -4, anchor: 'end' },
+    { name: 'Gostivar', coords: [20.91, 41.8], region: 'Polog' },
+    { name: 'Veles', coords: [21.78, 41.72], region: 'Vardar' },
+    { name: 'Štip', coords: [22.2, 41.75], region: 'Eastern', plot: true, dx: 9, dy: 4 },
+    { name: 'Kavadarci', coords: [22.01, 41.43], region: 'Vardar' },
+    { name: 'Probištip', coords: [22.18, 42.0], region: 'Eastern' },
+    { name: 'Strumica', coords: [22.64, 41.44], region: 'Southeastern', plot: true, dx: 9, dy: 8 },
+  ],
+  sectors: [
+    { slug: 'mining', name: 'Mining', description: 'Lead, zinc and copper in the east — dust-rated, high-cycle components for shovel and mill.' },
+    { slug: 'steel', name: 'Steel & Metals', description: 'High-force cylinders and servo valves for the Skopje forming and rolling lines.' },
+    { slug: 'construction', name: 'Construction', description: 'Excavator, crane and batching-plant hydraulics for the corridor road programme.' },
+    { slug: 'power', name: 'Power & Energy', description: 'Actuator and governor hydraulics for lignite and hydro generation.' },
+    { slug: 'oil-gas', name: 'Oil & Gas', description: 'Refinery and terminal support at Skopje and the pipeline from Thessaloniki.' },
+    { slug: 'marine', name: 'Marine & Offshore', description: 'Winch and lifting hydraulics for inland handling equipment.' },
+  ],
+  faqs: [
+    { question: 'Do you have a branch in North Macedonia?', answer: 'No. North Macedonia is supplied from our Dubai warehouse, by sea to Thessaloniki and then by bonded road through Bogorodica.' },
+    {
+      question: 'Why is this faster than the other landlocked Balkan markets?',
+      answer:
+        'Because the corridor is short. Thessaloniki to Skopje is a few hours, where Serbia and Bosnia are most of a day inland from their ports. The two-file customs arithmetic is the same; the road leg is much cheaper.',
+    },
+    { question: 'What certification do we need?', answer: 'There is no blanket pre-shipment conformity scheme for industrial hose and fittings. What has to be right is the transit file and the entry, and they have to match.' },
+    { question: 'What is the real variable on this lane?', answer: 'The border at Bogorodica. The EU transit declaration and the Macedonian entry describe the same goods and must agree line for line, or the truck waits there rather than at either customs office.' },
+    { question: 'Can you route through Durrës instead?', answer: 'Yes, on the western corridor, and for Tetovo or Gostivar it is sometimes sensible. For most deliveries Thessaloniki is shorter and we will say which suits the order.' },
+    { question: 'Can you deliver to the mines?', answer: 'Yes, on DAP terms to the mine gate in the eastern belt. The road leg from Skopje is quoted rather than estimated.' },
+    { question: 'What currency do you quote in?', answer: 'EUR. Our export desk settles European trade in euros, and the Estimate, the invoice and the customs value all carry the same figure so there is no conversion to reconcile at your end.' },
+    { question: 'Why buy from Dubai rather than locally?', answer: 'For a standard item you should not. The reason is the pattern a plant needs for equipment it is exporting, or a material grade a local distributor orders in rather than stocks.' },
+  ],
+  compliance: {
+    heading: 'The shortest corridor of its kind',
+    body:
+      'North Macedonia is landlocked and outside the customs union, so it carries the same two-document arithmetic as Serbia and Bosnia: an EU transit declaration for the bonded move and a Macedonian entry at Bogorodica, describing the same goods and agreeing line for line. What makes this lane easier than its neighbours is geography. Thessaloniki is a few hours from Skopje — closer than many European capitals are to their own coast — so the road leg is short, cheap and predictable, and the border is the only real variable rather than one of several. That also means the western corridor from Durrës is worth comparing for deliveries in the Polog valley, where the Greek gate stops being the obvious answer. There is no blanket product conformity scheme, so everything that can go wrong is on the transit file and all of it can be prepared before the vessel sails.',
+    documents: [
+      { ref: 'T1', name: 'EU transit declaration for the bonded move', issuer: 'The forwarder, at Thessaloniki', when: 'Before the road leg' },
+      { ref: 'JCI', name: 'Macedonian customs import declaration', issuer: 'The importer, through the Customs Administration', when: 'At the border' },
+      { ref: 'COO', name: 'Certificate of Origin', issuer: 'Dubai Chamber attested', when: 'Before dispatch' },
+      { ref: 'MTC', name: 'Material and test certificates', issuer: 'Mill, or our test bench', when: 'Where the specification calls for them' },
+      { ref: 'BL', name: 'Bill of lading', issuer: 'The carrier', when: 'On dispatch' },
+    ],
+  },
+}
+
+const KOSOVO: MarketPage = {
+  slug: 'kosovo',
+  regulatoryCopy: 'unverified',
+  released: false,
+  lane: 'DXB → XK',
+  dialCode: '+383',
+  currency: 'EUR',
+  localName: 'Kosova',
+  lede: 'Kosovo is landlocked, small, and reached two ways that are genuinely close in cost — Durrës and the road east, or Thessaloniki and the road north. We price both rather than defaulting, because the difference is often the delivery town rather than the distance. The demand is concentrated: Trepça mining, the Kosovo A and B lignite stations, and the construction that follows both. Every consignment carries a transit file and its own entry.',
+  facts: [
+    { label: 'Typical transit', value: 'Typically 22–30 days from dispatch, sea and road combined' },
+    {
+      label: 'Freight',
+      value:
+        'Sea freight from Jebel Ali through Suez to Durrës, then bonded road east · Thessaloniki and the road north where that suits · Air freight into Pristina where the schedule is tighter',
+    },
+    { label: 'Incoterms 2020', value: 'DAP to the buyer’s site · CIF Durrës · FOB Jebel Ali · EXW Dubai for a nominated forwarder' },
+    {
+      label: 'Documentation',
+      value:
+        'Transit declaration for the bonded move · Kosovo customs entry raised by the importer · Certificate of Origin, Dubai Chamber attested · Material and test certificates where the specification calls for them',
+    },
+  ],
+  manifest: [
+    { label: 'Origin', value: 'Jebel Ali · Dubai' },
+    { label: 'Primary mode', value: 'Sea + road' },
+    { label: 'Border crossing', value: 'Vërmicë · Morina' },
+    { label: 'Transit', value: '22–30 days' },
+    { label: 'Quoted in', value: 'EUR' },
+    { label: 'Docs prepared', value: 'Before the vessel sails' },
+  ],
+  map: {
+    geoNames: ['Kosovo'],
+    fit: 'crossing',
+    origin: [55.03, 25.01],
+    originLabel: 'JEBEL ALI · DXB',
+    crossing: { name: 'VËRMICË · MORINA', coords: [20.65, 42.06], dx: -11, dy: 10, anchor: 'end' },
+    routes: [
+      { mode: 'SEA + ROAD', primary: true, points: leg(ADRIATIC, [19.0, 40.0], [19.45, 41.31], [20.0, 41.6], [20.65, 42.06], [21.17, 42.66]) },
+      { mode: 'AIR', points: leg(EUROPE_AIR, [21.04, 42.57]) },
+    ],
+  },
+  freight: [
+    { name: 'Sea + road, western', transit: '22–30 days', route: 'Durrës, then bonded road east', useCase: 'Default for most orders' },
+    { name: 'Air freight', transit: '3–5 days', route: 'DXB to PRN, with a connection', useCase: 'When the line is down' },
+    { name: 'Sea + road, southern', transit: '22–30 days', route: 'Thessaloniki, then road north', useCase: 'Genuinely comparable — priced per order' },
+  ],
+  orderSteps: {
+    third:
+      'Both corridors are priced rather than one assumed, and the transit declaration and the Kosovo entry are raised from the same invoice and packing list so they agree at the border.',
+    fourth: 'Goods sail to Durrës or Thessaloniki and come on by bonded road, and you get the paperwork and tracking together.',
+  },
+  cities: [
+    { name: 'Pristina', coords: [21.17, 42.66], region: 'Pristina', plot: true, dx: 9, dy: -5 },
+    { name: 'Mitrovica', coords: [20.87, 42.89], region: 'Mitrovica', plot: true, dx: -9, dy: -4, anchor: 'end' },
+    { name: 'Trepça', coords: [20.9, 42.92], region: 'Mitrovica' },
+    { name: 'Peja', coords: [20.29, 42.66], region: 'Peja', plot: true, dx: -9, dy: -4, anchor: 'end' },
+    { name: 'Gjakova', coords: [20.43, 42.38], region: 'Gjakova', plot: true, dx: -9, dy: 6, anchor: 'end' },
+    { name: 'Prizren', coords: [20.74, 42.21], region: 'Prizren', plot: true, dx: 9, dy: 8 },
+    { name: 'Ferizaj', coords: [21.16, 42.37], region: 'Ferizaj', plot: true, dx: 9, dy: 6 },
+    { name: 'Gjilan', coords: [21.47, 42.46], region: 'Gjilan' },
+    { name: 'Obiliq', coords: [21.07, 42.69], region: 'Pristina' },
+    { name: 'Vushtrri', coords: [20.97, 42.82], region: 'Mitrovica' },
+    { name: 'Podujevë', coords: [21.19, 42.91], region: 'Pristina' },
+    { name: 'Vërmicë', coords: [20.65, 42.06], region: 'Prizren' },
+  ],
+  sectors: [
+    { slug: 'mining', name: 'Mining', description: 'Lead, zinc and silver at Trepça — dust-rated, high-cycle components for shovel, hoist and mill.' },
+    { slug: 'power', name: 'Power & Energy', description: 'Actuator and governor hydraulics for the Obiliq lignite stations and the mine-mouth handling plant.' },
+    { slug: 'construction', name: 'Construction', description: 'Excavator, crane and batching-plant hydraulics for the motorway and building programme.' },
+    { slug: 'steel', name: 'Steel & Metals', description: 'Cylinders and valves for forming, fabrication and scrap-handling lines.' },
+    { slug: 'oil-gas', name: 'Oil & Gas', description: 'Fuel terminal and bulk-handling support.' },
+    { slug: 'marine', name: 'Marine & Offshore', description: 'Winch and lifting hydraulics for inland handling equipment.' },
+  ],
+  faqs: [
+    { question: 'Do you have a branch in Kosovo?', answer: 'No. Kosovo is supplied from our Dubai warehouse, by sea to Durrës or Thessaloniki and then by bonded road.' },
+    {
+      question: 'Durrës or Thessaloniki?',
+      answer:
+        'Genuinely either, which is unusual. The two corridors are close enough in cost and time that the delivery town decides rather than the distance — Prizren and Gjakova lean west, Ferizaj and Gjilan lean south. We price both rather than defaulting to one.',
+    },
+    { question: 'What certification do we need?', answer: 'There is no blanket pre-shipment conformity scheme for industrial hose and fittings. What has to be right is the transit file and the entry, and they have to agree.' },
+    { question: 'Can you deliver to Trepça and the Obiliq stations?', answer: 'Yes, on DAP terms to the mine or plant gate. The road leg from Pristina is short and it is priced with the order.' },
+    { question: 'Can you supply for lignite handling duty?', answer: 'Yes — abrasion-resistant covers and dust-rated assemblies for conveyor, crusher and stacker-reclaimer service. Tell us the duty rather than the part number.' },
+    { question: 'What is the real variable on this lane?', answer: 'The border. The transit declaration and the Kosovo entry describe the same goods and must agree line for line, or the truck waits at the crossing rather than at either customs office.' },
+    { question: 'What currency do you quote in?', answer: 'EUR, which is also the currency in circulation in Kosovo, so there is nothing to convert at either end.' },
+    { question: 'Is it worth batching orders?', answer: 'Yes. On a lane with a bonded road leg, one consignment under a single transit declaration carries less border risk and less cost than several small ones.' },
+  ],
+  compliance: {
+    heading: 'Two corridors, genuinely comparable',
+    body:
+      'Kosovo is landlocked and outside the customs union, so a consignment carries a transit declaration for the bonded move and its own entry at the frontier, agreeing line for line. What distinguishes it from the other landlocked markets in this cluster is that there is no obvious gate. Durrës and the road east, and Thessaloniki and the road north, are close enough in cost and time that the delivery town decides rather than the distance — Prizren and Gjakova lean west, Ferizaj and Gjilan lean south. Most suppliers pick one and quote it for everything; we price both, because on a lane this size the difference is a real proportion of the landed cost. Demand is concentrated in the Trepça mining complex and the Obiliq lignite stations, both of which are abrasion and dust duty rather than general hydraulics, so the useful quotation starts from the service rather than the catalogue.',
+    documents: [
+      { ref: 'T1', name: 'Transit declaration for the bonded move', issuer: 'The forwarder, at Durrës or Thessaloniki', when: 'Before the road leg' },
+      { ref: 'DECL', name: 'Kosovo customs import declaration', issuer: 'The importer, through Kosovo Customs', when: 'At the border' },
+      { ref: 'ROUTE', name: 'Both corridors priced, not one assumed', issuer: 'Us, at quotation', when: 'At quotation' },
+      { ref: 'COO', name: 'Certificate of Origin', issuer: 'Dubai Chamber attested', when: 'Before dispatch' },
+      { ref: 'MTC', name: 'Material and test certificates', issuer: 'Mill, or our test bench', when: 'Where the specification calls for them' },
+    ],
+  },
+}
+
 export const MARKET_PAGE_RECORDS_3: readonly MarketPage[] = [
   TURKEY,
   NORWAY,
@@ -3282,4 +3689,8 @@ export const MARKET_PAGE_RECORDS_3: readonly MarketPage[] = [
   CROATIA,
   SERBIA,
   BOSNIA_AND_HERZEGOVINA,
+  ALBANIA,
+  MONTENEGRO,
+  NORTH_MACEDONIA,
+  KOSOVO,
 ]
