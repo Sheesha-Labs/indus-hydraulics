@@ -7,6 +7,8 @@ import { CONTACT_PAGE } from './contact'
 import { BRANDS_PAGE } from './brands'
 import { INDUSTRIES_PAGE } from './industries'
 import { MARKETS_PAGE } from './markets'
+import { PRIVACY_PAGE } from './privacy'
+import { TERMS_PAGE } from './terms'
 
 /**
  * Every master page, in the order the admin index lists them.
@@ -24,6 +26,8 @@ export const MASTER_PAGES: readonly MasterPageDef[] = [
   BRANDS_PAGE,
   INDUSTRIES_PAGE,
   MARKETS_PAGE,
+  PRIVACY_PAGE,
+  TERMS_PAGE,
 ]
 
 export {
@@ -35,5 +39,7 @@ export {
   BRANDS_PAGE,
   INDUSTRIES_PAGE,
   MARKETS_PAGE,
+  PRIVACY_PAGE,
+  TERMS_PAGE,
 }
 export { HELP_TILE_ICONS } from './contact'

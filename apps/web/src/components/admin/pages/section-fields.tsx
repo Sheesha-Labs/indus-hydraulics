@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react'
+import dynamic from 'next/dynamic'
 import { ImageOff, Plus, Trash2, X } from 'lucide-react'
 import {
   isImageField,
@@ -18,6 +19,21 @@ import { Button, cn } from '@indus/ui'
 
 import { getMediaById, type PickerResult } from '../../../app/admin/(shell)/media/actions'
 import { MediaBrowserDialog } from '../MediaBrowserDialog'
+
+/**
+ * The prose editor, code-split.
+ *
+ * Only the two policy pages declare a `richtext` field, and TipTap plus its
+ * table and link extensions is the largest thing in the admin bundle. A static
+ * import would ship all of it to whoever opens the Home page editor to change
+ * a button label.
+ */
+const RichTextEditor = dynamic(() => import('../rich-text/RichTextEditor'), {
+  ssr: false,
+  loading: () => (
+    <div className="h-[280px] animate-pulse rounded-lg border border-ih-border bg-ih-surface-2" />
+  ),
+})
 
 /** Options a `select` or a seedable `list` field draws from. */
 export type SeedItem = { slug: string; name: string; href?: string }
@@ -250,9 +266,19 @@ function ScalarField({
       <FieldLabel
         label={simple.label}
         help={simple.help}
-        count={simple.max ? `${textValue.length}/${simple.max}` : undefined}
+        // The prose editor keeps its own counter in its footer, and counting
+        // HTML source characters against a prose limit would read as nonsense.
+        count={simple.max && simple.kind !== 'richtext' ? `${textValue.length}/${simple.max}` : undefined}
       />
-      {simple.kind === 'textarea' || simple.kind === 'richtext' ? (
+      {simple.kind === 'richtext' ? (
+        <RichTextEditor
+          value={textValue}
+          onChange={(html) => onChange(html)}
+          minHeight={220}
+          ariaLabel={simple.label}
+          {...(simple.max === undefined ? {} : { maxLength: simple.max })}
+        />
+      ) : simple.kind === 'textarea' ? (
         <textarea
           className={cn(inputCls, 'min-h-[80px] resize-y leading-[1.55]')}
           value={textValue}
