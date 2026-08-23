@@ -51,7 +51,7 @@
      "hoseDash": 3,
      "hoseInch": "3/16\"",
      "hoseDn": 5,
-     "portLabel": "G1/8\"×28",
+     "portLabel": "G1/8\"\u00d728",
      "portDash": 2,
      "dimensions": {
       "A": 18.0,
@@ -67,7 +67,7 @@
      "hoseDash": 3,
      "hoseInch": "3/16\"",
      "hoseDn": 5,
-     "portLabel": "G1/4\"×19",
+     "portLabel": "G1/4\"\u00d719",
      "portDash": 4,
      "dimensions": {
       "A": 19.0,
@@ -83,7 +83,7 @@
      "hoseDash": 4,
      "hoseInch": "1/4\"",
      "hoseDn": 6,
-     "portLabel": "G1/8\"×28",
+     "portLabel": "G1/8\"\u00d728",
      "portDash": 2,
      "dimensions": {
       "A": 18.5,
@@ -99,7 +99,7 @@
      "hoseDash": 4,
      "hoseInch": "1/4\"",
      "hoseDn": 6,
-     "portLabel": "G1/4\"×19",
+     "portLabel": "G1/4\"\u00d719",
      "portDash": 4,
      "dimensions": {
       "A": 19.5,
@@ -115,7 +115,7 @@
      "hoseDash": 4,
      "hoseInch": "1/4\"",
      "hoseDn": 6,
-     "portLabel": "G3/8\"×19",
+     "portLabel": "G3/8\"\u00d719",
      "portDash": 6,
      "dimensions": {
       "A": 22.0,
@@ -131,7 +131,7 @@
      "hoseDash": 5,
      "hoseInch": "5/16\"",
      "hoseDn": 8,
-     "portLabel": "G1/4\"×19",
+     "portLabel": "G1/4\"\u00d719",
      "portDash": 4,
      "dimensions": {
       "A": 19.5,
@@ -147,7 +147,7 @@
      "hoseDash": 5,
      "hoseInch": "5/16\"",
      "hoseDn": 8,
-     "portLabel": "G3/8\"×19",
+     "portLabel": "G3/8\"\u00d719",
      "portDash": 6,
      "dimensions": {
       "A": 22.0,
@@ -163,7 +163,7 @@
      "hoseDash": 5,
      "hoseInch": "5/16\"",
      "hoseDn": 8,
-     "portLabel": "G1/2\"×14",
+     "portLabel": "G1/2\"\u00d714",
      "portDash": 8,
      "dimensions": {
       "A": 27.5,
@@ -179,7 +179,7 @@
      "hoseDash": 6,
      "hoseInch": "3/8\"",
      "hoseDn": 10,
-     "portLabel": "G1/4\"×19",
+     "portLabel": "G1/4\"\u00d719",
      "portDash": 4,
      "dimensions": {
       "A": 19.5,
@@ -195,7 +195,7 @@
      "hoseDash": 6,
      "hoseInch": "3/8\"",
      "hoseDn": 10,
-     "portLabel": "G3/8\"×19",
+     "portLabel": "G3/8\"\u00d719",
      "portDash": 6,
      "dimensions": {
       "A": 22.0,
@@ -211,7 +211,7 @@
      "hoseDash": 6,
      "hoseInch": "3/8\"",
      "hoseDn": 10,
-     "portLabel": "G1/2\"×14",
+     "portLabel": "G1/2\"\u00d714",
      "portDash": 8,
      "dimensions": {
       "A": 27.5,
@@ -227,7 +227,7 @@
      "hoseDash": 8,
      "hoseInch": "1/2\"",
      "hoseDn": 12,
-     "portLabel": "G3/8\"×19",
+     "portLabel": "G3/8\"\u00d719",
      "portDash": 6,
      "dimensions": {
       "A": 23.0,
@@ -243,7 +243,7 @@
      "hoseDash": 8,
      "hoseInch": "1/2\"",
      "hoseDn": 12,
-     "portLabel": "G1/2\"×14",
+     "portLabel": "G1/2\"\u00d714",
      "portDash": 8,
      "dimensions": {
       "A": 28.0,
@@ -259,7 +259,7 @@
      "hoseDash": 8,
      "hoseInch": "1/2\"",
      "hoseDn": 12,
-     "portLabel": "G1\"×11",
+     "portLabel": "G1\"\u00d711",
      "portDash": 16,
      "dimensions": {
       "A": 40.0,
@@ -275,7 +275,7 @@
      "hoseDash": 10,
      "hoseInch": "5/8\"",
      "hoseDn": 16,
-     "portLabel": "G1/2\"×14",
+     "portLabel": "G1/2\"\u00d714",
      "portDash": 8,
      "dimensions": {
       "A": 29.0,
@@ -291,7 +291,7 @@
      "hoseDash": 10,
      "hoseInch": "5/8\"",
      "hoseDn": 16,
-     "portLabel": "G5/8\"×14",
+     "portLabel": "G5/8\"\u00d714",
      "portDash": 10,
      "dimensions": {
       "A": 28.0,
@@ -307,7 +307,7 @@
      "hoseDash": 10,
      "hoseInch": "5/8\"",
      "hoseDn": 16,
-     "portLabel": "G3/4\"×14",
+     "portLabel": "G3/4\"\u00d714",
      "portDash": 12,
      "dimensions": {
       "A": 32.0,
@@ -323,7 +323,7 @@
      "hoseDash": 12,
      "hoseInch": "3/4\"",
      "hoseDn": 20,
-     "portLabel": "G3/4\"×14",
+     "portLabel": "G3/4\"\u00d714",
      "portDash": 12,
      "dimensions": {
       "A": 32.0,
@@ -339,7 +339,7 @@
      "hoseDash": 12,
      "hoseInch": "3/4\"",
      "hoseDn": 20,
-     "portLabel": "G1\"×11",
+     "portLabel": "G1\"\u00d711",
      "portDash": 16,
      "dimensions": {
       "A": 40.0,
@@ -355,7 +355,7 @@
      "hoseDash": 16,
      "hoseInch": "1\"",
      "hoseDn": 25,
-     "portLabel": "G1\"×11",
+     "portLabel": "G1\"\u00d711",
      "portDash": 16,
      "dimensions": {
       "A": 41.0,
@@ -379,7 +379,7 @@
      "hoseDash": 2,
      "hoseInch": "1/8\"",
      "hoseDn": null,
-     "portLabel": "G1/8\"×28",
+     "portLabel": "G1/8\"\u00d728",
      "portDash": null,
      "dimensions": {
       "S1": 14.0,
@@ -395,7 +395,7 @@
      "hoseDash": 4,
      "hoseInch": "1/4\"",
      "hoseDn": null,
-     "portLabel": "G1/4\"×19",
+     "portLabel": "G1/4\"\u00d719",
      "portDash": null,
      "dimensions": {
       "S1": 19.0,
@@ -411,7 +411,7 @@
      "hoseDash": 6,
      "hoseInch": "3/8\"",
      "hoseDn": null,
-     "portLabel": "G3/8\"×19",
+     "portLabel": "G3/8\"\u00d719",
      "portDash": null,
      "dimensions": {
       "S1": 22.0,
@@ -427,7 +427,7 @@
      "hoseDash": 8,
      "hoseInch": "1/2\"",
      "hoseDn": null,
-     "portLabel": "G1/2\"×14",
+     "portLabel": "G1/2\"\u00d714",
      "portDash": null,
      "dimensions": {
       "S1": 27.0,
@@ -443,7 +443,7 @@
      "hoseDash": 10,
      "hoseInch": "5/8\"",
      "hoseDn": null,
-     "portLabel": "G5/8\"×14",
+     "portLabel": "G5/8\"\u00d714",
      "portDash": null,
      "dimensions": {
       "S1": 30.0,
@@ -459,7 +459,7 @@
      "hoseDash": 12,
      "hoseInch": "3/4\"",
      "hoseDn": null,
-     "portLabel": "G3/4\"×14",
+     "portLabel": "G3/4\"\u00d714",
      "portDash": null,
      "dimensions": {
       "S1": 32.0,
@@ -475,7 +475,7 @@
      "hoseDash": 16,
      "hoseInch": "1\"",
      "hoseDn": null,
-     "portLabel": "G1\"×11",
+     "portLabel": "G1\"\u00d711",
      "portDash": null,
      "dimensions": {
       "S1": 41.0,
@@ -499,7 +499,7 @@
      "hoseDash": 3,
      "hoseInch": "3/16\"",
      "hoseDn": 5,
-     "portLabel": "G1/8\"×28",
+     "portLabel": "G1/8\"\u00d728",
      "portDash": 2,
      "dimensions": {
       "S2": 14.0,
@@ -514,7 +514,7 @@
      "hoseDash": 3,
      "hoseInch": "3/16\"",
      "hoseDn": 5,
-     "portLabel": "G1/4\"×19",
+     "portLabel": "G1/4\"\u00d719",
      "portDash": 4,
      "dimensions": {
       "S2": 19.0,
@@ -529,7 +529,7 @@
      "hoseDash": 4,
      "hoseInch": "1/4\"",
      "hoseDn": 6,
-     "portLabel": "G1/8\"×28",
+     "portLabel": "G1/8\"\u00d728",
      "portDash": 2,
      "dimensions": {
       "S2": 14.0,
@@ -544,7 +544,7 @@
      "hoseDash": 4,
      "hoseInch": "1/4\"",
      "hoseDn": 6,
-     "portLabel": "G1/4\"×19",
+     "portLabel": "G1/4\"\u00d719",
      "portDash": 4,
      "dimensions": {
       "S2": 19.0,
@@ -559,7 +559,7 @@
      "hoseDash": 4,
      "hoseInch": "1/4\"",
      "hoseDn": 6,
-     "portLabel": "G3/8\"×19",
+     "portLabel": "G3/8\"\u00d719",
      "portDash": 6,
      "dimensions": {
       "S2": 22.0,
@@ -574,7 +574,7 @@
      "hoseDash": 5,
      "hoseInch": "5/16\"",
      "hoseDn": 8,
-     "portLabel": "G1/4\"×19",
+     "portLabel": "G1/4\"\u00d719",
      "portDash": 4,
      "dimensions": {
       "S2": 19.0,
@@ -589,7 +589,7 @@
      "hoseDash": 5,
      "hoseInch": "5/16\"",
      "hoseDn": 8,
-     "portLabel": "G3/8\"×19",
+     "portLabel": "G3/8\"\u00d719",
      "portDash": 6,
      "dimensions": {
       "S2": 22.0,
@@ -604,7 +604,7 @@
      "hoseDash": 6,
      "hoseInch": "3/8\"",
      "hoseDn": 10,
-     "portLabel": "G1/4\"×19",
+     "portLabel": "G1/4\"\u00d719",
      "portDash": 4,
      "dimensions": {
       "S2": 19.0,
@@ -619,7 +619,7 @@
      "hoseDash": 6,
      "hoseInch": "3/8\"",
      "hoseDn": 10,
-     "portLabel": "G3/8\"×19",
+     "portLabel": "G3/8\"\u00d719",
      "portDash": 6,
      "dimensions": {
       "S2": 22.0,
@@ -634,7 +634,7 @@
      "hoseDash": 6,
      "hoseInch": "3/8\"",
      "hoseDn": 10,
-     "portLabel": "G1/2\"×14",
+     "portLabel": "G1/2\"\u00d714",
      "portDash": 8,
      "dimensions": {
       "S2": 27.0,
@@ -649,7 +649,7 @@
      "hoseDash": 8,
      "hoseInch": "1/2\"",
      "hoseDn": 12,
-     "portLabel": "G3/8\"×19",
+     "portLabel": "G3/8\"\u00d719",
      "portDash": 6,
      "dimensions": {
       "S2": 22.0,
@@ -664,7 +664,7 @@
      "hoseDash": 8,
      "hoseInch": "1/2\"",
      "hoseDn": 12,
-     "portLabel": "G1/2\"×14",
+     "portLabel": "G1/2\"\u00d714",
      "portDash": 8,
      "dimensions": {
       "S2": 27.0,
@@ -679,7 +679,7 @@
      "hoseDash": 8,
      "hoseInch": "1/2\"",
      "hoseDn": 12,
-     "portLabel": "G5/8\"×14",
+     "portLabel": "G5/8\"\u00d714",
      "portDash": 10,
      "dimensions": {
       "S2": 30.0,
@@ -694,7 +694,7 @@
      "hoseDash": 8,
      "hoseInch": "1/2\"",
      "hoseDn": 12,
-     "portLabel": "G3/4\"×14",
+     "portLabel": "G3/4\"\u00d714",
      "portDash": 12,
      "dimensions": {
       "S2": 32.0,
@@ -709,7 +709,7 @@
      "hoseDash": 10,
      "hoseInch": "5/8\"",
      "hoseDn": 16,
-     "portLabel": "G5/8\"×14",
+     "portLabel": "G5/8\"\u00d714",
      "portDash": 10,
      "dimensions": {
       "S2": 30.0,
@@ -724,7 +724,7 @@
      "hoseDash": 10,
      "hoseInch": "5/8\"",
      "hoseDn": 16,
-     "portLabel": "G3/4\"×14",
+     "portLabel": "G3/4\"\u00d714",
      "portDash": 12,
      "dimensions": {
       "S2": 32.0,
@@ -739,7 +739,7 @@
      "hoseDash": 12,
      "hoseInch": "3/4\"",
      "hoseDn": 20,
-     "portLabel": "G3/4\"×14",
+     "portLabel": "G3/4\"\u00d714",
      "portDash": 12,
      "dimensions": {
       "S2": 32.0,
@@ -754,7 +754,7 @@
      "hoseDash": 12,
      "hoseInch": "3/4\"",
      "hoseDn": 20,
-     "portLabel": "G1\"×11",
+     "portLabel": "G1\"\u00d711",
      "portDash": 16,
      "dimensions": {
       "S2": 41.0,
@@ -769,7 +769,7 @@
      "hoseDash": 14,
      "hoseInch": "7/8\"",
      "hoseDn": 22,
-     "portLabel": "G1\"×11",
+     "portLabel": "G1\"\u00d711",
      "portDash": 16,
      "dimensions": {
       "S2": 41.0,
@@ -784,7 +784,7 @@
      "hoseDash": 16,
      "hoseInch": "1\"",
      "hoseDn": 25,
-     "portLabel": "G1\"×11",
+     "portLabel": "G1\"\u00d711",
      "portDash": 16,
      "dimensions": {
       "S2": 41.0,
@@ -799,7 +799,7 @@
      "hoseDash": 16,
      "hoseInch": "1\"",
      "hoseDn": 25,
-     "portLabel": "G1.1/4\"×11",
+     "portLabel": "G1.1/4\"\u00d711",
      "portDash": 20,
      "dimensions": {
       "S2": 50.0,
@@ -814,7 +814,7 @@
      "hoseDash": 20,
      "hoseInch": "1.1/4\"",
      "hoseDn": 32,
-     "portLabel": "G1.1/4\"×11",
+     "portLabel": "G1.1/4\"\u00d711",
      "portDash": 20,
      "dimensions": {
       "S2": 50.0,
@@ -829,7 +829,7 @@
      "hoseDash": 20,
      "hoseInch": "1.1/4\"",
      "hoseDn": 32,
-     "portLabel": "G1.1/2\"×11",
+     "portLabel": "G1.1/2\"\u00d711",
      "portDash": 24,
      "dimensions": {
       "S2": 55.0,
@@ -844,7 +844,7 @@
      "hoseDash": 24,
      "hoseInch": "1.1/2\"",
      "hoseDn": 40,
-     "portLabel": "G1.1/2\"×11",
+     "portLabel": "G1.1/2\"\u00d711",
      "portDash": 24,
      "dimensions": {
       "S2": 55.0,
@@ -859,7 +859,7 @@
      "hoseDash": 24,
      "hoseInch": "1.1/2\"",
      "hoseDn": 40,
-     "portLabel": "G2\"×11",
+     "portLabel": "G2\"\u00d711",
      "portDash": 32,
      "dimensions": {
       "S2": 70.0,
@@ -874,7 +874,7 @@
      "hoseDash": 32,
      "hoseInch": "2\"",
      "hoseDn": 50,
-     "portLabel": "G2\"×11",
+     "portLabel": "G2\"\u00d711",
      "portDash": 32,
      "dimensions": {
       "S2": 70.0,
@@ -897,7 +897,7 @@
      "hoseDash": 4,
      "hoseInch": "1/4\"",
      "hoseDn": 6,
-     "portLabel": "G1/4\"×19",
+     "portLabel": "G1/4\"\u00d719",
      "portDash": 4,
      "dimensions": {
       "S2": 19.0,
@@ -913,7 +913,7 @@
      "hoseDash": 4,
      "hoseInch": "1/4\"",
      "hoseDn": 6,
-     "portLabel": "G3/8\"×19",
+     "portLabel": "G3/8\"\u00d719",
      "portDash": 6,
      "dimensions": {
       "S2": 22.0,
@@ -929,7 +929,7 @@
      "hoseDash": 5,
      "hoseInch": "5/16\"",
      "hoseDn": 8,
-     "portLabel": "G3/8\"×19",
+     "portLabel": "G3/8\"\u00d719",
      "portDash": 6,
      "dimensions": {
       "S2": 22.0,
@@ -945,7 +945,7 @@
      "hoseDash": 6,
      "hoseInch": "3/8\"",
      "hoseDn": 10,
-     "portLabel": "G3/8\"×19",
+     "portLabel": "G3/8\"\u00d719",
      "portDash": 6,
      "dimensions": {
       "S2": 22.0,
@@ -961,7 +961,7 @@
      "hoseDash": 6,
      "hoseInch": "3/8\"",
      "hoseDn": 10,
-     "portLabel": "G1/2\"×14",
+     "portLabel": "G1/2\"\u00d714",
      "portDash": 8,
      "dimensions": {
       "S2": 27.0,
@@ -977,7 +977,7 @@
      "hoseDash": 8,
      "hoseInch": "1/2\"",
      "hoseDn": 12,
-     "portLabel": "G1/2\"×14",
+     "portLabel": "G1/2\"\u00d714",
      "portDash": 8,
      "dimensions": {
       "S2": 27.0,
@@ -993,7 +993,7 @@
      "hoseDash": 8,
      "hoseInch": "1/2\"",
      "hoseDn": 12,
-     "portLabel": "G5/8\"×14",
+     "portLabel": "G5/8\"\u00d714",
      "portDash": 10,
      "dimensions": {
       "S2": 30.0,
@@ -1009,7 +1009,7 @@
      "hoseDash": 8,
      "hoseInch": "1/2\"",
      "hoseDn": 12,
-     "portLabel": "G3/4\"×14",
+     "portLabel": "G3/4\"\u00d714",
      "portDash": 12,
      "dimensions": {
       "S2": 32.0,
@@ -1025,7 +1025,7 @@
      "hoseDash": 10,
      "hoseInch": "5/8\"",
      "hoseDn": 16,
-     "portLabel": "G5/8\"×14",
+     "portLabel": "G5/8\"\u00d714",
      "portDash": 10,
      "dimensions": {
       "S2": 30.0,
@@ -1041,7 +1041,7 @@
      "hoseDash": 10,
      "hoseInch": "5/8\"",
      "hoseDn": 16,
-     "portLabel": "G3/4\"×14",
+     "portLabel": "G3/4\"\u00d714",
      "portDash": 12,
      "dimensions": {
       "S2": 32.0,
@@ -1057,7 +1057,7 @@
      "hoseDash": 12,
      "hoseInch": "3/4\"",
      "hoseDn": 20,
-     "portLabel": "G3/4\"×14",
+     "portLabel": "G3/4\"\u00d714",
      "portDash": 12,
      "dimensions": {
       "S2": 32.0,
@@ -1073,7 +1073,7 @@
      "hoseDash": 12,
      "hoseInch": "3/4\"",
      "hoseDn": 20,
-     "portLabel": "G1\"×11",
+     "portLabel": "G1\"\u00d711",
      "portDash": 16,
      "dimensions": {
       "S2": 41.0,
@@ -1089,7 +1089,7 @@
      "hoseDash": 16,
      "hoseInch": "1\"",
      "hoseDn": 25,
-     "portLabel": "G1\"×11",
+     "portLabel": "G1\"\u00d711",
      "portDash": 16,
      "dimensions": {
       "S2": 41.0,
@@ -1105,7 +1105,7 @@
      "hoseDash": 16,
      "hoseInch": "1\"",
      "hoseDn": 25,
-     "portLabel": "G1.1/4\"×11",
+     "portLabel": "G1.1/4\"\u00d711",
      "portDash": 20,
      "dimensions": {
       "S2": 50.0,
@@ -1121,7 +1121,7 @@
      "hoseDash": 20,
      "hoseInch": "1.1/4\"",
      "hoseDn": 32,
-     "portLabel": "G1.1/4\"×11",
+     "portLabel": "G1.1/4\"\u00d711",
      "portDash": 20,
      "dimensions": {
       "S2": 50.0,
@@ -1137,7 +1137,7 @@
      "hoseDash": 24,
      "hoseInch": "1.1/2\"",
      "hoseDn": 40,
-     "portLabel": "G1.1/2\"×11",
+     "portLabel": "G1.1/2\"\u00d711",
      "portDash": 24,
      "dimensions": {
       "S2": 55.0,
@@ -1153,7 +1153,7 @@
      "hoseDash": 32,
      "hoseInch": "2\"",
      "hoseDn": 50,
-     "portLabel": "G2\"×11",
+     "portLabel": "G2\"\u00d711",
      "portDash": 32,
      "dimensions": {
       "S2": 70.0,
@@ -1177,7 +1177,7 @@
      "hoseDash": 3,
      "hoseInch": "3/16\"",
      "hoseDn": 5,
-     "portLabel": "G1/8\"×28",
+     "portLabel": "G1/8\"\u00d728",
      "portDash": 2,
      "dimensions": {
       "S2": 14.0,
@@ -1193,7 +1193,7 @@
      "hoseDash": 3,
      "hoseInch": "3/16\"",
      "hoseDn": 5,
-     "portLabel": "G1/4\"×19",
+     "portLabel": "G1/4\"\u00d719",
      "portDash": 4,
      "dimensions": {
       "S2": 19.0,
@@ -1209,7 +1209,7 @@
      "hoseDash": 4,
      "hoseInch": "1/4\"",
      "hoseDn": 6,
-     "portLabel": "G1/8\"×28",
+     "portLabel": "G1/8\"\u00d728",
      "portDash": 2,
      "dimensions": {
       "S2": 14.0,
@@ -1225,7 +1225,7 @@
      "hoseDash": 4,
      "hoseInch": "1/4\"",
      "hoseDn": 6,
-     "portLabel": "G1/4\"×19",
+     "portLabel": "G1/4\"\u00d719",
      "portDash": 4,
      "dimensions": {
       "S2": 19.0,
@@ -1241,7 +1241,7 @@
      "hoseDash": 4,
      "hoseInch": "1/4\"",
      "hoseDn": 6,
-     "portLabel": "G3/8\"×19",
+     "portLabel": "G3/8\"\u00d719",
      "portDash": 6,
      "dimensions": {
       "S2": 22.0,
@@ -1257,7 +1257,7 @@
      "hoseDash": 5,
      "hoseInch": "5/16\"",
      "hoseDn": 8,
-     "portLabel": "G1/4\"×19",
+     "portLabel": "G1/4\"\u00d719",
      "portDash": 4,
      "dimensions": {
       "S2": 19.0,
@@ -1273,7 +1273,7 @@
      "hoseDash": 5,
      "hoseInch": "5/16\"",
      "hoseDn": 8,
-     "portLabel": "G3/8\"×19",
+     "portLabel": "G3/8\"\u00d719",
      "portDash": 6,
      "dimensions": {
       "S2": 22.0,
@@ -1289,7 +1289,7 @@
      "hoseDash": 6,
      "hoseInch": "3/8\"",
      "hoseDn": 10,
-     "portLabel": "G1/4\"×19",
+     "portLabel": "G1/4\"\u00d719",
      "portDash": 4,
      "dimensions": {
       "S2": 19.0,
@@ -1305,7 +1305,7 @@
      "hoseDash": 6,
      "hoseInch": "3/8\"",
      "hoseDn": 10,
-     "portLabel": "G3/8\"×19",
+     "portLabel": "G3/8\"\u00d719",
      "portDash": 6,
      "dimensions": {
       "S2": 22.0,
@@ -1321,7 +1321,7 @@
      "hoseDash": 6,
      "hoseInch": "3/8\"",
      "hoseDn": 10,
-     "portLabel": "G1/2\"×14",
+     "portLabel": "G1/2\"\u00d714",
      "portDash": 8,
      "dimensions": {
       "S2": 27.0,
@@ -1337,7 +1337,7 @@
      "hoseDash": 8,
      "hoseInch": "1/2\"",
      "hoseDn": 12,
-     "portLabel": "G1/2\"×14",
+     "portLabel": "G1/2\"\u00d714",
      "portDash": 8,
      "dimensions": {
       "S2": 27.0,
@@ -1353,7 +1353,7 @@
      "hoseDash": 8,
      "hoseInch": "1/2\"",
      "hoseDn": 12,
-     "portLabel": "G5/8\"×14",
+     "portLabel": "G5/8\"\u00d714",
      "portDash": 10,
      "dimensions": {
       "S2": 30.0,
@@ -1369,7 +1369,7 @@
      "hoseDash": 8,
      "hoseInch": "1/2\"",
      "hoseDn": 12,
-     "portLabel": "G3/4\"×14",
+     "portLabel": "G3/4\"\u00d714",
      "portDash": 12,
      "dimensions": {
       "S2": 32.0,
@@ -1385,7 +1385,7 @@
      "hoseDash": 10,
      "hoseInch": "5/8\"",
      "hoseDn": 16,
-     "portLabel": "G1/2\"×14",
+     "portLabel": "G1/2\"\u00d714",
      "portDash": 8,
      "dimensions": {
       "S2": 27.0,
@@ -1401,7 +1401,7 @@
      "hoseDash": 10,
      "hoseInch": "5/8\"",
      "hoseDn": 16,
-     "portLabel": "G5/8\"×14",
+     "portLabel": "G5/8\"\u00d714",
      "portDash": 10,
      "dimensions": {
       "S2": 30.0,
@@ -1417,7 +1417,7 @@
      "hoseDash": 10,
      "hoseInch": "5/8\"",
      "hoseDn": 16,
-     "portLabel": "G3/4\"×14",
+     "portLabel": "G3/4\"\u00d714",
      "portDash": 12,
      "dimensions": {
       "S2": 32.0,
@@ -1433,7 +1433,7 @@
      "hoseDash": 12,
      "hoseInch": "3/4\"",
      "hoseDn": 20,
-     "portLabel": "G3/4\"×14",
+     "portLabel": "G3/4\"\u00d714",
      "portDash": 12,
      "dimensions": {
       "S2": 32.0,
@@ -1449,7 +1449,7 @@
      "hoseDash": 12,
      "hoseInch": "3/4\"",
      "hoseDn": 20,
-     "portLabel": "G1\"×11",
+     "portLabel": "G1\"\u00d711",
      "portDash": 16,
      "dimensions": {
       "S2": 41.0,
@@ -1465,7 +1465,7 @@
      "hoseDash": 14,
      "hoseInch": "7/8\"",
      "hoseDn": 22,
-     "portLabel": "G1\"×11",
+     "portLabel": "G1\"\u00d711",
      "portDash": 16,
      "dimensions": {
       "S2": 41.0,
@@ -1481,7 +1481,7 @@
      "hoseDash": 16,
      "hoseInch": "1\"",
      "hoseDn": 25,
-     "portLabel": "G1\"×11",
+     "portLabel": "G1\"\u00d711",
      "portDash": 16,
      "dimensions": {
       "S2": 41.0,
@@ -1497,7 +1497,7 @@
      "hoseDash": 16,
      "hoseInch": "1\"",
      "hoseDn": 25,
-     "portLabel": "G1.1/4\"×11",
+     "portLabel": "G1.1/4\"\u00d711",
      "portDash": 20,
      "dimensions": {
       "S2": 50.0,
@@ -1513,7 +1513,7 @@
      "hoseDash": 20,
      "hoseInch": "1.1/4\"",
      "hoseDn": 32,
-     "portLabel": "G1.1/4\"×11",
+     "portLabel": "G1.1/4\"\u00d711",
      "portDash": 20,
      "dimensions": {
       "S2": 50.0,
@@ -1529,7 +1529,7 @@
      "hoseDash": 24,
      "hoseInch": "1.1/2\"",
      "hoseDn": 40,
-     "portLabel": "G1.1/2\"×11",
+     "portLabel": "G1.1/2\"\u00d711",
      "portDash": 24,
      "dimensions": {
       "S2": 55.0,
@@ -1545,7 +1545,7 @@
      "hoseDash": 32,
      "hoseInch": "2\"",
      "hoseDn": 50,
-     "portLabel": "G2\"×11",
+     "portLabel": "G2\"\u00d711",
      "portDash": 32,
      "dimensions": {
       "S2": 70.0,
@@ -1569,7 +1569,7 @@
      "hoseDash": 4,
      "hoseInch": "1/4\"",
      "hoseDn": 6,
-     "portLabel": "G1/4\"×19",
+     "portLabel": "G1/4\"\u00d719",
      "portDash": 4,
      "dimensions": {
       "S2": 19.0,
@@ -1584,7 +1584,7 @@
      "hoseDash": 4,
      "hoseInch": "1/4\"",
      "hoseDn": 6,
-     "portLabel": "G3/8\"×19",
+     "portLabel": "G3/8\"\u00d719",
      "portDash": 6,
      "dimensions": {
       "S2": 22.0,
@@ -1599,7 +1599,7 @@
      "hoseDash": 5,
      "hoseInch": "5/16\"",
      "hoseDn": 8,
-     "portLabel": "G3/8\"×19",
+     "portLabel": "G3/8\"\u00d719",
      "portDash": 6,
      "dimensions": {
       "S2": 22.0,
@@ -1614,7 +1614,7 @@
      "hoseDash": 6,
      "hoseInch": "3/8\"",
      "hoseDn": 10,
-     "portLabel": "G1/4\"×19",
+     "portLabel": "G1/4\"\u00d719",
      "portDash": 4,
      "dimensions": {
       "S2": 19.0,
@@ -1629,7 +1629,7 @@
      "hoseDash": 6,
      "hoseInch": "3/8\"",
      "hoseDn": 10,
-     "portLabel": "G3/8\"×19",
+     "portLabel": "G3/8\"\u00d719",
      "portDash": 6,
      "dimensions": {
       "S2": 22.0,
@@ -1644,7 +1644,7 @@
      "hoseDash": 6,
      "hoseInch": "3/8\"",
      "hoseDn": 10,
-     "portLabel": "G1/2\"×14",
+     "portLabel": "G1/2\"\u00d714",
      "portDash": 8,
      "dimensions": {
       "S2": 27.0,
@@ -1659,7 +1659,7 @@
      "hoseDash": 8,
      "hoseInch": "1/2\"",
      "hoseDn": 12,
-     "portLabel": "G3/8\"×19",
+     "portLabel": "G3/8\"\u00d719",
      "portDash": 6,
      "dimensions": {
       "S2": 22.0,
@@ -1674,7 +1674,7 @@
      "hoseDash": 8,
      "hoseInch": "1/2\"",
      "hoseDn": 12,
-     "portLabel": "G1/2\"×14",
+     "portLabel": "G1/2\"\u00d714",
      "portDash": 8,
      "dimensions": {
       "S2": 27.0,
@@ -1689,7 +1689,7 @@
      "hoseDash": 8,
      "hoseInch": "1/2\"",
      "hoseDn": 12,
-     "portLabel": "G5/8\"×14",
+     "portLabel": "G5/8\"\u00d714",
      "portDash": 10,
      "dimensions": {
       "S2": 30.0,
@@ -1704,7 +1704,7 @@
      "hoseDash": 8,
      "hoseInch": "1/2\"",
      "hoseDn": 12,
-     "portLabel": "G3/4\"×14",
+     "portLabel": "G3/4\"\u00d714",
      "portDash": 12,
      "dimensions": {
       "S2": 32.0,
@@ -1719,7 +1719,7 @@
      "hoseDash": 10,
      "hoseInch": "5/8\"",
      "hoseDn": 16,
-     "portLabel": "G5/8\"×14",
+     "portLabel": "G5/8\"\u00d714",
      "portDash": 10,
      "dimensions": {
       "S2": 30.0,
@@ -1734,7 +1734,7 @@
      "hoseDash": 10,
      "hoseInch": "5/8\"",
      "hoseDn": 16,
-     "portLabel": "G3/4\"×14",
+     "portLabel": "G3/4\"\u00d714",
      "portDash": 12,
      "dimensions": {
       "S2": 32.0,
@@ -1749,7 +1749,7 @@
      "hoseDash": 12,
      "hoseInch": "3/4\"",
      "hoseDn": 20,
-     "portLabel": "G3/4\"×14",
+     "portLabel": "G3/4\"\u00d714",
      "portDash": 12,
      "dimensions": {
       "S2": 32.0,
@@ -1764,7 +1764,7 @@
      "hoseDash": 12,
      "hoseInch": "3/4\"",
      "hoseDn": 20,
-     "portLabel": "G1\"×11",
+     "portLabel": "G1\"\u00d711",
      "portDash": 16,
      "dimensions": {
       "S2": 41.0,
@@ -1779,7 +1779,7 @@
      "hoseDash": 16,
      "hoseInch": "1\"",
      "hoseDn": 25,
-     "portLabel": "G1\"×11",
+     "portLabel": "G1\"\u00d711",
      "portDash": 16,
      "dimensions": {
       "S2": 41.0,
@@ -1794,7 +1794,7 @@
      "hoseDash": 20,
      "hoseInch": "1.1/4\"",
      "hoseDn": 32,
-     "portLabel": "G1.1/4\"×11",
+     "portLabel": "G1.1/4\"\u00d711",
      "portDash": 20,
      "dimensions": {
       "S2": 50.0,
@@ -1809,7 +1809,7 @@
      "hoseDash": 24,
      "hoseInch": "1.1/2\"",
      "hoseDn": 40,
-     "portLabel": "G1.1/2\"×11",
+     "portLabel": "G1.1/2\"\u00d711",
      "portDash": 24,
      "dimensions": {
       "S2": 55.0,
@@ -1824,7 +1824,7 @@
      "hoseDash": 32,
      "hoseInch": "2\"",
      "hoseDn": 50,
-     "portLabel": "G2\"×11",
+     "portLabel": "G2\"\u00d711",
      "portDash": 32,
      "dimensions": {
       "S2": 70.0,
@@ -1847,7 +1847,7 @@
      "hoseDash": 3,
      "hoseInch": "3/16\"",
      "hoseDn": 5,
-     "portLabel": "G1/8\"×28",
+     "portLabel": "G1/8\"\u00d728",
      "portDash": 2,
      "dimensions": {
       "S2": 12.0,
@@ -1862,7 +1862,7 @@
      "hoseDash": 4,
      "hoseInch": "1/4\"",
      "hoseDn": 6,
-     "portLabel": "G1/4\"×19",
+     "portLabel": "G1/4\"\u00d719",
      "portDash": 4,
      "dimensions": {
       "S2": 14.0,
@@ -1877,7 +1877,7 @@
      "hoseDash": 5,
      "hoseInch": "5/16\"",
      "hoseDn": 8,
-     "portLabel": "G3/8\"×19",
+     "portLabel": "G3/8\"\u00d719",
      "portDash": 6,
      "dimensions": {
       "S2": 17.0,
@@ -1892,7 +1892,7 @@
      "hoseDash": 6,
      "hoseInch": "3/8\"",
      "hoseDn": 10,
-     "portLabel": "G3/8\"×19",
+     "portLabel": "G3/8\"\u00d719",
      "portDash": 6,
      "dimensions": {
       "S2": 17.0,
@@ -1907,7 +1907,7 @@
      "hoseDash": 6,
      "hoseInch": "3/8\"",
      "hoseDn": 10,
-     "portLabel": "G1/2\"×14",
+     "portLabel": "G1/2\"\u00d714",
      "portDash": 8,
      "dimensions": {
       "S2": 22.0,
@@ -1922,7 +1922,7 @@
      "hoseDash": 8,
      "hoseInch": "1/2\"",
      "hoseDn": 12,
-     "portLabel": "G3/8\"×19",
+     "portLabel": "G3/8\"\u00d719",
      "portDash": 6,
      "dimensions": {
       "S2": 19.0,
@@ -1937,7 +1937,7 @@
      "hoseDash": 8,
      "hoseInch": "1/2\"",
      "hoseDn": 12,
-     "portLabel": "G1/2\"×14",
+     "portLabel": "G1/2\"\u00d714",
      "portDash": 8,
      "dimensions": {
       "S2": 22.0,
@@ -1952,7 +1952,7 @@
      "hoseDash": 8,
      "hoseInch": "1/2\"",
      "hoseDn": 12,
-     "portLabel": "G5/8\"×14",
+     "portLabel": "G5/8\"\u00d714",
      "portDash": 10,
      "dimensions": {
       "S2": 24.0,
@@ -1967,7 +1967,7 @@
      "hoseDash": 8,
      "hoseInch": "1/2\"",
      "hoseDn": 12,
-     "portLabel": "G3/4\"×14",
+     "portLabel": "G3/4\"\u00d714",
      "portDash": 12,
      "dimensions": {
       "S2": 27.0,
@@ -1982,7 +1982,7 @@
      "hoseDash": 10,
      "hoseInch": "5/8\"",
      "hoseDn": 16,
-     "portLabel": "G5/8\"×14",
+     "portLabel": "G5/8\"\u00d714",
      "portDash": 10,
      "dimensions": {
       "S2": 24.0,
@@ -1997,7 +1997,7 @@
      "hoseDash": 10,
      "hoseInch": "5/8\"",
      "hoseDn": 16,
-     "portLabel": "G3/4\"×14",
+     "portLabel": "G3/4\"\u00d714",
      "portDash": 12,
      "dimensions": {
       "S2": 27.0,
@@ -2012,7 +2012,7 @@
      "hoseDash": 12,
      "hoseInch": "3/4\"",
      "hoseDn": 20,
-     "portLabel": "G3/4\"×14",
+     "portLabel": "G3/4\"\u00d714",
      "portDash": 12,
      "dimensions": {
       "S2": 27.0,
@@ -2027,7 +2027,7 @@
      "hoseDash": 12,
      "hoseInch": "3/4\"",
      "hoseDn": 20,
-     "portLabel": "G1\"×11",
+     "portLabel": "G1\"\u00d711",
      "portDash": 16,
      "dimensions": {
       "S2": 36.0,
@@ -2042,7 +2042,7 @@
      "hoseDash": 16,
      "hoseInch": "1\"",
      "hoseDn": 25,
-     "portLabel": "G1\"×11",
+     "portLabel": "G1\"\u00d711",
      "portDash": 16,
      "dimensions": {
       "S2": 36.0,
@@ -2057,7 +2057,7 @@
      "hoseDash": 16,
      "hoseInch": "1\"",
      "hoseDn": 25,
-     "portLabel": "G1.1/4\"×11",
+     "portLabel": "G1.1/4\"\u00d711",
      "portDash": 20,
      "dimensions": {
       "S2": 46.0,
@@ -2072,7 +2072,7 @@
      "hoseDash": 20,
      "hoseInch": "1.1/4\"",
      "hoseDn": 32,
-     "portLabel": "G1.1/4\"×11",
+     "portLabel": "G1.1/4\"\u00d711",
      "portDash": 20,
      "dimensions": {
       "S2": 46.0,
@@ -2087,7 +2087,7 @@
      "hoseDash": 20,
      "hoseInch": "1.1/4\"",
      "hoseDn": 32,
-     "portLabel": "G1.1/2\"×11",
+     "portLabel": "G1.1/2\"\u00d711",
      "portDash": 24,
      "dimensions": {
       "S2": 50.0,
@@ -2102,7 +2102,7 @@
      "hoseDash": 24,
      "hoseInch": "1.1/2\"",
      "hoseDn": 40,
-     "portLabel": "G1.1/2\"×11",
+     "portLabel": "G1.1/2\"\u00d711",
      "portDash": 24,
      "dimensions": {
       "S2": 50.0,
@@ -2117,7 +2117,7 @@
      "hoseDash": 32,
      "hoseInch": "2\"",
      "hoseDn": 50,
-     "portLabel": "G2\"×11",
+     "portLabel": "G2\"\u00d711",
      "portDash": 32,
      "dimensions": {
       "S2": 65.0,
@@ -2295,7 +2295,7 @@
      "hoseDash": 8,
      "hoseInch": "1/2\"",
      "hoseDn": 12,
-     "portLabel": "R3/4\"×14",
+     "portLabel": "R3/4\"\u00d714",
      "portDash": 12,
      "dimensions": {
       "S2": 27.0,
@@ -2338,7 +2338,7 @@
      "hoseDash": 12,
      "hoseInch": "3/4\"",
      "hoseDn": 20,
-     "portLabel": "R1/2\"×14",
+     "portLabel": "R1/2\"\u00d714",
      "portDash": 8,
      "dimensions": {
       "S2": 27.0,
@@ -2465,7 +2465,7 @@
      "hoseDash": 24,
      "hoseInch": "1.1/2\"",
      "hoseDn": 40,
-     "portLabel": "R2\"×11",
+     "portLabel": "R2\"\u00d711",
      "portDash": 32,
      "dimensions": {
       "S2": 65.0,
@@ -4410,14 +4410,14 @@
      "hoseDash": 4,
      "hoseInch": "1/4\"",
      "hoseDn": 6,
-     "portLabel": "M12×1.5",
+     "portLabel": "M12\u00d71.5",
      "portDash": 12,
      "dimensions": {
       "OD": 6.0,
       "S2": 17.0,
       "A": 26.0,
       "C": 1.0,
-      "oRing": "4.5×1.5"
+      "oRing": "4.5\u00d71.5"
      },
      "sourcePart": "20411-12-04",
      "position": 0
@@ -4427,14 +4427,14 @@
      "hoseDash": 4,
      "hoseInch": "1/4\"",
      "hoseDn": 6,
-     "portLabel": "M14×1.5",
+     "portLabel": "M14\u00d71.5",
      "portDash": 14,
      "dimensions": {
       "OD": 8.0,
       "S2": 19.0,
       "A": 27.5,
       "C": 2.0,
-      "oRing": "6.5×1.5"
+      "oRing": "6.5\u00d71.5"
      },
      "sourcePart": "20411-14-04",
      "position": 1
@@ -4444,14 +4444,14 @@
      "hoseDash": 4,
      "hoseInch": "1/4\"",
      "hoseDn": 6,
-     "portLabel": "M16×1.5",
+     "portLabel": "M16\u00d71.5",
      "portDash": 16,
      "dimensions": {
       "OD": 10.0,
       "S2": 22.0,
       "A": 28.0,
       "C": 2.0,
-      "oRing": "8.0×1.5"
+      "oRing": "8.0\u00d71.5"
      },
      "sourcePart": "20411-16-04",
      "position": 2
@@ -4461,14 +4461,14 @@
      "hoseDash": 5,
      "hoseInch": "5/16\"",
      "hoseDn": 8,
-     "portLabel": "M16×1.5",
+     "portLabel": "M16\u00d71.5",
      "portDash": 16,
      "dimensions": {
       "OD": 10.0,
       "S2": 22.0,
       "A": 28.0,
       "C": 2.0,
-      "oRing": "8.0×1.5"
+      "oRing": "8.0\u00d71.5"
      },
      "sourcePart": "20411-16-05",
      "position": 3
@@ -4478,14 +4478,14 @@
      "hoseDash": 5,
      "hoseInch": "5/16\"",
      "hoseDn": 8,
-     "portLabel": "M18×1.5",
+     "portLabel": "M18\u00d71.5",
      "portDash": 18,
      "dimensions": {
       "OD": 12.0,
       "S2": 22.0,
       "A": 27.5,
       "C": 1.8,
-      "oRing": "10.0×2.0"
+      "oRing": "10.0\u00d72.0"
      },
      "sourcePart": "20411-18-05T",
      "position": 4
@@ -4495,14 +4495,14 @@
      "hoseDash": 5,
      "hoseInch": "5/16\"",
      "hoseDn": 8,
-     "portLabel": "M22×1.5",
+     "portLabel": "M22\u00d71.5",
      "portDash": 22,
      "dimensions": {
       "OD": 15.0,
       "S2": 27.0,
       "A": 29.5,
       "C": 2.1,
-      "oRing": "12.0×2.0"
+      "oRing": "12.0\u00d72.0"
      },
      "sourcePart": "20411-22-05T",
      "position": 5
@@ -4512,14 +4512,14 @@
      "hoseDash": 6,
      "hoseInch": "3/8\"",
      "hoseDn": 10,
-     "portLabel": "M14×1.5",
+     "portLabel": "M14\u00d71.5",
      "portDash": 14,
      "dimensions": {
       "OD": 8.0,
       "S2": 19.0,
       "A": 27.5,
       "C": 2.0,
-      "oRing": "6.5×1.5"
+      "oRing": "6.5\u00d71.5"
      },
      "sourcePart": "20411-14-06",
      "position": 6
@@ -4529,14 +4529,14 @@
      "hoseDash": 6,
      "hoseInch": "3/8\"",
      "hoseDn": 10,
-     "portLabel": "M16×1.5",
+     "portLabel": "M16\u00d71.5",
      "portDash": 16,
      "dimensions": {
       "OD": 10.0,
       "S2": 22.0,
       "A": 28.0,
       "C": 2.0,
-      "oRing": "8.0×1.5"
+      "oRing": "8.0\u00d71.5"
      },
      "sourcePart": "20411-16-06",
      "position": 7
@@ -4546,14 +4546,14 @@
      "hoseDash": 6,
      "hoseInch": "3/8\"",
      "hoseDn": 10,
-     "portLabel": "M18×1.5",
+     "portLabel": "M18\u00d71.5",
      "portDash": 18,
      "dimensions": {
       "OD": 12.0,
       "S2": 24.0,
       "A": 29.0,
       "C": 2.5,
-      "oRing": "10.0×2.0"
+      "oRing": "10.0\u00d72.0"
      },
      "sourcePart": "20411-18-06",
      "position": 8
@@ -4563,14 +4563,14 @@
      "hoseDash": 6,
      "hoseInch": "3/8\"",
      "hoseDn": 10,
-     "portLabel": "M22×1.5",
+     "portLabel": "M22\u00d71.5",
      "portDash": 22,
      "dimensions": {
       "OD": 15.0,
       "S2": 27.0,
       "A": 29.0,
       "C": 2.5,
-      "oRing": "12.0×2.0"
+      "oRing": "12.0\u00d72.0"
      },
      "sourcePart": "20411-22-06T",
      "position": 9
@@ -4580,14 +4580,14 @@
      "hoseDash": 8,
      "hoseInch": "1/2\"",
      "hoseDn": 12,
-     "portLabel": "M18×1.5",
+     "portLabel": "M18\u00d71.5",
      "portDash": 18,
      "dimensions": {
       "OD": 12.0,
       "S2": 24.0,
       "A": 29.5,
       "C": 2.5,
-      "oRing": "10.0×2.0"
+      "oRing": "10.0\u00d72.0"
      },
      "sourcePart": "20411-18-08",
      "position": 10
@@ -4597,14 +4597,14 @@
      "hoseDash": 8,
      "hoseInch": "1/2\"",
      "hoseDn": 12,
-     "portLabel": "M22×1.5",
+     "portLabel": "M22\u00d71.5",
      "portDash": 22,
      "dimensions": {
       "OD": 15.0,
       "S2": 27.0,
       "A": 32.0,
       "C": 2.5,
-      "oRing": "12.0×2.0"
+      "oRing": "12.0\u00d72.0"
      },
      "sourcePart": "20411-22-08",
      "position": 11
@@ -4614,14 +4614,14 @@
      "hoseDash": 10,
      "hoseInch": "5/8\"",
      "hoseDn": 16,
-     "portLabel": "M26×1.5",
+     "portLabel": "M26\u00d71.5",
      "portDash": 26,
      "dimensions": {
       "OD": 18.0,
       "S2": 32.0,
       "A": 35.0,
       "C": 2.5,
-      "oRing": "15.0×2.0"
+      "oRing": "15.0\u00d72.0"
      },
      "sourcePart": "20411-26-10",
      "position": 12
@@ -4631,14 +4631,14 @@
      "hoseDash": 10,
      "hoseInch": "5/8\"",
      "hoseDn": 16,
-     "portLabel": "M27×1.5",
+     "portLabel": "M27\u00d71.5",
      "portDash": 27,
      "dimensions": {
       "OD": 18.0,
       "S2": 32.0,
       "A": 28.0,
       "C": 2.5,
-      "oRing": "15.0×2.0"
+      "oRing": "15.0\u00d72.0"
      },
      "sourcePart": "20411-27-10T",
      "position": 13
@@ -4648,14 +4648,14 @@
      "hoseDash": 10,
      "hoseInch": "5/8\"",
      "hoseDn": 16,
-     "portLabel": "M30×2",
+     "portLabel": "M30\u00d72",
      "portDash": 30,
      "dimensions": {
       "OD": 22.0,
       "S2": 36.0,
       "A": 35.0,
       "C": 4.0,
-      "oRing": "20.0×2.0"
+      "oRing": "20.0\u00d72.0"
      },
      "sourcePart": "20411-30-10T",
      "position": 14
@@ -4665,14 +4665,14 @@
      "hoseDash": 12,
      "hoseInch": "3/4\"",
      "hoseDn": 20,
-     "portLabel": "M26×1.5",
+     "portLabel": "M26\u00d71.5",
      "portDash": 26,
      "dimensions": {
       "OD": 18.0,
       "S2": 32.0,
       "A": 35.0,
       "C": 2.5,
-      "oRing": "15.0×2.0"
+      "oRing": "15.0\u00d72.0"
      },
      "sourcePart": "20411-26-12",
      "position": 15
@@ -4682,14 +4682,14 @@
      "hoseDash": 12,
      "hoseInch": "3/4\"",
      "hoseDn": 20,
-     "portLabel": "M27×1.5",
+     "portLabel": "M27\u00d71.5",
      "portDash": 27,
      "dimensions": {
       "OD": 18.0,
       "S2": 32.0,
       "A": 35.0,
       "C": 2.5,
-      "oRing": "15.0×2.0"
+      "oRing": "15.0\u00d72.0"
      },
      "sourcePart": "20411-27-12",
      "position": 16
@@ -4699,14 +4699,14 @@
      "hoseDash": 12,
      "hoseInch": "3/4\"",
      "hoseDn": 20,
-     "portLabel": "M30×2",
+     "portLabel": "M30\u00d72",
      "portDash": 30,
      "dimensions": {
       "OD": 22.0,
       "S2": 36.0,
       "A": 38.0,
       "C": 4.0,
-      "oRing": "20.0×2.0"
+      "oRing": "20.0\u00d72.0"
      },
      "sourcePart": "20411-30-12",
      "position": 17
@@ -4716,14 +4716,14 @@
      "hoseDash": 12,
      "hoseInch": "3/4\"",
      "hoseDn": 20,
-     "portLabel": "M36×2",
+     "portLabel": "M36\u00d72",
      "portDash": 36,
      "dimensions": {
       "OD": 28.0,
       "S2": 41.0,
       "A": 35.0,
       "C": 4.0,
-      "oRing": "26.0×2.0"
+      "oRing": "26.0\u00d72.0"
      },
      "sourcePart": "20411-36-12T",
      "position": 18
@@ -4733,14 +4733,14 @@
      "hoseDash": 14,
      "hoseInch": "7/8\"",
      "hoseDn": 22,
-     "portLabel": "M36×2",
+     "portLabel": "M36\u00d72",
      "portDash": 36,
      "dimensions": {
       "OD": 28.0,
       "S2": 41.0,
       "A": 36.0,
       "C": 4.0,
-      "oRing": "26.0×2.0"
+      "oRing": "26.0\u00d72.0"
      },
      "sourcePart": "20411-36-14T",
      "position": 19
@@ -4750,14 +4750,14 @@
      "hoseDash": 16,
      "hoseInch": "1\"",
      "hoseDn": 25,
-     "portLabel": "M45×2",
+     "portLabel": "M45\u00d72",
      "portDash": 45,
      "dimensions": {
       "OD": 35.0,
       "S2": 55.0,
       "A": 41.0,
       "C": 5.0,
-      "oRing": "32.0×2.5"
+      "oRing": "32.0\u00d72.5"
      },
      "sourcePart": "20411-45-16T",
      "position": 20
@@ -4767,14 +4767,14 @@
      "hoseDash": 20,
      "hoseInch": "1.1/4\"",
      "hoseDn": 32,
-     "portLabel": "M45×2",
+     "portLabel": "M45\u00d72",
      "portDash": 45,
      "dimensions": {
       "OD": 35.0,
       "S2": 55.0,
       "A": 42.0,
       "C": 5.0,
-      "oRing": "32.0×2.5"
+      "oRing": "32.0\u00d72.5"
      },
      "sourcePart": "20411-45-20T",
      "position": 21
@@ -4784,14 +4784,14 @@
      "hoseDash": 20,
      "hoseInch": "1.1/4\"",
      "hoseDn": 32,
-     "portLabel": "M52×2",
+     "portLabel": "M52\u00d72",
      "portDash": 52,
      "dimensions": {
       "OD": 42.0,
       "S2": 60.0,
       "A": 44.0,
       "C": 5.5,
-      "oRing": "38.0×2.5"
+      "oRing": "38.0\u00d72.5"
      },
      "sourcePart": "20411-52-20T",
      "position": 22
@@ -4801,14 +4801,14 @@
      "hoseDash": 24,
      "hoseInch": "1.1/2\"",
      "hoseDn": 40,
-     "portLabel": "M52×2",
+     "portLabel": "M52\u00d72",
      "portDash": 52,
      "dimensions": {
       "OD": 42.0,
       "S2": 60.0,
       "A": 44.0,
       "C": 5.5,
-      "oRing": "38.0×2.5"
+      "oRing": "38.0\u00d72.5"
      },
      "sourcePart": "20411-52-24T",
      "position": 23
@@ -4826,7 +4826,7 @@
      "hoseDash": 4,
      "hoseInch": "1/4\"",
      "hoseDn": 6,
-     "portLabel": "M14×1.5",
+     "portLabel": "M14\u00d71.5",
      "portDash": 14,
      "dimensions": {
       "OD": 8.0,
@@ -4834,7 +4834,7 @@
       "A": 49.0,
       "C": 2.0,
       "H": 27.0,
-      "oRing": "6.5×1.5"
+      "oRing": "6.5\u00d71.5"
      },
      "sourcePart": "20441-14-04",
      "position": 0
@@ -4844,7 +4844,7 @@
      "hoseDash": 5,
      "hoseInch": "5/16\"",
      "hoseDn": 8,
-     "portLabel": "M16×1.5",
+     "portLabel": "M16\u00d71.5",
      "portDash": 16,
      "dimensions": {
       "OD": 10.0,
@@ -4852,7 +4852,7 @@
       "A": 51.5,
       "C": 2.0,
       "H": 28.2,
-      "oRing": "8.0×1.5"
+      "oRing": "8.0\u00d71.5"
      },
      "sourcePart": "20441-16-05",
      "position": 1
@@ -4862,7 +4862,7 @@
      "hoseDash": 5,
      "hoseInch": "5/16\"",
      "hoseDn": 8,
-     "portLabel": "M18×1.5",
+     "portLabel": "M18\u00d71.5",
      "portDash": 18,
      "dimensions": {
       "OD": 12.0,
@@ -4870,7 +4870,7 @@
       "A": 46.2,
       "C": 2.5,
       "H": 22.9,
-      "oRing": "10.0×2.0"
+      "oRing": "10.0\u00d72.0"
      },
      "sourcePart": "20441-18-05T",
      "position": 2
@@ -4880,7 +4880,7 @@
      "hoseDash": 5,
      "hoseInch": "5/16\"",
      "hoseDn": 8,
-     "portLabel": "M22×1.5",
+     "portLabel": "M22\u00d71.5",
      "portDash": 22,
      "dimensions": {
       "OD": 15.0,
@@ -4888,7 +4888,7 @@
       "A": 48.3,
       "C": 2.5,
       "H": 25.0,
-      "oRing": "12.0×2.0"
+      "oRing": "12.0\u00d72.0"
      },
      "sourcePart": "20441-22-05T",
      "position": 3
@@ -4898,7 +4898,7 @@
      "hoseDash": 6,
      "hoseInch": "3/8\"",
      "hoseDn": 10,
-     "portLabel": "M16×1.5",
+     "portLabel": "M16\u00d71.5",
      "portDash": 16,
      "dimensions": {
       "OD": 10.0,
@@ -4906,7 +4906,7 @@
       "A": 53.4,
       "C": 2.0,
       "H": 29.2,
-      "oRing": "8.0×1.5"
+      "oRing": "8.0\u00d71.5"
      },
      "sourcePart": "20441-16-06",
      "position": 4
@@ -4916,7 +4916,7 @@
      "hoseDash": 6,
      "hoseInch": "3/8\"",
      "hoseDn": 10,
-     "portLabel": "M18×1.5",
+     "portLabel": "M18\u00d71.5",
      "portDash": 18,
      "dimensions": {
       "OD": 12.0,
@@ -4924,7 +4924,7 @@
       "A": 54.2,
       "C": 2.5,
       "H": 29.9,
-      "oRing": "10.0×2.0"
+      "oRing": "10.0\u00d72.0"
      },
      "sourcePart": "20441-18-06",
      "position": 5
@@ -4934,7 +4934,7 @@
      "hoseDash": 6,
      "hoseInch": "3/8\"",
      "hoseDn": 10,
-     "portLabel": "M22×1.5",
+     "portLabel": "M22\u00d71.5",
      "portDash": 22,
      "dimensions": {
       "OD": 15.0,
@@ -4942,7 +4942,7 @@
       "A": 50.4,
       "C": 2.5,
       "H": 25.7,
-      "oRing": "12.0×2.0"
+      "oRing": "12.0\u00d72.0"
      },
      "sourcePart": "20441-22-06T",
      "position": 6
@@ -4952,7 +4952,7 @@
      "hoseDash": 8,
      "hoseInch": "1/2\"",
      "hoseDn": 12,
-     "portLabel": "M22×1.5",
+     "portLabel": "M22\u00d71.5",
      "portDash": 22,
      "dimensions": {
       "OD": 15.0,
@@ -4960,7 +4960,7 @@
       "A": 68.1,
       "C": 2.5,
       "H": 33.2,
-      "oRing": "12.0×2.0"
+      "oRing": "12.0\u00d72.0"
      },
      "sourcePart": "20441-22-08",
      "position": 7
@@ -4970,7 +4970,7 @@
      "hoseDash": 8,
      "hoseInch": "1/2\"",
      "hoseDn": 12,
-     "portLabel": "M26×1.5",
+     "portLabel": "M26\u00d71.5",
      "portDash": 26,
      "dimensions": {
       "OD": 18.0,
@@ -4978,7 +4978,7 @@
       "A": 62.0,
       "C": 2.5,
       "H": 26.1,
-      "oRing": "15.0×2.0"
+      "oRing": "15.0\u00d72.0"
      },
      "sourcePart": "20441-26-08T",
      "position": 8
@@ -4988,7 +4988,7 @@
      "hoseDash": 10,
      "hoseInch": "5/8\"",
      "hoseDn": 16,
-     "portLabel": "M26×1.5",
+     "portLabel": "M26\u00d71.5",
      "portDash": 26,
      "dimensions": {
       "OD": 18.0,
@@ -4996,7 +4996,7 @@
       "A": 80.7,
       "C": 2.5,
       "H": 35.9,
-      "oRing": "15.0×2.0"
+      "oRing": "15.0\u00d72.0"
      },
      "sourcePart": "20441-26-10",
      "position": 9
@@ -5006,7 +5006,7 @@
      "hoseDash": 10,
      "hoseInch": "5/8\"",
      "hoseDn": 16,
-     "portLabel": "M27×1.5",
+     "portLabel": "M27\u00d71.5",
      "portDash": 27,
      "dimensions": {
       "OD": 18.0,
@@ -5014,7 +5014,7 @@
       "A": 72.0,
       "C": 2.5,
       "H": 27.7,
-      "oRing": "15.0×2.0"
+      "oRing": "15.0\u00d72.0"
      },
      "sourcePart": "20441-27-10T",
      "position": 10
@@ -5024,7 +5024,7 @@
      "hoseDash": 10,
      "hoseInch": "5/8\"",
      "hoseDn": 16,
-     "portLabel": "M30×2",
+     "portLabel": "M30\u00d72",
      "portDash": 30,
      "dimensions": {
       "OD": 22.0,
@@ -5032,7 +5032,7 @@
       "A": 75.1,
       "C": 4.0,
       "H": 30.3,
-      "oRing": "20.0×2.0"
+      "oRing": "20.0\u00d72.0"
      },
      "sourcePart": "20441-30-10T",
      "position": 11
@@ -5042,7 +5042,7 @@
      "hoseDash": 12,
      "hoseInch": "3/4\"",
      "hoseDn": 20,
-     "portLabel": "M26×1.5",
+     "portLabel": "M26\u00d71.5",
      "portDash": 26,
      "dimensions": {
       "OD": 18.0,
@@ -5050,7 +5050,7 @@
       "A": 86.9,
       "C": 2.5,
       "H": 39.5,
-      "oRing": "15.0×2.0"
+      "oRing": "15.0\u00d72.0"
      },
      "sourcePart": "20441-26-12",
      "position": 12
@@ -5060,7 +5060,7 @@
      "hoseDash": 12,
      "hoseInch": "3/4\"",
      "hoseDn": 20,
-     "portLabel": "M27×1.5",
+     "portLabel": "M27\u00d71.5",
      "portDash": 27,
      "dimensions": {
       "OD": 18.0,
@@ -5068,7 +5068,7 @@
       "A": 86.9,
       "C": 2.5,
       "H": 39.5,
-      "oRing": "15.0×2.0"
+      "oRing": "15.0\u00d72.0"
      },
      "sourcePart": "20441-27-12",
      "position": 13
@@ -5078,7 +5078,7 @@
      "hoseDash": 12,
      "hoseInch": "3/4\"",
      "hoseDn": 20,
-     "portLabel": "M30×2",
+     "portLabel": "M30\u00d72",
      "portDash": 30,
      "dimensions": {
       "OD": 22.0,
@@ -5086,7 +5086,7 @@
       "A": 89.1,
       "C": 4.0,
       "H": 41.7,
-      "oRing": "20.0×2.0"
+      "oRing": "20.0\u00d72.0"
      },
      "sourcePart": "20441-30-12",
      "position": 14
@@ -5096,7 +5096,7 @@
      "hoseDash": 12,
      "hoseInch": "3/4\"",
      "hoseDn": 20,
-     "portLabel": "M36×2",
+     "portLabel": "M36\u00d72",
      "portDash": 36,
      "dimensions": {
       "OD": 28.0,
@@ -5104,7 +5104,7 @@
       "A": 82.0,
       "C": 4.0,
       "H": 33.9,
-      "oRing": "26.0×2.0"
+      "oRing": "26.0\u00d72.0"
      },
      "sourcePart": "20441-36-12T",
      "position": 15
@@ -5114,7 +5114,7 @@
      "hoseDash": 14,
      "hoseInch": "7/8\"",
      "hoseDn": 22,
-     "portLabel": "M36×2",
+     "portLabel": "M36\u00d72",
      "portDash": 36,
      "dimensions": {
       "OD": 28.0,
@@ -5122,7 +5122,7 @@
       "A": 83.7,
       "C": 4.0,
       "H": 33.3,
-      "oRing": "26.0×2.0"
+      "oRing": "26.0\u00d72.0"
      },
      "sourcePart": "20441-36-14T",
      "position": 16
@@ -5132,7 +5132,7 @@
      "hoseDash": 20,
      "hoseInch": "1.1/4\"",
      "hoseDn": 32,
-     "portLabel": "M45×2",
+     "portLabel": "M45\u00d72",
      "portDash": 45,
      "dimensions": {
       "OD": 35.0,
@@ -5140,7 +5140,7 @@
       "A": 99.6,
       "C": 5.0,
       "H": 40.8,
-      "oRing": "32.0×2.5"
+      "oRing": "32.0\u00d72.5"
      },
      "sourcePart": "20441-45-20T",
      "position": 17
@@ -5150,7 +5150,7 @@
      "hoseDash": 20,
      "hoseInch": "1.1/4\"",
      "hoseDn": 32,
-     "portLabel": "M52×2",
+     "portLabel": "M52\u00d72",
      "portDash": 52,
      "dimensions": {
       "OD": 42.0,
@@ -5158,7 +5158,7 @@
       "A": 103.0,
       "C": 5.5,
       "H": 41.9,
-      "oRing": "38.0×2.5"
+      "oRing": "38.0\u00d72.5"
      },
      "sourcePart": "20441-52-20T",
      "position": 18
@@ -5168,7 +5168,7 @@
      "hoseDash": 24,
      "hoseInch": "1.1/2\"",
      "hoseDn": 40,
-     "portLabel": "M52×2",
+     "portLabel": "M52\u00d72",
      "portDash": 52,
      "dimensions": {
       "OD": 42.0,
@@ -5176,7 +5176,7 @@
       "A": 117.0,
       "C": 5.5,
       "H": 45.8,
-      "oRing": "38.0×2.5"
+      "oRing": "38.0\u00d72.5"
      },
      "sourcePart": "20441-52-24T",
      "position": 19
@@ -5194,7 +5194,7 @@
      "hoseDash": 3,
      "hoseInch": "3/16\"",
      "hoseDn": 5,
-     "portLabel": "M12×1.5",
+     "portLabel": "M12\u00d71.5",
      "portDash": 12,
      "dimensions": {
       "OD": 6.0,
@@ -5202,7 +5202,7 @@
       "A": 26.5,
       "C": 1.0,
       "H": 41.5,
-      "oRing": "4.5×1.5"
+      "oRing": "4.5\u00d71.5"
      },
      "sourcePart": "20491-12-03",
      "position": 0
@@ -5212,7 +5212,7 @@
      "hoseDash": 4,
      "hoseInch": "1/4\"",
      "hoseDn": 6,
-     "portLabel": "M12×1.5",
+     "portLabel": "M12\u00d71.5",
      "portDash": 12,
      "dimensions": {
       "OD": 6.0,
@@ -5220,7 +5220,7 @@
       "A": 30.0,
       "C": 1.0,
       "H": 44.5,
-      "oRing": "4.5×1.5"
+      "oRing": "4.5\u00d71.5"
      },
      "sourcePart": "20491-12-04",
      "position": 1
@@ -5230,7 +5230,7 @@
      "hoseDash": 4,
      "hoseInch": "1/4\"",
      "hoseDn": 6,
-     "portLabel": "M14×1.5",
+     "portLabel": "M14\u00d71.5",
      "portDash": 14,
      "dimensions": {
       "OD": 8.0,
@@ -5238,7 +5238,7 @@
       "A": 30.0,
       "C": 2.0,
       "H": 46.0,
-      "oRing": "6.5×1.5"
+      "oRing": "6.5\u00d71.5"
      },
      "sourcePart": "20491-14-04",
      "position": 2
@@ -5248,7 +5248,7 @@
      "hoseDash": 4,
      "hoseInch": "1/4\"",
      "hoseDn": 6,
-     "portLabel": "M16×1.5",
+     "portLabel": "M16\u00d71.5",
      "portDash": 16,
      "dimensions": {
       "OD": 10.0,
@@ -5256,7 +5256,7 @@
       "A": 30.0,
       "C": 2.0,
       "H": 46.5,
-      "oRing": "8.0×1.5"
+      "oRing": "8.0\u00d71.5"
      },
      "sourcePart": "20491-16-04",
      "position": 3
@@ -5266,7 +5266,7 @@
      "hoseDash": 5,
      "hoseInch": "5/16\"",
      "hoseDn": 8,
-     "portLabel": "M16×1.5",
+     "portLabel": "M16\u00d71.5",
      "portDash": 16,
      "dimensions": {
       "OD": 10.0,
@@ -5274,7 +5274,7 @@
       "A": 33.0,
       "C": 2.0,
       "H": 49.5,
-      "oRing": "8.0×1.5"
+      "oRing": "8.0\u00d71.5"
      },
      "sourcePart": "20491-16-05",
      "position": 4
@@ -5284,7 +5284,7 @@
      "hoseDash": 5,
      "hoseInch": "5/16\"",
      "hoseDn": 8,
-     "portLabel": "M18×1.5",
+     "portLabel": "M18\u00d71.5",
      "portDash": 18,
      "dimensions": {
       "OD": 12.0,
@@ -5292,7 +5292,7 @@
       "A": 33.0,
       "C": 2.5,
       "H": 42.0,
-      "oRing": "10.0×2.0"
+      "oRing": "10.0\u00d72.0"
      },
      "sourcePart": "20491-18-05T",
      "position": 5
@@ -5302,7 +5302,7 @@
      "hoseDash": 6,
      "hoseInch": "3/8\"",
      "hoseDn": 10,
-     "portLabel": "M16×1.5",
+     "portLabel": "M16\u00d71.5",
      "portDash": 16,
      "dimensions": {
       "OD": 10.0,
@@ -5310,7 +5310,7 @@
       "A": 35.3,
       "C": 2.0,
       "H": 51.8,
-      "oRing": "8.0×1.5"
+      "oRing": "8.0\u00d71.5"
      },
      "sourcePart": "20491-16-06",
      "position": 6
@@ -5320,7 +5320,7 @@
      "hoseDash": 6,
      "hoseInch": "3/8\"",
      "hoseDn": 10,
-     "portLabel": "M18×1.5",
+     "portLabel": "M18\u00d71.5",
      "portDash": 18,
      "dimensions": {
       "OD": 12.0,
@@ -5328,7 +5328,7 @@
       "A": 35.3,
       "C": 2.5,
       "H": 53.3,
-      "oRing": "10.0×2.0"
+      "oRing": "10.0\u00d72.0"
      },
      "sourcePart": "20491-18-06",
      "position": 7
@@ -5338,7 +5338,7 @@
      "hoseDash": 6,
      "hoseInch": "3/8\"",
      "hoseDn": 10,
-     "portLabel": "M22×1.5",
+     "portLabel": "M22\u00d71.5",
      "portDash": 22,
      "dimensions": {
       "OD": 15.0,
@@ -5346,7 +5346,7 @@
       "A": 35.3,
       "C": 2.5,
       "H": 47.3,
-      "oRing": "12.0×2.0"
+      "oRing": "12.0\u00d72.0"
      },
      "sourcePart": "20491-22-06T",
      "position": 8
@@ -5356,7 +5356,7 @@
      "hoseDash": 8,
      "hoseInch": "1/2\"",
      "hoseDn": 12,
-     "portLabel": "M22×1.5",
+     "portLabel": "M22\u00d71.5",
      "portDash": 22,
      "dimensions": {
       "OD": 15.0,
@@ -5364,7 +5364,7 @@
       "A": 41.0,
       "C": 2.5,
       "H": 61.0,
-      "oRing": "12.0×2.0"
+      "oRing": "12.0\u00d72.0"
      },
      "sourcePart": "20491-22-08",
      "position": 9
@@ -5374,7 +5374,7 @@
      "hoseDash": 8,
      "hoseInch": "1/2\"",
      "hoseDn": 12,
-     "portLabel": "M26×1.5",
+     "portLabel": "M26\u00d71.5",
      "portDash": 26,
      "dimensions": {
       "OD": 18.0,
@@ -5382,7 +5382,7 @@
       "A": 42.0,
       "C": 2.5,
       "H": 51.0,
-      "oRing": "15.0×2.0"
+      "oRing": "15.0\u00d72.0"
      },
      "sourcePart": "20491-26-08T",
      "position": 10
@@ -5392,7 +5392,7 @@
      "hoseDash": 10,
      "hoseInch": "5/8\"",
      "hoseDn": 16,
-     "portLabel": "M26×1.5",
+     "portLabel": "M26\u00d71.5",
      "portDash": 26,
      "dimensions": {
       "OD": 18.0,
@@ -5400,7 +5400,7 @@
       "A": 56.5,
       "C": 2.5,
       "H": 67.5,
-      "oRing": "15.0×2.0"
+      "oRing": "15.0\u00d72.0"
      },
      "sourcePart": "20491-26-10",
      "position": 11
@@ -5410,7 +5410,7 @@
      "hoseDash": 10,
      "hoseInch": "5/8\"",
      "hoseDn": 16,
-     "portLabel": "M27×1.5",
+     "portLabel": "M27\u00d71.5",
      "portDash": 27,
      "dimensions": {
       "OD": 18.0,
@@ -5418,7 +5418,7 @@
       "A": 56.5,
       "C": 2.5,
       "H": 67.5,
-      "oRing": "15.0×2.0"
+      "oRing": "15.0\u00d72.0"
      },
      "sourcePart": "20491-27-10T",
      "position": 12
@@ -5428,7 +5428,7 @@
      "hoseDash": 10,
      "hoseInch": "5/8\"",
      "hoseDn": 16,
-     "portLabel": "M30×2",
+     "portLabel": "M30\u00d72",
      "portDash": 30,
      "dimensions": {
       "OD": 22.0,
@@ -5436,7 +5436,7 @@
       "A": 56.5,
       "C": 4.0,
       "H": 57.2,
-      "oRing": "20.0×2.0"
+      "oRing": "20.0\u00d72.0"
      },
      "sourcePart": "20491-30-10T",
      "position": 13
@@ -5446,7 +5446,7 @@
      "hoseDash": 12,
      "hoseInch": "3/4\"",
      "hoseDn": 20,
-     "portLabel": "M26×1.5",
+     "portLabel": "M26\u00d71.5",
      "portDash": 26,
      "dimensions": {
       "OD": 18.0,
@@ -5454,7 +5454,7 @@
       "A": 65.5,
       "C": 2.5,
       "H": 77.0,
-      "oRing": "15.0×2.0"
+      "oRing": "15.0\u00d72.0"
      },
      "sourcePart": "20491-26-12",
      "position": 14
@@ -5464,7 +5464,7 @@
      "hoseDash": 12,
      "hoseInch": "3/4\"",
      "hoseDn": 20,
-     "portLabel": "M27×1.5",
+     "portLabel": "M27\u00d71.5",
      "portDash": 27,
      "dimensions": {
       "OD": 18.0,
@@ -5472,7 +5472,7 @@
       "A": 65.5,
       "C": 2.5,
       "H": 77.0,
-      "oRing": "15.0×2.0"
+      "oRing": "15.0\u00d72.0"
      },
      "sourcePart": "20491-27-12",
      "position": 15
@@ -5482,7 +5482,7 @@
      "hoseDash": 12,
      "hoseInch": "3/4\"",
      "hoseDn": 20,
-     "portLabel": "M30×2",
+     "portLabel": "M30\u00d72",
      "portDash": 30,
      "dimensions": {
       "OD": 22.0,
@@ -5490,7 +5490,7 @@
       "A": 65.5,
       "C": 4.0,
       "H": 80.0,
-      "oRing": "20.0×2.0"
+      "oRing": "20.0\u00d72.0"
      },
      "sourcePart": "20491-30-12",
      "position": 16
@@ -5500,7 +5500,7 @@
      "hoseDash": 12,
      "hoseInch": "3/4\"",
      "hoseDn": 20,
-     "portLabel": "M36×2",
+     "portLabel": "M36\u00d72",
      "portDash": 36,
      "dimensions": {
       "OD": 28.0,
@@ -5508,7 +5508,7 @@
       "A": 65.5,
       "C": 4.0,
       "H": 69.0,
-      "oRing": "26.0×2.0"
+      "oRing": "26.0\u00d72.0"
      },
      "sourcePart": "20491-36-12T",
      "position": 17
@@ -5518,7 +5518,7 @@
      "hoseDash": 14,
      "hoseInch": "7/8\"",
      "hoseDn": 22,
-     "portLabel": "M36×2",
+     "portLabel": "M36\u00d72",
      "portDash": 36,
      "dimensions": {
       "OD": 28.0,
@@ -5526,7 +5526,7 @@
       "A": 71.2,
       "C": 4.0,
       "H": 70.0,
-      "oRing": "26.0×2.0"
+      "oRing": "26.0\u00d72.0"
      },
      "sourcePart": "20491-36-14T",
      "position": 18
@@ -5536,7 +5536,7 @@
      "hoseDash": 16,
      "hoseInch": "1\"",
      "hoseDn": 32,
-     "portLabel": "M45×2",
+     "portLabel": "M45\u00d72",
      "portDash": 45,
      "dimensions": {
       "OD": 35.0,
@@ -5544,7 +5544,7 @@
       "A": 76.7,
       "C": 5.0,
       "H": 75.0,
-      "oRing": "32.0×2.5"
+      "oRing": "32.0\u00d72.5"
      },
      "sourcePart": "20491-45-16T",
      "position": 19
@@ -5554,7 +5554,7 @@
      "hoseDash": 20,
      "hoseInch": "1.1/4\"",
      "hoseDn": 32,
-     "portLabel": "M45×2",
+     "portLabel": "M45\u00d72",
      "portDash": 45,
      "dimensions": {
       "OD": 35.0,
@@ -5562,7 +5562,7 @@
       "A": 91.5,
       "C": 5.0,
       "H": 88.5,
-      "oRing": "32.0×2.5"
+      "oRing": "32.0\u00d72.5"
      },
      "sourcePart": "20491-45-20T",
      "position": 20
@@ -5572,7 +5572,7 @@
      "hoseDash": 20,
      "hoseInch": "1.1/4\"",
      "hoseDn": 32,
-     "portLabel": "M52×2",
+     "portLabel": "M52\u00d72",
      "portDash": 52,
      "dimensions": {
       "OD": 42.0,
@@ -5580,7 +5580,7 @@
       "A": 93.0,
       "C": 5.5,
       "H": 87.0,
-      "oRing": "38.0×2.5"
+      "oRing": "38.0\u00d72.5"
      },
      "sourcePart": "20491-52-20T",
      "position": 21
@@ -5590,7 +5590,7 @@
      "hoseDash": 24,
      "hoseInch": "1.1/2\"",
      "hoseDn": 40,
-     "portLabel": "M52×2",
+     "portLabel": "M52\u00d72",
      "portDash": 52,
      "dimensions": {
       "OD": 42.0,
@@ -5598,7 +5598,7 @@
       "A": 109.4,
       "C": 5.5,
       "H": 104.0,
-      "oRing": "38.0×2.5"
+      "oRing": "38.0\u00d72.5"
      },
      "sourcePart": "20491-52-24T",
      "position": 22
@@ -5849,7 +5849,7 @@
      "hoseDash": 4,
      "hoseInch": "1/4\"",
      "hoseDn": 6,
-     "portLabel": "M12×1.5",
+     "portLabel": "M12\u00d71.5",
      "portDash": 12,
      "dimensions": {
       "OD": 6.0,
@@ -5865,7 +5865,7 @@
      "hoseDash": 4,
      "hoseInch": "1/4\"",
      "hoseDn": 6,
-     "portLabel": "M14×1.5",
+     "portLabel": "M14\u00d71.5",
      "portDash": 14,
      "dimensions": {
       "OD": 8.0,
@@ -5881,7 +5881,7 @@
      "hoseDash": 4,
      "hoseInch": "1/4\"",
      "hoseDn": 6,
-     "portLabel": "M16×1.5",
+     "portLabel": "M16\u00d71.5",
      "portDash": 16,
      "dimensions": {
       "OD": 10.0,
@@ -5897,7 +5897,7 @@
      "hoseDash": 5,
      "hoseInch": "5/16\"",
      "hoseDn": 8,
-     "portLabel": "M14×1.5",
+     "portLabel": "M14\u00d71.5",
      "portDash": 14,
      "dimensions": {
       "OD": 8.0,
@@ -5913,7 +5913,7 @@
      "hoseDash": 5,
      "hoseInch": "5/16\"",
      "hoseDn": 8,
-     "portLabel": "M16×1.5",
+     "portLabel": "M16\u00d71.5",
      "portDash": 16,
      "dimensions": {
       "OD": 10.0,
@@ -5929,7 +5929,7 @@
      "hoseDash": 5,
      "hoseInch": "5/16\"",
      "hoseDn": 8,
-     "portLabel": "M18×1.5",
+     "portLabel": "M18\u00d71.5",
      "portDash": 18,
      "dimensions": {
       "OD": 12.0,
@@ -5945,7 +5945,7 @@
      "hoseDash": 6,
      "hoseInch": "3/8\"",
      "hoseDn": 10,
-     "portLabel": "M16×1.5",
+     "portLabel": "M16\u00d71.5",
      "portDash": 16,
      "dimensions": {
       "OD": 10.0,
@@ -5961,7 +5961,7 @@
      "hoseDash": 6,
      "hoseInch": "3/8\"",
      "hoseDn": 10,
-     "portLabel": "M18×1.5",
+     "portLabel": "M18\u00d71.5",
      "portDash": 18,
      "dimensions": {
       "OD": 12.0,
@@ -5977,7 +5977,7 @@
      "hoseDash": 6,
      "hoseInch": "3/8\"",
      "hoseDn": 10,
-     "portLabel": "M22×1.5",
+     "portLabel": "M22\u00d71.5",
      "portDash": 22,
      "dimensions": {
       "OD": 15.0,
@@ -5993,7 +5993,7 @@
      "hoseDash": 8,
      "hoseInch": "1/2\"",
      "hoseDn": 12,
-     "portLabel": "M22×1.5",
+     "portLabel": "M22\u00d71.5",
      "portDash": 22,
      "dimensions": {
       "OD": 15.0,
@@ -6009,7 +6009,7 @@
      "hoseDash": 8,
      "hoseInch": "1/2\"",
      "hoseDn": 12,
-     "portLabel": "M26×1.5",
+     "portLabel": "M26\u00d71.5",
      "portDash": 26,
      "dimensions": {
       "OD": 18.0,
@@ -6025,7 +6025,7 @@
      "hoseDash": 10,
      "hoseInch": "5/8\"",
      "hoseDn": 16,
-     "portLabel": "M26×1.5",
+     "portLabel": "M26\u00d71.5",
      "portDash": 26,
      "dimensions": {
       "OD": 18.0,
@@ -6041,7 +6041,7 @@
      "hoseDash": 10,
      "hoseInch": "5/8\"",
      "hoseDn": 16,
-     "portLabel": "M27×1.5",
+     "portLabel": "M27\u00d71.5",
      "portDash": 27,
      "dimensions": {
       "OD": 18.0,
@@ -6057,7 +6057,7 @@
      "hoseDash": 10,
      "hoseInch": "5/8\"",
      "hoseDn": 16,
-     "portLabel": "M30×2",
+     "portLabel": "M30\u00d72",
      "portDash": 30,
      "dimensions": {
       "OD": 22.0,
@@ -6073,7 +6073,7 @@
      "hoseDash": 12,
      "hoseInch": "3/4\"",
      "hoseDn": 20,
-     "portLabel": "M30×2",
+     "portLabel": "M30\u00d72",
      "portDash": 30,
      "dimensions": {
       "OD": 22.0,
@@ -6089,7 +6089,7 @@
      "hoseDash": 16,
      "hoseInch": "1\"",
      "hoseDn": 25,
-     "portLabel": "M36×2",
+     "portLabel": "M36\u00d72",
      "portDash": 36,
      "dimensions": {
       "OD": 28.0,
@@ -6105,7 +6105,7 @@
      "hoseDash": 20,
      "hoseInch": "1.1/4\"",
      "hoseDn": 32,
-     "portLabel": "M45×2",
+     "portLabel": "M45\u00d72",
      "portDash": 45,
      "dimensions": {
       "OD": 35.0,
@@ -6121,7 +6121,7 @@
      "hoseDash": 24,
      "hoseInch": "1.1/2\"",
      "hoseDn": 40,
-     "portLabel": "M52×2",
+     "portLabel": "M52\u00d72",
      "portDash": 52,
      "dimensions": {
       "OD": 42.0,
@@ -9153,7 +9153,7 @@
      "hoseDash": 8,
      "hoseInch": "1/2\"",
      "hoseDn": null,
-     "portLabel": "1/2\" M8×30 18.2",
+     "portLabel": "1/2\" M8\u00d730 18.2",
      "portDash": null,
      "dimensions": {
       "A": 56.3,
@@ -9169,7 +9169,7 @@
      "hoseDash": 12,
      "hoseInch": "3/4\"",
      "hoseDn": null,
-     "portLabel": "3/4\" M10×35 23.8",
+     "portLabel": "3/4\" M10\u00d735 23.8",
      "portDash": null,
      "dimensions": {
       "A": 71.4,
@@ -9185,7 +9185,7 @@
      "hoseDash": 16,
      "hoseInch": "1\"",
      "hoseDn": null,
-     "portLabel": "1\" M12×45 27.8",
+     "portLabel": "1\" M12\u00d745 27.8",
      "portDash": null,
      "dimensions": {
       "A": 81.0,
@@ -9201,7 +9201,7 @@
      "hoseDash": 20,
      "hoseInch": "1.1/4\"",
      "hoseDn": null,
-     "portLabel": "1.1/4\" M14×50 31.8",
+     "portLabel": "1.1/4\" M14\u00d750 31.8",
      "portDash": null,
      "dimensions": {
       "A": 95.3,
@@ -9217,7 +9217,7 @@
      "hoseDash": 24,
      "hoseInch": "1.1/2\"",
      "hoseDn": null,
-     "portLabel": "1.1/2\" M16×55 36.6 42",
+     "portLabel": "1.1/2\" M16\u00d755 36.6 42",
      "portDash": null,
      "dimensions": {
       "A": 112.8,
@@ -9233,7 +9233,7 @@
      "hoseDash": 32,
      "hoseInch": "2\"",
      "hoseDn": null,
-     "portLabel": "2\" M20×70 44.4",
+     "portLabel": "2\" M20\u00d770 44.4",
      "portDash": null,
      "dimensions": {
       "A": 133.4,
@@ -9257,7 +9257,7 @@
      "hoseDash": 3,
      "hoseInch": "3/16\"",
      "hoseDn": 5,
-     "portLabel": "7/16\"×20",
+     "portLabel": "7/16\"\u00d720",
      "portDash": 4,
      "dimensions": {
       "S2": 15.0,
@@ -9272,7 +9272,7 @@
      "hoseDash": 4,
      "hoseInch": "1/4\"",
      "hoseDn": 6,
-     "portLabel": "7/16\"×20",
+     "portLabel": "7/16\"\u00d720",
      "portDash": 4,
      "dimensions": {
       "S2": 15.0,
@@ -9287,7 +9287,7 @@
      "hoseDash": 4,
      "hoseInch": "1/4\"",
      "hoseDn": 6,
-     "portLabel": "1/2\"×20",
+     "portLabel": "1/2\"\u00d720",
      "portDash": 5,
      "dimensions": {
       "S2": 17.0,
@@ -9302,7 +9302,7 @@
      "hoseDash": 4,
      "hoseInch": "1/4\"",
      "hoseDn": 6,
-     "portLabel": "9/16\"×18",
+     "portLabel": "9/16\"\u00d718",
      "portDash": 6,
      "dimensions": {
       "S2": 19.0,
@@ -9317,7 +9317,7 @@
      "hoseDash": 5,
      "hoseInch": "5/16\"",
      "hoseDn": 8,
-     "portLabel": "1/2\"×20",
+     "portLabel": "1/2\"\u00d720",
      "portDash": 5,
      "dimensions": {
       "S2": 17.0,
@@ -9332,7 +9332,7 @@
      "hoseDash": 5,
      "hoseInch": "5/16\"",
      "hoseDn": 8,
-     "portLabel": "9/16\"×18",
+     "portLabel": "9/16\"\u00d718",
      "portDash": 6,
      "dimensions": {
       "S2": 19.0,
@@ -9347,7 +9347,7 @@
      "hoseDash": 6,
      "hoseInch": "3/8\"",
      "hoseDn": 10,
-     "portLabel": "1/2\"×20",
+     "portLabel": "1/2\"\u00d720",
      "portDash": 5,
      "dimensions": {
       "S2": 17.0,
@@ -9362,7 +9362,7 @@
      "hoseDash": 6,
      "hoseInch": "3/8\"",
      "hoseDn": 10,
-     "portLabel": "9/16\"×18",
+     "portLabel": "9/16\"\u00d718",
      "portDash": 6,
      "dimensions": {
       "S2": 19.0,
@@ -9377,7 +9377,7 @@
      "hoseDash": 6,
      "hoseInch": "3/8\"",
      "hoseDn": 10,
-     "portLabel": "3/4\"×16",
+     "portLabel": "3/4\"\u00d716",
      "portDash": 8,
      "dimensions": {
       "S2": 24.0,
@@ -9392,7 +9392,7 @@
      "hoseDash": 8,
      "hoseInch": "1/2\"",
      "hoseDn": 12,
-     "portLabel": "9/16\"×18",
+     "portLabel": "9/16\"\u00d718",
      "portDash": 6,
      "dimensions": {
       "S2": 19.0,
@@ -9407,7 +9407,7 @@
      "hoseDash": 8,
      "hoseInch": "1/2\"",
      "hoseDn": 12,
-     "portLabel": "3/4\"×16",
+     "portLabel": "3/4\"\u00d716",
      "portDash": 8,
      "dimensions": {
       "S2": 24.0,
@@ -9422,7 +9422,7 @@
      "hoseDash": 8,
      "hoseInch": "1/2\"",
      "hoseDn": 12,
-     "portLabel": "7/8\"×14",
+     "portLabel": "7/8\"\u00d714",
      "portDash": 10,
      "dimensions": {
       "S2": 27.0,
@@ -9437,7 +9437,7 @@
      "hoseDash": 8,
      "hoseInch": "1/2\"",
      "hoseDn": 12,
-     "portLabel": "1.1/16\"×12",
+     "portLabel": "1.1/16\"\u00d712",
      "portDash": 12,
      "dimensions": {
       "S2": 32.0,
@@ -9452,7 +9452,7 @@
      "hoseDash": 10,
      "hoseInch": "5/8\"",
      "hoseDn": 16,
-     "portLabel": "3/4\"×16",
+     "portLabel": "3/4\"\u00d716",
      "portDash": 8,
      "dimensions": {
       "S2": 24.0,
@@ -9467,7 +9467,7 @@
      "hoseDash": 10,
      "hoseInch": "5/8\"",
      "hoseDn": 16,
-     "portLabel": "7/8\"×14",
+     "portLabel": "7/8\"\u00d714",
      "portDash": 10,
      "dimensions": {
       "S2": 27.0,
@@ -9482,7 +9482,7 @@
      "hoseDash": 10,
      "hoseInch": "5/8\"",
      "hoseDn": 16,
-     "portLabel": "1.1/16\"×12",
+     "portLabel": "1.1/16\"\u00d712",
      "portDash": 12,
      "dimensions": {
       "S2": 32.0,
@@ -9497,7 +9497,7 @@
      "hoseDash": 12,
      "hoseInch": "3/4\"",
      "hoseDn": 20,
-     "portLabel": "7/8\"×14",
+     "portLabel": "7/8\"\u00d714",
      "portDash": 10,
      "dimensions": {
       "S2": 27.0,
@@ -9512,7 +9512,7 @@
      "hoseDash": 12,
      "hoseInch": "3/4\"",
      "hoseDn": 20,
-     "portLabel": "1.1/16\"×12",
+     "portLabel": "1.1/16\"\u00d712",
      "portDash": 12,
      "dimensions": {
       "S2": 32.0,
@@ -9527,7 +9527,7 @@
      "hoseDash": 12,
      "hoseInch": "3/4\"",
      "hoseDn": 20,
-     "portLabel": "1.3/16\"×12",
+     "portLabel": "1.3/16\"\u00d712",
      "portDash": 14,
      "dimensions": {
       "S2": 36.0,
@@ -9542,7 +9542,7 @@
      "hoseDash": 12,
      "hoseInch": "3/4\"",
      "hoseDn": 20,
-     "portLabel": "1.5/16\"×12",
+     "portLabel": "1.5/16\"\u00d712",
      "portDash": 16,
      "dimensions": {
       "S2": 41.0,
@@ -9557,7 +9557,7 @@
      "hoseDash": 16,
      "hoseInch": "1\"",
      "hoseDn": 25,
-     "portLabel": "1.1/16\"×12",
+     "portLabel": "1.1/16\"\u00d712",
      "portDash": 12,
      "dimensions": {
       "S2": 32.0,
@@ -9572,7 +9572,7 @@
      "hoseDash": 16,
      "hoseInch": "1\"",
      "hoseDn": 25,
-     "portLabel": "1.5/16\"×12",
+     "portLabel": "1.5/16\"\u00d712",
      "portDash": 16,
      "dimensions": {
       "S2": 41.0,
@@ -9587,7 +9587,7 @@
      "hoseDash": 16,
      "hoseInch": "1\"",
      "hoseDn": 25,
-     "portLabel": "1.5/8\"×12",
+     "portLabel": "1.5/8\"\u00d712",
      "portDash": 20,
      "dimensions": {
       "S2": 50.0,
@@ -9602,7 +9602,7 @@
      "hoseDash": 20,
      "hoseInch": "1.1/4\"",
      "hoseDn": 32,
-     "portLabel": "1.5/16\"×12",
+     "portLabel": "1.5/16\"\u00d712",
      "portDash": 16,
      "dimensions": {
       "S2": 41.0,
@@ -9617,7 +9617,7 @@
      "hoseDash": 20,
      "hoseInch": "1.1/4\"",
      "hoseDn": 32,
-     "portLabel": "1.5/8\"×12",
+     "portLabel": "1.5/8\"\u00d712",
      "portDash": 20,
      "dimensions": {
       "S2": 50.0,
@@ -9632,7 +9632,7 @@
      "hoseDash": 20,
      "hoseInch": "1.1/4\"",
      "hoseDn": 32,
-     "portLabel": "1.7/8\"×12",
+     "portLabel": "1.7/8\"\u00d712",
      "portDash": 24,
      "dimensions": {
       "S2": 55.0,
@@ -9647,7 +9647,7 @@
      "hoseDash": 24,
      "hoseInch": "1.1/2\"",
      "hoseDn": 40,
-     "portLabel": "1.7/8\"×12",
+     "portLabel": "1.7/8\"\u00d712",
      "portDash": 24,
      "dimensions": {
       "S2": 55.0,
@@ -9662,7 +9662,7 @@
      "hoseDash": 24,
      "hoseInch": "1.1/2\"",
      "hoseDn": 40,
-     "portLabel": "2.1/2\"×12",
+     "portLabel": "2.1/2\"\u00d712",
      "portDash": 32,
      "dimensions": {
       "S2": 75.0,
@@ -9677,7 +9677,7 @@
      "hoseDash": 32,
      "hoseInch": "2\"",
      "hoseDn": 50,
-     "portLabel": "2.1/2\"×12",
+     "portLabel": "2.1/2\"\u00d712",
      "portDash": 32,
      "dimensions": {
       "S2": 75.0,
@@ -9700,7 +9700,7 @@
      "hoseDash": 3,
      "hoseInch": "3/16\"",
      "hoseDn": 5,
-     "portLabel": "7/16\"×20",
+     "portLabel": "7/16\"\u00d720",
      "portDash": 4,
      "dimensions": {
       "S2": 15.0,
@@ -9716,7 +9716,7 @@
      "hoseDash": 4,
      "hoseInch": "1/4\"",
      "hoseDn": 6,
-     "portLabel": "7/16\"×20",
+     "portLabel": "7/16\"\u00d720",
      "portDash": 4,
      "dimensions": {
       "S2": 15.0,
@@ -9732,7 +9732,7 @@
      "hoseDash": 4,
      "hoseInch": "1/4\"",
      "hoseDn": 6,
-     "portLabel": "1/2\"×20",
+     "portLabel": "1/2\"\u00d720",
      "portDash": 5,
      "dimensions": {
       "S2": 17.0,
@@ -9748,7 +9748,7 @@
      "hoseDash": 4,
      "hoseInch": "1/4\"",
      "hoseDn": 6,
-     "portLabel": "9/16\"×18",
+     "portLabel": "9/16\"\u00d718",
      "portDash": 6,
      "dimensions": {
       "S2": 19.0,
@@ -9764,7 +9764,7 @@
      "hoseDash": 5,
      "hoseInch": "5/16\"",
      "hoseDn": 8,
-     "portLabel": "1/2\"×20",
+     "portLabel": "1/2\"\u00d720",
      "portDash": 5,
      "dimensions": {
       "S2": 17.0,
@@ -9780,7 +9780,7 @@
      "hoseDash": 5,
      "hoseInch": "5/16\"",
      "hoseDn": 8,
-     "portLabel": "9/16\"×18",
+     "portLabel": "9/16\"\u00d718",
      "portDash": 6,
      "dimensions": {
       "S2": 19.0,
@@ -9796,7 +9796,7 @@
      "hoseDash": 6,
      "hoseInch": "3/8\"",
      "hoseDn": 10,
-     "portLabel": "1/2\"×20",
+     "portLabel": "1/2\"\u00d720",
      "portDash": 5,
      "dimensions": {
       "S2": 17.0,
@@ -9812,7 +9812,7 @@
      "hoseDash": 6,
      "hoseInch": "3/8\"",
      "hoseDn": 10,
-     "portLabel": "9/16\"×18",
+     "portLabel": "9/16\"\u00d718",
      "portDash": 6,
      "dimensions": {
       "S2": 19.0,
@@ -9828,7 +9828,7 @@
      "hoseDash": 6,
      "hoseInch": "3/8\"",
      "hoseDn": 10,
-     "portLabel": "3/4\"×16",
+     "portLabel": "3/4\"\u00d716",
      "portDash": 8,
      "dimensions": {
       "S2": 24.0,
@@ -9844,7 +9844,7 @@
      "hoseDash": 8,
      "hoseInch": "1/2\"",
      "hoseDn": 12,
-     "portLabel": "9/16\"×18",
+     "portLabel": "9/16\"\u00d718",
      "portDash": 6,
      "dimensions": {
       "S2": 19.0,
@@ -9860,7 +9860,7 @@
      "hoseDash": 8,
      "hoseInch": "1/2\"",
      "hoseDn": 12,
-     "portLabel": "3/4\"×16",
+     "portLabel": "3/4\"\u00d716",
      "portDash": 8,
      "dimensions": {
       "S2": 24.0,
@@ -9876,7 +9876,7 @@
      "hoseDash": 8,
      "hoseInch": "1/2\"",
      "hoseDn": 12,
-     "portLabel": "7/8\"×14",
+     "portLabel": "7/8\"\u00d714",
      "portDash": 10,
      "dimensions": {
       "S2": 27.0,
@@ -9892,7 +9892,7 @@
      "hoseDash": 8,
      "hoseInch": "1/2\"",
      "hoseDn": 12,
-     "portLabel": "1.1/16\"×12",
+     "portLabel": "1.1/16\"\u00d712",
      "portDash": 12,
      "dimensions": {
       "S2": 32.0,
@@ -9908,7 +9908,7 @@
      "hoseDash": 10,
      "hoseInch": "5/8\"",
      "hoseDn": 16,
-     "portLabel": "7/8\"×14",
+     "portLabel": "7/8\"\u00d714",
      "portDash": 10,
      "dimensions": {
       "S2": 27.0,
@@ -9924,7 +9924,7 @@
      "hoseDash": 10,
      "hoseInch": "5/8\"",
      "hoseDn": 16,
-     "portLabel": "1.1/16\"×12",
+     "portLabel": "1.1/16\"\u00d712",
      "portDash": 12,
      "dimensions": {
       "S2": 32.0,
@@ -9940,7 +9940,7 @@
      "hoseDash": 12,
      "hoseInch": "3/4\"",
      "hoseDn": 20,
-     "portLabel": "7/8\"×14",
+     "portLabel": "7/8\"\u00d714",
      "portDash": 10,
      "dimensions": {
       "S2": 27.0,
@@ -9956,7 +9956,7 @@
      "hoseDash": 12,
      "hoseInch": "3/4\"",
      "hoseDn": 20,
-     "portLabel": "1.1/16\"×12",
+     "portLabel": "1.1/16\"\u00d712",
      "portDash": 12,
      "dimensions": {
       "S2": 32.0,
@@ -9972,7 +9972,7 @@
      "hoseDash": 12,
      "hoseInch": "3/4\"",
      "hoseDn": 20,
-     "portLabel": "1.3/16\"×12",
+     "portLabel": "1.3/16\"\u00d712",
      "portDash": 14,
      "dimensions": {
       "S2": 36.0,
@@ -9988,7 +9988,7 @@
      "hoseDash": 12,
      "hoseInch": "3/4\"",
      "hoseDn": 20,
-     "portLabel": "1.5/16\"×12",
+     "portLabel": "1.5/16\"\u00d712",
      "portDash": 16,
      "dimensions": {
       "S2": 41.0,
@@ -10004,7 +10004,7 @@
      "hoseDash": 16,
      "hoseInch": "1\"",
      "hoseDn": 25,
-     "portLabel": "1.1/16\"×12",
+     "portLabel": "1.1/16\"\u00d712",
      "portDash": 12,
      "dimensions": {
       "S2": 32.0,
@@ -10020,7 +10020,7 @@
      "hoseDash": 16,
      "hoseInch": "1\"",
      "hoseDn": 25,
-     "portLabel": "1.5/16\"×12",
+     "portLabel": "1.5/16\"\u00d712",
      "portDash": 16,
      "dimensions": {
       "S2": 41.0,
@@ -10036,7 +10036,7 @@
      "hoseDash": 20,
      "hoseInch": "1.1/4\"",
      "hoseDn": 32,
-     "portLabel": "1.5/16\"×12",
+     "portLabel": "1.5/16\"\u00d712",
      "portDash": 16,
      "dimensions": {
       "S2": 41.0,
@@ -10052,7 +10052,7 @@
      "hoseDash": 20,
      "hoseInch": "1.1/4\"",
      "hoseDn": 32,
-     "portLabel": "1.5/8\"×12",
+     "portLabel": "1.5/8\"\u00d712",
      "portDash": 20,
      "dimensions": {
       "S2": 50.0,
@@ -10068,7 +10068,7 @@
      "hoseDash": 20,
      "hoseInch": "1.1/4\"",
      "hoseDn": 32,
-     "portLabel": "1.7/8\"×12",
+     "portLabel": "1.7/8\"\u00d712",
      "portDash": 24,
      "dimensions": {
       "S2": 55.0,
@@ -10084,7 +10084,7 @@
      "hoseDash": 24,
      "hoseInch": "1.1/2\"",
      "hoseDn": 40,
-     "portLabel": "1.7/8\"×12",
+     "portLabel": "1.7/8\"\u00d712",
      "portDash": 24,
      "dimensions": {
       "S2": 55.0,
@@ -10100,7 +10100,7 @@
      "hoseDash": 32,
      "hoseInch": "2\"",
      "hoseDn": 50,
-     "portLabel": "2.1/2\"×12",
+     "portLabel": "2.1/2\"\u00d712",
      "portDash": 32,
      "dimensions": {
       "S2": 75.0,
@@ -10124,7 +10124,7 @@
      "hoseDash": 3,
      "hoseInch": "3/16\"",
      "hoseDn": 5,
-     "portLabel": "7/16\"×20",
+     "portLabel": "7/16\"\u00d720",
      "portDash": 4,
      "dimensions": {
       "S2": 15.0,
@@ -10140,7 +10140,7 @@
      "hoseDash": 4,
      "hoseInch": "1/4\"",
      "hoseDn": 6,
-     "portLabel": "7/16\"×20",
+     "portLabel": "7/16\"\u00d720",
      "portDash": 4,
      "dimensions": {
       "S2": 15.0,
@@ -10156,7 +10156,7 @@
      "hoseDash": 4,
      "hoseInch": "1/4\"",
      "hoseDn": 6,
-     "portLabel": "1/2\"×20",
+     "portLabel": "1/2\"\u00d720",
      "portDash": 5,
      "dimensions": {
       "S2": 17.0,
@@ -10172,7 +10172,7 @@
      "hoseDash": 4,
      "hoseInch": "1/4\"",
      "hoseDn": 6,
-     "portLabel": "9/16\"×18",
+     "portLabel": "9/16\"\u00d718",
      "portDash": 6,
      "dimensions": {
       "S2": 19.0,
@@ -10188,7 +10188,7 @@
      "hoseDash": 5,
      "hoseInch": "5/16\"",
      "hoseDn": 8,
-     "portLabel": "1/2\"×20",
+     "portLabel": "1/2\"\u00d720",
      "portDash": 5,
      "dimensions": {
       "S2": 17.0,
@@ -10204,7 +10204,7 @@
      "hoseDash": 5,
      "hoseInch": "5/16\"",
      "hoseDn": 8,
-     "portLabel": "9/16\"×18",
+     "portLabel": "9/16\"\u00d718",
      "portDash": 6,
      "dimensions": {
       "S2": 19.0,
@@ -10220,7 +10220,7 @@
      "hoseDash": 6,
      "hoseInch": "3/8\"",
      "hoseDn": 10,
-     "portLabel": "1/2\"×20",
+     "portLabel": "1/2\"\u00d720",
      "portDash": 5,
      "dimensions": {
       "S2": 17.0,
@@ -10236,7 +10236,7 @@
      "hoseDash": 6,
      "hoseInch": "3/8\"",
      "hoseDn": 10,
-     "portLabel": "9/16\"×18",
+     "portLabel": "9/16\"\u00d718",
      "portDash": 6,
      "dimensions": {
       "S2": 19.0,
@@ -10252,7 +10252,7 @@
      "hoseDash": 6,
      "hoseInch": "3/8\"",
      "hoseDn": 10,
-     "portLabel": "3/4\"×16",
+     "portLabel": "3/4\"\u00d716",
      "portDash": 8,
      "dimensions": {
       "S2": 24.0,
@@ -10268,7 +10268,7 @@
      "hoseDash": 8,
      "hoseInch": "1/2\"",
      "hoseDn": 12,
-     "portLabel": "9/16\"×18",
+     "portLabel": "9/16\"\u00d718",
      "portDash": 6,
      "dimensions": {
       "S2": 19.0,
@@ -10284,7 +10284,7 @@
      "hoseDash": 8,
      "hoseInch": "1/2\"",
      "hoseDn": 12,
-     "portLabel": "3/4\"×16",
+     "portLabel": "3/4\"\u00d716",
      "portDash": 8,
      "dimensions": {
       "S2": 24.0,
@@ -10300,7 +10300,7 @@
      "hoseDash": 8,
      "hoseInch": "1/2\"",
      "hoseDn": 12,
-     "portLabel": "7/8\"×14",
+     "portLabel": "7/8\"\u00d714",
      "portDash": 10,
      "dimensions": {
       "S2": 27.0,
@@ -10316,7 +10316,7 @@
      "hoseDash": 8,
      "hoseInch": "1/2\"",
      "hoseDn": 12,
-     "portLabel": "1.1/16\"×12",
+     "portLabel": "1.1/16\"\u00d712",
      "portDash": 12,
      "dimensions": {
       "S2": 32.0,
@@ -10332,7 +10332,7 @@
      "hoseDash": 10,
      "hoseInch": "5/8\"",
      "hoseDn": 16,
-     "portLabel": "3/4\"×16",
+     "portLabel": "3/4\"\u00d716",
      "portDash": 8,
      "dimensions": {
       "S2": 24.0,
@@ -10348,7 +10348,7 @@
      "hoseDash": 10,
      "hoseInch": "5/8\"",
      "hoseDn": 16,
-     "portLabel": "7/8\"×14",
+     "portLabel": "7/8\"\u00d714",
      "portDash": 10,
      "dimensions": {
       "S2": 27.0,
@@ -10364,7 +10364,7 @@
      "hoseDash": 10,
      "hoseInch": "5/8\"",
      "hoseDn": 16,
-     "portLabel": "1.1/16\"×12",
+     "portLabel": "1.1/16\"\u00d712",
      "portDash": 12,
      "dimensions": {
       "S2": 32.0,
@@ -10380,7 +10380,7 @@
      "hoseDash": 12,
      "hoseInch": "3/4\"",
      "hoseDn": 20,
-     "portLabel": "7/8\"×14",
+     "portLabel": "7/8\"\u00d714",
      "portDash": 10,
      "dimensions": {
       "S2": 27.0,
@@ -10396,7 +10396,7 @@
      "hoseDash": 12,
      "hoseInch": "3/4\"",
      "hoseDn": 20,
-     "portLabel": "1.1/16\"×12",
+     "portLabel": "1.1/16\"\u00d712",
      "portDash": 12,
      "dimensions": {
       "S2": 32.0,
@@ -10412,7 +10412,7 @@
      "hoseDash": 12,
      "hoseInch": "3/4\"",
      "hoseDn": 20,
-     "portLabel": "1.3/16\"×12",
+     "portLabel": "1.3/16\"\u00d712",
      "portDash": 14,
      "dimensions": {
       "S2": 36.0,
@@ -10428,7 +10428,7 @@
      "hoseDash": 12,
      "hoseInch": "3/4\"",
      "hoseDn": 20,
-     "portLabel": "1.5/16\"×12",
+     "portLabel": "1.5/16\"\u00d712",
      "portDash": 16,
      "dimensions": {
       "S2": 41.0,
@@ -10444,7 +10444,7 @@
      "hoseDash": 16,
      "hoseInch": "1\"",
      "hoseDn": 25,
-     "portLabel": "1.1/16\"×12",
+     "portLabel": "1.1/16\"\u00d712",
      "portDash": 12,
      "dimensions": {
       "S2": 32.0,
@@ -10460,7 +10460,7 @@
      "hoseDash": 16,
      "hoseInch": "1\"",
      "hoseDn": 25,
-     "portLabel": "1.5/16\"×12",
+     "portLabel": "1.5/16\"\u00d712",
      "portDash": 16,
      "dimensions": {
       "S2": 41.0,
@@ -10476,7 +10476,7 @@
      "hoseDash": 20,
      "hoseInch": "1.1/4\"",
      "hoseDn": 32,
-     "portLabel": "1.5/16\"×12",
+     "portLabel": "1.5/16\"\u00d712",
      "portDash": 16,
      "dimensions": {
       "S2": 41.0,
@@ -10492,7 +10492,7 @@
      "hoseDash": 20,
      "hoseInch": "1.1/4\"",
      "hoseDn": 32,
-     "portLabel": "1.5/8\"×12",
+     "portLabel": "1.5/8\"\u00d712",
      "portDash": 20,
      "dimensions": {
       "S2": 50.0,
@@ -10508,7 +10508,7 @@
      "hoseDash": 20,
      "hoseInch": "1.1/4\"",
      "hoseDn": 32,
-     "portLabel": "1.7/8\"×12",
+     "portLabel": "1.7/8\"\u00d712",
      "portDash": 24,
      "dimensions": {
       "S2": 55.0,
@@ -10524,7 +10524,7 @@
      "hoseDash": 24,
      "hoseInch": "1.1/2\"",
      "hoseDn": 40,
-     "portLabel": "1.7/8\"×12",
+     "portLabel": "1.7/8\"\u00d712",
      "portDash": 24,
      "dimensions": {
       "S2": 55.0,
@@ -10540,7 +10540,7 @@
      "hoseDash": 32,
      "hoseInch": "2\"",
      "hoseDn": 50,
-     "portLabel": "2.1/2\"×12",
+     "portLabel": "2.1/2\"\u00d712",
      "portDash": 32,
      "dimensions": {
       "S2": 75.0,
@@ -10564,7 +10564,7 @@
      "hoseDash": 4,
      "hoseInch": "1/4\"",
      "hoseDn": 6,
-     "portLabel": "7/16\"×20",
+     "portLabel": "7/16\"\u00d720",
      "portDash": 4,
      "dimensions": {
       "S1": 11.0,
@@ -10581,7 +10581,7 @@
      "hoseDash": 4,
      "hoseInch": "1/4\"",
      "hoseDn": 6,
-     "portLabel": "9/16\"×18",
+     "portLabel": "9/16\"\u00d718",
      "portDash": 6,
      "dimensions": {
       "S1": 14.0,
@@ -10598,7 +10598,7 @@
      "hoseDash": 6,
      "hoseInch": "3/8\"",
      "hoseDn": 10,
-     "portLabel": "9/16\"×18",
+     "portLabel": "9/16\"\u00d718",
      "portDash": 6,
      "dimensions": {
       "S1": 16.0,
@@ -10615,7 +10615,7 @@
      "hoseDash": 6,
      "hoseInch": "3/8\"",
      "hoseDn": 10,
-     "portLabel": "3/4\"×16",
+     "portLabel": "3/4\"\u00d716",
      "portDash": 8,
      "dimensions": {
       "S1": 19.0,
@@ -10632,7 +10632,7 @@
      "hoseDash": 8,
      "hoseInch": "1/2\"",
      "hoseDn": 12,
-     "portLabel": "3/4\"×16",
+     "portLabel": "3/4\"\u00d716",
      "portDash": 8,
      "dimensions": {
       "S1": 22.0,
@@ -10649,7 +10649,7 @@
      "hoseDash": 8,
      "hoseInch": "1/2\"",
      "hoseDn": 12,
-     "portLabel": "7/8\"×14",
+     "portLabel": "7/8\"\u00d714",
      "portDash": 10,
      "dimensions": {
       "S1": 22.0,
@@ -10666,7 +10666,7 @@
      "hoseDash": 10,
      "hoseInch": "5/8\"",
      "hoseDn": 16,
-     "portLabel": "7/8\"×14",
+     "portLabel": "7/8\"\u00d714",
      "portDash": 10,
      "dimensions": {
       "S1": 22.0,
@@ -10683,7 +10683,7 @@
      "hoseDash": 12,
      "hoseInch": "3/4\"",
      "hoseDn": 20,
-     "portLabel": "1.1/16\"×12",
+     "portLabel": "1.1/16\"\u00d712",
      "portDash": 12,
      "dimensions": {
       "S1": 27.0,
@@ -10700,7 +10700,7 @@
      "hoseDash": 16,
      "hoseInch": "1\"",
      "hoseDn": 25,
-     "portLabel": "1.5/16\"×12",
+     "portLabel": "1.5/16\"\u00d712",
      "portDash": 16,
      "dimensions": {
       "S1": 33.0,
@@ -10725,7 +10725,7 @@
      "hoseDash": 3,
      "hoseInch": "3/16\"",
      "hoseDn": 5,
-     "portLabel": "7/16\"×20",
+     "portLabel": "7/16\"\u00d720",
      "portDash": 4,
      "dimensions": {
       "S1": 12.0,
@@ -10740,7 +10740,7 @@
      "hoseDash": 4,
      "hoseInch": "1/4\"",
      "hoseDn": 6,
-     "portLabel": "7/16\"×20",
+     "portLabel": "7/16\"\u00d720",
      "portDash": 4,
      "dimensions": {
       "S1": 12.0,
@@ -10755,7 +10755,7 @@
      "hoseDash": 4,
      "hoseInch": "1/4\"",
      "hoseDn": 6,
-     "portLabel": "1/2\"×20",
+     "portLabel": "1/2\"\u00d720",
      "portDash": 5,
      "dimensions": {
       "S1": 14.0,
@@ -10770,7 +10770,7 @@
      "hoseDash": 4,
      "hoseInch": "1/4\"",
      "hoseDn": 6,
-     "portLabel": "9/16\"×18",
+     "portLabel": "9/16\"\u00d718",
      "portDash": 6,
      "dimensions": {
       "S1": 17.0,
@@ -10785,7 +10785,7 @@
      "hoseDash": 5,
      "hoseInch": "5/16\"",
      "hoseDn": 8,
-     "portLabel": "1/2\"×20",
+     "portLabel": "1/2\"\u00d720",
      "portDash": 5,
      "dimensions": {
       "S1": 14.0,
@@ -10800,7 +10800,7 @@
      "hoseDash": 5,
      "hoseInch": "5/16\"",
      "hoseDn": 8,
-     "portLabel": "9/16\"×18",
+     "portLabel": "9/16\"\u00d718",
      "portDash": 6,
      "dimensions": {
       "S1": 17.0,
@@ -10815,7 +10815,7 @@
      "hoseDash": 6,
      "hoseInch": "3/8\"",
      "hoseDn": 10,
-     "portLabel": "1/2\"×20",
+     "portLabel": "1/2\"\u00d720",
      "portDash": 5,
      "dimensions": {
       "S1": 17.0,
@@ -10830,7 +10830,7 @@
      "hoseDash": 6,
      "hoseInch": "3/8\"",
      "hoseDn": 10,
-     "portLabel": "9/16\"×18",
+     "portLabel": "9/16\"\u00d718",
      "portDash": 6,
      "dimensions": {
       "S1": 17.0,
@@ -10845,7 +10845,7 @@
      "hoseDash": 6,
      "hoseInch": "3/8\"",
      "hoseDn": 10,
-     "portLabel": "3/4\"×16",
+     "portLabel": "3/4\"\u00d716",
      "portDash": 8,
      "dimensions": {
       "S1": 22.0,
@@ -10860,7 +10860,7 @@
      "hoseDash": 6,
      "hoseInch": "3/8\"",
      "hoseDn": 10,
-     "portLabel": "7/8\"×14",
+     "portLabel": "7/8\"\u00d714",
      "portDash": 10,
      "dimensions": {
       "S1": 24.0,
@@ -10875,7 +10875,7 @@
      "hoseDash": 8,
      "hoseInch": "1/2\"",
      "hoseDn": 12,
-     "portLabel": "3/4\"×16",
+     "portLabel": "3/4\"\u00d716",
      "portDash": 8,
      "dimensions": {
       "S1": 22.0,
@@ -10890,7 +10890,7 @@
      "hoseDash": 8,
      "hoseInch": "1/2\"",
      "hoseDn": 12,
-     "portLabel": "7/8\"×14",
+     "portLabel": "7/8\"\u00d714",
      "portDash": 10,
      "dimensions": {
       "S1": 24.0,
@@ -10905,7 +10905,7 @@
      "hoseDash": 8,
      "hoseInch": "1/2\"",
      "hoseDn": 12,
-     "portLabel": "1.1/16\"×12",
+     "portLabel": "1.1/16\"\u00d712",
      "portDash": 12,
      "dimensions": {
       "S1": 27.0,
@@ -10920,7 +10920,7 @@
      "hoseDash": 10,
      "hoseInch": "5/8\"",
      "hoseDn": 16,
-     "portLabel": "7/8\"×14",
+     "portLabel": "7/8\"\u00d714",
      "portDash": 10,
      "dimensions": {
       "S1": 24.0,
@@ -10935,7 +10935,7 @@
      "hoseDash": 10,
      "hoseInch": "5/8\"",
      "hoseDn": 16,
-     "portLabel": "1.1/16\"×12",
+     "portLabel": "1.1/16\"\u00d712",
      "portDash": 12,
      "dimensions": {
       "S1": 27.0,
@@ -10950,7 +10950,7 @@
      "hoseDash": 10,
      "hoseInch": "5/8\"",
      "hoseDn": 16,
-     "portLabel": "1.3/16\"×12",
+     "portLabel": "1.3/16\"\u00d712",
      "portDash": 14,
      "dimensions": {
       "S1": 32.0,
@@ -10965,7 +10965,7 @@
      "hoseDash": 12,
      "hoseInch": "3/4\"",
      "hoseDn": 20,
-     "portLabel": "1.1/16\"×12",
+     "portLabel": "1.1/16\"\u00d712",
      "portDash": 12,
      "dimensions": {
       "S1": 27.0,
@@ -10980,7 +10980,7 @@
      "hoseDash": 12,
      "hoseInch": "3/4\"",
      "hoseDn": 20,
-     "portLabel": "1.3/16\"×12",
+     "portLabel": "1.3/16\"\u00d712",
      "portDash": 14,
      "dimensions": {
       "S1": 32.0,
@@ -10995,7 +10995,7 @@
      "hoseDash": 12,
      "hoseInch": "3/4\"",
      "hoseDn": 20,
-     "portLabel": "1.5/16\"×12",
+     "portLabel": "1.5/16\"\u00d712",
      "portDash": 16,
      "dimensions": {
       "S1": 36.0,
@@ -11010,7 +11010,7 @@
      "hoseDash": 16,
      "hoseInch": "1\"",
      "hoseDn": 25,
-     "portLabel": "1.1/16\"×12",
+     "portLabel": "1.1/16\"\u00d712",
      "portDash": 12,
      "dimensions": {
       "S1": 30.0,
@@ -11025,7 +11025,7 @@
      "hoseDash": 16,
      "hoseInch": "1\"",
      "hoseDn": 25,
-     "portLabel": "1.5/16\"×12",
+     "portLabel": "1.5/16\"\u00d712",
      "portDash": 16,
      "dimensions": {
       "S1": 36.0,
@@ -11040,7 +11040,7 @@
      "hoseDash": 16,
      "hoseInch": "1\"",
      "hoseDn": 25,
-     "portLabel": "1.5/8\"×12",
+     "portLabel": "1.5/8\"\u00d712",
      "portDash": 20,
      "dimensions": {
       "S1": 46.0,
@@ -11055,7 +11055,7 @@
      "hoseDash": 20,
      "hoseInch": "1.1/4\"",
      "hoseDn": 32,
-     "portLabel": "1.5/8\"×12",
+     "portLabel": "1.5/8\"\u00d712",
      "portDash": 20,
      "dimensions": {
       "S1": 46.0,
@@ -11070,7 +11070,7 @@
      "hoseDash": 20,
      "hoseInch": "1.1/4\"",
      "hoseDn": 32,
-     "portLabel": "1.7/8\"×12",
+     "portLabel": "1.7/8\"\u00d712",
      "portDash": 24,
      "dimensions": {
       "S1": 50.0,
@@ -11085,7 +11085,7 @@
      "hoseDash": 24,
      "hoseInch": "1.1/2\"",
      "hoseDn": 40,
-     "portLabel": "1.7/8\"×12",
+     "portLabel": "1.7/8\"\u00d712",
      "portDash": 24,
      "dimensions": {
       "S1": 50.0,
@@ -11100,7 +11100,7 @@
      "hoseDash": 32,
      "hoseInch": "2\"",
      "hoseDn": 50,
-     "portLabel": "2.1/2\"×12",
+     "portLabel": "2.1/2\"\u00d712",
      "portDash": 32,
      "dimensions": {
       "S1": 65.0,
@@ -11123,7 +11123,7 @@
      "hoseDash": 4,
      "hoseInch": "1/4\"",
      "hoseDn": 6,
-     "portLabel": "M12×1.5",
+     "portLabel": "M12\u00d71.5",
      "portDash": 12,
      "dimensions": {
       "S1": 17.0,
@@ -11139,7 +11139,7 @@
      "hoseDash": 4,
      "hoseInch": "1/4\"",
      "hoseDn": 6,
-     "portLabel": "M14×1.5",
+     "portLabel": "M14\u00d71.5",
      "portDash": 14,
      "dimensions": {
       "S1": 19.0,
@@ -11155,7 +11155,7 @@
      "hoseDash": 4,
      "hoseInch": "1/4\"",
      "hoseDn": 6,
-     "portLabel": "M16×1.5",
+     "portLabel": "M16\u00d71.5",
      "portDash": 16,
      "dimensions": {
       "S1": 22.0,
@@ -11171,7 +11171,7 @@
      "hoseDash": 5,
      "hoseInch": "5/16\"",
      "hoseDn": 8,
-     "portLabel": "M16×1.5",
+     "portLabel": "M16\u00d71.5",
      "portDash": 16,
      "dimensions": {
       "S1": 22.0,
@@ -11187,7 +11187,7 @@
      "hoseDash": 6,
      "hoseInch": "3/8\"",
      "hoseDn": 10,
-     "portLabel": "M14×1.5",
+     "portLabel": "M14\u00d71.5",
      "portDash": 14,
      "dimensions": {
       "S1": 19.0,
@@ -11203,7 +11203,7 @@
      "hoseDash": 6,
      "hoseInch": "3/8\"",
      "hoseDn": 10,
-     "portLabel": "M16×1.5",
+     "portLabel": "M16\u00d71.5",
      "portDash": 16,
      "dimensions": {
       "S1": 22.0,
@@ -11219,7 +11219,7 @@
      "hoseDash": 6,
      "hoseInch": "3/8\"",
      "hoseDn": 10,
-     "portLabel": "M18×1.5",
+     "portLabel": "M18\u00d71.5",
      "portDash": 18,
      "dimensions": {
       "S1": 24.0,
@@ -11235,7 +11235,7 @@
      "hoseDash": 8,
      "hoseInch": "1/2\"",
      "hoseDn": 12,
-     "portLabel": "M18×1.5",
+     "portLabel": "M18\u00d71.5",
      "portDash": 18,
      "dimensions": {
       "S1": 24.0,
@@ -11251,7 +11251,7 @@
      "hoseDash": 8,
      "hoseInch": "1/2\"",
      "hoseDn": 12,
-     "portLabel": "M20×1.5",
+     "portLabel": "M20\u00d71.5",
      "portDash": 20,
      "dimensions": {
       "S1": 27.0,
@@ -11267,7 +11267,7 @@
      "hoseDash": 8,
      "hoseInch": "1/2\"",
      "hoseDn": 12,
-     "portLabel": "M22×1.5",
+     "portLabel": "M22\u00d71.5",
      "portDash": 22,
      "dimensions": {
       "S1": 27.0,
@@ -11283,7 +11283,7 @@
      "hoseDash": 8,
      "hoseInch": "1/2\"",
      "hoseDn": 12,
-     "portLabel": "M24×1.5",
+     "portLabel": "M24\u00d71.5",
      "portDash": 24,
      "dimensions": {
       "S1": 32.0,
@@ -11299,7 +11299,7 @@
      "hoseDash": 10,
      "hoseInch": "5/8\"",
      "hoseDn": 16,
-     "portLabel": "M24×1.5",
+     "portLabel": "M24\u00d71.5",
      "portDash": 24,
      "dimensions": {
       "S1": 32.0,
@@ -11315,7 +11315,7 @@
      "hoseDash": 10,
      "hoseInch": "5/8\"",
      "hoseDn": 16,
-     "portLabel": "M27×1.5",
+     "portLabel": "M27\u00d71.5",
      "portDash": 27,
      "dimensions": {
       "S1": 32.0,
@@ -11331,7 +11331,7 @@
      "hoseDash": 12,
      "hoseInch": "3/4\"",
      "hoseDn": 20,
-     "portLabel": "M30×1.5",
+     "portLabel": "M30\u00d71.5",
      "portDash": 30,
      "dimensions": {
       "S1": 36.0,
@@ -11347,7 +11347,7 @@
      "hoseDash": 12,
      "hoseInch": "3/4\"",
      "hoseDn": 20,
-     "portLabel": "M33×1.5",
+     "portLabel": "M33\u00d71.5",
      "portDash": 33,
      "dimensions": {
       "S1": 41.0,
@@ -11363,7 +11363,7 @@
      "hoseDash": 16,
      "hoseInch": "1\"",
      "hoseDn": 25,
-     "portLabel": "M33×1.5",
+     "portLabel": "M33\u00d71.5",
      "portDash": 33,
      "dimensions": {
       "S1": 41.0,
@@ -11379,7 +11379,7 @@
      "hoseDash": 20,
      "hoseInch": "1.1/4\"",
      "hoseDn": 32,
-     "portLabel": "M36×1.5",
+     "portLabel": "M36\u00d71.5",
      "portDash": 36,
      "dimensions": {
       "S1": 46.0,
@@ -11395,7 +11395,7 @@
      "hoseDash": 24,
      "hoseInch": "1.1/2\"",
      "hoseDn": 40,
-     "portLabel": "M42×1.5",
+     "portLabel": "M42\u00d71.5",
      "portDash": 42,
      "dimensions": {
       "S1": 55.0,
@@ -11419,7 +11419,7 @@
      "hoseDash": 4,
      "hoseInch": "1/4\"",
      "hoseDn": 6,
-     "portLabel": "M14×1.5",
+     "portLabel": "M14\u00d71.5",
      "portDash": 14,
      "dimensions": {
       "S1": 17.0,
@@ -11434,7 +11434,7 @@
      "hoseDash": 4,
      "hoseInch": "1/4\"",
      "hoseDn": 6,
-     "portLabel": "M16×1.5",
+     "portLabel": "M16\u00d71.5",
      "portDash": 16,
      "dimensions": {
       "S1": 17.0,
@@ -11449,7 +11449,7 @@
      "hoseDash": 6,
      "hoseInch": "3/8\"",
      "hoseDn": 10,
-     "portLabel": "M14×1.5",
+     "portLabel": "M14\u00d71.5",
      "portDash": 14,
      "dimensions": {
       "S1": 17.0,
@@ -11464,7 +11464,7 @@
      "hoseDash": 6,
      "hoseInch": "3/8\"",
      "hoseDn": 10,
-     "portLabel": "M16×1.5",
+     "portLabel": "M16\u00d71.5",
      "portDash": 16,
      "dimensions": {
       "S1": 17.0,
@@ -11479,7 +11479,7 @@
      "hoseDash": 6,
      "hoseInch": "3/8\"",
      "hoseDn": 10,
-     "portLabel": "M18×1.5",
+     "portLabel": "M18\u00d71.5",
      "portDash": 18,
      "dimensions": {
       "S1": 19.0,
@@ -11494,7 +11494,7 @@
      "hoseDash": 8,
      "hoseInch": "1/2\"",
      "hoseDn": 12,
-     "portLabel": "M20×1.5",
+     "portLabel": "M20\u00d71.5",
      "portDash": 20,
      "dimensions": {
       "S1": 22.0,
@@ -11509,7 +11509,7 @@
      "hoseDash": 8,
      "hoseInch": "1/2\"",
      "hoseDn": 12,
-     "portLabel": "M22×1.5",
+     "portLabel": "M22\u00d71.5",
      "portDash": 22,
      "dimensions": {
       "S1": 24.0,
@@ -11524,7 +11524,7 @@
      "hoseDash": 10,
      "hoseInch": "5/8\"",
      "hoseDn": 16,
-     "portLabel": "M24×1.5",
+     "portLabel": "M24\u00d71.5",
      "portDash": 24,
      "dimensions": {
       "S1": 27.0,
@@ -11539,7 +11539,7 @@
      "hoseDash": 12,
      "hoseInch": "3/4\"",
      "hoseDn": 20,
-     "portLabel": "M30×1.5",
+     "portLabel": "M30\u00d71.5",
      "portDash": 30,
      "dimensions": {
       "S1": 32.0,
@@ -11554,7 +11554,7 @@
      "hoseDash": 16,
      "hoseInch": "1\"",
      "hoseDn": 25,
-     "portLabel": "M33×1.5",
+     "portLabel": "M33\u00d71.5",
      "portDash": 33,
      "dimensions": {
       "S1": 36.0,
@@ -11569,7 +11569,7 @@
      "hoseDash": 20,
      "hoseInch": "1.1/4\"",
      "hoseDn": 32,
-     "portLabel": "M36×1.5",
+     "portLabel": "M36\u00d71.5",
      "portDash": 36,
      "dimensions": {
       "S1": 38.0,
@@ -11584,7 +11584,7 @@
      "hoseDash": 24,
      "hoseInch": "1.1/2\"",
      "hoseDn": 40,
-     "portLabel": "M42×1.5",
+     "portLabel": "M42\u00d71.5",
      "portDash": 42,
      "dimensions": {
       "S1": 46.0,
@@ -11607,7 +11607,7 @@
      "hoseDash": 3,
      "hoseInch": "3/16\"",
      "hoseDn": 5,
-     "portLabel": "G1/8\"×28",
+     "portLabel": "G1/8\"\u00d728",
      "portDash": 2,
      "dimensions": {
       "S1": 14.0,
@@ -11623,7 +11623,7 @@
      "hoseDash": 4,
      "hoseInch": "1/4\"",
      "hoseDn": 6,
-     "portLabel": "G1/4\"×19",
+     "portLabel": "G1/4\"\u00d719",
      "portDash": 4,
      "dimensions": {
       "S1": 19.0,
@@ -11639,7 +11639,7 @@
      "hoseDash": 4,
      "hoseInch": "1/4\"",
      "hoseDn": 6,
-     "portLabel": "G3/8\"×19",
+     "portLabel": "G3/8\"\u00d719",
      "portDash": 6,
      "dimensions": {
       "S1": 22.0,
@@ -11655,7 +11655,7 @@
      "hoseDash": 5,
      "hoseInch": "5/16\"",
      "hoseDn": 8,
-     "portLabel": "G1/4\"×19",
+     "portLabel": "G1/4\"\u00d719",
      "portDash": 4,
      "dimensions": {
       "S1": 19.0,
@@ -11671,7 +11671,7 @@
      "hoseDash": 6,
      "hoseInch": "3/8\"",
      "hoseDn": 10,
-     "portLabel": "G3/8\"×19",
+     "portLabel": "G3/8\"\u00d719",
      "portDash": 6,
      "dimensions": {
       "S1": 22.0,
@@ -11687,7 +11687,7 @@
      "hoseDash": 6,
      "hoseInch": "3/8\"",
      "hoseDn": 10,
-     "portLabel": "G1/2\"×14",
+     "portLabel": "G1/2\"\u00d714",
      "portDash": 8,
      "dimensions": {
       "S1": 27.0,
@@ -11703,7 +11703,7 @@
      "hoseDash": 8,
      "hoseInch": "1/2\"",
      "hoseDn": 12,
-     "portLabel": "G1/2\"×14",
+     "portLabel": "G1/2\"\u00d714",
      "portDash": 8,
      "dimensions": {
       "S1": 27.0,
@@ -11719,7 +11719,7 @@
      "hoseDash": 10,
      "hoseInch": "5/8\"",
      "hoseDn": 16,
-     "portLabel": "G5/8\"×14",
+     "portLabel": "G5/8\"\u00d714",
      "portDash": 10,
      "dimensions": {
       "S1": 30.0,
@@ -11735,7 +11735,7 @@
      "hoseDash": 10,
      "hoseInch": "5/8\"",
      "hoseDn": 16,
-     "portLabel": "G3/4\"×14",
+     "portLabel": "G3/4\"\u00d714",
      "portDash": 12,
      "dimensions": {
       "S1": 32.0,
@@ -11751,7 +11751,7 @@
      "hoseDash": 12,
      "hoseInch": "3/4\"",
      "hoseDn": 20,
-     "portLabel": "G3/4\"×14",
+     "portLabel": "G3/4\"\u00d714",
      "portDash": 12,
      "dimensions": {
       "S1": 32.0,
@@ -11767,7 +11767,7 @@
      "hoseDash": 16,
      "hoseInch": "1\"",
      "hoseDn": 25,
-     "portLabel": "G1\"×11",
+     "portLabel": "G1\"\u00d711",
      "portDash": 16,
      "dimensions": {
       "S1": 41.0,
@@ -11783,7 +11783,7 @@
      "hoseDash": 20,
      "hoseInch": "1.1/4\"",
      "hoseDn": 32,
-     "portLabel": "G1.1/4\"×11",
+     "portLabel": "G1.1/4\"\u00d711",
      "portDash": 20,
      "dimensions": {
       "S1": 50.0,
@@ -11799,7 +11799,7 @@
      "hoseDash": 24,
      "hoseInch": "1.1/2\"",
      "hoseDn": 40,
-     "portLabel": "G1.1/2\"×11",
+     "portLabel": "G1.1/2\"\u00d711",
      "portDash": 24,
      "dimensions": {
       "S1": 55.0,
@@ -11815,7 +11815,7 @@
      "hoseDash": 32,
      "hoseInch": "2\"",
      "hoseDn": 50,
-     "portLabel": "G2\"×11",
+     "portLabel": "G2\"\u00d711",
      "portDash": 32,
      "dimensions": {
       "S1": 70.0,
@@ -11839,7 +11839,7 @@
      "hoseDash": 4,
      "hoseInch": "1/4\"",
      "hoseDn": 6,
-     "portLabel": "G1/4\"×19",
+     "portLabel": "G1/4\"\u00d719",
      "portDash": 4,
      "dimensions": {
       "S1": 19.0,
@@ -11856,7 +11856,7 @@
      "hoseDash": 5,
      "hoseInch": "5/16\"",
      "hoseDn": 8,
-     "portLabel": "G1/4\"×19",
+     "portLabel": "G1/4\"\u00d719",
      "portDash": 4,
      "dimensions": {
       "S1": 19.0,
@@ -11873,7 +11873,7 @@
      "hoseDash": 6,
      "hoseInch": "3/8\"",
      "hoseDn": 10,
-     "portLabel": "G3/8\"×19",
+     "portLabel": "G3/8\"\u00d719",
      "portDash": 6,
      "dimensions": {
       "S1": 22.0,
@@ -11890,7 +11890,7 @@
      "hoseDash": 8,
      "hoseInch": "1/2\"",
      "hoseDn": 12,
-     "portLabel": "G1/2\"×14",
+     "portLabel": "G1/2\"\u00d714",
      "portDash": 8,
      "dimensions": {
       "S1": 27.0,
@@ -11907,7 +11907,7 @@
      "hoseDash": 10,
      "hoseInch": "5/8\"",
      "hoseDn": 16,
-     "portLabel": "G5/8\"×14",
+     "portLabel": "G5/8\"\u00d714",
      "portDash": 10,
      "dimensions": {
       "S1": 30.0,
@@ -11924,7 +11924,7 @@
      "hoseDash": 12,
      "hoseInch": "3/4\"",
      "hoseDn": 20,
-     "portLabel": "G3/4\"×14",
+     "portLabel": "G3/4\"\u00d714",
      "portDash": 12,
      "dimensions": {
       "S1": 32.0,
@@ -11941,7 +11941,7 @@
      "hoseDash": 16,
      "hoseInch": "1\"",
      "hoseDn": 25,
-     "portLabel": "G1\"×11",
+     "portLabel": "G1\"\u00d711",
      "portDash": 16,
      "dimensions": {
       "S1": 41.0,
@@ -11958,7 +11958,7 @@
      "hoseDash": 20,
      "hoseInch": "1.1/4\"",
      "hoseDn": 32,
-     "portLabel": "G1.1/4\"×11",
+     "portLabel": "G1.1/4\"\u00d711",
      "portDash": 20,
      "dimensions": {
       "S1": 50.0,
@@ -11975,7 +11975,7 @@
      "hoseDash": 24,
      "hoseInch": "1.1/2\"",
      "hoseDn": 40,
-     "portLabel": "G1.1/2\"×11",
+     "portLabel": "G1.1/2\"\u00d711",
      "portDash": 24,
      "dimensions": {
       "S1": 55.0,
@@ -11992,7 +11992,7 @@
      "hoseDash": 32,
      "hoseInch": "2\"",
      "hoseDn": 50,
-     "portLabel": "G2\"×11",
+     "portLabel": "G2\"\u00d711",
      "portDash": 32,
      "dimensions": {
       "S1": 70.0,
@@ -12319,7 +12319,7 @@
      "hoseDash": 10,
      "hoseInch": "5/8\"",
      "hoseDn": null,
-     "portLabel": "M10×1",
+     "portLabel": "M10\u00d71",
      "portDash": null,
      "dimensions": {
       "S1": 14.0,
@@ -12335,7 +12335,7 @@
      "hoseDash": 12,
      "hoseInch": "3/4\"",
      "hoseDn": null,
-     "portLabel": "M12×1.5",
+     "portLabel": "M12\u00d71.5",
      "portDash": null,
      "dimensions": {
       "S1": 17.0,
@@ -12351,7 +12351,7 @@
      "hoseDash": 14,
      "hoseInch": "7/8\"",
      "hoseDn": null,
-     "portLabel": "M14×1.5",
+     "portLabel": "M14\u00d71.5",
      "portDash": null,
      "dimensions": {
       "S1": 19.0,
@@ -12367,7 +12367,7 @@
      "hoseDash": 16,
      "hoseInch": "1\"",
      "hoseDn": null,
-     "portLabel": "M16×1.5",
+     "portLabel": "M16\u00d71.5",
      "portDash": null,
      "dimensions": {
       "S1": 22.0,
@@ -12383,7 +12383,7 @@
      "hoseDash": 18,
      "hoseInch": "1.1/8\"",
      "hoseDn": null,
-     "portLabel": "M18×1.5",
+     "portLabel": "M18\u00d71.5",
      "portDash": null,
      "dimensions": {
       "S1": 24.0,
@@ -12399,7 +12399,7 @@
      "hoseDash": 22,
      "hoseInch": "1.3/8\"",
      "hoseDn": null,
-     "portLabel": "M22×1.5",
+     "portLabel": "M22\u00d71.5",
      "portDash": null,
      "dimensions": {
       "S1": 27.0,
@@ -12415,7 +12415,7 @@
      "hoseDash": 26,
      "hoseInch": "1.5/8\"",
      "hoseDn": null,
-     "portLabel": "M26×1.5",
+     "portLabel": "M26\u00d71.5",
      "portDash": null,
      "dimensions": {
       "S1": 32.0,
@@ -12431,7 +12431,7 @@
      "hoseDash": 30,
      "hoseInch": "1.7/8\"",
      "hoseDn": null,
-     "portLabel": "M30×1.5",
+     "portLabel": "M30\u00d71.5",
      "portDash": null,
      "dimensions": {
       "S1": 36.0,
@@ -12455,7 +12455,7 @@
      "hoseDash": 4,
      "hoseInch": "1/4\"",
      "hoseDn": 6,
-     "portLabel": "M14×1.5",
+     "portLabel": "M14\u00d71.5",
      "portDash": 14,
      "dimensions": {
       "S2": 19.0,
@@ -12470,7 +12470,7 @@
      "hoseDash": 5,
      "hoseInch": "5/16\"",
      "hoseDn": 8,
-     "portLabel": "M16×1.5",
+     "portLabel": "M16\u00d71.5",
      "portDash": 16,
      "dimensions": {
       "S2": 22.0,
@@ -12485,7 +12485,7 @@
      "hoseDash": 6,
      "hoseInch": "3/8\"",
      "hoseDn": 10,
-     "portLabel": "M16×1.5",
+     "portLabel": "M16\u00d71.5",
      "portDash": 16,
      "dimensions": {
       "S2": 22.0,
@@ -12500,7 +12500,7 @@
      "hoseDash": 6,
      "hoseInch": "3/8\"",
      "hoseDn": 10,
-     "portLabel": "M18×1.5",
+     "portLabel": "M18\u00d71.5",
      "portDash": 18,
      "dimensions": {
       "S2": 24.0,
@@ -12515,7 +12515,7 @@
      "hoseDash": 8,
      "hoseInch": "1/2\"",
      "hoseDn": 12,
-     "portLabel": "M20×1.5",
+     "portLabel": "M20\u00d71.5",
      "portDash": 20,
      "dimensions": {
       "S2": 27.0,
@@ -12530,7 +12530,7 @@
      "hoseDash": 8,
      "hoseInch": "1/2\"",
      "hoseDn": 12,
-     "portLabel": "M22×1.5",
+     "portLabel": "M22\u00d71.5",
      "portDash": 22,
      "dimensions": {
       "S2": 27.0,
@@ -12545,7 +12545,7 @@
      "hoseDash": 10,
      "hoseInch": "5/8\"",
      "hoseDn": 16,
-     "portLabel": "M24×1.5",
+     "portLabel": "M24\u00d71.5",
      "portDash": 24,
      "dimensions": {
       "S2": 30.0,
@@ -12560,7 +12560,7 @@
      "hoseDash": 10,
      "hoseInch": "5/8\"",
      "hoseDn": 16,
-     "portLabel": "M26×1.5",
+     "portLabel": "M26\u00d71.5",
      "portDash": 26,
      "dimensions": {
       "S2": 32.0,
@@ -12575,7 +12575,7 @@
      "hoseDash": 10,
      "hoseInch": "5/8\"",
      "hoseDn": 16,
-     "portLabel": "M27×1.5",
+     "portLabel": "M27\u00d71.5",
      "portDash": 27,
      "dimensions": {
       "S2": 32.0,
@@ -12590,7 +12590,7 @@
      "hoseDash": 10,
      "hoseInch": "5/8\"",
      "hoseDn": 16,
-     "portLabel": "M30×1.5",
+     "portLabel": "M30\u00d71.5",
      "portDash": 30,
      "dimensions": {
       "S2": 36.0,
@@ -12605,7 +12605,7 @@
      "hoseDash": 12,
      "hoseInch": "3/4\"",
      "hoseDn": 20,
-     "portLabel": "M30×1.5",
+     "portLabel": "M30\u00d71.5",
      "portDash": 30,
      "dimensions": {
       "S2": 36.0,
@@ -12620,7 +12620,7 @@
      "hoseDash": 16,
      "hoseInch": "1\"",
      "hoseDn": 25,
-     "portLabel": "M36×2",
+     "portLabel": "M36\u00d72",
      "portDash": 36,
      "dimensions": {
       "S2": 41.0,
@@ -12635,7 +12635,7 @@
      "hoseDash": 16,
      "hoseInch": "1\"",
      "hoseDn": 25,
-     "portLabel": "M39×2",
+     "portLabel": "M39\u00d72",
      "portDash": 39,
      "dimensions": {
       "S2": 46.0,
@@ -12650,7 +12650,7 @@
      "hoseDash": 20,
      "hoseInch": "1.1/4\"",
      "hoseDn": 32,
-     "portLabel": "M45×2",
+     "portLabel": "M45\u00d72",
      "portDash": 45,
      "dimensions": {
       "S2": 55.0,
@@ -12665,7 +12665,7 @@
      "hoseDash": 24,
      "hoseInch": "1.1/2\"",
      "hoseDn": 40,
-     "portLabel": "M52×2",
+     "portLabel": "M52\u00d72",
      "portDash": 52,
      "dimensions": {
       "S2": 60.0,
@@ -12688,7 +12688,7 @@
      "hoseDash": 4,
      "hoseInch": "1/4\"",
      "hoseDn": 6,
-     "portLabel": "M14×1.5",
+     "portLabel": "M14\u00d71.5",
      "portDash": 14,
      "dimensions": {
       "S2": 19.0,
@@ -12704,7 +12704,7 @@
      "hoseDash": 5,
      "hoseInch": "5/16\"",
      "hoseDn": 8,
-     "portLabel": "M16×1.5",
+     "portLabel": "M16\u00d71.5",
      "portDash": 16,
      "dimensions": {
       "S2": 22.0,
@@ -12720,7 +12720,7 @@
      "hoseDash": 6,
      "hoseInch": "3/8\"",
      "hoseDn": 10,
-     "portLabel": "M18×1.5",
+     "portLabel": "M18\u00d71.5",
      "portDash": 18,
      "dimensions": {
       "S2": 24.0,
@@ -12736,7 +12736,7 @@
      "hoseDash": 8,
      "hoseInch": "1/2\"",
      "hoseDn": 12,
-     "portLabel": "M22×1.5",
+     "portLabel": "M22\u00d71.5",
      "portDash": 22,
      "dimensions": {
       "S2": 27.0,
@@ -12752,7 +12752,7 @@
      "hoseDash": 10,
      "hoseInch": "5/8\"",
      "hoseDn": 16,
-     "portLabel": "M27×1.5",
+     "portLabel": "M27\u00d71.5",
      "portDash": 27,
      "dimensions": {
       "S2": 32.0,
@@ -12768,7 +12768,7 @@
      "hoseDash": 12,
      "hoseInch": "3/4\"",
      "hoseDn": 20,
-     "portLabel": "M30×1.5",
+     "portLabel": "M30\u00d71.5",
      "portDash": 30,
      "dimensions": {
       "S2": 36.0,
@@ -12784,7 +12784,7 @@
      "hoseDash": 14,
      "hoseInch": "7/8\"",
      "hoseDn": 22,
-     "portLabel": "M36×2",
+     "portLabel": "M36\u00d72",
      "portDash": 36,
      "dimensions": {
       "S2": 41.0,
@@ -12800,7 +12800,7 @@
      "hoseDash": 16,
      "hoseInch": "1\"",
      "hoseDn": 25,
-     "portLabel": "M36×2",
+     "portLabel": "M36\u00d72",
      "portDash": 36,
      "dimensions": {
       "S2": 41.0,
@@ -12816,7 +12816,7 @@
      "hoseDash": 16,
      "hoseInch": "1\"",
      "hoseDn": 25,
-     "portLabel": "M39×2",
+     "portLabel": "M39\u00d72",
      "portDash": 39,
      "dimensions": {
       "S2": 46.0,
@@ -12832,7 +12832,7 @@
      "hoseDash": 20,
      "hoseInch": "1.1/4\"",
      "hoseDn": 32,
-     "portLabel": "M45×2",
+     "portLabel": "M45\u00d72",
      "portDash": 45,
      "dimensions": {
       "S2": 55.0,
@@ -12848,7 +12848,7 @@
      "hoseDash": 24,
      "hoseInch": "1.1/2\"",
      "hoseDn": 40,
-     "portLabel": "M52×2",
+     "portLabel": "M52\u00d72",
      "portDash": 52,
      "dimensions": {
       "S2": 60.0,
@@ -12872,7 +12872,7 @@
      "hoseDash": 4,
      "hoseInch": "1/4\"",
      "hoseDn": 6,
-     "portLabel": "M14×1.5",
+     "portLabel": "M14\u00d71.5",
      "portDash": 14,
      "dimensions": {
       "S2": 19.0,
@@ -12887,7 +12887,7 @@
      "hoseDash": 4,
      "hoseInch": "1/4\"",
      "hoseDn": 6,
-     "portLabel": "M16×1.5",
+     "portLabel": "M16\u00d71.5",
      "portDash": 16,
      "dimensions": {
       "S2": 22.0,
@@ -12902,7 +12902,7 @@
      "hoseDash": 5,
      "hoseInch": "5/16\"",
      "hoseDn": 8,
-     "portLabel": "M16×1.5",
+     "portLabel": "M16\u00d71.5",
      "portDash": 16,
      "dimensions": {
       "S2": 22.0,
@@ -12917,7 +12917,7 @@
      "hoseDash": 6,
      "hoseInch": "3/8\"",
      "hoseDn": 10,
-     "portLabel": "M14×1.5",
+     "portLabel": "M14\u00d71.5",
      "portDash": 14,
      "dimensions": {
       "S2": 19.0,
@@ -12932,7 +12932,7 @@
      "hoseDash": 6,
      "hoseInch": "3/8\"",
      "hoseDn": 10,
-     "portLabel": "M18×1.5",
+     "portLabel": "M18\u00d71.5",
      "portDash": 18,
      "dimensions": {
       "S2": 24.0,
@@ -12947,7 +12947,7 @@
      "hoseDash": 6,
      "hoseInch": "3/8\"",
      "hoseDn": 10,
-     "portLabel": "M22×1.5",
+     "portLabel": "M22\u00d71.5",
      "portDash": 22,
      "dimensions": {
       "S2": 27.0,
@@ -12962,7 +12962,7 @@
      "hoseDash": 8,
      "hoseInch": "1/2\"",
      "hoseDn": 12,
-     "portLabel": "M22×1.5",
+     "portLabel": "M22\u00d71.5",
      "portDash": 22,
      "dimensions": {
       "S2": 27.0,
@@ -12977,7 +12977,7 @@
      "hoseDash": 10,
      "hoseInch": "5/8\"",
      "hoseDn": 16,
-     "portLabel": "M24×1.5",
+     "portLabel": "M24\u00d71.5",
      "portDash": 24,
      "dimensions": {
       "S2": 30.0,
@@ -12992,7 +12992,7 @@
      "hoseDash": 10,
      "hoseInch": "5/8\"",
      "hoseDn": 16,
-     "portLabel": "M26×1.5",
+     "portLabel": "M26\u00d71.5",
      "portDash": 26,
      "dimensions": {
       "S2": 32.0,
@@ -13007,7 +13007,7 @@
      "hoseDash": 10,
      "hoseInch": "5/8\"",
      "hoseDn": 16,
-     "portLabel": "M27×1.5",
+     "portLabel": "M27\u00d71.5",
      "portDash": 27,
      "dimensions": {
       "S2": 32.0,
@@ -13022,7 +13022,7 @@
      "hoseDash": 12,
      "hoseInch": "3/4\"",
      "hoseDn": 20,
-     "portLabel": "M30×1.5",
+     "portLabel": "M30\u00d71.5",
      "portDash": 30,
      "dimensions": {
       "S2": 36.0,
@@ -13037,7 +13037,7 @@
      "hoseDash": 16,
      "hoseInch": "1\"",
      "hoseDn": 25,
-     "portLabel": "M33×2",
+     "portLabel": "M33\u00d72",
      "portDash": 33,
      "dimensions": {
       "S2": 46.0,
@@ -13052,7 +13052,7 @@
      "hoseDash": 20,
      "hoseInch": "1.1/4\"",
      "hoseDn": 32,
-     "portLabel": "M42×2",
+     "portLabel": "M42\u00d72",
      "portDash": 42,
      "dimensions": {
       "S2": 50.0,
@@ -13067,7 +13067,7 @@
      "hoseDash": 20,
      "hoseInch": "1.1/4\"",
      "hoseDn": 32,
-     "portLabel": "M45×2",
+     "portLabel": "M45\u00d72",
      "portDash": 45,
      "dimensions": {
       "S2": 55.0,
@@ -13082,7 +13082,7 @@
      "hoseDash": 24,
      "hoseInch": "1.1/2\"",
      "hoseDn": 40,
-     "portLabel": "M48×2",
+     "portLabel": "M48\u00d72",
      "portDash": 48,
      "dimensions": {
       "S2": 55.0,
@@ -13097,7 +13097,7 @@
      "hoseDash": 24,
      "hoseInch": "1.1/2\"",
      "hoseDn": 40,
-     "portLabel": "M52×2",
+     "portLabel": "M52\u00d72",
      "portDash": 52,
      "dimensions": {
       "S2": 60.0,
@@ -13120,7 +13120,7 @@
      "hoseDash": 4,
      "hoseInch": "1/4\"",
      "hoseDn": 6,
-     "portLabel": "9/16\"×18",
+     "portLabel": "9/16\"\u00d718",
      "portDash": 4,
      "dimensions": {
       "S2": 19.0,
@@ -13135,7 +13135,7 @@
      "hoseDash": 4,
      "hoseInch": "1/4\"",
      "hoseDn": 6,
-     "portLabel": "11/16\"×16",
+     "portLabel": "11/16\"\u00d716",
      "portDash": 6,
      "dimensions": {
       "S2": 22.0,
@@ -13150,7 +13150,7 @@
      "hoseDash": 5,
      "hoseInch": "5/16\"",
      "hoseDn": 8,
-     "portLabel": "9/16\"×18",
+     "portLabel": "9/16\"\u00d718",
      "portDash": 4,
      "dimensions": {
       "S2": 19.0,
@@ -13165,7 +13165,7 @@
      "hoseDash": 5,
      "hoseInch": "5/16\"",
      "hoseDn": 8,
-     "portLabel": "11/16\"×16",
+     "portLabel": "11/16\"\u00d716",
      "portDash": 6,
      "dimensions": {
       "S2": 22.0,
@@ -13180,7 +13180,7 @@
      "hoseDash": 5,
      "hoseInch": "5/16\"",
      "hoseDn": 8,
-     "portLabel": "13/16\"×16",
+     "portLabel": "13/16\"\u00d716",
      "portDash": 8,
      "dimensions": {
       "S2": 27.0,
@@ -13195,7 +13195,7 @@
      "hoseDash": 6,
      "hoseInch": "3/8\"",
      "hoseDn": 10,
-     "portLabel": "9/16\"×18",
+     "portLabel": "9/16\"\u00d718",
      "portDash": 4,
      "dimensions": {
       "S2": 19.0,
@@ -13210,7 +13210,7 @@
      "hoseDash": 6,
      "hoseInch": "3/8\"",
      "hoseDn": 10,
-     "portLabel": "11/16\"×16",
+     "portLabel": "11/16\"\u00d716",
      "portDash": 6,
      "dimensions": {
       "S2": 22.0,
@@ -13225,7 +13225,7 @@
      "hoseDash": 6,
      "hoseInch": "3/8\"",
      "hoseDn": 10,
-     "portLabel": "13/16\"×16",
+     "portLabel": "13/16\"\u00d716",
      "portDash": 8,
      "dimensions": {
       "S2": 27.0,
@@ -13240,7 +13240,7 @@
      "hoseDash": 8,
      "hoseInch": "1/2\"",
      "hoseDn": 12,
-     "portLabel": "11/16\"×16",
+     "portLabel": "11/16\"\u00d716",
      "portDash": 6,
      "dimensions": {
       "S2": 22.0,
@@ -13255,7 +13255,7 @@
      "hoseDash": 8,
      "hoseInch": "1/2\"",
      "hoseDn": 12,
-     "portLabel": "13/16\"×16",
+     "portLabel": "13/16\"\u00d716",
      "portDash": 8,
      "dimensions": {
       "S2": 27.0,
@@ -13270,7 +13270,7 @@
      "hoseDash": 8,
      "hoseInch": "1/2\"",
      "hoseDn": 12,
-     "portLabel": "1\"×14",
+     "portLabel": "1\"\u00d714",
      "portDash": 10,
      "dimensions": {
       "S2": 30.0,
@@ -13285,7 +13285,7 @@
      "hoseDash": 8,
      "hoseInch": "1/2\"",
      "hoseDn": 12,
-     "portLabel": "1.3/16\"×12",
+     "portLabel": "1.3/16\"\u00d712",
      "portDash": 12,
      "dimensions": {
       "S2": 36.0,
@@ -13300,7 +13300,7 @@
      "hoseDash": 10,
      "hoseInch": "5/8\"",
      "hoseDn": 16,
-     "portLabel": "13/16\"×16",
+     "portLabel": "13/16\"\u00d716",
      "portDash": 8,
      "dimensions": {
       "S2": 27.0,
@@ -13315,7 +13315,7 @@
      "hoseDash": 10,
      "hoseInch": "5/8\"",
      "hoseDn": 16,
-     "portLabel": "1\"×14",
+     "portLabel": "1\"\u00d714",
      "portDash": 10,
      "dimensions": {
       "S2": 30.0,
@@ -13330,7 +13330,7 @@
      "hoseDash": 10,
      "hoseInch": "5/8\"",
      "hoseDn": 16,
-     "portLabel": "1.3/16\"×12",
+     "portLabel": "1.3/16\"\u00d712",
      "portDash": 12,
      "dimensions": {
       "S2": 36.0,
@@ -13345,7 +13345,7 @@
      "hoseDash": 12,
      "hoseInch": "3/4\"",
      "hoseDn": 20,
-     "portLabel": "1\"×14",
+     "portLabel": "1\"\u00d714",
      "portDash": 10,
      "dimensions": {
       "S2": 30.0,
@@ -13360,7 +13360,7 @@
      "hoseDash": 12,
      "hoseInch": "3/4\"",
      "hoseDn": 20,
-     "portLabel": "1.3/16\"×12",
+     "portLabel": "1.3/16\"\u00d712",
      "portDash": 12,
      "dimensions": {
       "S2": 36.0,
@@ -13375,7 +13375,7 @@
      "hoseDash": 12,
      "hoseInch": "3/4\"",
      "hoseDn": 20,
-     "portLabel": "1.7/16\"×12",
+     "portLabel": "1.7/16\"\u00d712",
      "portDash": 16,
      "dimensions": {
       "S2": 41.0,
@@ -13390,7 +13390,7 @@
      "hoseDash": 14,
      "hoseInch": "7/8\"",
      "hoseDn": 22,
-     "portLabel": "1.7/16\"×12",
+     "portLabel": "1.7/16\"\u00d712",
      "portDash": 16,
      "dimensions": {
       "S2": 41.0,
@@ -13405,7 +13405,7 @@
      "hoseDash": 16,
      "hoseInch": "1\"",
      "hoseDn": 25,
-     "portLabel": "1.3/16\"×12",
+     "portLabel": "1.3/16\"\u00d712",
      "portDash": 12,
      "dimensions": {
       "S2": 36.0,
@@ -13420,7 +13420,7 @@
      "hoseDash": 16,
      "hoseInch": "1\"",
      "hoseDn": 25,
-     "portLabel": "1.7/16\"×12",
+     "portLabel": "1.7/16\"\u00d712",
      "portDash": 16,
      "dimensions": {
       "S2": 41.0,
@@ -13435,7 +13435,7 @@
      "hoseDash": 16,
      "hoseInch": "1\"",
      "hoseDn": 25,
-     "portLabel": "1.11/16\"×12",
+     "portLabel": "1.11/16\"\u00d712",
      "portDash": 20,
      "dimensions": {
       "S2": 50.0,
@@ -13450,7 +13450,7 @@
      "hoseDash": 20,
      "hoseInch": "1.1/4\"",
      "hoseDn": 32,
-     "portLabel": "1.7/16\"×12",
+     "portLabel": "1.7/16\"\u00d712",
      "portDash": 16,
      "dimensions": {
       "S2": 41.0,
@@ -13465,7 +13465,7 @@
      "hoseDash": 20,
      "hoseInch": "1.1/4\"",
      "hoseDn": 32,
-     "portLabel": "1.11/16\"×12",
+     "portLabel": "1.11/16\"\u00d712",
      "portDash": 20,
      "dimensions": {
       "S2": 50.0,
@@ -13480,7 +13480,7 @@
      "hoseDash": 20,
      "hoseInch": "1.1/4\"",
      "hoseDn": 32,
-     "portLabel": "2\"×12",
+     "portLabel": "2\"\u00d712",
      "portDash": 24,
      "dimensions": {
       "S2": 60.0,
@@ -13495,7 +13495,7 @@
      "hoseDash": 24,
      "hoseInch": "1.1/2\"",
      "hoseDn": 40,
-     "portLabel": "1.11/16\"×12",
+     "portLabel": "1.11/16\"\u00d712",
      "portDash": 20,
      "dimensions": {
       "S2": 50.0,
@@ -13510,7 +13510,7 @@
      "hoseDash": 24,
      "hoseInch": "1.1/2\"",
      "hoseDn": 40,
-     "portLabel": "2\"×12",
+     "portLabel": "2\"\u00d712",
      "portDash": 24,
      "dimensions": {
       "S2": 60.0,
@@ -13533,7 +13533,7 @@
      "hoseDash": 4,
      "hoseInch": "1/4\"",
      "hoseDn": 6,
-     "portLabel": "9/16\"×18",
+     "portLabel": "9/16\"\u00d718",
      "portDash": 4,
      "dimensions": {
       "S2": 19.0,
@@ -13549,7 +13549,7 @@
      "hoseDash": 4,
      "hoseInch": "1/4\"",
      "hoseDn": 6,
-     "portLabel": "11/16\"×16",
+     "portLabel": "11/16\"\u00d716",
      "portDash": 6,
      "dimensions": {
       "S2": 22.0,
@@ -13565,7 +13565,7 @@
      "hoseDash": 5,
      "hoseInch": "5/16\"",
      "hoseDn": 8,
-     "portLabel": "9/16\"×18",
+     "portLabel": "9/16\"\u00d718",
      "portDash": 4,
      "dimensions": {
       "S2": 19.0,
@@ -13581,7 +13581,7 @@
      "hoseDash": 5,
      "hoseInch": "5/16\"",
      "hoseDn": 8,
-     "portLabel": "11/16\"×16",
+     "portLabel": "11/16\"\u00d716",
      "portDash": 6,
      "dimensions": {
       "S2": 22.0,
@@ -13597,7 +13597,7 @@
      "hoseDash": 6,
      "hoseInch": "3/8\"",
      "hoseDn": 10,
-     "portLabel": "9/16\"×18",
+     "portLabel": "9/16\"\u00d718",
      "portDash": 4,
      "dimensions": {
       "S2": 19.0,
@@ -13613,7 +13613,7 @@
      "hoseDash": 6,
      "hoseInch": "3/8\"",
      "hoseDn": 10,
-     "portLabel": "11/16\"×16",
+     "portLabel": "11/16\"\u00d716",
      "portDash": 6,
      "dimensions": {
       "S2": 22.0,
@@ -13629,7 +13629,7 @@
      "hoseDash": 6,
      "hoseInch": "3/8\"",
      "hoseDn": 10,
-     "portLabel": "13/16\"×16",
+     "portLabel": "13/16\"\u00d716",
      "portDash": 8,
      "dimensions": {
       "S2": 27.0,
@@ -13645,7 +13645,7 @@
      "hoseDash": 8,
      "hoseInch": "1/2\"",
      "hoseDn": 12,
-     "portLabel": "11/16\"×16",
+     "portLabel": "11/16\"\u00d716",
      "portDash": 6,
      "dimensions": {
       "S2": 22.0,
@@ -13661,7 +13661,7 @@
      "hoseDash": 8,
      "hoseInch": "1/2\"",
      "hoseDn": 12,
-     "portLabel": "13/16\"×16",
+     "portLabel": "13/16\"\u00d716",
      "portDash": 8,
      "dimensions": {
       "S2": 27.0,
@@ -13677,7 +13677,7 @@
      "hoseDash": 8,
      "hoseInch": "1/2\"",
      "hoseDn": 12,
-     "portLabel": "1\"×14",
+     "portLabel": "1\"\u00d714",
      "portDash": 10,
      "dimensions": {
       "S2": 30.0,
@@ -13693,7 +13693,7 @@
      "hoseDash": 8,
      "hoseInch": "1/2\"",
      "hoseDn": 12,
-     "portLabel": "1.3/16\"×12",
+     "portLabel": "1.3/16\"\u00d712",
      "portDash": 12,
      "dimensions": {
       "S2": 36.0,
@@ -13709,7 +13709,7 @@
      "hoseDash": 10,
      "hoseInch": "5/8\"",
      "hoseDn": 16,
-     "portLabel": "13/16\"×16",
+     "portLabel": "13/16\"\u00d716",
      "portDash": 8,
      "dimensions": {
       "S2": 27.0,
@@ -13725,7 +13725,7 @@
      "hoseDash": 10,
      "hoseInch": "5/8\"",
      "hoseDn": 16,
-     "portLabel": "1\"×14",
+     "portLabel": "1\"\u00d714",
      "portDash": 10,
      "dimensions": {
       "S2": 30.0,
@@ -13741,7 +13741,7 @@
      "hoseDash": 10,
      "hoseInch": "5/8\"",
      "hoseDn": 16,
-     "portLabel": "1.3/16\"×12",
+     "portLabel": "1.3/16\"\u00d712",
      "portDash": 12,
      "dimensions": {
       "S2": 36.0,
@@ -13757,7 +13757,7 @@
      "hoseDash": 12,
      "hoseInch": "3/4\"",
      "hoseDn": 20,
-     "portLabel": "1\"×14",
+     "portLabel": "1\"\u00d714",
      "portDash": 10,
      "dimensions": {
       "S2": 30.0,
@@ -13773,7 +13773,7 @@
      "hoseDash": 12,
      "hoseInch": "3/4\"",
      "hoseDn": 20,
-     "portLabel": "1.3/16\"×12",
+     "portLabel": "1.3/16\"\u00d712",
      "portDash": 12,
      "dimensions": {
       "S2": 36.0,
@@ -13789,7 +13789,7 @@
      "hoseDash": 12,
      "hoseInch": "3/4\"",
      "hoseDn": 20,
-     "portLabel": "1.7/16\"×12",
+     "portLabel": "1.7/16\"\u00d712",
      "portDash": 16,
      "dimensions": {
       "S2": 41.0,
@@ -13805,7 +13805,7 @@
      "hoseDash": 14,
      "hoseInch": "7/8\"",
      "hoseDn": 22,
-     "portLabel": "1.7/16\"×12",
+     "portLabel": "1.7/16\"\u00d712",
      "portDash": 16,
      "dimensions": {
       "S2": 41.0,
@@ -13821,7 +13821,7 @@
      "hoseDash": 16,
      "hoseInch": "1\"",
      "hoseDn": 25,
-     "portLabel": "1.3/16\"×12",
+     "portLabel": "1.3/16\"\u00d712",
      "portDash": 12,
      "dimensions": {
       "S2": 36.0,
@@ -13837,7 +13837,7 @@
      "hoseDash": 16,
      "hoseInch": "1\"",
      "hoseDn": 25,
-     "portLabel": "1.7/16\"×12",
+     "portLabel": "1.7/16\"\u00d712",
      "portDash": 16,
      "dimensions": {
       "S2": 41.0,
@@ -13853,7 +13853,7 @@
      "hoseDash": 16,
      "hoseInch": "1\"",
      "hoseDn": 25,
-     "portLabel": "1.11/16\"×12",
+     "portLabel": "1.11/16\"\u00d712",
      "portDash": 20,
      "dimensions": {
       "S2": 50.0,
@@ -13869,7 +13869,7 @@
      "hoseDash": 20,
      "hoseInch": "1.1/4\"",
      "hoseDn": 32,
-     "portLabel": "1.7/16\"×12",
+     "portLabel": "1.7/16\"\u00d712",
      "portDash": 16,
      "dimensions": {
       "S2": 41.0,
@@ -13885,7 +13885,7 @@
      "hoseDash": 20,
      "hoseInch": "1.1/4\"",
      "hoseDn": 32,
-     "portLabel": "1.11/16\"×12",
+     "portLabel": "1.11/16\"\u00d712",
      "portDash": 20,
      "dimensions": {
       "S2": 50.0,
@@ -13901,7 +13901,7 @@
      "hoseDash": 20,
      "hoseInch": "1.1/4\"",
      "hoseDn": 32,
-     "portLabel": "2\"×12",
+     "portLabel": "2\"\u00d712",
      "portDash": 24,
      "dimensions": {
       "S2": 60.0,
@@ -13917,7 +13917,7 @@
      "hoseDash": 24,
      "hoseInch": "1.1/2\"",
      "hoseDn": 40,
-     "portLabel": "1.11/16\"×12",
+     "portLabel": "1.11/16\"\u00d712",
      "portDash": 20,
      "dimensions": {
       "S2": 50.0,
@@ -13933,7 +13933,7 @@
      "hoseDash": 24,
      "hoseInch": "1.1/2\"",
      "hoseDn": 40,
-     "portLabel": "2\"×12",
+     "portLabel": "2\"\u00d712",
      "portDash": 24,
      "dimensions": {
       "S2": 60.0,
@@ -13957,7 +13957,7 @@
      "hoseDash": 4,
      "hoseInch": "1/4\"",
      "hoseDn": 6,
-     "portLabel": "9/16\"×18",
+     "portLabel": "9/16\"\u00d718",
      "portDash": 4,
      "dimensions": {
       "S2": 19.0,
@@ -13973,7 +13973,7 @@
      "hoseDash": 5,
      "hoseInch": "5/16\"",
      "hoseDn": 8,
-     "portLabel": "9/16\"×18",
+     "portLabel": "9/16\"\u00d718",
      "portDash": 4,
      "dimensions": {
       "S2": 19.0,
@@ -13989,7 +13989,7 @@
      "hoseDash": 5,
      "hoseInch": "5/16\"",
      "hoseDn": 8,
-     "portLabel": "11/16\"×16",
+     "portLabel": "11/16\"\u00d716",
      "portDash": 6,
      "dimensions": {
       "S2": 22.0,
@@ -14005,7 +14005,7 @@
      "hoseDash": 6,
      "hoseInch": "3/8\"",
      "hoseDn": 10,
-     "portLabel": "9/16\"×18",
+     "portLabel": "9/16\"\u00d718",
      "portDash": 4,
      "dimensions": {
       "S2": 19.0,
@@ -14021,7 +14021,7 @@
      "hoseDash": 6,
      "hoseInch": "3/8\"",
      "hoseDn": 10,
-     "portLabel": "11/16\"×16",
+     "portLabel": "11/16\"\u00d716",
      "portDash": 6,
      "dimensions": {
       "S2": 22.0,
@@ -14037,7 +14037,7 @@
      "hoseDash": 6,
      "hoseInch": "3/8\"",
      "hoseDn": 10,
-     "portLabel": "13/16\"×16",
+     "portLabel": "13/16\"\u00d716",
      "portDash": 8,
      "dimensions": {
       "S2": 27.0,
@@ -14053,7 +14053,7 @@
      "hoseDash": 8,
      "hoseInch": "1/2\"",
      "hoseDn": 12,
-     "portLabel": "11/16\"×16",
+     "portLabel": "11/16\"\u00d716",
      "portDash": 6,
      "dimensions": {
       "S2": 22.0,
@@ -14069,7 +14069,7 @@
      "hoseDash": 8,
      "hoseInch": "1/2\"",
      "hoseDn": 12,
-     "portLabel": "13/16\"×16",
+     "portLabel": "13/16\"\u00d716",
      "portDash": 8,
      "dimensions": {
       "S2": 27.0,
@@ -14085,7 +14085,7 @@
      "hoseDash": 8,
      "hoseInch": "1/2\"",
      "hoseDn": 12,
-     "portLabel": "1\"×14",
+     "portLabel": "1\"\u00d714",
      "portDash": 10,
      "dimensions": {
       "S2": 30.0,
@@ -14101,7 +14101,7 @@
      "hoseDash": 10,
      "hoseInch": "5/8\"",
      "hoseDn": 16,
-     "portLabel": "13/16\"×16",
+     "portLabel": "13/16\"\u00d716",
      "portDash": 8,
      "dimensions": {
       "S2": 27.0,
@@ -14117,7 +14117,7 @@
      "hoseDash": 10,
      "hoseInch": "5/8\"",
      "hoseDn": 16,
-     "portLabel": "1\"×14",
+     "portLabel": "1\"\u00d714",
      "portDash": 10,
      "dimensions": {
       "S2": 30.0,
@@ -14133,7 +14133,7 @@
      "hoseDash": 10,
      "hoseInch": "5/8\"",
      "hoseDn": 16,
-     "portLabel": "1.3/16\"×12",
+     "portLabel": "1.3/16\"\u00d712",
      "portDash": 12,
      "dimensions": {
       "S2": 36.0,
@@ -14149,7 +14149,7 @@
      "hoseDash": 12,
      "hoseInch": "3/4\"",
      "hoseDn": 20,
-     "portLabel": "1\"×14",
+     "portLabel": "1\"\u00d714",
      "portDash": 10,
      "dimensions": {
       "S2": 30.0,
@@ -14165,7 +14165,7 @@
      "hoseDash": 12,
      "hoseInch": "3/4\"",
      "hoseDn": 20,
-     "portLabel": "1.3/16\"×12",
+     "portLabel": "1.3/16\"\u00d712",
      "portDash": 12,
      "dimensions": {
       "S2": 36.0,
@@ -14181,7 +14181,7 @@
      "hoseDash": 12,
      "hoseInch": "3/4\"",
      "hoseDn": 20,
-     "portLabel": "1.7/16\"×12",
+     "portLabel": "1.7/16\"\u00d712",
      "portDash": 16,
      "dimensions": {
       "S2": 41.0,
@@ -14197,7 +14197,7 @@
      "hoseDash": 14,
      "hoseInch": "7/8\"",
      "hoseDn": 22,
-     "portLabel": "1.7/16\"×12",
+     "portLabel": "1.7/16\"\u00d712",
      "portDash": 16,
      "dimensions": {
       "S2": 41.0,
@@ -14213,7 +14213,7 @@
      "hoseDash": 16,
      "hoseInch": "1\"",
      "hoseDn": 25,
-     "portLabel": "1.3/16\"×12",
+     "portLabel": "1.3/16\"\u00d712",
      "portDash": 12,
      "dimensions": {
       "S2": 36.0,
@@ -14229,7 +14229,7 @@
      "hoseDash": 16,
      "hoseInch": "1\"",
      "hoseDn": 25,
-     "portLabel": "1.7/16\"×12",
+     "portLabel": "1.7/16\"\u00d712",
      "portDash": 16,
      "dimensions": {
       "S2": 41.0,
@@ -14245,7 +14245,7 @@
      "hoseDash": 16,
      "hoseInch": "1\"",
      "hoseDn": 25,
-     "portLabel": "1.11/16\"×12",
+     "portLabel": "1.11/16\"\u00d712",
      "portDash": 20,
      "dimensions": {
       "S2": 50.0,
@@ -14261,7 +14261,7 @@
      "hoseDash": 20,
      "hoseInch": "1.1/4\"",
      "hoseDn": 32,
-     "portLabel": "1.7/16\"×12",
+     "portLabel": "1.7/16\"\u00d712",
      "portDash": 16,
      "dimensions": {
       "S2": 41.0,
@@ -14277,7 +14277,7 @@
      "hoseDash": 20,
      "hoseInch": "1.1/4\"",
      "hoseDn": 32,
-     "portLabel": "1.11/16\"×12",
+     "portLabel": "1.11/16\"\u00d712",
      "portDash": 20,
      "dimensions": {
       "S2": 50.0,
@@ -14293,7 +14293,7 @@
      "hoseDash": 20,
      "hoseInch": "1.1/4\"",
      "hoseDn": 32,
-     "portLabel": "2\"×12",
+     "portLabel": "2\"\u00d712",
      "portDash": 24,
      "dimensions": {
       "S2": 60.0,
@@ -14309,7 +14309,7 @@
      "hoseDash": 24,
      "hoseInch": "1.1/2\"",
      "hoseDn": 40,
-     "portLabel": "1.11/16\"×12",
+     "portLabel": "1.11/16\"\u00d712",
      "portDash": 20,
      "dimensions": {
       "S2": 50.0,
@@ -14333,7 +14333,7 @@
      "hoseDash": 4,
      "hoseInch": "1/4\"",
      "hoseDn": 6,
-     "portLabel": "9/16\"×18",
+     "portLabel": "9/16\"\u00d718",
      "portDash": 4,
      "dimensions": {
       "S1": 17.0,
@@ -14347,7 +14347,7 @@
      "hoseDash": 4,
      "hoseInch": "1/4\"",
      "hoseDn": 6,
-     "portLabel": "11/16\"×16",
+     "portLabel": "11/16\"\u00d716",
      "portDash": 6,
      "dimensions": {
       "S1": 19.0,
@@ -14361,7 +14361,7 @@
      "hoseDash": 6,
      "hoseInch": "3/8\"",
      "hoseDn": 10,
-     "portLabel": "11/16\"×16",
+     "portLabel": "11/16\"\u00d716",
      "portDash": 6,
      "dimensions": {
       "S1": 19.0,
@@ -14375,7 +14375,7 @@
      "hoseDash": 6,
      "hoseInch": "3/8\"",
      "hoseDn": 10,
-     "portLabel": "13/16\"×16",
+     "portLabel": "13/16\"\u00d716",
      "portDash": 8,
      "dimensions": {
       "S1": 22.0,
@@ -14389,7 +14389,7 @@
      "hoseDash": 8,
      "hoseInch": "1/2\"",
      "hoseDn": 12,
-     "portLabel": "13/16\"×16",
+     "portLabel": "13/16\"\u00d716",
      "portDash": 8,
      "dimensions": {
       "S1": 22.0,
@@ -14403,7 +14403,7 @@
      "hoseDash": 8,
      "hoseInch": "1/2\"",
      "hoseDn": 12,
-     "portLabel": "1×14",
+     "portLabel": "1\u00d714",
      "portDash": 10,
      "dimensions": {
       "S1": 27.0,
@@ -14417,7 +14417,7 @@
      "hoseDash": 8,
      "hoseInch": "1/2\"",
      "hoseDn": 12,
-     "portLabel": "1.3/16\"×12",
+     "portLabel": "1.3/16\"\u00d712",
      "portDash": 12,
      "dimensions": {
       "S1": 32.0,
@@ -14431,7 +14431,7 @@
      "hoseDash": 10,
      "hoseInch": "5/8\"",
      "hoseDn": 16,
-     "portLabel": "13/16\"×16",
+     "portLabel": "13/16\"\u00d716",
      "portDash": 8,
      "dimensions": {
       "S1": 22.0,
@@ -14445,7 +14445,7 @@
      "hoseDash": 10,
      "hoseInch": "5/8\"",
      "hoseDn": 16,
-     "portLabel": "1×14",
+     "portLabel": "1\u00d714",
      "portDash": 10,
      "dimensions": {
       "S1": 27.0,
@@ -14459,7 +14459,7 @@
      "hoseDash": 10,
      "hoseInch": "5/8\"",
      "hoseDn": 16,
-     "portLabel": "1.3/16\"×12",
+     "portLabel": "1.3/16\"\u00d712",
      "portDash": 12,
      "dimensions": {
       "S1": 32.0,
@@ -14473,7 +14473,7 @@
      "hoseDash": 12,
      "hoseInch": "3/4\"",
      "hoseDn": 20,
-     "portLabel": "1.3/16\"×12",
+     "portLabel": "1.3/16\"\u00d712",
      "portDash": 12,
      "dimensions": {
       "S1": 32.0,
@@ -14487,7 +14487,7 @@
      "hoseDash": 12,
      "hoseInch": "3/4\"",
      "hoseDn": 20,
-     "portLabel": "1.7/16\"×12",
+     "portLabel": "1.7/16\"\u00d712",
      "portDash": 16,
      "dimensions": {
       "S1": 38.0,
@@ -14501,7 +14501,7 @@
      "hoseDash": 16,
      "hoseInch": "1\"",
      "hoseDn": 25,
-     "portLabel": "1.7/16\"×12",
+     "portLabel": "1.7/16\"\u00d712",
      "portDash": 16,
      "dimensions": {
       "S1": 38.0,
@@ -14515,7 +14515,7 @@
      "hoseDash": 20,
      "hoseInch": "1.1/4\"",
      "hoseDn": 32,
-     "portLabel": "1.11/16\"×12",
+     "portLabel": "1.11/16\"\u00d712",
      "portDash": 20,
      "dimensions": {
       "S1": 46.0,
@@ -14529,7 +14529,7 @@
      "hoseDash": 24,
      "hoseInch": "1.1/2\"",
      "hoseDn": 40,
-     "portLabel": "2\"×13",
+     "portLabel": "2\"\u00d713",
      "portDash": 24,
      "dimensions": {
       "S1": 55.0,
@@ -14551,7 +14551,7 @@
      "hoseDash": 4,
      "hoseInch": "1/4\"",
      "hoseDn": 6,
-     "portLabel": "1/4\"×18",
+     "portLabel": "1/4\"\u00d718",
      "portDash": 4,
      "dimensions": {
       "S2": 19.0,
@@ -14566,7 +14566,7 @@
      "hoseDash": 4,
      "hoseInch": "1/4\"",
      "hoseDn": 6,
-     "portLabel": "3/8\"×18",
+     "portLabel": "3/8\"\u00d718",
      "portDash": 6,
      "dimensions": {
       "S2": 22.0,
@@ -14581,7 +14581,7 @@
      "hoseDash": 5,
      "hoseInch": "5/16\"",
      "hoseDn": 8,
-     "portLabel": "3/8\"×18",
+     "portLabel": "3/8\"\u00d718",
      "portDash": 6,
      "dimensions": {
       "S2": 22.0,
@@ -14596,7 +14596,7 @@
      "hoseDash": 6,
      "hoseInch": "3/8\"",
      "hoseDn": 10,
-     "portLabel": "1/4\"×18",
+     "portLabel": "1/4\"\u00d718",
      "portDash": 4,
      "dimensions": {
       "S2": 19.0,
@@ -14611,7 +14611,7 @@
      "hoseDash": 6,
      "hoseInch": "3/8\"",
      "hoseDn": 10,
-     "portLabel": "3/8\"×18",
+     "portLabel": "3/8\"\u00d718",
      "portDash": 6,
      "dimensions": {
       "S2": 22.0,
@@ -14626,7 +14626,7 @@
      "hoseDash": 8,
      "hoseInch": "1/2\"",
      "hoseDn": 12,
-     "portLabel": "1/2\"×14",
+     "portLabel": "1/2\"\u00d714",
      "portDash": 8,
      "dimensions": {
       "S2": 27.0,
@@ -14641,7 +14641,7 @@
      "hoseDash": 10,
      "hoseInch": "5/8\"",
      "hoseDn": 16,
-     "portLabel": "3/4\"×14",
+     "portLabel": "3/4\"\u00d714",
      "portDash": 12,
      "dimensions": {
       "S2": 32.0,
@@ -14656,7 +14656,7 @@
      "hoseDash": 12,
      "hoseInch": "3/4\"",
      "hoseDn": 20,
-     "portLabel": "3/4\"×14",
+     "portLabel": "3/4\"\u00d714",
      "portDash": 12,
      "dimensions": {
       "S2": 32.0,
@@ -14671,7 +14671,7 @@
      "hoseDash": 12,
      "hoseInch": "3/4\"",
      "hoseDn": 25,
-     "portLabel": "1\"×11.5",
+     "portLabel": "1\"\u00d711.5",
      "portDash": 16,
      "dimensions": {
       "S2": 41.0,
@@ -14686,7 +14686,7 @@
      "hoseDash": 16,
      "hoseInch": "1\"",
      "hoseDn": 32,
-     "portLabel": "1\"×11.5",
+     "portLabel": "1\"\u00d711.5",
      "portDash": 16,
      "dimensions": {
       "S2": 41.0,
@@ -14701,7 +14701,7 @@
      "hoseDash": 20,
      "hoseInch": "1.1/4\"",
      "hoseDn": 32,
-     "portLabel": "1.1/4\"×11.5",
+     "portLabel": "1.1/4\"\u00d711.5",
      "portDash": 20,
      "dimensions": {
       "S2": 50.0,
@@ -14716,7 +14716,7 @@
      "hoseDash": 20,
      "hoseInch": "1.1/4\"",
      "hoseDn": 32,
-     "portLabel": "1.1/2\"×11.5",
+     "portLabel": "1.1/2\"\u00d711.5",
      "portDash": 24,
      "dimensions": {
       "S2": 55.0,
@@ -14731,7 +14731,7 @@
      "hoseDash": 24,
      "hoseInch": "1.1/2\"",
      "hoseDn": 40,
-     "portLabel": "1.1/2\"×11.5",
+     "portLabel": "1.1/2\"\u00d711.5",
      "portDash": 24,
      "dimensions": {
       "S2": 55.0,
@@ -14746,7 +14746,7 @@
      "hoseDash": 32,
      "hoseInch": "2\"",
      "hoseDn": 50,
-     "portLabel": "2\"×11.5",
+     "portLabel": "2\"\u00d711.5",
      "portDash": 32,
      "dimensions": {
       "S2": 70.0,
@@ -14769,7 +14769,7 @@
      "hoseDash": 3,
      "hoseInch": "3/16\"",
      "hoseDn": 5,
-     "portLabel": "Z1/8\"×27",
+     "portLabel": "NPT1/8\"\u00d727",
      "portDash": 2,
      "dimensions": {
       "S1": 12.0,
@@ -14784,7 +14784,7 @@
      "hoseDash": 3,
      "hoseInch": "3/16\"",
      "hoseDn": 5,
-     "portLabel": "Z1/4\"×18",
+     "portLabel": "NPT1/4\"\u00d718",
      "portDash": 4,
      "dimensions": {
       "S1": 17.0,
@@ -14799,7 +14799,7 @@
      "hoseDash": 4,
      "hoseInch": "1/4\"",
      "hoseDn": 6,
-     "portLabel": "Z1/8\"×27",
+     "portLabel": "NPT1/8\"\u00d727",
      "portDash": 2,
      "dimensions": {
       "S1": 12.0,
@@ -14814,7 +14814,7 @@
      "hoseDash": 4,
      "hoseInch": "1/4\"",
      "hoseDn": 6,
-     "portLabel": "Z1/4\"×18",
+     "portLabel": "NPT1/4\"\u00d718",
      "portDash": 4,
      "dimensions": {
       "S1": 17.0,
@@ -14829,7 +14829,7 @@
      "hoseDash": 4,
      "hoseInch": "1/4\"",
      "hoseDn": 6,
-     "portLabel": "Z3/8\"×18",
+     "portLabel": "NPT3/8\"\u00d718",
      "portDash": 6,
      "dimensions": {
       "S1": 19.0,
@@ -14844,7 +14844,7 @@
      "hoseDash": 5,
      "hoseInch": "5/16\"",
      "hoseDn": 8,
-     "portLabel": "Z1/4\"×18",
+     "portLabel": "NPT1/4\"\u00d718",
      "portDash": 4,
      "dimensions": {
       "S1": 17.0,
@@ -14859,7 +14859,7 @@
      "hoseDash": 5,
      "hoseInch": "5/16\"",
      "hoseDn": 8,
-     "portLabel": "Z3/8\"×18",
+     "portLabel": "NPT3/8\"\u00d718",
      "portDash": 6,
      "dimensions": {
       "S1": 19.0,
@@ -14874,7 +14874,7 @@
      "hoseDash": 6,
      "hoseInch": "3/8\"",
      "hoseDn": 10,
-     "portLabel": "Z1/4\"×18",
+     "portLabel": "NPT1/4\"\u00d718",
      "portDash": 4,
      "dimensions": {
       "S1": 17.0,
@@ -14889,7 +14889,7 @@
      "hoseDash": 6,
      "hoseInch": "3/8\"",
      "hoseDn": 10,
-     "portLabel": "Z3/8\"×18",
+     "portLabel": "NPT3/8\"\u00d718",
      "portDash": 6,
      "dimensions": {
       "S1": 19.0,
@@ -14904,7 +14904,7 @@
      "hoseDash": 6,
      "hoseInch": "3/8\"",
      "hoseDn": 10,
-     "portLabel": "Z1/2\"×14",
+     "portLabel": "NPT1/2\"\u00d714",
      "portDash": 8,
      "dimensions": {
       "S1": 22.0,
@@ -14919,7 +14919,7 @@
      "hoseDash": 8,
      "hoseInch": "1/2\"",
      "hoseDn": 12,
-     "portLabel": "Z3/8\"×18",
+     "portLabel": "NPT3/8\"\u00d718",
      "portDash": 6,
      "dimensions": {
       "S1": 19.0,
@@ -14934,7 +14934,7 @@
      "hoseDash": 8,
      "hoseInch": "1/2\"",
      "hoseDn": 12,
-     "portLabel": "Z1/2\"×14",
+     "portLabel": "NPT1/2\"\u00d714",
      "portDash": 8,
      "dimensions": {
       "S1": 22.0,
@@ -14949,7 +14949,7 @@
      "hoseDash": 8,
      "hoseInch": "1/2\"",
      "hoseDn": 12,
-     "portLabel": "Z3/4\"×14",
+     "portLabel": "NPT3/4\"\u00d714",
      "portDash": 12,
      "dimensions": {
       "S1": 27.0,
@@ -14964,7 +14964,7 @@
      "hoseDash": 10,
      "hoseInch": "5/8\"",
      "hoseDn": 16,
-     "portLabel": "Z1/2\"×14",
+     "portLabel": "NPT1/2\"\u00d714",
      "portDash": 8,
      "dimensions": {
       "S1": 22.0,
@@ -14979,7 +14979,7 @@
      "hoseDash": 10,
      "hoseInch": "5/8\"",
      "hoseDn": 16,
-     "portLabel": "Z3/4\"×14",
+     "portLabel": "NPT3/4\"\u00d714",
      "portDash": 12,
      "dimensions": {
       "S1": 27.0,
@@ -14994,7 +14994,7 @@
      "hoseDash": 10,
      "hoseInch": "5/8\"",
      "hoseDn": 16,
-     "portLabel": "Z1\"×11.5",
+     "portLabel": "NPT1\"\u00d711.5",
      "portDash": 16,
      "dimensions": {
       "S1": 36.0,
@@ -15009,7 +15009,7 @@
      "hoseDash": 12,
      "hoseInch": "3/4\"",
      "hoseDn": 20,
-     "portLabel": "Z3/4\"×14",
+     "portLabel": "NPT3/4\"\u00d714",
      "portDash": 12,
      "dimensions": {
       "S1": 27.0,
@@ -15024,7 +15024,7 @@
      "hoseDash": 12,
      "hoseInch": "3/4\"",
      "hoseDn": 20,
-     "portLabel": "Z1\"×11.5",
+     "portLabel": "NPT1\"\u00d711.5",
      "portDash": 16,
      "dimensions": {
       "S1": 36.0,
@@ -15039,7 +15039,7 @@
      "hoseDash": 16,
      "hoseInch": "1\"",
      "hoseDn": 25,
-     "portLabel": "Z3/4\"×14",
+     "portLabel": "NPT3/4\"\u00d714",
      "portDash": 12,
      "dimensions": {
       "S1": 32.0,
@@ -15054,7 +15054,7 @@
      "hoseDash": 16,
      "hoseInch": "1\"",
      "hoseDn": 25,
-     "portLabel": "Z1\"×11.5",
+     "portLabel": "NPT1\"\u00d711.5",
      "portDash": 16,
      "dimensions": {
       "S1": 36.0,
@@ -15069,7 +15069,7 @@
      "hoseDash": 16,
      "hoseInch": "1\"",
      "hoseDn": 25,
-     "portLabel": "Z1.1/4\"×11.5",
+     "portLabel": "NPT1.1/4\"\u00d711.5",
      "portDash": 20,
      "dimensions": {
       "S1": 46.0,
@@ -15084,7 +15084,7 @@
      "hoseDash": 20,
      "hoseInch": "1.1/4\"",
      "hoseDn": 32,
-     "portLabel": "Z1.1/4\"×11.5",
+     "portLabel": "NPT1.1/4\"\u00d711.5",
      "portDash": 20,
      "dimensions": {
       "S1": 46.0,
@@ -15099,7 +15099,7 @@
      "hoseDash": 24,
      "hoseInch": "1.1/2\"",
      "hoseDn": 40,
-     "portLabel": "Z1.1/2\"×11.5",
+     "portLabel": "NPT1.1/2\"\u00d711.5",
      "portDash": 24,
      "dimensions": {
       "S1": 50.0,
@@ -15114,7 +15114,7 @@
      "hoseDash": 32,
      "hoseInch": "2\"",
      "hoseDn": 50,
-     "portLabel": "Z2\"×11.5",
+     "portLabel": "NPT2\"\u00d711.5",
      "portDash": 32,
      "dimensions": {
       "S1": 65.0,
@@ -15137,7 +15137,7 @@
      "hoseDash": 3,
      "hoseInch": "3/16\"",
      "hoseDn": 5,
-     "portLabel": "7/16\"×20",
+     "portLabel": "7/16\"\u00d720",
      "portDash": 4,
      "dimensions": {
       "S2": 15.0,
@@ -15152,7 +15152,7 @@
      "hoseDash": 4,
      "hoseInch": "1/4\"",
      "hoseDn": 6,
-     "portLabel": "7/16\"×20",
+     "portLabel": "7/16\"\u00d720",
      "portDash": 4,
      "dimensions": {
       "S2": 15.0,
@@ -15167,7 +15167,7 @@
      "hoseDash": 4,
      "hoseInch": "1/4\"",
      "hoseDn": 6,
-     "portLabel": "5/8\"×18",
+     "portLabel": "5/8\"\u00d718",
      "portDash": 6,
      "dimensions": {
       "S2": 22.0,
@@ -15182,7 +15182,7 @@
      "hoseDash": 5,
      "hoseInch": "5/16\"",
      "hoseDn": 8,
-     "portLabel": "1/2\"×20",
+     "portLabel": "1/2\"\u00d720",
      "portDash": 5,
      "dimensions": {
       "S2": 17.0,
@@ -15197,7 +15197,7 @@
      "hoseDash": 5,
      "hoseInch": "5/16\"",
      "hoseDn": 6,
-     "portLabel": "5/8\"×18",
+     "portLabel": "5/8\"\u00d718",
      "portDash": 6,
      "dimensions": {
       "S2": 22.0,
@@ -15212,7 +15212,7 @@
      "hoseDash": 6,
      "hoseInch": "3/8\"",
      "hoseDn": 10,
-     "portLabel": "5/8\"×18",
+     "portLabel": "5/8\"\u00d718",
      "portDash": 6,
      "dimensions": {
       "S2": 22.0,
@@ -15227,7 +15227,7 @@
      "hoseDash": 8,
      "hoseInch": "1/2\"",
      "hoseDn": 12,
-     "portLabel": "3/4\"×16",
+     "portLabel": "3/4\"\u00d716",
      "portDash": 8,
      "dimensions": {
       "S2": 24.0,
@@ -15242,7 +15242,7 @@
      "hoseDash": 8,
      "hoseInch": "1/2\"",
      "hoseDn": 12,
-     "portLabel": "7/8\"×14",
+     "portLabel": "7/8\"\u00d714",
      "portDash": 10,
      "dimensions": {
       "S2": 27.0,
@@ -15257,7 +15257,7 @@
      "hoseDash": 10,
      "hoseInch": "5/8\"",
      "hoseDn": 16,
-     "portLabel": "7/8\"×14",
+     "portLabel": "7/8\"\u00d714",
      "portDash": 10,
      "dimensions": {
       "S2": 27.0,
@@ -15295,7 +15295,7 @@
      "hoseDash": 4,
      "hoseInch": "1/4\"",
      "hoseDn": 6,
-     "portLabel": "7/16×20",
+     "portLabel": "7/16\u00d720",
      "portDash": 4,
      "dimensions": {
       "S1": 12.0,
@@ -15310,7 +15310,7 @@
      "hoseDash": 5,
      "hoseInch": "5/16\"",
      "hoseDn": 8,
-     "portLabel": "1/2 ×20",
+     "portLabel": "1/2 \u00d720",
      "portDash": 5,
      "dimensions": {
       "S1": 14.0,
@@ -15325,7 +15325,7 @@
      "hoseDash": 6,
      "hoseInch": "3/8\"",
      "hoseDn": 10,
-     "portLabel": "5/8 ×18",
+     "portLabel": "5/8 \u00d718",
      "portDash": 6,
      "dimensions": {
       "S1": 17.0,
@@ -15340,7 +15340,7 @@
      "hoseDash": 8,
      "hoseInch": "1/2\"",
      "hoseDn": 12,
-     "portLabel": "3/4\"×16",
+     "portLabel": "3/4\"\u00d716",
      "portDash": 8,
      "dimensions": {
       "S1": 22.0,
@@ -15355,7 +15355,7 @@
      "hoseDash": 10,
      "hoseInch": "5/8\"",
      "hoseDn": 16,
-     "portLabel": "7/8\"×14",
+     "portLabel": "7/8\"\u00d714",
      "portDash": 10,
      "dimensions": {
       "S1": 24.0,
@@ -15370,7 +15370,7 @@
      "hoseDash": 12,
      "hoseInch": "3/4\"",
      "hoseDn": 20,
-     "portLabel": "1.1/16\"×14",
+     "portLabel": "1.1/16\"\u00d714",
      "portDash": 12,
      "dimensions": {
       "S1": 30.0,
@@ -15393,7 +15393,7 @@
      "hoseDash": 4,
      "hoseInch": "1/4\"",
      "hoseDn": 6,
-     "portLabel": "7/16\"×20",
+     "portLabel": "7/16\"\u00d720",
      "portDash": 4,
      "dimensions": {
       "S1": 14.0,
@@ -15409,7 +15409,7 @@
      "hoseDash": 4,
      "hoseInch": "1/4\"",
      "hoseDn": 6,
-     "portLabel": "1/2\"×20",
+     "portLabel": "1/2\"\u00d720",
      "portDash": 5,
      "dimensions": {
       "S1": 17.0,
@@ -15425,7 +15425,7 @@
      "hoseDash": 5,
      "hoseInch": "5/16\"",
      "hoseDn": 8,
-     "portLabel": "9/16\"×18",
+     "portLabel": "9/16\"\u00d718",
      "portDash": 6,
      "dimensions": {
       "S1": 17.0,
@@ -15441,7 +15441,7 @@
      "hoseDash": 6,
      "hoseInch": "3/8\"",
      "hoseDn": 10,
-     "portLabel": "9/16\"×18",
+     "portLabel": "9/16\"\u00d718",
      "portDash": 6,
      "dimensions": {
       "S1": 17.0,
@@ -15457,7 +15457,7 @@
      "hoseDash": 6,
      "hoseInch": "3/8\"",
      "hoseDn": 10,
-     "portLabel": "3/4\"×16",
+     "portLabel": "3/4\"\u00d716",
      "portDash": 8,
      "dimensions": {
       "S1": 22.0,
@@ -15473,7 +15473,7 @@
      "hoseDash": 8,
      "hoseInch": "1/2\"",
      "hoseDn": 12,
-     "portLabel": "3/4\"×16",
+     "portLabel": "3/4\"\u00d716",
      "portDash": 8,
      "dimensions": {
       "S1": 22.0,
@@ -15489,7 +15489,7 @@
      "hoseDash": 8,
      "hoseInch": "1/2\"",
      "hoseDn": 12,
-     "portLabel": "7/8\"×14",
+     "portLabel": "7/8\"\u00d714",
      "portDash": 10,
      "dimensions": {
       "S1": 27.0,
@@ -15505,7 +15505,7 @@
      "hoseDash": 10,
      "hoseInch": "5/8\"",
      "hoseDn": 16,
-     "portLabel": "7/8\"×14",
+     "portLabel": "7/8\"\u00d714",
      "portDash": 10,
      "dimensions": {
       "S1": 27.0,
@@ -15521,7 +15521,7 @@
      "hoseDash": 10,
      "hoseInch": "5/8\"",
      "hoseDn": 16,
-     "portLabel": "1.1/16\"×12",
+     "portLabel": "1.1/16\"\u00d712",
      "portDash": 12,
      "dimensions": {
       "S1": 32.0,
@@ -15537,7 +15537,7 @@
      "hoseDash": 12,
      "hoseInch": "3/4\"",
      "hoseDn": 20,
-     "portLabel": "1.1/16\"×12",
+     "portLabel": "1.1/16\"\u00d712",
      "portDash": 12,
      "dimensions": {
       "S1": 32.0,
@@ -15553,7 +15553,7 @@
      "hoseDash": 16,
      "hoseInch": "1\"",
      "hoseDn": 25,
-     "portLabel": "1.5/16\"×12",
+     "portLabel": "1.5/16\"\u00d712",
      "portDash": 16,
      "dimensions": {
       "S1": 38.0,
