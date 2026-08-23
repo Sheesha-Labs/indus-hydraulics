@@ -40,6 +40,7 @@
 import { MARKET_PAGE_RECORDS as WAVE_1 } from './market-page-records'
 import { MARKET_PAGE_RECORDS_2 as WAVE_2 } from './market-page-records-2'
 import { MARKET_PAGE_RECORDS_3 as WAVE_3 } from './market-page-records-3'
+import { MARKET_PAGE_RECORDS_4 as WAVE_4 } from './market-page-records-4'
 
 /**
  * Every written record, in registry order across both authoring waves.
@@ -48,7 +49,7 @@ import { MARKET_PAGE_RECORDS_3 as WAVE_3 } from './market-page-records-3'
  * route, the tests and the admin queue treat them identically — a wave-2
  * record is not a lesser record, it is a later one.
  */
-export const ALL_MARKET_PAGE_RECORDS: readonly MarketPage[] = [...WAVE_1, ...WAVE_2, ...WAVE_3]
+export const ALL_MARKET_PAGE_RECORDS: readonly MarketPage[] = [...WAVE_1, ...WAVE_2, ...WAVE_3, ...WAVE_4]
 
 /** `[lon, lat]`, in that order — the order d3-geo and GeoJSON both use. */
 export type LonLat = readonly [lon: number, lat: number]
