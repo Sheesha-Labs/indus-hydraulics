@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { ExternalLink, Images, FileText, Plus } from 'lucide-react'
 import { db } from '@indus/db'
-import { MASTER_PAGES, masterContentKey } from '@indus/domain'
+import { MASTER_PAGES, SUBPAGE_KINDS, marketsOrdered, masterContentKey } from '@indus/domain'
 import AdminPageShell from '../../../../components/admin/AdminPageShell'
 
 export const metadata: Metadata = { title: 'Pages & Blocks — Indus Admin' }
@@ -29,14 +29,25 @@ type Props = { params: Promise<Record<string, never>> }
 export default async function AdminPagesIndex({ params }: Props) {
   await params
 
-  const [standalone, heroSlideCount, edited] = await Promise.all([
+  const [standalone, heroSlideCount, edited, subEditedByKind] = await Promise.all([
     db.cmsPage.findMany({ orderBy: { updatedAt: 'desc' } }),
     db.homepageHeroSlide.count(),
     db.pageContent.findMany({
       where: { kind: 'master' },
       select: { key: true, updatedAt: true },
     }),
+    db.pageContent.groupBy({
+      by: ['kind'],
+      where: { kind: { in: SUBPAGE_KINDS.map((k) => k.kind) } },
+      _count: { _all: true },
+    }),
   ])
+
+  const editedCount = new Map(subEditedByKind.map((row) => [row.kind, row._count._all]))
+  // How many pages of each kind EXIST, against how many have been touched.
+  // A count of records alone would read as "12 markets edited" on a section
+  // nobody has opened.
+  const totalByKind: Record<string, number> = { market: marketsOrdered().length }
 
   // Which master pages have ever been saved, so a card can say "never edited"
   // rather than implying an edit history that does not exist.
@@ -93,14 +104,30 @@ export default async function AdminPagesIndex({ params }: Props) {
         <div>
           <h2 className="text-[15px] font-medium tracking-[-0.01em]">Sub-pages</h2>
           <p className="mt-1 max-w-[74ch] text-[13px] leading-[1.55] text-ih-muted">
-            Pages that exist once per record, built from a shared template — the export-market
-            landings and the brand pages. Their templates are being wired up section by section;
-            each family appears here as soon as its page reads its content from this editor.
+            Pages that exist once per record, built from a shared template. Editing one changes that
+            page only; everything left blank keeps the wording the template builds from the record.
           </p>
         </div>
-        <p className="rounded-lg border border-dashed border-ih-border bg-ih-surface-2 px-4 py-6 text-center text-[13px] text-ih-muted">
-          No sub-page families are editable yet.
-        </p>
+        <ul className="grid grid-cols-1 gap-3 sm:grid-cols-2 xl:grid-cols-4">
+          {SUBPAGE_KINDS.map((kind) => {
+            const total = totalByKind[kind.kind] ?? 0
+            const touched = editedCount.get(kind.kind) ?? 0
+            return (
+              <li key={kind.kind}>
+                <Link
+                  href={kind.adminPath}
+                  className="flex h-full flex-col gap-1 rounded-lg border border-ih-border bg-ih-surface p-4 transition-colors hover:border-ih-accent"
+                >
+                  <span className="text-[13.5px] font-medium text-ih-ink">{kind.label}</span>
+                  <span className="font-mono text-[11px] text-ih-muted">{kind.publicPath}/…</span>
+                  <span className="mt-1.5 font-mono text-[11px] text-ih-muted-2">
+                    {total} {total === 1 ? kind.itemLabel : `${kind.itemLabel}s`} · {touched} edited
+                  </span>
+                </Link>
+              </li>
+            )
+          })}
+        </ul>
       </section>
 
       <section className="flex flex-col gap-3 border-t border-ih-border pt-8">

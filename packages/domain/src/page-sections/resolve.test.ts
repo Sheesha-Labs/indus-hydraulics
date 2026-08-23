@@ -11,8 +11,12 @@ import {
   validateSections,
   visibleList,
   MASTER_PAGES,
+  SUBPAGE_KINDS,
   getMasterPage,
+  isSubPageKind,
   masterContentKey,
+  subPageContentKey,
+  subPageDef,
 } from '../index'
 import type { MasterPageDef, StoredSection } from '../index'
 
@@ -278,5 +282,61 @@ describe('registry', () => {
     expect(getMasterPage('home')?.key).toBe('home')
     expect(getMasterPage('nope')).toBeNull()
     expect(masterContentKey('home')).toBe('master/home')
+  })
+})
+
+describe('sub-pages', () => {
+  test('a kind is only listed once its template exists', () => {
+    for (const kind of SUBPAGE_KINDS) {
+      expect(isSubPageKind(kind.kind)).toBe(true)
+      expect(() => subPageDef(kind.kind, { name: 'X', slug: 'x' })).not.toThrow()
+    }
+  })
+
+  test('the content key namespaces a sub-page away from the master pages', () => {
+    expect(subPageContentKey('market', 'nigeria')).toBe('market/nigeria')
+    expect(subPageContentKey('market', 'nigeria')).not.toBe(masterContentKey('nigeria'))
+  })
+
+  test('every copy field on the market template is an OVERRIDE, defaulting to blank', () => {
+    // This is the whole contract: a market nobody has edited must render what
+    // the template builds from its record, not a shared block of boilerplate
+    // repeated on a hundred pages.
+    const def = subPageDef('market', { name: 'Nigeria', slug: 'nigeria' })
+    for (const section of def.sections) {
+      for (const field of section.fields) {
+        expect(
+          section.defaults[field.key] ?? null,
+          `${section.key}/${field.key} ships a value instead of an override`,
+        ).toBeNull()
+      }
+    }
+  })
+
+  test('no required field, so an untouched market always validates', () => {
+    const def = subPageDef('market', { name: 'Nigeria', slug: 'nigeria' })
+    const result = validateSections(
+      def,
+      def.sections.map((s) => ({ key: s.key, enabled: true, values: {} })),
+    )
+    expect(result.ok).toBe(true)
+  })
+
+  test('the hero is locked and the lead forms are not', () => {
+    const def = subPageDef('market', { name: 'Nigeria', slug: 'nigeria' })
+    expect(def.sections.find((s) => s.key === 'hero')?.locked).toBe(true)
+    expect(def.sections.find((s) => s.key === 'quote_form')?.locked).toBeUndefined()
+  })
+
+  test('reordering a market survives a round trip through storage', () => {
+    const def = subPageDef('market', { name: 'Nigeria', slug: 'nigeria' })
+    const moved = [
+      { key: 'faq', enabled: true, values: {} },
+      { key: 'hero', enabled: true, values: {} },
+    ]
+    const resolved = resolveSections(def, moved)
+    expect(resolved.slice(0, 2).map((s) => s.key)).toEqual(['faq', 'hero'])
+    // Everything the client didn't send keeps its place at the end.
+    expect(resolved).toHaveLength(def.sections.length)
   })
 })
