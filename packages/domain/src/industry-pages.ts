@@ -235,7 +235,10 @@ const DATA_CENTRE_LIQUID_COOLING: DesignedIndustryPage = {
     tagline: 'FWS · CDU · TCS',
     description:
       'Stainless steel valves, fittings, flanges and drawing-based adapters for facility water, CDU assemblies and selected technology-cooling interfaces.',
-    chips: ['304 / 316L', 'Drawing-based', 'MTR on request'],
+    // Upper case to match the six table-backed rows. The index card renders
+    // chips verbatim — it applies no text-transform — so a mixed-case chip
+    // sits in the grid looking like a different kind of card.
+    chips: ['304 / 316L', 'DRAWING-BASED', 'MTR ON REQUEST'],
   },
 
   seo: {
