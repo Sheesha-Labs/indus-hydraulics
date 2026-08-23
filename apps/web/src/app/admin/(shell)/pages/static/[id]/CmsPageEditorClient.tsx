@@ -88,7 +88,7 @@ export default function CmsPageEditorClient({ isNew, page, recentImages }: Props
             <span className="text-[12px] text-ih-success-ink">Saved at {savedAt}</span>
           )}
           <Link
-            href="/admin/cms?tab=pages"
+            href="/admin/pages"
             className="flex h-9 items-center rounded-md border border-ih-border bg-ih-surface px-4 text-[13px] font-medium transition-colors hover:border-ih-accent hover:text-ih-accent"
           >
             ← CMS

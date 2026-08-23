@@ -1,15 +1,17 @@
 import type { Metadata } from 'next'
+import { Fragment, type ReactNode } from 'react'
 import { headers } from 'next/headers'
 import Image from 'next/image'
 import Link from 'next/link'
 import { unstable_cache } from 'next/cache'
 import { db } from '@indus/db'
-import { HERO_TERMS, heroLeadFor } from '@indus/domain'
+import { HERO_TERMS, heroLeadFor, img, interpolate, list, str, visibleList } from '@indus/domain'
 import HomeNewsletterForm from '../../components/HomeNewsletterForm'
 import HomeHeroCarousel, { type HomeHeroSlide } from '../../components/HomeHeroCarousel'
 import HeroTermRotator from '../../components/HeroTermRotator'
 import { getIndustryList } from '../../lib/industry-content'
 import { mediaUrl } from '../../lib/media'
+import { getMasterPageContent } from '../../lib/page-content'
 import { BASE_URL } from '../../lib/seo'
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -161,7 +163,7 @@ export default async function HomePage({
   // this is not narrowed to `string`. heroLeadFor handles both.
   searchParams: Promise<{ geo?: string | string[] }>
 }) {
-  const [categories, brands, featuredProducts, blogPosts, activeSkuCount, publishedBrandCount, heroSlides] = await Promise.all([
+  const [categories, brands, featuredProducts, blogPosts, activeSkuCount, publishedBrandCount, heroSlides, content] = await Promise.all([
     getHomeCategories(),
     getHomeBrands(),
     getHomeFeaturedProducts(),
@@ -169,6 +171,11 @@ export default async function HomePage({
     getActiveSkuCount(),
     getPublishedBrandCount(),
     getHomeHeroSlides(),
+    // Section order, visibility and copy, edited under Pages & Blocks. Falls
+    // back to the wording declared in `@indus/domain/page-sections` whenever
+    // nothing has been saved — which is what the defaults in that registry
+    // are: this page's own copy, moved but not changed.
+    getMasterPageContent('home'),
   ])
 
   // First line of the headline, chosen from the visitor's country.
@@ -201,44 +208,71 @@ export default async function HomePage({
     desc: row.description ?? row.tagline ?? '',
   }))
 
-  const whyItems = [
-    { n: '/01', title: 'Specialists, not generalists', body: 'We carry only hydraulic components — no PPE, no fasteners. Depth over breadth.' },
-    { n: '/02', title: 'Genuine parts, traceable', body: 'Every SKU comes with origin certificate and batch traceability. No counterfeits.' },
-    { n: '/03', title: 'Stock you can count on', body: 'Live inventory on the site is real. If it says "in stock", it ships today.' },
-    { n: '/04', title: 'Application help, free', body: 'Send us a circuit, a failure photo or a bare SKU — our engineers respond same business day.' },
-  ]
+  /*
+    The live figures editable copy may quote.
 
-  const uspItems = [
-    { n: '01', title: 'Same-day dispatch', body: 'Stock orders before 14:00 GST ship same day from our Dubai HQ.' },
-    { n: '02', title: 'Engineering support', body: 'Speak to a real applications engineer — not a call centre.' },
-    { n: '03', title: 'Datasheets & CAD', body: 'Every SKU ships with a PDF datasheet and downloadable 3D model.' },
-    { n: '04', title: 'Backed by warranty', body: '24-month manufacturer warranty across the entire catalogue.' },
-  ]
+    Freezing these into the strings would be a slow-motion lie — the moment an
+    editor touched the sentence the number would stop tracking the catalogue.
+    So the stored copy carries `{skus}`, `{brands}` and friends, and `t()`
+    substitutes. See `@indus/domain/page-sections/tokens.ts`.
+  */
+  const tokens = {
+    skus: activeSkuCount,
+    skusFloor: heroSkuFloor,
+    brands: publishedBrandCount,
+    categories: String(categories.length).padStart(2, '0'),
+    industries: industries.length,
+    years: yearsInBusiness,
+  }
+  const t = (value: string | null): string | null => interpolate(value, tokens)
 
   const [featuredCat, ...restCats] = categories
 
-  return (
-    <div>
-      {/* ── HERO ─────────────────────────────────────────────────────────── */}
+  const hero = content.values('hero')
+  const usp = content.values('usp')
+  const categoriesCopy = content.values('categories')
+  const brandsCopy = content.values('brands')
+  const featuredCopy = content.values('featured_products')
+  const industriesCopy = content.values('industries')
+  const why = content.values('why')
+  const blog = content.values('blog')
+  const newsletter = content.values('newsletter')
+
+  const uspItems = visibleList<{ name?: string; desc?: string }>(usp, 'items')
+  const whyItems = visibleList<{ name?: string; desc?: string }>(why, 'items')
+  const heroStats = list<{ value?: string; label?: string }>(hero, 'stats')
+  const quoteImage = img(why, 'quote_image')
+
+  /*
+    Every section, keyed. The page renders `content.order`, which is the
+    editor's arrangement with hidden sections already dropped — so moving a
+    band in the admin moves it here, and hiding one removes it, without this
+    file knowing which arrangement it is rendering.
+  */
+  const sections: Record<string, ReactNode> = {
+    hero: (
+      /* ── HERO ─────────────────────────────────────────────────────────── */
       <section className="overflow-hidden border-b border-ih-border bg-ih-surface">
         <div className="mx-auto max-w-[1440px] px-5 sm:px-8 xl:px-12 py-16 grid grid-cols-1 lg:grid-cols-[1.05fr_1fr] gap-16 items-center">
 
           {/* Left copy */}
           <div>
             <span className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">
-              EST. 2003 — DUBAI · UNITED ARAB EMIRATES
+              {t(str(hero, 'eyebrow'))}
             </span>
             {/* The rotating term sits on its own line deliberately. The six
                 terms differ in length; inline, every swap reflows the whole
                 headline, which reads as cheap. On its own line the reflow is
                 invisible and the term carries the emphasis anyway. */}
             <h1 className="mb-5 mt-5 text-balance font-serif text-[clamp(38px,5vw,56px)] font-normal leading-[1.04] tracking-[-0.01em]">
-              <span className="block">{heroLead}</span>
+              {/* An override replaces the country-aware line entirely — an
+                  editor who types one has decided the geo wording is wrong for
+                  everyone, not for one country. */}
+              <span className="block">{t(str(hero, 'lead_override')) ?? heroLead}</span>
               <HeroTermRotator terms={HERO_TERMS} className="block" />
             </h1>
             <p className="max-w-[540px] text-[16px] leading-[1.6] text-ih-ink-2">
-              {heroSkuFloor.toLocaleString()}+ SKUs across pumps, cylinders, valves and consumables — from {publishedBrandCount} specialist brands.
-              ISO-certified, datasheet-backed, shipped from our Dubai HQ across the GCC.
+              {t(str(hero, 'body'))}
             </p>
 
             {/* Static mirror of the rotating terms. Two jobs: a moving word is
@@ -246,13 +280,13 @@ export default async function HomePage({
                 hero contributes — without them the homepage passes its ranking
                 strength to no category page at all. */}
             <ul className="mt-6 flex max-w-[540px] flex-wrap gap-2">
-              {HERO_TERMS.map((t) => (
-                <li key={t.href}>
+              {HERO_TERMS.map((term) => (
+                <li key={term.href}>
                   <Link
-                    href={t.href}
+                    href={term.href}
                     className="inline-flex min-h-10 items-center rounded-md border border-ih-border px-3 text-[13px] text-ih-ink-2 transition-colors hover:border-ih-accent hover:text-ih-accent focus-visible:border-ih-accent focus-visible:shadow-[0_0_0_3px_var(--color-ih-accent-soft)] focus-visible:outline-none"
                   >
-                    {t.word}
+                    {term.word}
                   </Link>
                 </li>
               ))}
@@ -262,6 +296,7 @@ export default async function HomePage({
             <form action={`/search`} method="GET" className="mt-8 flex max-w-[540px] flex-col gap-1.5 rounded-md border border-ih-border bg-ih-surface p-1.5 sm:flex-row">
               <select
                 name="category"
+                aria-label="Category"
                 className="w-full rounded-sm border-0 bg-transparent sm:w-[170px] px-3 text-[13.5px] text-ih-ink-2 outline-none focus-visible:ring-[3px] focus-visible:ring-ih-accent-soft"
               >
                 <option value="">All categories</option>
@@ -272,31 +307,29 @@ export default async function HomePage({
               <input
                 name="q"
                 type="search"
-                placeholder="Search by SKU, spec or part number…"
+                aria-label="Search the catalogue"
+                placeholder={str(hero, 'search_placeholder') ?? 'Search by SKU, spec or part number…'}
                 className="w-full min-w-0 flex-1 rounded-sm border-0 bg-transparent px-3 py-2 text-[13.5px] text-ih-ink outline-none placeholder:text-ih-muted focus-visible:ring-[3px] focus-visible:ring-ih-accent-soft"
               />
               <button
                 type="submit"
                 className="h-10 shrink-0 rounded-md bg-ih-accent px-[18px] text-[13.5px] font-medium text-ih-accent-fg transition-colors hover:bg-ih-accent-hover"
               >
-                Search
+                {str(hero, 'search_button') ?? 'Search'}
               </button>
             </form>
 
             {/* Stats */}
-            <div className="mt-10 grid grid-cols-2 gap-7 sm:grid-cols-4">
-              {[
-                { num: activeSkuCount.toLocaleString(), label: 'SKUs IN STOCK' },
-                { num: String(publishedBrandCount), label: 'PARTNER BRANDS' },
-                { num: '47', label: 'COUNTRIES SERVED' },
-                { num: `${yearsInBusiness} yrs`, label: 'IN BUSINESS' },
-              ].map((s) => (
-                <div key={s.label} className="border-t-2 border-ih-accent pt-3.5">
-                  <span className="block font-mono text-[26px] leading-none tracking-[-0.03em] tabular-nums">{s.num}</span>
-                  <span className="mt-2.5 block font-mono text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">{s.label}</span>
-                </div>
-              ))}
-            </div>
+            {heroStats.length > 0 ? (
+              <div className="mt-10 grid grid-cols-2 gap-7 sm:grid-cols-4">
+                {heroStats.map((stat, i) => (
+                  <div key={`${stat.label ?? ''}-${i}`} className="border-t-2 border-ih-accent pt-3.5">
+                    <span className="block font-mono text-[26px] leading-none tracking-[-0.03em] tabular-nums">{t(stat.value ?? '')}</span>
+                    <span className="mt-2.5 block font-mono text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">{stat.label}</span>
+                  </div>
+                ))}
+              </div>
+            ) : null}
           </div>
 
           {/* Right visual — carousel if hero slides exist, otherwise the
@@ -307,16 +340,9 @@ export default async function HomePage({
             {heroSlides.length > 0 ? (
               <HomeHeroCarousel slides={heroSlides} />
             ) : (
-              <div className="relative bg-ih-bg border border-ih-border overflow-hidden" style={{ aspectRatio: '1.05 / 1' }}>
+              <div className="relative aspect-[1.05/1] overflow-hidden border border-ih-border bg-ih-bg">
                 {/* Grid overlay */}
-                <div
-                  className="absolute inset-0 opacity-[0.04]"
-                  style={{
-                    backgroundImage:
-                      'linear-gradient(to right, currentColor 1px, transparent 1px), linear-gradient(to bottom, currentColor 1px, transparent 1px)',
-                    backgroundSize: '40px 40px',
-                  }}
-                />
+                <div className="absolute inset-0 bg-[linear-gradient(to_right,currentColor_1px,transparent_1px),linear-gradient(to_bottom,currentColor_1px,transparent_1px)] bg-[length:40px_40px] opacity-[0.04]" />
                 {/* Floating callouts */}
                 <div className="absolute top-8 left-8 bg-ih-navy text-white font-mono text-[11px] tracking-[0.06em] px-3 py-2 flex items-center gap-2">
                   <span className="w-1.5 h-1.5 rounded-full bg-ih-accent shrink-0" />
@@ -350,40 +376,46 @@ export default async function HomePage({
           </div>
         </div>
       </section>
+    ),
 
-      {/* ── USP STRIP ────────────────────────────────────────────────────── */}
+    usp: uspItems.length > 0 ? (
+      /* ── USP STRIP ────────────────────────────────────────────────────── */
       <section className="bg-ih-navy py-[34px] text-[oklch(0.75_0.02_250)]">
         <div className="mx-auto max-w-[1440px] px-5 sm:px-8 xl:px-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          {uspItems.map((u) => (
-            <div key={u.n} className="flex gap-3.5 items-start">
-              <span className="mt-0.5 shrink-0 font-mono text-[11px] text-ih-steel">/{u.n}</span>
+          {uspItems.map((item, i) => (
+            <div key={`${item.name ?? ''}-${i}`} className="flex gap-3.5 items-start">
+              <span className="mt-0.5 shrink-0 font-mono text-[11px] text-ih-steel">/{String(i + 1).padStart(2, '0')}</span>
               <div>
-                <h4 className="text-[14px] font-medium text-white">{u.title}</h4>
-                <p className="mt-1.5 text-[12.5px] leading-[1.55]">{u.body}</p>
+                <h4 className="text-[14px] font-medium text-white">{item.name}</h4>
+                <p className="mt-1.5 text-[12.5px] leading-[1.55]">{item.desc}</p>
               </div>
             </div>
           ))}
         </div>
       </section>
+    ) : null,
 
-      {/* ── CATEGORIES ───────────────────────────────────────────────────── */}
+    categories: (
+      /* ── CATEGORIES ───────────────────────────────────────────────────── */
       <section className="py-[72px]">
         <div className="mx-auto max-w-[1440px] px-5 sm:px-8 xl:px-12">
           <div className="flex items-end justify-between mb-8">
             <div>
               <span className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">
-                SHOP BY CATEGORY · {String(categories.length).padStart(2, '0')} GROUPS
+                {t(str(categoriesCopy, 'eyebrow'))}
               </span>
               <h2 className="mt-2 font-serif text-[clamp(26px,3vw,34px)] font-normal leading-[1.12] tracking-[-0.01em]">
-                The full catalogue, organised the way engineers think.
+                {t(str(categoriesCopy, 'heading'))}
               </h2>
             </div>
-            <Link
-              href={`/c`}
-              className="hidden sm:flex h-10 px-4 items-center border border-ih-border font-mono text-[12px] text-ih-ink-2 hover:bg-ih-surface-2 transition-colors shrink-0"
-            >
-              Browse all categories →
-            </Link>
+            {str(categoriesCopy, 'cta_label') && str(categoriesCopy, 'cta_href') ? (
+              <Link
+                href={str(categoriesCopy, 'cta_href') ?? '/c'}
+                className="hidden sm:flex h-10 px-4 items-center border border-ih-border font-mono text-[12px] text-ih-ink-2 hover:bg-ih-surface-2 transition-colors shrink-0"
+              >
+                {str(categoriesCopy, 'cta_label')}
+              </Link>
+            ) : null}
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -411,7 +443,7 @@ export default async function HomePage({
                   )}
                 </div>
                 <div className="lg:flex-1 p-8 flex flex-col justify-center gap-2.5">
-                  <span className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">FEATURED CATEGORY</span>
+                  <span className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">{str(categoriesCopy, 'featured_label')}</span>
                   <div className="flex items-baseline justify-between gap-3">
                     <h3 className="text-[22px] font-semibold tracking-[-0.015em]">{featuredCat.name}</h3>
                     <span className="font-mono text-[12px] text-ih-muted shrink-0">{featuredCat._count.products} SKUs</span>
@@ -464,25 +496,29 @@ export default async function HomePage({
           </div>
         </div>
       </section>
+    ),
 
-      {/* ── BRANDS RAIL ──────────────────────────────────────────────────── */}
+    brands: (
+      /* ── BRANDS RAIL ──────────────────────────────────────────────────── */
       <section className="pb-[72px]">
         <div className="mx-auto max-w-[1440px] px-5 sm:px-8 xl:px-12">
           <div className="flex items-end justify-between mb-6">
             <div>
               <span className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">
-                PARTNER BRANDS · {String(brands.length).padStart(2, '0')}
+                {t(str(brandsCopy, 'eyebrow'))}
               </span>
               <h2 className="mt-2 font-serif text-[clamp(24px,2.5vw,34px)] font-normal leading-[1.12] tracking-[-0.01em]">
-                Authorised distributor for the names engineers trust.
+                {t(str(brandsCopy, 'heading'))}
               </h2>
             </div>
-            <Link
-              href={`/brands`}
-              className="hidden sm:flex h-10 px-4 items-center border border-ih-border font-mono text-[12px] text-ih-ink-2 hover:bg-ih-surface-2 transition-colors shrink-0"
-            >
-              View brand index →
-            </Link>
+            {str(brandsCopy, 'cta_label') && str(brandsCopy, 'cta_href') ? (
+              <Link
+                href={str(brandsCopy, 'cta_href') ?? '/brands'}
+                className="hidden sm:flex h-10 px-4 items-center border border-ih-border font-mono text-[12px] text-ih-ink-2 hover:bg-ih-surface-2 transition-colors shrink-0"
+              >
+                {str(brandsCopy, 'cta_label')}
+              </Link>
+            ) : null}
           </div>
 
           <div className="border border-ih-border bg-ih-surface overflow-hidden grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6">
@@ -490,10 +526,9 @@ export default async function HomePage({
               <Link
                 key={brand.id}
                 href={`/brands/${brand.slug}`}
-                className={`flex flex-col items-center justify-center text-center p-6 hover:bg-ih-surface-2 transition-colors cursor-pointer border-r border-b border-ih-border ${
+                className={`flex aspect-[3/2] flex-col items-center justify-center text-center p-6 hover:bg-ih-surface-2 transition-colors cursor-pointer border-r border-b border-ih-border ${
                   (i + 1) % 6 === 0 ? 'border-r-0' : ''
                 } ${i >= brands.length - (brands.length % 6 || 6) ? 'border-b-0' : ''}`}
-                style={{ aspectRatio: '3/2' }}
               >
                 <div className="font-mono text-[13px] tracking-[0.02em] text-ih-ink-2 uppercase font-medium">
                   <b className="block text-[18px] font-bold tracking-[-0.01em] text-ih-ink normal-case font-sans mb-1">{brand.name}</b>
@@ -504,60 +539,64 @@ export default async function HomePage({
           </div>
         </div>
       </section>
+    ),
 
-      {/* ── FEATURED PRODUCTS ────────────────────────────────────────────── */}
-      {featuredProducts.length > 0 && (
-        <section className="border-t border-ih-border py-[72px]">
-          <div className="mx-auto max-w-[1440px] px-5 sm:px-8 xl:px-12">
-            <div className="flex items-end justify-between mb-8">
-              <div>
-                <span className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">FEATURED · UPDATED WEEKLY</span>
-                <h2 className="mt-2 font-serif text-[clamp(24px,2.5vw,34px)] font-normal leading-[1.12] tracking-[-0.01em]">New &amp; in-stock this week.</h2>
-              </div>
+    featured_products: featuredProducts.length > 0 ? (
+      /* ── FEATURED PRODUCTS ────────────────────────────────────────────── */
+      <section className="border-t border-ih-border py-[72px]">
+        <div className="mx-auto max-w-[1440px] px-5 sm:px-8 xl:px-12">
+          <div className="flex items-end justify-between mb-8">
+            <div>
+              <span className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">{t(str(featuredCopy, 'eyebrow'))}</span>
+              <h2 className="mt-2 font-serif text-[clamp(24px,2.5vw,34px)] font-normal leading-[1.12] tracking-[-0.01em]">{t(str(featuredCopy, 'heading'))}</h2>
+            </div>
+            {str(featuredCopy, 'cta_label') && str(featuredCopy, 'cta_href') ? (
               <Link
-                href={`/c`}
+                href={str(featuredCopy, 'cta_href') ?? '/c'}
                 className="hidden sm:flex h-10 px-4 items-center border border-ih-border font-mono text-[12px] text-ih-ink-2 hover:bg-ih-surface-2 transition-colors shrink-0"
               >
-                View all products →
+                {str(featuredCopy, 'cta_label')}
               </Link>
-            </div>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-              {featuredProducts.map((product) => (
-                <Link
-                  key={product.id}
-                  href={`/p/${product.slug}`}
-                  className="group flex flex-col overflow-hidden rounded-lg border border-ih-border bg-ih-surface transition-colors hover:border-ih-accent"
-                >
-                  <div className="aspect-square bg-ih-surface-2 border-b border-ih-border relative flex items-center justify-center">
-                    <span className="absolute top-3 left-3 bg-ih-navy text-white font-mono text-[10px] tracking-[0.08em] px-2 py-1">
-                      NEW
-                    </span>
-                    <p className="font-mono text-[11px] text-ih-muted-2 text-center px-4">
-                      Product image<br />520×520
-                    </p>
-                  </div>
-                  <div className="p-4 flex flex-col gap-2 flex-1">
-                    <span className="font-mono text-[11px] text-ih-muted-2 tracking-[0.04em]">SKU · {product.sku}</span>
-                    <h4 className="text-[15px] font-medium leading-[1.3] tracking-[-0.01em]">{product.title}</h4>
-                    <div className="mt-auto pt-3 border-t border-ih-border flex gap-3 flex-wrap text-[12px] text-ih-muted">
-                      {product.brand && <strong className="text-ih-ink-2 font-medium">{product.brand.name}</strong>}
-                    </div>
-                  </div>
-                </Link>
-              ))}
-            </div>
+            ) : null}
           </div>
-        </section>
-      )}
 
-      {/* ── INDUSTRIES ───────────────────────────────────────────────────── */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {featuredProducts.map((product) => (
+              <Link
+                key={product.id}
+                href={`/p/${product.slug}`}
+                className="group flex flex-col overflow-hidden rounded-lg border border-ih-border bg-ih-surface transition-colors hover:border-ih-accent"
+              >
+                <div className="aspect-square bg-ih-surface-2 border-b border-ih-border relative flex items-center justify-center">
+                  <span className="absolute top-3 left-3 bg-ih-navy text-white font-mono text-[10px] tracking-[0.08em] px-2 py-1">
+                    NEW
+                  </span>
+                  <p className="font-mono text-[11px] text-ih-muted-2 text-center px-4">
+                    Product image<br />520×520
+                  </p>
+                </div>
+                <div className="p-4 flex flex-col gap-2 flex-1">
+                  <span className="font-mono text-[11px] text-ih-muted-2 tracking-[0.04em]">SKU · {product.sku}</span>
+                  <h4 className="text-[15px] font-medium leading-[1.3] tracking-[-0.01em]">{product.title}</h4>
+                  <div className="mt-auto pt-3 border-t border-ih-border flex gap-3 flex-wrap text-[12px] text-ih-muted">
+                    {product.brand && <strong className="text-ih-ink-2 font-medium">{product.brand.name}</strong>}
+                  </div>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+    ) : null,
+
+    industries: (
+      /* ── INDUSTRIES ───────────────────────────────────────────────────── */
       <section className="border-t border-ih-border">
         <div className="mx-auto max-w-[1440px] px-5 sm:px-8 xl:px-12 py-10">
           <div className="mb-6">
-            <span className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">INDUSTRIES SERVED</span>
+            <span className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">{t(str(industriesCopy, 'eyebrow'))}</span>
             <h2 className="mt-2 font-serif text-[clamp(24px,2.5vw,34px)] font-normal leading-[1.12] tracking-[-0.01em]">
-              Built for the world&apos;s most demanding workshops.
+              {t(str(industriesCopy, 'heading'))}
             </h2>
           </div>
         </div>
@@ -577,29 +616,31 @@ export default async function HomePage({
           ))}
         </div>
       </section>
+    ),
 
-      {/* ── WHY INDUS ────────────────────────────────────────────────────── */}
+    why: (
+      /* ── WHY INDUS ────────────────────────────────────────────────────── */
       <section className="border-t border-ih-border py-[72px]">
         <div className="mx-auto max-w-[1440px] px-5 sm:px-8 xl:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 border border-ih-border bg-ih-surface overflow-hidden">
             {/* Left */}
             <div className="p-12 flex flex-col gap-7">
               <div>
-                <span className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">WHY INDUS · A FEW REASONS</span>
+                <span className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">{t(str(why, 'eyebrow'))}</span>
                 <h2 className="mt-4 max-w-[480px] font-serif text-[clamp(26px,3vw,36px)] font-normal leading-[1.15] tracking-[-0.01em]">
-                  We&apos;re a parts supplier that thinks like an engineering desk.
+                  {t(str(why, 'heading'))}
                 </h2>
               </div>
               <div className="flex flex-col">
                 {whyItems.map((item, i) => (
                   <div
-                    key={item.n}
+                    key={`${item.name ?? ''}-${i}`}
                     className={`grid grid-cols-[32px_1fr] gap-4 py-[18px] ${i > 0 ? 'border-t border-ih-border' : ''}`}
                   >
-                    <span className="font-mono text-[13px] text-ih-accent pt-0.5">{item.n}</span>
+                    <span className="font-mono text-[13px] text-ih-accent pt-0.5">/{String(i + 1).padStart(2, '0')}</span>
                     <div>
-                      <h4 className="text-[16px] font-semibold mb-1.5">{item.title}</h4>
-                      <p className="text-[14px] text-ih-muted leading-[1.5]">{item.body}</p>
+                      <h4 className="text-[16px] font-semibold mb-1.5">{item.name}</h4>
+                      <p className="text-[14px] text-ih-muted leading-[1.5]">{item.desc}</p>
                     </div>
                   </div>
                 ))}
@@ -608,46 +649,64 @@ export default async function HomePage({
 
             {/* Right — dark panel with quote */}
             <div className="relative flex min-h-[420px] flex-col justify-between overflow-hidden rounded-lg bg-ih-navy p-12 text-white">
-              {/* Subtle overlay */}
-              <div className="absolute inset-0 opacity-[0.15] flex items-center justify-center">
-                <p className="font-mono text-[11px] text-ih-muted text-center">
-                  &ldquo;Engineer at workbench&rdquo;<br />720×800
-                </p>
-              </div>
-              <div className="relative">
-                <span className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-accent">CUSTOMER · MARINE</span>
-                <p className="text-[22px] leading-[1.4] tracking-[-0.01em] max-w-[380px] mt-3">
-                  &ldquo;Indus delivered a 6-week-lead Atos servo valve in 4 days. We didn&apos;t lose a single shift.&rdquo;
-                </p>
-              </div>
-              <div className="relative flex items-center gap-3 mt-8 pt-8 border-t border-[oklch(1_0_0_/_0.1)]">
-                <div className="w-10 h-10 rounded-full bg-[#2a2e35] shrink-0" />
-                <div>
-                  <div className="text-[14px] font-medium">Captain V. Subramaniam</div>
-                  <div className="font-mono text-[12px] text-[#8a8f97]">CHIEF ENGINEER · MARITIME OPS</div>
+              {/* The photograph, when one is picked. Held at 15% so the quote
+                  stays the readable thing on the panel — the same weight the
+                  placeholder caption sat at before there was an image. */}
+              {quoteImage?.url ? (
+                <Image
+                  src={quoteImage.url}
+                  alt={quoteImage.alt ?? ''}
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 45vw"
+                  className="object-cover opacity-[0.28]"
+                />
+              ) : (
+                <div className="absolute inset-0 opacity-[0.15] flex items-center justify-center">
+                  <p className="font-mono text-[11px] text-ih-muted text-center">
+                    &ldquo;Engineer at workbench&rdquo;<br />720×800
+                  </p>
                 </div>
+              )}
+              <div className="relative">
+                <span className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-accent">{str(why, 'quote_eyebrow')}</span>
+                <p className="text-[22px] leading-[1.4] tracking-[-0.01em] max-w-[380px] mt-3">
+                  &ldquo;{str(why, 'quote')}&rdquo;
+                </p>
               </div>
+              {str(why, 'quote_name') ? (
+                <div className="relative flex items-center gap-3 mt-8 pt-8 border-t border-[oklch(1_0_0_/_0.1)]">
+                  <div className="w-10 h-10 rounded-full bg-[#2a2e35] shrink-0" />
+                  <div>
+                    <div className="text-[14px] font-medium">{str(why, 'quote_name')}</div>
+                    <div className="font-mono text-[12px] text-[#8a8f97]">{str(why, 'quote_title')}</div>
+                  </div>
+                </div>
+              ) : null}
             </div>
           </div>
         </div>
       </section>
+    ),
 
-      {/* ── BLOG TEASER ──────────────────────────────────────────────────── */}
+    blog: (
+      /* ── BLOG TEASER ──────────────────────────────────────────────────── */
       <section className="pb-[72px]">
         <div className="mx-auto max-w-[1440px] px-5 sm:px-8 xl:px-12">
           <div className="flex items-end justify-between mb-8">
             <div>
-              <span className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">FROM THE WORKSHOP · BLOG</span>
+              <span className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">{t(str(blog, 'eyebrow'))}</span>
               <h2 className="mt-2 font-serif text-[clamp(24px,2.5vw,34px)] font-normal leading-[1.12] tracking-[-0.01em]">
-                Field notes, sizing guides and component teardowns.
+                {t(str(blog, 'heading'))}
               </h2>
             </div>
-            <Link
-              href={`/blog`}
-              className="hidden sm:flex h-10 px-4 items-center border border-ih-border font-mono text-[12px] text-ih-ink-2 hover:bg-ih-surface-2 transition-colors shrink-0"
-            >
-              Read the blog →
-            </Link>
+            {str(blog, 'cta_label') && str(blog, 'cta_href') ? (
+              <Link
+                href={str(blog, 'cta_href') ?? '/blog'}
+                className="hidden sm:flex h-10 px-4 items-center border border-ih-border font-mono text-[12px] text-ih-ink-2 hover:bg-ih-surface-2 transition-colors shrink-0"
+              >
+                {str(blog, 'cta_label')}
+              </Link>
+            ) : null}
           </div>
 
           {blogPosts.length > 0 ? (
@@ -717,20 +776,24 @@ export default async function HomePage({
                is a credibility problem the moment it renders. */
             <div className="rounded-lg border border-ih-border bg-ih-surface px-6 py-10 text-center">
               <p className="text-[15px] text-ih-muted">
-                Field notes and sizing guides are on the way.
+                {str(blog, 'empty_message')}
               </p>
-              <Link
-                href={`/blog`}
-                className="mt-4 inline-flex h-10 items-center border border-ih-border px-4 font-mono text-[12px] text-ih-ink-2 transition-colors hover:bg-ih-surface-2"
-              >
-                Visit the blog →
-              </Link>
+              {str(blog, 'empty_cta_label') ? (
+                <Link
+                  href={str(blog, 'cta_href') ?? '/blog'}
+                  className="mt-4 inline-flex h-10 items-center border border-ih-border px-4 font-mono text-[12px] text-ih-ink-2 transition-colors hover:bg-ih-surface-2"
+                >
+                  {str(blog, 'empty_cta_label')}
+                </Link>
+              ) : null}
             </div>
           )}
         </div>
       </section>
+    ),
 
-      {/* ── NEWSLETTER CTA ───────────────────────────────────────────────── */}
+    newsletter: (
+      /* ── NEWSLETTER CTA ───────────────────────────────────────────────── */
       <section className="pb-16 border-t border-ih-border">
         <div className="mx-auto max-w-[1440px] px-5 sm:px-8 xl:px-12 pt-16">
           <div className="grid grid-cols-1 items-center gap-12 rounded-[14px] bg-ih-accent p-12 text-white lg:grid-cols-[1.2fr_1fr] lg:p-14">
@@ -738,19 +801,27 @@ export default async function HomePage({
               {/* On the accent band the eyebrow inverts — accent-on-accent
                   was invisible. */}
               <span className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-white/75">
-                NEWSLETTER · 2× A MONTH
+                {t(str(newsletter, 'eyebrow'))}
               </span>
               <h2 className="mb-3 mt-3.5 font-serif text-[clamp(24px,3vw,32px)] font-normal leading-[1.15] tracking-[-0.01em]">
-                Catalog drops, sizing notes, and stock alerts — straight to your inbox.
+                {t(str(newsletter, 'heading'))}
               </h2>
               <p className="text-[#b6bac1] max-w-[460px] leading-[1.55] text-[15px]">
-                4,200+ engineers, plant managers and procurement leads read it. No marketing fluff, no spam.
+                {t(str(newsletter, 'body'))}
               </p>
             </div>
             <HomeNewsletterForm />
           </div>
         </div>
       </section>
+    ),
+  }
+
+  return (
+    <div>
+      {content.order.map((key) =>
+        sections[key] ? <Fragment key={key}>{sections[key]}</Fragment> : null,
+      )}
     </div>
   )
 }

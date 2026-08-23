@@ -36,11 +36,11 @@ export async function savePage(formData: FormData) {
 
   if (id === 'new') {
     const page = await db.cmsPage.create({ data })
-    revalidatePath('/admin/cms')
-    redirect(`/admin/cms/pages/${page.id}`)
+    revalidatePath('/admin/pages')
+    redirect(`/admin/pages/static/${page.id}`)
   } else {
     await db.cmsPage.update({ where: { id }, data })
-    revalidatePath('/admin/cms')
+    revalidatePath('/admin/pages')
     revalidatePath(`/${slug}`)
   }
 }
@@ -209,7 +209,7 @@ export async function updateCmsPageSeo(formData: FormData): Promise<Result<void>
       },
     )
 
-    revalidatePath(`/admin/cms/pages/${parsed.id}`)
+    revalidatePath(`/admin/pages/static/${parsed.id}`)
     revalidatePath(`/${before.slug}`)
     revalidatePath('/admin/seo/inspector')
     return ok(undefined)

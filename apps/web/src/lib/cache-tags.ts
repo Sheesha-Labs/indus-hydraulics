@@ -58,6 +58,8 @@ export const STOREFRONT_TAGS = {
   crossReferences: 'cross-references',
   /** Homepage hero slides. */
   homepageHero: 'homepage-hero',
+  /** Section documents behind Pages & Blocks. */
+  pageContent: 'page-content',
 } as const
 
 export type StorefrontTag = (typeof STOREFRONT_TAGS)[keyof typeof STOREFRONT_TAGS]
@@ -144,4 +146,17 @@ export function invalidateCrossReferences(): void {
 /** Homepage hero slides edited. */
 export function invalidateHomepageHero(): void {
   purge(STOREFRONT_TAGS.homepageHero)
+}
+
+/**
+ * A page's sections were reordered, hidden or re-worded in Pages & Blocks.
+ *
+ * One tag for every page, not one per page. The documents share a cache entry
+ * keyed by content key, and an edit is a handful of times a day against pages
+ * that revalidate hourly anyway — a wider purge costs one re-render and a
+ * narrower one risks an editor saving and seeing nothing change, which is the
+ * failure this whole editor exists to avoid.
+ */
+export function invalidatePageContent(): void {
+  purge(STOREFRONT_TAGS.pageContent)
 }
