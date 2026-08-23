@@ -3659,6 +3659,445 @@ const KOSOVO: MarketPage = {
   },
 }
 
+
+// ─────────────────────────────────────────────────────────────────────────────
+// CENTRAL EUROPE — one customs union, four different gates
+//
+// Poland, Czechia, Slovakia and Hungary all clear once and move domestically,
+// so the customs story is identical and cannot carry four pages. What differs
+// is which sea a consignment should arrive at. Poland has its own Baltic
+// ports; the other three are landlocked and sit where the North Sea, Adriatic
+// and Black Sea corridors genuinely compete. Hungary is the sharpest case —
+// four gates, and the delivery town decides.
+// ─────────────────────────────────────────────────────────────────────────────
+
+const POLAND: MarketPage = {
+  slug: 'poland',
+  regulatoryCopy: 'unverified',
+  released: false,
+  lane: 'DXB → PL',
+  dialCode: '+48',
+  currency: 'EUR',
+  localName: 'Polska',
+  lede: 'Poland is the only market in central Europe with its own deep-water ports, and Gdańsk takes mainline calls rather than feeders — which makes it the Baltic gate for the whole region rather than only for Poland. Behind it sits the largest coal-mining complex in the European Union, and Silesian duty is abrasion and dust before it is pressure. The manufacturing sector is the second thread, and it wants the pattern its export markets specify rather than the one it uses at home.',
+  facts: [
+    { label: 'Typical transit', value: 'Typically 26–34 days by sea from dispatch' },
+    {
+      label: 'Freight',
+      value:
+        'Sea freight from Jebel Ali through Suez and round the Skaw to Gdańsk · Gdynia and Szczecin where the berth or the inland leg suits · Air freight into Warsaw where the schedule is tighter',
+    },
+    { label: 'Incoterms 2020', value: 'CIF Gdańsk · DAP to the buyer’s site · FOB Jebel Ali · EXW Dubai for a nominated forwarder' },
+    {
+      label: 'Documentation',
+      value:
+        'CE marking and the PED declaration where the assembly is above threshold · REACH position on the elastomer compounds · Certificate of Origin, Dubai Chamber attested · EU customs entry raised by the importer',
+    },
+  ],
+  manifest: [
+    { label: 'Origin', value: 'Jebel Ali · Dubai' },
+    { label: 'Primary mode', value: 'Sea, via Suez' },
+    { label: 'Port of entry', value: 'Gdańsk' },
+    { label: 'Transit', value: '26–34 days' },
+    { label: 'Quoted in', value: 'EUR' },
+    { label: 'Docs prepared', value: 'Before the vessel sails' },
+  ],
+  map: {
+    geoNames: ['Poland'],
+    fit: 'crossing',
+    origin: [55.03, 25.01],
+    originLabel: 'JEBEL ALI · DXB',
+    crossing: { name: 'GDAŃSK · PORT', coords: [18.67, 54.4], legend: 'Port of entry', dx: 11, dy: -8, anchor: 'start' },
+    routes: [
+      { mode: 'SEA · SUEZ', primary: true, points: leg(NORTH_SEA_TO_BALTIC, [12.7, 55.7], [14.5, 55.2], [18.67, 54.4]) },
+      { mode: 'AIR', points: leg(EUROPE_AIR, [20.97, 52.17]) },
+    ],
+  },
+  freight: [
+    { name: 'Sea, FCL', transit: '26–34 days', route: 'Jebel Ali to Gdańsk, via Suez', useCase: 'Default for most orders' },
+    { name: 'Air freight', transit: '2–4 days', route: 'DXB to WAW', useCase: 'When the line is down' },
+    { name: 'Sea via the Adriatic', transit: '22–30 days', route: 'Koper, then road for the south', useCase: 'Kraków and the Silesian belt' },
+  ],
+  orderSteps: {
+    third:
+      'For mining duty the abrasion and dust specification is confirmed rather than the pressure rating alone, and the CE declaration is prepared where the assembly is above threshold.',
+    fourth: 'Goods sail from Jebel Ali through Suez and round the Skaw to Gdańsk, and you get the paperwork and tracking together.',
+  },
+  cities: [
+    { name: 'Gdańsk', coords: [18.65, 54.35], region: 'Pomerania' },
+    { name: 'Gdynia', coords: [18.53, 54.52], region: 'Pomerania', plot: true, dx: -9, dy: -4, anchor: 'end' },
+    { name: 'Szczecin', coords: [14.55, 53.43], region: 'West Pomerania', plot: true, dx: -9, dy: -4, anchor: 'end' },
+    { name: 'Warsaw', coords: [21.02, 52.23], region: 'Masovia', plot: true, dx: 9, dy: -4 },
+    { name: 'Łódź', coords: [19.46, 51.76], region: 'Łódź' },
+    { name: 'Poznań', coords: [16.93, 52.41], region: 'Greater Poland', plot: true, dx: -9, dy: -4, anchor: 'end' },
+    { name: 'Wrocław', coords: [17.04, 51.11], region: 'Lower Silesia', plot: true, dx: -9, dy: 6, anchor: 'end' },
+    { name: 'Katowice', coords: [19.02, 50.26], region: 'Silesia', plot: true, dx: -9, dy: 6, anchor: 'end' },
+    { name: 'Gliwice', coords: [18.67, 50.29], region: 'Silesia' },
+    { name: 'Rybnik', coords: [18.55, 50.1], region: 'Silesia' },
+    { name: 'Kraków', coords: [19.94, 50.06], region: 'Lesser Poland', plot: true, dx: 9, dy: 8 },
+    { name: 'Bełchatów', coords: [19.36, 51.37], region: 'Łódź' },
+    { name: 'Lublin', coords: [22.57, 51.25], region: 'Lublin', plot: true, dx: 9, dy: 4 },
+    { name: 'Płock', coords: [19.71, 52.55], region: 'Masovia' },
+    { name: 'Legnica', coords: [16.16, 51.21], region: 'Lower Silesia' },
+    { name: 'Lubin', coords: [16.2, 51.4], region: 'Lower Silesia' },
+  ],
+  sectors: [
+    { slug: 'mining', name: 'Mining', description: 'Hard coal in Silesia, lignite at Bełchatów and copper at Lubin — abrasion covers and dust-rated assemblies before pressure.' },
+    { slug: 'power', name: 'Power & Energy', description: 'Actuator and governor hydraulics for the lignite and hard-coal generating fleet.' },
+    { slug: 'steel', name: 'Steel & Metals', description: 'High-force cylinders and servo valves for the Silesian and Kraków rolling lines.' },
+    { slug: 'construction', name: 'Construction', description: 'Excavator, crane and batching-plant hydraulics — and the machinery builders who export them.' },
+    { slug: 'marine', name: 'Marine & Offshore', description: 'Deck machinery and vessel hydraulics for the Gdańsk, Gdynia and Szczecin yards.' },
+    { slug: 'oil-gas', name: 'Oil & Gas', description: 'Refinery and terminal support at Płock and Gdańsk.' },
+  ],
+  faqs: [
+    { question: 'Do you have a branch in Poland?', answer: 'No. Poland is supplied from our Dubai warehouse, by sea through Suez and round the Skaw into Gdańsk or Gdynia.' },
+    {
+      question: 'Why is Gdańsk different from the other Baltic ports?',
+      answer:
+        'Because it takes mainline calls rather than feeders. That makes it the Baltic gate for the wider region, and it means a container reaches Poland without the transhipment wait that the smaller Baltic ports add.',
+    },
+    {
+      question: 'Can you specify for Silesian mining duty?',
+      answer:
+        'Yes, and it is the commonest request here. Underground coal is abrasion and dust before it is pressure — cover material and cycle life decide the service interval more than the burst rating does. Tell us the duty rather than the part number.',
+    },
+    { question: 'Do we need CE marking?', answer: 'For a hose assembly above the pressure-volume threshold in PED 2014/68/EU, yes, and the declaration travels with the goods. Below it, sound engineering practice applies and there is no mark.' },
+    { question: 'Would the Adriatic ever be faster?', answer: 'For Kraków and the Silesian belt, sometimes. Koper is a shorter sea leg and a longer road one, and for a southern delivery the two can be close. We compare rather than assuming the home port.' },
+    { question: 'Why buy from Dubai rather than locally?', answer: 'For a standard item you should not — Polish distribution is strong. The reason is the pattern an export market specifies, or a mining-duty compound held as stock rather than ordered in.' },
+    { question: 'What currency do you quote in?', answer: 'EUR. Our export desk settles European trade in euros; we do not quote in złoty, and the Estimate, invoice and customs value all carry the same figure.' },
+    { question: 'What is your REACH position?', answer: 'We state it on the elastomer compounds at quotation, including where a compound carries a restriction relevant to your application.' },
+  ],
+  compliance: {
+    heading: 'A mainline port, and mining duty behind it',
+    body:
+      'Two things separate Poland from the rest of central Europe. The first is that it has its own deep-water ports and Gdańsk takes mainline calls, so a container arrives without the transhipment wait that smaller Baltic ports impose — which is why Gdańsk functions as the regional gate rather than only the national one. The second is what the cargo is for. The Silesian coal complex is the largest in the union, and underground mining duty is an abrasion and dust problem before it is a pressure one: cover material, bend radius and cycle life decide the service interval far more than the burst rating does. A hose specified from a catalogue on bore and pressure will pass inspection and fail early. So the useful quotation starts from the duty. Customs is the ordinary single European entry with a PED declaration above threshold.',
+    documents: [
+      { ref: 'DUTY', name: 'Abrasion and dust specification for mining service', issuer: 'Us, at quotation', when: 'At quotation, per duty' },
+      { ref: 'PED', name: 'Declaration of conformity, assemblies above threshold', issuer: 'Us, as the assembler', when: 'Before dispatch' },
+      { ref: 'REACH', name: 'Compound position on the elastomers supplied', issuer: 'Us, at quotation', when: 'At quotation' },
+      { ref: 'COO', name: 'Certificate of Origin', issuer: 'Dubai Chamber attested', when: 'Before dispatch' },
+      { ref: 'EU-ENTRY', name: 'Customs entry into free circulation', issuer: 'The importer, through Polish Customs', when: 'On arrival' },
+    ],
+  },
+}
+
+const CZECHIA: MarketPage = {
+  slug: 'czechia',
+  regulatoryCopy: 'unverified',
+  released: false,
+  lane: 'DXB → CZ',
+  dialCode: '+420',
+  currency: 'EUR',
+  localName: 'Česko',
+  lede: 'Czechia is landlocked with two credible gates and they behave differently. Hamburg is the traditional route and reaches Ústí and Prague by rail along the Elbe corridor; Koper is a shorter sea leg out of Suez and a road move up through Austria. For Brno and the Moravian engineering belt the Adriatic usually wins. The industry is machine tools and heavy engineering — plants that build equipment for export and need the destination market’s pattern rather than their own.',
+  facts: [
+    { label: 'Typical transit', value: 'Typically 21–28 days from dispatch via the Adriatic, sea and road combined' },
+    {
+      label: 'Freight',
+      value:
+        'Sea freight from Jebel Ali through Suez to Koper, then road · Hamburg and the Elbe rail corridor for Prague and the north-west · Air freight into Prague where the schedule is tighter',
+    },
+    { label: 'Incoterms 2020', value: 'DAP to the buyer’s site · CIF Koper · FOB Jebel Ali · EXW Dubai for a nominated forwarder' },
+    {
+      label: 'Documentation',
+      value:
+        'CE marking and the PED declaration where the assembly is above threshold · REACH position on the elastomer compounds · Certificate of Origin, Dubai Chamber attested · EU customs entry raised at the port',
+    },
+  ],
+  manifest: [
+    { label: 'Origin', value: 'Jebel Ali · Dubai' },
+    { label: 'Primary mode', value: 'Sea + road' },
+    { label: 'Port of entry', value: 'Koper, then road' },
+    { label: 'Transit', value: '21–28 days' },
+    { label: 'Quoted in', value: 'EUR' },
+    { label: 'Docs prepared', value: 'Before the vessel sails' },
+  ],
+  map: {
+    geoNames: ['Czechia', 'Czech Republic'],
+    fit: 'crossing',
+    origin: [55.03, 25.01],
+    originLabel: 'JEBEL ALI · DXB',
+    crossing: { name: 'KOPER · PORT', coords: [13.73, 45.55], legend: 'Port of entry', dx: -11, dy: 10, anchor: 'end' },
+    routes: [
+      { mode: 'SEA + ROAD', primary: true, points: leg(ADRIATIC, [15.5, 43.5], [13.73, 45.55], [14.5, 46.6], [15.4, 48.2], [16.61, 49.2]) },
+      { mode: 'AIR', points: leg(EUROPE_AIR, [14.26, 50.1]) },
+    ],
+  },
+  freight: [
+    { name: 'Sea + road, Adriatic', transit: '21–28 days', route: 'Koper, then road through Austria', useCase: 'Default, and best for Moravia' },
+    { name: 'Air freight', transit: '2–4 days', route: 'DXB to PRG', useCase: 'When the line is down' },
+    { name: 'Sea + rail, northern', transit: '27–35 days', route: 'Hamburg and the Elbe corridor', useCase: 'Prague and the north-west' },
+  ],
+  orderSteps: {
+    third: 'The gate is chosen against the delivery town rather than habit, and the CE declaration is prepared where the assembly is above threshold.',
+    fourth: 'Goods sail from Jebel Ali through Suez to Koper and come on by road, and you get the paperwork and tracking together.',
+  },
+  cities: [
+    { name: 'Prague', coords: [14.44, 50.08], region: 'Prague', plot: true, dx: -9, dy: -4, anchor: 'end' },
+    { name: 'Brno', coords: [16.61, 49.2], region: 'South Moravia', plot: true, dx: 9, dy: 6 },
+    { name: 'Ostrava', coords: [18.29, 49.83], region: 'Moravian-Silesian', plot: true, dx: 9, dy: -4 },
+    { name: 'Třinec', coords: [18.67, 49.68], region: 'Moravian-Silesian' },
+    { name: 'Plzeň', coords: [13.38, 49.75], region: 'Plzeň', plot: true, dx: -9, dy: -4, anchor: 'end' },
+    { name: 'Ústí nad Labem', coords: [14.04, 50.66], region: 'Ústí', plot: true, dx: -9, dy: -4, anchor: 'end' },
+    { name: 'Most', coords: [13.64, 50.5], region: 'Ústí' },
+    { name: 'Liberec', coords: [15.06, 50.77], region: 'Liberec' },
+    { name: 'Olomouc', coords: [17.25, 49.59], region: 'Olomouc', plot: true, dx: 9, dy: -4 },
+    { name: 'Zlín', coords: [17.67, 49.23], region: 'Zlín' },
+    { name: 'Pardubice', coords: [15.78, 50.04], region: 'Pardubice' },
+    { name: 'Hradec Králové', coords: [15.83, 50.21], region: 'Hradec Králové' },
+    { name: 'Kolín', coords: [15.2, 50.03], region: 'Central Bohemia' },
+    { name: 'Mladá Boleslav', coords: [14.91, 50.41], region: 'Central Bohemia', plot: true, dx: 9, dy: -4 },
+    { name: 'České Budějovice', coords: [14.47, 48.98], region: 'South Bohemia', plot: true, dx: -9, dy: 6, anchor: 'end' },
+    { name: 'Karviná', coords: [18.54, 49.86], region: 'Moravian-Silesian' },
+  ],
+  sectors: [
+    { slug: 'steel', name: 'Steel & Metals', description: 'High-force cylinders and servo valves for the Ostrava and Třinec rolling and forming lines.' },
+    { slug: 'construction', name: 'Construction', description: 'Machine-tool and equipment builders exporting plant — the destination market’s pattern, held as stock.' },
+    { slug: 'mining', name: 'Mining', description: 'Coal in the Ostrava-Karviná basin and lignite at Most — abrasion covers and dust-rated assemblies.' },
+    { slug: 'power', name: 'Power & Energy', description: 'Actuator and governor hydraulics for lignite, nuclear and hydro plant.' },
+    { slug: 'oil-gas', name: 'Oil & Gas', description: 'Refinery and process support at Litvínov and Kralupy.' },
+    { slug: 'marine', name: 'Marine & Offshore', description: 'Winch and deck hydraulics for Elbe river and lifting equipment.' },
+  ],
+  faqs: [
+    { question: 'Do you have a branch in Czechia?', answer: 'No. Czechia is supplied from our Dubai warehouse, by sea to Koper and then by road, or through Hamburg and the Elbe corridor.' },
+    {
+      question: 'Koper or Hamburg?',
+      answer:
+        'Koper for Brno, Ostrava and Moravia — the sea leg is much shorter out of Suez and the road move up through Austria is straightforward. Hamburg and the Elbe rail corridor for Prague and the north-west, where the inland leg reverses the advantage. We choose against the delivery town rather than habit.',
+    },
+    { question: 'Is there a border formality?', answer: 'No. Czechia is inside the customs union, so goods clear once at Koper or Hamburg into free circulation and arrive as domestic movement.' },
+    { question: 'Do we need CE marking?', answer: 'For a hose assembly above the pressure-volume threshold in PED 2014/68/EU, yes, and the declaration travels with the goods. Below it, sound engineering practice applies and there is no mark.' },
+    {
+      question: 'Why buy from Dubai rather than locally?',
+      answer:
+        'For a standard item you should not; Czech engineering supply is excellent. The consistent reason is a machine being built here for export — a GOST coupling for a Central Asian contract, an API-monogrammed assembly, an SS316L thread form — held as stock rather than ordered from a factory queue.',
+    },
+    { question: 'Can you supply GOST-pattern couplings?', answer: 'Yes, alongside the DIN, BSP, JIC and ORFS ranges, so a machine destined for a GOST market can be plumbed from one order rather than two suppliers.' },
+    { question: 'What currency do you quote in?', answer: 'EUR. Our export desk settles European trade in euros; we do not quote in koruna, and the Estimate, invoice and customs value all carry the same figure.' },
+    { question: 'Can you deliver to the plant?', answer: 'Yes, on DAP terms. Once entered into free circulation the inland leg is domestic movement and it is priced with the order rather than left at the quay.' },
+  ],
+  compliance: {
+    heading: 'Two gates that actually compete',
+    body:
+      'Czechia is landlocked inside the customs union, so clearance happens once at whichever port the goods reach and the inland leg is domestic movement. That reduces the whole question to routing, and unusually the two options are close enough to be worth calculating each time. Hamburg is the traditional gate and reaches Ústí and Prague by rail along the Elbe; Koper is a materially shorter sea leg out of Suez followed by a road move up through Austria, and for Brno, Olomouc and the Moravian engineering belt it usually wins. Most forwarders pick one and use it for everything. We compare against the delivery town, because on a lane where the sea legs differ by the best part of a week the gate is worth more than any margin on the goods. On product documentation the European set applies unchanged.',
+    documents: [
+      { ref: 'PED', name: 'Declaration of conformity, assemblies above threshold', issuer: 'Us, as the assembler', when: 'Before dispatch' },
+      { ref: 'REACH', name: 'Compound position on the elastomers supplied', issuer: 'Us, at quotation', when: 'At quotation' },
+      { ref: 'ROUTE', name: 'Gate comparison — Adriatic against North Sea', issuer: 'Us, at quotation', when: 'At quotation' },
+      { ref: 'COO', name: 'Certificate of Origin', issuer: 'Dubai Chamber attested', when: 'Before dispatch' },
+      { ref: 'EU-ENTRY', name: 'Customs entry into free circulation', issuer: 'The importer, at Koper or Hamburg', when: 'On arrival' },
+    ],
+  },
+}
+
+
+const SLOVAKIA: MarketPage = {
+  slug: 'slovakia',
+  regulatoryCopy: 'unverified',
+  released: false,
+  lane: 'DXB → SK',
+  dialCode: '+421',
+  currency: 'EUR',
+  localName: 'Slovensko',
+  lede: 'Slovakia builds more cars per head than any country on earth, and that single fact shapes what a hydraulics supplier is asked for. Press shops and body lines run to a takt time, so a hose is bought against cycle count and downtime cost rather than unit price — a component that fails at eight hundred thousand cycles instead of two million is not cheap, it is expensive twice. Koper is the gate, twenty days out, with the road move up through Austria.',
+  facts: [
+    { label: 'Typical transit', value: 'Typically 20–27 days from dispatch, sea and road combined' },
+    {
+      label: 'Freight',
+      value:
+        'Sea freight from Jebel Ali through Suez to Koper, then road through Austria · Hamburg where the northern gate suits · Danube barge from Constanța for project cargo · Air freight into Bratislava or Vienna where the schedule is tighter',
+    },
+    { label: 'Incoterms 2020', value: 'DAP to the buyer’s site · CIF Koper · FOB Jebel Ali · EXW Dubai for a nominated forwarder' },
+    {
+      label: 'Documentation',
+      value:
+        'CE marking and the PED declaration where the assembly is above threshold · REACH position on the elastomer compounds · Certificate of Origin, Dubai Chamber attested · EU customs entry raised at the port',
+    },
+  ],
+  manifest: [
+    { label: 'Origin', value: 'Jebel Ali · Dubai' },
+    { label: 'Primary mode', value: 'Sea + road' },
+    { label: 'Port of entry', value: 'Koper, then road' },
+    { label: 'Transit', value: '20–27 days' },
+    { label: 'Quoted in', value: 'EUR' },
+    { label: 'Docs prepared', value: 'Before the vessel sails' },
+  ],
+  map: {
+    geoNames: ['Slovakia'],
+    fit: 'crossing',
+    origin: [55.03, 25.01],
+    originLabel: 'JEBEL ALI · DXB',
+    crossing: { name: 'KOPER · PORT', coords: [13.73, 45.55], legend: 'Port of entry', dx: -11, dy: 10, anchor: 'end' },
+    routes: [
+      { mode: 'SEA + ROAD', primary: true, points: leg(ADRIATIC, [15.5, 43.5], [13.73, 45.55], [14.5, 46.6], [16.0, 47.8], [17.11, 48.15]) },
+      { mode: 'AIR', points: leg(EUROPE_AIR, [17.21, 48.17]) },
+    ],
+  },
+  freight: [
+    { name: 'Sea + road, Adriatic', transit: '20–27 days', route: 'Koper, then road through Austria', useCase: 'Default for most orders' },
+    { name: 'Air freight', transit: '2–4 days', route: 'DXB to BTS or VIE, then road', useCase: 'When the line is down' },
+    { name: 'Sea + barge', transit: '26–34 days', route: 'Constanța, then Danube barge to Bratislava', useCase: 'Project and heavy cargo' },
+  ],
+  orderSteps: {
+    third:
+      'For line duty the cycle count and the takt time are confirmed alongside the dimensions, because on an automotive press the cost of a failure is the stoppage rather than the part.',
+    fourth: 'Goods sail from Jebel Ali through Suez to Koper and come on by road, and you get the paperwork and tracking together.',
+  },
+  cities: [
+    { name: 'Bratislava', coords: [17.11, 48.15], region: 'Bratislava', plot: true, dx: -9, dy: 6, anchor: 'end' },
+    { name: 'Trnava', coords: [17.59, 48.38], region: 'Trnava', plot: true, dx: 9, dy: -4 },
+    { name: 'Nitra', coords: [18.09, 48.31], region: 'Nitra', plot: true, dx: 9, dy: 8 },
+    { name: 'Žilina', coords: [18.74, 49.22], region: 'Žilina', plot: true, dx: -9, dy: -4, anchor: 'end' },
+    { name: 'Martin', coords: [18.92, 49.07], region: 'Žilina' },
+    { name: 'Košice', coords: [21.26, 48.72], region: 'Košice', plot: true, dx: 9, dy: 4 },
+    { name: 'Prešov', coords: [21.24, 49.0], region: 'Prešov' },
+    { name: 'Banská Bystrica', coords: [19.15, 48.74], region: 'Banská Bystrica', plot: true, dx: 9, dy: -4 },
+    { name: 'Zvolen', coords: [19.13, 48.57], region: 'Banská Bystrica' },
+    { name: 'Trenčín', coords: [18.04, 48.89], region: 'Trenčín' },
+    { name: 'Považská Bystrica', coords: [18.45, 49.12], region: 'Trenčín' },
+    { name: 'Levice', coords: [18.61, 48.22], region: 'Nitra' },
+  ],
+  sectors: [
+    { slug: 'construction', name: 'Construction', description: 'Press-line, clamping and materials-handling hydraulics for the automotive plants and their tier suppliers.' },
+    { slug: 'steel', name: 'Steel & Metals', description: 'High-force cylinders and servo valves for the Košice rolling and forming lines.' },
+    { slug: 'power', name: 'Power & Energy', description: 'Actuator and governor hydraulics for nuclear, hydro and thermal plant.' },
+    { slug: 'mining', name: 'Mining', description: 'Dust-rated, high-cycle components for magnesite, aggregate and cement plant.' },
+    { slug: 'oil-gas', name: 'Oil & Gas', description: 'Refinery and terminal support at Bratislava and the transit pipeline network.' },
+    { slug: 'marine', name: 'Marine & Offshore', description: 'Winch, hatch and deck hydraulics for the Danube barge fleet.' },
+  ],
+  faqs: [
+    { question: 'Do you have a branch in Slovakia?', answer: 'No. Slovakia is supplied from our Dubai warehouse, by sea to Koper and then by road through Austria.' },
+    {
+      question: 'Can you specify for automotive line duty?',
+      answer:
+        'Yes, and it is the request that matters here. A press line runs to a takt time, so the number to design against is cycle count rather than burst pressure. Tell us the cycles per hour and the planned service interval and we will specify to it, or say plainly that a catalogue item will not reach it.',
+    },
+    { question: 'Is there a border formality?', answer: 'No. Slovakia is inside the customs union, so goods clear once at Koper or Hamburg into free circulation and arrive as domestic movement.' },
+    { question: 'Do we need CE marking?', answer: 'For a hose assembly above the pressure-volume threshold in PED 2014/68/EU, yes, and the declaration travels with the goods. Below it, sound engineering practice applies and there is no mark.' },
+    { question: 'Can you hold stock against a line schedule?', answer: 'Tell us the consumption and the service interval and we will quote a call-off rather than a single order. On a takt-time line the useful thing is predictability, not the lowest unit price.' },
+    { question: 'Can you ship by Danube barge?', answer: 'For project and heavy cargo, yes — Constanța and the river to Bratislava. For line consumables the Adriatic and road is faster and we will say which suits the order.' },
+    { question: 'What currency do you quote in?', answer: 'EUR. Slovakia is in the eurozone, so the Estimate, the invoice and the customs value all carry the same figure with nothing to convert.' },
+    { question: 'Why buy from Dubai rather than locally?', answer: 'For a standard item you should not. The reason is a specification a local distributor orders in rather than stocks, or the pattern needed for equipment being built here for export.' },
+  ],
+  compliance: {
+    heading: 'Cycle count, not unit price',
+    body:
+      'Slovakia produces more vehicles per head of population than any country in the world, and that changes what a hydraulics quotation should contain. A press shop or a body line runs to a takt time: every stoppage costs the value of the vehicles not built during it, which is a number far larger than any hose. So the specification that matters is cycle life at the working pressure and the bend radius the installation actually imposes — not the burst rating, and certainly not the unit price. A component that reaches eight hundred thousand cycles where the schedule assumed two million is not a cheaper part, it is the same part bought three times plus two unplanned stoppages. We ask for cycles per hour and the planned service interval at quotation, specify against them, and say plainly where a catalogue item will not get there. Customs is the ordinary single European entry.',
+    documents: [
+      { ref: 'DUTY', name: 'Cycle life statement against the line’s takt time', issuer: 'Us, at quotation', when: 'At quotation, per duty' },
+      { ref: 'PED', name: 'Declaration of conformity, assemblies above threshold', issuer: 'Us, as the assembler', when: 'Before dispatch' },
+      { ref: 'REACH', name: 'Compound position on the elastomers supplied', issuer: 'Us, at quotation', when: 'At quotation' },
+      { ref: 'COO', name: 'Certificate of Origin', issuer: 'Dubai Chamber attested', when: 'Before dispatch' },
+      { ref: 'EU-ENTRY', name: 'Customs entry into free circulation', issuer: 'The importer, at Koper or Hamburg', when: 'On arrival' },
+    ],
+  },
+}
+
+const HUNGARY: MarketPage = {
+  slug: 'hungary',
+  regulatoryCopy: 'unverified',
+  released: false,
+  lane: 'DXB → HU',
+  dialCode: '+36',
+  currency: 'EUR',
+  localName: 'Magyarország',
+  lede: 'Hungary is where four corridors meet and none of them obviously wins. Koper and Rijeka come up from the Adriatic, Hamburg down from the North Sea, Constanța west from the Black Sea, and the Danube runs through the middle of it. For a delivery in Győr the Adriatic is clear; for Debrecen it is genuinely arguable. We price the gate against the delivery town rather than defaulting, because on a landlocked lane that choice is worth more than any margin on the goods.',
+  facts: [
+    { label: 'Typical transit', value: 'Typically 21–28 days from dispatch via the Adriatic, sea and road combined' },
+    {
+      label: 'Freight',
+      value:
+        'Sea freight from Jebel Ali through Suez to Koper or Rijeka, then road · Constanța and the eastern corridor for the Great Plain · Hamburg where the northern gate suits · Air freight into Budapest where the schedule is tighter',
+    },
+    { label: 'Incoterms 2020', value: 'DAP to the buyer’s site · CIF Koper · FOB Jebel Ali · EXW Dubai for a nominated forwarder' },
+    {
+      label: 'Documentation',
+      value:
+        'CE marking and the PED declaration where the assembly is above threshold · REACH position on the elastomer compounds · Certificate of Origin, Dubai Chamber attested · EU customs entry raised at the port',
+    },
+  ],
+  manifest: [
+    { label: 'Origin', value: 'Jebel Ali · Dubai' },
+    { label: 'Primary mode', value: 'Sea + road' },
+    { label: 'Port of entry', value: 'Koper, then road' },
+    { label: 'Transit', value: '21–28 days' },
+    { label: 'Quoted in', value: 'EUR' },
+    { label: 'Docs prepared', value: 'Before the vessel sails' },
+  ],
+  map: {
+    geoNames: ['Hungary'],
+    fit: 'crossing',
+    origin: [55.03, 25.01],
+    originLabel: 'JEBEL ALI · DXB',
+    crossing: { name: 'KOPER · PORT', coords: [13.73, 45.55], legend: 'Port of entry', dx: -11, dy: 10, anchor: 'end' },
+    routes: [
+      { mode: 'SEA + ROAD', primary: true, points: leg(ADRIATIC, [15.5, 43.5], [13.73, 45.55], [15.5, 46.3], [17.6, 47.0], [19.04, 47.5]) },
+      { mode: 'AIR', points: leg(EUROPE_AIR, [19.26, 47.44]) },
+    ],
+  },
+  freight: [
+    { name: 'Sea + road, Adriatic', transit: '21–28 days', route: 'Koper or Rijeka, then road', useCase: 'Default, and best for the west' },
+    { name: 'Air freight', transit: '2–4 days', route: 'DXB to BUD', useCase: 'When the line is down' },
+    { name: 'Sea + road, eastern', transit: '24–32 days', route: 'Constanța and the corridor west', useCase: 'Debrecen and the Great Plain' },
+  ],
+  orderSteps: {
+    third: 'The gate is priced against the delivery town rather than defaulted, because four corridors reach Hungary and the cheapest is not the same one twice running.',
+    fourth: 'Goods sail from Jebel Ali through Suez to the Adriatic and come on by road, and you get the paperwork and tracking together.',
+  },
+  cities: [
+    { name: 'Budapest', coords: [19.04, 47.5], region: 'Budapest', plot: true, dx: 9, dy: -5 },
+    { name: 'Győr', coords: [17.64, 47.69], region: 'Western Transdanubia', plot: true, dx: -9, dy: -4, anchor: 'end' },
+    { name: 'Sopron', coords: [16.59, 47.68], region: 'Western Transdanubia' },
+    { name: 'Székesfehérvár', coords: [18.41, 47.19], region: 'Central Transdanubia', plot: true, dx: -9, dy: 6, anchor: 'end' },
+    { name: 'Veszprém', coords: [17.91, 47.09], region: 'Central Transdanubia' },
+    { name: 'Dunaújváros', coords: [18.94, 46.96], region: 'Central Transdanubia', plot: true, dx: 9, dy: 8 },
+    { name: 'Pécs', coords: [18.23, 46.07], region: 'Southern Transdanubia', plot: true, dx: -9, dy: 6, anchor: 'end' },
+    { name: 'Kecskemét', coords: [19.69, 46.9], region: 'Southern Great Plain', plot: true, dx: 9, dy: 6 },
+    { name: 'Szeged', coords: [20.15, 46.25], region: 'Southern Great Plain' },
+    { name: 'Debrecen', coords: [21.63, 47.53], region: 'Northern Great Plain', plot: true, dx: 9, dy: -4 },
+    { name: 'Nyíregyháza', coords: [21.72, 47.96], region: 'Northern Great Plain' },
+    { name: 'Miskolc', coords: [20.79, 48.1], region: 'Northern Hungary', plot: true, dx: 9, dy: -4 },
+    { name: 'Kazincbarcika', coords: [20.62, 48.25], region: 'Northern Hungary' },
+    { name: 'Tiszaújváros', coords: [21.04, 47.93], region: 'Northern Hungary' },
+    { name: 'Százhalombatta', coords: [18.92, 47.32], region: 'Pest' },
+    { name: 'Esztergom', coords: [18.74, 47.79], region: 'Central Hungary' },
+  ],
+  sectors: [
+    { slug: 'construction', name: 'Construction', description: 'Press-line, clamping and materials-handling hydraulics for the automotive plants and their tier suppliers.' },
+    { slug: 'steel', name: 'Steel & Metals', description: 'High-force cylinders and servo valves for the Dunaújváros and Miskolc rolling lines.' },
+    { slug: 'oil-gas', name: 'Oil & Gas', description: 'Refinery and process support at Százhalombatta and Tiszaújváros.' },
+    { slug: 'power', name: 'Power & Energy', description: 'Actuator and governor hydraulics for nuclear, lignite and gas plant.' },
+    { slug: 'mining', name: 'Mining', description: 'Bauxite, lignite and aggregate plant — dust-rated, high-cycle components.' },
+    { slug: 'marine', name: 'Marine & Offshore', description: 'Winch, hatch and deck hydraulics for the Danube barge fleet.' },
+  ],
+  faqs: [
+    { question: 'Do you have a branch in Hungary?', answer: 'No. Hungary is supplied from our Dubai warehouse, by sea to Koper or Rijeka and then by road, or through Constanța from the east.' },
+    {
+      question: 'Which port should our cargo use?',
+      answer:
+        'It depends where you are, more than in most markets. Four corridors reach Hungary — Adriatic, North Sea, Black Sea and the Danube — and for Győr the Adriatic is clear while for Debrecen the eastern route is genuinely arguable. We price the gate against the delivery town rather than defaulting to one.',
+    },
+    { question: 'Is there a border formality?', answer: 'No. Hungary is inside the customs union, so goods clear once at the port of entry into free circulation and arrive as domestic movement.' },
+    { question: 'Do we need CE marking?', answer: 'For a hose assembly above the pressure-volume threshold in PED 2014/68/EU, yes, and the declaration travels with the goods. Below it, sound engineering practice applies and there is no mark.' },
+    { question: 'Can you specify for automotive line duty?', answer: 'Yes. Tell us the cycles per hour and the planned service interval rather than the part number — on a takt-time line the cost of a failure is the stoppage, not the component.' },
+    { question: 'Can you ship by Danube barge?', answer: 'For project and heavy cargo, yes, from Constanța. For line consumables the Adriatic and road is faster and we will say which suits the order.' },
+    { question: 'What currency do you quote in?', answer: 'EUR. Our export desk settles European trade in euros; we do not quote in forint, and the Estimate, invoice and customs value all carry the same figure.' },
+    { question: 'Why buy from Dubai rather than locally?', answer: 'For a standard item you should not. The reason is the pattern a plant needs for equipment it is exporting, or a specification a local distributor orders in rather than stocks.' },
+  ],
+  compliance: {
+    heading: 'Four corridors, and the delivery town decides',
+    body:
+      'Hungary is landlocked inside the customs union, so clearance happens once and the inland leg is domestic movement — which leaves routing as the only real decision, and Hungary is the sharpest case of it on this network. Four corridors reach the country: Koper and Rijeka up from the Adriatic, Hamburg down from the North Sea, Constanța west from the Black Sea, and the Danube through the middle for project cargo. None of them wins outright. For Győr and the western plants the Adriatic is obvious; for Debrecen and the Great Plain the eastern route is genuinely competitive; for heavy or project loads the river changes the arithmetic again. Most suppliers pick one gate and quote it for everything, which is fine until it is a week and several hundred euros wrong. We price against the delivery town instead.',
+    documents: [
+      { ref: 'ROUTE', name: 'Gate priced against the delivery town, not defaulted', issuer: 'Us, at quotation', when: 'At quotation' },
+      { ref: 'PED', name: 'Declaration of conformity, assemblies above threshold', issuer: 'Us, as the assembler', when: 'Before dispatch' },
+      { ref: 'REACH', name: 'Compound position on the elastomers supplied', issuer: 'Us, at quotation', when: 'At quotation' },
+      { ref: 'COO', name: 'Certificate of Origin', issuer: 'Dubai Chamber attested', when: 'Before dispatch' },
+      { ref: 'EU-ENTRY', name: 'Customs entry into free circulation', issuer: 'The importer, at the port of entry', when: 'On arrival' },
+    ],
+  },
+}
+
 export const MARKET_PAGE_RECORDS_3: readonly MarketPage[] = [
   TURKEY,
   NORWAY,
@@ -3693,4 +4132,8 @@ export const MARKET_PAGE_RECORDS_3: readonly MarketPage[] = [
   MONTENEGRO,
   NORTH_MACEDONIA,
   KOSOVO,
+  POLAND,
+  CZECHIA,
+  SLOVAKIA,
+  HUNGARY,
 ]
