@@ -88,6 +88,22 @@ const ATLANTIC_TO_NORTH_SEA = [
   [2.0, 51.2],
 ] as const
 
+/**
+ * On round the Skaw into the Kattegat and the western Baltic.
+ *
+ * Everything north and east of here is seasonal to some degree, and Finland is
+ * seasonal in a way that changes the quotation rather than the schedule — see
+ * that record.
+ */
+const NORTH_SEA_TO_BALTIC = [
+  ...ATLANTIC_TO_NORTH_SEA,
+  [4.5, 53.8],
+  [7.5, 55.6],
+  [9.0, 57.7],
+  [11.0, 57.5],
+  [12.0, 56.2],
+] as const
+
 /** DXB north-west over Arabia and Türkiye — the shared air leg into Europe. */
 const EUROPE_AIR = [
   [55.36, 25.25],
@@ -1172,6 +1188,667 @@ const IRELAND: MarketPage = {
   },
 }
 
+
+// ─────────────────────────────────────────────────────────────────────────────
+// THE NORDICS — the Baltic gate, and the one market where winter is a term
+//
+// Denmark and Sweden are ordinary customs-union lanes reached round the Skaw.
+// Finland is not: its ports ice over, winter navigation carries an ice class
+// and a surcharge, and a January delivery is a different quotation from a June
+// one. Iceland is outside the union entirely and reached by feeder.
+// ─────────────────────────────────────────────────────────────────────────────
+
+const DENMARK: MarketPage = {
+  slug: 'denmark',
+  regulatoryCopy: 'unverified',
+  released: false,
+  lane: 'DXB → DK',
+  dialCode: '+45',
+  currency: 'EUR',
+  localName: 'Danmark',
+  lede: 'Denmark is the gate to the Baltic and the centre of the wind supply chain, and the second of those is why most of our cargo comes here. Nacelle and pitch systems are built to a specification and a duty cycle rather than a catalogue number, and a hose that meets the bore and pressure but not the flex life fails in a place nobody wants to reach. Aarhus and Copenhagen are three to four weeks from Jebel Ali, and the goods clear once into the customs union on arrival.',
+  facts: [
+    { label: 'Typical transit', value: 'Typically 26–32 days by sea from dispatch' },
+    {
+      label: 'Freight',
+      value: 'Sea freight from Jebel Ali through Suez and round the Skaw to Aarhus or Copenhagen · Esbjerg for the offshore and wind base · Air freight into Copenhagen where the schedule is tighter',
+    },
+    { label: 'Incoterms 2020', value: 'CIF Aarhus · DAP to the buyer’s site · FOB Jebel Ali · EXW Dubai for a nominated forwarder' },
+    {
+      label: 'Documentation',
+      value: 'CE marking and the PED declaration where the assembly is above threshold · REACH position on the elastomer compounds · Certificate of Origin, Dubai Chamber attested · EU customs entry raised by the importer',
+    },
+  ],
+  manifest: [
+    { label: 'Origin', value: 'Jebel Ali · Dubai' },
+    { label: 'Primary mode', value: 'Sea, via Suez' },
+    { label: 'Port of entry', value: 'Aarhus' },
+    { label: 'Transit', value: '26–32 days' },
+    { label: 'Quoted in', value: 'EUR' },
+    { label: 'Docs prepared', value: 'Before the vessel sails' },
+  ],
+  map: {
+    geoNames: ['Denmark'],
+    fit: 'crossing',
+    origin: [55.03, 25.01],
+    originLabel: 'JEBEL ALI · DXB',
+    crossing: { name: 'AARHUS · PORT', coords: [10.22, 56.15], legend: 'Port of entry', dx: 11, dy: -8, anchor: 'start' },
+    routes: [
+      { mode: 'SEA · SUEZ', primary: true, points: leg(NORTH_SEA_TO_BALTIC, [10.8, 56.6], [10.22, 56.15]) },
+      { mode: 'AIR', points: leg(EUROPE_AIR, [15.0, 50.0], [12.65, 55.62]) },
+    ],
+  },
+  freight: [
+    { name: 'Sea, FCL', transit: '26–32 days', route: 'Jebel Ali to Aarhus, via Suez', useCase: 'Default for most orders' },
+    { name: 'Air freight', transit: '2–4 days', route: 'DXB to CPH', useCase: 'When the line is down' },
+    { name: 'Sea, LCL', transit: '32–40 days', route: 'Consolidated via Rotterdam, then feeder', useCase: 'Small mixed orders' },
+  ],
+  orderSteps: {
+    third: 'The duty cycle is confirmed alongside the dimensions — flex life, bend radius, temperature range — and the CE declaration is prepared where the assembly is above threshold.',
+    fourth: 'Goods sail from Jebel Ali through Suez and round the Skaw, and you get the paperwork and tracking together.',
+  },
+  cities: [
+    { name: 'Aarhus', coords: [10.2, 56.16], region: 'Central Jutland' },
+    { name: 'Copenhagen', coords: [12.57, 55.68], region: 'Capital Region', plot: true, dx: 9, dy: 6 },
+    { name: 'Esbjerg', coords: [8.45, 55.47], region: 'Southern Denmark', plot: true, dx: -9, dy: 6, anchor: 'end' },
+    { name: 'Fredericia', coords: [9.75, 55.56], region: 'Southern Denmark' },
+    { name: 'Kolding', coords: [9.48, 55.49], region: 'Southern Denmark' },
+    { name: 'Odense', coords: [10.39, 55.4], region: 'Southern Denmark', plot: true, dx: 9, dy: 8 },
+    { name: 'Aalborg', coords: [9.92, 57.05], region: 'North Jutland', plot: true, dx: -9, dy: -4, anchor: 'end' },
+    { name: 'Hirtshals', coords: [9.96, 57.59], region: 'North Jutland' },
+    { name: 'Randers', coords: [10.04, 56.46], region: 'Central Jutland' },
+    { name: 'Herning', coords: [8.98, 56.14], region: 'Central Jutland', plot: true, dx: -9, dy: -4, anchor: 'end' },
+    { name: 'Ringkøbing', coords: [8.24, 56.09], region: 'Central Jutland' },
+    { name: 'Kalundborg', coords: [11.09, 55.68], region: 'Zealand', plot: true, dx: 9, dy: -4 },
+  ],
+  sectors: [
+    { slug: 'power', name: 'Power & Energy', description: 'Wind nacelle, pitch and yaw hydraulics — specified on duty cycle and flex life rather than a catalogue number.' },
+    { slug: 'marine', name: 'Marine & Offshore', description: 'Deck machinery, winch and installation-vessel hydraulics out of Esbjerg and the Baltic yards.' },
+    { slug: 'oil-gas', name: 'Oil & Gas', description: 'North Sea support out of Esbjerg, and the Kalundborg and Fredericia process estates.' },
+    { slug: 'construction', name: 'Construction', description: 'Excavator, crane and piling-rig hydraulics for civil and foundation works.' },
+    { slug: 'steel', name: 'Steel & Metals', description: 'Cylinders and valves for forming and fabrication lines.' },
+    { slug: 'mining', name: 'Mining', description: 'Dust-rated, high-cycle components for aggregate and cement plant.' },
+  ],
+  faqs: [
+    { question: 'Do you have a branch in Denmark?', answer: 'No. Denmark is supplied from our Dubai warehouse, by sea through Suez and round the Skaw into Aarhus or Copenhagen.' },
+    {
+      question: 'Why buy from Dubai rather than locally?',
+      answer:
+        'For a standard fitting, you should not. What we are asked for is the pattern or the material a local distributor holds slowly — SS316L thread forms, API-monogrammed assemblies, sour-service documentation — usually for equipment being built here for export.',
+    },
+    {
+      question: 'Can you specify for wind duty?',
+      answer:
+        'Tell us the duty cycle rather than the part number — flex life, minimum bend radius, temperature range, whether it sits in a nacelle or a tower. A hose that meets the bore and pressure and fails the flex life is a service visit a hundred metres up, and that is the specification worth getting right at quotation.',
+    },
+    { question: 'Do we need CE marking?', answer: 'For a hose assembly above the pressure-volume threshold in PED 2014/68/EU, yes, and the declaration travels with the goods. Below it, sound engineering practice applies and there is no mark.' },
+    { question: 'Can you deliver to Esbjerg?', answer: 'Yes, on DAP terms to the offshore or wind base. The road leg from Aarhus is short and it is priced with the order, not estimated.' },
+    { question: 'Aarhus or Copenhagen?', answer: 'Aarhus for Jutland and most industry, Copenhagen for Zealand and the east. Clearance is identical, so the port is chosen on the inland leg.' },
+    { question: 'What currency do you quote in?', answer: 'EUR. Our export desk settles European trade in euros; we do not quote in kroner, and the Estimate, invoice and customs value all carry the same figure.' },
+    { question: 'What is your REACH position?', answer: 'We state it on the elastomer compounds at quotation, including where a compound carries a restriction relevant to your application.' },
+  ],
+  compliance: {
+    heading: 'Duty cycle, not catalogue number',
+    body:
+      'Denmark’s customs position is the ordinary European one — clearance once into free circulation at Aarhus or Copenhagen, a declaration of conformity for assemblies above the PED 2014/68/EU threshold, and our REACH position on the compounds. What is specific here is what the wind supply chain asks of a hose. A nacelle assembly is specified on flex life, minimum bend radius and temperature range as much as on bore and pressure, and the failure mode is not a leak on a workshop floor — it is a service visit a hundred metres above the ground, or offshore. So the useful thing to send us is the duty rather than the part number, and the useful thing for us to say back is where a standard compound will not survive the cycle. That is a slower quotation and a much better one.',
+    documents: [
+      { ref: 'PED', name: 'Declaration of conformity, assemblies above threshold', issuer: 'Us, as the assembler', when: 'Before dispatch' },
+      { ref: 'REACH', name: 'Compound position on the elastomers supplied', issuer: 'Us, at quotation', when: 'At quotation' },
+      { ref: 'DUTY', name: 'Flex life and bend radius statement, where specified', issuer: 'Us, at quotation', when: 'At quotation, per duty' },
+      { ref: 'COO', name: 'Certificate of Origin', issuer: 'Dubai Chamber attested', when: 'Before dispatch' },
+      { ref: 'EU-ENTRY', name: 'Customs entry into free circulation', issuer: 'The importer, through Danish Customs', when: 'On arrival' },
+    ],
+  },
+}
+
+const SWEDEN: MarketPage = {
+  slug: 'sweden',
+  regulatoryCopy: 'unverified',
+  released: false,
+  lane: 'DXB → SE',
+  dialCode: '+46',
+  currency: 'EUR',
+  localName: 'Sverige',
+  lede: 'Sweden is a long country and the inland leg is the part worth planning. Gothenburg takes the sailing and serves the south comfortably; Kiruna and the northern mines are another fourteen hundred kilometres beyond Stockholm, in a climate where a standard elastomer stiffens badly. The mining specification is the reason to call us — low-temperature compounds, abrasion-resistant covers, and material documentation that survives an audit rather than merely accompanying the box.',
+  facts: [
+    { label: 'Typical transit', value: 'Typically 28–34 days by sea from dispatch' },
+    {
+      label: 'Freight',
+      value: 'Sea freight from Jebel Ali through Suez and round the Skaw to Gothenburg · Stockholm and Gävle for the east coast · Luleå for the northern mining belt in season · Air freight into Stockholm where the schedule is tighter',
+    },
+    { label: 'Incoterms 2020', value: 'CIF Gothenburg · DAP to the buyer’s site or mine gate · FOB Jebel Ali · EXW Dubai for a nominated forwarder' },
+    {
+      label: 'Documentation',
+      value: 'CE marking and the PED declaration where the assembly is above threshold · REACH position on the elastomer compounds · Certificate of Origin, Dubai Chamber attested · EU customs entry raised by the importer',
+    },
+  ],
+  manifest: [
+    { label: 'Origin', value: 'Jebel Ali · Dubai' },
+    { label: 'Primary mode', value: 'Sea, via Suez' },
+    { label: 'Port of entry', value: 'Gothenburg' },
+    { label: 'Transit', value: '28–34 days' },
+    { label: 'Quoted in', value: 'EUR' },
+    { label: 'Docs prepared', value: 'Before the vessel sails' },
+  ],
+  map: {
+    geoNames: ['Sweden'],
+    fit: 'crossing',
+    origin: [55.03, 25.01],
+    originLabel: 'JEBEL ALI · DXB',
+    crossing: { name: 'GOTHENBURG · PORT', coords: [11.91, 57.71], legend: 'Port of entry', dx: -11, dy: 8, anchor: 'end' },
+    routes: [
+      { mode: 'SEA · SUEZ', primary: true, points: leg(NORTH_SEA_TO_BALTIC, [11.4, 57.4], [11.91, 57.71]) },
+      { mode: 'AIR', points: leg(EUROPE_AIR, [16.0, 50.0], [17.92, 59.65]) },
+    ],
+  },
+  freight: [
+    { name: 'Sea, FCL', transit: '28–34 days', route: 'Jebel Ali to Gothenburg, via Suez', useCase: 'Default for most orders' },
+    { name: 'Air freight', transit: '2–4 days', route: 'DXB to ARN', useCase: 'When the line is down' },
+    { name: 'Sea + road, northern', transit: '34–42 days', route: 'Gothenburg, then road to the mining belt', useCase: 'Kiruna and Gällivare' },
+  ],
+  orderSteps: {
+    third: 'The low-temperature specification is confirmed where the goods are going north, and the CE declaration is prepared where the assembly is above threshold.',
+    fourth: 'Goods sail from Jebel Ali through Suez to Gothenburg, and you get the paperwork and tracking together.',
+  },
+  cities: [
+    { name: 'Gothenburg', coords: [11.97, 57.71], region: 'Västra Götaland' },
+    { name: 'Stockholm', coords: [18.07, 59.33], region: 'Stockholm', plot: true, dx: 9, dy: 6 },
+    { name: 'Malmö', coords: [13.0, 55.6], region: 'Skåne', plot: true, dx: 9, dy: 8 },
+    { name: 'Helsingborg', coords: [12.69, 56.05], region: 'Skåne' },
+    { name: 'Norrköping', coords: [16.19, 58.59], region: 'Östergötland' },
+    { name: 'Linköping', coords: [15.62, 58.41], region: 'Östergötland', plot: true, dx: 9, dy: 8 },
+    { name: 'Västerås', coords: [16.55, 59.61], region: 'Västmanland' },
+    { name: 'Gävle', coords: [17.15, 60.67], region: 'Gävleborg', plot: true, dx: 9, dy: -4 },
+    { name: 'Sandviken', coords: [16.78, 60.62], region: 'Gävleborg' },
+    { name: 'Borlänge', coords: [15.44, 60.48], region: 'Dalarna' },
+    { name: 'Sundsvall', coords: [17.31, 62.39], region: 'Västernorrland', plot: true, dx: 9, dy: 4 },
+    { name: 'Umeå', coords: [20.26, 63.83], region: 'Västerbotten' },
+    { name: 'Luleå', coords: [22.15, 65.58], region: 'Norrbotten', plot: true, dx: 9, dy: 4 },
+    { name: 'Kiruna', coords: [20.22, 67.86], region: 'Norrbotten', plot: true, dx: -9, dy: -4, anchor: 'end' },
+    { name: 'Gällivare', coords: [20.66, 67.14], region: 'Norrbotten' },
+    { name: 'Oxelösund', coords: [17.1, 58.67], region: 'Södermanland' },
+  ],
+  sectors: [
+    { slug: 'mining', name: 'Mining', description: 'Iron ore at Kiruna and Gällivare — low-temperature compounds, abrasion covers and auditable material documentation.' },
+    { slug: 'steel', name: 'Steel & Metals', description: 'High-force cylinders and servo valves for the Oxelösund, Borlänge and Sandviken lines.' },
+    { slug: 'construction', name: 'Construction', description: 'Excavator, crane and tunnelling hydraulics — and the machinery builders who export them.' },
+    { slug: 'power', name: 'Power & Energy', description: 'Actuator and governor hydraulics for hydro and thermal plant.' },
+    { slug: 'marine', name: 'Marine & Offshore', description: 'Deck machinery and vessel hydraulics for the Baltic and west-coast fleets.' },
+    { slug: 'oil-gas', name: 'Oil & Gas', description: 'Refinery and terminal support on the west coast.' },
+  ],
+  faqs: [
+    { question: 'Do you have a branch in Sweden?', answer: 'No. Sweden is supplied from our Dubai warehouse, by sea through Suez and round the Skaw into Gothenburg.' },
+    {
+      question: 'Does the cold change what you supply?',
+      answer:
+        'Yes, and it is worth saying at quotation rather than after the first winter. A standard nitrile stiffens well before the temperatures the northern mining belt sees, so we specify a low-temperature compound for anything going north and say plainly when a catalogue item is the wrong choice.',
+    },
+    { question: 'Can you deliver to Kiruna?', answer: 'Yes, on DAP terms to the mine gate. It is a long domestic road leg from Gothenburg and it is priced with the order rather than estimated.' },
+    { question: 'Why buy from Dubai rather than locally?', answer: 'For a standard item you should not. What brings buyers here is the pattern or the material grade held as stock — SS316L thread forms, abrasion-resistant covers, sour-service documentation — that is otherwise a factory order.' },
+    { question: 'Do we need CE marking?', answer: 'For a hose assembly above the pressure-volume threshold in PED 2014/68/EU, yes, and the declaration travels with the goods. Below it, sound engineering practice applies and there is no mark.' },
+    { question: 'Gothenburg or Stockholm?', answer: 'Gothenburg for almost everything — it takes the direct sailing and serves the west and south. Stockholm or Gävle where the delivery sits on the east coast and the road leg would otherwise cross the country.' },
+    { question: 'What currency do you quote in?', answer: 'EUR. Our export desk settles European trade in euros; we do not quote in kronor, and the Estimate, invoice and customs value all carry the same figure.' },
+    { question: 'Can you supply auditable material documentation?', answer: 'Yes. Mill certificates traceable to heat number where the contract requires it, confirmed at quotation rather than produced after an audit asks for them.' },
+  ],
+  compliance: {
+    heading: 'The cold is a specification, and the north is a road leg',
+    body:
+      'Two things separate a Swedish consignment from any other European one, and neither is customs — clearance is the ordinary single entry into free circulation at Gothenburg. The first is temperature. A standard nitrile compound stiffens well above the temperatures the northern mining belt works in, and a hose chosen on bore and pressure alone will be the wrong hose by December. We specify a low-temperature compound for anything going north and say plainly when a catalogue item is unsuitable, which is a more useful answer than supplying what was asked for. The second is distance. Kiruna is most of a country beyond the port, so the inland leg is a real cost and it is priced with the order rather than left to be arranged. A declaration of conformity travels with any assembly above the PED threshold, and mill certificates are traceable to heat number where the contract calls for it.',
+    documents: [
+      { ref: 'PED', name: 'Declaration of conformity, assemblies above threshold', issuer: 'Us, as the assembler', when: 'Before dispatch' },
+      { ref: 'TEMP', name: 'Low-temperature compound statement, for northern delivery', issuer: 'Us, at quotation', when: 'At quotation, per duty' },
+      { ref: 'REACH', name: 'Compound position on the elastomers supplied', issuer: 'Us, at quotation', when: 'At quotation' },
+      { ref: 'MTC', name: 'Mill certificates traceable to heat number', issuer: 'Mill, or our test bench', when: 'Where the contract requires them' },
+      { ref: 'EU-ENTRY', name: 'Customs entry into free circulation', issuer: 'The importer, through Swedish Customs', when: 'On arrival' },
+    ],
+  },
+}
+
+
+const FINLAND: MarketPage = {
+  slug: 'finland',
+  regulatoryCopy: 'unverified',
+  released: false,
+  lane: 'DXB → FI',
+  dialCode: '+358',
+  currency: 'EUR',
+  localName: 'Suomi',
+  lede: 'Finland is the one market on this network where the season is part of the quotation rather than a caveat under it. The Gulf of Bothnia ices over, winter navigation requires an ice-classed vessel and carries a surcharge, and a January arrival at Oulu is a different price and a different schedule from a June one at Helsinki. We say which season a quotation assumes. The other half of the page is temperature at the other end: a compound chosen for a Gulf summer is the wrong compound at minus thirty.',
+  facts: [
+    { label: 'Typical transit', value: 'Typically 30–38 days by sea from dispatch, longer in the ice season' },
+    {
+      label: 'Freight',
+      value:
+        'Sea freight from Jebel Ali through Suez and the Baltic to Helsinki or Kotka · Rauma and Oulu for the west and north, subject to ice class in winter · Air freight into Helsinki where the schedule is tighter',
+    },
+    { label: 'Incoterms 2020', value: 'CIF Helsinki · DAP to the buyer’s site · FOB Jebel Ali · EXW Dubai for a nominated forwarder' },
+    {
+      label: 'Documentation',
+      value:
+        'CE marking and the PED declaration where the assembly is above threshold · REACH position on the elastomer compounds · Certificate of Origin, Dubai Chamber attested · EU customs entry raised by the importer',
+    },
+  ],
+  manifest: [
+    { label: 'Origin', value: 'Jebel Ali · Dubai' },
+    { label: 'Primary mode', value: 'Sea, via Suez' },
+    { label: 'Port of entry', value: 'Helsinki' },
+    { label: 'Transit', value: '30–38 days' },
+    { label: 'Quoted in', value: 'EUR' },
+    { label: 'Docs prepared', value: 'Before the vessel sails' },
+  ],
+  map: {
+    geoNames: ['Finland'],
+    fit: 'crossing',
+    origin: [55.03, 25.01],
+    originLabel: 'JEBEL ALI · DXB',
+    crossing: { name: 'HELSINKI · PORT', coords: [24.96, 60.16], legend: 'Port of entry', dx: -11, dy: 10, anchor: 'end' },
+    routes: [
+      { mode: 'SEA · SUEZ', primary: true, points: leg(NORTH_SEA_TO_BALTIC, [12.7, 55.7], [14.5, 55.3], [19.0, 57.0], [22.0, 59.4], [24.96, 60.16]) },
+      { mode: 'AIR', points: leg(EUROPE_AIR, [20.0, 52.0], [24.97, 60.32]) },
+    ],
+  },
+  freight: [
+    { name: 'Sea, FCL', transit: '30–38 days', route: 'Jebel Ali to Helsinki, via Suez and the Baltic', useCase: 'Default outside the ice season' },
+    { name: 'Air freight', transit: '2–4 days', route: 'DXB to HEL', useCase: 'When the line is down' },
+    { name: 'Sea, ice season', transit: '36–48 days', route: 'Ice-classed vessel, northern ports', useCase: 'December to April' },
+  ],
+  orderSteps: {
+    third:
+      'The season is stated on the quotation — whether it assumes open water or ice-classed navigation — and the compound is specified for the working temperature rather than the catalogue default.',
+    fourth: 'Goods sail from Jebel Ali through Suez and the Baltic, and you get the paperwork and tracking together.',
+  },
+  cities: [
+    { name: 'Helsinki', coords: [24.94, 60.17], region: 'Uusimaa' },
+    { name: 'Espoo', coords: [24.66, 60.21], region: 'Uusimaa', plot: true, dx: -9, dy: 8, anchor: 'end' },
+    { name: 'Kotka', coords: [26.95, 60.47], region: 'Kymenlaakso', plot: true, dx: 9, dy: 8 },
+    { name: 'Hamina', coords: [27.2, 60.57], region: 'Kymenlaakso' },
+    { name: 'Turku', coords: [22.27, 60.45], region: 'Southwest Finland', plot: true, dx: -9, dy: -4, anchor: 'end' },
+    { name: 'Rauma', coords: [21.51, 61.13], region: 'Satakunta', plot: true, dx: -9, dy: -4, anchor: 'end' },
+    { name: 'Pori', coords: [21.79, 61.49], region: 'Satakunta' },
+    { name: 'Tampere', coords: [23.76, 61.5], region: 'Pirkanmaa', plot: true, dx: 9, dy: 4 },
+    { name: 'Lahti', coords: [25.66, 60.98], region: 'Päijät-Häme' },
+    { name: 'Jyväskylä', coords: [25.75, 62.24], region: 'Central Finland', plot: true, dx: 9, dy: -4 },
+    { name: 'Kuopio', coords: [27.68, 62.89], region: 'North Savo' },
+    { name: 'Vaasa', coords: [21.62, 63.1], region: 'Ostrobothnia', plot: true, dx: -9, dy: -4, anchor: 'end' },
+    { name: 'Kokkola', coords: [23.13, 63.84], region: 'Central Ostrobothnia' },
+    { name: 'Oulu', coords: [25.47, 65.01], region: 'North Ostrobothnia', plot: true, dx: 9, dy: 4 },
+    { name: 'Kemi', coords: [24.56, 65.74], region: 'Lapland' },
+    { name: 'Kittilä', coords: [24.9, 67.65], region: 'Lapland', plot: true, dx: 9, dy: -4 },
+  ],
+  sectors: [
+    { slug: 'mining', name: 'Mining', description: 'Nickel, gold and chromium in Lapland — low-temperature compounds and abrasion covers, specified for winter working.' },
+    { slug: 'steel', name: 'Steel & Metals', description: 'High-force cylinders and servo valves for the Tornio and Raahe lines.' },
+    { slug: 'construction', name: 'Construction', description: 'Excavator, crane and tunnelling hydraulics — and the forestry and mining machinery built here for export.' },
+    { slug: 'power', name: 'Power & Energy', description: 'Actuator and governor hydraulics for hydro, thermal and nuclear plant.' },
+    { slug: 'marine', name: 'Marine & Offshore', description: 'Deck machinery and icebreaker hydraulics for the Baltic fleet and the Turku and Rauma yards.' },
+    { slug: 'oil-gas', name: 'Oil & Gas', description: 'Refinery and terminal support at Porvoo and Naantali.' },
+  ],
+  faqs: [
+    { question: 'Do you have a branch in Finland?', answer: 'No. Finland is supplied from our Dubai warehouse, by sea through Suez and the Baltic into Helsinki or Kotka.' },
+    {
+      question: 'Does winter really change the shipment?',
+      answer:
+        'Yes, and it is the reason this page is written differently from the others. Between roughly December and April the northern ports need ice-classed navigation, which adds cost and time. A quotation states which season it assumes; one raised in October for a February delivery is not the same quotation.',
+    },
+    {
+      question: 'Does the cold change what you supply?',
+      answer:
+        'It should. A compound chosen for a Gulf summer stiffens badly at minus thirty and a hose specified on bore and pressure alone will be wrong by January. Tell us the working temperature and we will specify for it, or say plainly that the catalogue item is unsuitable.',
+    },
+    { question: 'Can you deliver to Lapland?', answer: 'Yes, on DAP terms to the mine or site gate. The road leg north of Oulu is long and seasonal, and it is quoted rather than estimated.' },
+    { question: 'Helsinki, Kotka or Rauma?', answer: 'Helsinki or Kotka for most cargo and the southern industry, Rauma or Oulu where the delivery sits on the west coast or the north. In winter the choice narrows, which is another reason to name the delivery town early.' },
+    { question: 'Do we need CE marking?', answer: 'For a hose assembly above the pressure-volume threshold in PED 2014/68/EU, yes, and the declaration travels with the goods. Below it, sound engineering practice applies and there is no mark.' },
+    { question: 'What currency do you quote in?', answer: 'EUR. Finland is in the eurozone, so the Estimate, the invoice and the customs value all carry the same figure with nothing to convert.' },
+    { question: 'Is air freight worth it here?', answer: 'For a line that is down in the ice season, more often than elsewhere — the gap between two to four days and six weeks is at its widest here. For planned work, ordering against the season is the cheaper answer.' },
+  ],
+  compliance: {
+    heading: 'The season is part of the price',
+    body:
+      'Every other page on this network treats freight as a band and paperwork as the variable. Finland reverses it twice over. Between roughly December and April the Gulf of Bothnia ices over, the northern ports need ice-classed navigation, and a winter arrival costs more and takes longer than a summer one on the same route — so a quotation here states which season it assumes rather than quoting a single band that is wrong for half the year. The second reversal is at the other end of the lane. A compound specified for a Gulf summer is the wrong compound at minus thirty; it stiffens, the bend radius effectively grows, and a hose that passed inspection in September fails in January. We specify to the working temperature and say plainly where a catalogue item is unsuitable. Customs, by comparison, is unremarkable: one entry into free circulation, a PED declaration above threshold, and the REACH position on the compounds.',
+    documents: [
+      { ref: 'SEASON', name: 'Season assumed by the quotation — open water or ice class', issuer: 'Us, at quotation', when: 'At quotation' },
+      { ref: 'TEMP', name: 'Low-temperature compound statement for the working range', issuer: 'Us, at quotation', when: 'At quotation, per duty' },
+      { ref: 'PED', name: 'Declaration of conformity, assemblies above threshold', issuer: 'Us, as the assembler', when: 'Before dispatch' },
+      { ref: 'REACH', name: 'Compound position on the elastomers supplied', issuer: 'Us, at quotation', when: 'At quotation' },
+      { ref: 'EU-ENTRY', name: 'Customs entry into free circulation', issuer: 'The importer, through Finnish Customs', when: 'On arrival' },
+    ],
+  },
+}
+
+const ICELAND: MarketPage = {
+  slug: 'iceland',
+  regulatoryCopy: 'unverified',
+  released: false,
+  lane: 'DXB → IS',
+  dialCode: '+354',
+  currency: 'EUR',
+  localName: 'Ísland',
+  lede: 'Iceland is the most isolated market on this network and the smallest in the North Atlantic. Nothing sails here directly from the Gulf; cargo transhipes at Rotterdam or Hamburg onto a weekly feeder, so the schedule rather than the distance sets the date and a missed connection costs a week rather than a day. What the island actually runs on is geothermal plant and a fishing fleet, and both specify for temperature and salt rather than for pressure alone.',
+  facts: [
+    { label: 'Typical transit', value: 'Typically 32–42 days by sea from dispatch, feeder-dependent' },
+    {
+      label: 'Freight',
+      value: 'Sea freight from Jebel Ali through Suez to Rotterdam or Hamburg, then a weekly feeder to Reykjavík · Air freight into Keflavík where the schedule is tighter',
+    },
+    { label: 'Incoterms 2020', value: 'CIF Reykjavík · DAP to the buyer’s site · FOB Jebel Ali · EXW Dubai for a nominated forwarder' },
+    {
+      label: 'Documentation',
+      value:
+        'CE marking and the PED declaration where the assembly is above threshold · REACH position on the elastomer compounds · Certificate of Origin, Dubai Chamber attested · Customs declaration raised by the importer',
+    },
+  ],
+  manifest: [
+    { label: 'Origin', value: 'Jebel Ali · Dubai' },
+    { label: 'Primary mode', value: 'Sea, transhipped' },
+    { label: 'Port of entry', value: 'Reykjavík' },
+    { label: 'Transit', value: '32–42 days' },
+    { label: 'Quoted in', value: 'EUR' },
+    { label: 'Docs prepared', value: 'Before the vessel sails' },
+  ],
+  map: {
+    geoNames: ['Iceland'],
+    fit: 'crossing',
+    origin: [55.03, 25.01],
+    originLabel: 'JEBEL ALI · DXB',
+    crossing: { name: 'REYKJAVÍK · PORT', coords: [-21.94, 64.15], legend: 'Port of entry', dx: 11, dy: 10, anchor: 'start' },
+    routes: [
+      { mode: 'SEA · TRANSHIP', primary: true, points: leg(MED_TO_ATLANTIC, [-9.5, 38.7], [-9.5, 45.0], [-6.0, 50.0], [-8.0, 56.0], [-14.0, 62.0], [-21.94, 64.15]) },
+      { mode: 'AIR', points: leg(EUROPE_AIR, [10.0, 50.0], [-10.0, 58.0], [-22.6, 63.99]) },
+    ],
+  },
+  freight: [
+    { name: 'Sea, FCL', transit: '32–42 days', route: 'Transhipped at Rotterdam, then weekly feeder', useCase: 'Default for most orders' },
+    { name: 'Air freight', transit: '3–5 days', route: 'DXB to KEF, with a connection', useCase: 'When the line is down' },
+    { name: 'Sea, LCL', transit: '38–50 days', route: 'Consolidated, two transhipments', useCase: 'Small mixed orders' },
+  ],
+  orderSteps: {
+    third: 'The consignment is built to catch a named feeder rather than an average schedule, and the compound is specified for geothermal or marine service where that is the duty.',
+    fourth: 'Goods sail to Rotterdam and tranship for Reykjavík, and you get the paperwork and tracking together.',
+  },
+  cities: [
+    { name: 'Reykjavík', coords: [-21.94, 64.15], region: 'Capital Region' },
+    { name: 'Hafnarfjörður', coords: [-21.94, 64.07], region: 'Capital Region', plot: true, dx: 11, dy: 8, anchor: 'start' },
+    { name: 'Grundartangi', coords: [-21.77, 64.34], region: 'West', plot: true, dx: 9, dy: -4 },
+    { name: 'Akranes', coords: [-22.09, 64.32], region: 'West' },
+    { name: 'Keflavík', coords: [-22.56, 64.0], region: 'Southern Peninsula', plot: true, dx: -9, dy: 6, anchor: 'end' },
+    { name: 'Grindavík', coords: [-22.43, 63.84], region: 'Southern Peninsula' },
+    { name: 'Selfoss', coords: [-20.99, 63.93], region: 'South', plot: true, dx: 9, dy: 8 },
+    { name: 'Hellisheiði', coords: [-21.4, 64.03], region: 'South' },
+    { name: 'Akureyri', coords: [-18.09, 65.68], region: 'Northeast', plot: true, dx: 9, dy: -4 },
+    { name: 'Húsavík', coords: [-17.34, 66.04], region: 'Northeast' },
+    { name: 'Reyðarfjörður', coords: [-14.22, 65.03], region: 'East', plot: true, dx: 9, dy: 4 },
+    { name: 'Vestmannaeyjar', coords: [-20.27, 63.44], region: 'South', plot: true, dx: 9, dy: 8 },
+  ],
+  sectors: [
+    { slug: 'power', name: 'Power & Energy', description: 'Geothermal and hydro plant — high-temperature compounds, steam-service hose and turbine governor hydraulics.' },
+    { slug: 'marine', name: 'Marine & Offshore', description: 'Deck machinery, winch and trawl hydraulics for the fishing fleet, specified for salt and cold.' },
+    { slug: 'steel', name: 'Steel & Metals', description: 'High-force cylinders and servo valves for the Grundartangi and Reyðarfjörður smelters.' },
+    { slug: 'construction', name: 'Construction', description: 'Excavator, crane and tunnelling hydraulics for civil and geothermal works.' },
+    { slug: 'mining', name: 'Mining', description: 'Dust-rated, high-cycle components for aggregate and quarry plant.' },
+    { slug: 'oil-gas', name: 'Oil & Gas', description: 'Fuel terminal and bunkering support at Reykjavík and Reyðarfjörður.' },
+  ],
+  faqs: [
+    { question: 'Do you have a branch in Iceland?', answer: 'No. Iceland is supplied from our Dubai warehouse, transhipped at Rotterdam or Hamburg onto a weekly feeder to Reykjavík.' },
+    {
+      question: 'Why does it take so long for such a small distance from Europe?',
+      answer:
+        'Because nothing sails here directly from the Gulf and the feeder is weekly. Missing a connection costs a week rather than a day, so we build a consignment to catch a named sailing rather than quoting against an average schedule.',
+    },
+    {
+      question: 'Can you supply for geothermal service?',
+      answer:
+        'Where the duty is steam or high-temperature water, tell us the temperature, the pressure and whether the medium carries dissolved solids. A standard compound is the wrong answer for geothermal service and we will say so rather than supplying to the bore.',
+    },
+    { question: 'Can you supply for the fishing fleet?', answer: 'Yes — deck, winch and trawl hydraulics specified for salt and cold rather than a workshop environment. Cover material matters as much as the reinforcement here.' },
+    { question: 'Do we need CE marking?', answer: 'For a hose assembly above the pressure-volume threshold in PED 2014/68/EU, yes. Iceland applies the European framework through the EEA, so the declaration is the same one a member state would expect.' },
+    { question: 'Is Iceland in the EU customs union?', answer: 'No. Iceland is in the EEA rather than the customs union, so goods are declared on arrival rather than arriving in free circulation. It is a straightforward entry, but it is its own file.' },
+    { question: 'What currency do you quote in?', answer: 'EUR. Our export desk settles European trade in euros; we do not quote in krónur, and the Estimate, invoice and customs value all carry the same figure.' },
+    { question: 'Is it worth batching orders?', answer: 'Strongly, on a weekly feeder. A consolidated consignment catching one sailing lands sooner and cheaper than three small ones spread across three weeks, and we will say when that applies.' },
+  ],
+  compliance: {
+    heading: 'EEA, not the customs union — and a weekly boat',
+    body:
+      'Two facts shape an Icelandic consignment. The first is that Iceland is in the European Economic Area but not the customs union, so goods do not arrive in free circulation from a European port — a declaration is made on arrival. It is a straightforward entry, but it is its own file, and the CE framework applies through the EEA so a PED declaration above threshold is expected exactly as a member state would expect it. The second is the feeder. Nothing sails from the Gulf to Reykjavík directly; cargo transhipes at Rotterdam or Hamburg onto a weekly service, and a missed connection costs a week. That makes this a lane where the useful discipline is consolidation — one consignment catching a named sailing rather than three chasing an average schedule. The specification work here is temperature at both extremes: geothermal steam service at one end and salt-water deck duty at the other, neither of which a catalogue default covers.',
+    documents: [
+      { ref: 'DECL', name: 'Customs import declaration', issuer: 'The importer, through Iceland Revenue and Customs', when: 'Before arrival' },
+      { ref: 'PED', name: 'Declaration of conformity, assemblies above threshold', issuer: 'Us, as the assembler', when: 'Before dispatch' },
+      { ref: 'REACH', name: 'Compound position on the elastomers supplied', issuer: 'Us, at quotation', when: 'At quotation' },
+      { ref: 'DUTY', name: 'Temperature and medium statement for geothermal or marine service', issuer: 'Us, at quotation', when: 'At quotation, per duty' },
+      { ref: 'COO', name: 'Certificate of Origin', issuer: 'Dubai Chamber attested', when: 'Before dispatch' },
+    ],
+  },
+}
+
+
+// ─────────────────────────────────────────────────────────────────────────────
+// THE ALPINE PAIR — landlocked, and only one of them inside the union
+//
+// Austria and Switzerland share a border, a language and a mountain range, and
+// their consignments behave completely differently. Austria is inside the
+// customs union, so goods clear once at a port and arrive as domestic movement.
+// Switzerland is not, so the same container transits the EU under bond and
+// makes a Swiss entry at the border — two files, in the middle of Europe.
+// ─────────────────────────────────────────────────────────────────────────────
+
+const AUSTRIA: MarketPage = {
+  slug: 'austria',
+  regulatoryCopy: 'unverified',
+  released: false,
+  lane: 'DXB → AT',
+  dialCode: '+43',
+  currency: 'EUR',
+  localName: 'Österreich',
+  lede: 'Austria is landlocked inside the customs union, which makes the only real decision the gate: Hamburg and the Rhine corridor from the north, or Koper and Trieste from the Adriatic. The Adriatic is materially shorter out of Suez and most of our cargo goes that way. Behind the gate the demand is machinery — cable cars, tunnelling, forming lines — and the pattern that a machine built here for export needs but a local distributor does not stock.',
+  facts: [
+    { label: 'Typical transit', value: 'Typically 20–26 days from dispatch via the Adriatic, sea and road combined' },
+    {
+      label: 'Freight',
+      value:
+        'Sea freight from Jebel Ali through Suez to Koper or Trieste, then road · Hamburg and the Rhine corridor where the northern gate suits · Air freight into Vienna where the schedule is tighter',
+    },
+    { label: 'Incoterms 2020', value: 'DAP to the buyer’s site · CIF Koper · FOB Jebel Ali · EXW Dubai for a nominated forwarder' },
+    {
+      label: 'Documentation',
+      value:
+        'CE marking and the PED declaration where the assembly is above threshold · REACH position on the elastomer compounds · Certificate of Origin, Dubai Chamber attested · EU customs entry raised at the port',
+    },
+  ],
+  manifest: [
+    { label: 'Origin', value: 'Jebel Ali · Dubai' },
+    { label: 'Primary mode', value: 'Sea + road' },
+    { label: 'Port of entry', value: 'Koper, then road' },
+    { label: 'Transit', value: '20–26 days' },
+    { label: 'Quoted in', value: 'EUR' },
+    { label: 'Docs prepared', value: 'Before the vessel sails' },
+  ],
+  map: {
+    geoNames: ['Austria'],
+    fit: 'crossing',
+    origin: [55.03, 25.01],
+    originLabel: 'JEBEL ALI · DXB',
+    crossing: { name: 'KOPER · PORT', coords: [13.73, 45.55], legend: 'Port of entry', dx: -11, dy: 10, anchor: 'end' },
+    routes: [
+      { mode: 'SEA + ROAD', primary: true, points: leg(SUEZ_TO_MED, [26.0, 33.5], [20.0, 36.0], [16.0, 39.0], [15.5, 42.5], [13.73, 45.55], [14.5, 46.6], [15.44, 47.07]) },
+      { mode: 'AIR', points: leg(EUROPE_AIR, [16.57, 48.12]) },
+    ],
+  },
+  freight: [
+    { name: 'Sea + road, Adriatic', transit: '20–26 days', route: 'Koper or Trieste, then road', useCase: 'Default for most orders' },
+    { name: 'Air freight', transit: '2–4 days', route: 'DXB to VIE', useCase: 'When the line is down' },
+    { name: 'Sea + road, northern', transit: '26–34 days', route: 'Hamburg and the Rhine corridor', useCase: 'When the northern gate suits' },
+  ],
+  orderSteps: {
+    third: 'The gate is chosen against the delivery town rather than defaulted, and the CE declaration is prepared where the assembly is above threshold.',
+    fourth: 'Goods sail from Jebel Ali through Suez to the Adriatic and come on by road, and you get the paperwork and tracking together.',
+  },
+  cities: [
+    { name: 'Vienna', coords: [16.37, 48.21], region: 'Vienna', plot: true, dx: 9, dy: -5 },
+    { name: 'Graz', coords: [15.44, 47.07], region: 'Styria', plot: true, dx: 9, dy: 8 },
+    { name: 'Linz', coords: [14.29, 48.31], region: 'Upper Austria', plot: true, dx: -9, dy: -4, anchor: 'end' },
+    { name: 'Wels', coords: [14.02, 48.16], region: 'Upper Austria' },
+    { name: 'Steyr', coords: [14.42, 48.04], region: 'Upper Austria' },
+    { name: 'Salzburg', coords: [13.06, 47.81], region: 'Salzburg', plot: true, dx: -9, dy: -4, anchor: 'end' },
+    { name: 'Innsbruck', coords: [11.4, 47.27], region: 'Tyrol', plot: true, dx: -9, dy: 6, anchor: 'end' },
+    { name: 'Kufstein', coords: [12.17, 47.58], region: 'Tyrol' },
+    { name: 'Bregenz', coords: [9.75, 47.5], region: 'Vorarlberg', plot: true, dx: -9, dy: -4, anchor: 'end' },
+    { name: 'Klagenfurt', coords: [14.31, 46.62], region: 'Carinthia', plot: true, dx: 9, dy: 8 },
+    { name: 'Villach', coords: [13.85, 46.61], region: 'Carinthia' },
+    { name: 'Leoben', coords: [15.09, 47.38], region: 'Styria' },
+    { name: 'Kapfenberg', coords: [15.29, 47.44], region: 'Styria' },
+    { name: 'St. Pölten', coords: [15.62, 48.2], region: 'Lower Austria' },
+    { name: 'Wiener Neustadt', coords: [16.24, 47.81], region: 'Lower Austria' },
+    { name: 'Ranshofen', coords: [13.04, 48.24], region: 'Upper Austria' },
+  ],
+  sectors: [
+    { slug: 'steel', name: 'Steel & Metals', description: 'High-force cylinders and servo valves for the Linz, Leoben and Kapfenberg lines.' },
+    { slug: 'construction', name: 'Construction', description: 'Tunnelling, cable-car and crane hydraulics — and the machinery builders exporting them.' },
+    { slug: 'power', name: 'Power & Energy', description: 'Actuator and governor hydraulics for the Alpine hydro cascade.' },
+    { slug: 'mining', name: 'Mining', description: 'Dust-rated, high-cycle components for magnesite, aggregate and cement plant.' },
+    { slug: 'oil-gas', name: 'Oil & Gas', description: 'Refinery and terminal support at Schwechat, and oilfield packages built here for export.' },
+    { slug: 'marine', name: 'Marine & Offshore', description: 'Winch and deck hydraulics for Danube river and lifting equipment.' },
+  ],
+  faqs: [
+    { question: 'Do you have a branch in Austria?', answer: 'No. Austria is supplied from our Dubai warehouse, by sea through Suez to Koper or Trieste and then by road.' },
+    {
+      question: 'Why the Adriatic rather than a northern port?',
+      answer:
+        'Because it is materially shorter out of Suez. A container discharged at Koper is a few hours from Graz and most of a week closer than the same box routed via Hamburg. We use the northern gate where the delivery sits in Upper Austria or Vorarlberg and the road leg reverses the advantage.',
+    },
+    { question: 'Is there a border formality?', answer: 'No. Austria is inside the customs union, so goods clear once at Koper or Hamburg into free circulation and arrive as domestic movement. There is no second entry and no transit document.' },
+    { question: 'Do we need CE marking?', answer: 'For a hose assembly above the pressure-volume threshold in PED 2014/68/EU, yes, and the declaration travels with the goods. Below it, sound engineering practice applies and there is no mark.' },
+    {
+      question: 'Why buy from Dubai rather than locally?',
+      answer:
+        'For a standard fitting, you should not. The consistent reason is a machine being built here for export — a GOST coupling for a Central Asian contract, an API-monogrammed assembly, an SS316L thread form — where the pattern is stock for us and a factory order locally.',
+    },
+    { question: 'Can you deliver to a site in the mountains?', answer: 'Yes, on DAP terms. The road leg is domestic movement and it is priced with the order; we will say where a delivery point needs a smaller vehicle than a standard trailer.' },
+    { question: 'What currency do you quote in?', answer: 'EUR. Austria is in the eurozone, so the Estimate, the invoice and the customs value all carry the same figure with nothing to convert.' },
+    { question: 'Can you supply GOST-pattern couplings?', answer: 'Yes, alongside the DIN, BSP, JIC and ORFS ranges, so a machine destined for a GOST market can be plumbed from one order.' },
+  ],
+  compliance: {
+    heading: 'Two gates, one clearance',
+    body:
+      'Austria is landlocked and inside the customs union, which reduces the whole customs question to a routing one. Goods clear once — at Koper, Trieste or Hamburg — enter free circulation, and reach the delivery address as domestic movement with no second entry and no transit document. The decision that remains is which gate, and it is a real one rather than a formality: the Adriatic ports are materially shorter out of Suez, and a container discharged at Koper is a few hours from Graz where the same box routed via Hamburg is most of a week further away. We choose against the delivery town rather than defaulting to whichever port a forwarder prefers. On product documentation the European set applies unchanged — a declaration of conformity above the PED 2014/68/EU threshold, and our position on the compounds under REACH.',
+    documents: [
+      { ref: 'PED', name: 'Declaration of conformity, assemblies above threshold', issuer: 'Us, as the assembler', when: 'Before dispatch' },
+      { ref: 'REACH', name: 'Compound position on the elastomers supplied', issuer: 'Us, at quotation', when: 'At quotation' },
+      { ref: 'COO', name: 'Certificate of Origin', issuer: 'Dubai Chamber attested', when: 'Before dispatch' },
+      { ref: 'EU-ENTRY', name: 'Customs entry into free circulation', issuer: 'The importer, at Koper or Hamburg', when: 'On arrival' },
+      { ref: 'MTC', name: 'Material and test certificates', issuer: 'Mill, or our test bench', when: 'Where the order calls for them' },
+    ],
+  },
+}
+
+const SWITZERLAND: MarketPage = {
+  slug: 'switzerland',
+  regulatoryCopy: 'unverified',
+  released: false,
+  lane: 'DXB → CH',
+  dialCode: '+41',
+  currency: 'EUR',
+  localName: 'Schweiz · Suisse',
+  lede: 'Switzerland is surrounded by the customs union and outside it, which makes this the only European lane on the network that carries two customs files. A container discharged at Genoa or Rotterdam transits the union under bond and makes a Swiss entry at the border; the two declarations describe the same goods and have to agree line for line. The demand behind it is precision machinery and pharmaceutical plant, where the specification is tighter than the tolerance most catalogues quote.',
+  facts: [
+    { label: 'Typical transit', value: 'Typically 24–32 days from dispatch, sea and road combined' },
+    {
+      label: 'Freight',
+      value:
+        'Sea freight from Jebel Ali through Suez to Genoa, then bonded road over the Alps · Rotterdam and the Rhine corridor where the northern gate suits · Air freight into Zürich where the schedule is tighter',
+    },
+    { label: 'Incoterms 2020', value: 'DAP to the buyer’s site · CIF Genoa · FOB Jebel Ali · EXW Dubai for a nominated forwarder' },
+    {
+      label: 'Documentation',
+      value:
+        'EU transit declaration for the bonded move · Swiss customs entry raised by the importer · CE marking and the PED declaration where the assembly is above threshold · Certificate of Origin, Dubai Chamber attested',
+    },
+  ],
+  manifest: [
+    { label: 'Origin', value: 'Jebel Ali · Dubai' },
+    { label: 'Primary mode', value: 'Sea + road' },
+    { label: 'Border crossing', value: 'Chiasso · Basel' },
+    { label: 'Transit', value: '24–32 days' },
+    { label: 'Quoted in', value: 'EUR' },
+    { label: 'Docs prepared', value: 'Before the vessel sails' },
+  ],
+  map: {
+    geoNames: ['Switzerland'],
+    fit: 'crossing',
+    origin: [55.03, 25.01],
+    originLabel: 'JEBEL ALI · DXB',
+    crossing: { name: 'CHIASSO · BORDER', coords: [9.03, 45.83], dx: 11, dy: 10, anchor: 'start' },
+    routes: [
+      { mode: 'SEA + ROAD', primary: true, points: leg(SUEZ_TO_MED, [26.0, 33.5], [18.0, 35.5], [12.0, 38.0], [9.5, 43.0], [8.92, 44.4], [9.03, 45.83], [8.54, 47.38]) },
+      { mode: 'AIR', points: leg(EUROPE_AIR, [15.0, 47.0], [8.56, 47.45]) },
+    ],
+  },
+  freight: [
+    { name: 'Sea + road', transit: '24–32 days', route: 'Genoa, then bonded over the Alps', useCase: 'Default for most orders' },
+    { name: 'Air freight', transit: '2–4 days', route: 'DXB to ZRH', useCase: 'When the line is down' },
+    { name: 'Sea + road, northern', transit: '28–36 days', route: 'Rotterdam and the Rhine corridor to Basel', useCase: 'When the northern gate suits' },
+  ],
+  orderSteps: {
+    third:
+      'The EU transit declaration and the Swiss entry are raised against the same invoice and packing list, so the two agree line for line before the goods reach the border.',
+    fourth: 'Goods sail to Genoa and cross the Alps under bond, and you get the paperwork and tracking together.',
+  },
+  cities: [
+    { name: 'Zürich', coords: [8.54, 47.38], region: 'Zürich', plot: true, dx: 9, dy: -5 },
+    { name: 'Basel', coords: [7.59, 47.56], region: 'Basel-Stadt', plot: true, dx: -9, dy: -4, anchor: 'end' },
+    { name: 'Chiasso', coords: [9.03, 45.83], region: 'Ticino' },
+    { name: 'Lugano', coords: [8.95, 46.0], region: 'Ticino', plot: true, dx: 9, dy: 8 },
+    { name: 'Bern', coords: [7.45, 46.95], region: 'Bern', plot: true, dx: -9, dy: 6, anchor: 'end' },
+    { name: 'Geneva', coords: [6.14, 46.2], region: 'Geneva', plot: true, dx: -9, dy: 6, anchor: 'end' },
+    { name: 'Lausanne', coords: [6.63, 46.52], region: 'Vaud' },
+    { name: 'Winterthur', coords: [8.73, 47.5], region: 'Zürich' },
+    { name: 'St. Gallen', coords: [9.38, 47.42], region: 'St. Gallen', plot: true, dx: 9, dy: -4 },
+    { name: 'Schaffhausen', coords: [8.63, 47.7], region: 'Schaffhausen' },
+    { name: 'Lucerne', coords: [8.31, 47.05], region: 'Lucerne' },
+    { name: 'Visp', coords: [7.88, 46.29], region: 'Valais', plot: true, dx: 9, dy: 8 },
+    { name: 'Sion', coords: [7.36, 46.23], region: 'Valais' },
+    { name: 'Biel', coords: [7.25, 47.14], region: 'Bern' },
+    { name: 'Aarau', coords: [8.04, 47.39], region: 'Aargau' },
+    { name: 'Neuchâtel', coords: [6.93, 46.99], region: 'Neuchâtel' },
+  ],
+  sectors: [
+    { slug: 'steel', name: 'Steel & Metals', description: 'High-force cylinders and precision servo valves for forming and machining lines.' },
+    { slug: 'power', name: 'Power & Energy', description: 'Actuator and governor hydraulics for the Alpine hydro cascade and pumped storage.' },
+    { slug: 'construction', name: 'Construction', description: 'Tunnelling, cable-car and crane hydraulics for Alpine civil works.' },
+    { slug: 'oil-gas', name: 'Oil & Gas', description: 'Process and terminal support, and packages built here for export.' },
+    { slug: 'mining', name: 'Mining', description: 'Dust-rated, high-cycle components for aggregate, salt and cement plant.' },
+    { slug: 'marine', name: 'Marine & Offshore', description: 'Winch and deck hydraulics for Rhine barge and lake fleet equipment.' },
+  ],
+  faqs: [
+    { question: 'Do you have a branch in Switzerland?', answer: 'No. Switzerland is supplied from our Dubai warehouse, by sea to Genoa and then across the Alps under bond.' },
+    {
+      question: 'Is Switzerland in the EU customs union?',
+      answer:
+        'No, and it is the only European market on this network where that matters to a shipment. Goods transit the union under bond and make a Swiss entry at the border, so there are two declarations describing the same cargo. They have to agree line for line, or the truck waits at Chiasso rather than at either customs office.',
+    },
+    { question: 'Genoa or Rotterdam?', answer: 'Genoa for most cargo — it is much shorter out of Suez and the Alpine crossing is straightforward. Rotterdam and the Rhine corridor where the delivery sits in Basel or the north-west and the road leg is shorter that way.' },
+    { question: 'Do we need CE marking?', answer: 'For a hose assembly above the pressure-volume threshold in PED 2014/68/EU, yes. Switzerland recognises the European conformity framework for this equipment, so the declaration is the one a member state would expect.' },
+    {
+      question: 'Why buy from Dubai rather than locally?',
+      answer:
+        'For a standard item you should not; Swiss and German distribution is excellent and closer. What we are asked for is the pattern held as stock — SS316L thread forms, GOST couplings, API-monogrammed assemblies — usually for machinery being built here for export.',
+    },
+    { question: 'What is the real variable on this lane?', answer: 'The border, not the sailing. The sea leg to Genoa is predictable; what causes delay is a transit declaration and a Swiss entry that disagree on a description or a quantity, which is why we raise both from the same invoice and packing list.' },
+    { question: 'What currency do you quote in?', answer: 'EUR. Our export desk settles European trade in euros; we do not quote in francs, and the Estimate, invoice and customs value all carry the same figure.' },
+    { question: 'Can you supply to a tighter tolerance specification?', answer: 'Tell us the tolerance and the standard it is written against at quotation. We will say plainly whether the item holds it and what documentation comes with it, rather than shipping to a nominal dimension.' },
+  ],
+  compliance: {
+    heading: 'The only two-file lane in western Europe',
+    body:
+      'Every other European market on this network clears once and moves domestically. Switzerland does not: it is surrounded by the customs union and outside it, so a container discharged at Genoa or Rotterdam travels under EU transit bond and makes a separate Swiss entry at the border. Those two declarations describe the same goods and must agree line for line — a description or a quantity that differs between them stops the truck at Chiasso or Basel rather than at either customs office, and a border is a far more expensive place to resolve a discrepancy than an office is. We raise both from the same invoice and packing list before the vessel sails. On conformity Switzerland recognises the European framework for this equipment, so a PED declaration above threshold is expected exactly as a member state would expect it, and there is no separate national mark to obtain.',
+    documents: [
+      { ref: 'T1', name: 'EU transit declaration for the bonded move', issuer: 'The forwarder, at the port of discharge', when: 'Before the road leg' },
+      { ref: 'DECL', name: 'Swiss customs import declaration', issuer: 'The importer, through the Federal Office for Customs', when: 'At the border' },
+      { ref: 'PED', name: 'Declaration of conformity, assemblies above threshold', issuer: 'Us, as the assembler', when: 'Before dispatch' },
+      { ref: 'COO', name: 'Certificate of Origin', issuer: 'Dubai Chamber attested', when: 'Before dispatch' },
+      { ref: 'MTC', name: 'Material and test certificates', issuer: 'Mill, or our test bench', when: 'Where the order calls for them' },
+    ],
+  },
+}
+
 export const MARKET_PAGE_RECORDS_3: readonly MarketPage[] = [
   TURKEY,
   NORWAY,
@@ -1183,4 +1860,10 @@ export const MARKET_PAGE_RECORDS_3: readonly MarketPage[] = [
   LUXEMBOURG,
   UNITED_KINGDOM,
   IRELAND,
+  DENMARK,
+  SWEDEN,
+  FINLAND,
+  ICELAND,
+  AUSTRIA,
+  SWITZERLAND,
 ]
