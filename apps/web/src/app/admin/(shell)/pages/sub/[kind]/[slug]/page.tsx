@@ -60,14 +60,26 @@ export default async function SubPageEditorRoute({ params }: Props) {
         </Link>
       }
       actions={
-        <a
-          href={`${storefront}${path}`}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex h-9 items-center gap-1.5 rounded-md border border-ih-border px-3 font-mono text-[12px] text-ih-ink-2 transition-colors hover:border-ih-accent hover:text-ih-accent"
-        >
-          View page <ExternalLink size={12} aria-hidden="true" />
-        </a>
+        /* A held market has no designed page to view — the storefront serves
+           the plain layout — so it gets the draft preview instead of a link
+           that quietly shows something else. */
+        record.live || kind !== 'market' ? (
+          <a
+            href={`${storefront}${path}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex h-9 items-center gap-1.5 rounded-md border border-ih-border px-3 font-mono text-[12px] text-ih-ink-2 transition-colors hover:border-ih-accent hover:text-ih-accent"
+          >
+            View page <ExternalLink size={12} aria-hidden="true" />
+          </a>
+        ) : (
+          <Link
+            href={`/admin/markets/${slug}`}
+            className="inline-flex h-9 items-center gap-1.5 rounded-md border border-ih-border px-3 font-mono text-[12px] text-ih-ink-2 transition-colors hover:border-ih-accent hover:text-ih-accent"
+          >
+            Preview draft
+          </Link>
+        )
       }
       bodyClassName="max-w-[900px]"
     >
@@ -83,12 +95,12 @@ export default async function SubPageEditorRoute({ params }: Props) {
             {kind === 'market' ? (
               <>
                 This market renders the plain layout, not the designed template — its regulatory
-                copy has not been signed off by a forwarder yet, so the bands below are not live.
-                Edits save and apply the moment it is released. See{' '}
-                <Link href="/admin/markets" className="underline">
-                  Export markets
-                </Link>{' '}
-                for the review queue.
+                copy has not been signed off yet, so the bands below are not live. Edits save and
+                apply the moment it is released. Read the held page as a buyer would see it in the{' '}
+                <Link href={`/admin/markets/${slug}`} className="underline">
+                  draft preview
+                </Link>
+                .
               </>
             ) : (
               <>
