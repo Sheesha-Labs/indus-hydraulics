@@ -17,6 +17,8 @@ import {
 import { Breadcrumb, Button, EmptyState, JsonLd, Note } from '@indus/ui'
 import { pageMetadata, urlFor } from '../../../../lib/seo'
 import ProductCard from '../../../../components/ProductCard'
+import RelatedReading from '../../../../components/blog/RelatedReading'
+import { getArticlesForCategory } from '../../../../lib/related-reading'
 
 const PAGE_SIZE = 12
 
@@ -74,10 +76,12 @@ export async function generateMetadata({ params, searchParams }: Props): Promise
   if (!category) return {}
 
   const ogPath = category.ogImageMediaId
-    ? (await db.media.findUnique({
-        where: { id: category.ogImageMediaId },
-        select: { storagePath: true },
-      }))?.storagePath ?? null
+    ? ((
+        await db.media.findUnique({
+          where: { id: category.ogImageMediaId },
+          select: { storagePath: true },
+        })
+      )?.storagePath ?? null)
     : null
 
   // Filtered / sorted / paginated variants of a category page are
@@ -128,16 +132,20 @@ const MAX_DEPTH = 6
  * 404s.
  */
 async function ancestorTrail(
-  categoryId: string,
+  categoryId: string
 ): Promise<Array<{ name: string; slug: string; isPublished: boolean }>> {
   const trail: Array<{ name: string; slug: string; isPublished: boolean }> = []
   let cursor: string | null = categoryId
   for (let depth = 0; cursor && depth <= MAX_CATEGORY_DEPTH + 1; depth++) {
-    const row: { name: string; slug: string; isPublished: boolean; parentId: string | null } | null =
-      await db.category.findUnique({
-        where: { id: cursor },
-        select: { name: true, slug: true, isPublished: true, parentId: true },
-      })
+    const row: {
+      name: string
+      slug: string
+      isPublished: boolean
+      parentId: string | null
+    } | null = await db.category.findUnique({
+      where: { id: cursor },
+      select: { name: true, slug: true, isPublished: true, parentId: true },
+    })
     if (!row) break
     trail.unshift({ name: row.name, slug: row.slug, isPublished: row.isPublished })
     cursor = row.parentId
@@ -226,20 +234,33 @@ export default async function CategoryPage({ params, searchParams }: Props) {
         images: { orderBy: { position: 'asc' }, take: 1, include: { media: true } },
         specs: { where: { isFilterable: true }, take: 3 },
       },
-      orderBy: sp.sort === 'az' ? { title: 'asc' } : sp.sort === 'za' ? { title: 'desc' } : { updatedAt: 'desc' },
+      orderBy:
+        sp.sort === 'az'
+          ? { title: 'asc' }
+          : sp.sort === 'za'
+            ? { title: 'desc' }
+            : { updatedAt: 'desc' },
       skip: (page - 1) * PAGE_SIZE,
       take: PAGE_SIZE,
     }),
     db.product.count({ where }),
-    db.product.groupBy({
-      by: ['brandId'],
-      where: { categoryId: { in: categoryIds }, status: 'active' },
-      _count: { _all: true },
-    }).then(async (groups) => {
-      const ids = groups.map((g) => g.brandId).filter(Boolean) as string[]
-      const brands = await db.brand.findMany({ where: { id: { in: ids } }, select: { id: true, name: true, slug: true } })
-      return brands.map((b) => ({ ...b, count: groups.find((g) => g.brandId === b.id)?._count._all ?? 0 }))
-    }),
+    db.product
+      .groupBy({
+        by: ['brandId'],
+        where: { categoryId: { in: categoryIds }, status: 'active' },
+        _count: { _all: true },
+      })
+      .then(async (groups) => {
+        const ids = groups.map((g) => g.brandId).filter(Boolean) as string[]
+        const brands = await db.brand.findMany({
+          where: { id: { in: ids } },
+          select: { id: true, name: true, slug: true },
+        })
+        return brands.map((b) => ({
+          ...b,
+          count: groups.find((g) => g.brandId === b.id)?._count._all ?? 0,
+        }))
+      }),
   ])
 
   const totalPages = Math.ceil(total / PAGE_SIZE)
@@ -297,11 +318,16 @@ export default async function CategoryPage({ params, searchParams }: Props) {
     ],
   })
 
+  // The return leg of the internal-link loop. Articles have pointed into this
+  // page through `category_link` blocks since the first wave; until now nothing
+  // pointed back, so the equity and the reader both went one way only.
+  const relatedArticles = await getArticlesForCategory(category.id)
+
   return (
     <div className="mx-auto max-w-[1440px] px-5 sm:px-8 xl:px-12">
       <JsonLd data={[collectionLd, breadcrumbLd]} />
       {/* Breadcrumbs */}
-      <div className="border-b border-ih-border py-4">
+      <div className="border-ih-border border-b py-4">
         <Breadcrumb
           items={[
             { label: 'Home', href: '/' },
@@ -310,40 +336,43 @@ export default async function CategoryPage({ params, searchParams }: Props) {
               label: step.name,
               // The last step is this page — never a link to itself. An
               // unpublished ancestor is not linked either: its page 404s.
-              href:
-                i === trail.length - 1 || !step.isPublished ? undefined : `/c/${step.slug}`,
+              href: i === trail.length - 1 || !step.isPublished ? undefined : `/c/${step.slug}`,
             })),
           ]}
         />
       </div>
 
       {/* Category header */}
-      <div className="border-b border-ih-border py-8">
-        <p className="mb-3 font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">
+      <div className="border-ih-border border-b py-8">
+        <p className="text-ih-muted mb-3 font-mono text-[10.5px] font-medium uppercase tracking-[0.13em]">
           Category
         </p>
         <h1 className="mb-3 font-serif text-[clamp(30px,4vw,40px)] font-normal leading-[1.06] tracking-[-0.01em]">
           {category.name}
         </h1>
         {category.shortDescription && (
-          <p className="mb-4 max-w-[620px] text-[14px] leading-[1.55] text-ih-muted">
+          <p className="text-ih-muted mb-4 max-w-[620px] text-[14px] leading-[1.55]">
             {category.shortDescription}
           </p>
         )}
-        <div className="flex gap-6 font-mono text-[12px] text-ih-muted">
-          <span><b className="font-medium text-ih-ink">{total}</b> SKUs</span>
-          <span><b className="font-medium text-ih-ink">{allBrands.length}</b> brands</span>
+        <div className="text-ih-muted flex gap-6 font-mono text-[12px]">
+          <span>
+            <b className="text-ih-ink font-medium">{total}</b> SKUs
+          </span>
+          <span>
+            <b className="text-ih-ink font-medium">{allBrands.length}</b> brands
+          </span>
         </div>
       </div>
 
       {/* Sub-categories */}
       {category.children.length > 0 && (
-        <div className="no-scrollbar flex gap-2 overflow-x-auto border-b border-ih-border py-4">
+        <div className="no-scrollbar border-ih-border flex gap-2 overflow-x-auto border-b py-4">
           {category.children.map((child) => (
             <Link
               key={child.id}
               href={`/c/${child.slug}`}
-              className="inline-flex h-[30px] shrink-0 items-center whitespace-nowrap rounded-full border border-ih-border bg-ih-surface px-3 text-[12.5px] text-ih-ink-2 transition-colors hover:border-ih-accent hover:text-ih-accent"
+              className="border-ih-border bg-ih-surface text-ih-ink-2 hover:border-ih-accent hover:text-ih-accent inline-flex h-[30px] shrink-0 items-center whitespace-nowrap rounded-full border px-3 text-[12.5px] transition-colors"
             >
               {child.name}
             </Link>
@@ -357,13 +386,13 @@ export default async function CategoryPage({ params, searchParams }: Props) {
         <aside className="self-start lg:sticky lg:top-[124px] lg:max-h-[calc(100vh-150px)] lg:overflow-y-auto">
           <div className="flex flex-col gap-6">
             <div className="flex items-center justify-between">
-              <span className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">
+              <span className="text-ih-muted font-mono text-[10.5px] font-medium uppercase tracking-[0.13em]">
                 Refine{activeFilterCount > 0 ? ` · ${activeFilterCount} active` : ''}
               </span>
               {activeFilterCount > 0 && (
                 <Link
                   href={filterUrl({ brands: undefined, spec: undefined, page: '1' })}
-                  className="text-xs text-ih-accent hover:underline"
+                  className="text-ih-accent text-xs hover:underline"
                 >
                   Clear
                 </Link>
@@ -372,7 +401,7 @@ export default async function CategoryPage({ params, searchParams }: Props) {
 
             {allBrands.length > 0 && (
               <div>
-                <div className="mb-3 border-b border-ih-border pb-2.5">
+                <div className="border-ih-border mb-3 border-b pb-2.5">
                   <span className="text-[12.5px] font-medium">Brand</span>
                 </div>
                 {/*
@@ -416,7 +445,9 @@ export default async function CategoryPage({ params, searchParams }: Props) {
                           )}
                         </span>
                         <span className="flex-1">{brand.name}</span>
-                        <span className="font-mono text-[10.5px] tabular-nums text-ih-muted-2">{brand.count}</span>
+                        <span className="text-ih-muted-2 font-mono text-[10.5px] tabular-nums">
+                          {brand.count}
+                        </span>
                       </Link>
                     )
                   })}
@@ -436,7 +467,7 @@ export default async function CategoryPage({ params, searchParams }: Props) {
               const selected = specFilter.get(facet.key) ?? new Set<string>()
               return (
                 <div key={facet.key}>
-                  <div className="mb-3 border-b border-ih-border pb-2.5">
+                  <div className="border-ih-border mb-3 border-b pb-2.5">
                     <span className="text-[12.5px] font-medium">{facet.label}</span>
                   </div>
                   <div className="flex flex-col gap-2.5">
@@ -472,7 +503,7 @@ export default async function CategoryPage({ params, searchParams }: Props) {
                             )}
                           </span>
                           <span className="flex-1">{value.label}</span>
-                          <span className="font-mono text-[10.5px] tabular-nums text-ih-muted-2">
+                          <span className="text-ih-muted-2 font-mono text-[10.5px] tabular-nums">
                             {value.count}
                           </span>
                         </Link>
@@ -491,7 +522,8 @@ export default async function CategoryPage({ params, searchParams }: Props) {
             <Note>
               <span className="block text-[13px] font-medium">Can&rsquo;t find the part?</span>
               <span className="mt-1.5 block leading-[1.5]">
-                Send the number or a photo of the nameplate. We cross-reference obsolete codes daily.
+                Send the number or a photo of the nameplate. We cross-reference obsolete codes
+                daily.
               </span>
               <Button asChild kind="primary" size="sm" block className="mt-3">
                 <Link href="/replacement">Cross-reference it</Link>
@@ -504,7 +536,7 @@ export default async function CategoryPage({ params, searchParams }: Props) {
         <section>
           {/* Applied filter chips */}
           {activeFilterCount > 0 && (
-            <div className="flex gap-2 flex-wrap mb-4">
+            <div className="mb-4 flex flex-wrap gap-2">
               {[...specFilter].flatMap(([labelKey, values]) => {
                 const facet = facets.find((f) => f.key === labelKey)
                 if (!facet) return []
@@ -515,7 +547,7 @@ export default async function CategoryPage({ params, searchParams }: Props) {
                     <Link
                       key={`${labelKey}:${valueKey}`}
                       href={toggleSpec(labelKey, valueKey)}
-                      className="inline-flex h-[30px] items-center gap-1.5 rounded-full border border-ih-accent bg-ih-accent px-3 text-[12.5px] text-white transition-colors hover:bg-ih-accent-hover"
+                      className="border-ih-accent bg-ih-accent hover:bg-ih-accent-hover inline-flex h-[30px] items-center gap-1.5 rounded-full border px-3 text-[12.5px] text-white transition-colors"
                     >
                       {facet.label}: {value.label}
                       <span aria-hidden="true" className="text-[14px] leading-none opacity-70">
@@ -531,31 +563,44 @@ export default async function CategoryPage({ params, searchParams }: Props) {
                   <Link
                     key={b}
                     href={toggleBrand(b)}
-                    className="inline-flex h-[30px] items-center gap-1.5 rounded-full border border-ih-accent bg-ih-accent px-3 text-[12.5px] text-white transition-colors hover:bg-ih-accent-hover"
+                    className="border-ih-accent bg-ih-accent hover:bg-ih-accent-hover inline-flex h-[30px] items-center gap-1.5 rounded-full border px-3 text-[12.5px] text-white transition-colors"
                   >
                     Brand: {brand?.name ?? b}
-                    <span aria-hidden="true" className="text-[14px] leading-none opacity-70">×</span>
+                    <span aria-hidden="true" className="text-[14px] leading-none opacity-70">
+                      ×
+                    </span>
                   </Link>
                 )
               })}
-              <Link href={filterUrl({ brands: undefined, page: '1' })} className="inline-flex h-[30px] items-center px-2 text-[12.5px] text-ih-accent hover:underline">
+              <Link
+                href={filterUrl({ brands: undefined, page: '1' })}
+                className="text-ih-accent inline-flex h-[30px] items-center px-2 text-[12.5px] hover:underline"
+              >
                 Clear all
               </Link>
             </div>
           )}
 
           {/* Toolbar */}
-          <div className="mb-5 flex flex-wrap items-center justify-between gap-3 border-b border-ih-border pb-4">
-            <p className="font-mono text-[12px] tabular-nums text-ih-muted">
+          <div className="border-ih-border mb-5 flex flex-wrap items-center justify-between gap-3 border-b pb-4">
+            <p className="text-ih-muted font-mono text-[12px] tabular-nums">
               {total > 0 ? (
-                <>Showing <b className="font-medium text-ih-ink">{from}–{to}</b> of <b className="font-medium text-ih-ink">{total}</b> SKUs</>
+                <>
+                  Showing{' '}
+                  <b className="text-ih-ink font-medium">
+                    {from}–{to}
+                  </b>{' '}
+                  of <b className="text-ih-ink font-medium">{total}</b> SKUs
+                </>
               ) : (
                 <>No products found</>
               )}
             </p>
             <div className="flex items-center gap-2">
-              <span className="font-mono text-[10.5px] uppercase tracking-[0.08em] text-ih-muted">Sort</span>
-              <div className="flex overflow-hidden rounded-md border border-ih-border">
+              <span className="text-ih-muted font-mono text-[10.5px] uppercase tracking-[0.08em]">
+                Sort
+              </span>
+              <div className="border-ih-border flex overflow-hidden rounded-md border">
                 {[
                   { val: '', label: 'Latest' },
                   { val: 'az', label: 'A–Z' },
@@ -575,7 +620,7 @@ export default async function CategoryPage({ params, searchParams }: Props) {
 
           {/* Product grid */}
           {products.length === 0 ? (
-            <div className="rounded-lg border border-ih-border bg-ih-surface">
+            <div className="border-ih-border bg-ih-surface rounded-lg border">
               {/*
                 Two different empty states, because they have two different
                 fixes. Filters excluding everything is recoverable in one
@@ -616,7 +661,10 @@ export default async function CategoryPage({ params, searchParams }: Props) {
           {totalPages > 1 && (
             <div className="flex justify-center gap-1 pt-10">
               {page > 1 && (
-                <Link href={filterUrl({ page: String(page - 1) })} className="flex h-9 w-9 items-center justify-center rounded-md border border-ih-border font-mono text-[13px] text-ih-ink-2 transition-colors hover:border-ih-accent hover:text-ih-accent">
+                <Link
+                  href={filterUrl({ page: String(page - 1) })}
+                  className="border-ih-border text-ih-ink-2 hover:border-ih-accent hover:text-ih-accent flex h-9 w-9 items-center justify-center rounded-md border font-mono text-[13px] transition-colors"
+                >
                   ‹
                 </Link>
               )}
@@ -633,13 +681,22 @@ export default async function CategoryPage({ params, searchParams }: Props) {
                 )
               })}
               {page < totalPages && (
-                <Link href={filterUrl({ page: String(page + 1) })} className="flex h-9 w-9 items-center justify-center rounded-md border border-ih-border font-mono text-[13px] text-ih-ink-2 transition-colors hover:border-ih-accent hover:text-ih-accent">
+                <Link
+                  href={filterUrl({ page: String(page + 1) })}
+                  className="border-ih-border text-ih-ink-2 hover:border-ih-accent hover:text-ih-accent flex h-9 w-9 items-center justify-center rounded-md border font-mono text-[13px] transition-colors"
+                >
                   ›
                 </Link>
               )}
             </div>
           )}
         </section>
+
+        <RelatedReading
+          articles={relatedArticles}
+          heading="Written about this range"
+          eyebrow="From the blog"
+        />
       </div>
     </div>
   )
