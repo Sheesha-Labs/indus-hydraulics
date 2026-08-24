@@ -1,4 +1,5 @@
 import { expect, test } from '@playwright/test'
+import { ALL_MARKET_PAGE_RECORDS } from '@indus/domain'
 
 /**
  * No storefront page may scroll sideways.
@@ -66,10 +67,18 @@ const ROUTES = [
   '/locations/habshan',
   '/locations/sharjah',
   '/markets',
-  // One market detail page rather than all 24 — they share a template, and
+  // One market detail page rather than all 126 — they share a template, and
   // the only thing that varies in width is the four-column facts strip.
   // Saudi Arabia has the longest values in it (three conformity entries).
   '/markets/saudi-arabia',
+  // ...plus whichever market currently has the longest freight-ladder row,
+  // DERIVED rather than named. Releasing all 126 on 2026-08-24 put eight
+  // markets over the edge at 320px — a `whitespace-nowrap` use-case string
+  // ("Alternative when Mombasa is congested") beside its route — and none of
+  // them was the market this list happened to name. Picking the worst case
+  // from the data means the next record with a long string is covered on the
+  // day it lands.
+  widestFreightRoute(),
   '/hydraulic-components-supplier-uae',
   '/contact',
   '/quote',
@@ -84,6 +93,28 @@ const ROUTES = [
   '/shipping',
   '/warranty',
 ]
+
+/**
+ * The market page whose freight ladder packs the most characters onto one row.
+ *
+ * Route and use-case sit side by side above 640px, so the pair's combined
+ * length is what decides whether that row fits. Named markets go stale; this
+ * re-derives on every run.
+ */
+function widestFreightRoute(): string {
+  let worstSlug = 'saudi-arabia'
+  let worstLength = 0
+  for (const page of ALL_MARKET_PAGE_RECORDS) {
+    for (const mode of page.freight) {
+      const length = mode.route.length + mode.useCase.length
+      if (length > worstLength) {
+        worstLength = length
+        worstSlug = page.slug
+      }
+    }
+  }
+  return `/markets/${worstSlug}`
+}
 
 /** 320 is an iPhone SE; 1024 is where the header bug lived. */
 const WIDTHS = [1440, 1280, 1024, 834, 768, 430, 390, 360, 320]
