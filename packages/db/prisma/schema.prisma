@@ -2078,10 +2078,21 @@ model NotFoundLog {
 
 // Phase 2 — Google Search Console daily metrics
 model GscMetricDaily {
-  id          String   @id @default(uuid())
-  url         String
-  date        DateTime @db.Date
-  query       String? // null row = page-level totals
+  id   String   @id @default(uuid())
+  url  String
+  date DateTime @db.Date
+
+  /// Empty string marks a page-level total row; anything else is a query row.
+  ///
+  /// This was `null = page-level totals` and could not work: Postgres treats
+  /// NULLs as distinct in a unique index, so `@@unique([url, date, query])`
+  /// would have accepted an unlimited number of page-level rows for the same
+  /// URL and date, and an upsert keyed on the triple could never match one.
+  /// Every nightly sync would have appended a fresh duplicate set.
+  ///
+  /// The column stays nullable so the change needs no migration — the table
+  /// was empty when this was corrected — but nothing writes NULL.
+  query String?
   clicks      Int      @default(0)
   impressions Int      @default(0)
   ctr         Float    @default(0)

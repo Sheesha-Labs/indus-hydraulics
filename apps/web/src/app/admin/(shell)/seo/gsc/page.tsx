@@ -1,103 +1,101 @@
 import type { Metadata } from 'next'
 import { db } from '@indus/db'
+import { GSC_PAGE_TOTAL_QUERY } from '@indus/domain'
+import { checkGscAccess, readGscConfig } from '../../../../../lib/gsc'
 
 export const metadata: Metadata = { title: 'Google Search Console — Indus Admin' }
+export const dynamic = 'force-dynamic'
 
 /**
- * GSC integration. Schema is in place (`GscMetricDaily`); the OAuth
- * flow + daily sync function need real Google client credentials, which
- * have to be provisioned in the GCP console — so this page is a
- * configuration dashboard rather than an inline wizard.
+ * Search Console status.
  *
- * Once GOOGLE_OAUTH_CLIENT_ID / _SECRET are set, a follow-up commit
- * will add:
- *   - /api/gsc/oauth/start  — redirect to Google's consent screen
- *   - /api/gsc/oauth/callback — exchange code → refresh token, store on
- *     a new `GscConnection` row
- *   - Inngest cron `gsc.daily.sync` paginating searchanalytics.query
- *     into `GscMetricDaily` rows
- *   - Inspector grid join on URL → impressions / CTR / position
+ * The sync itself is `gsc.daily.sync` in inngest/gscSync.ts, running at 05:00.
+ * This page exists to answer one question — is it working, and if not, which
+ * of the three setup steps is outstanding — so it calls the API live rather
+ * than inferring readiness from whether env vars are present. A key that is
+ * set but not authorised on the property looks identical to a working one
+ * from the environment alone, and that is the failure mode people actually
+ * hit.
  */
 export default async function GscPage() {
-  const [metricsCount, lastSync] = await Promise.all([
-    db.gscMetricDaily.count(),
+  const config = readGscConfig()
+
+  const [pageRows, queryRows, latest, earliest, access] = await Promise.all([
+    db.gscMetricDaily.count({ where: { query: GSC_PAGE_TOTAL_QUERY } }),
+    db.gscMetricDaily.count({ where: { NOT: { query: GSC_PAGE_TOTAL_QUERY } } }),
     db.gscMetricDaily.findFirst({ orderBy: { date: 'desc' }, select: { date: true } }),
+    db.gscMetricDaily.findFirst({ orderBy: { date: 'asc' }, select: { date: true } }),
+    config.ok ? checkGscAccess() : Promise.resolve({ ok: false, detail: config.reason }),
   ])
 
-  const oauthConfigured = !!(
-    process.env.GOOGLE_OAUTH_CLIENT_ID && process.env.GOOGLE_OAUTH_CLIENT_SECRET
-  )
+  const fmt = (d: Date | null | undefined) =>
+    d
+      ? d.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })
+      : '—'
 
   return (
-    <div className="max-w-[800px]">
-      <div className="grid grid-cols-2 gap-3 mb-6">
-        <Tile label="Metric rows captured" value={metricsCount.toLocaleString()} />
-        <Tile
-          label="Last sync"
-          value={
-            lastSync
-              ? lastSync.date.toLocaleDateString('en-GB', {
-                  day: 'numeric',
-                  month: 'short',
-                  year: 'numeric',
-                })
-              : 'Never'
-          }
-        />
+    <div className="max-w-[820px]">
+      <div className="grid grid-cols-2 gap-3 mb-3 sm:grid-cols-4">
+        <Tile label="Page rows" value={pageRows.toLocaleString()} />
+        <Tile label="Query rows" value={queryRows.toLocaleString()} />
+        <Tile label="Earliest" value={fmt(earliest?.date)} />
+        <Tile label="Latest" value={fmt(latest?.date)} />
+      </div>
+
+      <div
+        className={`mb-6 border px-4 py-3 text-[13px] ${
+          access.ok
+            ? 'border-ih-border bg-ih-surface-2 text-ih-ink-2'
+            : 'border-ih-border bg-ih-surface text-ih-ink-2'
+        }`}
+      >
+        <span className="mono mr-2 text-[10.5px] font-medium uppercase tracking-[0.12em]">
+          {access.ok ? 'Connected' : 'Not connected'}
+        </span>
+        {access.detail}
       </div>
 
       <div className="border border-ih-border bg-ih-surface p-6">
-        <h2 className="text-[15px] font-medium mb-2">
-          {oauthConfigured ? 'OAuth configured — connection pending' : 'Setup required'}
-        </h2>
-        <p className="text-[13px] text-ih-muted mb-4">
-          GSC integration pulls per-URL clicks / impressions / CTR / position daily and joins
-          them into the Inspector grid. The schema is in place; the OAuth flow needs a Google
-          Cloud client.
+        <h2 className="mb-2 text-[15px] font-medium">Setup</h2>
+        <p className="mb-4 text-[13px] text-ih-muted">
+          The sync runs nightly at 05:00 and backfills roughly the full retention window on its
+          first successful run — the property has been verified for some time, so Google already
+          holds the history. Until the credential is configured the job logs why it skipped and
+          does nothing.
         </p>
 
-        <ol className="list-decimal pl-5 text-[13px] text-ih-ink-2 space-y-2 mb-5">
+        <ol className="mb-5 list-decimal space-y-3 pl-5 text-[13px] text-ih-ink-2">
           <li>
-            Create a Google Cloud project + OAuth client (Web application). Authorized redirect
-            URI: <code className="font-mono text-[11px] bg-ih-surface-2 px-1.5 py-0.5">
-              {process.env.NEXT_PUBLIC_BASE_URL ?? 'https://indushydraulics.com'}/admin/api/gsc/oauth/callback
-            </code>.
+            In Google Cloud, create a <strong>service account</strong> and download a JSON key.
+            Enable the <em>Google Search Console API</em> on the same project. No OAuth consent
+            screen is needed — this is a server-to-server credential.
           </li>
           <li>
-            Enable the &ldquo;Search Console API&rdquo; on that project.
+            In Search Console, open{' '}
+            <strong>Settings → Users and permissions → Add user</strong> and add the service
+            account address with <strong>Full</strong> or <strong>Restricted</strong> access:
+            <pre className="mono mt-1 bg-ih-surface-2 p-2 text-[11px] leading-relaxed">
+              {config.ok ? config.config.clientEmail : 'the client_email from the JSON key'}
+            </pre>
           </li>
           <li>
-            Add to admin .env:
-            <pre className="font-mono text-[11px] bg-ih-surface-2 p-2 mt-1 leading-relaxed">{`GOOGLE_OAUTH_CLIENT_ID=...
-GOOGLE_OAUTH_CLIENT_SECRET=...
-GSC_PROPERTY_URL=https://indushydraulics.com/`}</pre>
-          </li>
-          <li>
-            Open this page after restart to start the OAuth flow (the Connect button appears
-            once env vars are set).
+            Set two environment variables in Vercel (Production), then redeploy:
+            <pre className="mono mt-1 whitespace-pre-wrap bg-ih-surface-2 p-2 text-[11px] leading-relaxed">
+              {`GSC_SITE_URL=https://indushydraulics.com/
+GSC_SERVICE_ACCOUNT_JSON={"type":"service_account", ...}`}
+            </pre>
+            <span className="mt-1 block text-ih-muted">
+              The whole JSON key goes in as one line. A URL-prefix property needs the trailing
+              slash; a domain property is written <code className="mono">sc-domain:example.com</code>.
+              They are different properties with different data.
+            </span>
           </li>
         </ol>
 
-        <div
-          className={`px-4 py-3 border ${
-            oauthConfigured
-              ? 'border-[oklch(0.75_0.12_70)]/40 bg-ih-warning-soft/40 text-ih-warning-ink'
-              : 'border-ih-border bg-ih-surface-2 text-ih-muted'
-          } text-[13px]`}
-        >
-          {oauthConfigured ? (
-            <>
-              OAuth env vars detected. The OAuth start endpoint and Inngest sync function will
-              ship in a follow-up commit — they need to land together so the daily cron has
-              somewhere to write.
-            </>
-          ) : (
-            <>
-              Google client credentials not set. Configure the env vars above to unlock the
-              connection flow.
-            </>
-          )}
-        </div>
+        <p className="text-[13px] text-ih-muted">
+          This page checks the credential against the API on every load, so refreshing it after
+          each step tells you whether that step worked.
+        </p>
       </div>
     </div>
   )
@@ -106,10 +104,8 @@ GSC_PROPERTY_URL=https://indushydraulics.com/`}</pre>
 function Tile({ label, value }: { label: string; value: string }) {
   return (
     <div className="border border-ih-border bg-ih-surface p-4">
-      <div className="font-mono text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">
-        {label}
-      </div>
-      <div className="text-[28px] font-medium mt-1">{value}</div>
+      <div className="mono text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">{label}</div>
+      <div className="mt-1 text-[22px] font-medium">{value}</div>
     </div>
   )
 }
