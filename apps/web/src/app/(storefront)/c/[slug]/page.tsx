@@ -20,7 +20,31 @@ import ProductCard from '../../../../components/ProductCard'
 import RelatedReading from '../../../../components/blog/RelatedReading'
 import { getArticlesForCategory } from '../../../../lib/related-reading'
 
-const PAGE_SIZE = 12
+/**
+ * Products per category page.
+ *
+ * Was 12, which put 513 of the 1,480 active products behind pagination — and
+ * the paginated pages are `noindex`, so those products' only route in was a
+ * link from a page Google is told not to keep. On a site where 72 of 2,040
+ * URLs are indexed, that is the wrong place to be economical.
+ *
+ * Measured across the live catalogue before choosing 48:
+ *
+ *   page size   products behind pagination   categories paginated
+ *          12                          513                     39
+ *          24                          222                      —
+ *          48                           44                      4
+ *          96                            0                      —
+ *
+ * 48 leaves 167 of 171 categories with no pagination at all. 96 would reach
+ * zero, but the largest category holds 67 products and rendering 96 cards
+ * would roughly double the weight of every large category page — which works
+ * against the crawl budget this change exists to protect.
+ *
+ * Average category holds 8.7 products, so for most of the site this changes
+ * nothing about what renders.
+ */
+const PAGE_SIZE = 48
 
 type SearchParams = {
   brands?: string

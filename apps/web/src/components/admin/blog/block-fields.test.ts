@@ -59,7 +59,21 @@ function fillField(field: Field): Record<string, unknown> {
     case 'checkbox':
       return { [field.key]: fillScalar(field) }
     case 'strings':
-      return { [field.key]: Array.from({ length: field.min }, (_, i) => `Point ${i + 1}`) }
+      // The field's own placeholder, when it has one. A generic `Point 1`
+      // satisfies a free-text list and fails anything with a shape: the
+      // `related_articles.slugs` field is `Slug()` in the schema, so the
+      // filler was generating a value the block could never legitimately
+      // hold and the test failed on the form rather than on a real defect.
+      //
+      // The placeholder is the spec's own statement of what a valid entry
+      // looks like, so using it tests the form against the schema instead of
+      // testing an invented string against it.
+      return {
+        [field.key]: Array.from(
+          { length: field.min },
+          (_, i) => field.placeholder ?? `Point ${i + 1}`,
+        ),
+      }
     case 'rows':
       return { [field.key]: Array.from({ length: field.min }, () => fillRow(field.fields)) }
     case 'object':
