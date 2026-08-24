@@ -1,11 +1,17 @@
 import { db } from '@indus/db'
 import {
   blogFaqPairs,
+  blogReferencedArticleSlugs,
+  blogReferencedPageLinks,
   blogReferencedSkus,
   blogTocEntries,
+  designedIndustrySlugs,
+  marketsOrdered,
   parseBlogBlocks,
   type BlogBlocks,
 } from '@indus/domain'
+
+import type { RelatedArticle } from '../components/blog/RelatedReading'
 
 /**
  * Server-side resolution for a blog article body.
@@ -43,11 +49,23 @@ export interface ResolvedBlogArticle {
   faqs: Array<{ question: string; answer: string }>
   productsBySku: Map<string, EmbeddedProduct>
   categoriesBySlug: Map<string, EmbeddedCategory>
+  /** Articles referenced by `related_articles`, keyed by slug. */
+  articlesBySlug: Map<string, RelatedArticle>
+  /** `kind:slug` for every `page_link` target that actually exists. */
+  livePageLinks: Set<string>
   /** Blocks that failed validation, for server-side logging. */
   dropped: Array<{ index: number; reason: string }>
 }
 
-export async function resolveBlogArticle(bodyBlocksRaw: unknown): Promise<ResolvedBlogArticle> {
+/**
+ * @param selfSlug the article being rendered, so a `related_articles` block
+ *   that names it is dropped rather than rendering a link back to the page the
+ *   reader is already on.
+ */
+export async function resolveBlogArticle(
+  bodyBlocksRaw: unknown,
+  selfSlug?: string
+): Promise<ResolvedBlogArticle> {
   const { blocks, dropped } = parseBlogBlocks(bodyBlocksRaw)
 
   const skus = blogReferencedSkus(blocks)
@@ -55,7 +73,12 @@ export async function resolveBlogArticle(bodyBlocksRaw: unknown): Promise<Resolv
     ...new Set(blocks.flatMap((b) => (b.type === 'category_link' ? [b.slug] : []))),
   ]
 
-  const [products, categories] = await Promise.all([
+  const articleSlugs = blogReferencedArticleSlugs(blocks).filter((slug) => slug !== selfSlug)
+  const pageLinks = blogReferencedPageLinks(blocks)
+  const wantedServices = pageLinks.filter((l) => l.kind === 'service').map((l) => l.slug)
+  const wantedIndustries = pageLinks.filter((l) => l.kind === 'industry').map((l) => l.slug)
+
+  const [products, categories, relatedPosts, services, industries] = await Promise.all([
     skus.length
       ? db.product.findMany({
           where: { sku: { in: skus }, status: 'active' },
@@ -79,6 +102,30 @@ export async function resolveBlogArticle(bodyBlocksRaw: unknown): Promise<Resolv
           select: { slug: true, name: true, shortDescription: true },
         })
       : Promise.resolve([]),
+    articleSlugs.length
+      ? db.blogPost.findMany({
+          where: { slug: { in: articleSlugs }, isPublished: true, deletedAt: null },
+          select: {
+            slug: true,
+            title: true,
+            excerpt: true,
+            readingMinutes: true,
+            category: { select: { name: true, slug: true, isPublished: true } },
+          },
+        })
+      : Promise.resolve([]),
+    wantedServices.length
+      ? db.serviceCase.findMany({
+          where: { slug: { in: wantedServices }, status: 'published' },
+          select: { slug: true },
+        })
+      : Promise.resolve([]),
+    wantedIndustries.length
+      ? db.industry.findMany({
+          where: { slug: { in: wantedIndustries }, isPublished: true },
+          select: { slug: true },
+        })
+      : Promise.resolve([]),
   ])
 
   const productsBySku = new Map<string, EmbeddedProduct>(
@@ -93,11 +140,49 @@ export async function resolveBlogArticle(bodyBlocksRaw: unknown): Promise<Resolv
         imagePath: p.images[0]?.media.storagePath ?? null,
         imageAlt: p.images[0]?.alt ?? p.images[0]?.media.alt ?? null,
       },
-    ]),
+    ])
   )
 
   const categoriesBySlug = new Map<string, EmbeddedCategory>(
-    categories.map((c) => [c.slug, { slug: c.slug, name: c.name, shortDescription: c.shortDescription }]),
+    categories.map((c) => [
+      c.slug,
+      { slug: c.slug, name: c.name, shortDescription: c.shortDescription },
+    ])
+  )
+
+  const articlesBySlug = new Map<string, RelatedArticle>(
+    relatedPosts.map((post) => {
+      const category = post.category?.isPublished ? post.category : null
+      return [
+        post.slug,
+        {
+          slug: post.slug,
+          title: post.title,
+          excerpt: post.excerpt,
+          readingMinutes: post.readingMinutes,
+          categoryName: category?.name ?? null,
+          categorySlug: category?.slug ?? null,
+        },
+      ]
+    })
+  )
+
+  // Markets are code, so membership is exact and free. Designed industry pages
+  // are also code and invisible to the `industries` table — omitting them here
+  // would silently drop every link to /industries/manufacturing and friends.
+  const marketSlugs = new Set(marketsOrdered().map((m) => m.slug))
+  const industrySlugs = new Set([...industries.map((i) => i.slug), ...designedIndustrySlugs()])
+  const serviceSlugs = new Set(services.map((c) => c.slug))
+  const livePageLinks = new Set(
+    pageLinks
+      .filter((l) =>
+        l.kind === 'market'
+          ? marketSlugs.has(l.slug)
+          : l.kind === 'service'
+            ? serviceSlugs.has(l.slug)
+            : industrySlugs.has(l.slug)
+      )
+      .map((l) => `${l.kind}:${l.slug}`)
   )
 
   return {
@@ -106,6 +191,8 @@ export async function resolveBlogArticle(bodyBlocksRaw: unknown): Promise<Resolv
     faqs: blogFaqPairs(blocks),
     productsBySku,
     categoriesBySlug,
+    articlesBySlug,
+    livePageLinks,
     dropped,
   }
 }

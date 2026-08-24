@@ -21,15 +21,62 @@
 import { Prisma } from '@prisma/client'
 import {
   BlogBlocksSchema,
+  blogReferencedArticleSlugs,
   blogReferencedCategorySlugs,
+  blogReferencedPageLinks,
   blogReferencedSkus,
+  designedIndustrySlugs,
   estimateReadingMinutes,
+  marketsOrdered,
 } from '@indus/domain'
 
 import { db } from '../index'
+import { BLOG_CROSS_LINKS } from './blog-cross-links'
 
-import type { BlogBlocks } from '@indus/domain'
+import type { BlogBlocks, BlogBlocksInput } from '@indus/domain'
 import type { BlogArticleSeed } from './2026-08-17-blog-articles/shared'
+
+/**
+ * Composes an article's seed blocks with its entry in the link graph.
+ *
+ * The generated blocks go immediately before the closing `cta_block`, which
+ * every article carries: related reading and onward links belong at the end of
+ * the argument, not interrupting it. An article with no CTA gets them appended.
+ *
+ * `skus` is a fallback rather than an addition — an article that embeds its own
+ * products keeps exactly those, because the author picked them against the
+ * specific thing the article says.
+ */
+export function withCrossLinks(slug: string, blocks: BlogBlocksInput): BlogBlocksInput {
+  const links = BLOG_CROSS_LINKS[slug]
+  if (!links) return blocks
+
+  const generated: BlogBlocksInput = []
+
+  const hasOwnProducts = blocks.some((b) => b.type === 'product_embed')
+  if (links.skus?.length && !hasOwnProducts) {
+    generated.push({ type: 'product_embed', heading: 'Parts for this job', skus: links.skus })
+  }
+  for (const page of links.pages ?? []) {
+    generated.push({ type: 'page_link', ...page })
+  }
+  if (links.related?.length) {
+    generated.push({ type: 'related_articles', slugs: links.related })
+  }
+
+  if (generated.length === 0) return blocks
+
+  // Strip any previously generated link blocks so a re-import replaces the
+  // graph rather than stacking a second copy of it underneath the first.
+  const base = blocks.filter((b) => b.type !== 'related_articles' && b.type !== 'page_link')
+
+  let ctaIndex = -1
+  base.forEach((b, i) => {
+    if (b.type === 'cta_block') ctaIndex = i
+  })
+  if (ctaIndex === -1) return [...base, ...generated]
+  return [...base.slice(0, ctaIndex), ...generated, ...base.slice(ctaIndex)]
+}
 
 export type BlogArticleImportOptions = {
   articles: BlogArticleSeed[]
@@ -49,7 +96,7 @@ export async function runBlogArticleImport({
     if (seenSlugs.has(article.slug)) errors.push(`duplicate slug: ${article.slug}`)
     seenSlugs.add(article.slug)
 
-    const parsed = BlogBlocksSchema.safeParse(article.bodyBlocks)
+    const parsed = BlogBlocksSchema.safeParse(withCrossLinks(article.slug, article.bodyBlocks))
     if (!parsed.success) {
       for (const issue of parsed.error.issues) {
         errors.push(`[${article.slug}] bodyBlocks.${issue.path.join('.')}: ${issue.message}`)
@@ -67,6 +114,13 @@ export async function runBlogArticleImport({
         blocks.flatMap((b) => (b.type === 'category_link' ? [b.slug] : []))
       )
     ),
+  ]
+  const allPageLinks = [
+    ...new Map(
+      allParsed
+        .flatMap((blocks) => blogReferencedPageLinks(blocks))
+        .map((l) => [`${l.kind}:${l.slug}`, l])
+    ).values(),
   ]
 
   const [foundSkus, foundCategories, blogCategories, blogAuthors] = await Promise.all([
@@ -89,6 +143,64 @@ export async function runBlogArticleImport({
   const catSet = new Set(foundCategories.map((c) => c.slug))
   for (const slug of allCategoryLinks) {
     if (!catSet.has(slug)) errors.push(`unknown or unpublished catalogue category: ${slug}`)
+  }
+
+  // page_link targets. Markets live in code, so that check is free and exact;
+  // services and industries are rows — and a designed industry page is neither,
+  // it is a slug in code that the `industries` table cannot see.
+  const marketSlugs = new Set(marketsOrdered().map((m) => m.slug))
+  const wantedServices = allPageLinks.filter((l) => l.kind === 'service').map((l) => l.slug)
+  const wantedIndustries = allPageLinks.filter((l) => l.kind === 'industry').map((l) => l.slug)
+
+  const [foundServices, foundIndustries] = await Promise.all([
+    wantedServices.length
+      ? db.serviceCase.findMany({
+          where: { slug: { in: wantedServices }, status: 'published' },
+          select: { slug: true },
+        })
+      : Promise.resolve([]),
+    wantedIndustries.length
+      ? db.industry.findMany({
+          where: { slug: { in: wantedIndustries }, isPublished: true },
+          select: { slug: true },
+        })
+      : Promise.resolve([]),
+  ])
+
+  const serviceSet = new Set(foundServices.map((row) => row.slug))
+  const industrySet = new Set([...foundIndustries.map((i) => i.slug), ...designedIndustrySlugs()])
+
+  for (const link of allPageLinks) {
+    const ok =
+      link.kind === 'market'
+        ? marketSlugs.has(link.slug)
+        : link.kind === 'service'
+          ? serviceSet.has(link.slug)
+          : industrySet.has(link.slug)
+    if (!ok) errors.push(`unknown or unpublished ${link.kind} page: ${link.slug}`)
+  }
+
+  // related_articles. Resolved against the articles already live plus the ones
+  // in this batch, so a wave can cross-link within itself on first import. An
+  // article may not link to itself: it reads as a bug to everyone who clicks it.
+  const wantedArticles = [
+    ...new Set(allParsed.flatMap((blocks) => blogReferencedArticleSlugs(blocks))),
+  ]
+  if (wantedArticles.length) {
+    const live = await db.blogPost.findMany({
+      where: { slug: { in: wantedArticles }, isPublished: true, deletedAt: null },
+      select: { slug: true },
+    })
+    const known = new Set([...live.map((row) => row.slug), ...articles.map((a) => a.slug)])
+    for (const slug of wantedArticles) {
+      if (!known.has(slug)) errors.push(`unknown or unpublished article: ${slug}`)
+    }
+  }
+  for (const article of articles) {
+    const blocks = parsedBlocks.get(article.slug)
+    if (blocks && blogReferencedArticleSlugs(blocks).includes(article.slug)) {
+      errors.push(`[${article.slug}] related_articles links to itself`)
+    }
   }
 
   const blogCatBySlug = new Map(blogCategories.map((c) => [c.slug, c.id]))
@@ -152,7 +264,7 @@ export async function runBlogArticleImport({
   console.log('done')
 }
 
-async function syncArticleLinks(postId: string, blocks: BlogBlocks): Promise<void> {
+export async function syncArticleLinks(postId: string, blocks: BlogBlocks): Promise<void> {
   const skus = blogReferencedSkus(blocks)
   const categorySlugs = blogReferencedCategorySlugs(blocks)
 

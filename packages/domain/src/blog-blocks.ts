@@ -93,7 +93,7 @@ export const ComparisonTableBlockSchema = z
           cells: z.array(z.string().trim().max(200)).min(2).max(8),
           /** Visually emphasises a row — the recommended option, typically. */
           highlight: z.boolean().optional().default(false),
-        }),
+        })
       )
       .min(1)
       .max(60),
@@ -103,7 +103,7 @@ export const ComparisonTableBlockSchema = z
     // A ragged table renders as a silently misaligned grid — the reader sees
     // a value under the wrong heading, which in a pressure-rating table is
     // worse than showing nothing.
-    { message: 'every row must have exactly one cell per column', path: ['rows'] },
+    { message: 'every row must have exactly one cell per column', path: ['rows'] }
   )
 export type ComparisonTableBlock = z.infer<typeof ComparisonTableBlockSchema>
 
@@ -143,7 +143,7 @@ export const FaqBlockSchema = z.object({
       z.object({
         question: NonEmpty(300),
         answer: NonEmpty(2000),
-      }),
+      })
     )
     .min(1)
     .max(20),
@@ -167,7 +167,7 @@ export const DecisionTreeBlockSchema = z.object({
         detail: OptionalText(600),
         /** Optional SKU to jump straight to the part. */
         sku: OptionalText(80),
-      }),
+      })
     )
     .min(2)
     .max(12),
@@ -206,6 +206,49 @@ export const CategoryLinkBlockSchema = z.object({
   blurb: OptionalText(400),
 })
 export type CategoryLinkBlock = z.infer<typeof CategoryLinkBlockSchema>
+
+// ── Block: related articles ───────────────────────────────────────────────
+// Article-to-article linking. Until this existed the blog linked down into the
+// catalogue and sideways nowhere: 93 articles, 144 links into categories, and
+// not one link between two articles. That is a topical cluster with no edges
+// — each piece rankable alone and none of them lending authority to the rest.
+//
+// Referenced by slug rather than by id, for the same reason products are
+// referenced by SKU: an author can write one without a database lookup, and a
+// broken reference is legible in the raw JSON.
+//
+// The page resolves these and drops anything that does not resolve, so an
+// unpublished or renamed article leaves a shorter list rather than a 404.
+export const RelatedArticlesBlockSchema = z.object({
+  type: z.literal('related_articles'),
+  heading: OptionalText(120),
+  /** Blog post slugs. Order is the display order. */
+  slugs: z.array(Slug(160)).min(1).max(6),
+})
+export type RelatedArticlesBlock = z.infer<typeof RelatedArticlesBlockSchema>
+
+// ── Block: page link ──────────────────────────────────────────────────────
+// Links an article to a market, service or industry page.
+//
+// `kind` is a closed set rather than a free URL. A free `href` would be
+// unvalidatable at import time and would eventually carry a typo into
+// production; a kind plus a slug can be checked against the actual set of
+// pages before anything is written, and the URL is derived rather than typed.
+export const PageLinkBlockSchema = z.object({
+  type: z.literal('page_link'),
+  /** Determines the URL prefix: /markets, /services or /industries. */
+  kind: z.enum(['market', 'service', 'industry']),
+  slug: Slug(160),
+  label: NonEmpty(120),
+  blurb: OptionalText(400),
+})
+export type PageLinkBlock = z.infer<typeof PageLinkBlockSchema>
+
+/** URL for a page_link, derived from its kind. The single place that mapping lives. */
+export function pageLinkHref(block: { kind: PageLinkBlock['kind']; slug: string }): string {
+  const prefix = { market: '/markets', service: '/services', industry: '/industries' }[block.kind]
+  return `${prefix}/${block.slug}`
+}
 
 // ── Block: download ───────────────────────────────────────────────────────
 export const DownloadBlockSchema = z.object({
@@ -289,6 +332,8 @@ export const BlogBlockSchema = z.discriminatedUnion('type', [
   CalloutBlockSchema,
   ProductEmbedBlockSchema,
   CategoryLinkBlockSchema,
+  RelatedArticlesBlockSchema,
+  PageLinkBlockSchema,
   DownloadBlockSchema,
   CtaBlockSchema,
   AsOfStampBlockSchema,
@@ -401,6 +446,41 @@ export function blogReferencedCategorySlugs(blocks: BlogBlocks): string[] {
 }
 
 /**
+ * Every blog post slug referenced by a `related_articles` block, de-duplicated
+ * and order-preserving. Third in the family alongside `blogReferencedSkus` and
+ * `blogReferencedCategorySlugs`.
+ */
+export function blogReferencedArticleSlugs(blocks: BlogBlocks): string[] {
+  const seen = new Set<string>()
+  for (const block of blocks) {
+    if (block.type !== 'related_articles') continue
+    for (const slug of block.slugs) if (!seen.has(slug)) seen.add(slug)
+  }
+  return [...seen]
+}
+
+/**
+ * Every `page_link` in the article, de-duplicated on kind+slug and
+ * order-preserving. The importer resolves each kind against a different source
+ * — markets from code, services and industries from the database — so they are
+ * returned grouped rather than as bare slugs.
+ */
+export function blogReferencedPageLinks(
+  blocks: BlogBlocks
+): Array<{ kind: PageLinkBlock['kind']; slug: string }> {
+  const seen = new Set<string>()
+  const out: Array<{ kind: PageLinkBlock['kind']; slug: string }> = []
+  for (const block of blocks) {
+    if (block.type !== 'page_link') continue
+    const key = `${block.kind}:${block.slug}`
+    if (seen.has(key)) continue
+    seen.add(key)
+    out.push({ kind: block.kind, slug: block.slug })
+  }
+  return out
+}
+
+/**
  * Q&A pairs across every `faq_block`, for FAQPage JSON-LD. Reading them back
  * out of the blocks — rather than storing them a second time — is what keeps
  * the structured data and the visible accordion from drifting apart.
@@ -421,7 +501,10 @@ export function estimateReadingMinutes(blocks: BlogBlocks): number {
 
   const count = (text: string | null | undefined) => {
     if (!text) return
-    words += text.replace(/<[^>]+>/g, ' ').split(/\s+/).filter(Boolean).length
+    words += text
+      .replace(/<[^>]+>/g, ' ')
+      .split(/\s+/)
+      .filter(Boolean).length
   }
 
   for (const block of blocks) {

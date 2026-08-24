@@ -25,8 +25,10 @@ import DirectAnswerBlockView from './blocks/DirectAnswerBlock'
 import DownloadBlockView from './blocks/DownloadBlock'
 import FaqBlockView from './blocks/FaqBlock'
 import KeyTakeawaysBlockView from './blocks/KeyTakeawaysBlock'
+import PageLinkBlockView from './blocks/PageLinkBlock'
 import ProductEmbedBlockView from './blocks/ProductEmbedBlock'
 import ProseBlockView from './blocks/ProseBlock'
+import RelatedArticlesBlockView from './blocks/RelatedArticlesBlock'
 import StandardCitationBlockView from './blocks/StandardCitationBlock'
 
 import type { ResolvedBlogArticle } from '../../lib/blog-article'
@@ -53,7 +55,7 @@ export default function BlogArticleRenderer({ article, contact }: Props) {
   if (article.dropped.length > 0) {
     console.error(
       '[BlogArticleRenderer] dropped invalid blocks',
-      article.dropped.map((d) => `#${d.index} ${d.reason}`).join('; '),
+      article.dropped.map((d) => `#${d.index} ${d.reason}`).join('; ')
     )
   }
 
@@ -125,6 +127,10 @@ function BlockSwitch({
       return <ProductEmbedBlockView block={block} productsBySku={article.productsBySku} />
     case 'category_link':
       return <CategoryLinkBlockView block={block} categoriesBySlug={article.categoriesBySlug} />
+    case 'related_articles':
+      return <RelatedArticlesBlockView block={block} articlesBySlug={article.articlesBySlug} />
+    case 'page_link':
+      return <PageLinkBlockView block={block} livePageLinks={article.livePageLinks} />
     case 'download_block':
       return <DownloadBlockView block={block} />
     case 'cta_block':
