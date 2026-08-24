@@ -65,6 +65,12 @@ export const STATIC_SITEMAP_PATHS: StaticSitemapPath[] = [
   { path: '/brands', priority: 0.6, changeFrequency: 'weekly' },
   { path: '/industries', priority: 0.6, changeFrequency: 'weekly' },
   { path: '/services', priority: 0.8, changeFrequency: 'weekly' },
+  // The manufacturing capability page. Priority matches /services because it
+  // answers the supplier-evaluation question the whole services surface exists
+  // for — how are these parts actually made — and it is the page the technical
+  // long-tail ("ASME B16.11 forged fitting manufacturer") lands on. It changes
+  // only when the partner's measured capability does, hence yearly.
+  { path: '/manufacturing', priority: 0.8, changeFrequency: 'yearly' },
   // NOT /search. It is in DEFAULT_DISALLOW, and a sitemap entry for a
   // disallowed path is a contradiction, not a hedge. See the file header.
   //

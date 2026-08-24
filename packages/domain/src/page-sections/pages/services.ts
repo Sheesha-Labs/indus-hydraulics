@@ -152,6 +152,26 @@ export const SERVICES_PAGE: MasterPageDef = {
       },
     },
     {
+      key: 'capability',
+      label: 'Manufacturing capability',
+      description:
+        'The band that sends a reader to /manufacturing — casting, forging and CNC behind the fittings we supply.',
+      dataNote:
+        'The figures in the band are read from the manufacturing page itself, so they cannot drift from what that page states.',
+      fields: [
+        eyebrow(),
+        heading({ max: 160 }),
+        area('body', 'Body', { max: 400 }),
+        text('cta_label', 'Button label', { max: 60, optional: true }),
+      ],
+      defaults: {
+        eyebrow: 'MANUFACTURING · CASTING · FORGING · CNC',
+        heading: 'The production line behind the fittings we supply.',
+        body: 'Our principal manufacturing partner runs casting, forging and CNC workshops under one process chain. Twelve controlled stages, material traceability and inspection records with every batch.',
+        cta_label: 'See the manufacturing system',
+      },
+    },
+    {
       key: 'cta',
       label: 'Closing call to action',
       description: 'The centred block that ends the page.',

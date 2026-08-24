@@ -4,7 +4,7 @@ import type { ReactNode } from 'react'
 import { Button } from '@indus/ui'
 
 /**
- * "Submit drawing or BOM" — the secondary CTA, repeated twice on the page.
+ * The "send us the drawing" CTA — the secondary action on a designed page.
  *
  * It is a real anchor, so it works with JavaScript off, opens in a new tab on
  * middle-click and reads as a link to a screen reader. The handler adds the
@@ -15,7 +15,7 @@ import { Button } from '@indus/ui'
  * Focus is deferred past the browser's own scroll so the two do not fight, and
  * `preventScroll` stops the focus call from yanking the page a second time.
  */
-export default function IndustryDrawingCta({
+export default function DrawingCta({
   anchorId,
   fileInputId,
   kind = 'outline',

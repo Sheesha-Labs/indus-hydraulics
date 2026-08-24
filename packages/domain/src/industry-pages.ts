@@ -38,16 +38,17 @@
  * Keep it, and keep it next to the diagram.
  */
 
+import type {
+  DesignedPageImage,
+  DesignedPageImageFocus,
+  DesignedPageImageRatio,
+} from './designed-pages'
+
 /** Public Supabase bucket holding this page's photography. */
 const IMG_BASE =
   'https://hesezbozronntejnsopr.supabase.co/storage/v1/object/public/industry-images/data-center-liquid-cooling'
 
 /**
- * A photograph with its production alt text.
- *
- * `alt` is the alt attribute as it ships — it was written for the page, not
- * derived from the filename, and it never repeats the heading beside it.
- *
  * `ratio` is the box the image is rendered INTO, and it is deliberately not
  * always the ratio the design named. Three of these assets are wider or
  * narrower than the prototype's placeholder frames, and `object-cover` crops
@@ -55,31 +56,12 @@ const IMG_BASE =
  * the machining/inspection/packing triptych is the clear case — the box was
  * changed to the asset's own ratio instead. See the note on each.
  */
-export type IndustryImageRatio = '4/3' | '16/9' | '1/1' | '3/4'
-
-/**
- * Where the subject sits when `object-cover` has to crop.
- *
- * A closed union rather than a free `object-position` string, because the
- * renderer maps it to a Tailwind class and Tailwind cannot generate a class
- * from a value it never sees in source. A new position is a two-line change in
- * both files, and the type stops the version that silently emits no CSS.
- */
-export type IndustryImageFocus = 'lower'
-
-export type IndustryImage = {
-  readonly src: string
-  readonly alt: string
-  readonly ratio: IndustryImageRatio
-  readonly focus?: IndustryImageFocus
-}
-
 const img = (
   file: string,
   alt: string,
-  ratio: IndustryImageRatio,
-  focus?: IndustryImageFocus
-): IndustryImage => ({
+  ratio: DesignedPageImageRatio,
+  focus?: DesignedPageImageFocus
+): DesignedPageImage => ({
   src: `${IMG_BASE}/${file}`,
   alt,
   ratio,
@@ -98,7 +80,7 @@ export type IndustryLocation = {
   readonly number: string
   readonly title: string
   readonly body: string
-  readonly image: IndustryImage
+  readonly image: DesignedPageImage
   /**
    * Product groups relevant at this connection point.
    *
@@ -115,7 +97,7 @@ export type IndustryLocation = {
 export type IndustryFamily = {
   readonly kicker: string
   readonly title: string
-  readonly image: IndustryImage
+  readonly image: DesignedPageImage
   readonly points: readonly string[]
   readonly includes: string
 }
@@ -126,7 +108,7 @@ export type IndustryQcStep = {
   readonly kicker: string
   readonly title: string
   readonly body: string
-  readonly image: IndustryImage
+  readonly image: DesignedPageImage
 }
 
 /** A project risk, its control, and the record that evidences the control. */
@@ -162,7 +144,7 @@ export type DesignedIndustryPage = {
     readonly headingEmphasis: string
     readonly lede: string
     readonly checks: readonly string[]
-    readonly image: IndustryImage
+    readonly image: DesignedPageImage
     readonly stats: readonly { readonly value: string; readonly label: string }[]
   }
   readonly architecture: {
@@ -171,7 +153,7 @@ export type DesignedIndustryPage = {
     readonly noteLabel: string
     readonly note: string
     readonly disclaimer: string
-    readonly image: IndustryImage
+    readonly image: DesignedPageImage
     readonly caption: string
   }
   readonly buyers: {
@@ -208,7 +190,7 @@ export type DesignedIndustryPage = {
     readonly items: readonly IndustryRisk[]
     readonly ctaLabel: string
     readonly ctaHref: string
-    readonly image: IndustryImage
+    readonly image: DesignedPageImage
   }
   readonly review: {
     readonly eyebrow: string
@@ -224,6 +206,8 @@ export type DesignedIndustryPage = {
     readonly heading: string
     readonly body: string
   }
+  /** The sibling designed page, cross-linked because the two are one family. */
+  readonly related: { readonly label: string; readonly href: string; readonly body: string }
 }
 
 const DATA_CENTRE_LIQUID_COOLING: DesignedIndustryPage = {
@@ -587,6 +571,12 @@ const DATA_CENTRE_LIQUID_COOLING: DesignedIndustryPage = {
   closing: {
     heading: 'Specifying a liquid-cooling build?',
     body: 'Send the interface drawing and the fluid, pressure and temperature conditions. We confirm scope, material and inspection before we quote.',
+  },
+
+  related: {
+    label: 'How these parts are made',
+    href: '/manufacturing',
+    body: 'Casting, forging and CNC under one process chain — the twelve controlled stages behind the fittings on this page.',
   },
 }
 

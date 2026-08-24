@@ -1,10 +1,10 @@
 import type { ReactNode } from 'react'
 import Image from 'next/image'
-import type { IndustryImage } from '@indus/domain'
+import type { DesignedPageImage } from '@indus/domain'
 import { cn } from '@indus/ui'
 
 /**
- * One photograph on a designed industry page.
+ * One photograph on a designed page.
  *
  * Unlike `MarketFigure` there is no empty state: every slot on this page has a
  * real asset, so a placeholder branch would be dead code that quietly hid a
@@ -31,6 +31,7 @@ import { cn } from '@indus/ui'
 const RATIO_CLASS = {
   '4/3': 'aspect-[4/3]',
   '16/9': 'aspect-[16/9]',
+  '16/10': 'aspect-[16/10]',
   '1/1': 'aspect-square',
   '3/4': 'aspect-[3/4]',
 } as const
@@ -39,7 +40,7 @@ const FOCUS_CLASS = {
   lower: 'object-[center_62%]',
 } as const
 
-export default function IndustryFigure({
+export default function DesignedFigure({
   image,
   sizes,
   priority = false,
@@ -49,7 +50,7 @@ export default function IndustryFigure({
   className,
   children,
 }: {
-  image: IndustryImage
+  image: DesignedPageImage
   sizes: string
   /** Eager-load the hero only; everything else is below the fold. */
   priority?: boolean

@@ -2,7 +2,7 @@
 
 import { z } from 'zod'
 import { db, nextRfqCode } from '@indus/db'
-import { designedIndustryPage, signQuoteAccessToken, splitContactName } from '@indus/domain'
+import { MANUFACTURING_ENQUIRY, signQuoteAccessToken, splitContactName } from '@indus/domain'
 import {
   allowedChoice,
   attachmentMediaKind,
@@ -13,26 +13,23 @@ import { resolveOrCreateAnonymousContact, sendRfqEmails } from '../../../lib/rfq
 import { STORAGE_BUCKETS } from '../../../lib/supabase-admin'
 
 /**
- * Lead capture on a designed industry page.
+ * Lead capture on `/manufacturing`.
  *
- * WHY THIS IS NOT `submitMarketEnquiry`. That action's whole subject is a
- * destination: it resolves a market slug or takes a typed country, sets the
- * quoting currency from the market record and writes an Incoterm and a
- * delivery city. An industry enquiry has none of those. What it has instead is
- * an APPLICATION — which part of the cooling system the parts are for — and
- * that is the single field the desk needs to route the enquiry to the right
- * engineer. Bolting it onto the market action would mean two sets of
- * mutually-exclusive optional fields in one schema.
+ * WHY THIS IS ITS OWN ACTION rather than a widened `submitIndustryEnquiry`.
+ * The two forms ask different questions of different people: an industry
+ * enquiry names an APPLICATION — which part of a cooling system the parts are
+ * for — and a manufacturing enquiry names a PROCESS ROUTE — how the part should
+ * be made. Merging them would mean one schema with two mutually-exclusive
+ * optional fields and a context block that branches on which one arrived, which
+ * is more coupling than the ~40 lines it would save. What the two genuinely
+ * share — the bot floor, the attachment manifest, the media-kind mapping — is
+ * in `lib/designed-enquiry.ts` and imported by both.
  *
- * WHY IT IS NOT `submitRfq` either: same reason the market action is not.
- * `RfqLine` requires a `productId`, and this buyer is sending a drawing, not
- * SKUs. The enquiry lands with zero lines and the description in
- * `customerMessage`, which is a state the admin queue, the signed customer
- * tracking link and both emails already handle.
- *
- * The industry slug is written into `applicationContext` so data-centre
- * enquiries are separable from general RFQs in the queue without a schema
- * change — the handoff asks for exactly that.
+ * As with the other enquiry forms, the RFQ lands with ZERO lines. `RfqLine`
+ * requires a `productId`, and this buyer is sending a drawing, not SKUs, so the
+ * description goes in `customerMessage`. Everything downstream — the admin
+ * queue, the signed customer tracking link, both emails — already handles
+ * `lineCount: 0` because that is a real state a made-to-order enquiry is in.
  */
 
 type SubmitResult =
@@ -40,26 +37,24 @@ type SubmitResult =
   | { success: false; error: string }
 
 const EnquirySchema = z.object({
-  industrySlug: z.string().trim().min(1).max(80),
   company: z.string().trim().min(1, 'a company name').max(200),
   contactName: z.string().trim().min(1, 'a contact name').max(200),
   email: z.string().trim().toLowerCase().email('a valid work email').max(254),
   phone: z.string().trim().max(32).optional().or(z.literal('')),
-  application: z.string().trim().max(120).optional().or(z.literal('')),
+  route: z.string().trim().max(120).optional().or(z.literal('')),
   description: z.string().trim().max(8000).optional().or(z.literal('')),
 })
 
-export async function submitIndustryEnquiry(formData: FormData): Promise<SubmitResult> {
+export async function submitManufacturingEnquiry(formData: FormData): Promise<SubmitResult> {
   const botRejection = rejectAsBot(formData)
   if (botRejection) return { success: false, error: botRejection }
 
   const parsed = EnquirySchema.safeParse({
-    industrySlug: formData.get('industrySlug'),
     company: formData.get('company'),
     contactName: formData.get('contactName'),
     email: formData.get('email'),
     phone: formData.get('phone') ?? '',
-    application: formData.get('application') ?? '',
+    route: formData.get('route') ?? '',
     description: formData.get('description') ?? '',
   })
 
@@ -69,19 +64,8 @@ export async function submitIndustryEnquiry(formData: FormData): Promise<SubmitR
   }
 
   const input = parsed.data
-
-  /*
-    The slug must resolve against the designed-page registry. It came from a
-    rendered page, so a miss means the page was retired mid-session — and an
-    enquiry recorded against a page that no longer exists is one the desk
-    cannot put in context.
-  */
-  const page = designedIndustryPage(input.industrySlug)
-  if (!page) {
-    return { success: false, error: 'That page is no longer listed. Email sales@indushydraulics.me.' }
-  }
-
-  const application = allowedChoice(input.application, page.review.applications)
+  const enquiry = MANUFACTURING_ENQUIRY
+  const route = allowedChoice(input.route, enquiry.choices)
 
   if (formData.get('attachmentsPending') === '1') {
     return { success: false, error: 'An attachment is still uploading. Give it a moment and try again.' }
@@ -90,15 +74,16 @@ export async function submitIndustryEnquiry(formData: FormData): Promise<SubmitR
   const attachments = readAttachments(formData.get('attachments'))
 
   /*
-    Something has to describe what is wanted. This page's entire argument is
-    "send the drawing", so an enquiry with neither a description nor a file
-    attached is one the desk cannot act on — and the round trip to ask is a
-    round trip the form could have saved.
+    Something has to describe the part. This page's whole argument is "send the
+    drawing", so an enquiry carrying neither a description nor a file is one the
+    desk cannot quote — and the round trip to ask for it is one the form could
+    have saved.
   */
   if (!input.description && attachments.length === 0) {
     return {
       success: false,
-      error: 'Tell us what you need — material, sizes, end connections and quantity — or attach a drawing or BOM.',
+      error:
+        'Tell us what to make — material grade, size, thread form and quantity — or attach a drawing or sample photo.',
     }
   }
 
@@ -111,11 +96,16 @@ export async function submitIndustryEnquiry(formData: FormData): Promise<SubmitR
     company: input.company,
   })
 
-  const subject = `${page.card.name} enquiry`
+  const subject = `${enquiry.pageName} enquiry`
+  /*
+    The page and the process route are written into `applicationContext` rather
+    than appended to the message body, so a manufacturing enquiry is separable
+    from a catalogue RFQ and from a data-centre one without a schema change.
+  */
   const applicationContext = [
-    `Industry page: ${page.card.name} (/industries/${page.slug})`,
-    application ? `Application: ${application}` : 'Application: not stated',
-    'Source: industry page enquiry form',
+    `Page: ${enquiry.pageName} (${enquiry.path})`,
+    `${enquiry.choiceLabel}: ${route || 'not stated'}`,
+    'Source: manufacturing page enquiry form',
   ].join('\n')
 
   const rfq = await db.$transaction(async (tx) => {
@@ -127,12 +117,15 @@ export async function submitIndustryEnquiry(formData: FormData): Promise<SubmitR
         submittedByContactId: contactId,
         subject,
         applicationContext,
+        // No urgency question on this page — a made-to-drawing enquiry is a
+        // considered one, not a breakdown. `routine` is the column default and
+        // is what the desk sorts the queue by.
+        urgency: 'routine',
         // The page quotes in AED or USD and does not ask which. AED is the
         // store default; the desk confirms the currency when it replies.
         currency: 'AED',
         customerMessage: input.description || null,
-        internalNotes:
-          'Submitted from the data-centre liquid-cooling page — drawing-based stainless scope, verify contact details before fulfilment.',
+        internalNotes: enquiry.internalNote,
         status: 'submitted',
         submittedAt: new Date(),
       },
@@ -167,9 +160,9 @@ export async function submitIndustryEnquiry(formData: FormData): Promise<SubmitR
           code: created.code,
           anonymous: true,
           attachmentCount: attachments.length,
-          industry: page.slug,
-          application: application || null,
-          source: 'industry_page_enquiry',
+          page: enquiry.key,
+          processRoute: route || null,
+          source: 'manufacturing_page_enquiry',
         },
       },
     })
@@ -182,9 +175,6 @@ export async function submitIndustryEnquiry(formData: FormData): Promise<SubmitR
     await sendRfqEmails({
       rfqId: rfq.id,
       rfqCode: rfq.code,
-      // No urgency question on this page — a project enquiry that comes with a
-      // drawing is a considered one, not a breakdown. `routine` is the column
-      // default and is what the desk sorts the queue by.
       urgency: 'routine',
       lineCount: 0,
       subject,
@@ -194,7 +184,7 @@ export async function submitIndustryEnquiry(formData: FormData): Promise<SubmitR
       shipToAddressId: null,
     })
   } catch (err) {
-    console.error('[submitIndustryEnquiry] email send error', err)
+    console.error('[submitManufacturingEnquiry] email send error', err)
   }
 
   /*
