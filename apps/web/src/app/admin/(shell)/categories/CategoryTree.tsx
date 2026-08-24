@@ -108,7 +108,14 @@ export default function CategoryTree({
 
   const activeRow = activeId ? flat.find((r) => r.node.id === activeId) ?? null : null
 
-  /** Rows travelling with the drag — hidden from the list while it is in flight. */
+  /**
+   * Rows travelling with the drag: the dragged row and everything beneath it.
+   *
+   * They stay in the list and are dimmed, rather than being spliced out. The
+   * drop is computed against a list that DOES exclude them (`withoutSubtree`
+   * inside `projectDrop`), so correctness does not depend on what is painted —
+   * dimming is only how the editor is told "this branch moves as one".
+   */
   const draggingIds = useMemo(
     () => (activeId ? new Set([activeId, ...descendantIds(categories, activeId)]) : new Set<string>()),
     [activeId, categories],
