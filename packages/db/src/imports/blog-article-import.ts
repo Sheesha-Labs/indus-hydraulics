@@ -21,9 +21,13 @@
 import { Prisma } from '@prisma/client'
 import {
   BlogBlocksSchema,
+  blogReferencedArticleSlugs,
   blogReferencedCategorySlugs,
+  blogReferencedPageLinks,
   blogReferencedSkus,
+  designedIndustrySlugs,
   estimateReadingMinutes,
+  marketsOrdered,
 } from '@indus/domain'
 
 import { db } from '../index'
@@ -68,6 +72,13 @@ export async function runBlogArticleImport({
       )
     ),
   ]
+  const allPageLinks = [
+    ...new Map(
+      allParsed
+        .flatMap((blocks) => blogReferencedPageLinks(blocks))
+        .map((l) => [`${l.kind}:${l.slug}`, l])
+    ).values(),
+  ]
 
   const [foundSkus, foundCategories, blogCategories, blogAuthors] = await Promise.all([
     allSkus.length
@@ -89,6 +100,64 @@ export async function runBlogArticleImport({
   const catSet = new Set(foundCategories.map((c) => c.slug))
   for (const slug of allCategoryLinks) {
     if (!catSet.has(slug)) errors.push(`unknown or unpublished catalogue category: ${slug}`)
+  }
+
+  // page_link targets. Markets live in code, so that check is free and exact;
+  // services and industries are rows — and a designed industry page is neither,
+  // it is a slug in code that the `industries` table cannot see.
+  const marketSlugs = new Set(marketsOrdered().map((m) => m.slug))
+  const wantedServices = allPageLinks.filter((l) => l.kind === 'service').map((l) => l.slug)
+  const wantedIndustries = allPageLinks.filter((l) => l.kind === 'industry').map((l) => l.slug)
+
+  const [foundServices, foundIndustries] = await Promise.all([
+    wantedServices.length
+      ? db.serviceCase.findMany({
+          where: { slug: { in: wantedServices }, status: 'published' },
+          select: { slug: true },
+        })
+      : Promise.resolve([]),
+    wantedIndustries.length
+      ? db.industry.findMany({
+          where: { slug: { in: wantedIndustries }, isPublished: true },
+          select: { slug: true },
+        })
+      : Promise.resolve([]),
+  ])
+
+  const serviceSet = new Set(foundServices.map((row) => row.slug))
+  const industrySet = new Set([...foundIndustries.map((i) => i.slug), ...designedIndustrySlugs()])
+
+  for (const link of allPageLinks) {
+    const ok =
+      link.kind === 'market'
+        ? marketSlugs.has(link.slug)
+        : link.kind === 'service'
+          ? serviceSet.has(link.slug)
+          : industrySet.has(link.slug)
+    if (!ok) errors.push(`unknown or unpublished ${link.kind} page: ${link.slug}`)
+  }
+
+  // related_articles. Resolved against the articles already live plus the ones
+  // in this batch, so a wave can cross-link within itself on first import. An
+  // article may not link to itself: it reads as a bug to everyone who clicks it.
+  const wantedArticles = [
+    ...new Set(allParsed.flatMap((blocks) => blogReferencedArticleSlugs(blocks))),
+  ]
+  if (wantedArticles.length) {
+    const live = await db.blogPost.findMany({
+      where: { slug: { in: wantedArticles }, isPublished: true, deletedAt: null },
+      select: { slug: true },
+    })
+    const known = new Set([...live.map((row) => row.slug), ...articles.map((a) => a.slug)])
+    for (const slug of wantedArticles) {
+      if (!known.has(slug)) errors.push(`unknown or unpublished article: ${slug}`)
+    }
+  }
+  for (const article of articles) {
+    const blocks = parsedBlocks.get(article.slug)
+    if (blocks && blogReferencedArticleSlugs(blocks).includes(article.slug)) {
+      errors.push(`[${article.slug}] related_articles links to itself`)
+    }
   }
 
   const blogCatBySlug = new Map(blogCategories.map((c) => [c.slug, c.id]))

@@ -275,6 +275,55 @@ const FORMS: BlockFormSpec[] = [
     template: () => ({ type: 'category_link', slug: '', label: '' }) as BlogBlockInput,
   },
   {
+    type: 'related_articles',
+    label: 'Related articles',
+    purpose:
+      'Links sideways to other articles. The blog links down into the catalogue everywhere and sideways nowhere without this.',
+    fields: [
+      { kind: 'text', key: 'heading', label: 'Heading', placeholder: 'Related reading' },
+      {
+        kind: 'strings',
+        key: 'slugs',
+        label: 'Article slugs',
+        itemLabel: 'Slug',
+        hint: 'The slug from the article URL — /blog/<slug>. A slug that no longer resolves is skipped rather than rendering a dead link.',
+        placeholder: 'stopping-an-npt-thread-leak',
+        min: 1,
+        max: 6,
+      },
+    ],
+    template: () => ({ type: 'related_articles', slugs: [''] }) as BlogBlockInput,
+  },
+  {
+    type: 'page_link',
+    label: 'Page link',
+    purpose: 'Points at a market, service or industry page.',
+    fields: [
+      {
+        kind: 'select',
+        key: 'kind',
+        label: 'Page type',
+        default: 'market',
+        options: [
+          { value: 'market', label: 'Export market — /markets/<slug>' },
+          { value: 'service', label: 'Service — /services/<slug>' },
+          { value: 'industry', label: 'Industry — /industries/<slug>' },
+        ],
+      },
+      {
+        kind: 'text',
+        key: 'slug',
+        label: 'Slug',
+        required: true,
+        mono: true,
+        hint: 'The slug from the page URL. The prefix comes from the page type, so do not include it.',
+      },
+      { kind: 'text', key: 'label', label: 'Link label', required: true },
+      { kind: 'textarea', key: 'blurb', label: 'Blurb', rows: 2 },
+    ],
+    template: () => ({ type: 'page_link', kind: 'market', slug: '', label: '' }) as BlogBlockInput,
+  },
+  {
     type: 'standard_citation',
     label: 'Standard citation',
     purpose:
@@ -288,7 +337,13 @@ const FORMS: BlockFormSpec[] = [
         mono: true,
         placeholder: 'SAE J1273',
       },
-      { kind: 'text', key: 'publisher', label: 'Publisher', required: true, placeholder: 'SAE International' },
+      {
+        kind: 'text',
+        key: 'publisher',
+        label: 'Publisher',
+        required: true,
+        placeholder: 'SAE International',
+      },
       { kind: 'text', key: 'title', label: 'Document title', required: true },
       { kind: 'text', key: 'clause', label: 'Clause', mono: true, placeholder: '§4.2' },
       {
@@ -423,7 +478,13 @@ const FORMS: BlockFormSpec[] = [
         key: 'problem',
         label: 'Problem',
         fields: [
-          { kind: 'text', key: 'label', label: 'Label', required: true, placeholder: 'What we were told' },
+          {
+            kind: 'text',
+            key: 'label',
+            label: 'Label',
+            required: true,
+            placeholder: 'What we were told',
+          },
           { kind: 'text', key: 'title', label: 'Title', required: true },
           { kind: 'textarea', key: 'body', label: 'Body', required: true, rows: 4 },
         ],
@@ -433,7 +494,13 @@ const FORMS: BlockFormSpec[] = [
         key: 'solution',
         label: 'Solution',
         fields: [
-          { kind: 'text', key: 'label', label: 'Label', required: true, placeholder: 'What we found' },
+          {
+            kind: 'text',
+            key: 'label',
+            label: 'Label',
+            required: true,
+            placeholder: 'What we found',
+          },
           { kind: 'text', key: 'title', label: 'Title', required: true },
           { kind: 'textarea', key: 'body', label: 'Body', required: true, rows: 4 },
         ],
@@ -459,10 +526,24 @@ const FORMS: BlockFormSpec[] = [
         min: 2,
         max: 6,
         fields: [
-          { kind: 'text', key: 'number', label: 'Number', required: true, mono: true, placeholder: 'PHASE 01' },
+          {
+            kind: 'text',
+            key: 'number',
+            label: 'Number',
+            required: true,
+            mono: true,
+            placeholder: 'PHASE 01',
+          },
           { kind: 'text', key: 'title', label: 'Title', required: true },
           { kind: 'textarea', key: 'body', label: 'Body', required: true, rows: 3 },
-          { kind: 'text', key: 'duration', label: 'Duration', required: true, mono: true, placeholder: 'Days 0 — 2' },
+          {
+            kind: 'text',
+            key: 'duration',
+            label: 'Duration',
+            required: true,
+            mono: true,
+            placeholder: 'Days 0 — 2',
+          },
         ],
       },
     ],
@@ -544,7 +625,14 @@ const FORMS: BlockFormSpec[] = [
     label: 'Result box',
     purpose: 'Closes a case with the numbers — two to six metric cells under a short summary.',
     fields: [
-      { kind: 'text', key: 'label', label: 'Label', required: true, mono: true, placeholder: 'Result · summary' },
+      {
+        kind: 'text',
+        key: 'label',
+        label: 'Label',
+        required: true,
+        mono: true,
+        placeholder: 'Result · summary',
+      },
       { kind: 'text', key: 'title', label: 'Title', required: true },
       { kind: 'textarea', key: 'body', label: 'Body', required: true, rows: 4 },
       {
@@ -555,7 +643,14 @@ const FORMS: BlockFormSpec[] = [
         min: 2,
         max: 6,
         fields: [
-          { kind: 'text', key: 'value', label: 'Value', required: true, mono: true, placeholder: '32' },
+          {
+            kind: 'text',
+            key: 'value',
+            label: 'Value',
+            required: true,
+            mono: true,
+            placeholder: '32',
+          },
           { kind: 'text', key: 'valueSmall', label: 'Unit', mono: true, placeholder: 'hrs' },
           { kind: 'text', key: 'label', label: 'Label', required: true },
           {
@@ -631,7 +726,13 @@ const FORMS: BlockFormSpec[] = [
             { kind: 'text', key: 'task', label: 'Task', required: true },
             { kind: 'textarea', key: 'detail', label: 'Detail', required: true, rows: 2 },
             { kind: 'text', key: 'who', label: 'Who', required: true, placeholder: 'Field tech' },
-            { kind: 'text', key: 'tool', label: 'Tool', required: true, placeholder: 'Torque wrench' },
+            {
+              kind: 'text',
+              key: 'tool',
+              label: 'Tool',
+              required: true,
+              placeholder: 'Torque wrench',
+            },
             { kind: 'checkbox', key: 'done', label: 'Done', default: true },
           ],
         },

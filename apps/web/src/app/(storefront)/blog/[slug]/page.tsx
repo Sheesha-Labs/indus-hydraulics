@@ -69,7 +69,7 @@ export default async function BlogPostPage({ params }: Props) {
 
   if (!post) notFound()
 
-  const article = await resolveBlogArticle(post.bodyBlocks)
+  const article = await resolveBlogArticle(post.bodyBlocks, post.slug)
 
   // Migration path. Posts written before the block editor still hold their
   // content in `body` as HTML. Rendering blocks *only* would blank every

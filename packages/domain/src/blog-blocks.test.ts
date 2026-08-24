@@ -2,15 +2,23 @@ import { describe, expect, it } from 'vitest'
 import {
   BlogBlockSchema,
   blogFaqPairs,
+  blogReferencedArticleSlugs,
   blogReferencedCategorySlugs,
+  blogReferencedPageLinks,
   estimateReadingMinutes,
   blogReferencedSkus,
   blogTocEntries,
+  pageLinkHref,
   parseBlogBlocks,
   type BlogBlocks,
 } from './blog-blocks'
 
-const sectionHead = { type: 'section_head', number: '/01', title: 'Pressure ratings', anchor: 'pressure-ratings' }
+const sectionHead = {
+  type: 'section_head',
+  number: '/01',
+  title: 'Pressure ratings',
+  anchor: 'pressure-ratings',
+}
 const paragraph = { type: 'paragraph', html: 'Working pressure is not burst pressure.' }
 
 describe('reused ServiceCase blocks', () => {
@@ -19,15 +27,17 @@ describe('reused ServiceCase blocks', () => {
   })
 
   it('still enforces the kebab-case anchor rule', () => {
-    expect(
-      BlogBlockSchema.safeParse({ ...sectionHead, anchor: 'Pressure Ratings' }).success,
-    ).toBe(false)
+    expect(BlogBlockSchema.safeParse({ ...sectionHead, anchor: 'Pressure Ratings' }).success).toBe(
+      false
+    )
   })
 })
 
 describe('key_takeaways', () => {
   it('accepts two to six items', () => {
-    expect(BlogBlockSchema.safeParse({ type: 'key_takeaways', items: ['a', 'b'] }).success).toBe(true)
+    expect(BlogBlockSchema.safeParse({ type: 'key_takeaways', items: ['a', 'b'] }).success).toBe(
+      true
+    )
   })
 
   it('rejects a single item — a one-item summary is a sentence, not a summary', () => {
@@ -70,7 +80,7 @@ describe('comparison_table', () => {
         type: 'comparison_table',
         columns: ['Grade'],
         rows: [{ cells: ['SAE 100R2AT'] }],
-      }).success,
+      }).success
     ).toBe(false)
   })
 })
@@ -85,7 +95,7 @@ describe('standard_citation', () => {
         title: 'Recommended Practices for Hydraulic Hose Assemblies',
         clause: '§4.2',
         summary: 'Covers inspection and replacement practice, not shelf life.',
-      }).success,
+      }).success
     ).toBe(true)
   })
 
@@ -96,30 +106,39 @@ describe('standard_citation', () => {
         standard: 'SAE J1273',
         title: 'Recommended Practices for Hydraulic Hose Assemblies',
         summary: 'Covers inspection and replacement practice.',
-      }).success,
+      }).success
     ).toBe(false)
   })
 })
 
 describe('as_of_stamp', () => {
   it('accepts an ISO date', () => {
-    expect(BlogBlockSchema.safeParse({ type: 'as_of_stamp', verifiedOn: '2026-08-17' }).success).toBe(true)
+    expect(
+      BlogBlockSchema.safeParse({ type: 'as_of_stamp', verifiedOn: '2026-08-17' }).success
+    ).toBe(true)
   })
 
   it('rejects a free-text date', () => {
-    expect(BlogBlockSchema.safeParse({ type: 'as_of_stamp', verifiedOn: '17 Aug 2026' }).success).toBe(false)
+    expect(
+      BlogBlockSchema.safeParse({ type: 'as_of_stamp', verifiedOn: '17 Aug 2026' }).success
+    ).toBe(false)
   })
 })
 
 describe('callout', () => {
   it('defaults tone to note', () => {
-    const parsed = BlogBlockSchema.parse({ type: 'callout', title: 'Check the layline', body: 'Read the date code.' })
+    const parsed = BlogBlockSchema.parse({
+      type: 'callout',
+      title: 'Check the layline',
+      body: 'Read the date code.',
+    })
     expect(parsed).toMatchObject({ tone: 'note' })
   })
 
   it('rejects an unknown tone', () => {
     expect(
-      BlogBlockSchema.safeParse({ type: 'callout', tone: 'critical', title: 'x', body: 'y' }).success,
+      BlogBlockSchema.safeParse({ type: 'callout', tone: 'critical', title: 'x', body: 'y' })
+        .success
     ).toBe(false)
   })
 })
@@ -127,10 +146,18 @@ describe('callout', () => {
 describe('category_link', () => {
   it('requires a kebab-case slug so it resolves to a real /c/ route', () => {
     expect(
-      BlogBlockSchema.safeParse({ type: 'category_link', slug: 'hoses-fittings', label: 'Hoses & fittings' }).success,
+      BlogBlockSchema.safeParse({
+        type: 'category_link',
+        slug: 'hoses-fittings',
+        label: 'Hoses & fittings',
+      }).success
     ).toBe(true)
     expect(
-      BlogBlockSchema.safeParse({ type: 'category_link', slug: '/c/hoses-fittings', label: 'Hoses' }).success,
+      BlogBlockSchema.safeParse({
+        type: 'category_link',
+        slug: '/c/hoses-fittings',
+        label: 'Hoses',
+      }).success
     ).toBe(false)
   })
 })
@@ -140,11 +167,7 @@ describe('parseBlogBlocks', () => {
     // The regression this exists to prevent: ArticleRenderer validates the
     // whole array and returns null on any failure, blanking a whole article
     // because of one bad block.
-    const { blocks, dropped } = parseBlogBlocks([
-      sectionHead,
-      { type: 'paragraph' },
-      paragraph,
-    ])
+    const { blocks, dropped } = parseBlogBlocks([sectionHead, { type: 'paragraph' }, paragraph])
     expect(blocks).toHaveLength(2)
     expect(dropped).toHaveLength(1)
     expect(dropped[0]!.index).toBe(1)
@@ -255,5 +278,84 @@ describe('blogReferencedCategorySlugs', () => {
   it('returns empty when an article links to no categories', () => {
     const { blocks } = parseBlogBlocks([{ type: 'paragraph', html: 'text' }])
     expect(blogReferencedCategorySlugs(blocks)).toEqual([])
+  })
+})
+
+describe('related_articles', () => {
+  const block = {
+    type: 'related_articles',
+    slugs: ['stopping-an-npt-thread-leak', 'where-jic-is-the-wrong-choice'],
+  }
+
+  it('accepts a list of slugs', () => {
+    expect(BlogBlockSchema.safeParse(block).success).toBe(true)
+  })
+
+  it('rejects an empty list — an empty related list is a heading with nothing under it', () => {
+    expect(BlogBlockSchema.safeParse({ type: 'related_articles', slugs: [] }).success).toBe(false)
+  })
+
+  it('rejects more than six', () => {
+    const slugs = Array.from({ length: 7 }, (_, i) => `article-${i}`)
+    expect(BlogBlockSchema.safeParse({ type: 'related_articles', slugs }).success).toBe(false)
+  })
+
+  it('rejects a slug that is not kebab-case, which is what a pasted URL looks like', () => {
+    const parsed = BlogBlockSchema.safeParse({
+      type: 'related_articles',
+      slugs: ['/blog/stopping-an-npt-thread-leak'],
+    })
+    expect(parsed.success).toBe(false)
+  })
+
+  it('collects slugs across blocks, de-duplicated and in order', () => {
+    const blocks = parseBlogBlocks([
+      block,
+      { type: 'related_articles', slugs: ['where-jic-is-the-wrong-choice', 'field-re-hosing-kit'] },
+    ]).blocks
+    expect(blogReferencedArticleSlugs(blocks)).toEqual([
+      'stopping-an-npt-thread-leak',
+      'where-jic-is-the-wrong-choice',
+      'field-re-hosing-kit',
+    ])
+  })
+
+  it('does not count towards reading time — a link list is not reading', () => {
+    const blocks = parseBlogBlocks([block]).blocks
+    expect(estimateReadingMinutes(blocks)).toBe(estimateReadingMinutes([]))
+  })
+})
+
+describe('page_link', () => {
+  const market = { type: 'page_link', kind: 'market', slug: 'saudi-arabia', label: 'Saudi Arabia' }
+
+  it('accepts each of the three kinds', () => {
+    for (const kind of ['market', 'service', 'industry']) {
+      expect(BlogBlockSchema.safeParse({ ...market, kind }).success).toBe(true)
+    }
+  })
+
+  it('rejects a kind outside the closed set', () => {
+    expect(BlogBlockSchema.safeParse({ ...market, kind: 'brand' }).success).toBe(false)
+  })
+
+  it('derives the href from the kind rather than storing it', () => {
+    expect(pageLinkHref({ kind: 'market', slug: 'saudi-arabia' })).toBe('/markets/saudi-arabia')
+    expect(pageLinkHref({ kind: 'service', slug: 'hose-assembly' })).toBe('/services/hose-assembly')
+    expect(pageLinkHref({ kind: 'industry', slug: 'manufacturing' })).toBe(
+      '/industries/manufacturing'
+    )
+  })
+
+  it('collects page links de-duplicated on kind and slug together', () => {
+    const blocks = parseBlogBlocks([
+      market,
+      { ...market, label: 'Saudi Arabia again' },
+      { type: 'page_link', kind: 'industry', slug: 'saudi-arabia', label: 'Different page' },
+    ]).blocks
+    expect(blogReferencedPageLinks(blocks)).toEqual([
+      { kind: 'market', slug: 'saudi-arabia' },
+      { kind: 'industry', slug: 'saudi-arabia' },
+    ])
   })
 })
