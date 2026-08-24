@@ -3,10 +3,13 @@ import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import { db } from '@indus/db'
 import { buildBreadcrumbLd, buildCollectionLd } from '@indus/domain'
-import { JsonLd } from '@indus/ui'
+import { JsonLd, buildMailtoHref, buildWhatsappHref } from '@indus/ui'
+import BlogArticleRenderer from '../../../../../components/blog/BlogArticleRenderer'
 import BlogPostCard from '../../../../../components/blog/BlogPostCard'
+import { resolveBlogArticle } from '../../../../../lib/blog-article'
 import { listBlogPosts } from '../../../../../lib/blog-posts'
 import { pageMetadata, urlFor } from '../../../../../lib/seo'
+import { getStoreSettings } from '../../../../../lib/store-settings'
 
 type Props = { params: Promise<{ slug: string }> }
 
@@ -45,8 +48,20 @@ export default async function BlogCategoryPage({ params }: Props) {
   const category = await db.blogCategory.findUnique({ where: { slug, isPublished: true } })
   if (!category) notFound()
 
-  const posts = await listBlogPosts({ categoryId: category.id })
+  const [posts, settings] = await Promise.all([
+    listBlogPosts({ categoryId: category.id }),
+    getStoreSettings(),
+  ])
   const hubUrl = urlFor(`/blog/c/${category.slug}`)
+
+  // A hub with no body is every hub as it shipped: header, then the grid.
+  // `resolveBlogArticle` is only worth its two queries when there is one.
+  const hubBody = category.bodyBlocks ? await resolveBlogArticle(category.bodyBlocks) : null
+  const contact = {
+    whatsappUrl: buildWhatsappHref(settings.contactPhone, `Enquiry: ${category.name}`),
+    emailUrl: buildMailtoHref(settings.contactEmail, `${category.name} — enquiry`),
+    phone: settings.contactPhone,
+  }
 
   const collectionLd = buildCollectionLd({
     name: category.name,
@@ -94,6 +109,12 @@ export default async function BlogCategoryPage({ params }: Props) {
           <b className="text-ih-ink">{posts.length}</b> {posts.length === 1 ? 'article' : 'articles'}
         </p>
       </header>
+
+      {hubBody && hubBody.blocks.length > 0 && (
+        <div className="border-b border-ih-border py-10">
+          <BlogArticleRenderer article={hubBody} contact={contact} />
+        </div>
+      )}
 
       {posts.length === 0 ? (
         <div className="my-12 border border-dashed border-ih-border py-16 text-center">
