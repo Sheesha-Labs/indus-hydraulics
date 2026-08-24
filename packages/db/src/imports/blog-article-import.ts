@@ -32,6 +32,7 @@ import {
 
 import { db } from '../index'
 import { BLOG_CROSS_LINKS } from './blog-cross-links'
+import { BLOG_SEO } from './blog-seo'
 
 import type { BlogBlocks, BlogBlocksInput } from '@indus/domain'
 import type { BlogArticleSeed } from './2026-08-17-blog-articles/shared'
@@ -242,9 +243,12 @@ export async function runBlogArticleImport({
       readingMinutes,
       categoryId: blogCatBySlug.get(article.categorySlug)!,
       blogAuthorId: blogAuthorBySlug.get(article.authorSlug)!,
-      seoTitle: article.seoTitle ?? null,
-      seoDescription: article.seoDescription ?? null,
-      focusKeyword: article.focusKeyword ?? null,
+      // BLOG_SEO wins over the seed. The seed values predate the scoring
+      // audit and 57 of them carried a keyword that appeared in neither the
+      // title nor the URL, which costs score rather than earning it.
+      seoTitle: BLOG_SEO[article.slug]?.seoTitle ?? article.seoTitle ?? null,
+      seoDescription: BLOG_SEO[article.slug]?.seoDescription ?? article.seoDescription ?? null,
+      focusKeyword: BLOG_SEO[article.slug]?.focusKeyword ?? article.focusKeyword ?? null,
       isPublished: true,
       status: 'published' as const,
       body: '',
