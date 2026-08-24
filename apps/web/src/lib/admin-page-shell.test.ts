@@ -37,7 +37,7 @@ const SHELL = path.resolve(
 const PENDING = new Set<string>([])
 
 /** Pure `redirect()` stubs — no JSX at all, so there is nothing to render. */
-const REDIRECT_STUBS = new Set(['seo/page.tsx', 'seo/search/page.tsx'])
+const REDIRECT_STUBS = new Set(['seo/page.tsx', 'seo/search/page.tsx', 'footer/page.tsx'])
 
 function walk(dir: string, acc: string[] = []): string[] {
   for (const entry of readdirSync(dir)) {
@@ -67,7 +67,7 @@ function rendersShell(file: string): boolean {
 }
 
 /**
- * Components the page imports from its own directory.
+ * Components the page imports by a relative path.
  *
  * The editor pages keep their header in a 'use client' child, because it
  * carries `savedAt` — client state bumped by the editor's own child tabs.
@@ -75,6 +75,11 @@ function rendersShell(file: string): boolean {
  * writer, so the child renders the shell and the page renders the child.
  * One level is enough for every case here and keeps the rule easy to reason
  * about.
+ *
+ * `../` counts, not just `./`: the shared navigation editor lives under
+ * `components/admin/nav/` because four route segments render it, and matching
+ * only same-directory imports would report every one of those pages as
+ * missing a bar it plainly draws.
  */
 function localChildren(rel: string): string[] {
   const file = path.join(SHELL, rel)
@@ -86,8 +91,8 @@ function localChildren(rel: string): string[] {
   }
   const dir = path.dirname(file)
   const out: string[] = []
-  for (const m of src.matchAll(/from\s+'(\.\/[^']+)'/g)) {
-    out.push(path.join(dir, `${m[1]!}.tsx`))
+  for (const m of src.matchAll(/from\s+'(\.\.?\/[^']+)'/g)) {
+    out.push(path.resolve(dir, `${m[1]!}.tsx`))
   }
   return out
 }

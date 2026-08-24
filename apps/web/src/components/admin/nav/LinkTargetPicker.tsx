@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState, useTransition } from 'react'
 import type { MenuLinkType } from '@indus/domain'
-import { searchLinkTargets } from '../actions'
+import { searchLinkTargets } from '../../../app/admin/(shell)/navigation/actions'
 
 export interface PickerTarget {
   id: string

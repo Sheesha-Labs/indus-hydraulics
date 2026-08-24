@@ -1,96 +1,68 @@
 import type { Metadata } from 'next'
-import { notFound } from 'next/navigation'
+import { notFound, redirect } from 'next/navigation'
 import { db } from '@indus/db'
-import { MENU_LOCATION_LABELS, type MenuLinkType, type MenuLocation } from '@indus/domain'
-import NavigationEditor, { type EditorItem, type EditorMenu } from './NavigationEditor'
-
-export const metadata: Metadata = { title: 'Edit menu — Indus Admin' }
+import { NAV_SURFACES, type MenuLocation } from '@indus/domain'
+import { auth } from '../../../../../lib/admin-auth'
+import { ROLES, requireRole } from '../../../../../lib/rbac'
+import { loadNavMenuDraft } from '../../../../../lib/nav-editor-data'
+import NavMenuScreen from '../../../../../components/admin/nav/NavMenuScreen'
 
 type Props = { params: Promise<{ menuSlug: string }> }
 
+/** Where on the storefront each surface can be looked at. */
+const VIEW_HREF: Record<MenuLocation, string> = {
+  primary_header: '/',
+  primary_megamenu: '/c',
+  footer_main: '/',
+  footer_legal: '/',
+  mobile_drawer: '/',
+}
+
 export default async function MenuEditorPage({ params }: Props) {
+  requireRole(await auth(), ROLES.CMS_WRITE)
   const { menuSlug } = await params
 
   const menu = await db.navMenu.findUnique({
     where: { slug: menuSlug },
-    include: {
-      items: {
-        orderBy: [{ parentId: 'asc' }, { position: 'asc' }],
-        include: {
-          category: { select: { id: true, name: true, slug: true } },
-          brand: { select: { id: true, name: true, slug: true } },
-          industry: { select: { id: true, name: true, slug: true } },
-          cmsPage: { select: { id: true, title: true, slug: true } },
-          product: { select: { id: true, title: true, sku: true } },
-          promoImage: { select: { id: true, storagePath: true } },
-        },
-      },
-    },
+    select: { location: true },
   })
-
   if (!menu) notFound()
 
-  const editorMenu: EditorMenu = {
-    id: menu.id,
-    slug: menu.slug,
-    name: menu.name,
-    location: menu.location as MenuLocation,
-    isPublished: menu.isPublished,
-    publishedAt: menu.publishedAt ? menu.publishedAt.toISOString() : null,
+  const location = menu.location as MenuLocation
+
+  // The two footer menus are not editable on their own: the footer is one
+  // surface whose columns, legal links, contact block and copyright line are
+  // saved together, and a half-footer screen would let this page and the
+  // Footer screen disagree about what the footer is.
+  if (location === 'footer_main' || location === 'footer_legal') {
+    redirect('/admin/navigation/footer')
   }
 
-  const items: EditorItem[] = menu.items.map((it) => {
-    const target = (() => {
-      switch (it.linkType as MenuLinkType) {
-        case 'category':
-          return it.category ? { id: it.category.id, label: it.category.name, sublabel: `/c/${it.category.slug}` } : null
-        case 'brand':
-          return it.brand ? { id: it.brand.id, label: it.brand.name, sublabel: `/brands/${it.brand.slug}` } : null
-        case 'industry':
-          return it.industry ? { id: it.industry.id, label: it.industry.name, sublabel: `/industries/${it.industry.slug}` } : null
-        case 'cms_page':
-          return it.cmsPage ? { id: it.cmsPage.id, label: it.cmsPage.title, sublabel: `/${it.cmsPage.slug}` } : null
-        case 'product':
-          return it.product ? { id: it.product.id, label: it.product.title, sublabel: it.product.sku } : null
-        default:
-          return null
-      }
-    })()
-
-    return {
-      id: it.id,
-      parentId: it.parentId,
-      position: it.position,
-      label: it.label,
-      iconName: it.iconName,
-      badge: it.badge,
-      description: it.description,
-      linkType: it.linkType as MenuLinkType,
-      customUrl: it.customUrl,
-      openInNewTab: it.openInNewTab,
-      isVisible: it.isVisible,
-      target,
-      categoryId: it.categoryId,
-      brandId: it.brandId,
-      industryId: it.industryId,
-      cmsPageId: it.cmsPageId,
-      productId: it.productId,
-      promoImageId: it.promoImageId,
-      promoImageUrl: it.promoImage?.storagePath ?? null,
-      promoHeading: it.promoHeading,
-      promoBody: it.promoBody,
-      promoLinkUrl: it.promoLinkUrl,
-    }
-  })
+  const draft = await loadNavMenuDraft(location)
+  if (!draft) notFound()
 
   return (
-    // No wrapper: NavigationEditor renders AdminPageShell, and the 60px bar has
-    // to be a direct child of the layout column or it renders inset. The
-    // location label moves into the bar's subtitle, alongside the publish state.
-    <NavigationEditor
-      menu={editorMenu}
-      items={items}
-      locationLabel={MENU_LOCATION_LABELS[editorMenu.location]}
+    <NavMenuScreen
+      menu={{
+        id: draft.id,
+        slug: draft.slug,
+        name: draft.name,
+        isPublished: draft.isPublished,
+        publishedAt: draft.publishedAt,
+      }}
+      location={location}
+      initialItems={draft.items}
+      viewHref={VIEW_HREF[location] ?? '/'}
     />
   )
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { menuSlug } = await params
+  const menu = await db.navMenu.findUnique({
+    where: { slug: menuSlug },
+    select: { location: true },
+  })
+  const surface = menu ? NAV_SURFACES[menu.location as MenuLocation] : null
+  return { title: `${surface?.title ?? 'Navigation'} — Indus Admin` }
 }
