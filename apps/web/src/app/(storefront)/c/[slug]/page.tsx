@@ -2,7 +2,18 @@ import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import { db } from '@indus/db'
-import { MAX_CATEGORY_DEPTH, buildBreadcrumbLd, buildCollectionLd } from '@indus/domain'
+import {
+  MAX_CATEGORY_DEPTH,
+  buildBreadcrumbLd,
+  buildCollectionLd,
+  buildSpecFacets,
+  countSelected,
+  parseSpecFilter,
+  productIdsMatching,
+  pruneSpecFilter,
+  serialiseSpecFilter,
+  toggleSpecValue,
+} from '@indus/domain'
 import { Breadcrumb, Button, EmptyState, JsonLd, Note } from '@indus/ui'
 import { pageMetadata, urlFor } from '../../../../lib/seo'
 import ProductCard from '../../../../components/ProductCard'
@@ -13,6 +24,15 @@ type SearchParams = {
   brands?: string
   page?: string
   sort?: string
+  /**
+   * Spec facets, as `label-key:value-key,value-key;other-label:value-key`.
+   *
+   * Both halves are normalised keys rather than the raw text, because real
+   * values contain commas (`JIS 30° cone (60° included), BSP thread`) and real
+   * labels contain slashes (`Figure / Pressure Series`). See
+   * `parseSpecFilter` in @indus/domain.
+   */
+  spec?: string
 }
 
 type Props = {
@@ -65,7 +85,7 @@ export async function generateMetadata({ params, searchParams }: Props): Promise
   // links (so it discovers products and sub-categories) but tell it
   // NOT to index the URL, so PageRank concentrates on the canonical
   // /c/<slug>. Page 1 (no params) keeps the admin-controlled flags.
-  const isFacetVariant = !!(sp.brands || sp.sort || (sp.page && sp.page !== '1'))
+  const isFacetVariant = !!(sp.brands || sp.spec || sp.sort || (sp.page && sp.page !== '1'))
   const robots = isFacetVariant
     ? { index: false, follow: true }
     : { index: category.robotsIndex, follow: category.robotsFollow }
@@ -165,12 +185,37 @@ export default async function CategoryPage({ params, searchParams }: Props) {
     ancestorTrail(category.id),
   ])
 
-  const where = {
+  /*
+   * Spec facets are computed from every product the OTHER filters leave in
+   * scope, and applied afterwards.
+   *
+   * Counts therefore reflect the brand filter but not the spec filter itself,
+   * which is what keeps a facet's numbers still while you tick values inside
+   * it. Recomputing per-facet — counts for facet A excluding A's own
+   * selection — is the more precise convention and costs a pass per facet;
+   * with at most ~70 products in the largest category it buys nothing a
+   * reader would notice.
+   */
+  const brandScope = {
     categoryId: { in: categoryIds },
     status: 'active' as const,
-    ...(selectedBrands.length > 0 ? {
-      brand: { slug: { in: selectedBrands } },
-    } : {}),
+    ...(selectedBrands.length > 0 ? { brand: { slug: { in: selectedBrands } } } : {}),
+  }
+
+  const facetRows = await db.productSpec.findMany({
+    where: { isFilterable: true, product: brandScope },
+    select: { productId: true, label: true, value: true },
+  })
+  const facets = buildSpecFacets(facetRows)
+  // Pruned against what this category actually offers: a bookmarked URL
+  // outlives the values it names, and a stale one would otherwise match
+  // nothing while showing a chip the reader cannot find in the panel.
+  const specFilter = pruneSpecFilter(parseSpecFilter(sp.spec), facets)
+  const specMatchIds = productIdsMatching(facetRows, specFilter)
+
+  const where = {
+    ...brandScope,
+    ...(specMatchIds ? { id: { in: [...specMatchIds] } } : {}),
   }
 
   const [products, total, allBrands] = await Promise.all([
@@ -202,7 +247,12 @@ export default async function CategoryPage({ params, searchParams }: Props) {
   // Build filter URL helper
   function filterUrl(overrides: Record<string, string | undefined>) {
     const params = new URLSearchParams()
-    const base = { brands: selectedBrands.join(',') || undefined, page: page > 1 ? String(page) : undefined, sort: sp.sort }
+    const base = {
+      brands: selectedBrands.join(',') || undefined,
+      spec: serialiseSpecFilter(specFilter),
+      page: page > 1 ? String(page) : undefined,
+      sort: sp.sort,
+    }
     const merged = { ...base, ...overrides }
     for (const [k, v] of Object.entries(merged)) {
       if (v) params.set(k, v)
@@ -217,6 +267,17 @@ export default async function CategoryPage({ params, searchParams }: Props) {
       : [...selectedBrands, brandSlug]
     return filterUrl({ brands: next.join(',') || undefined, page: '1' })
   }
+
+  /** Back to page 1: a filter change re-cuts the list, so page 4 of it is meaningless. */
+  function toggleSpec(labelKey: string, valueKey: string) {
+    return filterUrl({
+      spec: serialiseSpecFilter(toggleSpecValue(specFilter, labelKey, valueKey)),
+      page: '1',
+    })
+  }
+
+  const selectedSpecCount = countSelected(specFilter)
+  const activeFilterCount = selectedBrands.length + selectedSpecCount
 
   const from = (page - 1) * PAGE_SIZE + 1
   const to = Math.min(page * PAGE_SIZE, total)
@@ -297,11 +358,11 @@ export default async function CategoryPage({ params, searchParams }: Props) {
           <div className="flex flex-col gap-6">
             <div className="flex items-center justify-between">
               <span className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">
-                Refine{selectedBrands.length > 0 ? ` · ${selectedBrands.length} active` : ''}
+                Refine{activeFilterCount > 0 ? ` · ${activeFilterCount} active` : ''}
               </span>
-              {selectedBrands.length > 0 && (
+              {activeFilterCount > 0 && (
                 <Link
-                  href={filterUrl({ brands: undefined, page: '1' })}
+                  href={filterUrl({ brands: undefined, spec: undefined, page: '1' })}
                   className="text-xs text-ih-accent hover:underline"
                 >
                   Clear
@@ -364,6 +425,65 @@ export default async function CategoryPage({ params, searchParams }: Props) {
             )}
 
             {/*
+              Spec facets — thread form, body configuration, pressure class.
+              Which specs appear is decided per category by `buildSpecFacets`:
+              a spec earns a panel only when it actually partitions the
+              products, so an identifier column like `Series` (29 values across
+              29 couplers) and a constant like `Max Working Pressure` (one
+              value across 44 adapters) never draw one.
+            */}
+            {facets.map((facet) => {
+              const selected = specFilter.get(facet.key) ?? new Set<string>()
+              return (
+                <div key={facet.key}>
+                  <div className="mb-3 border-b border-ih-border pb-2.5">
+                    <span className="text-[12.5px] font-medium">{facet.label}</span>
+                  </div>
+                  <div className="flex flex-col gap-2.5">
+                    {facet.values.map((value) => {
+                      const active = selected.has(value.key)
+                      return (
+                        <Link
+                          key={value.key}
+                          href={toggleSpec(facet.key, value.key)}
+                          aria-pressed={active}
+                          className={`flex items-center gap-2.5 text-[13px] transition-colors ${
+                            active ? 'text-ih-ink' : 'text-ih-ink-2 hover:text-ih-ink'
+                          }`}
+                        >
+                          <span
+                            aria-hidden="true"
+                            className={`inline-grid h-4 w-4 shrink-0 place-items-center rounded-[3px] border transition-colors ${
+                              active
+                                ? 'border-ih-accent bg-ih-accent text-white'
+                                : 'border-ih-border-strong bg-ih-surface'
+                            }`}
+                          >
+                            {active && (
+                              <svg viewBox="0 0 24 24" className="h-3 w-3" fill="none">
+                                <path
+                                  d="m5 12 5 5L20 7"
+                                  stroke="currentColor"
+                                  strokeWidth="2.6"
+                                  strokeLinecap="round"
+                                  strokeLinejoin="round"
+                                />
+                              </svg>
+                            )}
+                          </span>
+                          <span className="flex-1">{value.label}</span>
+                          <span className="font-mono text-[10.5px] tabular-nums text-ih-muted-2">
+                            {value.count}
+                          </span>
+                        </Link>
+                      )
+                    })}
+                  </div>
+                </div>
+              )
+            })}
+
+            {/*
               The cross-reference prompt from the artboard's facet rail. It is
               here because a filtered listing that returns nothing useful is
               exactly where someone with a dead part number gives up.
@@ -383,8 +503,28 @@ export default async function CategoryPage({ params, searchParams }: Props) {
         {/* Results */}
         <section>
           {/* Applied filter chips */}
-          {selectedBrands.length > 0 && (
+          {activeFilterCount > 0 && (
             <div className="flex gap-2 flex-wrap mb-4">
+              {[...specFilter].flatMap(([labelKey, values]) => {
+                const facet = facets.find((f) => f.key === labelKey)
+                if (!facet) return []
+                return [...values].flatMap((valueKey) => {
+                  const value = facet.values.find((v) => v.key === valueKey)
+                  if (!value) return []
+                  return [
+                    <Link
+                      key={`${labelKey}:${valueKey}`}
+                      href={toggleSpec(labelKey, valueKey)}
+                      className="inline-flex h-[30px] items-center gap-1.5 rounded-full border border-ih-accent bg-ih-accent px-3 text-[12.5px] text-white transition-colors hover:bg-ih-accent-hover"
+                    >
+                      {facet.label}: {value.label}
+                      <span aria-hidden="true" className="text-[14px] leading-none opacity-70">
+                        ×
+                      </span>
+                    </Link>,
+                  ]
+                })
+              })}
               {selectedBrands.map((b) => {
                 const brand = allBrands.find((br) => br.slug === b)
                 return (
