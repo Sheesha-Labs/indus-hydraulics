@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { renderSitemapIndex, renderUrlset } from './sitemap-xml'
+import { newestLastModified, renderSitemapIndex, renderUrlset } from './sitemap-xml'
 
 describe('renderUrlset', () => {
   it('emits a valid urlset with the sitemaps.org namespace', () => {
@@ -65,8 +65,45 @@ describe('renderSitemapIndex', () => {
 
   it('carries lastmod per child when supplied', () => {
     const xml = renderSitemapIndex([
-      { url: 'https://x.test/sitemaps/blog.xml', lastModified: new Date('2026-08-24T00:00:00.000Z') },
+      {
+        url: 'https://x.test/sitemaps/blog.xml',
+        lastModified: new Date('2026-08-24T00:00:00.000Z'),
+      },
     ])
     expect(xml).toContain('<lastmod>2026-08-24T00:00:00.000Z</lastmod>')
+  })
+})
+
+describe('newestLastModified', () => {
+  it('returns the newest date across entries', () => {
+    const result = newestLastModified([
+      { lastModified: new Date('2026-08-01T00:00:00.000Z') },
+      { lastModified: new Date('2026-08-24T09:00:00.000Z') },
+      { lastModified: new Date('2026-08-17T00:00:00.000Z') },
+    ])
+    expect(result?.toISOString()).toBe('2026-08-24T09:00:00.000Z')
+  })
+
+  it('accepts ISO strings as well as Dates', () => {
+    const result = newestLastModified([{ lastModified: '2026-08-24T09:00:00.000Z' }])
+    expect(result?.toISOString()).toBe('2026-08-24T09:00:00.000Z')
+  })
+
+  it('ignores entries with no date rather than treating them as now', () => {
+    const result = newestLastModified([{}, { lastModified: new Date('2026-08-01T00:00:00.000Z') }])
+    expect(result?.toISOString()).toBe('2026-08-01T00:00:00.000Z')
+  })
+
+  it('returns undefined when nothing carries a date — a section dated from the request clock would look changed on every fetch', () => {
+    expect(newestLastModified([{}, {}])).toBeUndefined()
+    expect(newestLastModified([])).toBeUndefined()
+  })
+
+  it('skips an unparseable date instead of poisoning the result with NaN', () => {
+    const result = newestLastModified([
+      { lastModified: 'not a date' },
+      { lastModified: new Date('2026-08-01T00:00:00.000Z') },
+    ])
+    expect(result?.toISOString()).toBe('2026-08-01T00:00:00.000Z')
   })
 })
