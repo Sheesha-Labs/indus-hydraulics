@@ -162,13 +162,15 @@ export const SERVICES_PAGE: MasterPageDef = {
         eyebrow(),
         heading({ max: 160 }),
         area('body', 'Body', { max: 400 }),
-        text('cta_label', 'Button label', { max: 60, optional: true }),
+        text('cta_label', 'Manufacturing link label', { max: 60, optional: true }),
+        text('cta_label_quality', 'Quality-control link label', { max: 60, optional: true }),
       ],
       defaults: {
         eyebrow: 'MANUFACTURING · CASTING · FORGING · CNC',
         heading: 'The production line behind the fittings we supply.',
         body: 'Our principal manufacturing partner runs casting, forging and CNC workshops under one process chain. Twelve controlled stages, material traceability and inspection records with every batch.',
         cta_label: 'See the manufacturing system',
+        cta_label_quality: 'See how it is tested',
       },
     },
     {

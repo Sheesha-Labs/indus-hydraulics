@@ -26,7 +26,8 @@ import {
   UploadIcon,
   WrenchIcon,
 } from '../designed/icons'
-import ManufacturingEnquiryForm from './ManufacturingEnquiryForm'
+import DesignedEnquiryForm from '../designed/DesignedEnquiryForm'
+import { submitManufacturingEnquiry } from '../../app/(storefront)/manufacturing/actions'
 
 /**
  * `/manufacturing` — seven bands, one navy panel, one conversion.
@@ -310,24 +311,47 @@ export default function ManufacturingLanding({
               and a reader who came here to check the factory is often the same
               one specifying the cooling build.
             */}
-            <Card className="mt-8 flex flex-col gap-2 bg-ih-surface-2 p-5 sm:flex-row sm:items-center sm:justify-between sm:gap-6">
-              <p className="text-[13px] leading-[1.55] text-ih-ink-2">{related.body}</p>
-              <Link
-                href={related.href}
-                className="inline-flex shrink-0 items-center gap-1.5 text-[13px] font-medium text-ih-accent hover:text-ih-accent-hover"
-              >
-                {related.label}
-                <ArrowRightIcon size={14} />
-              </Link>
-            </Card>
+            <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2">
+              {related.map((link) => (
+                <Card key={link.href} className="flex flex-col gap-2 bg-ih-surface-2 p-5">
+                  <p className="flex-1 text-[13px] leading-[1.55] text-ih-ink-2">{link.body}</p>
+                  <Link
+                    href={link.href}
+                    className="inline-flex items-center gap-1.5 text-[13px] font-medium text-ih-accent hover:text-ih-accent-hover"
+                  >
+                    {link.label}
+                    <ArrowRightIcon size={14} />
+                  </Link>
+                </Card>
+              ))}
+            </div>
           </div>
 
-          <ManufacturingEnquiryForm
-            enquiry={enquiry}
+          <DesignedEnquiryForm
+            action={submitManufacturingEnquiry}
             anchorId={ENQUIRY_ANCHOR}
             fileInputId={FILE_INPUT_ID}
             title={build.formTitle}
             body={build.formBody}
+            choice={{
+              name: 'route',
+              label: enquiry.choiceLabel,
+              options: enquiry.choices,
+              defaultValue: enquiry.choices[0] ?? '',
+            }}
+            description={{
+              name: 'description',
+              label: 'Part description',
+              placeholder:
+                'Material grade, size, thread form, standard, quantity and required documentation',
+              hint: 'A drawing or sample photo attached below counts instead.',
+            }}
+            attachments={{
+              label: 'Drop drawing, 3D file or sample photo',
+              hint: 'PDF · DWG · DXF · STEP · JPG · ZIP — up to 25 MB each',
+            }}
+            submitLabel="Get a quote"
+            confirmation="It is with the project desk. We confirm the process route, material, inspection scope and documentation before we price it, and come back within one business day. Anything you attached came through with it."
             spec={build.spec}
             contactEmail={contactEmail}
           />
