@@ -11,7 +11,7 @@ const ARTICLE: BlogArticleSeed = {
   seoDescription:
     'How to tell fluid incompatibility from a cut hydraulic hose: swollen soft tube, hardened brittle tube, and delamination. Which tube compound to move to.',
   focusKeyword: 'hydraulic hose swollen inside',
-  publishedAt: '2026-08-25T12:00:00.000Z',
+  publishedAt: '2026-08-24T13:42:13.000Z',
   bodyBlocks: [
     {
       type: 'key_takeaways',

@@ -11,7 +11,7 @@ const ARTICLE: BlogArticleSeed = {
   seoDescription:
     'How long hydraulic hose and assemblies can be stored, which standards actually cover shelf life and storage, and what a hot Gulf store does to spares.',
   focusKeyword: 'hydraulic hose shelf life',
-  publishedAt: '2026-08-26T11:30:00.000Z',
+  publishedAt: '2026-08-24T13:55:56.000Z',
   bodyBlocks: [
     {
       type: 'key_takeaways',

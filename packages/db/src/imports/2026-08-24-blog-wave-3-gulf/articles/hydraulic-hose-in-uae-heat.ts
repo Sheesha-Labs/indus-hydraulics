@@ -11,7 +11,7 @@ const ARTICLE: BlogArticleSeed = {
   seoDescription:
     'What a hydraulic hose temperature rating actually covers, why Gulf ambient conditions add to it, and how heat shortens hose life without ever exceeding the rated figure.',
   focusKeyword: 'hydraulic hose hot climate',
-  publishedAt: '2026-08-26T09:00:00.000Z',
+  publishedAt: '2026-08-24T13:55:51.000Z',
   bodyBlocks: [
     {
       type: 'key_takeaways',

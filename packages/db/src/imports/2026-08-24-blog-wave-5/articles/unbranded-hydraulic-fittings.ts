@@ -11,7 +11,7 @@ const ARTICLE: BlogArticleSeed = {
   seoDescription:
     'Why unmarked hydraulic fittings and untraceable hose are a specification problem rather than a quality one, what questions to ask a supplier, and what to look for on delivery.',
   focusKeyword: 'unbranded hydraulic fittings',
-  publishedAt: '2026-08-28T12:00:00.000Z',
+  publishedAt: '2026-08-24T15:18:46.000Z',
   bodyBlocks: [
     {
       type: 'key_takeaways',

@@ -11,7 +11,7 @@ const ARTICLE: BlogArticleSeed = {
   seoDescription:
     'Hydraulic hose on MEWPs: which circuits hold the platform, why emergency lowering matters, and what documentation a replacement on certified access equipment needs.',
   focusKeyword: 'boom lift hydraulic hose',
-  publishedAt: '2026-08-27T11:30:00.000Z',
+  publishedAt: '2026-08-24T14:32:09.000Z',
   bodyBlocks: [
     {
       type: 'key_takeaways',

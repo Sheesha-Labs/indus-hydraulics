@@ -11,7 +11,7 @@ const ARTICLE: BlogArticleSeed = {
   seoDescription:
     'How to build hydraulic hose kits for a fleet: per-machine sets, high-cycle circuit sets, tagging and rotation, and how a kit differs from a shelf of spares.',
   focusKeyword: 'hydraulic hose kit',
-  publishedAt: '2026-08-28T12:30:00.000Z',
+  publishedAt: '2026-08-24T15:18:47.000Z',
   bodyBlocks: [
     {
       type: 'key_takeaways',

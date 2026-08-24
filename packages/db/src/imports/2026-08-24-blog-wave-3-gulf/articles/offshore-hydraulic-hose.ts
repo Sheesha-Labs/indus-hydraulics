@@ -11,7 +11,7 @@ const ARTICLE: BlogArticleSeed = {
   seoDescription:
     'What changes for hydraulic hose offshore: fitting material, cover choice, inspection access and which oilfield standards govern pressure-control lines.',
   focusKeyword: 'offshore hydraulic hose',
-  publishedAt: '2026-08-26T11:00:00.000Z',
+  publishedAt: '2026-08-24T13:55:55.000Z',
   bodyBlocks: [
     {
       type: 'key_takeaways',

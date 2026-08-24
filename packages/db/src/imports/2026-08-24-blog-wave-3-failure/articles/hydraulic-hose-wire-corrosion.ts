@@ -11,7 +11,7 @@ const ARTICLE: BlogArticleSeed = {
   seoDescription:
     'Why the steel reinforcement in a hydraulic hose corrodes under an undamaged cover, how water tracks along the wire from a single cut, and what actually prevents it.',
   focusKeyword: 'hydraulic hose wire corrosion',
-  publishedAt: '2026-08-25T10:00:00.000Z',
+  publishedAt: '2026-08-24T13:42:09.000Z',
   bodyBlocks: [
     {
       type: 'key_takeaways',

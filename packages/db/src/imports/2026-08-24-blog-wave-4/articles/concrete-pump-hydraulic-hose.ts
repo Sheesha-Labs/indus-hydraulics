@@ -11,7 +11,7 @@ const ARTICLE: BlogArticleSeed = {
   seoDescription:
     'Hydraulic hose on truck-mounted concrete pumps: high-pressure pumping circuits, boom and outrigger lines, cyclic duty, and why delivery hose is a separate subject.',
   focusKeyword: 'concrete pump hydraulic hose',
-  publishedAt: '2026-08-27T13:00:00.000Z',
+  publishedAt: '2026-08-24T14:32:12.000Z',
   bodyBlocks: [
     {
       type: 'key_takeaways',

@@ -11,7 +11,7 @@ const ARTICLE: BlogArticleSeed = {
   seoDescription:
     'How to tell an over-crimped hose assembly from an under-crimped one, what a wrong ferrule looks like, and what to ask a workshop about crimp verification.',
   focusKeyword: 'hydraulic hose crimp problems',
-  publishedAt: '2026-08-25T13:00:00.000Z',
+  publishedAt: '2026-08-24T13:42:15.000Z',
   bodyBlocks: [
     {
       type: 'key_takeaways',

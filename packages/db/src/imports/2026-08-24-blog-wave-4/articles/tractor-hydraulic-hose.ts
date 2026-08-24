@@ -11,7 +11,7 @@ const ARTICLE: BlogArticleSeed = {
   seoDescription:
     'Tractor and implement hydraulics: remote circuits, agricultural coupler types, three-point linkage, and how to specify replacement hoses without a dealer part number.',
   focusKeyword: 'tractor hydraulic hose uae',
-  publishedAt: '2026-08-27T12:30:00.000Z',
+  publishedAt: '2026-08-24T14:32:11.000Z',
   bodyBlocks: [
     {
       type: 'key_takeaways',

@@ -11,7 +11,7 @@ const ARTICLE: BlogArticleSeed = {
   seoDescription:
     'Why hydraulic hoses fail at or just behind the ferrule: crimp faults, flexing at the fitting, bend radius starting too close to the end, and pull-off. How to tell which.',
   focusKeyword: 'hydraulic hose burst at fitting',
-  publishedAt: '2026-08-25T09:00:00.000Z',
+  publishedAt: '2026-08-24T13:42:07.000Z',
   bodyBlocks: [
     {
       type: 'key_takeaways',

@@ -11,7 +11,7 @@ const ARTICLE: BlogArticleSeed = {
   seoDescription:
     'Why injection moulding machine hydraulic hoses fail: radiated barrel heat, high cycle counts, and cleanliness. Which grades suit the duty and what to change first.',
   focusKeyword: 'injection moulding hydraulic hose',
-  publishedAt: '2026-08-27T13:30:00.000Z',
+  publishedAt: '2026-08-24T14:32:13.000Z',
   bodyBlocks: [
     {
       type: 'key_takeaways',

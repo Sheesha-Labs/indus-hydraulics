@@ -11,7 +11,7 @@ const ARTICLE: BlogArticleSeed = {
   seoDescription:
     'Why skid steer hydraulic failures usually start at the attachment couplers: contamination, trapped pressure, flat-face against agricultural couplers, and how to specify replacements.',
   focusKeyword: 'skid steer hydraulic hose',
-  publishedAt: '2026-08-27T10:30:00.000Z',
+  publishedAt: '2026-08-24T14:32:07.000Z',
   bodyBlocks: [
     {
       type: 'key_takeaways',

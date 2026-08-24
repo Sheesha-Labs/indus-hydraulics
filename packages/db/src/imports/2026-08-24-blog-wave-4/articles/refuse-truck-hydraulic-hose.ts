@@ -11,7 +11,7 @@ const ARTICLE: BlogArticleSeed = {
   seoDescription:
     'Hydraulic hose on refuse collection vehicles: packer and ejector circuits, bin lifter duty, tailgate safety, and why the cycle count is higher than it looks.',
   focusKeyword: 'refuse truck hydraulic hose',
-  publishedAt: '2026-08-27T14:00:00.000Z',
+  publishedAt: '2026-08-24T14:32:14.000Z',
   bodyBlocks: [
     {
       type: 'key_takeaways',

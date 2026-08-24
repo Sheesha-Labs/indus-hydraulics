@@ -11,7 +11,7 @@ const ARTICLE: BlogArticleSeed = {
   seoDescription:
     'What determines hydraulic hose lead times: stocked grades built same day, made-to-order assemblies, and imported specials. How to tell which category a request falls into.',
   focusKeyword: 'hydraulic hose lead time uae',
-  publishedAt: '2026-08-28T11:00:00.000Z',
+  publishedAt: '2026-08-24T15:18:44.000Z',
   bodyBlocks: [
     {
       type: 'key_takeaways',

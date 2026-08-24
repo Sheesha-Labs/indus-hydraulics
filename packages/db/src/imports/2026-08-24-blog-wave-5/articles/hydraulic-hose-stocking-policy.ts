@@ -11,7 +11,7 @@ const ARTICLE: BlogArticleSeed = {
   seoDescription:
     'How to decide which hydraulic hose assemblies and fittings to hold as spares: downtime cost, lead time, commonality, and why bulk hose ages better than finished assemblies.',
   focusKeyword: 'hydraulic hose stock list',
-  publishedAt: '2026-08-28T10:30:00.000Z',
+  publishedAt: '2026-08-24T15:18:43.000Z',
   bodyBlocks: [
     {
       type: 'key_takeaways',

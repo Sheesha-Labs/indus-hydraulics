@@ -11,7 +11,7 @@ const ARTICLE: BlogArticleSeed = {
   seoDescription:
     'Why hydraulic hose covers crack: heat ageing, ozone and UV attack, and cold flexing. How the crack pattern tells them apart and what each one needs.',
   focusKeyword: 'hydraulic hose cracking',
-  publishedAt: '2026-08-25T12:30:00.000Z',
+  publishedAt: '2026-08-24T13:42:14.000Z',
   bodyBlocks: [
     {
       type: 'key_takeaways',

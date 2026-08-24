@@ -11,7 +11,7 @@ const ARTICLE: BlogArticleSeed = {
   seoDescription:
     'The four things that change for hydraulic systems in a Gulf summer, why they compound, and what to do before the season rather than during it.',
   focusKeyword: 'hydraulic hose failure summer',
-  publishedAt: '2026-08-26T12:00:00.000Z',
+  publishedAt: '2026-08-24T13:55:57.000Z',
   bodyBlocks: [
     {
       type: 'key_takeaways',
