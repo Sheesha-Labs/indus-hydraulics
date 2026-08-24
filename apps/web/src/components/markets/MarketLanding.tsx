@@ -393,9 +393,19 @@ export default function MarketLanding({
                   style={{ width: `${freightWidths[index]}%` }}
                 />
               </div>
-              <div className="mt-2 flex justify-between gap-5">
-                <span className="text-[12.5px] text-ih-muted">{mode.route}</span>
-                <span className="mono whitespace-nowrap text-[10px] uppercase tracking-[0.08em] text-ih-muted-2">
+              {/*
+                Route and use-case sit on one line from 640px up. Below that
+                they STACK. Held on one row they did two bad things on a phone,
+                both only on the markets with the longest use-case strings:
+                "Alternative when Mombasa is congested" is `whitespace-nowrap`,
+                so it ran off the right edge of the document at 320px (eight
+                markets did, by up to 58px), and the route beside it was
+                squeezed into a four-line ribbon three words wide. Neither is
+                visible above 375px, which is why it shipped.
+              */}
+              <div className="mt-2 flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between sm:gap-5">
+                <span className="min-w-0 text-[12.5px] text-ih-muted">{mode.route}</span>
+                <span className="mono text-[10px] uppercase tracking-[0.08em] text-ih-muted-2 sm:whitespace-nowrap">
                   {mode.useCase}
                 </span>
               </div>
