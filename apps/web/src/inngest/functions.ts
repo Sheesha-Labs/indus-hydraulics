@@ -2,6 +2,7 @@ import { inngest } from './client'
 import { scraperJobRun } from './scraperJob'
 import { productBlueprintGenerate } from './productBlueprint'
 import { purgeTrashedMedia } from './mediaPurge'
+import { gscDailySync } from './gscSync'
 import { db } from '@indus/db'
 import { assertTransition, resolveFromEmail, resolveReplyTo, scoreEntity, signQuoteAccessToken, type SeoEntityType } from '@indus/domain'
 import {
@@ -522,6 +523,7 @@ export const retryFailedEmails = inngest.createFunction(
 
 export const allFunctions = [
   recomputeHealthScores,
+  gscDailySync,
   purgeTrashedMedia,
   quoteExpiryReminder,
   quoteAutoExpiry,
