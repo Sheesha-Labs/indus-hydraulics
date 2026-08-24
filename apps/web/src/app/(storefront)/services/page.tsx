@@ -1,7 +1,8 @@
 import type { Metadata } from 'next'
 import { Fragment, type ReactNode } from 'react'
 import type { ServiceCaseCategory } from '@indus/db'
-import { lines, str, visibleList } from '@indus/domain'
+import Link from 'next/link'
+import { MANUFACTURING_PAGE, lines, str, visibleList } from '@indus/domain'
 import { pageMetadata } from '../../../lib/seo'
 import {
   categoryCounts,
@@ -124,6 +125,8 @@ export default async function ServicesIndexPage({ searchParams }: Props) {
     },
   }))
 
+  const capability = content.values('capability')
+
   const sections: Record<string, ReactNode> = {
     hero: (
       <ServicesHero
@@ -193,6 +196,61 @@ export default async function ServicesIndexPage({ searchParams }: Props) {
           </div>
         </section>
       ) : null,
+
+    /*
+      The route into /manufacturing.
+
+      It sits here rather than in the nav because the nav is editor-curated
+      data: a code-only link would have to be unioned into a DB-driven menu for
+      one page. This band is the same idea in the place the reader is already
+      asking the question — they have just scrolled a page of service case
+      studies and the next honest question is who makes the parts.
+
+      The three figures come from MANUFACTURING_PAGE, not from editable copy,
+      so the band cannot claim a workshop count the page itself contradicts.
+    */
+    capability: (
+      <section className="mx-auto max-w-[1440px] px-5 pb-16 sm:px-8 xl:px-12">
+        <Link
+          href={MANUFACTURING_PAGE.path}
+          className="group grid grid-cols-1 items-center gap-8 rounded-lg border border-ih-border bg-ih-steel-soft px-8 py-9 transition-colors hover:border-ih-accent lg:grid-cols-[1.35fr_1fr] lg:px-11"
+        >
+          <div>
+            <p className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">
+              {str(capability, 'eyebrow')}
+            </p>
+            <h2 className="mt-3 max-w-[560px] text-balance font-serif text-[26px] font-normal leading-[1.15] tracking-[-0.01em] sm:text-[30px]">
+              {str(capability, 'heading')}
+            </h2>
+            <p className="mt-2.5 max-w-[600px] text-[14px] leading-[1.6] text-ih-ink-2">
+              {str(capability, 'body')}
+            </p>
+          </div>
+
+          <div>
+            <dl className="grid grid-cols-3 gap-5">
+              {MANUFACTURING_PAGE.hero.stats.slice(0, 3).map((stat) => (
+                <div key={stat.label} className="border-t-2 border-ih-accent pt-3">
+                  <dt className="sr-only">{stat.label}</dt>
+                  <dd className="font-mono text-[24px] leading-none tracking-[-0.03em] tabular-nums">
+                    {stat.value}
+                  </dd>
+                  <p aria-hidden="true" className="mt-2 font-mono text-[10px] uppercase leading-[1.4] tracking-[0.1em] text-ih-muted">
+                    {stat.label}
+                  </p>
+                </div>
+              ))}
+            </dl>
+            {str(capability, 'cta_label') ? (
+              <span className="mt-6 inline-flex items-center gap-1.5 text-[13.5px] font-medium text-ih-accent group-hover:underline">
+                {str(capability, 'cta_label')}
+                <span aria-hidden="true">→</span>
+              </span>
+            ) : null}
+          </div>
+        </Link>
+      </section>
+    ),
 
     cta: (
       <ServicesCta

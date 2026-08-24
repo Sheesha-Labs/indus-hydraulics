@@ -12,10 +12,10 @@ import {
   SectionHead,
   Stat,
 } from '@indus/ui'
-import IndustryDrawingCta from './IndustryDrawingCta'
+import DrawingCta from '../designed/DrawingCta'
 import IndustryEnquiryForm from './IndustryEnquiryForm'
-import IndustryFigure from './IndustryFigure'
-import { ArrowRightIcon, CheckIcon, DocIcon, MailIcon } from './industry-icons'
+import DesignedFigure from '../designed/DesignedFigure'
+import { ArrowRightIcon, CheckIcon, DocIcon, MailIcon } from '../designed/icons'
 
 /**
  * The designed industry page — ten bands, one conversion.
@@ -66,7 +66,7 @@ export default function DesignedIndustryLanding({
   whatsappHref: string | null
   mailtoHref: string
 }) {
-  const { hero, architecture, buyers, locations, families, qc, risk, review, closing } = page
+  const { hero, architecture, buyers, locations, families, qc, risk, review, closing, related } = page
 
   return (
     <div>
@@ -85,7 +85,7 @@ export default function DesignedIndustryLanding({
             {/* Image first on a phone: the copy block is tall, and a reader who
                 has to scroll past three paragraphs to reach the photograph has
                 already decided what the page is without seeing it. */}
-            <IndustryFigure
+            <DesignedFigure
               image={hero.image}
               priority
               sizes="(max-width: 1023px) 100vw, 42vw"
@@ -117,14 +117,14 @@ export default function DesignedIndustryLanding({
                     <ArrowRightIcon />
                   </a>
                 </Button>
-                <IndustryDrawingCta
+                <DrawingCta
                   anchorId={ENQUIRY_ANCHOR}
                   fileInputId={FILE_INPUT_ID}
                   size="lg"
                   icon={<DocIcon />}
                 >
                   Submit drawing or BOM
-                </IndustryDrawingCta>
+                </DrawingCta>
               </div>
             </div>
           </div>
@@ -144,7 +144,7 @@ export default function DesignedIndustryLanding({
       {/* ─── 2 · ARCHITECTURE DIAGRAM ─────────────────────────────────── */}
       <section className={`${SECTION} ${BAND}`}>
         <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-[1.4fr_1fr] lg:gap-12">
-          <IndustryFigure
+          <DesignedFigure
             image={architecture.image}
             sizes="(max-width: 1023px) 100vw, 55vw"
             caption={architecture.caption}
@@ -197,7 +197,7 @@ export default function DesignedIndustryLanding({
         <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 xl:grid-cols-4">
           {locations.items.map((location) => (
             <Card key={location.number} className="flex flex-col">
-              <IndustryFigure
+              <DesignedFigure
                 image={location.image}
                 flush
                 sizes="(max-width: 639px) 100vw, (max-width: 1279px) 50vw, 24vw"
@@ -205,7 +205,7 @@ export default function DesignedIndustryLanding({
                 <Badge kind="navy" square className="absolute left-3 top-3 z-[1]">
                   {location.number}
                 </Badge>
-              </IndustryFigure>
+              </DesignedFigure>
 
               <div className="flex flex-1 flex-col gap-[11px] p-[22px]">
                 <h3 className="text-[17px] font-medium leading-[1.28] tracking-[-0.02em]">
@@ -255,7 +255,7 @@ export default function DesignedIndustryLanding({
         <div className="grid grid-cols-1 gap-5 xl:grid-cols-2">
           {families.items.map((family) => (
             <Card key={family.title} className="grid grid-cols-1 sm:grid-cols-[300px_minmax(0,1fr)]">
-              <IndustryFigure
+              <DesignedFigure
                 image={family.image}
                 flush
                 fill
@@ -304,14 +304,30 @@ export default function DesignedIndustryLanding({
           <p className="flex-1 text-[13.5px] leading-[1.6] text-ih-ink-2">
             <strong className="font-medium">{families.stripLabel}</strong> {families.strip}
           </p>
-          <IndustryDrawingCta
+          <DrawingCta
             anchorId={ENQUIRY_ANCHOR}
             fileInputId={FILE_INPUT_ID}
             kind="primary"
             iconAfter={<ArrowRightIcon />}
           >
             Submit drawing or BOM
-          </IndustryDrawingCta>
+          </DrawingCta>
+        </Card>
+
+        {/*
+          The sibling designed page. A reader deciding on these four families is
+          often the same one who wants to know how they are made, and the
+          manufacturing page is the only place on the site that answers it.
+        */}
+        <Card className="mt-5 flex flex-col gap-2 bg-ih-surface-2 p-5 sm:flex-row sm:items-center sm:justify-between sm:gap-6">
+          <p className="text-[13px] leading-[1.55] text-ih-ink-2">{related.body}</p>
+          <Link
+            href={related.href}
+            className="inline-flex shrink-0 items-center gap-1.5 text-[13px] font-medium text-ih-accent hover:text-ih-accent-hover"
+          >
+            {related.label}
+            <ArrowRightIcon size={14} />
+          </Link>
         </Card>
       </section>
 
@@ -323,7 +339,7 @@ export default function DesignedIndustryLanding({
         <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 xl:grid-cols-4">
           {qc.items.map((step) => (
             <div key={step.number}>
-              <IndustryFigure
+              <DesignedFigure
                 image={step.image}
                 caption={step.image.alt}
                 sizes="(max-width: 639px) 100vw, (max-width: 1279px) 50vw, 24vw"
@@ -386,7 +402,7 @@ export default function DesignedIndustryLanding({
               </Button>
             </div>
 
-            <IndustryFigure image={risk.image} sizes="(max-width: 1023px) 100vw, 34vw" />
+            <DesignedFigure image={risk.image} sizes="(max-width: 1023px) 100vw, 34vw" />
           </div>
         </div>
       </section>

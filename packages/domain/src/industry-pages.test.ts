@@ -1,9 +1,9 @@
 import { describe, expect, it } from 'vitest'
+import type { DesignedPageImage } from './designed-pages'
 import {
   DESIGNED_INDUSTRY_PAGES,
   designedIndustryPage,
   designedIndustrySlugs,
-  type IndustryImage,
 } from './industry-pages'
 
 /**
@@ -14,7 +14,7 @@ import {
  * option in the form that the server action would then reject.
  */
 
-function everyImage(): IndustryImage[] {
+function everyImage(): DesignedPageImage[] {
   return DESIGNED_INDUSTRY_PAGES.flatMap((page) => [
     page.hero.image,
     page.architecture.image,
