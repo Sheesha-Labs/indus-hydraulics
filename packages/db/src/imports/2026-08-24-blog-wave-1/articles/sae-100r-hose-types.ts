@@ -5,9 +5,19 @@ import type { BlogArticleSeed } from '../shared'
  * specifications, not a strength ladder — is evidenced entirely from our own
  * stocked range: R6 at 28 bar sits four designations above R2AT at 400 bar.
  *
- * Grades we do not stock are named but carry NO pressure figures. Publishing
- * a remembered number for a hose we have never handled is exactly the failure
- * this article warns readers about.
+ * §04 CORRECTION, 2026-08-24. As first published this section listed R3, R4,
+ * R8, R9, R10, R12, R16 and R17 as grades "we do not carry". Four of them —
+ * R3, R8, R12 and R17 — are active products in our own catalogue, so the
+ * article was telling readers we could not supply hose that was on sale on the
+ * same site. They now appear with the headline figures their ProductSpec rows
+ * actually carry, framed with the same warning the rest of the article makes
+ * about headline figures.
+ *
+ * R9, R10 and R16 stay named-but-unstocked: R16 and R19 exist as draft
+ * products and are not public, and R9's product row is draft too. Grades we do
+ * not stock still carry no pressure figures — publishing a remembered number
+ * for a hose we have never handled is exactly the failure this article warns
+ * readers about.
  */
 const ARTICLE: BlogArticleSeed = {
   slug: 'sae-100r-hose-types',
@@ -121,14 +131,31 @@ const ARTICLE: BlogArticleSeed = {
       html: 'Read the spiral rows across and the reason spiral construction exists becomes obvious: <strong>R13 holds 350 bar at every size it is made in, and R15 holds 420.</strong> The braided grades lose four fifths of their rating over the same range. That single difference is why large-bore high-pressure circuits are spiral and why substituting braid at −32 to save money is not a compromise, it is a mistake.',
     },
 
-    { type: 'section_head', number: '/04', title: 'The designations we do not stock.', anchor: 'not-stocked' },
+    { type: 'section_head', number: '/04', title: 'The rest of the range.', anchor: 'rest-of-range' },
     {
       type: 'paragraph',
-      html: 'The 100R series runs beyond the grades above — R3, R4, R8, R9, R10, R12, R16 and R17 all exist, and several are in common use. <strong>We are not going to publish pressure figures for hose we do not carry.</strong> Numbers for those grades vary between manufacturers, and a remembered figure printed on a supplier’s website is precisely the sort of thing that ends up specified into a machine.',
+      html: 'The 100R series runs well beyond the grades tabulated above, and four more of them are in our range: <strong>R3, R8, R12 and R17.</strong> They are not in the tables because we do not hold per-bore data for them in the same published form — only a headline figure, which is the very thing this article has spent four sections warning you about.',
+    },
+    {
+      type: 'comparison_table',
+      caption: 'Also stocked — headline working pressure, at the smallest bore in each range',
+      columns: ['Designation', 'Reinforcement', 'Headline pressure', 'Bore range'],
+      rows: [
+        { cells: ['SAE 100R3', 'Two textile braids', '85 bar', '1/4\u2033 \u2013 1.1/2\u2033'] },
+        { cells: ['SAE 100R8', 'Two synthetic-fibre braids', '350 bar', '1/8\u2033 \u2013 1\u2033'] },
+        { cells: ['SAE 100R12', 'Four alternating spiral wire layers', '280 bar', '3/8\u2033 \u2013 2\u2033'], highlight: true },
+        { cells: ['SAE 100R17', 'One or two braids, uniform-pressure', '210 bar', '1/4\u2033 \u2013 1\u2033'] },
+      ],
+    },
+    {
+      type: 'callout',
+      tone: 'warning',
+      title: 'Treat these four figures exactly as this article says to treat any headline.',
+      body: 'Each is the value at the smallest bore in that range, and each falls as the bore rises. R12 at 280 bar is not comparable with R13 at 350 bar until both are read at the same size. Ask us for the figure at your bore rather than working from the number in this table — that is what the number is for.',
     },
     {
       type: 'paragraph',
-      html: 'If you are working to one of those designations, the datasheet for the hose actually being fitted is the only source worth using. If you tell us the designation, the bore and the pressure, we will tell you which of the constructions we carry is a genuine equivalent — and say so plainly when none of them is.',
+      html: 'Beyond those, designations such as R9, R10 and R16 exist and are in common use, and we do not carry them. If you are working to one of those, the datasheet for the hose actually being fitted is the only source worth using. Tell us the designation, the bore and the pressure and we will say which construction in our range genuinely matches — and say so plainly when none of them does.',
     },
     {
       type: 'callout',
@@ -154,6 +181,7 @@ const ARTICLE: BlogArticleSeed = {
       html: 'Answer those four and the designation falls out at the end as a result. Start from the designation and you are choosing a hose by the order in which a committee happened to standardise it.',
     },
     { type: 'product_embed', heading: 'The grades in these tables', skus: ['IH-HOSE-R1-1SN', 'IH-HOSE-R2-2SN', 'IH-HOSE-R13', 'IH-HOSE-R15', 'IH-HOSE-R5', 'IH-HOSE-R7-TP'] },
+    { type: 'product_embed', heading: 'Also in the range', skus: ['IH-HOSE-R3', 'IH-HOSE-R8-TP', 'IH-HOSE-R12', 'IH-HOSE-R17'], note: 'Headline pressures only in the table above \u2014 ask for the figure at your bore.' },
     {
       type: 'faq_block',
       heading: 'Common questions',
