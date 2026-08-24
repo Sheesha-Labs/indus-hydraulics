@@ -294,7 +294,7 @@ export default function SiteHeaderClient({
                     <Link
                       href={href}
                       aria-current={isActive(href) ? 'page' : undefined}
-                      className={`flex items-center gap-1 border-b-[1.5px] py-1.5 text-[13.5px] transition-colors ${
+                      className={`flex shrink-0 items-center gap-1 whitespace-nowrap border-b-[1.5px] py-1.5 text-[13.5px] transition-colors ${
                         isActive(href) || isOpen
                           ? 'border-ih-accent text-ih-accent'
                           : 'text-ih-ink-2 hover:text-ih-ink border-transparent'
@@ -329,7 +329,15 @@ export default function SiteHeaderClient({
                   target={item.openInNewTab ? '_blank' : undefined}
                   rel={item.openInNewTab ? 'noopener noreferrer' : undefined}
                   aria-current={isActive(href) ? 'page' : undefined}
-                  className={`flex items-center border-b-[1.5px] py-1.5 text-[13.5px] transition-colors ${
+                  /*
+                    `whitespace-nowrap` and `shrink-0`: a nav item is a label,
+                    not a paragraph. Without these a two-word item ("Quality
+                    control") is shrunk by the flex row and wraps onto a second
+                    line, which drops it off the shared baseline and leaves the
+                    bar looking broken. Every label the menu has carried until
+                    now was one word, so nothing surfaced it.
+                  */
+                  className={`flex shrink-0 items-center whitespace-nowrap border-b-[1.5px] py-1.5 text-[13.5px] transition-colors ${
                     isActive(href)
                       ? 'border-ih-accent text-ih-accent'
                       : 'text-ih-ink-2 hover:text-ih-ink border-transparent'
