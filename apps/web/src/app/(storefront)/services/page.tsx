@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { Fragment, type ReactNode } from 'react'
 import type { ServiceCaseCategory } from '@indus/db'
 import Link from 'next/link'
-import { MANUFACTURING_PAGE, lines, str, visibleList } from '@indus/domain'
+import { MANUFACTURING_PAGE, QUALITY_CONTROL_PAGE, lines, str, visibleList } from '@indus/domain'
 import { pageMetadata } from '../../../lib/seo'
 import {
   categoryCounts,
@@ -211,10 +211,13 @@ export default async function ServicesIndexPage({ searchParams }: Props) {
     */
     capability: (
       <section className="mx-auto max-w-[1440px] px-5 pb-16 sm:px-8 xl:px-12">
-        <Link
-          href={MANUFACTURING_PAGE.path}
-          className="group grid grid-cols-1 items-center gap-8 rounded-lg border border-ih-border bg-ih-steel-soft px-8 py-9 transition-colors hover:border-ih-accent lg:grid-cols-[1.35fr_1fr] lg:px-11"
-        >
+        {/*
+          A plain container with two explicit links, NOT one card-wide anchor.
+          The band points at two pages now, and nesting a second link inside a
+          wrapping anchor is invalid markup that screen readers and browsers
+          disagree about how to resolve.
+        */}
+        <div className="grid grid-cols-1 items-center gap-8 rounded-lg border border-ih-border bg-ih-steel-soft px-8 py-9 lg:grid-cols-[1.35fr_1fr] lg:px-11">
           <div>
             <p className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">
               {str(capability, 'eyebrow')}
@@ -241,14 +244,28 @@ export default async function ServicesIndexPage({ searchParams }: Props) {
                 </div>
               ))}
             </dl>
-            {str(capability, 'cta_label') ? (
-              <span className="mt-6 inline-flex items-center gap-1.5 text-[13.5px] font-medium text-ih-accent group-hover:underline">
-                {str(capability, 'cta_label')}
-                <span aria-hidden="true">→</span>
-              </span>
-            ) : null}
+            <div className="mt-6 flex flex-wrap gap-x-6 gap-y-2">
+              {str(capability, 'cta_label') ? (
+                <Link
+                  href={MANUFACTURING_PAGE.path}
+                  className="inline-flex items-center gap-1.5 text-[13.5px] font-medium text-ih-accent hover:underline"
+                >
+                  {str(capability, 'cta_label')}
+                  <span aria-hidden="true">→</span>
+                </Link>
+              ) : null}
+              {str(capability, 'cta_label_quality') ? (
+                <Link
+                  href={QUALITY_CONTROL_PAGE.path}
+                  className="inline-flex items-center gap-1.5 text-[13.5px] font-medium text-ih-accent hover:underline"
+                >
+                  {str(capability, 'cta_label_quality')}
+                  <span aria-hidden="true">→</span>
+                </Link>
+              ) : null}
+            </div>
           </div>
-        </Link>
+        </div>
       </section>
     ),
 

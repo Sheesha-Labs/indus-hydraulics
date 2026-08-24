@@ -112,19 +112,26 @@ describe('the enquiry config', () => {
 })
 
 describe('cross-links', () => {
-  it('points at the sibling designed page, and it points back', () => {
-    // The two pages were built from the same handoff family and each is the
-    // other's most useful next click. A one-way link is the version that rots.
-    expect(page.related.href).toBe('/industries/data-center-liquid-cooling')
+  it('points at both sibling pages, and the data-centre page points back', () => {
+    // The three pages were built from the same handoff family and each is a
+    // useful next click from the others. A one-way link is the version that
+    // rots, so the reciprocal leg is asserted rather than assumed.
+    const hrefs = page.related.map((r) => r.href)
+    expect(hrefs).toContain('/industries/data-center-liquid-cooling')
+    expect(hrefs).toContain('/quality-control')
 
-    const sibling = DESIGNED_INDUSTRY_PAGES.find((p) => `/industries/${p.slug}` === page.related.href)
+    const sibling = DESIGNED_INDUSTRY_PAGES.find(
+      (p) => p.slug === 'data-center-liquid-cooling',
+    )
     expect(sibling).toBeDefined()
     expect(sibling?.related.href).toBe(page.path)
   })
 
-  it('sends the OEM button at a real internal path', () => {
-    // The designed label named a quality-control page the site does not have.
-    // Whatever it says, the href has to resolve.
-    expect(page.oem.ctaHref.startsWith('/')).toBe(true)
+  it('sends the OEM button at the quality-control page', () => {
+    // This button carried a narrowed label pointing at /services for as long as
+    // /quality-control did not exist. It does now, so the designed promise and
+    // the destination match again.
+    expect(page.oem.ctaHref).toBe('/quality-control')
+    expect(page.oem.ctaLabel).toContain('quality-control')
   })
 })

@@ -71,6 +71,10 @@ export const STATIC_SITEMAP_PATHS: StaticSitemapPath[] = [
   // long-tail ("ASME B16.11 forged fitting manufacturer") lands on. It changes
   // only when the partner's measured capability does, hence yearly.
   { path: '/manufacturing', priority: 0.8, changeFrequency: 'yearly' },
+  // The quality-control page. Same priority and cadence as manufacturing — it
+  // answers the other half of the supplier-evaluation question ("how do you
+  // prove it?") and changes only when the partner's inspection regime does.
+  { path: '/quality-control', priority: 0.8, changeFrequency: 'yearly' },
   // NOT /search. It is in DEFAULT_DISALLOW, and a sitemap entry for a
   // disallowed path is a contradiction, not a hedge. See the file header.
   //

@@ -142,8 +142,12 @@ export type ManufacturingPage = {
     readonly spec: readonly ManufacturingSpecRow[]
   }
   readonly closing: { readonly heading: string; readonly body: string }
-  /** The sibling page, cross-linked because the two are the same family. */
-  readonly related: { readonly label: string; readonly href: string; readonly body: string }
+  /** The sibling pages, cross-linked because the three are one family. */
+  readonly related: readonly {
+    readonly label: string
+    readonly href: string
+    readonly body: string
+  }[]
 }
 
 export const MANUFACTURING_PAGE: ManufacturingPage = {
@@ -375,14 +379,9 @@ export const MANUFACTURING_PAGE: ManufacturingPage = {
         icon: 'truck',
       },
     ],
-    /*
-      The design labels this "See quality-control capabilities" and points it at
-      a quality-control page. That page does not exist on this site — the same
-      gap the data-centre page hit. The label is narrowed to what /services
-      actually is. Restore the designed wording when the page is written.
-    */
-    ctaLabel: 'See our inspection and testing services',
-    ctaHref: '/services',
+    // The designed label and target, restored: /quality-control now exists.
+    ctaLabel: 'See quality-control capabilities',
+    ctaHref: '/quality-control',
   },
 
   build: {
@@ -421,11 +420,18 @@ export const MANUFACTURING_PAGE: ManufacturingPage = {
     body: 'Send the drawing and the standard it has to meet. We confirm the process route, inspection scope and documentation before we quote.',
   },
 
-  related: {
-    label: 'AI data centre liquid cooling',
-    href: '/industries/data-center-liquid-cooling',
-    body: 'The stainless valves, fittings and flanges this line produces for facility water, CDU and rack-manifold interfaces.',
-  },
+  related: [
+    {
+      label: 'Quality control',
+      href: '/quality-control',
+      body: 'What is tested at each of these stages, on what equipment, and which records ship with the batch.',
+    },
+    {
+      label: 'AI data centre liquid cooling',
+      href: '/industries/data-center-liquid-cooling',
+      body: 'The stainless valves, fittings and flanges this line produces for facility water, CDU and rack-manifold interfaces.',
+    },
+  ],
 }
 
 /**

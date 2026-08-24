@@ -13,7 +13,8 @@ import {
   Stat,
 } from '@indus/ui'
 import DrawingCta from '../designed/DrawingCta'
-import IndustryEnquiryForm from './IndustryEnquiryForm'
+import DesignedEnquiryForm from '../designed/DesignedEnquiryForm'
+import { submitIndustryEnquiry } from '../../app/(storefront)/industries/actions'
 import DesignedFigure from '../designed/DesignedFigure'
 import { ArrowRightIcon, CheckIcon, DocIcon, MailIcon } from '../designed/icons'
 
@@ -427,13 +428,35 @@ export default function DesignedIndustryLanding({
             ))}
           </HairlineGrid>
 
-          <IndustryEnquiryForm
-            industrySlug={page.slug}
+          <DesignedEnquiryForm
+            action={submitIndustryEnquiry}
+            hiddenFields={{ industrySlug: page.slug }}
             anchorId={ENQUIRY_ANCHOR}
             fileInputId={FILE_INPUT_ID}
             title={review.formTitle}
             body={review.formBody}
-            applications={review.applications}
+            choice={{
+              name: 'application',
+              label: 'Application',
+              options: review.applications,
+              // Empty by default so the choice is deliberate. A pre-selected
+              // first option is the one nobody notices is wrong until the
+              // enquiry has been routed to the wrong engineer.
+              defaultValue: '',
+            }}
+            description={{
+              name: 'description',
+              label: 'Project description',
+              placeholder:
+                'Material, sizes, end connections, quantity, inspection and documentation required',
+              hint: 'A drawing or BOM attached below counts instead.',
+            }}
+            attachments={{
+              label: 'Drop drawing, BOM or specification',
+              hint: 'PDF · DWG · DXF · STEP · XLSX · ZIP — up to 25 MB each',
+            }}
+            submitLabel="Get a quote"
+            confirmation="It is with the project desk. We review manufacturability, dimensions, end connections, material and the inspection scope before we quote, and come back within one business day. Anything you attached came through with it."
             spec={review.spec}
             contactEmail={contactEmail}
           />

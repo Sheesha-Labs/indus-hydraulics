@@ -506,16 +506,11 @@ const DATA_CENTRE_LIQUID_COOLING: DesignedIndustryPage = {
         record: 'Final inspection and packing record when specified',
       },
     ],
-    /*
-      The design labels this button "See inspection equipment and quality-control
-      capabilities" and points it at a quality-control page. That page does not
-      exist on this site, and shipping the designed label over /services would
-      promise the supplier's factory QC and deliver our workshop case studies.
-      The label is narrowed to what the destination actually is. Restore the
-      designed wording when the quality-control page is written.
-    */
-    ctaLabel: 'See our inspection and testing services',
-    ctaHref: '/services',
+    // The designed label and target, restored: /quality-control now exists and
+    // is exactly what this button promised — the inspection equipment and the
+    // quality-control regime behind these parts.
+    ctaLabel: 'See inspection equipment and quality-control capabilities',
+    ctaHref: '/quality-control',
     // 4/3, not the design's 3/4. The asset is a three-panel composite —
     // machining, inspection, packing — and a portrait crop keeps only the
     // middle panel, which would leave the alt text describing two things that
