@@ -43,6 +43,42 @@ export const DEFAULT_DISALLOW = [
   '/design',
 ] as const
 
+/**
+ * Query-string patterns kept out of the CRAWL, not just out of the index.
+ *
+ * Category pages expose filter and sort controls, and each one is a link. A
+ * single category page offers roughly 62 of them — brand facets crossed with
+ * sort orders — and there are 171 categories with products. Every one of those
+ * URLs already returns `noindex` with a canonical pointing back at the clean
+ * category, so none of them can ever be indexed. Google still fetches them.
+ *
+ * On a domain Google is rationing hard — 72 of 2,040 URLs indexed as of
+ * 2026-08-24 — thousands of fetches that cannot produce an indexable page is
+ * budget taken directly from the product pages that could.
+ *
+ * WHY THIS IS NOT `Disallow: /c/*?`
+ *
+ * That was the first version and it would have done real damage. Pagination
+ * lives on the same query string: a category page links 12 products and the
+ * rest are reached through `?page=2` and beyond. 513 of the 1,480 active
+ * products sit ONLY behind pagination, so blocking every `/c/` query string
+ * would have cut the sole internal-link path to a third of the catalogue —
+ * on a site whose problem is already that too little gets crawled.
+ *
+ * So the patterns below name the two parameters that produce nothing
+ * indexable, and leave `?page=` alone.
+ *
+ * These are wildcard MATCH patterns, not path prefixes. They are deliberately
+ * kept out of `DEFAULT_DISALLOW`, whose entries are prefixes that
+ * `isDisallowed` compares with `startsWith` — mixing the two kinds in one list
+ * would silently break that helper and the sitemap-contradiction test built on
+ * it.
+ */
+export const FACET_DISALLOW = [
+  '/c/*brands=',
+  '/c/*sort=',
+] as const
+
 /** One hand-listed sitemap entry: a site-relative path and its hints. */
 export type StaticSitemapPath = {
   path: string

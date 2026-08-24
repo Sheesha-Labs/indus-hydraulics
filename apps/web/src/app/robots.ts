@@ -1,7 +1,7 @@
 import type { MetadataRoute } from 'next'
 import { db } from '@indus/db'
 import { BASE_URL } from '../lib/seo'
-import { DEFAULT_DISALLOW } from '../lib/crawl-policy'
+import { DEFAULT_DISALLOW, FACET_DISALLOW } from '../lib/crawl-policy'
 
 /**
  * Serves /robots.txt from the admin-managed `SeoSetting.robotsTxt` value.
@@ -46,7 +46,12 @@ export default async function robots(): Promise<MetadataRoute.Robots> {
       // Crawl budget hygiene — the list lives in lib/crawl-policy beside the
       // sitemap's static paths, so the two cannot contradict each other. They
       // did: /search was disallowed here and listed in the sitemap.
-      disallow: [...DEFAULT_DISALLOW],
+      //
+      // FACET_DISALLOW is appended rather than merged into DEFAULT_DISALLOW
+      // because the two are different kinds of rule: prefixes versus wildcard
+      // match patterns. See the note on FACET_DISALLOW for why `?page=` is
+      // deliberately left crawlable.
+      disallow: [...DEFAULT_DISALLOW, ...FACET_DISALLOW],
     },
     sitemap: sitemapUrl,
   }
