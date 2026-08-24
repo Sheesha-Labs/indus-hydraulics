@@ -60,6 +60,8 @@ export const STOREFRONT_TAGS = {
   homepageHero: 'homepage-hero',
   /** Section documents behind Pages & Blocks. */
   pageContent: 'page-content',
+  /** Footer social profiles — the pill row and the Organization `sameAs`. */
+  footerSocials: 'footer-socials',
 } as const
 
 export type StorefrontTag = (typeof STOREFRONT_TAGS)[keyof typeof STOREFRONT_TAGS]
@@ -106,6 +108,26 @@ export function invalidateBlogPosts(): void {
 /** Store settings saved — footer contact details, legal name, logo. */
 export function invalidateStoreSettings(): void {
   purge(STOREFRONT_TAGS.storeSettings)
+}
+
+/**
+ * The Footer editor saved.
+ *
+ * Wider than the screen it is named after, because that one screen writes to
+ * four places: nav items in both footer menus, `store_settings`, and
+ * `footer_socials` — which the storefront layout also reads for the
+ * Organization JSON-LD's `sameAs`. Purging only the socials tag would leave a
+ * corrected phone number sitting behind the 300s store-settings window, and
+ * an editor who saves and sees nothing change is the failure this editor
+ * exists to remove.
+ */
+export function invalidateFooter(): void {
+  purge(
+    STOREFRONT_TAGS.footerSocials,
+    STOREFRONT_TAGS.storeSettings,
+    STOREFRONT_TAGS.seoSettings,
+    STOREFRONT_TAGS.navMenu
+  )
 }
 
 /** SEO settings saved — Organization / WebSite JSON-LD overrides. */

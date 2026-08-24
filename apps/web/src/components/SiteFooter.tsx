@@ -1,20 +1,32 @@
 import type React from 'react'
 import Link from 'next/link'
 import type { ResolvedNavItem } from '@indus/domain'
+import { resolveFooterLegalLine } from '@indus/domain'
 import BrandLockup from './BrandLockup'
+import SocialIcon from './SocialIcon'
 import { getNavMenu } from '../lib/navigation'
+import { getFooterSocials, type ResolvedFooterSocial } from '../lib/footer'
 import { getStoreSettings, type ResolvedStoreSettings } from '../lib/store-settings'
 
 export default async function SiteFooter() {
-  const [main, legal, settings] = await Promise.all([
+  const [main, legal, settings, socials] = await Promise.all([
     getNavMenu('footer_main'),
     getNavMenu('footer_legal'),
     getStoreSettings(),
+    getFooterSocials(),
   ])
 
   const cmsColumns = main?.items ?? []
   const legalLinks = legal?.items ?? []
   const year = new Date().getFullYear()
+  // Resolved here, not in the bottom bar below, because the fallback needs the
+  // legal entity and the year together and the bar should render a string.
+  const legalLine = resolveFooterLegalLine({
+    footerLegalLine: settings.footerLegalLine,
+    legalName: settings.legalName,
+    name: settings.name,
+    year,
+  })
 
   // Adaptive grid: Brand + N CMS columns + Contact. The column count is
   // editor-controlled, so the template is computed at render time. It is
@@ -31,7 +43,7 @@ export default async function SiteFooter() {
     <footer className="mt-auto bg-ih-navy text-[oklch(0.82_0.02_250)]">
       <div className="mx-auto max-w-[1440px] px-5 sm:px-8 xl:px-12 pb-7 pt-16">
         <div className="grid grid-cols-1 gap-10 md:[grid-template-columns:var(--footer-cols)]" style={gridStyle}>
-          <BrandBlock settings={settings} />
+          <BrandBlock settings={settings} socials={socials} />
           {cmsColumns.map((column) => (
             <FooterColumn key={column.id} column={column} />
           ))}
@@ -39,9 +51,7 @@ export default async function SiteFooter() {
         </div>
 
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mt-10 pt-8 border-t border-ih-navy-2">
-          <p className="font-mono text-[11px] text-[oklch(0.62_0.03_250)]">
-            © {year} {settings.name} Pvt. Ltd. All rights reserved.
-          </p>
+          <p className="font-mono text-[11px] text-[oklch(0.62_0.03_250)]">{legalLine}</p>
           {legalLinks.length > 0 && (
             <div className="flex gap-6 font-mono text-[11px] text-[oklch(0.68_0.03_250)]">
               {legalLinks.map((link) =>
@@ -65,7 +75,13 @@ export default async function SiteFooter() {
   )
 }
 
-function BrandBlock({ settings }: { settings: ResolvedStoreSettings }) {
+function BrandBlock({
+  settings,
+  socials,
+}: {
+  settings: ResolvedStoreSettings
+  socials: ResolvedFooterSocial[]
+}) {
   return (
     <div>
       {/*
@@ -89,6 +105,36 @@ function BrandBlock({ settings }: { settings: ResolvedStoreSettings }) {
       )}
       {settings.certificationLine && (
         <p className="mt-4 font-mono text-[11px] text-[oklch(0.68_0.03_250)]">{settings.certificationLine}</p>
+      )}
+      {socials.length > 0 && (
+        /*
+          No heading. The row is six recognisable marks under a wordmark, which
+          is a convention a visitor reads without being told what it is, and a
+          "Follow us" label above four icons is more chrome than content.
+        */
+        <ul className="mt-5 flex flex-wrap gap-2">
+          {socials.map((social) => (
+            <li key={social.id}>
+              <a
+                href={social.href}
+                target="_blank"
+                rel="noopener noreferrer me"
+                /*
+                  The accessible name lives here rather than on the icon: this
+                  anchor is what a screen reader announces, and the mark inside
+                  it is aria-hidden. 40px square meets the storefront's minimum
+                  hit target (CLAUDE.md §10.8) — the icon is 18px and the rest
+                  is the target.
+                */
+                aria-label={social.label}
+                title={social.label}
+                className="flex h-10 w-10 items-center justify-center rounded border border-ih-navy-2 hover:border-[oklch(0.82_0.02_250)] hover:text-white transition-colors"
+              >
+                <SocialIcon platform={social.platform} className="h-[18px] w-[18px]" />
+              </a>
+            </li>
+          ))}
+        </ul>
       )}
     </div>
   )

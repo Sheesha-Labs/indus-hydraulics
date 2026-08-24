@@ -13,6 +13,7 @@ export const ROUTE_LABELS: Record<string, { section: string; label: string }> = 
   customers: { section: 'Operations', label: 'Accounts' },
   pages: { section: 'Content', label: 'Pages & Blocks' },
   navigation: { section: 'Content', label: 'Navigation' },
+  footer: { section: 'Content', label: 'Footer' },
   seo: { section: 'Content', label: 'SEO & Search' },
   markets: { section: 'Content', label: 'Export markets' },
   users: { section: 'System', label: 'Users & Roles' },
