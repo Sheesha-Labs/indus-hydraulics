@@ -49,7 +49,7 @@ export default async function AdminSignInPage({ params, searchParams }: Props) {
         </div>
 
         <p className="text-center font-mono text-[11px] text-[oklch(0.62_0.03_250)] mt-6">
-          © {new Date().getFullYear()} Indus Hydraulics Pvt. Ltd.
+          © {new Date().getFullYear()} Indus Hydraulics
         </p>
       </div>
     </div>

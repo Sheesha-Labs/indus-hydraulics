@@ -15,14 +15,21 @@ import CompareTrayBadge from '../../components/CompareTrayBadge'
 import { BASE_URL, ORG_ID, SITE_NAME } from '../../lib/seo'
 import { areasServed, OFFICES } from '../../lib/site-locations'
 import { getStoreSettings } from '../../lib/store-settings'
+import { getFooterSocials } from '../../lib/footer'
 import { searchIconUrl } from '../../lib/brand-identity'
 
 /**
- * Optional, comma-separated list of social profile URLs surfaced as
- * `sameAs` on the Organization JSON-LD. Set in Vercel as
- * `NEXT_PUBLIC_SOCIAL_PROFILES`. Empty / unset = no sameAs.
+ * Legacy source for `sameAs`: a comma-separated list of profile URLs set in
+ * Vercel as `NEXT_PUBLIC_SOCIAL_PROFILES`.
+ *
+ * Superseded by the `footer_socials` rows behind /admin/footer, which the
+ * footer also draws — so the list a crawler reads and the row a visitor sees
+ * can no longer disagree, and the person who runs the accounts can edit it
+ * without deploy access. Kept as the fallback for exactly one case: the env
+ * var is set and nobody has opened the Footer editor yet, where dropping it
+ * would silently delete a live `sameAs`. Once rows exist they win outright.
  */
-function readSameAs(): string[] {
+function readSameAsFromEnv(): string[] {
   const raw = process.env.NEXT_PUBLIC_SOCIAL_PROFILES
   if (!raw) return []
   return raw
@@ -123,7 +130,11 @@ export default async function StorefrontLayout({ children }: { children: React.R
   // Pull admin-managed Org/WebSite JSON-LD overrides AND StoreSettings for
   // contact / legal details that flow into the Organization schema. Both
   // are cross-request cached.
-  const [seoSetting, settings] = await Promise.all([getSeoSetting(), getStoreSettings()])
+  const [seoSetting, settings, socials] = await Promise.all([
+    getSeoSetting(),
+    getStoreSettings(),
+    getFooterSocials(),
+  ])
 
   // The HQ office's address feeds the Organization PostalAddress (single
   // top-level address per Schema.org guidance). Branch offices get their
@@ -145,7 +156,7 @@ export default async function StorefrontLayout({ children }: { children: React.R
     description:
       'Industrial hydraulic components — pumps, cylinders, valves, hoses and consumables — for engineers who can’t afford downtime.',
     foundingDate: '2003',
-    sameAs: readSameAs(),
+    sameAs: socials.length > 0 ? socials.map((s) => s.href) : readSameAsFromEnv(),
     contact: { email: settings.contactEmail, telephone: settings.contactPhone },
     address: hq?.address ?? null,
     areaServed: areasServed(),

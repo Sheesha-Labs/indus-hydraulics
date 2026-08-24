@@ -1633,6 +1633,52 @@ model NavMenuItem {
   @@map("nav_menu_items")
 }
 
+/// A social profile: the pill row under the footer wordmark, and the entries in
+/// the Organization JSON-LD's `sameAs`.
+///
+/// ─── Why a table and not more nav menu items ───
+///
+/// A social link has no link TARGET in the site's sense — it never resolves to
+/// a Category, Brand or CmsPage, so every one of `NavMenuItem`'s six FK columns
+/// would sit null and its `linkType` would be permanently `custom_url`. What it
+/// does carry is a `platform`, which decides the icon drawn beside it; there is
+/// nowhere on `NavMenuItem` to put that.
+///
+/// ─── Why it also feeds sameAs ───
+///
+/// Before this table the storefront layout read `NEXT_PUBLIC_SOCIAL_PROFILES`,
+/// a comma-separated env var — so the one list Google reads to connect the
+/// site to its LinkedIn and Instagram was editable only by someone with Vercel
+/// access, and could silently disagree with whatever the footer showed. One
+/// row per profile means the two cannot drift, and the person who runs the
+/// accounts can add one.
+model FooterSocial {
+  id       String @id @default(uuid())
+  position Int    @default(0)
+
+  /// The network's own name — "LinkedIn". Drawn as the link's accessible name
+  /// and its tooltip; the visible mark is the platform icon.
+  label String
+
+  /// Which icon to draw. A stored choice rather than one sniffed from `href`'s
+  /// hostname, so a vanity domain or a redirect service still gets the right
+  /// mark. See FOOTER_SOCIAL_PLATFORMS in @indus/domain.
+  platform String @default("other")
+
+  /// Absolute URL. Relative hrefs are rejected in the editor: an entry here is
+  /// by definition off-site, and a relative one would emit a `sameAs` that
+  /// points the search engine back at us.
+  href String
+
+  isVisible Boolean @default(true)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([position])
+  @@map("footer_socials")
+}
+
 model SeoSetting {
   id                         String  @id @default(uuid())
   defaultMetaTitleTemplate   String?
@@ -1745,6 +1791,20 @@ model StoreSettings {
   contactEmail         String?
   contactHours         String?
   contactLocationLabel String?
+
+  // The copyright / entity line in the footer's bottom bar.
+  //
+  // Its own column rather than a template built from `name`, because the string
+  // the footer needs is not derivable from anything else here: the trading name
+  // is "Indus Hydraulics" and the entity is "Indus Hydraulic Power Trading LLC",
+  // and until this field existed the component split the difference by
+  // hardcoding `© {year} {name} Pvt. Ltd.` — an Indian company suffix on a UAE
+  // LLC, on every page of the site.
+  //
+  // `{year}` is substituted at render time so the line does not go stale on
+  // 1 January. Null falls back to `© {year} {legalName ?? name}. All rights
+  // reserved.`, which is right for an operator who never opens /admin/footer.
+  footerLegalLine String?
 
   // Legal entity (rendered on every quote PDF + email footer)
   legalName              String? // "Indus Hydraulic Power Trading LLC"

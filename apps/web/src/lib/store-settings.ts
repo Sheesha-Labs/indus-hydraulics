@@ -22,6 +22,12 @@ export type ResolvedStoreSettings = {
   contactEmail: string | null
   contactHours: string | null
   contactLocationLabel: string | null
+  /**
+   * The footer's bottom-bar line, as the editor typed it — `{year}` still
+   * unsubstituted. Resolve it with `resolveFooterLegalLine` from
+   * `@indus/domain`; null there yields a correct line from `legalName`.
+   */
+  footerLegalLine: string | null
   /** Legal entity name from StoreSettings.legalName. Used in Org JSON-LD. */
   legalName: string | null
   /** Registered address fields, used to assemble PostalAddress JSON-LD. */
@@ -58,6 +64,7 @@ const FALLBACK: ResolvedStoreSettings = {
   contactEmail: null,
   contactHours: null,
   contactLocationLabel: null,
+  footerLegalLine: null,
   legalName: null,
   registeredAddressLines: [],
   registeredCity: null,
@@ -80,6 +87,7 @@ const loadStoreSettings = unstable_cache(
           contactEmail: true,
           contactHours: true,
           contactLocationLabel: true,
+          footerLegalLine: true,
           logoMedia: { select: { storagePath: true } },
           logoStyle: true,
           footerLogoMedia: { select: { storagePath: true } },
@@ -116,6 +124,7 @@ const loadStoreSettings = unstable_cache(
       contactEmail: row.contactEmail,
       contactHours: row.contactHours,
       contactLocationLabel: row.contactLocationLabel,
+      footerLegalLine: row.footerLegalLine,
       legalName: row.legalName,
       registeredAddressLines: lines,
       registeredCity: row.registeredCity,

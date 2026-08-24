@@ -141,6 +141,10 @@ const STOREFRONT_LINK_FILES = new Set([
   // Menu items point at public routes by design; the admin only previews them.
   'app/admin/(shell)/navigation/actions.ts',
   'app/admin/(shell)/navigation/[menuSlug]/page.tsx',
+  // Same job on the footer's two menus: the sublabel under a picked target is
+  // the public URL the link will resolve to, shown so an editor can tell two
+  // similarly-named categories apart.
+  'app/admin/(shell)/footer/page.tsx',
 ])
 
 function scanTemplateLiterals(): Hit[] {

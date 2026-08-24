@@ -55,7 +55,7 @@ export default async function ActivatePage({ searchParams }: Props) {
         )}
 
         <p className="mt-6 text-center font-mono text-[11px] text-[oklch(0.62_0.03_250)]">
-          © {new Date().getFullYear()} Indus Hydraulics Pvt. Ltd.
+          © {new Date().getFullYear()} Indus Hydraulics
         </p>
       </div>
     </div>
