@@ -1447,6 +1447,10 @@ model BlogCategory {
   description String?
   /// Intro copy rendered above the article list on the hub page.
   heroCopy    String?
+  /// Block-authored hub body, same union as BlogPost.bodyBlocks. Rendered
+  /// between the header and the article grid. Null renders no body, which is
+  /// what every hub did before the column existed.
+  bodyBlocks  Json?
   position    Int     @default(0)
   isPublished Boolean @default(true)
   imageId     String?
