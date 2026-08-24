@@ -11,7 +11,7 @@ const ARTICLE: BlogArticleSeed = {
   seoDescription:
     'Why hydraulic hose reinforcement corrodes faster in coastal UAE conditions, how overnight condensation contributes, and what changes in inspection and replacement practice.',
   focusKeyword: 'hydraulic hose corrosion coastal',
-  publishedAt: '2026-08-26T10:30:00.000Z',
+  publishedAt: '2026-08-24T13:55:54.000Z',
   bodyBlocks: [
     {
       type: 'key_takeaways',

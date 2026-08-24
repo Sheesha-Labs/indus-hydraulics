@@ -11,7 +11,7 @@ const ARTICLE: BlogArticleSeed = {
   seoDescription:
     'The details that let a hose supplier quote first time: bore, length, both ends, grade and quantity. What each one settles, and how to send them when you only have the old hose.',
   focusKeyword: 'hydraulic hose quote uae',
-  publishedAt: '2026-08-28T09:30:00.000Z',
+  publishedAt: '2026-08-24T15:18:41.000Z',
   bodyBlocks: [
     {
       type: 'key_takeaways',

@@ -11,7 +11,7 @@ const ARTICLE: BlogArticleSeed = {
   seoDescription:
     'Hydraulic hose on container handling equipment: spreader circuits, telescoping booms, salt air corrosion and planning replacement around a terminal that does not stop.',
   focusKeyword: 'port equipment hydraulic hose',
-  publishedAt: '2026-08-27T12:00:00.000Z',
+  publishedAt: '2026-08-24T14:32:10.000Z',
   bodyBlocks: [
     {
       type: 'key_takeaways',

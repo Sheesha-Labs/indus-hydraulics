@@ -11,7 +11,7 @@ const ARTICLE: BlogArticleSeed = {
   seoDescription:
     'Diagnosing backhoe loader hose failures: loader end against excavator end, stabiliser and swing circuits, and how to specify a replacement without a dealer part number.',
   focusKeyword: 'backhoe hydraulic hose',
-  publishedAt: '2026-08-27T10:00:00.000Z',
+  publishedAt: '2026-08-24T14:32:06.000Z',
   bodyBlocks: [
     {
       type: 'key_takeaways',

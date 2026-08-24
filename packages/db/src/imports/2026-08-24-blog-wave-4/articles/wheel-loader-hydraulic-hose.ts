@@ -11,7 +11,7 @@ const ARTICLE: BlogArticleSeed = {
   seoDescription:
     'Identifying a failed wheel loader hydraulic circuit from the symptom: lift, tilt, steering or brake. Where the hoses run, which fail first, and how to specify a replacement.',
   focusKeyword: 'wheel loader hydraulic hose',
-  publishedAt: '2026-08-27T09:00:00.000Z',
+  publishedAt: '2026-08-24T14:32:04.000Z',
   bodyBlocks: [
     {
       type: 'key_takeaways',

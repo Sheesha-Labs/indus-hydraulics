@@ -11,7 +11,7 @@ const ARTICLE: BlogArticleSeed = {
   seoDescription:
     'Why sand accelerates hydraulic hose cover wear, why a clamp can make it worse, and how to choose between sleeving, spiral guard and re-routing on a desert site.',
   focusKeyword: 'hose sand abrasion protection',
-  publishedAt: '2026-08-26T10:00:00.000Z',
+  publishedAt: '2026-08-24T13:55:53.000Z',
   bodyBlocks: [
     {
       type: 'key_takeaways',

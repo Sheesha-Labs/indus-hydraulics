@@ -11,7 +11,7 @@ const ARTICLE: BlogArticleSeed = {
   seoDescription:
     'How UV and ozone crack hydraulic hose covers, how to tell the two apart from where the cracks appear, and which cover specifications actually resist them.',
   focusKeyword: 'hydraulic hose uv damage',
-  publishedAt: '2026-08-26T09:30:00.000Z',
+  publishedAt: '2026-08-24T13:55:52.000Z',
   bodyBlocks: [
     {
       type: 'key_takeaways',

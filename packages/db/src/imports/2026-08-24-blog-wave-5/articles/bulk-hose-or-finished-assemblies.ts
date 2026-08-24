@@ -11,7 +11,7 @@ const ARTICLE: BlogArticleSeed = {
   seoDescription:
     'When to buy hydraulic hose by the metre and crimp in-house, when to buy finished assemblies, and what in-house crimping actually requires beyond a machine.',
   focusKeyword: 'hydraulic hose per meter',
-  publishedAt: '2026-08-28T11:30:00.000Z',
+  publishedAt: '2026-08-24T15:18:45.000Z',
   bodyBlocks: [
     {
       type: 'key_takeaways',

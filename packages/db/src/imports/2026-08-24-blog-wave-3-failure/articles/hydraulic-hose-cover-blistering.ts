@@ -11,7 +11,7 @@ const ARTICLE: BlogArticleSeed = {
   seoDescription:
     'Why hydraulic hose covers blister or bubble: gas permeation through the tube, trapped fluid from a tube pinhole, and external heat. How to tell which, and which pin-pricked covers are normal.',
   focusKeyword: 'hydraulic hose blistering',
-  publishedAt: '2026-08-25T09:30:00.000Z',
+  publishedAt: '2026-08-24T13:42:08.000Z',
   bodyBlocks: [
     {
       type: 'key_takeaways',

@@ -11,7 +11,7 @@ const ARTICLE: BlogArticleSeed = {
   seoDescription:
     'Why a twisted hydraulic hose fails early, how the printed layline makes the twist visible in seconds, and how to tighten a fitting without putting one in.',
   focusKeyword: 'hydraulic hose twist installation',
-  publishedAt: '2026-08-25T11:00:00.000Z',
+  publishedAt: '2026-08-24T13:42:11.000Z',
   bodyBlocks: [
     {
       type: 'key_takeaways',

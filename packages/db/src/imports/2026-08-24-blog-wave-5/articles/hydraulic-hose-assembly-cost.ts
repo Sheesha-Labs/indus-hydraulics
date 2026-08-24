@@ -11,7 +11,7 @@ const ARTICLE: BlogArticleSeed = {
   seoDescription:
     'The factors that determine what a hydraulic hose assembly costs: construction, bore, fitting count and type, material, certification and quantity. Where to save and where not to.',
   focusKeyword: 'hydraulic hose price uae',
-  publishedAt: '2026-08-28T10:00:00.000Z',
+  publishedAt: '2026-08-24T15:18:42.000Z',
   bodyBlocks: [
     {
       type: 'key_takeaways',

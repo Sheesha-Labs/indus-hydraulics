@@ -11,7 +11,7 @@ const ARTICLE: BlogArticleSeed = {
   seoDescription:
     'Which mobile crane hydraulic circuits are safety-critical, why holding valves matter, what certification and traceability a lifting machine needs, and how to specify a replacement.',
   focusKeyword: 'mobile crane hydraulic hose',
-  publishedAt: '2026-08-27T09:30:00.000Z',
+  publishedAt: '2026-08-24T14:32:05.000Z',
   bodyBlocks: [
     {
       type: 'key_takeaways',

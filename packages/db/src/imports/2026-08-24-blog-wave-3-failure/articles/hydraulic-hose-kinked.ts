@@ -11,7 +11,7 @@ const ARTICLE: BlogArticleSeed = {
   seoDescription:
     'Why hydraulic hoses kink at the fitting, what minimum bend radius actually means, and the two fixes that work: an elbow fitting or a compact construction.',
   focusKeyword: 'hydraulic hose kink',
-  publishedAt: '2026-08-25T11:30:00.000Z',
+  publishedAt: '2026-08-24T13:42:12.000Z',
   bodyBlocks: [
     {
       type: 'key_takeaways',

@@ -17,7 +17,7 @@ const ARTICLE: BlogArticleSeed = {
   seoDescription:
     'The method for finding a genuine equivalent to a hydraulic hose or fitting: what has to match, what a designation does not settle, and why online cross-reference tables are unreliable.',
   focusKeyword: 'hydraulic hose cross reference',
-  publishedAt: '2026-08-28T09:00:00.000Z',
+  publishedAt: '2026-08-24T15:18:40.000Z',
   bodyBlocks: [
     {
       type: 'key_takeaways',

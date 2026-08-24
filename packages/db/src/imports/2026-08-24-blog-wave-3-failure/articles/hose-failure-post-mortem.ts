@@ -11,7 +11,7 @@ const ARTICLE: BlogArticleSeed = {
   seoDescription:
     'A practical post-mortem for a failed hydraulic hose assembly: what to record, what to photograph, what to cut open, and how to tell a build fault from an installation fault.',
   focusKeyword: 'hose failure report template',
-  publishedAt: '2026-08-25T13:30:00.000Z',
+  publishedAt: '2026-08-24T13:42:16.000Z',
   bodyBlocks: [
     {
       type: 'key_takeaways',

@@ -11,7 +11,7 @@ const ARTICLE: BlogArticleSeed = {
   seoDescription:
     'How to select hose for desalination and water treatment duty: seawater intake, concentrated brine, dosing lines and clean-in-place chemicals each need different compatibility.',
   focusKeyword: 'desalination plant hose',
-  publishedAt: '2026-08-26T12:30:00.000Z',
+  publishedAt: '2026-08-24T13:55:58.000Z',
   bodyBlocks: [
     {
       type: 'key_takeaways',

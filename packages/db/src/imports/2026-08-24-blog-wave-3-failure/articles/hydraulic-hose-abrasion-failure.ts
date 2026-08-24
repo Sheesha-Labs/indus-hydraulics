@@ -11,7 +11,7 @@ const ARTICLE: BlogArticleSeed = {
   seoDescription:
     'How to read an abrasion wear pattern on a hydraulic hose, find the rub point that caused it, and choose between re-routing, clamping and sleeving.',
   focusKeyword: 'hydraulic hose abrasion protection',
-  publishedAt: '2026-08-25T10:30:00.000Z',
+  publishedAt: '2026-08-24T13:42:10.000Z',
   bodyBlocks: [
     {
       type: 'key_takeaways',

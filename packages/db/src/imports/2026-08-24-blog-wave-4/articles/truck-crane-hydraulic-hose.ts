@@ -11,7 +11,7 @@ const ARTICLE: BlogArticleSeed = {
   seoDescription:
     'Why lorry loader and truck crane hoses fail: folded transit position, telescoping sections, stabiliser exposure and road debris. How to specify replacements.',
   focusKeyword: 'truck crane hydraulic hose',
-  publishedAt: '2026-08-27T11:00:00.000Z',
+  publishedAt: '2026-08-24T14:32:08.000Z',
   bodyBlocks: [
     {
       type: 'key_takeaways',
