@@ -19,17 +19,23 @@ type Props = { params: Promise<{ slug: string }> }
 /**
  * Draft review for an export-market page.
  *
- * WHY THIS EXISTS. Forty-four markets are written and held back because their
- * regulatory copy — conformity schemes, document owners, sequencing, transit
- * bands — has not been checked by the client's forwarder. Somebody has to read
- * each one before it goes live, and nobody is going to review 44 markets as
- * TypeScript records. This renders the real page, exactly as the public would
- * see it, with a band saying what it is.
+ * WHY THIS EXISTS. A market that is written but not `released` renders the
+ * plain layout on the storefront, so there is nowhere public to read the
+ * designed page before it goes live — and nobody is going to review a market
+ * as a TypeScript record. This renders the real page, exactly as the public
+ * would see it, with a band saying what it is.
+ *
+ * All 126 markets are released as of 2026-08-24, so today every preview here
+ * says "Live". The route stays because the next market written lands held, and
+ * because it is the only surface that shows a market's bands as arranged
+ * rather than as a form. It is reached from the market's editor under
+ * Content · Pages & Blocks · Export markets; there is no separate admin
+ * section for markets any more.
  *
  * WHY IT IS ON /admin RATHER THAN THE STOREFRONT. The obvious version — check
  * for a staff session inside the storefront route — reads cookies, and reading
- * cookies opts the route out of static rendering. The 44 unreleased markets
- * would have lost their ISR cache to serve a page almost nobody requests. Here
+ * cookies opts the route out of static rendering. Every unreleased market
+ * would have lost its ISR cache to serve a page almost nobody requests. Here
  * the access control is `proxy.ts`'s default-deny on `/admin`, the route is
  * dynamic anyway, and the storefront stays entirely static.
  *
@@ -45,6 +51,7 @@ export default async function MarketDraftPreviewPage({ params }: Props) {
   if (!market || !page) notFound()
 
   const isReleased = releasedMarketPage(slug) !== undefined
+  const pending = pendingMarketPageSlugs().length
 
   const [clusters, brands, settings, content] = await Promise.all([
     marketCatalogueClusters(),
@@ -65,9 +72,14 @@ export default async function MarketDraftPreviewPage({ params }: Props) {
             {page.regulatoryCopy === 'verified' ? 'verified' : 'NOT verified by the forwarder'}
           </p>
           <span className="mono text-[11px] uppercase tracking-[0.1em] text-ih-warning-ink">
-            {pendingMarketPageSlugs().length} markets awaiting review ·{' '}
-            <Link href="/admin/markets" className="underline underline-offset-2">
-              review queue
+            {/* The count is only news while something is held; at zero it is
+                noise on every preview. The edit link is always useful. */}
+            {pending > 0 ? `${pending} markets awaiting review · ` : ''}
+            <Link
+              href={`/admin/pages/sub/market/${slug}`}
+              className="underline underline-offset-2"
+            >
+              edit bands
             </Link>
           </span>
         </div>

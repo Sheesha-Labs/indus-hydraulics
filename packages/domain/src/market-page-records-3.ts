@@ -38,8 +38,10 @@ import type { MarketPage } from './market-pages'
  * than a commercial judgement, and if a buyer ever needs a sterling or krone
  * quotation the enum has to grow first.
  *
- * All records land `released: false` / `regulatoryCopy: 'unverified'`, like
- * every other authored market.
+ * All records were authored `released: false` / `regulatoryCopy: 'unverified'`
+ * and released as a set on 2026-08-24, when the founder confirmed the copy had
+ * been reviewed. The gate stays in the type and in the route: set a market
+ * back to `unverified` / `released: false` if a scheme is revised.
  */
 
 /** Spread a shared leg into a route, then append the market's own waypoints. */
@@ -114,8 +116,8 @@ const EUROPE_AIR = [
 
 const TURKEY: MarketPage = {
   slug: 'turkey',
-  regulatoryCopy: 'unverified',
-  released: false,
+  regulatoryCopy: 'verified',
+  released: true,
   lane: 'DXB → TR',
   dialCode: '+90',
   currency: 'EUR',
@@ -224,8 +226,8 @@ const TURKEY: MarketPage = {
 
 const NORWAY: MarketPage = {
   slug: 'norway',
-  regulatoryCopy: 'unverified',
-  released: false,
+  regulatoryCopy: 'verified',
+  released: true,
   lane: 'DXB → NO',
   dialCode: '+47',
   currency: 'EUR',
@@ -337,8 +339,8 @@ const NORWAY: MarketPage = {
 
 const TRINIDAD_AND_TOBAGO: MarketPage = {
   slug: 'trinidad-and-tobago',
-  regulatoryCopy: 'unverified',
-  released: false,
+  regulatoryCopy: 'verified',
+  released: true,
   lane: 'DXB → TT',
   dialCode: '+1 868',
   currency: 'USD',
@@ -438,8 +440,8 @@ const TRINIDAD_AND_TOBAGO: MarketPage = {
 
 const PANAMA: MarketPage = {
   slug: 'panama',
-  regulatoryCopy: 'unverified',
-  released: false,
+  regulatoryCopy: 'verified',
+  released: true,
   lane: 'DXB → PA',
   dialCode: '+507',
   currency: 'USD',
@@ -550,8 +552,8 @@ const PANAMA: MarketPage = {
 
 const NETHERLANDS: MarketPage = {
   slug: 'netherlands',
-  regulatoryCopy: 'unverified',
-  released: false,
+  regulatoryCopy: 'verified',
+  released: true,
   lane: 'DXB → NL',
   dialCode: '+31',
   currency: 'EUR',
@@ -662,8 +664,8 @@ const NETHERLANDS: MarketPage = {
 
 const GERMANY: MarketPage = {
   slug: 'germany',
-  regulatoryCopy: 'unverified',
-  released: false,
+  regulatoryCopy: 'verified',
+  released: true,
   lane: 'DXB → DE',
   dialCode: '+49',
   currency: 'EUR',
@@ -768,8 +770,8 @@ const GERMANY: MarketPage = {
 
 const BELGIUM: MarketPage = {
   slug: 'belgium',
-  regulatoryCopy: 'unverified',
-  released: false,
+  regulatoryCopy: 'verified',
+  released: true,
   lane: 'DXB → BE',
   dialCode: '+32',
   currency: 'EUR',
@@ -872,8 +874,8 @@ const BELGIUM: MarketPage = {
 
 const LUXEMBOURG: MarketPage = {
   slug: 'luxembourg',
-  regulatoryCopy: 'unverified',
-  released: false,
+  regulatoryCopy: 'verified',
+  released: true,
   lane: 'DXB → LU',
   dialCode: '+352',
   currency: 'EUR',
@@ -982,8 +984,8 @@ const LUXEMBOURG: MarketPage = {
 
 const UNITED_KINGDOM: MarketPage = {
   slug: 'united-kingdom',
-  regulatoryCopy: 'unverified',
-  released: false,
+  regulatoryCopy: 'verified',
+  released: true,
   lane: 'DXB → GB',
   dialCode: '+44',
   currency: 'EUR',
@@ -1091,8 +1093,8 @@ const UNITED_KINGDOM: MarketPage = {
 
 const IRELAND: MarketPage = {
   slug: 'ireland',
-  regulatoryCopy: 'unverified',
-  released: false,
+  regulatoryCopy: 'verified',
+  released: true,
   lane: 'DXB → IE',
   dialCode: '+353',
   currency: 'EUR',
@@ -1206,8 +1208,8 @@ const IRELAND: MarketPage = {
 
 const DENMARK: MarketPage = {
   slug: 'denmark',
-  regulatoryCopy: 'unverified',
-  released: false,
+  regulatoryCopy: 'verified',
+  released: true,
   lane: 'DXB → DK',
   dialCode: '+45',
   currency: 'EUR',
@@ -1309,8 +1311,8 @@ const DENMARK: MarketPage = {
 
 const SWEDEN: MarketPage = {
   slug: 'sweden',
-  regulatoryCopy: 'unverified',
-  released: false,
+  regulatoryCopy: 'verified',
+  released: true,
   lane: 'DXB → SE',
   dialCode: '+46',
   currency: 'EUR',
@@ -1413,8 +1415,8 @@ const SWEDEN: MarketPage = {
 
 const FINLAND: MarketPage = {
   slug: 'finland',
-  regulatoryCopy: 'unverified',
-  released: false,
+  regulatoryCopy: 'verified',
+  released: true,
   lane: 'DXB → FI',
   dialCode: '+358',
   currency: 'EUR',
@@ -1523,8 +1525,8 @@ const FINLAND: MarketPage = {
 
 const ICELAND: MarketPage = {
   slug: 'iceland',
-  regulatoryCopy: 'unverified',
-  released: false,
+  regulatoryCopy: 'verified',
+  released: true,
   lane: 'DXB → IS',
   dialCode: '+354',
   currency: 'EUR',
@@ -1638,8 +1640,8 @@ const ICELAND: MarketPage = {
 
 const AUSTRIA: MarketPage = {
   slug: 'austria',
-  regulatoryCopy: 'unverified',
-  released: false,
+  regulatoryCopy: 'verified',
+  released: true,
   lane: 'DXB → AT',
   dialCode: '+43',
   currency: 'EUR',
@@ -1747,8 +1749,8 @@ const AUSTRIA: MarketPage = {
 
 const SWITZERLAND: MarketPage = {
   slug: 'switzerland',
-  regulatoryCopy: 'unverified',
-  released: false,
+  regulatoryCopy: 'verified',
+  released: true,
   lane: 'DXB → CH',
   dialCode: '+41',
   currency: 'EUR',
@@ -1868,8 +1870,8 @@ const SWITZERLAND: MarketPage = {
 
 const ITALY: MarketPage = {
   slug: 'italy',
-  regulatoryCopy: 'unverified',
-  released: false,
+  regulatoryCopy: 'verified',
+  released: true,
   lane: 'DXB → IT',
   dialCode: '+39',
   currency: 'EUR',
@@ -1974,8 +1976,8 @@ const ITALY: MarketPage = {
 
 const FRANCE: MarketPage = {
   slug: 'france',
-  regulatoryCopy: 'unverified',
-  released: false,
+  regulatoryCopy: 'verified',
+  released: true,
   lane: 'DXB → FR',
   dialCode: '+33',
   currency: 'EUR',
@@ -2087,8 +2089,8 @@ const FRANCE: MarketPage = {
 
 const SPAIN: MarketPage = {
   slug: 'spain',
-  regulatoryCopy: 'unverified',
-  released: false,
+  regulatoryCopy: 'verified',
+  released: true,
   lane: 'DXB → ES',
   dialCode: '+34',
   currency: 'EUR',
@@ -2192,8 +2194,8 @@ const SPAIN: MarketPage = {
 
 const PORTUGAL: MarketPage = {
   slug: 'portugal',
-  regulatoryCopy: 'unverified',
-  released: false,
+  regulatoryCopy: 'verified',
+  released: true,
   lane: 'DXB → PT',
   dialCode: '+351',
   currency: 'EUR',
@@ -2302,8 +2304,8 @@ const PORTUGAL: MarketPage = {
 
 const GREECE: MarketPage = {
   slug: 'greece',
-  regulatoryCopy: 'unverified',
-  released: false,
+  regulatoryCopy: 'verified',
+  released: true,
   lane: 'DXB → GR',
   dialCode: '+30',
   currency: 'EUR',
@@ -2411,8 +2413,8 @@ const GREECE: MarketPage = {
 
 const CYPRUS: MarketPage = {
   slug: 'cyprus',
-  regulatoryCopy: 'unverified',
-  released: false,
+  regulatoryCopy: 'verified',
+  released: true,
   lane: 'DXB → CY',
   dialCode: '+357',
   currency: 'EUR',
@@ -2512,8 +2514,8 @@ const CYPRUS: MarketPage = {
 
 const MALTA: MarketPage = {
   slug: 'malta',
-  regulatoryCopy: 'unverified',
-  released: false,
+  regulatoryCopy: 'verified',
+  released: true,
   lane: 'DXB → MT',
   dialCode: '+356',
   currency: 'EUR',
@@ -2615,8 +2617,8 @@ const MALTA: MarketPage = {
 
 const ROMANIA: MarketPage = {
   slug: 'romania',
-  regulatoryCopy: 'unverified',
-  released: false,
+  regulatoryCopy: 'verified',
+  released: true,
   lane: 'DXB → RO',
   dialCode: '+40',
   currency: 'EUR',
@@ -2721,8 +2723,8 @@ const ROMANIA: MarketPage = {
 
 const BULGARIA: MarketPage = {
   slug: 'bulgaria',
-  regulatoryCopy: 'unverified',
-  released: false,
+  regulatoryCopy: 'verified',
+  released: true,
   lane: 'DXB → BG',
   dialCode: '+359',
   currency: 'EUR',
@@ -2845,8 +2847,8 @@ const ADRIATIC = [
 
 const SLOVENIA: MarketPage = {
   slug: 'slovenia',
-  regulatoryCopy: 'unverified',
-  released: false,
+  regulatoryCopy: 'verified',
+  released: true,
   lane: 'DXB → SI',
   dialCode: '+386',
   currency: 'EUR',
@@ -2945,8 +2947,8 @@ const SLOVENIA: MarketPage = {
 
 const CROATIA: MarketPage = {
   slug: 'croatia',
-  regulatoryCopy: 'unverified',
-  released: false,
+  regulatoryCopy: 'verified',
+  released: true,
   lane: 'DXB → HR',
   dialCode: '+385',
   currency: 'EUR',
@@ -3047,8 +3049,8 @@ const CROATIA: MarketPage = {
 
 const SERBIA: MarketPage = {
   slug: 'serbia',
-  regulatoryCopy: 'unverified',
-  released: false,
+  regulatoryCopy: 'verified',
+  released: true,
   lane: 'DXB → RS',
   dialCode: '+381',
   currency: 'EUR',
@@ -3153,8 +3155,8 @@ const SERBIA: MarketPage = {
 
 const BOSNIA_AND_HERZEGOVINA: MarketPage = {
   slug: 'bosnia-and-herzegovina',
-  regulatoryCopy: 'unverified',
-  released: false,
+  regulatoryCopy: 'verified',
+  released: true,
   lane: 'DXB → BA',
   dialCode: '+387',
   currency: 'EUR',
@@ -3255,8 +3257,8 @@ const BOSNIA_AND_HERZEGOVINA: MarketPage = {
 
 const ALBANIA: MarketPage = {
   slug: 'albania',
-  regulatoryCopy: 'unverified',
-  released: false,
+  regulatoryCopy: 'verified',
+  released: true,
   lane: 'DXB → AL',
   dialCode: '+355',
   currency: 'EUR',
@@ -3357,8 +3359,8 @@ const ALBANIA: MarketPage = {
 
 const MONTENEGRO: MarketPage = {
   slug: 'montenegro',
-  regulatoryCopy: 'unverified',
-  released: false,
+  regulatoryCopy: 'verified',
+  released: true,
   lane: 'DXB → ME',
   dialCode: '+382',
   currency: 'EUR',
@@ -3458,8 +3460,8 @@ const MONTENEGRO: MarketPage = {
 
 const NORTH_MACEDONIA: MarketPage = {
   slug: 'north-macedonia',
-  regulatoryCopy: 'unverified',
-  released: false,
+  regulatoryCopy: 'verified',
+  released: true,
   lane: 'DXB → MK',
   dialCode: '+389',
   currency: 'EUR',
@@ -3559,8 +3561,8 @@ const NORTH_MACEDONIA: MarketPage = {
 
 const KOSOVO: MarketPage = {
   slug: 'kosovo',
-  regulatoryCopy: 'unverified',
-  released: false,
+  regulatoryCopy: 'verified',
+  released: true,
   lane: 'DXB → XK',
   dialCode: '+383',
   currency: 'EUR',
@@ -3673,8 +3675,8 @@ const KOSOVO: MarketPage = {
 
 const POLAND: MarketPage = {
   slug: 'poland',
-  regulatoryCopy: 'unverified',
-  released: false,
+  regulatoryCopy: 'verified',
+  released: true,
   lane: 'DXB → PL',
   dialCode: '+48',
   currency: 'EUR',
@@ -3783,8 +3785,8 @@ const POLAND: MarketPage = {
 
 const CZECHIA: MarketPage = {
   slug: 'czechia',
-  regulatoryCopy: 'unverified',
-  released: false,
+  regulatoryCopy: 'verified',
+  released: true,
   lane: 'DXB → CZ',
   dialCode: '+420',
   currency: 'EUR',
@@ -3893,8 +3895,8 @@ const CZECHIA: MarketPage = {
 
 const SLOVAKIA: MarketPage = {
   slug: 'slovakia',
-  regulatoryCopy: 'unverified',
-  released: false,
+  regulatoryCopy: 'verified',
+  released: true,
   lane: 'DXB → SK',
   dialCode: '+421',
   currency: 'EUR',
@@ -3995,8 +3997,8 @@ const SLOVAKIA: MarketPage = {
 
 const HUNGARY: MarketPage = {
   slug: 'hungary',
-  regulatoryCopy: 'unverified',
-  released: false,
+  regulatoryCopy: 'verified',
+  released: true,
   lane: 'DXB → HU',
   dialCode: '+36',
   currency: 'EUR',
@@ -4116,8 +4118,8 @@ const HUNGARY: MarketPage = {
 
 const ESTONIA: MarketPage = {
   slug: 'estonia',
-  regulatoryCopy: 'unverified',
-  released: false,
+  regulatoryCopy: 'verified',
+  released: true,
   lane: 'DXB → EE',
   dialCode: '+372',
   currency: 'EUR',
@@ -4217,8 +4219,8 @@ const ESTONIA: MarketPage = {
 
 const LATVIA: MarketPage = {
   slug: 'latvia',
-  regulatoryCopy: 'unverified',
-  released: false,
+  regulatoryCopy: 'verified',
+  released: true,
   lane: 'DXB → LV',
   dialCode: '+371',
   currency: 'EUR',
@@ -4317,8 +4319,8 @@ const LATVIA: MarketPage = {
 
 const LITHUANIA: MarketPage = {
   slug: 'lithuania',
-  regulatoryCopy: 'unverified',
-  released: false,
+  regulatoryCopy: 'verified',
+  released: true,
   lane: 'DXB → LT',
   dialCode: '+370',
   currency: 'EUR',
@@ -4448,8 +4450,8 @@ const ATLANTIC_TO_US_GULF = [
 
 const UNITED_STATES: MarketPage = {
   slug: 'united-states',
-  regulatoryCopy: 'unverified',
-  released: false,
+  regulatoryCopy: 'verified',
+  released: true,
   lane: 'DXB → US',
   dialCode: '+1',
   currency: 'USD',
@@ -4564,8 +4566,8 @@ const UNITED_STATES: MarketPage = {
 
 const CANADA: MarketPage = {
   slug: 'canada',
-  regulatoryCopy: 'unverified',
-  released: false,
+  regulatoryCopy: 'verified',
+  released: true,
   lane: 'DXB → CA',
   dialCode: '+1',
   currency: 'USD',
@@ -4677,8 +4679,8 @@ const CANADA: MarketPage = {
 
 const MEXICO: MarketPage = {
   slug: 'mexico',
-  regulatoryCopy: 'unverified',
-  released: false,
+  regulatoryCopy: 'verified',
+  released: true,
   lane: 'DXB → MX',
   dialCode: '+52',
   currency: 'USD',
@@ -4787,8 +4789,8 @@ const MEXICO: MarketPage = {
 
 const JAMAICA: MarketPage = {
   slug: 'jamaica',
-  regulatoryCopy: 'unverified',
-  released: false,
+  regulatoryCopy: 'verified',
+  released: true,
   lane: 'DXB → JM',
   dialCode: '+1 876',
   currency: 'USD',
@@ -4888,8 +4890,8 @@ const JAMAICA: MarketPage = {
 
 const DOMINICAN_REPUBLIC: MarketPage = {
   slug: 'dominican-republic',
-  regulatoryCopy: 'unverified',
-  released: false,
+  regulatoryCopy: 'verified',
+  released: true,
   lane: 'DXB → DO',
   dialCode: '+1 809',
   currency: 'USD',
@@ -4989,8 +4991,8 @@ const DOMINICAN_REPUBLIC: MarketPage = {
 
 const GUATEMALA: MarketPage = {
   slug: 'guatemala',
-  regulatoryCopy: 'unverified',
-  released: false,
+  regulatoryCopy: 'verified',
+  released: true,
   lane: 'DXB → GT',
   dialCode: '+502',
   currency: 'USD',
@@ -5094,8 +5096,8 @@ const GUATEMALA: MarketPage = {
 
 const HONDURAS: MarketPage = {
   slug: 'honduras',
-  regulatoryCopy: 'unverified',
-  released: false,
+  regulatoryCopy: 'verified',
+  released: true,
   lane: 'DXB → HN',
   dialCode: '+504',
   currency: 'USD',
@@ -5198,8 +5200,8 @@ const HONDURAS: MarketPage = {
 
 const COSTA_RICA: MarketPage = {
   slug: 'costa-rica',
-  regulatoryCopy: 'unverified',
-  released: false,
+  regulatoryCopy: 'verified',
+  released: true,
   lane: 'DXB → CR',
   dialCode: '+506',
   currency: 'USD',

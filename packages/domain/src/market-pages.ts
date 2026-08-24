@@ -243,14 +243,12 @@ export type MarketPage = {
    * conformity sequence is worse than one that omits it, because a buyer acts
    * on it.
    *
-   * Only Saudi Arabia's copy is verbatim from the live site and therefore
-   * already client-verified. Everything else is `unverified` until a forwarder
-   * signs it off, and `releasedMarketPage` will not serve it — the record sits
-   * in the repo, complete and reviewable, and flips on with a one-word edit.
-   *
-   * Nigeria is the exception: it shipped before this gate existed and is live
-   * today. It is marked honestly rather than quietly withdrawn, and it is on
-   * the review list like the rest.
+   * All 126 records are `verified` as of 2026-08-24 — wave 1 cleared review on
+   * 2026-08-22 and the founder released the remaining 80 on 2026-08-24. The
+   * field is not vestigial: a record marked `unverified` is not served by
+   * `releasedMarketPage`, so it sits in the repo, complete and reviewable, and
+   * flips on with a one-word edit. That is the path back when a scheme is
+   * revised — SONCAP, SABER and PVoC have all been revised inside a decade.
    */
   readonly regulatoryCopy: 'verified' | 'unverified'
   /**

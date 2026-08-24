@@ -19,6 +19,19 @@ import {
   marketTransitBand,
 } from './markets-index'
 
+/**
+ * A market with no released page behind it.
+ *
+ * All 126 registry markets are released, so there is no longer a real one to
+ * point these assertions at — and naming one that happened to be held was how
+ * this file broke every time a market shipped. The rules being tested are
+ * about the INPUT (a slug with no released record, a registry row stating no
+ * band), so the input is built rather than found.
+ */
+function heldMarket(): Market {
+  return { ...MARKETS[0]!, slug: 'atlantis', leadTime: 'Quoted per consignment' }
+}
+
 describe('MARKET_REGION_NOTES', () => {
   /*
     Both directions. A region renamed in MARKET_REGIONS and not here would
@@ -88,9 +101,16 @@ describe('marketTransitBand', () => {
   })
 
   it('returns null for a market with no stated band', () => {
-    const brazil = marketBySlug('brazil')!
-    expect(brazil.leadTime).toBe('Quoted per consignment')
-    expect(marketTransitBand(brazil)).toBeNull()
+    /*
+      A SYNTHETIC market, not a real one. Every one of the 126 is released
+      today, so any named market would read its band off its own page and this
+      would assert nothing. The rule is about the input — a registry row that
+      states no band, behind a slug with no released record — and that rule is
+      what a market 127 lands on.
+    */
+    const unstated = heldMarket()
+    expect(unstated.leadTime).toBe('Quoted per consignment')
+    expect(marketTransitBand(unstated)).toBeNull()
   })
 
   it('never returns a band longer than the card can hold', () => {
@@ -109,8 +129,9 @@ describe('marketPrimaryMode', () => {
 
   it('is null where there is no drawn lane to read', () => {
     // Not guessed from the prose in `routes` — the tag is a claim about the
-    // lane we plotted, and without the plot there is no claim.
-    expect(marketPrimaryMode(marketBySlug('brazil')!)).toBeNull()
+    // lane we plotted, and without the plot there is no claim. Synthetic, for
+    // the reason given above: every real market has a plotted lane now.
+    expect(marketPrimaryMode(heldMarket())).toBeNull()
   })
 })
 
@@ -265,12 +286,12 @@ describe('the release gate', () => {
   it('gives a held market nothing to contradict its page', () => {
     /*
       The mechanism, on a synthetic record, so it survives every market being
-      released. `marketPrimaryMode` and `marketTransitBand` both route through
-      `releasedMarketPage`, which returns undefined for anything held — so a
-      held market falls back to its registry row and can never print a lane its
-      page does not mention.
+      released — which, since 2026-08-24, every market is. `marketPrimaryMode`
+      and `marketTransitBand` both route through `releasedMarketPage`, which
+      returns undefined for anything held — so a held market falls back to its
+      registry row and can never print a lane its page does not mention.
     */
-    const held = marketBySlug('brazil')!
+    const held = heldMarket()
     expect(releasedMarketPage(held.slug)).toBeUndefined()
     expect(marketPrimaryMode(held)).toBeNull()
     expect(held.leadTime).toBe('Quoted per consignment')

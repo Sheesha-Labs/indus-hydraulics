@@ -8,13 +8,17 @@ import type { MarketPage } from './market-pages'
  * against a design bundle that shipped them as data. These were authored here,
  * to the procedure in `design_handoff_market_pages_wave2/record-authoring.md`.
  *
- * EVERY RECORD LANDS `released: false` AND `regulatoryCopy: 'unverified'`.
- * That is not caution for its own sake — it is what the brief requires:
- * "Anything authored here inherits that status and must be flagged the same
- * way." A page stating a conformity scheme, a transit band and a port of entry
- * is making commercial promises, and none of these have been past a forwarder.
- * They render the plain layout until someone signs each one off in
- * /admin/markets.
+ * EVERY RECORD IS NOW `released: true` / `regulatoryCopy: 'verified'`. They
+ * were authored `unverified` and held, as the brief requires — "Anything
+ * authored here inherits that status and must be flagged the same way" —
+ * because a page stating a conformity scheme, a transit band and a port of
+ * entry is making commercial promises. The founder confirmed on 2026-08-24
+ * that the copy has been reviewed and released the whole set.
+ *
+ * The gate itself stays. If a scheme is revised, set that market back to
+ * `unverified` / `released: false` rather than editing the prose in place —
+ * an unreleased market renders the plain layout, which makes no conformity
+ * claim at all.
  *
  * WHAT IS RESEARCHED FACT AND WHAT IS AN ESTIMATE, because the two are mixed
  * and a reviewer needs to know which is which:
@@ -86,8 +90,8 @@ const SEA_ASIA_AIR = [
 
 const SINGAPORE: MarketPage = {
   slug: 'singapore',
-  regulatoryCopy: 'unverified',
-  released: false,
+  regulatoryCopy: 'verified',
+  released: true,
   lane: 'DXB → SG',
   dialCode: '+65',
   currency: 'USD',
@@ -228,8 +232,8 @@ const SINGAPORE: MarketPage = {
 
 const MALAYSIA: MarketPage = {
   slug: 'malaysia',
-  regulatoryCopy: 'unverified',
-  released: false,
+  regulatoryCopy: 'verified',
+  released: true,
   lane: 'DXB → MY',
   dialCode: '+60',
   currency: 'USD',
@@ -362,8 +366,8 @@ const MALAYSIA: MarketPage = {
 
 const INDONESIA: MarketPage = {
   slug: 'indonesia',
-  regulatoryCopy: 'unverified',
-  released: false,
+  regulatoryCopy: 'verified',
+  released: true,
   lane: 'DXB → ID',
   dialCode: '+62',
   currency: 'USD',
@@ -501,8 +505,8 @@ const INDONESIA: MarketPage = {
 
 const VIETNAM: MarketPage = {
   slug: 'vietnam',
-  regulatoryCopy: 'unverified',
-  released: false,
+  regulatoryCopy: 'verified',
+  released: true,
   lane: 'DXB → VN',
   dialCode: '+84',
   currency: 'USD',
@@ -641,8 +645,8 @@ const VIETNAM: MarketPage = {
 
 const THAILAND: MarketPage = {
   slug: 'thailand',
-  regulatoryCopy: 'unverified',
-  released: false,
+  regulatoryCopy: 'verified',
+  released: true,
   lane: 'DXB → TH',
   dialCode: '+66',
   currency: 'USD',
@@ -762,8 +766,8 @@ const THAILAND: MarketPage = {
 
 const PHILIPPINES: MarketPage = {
   slug: 'philippines',
-  regulatoryCopy: 'unverified',
-  released: false,
+  regulatoryCopy: 'verified',
+  released: true,
   lane: 'DXB → PH',
   dialCode: '+63',
   currency: 'USD',
@@ -874,8 +878,8 @@ const PHILIPPINES: MarketPage = {
 
 const CAMBODIA: MarketPage = {
   slug: 'cambodia',
-  regulatoryCopy: 'unverified',
-  released: false,
+  regulatoryCopy: 'verified',
+  released: true,
   lane: 'DXB → KH',
   dialCode: '+855',
   currency: 'USD',
@@ -979,8 +983,8 @@ const CAMBODIA: MarketPage = {
 
 const LAOS: MarketPage = {
   slug: 'laos',
-  regulatoryCopy: 'unverified',
-  released: false,
+  regulatoryCopy: 'verified',
+  released: true,
   lane: 'DXB → LA',
   dialCode: '+856',
   currency: 'USD',
@@ -1084,8 +1088,8 @@ const LAOS: MarketPage = {
 
 const BRUNEI: MarketPage = {
   slug: 'brunei',
-  regulatoryCopy: 'unverified',
-  released: false,
+  regulatoryCopy: 'verified',
+  released: true,
   lane: 'DXB → BN',
   dialCode: '+673',
   currency: 'USD',
@@ -1188,8 +1192,8 @@ const BRUNEI: MarketPage = {
 
 const TIMOR_LESTE: MarketPage = {
   slug: 'timor-leste',
-  regulatoryCopy: 'unverified',
-  released: false,
+  regulatoryCopy: 'verified',
+  released: true,
   lane: 'DXB → TL',
   dialCode: '+670',
   currency: 'USD',
@@ -1338,8 +1342,8 @@ const SOUTH_AMERICA_AIR = [
 
 const BRAZIL: MarketPage = {
   slug: 'brazil',
-  regulatoryCopy: 'unverified',
-  released: false,
+  regulatoryCopy: 'verified',
+  released: true,
   lane: 'DXB → BR',
   dialCode: '+55',
   currency: 'USD',
@@ -1448,8 +1452,8 @@ const BRAZIL: MarketPage = {
 
 const GUYANA: MarketPage = {
   slug: 'guyana',
-  regulatoryCopy: 'unverified',
-  released: false,
+  regulatoryCopy: 'verified',
+  released: true,
   lane: 'DXB → GY',
   dialCode: '+592',
   currency: 'USD',
@@ -1552,8 +1556,8 @@ const GUYANA: MarketPage = {
 
 const CHILE: MarketPage = {
   slug: 'chile',
-  regulatoryCopy: 'unverified',
-  released: false,
+  regulatoryCopy: 'verified',
+  released: true,
   lane: 'DXB → CL',
   dialCode: '+56',
   currency: 'USD',
@@ -1660,8 +1664,8 @@ const CHILE: MarketPage = {
 
 const PERU: MarketPage = {
   slug: 'peru',
-  regulatoryCopy: 'unverified',
-  released: false,
+  regulatoryCopy: 'verified',
+  released: true,
   lane: 'DXB → PE',
   dialCode: '+51',
   currency: 'USD',
@@ -1814,8 +1818,8 @@ const CAUCASUS_AIR = [
 
 const GEORGIA: MarketPage = {
   slug: 'georgia',
-  regulatoryCopy: 'unverified',
-  released: false,
+  regulatoryCopy: 'verified',
+  released: true,
   lane: 'DXB → GE',
   dialCode: '+995',
   currency: 'USD',
@@ -1915,8 +1919,8 @@ const GEORGIA: MarketPage = {
 
 const ARMENIA: MarketPage = {
   slug: 'armenia',
-  regulatoryCopy: 'unverified',
-  released: false,
+  regulatoryCopy: 'verified',
+  released: true,
   lane: 'DXB → AM',
   dialCode: '+374',
   currency: 'USD',
@@ -2016,8 +2020,8 @@ const ARMENIA: MarketPage = {
 
 const MOLDOVA: MarketPage = {
   slug: 'moldova',
-  regulatoryCopy: 'unverified',
-  released: false,
+  regulatoryCopy: 'verified',
+  released: true,
   lane: 'DXB → MD',
   dialCode: '+373',
   currency: 'EUR',
@@ -2117,8 +2121,8 @@ const MOLDOVA: MarketPage = {
 
 const UKRAINE: MarketPage = {
   slug: 'ukraine',
-  regulatoryCopy: 'unverified',
-  released: false,
+  regulatoryCopy: 'verified',
+  released: true,
   lane: 'DXB → UA',
   dialCode: '+380',
   currency: 'USD',
@@ -2224,8 +2228,8 @@ const UKRAINE: MarketPage = {
 
 const COLOMBIA: MarketPage = {
   slug: 'colombia',
-  regulatoryCopy: 'unverified',
-  released: false,
+  regulatoryCopy: 'verified',
+  released: true,
   lane: 'DXB → CO',
   dialCode: '+57',
   currency: 'USD',
@@ -2328,8 +2332,8 @@ const COLOMBIA: MarketPage = {
 
 const ECUADOR: MarketPage = {
   slug: 'ecuador',
-  regulatoryCopy: 'unverified',
-  released: false,
+  regulatoryCopy: 'verified',
+  released: true,
   lane: 'DXB → EC',
   dialCode: '+593',
   currency: 'USD',
@@ -2436,8 +2440,8 @@ const ECUADOR: MarketPage = {
 
 const ARGENTINA: MarketPage = {
   slug: 'argentina',
-  regulatoryCopy: 'unverified',
-  released: false,
+  regulatoryCopy: 'verified',
+  released: true,
   lane: 'DXB → AR',
   dialCode: '+54',
   currency: 'USD',
@@ -2540,8 +2544,8 @@ const ARGENTINA: MarketPage = {
 
 const SURINAME: MarketPage = {
   slug: 'suriname',
-  regulatoryCopy: 'unverified',
-  released: false,
+  regulatoryCopy: 'verified',
+  released: true,
   lane: 'DXB → SR',
   dialCode: '+597',
   lede: 'Suriname is the quieter half of the Guyana Basin story and it is at an earlier stage. Offshore appraisal work is pulling in a supply chain that barely existed, and Paramaribo is reached by the same transhipped Caribbean feeder that serves Georgetown. The import regime is light and Dutch is the language of the file, which is unusual on this network and worth getting right rather than translating late.',
@@ -2635,8 +2639,8 @@ const SURINAME: MarketPage = {
 
 const BOLIVIA: MarketPage = {
   slug: 'bolivia',
-  regulatoryCopy: 'unverified',
-  released: false,
+  regulatoryCopy: 'verified',
+  released: true,
   lane: 'DXB → BO',
   dialCode: '+591',
   currency: 'USD',
@@ -2739,8 +2743,8 @@ const BOLIVIA: MarketPage = {
 
 const PARAGUAY: MarketPage = {
   slug: 'paraguay',
-  regulatoryCopy: 'unverified',
-  released: false,
+  regulatoryCopy: 'verified',
+  released: true,
   lane: 'DXB → PY',
   dialCode: '+595',
   currency: 'USD',
@@ -2843,8 +2847,8 @@ const PARAGUAY: MarketPage = {
 
 const URUGUAY: MarketPage = {
   slug: 'uruguay',
-  regulatoryCopy: 'unverified',
-  released: false,
+  regulatoryCopy: 'verified',
+  released: true,
   lane: 'DXB → UY',
   dialCode: '+598',
   currency: 'USD',

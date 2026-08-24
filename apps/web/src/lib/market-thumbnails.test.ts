@@ -231,7 +231,16 @@ describe('port dot', () => {
     // The dot is a claim about a plotted route. Without the plot there is no
     // claim, and guessing a port from the country centroid would be a lie
     // rendered at 2.1px.
-    expect(thumb('brazil').port).toBeNull()
+    //
+    // Asserted on a SYNTHETIC market rather than a named one: all 126 are
+    // released as of 2026-08-24, so every real slug now has a lane, and a test
+    // that named one would only prove the record still exists. The rule is
+    // about a market with no released page behind it — market 127, or one set
+    // back to `released: false` when a conformity scheme is revised.
+    const unplotted: Market = { ...marketBySlug('brazil')!, slug: 'atlantis' }
+    const built = buildMarketThumbnail(unplotted)
+    expect(built).not.toBeNull()
+    expect(built!.port).toBeNull()
   })
 })
 

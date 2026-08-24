@@ -31,8 +31,12 @@ import type { MarketPage } from './market-pages'
  * consignment rather than published, because the corridors open and close on
  * circumstances no supplier controls.
  *
- * All seven land `released: false`, like every other authored market. They
- * render the plain layout until someone signs them off in /admin/markets.
+ * ALL SEVEN ARE RELEASED as of 2026-08-24. They were authored
+ * `released: false` like every other market; the founder was shown this
+ * file's sanctions list again on release day, asked specifically whether the
+ * seven should go live with the other 73, and said yes. Still no written
+ * compliance ruling on file — the screening-before-quotation copy is what
+ * stands in for one.
  */
 
 /** Spread a shared leg into a route, then append the market's own waypoints. */
@@ -75,8 +79,8 @@ const NORTHWEST_AIR = [
 
 const RUSSIA: MarketPage = {
   slug: 'russia',
-  regulatoryCopy: 'unverified',
-  released: false,
+  regulatoryCopy: 'verified',
+  released: true,
   lane: 'DXB → RU',
   dialCode: '+7',
   currency: 'USD',
@@ -188,8 +192,8 @@ const RUSSIA: MarketPage = {
 
 const BELARUS: MarketPage = {
   slug: 'belarus',
-  regulatoryCopy: 'unverified',
-  released: false,
+  regulatoryCopy: 'verified',
+  released: true,
   lane: 'DXB → BY',
   dialCode: '+375',
   currency: 'USD',
@@ -298,8 +302,8 @@ const BELARUS: MarketPage = {
 
 const SUDAN: MarketPage = {
   slug: 'sudan',
-  regulatoryCopy: 'unverified',
-  released: false,
+  regulatoryCopy: 'verified',
+  released: true,
   lane: 'DXB → SD',
   dialCode: '+249',
   currency: 'USD',
@@ -400,8 +404,8 @@ const SUDAN: MarketPage = {
 
 const LIBYA: MarketPage = {
   slug: 'libya',
-  regulatoryCopy: 'unverified',
-  released: false,
+  regulatoryCopy: 'verified',
+  released: true,
   lane: 'DXB → LY',
   dialCode: '+218',
   currency: 'USD',
@@ -502,8 +506,8 @@ const LIBYA: MarketPage = {
 
 const SOUTH_SUDAN: MarketPage = {
   slug: 'south-sudan',
-  regulatoryCopy: 'unverified',
-  released: false,
+  regulatoryCopy: 'verified',
+  released: true,
   lane: 'DXB → SS',
   dialCode: '+211',
   currency: 'USD',
@@ -607,8 +611,8 @@ const SOUTH_SUDAN: MarketPage = {
 
 const VENEZUELA: MarketPage = {
   slug: 'venezuela',
-  regulatoryCopy: 'unverified',
-  released: false,
+  regulatoryCopy: 'verified',
+  released: true,
   lane: 'DXB → VE',
   dialCode: '+58',
   currency: 'USD',
@@ -720,8 +724,8 @@ const VENEZUELA: MarketPage = {
 
 const MYANMAR: MarketPage = {
   slug: 'myanmar',
-  regulatoryCopy: 'unverified',
-  released: false,
+  regulatoryCopy: 'verified',
+  released: true,
   lane: 'DXB → MM',
   dialCode: '+95',
   currency: 'USD',

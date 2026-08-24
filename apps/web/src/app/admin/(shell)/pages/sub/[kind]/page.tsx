@@ -85,7 +85,7 @@ export default async function SubPageKindIndex({ params }: Props) {
         emptyMessage={`Every ${kindDef.itemLabel} is live.`}
         note={
           kind === 'market'
-            ? 'These render the plain layout until their regulatory copy clears forwarder review. Edits here save and apply the moment a market is released.'
+            ? 'These render the plain layout until their regulatory copy is signed off. Edits here save and apply the moment a market is released, and each one has a draft preview.'
             : 'These brands are unpublished, so their pages are not reachable. Edits here save and apply the moment a brand is published under Catalogue · Brands.'
         }
         rows={held}
@@ -189,6 +189,17 @@ function SubPageTable({
                   >
                     View ↗
                   </a>
+                ) : kind === 'market' ? (
+                  /* A held market has no public page, but it does have a draft
+                     preview — the one thing this row could not otherwise
+                     reach now that markets have no admin section of their
+                     own. */
+                  <Link
+                    href={`/admin/markets/${row.slug}`}
+                    className="font-mono text-[11px] text-ih-accent hover:underline"
+                  >
+                    Draft
+                  </Link>
                 ) : (
                   <span className="font-mono text-[11px] text-ih-muted-2">—</span>
                 )}

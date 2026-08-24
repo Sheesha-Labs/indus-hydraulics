@@ -85,7 +85,6 @@ const NAV_SECTIONS: { section: string; items: NavItem[] }[] = [
       { id: 'navigation', label: 'Navigation', path: 'navigation', Icon: MenuIcon },
       { id: 'footer', label: 'Footer', path: 'footer', Icon: PanelBottom },
       { id: 'seo', label: 'SEO & Search', path: 'seo', Icon: Search },
-      { id: 'markets', label: 'Export markets', path: 'markets', Icon: Globe },
     ],
   },
   {
