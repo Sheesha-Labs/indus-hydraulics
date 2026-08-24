@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import { db } from '@indus/db'
-import { buildBreadcrumbLd, buildCollectionLd } from '@indus/domain'
+import { MAX_CATEGORY_DEPTH, buildBreadcrumbLd, buildCollectionLd } from '@indus/domain'
 import { Breadcrumb, Button, EmptyState, JsonLd, Note } from '@indus/ui'
 import { pageMetadata, urlFor } from '../../../../lib/seo'
 import ProductCard from '../../../../components/ProductCard'
@@ -92,6 +92,39 @@ export async function generateMetadata({ params, searchParams }: Props): Promise
  */
 const MAX_DEPTH = 6
 
+/**
+ * Root → this category, for the breadcrumb trail.
+ *
+ * The trail used to be a hardcoded `Home / Categories / <name>` at every depth,
+ * so a category three levels down claimed to sit directly under the catalogue
+ * root. That was wrong twice over: the visible trail gave no way back to the
+ * parent hub, and the `BreadcrumbList` JSON-LD told Google the same flat lie,
+ * which is what it renders under the result title.
+ *
+ * One query per level, bounded by `MAX_CATEGORY_DEPTH`, walking up rather than
+ * down. Unpublished ancestors are kept in the chain — skipping one would join a
+ * grandchild straight onto its grandparent and imply a parentage that does not
+ * exist — but they are rendered as plain text, not links, since their own page
+ * 404s.
+ */
+async function ancestorTrail(
+  categoryId: string,
+): Promise<Array<{ name: string; slug: string; isPublished: boolean }>> {
+  const trail: Array<{ name: string; slug: string; isPublished: boolean }> = []
+  let cursor: string | null = categoryId
+  for (let depth = 0; cursor && depth <= MAX_CATEGORY_DEPTH + 1; depth++) {
+    const row: { name: string; slug: string; isPublished: boolean; parentId: string | null } | null =
+      await db.category.findUnique({
+        where: { id: cursor },
+        select: { name: true, slug: true, isPublished: true, parentId: true },
+      })
+    if (!row) break
+    trail.unshift({ name: row.name, slug: row.slug, isPublished: row.isPublished })
+    cursor = row.parentId
+  }
+  return trail
+}
+
 async function descendantCategoryIds(rootId: string): Promise<string[]> {
   const all = [rootId]
   let frontier = [rootId]
@@ -127,7 +160,10 @@ export default async function CategoryPage({ params, searchParams }: Props) {
   // YET" empty state — while its own sub-category chips sat directly above,
   // linking to pages full of products. Every branch category in the tree did
   // this: Ferrules, Metallic Hoses, and every root reached from /c.
-  const categoryIds = await descendantCategoryIds(category.id)
+  const [categoryIds, trail] = await Promise.all([
+    descendantCategoryIds(category.id),
+    ancestorTrail(category.id),
+  ])
 
   const where = {
     categoryId: { in: categoryIds },
@@ -195,7 +231,8 @@ export default async function CategoryPage({ params, searchParams }: Props) {
   const breadcrumbLd = buildBreadcrumbLd({
     items: [
       { name: 'Home', url: urlFor('/') },
-      { name: category.name, url: collectionUrl },
+      { name: 'Categories', url: urlFor('/c') },
+      ...trail.map((step) => ({ name: step.name, url: urlFor(`/c/${step.slug}`) })),
     ],
   })
 
@@ -208,7 +245,13 @@ export default async function CategoryPage({ params, searchParams }: Props) {
           items={[
             { label: 'Home', href: '/' },
             { label: 'Categories', href: '/c' },
-            { label: category.name },
+            ...trail.map((step, i) => ({
+              label: step.name,
+              // The last step is this page — never a link to itself. An
+              // unpublished ancestor is not linked either: its page 404s.
+              href:
+                i === trail.length - 1 || !step.isPublished ? undefined : `/c/${step.slug}`,
+            })),
           ]}
         />
       </div>
