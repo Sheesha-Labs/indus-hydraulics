@@ -70,3 +70,25 @@ export function renderSitemapIndex(children: SitemapIndexChild[]): string {
 }
 
 export const SITEMAP_CONTENT_TYPE = 'application/xml; charset=utf-8'
+
+/**
+ * Newest `lastModified` across a set of sitemap entries, or undefined when
+ * none of them carry one.
+ *
+ * Used to date a child in the sitemap index. A section whose entries all omit
+ * the field — the designed industry pages do so deliberately — yields no date
+ * rather than today's: a date taken from the request clock would tell a
+ * crawler the section changed every time it looked.
+ */
+export function newestLastModified(
+  entries: ReadonlyArray<{ lastModified?: string | Date }>
+): Date | undefined {
+  let newest: number | undefined
+  for (const entry of entries) {
+    if (!entry.lastModified) continue
+    const time = new Date(entry.lastModified).getTime()
+    if (Number.isNaN(time)) continue
+    if (newest === undefined || time > newest) newest = time
+  }
+  return newest === undefined ? undefined : new Date(newest)
+}
