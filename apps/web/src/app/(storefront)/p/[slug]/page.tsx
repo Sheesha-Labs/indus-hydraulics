@@ -15,6 +15,7 @@ import {
   buildFaqLd,
   buildProductLd,
   readFittingAttributes,
+  relatedProductWindow,
 } from '@indus/domain'
 import { Badge, Breadcrumb, Button, JsonLd } from '@indus/ui'
 import ProductGallery from '../../../../components/ProductGallery'
@@ -247,15 +248,41 @@ export default async function ProductPage({ params }: Props) {
     })
     .filter((x): x is { id: string; text: string } => x !== null)
 
+  // Siblings are chosen as a ring rather than a fixed head of the list.
+  //
+  // This was `findMany({ where: { categoryId }, take: 4 })` with no orderBy,
+  // which meant every product in a category linked to the same four siblings —
+  // a hub and spoke that gave four arbitrary products every internal link the
+  // category had and left the rest with none. `relatedProductWindow` gives
+  // each product the ones that follow it, wrapping, so no product in a
+  // category is ever orphaned. See packages/domain/src/related-products.ts.
   const related = product.categoryId
-    ? await db.product.findMany({
-        where: { categoryId: product.categoryId, status: 'active', sku: { not: product.sku } },
-        take: 4,
-        include: {
-          brand: { select: { name: true } },
-          images: { take: 1, orderBy: { position: 'asc' }, include: { media: true } },
-        },
-      })
+    ? await (async () => {
+        const siblings = await db.product.findMany({
+          where: { categoryId: product.categoryId, status: 'active' },
+          orderBy: { sku: 'asc' },
+          select: { sku: true },
+        })
+        const wanted = relatedProductWindow(
+          siblings.map((s) => s.sku),
+          product.sku,
+        )
+        if (wanted.length === 0) return []
+
+        const rows = await db.product.findMany({
+          where: { sku: { in: wanted } },
+          include: {
+            brand: { select: { name: true } },
+            images: { take: 1, orderBy: { position: 'asc' }, include: { media: true } },
+          },
+        })
+        // `in` does not preserve order, and the ring's order is the point.
+        const bySku = new Map(rows.map((r) => [r.sku, r]))
+        return wanted.flatMap((sku) => {
+          const row = bySku.get(sku)
+          return row ? [row] : []
+        })
+      })()
     : []
 
   // The return leg of the internal-link loop: articles that embed this SKU.
