@@ -15,6 +15,8 @@ import {
   buildFaqLd,
   buildProductLd,
   offersStainlessOnRequest,
+  productAvailability,
+  type ProductAvailability,
   readFittingAttributes,
   relatedProductWindow,
 } from '@indus/domain'
@@ -61,7 +63,10 @@ const getProduct = cache(async (decoded: string) => {
     where: { OR: [{ slug: decoded }, { sku: decoded }] },
     include: {
       brand: true,
-      category: true,
+      // Three levels of parent because the category tree is three deep, and the
+      // stock posture's exemption list is matched against the whole chain — a
+      // root listed there has to be visible from a leaf product.
+      category: { include: { parent: { include: { parent: true } } } },
       images: { orderBy: { position: 'asc' }, include: { media: true } },
       specs: { orderBy: { position: 'asc' } },
       documents: { orderBy: { position: 'asc' }, include: { media: true } },
@@ -352,14 +357,24 @@ export default async function ProductPage({ params }: Props) {
         .join(' / ')} series. Quote the Indus part number, or send us the ${equivalenceBrand} number and we will cross it.`
     : null
 
+  const stockState = productAvailability({
+    status: product.status,
+    stockQty: product.stockQty,
+    stockWarehouse: product.stockWarehouse,
+    leadTimeDays: product.leadTimeDays,
+    categorySlugs: [
+      product.category?.slug,
+      product.category?.parent?.slug,
+      product.category?.parent?.parent?.slug,
+    ].filter((slug): slug is string => Boolean(slug)),
+  })
+
   // JSON-LD assembly. Pages with FAQs additionally emit a FAQPage entity.
   const productUrl = urlFor(`/p/${product.slug}`)
-  const availability =
-    product.status === 'discontinued'
-      ? 'out_of_stock'
-      : product.stockQty > 0
-        ? 'in_stock'
-        : 'lead_time'
+  // One source for what this page says about availability — the pill, the
+  // delivery row and this Offer all read `productAvailability`, so a crawler
+  // can never be told something the page does not show a buyer.
+  const availability = stockState.schema
   const productLd = buildProductLd({
     name: product.title,
     alternateName: alternateNames.map((n) => n.name),
@@ -506,7 +521,7 @@ export default async function ProductPage({ params }: Props) {
                   <span className="font-mono text-[12.5px] text-ih-muted">MFR {product.mpn}</span>
                 </>
               )}
-              <StockPill stockQty={product.stockQty} warehouse={product.stockWarehouse} leadTimeDays={product.leadTimeDays} />
+              <StockPill state={stockState} />
             </div>
           </div>
 
@@ -680,7 +695,7 @@ export default async function ProductPage({ params }: Props) {
             question: f.question,
             answer: f.answer,
           }))}
-          leadTimeDays={product.leadTimeDays}
+          availability={stockState}
           warrantyMonths={product.warrantyMonths}
           countryOfOrigin={product.countryOfOrigin}
           hsCode={product.hsCode}
@@ -877,46 +892,21 @@ function mailtoQuoteHref(email: string | null, sku: string): string {
   return `mailto:${to}?subject=${subject}`
 }
 
-// ── Stock pill — green when stocked, amber for build-to-order, grey when neither ─────────────
-function StockPill({
-  stockQty,
-  warehouse,
-  leadTimeDays,
-}: {
-  stockQty: number
-  warehouse: string | null
-  leadTimeDays: number | null
-}) {
-  if (stockQty > 0) {
-    return (
-      <span
-        className="inline-flex items-center gap-1.5 px-2.5 py-1 font-mono text-[11px] font-medium tracking-[0.04em]"
-        style={{ background: 'oklch(0.95 0.05 150)', color: 'oklch(0.45 0.12 150)' }}
-      >
-        <span className="w-1.5 h-1.5 rounded-full" style={{ background: 'oklch(0.55 0.15 150)' }} />
-        In stock · {stockQty} unit{stockQty === 1 ? '' : 's'}
-        {warehouse ? ` · ${warehouse}` : ''}
-      </span>
-    )
-  }
-  if (leadTimeDays !== null && leadTimeDays > 0) {
-    return (
-      <span
-        className="inline-flex items-center gap-1.5 px-2.5 py-1 font-mono text-[11px] font-medium tracking-[0.04em]"
-        style={{ background: 'oklch(0.95 0.05 80)', color: 'oklch(0.45 0.13 70)' }}
-      >
-        <span className="w-1.5 h-1.5 rounded-full" style={{ background: 'oklch(0.6 0.15 70)' }} />
-        Lead time · {leadTimeDays} day{leadTimeDays === 1 ? '' : 's'}
-      </span>
-    )
-  }
+// ── Stock pill — green when the item is available now, amber for a lead time ─────────────
+function StockPill({ state }: { state: ProductAvailability }) {
+  const tone =
+    state.kind === 'ex_stock' || state.kind === 'counted_stock'
+      ? { bg: 'oklch(0.95 0.05 150)', fg: 'oklch(0.45 0.12 150)', dot: 'oklch(0.55 0.15 150)' }
+      : state.kind === 'lead_time'
+        ? { bg: 'oklch(0.95 0.05 80)', fg: 'oklch(0.45 0.13 70)', dot: 'oklch(0.6 0.15 70)' }
+        : { bg: 'var(--color-ih-surface-2)', fg: 'var(--color-ih-muted)', dot: 'var(--color-ih-muted)' }
   return (
     <span
       className="inline-flex items-center gap-1.5 px-2.5 py-1 font-mono text-[11px] font-medium tracking-[0.04em]"
-      style={{ background: 'var(--color-ih-surface-2)', color: 'var(--color-ih-muted)' }}
+      style={{ background: tone.bg, color: tone.fg }}
     >
-      <span className="w-1.5 h-1.5 rounded-full" style={{ background: 'var(--color-ih-muted)' }} />
-      Contact for availability
+      <span className="w-1.5 h-1.5 rounded-full" style={{ background: tone.dot }} />
+      {state.label}
     </span>
   )
 }

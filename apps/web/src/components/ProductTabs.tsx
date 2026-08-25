@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import { replacementUrlPath, type VariantLike } from '@indus/domain'
+import { replacementUrlPath, type ProductAvailability, type VariantLike } from '@indus/domain'
 import ProductSizeTable from './ProductSizeTable'
 
 type Spec = {
@@ -52,7 +52,7 @@ type Props = {
   /** Whether the size table may offer the range in 316 stainless on request. */
   variantStainlessOnRequest?: boolean
   faqs: Faq[]
-  leadTimeDays?: number | null
+  availability: ProductAvailability
   warrantyMonths?: number | null
   countryOfOrigin?: string | null
   hsCode?: string | null
@@ -70,7 +70,7 @@ export default function ProductTabs({
   variantEquivalenceBrand,
   variantStainlessOnRequest,
   faqs,
-  leadTimeDays,
+  availability,
   warrantyMonths,
   countryOfOrigin,
   hsCode,
@@ -177,7 +177,7 @@ export default function ProductTabs({
           <div>
             <h2 className="mb-4 font-serif text-[26px] font-normal tracking-[-0.01em]">Shipping &amp; lead time</h2>
             <ShippingTable
-              leadTimeDays={leadTimeDays}
+              availability={availability}
               warrantyMonths={warrantyMonths}
               countryOfOrigin={countryOfOrigin}
               hsCode={hsCode}
@@ -201,7 +201,7 @@ export default function ProductTabs({
       {activeId === 'shipping' && (
         <div className="max-w-[680px]">
           <ShippingTable
-            leadTimeDays={leadTimeDays}
+            availability={availability}
             warrantyMonths={warrantyMonths}
             countryOfOrigin={countryOfOrigin}
             hsCode={hsCode}
@@ -322,13 +322,13 @@ export default function ProductTabs({
 }
 
 function ShippingTable({
-  leadTimeDays,
+  availability,
   warrantyMonths,
   countryOfOrigin,
   hsCode,
   weightKg,
 }: {
-  leadTimeDays?: number | null
+  availability: ProductAvailability
   warrantyMonths?: number | null
   countryOfOrigin?: string | null
   hsCode?: string | null
@@ -336,16 +336,10 @@ function ShippingTable({
 }) {
   const rows: Array<{ lbl: string; val: string }> = []
 
-  if (leadTimeDays === null || leadTimeDays === undefined) {
-    rows.push({ lbl: 'Lead Time', val: 'Contact us for current lead time.' })
-  } else if (leadTimeDays === 0) {
-    rows.push({ lbl: 'Lead Time', val: 'In stock — ships same day.' })
-  } else {
-    rows.push({
-      lbl: 'Lead Time',
-      val: `Typically dispatched within ${leadTimeDays} working day${leadTimeDays === 1 ? '' : 's'}.`,
-    })
-  }
+  // The same resolved availability the pill above shows. Reading `leadTimeDays`
+  // here instead is how this row came to say "dispatched within 14 working
+  // days" under a pill claiming ex-stock.
+  rows.push({ lbl: 'Lead Time', val: availability.deliveryNote })
   if (countryOfOrigin) rows.push({ lbl: 'Origin', val: `Made in ${countryOfOrigin}` })
   if (hsCode) rows.push({ lbl: 'HS Code', val: hsCode })
   if (weightKg) rows.push({ lbl: 'Weight', val: `${weightKg} kg` })
