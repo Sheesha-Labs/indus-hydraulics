@@ -34,6 +34,30 @@ export async function listSubPageRecords(kind: SubPageKind): Promise<SubPageReco
         live: released.has(market.slug),
       }))
     }
+    case 'category': {
+      // Every published category, in the tree's own order. `live` is simply
+      // whether the shelf is public — unlike a market, a category needs no
+      // release gate, and unlike a brand it has no publish step of its own
+      // beyond this flag.
+      const categories = await db.category.findMany({
+        where: { isPublished: true },
+        orderBy: [{ position: 'asc' }, { name: 'asc' }],
+        select: {
+          slug: true,
+          name: true,
+          isPublished: true,
+          _count: { select: { products: { where: { status: 'active' } } } },
+        },
+      })
+      return categories.map((category) => ({
+        slug: category.slug,
+        name: category.name,
+        // The code column is the shelf's own size, which is the number an
+        // editor needs: it decides how much copy a category is worth.
+        code: String(category._count.products),
+        live: category.isPublished,
+      }))
+    }
     case 'brand': {
       const brands = await db.brand.findMany({
         orderBy: { name: 'asc' },

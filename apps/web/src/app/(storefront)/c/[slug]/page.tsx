@@ -2,22 +2,36 @@ import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import { db } from '@indus/db'
+import type { ReactNode } from 'react'
 import {
   MAX_CATEGORY_DEPTH,
   buildBreadcrumbLd,
   buildCollectionLd,
+  buildFaqLd,
+  buildItemListLd,
   buildSpecFacets,
   countSelected,
   parseSpecFilter,
   productIdsMatching,
   pruneSpecFilter,
   serialiseSpecFilter,
+  str,
   toggleSpecValue,
+  type SectionValues,
 } from '@indus/domain'
 import { Breadcrumb, Button, EmptyState, JsonLd, Note } from '@indus/ui'
 import { pageMetadata, urlFor } from '../../../../lib/seo'
 import ProductCard from '../../../../components/ProductCard'
 import RelatedReading from '../../../../components/blog/RelatedReading'
+import {
+  CategoryDeliveryBand,
+  CategoryFaqBand,
+  CategoryProseBand,
+  CategorySizeBand,
+  categoryFaqs,
+} from '../../../../components/category/CategoryBands'
+import { categorySizeSummary, gccMarketLinks } from '../../../../lib/category-bands'
+import { getSubPageContent } from '../../../../lib/page-content'
 import { getArticlesForCategory } from '../../../../lib/related-reading'
 
 /**
@@ -334,6 +348,18 @@ export default async function CategoryPage({ params, searchParams }: Props) {
     url: collectionUrl,
     override: category.jsonLdOverride ?? undefined,
   })
+  /*
+    ItemList is what tells a crawler this is an index of products rather than a
+    page with links on it. The page's own grid is the source, so the order in
+    the markup is the order on screen and the two cannot drift.
+  */
+  const itemListLd = buildItemListLd({
+    name: category.name,
+    items: products.map((product) => ({
+      name: product.title,
+      url: urlFor(`/p/${product.slug}`),
+    })),
+  })
   const breadcrumbLd = buildBreadcrumbLd({
     items: [
       { name: 'Home', url: urlFor('/') },
@@ -347,160 +373,142 @@ export default async function CategoryPage({ params, searchParams }: Props) {
   // pointed back, so the equity and the reader both went one way only.
   const relatedArticles = await getArticlesForCategory(category.id)
 
-  return (
-    <div className="mx-auto max-w-[1440px] px-5 sm:px-8 xl:px-12">
-      <JsonLd data={[collectionLd, breadcrumbLd]} />
-      {/* Breadcrumbs */}
-      <div className="border-ih-border border-b py-4">
-        <Breadcrumb
-          items={[
-            { label: 'Home', href: '/' },
-            { label: 'Categories', href: '/c' },
-            ...trail.map((step, i) => ({
-              label: step.name,
-              // The last step is this page — never a link to itself. An
-              // unpublished ancestor is not linked either: its page 404s.
-              href: i === trail.length - 1 || !step.isPublished ? undefined : `/c/${step.slug}`,
-            })),
-          ]}
-        />
-      </div>
+  // The shelf's own section document: order, visibility and copy overrides.
+  const content = await getSubPageContent('category', {
+    name: category.name,
+    slug: category.slug,
+  })
+  const heroCopy = content.values('hero')
+  /** An override, or the wording the shelf already had. */
+  const over = (values: SectionValues, key: string, built: string): string =>
+    str(values, key) ?? built
+  const heroIntro = str(heroCopy, 'intro') ?? category.shortDescription
 
-      {/* Category header */}
-      <div className="border-ih-border border-b py-8">
-        <p className="text-ih-muted mb-3 font-mono text-[10.5px] font-medium uppercase tracking-[0.13em]">
-          Category
-        </p>
-        <h1 className="mb-3 font-serif text-[clamp(30px,4vw,40px)] font-normal leading-[1.06] tracking-[-0.01em]">
-          {category.name}
-        </h1>
-        {category.shortDescription && (
-          <p className="text-ih-muted mb-4 max-w-[620px] text-[14px] leading-[1.55]">
-            {category.shortDescription}
+  // Read live rather than authored: the bore range a shelf covers changes when
+  // a size table lands, and a typed figure would be wrong the same week.
+  const sizeSummary = await categorySizeSummary(categoryIds)
+  const gccMarkets = gccMarketLinks()
+
+  /*
+    FAQ markup follows the BAND, not the data. Questions a reader cannot see
+    are a Google violation rather than merely stale, so hiding the section has
+    to take the structured data with it.
+  */
+  const faqLd = content.isOn('faq') ? buildFaqLd({ faqs: categoryFaqs(content.values('faq')) }) : null
+
+
+  /*
+    Every band, keyed, rendered in the order the editor holds for THIS shelf.
+
+    The shipped order puts the words a buyer needs BEFORE the grid and the
+    questions after it, which is also the order a crawler wants. Reordering is
+    now a content decision rather than a code change — with two exceptions the
+    template marks `locked`: the header and the listing. A shelf page with its
+    products switched off is a heading and a 404.
+
+    Bands whose copy nobody has written return null and disappear. 195
+    categories inherit this template and 86 of them hold four products or
+    fewer; a band that rendered an empty heading on those would be padding.
+  */
+  const bands: Record<string, ReactNode> = {
+    hero: (
+      <div key="hero">
+        {/* Category header */}
+        <div className="border-ih-border border-b py-8">
+          <p className="text-ih-muted mb-3 font-mono text-[10.5px] font-medium uppercase tracking-[0.13em]">
+            {over(heroCopy, 'eyebrow', 'Category')}
           </p>
-        )}
-        <div className="text-ih-muted flex gap-6 font-mono text-[12px]">
-          <span>
-            <b className="text-ih-ink font-medium">{total}</b> SKUs
-          </span>
-          <span>
-            <b className="text-ih-ink font-medium">{allBrands.length}</b> brands
-          </span>
+          <h1 className="mb-3 font-serif text-[clamp(30px,4vw,40px)] font-normal leading-[1.06] tracking-[-0.01em]">
+            {over(heroCopy, 'heading', category.name)}
+          </h1>
+          {heroIntro && (
+            <p className="text-ih-muted mb-4 max-w-[620px] text-[14px] leading-[1.55]">
+              {heroIntro}
+            </p>
+          )}
+          <div className="text-ih-muted flex gap-6 font-mono text-[12px]">
+            <span>
+              <b className="text-ih-ink font-medium">{total}</b> SKUs
+            </span>
+            <span>
+              <b className="text-ih-ink font-medium">{allBrands.length}</b> brands
+            </span>
+          </div>
         </div>
       </div>
+    ),
+    children: (
+      <div key="children">
+        {/* Sub-categories */}
+        {category.children.length > 0 && (
+          <div className="no-scrollbar border-ih-border flex gap-2 overflow-x-auto border-b py-4">
+            {category.children.map((child) => (
+              <Link
+                key={child.id}
+                href={`/c/${child.slug}`}
+                className="border-ih-border bg-ih-surface text-ih-ink-2 hover:border-ih-accent hover:text-ih-accent inline-flex h-[30px] shrink-0 items-center whitespace-nowrap rounded-full border px-3 text-[12.5px] transition-colors"
+              >
+                {child.name}
+              </Link>
+            ))}
+          </div>
+        )}
 
-      {/* Sub-categories */}
-      {category.children.length > 0 && (
-        <div className="no-scrollbar border-ih-border flex gap-2 overflow-x-auto border-b py-4">
-          {category.children.map((child) => (
-            <Link
-              key={child.id}
-              href={`/c/${child.slug}`}
-              className="border-ih-border bg-ih-surface text-ih-ink-2 hover:border-ih-accent hover:text-ih-accent inline-flex h-[30px] shrink-0 items-center whitespace-nowrap rounded-full border px-3 text-[12.5px] transition-colors"
-            >
-              {child.name}
-            </Link>
-          ))}
-        </div>
-      )}
-
-      {/* Main listing */}
-      <div className="grid grid-cols-1 gap-9 py-8 pb-16 lg:grid-cols-[248px_1fr]">
-        {/* Filter sidebar */}
-        <aside className="self-start lg:sticky lg:top-[124px] lg:max-h-[calc(100vh-150px)] lg:overflow-y-auto">
-          <div className="flex flex-col gap-6">
-            <div className="flex items-center justify-between">
-              <span className="text-ih-muted font-mono text-[10.5px] font-medium uppercase tracking-[0.13em]">
-                Refine{activeFilterCount > 0 ? ` · ${activeFilterCount} active` : ''}
-              </span>
-              {activeFilterCount > 0 && (
-                <Link
-                  href={filterUrl({ brands: undefined, spec: undefined, page: '1' })}
-                  className="text-ih-accent text-xs hover:underline"
-                >
-                  Clear
-                </Link>
-              )}
-            </div>
-
-            {allBrands.length > 0 && (
-              <div>
-                <div className="border-ih-border mb-3 border-b pb-2.5">
-                  <span className="text-[12.5px] font-medium">Brand</span>
-                </div>
-                {/*
-                  Facets are links, not form controls: 03 §7 requires facet
-                  state to live in the URL because these pages are the SEO
-                  surface and sales share filtered links. The checkbox is
-                  therefore presentational — the real control is the anchor,
-                  and aria-pressed carries the state that the tick conveys
-                  visually.
-                */}
-                <div className="flex flex-col gap-2.5">
-                  {allBrands.map((brand) => {
-                    const active = selectedBrands.includes(brand.slug)
-                    return (
-                      <Link
-                        key={brand.id}
-                        href={toggleBrand(brand.slug)}
-                        aria-pressed={active}
-                        className={`flex items-center gap-2.5 text-[13px] transition-colors ${
-                          active ? 'text-ih-ink' : 'text-ih-ink-2 hover:text-ih-ink'
-                        }`}
-                      >
-                        <span
-                          aria-hidden="true"
-                          className={`inline-grid h-4 w-4 shrink-0 place-items-center rounded-[3px] border transition-colors ${
-                            active
-                              ? 'border-ih-accent bg-ih-accent text-white'
-                              : 'border-ih-border-strong bg-ih-surface'
-                          }`}
-                        >
-                          {active && (
-                            <svg viewBox="0 0 24 24" className="h-3 w-3" fill="none">
-                              <path
-                                d="m5 12 5 5L20 7"
-                                stroke="currentColor"
-                                strokeWidth="2.6"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                              />
-                            </svg>
-                          )}
-                        </span>
-                        <span className="flex-1">{brand.name}</span>
-                        <span className="text-ih-muted-2 font-mono text-[10.5px] tabular-nums">
-                          {brand.count}
-                        </span>
-                      </Link>
-                    )
-                  })}
-                </div>
+      </div>
+    ),
+    guidance: <CategoryProseBand key="guidance" values={content.values('guidance')} />,
+    standards: <CategoryProseBand key="standards" values={content.values('standards')} />,
+    sizes: <CategorySizeBand key="sizes" summary={sizeSummary} />,
+    service: <CategoryProseBand key="service" values={content.values('service')} />,
+    delivery: (
+      <CategoryDeliveryBand
+        key="delivery"
+        values={content.values('delivery')}
+        markets={gccMarkets}
+        categoryName={category.name}
+      />
+    ),
+    listing: (
+      <div key="listing">
+        {/* Main listing */}
+        <div className="grid grid-cols-1 gap-9 py-8 pb-16 lg:grid-cols-[248px_1fr]">
+          {/* Filter sidebar */}
+          <aside className="self-start lg:sticky lg:top-[124px] lg:max-h-[calc(100vh-150px)] lg:overflow-y-auto">
+            <div className="flex flex-col gap-6">
+              <div className="flex items-center justify-between">
+                <span className="text-ih-muted font-mono text-[10.5px] font-medium uppercase tracking-[0.13em]">
+                  Refine{activeFilterCount > 0 ? ` · ${activeFilterCount} active` : ''}
+                </span>
+                {activeFilterCount > 0 && (
+                  <Link
+                    href={filterUrl({ brands: undefined, spec: undefined, page: '1' })}
+                    className="text-ih-accent text-xs hover:underline"
+                  >
+                    Clear
+                  </Link>
+                )}
               </div>
-            )}
 
-            {/*
-              Spec facets — thread form, body configuration, pressure class.
-              Which specs appear is decided per category by `buildSpecFacets`:
-              a spec earns a panel only when it actually partitions the
-              products, so an identifier column like `Series` (29 values across
-              29 couplers) and a constant like `Max Working Pressure` (one
-              value across 44 adapters) never draw one.
-            */}
-            {facets.map((facet) => {
-              const selected = specFilter.get(facet.key) ?? new Set<string>()
-              return (
-                <div key={facet.key}>
+              {allBrands.length > 0 && (
+                <div>
                   <div className="border-ih-border mb-3 border-b pb-2.5">
-                    <span className="text-[12.5px] font-medium">{facet.label}</span>
+                    <span className="text-[12.5px] font-medium">Brand</span>
                   </div>
+                  {/*
+                    Facets are links, not form controls: 03 §7 requires facet
+                    state to live in the URL because these pages are the SEO
+                    surface and sales share filtered links. The checkbox is
+                    therefore presentational — the real control is the anchor,
+                    and aria-pressed carries the state that the tick conveys
+                    visually.
+                  */}
                   <div className="flex flex-col gap-2.5">
-                    {facet.values.map((value) => {
-                      const active = selected.has(value.key)
+                    {allBrands.map((brand) => {
+                      const active = selectedBrands.includes(brand.slug)
                       return (
                         <Link
-                          key={value.key}
-                          href={toggleSpec(facet.key, value.key)}
+                          key={brand.id}
+                          href={toggleBrand(brand.slug)}
                           aria-pressed={active}
                           className={`flex items-center gap-2.5 text-[13px] transition-colors ${
                             active ? 'text-ih-ink' : 'text-ih-ink-2 hover:text-ih-ink'
@@ -526,202 +534,289 @@ export default async function CategoryPage({ params, searchParams }: Props) {
                               </svg>
                             )}
                           </span>
-                          <span className="flex-1">{value.label}</span>
+                          <span className="flex-1">{brand.name}</span>
                           <span className="text-ih-muted-2 font-mono text-[10.5px] tabular-nums">
-                            {value.count}
+                            {brand.count}
                           </span>
                         </Link>
                       )
                     })}
                   </div>
                 </div>
-              )
-            })}
+              )}
 
-            {/*
-              The cross-reference prompt from the artboard's facet rail. It is
-              here because a filtered listing that returns nothing useful is
-              exactly where someone with a dead part number gives up.
-            */}
-            <Note>
-              <span className="block text-[13px] font-medium">Can&rsquo;t find the part?</span>
-              <span className="mt-1.5 block leading-[1.5]">
-                Send the number or a photo of the nameplate. We cross-reference obsolete codes
-                daily.
-              </span>
-              <Button asChild kind="primary" size="sm" block className="mt-3">
-                <Link href="/replacement">Cross-reference it</Link>
-              </Button>
-            </Note>
-          </div>
-        </aside>
+              {/*
+                Spec facets — thread form, body configuration, pressure class.
+                Which specs appear is decided per category by `buildSpecFacets`:
+                a spec earns a panel only when it actually partitions the
+                products, so an identifier column like `Series` (29 values across
+                29 couplers) and a constant like `Max Working Pressure` (one
+                value across 44 adapters) never draw one.
+              */}
+              {facets.map((facet) => {
+                const selected = specFilter.get(facet.key) ?? new Set<string>()
+                return (
+                  <div key={facet.key}>
+                    <div className="border-ih-border mb-3 border-b pb-2.5">
+                      <span className="text-[12.5px] font-medium">{facet.label}</span>
+                    </div>
+                    <div className="flex flex-col gap-2.5">
+                      {facet.values.map((value) => {
+                        const active = selected.has(value.key)
+                        return (
+                          <Link
+                            key={value.key}
+                            href={toggleSpec(facet.key, value.key)}
+                            aria-pressed={active}
+                            className={`flex items-center gap-2.5 text-[13px] transition-colors ${
+                              active ? 'text-ih-ink' : 'text-ih-ink-2 hover:text-ih-ink'
+                            }`}
+                          >
+                            <span
+                              aria-hidden="true"
+                              className={`inline-grid h-4 w-4 shrink-0 place-items-center rounded-[3px] border transition-colors ${
+                                active
+                                  ? 'border-ih-accent bg-ih-accent text-white'
+                                  : 'border-ih-border-strong bg-ih-surface'
+                              }`}
+                            >
+                              {active && (
+                                <svg viewBox="0 0 24 24" className="h-3 w-3" fill="none">
+                                  <path
+                                    d="m5 12 5 5L20 7"
+                                    stroke="currentColor"
+                                    strokeWidth="2.6"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                  />
+                                </svg>
+                              )}
+                            </span>
+                            <span className="flex-1">{value.label}</span>
+                            <span className="text-ih-muted-2 font-mono text-[10.5px] tabular-nums">
+                              {value.count}
+                            </span>
+                          </Link>
+                        )
+                      })}
+                    </div>
+                  </div>
+                )
+              })}
 
-        {/* Results */}
-        <section>
-          {/* Applied filter chips */}
-          {activeFilterCount > 0 && (
-            <div className="mb-4 flex flex-wrap gap-2">
-              {[...specFilter].flatMap(([labelKey, values]) => {
-                const facet = facets.find((f) => f.key === labelKey)
-                if (!facet) return []
-                return [...values].flatMap((valueKey) => {
-                  const value = facet.values.find((v) => v.key === valueKey)
-                  if (!value) return []
-                  return [
+              {/*
+                The cross-reference prompt from the artboard's facet rail. It is
+                here because a filtered listing that returns nothing useful is
+                exactly where someone with a dead part number gives up.
+              */}
+              <Note>
+                <span className="block text-[13px] font-medium">Can&rsquo;t find the part?</span>
+                <span className="mt-1.5 block leading-[1.5]">
+                  Send the number or a photo of the nameplate. We cross-reference obsolete codes
+                  daily.
+                </span>
+                <Button asChild kind="primary" size="sm" block className="mt-3">
+                  <Link href="/replacement">Cross-reference it</Link>
+                </Button>
+              </Note>
+            </div>
+          </aside>
+
+          {/* Results */}
+          <section>
+            {/* Applied filter chips */}
+            {activeFilterCount > 0 && (
+              <div className="mb-4 flex flex-wrap gap-2">
+                {[...specFilter].flatMap(([labelKey, values]) => {
+                  const facet = facets.find((f) => f.key === labelKey)
+                  if (!facet) return []
+                  return [...values].flatMap((valueKey) => {
+                    const value = facet.values.find((v) => v.key === valueKey)
+                    if (!value) return []
+                    return [
+                      <Link
+                        key={`${labelKey}:${valueKey}`}
+                        href={toggleSpec(labelKey, valueKey)}
+                        className="border-ih-accent bg-ih-accent hover:bg-ih-accent-hover inline-flex h-[30px] items-center gap-1.5 rounded-full border px-3 text-[12.5px] text-white transition-colors"
+                      >
+                        {facet.label}: {value.label}
+                        <span aria-hidden="true" className="text-[14px] leading-none opacity-70">
+                          ×
+                        </span>
+                      </Link>,
+                    ]
+                  })
+                })}
+                {selectedBrands.map((b) => {
+                  const brand = allBrands.find((br) => br.slug === b)
+                  return (
                     <Link
-                      key={`${labelKey}:${valueKey}`}
-                      href={toggleSpec(labelKey, valueKey)}
+                      key={b}
+                      href={toggleBrand(b)}
                       className="border-ih-accent bg-ih-accent hover:bg-ih-accent-hover inline-flex h-[30px] items-center gap-1.5 rounded-full border px-3 text-[12.5px] text-white transition-colors"
                     >
-                      {facet.label}: {value.label}
+                      Brand: {brand?.name ?? b}
                       <span aria-hidden="true" className="text-[14px] leading-none opacity-70">
                         ×
                       </span>
-                    </Link>,
-                  ]
-                })
-              })}
-              {selectedBrands.map((b) => {
-                const brand = allBrands.find((br) => br.slug === b)
-                return (
-                  <Link
-                    key={b}
-                    href={toggleBrand(b)}
-                    className="border-ih-accent bg-ih-accent hover:bg-ih-accent-hover inline-flex h-[30px] items-center gap-1.5 rounded-full border px-3 text-[12.5px] text-white transition-colors"
-                  >
-                    Brand: {brand?.name ?? b}
-                    <span aria-hidden="true" className="text-[14px] leading-none opacity-70">
-                      ×
-                    </span>
-                  </Link>
-                )
-              })}
-              <Link
-                href={filterUrl({ brands: undefined, page: '1' })}
-                className="text-ih-accent inline-flex h-[30px] items-center px-2 text-[12.5px] hover:underline"
-              >
-                Clear all
-              </Link>
-            </div>
-          )}
+                    </Link>
+                  )
+                })}
+                <Link
+                  href={filterUrl({ brands: undefined, page: '1' })}
+                  className="text-ih-accent inline-flex h-[30px] items-center px-2 text-[12.5px] hover:underline"
+                >
+                  Clear all
+                </Link>
+              </div>
+            )}
 
-          {/* Toolbar */}
-          <div className="border-ih-border mb-5 flex flex-wrap items-center justify-between gap-3 border-b pb-4">
-            <p className="text-ih-muted font-mono text-[12px] tabular-nums">
-              {total > 0 ? (
-                <>
-                  Showing{' '}
-                  <b className="text-ih-ink font-medium">
-                    {from}–{to}
-                  </b>{' '}
-                  of <b className="text-ih-ink font-medium">{total}</b> SKUs
-                </>
-              ) : (
-                <>No products found</>
-              )}
-            </p>
-            <div className="flex items-center gap-2">
-              <span className="text-ih-muted font-mono text-[10.5px] uppercase tracking-[0.08em]">
-                Sort
-              </span>
-              <div className="border-ih-border flex overflow-hidden rounded-md border">
-                {[
-                  { val: '', label: 'Latest' },
-                  { val: 'az', label: 'A–Z' },
-                  { val: 'za', label: 'Z–A' },
-                ].map((opt) => (
-                  <Link
-                    key={opt.val}
-                    href={filterUrl({ sort: opt.val || undefined, page: '1' })}
-                    className={`px-3 py-1.5 text-[12.5px] transition-colors ${(sp.sort ?? '') === opt.val ? 'bg-ih-accent text-white' : 'text-ih-ink-2 hover:bg-ih-surface-2'}`}
-                  >
-                    {opt.label}
-                  </Link>
-                ))}
+            {/* Toolbar */}
+            <div className="border-ih-border mb-5 flex flex-wrap items-center justify-between gap-3 border-b pb-4">
+              <p className="text-ih-muted font-mono text-[12px] tabular-nums">
+                {total > 0 ? (
+                  <>
+                    Showing{' '}
+                    <b className="text-ih-ink font-medium">
+                      {from}–{to}
+                    </b>{' '}
+                    of <b className="text-ih-ink font-medium">{total}</b> SKUs
+                  </>
+                ) : (
+                  <>No products found</>
+                )}
+              </p>
+              <div className="flex items-center gap-2">
+                <span className="text-ih-muted font-mono text-[10.5px] uppercase tracking-[0.08em]">
+                  Sort
+                </span>
+                <div className="border-ih-border flex overflow-hidden rounded-md border">
+                  {[
+                    { val: '', label: 'Latest' },
+                    { val: 'az', label: 'A–Z' },
+                    { val: 'za', label: 'Z–A' },
+                  ].map((opt) => (
+                    <Link
+                      key={opt.val}
+                      href={filterUrl({ sort: opt.val || undefined, page: '1' })}
+                      className={`px-3 py-1.5 text-[12.5px] transition-colors ${(sp.sort ?? '') === opt.val ? 'bg-ih-accent text-white' : 'text-ih-ink-2 hover:bg-ih-surface-2'}`}
+                    >
+                      {opt.label}
+                    </Link>
+                  ))}
+                </div>
               </div>
             </div>
-          </div>
 
-          {/* Product grid */}
-          {products.length === 0 ? (
-            <div className="border-ih-border bg-ih-surface rounded-lg border">
-              {/*
-                Two different empty states, because they have two different
-                fixes. Filters excluding everything is recoverable in one
-                click; a genuinely empty category is not, and sending someone
-                to "clear filters" they never set reads as broken.
-              */}
-              {selectedBrands.length > 0 ? (
-                <EmptyState
-                  condition="No SKUs match these filters"
-                  message={`Nothing in ${category.name} matches the brands you have selected.`}
-                  action={
-                    <Button asChild kind="outline">
-                      <Link href={filterUrl({ brands: undefined, page: '1' })}>Clear filters</Link>
-                    </Button>
-                  }
-                />
-              ) : (
-                <EmptyState
-                  condition="Nothing listed yet"
-                  message="This category has no published SKUs. Tell us what you need and an engineer will source it."
-                  action={
-                    <Button asChild kind="primary">
-                      <Link href="/quote/submit">Request a quote</Link>
-                    </Button>
-                  }
-                />
-              )}
-            </div>
-          ) : (
-            <div className="grid grid-cols-2 gap-4 lg:grid-cols-3 xl:grid-cols-4">
-              {products.map((product) => (
-                <ProductCard key={product.id} product={product} />
-              ))}
-            </div>
-          )}
+            {/* Product grid */}
+            {products.length === 0 ? (
+              <div className="border-ih-border bg-ih-surface rounded-lg border">
+                {/*
+                  Two different empty states, because they have two different
+                  fixes. Filters excluding everything is recoverable in one
+                  click; a genuinely empty category is not, and sending someone
+                  to "clear filters" they never set reads as broken.
+                */}
+                {selectedBrands.length > 0 ? (
+                  <EmptyState
+                    condition="No SKUs match these filters"
+                    message={`Nothing in ${category.name} matches the brands you have selected.`}
+                    action={
+                      <Button asChild kind="outline">
+                        <Link href={filterUrl({ brands: undefined, page: '1' })}>Clear filters</Link>
+                      </Button>
+                    }
+                  />
+                ) : (
+                  <EmptyState
+                    condition="Nothing listed yet"
+                    message="This category has no published SKUs. Tell us what you need and an engineer will source it."
+                    action={
+                      <Button asChild kind="primary">
+                        <Link href="/quote/submit">Request a quote</Link>
+                      </Button>
+                    }
+                  />
+                )}
+              </div>
+            ) : (
+              <div className="grid grid-cols-2 gap-4 lg:grid-cols-3 xl:grid-cols-4">
+                {products.map((product) => (
+                  <ProductCard key={product.id} product={product} />
+                ))}
+              </div>
+            )}
 
-          {/* Pagination */}
-          {totalPages > 1 && (
-            <div className="flex justify-center gap-1 pt-10">
-              {page > 1 && (
-                <Link
-                  href={filterUrl({ page: String(page - 1) })}
-                  className="border-ih-border text-ih-ink-2 hover:border-ih-accent hover:text-ih-accent flex h-9 w-9 items-center justify-center rounded-md border font-mono text-[13px] transition-colors"
-                >
-                  ‹
-                </Link>
-              )}
-              {Array.from({ length: Math.min(totalPages, 7) }, (_, i) => {
-                const p = i + 1
-                return (
+            {/* Pagination */}
+            {totalPages > 1 && (
+              <div className="flex justify-center gap-1 pt-10">
+                {page > 1 && (
                   <Link
-                    key={p}
-                    href={filterUrl({ page: String(p) })}
-                    className={`flex h-9 w-9 items-center justify-center rounded-md border font-mono text-[13px] tabular-nums transition-colors ${p === page ? 'border-ih-accent bg-ih-accent text-white' : 'border-ih-border text-ih-ink-2 hover:border-ih-accent hover:text-ih-accent'}`}
+                    href={filterUrl({ page: String(page - 1) })}
+                    className="border-ih-border text-ih-ink-2 hover:border-ih-accent hover:text-ih-accent flex h-9 w-9 items-center justify-center rounded-md border font-mono text-[13px] transition-colors"
                   >
-                    {p}
+                    ‹
                   </Link>
-                )
-              })}
-              {page < totalPages && (
-                <Link
-                  href={filterUrl({ page: String(page + 1) })}
-                  className="border-ih-border text-ih-ink-2 hover:border-ih-accent hover:text-ih-accent flex h-9 w-9 items-center justify-center rounded-md border font-mono text-[13px] transition-colors"
-                >
-                  ›
-                </Link>
-              )}
-            </div>
-          )}
-        </section>
+                )}
+                {Array.from({ length: Math.min(totalPages, 7) }, (_, i) => {
+                  const p = i + 1
+                  return (
+                    <Link
+                      key={p}
+                      href={filterUrl({ page: String(p) })}
+                      className={`flex h-9 w-9 items-center justify-center rounded-md border font-mono text-[13px] tabular-nums transition-colors ${p === page ? 'border-ih-accent bg-ih-accent text-white' : 'border-ih-border text-ih-ink-2 hover:border-ih-accent hover:text-ih-accent'}`}
+                    >
+                      {p}
+                    </Link>
+                  )
+                })}
+                {page < totalPages && (
+                  <Link
+                    href={filterUrl({ page: String(page + 1) })}
+                    className="border-ih-border text-ih-ink-2 hover:border-ih-accent hover:text-ih-accent flex h-9 w-9 items-center justify-center rounded-md border font-mono text-[13px] transition-colors"
+                  >
+                    ›
+                  </Link>
+                )}
+              </div>
+            )}
+          </section>
+        </div>
+      </div>
+    ),
+    faq: <CategoryFaqBand key="faq" values={content.values('faq')} />,
+    reading: (
+      <div key="reading" className="pb-16">
+          <RelatedReading
+            articles={relatedArticles}
+            heading="Written about this range"
+            eyebrow="From the blog"
+          />
+      </div>
+    ),
+  }
 
-        <RelatedReading
-          articles={relatedArticles}
-          heading="Written about this range"
-          eyebrow="From the blog"
+  return (
+    <div className="mx-auto max-w-[1440px] px-5 sm:px-8 xl:px-12">
+      <JsonLd data={[collectionLd, itemListLd, breadcrumbLd, faqLd]} />
+      {/* Breadcrumbs */}
+      <div className="border-ih-border border-b py-4">
+        <Breadcrumb
+          items={[
+            { label: 'Home', href: '/' },
+            { label: 'Categories', href: '/c' },
+            ...trail.map((step, i) => ({
+              label: step.name,
+              // The last step is this page — never a link to itself. An
+              // unpublished ancestor is not linked either: its page 404s.
+              href: i === trail.length - 1 || !step.isPublished ? undefined : `/c/${step.slug}`,
+            })),
+          ]}
         />
       </div>
+
+
+      {content.order.map((key) => bands[key] ?? null)}
     </div>
   )
 }

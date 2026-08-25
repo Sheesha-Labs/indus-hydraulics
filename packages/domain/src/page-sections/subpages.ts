@@ -1,4 +1,4 @@
-import { area, eyebrow, text } from './fields'
+import { area, eyebrow, faqList, text } from './fields'
 import type { MasterPageDef, SectionDef, SimpleFieldDef } from './types'
 
 /**
@@ -21,7 +21,7 @@ import type { MasterPageDef, SectionDef, SimpleFieldDef } from './types'
  * makes `subPageDef`'s switch fail to compile until the new kind has a
  * template — which is the point of writing it exhaustively.
  */
-export type SubPageKind = 'market' | 'brand'
+export type SubPageKind = 'market' | 'brand' | 'category'
 
 export type SubPageKindDef = {
   kind: SubPageKind
@@ -48,6 +48,15 @@ export const SUBPAGE_KINDS: readonly SubPageKindDef[] = [
     description:
       'One landing per export market, built from a shared template. Reorder its bands, hide the ones a market does not need, and override any heading.',
     itemLabel: 'market page',
+  },
+  {
+    kind: 'category',
+    label: 'Catalogue categories',
+    publicPath: '/c',
+    adminPath: '/admin/pages/sub/category',
+    description:
+      'One shelf page per catalogue category. The product grid, the filters and the sub-category chips build themselves; these bands are the words around them — what the range covers, how to choose, the standards it is built to, and where it ships.',
+    itemLabel: 'category page',
   },
   {
     kind: 'brand',
@@ -290,6 +299,138 @@ export const BRAND_SECTIONS: readonly SectionDef[] = [
   },
 ]
 
+// ── the catalogue-category template ──────────────────────────────────────
+
+/**
+ * A shelf page.
+ *
+ * Every band below the hero is OPTIONAL and hides itself when nobody has
+ * written it — 195 categories inherit this template, and 86 of them hold four
+ * products or fewer. A band that rendered an empty heading on those would be
+ * padding, which is the doorway pattern this catalogue is deliberately not
+ * following.
+ *
+ * The listing itself is locked. It is not a band around the page; it IS the
+ * page, and a shelf with its products switched off is a 404 with a heading.
+ */
+export const CATEGORY_SECTIONS: readonly SectionDef[] = [
+  {
+    key: 'hero',
+    label: 'Header',
+    description: 'The category name, its opening paragraph and the SKU and brand counts.',
+    locked: true,
+    dataNote:
+      'The name and the counts come from the catalogue. Blank copy keeps the category’s own short description, which is edited under Catalogue · Categories.',
+    fields: [
+      overrideEyebrow('eyebrow', 'Eyebrow'),
+      override('heading', 'Headline'),
+      overrideBody('intro', 'Opening paragraph'),
+    ],
+    defaults: { eyebrow: null, heading: null, intro: null },
+  },
+  structural(
+    'children',
+    'Sub-category chips',
+    'The row of links to the shelves beneath this one.',
+    'The chips are this category’s published children.',
+  ),
+  {
+    key: 'guidance',
+    label: 'How to choose',
+    description: 'The selection question a buyer actually arrives with.',
+    dataNote: 'Written per category. The band hides itself until someone writes it.',
+    fields: [
+      overrideEyebrow('eyebrow', 'Eyebrow'),
+      override('heading', 'Heading'),
+      overrideBody('body', 'Body'),
+    ],
+    defaults: { eyebrow: null, heading: null, body: null },
+  },
+  {
+    key: 'standards',
+    label: 'Standards',
+    description: 'The standards this range is built to, and what they require.',
+    dataNote:
+      'Written per category. Say only what the standard states — a specification nobody sourced is the error this catalogue has had to undo twice.',
+    fields: [
+      overrideEyebrow('eyebrow', 'Eyebrow'),
+      override('heading', 'Heading'),
+      overrideBody('body', 'Body'),
+    ],
+    defaults: { eyebrow: null, heading: null, body: null },
+  },
+  structural(
+    'sizes',
+    'Size range',
+    'The bore and thread range covered by the size tables on this shelf.',
+    'Read live from the product size tables. The band hides itself where no product on the shelf has one.',
+  ),
+  {
+    key: 'service',
+    label: 'What we do to it',
+    description: 'Cutting, crimping, testing, certifying — the work before despatch.',
+    dataNote: 'Written per category. The band hides itself until someone writes it.',
+    fields: [
+      overrideEyebrow('eyebrow', 'Eyebrow'),
+      override('heading', 'Heading'),
+      overrideBody('body', 'Body'),
+    ],
+    defaults: { eyebrow: null, heading: null, body: null },
+  },
+  {
+    key: 'delivery',
+    label: 'Delivery and markets',
+    description: 'Stock position, and the links out to the export-market pages.',
+    dataNote:
+      'The stock line comes from the catalogue-wide stock position. The market links are the GCC states, and they are what makes the link between a shelf and a market page run both ways.',
+    fields: [
+      overrideEyebrow('eyebrow', 'Eyebrow'),
+      override('heading', 'Heading'),
+      overrideBody('body', 'Body'),
+    ],
+    defaults: { eyebrow: null, heading: null, body: null },
+  },
+  {
+    key: 'listing',
+    label: 'Filters and products',
+    description: 'The filter sidebar, the product grid and its pagination.',
+    locked: true,
+    dataNote: 'The live catalogue. This band is the page and cannot be switched off.',
+    fields: [],
+    defaults: {},
+  },
+  {
+    key: 'faq',
+    label: 'FAQ',
+    description: 'Questions buyers ask about this range.',
+    dataNote:
+      'Published to Google as FAQ structured data, so the markup follows this section being switched on or off. Write real questions; an empty list hides the band.',
+    fields: [
+      overrideEyebrow('eyebrow', 'Eyebrow'),
+      override('heading', 'Heading'),
+      faqList(8),
+    ],
+    defaults: { eyebrow: null, heading: null, items: [] },
+  },
+  structural(
+    'reading',
+    'Written about this range',
+    'Links to the articles that cover this shelf.',
+    'The articles are chosen by the blog’s own linking. The band hides itself when there are none.',
+  ),
+]
+
+/** The definition for one category's shelf page. */
+export function categoryPageDef(record: { name: string; slug: string }): MasterPageDef {
+  return {
+    key: record.slug,
+    label: record.name,
+    path: `/c/${record.slug}`,
+    description: `The catalogue shelf for ${record.name}.`,
+    sections: [...CATEGORY_SECTIONS],
+  }
+}
+
 /** The definition for one brand's page. */
 export function brandPageDef(record: { name: string; slug: string }): MasterPageDef {
   return {
@@ -322,6 +463,8 @@ export function subPageDef(
       return marketPageDef(record)
     case 'brand':
       return brandPageDef(record)
+    case 'category':
+      return categoryPageDef(record)
     // Every kind in SUBPAGE_KINDS has a case; the switch is exhaustive and the
     // type checker enforces it as kinds are added.
     default: {
