@@ -244,6 +244,20 @@ FIG_PROSE = {
         material='Alloy steel, heavy wall.',
         source='Marlia p15-p16, SPM p2',
     ),
+    '1505': dict(
+        summary='The Figure 1505 is a 15,000 psi union built for fracturing service, made in '
+                '3 in only, and designed to connect back to existing 3 in Figure 1502 iron.',
+        service='Fracturing.',
+        features=[
+            'Made in 3 in only.',
+            'Backward connectable with 3 in Figure 1502 iron, so it goes into an existing spread '
+            'without changing the rest of the line.',
+            'A thread start marker on the nut removes cross-threading and cuts make-up time.',
+            'Improvements in the critical areas of the union significantly extend its life.',
+            'Available with butt weld ends.',
+        ],
+        source='TechnipFMC Weco wing unions p3, p6',
+    ),
     '2002': dict(
         summary='The Figure 2002 is a 20,000 psi butt weld union, the highest-rated union in the '
                 'range.',
