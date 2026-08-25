@@ -289,3 +289,33 @@ SOUR_NOTE = ('Sour gas service unions are supplied in H2S trim and are rated bel
              'service union of the same figure number wherever the source publishes a separate '
              'H2S rating. Confirm the service class, the trim and the certification you need on '
              'your enquiry - we quote against the line specification.')
+
+
+# A shared explainer on how the connection itself works. Generic engineering
+# fact about the wing-union form, not a claim about any one figure, and it is
+# what a buyer arriving from "what is a hammer union" needs before the table
+# means anything. Written once and rendered on every page rather than varied,
+# because varying it would be padding.
+HOW_IT_MAKES_UP = (
+    'A hammer union is a three-piece connection. A male sub and a female sub carry the two line '
+    'ends, and a wing nut turns on a thread cut into the male sub and pulls a shoulder on the '
+    'female sub down onto the seat. The lugs standing proud of the nut are struck with a hammer '
+    'to tighten it, which is where the name comes from — the joint is made up and broken out with '
+    'a sledgehammer rather than a wrench, so a line can be rigged and stripped quickly in the '
+    'field. The seal is made by the seat, not by the thread: the nut only supplies the load that '
+    'holds the two seating faces together. That is why a union will leak from a scored seat or a '
+    'perished seal long before the thread is at fault, and why a worn union is usually a sub or a '
+    'seal replacement rather than a scrap part.'
+)
+
+# What a buyer has to settle before ordering. Every clause points at something
+# published on the page — figure, service class, end type, size — rather than
+# adding a fact.
+SPECIFYING = (
+    'Four things fix a hammer union: the figure number, which sets the pressure class and decides '
+    'what it will mate with; the service class, standard or sour gas; the end connection, threaded '
+    'or butt weld; and the nominal size. Figure numbers are an industry series, so a union of the '
+    'same figure and size from another maker will mate — but the pressure rating stamped on the '
+    'union is what governs, not the figure number on its own. Send us the line specification and '
+    'we will confirm the match before quoting.'
+)
