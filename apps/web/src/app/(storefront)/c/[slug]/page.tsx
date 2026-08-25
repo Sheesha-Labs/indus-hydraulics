@@ -10,6 +10,7 @@ import {
   buildFaqLd,
   buildItemListLd,
   buildSpecFacets,
+  categoryExportRegions,
   countSelected,
   parseSpecFilter,
   productIdsMatching,
@@ -360,6 +361,12 @@ export default async function CategoryPage({ params, searchParams }: Props) {
       url: urlFor(`/p/${product.slug}`),
     })),
   })
+  // Everywhere the delivery band does NOT already cover. The profile is the
+  // ROOT's — "ferrules" and "banjo bolts" ship the same way — while the seed is
+  // this page's own slug, so 46 sub-categories under Hoses & Fittings do not
+  // carry 46 identical blocks.
+  const exportRegions = categoryExportRegions(category.slug, trail[0]?.slug ?? category.slug)
+
   const breadcrumbLd = buildBreadcrumbLd({
     items: [
       { name: 'Home', url: urlFor('/') },
@@ -394,8 +401,9 @@ export default async function CategoryPage({ params, searchParams }: Props) {
     are a Google violation rather than merely stale, so hiding the section has
     to take the structured data with it.
   */
-  const faqLd = content.isOn('faq') ? buildFaqLd({ faqs: categoryFaqs(content.values('faq')) }) : null
-
+  const faqLd = content.isOn('faq')
+    ? buildFaqLd({ faqs: categoryFaqs(content.values('faq')) })
+    : null
 
   /*
     Every band, keyed, rendered in the order the editor holds for THIS shelf.
@@ -453,7 +461,6 @@ export default async function CategoryPage({ params, searchParams }: Props) {
             ))}
           </div>
         )}
-
       </div>
     ),
     guidance: <CategoryProseBand key="guidance" values={content.values('guidance')} />,
@@ -466,6 +473,7 @@ export default async function CategoryPage({ params, searchParams }: Props) {
         values={content.values('delivery')}
         markets={gccMarkets}
         categoryName={category.name}
+        exportRegions={exportRegions}
       />
     ),
     listing: (
@@ -723,7 +731,9 @@ export default async function CategoryPage({ params, searchParams }: Props) {
                     message={`Nothing in ${category.name} matches the brands you have selected.`}
                     action={
                       <Button asChild kind="outline">
-                        <Link href={filterUrl({ brands: undefined, page: '1' })}>Clear filters</Link>
+                        <Link href={filterUrl({ brands: undefined, page: '1' })}>
+                          Clear filters
+                        </Link>
                       </Button>
                     }
                   />
@@ -787,11 +797,11 @@ export default async function CategoryPage({ params, searchParams }: Props) {
     faq: <CategoryFaqBand key="faq" values={content.values('faq')} />,
     reading: (
       <div key="reading" className="pb-16">
-          <RelatedReading
-            articles={relatedArticles}
-            heading="Written about this range"
-            eyebrow="From the blog"
-          />
+        <RelatedReading
+          articles={relatedArticles}
+          heading="Written about this range"
+          eyebrow="From the blog"
+        />
       </div>
     ),
   }
@@ -814,7 +824,6 @@ export default async function CategoryPage({ params, searchParams }: Props) {
           ]}
         />
       </div>
-
 
       {content.order.map((key) => bands[key] ?? null)}
     </div>

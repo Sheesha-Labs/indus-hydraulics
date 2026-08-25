@@ -21,6 +21,7 @@ import {
   relatedProductWindow,
 } from '@indus/domain'
 import { Badge, Breadcrumb, Button, JsonLd } from '@indus/ui'
+import ProductExportNote from '../../../../components/markets/ProductExportNote'
 import ProductGallery from '../../../../components/ProductGallery'
 import AddToQuoteButton from '../../../../components/AddToQuoteButton'
 import AddToCompareButton from '../../../../components/AddToCompareButton'
@@ -152,11 +153,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!product) return {}
 
   const ogPath = product.ogImageMediaId
-    ? (await db.media.findUnique({
-        where: { id: product.ogImageMediaId },
-        select: { storagePath: true },
-      }))?.storagePath ?? null
-    : product.images[0]?.media.storagePath ?? null
+    ? ((
+        await db.media.findUnique({
+          where: { id: product.ogImageMediaId },
+          select: { storagePath: true },
+        })
+      )?.storagePath ?? null)
+    : (product.images[0]?.media.storagePath ?? null)
 
   // Content-depth gate (#7-3). When PRODUCT_CONTENT_NOINDEX_BELOW is
   // set on Vercel, force noindex on PDPs that score below the
@@ -232,14 +235,16 @@ export default async function ProductPage({ params }: Props) {
       // Settles coupling families the title does not name — a Guillemin
       // coupling filed under `guillemin-couplings` need not repeat the word.
       categorySlug: product.category?.slug ?? null,
-    }),
+    })
   )
 
   // Template-driven key features. For every template field flagged
   // isKeyFeature with a value entered on the product, produce a bullet.
   // descriptionShort renders as its own paragraph elsewhere — it is no
   // longer used as a fallback bullet source.
-  const specByFieldId = new Map(product.specs.filter((s) => s.templateFieldId).map((s) => [s.templateFieldId!, s]))
+  const specByFieldId = new Map(
+    product.specs.filter((s) => s.templateFieldId).map((s) => [s.templateFieldId!, s])
+  )
   const keyFeatures = (product.specTemplate?.fields ?? [])
     .filter((f) => f.isKeyFeature)
     .map((f) => {
@@ -271,7 +276,7 @@ export default async function ProductPage({ params }: Props) {
         })
         const wanted = relatedProductWindow(
           siblings.map((s) => s.sku),
-          product.sku,
+          product.sku
         )
         if (wanted.length === 0) return []
 
@@ -302,9 +307,17 @@ export default async function ProductPage({ params }: Props) {
   const datasheetUrl = firstDatasheet ? `/api/documents/${firstDatasheet.id}` : undefined
 
   const tabSpecGroups = Object.fromEntries(
-    Object.entries(specGroups).map(([g, specs]) =>
-      [g, specs.map((s) => ({ id: s.id, label: s.label, value: s.value, unit: s.unit, group: s.group, isFilterable: s.isFilterable }))]
-    )
+    Object.entries(specGroups).map(([g, specs]) => [
+      g,
+      specs.map((s) => ({
+        id: s.id,
+        label: s.label,
+        value: s.value,
+        unit: s.unit,
+        group: s.group,
+        isFilterable: s.isFilterable,
+      })),
+    ])
   )
 
   // Same for the documents tab: point at the route, not at a signed URL.
@@ -354,7 +367,9 @@ export default async function ProductPage({ params }: Props) {
   const equivalenceNote = equivalenceBrand
     ? `Replaces the ${equivalenceBrand} ${product.crossReferences
         .map((r) => r.competitorMpn)
-        .join(' / ')} series. Quote the Indus part number, or send us the ${equivalenceBrand} number and we will cross it.`
+        .join(
+          ' / '
+        )} series. Quote the Indus part number, or send us the ${equivalenceBrand} number and we will cross it.`
     : null
 
   const stockState = productAvailability({
@@ -443,13 +458,13 @@ export default async function ProductPage({ params }: Props) {
     <>
       <JsonLd data={[productLd, breadcrumbLd, faqLd]} />
       {isPreview && (
-        <div className="border-b border-[oklch(0.88_0.06_78)] bg-ih-warning-soft px-8 py-2.5 text-center font-mono text-[11px] tracking-[0.06em] text-[oklch(0.46_0.1_62)]">
+        <div className="bg-ih-warning-soft border-b border-[oklch(0.88_0.06_78)] px-8 py-2.5 text-center font-mono text-[11px] tracking-[0.06em] text-[oklch(0.46_0.1_62)]">
           PREVIEW MODE · {product.status.toUpperCase()} · not visible to public
         </div>
       )}
       <div className="mx-auto max-w-[1440px] px-5 sm:px-8 xl:px-12">
         {/* Breadcrumbs */}
-        <div className="border-b border-ih-border py-4">
+        <div className="border-ih-border border-b py-4">
           <Breadcrumb
             items={[
               { label: 'Home', href: '/' },
@@ -462,7 +477,7 @@ export default async function ProductPage({ params }: Props) {
         </div>
 
         {product.status === 'discontinued' && (
-          <div className="mt-4 rounded-md border border-[oklch(0.88_0.05_28)] bg-ih-danger-soft px-4 py-3 text-[13.5px] font-medium text-[oklch(0.44_0.14_28)]">
+          <div className="bg-ih-danger-soft mt-4 rounded-md border border-[oklch(0.88_0.05_28)] px-4 py-3 text-[13.5px] font-medium text-[oklch(0.44_0.14_28)]">
             This product has been discontinued.
             {product.supersededBy && (
               <>
@@ -497,9 +512,9 @@ export default async function ProductPage({ params }: Props) {
                   </Badge>
                 </Link>
               )}
-              <span className="font-mono text-[11.5px] text-ih-muted">{product.sku}</span>
+              <span className="text-ih-muted font-mono text-[11.5px]">{product.sku}</span>
               {product.countryOfOrigin && (
-                <span className="font-mono text-[11.5px] text-ih-muted">
+                <span className="text-ih-muted font-mono text-[11.5px]">
                   · MADE IN {product.countryOfOrigin.toUpperCase()}
                 </span>
               )}
@@ -511,14 +526,14 @@ export default async function ProductPage({ params }: Props) {
 
             <div className="mt-3.5 flex flex-wrap items-center gap-3">
               {product.category && (
-                <span className="text-[14px] text-ih-ink-2">{product.category.name}</span>
+                <span className="text-ih-ink-2 text-[14px]">{product.category.name}</span>
               )}
               {product.mpn && (
                 <>
                   <span aria-hidden="true" className="text-ih-border-strong">
                     ·
                   </span>
-                  <span className="font-mono text-[12.5px] text-ih-muted">MFR {product.mpn}</span>
+                  <span className="text-ih-muted font-mono text-[12.5px]">MFR {product.mpn}</span>
                 </>
               )}
               <StockPill state={stockState} />
@@ -526,7 +541,7 @@ export default async function ProductPage({ params }: Props) {
           </div>
 
           {/* Gallery — row 1 on desktop, spans down; second in source order */}
-          <div className="lg:col-start-1 lg:row-start-1 lg:row-span-2">
+          <div className="lg:col-start-1 lg:row-span-2 lg:row-start-1">
             <ProductGallery
               images={product.images.map((img) => ({
                 url: mediaUrl(img.media.storagePath),
@@ -538,10 +553,9 @@ export default async function ProductPage({ params }: Props) {
 
           {/* Info column — row 2, right */}
           <div className="flex flex-col lg:col-start-2 lg:row-start-2">
-
             {/* Short description — prose blurb above the bullet list. */}
             {product.descriptionShort && (
-              <p className="mb-5 whitespace-pre-line text-[16px] leading-[1.6] text-ih-ink-2">
+              <p className="text-ih-ink-2 mb-5 whitespace-pre-line text-[16px] leading-[1.6]">
                 {product.descriptionShort}
               </p>
             )}
@@ -550,15 +564,19 @@ export default async function ProductPage({ params }: Props) {
                 fields are flagged as Key feature, or no values have been entered. */}
             {keyFeatures.length > 0 && (
               <div className="pb-6">
-                <h3 className="mb-3.5 font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">Key features</h3>
+                <h3 className="text-ih-muted mb-3.5 font-mono text-[10.5px] font-medium uppercase tracking-[0.13em]">
+                  Key features
+                </h3>
                 <ul className="flex flex-col gap-2.5">
                   {keyFeatures.map((feat) => (
                     <li
                       key={feat.id}
-                      className="grid gap-2.5 text-[14px] leading-[1.5] text-ih-ink-2"
+                      className="text-ih-ink-2 grid gap-2.5 text-[14px] leading-[1.5]"
                       style={{ gridTemplateColumns: '16px 1fr' }}
                     >
-                      <span aria-hidden="true" className="text-ih-steel">✓</span>
+                      <span aria-hidden="true" className="text-ih-steel">
+                        ✓
+                      </span>
                       <span>{feat.text}</span>
                     </li>
                   ))}
@@ -568,16 +586,19 @@ export default async function ProductPage({ params }: Props) {
 
             {/* Quick spec table */}
             {quickSpecs.length > 0 && (
-              <div className="mb-6 overflow-hidden rounded-lg border border-ih-border bg-ih-surface">
+              <div className="border-ih-border bg-ih-surface mb-6 overflow-hidden rounded-lg border">
                 <dl className="grid grid-cols-2">
                   {quickSpecs.map((spec, i) => (
                     <div
                       key={spec.id}
-                      className={`flex flex-col border-ih-border px-4 py-3 ${i % 2 === 0 ? 'border-r' : ''} ${i < quickSpecs.length - 2 ? 'border-b' : ''}`}
+                      className={`border-ih-border flex flex-col px-4 py-3 ${i % 2 === 0 ? 'border-r' : ''} ${i < quickSpecs.length - 2 ? 'border-b' : ''}`}
                     >
-                      <dt className="font-mono text-[10px] uppercase tracking-[0.08em] text-ih-muted">{spec.label}</dt>
-                      <dd className="mt-1 font-mono text-[13px] text-ih-ink">
-                        {spec.value}{spec.unit ? ` ${spec.unit}` : ''}
+                      <dt className="text-ih-muted font-mono text-[10px] uppercase tracking-[0.08em]">
+                        {spec.label}
+                      </dt>
+                      <dd className="text-ih-ink mt-1 font-mono text-[13px]">
+                        {spec.value}
+                        {spec.unit ? ` ${spec.unit}` : ''}
                       </dd>
                     </div>
                   ))}
@@ -614,7 +635,9 @@ export default async function ProductPage({ params }: Props) {
                   </Button>
                 )}
                 <Button asChild kind="outline" size="lg">
-                  <a href={mailtoQuoteHref(settings.contactEmail, product.sku)}>Email for a quotation</a>
+                  <a href={mailtoQuoteHref(settings.contactEmail, product.sku)}>
+                    Email for a quotation
+                  </a>
                 </Button>
               </div>
 
@@ -623,19 +646,23 @@ export default async function ProductPage({ params }: Props) {
                 categoryId={product.categoryId}
                 specTemplateId={product.specTemplateId}
                 title={product.title}
-                imageUrl={product.images[0] ? mediaUrl(product.images[0].media.storagePath) : undefined}
+                imageUrl={
+                  product.images[0] ? mediaUrl(product.images[0].media.storagePath) : undefined
+                }
               />
             </div>
 
             {/* Datasheet card */}
             {product.documents[0] && (
-              <div className="mt-1 mb-6 flex items-center gap-3 rounded-lg border border-ih-border bg-ih-surface p-4">
-                <div className="grid h-11 w-9 shrink-0 place-items-center rounded-sm border border-ih-border bg-ih-surface-2 font-mono text-[9px] font-medium text-ih-accent">
+              <div className="border-ih-border bg-ih-surface mb-6 mt-1 flex items-center gap-3 rounded-lg border p-4">
+                <div className="border-ih-border bg-ih-surface-2 text-ih-accent grid h-11 w-9 shrink-0 place-items-center rounded-sm border font-mono text-[9px] font-medium">
                   {product.documents[0].kind.toUpperCase().slice(0, 4)}
                 </div>
-                <div className="flex-1 min-w-0">
-                  <div className="text-[13px] font-medium truncate">{product.documents[0].title}</div>
-                  <div className="mt-0.5 font-mono text-[11px] text-ih-muted">
+                <div className="min-w-0 flex-1">
+                  <div className="truncate text-[13px] font-medium">
+                    {product.documents[0].title}
+                  </div>
+                  <div className="text-ih-muted mt-0.5 font-mono text-[11px]">
                     {product.documents[0].kind} · {product.documents[0].language.toUpperCase()}
                   </div>
                 </div>
@@ -643,7 +670,7 @@ export default async function ProductPage({ params }: Props) {
                   href={`/api/documents/${product.documents[0].id}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex h-8 shrink-0 items-center rounded-sm border border-ih-border-strong px-3 font-mono text-[11px] text-ih-ink transition-colors hover:border-ih-accent hover:text-ih-accent"
+                  className="border-ih-border-strong text-ih-ink hover:border-ih-accent hover:text-ih-accent flex h-8 shrink-0 items-center rounded-sm border px-3 font-mono text-[11px] transition-colors"
                 >
                   {product.documents[0].isGated ? '🔒 Download' : '↓ Download'}
                 </a>
@@ -657,19 +684,32 @@ export default async function ProductPage({ params }: Props) {
             */}
             <div className="grid grid-cols-1 gap-3 sm:grid-cols-3">
               {[
-                { icon: TruckIcon, title: 'Ships in 24h', sub: 'Order before 14:00 GST · Jebel Ali' },
+                {
+                  icon: TruckIcon,
+                  title: 'Ships in 24h',
+                  sub: 'Order before 14:00 GST · Jebel Ali',
+                },
                 {
                   icon: ShieldIcon,
                   title: `${product.warrantyMonths ?? 24}-month warranty`,
                   sub: 'Manufacturer-backed · genuine parts',
                 },
-                { icon: WrenchIcon, title: 'Engineering support', sub: 'A real applications engineer' },
+                {
+                  icon: WrenchIcon,
+                  title: 'Engineering support',
+                  sub: 'A real applications engineer',
+                },
               ].map((trust) => (
-                <div key={trust.title} className="flex gap-2.5 rounded-lg border border-ih-border bg-ih-surface p-3.5">
+                <div
+                  key={trust.title}
+                  className="border-ih-border bg-ih-surface flex gap-2.5 rounded-lg border p-3.5"
+                >
                   <trust.icon />
                   <div>
                     <div className="text-[12.5px] font-medium">{trust.title}</div>
-                    <div className="mt-0.5 text-[11.5px] leading-[1.45] text-ih-muted">{trust.sub}</div>
+                    <div className="text-ih-muted mt-0.5 text-[11.5px] leading-[1.45]">
+                      {trust.sub}
+                    </div>
                   </div>
                 </div>
               ))}
@@ -703,6 +743,18 @@ export default async function ProductPage({ params }: Props) {
         />
 
         {/*
+          One line rather than the twelve-destination section every other
+          surface closes on — see ProductExportNote for why the catalogue is
+          the one place that would be a doorway-page signal rather than a
+          shipping note. Sits under the trade tabs because it answers the
+          question those tabs raise: origin, HS code, weight, and then where
+          it goes.
+        */}
+        <div className="border-ih-border border-t pt-6">
+          <ProductExportNote />
+        </div>
+
+        {/*
           Trade names in other languages. Rendered as visible text rather than
           hidden markup — a term only earns a search impression if it is on the
           page, and a buyer who knows the part as a DKO-L needs to see it to
@@ -710,23 +762,22 @@ export default async function ProductPage({ params }: Props) {
           composer declined to name the product.
         */}
         {alternateNames.length > 0 && (
-          <section className="border-t border-ih-border pt-8 pb-2">
+          <section className="border-ih-border border-t pb-2 pt-8">
             <div className="mb-4">
-              <div className="mono mb-2 text-[11px] uppercase tracking-[0.16em] text-ih-muted">
+              <div className="mono text-ih-muted mb-2 text-[11px] uppercase tracking-[0.16em]">
                 Also known as
               </div>
-              <p className="max-w-[720px] text-[14px] leading-[1.6] text-ih-muted">
-                The same part, in the designations used across European and Gulf trade
-                catalogues.
+              <p className="text-ih-muted max-w-[720px] text-[14px] leading-[1.6]">
+                The same part, in the designations used across European and Gulf trade catalogues.
               </p>
             </div>
             <dl className="grid grid-cols-1 gap-x-8 gap-y-2 sm:grid-cols-2">
               {alternateNames.map((n) => (
-                <div key={n.lang} className="flex gap-3 border-b border-ih-border py-2">
-                  <dt className="mono w-8 shrink-0 pt-[2px] text-[11px] uppercase tracking-[0.1em] text-ih-muted">
+                <div key={n.lang} className="border-ih-border flex gap-3 border-b py-2">
+                  <dt className="mono text-ih-muted w-8 shrink-0 pt-[2px] text-[11px] uppercase tracking-[0.1em]">
                     {n.lang}
                   </dt>
-                  <dd className="text-[14px] leading-[1.5] text-ih-ink-2">{n.name}</dd>
+                  <dd className="text-ih-ink-2 text-[14px] leading-[1.5]">{n.name}</dd>
                 </div>
               ))}
             </dl>
@@ -741,19 +792,23 @@ export default async function ProductPage({ params }: Props) {
 
         {/* Related products */}
         {related.length > 0 && (
-          <section className="border-t border-ih-border pt-8 pb-20">
+          <section className="border-ih-border border-t pb-20 pt-8">
             <div className="mb-6">
-              <div className="font-mono text-[11px] tracking-[0.16em] text-ih-muted uppercase mb-2">RELATED · OFTEN PAIRED WITH</div>
-              <h2 className="text-[28px] font-semibold tracking-[-0.02em]">Engineers viewing this also looked at</h2>
+              <div className="text-ih-muted mb-2 font-mono text-[11px] uppercase tracking-[0.16em]">
+                RELATED · OFTEN PAIRED WITH
+              </div>
+              <h2 className="text-[28px] font-semibold tracking-[-0.02em]">
+                Engineers viewing this also looked at
+              </h2>
             </div>
             <div className="grid grid-cols-4 gap-4">
               {related.map((rel) => (
                 <Link
                   key={rel.id}
                   href={`/p/${rel.slug}`}
-                  className="group border border-ih-border bg-ih-surface overflow-hidden flex flex-col hover:border-ih-accent transition-colors"
+                  className="border-ih-border bg-ih-surface hover:border-ih-accent group flex flex-col overflow-hidden border transition-colors"
                 >
-                  <div className="aspect-square border-b border-ih-border bg-ih-surface-2 relative">
+                  <div className="border-ih-border bg-ih-surface-2 relative aspect-square border-b">
                     {rel.images[0] ? (
                       <Image
                         src={mediaUrl(rel.images[0]!.media.storagePath)}
@@ -763,18 +818,18 @@ export default async function ProductPage({ params }: Props) {
                         sizes="25vw"
                       />
                     ) : (
-                      <div className="absolute inset-0 grid place-items-center font-mono text-[10px] text-ih-muted">
+                      <div className="text-ih-muted absolute inset-0 grid place-items-center font-mono text-[10px]">
                         {rel.sku}
                       </div>
                     )}
                   </div>
                   <div className="p-4 pb-5">
-                    <div className="font-mono text-[11px] text-ih-muted-2 mb-1.5">{rel.sku}</div>
-                    <h4 className="text-[14px] font-medium leading-[1.3] mb-2 group-hover:text-ih-accent transition-colors">
+                    <div className="text-ih-muted-2 mb-1.5 font-mono text-[11px]">{rel.sku}</div>
+                    <h4 className="group-hover:text-ih-accent mb-2 text-[14px] font-medium leading-[1.3] transition-colors">
                       {rel.title}
                     </h4>
                     {rel.brand && (
-                      <div className="font-mono text-[11px] text-ih-muted">{rel.brand.name}</div>
+                      <div className="text-ih-muted font-mono text-[11px]">{rel.brand.name}</div>
                     )}
                   </div>
                 </Link>
@@ -826,7 +881,14 @@ export default async function ProductPage({ params }: Props) {
  */
 function WhatsAppGlyph() {
   return (
-    <svg width="17" height="17" viewBox="0 0 24 24" fill="#25D366" aria-hidden="true" className="shrink-0">
+    <svg
+      width="17"
+      height="17"
+      viewBox="0 0 24 24"
+      fill="#25D366"
+      aria-hidden="true"
+      className="shrink-0"
+    >
       <path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-1 1.1-.2.2-.4.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.8-.8-1.4-1.7-1.6-2-.2-.3 0-.4.1-.5.1-.1.3-.3.4-.5.1-.2.2-.3.2-.5.1-.2 0-.4 0-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.2-.6-.4zM12 2C6.5 2 2 6.5 2 12c0 1.7.4 3.3 1.2 4.7L2 22l5.4-1.4c1.4.8 2.9 1.2 4.6 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2z" />
     </svg>
   )
@@ -843,7 +905,7 @@ function IconBase({ children }: { children: React.ReactNode }) {
       strokeWidth={1.7}
       strokeLinecap="round"
       strokeLinejoin="round"
-      className="mt-0.5 shrink-0 text-ih-steel"
+      className="text-ih-steel mt-0.5 shrink-0"
       aria-hidden="true"
     >
       {children}
@@ -899,13 +961,17 @@ function StockPill({ state }: { state: ProductAvailability }) {
       ? { bg: 'oklch(0.95 0.05 150)', fg: 'oklch(0.45 0.12 150)', dot: 'oklch(0.55 0.15 150)' }
       : state.kind === 'lead_time'
         ? { bg: 'oklch(0.95 0.05 80)', fg: 'oklch(0.45 0.13 70)', dot: 'oklch(0.6 0.15 70)' }
-        : { bg: 'var(--color-ih-surface-2)', fg: 'var(--color-ih-muted)', dot: 'var(--color-ih-muted)' }
+        : {
+            bg: 'var(--color-ih-surface-2)',
+            fg: 'var(--color-ih-muted)',
+            dot: 'var(--color-ih-muted)',
+          }
   return (
     <span
       className="inline-flex items-center gap-1.5 px-2.5 py-1 font-mono text-[11px] font-medium tracking-[0.04em]"
       style={{ background: tone.bg, color: tone.fg }}
     >
-      <span className="w-1.5 h-1.5 rounded-full" style={{ background: tone.dot }} />
+      <span className="h-1.5 w-1.5 rounded-full" style={{ background: tone.dot }} />
       {state.label}
     </span>
   )

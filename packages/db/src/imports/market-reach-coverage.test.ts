@@ -3,6 +3,7 @@ import { join } from 'node:path'
 
 import { describe, expect, it } from 'vitest'
 import {
+  CATEGORY_REACH_PROFILES,
   INDUSTRY_REACH_PROFILES,
   MARKET_REACH_PROFILES,
   SERVICE_CASE_CATEGORIES_WITHOUT_REACH,
@@ -122,5 +123,46 @@ describe('industries', () => {
 
   it('covers the designed pages, so the union is doing work rather than decorating', () => {
     expect(designedIndustrySlugs().length).toBeGreaterThan(0)
+  })
+})
+
+describe('catalogue root categories', () => {
+  /**
+   * The 17 published roots, named here rather than queried because this suite
+   * has no database. Unlike the industries list this one is worth stating in
+   * full: a root category is a shelf a buyer lands on from search, and adding
+   * an eighteenth without a delivery paragraph would ship a hub that says
+   * nothing about export. Editing this list is the prompt to write it.
+   *
+   * Sub-categories are deliberately absent — all 194 inherit their root's
+   * profile and seed on their own slug, so there is nothing per-child to check.
+   */
+  const ROOTS = [
+    'hydraulic-hose-fittings-suppliers-uae',
+    'industrial-hose-suppliers-uae',
+    'oilfield-valve-suppliers-uae',
+    'instrumentation-controls',
+    'well-testing-equipment',
+    'flow-iron-wellhead-equipment-uae',
+    'fracturing-equipment',
+    'blowout-preventers',
+    'drilling-workover-systems',
+    'cementing-equipment',
+    'industrial-lubricant-suppliers-uae',
+    'stimulation-equipment',
+    'oil-gas-hoses',
+    'valves-manifolds',
+    'seals-accessories',
+    'hydraulic-pumps',
+    'cylinders',
+  ]
+
+  it('has a profile for every published root category', () => {
+    expect(ROOTS.filter((s) => !CATEGORY_REACH_PROFILES[s])).toEqual([])
+  })
+
+  it('has no profile for a root that does not exist', () => {
+    const known = new Set(ROOTS)
+    expect(Object.keys(CATEGORY_REACH_PROFILES).filter((s) => !known.has(s))).toEqual([])
   })
 })
