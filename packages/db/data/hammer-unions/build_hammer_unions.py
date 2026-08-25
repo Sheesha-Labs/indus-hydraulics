@@ -20,6 +20,7 @@ from hu_sources import (  # noqa: E402
     FIG1003_THREADED, FIG1003_BUTTWELD, FIG1004_BUTTWELD,
     FIG1502_THREADED, FIG1502_BUTTWELD, FIG2002_BUTTWELD, FIG2202_BUTTWELD,
     FIG211_SIZES, FIG300_SIZES, FIG400_SIZES, FIG400_REDUCED,
+    FIG1505_SIZES, FIG1505_SOUR_SIZES,
 )
 from hu_prose import (  # noqa: E402
     FIG_PROSE, CONSULT_NOTE, SOUR_NOTE, HOW_IT_MAKES_UP, SPECIFYING,
@@ -117,6 +118,11 @@ def banded(bands, default):
 
 
 # ── Copy ───────────────────────────────────────────────────────────────────
+def has_dimensions(variants):
+    """True when the source gave this family a dimension table to publish."""
+    return any(v['dimensions'] or v['weightG'] is not None for v in variants)
+
+
 def compose(fig, svc, ends_txt, variants, psi_summary, extra_sections=None):
     p = FIG_PROSE[fig]
     parts = [f'<p>{esc(p["summary"])}</p>']
@@ -159,11 +165,19 @@ def compose(fig, svc, ends_txt, variants, psi_summary, extra_sections=None):
     parts.append(f'<p>{esc(SPECIFYING)}</p>')
 
     parts.append('<h3>Sizes and part numbers</h3>')
-    parts.append(
-        f'<p>Published in {esc(rng)} with {esc(ends_txt)}. Every orderable size, its weight, its '
-        f'dimensions and its working pressure are in the size table on this page. '
-        f'{esc(CONSULT_NOTE)}</p>'
-    )
+    if has_dimensions(variants):
+        parts.append(
+            f'<p>Published in {esc(rng)} with {esc(ends_txt)}. Every orderable size, its weight, '
+            f'its dimensions and its working pressure are in the size table on this page. '
+            f'{esc(CONSULT_NOTE)}</p>'
+        )
+    else:
+        parts.append(
+            f'<p>Published in {esc(rng)} with {esc(ends_txt)}. The size table on this page states '
+            f'the working pressure for every size. Our source publishes no dimension table for '
+            f'this figure, so none is shown — ask us for a dimensioned drawing and we will get '
+            f'it from the mill rather than infer it.</p>'
+        )
     return '\n'.join(parts)
 
 
@@ -460,6 +474,20 @@ listing('1502', 'std', 'butt weld',
         pressure_line(15000, '1502', 'std'),
         reuse='IH-FI-HU-1502-BW-15K-STD-FMC')
 
+listing('1505', 'std', 'threaded+butt weld',
+        'Figure 1505 Hammer Union — 3 in, 15,000 psi',
+        'figure-1505-hammer-union-3-inch-15000-psi',
+        'IH-FI-HU-1505-TBW-15K-STD-INDUS',
+        [({s: dict(kg=None) for s in FIG1505_SIZES}, 'threaded', 'THD', None,
+          banded(FIG1505_SIZES, 15000)),
+         ({s: dict(kg=None) for s in FIG1505_SIZES}, 'butt_weld', 'BW', None,
+          banded(FIG1505_SIZES, 15000))],
+        'line pipe threaded and butt weld ends',
+        pressure_line(15000, '1505', 'std') +
+        ' A sour gas rating of 10,000 psi (690 bar), tested at 15,000 psi, is published for the '
+        'same figure — tell us the service on your enquiry.',
+        focus='figure 1505 hammer union')
+
 listing('2002', 'std', 'butt weld',
         'Figure 2002 Hammer Union — Butt Weld, Standard Service, 20,000 psi',
         'figure-2002-hammer-union-butt-weld-standard-service-20000-psi',
@@ -564,7 +592,7 @@ TEMPLATE_DEF = dict(
         dict(key='figure_number', label='Figure Number', dataType='select', group='Identification',
              isKeyFeature=True, isQuickSpec=True, isRequired=True,
              options=['50', '100', '200', '206', '207', '211', '300', '400', '600', '602',
-                      '1002', '1003', '1004', '1502', '2002', '2202']),
+                      '1002', '1003', '1004', '1502', '1505', '2002', '2202']),
         dict(key='union_type', label='Union Type', dataType='select', group='Identification',
              isKeyFeature=True, isQuickSpec=False, isRequired=True,
              options=['Union', 'Blanking cap', 'Misaligning union', 'Insulated union']),
@@ -688,9 +716,12 @@ def finish(e):
                   for n, (g, l, v, k, u, f) in enumerate(rows)]
 
     qualifier = '' if len(psis) == 1 else ', falling with size'
+    tail_sentence = ('Full size table with weights and dimensions on this page.'
+                     if has_dimensions(variants)
+                     else 'Working pressure stated per size on this page.')
     short = (f'Figure {fig} hammer union, {svc_label.lower()}, {e["_ends_txt"]}. '
              f'{size_range}, rated {psi_txt(top)} psi ({psi_txt(bar(top))} bar){qualifier}. '
-             f'Full size table with weights and dimensions on this page.')
+             f'{tail_sentence}')
     e['descriptionShort'] = short[:300]
 
     suffixed = f'{e["title"]} | Hammer Union Supplier UAE'

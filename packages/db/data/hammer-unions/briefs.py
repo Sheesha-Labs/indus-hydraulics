@@ -133,6 +133,11 @@ SCENES = {
     "IH-FI-HU-1004-BW-10K-STD-INDUS": ("buttweld", "lip_seal", "heavy", None),
     "IH-FI-HU-1502-NPT-15K-STD-INDUS": ("threaded", "lip_seal", "heavy", None),
     "IH-FI-HU-1502-BW-15K-STD-INDUS": ("buttweld", "lip_seal", "heavy", None),
+    "IH-FI-HU-1505-TBW-15K-STD-INDUS": (
+        "both", "lip_seal", "heavy",
+        "The nut carries a short raised machined marker on its outer face at the point where the "
+        "thread starts, a small rectangular pip standing proud of the surface — this is the "
+        "thread start marker."),
     "IH-FI-HU-2002-BW-20K-STD-INDUS": ("buttweld", "lip_seal_ring", "heavy", None),
     # ── Sour gas service ──────────────────────────────────────────────────
     # Sour trim is a metallurgy and hardness question, not a visible one. The

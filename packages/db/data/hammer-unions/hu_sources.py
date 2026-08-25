@@ -4,6 +4,9 @@ Hammer union source tables, transcribed from the two licensed catalogues.
 SOURCES
   M  = Marlia Ingenieros S.L., "Weco couplings - Hammer lug unions", 20 pp.
        The supplier catalogue. Owns every dimension and weight below.
+  T  = TechnipFMC, "Weco(R) wing unions", current catalogue. The originator of
+       the figure series. Used for Figure 1505, which no other book carries,
+       and as a cross-check elsewhere.
   S  = SPM Oil & Gas / Kemper, "Oilfield Hammer Unions", 2 pp, (c) 2021.
        A different manufacturer's data sheet. Used ONLY to cross-check
        pressure figures and size availability - facts, not expression. No SPM
@@ -229,6 +232,16 @@ FIG2002_BUTTWELD = {
 }
 FIG2202_BUTTWELD = FIG2002_BUTTWELD
 
+# ── Figure 1505 (TechnipFMC only) ──────────────────────────────────────────
+# T p6 prose and the T p3 matrix. There is NO usable dimension table: the one
+# printed under "Figure 1505" on T p10 is a byte-identical copy of the Figure
+# 1502 table on T p9 — same six sizes, same six part numbers (3254059,
+# 3254057, 3201570, 3203088, 3207510, 3252926). The prose says 3-inch only, so
+# the table cannot be the 1505's. Published with a size and a pressure and no
+# dimensions, the same way the SPM-only figures below are.
+FIG1505_SIZES = {'3"': 15000}
+FIG1505_SOUR_SIZES = {'3"': 10000}
+
 # ── SPM-only figures ───────────────────────────────────────────────────────
 # S p1-2. Marlia's book does not carry these three at all, so they get a size
 # and a pressure and no dimensions - there is no drawing to read them off.
@@ -252,8 +265,9 @@ FIG400_REDUCED = {'5"', '6"', '10"', '12"'}
 TEST_PSI_STANDARD = {
     100: 1500, 200: 3000, 206: 3000, 207: 3000, 211: 3000, 300: 3000,
     400: 6000, 600: 9000, 602: 9000, 1002: 15000, 1003: 12000, 1502: 22500,
+    1505: 22500,  # T p3
 }
-TEST_PSI_SOUR = {602: 9000, 1002: 12000, 1003: 7500, 1502: 15000}
+TEST_PSI_SOUR = {602: 9000, 1002: 12000, 1003: 7500, 1502: 15000, 1505: 15000}
 CWP_PSI_SOUR_SPM = {602: 6000, 1002: 7500, 1003: 5000, 1502: 10000}
 
 # ── Recorded conflicts ─────────────────────────────────────────────────────
@@ -299,6 +313,20 @@ CONFLICTS = [
                    'test on the neighbouring Figure 110. The 172 bar figure is FMC\'s own, not a '
                    'conversion of ours.',
         severity='safety',
+    ),
+    dict(
+        id='fig1505-table-is-the-1502s',
+        where='T p9 vs T p10, Figure 1505',
+        problem='The table printed under "Figure 1505 - 15,000 psi cold working pressure" on '
+                'p10 is identical to the Figure 1502 table on p9 - the same six nominal sizes '
+                '(1, 1.5, 2, 2.5, 3, 4) and the same six union part numbers, 3254059 / 3254057 / '
+                '3201570 / 3203088 / 3207510 / 3252926. The p6 prose says the Figure 1505 is '
+                '"available in 3-inch only".',
+        resolution='Treated as a copy-paste error in the catalogue: the table belongs to the '
+                   '1502. No 1505 dimensions, weights or part numbers are published anywhere, so '
+                   'none are claimed. The listing carries the size, the two pressure ratings and '
+                   'the prose features, and nothing else.',
+        severity='dimension',
     ),
     dict(
         id='fig1004-end-type',
