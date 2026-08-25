@@ -1,0 +1,4206 @@
+{
+ "source": "Industrial hose catalogue, 36 non-metallic families, pages 4-22",
+ "sizeFieldCorrections": [],
+ "duplicateRowsDropped": [],
+ "columnsNotPublished": [],
+ "pressureWithheld": [
+  "IH-IH-A125: working and burst pressure columns withheld \u2014 catalogue 25 bar, page states 20 bar.",
+  "IH-IH-A901GG: working and burst pressure columns withheld \u2014 catalogue 14 bar, page states 20 bar.",
+  "IH-IH-A906PG: working and burst pressure columns withheld \u2014 catalogue 14 bar, page states 20 bar.",
+  "IH-IH-A911SG: working and burst pressure columns withheld \u2014 catalogue 14 bar, page states 20 bar.",
+  "IH-IH-A235BK: working and burst pressure columns withheld \u2014 catalogue 7 bar, page states 10 bar."
+ ],
+ "deratedRowsFlagged": [
+  "A104 DN32: 17* \u2014 the book stars this row, stating a safety factor for the family 'except *' without giving the exception's figure",
+  "A104 DN38: 17* \u2014 the book stars this row, stating a safety factor for the family 'except *' without giving the exception's figure",
+  "A104 DN51: 14* \u2014 the book stars this row, stating a safety factor for the family 'except *' without giving the exception's figure"
+ ],
+ "products": [
+  {
+   "sku": "IH-IH-A101AS-T3",
+   "sources": [
+    "A101AS-T3 (catalogue p4)"
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-IH-A101AS-T3-006",
+     "position": 0,
+     "hoseDash": null,
+     "hoseInch": "1/4\"",
+     "hoseDn": 6,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 20,
+     "dimensions": {
+      "hoseOD": 14,
+      "burstPressure": 60,
+      "bendRadius": 55,
+      "weightPerMetre": 0.21
+     },
+     "sourcePart": "A101AS-T3 DN6"
+    },
+    {
+     "partNumber": "IH-IH-A101AS-T3-010",
+     "position": 1,
+     "hoseDash": null,
+     "hoseInch": "3/8\"",
+     "hoseDn": 10,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 20,
+     "dimensions": {
+      "hoseOD": 17,
+      "burstPressure": 60,
+      "bendRadius": 75,
+      "weightPerMetre": 0.24
+     },
+     "sourcePart": "A101AS-T3 DN10"
+    },
+    {
+     "partNumber": "IH-IH-A101AS-T3-013",
+     "position": 2,
+     "hoseDash": null,
+     "hoseInch": "1/2\"",
+     "hoseDn": 13,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 20,
+     "dimensions": {
+      "hoseOD": 20.5,
+      "burstPressure": 60,
+      "bendRadius": 100,
+      "weightPerMetre": 0.31
+     },
+     "sourcePart": "A101AS-T3 DN13"
+    },
+    {
+     "partNumber": "IH-IH-A101AS-T3-019",
+     "position": 3,
+     "hoseDash": null,
+     "hoseInch": "3/4\"",
+     "hoseDn": 19,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 20,
+     "dimensions": {
+      "hoseOD": 29,
+      "burstPressure": 60,
+      "bendRadius": 120,
+      "weightPerMetre": 0.56
+     },
+     "sourcePart": "A101AS-T3 DN19"
+    },
+    {
+     "partNumber": "IH-IH-A101AS-T3-025",
+     "position": 4,
+     "hoseDash": null,
+     "hoseInch": "1\"",
+     "hoseDn": 25,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 20,
+     "dimensions": {
+      "hoseOD": 36,
+      "burstPressure": 60,
+      "bendRadius": 150,
+      "weightPerMetre": 0.7
+     },
+     "sourcePart": "A101AS-T3 DN25"
+    }
+   ]
+  },
+  {
+   "sku": "IH-IH-A101HP",
+   "sources": [
+    "A101HP (catalogue p4)"
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-IH-A101HP-006",
+     "position": 0,
+     "hoseDash": null,
+     "hoseInch": "1/4\"",
+     "hoseDn": 6,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 20,
+     "dimensions": {
+      "hoseOD": 13,
+      "burstPressure": 60,
+      "bendRadius": 60,
+      "weightPerMetre": 0.18
+     },
+     "sourcePart": "A101HP DN6"
+    },
+    {
+     "partNumber": "IH-IH-A101HP-008",
+     "position": 1,
+     "hoseDash": null,
+     "hoseInch": "5/16\"",
+     "hoseDn": 8,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 20,
+     "dimensions": {
+      "hoseOD": 15,
+      "burstPressure": 60,
+      "bendRadius": 80,
+      "weightPerMetre": 0.21
+     },
+     "sourcePart": "A101HP DN8"
+    },
+    {
+     "partNumber": "IH-IH-A101HP-010",
+     "position": 2,
+     "hoseDash": null,
+     "hoseInch": "3/8\"",
+     "hoseDn": 10,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 20,
+     "dimensions": {
+      "hoseOD": 17,
+      "burstPressure": 60,
+      "bendRadius": 100,
+      "weightPerMetre": 0.25
+     },
+     "sourcePart": "A101HP DN10"
+    },
+    {
+     "partNumber": "IH-IH-A101HP-013",
+     "position": 3,
+     "hoseDash": null,
+     "hoseInch": "1/2\"",
+     "hoseDn": 13,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 20,
+     "dimensions": {
+      "hoseOD": 21,
+      "burstPressure": 60,
+      "bendRadius": 130,
+      "weightPerMetre": 0.35
+     },
+     "sourcePart": "A101HP DN13"
+    },
+    {
+     "partNumber": "IH-IH-A101HP-019",
+     "position": 4,
+     "hoseDash": null,
+     "hoseInch": "3/4\"",
+     "hoseDn": 19,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 20,
+     "dimensions": {
+      "hoseOD": 29,
+      "burstPressure": 60,
+      "bendRadius": 190,
+      "weightPerMetre": 0.48
+     },
+     "sourcePart": "A101HP DN19"
+    },
+    {
+     "partNumber": "IH-IH-A101HP-025",
+     "position": 5,
+     "hoseDash": null,
+     "hoseInch": "1\"",
+     "hoseDn": 25,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 20,
+     "dimensions": {
+      "hoseOD": 36,
+      "burstPressure": 60,
+      "bendRadius": 250,
+      "weightPerMetre": 0.67
+     },
+     "sourcePart": "A101HP DN25"
+    }
+   ]
+  },
+  {
+   "sku": "IH-IH-A102HP",
+   "sources": [
+    "A102HP (catalogue p5)"
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-IH-A102HP-013",
+     "position": 0,
+     "hoseDash": null,
+     "hoseInch": "1/2\"",
+     "hoseDn": 13,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 20,
+     "dimensions": {
+      "hoseOD": 21,
+      "burstPressure": 60,
+      "bendRadius": 130,
+      "weightPerMetre": 0.35
+     },
+     "sourcePart": "A102HP DN13"
+    },
+    {
+     "partNumber": "IH-IH-A102HP-019",
+     "position": 1,
+     "hoseDash": null,
+     "hoseInch": "3/4\"",
+     "hoseDn": 19,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 20,
+     "dimensions": {
+      "hoseOD": 29,
+      "burstPressure": 60,
+      "bendRadius": 190,
+      "weightPerMetre": 0.48
+     },
+     "sourcePart": "A102HP DN19"
+    },
+    {
+     "partNumber": "IH-IH-A102HP-025",
+     "position": 2,
+     "hoseDash": null,
+     "hoseInch": "1\"",
+     "hoseDn": 25,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 20,
+     "dimensions": {
+      "hoseOD": 36,
+      "burstPressure": 60,
+      "bendRadius": 250,
+      "weightPerMetre": 0.67
+     },
+     "sourcePart": "A102HP DN25"
+    }
+   ]
+  },
+  {
+   "sku": "IH-IH-A103HP",
+   "sources": [
+    "A103HP (catalogue p5)"
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-IH-A103HP-019",
+     "position": 0,
+     "hoseDash": null,
+     "hoseInch": "3/4\"",
+     "hoseDn": 19,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 20,
+     "dimensions": {
+      "hoseOD": 29,
+      "burstPressure": 60,
+      "bendRadius": 190,
+      "weightPerMetre": 0.65
+     },
+     "sourcePart": "A103HP DN19"
+    },
+    {
+     "partNumber": "IH-IH-A103HP-025",
+     "position": 1,
+     "hoseDash": null,
+     "hoseInch": "1\"",
+     "hoseDn": 25,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 20,
+     "dimensions": {
+      "hoseOD": 36,
+      "burstPressure": 60,
+      "bendRadius": 250,
+      "weightPerMetre": 0.88
+     },
+     "sourcePart": "A103HP DN25"
+    }
+   ]
+  },
+  {
+   "sku": "IH-IH-A104",
+   "sources": [
+    "A104 (catalogue p13)"
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-IH-A104-006",
+     "position": 0,
+     "hoseDash": null,
+     "hoseInch": "1/4\"",
+     "hoseDn": 6,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 20,
+     "dimensions": {
+      "hoseOD": 16,
+      "burstPressure": 80,
+      "bendRadius": 55,
+      "weightPerMetre": 0.24
+     },
+     "sourcePart": "A104 DN6"
+    },
+    {
+     "partNumber": "IH-IH-A104-008",
+     "position": 1,
+     "hoseDash": null,
+     "hoseInch": "5/16\"",
+     "hoseDn": 8,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 20,
+     "dimensions": {
+      "hoseOD": 18,
+      "burstPressure": 80,
+      "bendRadius": 73,
+      "weightPerMetre": 0.25
+     },
+     "sourcePart": "A104 DN8"
+    },
+    {
+     "partNumber": "IH-IH-A104-010",
+     "position": 2,
+     "hoseDash": null,
+     "hoseInch": "3/8\"",
+     "hoseDn": 10,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 20,
+     "dimensions": {
+      "hoseOD": 19,
+      "burstPressure": 80,
+      "bendRadius": 90,
+      "weightPerMetre": 0.27
+     },
+     "sourcePart": "A104 DN10"
+    },
+    {
+     "partNumber": "IH-IH-A104-013",
+     "position": 3,
+     "hoseDash": null,
+     "hoseInch": "1/2\"",
+     "hoseDn": 13,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 20,
+     "dimensions": {
+      "hoseOD": 22,
+      "burstPressure": 80,
+      "bendRadius": 115,
+      "weightPerMetre": 0.38
+     },
+     "sourcePart": "A104 DN13"
+    },
+    {
+     "partNumber": "IH-IH-A104-016",
+     "position": 4,
+     "hoseDash": null,
+     "hoseInch": "5/8\"",
+     "hoseDn": 16,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 20,
+     "dimensions": {
+      "hoseOD": 26,
+      "burstPressure": 80,
+      "bendRadius": 150,
+      "weightPerMetre": 0.43
+     },
+     "sourcePart": "A104 DN16"
+    },
+    {
+     "partNumber": "IH-IH-A104-019",
+     "position": 5,
+     "hoseDash": null,
+     "hoseInch": "3/4\"",
+     "hoseDn": 19,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 20,
+     "dimensions": {
+      "hoseOD": 30,
+      "burstPressure": 80,
+      "bendRadius": 175,
+      "weightPerMetre": 0.63
+     },
+     "sourcePart": "A104 DN19"
+    },
+    {
+     "partNumber": "IH-IH-A104-025",
+     "position": 6,
+     "hoseDash": null,
+     "hoseInch": "1\"",
+     "hoseDn": 25,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 20,
+     "dimensions": {
+      "hoseOD": 38,
+      "burstPressure": 80,
+      "bendRadius": 225,
+      "weightPerMetre": 0.96
+     },
+     "sourcePart": "A104 DN25"
+    },
+    {
+     "partNumber": "IH-IH-A104-032",
+     "position": 7,
+     "hoseDash": null,
+     "hoseInch": "1-1/4\"",
+     "hoseDn": 32,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 17,
+     "dimensions": {
+      "hoseOD": 45,
+      "burstPressure": 68,
+      "bendRadius": 320,
+      "weightPerMetre": 1.24
+     },
+     "sourcePart": "A104 DN32"
+    },
+    {
+     "partNumber": "IH-IH-A104-038",
+     "position": 8,
+     "hoseDash": null,
+     "hoseInch": "1-1/2\"",
+     "hoseDn": 38,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 17,
+     "dimensions": {
+      "hoseOD": 53,
+      "burstPressure": 68,
+      "bendRadius": 380,
+      "weightPerMetre": 1.44
+     },
+     "sourcePart": "A104 DN38"
+    },
+    {
+     "partNumber": "IH-IH-A104-051",
+     "position": 9,
+     "hoseDash": null,
+     "hoseInch": "2\"",
+     "hoseDn": 51,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 14,
+     "dimensions": {
+      "hoseOD": 67,
+      "burstPressure": 56,
+      "bendRadius": 500,
+      "weightPerMetre": 1.5
+     },
+     "sourcePart": "A104 DN51"
+    }
+   ]
+  },
+  {
+   "sku": "IH-IH-A105HP",
+   "sources": [
+    "A105HP (catalogue p6)"
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-IH-A105HP-019",
+     "position": 0,
+     "hoseDash": null,
+     "hoseInch": "3/4\"",
+     "hoseDn": 19,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 20,
+     "dimensions": {
+      "hoseOD": 29,
+      "burstPressure": 60,
+      "bendRadius": 190,
+      "weightPerMetre": 0.65
+     },
+     "sourcePart": "A105HP DN19"
+    },
+    {
+     "partNumber": "IH-IH-A105HP-025",
+     "position": 1,
+     "hoseDash": null,
+     "hoseInch": "1\"",
+     "hoseDn": 25,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 20,
+     "dimensions": {
+      "hoseOD": 36,
+      "burstPressure": 60,
+      "bendRadius": 250,
+      "weightPerMetre": 0.88
+     },
+     "sourcePart": "A105HP DN25"
+    }
+   ]
+  },
+  {
+   "sku": "IH-IH-A110",
+   "sources": [
+    "A110 (catalogue p14)"
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-IH-A110-005",
+     "position": 0,
+     "hoseDash": null,
+     "hoseInch": "3/16\"",
+     "hoseDn": 5,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 10,
+     "dimensions": {
+      "hoseOD": 12,
+      "burstPressure": 40,
+      "bendRadius": 40,
+      "weightPerMetre": 0.1
+     },
+     "sourcePart": "A110 DN5"
+    },
+    {
+     "partNumber": "IH-IH-A110-006",
+     "position": 1,
+     "hoseDash": null,
+     "hoseInch": "1/4\"",
+     "hoseDn": 6,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 10,
+     "dimensions": {
+      "hoseOD": 12,
+      "burstPressure": 40,
+      "bendRadius": 45,
+      "weightPerMetre": 0.15
+     },
+     "sourcePart": "A110 DN6"
+    },
+    {
+     "partNumber": "IH-IH-A110-008",
+     "position": 2,
+     "hoseDash": null,
+     "hoseInch": "5/16\"",
+     "hoseDn": 8,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 10,
+     "dimensions": {
+      "hoseOD": 14,
+      "burstPressure": 40,
+      "bendRadius": 55,
+      "weightPerMetre": 0.12
+     },
+     "sourcePart": "A110 DN8"
+    },
+    {
+     "partNumber": "IH-IH-A110-010",
+     "position": 3,
+     "hoseDash": null,
+     "hoseInch": "3/8\"",
+     "hoseDn": 10,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 10,
+     "dimensions": {
+      "hoseOD": 17,
+      "burstPressure": 40,
+      "bendRadius": 60,
+      "weightPerMetre": 0.17
+     },
+     "sourcePart": "A110 DN10"
+    },
+    {
+     "partNumber": "IH-IH-A110-013",
+     "position": 4,
+     "hoseDash": null,
+     "hoseInch": "1/2\"",
+     "hoseDn": 13,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 10,
+     "dimensions": {
+      "hoseOD": 20,
+      "burstPressure": 40,
+      "bendRadius": 80,
+      "weightPerMetre": 0.24
+     },
+     "sourcePart": "A110 DN13"
+    },
+    {
+     "partNumber": "IH-IH-A110-016",
+     "position": 5,
+     "hoseDash": null,
+     "hoseInch": "5/8\"",
+     "hoseDn": 16,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 10,
+     "dimensions": {
+      "hoseOD": 24,
+      "burstPressure": 40,
+      "bendRadius": 100,
+      "weightPerMetre": 0.33
+     },
+     "sourcePart": "A110 DN16"
+    },
+    {
+     "partNumber": "IH-IH-A110-019",
+     "position": 6,
+     "hoseDash": null,
+     "hoseInch": "3/4\"",
+     "hoseDn": 19,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 10,
+     "dimensions": {
+      "hoseOD": 28,
+      "burstPressure": 40,
+      "bendRadius": 120,
+      "weightPerMetre": 0.43
+     },
+     "sourcePart": "A110 DN19"
+    },
+    {
+     "partNumber": "IH-IH-A110-025",
+     "position": 7,
+     "hoseDash": null,
+     "hoseInch": "1\"",
+     "hoseDn": 25,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 10,
+     "dimensions": {
+      "hoseOD": 35,
+      "burstPressure": 40,
+      "bendRadius": 150,
+      "weightPerMetre": 0.62
+     },
+     "sourcePart": "A110 DN25"
+    }
+   ]
+  },
+  {
+   "sku": "IH-IH-A116EU100",
+   "sources": [
+    "A116EU100 (catalogue p6)"
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-IH-A116EU100-051",
+     "position": 0,
+     "hoseDash": null,
+     "hoseInch": "2\"",
+     "hoseDn": 51,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 40,
+     "dimensions": {
+      "hoseOD": 65,
+      "burstPressure": 120,
+      "bendRadius": 510,
+      "weightPerMetre": 1.97
+     },
+     "sourcePart": "A116EU100 DN51"
+    },
+    {
+     "partNumber": "IH-IH-A116EU100-076",
+     "position": 1,
+     "hoseDash": null,
+     "hoseInch": "3\"",
+     "hoseDn": 76,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 40,
+     "dimensions": {
+      "hoseOD": 95,
+      "burstPressure": 120,
+      "bendRadius": 760,
+      "weightPerMetre": 4.33
+     },
+     "sourcePart": "A116EU100 DN76"
+    },
+    {
+     "partNumber": "IH-IH-A116EU100-102",
+     "position": 2,
+     "hoseDash": null,
+     "hoseInch": "4\"",
+     "hoseDn": 102,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 40,
+     "dimensions": {
+      "hoseOD": 121,
+      "burstPressure": 120,
+      "bendRadius": 1020,
+      "weightPerMetre": 5.65
+     },
+     "sourcePart": "A116EU100 DN102"
+    }
+   ]
+  },
+  {
+   "sku": "IH-IH-A125",
+   "sources": [
+    "A125 (catalogue p14)"
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-IH-A125-006",
+     "position": 0,
+     "hoseDash": null,
+     "hoseInch": "1/4\"",
+     "hoseDn": 6,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": null,
+     "dimensions": {
+      "hoseOD": 14,
+      "bendRadius": 40,
+      "weightPerMetre": 0.17
+     },
+     "sourcePart": "A125 DN6"
+    },
+    {
+     "partNumber": "IH-IH-A125-008",
+     "position": 1,
+     "hoseDash": null,
+     "hoseInch": "5/16\"",
+     "hoseDn": 8,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": null,
+     "dimensions": {
+      "hoseOD": 16,
+      "bendRadius": 50,
+      "weightPerMetre": 0.19
+     },
+     "sourcePart": "A125 DN8"
+    },
+    {
+     "partNumber": "IH-IH-A125-010",
+     "position": 2,
+     "hoseDash": null,
+     "hoseInch": "3/8\"",
+     "hoseDn": 10,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": null,
+     "dimensions": {
+      "hoseOD": 18,
+      "bendRadius": 60,
+      "weightPerMetre": 0.23
+     },
+     "sourcePart": "A125 DN10"
+    },
+    {
+     "partNumber": "IH-IH-A125-013",
+     "position": 3,
+     "hoseDash": null,
+     "hoseInch": "1/2\"",
+     "hoseDn": 13,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": null,
+     "dimensions": {
+      "hoseOD": 21,
+      "bendRadius": 80,
+      "weightPerMetre": 0.28
+     },
+     "sourcePart": "A125 DN13"
+    },
+    {
+     "partNumber": "IH-IH-A125-016",
+     "position": 4,
+     "hoseDash": null,
+     "hoseInch": "5/8\"",
+     "hoseDn": 16,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": null,
+     "dimensions": {
+      "hoseOD": 25,
+      "bendRadius": 100,
+      "weightPerMetre": 0.38
+     },
+     "sourcePart": "A125 DN16"
+    },
+    {
+     "partNumber": "IH-IH-A125-019",
+     "position": 5,
+     "hoseDash": null,
+     "hoseInch": "3/4\"",
+     "hoseDn": 19,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": null,
+     "dimensions": {
+      "hoseOD": 29,
+      "bendRadius": 120,
+      "weightPerMetre": 0.5
+     },
+     "sourcePart": "A125 DN19"
+    },
+    {
+     "partNumber": "IH-IH-A125-025",
+     "position": 6,
+     "hoseDash": null,
+     "hoseInch": "1\"",
+     "hoseDn": 25,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": null,
+     "dimensions": {
+      "hoseOD": 36,
+      "bendRadius": 150,
+      "weightPerMetre": 0.73
+     },
+     "sourcePart": "A125 DN25"
+    }
+   ]
+  },
+  {
+   "sku": "IH-IH-A190",
+   "sources": [
+    "A190 (catalogue p7)"
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-IH-A190-013",
+     "position": 0,
+     "hoseDash": null,
+     "hoseInch": "1/2\"",
+     "hoseDn": 13,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 20,
+     "dimensions": {
+      "hoseOD": 23,
+      "burstPressure": 60,
+      "bendRadius": 91,
+      "weightPerMetre": 0.4
+     },
+     "sourcePart": "A190 DN13"
+    },
+    {
+     "partNumber": "IH-IH-A190-019",
+     "position": 1,
+     "hoseDash": null,
+     "hoseInch": "3/4\"",
+     "hoseDn": 19,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 20,
+     "dimensions": {
+      "hoseOD": 30,
+      "burstPressure": 60,
+      "bendRadius": 133,
+      "weightPerMetre": 0.6
+     },
+     "sourcePart": "A190 DN19"
+    },
+    {
+     "partNumber": "IH-IH-A190-025",
+     "position": 2,
+     "hoseDash": null,
+     "hoseInch": "1\"",
+     "hoseDn": 25,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 20,
+     "dimensions": {
+      "hoseOD": 37,
+      "burstPressure": 60,
+      "bendRadius": 175,
+      "weightPerMetre": 0.7
+     },
+     "sourcePart": "A190 DN25"
+    },
+    {
+     "partNumber": "IH-IH-A190-032",
+     "position": 3,
+     "hoseDash": null,
+     "hoseInch": "1-1/4\"",
+     "hoseDn": 32,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 20,
+     "dimensions": {
+      "hoseOD": 46,
+      "burstPressure": 60,
+      "bendRadius": 224,
+      "weightPerMetre": 1.3
+     },
+     "sourcePart": "A190 DN32"
+    },
+    {
+     "partNumber": "IH-IH-A190-038",
+     "position": 4,
+     "hoseDash": null,
+     "hoseInch": "1-1/2\"",
+     "hoseDn": 38,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 20,
+     "dimensions": {
+      "hoseOD": 52,
+      "burstPressure": 60,
+      "bendRadius": 266,
+      "weightPerMetre": 1.5
+     },
+     "sourcePart": "A190 DN38"
+    },
+    {
+     "partNumber": "IH-IH-A190-051",
+     "position": 5,
+     "hoseDash": null,
+     "hoseInch": "2\"",
+     "hoseDn": 51,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 20,
+     "dimensions": {
+      "hoseOD": 65,
+      "burstPressure": 60,
+      "bendRadius": 357,
+      "weightPerMetre": 1.9
+     },
+     "sourcePart": "A190 DN51"
+    },
+    {
+     "partNumber": "IH-IH-A190-076",
+     "position": 6,
+     "hoseDash": null,
+     "hoseInch": "3\"",
+     "hoseDn": 76,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 20,
+     "dimensions": {
+      "hoseOD": 92,
+      "burstPressure": 60,
+      "bendRadius": 532,
+      "weightPerMetre": 3.2
+     },
+     "sourcePart": "A190 DN76"
+    }
+   ]
+  },
+  {
+   "sku": "IH-IH-A190Y",
+   "sources": [
+    "A190Y (catalogue p7)"
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-IH-A190Y-013",
+     "position": 0,
+     "hoseDash": null,
+     "hoseInch": "1/2\"",
+     "hoseDn": 13,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 20,
+     "dimensions": {
+      "hoseOD": 23,
+      "burstPressure": 60,
+      "bendRadius": 91,
+      "weightPerMetre": 0.4
+     },
+     "sourcePart": "A190Y DN13"
+    },
+    {
+     "partNumber": "IH-IH-A190Y-019",
+     "position": 1,
+     "hoseDash": null,
+     "hoseInch": "3/4\"",
+     "hoseDn": 19,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 20,
+     "dimensions": {
+      "hoseOD": 30,
+      "burstPressure": 60,
+      "bendRadius": 133,
+      "weightPerMetre": 0.6
+     },
+     "sourcePart": "A190Y DN19"
+    },
+    {
+     "partNumber": "IH-IH-A190Y-025",
+     "position": 2,
+     "hoseDash": null,
+     "hoseInch": "1\"",
+     "hoseDn": 25,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 20,
+     "dimensions": {
+      "hoseOD": 37,
+      "burstPressure": 60,
+      "bendRadius": 175,
+      "weightPerMetre": 0.7
+     },
+     "sourcePart": "A190Y DN25"
+    },
+    {
+     "partNumber": "IH-IH-A190Y-032",
+     "position": 3,
+     "hoseDash": null,
+     "hoseInch": "1-1/4\"",
+     "hoseDn": 32,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 20,
+     "dimensions": {
+      "hoseOD": 46,
+      "burstPressure": 60,
+      "bendRadius": 224,
+      "weightPerMetre": 1.3
+     },
+     "sourcePart": "A190Y DN32"
+    },
+    {
+     "partNumber": "IH-IH-A190Y-038",
+     "position": 4,
+     "hoseDash": null,
+     "hoseInch": "1-1/2\"",
+     "hoseDn": 38,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 20,
+     "dimensions": {
+      "hoseOD": 52,
+      "burstPressure": 60,
+      "bendRadius": 266,
+      "weightPerMetre": 1.5
+     },
+     "sourcePart": "A190Y DN38"
+    },
+    {
+     "partNumber": "IH-IH-A190Y-051",
+     "position": 5,
+     "hoseDash": null,
+     "hoseInch": "2\"",
+     "hoseDn": 51,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 20,
+     "dimensions": {
+      "hoseOD": 65,
+      "burstPressure": 60,
+      "bendRadius": 357,
+      "weightPerMetre": 1.9
+     },
+     "sourcePart": "A190Y DN51"
+    },
+    {
+     "partNumber": "IH-IH-A190Y-076",
+     "position": 6,
+     "hoseDash": null,
+     "hoseInch": "3\"",
+     "hoseDn": 76,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 20,
+     "dimensions": {
+      "hoseOD": 92,
+      "burstPressure": 60,
+      "bendRadius": 532,
+      "weightPerMetre": 3.2
+     },
+     "sourcePart": "A190Y DN76"
+    }
+   ]
+  },
+  {
+   "sku": "IH-IH-A210",
+   "sources": [
+    "A210 (catalogue p8)"
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-IH-A210-025",
+     "position": 0,
+     "hoseDash": null,
+     "hoseInch": "1\"",
+     "hoseDn": 25,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 10,
+     "dimensions": {
+      "hoseOD": 35,
+      "burstPressure": 30,
+      "bendRadius": 150,
+      "weightPerMetre": 0.8
+     },
+     "sourcePart": "A210 DN25"
+    },
+    {
+     "partNumber": "IH-IH-A210-032",
+     "position": 1,
+     "hoseDash": null,
+     "hoseInch": "1-1/4\"",
+     "hoseDn": 32,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 10,
+     "dimensions": {
+      "hoseOD": 43,
+      "burstPressure": 30,
+      "bendRadius": 190,
+      "weightPerMetre": 1.0
+     },
+     "sourcePart": "A210 DN32"
+    },
+    {
+     "partNumber": "IH-IH-A210-038",
+     "position": 2,
+     "hoseDash": null,
+     "hoseInch": "1-1/2\"",
+     "hoseDn": 38,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 10,
+     "dimensions": {
+      "hoseOD": 47,
+      "burstPressure": 30,
+      "bendRadius": 266,
+      "weightPerMetre": 1.0
+     },
+     "sourcePart": "A210 DN38"
+    },
+    {
+     "partNumber": "IH-IH-A210-051",
+     "position": 3,
+     "hoseDash": null,
+     "hoseInch": "2\"",
+     "hoseDn": 51,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 10,
+     "dimensions": {
+      "hoseOD": 62,
+      "burstPressure": 30,
+      "bendRadius": 357,
+      "weightPerMetre": 1.8
+     },
+     "sourcePart": "A210 DN51"
+    },
+    {
+     "partNumber": "IH-IH-A210-063",
+     "position": 4,
+     "hoseDash": null,
+     "hoseInch": "2-1/2\"",
+     "hoseDn": 63,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 10,
+     "dimensions": {
+      "hoseOD": 74,
+      "burstPressure": 30,
+      "bendRadius": 441,
+      "weightPerMetre": 2.2
+     },
+     "sourcePart": "A210 DN63"
+    },
+    {
+     "partNumber": "IH-IH-A210-076",
+     "position": 5,
+     "hoseDash": null,
+     "hoseInch": "3\"",
+     "hoseDn": 76,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 10,
+     "dimensions": {
+      "hoseOD": 87,
+      "burstPressure": 30,
+      "bendRadius": 532,
+      "weightPerMetre": 2.8
+     },
+     "sourcePart": "A210 DN76"
+    },
+    {
+     "partNumber": "IH-IH-A210-102",
+     "position": 6,
+     "hoseDash": null,
+     "hoseInch": "4\"",
+     "hoseDn": 102,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 10,
+     "dimensions": {
+      "hoseOD": 114,
+      "burstPressure": 30,
+      "bendRadius": 714,
+      "weightPerMetre": 4.3
+     },
+     "sourcePart": "A210 DN102"
+    },
+    {
+     "partNumber": "IH-IH-A210-152",
+     "position": 7,
+     "hoseDash": null,
+     "hoseInch": "6\"",
+     "hoseDn": 152,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 10,
+     "dimensions": {
+      "hoseOD": 169,
+      "burstPressure": 30,
+      "bendRadius": 1064,
+      "weightPerMetre": 9.5
+     },
+     "sourcePart": "A210 DN152"
+    }
+   ]
+  },
+  {
+   "sku": "IH-IH-A216",
+   "sources": [
+    "A216 (catalogue p8)"
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-IH-A216-051",
+     "position": 0,
+     "hoseDash": null,
+     "hoseInch": "2\"",
+     "hoseDn": 51,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 16,
+     "dimensions": {
+      "hoseOD": 66,
+      "burstPressure": 48,
+      "bendRadius": 200,
+      "weightPerMetre": 2.23
+     },
+     "sourcePart": "A216 DN51"
+    },
+    {
+     "partNumber": "IH-IH-A216-076",
+     "position": 1,
+     "hoseDash": null,
+     "hoseInch": "3\"",
+     "hoseDn": 76,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 16,
+     "dimensions": {
+      "hoseOD": 91,
+      "burstPressure": 48,
+      "bendRadius": 350,
+      "weightPerMetre": 3.22
+     },
+     "sourcePart": "A216 DN76"
+    },
+    {
+     "partNumber": "IH-IH-A216-102",
+     "position": 2,
+     "hoseDash": null,
+     "hoseInch": "4\"",
+     "hoseDn": 102,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 16,
+     "dimensions": {
+      "hoseOD": 120,
+      "burstPressure": 48,
+      "bendRadius": 500,
+      "weightPerMetre": 4.8
+     },
+     "sourcePart": "A216 DN102"
+    },
+    {
+     "partNumber": "IH-IH-A216-127",
+     "position": 3,
+     "hoseDash": null,
+     "hoseInch": "5\"",
+     "hoseDn": 127,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 16,
+     "dimensions": {
+      "hoseOD": 145,
+      "burstPressure": 48,
+      "bendRadius": 600,
+      "weightPerMetre": 5.54
+     },
+     "sourcePart": "A216 DN127"
+    },
+    {
+     "partNumber": "IH-IH-A216-152",
+     "position": 4,
+     "hoseDash": null,
+     "hoseInch": "6\"",
+     "hoseDn": 152,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 16,
+     "dimensions": {
+      "hoseOD": 174,
+      "burstPressure": 48,
+      "bendRadius": 800,
+      "weightPerMetre": 9.02
+     },
+     "sourcePart": "A216 DN152"
+    },
+    {
+     "partNumber": "IH-IH-A216-203",
+     "position": 5,
+     "hoseDash": null,
+     "hoseInch": "8\"",
+     "hoseDn": 203,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 16,
+     "dimensions": {
+      "hoseOD": 225,
+      "burstPressure": 48,
+      "bendRadius": 1100,
+      "weightPerMetre": 12.61
+     },
+     "sourcePart": "A216 DN203"
+    }
+   ]
+  },
+  {
+   "sku": "IH-IH-A230",
+   "sources": [
+    "A230 (catalogue p20)"
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-IH-A230-013",
+     "position": 0,
+     "hoseDash": null,
+     "hoseInch": "1/2\"",
+     "hoseDn": 13,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 18,
+     "dimensions": {
+      "hoseOD": 25,
+      "burstPressure": 180,
+      "bendRadius": 130,
+      "weightPerMetre": 0.53
+     },
+     "sourcePart": "A230 DN13"
+    },
+    {
+     "partNumber": "IH-IH-A230-019",
+     "position": 1,
+     "hoseDash": null,
+     "hoseInch": "3/4\"",
+     "hoseDn": 19,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 18,
+     "dimensions": {
+      "hoseOD": 32,
+      "burstPressure": 180,
+      "bendRadius": 190,
+      "weightPerMetre": 0.76
+     },
+     "sourcePart": "A230 DN19"
+    },
+    {
+     "partNumber": "IH-IH-A230-025",
+     "position": 2,
+     "hoseDash": null,
+     "hoseInch": "1\"",
+     "hoseDn": 25,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 18,
+     "dimensions": {
+      "hoseOD": 38,
+      "burstPressure": 180,
+      "bendRadius": 250,
+      "weightPerMetre": 1.0
+     },
+     "sourcePart": "A230 DN25"
+    },
+    {
+     "partNumber": "IH-IH-A230-032",
+     "position": 3,
+     "hoseDash": null,
+     "hoseInch": "1-1/4\"",
+     "hoseDn": 32,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 18,
+     "dimensions": {
+      "hoseOD": 46,
+      "burstPressure": 180,
+      "bendRadius": 320,
+      "weightPerMetre": 1.3
+     },
+     "sourcePart": "A230 DN32"
+    },
+    {
+     "partNumber": "IH-IH-A230-038",
+     "position": 4,
+     "hoseDash": null,
+     "hoseInch": "1-1/2\"",
+     "hoseDn": 38,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 18,
+     "dimensions": {
+      "hoseOD": 54,
+      "burstPressure": 180,
+      "bendRadius": 380,
+      "weightPerMetre": 1.65
+     },
+     "sourcePart": "A230 DN38"
+    },
+    {
+     "partNumber": "IH-IH-A230-051",
+     "position": 5,
+     "hoseDash": null,
+     "hoseInch": "2\"",
+     "hoseDn": 51,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 18,
+     "dimensions": {
+      "hoseOD": 67,
+      "burstPressure": 180,
+      "bendRadius": 500,
+      "weightPerMetre": 2.2
+     },
+     "sourcePart": "A230 DN51"
+    }
+   ]
+  },
+  {
+   "sku": "IH-IH-A235BK",
+   "sources": [
+    "A235BK (catalogue p20)"
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-IH-A235BK-013",
+     "position": 0,
+     "hoseDash": null,
+     "hoseInch": "1/2\"",
+     "hoseDn": 13,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": null,
+     "dimensions": {
+      "hoseOD": 25,
+      "bendRadius": 91,
+      "weightPerMetre": 0.4
+     },
+     "sourcePart": "A235BK DN13"
+    },
+    {
+     "partNumber": "IH-IH-A235BK-019",
+     "position": 1,
+     "hoseDash": null,
+     "hoseInch": "3/4\"",
+     "hoseDn": 19,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": null,
+     "dimensions": {
+      "hoseOD": 32,
+      "bendRadius": 133,
+      "weightPerMetre": 0.6
+     },
+     "sourcePart": "A235BK DN19"
+    },
+    {
+     "partNumber": "IH-IH-A235BK-025",
+     "position": 2,
+     "hoseDash": null,
+     "hoseInch": "1\"",
+     "hoseDn": 25,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": null,
+     "dimensions": {
+      "hoseOD": 40,
+      "bendRadius": 175,
+      "weightPerMetre": 0.8
+     },
+     "sourcePart": "A235BK DN25"
+    }
+   ]
+  },
+  {
+   "sku": "IH-IH-A235BU",
+   "sources": [
+    "A235BU (catalogue p21)"
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-IH-A235BU-013",
+     "position": 0,
+     "hoseDash": null,
+     "hoseInch": "1/2\"",
+     "hoseDn": 13,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 7,
+     "dimensions": {
+      "hoseOD": 24,
+      "burstPressure": 70,
+      "bendRadius": 91,
+      "weightPerMetre": 0.4
+     },
+     "sourcePart": "A235BU DN13"
+    },
+    {
+     "partNumber": "IH-IH-A235BU-016",
+     "position": 1,
+     "hoseDash": null,
+     "hoseInch": "5/8\"",
+     "hoseDn": 16,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 7,
+     "dimensions": {
+      "hoseOD": 28,
+      "burstPressure": 70,
+      "bendRadius": 112,
+      "weightPerMetre": 0.5
+     },
+     "sourcePart": "A235BU DN16"
+    },
+    {
+     "partNumber": "IH-IH-A235BU-019",
+     "position": 2,
+     "hoseDash": null,
+     "hoseInch": "3/4\"",
+     "hoseDn": 19,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 7,
+     "dimensions": {
+      "hoseOD": 32,
+      "burstPressure": 70,
+      "bendRadius": 133,
+      "weightPerMetre": 0.6
+     },
+     "sourcePart": "A235BU DN19"
+    },
+    {
+     "partNumber": "IH-IH-A235BU-025",
+     "position": 3,
+     "hoseDash": null,
+     "hoseInch": "1\"",
+     "hoseDn": 25,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 7,
+     "dimensions": {
+      "hoseOD": 39,
+      "burstPressure": 70,
+      "bendRadius": 175,
+      "weightPerMetre": 0.8
+     },
+     "sourcePart": "A235BU DN25"
+    }
+   ]
+  },
+  {
+   "sku": "IH-IH-A361",
+   "sources": [
+    "A361 (catalogue p22)"
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-IH-A361-076",
+     "position": 0,
+     "hoseDash": null,
+     "hoseInch": "3\"",
+     "hoseDn": 76,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 10,
+     "dimensions": {
+      "hoseOD": 92,
+      "burstPressure": 30,
+      "bendRadius": 380,
+      "weightPerMetre": 3.76
+     },
+     "sourcePart": "A361 DN76"
+    },
+    {
+     "partNumber": "IH-IH-A361-102",
+     "position": 1,
+     "hoseDash": null,
+     "hoseInch": "4\"",
+     "hoseDn": 102,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 10,
+     "dimensions": {
+      "hoseOD": 120,
+      "burstPressure": 30,
+      "bendRadius": 550,
+      "weightPerMetre": 4.55
+     },
+     "sourcePart": "A361 DN102"
+    }
+   ]
+  },
+  {
+   "sku": "IH-IH-A400EU",
+   "sources": [
+    "A400EU (catalogue p16)"
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-IH-A400EU-076",
+     "position": 0,
+     "hoseDash": null,
+     "hoseInch": "3\"",
+     "hoseDn": 76,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 20,
+     "dimensions": {
+      "hoseOD": 94,
+      "burstPressure": 80,
+      "bendRadius": 380,
+      "weightPerMetre": 3.9
+     },
+     "sourcePart": "A400EU DN76"
+    },
+    {
+     "partNumber": "IH-IH-A400EU-102",
+     "position": 1,
+     "hoseDash": null,
+     "hoseInch": "4\"",
+     "hoseDn": 102,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 20,
+     "dimensions": {
+      "hoseOD": 126,
+      "burstPressure": 80,
+      "bendRadius": 510,
+      "weightPerMetre": 6.9
+     },
+     "sourcePart": "A400EU DN102"
+    },
+    {
+     "partNumber": "IH-IH-A400EU-152",
+     "position": 2,
+     "hoseDash": null,
+     "hoseInch": "6\"",
+     "hoseDn": 152,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 20,
+     "dimensions": {
+      "hoseOD": 181,
+      "burstPressure": 80,
+      "bendRadius": 760,
+      "weightPerMetre": 12.8
+     },
+     "sourcePart": "A400EU DN152"
+    },
+    {
+     "partNumber": "IH-IH-A400EU-203",
+     "position": 3,
+     "hoseDash": null,
+     "hoseInch": "8\"",
+     "hoseDn": 203,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 20,
+     "dimensions": {
+      "hoseOD": 235,
+      "burstPressure": 80,
+      "bendRadius": 1220,
+      "weightPerMetre": 19.3
+     },
+     "sourcePart": "A400EU DN203"
+    }
+   ]
+  },
+  {
+   "sku": "IH-IH-A410",
+   "sources": [
+    "A410 (catalogue p17)"
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-IH-A410-019",
+     "position": 0,
+     "hoseDash": null,
+     "hoseInch": "3/4\"",
+     "hoseDn": 19,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 10,
+     "dimensions": {
+      "hoseOD": 31,
+      "burstPressure": 40,
+      "bendRadius": 125,
+      "weightPerMetre": 0.68
+     },
+     "sourcePart": "A410 DN19"
+    },
+    {
+     "partNumber": "IH-IH-A410-025",
+     "position": 1,
+     "hoseDash": null,
+     "hoseInch": "1\"",
+     "hoseDn": 25,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 10,
+     "dimensions": {
+      "hoseOD": 37,
+      "burstPressure": 40,
+      "bendRadius": 150,
+      "weightPerMetre": 0.85
+     },
+     "sourcePart": "A410 DN25"
+    },
+    {
+     "partNumber": "IH-IH-A410-032",
+     "position": 2,
+     "hoseDash": null,
+     "hoseInch": "1-1/4\"",
+     "hoseDn": 32,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 10,
+     "dimensions": {
+      "hoseOD": 44,
+      "burstPressure": 40,
+      "bendRadius": 175,
+      "weightPerMetre": 1.05
+     },
+     "sourcePart": "A410 DN32"
+    },
+    {
+     "partNumber": "IH-IH-A410-038",
+     "position": 3,
+     "hoseDash": null,
+     "hoseInch": "1-1/2\"",
+     "hoseDn": 38,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 10,
+     "dimensions": {
+      "hoseOD": 51,
+      "burstPressure": 40,
+      "bendRadius": 225,
+      "weightPerMetre": 1.2
+     },
+     "sourcePart": "A410 DN38"
+    },
+    {
+     "partNumber": "IH-IH-A410-051",
+     "position": 4,
+     "hoseDash": null,
+     "hoseInch": "2\"",
+     "hoseDn": 51,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 10,
+     "dimensions": {
+      "hoseOD": 66,
+      "burstPressure": 40,
+      "bendRadius": 275,
+      "weightPerMetre": 1.78
+     },
+     "sourcePart": "A410 DN51"
+    },
+    {
+     "partNumber": "IH-IH-A410-063",
+     "position": 5,
+     "hoseDash": null,
+     "hoseInch": "2-1/2\"",
+     "hoseDn": 63,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 10,
+     "dimensions": {
+      "hoseOD": 77,
+      "burstPressure": 40,
+      "bendRadius": 300,
+      "weightPerMetre": 2.5
+     },
+     "sourcePart": "A410 DN63"
+    },
+    {
+     "partNumber": "IH-IH-A410-076",
+     "position": 6,
+     "hoseDash": null,
+     "hoseInch": "3\"",
+     "hoseDn": 76,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 10,
+     "dimensions": {
+      "hoseOD": 92,
+      "burstPressure": 40,
+      "bendRadius": 350,
+      "weightPerMetre": 2.95
+     },
+     "sourcePart": "A410 DN76"
+    },
+    {
+     "partNumber": "IH-IH-A410-102",
+     "position": 7,
+     "hoseDash": null,
+     "hoseInch": "4\"",
+     "hoseDn": 102,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 10,
+     "dimensions": {
+      "hoseOD": 120,
+      "burstPressure": 40,
+      "bendRadius": 450,
+      "weightPerMetre": 4.11
+     },
+     "sourcePart": "A410 DN102"
+    }
+   ]
+  },
+  {
+   "sku": "IH-IH-A416",
+   "sources": [
+    "A416 (catalogue p17)"
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-IH-A416-019",
+     "position": 0,
+     "hoseDash": null,
+     "hoseInch": "3/4\"",
+     "hoseDn": 19,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 16,
+     "dimensions": {
+      "hoseOD": 31,
+      "burstPressure": 48,
+      "bendRadius": 125,
+      "weightPerMetre": 0.68
+     },
+     "sourcePart": "A416 DN19"
+    },
+    {
+     "partNumber": "IH-IH-A416-025",
+     "position": 1,
+     "hoseDash": null,
+     "hoseInch": "1\"",
+     "hoseDn": 25,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 16,
+     "dimensions": {
+      "hoseOD": 37,
+      "burstPressure": 48,
+      "bendRadius": 150,
+      "weightPerMetre": 0.85
+     },
+     "sourcePart": "A416 DN25"
+    },
+    {
+     "partNumber": "IH-IH-A416-032",
+     "position": 2,
+     "hoseDash": null,
+     "hoseInch": "1-1/4\"",
+     "hoseDn": 32,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 16,
+     "dimensions": {
+      "hoseOD": 44,
+      "burstPressure": 48,
+      "bendRadius": 175,
+      "weightPerMetre": 1.05
+     },
+     "sourcePart": "A416 DN32"
+    },
+    {
+     "partNumber": "IH-IH-A416-038",
+     "position": 3,
+     "hoseDash": null,
+     "hoseInch": "1-1/2\"",
+     "hoseDn": 38,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 16,
+     "dimensions": {
+      "hoseOD": 51,
+      "burstPressure": 48,
+      "bendRadius": 225,
+      "weightPerMetre": 1.2
+     },
+     "sourcePart": "A416 DN38"
+    },
+    {
+     "partNumber": "IH-IH-A416-051",
+     "position": 4,
+     "hoseDash": null,
+     "hoseInch": "2\"",
+     "hoseDn": 51,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 16,
+     "dimensions": {
+      "hoseOD": 66,
+      "burstPressure": 48,
+      "bendRadius": 275,
+      "weightPerMetre": 1.78
+     },
+     "sourcePart": "A416 DN51"
+    },
+    {
+     "partNumber": "IH-IH-A416-063",
+     "position": 5,
+     "hoseDash": null,
+     "hoseInch": "2-1/2\"",
+     "hoseDn": 63,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 16,
+     "dimensions": {
+      "hoseOD": 77,
+      "burstPressure": 48,
+      "bendRadius": 300,
+      "weightPerMetre": 2.5
+     },
+     "sourcePart": "A416 DN63"
+    },
+    {
+     "partNumber": "IH-IH-A416-076",
+     "position": 6,
+     "hoseDash": null,
+     "hoseInch": "3\"",
+     "hoseDn": 76,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 16,
+     "dimensions": {
+      "hoseOD": 92,
+      "burstPressure": 48,
+      "bendRadius": 350,
+      "weightPerMetre": 2.95
+     },
+     "sourcePart": "A416 DN76"
+    },
+    {
+     "partNumber": "IH-IH-A416-102",
+     "position": 7,
+     "hoseDash": null,
+     "hoseInch": "4\"",
+     "hoseDn": 102,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 16,
+     "dimensions": {
+      "hoseOD": 120,
+      "burstPressure": 48,
+      "bendRadius": 450,
+      "weightPerMetre": 4.11
+     },
+     "sourcePart": "A416 DN102"
+    }
+   ]
+  },
+  {
+   "sku": "IH-IH-A420",
+   "sources": [
+    "A420 (catalogue p15)"
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-IH-A420-035",
+     "position": 0,
+     "hoseDash": null,
+     "hoseInch": null,
+     "hoseDn": 35,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 17,
+     "dimensions": {
+      "hoseOD": 49,
+      "burstPressure": 51,
+      "bendRadius": 210,
+      "weightPerMetre": 1.4
+     },
+     "sourcePart": "A420 DN35"
+    },
+    {
+     "partNumber": "IH-IH-A420-038",
+     "position": 1,
+     "hoseDash": null,
+     "hoseInch": "1-1/2\"",
+     "hoseDn": 38,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 17,
+     "dimensions": {
+      "hoseOD": 52,
+      "burstPressure": 51,
+      "bendRadius": 230,
+      "weightPerMetre": 1.6
+     },
+     "sourcePart": "A420 DN38"
+    }
+   ]
+  },
+  {
+   "sku": "IH-IH-A430",
+   "sources": [
+    "A430 (catalogue p15)"
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-IH-A430-025",
+     "position": 0,
+     "hoseDash": null,
+     "hoseInch": "1\"",
+     "hoseDn": 25,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 10,
+     "dimensions": {
+      "hoseOD": 35,
+      "burstPressure": 30,
+      "bendRadius": 178,
+      "weightPerMetre": 0.7
+     },
+     "sourcePart": "A430 DN25"
+    },
+    {
+     "partNumber": "IH-IH-A430-032",
+     "position": 1,
+     "hoseDash": null,
+     "hoseInch": "1-1/4\"",
+     "hoseDn": 32,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 10,
+     "dimensions": {
+      "hoseOD": 42,
+      "burstPressure": 30,
+      "bendRadius": 224,
+      "weightPerMetre": 0.8
+     },
+     "sourcePart": "A430 DN32"
+    },
+    {
+     "partNumber": "IH-IH-A430-038",
+     "position": 2,
+     "hoseDash": null,
+     "hoseInch": "1-1/2\"",
+     "hoseDn": 38,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 10,
+     "dimensions": {
+      "hoseOD": 47,
+      "burstPressure": 30,
+      "bendRadius": 266,
+      "weightPerMetre": 0.9
+     },
+     "sourcePart": "A430 DN38"
+    },
+    {
+     "partNumber": "IH-IH-A430-051",
+     "position": 3,
+     "hoseDash": null,
+     "hoseInch": "2\"",
+     "hoseDn": 51,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 10,
+     "dimensions": {
+      "hoseOD": 62,
+      "burstPressure": 30,
+      "bendRadius": 357,
+      "weightPerMetre": 1.6
+     },
+     "sourcePart": "A430 DN51"
+    },
+    {
+     "partNumber": "IH-IH-A430-063",
+     "position": 4,
+     "hoseDash": null,
+     "hoseInch": "2-1/2\"",
+     "hoseDn": 63,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 10,
+     "dimensions": {
+      "hoseOD": 74,
+      "burstPressure": 30,
+      "bendRadius": 441,
+      "weightPerMetre": 1.9
+     },
+     "sourcePart": "A430 DN63"
+    },
+    {
+     "partNumber": "IH-IH-A430-076",
+     "position": 5,
+     "hoseDash": null,
+     "hoseInch": "3\"",
+     "hoseDn": 76,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 10,
+     "dimensions": {
+      "hoseOD": 88,
+      "burstPressure": 30,
+      "bendRadius": 530,
+      "weightPerMetre": 2.5
+     },
+     "sourcePart": "A430 DN76"
+    },
+    {
+     "partNumber": "IH-IH-A430-102",
+     "position": 6,
+     "hoseDash": null,
+     "hoseInch": "4\"",
+     "hoseDn": 102,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 10,
+     "dimensions": {
+      "hoseOD": 114,
+      "burstPressure": 30,
+      "bendRadius": 714,
+      "weightPerMetre": 3.8
+     },
+     "sourcePart": "A430 DN102"
+    },
+    {
+     "partNumber": "IH-IH-A430-152",
+     "position": 7,
+     "hoseDash": null,
+     "hoseInch": "6\"",
+     "hoseDn": 152,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 10,
+     "dimensions": {
+      "hoseOD": 172,
+      "burstPressure": 30,
+      "bendRadius": 1064,
+      "weightPerMetre": 9.5
+     },
+     "sourcePart": "A430 DN152"
+    }
+   ]
+  },
+  {
+   "sku": "IH-IH-A460",
+   "sources": [
+    "A460 (catalogue p16)"
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-IH-A460-051",
+     "position": 0,
+     "hoseDash": null,
+     "hoseInch": "2\"",
+     "hoseDn": 51,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 20,
+     "dimensions": {
+      "hoseOD": 65,
+      "burstPressure": 60,
+      "bendRadius": 255,
+      "weightPerMetre": 2.08
+     },
+     "sourcePart": "A460 DN51"
+    },
+    {
+     "partNumber": "IH-IH-A460-076",
+     "position": 1,
+     "hoseDash": null,
+     "hoseInch": "3\"",
+     "hoseDn": 76,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 20,
+     "dimensions": {
+      "hoseOD": 93,
+      "burstPressure": 60,
+      "bendRadius": 375,
+      "weightPerMetre": 3.72
+     },
+     "sourcePart": "A460 DN76"
+    },
+    {
+     "partNumber": "IH-IH-A460-102",
+     "position": 2,
+     "hoseDash": null,
+     "hoseInch": "4\"",
+     "hoseDn": 102,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 20,
+     "dimensions": {
+      "hoseOD": 123,
+      "burstPressure": 60,
+      "bendRadius": 510,
+      "weightPerMetre": 6.1
+     },
+     "sourcePart": "A460 DN102"
+    },
+    {
+     "partNumber": "IH-IH-A460-152",
+     "position": 3,
+     "hoseDash": null,
+     "hoseInch": "6\"",
+     "hoseDn": 152,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 20,
+     "dimensions": {
+      "hoseOD": 176,
+      "burstPressure": 60,
+      "bendRadius": 760,
+      "weightPerMetre": 11.02
+     },
+     "sourcePart": "A460 DN152"
+    }
+   ]
+  },
+  {
+   "sku": "IH-IH-A901AG",
+   "sources": [
+    "A901AG (catalogue p18)"
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-IH-A901AG-075",
+     "position": 0,
+     "hoseDash": null,
+     "hoseInch": null,
+     "hoseDn": 75,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 14,
+     "dimensions": {
+      "burstPressure": 56,
+      "bendRadius": 185,
+      "weightPerMetre": 2.1
+     },
+     "sourcePart": "A901AG DN75"
+    },
+    {
+     "partNumber": "IH-IH-A901AG-100",
+     "position": 1,
+     "hoseDash": null,
+     "hoseInch": null,
+     "hoseDn": 100,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 14,
+     "dimensions": {
+      "burstPressure": 56,
+      "bendRadius": 275,
+      "weightPerMetre": 2.9
+     },
+     "sourcePart": "A901AG DN100"
+    }
+   ]
+  },
+  {
+   "sku": "IH-IH-A901GG",
+   "sources": [
+    "A901GG (catalogue p18)"
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-IH-A901GG-025",
+     "position": 0,
+     "hoseDash": null,
+     "hoseInch": "1\"",
+     "hoseDn": 25,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": null,
+     "dimensions": {
+      "bendRadius": 75,
+      "weightPerMetre": 0.8
+     },
+     "sourcePart": "A901GG DN25"
+    },
+    {
+     "partNumber": "IH-IH-A901GG-032",
+     "position": 1,
+     "hoseDash": null,
+     "hoseInch": "1-1/4\"",
+     "hoseDn": 32,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": null,
+     "dimensions": {
+      "bendRadius": 80,
+      "weightPerMetre": 1.0
+     },
+     "sourcePart": "A901GG DN32"
+    },
+    {
+     "partNumber": "IH-IH-A901GG-040",
+     "position": 2,
+     "hoseDash": null,
+     "hoseInch": null,
+     "hoseDn": 40,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": null,
+     "dimensions": {
+      "bendRadius": 85,
+      "weightPerMetre": 1.4
+     },
+     "sourcePart": "A901GG DN40"
+    },
+    {
+     "partNumber": "IH-IH-A901GG-050",
+     "position": 3,
+     "hoseDash": null,
+     "hoseInch": null,
+     "hoseDn": 50,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": null,
+     "dimensions": {
+      "bendRadius": 125,
+      "weightPerMetre": 2.0
+     },
+     "sourcePart": "A901GG DN50"
+    },
+    {
+     "partNumber": "IH-IH-A901GG-065",
+     "position": 4,
+     "hoseDash": null,
+     "hoseInch": null,
+     "hoseDn": 65,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": null,
+     "dimensions": {
+      "bendRadius": 150,
+      "weightPerMetre": 2.8
+     },
+     "sourcePart": "A901GG DN65"
+    },
+    {
+     "partNumber": "IH-IH-A901GG-075",
+     "position": 5,
+     "hoseDash": null,
+     "hoseInch": null,
+     "hoseDn": 75,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": null,
+     "dimensions": {
+      "bendRadius": 175,
+      "weightPerMetre": 3.5
+     },
+     "sourcePart": "A901GG DN75"
+    },
+    {
+     "partNumber": "IH-IH-A901GG-100",
+     "position": 6,
+     "hoseDash": null,
+     "hoseInch": null,
+     "hoseDn": 100,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": null,
+     "dimensions": {
+      "bendRadius": 250,
+      "weightPerMetre": 4.8
+     },
+     "sourcePart": "A901GG DN100"
+    }
+   ]
+  },
+  {
+   "sku": "IH-IH-A906PG",
+   "sources": [
+    "A906PG (catalogue p19)"
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-IH-A906PG-025",
+     "position": 0,
+     "hoseDash": null,
+     "hoseInch": "1\"",
+     "hoseDn": 25,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": null,
+     "dimensions": {
+      "bendRadius": 75,
+      "weightPerMetre": 0.8
+     },
+     "sourcePart": "A906PG DN25"
+    },
+    {
+     "partNumber": "IH-IH-A906PG-032",
+     "position": 1,
+     "hoseDash": null,
+     "hoseInch": "1-1/4\"",
+     "hoseDn": 32,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": null,
+     "dimensions": {
+      "bendRadius": 80,
+      "weightPerMetre": 1.0
+     },
+     "sourcePart": "A906PG DN32"
+    },
+    {
+     "partNumber": "IH-IH-A906PG-040",
+     "position": 2,
+     "hoseDash": null,
+     "hoseInch": null,
+     "hoseDn": 40,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": null,
+     "dimensions": {
+      "bendRadius": 85,
+      "weightPerMetre": 1.4
+     },
+     "sourcePart": "A906PG DN40"
+    },
+    {
+     "partNumber": "IH-IH-A906PG-050",
+     "position": 3,
+     "hoseDash": null,
+     "hoseInch": null,
+     "hoseDn": 50,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": null,
+     "dimensions": {
+      "bendRadius": 125,
+      "weightPerMetre": 2.0
+     },
+     "sourcePart": "A906PG DN50"
+    },
+    {
+     "partNumber": "IH-IH-A906PG-065",
+     "position": 4,
+     "hoseDash": null,
+     "hoseInch": null,
+     "hoseDn": 65,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": null,
+     "dimensions": {
+      "bendRadius": 150,
+      "weightPerMetre": 2.8
+     },
+     "sourcePart": "A906PG DN65"
+    },
+    {
+     "partNumber": "IH-IH-A906PG-075",
+     "position": 5,
+     "hoseDash": null,
+     "hoseInch": null,
+     "hoseDn": 75,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": null,
+     "dimensions": {
+      "bendRadius": 175,
+      "weightPerMetre": 3.5
+     },
+     "sourcePart": "A906PG DN75"
+    },
+    {
+     "partNumber": "IH-IH-A906PG-100",
+     "position": 6,
+     "hoseDash": null,
+     "hoseInch": null,
+     "hoseDn": 100,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": null,
+     "dimensions": {
+      "bendRadius": 250,
+      "weightPerMetre": 4.8
+     },
+     "sourcePart": "A906PG DN100"
+    }
+   ]
+  },
+  {
+   "sku": "IH-IH-A911SG",
+   "sources": [
+    "A911SG (catalogue p19)"
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-IH-A911SG-025",
+     "position": 0,
+     "hoseDash": null,
+     "hoseInch": "1\"",
+     "hoseDn": 25,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": null,
+     "dimensions": {
+      "bendRadius": 75,
+      "weightPerMetre": 0.8
+     },
+     "sourcePart": "A911SG DN25"
+    },
+    {
+     "partNumber": "IH-IH-A911SG-032",
+     "position": 1,
+     "hoseDash": null,
+     "hoseInch": "1-1/4\"",
+     "hoseDn": 32,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": null,
+     "dimensions": {
+      "bendRadius": 80,
+      "weightPerMetre": 1.0
+     },
+     "sourcePart": "A911SG DN32"
+    },
+    {
+     "partNumber": "IH-IH-A911SG-040",
+     "position": 2,
+     "hoseDash": null,
+     "hoseInch": null,
+     "hoseDn": 40,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": null,
+     "dimensions": {
+      "bendRadius": 85,
+      "weightPerMetre": 1.4
+     },
+     "sourcePart": "A911SG DN40"
+    },
+    {
+     "partNumber": "IH-IH-A911SG-050",
+     "position": 3,
+     "hoseDash": null,
+     "hoseInch": null,
+     "hoseDn": 50,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": null,
+     "dimensions": {
+      "bendRadius": 125,
+      "weightPerMetre": 2.0
+     },
+     "sourcePart": "A911SG DN50"
+    },
+    {
+     "partNumber": "IH-IH-A911SG-065",
+     "position": 4,
+     "hoseDash": null,
+     "hoseInch": null,
+     "hoseDn": 65,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": null,
+     "dimensions": {
+      "bendRadius": 150,
+      "weightPerMetre": 2.8
+     },
+     "sourcePart": "A911SG DN65"
+    },
+    {
+     "partNumber": "IH-IH-A911SG-075",
+     "position": 5,
+     "hoseDash": null,
+     "hoseInch": null,
+     "hoseDn": 75,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": null,
+     "dimensions": {
+      "bendRadius": 175,
+      "weightPerMetre": 3.5
+     },
+     "sourcePart": "A911SG DN75"
+    },
+    {
+     "partNumber": "IH-IH-A911SG-100",
+     "position": 6,
+     "hoseDash": null,
+     "hoseInch": null,
+     "hoseDn": 100,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": null,
+     "dimensions": {
+      "bendRadius": 250,
+      "weightPerMetre": 4.8
+     },
+     "sourcePart": "A911SG DN100"
+    }
+   ]
+  },
+  {
+   "sku": "IH-IH-BAKU",
+   "sources": [
+    "BAKU (catalogue p13)"
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-IH-BAKU-025",
+     "position": 0,
+     "hoseDash": null,
+     "hoseInch": "1\"",
+     "hoseDn": 25,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 9.3,
+     "dimensions": {
+      "hoseOD": 34,
+      "burstPressure": 27.9,
+      "vacuum": 0.88,
+      "bendRadius": 113,
+      "weightPerMetre": 0.49
+     },
+     "sourcePart": "BAKU DN25"
+    },
+    {
+     "partNumber": "IH-IH-BAKU-032",
+     "position": 1,
+     "hoseDash": null,
+     "hoseInch": "1-1/4\"",
+     "hoseDn": 32,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 8,
+     "dimensions": {
+      "hoseOD": 41,
+      "burstPressure": 24,
+      "vacuum": 0.88,
+      "bendRadius": 144,
+      "weightPerMetre": 0.58
+     },
+     "sourcePart": "BAKU DN32"
+    },
+    {
+     "partNumber": "IH-IH-BAKU-038",
+     "position": 2,
+     "hoseDash": null,
+     "hoseInch": "1-1/2\"",
+     "hoseDn": 38,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 8,
+     "dimensions": {
+      "hoseOD": 47,
+      "burstPressure": 24,
+      "vacuum": 0.88,
+      "bendRadius": 171,
+      "weightPerMetre": 0.68
+     },
+     "sourcePart": "BAKU DN38"
+    },
+    {
+     "partNumber": "IH-IH-BAKU-051",
+     "position": 3,
+     "hoseDash": null,
+     "hoseInch": "2\"",
+     "hoseDn": 51,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 7.3,
+     "dimensions": {
+      "hoseOD": 61,
+      "burstPressure": 21.9,
+      "vacuum": 0.88,
+      "bendRadius": 230,
+      "weightPerMetre": 1.04
+     },
+     "sourcePart": "BAKU DN51"
+    },
+    {
+     "partNumber": "IH-IH-BAKU-063",
+     "position": 4,
+     "hoseDash": null,
+     "hoseInch": "2-1/2\"",
+     "hoseDn": 63,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 6.7,
+     "dimensions": {
+      "hoseOD": 74,
+      "burstPressure": 20.1,
+      "vacuum": 0.88,
+      "bendRadius": 284,
+      "weightPerMetre": 1.36
+     },
+     "sourcePart": "BAKU DN63"
+    },
+    {
+     "partNumber": "IH-IH-BAKU-076",
+     "position": 5,
+     "hoseDash": null,
+     "hoseInch": "3\"",
+     "hoseDn": 76,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 6,
+     "dimensions": {
+      "hoseOD": 88,
+      "burstPressure": 18,
+      "vacuum": 0.88,
+      "bendRadius": 342,
+      "weightPerMetre": 1.7
+     },
+     "sourcePart": "BAKU DN76"
+    },
+    {
+     "partNumber": "IH-IH-BAKU-102",
+     "position": 6,
+     "hoseDash": null,
+     "hoseInch": "4\"",
+     "hoseDn": 102,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 4.7,
+     "dimensions": {
+      "hoseOD": 116,
+      "burstPressure": 14.1,
+      "vacuum": 0.88,
+      "bendRadius": 459,
+      "weightPerMetre": 2.62
+     },
+     "sourcePart": "BAKU DN102"
+    },
+    {
+     "partNumber": "IH-IH-BAKU-152",
+     "position": 7,
+     "hoseDash": null,
+     "hoseInch": "6\"",
+     "hoseDn": 152,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 3.3,
+     "dimensions": {
+      "hoseOD": 168,
+      "burstPressure": 9.9,
+      "vacuum": 0.78,
+      "bendRadius": 684,
+      "weightPerMetre": 4.43
+     },
+     "sourcePart": "BAKU DN152"
+    }
+   ]
+  },
+  {
+   "sku": "IH-IH-DELIKATESSE",
+   "sources": [
+    "DELIKATESSE (catalogue p11)"
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-IH-DELIKATESSE-025",
+     "position": 0,
+     "hoseDash": null,
+     "hoseInch": "1\"",
+     "hoseDn": 25,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 8,
+     "dimensions": {
+      "hoseOD": 32,
+      "burstPressure": 24,
+      "vacuum": 0.68,
+      "bendRadius": 114,
+      "weightPerMetre": 0.33
+     },
+     "sourcePart": "DELIKATESSE DN25"
+    },
+    {
+     "partNumber": "IH-IH-DELIKATESSE-032",
+     "position": 1,
+     "hoseDash": null,
+     "hoseInch": "1-1/4\"",
+     "hoseDn": 32,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 7,
+     "dimensions": {
+      "hoseOD": 39,
+      "burstPressure": 21,
+      "vacuum": 0.68,
+      "bendRadius": 143,
+      "weightPerMetre": 0.46
+     },
+     "sourcePart": "DELIKATESSE DN32"
+    },
+    {
+     "partNumber": "IH-IH-DELIKATESSE-038",
+     "position": 2,
+     "hoseDash": null,
+     "hoseInch": "1-1/2\"",
+     "hoseDn": 38,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 6.5,
+     "dimensions": {
+      "hoseOD": 45,
+      "burstPressure": 19.5,
+      "vacuum": 0.68,
+      "bendRadius": 171,
+      "weightPerMetre": 0.55
+     },
+     "sourcePart": "DELIKATESSE DN38"
+    },
+    {
+     "partNumber": "IH-IH-DELIKATESSE-051",
+     "position": 3,
+     "hoseDash": null,
+     "hoseInch": "2\"",
+     "hoseDn": 51,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 6,
+     "dimensions": {
+      "hoseOD": 60,
+      "burstPressure": 18,
+      "vacuum": 0.68,
+      "bendRadius": 230,
+      "weightPerMetre": 0.81
+     },
+     "sourcePart": "DELIKATESSE DN51"
+    },
+    {
+     "partNumber": "IH-IH-DELIKATESSE-063",
+     "position": 4,
+     "hoseDash": null,
+     "hoseInch": "2-1/2\"",
+     "hoseDn": 63,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 5,
+     "dimensions": {
+      "hoseOD": 72,
+      "burstPressure": 15,
+      "vacuum": 0.68,
+      "bendRadius": 284,
+      "weightPerMetre": 1.04
+     },
+     "sourcePart": "DELIKATESSE DN63"
+    },
+    {
+     "partNumber": "IH-IH-DELIKATESSE-076",
+     "position": 5,
+     "hoseDash": null,
+     "hoseInch": "3\"",
+     "hoseDn": 76,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 4,
+     "dimensions": {
+      "hoseOD": 86,
+      "burstPressure": 12,
+      "vacuum": 0.68,
+      "bendRadius": 342,
+      "weightPerMetre": 1.38
+     },
+     "sourcePart": "DELIKATESSE DN76"
+    }
+   ]
+  },
+  {
+   "sku": "IH-IH-DELVAC",
+   "sources": [
+    "DELVAC (catalogue p9)"
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-IH-DELVAC-019",
+     "position": 0,
+     "hoseDash": null,
+     "hoseInch": "3/4\"",
+     "hoseDn": 19,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 8,
+     "dimensions": {
+      "hoseOD": 25,
+      "burstPressure": 24,
+      "vacuum": 0.7,
+      "bendRadius": 86,
+      "weightPerMetre": 0.28
+     },
+     "sourcePart": "DELVAC DN19"
+    },
+    {
+     "partNumber": "IH-IH-DELVAC-025",
+     "position": 1,
+     "hoseDash": null,
+     "hoseInch": "1\"",
+     "hoseDn": 25,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 6.5,
+     "dimensions": {
+      "hoseOD": 32,
+      "burstPressure": 19.5,
+      "vacuum": 0.7,
+      "bendRadius": 114,
+      "weightPerMetre": 0.33
+     },
+     "sourcePart": "DELVAC DN25"
+    },
+    {
+     "partNumber": "IH-IH-DELVAC-032",
+     "position": 2,
+     "hoseDash": null,
+     "hoseInch": "1-1/4\"",
+     "hoseDn": 32,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 5.5,
+     "dimensions": {
+      "hoseOD": 39,
+      "burstPressure": 16.5,
+      "vacuum": 0.7,
+      "bendRadius": 143,
+      "weightPerMetre": 0.46
+     },
+     "sourcePart": "DELVAC DN32"
+    },
+    {
+     "partNumber": "IH-IH-DELVAC-038",
+     "position": 3,
+     "hoseDash": null,
+     "hoseInch": "1-1/2\"",
+     "hoseDn": 38,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 4.5,
+     "dimensions": {
+      "hoseOD": 45,
+      "burstPressure": 13.5,
+      "vacuum": 0.7,
+      "bendRadius": 171,
+      "weightPerMetre": 0.55
+     },
+     "sourcePart": "DELVAC DN38"
+    },
+    {
+     "partNumber": "IH-IH-DELVAC-051",
+     "position": 4,
+     "hoseDash": null,
+     "hoseInch": "2\"",
+     "hoseDn": 51,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 4.5,
+     "dimensions": {
+      "hoseOD": 60,
+      "burstPressure": 13.5,
+      "vacuum": 0.7,
+      "bendRadius": 230,
+      "weightPerMetre": 0.81
+     },
+     "sourcePart": "DELVAC DN51"
+    }
+   ]
+  },
+  {
+   "sku": "IH-IH-IRRIBULK",
+   "sources": [
+    "IRRIBULK (catalogue p9)"
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-IH-IRRIBULK-025",
+     "position": 0,
+     "hoseDash": null,
+     "hoseInch": "1\"",
+     "hoseDn": 25,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 8,
+     "dimensions": {
+      "hoseOD": 32,
+      "burstPressure": 24,
+      "vacuum": 0.78,
+      "bendRadius": 57,
+      "weightPerMetre": 0.36
+     },
+     "sourcePart": "IRRIBULK DN25"
+    },
+    {
+     "partNumber": "IH-IH-IRRIBULK-032",
+     "position": 1,
+     "hoseDash": null,
+     "hoseInch": "1-1/4\"",
+     "hoseDn": 32,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 7,
+     "dimensions": {
+      "hoseOD": 39,
+      "burstPressure": 21,
+      "vacuum": 0.78,
+      "bendRadius": 72,
+      "weightPerMetre": 0.46
+     },
+     "sourcePart": "IRRIBULK DN32"
+    },
+    {
+     "partNumber": "IH-IH-IRRIBULK-038",
+     "position": 2,
+     "hoseDash": null,
+     "hoseInch": "1-1/2\"",
+     "hoseDn": 38,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 6.3,
+     "dimensions": {
+      "hoseOD": 46,
+      "burstPressure": 19,
+      "vacuum": 0.78,
+      "bendRadius": 86,
+      "weightPerMetre": 0.57
+     },
+     "sourcePart": "IRRIBULK DN38"
+    },
+    {
+     "partNumber": "IH-IH-IRRIBULK-051",
+     "position": 3,
+     "hoseDash": null,
+     "hoseInch": "2\"",
+     "hoseDn": 51,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 5.3,
+     "dimensions": {
+      "hoseOD": 60,
+      "burstPressure": 16,
+      "vacuum": 0.78,
+      "bendRadius": 114,
+      "weightPerMetre": 0.83
+     },
+     "sourcePart": "IRRIBULK DN51"
+    },
+    {
+     "partNumber": "IH-IH-IRRIBULK-063",
+     "position": 4,
+     "hoseDash": null,
+     "hoseInch": "2-1/2\"",
+     "hoseDn": 63,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 5,
+     "dimensions": {
+      "hoseOD": 73,
+      "burstPressure": 15,
+      "vacuum": 0.78,
+      "bendRadius": 143,
+      "weightPerMetre": 1.05
+     },
+     "sourcePart": "IRRIBULK DN63"
+    },
+    {
+     "partNumber": "IH-IH-IRRIBULK-076",
+     "position": 5,
+     "hoseDash": null,
+     "hoseInch": "3\"",
+     "hoseDn": 76,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 4.3,
+     "dimensions": {
+      "hoseOD": 86,
+      "burstPressure": 13,
+      "vacuum": 0.78,
+      "bendRadius": 171,
+      "weightPerMetre": 1.47
+     },
+     "sourcePart": "IRRIBULK DN76"
+    },
+    {
+     "partNumber": "IH-IH-IRRIBULK-102",
+     "position": 6,
+     "hoseDash": null,
+     "hoseInch": "4\"",
+     "hoseDn": 102,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 4,
+     "dimensions": {
+      "hoseOD": 113,
+      "burstPressure": 12,
+      "vacuum": 0.78,
+      "bendRadius": 284,
+      "weightPerMetre": 2.17
+     },
+     "sourcePart": "IRRIBULK DN102"
+    },
+    {
+     "partNumber": "IH-IH-IRRIBULK-152",
+     "position": 7,
+     "hoseDash": null,
+     "hoseInch": "6\"",
+     "hoseDn": 152,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 3.3,
+     "dimensions": {
+      "hoseOD": 166,
+      "burstPressure": 10,
+      "vacuum": 0.6,
+      "bendRadius": 401,
+      "weightPerMetre": 4.22
+     },
+     "sourcePart": "IRRIBULK DN152"
+    }
+   ]
+  },
+  {
+   "sku": "IH-IH-PREMFLEX",
+   "sources": [
+    "PREMFLEX (catalogue p22)"
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-IH-PREMFLEX-038",
+     "position": 0,
+     "hoseDash": null,
+     "hoseInch": "1-1/2\"",
+     "hoseDn": 38,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 5.3,
+     "dimensions": {
+      "hoseOD": 49,
+      "burstPressure": 16,
+      "vacuum": 0.9,
+      "bendRadius": 152,
+      "weightPerMetre": 0.7
+     },
+     "sourcePart": "PREMFLEX DN38"
+    },
+    {
+     "partNumber": "IH-IH-PREMFLEX-051",
+     "position": 1,
+     "hoseDash": null,
+     "hoseInch": "2\"",
+     "hoseDn": 51,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 5,
+     "dimensions": {
+      "hoseOD": 65,
+      "burstPressure": 15,
+      "vacuum": 0.9,
+      "bendRadius": 204,
+      "weightPerMetre": 1.05
+     },
+     "sourcePart": "PREMFLEX DN51"
+    },
+    {
+     "partNumber": "IH-IH-PREMFLEX-063",
+     "position": 2,
+     "hoseDash": null,
+     "hoseInch": "2-1/2\"",
+     "hoseDn": 63,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 4.7,
+     "dimensions": {
+      "hoseOD": 76,
+      "burstPressure": 14,
+      "vacuum": 0.9,
+      "bendRadius": 252,
+      "weightPerMetre": 1.39
+     },
+     "sourcePart": "PREMFLEX DN63"
+    },
+    {
+     "partNumber": "IH-IH-PREMFLEX-076",
+     "position": 3,
+     "hoseDash": null,
+     "hoseInch": "3\"",
+     "hoseDn": 76,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 4.3,
+     "dimensions": {
+      "hoseOD": 92,
+      "burstPressure": 13,
+      "vacuum": 0.9,
+      "bendRadius": 304,
+      "weightPerMetre": 1.7
+     },
+     "sourcePart": "PREMFLEX DN76"
+    },
+    {
+     "partNumber": "IH-IH-PREMFLEX-102",
+     "position": 4,
+     "hoseDash": null,
+     "hoseInch": "4\"",
+     "hoseDn": 102,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 4,
+     "dimensions": {
+      "hoseOD": 120,
+      "burstPressure": 12,
+      "vacuum": 0.9,
+      "bendRadius": 408,
+      "weightPerMetre": 2.7
+     },
+     "sourcePart": "PREMFLEX DN102"
+    },
+    {
+     "partNumber": "IH-IH-PREMFLEX-127",
+     "position": 5,
+     "hoseDash": null,
+     "hoseInch": "5\"",
+     "hoseDn": 127,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 3.3,
+     "dimensions": {
+      "hoseOD": 145,
+      "burstPressure": 10,
+      "vacuum": 0.9,
+      "bendRadius": 508,
+      "weightPerMetre": 3.9
+     },
+     "sourcePart": "PREMFLEX DN127"
+    },
+    {
+     "partNumber": "IH-IH-PREMFLEX-152",
+     "position": 6,
+     "hoseDash": null,
+     "hoseInch": "6\"",
+     "hoseDn": 152,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 3.3,
+     "dimensions": {
+      "hoseOD": 171,
+      "burstPressure": 10,
+      "vacuum": 0.9,
+      "bendRadius": 608,
+      "weightPerMetre": 5.0
+     },
+     "sourcePart": "PREMFLEX DN152"
+    }
+   ]
+  },
+  {
+   "sku": "IH-IH-PREMVIN",
+   "sources": [
+    "PREMVIN (catalogue p12)"
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-IH-PREMVIN-013",
+     "position": 0,
+     "hoseDash": null,
+     "hoseInch": "1/2\"",
+     "hoseDn": 13,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 12,
+     "dimensions": {
+      "hoseOD": 19,
+      "burstPressure": 36,
+      "vacuum": 0.88,
+      "bendRadius": 26,
+      "weightPerMetre": 0.21
+     },
+     "sourcePart": "PREMVIN DN13"
+    },
+    {
+     "partNumber": "IH-IH-PREMVIN-016",
+     "position": 1,
+     "hoseDash": null,
+     "hoseInch": "5/8\"",
+     "hoseDn": 16,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 10.5,
+     "dimensions": {
+      "hoseOD": 22,
+      "burstPressure": 33,
+      "vacuum": 0.88,
+      "bendRadius": 32,
+      "weightPerMetre": 0.25
+     },
+     "sourcePart": "PREMVIN DN16"
+    },
+    {
+     "partNumber": "IH-IH-PREMVIN-019",
+     "position": 2,
+     "hoseDash": null,
+     "hoseInch": "3/4\"",
+     "hoseDn": 19,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 11,
+     "dimensions": {
+      "hoseOD": 26,
+      "burstPressure": 33,
+      "vacuum": 0.88,
+      "bendRadius": 38,
+      "weightPerMetre": 0.33
+     },
+     "sourcePart": "PREMVIN DN19"
+    },
+    {
+     "partNumber": "IH-IH-PREMVIN-025",
+     "position": 3,
+     "hoseDash": null,
+     "hoseInch": "1\"",
+     "hoseDn": 25,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 10,
+     "dimensions": {
+      "hoseOD": 33,
+      "burstPressure": 33,
+      "vacuum": 0.88,
+      "bendRadius": 50,
+      "weightPerMetre": 0.52
+     },
+     "sourcePart": "PREMVIN DN25"
+    },
+    {
+     "partNumber": "IH-IH-PREMVIN-032",
+     "position": 4,
+     "hoseDash": null,
+     "hoseInch": "1-1/4\"",
+     "hoseDn": 32,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 9,
+     "dimensions": {
+      "hoseOD": 40,
+      "burstPressure": 30,
+      "vacuum": 0.88,
+      "bendRadius": 80,
+      "weightPerMetre": 0.66
+     },
+     "sourcePart": "PREMVIN DN32"
+    },
+    {
+     "partNumber": "IH-IH-PREMVIN-038",
+     "position": 5,
+     "hoseDash": null,
+     "hoseInch": "1-1/2\"",
+     "hoseDn": 38,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 9,
+     "dimensions": {
+      "hoseOD": 47,
+      "burstPressure": 30,
+      "vacuum": 0.88,
+      "bendRadius": 95,
+      "weightPerMetre": 0.8
+     },
+     "sourcePart": "PREMVIN DN38"
+    },
+    {
+     "partNumber": "IH-IH-PREMVIN-051",
+     "position": 6,
+     "hoseDash": null,
+     "hoseInch": "2\"",
+     "hoseDn": 51,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 7,
+     "dimensions": {
+      "hoseOD": 62,
+      "burstPressure": 27,
+      "vacuum": 0.88,
+      "bendRadius": 128,
+      "weightPerMetre": 1.3
+     },
+     "sourcePart": "PREMVIN DN51"
+    },
+    {
+     "partNumber": "IH-IH-PREMVIN-063",
+     "position": 7,
+     "hoseDash": null,
+     "hoseInch": "2-1/2\"",
+     "hoseDn": 63,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 6,
+     "dimensions": {
+      "hoseOD": 74,
+      "burstPressure": 24,
+      "vacuum": 0.88,
+      "bendRadius": 158,
+      "weightPerMetre": 1.8
+     },
+     "sourcePart": "PREMVIN DN63"
+    },
+    {
+     "partNumber": "IH-IH-PREMVIN-076",
+     "position": 8,
+     "hoseDash": null,
+     "hoseInch": "3\"",
+     "hoseDn": 76,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 4,
+     "dimensions": {
+      "hoseOD": 90,
+      "burstPressure": 15,
+      "vacuum": 0.88,
+      "bendRadius": 190,
+      "weightPerMetre": 2.3
+     },
+     "sourcePart": "PREMVIN DN76"
+    },
+    {
+     "partNumber": "IH-IH-PREMVIN-102",
+     "position": 9,
+     "hoseDash": null,
+     "hoseInch": "4\"",
+     "hoseDn": 102,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 3,
+     "dimensions": {
+      "hoseOD": 118,
+      "burstPressure": 9,
+      "vacuum": 0.88,
+      "bendRadius": 255,
+      "weightPerMetre": 3.7
+     },
+     "sourcePart": "PREMVIN DN102"
+    },
+    {
+     "partNumber": "IH-IH-PREMVIN-127",
+     "position": 10,
+     "hoseDash": null,
+     "hoseInch": "5\"",
+     "hoseDn": 127,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 3,
+     "dimensions": {
+      "hoseOD": 143,
+      "burstPressure": 9,
+      "vacuum": 0.88,
+      "bendRadius": 381,
+      "weightPerMetre": 4.7
+     },
+     "sourcePart": "PREMVIN DN127"
+    },
+    {
+     "partNumber": "IH-IH-PREMVIN-152",
+     "position": 11,
+     "hoseDash": null,
+     "hoseInch": "6\"",
+     "hoseDn": 152,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 2.5,
+     "dimensions": {
+      "hoseOD": 170,
+      "burstPressure": 7,
+      "vacuum": 0.88,
+      "bendRadius": 456,
+      "weightPerMetre": 6.9
+     },
+     "sourcePart": "PREMVIN DN152"
+    }
+   ]
+  },
+  {
+   "sku": "IH-IH-SANB",
+   "sources": [
+    "SANB (catalogue p10)"
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-IH-SANB-019",
+     "position": 0,
+     "hoseDash": null,
+     "hoseInch": "3/4\"",
+     "hoseDn": 19,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 10,
+     "dimensions": {
+      "hoseOD": 31,
+      "burstPressure": 30,
+      "bendRadius": 95,
+      "weightPerMetre": 0.72
+     },
+     "sourcePart": "SANB DN19"
+    },
+    {
+     "partNumber": "IH-IH-SANB-025",
+     "position": 1,
+     "hoseDash": null,
+     "hoseInch": "1\"",
+     "hoseDn": 25,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 10,
+     "dimensions": {
+      "hoseOD": 37,
+      "burstPressure": 30,
+      "bendRadius": 125,
+      "weightPerMetre": 0.9
+     },
+     "sourcePart": "SANB DN25"
+    },
+    {
+     "partNumber": "IH-IH-SANB-032",
+     "position": 2,
+     "hoseDash": null,
+     "hoseInch": "1-1/4\"",
+     "hoseDn": 32,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 10,
+     "dimensions": {
+      "hoseOD": 44,
+      "burstPressure": 30,
+      "bendRadius": 150,
+      "weightPerMetre": 1.01
+     },
+     "sourcePart": "SANB DN32"
+    },
+    {
+     "partNumber": "IH-IH-SANB-038",
+     "position": 3,
+     "hoseDash": null,
+     "hoseInch": "1-1/2\"",
+     "hoseDn": 38,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 10,
+     "dimensions": {
+      "hoseOD": 51,
+      "burstPressure": 30,
+      "bendRadius": 190,
+      "weightPerMetre": 1.4
+     },
+     "sourcePart": "SANB DN38"
+    },
+    {
+     "partNumber": "IH-IH-SANB-051",
+     "position": 4,
+     "hoseDash": null,
+     "hoseInch": "2\"",
+     "hoseDn": 51,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 10,
+     "dimensions": {
+      "hoseOD": 64,
+      "burstPressure": 30,
+      "bendRadius": 255,
+      "weightPerMetre": 1.8
+     },
+     "sourcePart": "SANB DN51"
+    },
+    {
+     "partNumber": "IH-IH-SANB-063",
+     "position": 5,
+     "hoseDash": null,
+     "hoseInch": "2-1/2\"",
+     "hoseDn": 63,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 10,
+     "dimensions": {
+      "hoseOD": 77,
+      "burstPressure": 30,
+      "bendRadius": 315,
+      "weightPerMetre": 2.75
+     },
+     "sourcePart": "SANB DN63"
+    },
+    {
+     "partNumber": "IH-IH-SANB-076",
+     "position": 6,
+     "hoseDash": null,
+     "hoseInch": "3\"",
+     "hoseDn": 76,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 10,
+     "dimensions": {
+      "hoseOD": 92,
+      "burstPressure": 30,
+      "bendRadius": 380,
+      "weightPerMetre": 3.56
+     },
+     "sourcePart": "SANB DN76"
+    },
+    {
+     "partNumber": "IH-IH-SANB-102",
+     "position": 7,
+     "hoseDash": null,
+     "hoseInch": "4\"",
+     "hoseDn": 102,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 10,
+     "dimensions": {
+      "hoseOD": 122,
+      "burstPressure": 30,
+      "bendRadius": 510,
+      "weightPerMetre": 5.91
+     },
+     "sourcePart": "SANB DN102"
+    }
+   ]
+  },
+  {
+   "sku": "IH-IH-SANF",
+   "sources": [
+    "SANF (catalogue p10)"
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-IH-SANF-019",
+     "position": 0,
+     "hoseDash": null,
+     "hoseInch": "3/4\"",
+     "hoseDn": 19,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 10,
+     "dimensions": {
+      "hoseOD": 31,
+      "burstPressure": 30,
+      "bendRadius": 95,
+      "weightPerMetre": 0.72
+     },
+     "sourcePart": "SANF DN19"
+    },
+    {
+     "partNumber": "IH-IH-SANF-025",
+     "position": 1,
+     "hoseDash": null,
+     "hoseInch": "1\"",
+     "hoseDn": 25,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 10,
+     "dimensions": {
+      "hoseOD": 37,
+      "burstPressure": 30,
+      "bendRadius": 125,
+      "weightPerMetre": 0.9
+     },
+     "sourcePart": "SANF DN25"
+    },
+    {
+     "partNumber": "IH-IH-SANF-032",
+     "position": 2,
+     "hoseDash": null,
+     "hoseInch": "1-1/4\"",
+     "hoseDn": 32,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 10,
+     "dimensions": {
+      "hoseOD": 44,
+      "burstPressure": 30,
+      "bendRadius": 150,
+      "weightPerMetre": 1.01
+     },
+     "sourcePart": "SANF DN32"
+    },
+    {
+     "partNumber": "IH-IH-SANF-038",
+     "position": 3,
+     "hoseDash": null,
+     "hoseInch": "1-1/2\"",
+     "hoseDn": 38,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 10,
+     "dimensions": {
+      "hoseOD": 51,
+      "burstPressure": 30,
+      "bendRadius": 190,
+      "weightPerMetre": 1.4
+     },
+     "sourcePart": "SANF DN38"
+    },
+    {
+     "partNumber": "IH-IH-SANF-051",
+     "position": 4,
+     "hoseDash": null,
+     "hoseInch": "2\"",
+     "hoseDn": 51,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 10,
+     "dimensions": {
+      "hoseOD": 64,
+      "burstPressure": 30,
+      "bendRadius": 255,
+      "weightPerMetre": 1.8
+     },
+     "sourcePart": "SANF DN51"
+    },
+    {
+     "partNumber": "IH-IH-SANF-063",
+     "position": 5,
+     "hoseDash": null,
+     "hoseInch": "2-1/2\"",
+     "hoseDn": 63,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 10,
+     "dimensions": {
+      "hoseOD": 77,
+      "burstPressure": 30,
+      "bendRadius": 315,
+      "weightPerMetre": 2.75
+     },
+     "sourcePart": "SANF DN63"
+    },
+    {
+     "partNumber": "IH-IH-SANF-076",
+     "position": 6,
+     "hoseDash": null,
+     "hoseInch": "3\"",
+     "hoseDn": 76,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 10,
+     "dimensions": {
+      "hoseOD": 92,
+      "burstPressure": 30,
+      "bendRadius": 380,
+      "weightPerMetre": 3.56
+     },
+     "sourcePart": "SANF DN76"
+    },
+    {
+     "partNumber": "IH-IH-SANF-102",
+     "position": 7,
+     "hoseDash": null,
+     "hoseInch": "4\"",
+     "hoseDn": 102,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 10,
+     "dimensions": {
+      "hoseOD": 122,
+      "burstPressure": 30,
+      "bendRadius": 510,
+      "weightPerMetre": 5.91
+     },
+     "sourcePart": "SANF DN102"
+    }
+   ]
+  },
+  {
+   "sku": "IH-IH-SANSIL",
+   "sources": [
+    "SANSIL (catalogue p11)"
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-IH-SANSIL-013",
+     "position": 0,
+     "hoseDash": null,
+     "hoseInch": "1/2\"",
+     "hoseDn": 13,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 10,
+     "dimensions": {
+      "hoseOD": 25,
+      "burstPressure": 40,
+      "bendRadius": 45,
+      "weightPerMetre": 0.39
+     },
+     "sourcePart": "SANSIL DN13"
+    },
+    {
+     "partNumber": "IH-IH-SANSIL-019",
+     "position": 1,
+     "hoseDash": null,
+     "hoseInch": "3/4\"",
+     "hoseDn": 19,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 10,
+     "dimensions": {
+      "hoseOD": 31,
+      "burstPressure": 40,
+      "bendRadius": 65,
+      "weightPerMetre": 0.63
+     },
+     "sourcePart": "SANSIL DN19"
+    },
+    {
+     "partNumber": "IH-IH-SANSIL-025",
+     "position": 2,
+     "hoseDash": null,
+     "hoseInch": "1\"",
+     "hoseDn": 25,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 10,
+     "dimensions": {
+      "hoseOD": 38,
+      "burstPressure": 40,
+      "bendRadius": 80,
+      "weightPerMetre": 0.84
+     },
+     "sourcePart": "SANSIL DN25"
+    },
+    {
+     "partNumber": "IH-IH-SANSIL-032",
+     "position": 3,
+     "hoseDash": null,
+     "hoseInch": "1-1/4\"",
+     "hoseDn": 32,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 10,
+     "dimensions": {
+      "hoseOD": 44,
+      "burstPressure": 40,
+      "bendRadius": 120,
+      "weightPerMetre": 0.99
+     },
+     "sourcePart": "SANSIL DN32"
+    },
+    {
+     "partNumber": "IH-IH-SANSIL-038",
+     "position": 4,
+     "hoseDash": null,
+     "hoseInch": "1-1/2\"",
+     "hoseDn": 38,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 10,
+     "dimensions": {
+      "hoseOD": 51,
+      "burstPressure": 40,
+      "bendRadius": 150,
+      "weightPerMetre": 1.38
+     },
+     "sourcePart": "SANSIL DN38"
+    },
+    {
+     "partNumber": "IH-IH-SANSIL-051",
+     "position": 5,
+     "hoseDash": null,
+     "hoseInch": "2\"",
+     "hoseDn": 51,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 10,
+     "dimensions": {
+      "hoseOD": 63,
+      "burstPressure": 40,
+      "bendRadius": 180,
+      "weightPerMetre": 1.87
+     },
+     "sourcePart": "SANSIL DN51"
+    },
+    {
+     "partNumber": "IH-IH-SANSIL-063",
+     "position": 6,
+     "hoseDash": null,
+     "hoseInch": "2-1/2\"",
+     "hoseDn": 63,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 7,
+     "dimensions": {
+      "hoseOD": 76,
+      "burstPressure": 28,
+      "bendRadius": 220,
+      "weightPerMetre": 2.23
+     },
+     "sourcePart": "SANSIL DN63"
+    },
+    {
+     "partNumber": "IH-IH-SANSIL-076",
+     "position": 7,
+     "hoseDash": null,
+     "hoseInch": "3\"",
+     "hoseDn": 76,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 4,
+     "dimensions": {
+      "hoseOD": 89,
+      "burstPressure": 16,
+      "bendRadius": 250,
+      "weightPerMetre": 2.98
+     },
+     "sourcePart": "SANSIL DN76"
+    },
+    {
+     "partNumber": "IH-IH-SANSIL-102",
+     "position": 8,
+     "hoseDash": null,
+     "hoseInch": "4\"",
+     "hoseDn": 102,
+     "portLabel": null,
+     "portDash": null,
+     "weightG": null,
+     "pressureBar": 3,
+     "dimensions": {
+      "hoseOD": 114,
+      "burstPressure": 12,
+      "bendRadius": 360,
+      "weightPerMetre": 3.99
+     },
+     "sourcePart": "SANSIL DN102"
+    }
+   ]
+  }
+ ]
+}
