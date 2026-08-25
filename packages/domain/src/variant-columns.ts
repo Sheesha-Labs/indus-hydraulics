@@ -22,6 +22,8 @@
 
 export type VariantDimensionKey =
   | 'OD'
+  | 'weldPrepOd'
+  | 'weldPrepId'
   | 'W'
   | 'S1'
   | 'S2'
@@ -78,6 +80,18 @@ export const VARIANT_DIMENSION_COLUMNS: readonly VariantColumn[] = [
     label: 'Tube O.D.',
     unit: 'mm',
     help: 'Outside diameter of the tube the port is cut for.',
+  },
+  {
+    key: 'weldPrepOd',
+    label: 'Weld prep O.D.',
+    unit: 'mm',
+    help: 'Outside diameter of the weld preparation, as the source table heads it.',
+  },
+  {
+    key: 'weldPrepId',
+    label: 'Weld prep I.D.',
+    unit: 'mm',
+    help: 'Inside diameter of the weld preparation, as the source table heads it.',
   },
   {
     key: 'W',
@@ -231,10 +245,30 @@ export function variantPortHeading(variants: readonly VariantLike[]): string {
     .map((v) => v.portLabel?.trim())
     .filter((l): l is string => Boolean(l))
   if (labels.length === 0) return 'Port'
+  // A hammer union names a pipe end, not a port: `2" butt weld, Sch XXS` or
+  // `3" LP thread`. That is visible in the value, same as the thread test
+  // below, so it does not need storing either.
+  const isPipeEnd = (l: string) => /\b(butt weld|socket weld|lp thread|line pipe|npt)\b/i.test(l)
+  if (labels.every(isPipeEnd)) return 'End connection'
   const isThread = (l: string) => /^M\d/i.test(l) || l.includes('-')
   if (labels.every(isThread)) return 'Thread'
   if (labels.every((l) => !isThread(l))) return 'Flange size'
   return 'Port'
+}
+
+/**
+ * Heading for the size column.
+ *
+ * A hose fitting is ordered by the bore it crimps onto, and the catalogue
+ * always states that bore as a dash size or a DN as well as an inch. A line
+ * component — a hammer union, a pipe union — is ordered by nominal line size
+ * and has neither. So the presence of `hoseDash` / `hoseDn` across the set is
+ * what separates the two, and it is a property of the data rather than a
+ * guess about the product.
+ */
+export function variantSizeHeading(variants: readonly VariantLike[]): string {
+  const hasBoreCode = variants.some((v) => v.hoseDash != null || v.hoseDn != null)
+  return hasBoreCode ? 'Hose bore' : 'Nominal size'
 }
 
 /** True when at least one variant carries a competitor equivalent to show. */

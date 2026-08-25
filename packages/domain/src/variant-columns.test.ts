@@ -12,6 +12,7 @@ import {
   variantEndColumns,
   variantEquivalentBrand,
   variantHoseLabel,
+  variantSizeHeading,
   variantPortHeading,
   hasVariantPressures,
   hasVariantWeights,
@@ -70,11 +71,17 @@ describe('variantDimensionColumns', () => {
 })
 
 describe('VARIANT_DIMENSION_COLUMNS', () => {
-  it('only claims a meaning for the two columns whose source header states one', () => {
+  it('only claims a meaning for the columns whose source header states one', () => {
+    // `OD` is printed "Tube O.D.", `W` is printed "W- HEX" / "W -NUT", and the
+    // hammer union catalogue heads its two weld-prep columns "Weld Prep —
+    // O.D. / I.D.". Every other letter is bare against a drawing we do not
+    // have, so its help text points at the drawing instead of guessing. Adding
+    // a key here without a printed header is how a made-up dimension meaning
+    // reaches a customer.
     const guessed = VARIANT_DIMENSION_COLUMNS.filter(
       (c) => !c.help.includes('dimension drawing'),
     ).map((c) => c.key)
-    expect(guessed).toEqual(['OD', 'W'])
+    expect(guessed).toEqual(['OD', 'weldPrepOd', 'weldPrepId', 'W'])
   })
 })
 
@@ -256,5 +263,51 @@ describe('adapter dimension columns', () => {
   it('lists every key once, in one order', () => {
     const keys = DIMS.map((c) => c.key)
     expect(new Set(keys).size).toBe(keys.length)
+  })
+})
+
+describe('line-component columns', () => {
+  // A hammer union is ordered by nominal line size and by pipe end, not by a
+  // hose bore and a thread. Both headings are read off the data, because a
+  // wrong one is a table a buyer misreads rather than an error anyone sees.
+  const union = (portLabel: string, hoseInch: string) => ({
+    partNumber: `IH-HU-${hoseInch}`,
+    hoseInch,
+    portLabel,
+  })
+
+  it('heads the size column "Nominal size" when no row carries a bore code', () => {
+    expect(
+      variantSizeHeading([union('2" butt weld, Sch XXS', '2"'), union('3" butt weld, Sch XXS', '3"')]),
+    ).toBe('Nominal size')
+  })
+
+  it('still heads it "Hose bore" when a dash or DN is present', () => {
+    expect(variantSizeHeading([{ partNumber: 'x', hoseDash: 8, hoseInch: '1/2"' }])).toBe('Hose bore')
+    expect(variantSizeHeading([{ partNumber: 'x', hoseDn: 12, hoseInch: '1/2"' }])).toBe('Hose bore')
+  })
+
+  it('heads the port column "End connection" for pipe ends', () => {
+    expect(
+      variantPortHeading([union('2" butt weld, Sch 80', '2"'), union('3" LP thread (NPT)', '3"')]),
+    ).toBe('End connection')
+  })
+
+  it('does not mistake a pipe end for a flange size', () => {
+    // `3"` alone has no dash and no `M` prefix, so the flange branch would
+    // claim it. The pipe-end branch has to run first.
+    expect(variantPortHeading([union('4" socket weld', '4"')])).toBe('End connection')
+  })
+
+  it('leaves thread and flange headings alone', () => {
+    expect(variantPortHeading([{ partNumber: 'x', portLabel: '9/16"-18' }])).toBe('Thread')
+    expect(variantPortHeading([{ partNumber: 'x', portLabel: '3/4"' }])).toBe('Flange size')
+  })
+
+  it('renders the weld-prep columns a butt-weld union prints', () => {
+    const cols = variantDimensionColumns([
+      { partNumber: 'x', dimensions: { A: 95.25, B: 188, weldPrepOd: 63.5, weldPrepId: 31.75 } },
+    ])
+    expect(cols.map((c) => c.key)).toEqual(['weldPrepOd', 'weldPrepId', 'A', 'B'])
   })
 })
