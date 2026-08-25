@@ -25,6 +25,7 @@ import {
   blogReferencedCategorySlugs,
   blogReferencedPageLinks,
   blogReferencedSkus,
+  buildMarketReachBlock,
   designedIndustrySlugs,
   estimateReadingMinutes,
   marketsOrdered,
@@ -38,17 +39,6 @@ import { BLOG_FIGURES } from './blog-figures'
 import type { BlogBlocks, BlogBlocksInput } from '@indus/domain'
 import type { BlogArticleSeed } from './2026-08-17-blog-articles/shared'
 
-/**
- * Composes an article's seed blocks with its entry in the link graph.
- *
- * The generated blocks go immediately before the closing `cta_block`, which
- * every article carries: related reading and onward links belong at the end of
- * the argument, not interrupting it. An article with no CTA gets them appended.
- *
- * `skus` is a fallback rather than an addition — an article that embeds its own
- * products keeps exactly those, because the author picked them against the
- * specific thing the article says.
- */
 /**
  * Inserts each article's in-article photographs.
  *
@@ -106,28 +96,60 @@ export function withFigures(
   return out
 }
 
-export function withCrossLinks(slug: string, blocks: BlogBlocksInput): BlogBlocksInput {
+/**
+ * Composes an article's seed blocks with its entry in the link graph, and with
+ * the delivery-reach section derived from its blog category.
+ *
+ * The generated blocks go immediately before the closing `cta_block`, which
+ * every article carries: related reading, onward links and "where we ship
+ * this" belong at the end of the argument, not interrupting it. An article
+ * with no CTA gets them appended.
+ *
+ * `skus` is a fallback rather than an addition — an article that embeds its own
+ * products keeps exactly those, because the author picked them against the
+ * specific thing the article says.
+ *
+ * `categorySlug` is optional, and its absence means "leave any existing reach
+ * section alone" rather than "this article has none". The distinction is load
+ * bearing: the 2026-08-25 cross-links script calls this without a category, and
+ * an unconditional strip would have it quietly delete the reach block off all
+ * 93 articles the next time anyone re-ran it.
+ */
+export function withCrossLinks(
+  slug: string,
+  blocks: BlogBlocksInput,
+  categorySlug?: string
+): BlogBlocksInput {
   const links = BLOG_CROSS_LINKS[slug]
-  if (!links) return blocks
+  const reach = categorySlug ? buildMarketReachBlock(slug, categorySlug) : null
+  if (!links && !reach) return blocks
 
   const generated: BlogBlocksInput = []
 
   const hasOwnProducts = blocks.some((b) => b.type === 'product_embed')
-  if (links.skus?.length && !hasOwnProducts) {
+  if (links?.skus?.length && !hasOwnProducts) {
     generated.push({ type: 'product_embed', heading: 'Parts for this job', skus: links.skus })
   }
-  for (const page of links.pages ?? []) {
+  for (const page of links?.pages ?? []) {
     generated.push({ type: 'page_link', ...page })
   }
-  if (links.related?.length) {
+  if (links?.related?.length) {
     generated.push({ type: 'related_articles', slugs: links.related })
   }
+  // Last of the generated run, so the reader's final step before the quote
+  // panel is "and we ship this to you" rather than "here is more to read".
+  if (reach) generated.push(reach)
 
   if (generated.length === 0) return blocks
 
   // Strip any previously generated link blocks so a re-import replaces the
   // graph rather than stacking a second copy of it underneath the first.
-  const base = blocks.filter((b) => b.type !== 'related_articles' && b.type !== 'page_link')
+  const base = blocks.filter(
+    (b) =>
+      b.type !== 'related_articles' &&
+      b.type !== 'page_link' &&
+      (b.type !== 'market_reach' || !reach)
+  )
 
   let ctaIndex = -1
   base.forEach((b, i) => {
@@ -155,7 +177,9 @@ export async function runBlogArticleImport({
     if (seenSlugs.has(article.slug)) errors.push(`duplicate slug: ${article.slug}`)
     seenSlugs.add(article.slug)
 
-    const parsed = BlogBlocksSchema.safeParse(withCrossLinks(article.slug, article.bodyBlocks))
+    const parsed = BlogBlocksSchema.safeParse(
+      withCrossLinks(article.slug, article.bodyBlocks, article.categorySlug)
+    )
     if (!parsed.success) {
       for (const issue of parsed.error.issues) {
         errors.push(`[${article.slug}] bodyBlocks.${issue.path.join('.')}: ${issue.message}`)

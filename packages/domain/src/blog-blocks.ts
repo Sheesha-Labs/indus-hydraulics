@@ -250,6 +250,50 @@ export function pageLinkHref(block: { kind: PageLinkBlock['kind']; slug: string 
   return `${prefix}/${block.slug}`
 }
 
+// ── Block: market reach ───────────────────────────────────────────────────
+// "Where we deliver this", as one section rather than a stack of link cards.
+//
+// The blog's readership is already international and the catalogue ships from
+// one warehouse to 126 countries, but until this existed an article said
+// nothing about that. A reader in Accra or Aberdeen finished a piece on hose
+// failure with no signal that the parts in it are something we send them.
+//
+// WHY THIS IS NOT JUST MORE `page_link` BLOCKS
+//
+// A `page_link` is a card, and twelve cards at the foot of every article is
+// the doorway-page shape our own competitor teardown criticises — link mass
+// with no prose carrying it. This block is the opposite trade: one paragraph
+// that says something true about how this kind of work actually ships, and the
+// destinations named inline underneath it as text, not as twelve tiles.
+//
+// `markets[].name` is stored rather than derived because the block is also
+// hand-editable in the admin editor, where the writer types a country and
+// should see it back. The importer checks every slug against the real market
+// set, and the renderer drops any that no longer resolve, so a stored name can
+// never outlive the page it points at.
+export const MarketReachBlockSchema = z.object({
+  type: z.literal('market_reach'),
+  heading: NonEmpty(160),
+  /** Plain text, one or two paragraphs. Not HTML — this is not author prose. */
+  body: NonEmpty(1400),
+  groups: z
+    .array(
+      z.object({
+        /** Region name, matching MARKET_REGIONS so the two can be compared. */
+        region: NonEmpty(80),
+        markets: z
+          .array(z.object({ slug: Slug(160), name: NonEmpty(80) }))
+          .min(1)
+          .max(6),
+      })
+    )
+    .min(1)
+    .max(6),
+  /** Closing line under the regions. Carries the link to the markets hub. */
+  footnote: OptionalText(300),
+})
+export type MarketReachBlock = z.infer<typeof MarketReachBlockSchema>
+
 // ── Block: download ───────────────────────────────────────────────────────
 export const DownloadBlockSchema = z.object({
   type: z.literal('download_block'),
@@ -334,6 +378,7 @@ export const BlogBlockSchema = z.discriminatedUnion('type', [
   CategoryLinkBlockSchema,
   RelatedArticlesBlockSchema,
   PageLinkBlockSchema,
+  MarketReachBlockSchema,
   DownloadBlockSchema,
   CtaBlockSchema,
   AsOfStampBlockSchema,
@@ -460,22 +505,34 @@ export function blogReferencedArticleSlugs(blocks: BlogBlocks): string[] {
 }
 
 /**
- * Every `page_link` in the article, de-duplicated on kind+slug and
+ * Every outbound page reference in the article, de-duplicated on kind+slug and
  * order-preserving. The importer resolves each kind against a different source
  * — markets from code, services and industries from the database — so they are
  * returned grouped rather than as bare slugs.
+ *
+ * `market_reach` markets are folded in here rather than counted separately, and
+ * that is the whole reason the block needs no validation of its own: the
+ * importer already rejects an unknown market slug, and `resolveBlogArticle`
+ * already builds `livePageLinks` from this list, so a renamed market yields a
+ * shorter region row on the page instead of a 404 — the same rule every other
+ * link block follows.
  */
 export function blogReferencedPageLinks(
   blocks: BlogBlocks
 ): Array<{ kind: PageLinkBlock['kind']; slug: string }> {
   const seen = new Set<string>()
   const out: Array<{ kind: PageLinkBlock['kind']; slug: string }> = []
-  for (const block of blocks) {
-    if (block.type !== 'page_link') continue
-    const key = `${block.kind}:${block.slug}`
-    if (seen.has(key)) continue
+  const add = (kind: PageLinkBlock['kind'], slug: string) => {
+    const key = `${kind}:${slug}`
+    if (seen.has(key)) return
     seen.add(key)
-    out.push({ kind: block.kind, slug: block.slug })
+    out.push({ kind, slug })
+  }
+  for (const block of blocks) {
+    if (block.type === 'page_link') add(block.kind, block.slug)
+    else if (block.type === 'market_reach') {
+      for (const group of block.groups) for (const m of group.markets) add('market', m.slug)
+    }
   }
   return out
 }
