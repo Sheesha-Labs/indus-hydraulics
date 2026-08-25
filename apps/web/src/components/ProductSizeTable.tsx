@@ -8,6 +8,7 @@ import {
   variantEquivalentBrand,
   variantHoseLabel,
   variantPortHeading,
+  variantSizeHeading,
   variantText,
   variantTextColumns,
   type VariantLike,
@@ -24,6 +25,14 @@ type Props = {
    * equivalent, where the name appears only in the note above the table.
    */
   equivalenceBrand?: string | null
+  /**
+   * Whether the range is offered in 316 stainless on request. True for the
+   * hydraulic fitting and adapter catalogue, which is where that offer comes
+   * from. False for anything it is not true of — a 15,000 psi hammer union is
+   * a forged alloy-steel pressure part and there is no 316 equivalent to
+   * order, so the line must not render on those pages.
+   */
+  stainlessOnRequest?: boolean
 }
 
 /**
@@ -46,6 +55,7 @@ export default function ProductSizeTable({
   variants,
   equivalenceNote,
   equivalenceBrand,
+  stainlessOnRequest = true,
 }: Props) {
   if (variants.length === 0) {
     return (
@@ -59,6 +69,7 @@ export default function ProductSizeTable({
   const dimensionColumns = variantDimensionColumns(variants)
   const textColumns = variantTextColumns(variants)
   const portHeading = variantPortHeading(variants)
+  const sizeHeading = variantSizeHeading(variants)
   const showEquivalents = hasVariantEquivalents(variants)
   const equivalentBrand = variantEquivalentBrand(variants)
   const disclaimerBrand = equivalenceBrand ?? equivalentBrand
@@ -100,7 +111,7 @@ export default function ProductSizeTable({
               )}
               {showHose && (
                 <th scope="col" className="px-3.5 py-2.5 text-left font-medium">
-                  Hose bore
+                  {sizeHeading}
                 </th>
               )}
               {showPort && (
@@ -212,10 +223,12 @@ export default function ProductSizeTable({
             tube and the port you are mating to.
           </p>
         )}
-        <p>
-          Every size is available in 316 stainless steel on request — add “-SS” to the part number
-          when you enquire.
-        </p>
+        {stainlessOnRequest && (
+          <p>
+            Every size is available in 316 stainless steel on request — add “-SS” to the part
+            number when you enquire.
+          </p>
+        )}
         {disclaimerBrand && (
           <p>
             Indus Hydraulics is not affiliated with {disclaimerBrand}. {disclaimerBrand} part

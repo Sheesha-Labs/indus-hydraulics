@@ -49,6 +49,8 @@ type Props = {
   variantEquivalenceNote?: string | null
   /** Competitor named by the cross-references, for the not-affiliated line. */
   variantEquivalenceBrand?: string | null
+  /** Whether the size table may offer the range in 316 stainless on request. */
+  variantStainlessOnRequest?: boolean
   faqs: Faq[]
   leadTimeDays?: number | null
   warrantyMonths?: number | null
@@ -66,6 +68,7 @@ export default function ProductTabs({
   variants,
   variantEquivalenceNote,
   variantEquivalenceBrand,
+  variantStainlessOnRequest,
   faqs,
   leadTimeDays,
   warrantyMonths,
@@ -190,6 +193,7 @@ export default function ProductTabs({
           variants={variants}
           equivalenceNote={variantEquivalenceNote}
           equivalenceBrand={variantEquivalenceBrand}
+          stainlessOnRequest={variantStainlessOnRequest}
         />
       )}
 

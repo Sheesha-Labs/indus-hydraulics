@@ -153,3 +153,31 @@ export function coerceFieldValue(
     }
   }
 }
+
+// ── Commercial offers that belong to a range, not to a product ─────────────
+
+/**
+ * Spec templates whose range we offer in 316 stainless on request.
+ *
+ * The size table prints that offer under every table, and it came from the
+ * hydraulic fitting and adapter catalogue, where it is true of every size in
+ * every family. It is not true everywhere: a hammer union is a forged
+ * alloy-steel pressure part rated to 20,000 psi and there is no 316 version to
+ * order, so the line has to be off on those pages rather than merely unlikely
+ * to be believed.
+ *
+ * An allowlist rather than a denylist, so a template added later starts
+ * silent and someone has to decide to make the claim.
+ */
+export const STAINLESS_ON_REQUEST_TEMPLATES: readonly string[] = [
+  'threaded-fitting-spec',
+  'hydraulic-adapter-spec',
+  'crimp-ferrule-spec',
+  'sae-flange-spec',
+  'hose-fitting-spec',
+]
+
+/** Whether a product on this spec template may advertise the 316 stainless option. */
+export function offersStainlessOnRequest(specTemplateSlug: string | null | undefined): boolean {
+  return specTemplateSlug != null && STAINLESS_ON_REQUEST_TEMPLATES.includes(specTemplateSlug)
+}

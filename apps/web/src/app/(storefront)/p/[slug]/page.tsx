@@ -14,6 +14,7 @@ import {
   buildBreadcrumbLd,
   buildFaqLd,
   buildProductLd,
+  offersStainlessOnRequest,
   readFittingAttributes,
   relatedProductWindow,
 } from '@indus/domain'
@@ -673,6 +674,7 @@ export default async function ProductPage({ params }: Props) {
           variants={tabVariants}
           variantEquivalenceNote={equivalenceNote}
           variantEquivalenceBrand={equivalenceBrand}
+          variantStainlessOnRequest={offersStainlessOnRequest(product.specTemplate?.slug)}
           faqs={product.faqs.map((f) => ({
             id: f.id,
             question: f.question,
