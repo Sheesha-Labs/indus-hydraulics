@@ -2490,13 +2490,13 @@
       "focusKeyword": "figure 400 hammer union",
       "imageFromSku": null,
       "descriptionShort": "Figure 400 hammer union, standard service, threaded ends. 2\" to 12\", rated 4,000 psi (276 bar), falling with size. Full size table with weights and dimensions on this page.",
-      "descriptionLong": "<p>The Figure 400 is a heavy ball-and-cone union for manifold connections, suction lines and mud systems.</p>\n<h3>Applications</h3>\n<p>Manifold connections, suction lines and mud systems.</p>\n<h3>Construction and sealing</h3>\n<ul>\n<li>Ball and cone sealing, which makes the union easy to align and dependable to seal.</li>\n<li>Heavy steel forgings.</li>\n<li>Sealing: Metal-to-metal ball and cone seat.</li>\n<li>Material: Steel forgings.</li>\n</ul>\n<h3>Working pressure</h3>\n<p>Rated 4,000 psi (276 bar) cold working pressure at 2 in, 3 in and 4 in, tested at 6,000 psi. The 5 in, 6 in, 10 in and 12 in sizes are reduced to 500 psi (34 bar) cold working pressure, tested at 4,000 psi.</p>\n<p><strong>The 5 in, 6 in, 10 in and 12 in sizes are NOT rated at 4,000 psi. The source reduces them to 500 psi cold working pressure, tested at 4,000 psi. The size table below states the rating for every size.</strong></p>\n<h3>How a hammer union makes up</h3>\n<p>A hammer union is a three-piece connection. A male sub and a female sub carry the two line ends, and a wing nut turns on a thread cut into the male sub and pulls a shoulder on the female sub down onto the seat. The lugs standing proud of the nut are struck with a hammer to tighten it, which is where the name comes from — the joint is made up and broken out with a sledgehammer rather than a wrench, so a line can be rigged and stripped quickly in the field. The seal is made by the seat, not by the thread: the nut only supplies the load that holds the two seating faces together. That is why a union will leak from a scored seat or a perished seal long before the thread is at fault, and why a worn union is usually a sub or a seal replacement rather than a scrap part.</p>\n<h3>Specifying one</h3>\n<p>Four things fix a hammer union: the figure number, which sets the pressure class and decides what it will mate with; the service class, standard or sour gas; the end connection, threaded or butt weld; and the nominal size. Figure numbers are an industry series, so a union of the same figure and size from another maker will mate — but the pressure rating stamped on the union is what governs, not the figure number on its own. Send us the line specification and we will confirm the match before quoting.</p>\n<h3>Sizes and part numbers</h3>\n<p>Published in 2\" to 12\" with threaded ends. Every orderable size, its weight, its dimensions and its working pressure are in the size table on this page. Where dimensions and weight are critical, ask us to confirm them against the build before you order.</p>",
+      "descriptionLong": "<p>The Figure 400 is a heavy ball-and-cone union for manifold connections, suction lines and mud systems.</p>\n<h3>Applications</h3>\n<p>Manifold connections, suction lines and mud systems.</p>\n<h3>Construction and sealing</h3>\n<ul>\n<li>Ball and cone sealing, which makes the union easy to align and dependable to seal.</li>\n<li>Heavy steel forgings.</li>\n<li>Sealing: Metal-to-metal ball and cone seat.</li>\n<li>Material: Steel forgings.</li>\n</ul>\n<h3>Working pressure</h3>\n<p>Rated 4,000 psi (276 bar) cold working pressure at 2 in, 3 in and 4 in, tested at 6,000 psi. The 5 in, 6 in, 10 in and 12 in sizes are reduced to 2,500 psi (172 bar), tested at 3,750 psi.</p>\n<p><strong>The 5 in, 6 in, 10 in and 12 in sizes are NOT rated at 4,000 psi. They are reduced to 2,500 psi (172 bar) cold working pressure. The size table below states the rating for every size — read it before you specify a large Figure 400.</strong></p>\n<h3>How a hammer union makes up</h3>\n<p>A hammer union is a three-piece connection. A male sub and a female sub carry the two line ends, and a wing nut turns on a thread cut into the male sub and pulls a shoulder on the female sub down onto the seat. The lugs standing proud of the nut are struck with a hammer to tighten it, which is where the name comes from — the joint is made up and broken out with a sledgehammer rather than a wrench, so a line can be rigged and stripped quickly in the field. The seal is made by the seat, not by the thread: the nut only supplies the load that holds the two seating faces together. That is why a union will leak from a scored seat or a perished seal long before the thread is at fault, and why a worn union is usually a sub or a seal replacement rather than a scrap part.</p>\n<h3>Specifying one</h3>\n<p>Four things fix a hammer union: the figure number, which sets the pressure class and decides what it will mate with; the service class, standard or sour gas; the end connection, threaded or butt weld; and the nominal size. Figure numbers are an industry series, so a union of the same figure and size from another maker will mate — but the pressure rating stamped on the union is what governs, not the figure number on its own. Send us the line specification and we will confirm the match before quoting.</p>\n<h3>Sizes and part numbers</h3>\n<p>Published in 2\" to 12\" with threaded ends. Every orderable size, its weight, its dimensions and its working pressure are in the size table on this page. Where dimensions and weight are critical, ask us to confirm them against the build before you order.</p>",
       "seoTitle": "Figure 400 Hammer Union — 4,000 psi, Reduced Above 4 in",
       "seoDescription": "Figure 400 hammer union in standard service, 2\" to 12\", 4,000 psi. Weights, dimensions and part numbers for every size. Priced on RFQ from Dubai.",
       "faqs": [
         {
           "question": "What is the working pressure of a Figure 400 hammer union?",
-          "answer": "It varies with size. In standard service the range runs from 4,000 psi (276 bar) down to 500 psi (35 bar) on the largest sizes. The size table on this page states the rating for every size — read it before you specify."
+          "answer": "It varies with size. In standard service the range runs from 4,000 psi (276 bar) down to 2,500 psi (172 bar) on the largest sizes. The size table on this page states the rating for every size — read it before you specify."
         },
         {
           "question": "What sizes does the Figure 400 come in?",
@@ -2573,7 +2573,7 @@
         {
           "group": "Performance",
           "label": "Pressure by Size",
-          "value": "2\", 3\", 4\" — 4,000 psi (276 bar); 5\", 6\", 10\", 12\" — 500 psi (35 bar)",
+          "value": "2\", 3\", 4\" — 4,000 psi (276 bar); 5\", 6\", 10\", 12\" — 2,500 psi (172 bar)",
           "unit": null,
           "position": 6,
           "isFilterable": false,
@@ -2665,7 +2665,7 @@
           "portLabel": "5\" LP thread",
           "portDash": null,
           "weightG": null,
-          "pressureBar": 35,
+          "pressureBar": 172,
           "dimensions": {},
           "sourcePart": "Fig 400 5\" threaded"
         },
@@ -2678,7 +2678,7 @@
           "portLabel": "6\" LP thread",
           "portDash": null,
           "weightG": null,
-          "pressureBar": 35,
+          "pressureBar": 172,
           "dimensions": {},
           "sourcePart": "Fig 400 6\" threaded"
         },
@@ -2691,7 +2691,7 @@
           "portLabel": "10\" LP thread",
           "portDash": null,
           "weightG": null,
-          "pressureBar": 35,
+          "pressureBar": 172,
           "dimensions": {},
           "sourcePart": "Fig 400 10\" threaded"
         },
@@ -2704,7 +2704,7 @@
           "portLabel": "12\" LP thread",
           "portDash": null,
           "weightG": null,
-          "pressureBar": 35,
+          "pressureBar": 172,
           "dimensions": {},
           "sourcePart": "Fig 400 12\" threaded"
         }
