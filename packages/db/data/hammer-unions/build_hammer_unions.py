@@ -21,7 +21,9 @@ from hu_sources import (  # noqa: E402
     FIG1502_THREADED, FIG1502_BUTTWELD, FIG2002_BUTTWELD, FIG2202_BUTTWELD,
     FIG211_SIZES, FIG300_SIZES, FIG400_SIZES, FIG400_REDUCED,
 )
-from hu_prose import FIG_PROSE, CONSULT_NOTE, SOUR_NOTE  # noqa: E402
+from hu_prose import (  # noqa: E402
+    FIG_PROSE, CONSULT_NOTE, SOUR_NOTE, HOW_IT_MAKES_UP, SPECIFYING,
+)
 
 # The payload sits beside this script, so the build is reproducible from a
 # clone rather than from the worktree it was first written in.
@@ -119,6 +121,10 @@ def compose(fig, svc, ends_txt, variants, psi_summary, extra_sections=None):
     p = FIG_PROSE[fig]
     parts = [f'<p>{esc(p["summary"])}</p>']
 
+    if p.get('service'):
+        parts.append('<h3>Applications</h3>')
+        parts.append(f'<p>{esc(p["service"])}</p>')
+
     parts.append('<h3>Construction and sealing</h3>\n<ul>')
     for f in p['features']:
         parts.append(f'<li>{esc(f)}</li>')
@@ -129,6 +135,10 @@ def compose(fig, svc, ends_txt, variants, psi_summary, extra_sections=None):
     if p.get('seat'):
         parts.append(f'<li>Seat: {esc(p["seat"])}</li>')
     parts.append('</ul>')
+
+    tail = [p[k] for k in ('naming', 'interchange') if p.get(k)]
+    if tail:
+        parts.append('<p>' + esc(' '.join(tail)) + '</p>')
 
     parts.append('<h3>Working pressure</h3>')
     parts.append(f'<p>{esc(psi_summary)}</p>')
@@ -142,6 +152,12 @@ def compose(fig, svc, ends_txt, variants, psi_summary, extra_sections=None):
 
     sizes = sorted({v['hoseInch'] for v in variants}, key=size_sort)
     rng = sizes[0] if len(sizes) == 1 else f'{sizes[0]} to {sizes[-1]}'
+    parts.append('<h3>How a hammer union makes up</h3>')
+    parts.append(f'<p>{esc(HOW_IT_MAKES_UP)}</p>')
+
+    parts.append('<h3>Specifying one</h3>')
+    parts.append(f'<p>{esc(SPECIFYING)}</p>')
+
     parts.append('<h3>Sizes and part numbers</h3>')
     parts.append(
         f'<p>Published in {esc(rng)} with {esc(ends_txt)}. Every orderable size, its weight, its '
