@@ -1,5 +1,9 @@
 /**
- * The "where we deliver this" section that closes every blog article.
+ * The delivery-reach section on every blog article — the blog's profiles only.
+ *
+ * The engine lives in `./market-reach`: exclusions, rotation, the pinned lead
+ * market and the honesty rules are shared with service cases and industry
+ * pages. This file is the eleven paragraphs and the block wrapper.
  *
  * WHAT PROBLEM THIS SOLVES
  *
@@ -15,82 +19,30 @@
  * a transit time, one would imply a branch abroad, and both would be wrong in
  * the way `markets.ts` spends its header warning about. Generating the section
  * from a per-category profile means the honesty rules are enforced in one
- * place and tested once — see `blog-market-reach.test.ts`, which asserts that
- * no generated body contains a bare day count or the word "local".
+ * place and tested once — see `market-reach.test.ts`.
  *
  * WHY IT IS NOT THE SAME EIGHT LINKS ON ALL 93 ARTICLES
  *
  * That shape is the doorway-page pattern the Al Feel teardown identifies as
  * the reason a competitor's country pages do not rank, and the blog's own
  * `page_link` budget was capped at twelve articles to avoid it. Three things
- * keep this from being that:
+ * keep this from being that: the prose is per category and about the *work*;
+ * the regions rotate per article; and the countries rotate inside the region.
+ * All three live in `./market-reach`.
  *
- *   1. The prose is per category and about the *work*, not the destination.
- *      Eleven paragraphs, each true of the articles it appears on.
- *   2. The regions rotate. A profile lists more candidate regions than it
- *      shows, and each article takes a different window into that list, so
- *      seventeen `machine-down` articles do not carry seventeen identical
- *      blocks.
- *   3. The countries rotate within the region too. Link equity spreads across
- *      the market set rather than piling onto the same six pages.
+ * WHY THE BLOG STORES ITS SECTION AND THE OTHER SURFACES DO NOT
  *
- * Rotation is deterministic — derived from the article slug, never random —
- * because an import must produce identical blocks on every run or every
- * re-import shows as a content diff.
+ * An article is a block document with an admin editor behind it, so the
+ * section is a `market_reach` block composed in at import and overridable per
+ * article. Service cases and industry pages render theirs from code at request
+ * time — see `service-case-market-reach.ts`. Same engine, same component, and
+ * the difference is inherent rather than an inconsistency: only one of the
+ * three surfaces has an editor that could hold the block.
  */
-import { MARKETS } from './markets'
-import { MARKET_REGIONS } from './market-pages'
+import { buildMarketReach } from './market-reach'
 
 import type { MarketReachBlock } from './blog-blocks'
-
-/**
- * Destinations withheld from generated marketing copy.
- *
- * A market page exists for each of these and stays reachable — the index
- * deliberately links all 126, and unlinking a live page would orphan it. This
- * list is narrower than that: it governs only where we *advertise*, and an
- * automatically generated "we deliver here" line naming a comprehensively
- * sanctioned destination is a claim worth not making on 93 pages at once.
- *
- * Same seven the markets design handoff held back. The nearest existing
- * precedent is the `lane routing through sanctioned territory` block in
- * apps/web/src/lib/market-geometry.test.ts, which refuses to draw a surface
- * route across Iran, Russia or Belarus; keep the two in mind together, since
- * neither is derived from the other. Flag to the founder rather than treating
- * as settled: this is a commercial and legal call, not a technical one.
- */
-export const REACH_EXCLUDED_MARKET_SLUGS: readonly string[] = [
-  'russia',
-  'belarus',
-  'libya',
-  'sudan',
-  'south-sudan',
-  'venezuela',
-  'myanmar',
-]
-
-export type MarketReachProfile = {
-  heading: string
-  /** Plain text. No transit times, no foreign premises, no local stock. */
-  body: string
-  /**
-   * Always shown, always first. The home lane — every article's nearest and
-   * most-shipped destinations, whatever its subject.
-   */
-  primaryRegion: string
-  /**
-   * Candidate regions in priority order. Each article shows a window of
-   * `ROTATING_REGIONS_PER_ARTICLE` from this list, offset by its slug, so a
-   * large category covers far more of the world than any one article claims.
-   */
-  rotatingRegions: readonly string[]
-}
-
-/** Regions shown besides the pinned primary. Four rows total per block. */
-const ROTATING_REGIONS_PER_ARTICLE = 3
-
-/** Countries named per region. Twelve links a block, as text rather than tiles. */
-const MARKETS_PER_REGION = 3
+import type { MarketReachProfile } from './market-reach'
 
 /**
  * One profile per blog category.
@@ -246,71 +198,6 @@ export const MARKET_REACH_PROFILES: Readonly<Record<string, MarketReachProfile>>
 }
 
 /**
- * The closing line, identical everywhere.
- *
- * It is the same sentence on all 93 deliberately. The hub link is the piece of
- * this feature that does the structural work — one link per article into
- * `/markets` distributes far better than 93 articles each guessing at twelve
- * destinations, and it is the honest answer to a reader whose country is not
- * in the four rows above.
- */
-export const MARKET_REACH_FOOTNOTE =
-  'Everything above ships from the same Dubai warehouse. If your destination is not listed, it is almost certainly still one we quote.'
-
-// ─────────────────────────────────────────────────────────────────────────────
-// Selection
-// ─────────────────────────────────────────────────────────────────────────────
-
-/**
- * FNV-1a over the slug. Any stable hash would do; what matters is that it is
- * computed here rather than taken from `Math.random` or an array index, so the
- * same article yields the same block on every import and a re-import is a
- * no-op instead of a diff.
- */
-function hash(input: string): number {
-  let h = 0x811c9dc5
-  for (let i = 0; i < input.length; i++) {
-    h ^= input.charCodeAt(i)
-    h = Math.imul(h, 0x01000193) >>> 0
-  }
-  return h
-}
-
-/** Region name to its shippable market slugs, in the order the region lists them. */
-function regionMarkets(): Map<string, Array<{ slug: string; name: string }>> {
-  const bySlug = new Map(MARKETS.map((m) => [m.name, m.slug]))
-  const excluded = new Set(REACH_EXCLUDED_MARKET_SLUGS)
-  const out = new Map<string, Array<{ slug: string; name: string }>>()
-  for (const [region, names] of MARKET_REGIONS) {
-    const rows: Array<{ slug: string; name: string }> = []
-    for (const name of names) {
-      const slug = bySlug.get(name)
-      // A name MARKETS does not carry is a data error, not something to render.
-      // `market-pages.test.ts` already fails on that, so drop it quietly here.
-      if (!slug || excluded.has(slug)) continue
-      rows.push({ slug, name })
-    }
-    out.set(region, rows)
-  }
-  return out
-}
-
-const REGION_MARKETS = regionMarkets()
-
-/** Every region this module can name, for tests and admin tooling. */
-export function marketReachRegions(): string[] {
-  return [...REGION_MARKETS.keys()]
-}
-
-/** `count` items from `items`, starting at `offset`, wrapping. */
-function window<T>(items: readonly T[], offset: number, count: number): T[] {
-  if (items.length === 0) return []
-  const take = Math.min(count, items.length)
-  const start = ((offset % items.length) + items.length) % items.length
-  return Array.from({ length: take }, (_, i) => items[(start + i) % items.length]!)
-}
-
-/**
  * The block for one article, or null when its category has no profile.
  *
  * Returning null rather than falling back to a default is deliberate: a new
@@ -321,46 +208,7 @@ export function buildMarketReachBlock(
   articleSlug: string,
   categorySlug: string
 ): MarketReachBlock | null {
-  const profile = MARKET_REACH_PROFILES[categorySlug]
-  if (!profile) return null
-
-  const seed = hash(articleSlug)
-
-  const regions = [
-    profile.primaryRegion,
-    ...window(profile.rotatingRegions, seed, ROTATING_REGIONS_PER_ARTICLE),
-  ]
-
-  const groups = regions
-    .map((region) => {
-      const available = REGION_MARKETS.get(region) ?? []
-      // Slot one is pinned to the region's leading destination; only the other
-      // two rotate.
-      //
-      // Rotating all three read badly and sold nothing: an article offering
-      // "Brunei, Timor-Leste, Singapore" or "Guatemala, Honduras, the United
-      // States" buries the lane a reader is likely to be on under the two
-      // smallest markets in the region. MARKET_REGIONS is already written in
-      // commercial order — Saudi Arabia, Nigeria, the United States, South
-      // Africa each lead their region — so pinning the head keeps the row
-      // credible while the tail still spreads links across the market set.
-      const [lead, ...rest] = available
-      if (!lead) return { region, markets: [] }
-      const markets = [
-        lead,
-        ...window(rest, hash(`${articleSlug}:${region}`), MARKETS_PER_REGION - 1),
-      ]
-      return { region, markets }
-    })
-    .filter((g) => g.markets.length > 0)
-
-  if (groups.length === 0) return null
-
-  return {
-    type: 'market_reach',
-    heading: profile.heading,
-    body: profile.body,
-    groups,
-    footnote: MARKET_REACH_FOOTNOTE,
-  }
+  const reach = buildMarketReach(articleSlug, MARKET_REACH_PROFILES[categorySlug])
+  if (!reach) return null
+  return { type: 'market_reach', ...reach }
 }
