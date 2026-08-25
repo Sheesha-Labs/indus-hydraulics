@@ -702,7 +702,7 @@ CATEGORIES = [
          shortDescription='Wing-union (hammer lug) connections for flow iron, choke and kill '
                           'lines, cementing and well test spreads — Figure 50 through Figure '
                           '2202, in standard and sour gas service.',
-         seoTitle='Hammer Unions — Figure 100 to 1502 Wing Unions',
+         seoTitle='Hammer Unions — Figure 50 to 2202 Wing Unions',
          seoDescription='Hammer lug unions from Figure 50 to Figure 2202, threaded and butt weld, '
                         'standard and sour gas service. Sizes, weights and pressure ratings for '
                         'every union. Supplied from Dubai.',

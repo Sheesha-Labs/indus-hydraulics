@@ -183,8 +183,8 @@ FIG_PROSE = {
             'The 1 in through 4 in sizes use lip-type seals; the 5 in and 6 in use O-rings.',
             'The 5 in and 6 in sizes are available with butt weld ends only.',
         ],
-        seal='Replaceable elastomer seal ring - lip type from 1 in to 4 in, O-ring at 5 in and '
-             '6 in.',
+        seal='Replaceable elastomer seal ring — lip type from 1 in to 4 in, O-ring at 5 in '
+             'and 6 in.',
         material='Low-alloy steel.',
         caution='Working pressure falls with size. The 5 in and 6 in sizes are rated below the '
                 'rest of the range in both standard and sour gas service. The size table below '
