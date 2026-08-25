@@ -19,7 +19,7 @@ import { stockLine } from '../../lib/category-bands'
 
 function Eyebrow({ children }: { children: string }) {
   return (
-    <p className="mb-3 font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">
+    <p className="text-ih-muted mb-3 font-mono text-[10.5px] font-medium uppercase tracking-[0.13em]">
       {children}
     </p>
   )
@@ -44,16 +44,19 @@ export function CategoryProseBand({ values }: { values: SectionValues }) {
   const heading = str(values, 'heading')
   if (!body && !heading) return null
 
-  const paragraphs = (body ?? '').split(/\n{2,}/).map((p) => p.trim()).filter(Boolean)
+  const paragraphs = (body ?? '')
+    .split(/\n{2,}/)
+    .map((p) => p.trim())
+    .filter(Boolean)
   const eyebrow = str(values, 'eyebrow')
 
   return (
-    <section className="border-b border-ih-border py-8">
+    <section className="border-ih-border border-b py-8">
       {eyebrow && <Eyebrow>{eyebrow}</Eyebrow>}
       {heading && <Heading>{heading}</Heading>}
       <div className="flex max-w-[68ch] flex-col gap-3">
         {paragraphs.map((paragraph) => (
-          <p key={paragraph.slice(0, 40)} className="text-[15px] leading-[1.65] text-ih-ink-2">
+          <p key={paragraph.slice(0, 40)} className="text-ih-ink-2 text-[15px] leading-[1.65]">
             {paragraph}
           </p>
         ))}
@@ -78,14 +81,14 @@ export function CategorySizeBand({ summary }: { summary: CategorySizeSummary | n
       : null
 
   return (
-    <section className="border-b border-ih-border py-8">
+    <section className="border-ih-border border-b py-8">
       <Eyebrow>Size range</Eyebrow>
       <div className="flex flex-wrap gap-x-12 gap-y-4">
         <Figure value={summary.sizes.toLocaleString('en-GB')} label="orderable sizes" />
         <Figure value={String(summary.products)} label="listings with a size table" />
         {bore && <Figure value={bore} label="bore range" />}
       </div>
-      <p className="mt-4 max-w-[68ch] text-[14px] leading-[1.6] text-ih-muted">
+      <p className="text-ih-muted mt-4 max-w-[68ch] text-[14px] leading-[1.6]">
         Every size above is a part number you can quote from. Open any listing for its full table.
       </p>
     </section>
@@ -98,7 +101,9 @@ function Figure({ value, label }: { value: string; label: string }) {
       <span className="font-mono text-[24px] font-medium tabular-nums leading-none tracking-[-0.02em]">
         {value}
       </span>
-      <span className="font-mono text-[11px] uppercase tracking-[0.1em] text-ih-muted">{label}</span>
+      <span className="text-ih-muted font-mono text-[11px] uppercase tracking-[0.1em]">
+        {label}
+      </span>
     </div>
   )
 }
@@ -111,33 +116,54 @@ function Figure({ value, label }: { value: string; label: string }) {
  * whole markets section has been a one-way street. This band renders on every
  * shelf whether or not anyone has written copy for it, because the links are
  * worth having on their own and the stock line is true of the whole catalogue.
+ *
+ * `exportRegions` extends it past the Gulf. The chips above are the five other
+ * GCC states with a transit band on each, which is more useful than a plain
+ * link and is why they stay as they are; the rows below are the rest of the
+ * world, three regions rotating per category so 46 shelves under Hoses &
+ * Fittings do not carry one list 46 times. See `category-market-reach.ts`.
+ *
+ * The generated paragraph is a FALLBACK, not an addition: an editor who has
+ * written body copy for this shelf keeps exactly what they wrote, because they
+ * were writing about this category and the generated line is about its root.
+ * Same rule as the blog's `skus` fallback.
  */
 export function CategoryDeliveryBand({
   values,
   markets,
   categoryName,
+  exportRegions,
 }: {
   values: SectionValues
   markets: GccMarketLink[]
   categoryName: string
+  exportRegions?: {
+    body: string
+    groups: Array<{ region: string; markets: Array<{ slug: string; name: string }> }>
+  } | null
 }) {
   const stock = stockLine()
-  if (!stock && markets.length === 0) return null
+  if (!stock && markets.length === 0 && !exportRegions) return null
 
   const body = str(values, 'body')
-  const paragraphs = (body ?? '').split(/\n{2,}/).map((p) => p.trim()).filter(Boolean)
+  const paragraphs = (body ?? '')
+    .split(/\n{2,}/)
+    .map((p) => p.trim())
+    .filter(Boolean)
+  const generated = paragraphs.length === 0 && exportRegions ? exportRegions.body : null
 
   return (
-    <section className="border-b border-ih-border py-8">
+    <section className="border-ih-border border-b py-8">
       <Eyebrow>{str(values, 'eyebrow') ?? 'Delivery'}</Eyebrow>
       <Heading>{str(values, 'heading') ?? `${categoryName} across the Gulf`}</Heading>
       <div className="flex max-w-[68ch] flex-col gap-3">
-        {stock && <p className="text-[15px] leading-[1.65] text-ih-ink-2">{stock}</p>}
+        {stock && <p className="text-ih-ink-2 text-[15px] leading-[1.65]">{stock}</p>}
         {paragraphs.map((paragraph) => (
-          <p key={paragraph.slice(0, 40)} className="text-[15px] leading-[1.65] text-ih-ink-2">
+          <p key={paragraph.slice(0, 40)} className="text-ih-ink-2 text-[15px] leading-[1.65]">
             {paragraph}
           </p>
         ))}
+        {generated && <p className="text-ih-ink-2 text-[15px] leading-[1.65]">{generated}</p>}
       </div>
       {markets.length > 0 && (
         <div className="mt-5 flex flex-wrap gap-2">
@@ -145,14 +171,49 @@ export function CategoryDeliveryBand({
             <Link
               key={market.slug}
               href={`/markets/${market.slug}`}
-              className="inline-flex items-center gap-2 rounded-full border border-ih-border bg-ih-surface px-3 py-1.5 text-[12.5px] text-ih-ink-2 transition-colors hover:border-ih-accent hover:text-ih-accent"
+              className="border-ih-border bg-ih-surface text-ih-ink-2 hover:border-ih-accent hover:text-ih-accent inline-flex items-center gap-2 rounded-full border px-3 py-1.5 text-[12.5px] transition-colors"
             >
               {market.name}
-              <span className="font-mono text-[10.5px] uppercase tracking-[0.08em] text-ih-muted">
+              <span className="text-ih-muted font-mono text-[10.5px] uppercase tracking-[0.08em]">
                 {market.leadTime}
               </span>
             </Link>
           ))}
+        </div>
+      )}
+      {exportRegions && (
+        <div className="border-ih-border mt-6 border-t pt-5">
+          <p className="mono text-ih-muted mb-3 text-[10.5px] uppercase tracking-[0.12em]">
+            Beyond the Gulf
+          </p>
+          <dl className="grid gap-x-8 gap-y-4 sm:grid-cols-3">
+            {exportRegions.groups.map((group) => (
+              <div key={group.region}>
+                <dt className="mono text-ih-muted text-[10.5px] uppercase tracking-[0.12em]">
+                  {group.region}
+                </dt>
+                <dd className="text-ih-ink m-0 mt-1 text-[14px] leading-[1.55]">
+                  {group.markets.map((market, i) => (
+                    <span key={market.slug}>
+                      {i > 0 && <span className="text-ih-muted">, </span>}
+                      <Link
+                        href={`/markets/${market.slug}`}
+                        className="text-ih-ink hover:text-ih-accent underline underline-offset-[3px] transition-colors"
+                      >
+                        {market.name}
+                      </Link>
+                    </span>
+                  ))}
+                </dd>
+              </div>
+            ))}
+          </dl>
+          <p className="text-ih-muted mt-4 text-[13.5px] leading-[1.55]">
+            <Link href="/markets" className="text-ih-accent font-medium hover:underline">
+              See every export destination
+              <span aria-hidden="true"> →</span>
+            </Link>
+          </p>
         </div>
       )}
     </section>
@@ -187,22 +248,22 @@ export function CategoryFaqBand({ values }: { values: SectionValues }) {
   if (faqs.length === 0) return null
 
   return (
-    <section className="border-b border-ih-border py-8">
+    <section className="border-ih-border border-b py-8">
       <Eyebrow>{str(values, 'eyebrow') ?? 'Questions we get asked'}</Eyebrow>
       <Heading>{str(values, 'heading') ?? 'About this range'}</Heading>
       <dl className="flex max-w-[74ch] flex-col">
         {faqs.map((faq, index) => (
           <div
             key={faq.question}
-            className={`flex flex-col gap-2 py-4 ${index > 0 ? 'border-t border-ih-border' : ''}`}
+            className={`flex flex-col gap-2 py-4 ${index > 0 ? 'border-ih-border border-t' : ''}`}
           >
             <dt className="flex gap-3 text-[15.5px] font-medium leading-[1.4]">
-              <span className="font-mono text-[12px] text-ih-accent">
+              <span className="text-ih-accent font-mono text-[12px]">
                 {String(index + 1).padStart(2, '0')}
               </span>
               {faq.question}
             </dt>
-            <dd className="m-0 pl-[30px] text-[15px] leading-[1.65] text-ih-ink-2">{faq.answer}</dd>
+            <dd className="text-ih-ink-2 m-0 pl-[30px] text-[15px] leading-[1.65]">{faq.answer}</dd>
           </div>
         ))}
       </dl>

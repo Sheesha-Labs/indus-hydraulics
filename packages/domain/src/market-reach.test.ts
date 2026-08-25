@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest'
 
+import { CATEGORY_REACH_PROFILES, categoryExportRegions } from './category-market-reach'
 import { INDUSTRY_REACH_PROFILES, industryMarketReach } from './industry-market-reach'
 import { MARKET_REACH_PROFILES } from './blog-market-reach'
 import { REACH_EXCLUDED_MARKET_SLUGS, buildMarketReach, marketReachRegions } from './market-reach'
@@ -307,6 +308,26 @@ describe('surface entry points', () => {
    * seven pages carrying one region set would be the thing this whole design
    * exists to avoid.
    */
+  /**
+   * The category band drops the pinned home region because the five GCC chips
+   * above it already carry those links with a transit band on each. Repeating
+   * them underneath would be the same links twice on one page.
+   */
+  it('drops the home region from the category band, and only that one', () => {
+    for (const rootSlug of Object.keys(CATEGORY_REACH_PROFILES)) {
+      const profile = CATEGORY_REACH_PROFILES[rootSlug]!
+      const out = categoryExportRegions(rootSlug, rootSlug)
+      expect(out, rootSlug).not.toBeNull()
+      expect(
+        out!.groups.map((g) => g.region),
+        rootSlug
+      ).not.toContain(profile.primaryRegion)
+      expect(out!.groups.length, rootSlug).toBe(3)
+      expect(out!.groups.flatMap((g) => g.markets).length, rootSlug).toBe(9)
+    }
+    expect(categoryExportRegions('anything', 'not-a-root')).toBeNull()
+  })
+
   it('gives each industry a different region set', () => {
     const fingerprints = Object.keys(INDUSTRY_REACH_PROFILES).map((slug) =>
       industryMarketReach(slug)!
