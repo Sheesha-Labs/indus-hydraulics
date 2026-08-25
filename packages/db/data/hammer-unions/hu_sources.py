@@ -27,6 +27,7 @@ PSI_TO_BAR = {
     500: 35,      # M p2  "500 psi cold working pressure (35 bar)"
     1000: 69,     # M p3  "1.000 psi cwp (69 bar)"
     2000: 138,    # M p4  "2.000 psi cwp (138 bar)"
+    2500: 172,    # FMC Weco WU-11/96 p3 "2,500 psi (172 bar)"
     4000: 276,    # derived - S only, no bar printed
     5000: 345,    # M p11 "5.000 psi cwp (345 bar)"
     6000: 414,    # M p8  "6.000 psi (414 bar)"
@@ -236,9 +237,12 @@ FIG2202_BUTTWELD = FIG2002_BUTTWELD
 # against 4,000 psi for the rest of the range.
 FIG211_SIZES = {'2"': 2000, '3"': 2000}
 FIG300_SIZES = {'1"': 2000, '2"': 2000}
+# The reduced sizes are 2,500 psi, NOT the 500 psi the SPM sheet prints. See
+# CONFLICTS `fig400-reduced-sizes`: SPM's own note is internally impossible and
+# three other catalogues agree on 2,500.
 FIG400_SIZES = {
     '2"': 4000, '3"': 4000, '4"': 4000,
-    '5"': 500, '6"': 500, '10"': 500, '12"': 500,
+    '5"': 2500, '6"': 2500, '10"': 2500, '12"': 2500,
 }
 FIG400_REDUCED = {'5"', '6"', '10"', '12"'}
 
@@ -280,11 +284,20 @@ CONFLICTS = [
     ),
     dict(
         id='fig400-reduced-sizes',
-        where='S p2, Fig 400 at 5", 6", 10", 12"',
-        problem='The matrix marks these four sizes *** and the note reduces them to CWP 500 psi '
-                '/ test 4,000 psi, against 4,000 / 6,000 for 2"-4".',
-        resolution='Published per size. This corrects a live page that advertised 12" Figure 400 '
-                   'at 4,000 psi - an eightfold overstatement of a pressure rating.',
+        where='S p2 note, Fig 400 at 5", 6", 10", 12"',
+        problem='The matrix marks these four sizes *** and the note reads "CWP = 500 psi - Test= '
+                '4000 psi". A test pressure eight times the working pressure is not a rating; '
+                'every other line in the same note runs 1.5x (5,000/7,500 and 7,500/12,000), and '
+                '2,500 x 1.5 = 3,750. Checked against the rendered page, so it is SPM\'s typo and '
+                'not our text extraction: the "2," is missing.',
+        resolution='Published at 2,500 psi (172 bar), corroborated three ways. FMC Weco - who '
+                   'originated the figure series - states it in prose: "4,000 psi (276 bar) cold '
+                   'working pressure through 4-inch sizes; 2,500 psi (172 bar) cold working '
+                   'pressure, 5- through 12-inch sizes" (catalog WU-11/96 p3). Parveen: "From 5" '
+                   'to 8" sizes C.W.P. is 2,500 PSI", and its quick-reference table carries a '
+                   'second Fig 400 row at 2,500/3,750. C&C Flow Control pairs 2,500 with a 3,750 '
+                   'test on the neighbouring Figure 110. The 172 bar figure is FMC\'s own, not a '
+                   'conversion of ours.',
         severity='safety',
     ),
     dict(

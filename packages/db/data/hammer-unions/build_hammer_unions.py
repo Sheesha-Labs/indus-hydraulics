@@ -366,8 +366,8 @@ listing('400', 'std', 'threaded',
           banded(FIG400_SIZES, 4000))],
         'threaded ends',
         'Rated 4,000 psi (276 bar) cold working pressure at 2 in, 3 in and 4 in, tested at '
-        '6,000 psi. The 5 in, 6 in, 10 in and 12 in sizes are reduced to 500 psi (34 bar) cold '
-        'working pressure, tested at 4,000 psi.',
+        '6,000 psi. The 5 in, 6 in, 10 in and 12 in sizes are reduced to 2,500 psi (172 bar), '
+        'tested at 3,750 psi.',
         reuse='IH-FI-HU-400-NPT-4K-STD-INDUS')
 
 listing('600', 'std', 'threaded',

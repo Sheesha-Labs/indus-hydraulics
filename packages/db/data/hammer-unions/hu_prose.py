@@ -125,9 +125,10 @@ FIG_PROSE = {
         ],
         seal='Metal-to-metal ball and cone seat.',
         material='Steel forgings.',
-        caution='The 5 in, 6 in, 10 in and 12 in sizes are NOT rated at 4,000 psi. The source '
-                'reduces them to 500 psi cold working pressure, tested at 4,000 psi. The size '
-                'table below states the rating for every size.',
+        caution='The 5 in, 6 in, 10 in and 12 in sizes are NOT rated at 4,000 psi. They are '
+                'reduced to 2,500 psi (172 bar) cold working pressure. The size table below '
+                'states the rating for every size — read it before you specify a large Figure '
+                '400.',
         source='SPM p1-p2',
     ),
     '600': dict(
