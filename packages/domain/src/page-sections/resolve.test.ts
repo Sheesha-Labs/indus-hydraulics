@@ -298,6 +298,48 @@ describe('sub-pages', () => {
     expect(subPageContentKey('market', 'nigeria')).not.toBe(masterContentKey('nigeria'))
   })
 
+  test('every copy field on EVERY sub-page template is an override, defaulting to blank', () => {
+    /*
+      Widened from the market template when categories joined: 195 shelves
+      inherit that one, and a default that shipped a string there would put the
+      same boilerplate on every category page in the catalogue.
+    */
+    for (const kind of SUBPAGE_KINDS) {
+      const def = subPageDef(kind.kind, { name: 'X', slug: 'x' })
+      for (const section of def.sections) {
+        for (const field of section.fields) {
+          const value = section.defaults[field.key] ?? null
+          const empty = Array.isArray(value) ? value.length === 0 : value === null
+          expect(empty, `${kind.kind}/${section.key}/${field.key} ships a value`).toBe(true)
+        }
+      }
+    }
+  })
+
+  test('a category shelf locks the header and the product listing', () => {
+    /*
+      Everything else on a shelf can be reordered or switched off by an editor.
+      These two cannot: a category page with its products hidden is a heading
+      with a 404 underneath it.
+    */
+    const def = subPageDef('category', { name: 'Crimp Ferrules', slug: 'crimp-ferrules' })
+    expect(def.path).toBe('/c/crimp-ferrules')
+    expect(def.sections.find((s) => s.key === 'hero')?.locked).toBe(true)
+    expect(def.sections.find((s) => s.key === 'listing')?.locked).toBe(true)
+    expect(def.sections.find((s) => s.key === 'guidance')?.locked).toBeUndefined()
+  })
+
+  test('the category FAQ carries its own questions', () => {
+    // Unlike a market, a shelf has no record to read questions from — so the
+    // band holds a list field, and the page's FAQ structured data reads it.
+    const def = subPageDef('category', { name: 'X', slug: 'x' })
+    const faq = def.sections.find((s) => s.key === 'faq')
+    // The key is `items` — that is what `faqList` builds, and reading `faqs`
+    // on the render side type-checks while showing nothing.
+    expect(faq?.fields.some((f) => f.key === 'items' && f.kind === 'list')).toBe(true)
+    expect(faq?.defaults.items).toEqual([])
+  })
+
   test('every copy field on the market template is an OVERRIDE, defaulting to blank', () => {
     // This is the whole contract: a market nobody has edited must render what
     // the template builds from its record, not a shared block of boilerplate

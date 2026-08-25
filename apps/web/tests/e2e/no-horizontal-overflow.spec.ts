@@ -30,6 +30,13 @@ const ROUTES = [
   '/',
   '/services',
   '/c',
+  // A category shelf, which since the section bands landed is the widest
+  // storefront layout after the article template: a filter sidebar, a product
+  // grid, a figures strip and a row of market chips.
+  '/c/hydraulic-hose-fittings-suppliers-uae',
+  // ...and a shelf with one product, where every optional band is hidden and
+  // the page is mostly empty state.
+  '/c/cementing-dust-collector',
   '/brands',
   '/industries',
   '/blog',
