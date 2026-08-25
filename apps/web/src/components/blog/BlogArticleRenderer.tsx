@@ -25,6 +25,7 @@ import DirectAnswerBlockView from './blocks/DirectAnswerBlock'
 import DownloadBlockView from './blocks/DownloadBlock'
 import FaqBlockView from './blocks/FaqBlock'
 import KeyTakeawaysBlockView from './blocks/KeyTakeawaysBlock'
+import MarketReachBlockView from './blocks/MarketReachBlock'
 import PageLinkBlockView from './blocks/PageLinkBlock'
 import ProductEmbedBlockView from './blocks/ProductEmbedBlock'
 import ProseBlockView from './blocks/ProseBlock'
@@ -131,6 +132,8 @@ function BlockSwitch({
       return <RelatedArticlesBlockView block={block} articlesBySlug={article.articlesBySlug} />
     case 'page_link':
       return <PageLinkBlockView block={block} livePageLinks={article.livePageLinks} />
+    case 'market_reach':
+      return <MarketReachBlockView block={block} livePageLinks={article.livePageLinks} />
     case 'download_block':
       return <DownloadBlockView block={block} />
     case 'cta_block':

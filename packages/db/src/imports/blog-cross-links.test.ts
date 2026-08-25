@@ -33,6 +33,14 @@ describe('BLOG_CROSS_LINKS', () => {
     }
   })
 
+  /**
+   * The cap survives the delivery-reach section rather than being replaced by
+   * it. `market_reach` puts a shipping note on every article; a `page_link`
+   * card claims the article is *about* that country, and that claim is only
+   * true a dozen times. Raising this number is how the blog would drift into
+   * the doorway-page shape the teardown criticises — see
+   * `blog-market-reach.test.ts` for what keeps the generated section out of it.
+   */
   it('keeps market linking sparse — this is not a doorway-page programme', () => {
     const withMarkets = entries.filter((e) => e[1].pages?.some((p) => p.kind === 'market'))
     expect(withMarkets.length).toBeLessThanOrEqual(12)

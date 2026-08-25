@@ -324,6 +324,85 @@ const FORMS: BlockFormSpec[] = [
     template: () => ({ type: 'page_link', kind: 'market', slug: '', label: '' }) as BlogBlockInput,
   },
   {
+    type: 'market_reach',
+    label: 'Market reach',
+    purpose:
+      'Where we deliver the work this article describes. One paragraph plus the destinations, generated per blog category by the importer — edit here only to override it for a single article.',
+    fields: [
+      {
+        kind: 'text',
+        key: 'heading',
+        label: 'Heading',
+        required: true,
+        placeholder: 'Where we send the replacement',
+      },
+      {
+        kind: 'textarea',
+        key: 'body',
+        label: 'Paragraph',
+        required: true,
+        rows: 6,
+        hint: 'Plain text, no HTML. No transit times, no premises abroad, no local-stock claims — the same rules the market pages are written to.',
+      },
+      {
+        kind: 'groups',
+        key: 'groups',
+        label: 'Regions',
+        itemLabel: 'Region',
+        hint: 'Four regions reads best. The region name should match the markets index so the two agree.',
+        min: 1,
+        max: 6,
+        fields: [
+          {
+            kind: 'text',
+            key: 'region',
+            label: 'Region',
+            required: true,
+            placeholder: 'GCC & Middle East',
+          },
+        ],
+        nested: {
+          key: 'markets',
+          itemLabel: 'Destination',
+          min: 1,
+          max: 6,
+          fields: [
+            {
+              kind: 'text',
+              key: 'slug',
+              label: 'Market slug',
+              required: true,
+              mono: true,
+              placeholder: 'saudi-arabia',
+              hint: 'From the /markets/<slug> URL. A slug with no live page is dropped when the article renders.',
+            },
+            {
+              kind: 'text',
+              key: 'name',
+              label: 'Country name',
+              required: true,
+              placeholder: 'Saudi Arabia',
+            },
+          ],
+        },
+      },
+      {
+        kind: 'textarea',
+        key: 'footnote',
+        label: 'Closing line',
+        rows: 2,
+        hint: 'The link to the markets index is added automatically after this.',
+      },
+    ],
+    template: () =>
+      ({
+        type: 'market_reach',
+        heading: '',
+        body: '',
+        groups: [{ region: '', markets: [{ slug: '', name: '' }] }],
+      }) as BlogBlockInput,
+  },
+  {
     type: 'standard_citation',
     label: 'Standard citation',
     purpose:

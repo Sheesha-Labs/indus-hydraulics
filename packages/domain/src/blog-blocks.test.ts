@@ -359,3 +359,58 @@ describe('page_link', () => {
     ])
   })
 })
+
+describe('market_reach', () => {
+  const reach = {
+    type: 'market_reach',
+    heading: 'Where we send the replacement',
+    body: 'Assemblies are built in Dubai and dispatched with their test records.',
+    groups: [
+      {
+        region: 'GCC & Middle East',
+        markets: [
+          { slug: 'saudi-arabia', name: 'Saudi Arabia' },
+          { slug: 'oman', name: 'Oman' },
+        ],
+      },
+    ],
+    footnote: 'Everything above ships from the same Dubai warehouse.',
+  }
+
+  it('accepts a well-formed block', () => {
+    expect(BlogBlockSchema.safeParse(reach).success).toBe(true)
+  })
+
+  it('rejects a market slug that is not kebab-case, so a pasted URL fails here', () => {
+    const bad = {
+      ...reach,
+      groups: [{ region: 'GCC', markets: [{ slug: '/markets/oman', name: 'Oman' }] }],
+    }
+    expect(BlogBlockSchema.safeParse(bad).success).toBe(false)
+  })
+
+  it('rejects a region with no destinations in it', () => {
+    expect(
+      BlogBlockSchema.safeParse({ ...reach, groups: [{ region: 'GCC', markets: [] }] }).success
+    ).toBe(false)
+  })
+
+  /**
+   * The reason the block needs no resolution logic of its own: folding its
+   * markets into the page-link list is what makes the importer validate them
+   * and `resolveBlogArticle` gate them, for free.
+   */
+  it('reports its markets as page links, de-duplicated against page_link blocks', () => {
+    const card = { type: 'page_link', kind: 'market', slug: 'saudi-arabia', label: 'Saudi Arabia' }
+    const blocks = parseBlogBlocks([card, reach]).blocks
+    expect(blogReferencedPageLinks(blocks)).toEqual([
+      { kind: 'market', slug: 'saudi-arabia' },
+      { kind: 'market', slug: 'oman' },
+    ])
+  })
+
+  it('is not counted as reading time — it is furniture, not argument', () => {
+    const blocks = parseBlogBlocks([reach]).blocks
+    expect(estimateReadingMinutes(blocks)).toBe(estimateReadingMinutes([]))
+  })
+})

@@ -21,10 +21,16 @@
  *   category only would build eleven closed islands rather than one cluster.
  *
  *   pages — markets, services and industries, and ONLY where the article
- *   genuinely bears on them. This is deliberately sparse. Linking 93 articles
- *   into 128 market pages is the doorway-page pattern our own competitor
- *   teardown identifies as the reason a rival's site does not rank, and doing
- *   it to ourselves at scale would earn the same result.
+ *   genuinely bears on them. This is deliberately sparse, and stayed sparse
+ *   when the delivery-reach section arrived. The two are different things: a
+ *   `page_link` is a card asserting this article is *about* that page, and
+ *   ninety-three articles each asserting that about a dozen countries is the
+ *   doorway-page pattern our own competitor teardown identifies as the reason
+ *   a rival's site does not rank. The `market_reach` block is a shipping note
+ *   with prose behind it and rotating destinations — see
+ *   `@indus/domain/blog-market-reach`. Adding a market here still means "this
+ *   article is genuinely about that market", and still costs against the cap
+ *   in blog-cross-links.test.ts.
  *
  *   skus — applied only to articles that carry no product_embed of their own,
  *   so an author's own choice always wins.
