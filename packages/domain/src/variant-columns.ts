@@ -22,6 +22,11 @@
 
 export type VariantDimensionKey =
   | 'OD'
+  | 'hoseOD'
+  | 'burstPressure'
+  | 'vacuum'
+  | 'bendRadius'
+  | 'weightPerMetre'
   | 'weldPrepOd'
   | 'weldPrepId'
   | 'W'
@@ -60,7 +65,12 @@ export type VariantColumn = {
   key: VariantDimensionKey
   /** Column heading. */
   label: string
-  unit: 'mm'
+  /**
+   * A fitting's table is millimetres throughout. A hose's is not — it prints a
+   * burst pressure in bar, a vacuum rating in bar and a weight per metre — so
+   * the unit travels with the column rather than being assumed by the renderer.
+   */
+  unit: 'mm' | 'bar' | 'kg/m'
   /** Tooltip / caption text. Never a guess — see the module note. */
   help: string
 }
@@ -80,6 +90,41 @@ export const VARIANT_DIMENSION_COLUMNS: readonly VariantColumn[] = [
     label: 'Tube O.D.',
     unit: 'mm',
     help: 'Outside diameter of the tube the port is cut for.',
+  },
+  /*
+    Hose columns. Unlike the lettered fitting dimensions these are not read off
+    a drawing — the hose catalogue heads each column with what it is, so the
+    help text is the source's own meaning rather than a pointer to a legend.
+  */
+  {
+    key: 'hoseOD',
+    label: 'O.D.',
+    unit: 'mm',
+    help: 'Outside diameter of the hose, which is what a clamp or a ferrule has to close on.',
+  },
+  {
+    key: 'burstPressure',
+    label: 'Min burst',
+    unit: 'bar',
+    help: 'Minimum burst pressure. A test figure, never a working limit — never select on it.',
+  },
+  {
+    key: 'vacuum',
+    label: 'Vacuum',
+    unit: 'bar',
+    help: 'Vacuum the hose is rated to hold on suction duty, as published.',
+  },
+  {
+    key: 'bendRadius',
+    label: 'Min bend radius',
+    unit: 'mm',
+    help: 'Tightest centreline radius the hose may be bent to at full working pressure.',
+  },
+  {
+    key: 'weightPerMetre',
+    label: 'Weight',
+    unit: 'kg/m',
+    help: 'Weight of the hose per metre, as published.',
   },
   {
     key: 'weldPrepOd',
@@ -193,6 +238,24 @@ export function hasVariantWeights(variants: readonly VariantLike[]): boolean {
 /** True when at least one variant carries a published working pressure. */
 export function hasVariantPressures(variants: readonly VariantLike[]): boolean {
   return variants.some((v) => typeof v.pressureBar === 'number')
+}
+
+/**
+ * Is this a table of hose, or of fittings?
+ *
+ * Read from the ROWS, not passed in by the page. A hose row carries at least
+ * one of the hose-only columns; a fitting row never does. Deriving it means a
+ * product cannot end up with hose data under a fitting's footnotes because
+ * somebody forgot a prop — which matters, because one of those footnotes
+ * offers every size in 316 stainless and that is nonsense on a rubber hose.
+ */
+export function variantTableKind(variants: readonly VariantLike[]): 'hose' | 'fitting' {
+  const hoseKeys: VariantDimensionKey[] = ['hoseOD', 'burstPressure', 'vacuum', 'bendRadius', 'weightPerMetre']
+  const isHose = variants.some((v) => {
+    const dims = variantDimensions(v.dimensions)
+    return hoseKeys.some((k) => k in dims)
+  })
+  return isHose ? 'hose' : 'fitting'
 }
 
 /** Narrow `dimensions` jsonb to a numeric record without trusting its shape. */

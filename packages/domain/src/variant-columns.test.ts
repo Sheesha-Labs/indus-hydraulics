@@ -17,6 +17,7 @@ import {
   hasVariantPressures,
   hasVariantWeights,
   type VariantLike,
+  variantTableKind,
 } from './variant-columns'
 
 const v = (over: Partial<VariantLike> = {}): VariantLike => ({
@@ -74,14 +75,28 @@ describe('VARIANT_DIMENSION_COLUMNS', () => {
   it('only claims a meaning for the columns whose source header states one', () => {
     // `OD` is printed "Tube O.D.", `W` is printed "W- HEX" / "W -NUT", and the
     // hammer union catalogue heads its two weld-prep columns "Weld Prep —
-    // O.D. / I.D.". Every other letter is bare against a drawing we do not
-    // have, so its help text points at the drawing instead of guessing. Adding
-    // a key here without a printed header is how a made-up dimension meaning
-    // reaches a customer.
+    // O.D. / I.D.". The five hose columns are the same case: the hose
+    // catalogue heads every one of them with what it is — "O.D (mm)", "Min
+    // Burst Pressure (Bar)", "Vacuum", "Min Bend Radius (mm)", "Weight
+    // (Kg/Mtr)" — so their help repeats the source rather than a legend.
+    // Every other letter is bare against a drawing we do not have, so its help
+    // text points at the drawing instead of guessing. Adding a key here
+    // without a printed header is how a made-up dimension meaning reaches a
+    // customer.
     const guessed = VARIANT_DIMENSION_COLUMNS.filter(
       (c) => !c.help.includes('dimension drawing'),
     ).map((c) => c.key)
-    expect(guessed).toEqual(['OD', 'weldPrepOd', 'weldPrepId', 'W'])
+    expect(guessed).toEqual([
+      'OD',
+      'hoseOD',
+      'burstPressure',
+      'vacuum',
+      'bendRadius',
+      'weightPerMetre',
+      'weldPrepOd',
+      'weldPrepId',
+      'W',
+    ])
   })
 })
 
@@ -309,5 +324,44 @@ describe('line-component columns', () => {
       { partNumber: 'x', dimensions: { A: 95.25, B: 188, weldPrepOd: 63.5, weldPrepId: 31.75 } },
     ])
     expect(cols.map((c) => c.key)).toEqual(['weldPrepOd', 'weldPrepId', 'A', 'B'])
+  })
+})
+
+describe('hose size tables', () => {
+  const hoseRow = (dn: number) => ({
+    partNumber: `IH-IH-A190-${dn}`,
+    hoseDn: dn,
+    hoseInch: '3/4"',
+    pressureBar: 20,
+    dimensions: { hoseOD: 30, burstPressure: 60, bendRadius: 133, weightPerMetre: 0.6 },
+  })
+
+  it('renders a hose table in catalogue order, with its own units', () => {
+    const cols = variantDimensionColumns([hoseRow(19)])
+    expect(cols.map((c) => c.key)).toEqual(['hoseOD', 'burstPressure', 'bendRadius', 'weightPerMetre'])
+    expect(cols.map((c) => c.unit)).toEqual(['mm', 'bar', 'mm', 'kg/m'])
+  })
+
+  it('adds the vacuum column only where the source publishes one', () => {
+    const suction = { partNumber: 'x', dimensions: { hoseOD: 32, vacuum: 0.88, bendRadius: 114 } }
+    expect(variantDimensionColumns([suction]).map((c) => c.key)).toContain('vacuum')
+    expect(variantDimensionColumns([hoseRow(19)]).map((c) => c.key)).not.toContain('vacuum')
+  })
+
+  it('knows a hose from a fitting by its rows, not by a prop', () => {
+    /*
+      The footnotes differ, and one of them used to offer every size in 316
+      stainless — nonsense on a rubber hose. Reading the kind off the data
+      means a listing cannot get the wrong note because a page forgot to pass
+      something.
+    */
+    expect(variantTableKind([hoseRow(19)])).toBe('hose')
+    expect(
+      variantTableKind([{ partNumber: 'y', hoseDash: 8, portLabel: '9/16"-18', dimensions: { A: 40, B: 22 } }]),
+    ).toBe('fitting')
+  })
+
+  it('treats a row with no dimensions at all as a fitting', () => {
+    expect(variantTableKind([{ partNumber: 'z' }])).toBe('fitting')
   })
 })

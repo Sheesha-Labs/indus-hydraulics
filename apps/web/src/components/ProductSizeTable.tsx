@@ -9,6 +9,7 @@ import {
   variantHoseLabel,
   variantPortHeading,
   variantSizeHeading,
+  variantTableKind,
   variantText,
   variantTextColumns,
   type VariantLike,
@@ -81,6 +82,10 @@ export default function ProductSizeTable({
   const showPort = endColumns.length === 0 && variants.some((v) => Boolean(v.portLabel))
   const showWeight = hasVariantWeights(variants)
   const showPressure = hasVariantPressures(variants)
+  // Hose or fitting, read off the rows themselves — see `variantTableKind`. A
+  // hose has no port and its size column IS its bore, so the two places this
+  // table speaks in fitting terms have to say something else.
+  const kind = variantTableKind(variants)
 
   return (
     <div>
@@ -212,15 +217,32 @@ export default function ProductSizeTable({
           <p>
             {[...endColumns, ...dimensionColumns, ...textColumns]
               .map((c) => `${c.label} — ${c.help}`)
-              .join(' ')}{' '}
-            Ask us for the dimension drawing if you need it stamped.
+              .join(' ')}
+            {/* A fitting's letters are read off a dimension drawing and a buyer
+                can ask for it stamped. A hose has no such drawing — its columns
+                are headed with what they are — so the offer would be an offer
+                of nothing. */}
+            {kind === 'fitting' ? ' Ask us for the dimension drawing if you need it stamped.' : ''}
           </p>
         )}
-        {showPressure && (
+        {showPressure && kind === 'fitting' && (
           <p>
             Working pressure is the manufacturer&rsquo;s published rating for the fitting itself. An
             assembly is limited by its lowest-rated component, so check it against the hose, the
             tube and the port you are mating to.
+          </p>
+        )}
+        {showPressure && kind === 'hose' && (
+          <p>
+            Working pressure is the published rating for the hose itself. A made-up assembly is
+            limited by its lowest-rated part, so check it against the coupling, the clamp or
+            ferrule, and the temperature you are running at.
+          </p>
+        )}
+        {kind === 'hose' && (
+          <p>
+            Cut lengths and made-up assemblies are prepared in Dubai. Tell us the bore, the length
+            and the ends you need.
           </p>
         )}
         {stainlessOnRequest && (
