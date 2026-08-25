@@ -4,7 +4,6 @@ import type { BlogBlock } from '@indus/domain'
 // than being reimplemented. The schemas are literally the same types, so a
 // second set would be duplicate markup guaranteed to drift.
 import ApproachGridBlockView from '../services/blocks/ApproachGridBlock'
-import FigureBlockView from '../services/blocks/FigureBlock'
 import LeadBlockView from '../services/blocks/LeadBlock'
 import ParagraphBlockView from '../services/blocks/ParagraphBlock'
 import ProblemSolutionBlockView from '../services/blocks/ProblemSolutionBlock'
@@ -16,6 +15,7 @@ import SpecTableBlockView from '../services/blocks/SpecTableBlock'
 import TeamListBlockView from '../services/blocks/TeamListBlock'
 
 import AsOfStampBlockView from './blocks/AsOfStampBlock'
+import BlogFigureBlockView from './blocks/BlogFigureBlock'
 import CalloutBlockView from './blocks/CalloutBlock'
 import CategoryLinkBlockView from './blocks/CategoryLinkBlock'
 import ComparisonTableBlockView from './blocks/ComparisonTableBlock'
@@ -92,7 +92,7 @@ function BlockSwitch({
     case 'problem_solution':
       return <ProblemSolutionBlockView block={block} />
     case 'figure':
-      return <FigureBlockView block={block} />
+      return <BlogFigureBlockView block={block} figuresById={article.figuresById} />
     case 'pull_quote':
       return <PullQuoteBlockView block={block} />
     case 'approach_grid':

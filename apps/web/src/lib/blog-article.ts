@@ -37,6 +37,11 @@ export type EmbeddedProduct = {
   imageAlt: string | null
 }
 
+export type EmbeddedFigure = {
+  storagePath: string
+  alt: string | null
+}
+
 export type EmbeddedCategory = {
   slug: string
   name: string
@@ -53,6 +58,8 @@ export interface ResolvedBlogArticle {
   articlesBySlug: Map<string, RelatedArticle>
   /** `kind:slug` for every `page_link` target that actually exists. */
   livePageLinks: Set<string>
+  /** Media referenced by `figure` blocks, keyed by media id. */
+  figuresById: Map<string, EmbeddedFigure>
   /** Blocks that failed validation, for server-side logging. */
   dropped: Array<{ index: number; reason: string }>
 }
@@ -73,12 +80,24 @@ export async function resolveBlogArticle(
     ...new Set(blocks.flatMap((b) => (b.type === 'category_link' ? [b.slug] : []))),
   ]
 
+  // `figure.imageId` is a Media id — that is what `collectMediaIdsFromBlocks`
+  // in @indus/domain indexes it as, and therefore what stops the media library
+  // trashing a picture an article is using. It has to be resolved to a storage
+  // path here; handing the id itself to an <img> is what the shared
+  // service-case view does, and it is why no figure has ever rendered.
+  const figureIds = [
+    ...new Set(
+      blocks.flatMap((b) => (b.type === 'figure' && b.imageId ? [b.imageId] : [])),
+    ),
+  ]
+
   const articleSlugs = blogReferencedArticleSlugs(blocks).filter((slug) => slug !== selfSlug)
   const pageLinks = blogReferencedPageLinks(blocks)
   const wantedServices = pageLinks.filter((l) => l.kind === 'service').map((l) => l.slug)
   const wantedIndustries = pageLinks.filter((l) => l.kind === 'industry').map((l) => l.slug)
 
-  const [products, categories, relatedPosts, services, industries] = await Promise.all([
+  const [products, categories, relatedPosts, services, industries, figureMedia] =
+    await Promise.all([
     skus.length
       ? db.product.findMany({
           where: { sku: { in: skus }, status: 'active' },
@@ -124,6 +143,12 @@ export async function resolveBlogArticle(
       ? db.industry.findMany({
           where: { slug: { in: wantedIndustries }, isPublished: true },
           select: { slug: true },
+        })
+      : Promise.resolve([]),
+    figureIds.length
+      ? db.media.findMany({
+          where: { id: { in: figureIds }, deletedAt: null },
+          select: { id: true, storagePath: true, alt: true },
         })
       : Promise.resolve([]),
   ])
@@ -185,6 +210,10 @@ export async function resolveBlogArticle(
       .map((l) => `${l.kind}:${l.slug}`)
   )
 
+  const figuresById = new Map<string, EmbeddedFigure>(
+    figureMedia.map((m) => [m.id, { storagePath: m.storagePath, alt: m.alt }]),
+  )
+
   return {
     blocks,
     toc: blogTocEntries(blocks),
@@ -193,6 +222,7 @@ export async function resolveBlogArticle(
     categoriesBySlug,
     articlesBySlug,
     livePageLinks,
+    figuresById,
     dropped,
   }
 }

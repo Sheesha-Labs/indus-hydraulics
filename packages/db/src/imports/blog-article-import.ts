@@ -33,6 +33,7 @@ import {
 import { db } from '../index'
 import { BLOG_CROSS_LINKS } from './blog-cross-links'
 import { BLOG_SEO } from './blog-seo'
+import { BLOG_FIGURES } from './blog-figures'
 
 import type { BlogBlocks, BlogBlocksInput } from '@indus/domain'
 import type { BlogArticleSeed } from './2026-08-17-blog-articles/shared'
@@ -48,6 +49,63 @@ import type { BlogArticleSeed } from './2026-08-17-blog-articles/shared'
  * products keeps exactly those, because the author picked them against the
  * specific thing the article says.
  */
+/**
+ * Inserts each article's in-article photographs.
+ *
+ * `afterSection` is 1-based over the article's own `section_head` blocks and
+ * the figure goes immediately after that heading, so a picture always opens a
+ * section rather than cutting an argument in half. A figure whose target
+ * section does not exist is dropped rather than appended somewhere arbitrary —
+ * silently moving a picture to the end of an article is worse than omitting it.
+ *
+ * `heroIdBySlug` maps the borrowed article's slug to its hero Media id, which
+ * is what `imageId` holds. See the note in ./blog-figures.ts for why that is a
+ * media id and not a storage path.
+ *
+ * Existing figures are stripped first, so a re-import replaces the set rather
+ * than stacking a second copy underneath.
+ */
+export function withFigures(
+  slug: string,
+  blocks: BlogBlocksInput,
+  heroIdBySlug: Map<string, string>
+): BlogBlocksInput {
+  const figures = BLOG_FIGURES[slug]
+  const base = blocks.filter((b) => b.type !== 'figure')
+  if (!figures?.length) return base
+
+  // Insert from the last target backwards, so earlier indices stay valid.
+  const ordered = [...figures].sort((a, b) => b.afterSection - a.afterSection)
+  let out: BlogBlocksInput = base
+
+  for (const figure of ordered) {
+    const imageId = heroIdBySlug.get(figure.from)
+    if (!imageId) continue
+
+    let seen = 0
+    let at = -1
+    out.forEach((block, i) => {
+      if (block.type !== 'section_head') return
+      seen += 1
+      if (seen === figure.afterSection && at === -1) at = i
+    })
+    if (at === -1) continue
+
+    out = [
+      ...out.slice(0, at + 1),
+      {
+        type: 'figure',
+        imageId,
+        caption: figure.caption,
+        aspectRatio: figure.aspectRatio ?? '16/9',
+      },
+      ...out.slice(at + 1),
+    ]
+  }
+
+  return out
+}
+
 export function withCrossLinks(slug: string, blocks: BlogBlocksInput): BlogBlocksInput {
   const links = BLOG_CROSS_LINKS[slug]
   if (!links) return blocks
