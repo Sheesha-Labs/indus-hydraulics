@@ -6,7 +6,7 @@ import { redirect } from 'next/navigation'
 import { db } from '@indus/db'
 import {
   AVAILABILITY_LABELS,
-  AVAILABILITY_MODES,
+  offeredAvailabilityModes,
   PAGE_SIZE,
   SEARCH_TYPES,
   SEARCH_TYPE_LABELS,
@@ -470,7 +470,7 @@ export default async function SearchPage({ searchParams }: Props) {
               <div className="mb-5">
                 <div className="font-semibold text-[13px] mb-2">Availability</div>
                 <div className="flex flex-col gap-1.5 text-[13px]">
-                  {AVAILABILITY_MODES.map((mode) => {
+                  {offeredAvailabilityModes().map((mode) => {
                     const checked = availability === mode
                     return (
                       <Link
