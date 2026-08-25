@@ -10,10 +10,12 @@ name: Smoke E2E
 #   URLs that `deployment_status.environment_url` returns for previews
 #   (`indus-hydraulics-xxx-projects.vercel.app`). The smoke runs from a
 #   GitHub Actions runner with no Vercel session and gets HTTP 401.
-#   The canonical production URL (`indus-hydraulics.vercel.app`) is
-#   public and routes to the latest production deploy, so we hit that
-#   directly. Preview-deploy smoke is deferred — wire a Vercel
-#   automation bypass token first.
+#   So we hit the customer-facing domain (`indushydraulics.com`), which
+#   is public and is what users actually get. This used to be
+#   `indus-hydraulics.vercel.app` on the assumption that the alias
+#   "routes to the latest production deploy" — it does not reliably, and
+#   the two were observed serving different builds. Preview-deploy smoke
+#   is deferred — wire a Vercel automation bypass token first.
 #
 # Admin deploys are skipped — auth-gated, needs a different suite.
 
@@ -56,9 +58,20 @@ jobs:
 
       - name: Run smoke E2E
         env:
-          # Hit the canonical production URL, not the deployment-specific
-          # URL — see "Why production-only" comment above.
-          PLAYWRIGHT_BASE_URL: https://indus-hydraulics.vercel.app
+          # The customer-facing domain, not the vercel.app alias.
+          #
+          # The alias serves a DIFFERENT build. Measured on 2026-08-24 at the
+          # same viewport, same markup, both fully loaded:
+          #
+          #   indushydraulics.com          0px horizontal overflow
+          #   indus-hydraulics.vercel.app  +79px, header "Sign in" at x=1095
+          #
+          # The alias was also returning 503 from /api/health while the real
+          # domain answered `{"status":"ok","db":"reachable"}`. So the suite
+          # was failing on a deployment nobody visits, and would equally have
+          # PASSED while the customer-facing site was broken — the failure
+          # mode a smoke test exists to prevent.
+          PLAYWRIGHT_BASE_URL: https://indushydraulics.com
           PLAYWRIGHT_REUSE_SERVER: '1'
         run: pnpm test:e2e
 
