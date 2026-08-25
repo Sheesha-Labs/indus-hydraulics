@@ -1,10 +1,7 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { unstable_cache } from 'next/cache'
-import {
-  buildArticleLd,
-  GalleryImageIdsSchema,
-} from '@indus/domain'
+import { buildArticleLd, GalleryImageIdsSchema, serviceCaseMarketReach } from '@indus/domain'
 import { JsonLd } from '@indus/ui'
 import {
   getGalleryMedia,
@@ -21,6 +18,7 @@ import CaseToc from '../../../../components/services/CaseToc'
 import CaseRail from '../../../../components/services/CaseRail'
 import RelatedCases from '../../../../components/services/RelatedCases'
 import ArticleRenderer from '../../../../components/services/blocks/ArticleRenderer'
+import MarketReachSection from '../../../../components/markets/MarketReachSection'
 import ServicesCta from '../../../../components/services/ServicesCta'
 import { buildWhatsappHref, buildMailtoHref } from '@indus/ui'
 
@@ -53,6 +51,7 @@ export default async function ServiceCasePage({ params }: Props) {
   if (!c) notFound()
 
   const galleryIds = GalleryImageIdsSchema.safeParse(c.galleryImageIds).data ?? []
+  const reach = serviceCaseMarketReach(c.slug, c.category)
 
   // Fan out reads in parallel — case is the dependency for category lookup,
   // but related + gallery + settings can run concurrently from there.
@@ -97,7 +96,17 @@ export default async function ServiceCasePage({ params }: Props) {
             <CaseToc bodyBlocksRaw={c.bodyBlocks} />
           </aside>
 
-          <ArticleRenderer blocksRaw={c.bodyBlocks} />
+          {/*
+            The reach section sits in the article column rather than at page
+            level, so it inherits the same measure as the prose it follows and
+            reads as the last step of the argument before the quote card.
+            min-w-0 for the same reason ArticleRenderer carries it: as a grid
+            item this would otherwise size to its widest child.
+          */}
+          <div className="min-w-0">
+            <ArticleRenderer blocksRaw={c.bodyBlocks} />
+            {reach && <MarketReachSection reach={reach} variant="article" />}
+          </div>
 
           <aside className="min-w-0 lg:sticky lg:top-24">
             <CaseRail
