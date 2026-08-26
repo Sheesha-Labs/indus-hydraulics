@@ -1,4 +1,3 @@
-import { HERO_GEO_CODES, HERO_GEO_FALLBACK_CODE } from '@indus/domain'
 import HomeView, { homeMetadata } from '../../home-view'
 
 export const generateMetadata = homeMetadata
@@ -19,19 +18,25 @@ export const generateMetadata = homeMetadata
 export const revalidate = 3600
 
 /**
- * Every variant is prerendered.
+ * The home market, prerendered. Everything else is cached on first request.
  *
- * This list is what makes the route cacheable, and it is the whole point of
- * the change — without it Next marks the route `ƒ` and renders it per request,
- * which is exactly the cost this was meant to remove. The pages are cheap to
- * build: all of them run the same handful of `unstable_cache`d queries and
- * differ only in the opening words of the headline.
+ * The list existing is what makes the route cacheable at all — without it Next
+ * marks the route `ƒ` and renders per request, which is the cost this was
+ * meant to remove. Its LENGTH only decides how many countries are already warm
+ * when a deploy lands, and length is paid in build minutes: all 127 variants
+ * helped take the production build from ~5 minutes to ~16.
  *
- * The fallback is excluded because it already lives at `/`, which is where the
+ * The GCC six are the ones worth the build time — they are the market, and the
+ * `hero-geo` e2e suite asserts each of them by name. Every other country
+ * renders once, on its first visitor, and is cached from then on.
+ *
+ * The fallback is not among them: it already lives at `/`, which is where the
  * proxy leaves visitors it has no wording for.
  */
+const WARM_GEO_CODES = ['AE', 'SA', 'OM', 'QA', 'BH', 'KW'] as const
+
 export function generateStaticParams() {
-  return HERO_GEO_CODES.filter((cc) => cc !== HERO_GEO_FALLBACK_CODE).map((cc) => ({ cc }))
+  return WARM_GEO_CODES.map((cc) => ({ cc }))
 }
 
 /**
