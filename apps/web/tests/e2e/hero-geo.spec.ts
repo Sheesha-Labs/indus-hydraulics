@@ -6,11 +6,13 @@ import { expect, test } from '@playwright/test'
  * on the edge, and the page reads it while rendering. The only way to know it
  * works is to ask for the page and read the heading.
  *
- * These also stand guard over the assumption the feature rests on: that `/`
- * renders per request. It does today — production serves it with
- * `cache-control: no-store` — but the file still carries `revalidate = 60`. If
- * the page is ever made genuinely cacheable, one rendered copy would be handed
- * to every country and these tests are what fails.
+ * These also stand guard over the assumption the feature rests on: that two
+ * countries see two headlines at one URL. That used to rest on `/` rendering
+ * per request, which cost a full render for every visitor and every crawler.
+ * It now rests on the proxy resolving the country and rewriting to a cached
+ * `/h/<cc>` — same URL in the address bar, same canonical, one cached copy per
+ * country instead of none at all. If that rewrite ever breaks, every country
+ * gets the Dubai fallback and these tests are what fails.
  *
  * `?geo=` stands in for the header — the page accepts either, and the query
  * form is what a human uses to review the wording without leaving the country.
@@ -124,20 +126,36 @@ test.describe('homepage geo headline', () => {
     expect(lead).not.toMatch(/undefined|null|\{\{|%s/)
   })
 
-  test('serves / uncacheably, so one country cannot be cached for everyone', async ({ request }) => {
-    // The mirror of the skips above: this one is only meaningful against a
-    // deployed site. `no-store` is set by the hosting layer — the dev server
-    // sends `no-cache, must-revalidate` and never `no-store`, so running it
-    // locally would fail on a difference that says nothing about the code.
-    test.skip(!EDGE_HOSTED, 'no-store is set by the host; the dev server does not send it.')
+  test('serves / from cache rather than rendering it per visitor', async ({ request }) => {
+    // Only meaningful against a deployed site: caching is the hosting layer's
+    // job and the dev server never reports a cache state.
+    test.skip(!EDGE_HOSTED, 'x-vercel-cache is set by the host; the dev server does not send it.')
 
-    // The regression that would matter most: if `/` ever became a single
-    // cached copy, whichever country warmed the cache would be served to all.
-    // The header version proves that by comparing two countries, which needs
-    // spoofing. This asserts the property that makes it impossible, and it is
-    // exactly what changes if someone makes the page cacheable.
+    // This is the inverse of the assertion that stood here before, and the
+    // reason the rewrite exists. `/` used to be served `no-store`, so the CDN
+    // held no copy and every visitor and every crawler cost a full render.
+    // Two fetches: the second must come from cache.
+    await request.get('/')
     const response = await request.get('/')
-    expect(response.headers()['cache-control'] ?? '').toContain('no-store')
+    const cache = response.headers()['x-vercel-cache'] ?? ''
+    expect(cache).toMatch(/HIT|STALE|PRERENDER/)
+    expect(response.headers()['cache-control'] ?? '').not.toContain('no-store')
+  })
+
+  test('caches each country separately, so one country is not served to all', async ({ request }) => {
+    // What the `no-store` assertion used to protect, protected differently.
+    // Caching per country is only safe because each one is cached on its own
+    // path; if the rewrite collapsed them onto one entry, whichever country
+    // warmed it would be served to everyone. Reached through `?geo=` so it
+    // runs against a deployed site too.
+    const [saudi, kuwait] = await Promise.all([
+      request.get('/?geo=SA').then((r) => r.text()),
+      request.get('/?geo=KW').then((r) => r.text()),
+    ])
+    expect(saudi).toContain(LEAD.SA)
+    expect(saudi).not.toContain(LEAD.KW)
+    expect(kuwait).toContain(LEAD.KW)
+    expect(kuwait).not.toContain(LEAD.SA)
   })
 
   test('keeps one canonical whatever the visitor sees', async ({ page }) => {
