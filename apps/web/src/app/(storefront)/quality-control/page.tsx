@@ -3,10 +3,12 @@ import {
   QUALITY_CONTROL_ENQUIRY,
   QUALITY_CONTROL_PAGE,
   buildBreadcrumbLd,
+  designedPageMarketReach,
   type JsonLd as JsonLdData,
 } from '@indus/domain'
 import { JsonLd, buildMailtoHref, buildWhatsappHref } from '@indus/ui'
 import QualityControlLanding from '../../../components/quality-control/QualityControlLanding'
+import MarketReachSection from '../../../components/markets/MarketReachSection'
 import { ORG_ID, SITE_NAME, pageMetadata, urlFor } from '../../../lib/seo'
 import { getStoreSettings } from '../../../lib/store-settings'
 
@@ -66,6 +68,7 @@ export default async function QualityControlPageRoute() {
   const page = QUALITY_CONTROL_PAGE
   const settings = await getStoreSettings()
   const pageUrl = urlFor(page.path)
+  const reach = designedPageMarketReach('quality-control')
 
   return (
     <>
@@ -103,6 +106,18 @@ export default async function QualityControlPageRoute() {
         )}
         mailtoHref={buildMailtoHref(settings.contactEmail, 'Inspection scope enquiry')}
       />
+
+      {/*
+        Last band on the page. A capability page argues that we can make the
+        part or prove it; where the result goes is the next question a buyer
+        abroad has, and nothing here answered it. Same container as the page's
+        own bands — see SECTION in the landing component.
+      */}
+      {reach && (
+        <div className="mx-auto max-w-[1440px] px-5 sm:px-8 xl:px-12">
+          <MarketReachSection reach={reach} variant="section" />
+        </div>
+      )}
     </>
   )
 }

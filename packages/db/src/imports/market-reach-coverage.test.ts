@@ -4,6 +4,7 @@ import { join } from 'node:path'
 import { describe, expect, it } from 'vitest'
 import {
   CATEGORY_REACH_PROFILES,
+  DESIGNED_PAGE_REACH_PROFILES,
   INDUSTRY_REACH_PROFILES,
   MARKET_REACH_PROFILES,
   SERVICE_CASE_CATEGORIES_WITHOUT_REACH,
@@ -164,5 +165,28 @@ describe('catalogue root categories', () => {
   it('has no profile for a root that does not exist', () => {
     const known = new Set(ROOTS)
     expect(Object.keys(CATEGORY_REACH_PROFILES).filter((s) => !known.has(s))).toEqual([])
+  })
+})
+
+describe('designed capability pages', () => {
+  /**
+   * The static routes under `apps/web/src/app/(storefront)/`. The third member
+   * of the designed-pages family, `/industries/data-center-liquid-cooling`,
+   * belongs to the industry map instead because it dispatches through
+   * `industries/[slug]` — see the note in `designed-page-market-reach.ts`.
+   */
+  const PAGES = ['manufacturing', 'quality-control']
+
+  it('has a profile for both pages', () => {
+    expect(PAGES.filter((p) => !DESIGNED_PAGE_REACH_PROFILES[p])).toEqual([])
+  })
+
+  it('has no profile for a page that does not exist', () => {
+    const known = new Set(PAGES)
+    expect(Object.keys(DESIGNED_PAGE_REACH_PROFILES).filter((p) => !known.has(p))).toEqual([])
+  })
+
+  it('does not double-key the data-centre page, which is an industry', () => {
+    expect(DESIGNED_PAGE_REACH_PROFILES['data-center-liquid-cooling']).toBeUndefined()
   })
 })

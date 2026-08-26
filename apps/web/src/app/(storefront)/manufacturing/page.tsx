@@ -3,10 +3,12 @@ import {
   MANUFACTURING_ENQUIRY,
   MANUFACTURING_PAGE,
   buildBreadcrumbLd,
+  designedPageMarketReach,
   type JsonLd as JsonLdData,
 } from '@indus/domain'
 import { JsonLd, buildMailtoHref, buildWhatsappHref } from '@indus/ui'
 import ManufacturingLanding from '../../../components/manufacturing/ManufacturingLanding'
+import MarketReachSection from '../../../components/markets/MarketReachSection'
 import { ORG_ID, SITE_NAME, pageMetadata, urlFor } from '../../../lib/seo'
 import { getStoreSettings } from '../../../lib/store-settings'
 
@@ -71,6 +73,7 @@ export default async function ManufacturingPageRoute() {
   const page = MANUFACTURING_PAGE
   const settings = await getStoreSettings()
   const pageUrl = urlFor(page.path)
+  const reach = designedPageMarketReach('manufacturing')
 
   return (
     <>
@@ -120,9 +123,24 @@ export default async function ManufacturingPageRoute() {
         enquiry={MANUFACTURING_ENQUIRY}
         contactPhone={settings.contactPhone}
         contactEmail={settings.contactEmail}
-        whatsappHref={buildWhatsappHref(settings.contactPhone, 'Enquiry: manufacturing / made to drawing')}
+        whatsappHref={buildWhatsappHref(
+          settings.contactPhone,
+          'Enquiry: manufacturing / made to drawing'
+        )}
         mailtoHref={buildMailtoHref(settings.contactEmail, 'Manufacturing enquiry')}
       />
+
+      {/*
+        Last band on the page. A capability page argues that we can make the
+        part or prove it; where the result goes is the next question a buyer
+        abroad has, and nothing here answered it. Same container as the page's
+        own bands — see SECTION in the landing component.
+      */}
+      {reach && (
+        <div className="mx-auto max-w-[1440px] px-5 sm:px-8 xl:px-12">
+          <MarketReachSection reach={reach} variant="section" />
+        </div>
+      )}
     </>
   )
 }
