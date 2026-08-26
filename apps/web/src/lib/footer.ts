@@ -36,7 +36,7 @@ const loadSocials = unstable_cache(
       .catch(() => [])
   },
   ['footer-socials'],
-  { revalidate: 300, tags: ['footer-socials'] },
+  { revalidate: 3600, tags: ['footer-socials'] },
 )
 
 export const getFooterSocials = cache(async (): Promise<ResolvedFooterSocial[]> => {

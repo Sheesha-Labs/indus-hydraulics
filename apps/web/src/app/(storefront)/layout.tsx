@@ -46,7 +46,7 @@ const getSeoSetting = unstable_cache(
       .findFirst({ select: { organizationJsonLd: true, websiteJsonLd: true } })
       .catch(() => null),
   ['seo-settings'],
-  { revalidate: 300, tags: ['seo-settings'] },
+  { revalidate: 3600, tags: ['seo-settings'] },
 )
 
 /**

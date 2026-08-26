@@ -11,11 +11,15 @@ import CategoryView, { categoryMetadata } from '../category-view'
  * a full render plus ~39 KB of origin transfer. The `revalidate` below was
  * inert for exactly as long as that was true.
  *
+ * A day rather than an hour, because the timer is a backstop and no longer the
+ * thing keeping shelves fresh: product edits walk the ancestor chain, and
+ * category tree edits and imports invalidate the whole `/c/[slug]` space.
+ *
  * Filters and deep pages still work and still live at these same URLs. The
  * proxy spots the query string and rewrites to `/c-filter/<slug>`, which is
  * the same view with the facets applied — see `rewriteFilteredCategory`.
  */
-export const revalidate = 3600
+export const revalidate = 86400
 
 /**
  * Every published shelf is prerendered.

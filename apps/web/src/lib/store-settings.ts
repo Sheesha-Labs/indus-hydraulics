@@ -134,7 +134,7 @@ const loadStoreSettings = unstable_cache(
     }
   },
   ['store-settings'],
-  { revalidate: 300, tags: ['store-settings'] },
+  { revalidate: 3600, tags: ['store-settings'] },
 )
 
 // React cache() outer for per-request de-duplication.

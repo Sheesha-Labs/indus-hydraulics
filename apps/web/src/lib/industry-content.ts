@@ -145,7 +145,7 @@ const loadIndustryList = unstable_cache(
     }))
   },
   ['industries-list'],
-  { revalidate: 300, tags: ['industries'] },
+  { revalidate: 3600, tags: ['industries'] },
 )
 
 /**
@@ -224,7 +224,7 @@ const loadIndustryBySlug = unstable_cache(
     }
   },
   ['industry-detail'],
-  { revalidate: 300, tags: ['industries'] },
+  { revalidate: 3600, tags: ['industries'] },
 )
 
 /**
@@ -256,5 +256,5 @@ export const getIndustrySitemapEntries = unstable_cache(
     })
   },
   ['industries-sitemap'],
-  { revalidate: 300, tags: ['industries'] },
+  { revalidate: 3600, tags: ['industries'] },
 )

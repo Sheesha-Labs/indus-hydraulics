@@ -1,5 +1,18 @@
 import 'server-only'
 import { cache } from 'react'
+// An hour, not a minute.
+//
+// SiteHeader renders these on every storefront page, and a route's revalidate
+// window is the SHORTEST of everything inside it — so a 60-second entry here
+// pinned the entire storefront to a one-minute window no matter what the pages
+// themselves declared. `/p/[slug]` asking for a day and reporting `1m` in the
+// build output was this.
+//
+// The timer is a backstop, not the freshness mechanism: every tag below is
+// purged by the admin action that changes it (see invalidateNavigation,
+// invalidateCategories, invalidateBrands, invalidateIndustries), so a menu edit
+// is live immediately either way.
+
 import { unstable_cache } from 'next/cache'
 import { db } from '@indus/db'
 import {
@@ -40,7 +53,8 @@ const loadRaw = unstable_cache(
       .catch(() => null)
   },
   ['nav-menu'],
-  { revalidate: 60, tags: ['nav-menu'] }
+  // See the note on cache windows below.
+  { revalidate: 3600, tags: ['nav-menu'] }
 )
 
 type LoadedMenu = NonNullable<Awaited<ReturnType<typeof loadRaw>>>
@@ -137,7 +151,7 @@ const loadNavBrands = unstable_cache(
       .catch(() => [])
   },
   ['nav-brands'],
-  { revalidate: 60, tags: ['nav-brands'] }
+  { revalidate: 3600, tags: ['nav-brands'] }
 )
 
 const loadNavIndustries = unstable_cache(
@@ -151,7 +165,7 @@ const loadNavIndustries = unstable_cache(
       .catch(() => [])
   },
   ['nav-industries'],
-  { revalidate: 60, tags: ['nav-industries'] }
+  { revalidate: 3600, tags: ['nav-industries'] }
 )
 
 export const getNavBrands = cache(async (): Promise<NavListEntry[]> => {
