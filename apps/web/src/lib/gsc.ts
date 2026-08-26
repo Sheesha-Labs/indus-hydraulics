@@ -205,10 +205,30 @@ export async function checkGscAccess(): Promise<{ ok: boolean; detail: string }>
     const status =
       (err as { status?: number; response?: { status?: number } })?.status ??
       (err as { response?: { status?: number } })?.response?.status
+    // 403 is NOT one condition, and asserting the most common one sent
+    // somebody re-adding a user that was already there. Google returns it for
+    // at least three things and the response body is the only way to tell:
+    //
+    //   SERVICE_DISABLED — the Search Console API is not enabled on the Cloud
+    //   project. Authentication still succeeds, so this looks exactly like a
+    //   permissions problem and is the one people lose time to.
+    //
+    //   not a user on the property, or the property is not in this account's
+    //   list at all — which is a different fix again, and the property list
+    //   below the status band is what separates them.
     if (status === 403) {
+      const body = (err as { response?: { data?: unknown } })?.response?.data
+      const raw = typeof body === 'string' ? body : JSON.stringify(body ?? '')
+      if (/SERVICE_DISABLED|has not been used in project|is disabled/i.test(raw)) {
+        return {
+          ok: false,
+          detail:
+            'Authenticated, but the Google Search Console API is not enabled on the Cloud project this key belongs to. Enable it in APIs & Services → Library, then retry — this is not a Search Console permissions problem.',
+        }
+      }
       return {
         ok: false,
-        detail: `Authenticated, but ${result.config.clientEmail} is not a user on ${result.config.siteUrl}. Add it in Search Console under Settings → Users and permissions.`,
+        detail: `Authenticated, but Search Console refused ${result.config.siteUrl} for ${result.config.clientEmail}. Either the service account is not a user on that exact property, or that property is not one this account can see — the list below shows which it is.`,
       }
     }
     if (status === 404) {
