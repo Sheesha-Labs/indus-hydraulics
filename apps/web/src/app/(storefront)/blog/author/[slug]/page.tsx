@@ -21,6 +21,34 @@ type Props = { params: Promise<{ slug: string }> }
  * `hasCredential` is what turns "written by an engineer" from a claim into
  * something a machine can check.
  */
+/**
+ * A deliberately tiny prerender list — the most published authors.
+ *
+ * The size is not the point; the function EXISTING is. A dynamic route with no
+ * `generateStaticParams` is served fully dynamically and `no-store` however
+ * statically renderable its code is, which is what this route was doing on
+ * every request. With a list, the route switches to the incremental cache and
+ * `dynamicParams` renders every unlisted entry on first request and caches it
+ * from then on. See the long note on `/p/[slug]`.
+ *
+ * Length is paid in build minutes, so it stays small — see PR #412, where
+ * oversized lists took the production build from 5 minutes to 16.
+ */
+const STATIC_AUTHOR_LIMIT = 3
+
+export async function generateStaticParams() {
+  const rows = await db.blogAuthor.findMany({
+    select: { slug: true },
+    orderBy: { posts: { _count: 'desc' } },
+    take: STATIC_AUTHOR_LIMIT,
+  })
+  return rows.map(({ slug }) => ({ slug }))
+}
+
+export const dynamicParams = true
+
+export const revalidate = 3600
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params
   const [author, seoSetting] = await Promise.all([
