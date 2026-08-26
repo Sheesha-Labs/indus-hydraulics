@@ -28,11 +28,22 @@ deploy makes them pay full price again.
 
 ### 1. Preview builds are opt-in
 
-`apps/web/vercel.json` carries an `ignoreCommand`. Production always builds;
-preview branches build **only** when the commit message contains `[preview]`.
+`apps/web/vercel.json` points at `apps/web/vercel-ignore-build.sh`, which
+applies two rules:
 
-That halves the deployments, because the default was one preview build per push
-*plus* one production build per merge.
+1. **Previews are opt-in** — a preview branch builds only when the commit
+   message contains `[preview]`.
+2. **Documentation-only commits skip production too** — if a commit changes
+   nothing outside `docs/` and `*.md`, there is nothing to ship.
+
+The second rule is deliberately narrow. A wrong answer there ships nothing, and
+"nothing shipped" stays invisible until someone goes looking for a change that
+never arrived. Test-only commits could safely join the list; they are left out
+until someone wants them.
+
+Measured over the 30 days to 2026-08-26: **547 deployments and 2,449 build
+minutes against 257 commits** — a preview build per push plus a production build
+per merge.
 
 To get a preview URL for a PR — worth it for anything visual — put the marker
 in the commit message:
@@ -41,7 +52,18 @@ in the commit message:
 
 A skipped build reports as a passing check, so nothing blocks the merge.
 
-### 2. Prerender lists stay short
+### 2. Outdated deployments should auto-cancel
+
+Only 10 of those 547 deployments were cancelled. Push three times to an open PR
+and all three preview builds run to completion, though only the last matters.
+
+This one is a dashboard toggle, not a repo setting — it is not exposed on the
+project API object:
+
+**Vercel → Project → Settings → Git → "Automatically cancel outdated
+deployments"**
+
+### 3. Prerender lists stay short
 
 See the note on `/p/[slug]`. Long lists warm more pages per deploy but cost
 build minutes on every build, and builds outnumber cache lifetimes here. #412
@@ -49,7 +71,7 @@ has the arithmetic: prerendering all 194 shelves took the build from 5 minutes
 to 16, against ~7.6 MB of cold renders it would have saved per deploy. Build
 minutes won.
 
-### 3. Merges are batched
+### 4. Merges are batched
 
 Every merge to `main` is a production deploy and a cache wipe. Merging five
 finished PRs together costs one wipe instead of five, so approved work is held
@@ -58,7 +80,7 @@ and landed as a batch — end of a session, or when the batch is coherent.
 Exceptions that ship immediately: production is broken, a security fix, or the
 change is explicitly wanted now.
 
-### 4. Content belongs in the database, not in a commit
+### 5. Content belongs in the database, not in a commit
 
 This is the lever with no downside. A blog post, a product, a category
 description or a page section added through `/admin` is **zero deployments** —
