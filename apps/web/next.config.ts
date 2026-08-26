@@ -4,6 +4,28 @@ import { withSentryConfig } from '@sentry/nextjs'
 
 const nextConfig: NextConfig = {
   outputFileTracingRoot: path.join(__dirname, '../../'),
+  /*
+   * Type checking is CI's job, not the deploy's.
+   *
+   * `next build` re-ran tsc over the whole app on every deployment — about 13
+   * seconds of a build that happens hundreds of times a month, repeating work
+   * GitHub Actions had already done on the same commit.
+   *
+   * There is no `eslint` counterpart here: Next 16 dropped that config key, and
+   * `next build` no longer lints. `pnpm lint` in CI is the only linter.
+   *
+   * The gate moves rather than disappears, and it is worth naming exactly where
+   * it now lives: `typecheck · lint · test` is a REQUIRED status check on the
+   * `main` ruleset, with `strict_required_status_checks_policy` on — so the
+   * branch must be up to date with main when it passes — and the `pull_request`
+   * rule blocks direct pushes. Nothing reaches main without tsc and eslint
+   * passing on exactly the state that gets merged.
+   *
+   * What would have to break for a type error to ship: someone removes that
+   * required check, or disables the ruleset. If either happens, put this flag
+   * back.
+   */
+  typescript: { ignoreBuildErrors: true },
   serverExternalPackages: ['@prisma/client', '.prisma/client'],
   transpilePackages: ['@indus/ui', '@indus/domain'],
   images: {
