@@ -7,6 +7,38 @@ const nextConfig: NextConfig = {
   serverExternalPackages: ['@prisma/client', '.prisma/client'],
   transpilePackages: ['@indus/ui', '@indus/domain'],
   images: {
+    /*
+     * The srcset ladder, deliberately narrowed.
+     *
+     * Next's defaults are deviceSizes [640…3840] and imageSizes [16…384] — 15
+     * widths per image. Measured on a single category shelf: 17 source images
+     * produced 180 distinct `/_next/image` URLs, including a brand logo
+     * offered at 3840px. Every unique (source, width, quality) a browser
+     * actually asks for is a billed image transformation, and there are 856
+     * distinct product images in the catalogue.
+     *
+     * These lists are matched to what the components ask for. The layout caps
+     * at `--spacing-max-w: 1440px`, so 2048 covers a full-bleed image on a 2x
+     * display and 3840 was never reachable. `imageSizes` covers the fixed
+     * small sizes in use — 44, 60, 64, 80, 88, 120, 320px — at 2x.
+     */
+    deviceSizes: [640, 828, 1080, 1920, 2048],
+    imageSizes: [64, 96, 128, 256, 384],
+    /*
+     * One quality, so a stray `quality={90}` cannot silently double the
+     * transformation count. 75 is Next's default and what every call site uses.
+     */
+    qualities: [75],
+    /*
+     * 30 days, against a default of 4 hours.
+     *
+     * Safe because these URLs are immutable in practice: uploads are keyed by
+     * `randomUUID()` (admin/media/actions.ts), so replacing an image produces a
+     * new storage path and therefore a new URL rather than new bytes behind an
+     * old one. The short default meant re-transforming the same image six times
+     * a day for no benefit.
+     */
+    minimumCacheTTL: 2_592_000,
     remotePatterns: [
       { protocol: 'https', hostname: '*.r2.cloudflarestorage.com' },
       { protocol: 'https', hostname: '*.supabase.co' },
