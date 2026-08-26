@@ -59,6 +59,11 @@ export async function saveSeoSettings(formData: FormData): Promise<Result<void>>
     invalidateSeoSettings()
     revalidatePath('/admin/seo/settings')
     revalidatePath('/admin/seo/robots')
+    // The public robots.txt is served from this row and is cached. Without
+    // this line an edit here would sit behind that cache instead of going
+    // live, which is the sort of thing nobody notices until a crawler acts on
+    // wording that was changed hours ago.
+    revalidatePath('/robots.txt')
     return ok(undefined)
   } catch (err) {
     return failFromError(err)
