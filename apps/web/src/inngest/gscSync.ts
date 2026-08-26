@@ -55,8 +55,8 @@ async function writeRows(rows: GscDailyRow[]): Promise<number> {
             ctr: row.ctr,
             position: row.position,
           },
-        }),
-      ),
+        })
+      )
     )
 
     written += chunk.length
@@ -67,11 +67,19 @@ async function writeRows(rows: GscDailyRow[]): Promise<number> {
 
 export const gscDailySync = inngest.createFunction(
   { id: 'gsc.daily.sync', concurrency: 1, retries: 2 },
-  { cron: '0 5 * * *' },
+  // Nightly, plus on demand from /admin/seo/gsc. The manual trigger is not a
+  // convenience: each of the three setup steps fails in a way the environment
+  // cannot distinguish from success, so without it the first honest signal
+  // that a credential works is 05:00 the next morning — and a wrong property
+  // form costs another day after that. `concurrency: 1` means a button press
+  // during the nightly run queues behind it rather than double-writing.
+  [{ cron: '0 5 * * *' }, { event: 'gsc/sync.requested' }],
   async ({ step, logger }) => {
     const config = await step.run('read-config', async () => {
       const result = readGscConfig()
-      return result.ok ? { ok: true as const, siteUrl: result.config.siteUrl } : { ok: false as const, reason: result.reason }
+      return result.ok
+        ? { ok: true as const, siteUrl: result.config.siteUrl }
+        : { ok: false as const, reason: result.reason }
     })
 
     if (!config.ok) {
@@ -125,9 +133,9 @@ export const gscDailySync = inngest.createFunction(
     }
 
     logger.info(
-      `gsc.daily.sync: ${window.startDate}..${window.endDate} — ${counts.page} page rows, ${counts.page_query} query rows`,
+      `gsc.daily.sync: ${window.startDate}..${window.endDate} — ${counts.page} page rows, ${counts.page_query} query rows`
     )
 
     return { window, pageRows: counts.page, queryRows: counts.page_query }
-  },
+  }
 )
