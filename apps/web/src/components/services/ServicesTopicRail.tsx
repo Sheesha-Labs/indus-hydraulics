@@ -2,7 +2,7 @@ import Link from 'next/link'
 import type { ServiceCaseCategory } from '@indus/db'
 import { SERVICE_CASE_CATEGORY_LABELS } from '@indus/domain'
 import ServicesSortDropdown from './ServicesSortDropdown'
-import type { ServiceCaseSort } from '../../lib/service-cases'
+import type { ServiceCaseSort } from '../../lib/service-case-params'
 
 type Props = {
   totalCount: number

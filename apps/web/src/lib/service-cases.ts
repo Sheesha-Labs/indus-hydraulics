@@ -8,6 +8,7 @@
 import 'server-only'
 import { db, Prisma } from '@indus/db'
 import type { ServiceCase, ServiceCaseCategory, ServiceCaseStatus } from '@indus/db'
+import type { ServiceCaseSort } from './service-case-params'
 
 // Use a typed `select` so the returned shape is exactly the one consumed by
 // the index/grid/related cards — Prisma's GetPayload type then carries the
@@ -45,36 +46,16 @@ const PUBLISHED_FILTER = {
 
 // ── Sort dimensions ─────────────────────────────────────────────────────
 
-export type ServiceCaseSort = 'recent' | 'savings' | 'tat'
+// Re-exported so existing server callers keep importing them from here. The
+// definitions moved to service-case-params.ts, which is not `server-only` —
+// the browser needs them now that the chips filter client-side.
+export type { ServiceCaseSort } from './service-case-params'
+export { parseSort, parseCategory } from './service-case-params'
 
 const SORT_ORDER: Record<ServiceCaseSort, Prisma.ServiceCaseOrderByWithRelationInput[]> = {
   recent: [{ publishedAt: 'desc' }, { caseNumber: 'desc' }],
   savings: [{ savingsAmount: { sort: 'desc', nulls: 'last' } }, { publishedAt: 'desc' }],
   tat: [{ durationDays: { sort: 'asc', nulls: 'last' } }, { publishedAt: 'desc' }],
-}
-
-export function parseSort(raw: string | string[] | undefined): ServiceCaseSort {
-  const v = Array.isArray(raw) ? raw[0] : raw
-  if (v === 'savings' || v === 'tat' || v === 'recent') return v
-  return 'recent'
-}
-
-export function parseCategory(raw: string | string[] | undefined): ServiceCaseCategory | null {
-  const v = Array.isArray(raw) ? raw[0] : raw
-  if (!v) return null
-  const allowed: readonly ServiceCaseCategory[] = [
-    'cylinders',
-    'hoses',
-    'pumps',
-    'valves_manifolds',
-    'bop_pressure_control',
-    'ct_wireline',
-    'wellhead',
-    'field_service',
-    'lab_forensics',
-    'custom_builds',
-  ]
-  return (allowed as readonly string[]).includes(v) ? (v as ServiceCaseCategory) : null
 }
 
 // ── Reads ──────────────────────────────────────────────────────────────

@@ -1,9 +1,9 @@
 'use client'
 
-import { useRouter, useSearchParams } from 'next/navigation'
+import { useRouter } from 'next/navigation'
 import { useTransition } from 'react'
 import type { ServiceCaseCategory } from '@indus/db'
-import type { ServiceCaseSort } from '../../lib/service-cases'
+import type { ServiceCaseSort } from '../../lib/service-case-params'
 
 type Props = {
   activeSort: ServiceCaseSort
@@ -12,14 +12,17 @@ type Props = {
 
 export default function ServicesSortDropdown({ activeSort, activeCategory }: Props) {
   const router = useRouter()
-  const params = useSearchParams()
   const [isPending, startTransition] = useTransition()
 
+  // Built from props rather than `useSearchParams`. /services carries exactly
+  // two parameters and both arrive here already, so the hook bought nothing —
+  // and it cost the page its cache: this control renders inside the Suspense
+  // FALLBACK on /services, which sits outside that boundary, so a
+  // `useSearchParams` here bails the whole page out of prerendering.
   function onChange(e: React.ChangeEvent<HTMLSelectElement>) {
     const sort = e.target.value as ServiceCaseSort
-    const sp = new URLSearchParams(params)
-    if (sort === 'recent') sp.delete('sort')
-    else sp.set('sort', sort)
+    const sp = new URLSearchParams()
+    if (sort !== 'recent') sp.set('sort', sort)
     if (activeCategory) sp.set('category', activeCategory)
     const qs = sp.toString()
     startTransition(() => {
