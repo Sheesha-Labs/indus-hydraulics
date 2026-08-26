@@ -202,6 +202,46 @@ function rewriteHomeToGeoVariant(request: NextRequest): NextResponse | null {
   return NextResponse.rewrite(url)
 }
 
+/**
+ * Send a filtered shelf to the dynamic twin of the category page.
+ *
+ * `/c/<slug>` is prerendered, which it can only be because it never reads
+ * `searchParams` — one route cannot be both static and per-request. The facet
+ * cases still have to work, so they are rewritten to `/c-filter/<slug>`, which
+ * is the same view with the query string applied.
+ *
+ * This is a REWRITE: the address bar keeps the original URL, the canonical
+ * keeps pointing at the clean shelf, and no existing link or bookmark changes.
+ *
+ * The condition matches `isFacetVariant` in category-view.tsx exactly — the
+ * same set of parameters that already decides `noindex`. `?page=1` is not a
+ * variant: it is the clean shelf under another name, and sending it to the
+ * dynamic route would hand the most linked-to spelling of every category an
+ * uncached render.
+ */
+const CATEGORY_PREFIX = '/c/'
+
+function rewriteFilteredCategory(request: NextRequest): NextResponse | null {
+  const { pathname, searchParams } = request.nextUrl
+  if (!pathname.startsWith(CATEGORY_PREFIX)) return null
+
+  const slug = pathname.slice(CATEGORY_PREFIX.length)
+  // Only the shelf itself, never anything nested below it.
+  if (!slug || slug.includes('/')) return null
+
+  const page = searchParams.get('page')
+  const isFacetVariant =
+    searchParams.has('brands') ||
+    searchParams.has('spec') ||
+    searchParams.has('sort') ||
+    (page !== null && page !== '1')
+  if (!isFacetVariant) return null
+
+  const url = request.nextUrl.clone()
+  url.pathname = `/c-filter/${slug}`
+  return NextResponse.rewrite(url)
+}
+
 function redirectToSignIn(request: NextRequest, signInPath: string): NextResponse {
   const { pathname, search } = request.nextUrl
   const url = new URL(signInPath, request.url)
@@ -276,6 +316,9 @@ export default async function proxy(request: NextRequest) {
   // After the redirect lookup, so a redirect row for `/` still wins.
   const geoVariant = rewriteHomeToGeoVariant(request)
   if (geoVariant) return done(geoVariant)
+
+  const filteredCategory = rewriteFilteredCategory(request)
+  if (filteredCategory) return done(filteredCategory)
 
   return done(NextResponse.next())
 }
