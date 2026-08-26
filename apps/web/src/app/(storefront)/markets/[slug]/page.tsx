@@ -8,7 +8,6 @@ import {
   marketCountryName,
   releasedMarketPage,
   releasedMarketPageSlugs,
-  marketsOrdered,
 } from '@indus/domain'
 import { JsonLd, buildWhatsappHref } from '@indus/ui'
 import MarketLanding from '../../../../components/markets/MarketLanding'
@@ -42,24 +41,46 @@ export const revalidate = 3600
  * type and would be wrong here. `FAQPage` is emitted only for markets that
  * have FAQs, because the answers must match visible text exactly.
  */
-export function generateStaticParams() {
-  /*
-    Present so the route uses the incremental cache at all — without a
-    `generateStaticParams` a dynamic route is served `no-store`. Only a few are
-    built ahead; `dynamicParams` lets the rest render on first hit and cache
-    from there. See /p/[slug] for the full reasoning and the build-time cost.
+/**
+ * The market pages warmed at build. Everything else caches on first request.
+ *
+ * This list used to be `releasedMarketPageSlugs()`, on the reasoning that the
+ * designed markets are the expensive ones — each projects Natural Earth
+ * geometry through d3-geo — so paying once at build beat paying on a visitor's
+ * first request.
+ *
+ * That reasoning was written when "released" meant 46 of 126. All 126 were
+ * released on 2026-08-24 (#364), so the pre-built set silently became the whole
+ * list and nothing said so. The result, measured 2026-08-26: **126 prerendered
+ * market pages, ~1 MB of HTML each, 123 MB of the build's 144 MB of prerendered
+ * output** — re-generated and re-uploaded on every deployment, and the site was
+ * deploying about 25 times a day.
+ *
+ * The economics inverted with the deploy rate. "Pay once at build" is only
+ * cheaper than "pay on first request" when a build is rarer than a cache miss;
+ * here it was the other way round by an order of magnitude.
+ *
+ * So: the home market and the largest export lanes, and the rest on demand.
+ * Raising this number is the lever that trades deploy time back for fewer cold
+ * first-hits — see docs/deployment-budget.md before doing it.
+ */
+const WARM_MARKET_SLUGS = [
+  'saudi-arabia',
+  'oman',
+  'qatar',
+  'kuwait',
+  'bahrain',
+  'india',
+  'united-states',
+  'united-kingdom',
+] as const
 
-    The designed markets are always in the pre-built set. They are the
-    expensive ones — each projects Natural Earth geometry through d3-geo — and
-    they are the ones with paid traffic pointed at them, so paying for them
-    once at build beats paying on a visitor's first request.
-  */
-  const designed = releasedMarketPageSlugs()
-  const rest = marketsOrdered()
-    .map((m) => m.slug)
-    .filter((slug) => !designed.includes(slug))
-    .slice(0, 2)
-  return [...designed, ...rest].map((slug) => ({ slug }))
+export function generateStaticParams() {
+  // Present so the route uses the incremental cache at all — without a
+  // `generateStaticParams` a dynamic route is served `no-store`. See
+  // /p/[slug] for the full reasoning.
+  const released = new Set(releasedMarketPageSlugs())
+  return WARM_MARKET_SLUGS.filter((slug) => released.has(slug)).map((slug) => ({ slug }))
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
