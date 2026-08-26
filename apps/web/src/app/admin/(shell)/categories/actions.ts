@@ -282,12 +282,19 @@ async function loadTree(): Promise<CategoryTreeNode[]> {
  * megamenu, and `loadClusters` behind all 126 market pages. It does NOT cover
  * `/c`, which is a statically rendered route on a one-hour `revalidate` rather
  * than an `unstable_cache` entry, so a reorder of the root categories would sit
- * behind that timer with the tag purge reporting success. `/c/[slug]` is
- * already dynamic (it reads searchParams) and needs no help.
+ * behind that timer with the tag purge reporting success.
+ *
+ * `/c/[slug]` used to need no help here, because it read `searchParams` and so
+ * rendered per request. It is prerendered now, which means a rename, a move or
+ * an unpublish would otherwise sit behind ITS revalidate window too. Passing
+ * the route pattern with `'page'` invalidates every shelf at once, which is
+ * what a tree edit warrants — a move changes the rollup on both the old parent
+ * chain and the new one.
  */
 function invalidateCategoryTree(): void {
   revalidatePath('/admin/categories')
   revalidatePath('/c')
+  revalidatePath('/c/[slug]', 'page')
   invalidateCategories()
 }
 

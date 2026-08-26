@@ -635,6 +635,13 @@ export async function commitProductImport(jobId: string): Promise<Result<{ creat
 
     revalidatePath(`/admin/products`)
     revalidatePath(`/admin/products/import`)
+    // An import lands rows in any number of categories, and the shelves are
+    // prerendered — without this the imported SKUs would be live on their own
+    // pages and missing from every category listing until the shelves expired.
+    // The route pattern rather than a list of slugs, because the job does not
+    // track which categories it touched.
+    revalidatePath('/c/[slug]', 'page')
+    revalidatePath('/p/[slug]', 'page')
     return ok({ created, updated, failed })
   } catch (err) {
     return failFromError(err)

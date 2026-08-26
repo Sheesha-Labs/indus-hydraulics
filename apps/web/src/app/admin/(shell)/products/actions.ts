@@ -5,7 +5,7 @@ import { invalidateProducts } from '../../../../lib/cache-tags'
 import { redirect } from 'next/navigation'
 import { z } from 'zod'
 import { db, Prisma } from '@indus/db'
-import { measureRemoteBytes, projectSeoFields } from '@indus/domain'
+import { MAX_CATEGORY_DEPTH, measureRemoteBytes, projectSeoFields } from '@indus/domain'
 import { auth } from '../../../../lib/admin-auth'
 import { ROLES, requireRole } from '../../../../lib/rbac'
 import { fail, failFromError, ok, type Result } from '../../../../lib/result'
@@ -30,9 +30,39 @@ import { recomputeContentScore } from '../../../../lib/recompute-content-score'
 async function revalidateStorefrontProduct(productId: string): Promise<void> {
   const row = await db.product.findUnique({
     where: { id: productId },
-    select: { slug: true },
+    select: { slug: true, categoryId: true },
   })
   if (row?.slug) revalidatePath(`/p/${row.slug}`)
+  if (row?.categoryId) await revalidateCategoryShelves(row.categoryId)
+}
+
+/**
+ * Refresh the shelves a product appears on, up the whole ancestor chain.
+ *
+ * Shelves are prerendered now. While they rendered per request this was not
+ * needed and was not done — a product edit simply showed up on the next
+ * request. Cached, the same edit would sit behind the shelf's revalidate
+ * window instead, so a new SKU could be live on its own page and missing from
+ * its category for an hour.
+ *
+ * The whole chain, not just the immediate parent, because shelves roll up
+ * their sub-tree: a fitting under `crimp-ferrules` is also listed on
+ * `hydraulic-hose-fittings-suppliers-uae` above it.
+ *
+ * Depth is bounded by MAX_CATEGORY_DEPTH so a cycle introduced by a bad parent
+ * edit cannot spin here.
+ */
+async function revalidateCategoryShelves(categoryId: string): Promise<void> {
+  let cursor: string | null = categoryId
+  for (let depth = 0; depth < MAX_CATEGORY_DEPTH && cursor; depth++) {
+    const row: { slug: string; parentId: string | null } | null = await db.category.findUnique({
+      where: { id: cursor },
+      select: { slug: true, parentId: true },
+    })
+    if (!row) return
+    revalidatePath(`/c/${row.slug}`)
+    cursor = row.parentId
+  }
 }
 
 // ── Helpers ──────────────────────────────────────────────────────────────────
