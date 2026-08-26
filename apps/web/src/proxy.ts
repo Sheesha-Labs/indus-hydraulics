@@ -1,6 +1,7 @@
 import {
   CUSTOMER_SESSION_COOKIE,
   HERO_GEO_FALLBACK_CODE,
+  VIEWER_HINT_COOKIE,
   LEGACY_SESSION_COOKIES,
   STAFF_SESSION_COOKIE,
   USE_SECURE_COOKIES,
@@ -104,6 +105,43 @@ const ADMIN_CSP = [
   "frame-ancestors 'none'",
 ].join('; ')
 
+/**
+ * Keep the readable "someone is signed in" hint in step with the real cookie.
+ *
+ * The session cookie is httpOnly, so the header had no way to know whether a
+ * lookup was worth making and asked `/api/me` on every page load — a
+ * `force-dynamic` invocation plus a database read per pageview, for every
+ * anonymous visitor, to be told "signed out".
+ *
+ * Set here rather than at sign-in so it is self-healing: any request carrying
+ * a session gets the hint back, and any request without one loses it. A stale
+ * hint costs a single wasted lookup that returns signed-out and is corrected on
+ * the same response.
+ *
+ * Carries no identity and grants nothing — `/api/me` and every protected route
+ * still verify the real session server-side.
+ */
+function syncViewerHint(response: NextResponse, request: NextRequest): void {
+  const hasSession = request.cookies.has(CUSTOMER_SESSION_COOKIE)
+  const hasHint = request.cookies.has(VIEWER_HINT_COOKIE)
+
+  if (hasSession && !hasHint) {
+    response.cookies.set({
+      name: VIEWER_HINT_COOKIE,
+      value: '1',
+      path: '/',
+      sameSite: 'lax',
+      secure: USE_SECURE_COOKIES,
+      // Readable from JavaScript on purpose — that is the whole point.
+      httpOnly: false,
+    })
+    return
+  }
+  if (!hasSession && hasHint) {
+    response.cookies.delete({ name: VIEWER_HINT_COOKIE, path: '/' })
+  }
+}
+
 function applySecurityHeaders(
   response: NextResponse,
   request: NextRequest,
@@ -126,6 +164,8 @@ function applySecurityHeaders(
     // SEO console.
     response.headers.set('X-Robots-Tag', 'noindex, nofollow, noarchive, nosnippet')
   }
+
+  syncViewerHint(response, request)
 
   // Clear the pre-split Auth.js cookies. They are never accepted, but stale
   // copies at Path=/ make debugging confusing. Remove this block once the
