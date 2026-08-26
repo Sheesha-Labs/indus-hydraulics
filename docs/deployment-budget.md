@@ -49,7 +49,16 @@ has the arithmetic: prerendering all 194 shelves took the build from 5 minutes
 to 16, against ~7.6 MB of cold renders it would have saved per deploy. Build
 minutes won.
 
-### 3. Content belongs in the database, not in a commit
+### 3. Merges are batched
+
+Every merge to `main` is a production deploy and a cache wipe. Merging five
+finished PRs together costs one wipe instead of five, so approved work is held
+and landed as a batch — end of a session, or when the batch is coherent.
+
+Exceptions that ship immediately: production is broken, a security fix, or the
+change is explicitly wanted now.
+
+### 4. Content belongs in the database, not in a commit
 
 This is the lever with no downside. A blog post, a product, a category
 description or a page section added through `/admin` is **zero deployments** —
@@ -58,6 +67,22 @@ The same content added as a seed file or a constant in `packages/domain` costs
 a build, a deploy, and a cold cache for 1,790 URLs.
 
 Only genuinely new *code* — a template, a route, a component — needs a deploy.
+
+See `content-in-code-audit.md` for what is already DB-backed (most of it) and
+what still costs a deploy.
+
+## Can the cold cache be avoided instead?
+
+No. Vercel's ISR documentation is explicit:
+
+> each new deployment uses its own ISR cache and does not reuse the cache from
+> a previous deployment
+
+There is no setting that shares a cache across deployments, and no cache
+handler to swap — Vercel manages ISR itself. Prerendering more pages moves the
+cost from cold renders to build minutes, and #412 measured that trade going the
+wrong way. **Deploying less often is the only lever**, which is what the two
+rules above are.
 
 ## Before adding a deploy-triggering change
 
