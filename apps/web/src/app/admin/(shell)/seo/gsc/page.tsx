@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { db } from '@indus/db'
 import { GSC_PAGE_TOTAL_QUERY } from '@indus/domain'
-import { checkGscAccess, readGscConfig } from '../../../../../lib/gsc'
+import { checkGscAccess, listGscSites, readGscConfig } from '../../../../../lib/gsc'
 import SyncNowButton from './SyncNowButton'
 
 export const metadata: Metadata = { title: 'Google Search Console — Indus Admin' }
@@ -29,6 +29,10 @@ export default async function GscPage() {
     config.ok ? checkGscAccess() : Promise.resolve({ ok: false, detail: config.reason }),
   ])
 
+  // Only when something is wrong. On a working setup this is a second API
+  // call per page load that tells nobody anything they cannot already see.
+  const sites = access.ok ? null : await listGscSites()
+
   const fmt = (d: Date | null | undefined) =>
     d ? d.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' }) : '—'
 
@@ -53,6 +57,39 @@ export default async function GscPage() {
         </span>
         {access.detail}
       </div>
+
+      {sites && (
+        <div className="border-ih-border bg-ih-surface mb-6 border px-4 py-3 text-[13px]">
+          <p className="mono text-ih-muted mb-2 text-[10.5px] font-medium uppercase tracking-[0.12em]">
+            Properties this service account can see
+          </p>
+          {!sites.ok && <p className="text-ih-ink-2">{sites.detail}</p>}
+          {sites.ok && sites.sites.length === 0 && (
+            <p className="text-ih-ink-2">
+              None. The service account has not been added to any property — whatever the Search
+              Console screen appeared to accept did not take. Check you were on the right property
+              when you added it, and that your own account is an <strong>Owner</strong> rather than
+              a Full user: only an Owner can add users, and the button is greyed out otherwise.
+            </p>
+          )}
+          {sites.ok && sites.sites.length > 0 && (
+            <>
+              <p className="text-ih-ink-2 mb-2">
+                One of these is the correct value for <code className="mono">GSC_SITE_URL</code>.
+                Copy it exactly — a domain property is not interchangeable with the URL-prefix one
+                and they hold different data.
+              </p>
+              <ul className="space-y-1">
+                {sites.sites.map((site) => (
+                  <li key={site.siteUrl} className="mono text-[11.5px]">
+                    {site.siteUrl} <span className="text-ih-muted">— {site.permissionLevel}</span>
+                  </li>
+                ))}
+              </ul>
+            </>
+          )}
+        </div>
+      )}
 
       <div className="mb-6">
         <SyncNowButton disabled={!access.ok} />

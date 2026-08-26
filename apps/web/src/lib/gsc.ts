@@ -43,9 +43,7 @@ export type GscConfig = {
   privateKey: string
 }
 
-export type GscConfigResult =
-  | { ok: true; config: GscConfig }
-  | { ok: false; reason: string }
+export type GscConfigResult = { ok: true; config: GscConfig } | { ok: false; reason: string }
 
 /**
  * Read and validate configuration.
@@ -121,11 +119,11 @@ export async function fetchGscPage(
   config: GscConfig,
   window: GscSyncWindow,
   mode: GscDimensionMode,
-  startRow: number,
+  startRow: number
 ): Promise<GscFetchPageResult> {
   const client = authClient(config)
   const endpoint = `https://searchconsole.googleapis.com/webmasters/v3/sites/${encodeURIComponent(
-    config.siteUrl,
+    config.siteUrl
   )}/searchAnalytics/query`
 
   const response = await client.request<{ rows?: GscApiRow[] }>({
@@ -136,6 +134,52 @@ export async function fetchGscPage(
 
   const rows = response.data?.rows ?? []
   return { rows: parseGscRows(rows, mode), hasMore: hasMoreRows(rows.length) }
+}
+
+/**
+ * Every property this service account can actually see.
+ *
+ * WHY THIS EXISTS
+ *
+ * `checkGscAccess` can only say that one specific `siteUrl` was rejected, and
+ * Google returns 403 both for "you are not on this property" and for "that
+ * property is not in your list" — which are different problems with different
+ * fixes, and the two get confused every time. Setting this up, the failure
+ * mode was exactly that: a 403 that read as a permissions problem could just
+ * as easily have been `sc-domain:` against a URL-prefix-only account.
+ *
+ * `sites.list` answers it outright. It needs no permission beyond the one the
+ * credential already has, and what it returns IS the set of valid values for
+ * `GSC_SITE_URL` — so the fix stops being a guess and becomes a copy-paste.
+ *
+ * An empty list is itself the answer: the service account has been added to
+ * nothing at all, whatever the Search Console UI appeared to accept.
+ */
+export async function listGscSites(): Promise<
+  | { ok: true; sites: Array<{ siteUrl: string; permissionLevel: string }> }
+  | { ok: false; detail: string }
+> {
+  const result = readGscConfig()
+  if (!result.ok) return { ok: false, detail: result.reason }
+
+  try {
+    const client = authClient(result.config)
+    const response = await client.request<{
+      siteEntry?: Array<{ siteUrl?: string; permissionLevel?: string }>
+    }>({ url: 'https://searchconsole.googleapis.com/webmasters/v3/sites', method: 'GET' })
+
+    return {
+      ok: true,
+      sites: (response.data?.siteEntry ?? [])
+        .filter((e): e is { siteUrl: string; permissionLevel?: string } => Boolean(e.siteUrl))
+        .map((e) => ({ siteUrl: e.siteUrl, permissionLevel: e.permissionLevel ?? 'unknown' })),
+    }
+  } catch (err) {
+    const status =
+      (err as { status?: number })?.status ??
+      (err as { response?: { status?: number } })?.response?.status
+    return { ok: false, detail: `Could not list properties${status ? ` (${status})` : ''}.` }
+  }
 }
 
 /**
@@ -152,13 +196,14 @@ export async function checkGscAccess(): Promise<{ ok: boolean; detail: string }>
     const client = authClient(result.config)
     await client.request({
       url: `https://searchconsole.googleapis.com/webmasters/v3/sites/${encodeURIComponent(
-        result.config.siteUrl,
+        result.config.siteUrl
       )}`,
       method: 'GET',
     })
     return { ok: true, detail: `Connected to ${result.config.siteUrl}` }
   } catch (err) {
-    const status = (err as { status?: number; response?: { status?: number } })?.status ??
+    const status =
+      (err as { status?: number; response?: { status?: number } })?.status ??
       (err as { response?: { status?: number } })?.response?.status
     if (status === 403) {
       return {
@@ -172,6 +217,9 @@ export async function checkGscAccess(): Promise<{ ok: boolean; detail: string }>
         detail: `Property ${result.config.siteUrl} not found. A URL-prefix property needs the trailing slash; a domain property is written sc-domain:example.com.`,
       }
     }
-    return { ok: false, detail: `Search Console rejected the request${status ? ` (${status})` : ''}.` }
+    return {
+      ok: false,
+      detail: `Search Console rejected the request${status ? ` (${status})` : ''}.`,
+    }
   }
 }
