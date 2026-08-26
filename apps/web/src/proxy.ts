@@ -1,9 +1,11 @@
 import {
   CUSTOMER_SESSION_COOKIE,
+  HERO_GEO_FALLBACK_CODE,
   LEGACY_SESSION_COOKIES,
   STAFF_SESSION_COOKIE,
   USE_SECURE_COOKIES,
   requireAuthSecret,
+  resolveHeroGeoCode,
 } from '@indus/domain'
 import { getToken } from 'next-auth/jwt'
 import { NextRequest, NextResponse } from 'next/server'
@@ -165,6 +167,41 @@ async function serveStoredRedirect(request: NextRequest): Promise<NextResponse |
   return NextResponse.redirect(url, permanent ? 308 : 307)
 }
 
+/**
+ * Send `/` to the cached copy of the homepage for this visitor's country.
+ *
+ * The homepage headline opens with the visitor's country, which used to be
+ * read inside the page via `headers()`. Reading request state there makes the
+ * route dynamic: production served `/` with `no-store`, the CDN never held a
+ * copy, and every visitor and every crawler cost a full render plus the bytes
+ * to ship it. That was the single most expensive URL on the site.
+ *
+ * Resolving the country here instead turns one uncacheable page into a small
+ * set of cacheable ones — `/h/AE`, `/h/SA`, `/h/XX` — each cached on its own
+ * path. This is a REWRITE, not a redirect: the address bar still reads `/`,
+ * every variant declares `/` as its canonical, and two countries still see
+ * two different headlines on the same URL.
+ *
+ * `?geo=XX` keeps working as the way to review wording without leaving the
+ * country. The query is deliberately NOT carried through to the rewrite
+ * target — the variant is already in the path, and passing query strings on
+ * would give every campaign tag its own cache entry.
+ */
+function rewriteHomeToGeoVariant(request: NextRequest): NextResponse | null {
+  if (request.nextUrl.pathname !== '/') return null
+
+  const override = request.nextUrl.searchParams.get('geo')
+  const code = resolveHeroGeoCode(override ?? request.headers.get('x-vercel-ip-country'))
+
+  // The fallback already lives at `/`, so there is nothing to rewrite to.
+  if (code === HERO_GEO_FALLBACK_CODE) return null
+
+  const url = request.nextUrl.clone()
+  url.pathname = `/h/${code}`
+  url.search = ''
+  return NextResponse.rewrite(url)
+}
+
 function redirectToSignIn(request: NextRequest, signInPath: string): NextResponse {
   const { pathname, search } = request.nextUrl
   const url = new URL(signInPath, request.url)
@@ -235,6 +272,10 @@ export default async function proxy(request: NextRequest) {
   // Last, so a live route always wins over a stale redirect row pointing at it.
   const stored = await serveStoredRedirect(request)
   if (stored) return done(stored)
+
+  // After the redirect lookup, so a redirect row for `/` still wins.
+  const geoVariant = rewriteHomeToGeoVariant(request)
+  if (geoVariant) return done(geoVariant)
 
   return done(NextResponse.next())
 }
