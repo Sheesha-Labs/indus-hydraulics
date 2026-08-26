@@ -309,7 +309,20 @@ export default async function CategoryView({ slug, sp }: CategoryViewProps) {
 
   const totalPages = Math.ceil(total / PAGE_SIZE)
 
-  // Build filter URL helper
+  /**
+   * Build a URL for a filter or page change.
+   *
+   * Unfiltered pagination gets a PATH — `/c/<slug>/page/2` — because that form
+   * can be prerendered and cached, while `?page=2` cannot: the clean shelf is
+   * static precisely because it reads no query string, so any query form has to
+   * go to the dynamic twin. Deep pages were the last crawlable URLs on this
+   * route still rendering per request.
+   *
+   * Filtered pagination keeps the query form. Those URLs are `noindex` with a
+   * canonical back to the clean shelf and robots.txt disallows the `brands=`
+   * and `sort=` shapes, so they are visitors only and the dynamic twin is the
+   * right place for them.
+   */
   function filterUrl(overrides: Record<string, string | undefined>) {
     const params = new URLSearchParams()
     const base = {
@@ -319,6 +332,13 @@ export default async function CategoryView({ slug, sp }: CategoryViewProps) {
       sort: sp.sort,
     }
     const merged = { ...base, ...overrides }
+
+    const pageValue = merged.page
+    const hasFilters = Boolean(merged.brands || merged.spec || merged.sort)
+    if (!hasFilters) {
+      return pageValue && pageValue !== '1' ? `/c/${slug}/page/${pageValue}` : `/c/${slug}`
+    }
+
     for (const [k, v] of Object.entries(merged)) {
       if (v) params.set(k, v)
     }

@@ -68,6 +68,12 @@ export const DEFAULT_DISALLOW = [
  * So the patterns below name the two parameters that produce nothing
  * indexable, and leave `?page=` alone.
  *
+ * `?page=` is now a redirect rather than a page in its own right: unfiltered
+ * pagination lives at `/c/<slug>/page/N`, and the proxy 308s the query form
+ * there. Still not disallowed, and deliberately so — a blocked URL cannot be
+ * followed to its redirect target, which would re-create exactly the problem
+ * described above.
+ *
  * These are wildcard MATCH patterns, not path prefixes. They are deliberately
  * kept out of `DEFAULT_DISALLOW`, whose entries are prefixes that
  * `isDisallowed` compares with `startsWith` — mixing the two kinds in one list
