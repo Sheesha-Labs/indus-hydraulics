@@ -17,6 +17,29 @@ function parsePage(raw: string): number | null {
   return n >= 2 ? n : null
 }
 
+/**
+ * A deliberately tiny prerender list — the first couple of pages.
+ *
+ * The size is not the point; the function EXISTING is. A dynamic route with no
+ * `generateStaticParams` is served fully dynamically and `no-store` however
+ * statically renderable its code is, which is what this route was doing on
+ * every request. With a list, the route switches to the incremental cache and
+ * `dynamicParams` renders every unlisted entry on first request and caches it
+ * from then on. See the long note on `/p/[slug]`.
+ *
+ * Length is paid in build minutes, so it stays small — see PR #412, where
+ * oversized lists took the production build from 5 minutes to 16.
+ */
+export function generateStaticParams() {
+  // Page 1 lives at /blog, so this route starts at 2. Two entries is enough to
+  // switch the route to the incremental cache; deeper pages cache on first hit.
+  return [{ n: '2' }, { n: '3' }]
+}
+
+export const dynamicParams = true
+
+export const revalidate = 3600
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { n } = await params
   const page = parsePage(n)

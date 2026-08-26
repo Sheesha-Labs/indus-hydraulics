@@ -4,12 +4,38 @@ import Link from 'next/link'
 import { buildBreadcrumbLd, buildCollectionLd } from '@indus/domain'
 import { JsonLd, LeadCapturePanel, buildWhatsappHref, buildMailtoHref } from '@indus/ui'
 import { pageMetadata, urlFor } from '../../../../lib/seo'
-import { getReplacementsForBrand } from '../../../../lib/replacement-data'
+import { getReplacementBrands, getReplacementsForBrand } from '../../../../lib/replacement-data'
 import { getStoreSettings } from '../../../../lib/store-settings'
 
 type Props = {
   params: Promise<{ brand: string }>
 }
+
+/**
+ * A deliberately tiny prerender list — the brands with the most cross-references.
+ *
+ * The size is not the point; the function EXISTING is. A dynamic route with no
+ * `generateStaticParams` is served fully dynamically and `no-store` however
+ * statically renderable its code is, which is what this route was doing on
+ * every request. With a list, the route switches to the incremental cache and
+ * `dynamicParams` renders every unlisted entry on first request and caches it
+ * from then on. See the long note on `/p/[slug]`.
+ *
+ * Length is paid in build minutes, so it stays small — see PR #412, where
+ * oversized lists took the production build from 5 minutes to 16.
+ */
+const STATIC_REPLACEMENT_BRAND_LIMIT = 3
+
+export async function generateStaticParams() {
+  const brands = await getReplacementBrands()
+  return brands
+    .slice(0, STATIC_REPLACEMENT_BRAND_LIMIT)
+    .map(({ brandSlug }) => ({ brand: brandSlug }))
+}
+
+export const dynamicParams = true
+
+export const revalidate = 3600
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { brand } = await params
