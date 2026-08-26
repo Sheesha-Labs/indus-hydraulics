@@ -80,3 +80,40 @@ test.describe('category shelf caching', () => {
     expect(response.headers()['cache-control'] ?? '').not.toContain('no-store')
   })
 })
+
+test.describe('category pagination', () => {
+  // Only a handful of shelves paginate at 48 products per page; this is the
+  // largest, which rolls up its whole sub-tree.
+  const BIG = '/c/hydraulic-hose-fittings-suppliers-uae'
+
+  test('page 2 lives at a path, and lists products', async ({ page }) => {
+    await page.goto(`${BIG}/page/2`)
+    expect(await page.locator('a[href^="/p/"]').count()).toBeGreaterThan(0)
+    // Deep pages have always been noindex-follow, so crawlers reach the
+    // products without indexing a thin duplicate of the shelf. Moving them
+    // into the path must not change that.
+    await expect(page.locator('meta[name="robots"][content*="noindex"]')).toHaveCount(1)
+  })
+
+  test('the old ?page= form redirects to the path form', async ({ page }) => {
+    // Inbound links, bookmarks and anything already indexed. Serving a second
+    // copy at an uncacheable URL is the thing being removed.
+    await page.goto(`${BIG}?page=2`)
+    expect(new URL(page.url()).pathname).toBe(`${BIG}/page/2`)
+    expect(new URL(page.url()).search).toBe('')
+  })
+
+  test('?page=1 collapses onto the clean shelf', async ({ page }) => {
+    await page.goto(`${BIG}?page=1`)
+    expect(new URL(page.url()).pathname).toBe(BIG)
+    expect(new URL(page.url()).search).toBe('')
+  })
+
+  test('filtered pagination keeps the query form', async ({ page }) => {
+    // Filtered URLs stay on the dynamic twin — they are noindex and
+    // robots-disallowed, so there is nothing to gain from a cacheable path.
+    await page.goto(`${BIG}?sort=az&page=2`)
+    expect(new URL(page.url()).pathname).toBe(BIG)
+    expect(new URL(page.url()).searchParams.get('page')).toBe('2')
+  })
+})

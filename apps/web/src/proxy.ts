@@ -213,11 +213,15 @@ function rewriteHomeToGeoVariant(request: NextRequest): NextResponse | null {
  * This is a REWRITE: the address bar keeps the original URL, the canonical
  * keeps pointing at the clean shelf, and no existing link or bookmark changes.
  *
- * The condition matches `isFacetVariant` in category-view.tsx exactly — the
- * same set of parameters that already decides `noindex`. `?page=1` is not a
- * variant: it is the clean shelf under another name, and sending it to the
- * dynamic route would hand the most linked-to spelling of every category an
- * uncached render.
+ * Pagination is handled differently from the other facets. `?page=N` with no
+ * filters alongside it now lives at `/c/<slug>/page/N`, which can be
+ * prerendered, so those requests are REDIRECTED there rather than rewritten —
+ * one address per page, and the cacheable one. `?page=1` goes to the clean
+ * shelf for the same reason: it is that shelf under another name, and the most
+ * linked-to spelling of every category should not be an uncached render.
+ *
+ * Filtered pagination (`?brands=…&page=2`) still rewrites to the dynamic twin.
+ * Those URLs are `noindex` and robots-disallowed, so nothing crawls them.
  */
 const CATEGORY_PREFIX = '/c/'
 
@@ -230,12 +234,30 @@ function rewriteFilteredCategory(request: NextRequest): NextResponse | null {
   if (!slug || slug.includes('/')) return null
 
   const page = searchParams.get('page')
-  const isFacetVariant =
-    searchParams.has('brands') ||
-    searchParams.has('spec') ||
-    searchParams.has('sort') ||
-    (page !== null && page !== '1')
-  if (!isFacetVariant) return null
+  const hasFilters =
+    searchParams.has('brands') || searchParams.has('spec') || searchParams.has('sort')
+
+  // Unfiltered pagination moved into the path, where it can be prerendered.
+  // Old `?page=2` links — inbound, bookmarked, or already indexed — are sent to
+  // the new address rather than served a second copy of the same page at a URL
+  // that cannot be cached. 308 so the method survives and the move is
+  // permanent, matching how the shelf's own links are now written.
+  if (!hasFilters) {
+    if (page === null) return null
+    if (page === '1') {
+      const clean = request.nextUrl.clone()
+      clean.pathname = `/c/${slug}`
+      clean.search = ''
+      return NextResponse.redirect(clean, 308)
+    }
+    if (/^[0-9]+$/.test(page)) {
+      const paged = request.nextUrl.clone()
+      paged.pathname = `/c/${slug}/page/${page}`
+      paged.search = ''
+      return NextResponse.redirect(paged, 308)
+    }
+    return null
+  }
 
   const url = request.nextUrl.clone()
   url.pathname = `/c-filter/${slug}`
