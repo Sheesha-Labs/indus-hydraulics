@@ -24,6 +24,7 @@ import {
   Globe,
   Newspaper,
   type LucideIcon,
+  Wrench,
 } from 'lucide-react'
 
 interface Props {
@@ -80,6 +81,7 @@ const NAV_SECTIONS: { section: string; items: NavItem[] }[] = [
     section: 'Content',
     items: [
       { id: 'blog', label: 'Blog Editor', path: 'blog', Icon: Newspaper },
+      { id: 'services', label: 'Service cases', path: 'services', Icon: Wrench },
       { id: 'pages', label: 'Pages & Blocks', path: 'pages', Icon: FileText },
       { id: 'navigation', label: 'Navigation', path: 'navigation', Icon: MenuIcon },
       { id: 'seo', label: 'SEO & Search', path: 'seo', Icon: Search },
