@@ -57,7 +57,7 @@ const getHomeCategories = unstable_cache(
       take: 6,
     }),
   ['home-categories'],
-  { revalidate: 300, tags: ['categories'] },
+  { revalidate: 3600, tags: ['categories'] },
 )
 
 const getHomeBrands = unstable_cache(
@@ -69,7 +69,7 @@ const getHomeBrands = unstable_cache(
       take: 12,
     }),
   ['home-brands'],
-  { revalidate: 300, tags: ['brands'] },
+  { revalidate: 3600, tags: ['brands'] },
 )
 
 const getHomeFeaturedProducts = unstable_cache(
@@ -81,7 +81,7 @@ const getHomeFeaturedProducts = unstable_cache(
       include: { brand: { select: { name: true } } },
     }),
   ['home-featured-products'],
-  { revalidate: 60, tags: ['products'] },
+  { revalidate: 3600, tags: ['products'] },
 )
 
 const getHomeBlogPosts = unstable_cache(
@@ -102,19 +102,19 @@ const getHomeBlogPosts = unstable_cache(
       },
     }),
   ['home-blog-posts'],
-  { revalidate: 300, tags: ['blog-posts'] },
+  { revalidate: 3600, tags: ['blog-posts'] },
 )
 
 const getActiveSkuCount = unstable_cache(
   () => db.product.count({ where: { status: 'active' } }),
   ['home-active-sku-count'],
-  { revalidate: 60, tags: ['product-count'] },
+  { revalidate: 3600, tags: ['product-count'] },
 )
 
 const getPublishedBrandCount = unstable_cache(
   () => db.brand.count({ where: { isPublished: true } }),
   ['home-published-brand-count'],
-  { revalidate: 300, tags: ['brands'] },
+  { revalidate: 3600, tags: ['brands'] },
 )
 
 // Hero carousel slides (right-side visual). Cached longer than products
@@ -151,7 +151,7 @@ const getHomeHeroSlides = unstable_cache(
     }))
   },
   ['home-hero-slides'],
-  { revalidate: 600, tags: ['homepage-hero'] },
+  { revalidate: 3600, tags: ['homepage-hero'] },
 )
 
 /**

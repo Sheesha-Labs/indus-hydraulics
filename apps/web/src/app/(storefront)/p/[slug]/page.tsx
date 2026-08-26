@@ -85,9 +85,14 @@ const getProduct = cache(async (decoded: string) => {
 })
 
 /**
- * Refresh interval for the PDP. One hour for a catalogue that changes daily
- * but not minutely; admin mutations punch through with
- * `revalidatePath('/p/<slug>')` after an edit.
+ * Refresh interval for the PDP. A day, not an hour.
+ *
+ * The hour was never what kept these pages fresh — `revalidatePath('/p/<slug>')`
+ * is, and it runs on all 22 product mutations. The timer is only a backstop for
+ * a row changed by something that does not call it, and an hour of it cost real
+ * money: 1,487 pages regenerating up to 24 times a day, each shipping ~32 KB
+ * from origin to edge, is roughly 34 GB a month spent re-rendering a catalogue
+ * that changes daily at most.
  *
  * This is live again. It was inert for as long as the page rendered
  * dynamically — three per-request reads did that, and all three are gone:
@@ -101,7 +106,7 @@ const getProduct = cache(async (decoded: string) => {
  * one exception: Next prerenders with it false and serves the cached page,
  * and only requests carrying its bypass cookie render fresh.
  */
-export const revalidate = 3600
+export const revalidate = 86400
 
 /**
  * Serve slugs that are not in the list below on demand rather than 404ing

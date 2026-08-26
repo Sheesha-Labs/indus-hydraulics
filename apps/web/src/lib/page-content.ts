@@ -85,7 +85,7 @@ const readDocument = unstable_cache(
     return row?.sections ?? null
   },
   ['page-content'],
-  { revalidate: 300, tags: ['page-content'] },
+  { revalidate: 3600, tags: ['page-content'] },
 )
 
 /**
