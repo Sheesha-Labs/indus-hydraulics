@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Fragment, type ReactNode } from 'react'
+import { Fragment, Suspense, type ReactNode } from 'react'
 import type { ServiceCaseCategory } from '@indus/db'
 import Link from 'next/link'
 import { MANUFACTURING_PAGE, QUALITY_CONTROL_PAGE, lines, str, visibleList } from '@indus/domain'
@@ -8,29 +8,19 @@ import {
   categoryCounts,
   featuredServiceCase,
   listServiceCases,
-  parseCategory,
-  parseSort,
   topTwoStoryCases,
   totalCount,
 } from '../../../lib/service-cases'
 import { getMasterPageContent } from '../../../lib/page-content'
 import ServicesHero from '../../../components/services/ServicesHero'
-import ServicesTopicRail from '../../../components/services/ServicesTopicRail'
-import FeaturedCase from '../../../components/services/FeaturedCase'
-import ServiceCaseCard from '../../../components/services/ServiceCaseCard'
+import ServicesCaseBrowser from '../../../components/services/ServicesCaseBrowser'
+import ServicesCaseList from '../../../components/services/ServicesCaseList'
 import ApproachSteps from '../../../components/services/ApproachSteps'
 import StoryCard from '../../../components/services/StoryCard'
 import ServicesCta from '../../../components/services/ServicesCta'
 import { buildWhatsappHref, buildMailtoHref } from '@indus/ui'
 import { getStoreSettings } from '../../../lib/store-settings'
 import type { ApproachStep, HeroStat } from '../../../lib/services-config'
-
-type Props = {
-  searchParams: Promise<{
-    category?: string
-    sort?: string
-  }>
-}
 
 // Order of chips on the topic rail. Matches the breadth of services Indus
 // covers in the GCC; categories with 0 published cases are still shown so
@@ -57,18 +47,26 @@ export async function generateMetadata(): Promise<Metadata> {
   })
 }
 
-export default async function ServicesIndexPage({ searchParams }: Props) {
-  const sp = await searchParams
-  const category = parseCategory(sp.category)
-  const sort = parseSort(sp.sort)
+/**
+ * Nothing in this file may read `searchParams`, `headers()` or `cookies()`.
+ *
+ * It used to read `category` and `sort`, which made the route dynamic: it
+ * rendered per request for every visitor and every crawler, was never cached,
+ * and cost ~47 KB of origin transfer each time. The chips and the sort control
+ * now filter in the browser over the full set, which the page already shipped.
+ */
+export const revalidate = 3600
 
+export default async function ServicesIndexPage() {
   const [featured, total, perCategory, allCases, twoUp, settings, content] = await Promise.all([
-    // Featured only renders when no filter is applied (matches the mock —
-    // the "Case of the Week" sits at the top of the unfiltered view).
-    !category ? featuredServiceCase() : Promise.resolve(null),
+    // Featured is fetched unconditionally now. Whether it renders is the
+    // browser's call — it shows above the grid on the unfiltered view only.
+    featuredServiceCase(),
     totalCount(),
     categoryCounts(),
-    listServiceCases({ category, sort, limit: 30 }),
+    // Every published case, unfiltered and in default order. There are twenty;
+    // the unfiltered page already rendered all of them.
+    listServiceCases({ limit: 30 }),
     // Two-up at the bottom always renders the latest 2 stories irrespective
     // of filter — no point hiding them.
     topTwoStoryCases(),
@@ -76,10 +74,6 @@ export default async function ServicesIndexPage({ searchParams }: Props) {
     // Section order, visibility and copy, edited under Pages & Blocks.
     getMasterPageContent('services'),
   ])
-
-  // When a featured case is shown above the grid, drop it from the grid so
-  // it doesn't appear twice on the unfiltered view.
-  const gridCases = featured ? allCases.filter((c) => c.id !== featured.id) : allCases
 
   const hero = content.values('hero')
   const cases = content.values('cases')
@@ -127,6 +121,17 @@ export default async function ServicesIndexPage({ searchParams }: Props) {
 
   const capability = content.values('capability')
 
+  // One object for both the prerendered fallback and the client component, so
+  // the two cannot be given different data.
+  const browserProps = {
+    cases: allCases,
+    featured,
+    totalCount: total,
+    perCategory,
+    chipOrder: CHIP_ORDER,
+    emptyMessage: str(cases, 'empty_message') ?? '',
+  }
+
   const sections: Record<string, ReactNode> = {
     hero: (
       <ServicesHero
@@ -143,32 +148,21 @@ export default async function ServicesIndexPage({ searchParams }: Props) {
       />
     ),
 
+    // The rail and the grid moved into one client component so they can share
+    // the filter state without the server reading it. Rendered here as a
+    // single section rather than two, because the featured case sits between
+    // them and belongs to the same decision.
     topics: (
-      <ServicesTopicRail
-        totalCount={total}
-        perCategory={perCategory}
-        activeCategory={category}
-        activeSort={sort}
-        chipOrder={CHIP_ORDER}
-      />
+      // The fallback is not a spinner: `useSearchParams` bails out of
+      // prerendering, so whatever sits here is what a crawler reads at
+      // /services. It renders the same list with the defaults — every case, in
+      // default order — and the client swaps in the filtered view on hydration.
+      <Suspense fallback={<ServicesCaseList {...browserProps} category={null} sort="recent" />}>
+        <ServicesCaseBrowser {...browserProps} />
+      </Suspense>
     ),
 
-    cases: (
-      <>
-        {featured ? <FeaturedCase case={featured} /> : null}
-        {gridCases.length > 0 ? (
-          <section className="grid grid-cols-1 gap-7 py-6 pb-16 md:grid-cols-2 lg:grid-cols-3">
-            {gridCases.map((c) => (
-              <ServiceCaseCard key={c.id} case={c} />
-            ))}
-          </section>
-        ) : (
-          <section className="py-16 text-center text-ih-muted">
-            <p className="mono text-xs uppercase tracking-[0.1em]">{str(cases, 'empty_message')}</p>
-          </section>
-        )}
-      </>
-    ),
+    cases: null,
 
     approach:
       approachSteps.length > 0 ? (
