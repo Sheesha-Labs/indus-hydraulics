@@ -11,7 +11,20 @@ import { DEFAULT_DISALLOW, FACET_DISALLOW } from '../lib/crawl-policy'
  * If `robotsTxt` is empty, we emit a permissive default that points at the
  * dynamic sitemap.
  */
-export const dynamic = 'force-dynamic'
+/**
+ * Cached, not `force-dynamic`.
+ *
+ * This route was rendered per request, which meant a database query and a
+ * function invocation every time any crawler asked for robots.txt — and they
+ * ask constantly. The bytes are trivial; the invocations are not, and they are
+ * billed as Observability events.
+ *
+ * An hour of staleness would normally be the cost of that. It is not, because
+ * `saveSeoSettings` now calls `revalidatePath('/robots.txt')` — an edit in the
+ * SEO console is live immediately, and the hour is only a backstop for a row
+ * changed by any other route.
+ */
+export const revalidate = 3600
 
 export default async function robots(): Promise<MetadataRoute.Robots> {
   const setting = await db.seoSetting.findFirst({
