@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest'
 
 import { CATEGORY_REACH_PROFILES, categoryExportRegions } from './category-market-reach'
+import { DESIGNED_PAGE_REACH_PROFILES, designedPageMarketReach } from './designed-page-market-reach'
 import { INDUSTRY_REACH_PROFILES, industryMarketReach } from './industry-market-reach'
 import { MARKET_REACH_PROFILES } from './blog-market-reach'
 import { REACH_EXCLUDED_MARKET_SLUGS, buildMarketReach, marketReachRegions } from './market-reach'
@@ -326,6 +327,36 @@ describe('surface entry points', () => {
       expect(out!.groups.flatMap((g) => g.markets).length, rootSlug).toBe(9)
     }
     expect(categoryExportRegions('anything', 'not-a-root')).toBeNull()
+  })
+
+  /**
+   * `/quality-control`'s commercial framing is unapproved and carries two
+   * claims flagged as needing confirmation — a certificate reissued against a
+   * heat number years later, and third-party inspection by named agencies
+   * scheduled against the production date. The generated paragraph must not
+   * give either a second home, or striking it from the page would leave it
+   * standing underneath.
+   */
+  it('does not restate the unapproved quality-control claims', () => {
+    const body = DESIGNED_PAGE_REACH_PROFILES['quality-control']!.body
+    for (const claim of [
+      /reissu/i,
+      /\bheat number\b/i,
+      /\bSGS\b|\bTÜV\b|\bTUV\b|\bBureau Veritas\b/i,
+      /third[- ]party inspection/i,
+    ]) {
+      expect(claim.test(body), `quality-control reach restates ${claim}`).toBe(false)
+    }
+  })
+
+  it('gives each designed capability page a different region set', () => {
+    const fingerprints = Object.keys(DESIGNED_PAGE_REACH_PROFILES).map((key) =>
+      designedPageMarketReach(key)!
+        .groups.map((g) => g.region)
+        .join('|')
+    )
+    expect(new Set(fingerprints).size).toBe(fingerprints.length)
+    expect(designedPageMarketReach('not-a-page')).toBeNull()
   })
 
   it('gives each industry a different region set', () => {
