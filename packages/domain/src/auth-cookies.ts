@@ -58,6 +58,22 @@ export const STAFF_COOKIE_PATH = '/'
 /** Customer (storefront `account_contact`) session cookie. */
 export const CUSTOMER_SESSION_COOKIE = `${PREFIX}indus.customer-session`
 
+/**
+ * A readable marker saying "a customer session cookie was present".
+ *
+ * The session cookie itself is httpOnly, so the browser cannot see whether
+ * anyone is signed in — which is why the header asked `/api/me` on EVERY page
+ * load, for every visitor including the anonymous majority. That is one
+ * function invocation and one database lookup per pageview, sitewide, to be
+ * told "signed out" almost every time.
+ *
+ * This carries no identity and grants nothing: it is a boolean hint, kept in
+ * sync by the proxy, and every protected route still checks the real session
+ * server-side. Deliberately NOT httpOnly — being readable from JavaScript is
+ * the entire purpose.
+ */
+export const VIEWER_HINT_COOKIE = 'indus.viewer'
+
 /** Staff (admin `staff_user`) session cookie. */
 export const STAFF_SESSION_COOKIE = `${PREFIX}indus.staff-session`
 

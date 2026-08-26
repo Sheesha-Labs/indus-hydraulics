@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react'
+import { VIEWER_HINT_COOKIE } from '@indus/domain'
 
 export type ViewerNotification = {
   id: string
@@ -36,8 +37,33 @@ const SIGNED_OUT: Viewer = {
  */
 let inFlight: Promise<Viewer> | null = null
 
+/**
+ * Is it worth asking who this is?
+ *
+ * The session cookie is httpOnly and unreadable here, so the proxy mirrors its
+ * presence into a readable hint. Without this check the header asked `/api/me`
+ * on every page load for every visitor — one `force-dynamic` invocation and one
+ * database read per pageview, answered "signed out" almost every time.
+ *
+ * Erring towards asking: an unreadable `document.cookie` (or anything odd)
+ * falls through to the request rather than declaring the visitor signed out.
+ */
+export function mightBeSignedIn(): boolean {
+  if (typeof document === 'undefined') return false
+  try {
+    return document.cookie.split('; ').some((c) => c.startsWith(VIEWER_HINT_COOKIE + '='))
+  } catch {
+    return true
+  }
+}
+
 function fetchViewer(): Promise<Viewer> {
   if (inFlight) return inFlight
+  // No hint, no session, no request.
+  if (!mightBeSignedIn()) {
+    inFlight = Promise.resolve({ ...SIGNED_OUT, loaded: true })
+    return inFlight
+  }
   inFlight = fetch('/api/me', { credentials: 'same-origin' })
     .then((r) => (r.ok ? r.json() : null))
     .then((data): Viewer => {
