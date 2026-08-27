@@ -17,6 +17,7 @@ import { getSubPageContent } from '../../../../lib/page-content'
 import { marketCatalogueClusters, marketStockedBrands } from '../../../../lib/market-catalogue'
 import { ORG_ID, SITE_NAME, pageMetadata, urlFor } from '../../../../lib/seo'
 import { getStoreSettings } from '../../../../lib/store-settings'
+import { showsReviewerAids } from '../../../../lib/app-env'
 
 type Props = { params: Promise<{ slug: string }> }
 
@@ -173,12 +174,14 @@ export default async function MarketPage({ params }: Props) {
           reports the schema emitted, the link counts and the gazetteer size so
           a new market can be checked at a glance.
 
-          Gated on VERCEL_ENV rather than NODE_ENV on purpose. A Vercel preview
-          build runs with NODE_ENV=production, so a NODE_ENV check would hide
-          the strip on exactly the deployment where someone is reviewing a new
-          market. VERCEL_ENV is 'preview' there, and unset locally.
+          Gated through `showsReviewerAids()` rather than NODE_ENV on purpose:
+          a preview build runs with NODE_ENV=production, so a NODE_ENV check
+          would hide the strip on exactly the deployment where someone is
+          reviewing a new market. It opts IN on `APP_ENV=preview` — the previous
+          `VERCEL_ENV !== 'production'` read TRUE wherever that variable was
+          absent, which off Vercel is everywhere.
         */
-        showAuditStrip={process.env.VERCEL_ENV !== 'production'}
+        showAuditStrip={showsReviewerAids()}
         content={content}
       />
     </>

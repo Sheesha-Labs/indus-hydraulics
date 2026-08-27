@@ -316,7 +316,8 @@ export default function MarketsIndex({
       </section>
 
       {/*
-        Reviewer's aid, not customer furniture. Gated on VERCEL_ENV rather than
+        Reviewer's aid, not customer furniture. Gated by `showsReviewerAids()`
+        (see lib/app-env.ts) rather than
         NODE_ENV at the call site — a Vercel preview build runs with
         NODE_ENV=production, which would hide the strip on exactly the deploy
         where someone is reviewing this page.

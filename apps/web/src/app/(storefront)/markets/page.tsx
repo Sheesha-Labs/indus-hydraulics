@@ -16,6 +16,7 @@ import { getMasterPageContent } from '../../../lib/page-content'
 import { buildMarketThumbnail, type MarketThumbnail } from '../../../lib/market-thumbnails'
 import { ORG_ID, SITE_NAME, pageMetadata, urlFor } from '../../../lib/seo'
 import { getStoreSettings } from '../../../lib/store-settings'
+import { showsReviewerAids } from '../../../lib/app-env'
 
 /**
  * Export-market index — the hub for all 126 `/markets/{slug}` pages.
@@ -171,7 +172,7 @@ export default async function MarketsPage() {
           hours: settings.contactHours,
           whatsappUrl: buildWhatsappHref(settings.contactPhone, 'Export enquiry'),
         }}
-        showAuditStrip={process.env.VERCEL_ENV !== 'production'}
+        showAuditStrip={showsReviewerAids()}
         copy={copy}
       />
     </>
