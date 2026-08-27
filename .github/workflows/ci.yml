@@ -57,6 +57,10 @@ jobs:
     name: build
     runs-on: ubuntu-latest
     timeout-minutes: 25
+    # Skipped until the deploy secrets exist, so it does not sit permanently red
+    # on every PR. Set the repository variable CI_BUILD=true once the secrets
+    # listed on the Build step below are configured.
+    if: vars.CI_BUILD == 'true'
     # Nothing but Vercel has ever compiled this app. Once it is self-hosted the
     # build is ours, so a broken build has to fail here rather than on the box.
     #
@@ -86,11 +90,24 @@ jobs:
         run: pnpm db:generate
 
       - name: Build
-        # The build reads the catalogue to prerender, so it needs the database.
-        # The pool is capped for the build phase in packages/db/src/datasource-url.ts.
+        # This app needs more than a database at BUILD time, which the first run
+        # of this job proved rather than the docs: with only DATABASE_URL set it
+        # failed on `STAFF_AUTH_SECRET is missing`, because route modules are
+        # evaluated while collecting page data and the auth config is
+        # constructed at import time.
+        #
+        # Required repository secrets:
+        #   DATABASE_URL, DIRECT_URL
+        #   CUSTOMER_AUTH_SECRET, STAFF_AUTH_SECRET   (two DIFFERENT values —
+        #     reusing one defeats the customer/staff session isolation)
+        #   SUPABASE_SERVICE_ROLE_KEY, NEXT_PUBLIC_SUPABASE_URL
         env:
           DATABASE_URL: ${{ secrets.DATABASE_URL }}
           DIRECT_URL: ${{ secrets.DIRECT_URL }}
+          CUSTOMER_AUTH_SECRET: ${{ secrets.CUSTOMER_AUTH_SECRET }}
+          STAFF_AUTH_SECRET: ${{ secrets.STAFF_AUTH_SECRET }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
           NEXT_PUBLIC_BASE_URL: https://indushydraulics.com
           APP_ENV: production
         run: pnpm build

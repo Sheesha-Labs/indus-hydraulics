@@ -95,9 +95,18 @@ Nothing but Vercel has ever compiled this app.
 - [ ] **Delete the duplicate `@prisma/client`.** Two major versions resolve in one
       tree (`apps/web/package.json:28` pins `^7.8.0` unused). A hoisting change
       during containerisation makes the winner non-deterministic.
-- [ ] **Add a `build` job to CI** that produces the artifact. Deploy *that* — never
+- [x] **Add a `build` job to CI** that produces the artifact. Deploy *that* — never
       build on the production box. Note `next build` no longer typechecks
       (deliberate, see #417); `typecheck · lint · test` is the required gate.
+- [ ] **Add the build secrets and set `CI_BUILD=true`.** The job is gated off
+      until then so it does not sit red. It needs more than a database, which the
+      first run proved rather than the docs — with only `DATABASE_URL` set it
+      failed on `STAFF_AUTH_SECRET is missing`, because route modules are
+      evaluated while collecting page data and the auth config is built at import
+      time. Required repository secrets:
+      `DATABASE_URL`, `DIRECT_URL`, `CUSTOMER_AUTH_SECRET`, `STAFF_AUTH_SECRET`
+      (two **different** values), `SUPABASE_SERVICE_ROLE_KEY`,
+      `NEXT_PUBLIC_SUPABASE_URL`.
 - [ ] **Replace the `VERCEL_ENV` gates.** `markets/page.tsx:174`,
       `markets/[slug]/page.tsx:181`, `MarketsIndex.tsx:319` all read
       `process.env.VERCEL_ENV !== 'production'`. Off Vercel that is **true**, so
