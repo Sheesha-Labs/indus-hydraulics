@@ -63,7 +63,14 @@ const nextConfig: NextConfig = {
     minimumCacheTTL: 2_592_000,
     remotePatterns: [
       { protocol: 'https', hostname: '*.r2.cloudflarestorage.com' },
-      { protocol: 'https', hostname: '*.supabase.co' },
+      /*
+       * This project's storage bucket only — not `*.supabase.co`.
+       *
+       * A wildcard here makes `/_next/image` an open image proxy: anyone can
+       * pass any Supabase URL and have it fetched and re-encoded. Vercel's
+       * fleet absorbed that; a single VPS is the one paying the CPU.
+       */
+      { protocol: 'https', hostname: 'hesezbozronntejnsopr.supabase.co' },
       { protocol: 'https', hostname: 'images.unsplash.com' },
     ],
   },

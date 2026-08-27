@@ -1,18 +1,10 @@
 'use server'
 
 import { db } from '@indus/db'
-import { headers } from 'next/headers'
+import { linkOrigin } from '../../../lib/request-origin'
 import { issueStaffLink, normaliseEmail } from '../../../lib/staff-invitations'
 import type { ForgotState } from './copy'
 
-/** Absolute origin of the live request, so links work on previews and any custom domain. */
-async function requestOrigin(): Promise<string> {
-  const h = await headers()
-  const host = h.get('x-forwarded-host') ?? h.get('host')
-  const proto = h.get('x-forwarded-proto') ?? 'https'
-  if (host) return `${proto}://${host}`
-  return process.env.NEXT_PUBLIC_BASE_URL ?? 'https://indushydraulics.com'
-}
 
 export async function requestStaffPasswordReset(
   _prev: ForgotState,
@@ -36,7 +28,7 @@ export async function requestStaffPasswordReset(
     name: staff.name,
     role: staff.role,
     purpose: 'reset',
-    baseUrl: await requestOrigin(),
+    baseUrl: linkOrigin(),
   })
 
   // A genuine send failure is a configuration problem the person cannot act

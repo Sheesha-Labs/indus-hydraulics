@@ -1,6 +1,7 @@
 'use server'
 
 import { createHash } from 'node:crypto'
+import { clientIp } from '../lib/request-origin'
 import { headers } from 'next/headers'
 import { z } from 'zod'
 import { db } from '@indus/db'
@@ -37,16 +38,18 @@ export async function subscribeToNewsletter(formData: FormData): Promise<Result>
   const { email } = parsed.data
   const source = parsed.data.source || 'homepage_footer'
 
-  // Best-effort metadata — Vercel sets x-forwarded-for; if missing we just
-  // skip the hash. Never store raw IP.
+  // Best-effort metadata. Never store raw IP.
+  //
+  // Reads through `clientIp` rather than the first XFF hop: that hop is
+  // whatever the caller sent, so hashing it produced a fresh, meaningless
+  // value per request — the opposite of what a dedupe hash is for.
   let ipHash: string | null = null
   let userAgent: string | null = null
   try {
     const h = await headers()
-    const fwd = h.get('x-forwarded-for') ?? h.get('x-real-ip')
-    if (fwd) {
-      const first = fwd.split(',')[0]?.trim()
-      if (first) ipHash = createHash('sha256').update(first).digest('hex')
+    const ip = clientIp(h)
+    if (ip !== 'unknown') {
+      ipHash = createHash('sha256').update(ip).digest('hex')
     }
     userAgent = h.get('user-agent')?.slice(0, 500) ?? null
   } catch {
