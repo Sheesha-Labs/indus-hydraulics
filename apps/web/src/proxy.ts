@@ -231,7 +231,14 @@ function rewriteHomeToGeoVariant(request: NextRequest): NextResponse | null {
   if (request.nextUrl.pathname !== '/') return null
 
   const override = request.nextUrl.searchParams.get('geo')
-  const code = resolveHeroGeoCode(override ?? request.headers.get('x-vercel-ip-country'))
+  // `cf-ipcountry` first, `x-vercel-ip-country` as a fallback so the two hosts
+  // behave identically during the cutover. Both are ISO 3166-1 alpha-2, which is
+  // the shape `resolveHeroGeoCode` already accepts. Whichever platform is in
+  // front sets its own header on the way through; a client-supplied copy is
+  // stripped at the edge (Cloudflare Transform Rule), not trusted here.
+  const geoHeader =
+    request.headers.get('cf-ipcountry') ?? request.headers.get('x-vercel-ip-country')
+  const code = resolveHeroGeoCode(override ?? geoHeader)
 
   // The fallback already lives at `/`, so there is nothing to rewrite to.
   if (code === HERO_GEO_FALLBACK_CODE) return null

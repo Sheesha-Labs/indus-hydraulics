@@ -28,6 +28,24 @@ const nextConfig: NextConfig = {
   typescript: { ignoreBuildErrors: true },
   serverExternalPackages: ['@prisma/client', '.prisma/client'],
   transpilePackages: ['@indus/ui', '@indus/domain'],
+  /*
+   * Belt and braces for the Server Action CSRF check.
+   *
+   * Next compares the browser's `Origin` against the host it derives from
+   * `x-forwarded-host`, falling back to `host`. On Vercel the edge set those
+   * headers correctly and this never mattered. Behind our own reverse proxy a
+   * single misconfigured header rejects every Server Action — all 63 files,
+   * including admin sign-in — with an opaque 500 rather than anything that
+   * points at the cause.
+   *
+   * Naming the origins here means the proxy has to be wrong AND this list has
+   * to be wrong before that happens.
+   */
+  experimental: {
+    serverActions: {
+      allowedOrigins: ['indushydraulics.com', 'www.indushydraulics.com'],
+    },
+  },
   images: {
     /*
      * The srcset ladder, deliberately narrowed.
