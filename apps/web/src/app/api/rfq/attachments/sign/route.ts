@@ -1,4 +1,5 @@
 import { NextResponse } from 'next/server'
+import { clientIp } from '../../../../../lib/request-origin'
 import { randomUUID } from 'node:crypto'
 import { STORAGE_BUCKETS, supabaseAdmin } from '../../../../../lib/supabase-admin'
 
@@ -85,10 +86,7 @@ const ALLOWED = new Map<string, string>([
 type Body = { filename?: unknown; contentType?: unknown; size?: unknown }
 
 export async function POST(request: Request) {
-  const ip =
-    request.headers.get('x-forwarded-for')?.split(',')[0]?.trim() ??
-    request.headers.get('x-real-ip') ??
-    'unknown'
+  const ip = clientIp(request.headers)
   if (rateLimited(ip)) {
     return NextResponse.json({ error: 'Too many uploads. Wait a minute and try again.' }, { status: 429 })
   }
