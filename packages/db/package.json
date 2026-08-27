@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "@indus/domain": "workspace:^",
-    "@prisma/client": "^6.7.0",
+    "@prisma/client": "^6.19.3",
     "zod": "^4.4.1"
   },
   "devDependencies": {

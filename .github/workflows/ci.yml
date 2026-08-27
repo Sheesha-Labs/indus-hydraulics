@@ -52,3 +52,63 @@ jobs:
 
       - name: Test
         run: pnpm test
+
+  build:
+    name: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    # Nothing but Vercel has ever compiled this app. Once it is self-hosted the
+    # build is ours, so a broken build has to fail here rather than on the box.
+    #
+    # Deliberately a separate job from typecheck/lint/test: `next build` no
+    # longer validates types (see #417), so the two are genuinely independent
+    # checks and running them in parallel keeps the feedback fast.
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9.15.0
+          run_install: false
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Generate Prisma client
+        run: pnpm db:generate
+
+      - name: Build
+        # The build reads the catalogue to prerender, so it needs the database.
+        # The pool is capped for the build phase in packages/db/src/datasource-url.ts.
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          DIRECT_URL: ${{ secrets.DIRECT_URL }}
+          NEXT_PUBLIC_BASE_URL: https://indushydraulics.com
+          APP_ENV: production
+        run: pnpm build
+
+      - name: Assert the artifact is complete
+        # `standalone` does not copy these two, and the failure mode without
+        # them is a site that serves HTML with no CSS and no images — which
+        # looks like a styling bug, not a packaging one.
+        run: |
+          test -f apps/web/.next/standalone/apps/web/server.js
+          test -d apps/web/.next/static
+          test -d apps/web/public
+
+      - name: Assert no build-time host leaked into the bundle
+        # NEXT_PUBLIC_* are inlined at build time, so a wrong value here is
+        # frozen into every cron email link until the next build.
+        run: |
+          if grep -rq "localhost:3000" apps/web/.next/server/chunks; then
+            echo "localhost:3000 is baked into the server bundle — NEXT_PUBLIC_BASE_URL was wrong at build time"
+            exit 1
+          fi
