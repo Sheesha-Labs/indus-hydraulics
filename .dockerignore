@@ -1,0 +1,20 @@
+# Everything the image does not need. Without this the build context is ~2.6 GB
+# and every layer cache miss re-uploads it.
+**/node_modules
+**/.next
+**/.turbo
+.git
+.github
+.claude
+**/*.log
+**/.env
+**/.env.*
+!**/.env.example
+docs
+research
+**/tests
+**/*.test.ts
+**/*.test.tsx
+playwright-report
+test-results
+**/.DS_Store

@@ -124,10 +124,16 @@ Nothing but Vercel has ever compiled this app.
 
 ## 4. Stand up the box
 
-- [ ] **Process supervision.** systemd with `Restart=always`, `RestartSec=2`, a
-      `MemoryMax=` below box RAM so the unit restarts rather than the kernel
-      picking a victim, and a swapfile. One OOM otherwise ends the site until a
-      human notices.
+- [x] **Process supervision.** `restart: always`, a memory limit below box RAM
+      so the container restarts rather than the kernel picking a victim, and
+      bounded json-file logging. See `compose.yaml`. Still add a host swapfile.
+- [x] **Container image and deploy pipeline.** `Dockerfile`, `compose.yaml`,
+      `.github/workflows/deploy.yml`. Build once in CI, ship the artifact, health
+      gate, auto-rollback, Inngest re-sync, smoke.
+- [ ] **Provision the box** and create `/srv/indus/env/web.env` (mode 0600) plus
+      `/srv/indus/compose.yaml`.
+- [ ] **Add the deploy secrets**: `DEPLOY_HOST`, `DEPLOY_USER`, `DEPLOY_SSH_KEY`,
+      plus the six build secrets already listed above.
 - [ ] **Reverse proxy headers — get this wrong and every admin save fails with an
       unexplained 500.** Next's Server Action CSRF check keys on
       `x-forwarded-host`. Set `Host`, `X-Forwarded-Host` and
@@ -141,9 +147,11 @@ Nothing but Vercel has ever compiled this app.
       size cap. It holds ISR pages, the fetch cache and a 30-day image cache, and
       a naive deploy wipes it — the image-optimizer warm-up alone is 1–2 CPU-hours
       from cold.
-- [ ] **Separate liveness endpoint.** `/api/health` returns 503 on a database blip,
-      which is wrong for a container probe — it restarts a healthy app because a
-      remote database hiccuped. Add `/api/health/live` returning 200 unconditionally.
+- [x] **Separate liveness endpoint.** `/api/health/live` returns 200
+      unconditionally and touches nothing; `/api/health` keeps its database check
+      for monitoring. Verified in the container: with the Prisma engine
+      mismatched, liveness stayed 200 and health returned 503 — which is the
+      split behaving correctly.
 - [ ] **Bound the logs.** 631 bare `console.*` calls currently land in Vercel's log
       viewer, which the runbook names as the way to debug production. On a VPS
       nothing replaces it. Set `SystemMaxUse=` or route to a rotated file.
