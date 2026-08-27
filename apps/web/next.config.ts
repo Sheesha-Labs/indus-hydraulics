@@ -3,6 +3,17 @@ import type { NextConfig } from 'next'
 import { withSentryConfig } from '@sentry/nextjs'
 
 const nextConfig: NextConfig = {
+  /*
+   * A self-contained server bundle, so a release is an artifact rather than a
+   * 2.6 GB working tree.
+   *
+   * `standalone` traces exactly the files the server needs and copies them,
+   * resolving the pnpm symlinks on the way — which is what makes Prisma work
+   * off a machine that has no pnpm store. It deliberately does NOT copy
+   * `.next/static` or `public/`; both must be placed alongside the output or
+   * the site serves HTML with no assets and no images.
+   */
+  output: 'standalone',
   outputFileTracingRoot: path.join(__dirname, '../../'),
   /*
    * Type checking is CI's job, not the deploy's.
