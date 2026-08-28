@@ -14,6 +14,25 @@ const nextConfig: NextConfig = {
    * the site serves HTML with no assets and no images.
    */
   output: 'standalone',
+  /*
+   * Self-hosted incremental cache. See apps/web/cache/handler.js.
+   *
+   * Without this Next uses FileSystemCache, whose tag manifest is a per-process
+   * Map — so an admin purge reaches only the instance that served the request,
+   * and a restart resurrects every page anyone purged. It also writes ISR
+   * entries inside the build output, which a deploy replaces.
+   *
+   * Only takes effect when REDIS_URL is set; the handler falls back to the
+   * filesystem otherwise, so `next dev` and a bare `next start` are unchanged.
+   */
+  cacheHandler: require.resolve('./cache/handler.js'),
+  /*
+   * `cacheHandler` is loaded by path at runtime, so nothing imports it and the
+   * standalone trace would otherwise miss it and its Redis client.
+   */
+  outputFileTracingIncludes: {
+    '/**': ['./cache/handler.js', './cache/keys.js'],
+  },
   outputFileTracingRoot: path.join(__dirname, '../../'),
   /*
    * Type checking is CI's job, not the deploy's.

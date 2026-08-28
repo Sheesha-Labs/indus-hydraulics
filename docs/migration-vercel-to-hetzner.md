@@ -139,10 +139,14 @@ Nothing but Vercel has ever compiled this app.
       `x-forwarded-host`. Set `Host`, `X-Forwarded-Host` and
       `X-Forwarded-Proto https` explicitly; never let a local proxy overwrite the
       proto with `http`, or reset links and Auth.js callbacks become `http://` too.
-- [ ] **Redis cache handler**, composed: try Redis, fall back to the on-disk
+- [x] **Redis cache handler**, composed: try Redis, fall back to the on-disk
       cache, write through on first read. A *pure* Redis handler never reads
       build-time prerenders back, which makes every `generateStaticParams` list
-      dead weight.
+      dead weight. See `apps/web/cache/handler.js`. Verified against a real
+      Redis: purge propagates across instances, and with Redis stopped it
+      degrades to the filesystem without throwing.
+- [ ] **Set `REDIS_URL`** on the box. Without it the handler is inert and Next
+      uses the filesystem cache, which is the pre-migration behaviour.
 - [ ] **`.next/cache` on a persistent path outside the release directory**, with a
       size cap. It holds ISR pages, the fetch cache and a 30-day image cache, and
       a naive deploy wipes it — the image-optimizer warm-up alone is 1–2 CPU-hours
