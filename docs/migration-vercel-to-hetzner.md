@@ -95,9 +95,18 @@ Nothing but Vercel has ever compiled this app.
 - [ ] **Delete the duplicate `@prisma/client`.** Two major versions resolve in one
       tree (`apps/web/package.json:28` pins `^7.8.0` unused). A hoisting change
       during containerisation makes the winner non-deterministic.
-- [ ] **Add a `build` job to CI** that produces the artifact. Deploy *that* — never
+- [x] **Add a `build` job to CI** that produces the artifact. Deploy *that* — never
       build on the production box. Note `next build` no longer typechecks
       (deliberate, see #417); `typecheck · lint · test` is the required gate.
+- [ ] **Add the build secrets and set `CI_BUILD=true`.** The job is gated off
+      until then so it does not sit red. It needs more than a database, which the
+      first run proved rather than the docs — with only `DATABASE_URL` set it
+      failed on `STAFF_AUTH_SECRET is missing`, because route modules are
+      evaluated while collecting page data and the auth config is built at import
+      time. Required repository secrets:
+      `DATABASE_URL`, `DIRECT_URL`, `CUSTOMER_AUTH_SECRET`, `STAFF_AUTH_SECRET`
+      (two **different** values), `SUPABASE_SERVICE_ROLE_KEY`,
+      `NEXT_PUBLIC_SUPABASE_URL`.
 - [ ] **Replace the `VERCEL_ENV` gates.** `markets/page.tsx:174`,
       `markets/[slug]/page.tsx:181`, `MarketsIndex.tsx:319` all read
       `process.env.VERCEL_ENV !== 'production'`. Off Vercel that is **true**, so
@@ -115,26 +124,38 @@ Nothing but Vercel has ever compiled this app.
 
 ## 4. Stand up the box
 
-- [ ] **Process supervision.** systemd with `Restart=always`, `RestartSec=2`, a
-      `MemoryMax=` below box RAM so the unit restarts rather than the kernel
-      picking a victim, and a swapfile. One OOM otherwise ends the site until a
-      human notices.
+- [x] **Process supervision.** `restart: always`, a memory limit below box RAM
+      so the container restarts rather than the kernel picking a victim, and
+      bounded json-file logging. See `compose.yaml`. Still add a host swapfile.
+- [x] **Container image and deploy pipeline.** `Dockerfile`, `compose.yaml`,
+      `.github/workflows/deploy.yml`. Build once in CI, ship the artifact, health
+      gate, auto-rollback, Inngest re-sync, smoke.
+- [ ] **Provision the box** and create `/srv/indus/env/web.env` (mode 0600) plus
+      `/srv/indus/compose.yaml`.
+- [ ] **Add the deploy secrets**: `DEPLOY_HOST`, `DEPLOY_USER`, `DEPLOY_SSH_KEY`,
+      plus the six build secrets already listed above.
 - [ ] **Reverse proxy headers — get this wrong and every admin save fails with an
       unexplained 500.** Next's Server Action CSRF check keys on
       `x-forwarded-host`. Set `Host`, `X-Forwarded-Host` and
       `X-Forwarded-Proto https` explicitly; never let a local proxy overwrite the
       proto with `http`, or reset links and Auth.js callbacks become `http://` too.
-- [ ] **Redis cache handler**, composed: try Redis, fall back to the on-disk
+- [x] **Redis cache handler**, composed: try Redis, fall back to the on-disk
       cache, write through on first read. A *pure* Redis handler never reads
       build-time prerenders back, which makes every `generateStaticParams` list
-      dead weight.
+      dead weight. See `apps/web/cache/handler.js`. Verified against a real
+      Redis: purge propagates across instances, and with Redis stopped it
+      degrades to the filesystem without throwing.
+- [ ] **Set `REDIS_URL`** on the box. Without it the handler is inert and Next
+      uses the filesystem cache, which is the pre-migration behaviour.
 - [ ] **`.next/cache` on a persistent path outside the release directory**, with a
       size cap. It holds ISR pages, the fetch cache and a 30-day image cache, and
       a naive deploy wipes it — the image-optimizer warm-up alone is 1–2 CPU-hours
       from cold.
-- [ ] **Separate liveness endpoint.** `/api/health` returns 503 on a database blip,
-      which is wrong for a container probe — it restarts a healthy app because a
-      remote database hiccuped. Add `/api/health/live` returning 200 unconditionally.
+- [x] **Separate liveness endpoint.** `/api/health/live` returns 200
+      unconditionally and touches nothing; `/api/health` keeps its database check
+      for monitoring. Verified in the container: with the Prisma engine
+      mismatched, liveness stayed 200 and health returned 503 — which is the
+      split behaving correctly.
 - [ ] **Bound the logs.** 631 bare `console.*` calls currently land in Vercel's log
       viewer, which the runbook names as the way to debug production. On a VPS
       nothing replaces it. Set `SystemMaxUse=` or route to a rotated file.

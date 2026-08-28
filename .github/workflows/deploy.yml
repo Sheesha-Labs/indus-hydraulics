@@ -1,0 +1,181 @@
+name: Deploy
+
+# Build once, ship the artifact. The image that gets tested is the image that
+# runs — nothing is ever rebuilt on the production box.
+on:
+  push:
+    branches: [main]
+    paths-ignore:
+      # The same rule as apps/web/vercel-ignore-build.sh: a commit that cannot
+      # change the site should not cost a deploy. A deploy is not free even
+      # here — it is build minutes, and a restart.
+      - 'docs/**'
+      - '**/*.md'
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: 'Image tag to deploy (defaults to this commit). Use to roll back.'
+        required: false
+
+concurrency:
+  # Never two deploys at once. The second would swap out a container the first
+  # is still health-checking.
+  group: deploy-production
+  cancel-in-progress: false
+
+env:
+  REGISTRY: ghcr.io
+  IMAGE: ghcr.io/${{ github.repository }}
+
+jobs:
+  build:
+    name: build image
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: read
+      packages: write
+    outputs:
+      tag: ${{ steps.meta.outputs.tag }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - id: meta
+        run: echo "tag=sha-${GITHUB_SHA::12}" >> "$GITHUB_OUTPUT"
+
+      - uses: docker/setup-buildx-action@v3
+
+      - uses: docker/login-action@v3
+        with:
+          registry: ${{ env.REGISTRY }}
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Write build secrets
+        # Mounted into the build, never passed as ARG or ENV — an ARG stays
+        # readable in `docker history` for anyone who can pull the image.
+        run: |
+          mkdir -p /tmp/secrets && chmod 700 /tmp/secrets
+          printf '%s' '${{ secrets.DATABASE_URL }}'              > /tmp/secrets/DATABASE_URL
+          printf '%s' '${{ secrets.DIRECT_URL }}'                > /tmp/secrets/DIRECT_URL
+          printf '%s' '${{ secrets.CUSTOMER_AUTH_SECRET }}'      > /tmp/secrets/CUSTOMER_AUTH_SECRET
+          printf '%s' '${{ secrets.STAFF_AUTH_SECRET }}'         > /tmp/secrets/STAFF_AUTH_SECRET
+          printf '%s' '${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}' > /tmp/secrets/SUPABASE_SERVICE_ROLE_KEY
+
+      - name: Build and push
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          # Pinned to the architecture the server actually runs. Both sharp and
+          # the Prisma engine are compiled per-platform, and a mismatch builds
+          # cleanly then fails at the first query.
+          platforms: linux/amd64
+          push: true
+          tags: |
+            ${{ env.IMAGE }}:${{ steps.meta.outputs.tag }}
+            ${{ env.IMAGE }}:latest
+          build-args: |
+            NEXT_PUBLIC_BASE_URL=https://indushydraulics.com
+            NEXT_PUBLIC_SUPABASE_URL=${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
+            APP_ENV=production
+          secret-files: |
+            DATABASE_URL=/tmp/secrets/DATABASE_URL
+            DIRECT_URL=/tmp/secrets/DIRECT_URL
+            CUSTOMER_AUTH_SECRET=/tmp/secrets/CUSTOMER_AUTH_SECRET
+            STAFF_AUTH_SECRET=/tmp/secrets/STAFF_AUTH_SECRET
+            SUPABASE_SERVICE_ROLE_KEY=/tmp/secrets/SUPABASE_SERVICE_ROLE_KEY
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+
+      - name: Clean up secrets
+        if: always()
+        run: rm -rf /tmp/secrets
+
+  deploy:
+    name: deploy to hetzner
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    environment: production
+    steps:
+      - name: Pull and swap
+        uses: appleboy/ssh-action@v1
+        with:
+          host: ${{ secrets.DEPLOY_HOST }}
+          username: ${{ secrets.DEPLOY_USER }}
+          key: ${{ secrets.DEPLOY_SSH_KEY }}
+          script_stop: true
+          envs: IMAGE_TAG
+          script: |
+            set -euo pipefail
+            cd /srv/indus
+
+            # The previous tag, so the rollback below has somewhere to go.
+            PREVIOUS=$(docker compose config --images | head -1 | sed 's/.*://')
+            echo "current: ${PREVIOUS}  ->  new: ${IMAGE_TAG}"
+            echo "IMAGE_TAG=${IMAGE_TAG}" > .env
+
+            docker compose pull web
+            docker compose up -d --no-deps web
+
+            # Health gate. `up -d` returns as soon as the container is created,
+            # not when the app can answer, so waiting is the difference between
+            # a deploy and a coin flip.
+            for i in $(seq 1 30); do
+              if curl -fsS --max-time 5 http://127.0.0.1:3000/api/health/live >/dev/null 2>&1; then
+                echo "healthy after ${i} attempt(s)"
+                exit 0
+              fi
+              sleep 2
+            done
+
+            echo "new release never became healthy — rolling back to ${PREVIOUS}"
+            echo "IMAGE_TAG=${PREVIOUS}" > .env
+            docker compose up -d --no-deps web
+            exit 1
+        env:
+          IMAGE_TAG: ${{ inputs.tag || needs.build.outputs.tag }}
+
+      - name: Re-register Inngest functions
+        # Vercel's integration used to do this on every deployment. Nothing does
+        # it now, so a new or changed cron would simply never fire and nothing
+        # would say so until someone noticed a job had stopped.
+        run: |
+          curl -fsS -X PUT https://indushydraulics.com/api/inngest
+        continue-on-error: false
+
+      - name: Prune old images
+        uses: appleboy/ssh-action@v1
+        with:
+          host: ${{ secrets.DEPLOY_HOST }}
+          username: ${{ secrets.DEPLOY_USER }}
+          key: ${{ secrets.DEPLOY_SSH_KEY }}
+          script: |
+            # Keeps the last few releases so a rollback needs no network, while
+            # stopping the disk filling. A full disk makes the site silently
+            # stale rather than loudly broken.
+            docker image prune -af --filter "until=168h"
+
+  smoke:
+    name: smoke
+    needs: deploy
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 9.15.0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm exec playwright install --with-deps chromium
+      - name: Smoke the live site
+        # Replaces the `deployment_status` trigger in smoke-e2e.yml, which only
+        # Vercel's GitHub integration emits and which stops firing on cutover.
+        env:
+          PLAYWRIGHT_BASE_URL: https://indushydraulics.com
+          PLAYWRIGHT_REUSE_SERVER: '1'
+        run: pnpm exec playwright test smoke hero-geo category-caching

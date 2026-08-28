@@ -1,22 +1,14 @@
 'use server'
 
 import { db } from '@indus/db'
+import { linkOrigin } from '../../../../lib/request-origin'
 import { revalidatePath } from 'next/cache'
-import { headers } from 'next/headers'
 import { auth } from '../../../../lib/admin-auth'
 import { ROLES, requireRole, type StaffRole } from '../../../../lib/rbac'
 import { issueStaffLink, normaliseEmail } from '../../../../lib/staff-invitations'
 
 export type InviteState = { error?: string; warning?: string; ok?: string } | null
 
-/** Absolute origin of the live request, so an invite sent from a preview deploy links back to it. */
-async function requestOrigin(): Promise<string> {
-  const h = await headers()
-  const host = h.get('x-forwarded-host') ?? h.get('host')
-  const proto = h.get('x-forwarded-proto') ?? 'https'
-  if (host) return `${proto}://${host}`
-  return process.env.NEXT_PUBLIC_BASE_URL ?? 'https://indushydraulics.com'
-}
 
 /**
  * Invite a colleague to the staff admin.
@@ -61,7 +53,7 @@ export async function inviteStaffUser(
     role,
     purpose: 'invite',
     invitedById: inviterId,
-    baseUrl: await requestOrigin(),
+    baseUrl: linkOrigin(),
   })
 
   revalidatePath('/admin/users')
@@ -97,7 +89,7 @@ export async function resendStaffInvite(invitationId: string): Promise<InviteSta
     name: row.name,
     role: row.role,
     purpose: row.purpose,
-    baseUrl: await requestOrigin(),
+    baseUrl: linkOrigin(),
   })
   revalidatePath('/admin/users')
 

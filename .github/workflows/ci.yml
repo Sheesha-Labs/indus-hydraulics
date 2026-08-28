@@ -52,3 +52,80 @@ jobs:
 
       - name: Test
         run: pnpm test
+
+  build:
+    name: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    # Skipped until the deploy secrets exist, so it does not sit permanently red
+    # on every PR. Set the repository variable CI_BUILD=true once the secrets
+    # listed on the Build step below are configured.
+    if: vars.CI_BUILD == 'true'
+    # Nothing but Vercel has ever compiled this app. Once it is self-hosted the
+    # build is ours, so a broken build has to fail here rather than on the box.
+    #
+    # Deliberately a separate job from typecheck/lint/test: `next build` no
+    # longer validates types (see #417), so the two are genuinely independent
+    # checks and running them in parallel keeps the feedback fast.
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9.15.0
+          run_install: false
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Generate Prisma client
+        run: pnpm db:generate
+
+      - name: Build
+        # This app needs more than a database at BUILD time, which the first run
+        # of this job proved rather than the docs: with only DATABASE_URL set it
+        # failed on `STAFF_AUTH_SECRET is missing`, because route modules are
+        # evaluated while collecting page data and the auth config is
+        # constructed at import time.
+        #
+        # Required repository secrets:
+        #   DATABASE_URL, DIRECT_URL
+        #   CUSTOMER_AUTH_SECRET, STAFF_AUTH_SECRET   (two DIFFERENT values —
+        #     reusing one defeats the customer/staff session isolation)
+        #   SUPABASE_SERVICE_ROLE_KEY, NEXT_PUBLIC_SUPABASE_URL
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          DIRECT_URL: ${{ secrets.DIRECT_URL }}
+          CUSTOMER_AUTH_SECRET: ${{ secrets.CUSTOMER_AUTH_SECRET }}
+          STAFF_AUTH_SECRET: ${{ secrets.STAFF_AUTH_SECRET }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
+          NEXT_PUBLIC_BASE_URL: https://indushydraulics.com
+          APP_ENV: production
+        run: pnpm build
+
+      - name: Assert the artifact is complete
+        # `standalone` does not copy these two, and the failure mode without
+        # them is a site that serves HTML with no CSS and no images — which
+        # looks like a styling bug, not a packaging one.
+        run: |
+          test -f apps/web/.next/standalone/apps/web/server.js
+          test -d apps/web/.next/static
+          test -d apps/web/public
+
+      - name: Assert no build-time host leaked into the bundle
+        # NEXT_PUBLIC_* are inlined at build time, so a wrong value here is
+        # frozen into every cron email link until the next build.
+        run: |
+          if grep -rq "localhost:3000" apps/web/.next/server/chunks; then
+            echo "localhost:3000 is baked into the server bundle — NEXT_PUBLIC_BASE_URL was wrong at build time"
+            exit 1
+          fi

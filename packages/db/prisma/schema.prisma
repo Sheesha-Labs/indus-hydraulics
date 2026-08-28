@@ -4,7 +4,21 @@
 
 generator client {
   provider        = "prisma-client-js"
-  binaryTargets   = ["native", "rhel-openssl-3.0.x"]
+  // One entry per machine that will ever RUN this client, not just build it.
+  //
+  //   native                      local development
+  //   debian-openssl-3.0.x        x86_64 container (Hetzner CX/CPX)
+  //   linux-arm64-openssl-3.0.x   arm64 container (Hetzner CAX, and Docker on
+  //                               an Apple Silicon machine)
+  //
+  // `rhel-openssl-3.0.x` was Vercel's Lambda target and matches nothing we run.
+  //
+  // Getting this wrong builds cleanly and throws at the FIRST QUERY. Caught
+  // exactly that way here: an arm64 image built with only the debian target
+  // came up healthy, served the homepage, and then returned 503 from
+  // /api/health with "Prisma Client was generated for linux-arm64-openssl-1.1.x,
+  // but the actual deployment required linux-arm64-openssl-3.0.x".
+  binaryTargets   = ["native", "debian-openssl-3.0.x", "linux-arm64-openssl-3.0.x"]
   previewFeatures = ["fullTextSearchPostgres"]
 }
 

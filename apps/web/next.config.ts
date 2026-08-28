@@ -3,6 +3,36 @@ import type { NextConfig } from 'next'
 import { withSentryConfig } from '@sentry/nextjs'
 
 const nextConfig: NextConfig = {
+  /*
+   * A self-contained server bundle, so a release is an artifact rather than a
+   * 2.6 GB working tree.
+   *
+   * `standalone` traces exactly the files the server needs and copies them,
+   * resolving the pnpm symlinks on the way — which is what makes Prisma work
+   * off a machine that has no pnpm store. It deliberately does NOT copy
+   * `.next/static` or `public/`; both must be placed alongside the output or
+   * the site serves HTML with no assets and no images.
+   */
+  output: 'standalone',
+  /*
+   * Self-hosted incremental cache. See apps/web/cache/handler.js.
+   *
+   * Without this Next uses FileSystemCache, whose tag manifest is a per-process
+   * Map — so an admin purge reaches only the instance that served the request,
+   * and a restart resurrects every page anyone purged. It also writes ISR
+   * entries inside the build output, which a deploy replaces.
+   *
+   * Only takes effect when REDIS_URL is set; the handler falls back to the
+   * filesystem otherwise, so `next dev` and a bare `next start` are unchanged.
+   */
+  cacheHandler: require.resolve('./cache/handler.js'),
+  /*
+   * `cacheHandler` is loaded by path at runtime, so nothing imports it and the
+   * standalone trace would otherwise miss it and its Redis client.
+   */
+  outputFileTracingIncludes: {
+    '/**': ['./cache/handler.js', './cache/keys.js'],
+  },
   outputFileTracingRoot: path.join(__dirname, '../../'),
   /*
    * Type checking is CI's job, not the deploy's.
@@ -28,6 +58,24 @@ const nextConfig: NextConfig = {
   typescript: { ignoreBuildErrors: true },
   serverExternalPackages: ['@prisma/client', '.prisma/client'],
   transpilePackages: ['@indus/ui', '@indus/domain'],
+  /*
+   * Belt and braces for the Server Action CSRF check.
+   *
+   * Next compares the browser's `Origin` against the host it derives from
+   * `x-forwarded-host`, falling back to `host`. On Vercel the edge set those
+   * headers correctly and this never mattered. Behind our own reverse proxy a
+   * single misconfigured header rejects every Server Action — all 63 files,
+   * including admin sign-in — with an opaque 500 rather than anything that
+   * points at the cause.
+   *
+   * Naming the origins here means the proxy has to be wrong AND this list has
+   * to be wrong before that happens.
+   */
+  experimental: {
+    serverActions: {
+      allowedOrigins: ['indushydraulics.com', 'www.indushydraulics.com'],
+    },
+  },
   images: {
     /*
      * The srcset ladder, deliberately narrowed.
@@ -63,7 +111,14 @@ const nextConfig: NextConfig = {
     minimumCacheTTL: 2_592_000,
     remotePatterns: [
       { protocol: 'https', hostname: '*.r2.cloudflarestorage.com' },
-      { protocol: 'https', hostname: '*.supabase.co' },
+      /*
+       * This project's storage bucket only — not `*.supabase.co`.
+       *
+       * A wildcard here makes `/_next/image` an open image proxy: anyone can
+       * pass any Supabase URL and have it fetched and re-encoded. Vercel's
+       * fleet absorbed that; a single VPS is the one paying the CPU.
+       */
+      { protocol: 'https', hostname: 'hesezbozronntejnsopr.supabase.co' },
       { protocol: 'https', hostname: 'images.unsplash.com' },
     ],
   },
