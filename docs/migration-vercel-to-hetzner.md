@@ -133,7 +133,10 @@ Nothing but Vercel has ever compiled this app.
 - [ ] **Provision the box** and create `/srv/indus/env/web.env` (mode 0600) plus
       `/srv/indus/compose.yaml`.
 - [ ] **Add the deploy secrets**: `DEPLOY_HOST`, `DEPLOY_USER`, `DEPLOY_SSH_KEY`,
-      plus the six build secrets already listed above.
+      plus the six build secrets already listed above, then set the repository
+      variable `DEPLOY_ENABLED=true`. The deploy workflow is gated off until
+      then — ungated it fires on every merge to main and fails on empty secrets,
+      which is what happened the first time it ran.
 - [ ] **Reverse proxy headers — get this wrong and every admin save fails with an
       unexplained 500.** Next's Server Action CSRF check keys on
       `x-forwarded-host`. Set `Host`, `X-Forwarded-Host` and
