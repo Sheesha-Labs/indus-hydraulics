@@ -60,7 +60,11 @@ ENV NEXT_PUBLIC_BASE_URL=${NEXT_PUBLIC_BASE_URL} \
     NEXT_PUBLIC_SUPABASE_URL=${NEXT_PUBLIC_SUPABASE_URL} \
     APP_ENV=${APP_ENV} \
     NODE_ENV=production \
-    NEXT_TELEMETRY_DISABLED=1
+    NEXT_TELEMETRY_DISABLED=1 \
+    # Opts the build into the Redis cache handler. Off everywhere else, because
+    # a platform that supplies its own incremental cache (Vercel) breaks when a
+    # custom handler displaces it.
+    SELF_HOSTED_CACHE=1
 
 # Secrets are MOUNTED, never ARG or ENV — an ARG is readable in `docker history`
 # for anyone who can pull the image.
