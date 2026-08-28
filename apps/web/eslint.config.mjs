@@ -82,6 +82,20 @@ const eslintConfig = defineConfig([
       ],
     },
   },
+  {
+    /*
+     * The incremental cache handler is CommonJS, and has to be.
+     *
+     * Next loads `cacheHandler` by path at runtime with `require`, outside the
+     * bundler and outside the module graph — so it cannot be ESM, and the
+     * project-wide ban on `require()` does not apply to it. Scoped to this one
+     * directory rather than relaxed globally.
+     */
+    files: ["cache/**/*.js"],
+    rules: {
+      "@typescript-eslint/no-require-imports": "off",
+    },
+  },
   // Override default ignores of eslint-config-next.
   globalIgnores([
     // Default ignores of eslint-config-next:
