@@ -25,7 +25,18 @@ const nextConfig: NextConfig = {
    * Only takes effect when REDIS_URL is set; the handler falls back to the
    * filesystem otherwise, so `next dev` and a bare `next start` are unchanged.
    */
-  cacheHandler: require.resolve('./cache/handler.js'),
+  // ONLY when self-hosted. Vercel supplies its own incremental cache and a
+  // custom `cacheHandler` displaces it — which broke on-demand ISR in
+  // production: the six prerendered `/h/<cc>` variants kept serving from the
+  // build output while every other country 500'd, because generating one went
+  // through a handler with no Redis and no Vercel cache behind it.
+  //
+  // Gated on an explicit flag rather than on `process.env.VERCEL`, so the
+  // condition says what it means and a future host is opted in deliberately.
+  // Set in the Dockerfile build stage.
+  ...(process.env.SELF_HOSTED_CACHE === '1'
+    ? { cacheHandler: require.resolve('./cache/handler.js') }
+    : {}),
   /*
    * `cacheHandler` is loaded by path at runtime, so nothing imports it and the
    * standalone trace would otherwise miss it and its Redis client.
