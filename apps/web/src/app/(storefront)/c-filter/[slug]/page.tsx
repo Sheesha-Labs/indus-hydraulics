@@ -9,23 +9,28 @@ import CategoryView, { categoryMetadata } from '../../c/category-view'
  * is served there. Splitting it off is what lets the clean `/c/<slug>` be
  * prerendered — one route cannot be both static and read `searchParams`.
  *
- * Rendered per request — it reads `searchParams`, so it cannot be prerendered
- * — but no longer `force-dynamic`. That flag emitted
- * `cache-control: private, no-cache, no-store`, which told the CDN never to
- * store the response, so the same filtered URL was a full render every single
- * time it was requested.
+ * Deliberately dynamic, and it cannot currently be otherwise.
  *
- * Nothing here is per-visitor: the page is a function of the slug and the
- * query alone. So the response is cacheable per URL, and `next.config.ts`
- * gives this path an `s-maxage` for the shared CDN cache while keeping it
- * out of the browser's. The short window is deliberate — these URLs are
- * `noindex`, a person clicking through filters wants current stock, and the
- * catalogue-wide tags that revalidate the clean shelves do not reach a
- * response cached by URL.
+ * `force-dynamic` makes every request a full render — the same filtered URL
+ * three times running is three MISSes, ~0.75s each against ~0.52s for the
+ * cached clean shelf. Removing it and giving the path an `s-maxage` through
+ * `next.config.ts` was tried and REVERTED: it works under `next start` and
+ * does nothing on Vercel, because a `Cache-Control` header returned by a
+ * function overrides one defined for the same route in `next.config.js`, and
+ * a dynamically rendered page IS that function. Verified on production —
+ * `/c-filter/<slug>` requested directly, bypassing the rewrite entirely,
+ * still answered `private, no-cache, no-store`.
+ *
+ * What would actually work is making the response not come from a per-request
+ * render at all: Next 16 cache components, or moving the filter state into the
+ * path so the route can be prerendered. Both are real changes to a core
+ * catalogue route, and since crawlers are now denied on filtered URLs the
+ * whole thing is worth ~250ms on a human's filter click. Not worth it yet.
  *
  * `categoryMetadata` keeps deciding `noindex` from the facets, exactly as it
  * did when both cases lived in one file.
  */
+export const dynamic = 'force-dynamic'
 
 type Props = {
   params: Promise<{ slug: string }>
