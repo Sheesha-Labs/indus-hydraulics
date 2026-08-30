@@ -4,29 +4,6 @@ import { withSentryConfig } from '@sentry/nextjs'
 
 const nextConfig: NextConfig = {
   /*
-   * The filtered category twin is rendered per request but is not per-visitor,
-   * so the shared CDN cache can hold it. Without this the route falls back to
-   * Next's default for a dynamic page — `private, no-cache, no-store` — and an
-   * identical filtered URL is re-rendered on every request.
-   *
-   * `s-maxage` targets the CDN only; `max-age=0` keeps the browser asking, so
-   * a person toggling filters never sees their own stale page. `stale-while-
-   * revalidate` serves the cached copy while a fresh one is built behind it.
-   */
-  async headers() {
-    return [
-      {
-        source: '/c-filter/:slug*',
-        headers: [
-          {
-            key: 'Cache-Control',
-            value: 'public, max-age=0, s-maxage=300, stale-while-revalidate=600',
-          },
-        ],
-      },
-    ]
-  },
-  /*
    * A self-contained server bundle, so a release is an artifact rather than a
    * 2.6 GB working tree.
    *
