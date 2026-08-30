@@ -1,12 +1,14 @@
 'use server'
 
 import { revalidatePath } from 'next/cache'
+
 import { z } from 'zod'
 import Papa from 'papaparse'
 import * as XLSX from 'xlsx'
 import { db, Prisma } from '@indus/db'
 import { coerceFieldValue, validateRequiredFields, type SpecFieldDataType } from '@indus/domain'
 import { auth } from '../../../../../lib/admin-auth'
+import { invalidateProducts } from '../../../../../lib/cache-tags'
 import { ROLES, requireRole } from '../../../../../lib/rbac'
 import { fail, failFromError, ok, type Result } from '../../../../../lib/result'
 import { PRODUCT_IMPORT_COLUMNS, REQUIRED_KEYS, SPEC_ATTR_PREFIX } from './columns'
@@ -642,6 +644,13 @@ export async function commitProductImport(jobId: string): Promise<Result<{ creat
     // track which categories it touched.
     revalidatePath('/c/[slug]', 'page')
     revalidatePath('/p/[slug]', 'page')
+    // The route purges above drop the rendered shelves; this drops the cached
+    // data they render FROM. Shelf facet chips and the header SKU count are
+    // `unstable_cache` entries keyed by tag, and `revalidatePath` does not
+    // touch those — without this the imported rows appear in the product grid
+    // while the filter panel still describes the catalogue as it was, for up
+    // to an hour. Every single-product action already calls this.
+    invalidateProducts()
     return ok({ created, updated, failed })
   } catch (err) {
     return failFromError(err)
