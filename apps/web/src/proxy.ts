@@ -151,6 +151,15 @@ function applySecurityHeaders(
   response.headers.set('X-Content-Type-Options', 'nosniff')
   response.headers.set('X-Frame-Options', isStaffOnly ? 'DENY' : 'SAMEORIGIN')
   response.headers.set('Permissions-Policy', 'camera=(), microphone=(), geolocation=()')
+  // Supplied by Vercel today, and by nothing at all once we host this
+  // ourselves. Set it here so it travels with the app rather than with the
+  // platform. Cloudflare can also send it, and should — but this matcher
+  // excludes /api and _next, so a header set only at the edge and a header set
+  // only here cover different paths. Both.
+  //
+  // Two years, subdomains included. `__Secure-` cookie prefixes assert HTTPS,
+  // and without HSTS that assertion has nothing enforcing it on a first visit.
+  response.headers.set('Strict-Transport-Security', 'max-age=63072000; includeSubDomains')
   // Admin URLs embed customer ids and RFQ codes — never leak a full URL to an
   // external target, even same-scheme.
   response.headers.set(

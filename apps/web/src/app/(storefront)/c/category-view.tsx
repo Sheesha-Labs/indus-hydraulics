@@ -4,7 +4,6 @@ import Link from 'next/link'
 import { db } from '@indus/db'
 import type { ReactNode } from 'react'
 import {
-  MAX_CATEGORY_DEPTH,
   buildBreadcrumbLd,
   buildCollectionLd,
   buildFaqLd,
@@ -31,9 +30,10 @@ import {
   CategorySizeBand,
   categoryFaqs,
 } from '../../../components/category/CategoryBands'
-import { categorySizeSummary, gccMarketLinks } from '../../../lib/category-bands'
+import { categorySizeSummary, gccMarketLinks, getShelfFacets } from '../../../lib/category-bands'
 import { getSubPageContent } from '../../../lib/page-content'
 import { getArticlesForCategory } from '../../../lib/related-reading'
+import { ancestorTrail, descendantIds, getCategoryTree, indexTree } from '../../../lib/category-tree'
 
 /**
  * Products per category page.
@@ -152,67 +152,6 @@ export async function categoryMetadata({ slug, sp }: CategoryViewProps): Promise
   })
 }
 
-/**
- * A category id plus every published category beneath it.
- *
- * Breadth-first and level-by-level, so it costs one query per level of depth
- * rather than one per category. `MAX_DEPTH` bounds it: the tree is three deep
- * today, and a cycle introduced by bad data must not turn this into an
- * infinite loop inside a request.
- */
-const MAX_DEPTH = 6
-
-/**
- * Root → this category, for the breadcrumb trail.
- *
- * The trail used to be a hardcoded `Home / Categories / <name>` at every depth,
- * so a category three levels down claimed to sit directly under the catalogue
- * root. That was wrong twice over: the visible trail gave no way back to the
- * parent hub, and the `BreadcrumbList` JSON-LD told Google the same flat lie,
- * which is what it renders under the result title.
- *
- * One query per level, bounded by `MAX_CATEGORY_DEPTH`, walking up rather than
- * down. Unpublished ancestors are kept in the chain — skipping one would join a
- * grandchild straight onto its grandparent and imply a parentage that does not
- * exist — but they are rendered as plain text, not links, since their own page
- * 404s.
- */
-async function ancestorTrail(
-  categoryId: string
-): Promise<Array<{ name: string; slug: string; isPublished: boolean }>> {
-  const trail: Array<{ name: string; slug: string; isPublished: boolean }> = []
-  let cursor: string | null = categoryId
-  for (let depth = 0; cursor && depth <= MAX_CATEGORY_DEPTH + 1; depth++) {
-    const row: {
-      name: string
-      slug: string
-      isPublished: boolean
-      parentId: string | null
-    } | null = await db.category.findUnique({
-      where: { id: cursor },
-      select: { name: true, slug: true, isPublished: true, parentId: true },
-    })
-    if (!row) break
-    trail.unshift({ name: row.name, slug: row.slug, isPublished: row.isPublished })
-    cursor = row.parentId
-  }
-  return trail
-}
-
-async function descendantCategoryIds(rootId: string): Promise<string[]> {
-  const all = [rootId]
-  let frontier = [rootId]
-  for (let depth = 0; depth < MAX_DEPTH && frontier.length > 0; depth++) {
-    const children = await db.category.findMany({
-      where: { parentId: { in: frontier }, isPublished: true },
-      select: { id: true },
-    })
-    frontier = children.map((c) => c.id).filter((id) => !all.includes(id))
-    all.push(...frontier)
-  }
-  return all
-}
-
 export default async function CategoryView({ slug, sp }: CategoryViewProps) {
 
   const category = await db.category.findUnique({
@@ -232,10 +171,14 @@ export default async function CategoryView({ slug, sp }: CategoryViewProps) {
   // YET" empty state — while its own sub-category chips sat directly above,
   // linking to pages full of products. Every branch category in the tree did
   // this: Ferrules, Metallic Hoses, and every root reached from /c.
-  const [categoryIds, trail] = await Promise.all([
-    descendantCategoryIds(category.id),
-    ancestorTrail(category.id),
-  ])
+  // One fetch of the whole tree, then walked in memory. This used to be six or
+  // seven sequential round trips — one per level climbing to the root, one per
+  // level descending — which cost ~25 ms beside the database and most of a
+  // second from anywhere else.
+  const tree = await getCategoryTree()
+  const { byId, children } = indexTree(tree)
+  const categoryIds = descendantIds(children, category.id)
+  const trail = ancestorTrail(byId, category.id)
 
   /*
    * Spec facets are computed from every product the OTHER filters leave in
@@ -254,11 +197,32 @@ export default async function CategoryView({ slug, sp }: CategoryViewProps) {
     ...(selectedBrands.length > 0 ? { brand: { slug: { in: selectedBrands } } } : {}),
   }
 
-  const facetRows = await db.productSpec.findMany({
+  /*
+   * Fetched only when something is actually filtering.
+   *
+   * These rows are the second-largest source of Supabase egress on the site:
+   * 2,795 of them on the largest shelf, 5.3 BILLION returned over 78 days. On
+   * the clean shelf they are used for exactly one thing — building the facet
+   * chips — because `productIdsMatching` returns null the moment the spec
+   * filter is empty, and `brandScope` is the whole subtree when no brand is
+   * picked.
+   *
+   * So the unfiltered case reads cached, pre-built facets and fetches nothing.
+   * The filtered case still needs the rows: it has to know WHICH products carry
+   * a value, not just how many, and that cannot come from a count.
+   *
+   * The grouping deliberately stays in JavaScript. `normaliseFacetValue` merges
+   * spellings, and a second implementation of it in SQL would be free to drift
+   * from the one the filter links are built with.
+   */
+  const isFiltered = selectedBrands.length > 0 || (sp.spec ?? '').length > 0
+  const facetRows = !isFiltered
+    ? []
+    : await db.productSpec.findMany({
     where: { isFilterable: true, product: brandScope },
     select: { productId: true, label: true, value: true },
   })
-  const facets = buildSpecFacets(facetRows)
+  const facets = isFiltered ? buildSpecFacets(facetRows) : await getShelfFacets(categoryIds)
   // Pruned against what this category actually offers: a bookmarked URL
   // outlives the values it names, and a stale one would otherwise match
   // nothing while showing a chip the reader cannot find in the panel.

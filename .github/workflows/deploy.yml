@@ -32,6 +32,13 @@ jobs:
     name: build image
     runs-on: ubuntu-latest
     timeout-minutes: 30
+    # Dormant until the box exists. Without this the workflow fires on every
+    # merge to main, builds with empty secrets and fails — which is exactly what
+    # it did on the first merge after it landed.
+    #
+    # Flip the repository variable DEPLOY_ENABLED to 'true' once the Hetzner
+    # host, its SSH key and the six build secrets are configured.
+    if: vars.DEPLOY_ENABLED == 'true'
     permissions:
       contents: read
       packages: write

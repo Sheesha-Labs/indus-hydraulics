@@ -7,7 +7,7 @@
   "scripts": {
     "postinstall": "prisma generate",
     "db:generate": "prisma generate",
-    "db:push": "prisma db push",
+    "db:push": "node -e \"console.error('db:push is disabled on this project.\\n\\nPrisma refuses it here: the FTS tsvector column trips its data-loss guard, so the command cannot complete. Schema changes ship as hand-rolled SQL in packages/db/migrations/, applied through the Supabase MCP apply_migration tool.\\n'); process.exit(1)\"",
     "db:migrate": "prisma migrate dev",
     "db:seed": "tsx src/seed.ts",
     "db:import": "tsx src/import/cli.ts",
