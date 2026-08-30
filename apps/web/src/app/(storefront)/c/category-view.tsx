@@ -33,7 +33,12 @@ import {
 import { categorySizeSummary, gccMarketLinks, getShelfSpecRows } from '../../../lib/category-bands'
 import { getSubPageContent } from '../../../lib/page-content'
 import { getArticlesForCategory } from '../../../lib/related-reading'
-import { ancestorTrail, descendantIds, getCategoryTree, indexTree } from '../../../lib/category-tree'
+import {
+  ancestorTrail,
+  descendantIds,
+  getCategoryTree,
+  indexTree,
+} from '../../../lib/category-tree'
 
 /**
  * Products per category page.
@@ -153,7 +158,6 @@ export async function categoryMetadata({ slug, sp }: CategoryViewProps): Promise
 }
 
 export default async function CategoryView({ slug, sp }: CategoryViewProps) {
-
   const category = await db.category.findUnique({
     where: { slug },
     include: { children: { where: { isPublished: true }, orderBy: { position: 'asc' } } },
@@ -304,6 +308,25 @@ export default async function CategoryView({ slug, sp }: CategoryViewProps) {
     const qs = params.toString()
     return `/c/${slug}${qs ? `?${qs}` : ''}`
   }
+
+  /*
+   * `nofollow` for the filtered URL space, nothing for the clean one.
+   *
+   * Derived from the href rather than hardcoded per link, because `filterUrl`
+   * already draws exactly the right line: it returns a clean path (`/c/<slug>`
+   * or `/c/<slug>/page/N`) when no filter is active and the query form only
+   * when one is. So a query string here means the URL is `noindex`, canonical
+   * back to the clean shelf, and disallowed in robots.txt — and unfiltered
+   * pagination, which 513 of 1,480 products depend on, stays followable
+   * without a special case.
+   *
+   * This is what actually removes the facet trap from the crawl GRAPH. Each
+   * facet link ADDS to whatever is already active, so one shelf emitted 165
+   * of them, depth two is ~27,000 URLs and depth three ~4.4 million. Three
+   * crawlers walked it at ~1,500 req/min. robots.txt asks; only the compliant
+   * listen, and it does not remove the links from the page.
+   */
+  const relFor = (href: string) => (href.includes('?') ? 'nofollow' : undefined)
 
   function toggleBrand(brandSlug: string) {
     const next = selectedBrands.includes(brandSlug)
@@ -493,6 +516,12 @@ export default async function CategoryView({ slug, sp }: CategoryViewProps) {
                     therefore presentational — the real control is the anchor,
                     and aria-pressed carries the state that the tick conveys
                     visually.
+
+                    They go through `relFor`, which marks the filtered URL space
+                    `nofollow` — see the note on it. Nothing is lost: those
+                    pages are `noindex`, canonical back to the clean shelf, and
+                    disallowed in robots.txt, so they were never going to rank
+                    and have no link equity to pass.
                   */}
                   <div className="flex flex-col gap-2.5">
                     {allBrands.map((brand) => {
@@ -501,6 +530,7 @@ export default async function CategoryView({ slug, sp }: CategoryViewProps) {
                         <Link
                           key={brand.id}
                           href={toggleBrand(brand.slug)}
+                          rel={relFor(toggleBrand(brand.slug))}
                           aria-pressed={active}
                           className={`flex items-center gap-2.5 text-[13px] transition-colors ${
                             active ? 'text-ih-ink' : 'text-ih-ink-2 hover:text-ih-ink'
@@ -559,6 +589,7 @@ export default async function CategoryView({ slug, sp }: CategoryViewProps) {
                           <Link
                             key={value.key}
                             href={toggleSpec(facet.key, value.key)}
+                            rel={relFor(toggleSpec(facet.key, value.key))}
                             aria-pressed={active}
                             className={`flex items-center gap-2.5 text-[13px] transition-colors ${
                               active ? 'text-ih-ink' : 'text-ih-ink-2 hover:text-ih-ink'
@@ -691,6 +722,7 @@ export default async function CategoryView({ slug, sp }: CategoryViewProps) {
                     <Link
                       key={opt.val}
                       href={filterUrl({ sort: opt.val || undefined, page: '1' })}
+                      rel={relFor(filterUrl({ sort: opt.val || undefined, page: '1' }))}
                       className={`px-3 py-1.5 text-[12.5px] transition-colors ${(sp.sort ?? '') === opt.val ? 'bg-ih-accent text-white' : 'text-ih-ink-2 hover:bg-ih-surface-2'}`}
                     >
                       {opt.label}
@@ -747,6 +779,7 @@ export default async function CategoryView({ slug, sp }: CategoryViewProps) {
                 {page > 1 && (
                   <Link
                     href={filterUrl({ page: String(page - 1) })}
+                    rel={relFor(filterUrl({ page: String(page - 1) }))}
                     className="border-ih-border text-ih-ink-2 hover:border-ih-accent hover:text-ih-accent flex h-9 w-9 items-center justify-center rounded-md border font-mono text-[13px] transition-colors"
                   >
                     ‹
@@ -758,6 +791,7 @@ export default async function CategoryView({ slug, sp }: CategoryViewProps) {
                     <Link
                       key={p}
                       href={filterUrl({ page: String(p) })}
+                      rel={relFor(filterUrl({ page: String(p) }))}
                       className={`flex h-9 w-9 items-center justify-center rounded-md border font-mono text-[13px] tabular-nums transition-colors ${p === page ? 'border-ih-accent bg-ih-accent text-white' : 'border-ih-border text-ih-ink-2 hover:border-ih-accent hover:text-ih-accent'}`}
                     >
                       {p}
@@ -767,6 +801,7 @@ export default async function CategoryView({ slug, sp }: CategoryViewProps) {
                 {page < totalPages && (
                   <Link
                     href={filterUrl({ page: String(page + 1) })}
+                    rel={relFor(filterUrl({ page: String(page + 1) }))}
                     className="border-ih-border text-ih-ink-2 hover:border-ih-accent hover:text-ih-accent flex h-9 w-9 items-center justify-center rounded-md border font-mono text-[13px] transition-colors"
                   >
                     ›
