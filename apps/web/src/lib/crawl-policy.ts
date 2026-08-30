@@ -83,6 +83,13 @@ export const DEFAULT_DISALLOW = [
 export const FACET_DISALLOW = [
   '/c/*brands=',
   '/c/*sort=',
+  // `spec=` belongs here for exactly the reasons the other two do — noindex,
+  // canonical back to the clean shelf, nothing indexable — and its absence was
+  // an oversight that cost real money. Meta's AI crawler found it and walked
+  // the COMBINATIONS: four facets at once, `?spec=a;b;c;d&page=1`, an unbounded
+  // URL space off a single shelf, at ~1,500 requests a minute. Every one of
+  // them missed the cache, because the filtered twin is `force-dynamic`.
+  '/c/*spec=',
 ] as const
 
 /** One hand-listed sitemap entry: a site-relative path and its hints. */

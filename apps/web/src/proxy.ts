@@ -342,11 +342,12 @@ function redirectToSignIn(request: NextRequest, signInPath: string): NextRespons
  *
  * REMOVE once the deny rule is in place. Tracked in the PR that added it.
  */
-const PROBE_PATH = '/c/hydraulic-hose-fittings-suppliers-uae'
 const PROBE_RATE = 0.02
 
 function probeTraffic(request: NextRequest, pathname: string): void {
-  if (pathname !== PROBE_PATH) return
+  // Any shelf, not one. Denying Meta moved the load straight onto a different
+  // category, which a single-path probe could not see.
+  if (!pathname.startsWith('/c/')) return
   if (Math.random() >= PROBE_RATE) return
   console.log(
     'traffic-probe ' +
