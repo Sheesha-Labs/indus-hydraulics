@@ -12,6 +12,7 @@ import { getToken } from 'next-auth/jwt'
 import { NextRequest, NextResponse } from 'next/server'
 import { isStaffRole } from './lib/rbac'
 import { findRedirect, recordRedirectHit } from './lib/redirects'
+import { clientIp } from './lib/request-origin'
 
 /**
  * One middleware, two surfaces.
@@ -327,8 +328,41 @@ function redirectToSignIn(request: NextRequest, signInPath: string): NextRespons
   return NextResponse.redirect(url)
 }
 
+/**
+ * TEMPORARY. Identify the client generating ~1,500 req/min against one shelf.
+ *
+ * Vercel's runtime logs carry no user agent and no client IP, its API exposes
+ * neither, and a firewall rule with `mitigate: log` records nothing — verified
+ * by probing it. Logging here is the only way to learn what to write a deny
+ * rule against.
+ *
+ * Sampled at 2%, and only on the one path taking two thirds of the traffic, so
+ * this costs ~20 log lines a minute rather than 1,500 — Observability events
+ * are themselves part of the bill being investigated.
+ *
+ * REMOVE once the deny rule is in place. Tracked in the PR that added it.
+ */
+const PROBE_PATH = '/c/hydraulic-hose-fittings-suppliers-uae'
+const PROBE_RATE = 0.02
+
+function probeTraffic(request: NextRequest, pathname: string): void {
+  if (pathname !== PROBE_PATH) return
+  if (Math.random() >= PROBE_RATE) return
+  console.log(
+    'traffic-probe ' +
+      JSON.stringify({
+        ip: clientIp(request.headers),
+        ua: request.headers.get('user-agent'),
+        ref: request.headers.get('referer'),
+        country: request.headers.get('x-vercel-ip-country'),
+        q: request.nextUrl.search,
+      }),
+  )
+}
+
 export default async function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl
+  probeTraffic(request, pathname)
   // /design is the component gallery. Its own docstring claimed it was
   // "staff-only via the proxy denylist" — it was not on any denylist and was
   // reachable by anyone who guessed the URL, which is also why noindex was
