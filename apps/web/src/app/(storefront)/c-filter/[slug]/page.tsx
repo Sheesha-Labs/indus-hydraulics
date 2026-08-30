@@ -9,15 +9,23 @@ import CategoryView, { categoryMetadata } from '../../c/category-view'
  * is served there. Splitting it off is what lets the clean `/c/<slug>` be
  * prerendered — one route cannot be both static and read `searchParams`.
  *
- * Deliberately dynamic. These URLs are `noindex` with a canonical back to the
- * clean shelf, and robots.txt disallows the `brands=` and `sort=` forms
- * outright, so crawlers do not fetch them; what is left is a visitor who has
- * clicked a filter, and they need the real answer.
+ * Rendered per request — it reads `searchParams`, so it cannot be prerendered
+ * — but no longer `force-dynamic`. That flag emitted
+ * `cache-control: private, no-cache, no-store`, which told the CDN never to
+ * store the response, so the same filtered URL was a full render every single
+ * time it was requested.
+ *
+ * Nothing here is per-visitor: the page is a function of the slug and the
+ * query alone. So the response is cacheable per URL, and `next.config.ts`
+ * gives this path an `s-maxage` for the shared CDN cache while keeping it
+ * out of the browser's. The short window is deliberate — these URLs are
+ * `noindex`, a person clicking through filters wants current stock, and the
+ * catalogue-wide tags that revalidate the clean shelves do not reach a
+ * response cached by URL.
  *
  * `categoryMetadata` keeps deciding `noindex` from the facets, exactly as it
  * did when both cases lived in one file.
  */
-export const dynamic = 'force-dynamic'
 
 type Props = {
   params: Promise<{ slug: string }>
