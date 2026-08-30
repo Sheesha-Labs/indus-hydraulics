@@ -2,7 +2,7 @@ import 'server-only'
 import { unstable_cache } from 'next/cache'
 import { db, Prisma } from '@indus/db'
 import { STOREFRONT_TAGS } from './cache-tags'
-import { CATALOGUE_STOCK_POSTURE, buildSpecFacets, marketBySlug } from '@indus/domain'
+import { CATALOGUE_STOCK_POSTURE, marketBySlug } from '@indus/domain'
 
 /**
  * The data behind the category page's editorial bands.
@@ -147,30 +147,44 @@ export function stockLine(): string | null {
 }
 
 /**
- * The facet chips for an unfiltered shelf, built once and cached.
+ * The filterable spec rows for a shelf, cached per (subtree x brand selection).
  *
- * Same rows, same builder, same output — but computed on a cache miss per
- * subtree rather than on every render. The shelf page calls this only when
- * nothing is filtering, which is the case that is cached and crawled; a
- * filtered view still reads the rows live, because it needs to know which
- * products carry a value rather than how many.
+ * This is the rawest thing the page needs, so it is what gets cached — the
+ * facet chips are counted from it and `productIdsMatching` reads it to decide
+ * which products a spec filter admits. Caching the derived chips instead would
+ * have left every filtered request fetching the rows again.
  *
- * Tagged with both `products` and `categories`: a facet's counts move when a
- * product's specs change AND when the tree it rolls up changes shape. Both
- * tags are already purged by the admin actions that do those things.
+ * The key is deliberately NOT the spec filter. The underlying query scopes on
+ * category and brand only, so `?spec=a`, `?spec=b` and no spec at all issue an
+ * identical query and can share one entry. That is the whole point: the traffic
+ * hammering this site enumerates spec permutations of the same shelf, and
+ * before this they were one full table read each.
+ *
+ * Cheap to hold — 147 rows on the average shelf, 2,795 on the largest, three
+ * short strings apiece.
+ *
+ * Tagged with both `products` and `categories`: these rows move when a
+ * product's specs change AND when the tree it rolls up changes shape. Both tags
+ * are purged by the admin actions that do those things — including the bulk
+ * importer, which purged only the rendered route until it was fixed alongside
+ * this.
  */
-export const getShelfFacets = unstable_cache(
-  async (categoryIds: readonly string[]) => {
+export const getShelfSpecRows = unstable_cache(
+  async (categoryIds: readonly string[], brandSlugs: readonly string[]) => {
     if (categoryIds.length === 0) return []
-    const rows = await db.productSpec.findMany({
+    return db.productSpec.findMany({
       where: {
         isFilterable: true,
-        product: { categoryId: { in: [...categoryIds] }, status: 'active' },
+        product: {
+          categoryId: { in: [...categoryIds] },
+          status: 'active',
+          ...(brandSlugs.length > 0 ? { brand: { slug: { in: [...brandSlugs] } } } : {}),
+        },
       },
       select: { productId: true, label: true, value: true },
     })
-    return buildSpecFacets(rows)
   },
-  ['shelf-facets'],
+  ['shelf-spec-rows'],
   { revalidate: 3600, tags: [STOREFRONT_TAGS.products, STOREFRONT_TAGS.categories] },
 )
+
