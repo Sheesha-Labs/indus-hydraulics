@@ -30,7 +30,7 @@ import {
   CategorySizeBand,
   categoryFaqs,
 } from '../../../components/category/CategoryBands'
-import { categorySizeSummary, gccMarketLinks } from '../../../lib/category-bands'
+import { categorySizeSummary, gccMarketLinks, getShelfFacets } from '../../../lib/category-bands'
 import { getSubPageContent } from '../../../lib/page-content'
 import { getArticlesForCategory } from '../../../lib/related-reading'
 import { ancestorTrail, descendantIds, getCategoryTree, indexTree } from '../../../lib/category-tree'
@@ -197,11 +197,32 @@ export default async function CategoryView({ slug, sp }: CategoryViewProps) {
     ...(selectedBrands.length > 0 ? { brand: { slug: { in: selectedBrands } } } : {}),
   }
 
-  const facetRows = await db.productSpec.findMany({
+  /*
+   * Fetched only when something is actually filtering.
+   *
+   * These rows are the second-largest source of Supabase egress on the site:
+   * 2,795 of them on the largest shelf, 5.3 BILLION returned over 78 days. On
+   * the clean shelf they are used for exactly one thing — building the facet
+   * chips — because `productIdsMatching` returns null the moment the spec
+   * filter is empty, and `brandScope` is the whole subtree when no brand is
+   * picked.
+   *
+   * So the unfiltered case reads cached, pre-built facets and fetches nothing.
+   * The filtered case still needs the rows: it has to know WHICH products carry
+   * a value, not just how many, and that cannot come from a count.
+   *
+   * The grouping deliberately stays in JavaScript. `normaliseFacetValue` merges
+   * spellings, and a second implementation of it in SQL would be free to drift
+   * from the one the filter links are built with.
+   */
+  const isFiltered = selectedBrands.length > 0 || (sp.spec ?? '').length > 0
+  const facetRows = !isFiltered
+    ? []
+    : await db.productSpec.findMany({
     where: { isFilterable: true, product: brandScope },
     select: { productId: true, label: true, value: true },
   })
-  const facets = buildSpecFacets(facetRows)
+  const facets = isFiltered ? buildSpecFacets(facetRows) : await getShelfFacets(categoryIds)
   // Pruned against what this category actually offers: a bookmarked URL
   // outlives the values it names, and a stale one would otherwise match
   // nothing while showing a chip the reader cannot find in the panel.
