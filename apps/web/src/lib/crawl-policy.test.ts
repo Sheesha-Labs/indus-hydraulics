@@ -76,6 +76,15 @@ describe('FACET_DISALLOW', () => {
     expect(blocked('/c/hydraulic-hoses?sort=price')).toBe(true)
   })
 
+  it('blocks spec facet URLs, including combinations', () => {
+    // The omission that cost real money: Meta's AI crawler walked the
+    // COMBINATIONS of this parameter — four facets in one query — off a single
+    // shelf, at ~1,500 req/min against an unbounded URL space.
+    expect(blocked('/c/hydraulic-hoses?spec=thread-type%3Aunf')).toBe(true)
+    expect(blocked('/c/hydraulic-hoses?spec=a%3A1%3Bb%3A2%3Bc%3A3&page=1')).toBe(true)
+    expect(blocked('/c/hydraulic-hoses?page=2&spec=thread-type%3Aunf')).toBe(true)
+  })
+
   it('does NOT block pagination', () => {
     // 513 products are reachable only this way. Blocking it would orphan them.
     expect(blocked('/c/hydraulic-hoses?page=2')).toBe(false)
