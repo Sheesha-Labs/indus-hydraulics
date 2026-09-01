@@ -1,10 +1,11 @@
 'use server'
 
 import { db, nextEnquiryCode } from '@indus/db'
-import { extractFromPaste } from '@indus/domain'
+import { attributeReply, attributeSupplier, extractFromPaste } from '@indus/domain'
 import { revalidatePath } from 'next/cache'
 
 import { inngest } from '../../../../inngest/client'
+import { extractOffer } from '../../../../lib/offer-extraction'
 import { z } from 'zod'
 
 import { auth } from '../../../../lib/admin-auth'
@@ -172,6 +173,109 @@ export async function startSupplierResearch(formData: FormData): Promise<Result<
 
     revalidatePath(`/admin/enquiries/${enquiry.code}`)
     return ok({ runId: run.id })
+  } catch (error) {
+    return failFromError(error)
+  }
+}
+
+/**
+ * Record a supplier's reply against an enquiry and extract its offer lines.
+ *
+ * Attribution is checked but never overridden: if the pasted reply quotes a
+ * DIFFERENT enquiry reference than the one being viewed, this refuses rather
+ * than filing it here. A mis-attributed reply prices the wrong enquiry, the
+ * numbers all look real, and the error only surfaces on an invoice.
+ */
+export async function recordSupplierOffer(formData: FormData): Promise<Result<{ offerId: string; lines: number; dropped: number }>> {
+  try {
+    const session = await auth()
+    requireRole(session, ROLES.RFQ_REVIEW)
+
+    const parsed = z
+      .object({
+        enquiryId: z.string().uuid(),
+        rawText: z.string().trim().min(1, 'Paste the supplier reply'),
+        supplierName: z.string().trim().max(200).optional(),
+      })
+      .safeParse({
+        enquiryId: formData.get('enquiryId'),
+        rawText: formData.get('rawText'),
+        supplierName: formData.get('supplierName') || undefined,
+      })
+    if (!parsed.success) return failFromError(parsed.error)
+
+    const enquiry = await db.enquiry.findUnique({
+      where: { id: parsed.data.enquiryId },
+      select: { id: true, code: true },
+    })
+    if (!enquiry) return fail('NOT_FOUND', 'That enquiry no longer exists.')
+
+    const attribution = attributeReply(parsed.data.rawText)
+    if (attribution.enquiryCode && attribution.enquiryCode !== enquiry.code) {
+      return fail(
+        'PRECONDITION_FAILED',
+        `This reply quotes ${attribution.enquiryCode}, not ${enquiry.code}. File it against that enquiry instead.`,
+      )
+    }
+
+    const knownSuppliers = await db.supplier.findMany({
+      where: { status: 'active' },
+      select: { id: true, name: true, domain: true },
+      take: 500,
+    })
+    const supplierMatch = attributeSupplier({
+      rawText: parsed.data.rawText,
+      candidates: knownSuppliers,
+    })
+
+    const extracted = await extractOffer({ rawText: parsed.data.rawText })
+
+    const supplierName =
+      parsed.data.supplierName ??
+      extracted.supplierName ??
+      knownSuppliers.find((s) => s.id === supplierMatch.supplierId)?.name ??
+      'Unidentified supplier'
+
+    const offer = await db.supplierOffer.create({
+      data: {
+        enquiryId: enquiry.id,
+        supplierId: supplierMatch.supplierId,
+        supplierName,
+        currency: extracted.currency,
+        incoterm: extracted.incoterm,
+        validUntil: extracted.validUntil ? new Date(extracted.validUntil) : null,
+        decimalConvention: extracted.decimalConvention,
+        attributionMethod: attribution.enquiryCode ? 'reference_token' : supplierMatch.method,
+        rawText: parsed.data.rawText,
+        extractorName: 'offer/v1',
+        createdById: session?.user?.id ?? null,
+        lines: {
+          create: extracted.lines.map((line, i) => {
+            const money = extracted.parsed[i]
+            const flags: string[] = []
+            if (extracted.decimalConvention === 'ambiguous') flags.push('decimal_convention_ambiguous')
+            if (line.unitPriceRaw && money?.unitPrice == null) flags.push('price_unreadable')
+            if (line.kind === 'alternative') flags.push('alternative_part')
+            return {
+              position: i + 1,
+              description: line.description,
+              kind: line.kind,
+              unitPrice: money?.unitPrice ?? null,
+              qty: money?.qty ?? null,
+              moq: money?.moq ?? null,
+              statedTotal: money?.total ?? null,
+              leadTimeDays: line.leadTimeDays,
+              sourceQuote: line.sourceQuote,
+              reviewFlags: flags,
+            }
+          }),
+        },
+      },
+      select: { id: true },
+    })
+
+    revalidatePath(`/admin/enquiries/${enquiry.code}/offers`)
+    return ok({ offerId: offer.id, lines: extracted.lines.length, dropped: extracted.droppedForNoEvidence })
   } catch (error) {
     return failFromError(error)
   }

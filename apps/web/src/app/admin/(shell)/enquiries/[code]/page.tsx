@@ -54,6 +54,12 @@ export default async function EnquiryDetailPage({ params }: Props) {
           >
             Supplier RFQs
           </Link>
+          <Link
+            className="text-[13px] text-ih-ink-2 underline"
+            href={`/admin/enquiries/${enquiry.code}/offers`}
+          >
+            Offers
+          </Link>
           <ResearchButton
           enquiryId={enquiry.id}
           disabled={enquiry.lines.length === 0 || !!activeRun}

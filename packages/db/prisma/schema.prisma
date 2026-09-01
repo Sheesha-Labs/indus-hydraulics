@@ -434,6 +434,8 @@ model StaffUser {
   enquiriesAssigned Enquiry[]         @relation("EnquiryAssignedTo")
   enquiriesCreated  Enquiry[]         @relation("EnquiryCreatedBy")
   researchRuns      ResearchRun[]
+  supplierOffers    SupplierOffer[]      @relation("SupplierOfferCreatedBy")
+  offerSelections   SupplierOfferLine[]  @relation("OfferLineSelectedBy")
 
   @@map("staff_users")
 }
@@ -2360,8 +2362,9 @@ model Enquiry {
   /// e.g. "paste/v1" — which extractor produced the lines, for re-runs.
   extractorName String?
 
-  lines        EnquiryLine[]
-  researchRuns ResearchRun[]
+  lines          EnquiryLine[]
+  researchRuns   ResearchRun[]
+  supplierOffers SupplierOffer[]
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
@@ -2400,6 +2403,7 @@ model EnquiryLine {
   updatedAt DateTime @updatedAt
 
   researchResults ItemResearchResult[]
+  offerLines      SupplierOfferLine[]
 
   @@index([enquiryId])
   @@index([reviewStatus])
@@ -2469,6 +2473,7 @@ model Supplier {
   lastReplyAt     DateTime?
 
   contacts SupplierContact[]
+  offers   SupplierOffer[]
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
@@ -2636,4 +2641,107 @@ enum ItemResearchStatus {
   completed
   failed
   skipped
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Supplier offers (inbound quotations)
+// ─────────────────────────────────────────────────────────────────────────────
+
+model SupplierOffer {
+  id        String  @id @default(uuid())
+  enquiryId String
+  enquiry   Enquiry @relation(fields: [enquiryId], references: [id], onDelete: Cascade)
+
+  supplierId String?
+  supplier   Supplier? @relation(fields: [supplierId], references: [id])
+  /// Kept even when supplierId resolves, so the offer still reads correctly if
+  /// the supplier row is later merged or renamed.
+  supplierName String
+
+  status SupplierOfferStatus @default(needs_review)
+
+  currency   String?
+  incoterm   String?
+  validUntil DateTime?
+  /// Decided per DOCUMENT by voting, never per value: 1.234,56 and 1,234.56
+  /// differ by 1000x and both are plausible numbers.
+  decimalConvention String?
+
+  attributionMethod OfferAttributionMethod @default(manual)
+  /// Verbatim paste. Every extracted figure must trace back to this.
+  rawText           String
+  extractorName     String?
+  notes             String?
+
+  createdById String?
+  createdBy   StaffUser? @relation("SupplierOfferCreatedBy", fields: [createdById], references: [id])
+
+  lines SupplierOfferLine[]
+
+  receivedAt DateTime @default(now())
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  @@index([enquiryId])
+  @@index([supplierId])
+  @@index([status])
+  @@map("supplier_offers")
+}
+
+model SupplierOfferLine {
+  id      String        @id @default(uuid())
+  offerId String
+  offer   SupplierOffer @relation(fields: [offerId], references: [id], onDelete: Cascade)
+
+  /// Nullable on purpose: a supplier may quote something we cannot map, and a
+  /// forced match is worse than an unmatched row a human resolves.
+  enquiryLineId String?
+  enquiryLine   EnquiryLine? @relation(fields: [enquiryLineId], references: [id])
+
+  position    Int           @default(0)
+  description String
+  kind        OfferLineKind @default(quoted)
+
+  unitPrice    Decimal? @db.Decimal(14, 4)
+  qty          Decimal? @db.Decimal(14, 3)
+  moq          Decimal? @db.Decimal(14, 3)
+  leadTimeDays Int?
+  statedTotal  Decimal? @db.Decimal(14, 4)
+
+  /// Verbatim text supporting the numbers on this row. A DB CHECK requires it
+  /// whenever a price is present — these figures become a customer's price.
+  sourceQuote String?
+  reviewFlags String[] @default([])
+
+  /// Selection is an event with an actor, not a boolean. Substituting a part
+  /// on a hydraulic line is an engineering decision with liability attached.
+  selectedById String?
+  selectedBy   StaffUser? @relation("OfferLineSelectedBy", fields: [selectedById], references: [id])
+  selectedAt   DateTime?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([offerId])
+  @@index([enquiryLineId])
+  @@map("supplier_offer_lines")
+}
+
+enum SupplierOfferStatus {
+  needs_review
+  accepted
+  rejected
+  superseded
+}
+
+enum OfferLineKind {
+  quoted
+  alternative
+  declined
+}
+
+enum OfferAttributionMethod {
+  reference_token
+  manual
+  fuzzy
 }
