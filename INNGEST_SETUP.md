@@ -1,88 +1,152 @@
 # Inngest setup
 
-Inngest runs background jobs and scheduled functions (cron) for the **admin
-app**. The SDK is **safe to deploy without keys** — it initialises but cron
-functions don't fire and `inngest.send()` is a no-op. To turn on scheduled
-work in production, follow the steps below. One-time setup, ~5 minutes.
+Inngest runs the background jobs and cron schedules for this app.
 
-## What's already done in code
+> **Status as of 2026-09-01: NOT CONNECTED.** No keys are set, so nothing below
+> is running in production. See *How to tell whether it is actually on* before
+> assuming otherwise.
+
+## Read this first: the failure mode
+
+**The SDK is safe to deploy without keys — and that is exactly what makes it
+dangerous.** Without `INNGEST_EVENT_KEY` it initialises normally, cron functions
+never fire, and **`inngest.send()` silently succeeds while doing nothing.** No
+error, no warning, no log line.
+
+This has already cost real debugging time. The supplier-research feature created
+a `ResearchRun` row, fired an event into the void, and left the run `queued`
+forever — and its own "already running" guard then disabled the button
+permanently. The button looked broken; the actual cause was three layers away.
+
+**If you write a feature that depends on a background job, check for the key
+explicitly and provide a path that works without it.** `startSupplierResearch`
+in `apps/web/src/app/admin/(shell)/enquiries/actions.ts` is the reference:
+
+```ts
+const hasBackgroundJobs = Boolean(process.env.INNGEST_EVENT_KEY)
+if (hasBackgroundJobs) { await inngest.send(...) } else { await runInline() }
+```
+
+## How to tell whether it is actually on
+
+Fastest check, no dashboard needed — query the table a cron job writes to:
+
+```sql
+SELECT count(*), max("computedAt") FROM seo_health_scores;
+```
+
+`seo.health.recompute_all` runs nightly at 04:00 UTC. **If that table is empty,
+Inngest has never run.** That single query is how the outage above was found.
+
+## What is already done in code
 
 | File | Purpose |
 |---|---|
-| `apps/admin/src/inngest/client.ts` | Inngest client singleton (`id: 'indus-hydraulics-admin'`) |
-| `apps/admin/src/inngest/functions.ts` | Function definitions — currently registers two |
-| `apps/admin/src/app/api/inngest/route.ts` | Webhook endpoint Inngest calls into to invoke functions |
-| `turbo.json` `globalEnv` | Whitelists `INNGEST_EVENT_KEY` and `INNGEST_SIGNING_KEY` |
+| `apps/web/src/inngest/client.ts` | Client singleton (`id: 'indus-hydraulics-admin'`) |
+| `apps/web/src/inngest/functions.ts` | Cron functions + the `allFunctions` registry |
+| `apps/web/src/inngest/*.ts` | One file per event-driven job |
+| `apps/web/src/app/api/inngest/route.ts` | The endpoint Inngest calls into (`maxDuration = 300`) |
+| `turbo.json` `globalEnv` | Already whitelists both keys — no change needed |
 
-### Functions registered
+### Functions registered (10)
 
 | Function ID | Trigger | What it does |
 |---|---|---|
-| `seo.health.recompute_all` | Cron `0 4 * * *` (04:00 UTC daily) | Recomputes per-entity SEO health scores into `SeoHealthScore` table for the trends dashboard |
-| `quote.expiry-reminder` | Cron `0 8 * * *` (08:00 UTC daily) | Finds Quotes expiring in the next 3 days where the RFQ is still `quote_sent`, and emails the customer a reminder. Skips quotes that already received a reminder in the last 24 hours |
+| `seo.health.recompute_all` | cron `0 4 * * *` | Per-entity SEO health scores into `seo_health_scores` |
+| `gsc.daily.sync` | cron `0 5 * * *` + event | Search Console sync |
+| `quote.expiry-reminder` | cron `0 8 * * *` | Emails customers whose quote expires within 3 days |
+| `quote.auto-expiry` | cron `0 * * * *` | Flips RFQs in `quote_sent` past their expiry |
+| `email.retry-failed` | cron `*/15 * * * *` | Retries failed transactional email |
+| `media.trash.purge` | cron `0 3 * * *` | Permanently deletes media trashed >30 days |
+| `scraper.job.run` | event `scraper/job.requested` | Competitor scrape |
+| `product.blueprint.generate` | event `product/blueprint.requested` | AI catalogue blueprint |
+| `procurement.research.start` | event `procurement/research.requested` | Fans out supplier research per enquiry |
+| `procurement.research.item` | event `procurement/research.item` | Researches one enquiry line |
+
+**Two of these are customer-facing and currently dormant:** `email.retry-failed`
+means a transactional email that fails is never retried, and `quote.auto-expiry`
+means quotes never expire on their own.
 
 ## What you need to do
 
+One-time, ~10 minutes, entirely in two web dashboards. No code changes.
+
 ### 1. Create an Inngest account
 
-1. Go to **https://app.inngest.com/sign-up** and create an account (free tier covers 50K function steps / month — plenty for this scale).
-2. After sign-up you'll land on a workspace. Default name is fine.
+[app.inngest.com/sign-up](https://app.inngest.com/sign-up). Default workspace is
+fine. Free tier is 50K function steps / month.
 
-### 2. Create an environment
+### 2. Copy two keys
 
-1. In the workspace, you'll see a default **Production** environment. We'll use that.
-2. Go to **Manage → Event Keys** and copy the production event key.
-3. Go to **Manage → Signing Key** and copy the production signing key.
+From the **Production** environment:
 
-### 3. Add env vars to Vercel — **admin project only**
+- **Manage → Event Keys** → the event key
+- **Manage → Signing Key** → the signing key
 
-In the Vercel dashboard, open the **`indus-hydraulics-admin`** project (the storefront does not use Inngest):
+### 3. Add them to Vercel
 
-1. **Settings → Environment Variables**.
-2. Add for **Production** + **Preview** + **Development** scopes:
-   - `INNGEST_EVENT_KEY` — the event key from step 2 (mark as **Sensitive**)
-   - `INNGEST_SIGNING_KEY` — the signing key from step 2 (mark as **Sensitive**)
-3. Save and trigger a redeploy of the admin project.
+Project **`indus-hydraulics`** → **Settings → Environment Variables**. Add for
+**Production + Preview + Development**, both marked **Sensitive**:
 
-### 4. Register the webhook with Inngest
+- `INNGEST_EVENT_KEY`
+- `INNGEST_SIGNING_KEY`
 
-Inngest needs to know where to call into your app to invoke functions.
+Then redeploy.
 
-**If you set up Inngest's GitHub integration:** Inngest auto-discovers the webhook URL from each Vercel deployment. Nothing more to do.
+> There is one Vercel project. The storefront and admin were merged into
+> `apps/web`; an older version of this document referred to a separate
+> `indus-hydraulics-admin` project, which no longer exists.
 
-**Otherwise, register manually:**
-1. In the Inngest dashboard, go to **Apps → Sync App** (or **Add App**).
-2. Paste your admin app's Inngest endpoint URL: `https://indus-hydraulics-admin.vercel.app/api/inngest`.
-3. Click **Sync**. Inngest fetches the function definitions from the route and registers them.
+### 4. Register the endpoint
+
+**Apps → Sync App**, and paste:
+
+```
+https://indushydraulics.com/api/inngest
+```
+
+Or connect Inngest's GitHub integration and it auto-discovers on each deploy.
 
 ### 5. Verify
 
-In the Inngest dashboard:
+- **Functions** lists all ten.
+- **Apps** shows the app connected.
+- Click **Invoke** on `seo.health.recompute_all` and re-run the SQL above — a
+  non-zero count is proof, and better proof than a green tick in a dashboard.
 
-- **Functions** tab should show both `seo.health.recompute_all` and `quote.expiry-reminder`, each with their cron schedule.
-- **Apps** tab should show `indus-hydraulics-admin` connected.
-- The next scheduled run will appear under **Runs** when the cron fires; you can also click **Invoke** on a function to trigger it manually for testing.
+## Adding a new background job
 
-## How to add a new background job
-
-1. Open `apps/admin/src/inngest/functions.ts`.
-2. Define a new `inngest.createFunction(...)` export — see existing functions as templates.
-3. Add it to the `allFunctions` array at the bottom of the file.
-4. Deploy. Inngest auto-syncs on the next deployment if the GitHub integration is set up; otherwise re-sync manually in the dashboard.
+1. Define `inngest.createFunction(...)` in `apps/web/src/inngest/`.
+2. Add it to `allFunctions` in `functions.ts` — **a function missing from that
+   array is silently never registered.**
+3. Deploy, then re-sync in the dashboard if the GitHub integration is not set up.
 
 ## Patterns
 
-- **Use `step.run(...)` liberally.** Each step is independently retryable. If step 4 of a function fails, Inngest re-runs step 4 only — earlier steps are cached.
-- **Make functions idempotent.** Steps may re-run after partial failures. The quote-expiry reminder uses a 24-hour `dedupeFrom` window check on `SentEmail` so a re-run never double-sends.
-- **Keep each function focused.** Cron + retries + concurrency + step semantics are the value-add; complex business logic still lives in the app code that the function calls.
+- **Use `step.run(...)` liberally.** Each step retries independently; earlier
+  steps are cached on a retry.
+- **Make functions idempotent.** Steps re-run after partial failures.
+  `quote.expiry-reminder` dedupes on a 24-hour `SentEmail` window.
+- **Persist per-item results as they land, not in a final aggregate step.** A
+  run that dies halfway should still leave usable output —
+  `procurement.research.item` writes its row before returning.
+- **Cap concurrency.** Unbounded fan-out exhausts the Supabase connection pool
+  and surfaces as an error that reads like a code bug.
+- **Keep `step.run` bodies under `maxDuration = 300`.** Split slow external
+  calls from database writes.
 
 ## Cost notes
 
-- Free tier: 50K function steps + 25 functions / month.
-- The two scheduled functions together cost ~3 steps/day each = ~180 steps/month. Negligible.
-- If you wire up storefront RFQ submissions to Inngest later, plan for ~1 step per submitted RFQ.
+- Free tier: 50K steps + 25 functions / month.
+- The six cron functions total roughly 1,000 steps/month.
+- Supplier research is the variable one: about 2 steps per enquiry line, so 20
+  enquiries a day at 5 lines each ≈ 6,000 steps/month. Still inside free tier.
+- Inngest steps are free; the **Claude calls inside them are not**. Research
+  cost is tracked per run in `research_runs.costUsdMicros`.
 
 ## What this does NOT cover
 
-- **Storefront events** (RFQ submission emails). Today those `await sendEmail()` directly — failures are caught + logged but not retried. Wiring them through Inngest is a separate PR; defer until you see Resend reliability becoming a real issue.
-- **Real-time queue monitoring.** Sentry catches errors *inside* Inngest functions; for queue depth or lag metrics, use Inngest's own dashboard.
+- **Storefront RFQ emails** still `await sendEmail()` directly. Failures are
+  logged and picked up by `email.retry-failed` — once that is running.
+- **Queue depth and lag metrics.** Sentry catches errors *inside* functions;
+  use Inngest's own dashboard for queue health.

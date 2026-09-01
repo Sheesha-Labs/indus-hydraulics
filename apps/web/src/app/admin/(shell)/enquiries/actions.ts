@@ -11,6 +11,8 @@ import {
   type MarkupMode,
 } from '@indus/domain'
 import { renderEstimatePdf, uploadQuotePdf } from '@indus/pdf'
+
+import { runResearchInline } from '../../../../lib/research-inline'
 import { revalidatePath } from 'next/cache'
 
 import { inngest } from '../../../../inngest/client'
@@ -141,7 +143,7 @@ export async function setLineReviewStatus(formData: FormData): Promise<Result<vo
  * still moving — two concurrent runs on one enquiry double the bill and race
  * each other's result rows.
  */
-export async function startSupplierResearch(formData: FormData): Promise<Result<{ runId: string }>> {
+export async function startSupplierResearch(formData: FormData): Promise<Result<{ runId: string; mode: 'background' | 'inline' }>> {
   try {
     const session = await auth()
     requireRole(session, ROLES.RFQ_REVIEW)
@@ -160,28 +162,52 @@ export async function startSupplierResearch(formData: FormData): Promise<Result<
       return fail('PRECONDITION_FAILED', 'This enquiry has no line items to research yet.')
     }
 
+    // A run older than this that never started is stale, not in-flight. Without
+    // this, one undelivered event disables the button permanently — which is
+    // exactly what happened the first time this shipped.
+    const STALE_AFTER_MS = 15 * 60 * 1000
+    await db.researchRun.updateMany({
+      where: {
+        enquiryId: enquiry.id,
+        status: { in: ['queued', 'running'] },
+        createdAt: { lt: new Date(Date.now() - STALE_AFTER_MS) },
+      },
+      data: {
+        status: 'failed',
+        error: 'Timed out before starting. Background jobs may not be configured — see INNGEST_SETUP.md.',
+        finishedAt: new Date(),
+      },
+    })
+
     const inFlight = await db.researchRun.findFirst({
       where: { enquiryId: enquiry.id, status: { in: ['queued', 'running'] } },
       select: { id: true },
     })
-    if (inFlight) {
-      return fail('CONFLICT', 'Research is already running for this enquiry.')
-    }
+    if (inFlight) return fail('CONFLICT', 'Research is already running for this enquiry.')
 
     const run = await db.researchRun.create({
       data: { enquiryId: enquiry.id, triggeredById: session?.user?.id ?? null },
       select: { id: true },
     })
 
-    // Fired outside any transaction: an event sent inside one that later rolls
-    // back leaves a job running against a row that does not exist.
-    await inngest.send({
-      name: 'procurement/research.requested',
-      data: { researchRunId: run.id },
-    })
+    // Inngest is a NO-OP without INNGEST_EVENT_KEY — it accepts the send and
+    // drops it, per INNGEST_SETUP.md. Creating a run and firing into that void
+    // leaves the row queued forever, so the mode is decided explicitly here
+    // rather than assumed.
+    const hasBackgroundJobs = Boolean(process.env.INNGEST_EVENT_KEY)
 
+    if (hasBackgroundJobs) {
+      await inngest.send({
+        name: 'procurement/research.requested',
+        data: { researchRunId: run.id },
+      })
+      revalidatePath(`/admin/enquiries/${enquiry.code}`)
+      return ok({ runId: run.id, mode: 'background' as const })
+    }
+
+    await runResearchInline(run.id)
     revalidatePath(`/admin/enquiries/${enquiry.code}`)
-    return ok({ runId: run.id })
+    return ok({ runId: run.id, mode: 'inline' as const })
   } catch (error) {
     return failFromError(error)
   }

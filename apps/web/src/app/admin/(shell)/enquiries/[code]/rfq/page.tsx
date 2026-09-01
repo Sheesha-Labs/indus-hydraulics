@@ -89,7 +89,9 @@ export default async function EnquiryRfqPage({ params }: Props) {
         </span>
       }
     >
-      <div className="flex flex-col gap-5">
+      {/* PF-9: card-stack editor, no rail — one 860px cap on the single
+          body wrapper so every card ends on the same right edge. */}
+      <div className="flex max-w-[860px] flex-col gap-6">
         <Callout>
           These are drafts, not sent mail. Copy one into your own mailbox, or use the mail link.
           Nothing here goes out through the website&rsquo;s transactional sender — a cold supplier

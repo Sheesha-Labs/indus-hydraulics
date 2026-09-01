@@ -71,7 +71,7 @@ function Card(props: Props) {
       {open ? (
         <div className="mt-4 flex flex-col gap-2">
           <p className="font-mono text-[12px] text-ih-ink-2">{props.subject}</p>
-          <pre className="max-h-[420px] overflow-auto whitespace-pre-wrap rounded-[6px] border border-ih-border bg-ih-surface-2 p-3 font-mono text-[12px] leading-relaxed text-ih-ink-2">
+          <pre className="max-h-[420px] overflow-auto whitespace-pre-wrap break-words rounded-lg border border-ih-border bg-ih-surface-2 p-3 font-mono text-[12px] leading-relaxed text-ih-ink-2">
             {props.body}
           </pre>
         </div>

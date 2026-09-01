@@ -40,7 +40,9 @@ export default async function EnquiryOffersPage({ params }: Props) {
         </span>
       }
     >
-      <div className="flex flex-col gap-6">
+      {/* PF-9: card-stack editor, no rail — one 860px cap on the single
+          body wrapper so every card ends on the same right edge. */}
+      <div className="flex max-w-[860px] flex-col gap-6">
         <Panel>
           <header className="mb-4 flex flex-col gap-1">
             <h2 className="text-[15px] font-medium text-ih-ink">Paste a reply</h2>

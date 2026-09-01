@@ -1,11 +1,10 @@
 import { db } from '@indus/db'
-import { DataTable, EmptyState, Panel, StatusPill } from '@indus/ui'
+import { AdminSectionHead, Callout, DataTable, EmptyState, Panel, StatusPill } from '@indus/ui'
 import type { Metadata } from 'next'
+import Link from 'next/link'
 import { notFound } from 'next/navigation'
 
 import AdminPageShell from '../../../../../components/admin/AdminPageShell'
-import Link from 'next/link'
-
 import ResearchButton from './_components/research-button'
 
 export const dynamic = 'force-dynamic'
@@ -20,6 +19,11 @@ const FLAG_LABEL: Record<string, string> = {
   title_sourced: 'From title',
 }
 
+type RankedCandidate = {
+  candidate: { name: string; country: string | null; supplierId: string | null }
+  score: number
+}
+
 export default async function EnquiryDetailPage({ params }: Props) {
   const { code } = await params
   const enquiry = await db.enquiry.findUnique({
@@ -28,17 +32,22 @@ export default async function EnquiryDetailPage({ params }: Props) {
   })
   if (!enquiry) notFound()
 
-  const needsReview = enquiry.lines.filter((l) => l.reviewStatus === 'needs_review').length
-
-  const activeRun = await db.researchRun.findFirst({
-    where: { enquiryId: enquiry.id, status: { in: ['queued', 'running'] } },
-    select: { id: true },
+  const latestRun = await db.researchRun.findFirst({
+    where: { enquiryId: enquiry.id },
+    orderBy: { createdAt: 'desc' },
+    include: {
+      results: { orderBy: { createdAt: 'asc' }, include: { enquiryLine: { select: { description: true, position: true } } } },
+    },
   })
+
+  const needsReview = enquiry.lines.filter((l) => l.reviewStatus === 'needs_review').length
+  const running = latestRun?.status === 'queued' || latestRun?.status === 'running'
+  const nav = `/admin/enquiries/${enquiry.code}`
 
   return (
     <AdminPageShell
       title={enquiry.title}
-      sub={
+      breadcrumbs={
         <span className="font-mono text-[12px] text-ih-muted">
           {enquiry.code}
           {enquiry.bidNo ? ` · ${enquiry.bidNo}` : ''}
@@ -47,129 +56,183 @@ export default async function EnquiryDetailPage({ params }: Props) {
         </span>
       }
       actions={
-        <div className="flex items-center gap-2">
-          <Link
-            className="text-[13px] text-ih-ink-2 underline"
-            href={`/admin/enquiries/${enquiry.code}/rfq`}
-          >
-            Supplier RFQs
-          </Link>
-          <Link
-            className="text-[13px] text-ih-ink-2 underline"
-            href={`/admin/enquiries/${enquiry.code}/offers`}
-          >
-            Offers
-          </Link>
-          <Link
-            className="text-[13px] text-ih-ink-2 underline"
-            href={`/admin/enquiries/${enquiry.code}/pricing`}
-          >
-            Pricing
-          </Link>
+        <div className="flex items-center gap-3">
+          <Link className="text-[13px] text-ih-ink-2 hover:underline" href={`${nav}/rfq`}>Supplier RFQs</Link>
+          <Link className="text-[13px] text-ih-ink-2 hover:underline" href={`${nav}/offers`}>Offers</Link>
+          <Link className="text-[13px] text-ih-ink-2 hover:underline" href={`${nav}/pricing`}>Pricing</Link>
           <ResearchButton
-          enquiryId={enquiry.id}
-          disabled={enquiry.lines.length === 0 || !!activeRun}
-          {...(activeRun
-            ? { disabledReason: 'Research already running.' }
-            : enquiry.lines.length === 0
-              ? { disabledReason: 'Add line items first.' }
-              : {})}
+            enquiryId={enquiry.id}
+            disabled={enquiry.lines.length === 0 || running}
+            {...(running
+              ? { disabledReason: 'Research already running.' }
+              : enquiry.lines.length === 0
+                ? { disabledReason: 'Add line items first.' }
+                : {})}
           />
         </div>
       }
     >
-      <div className="grid gap-6 lg:grid-cols-[1fr_320px]">
-        <div className="flex flex-col gap-6">
+      {/* PF-10 detail shape. `items-start` lets the rail stick; `min-w-0` on the
+          main column is load-bearing — without it the line-items table blows the
+          1fr track out and pushes the rail off the right of the screen. */}
+      <div className="grid grid-cols-1 items-start gap-6 lg:grid-cols-[1fr_320px]">
+        <div className="flex min-w-0 flex-col gap-6">
           <Panel>
-            <header className="mb-4 flex flex-col gap-1">
-              <h2 className="text-[15px] font-medium text-ih-ink">Line items</h2>
-              <p className="text-[13px] text-ih-muted">
-                {enquiry.lines.length === 0
-                  ? 'No items were found in the pasted text. That is expected when the item list is behind a portal login.'
-                  : `${enquiry.lines.length} extracted · ${needsReview} awaiting review`}
-              </p>
-            </header>
-            <DataTable
-              minWidth="md"
-              rowKey={(row) => row.id}
-              rows={enquiry.lines}
-              emptyState={
-                <EmptyState
-                  condition="NO LINE ITEMS"
-                  message="The paste carried no numbered item list. Sign in to the portal, copy the items, and paste them into a new enquiry."
-                />
+            <AdminSectionHead
+              variant="panel"
+              title="Line items"
+              description={
+                enquiry.lines.length === 0
+                  ? 'No items were found in the pasted text. That is expected when the item list sits behind a portal login.'
+                  : `${enquiry.lines.length} extracted · ${needsReview} awaiting review`
               }
-              columns={[
-                { key: 'pos', header: '#', numeric: true, cell: (r) => r.position },
-                {
-                  key: 'description',
-                  header: 'Description',
-                  width: '44%',
-                  cell: (r) => (
-                    <div className="flex flex-col gap-1">
-                      <span className="text-ih-ink">{r.description}</span>
-                      {r.partNumber ? (
-                        <span className="font-mono text-[12px] text-ih-muted">P/N {r.partNumber}</span>
-                      ) : null}
-                      {r.certification ? (
-                        <span className="font-mono text-[12px] text-ih-ink-2">{r.certification}</span>
-                      ) : null}
-                      <span className="text-[12px] text-ih-muted">{r.sourceText}</span>
-                    </div>
-                  ),
-                },
-                {
-                  key: 'qty',
-                  header: 'Qty',
-                  numeric: true,
-                  cell: (r) => (r.qty ? `${r.qty.toString()} ${r.unit ?? ''}`.trim() : '—'),
-                },
-                {
-                  key: 'flags',
-                  header: 'Flags',
-                  cell: (r) =>
-                    r.reviewFlags.length === 0 ? (
-                      <span className="text-ih-muted">—</span>
-                    ) : (
-                      <div className="flex flex-wrap gap-1">
-                        {r.reviewFlags.map((f) => (
-                          <StatusPill key={f} tone="warn" size="sm">
-                            {FLAG_LABEL[f] ?? f}
-                          </StatusPill>
-                        ))}
+            />
+            <div className="mt-4">
+              <DataTable
+                minWidth="md"
+                rowKey={(row) => row.id}
+                rows={enquiry.lines}
+                emptyState={
+                  <EmptyState
+                    condition="NO LINE ITEMS"
+                    message="The paste carried no numbered item list. Sign in to the portal, copy the items, and paste them into a new enquiry."
+                  />
+                }
+                columns={[
+                  { key: 'pos', header: '#', numeric: true, cell: (r) => r.position },
+                  {
+                    key: 'description',
+                    header: 'Description',
+                    width: '44%',
+                    cell: (r) => (
+                      <div className="flex flex-col gap-1">
+                        <span className="text-ih-ink">{r.description}</span>
+                        {r.partNumber ? (
+                          <span className="font-mono text-[12px] text-ih-muted">P/N {r.partNumber}</span>
+                        ) : null}
+                        {r.certification ? (
+                          <span className="font-mono text-[12px] text-ih-ink-2">{r.certification}</span>
+                        ) : null}
                       </div>
                     ),
-                },
-                {
-                  key: 'review',
-                  header: 'Review',
-                  cell: (r) => (
-                    <StatusPill tone={r.reviewStatus === 'confirmed' ? 'good' : 'muted'}>
-                      {r.reviewStatus === 'needs_review' ? 'Needs review' : r.reviewStatus}
-                    </StatusPill>
-                  ),
-                },
-              ]}
-            />
+                  },
+                  {
+                    key: 'qty',
+                    header: 'Qty',
+                    numeric: true,
+                    cell: (r) => (r.qty ? `${r.qty.toString()} ${r.unit ?? ''}`.trim() : '—'),
+                  },
+                  {
+                    key: 'flags',
+                    header: 'Flags',
+                    cell: (r) =>
+                      r.reviewFlags.length === 0 ? (
+                        <span className="text-ih-muted">—</span>
+                      ) : (
+                        <div className="flex flex-wrap gap-1">
+                          {r.reviewFlags.map((f) => (
+                            <StatusPill key={f} tone="warn" size="sm">
+                              {FLAG_LABEL[f] ?? f}
+                            </StatusPill>
+                          ))}
+                        </div>
+                      ),
+                  },
+                ]}
+              />
+            </div>
           </Panel>
 
+          {latestRun ? (
+            <Panel>
+              <AdminSectionHead
+                variant="panel"
+                title="Supplier research"
+                description={`${latestRun.completedCount} of ${latestRun.itemCount} items · ${latestRun.cacheHitCount} from cache · $${(latestRun.costUsdMicros / 1_000_000).toFixed(2)}`}
+              />
+
+              {latestRun.error ? (
+                <div className="mt-3">
+                  <Callout tone="danger">{latestRun.error}</Callout>
+                </div>
+              ) : null}
+
+              <div className="mt-4 flex flex-col gap-3">
+                {latestRun.results.length === 0 ? (
+                  <p className="text-[13px] text-ih-muted">
+                    No per-item results yet.
+                  </p>
+                ) : (
+                  latestRun.results.map((result) => {
+                    const ranked = (result.candidates as unknown as RankedCandidate[]) ?? []
+                    return (
+                      <div key={result.id} className="rounded-lg border border-ih-border p-3">
+                        <div className="flex flex-wrap items-baseline justify-between gap-2">
+                          <span className="text-[14px] text-ih-ink">
+                            {result.enquiryLine?.position}. {result.enquiryLine?.description}
+                          </span>
+                          <span className="flex items-center gap-2">
+                            {result.cacheHit ? <StatusPill size="sm">Cached</StatusPill> : null}
+                            <StatusPill
+                              size="sm"
+                              tone={
+                                result.status === 'completed'
+                                  ? 'good'
+                                  : result.status === 'failed'
+                                    ? 'danger'
+                                    : 'warn'
+                              }
+                            >
+                              {result.status.replace('_', ' ')}
+                            </StatusPill>
+                          </span>
+                        </div>
+                        {result.error ? (
+                          <p className="mt-1 text-[12px] text-ih-danger">{result.error}</p>
+                        ) : null}
+                        {ranked.length > 0 ? (
+                          <ul className="mt-2 flex flex-col gap-1">
+                            {ranked.slice(0, 5).map((entry, i) => (
+                              <li key={`${entry.candidate.name}-${i}`} className="text-[13px] text-ih-ink-2">
+                                <span className="text-ih-ink">{entry.candidate.name}</span>
+                                <span className="font-mono text-[12px] text-ih-muted">
+                                  {entry.candidate.country ? ` · ${entry.candidate.country}` : ''} · {entry.score}
+                                </span>
+                              </li>
+                            ))}
+                          </ul>
+                        ) : result.status === 'completed' ? (
+                          <p className="mt-1 text-[12px] text-ih-muted">
+                            No suppliers cleared the filters for this item.
+                          </p>
+                        ) : null}
+                        <p className="mt-1 text-[12px] text-ih-muted">
+                          {result.reachableCount} of {result.candidateCount} reachable
+                        </p>
+                      </div>
+                    )
+                  })
+                )}
+              </div>
+            </Panel>
+          ) : null}
+
           <Panel>
-            <header className="mb-4 flex flex-col gap-1">
-              <h2 className="text-[15px] font-medium text-ih-ink">Source text</h2>
-              <p className="text-[13px] text-ih-muted">
-                Verbatim, after line-ending normalisation. Every line above traces back to this.
-              </p>
-            </header>
-            <pre className="max-h-[420px] overflow-auto whitespace-pre-wrap rounded-[6px] border border-ih-border bg-ih-surface-2 p-3 font-mono text-[12px] leading-relaxed text-ih-ink-2">
+            <AdminSectionHead
+              variant="panel"
+              title="Source text"
+              description="Verbatim, after line-ending normalisation. Every line above traces back to this."
+            />
+            <pre className="mt-4 max-h-[420px] overflow-auto whitespace-pre-wrap break-words rounded-lg border border-ih-border bg-ih-surface-2 p-3 font-mono text-[12px] leading-relaxed text-ih-ink-2">
               {enquiry.rawText}
             </pre>
           </Panel>
         </div>
 
-        <div className="flex flex-col gap-6">
+        <aside className="sticky top-7 flex flex-col gap-6">
           <Panel>
-            <h2 className="mb-4 text-[15px] font-medium text-ih-ink">Details</h2>
-            <dl className="flex flex-col gap-3 text-[13px]">
+            <AdminSectionHead title="Details" level={3} />
+            <dl className="mt-4 flex flex-col gap-3 text-[13px]">
               <div>
                 <dt className="text-ih-muted">Status</dt>
                 <dd className="font-mono text-ih-ink">{enquiry.status}</dd>
@@ -177,7 +240,9 @@ export default async function EnquiryDetailPage({ params }: Props) {
               <div>
                 <dt className="text-ih-muted">Closes</dt>
                 <dd className="font-mono text-ih-ink">
-                  {enquiry.closingAt ? enquiry.closingAt.toISOString().slice(0, 16).replace('T', ' ') : '—'}
+                  {enquiry.closingAt
+                    ? enquiry.closingAt.toISOString().slice(0, 16).replace('T', ' ')
+                    : '—'}
                 </dd>
               </div>
               <div>
@@ -190,7 +255,7 @@ export default async function EnquiryDetailPage({ params }: Props) {
               </div>
             </dl>
           </Panel>
-        </div>
+        </aside>
       </div>
     </AdminPageShell>
   )

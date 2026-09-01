@@ -55,7 +55,9 @@ export default async function EnquiryPricingPage({ params }: Props) {
         </span>
       }
     >
-      <div className="flex flex-col gap-6">
+      {/* PF-9: card-stack editor, no rail — one 860px cap on the single
+          body wrapper so every card ends on the same right edge. */}
+      <div className="flex max-w-[860px] flex-col gap-6">
         <Callout>
           Prices below are the supplier&rsquo;s, as extracted. Pick one per line, then set the
           markup — the estimate uses your existing template, in AED, with VAT decided by ship-to
@@ -91,7 +93,7 @@ export default async function EnquiryPricingPage({ params }: Props) {
                     return (
                       <li
                         key={o.id}
-                        className="flex flex-wrap items-center justify-between gap-3 rounded-[6px] border border-ih-border bg-ih-surface px-3 py-2"
+                        className="flex flex-wrap items-center justify-between gap-3 rounded-lg border border-ih-border bg-ih-surface px-3 py-2"
                       >
                         <div className="flex flex-col gap-0.5">
                           <div className="flex items-center gap-2">

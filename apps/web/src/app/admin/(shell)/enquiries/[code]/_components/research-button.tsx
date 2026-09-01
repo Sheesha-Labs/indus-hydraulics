@@ -15,7 +15,16 @@ function Inner({ enquiryId, disabled, disabledReason }: Props) {
     startTransition(async () => {
       const res = await startSupplierResearch(formData)
       if (res.success) {
-        toast({ title: 'Researching suppliers', description: 'Results appear per item as they land.' })
+        toast(
+          res.data.mode === 'background'
+            ? { title: 'Researching suppliers', description: 'Results appear per item as they land.' }
+            : {
+                title: 'Research finished',
+                description:
+                  'Ran in the request because background jobs are not configured, so only the first few items were attempted.',
+                duration: 8000,
+              },
+        )
         router.refresh()
         return
       }

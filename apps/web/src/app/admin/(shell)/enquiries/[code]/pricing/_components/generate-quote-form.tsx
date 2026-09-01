@@ -1,6 +1,6 @@
 'use client'
 
-import { Button, Field, ToastProvider, useToast } from '@indus/ui'
+import { Button, Field, Input, Select, ToastProvider, useToast } from '@indus/ui'
 import { useRouter } from 'next/navigation'
 import * as React from 'react'
 
@@ -28,33 +28,15 @@ function Inner({ enquiryId, linesPriced }: { enquiryId: string; linesPriced: num
       <input type="hidden" name="enquiryId" value={enquiryId} />
       <div className="grid gap-4 md:grid-cols-3">
         <Field label="Markup mode" hint="Percentage is on cost; target margin is on sell price.">
-          <select
-            name="markupMode"
-            defaultValue="percentage"
-            className="h-10 w-full rounded-[6px] border border-ih-border bg-ih-surface px-3 text-[14px] text-ih-ink"
-          >
-            <option value="percentage">Percentage on cost</option>
+          <Select name="markupMode" defaultValue="percentage"><option value="percentage">Percentage on cost</option>
             <option value="target_margin">Target margin on sell</option>
-            <option value="absolute">Absolute AED per unit</option>
-          </select>
+            <option value="absolute">Absolute AED per unit</option></Select>
         </Field>
         <Field label="Value">
-          <input
-            name="markupValue"
-            type="number"
-            step="0.01"
-            min="0"
-            defaultValue="30"
-            className="h-10 w-full rounded-[6px] border border-ih-border bg-ih-surface px-3 text-[14px] text-ih-ink"
-          />
+          <Input name="markupValue" type="number" step="0.01" min="0" defaultValue="30" />
         </Field>
         <Field label="Ship-to country" hint="UAE adds 5% VAT; anywhere else is zero-rated export.">
-          <input
-            name="shipToCountryCode"
-            maxLength={2}
-            defaultValue="AE"
-            className="h-10 w-full rounded-[6px] border border-ih-border bg-ih-surface px-3 text-[14px] uppercase text-ih-ink"
-          />
+          <Input name="shipToCountryCode" maxLength={2} defaultValue="AE" className="uppercase" />
         </Field>
       </div>
       <div className="flex items-center gap-3">
