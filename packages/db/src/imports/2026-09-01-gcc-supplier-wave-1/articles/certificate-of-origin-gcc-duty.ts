@@ -42,7 +42,7 @@ const ARTICLE: BlogArticleSeed = {
     },
     {
       type: 'lead',
-      html: 'The certificate of origin is the least discussed document on a Gulf consignment and the one most often assumed to be a formality. It is a statement about where goods were manufactured, it is attested rather than self-declared, and it drives duty treatment. When it is wrong, it is wrong in a way that surfaces at the border rather than in the office.',
+      html: 'The certificate of origin is the least discussed document on a Gulf consignment and the one most often assumed to be a formality. The certificate of origin is the least discussed document on a Gulf consignment and the one most often assumed to be a formality. It is a statement about where goods were manufactured, it is attested rather than self-declared, and it drives duty treatment. When it is wrong, it is wrong in a way that surfaces at the border rather than in the office.',
     },
 
     {

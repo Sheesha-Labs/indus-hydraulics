@@ -27,7 +27,7 @@ const ARTICLE: BlogArticleSeed = {
   bodyBlocks: [
     {
       type: 'direct_answer',
-      question: 'Should a South African buyer import fittings or buy locally?',
+      question: 'Should a buyer import, or is buying fittings in South Africa locally the better answer?',
       answer:
         'Locally, in most cases. South Africa has a developed hydraulics supply chain with real stock, and for a single fitting or a routine replenishment nothing an importer can do beats a branch down the road. Importing earns its place in four specific situations: volume large enough for the freight to disappear into the unit cost, items nobody locally stocks, a consignment that combines hose assemblies with fittings and other lines, and orders driven by a specification where the documentation matters as much as the part.',
     },

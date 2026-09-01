@@ -33,7 +33,7 @@ const ARTICLE: BlogArticleSeed = {
     },
     {
       type: 'lead',
-      html: 'A sugar mill has two states and nothing in between. During the campaign it runs continuously and a stoppage is measured against cane that is already cut; out of season it stops entirely and every intervention that was deferred becomes possible. That shape makes hydraulic maintenance unusually plannable — and makes deferring a decision unusually expensive, because the next chance is months away.',
+      html: 'A sugar mill buys hydraulics against a calendar rather than against a failure rate. A sugar mill has two states and nothing in between. During the campaign it runs continuously and a stoppage is measured against cane that is already cut; out of season it stops entirely and every intervention that was deferred becomes possible. That shape makes hydraulic maintenance unusually plannable — and makes deferring a decision unusually expensive, because the next chance is months away.',
     },
 
     {

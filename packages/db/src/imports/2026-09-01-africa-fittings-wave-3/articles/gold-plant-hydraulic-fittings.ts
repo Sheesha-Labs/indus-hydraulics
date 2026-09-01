@@ -26,7 +26,7 @@ const ARTICLE: BlogArticleSeed = {
   bodyBlocks: [
     {
       type: 'direct_answer',
-      question: 'What is different about hydraulics in a gold plant?',
+      question: 'What is different about gold plant hydraulic fittings?',
       answer:
         'The plant is not one environment. Crushing and milling are abrasion and vibration problems that look like any other hard-rock circuit. The leach and elution areas are chemical ones, where the fitting is attacked from outside by process solution and washdown rather than worn by rock. Specifying one material across the whole plant means over-paying in half of it and under-specifying in the other half.',
     },

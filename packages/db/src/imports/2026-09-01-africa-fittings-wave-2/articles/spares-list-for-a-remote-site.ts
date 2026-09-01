@@ -22,7 +22,7 @@ const ARTICLE: BlogArticleSeed = {
   bodyBlocks: [
     {
       type: 'lead',
-      html: 'On a site with a hydraulics counter down the road, stocking is a convenience question. On a mine camp, a remote quarry or a drilling programme where the next consignment is weeks out, it is a risk question — and the two produce very different lists from the same catalogue.',
+      html: 'A spares list for a site weeks from resupply is a risk decision rather than a convenience one. On a site with a hydraulics counter down the road, stocking is a convenience question. On a mine camp, a remote quarry or a drilling programme where the next consignment is weeks out, it is a risk question — and the two produce very different lists from the same catalogue.',
     },
     {
       type: 'key_takeaways',

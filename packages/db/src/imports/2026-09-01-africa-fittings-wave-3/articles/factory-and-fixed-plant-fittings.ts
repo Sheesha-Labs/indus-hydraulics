@@ -33,7 +33,7 @@ const ARTICLE: BlogArticleSeed = {
     },
     {
       type: 'lead',
-      html: 'Presses, injection moulders, packaging lines, textile plant and rolling mills have one advantage over every other customer in this series: the machines stay where they are. The fleet does not change monthly, the environment is known, and the thread population is therefore a decision rather than an accident of importing — which is precisely why it is such a waste that most plants never treat it as one.',
+      html: 'Fixed plant fittings are the one population where the thread families are a choice rather than an inheritance. Presses, injection moulders, packaging lines, textile plant and rolling mills have one advantage over every other customer in this series: the machines stay where they are. The fleet does not change monthly, the environment is known, and the thread population is therefore a decision rather than an accident of importing — which is precisely why it is such a waste that most plants never treat it as one.',
     },
 
     {

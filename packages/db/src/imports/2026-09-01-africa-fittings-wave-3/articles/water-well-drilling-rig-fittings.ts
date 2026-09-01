@@ -32,7 +32,7 @@ const ARTICLE: BlogArticleSeed = {
     },
     {
       type: 'lead',
-      html: 'Water-well and small exploration rigs are the most self-contained customers we supply. They rig up in a village or a bush site, work for days or weeks, and rig down and move — and the supply chain behind them is whatever fits on the support vehicle. A hydraulic failure on a rig is not a maintenance event; it is a project stoppage with a crew standing around it.',
+      html: 'Drilling rig fittings have to be on the truck, because anything that is not is days away. Water-well and small exploration rigs are the most self-contained customers we supply. They rig up in a village or a bush site, work for days or weeks, and rig down and move — and the supply chain behind them is whatever fits on the support vehicle. A hydraulic failure on a rig is not a maintenance event; it is a project stoppage with a crew standing around it.',
     },
 
     {

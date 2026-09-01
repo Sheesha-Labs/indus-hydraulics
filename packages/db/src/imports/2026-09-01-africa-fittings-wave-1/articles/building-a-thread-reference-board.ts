@@ -25,7 +25,7 @@ const ARTICLE: BlogArticleSeed = {
   bodyBlocks: [
     {
       type: 'lead',
-      html: 'Every workshop that runs a mixed fleet ends up identifying the same handful of threads over and over, usually under pressure, usually by a different person each time. A reference board fixes that for the price of an afternoon and a sheet of plywood, and it is the single cheapest improvement most of the workshops we supply could make.',
+      html: 'A thread reference board is the cheapest fix available for a workshop that identifies the same parts every month. Every workshop that runs a mixed fleet ends up identifying the same handful of threads over and over, usually under pressure, usually by a different person each time. A reference board fixes that for the price of an afternoon and a sheet of plywood, and it is the single cheapest improvement most of the workshops we supply could make.',
     },
     {
       type: 'key_takeaways',

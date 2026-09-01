@@ -21,7 +21,7 @@ const ARTICLE: BlogArticleSeed = {
   bodyBlocks: [
     {
       type: 'direct_answer',
-      question: 'What makes port equipment different from other heavy plant?',
+      question: 'What makes port and terminal fittings different from other heavy plant?',
       answer:
         'Two things at once. The air is salt-laden, so external corrosion runs continuously on every exposed joint. And the equipment works around the clock, so there is no natural window in which to change anything — maintenance competes with vessel operations. The result is that corrosion has to be designed out at specification rather than managed by inspection, because the inspection finding cannot always be acted on when it is made.',
     },

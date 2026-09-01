@@ -42,7 +42,7 @@ const ARTICLE: BlogArticleSeed = {
     },
     {
       type: 'lead',
-      html: 'Every large Gulf operator runs some form of vendor qualification, and every contractor working on their sites eventually hits it — usually at the least convenient moment, when a machine is down and the obvious source of a hose is not on a list. The regimes are not mysterious, but they are frequently described in a way that conflates two separate things, and the conflation is what causes the delay.',
+      html: 'Vendor approval sits between a contractor and the fastest way to fix a machine. Every large Gulf operator runs some form of vendor qualification, and every contractor working on their sites eventually hits it — usually at the least convenient moment, when a machine is down and the obvious source of a hose is not on a list. The regimes are not mysterious, but they are frequently described in a way that conflates two separate things, and the conflation is what causes the delay.',
     },
 
     {

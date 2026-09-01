@@ -623,4 +623,252 @@ export const BLOG_SEO: Record<string, BlogSeo> = {
     seoDescription:
       'JIC is the right default for most of a machine and wrong in four specific cases: vibration, repeated make and break, high impulse, and large bore.',
   },
+
+  // ── GCC supplier sprint + Africa fittings sprint (2026-09-01) ──────────
+  //
+  // Titles here are capped at 40 characters rather than the 60 the range
+  // allows. The storefront appends ' | Indus Hydraulics' (19 chars), so a
+  // 60-character title renders at 79 and Google truncates it — an effect the
+  // scored range does not model. The 93 entries above predate this rule and
+  // are a separate cleanup; `blog-seo.test.ts` enforces the cap for these 40.
+  'saber-certificate-for-hydraulic-hose': {
+    focusKeyword: 'saber certificate',
+    seoTitle: 'SABER certificate for a hose shipment',
+    seoDescription:
+      'How SABER product and shipment registration works for a hose consignment into Saudi Arabia, who issues what, and the sequence that keeps a load moving.',
+  },
+  'gulf-conformity-mark-hose-fittings': {
+    focusKeyword: 'gulf conformity mark',
+    seoTitle: 'Does hose need a Gulf conformity mark?',
+    seoDescription:
+      'The Gulf conformity mark covers low-voltage equipment and toys, not hydraulic hose. What a hose consignment into the GCC actually needs instead.',
+  },
+  'certificate-of-origin-gcc-duty': {
+    focusKeyword: 'certificate of origin',
+    seoTitle: 'Certificate of origin and GCC duty',
+    seoDescription:
+      'What a certificate of origin states on a hose consignment, why re-export from Dubai does not confer UAE origin, and how duty works inside the customs union.',
+  },
+  'hose-assembly-test-certificate': {
+    focusKeyword: 'assembly test certificate',
+    seoTitle: 'The hose assembly test certificate',
+    seoDescription:
+      'What a hydraulic hose assembly proof-test certificate establishes, what it cannot tell you, and what to ask for alongside it on a documented order.',
+  },
+  'material-test-certificate-en-10204': {
+    focusKeyword: 'material test certificate',
+    seoTitle: 'Material test certificate: 3.1 vs 2.2',
+    seoDescription:
+      'What EN 10204 inspection documents mean on hydraulic fittings, when a 3.1 is genuinely required, and how to write the clause so a supplier can meet it.',
+  },
+  'nace-mr0175-hose-documentation': {
+    focusKeyword: 'nace mr0175',
+    seoTitle: 'NACE MR0175 documentation for hose',
+    seoDescription:
+      'What NACE MR0175 covers on a hose order, why it governs the metallic parts rather than the rubber, and what to specify for sour-service duty.',
+  },
+  'vendor-approval-for-hose-supply': {
+    focusKeyword: 'vendor approval',
+    seoTitle: 'Vendor approval for hose supply',
+    seoDescription:
+      'How operator approved-vendor regimes affect hose supply in the Gulf, what they ask of a contractor, and which documentation makes an order acceptable.',
+  },
+  'verifying-a-genuine-hydraulic-hose': {
+    focusKeyword: 'genuine hydraulic hose',
+    seoTitle: 'Verifying a genuine hydraulic hose',
+    seoDescription:
+      'How to verify a hydraulic hose is the grade it claims to be: layline marking, batch and date, fitting identification and the receiving checks worth doing.',
+  },
+  'gcc-import-documents-for-hose': {
+    focusKeyword: 'gcc import documents',
+    seoTitle: 'GCC import documents for a hose order',
+    seoDescription:
+      'The import documentation regimes for hose consignments into Qatar, Oman, Kuwait and Bahrain, how each differs from Saudi SABER, and what to prepare.',
+  },
+  'oilfield-hose-document-pack': {
+    focusKeyword: 'oilfield hose document pack',
+    seoTitle: 'The oilfield hose document pack',
+    seoDescription:
+      'The documentation that travels with an oilfield hose assembly: traceability, test records, material certificates and conformity statements.',
+  },
+  'fittings-on-a-chinese-excavator': {
+    focusKeyword: 'chinese excavator',
+    seoTitle: 'Fittings on a Chinese excavator',
+    seoDescription:
+      'The thread families found on Chinese-built excavators and loaders, how to tell metric cone from BSP in the hand, and what a workshop should stock.',
+  },
+  'fittings-on-a-used-japanese-machine': {
+    focusKeyword: 'used japanese machine',
+    seoTitle: 'Fittings on a used Japanese machine',
+    seoDescription:
+      'Two common families share a 30 degree seat and use different threads underneath. How to separate them on a used Japanese excavator, and what to stock.',
+  },
+  'tractor-hydraulic-fittings': {
+    focusKeyword: 'tractor hydraulic fittings',
+    seoTitle: 'Tractor hydraulic fittings to stock',
+    seoDescription:
+      'The thread families found on tractors and implements, how the quick-coupler question differs from the fitting question, and what to hold before a season.',
+  },
+  'fittings-on-american-machines': {
+    focusKeyword: 'american machines',
+    seoTitle: 'Hydraulic fittings on American machines',
+    seoDescription:
+      'The inch thread families on American-built machines, how to tell JIC from ORFS and a taper thread from a straight port, and what a metric workshop adds.',
+  },
+  'fittings-on-european-machines': {
+    focusKeyword: 'european machines',
+    seoTitle: 'Hydraulic fittings on European machines',
+    seoDescription:
+      'The metric cone family on European-built machines, the light and heavy series distinction that catches people out, and what else sits at ports and pumps.',
+  },
+  'korean-excavator-hydraulic-fittings': {
+    focusKeyword: 'korean excavator',
+    seoTitle: 'Korean excavator hydraulic fittings',
+    seoDescription:
+      'Which thread families to expect on Korean-built excavators, why one machine can carry more than one, and how to identify per line rather than per machine.',
+  },
+  'bsp-or-metric-fittings': {
+    focusKeyword: 'bsp or metric fittings',
+    seoTitle: 'BSP or metric fittings: which is it?',
+    seoDescription:
+      'Why thread convention follows the origin of the machine rather than the country it works in, and how to stock a workshop for a mixed-import fleet.',
+  },
+  'measuring-a-fitting-without-gauges': {
+    focusKeyword: 'fitting without gauges',
+    seoTitle: 'Measuring a fitting without gauges',
+    seoDescription:
+      'How to identify a hydraulic fitting in the field with a caliper, a ruler and a known bolt: what each measurement settles, and what to send a supplier.',
+  },
+  'building-a-thread-reference-board': {
+    focusKeyword: 'thread reference board',
+    seoTitle: 'Building a thread reference board',
+    seoDescription:
+      'How to build a hydraulic thread reference board: which samples to mount, how to label them so they stay trustworthy, and how to use it when ordering.',
+  },
+  'bridging-two-thread-standards': {
+    focusKeyword: 'two thread standards',
+    seoTitle: 'Bridging two thread standards safely',
+    seoDescription:
+      'When adapting between hydraulic thread families is correct, why stacked adapters fail, and how to design the bridge out at the next hose change.',
+  },
+  'what-to-send-for-a-fittings-quote': {
+    focusKeyword: 'fittings quote',
+    seoTitle: 'What to send for a fittings quote',
+    seoDescription:
+      'The measurements, photographs and context a supplier needs to name a hydraulic fitting on the first reply, and the two details buyers leave out.',
+  },
+  'cross-referencing-a-fitting-part-number': {
+    focusKeyword: 'fitting part number',
+    seoTitle: 'Cross-referencing a fitting part number',
+    seoDescription:
+      'How to translate a hydraulic fitting part number into the geometry that matters, why interchange tables are risky, and what to send a supplier instead.',
+  },
+  'adapter-kit-for-a-mixed-fleet': {
+    focusKeyword: 'adapter kit',
+    seoTitle: 'An adapter kit for a mixed fleet',
+    seoDescription:
+      'How to derive a fitting and adapter kit from the machines you actually run, which lines are worth doubling, and why a catalogue kit is mostly dead stock.',
+  },
+  'spares-list-for-a-remote-site': {
+    focusKeyword: 'spares list',
+    seoTitle: 'A spares list for a remote site',
+    seoDescription:
+      'How to choose hydraulic fittings, seals and hose spares for a site far from resupply, weighted by what stops production rather than by unit cost.',
+  },
+  'inspecting-fittings-on-arrival': {
+    focusKeyword: 'inspecting fittings',
+    seoTitle: 'Inspecting fittings on arrival',
+    seoDescription:
+      'What to check when a consignment of hydraulic fittings arrives: thread quality, seat finish, count and plating, and which faults cannot be seen at all.',
+  },
+  'plating-and-corrosion-on-fittings': {
+    focusKeyword: 'plating and corrosion',
+    seoTitle: 'Plating and corrosion on fittings',
+    seoDescription:
+      'Zinc, zinc-nickel and other finishes on hydraulic fittings, how corrosion resistance is compared, and what changes on a humid or coastal site.',
+  },
+  'when-stainless-is-worth-it': {
+    focusKeyword: 'when stainless is worth it',
+    seoTitle: 'Fittings: when stainless is worth it',
+    seoDescription:
+      'Where stainless fittings earn their cost, why they are often rated below carbon steel, and how to decide position by position rather than for a machine.',
+  },
+  'air-or-sea-for-a-fittings-order': {
+    focusKeyword: 'air or sea',
+    seoTitle: 'Air or sea for a fittings order',
+    seoDescription:
+      'How to choose between air and sea freight for hydraulic fittings, why per-consignment costs dominate, and when a split shipment is the cheaper answer.',
+  },
+  'consolidating-fittings-with-a-hose-order': {
+    focusKeyword: 'consolidating fittings',
+    seoTitle: 'Consolidating fittings with hose',
+    seoDescription:
+      'Why sending fittings and hose as one consignment costs less than two, what has to be decided earlier to do it, and when splitting the order is still right.',
+  },
+  'substituting-a-fitting-safely': {
+    focusKeyword: 'substituting a fitting',
+    seoTitle: 'Substituting a fitting safely: rules',
+    seoDescription:
+      'What must match before substituting a hydraulic fitting: thread and seat, pressure rating, material and bore, and when a substitution should be refused.',
+  },
+  'copper-mine-hydraulic-fittings': {
+    focusKeyword: 'copper mine hydraulic fittings',
+    seoTitle: 'Copper mine hydraulic fittings',
+    seoDescription:
+      'What fails on a mining haul fleet versus in the concentrator, which materials the environment argues for, and how to stock a site far from resupply.',
+  },
+  'gold-plant-hydraulic-fittings': {
+    focusKeyword: 'gold plant hydraulic fittings',
+    seoTitle: 'Gold plant hydraulic fittings guide',
+    seoDescription:
+      'Which areas of a gold circuit are abrasion problems and which are chemical ones, and how that changes the material and finish you should specify.',
+  },
+  'oilfield-fittings-in-west-africa': {
+    focusKeyword: 'oilfield fittings',
+    seoTitle: 'Oilfield fittings in West Africa',
+    seoDescription:
+      'How oilfield supply into West Africa splits between rig-side flow equipment and general plant hydraulics, and what documentation each one attracts.',
+  },
+  'agriculture-and-construction-fittings': {
+    focusKeyword: 'construction fittings',
+    seoTitle: 'Agriculture and construction fittings',
+    seoDescription:
+      'How to stock hydraulic fittings for a workshop covering tractors, implements and light construction plant, and which failures actually recur.',
+  },
+  'quarry-and-crusher-fittings': {
+    focusKeyword: 'quarry and crusher fittings',
+    seoTitle: 'Quarry and crusher fittings guide',
+    seoDescription:
+      'Why hydraulic joints fail on crushing and screening plant, what vibration does to a port, and the changes that actually extend life in a quarry.',
+  },
+  'water-well-drilling-rig-fittings': {
+    focusKeyword: 'drilling rig fittings',
+    seoTitle: 'Water well drilling rig fittings',
+    seoDescription:
+      'Which hydraulic fittings and spares to carry on a water-well drilling rig, what fails on rotation and feed circuits, and how to stock a machine that moves.',
+  },
+  'port-and-terminal-fittings': {
+    focusKeyword: 'port and terminal fittings',
+    seoTitle: 'Port and terminal fittings: salt air',
+    seoDescription:
+      'Hydraulic fittings for port equipment: why salt air decides the finish, what fails on reach stackers and cranes, and how to plan around continuous work.',
+  },
+  'sugar-mill-and-agro-processing-fittings': {
+    focusKeyword: 'sugar mill',
+    seoTitle: 'Sugar mill fittings and the season',
+    seoDescription:
+      'Hydraulic fittings in sugar and agro-processing plant: steam and washdown exposure, what to change in the off-season, and how to buy against a calendar.',
+  },
+  'buying-fittings-in-south-africa': {
+    focusKeyword: 'buying fittings',
+    seoTitle: 'Buying fittings in South Africa',
+    seoDescription:
+      'When to buy hydraulic fittings locally in South Africa and when importing makes sense: volume, long-lead items, mixed consignments and specifications.',
+  },
+  'factory-and-fixed-plant-fittings': {
+    focusKeyword: 'fixed plant fittings',
+    seoTitle: 'Fixed plant fittings: standardise',
+    seoDescription:
+      'Why fixed manufacturing plant should narrow its hydraulic fitting families, how to convert without a shutdown, and what it saves in stores and downtime.',
+  },
 }

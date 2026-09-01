@@ -36,7 +36,7 @@ const ARTICLE: BlogArticleSeed = {
     },
     {
       type: 'lead',
-      html: 'Korean excavators and loaders are everywhere in the fleets we supply, and they are the machine that most often defeats the habit of learning one convention per manufacturer. The useful mental model is not "this brand uses that thread"; it is that these machines were designed in a region where two conventions are both normal, and either may appear.',
+      html: 'Korean excavator hydraulic fittings defeat the habit of learning one convention per manufacturer. Korean excavators and loaders are everywhere in the fleets we supply, and they are the machine that most often defeats the habit of learning one convention per manufacturer. The useful mental model is not "this brand uses that thread"; it is that these machines were designed in a region where two conventions are both normal, and either may appear.',
     },
 
     {

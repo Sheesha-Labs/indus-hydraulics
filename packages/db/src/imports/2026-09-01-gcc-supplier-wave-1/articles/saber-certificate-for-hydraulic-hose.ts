@@ -42,7 +42,7 @@ const ARTICLE: BlogArticleSeed = {
     },
     {
       type: 'lead',
-      html: 'Saudi Arabia is the largest export lane out of Dubai and the one where the documents, not the distance, decide the arrival date. Road transit to Riyadh is around three working days. A consignment whose conformity registration was started when the truck was loaded takes considerably longer than that, and none of the extra time is spent moving.',
+      html: 'The SABER certificate a Saudi buyer asks about is not one document but two, and only one of them can be reused. Saudi Arabia is the largest export lane out of Dubai and the one where the documents, not the distance, decide the arrival date. Road transit to Riyadh is around three working days. A consignment whose conformity registration was started when the truck was loaded takes considerably longer than that, and none of the extra time is spent moving.',
     },
 
     {

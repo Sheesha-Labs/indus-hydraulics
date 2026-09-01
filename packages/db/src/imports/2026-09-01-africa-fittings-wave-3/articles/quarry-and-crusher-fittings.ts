@@ -22,7 +22,7 @@ const ARTICLE: BlogArticleSeed = {
   bodyBlocks: [
     {
       type: 'direct_answer',
-      question: 'Why do fittings fail so often on crushing plant?',
+      question: 'Why do quarry and crusher fittings fail so much faster than the hose they join?',
       answer:
         'Because the plant vibrates continuously and a threaded joint is the least tolerant part of the assembly. Vibration loosens make-up, works fretting damage into seats, and fatigues the port thread behind the fitting — and every extra joint in a line multiplies the exposure. On a quarry the productive changes are almost always fewer joints, better clamping and correct make-up rather than a higher-rated hose.',
     },

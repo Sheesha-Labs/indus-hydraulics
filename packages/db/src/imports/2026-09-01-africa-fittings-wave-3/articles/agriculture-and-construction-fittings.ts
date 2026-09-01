@@ -22,7 +22,7 @@ const ARTICLE: BlogArticleSeed = {
   bodyBlocks: [
     {
       type: 'lead',
-      html: 'Most workshops we supply in East Africa are not specialists. They keep a few tractors, a backhoe or two, a tipper, a generator and whatever the owner has bought since, and they do it with one drawer of parts and one fitter who has learned the fleet by heart. That is a harder stocking problem than a mine has, because the variety is higher and the budget is smaller.',
+      html: 'Agriculture and construction fittings end up in one drawer on most of the yards we supply. Most workshops we supply in East Africa are not specialists. They keep a few tractors, a backhoe or two, a tipper, a generator and whatever the owner has bought since, and they do it with one drawer of parts and one fitter who has learned the fleet by heart. That is a harder stocking problem than a mine has, because the variety is higher and the budget is smaller.',
     },
     {
       type: 'key_takeaways',

@@ -35,7 +35,7 @@ const ARTICLE: BlogArticleSeed = {
     },
     {
       type: 'lead',
-      html: 'American-built machines — and machines built anywhere for the North American market — bring the inch families with them, and they arrive as a group rather than one at a time. A workshop whose fleet has been metric and BSP until now meets four new things in one afternoon, two of which look enough alike to be swapped.',
+      html: 'The fittings on American machines arrive as a family group rather than one at a time. American-built machines — and machines built anywhere for the North American market — bring the inch families with them, and they arrive as a group rather than one at a time. A workshop whose fleet has been metric and BSP until now meets four new things in one afternoon, two of which look enough alike to be swapped.',
     },
 
     {

@@ -31,7 +31,7 @@ const ARTICLE: BlogArticleSeed = {
     },
     {
       type: 'lead',
-      html: 'Copper mining across the central African belt runs two hydraulic systems that share nothing but a gate: a mobile fleet of excavators, haul trucks, loaders and drills, and a fixed plant of crushers, mills, thickeners, filter presses and pumps. Treating them as one stores problem is the commonest reason a mine workshop is simultaneously overstocked and out of the part it needs.',
+      html: 'Copper mine hydraulic fittings are bought for two different machines populations that share nothing but a gate. Copper mining across the central African belt runs two hydraulic systems that share nothing but a gate: a mobile fleet of excavators, haul trucks, loaders and drills, and a fixed plant of crushers, mills, thickeners, filter presses and pumps. Treating them as one stores problem is the commonest reason a mine workshop is simultaneously overstocked and out of the part it needs.',
     },
 
     {

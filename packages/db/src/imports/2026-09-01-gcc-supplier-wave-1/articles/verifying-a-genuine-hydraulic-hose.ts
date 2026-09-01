@@ -40,7 +40,7 @@ const ARTICLE: BlogArticleSeed = {
     },
     {
       type: 'lead',
-      html: 'Verification is usually discussed as a counterfeiting problem, which makes it sound rare and dramatic. In practice most identity failures on a site are mundane: a coil re-labelled in a store, a substitution made in good faith during a breakdown and never written down, an assembly built from whatever was on the rack. The checks are the same either way, and they take a minute.',
+      html: 'Verifying a genuine hydraulic hose is usually discussed as a counterfeiting problem, which makes it sound rarer than it is. Verification is usually discussed as a counterfeiting problem, which makes it sound rare and dramatic. In practice most identity failures on a site are mundane: a coil re-labelled in a store, a substitution made in good faith during a breakdown and never written down, an assembly built from whatever was on the rack. The checks are the same either way, and they take a minute.',
     },
 
     {

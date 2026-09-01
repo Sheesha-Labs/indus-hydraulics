@@ -36,7 +36,7 @@ const ARTICLE: BlogArticleSeed = {
     },
     {
       type: 'lead',
-      html: 'A West African oilfield contractor buys two very different things that arrive in the same box: flow-iron and pressure-control ancillaries that carry standards and paperwork, and the ordinary hydraulic hose and adapters that keep cranes, workshops and utility plant running. They have different lead times, different acceptance criteria and different documentation, and the single most common cause of a delayed consignment is that they were ordered as one line.',
+      html: 'Oilfield fittings and ordinary plant hydraulics arrive on the same site and behave like two different supply chains. A West African oilfield contractor buys two very different things that arrive in the same box: flow-iron and pressure-control ancillaries that carry standards and paperwork, and the ordinary hydraulic hose and adapters that keep cranes, workshops and utility plant running. They have different lead times, different acceptance criteria and different documentation, and the single most common cause of a delayed consignment is that they were ordered as one line.',
     },
 
     {
