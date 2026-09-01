@@ -16,11 +16,11 @@ describe('BLOG_CROSS_LINKS', () => {
    * the exact failure this file was written after.
    *
    * 93 after the hose programme; 103 after the GCC supplier sprint's first
-   * wave; 113 and then 123 across the Africa fittings sprint's first two
-   * waves (2026-09-01).
+   * wave; 113, 123 and 133 across the Africa fittings sprint's three waves
+   * (2026-09-01).
    */
   it('covers the whole blog', () => {
-    expect(entries.length).toBe(123)
+    expect(entries.length).toBe(143)
   })
 
   it('never links an article to itself', () => {
@@ -47,13 +47,23 @@ describe('BLOG_CROSS_LINKS', () => {
    * The cap survives the delivery-reach section rather than being replaced by
    * it. `market_reach` puts a shipping note on every article; a `page_link`
    * card claims the article is *about* that country, and that claim is only
-   * true a dozen times. Raising this number is how the blog would drift into
-   * the doorway-page shape the teardown criticises — see `market-reach.test.ts`
-   * for what keeps the generated section out of it.
+   * true a small number of times. Raising this number is how the blog would
+   * drift into the doorway-page shape the teardown criticises — see
+   * `market-reach.test.ts` for what keeps the generated section out of it.
+   *
+   * RAISED FROM 12 TO 18 ON 2026-09-01, by the founder, for the Africa fittings
+   * sprint's sector wave. Eight of those ten articles genuinely are about a
+   * place: the lane, the resupply distance and the imported fleet mix are the
+   * subject of the piece rather than an added link. Two of the ten carry no
+   * card for exactly that reason — a crusher is a crusher anywhere.
+   *
+   * The cap is a budget, not a target. Anything that would push past 18 needs
+   * the same test applied by hand first: is this article ABOUT that country, or
+   * is it an article with a country bolted onto it?
    */
   it('keeps market linking sparse — this is not a doorway-page programme', () => {
     const withMarkets = entries.filter((e) => e[1].pages?.some((p) => p.kind === 'market'))
-    expect(withMarkets.length).toBeLessThanOrEqual(12)
+    expect(withMarkets.length).toBeLessThanOrEqual(18)
   })
 
   it('uses only kebab-case slugs, so a pasted URL fails here rather than at import', () => {

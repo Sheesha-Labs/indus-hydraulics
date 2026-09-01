@@ -25,7 +25,7 @@ const ARTICLE: BlogArticleSeed = {
   bodyBlocks: [
     {
       type: 'direct_answer',
-      question: 'Why do two fittings with the same 30° seat not fit each other?',
+      question: 'Why do the fittings on a used Japanese machine share a seat angle and still not interchange?',
       answer:
         'Because the seat and the thread are separate decisions. Japanese practice includes a 30° flare seat carried on a BSP parallel thread and a 30° flare seat carried on a metric thread. Measure only the seat and both look like the same family; measure the thread and they are not interchangeable. Always identify a fitting by seat angle *and* thread — one without the other is half an answer.',
     },

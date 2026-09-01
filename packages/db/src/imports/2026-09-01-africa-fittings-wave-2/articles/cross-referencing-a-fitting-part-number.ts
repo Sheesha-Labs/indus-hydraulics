@@ -22,7 +22,7 @@ const ARTICLE: BlogArticleSeed = {
   bodyBlocks: [
     {
       type: 'direct_answer',
-      question: 'How do I find the equivalent of a fitting part number?',
+      question: 'How do I find the equivalent of a fitting part number I cannot decode?',
       answer:
         'Stop treating the number as the thing to match and treat the geometry as the thing to match: end forms at both ends, thread and seat at each, bore, pressure rating and material. A number encodes those in one manufacturer’s scheme; another maker’s number encodes the same facts differently. Two parts are interchangeable when the geometry and rating agree, not when a table says so.',
     },

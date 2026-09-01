@@ -35,7 +35,7 @@ const ARTICLE: BlogArticleSeed = {
     },
     {
       type: 'lead',
-      html: 'Fittings arrive in bags, in quantity, and usually when someone is busy. They get signed for and shelved, and any problem in them surfaces weeks later at the worst moment, by which point the consignment is untraceable and the argument is unwinnable. Five minutes on the bay prevents nearly all of that.',
+      html: 'Inspecting fittings on arrival takes five minutes and settles arguments that are unwinnable six weeks later. Fittings arrive in bags, in quantity, and usually when someone is busy. They get signed for and shelved, and any problem in them surfaces weeks later at the worst moment, by which point the consignment is untraceable and the argument is unwinnable. Five minutes on the bay prevents nearly all of that.',
     },
 
     {

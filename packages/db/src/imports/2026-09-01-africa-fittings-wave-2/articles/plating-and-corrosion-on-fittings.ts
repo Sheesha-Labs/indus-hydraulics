@@ -25,7 +25,7 @@ const ARTICLE: BlogArticleSeed = {
   bodyBlocks: [
     {
       type: 'direct_answer',
-      question: 'Does the plating on a hydraulic fitting matter?',
+      question: 'Does the plating and corrosion resistance of a hydraulic fitting actually matter?',
       answer:
         'On a dry inland site, rarely. On a humid coastal one, it decides how long the fitting lasts — because corrosion attacks the thread and the hex from the outside while the joint is still sealing perfectly on the inside. Common finishes are ordered by how long they resist a standardised salt-spray exposure, and the ordering is consistent even though the hours vary by supplier: plain zinc is the baseline, and zinc-nickel is substantially better.',
     },

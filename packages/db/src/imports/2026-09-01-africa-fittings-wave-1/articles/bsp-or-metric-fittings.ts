@@ -29,7 +29,7 @@ const ARTICLE: BlogArticleSeed = {
   bodyBlocks: [
     {
       type: 'direct_answer',
-      question: 'Does my country use BSP or metric hydraulic fittings?',
+      question: 'Does my country use BSP or metric fittings on its machines?',
       answer:
         'Neither, as a country. Thread convention is a property of the machine, which follows where the machine was built and for which market. A workshop in one town can hold machines from four origins with three conventions between them. Plumbing and pipework inherit national habits; hydraulic connections on mobile plant inherit the factory.',
     },

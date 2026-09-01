@@ -32,7 +32,7 @@ const ARTICLE: BlogArticleSeed = {
     },
     {
       type: 'lead',
-      html: 'Most sites order the way failures happen: one thing at a time, urgently. It is entirely understandable and it is the most expensive pattern available, because almost everything that costs money about a shipment is charged per shipment rather than per part.',
+      html: 'Consolidating fittings into a hose order is the cheapest change most sites can make to what they already buy. Most sites order the way failures happen: one thing at a time, urgently. It is entirely understandable and it is the most expensive pattern available, because almost everything that costs money about a shipment is charged per shipment rather than per part.',
     },
 
     {

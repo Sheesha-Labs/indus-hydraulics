@@ -25,7 +25,7 @@ const ARTICLE: BlogArticleSeed = {
   bodyBlocks: [
     {
       type: 'direct_answer',
-      question: 'When is it safe to substitute a hydraulic fitting?',
+      question: 'When is substituting a fitting safely possible, and when is it not?',
       answer:
         'When four things match: the thread and seat at each end, the pressure rating against the line, the material against the fluid and environment, and the bore against the flow. Get all four and the substitution is an engineering equivalent, not a compromise. Miss the rating and you have a part that fits, works, and fails later under load — which is the one failure mode in this article that hurts somebody.',
     },

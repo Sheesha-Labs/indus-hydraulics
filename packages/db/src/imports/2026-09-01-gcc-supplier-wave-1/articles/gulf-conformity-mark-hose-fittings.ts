@@ -29,7 +29,7 @@ const ARTICLE: BlogArticleSeed = {
   bodyBlocks: [
     {
       type: 'direct_answer',
-      question: 'Does hydraulic hose need a G-Mark?',
+      question: 'Does hydraulic hose need a Gulf conformity mark?',
       answer:
         'No. The Gulf conformity mark is scoped to low-voltage electrical equipment and children’s toys, with the list being extended across household electrical products. Hydraulic and industrial hose are not in scope, and no conformity body can issue a G-Mark against them. What a hose consignment actually needs is national — SABER in Saudi Arabia, KUCAS in Kuwait — plus the ordinary commercial documents and whatever the end user has written into the purchase order.',
     },

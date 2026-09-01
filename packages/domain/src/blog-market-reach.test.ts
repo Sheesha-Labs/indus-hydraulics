@@ -32,7 +32,9 @@ describe('buildMarketReachBlock', () => {
     // from the Africa fittings sprint (both 2026-09-01). The count is asserted
     // so a new category cannot ship without a profile — the failure mode being
     // a hub whose articles silently say nothing about delivery.
-    expect(CATEGORIES).toHaveLength(13)
+    // Fourteen with `hydraulic-fittings-by-industry` from the Africa fittings
+    // sprint's third wave (2026-09-01).
+    expect(CATEGORIES).toHaveLength(14)
   })
 
   it('returns null for a category with no profile, rather than guessing one', () => {

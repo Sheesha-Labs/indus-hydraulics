@@ -69,8 +69,12 @@ export function withFigures(
   let out: BlogBlocksInput = base
 
   for (const figure of ordered) {
-    const imageId = heroIdBySlug.get(figure.from)
-    if (!imageId) continue
+    // A figure with no `from` is a reserved slot: the block is written with a
+    // null id and renders as nothing until an image pass fills it. A figure
+    // that names an article whose hero cannot be resolved is a mistake rather
+    // than an intention, so that one is still skipped.
+    const imageId = figure.from ? (heroIdBySlug.get(figure.from) ?? null) : null
+    if (figure.from && !imageId) continue
 
     let seen = 0
     let at = -1
@@ -88,6 +92,8 @@ export function withFigures(
         imageId,
         caption: figure.caption,
         aspectRatio: figure.aspectRatio ?? '16/9',
+        ...(figure.placeholderLabel ? { placeholderLabel: figure.placeholderLabel } : {}),
+        ...(figure.captionPrefix ? { captionPrefix: figure.captionPrefix } : {}),
       },
       ...out.slice(at + 1),
     ]
@@ -173,12 +179,32 @@ export async function runBlogArticleImport({
   const seenSlugs = new Set<string>()
   const parsedBlocks = new Map<string, BlogBlocks>()
 
+  // Figures are composed here rather than by a one-shot script, so a re-import
+  // reapplies them the same way it reapplies the link graph and the SEO
+  // metadata. Before this, `withFigures` existed and nothing in the import path
+  // called it: the 2026-08-25 script applied the figures once and any later
+  // re-run of a wave silently dropped them.
+  //
+  // A borrowed figure resolves to the lending article's hero; a reserved slot
+  // has no `from` and resolves to null, which renders as nothing until an image
+  // pass fills it.
+  const heroes = await db.blogPost.findMany({
+    where: { heroId: { not: null } },
+    select: { slug: true, heroId: true },
+  })
+  const heroIdBySlug = new Map<string, string>()
+  for (const h of heroes) if (h.heroId) heroIdBySlug.set(h.slug, h.heroId)
+
   for (const article of articles) {
     if (seenSlugs.has(article.slug)) errors.push(`duplicate slug: ${article.slug}`)
     seenSlugs.add(article.slug)
 
     const parsed = BlogBlocksSchema.safeParse(
-      withCrossLinks(article.slug, article.bodyBlocks, article.categorySlug)
+      withFigures(
+        article.slug,
+        withCrossLinks(article.slug, article.bodyBlocks, article.categorySlug),
+        heroIdBySlug
+      )
     )
     if (!parsed.success) {
       for (const issue of parsed.error.issues) {

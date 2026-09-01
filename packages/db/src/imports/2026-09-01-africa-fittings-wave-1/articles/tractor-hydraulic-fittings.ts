@@ -38,7 +38,7 @@ const ARTICLE: BlogArticleSeed = {
     },
     {
       type: 'lead',
-      html: 'A tractor is repaired where it stops. That single fact separates agricultural hydraulics from every other kind we supply — an excavator is on a site with a workshop, and a tractor is in a field an hour from a road, at the point in the year when the work cannot wait. The right response is not faster identification. It is stocking correctly before the season starts.',
+      html: 'Tractor hydraulic fittings are replaced further from a counter than almost anything else we supply. A tractor is repaired where it stops. That single fact separates agricultural hydraulics from every other kind we supply — an excavator is on a site with a workshop, and a tractor is in a field an hour from a road, at the point in the year when the work cannot wait. The right response is not faster identification. It is stocking correctly before the season starts.',
     },
 
     {

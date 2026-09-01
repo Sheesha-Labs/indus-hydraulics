@@ -25,7 +25,7 @@ const ARTICLE: BlogArticleSeed = {
   bodyBlocks: [
     {
       type: 'direct_answer',
-      question: 'Should fittings go by air or by sea?',
+      question: 'Air or sea for a fittings order — which is actually cheaper?',
       answer:
         'It depends far less on the parts than on what is waiting for them. Fittings are dense and low-volume, so air freight on a small consignment is often a smaller number than people assume — and the fixed costs of clearing any consignment, by either mode, usually dominate the freight itself. The practical answer for most sites: plan replenishment by sea, and keep air for the specific parts that are holding a machine.',
     },

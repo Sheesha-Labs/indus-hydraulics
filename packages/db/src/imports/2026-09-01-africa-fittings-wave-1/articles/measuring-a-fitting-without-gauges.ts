@@ -38,7 +38,7 @@ const ARTICLE: BlogArticleSeed = {
     },
     {
       type: 'lead',
-      html: 'The gauges cost very little and every workshop should own them. This article is for the other situation: the machine is in a field or on a haul road, the toolbox has a tape and a caliper in it, and the answer has to be good enough to order a part today rather than after the next trip to town.',
+      html: 'Measuring a fitting without gauges is a field skill rather than a substitute for owning them. The gauges cost very little and every workshop should own them. This article is for the other situation: the machine is in a field or on a haul road, the toolbox has a tape and a caliper in it, and the answer has to be good enough to order a part today rather than after the next trip to town.',
     },
 
     {

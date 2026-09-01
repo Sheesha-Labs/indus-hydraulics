@@ -31,7 +31,7 @@ const ARTICLE: BlogArticleSeed = {
   bodyBlocks: [
     {
       type: 'direct_answer',
-      question: 'Can a hydraulic hose be "NACE MR0175 compliant"?',
+      question: 'Can a hydraulic hose be NACE MR0175 compliant?',
       answer:
         'Its metallic parts can. MR0175, published jointly as ISO 15156, sets requirements for metallic materials used in H2S-containing oil and gas production environments — so it governs the fittings, ferrules and any wetted steel. It does not set requirements for the rubber tube, whose behaviour in sour service is a compound-selection and rapid-decompression question answered separately. A supplier who confirms "NACE compliant" without distinguishing the two has answered half the question.',
     },

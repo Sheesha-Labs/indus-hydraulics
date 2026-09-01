@@ -1084,4 +1084,206 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
       'stacking-hydraulic-adapters',
     ],
   },
+
+  // ── hydraulic-fittings-by-industry (2026-09-01 wave 3) ─────────────────
+  //
+  // This is the wave the market-card budget was raised for. Eight of the ten
+  // carry a card because eight of them genuinely are about a place — the lane,
+  // the resupply distance and the fleet mix are the article's subject, not
+  // decoration. The quarry and drilling-rig pieces carry none: a crusher is a
+  // crusher anywhere, and the generated reach section covers the geography.
+  'copper-mine-hydraulic-fittings': {
+    related: ['quarry-and-crusher-fittings', 'gold-plant-hydraulic-fittings', 'adapter-kit-for-a-mixed-fleet'],
+    pages: [
+      {
+        kind: 'market',
+        slug: 'zambia',
+        label: 'Supplying Zambia from Dubai',
+        blurb: 'The lane to the Copperbelt: freight, transit and the documents that travel with it.',
+      },
+    ],
+  },
+  'gold-plant-hydraulic-fittings': {
+    related: ['copper-mine-hydraulic-fittings', 'when-stainless-is-worth-it', 'plating-and-corrosion-on-fittings'],
+    pages: [
+      {
+        kind: 'market',
+        slug: 'ghana',
+        label: 'Supplying Ghana from Dubai',
+        blurb: 'Freight, transit and documentation on the Ghanaian lane.',
+      },
+    ],
+  },
+  'oilfield-fittings-in-west-africa': {
+    related: ['oilfield-hose-document-pack', 'api-7k-16c-16d-which-standard', 'vendor-approval-for-hose-supply'],
+    pages: [
+      {
+        kind: 'market',
+        slug: 'nigeria',
+        label: 'Supplying Nigeria from Dubai',
+        blurb: 'Form M, SONCAP and PAAR — the sequence that has to happen before the vessel sails.',
+      },
+    ],
+  },
+  'agriculture-and-construction-fittings': {
+    related: ['tractor-hydraulic-fittings', 'adapter-kit-for-a-mixed-fleet', 'bsp-or-metric-fittings'],
+    pages: [
+      {
+        kind: 'market',
+        slug: 'kenya',
+        label: 'Supplying Kenya from Dubai',
+        blurb: 'Lane, freight modes and the documents that travel with a consignment.',
+      },
+    ],
+  },
+  'quarry-and-crusher-fittings': {
+    related: [
+      'bridging-two-thread-standards',
+      'hydraulic-fitting-make-up-torque',
+      'hydraulic-hose-abrasion-failure',
+    ],
+  },
+  'water-well-drilling-rig-fittings': {
+    related: ['field-re-hosing-kit', 'spares-list-for-a-remote-site', 'measuring-a-fitting-without-gauges'],
+  },
+  'port-and-terminal-fittings': {
+    related: [
+      'plating-and-corrosion-on-fittings',
+      'when-stainless-is-worth-it',
+      'port-equipment-hydraulic-hose',
+    ],
+    pages: [
+      {
+        kind: 'market',
+        slug: 'south-africa',
+        label: 'Supplying South Africa from Dubai',
+        blurb: 'Sea and air lanes into Durban and the Gauteng inland leg.',
+      },
+    ],
+  },
+  'sugar-mill-and-agro-processing-fittings': {
+    related: ['factory-and-fixed-plant-fittings', 'hydraulic-hose-shelf-life-storage', 'steam-hose-safety'],
+    pages: [
+      {
+        kind: 'market',
+        slug: 'tanzania',
+        label: 'Supplying Tanzania from Dubai',
+        blurb: 'The Dar es Salaam lane and the inland leg behind it.',
+      },
+    ],
+  },
+  'buying-fittings-in-south-africa': {
+    related: [
+      'consolidating-fittings-with-a-hose-order',
+      'air-or-sea-for-a-fittings-order',
+      'adapter-kit-for-a-mixed-fleet',
+    ],
+    pages: [
+      {
+        kind: 'market',
+        slug: 'south-africa',
+        label: 'Supplying South Africa from Dubai',
+        blurb: 'What a consolidated consignment into South Africa actually involves.',
+      },
+    ],
+  },
+  'factory-and-fixed-plant-fittings': {
+    related: [
+      'sugar-mill-and-agro-processing-fittings',
+      'injection-moulding-hydraulic-hose',
+      'bsp-or-metric-fittings',
+    ],
+    pages: [
+      {
+        kind: 'market',
+        slug: 'egypt',
+        label: 'Supplying Egypt from Dubai',
+        blurb: 'Freight and documentation on the Egyptian lane.',
+      },
+    ],
+  },
+
+  // ── Africa fittings wave 4 — the diagnostic cluster (2026-09-01) ───────
+  //
+  // One market card in the wave, on the article that is genuinely about a long
+  // sea lane. Everything else is a condition rather than a place, so the
+  // generated reach section carries the geography. 17 of 18 after this.
+  'reading-a-weeping-joint': {
+    related: [
+      'new-hydraulic-hose-weeping',
+      'over-tightened-fitting-diagnosis',
+      'sealant-on-hydraulic-threads',
+    ],
+  },
+  'over-tightened-fitting-diagnosis': {
+    related: [
+      'hydraulic-fitting-make-up-torque',
+      'cross-threaded-hydraulic-port',
+      'damaged-port-repair-or-scrap',
+    ],
+  },
+  'why-fittings-seize-in-coastal-air': {
+    related: [
+      'removing-a-seized-hydraulic-fitting',
+      'plating-and-corrosion-on-fittings',
+      'galvanic-corrosion-in-fittings',
+    ],
+  },
+  'damaged-port-repair-or-scrap': {
+    related: [
+      'cross-threaded-hydraulic-port',
+      'over-tightened-fitting-diagnosis',
+      'bridging-two-thread-standards',
+    ],
+  },
+  'sealant-on-hydraulic-threads': {
+    related: [
+      'stopping-an-npt-thread-leak',
+      'jic-vs-orfs-vs-npt-vs-bsp',
+      'reading-a-weeping-joint',
+    ],
+  },
+  'galvanic-corrosion-in-fittings': {
+    related: [
+      'when-stainless-is-worth-it',
+      'plating-and-corrosion-on-fittings',
+      'why-fittings-seize-in-coastal-air',
+    ],
+  },
+  'dirt-ingress-in-transit-and-storage': {
+    related: [
+      'contamination-during-a-hose-change',
+      'storing-fittings-and-seals-on-site',
+      'air-or-sea-for-a-fittings-order',
+    ],
+    pages: [
+      {
+        kind: 'market',
+        slug: 'nigeria',
+        label: 'Supplying Nigeria from Dubai',
+        blurb: 'The longest lane we run — weeks at sea, and what that does to an uncapped part.',
+      },
+    ],
+  },
+  'storing-fittings-and-seals-on-site': {
+    related: [
+      'hydraulic-hose-shelf-life-storage',
+      'spares-list-for-a-remote-site',
+      'dirt-ingress-in-transit-and-storage',
+    ],
+  },
+  'reusing-fittings-in-a-rebuild': {
+    related: [
+      'inspecting-fittings-on-arrival',
+      'substituting-a-fitting-safely',
+      'bspp-bonded-seal-sizing',
+    ],
+  },
+  'crimping-on-site-or-adapting': {
+    related: [
+      'should-you-buy-a-hose-crimper',
+      'bridging-two-thread-standards',
+      'field-re-hosing-kit',
+    ],
+  },
 }
