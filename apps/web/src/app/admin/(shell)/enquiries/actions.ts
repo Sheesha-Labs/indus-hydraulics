@@ -1,7 +1,16 @@
 'use server'
 
-import { db, nextEnquiryCode } from '@indus/db'
-import { attributeReply, attributeSupplier, extractFromPaste } from '@indus/domain'
+import { db, nextEnquiryCode, nextQuoteCodeForEnquiry } from '@indus/db'
+import {
+  applyMarkup,
+  attributeReply,
+  attributeSupplier,
+  computeQuoteTotals,
+  computeVatRate,
+  extractFromPaste,
+  type MarkupMode,
+} from '@indus/domain'
+import { renderEstimatePdf, uploadQuotePdf } from '@indus/pdf'
 import { revalidatePath } from 'next/cache'
 
 import { inngest } from '../../../../inngest/client'
@@ -276,6 +285,225 @@ export async function recordSupplierOffer(formData: FormData): Promise<Result<{ 
 
     revalidatePath(`/admin/enquiries/${enquiry.code}/offers`)
     return ok({ offerId: offer.id, lines: extracted.lines.length, dropped: extracted.droppedForNoEvidence })
+  } catch (error) {
+    return failFromError(error)
+  }
+}
+
+/**
+ * Tick a supplier's offer line as the chosen source for an enquiry line.
+ *
+ * Selection records WHO chose and WHEN, enforced by a DB CHECK that keeps the
+ * two together. That is not bookkeeping pedantry: an `alternative` line means
+ * substituting a part on a hydraulic system, which is an engineering decision
+ * with liability, and it must be attributable to a person.
+ */
+export async function selectOfferLine(formData: FormData): Promise<Result<void>> {
+  try {
+    const session = await auth()
+    requireRole(session, ROLES.RFQ_REVIEW)
+    const staffId = session?.user?.id
+    if (!staffId) return fail('UNAUTHORIZED', 'Sign in again to record a selection.')
+
+    const parsed = z
+      .object({ offerLineId: z.string().uuid(), enquiryLineId: z.string().uuid() })
+      .safeParse({
+        offerLineId: formData.get('offerLineId'),
+        enquiryLineId: formData.get('enquiryLineId'),
+      })
+    if (!parsed.success) return failFromError(parsed.error)
+
+    const line = await db.supplierOfferLine.findUnique({
+      where: { id: parsed.data.offerLineId },
+      select: { id: true, unitPrice: true, offer: { select: { enquiry: { select: { code: true } } } } },
+    })
+    if (!line) return fail('NOT_FOUND', 'That offer line no longer exists.')
+    if (line.unitPrice == null) {
+      return fail('PRECONDITION_FAILED', 'That line has no readable price — fix it before selecting it.')
+    }
+
+    await db.$transaction(async (tx) => {
+      // One winner per enquiry line.
+      await tx.supplierOfferLine.updateMany({
+        where: { enquiryLineId: parsed.data.enquiryLineId, NOT: { id: parsed.data.offerLineId } },
+        data: { selectedById: null, selectedAt: null },
+      })
+      await tx.supplierOfferLine.update({
+        where: { id: parsed.data.offerLineId },
+        data: {
+          enquiryLineId: parsed.data.enquiryLineId,
+          selectedById: staffId,
+          selectedAt: new Date(),
+        },
+      })
+    })
+
+    revalidatePath(`/admin/enquiries/${line.offer.enquiry.code}/pricing`)
+    return ok(undefined)
+  } catch (error) {
+    return failFromError(error)
+  }
+}
+
+/**
+ * Produce the customer Estimate from the selected supplier offers.
+ *
+ * Builds an EstimateInput directly rather than going through an Rfq: RfqLine
+ * .productId is a required FK to Product, so free-text tender lines cannot live
+ * there, while EstimateLine is {description, qty, rate} with no product at all.
+ * The existing PDF, totals and VAT code therefore need no changes.
+ *
+ * Every line is snapshotted into QuoteLine WITH its cost and margin. Without
+ * that, issuing R2 would rewrite what R1 said, because the estimate builder
+ * reads live rows.
+ */
+export async function generateEnquiryQuote(formData: FormData): Promise<Result<{ code: string }>> {
+  try {
+    const session = await auth()
+    requireRole(session, ROLES.RFQ_REVIEW)
+
+    const parsed = z
+      .object({
+        enquiryId: z.string().uuid(),
+        markupMode: z.enum(['percentage', 'absolute', 'target_margin']),
+        markupValue: z.coerce.number().min(0),
+        shipToCountryCode: z.string().trim().length(2).optional(),
+      })
+      .safeParse({
+        enquiryId: formData.get('enquiryId'),
+        markupMode: formData.get('markupMode') || 'percentage',
+        markupValue: formData.get('markupValue') || '0',
+        shipToCountryCode: formData.get('shipToCountryCode') || undefined,
+      })
+    if (!parsed.success) return failFromError(parsed.error)
+
+    const enquiry = await db.enquiry.findUnique({
+      where: { id: parsed.data.enquiryId },
+      select: {
+        id: true,
+        code: true,
+        title: true,
+        buyerName: true,
+        lines: {
+          orderBy: { position: 'asc' },
+          select: {
+            id: true, position: true, description: true, qty: true, unit: true,
+            offerLines: {
+              where: { selectedAt: { not: null } },
+              select: { id: true, unitPrice: true, offer: { select: { supplierName: true } } },
+              take: 1,
+            },
+          },
+        },
+      },
+    })
+    if (!enquiry) return fail('NOT_FOUND', 'That enquiry no longer exists.')
+
+    const priced = enquiry.lines
+      .map((line) => {
+        const chosen = line.offerLines[0]
+        if (!chosen?.unitPrice) return null
+        const landed = Number(chosen.unitPrice)
+        const money = applyMarkup(landed, {
+          mode: parsed.data.markupMode as MarkupMode,
+          value: parsed.data.markupValue,
+        })
+        return { line, chosen, money, qty: line.qty ? Number(line.qty) : 1 }
+      })
+      .filter((x): x is NonNullable<typeof x> => x !== null)
+
+    if (priced.length === 0) {
+      return fail('PRECONDITION_FAILED', 'Select a supplier offer for at least one line first.')
+    }
+
+    const settings = await db.storeSettings.findFirst()
+    const vat = computeVatRate({
+      shipToCountryCode: parsed.data.shipToCountryCode ?? 'AE',
+      ...(settings?.defaultVatRatePct ? { defaultRate: Number(settings.defaultVatRatePct) } : {}),
+    })
+
+    const totals = computeQuoteTotals({
+      lines: priced.map((p) => ({ qty: p.qty, rate: p.money.sellPerUnitAed })),
+      vatRatePct: vat.rate,
+    })
+
+    const validityDays = settings?.defaultQuoteValidityDays ?? 30
+    const estimateDate = new Date()
+    const branding = {
+      legalName: settings?.legalName ?? 'Indus Hydraulic Power Trading LLC',
+      vatTrn: settings?.vatTrn ?? null,
+      addressLines: (settings?.registeredAddressLines as string[] | null) ?? [],
+    }
+
+    const codeResult = await nextQuoteCodeForEnquiry(enquiry.id)
+
+    const pdf = await renderEstimatePdf({
+      documentTitle: 'Estimate',
+      code: codeResult.code,
+      ...(codeResult.revision > 1 ? { revisionLabel: `r${codeResult.revision}` } : {}),
+      estimateDate,
+      expiryDate: new Date(estimateDate.getTime() + validityDays * 86_400_000),
+      subject: enquiry.title,
+      billTo: { name: enquiry.buyerName ?? 'Customer', addressLines: [] },
+      lines: priced.map((p) => ({
+        description: p.line.description,
+        qty: p.qty,
+        rate: p.money.sellPerUnitAed,
+      })),
+      currency: 'AED',
+      vatRatePct: vat.rate,
+      ...(vat.label ? { vatLabel: vat.label } : {}),
+      branding,
+      signature: {
+        name: settings?.signatureName ?? 'Krishan Bhatia',
+        title: settings?.signatureTitle ?? 'Managing Director',
+        company: branding.legalName,
+        phone: settings?.signaturePhone ?? null,
+        email: settings?.signatureEmail ?? null,
+        addressLines: branding.addressLines,
+      },
+      bank: null,
+    })
+
+    const upload = await uploadQuotePdf({
+      pdf,
+      fileSlug: codeResult.code.replace(/[^A-Za-z0-9]+/g, '-'),
+    })
+
+    const quote = await db.quote.create({
+      data: {
+        code: codeResult.code,
+        enquiryId: enquiry.id,
+        revision: codeResult.revision,
+        subtotal: totals.subtotal,
+        tax: totals.vatAmount,
+        total: totals.total,
+        currency: 'AED',
+        pdfMediaId: upload.mediaId,
+        lines: {
+          create: priced.map((p, i) => ({
+            position: i + 1,
+            description: p.line.description,
+            qty: p.qty,
+            unitPrice: p.money.sellPerUnitAed,
+            lineTotal: Math.round(p.qty * p.money.sellPerUnitAed * 100) / 100,
+            landedUnitCostAed: p.money.landedPerUnitAed,
+            markupMode: parsed.data.markupMode,
+            markupValue: parsed.data.markupValue,
+            marginPct: p.money.marginPct,
+            supplierOfferLineId: p.chosen.id,
+            enquiryLineId: p.line.id,
+          })),
+        },
+      },
+      select: { code: true },
+    })
+
+    await db.enquiry.update({ where: { id: enquiry.id }, data: { status: 'quoted' } })
+
+    revalidatePath(`/admin/enquiries/${enquiry.code}`)
+    revalidatePath(`/admin/enquiries/${enquiry.code}/pricing`)
+    return ok({ code: quote.code })
   } catch (error) {
     return failFromError(error)
   }

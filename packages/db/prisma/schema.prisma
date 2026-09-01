@@ -1162,8 +1162,12 @@ model RfqAttachment {
 model Quote {
   id                String    @id @default(uuid())
   code              String    @unique // Q-2026-0418
-  rfqId             String
-  rfq               Rfq       @relation(fields: [rfqId], references: [id])
+  /// Nullable since 2026-09-01: a quote may instead answer an inbound Enquiry.
+  /// A DB CHECK enforces exactly one of rfqId / enquiryId.
+  rfqId             String?
+  rfq               Rfq?      @relation(fields: [rfqId], references: [id])
+  enquiryId         String?
+  enquiry           Enquiry?  @relation(fields: [enquiryId], references: [id])
   revision          Int       @default(1)
   subtotal          Decimal   @db.Decimal(12, 2)
   discountTotal     Decimal   @default(0) @db.Decimal(12, 2)
@@ -1182,8 +1186,10 @@ model Quote {
 
   orders     Order[]
   sentEmails SentEmail[]
+  lines      QuoteLine[]
 
   @@index([rfqId])
+  @@index([enquiryId])
   @@map("quotes")
 }
 
@@ -2365,6 +2371,7 @@ model Enquiry {
   lines          EnquiryLine[]
   researchRuns   ResearchRun[]
   supplierOffers SupplierOffer[]
+  quotes         Quote[]
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
@@ -2404,6 +2411,7 @@ model EnquiryLine {
 
   researchResults ItemResearchResult[]
   offerLines      SupplierOfferLine[]
+  quoteLines      QuoteLine[]
 
   @@index([enquiryId])
   @@index([reviewStatus])
@@ -2719,6 +2727,8 @@ model SupplierOfferLine {
   selectedBy   StaffUser? @relation("OfferLineSelectedBy", fields: [selectedById], references: [id])
   selectedAt   DateTime?
 
+  quoteLines QuoteLine[]
+
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 
@@ -2744,4 +2754,41 @@ enum OfferAttributionMethod {
   reference_token
   manual
   fuzzy
+}
+
+/// Per-line SNAPSHOT of what a quote actually said.
+///
+/// Without this, revisions rewrite history: `buildEstimateInputFromRfq` reads
+/// LIVE RfqLine rows, so issuing R2 changes what R1 appears to have contained.
+/// The only frozen record today is the rendered PDF.
+model QuoteLine {
+  id       String @id @default(uuid())
+  quoteId  String
+  quote    Quote  @relation(fields: [quoteId], references: [id], onDelete: Cascade)
+
+  position    Int     @default(0)
+  description String
+  qty         Decimal @db.Decimal(14, 3)
+  unitPrice   Decimal @db.Decimal(14, 4)
+  lineTotal   Decimal @db.Decimal(14, 2)
+
+  /// What it cost us, frozen at send time — the number nobody can reconstruct
+  /// later, and the one that decides whether a job made money.
+  landedUnitCostAed Decimal? @db.Decimal(14, 4)
+  markupMode        String?
+  markupValue       Decimal? @db.Decimal(10, 4)
+  /// Margin OF SELL PRICE, stored explicitly. A 30% markup is a 23.08% margin;
+  /// recording only one of the two invites the wrong read.
+  marginPct         Decimal? @db.Decimal(6, 2)
+
+  supplierOfferLineId String?
+  supplierOfferLine   SupplierOfferLine? @relation(fields: [supplierOfferLineId], references: [id])
+  enquiryLineId       String?
+  enquiryLine         EnquiryLine?       @relation(fields: [enquiryLineId], references: [id])
+
+  createdAt DateTime @default(now())
+
+  @@unique([quoteId, position])
+  @@index([quoteId])
+  @@map("quote_lines")
 }

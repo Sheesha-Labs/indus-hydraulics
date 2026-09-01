@@ -28,6 +28,11 @@ export async function GET(req: Request, { params }: RouteContext) {
 
   if (!quote || !quote.pdfMedia) return new NextResponse('Not found', { status: 404 })
 
+  // This viewer authorises against the customer account on the parent RFQ.
+  // A quote raised from an inbound Enquiry has no customer account behind it
+  // and is an internal document — it is not served here.
+  if (!quote.rfq) return new NextResponse('Not found', { status: 404 })
+
   const url = new URL(req.url)
   const token = url.searchParams.get('token')
   const tokenCheck = token ? verifyQuoteAccessToken(token, quote.rfq.code) : null

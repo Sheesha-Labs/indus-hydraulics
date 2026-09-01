@@ -56,6 +56,33 @@ export async function nextEnquiryCode(
   return formatEnquiryCode(year, value)
 }
 
+/**
+ * Next quote code for an ENQUIRY.
+ *
+ * Shares the `quote` counter with the RFQ path deliberately — the customer
+ * sees one running series (INDUS/Q26386, Q26387...) regardless of whether the
+ * work started as a catalogue RFQ or an inbound tender.
+ */
+export async function nextQuoteCodeForEnquiry(
+  enquiryId: string,
+  client: DbClient = db,
+): Promise<NextQuoteCode> {
+  const previous = await client.quote.findMany({
+    where: { enquiryId },
+    select: { code: true, revision: true },
+    orderBy: { revision: 'desc' },
+    take: 1,
+  })
+  const last = previous[0]
+  if (last) {
+    const base = last.code.replace(/-R\d+$/, '')
+    const revision = last.revision + 1
+    return { kind: 'revision', code: `${base}-R${revision}`, revision, ofCode: last.code }
+  }
+  const value = await nextValue(client, 'quote', new Date().getFullYear())
+  return { kind: 'new', code: formatQuoteCode(value), revision: 1 }
+}
+
 export type NextQuoteCode =
   | { kind: 'new'; code: string; revision: 1 }
   | { kind: 'revision'; code: string; revision: number; ofCode: string }

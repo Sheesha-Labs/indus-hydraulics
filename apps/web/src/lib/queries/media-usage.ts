@@ -528,7 +528,11 @@ function internalSources(): Source[] {
                 id: r.id,
                 label: nonEmpty(r.rfq.code, 'RFQ'),
                 role: 'Attachment',
-                href: adminPath(`/rfqs/${r.rfq.code}`),
+                // A quote raised from an inbound Enquiry has no parent RFQ; link to
+                // the quote list rather than emitting /rfqs/undefined. Getting this
+                // wrong does not just break a link — a usage source that throws is
+                // treated as unknown, and the nightly purge would then skip entirely.
+                href: r.rfq ? adminPath(`/rfqs/${r.rfq.code}`) : adminPath('/rfqs'),
                 live: false,
                 internal: true,
               },
@@ -552,7 +556,11 @@ function internalSources(): Source[] {
                 id: r.id,
                 label: nonEmpty(r.code, 'Quote'),
                 role: 'PDF',
-                href: adminPath(`/rfqs/${r.rfq.code}`),
+                // A quote raised from an inbound Enquiry has no parent RFQ; link to
+                // the quote list rather than emitting /rfqs/undefined. Getting this
+                // wrong does not just break a link — a usage source that throws is
+                // treated as unknown, and the nightly purge would then skip entirely.
+                href: r.rfq ? adminPath(`/rfqs/${r.rfq.code}`) : adminPath('/rfqs'),
                 live: false,
                 internal: true,
               },
