@@ -11,6 +11,7 @@ import {
   FolderTree,
   Image as ImageIcon,
   ClipboardList,
+  Factory,
   Inbox,
   Users,
   FileText,
@@ -76,6 +77,7 @@ const NAV_SECTIONS: { section: string; items: NavItem[] }[] = [
     items: [
       { id: 'enquiries', label: 'Enquiries', path: 'enquiries', Icon: Inbox },
       { id: 'rfqs', label: 'RFQ Queue', path: 'rfqs', Icon: ClipboardList },
+      { id: 'suppliers', label: 'Suppliers', path: 'suppliers', Icon: Factory },
       { id: 'customers', label: 'Accounts', path: 'customers', Icon: Users },
     ],
   },

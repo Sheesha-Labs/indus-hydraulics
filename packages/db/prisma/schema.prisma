@@ -547,6 +547,7 @@ model Brand {
   products     Product[]
   navMenuItems NavMenuItem[]
   caseStudies  BrandCaseStudy[]
+  suppliers    Supplier[]
 
   @@map("brands")
 }
@@ -2429,4 +2430,108 @@ enum EnquiryLineReviewStatus {
   needs_review
   confirmed
   rejected
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Supplier ledger
+//
+// The compounding asset behind supplier research. Cold web research is the
+// FALLBACK; this ledger is the primary source, and it improves every time a
+// human sends an RFQ and a supplier replies.
+// ─────────────────────────────────────────────────────────────────────────────
+
+model Supplier {
+  id      String  @id @default(uuid())
+  slug    String  @unique
+  name    String
+  /// Partial-unique: a supplier reachable only via a web form has none.
+  domain  String?
+  website String?
+  country String?
+
+  kind                    SupplierKind   @default(unknown)
+  origin                  SupplierOrigin @default(manual)
+  status                  SupplierStatus @default(active)
+  isAuthorizedDistributor Boolean        @default(false)
+
+  brandId String?
+  brand   Brand?  @relation(fields: [brandId], references: [id])
+  notes   String?
+
+  /// Responsiveness — the only ranking signal that actually predicts anything.
+  rfqsSent        Int       @default(0)
+  repliesReceived Int       @default(0)
+  lastRfqAt       DateTime?
+  lastReplyAt     DateTime?
+
+  contacts SupplierContact[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([country])
+  @@index([status])
+  @@map("suppliers")
+}
+
+model SupplierContact {
+  id         String   @id @default(uuid())
+  supplierId String
+  supplier   Supplier @relation(fields: [supplierId], references: [id], onDelete: Cascade)
+
+  name  String?
+  role  String?
+  email String?
+  phone String?
+
+  source     SupplierContactSource
+  confidence ContactConfidence     @default(low)
+  /// Where the address was actually read from. A DB CHECK requires it for
+  /// anything machine-found: a contact with no provenance cannot be audited
+  /// when it bounces or draws a complaint.
+  evidenceUrl String?
+
+  verifiedAt  DateTime?
+  bounceCount Int       @default(0)
+  isPrimary   Boolean   @default(false)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([supplierId])
+  @@map("supplier_contacts")
+}
+
+enum SupplierKind {
+  manufacturer
+  distributor
+  trader
+  unknown
+}
+
+enum SupplierOrigin {
+  brand
+  manual
+  research
+  mail
+}
+
+enum SupplierStatus {
+  active
+  do_not_use
+  archived
+}
+
+enum SupplierContactSource {
+  own_website
+  manual
+  enrichment
+  reply
+  pattern_guess
+}
+
+enum ContactConfidence {
+  high
+  medium
+  low
 }

@@ -11,6 +11,7 @@ export const ROUTE_LABELS: Record<string, { section: string; label: string }> = 
   media: { section: 'Catalogue', label: 'Media library' },
   enquiries: { section: 'Operations', label: 'Enquiries' },
   rfqs: { section: 'Operations', label: 'RFQ Queue' },
+  suppliers: { section: 'Operations', label: 'Suppliers' },
   customers: { section: 'Operations', label: 'Accounts' },
   services: { section: 'Content', label: 'Service cases' },
   pages: { section: 'Content', label: 'Pages & Blocks' },
