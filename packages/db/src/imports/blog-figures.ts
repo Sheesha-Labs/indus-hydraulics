@@ -1196,4 +1196,96 @@ export const BLOG_FIGURES: Record<string, BlogFigure[]> = {
       placeholderLabel: 'Row of injection moulding machines with tidy hydraulic runs, clean plant floor, overhead light.',
     },
   ],
+
+  // ── Reserved slots: Africa fittings wave 4 (2026-09-01) ────────────────
+  'reading-a-weeping-joint': [
+    {
+      afterSection: 1,
+      captionPrefix: 'FIG. 01',
+      caption:
+        'Oil tracking from a joint on a machine, cleaned and re-run so the source is visible rather than the drip.',
+      placeholderLabel: 'Weeping hydraulic joint photographed close, oil emerging at the seat, machine in soft focus behind.',
+    },
+  ],
+  'over-tightened-fitting-diagnosis': [
+    {
+      afterSection: 1,
+      captionPrefix: 'FIG. 01',
+      caption:
+        'The evidence is on the sealing face: an over-tightened joint is burnished where a correctly made one is not.',
+      placeholderLabel: 'Macro of two cone seats side by side on a bench, one clean, one burnished and rolled.',
+    },
+  ],
+  'why-fittings-seize-in-coastal-air': [
+    {
+      afterSection: 1,
+      captionPrefix: 'FIG. 01',
+      caption:
+        'Corrosion starts at the crests and hex corners, then works underneath a coating that still looks intact.',
+      placeholderLabel: 'Corroded fitting hex on a coastal machine, rust blooming at the corners, sea air haze behind.',
+    },
+  ],
+  'damaged-port-repair-or-scrap': [
+    {
+      afterSection: 1,
+      captionPrefix: 'FIG. 01',
+      caption:
+        'The seat decides it before the thread does — a damaged sealing face cannot be recovered by restoring the thread above it.',
+      placeholderLabel: 'Damaged hydraulic port on a valve block, raking light across the seat, component in frame.',
+    },
+  ],
+  'sealant-on-hydraulic-threads': [
+    {
+      afterSection: 1,
+      captionPrefix: 'FIG. 01',
+      caption:
+        'Tape on a thread that does not seal on the thread: the joint still leaks, and the shreds go into the circuit.',
+      placeholderLabel: 'PTFE tape wrapped on a JIC male thread, tape visibly shredded near the cone.',
+    },
+  ],
+  'galvanic-corrosion-in-fittings': [
+    {
+      afterSection: 2,
+      captionPrefix: 'FIG. 01',
+      caption:
+        'Attack concentrates at the interface between the two metals rather than spreading evenly over either part.',
+      placeholderLabel: 'Stainless fitting removed from a plated steel port, corrosion concentrated on the first threads.',
+    },
+  ],
+  'dirt-ingress-in-transit-and-storage': [
+    {
+      afterSection: 1,
+      captionPrefix: 'FIG. 01',
+      caption:
+        'An uncapped assembly breathes for the whole voyage; a capped one arrives ready to fit.',
+      placeholderLabel: 'Two hose assemblies side by side in a crate, one capped and bagged, one open-ended.',
+    },
+  ],
+  'storing-fittings-and-seals-on-site': [
+    {
+      afterSection: 2,
+      captionPrefix: 'FIG. 01',
+      caption:
+        'The rubber is what ages on a hot shelf. Dating it and keeping it dark is the whole of the practice.',
+      placeholderLabel: 'Site container store shelving with dated boxes of seals and bagged fittings, hot interior light.',
+    },
+  ],
+  'reusing-fittings-in-a-rebuild': [
+    {
+      afterSection: 1,
+      captionPrefix: 'FIG. 01',
+      caption:
+        'Sorting as parts come off preserves the information a common tray destroys.',
+      placeholderLabel: 'Three labelled trays on a workbench during a strip-down, fittings sorted between them.',
+    },
+  ],
+  'crimping-on-site-or-adapting': [
+    {
+      afterSection: 1,
+      captionPrefix: 'FIG. 01',
+      caption:
+        'Both answers are respectable; the failure modes are what separate them.',
+      placeholderLabel: 'Field crimper and a small adapter case open side by side on a truck tailgate.',
+    },
+  ],
 }

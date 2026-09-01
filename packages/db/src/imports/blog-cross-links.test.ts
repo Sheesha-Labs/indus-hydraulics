@@ -20,7 +20,7 @@ describe('BLOG_CROSS_LINKS', () => {
    * (2026-09-01).
    */
   it('covers the whole blog', () => {
-    expect(entries.length).toBe(133)
+    expect(entries.length).toBe(143)
   })
 
   it('never links an article to itself', () => {

@@ -1202,4 +1202,88 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
       },
     ],
   },
+
+  // ── Africa fittings wave 4 — the diagnostic cluster (2026-09-01) ───────
+  //
+  // One market card in the wave, on the article that is genuinely about a long
+  // sea lane. Everything else is a condition rather than a place, so the
+  // generated reach section carries the geography. 17 of 18 after this.
+  'reading-a-weeping-joint': {
+    related: [
+      'new-hydraulic-hose-weeping',
+      'over-tightened-fitting-diagnosis',
+      'sealant-on-hydraulic-threads',
+    ],
+  },
+  'over-tightened-fitting-diagnosis': {
+    related: [
+      'hydraulic-fitting-make-up-torque',
+      'cross-threaded-hydraulic-port',
+      'damaged-port-repair-or-scrap',
+    ],
+  },
+  'why-fittings-seize-in-coastal-air': {
+    related: [
+      'removing-a-seized-hydraulic-fitting',
+      'plating-and-corrosion-on-fittings',
+      'galvanic-corrosion-in-fittings',
+    ],
+  },
+  'damaged-port-repair-or-scrap': {
+    related: [
+      'cross-threaded-hydraulic-port',
+      'over-tightened-fitting-diagnosis',
+      'bridging-two-thread-standards',
+    ],
+  },
+  'sealant-on-hydraulic-threads': {
+    related: [
+      'stopping-an-npt-thread-leak',
+      'jic-vs-orfs-vs-npt-vs-bsp',
+      'reading-a-weeping-joint',
+    ],
+  },
+  'galvanic-corrosion-in-fittings': {
+    related: [
+      'when-stainless-is-worth-it',
+      'plating-and-corrosion-on-fittings',
+      'why-fittings-seize-in-coastal-air',
+    ],
+  },
+  'dirt-ingress-in-transit-and-storage': {
+    related: [
+      'contamination-during-a-hose-change',
+      'storing-fittings-and-seals-on-site',
+      'air-or-sea-for-a-fittings-order',
+    ],
+    pages: [
+      {
+        kind: 'market',
+        slug: 'nigeria',
+        label: 'Supplying Nigeria from Dubai',
+        blurb: 'The longest lane we run — weeks at sea, and what that does to an uncapped part.',
+      },
+    ],
+  },
+  'storing-fittings-and-seals-on-site': {
+    related: [
+      'hydraulic-hose-shelf-life-storage',
+      'spares-list-for-a-remote-site',
+      'dirt-ingress-in-transit-and-storage',
+    ],
+  },
+  'reusing-fittings-in-a-rebuild': {
+    related: [
+      'inspecting-fittings-on-arrival',
+      'substituting-a-fitting-safely',
+      'bspp-bonded-seal-sizing',
+    ],
+  },
+  'crimping-on-site-or-adapting': {
+    related: [
+      'should-you-buy-a-hose-crimper',
+      'bridging-two-thread-standards',
+      'field-re-hosing-kit',
+    ],
+  },
 }

@@ -10,7 +10,7 @@ describe('BLOG_FIGURES', () => {
   const entries = Object.entries(BLOG_FIGURES)
 
   it('gives every article a picture in the body, or a slot reserved for one', () => {
-    expect(entries.length).toBe(133)
+    expect(entries.length).toBe(143)
   })
 
   /**

@@ -871,4 +871,69 @@ export const BLOG_SEO: Record<string, BlogSeo> = {
     seoDescription:
       'Why fixed manufacturing plant should narrow its hydraulic fitting families, how to convert without a shutdown, and what it saves in stores and downtime.',
   },
+
+  // ── Africa fittings sprint, wave 4 — the diagnostic cluster (2026-09-01)
+  //
+  // Written to the 40-character cap from the first draft rather than fixed
+  // afterwards, which is what the pass over the previous forty had to do.
+  'reading-a-weeping-joint': {
+    focusKeyword: 'weeping joint',
+    seoTitle: 'Reading a weeping joint on a machine',
+    seoDescription:
+      'Where the oil emerges on a leaking hydraulic joint narrows the cause to one of four things, and only one of them is fixed by tightening it further.',
+  },
+  'over-tightened-fitting-diagnosis': {
+    focusKeyword: 'over-tightened fitting',
+    seoTitle: 'Over-tightened fitting: how to tell',
+    seoDescription:
+      'How to read a hydraulic joint somebody else assembled: the marks over-tightening leaves, how under-tightening differs, and which one damages the port.',
+  },
+  'why-fittings-seize-in-coastal-air': {
+    focusKeyword: 'fittings seize',
+    seoTitle: 'Why fittings seize in coastal air',
+    seoDescription:
+      'Why hydraulic fittings seize on coastal sites, what happens inside the thread, and the decisions taken at assembly that determine whether it happens.',
+  },
+  'damaged-port-repair-or-scrap': {
+    focusKeyword: 'damaged port',
+    seoTitle: 'Damaged port: repair it or scrap it?',
+    seoDescription:
+      'How to judge a damaged hydraulic port: what to check before deciding, who owns the repair decision, and the cases where the component is finished.',
+  },
+  'sealant-on-hydraulic-threads': {
+    focusKeyword: 'sealant on hydraulic threads',
+    seoTitle: 'Using sealant on hydraulic threads',
+    seoDescription:
+      'Which hydraulic joints are sealed by the thread and want sealant, which are ruined by it, and why tape on a straight thread hides the real fault.',
+  },
+  'galvanic-corrosion-in-fittings': {
+    focusKeyword: 'galvanic corrosion',
+    seoTitle: 'Galvanic corrosion in fittings',
+    seoDescription:
+      'Why mixing stainless and plated steel in one joint moves corrosion rather than removing it, where it shows up, and when that trade is worth making.',
+  },
+  'dirt-ingress-in-transit-and-storage': {
+    focusKeyword: 'dirt ingress',
+    seoTitle: 'Dirt ingress in transit and storage',
+    seoDescription:
+      'How hydraulic fittings and assemblies pick up contamination over a long sea leg and in a workshop store, and the two minutes that prevent it.',
+  },
+  'storing-fittings-and-seals-on-site': {
+    focusKeyword: 'storing fittings',
+    seoTitle: 'Storing fittings and seals on site',
+    seoDescription:
+      'What actually degrades on a shelf in a hot workshop, how to organise a site store so the oldest stock leaves first, and what is worth holding deep.',
+  },
+  'reusing-fittings-in-a-rebuild': {
+    focusKeyword: 'reusing fittings',
+    seoTitle: 'Reusing fittings in a rebuild: rules',
+    seoDescription:
+      'Which hydraulic fittings survive a rebuild and which belong in the bin, how to sort them while dismantling, and why every elastomer is single use.',
+  },
+  'crimping-on-site-or-adapting': {
+    focusKeyword: 'crimping on site',
+    seoTitle: 'Crimping on site or adapting a line',
+    seoDescription:
+      'Machine down with two ways out: when a field crimp is the right answer, when one adapter is, and the failure mode hiding behind each of them.',
+  },
 }

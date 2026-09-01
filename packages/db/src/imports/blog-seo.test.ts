@@ -119,7 +119,7 @@ describe('BLOG_SEO', () => {
   const entries = Object.entries(BLOG_SEO)
 
   it('covers the whole blog exactly once', () => {
-    expect(entries.length).toBe(133)
+    expect(entries.length).toBe(143)
   })
 
   /**
