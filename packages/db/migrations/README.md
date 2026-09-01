@@ -135,3 +135,4 @@ traceable.
 | `013_blog_content_platform.sql` | `202608171153_blog_content_platform.sql` |
 | `014_blog_soft_delete.sql` | `202608171741_blog_soft_delete.sql` |
 | `015_store_settings_brand_identity.sql` | `202608171758_store_settings_brand_identity.sql` |
+| `016_enquiry_intake.sql` | `202609011730_enquiry_intake.sql` |

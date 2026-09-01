@@ -9,6 +9,7 @@ export const ROUTE_LABELS: Record<string, { section: string; label: string }> = 
   'spec-templates': { section: 'Catalogue', label: 'Spec templates' },
   industries: { section: 'Catalogue', label: 'Industries' },
   media: { section: 'Catalogue', label: 'Media library' },
+  enquiries: { section: 'Operations', label: 'Enquiries' },
   rfqs: { section: 'Operations', label: 'RFQ Queue' },
   customers: { section: 'Operations', label: 'Accounts' },
   services: { section: 'Content', label: 'Service cases' },

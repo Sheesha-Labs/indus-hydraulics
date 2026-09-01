@@ -32,6 +32,7 @@ const ADMIN_TREES = ['app/admin', 'components/admin', 'inngest']
 const ADMIN_SECTIONS = [
   'products', 'categories', 'brands', 'industries', 'media', 'scraper', 'rfqs',
   'customers', 'cms', 'navigation', 'seo', 'users', 'settings', 'spec-templates',
+  'enquiries',
 ]
 
 /**

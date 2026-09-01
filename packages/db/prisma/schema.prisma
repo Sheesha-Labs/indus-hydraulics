@@ -329,6 +329,7 @@ model Account {
   rfqs       Rfq[]
   savedLists SavedList[]
   activity   AccountActivity[]
+  enquiries  Enquiry[]
 
   @@map("accounts")
 }
@@ -430,6 +431,8 @@ model StaffUser {
   blogAuthorProfile BlogAuthor[]      @relation("BlogAuthorStaffUser")
   sentInvitations   StaffInvitation[] @relation("StaffInvitationInvitedBy")
   pageContentEdits  PageContent[]     @relation("PageContentEditor")
+  enquiriesAssigned Enquiry[]         @relation("EnquiryAssignedTo")
+  enquiriesCreated  Enquiry[]         @relation("EnquiryCreatedBy")
 
   @@map("staff_users")
 }
@@ -2314,4 +2317,116 @@ model StaffInvitation {
   @@index([email, purpose])
   @@index([expiresAt])
   @@map("staff_invitations")
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Enquiry intake
+//
+// An inbound procurement enquiry pasted in by staff. Deliberately NOT an Rfq:
+// RfqLine.productId is a required FK to Product, so a free-text tender line has
+// nowhere to live on an Rfq, and Rfq already means "a signed-in customer asked
+// about catalogue products".
+// ─────────────────────────────────────────────────────────────────────────────
+
+model Enquiry {
+  id       String @id @default(uuid())
+  code     String @unique // ENQ-2026-0001
+  title    String
+  bidNo    String?
+  revision String? // R1 / R2 / RF / CLONE
+
+  buyerName    String?
+  sourcePortal String?
+  sourceKind   EnquirySourceKind @default(pasted)
+  /// Solicitation number. Partial-unique so a re-paste of the SAME revision is
+  /// caught while a genuine re-issue is not.
+  sourceRef    String?
+  closingAt    DateTime?
+
+  status EnquiryStatus @default(triage)
+
+  accountId    String?
+  account      Account?   @relation(fields: [accountId], references: [id])
+  assignedToId String?
+  assignedTo   StaffUser? @relation("EnquiryAssignedTo", fields: [assignedToId], references: [id])
+  createdById  String?
+  createdBy    StaffUser? @relation("EnquiryCreatedBy", fields: [createdById], references: [id])
+
+  /// Verbatim paste. The source of truth every line must trace back to.
+  rawText       String
+  notes         String?
+  /// e.g. "paste/v1" — which extractor produced the lines, for re-runs.
+  extractorName String?
+
+  lines EnquiryLine[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([status])
+  @@index([closingAt])
+  @@index([accountId])
+  @@map("enquiries")
+}
+
+model EnquiryLine {
+  id        String  @id @default(uuid())
+  enquiryId String
+  enquiry   Enquiry @relation(fields: [enquiryId], references: [id], onDelete: Cascade)
+
+  position      Int      @default(0)
+  description   String
+  partNumber    String?
+  qty           Decimal? @db.Decimal(14, 3)
+  unit          String?
+  requiredBy    DateTime?
+  certification String? // "3.1 MTC", "IACS class approval"
+
+  sourceKind EnquiryLineSourceKind @default(body)
+  /// Verbatim substring of Enquiry.rawText this row came from. A DB CHECK makes
+  /// it mandatory for every non-manual row: a machine-extracted quantity with no
+  /// audit trail reaches a supplier RFQ and then a customer quote unseen.
+  sourceText String?
+
+  reviewStatus EnquiryLineReviewStatus @default(needs_review)
+  /// Typed reasons, e.g. ["date_ambiguous_dmy"]. Never a confidence float.
+  reviewFlags  String[]                @default([])
+  notes        String?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([enquiryId])
+  @@index([reviewStatus])
+  @@map("enquiry_lines")
+}
+
+enum EnquirySourceKind {
+  pasted
+  email
+  portal
+}
+
+enum EnquiryStatus {
+  triage
+  researching
+  rfq_sent
+  comparing
+  quoted
+  won
+  lost
+  abandoned
+}
+
+enum EnquiryLineSourceKind {
+  body
+  title
+  attachment
+  manual
+}
+
+enum EnquiryLineReviewStatus {
+  needs_review
+  confirmed
+  rejected
 }

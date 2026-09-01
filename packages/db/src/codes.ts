@@ -24,6 +24,10 @@ export function formatAccountCode(year: number, value: number): string {
   return `ACC-${year}-${String(value).padStart(4, '0')}`
 }
 
+export function formatEnquiryCode(year: number, value: number): string {
+  return `ENQ-${year}-${String(value).padStart(4, '0')}`
+}
+
 export function formatQuoteCode(value: number): string {
   return `INDUS/Q${QUOTE_ZOHO_BASE + value}`
 }
@@ -41,6 +45,15 @@ export async function nextAccountCode(
   const year = now.getFullYear()
   const value = await nextValue(client, 'account', year)
   return formatAccountCode(year, value)
+}
+
+export async function nextEnquiryCode(
+  client: DbClient = db,
+  now: Date = new Date(),
+): Promise<string> {
+  const year = now.getFullYear()
+  const value = await nextValue(client, 'enquiry', year)
+  return formatEnquiryCode(year, value)
 }
 
 export type NextQuoteCode =
@@ -91,6 +104,7 @@ export const COUNTER_SCOPES = {
   account: 'account',
   quote: 'quote',
   scrape: 'scrape',
+  enquiry: 'enquiry',
 } as const
 
 export const QUOTE_CODE_BASE = QUOTE_ZOHO_BASE
