@@ -957,4 +957,60 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
       'hose-assembly-test-certificate',
     ],
   },
+
+  // ── fitting-identification, machine-origin cluster (2026-09-01) ────────
+  //
+  // No market cards anywhere in this cluster. The articles are about a thread
+  // family, not about a country — the geography they serve is carried by the
+  // generated reach section, and the cap stays where it is.
+  'fittings-on-a-chinese-excavator': {
+    related: [
+      'identify-any-hydraulic-fitting',
+      'bsp-or-metric-fittings',
+      'measuring-a-fitting-without-gauges',
+    ],
+  },
+  'fittings-on-a-used-japanese-machine': {
+    related: [
+      'identify-any-hydraulic-fitting',
+      'bridging-two-thread-standards',
+      'hydraulic-thread-size-and-pitch-reference',
+    ],
+  },
+  'tractor-hydraulic-fittings': {
+    related: ['tractor-hydraulic-hose', 'hydraulic-quick-couplers-iso-7241', 'bsp-or-metric-fittings'],
+  },
+  'fittings-on-american-machines': {
+    related: ['jic-vs-orfs-vs-npt-vs-bsp', 'where-jic-is-the-wrong-choice', 'stopping-an-npt-thread-leak'],
+  },
+  'fittings-on-european-machines': {
+    related: [
+      'hydraulic-thread-size-and-pitch-reference',
+      'bspp-bonded-seal-sizing',
+      'bridging-two-thread-standards',
+    ],
+  },
+  'korean-excavator-hydraulic-fittings': {
+    related: [
+      'fittings-on-a-used-japanese-machine',
+      'bridging-two-thread-standards',
+      'excavator-hydraulic-hose-replacement',
+    ],
+  },
+  'bsp-or-metric-fittings': {
+    related: ['jic-vs-orfs-vs-npt-vs-bsp', 'hydraulic-hose-kits-for-a-fleet', 'building-a-thread-reference-board'],
+  },
+  'measuring-a-fitting-without-gauges': {
+    related: [
+      'photographing-a-hydraulic-fitting',
+      'identify-any-hydraulic-fitting',
+      'hydraulic-thread-size-and-pitch-reference',
+    ],
+  },
+  'building-a-thread-reference-board': {
+    related: ['bsp-or-metric-fittings', 'field-re-hosing-kit', 'hydraulic-hose-kits-for-a-fleet'],
+  },
+  'bridging-two-thread-standards': {
+    related: ['stacking-hydraulic-adapters', 'cross-threaded-hydraulic-port', 'hydraulic-fitting-make-up-torque'],
+  },
 }
