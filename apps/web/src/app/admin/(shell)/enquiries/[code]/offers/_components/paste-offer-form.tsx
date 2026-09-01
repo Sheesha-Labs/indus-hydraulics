@@ -1,6 +1,6 @@
 'use client'
 
-import { Button, Field, ToastProvider, useToast } from '@indus/ui'
+import { Button, Field, Input, Textarea, ToastProvider, useToast } from '@indus/ui'
 import { useRouter } from 'next/navigation'
 import * as React from 'react'
 
@@ -32,18 +32,14 @@ function Form({ enquiryId }: { enquiryId: string }) {
     <form action={onSubmit} className="flex flex-col gap-4">
       <input type="hidden" name="enquiryId" value={enquiryId} />
       <Field label="Supplier" hint="Leave blank to take the name from the reply.">
-        <input
-          name="supplierName"
-          className="h-10 w-full rounded-[6px] border border-ih-border bg-ih-surface px-3 text-[14px] text-ih-ink"
-          placeholder="Acme Valves GmbH"
-        />
+        <Input name="supplierName" placeholder="Acme Valves GmbH" />
       </Field>
       <Field label="Their reply">
-        <textarea
+        <Textarea
           name="rawText"
           required
           rows={12}
-          className="w-full rounded-[6px] border border-ih-border bg-ih-surface p-3 font-mono text-[13px] leading-relaxed text-ih-ink"
+          className="font-mono"
           placeholder="Paste the whole email, including prices and terms."
         />
       </Field>
