@@ -14,6 +14,7 @@ import {
 
 import CATEGORIES from './2026-08-17-blog-taxonomy/categories'
 import { GULF_CATEGORY } from './2026-08-24-blog-wave-3-gulf/category'
+import { GCC_COMPLIANCE_CATEGORY } from './2026-09-01-gcc-supplier-wave-1/category'
 
 /**
  * The seam between the reach profiles, which live in `@indus/domain`, and the
@@ -26,7 +27,11 @@ import { GULF_CATEGORY } from './2026-08-24-blog-wave-3-gulf/category'
  */
 
 /** Every blog category that has ever been seeded. */
-const BLOG_CATEGORY_SLUGS = [...CATEGORIES.map((c) => c.slug), GULF_CATEGORY.slug]
+const BLOG_CATEGORY_SLUGS = [
+  ...CATEGORIES.map((c) => c.slug),
+  GULF_CATEGORY.slug,
+  GCC_COMPLIANCE_CATEGORY.slug,
+]
 
 /**
  * `ServiceCaseCategory` read out of the schema rather than imported.
