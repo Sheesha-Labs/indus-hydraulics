@@ -38,5 +38,8 @@ export {
   COUNTER_SCOPES,
   QUOTE_CODE_BASE,
   type NextQuoteCode,
+  nextEnquiryCode,
+  nextQuoteCodeForEnquiry,
+  formatEnquiryCode,
 } from './codes'
 export { recordSlugRedirect } from './slug-redirect'

@@ -24,6 +24,10 @@ export function formatAccountCode(year: number, value: number): string {
   return `ACC-${year}-${String(value).padStart(4, '0')}`
 }
 
+export function formatEnquiryCode(year: number, value: number): string {
+  return `ENQ-${year}-${String(value).padStart(4, '0')}`
+}
+
 export function formatQuoteCode(value: number): string {
   return `INDUS/Q${QUOTE_ZOHO_BASE + value}`
 }
@@ -41,6 +45,42 @@ export async function nextAccountCode(
   const year = now.getFullYear()
   const value = await nextValue(client, 'account', year)
   return formatAccountCode(year, value)
+}
+
+export async function nextEnquiryCode(
+  client: DbClient = db,
+  now: Date = new Date(),
+): Promise<string> {
+  const year = now.getFullYear()
+  const value = await nextValue(client, 'enquiry', year)
+  return formatEnquiryCode(year, value)
+}
+
+/**
+ * Next quote code for an ENQUIRY.
+ *
+ * Shares the `quote` counter with the RFQ path deliberately — the customer
+ * sees one running series (INDUS/Q26386, Q26387...) regardless of whether the
+ * work started as a catalogue RFQ or an inbound tender.
+ */
+export async function nextQuoteCodeForEnquiry(
+  enquiryId: string,
+  client: DbClient = db,
+): Promise<NextQuoteCode> {
+  const previous = await client.quote.findMany({
+    where: { enquiryId },
+    select: { code: true, revision: true },
+    orderBy: { revision: 'desc' },
+    take: 1,
+  })
+  const last = previous[0]
+  if (last) {
+    const base = last.code.replace(/-R\d+$/, '')
+    const revision = last.revision + 1
+    return { kind: 'revision', code: `${base}-R${revision}`, revision, ofCode: last.code }
+  }
+  const value = await nextValue(client, 'quote', new Date().getFullYear())
+  return { kind: 'new', code: formatQuoteCode(value), revision: 1 }
 }
 
 export type NextQuoteCode =
@@ -91,6 +131,7 @@ export const COUNTER_SCOPES = {
   account: 'account',
   quote: 'quote',
   scrape: 'scrape',
+  enquiry: 'enquiry',
 } as const
 
 export const QUOTE_CODE_BASE = QUOTE_ZOHO_BASE
