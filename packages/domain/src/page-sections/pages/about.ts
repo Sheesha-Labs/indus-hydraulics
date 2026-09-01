@@ -93,11 +93,18 @@ export const ABOUT_PAGE: MasterPageDef = {
       defaults: {
         eyebrow: 'PEOPLE · LEADERSHIP',
         heading: 'The engineers behind the catalogue.',
+        // One real person. The four names that stood here previously
+        // (Ravi Bhatt, Sunil Patel, Anjali Krishnan, Mehul Rana) were
+        // placeholder copy from the design handoff mockups that reached
+        // production as if they were staff. They are not real people and
+        // must not be reintroduced. Add colleagues here only when they
+        // are real and have agreed to be named.
+        //
+        // TODO(ayush): confirm `desc` before merge — it is published to
+        // buyers and mirrored into Person JSON-LD via the blog author
+        // record in packages/db/src/imports/2026-08-17-blog-taxonomy/authors.ts.
         items: [
-          { enabled: true, tag: 'RB', name: 'Ravi Bhatt', desc: 'Founder & CEO · 23 yrs', image: { mediaId: null, alt: null } },
-          { enabled: true, tag: 'SP', name: 'Sunil Patel', desc: 'Head of Sales · 12 yrs', image: { mediaId: null, alt: null } },
-          { enabled: true, tag: 'AK', name: 'Anjali Krishnan', desc: 'Technical Director · 10 yrs', image: { mediaId: null, alt: null } },
-          { enabled: true, tag: 'MR', name: 'Mehul Rana', desc: 'Operations Lead · 8 yrs', image: { mediaId: null, alt: null } },
+          { enabled: true, tag: 'AB', name: 'Ayush Bhatia', desc: 'Founder', image: { mediaId: null, alt: null } },
         ],
       },
     },
