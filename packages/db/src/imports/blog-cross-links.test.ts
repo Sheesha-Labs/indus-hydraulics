@@ -9,8 +9,17 @@ import { BLOG_CROSS_LINKS } from './blog-cross-links'
 describe('BLOG_CROSS_LINKS', () => {
   const entries = Object.entries(BLOG_CROSS_LINKS)
 
+  /**
+   * One entry per published article. The number moves with a content wave and
+   * is asserted rather than derived on purpose: a wave that adds articles and
+   * forgets their links would otherwise ship a cluster with no edges, which is
+   * the exact failure this file was written after.
+   *
+   * 93 after the hose programme; 103 after the GCC supplier sprint's first
+   * wave (2026-09-01).
+   */
   it('covers the whole blog', () => {
-    expect(entries.length).toBe(93)
+    expect(entries.length).toBe(103)
   })
 
   it('never links an article to itself', () => {

@@ -79,6 +79,18 @@ export const MARKET_REACH_PROFILES: Readonly<Record<string, MarketReachProfile>>
       'Central & South-East Europe',
     ],
   },
+  'gcc-compliance': {
+    heading: 'Where these documents have to travel',
+    body: 'Conformity registration, attested origin documents and test records are prepared in Dubai before a consignment leaves, which is the whole reason this class of work is run from here rather than at a border. The regimes differ by destination and several of the markets we ship to run their own pre-shipment verification schemes, so the document set is built against where the goods are going rather than assembled once and reused. Tell us the destination with the enquiry and the paperwork is quoted alongside the parts.',
+    primaryRegion: 'GCC & Middle East',
+    rotatingRegions: [
+      'North Africa',
+      'East Africa',
+      'West & Central Africa',
+      'CIS & Caucasus',
+      'South-East Asia',
+    ],
+  },
   'gulf-conditions': {
     heading: 'Where these conditions apply, and where we ship',
     body: 'Heat, salt and airborne sand are not a UAE problem. They set hose life across the whole arc from the Atlantic coast of Africa to the Arabian Sea and on into monsoon Asia, and the cover and fitting arguments in this article travel with them. We supply into those markets from Dubai by road, sea and air, and quote the construction against the conditions at the destination rather than against ours.',

@@ -26,8 +26,12 @@ const SAMPLE_SLUGS = [
 const CATEGORIES = Object.keys(MARKET_REACH_PROFILES)
 
 describe('buildMarketReachBlock', () => {
-  it('covers the eleven blog categories', () => {
-    expect(CATEGORIES).toHaveLength(11)
+  it('covers every blog category', () => {
+    // Eleven after the hose programme; twelve once `gcc-compliance` was added
+    // by the GCC supplier sprint (2026-09-01). The count is asserted so a new
+    // category cannot ship without a profile — the failure mode being a hub
+    // whose articles silently say nothing about delivery.
+    expect(CATEGORIES).toHaveLength(12)
   })
 
   it('returns null for a category with no profile, rather than guessing one', () => {

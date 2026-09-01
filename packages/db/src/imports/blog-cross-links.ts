@@ -872,4 +872,89 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
     ],
     skus: ['IH-AD-ORFS-001', 'IH-AD-JIC-001', 'IH-AD-HSF-001'],
   },
+
+  // ── gcc-compliance (2026-09-01 wave 1) ─────────────────────────────────
+  //
+  // One market card in the whole cluster, on the article that is genuinely
+  // about the Saudi lane. The other nine are about a document or a scheme
+  // rather than about a country, so they link sideways and let the generated
+  // reach section carry the geography — see the note at the top of this file.
+  'saber-certificate-for-hydraulic-hose': {
+    related: [
+      'certificate-of-origin-gcc-duty',
+      'gcc-import-documents-for-hose',
+      'gulf-conformity-mark-hose-fittings',
+    ],
+    pages: [
+      {
+        kind: 'market',
+        slug: 'saudi-arabia',
+        label: 'Supplying Saudi Arabia from Dubai',
+        blurb: 'Freight routes, transit, Incoterms and the full document set for the Saudi lane.',
+      },
+    ],
+  },
+  'gulf-conformity-mark-hose-fittings': {
+    related: [
+      'saber-certificate-for-hydraulic-hose',
+      'gcc-import-documents-for-hose',
+      'hose-assembly-test-certificate',
+    ],
+  },
+  'certificate-of-origin-gcc-duty': {
+    related: [
+      'saber-certificate-for-hydraulic-hose',
+      'gcc-import-documents-for-hose',
+      'material-test-certificate-en-10204',
+    ],
+  },
+  'hose-assembly-test-certificate': {
+    related: [
+      'material-test-certificate-en-10204',
+      'verifying-a-genuine-hydraulic-hose',
+      'how-to-read-a-hose-layline',
+    ],
+  },
+  'material-test-certificate-en-10204': {
+    related: [
+      'hose-assembly-test-certificate',
+      'nace-mr0175-hose-documentation',
+      'oilfield-hose-document-pack',
+    ],
+  },
+  'nace-mr0175-hose-documentation': {
+    related: [
+      'material-test-certificate-en-10204',
+      'oilfield-hose-document-pack',
+      'api-7k-16c-16d-which-standard',
+    ],
+  },
+  'vendor-approval-for-hose-supply': {
+    related: [
+      'verifying-a-genuine-hydraulic-hose',
+      'oilfield-hose-document-pack',
+      'unbranded-hydraulic-fittings',
+    ],
+  },
+  'verifying-a-genuine-hydraulic-hose': {
+    related: [
+      'how-to-read-a-hose-layline',
+      'unbranded-hydraulic-fittings',
+      'hose-assembly-test-certificate',
+    ],
+  },
+  'gcc-import-documents-for-hose': {
+    related: [
+      'saber-certificate-for-hydraulic-hose',
+      'certificate-of-origin-gcc-duty',
+      'gulf-conformity-mark-hose-fittings',
+    ],
+  },
+  'oilfield-hose-document-pack': {
+    related: [
+      'api-7k-16c-16d-which-standard',
+      'nace-mr0175-hose-documentation',
+      'hose-assembly-test-certificate',
+    ],
+  },
 }

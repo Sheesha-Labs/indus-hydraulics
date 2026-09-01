@@ -5,6 +5,7 @@ import { withCrossLinks } from './blog-article-import'
 import { BLOG_CROSS_LINKS } from './blog-cross-links'
 import CATEGORIES from './2026-08-17-blog-taxonomy/categories'
 import { GULF_CATEGORY } from './2026-08-24-blog-wave-3-gulf/category'
+import { GCC_COMPLIANCE_CATEGORY } from './2026-09-01-gcc-supplier-wave-1/category'
 
 import type { BlogBlocksInput } from '@indus/domain'
 
@@ -16,7 +17,11 @@ import type { BlogBlocksInput } from '@indus/domain'
  */
 
 /** Every blog category that has ever been seeded. */
-const ALL_CATEGORY_SLUGS = [...CATEGORIES.map((c) => c.slug), GULF_CATEGORY.slug]
+const ALL_CATEGORY_SLUGS = [
+  ...CATEGORIES.map((c) => c.slug),
+  GULF_CATEGORY.slug,
+  GCC_COMPLIANCE_CATEGORY.slug,
+]
 
 describe('reach profile coverage', () => {
   it('has a profile for every blog category', () => {
