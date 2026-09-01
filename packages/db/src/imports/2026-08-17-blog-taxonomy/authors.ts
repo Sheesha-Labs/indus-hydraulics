@@ -5,7 +5,8 @@
  * or directed by him and he stands behind it as author.
  *
  * The four names previously seeded here — Anjali Krishnan, Ravi Bhatt,
- * Mehul Rana, Sunil Patel — were NOT real people. They were placeholder
+ * Mehul Rana, Sunil Patel — were NOT real people. (The founder role was
+ * real; the name was not. The real founder is Krishan Bhatia.) They were placeholder
  * names in the design handoff mockups (design-source/site-longform.jsx),
  * mistaken for existing site copy and seeded to production, where they
  * carried the bylines on 93 published articles and were emitted as
