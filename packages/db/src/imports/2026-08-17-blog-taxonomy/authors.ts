@@ -1,34 +1,38 @@
 /**
  * Blog authors.
  *
- * Seeded from the team already published on the company page
- * (/hydraulic-components-supplier-uae) — name, role and years of
- * experience are existing site copy, not new claims.
+ * ONE real author: the founder. Everything published on this site is written
+ * or directed by him and he stands behind it as author.
  *
- * `bio` and `credentials` are deliberately LEFT NULL. Those fields feed
- * Person JSON-LD `description` and `hasCredential`, which is precisely the
- * kind of thing that must not be invented: writing "BEng Mechanical · IWCF
- * Level 4" for a real, named colleague would be fabricating a qualification
- * and publishing it as structured data. The author pages render fine without
- * them and improve the moment someone who knows fills them in.
+ * The four names previously seeded here — Anjali Krishnan, Ravi Bhatt,
+ * Mehul Rana, Sunil Patel — were NOT real people. (The founder role was
+ * real; the name was not. The real founder is Krishan Bhatia.) They were placeholder
+ * names in the design handoff mockups (design-source/site-longform.jsx),
+ * mistaken for existing site copy and seeded to production, where they
+ * carried the bylines on 93 published articles and were emitted as
+ * `Person` JSON-LD from /blog/author/[slug]. Do not reintroduce them.
  *
- * `staffUserId` is left unset here too — matching by name would be a guess.
- * It can be linked from the admin once the profiles exist.
+ * `bio` and `credentials` feed Person JSON-LD `description` and
+ * `hasCredential`. Both are real claims about a real person and must be
+ * filled in by him, not guessed. `linkedinUrl` feeds `sameAs`, which is
+ * how a search engine connects this author page to his other profiles.
  */
 
 export type BlogAuthorSeed = {
   slug: string
   name: string
   jobTitle: string
-  yearsExperience: number
+  /** Optional: the column is nullable, and seeding 0 would publish a claim. */
+  yearsExperience?: number
   position: number
 }
 
 const AUTHORS: BlogAuthorSeed[] = [
-  { slug: 'anjali-krishnan', name: 'Anjali Krishnan', jobTitle: 'Technical Director', yearsExperience: 10, position: 1 },
-  { slug: 'ravi-bhatt', name: 'Ravi Bhatt', jobTitle: 'Founder & CEO', yearsExperience: 23, position: 2 },
-  { slug: 'mehul-rana', name: 'Mehul Rana', jobTitle: 'Operations Lead', yearsExperience: 8, position: 3 },
-  { slug: 'sunil-patel', name: 'Sunil Patel', jobTitle: 'Head of Sales', yearsExperience: 12, position: 4 },
+  // Matches the production row created 2026-09-01, which is linked to the
+  // staff_users account and carries all 93 posts. `yearsExperience`, `bio`,
+  // `credentials` and `linkedinUrl` are intentionally unset — they publish,
+  // and `linkedinUrl` in particular feeds Person `sameAs`.
+  { slug: 'ayush-bhatia', name: 'Ayush Bhatia', jobTitle: 'Director', position: 1 },
 ]
 
 export default AUTHORS
