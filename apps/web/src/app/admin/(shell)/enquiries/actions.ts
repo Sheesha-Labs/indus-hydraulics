@@ -3,6 +3,8 @@
 import { db, nextEnquiryCode } from '@indus/db'
 import { extractFromPaste } from '@indus/domain'
 import { revalidatePath } from 'next/cache'
+
+import { inngest } from '../../../../inngest/client'
 import { z } from 'zod'
 
 import { auth } from '../../../../lib/admin-auth'
@@ -116,6 +118,60 @@ export async function setLineReviewStatus(formData: FormData): Promise<Result<vo
 
     revalidatePath(`/admin/enquiries/${line.enquiry.code}`)
     return ok(undefined)
+  } catch (error) {
+    return failFromError(error)
+  }
+}
+
+/**
+ * Queue supplier research for every non-rejected line on an enquiry.
+ *
+ * Creates the run row synchronously so the screen has something to show
+ * immediately, then hands off to Inngest. Refuses a second run while one is
+ * still moving — two concurrent runs on one enquiry double the bill and race
+ * each other's result rows.
+ */
+export async function startSupplierResearch(formData: FormData): Promise<Result<{ runId: string }>> {
+  try {
+    const session = await auth()
+    requireRole(session, ROLES.RFQ_REVIEW)
+
+    const parsed = z.object({ enquiryId: z.string().uuid() }).safeParse({
+      enquiryId: formData.get('enquiryId'),
+    })
+    if (!parsed.success) return failFromError(parsed.error)
+
+    const enquiry = await db.enquiry.findUnique({
+      where: { id: parsed.data.enquiryId },
+      select: { id: true, code: true, _count: { select: { lines: true } } },
+    })
+    if (!enquiry) return fail('NOT_FOUND', 'That enquiry no longer exists.')
+    if (enquiry._count.lines === 0) {
+      return fail('PRECONDITION_FAILED', 'This enquiry has no line items to research yet.')
+    }
+
+    const inFlight = await db.researchRun.findFirst({
+      where: { enquiryId: enquiry.id, status: { in: ['queued', 'running'] } },
+      select: { id: true },
+    })
+    if (inFlight) {
+      return fail('CONFLICT', 'Research is already running for this enquiry.')
+    }
+
+    const run = await db.researchRun.create({
+      data: { enquiryId: enquiry.id, triggeredById: session?.user?.id ?? null },
+      select: { id: true },
+    })
+
+    // Fired outside any transaction: an event sent inside one that later rolls
+    // back leaves a job running against a row that does not exist.
+    await inngest.send({
+      name: 'procurement/research.requested',
+      data: { researchRunId: run.id },
+    })
+
+    revalidatePath(`/admin/enquiries/${enquiry.code}`)
+    return ok({ runId: run.id })
   } catch (error) {
     return failFromError(error)
   }

@@ -4,3 +4,4 @@
  * Pure functions only. No I/O.
  */
 export * from './item-signature'
+export * from './supplier-scoring'

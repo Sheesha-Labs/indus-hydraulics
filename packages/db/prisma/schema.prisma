@@ -433,6 +433,7 @@ model StaffUser {
   pageContentEdits  PageContent[]     @relation("PageContentEditor")
   enquiriesAssigned Enquiry[]         @relation("EnquiryAssignedTo")
   enquiriesCreated  Enquiry[]         @relation("EnquiryCreatedBy")
+  researchRuns      ResearchRun[]
 
   @@map("staff_users")
 }
@@ -2359,7 +2360,8 @@ model Enquiry {
   /// e.g. "paste/v1" — which extractor produced the lines, for re-runs.
   extractorName String?
 
-  lines EnquiryLine[]
+  lines        EnquiryLine[]
+  researchRuns ResearchRun[]
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
@@ -2396,6 +2398,8 @@ model EnquiryLine {
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
+
+  researchResults ItemResearchResult[]
 
   @@index([enquiryId])
   @@index([reviewStatus])
@@ -2534,4 +2538,102 @@ enum ContactConfidence {
   high
   medium
   low
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Supplier research
+// ─────────────────────────────────────────────────────────────────────────────
+
+/// Cached by item SIGNATURE, not by line id: the same valve asked for by two
+/// buyers a month apart must hit one entry rather than pay for research twice.
+model ItemResearchCache {
+  id             String   @id @default(uuid())
+  signatureHash  String   @unique
+  commodityKey   String
+  candidates     Json
+  candidateCount Int      @default(0)
+  reachableCount Int      @default(0)
+  /// Lowered when a human rejects a whole set, so one bad early run stops
+  /// being served for months.
+  qualityScore   Int      @default(100)
+  hitCount       Int      @default(0)
+  lastHitAt      DateTime?
+  expiresAt      DateTime
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([expiresAt])
+  @@map("item_research_cache")
+}
+
+model ResearchRun {
+  id        String  @id @default(uuid())
+  enquiryId String
+  enquiry   Enquiry @relation(fields: [enquiryId], references: [id], onDelete: Cascade)
+
+  status         ResearchRunStatus @default(queued)
+  itemCount      Int               @default(0)
+  completedCount Int               @default(0)
+  cacheHitCount  Int               @default(0)
+  costUsdMicros  Int               @default(0)
+
+  triggeredById String?
+  triggeredBy   StaffUser? @relation(fields: [triggeredById], references: [id])
+  error         String?
+
+  startedAt  DateTime?
+  finishedAt DateTime?
+
+  results ItemResearchResult[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([enquiryId])
+  @@index([status])
+  @@map("research_runs")
+}
+
+/// One row per item per run, written the MOMENT that item lands rather than in
+/// a final aggregate step — a partial failure must still leave usable lists.
+model ItemResearchResult {
+  id            String      @id @default(uuid())
+  researchRunId String
+  researchRun   ResearchRun @relation(fields: [researchRunId], references: [id], onDelete: Cascade)
+  enquiryLineId String
+  enquiryLine   EnquiryLine @relation(fields: [enquiryLineId], references: [id], onDelete: Cascade)
+
+  signatureHash  String
+  status         ItemResearchStatus @default(queued)
+  cacheHit       Boolean            @default(false)
+  candidates     Json               @default("[]")
+  candidateCount Int                @default(0)
+  reachableCount Int                @default(0)
+  costUsdMicros  Int                @default(0)
+  error          String?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@unique([researchRunId, enquiryLineId])
+  @@index([researchRunId])
+  @@index([enquiryLineId])
+  @@map("item_research_results")
+}
+
+enum ResearchRunStatus {
+  queued
+  running
+  completed
+  partial
+  failed
+}
+
+enum ItemResearchStatus {
+  queued
+  running
+  completed
+  failed
+  skipped
 }

@@ -137,3 +137,4 @@ traceable.
 | `015_store_settings_brand_identity.sql` | `202608171758_store_settings_brand_identity.sql` |
 | `016_enquiry_intake.sql` | `202609011730_enquiry_intake.sql` |
 | `017_supplier_ledger.sql` | `202609011815_supplier_ledger.sql` |
+| `018_supplier_research_runs.sql` | `202609011900_supplier_research_runs.sql` |

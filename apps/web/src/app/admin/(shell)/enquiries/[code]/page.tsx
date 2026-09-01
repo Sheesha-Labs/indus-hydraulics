@@ -4,6 +4,7 @@ import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 
 import AdminPageShell from '../../../../../components/admin/AdminPageShell'
+import ResearchButton from './_components/research-button'
 
 export const dynamic = 'force-dynamic'
 export const metadata: Metadata = { title: 'Enquiry — Indus Admin' }
@@ -27,6 +28,11 @@ export default async function EnquiryDetailPage({ params }: Props) {
 
   const needsReview = enquiry.lines.filter((l) => l.reviewStatus === 'needs_review').length
 
+  const activeRun = await db.researchRun.findFirst({
+    where: { enquiryId: enquiry.id, status: { in: ['queued', 'running'] } },
+    select: { id: true },
+  })
+
   return (
     <AdminPageShell
       title={enquiry.title}
@@ -37,6 +43,17 @@ export default async function EnquiryDetailPage({ params }: Props) {
           {enquiry.revision ? ` · ${enquiry.revision}` : ''}
           {enquiry.buyerName ? ` · ${enquiry.buyerName}` : ''}
         </span>
+      }
+      actions={
+        <ResearchButton
+          enquiryId={enquiry.id}
+          disabled={enquiry.lines.length === 0 || !!activeRun}
+          {...(activeRun
+            ? { disabledReason: 'Research already running.' }
+            : enquiry.lines.length === 0
+              ? { disabledReason: 'Add line items first.' }
+              : {})}
+        />
       }
     >
       <div className="grid gap-6 lg:grid-cols-[1fr_320px]">
