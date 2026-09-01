@@ -32,7 +32,7 @@ const ARTICLE: BlogArticleSeed = {
     },
     {
       type: 'lead',
-      html: 'A hose is quoted from a specification the buyer supplies. A fitting is quoted from an identification the supplier has to make, which is why an enquiry that names a part badly is slower than one that describes it well. The six things below are what let us answer with a part number rather than with questions.',
+      html: 'What to send for a fittings quote is a shorter list than most buyers expect, and two items on it are usually missing. A hose is quoted from a specification the buyer supplies. A fitting is quoted from an identification the supplier has to make, which is why an enquiry that names a part badly is slower than one that describes it well. The six things below are what let us answer with a part number rather than with questions.',
     },
 
     {

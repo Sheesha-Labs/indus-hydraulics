@@ -36,7 +36,7 @@ const ARTICLE: BlogArticleSeed = {
     },
     {
       type: 'lead',
-      html: 'On general industrial orders the documents follow the goods. On oilfield orders they are part of the goods: an assembly that arrives without its pack cannot be installed, and the pack cannot always be reconstructed after the fact. That inversion is the single most useful thing to understand about buying flexible connections for pressure-control and drilling service.',
+      html: 'The oilfield hose document pack is part of the product rather than an accompaniment to it. On general industrial orders the documents follow the goods. On oilfield orders they are part of the goods: an assembly that arrives without its pack cannot be installed, and the pack cannot always be reconstructed after the fact. That inversion is the single most useful thing to understand about buying flexible connections for pressure-control and drilling service.',
     },
 
     {

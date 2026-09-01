@@ -34,12 +34,33 @@
  */
 
 export type BlogFigure = {
-  /** Slug of the article whose hero photograph this figure borrows. */
-  from: string
+  /**
+   * Slug of the article whose hero photograph this figure borrows.
+   *
+   * Optional since 2026-09-01. A figure with no `from` is a RESERVED SLOT: the
+   * block is written with `imageId: null`, which `BlogFigureBlockView` renders
+   * as nothing at all — no frame, no placeholder, no gap. The article reads
+   * exactly as it does today, and the moment a photograph exists the slot
+   * fills in place without touching the article body.
+   *
+   * That is the point of reserving them rather than adding figures later: the
+   * position in the argument, the caption and the brief are editorial
+   * decisions made by whoever wrote the piece, and they are cheaper to make
+   * now than to reconstruct when the images arrive.
+   */
+  from?: string
   caption: string
   /** 1-based index over this article's `section_head` blocks. */
   afterSection: number
   aspectRatio?: '16/9' | '4/3' | '21/9' | '1/1'
+  /**
+   * What the photograph should show. Rendered only inside the admin editor's
+   * placeholder box; the public page shows nothing while the slot is empty.
+   * This is the brief the image pass works from.
+   */
+  placeholderLabel?: string
+  /** Figure number, e.g. 'FIG. 01'. */
+  captionPrefix?: string
 }
 
 export const BLOG_FIGURES: Record<string, BlogFigure[]> = {
@@ -804,6 +825,467 @@ export const BLOG_FIGURES: Record<string, BlogFigure[]> = {
       afterSection: 2,
       caption:
         'The four families side by side. JIC earns its place on most of a machine; this article is about the rest.',
+    },
+  ],
+
+  // ── Reserved slots: 2026-09-01 sprints (GCC compliance + Africa fittings)
+  //
+  // Every entry below has NO `from`, so it writes a figure with a null id.
+  // `BlogFigureBlockView` renders nothing for those, so the forty articles read
+  // today exactly as they read before the slots existed. The caption and the
+  // brief are the editorial half of the work, done while the argument is fresh;
+  // the image pass fills `from` (or a commissioned Media id) and the pictures
+  // appear in place without the bodies being touched.
+  'saber-certificate-for-hydraulic-hose': [
+    {
+      afterSection: 1,
+      captionPrefix: 'FIG. 01',
+      caption:
+        'A shipment file is assembled before the goods move, not behind them — the product registration and the consignment certificate are separate documents doing separate jobs.',
+      placeholderLabel: 'Export document set laid out on a warehouse desk beside a crated hose assembly.',
+    },
+  ],
+  'gulf-conformity-mark-hose-fittings': [
+    {
+      afterSection: 1,
+      captionPrefix: 'FIG. 01',
+      caption:
+        'Conformity marks belong to the product families their regulations name. Hose carries its identity on the layline instead.',
+      placeholderLabel: 'Close crop of a hose layline running along a coil, printing sharp and legible as printing, in workshop light.',
+    },
+  ],
+  'certificate-of-origin-gcc-duty': [
+    {
+      afterSection: 1,
+      captionPrefix: 'FIG. 01',
+      caption:
+        'Origin follows the factory that made the item, not the warehouse it was picked from.',
+      placeholderLabel: 'Mixed pallet of boxed fittings from several manufacturers, shot square-on in a warehouse aisle.',
+    },
+  ],
+  'hose-assembly-test-certificate': [
+    {
+      afterSection: 1,
+      captionPrefix: 'FIG. 01',
+      caption:
+        'A proof test is a single held pressure on one identified assembly — which is why the tag on that assembly matters as much as the number on the certificate.',
+      placeholderLabel: 'Hose assembly on a test bench, pressure gauge in frame, tag hanging from the ferrule.',
+    },
+  ],
+  'material-test-certificate-en-10204': [
+    {
+      afterSection: 2,
+      captionPrefix: 'FIG. 01',
+      caption:
+        'A 3.1 certifies the batch in your hand. Without a heat or batch number visible on the goods, nothing reconciles.',
+      placeholderLabel: 'Macro of stamped markings on the hex of a steel fitting, raking light so the characters read as characters.',
+    },
+  ],
+  'nace-mr0175-hose-documentation': [
+    {
+      afterSection: 2,
+      captionPrefix: 'FIG. 01',
+      caption:
+        'The standard governs the metal. The tube compound is a separate question that the same purchase order rarely asks.',
+      placeholderLabel: 'Cutaway or sectioned hose end showing tube, reinforcement and the metal fitting together, on a neutral bench.',
+    },
+  ],
+  'vendor-approval-for-hose-supply': [
+    {
+      afterSection: 2,
+      captionPrefix: 'FIG. 01',
+      caption:
+        'What an operator\'s regime actually wants is evidence: a named manufacturer, a construction standard, a test record and a tag that ties them to this item.',
+      placeholderLabel: 'Tagged hose assemblies racked and labelled in a store, tags facing camera, shallow depth of field.',
+    },
+  ],
+  'verifying-a-genuine-hydraulic-hose': [
+    {
+      afterSection: 1,
+      captionPrefix: 'FIG. 01',
+      caption:
+        'The layline is the hose\'s own identity statement, and it repeats every metre — any offcut long enough to fit is long enough to identify.',
+      placeholderLabel: 'Hands holding a hose offcut with the layline rotated into the light, workshop background thrown out of focus.',
+    },
+  ],
+  'gcc-import-documents-for-hose': [
+    {
+      afterSection: 1,
+      captionPrefix: 'FIG. 01',
+      caption:
+        'Four destinations, four regimes: the document set is built against where the goods are going rather than assembled once and reused.',
+      placeholderLabel: 'Overhead of four separate document wallets fanned on a desk, each with a different consignment label.',
+    },
+  ],
+  'oilfield-hose-document-pack': [
+    {
+      afterSection: 1,
+      captionPrefix: 'FIG. 01',
+      caption:
+        'On an oilfield order the pack is part of the product: most of it cannot be reconstructed after the assembly is built.',
+      placeholderLabel: 'Bound data book open beside a crated oilfield hose assembly, both in frame, industrial storeroom light.',
+    },
+  ],
+  'fittings-on-a-chinese-excavator': [
+    {
+      afterSection: 1,
+      captionPrefix: 'FIG. 01',
+      caption:
+        'A metric cone and a BSP cone are twenty-one degrees apart and near-identical down a dark bore. A seat gauge settles in seconds what eyesight cannot.',
+      placeholderLabel: 'Two male fittings side by side on a bench with a seat angle gauge resting across them, macro, even light.',
+    },
+  ],
+  'fittings-on-a-used-japanese-machine': [
+    {
+      afterSection: 1,
+      captionPrefix: 'FIG. 01',
+      caption:
+        'Same seat, different thread: the pair that defeats identification by eye on a used import.',
+      placeholderLabel: 'Two 30-degree flare fittings photographed together, threads facing camera, pitch gauge leaning against one.',
+    },
+  ],
+  'tractor-hydraulic-fittings': [
+    {
+      afterSection: 2,
+      captionPrefix: 'FIG. 01',
+      caption:
+        'Implements connect through couplers that are handled daily, dropped and dragged — which is why the spare that matters is a coupler half, not a fitting.',
+      placeholderLabel: 'Agricultural quick coupler halves on a tractor\'s rear remotes, dusty, end of a working day.',
+    },
+  ],
+  'fittings-on-american-machines': [
+    {
+      afterSection: 1,
+      captionPrefix: 'FIG. 01',
+      caption:
+        'A JIC male is a plain cone; an ORFS male is a flat face with an O-ring set into it. Once seen side by side they are never confused again.',
+      placeholderLabel: 'JIC and ORFS male fittings photographed together head-on, the O-ring clearly visible in the flat face.',
+    },
+  ],
+  'fittings-on-european-machines': [
+    {
+      afterSection: 1,
+      captionPrefix: 'FIG. 01',
+      caption:
+        'The same tube size exists in a light and a heavy series with different threads, so a tube diameter is not an identification.',
+      placeholderLabel: 'Two DIN 2353 fittings of the same tube size, different series, side by side with a caliper across one.',
+    },
+  ],
+  'korean-excavator-hydraulic-fittings': [
+    {
+      afterSection: 1,
+      captionPrefix: 'FIG. 01',
+      caption:
+        'Components arrive at an assembly line with their own port conventions, so a machine can be genuinely mixed from new.',
+      placeholderLabel: 'Excavator valve bank with several hose ends of visibly different families entering it, engine bay light.',
+    },
+  ],
+  'bsp-or-metric-fittings': [
+    {
+      afterSection: 2,
+      captionPrefix: 'FIG. 01',
+      caption:
+        'A yard walk with a caliper and a notebook is the cheapest hour a mixed-fleet workshop spends.',
+      placeholderLabel: 'Technician crouched at a machine with a caliper on a port and an open notebook on the track.',
+    },
+  ],
+  'measuring-a-fitting-without-gauges': [
+    {
+      afterSection: 1,
+      captionPrefix: 'FIG. 01',
+      caption:
+        'A caliper across the crests and a pitch taken over ten threads is enough to name most fittings in circulation.',
+      placeholderLabel: 'Caliper measuring across the thread crests of a male fitting, held in gloved hands, field conditions.',
+    },
+  ],
+  'building-a-thread-reference-board': [
+    {
+      afterSection: 1,
+      captionPrefix: 'FIG. 01',
+      caption:
+        'Samples, not pictures: identification is done by offering the unknown part up to a known one.',
+      placeholderLabel: 'Plywood workshop board with male and female fittings mounted in rows, hand-written labels beneath each.',
+    },
+  ],
+  'bridging-two-thread-standards': [
+    {
+      afterSection: 1,
+      captionPrefix: 'FIG. 01',
+      caption:
+        'One adapter is engineering. Three is a lever arm bolted to a port that vibrates all day.',
+      placeholderLabel: 'Stack of three adapters made up on a machine port, side-on so the overhang reads clearly.',
+    },
+  ],
+  'what-to-send-for-a-fittings-quote': [
+    {
+      afterSection: 1,
+      captionPrefix: 'FIG. 01',
+      caption:
+        'A photograph square-on, a photograph down the bore, and one caliper reading name most fittings on the first reply.',
+      placeholderLabel: 'Phone screen showing a photograph of a fitting, held above the actual fitting on a bench.',
+    },
+  ],
+  'cross-referencing-a-fitting-part-number': [
+    {
+      afterSection: 1,
+      captionPrefix: 'FIG. 01',
+      caption:
+        'A part number encodes geometry in one maker\'s language. The geometry is what has to match.',
+      placeholderLabel: 'Worn part number stamped on a fitting body, macro, with a caliper out of focus behind.',
+    },
+  ],
+  'adapter-kit-for-a-mixed-fleet': [
+    {
+      afterSection: 2,
+      captionPrefix: 'FIG. 01',
+      caption:
+        'A kit built from a yard walk is small, cheap and covers the failures that repeat. One built from a catalogue is mostly compartments nobody opens.',
+      placeholderLabel: 'Open compartment case of adapters on a workshop bench, several compartments empty, others well used.',
+    },
+  ],
+  'spares-list-for-a-remote-site': [
+    {
+      afterSection: 1,
+      captionPrefix: 'FIG. 01',
+      caption:
+        'On a long lane the ranking is by what production loses while you wait, not by what the item costs.',
+      placeholderLabel: 'Remote site container store with shelves of hose and fittings, dust, hard afternoon light.',
+    },
+  ],
+  'inspecting-fittings-on-arrival': [
+    {
+      afterSection: 1,
+      captionPrefix: 'FIG. 01',
+      caption:
+        'Running a known nut down an arriving thread takes seconds and catches the commonest visible defect there is.',
+      placeholderLabel: 'Hands checking a newly delivered fitting against a known nut on a loading bay, opened carton beside.',
+    },
+  ],
+  'plating-and-corrosion-on-fittings': [
+    {
+      afterSection: 2,
+      captionPrefix: 'FIG. 01',
+      caption:
+        'Corrosion starts where the coating is thinnest — thread crests and hex corners — and works underneath from there.',
+      placeholderLabel: 'Macro of a corroded fitting hex on a machine, rust blooming at the corners, plating intact elsewhere.',
+    },
+  ],
+  'when-stainless-is-worth-it': [
+    {
+      afterSection: 2,
+      captionPrefix: 'FIG. 01',
+      caption:
+        'Stainless answers a corrosion problem. It does not automatically answer a pressure one.',
+      placeholderLabel: 'Stainless and plated carbon steel fittings of the same size photographed together on a neutral bench.',
+    },
+  ],
+  'air-or-sea-for-a-fittings-order': [
+    {
+      afterSection: 1,
+      captionPrefix: 'FIG. 01',
+      caption:
+        'Fittings are dense and small, so the fixed costs of clearing a consignment usually matter more than the freight on it.',
+      placeholderLabel: 'Small heavy carton of fittings beside a full pallet of hose on a warehouse floor, scale obvious.',
+    },
+  ],
+  'consolidating-fittings-with-a-hose-order': [
+    {
+      afterSection: 1,
+      captionPrefix: 'FIG. 01',
+      caption:
+        'One consignment, one document set, one clearance — the saving is in everything that happens to a parcel, not in the parts.',
+      placeholderLabel: 'Single consolidated pallet being wrapped, hose coils and fitting cartons together under the stretch film.',
+    },
+  ],
+  'substituting-a-fitting-safely': [
+    {
+      afterSection: 1,
+      captionPrefix: 'FIG. 01',
+      caption:
+        'Three of the four checks announce themselves immediately. The rating does not — it behaves perfectly until the day the circuit sees its design pressure.',
+      placeholderLabel: 'Two visually similar fittings on a bench, one marked with a paint dot, workshop light.',
+    },
+  ],
+  'copper-mine-hydraulic-fittings': [
+    {
+      afterSection: 1,
+      captionPrefix: 'FIG. 01',
+      caption:
+        'On the fleet the damage is mechanical: abrasion at contact points and fatigue at the joint.',
+      placeholderLabel: 'Hydraulic lines on a haul truck chassis, dust-covered, with a visible rub point against the frame.',
+    },
+  ],
+  'gold-plant-hydraulic-fittings': [
+    {
+      afterSection: 1,
+      captionPrefix: 'FIG. 01',
+      caption:
+        'A gold circuit is abrasive in some areas and chemically aggressive in others. The stock list should say so.',
+      placeholderLabel: 'Process plant walkway with hydraulic lines running past wet, scaled steelwork.',
+    },
+  ],
+  'oilfield-fittings-in-west-africa': [
+    {
+      afterSection: 1,
+      captionPrefix: 'FIG. 01',
+      caption:
+        'Documented flow equipment and ordinary plant hydraulics travel at different speeds. Splitting them is what keeps the second one moving.',
+      placeholderLabel: 'Two consignments staged separately in a yard, one crated and sealed, one on an open pallet.',
+    },
+  ],
+  'agriculture-and-construction-fittings': [
+    {
+      afterSection: 1,
+      captionPrefix: 'FIG. 01',
+      caption:
+        'Loader and tipper circuits produce most of the repeat failures on a mixed yard, and most of them are installation faults.',
+      placeholderLabel: 'Backhoe loader arm with hydraulic lines, one visibly chafing against the boom casting.',
+    },
+  ],
+  'quarry-and-crusher-fittings': [
+    {
+      afterSection: 1,
+      captionPrefix: 'FIG. 01',
+      caption:
+        'Crushing plant destroys joints rather than hoses: make-up relaxes, the seat frets, and the port pays for it last.',
+      placeholderLabel: 'Hydraulic lines clamped along a crusher frame, heavy dust, vibration-worn clamps visible.',
+    },
+  ],
+  'water-well-drilling-rig-fittings': [
+    {
+      afterSection: 2,
+      captionPrefix: 'FIG. 01',
+      caption:
+        'A made-up spare assembly turns a stoppage into a change-out. A box of loose fittings turns it into a fabrication job.',
+      placeholderLabel: 'Support truck bed with coiled spare assemblies and a small parts case, bush site in the background.',
+    },
+  ],
+  'port-and-terminal-fittings': [
+    {
+      afterSection: 1,
+      captionPrefix: 'FIG. 01',
+      caption:
+        'Salt air works on every exposed joint whether the machine is running or not, and the bill arrives as a longer intervention later.',
+      placeholderLabel: 'Reach stacker boom joint with salt-corroded fittings, quayside and containers behind.',
+    },
+  ],
+  'sugar-mill-and-agro-processing-fittings': [
+    {
+      afterSection: 1,
+      captionPrefix: 'FIG. 01',
+      caption:
+        'Heat, steam and washdown attack the outside of a joint while the inside seals perfectly.',
+      placeholderLabel: 'Mill hydraulics beside steam-stained pipework, wet floor, humid interior light.',
+    },
+  ],
+  'buying-fittings-in-south-africa': [
+    {
+      afterSection: 2,
+      captionPrefix: 'FIG. 01',
+      caption:
+        'A planned consolidated order is a different question from a breakdown part, and only one of them should travel.',
+      placeholderLabel: 'Counter of a hydraulics branch with fittings racked behind, customer side of the counter in frame.',
+    },
+  ],
+  'factory-and-fixed-plant-fittings': [
+    {
+      afterSection: 1,
+      captionPrefix: 'FIG. 01',
+      caption:
+        'A factory\'s thread population is a choice, because the machines do not move.',
+      placeholderLabel: 'Row of injection moulding machines with tidy hydraulic runs, clean plant floor, overhead light.',
+    },
+  ],
+
+  // ── Reserved slots: Africa fittings wave 4 (2026-09-01) ────────────────
+  'reading-a-weeping-joint': [
+    {
+      afterSection: 1,
+      captionPrefix: 'FIG. 01',
+      caption:
+        'Oil tracking from a joint on a machine, cleaned and re-run so the source is visible rather than the drip.',
+      placeholderLabel: 'Weeping hydraulic joint photographed close, oil emerging at the seat, machine in soft focus behind.',
+    },
+  ],
+  'over-tightened-fitting-diagnosis': [
+    {
+      afterSection: 1,
+      captionPrefix: 'FIG. 01',
+      caption:
+        'The evidence is on the sealing face: an over-tightened joint is burnished where a correctly made one is not.',
+      placeholderLabel: 'Macro of two cone seats side by side on a bench, one clean, one burnished and rolled.',
+    },
+  ],
+  'why-fittings-seize-in-coastal-air': [
+    {
+      afterSection: 1,
+      captionPrefix: 'FIG. 01',
+      caption:
+        'Corrosion starts at the crests and hex corners, then works underneath a coating that still looks intact.',
+      placeholderLabel: 'Corroded fitting hex on a coastal machine, rust blooming at the corners, sea air haze behind.',
+    },
+  ],
+  'damaged-port-repair-or-scrap': [
+    {
+      afterSection: 1,
+      captionPrefix: 'FIG. 01',
+      caption:
+        'The seat decides it before the thread does — a damaged sealing face cannot be recovered by restoring the thread above it.',
+      placeholderLabel: 'Damaged hydraulic port on a valve block, raking light across the seat, component in frame.',
+    },
+  ],
+  'sealant-on-hydraulic-threads': [
+    {
+      afterSection: 1,
+      captionPrefix: 'FIG. 01',
+      caption:
+        'Tape on a thread that does not seal on the thread: the joint still leaks, and the shreds go into the circuit.',
+      placeholderLabel: 'PTFE tape wrapped on a JIC male thread, tape visibly shredded near the cone.',
+    },
+  ],
+  'galvanic-corrosion-in-fittings': [
+    {
+      afterSection: 2,
+      captionPrefix: 'FIG. 01',
+      caption:
+        'Attack concentrates at the interface between the two metals rather than spreading evenly over either part.',
+      placeholderLabel: 'Stainless fitting removed from a plated steel port, corrosion concentrated on the first threads.',
+    },
+  ],
+  'dirt-ingress-in-transit-and-storage': [
+    {
+      afterSection: 1,
+      captionPrefix: 'FIG. 01',
+      caption:
+        'An uncapped assembly breathes for the whole voyage; a capped one arrives ready to fit.',
+      placeholderLabel: 'Two hose assemblies side by side in a crate, one capped and bagged, one open-ended.',
+    },
+  ],
+  'storing-fittings-and-seals-on-site': [
+    {
+      afterSection: 2,
+      captionPrefix: 'FIG. 01',
+      caption:
+        'The rubber is what ages on a hot shelf. Dating it and keeping it dark is the whole of the practice.',
+      placeholderLabel: 'Site container store shelving with dated boxes of seals and bagged fittings, hot interior light.',
+    },
+  ],
+  'reusing-fittings-in-a-rebuild': [
+    {
+      afterSection: 1,
+      captionPrefix: 'FIG. 01',
+      caption:
+        'Sorting as parts come off preserves the information a common tray destroys.',
+      placeholderLabel: 'Three labelled trays on a workbench during a strip-down, fittings sorted between them.',
+    },
+  ],
+  'crimping-on-site-or-adapting': [
+    {
+      afterSection: 1,
+      captionPrefix: 'FIG. 01',
+      caption:
+        'Both answers are respectable; the failure modes are what separate them.',
+      placeholderLabel: 'Field crimper and a small adapter case open side by side on a truck tailgate.',
     },
   ],
 }

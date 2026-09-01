@@ -45,6 +45,10 @@ async function main(): Promise<void> {
   for (const [slug, figures] of Object.entries(BLOG_FIGURES)) {
     if (!known.has(slug)) errors.push(`figure map names an unknown article: ${slug}`)
     for (const figure of figures) {
+      // A reserved slot (no `from`) is written with a null id by
+      // `withFigures` and rendered as nothing until an image pass fills it.
+      // There is no borrowed article to validate, so there is nothing to say.
+      if (!figure.from) continue
       if (!known.has(figure.from)) {
         errors.push(`[${slug}] borrows from an unknown article: ${figure.from}`)
       } else if (!heroIdBySlug.has(figure.from)) {

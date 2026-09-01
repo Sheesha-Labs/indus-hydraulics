@@ -40,7 +40,7 @@ const ARTICLE: BlogArticleSeed = {
     },
     {
       type: 'lead',
-      html: 'Material certificates come up on any order where the metallic parts carry pressure or go somewhere regulated, and they are the most misunderstood documents in the pack. The confusion is not about metallurgy. It is that four superficially similar documents have very different evidential weight, and purchase orders routinely ask for one and accept another.',
+      html: 'A material test certificate is the document most often specified and least often read closely. Material certificates come up on any order where the metallic parts carry pressure or go somewhere regulated, and they are the most misunderstood documents in the pack. The confusion is not about metallurgy. It is that four superficially similar documents have very different evidential weight, and purchase orders routinely ask for one and accept another.',
     },
 
     {

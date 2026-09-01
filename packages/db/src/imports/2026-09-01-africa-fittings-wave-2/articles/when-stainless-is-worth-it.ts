@@ -35,7 +35,7 @@ const ARTICLE: BlogArticleSeed = {
     },
     {
       type: 'lead',
-      html: 'Stainless comes up whenever a site is coastal, a plant is washed down, or a fluid is aggressive — and the conversation usually goes straight from "we have corrosion" to "quote it all in stainless". That is occasionally right and usually expensive, because the property being bought is not the property that is failing everywhere on the machine.',
+      html: 'Knowing when stainless is worth it matters more than knowing that stainless resists corrosion. Stainless comes up whenever a site is coastal, a plant is washed down, or a fluid is aggressive — and the conversation usually goes straight from "we have corrosion" to "quote it all in stainless". That is occasionally right and usually expensive, because the property being bought is not the property that is failing everywhere on the machine.',
     },
 
     {

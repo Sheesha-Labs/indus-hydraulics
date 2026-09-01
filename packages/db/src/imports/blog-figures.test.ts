@@ -9,8 +9,33 @@ const para = { type: 'paragraph' as const, html: 'body' }
 describe('BLOG_FIGURES', () => {
   const entries = Object.entries(BLOG_FIGURES)
 
-  it('gives every article a picture in the body', () => {
-    expect(entries.length).toBe(93)
+  it('gives every article a picture in the body, or a slot reserved for one', () => {
+    expect(entries.length).toBe(143)
+  })
+
+  /**
+   * A reserved slot — no `from` — writes a figure with a null id, and
+   * `BlogFigureBlockView` renders nothing for it. That is the whole point: the
+   * article reads unchanged until an image exists. What a slot must carry is
+   * the brief, because the slot is worthless to the image pass without one.
+   */
+  /** `placeholderLabel` is capped at 120 in the block schema. Three briefs hit
+   *  it on first import; catching that here beats catching it at write time. */
+  it('keeps every brief inside what the block schema accepts', () => {
+    for (const [slug, figures] of entries) {
+      for (const f of figures) {
+        expect(f.placeholderLabel?.length ?? 0, `${slug}: brief too long`).toBeLessThanOrEqual(120)
+      }
+    }
+  })
+
+  it('gives every reserved slot a brief for the image pass', () => {
+    for (const [slug, figures] of entries) {
+      for (const f of figures) {
+        if (f.from) continue
+        expect(f.placeholderLabel?.trim().length ?? 0, `${slug}: reserved slot has no brief`).toBeGreaterThan(20)
+      }
+    }
   })
 
   it('never borrows an article’s own hero — a figure repeating the hero is padding', () => {
@@ -35,6 +60,18 @@ describe('BLOG_FIGURES', () => {
 describe('withFigures', () => {
   const heroes = new Map([['other-article', 'media-1']])
   const body: BlogBlocksInput = [head('/01'), para, head('/02'), para]
+
+  it('writes a reserved slot as a null-id figure carrying its brief', () => {
+    // A real reserved slot from the 2026-09-01 sprints, so the test breaks if
+    // the reserved-slot mechanism is ever removed from under them.
+    const slug = 'saber-certificate-for-hydraulic-hose'
+    expect(BLOG_FIGURES[slug]?.[0]?.from, 'expected a reserved slot').toBeUndefined()
+    const out = withFigures(slug, [head('/01'), para], heroes) as BlogBlocksInput
+    const fig = out.find((b) => b.type === 'figure') as Record<string, unknown> | undefined
+    expect(fig).toBeDefined()
+    expect(fig!.imageId).toBeNull()
+    expect(String(fig!.placeholderLabel ?? '').length).toBeGreaterThan(20)
+  })
 
   it('inserts the figure immediately after the named section', () => {
     const out = withFigures('x', body, heroes) as BlogBlocksInput

@@ -42,7 +42,7 @@ const ARTICLE: BlogArticleSeed = {
     },
     {
       type: 'lead',
-      html: 'Saudi Arabia dominates the conversation about Gulf import paperwork because SABER is the most visible scheme in the region, and the effect is that the other four destinations get treated as variations on it. They are not variations on anything. A consignment planned as though Doha were Riyadh will carry the wrong documents in both directions — some that are not needed, and one or two that are.',
+      html: 'GCC import documents are national rather than regional, and the difference is the whole problem. Saudi Arabia dominates the conversation about Gulf import paperwork because SABER is the most visible scheme in the region, and the effect is that the other four destinations get treated as variations on it. They are not variations on anything. A consignment planned as though Doha were Riyadh will carry the wrong documents in both directions — some that are not needed, and one or two that are.',
     },
 
     {

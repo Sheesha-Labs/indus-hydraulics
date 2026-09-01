@@ -36,7 +36,7 @@ const ARTICLE: BlogArticleSeed = {
     },
     {
       type: 'lead',
-      html: 'Chinese wheel loaders, excavators and backhoes are on almost every site we ship to, and the first time a workshop re-hoses one it usually discovers that the adapter drawer built around an older European or Japanese fleet does not cover it. The good news is that the range of families involved is small. The bad news is that two of them look similar enough to be swapped by anyone in a hurry.',
+      html: 'The fittings on a Chinese excavator are not exotic; the trouble is that two of the families involved look alike. Chinese wheel loaders, excavators and backhoes are on almost every site we ship to, and the first time a workshop re-hoses one it usually discovers that the adapter drawer built around an older European or Japanese fleet does not cover it. The good news is that the range of families involved is small. The bad news is that two of them look similar enough to be swapped by anyone in a hurry.',
     },
 
     {

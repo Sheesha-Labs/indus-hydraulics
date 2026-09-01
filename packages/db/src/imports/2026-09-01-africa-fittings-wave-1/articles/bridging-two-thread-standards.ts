@@ -32,7 +32,7 @@ const ARTICLE: BlogArticleSeed = {
     },
     {
       type: 'lead',
-      html: 'Nobody plans to bridge standards. It happens because a machine arrived from one country, a replacement pump came from another, and the hose in the van has the end that was in the van. The result is a joint that works, and the question worth asking is whether it is the joint you would build if you had the parts — because at the next hose change, you will.',
+      html: 'Bridging two thread standards is ordinary engineering until it becomes a stack of three adapters. Nobody plans to bridge standards. It happens because a machine arrived from one country, a replacement pump came from another, and the hose in the van has the end that was in the van. The result is a joint that works, and the question worth asking is whether it is the joint you would build if you had the parts — because at the next hose change, you will.',
     },
 
     {

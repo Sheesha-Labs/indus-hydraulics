@@ -35,7 +35,7 @@ const ARTICLE: BlogArticleSeed = {
     },
     {
       type: 'lead',
-      html: 'Every workshop that buys a pre-made adapter assortment ends up with the same thing: a case where four compartments are empty and thirty are full of sizes nobody has ever needed. The parts were not wrong; the selection was made by someone who had never seen the fleet.',
+      html: 'An adapter kit is only worth its shelf space when it was derived from the machines in the yard. Every workshop that buys a pre-made adapter assortment ends up with the same thing: a case where four compartments are empty and thirty are full of sizes nobody has ever needed. The parts were not wrong; the selection was made by someone who had never seen the fleet.',
     },
 
     {
