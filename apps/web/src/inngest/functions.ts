@@ -3,6 +3,7 @@ import { scraperJobRun } from './scraperJob'
 import { productBlueprintGenerate } from './productBlueprint'
 import { purgeTrashedMedia } from './mediaPurge'
 import { gscDailySync } from './gscSync'
+import { procurementResearchItem, procurementResearchStart } from './procurementResearch'
 import { db } from '@indus/db'
 import { assertTransition, resolveFromEmail, resolveReplyTo, scoreEntity, signQuoteAccessToken, type SeoEntityType } from '@indus/domain'
 import {
@@ -222,6 +223,14 @@ export const quoteExpiryReminder = inngest.createFunction(
     let unaddressable = 0
 
     for (const quote of expiring) {
+      // Quotes raised from an inbound Enquiry have no parent RFQ and no
+      // customer contact to remind. The query already excludes them via the
+      // rfq.status filter; this narrows the type and documents why.
+      if (!quote.rfq) {
+        skipped++
+        continue
+      }
+
       // step.run JSON-serialises return values, so date fields come back as
       // ISO strings. Re-hydrate before we do any date math.
       const expiresAt = new Date(quote.expiresAt as unknown as string)
@@ -372,9 +381,19 @@ export const quoteAutoExpiry = inngest.createFunction(
     assertTransition('quote_sent', 'expired')
 
     for (const quote of expired) {
+      // Same as the reminder job: no parent RFQ means no RFQ status to expire.
+      if (!quote.rfq || !quote.rfqId) {
+        alreadyMoved++
+        continue
+      }
+      // Captured after the guard: TypeScript loses narrowing across the
+      // step.run closure boundary, so the fields are read out here.
+      const parentRfq = quote.rfq
+      const parentRfqId = quote.rfqId
+
       const result = await step.run(`expire-${quote.id}`, () =>
         db.rfq.updateMany({
-          where: { id: quote.rfqId, status: 'quote_sent' },
+          where: { id: parentRfqId, status: 'quote_sent' },
           data: { status: 'expired' },
         }),
       )
@@ -388,13 +407,13 @@ export const quoteAutoExpiry = inngest.createFunction(
       await step.run(`activity-${quote.id}`, () =>
         db.accountActivity.create({
           data: {
-            accountId: quote.rfq.accountId,
+            accountId: parentRfq.accountId,
             actorType: 'system',
             actorId: 'inngest:quote.auto-expiry',
             verb: 'quote_expired',
             payload: {
-              rfqId: quote.rfqId,
-              rfqCode: quote.rfq.code,
+              rfqId: parentRfqId,
+              rfqCode: parentRfq.code,
               quoteId: quote.id,
               quoteCode: quote.code,
               expiresAt: quote.expiresAt,
@@ -403,7 +422,7 @@ export const quoteAutoExpiry = inngest.createFunction(
         }),
       )
 
-      const submittedBy = quote.rfq.submittedBy
+      const submittedBy = parentRfq.submittedBy
       if (!submittedBy?.email) {
         unaddressable++
         continue
@@ -422,7 +441,7 @@ export const quoteAutoExpiry = inngest.createFunction(
 
       const customerName =
         `${submittedBy.firstName} ${submittedBy.lastName}`.trim() || submittedBy.email
-      const accessToken = signQuoteAccessToken(quote.rfq.code)
+      const accessToken = signQuoteAccessToken(parentRfq.code)
       const rfqUrl = `${baseUrl}/quote/${quote.rfq.code}?token=${encodeURIComponent(accessToken)}`
       const expiredOnDisplay = new Date(
         quote.expiresAt as unknown as string,
@@ -530,4 +549,6 @@ export const allFunctions = [
   retryFailedEmails,
   scraperJobRun,
   productBlueprintGenerate,
+  procurementResearchStart,
+  procurementResearchItem,
 ]

@@ -62,7 +62,7 @@ export const ABOUT_PAGE: MasterPageDef = {
       defaults: {
         eyebrow: 'OUR STORY',
         heading: 'From a trading desk to an assembly line.',
-        body: 'Indus Hydraulics was founded in 2003 by Ravi Bhatt, a mechanical engineer who got tired of watching UAE plants wait six weeks for a replacement valve. The company was built around a single idea: stock the parts engineers actually need, ship them today.',
+        body: 'Indus Hydraulics was founded in 2003 by Krishan Bhatia, a mechanical engineer who got tired of watching UAE plants wait six weeks for a replacement valve. The company was built around a single idea: stock the parts engineers actually need, ship them today.',
         items: [
           { enabled: true, tag: '2003', name: 'Founded in Dubai', desc: 'Started as a sole-trader hydraulics trading company in Al Quasis, importing genuine pumps and valves for UAE industrial customers. First customer: a steel re-rolling mill in Sharjah Industrial Area.' },
           { enabled: true, tag: '2008', name: 'First GCC export', desc: 'Shipped our first cross-border project consignment to Dammam, Saudi Arabia. Discovered our future was regional, not just local.' },
@@ -93,11 +93,27 @@ export const ABOUT_PAGE: MasterPageDef = {
       defaults: {
         eyebrow: 'PEOPLE · LEADERSHIP',
         heading: 'The engineers behind the catalogue.',
+        // The four names that stood here previously — Ravi Bhatt,
+        // Sunil Patel, Anjali Krishnan, Mehul Rana — were placeholder
+        // copy from the design handoff mockups that reached production
+        // as if they were staff. None of those people exist and they
+        // must not be reintroduced.
+        //
+        // The founder ROLE was real; only the name was invented. The
+        // real founder is Krishan Bhatia, named in the story section
+        // above. Add colleagues here only when they are real and have
+        // agreed to be named.
+        //
+        // TODO(ayush): confirm `desc` before merge — it is published to
+        // buyers and mirrored into Person JSON-LD via the blog author
+        // record in packages/db/src/imports/2026-08-17-blog-taxonomy/authors.ts.
+        // Krishan Bhatia's name and title are corroborated by the quote
+        // signature block in packages/db/src/seed-quote-defaults.ts, which
+        // is real trading data, not mockup copy.
+        //
         items: [
-          { enabled: true, tag: 'RB', name: 'Ravi Bhatt', desc: 'Founder & CEO · 23 yrs', image: { mediaId: null, alt: null } },
-          { enabled: true, tag: 'SP', name: 'Sunil Patel', desc: 'Head of Sales · 12 yrs', image: { mediaId: null, alt: null } },
-          { enabled: true, tag: 'AK', name: 'Anjali Krishnan', desc: 'Technical Director · 10 yrs', image: { mediaId: null, alt: null } },
-          { enabled: true, tag: 'MR', name: 'Mehul Rana', desc: 'Operations Lead · 8 yrs', image: { mediaId: null, alt: null } },
+          { enabled: true, tag: 'KB', name: 'Krishan Bhatia', desc: 'Managing Director', image: { mediaId: null, alt: null } },
+          { enabled: true, tag: 'AB', name: 'Ayush Bhatia', desc: 'Director', image: { mediaId: null, alt: null } },
         ],
       },
     },

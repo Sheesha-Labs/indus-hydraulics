@@ -154,7 +154,7 @@ describe('buildArticleLd', () => {
       description: 'A working engineers checklist.',
       url: 'https://example.com/blog/foo',
       imageUrl: 'https://cdn/hero.jpg',
-      authorName: 'Sunil Patel',
+      authorName: 'Ayush Bhatia',
       authorUrl: 'https://example.com/team/sunil',
       publishedAt: new Date('2026-04-18T00:00:00Z'),
       modifiedAt: new Date('2026-05-01T00:00:00Z'),

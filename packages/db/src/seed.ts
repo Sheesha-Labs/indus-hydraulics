@@ -160,7 +160,7 @@ async function main() {
     where: { email: 'admin@indushydraulics.me' },
     create: {
       email: 'admin@indushydraulics.me',
-      name: 'Ravi Bhatt',
+      name: 'Ayush Bhatia',
       role: 'super_admin',
       isActive: true,
       passwordHash: await hash('admin123456'),
