@@ -957,4 +957,131 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
       'hose-assembly-test-certificate',
     ],
   },
+
+  // ── fitting-identification, machine-origin cluster (2026-09-01) ────────
+  //
+  // No market cards anywhere in this cluster. The articles are about a thread
+  // family, not about a country — the geography they serve is carried by the
+  // generated reach section, and the cap stays where it is.
+  'fittings-on-a-chinese-excavator': {
+    related: [
+      'identify-any-hydraulic-fitting',
+      'bsp-or-metric-fittings',
+      'measuring-a-fitting-without-gauges',
+    ],
+  },
+  'fittings-on-a-used-japanese-machine': {
+    related: [
+      'identify-any-hydraulic-fitting',
+      'bridging-two-thread-standards',
+      'hydraulic-thread-size-and-pitch-reference',
+    ],
+  },
+  'tractor-hydraulic-fittings': {
+    related: ['tractor-hydraulic-hose', 'hydraulic-quick-couplers-iso-7241', 'bsp-or-metric-fittings'],
+  },
+  'fittings-on-american-machines': {
+    related: ['jic-vs-orfs-vs-npt-vs-bsp', 'where-jic-is-the-wrong-choice', 'stopping-an-npt-thread-leak'],
+  },
+  'fittings-on-european-machines': {
+    related: [
+      'hydraulic-thread-size-and-pitch-reference',
+      'bspp-bonded-seal-sizing',
+      'bridging-two-thread-standards',
+    ],
+  },
+  'korean-excavator-hydraulic-fittings': {
+    related: [
+      'fittings-on-a-used-japanese-machine',
+      'bridging-two-thread-standards',
+      'excavator-hydraulic-hose-replacement',
+    ],
+  },
+  'bsp-or-metric-fittings': {
+    related: ['jic-vs-orfs-vs-npt-vs-bsp', 'hydraulic-hose-kits-for-a-fleet', 'building-a-thread-reference-board'],
+  },
+  'measuring-a-fitting-without-gauges': {
+    related: [
+      'photographing-a-hydraulic-fitting',
+      'identify-any-hydraulic-fitting',
+      'hydraulic-thread-size-and-pitch-reference',
+    ],
+  },
+  'building-a-thread-reference-board': {
+    related: ['bsp-or-metric-fittings', 'field-re-hosing-kit', 'hydraulic-hose-kits-for-a-fleet'],
+  },
+  'bridging-two-thread-standards': {
+    related: ['stacking-hydraulic-adapters', 'cross-threaded-hydraulic-port', 'hydraulic-fitting-make-up-torque'],
+  },
+
+  // ── buying-hydraulic-fittings (2026-09-01 wave 2) ──────────────────────
+  //
+  // One market card, on the article about freight mode, where naming a real
+  // lane is the point rather than decoration. Everything else links sideways.
+  'what-to-send-for-a-fittings-quote': {
+    related: [
+      'measuring-a-fitting-without-gauges',
+      'photographing-a-hydraulic-fitting',
+      'what-to-send-for-a-hose-quote',
+    ],
+  },
+  'cross-referencing-a-fitting-part-number': {
+    related: [
+      'how-to-cross-reference-a-hydraulic-hose',
+      'identify-any-hydraulic-fitting',
+      'substituting-a-fitting-safely',
+    ],
+  },
+  'adapter-kit-for-a-mixed-fleet': {
+    related: [
+      'bsp-or-metric-fittings',
+      'building-a-thread-reference-board',
+      'hydraulic-hose-kits-for-a-fleet',
+    ],
+  },
+  'spares-list-for-a-remote-site': {
+    related: ['field-re-hosing-kit', 'hydraulic-hose-shelf-life-storage', 'adapter-kit-for-a-mixed-fleet'],
+  },
+  'inspecting-fittings-on-arrival': {
+    related: [
+      'unbranded-hydraulic-fittings',
+      'verifying-a-genuine-hydraulic-hose',
+      'building-a-thread-reference-board',
+    ],
+  },
+  'plating-and-corrosion-on-fittings': {
+    related: [
+      'hydraulic-hose-coastal-corrosion',
+      'when-stainless-is-worth-it',
+      'removing-a-seized-hydraulic-fitting',
+    ],
+  },
+  'when-stainless-is-worth-it': {
+    related: ['plating-and-corrosion-on-fittings', 'offshore-hydraulic-hose', 'hydraulic-hose-wire-corrosion'],
+  },
+  'air-or-sea-for-a-fittings-order': {
+    related: [
+      'consolidating-fittings-with-a-hose-order',
+      'hydraulic-hose-lead-times',
+      'spares-list-for-a-remote-site',
+    ],
+    pages: [
+      {
+        kind: 'market',
+        slug: 'kenya',
+        label: 'Supplying Kenya from Dubai',
+        blurb: 'Lane, freight modes, Incoterms and the documents that travel with a consignment.',
+      },
+    ],
+  },
+  'consolidating-fittings-with-a-hose-order': {
+    related: ['air-or-sea-for-a-fittings-order', 'hydraulic-hose-kits-for-a-fleet', 'bulk-hose-refit-and-tagging'],
+  },
+  'substituting-a-fitting-safely': {
+    related: [
+      'bridging-two-thread-standards',
+      'cross-referencing-a-fitting-part-number',
+      'stacking-hydraulic-adapters',
+    ],
+  },
 }
