@@ -53,6 +53,19 @@ import type { MarketReachProfile } from './market-reach'
  * either be wrong on some of its seventeen articles or say nothing.
  */
 export const MARKET_REACH_PROFILES: Readonly<Record<string, MarketReachProfile>> = {
+  'buying-hydraulic-fittings': {
+    heading: 'Where these orders go',
+    body: 'Fittings and adapters are the smallest thing we ship and the one that decides whether a machine works, so they travel the way the destination allows: consolidated into a planned consignment where a site is on a long lane, and on their own airway bill when something is standing still. Orders of this kind are quoted from a photograph and a measurement rather than a part number, which is what makes them practical to place from somewhere with no counter nearby.',
+    primaryRegion: 'GCC & Middle East',
+    rotatingRegions: [
+      'East Africa',
+      'West & Central Africa',
+      'Southern Africa',
+      'North Africa',
+      'South-East Asia',
+      'CIS & Caucasus',
+    ],
+  },
   'failure-analysis': {
     heading: 'Where we send the replacement',
     body: 'A failure correctly diagnosed is only worth something if the replacement can reach the machine. Assemblies built to the specification described here are made up and pressure-tested at our Dubai workshop and dispatched with the crimp record and test certificate travelling with them, which counts for more the further the machine sits from a hose shop. Most orders of this kind start as a photograph and a measurement rather than a part number, and that is enough for us to quote from.',

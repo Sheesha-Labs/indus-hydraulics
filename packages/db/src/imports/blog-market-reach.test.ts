@@ -6,6 +6,7 @@ import { BLOG_CROSS_LINKS } from './blog-cross-links'
 import CATEGORIES from './2026-08-17-blog-taxonomy/categories'
 import { GULF_CATEGORY } from './2026-08-24-blog-wave-3-gulf/category'
 import { GCC_COMPLIANCE_CATEGORY } from './2026-09-01-gcc-supplier-wave-1/category'
+import { BUYING_FITTINGS_CATEGORY } from './2026-09-01-africa-fittings-wave-2/category'
 
 import type { BlogBlocksInput } from '@indus/domain'
 
@@ -21,6 +22,7 @@ const ALL_CATEGORY_SLUGS = [
   ...CATEGORIES.map((c) => c.slug),
   GULF_CATEGORY.slug,
   GCC_COMPLIANCE_CATEGORY.slug,
+  BUYING_FITTINGS_CATEGORY.slug,
 ]
 
 describe('reach profile coverage', () => {

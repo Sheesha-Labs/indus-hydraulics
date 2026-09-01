@@ -1013,4 +1013,75 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
   'bridging-two-thread-standards': {
     related: ['stacking-hydraulic-adapters', 'cross-threaded-hydraulic-port', 'hydraulic-fitting-make-up-torque'],
   },
+
+  // ── buying-hydraulic-fittings (2026-09-01 wave 2) ──────────────────────
+  //
+  // One market card, on the article about freight mode, where naming a real
+  // lane is the point rather than decoration. Everything else links sideways.
+  'what-to-send-for-a-fittings-quote': {
+    related: [
+      'measuring-a-fitting-without-gauges',
+      'photographing-a-hydraulic-fitting',
+      'what-to-send-for-a-hose-quote',
+    ],
+  },
+  'cross-referencing-a-fitting-part-number': {
+    related: [
+      'how-to-cross-reference-a-hydraulic-hose',
+      'identify-any-hydraulic-fitting',
+      'substituting-a-fitting-safely',
+    ],
+  },
+  'adapter-kit-for-a-mixed-fleet': {
+    related: [
+      'bsp-or-metric-fittings',
+      'building-a-thread-reference-board',
+      'hydraulic-hose-kits-for-a-fleet',
+    ],
+  },
+  'spares-list-for-a-remote-site': {
+    related: ['field-re-hosing-kit', 'hydraulic-hose-shelf-life-storage', 'adapter-kit-for-a-mixed-fleet'],
+  },
+  'inspecting-fittings-on-arrival': {
+    related: [
+      'unbranded-hydraulic-fittings',
+      'verifying-a-genuine-hydraulic-hose',
+      'building-a-thread-reference-board',
+    ],
+  },
+  'plating-and-corrosion-on-fittings': {
+    related: [
+      'hydraulic-hose-coastal-corrosion',
+      'when-stainless-is-worth-it',
+      'removing-a-seized-hydraulic-fitting',
+    ],
+  },
+  'when-stainless-is-worth-it': {
+    related: ['plating-and-corrosion-on-fittings', 'offshore-hydraulic-hose', 'hydraulic-hose-wire-corrosion'],
+  },
+  'air-or-sea-for-a-fittings-order': {
+    related: [
+      'consolidating-fittings-with-a-hose-order',
+      'hydraulic-hose-lead-times',
+      'spares-list-for-a-remote-site',
+    ],
+    pages: [
+      {
+        kind: 'market',
+        slug: 'kenya',
+        label: 'Supplying Kenya from Dubai',
+        blurb: 'Lane, freight modes, Incoterms and the documents that travel with a consignment.',
+      },
+    ],
+  },
+  'consolidating-fittings-with-a-hose-order': {
+    related: ['air-or-sea-for-a-fittings-order', 'hydraulic-hose-kits-for-a-fleet', 'bulk-hose-refit-and-tagging'],
+  },
+  'substituting-a-fitting-safely': {
+    related: [
+      'bridging-two-thread-standards',
+      'cross-referencing-a-fitting-part-number',
+      'stacking-hydraulic-adapters',
+    ],
+  },
 }
