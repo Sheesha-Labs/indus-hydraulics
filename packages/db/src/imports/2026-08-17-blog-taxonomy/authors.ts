@@ -22,14 +22,17 @@ export type BlogAuthorSeed = {
   slug: string
   name: string
   jobTitle: string
-  yearsExperience: number
+  /** Optional: the column is nullable, and seeding 0 would publish a claim. */
+  yearsExperience?: number
   position: number
 }
 
 const AUTHORS: BlogAuthorSeed[] = [
-  // TODO(ayush): confirm jobTitle and yearsExperience before merge.
-  // Both are published and both feed structured data.
-  { slug: 'ayush-bhatia', name: 'Ayush Bhatia', jobTitle: 'Founder', yearsExperience: 0, position: 1 },
+  // Matches the production row created 2026-09-01, which is linked to the
+  // staff_users account and carries all 93 posts. `yearsExperience`, `bio`,
+  // `credentials` and `linkedinUrl` are intentionally unset — they publish,
+  // and `linkedinUrl` in particular feeds Person `sameAs`.
+  { slug: 'ayush-bhatia', name: 'Ayush Bhatia', jobTitle: 'Director', position: 1 },
 ]
 
 export default AUTHORS

@@ -111,12 +111,9 @@ export const ABOUT_PAGE: MasterPageDef = {
         // signature block in packages/db/src/seed-quote-defaults.ts, which
         // is real trading data, not mockup copy.
         //
-        // TODO(ayush): add your own card here once you confirm your title.
-        // It is deliberately absent rather than guessed — the placeholder
-        // that stood here said "Founder", which contradicts the story
-        // section directly above it.
         items: [
           { enabled: true, tag: 'KB', name: 'Krishan Bhatia', desc: 'Managing Director', image: { mediaId: null, alt: null } },
+          { enabled: true, tag: 'AB', name: 'Ayush Bhatia', desc: 'Director', image: { mediaId: null, alt: null } },
         ],
       },
     },
