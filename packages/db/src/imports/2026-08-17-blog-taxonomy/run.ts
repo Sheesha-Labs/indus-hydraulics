@@ -68,7 +68,9 @@ async function main(): Promise<void> {
         slug: a.slug,
         name: a.name,
         jobTitle: a.jobTitle,
-        yearsExperience: a.yearsExperience,
+        // `?? null` not `?? 0`: the column is nullable and a real person's
+        // years of experience is a published claim, not a default.
+        yearsExperience: a.yearsExperience ?? null,
         position: a.position,
         isPublished: true,
       },
