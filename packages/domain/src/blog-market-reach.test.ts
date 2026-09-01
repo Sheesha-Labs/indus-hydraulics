@@ -28,10 +28,11 @@ const CATEGORIES = Object.keys(MARKET_REACH_PROFILES)
 describe('buildMarketReachBlock', () => {
   it('covers every blog category', () => {
     // Eleven after the hose programme; twelve once `gcc-compliance` was added
-    // by the GCC supplier sprint (2026-09-01). The count is asserted so a new
-    // category cannot ship without a profile — the failure mode being a hub
-    // whose articles silently say nothing about delivery.
-    expect(CATEGORIES).toHaveLength(12)
+    // by the GCC supplier sprint, thirteen with `buying-hydraulic-fittings`
+    // from the Africa fittings sprint (both 2026-09-01). The count is asserted
+    // so a new category cannot ship without a profile — the failure mode being
+    // a hub whose articles silently say nothing about delivery.
+    expect(CATEGORIES).toHaveLength(13)
   })
 
   it('returns null for a category with no profile, rather than guessing one', () => {

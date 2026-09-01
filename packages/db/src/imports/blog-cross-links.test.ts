@@ -16,10 +16,11 @@ describe('BLOG_CROSS_LINKS', () => {
    * the exact failure this file was written after.
    *
    * 93 after the hose programme; 103 after the GCC supplier sprint's first
-   * wave (2026-09-01).
+   * wave; 113 and then 123 across the Africa fittings sprint's first two
+   * waves (2026-09-01).
    */
   it('covers the whole blog', () => {
-    expect(entries.length).toBe(103)
+    expect(entries.length).toBe(123)
   })
 
   it('never links an article to itself', () => {
