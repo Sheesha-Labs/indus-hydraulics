@@ -61,7 +61,7 @@ const ALT: Record<string, string> = {
   'agriculture-and-construction-fittings':
     'A hydraulic hose on a backhoe loader arm worn through its outer cover against the boom casting, with an oil stain spreading on the paintwork below',
   'quarry-and-crusher-fittings':
-    'Hydraulic lines clamped along the frame of a jaw crusher under thick grey rock dust, one clamp missing and its line hanging slack',
+    'Hydraulic lines clamped along the frame of a tracked jaw crusher, every surface coated in thick grey rock dust, a conveyor and stockpile behind',
   'sugar-mill-and-agro-processing-fittings':
     'Hydraulic hoses running past heavily scaled steam-stained pipework in a sugar mill walkway, wet floor and steam haze',
   'storing-fittings-and-seals-on-site':
@@ -75,7 +75,7 @@ const ALT: Record<string, string> = {
   'building-a-thread-reference-board':
     'A plywood workshop board with rows of male and female hydraulic fittings mounted on short bolts, a pitch gauge and a seat gauge hanging on a chain beside them',
   'dirt-ingress-in-transit-and-storage':
-    'Two hose assemblies in an opened timber crate, one sealed in polythene with caps fitted on both ends and one bare with uncapped ends dulled by dust',
+    'An opened timber crate holding two components sealed in polythene with bright caps fitted on their ends, beside two bare ones with open uncapped ends dulled by dust',
 }
 
 function loadWebEnv() {
