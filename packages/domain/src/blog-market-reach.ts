@@ -66,6 +66,19 @@ export const MARKET_REACH_PROFILES: Readonly<Record<string, MarketReachProfile>>
       'CIS & Caucasus',
     ],
   },
+  'hydraulic-fittings-by-industry': {
+    heading: 'Where this industry’s orders go',
+    body: 'Every industry in this cluster runs somewhere with a different distance to the nearest counter, and that distance is what the specification has to survive. We stock the fitting families these machines carry in Dubai, quote them against a photograph and a measurement rather than a part number, and consolidate a site’s list into one consignment rather than a stream of parcels — which is what makes supplying a plant or a fleet at the far end of a long lane practical at all.',
+    primaryRegion: 'GCC & Middle East',
+    rotatingRegions: [
+      'Southern Africa',
+      'West & Central Africa',
+      'East Africa',
+      'North Africa',
+      'CIS & Caucasus',
+      'South America',
+    ],
+  },
   'failure-analysis': {
     heading: 'Where we send the replacement',
     body: 'A failure correctly diagnosed is only worth something if the replacement can reach the machine. Assemblies built to the specification described here are made up and pressure-tested at our Dubai workshop and dispatched with the crimp record and test certificate travelling with them, which counts for more the further the machine sits from a hose shop. Most orders of this kind start as a photograph and a measurement rather than a part number, and that is enough for us to quote from.',
