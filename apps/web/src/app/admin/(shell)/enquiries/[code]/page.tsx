@@ -4,6 +4,8 @@ import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 
 import AdminPageShell from '../../../../../components/admin/AdminPageShell'
+import Link from 'next/link'
+
 import ResearchButton from './_components/research-button'
 
 export const dynamic = 'force-dynamic'
@@ -45,7 +47,14 @@ export default async function EnquiryDetailPage({ params }: Props) {
         </span>
       }
       actions={
-        <ResearchButton
+        <div className="flex items-center gap-2">
+          <Link
+            className="text-[13px] text-ih-ink-2 underline"
+            href={`/admin/enquiries/${enquiry.code}/rfq`}
+          >
+            Supplier RFQs
+          </Link>
+          <ResearchButton
           enquiryId={enquiry.id}
           disabled={enquiry.lines.length === 0 || !!activeRun}
           {...(activeRun
@@ -53,7 +62,8 @@ export default async function EnquiryDetailPage({ params }: Props) {
             : enquiry.lines.length === 0
               ? { disabledReason: 'Add line items first.' }
               : {})}
-        />
+          />
+        </div>
       }
     >
       <div className="grid gap-6 lg:grid-cols-[1fr_320px]">

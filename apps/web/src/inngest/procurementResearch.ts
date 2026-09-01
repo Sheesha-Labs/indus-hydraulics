@@ -25,6 +25,7 @@ import {
 } from '@indus/domain'
 import { NonRetriableError } from 'inngest'
 
+import { resolveSupplierContacts } from '../lib/supplier-contacts'
 import { researchSuppliers, type ResearchedCandidate } from '../lib/supplier-research'
 import { inngest } from './client'
 
@@ -283,6 +284,20 @@ export const procurementResearchItem = inngest.createFunction(
       toolError = found.toolError
     }
 
+    // Own-website contact resolution, chunked so no single step runs long.
+    // Only for candidates we do not already hold a contact for.
+    if (!cached && researched.length > 0) {
+      const needContact = researched.filter((c) => c.domain).slice(0, 6)
+      for (let i = 0; i < needContact.length; i += 3) {
+        const chunk = needContact.slice(i, i + 3)
+        await step.run(`resolve-contacts-${i / 3}`, async () => {
+          for (const candidate of chunk) {
+            await upsertSupplierWithContacts(candidate)
+          }
+        })
+      }
+    }
+
     await step.run('score-and-persist', async () => {
       const scoreable = await toScoreable(researched)
       const ranked = rankSuppliers(scoreable, {
@@ -366,4 +381,82 @@ async function settleRun(researchRunId: string): Promise<{ status: string } | nu
     data: { status, finishedAt: new Date() },
   })
   return { status }
+}
+
+/**
+ * Persist a researched company into the ledger, and try its own website for a
+ * contact address.
+ *
+ * Every write records provenance: the supplier row says it came from research,
+ * and any contact carries the URL it was actually read from — a DB CHECK
+ * enforces the latter. Nothing here invents an address, so a supplier with no
+ * discoverable contact is stored with none and shows as unreachable rather
+ * than as a plausible-looking guess.
+ */
+async function upsertSupplierWithContacts(candidate: ResearchedCandidate): Promise<void> {
+  if (!candidate.domain) return
+
+  const slug = `web-${candidate.domain.replace(/[^a-z0-9]+/gi, '-').toLowerCase()}`
+
+  const existing = await db.supplier.findFirst({
+    where: { OR: [{ domain: candidate.domain }, { slug }] },
+    select: { id: true, contacts: { select: { id: true }, take: 1 } },
+  })
+
+  const supplier = existing
+    ? await db.supplier.update({
+        where: { id: existing.id },
+        data: {
+          website: candidate.website,
+          country: candidate.country,
+          ...(candidate.kind !== 'unknown' ? { kind: candidate.kind } : {}),
+        },
+        select: { id: true },
+      })
+    : await db.supplier.create({
+        data: {
+          slug,
+          name: candidate.name,
+          domain: candidate.domain,
+          website: candidate.website,
+          country: candidate.country,
+          kind: candidate.kind,
+          origin: 'research',
+        },
+        select: { id: true },
+      })
+
+  // Already reachable — do not re-fetch a stranger's site for nothing.
+  if (existing?.contacts.length) return
+
+  const resolved = await resolveSupplierContacts({
+    website: candidate.website,
+    domain: candidate.domain,
+  })
+
+  for (const contact of resolved.contacts) {
+    if (!contact.onOwnDomain) continue
+
+    // find-then-create rather than upsert: the uniqueness on (supplierId,
+    // email) is a PARTIAL index (WHERE email IS NOT NULL), which Prisma cannot
+    // model, so there is no compound selector to upsert against. The partial
+    // form is deliberate — several contacts may legitimately carry a phone and
+    // no email.
+    const already = await db.supplierContact.findFirst({
+      where: { supplierId: supplier.id, email: contact.email },
+      select: { id: true },
+    })
+    if (already) continue
+
+    await db.supplierContact.create({
+      data: {
+        supplierId: supplier.id,
+        email: contact.email,
+        source: 'own_website',
+        confidence: contact.confidence,
+        evidenceUrl: contact.evidenceUrl,
+        isPrimary: contact.confidence === 'high',
+      },
+    })
+  }
 }
