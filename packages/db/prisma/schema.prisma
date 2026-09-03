@@ -434,7 +434,8 @@ model StaffUser {
   enquiriesAssigned Enquiry[]         @relation("EnquiryAssignedTo")
   enquiriesCreated  Enquiry[]         @relation("EnquiryCreatedBy")
   researchRuns      ResearchRun[]
-  supplierOffers    SupplierOffer[]      @relation("SupplierOfferCreatedBy")
+  supplierOffers      SupplierOffer[]     @relation("SupplierOfferCreatedBy")
+  enquiryAttachments  EnquiryAttachment[]
   offerSelections   SupplierOfferLine[]  @relation("OfferLineSelectedBy")
 
   @@map("staff_users")
@@ -1041,6 +1042,7 @@ model Media {
   industryHeroes          Industry[]
   industryCaseStudyImages IndustryCaseStudy[] @relation("IndustryCaseStudyImage")
   rfqAttachments          RfqAttachment[]
+  enquiryAttachments      EnquiryAttachment[]
   quotePdfs               Quote[]
   blogHeroes              BlogPost[]
   blogCategoryImages      BlogCategory[]      @relation("BlogCategoryImage")
@@ -2369,6 +2371,7 @@ model Enquiry {
   extractorName String?
 
   lines          EnquiryLine[]
+  attachments    EnquiryAttachment[]
   researchRuns   ResearchRun[]
   supplierOffers SupplierOffer[]
   quotes         Quote[]
@@ -2396,6 +2399,9 @@ model EnquiryLine {
   certification String? // "3.1 MTC", "IACS class approval"
 
   sourceKind EnquiryLineSourceKind @default(body)
+  /// Which attachment this row was read out of, when it came from one.
+  sourceAttachmentId String?
+  sourceAttachment   EnquiryAttachment? @relation(fields: [sourceAttachmentId], references: [id])
   /// Verbatim substring of Enquiry.rawText this row came from. A DB CHECK makes
   /// it mandatory for every non-manual row: a machine-extracted quantity with no
   /// audit trail reaches a supplier RFQ and then a customer quote unseen.
@@ -2791,4 +2797,52 @@ model QuoteLine {
   @@unique([quoteId, position])
   @@index([quoteId])
   @@map("quote_lines")
+}
+
+/// A file attached to an inbound enquiry — the RFQ sheet a buyer sends instead
+/// of putting the items in the mail body.
+///
+/// `media` is RESTRICT, matching every other required media back-relation: the
+/// database refuses to delete a Media row a customer's enquiry document points
+/// at. This model must ALSO be registered as a usage source in
+/// apps/web/src/lib/queries/media-usage.ts, or the file reads as unused in the
+/// library and the nightly purge destroys the object 30 days later.
+model EnquiryAttachment {
+  id        String  @id @default(uuid())
+  enquiryId String
+  enquiry   Enquiry @relation(fields: [enquiryId], references: [id], onDelete: Cascade)
+  mediaId   String
+  media     Media   @relation(fields: [mediaId], references: [id])
+
+  filename String
+  mimeType String?
+  bytes    Int?
+
+  extractionStatus AttachmentExtractionStatus @default(pending)
+  /// Why extraction did not happen or did not work, so an unsupported format
+  /// reads as a decision rather than a silent nothing.
+  extractionNote   String?
+  extractedLines   Int                        @default(0)
+  extractorName    String?
+  costUsdMicros    Int                        @default(0)
+
+  uploadedById String?
+  uploadedBy   StaffUser? @relation(fields: [uploadedById], references: [id])
+
+  lines EnquiryLine[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@unique([enquiryId, mediaId])
+  @@index([enquiryId])
+  @@index([mediaId])
+  @@map("enquiry_attachments")
+}
+
+enum AttachmentExtractionStatus {
+  pending
+  extracted
+  unsupported
+  failed
 }

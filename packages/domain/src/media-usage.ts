@@ -40,6 +40,7 @@ export type MediaUsageKind =
   | 'homepage'
   | 'site_settings'
   | 'rfq'
+  | 'enquiry'
   | 'quote'
   | 'import'
 
@@ -62,6 +63,7 @@ export const MEDIA_USAGE_KIND_ORDER: readonly MediaUsageKind[] = [
   'homepage',
   'site_settings',
   'rfq',
+  'enquiry',
   'quote',
   'import',
 ] as const
@@ -91,6 +93,7 @@ export const MEDIA_USAGE_KIND_LABELS: Record<
   homepage: { one: 'homepage slide', many: 'homepage slides' },
   site_settings: { one: 'site setting', many: 'site settings' },
   rfq: { one: 'RFQ', many: 'RFQs' },
+  enquiry: { one: 'enquiry', many: 'enquiries' },
   quote: { one: 'quote', many: 'quotes' },
   import: { one: 'import', many: 'imports' },
 }
@@ -104,6 +107,7 @@ export const MEDIA_USAGE_KIND_LABELS: Record<
  */
 export const INTERNAL_MEDIA_USAGE_KINDS: ReadonlySet<MediaUsageKind> = new Set<MediaUsageKind>([
   'rfq',
+  'enquiry',
   'quote',
   'import',
 ])
@@ -355,6 +359,7 @@ const KIND_TO_FOLDER: Record<MediaUsageKind, MediaFolder> = {
   homepage: 'homepage',
   site_settings: 'site',
   rfq: 'rfq',
+  enquiry: 'rfq',
   quote: 'documents',
   import: 'documents',
 }
