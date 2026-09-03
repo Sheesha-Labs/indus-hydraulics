@@ -12,7 +12,9 @@ import {
 } from '@indus/domain'
 import { renderEstimatePdf, uploadQuotePdf } from '@indus/pdf'
 
+import { extractFromAttachment } from '../../../../lib/attachment-extraction'
 import { runResearchInline } from '../../../../lib/research-inline'
+import { signedUrlFor } from '../../../../lib/supabase'
 import { revalidatePath } from 'next/cache'
 
 import { inngest } from '../../../../inngest/client'
@@ -530,6 +532,148 @@ export async function generateEnquiryQuote(formData: FormData): Promise<Result<{
     revalidatePath(`/admin/enquiries/${enquiry.code}`)
     revalidatePath(`/admin/enquiries/${enquiry.code}/pricing`)
     return ok({ code: quote.code })
+  } catch (error) {
+    return failFromError(error)
+  }
+}
+
+/**
+ * Attach an already-uploaded file to an enquiry.
+ *
+ * The bytes never pass through here. The browser uploads straight to storage
+ * with a signed URL minted by the media library, and this only records the
+ * finished Media row — Server Actions cap request bodies at 1 MB, so a route
+ * that posts a 4 MB RFQ sheet through an action is rejected by the framework
+ * before the action runs, and works perfectly in local development.
+ */
+export async function attachToEnquiry(formData: FormData): Promise<Result<{ id: string }>> {
+  try {
+    const session = await auth()
+    requireRole(session, ROLES.RFQ_REVIEW)
+
+    const parsed = z
+      .object({
+        enquiryId: z.string().uuid(),
+        mediaId: z.string().uuid(),
+        filename: z.string().trim().min(1).max(300),
+      })
+      .safeParse({
+        enquiryId: formData.get('enquiryId'),
+        mediaId: formData.get('mediaId'),
+        filename: formData.get('filename'),
+      })
+    if (!parsed.success) return failFromError(parsed.error)
+
+    const [enquiry, media] = await Promise.all([
+      db.enquiry.findUnique({ where: { id: parsed.data.enquiryId }, select: { id: true, code: true } }),
+      db.media.findUnique({
+        where: { id: parsed.data.mediaId },
+        select: { id: true, mimeType: true, bytes: true },
+      }),
+    ])
+    if (!enquiry) return fail('NOT_FOUND', 'That enquiry no longer exists.')
+    if (!media) return fail('NOT_FOUND', 'That upload could not be found.')
+
+    const attachment = await db.enquiryAttachment.upsert({
+      where: { enquiryId_mediaId: { enquiryId: enquiry.id, mediaId: media.id } },
+      create: {
+        enquiryId: enquiry.id,
+        mediaId: media.id,
+        filename: parsed.data.filename,
+        mimeType: media.mimeType,
+        bytes: media.bytes,
+        uploadedById: session?.user?.id ?? null,
+      },
+      update: {},
+      select: { id: true },
+    })
+
+    revalidatePath(`/admin/enquiries/${enquiry.code}`)
+    return ok({ id: attachment.id })
+  } catch (error) {
+    return failFromError(error)
+  }
+}
+
+/**
+ * Read line items out of an attachment and add them to the enquiry.
+ *
+ * Rows land as `needs_review` like every other extraction path, and each one
+ * records both the verbatim text it came from and which attachment produced it,
+ * so a wrong quantity can be traced back to the page it was read off.
+ */
+export async function extractAttachmentLines(formData: FormData): Promise<Result<{ added: number; status: string; note: string | null }>> {
+  try {
+    requireRole(await auth(), ROLES.RFQ_REVIEW)
+
+    const parsed = z.object({ attachmentId: z.string().uuid() }).safeParse({
+      attachmentId: formData.get('attachmentId'),
+    })
+    if (!parsed.success) return failFromError(parsed.error)
+
+    const attachment = await db.enquiryAttachment.findUnique({
+      where: { id: parsed.data.attachmentId },
+      select: {
+        id: true, filename: true, mimeType: true,
+        enquiry: { select: { id: true, code: true } },
+        media: { select: { storagePath: true } },
+      },
+    })
+    if (!attachment) return fail('NOT_FOUND', 'That attachment no longer exists.')
+
+    const url = await signedUrlFor(attachment.media.storagePath)
+    if (!url) return fail('INTERNAL', 'That file could not be read from storage.')
+
+    const res = await fetch(url)
+    if (!res.ok) return fail('INTERNAL', 'That file could not be downloaded.')
+    const buffer = Buffer.from(await res.arrayBuffer())
+
+    const extraction = await extractFromAttachment({
+      buffer,
+      mimeType: attachment.mimeType,
+      filename: attachment.filename,
+    })
+
+    let added = 0
+    if (extraction.lines.length > 0) {
+      const last = await db.enquiryLine.findFirst({
+        where: { enquiryId: attachment.enquiry.id },
+        orderBy: { position: 'desc' },
+        select: { position: true },
+      })
+      let position = (last?.position ?? 0) + 1
+
+      await db.enquiryLine.createMany({
+        data: extraction.lines.map((line) => ({
+          enquiryId: attachment.enquiry.id,
+          position: position++,
+          description: line.description,
+          partNumber: line.partNumber,
+          qty: line.qty,
+          unit: line.unit,
+          certification: line.certification,
+          sourceKind: 'attachment' as const,
+          sourceText: line.sourceText,
+          sourceAttachmentId: attachment.id,
+          reviewFlags: line.qty == null ? ['qty_not_stated'] : [],
+        })),
+      })
+      added = extraction.lines.length
+    }
+
+    await db.enquiryAttachment.update({
+      where: { id: attachment.id },
+      data: {
+        extractionStatus: extraction.status,
+        extractionNote: extraction.note,
+        extractedLines: added,
+        extractorName: extraction.extractorName,
+        costUsdMicros: extraction.costUsdMicros,
+      },
+    })
+
+    revalidatePath(`/admin/enquiries/${attachment.enquiry.code}`)
+    return ok({ added, status: extraction.status, note: extraction.note })
   } catch (error) {
     return failFromError(error)
   }

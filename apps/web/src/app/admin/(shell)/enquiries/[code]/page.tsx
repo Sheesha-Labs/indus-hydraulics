@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 
 import AdminPageShell from '../../../../../components/admin/AdminPageShell'
+import AttachmentsPanel, { type AttachmentRow } from './_components/attachments-panel'
 import ResearchButton from './_components/research-button'
 
 export const dynamic = 'force-dynamic'
@@ -28,9 +29,25 @@ export default async function EnquiryDetailPage({ params }: Props) {
   const { code } = await params
   const enquiry = await db.enquiry.findUnique({
     where: { code: decodeURIComponent(code) },
-    include: { lines: { orderBy: { position: 'asc' } } },
+    include: {
+      lines: { orderBy: { position: 'asc' } },
+      attachments: { orderBy: { createdAt: 'asc' } },
+    },
   })
   if (!enquiry) notFound()
+
+  // /api/documents/[id] is the gated-download route: force-dynamic, auth
+  // checked, signed URL minted per request. A signed URL baked into this page
+  // would be dead in five minutes.
+  const attachmentRows: AttachmentRow[] = enquiry.attachments.map((a) => ({
+    id: a.id,
+    filename: a.filename,
+    bytes: a.bytes,
+    extractionStatus: a.extractionStatus,
+    extractionNote: a.extractionNote,
+    extractedLines: a.extractedLines,
+    href: `/api/documents/${a.mediaId}`,
+  }))
 
   const latestRun = await db.researchRun.findFirst({
     where: { enquiryId: enquiry.id },
@@ -140,6 +157,17 @@ export default async function EnquiryDetailPage({ params }: Props) {
                   },
                 ]}
               />
+            </div>
+          </Panel>
+
+          <Panel>
+            <AdminSectionHead
+              variant="panel"
+              title="Attachments"
+              description="The RFQ sheet a buyer sends instead of putting the items in the mail body."
+            />
+            <div className="mt-4">
+              <AttachmentsPanel enquiryId={enquiry.id} attachments={attachmentRows} />
             </div>
           </Panel>
 

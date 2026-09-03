@@ -514,6 +514,29 @@ function chromeSources(): Source[] {
 function internalSources(): Source[] {
   return [
     {
+      name: 'Enquiry attachments',
+      run: async () => {
+        const rows = await db.enquiryAttachment.findMany({
+          select: { id: true, mediaId: true, filename: true, enquiry: { select: { code: true } } },
+        })
+        return rows.map(
+          (r) =>
+            [
+              r.mediaId,
+              {
+                kind: 'enquiry',
+                id: r.id,
+                label: nonEmpty(r.enquiry.code, 'Enquiry'),
+                role: nonEmpty(r.filename, 'Attachment'),
+                href: adminPath(`/enquiries/${r.enquiry.code}`),
+                live: false,
+                internal: true,
+              },
+            ] as const
+        )
+      },
+    },
+    {
       name: 'RFQ attachments',
       run: async () => {
         const rows = await db.rfqAttachment.findMany({

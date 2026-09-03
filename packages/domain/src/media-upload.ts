@@ -36,6 +36,16 @@ export const MEDIA_UPLOAD_TYPES: Record<string, { ext: string; kind: MediaUpload
   'image/avif': { ext: 'avif', kind: 'image' },
   'image/gif': { ext: 'gif', kind: 'image' },
   'application/pdf': { ext: 'pdf', kind: 'document' },
+  // Office documents, for inbound enquiry RFQ sheets. MediaKind is a closed
+  // image | document | cad enum, so both file as `document`.
+  //
+  // THREAT MODEL NOTE: these arrive from outside and are therefore
+  // attacker-controlled, unlike everything else in this list. Nothing may parse
+  // an .xlsx with `xlsx` (SheetJS) 0.18.5 — it is the last npm release and
+  // carries CVE-2023-30533 (prototype pollution) and CVE-2024-22363 (ReDoS).
+  // Use exceljs on any inbound path. See lib/attachment-extraction.ts.
+  'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet': { ext: 'xlsx', kind: 'document' },
+  'application/vnd.openxmlformats-officedocument.wordprocessingml.document': { ext: 'docx', kind: 'document' },
   'model/step': { ext: 'step', kind: 'cad' },
   'application/step': { ext: 'step', kind: 'cad' },
   'model/iges': { ext: 'iges', kind: 'cad' },

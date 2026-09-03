@@ -140,3 +140,4 @@ traceable.
 | `018_supplier_research_runs.sql` | `202609011900_supplier_research_runs.sql` |
 | `019_supplier_offers.sql` | `202609011950_supplier_offers.sql` |
 | `020_quote_lines_and_enquiry_quotes.sql` | `202609012020_quote_lines_and_enquiry_quotes.sql` |
+| `021_enquiry_attachments.sql` | `202609011940_enquiry_attachments.sql` |

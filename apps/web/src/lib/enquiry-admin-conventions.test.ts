@@ -50,8 +50,15 @@ describe('FE-6 — controls come from the shared primitives', () => {
   it('declares no visible raw form control', () => {
     const offenders: string[] = []
     for (const { file, src } of FILES) {
-      // A hidden input carries no geometry and is the correct primitive-free case.
-      const visible = src.replace(/<input\s+type="hidden"[^>]*\/>/g, '')
+      // Two primitive-free cases are correct and stay allowed:
+      //  - type="hidden", which carries no geometry at all
+      //  - a visually-hidden file picker, because a file input cannot be styled
+      //    and the standard pattern is a real Button that clicks it via a ref
+      const visible = src
+        .replace(/<input\s+type="hidden"[^>]*\/>/g, '')
+        .replace(/<input[\s\S]{0,400}?type="file"[\s\S]{0,400}?\/>/g, (m) =>
+          m.includes('className="hidden"') ? '' : m,
+        )
       if (/<(input|textarea|select)\b/.test(visible)) offenders.push(file)
     }
     expect(offenders).toEqual([])
