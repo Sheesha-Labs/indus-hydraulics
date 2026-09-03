@@ -35,6 +35,7 @@ import { db } from '../index'
 import { BLOG_CROSS_LINKS } from './blog-cross-links'
 import { BLOG_SEO } from './blog-seo'
 import { BLOG_FIGURES } from './blog-figures'
+import { BLOG_FIGURE_MEDIA } from './blog-figure-media'
 
 import type { BlogBlocks, BlogBlocksInput } from '@indus/domain'
 import type { BlogArticleSeed } from './2026-08-17-blog-articles/shared'
@@ -69,11 +70,17 @@ export function withFigures(
   let out: BlogBlocksInput = base
 
   for (const figure of ordered) {
-    // A figure with no `from` is a reserved slot: the block is written with a
-    // null id and renders as nothing until an image pass fills it. A figure
-    // that names an article whose hero cannot be resolved is a mistake rather
-    // than an intention, so that one is still skipped.
-    const imageId = figure.from ? (heroIdBySlug.get(figure.from) ?? null) : null
+    // A commissioned photograph wins: `BLOG_FIGURE_MEDIA` holds the Media id
+    // for any reserved slot an image pass has filled, and without that lookup
+    // the next re-run of a wave would write the null back and the picture would
+    // vanish from the article.
+    //
+    // Otherwise: a figure with no `from` is a reserved slot, written with a
+    // null id and rendered as nothing until an image exists. A figure that
+    // names an article whose hero cannot be resolved is a mistake rather than
+    // an intention, so that one is still skipped.
+    const imageId =
+      BLOG_FIGURE_MEDIA[slug] ?? (figure.from ? (heroIdBySlug.get(figure.from) ?? null) : null)
     if (figure.from && !imageId) continue
 
     let seen = 0
