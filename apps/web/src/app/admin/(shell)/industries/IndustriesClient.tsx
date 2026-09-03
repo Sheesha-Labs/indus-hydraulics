@@ -87,7 +87,7 @@ export default function IndustriesClient({ industries }: Props) {
                   <TableCell className="font-mono text-[12px] text-ih-muted">{ind.slug}</TableCell>
                   <TableCell numeric>{ind.accountCount}</TableCell>
                   <TableCell className="text-center">
-                    <StatusPill tone={ind.isPublished ? 'good' : 'muted'}>
+                    <StatusPill tone={ind.isPublished ? 'success' : 'neutral'}>
                       {ind.isPublished ? 'Published' : 'Draft'}
                     </StatusPill>
                   </TableCell>

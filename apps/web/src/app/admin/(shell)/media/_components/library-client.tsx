@@ -105,7 +105,7 @@ function Body({
           skipped.length > 0
             ? `${skipped.length} skipped — became used since the page loaded.`
             : undefined,
-        tone: skipped.length > 0 ? 'default' : 'success',
+        tone: skipped.length > 0 ? 'neutral' : 'success',
       })
       refresh()
     })

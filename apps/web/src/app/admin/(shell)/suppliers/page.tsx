@@ -77,7 +77,7 @@ export default async function SuppliersPage() {
             header: 'Relationship',
             cell: (row) =>
               row.isAuthorizedDistributor ? (
-                <StatusPill tone="good" size="sm">
+                <StatusPill tone="success" size="sm">
                   Authorised
                 </StatusPill>
               ) : (
@@ -99,7 +99,7 @@ export default async function SuppliersPage() {
             numeric: true,
             cell: (row) =>
               row._count.contacts === 0 ? (
-                <StatusPill tone="warn" size="sm">
+                <StatusPill tone="warning" size="sm">
                   None
                 </StatusPill>
               ) : (

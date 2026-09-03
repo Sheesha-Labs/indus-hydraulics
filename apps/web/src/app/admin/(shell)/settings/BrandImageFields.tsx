@@ -64,7 +64,7 @@ function BrandImagePicker({
   const selectId = useId()
   const [library, setLibrary] = useState(options)
   const [busy, setBusy] = useState(false)
-  const [note, setNote] = useState<{ tone: 'ok' | 'info' | 'error'; text: string } | null>(null)
+  const [note, setNote] = useState<{ tone: 'success' | 'info' | 'danger'; text: string } | null>(null)
   const inputRef = useRef<HTMLInputElement>(null)
 
   const picked = library.find((o) => o.id === value)
@@ -74,11 +74,11 @@ function BrandImagePicker({
     body.set('file', file)
     const res = await uploadBrandImage(body)
     if (!res.success) {
-      setNote({ tone: 'error', text: res.message })
+      setNote({ tone: 'danger', text: res.message })
       return false
     }
     setNote({
-      tone: 'ok',
+      tone: 'success',
       text: extra ? `Uploaded "${file.name}". ${extra}` : `Uploaded "${file.name}" to the media library.`,
     })
     setLibrary((cur) => [{ id: res.data.mediaId, filename: res.data.filename, url: res.data.url }, ...cur])
@@ -116,7 +116,7 @@ function BrandImagePicker({
     const trim = await trimTransparentPadding(picked.url, picked.filename)
 
     if (trim.status === 'error') {
-      setNote({ tone: 'error', text: trim.message })
+      setNote({ tone: 'danger', text: trim.message })
       setBusy(false)
       return
     }
@@ -231,9 +231,9 @@ function BrandImagePicker({
           {note ? (
             <p
               className={`text-[11px] ${
-                note.tone === 'error'
+                note.tone === 'danger'
                   ? 'text-ih-danger'
-                  : note.tone === 'ok'
+                  : note.tone === 'success'
                     ? 'text-ih-success'
                     : 'text-ih-muted'
               }`}

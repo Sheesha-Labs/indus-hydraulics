@@ -98,19 +98,19 @@ export default function InviteStaffPanel({ pending }: { pending: PendingInvite[]
 
       {state?.error && <Notice tone="danger">{state.error}</Notice>}
       {/* A created-but-undelivered invite is a warning, never a success. */}
-      {state?.warning && <Notice tone="warn">{state.warning}</Notice>}
-      {state?.ok && <Notice tone="good">{state.ok}</Notice>}
+      {state?.warning && <Notice tone="warning">{state.warning}</Notice>}
+      {state?.ok && <Notice tone="success">{state.ok}</Notice>}
 
       {pending.length > 0 && <PendingTable rows={pending} />}
     </div>
   )
 }
 
-function Notice({ tone, children }: { tone: 'danger' | 'warn' | 'good'; children: React.ReactNode }) {
+function Notice({ tone, children }: { tone: 'danger' | 'warning' | 'success'; children: React.ReactNode }) {
   const cls = {
     danger: 'border-ih-danger text-ih-danger',
-    warn: 'border-[var(--color-ih-warning)] text-ih-ink',
-    good: 'border-[var(--color-ih-success)] text-ih-success',
+    warning: 'border-[var(--color-ih-warning)] text-ih-ink',
+    success: 'border-[var(--color-ih-success)] text-ih-success',
   }[tone]
   return (
     <div role="status" className={`mt-3 border px-3 py-2 text-[12px] ${cls}`}>
@@ -128,7 +128,7 @@ function PendingTable({ rows }: { rows: PendingInvite[] }) {
       <h3 className="mb-2 text-[13px] font-medium">
         Pending invitations <span className="text-ih-muted">({rows.length})</span>
       </h3>
-      {msg && <Notice tone="good">{msg}</Notice>}
+      {msg && <Notice tone="success">{msg}</Notice>}
       <table className="w-full border border-ih-border text-[13px]">
         <thead className="bg-ih-surface-2 text-[11px] uppercase tracking-wide text-ih-muted">
           <tr>

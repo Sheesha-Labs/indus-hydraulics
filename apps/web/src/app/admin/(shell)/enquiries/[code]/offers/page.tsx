@@ -76,9 +76,9 @@ export default async function EnquiryOffersPage({ params }: Props) {
                   </div>
                   <div className="flex items-center gap-2">
                     {offer.attributionMethod === 'reference_token' ? (
-                      <StatusPill tone="good" size="sm">Reference matched</StatusPill>
+                      <StatusPill tone="success" size="sm">Reference matched</StatusPill>
                     ) : (
-                      <StatusPill tone="warn" size="sm">Attributed by hand</StatusPill>
+                      <StatusPill tone="warning" size="sm">Attributed by hand</StatusPill>
                     )}
                     {unreadable > 0 ? (
                       <StatusPill tone="danger" size="sm">{unreadable} unreadable</StatusPill>
@@ -145,7 +145,7 @@ export default async function EnquiryOffersPage({ params }: Props) {
                         ) : (
                           <div className="flex flex-wrap gap-1">
                             {r.reviewFlags.map((f) => (
-                              <StatusPill key={f} tone="warn" size="sm">
+                              <StatusPill key={f} tone="warning" size="sm">
                                 {FLAG_LABEL[f] ?? f}
                               </StatusPill>
                             ))}

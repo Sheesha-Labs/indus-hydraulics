@@ -98,9 +98,9 @@ export default async function EnquiryPricingPage({ params }: Props) {
                         <div className="flex flex-col gap-0.5">
                           <div className="flex items-center gap-2">
                             <span className="text-[14px] text-ih-ink">{o.offer.supplierName}</span>
-                            {o.selectedAt ? <StatusPill tone="good" size="sm">Selected</StatusPill> : null}
+                            {o.selectedAt ? <StatusPill tone="success" size="sm">Selected</StatusPill> : null}
                             {o.kind === 'alternative' ? (
-                              <StatusPill tone="warn" size="sm">Alternative part</StatusPill>
+                              <StatusPill tone="warning" size="sm">Alternative part</StatusPill>
                             ) : null}
                             {o.kind === 'declined' ? (
                               <StatusPill tone="danger" size="sm">Declined</StatusPill>

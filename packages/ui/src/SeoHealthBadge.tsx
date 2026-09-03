@@ -13,7 +13,7 @@ export interface SeoHealthBadgeProps {
  * Tones map: ≥80 good (green), 50–79 warn (amber), <50 danger (red).
  */
 export function SeoHealthBadge({ score, className, size = 'default' }: SeoHealthBadgeProps) {
-  const tone = score >= 80 ? 'good' : score >= 50 ? 'warn' : 'danger'
+  const tone = score >= 80 ? 'success' : score >= 50 ? 'warning' : 'danger'
   return (
     <StatusPill tone={tone} size={size} {...(className ? { className } : {})}>
       {score}
