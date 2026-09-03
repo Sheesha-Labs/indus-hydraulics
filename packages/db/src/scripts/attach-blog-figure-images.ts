@@ -74,6 +74,26 @@ const ALT: Record<string, string> = {
     'Two dust-caked agricultural quick-coupler halves in their mountings at the rear of a tractor at dusk, one capped and one open',
   'building-a-thread-reference-board':
     'A plywood workshop board with rows of male and female hydraulic fittings mounted on short bolts, a pitch gauge and a seat gauge hanging on a chain beside them',
+  'over-tightened-fitting-diagnosis':
+    'Two hydraulic fittings side by side on a workbench, the cone on the left cleanly machined and the one on the right crushed and burnished at its tip',
+  'damaged-port-repair-or-scrap':
+    'A cast hydraulic valve block on a bench with the first threads of one port torn and deformed, bright fresh metal showing against the dark oiled casting',
+  'sealant-on-hydraulic-threads':
+    'PTFE tape wrapped over the straight thread of a cone-sealing hydraulic fitting held in a vice, the tape shredded into loose fibres near the cone',
+  'galvanic-corrosion-in-fittings':
+    'An almost unmarked stainless fitting lying beside the plated steel port block it was removed from, corrosion concentrated in the port threads where the two metals met',
+  'reusing-fittings-in-a-rebuild':
+    'Three metal trays on a workbench during a strip-down holding hydraulic fittings sorted by condition, with rags, a wire brush and a box of new seals around them',
+  'crimping-on-site-or-adapting':
+    'A portable hose crimping machine, an open case of steel adapters and a coil of bulk hose on the dusty tailgate of a service truck at a remote site',
+  'inspecting-fittings-on-arrival':
+    'Gloved hands running a nut down the thread of a newly delivered hydraulic fitting beside an opened carton of bagged fittings on a loading bay table',
+  'measuring-a-fitting-without-gauges':
+    'Gloved hands holding a vernier caliper closed across the thread crests of a hydraulic fitting on a machine track in the field, a phone lying beside them',
+  'buying-fittings-in-south-africa':
+    'A hydraulics trade counter seen from the customer side, racking behind it filled with bins of steel and brass fittings, a staff member reaching for a bin',
+  'fittings-on-a-used-japanese-machine':
+    'Two hydraulic fittings with shallow flare seats lying on a workbench either side of a fanned thread pitch gauge, one blade laid against the nearer thread',
   'dirt-ingress-in-transit-and-storage':
     'An opened timber crate holding two components sealed in polythene with bright caps fitted on their ends, beside two bare ones with open uncapped ends dulled by dust',
 }

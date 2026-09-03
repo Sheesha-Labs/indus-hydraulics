@@ -40,4 +40,17 @@ export const BLOG_FIGURE_MEDIA: Record<string, string> = {
   'sugar-mill-and-agro-processing-fittings': '364dacdf-21d7-4819-9fc0-6b93fde4c4d2',
   'tractor-hydraulic-fittings': '8f052e24-a644-4b9b-a04d-5d9ede1bc0f0',
   'why-fittings-seize-in-coastal-air': 'cbe225e0-4de0-414e-b73e-d1683b6b1870',
+
+  // Batch 3, commissioned 2026-09-01 — the diagnostic macros, the field and
+  // counter scenes, and the two bench comparisons.
+  'buying-fittings-in-south-africa': '42fa9284-4eff-4c91-bbe7-c8fbbc52bd72',
+  'crimping-on-site-or-adapting': '2d40295e-e29f-436b-9c6c-4d09b78b88e2',
+  'damaged-port-repair-or-scrap': '0aed40dd-6f5f-4dde-bf99-e940bbca81fb',
+  'fittings-on-a-used-japanese-machine': '55f54795-f861-4745-ba87-cf2bfeaf9924',
+  'galvanic-corrosion-in-fittings': 'b5c9419a-2883-4b45-bad4-d9e3a2734b17',
+  'inspecting-fittings-on-arrival': '1d99b483-f94f-4abe-b4d6-9e920336e54e',
+  'measuring-a-fitting-without-gauges': '49cd8049-8538-47eb-a27b-7884f199b81e',
+  'over-tightened-fitting-diagnosis': '8be154df-f2ab-42b8-bc6d-ee97583e111e',
+  'reusing-fittings-in-a-rebuild': 'b4882b6b-9ccc-41c8-96bb-b102119d1a5b',
+  'sealant-on-hydraulic-threads': '740a25fc-51a9-4297-8aec-cd383fa901c5',
 }
