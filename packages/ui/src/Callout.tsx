@@ -51,14 +51,14 @@ import { cn } from './lib/utils'
  *     Rows 12–18 name a category that does not exist.
  *   </Callout>
  * @example Body only
- *   <Callout tone="note">Prices are shown ex-VAT and in AED.</Callout>
+ *   <Callout tone="neutral">Prices are shown ex-VAT and in AED.</Callout>
  */
 const calloutVariants = cva('flex items-start gap-2 rounded-md border px-3 py-2', {
   variants: {
     tone: {
       /** No semantics — a neutral aside. The default, so an unthought-through
        *  call site cannot accidentally cry wolf. */
-      note: 'border-ih-border bg-ih-surface-2 text-ih-ink-2',
+      neutral: 'border-ih-border bg-ih-surface-2 text-ih-ink-2',
       /** Steel, not accent: accent-soft is the bulk-action bar's fill (LT-19)
        *  and a page should not have two different things wearing it. */
       info: 'border-ih-steel/40 bg-ih-steel-soft text-ih-info-ink',
@@ -67,7 +67,7 @@ const calloutVariants = cva('flex items-start gap-2 rounded-md border px-3 py-2'
       danger: 'border-ih-danger/40 bg-ih-danger-soft text-ih-danger-ink',
     },
   },
-  defaultVariants: { tone: 'note' },
+  defaultVariants: { tone: 'neutral' },
 })
 
 export interface CalloutProps

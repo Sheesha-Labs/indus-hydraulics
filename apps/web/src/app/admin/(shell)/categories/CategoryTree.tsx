@@ -386,7 +386,7 @@ function CategoryRow({
       </span>
 
       <span className="w-[92px] shrink-0 text-center">
-        <StatusPill tone={cat.isPublished ? 'good' : 'muted'}>
+        <StatusPill tone={cat.isPublished ? 'success' : 'neutral'}>
           {cat.isPublished ? 'Live' : 'Draft'}
         </StatusPill>
       </span>

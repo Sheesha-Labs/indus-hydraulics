@@ -212,9 +212,9 @@ function PreviewStep({
 
       <div className="grid grid-cols-4 gap-3 mb-6">
         <Stat label="Total rows" value={phase.totalRows} />
-        <Stat label="Will create" value={phase.rowsToCreate} tone="ok" />
+        <Stat label="Will create" value={phase.rowsToCreate} tone="success" />
         <Stat label="Will update" value={phase.rowsToUpdate} tone="info" />
-        <Stat label="Errors" value={phase.rowsWithErrors} tone={phase.rowsWithErrors > 0 ? 'warn' : 'ok'} />
+        <Stat label="Errors" value={phase.rowsWithErrors} tone={phase.rowsWithErrors > 0 ? 'warning' : 'success'} />
       </div>
 
       <div className="mb-5 max-h-[440px] overflow-auto rounded-lg border border-ih-border">
@@ -305,9 +305,9 @@ function DoneStep({
     <div className="rounded-lg border border-ih-border bg-ih-surface p-8">
       <h2 className="text-[15px] font-medium mb-4">Done.</h2>
       <div className="grid grid-cols-3 gap-3 mb-6 max-w-lg">
-        <Stat label="Created" value={phase.created} tone="ok" />
+        <Stat label="Created" value={phase.created} tone="success" />
         <Stat label="Updated" value={phase.updated} tone="info" />
-        <Stat label="Failed" value={phase.failed} tone={phase.failed > 0 ? 'warn' : 'ok'} />
+        <Stat label="Failed" value={phase.failed} tone={phase.failed > 0 ? 'warning' : 'success'} />
       </div>
       <div className="flex items-center gap-3">
         <Link
@@ -330,11 +330,11 @@ function DoneStep({
 
 // ── Bits ──────────────────────────────────────────────────────────────────
 
-function Stat({ label, value, tone = 'neutral' }: { label: string; value: number; tone?: 'ok' | 'warn' | 'info' | 'neutral' }) {
+function Stat({ label, value, tone = 'neutral' }: { label: string; value: number; tone?: 'success' | 'warning' | 'info' | 'neutral' }) {
   const toneCls =
-    tone === 'ok'
+    tone === 'success'
       ? 'text-[oklch(0.45_0.15_150)]'
-      : tone === 'warn'
+      : tone === 'warning'
         ? 'text-ih-danger-ink'
         : tone === 'info'
           ? 'text-ih-accent'

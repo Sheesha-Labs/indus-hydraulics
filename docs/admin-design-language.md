@@ -477,6 +477,28 @@ There are currently **eleven** local `function Field(...)` definitions in the ad
 
 Saving a draft is never blocked on a field, so marking a field required on the label *lies*: the eleven `Title *` / `Slug *` / `Body *` labels in the tree all sit on forms that save happily with the field empty. The gate is publish, not save.
 
+**CT-0 — one tone vocabulary.** Every component that colours by meaning takes
+the same six names, exported as `Tone` from `packages/ui/src/tone.ts`:
+
+```
+neutral · info · success · warning · danger · accent
+```
+
+Before this, `StatusPill` said `good`/`warn`, `Callout` said `success`/`warning`,
+and `Toast` had neither a warning nor an info tone. Writing `warn` where
+`warning` belonged was a compile error in one component and silently wrong in
+another, and a warning could not be expressed as a toast at all. The retired
+names (`good`, `warn`, `ok`, `error`, `muted`, `note`, `default`) are listed in
+`LEGACY_TONE_ALIASES` with their replacements, and `tone.test.ts` fails the
+build if a second vocabulary starts to grow.
+
+`Badge`'s `kind` is NOT a tone — it is the visual palette a tone resolves to,
+and it keeps its own names. `StatusPill`'s `TONE_KIND` is the single place the
+two are translated, which is why `warning` maps to Badge's `warn` there and
+nowhere else. The blog block schema in `packages/domain/src/blog-blocks.ts` is
+also out of scope: its tone enum validates PERSISTED content and changing it is
+a data migration, not a refactor.
+
 **FE-6.** Control geometry — one set, no exceptions:
 
 | Control | Height | Padding | Radius | Type |

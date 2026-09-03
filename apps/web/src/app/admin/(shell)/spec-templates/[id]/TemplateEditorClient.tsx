@@ -232,9 +232,9 @@ function FieldManager({
                       {f.unit ?? '—'}
                     </div>
                     <div className="flex items-center justify-center gap-1">
-                      {f.isKeyFeature && <Pill tone="ok">Key</Pill>}
+                      {f.isKeyFeature && <Pill tone="success">Key</Pill>}
                       {f.isQuickSpec && <Pill tone="info">Quick</Pill>}
-                      {f.isRequired && <Pill tone="warn">Req</Pill>}
+                      {f.isRequired && <Pill tone="warning">Req</Pill>}
                     </div>
                     <div className="flex items-center justify-end gap-2">
                       <button
@@ -658,11 +658,11 @@ function Field({
   )
 }
 
-function Pill({ children, tone }: { children: React.ReactNode; tone: 'ok' | 'warn' | 'info' }) {
+function Pill({ children, tone }: { children: React.ReactNode; tone: 'success' | 'warning' | 'info' }) {
   const cls =
-    tone === 'ok'
+    tone === 'success'
       ? 'text-ih-success-ink bg-ih-success-soft'
-      : tone === 'warn'
+      : tone === 'warning'
         ? 'text-[oklch(0.5_0.15_60)] bg-[oklch(0.97_0.04_60)]'
         : 'text-ih-accent bg-[oklch(0.96_0.05_240)]'
   return (

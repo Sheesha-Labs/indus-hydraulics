@@ -20,9 +20,9 @@ export type AttachmentRow = {
 type Props = { enquiryId: string; attachments: AttachmentRow[] }
 
 const STATUS_TONE = {
-  extracted: 'good',
-  pending: 'muted',
-  unsupported: 'warn',
+  extracted: 'success',
+  pending: 'neutral',
+  unsupported: 'warning',
   failed: 'danger',
 } as const
 

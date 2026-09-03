@@ -3,6 +3,7 @@
 import * as React from 'react'
 import { AlertTriangle, Check, Info, X } from 'lucide-react'
 import { cn } from './lib/utils'
+import type { Tone } from './tone'
 
 /**
  * Design language v2 — transient feedback.
@@ -31,7 +32,11 @@ import { cn } from './lib/utils'
  * its own region, so there is no separate `<Toaster />` to forget.
  */
 
-export type ToastTone = 'default' | 'success' | 'danger'
+/**
+ * @deprecated Use `Tone` from './tone'. Toast previously had no caution tone at
+ * all, so a warning had to be sent as a danger or silently downgraded.
+ */
+export type ToastTone = Tone
 
 export interface ToastOptions {
   title: string
@@ -57,9 +62,13 @@ const ToastContext = React.createContext<ToastContextValue | null>(null)
 /** Beyond this the stack is unreadable; the oldest is dropped. */
 const MAX_VISIBLE = 4
 
-const DEFAULT_DURATION: Record<ToastTone, number> = {
-  default: 5000,
+const DEFAULT_DURATION: Record<Tone, number> = {
+  neutral: 5000,
+  info: 5000,
   success: 5000,
+  accent: 5000,
+  // Anything the user must act on stays up longer.
+  warning: 8000,
   danger: 8000,
 }
 
@@ -92,7 +101,7 @@ export function ToastProvider({ children }: { children: React.ReactNode }) {
   const toast = React.useCallback(
     (options: ToastOptions) => {
       const id = nextId.current++
-      const tone = options.tone ?? 'default'
+      const tone = options.tone ?? 'neutral'
       const record: ToastRecord = { ...options, id, tone }
 
       setToasts((prev) => {
@@ -162,9 +171,12 @@ export function ToastProvider({ children }: { children: React.ReactNode }) {
   )
 }
 
-const TONE_STYLES: Record<ToastTone, { border: string; icon: string; Icon: typeof Check }> = {
-  default: { border: 'border-l-ih-steel', icon: 'text-ih-steel', Icon: Info },
+const TONE_STYLES: Record<Tone, { border: string; icon: string; Icon: typeof Check }> = {
+  neutral: { border: 'border-l-ih-steel', icon: 'text-ih-steel', Icon: Info },
+  info: { border: 'border-l-ih-steel', icon: 'text-ih-steel', Icon: Info },
+  accent: { border: 'border-l-ih-accent', icon: 'text-ih-accent', Icon: Info },
   success: { border: 'border-l-ih-success', icon: 'text-ih-success', Icon: Check },
+  warning: { border: 'border-l-ih-warning', icon: 'text-ih-warning', Icon: AlertTriangle },
   danger: { border: 'border-l-ih-danger', icon: 'text-ih-danger', Icon: AlertTriangle },
 }
 

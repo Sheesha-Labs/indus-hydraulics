@@ -33,7 +33,7 @@ function Card(props: Props) {
         <div className="flex flex-col gap-1">
           <div className="flex items-center gap-2">
             <h2 className="text-[15px] font-medium text-ih-ink">{props.supplierName}</h2>
-            <StatusPill tone={props.email ? 'good' : 'warn'} size="sm">
+            <StatusPill tone={props.email ? 'success' : 'warning'} size="sm">
               {props.email ? 'Reachable' : 'No address'}
             </StatusPill>
           </div>

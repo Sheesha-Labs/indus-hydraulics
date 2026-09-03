@@ -148,7 +148,7 @@ export default async function EnquiryDetailPage({ params }: Props) {
                       ) : (
                         <div className="flex flex-wrap gap-1">
                           {r.reviewFlags.map((f) => (
-                            <StatusPill key={f} tone="warn" size="sm">
+                            <StatusPill key={f} tone="warning" size="sm">
                               {FLAG_LABEL[f] ?? f}
                             </StatusPill>
                           ))}
@@ -205,10 +205,10 @@ export default async function EnquiryDetailPage({ params }: Props) {
                               size="sm"
                               tone={
                                 result.status === 'completed'
-                                  ? 'good'
+                                  ? 'success'
                                   : result.status === 'failed'
                                     ? 'danger'
-                                    : 'warn'
+                                    : 'warning'
                               }
                             >
                               {result.status.replace('_', ' ')}

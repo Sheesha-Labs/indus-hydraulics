@@ -106,7 +106,7 @@ export default function BrandsClient({ brands }: Props) {
                   </TableCell>
                   <TableCell numeric>{b.productCount}</TableCell>
                   <TableCell className="text-center">
-                    <StatusPill tone={b.isPublished ? 'good' : 'muted'}>
+                    <StatusPill tone={b.isPublished ? 'success' : 'neutral'}>
                       {b.isPublished ? 'Published' : 'Draft'}
                     </StatusPill>
                   </TableCell>

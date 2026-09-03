@@ -1,3 +1,4 @@
+export * from './tone'
 // Design language v2 primitives. The visual contract lives in
 // design_handoff_indus_hydraulics_v2/design-source/tokens.css; these are its
 // React expression. Specimen page: /_design.

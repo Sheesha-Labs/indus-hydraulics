@@ -91,9 +91,9 @@ export default async function SeoInspectorPage({
     <div>
       {/* Summary tiles */}
       <div className="grid grid-cols-4 gap-3 mb-6">
-        <SummaryTile label="Total URLs" value={counts.total} tone="muted" />
-        <SummaryTile label="Healthy (≥ 80)" value={counts.ok} tone="good" />
-        <SummaryTile label="Needs work (50–79)" value={counts.warn} tone="warn" />
+        <SummaryTile label="Total URLs" value={counts.total} tone="neutral" />
+        <SummaryTile label="Healthy (≥ 80)" value={counts.ok} tone="success" />
+        <SummaryTile label="Needs work (50–79)" value={counts.warn} tone="warning" />
         <SummaryTile label="Critical (< 50)" value={counts.danger} tone="danger" />
       </div>
 
@@ -533,12 +533,12 @@ function SummaryTile({
 }: {
   label: string
   value: number
-  tone: 'good' | 'warn' | 'danger' | 'muted'
+  tone: 'success' | 'warning' | 'danger' | 'neutral'
 }) {
   const toneClass =
-    tone === 'good'
+    tone === 'success'
       ? 'text-ih-success-ink'
-      : tone === 'warn'
+      : tone === 'warning'
         ? 'text-ih-warning-ink'
         : tone === 'danger'
           ? 'text-ih-danger-ink'

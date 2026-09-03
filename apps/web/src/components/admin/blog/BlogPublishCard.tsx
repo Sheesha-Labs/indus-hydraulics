@@ -68,7 +68,7 @@ export default function BlogPublishCard({
   // nothing at all.
   const { pending: saving } = useFormStatus()
   const [pending, startTransition] = useTransition()
-  const [message, setMessage] = useState<{ tone: 'ok' | 'error'; text: string } | null>(null)
+  const [message, setMessage] = useState<{ tone: 'success' | 'danger'; text: string } | null>(null)
   const busy = pending || saving
 
   function run(action: () => Promise<Result<{ message: string }>>) {
@@ -76,10 +76,10 @@ export default function BlogPublishCard({
     startTransition(async () => {
       const result = await action()
       if (result.success) {
-        setMessage({ tone: 'ok', text: result.data.message })
+        setMessage({ tone: 'success', text: result.data.message })
         router.refresh()
       } else {
-        setMessage({ tone: 'error', text: result.message })
+        setMessage({ tone: 'danger', text: result.message })
       }
     })
   }
@@ -183,7 +183,7 @@ export default function BlogPublishCard({
       {message && (
         <p
           className={`text-[12px] ${
-            message.tone === 'ok' ? 'text-[color:var(--color-ih-success)]' : 'text-ih-danger'
+            message.tone === 'success' ? 'text-[color:var(--color-ih-success)]' : 'text-ih-danger'
           }`}
         >
           {message.text}
