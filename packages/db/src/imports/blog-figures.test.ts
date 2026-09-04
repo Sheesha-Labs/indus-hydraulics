@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import { BLOG_FIGURES } from './blog-figures'
+import { BLOG_FIGURE_MEDIA } from './blog-figure-media'
 import { withFigures } from './blog-article-import'
 import type { BlogBlocksInput } from '@indus/domain'
 
@@ -61,15 +62,31 @@ describe('withFigures', () => {
   const heroes = new Map([['other-article', 'media-1']])
   const body: BlogBlocksInput = [head('/01'), para, head('/02'), para]
 
-  it('writes a reserved slot as a null-id figure carrying its brief', () => {
-    // A real reserved slot from the 2026-09-01 sprints, so the test breaks if
-    // the reserved-slot mechanism is ever removed from under them.
-    const slug = 'saber-certificate-for-hydraulic-hose'
-    expect(BLOG_FIGURES[slug]?.[0]?.from, 'expected a reserved slot').toBeUndefined()
+  /**
+   * Picked at runtime rather than named.
+   *
+   * The first version of this test hardcoded a slug that was a reserved slot on
+   * the day it was written, and broke the moment an image pass filled that
+   * slot — a green suite turning red because the work SUCCEEDED. The mechanism
+   * is what matters, so the fixture follows the data: whichever slots are still
+   * empty prove the null-id path, and once every one is filled the same test
+   * proves the opposite half, that a commissioned id reaches the block.
+   */
+  it('writes a reserved slot as a null-id figure, or a commissioned id once filled', () => {
+    const reserved = Object.entries(BLOG_FIGURES).find(
+      ([slug, figs]) => !figs[0]?.from && !BLOG_FIGURE_MEDIA[slug],
+    )
+    const filled = Object.entries(BLOG_FIGURES).find(
+      ([slug, figs]) => !figs[0]?.from && BLOG_FIGURE_MEDIA[slug],
+    )
+    const [slug, expectedId] = reserved
+      ? [reserved[0], null]
+      : [filled![0], BLOG_FIGURE_MEDIA[filled![0]]!]
+
     const out = withFigures(slug, [head('/01'), para], heroes) as BlogBlocksInput
     const fig = out.find((b) => b.type === 'figure') as Record<string, unknown> | undefined
-    expect(fig).toBeDefined()
-    expect(fig!.imageId).toBeNull()
+    expect(fig, `${slug} produced no figure`).toBeDefined()
+    expect(fig!.imageId).toBe(expectedId)
     expect(String(fig!.placeholderLabel ?? '').length).toBeGreaterThan(20)
   })
 

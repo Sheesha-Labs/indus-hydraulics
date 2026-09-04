@@ -100,6 +100,7 @@ function MapSvg({ model }: { model: MarketMapModel }) {
   const hatchId = `mk-hatch-${uid}`
   const clipId = `mk-clip-${uid}`
   const arrowId = `mk-arrow-${uid}`
+  const targetId = `mk-target-${uid}`
 
   return (
     <svg
@@ -172,12 +173,28 @@ function MapSvg({ model }: { model: MarketMapModel }) {
           </text>
         ))}
 
-        {/* Hatch fill, then three offset outlines. See the docblock. */}
-        <path d={model.target} fill={`url(#${hatchId})`} stroke="none" />
+        {/* Hatch fill, then three offset outlines. See the docblock.
+
+            The outline is DEFINED ONCE and referenced four times. It used to be
+            four `<path>` elements each carrying the full `d`, and on a country
+            with a detailed coastline that string runs to ~15 KB — so the page
+            shipped it four times in the markup, and React shipped it four more
+            times in the RSC payload underneath. Measured on `/markets/united-
+            kingdom` before this change: the same path string appeared EIGHT
+            times in one document, ~89 KB of the page for one shape.
+
+            `<use>` inherits presentation attributes from the referencing
+            element, which is why the definition below carries no fill or stroke
+            of its own — an attribute set on the referenced path would win over
+            the one on the `<use>` and every outline would render identically. */}
+        <defs>
+          <path id={targetId} d={model.target} />
+        </defs>
+        <use href={`#${targetId}`} fill={`url(#${hatchId})`} stroke="none" />
         <g fill="none" stroke="var(--color-ih-ink)">
-          <path d={model.target} strokeWidth="2.6" strokeOpacity="0.9" />
-          <path d={model.target} strokeWidth="1.1" strokeOpacity="0.5" transform="translate(2.5,3)" />
-          <path d={model.target} strokeWidth="0.8" strokeOpacity="0.28" transform="translate(-2,-2.5)" />
+          <use href={`#${targetId}`} strokeWidth="2.6" strokeOpacity="0.9" />
+          <use href={`#${targetId}`} strokeWidth="1.1" strokeOpacity="0.5" transform="translate(2.5,3)" />
+          <use href={`#${targetId}`} strokeWidth="0.8" strokeOpacity="0.28" transform="translate(-2,-2.5)" />
         </g>
 
         {/* Each route twice: a white casing so the line reads over land, then
