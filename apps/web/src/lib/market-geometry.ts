@@ -179,7 +179,17 @@ export function buildMarketMapModel(page: MarketPage, countryName: string): Mark
     ],
     focus as unknown as GeoPermissibleObjects
   )
-  const path = geoPath(projection)
+  // One decimal place on every projected coordinate.
+  //
+  // d3 emits three by default. On a frame this size the third decimal is a
+  // thousandth of a pixel — invisible — and it is not free: the map paths are
+  // 320 KB of the 1.2 MB `/markets/united-kingdom` document, and every byte
+  // ships twice because React repeats the markup in the RSC payload. Dropping
+  // two decimals takes roughly a quarter off that, on 126 pages.
+  //
+  // `digits()` is d3-geo 3.1+; the version here is 3.1.1. It rounds inside the
+  // path serialiser, so nothing downstream has to parse or rewrite strings.
+  const path = geoPath(projection).digits(1)
   const project = (c: LonLat): [number, number] => {
     const p = projection([c[0], c[1]])
     // d3 returns null for a coordinate the projection cannot place. Every

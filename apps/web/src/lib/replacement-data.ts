@@ -118,7 +118,7 @@ export async function getReplacementBrands(): Promise<
 
 /** Sitemap entries — sorted (brand, mpn) pairs. */
 export async function getReplacementSitemapKeys(): Promise<
-  Array<{ brandSlug: string; mpnSlug: string }>
+  Array<{ brandSlug: string; mpnSlug: string; matches: number }>
 > {
   const all = await getAllReplacementMatches()
   return uniqueReplacementKeys(all)

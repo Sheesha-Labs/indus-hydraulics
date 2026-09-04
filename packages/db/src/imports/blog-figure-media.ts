@@ -53,4 +53,19 @@ export const BLOG_FIGURE_MEDIA: Record<string, string> = {
   'over-tightened-fitting-diagnosis': '8be154df-f2ab-42b8-bc6d-ee97583e111e',
   'reusing-fittings-in-a-rebuild': 'b4882b6b-9ccc-41c8-96bb-b102119d1a5b',
   'sealant-on-hydraulic-threads': '740a25fc-51a9-4297-8aec-cd383fa901c5',
+
+  // Batch 4, commissioned 2026-09-04 — the GCC compliance cluster. A different
+  // visual problem from the machinery batches: the text ban means a document
+  // has to read as a document by its sleeve, stack and handling, never by
+  // anything written on it, so most of these argue through objects instead.
+  'certificate-of-origin-gcc-duty': '0ef0ea32-3166-41e0-a4d9-8b261a7e2aef',
+  'gcc-import-documents-for-hose': '56f32b8f-f251-4ca0-b466-b2fbb078c89b',
+  'gulf-conformity-mark-hose-fittings': '7bfbdc00-cae6-40c6-a7db-086894c7e261',
+  'hose-assembly-test-certificate': '3d6ced8e-85c6-410b-bbe5-ec9cf0392fd4',
+  'material-test-certificate-en-10204': '5153afce-b2bb-434a-88f3-026258c2e66d',
+  'nace-mr0175-hose-documentation': '36915499-5b40-4d80-ab81-880b750ae0dd',
+  'oilfield-hose-document-pack': '3748641d-0af4-49bb-88f0-82f641f3696f',
+  'saber-certificate-for-hydraulic-hose': 'f86fb3b9-c776-41a9-b0dc-21589f7ef544',
+  'vendor-approval-for-hose-supply': '6a778da9-bb44-4847-86ca-93736e58621c',
+  'verifying-a-genuine-hydraulic-hose': '63b41d2a-fea8-4d39-9412-0edcbc000427',
 }

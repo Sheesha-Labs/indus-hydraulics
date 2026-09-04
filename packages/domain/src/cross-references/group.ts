@@ -56,15 +56,29 @@ export function groupCrossReferencesByCompetitor<T extends CrossRefRow>(
 /** Convenience: only the (brand, mpn) keys, sorted, for sitemap generation. */
 export function uniqueReplacementKeys<T extends CrossRefRow>(
   rows: T[],
-): Array<{ brandSlug: string; mpnSlug: string }> {
+): Array<{ brandSlug: string; mpnSlug: string; matches: number }> {
   const groups = groupCrossReferencesByCompetitor(rows)
   return groups
-    .map((g) => ({ brandSlug: g.brandSlug, mpnSlug: g.mpnSlug }))
+    .map((g) => ({ brandSlug: g.brandSlug, mpnSlug: g.mpnSlug, matches: g.rows.length }))
     .sort((a, b) => {
       if (a.brandSlug !== b.brandSlug) return a.brandSlug.localeCompare(b.brandSlug)
       return a.mpnSlug.localeCompare(b.mpnSlug)
     })
 }
+
+/**
+ * How many verified equivalents a replacement part page needs before it is
+ * worth submitting to a search engine.
+ *
+ * Measured on production 2026-09-04: all 71 part pages resolved to exactly ONE
+ * cross-reference, rendered 245–251 visible words, and two sampled pages shared
+ * a 71% six-gram overlap. One match produces a stub; the page only becomes a
+ * comparison — the thing a buyer searched for — once there is a choice on it.
+ *
+ * This is the gate for both the sitemap and the page's own robots meta, so the
+ * two can never disagree about which pages are worth indexing.
+ */
+export const REPLACEMENT_INDEX_MIN_MATCHES = 2
 
 /**
  * Group all cross-references by competitor brand for the brand-level

@@ -2,7 +2,11 @@ import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import Image from 'next/image'
-import { buildBreadcrumbLd, buildReplacementCollectionLd } from '@indus/domain'
+import {
+  REPLACEMENT_INDEX_MIN_MATCHES,
+  buildBreadcrumbLd,
+  buildReplacementCollectionLd,
+} from '@indus/domain'
 import { JsonLd, LeadCapturePanel, buildWhatsappHref, buildMailtoHref } from '@indus/ui'
 import { mediaUrl } from '../../../../../lib/media'
 import { ORG_ID, SITE_NAME, pageMetadata, urlFor } from '../../../../../lib/seo'
@@ -46,11 +50,33 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const first = matches[0]!
   const competitorBrand = first.competitorBrand
   const competitorMpn = first.competitorMpn
-  return pageMetadata({
+  const meta = pageMetadata({
     title: `${competitorBrand} ${competitorMpn} replacement — Indus Hydraulics`,
     description: `Indus Hydraulics replacement for ${competitorBrand} ${competitorMpn}. ${matches.length} verified equivalent${matches.length === 1 ? '' : 's'} from our distributor catalogue, with datasheets and lead times.`,
     path: `/replacement/${brand}/${mpn}`,
   })
+
+  // A page carrying a single cross-reference is a stub, not a comparison.
+  //
+  // Measured on production 2026-09-04: all 71 of these resolved to exactly one
+  // match, rendered 245–251 visible words, and two sampled pages shared a 71%
+  // six-gram overlap — one template with the part number swapped. Publishing 71
+  // of those to a domain where 1,733 URLs were already sitting unfetched in
+  // "Discovered – currently not indexed" spends crawl budget to teach Google
+  // that this host repeats itself.
+  //
+  // `follow` rather than `noindex, nofollow`: the outbound links to the actual
+  // product pages are the useful part of the page and should keep passing
+  // signal. The page also stays crawlable and internally linked — it is not
+  // hidden, it is just not offered for indexing yet.
+  //
+  // The gate is `REPLACEMENT_INDEX_MIN_MATCHES`, shared with the sitemap so the
+  // two cannot disagree. A page re-enters the index by gaining a second
+  // verified equivalent, with no code change.
+  if (matches.length < REPLACEMENT_INDEX_MIN_MATCHES) {
+    return { ...meta, robots: { index: false, follow: true } }
+  }
+  return meta
 }
 
 export default async function ReplacementPage({ params }: Props) {

@@ -74,6 +74,26 @@ const ALT: Record<string, string> = {
     'Two dust-caked agricultural quick-coupler halves in their mountings at the rear of a tractor at dusk, one capped and one open',
   'building-a-thread-reference-board':
     'A plywood workshop board with rows of male and female hydraulic fittings mounted on short bolts, a pitch gauge and a seat gauge hanging on a chain beside them',
+  'saber-certificate-for-hydraulic-hose':
+    'A dispatch desk from above with a stack of blank forms in a clear document wallet, a rubber stamp, an open ink pad and a pen under a warm desk lamp',
+  'gulf-conformity-mark-hose-fittings':
+    'Macro of the woven cover of a coiled hydraulic hose in raking daylight, the rubber completely unmarked',
+  'certificate-of-origin-gcc-duty':
+    'A single warehouse pallet carrying cartons and crates of visibly different origins — plain board, a timber crate, a wrapped bale, different strapping styles',
+  'hose-assembly-test-certificate':
+    'A hydraulic hose assembly clamped in a test rig with a large analogue pressure gauge in the foreground and a blank identification tag wired to the ferrule',
+  'material-test-certificate-en-10204':
+    'A bundle of steel hydraulic fittings banded together on a bench with a plain unmarked metal tag wired to the bundle',
+  'nace-mr0175-hose-documentation':
+    'An upstream wellhead and manifold in hard desert sun with hydraulic control hoses running to it on brackets and a gas detection head on a post',
+  'vendor-approval-for-hose-supply':
+    'A loaded flatbed truck waiting at the lowered barrier of an industrial plant gate before dawn, gatehouse lit and plant structures beyond the fence',
+  'verifying-a-genuine-hydraulic-hose':
+    'Two hydraulic hose sections cut through and stood on end side by side, the wire reinforcement visibly different between them',
+  'gcc-import-documents-for-hose':
+    'A freight forwarder office with shelving full of bulging folders and box files, stacked clear document wallets on a desk, blinds striping the light',
+  'oilfield-hose-document-pack':
+    'A ring binder open on a workshop bench holding blank sheets in clear sleeves, beside a crated oilfield hose assembly with its lid leaned against it',
   'over-tightened-fitting-diagnosis':
     'Two hydraulic fittings side by side on a workbench, the cone on the left cleanly machined and the one on the right crushed and burnished at its tip',
   'damaged-port-repair-or-scrap':
