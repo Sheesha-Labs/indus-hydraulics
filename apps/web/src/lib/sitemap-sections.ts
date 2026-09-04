@@ -6,6 +6,7 @@ import {
   designedIndustrySlugs,
   marketsOrdered,
   serviceAreasOrdered,
+  REPLACEMENT_INDEX_MIN_MATCHES,
 } from '@indus/domain'
 import { BASE_URL } from './seo'
 import { getReplacementBrands, getReplacementSitemapKeys } from './replacement-data'
@@ -126,6 +127,26 @@ async function productsSection(): Promise<MetadataRoute.Sitemap> {
   )
 }
 
+/**
+ * NO `lastmod` HERE, AND THAT IS DELIBERATE — 2026-09-04.
+ *
+ * 448 sitemap URLs across categories, brands, industries and locations carry no
+ * `<lastmod>`, which is a real weakness: a crawler has nothing to schedule on,
+ * and 1,733 URLs on this domain are sitting in "Discovered – currently not
+ * indexed", never fetched.
+ *
+ * The fix is NOT to invent a date. `Category`, `Brand` and `Industry` have no
+ * modification timestamp at all — only `seoUpdatedAt`, set when an editor opens
+ * the SEO panel — and the two dates within reach are both lies: `now()` says
+ * every shelf changed on every sitemap fetch, and a backfilled column says all
+ * 194 changed the day the migration ran. A crawler that catches a sitemap
+ * claiming daily change on a page that never changes learns to discount the
+ * dates on this host, which costs more than the missing field.
+ *
+ * The honest fix is a real `updatedAt` on these tables, set by actual edits,
+ * accumulating truthful dates from then on. That is a schema change and it is
+ * tracked as follow-up work, not smuggled in here.
+ */
 async function categoriesSection(): Promise<MetadataRoute.Sitemap> {
   const categories = await db.category.findMany({
     where: { isPublished: true },
@@ -336,6 +357,33 @@ function locationsSection(): MetadataRoute.Sitemap {
   return [...serviceAreas, ...markets]
 }
 
+/**
+ * Replacement pages — brand hubs only, until a part page has something to say.
+ *
+ * WHY THE PART PAGES CAME OUT (2026-09-04)
+ *
+ * Every one of the 71 `/replacement/<brand>/<mpn>` pages resolves to exactly
+ * ONE cross-reference row. Measured on production: 245 and 251 visible words on
+ * two of them, and a **71% six-gram overlap** between the pair. That is one
+ * template with a part number swapped in, published 71 times.
+ *
+ * Submitting 71 near-identical pages in a sitemap is not a neutral act on a
+ * site Google is already rationing. The whole domain sat at 1,733 URLs in
+ * "Discovered – currently not indexed" — 83% of it never fetched at all — and a
+ * cluster like this is exactly the sample Google draws on when it decides how
+ * much of a host is worth crawling.
+ *
+ * So the hubs stay in (they list every MPN we cover for a brand and are
+ * genuinely useful), and the leaves come out. They are NOT deleted and NOT
+ * blocked in robots.txt: they stay reachable, internally linked and crawlable,
+ * carrying `noindex, follow` from the page itself. See the note in
+ * `replacement/[brand]/[mpn]/page.tsx`.
+ *
+ * THE GATE IS DATA, NOT A DATE. A part page re-enters the sitemap and the index
+ * the moment it carries `REPLACEMENT_INDEX_MIN_MATCHES` verified equivalents,
+ * because at that point it is a comparison rather than a stub. Nothing here has
+ * to be revisited by hand when the catalogue grows.
+ */
 async function replacementSection(): Promise<MetadataRoute.Sitemap> {
   const [keys, brands] = await Promise.all([
     getReplacementSitemapKeys(),
@@ -348,11 +396,13 @@ async function replacementSection(): Promise<MetadataRoute.Sitemap> {
     priority: 0.5,
   }))
 
-  const partEntries: MetadataRoute.Sitemap = keys.map((k) => ({
-    url: `${BASE_URL}/replacement/${k.brandSlug}/${k.mpnSlug}`,
-    changeFrequency: 'monthly' as const,
-    priority: 0.6,
-  }))
+  const partEntries: MetadataRoute.Sitemap = keys
+    .filter((k) => k.matches >= REPLACEMENT_INDEX_MIN_MATCHES)
+    .map((k) => ({
+      url: `${BASE_URL}/replacement/${k.brandSlug}/${k.mpnSlug}`,
+      changeFrequency: 'monthly' as const,
+      priority: 0.6,
+    }))
 
   return [...brandEntries, ...partEntries]
 }

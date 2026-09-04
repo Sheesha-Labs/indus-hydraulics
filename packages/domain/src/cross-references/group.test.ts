@@ -2,6 +2,7 @@ import { describe, it, expect } from 'vitest'
 import {
   groupCrossReferencesByBrand,
   groupCrossReferencesByCompetitor,
+  REPLACEMENT_INDEX_MIN_MATCHES,
   uniqueReplacementKeys,
   type CrossRefRow,
 } from './group'
@@ -42,14 +43,27 @@ describe('groupCrossReferencesByCompetitor', () => {
 })
 
 describe('uniqueReplacementKeys', () => {
-  it('returns sorted unique (brandSlug, mpnSlug) pairs', () => {
+  it('returns sorted unique (brandSlug, mpnSlug) pairs with their match counts', () => {
     const keys = uniqueReplacementKeys(rows)
     expect(keys).toEqual([
-      { brandSlug: 'bosch-rexroth', mpnSlug: 'a10vso-71-31r' },
-      { brandSlug: 'eaton', mpnSlug: 'v2010-1f9s1s' },
-      { brandSlug: 'parker', mpnSlug: 'pv16-t' },
-      { brandSlug: 'parker', mpnSlug: 'pvs24' },
+      { brandSlug: 'bosch-rexroth', mpnSlug: 'a10vso-71-31r', matches: 1 },
+      { brandSlug: 'eaton', mpnSlug: 'v2010-1f9s1s', matches: 1 },
+      // Two source rows slug to the same competitor part, so this one has a
+      // real choice on it — the distinction the index gate turns on.
+      { brandSlug: 'parker', mpnSlug: 'pv16-t', matches: 2 },
+      { brandSlug: 'parker', mpnSlug: 'pvs24', matches: 1 },
     ])
+  })
+
+  /**
+   * The gate the sitemap and the page's robots meta both read. If these two
+   * ever disagree the site submits a URL it then tells Google not to index,
+   * which is a worse signal than either choice alone.
+   */
+  it('separates stub pages from real comparisons at the index threshold', () => {
+    const keys = uniqueReplacementKeys(rows)
+    const indexable = keys.filter((k) => k.matches >= REPLACEMENT_INDEX_MIN_MATCHES)
+    expect(indexable.map((k) => k.mpnSlug)).toEqual(['pv16-t'])
   })
 })
 
