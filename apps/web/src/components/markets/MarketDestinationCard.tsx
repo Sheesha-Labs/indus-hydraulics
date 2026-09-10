@@ -36,7 +36,7 @@ export default function MarketDestinationCard({
       className="group flex flex-col overflow-hidden rounded-lg border border-ih-border bg-ih-surface transition-colors hover:border-ih-accent"
     >
       <div className="relative border-b border-ih-border bg-ih-surface-2 transition-colors group-hover:bg-ih-surface">
-        <MarketThumb thumbnail={thumbnail} countryName={card.label} />
+        <MarketThumb thumbnail={thumbnail} countryName={card.label} slug={card.slug} />
         {card.mode && (
           <span className="mono absolute right-[9px] top-2 rounded-[3px] bg-white/[0.88] px-[5px] py-0.5 text-[9px] tracking-[0.08em] text-ih-accent">
             {card.mode}

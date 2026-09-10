@@ -189,7 +189,12 @@ export default function MarketLanding({
           </div>
         </div>
 
-        <MarketMapPanel model={mapModel} countryName={market.name} lane={page.lane} />
+        <MarketMapPanel
+          model={mapModel}
+          countryName={market.name}
+          lane={page.lane}
+          slug={market.slug}
+        />
       </div>
     </section>
     ),
