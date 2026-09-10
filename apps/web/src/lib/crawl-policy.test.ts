@@ -112,3 +112,34 @@ describe('FACET_DISALLOW', () => {
     }
   })
 })
+
+describe('rewrite targets', () => {
+  it('blocks the geo-rotator variants of the home page', () => {
+    // 127 country variants of `/`, every one a duplicate. All answered 200
+    // with no noindex before this rule.
+    expect(isDisallowed('/h/AE')).toBe(true)
+    expect(isDisallowed('/h/US')).toBe(true)
+  })
+
+  it('does not block the home page itself', () => {
+    // `/` is REWRITTEN to /h/<cc> internally. robots.txt matches the requested
+    // path, so blocking the prefix cannot affect `/` — and if this ever
+    // regresses, the entire site falls out of the index.
+    expect(isDisallowed('')).toBe(false)
+    expect(isDisallowed('/')).toBe(false)
+  })
+
+  it('does not swallow other routes that begin with /h', () => {
+    expect(isDisallowed('/hydraulic-components-supplier-uae')).toBe(false)
+  })
+
+  it('blocks the filtered category twin', () => {
+    expect(isDisallowed('/c-filter/hydraulic-hoses')).toBe(true)
+  })
+
+  it('leaves the canonical category shelves crawlable', () => {
+    expect(isDisallowed('/c')).toBe(false)
+    expect(isDisallowed('/c/hydraulic-hoses')).toBe(false)
+    expect(isDisallowed('/c/hydraulic-hoses/page/2')).toBe(false)
+  })
+})

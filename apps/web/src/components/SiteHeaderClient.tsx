@@ -5,7 +5,7 @@ import { usePathname } from 'next/navigation'
 import type React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import type { ResolvedNavItem } from '@indus/domain'
+import type { NavChromeItem } from '@indus/domain'
 import BrandLockup from './BrandLockup'
 import type { LogoStyle } from '../lib/brand-identity'
 import SearchAutocomplete from './SearchAutocomplete'
@@ -17,8 +17,8 @@ type NavListEntry = { slug: string; name: string }
 type DropdownKind = 'mega' | 'brands' | 'industries' | null
 
 interface Props {
-  headerItems: ResolvedNavItem[]
-  megamenuItems: ResolvedNavItem[]
+  headerItems: NavChromeItem[]
+  megamenuItems: NavChromeItem[]
   brands: NavListEntry[]
   industries: NavListEntry[]
   contactPhone: string | null
@@ -33,8 +33,8 @@ interface Props {
 const MOBILE_LIST_LIMIT = 5
 
 function getDropdownKind(
-  item: ResolvedNavItem,
-  megamenuItems: ResolvedNavItem[],
+  item: NavChromeItem,
+  megamenuItems: NavChromeItem[],
   brands: NavListEntry[],
   industries: NavListEntry[],
 ): DropdownKind {
@@ -156,7 +156,7 @@ export default function SiteHeaderClient({
   const industriesOpen = activeDropdown === 'industries'
 
   const activeCat = megamenuItems[activeCatIdx] ?? megamenuItems[0]
-  const activeSub = activeCat?.children[activeSubIdx] ?? activeCat?.children[0]
+  const activeSub = activeCat?.children?.[activeSubIdx] ?? activeCat?.children?.[0]
   const browseAllHref = activeCat?.href ?? '/c'
 
   const brandsHeaderItem = headerItems.find(
@@ -256,7 +256,7 @@ export default function SiteHeaderClient({
 
           {/* Desktop nav */}
           <nav className="hidden items-center gap-[26px] lg:flex">
-            {headerItems.map((item) => {
+            {headerItems.map((item, itemIdx) => {
               const href = item.href ?? '#'
               const kind = getDropdownKind(item, megamenuItems, brands, industries)
               if (kind !== null) {
@@ -279,7 +279,7 @@ export default function SiteHeaderClient({
                   within the three panes.
                 */
                   <div
-                    key={item.id}
+                    key={`${itemIdx}-${item.label}`}
                     onMouseEnter={() => openDropdown(kind)}
                     onMouseLeave={closeDropdown}
                     onFocus={() => openDropdown(kind)}
@@ -324,7 +324,7 @@ export default function SiteHeaderClient({
               }
               return (
                 <Link
-                  key={item.id}
+                  key={`${itemIdx}-${item.label}`}
                   href={href}
                   target={item.openInNewTab ? '_blank' : undefined}
                   rel={item.openInNewTab ? 'noopener noreferrer' : undefined}
@@ -474,7 +474,7 @@ export default function SiteHeaderClient({
                 <div className="flex flex-col">
                   {megamenuItems.map((cat, i) => (
                     <Link
-                      key={cat.id}
+                      key={`${i}-${cat.label}`}
                       href={cat.href ?? '#'}
                       role="menuitem"
                       className={`flex items-center justify-between rounded-sm border-l-2 px-3 py-2.5 text-[13.5px] transition-colors ${
@@ -499,7 +499,7 @@ export default function SiteHeaderClient({
                 <div className="flex flex-col">
                   {(activeCat?.children ?? []).map((sub, i) => (
                     <Link
-                      key={sub.id}
+                      key={`${i}-${sub.label}`}
                       href={sub.href ?? '#'}
                       role="menuitem"
                       className={`flex items-center justify-between rounded-sm border-l-2 px-3 py-2.5 text-[13.5px] transition-colors ${
@@ -525,9 +525,9 @@ export default function SiteHeaderClient({
                   {activeSub?.label}
                 </div>
                 <div className="flex flex-1 flex-col">
-                  {(activeSub?.children ?? []).map((leaf) => (
+                  {(activeSub?.children ?? []).map((leaf, leafIdx) => (
                     <Link
-                      key={leaf.id}
+                      key={`${leafIdx}-${leaf.label}`}
                       href={leaf.href ?? '#'}
                       role="menuitem"
                       target={leaf.openInNewTab ? '_blank' : undefined}
@@ -680,9 +680,9 @@ export default function SiteHeaderClient({
       {/* ── Mobile nav ─────────────────────────────────────── */}
       {mobileOpen && (
         <div className="border-ih-border bg-ih-surface border-t lg:hidden">
-          {headerItems.map((item) => (
+          {headerItems.map((item, itemIdx) => (
             <Link
-              key={item.id}
+              key={`${itemIdx}-${item.label}`}
               href={item.href ?? '#'}
               target={item.openInNewTab ? '_blank' : undefined}
               rel={item.openInNewTab ? 'noopener noreferrer' : undefined}
@@ -699,9 +699,9 @@ export default function SiteHeaderClient({
                 Categories
               </p>
               <div className="flex flex-col gap-0.5">
-                {megamenuItems.map((cat) => (
+                {megamenuItems.map((cat, catIdx) => (
                   <Link
-                    key={cat.id}
+                    key={`${catIdx}-${cat.label}`}
                     href={cat.href ?? '#'}
                     className="text-ih-ink-2 hover:text-ih-accent flex items-center justify-between py-2 text-[13px]"
                     onClick={() => setMobileOpen(false)}

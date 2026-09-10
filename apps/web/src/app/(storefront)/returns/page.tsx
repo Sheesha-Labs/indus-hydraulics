@@ -8,6 +8,11 @@ import { urlFor } from '../../../lib/seo'
 
 export const metadata: Metadata = {
   title: 'Returns & RMA Policy',
+  // Self-canonical. Without it this page emitted no <link rel="canonical">
+  // at all, which leaves Google to pick one — and it can pick a filtered,
+  // parameterised or proxied variant instead.
+  alternates: { canonical: '/returns' },
+
   description:
     'Inspection windows, RMA process, restocking fees, and non-returnable items for industrial hydraulic products supplied by Indus Hydraulics.',
 }

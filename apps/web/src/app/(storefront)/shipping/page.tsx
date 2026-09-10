@@ -8,6 +8,11 @@ import { urlFor } from '../../../lib/seo'
 
 export const metadata: Metadata = {
   title: 'Shipping Policy',
+  // Self-canonical. Without it this page emitted no <link rel="canonical">
+  // at all, which leaves Google to pick one — and it can pick a filtered,
+  // parameterised or proxied variant instead.
+  alternates: { canonical: '/shipping' },
+
   description:
     'Lead times, Incoterms, documentation, and freight handling for orders shipped from our Dubai warehouse across the UAE, GCC, wider Middle East, and Africa.',
 }

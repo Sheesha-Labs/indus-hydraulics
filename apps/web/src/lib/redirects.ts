@@ -86,12 +86,30 @@ async function getMap(): Promise<Map<string, ResolvedRedirect>> {
 
 /** Find an active redirect for `path`, or null — the common case. */
 export async function findRedirect(
-  path: string | null | undefined,
+  path: string | null | undefined
 ): Promise<ResolvedRedirect | null> {
   if (!path || !path.startsWith('/')) return null
   const map = await getMap()
   if (map.size === 0) return null
   return map.get(normalisePath(path)) ?? null
+}
+
+/**
+ * Every path an active redirect moves.
+ *
+ * The sitemap uses this to refuse to submit a URL that answers 308. That
+ * happened: `/c/metallic-ptfe-hoses` was a published `Category` row AND a
+ * redirect source, so the sitemap advertised a URL that never returned a page.
+ * Search Console files those under "Page with redirect" and they consume a
+ * crawl to learn nothing — the destination is already in the sitemap on its
+ * own row.
+ *
+ * Same principle as `sitemapPathsBlockedByRobots` in lib/crawl-policy: the
+ * site must not tell Google two different things about one URL.
+ */
+export async function redirectSourcePaths(): Promise<Set<string>> {
+  const map = await getMap()
+  return new Set(map.keys())
 }
 
 /**
