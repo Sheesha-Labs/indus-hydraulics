@@ -46,6 +46,7 @@ export type SitemapSectionId =
   | 'services'
   | 'industries'
   | 'locations'
+  | 'markets'
   | 'replacement'
 
 export const SITEMAP_SECTION_IDS: readonly SitemapSectionId[] = [
@@ -57,6 +58,7 @@ export const SITEMAP_SECTION_IDS: readonly SitemapSectionId[] = [
   'services',
   'industries',
   'locations',
+  'markets',
   'replacement',
 ] as const
 
@@ -342,21 +344,43 @@ async function industriesSection(): Promise<MetadataRoute.Sitemap> {
   return [...dbEntries, ...designedEntries]
 }
 
-/** Service areas and export markets — both generated from static data. */
+/**
+ * On-site service areas. Sharjah, Dubai and the rest of the UAE footprint.
+ *
+ * THE EXPORT MARKETS USED TO BE IN HERE, AND THAT HID THE ONE NUMBER WORTH
+ * READING — 2026-09-10.
+ *
+ * This section carried 133 URLs, of which 126 were `/markets/<country>` and 7
+ * were real service areas. Search Console reports coverage per child sitemap,
+ * which is the entire reason the sitemap was split in the first place (see the
+ * header of this file) — but a section that is 95% one page type and 5%
+ * another answers no question at all.
+ *
+ * The market pages are the section most likely to be refused. They are
+ * programmatic: 126 pages built from one template, and a production
+ * measurement on 2026-09-10 found 1,248 eight-word phrases common to EVERY one
+ * of them, at 26% pairwise similarity — against 122 phrases and 13% for the
+ * product pages. They are also four times heavier than any other page type.
+ *
+ * Whether Google is rejecting THEM specifically, or rationing the whole host,
+ * is the difference between a content problem and a patience problem, and it
+ * decides what to do next. Split apart, Search Console answers it directly.
+ */
 function locationsSection(): MetadataRoute.Sitemap {
-  const serviceAreas: MetadataRoute.Sitemap = serviceAreasOrdered().map((a) => ({
+  return serviceAreasOrdered().map((a) => ({
     url: `${BASE_URL}/locations/${a.slug}`,
     changeFrequency: 'monthly' as const,
     priority: 0.7,
   }))
+}
 
-  const markets: MetadataRoute.Sitemap = marketsOrdered().map((m) => ({
+/** Export market pages — see the note on `locationsSection` for why separate. */
+function marketsSection(): MetadataRoute.Sitemap {
+  return marketsOrdered().map((m) => ({
     url: `${BASE_URL}/markets/${m.slug}`,
     changeFrequency: 'monthly' as const,
     priority: 0.7,
   }))
-
-  return [...serviceAreas, ...markets]
 }
 
 /**
@@ -464,6 +488,8 @@ async function sitemapSectionRaw(id: SitemapSectionId): Promise<MetadataRoute.Si
       return industriesSection()
     case 'locations':
       return locationsSection()
+    case 'markets':
+      return marketsSection()
     case 'replacement':
       return replacementSection()
   }

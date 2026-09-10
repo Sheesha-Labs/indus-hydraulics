@@ -1,4 +1,5 @@
 import type { MarketMapModel } from '../../lib/market-geometry'
+import { basemapUrl } from '../../lib/market-map-basemap'
 
 /**
  * The hero map panel — the page's signature, and the only thing on it that
@@ -24,18 +25,21 @@ export default function MarketMapPanel({
   model,
   countryName,
   lane,
+  slug,
 }: {
   model: MarketMapModel | null
   countryName: string
   lane: string
+  /** Names the cached basemap file this map layers its own geometry over. */
+  slug: string
 }) {
   return (
-    <figure className="m-0 overflow-hidden rounded-lg border border-ih-border bg-ih-surface">
-      <div className="flex items-center justify-between gap-4 border-b border-ih-border bg-ih-surface-2 px-4 py-[11px]">
-        <span className="mono text-[10px] uppercase tracking-[0.12em] text-ih-ink-2">
+    <figure className="border-ih-border bg-ih-surface m-0 overflow-hidden rounded-lg border">
+      <div className="border-ih-border bg-ih-surface-2 flex items-center justify-between gap-4 border-b px-4 py-[11px]">
+        <span className="mono text-ih-ink-2 text-[10px] uppercase tracking-[0.12em]">
           Fig. 01 · Export lane {lane}
         </span>
-        <span className="mono text-[10px] uppercase tracking-[0.12em] text-ih-muted">
+        <span className="mono text-ih-muted text-[10px] uppercase tracking-[0.12em]">
           Mercator · WGS 84
         </span>
       </div>
@@ -43,25 +47,34 @@ export default function MarketMapPanel({
       {model ? (
         <>
           <div className="px-0 pb-0.5 pt-1.5">
-            <MapSvg model={model} />
+            <MapSvg model={model} slug={slug} />
           </div>
-          <figcaption className="flex flex-wrap gap-x-[18px] gap-y-2 border-t border-ih-border px-4 py-3">
+          <figcaption className="border-ih-border flex flex-wrap gap-x-[18px] gap-y-2 border-t px-4 py-3">
             {model.origin && (
               <LegendItem>
-                <span aria-hidden="true" className="block h-2 w-2 bg-ih-navy" />
+                <span aria-hidden="true" className="bg-ih-navy block h-2 w-2" />
                 Origin · {model.originLabel}
               </LegendItem>
             )}
             <LegendItem>
-              <span aria-hidden="true" className="block h-2 w-2 rotate-45 border-[1.4px] border-ih-ink" />
+              <span
+                aria-hidden="true"
+                className="border-ih-ink block h-2 w-2 rotate-45 border-[1.4px]"
+              />
               {model.crossingLegend}
             </LegendItem>
             <LegendItem>
-              <span aria-hidden="true" className="block h-[7px] w-[7px] rounded-full bg-ih-accent" />
+              <span
+                aria-hidden="true"
+                className="bg-ih-accent block h-[7px] w-[7px] rounded-full"
+              />
               Delivery city
             </LegendItem>
             <LegendItem>
-              <span aria-hidden="true" className="block h-0 w-4 border-t-[1.8px] border-dashed border-ih-accent" />
+              <span
+                aria-hidden="true"
+                className="border-ih-accent block h-0 w-4 border-t-[1.8px] border-dashed"
+              />
               {/* When the origin marker is off-frame the legend has to say
                   where the corridor comes from — otherwise the dashed line
                   enters from the edge of the frame unexplained. */}
@@ -77,8 +90,8 @@ export default function MarketMapPanel({
           reader sees a deliberate gap, not an empty frame, and every fact the
           map would have carried is already in the manifest strip above.
         */
-        <div className="grid aspect-[664/524] place-items-center bg-ih-surface-2">
-          <span className="mono px-6 text-center text-[10.5px] uppercase tracking-[0.1em] text-ih-muted-2">
+        <div className="bg-ih-surface-2 grid aspect-[664/524] place-items-center">
+          <span className="mono text-ih-muted-2 px-6 text-center text-[10.5px] uppercase tracking-[0.1em]">
             {countryName} — lane map unavailable
           </span>
         </div>
@@ -89,13 +102,13 @@ export default function MarketMapPanel({
 
 function LegendItem({ children }: { children: React.ReactNode }) {
   return (
-    <span className="mono flex items-center gap-[7px] text-[9.5px] uppercase tracking-[0.08em] text-ih-muted">
+    <span className="mono text-ih-muted flex items-center gap-[7px] text-[9.5px] uppercase tracking-[0.08em]">
       {children}
     </span>
   )
 }
 
-function MapSvg({ model }: { model: MarketMapModel }) {
+function MapSvg({ model, slug }: { model: MarketMapModel; slug: string }) {
   const { width: w, height: h, pad, uid } = model
   const hatchId = `mk-hatch-${uid}`
   const clipId = `mk-clip-${uid}`
@@ -118,7 +131,15 @@ function MapSvg({ model }: { model: MarketMapModel }) {
           patternTransform="rotate(38)"
           patternUnits="userSpaceOnUse"
         >
-          <line x1="0" y1="0" x2="0" y2="7" stroke="var(--color-ih-steel)" strokeWidth="1" opacity="0.4" />
+          <line
+            x1="0"
+            y1="0"
+            x2="0"
+            y2="7"
+            stroke="var(--color-ih-steel)"
+            strokeWidth="1"
+            opacity="0.4"
+          />
         </pattern>
         <clipPath id={clipId}>
           <rect x={pad} y={pad} width={w - pad * 2} height={h - pad * 2} />
@@ -137,26 +158,16 @@ function MapSvg({ model }: { model: MarketMapModel }) {
       </defs>
 
       <g clipPath={`url(#${clipId})`}>
-        {model.graticule && (
-          <path
-            d={model.graticule}
-            fill="none"
-            stroke="var(--color-ih-border)"
-            strokeWidth="1"
-            strokeDasharray="1 4"
-          />
-        )}
+        {/* The graticule and the neighbouring countries, as ONE cached file
+            rather than ~40 KB of gzipped path data inlined into all 126 market
+            pages. Same viewBox, placed at the origin at full size, so every
+            coordinate still agrees with the geometry below.
 
-        {model.neighbours.map((d, i) => (
-          <path
-            key={i}
-            d={d}
-            fill="var(--color-ih-surface-2)"
-            stroke="var(--color-ih-border-strong)"
-            strokeWidth="0.9"
-            strokeOpacity="0.8"
-          />
-        ))}
+            It sits exactly where those elements used to: beneath the neighbour
+            labels and the target country, so paint order is unchanged. See
+            lib/market-map-basemap for the whole argument, including why
+            nothing drawn after the first label may join it. */}
+        <image href={basemapUrl(slug)} x="0" y="0" width={w} height={h} />
 
         {model.neighbourLabels.map((label) => (
           <text
@@ -193,8 +204,18 @@ function MapSvg({ model }: { model: MarketMapModel }) {
         <use href={`#${targetId}`} fill={`url(#${hatchId})`} stroke="none" />
         <g fill="none" stroke="var(--color-ih-ink)">
           <use href={`#${targetId}`} strokeWidth="2.6" strokeOpacity="0.9" />
-          <use href={`#${targetId}`} strokeWidth="1.1" strokeOpacity="0.5" transform="translate(2.5,3)" />
-          <use href={`#${targetId}`} strokeWidth="0.8" strokeOpacity="0.28" transform="translate(-2,-2.5)" />
+          <use
+            href={`#${targetId}`}
+            strokeWidth="1.1"
+            strokeOpacity="0.5"
+            transform="translate(2.5,3)"
+          />
+          <use
+            href={`#${targetId}`}
+            strokeWidth="0.8"
+            strokeOpacity="0.28"
+            transform="translate(-2,-2.5)"
+          />
         </g>
 
         {/* Each route twice: a white casing so the line reads over land, then
@@ -202,7 +223,13 @@ function MapSvg({ model }: { model: MarketMapModel }) {
             crosses a neighbour's fill. */}
         {model.routes.map((route, i) => (
           <g key={i}>
-            <path d={route.d} fill="none" stroke="#fff" strokeWidth={route.primary ? 6 : 4.5} strokeOpacity="0.85" />
+            <path
+              d={route.d}
+              fill="none"
+              stroke="#fff"
+              strokeWidth={route.primary ? 6 : 4.5}
+              strokeOpacity="0.85"
+            />
             <path
               d={route.d}
               fill="none"
@@ -225,20 +252,44 @@ function MapSvg({ model }: { model: MarketMapModel }) {
             stroke="var(--color-ih-ink)"
             strokeWidth="1.4"
           />
-          <HaloText label={model.crossing.label} fontSize={8.5} tracking="0.1em" fill="var(--color-ih-ink-2)" />
+          <HaloText
+            label={model.crossing.label}
+            fontSize={8.5}
+            tracking="0.1em"
+            fill="var(--color-ih-ink-2)"
+          />
         </g>
 
         {model.cities.map((city) => (
           <g key={city.label.text}>
             <circle cx={city.x} cy={city.y} r="7.5" fill="var(--color-ih-accent)" opacity="0.12" />
-            <circle cx={city.x} cy={city.y} r="2.8" fill="var(--color-ih-accent)" stroke="#fff" strokeWidth="1.1" />
-            <HaloText label={city.label} fontSize={9.5} tracking="0.05em" fill="var(--color-ih-ink)" halo={3.2} />
+            <circle
+              cx={city.x}
+              cy={city.y}
+              r="2.8"
+              fill="var(--color-ih-accent)"
+              stroke="#fff"
+              strokeWidth="1.1"
+            />
+            <HaloText
+              label={city.label}
+              fontSize={9.5}
+              tracking="0.05em"
+              fill="var(--color-ih-ink)"
+              halo={3.2}
+            />
           </g>
         ))}
 
         {model.origin && (
           <g>
-            <rect x={model.origin.x - 5} y={model.origin.y - 5} width="10" height="10" fill="var(--color-ih-navy)" />
+            <rect
+              x={model.origin.x - 5}
+              y={model.origin.y - 5}
+              width="10"
+              height="10"
+              fill="var(--color-ih-navy)"
+            />
             <rect
               x={model.origin.x - 8.5}
               y={model.origin.y - 8.5}
@@ -249,7 +300,13 @@ function MapSvg({ model }: { model: MarketMapModel }) {
               strokeWidth="1"
               strokeOpacity="0.45"
             />
-            <HaloText label={model.origin.label} fontSize={9} tracking="0.09em" fill="var(--color-ih-navy)" halo={3.2} />
+            <HaloText
+              label={model.origin.label}
+              fontSize={9}
+              tracking="0.09em"
+              fill="var(--color-ih-navy)"
+              halo={3.2}
+            />
           </g>
         )}
       </g>
@@ -280,32 +337,87 @@ function MapSvg({ model }: { model: MarketMapModel }) {
 
       {model.lonTicks.map((tick) => (
         <g key={`lon-${tick.text}-${Math.round(tick.x)}`}>
-          <line x1={tick.x} y1={h - pad} x2={tick.x} y2={h - pad + 5} stroke="var(--color-ih-border-strong)" strokeWidth="1" />
-          <text className="mono" x={tick.x} y={h - pad + 17} textAnchor="middle" fontSize="8" fill="var(--color-ih-muted-2)">
+          <line
+            x1={tick.x}
+            y1={h - pad}
+            x2={tick.x}
+            y2={h - pad + 5}
+            stroke="var(--color-ih-border-strong)"
+            strokeWidth="1"
+          />
+          <text
+            className="mono"
+            x={tick.x}
+            y={h - pad + 17}
+            textAnchor="middle"
+            fontSize="8"
+            fill="var(--color-ih-muted-2)"
+          >
             {tick.text}
           </text>
         </g>
       ))}
       {model.latTicks.map((tick) => (
         <g key={`lat-${tick.text}-${Math.round(tick.y)}`}>
-          <line x1={pad - 5} y1={tick.y} x2={pad} y2={tick.y} stroke="var(--color-ih-border-strong)" strokeWidth="1" />
-          <text className="mono" x={pad - 9} y={tick.y + 3} textAnchor="end" fontSize="8" fill="var(--color-ih-muted-2)">
+          <line
+            x1={pad - 5}
+            y1={tick.y}
+            x2={pad}
+            y2={tick.y}
+            stroke="var(--color-ih-border-strong)"
+            strokeWidth="1"
+          />
+          <text
+            className="mono"
+            x={pad - 9}
+            y={tick.y + 3}
+            textAnchor="end"
+            fontSize="8"
+            fill="var(--color-ih-muted-2)"
+          >
             {tick.text}
           </text>
         </g>
       ))}
 
       <g transform={`translate(${w - pad - 20},${pad + 16})`}>
-        <path d="M0 14 L0 -6 M-4 -1 L0 -7 L4 -1" fill="none" stroke="var(--color-ih-ink-2)" strokeWidth="1.2" />
-        <text className="mono" x="0" y="26" textAnchor="middle" fontSize="8.5" letterSpacing="0.1em" fill="var(--color-ih-ink-2)">
+        <path
+          d="M0 14 L0 -6 M-4 -1 L0 -7 L4 -1"
+          fill="none"
+          stroke="var(--color-ih-ink-2)"
+          strokeWidth="1.2"
+        />
+        <text
+          className="mono"
+          x="0"
+          y="26"
+          textAnchor="middle"
+          fontSize="8.5"
+          letterSpacing="0.1em"
+          fill="var(--color-ih-ink-2)"
+        >
           N
         </text>
       </g>
 
       <g transform={`translate(${pad + 12},${h - pad - 16})`}>
-        <line x1="0" y1="0" x2={model.scaleBar.px} y2="0" stroke="var(--color-ih-ink-2)" strokeWidth="1.4" />
+        <line
+          x1="0"
+          y1="0"
+          x2={model.scaleBar.px}
+          y2="0"
+          stroke="var(--color-ih-ink-2)"
+          strokeWidth="1.4"
+        />
         <line x1="0" y1="-3.5" x2="0" y2="3.5" stroke="var(--color-ih-ink-2)" strokeWidth="1.4" />
-        <line x1={model.scaleBar.px} y1="-3.5" x2={model.scaleBar.px} y2="3.5" stroke="var(--color-ih-ink-2)" strokeWidth="1.4" />
+        <line
+          x1={model.scaleBar.px}
+          y1="-3.5"
+          x2={model.scaleBar.px}
+          y2="3.5"
+          stroke="var(--color-ih-ink-2)"
+          strokeWidth="1.4"
+        />
         <text
           className="mono"
           x={model.scaleBar.px / 2}
