@@ -6,7 +6,13 @@ import { db } from '@indus/db'
 import { interpolate, str } from '@indus/domain'
 import { getMasterPageContent } from '../../../lib/page-content'
 
-export const metadata: Metadata = { title: 'Brands' }
+export const metadata: Metadata = {
+  title: 'Brands',
+  // Self-canonical. Without it this page emitted no <link rel="canonical">
+  // at all, which leaves Google to pick one — and it can pick a filtered,
+  // parameterised or proxied variant instead.
+  alternates: { canonical: '/brands' },
+}
 
 // Brand list is admin-curated and changes rarely; cache for 5 minutes.
 export const revalidate = 300
