@@ -11,6 +11,8 @@ import {
 import { BASE_URL } from './seo'
 import { getReplacementBrands, getReplacementSitemapKeys } from './replacement-data'
 import { STATIC_SITEMAP_PATHS } from './crawl-policy'
+import { redirectSourcePaths } from './redirects'
+import { staticRedirectSources } from './static-redirects'
 
 /**
  * The sitemap, split by section.
@@ -93,7 +95,7 @@ async function pagesSection(): Promise<MetadataRoute.Sitemap> {
       robotsIndex: p.robotsIndex,
       sitemapPriority: p.sitemapPriority ? Number(p.sitemapPriority) : null,
       sitemapChangeFreq: p.sitemapChangeFreq,
-    })),
+    }))
   )
 
   return [...buildStaticEntries(BASE_URL, STATIC_SITEMAP_PATHS), ...cmsEntries]
@@ -123,7 +125,7 @@ async function productsSection(): Promise<MetadataRoute.Sitemap> {
       robotsIndex: p.robotsIndex,
       sitemapPriority: p.sitemapPriority ? Number(p.sitemapPriority) : null,
       sitemapChangeFreq: p.sitemapChangeFreq,
-    })),
+    }))
   )
 }
 
@@ -170,7 +172,7 @@ async function categoriesSection(): Promise<MetadataRoute.Sitemap> {
       robotsIndex: c.robotsIndex,
       sitemapPriority: c.sitemapPriority ? Number(c.sitemapPriority) : null,
       sitemapChangeFreq: c.sitemapChangeFreq,
-    })),
+    }))
   )
 }
 
@@ -197,7 +199,7 @@ async function brandsSection(): Promise<MetadataRoute.Sitemap> {
       robotsIndex: b.robotsIndex,
       sitemapPriority: b.sitemapPriority ? Number(b.sitemapPriority) : null,
       sitemapChangeFreq: b.sitemapChangeFreq,
-    })),
+    }))
   )
 }
 
@@ -252,7 +254,7 @@ async function blogSection(): Promise<MetadataRoute.Sitemap> {
       robotsIndex: p.robotsIndex,
       sitemapPriority: p.sitemapPriority ? Number(p.sitemapPriority) : null,
       sitemapChangeFreq: p.sitemapChangeFreq,
-    })),
+    }))
   )
 
   // Category hubs carry a higher default priority than individual articles:
@@ -385,10 +387,7 @@ function locationsSection(): MetadataRoute.Sitemap {
  * to be revisited by hand when the catalogue grows.
  */
 async function replacementSection(): Promise<MetadataRoute.Sitemap> {
-  const [keys, brands] = await Promise.all([
-    getReplacementSitemapKeys(),
-    getReplacementBrands(),
-  ])
+  const [keys, brands] = await Promise.all([getReplacementSitemapKeys(), getReplacementBrands()])
 
   const brandEntries: MetadataRoute.Sitemap = brands.map((b) => ({
     url: `${BASE_URL}/replacement/${b.brandSlug}`,
@@ -407,8 +406,47 @@ async function replacementSection(): Promise<MetadataRoute.Sitemap> {
   return [...brandEntries, ...partEntries]
 }
 
+/**
+ * Drop any entry whose URL an active redirect moves.
+ *
+ * A sitemap row for a redirecting URL is a contradiction in the same family as
+ * a sitemap row for a robots-disallowed one, and it is not hypothetical: a
+ * production sweep of all 2,049 submitted URLs on 2026-09-10 found
+ * `/c/metallic-ptfe-hoses` answering 308. Its `Category` row is published on
+ * purpose — the redirect's own comment says the slug stays "so direct links
+ * don't 404" — and a published category is a sitemap entry.
+ *
+ * BOTH redirect sources are consulted, because the site has two and they fail
+ * differently. The `redirects` table is edited from the SEO console by people
+ * who cannot be expected to also unpublish the matching entity. The static
+ * list ships in `next.config.ts`, where until now nothing else could read it —
+ * which is precisely why this one went unnoticed from the day the sitemap was
+ * first submitted.
+ */
+async function withoutRedirected(entries: MetadataRoute.Sitemap): Promise<MetadataRoute.Sitemap> {
+  const sources = staticRedirectSources()
+  for (const p of await redirectSourcePaths()) sources.add(p)
+  if (sources.size === 0) return entries
+  return entries.filter((e) => {
+    try {
+      return !sources.has(normaliseSitemapPath(new URL(e.url).pathname))
+    } catch {
+      return true
+    }
+  })
+}
+
+/** Trailing slashes are not significant, matching `redirects.normalisePath`. */
+function normaliseSitemapPath(path: string): string {
+  return path.length > 1 && path.endsWith('/') ? path.slice(0, -1) : path
+}
+
 /** Entries for one section. */
 export async function sitemapSection(id: SitemapSectionId): Promise<MetadataRoute.Sitemap> {
+  return withoutRedirected(await sitemapSectionRaw(id))
+}
+
+async function sitemapSectionRaw(id: SitemapSectionId): Promise<MetadataRoute.Sitemap> {
   switch (id) {
     case 'pages':
       return pagesSection()
