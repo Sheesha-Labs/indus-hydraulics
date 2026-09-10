@@ -109,7 +109,8 @@ describe('toNavChromeItems', () => {
   })
 
   it('drops the ten fields no client component reads', () => {
-    const [item] = toNavChromeItems([resolved()])
+    const item = toNavChromeItems([resolved()])[0]
+    expect(item).toBeDefined()
     for (const dropped of [
       'id',
       'parentId',
@@ -156,11 +157,12 @@ describe('toNavChromeItems', () => {
 
   it('carries promo fields only when asked, and never into children', () => {
     const tree = resolved({ children: [resolved({ label: 'Sub' })] })
-    const [item] = toNavChromeItems([tree], { withPromo: true })
-    expect(item.promoHeading).toBe('Promo')
+    const item = toNavChromeItems([tree], { withPromo: true })[0]
+    expect(item).toBeDefined()
+    expect(item?.promoHeading).toBe('Promo')
     // The promo panel belongs to a top-level header item. Carrying these four
     // fields into 316 megamenu descendants is what this function prevents.
-    expect(item.children?.[0]).not.toHaveProperty('promoHeading')
+    expect(item?.children?.[0]).not.toHaveProperty('promoHeading')
   })
 
   it('is materially smaller than the resolved tree once serialised', () => {
