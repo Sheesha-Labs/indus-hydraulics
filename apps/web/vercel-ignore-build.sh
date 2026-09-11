@@ -16,6 +16,18 @@
 # makes ~1,790 of 2,070 URLs cold again. See docs/deployment-budget.md.
 set -euo pipefail
 
+# Vercel runs the Ignored Build Step from the project's Root Directory, which
+# for this project is `apps/web` — that is where its vercel.json lives.
+#
+# Rule 2 compares paths across the WHOLE repository, so resolve to the repo root
+# before doing anything. Without this, `.` in the pathspec below means
+# `apps/web`, and a commit touching only `packages/domain` or `packages/db`
+# shows no changes at all — which this script would read as "documentation
+# only" and skip a production deploy that ships real code. That failure is
+# silent: the check passes, the merge goes green, and the change simply never
+# reaches the site.
+cd "$(git rev-parse --show-toplevel)"
+
 # ── Rule 1: previews are opt-in ──────────────────────────────────────────────
 # Put [preview] in the commit message when a change wants a preview URL.
 if [ "${VERCEL_ENV:-}" != "production" ]; then
@@ -38,7 +50,7 @@ if ! git rev-parse --verify --quiet HEAD^ >/dev/null; then
   exit 1
 fi
 
-if git diff --quiet HEAD^ HEAD -- . ':(exclude)docs/**' ':(exclude)*.md' ':(exclude)**/*.md'; then
+if git diff --quiet HEAD^ HEAD -- . ':(exclude)docs/' ':(exclude)*.md' ':(exclude)**/*.md'; then
   echo "production: documentation only — skipping"
   exit 0
 fi

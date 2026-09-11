@@ -41,6 +41,23 @@ The second rule is deliberately narrow. A wrong answer there ships nothing, and
 never arrived. Test-only commits could safely join the list; they are left out
 until someone wants them.
 
+> **This was documentation-only until 2026-09-11.** PR #417 added the script
+> with both rules and, in the same commit, an inline `ignoreCommand` in
+> `vercel.json` that reimplemented only the first. The config never referenced
+> the script, so rule 2 never ran once while this file described it as active.
+> Nothing catches that kind of drift — the inline command worked, builds
+> happened, deployments succeeded, and the only symptom was a bill nobody
+> attributed to the right cause. `vercel-ignore-build.test.ts` now asserts the
+> config invokes the script rather than reimplementing it.
+>
+> Wiring it up also exposed a hazard in the script. Vercel runs the Ignored
+> Build Step from the project's **Root Directory**, which here is `apps/web`.
+> Rule 2 diffs the whole repository, so the script resolves to the repo root
+> first — without that, `.` means `apps/web`, a commit touching only
+> `packages/domain` or `packages/db` shows no changes at all, and the script
+> reads it as documentation-only and skips a production deploy carrying real
+> code. Silently: the check passes and the merge goes green.
+
 Measured over the 30 days to 2026-08-26: **547 deployments and 2,449 build
 minutes against 257 commits** — a preview build per push plus a production build
 per merge.
