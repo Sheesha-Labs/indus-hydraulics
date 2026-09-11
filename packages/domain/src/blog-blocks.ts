@@ -350,6 +350,101 @@ export const ProseBlockSchema = z.object({
 })
 export type ProseBlock = z.infer<typeof ProseBlockSchema>
 
+// ── Block: diagram ────────────────────────────────────────────────────────
+// An explanatory figure carried as inline SVG rather than as a raster image.
+//
+// WHY NOT `figure`
+//
+// `figure` is for photographs: it resolves a Media id, renders through
+// next/image with `object-cover` inside a fixed aspect box, and crops to fill.
+// All three behaviours are right for a photograph of a crimped hose and wrong
+// for a chart — a cropped axis is a wrong chart, and a diagram has whatever
+// aspect ratio its content needs.
+//
+// WHY INLINE SVG RATHER THAN AN UPLOADED IMAGE
+//
+// The same argument `comparison_table` already makes one screen up. A diagram
+// exported as a PNG is an opaque rectangle: its axis labels, its data values
+// and its annotations are pixels, and an answer engine cannot quote any of
+// them. The identical diagram as inline SVG has every label as real text in
+// the document — selectable, searchable, translatable, readable by a screen
+// reader, and extractable by a model summarising the page. For a programme
+// whose entire purpose is to be cited, that difference is the whole point.
+//
+// SECURITY
+//
+// `svg` is markup injected with `dangerouslySetInnerHTML`, so it is untrusted
+// exactly as `prose` is untrusted: an import script or a hand-edited row can
+// put anything in this column. `sanitizeDiagramSvg` in apps/web is the actual
+// boundary — a tag and attribute allow-list that drops `script`, `foreignObject`,
+// `image`, `use`, every animation element and every `on*` handler. This schema
+// only bounds the size and checks the fragment is an `<svg>` at all.
+export const DiagramBlockSchema = z.object({
+  type: z.literal('diagram'),
+  /** Inline SVG markup. Sanitised against an allow-list before render. */
+  svg: z
+    .string()
+    .trim()
+    .min(1)
+    .max(60000)
+    .refine((v) => v.startsWith('<svg'), { message: 'must be an <svg> fragment' }),
+  /** Caption under the figure, matching the `figure` block's convention. */
+  caption: NonEmpty(500),
+  /** Leading bold prefix, e.g. "FIG. 01". */
+  captionPrefix: OptionalText(20),
+  /**
+   * Text alternative describing what the diagram shows.
+   *
+   * Required, not optional. A chart is the one block type where the visual IS
+   * the argument, so a missing alt is not a degraded experience — it is the
+   * argument withheld. The caption says why the figure is here; this says what
+   * is in it, and the two are not interchangeable.
+   */
+  alt: NonEmpty(1200),
+})
+export type DiagramBlock = z.infer<typeof DiagramBlockSchema>
+
+// ── Block: references ─────────────────────────────────────────────────────
+// A numbered bibliography, distinct from `standard_citation`.
+//
+// `standard_citation` is a structured reference to ONE published standard,
+// rendered inline where the argument relies on it — publisher, clause, edition,
+// and what it says in our words. It is deliberately heavyweight and there are
+// rarely more than two in an article.
+//
+// This is the other thing: the closing reference list of a piece that argues
+// from the literature. Twenty entries, each cited in the body by author and
+// year, none of them a standard. Forcing those through `standard_citation`
+// would demand a publisher and a clause for a journal paper and render twenty
+// full-width cards where a list is wanted.
+//
+// `id` is the anchor a body reference links to, so "(Bainbridge, 1983)" in a
+// prose block can be an actual link to the entry rather than a cue to scroll.
+export const ReferencesBlockSchema = z.object({
+  type: z.literal('references'),
+  heading: OptionalText(120),
+  entries: z
+    .array(
+      z.object({
+        /** Stable anchor slug, e.g. "bainbridge-1983". Unique within the block. */
+        id: Slug(80),
+        /** The full reference, already formatted in the article's citation style. */
+        text: NonEmpty(600),
+        /** DOI or landing page. */
+        url: OptionalText(800),
+      })
+    )
+    .min(1)
+    .max(80),
+})
+  .refine(
+    (block) => new Set(block.entries.map((e) => e.id)).size === block.entries.length,
+    // Duplicate ids mean two entries answer to the same anchor, so half the
+    // in-text citations silently jump to the wrong reference.
+    { message: 'entry ids must be unique within a references block', path: ['entries'] }
+  )
+export type ReferencesBlock = z.infer<typeof ReferencesBlockSchema>
+
 // ── Discriminated union ───────────────────────────────────────────────────
 
 export const BlogBlockSchema = z.discriminatedUnion('type', [
@@ -382,6 +477,8 @@ export const BlogBlockSchema = z.discriminatedUnion('type', [
   DownloadBlockSchema,
   CtaBlockSchema,
   AsOfStampBlockSchema,
+  DiagramBlockSchema,
+  ReferencesBlockSchema,
 ])
 export type BlogBlock = z.infer<typeof BlogBlockSchema>
 
@@ -611,6 +708,14 @@ export function estimateReadingMinutes(blocks: BlogBlocks): number {
       case 'pull_quote':
         count(block.quote)
         break
+      case 'diagram':
+        // The caption is read; the SVG is looked at. Counting the markup would
+        // add several hundred "words" of path data to the estimate.
+        count(block.caption)
+        break
+      // `references` is deliberately absent. A reader scans a bibliography or
+      // skips it; charging them ninety seconds for twenty entries overstates
+      // every article that argues from the literature.
       default:
         break
     }

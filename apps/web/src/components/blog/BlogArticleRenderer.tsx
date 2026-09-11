@@ -21,6 +21,7 @@ import CategoryLinkBlockView from './blocks/CategoryLinkBlock'
 import ComparisonTableBlockView from './blocks/ComparisonTableBlock'
 import CtaBlockView, { type ArticleContact } from './blocks/CtaBlock'
 import DecisionTreeBlockView from './blocks/DecisionTreeBlock'
+import DiagramBlockView from './blocks/DiagramBlock'
 import DirectAnswerBlockView from './blocks/DirectAnswerBlock'
 import DownloadBlockView from './blocks/DownloadBlock'
 import FaqBlockView from './blocks/FaqBlock'
@@ -29,6 +30,7 @@ import MarketReachBlockView from './blocks/MarketReachBlock'
 import PageLinkBlockView from './blocks/PageLinkBlock'
 import ProductEmbedBlockView from './blocks/ProductEmbedBlock'
 import ProseBlockView from './blocks/ProseBlock'
+import ReferencesBlockView from './blocks/ReferencesBlock'
 import RelatedArticlesBlockView from './blocks/RelatedArticlesBlock'
 import StandardCitationBlockView from './blocks/StandardCitationBlock'
 
@@ -140,6 +142,10 @@ function BlockSwitch({
       return <CtaBlockView block={block} contact={contact} />
     case 'as_of_stamp':
       return <AsOfStampBlockView block={block} />
+    case 'diagram':
+      return <DiagramBlockView block={block} />
+    case 'references':
+      return <ReferencesBlockView block={block} />
 
     default: {
       // Exhaustiveness check — a new block type without a renderer is a

@@ -882,6 +882,81 @@ const FORMS: BlockFormSpec[] = [
     ],
     template: () => ({ type: 'as_of_stamp', verifiedOn: '' }) as BlogBlockInput,
   },
+  {
+    type: 'diagram',
+    label: 'Diagram',
+    purpose:
+      'A chart or schematic as inline SVG. Unlike a figure, which is a photograph resolved from the media library and cropped to fill, this keeps every label as real text — so a reader can select it, a screen reader can reach it, and an answer engine can quote it.',
+    fields: [
+      {
+        kind: 'textarea',
+        key: 'svg',
+        label: 'SVG markup',
+        required: true,
+        mono: true,
+        rows: 10,
+        hint: 'Must start with <svg and carry a viewBox. Scripts, foreignObject, use, image and event handlers are stripped before render.',
+        placeholder: '<svg viewBox="0 0 760 400">…</svg>',
+      },
+      {
+        kind: 'textarea',
+        key: 'alt',
+        label: 'Text alternative',
+        required: true,
+        rows: 3,
+        hint: 'What the diagram SHOWS. Required, because in a chart the visual carries the argument — the caption says why it is here, which is a different thing.',
+      },
+      { kind: 'text', key: 'caption', label: 'Caption', required: true },
+      {
+        kind: 'text',
+        key: 'captionPrefix',
+        label: 'Caption prefix',
+        mono: true,
+        placeholder: 'FIG. 01',
+      },
+    ],
+    template: () =>
+      ({ type: 'diagram', svg: '<svg viewBox="0 0 760 400"></svg>', caption: '', alt: '' }) as BlogBlockInput,
+  },
+  {
+    type: 'references',
+    label: 'References',
+    purpose:
+      'A numbered bibliography closing an article that argues from the literature. Distinct from a standard citation, which is one structured reference to one published standard, rendered inline where the argument leans on it.',
+    fields: [
+      { kind: 'text', key: 'heading', label: 'Heading', placeholder: 'References' },
+      {
+        kind: 'rows',
+        key: 'entries',
+        label: 'Entries',
+        itemLabel: 'Reference',
+        min: 1,
+        max: 80,
+        fields: [
+          {
+            kind: 'text',
+            key: 'id',
+            label: 'Anchor',
+            required: true,
+            mono: true,
+            placeholder: 'bainbridge-1983',
+            hint: 'Kebab-case, unique in this block. A citation in the body links to it.',
+          },
+          {
+            kind: 'textarea',
+            key: 'text',
+            label: 'Reference',
+            required: true,
+            rows: 3,
+            hint: 'Already formatted in the article\u2019s citation style.',
+          },
+          { kind: 'text', key: 'url', label: 'DOI or link' },
+        ],
+      },
+    ],
+    template: () =>
+      ({ type: 'references', entries: [{ id: '', text: '' }] }) as BlogBlockInput,
+  },
 ]
 
 export const BLOCK_FORMS: ReadonlyArray<BlockFormSpec> = FORMS

@@ -414,3 +414,78 @@ describe('market_reach', () => {
     expect(estimateReadingMinutes(blocks)).toBe(estimateReadingMinutes([]))
   })
 })
+
+describe('diagram block', () => {
+  const diagram = {
+    type: 'diagram',
+    svg: '<svg viewBox="0 0 100 50"><text x="4" y="20">350 bar</text></svg>',
+    caption: 'Working pressure against hose grade.',
+    captionPrefix: 'FIG. 01',
+    alt: 'A bar chart comparing working pressure across four hose grades.',
+  }
+
+  it('accepts a well-formed block', () => {
+    expect(BlogBlockSchema.safeParse(diagram).success).toBe(true)
+  })
+
+  /**
+   * A chart is the one block where the visual carries the argument, so a
+   * missing alt withholds the argument rather than degrading it.
+   */
+  it('requires alt text', () => {
+    const { alt: _alt, ...noAlt } = diagram
+    expect(BlogBlockSchema.safeParse(noAlt).success).toBe(false)
+  })
+
+  it('rejects a fragment that is not an svg, so a pasted <img> fails here', () => {
+    const bad = { ...diagram, svg: '<img src="chart.png">' }
+    expect(BlogBlockSchema.safeParse(bad).success).toBe(false)
+  })
+
+  it('counts the caption but not the markup toward reading time', () => {
+    const blocks = parseBlogBlocks([diagram]).blocks
+    // Path and coordinate data would otherwise read as several hundred words.
+    expect(estimateReadingMinutes(blocks)).toBe(1)
+  })
+})
+
+describe('references block', () => {
+  const references = {
+    type: 'references',
+    entries: [
+      {
+        id: 'bainbridge-1983',
+        text: "Bainbridge, L. (1983) 'Ironies of automation', Automatica, 19(6), pp. 775-779.",
+        url: 'https://doi.org/10.1016/0005-1098(83)90046-8',
+      },
+      { id: 'polanyi-1966', text: 'Polanyi, M. (1966) The Tacit Dimension. New York: Doubleday.' },
+    ],
+  }
+
+  it('accepts a well-formed block', () => {
+    expect(BlogBlockSchema.safeParse(references).success).toBe(true)
+  })
+
+  /**
+   * Two entries answering to one anchor means half the in-text citations jump
+   * to the wrong reference — wrong in a way nobody notices until a reader
+   * checks a source and finds a different paper.
+   */
+  it('rejects duplicate entry ids', () => {
+    const bad = {
+      ...references,
+      entries: [references.entries[0], { ...references.entries[1], id: 'bainbridge-1983' }],
+    }
+    expect(BlogBlockSchema.safeParse(bad).success).toBe(false)
+  })
+
+  it('rejects an id that is not kebab-case, so anchors stay URL-safe', () => {
+    const bad = { ...references, entries: [{ ...references.entries[0], id: 'Bainbridge 1983' }] }
+    expect(BlogBlockSchema.safeParse(bad).success).toBe(false)
+  })
+
+  it('is not counted as reading time — a bibliography is scanned, not read', () => {
+    const blocks = parseBlogBlocks([references]).blocks
+    expect(estimateReadingMinutes(blocks)).toBe(estimateReadingMinutes([]))
+  })
+})
