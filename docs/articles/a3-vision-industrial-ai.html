@@ -1,0 +1,350 @@
+<title>Vision and Industrial AI</title>
+<style>
+:root{
+  --ink:#14171a; --body:#2b3138; --muted:#5d6873; --faint:#8b95a1;
+  --rule:#e2e6ea; --rule-soft:#eef1f4; --bg:#fdfdfc; --panel:#f6f7f8;
+  --accent:#8a4b2a; --accent-soft:#f3e9e3; --good:#2f6b4f; --warn:#8a6d1f; --bad:#8f3232;
+  --mono:'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,monospace;
+  --sans:'Geist',-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
+  --serif:'Instrument Serif',Georgia,'Times New Roman',serif;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--body);font-family:var(--sans);
+  font-size:17px;line-height:1.68;-webkit-font-smoothing:antialiased}
+.wrap{max-width:760px;margin:0 auto;padding:64px 24px 120px}
+.eyebrow{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--accent);margin:0 0 20px}
+h1{font-family:var(--serif);font-weight:400;font-size:46px;line-height:1.12;color:var(--ink);
+  margin:0 0 22px;letter-spacing:-.01em}
+h2{font-family:var(--serif);font-weight:400;font-size:30px;line-height:1.2;color:var(--ink);
+  margin:64px 0 16px;letter-spacing:-.005em}
+h3{font-size:18px;font-weight:640;color:var(--ink);margin:38px 0 10px;letter-spacing:-.002em}
+p{margin:0 0 20px}
+a{color:var(--accent);text-decoration:underline;text-underline-offset:2px;text-decoration-thickness:.5px}
+.standfirst{font-size:20px;line-height:1.55;color:var(--muted);margin:0 0 32px}
+.byline{font-family:var(--mono);font-size:11.5px;letter-spacing:.04em;color:var(--faint);
+  border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);padding:14px 0;margin:0 0 48px}
+.byline strong{color:var(--body);font-weight:500}
+.abstract{background:var(--panel);border-left:2px solid var(--accent);padding:22px 26px;margin:0 0 40px}
+.abstract p{margin:0;font-size:16px;line-height:1.62}
+.abstract .lbl{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--accent);display:block;margin-bottom:9px}
+.snippet{border:1px solid var(--rule);border-radius:6px;padding:20px 22px;margin:30px 0;background:#fff}
+.snippet .lbl{font-family:var(--mono);font-size:10px;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--faint);display:block;margin-bottom:8px}
+.snippet h4{margin:0 0 8px;font-size:16px;font-weight:640;color:var(--ink)}
+.snippet p{margin:0 0 12px;font-size:15.5px;line-height:1.6;color:var(--muted)}
+.snippet p:last-child{margin:0}
+.snippet .fml{font-family:var(--mono);font-size:13.5px;background:var(--panel);padding:11px 14px;
+  border-radius:4px;color:var(--ink);margin:12px 0;display:block;overflow-x:auto;white-space:pre}
+figure{margin:44px 0;padding:0}
+figure svg{display:block;width:100%;height:auto;border:1px solid var(--rule);border-radius:6px;background:#fff}
+figcaption{font-family:var(--mono);font-size:11.5px;line-height:1.55;color:var(--faint);
+  margin-top:11px;padding-left:2px}
+figcaption b{color:var(--muted);font-weight:500;letter-spacing:.06em}
+.tw{overflow-x:auto;margin:32px 0}
+table{border-collapse:collapse;width:100%;font-size:14.5px}
+th{font-family:var(--mono);font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;
+  text-align:left;color:var(--faint);border-bottom:1px solid var(--rule);padding:9px 12px 9px 0;font-weight:500}
+td{border-bottom:1px solid var(--rule-soft);padding:11px 12px 11px 0;vertical-align:top;color:var(--muted)}
+td:first-child{color:var(--body);font-weight:500}
+td.n{font-family:var(--mono);font-size:13px;color:var(--ink);white-space:nowrap}
+.pull{font-family:var(--serif);font-size:25px;line-height:1.34;color:var(--ink);
+  border-left:2px solid var(--accent);padding:6px 0 6px 24px;margin:40px 0}
+blockquote{margin:28px 0;padding:0 0 0 22px;border-left:2px solid var(--rule);color:var(--muted);font-size:16px}
+ul,ol{margin:0 0 22px;padding-left:22px}
+li{margin-bottom:9px}
+code{font-family:var(--mono);font-size:14px;background:var(--panel);padding:1px 5px;border-radius:3px;color:var(--ink)}
+.refs{margin-top:72px;border-top:1px solid var(--rule);padding-top:26px}
+.refs h2{font-size:20px;margin:0 0 18px;font-family:var(--sans);font-weight:640}
+.refs ol{list-style:none;padding:0;margin:0}
+.refs li{font-size:14px;line-height:1.6;color:var(--muted);padding-left:26px;text-indent:-26px;margin-bottom:11px}
+.note{font-size:13.5px;line-height:1.6;color:var(--faint);background:var(--panel);
+  padding:16px 18px;border-radius:6px;margin:26px 0}
+.mono{font-family:var(--mono)}
+@media (max-width:640px){
+  .wrap{padding:40px 18px 80px} h1{font-size:33px} h2{font-size:24px} body{font-size:16px}
+  .standfirst{font-size:18px}
+}
+</style>
+<div class="wrap">
+
+<p class="eyebrow">Physical AI · Perception · Analysis</p>
+
+<h1>Can robots embedded with vision models solve industrial AI?</h1>
+
+<p class="standfirst">No — and the obstruction is information-theoretic rather than architectural. The variables that decide whether an industrial component fails are, for the most part, not present in any image of it.</p>
+
+<div class="byline">
+  <strong>Ayush Bhatia</strong> and <strong>Krishan Bhatia</strong> · Indus Hydraulics<br>
+  11 September 2026 · 19 min read · Includes original data from a 16,114-record specification audit
+</div>
+
+<div class="abstract">
+  <span class="lbl">Abstract</span>
+  <p>We argue that vision-centric industrial autonomy faces a ceiling that is not a function of model scale. Framing industrial condition assessment as a partially observable Markov decision process makes the difficulty explicit: the state variables that determine failure — accumulated fatigue damage, elastomer compression set, internal chemical attack, preload history, thermal and pressure exposure, shelf age — have negligible causal influence on surface appearance until very late in their evolution. By the data processing inequality, no amount of processing applied to an image can recover information the image does not contain, so improvements in vision models raise extraction efficiency against a fixed and low information ceiling. We support this with a failure-mode observability analysis and then present original data from an audit of our own catalogue: of 16,114 structured specifications across 1,487 products, 89.5% carry no unit; of 1,548 pressure specifications, only 45.1% resolve to a parseable number. We conclude that the binding constraint on industrial AI is not perception but machine-readable asset memory, and that this is a data-infrastructure problem which the field is currently attempting to solve with cameras.</p>
+</div>
+
+<h2>1. What would it mean to "solve industrial AI"?</h2>
+
+<p>The claim under examination deserves a precise statement, because the loose version is unfalsifiable and the precise version is interesting.</p>
+
+<p>The loose version is that sufficiently capable visual perception, embodied in a robot, will eventually handle industrial work. The precise version is a claim about sufficiency: that the observable surface appearance of industrial equipment carries enough information to support the decisions industrial work requires — is this component serviceable, will it survive to the next interval, what caused this, what should replace it.</p>
+
+<p>Stated that way it is an empirical claim about an information channel, and it can be evaluated. We think it is false, and false in a way that additional capability does not repair.</p>
+
+<p>To be clear about what we are not arguing. We are not arguing that vision models are unimpressive; the progress has been extraordinary and we use these systems. We are not arguing that they have no industrial role; they have a large one, and section 7 says where. We are arguing against a specific proposition — that scaling visual perception is the path to industrial autonomy — and the argument is structural.</p>
+
+<h2>2. The formal framing</h2>
+
+<p>Industrial condition assessment is naturally posed as a partially observable Markov decision process (Kaelbling <em>et al.</em>, 1998). There is a latent state — the true condition of the asset — which is not directly accessible. There is an observation, which is what the sensors return. And there is an observation function relating them.</p>
+
+<div class="snippet">
+  <span class="lbl">Concept</span>
+  <h4>Partial observability, and where the difficulty lives</h4>
+  <p>A POMDP is the tuple ⟨S, A, T, R, Ω, O⟩ — states, actions, transitions, rewards, observations, and the observation function O(o | s, a) giving the probability of observation <em>o</em> in state <em>s</em>. The agent never sees <em>s</em>; it maintains a belief <em>b(s)</em>, a distribution over states, updated by Bayes' rule as observations arrive (Kaelbling <em>et al.</em>, 1998; Thrun <em>et al.</em>, 2005).</p>
+  <p>The framework is standard. The point we want is about where difficulty resides. Most robotics work on POMDPs concentrates on planning under a belief — the computational problem. Industrial condition assessment has its difficulty somewhere else entirely: in the <em>observation function itself</em>. If O(o | s) is nearly identical for two states s₁ and s₂, then no belief update distinguishes them, no matter how much computation is applied and no matter how many observations are accumulated.</p>
+  <p>That is the situation for most industrially decisive state variables under visual observation.</p>
+</div>
+
+<p>This can be sharpened into a limit rather than a complaint. Let <em>S</em> be the failure-relevant state and <em>O</em> the observation. The mutual information <em>I(S;O)</em> measures how much the observation tells us about the state (Shannon, 1948). Any estimator produces an estimate <em>Ŝ</em> that is a function of <em>O</em> alone, forming a Markov chain <em>S → O → Ŝ</em>. The data processing inequality then gives:</p>
+
+<div class="snippet">
+  <span class="lbl">Result</span>
+  <h4>The information ceiling</h4>
+  <span class="fml">I(S ; Ŝ)  ≤  I(S ; O)</span>
+  <p>No processing of an observation can create information about the state that the observation does not contain. A larger model, a better architecture, more training data and more inference-time computation can all move the achieved <em>I(S;Ŝ)</em> closer to the bound. None can raise the bound.</p>
+  <p>Consequently, if <em>I(S;O)</em> is small for a given state variable and observation modality, the question of how good the model is has a ceiling that is reached quickly and cannot be exceeded. The only remedy is a different observation — a different sensor, or a different kind of evidence altogether.</p>
+</div>
+
+<p>This is elementary information theory and it is not usually brought to bear on this debate, which is why the debate keeps circling. The question is not "how good will vision models get". It is "how much information about failure-relevant state does an image of an industrial component contain". Those are different questions and only the second one is binding.</p>
+
+<h2>3. What determines failure, and where it lives</h2>
+
+<p>So we should look at the state variables. What follows is drawn from fluid power and pressure-containment components, which is our own field, but the pattern generalises to any fatigue- or degradation-limited mechanical system.</p>
+
+<p><strong>Accumulated fatigue damage.</strong> A steel component under cyclic load accumulates damage long before any crack is optically detectable. Crack initiation typically consumes the majority of fatigue life, and once a crack is propagating, growth per cycle scales with a power of the stress intensity range, so the remaining life shortens sharply (Paris and Erdogan, 1963; Suresh, 1998). The visible symptom appears near the end of the process. Optical inspection is sampling the tail of the distribution and calling it the distribution.</p>
+
+<p><strong>Elastomer compression set.</strong> A seal that has taken a permanent set has lost the recovery that made it seal. It is measured by compressing a specimen under defined conditions and recording how much of the deflection is not recovered — a destructive laboratory test (ISO 815-1). A seal at 40% set and a seal at 5% set are visually indistinguishable in situ.</p>
+
+<p><strong>Inner tube degradation from fluid incompatibility.</strong> A hydraulic hose degrades from the inside when the fluid attacks the tube compound. The reinforcement and cover are unaffected and the assembly looks new. The failure is a burst.</p>
+
+<p><strong>Reinforcement corrosion beneath an intact cover.</strong> Moisture entering through a cover abrasion migrates along the wire braid and corrodes it. The cover closes visually over a reinforcement that has lost a large fraction of its strength.</p>
+
+<p><strong>Preload loss in a bolted joint.</strong> A bolt that has lost preload is geometrically identical to one that has not. Preload is a force, and force is not a visual property.</p>
+
+<p><strong>Thermal, pressure and chemical exposure history.</strong> An elastomer that spent an hour above its rated temperature is aged. A hose that has seen ten million pressure impulses has consumed most of its impulse life. Neither leaves a surface signature at the time it matters.</p>
+
+<p><strong>Shelf age.</strong> Rubber degrades in storage. Industry practice addresses hose shelf life explicitly, and a component may be beyond its recommended storage period on the day it is first installed, having never been pressurised. It is indistinguishable from new.</p>
+
+<figure>
+<svg viewBox="0 0 760 430" xmlns="http://www.w3.org/2000/svg" font-family="ui-monospace,Menlo,monospace">
+  <rect width="760" height="430" fill="#fff"/>
+  <text x="20" y="26" font-size="10.5" fill="#8b95a1" letter-spacing="1.3">OBSERVABILITY OF FAILURE-RELEVANT STATE BY MODALITY</text>
+  <g font-size="9.5" fill="#5d6873" text-anchor="middle">
+    <text x="392" y="62">RGB</text><text x="392" y="74">VISION</text>
+    <text x="459" y="62">THERMAL</text>
+    <text x="526" y="62">ACOUSTIC</text><text x="526" y="74">VIBRATION</text>
+    <text x="593" y="62">UT / EDDY</text><text x="593" y="74">CURRENT</text>
+    <text x="682" y="62">RECORDED</text><text x="682" y="74">HISTORY</text>
+  </g>
+  <line x1="20" y1="84" x2="740" y2="84" stroke="#c9d0d7"/>
+  <rect x="648" y="52" width="68" height="360" fill="#f4f9f6"/>
+  <rect x="358" y="52" width="68" height="360" fill="#fcf6f4"/>
+  <g font-size="11" fill="#2b3138">
+    <text x="20" y="108">Accumulated fatigue damage</text>
+    <text x="20" y="140">Crack, propagating, sub-surface</text>
+    <text x="20" y="172">Elastomer compression set</text>
+    <text x="20" y="204">Inner tube chemical attack</text>
+    <text x="20" y="236">Braid corrosion under cover</text>
+    <text x="20" y="268">Bolt preload loss</text>
+    <text x="20" y="300">Thermal exposure history</text>
+    <text x="20" y="332">Pressure cycle count</text>
+    <text x="20" y="364">Shelf age at installation</text>
+    <text x="20" y="396">Surface corrosion, external</text>
+  </g>
+  <g font-size="13" text-anchor="middle">
+    <text x="392" y="112" fill="#d9dee3">○</text><text x="459" y="112" fill="#d9dee3">○</text><text x="526" y="112" fill="#8a6d1f">◐</text><text x="593" y="112" fill="#d9dee3">○</text><text x="682" y="112" fill="#2f6b4f">●</text>
+    <text x="392" y="144" fill="#d9dee3">○</text><text x="459" y="144" fill="#d9dee3">○</text><text x="526" y="144" fill="#2f6b4f">●</text><text x="593" y="144" fill="#2f6b4f">●</text><text x="682" y="144" fill="#8a6d1f">◐</text>
+    <text x="392" y="176" fill="#d9dee3">○</text><text x="459" y="176" fill="#d9dee3">○</text><text x="526" y="176" fill="#d9dee3">○</text><text x="593" y="176" fill="#d9dee3">○</text><text x="682" y="176" fill="#2f6b4f">●</text>
+    <text x="392" y="208" fill="#d9dee3">○</text><text x="459" y="208" fill="#d9dee3">○</text><text x="526" y="208" fill="#d9dee3">○</text><text x="593" y="208" fill="#8a6d1f">◐</text><text x="682" y="208" fill="#2f6b4f">●</text>
+    <text x="392" y="240" fill="#d9dee3">○</text><text x="459" y="240" fill="#d9dee3">○</text><text x="526" y="240" fill="#d9dee3">○</text><text x="593" y="240" fill="#8a6d1f">◐</text><text x="682" y="240" fill="#8a6d1f">◐</text>
+    <text x="392" y="272" fill="#d9dee3">○</text><text x="459" y="272" fill="#d9dee3">○</text><text x="526" y="272" fill="#8a6d1f">◐</text><text x="593" y="272" fill="#8a6d1f">◐</text><text x="682" y="272" fill="#2f6b4f">●</text>
+    <text x="392" y="304" fill="#d9dee3">○</text><text x="459" y="304" fill="#d9dee3">○</text><text x="526" y="304" fill="#d9dee3">○</text><text x="593" y="304" fill="#d9dee3">○</text><text x="682" y="304" fill="#2f6b4f">●</text>
+    <text x="392" y="336" fill="#d9dee3">○</text><text x="459" y="336" fill="#d9dee3">○</text><text x="526" y="336" fill="#d9dee3">○</text><text x="593" y="336" fill="#d9dee3">○</text><text x="682" y="336" fill="#2f6b4f">●</text>
+    <text x="392" y="368" fill="#d9dee3">○</text><text x="459" y="368" fill="#d9dee3">○</text><text x="526" y="368" fill="#d9dee3">○</text><text x="593" y="368" fill="#d9dee3">○</text><text x="682" y="368" fill="#2f6b4f">●</text>
+    <text x="392" y="400" fill="#2f6b4f">●</text><text x="459" y="400" fill="#8a6d1f">◐</text><text x="526" y="400" fill="#d9dee3">○</text><text x="593" y="400" fill="#8a6d1f">◐</text><text x="682" y="400" fill="#8a6d1f">◐</text>
+  </g>
+  <g><line x1="20" y1="120" x2="740" y2="120" stroke="#f2f4f6"/><line x1="20" y1="152" x2="740" y2="152" stroke="#f2f4f6"/><line x1="20" y1="184" x2="740" y2="184" stroke="#f2f4f6"/><line x1="20" y1="216" x2="740" y2="216" stroke="#f2f4f6"/><line x1="20" y1="248" x2="740" y2="248" stroke="#f2f4f6"/><line x1="20" y1="280" x2="740" y2="280" stroke="#f2f4f6"/><line x1="20" y1="312" x2="740" y2="312" stroke="#f2f4f6"/><line x1="20" y1="344" x2="740" y2="344" stroke="#f2f4f6"/><line x1="20" y1="376" x2="740" y2="376" stroke="#f2f4f6"/></g>
+  <text x="20" y="424" font-size="9.5" fill="#b3bcc5">● OBSERVABLE   ◐ PARTIALLY OR INDIRECTLY OBSERVABLE   ○ NOT OBSERVABLE</text>
+</svg>
+<figcaption><b>FIG. 01</b> — Observability of failure-relevant state variables by sensing modality. The RGB column, shaded, is almost empty: of ten variables, vision observes one. The recorded-history column, also shaded, is nearly full. This is the central empirical claim of the article, and it is the reason we think industrial AI is a memory problem misdiagnosed as a perception problem.</figcaption>
+</figure>
+
+<p>The pattern in Figure 1 is stark and, we think, not controversial among people who do condition assessment for a living. Vision observes external surface state. Almost nothing that determines remaining life is external surface state until the component is close to failing.</p>
+
+<p class="pull">The information about whether this hose will survive the quarter is not in the photograph. It is in the purchase date, the fluid, the duty cycle and the ambient temperature — and those live in records, not in pixels.</p>
+
+<h2>4. Why better vision models do not close this</h2>
+
+<p>Given the ceiling established in section 2, improvements in the vision stack move performance toward a bound rather than raising it. But there is a second reason to be careful, concerning behaviour <em>at</em> the bound.</p>
+
+<p><strong>Shortcut learning.</strong> Deep networks reliably discover decision rules that succeed on the training distribution through features that are correlated with the label but not causally related to it (Geirhos <em>et al.</em>, 2020). In industrial imagery the opportunities are abundant: components photographed after failure are often photographed in a workshop, at a different angle, under different lighting, with the failure already known. A detector can achieve excellent benchmark numbers on background and framing cues, and it will fail silently the first time it sees a healthy component in a workshop.</p>
+
+<p><strong>Hallucination.</strong> Vision-language models describe objects, attributes and relations that are not present in the image, a phenomenon documented for captioning (Rohrbach <em>et al.</em>, 2018) and characterised systematically for modern VLMs (Li <em>et al.</em>, 2023). Applied to inspection, this is not a curiosity. A model that reports a component identifier that is not visible, or a condition that is not present, produces a plausible, fluent, wrong finding — and fluency is precisely what makes it hard to catch.</p>
+
+<p><strong>Miscalibration.</strong> Modern networks are systematically overconfident: predicted probabilities exceed empirical accuracy, and the gap widens with capacity (Guo <em>et al.</em>, 2017). In inspection the confidence is not decoration, it drives the decision to escalate. An overconfident "serviceable" is the most expensive output the system can produce, because it terminates the process.</p>
+
+<p><strong>Conflated uncertainties.</strong> Kendall and Gal (2017) distinguish aleatoric uncertainty — irreducible noise in the observation — from epistemic uncertainty, which reflects the model's ignorance and shrinks with data. The distinction is decisive here. The correct response to high epistemic uncertainty is to gather more data. The correct response to high aleatoric uncertainty, which is what section 3 describes, is to <em>use a different sensor</em>, because more images of an unobservable variable will not help. A system that does not separate these will keep taking photographs of something the camera cannot see.</p>
+
+<p>These four failure modes share a structure worth naming: each produces a confident, well-formed, wrong answer rather than an obvious error. In a domain where the wrong answer terminates the inspection, that is the worst available failure profile.</p>
+
+<h2>5. Original data: the memory is not machine-readable either</h2>
+
+<p>If the argument so far is right, the remedy is recorded history — the right-hand column of Figure 1. This is a comfortable conclusion and we would like to report that the records are in good order. They are not, and we can quantify it from our own data rather than speculating about someone else's.</p>
+
+<p>We audited the structured specification corpus behind our catalogue: 16,114 specification records attached to 1,487 active products across 29 manufacturers, queried on 8 September 2026. The corpus is typed — each record has a label, a value and an optional unit — so it is already better organised than free-text datasheets or PDFs, which is what most of this industry runs on. The results should therefore be read as a favourable case.</p>
+
+<div class="tw">
+<table>
+  <tr><th>Measure</th><th>Value</th><th>Share</th></tr>
+  <tr><td>Total specification records</td><td class="n">16,114</td><td>—</td></tr>
+  <tr><td>Records with no unit recorded</td><td class="n">14,419</td><td>89.5%</td></tr>
+  <tr><td>Distinct specification labels</td><td class="n">243</td><td>—</td></tr>
+  <tr><td>Distinct labels after case and whitespace normalisation</td><td class="n">237</td><td>—</td></tr>
+  <tr><td>Records not bound to a specification template</td><td class="n">954</td><td>5.9%</td></tr>
+</table>
+</div>
+
+<p>Narrowing to pressure — the field that decides whether a substitution is safe, and the one an autonomous system would most need to read:</p>
+
+<div class="tw">
+<table>
+  <tr><th>Measure, 1,548 pressure records</th><th>Count</th><th>Share</th></tr>
+  <tr><td>Value is a bare parseable number</td><td class="n">698</td><td>45.1%</td></tr>
+  <tr><td>Unit appears inside the free-text value</td><td class="n">527</td><td>34.0%</td></tr>
+  <tr><td>Value is a range or contains a slash</td><td class="n">214</td><td>13.8%</td></tr>
+  <tr><td>Value contains no digit at all</td><td class="n">54</td><td>3.5%</td></tr>
+  <tr><td>Unit column null or empty</td><td class="n">917</td><td>59.2%</td></tr>
+</table>
+</div>
+
+<p>Verbatim values from the corpus, with occurrence counts, convey the problem better than the aggregates:</p>
+
+<ul>
+<li><code>15000</code> — 88 records, no unit. Fifteen thousand bar is physically implausible for a fitting, so a human infers psi from domain knowledge the record does not contain.</li>
+<li><code>0</code> — 10 records. A null encoded as a number, and the most dangerous entry in the corpus: an agent evaluating <em>rated pressure ≥ required pressure</em> rejects a sound part, and with the comparison reversed accepts a catastrophic one.</li>
+<li><code>L-series up to 250 bar (3625 psi); S-series up to 400 bar (5800 psi)</code> — 40 records. Two products, two unit systems, one field.</li>
+<li><code>Up to 250 psi (1/2"–2"); 150 psi (3"–4"); 75 psi (5"–6") — derates with size, see datasheet</code> — 30 records. A derating table serialised into a string.</li>
+<li><code>ANSI Class 150 (285 psi WP) or Class 300 (740 psi WP) per ASME B16.5 ratings</code> — 9 records. A pressure rating expressed as a reference to a standard.</li>
+</ul>
+
+<p>And the labels themselves collide: <code>Working Pressure</code> (434 records) sits alongside <code>Max Working Pressure</code> (382); <code>Nominal Size Range</code> (582) alongside <code>Size Range</code> (201); <code>Material</code> (633) alongside <code>Materials Available</code> (208). <code>Working Pressure</code> appears with three different unit conventions — null, bar, and psi.</p>
+
+<figure>
+<svg viewBox="0 0 760 300" xmlns="http://www.w3.org/2000/svg" font-family="ui-monospace,Menlo,monospace">
+  <rect width="760" height="300" fill="#fff"/>
+  <text x="40" y="28" font-size="10.5" fill="#8b95a1" letter-spacing="1.3">PARSEABILITY OF 1,548 PRESSURE SPECIFICATIONS · INDUS HYDRAULICS CATALOGUE · 2026-09-08</text>
+  <rect x="40" y="52" width="680" height="42" fill="#eef1f4"/>
+  <rect x="40" y="52" width="307" height="42" fill="#2f6b4f" opacity=".85"/>
+  <rect x="347" y="52" width="231" height="42" fill="#8a6d1f" opacity=".85"/>
+  <rect x="578" y="52" width="94" height="42" fill="#b05a5a" opacity=".85"/>
+  <rect x="672" y="52" width="48" height="42" fill="#8f3232" opacity=".9"/>
+  <text x="46" y="79" font-size="11.5" fill="#fff">45.1% BARE NUMBER</text>
+  <text x="353" y="79" font-size="11.5" fill="#fff">34.0% UNIT IN TEXT</text>
+  <text x="584" y="79" font-size="10.5" fill="#fff">13.8% RANGE</text>
+  <text x="678" y="79" font-size="10" fill="#fff">3.5%</text>
+  <text x="40" y="118" font-size="10" fill="#8b95a1">MACHINE-READABLE ONLY IF THE UNIT IS KNOWN FROM ELSEWHERE  ·  59.2% HAVE NO UNIT COLUMN</text>
+  <line x1="40" y1="140" x2="720" y2="140" stroke="#e2e6ea"/>
+  <text x="40" y="168" font-size="11" fill="#2b3138">What an agent asking "is this rated for 300 bar?" actually encounters</text>
+  <g font-family="ui-monospace,Menlo,monospace" font-size="11">
+    <rect x="40" y="182" width="330" height="26" fill="#f6f7f8"/>
+    <text x="50" y="199" fill="#2b3138">"15000"</text>
+    <text x="380" y="199" fill="#8f3232">unit unknown — psi or bar?</text>
+    <rect x="40" y="214" width="330" height="26" fill="#f6f7f8"/>
+    <text x="50" y="231" fill="#2b3138">"0"</text>
+    <text x="380" y="231" fill="#8f3232">null encoded as a number</text>
+    <rect x="40" y="246" width="330" height="26" fill="#f6f7f8"/>
+    <text x="50" y="263" fill="#2b3138">"up to 400 bar; derates with size"</text>
+    <text x="380" y="263" fill="#8a6d1f">conditional on a variable not given</text>
+  </g>
+  <text x="40" y="290" font-size="9.5" fill="#b3bcc5">SOURCE: AUTHORS' OWN CATALOGUE AUDIT, n = 16,114 SPECIFICATION RECORDS ACROSS 1,487 PRODUCTS</text>
+</svg>
+<figcaption><b>FIG. 02</b> — Parseability of pressure specifications in a typed, structured industrial catalogue. Fewer than half resolve to a machine-readable quantity without external inference, and the majority carry no unit in the field designated for it. This is a favourable case: most of this industry publishes the same information as prose in PDFs.</figcaption>
+</figure>
+
+<p>We publish this against our own interest because the point matters more than the embarrassment. This is a well-maintained, typed catalogue, and it is unreadable to a machine at exactly the field where a wrong answer is dangerous. Every distributor and every manufacturer we know of is in the same condition or worse. The remedy proposed in section 3 — consult the records — is currently a remedy in principle.</p>
+
+<h2>6. The tacit component</h2>
+
+<p>One further obstruction deserves mention because it is systematically underestimated.</p>
+
+<p>A significant part of what an experienced technician knows is not merely absent from the records; it has never been in propositional form at all. Polanyi (1966) put it that we know more than we can tell. The technician who runs a thumb along a hose cover and decides it has hardened is performing a measurement, but not one they could write down as a procedure, and not one they arrived at from a datasheet.</p>
+
+<p>This is Moravec's paradox in a specifically industrial dress (Moravec, 1988): the parts of the job that look most like expertise — reading a specification, calculating a pressure drop — are the parts most easily automated, and the parts that look like nothing at all — touching, listening, noticing that a machine sounds different this week — are the residue.</p>
+
+<p>The consequence for system design is not despair; it is that elicitation is a design activity with a schedule attached. The knowledge is held by people who are retiring, and it is the highest-value input to the memory the system needs.</p>
+
+<h2>7. What actually closes the gap</h2>
+
+<p>The argument has been negative so far. The constructive version has three parts, in ascending order of importance.</p>
+
+<h3>7.1 Sense what vision cannot</h3>
+
+<p>The obvious response to an information ceiling is a different channel. Tactile sensing has matured substantially — vision-based tactile sensors recover surface geometry and contact force at high spatial resolution (Yuan <em>et al.</em>, 2017) — and hardness, compliance and surface texture are exactly the properties Figure 1 marks as invisible. Acoustic emission observes crack activity directly, because a growing crack radiates. Vibration analysis observes bearing and gear condition through spectra with well-understood defect frequencies. Ultrasonic and eddy-current methods observe sub-surface state.</p>
+
+<p>None of this is novel; it is standard condition-monitoring practice, and it substantially predates the current interest in embodied AI. The observation we would make is that the robotics literature has concentrated overwhelmingly on the modality with the <em>worst</em> observability profile for this application, because that is the modality with the best benchmarks and the largest datasets.</p>
+
+<h3>7.2 Put the physics in the model</h3>
+
+<p>Where the state is unobservable it can often be <em>predicted</em>, because degradation follows constitutive laws. Fatigue accumulation given a load history is calculable. Elastomer ageing given a thermal history is modellable. A crack's growth given its size and the stress intensity range is Paris's law.</p>
+
+<p>Physics-informed neural networks embed the governing differential equations into the training objective as a constraint, so that the learned solution must satisfy the physics as well as fitting the data (Raissi <em>et al.</em>, 2019). This is an unusually good fit for the industrial case, where data is scarce and expensive but the governing physics is well characterised and a century old. A model that cannot see fatigue damage but knows the load history and the material law can estimate it — and the estimate carries an uncertainty that is honest, because it comes from a mechanism rather than from a correlation.</p>
+
+<h3>7.3 Fix the memory</h3>
+
+<p>The largest available gain, and the least glamorous.</p>
+
+<p>Every remedy above depends on records: load history, thermal history, install date, fluid, duty, provenance, and a part identity stable enough to join them. Section 5 shows what condition those records are actually in. Before an autonomous system can reason about the state of an asset it must be able to <em>read</em> what is known about the asset, and today it largely cannot.</p>
+
+<p>Concretely, this means: canonical field names with required units, quantities expressed as structured objects rather than strings, part identity that resolves across manufacturers, and history attached to the individual serialised component rather than to the catalogue line. None of this is research. All of it is schema design, and it is the work standing between the current state and everything discussed in sections 7.1 and 7.2.</p>
+
+<h2>8. Conclusion</h2>
+
+<p>Can robots with vision models solve industrial AI? No, and the reason is worth restating precisely, because the precise version is more useful than the headline.</p>
+
+<p>Vision has an information ceiling with respect to industrial condition, set by the physics of how degradation manifests, and the data processing inequality says no model can exceed it. The variables that decide failure are, for the most part, historical rather than appearance-based: what this component has endured, not what it looks like now. That history exists — in purchase records, maintenance logs, process historians and specification databases — and it is largely unreadable to a machine, as our own audit demonstrates on our own data.</p>
+
+<p>The field is therefore optimising the wrong term. Enormous effort is going into raising extraction efficiency against a low ceiling, while the channel with a high ceiling — recorded history — receives comparatively little, because schema design does not produce a compelling demonstration video.</p>
+
+<p class="pull">Industrial AI will be solved by databases some years before it is solved by cameras.</p>
+
+<p>We do not think this is a pessimistic conclusion. It is a considerably more tractable problem than the one usually posed. Nobody needs to invent anything to fix a pressure field that says <code>15000</code> with no unit. Somebody needs to decide it matters.</p>
+
+<div class="note">
+<strong>Data availability and sourcing.</strong> The catalogue figures in section 5 were obtained by direct query of our production database on 8 September 2026 and are reproducible from the stated record counts. We intend to publish the anonymised specification corpus and the audit queries so the analysis can be checked and repeated against other catalogues. All claims about model behaviour are cited to primary sources; all standards are cited by designation. Figures 1 and 2 are our own; Figure 1 is an analytical summary reflecting the authors' assessment of observability by modality, not a measured dataset. Verified as of 11 September 2026.
+</div>
+
+<div class="refs">
+<h2>References</h2>
+<ol>
+<li>Geirhos, R., Jacobsen, J.-H., Michaelis, C., Zemel, R., Brendel, W., Bethge, M. and Wichmann, F.A. (2020) 'Shortcut learning in deep neural networks', <em>Nature Machine Intelligence</em>, 2, pp. 665–673.</li>
+<li>Guo, C., Pleiss, G., Sun, Y. and Weinberger, K.Q. (2017) 'On calibration of modern neural networks', <em>Proceedings of the 34th International Conference on Machine Learning (ICML)</em>, PMLR 70, pp. 1321–1330.</li>
+<li>International Organization for Standardization (2019) <em>ISO 815-1: Rubber, vulcanized or thermoplastic — Determination of compression set — Part 1: At ambient or elevated temperatures</em>. Geneva: ISO.</li>
+<li>Kaelbling, L.P., Littman, M.L. and Cassandra, A.R. (1998) 'Planning and acting in partially observable stochastic domains', <em>Artificial Intelligence</em>, 101(1–2), pp. 99–134.</li>
+<li>Kendall, A. and Gal, Y. (2017) 'What uncertainties do we need in Bayesian deep learning for computer vision?', <em>Advances in Neural Information Processing Systems (NeurIPS) 30</em>, pp. 5574–5584.</li>
+<li>Li, Y., Du, Y., Zhou, K., Wang, J., Zhao, W.X. and Wen, J.-R. (2023) 'Evaluating object hallucination in large vision-language models', <em>Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing (EMNLP)</em>, pp. 292–305.</li>
+<li>Moravec, H. (1988) <em>Mind Children: The Future of Robot and Human Intelligence</em>. Cambridge, MA: Harvard University Press.</li>
+<li>Paris, P. and Erdogan, F. (1963) 'A critical analysis of crack propagation laws', <em>Journal of Basic Engineering</em>, 85(4), pp. 528–533.</li>
+<li>Polanyi, M. (1966) <em>The Tacit Dimension</em>. New York: Doubleday.</li>
+<li>Raissi, M., Perdikaris, P. and Karniadakis, G.E. (2019) 'Physics-informed neural networks: a deep learning framework for solving forward and inverse problems involving nonlinear partial differential equations', <em>Journal of Computational Physics</em>, 378, pp. 686–707.</li>
+<li>Rohrbach, A., Hendricks, L.A., Burns, K., Darrell, T. and Saenko, K. (2018) 'Object hallucination in image captioning', <em>Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing (EMNLP)</em>, pp. 4035–4045.</li>
+<li>Shannon, C.E. (1948) 'A mathematical theory of communication', <em>Bell System Technical Journal</em>, 27(3), pp. 379–423.</li>
+<li>Suresh, S. (1998) <em>Fatigue of Materials</em>. 2nd edn. Cambridge: Cambridge University Press.</li>
+<li>Thrun, S., Burgard, W. and Fox, D. (2005) <em>Probabilistic Robotics</em>. Cambridge, MA: MIT Press.</li>
+<li>Worden, K., Farrar, C.R., Manson, G. and Park, G. (2007) 'The fundamental axioms of structural health monitoring', <em>Proceedings of the Royal Society A</em>, 463(2082), pp. 1639–1664.</li>
+<li>Yuan, W., Dong, S. and Adelson, E.H. (2017) 'GelSight: high-resolution robot tactile sensors for estimating geometry and force', <em>Sensors</em>, 17(12), 2762.</li>
+</ol>
+</div>
+
+</div>
