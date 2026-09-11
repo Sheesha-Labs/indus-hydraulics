@@ -58,6 +58,26 @@ const DRY_RUN = process.argv.includes('--dry-run')
 const PUBLISH = process.argv.includes('--publish')
 
 async function main(): Promise<void> {
+  // Refuse to silently unpublish. `runBlogArticleImport` applies `status` on
+  // update as well as create, so a bare re-run after the wave has gone live
+  // would take three published articles back to draft — and the only signal
+  // would be a line of output nobody reads twice. Publication state is worth
+  // more than the convenience of an unguarded re-run.
+  if (!DRY_RUN && !PUBLISH) {
+    const live = await db.blogPost.findMany({
+      where: { slug: { in: ARTICLES.map((a) => a.slug) }, status: 'published' },
+      select: { slug: true },
+    })
+    if (live.length > 0) {
+      console.error('Refusing to run: these articles are already published.')
+      for (const row of live) console.error(`  ✗ /blog/${row.slug}`)
+      console.error('')
+      console.error('Re-run with --publish to update them in place, or --dry-run to validate.')
+      process.exitCode = 1
+      return
+    }
+  }
+
   // Validate the category body before anything is written, so a malformed hub
   // fails the run rather than landing half-applied alongside three articles.
   const categoryBlocks = BlogBlocksSchema.safeParse(PHYSICAL_AI_CATEGORY.bodyBlocks)
@@ -78,6 +98,10 @@ async function main(): Promise<void> {
     const categoryData = {
       ...rest,
       focusKeyword,
+      // The hub goes live exactly when its articles do. Publishing it against a
+      // set of drafts produces a page reading "0 articles", in the sitemap,
+      // which is what wave 2 unpublished a category for.
+      isPublished: PUBLISH,
       bodyBlocks: JSON.parse(JSON.stringify(categoryBlocks.data)) as Prisma.InputJsonValue,
     }
     await db.blogCategory.upsert({
@@ -112,7 +136,10 @@ async function main(): Promise<void> {
     console.log('Imported as DRAFT. Before publishing:')
     console.log('  1. Fill in credentials, jobTitle, bio and avatar on both author profiles')
     console.log('  2. Set isPublished on both author rows')
-    console.log('  3. Re-run with --publish, or publish each article from the admin editor')
+    console.log('  3. Re-run with --publish — which also publishes the category hub')
+    console.log('')
+    console.log(`The /blog/c/${PHYSICAL_AI_CATEGORY.slug} hub stays unpublished until then,`)
+    console.log('so it cannot appear in the sitemap reading "0 articles".')
   }
 }
 

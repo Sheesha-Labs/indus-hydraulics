@@ -12,6 +12,16 @@ import type { BlogBlocksInput } from '@indus/domain'
  * `heroCopy` states the editorial position plainly, because a research section
  * on a distributor's website invites the obvious suspicion and the only useful
  * response is to say what the section is for.
+ *
+ * NOTE THE ABSENCE OF `isPublished`.
+ *
+ * It is set by the runner, from whether the wave's articles are being
+ * published, and it is not a property of this record. The first import of this
+ * wave hard-coded `true` while all three articles imported as drafts, which put
+ * a live hub reading "0 articles" into the sitemap for an hour — exactly what
+ * wave 2 unpublished `procurement-export` for, and exactly what the note on
+ * wave 5's category was written to prevent. A hub is publishable when it has
+ * something in it; that is a fact about the articles, so the articles decide it.
  */
 export const PHYSICAL_AI_CATEGORY = {
   slug: 'physical-ai',
@@ -20,7 +30,6 @@ export const PHYSICAL_AI_CATEGORY = {
     'Long-form research on autonomy at the pressure boundary: what robots and AI models can and cannot do with industrial equipment, and why.',
   heroCopy:
     'We supply hydraulic components, not robots. This section exists because the two meet at a point almost nobody writes about — the physical interface an autonomous system is actually pointed at. These are long, argued pieces with their sources attached.',
-  isPublished: true,
   position: 15,
   seoTitle: 'Physical AI and industrial autonomy — research',
   seoDescription:
