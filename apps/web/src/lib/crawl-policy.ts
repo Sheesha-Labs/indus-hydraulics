@@ -41,6 +41,27 @@ export const DEFAULT_DISALLOW = [
   '/reset-password',
   '/maintenance',
   '/design',
+  // Internal REWRITE TARGETS. Neither is ever linked, and neither should ever
+  // be fetched as a URL in its own right — but both answer 200 to a direct
+  // request, so a crawler that guesses one (or reads one out of a header) gets
+  // a duplicate rather than a 404.
+  //
+  // `/h/<cc>` is the homepage's geo rotator: 127 country variants of `/`,
+  // every one of them the home page with a different hero line. The proxy
+  // rewrites `/` to the visitor's variant internally, so blocking the prefix
+  // cannot affect `/` itself — robots.txt matches the REQUESTED path, and the
+  // requested path is `/`.
+  //
+  // `/c-filter/<slug>` is the filtered twin of a category shelf, and it was
+  // answering `index, follow` with a canonical pointing back at `/c/<slug>`.
+  // The query form it serves (`/c/<slug>?brands=…`) is already in
+  // FACET_DISALLOW; this closes the same door on the rewrite target.
+  //
+  // The trailing slash on '/h/' is load-bearing: `isDisallowed` matches by
+  // prefix, and a bare '/h' would also swallow
+  // /hydraulic-components-supplier-uae.
+  '/h/',
+  '/c-filter',
 ] as const
 
 /**

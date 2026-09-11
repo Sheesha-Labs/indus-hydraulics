@@ -24,6 +24,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const yearsInBusiness = new Date().getFullYear() - FOUNDING_YEAR
   return {
     title: 'Industries We Serve',
+    alternates: { canonical: '/industries' },
     description: `Hydraulic components for ${industryCount} industries including oil & gas, mining, marine and construction. ${activeSkuCount.toLocaleString()} live SKUs. Specialist supplier, ${yearsInBusiness} years, shipping across the GCC from our Dubai HQ.`,
   }
 }

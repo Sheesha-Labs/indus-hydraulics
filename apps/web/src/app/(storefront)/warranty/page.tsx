@@ -9,6 +9,11 @@ import { urlFor } from '../../../lib/seo'
 
 export const metadata: Metadata = {
   title: 'Warranty Policy',
+  // Self-canonical. Without it this page emitted no <link rel="canonical">
+  // at all, which leaves Google to pick one — and it can pick a filtered,
+  // parameterised or proxied variant instead.
+  alternates: { canonical: '/warranty' },
+
   description:
     'Manufacturer warranty pass-through, claims process, and exclusions for hydraulic products supplied by Indus Hydraulics — an authorized distributor for Parker, Bosch Rexroth, Yuken, HYDAC, and other industry-leading brands.',
 }

@@ -33,6 +33,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const page = await db.cmsPage.findUnique({ where: { slug: 'contact' } })
   return {
     title: page?.seoTitle ?? 'Contact',
+    alternates: { canonical: '/contact' },
     description: page?.seoDescription ?? 'Talk to a real applications engineer. Send us a part number, circuit diagram, or photo of the failure.',
   }
 }

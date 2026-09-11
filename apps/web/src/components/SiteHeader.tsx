@@ -1,3 +1,4 @@
+import { toNavChromeItems } from '@indus/domain'
 import { getNavMenu, getNavBrands, getNavIndustries } from '../lib/navigation'
 import { getStoreSettings } from '../lib/store-settings'
 import SiteHeaderClient from './SiteHeaderClient'
@@ -28,8 +29,15 @@ export default async function SiteHeader() {
 
   return (
     <SiteHeaderClient
-      headerItems={headerMenu?.items ?? []}
-      megamenuItems={megamenu?.items ?? []}
+      /*
+        Projected, not passed whole. Everything below this line crosses into a
+        client component and is therefore serialised into the RSC flight
+        payload of every page on the site — see the note on `NavChromeItem`.
+        The promo panel belongs to a top-level header item, so only that list
+        carries the promo fields.
+      */
+      headerItems={toNavChromeItems(headerMenu?.items ?? [], { withPromo: true })}
+      megamenuItems={toNavChromeItems(megamenu?.items ?? [])}
       brands={brands}
       industries={industries}
       contactPhone={settings.contactPhone}
