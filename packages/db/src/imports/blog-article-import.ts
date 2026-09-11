@@ -176,11 +176,26 @@ export type BlogArticleImportOptions = {
   articles: BlogArticleSeed[]
   /** Validate and report without writing. */
   dryRun?: boolean
+  /**
+   * Publication state for the batch. Defaults to `published`, which is what
+   * every wave through 2026-08 did and what those runners still expect.
+   *
+   * `draft` exists for a wave that is content-complete but blocked on
+   * something outside the import — an author profile without its credentials,
+   * a figure awaiting sign-off, a legal read. The alternative is importing as
+   * published and unpublishing by hand afterwards, which means the article is
+   * briefly live, and briefly live is indexable.
+   *
+   * `isPublished` is kept in step with `status` because every storefront read
+   * still filters on the boolean. See the note on the column in schema.prisma.
+   */
+  status?: 'draft' | 'published'
 }
 
 export async function runBlogArticleImport({
   articles,
   dryRun = false,
+  status = 'published',
 }: BlogArticleImportOptions): Promise<void> {
   const errors: string[] = []
   const seenSlugs = new Set<string>()
@@ -337,7 +352,9 @@ export async function runBlogArticleImport({
     return
   }
 
-  console.log(`${dryRun ? '[dry-run] ' : ''}${articles.length} article(s) validated`)
+  console.log(
+    `${dryRun ? '[dry-run] ' : ''}${articles.length} article(s) validated — importing as ${status}`
+  )
   for (const a of articles) {
     const blocks = parsedBlocks.get(a.slug)!
     console.log(
@@ -364,8 +381,8 @@ export async function runBlogArticleImport({
       seoTitle: BLOG_SEO[article.slug]?.seoTitle ?? article.seoTitle ?? null,
       seoDescription: BLOG_SEO[article.slug]?.seoDescription ?? article.seoDescription ?? null,
       focusKeyword: BLOG_SEO[article.slug]?.focusKeyword ?? article.focusKeyword ?? null,
-      isPublished: true,
-      status: 'published' as const,
+      isPublished: status === 'published',
+      status,
       body: '',
     }
 

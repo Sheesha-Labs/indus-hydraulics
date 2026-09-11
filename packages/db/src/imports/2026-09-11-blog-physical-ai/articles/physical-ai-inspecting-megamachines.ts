@@ -1,0 +1,326 @@
+/**
+ * How would physical AI embedded robots inspect megamachines?
+ *
+ * Generated from `docs/articles/a2-megamachine-inspection.html`, which is the editable source for this
+ * article's prose and its figures. The SVG in each `diagram` block is the
+ * figure as authored there; regenerate rather than hand-editing the markup
+ * here, or the two drift and the HTML is the one people will read.
+ *
+ * Blocks added on top of the converted document, because they are structure
+ * the source has no place for: `key_takeaways` and `direct_answer` open the
+ * article for retrieval, `as_of_stamp` carries the verification date as a date
+ * rather than as a sentence, and `cta_block` closes it — every article carries
+ * one, and a research piece that ranks and offers no path to a quote is a cost
+ * rather than an asset.
+ */
+import type { BlogArticleSeed } from '../shared'
+
+const ARTICLE: BlogArticleSeed = {
+  slug: "physical-ai-inspecting-megamachines",
+  title: "How would physical AI embedded robots inspect megamachines?",
+  excerpt: "A dragline is a hundred metres long and fails at a tenth of a millimetre. Six orders of magnitude separate the machine from its defect, and that single fact reorganises how inspection has to work.",
+  categorySlug: 'physical-ai',
+  authorSlug: 'krishan-bhatia',
+  seoTitle: "How autonomous robots would inspect megamachines",
+  seoDescription: "Coverage arithmetic rules out inspecting a large machine exhaustively, and damage is not visible in a single frame. Why autonomous inspection is a memory and allocation problem, not a perception problem.",
+  focusKeyword: "autonomous inspection megamachines",
+  publishedAt: '2026-09-11T09:00:00.000Z',
+  bodyBlocks: [
+  {
+    type: "lead",
+    html: "A dragline is a hundred metres long and fails at a tenth of a millimetre. Six orders of magnitude separate the machine from its defect, and that single fact reorganises everything about how inspection has to work."
+  },
+  {
+    type: "key_takeaways",
+    heading: "In short",
+    items: [
+      "Complete high-resolution coverage of a large machine implies roughly four terapixels and fifty-five hours of acquisition per visit. Inspection is therefore always a sample, never a survey.",
+      "Damage is not visible in a single frame. Assessing it requires comparing two system states, which makes the registered historical record the primary asset and the classifier a consumer of it.",
+      "The smallest change a system can detect is bounded by its registration error, not by its sensor resolution.",
+      "The correct planning objective is risk reduction, not information gain. A large, well-characterised, lightly loaded plate yields plenty of information and almost no safety.",
+      "Probability of detection, not classification accuracy, is the metric that qualifies an inspection procedure. Almost no published autonomous inspection result reports one."
+    ]
+  },
+  {
+    type: "direct_answer",
+    question: "How would physical AI embedded robots inspect megamachines?",
+    answer: "By maintaining a metrically anchored record of the machine and comparing each visit against it, rather than by classifying what is in a frame. Coverage arithmetic rules out inspecting everything, so the system's real work is deciding where to spend a finite sensing budget — ranked by risk-weighted expected detection, confirmed by qualified non-destructive testing, and adjudicated by a human whose reasoning feeds back into the prior."
+  },
+  {
+    type: "prose",
+    html: "<h3>Abstract</h3><p>We argue that autonomous inspection of very large machines is misconceived when treated as a perception problem and correctly conceived as a problem of resource allocation over a persistent spatial memory. Two structural features drive this. First, the spatial dynamic range: the ratio between the extent of the asset and the size of an actionable defect spans roughly six orders of magnitude, and a straightforward calculation shows that complete high-resolution coverage of a large machine implies data volumes and acquisition times that no inspection window accommodates. Complete coverage is therefore not an option, and the binding question becomes where to look. Second, damage is not a property observable in a single frame. Following the axiomatic treatment of Worden <em>et al.</em> (2007), the assessment of damage requires comparison between two system states, which makes registered, georeferenced history the primary asset and the classifier a secondary consumer of it. We develop three consequences — the map outranks the model, attention allocation is the hard problem, and probability of detection rather than accuracy is the correct metric — and close with what this implies for the inspector's job.</p>"
+  },
+  {
+    type: "section_head",
+    number: "/01",
+    title: "The machines in question",
+    anchor: "the-machines-in-question"
+  },
+  {
+    type: "prose",
+    html: "<p>By megamachine we mean the class of industrial equipment whose physical extent is measured in tens or hundreds of metres and whose mass is measured in thousands of tonnes: walking draglines and bucket-wheel excavators in surface mining, ultra-class haul trucks, semi-autogenous grinding mills, ship-to-shore gantry cranes, tunnel boring machines, large presses, turbine halls, and drilling derricks.</p><p>These machines share a set of properties that make them interesting as an inspection problem and awkward as a robotics problem. They are geometrically complex and largely self-occluding. Much of their surface is at height, in confined space, or both. They are subject to continuous cyclic loading, so their dominant failure mechanisms are fatigue and wear rather than sudden overload. Their downtime cost is very high, which compresses the inspection window. And they are old — many operating draglines have been in service for decades, with a documentation trail that is partial at best.</p><p>The last two properties interact badly. The shorter the window, the more selective the inspection, and the more the selection depends on knowing where this particular machine has given trouble before. That knowledge lives in maintenance records, in the memory of experienced inspectors, and increasingly nowhere at all as those inspectors retire.</p>"
+  },
+  {
+    type: "section_head",
+    number: "/02",
+    title: "The dynamic range argument",
+    anchor: "the-dynamic-range-argument"
+  },
+  {
+    type: "prose",
+    html: "<p>Start with the arithmetic, because it settles more of the design space than any argument about model architecture.</p><p>The defects that matter on a cyclically loaded steel structure are cracks at or near weld toes, and they matter well before they are large. Fracture mechanics gives the reason: in the Paris regime, crack growth per cycle scales with a power of the stress intensity range, so growth accelerates as the crack extends (Paris and Erdogan, 1963). A crack found at one millimetre is a scheduled weld repair. The same crack found three months later may be a structural replacement, and later still it is a failure. The economically decisive detection threshold sits in the sub-millimetre to few-millimetre range.</p><p>Now consider what optical detection at that threshold implies over the surface of a large machine.</p><p><strong>Worked calculation</strong></p><h3>The coverage budget for a large machine</h3><p>To reliably resolve a feature you need several pixels across it. Take a target of roughly 0.05 mm per pixel at the surface — that is 20 pixels per millimetre, or 4 × 10<sup>8</sup> pixels per square metre.</p><p>A large dragline or bucket-wheel excavator presents on the order of 10<sup>4</sup> m<sup>2</sup> of inspectable surface once booms, trusses, housings, tub and running gear are counted.</p><pre><code>4 × 10⁸ px/m² × 10⁴ m² = 4 × 10¹² pixels ≈ 4 terapixels</code></pre><p>At a 20-megapixel sensor and perfect non-overlapping coverage, that is 2 × 10<sup>5</sup> exposures — two hundred thousand images. At one usable exposure per second including positioning, it is roughly 55 hours of continuous acquisition, before any allowance for occlusion, repositioning, lighting, or the overlap that photogrammetric reconstruction actually requires. Uncompressed at three bytes per pixel the raw pass is about 12 TB.</p><p>And that is <em>one</em> inspection of <em>one</em> machine at <em>one</em> point in time.</p><p>The conclusion is not that this is difficult. It is that it is the wrong objective. Exhaustive high-resolution coverage of a megamachine is not a target to be approached with better hardware; it is outside the feasible region by a wide margin and will remain so. Every real inspection is a sample, and the quality of an inspection is therefore determined by the quality of the sampling decision.</p>"
+  },
+  {
+    type: "diagram",
+    svg: "<svg viewBox=\"0 0 760 340\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"ui-monospace,Menlo,monospace\"><rect width=\"760\" height=\"340\" fill=\"#fff\"/><text x=\"40\" y=\"30\" font-size=\"10.5\" fill=\"#8b95a1\" letter-spacing=\"1.3\">SPATIAL DYNAMIC RANGE OF A MEGAMACHINE INSPECTION</text><line x1=\"70\" y1=\"150\" x2=\"710\" y2=\"150\" stroke=\"#c9d0d7\" stroke-width=\"1.5\"/><g font-size=\"10\" fill=\"#b3bcc5\"><text x=\"70\" y=\"176\" text-anchor=\"middle\">10⁻⁴ m</text><text x=\"198\" y=\"176\" text-anchor=\"middle\">10⁻³ m</text><text x=\"326\" y=\"176\" text-anchor=\"middle\">10⁻² m</text><text x=\"454\" y=\"176\" text-anchor=\"middle\">10⁻¹ m</text><text x=\"582\" y=\"176\" text-anchor=\"middle\">10¹ m</text><text x=\"710\" y=\"176\" text-anchor=\"middle\">10² m</text></g><g stroke=\"#c9d0d7\"><line x1=\"70\" y1=\"144\" x2=\"70\" y2=\"156\"/><line x1=\"198\" y1=\"144\" x2=\"198\" y2=\"156\"/><line x1=\"326\" y1=\"144\" x2=\"326\" y2=\"156\"/><line x1=\"454\" y1=\"144\" x2=\"454\" y2=\"156\"/><line x1=\"582\" y1=\"144\" x2=\"582\" y2=\"156\"/><line x1=\"710\" y1=\"144\" x2=\"710\" y2=\"156\"/></g><g font-size=\"11\" fill=\"#2b3138\"><line x1=\"70\" y1=\"150\" x2=\"70\" y2=\"112\" stroke=\"#8f3232\"/><text x=\"76\" y=\"108\">Crack initiation, surface roughness</text><line x1=\"198\" y1=\"150\" x2=\"198\" y2=\"88\" stroke=\"#8f3232\"/><text x=\"204\" y=\"84\">Detectable weld-toe crack · bolt loosening</text><line x1=\"326\" y1=\"150\" x2=\"326\" y2=\"64\" stroke=\"#8a6d1f\"/><text x=\"332\" y=\"60\">Gear pitting · wear step · pin wear</text></g><g font-size=\"11\" fill=\"#2b3138\"><line x1=\"454\" y1=\"150\" x2=\"454\" y2=\"200\" stroke=\"#8a6d1f\"/><text x=\"460\" y=\"216\">Plate buckling · liner wear</text><line x1=\"582\" y1=\"150\" x2=\"582\" y2=\"228\" stroke=\"#2f6b4f\"/><text x=\"588\" y=\"244\">Boom section · house · tub</text><line x1=\"710\" y1=\"150\" x2=\"710\" y2=\"256\" stroke=\"#2f6b4f\"/><text x=\"706\" y=\"272\" text-anchor=\"end\">Whole-machine extent</text></g><path d=\"M70 300 L710 300\" stroke=\"#8a4b2a\" stroke-width=\"1.4\"/><path d=\"M70 294 L70 306 M710 294 L710 306\" stroke=\"#8a4b2a\" stroke-width=\"1.4\"/><text x=\"390\" y=\"322\" font-size=\"10.5\" fill=\"#8a4b2a\" text-anchor=\"middle\" letter-spacing=\"1\">SIX ORDERS OF MAGNITUDE — NO SINGLE SENSOR SPANS THIS</text></svg>",
+    caption: "The scale ladder from actionable defect to whole-machine extent. Every practical sensing modality occupies a narrow window on this axis: photogrammetry and lidar sit at the coarse end, ultrasonic and magnetic-particle methods at the fine end, and nothing covers both. An inspection architecture is therefore necessarily a hierarchy of modalities, with a decision procedure that routes the fine instruments to a small fraction of the surface.",
+    captionPrefix: "FIG. 01",
+    alt: "A logarithmic scale line running from ten to the minus four metres to ten squared metres. Features are marked along it: crack initiation and surface roughness at the finest end, detectable weld-toe cracks and bolt loosening at one millimetre, gear pitting and pin wear at one centimetre, plate buckling and liner wear at ten centimetres, boom sections and the machine house at ten metres, and whole-machine extent at one hundred metres. A bracket spans the entire axis, labelled: six orders of magnitude, no single sensor spans this."
+  },
+  {
+    type: "section_head",
+    number: "/03",
+    title: "Damage is not visible in a single frame",
+    anchor: "damage-is-not-visible-in-a-single-frame"
+  },
+  {
+    type: "prose",
+    html: "<p>The second structural fact is less obvious than the first and does more work.</p><p>The structural health monitoring literature settled this question some time ago, and it is worth quoting the conclusion in the form the field gave it. In their axiomatic treatment, Worden <em>et al.</em> (2007) state that the assessment of damage requires a comparison between two system states. Damage, in other words, is not an attribute of a structure at an instant. It is a <em>difference</em> between the structure now and the structure previously — and where \"previously\" is unavailable, damage identification degrades from measurement to inference from a population.</p><p><strong>Concept</strong></p><h3>Damage as a two-state comparison</h3><p>A weld with a two-millimetre indication may be perfectly acceptable — if the indication is a fabrication feature that has been there since 1994 and has not changed. The same indication is a serious finding if it was absent at the last inspection.</p><p>The image is identical in both cases. What differs is the history. No improvement in the classifier resolves this, because the information required is not present in the input.</p><p>This is the single most consequential difference between industrial inspection and the benchmark computer-vision tasks that inspection models are usually adapted from. Object detection asks <em>what is in this frame</em>. Inspection asks <em>what changed since the last one</em>, and the second question requires an addressable, registered memory that the first does not.</p><p>Worden <em>et al.</em> make a further point with direct bearing on how autonomous inspection should be built: unsupervised methods can detect that something has changed, but classifying <em>what</em> the damage is, and how severe, requires supervised learning on labelled examples of that damage class. For megamachines this is a real obstacle, because catastrophic failures are rare by design and labelled examples of the failure modes that matter are correspondingly scarce.</p><p>The practical consequence is that anomaly detection against the machine's own history is achievable, while confident severity classification generally is not — and an architecture that promises the second will disappoint.</p>"
+  },
+  {
+    type: "section_head",
+    number: "/04",
+    title: "Consequence I: the map outranks the model",
+    anchor: "consequence-i-the-map-outranks-the-model"
+  },
+  {
+    type: "prose",
+    html: "<p>If inspection is comparison, then the artefact that carries the value is the registered spatial record, not the network that queries it. This reverses the usual ordering of concerns and we think it is the most important practical implication in this article.</p><p>What is needed is a persistent, metrically accurate, georeferenced representation of the machine, to which every observation from every visit is registered, so that \"this weld\" is a stable address rather than a description. The enabling techniques exist and have matured quickly. Neural radiance fields (Mildenhall <em>et al.</em>, 2020) and, more usefully for this application, 3D Gaussian splatting (Kerbl <em>et al.</em>, 2023) produce high-fidelity reconstructions with real-time rendering, which makes visual comparison across visits practical rather than theoretical. Rigid registration between successive scans rests on the iterative closest point family of algorithms (Besl and McKay, 1992) and its many descendants.</p><p>The difficulty is drift. Simultaneous localisation and mapping accumulates error over trajectory length, and a survey path around a hundred-metre machine is long, geometrically repetitive, and rich in self-similar structure — trusses of near-identical bays are close to a worst case for place recognition and loop closure. Cadena <em>et al.</em> (2016) survey the failure modes precisely: perceptual aliasing, drift in the absence of loop closures, and the fragility of data association in repetitive environments.</p><p>Millimetre-scale comparison across visits therefore cannot rely on SLAM alone. It requires metric anchoring — surveyed targets, fiducials permanently affixed to the structure, or a total station — which is unglamorous, entirely standard in surveying practice, and routinely omitted from robotics proposals.</p>"
+  },
+  {
+    type: "diagram",
+    svg: "<svg viewBox=\"0 0 760 350\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"ui-monospace,Menlo,monospace\"><rect width=\"760\" height=\"350\" fill=\"#fff\"/><text x=\"40\" y=\"28\" font-size=\"10.5\" fill=\"#8b95a1\" letter-spacing=\"1.3\">INSPECTION AS REGISTERED COMPARISON ACROSS VISITS</text><g><rect x=\"60\" y=\"60\" width=\"150\" height=\"105\" fill=\"#f6f7f8\" stroke=\"#c9d0d7\"/><text x=\"135\" y=\"52\" font-size=\"10\" fill=\"#5d6873\" text-anchor=\"middle\">VISIT n−2</text><path d=\"M85 130 L125 100 L165 118 L190 96\" stroke=\"#8b95a1\" stroke-width=\"1.5\" fill=\"none\"/><circle cx=\"125\" cy=\"100\" r=\"3\" fill=\"#2f6b4f\"/><rect x=\"255\" y=\"60\" width=\"150\" height=\"105\" fill=\"#f6f7f8\" stroke=\"#c9d0d7\"/><text x=\"330\" y=\"52\" font-size=\"10\" fill=\"#5d6873\" text-anchor=\"middle\">VISIT n−1</text><path d=\"M280 130 L320 100 L360 118 L385 96\" stroke=\"#8b95a1\" stroke-width=\"1.5\" fill=\"none\"/><circle cx=\"320\" cy=\"100\" r=\"4.5\" fill=\"#8a6d1f\"/><rect x=\"450\" y=\"60\" width=\"150\" height=\"105\" fill=\"#f6f7f8\" stroke=\"#c9d0d7\"/><text x=\"525\" y=\"52\" font-size=\"10\" fill=\"#5d6873\" text-anchor=\"middle\">VISIT n</text><path d=\"M475 130 L515 100 L555 118 L580 96\" stroke=\"#8b95a1\" stroke-width=\"1.5\" fill=\"none\"/><circle cx=\"515\" cy=\"100\" r=\"6.5\" fill=\"#8f3232\"/></g><text x=\"215\" y=\"118\" font-size=\"16\" fill=\"#c9d0d7\">→</text><text x=\"410\" y=\"118\" font-size=\"16\" fill=\"#c9d0d7\">→</text><path d=\"M 640 112 L 690 112\" stroke=\"#8a4b2a\" stroke-width=\"1.5\"/><path d=\"M 683 107 L 690 112 L 683 117\" stroke=\"#8a4b2a\" stroke-width=\"1.5\" fill=\"none\"/><text x=\"700\" y=\"106\" font-size=\"10\" fill=\"#8a4b2a\">GROWTH</text><text x=\"700\" y=\"119\" font-size=\"10\" fill=\"#8a4b2a\">RATE</text><text x=\"700\" y=\"132\" font-size=\"10\" fill=\"#8a4b2a\">→ ACTION</text><line x1=\"60\" y1=\"200\" x2=\"600\" y2=\"200\" stroke=\"#e2e6ea\"/><text x=\"60\" y=\"228\" font-size=\"11\" fill=\"#2b3138\">Same weld, addressed by a stable identifier across all three visits</text><text x=\"60\" y=\"250\" font-size=\"11\" fill=\"#5d6873\">Any single frame supports only: \"an indication is present\"</text><text x=\"60\" y=\"272\" font-size=\"11\" fill=\"#5d6873\">The registered sequence supports: \"it is 2.1 mm and growing at 0.4 mm per quarter\"</text><rect x=\"60\" y=\"292\" width=\"540\" height=\"34\" fill=\"#faf7f5\" stroke=\"#e2d5cc\"/><text x=\"72\" y=\"313\" font-size=\"10.5\" fill=\"#8a4b2a\">REGISTRATION ERROR IS THE BINDING CONSTRAINT: IF IT EXCEEDS THE FEATURE, THE COMPARISON IS NOISE</text></svg>",
+    caption: "Why the persistent record is the asset. A single observation supports only a presence claim. A registered sequence supports a growth rate, and a growth rate is what converts an observation into a maintenance decision with a date attached. Registration accuracy, not classifier accuracy, sets the smallest change the system can resolve.",
+    captionPrefix: "FIG. 02",
+    alt: "Three panels in a row representing inspection visits n minus two, n minus one, and n. Each shows the same weld profile with an indication marked on it, and the marked indication grows larger from panel to panel. An arrow leads from the sequence to a label reading growth rate, then action. Text beneath explains that any single frame supports only the claim that an indication is present, while the registered sequence supports a measured size and a growth rate per quarter. A highlighted bar notes that registration error is the binding constraint: if it exceeds the feature, the comparison is noise."
+  },
+  {
+    type: "prose",
+    html: "<p>We would put the design rule as follows: the smallest change an inspection system can detect is bounded by its registration error, not by its sensor resolution. A system with a superb camera and five millimetres of pose uncertainty cannot track a two-millimetre crack, whatever its classifier reports.</p>"
+  },
+  {
+    type: "section_head",
+    number: "/05",
+    title: "Consequence II: attention allocation is the hard problem",
+    anchor: "consequence-ii-attention-allocation-is-the-hard-problem"
+  },
+  {
+    type: "prose",
+    html: "<p>If complete coverage is infeasible and inspection is therefore a sample, then the central algorithmic question is not <em>what is in this image</em> but <em>where should the next hour of sensing be spent</em>.</p><p>This question has a long history in vision under the heading of active perception. Bajcsy (1988) argued that perception is not passive reception but a purposive activity in which the observer controls the sensing parameters — where to look, at what resolution, under what illumination — in service of a task. Aloimonos <em>et al.</em> (1988) showed the complementary result that several classical vision problems which are ill-posed for a passive observer become well-posed for an active one. In robotics the same idea appears as the next-best-view problem, formulated by Connolly (1985) and pursued since as a question of choosing viewpoints that maximise expected information gain.</p><p>Inspection needs a modification of that objective, and the modification matters.</p><p><strong>Concept</strong></p><h3>Information gain is the wrong utility; risk reduction is the right one</h3><p>Classical next-best-view planning selects the viewpoint maximising expected information gain about the scene — reducing entropy over an occupancy or surface model.</p><pre><code>v* = argmax_v I(S ; O_v)</code></pre><p>For inspection this is subtly wrong. A large, uniform, well-characterised, lightly loaded plate yields plenty of information per unit sensing time and almost no risk reduction, because nothing there was going to fail. A small, geometrically awkward, highly stressed weld detail yields little information and enormous risk reduction.</p><p>The correct objective weights information by consequence — expected reduction in undetected risk, not expected reduction in uncertainty:</p><pre><code>v* = argmax_v Σᵢ C(dᵢ) · P(dᵢ) · ΔPOD(dᵢ | v)</code></pre><p>where <em>C</em> is the consequence of failure at detail <em>i</em>, <em>P</em> the prior probability that damage is present there, and <em>ΔPOD</em> the improvement in detection probability that this viewpoint and modality would deliver. Inspection planning is a budgeted risk-reduction problem, and it has been solved as one by good inspectors for a century without being written down.</p><p>The formulation immediately raises the question of where the prior <em>P(d<sub>i</sub>)</em> comes from, and the answer is the most valuable data an operator possesses: the fatigue-critical details identified in the original structural analysis; the findings history of this machine; the findings history of sibling machines in the fleet; the load and duty history; and the accumulated judgement of inspectors who know that this particular class of dragline cracks at that particular boom chord connection.</p><blockquote><p>A crack found on unit three should raise the prior on the same detail on unit seven. In most operations it does not, because the two findings live in different documents.</p></blockquote><p>This is a database problem wearing the clothes of a robotics problem, and it is where the largest immediate gains are available. A fleet-wide, detail-addressed findings registry improves inspection outcomes more, and sooner, than any improvement in classifier accuracy.</p>"
+  },
+  {
+    type: "section_head",
+    number: "/06",
+    title: "Consequence III: probability of detection, not accuracy",
+    anchor: "consequence-iii-probability-of-detection-not-accuracy"
+  },
+  {
+    type: "prose",
+    html: "<p>The third consequence concerns evaluation, and it is where the machine learning and non-destructive testing communities talk past each other most severely.</p><p>Machine learning reports accuracy, precision, recall and F<sub>1</sub> on a held-out set. These are properties of a model <em>and a dataset jointly</em>, and for inspection they are close to uninterpretable, because the flaw-size distribution of the evaluation set is arbitrary. A detector reporting 97% recall on a set dominated by ten-millimetre cracks tells you nothing about its behaviour at two millimetres, which is the only region where the answer changes a decision.</p><p>The NDT community solved this in the 1970s and the solution is the probability of detection curve.</p><p><strong>Concept</strong></p><h3>POD, a<sub>90</sub> and a<sub>90/95</sub></h3><p>A POD curve expresses detection probability as a function of flaw size for a given inspection procedure, equipment and inspector — not as a single number but as a function (Georgiou, 2006).</p><p><strong>a<sub>90</sub></strong> is the flaw size at which the procedure detects 90% of flaws. <strong>a<sub>90/95</sub></strong> is the 95% lower confidence bound on that estimate, and it is the value used for design and interval-setting, because it is honest about the sampling uncertainty in the underlying trial.</p><p>POD is always reported alongside a false call rate. A procedure can be driven to high POD by lowering its threshold until it calls everything, which is why the pair must be quoted together — the analogue of an ROC curve, but conditioned on physical flaw size rather than on an abstract score.</p><p>Inspection intervals are set from a<sub>90/95</sub> and a crack growth rate: the interval must be short enough that a flaw just below the detection threshold at one inspection cannot reach critical size before the next.</p>"
+  },
+  {
+    type: "diagram",
+    svg: "<svg viewBox=\"0 0 760 380\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"ui-monospace,Menlo,monospace\"><rect width=\"760\" height=\"380\" fill=\"#fff\"/><text x=\"40\" y=\"28\" font-size=\"10.5\" fill=\"#8b95a1\" letter-spacing=\"1.3\">PROBABILITY OF DETECTION — THE METRIC INSPECTION ACTUALLY USES</text><line x1=\"110\" y1=\"310\" x2=\"700\" y2=\"310\" stroke=\"#c9d0d7\"/><line x1=\"110\" y1=\"310\" x2=\"110\" y2=\"60\" stroke=\"#c9d0d7\"/><text x=\"405\" y=\"350\" font-size=\"10.5\" fill=\"#5d6873\" text-anchor=\"middle\" letter-spacing=\"1\">FLAW SIZE a</text><text x=\"52\" y=\"185\" font-size=\"10.5\" fill=\"#5d6873\" text-anchor=\"middle\" letter-spacing=\"1\" transform=\"rotate(-90 52 185)\">POD(a)</text><g font-size=\"9.5\" fill=\"#b3bcc5\"><text x=\"104\" y=\"314\" text-anchor=\"end\">0</text><text x=\"104\" y=\"190\" text-anchor=\"end\">0.5</text><text x=\"104\" y=\"90\" text-anchor=\"end\">0.9</text><text x=\"104\" y=\"66\" text-anchor=\"end\">1.0</text></g><line x1=\"110\" y1=\"85\" x2=\"700\" y2=\"85\" stroke=\"#eef1f4\"/><line x1=\"110\" y1=\"185\" x2=\"700\" y2=\"185\" stroke=\"#eef1f4\"/><path d=\"M110 308 C 220 306, 280 290, 330 230 S 420 100, 500 85 S 620 70, 700 68\" stroke=\"#8a4b2a\" stroke-width=\"2.2\" fill=\"none\"/><path d=\"M110 309 C 250 308, 330 296, 390 240 S 490 105, 570 88 S 650 74, 700 72\" stroke=\"#c9a99a\" stroke-width=\"1.4\" fill=\"none\" stroke-dasharray=\"4 3\"/><line x1=\"500\" y1=\"85\" x2=\"500\" y2=\"310\" stroke=\"#2f6b4f\" stroke-width=\"1.2\" stroke-dasharray=\"4 3\"/><circle cx=\"500\" cy=\"85\" r=\"4.5\" fill=\"#2f6b4f\"/><text x=\"506\" y=\"330\" font-size=\"10.5\" fill=\"#2f6b4f\">a₉₀</text><line x1=\"570\" y1=\"88\" x2=\"570\" y2=\"310\" stroke=\"#8f3232\" stroke-width=\"1.2\" stroke-dasharray=\"4 3\"/><circle cx=\"570\" cy=\"88\" r=\"4.5\" fill=\"#8f3232\"/><text x=\"578\" y=\"330\" font-size=\"10.5\" fill=\"#8f3232\">a₉₀/₉₅ — THE DESIGN VALUE</text><text x=\"330\" y=\"120\" font-size=\"10\" fill=\"#8a4b2a\">POD CURVE (POINT ESTIMATE)</text><text x=\"330\" y=\"136\" font-size=\"10\" fill=\"#c9a99a\">95% LOWER CONFIDENCE BOUND</text><rect x=\"130\" y=\"215\" width=\"200\" height=\"76\" fill=\"#f6f7f8\" stroke=\"#e2e6ea\"/><text x=\"142\" y=\"236\" font-size=\"10\" fill=\"#5d6873\">A SINGLE \"97% ACCURATE\"</text><text x=\"142\" y=\"252\" font-size=\"10\" fill=\"#5d6873\">COLLAPSES THIS WHOLE CURVE</text><text x=\"142\" y=\"268\" font-size=\"10\" fill=\"#5d6873\">TO ONE POINT — AND HIDES</text><text x=\"142\" y=\"284\" font-size=\"10\" fill=\"#5d6873\">THE REGION THAT MATTERS</text><path d=\"M 336 250 L 400 225\" stroke=\"#c9d0d7\" stroke-width=\"1\"/><rect x=\"110\" y=\"290\" width=\"180\" height=\"20\" fill=\"#8f3232\" opacity=\".07\"/><text x=\"118\" y=\"304\" font-size=\"9\" fill=\"#8f3232\">FLAWS PRESENT BUT UNDETECTABLE — SETS THE INTERVAL</text></svg>",
+    caption: "A probability of detection curve, the standard evaluation instrument in non-destructive testing. Detection probability is expressed as a function of flaw size, with a confidence bound; a90/95 is the value carried into interval-setting. Any autonomous inspection system intended to substitute for a qualified procedure must be characterised this way, and vanishingly few published results are.",
+    captionPrefix: "FIG. 03",
+    alt: "A probability of detection curve, plotting detection probability against flaw size. The solid curve rises from near zero at small flaw sizes through fifty per cent and flattens above ninety per cent. A dashed lower curve shows the ninety-five per cent lower confidence bound. Two vertical markers are shown: a-ninety, where the point estimate crosses ninety per cent detection, and a-ninety-ninety-five, further to the right, where the confidence bound crosses it, labelled as the design value. A shaded band at the low end marks flaws present but undetectable, annotated as the region that sets the inspection interval."
+  },
+  {
+    type: "prose",
+    html: "<p>We regard this as the single clearest actionable recommendation in this article. An autonomous inspection capability that reports classification accuracy has not been qualified for inspection service. It has been benchmarked. Qualification means a POD trial on representative specimens with known flaw populations, a false call rate quoted alongside, and a stated envelope of surface condition, access geometry and lighting outside which the figures do not hold. That is a substantial and expensive undertaking, and it is the difference between a pilot and a procedure.</p>"
+  },
+  {
+    type: "section_head",
+    number: "/07",
+    title: "The sensor stack past RGB",
+    anchor: "the-sensor-stack-past-rgb"
+  },
+  {
+    type: "prose",
+    html: "<p>Figure 1 established that no modality spans the scale range. A workable architecture is therefore explicitly hierarchical, with each tier triaging for the next.</p>"
+  },
+  {
+    type: "comparison_table",
+    columns: [
+      "Tier",
+      "Modality",
+      "Resolves",
+      "Role"
+    ],
+    rows: [
+      {
+        cells: [
+          "Survey",
+          "Photogrammetry, lidar from UAV or mast",
+          "10⁻² – 10² m",
+          "Geometry, gross deformation, registration frame"
+        ]
+      },
+      {
+        cells: [
+          "Screen",
+          "High-resolution visual, close-range",
+          "10⁻⁴ – 10⁻¹ m",
+          "Surface change detection against registry"
+        ]
+      },
+      {
+        cells: [
+          "Screen",
+          "Thermography",
+          "Thermal contrast",
+          "Bearing and drive anomaly; misleading on fluid leaks"
+        ]
+      },
+      {
+        cells: [
+          "Screen",
+          "Vibration, acoustic emission",
+          "Sub-surface activity",
+          "Continuous, unattended, sees what optics cannot"
+        ]
+      },
+      {
+        cells: [
+          "Confirm",
+          "Ultrasonic, eddy current, magnetic particle",
+          "10⁻⁴ – 10⁻² m, sub-surface",
+          "Sizing and characterisation at candidate locations"
+        ]
+      },
+      {
+        cells: [
+          "Adjudicate",
+          "Qualified human inspector",
+          "—",
+          "Cause attribution, fitness-for-service, disposition"
+        ]
+      }
+    ]
+  },
+  {
+    type: "prose",
+    html: "<p>Two observations about this stack. First, acoustic emission and vibration are the modalities where autonomy most clearly beats human practice, and they are underweighted in most autonomous inspection proposals because they produce no picture. A human inspector visits quarterly; a permanently installed sensor listens continuously, and cracks are active — they emit as they grow. Continuous listening detects a growing crack that a quarterly visual survey will miss for months by construction.</p><p>Second, thermography deserves a caution. It is genuinely excellent for rotating equipment and electrical faults, and it is frequently misapplied to fluid leaks, where a pressurised pinhole may present <em>cooler</em> than its surroundings through expansion of the escaping fluid while a flow restriction with no leak at all presents hotter. Thermography answers a thermal question; it is regularly asked a hydraulic one.</p>"
+  },
+  {
+    type: "section_head",
+    number: "/08",
+    title: "The future of work",
+    anchor: "the-future-of-work"
+  },
+  {
+    type: "prose",
+    html: "<p>The inspector's job does not disappear. It divides, and the division is uncomfortable in a specific way.</p><p>What automates is acquisition: the climbing, the rope access, the confined-space entry, the photography, the note-taking, the transcription into a report. This is the majority of the hours and much of the risk, and its removal is straightforwardly good. Nobody should be at height in wind to photograph a weld that a drone can photograph.</p><p>What remains is the residue: cause attribution, fitness-for-service judgement, and disposition. These are the difficult, consequential, sparsely exercised parts of the work — and Bainbridge's (1983) analysis says exactly what happens next. Automating the routine portion of a task removes the practice that sustained competence at the exceptional portion, while making the exceptional portion the whole of the remaining job. The inspector is left with only the hard cases and fewer opportunities to stay sharp for them.</p><p>There is a second loss, less discussed and in our view more serious.</p><p><strong>Concept</strong></p><h3>The prior is tacit, and automation erodes its source</h3><p>Section 5 established that risk-weighted allocation needs a prior over where damage is likely. On real machines that prior largely exists as tacit knowledge — Polanyi's (1966) observation that we know more than we can tell. An experienced inspector walks to a particular chord connection first, and often cannot fully articulate why.</p><p>That knowledge is the input the allocation algorithm most needs, and it is held by the people whose routine practice the automation is about to remove. A system that automates acquisition without first capturing the prior degrades the very expertise it depends on.</p><p>The practical instruction follows directly and is time-sensitive: elicit and encode the prior now, from the inspectors who currently hold it, as structured, detail-addressed data — not as prose in a report but as annotations on the asset model, attached to the specific weld, at the specific location, with the reasoning recorded. This is unglamorous knowledge-engineering work and it has a closing window.</p><p>The role that emerges from all this is not \"robot supervisor\". It is closer to a reliability engineer who curates an asset model: someone who maintains the registry, sets and revises the risk priors, adjudicates the exceptions the system escalates, and owns the inspection strategy that the fleet of machines executes. That is a more skilled job than the one it replaces, and there will be fewer of them.</p>"
+  },
+  {
+    type: "section_head",
+    number: "/09",
+    title: "What the architecture looks like",
+    anchor: "what-the-architecture-looks-like"
+  },
+  {
+    type: "prose",
+    html: "<p>Assembling the argument:</p><ol><li><strong>A metrically anchored asset model</strong> as the system of record — permanent fiducials, surveyed control, every observation registered to a stable detail identifier.</li> <li><strong>Continuous passive monitoring</strong> where it is cheap and informative: vibration and acoustic emission on rotating and highly stressed elements, reporting into the same registry.</li> <li><strong>Periodic autonomous survey</strong> producing registered geometry and imagery, with change detection against the registry rather than classification within the frame.</li> <li><strong>Risk-weighted allocation</strong> converting change candidates, priors and consequence into a ranked, budgeted work list for the fine instruments.</li> <li><strong>Confirmation by qualified NDT</strong>, deployed to a small number of locations, characterised by POD rather than accuracy.</li> <li><strong>Human adjudication and disposition</strong>, with the reasoning captured back into the registry so the prior improves.</li></ol><p>Note where the learned components sit. They are in change detection and candidate ranking — reversible, advisory, and consequential only through a human decision. Nothing in this architecture asks a model to certify a structure as fit for service, and nothing needs to.</p>"
+  },
+  {
+    type: "section_head",
+    number: "/10",
+    title: "Conclusion",
+    anchor: "conclusion"
+  },
+  {
+    type: "prose",
+    html: "<p>The question of how physical AI will inspect megamachines is usually posed as a perception question, and posed that way it has no satisfying answer, because the arithmetic of coverage defeats it and the two-state nature of damage defeats it again.</p><p>Posed as a question about memory and allocation, it becomes tractable and rather encouraging. Build the registry. Anchor it metrically. Capture the prior from the people who hold it, while they are still holding it. Let continuous cheap sensing carry the load between visits. Spend the expensive instruments where risk-weighted expected detection is highest. Qualify the whole thing with POD curves rather than accuracy figures. Keep the human at disposition and feed their reasoning back into the prior.</p><blockquote><p>The bottleneck in autonomous inspection is not what the robot can see. It is whether the system remembers what it saw last time, and whether it knows where to look next.</p></blockquote><p>None of this requires a capability that does not exist. Most of it requires organisational patience and a database, which are in shorter supply than models.</p>"
+  },
+  {
+    type: "callout",
+    tone: "note",
+    title: "A note on sourcing",
+    body: "The coverage calculation in section 2 is our own, computed from stated assumptions and intended as an order-of-magnitude argument. Surface area for a large dragline is an estimate. Figures 2 and 3 are explanatory schematics, not plotted data."
+  },
+  {
+    type: "as_of_stamp",
+    verifiedOn: "2026-09-11",
+    note: "Deployment figures and model-capability claims decay quickly"
+  },
+  {
+    type: "references",
+    entries: [
+      {
+        id: "aloimonos-1988",
+        text: "Aloimonos, J., Weiss, I. and Bandyopadhyay, A. (1988) 'Active vision', International Journal of Computer Vision, 1(4), pp. 333–356."
+      },
+      {
+        id: "bainbridge-1983",
+        text: "Bainbridge, L. (1983) 'Ironies of automation', Automatica, 19(6), pp. 775–779."
+      },
+      {
+        id: "bajcsy-1988",
+        text: "Bajcsy, R. (1988) 'Active perception', Proceedings of the IEEE, 76(8), pp. 966–1005."
+      },
+      {
+        id: "besl-1992",
+        text: "Besl, P.J. and McKay, N.D. (1992) 'A method for registration of 3-D shapes', IEEE Transactions on Pattern Analysis and Machine Intelligence, 14(2), pp. 239–256."
+      },
+      {
+        id: "cadena-2016",
+        text: "Cadena, C., Carlone, L., Carrillo, H., Latif, Y., Scaramuzza, D., Neira, J., Reid, I. and Leonard, J.J. (2016) 'Past, present, and future of simultaneous localization and mapping: toward the robust-perception age', IEEE Transactions on Robotics, 32(6), pp. 1309–1332."
+      },
+      {
+        id: "connolly-1985",
+        text: "Connolly, C. (1985) 'The determination of next best views', Proceedings of the IEEE International Conference on Robotics and Automation (ICRA), pp. 432–435."
+      },
+      {
+        id: "farrar-2007",
+        text: "Farrar, C.R. and Worden, K. (2007) 'An introduction to structural health monitoring', Philosophical Transactions of the Royal Society A, 365(1851), pp. 303–315."
+      },
+      {
+        id: "georgiou-2006",
+        text: "Georgiou, G.A. (2006) Probability of Detection (PoD) Curves: Derivation, Applications and Limitations. Research Report 454. Sudbury: HSE Books, for the Health and Safety Executive."
+      },
+      {
+        id: "kerbl-2023",
+        text: "Kerbl, B., Kopanas, G., Leimkühler, T. and Drettakis, G. (2023) '3D Gaussian splatting for real-time radiance field rendering', ACM Transactions on Graphics, 42(4), pp. 1–14."
+      },
+      {
+        id: "mildenhall-2020",
+        text: "Mildenhall, B., Srinivasan, P.P., Tancik, M., Barron, J.T., Ramamoorthi, R. and Ng, R. (2020) 'NeRF: representing scenes as neural radiance fields for view synthesis', Proceedings of the European Conference on Computer Vision (ECCV), pp. 405–421."
+      },
+      {
+        id: "paris-1963",
+        text: "Paris, P. and Erdogan, F. (1963) 'A critical analysis of crack propagation laws', Journal of Basic Engineering, 85(4), pp. 528–533."
+      },
+      {
+        id: "polanyi-1966",
+        text: "Polanyi, M. (1966) The Tacit Dimension. New York: Doubleday."
+      },
+      {
+        id: "suresh-1998",
+        text: "Suresh, S. (1998) Fatigue of Materials. 2nd edn. Cambridge: Cambridge University Press."
+      },
+      {
+        id: "worden-2007",
+        text: "Worden, K., Farrar, C.R., Manson, G. and Park, G. (2007) 'The fundamental axioms of structural health monitoring', Proceedings of the Royal Society A, 463(2082), pp. 1639–1664."
+      }
+    ]
+  },
+  {
+    type: "cta_block",
+    heading: "Hydraulic components for large plant",
+    body: "Much of what an inspection programme finds on a megamachine is a hydraulic or pressure-containment interface. We supply hose, fittings, adapters and seals for mining, port and heavy plant across 126 markets. Send us the schedule and we will quote against it.",
+    quoteLabel: "Request a quote"
+  }
+],
+}
+
+export default ARTICLE

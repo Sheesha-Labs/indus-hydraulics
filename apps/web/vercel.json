@@ -3,5 +3,5 @@
   "regions": [
     "bom1"
   ],
-  "ignoreCommand": "if [ \"$VERCEL_ENV\" = \"production\" ]; then exit 1; elif echo \"$VERCEL_GIT_COMMIT_MESSAGE\" | grep -q \"\\[preview\\]\"; then exit 1; else exit 0; fi"
+  "ignoreCommand": "bash vercel-ignore-build.sh"
 }

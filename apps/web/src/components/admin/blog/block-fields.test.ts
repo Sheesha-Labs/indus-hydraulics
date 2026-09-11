@@ -25,6 +25,10 @@ import { BLOCK_FORMS, newRow, type Field, type ScalarField } from './block-field
 const SAMPLES: Record<string, string> = {
   verifiedOn: '2026-08-17',
   slug: 'hydraulic-hose-fittings',
+  // A diagram's markup must parse as an <svg> fragment, not merely be non-empty.
+  svg: '<svg viewBox="0 0 10 10"></svg>',
+  // A reference anchor is kebab-case, for the same reason a slug is.
+  id: 'bainbridge-1983',
 }
 
 /** Type a plausible value into every field the form exposes. */
