@@ -4,6 +4,7 @@ import {
   buildSitemapEntries,
   buildStaticEntries,
   designedIndustrySlugs,
+  isProductIndexable,
   marketsOrdered,
   serviceAreasOrdered,
   REPLACEMENT_INDEX_MIN_MATCHES,
@@ -13,6 +14,7 @@ import { getReplacementBrands, getReplacementSitemapKeys } from './replacement-d
 import { STATIC_SITEMAP_PATHS } from './crawl-policy'
 import { redirectSourcePaths } from './redirects'
 import { staticRedirectSources } from './static-redirects'
+import { newestDate } from './sitemap-xml'
 
 /**
  * The sitemap, split by section.
@@ -92,7 +94,7 @@ async function pagesSection(): Promise<MetadataRoute.Sitemap> {
     'cms_page',
     cmsPages.map((p) => ({
       slug: p.slug,
-      lastModified: p.seoUpdatedAt ?? p.updatedAt,
+      lastModified: newestDate(p.seoUpdatedAt, p.updatedAt),
       excludeFromSitemap: p.excludeFromSitemap,
       robotsIndex: p.robotsIndex,
       sitemapPriority: p.sitemapPriority ? Number(p.sitemapPriority) : null,
@@ -103,13 +105,36 @@ async function pagesSection(): Promise<MetadataRoute.Sitemap> {
   return [...buildStaticEntries(BASE_URL, STATIC_SITEMAP_PATHS), ...cmsEntries]
 }
 
+/**
+ * Products that clear the content gate, dated by their last visible change.
+ *
+ * THE GATE (2026-09-24). `isProductIndexable` is the same predicate the PDP
+ * uses for its robots meta, so a product is never submitted here and refused
+ * there. 74 of 1,487 active products fall below it — stubs of 17–67 words with
+ * no size table — and are left for Google to find through internal links
+ * rather than offered as pages we vouch for. See
+ * `PRODUCT_INDEX_MIN_CONTENT_SCORE`.
+ *
+ * THE DATE. `contentUpdatedAt`, not `updatedAt`. Prisma moves `updatedAt` on
+ * every write, and a bulk content-score recompute on 2026-08-25 had stamped
+ * 1,485 of 1,487 products with the same five minutes — a sitemap claiming the
+ * whole catalogue changed at once, which is how a crawler learns to ignore
+ * this host's dates. `contentUpdatedAt` is maintained by database triggers
+ * and moves only when something on the page changes.
+ *
+ * `seoUpdatedAt` still counts — a new title or description is a change to
+ * what Google shows — but as the NEWER of the two. It was `seoUpdatedAt ??
+ * updatedAt`, which reported the older date whenever the SEO panel had ever
+ * been saved.
+ */
 async function productsSection(): Promise<MetadataRoute.Sitemap> {
   const products = await db.product.findMany({
     where: { status: 'active' },
     select: {
       slug: true,
-      updatedAt: true,
+      contentUpdatedAt: true,
       seoUpdatedAt: true,
+      contentScore: true,
       excludeFromSitemap: true,
       robotsIndex: true,
       sitemapPriority: true,
@@ -122,9 +147,9 @@ async function productsSection(): Promise<MetadataRoute.Sitemap> {
     'product',
     products.map((p) => ({
       slug: p.slug,
-      lastModified: p.seoUpdatedAt ?? p.updatedAt,
+      lastModified: newestDate(p.contentUpdatedAt, p.seoUpdatedAt),
       excludeFromSitemap: p.excludeFromSitemap,
-      robotsIndex: p.robotsIndex,
+      robotsIndex: isProductIndexable(p),
       sitemapPriority: p.sitemapPriority ? Number(p.sitemapPriority) : null,
       sitemapChangeFreq: p.sitemapChangeFreq,
     }))
@@ -132,30 +157,27 @@ async function productsSection(): Promise<MetadataRoute.Sitemap> {
 }
 
 /**
- * NO `lastmod` HERE, AND THAT IS DELIBERATE — 2026-09-04.
+ * Categories and brands are dated by `contentUpdatedAt` — 2026-09-24.
  *
- * 448 sitemap URLs across categories, brands, industries and locations carry no
- * `<lastmod>`, which is a real weakness: a crawler has nothing to schedule on,
- * and 1,733 URLs on this domain are sitting in "Discovered – currently not
- * indexed", never fetched.
+ * Until then 448 sitemap URLs across categories, brands, industries and
+ * locations carried no `<lastmod>`, because these tables had no modification
+ * timestamp at all. The rejected shortcuts are still worth recording: `now()`
+ * says every shelf changed on every sitemap fetch, and a backfilled column says
+ * all 194 changed the day the migration ran. A crawler that catches a sitemap
+ * claiming change that did not happen learns to discount this host's dates.
  *
- * The fix is NOT to invent a date. `Category`, `Brand` and `Industry` have no
- * modification timestamp at all — only `seoUpdatedAt`, set when an editor opens
- * the SEO panel — and the two dates within reach are both lies: `now()` says
- * every shelf changed on every sitemap fetch, and a backfilled column says all
- * 194 changed the day the migration ran. A crawler that catches a sitemap
- * claiming daily change on a page that never changes learns to discount the
- * dates on this host, which costs more than the missing field.
- *
- * The honest fix is a real `updatedAt` on these tables, set by actual edits,
- * accumulating truthful dates from then on. That is a schema change and it is
- * tracked as follow-up work, not smuggled in here.
+ * `contentUpdatedAt` is maintained by database triggers — on the row's own
+ * copy, and on an active product joining, leaving or being renamed on the
+ * shelf. It was added NULL for every existing row, so these entries gain a
+ * `<lastmod>` one at a time, on their first real change. An entry with no date
+ * is honest; an entry with an invented one is not.
  */
 async function categoriesSection(): Promise<MetadataRoute.Sitemap> {
   const categories = await db.category.findMany({
     where: { isPublished: true },
     select: {
       slug: true,
+      contentUpdatedAt: true,
       seoUpdatedAt: true,
       excludeFromSitemap: true,
       robotsIndex: true,
@@ -169,7 +191,7 @@ async function categoriesSection(): Promise<MetadataRoute.Sitemap> {
     'category',
     categories.map((c) => ({
       slug: c.slug,
-      lastModified: c.seoUpdatedAt ?? undefined,
+      lastModified: newestDate(c.contentUpdatedAt, c.seoUpdatedAt),
       excludeFromSitemap: c.excludeFromSitemap,
       robotsIndex: c.robotsIndex,
       sitemapPriority: c.sitemapPriority ? Number(c.sitemapPriority) : null,
@@ -183,6 +205,7 @@ async function brandsSection(): Promise<MetadataRoute.Sitemap> {
     where: { isPublished: true },
     select: {
       slug: true,
+      contentUpdatedAt: true,
       seoUpdatedAt: true,
       excludeFromSitemap: true,
       robotsIndex: true,
@@ -196,7 +219,7 @@ async function brandsSection(): Promise<MetadataRoute.Sitemap> {
     'brand',
     brands.map((b) => ({
       slug: b.slug,
-      lastModified: b.seoUpdatedAt ?? undefined,
+      lastModified: newestDate(b.contentUpdatedAt, b.seoUpdatedAt),
       excludeFromSitemap: b.excludeFromSitemap,
       robotsIndex: b.robotsIndex,
       sitemapPriority: b.sitemapPriority ? Number(b.sitemapPriority) : null,
@@ -251,7 +274,7 @@ async function blogSection(): Promise<MetadataRoute.Sitemap> {
     'blog_post',
     blogPosts.map((p) => ({
       slug: p.slug,
-      lastModified: p.seoUpdatedAt ?? p.publishedAt ?? undefined,
+      lastModified: newestDate(p.seoUpdatedAt, p.publishedAt),
       excludeFromSitemap: p.excludeFromSitemap,
       robotsIndex: p.robotsIndex,
       sitemapPriority: p.sitemapPriority ? Number(p.sitemapPriority) : null,
@@ -266,7 +289,7 @@ async function blogSection(): Promise<MetadataRoute.Sitemap> {
     .filter((c) => !c.excludeFromSitemap && c.robotsIndex)
     .map((c) => ({
       url: `${BASE_URL}/blog/c/${c.slug}`,
-      lastModified: c.seoUpdatedAt ?? c.updatedAt,
+      lastModified: newestDate(c.seoUpdatedAt, c.updatedAt),
       changeFrequency: c.sitemapChangeFreq ?? ('weekly' as const),
       priority: c.sitemapPriority ? Number(c.sitemapPriority) : 0.6,
     }))
@@ -275,7 +298,7 @@ async function blogSection(): Promise<MetadataRoute.Sitemap> {
     .filter((a) => !a.excludeFromSitemap && a.robotsIndex)
     .map((a) => ({
       url: `${BASE_URL}/blog/author/${a.slug}`,
-      lastModified: a.seoUpdatedAt ?? a.updatedAt,
+      lastModified: newestDate(a.seoUpdatedAt, a.updatedAt),
       changeFrequency: a.sitemapChangeFreq ?? ('monthly' as const),
       priority: a.sitemapPriority ? Number(a.sitemapPriority) : 0.4,
     }))
@@ -302,7 +325,7 @@ async function servicesSection(): Promise<MetadataRoute.Sitemap> {
     .filter((c) => !c.excludeFromSitemap && c.robotsIndex)
     .map((c) => ({
       url: `${BASE_URL}/services/${c.slug}`,
-      lastModified: c.seoUpdatedAt ?? c.publishedAt ?? c.updatedAt,
+      lastModified: newestDate(c.seoUpdatedAt, c.publishedAt) ?? c.updatedAt,
       changeFrequency: c.sitemapChangeFreq ?? ('monthly' as const),
       priority: c.sitemapPriority ? Number(c.sitemapPriority) : 0.7,
     }))
@@ -313,6 +336,7 @@ async function industriesSection(): Promise<MetadataRoute.Sitemap> {
     where: { isPublished: true },
     select: {
       slug: true,
+      contentUpdatedAt: true,
       seoUpdatedAt: true,
       excludeFromSitemap: true,
       robotsIndex: true,
@@ -325,7 +349,7 @@ async function industriesSection(): Promise<MetadataRoute.Sitemap> {
     .filter((i) => !i.excludeFromSitemap && i.robotsIndex)
     .map((i) => ({
       url: `${BASE_URL}/industries/${i.slug}`,
-      lastModified: i.seoUpdatedAt ?? undefined,
+      lastModified: newestDate(i.contentUpdatedAt, i.seoUpdatedAt),
       changeFrequency: i.sitemapChangeFreq ?? ('monthly' as const),
       priority: i.sitemapPriority ? Number(i.sitemapPriority) : 0.6,
     }))

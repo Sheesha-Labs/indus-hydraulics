@@ -14,6 +14,7 @@ import {
   buildBreadcrumbLd,
   buildFaqLd,
   buildProductLd,
+  isProductIndexable,
   offersStainlessOnRequest,
   productAvailability,
   type ProductAvailability,
@@ -33,25 +34,6 @@ import AnalyticsEvent from '../../../../components/AnalyticsEvent'
 
 type Props = {
   params: Promise<{ slug: string }>
-}
-
-/**
- * Optional minimum content-depth score below which a PDP is emitted
- * with `noindex,follow`. Set via the `PRODUCT_CONTENT_NOINDEX_BELOW`
- * env var (a number 0–100). Unset / 0 / non-numeric = enforcement
- * disabled, which is the safe default for the live catalogue.
- *
- * Useful once the team starts enriching content: flip to 40 to stop
- * Google indexing thin stub pages while the editor team fills them
- * in. Crawl budget then concentrates on PDPs that are good enough to
- * earn citations.
- */
-function readContentNoindexThreshold(): number | null {
-  const raw = process.env.PRODUCT_CONTENT_NOINDEX_BELOW
-  if (!raw) return null
-  const parsed = Number.parseInt(raw, 10)
-  if (!Number.isFinite(parsed) || parsed <= 0) return null
-  return Math.max(1, Math.min(100, parsed))
 }
 
 /**
@@ -166,19 +148,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       )?.storagePath ?? null)
     : (product.images[0]?.media.storagePath ?? null)
 
-  // Content-depth gate (#7-3). When PRODUCT_CONTENT_NOINDEX_BELOW is
-  // set on Vercel, force noindex on PDPs that score below the
-  // threshold so Google doesn't waste crawl budget on stub pages.
-  // The admin's per-product robotsIndex flag still wins over this
-  // (an admin actively setting "index" wins regardless of score).
-  // Content score is now persisted on Product.contentScore (#7-3
-  // persistence). The admin / Inngest job recompute it on every
-  // mutation; we just read the column here.
-  const threshold = readContentNoindexThreshold()
-  const indexFlag =
-    threshold != null && product.contentScore < threshold && product.robotsIndex
-      ? false
-      : product.robotsIndex
+  // Content-depth gate. The same predicate decides whether the product is in
+  // the sitemap, so a page is never submitted there and then refused here, or
+  // the reverse. See PRODUCT_INDEX_MIN_CONTENT_SCORE for where the line sits.
+  const indexFlag = isProductIndexable(product)
 
   return pageMetadata({
     title: product.seoTitle ?? product.title,

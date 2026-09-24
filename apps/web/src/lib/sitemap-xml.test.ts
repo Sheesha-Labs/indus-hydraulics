@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { newestLastModified, renderSitemapIndex, renderUrlset } from './sitemap-xml'
+import { newestDate, newestLastModified, renderSitemapIndex, renderUrlset } from './sitemap-xml'
 
 describe('renderUrlset', () => {
   it('emits a valid urlset with the sitemaps.org namespace', () => {
@@ -105,5 +105,25 @@ describe('newestLastModified', () => {
       { lastModified: new Date('2026-08-01T00:00:00.000Z') },
     ])
     expect(result?.toISOString()).toBe('2026-08-01T00:00:00.000Z')
+  })
+})
+
+describe('newestDate', () => {
+  const older = new Date('2026-05-02T00:00:00Z')
+  const newer = new Date('2026-08-25T10:40:00Z')
+
+  // The bug this replaced: `seoUpdatedAt ?? updatedAt` picked the SEO date
+  // whenever one existed, even when the content had changed since.
+  it('prefers the newer date regardless of argument order', () => {
+    expect(newestDate(older, newer)).toEqual(newer)
+    expect(newestDate(newer, older)).toEqual(newer)
+  })
+
+  it('skips missing and invalid dates', () => {
+    expect(newestDate(null, undefined, new Date('nope'), older)).toEqual(older)
+  })
+
+  it('returns undefined rather than inventing a date', () => {
+    expect(newestDate(null, undefined)).toBeUndefined()
   })
 })

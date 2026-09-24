@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { db } from '@indus/db'
+import { PRODUCT_INDEX_MIN_CONTENT_SCORE } from '@indus/domain'
 
 export const metadata: Metadata = { title: 'Sitemap — Indus Admin' }
 
@@ -10,14 +11,26 @@ export const metadata: Metadata = { title: 'Sitemap — Indus Admin' }
  * and exclusions — it doesn't need to refetch the same payload.
  */
 export default async function SitemapPage() {
-  const [products, categories, brands, blogPosts, cmsPages, excluded, noindexed] = await Promise.all([
-    db.product.count({ where: { status: 'active', excludeFromSitemap: false, robotsIndex: true } }),
+  const [products, categories, brands, blogPosts, cmsPages, excluded, noindexed, thin] = await Promise.all([
+    // Mirrors `isProductIndexable`: the sitemap and the PDP robots meta both
+    // hold back a product below the content gate.
+    db.product.count({
+      where: {
+        status: 'active',
+        excludeFromSitemap: false,
+        robotsIndex: true,
+        contentScore: { gte: PRODUCT_INDEX_MIN_CONTENT_SCORE },
+      },
+    }),
     db.category.count({ where: { isPublished: true, excludeFromSitemap: false, robotsIndex: true } }),
     db.brand.count({ where: { isPublished: true, excludeFromSitemap: false, robotsIndex: true } }),
     db.blogPost.count({ where: { isPublished: true, excludeFromSitemap: false, robotsIndex: true } }),
     db.cmsPage.count({ where: { isPublished: true, excludeFromSitemap: false, robotsIndex: true } }),
     db.product.count({ where: { excludeFromSitemap: true } }),
     db.product.count({ where: { robotsIndex: false } }),
+    db.product.count({
+      where: { status: 'active', robotsIndex: true, contentScore: { lt: PRODUCT_INDEX_MIN_CONTENT_SCORE } },
+    }),
   ])
 
   const total = products + categories + brands + blogPosts + cmsPages
@@ -45,6 +58,16 @@ export default async function SitemapPage() {
           <div>
             <div className="text-ih-muted">Noindexed (products)</div>
             <div className="font-medium text-[18px]">{noindexed}</div>
+          </div>
+          <div className="col-span-2">
+            <div className="text-ih-muted">
+              Held back for thin content (products scoring below {PRODUCT_INDEX_MIN_CONTENT_SCORE})
+            </div>
+            <div className="font-medium text-[18px]">{thin}</div>
+            <p className="mt-1 text-[12px] text-ih-muted">
+              Out of the sitemap and marked noindex until an edit lifts the content score over the
+              line. They re-enter both automatically.
+            </p>
           </div>
         </div>
       </div>

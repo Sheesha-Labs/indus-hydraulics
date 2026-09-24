@@ -1,6 +1,8 @@
 import { describe, it, expect } from 'vitest'
 import {
   PRODUCT_CONTENT_THRESHOLDS,
+  PRODUCT_INDEX_MIN_CONTENT_SCORE,
+  isProductIndexable,
   scoreProductContent,
   wordCount,
   type ProductContentScoreInput,
@@ -157,5 +159,31 @@ describe('wordCount', () => {
 
   it('collapses whitespace and newlines', () => {
     expect(wordCount('one\n\ntwo\t three\r\nfour')).toBe(4)
+  })
+})
+
+describe('isProductIndexable', () => {
+  it('holds back a page below the content gate', () => {
+    expect(
+      isProductIndexable({ robotsIndex: true, contentScore: PRODUCT_INDEX_MIN_CONTENT_SCORE - 1 }),
+    ).toBe(false)
+  })
+
+  it('offers a page at the gate', () => {
+    expect(
+      isProductIndexable({ robotsIndex: true, contentScore: PRODUCT_INDEX_MIN_CONTENT_SCORE }),
+    ).toBe(true)
+  })
+
+  it('lets an explicit noindex win over a high score', () => {
+    expect(isProductIndexable({ robotsIndex: false, contentScore: 100 })).toBe(false)
+  })
+
+  // The production split this gate was drawn on: stubs at 6–19, real pages
+  // from 31. If the gate drifts into either band it is no longer the line the
+  // data drew.
+  it('sits in the gap between the measured stub and content bands', () => {
+    expect(PRODUCT_INDEX_MIN_CONTENT_SCORE).toBeGreaterThan(19)
+    expect(PRODUCT_INDEX_MIN_CONTENT_SCORE).toBeLessThanOrEqual(31)
   })
 })

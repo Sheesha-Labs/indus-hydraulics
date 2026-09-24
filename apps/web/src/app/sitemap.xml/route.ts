@@ -24,13 +24,28 @@ import { SITEMAP_CONTENT_TYPE, newestLastModified, renderSitemapIndex } from '..
  * section" is a second thing to keep in step.
  *
  * That means dating the index costs a full pass over every section, catalogue
- * included, so the pass is wrapped in `unstable_cache` at an hour. The
- * `export const revalidate = 3600` below does NOT bound it — the build
- * manifest resolves this route to 300 seconds regardless, while the children
- * under /sitemaps get the 3600 they ask for. Without the cache the index would
- * re-read 1,480 products every five minutes to compute nine dates.
+ * included, so the pass is wrapped in `unstable_cache` at an hour.
+ *
+ * RENDERED ON REQUEST, CACHED BY THE CDN — 2026-09-24.
+ *
+ * This route used to export `revalidate = 3600` and trust ISR to refresh it.
+ * It did not. Measured on production 2026-09-24: the index carried a
+ * `last-modified` of 2026-09-11 18:32 UTC and an `age` of 12.6 days — it
+ * regenerated once, sixteen hours after the deploy, and never again — while
+ * the children under /sitemaps, with the same `revalidate`, were an hour old.
+ * The runtime logs show the requests and no error. Whatever the cause, every
+ * date in the index was frozen: a post published from the CMS reached
+ * `blog.xml` and never moved the index's `<lastmod>` for it, which is the one
+ * signal the index exists to carry.
+ *
+ * `force-dynamic` takes the route out of the prerender, and the response's own
+ * `s-maxage` has the CDN hold it for the hour ISR was supposed to. The cost is
+ * one function invocation per hour per edge region, and the section pass
+ * inside it is itself cached.
  */
-export const revalidate = 3600
+export const dynamic = 'force-dynamic'
+
+const CACHE_CONTROL = 'public, max-age=0, s-maxage=3600, stale-while-revalidate=86400'
 
 const sectionDates = unstable_cache(
   async () =>
@@ -44,13 +59,40 @@ const sectionDates = unstable_cache(
   { revalidate: 3600 }
 )
 
-export async function GET(): Promise<Response> {
-  const body = renderSitemapIndex(await sectionDates())
+/**
+ * The index without dates — still a complete, valid index.
+ *
+ * Served when the section pass fails, typically a database timeout. An index
+ * that answers 500 tells Search Console the sitemap is broken; one without
+ * `<lastmod>` only tells it to fetch every child, which is what it did before
+ * the dates existed. Held for a minute rather than an hour so the next request
+ * retries.
+ */
+function undatedIndex(): Response {
+  return new Response(
+    renderSitemapIndex(SITEMAP_SECTION_IDS.map((id) => ({ url: sitemapSectionUrl(id) }))),
+    {
+      headers: {
+        'Content-Type': SITEMAP_CONTENT_TYPE,
+        'Cache-Control': 'public, max-age=0, s-maxage=60',
+      },
+    }
+  )
+}
 
-  return new Response(body, {
+export async function GET(): Promise<Response> {
+  let children
+  try {
+    children = await sectionDates()
+  } catch (error) {
+    console.error('[sitemap] dating the index failed; serving it undated', error)
+    return undatedIndex()
+  }
+
+  return new Response(renderSitemapIndex(children), {
     headers: {
       'Content-Type': SITEMAP_CONTENT_TYPE,
-      'Cache-Control': 'public, max-age=0, s-maxage=3600, stale-while-revalidate=86400',
+      'Cache-Control': CACHE_CONTROL,
     },
   })
 }
