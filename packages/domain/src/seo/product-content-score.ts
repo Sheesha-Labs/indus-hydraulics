@@ -198,3 +198,39 @@ export function wordCount(text: string | null | undefined): number {
   if (!stripped) return 0
   return stripped.split(' ').filter(Boolean).length
 }
+
+/**
+ * The content score a product page needs before it is worth submitting to a
+ * search engine.
+ *
+ * Measured on production 2026-09-24, the 1,487 active products split cleanly
+ * at this line. The 74 below it score 6–19 and are stubs: 17–67 words of long
+ * description, almost no images, no size table. Everything from 31 upward
+ * carries 150+ words, and most of it a size table as well. Nothing scores
+ * between 20 and 30, so the gate does not have to be tuned to the unit.
+ *
+ * Why it matters on this domain: Search Console holds ~1,733 URLs in
+ * "Discovered – currently not indexed", never fetched. Google's crawl-budget
+ * guidance for sites in that state is to stop offering low-value URLs,
+ * because Google judges how much of a host is worth crawling by sampling it.
+ *
+ * This is the gate for both the sitemap and the page's own robots meta, so the
+ * two can never disagree — the same arrangement as
+ * `REPLACEMENT_INDEX_MIN_MATCHES`. It is data, not a date: a product re-enters
+ * both the moment an edit lifts its score over the line, with no code change.
+ */
+export const PRODUCT_INDEX_MIN_CONTENT_SCORE = 30
+
+/**
+ * Whether a product page should be offered for indexing.
+ *
+ * An editor's explicit `robotsIndex: false` always wins. A thin page is held
+ * back even when the flag is true, because the flag defaults to true and says
+ * nothing about whether anyone looked.
+ */
+export function isProductIndexable(product: {
+  robotsIndex: boolean
+  contentScore: number
+}): boolean {
+  return product.robotsIndex && product.contentScore >= PRODUCT_INDEX_MIN_CONTENT_SCORE
+}
