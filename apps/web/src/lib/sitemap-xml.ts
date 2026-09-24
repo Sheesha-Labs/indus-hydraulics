@@ -92,3 +92,20 @@ export function newestLastModified(
   }
   return newest === undefined ? undefined : new Date(newest)
 }
+
+/**
+ * The newest of several optional dates, or undefined when none is set.
+ *
+ * For an entity with more than one modification timestamp — typically
+ * `seoUpdatedAt` beside a content date. The sections used to write
+ * `seoUpdatedAt ?? updatedAt`, which reports the OLDER date whenever the SEO
+ * panel has ever been saved and the content has changed since.
+ */
+export function newestDate(...dates: ReadonlyArray<Date | null | undefined>): Date | undefined {
+  let newest: Date | undefined
+  for (const date of dates) {
+    if (!date || Number.isNaN(date.getTime())) continue
+    if (!newest || date > newest) newest = date
+  }
+  return newest
+}

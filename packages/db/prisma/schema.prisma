@@ -496,6 +496,12 @@ model Category {
   jsonLdOverride     Json?
   seoUpdatedAt       DateTime?
   seoUpdatedById     String?
+  /// When something a visitor sees on this page last changed. Maintained by
+  /// database triggers (migrations/202609241441_content_updated_at.sql), never
+  /// written by the app, and read as the sitemap's <lastmod>. Unlike
+  /// `updatedAt` it does not move for bookkeeping writes — a content-score
+  /// recompute, a stock sync, a reorder.
+  contentUpdatedAt   DateTime?   @default(now())
 
   products     Product[]
   navMenuItems NavMenuItem[]
@@ -547,6 +553,12 @@ model Brand {
   jsonLdOverride     Json?
   seoUpdatedAt       DateTime?
   seoUpdatedById     String?
+  /// When something a visitor sees on this page last changed. Maintained by
+  /// database triggers (migrations/202609241441_content_updated_at.sql), never
+  /// written by the app, and read as the sitemap's <lastmod>. Unlike
+  /// `updatedAt` it does not move for bookkeeping writes — a content-score
+  /// recompute, a stock sync, a reorder.
+  contentUpdatedAt   DateTime?   @default(now())
 
   products     Product[]
   navMenuItems NavMenuItem[]
@@ -621,6 +633,12 @@ model Industry {
   jsonLdOverride     Json?
   seoUpdatedAt       DateTime?
   seoUpdatedById     String?
+  /// When something a visitor sees on this page last changed. Maintained by
+  /// database triggers (migrations/202609241441_content_updated_at.sql), never
+  /// written by the app, and read as the sitemap's <lastmod>. Unlike
+  /// `updatedAt` it does not move for bookkeeping writes — a content-score
+  /// recompute, a stock sync, a reorder.
+  contentUpdatedAt   DateTime?   @default(now())
 
   accounts     Account[]
   navMenuItems NavMenuItem[]
@@ -778,7 +796,8 @@ model Product {
   seoDescription    String?
   // Persisted content-depth score (0–100) computed by scoreProductContent.
   // Recomputed on every product mutation; indexed for admin filter/sort
-  // and for the storefront PRODUCT_CONTENT_NOINDEX_BELOW threshold.
+  // and for the storefront index gate, PRODUCT_INDEX_MIN_CONTENT_SCORE in
+  // @indus/domain, which the sitemap and the PDP robots meta both read.
   contentScore      Int           @default(0)
   createdAt         DateTime      @default(now())
   updatedAt         DateTime      @updatedAt
@@ -795,6 +814,12 @@ model Product {
   jsonLdOverride     Json?
   seoUpdatedAt       DateTime?
   seoUpdatedById     String?
+  /// When something a visitor sees on this page last changed. Maintained by
+  /// database triggers (migrations/202609241441_content_updated_at.sql), never
+  /// written by the app, and read as the sitemap's <lastmod>. Unlike
+  /// `updatedAt` it does not move for bookkeeping writes — a content-score
+  /// recompute, a stock sync, a reorder.
+  contentUpdatedAt   DateTime?   @default(now())
   /// Extra tokens folded into `searchTsv` at weight A, space-separated.
   /// Holds the identifiers a buyer types that are NOT this row's own sku or
   /// mpn — competitor part numbers and per-size variant part numbers. The
