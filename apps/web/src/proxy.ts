@@ -12,6 +12,8 @@ import { getToken } from 'next-auth/jwt'
 import { NextRequest, NextResponse } from 'next/server'
 import { isStaffRole } from './lib/rbac'
 import { findRedirect, recordRedirectHit } from './lib/redirects'
+import { canonicalHostRedirect } from './lib/canonical-host'
+import { BASE_URL } from './lib/seo'
 
 /**
  * One middleware, two surfaces.
@@ -366,6 +368,17 @@ export default async function proxy(request: NextRequest) {
     }
     return done(NextResponse.next())
   }
+
+  // Storefront only. A crawler on the production alias is sent to the real
+  // domain; staff on it are left alone, since their session cookie is bound
+  // to the host they signed in on. See lib/canonical-host.
+  const canonical = canonicalHostRedirect(
+    request.headers.get('host'),
+    pathname,
+    request.nextUrl.search,
+    BASE_URL,
+  )
+  if (canonical) return done(NextResponse.redirect(canonical, 308))
 
   if (PROTECTED_ACCOUNT_PATHS.some((p) => underPrefix(pathname, p))) {
     const token = await getToken({
