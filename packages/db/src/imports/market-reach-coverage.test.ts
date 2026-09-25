@@ -138,10 +138,10 @@ describe('industries', () => {
 
 describe('catalogue root categories', () => {
   /**
-   * The 17 published roots, named here rather than queried because this suite
+   * The 18 published roots, named here rather than queried because this suite
    * has no database. Unlike the industries list this one is worth stating in
    * full: a root category is a shelf a buyer lands on from search, and adding
-   * an eighteenth without a delivery paragraph would ship a hub that says
+   * a nineteenth without a delivery paragraph would ship a hub that says
    * nothing about export. Editing this list is the prompt to write it.
    *
    * Sub-categories are deliberately absent — all 194 inherit their root's
@@ -165,6 +165,7 @@ describe('catalogue root categories', () => {
     'seals-accessories',
     'hydraulic-pumps',
     'cylinders',
+    'lifting-rigging-equipment-uae',
   ]
 
   it('has a profile for every published root category', () => {

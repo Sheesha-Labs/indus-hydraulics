@@ -18,6 +18,7 @@ import {
   hasVariantWeights,
   type VariantLike,
   variantTableKind,
+  variantColumnUnit,
 } from './variant-columns'
 
 const v = (over: Partial<VariantLike> = {}): VariantLike => ({
@@ -363,5 +364,74 @@ describe('hose size tables', () => {
 
   it('treats a row with no dimensions at all as a fitting', () => {
     expect(variantTableKind([{ partNumber: 'z' }])).toBe('fitting')
+  })
+})
+
+describe('lifting tables', () => {
+  const shackle = (over: Partial<VariantLike> = {}): VariantLike => ({
+    partNumber: 'IH-LR-SH-G2130-075',
+    dimensions: { size: '3/4″', wllT: 4.75, A: 31.8, B: 22.4, weightLbs: 2.8, pinDia: 22.4 },
+    ...over,
+  })
+
+  it('is recognised by its load columns', () => {
+    expect(variantTableKind([shackle()])).toBe('lifting')
+  })
+
+  it('is recognised by a size label alone', () => {
+    expect(variantTableKind([{ partNumber: 'x', dimensions: { size: '6 mm', A: 3 } }])).toBe('lifting')
+  })
+
+  it('wins over hose detection when a chain row carries weight per metre', () => {
+    const chain = { partNumber: 'IH-LR-CH-G80-10MM', dimensions: { size: '10 mm', wllKg: 3200, weightPerMetre: 2.22 } }
+    expect(variantTableKind([chain])).toBe('lifting')
+  })
+
+  it('leaves hose and fitting tables alone', () => {
+    expect(variantTableKind([v()])).toBe('fitting')
+    expect(variantTableKind([{ partNumber: 'h', dimensions: { hoseOD: 19, weightPerMetre: 0.5 } }])).toBe('hose')
+  })
+
+  it('orders loads before geometry, letters and weight', () => {
+    const cols = variantDimensionColumns([shackle()]).map((c) => c.key)
+    expect(cols).toEqual(['wllT', 'pinDia', 'A', 'B', 'weightLbs'])
+  })
+
+  it('keeps each load in the unit it was rated in', () => {
+    const cols = variantDimensionColumns([
+      { partNumber: 'e', dimensions: { size: '1/4″ × 2″', wllLbs: 650, weightPer100Lbs: 6 } },
+    ])
+    expect(cols.map((c) => [c.key, c.unit])).toEqual([
+      ['wllLbs', 'lbs'],
+      ['weightPer100Lbs', 'lbs/100 pcs'],
+    ])
+  })
+
+  it('puts size and grade in the leading text columns', () => {
+    const cols = variantTextColumns([
+      shackle({ dimensions: { size: '1/4″', grade: 'Alloy steel', wllLbs: 3500, ropeSize: '3/8″' } }),
+    ])
+    expect(cols.map((c) => [c.key, Boolean(c.lead)])).toEqual([
+      ['size', true],
+      ['grade', true],
+      ['ropeSize', true],
+    ])
+  })
+
+  it('never claims a meaning for a bare letter', () => {
+    const letters = variantDimensionColumns([
+      shackle({ dimensions: { size: '1″', wllT: 8.5, G: 1, K: 2, R: 3, X: 4, a: 5 } }),
+    ]).filter((c) => c.key !== 'wllT')
+    for (const c of letters) expect(c.help).toContain('dimension drawing')
+  })
+
+  it('drops an unknown key rather than printing it', () => {
+    const cols = variantDimensionColumns([shackle({ dimensions: { size: '1″', wllT: 8.5, ZZ: 1 } })])
+    expect(cols.map((c) => c.key)).toEqual(['wllT'])
+  })
+
+  it('renders a count with no unit', () => {
+    const falls = variantDimensionColumns([{ partNumber: 'h', dimensions: { size: '2 t', wllT: 2, chainFalls: 2 } }])
+    expect(falls.map((c) => variantColumnUnit(c))).toEqual(['t', null])
   })
 })
