@@ -42,6 +42,9 @@ type Props = {
  * figures get thousands separators; hose and fitting tables print as they
  * always have.
  */
+/** A column headed by a bare drawing letter — A, d1, Ø2, L′, R max — rather than a word. */
+const DRAWING_LETTER_LABEL = /^(?:Ø?[A-Za-z]{1,2}\d{0,2}′?(?: max| min)?|Ø\d{0,2})$/
+
 function formatCell(value: number | undefined, kind: 'hose' | 'fitting' | 'lifting'): string {
   if (value === undefined) return '—'
   return kind === 'lifting'
@@ -176,7 +179,9 @@ export default function ProductSizeTable({
                   title={c.help}
                   className="px-3.5 py-2.5 text-right font-medium whitespace-nowrap"
                 >
-                  {c.label}
+                  {/* A drawing letter keeps its case: `d` and `D` are different dimensions on
+                      the same drawing, and the row's uppercase styling would merge them. */}
+                  {DRAWING_LETTER_LABEL.test(c.label) ? <span className="normal-case">{c.label}</span> : c.label}
                   {variantColumnUnit(c) && (
                     <>
                       {' '}
