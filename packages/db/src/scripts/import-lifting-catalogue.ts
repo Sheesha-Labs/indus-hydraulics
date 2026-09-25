@@ -28,6 +28,16 @@
  * once the matching code is deployed, so publishing before that would show
  * buyers a table with its load columns missing. `--publish` flips both.
  *
+ * HELD FAMILIES
+ *
+ * The payload's `hold` list names families that are loaded and kept up to date
+ * but not published. For example, a family whose source page has no size
+ * table, or one outside the agreed scope. `--publish` leaves them as drafts. It
+ * publishes a category only when an unheld product sits in or under it; a
+ * category that is already published stays published. Hold never unpublishes
+ * anything. Taking a SKU off the list and re-running with `--publish` puts it
+ * live.
+ *
  * NO SUPPLIER NAME IN PUBLIC FIELDS
  *
  * Products are sold under Indus part numbers with no brand, so the image caption
@@ -120,6 +130,8 @@ type Payload = {
   specTemplate: SpecTemplatePayload
   categories: CategoryEntry[]
   products: Entry[]
+  /** SKUs that `--publish` leaves as drafts. See HELD FAMILIES above. */
+  hold?: string[]
 }
 
 function loadWebEnv() {
@@ -228,6 +240,8 @@ async function main() {
       if (!existsSync(join(payload.imageDir, img.file))) problems.push(`${e.sku}: image missing ${img.file}`)
     }
   }
+  const held = new Set(payload.hold ?? [])
+  for (const sku of held) if (!skus.has(sku)) problems.push(`hold names ${sku}, which is not in the payload`)
   for (const c of payload.categories) {
     const result = validateSections(subPageDef('category', { name: c.name, slug: c.slug }), bandSections(c))
     if (!result.ok) problems.push(`${c.slug}: bands invalid — ${result.issues.map((i) => i.message).join('; ')}`)
@@ -252,6 +266,13 @@ async function main() {
   const fieldByKey = new Map(fields.map((f) => [f.key, f.id]))
 
   // ── Categories, parent before child ───────────────────────────────────────
+  // A category is publishable when an unheld product is filed in it or below it.
+  const parentBySlug = new Map(payload.categories.map((c) => [c.slug, c.parentSlug]))
+  const publishable = new Set<string>()
+  for (const e of payload.products) {
+    if (held.has(e.sku)) continue
+    for (let s: string | null | undefined = e.category; s; s = parentBySlug.get(s)) publishable.add(s)
+  }
   const categoryIdBySlug = new Map<string, string>()
   for (const c of payload.categories) {
     const existing = await db.category.findUnique({ where: { slug: c.slug }, select: { id: true } })
@@ -277,7 +298,7 @@ async function main() {
     }
     if (!existing) {
       const row = await db.category.create({
-        data: { slug: c.slug, parentId, ...data, isPublished: publish },
+        data: { slug: c.slug, parentId, ...data, isPublished: publish && publishable.has(c.slug) },
         select: { id: true },
       })
       categoryIdBySlug.set(c.slug, row.id)
@@ -288,7 +309,9 @@ async function main() {
         await db.category.update({ where: { id: existing.id }, data: { ...data, parentId } })
         console.log(`[category] rewrote ${c.slug}`)
       }
-      if (publish) await db.category.update({ where: { id: existing.id }, data: { isPublished: true } })
+      if (publish && publishable.has(c.slug)) {
+        await db.category.update({ where: { id: existing.id }, data: { isPublished: true } })
+      }
     }
 
     // Bands: only a missing document, unless asked.
@@ -311,6 +334,7 @@ async function main() {
   let created = 0
   let rewritten = 0
   let attached = 0
+  let kept = 0
   for (const e of payload.products) {
     if (only && e.sku !== only) continue
     if (within && e.category !== within && parentOf.get(e.category) !== within) continue
@@ -341,6 +365,8 @@ async function main() {
     }
 
     const aliases = [...new Set([...e.searchAliases, ...e.variants.map((v) => v.partNumber)])]
+    const live = publish && !held.has(e.sku)
+    if (publish && !live) kept++
     const data = {
       title: e.title,
       slug: e.slug,
@@ -354,12 +380,12 @@ async function main() {
       focusKeyword: e.focusKeyword,
       searchAliases: aliases.join(' '),
       unitOfMeasure: 'each' as const,
-      ...(publish ? { status: 'active' as const } : {}),
+      ...(live ? { status: 'active' as const } : {}),
     }
     let productId: string
     if (!existing) {
       const row = await db.product.create({
-        data: { sku: e.sku, ...data, status: publish ? 'active' : 'draft' },
+        data: { sku: e.sku, ...data, status: live ? 'active' : 'draft' },
         select: { id: true },
       })
       productId = row.id
@@ -499,6 +525,7 @@ async function main() {
   console.log(
     `\n[lifting:${name}] ${created} created, ${rewritten} rewritten, ${attached} images attached, ` +
       `${partNumbers.size} part numbers, ${problems.length} problems` +
+      (kept ? `, ${kept} held as drafts` : '') +
       (publish ? '' : ' — products are drafts and new categories unpublished (no --publish)')
   )
   for (const p of problems) console.log(`  ! ${p}`)
