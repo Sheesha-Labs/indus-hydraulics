@@ -89,6 +89,7 @@ export type LiftingDimensionKey =
   | 'wllSf5Lbs'
   | 'wllSf5T'
   | 'wllSf6T'
+  | 'wllSf4T'
   | 'wllHookLbs'
   | 'wllEyeJawLbs'
   | 'wllKgDoubleFall'
@@ -114,6 +115,9 @@ export type LiftingDimensionKey =
   | 'mbl1770IwrcKn'
   | 'mbl1960FcKn'
   | 'mbl1960IwrcKn'
+  | 'lcKg'
+  | 'lcKn'
+  | 'lcDaN'
   // hoist performance
   | 'liftHeight'
   | 'liftHeightDoubleFall'
@@ -126,6 +130,10 @@ export type LiftingDimensionKey =
   | 'minHookDistance'
   | 'minCurveRadius'
   | 'extraWeightPerMetre'
+  | 'energyKnm'
+  | 'reactionKn'
+  | 'torqueNm'
+  | 'lengthM'
   // named geometry
   | 'materialDia'
   | 'wireDia'
@@ -144,6 +152,13 @@ export type LiftingDimensionKey =
   | 'afterSwage'
   | 'handleLength'
   | 'takeUp'
+  | 'pitch'
+  | 'usableLength'
+  | 'shankLength'
+  | 'headDia'
+  | 'headHeight'
+  | 'wireClearance'
+  | 'ringId'
   // letters a rigging drawing uses that a fitting drawing does not
   | 'AMax'
   | 'BMin'
@@ -187,6 +202,8 @@ export type LiftingDimensionKey =
   | 'weightFcPer100m'
   | 'weightNfcPer100m'
   | 'weightIwrcPer100m'
+  | 'weightPer100FtLbs'
+  | 'weightPer220mKg'
 
 export type LiftingTextKey =
   | 'size'
@@ -203,6 +220,13 @@ export type LiftingTextKey =
   | 'powerSupply'
   | 'dutyClass'
   | 'maxTap'
+  | 'colour'
+  | 'length'
+  | 'ratchet'
+  | 'section'
+  | 'loopSize'
+  | 'pillar'
+  | 'steelCore'
 
 /**
  * Units a column can carry. The empty string is a count (falls of chain) and
@@ -224,11 +248,25 @@ export type VariantUnit =
   | 'kg/100 pcs'
   | 'lbs/100 pcs'
   | 'kg/1000 pcs'
+  | 'kNm'
+  | 'Nm'
+  | 'daN'
+  | 'lbs/100 ft'
+  | 'kg/220 m'
   | ''
+
+/**
+ * A column's key inside `ProductVariant.dimensions`. Beyond the named keys, a
+ * lifting table can carry two kinds the registry does not list one by one:
+ * a qualified load (`mblKn@g1770_fc` — a breaking load split by wire grade and
+ * core, see `QUALIFIER_LABELS`) and a drawing letter the registry has not met
+ * yet (`A1`, `d2`, `Ø1`, `L′` stored as `Lp`), see `DRAWING_LETTER`.
+ */
+export type VariantColumnKey = VariantDimensionKey | (string & {})
 
 export type VariantColumn = {
   /** Key inside `ProductVariant.dimensions`. */
-  key: VariantDimensionKey
+  key: VariantColumnKey
   /** Column heading. */
   label: string
   /**
@@ -360,7 +398,7 @@ export const VARIANT_TEXT_COLUMNS: readonly VariantTextColumn[] = [
   },
 ]
 
-const letter = (key: LiftingDimensionKey | VariantDimensionKey, label: string): VariantColumn => ({
+const letter = (key: VariantColumnKey, label: string): VariantColumn => ({
   key,
   label,
   unit: 'mm',
@@ -371,6 +409,8 @@ const WLL_HELP =
 const PROOF_HELP =
   'Proof or test load the manufacturer applies to the part. A test figure — never a working limit.'
 const MBL_HELP = 'Minimum breaking load. A test figure — never lift to it.'
+const LC_HELP =
+  'Lashing capacity — the most a tie-down may hold in service when securing a load (EN 12195). A load-securing figure, not a lifting rating.'
 const WEIGHT_HELP = 'Weight as the manufacturer publishes it.'
 
 /**
@@ -386,6 +426,7 @@ export const LIFTING_LOAD_COLUMNS: readonly VariantColumn[] = [
   { key: 'wllSf5Lbs', label: 'WLL 5:1', unit: 'lbs', help: 'Working load limit at a 5:1 design factor, as published.' },
   { key: 'wllSf5T', label: 'WLL 5:1', unit: 't', help: 'Working load limit at a 5:1 design factor, as published.' },
   { key: 'wllSf6T', label: 'WLL 6:1', unit: 't', help: 'Working load limit at a 6:1 design factor, as published.' },
+  { key: 'wllSf4T', label: 'WLL 4:1', unit: 't', help: 'Working load limit at a 4:1 design factor, as published.' },
   { key: 'wllHookLbs', label: 'WLL, hook ends', unit: 'lbs', help: 'Working load limit with hook end fittings, which rate lower than eyes or jaws.' },
   { key: 'wllEyeJawLbs', label: 'WLL, eye / jaw ends', unit: 'lbs', help: 'Working load limit with eye, jaw or stub end fittings.' },
   { key: 'wllKgDoubleFall', label: 'WLL, 2 falls', unit: 'kg', help: 'Rated load with the hook reeved in two falls through the pulley block.' },
@@ -411,6 +452,9 @@ export const LIFTING_LOAD_COLUMNS: readonly VariantColumn[] = [
   { key: 'mbl1770IwrcKn', label: 'MBL 1770 IWRC', unit: 'kN', help: 'Minimum breaking load, 1770 N/mm² rope grade, steel core.' },
   { key: 'mbl1960FcKn', label: 'MBL 1960 FC', unit: 'kN', help: 'Minimum breaking load, 1960 N/mm² rope grade, fibre core.' },
   { key: 'mbl1960IwrcKn', label: 'MBL 1960 IWRC', unit: 'kN', help: 'Minimum breaking load, 1960 N/mm² rope grade, steel core.' },
+  { key: 'lcKg', label: 'LC', unit: 'kg', help: LC_HELP },
+  { key: 'lcKn', label: 'LC', unit: 'kN', help: LC_HELP },
+  { key: 'lcDaN', label: 'LC', unit: 'daN', help: LC_HELP },
 ]
 
 /** Hoist and trolley performance, headed in the source by what each one is. */
@@ -426,6 +470,10 @@ export const LIFTING_PERFORMANCE_COLUMNS: readonly VariantColumn[] = [
   { key: 'minHookDistance', label: 'Min. hook distance', unit: 'mm', help: 'Headroom — the closest the two hooks come.' },
   { key: 'minCurveRadius', label: 'Min. curve radius', unit: 'm', help: 'Tightest beam curve the trolley runs round.' },
   { key: 'extraWeightPerMetre', label: 'Extra lift weight', unit: 'kg/m', help: 'Weight added by each extra metre of lift.' },
+  { key: 'lengthM', label: 'Length', unit: 'm', help: 'Effective working length, as published.' },
+  { key: 'energyKnm', label: 'Energy absorption', unit: 'kNm', help: 'Energy the fender absorbs at its rated deflection, as published.' },
+  { key: 'reactionKn', label: 'Reaction force', unit: 'kN', help: 'Force the fender returns at its rated deflection, as published.' },
+  { key: 'torqueNm', label: 'Tightening torque', unit: 'Nm', help: 'Torque to tighten the bolt to, as the manufacturer states it.' },
 ]
 
 /** Geometry the source heads by name rather than by letter. */
@@ -447,6 +495,13 @@ export const LIFTING_GEOMETRY_COLUMNS: readonly VariantColumn[] = [
   { key: 'afterSwage', label: 'Max. after swage', unit: 'mm', help: 'Largest dimension across the sleeve once swaged.' },
   { key: 'handleLength', label: 'Handle length', unit: 'mm', help: 'Length of the operating handle.' },
   { key: 'takeUp', label: 'Take-up', unit: 'mm', help: 'Adjustment the binder takes up.' },
+  { key: 'pitch', label: 'Pitch', unit: 'mm', help: 'Thread pitch or link pitch, as the source heads it.' },
+  { key: 'usableLength', label: 'Usable length', unit: 'mm', help: 'Length of pin available to pass through the parts.' },
+  { key: 'shankLength', label: 'Shank length', unit: 'mm', help: 'Length of the pin shank.' },
+  { key: 'headDia', label: 'Head dia.', unit: 'mm', help: 'Diameter of the pin head.' },
+  { key: 'headHeight', label: 'Head height', unit: 'mm', help: 'Height of the pin head.' },
+  { key: 'wireClearance', label: 'Wire clearance', unit: 'mm', help: 'Clearance inside the locking wire or loop.' },
+  { key: 'ringId', label: 'Ring I.D.', unit: 'mm', help: 'Inside diameter of the ring.' },
 ]
 
 /**
@@ -511,6 +566,8 @@ export const LIFTING_WEIGHT_COLUMNS: readonly VariantColumn[] = [
   { key: 'weightFcPer100m', label: 'Weight, fibre core', unit: 'kg/100 m', help: 'Weight per 100 m with a fibre core.' },
   { key: 'weightNfcPer100m', label: 'Weight, natural fibre core', unit: 'kg/100 m', help: 'Weight per 100 m with a natural fibre core.' },
   { key: 'weightIwrcPer100m', label: 'Weight, steel core', unit: 'kg/100 m', help: 'Weight per 100 m with a steel (IWRC) core.' },
+  { key: 'weightPer100FtLbs', label: 'Weight', unit: 'lbs/100 ft', help: 'Weight per 100 feet, as published.' },
+  { key: 'weightPer220mKg', label: 'Weight', unit: 'kg/220 m', help: 'Weight of a 220 m coil, as published.' },
 ]
 
 /** Every lifting numeric column, in table order. */
@@ -537,6 +594,13 @@ export const LIFTING_TEXT_COLUMNS: readonly VariantTextColumn[] = [
   { key: 'powerSupply', label: 'Supply', help: 'Electrical supply.' },
   { key: 'dutyClass', label: 'Duty class', help: 'Mechanism duty classification as published.' },
   { key: 'maxTap', label: 'Max. tap', help: 'Largest tap size the eye nut can be re-tapped to.' },
+  { key: 'colour', label: 'Colour', help: 'Sling colour. Under EN 1492 the colour marks the rated capacity; check the label on the sling.', lead: true },
+  { key: 'length', label: 'Length', help: 'Length as published.' },
+  { key: 'ratchet', label: 'Ratchet / fitting', help: 'Ratchet handle and end fitting, as published.' },
+  { key: 'section', label: 'Section', help: 'Cross-section of the link, as published.' },
+  { key: 'loopSize', label: 'Eye size', help: 'Size of the sling eye, as published.' },
+  { key: 'pillar', label: 'Pillar', help: 'Pillar tube outside diameter × wall thickness, as published.' },
+  { key: 'steelCore', label: 'Steel core', help: 'Diameter of the steel core, as published.' },
 ]
 
 const LIFTING_MARKERS: ReadonlySet<string> = new Set<string>([
@@ -544,6 +608,61 @@ const LIFTING_MARKERS: ReadonlySet<string> = new Set<string>([
   ...LIFTING_PERFORMANCE_COLUMNS.map((c) => c.key),
   'size',
 ])
+
+/**
+ * What a qualifier after `@` means. Some sources split one load column several
+ * ways — a rope's breaking load by wire grade and core, a sling's WLL by hitch,
+ * anchor chain by grade U1–U3, fibre rope by ISO 2307 and MEG4 — so the key
+ * carries the split and the heading reads "Min breaking load, 1770 grade, fibre
+ * core". A qualifier missing from this map is dropped, like any unknown key.
+ */
+export const QUALIFIER_LABELS: Readonly<Record<string, string>> = {
+  a0: 'at 0°', a90: 'at 90°', upto90: 'up to 90°', a90to120: '90–120°',
+  vertical: 'vertical', choker: 'choker', basket: 'basket',
+  fc: 'fibre core', iwrc: 'steel core',
+  g1570: '1570 grade', g1770: '1770 grade', g1960: '1960 grade',
+  g1570_fc: '1570 grade, fibre core', g1570_iwrc: '1570 grade, steel core',
+  g1770_fc: '1770 grade, fibre core', g1770_iwrc: '1770 grade, steel core',
+  g1180_1770: '1180/1770 grade', g1320_1620: '1320/1620 grade', g1370_1570: '1370/1570 grade', g1570_1770: '1570/1770 grade',
+  g80: 'Grade 80', g100: 'Grade 100', galv: 'galvanized', ss304: '304 stainless',
+  u1: 'grade U1', u2: 'grade U2', u3: 'grade U3',
+  mooring1: 'mooring, one rope', mooring2: 'mooring, two ropes', towing: 'towing',
+  iso: 'ISO 2307', meg4: 'MEG4 LDBF',
+  type1_iso: 'type I, ISO 2307', type1_dry_iso: 'type I, dry, ISO 2307', type1_meg4: 'type I, MEG4 LDBF',
+  type2_iso: 'type II, ISO 2307', type2_dry_iso: 'type II, dry, ISO 2307', type2_meg4: 'type II, MEG4 LDBF',
+  pp: 'polypropylene', ppMulti: 'PP multifilament', pe: 'polyethylene', polyester: 'polyester', nylon: 'nylon',
+  polyolefin: 'polyolefin', mixed: 'polyester/polyolefin', paPes: 'polyamide/polyester',
+}
+const QUALIFIER_ORDER = Object.keys(QUALIFIER_LABELS)
+
+/**
+ * A drawing letter the registry does not list — `A1`, `d2`, `Ø1`, `Lp` (L′),
+ * `RMax`, and the few two-letter labels rigging drawings print (TA, SW1…).
+ * Bounded on purpose: an arbitrary short key is still dropped, not printed.
+ */
+export const DRAWING_LETTER =
+  /^(?:Ø[A-Za-z]?\d{0,2}p?|[A-Za-z]\d{0,2}p?|[A-Za-z](?:Max|Min)|TA|TB|TL|NV|SW[12]|HC|HW|ad|bi|ch|dk)$/
+
+function letterLabel(key: string): string {
+  return key.replace(/(Max|Min)$/, (m) => ` ${m.toLowerCase()}`).replace(/p$/, '′')
+}
+
+/** Natural order for letters the registry does not list: A, A1, A2, a, a1, B… then Ø. */
+function letterSort(a: string, b: string): number {
+  const k = (s: string) => {
+    const phi = s.startsWith('Ø') ? 1 : 0
+    const body = s.replace(/^Ø/, '')
+    const ch = body.charAt(0)
+    const n = Number(/\d+/.exec(body)?.[0] ?? -1)
+    return [phi, ch.toLowerCase(), ch === ch.toUpperCase() ? 0 : 1, body.length > 1 && /[A-Za-z]/.test(body.charAt(1)) ? 1 : 0, n, body] as const
+  }
+  const ka = k(a)
+  const kb = k(b)
+  for (let i = 0; i < ka.length; i++) {
+    if (ka[i] !== kb[i]) return ka[i]! < kb[i]! ? -1 : 1
+  }
+  return 0
+}
 
 export type VariantLike = {
   partNumber: string
@@ -617,7 +736,7 @@ export function variantTableKind(variants: readonly VariantLike[]): 'hose' | 'fi
   const isLifting = variants.some((v) => {
     const raw = v.dimensions
     if (!raw || typeof raw !== 'object' || Array.isArray(raw)) return false
-    return Object.keys(raw).some((k) => LIFTING_MARKERS.has(k))
+    return Object.keys(raw).some((k) => LIFTING_MARKERS.has(k.split('@')[0]!))
   })
   if (isLifting) return 'lifting'
   const hoseKeys: VariantDimensionKey[] = ['hoseOD', 'burstPressure', 'vacuum', 'bendRadius', 'weightPerMetre']
@@ -662,9 +781,34 @@ export function variantDimensionColumns(variants: readonly VariantLike[]): Varia
   for (const v of variants) {
     for (const k of Object.keys(variantDimensions(v.dimensions))) present.add(k)
   }
-  const registry =
-    variantTableKind(variants) === 'lifting' ? LIFTING_DIMENSION_COLUMNS : VARIANT_DIMENSION_COLUMNS
-  return registry.filter((c) => present.has(c.key))
+  if (variantTableKind(variants) !== 'lifting') {
+    return VARIANT_DIMENSION_COLUMNS.filter((c) => present.has(c.key))
+  }
+  // Each named column, followed by its qualified splits in qualifier order.
+  const withSplits = (cols: readonly VariantColumn[]): VariantColumn[] =>
+    cols.flatMap((c) => {
+      const out: VariantColumn[] = present.has(c.key) ? [c] : []
+      const splits = [...present]
+        .filter((k) => k.startsWith(`${c.key}@`))
+        .map((k) => ({ k, q: k.slice(c.key.length + 1) }))
+        .filter(({ q }) => q in QUALIFIER_LABELS)
+        .sort((x, y) => QUALIFIER_ORDER.indexOf(x.q) - QUALIFIER_ORDER.indexOf(y.q))
+      for (const { k, q } of splits) out.push({ ...c, key: k, label: `${c.label}, ${QUALIFIER_LABELS[q]}` })
+      return out
+    })
+  const named = new Set<string>(LIFTING_DIMENSION_COLUMNS.map((c) => c.key))
+  const extraLetters = [...present]
+    .filter((k) => !named.has(k) && !k.includes('@') && DRAWING_LETTER.test(k))
+    .sort(letterSort)
+    .map((k) => letter(k, letterLabel(k)))
+  return [
+    ...withSplits(LIFTING_LOAD_COLUMNS),
+    ...withSplits(LIFTING_PERFORMANCE_COLUMNS),
+    ...withSplits(LIFTING_GEOMETRY_COLUMNS),
+    ...withSplits(LIFTING_LETTER_COLUMNS),
+    ...extraLetters,
+    ...withSplits(LIFTING_WEIGHT_COLUMNS),
+  ]
 }
 
 /**
