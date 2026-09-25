@@ -28,7 +28,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return pageMetadata({
     title: 'Product categories — Indus Hydraulics',
     description:
-      'The full hydraulic and oilfield catalogue by category — pumps, cylinders, valves, hoses, fittings and consumables, every SKU datasheet-backed.',
+      'The full hydraulic, oilfield and lifting catalogue by category — pumps, cylinders, valves, hoses, fittings, rigging hardware and consumables, every SKU datasheet-backed.',
     path: '/c',
   })
 }

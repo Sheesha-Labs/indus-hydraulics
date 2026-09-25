@@ -2,6 +2,7 @@ import {
   hasVariantEquivalents,
   hasVariantPressures,
   hasVariantWeights,
+  variantColumnUnit,
   variantDimensionColumns,
   variantDimensions,
   variantEndColumns,
@@ -68,7 +69,11 @@ export default function ProductSizeTable({
   }
 
   const dimensionColumns = variantDimensionColumns(variants)
-  const textColumns = variantTextColumns(variants)
+  // A rigging table is read by size first, so its size and grade columns lead;
+  // a fitting's O-ring size trails the dimensions as it always has.
+  const allTextColumns = variantTextColumns(variants)
+  const leadTextColumns = allTextColumns.filter((c) => c.lead)
+  const textColumns = allTextColumns.filter((c) => !c.lead)
   const portHeading = variantPortHeading(variants)
   const sizeHeading = variantSizeHeading(variants)
   const showEquivalents = hasVariantEquivalents(variants)
@@ -114,6 +119,16 @@ export default function ProductSizeTable({
                   {equivalentBrand ? `${equivalentBrand} equivalent` : 'Equivalent'}
                 </th>
               )}
+              {leadTextColumns.map((c) => (
+                <th
+                  key={c.key}
+                  scope="col"
+                  title={c.help}
+                  className="px-3.5 py-2.5 text-left font-medium whitespace-nowrap"
+                >
+                  {c.label}
+                </th>
+              ))}
               {showHose && (
                 <th scope="col" className="px-3.5 py-2.5 text-left font-medium">
                   {sizeHeading}
@@ -141,7 +156,13 @@ export default function ProductSizeTable({
                   title={c.help}
                   className="px-3.5 py-2.5 text-right font-medium whitespace-nowrap"
                 >
-                  {c.label} <span className="text-ih-muted-2">({c.unit})</span>
+                  {c.label}
+                  {variantColumnUnit(c) && (
+                    <>
+                      {' '}
+                      <span className="text-ih-muted-2">({variantColumnUnit(c)})</span>
+                    </>
+                  )}
                 </th>
               ))}
               {textColumns.map((c) => (
@@ -178,6 +199,11 @@ export default function ProductSizeTable({
                   {showEquivalents && (
                     <td className="px-3.5 py-2.5 text-ih-ink-2">{v.competitorMpn ?? '—'}</td>
                   )}
+                  {leadTextColumns.map((c) => (
+                    <td key={c.key} className="px-3.5 py-2.5 whitespace-nowrap text-ih-ink-2">
+                      {variantText(v.dimensions, c.key) ?? '—'}
+                    </td>
+                  ))}
                   {showHose && <td className="px-3.5 py-2.5 text-ih-ink-2">{hose ?? '—'}</td>}
                   {showPort && (
                     <td className="px-3.5 py-2.5 text-ih-ink-2">{v.portLabel ?? '—'}</td>
@@ -213,16 +239,21 @@ export default function ProductSizeTable({
       </div>
 
       <div className="mt-4 flex flex-col gap-1.5 text-[12.5px] leading-[1.55] text-ih-muted">
-        {(endColumns.length > 0 || dimensionColumns.length > 0 || textColumns.length > 0) && (
+        {(leadTextColumns.length > 0 ||
+          endColumns.length > 0 ||
+          dimensionColumns.length > 0 ||
+          textColumns.length > 0) && (
           <p>
-            {[...endColumns, ...dimensionColumns, ...textColumns]
+            {[...leadTextColumns, ...endColumns, ...dimensionColumns, ...textColumns]
               .map((c) => `${c.label} — ${c.help}`)
               .join(' ')}
             {/* A fitting's letters are read off a dimension drawing and a buyer
                 can ask for it stamped. A hose has no such drawing — its columns
                 are headed with what they are — so the offer would be an offer
                 of nothing. */}
-            {kind === 'fitting' ? ' Ask us for the dimension drawing if you need it stamped.' : ''}
+            {kind === 'fitting' || kind === 'lifting'
+              ? ' Ask us for the dimension drawing if you need it stamped.'
+              : ''}
           </p>
         )}
         {showPressure && kind === 'fitting' && (
@@ -237,6 +268,13 @@ export default function ProductSizeTable({
             Working pressure is the published rating for the hose itself. A made-up assembly is
             limited by its lowest-rated part, so check it against the coupling, the clamp or
             ferrule, and the temperature you are running at.
+          </p>
+        )}
+        {kind === 'lifting' && (
+          <p>
+            WLL is the most the part may carry in service. Proof and breaking loads are test figures
+            — never lift to them. Each load is shown in the unit the manufacturer rates the part in,
+            and a size ships with the manufacturer&rsquo;s test certificate.
           </p>
         )}
         {kind === 'hose' && (

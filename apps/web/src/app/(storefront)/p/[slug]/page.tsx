@@ -20,6 +20,7 @@ import {
   type ProductAvailability,
   readFittingAttributes,
   relatedProductWindow,
+  variantText,
 } from '@indus/domain'
 import { Badge, Breadcrumb, Button, JsonLd } from '@indus/ui'
 import ProductExportNote from '../../../../components/markets/ProductExportNote'
@@ -391,6 +392,10 @@ export default async function ProductPage({ params }: Props) {
       // offer from the next.
       name: [
         product.title,
+        // A rigging listing names each offer by its size (and grade, where a
+        // carbon and an alloy row share one), which it keeps in `dimensions`.
+        variantText(v.dimensions, 'size'),
+        variantText(v.dimensions, 'grade'),
         v.hoseInch ? `${v.hoseInch} hose` : null,
         v.portLabel,
         v.port2Label,

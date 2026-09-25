@@ -4,7 +4,7 @@
  * Engine, exclusions and honesty rules are in `./market-reach`.
  *
  * KEYED BY ROOT CATEGORY, SEEDED BY THE PAGE'S OWN SLUG. There are 194
- * published categories under 17 roots, and writing 194 paragraphs would mean
+ * published categories under 18 roots, and writing 194 paragraphs would mean
  * 194 chances to say something untrue about freight. A root's paragraph is
  * true of everything beneath it — "ferrules" and "banjo bolts" ship the same
  * way — while the seed is the category's own slug, so two sub-categories under
@@ -91,6 +91,18 @@ export const CATEGORY_REACH_PROFILES: Readonly<Record<string, MarketReachProfile
       'South America',
       'North Africa',
       'North America & Caribbean',
+    ],
+  },
+  'lifting-rigging-equipment-uae': {
+    heading: 'Where we ship lifting and rigging gear',
+    body: 'Rigging hardware is bought on its working load limit and its certificate, and both travel with the part: every shackle, hook, chain and sling ships from Dubai with the manufacturer\'s test certificate, so the receiving inspection checks a document against a stamp rather than a claim. Hardware and fittings go by air or courier in cartons; wire rope, chain, hoists and anchors are heavy enough that sea freight is usually the sensible answer.',
+    primaryRegion: 'GCC & Middle East',
+    rotatingRegions: [
+      'East Africa',
+      'West & Central Africa',
+      'South-East Asia',
+      'North Africa',
+      'CIS & Caucasus',
     ],
   },
   'blowout-preventers': {
