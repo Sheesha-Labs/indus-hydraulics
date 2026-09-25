@@ -28,12 +28,17 @@
  *
  * EXEMPTING A CATEGORY is one entry in `exemptCategories`. It is matched against
  * every category in a product's chain, so naming a root exempts the whole
- * branch, and an exempt product falls back to its own `leadTimeDays`. Nothing is
- * exempt today, by the founder's explicit instruction. The candidates, if the
- * claim ever needs narrowing, are the 207 products whose recorded lead time is
- * four weeks or more: `blowout-preventers` (up to 240 days),
- * `flow-iron-wellhead-equipment-uae` (168), `oilfield-valve-suppliers-uae`
- * (84) and 69 of the industrial hose lines (112).
+ * branch, and an exempt product falls back to its own `leadTimeDays`.
+ *
+ * `butterfly-valves` is exempt since 2026-09-25, on the founder's instruction.
+ * That shelf holds the DEMCO and Victaulic valves sourced from a supplier's
+ * surplus stock, which is not held in Dubai, so "ex-stock in three days" is not
+ * a promise it can keep; its pages fall back to the 14-day lead time recorded on
+ * each product. The other candidates, if the claim ever needs narrowing
+ * further, are the 207 products whose recorded lead time is four weeks or more:
+ * `blowout-preventers` (up to 240 days), `flow-iron-wellhead-equipment-uae`
+ * (168), `oilfield-valve-suppliers-uae` (84) and 69 of the industrial hose
+ * lines (112).
  */
 
 export type CatalogueStockPosture = {
@@ -53,7 +58,7 @@ export type CatalogueStockPosture = {
 export const CATALOGUE_STOCK_POSTURE: CatalogueStockPosture = {
   exStock: true,
   deliveryDays: 3,
-  exemptCategories: [],
+  exemptCategories: ['butterfly-valves'],
 }
 
 /** What a page needs to know about one product to state its availability. */
@@ -80,11 +85,22 @@ export type ProductAvailability = {
   schema: 'in_stock' | 'out_of_stock' | 'lead_time'
 }
 
-function posturedCovers(facts: StockFacts, posture: CatalogueStockPosture): boolean {
+/**
+ * Does the ex-stock claim reach a shelf? Pass every category in the chain,
+ * leaf and ancestors, or an exempt root will not be seen. Used by the product
+ * pill and by any surface that repeats the claim about a category as a whole.
+ */
+export function postureCoversCategories(
+  categorySlugs: readonly string[],
+  posture: CatalogueStockPosture = CATALOGUE_STOCK_POSTURE,
+): boolean {
   if (!posture.exStock) return false
   if (posture.exemptCategories.length === 0) return true
-  const chain = facts.categorySlugs ?? []
-  return !chain.some((slug) => posture.exemptCategories.includes(slug))
+  return !categorySlugs.some((slug) => posture.exemptCategories.includes(slug))
+}
+
+function posturedCovers(facts: StockFacts, posture: CatalogueStockPosture): boolean {
+  return postureCoversCategories(facts.categorySlugs ?? [], posture)
 }
 
 /**

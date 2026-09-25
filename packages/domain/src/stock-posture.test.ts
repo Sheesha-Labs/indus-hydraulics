@@ -18,7 +18,8 @@ describe('the shipped posture', () => {
     // change to it should be a change to this test as well.
     expect(CATALOGUE_STOCK_POSTURE.exStock).toBe(true)
     expect(CATALOGUE_STOCK_POSTURE.deliveryDays).toBe(3)
-    expect(CATALOGUE_STOCK_POSTURE.exemptCategories).toEqual([])
+    // Butterfly valves are supplier surplus, not Dubai stock (2026-09-25).
+    expect(CATALOGUE_STOCK_POSTURE.exemptCategories).toEqual(['butterfly-valves'])
   })
 })
 

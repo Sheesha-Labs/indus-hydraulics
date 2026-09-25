@@ -1,0 +1,3848 @@
+{
+ "source": "OFS Energy catalogue export 2026-09-23; nameplate photographs read 2026-09-25",
+ "imageDir": "/Users/ayushkbhatia/Documents/Indus Supplier Research/Source Exports/OFS Energy/ofsenergy-product-images/Gate-Valve",
+ "categorySlug": "oilfield-gate-valves",
+ "specTemplateId": "56874aec-4f84-47b1-9914-abf4535c8916",
+ "brands": [],
+ "products": [
+  {
+   "sku": "IH-OFV-GATE-11316-15K",
+   "slug": "api-6a-gate-valve-1-13-16-inch-15000-psi",
+   "title": "API 6A Gate Valve, 1-13/16″, 15,000 psi",
+   "brand": null,
+   "countryOfOrigin": null,
+   "leadTimeDays": null,
+   "focusKeyword": "1-13/16 15K gate valve",
+   "descriptionShort": "1-13/16″ API 6A gate valve, 15,000 psi (15K). Supplied new from WOM to your PSL, PR, material and temperature class; flanged ends take a BX-151 ring.",
+   "descriptionLong": "<p>A 1-13/16″ (46 mm) gate valve to API 6A, rated 15,000 psi working pressure (15K). We supply it new from WOM, and other API 6A manufacturers, to the PSL, PR, material class and temperature class you specify. The table lists the models and nameplate markings we have seen at this bore and rating, so you can quote a make and model directly.</p><h3>Makes and models at this rating</h3><table><thead><tr><th scope=\"col\">Make</th><th scope=\"col\">Model</th><th scope=\"col\">Part / assembly no.</th><th scope=\"col\">PSL</th><th scope=\"col\">PR</th><th scope=\"col\">Material class</th><th scope=\"col\">Temperature</th></tr></thead><tbody><tr><td>WOM</td><td>WM400</td><td>—</td><td>PSL 3</td><td>PR2</td><td>EE-1.5</td><td>−20 °F to +250 °F</td></tr><tr><td>WOM</td><td>WM400</td><td>—</td><td>PSL 3</td><td>PR2</td><td>—</td><td>P+X</td></tr><tr><td>WOM</td><td>WM400</td><td>—</td><td>PSL 3</td><td>PR2</td><td>EE-1.5</td><td>—</td></tr></tbody></table><p>Each row is what is marked on a valve we have photographed at this bore and pressure; a dash means the nameplate does not state it or is not legible. Your valve is built to the specification you put on the RFQ, not to these plates.</p><h3>Rating, test and flanges</h3><ul><li><strong>Working pressure:</strong> 15,000 psi. API 6A shell test: 22,500 psi.</li><li><strong>Flanged ends:</strong> API 6BX flanges at this size and rating take a BX-151 ring gasket.</li><li><strong>Bore:</strong> full bore — the bore matches the nominal size, so wireline tools and pigs pass through.</li></ul><h3>Reading the nameplate</h3><ul><li><strong>PSL</strong> (product specification level, 1 to 4) sets the inspection, testing and traceability applied. PSL 3G adds a gas test.</li><li><strong>PR</strong> (performance requirement) is PR1 or PR2; PR2 valves have passed the design-validation testing in API 6A.</li><li><strong>Material class</strong> AA to CC is general service. DD, EE, FF and HH are sour service to NACE MR0175 / ISO 15156; a suffix such as -0.5 or -1.5 is the maximum H₂S partial pressure in psia, and NL means no limit.</li><li><strong>Temperature class</strong> letters combine: P = −20 °F to +180 °F; U = 0 °F to +250 °F; X = 0 °F to +350 °F. P+U covers −20 °F to +250 °F.</li></ul><h3>Configured listings at this rating</h3><p>We also list these fully specified valves at the same bore and pressure:</p><ul><li><a href=\"/p/manual-gate-valve-fls-1-13-16-in-15m-flanged-15-000-psi-api-6a-psl-3g-pr2-ee-1-5\">Cameron FLS manual gate valve, PSL 3G PR2, EE-1.5</a></li></ul><h3>Ordering</h3><p>Put the bore, pressure, end connections, PSL, PR, material and temperature class on your RFQ, with a preferred make and model if you have one. We confirm lead time and documentation — including the API 6A monogram and material certificates — on the quotation.</p>",
+   "seoTitle": "1-13/16″ 15K API 6A Gate Valve, 15,000 psi",
+   "seoDescription": "API 6A Gate Valve, 1-13/16″, 15,000 psi: WOM. PSL, PR, material and temperature class to order. Request a quote.",
+   "faqs": [
+    {
+     "question": "What do PSL and PR mean on a 1-13/16″ 15K gate valve?",
+     "answer": "PSL (1 to 4) is the product specification level: the inspection, testing and traceability applied during manufacture, with PSL 3G adding a gas test. PR is the performance requirement: PR2 valves have passed API 6A design-validation testing, PR1 valves have not. Specify both on the RFQ."
+    },
+    {
+     "question": "Which material class do I need for sour service?",
+     "answer": "API 6A material classes DD, EE, FF and HH are for sour service to NACE MR0175 / ISO 15156. The suffix gives the maximum H₂S partial pressure the valve is rated for, in psia — for example EE-0.5 or DD-NL (no limit). AA, BB and CC are general service. Choose by the H₂S partial pressure and CO₂ content of your fluid."
+    },
+    {
+     "question": "What ring gasket does a 1-13/16″ 15K API 6A flange use?",
+     "answer": "A BX-151 ring gasket, on an API 6BX flange. Order the rings with the valve if you need them."
+    },
+    {
+     "question": "What pressure is the valve body tested to?",
+     "answer": "API 6A sets the hydrostatic shell test for a 15,000 psi valve at 22,500 psi."
+    },
+    {
+     "question": "Can you supply a specific make or model?",
+     "answer": "Yes. At this rating we supply WOM, including WM400. Give the make, model and any part number on the RFQ and we quote against it."
+    },
+    {
+     "question": "Are these valves supplied new?",
+     "answer": "Yes. We source new valves to the specification on your RFQ and state the lead time and documentation on the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Valve Type",
+     "value": "Gate valve — manual handwheel; hydraulic on request",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "valve_type"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size",
+     "value": "1-13/16 in",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "nominal_size"
+    },
+    {
+     "group": "Performance",
+     "label": "Working Pressure",
+     "value": "15000",
+     "unit": "psi",
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "working_pressure_psi"
+    },
+    {
+     "group": "Performance",
+     "label": "Pressure Class",
+     "value": "15K",
+     "unit": null,
+     "position": 3,
+     "isFilterable": true,
+     "templateKey": "pressure_class"
+    },
+    {
+     "group": "Dimensions",
+     "label": "End Connection (Inlet)",
+     "value": "API 6BX flanged (BX-151 ring)",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "end_connection_inlet"
+    },
+    {
+     "group": "Dimensions",
+     "label": "End Connection (Outlet)",
+     "value": "API 6BX flanged (BX-151 ring)",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "end_connection_outlet"
+    },
+    {
+     "group": "Performance",
+     "label": "Service Class",
+     "value": "Standard or sour service (NACE MR0175 / ISO 15156) by material class",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "service_class"
+    },
+    {
+     "group": "Compliance",
+     "label": "API Specification",
+     "value": "API 6A",
+     "unit": null,
+     "position": 7,
+     "isFilterable": true,
+     "templateKey": "api_spec"
+    },
+    {
+     "group": "Compliance",
+     "label": "PSL Class",
+     "value": "PSL 3 marked; PSL 1–4 to order",
+     "unit": null,
+     "position": 8,
+     "isFilterable": false,
+     "templateKey": "psl_class"
+    },
+    {
+     "group": "Compliance",
+     "label": "PR Class",
+     "value": "PR2 marked; to order",
+     "unit": null,
+     "position": 9,
+     "isFilterable": false,
+     "templateKey": "pr_class"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Bore Type",
+     "value": "Full bore",
+     "unit": null,
+     "position": 10,
+     "isFilterable": false,
+     "templateKey": "bore_type"
+    },
+    {
+     "group": "Compliance",
+     "label": "Material Class (API 6A)",
+     "value": "EE-1.5 marked; AA–HH to order",
+     "unit": null,
+     "position": 11,
+     "isFilterable": false,
+     "templateKey": "material_class_api"
+    },
+    {
+     "group": "Identification",
+     "label": "Makes available",
+     "value": "WOM",
+     "unit": null,
+     "position": 12,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Identification",
+     "label": "Models seen",
+     "value": "WM400",
+     "unit": null,
+     "position": 13,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Performance",
+     "label": "Hydrostatic shell test",
+     "value": "22,500 psi",
+     "unit": null,
+     "position": 14,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Performance",
+     "label": "Temperature markings seen",
+     "value": "P+X; −20 °F to +250 °F",
+     "unit": null,
+     "position": 15,
+     "isFilterable": false,
+     "templateKey": null
+    }
+   ],
+   "searchAliases": [
+    "WM400",
+    "1-13/16 15K",
+    "1-13/16 15000",
+    "1 13/16 15000",
+    "BX-151",
+    "WOM"
+   ],
+   "images": [
+    {
+     "file": "wom-gate-valve-1-13-16-15000-psi-used-518-1.jpg",
+     "alt": "WOM WM400 gate valve, 1-13/16″ 15,000 psi"
+    },
+    {
+     "file": "wom-gate-valve-1-13-16-15000-psi-401-1.jpg",
+     "alt": "WOM WM400 gate valve, 1-13/16″ 15,000 psi"
+    },
+    {
+     "file": "wom-gate-valve-1-13-16-15000-psi-used-513-1.jpg",
+     "alt": "WOM WM400 gate valve, 1-13/16″ 15,000 psi"
+    },
+    {
+     "file": "wom-gate-valve-1-13-16-15000-psi-used-518-2.jpg",
+     "alt": "Nameplate of a WOM 1-13/16″ 15,000 psi gate valve"
+    }
+   ],
+   "seriesPage": null,
+   "source": {
+    "ofsListings": [
+     "401",
+     "513",
+     "517",
+     "518"
+    ]
+   }
+  },
+  {
+   "sku": "IH-OFV-GATE-2116-10K",
+   "slug": "api-6a-gate-valve-2-1-16-inch-10000-psi",
+   "title": "API 6A Gate Valve, 2-1/16″, 10,000 psi",
+   "brand": null,
+   "countryOfOrigin": null,
+   "leadTimeDays": null,
+   "focusKeyword": "2-1/16 10K gate valve",
+   "descriptionShort": "2-1/16″ API 6A gate valve, 10,000 psi (10K). Supplied new from Cameron, T3 and NOV to your PSL, PR, material and temperature class; flanged ends take a BX-152 ring.",
+   "descriptionLong": "<p>A 2-1/16″ (52 mm) gate valve to API 6A, rated 10,000 psi working pressure (10K). We supply it new from Cameron, T3 and NOV, and other API 6A manufacturers, to the PSL, PR, material class and temperature class you specify. The table lists the models and nameplate markings we have seen at this bore and rating, so you can quote a make and model directly.</p><h3>Makes and models at this rating</h3><table><thead><tr><th scope=\"col\">Make</th><th scope=\"col\">Model</th><th scope=\"col\">Part / assembly no.</th><th scope=\"col\">PSL</th><th scope=\"col\">PR</th><th scope=\"col\">Material class</th><th scope=\"col\">Temperature</th></tr></thead><tbody><tr><td>Cameron</td><td>FLS</td><td>—</td><td>PSL 3</td><td>PR2</td><td>DD</td><td>−29 °C to +121 °C</td></tr><tr><td>T3 Energy Services</td><td>—</td><td>—</td><td>PSL 3</td><td>PR1</td><td>EE-1.5</td><td>P+U</td></tr><tr><td>NOV Mission</td><td>E-Type</td><td>—</td><td>PSL 3</td><td>PR1</td><td>—</td><td>—</td></tr><tr><td>Unbranded</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr></tbody></table><p>Each row is what is marked on a valve we have photographed at this bore and pressure; a dash means the nameplate does not state it or is not legible. Your valve is built to the specification you put on the RFQ, not to these plates.</p><h3>Rating, test and flanges</h3><ul><li><strong>Working pressure:</strong> 10,000 psi. API 6A shell test: 15,000 psi.</li><li><strong>Flanged ends:</strong> API 6BX flanges at this size and rating take a BX-152 ring gasket.</li><li><strong>Bore:</strong> full bore — the bore matches the nominal size, so wireline tools and pigs pass through.</li></ul><h3>Reading the nameplate</h3><ul><li><strong>PSL</strong> (product specification level, 1 to 4) sets the inspection, testing and traceability applied. PSL 3G adds a gas test.</li><li><strong>PR</strong> (performance requirement) is PR1 or PR2; PR2 valves have passed the design-validation testing in API 6A.</li><li><strong>Material class</strong> AA to CC is general service. DD, EE, FF and HH are sour service to NACE MR0175 / ISO 15156; a suffix such as -0.5 or -1.5 is the maximum H₂S partial pressure in psia, and NL means no limit.</li><li><strong>Temperature class</strong> letters combine: P = −20 °F to +180 °F; U = 0 °F to +250 °F. P+U covers −20 °F to +250 °F.</li></ul><h3>Configured listings at this rating</h3><p>We also list these fully specified valves at the same bore and pressure:</p><ul><li><a href=\"/p/manual-gate-valve-fail-close-2-1-16-in-10m-flanged-10-000-psi-api-6a-psl-3-pr1-ee\">WOM manual gate valve, PSL 3 PR1, EE</a></li></ul><h3>Ordering</h3><p>Put the bore, pressure, end connections, PSL, PR, material and temperature class on your RFQ, with a preferred make and model if you have one. We confirm lead time and documentation — including the API 6A monogram and material certificates — on the quotation.</p>",
+   "seoTitle": "2-1/16″ 10K API 6A Gate Valve, 10,000 psi",
+   "seoDescription": "API 6A Gate Valve, 2-1/16″, 10,000 psi: Cameron, T3 and NOV. PSL, PR, material and temperature class to order. Request a quote.",
+   "faqs": [
+    {
+     "question": "What do PSL and PR mean on a 2-1/16″ 10K gate valve?",
+     "answer": "PSL (1 to 4) is the product specification level: the inspection, testing and traceability applied during manufacture, with PSL 3G adding a gas test. PR is the performance requirement: PR2 valves have passed API 6A design-validation testing, PR1 valves have not. Specify both on the RFQ."
+    },
+    {
+     "question": "Which material class do I need for sour service?",
+     "answer": "API 6A material classes DD, EE, FF and HH are for sour service to NACE MR0175 / ISO 15156. The suffix gives the maximum H₂S partial pressure the valve is rated for, in psia — for example EE-0.5 or DD-NL (no limit). AA, BB and CC are general service. Choose by the H₂S partial pressure and CO₂ content of your fluid."
+    },
+    {
+     "question": "What ring gasket does a 2-1/16″ 10K API 6A flange use?",
+     "answer": "A BX-152 ring gasket, on an API 6BX flange. Order the rings with the valve if you need them."
+    },
+    {
+     "question": "What pressure is the valve body tested to?",
+     "answer": "API 6A sets the hydrostatic shell test for a 10,000 psi valve at 15,000 psi."
+    },
+    {
+     "question": "Can you supply a specific make or model?",
+     "answer": "Yes. At this rating we supply Cameron, T3 and NOV, including E-Type and FLS. Give the make, model and any part number on the RFQ and we quote against it."
+    },
+    {
+     "question": "Are these valves supplied new?",
+     "answer": "Yes. We source new valves to the specification on your RFQ and state the lead time and documentation on the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Valve Type",
+     "value": "Gate valve — manual handwheel; hydraulic on request",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "valve_type"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size",
+     "value": "2-1/16 in",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "nominal_size"
+    },
+    {
+     "group": "Performance",
+     "label": "Working Pressure",
+     "value": "10000",
+     "unit": "psi",
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "working_pressure_psi"
+    },
+    {
+     "group": "Performance",
+     "label": "Pressure Class",
+     "value": "10K",
+     "unit": null,
+     "position": 3,
+     "isFilterable": true,
+     "templateKey": "pressure_class"
+    },
+    {
+     "group": "Dimensions",
+     "label": "End Connection (Inlet)",
+     "value": "API 6BX flanged (BX-152 ring)",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "end_connection_inlet"
+    },
+    {
+     "group": "Dimensions",
+     "label": "End Connection (Outlet)",
+     "value": "API 6BX flanged (BX-152 ring)",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "end_connection_outlet"
+    },
+    {
+     "group": "Performance",
+     "label": "Service Class",
+     "value": "Standard or sour service (NACE MR0175 / ISO 15156) by material class",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "service_class"
+    },
+    {
+     "group": "Compliance",
+     "label": "API Specification",
+     "value": "API 6A",
+     "unit": null,
+     "position": 7,
+     "isFilterable": true,
+     "templateKey": "api_spec"
+    },
+    {
+     "group": "Compliance",
+     "label": "PSL Class",
+     "value": "PSL 3 marked; PSL 1–4 to order",
+     "unit": null,
+     "position": 8,
+     "isFilterable": false,
+     "templateKey": "psl_class"
+    },
+    {
+     "group": "Compliance",
+     "label": "PR Class",
+     "value": "PR1, PR2 marked; to order",
+     "unit": null,
+     "position": 9,
+     "isFilterable": false,
+     "templateKey": "pr_class"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Bore Type",
+     "value": "Full bore",
+     "unit": null,
+     "position": 10,
+     "isFilterable": false,
+     "templateKey": "bore_type"
+    },
+    {
+     "group": "Compliance",
+     "label": "Material Class (API 6A)",
+     "value": "DD, EE-1.5 marked; AA–HH to order",
+     "unit": null,
+     "position": 11,
+     "isFilterable": false,
+     "templateKey": "material_class_api"
+    },
+    {
+     "group": "Identification",
+     "label": "Makes available",
+     "value": "Cameron, T3, NOV",
+     "unit": null,
+     "position": 12,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Identification",
+     "label": "Models seen",
+     "value": "E-Type, FLS",
+     "unit": null,
+     "position": 13,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Performance",
+     "label": "Hydrostatic shell test",
+     "value": "15,000 psi",
+     "unit": null,
+     "position": 14,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Performance",
+     "label": "Temperature markings seen",
+     "value": "P+U; −29 °C to +121 °C",
+     "unit": null,
+     "position": 15,
+     "isFilterable": false,
+     "templateKey": null
+    }
+   ],
+   "searchAliases": [
+    "E-Type",
+    "FLS",
+    "2-1/16 10K",
+    "2-1/16 10000",
+    "2 1/16 10000",
+    "BX-152",
+    "Cameron",
+    "T3",
+    "NOV"
+   ],
+   "images": [
+    {
+     "file": "cameron-gate-valve-2-1-16-10000-psi-used-521-1.jpg",
+     "alt": "Cameron FLS gate valve, 2-1/16″ 10,000 psi"
+    },
+    {
+     "file": "t3-gate-valve-2-1-16-10000-psi-399-1.jpg",
+     "alt": "T3 gate valve, 2-1/16″ 10,000 psi"
+    },
+    {
+     "file": "nov-gate-valve-2-1-16-10000-psi-124-1.jpg",
+     "alt": "NOV E-Type gate valve, 2-1/16″ 10,000 psi"
+    },
+    {
+     "file": "cameron-gate-valve-2-1-16-10000-psi-used-521-2.jpg",
+     "alt": "Nameplate of a Cameron 2-1/16″ 10,000 psi gate valve"
+    }
+   ],
+   "seriesPage": null,
+   "source": {
+    "ofsListings": [
+     "124",
+     "399",
+     "516",
+     "520",
+     "521"
+    ]
+   }
+  },
+  {
+   "sku": "IH-OFV-GATE-2116-15K",
+   "slug": "api-6a-gate-valve-2-1-16-inch-15000-psi",
+   "title": "API 6A Gate Valve, 2-1/16″, 15,000 psi",
+   "brand": null,
+   "countryOfOrigin": null,
+   "leadTimeDays": null,
+   "focusKeyword": "2-1/16 15K gate valve",
+   "descriptionShort": "2-1/16″ API 6A gate valve, 15,000 psi (15K). Supplied new from Anson and WOM to your PSL, PR, material and temperature class; flanged ends take a BX-152 ring.",
+   "descriptionLong": "<p>A 2-1/16″ (52 mm) gate valve to API 6A, rated 15,000 psi working pressure (15K). We supply it new from Anson and WOM, and other API 6A manufacturers, to the PSL, PR, material class and temperature class you specify. The table lists the models and nameplate markings we have seen at this bore and rating, so you can quote a make and model directly.</p><h3>Makes and models at this rating</h3><table><thead><tr><th scope=\"col\">Make</th><th scope=\"col\">Model</th><th scope=\"col\">Part / assembly no.</th><th scope=\"col\">PSL</th><th scope=\"col\">PR</th><th scope=\"col\">Material class</th><th scope=\"col\">Temperature</th></tr></thead><tbody><tr><td>Anson</td><td>E-Type</td><td>—</td><td>PSL 3</td><td>PR1</td><td>EE</td><td>P+U</td></tr><tr><td>WOM</td><td>—</td><td>—</td><td>—</td><td>PR2</td><td>—</td><td>−20 °F to +250 °F</td></tr><tr><td>EEC (Energy Equipment Corp.)</td><td>—</td><td><code>221-705-55-03E</code></td><td>—</td><td>—</td><td>—</td><td>—</td></tr></tbody></table><p>Each row is what is marked on a valve we have photographed at this bore and pressure; a dash means the nameplate does not state it or is not legible. Your valve is built to the specification you put on the RFQ, not to these plates.</p><h3>Rating, test and flanges</h3><ul><li><strong>Working pressure:</strong> 15,000 psi. API 6A shell test: 22,500 psi.</li><li><strong>Flanged ends:</strong> API 6BX flanges at this size and rating take a BX-152 ring gasket.</li><li><strong>Bore:</strong> full bore — the bore matches the nominal size, so wireline tools and pigs pass through.</li></ul><h3>Reading the nameplate</h3><ul><li><strong>PSL</strong> (product specification level, 1 to 4) sets the inspection, testing and traceability applied. PSL 3G adds a gas test.</li><li><strong>PR</strong> (performance requirement) is PR1 or PR2; PR2 valves have passed the design-validation testing in API 6A.</li><li><strong>Material class</strong> AA to CC is general service. DD, EE, FF and HH are sour service to NACE MR0175 / ISO 15156; a suffix such as -0.5 or -1.5 is the maximum H₂S partial pressure in psia, and NL means no limit.</li><li><strong>Temperature class</strong> letters combine: P = −20 °F to +180 °F; U = 0 °F to +250 °F. P+U covers −20 °F to +250 °F.</li></ul><h3>Ordering</h3><p>Put the bore, pressure, end connections, PSL, PR, material and temperature class on your RFQ, with a preferred make and model if you have one. We confirm lead time and documentation — including the API 6A monogram and material certificates — on the quotation.</p>",
+   "seoTitle": "2-1/16″ 15K API 6A Gate Valve, 15,000 psi",
+   "seoDescription": "API 6A Gate Valve, 2-1/16″, 15,000 psi: Anson and WOM. PSL, PR, material and temperature class to order. Request a quote.",
+   "faqs": [
+    {
+     "question": "What do PSL and PR mean on a 2-1/16″ 15K gate valve?",
+     "answer": "PSL (1 to 4) is the product specification level: the inspection, testing and traceability applied during manufacture, with PSL 3G adding a gas test. PR is the performance requirement: PR2 valves have passed API 6A design-validation testing, PR1 valves have not. Specify both on the RFQ."
+    },
+    {
+     "question": "Which material class do I need for sour service?",
+     "answer": "API 6A material classes DD, EE, FF and HH are for sour service to NACE MR0175 / ISO 15156. The suffix gives the maximum H₂S partial pressure the valve is rated for, in psia — for example EE-0.5 or DD-NL (no limit). AA, BB and CC are general service. Choose by the H₂S partial pressure and CO₂ content of your fluid."
+    },
+    {
+     "question": "What ring gasket does a 2-1/16″ 15K API 6A flange use?",
+     "answer": "A BX-152 ring gasket, on an API 6BX flange. Order the rings with the valve if you need them."
+    },
+    {
+     "question": "What pressure is the valve body tested to?",
+     "answer": "API 6A sets the hydrostatic shell test for a 15,000 psi valve at 22,500 psi."
+    },
+    {
+     "question": "Can you supply a specific make or model?",
+     "answer": "Yes. At this rating we supply Anson and WOM, including E-Type. Give the make, model and any part number on the RFQ and we quote against it."
+    },
+    {
+     "question": "Are these valves supplied new?",
+     "answer": "Yes. We source new valves to the specification on your RFQ and state the lead time and documentation on the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Valve Type",
+     "value": "Gate valve — manual handwheel; hydraulic on request",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "valve_type"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size",
+     "value": "2-1/16 in",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "nominal_size"
+    },
+    {
+     "group": "Performance",
+     "label": "Working Pressure",
+     "value": "15000",
+     "unit": "psi",
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "working_pressure_psi"
+    },
+    {
+     "group": "Performance",
+     "label": "Pressure Class",
+     "value": "15K",
+     "unit": null,
+     "position": 3,
+     "isFilterable": true,
+     "templateKey": "pressure_class"
+    },
+    {
+     "group": "Dimensions",
+     "label": "End Connection (Inlet)",
+     "value": "API 6BX flanged (BX-152 ring)",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "end_connection_inlet"
+    },
+    {
+     "group": "Dimensions",
+     "label": "End Connection (Outlet)",
+     "value": "API 6BX flanged (BX-152 ring)",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "end_connection_outlet"
+    },
+    {
+     "group": "Performance",
+     "label": "Service Class",
+     "value": "Standard or sour service (NACE MR0175 / ISO 15156) by material class",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "service_class"
+    },
+    {
+     "group": "Compliance",
+     "label": "API Specification",
+     "value": "API 6A",
+     "unit": null,
+     "position": 7,
+     "isFilterable": true,
+     "templateKey": "api_spec"
+    },
+    {
+     "group": "Compliance",
+     "label": "PSL Class",
+     "value": "PSL 3 marked; PSL 1–4 to order",
+     "unit": null,
+     "position": 8,
+     "isFilterable": false,
+     "templateKey": "psl_class"
+    },
+    {
+     "group": "Compliance",
+     "label": "PR Class",
+     "value": "PR1, PR2 marked; to order",
+     "unit": null,
+     "position": 9,
+     "isFilterable": false,
+     "templateKey": "pr_class"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Bore Type",
+     "value": "Full bore",
+     "unit": null,
+     "position": 10,
+     "isFilterable": false,
+     "templateKey": "bore_type"
+    },
+    {
+     "group": "Compliance",
+     "label": "Material Class (API 6A)",
+     "value": "EE marked; AA–HH to order",
+     "unit": null,
+     "position": 11,
+     "isFilterable": false,
+     "templateKey": "material_class_api"
+    },
+    {
+     "group": "Identification",
+     "label": "Makes available",
+     "value": "Anson, WOM",
+     "unit": null,
+     "position": 12,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Identification",
+     "label": "Part / assembly numbers seen",
+     "value": "221-705-55-03E",
+     "unit": null,
+     "position": 13,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Identification",
+     "label": "Models seen",
+     "value": "E-Type",
+     "unit": null,
+     "position": 14,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Performance",
+     "label": "Hydrostatic shell test",
+     "value": "22,500 psi",
+     "unit": null,
+     "position": 15,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Performance",
+     "label": "Temperature markings seen",
+     "value": "−20 °F to +250 °F; P+U",
+     "unit": null,
+     "position": 16,
+     "isFilterable": false,
+     "templateKey": null
+    }
+   ],
+   "searchAliases": [
+    "221-705-55-03E",
+    "E-Type",
+    "2-1/16 15K",
+    "2-1/16 15000",
+    "2 1/16 15000",
+    "BX-152",
+    "Anson",
+    "WOM"
+   ],
+   "images": [
+    {
+     "file": "anson-gate-valve-2-1-16-15000-psi-396-1.jpg",
+     "alt": "Anson E-Type gate valve, 2-1/16″ 15,000 psi"
+    },
+    {
+     "file": "wom-gate-valve-2-1-16-15000-psi-395-1.jpg",
+     "alt": "WOM gate valve, 2-1/16″ 15,000 psi"
+    },
+    {
+     "file": "eec-gate-valve-2-1-16-15000-psi-394-1.jpg",
+     "alt": "EEC gate valve, 2-1/16″ 15,000 psi"
+    },
+    {
+     "file": "anson-gate-valve-2-1-16-15000-psi-396-3.jpg",
+     "alt": "Nameplate of a Anson 2-1/16″ 15,000 psi gate valve"
+    }
+   ],
+   "seriesPage": null,
+   "source": {
+    "ofsListings": [
+     "394",
+     "395",
+     "396",
+     "487"
+    ]
+   }
+  },
+  {
+   "sku": "IH-OFV-GATE-2916-15K",
+   "slug": "api-6a-gate-valve-2-9-16-inch-15000-psi",
+   "title": "API 6A Gate Valve, 2-9/16″, 15,000 psi",
+   "brand": null,
+   "countryOfOrigin": null,
+   "leadTimeDays": null,
+   "focusKeyword": "2-9/16 15K gate valve",
+   "descriptionShort": "2-9/16″ API 6A gate valve, 15,000 psi (15K). Supplied new from WOM, MCM Oil Tools and Stream-Flo to your PSL, PR, material and temperature class; flanged ends take a BX-153 ring.",
+   "descriptionLong": "<p>A 2-9/16″ (65 mm) gate valve to API 6A, rated 15,000 psi working pressure (15K). We supply it new from WOM, MCM Oil Tools and Stream-Flo, and other API 6A manufacturers, to the PSL, PR, material class and temperature class you specify. The table lists the models and nameplate markings we have seen at this bore and rating, so you can quote a make and model directly.</p><h3>Makes and models at this rating</h3><table><thead><tr><th scope=\"col\">Make</th><th scope=\"col\">Model</th><th scope=\"col\">Part / assembly no.</th><th scope=\"col\">PSL</th><th scope=\"col\">PR</th><th scope=\"col\">Material class</th><th scope=\"col\">Temperature</th></tr></thead><tbody><tr><td>WOM</td><td>—</td><td>—</td><td>PSL 3</td><td>PR2</td><td>DD</td><td>P+U</td></tr><tr><td>MCM Oil Tools</td><td>—</td><td><code>FCM291615DD</code></td><td>—</td><td>—</td><td>DD</td><td>P+U</td></tr><tr><td>Stream-Flo</td><td>Crown</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr></tbody></table><p>Each row is what is marked on a valve we have photographed at this bore and pressure; a dash means the nameplate does not state it or is not legible. Your valve is built to the specification you put on the RFQ, not to these plates.</p><h3>Rating, test and flanges</h3><ul><li><strong>Working pressure:</strong> 15,000 psi. API 6A shell test: 22,500 psi.</li><li><strong>Flanged ends:</strong> API 6BX flanges at this size and rating take a BX-153 ring gasket.</li><li><strong>Bore:</strong> full bore — the bore matches the nominal size, so wireline tools and pigs pass through.</li></ul><h3>Reading the nameplate</h3><ul><li><strong>PSL</strong> (product specification level, 1 to 4) sets the inspection, testing and traceability applied. PSL 3G adds a gas test.</li><li><strong>PR</strong> (performance requirement) is PR1 or PR2; PR2 valves have passed the design-validation testing in API 6A.</li><li><strong>Material class</strong> AA to CC is general service. DD, EE, FF and HH are sour service to NACE MR0175 / ISO 15156; a suffix such as -0.5 or -1.5 is the maximum H₂S partial pressure in psia, and NL means no limit.</li><li><strong>Temperature class</strong> letters combine: P = −20 °F to +180 °F; U = 0 °F to +250 °F. P+U covers −20 °F to +250 °F.</li></ul><h3>Ordering</h3><p>Put the bore, pressure, end connections, PSL, PR, material and temperature class on your RFQ, with a preferred make and model if you have one. We confirm lead time and documentation — including the API 6A monogram and material certificates — on the quotation.</p>",
+   "seoTitle": "2-9/16″ 15K API 6A Gate Valve, 15,000 psi",
+   "seoDescription": "API 6A Gate Valve, 2-9/16″, 15,000 psi: WOM, MCM Oil Tools and Stream-Flo. PSL, PR, material and temperature class to order. Request a quote.",
+   "faqs": [
+    {
+     "question": "What do PSL and PR mean on a 2-9/16″ 15K gate valve?",
+     "answer": "PSL (1 to 4) is the product specification level: the inspection, testing and traceability applied during manufacture, with PSL 3G adding a gas test. PR is the performance requirement: PR2 valves have passed API 6A design-validation testing, PR1 valves have not. Specify both on the RFQ."
+    },
+    {
+     "question": "Which material class do I need for sour service?",
+     "answer": "API 6A material classes DD, EE, FF and HH are for sour service to NACE MR0175 / ISO 15156. The suffix gives the maximum H₂S partial pressure the valve is rated for, in psia — for example EE-0.5 or DD-NL (no limit). AA, BB and CC are general service. Choose by the H₂S partial pressure and CO₂ content of your fluid."
+    },
+    {
+     "question": "What ring gasket does a 2-9/16″ 15K API 6A flange use?",
+     "answer": "A BX-153 ring gasket, on an API 6BX flange. Order the rings with the valve if you need them."
+    },
+    {
+     "question": "What pressure is the valve body tested to?",
+     "answer": "API 6A sets the hydrostatic shell test for a 15,000 psi valve at 22,500 psi."
+    },
+    {
+     "question": "Can you supply a specific make or model?",
+     "answer": "Yes. At this rating we supply WOM, MCM Oil Tools and Stream-Flo, including Crown. Give the make, model and any part number on the RFQ and we quote against it."
+    },
+    {
+     "question": "Are these valves supplied new?",
+     "answer": "Yes. We source new valves to the specification on your RFQ and state the lead time and documentation on the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Valve Type",
+     "value": "Gate valve — manual handwheel; hydraulic on request",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "valve_type"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size",
+     "value": "2-9/16 in",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "nominal_size"
+    },
+    {
+     "group": "Performance",
+     "label": "Working Pressure",
+     "value": "15000",
+     "unit": "psi",
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "working_pressure_psi"
+    },
+    {
+     "group": "Performance",
+     "label": "Pressure Class",
+     "value": "15K",
+     "unit": null,
+     "position": 3,
+     "isFilterable": true,
+     "templateKey": "pressure_class"
+    },
+    {
+     "group": "Dimensions",
+     "label": "End Connection (Inlet)",
+     "value": "API 6BX flanged (BX-153 ring)",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "end_connection_inlet"
+    },
+    {
+     "group": "Dimensions",
+     "label": "End Connection (Outlet)",
+     "value": "API 6BX flanged (BX-153 ring)",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "end_connection_outlet"
+    },
+    {
+     "group": "Performance",
+     "label": "Service Class",
+     "value": "Standard or sour service (NACE MR0175 / ISO 15156) by material class",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "service_class"
+    },
+    {
+     "group": "Compliance",
+     "label": "API Specification",
+     "value": "API 6A",
+     "unit": null,
+     "position": 7,
+     "isFilterable": true,
+     "templateKey": "api_spec"
+    },
+    {
+     "group": "Compliance",
+     "label": "PSL Class",
+     "value": "PSL 3 marked; PSL 1–4 to order",
+     "unit": null,
+     "position": 8,
+     "isFilterable": false,
+     "templateKey": "psl_class"
+    },
+    {
+     "group": "Compliance",
+     "label": "PR Class",
+     "value": "PR2 marked; to order",
+     "unit": null,
+     "position": 9,
+     "isFilterable": false,
+     "templateKey": "pr_class"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Bore Type",
+     "value": "Full bore",
+     "unit": null,
+     "position": 10,
+     "isFilterable": false,
+     "templateKey": "bore_type"
+    },
+    {
+     "group": "Compliance",
+     "label": "Material Class (API 6A)",
+     "value": "DD marked; AA–HH to order",
+     "unit": null,
+     "position": 11,
+     "isFilterable": false,
+     "templateKey": "material_class_api"
+    },
+    {
+     "group": "Identification",
+     "label": "Makes available",
+     "value": "WOM, MCM Oil Tools, Stream-Flo",
+     "unit": null,
+     "position": 12,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Identification",
+     "label": "Part / assembly numbers seen",
+     "value": "FCM291615DD",
+     "unit": null,
+     "position": 13,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Identification",
+     "label": "Models seen",
+     "value": "Crown",
+     "unit": null,
+     "position": 14,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Performance",
+     "label": "Hydrostatic shell test",
+     "value": "22,500 psi",
+     "unit": null,
+     "position": 15,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Performance",
+     "label": "Temperature markings seen",
+     "value": "P+U",
+     "unit": null,
+     "position": 16,
+     "isFilterable": false,
+     "templateKey": null
+    }
+   ],
+   "searchAliases": [
+    "FCM291615DD",
+    "Crown",
+    "2-9/16 15K",
+    "2-9/16 15000",
+    "2 9/16 15000",
+    "BX-153",
+    "WOM",
+    "MCM Oil Tools",
+    "Stream-Flo"
+   ],
+   "images": [
+    {
+     "file": "wom-gate-valve-2-9-16-15000psi-flange-type-api-6a-125-1.jpg",
+     "alt": "WOM gate valve, 2-9/16″ 15,000 psi"
+    },
+    {
+     "file": "mcm-gate-valve-2-9-16-15000-psi-376-1.jpg",
+     "alt": "MCM Oil Tools gate valve, 2-9/16″ 15,000 psi"
+    },
+    {
+     "file": "stream-flo-gate-valve-2-9-16-15000-psi-375-1.jpg",
+     "alt": "Stream-Flo Crown gate valve, 2-9/16″ 15,000 psi"
+    },
+    {
+     "file": "wom-gate-valve-2-9-16-15000psi-flange-type-api-6a-125-4.jpg",
+     "alt": "Nameplate of a WOM 2-9/16″ 15,000 psi gate valve"
+    }
+   ],
+   "seriesPage": null,
+   "source": {
+    "ofsListings": [
+     "125",
+     "375",
+     "376"
+    ]
+   }
+  },
+  {
+   "sku": "IH-OFV-GATE-3116-10K",
+   "slug": "api-6a-gate-valve-3-1-16-inch-10000-psi",
+   "title": "API 6A Gate Valve, 3-1/16″, 10,000 psi",
+   "brand": null,
+   "countryOfOrigin": null,
+   "leadTimeDays": null,
+   "focusKeyword": "3-1/16 10K gate valve",
+   "descriptionShort": "3-1/16″ API 6A gate valve, 10,000 psi (10K). Supplied new from T3 to your PSL, PR, material and temperature class; flanged ends take a BX-154 ring.",
+   "descriptionLong": "<p>A 3-1/16″ (78 mm) gate valve to API 6A, rated 10,000 psi working pressure (10K). We supply it new from T3, and other API 6A manufacturers, to the PSL, PR, material class and temperature class you specify. The table lists the models and nameplate markings we have seen at this bore and rating, so you can quote a make and model directly.</p><h3>Makes and models at this rating</h3><table><thead><tr><th scope=\"col\">Make</th><th scope=\"col\">Model</th><th scope=\"col\">Part / assembly no.</th><th scope=\"col\">PSL</th><th scope=\"col\">PR</th><th scope=\"col\">Material class</th><th scope=\"col\">Temperature</th></tr></thead><tbody><tr><td>T3 Energy Services</td><td>T3FC</td><td>—</td><td>PSL 3</td><td>—</td><td>DD</td><td>P+U</td></tr><tr><td>Unbranded</td><td>—</td><td>—</td><td>PSL 3</td><td>PR1</td><td>—</td><td>−20 °F to +250 °F</td></tr></tbody></table><p>Each row is what is marked on a valve we have photographed at this bore and pressure; a dash means the nameplate does not state it or is not legible. Your valve is built to the specification you put on the RFQ, not to these plates.</p><h3>Rating, test and flanges</h3><ul><li><strong>Working pressure:</strong> 10,000 psi. API 6A shell test: 15,000 psi.</li><li><strong>Flanged ends:</strong> API 6BX flanges at this size and rating take a BX-154 ring gasket.</li><li><strong>Bore:</strong> full bore — the bore matches the nominal size, so wireline tools and pigs pass through.</li></ul><h3>Reading the nameplate</h3><ul><li><strong>PSL</strong> (product specification level, 1 to 4) sets the inspection, testing and traceability applied. PSL 3G adds a gas test.</li><li><strong>PR</strong> (performance requirement) is PR1 or PR2; PR2 valves have passed the design-validation testing in API 6A.</li><li><strong>Material class</strong> AA to CC is general service. DD, EE, FF and HH are sour service to NACE MR0175 / ISO 15156; a suffix such as -0.5 or -1.5 is the maximum H₂S partial pressure in psia, and NL means no limit.</li><li><strong>Temperature class</strong> letters combine: P = −20 °F to +180 °F; U = 0 °F to +250 °F. P+U covers −20 °F to +250 °F.</li></ul><h3>Configured listings at this rating</h3><p>We also list these fully specified valves at the same bore and pressure:</p><ul><li><a href=\"/p/manual-gate-valve-fail-close-3-1-16-in-10m-flanged-10-000-psi-api-6a-psl-3-pr1-ee-1-5\">WOM manual gate valve, PSL 3 PR1, EE-1.5</a></li><li><a href=\"/p/manual-gate-valve-fls-3-1-16-in-10m-flanged-10-000-psi-api-6a-psl-3-pr2f-ee-1-5\">WOM FLS manual gate valve, PSL 3 PR2F, EE-1.5</a></li><li><a href=\"/p/hydraulic-gate-valve-fail-close-3-1-16-in-10m-flanged-10-000-psi-api-6a-psl-3-pr1-ee-1-5\">FMC hydraulic gate valve, PSL 3 PR1, EE-1.5</a></li></ul><h3>Ordering</h3><p>Put the bore, pressure, end connections, PSL, PR, material and temperature class on your RFQ, with a preferred make and model if you have one. We confirm lead time and documentation — including the API 6A monogram and material certificates — on the quotation.</p>",
+   "seoTitle": "3-1/16″ 10K API 6A Gate Valve, 10,000 psi",
+   "seoDescription": "API 6A Gate Valve, 3-1/16″, 10,000 psi: T3. PSL, PR, material and temperature class to order. Request a quote.",
+   "faqs": [
+    {
+     "question": "What do PSL and PR mean on a 3-1/16″ 10K gate valve?",
+     "answer": "PSL (1 to 4) is the product specification level: the inspection, testing and traceability applied during manufacture, with PSL 3G adding a gas test. PR is the performance requirement: PR2 valves have passed API 6A design-validation testing, PR1 valves have not. Specify both on the RFQ."
+    },
+    {
+     "question": "Which material class do I need for sour service?",
+     "answer": "API 6A material classes DD, EE, FF and HH are for sour service to NACE MR0175 / ISO 15156. The suffix gives the maximum H₂S partial pressure the valve is rated for, in psia — for example EE-0.5 or DD-NL (no limit). AA, BB and CC are general service. Choose by the H₂S partial pressure and CO₂ content of your fluid."
+    },
+    {
+     "question": "What ring gasket does a 3-1/16″ 10K API 6A flange use?",
+     "answer": "A BX-154 ring gasket, on an API 6BX flange. Order the rings with the valve if you need them."
+    },
+    {
+     "question": "What pressure is the valve body tested to?",
+     "answer": "API 6A sets the hydrostatic shell test for a 10,000 psi valve at 15,000 psi."
+    },
+    {
+     "question": "Can you supply a specific make or model?",
+     "answer": "Yes. At this rating we supply T3, including T3FC. Give the make, model and any part number on the RFQ and we quote against it."
+    },
+    {
+     "question": "Are these valves supplied new?",
+     "answer": "Yes. We source new valves to the specification on your RFQ and state the lead time and documentation on the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Valve Type",
+     "value": "Gate valve — manual handwheel; hydraulic on request",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "valve_type"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size",
+     "value": "3-1/16 in",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "nominal_size"
+    },
+    {
+     "group": "Performance",
+     "label": "Working Pressure",
+     "value": "10000",
+     "unit": "psi",
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "working_pressure_psi"
+    },
+    {
+     "group": "Performance",
+     "label": "Pressure Class",
+     "value": "10K",
+     "unit": null,
+     "position": 3,
+     "isFilterable": true,
+     "templateKey": "pressure_class"
+    },
+    {
+     "group": "Dimensions",
+     "label": "End Connection (Inlet)",
+     "value": "API 6BX flanged (BX-154 ring)",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "end_connection_inlet"
+    },
+    {
+     "group": "Dimensions",
+     "label": "End Connection (Outlet)",
+     "value": "API 6BX flanged (BX-154 ring)",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "end_connection_outlet"
+    },
+    {
+     "group": "Performance",
+     "label": "Service Class",
+     "value": "Standard or sour service (NACE MR0175 / ISO 15156) by material class",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "service_class"
+    },
+    {
+     "group": "Compliance",
+     "label": "API Specification",
+     "value": "API 6A",
+     "unit": null,
+     "position": 7,
+     "isFilterable": true,
+     "templateKey": "api_spec"
+    },
+    {
+     "group": "Compliance",
+     "label": "PSL Class",
+     "value": "PSL 3 marked; PSL 1–4 to order",
+     "unit": null,
+     "position": 8,
+     "isFilterable": false,
+     "templateKey": "psl_class"
+    },
+    {
+     "group": "Compliance",
+     "label": "PR Class",
+     "value": "PR1 marked; to order",
+     "unit": null,
+     "position": 9,
+     "isFilterable": false,
+     "templateKey": "pr_class"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Bore Type",
+     "value": "Full bore",
+     "unit": null,
+     "position": 10,
+     "isFilterable": false,
+     "templateKey": "bore_type"
+    },
+    {
+     "group": "Compliance",
+     "label": "Material Class (API 6A)",
+     "value": "DD marked; AA–HH to order",
+     "unit": null,
+     "position": 11,
+     "isFilterable": false,
+     "templateKey": "material_class_api"
+    },
+    {
+     "group": "Identification",
+     "label": "Makes available",
+     "value": "T3",
+     "unit": null,
+     "position": 12,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Identification",
+     "label": "Models seen",
+     "value": "T3FC",
+     "unit": null,
+     "position": 13,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Performance",
+     "label": "Hydrostatic shell test",
+     "value": "15,000 psi",
+     "unit": null,
+     "position": 14,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Performance",
+     "label": "Temperature markings seen",
+     "value": "P+U; −20 °F to +250 °F",
+     "unit": null,
+     "position": 15,
+     "isFilterable": false,
+     "templateKey": null
+    }
+   ],
+   "searchAliases": [
+    "T3FC",
+    "3-1/16 10K",
+    "3-1/16 10000",
+    "3 1/16 10000",
+    "BX-154",
+    "T3"
+   ],
+   "images": [
+    {
+     "file": "t3-gate-valve-3-1-16-10000-psi-373-1.jpg",
+     "alt": "T3 T3FC gate valve, 3-1/16″ 10,000 psi"
+    },
+    {
+     "file": "scana-gate-valve-3-1-16-10000-psi-used-526-1.jpg",
+     "alt": "API 6A gate valve, 3-1/16″ 10,000 psi"
+    },
+    {
+     "file": "t3-gate-valve-3-1-16-10000-psi-373-2.jpg",
+     "alt": "Nameplate of a T3 3-1/16″ 10,000 psi gate valve"
+    }
+   ],
+   "seriesPage": null,
+   "source": {
+    "ofsListings": [
+     "373",
+     "526"
+    ]
+   }
+  },
+  {
+   "sku": "IH-OFV-GATE-3116-15K",
+   "slug": "api-6a-gate-valve-3-1-16-inch-15000-psi",
+   "title": "API 6A Gate Valve, 3-1/16″, 15,000 psi",
+   "brand": null,
+   "countryOfOrigin": null,
+   "leadTimeDays": null,
+   "focusKeyword": "3-1/16 15K gate valve",
+   "descriptionShort": "3-1/16″ API 6A gate valve, 15,000 psi (15K). Supplied new from WOM, T3, NOV and Quality Oil Tools to your PSL, PR, material and temperature class; flanged ends take a BX-154 ring.",
+   "descriptionLong": "<p>A 3-1/16″ (78 mm) gate valve to API 6A, rated 15,000 psi working pressure (15K). We supply it new from WOM, T3, NOV and Quality Oil Tools, and other API 6A manufacturers, to the PSL, PR, material class and temperature class you specify. The table lists the models and nameplate markings we have seen at this bore and rating, so you can quote a make and model directly.</p><h3>Makes and models at this rating</h3><table><thead><tr><th scope=\"col\">Make</th><th scope=\"col\">Model</th><th scope=\"col\">Part / assembly no.</th><th scope=\"col\">PSL</th><th scope=\"col\">PR</th><th scope=\"col\">Material class</th><th scope=\"col\">Temperature</th></tr></thead><tbody><tr><td>T3 Energy Services</td><td>HPT</td><td><code>20397342</code></td><td>PSL 3</td><td>PR2</td><td>EE-0.5</td><td>—</td></tr><tr><td>WOM</td><td>WM1900</td><td>—</td><td>PSL 3</td><td>PR2</td><td>DD</td><td>P+U</td></tr><tr><td>WOM</td><td>—</td><td><code>M0687</code></td><td>PSL 3</td><td>PR2</td><td>—</td><td>−20 °F to +350 °F</td></tr><tr><td>WOM</td><td>WM1900H</td><td>—</td><td>PSL 3</td><td>PR2</td><td>—</td><td>P+X</td></tr><tr><td>NOV Mission</td><td>—</td><td>—</td><td>PSL 3</td><td>PR2</td><td>DD</td><td>—</td></tr><tr><td>NOV Mission</td><td>HB hydraulic</td><td><code>20393340</code></td><td>—</td><td>—</td><td>DD-NL</td><td>—</td></tr><tr><td>T3 Energy Services</td><td>HPT</td><td><code>50000685</code></td><td>PSL 3G</td><td>—</td><td>—</td><td>—</td></tr><tr><td>Quality Oil Tools</td><td>FC manual</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>T3 Energy Services</td><td>HPT</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr></tbody></table><p>Each row is what is marked on a valve we have photographed at this bore and pressure; a dash means the nameplate does not state it or is not legible. Your valve is built to the specification you put on the RFQ, not to these plates.</p><h3>Rating, test and flanges</h3><ul><li><strong>Working pressure:</strong> 15,000 psi. API 6A shell test: 22,500 psi.</li><li><strong>Flanged ends:</strong> API 6BX flanges at this size and rating take a BX-154 ring gasket.</li><li><strong>Bore:</strong> full bore — the bore matches the nominal size, so wireline tools and pigs pass through.</li></ul><h3>Reading the nameplate</h3><ul><li><strong>PSL</strong> (product specification level, 1 to 4) sets the inspection, testing and traceability applied. PSL 3G adds a gas test.</li><li><strong>PR</strong> (performance requirement) is PR1 or PR2; PR2 valves have passed the design-validation testing in API 6A.</li><li><strong>Material class</strong> AA to CC is general service. DD, EE, FF and HH are sour service to NACE MR0175 / ISO 15156; a suffix such as -0.5 or -1.5 is the maximum H₂S partial pressure in psia, and NL means no limit.</li><li><strong>Temperature class</strong> letters combine: P = −20 °F to +180 °F; U = 0 °F to +250 °F; X = 0 °F to +350 °F. P+U covers −20 °F to +250 °F.</li></ul><h3>Configured listings at this rating</h3><p>We also list these fully specified valves at the same bore and pressure:</p><ul><li><a href=\"/p/manual-gate-valve-fail-close-3-1-16-in-15m-flanged-15-000-psi-api-6a-psl-3-pr1-ee-0-5\">Cameron manual gate valve, PSL 3 PR1, EE-0.5</a></li><li><a href=\"/p/hydraulic-gate-valve-fail-close-3-1-16-in-15m-flanged-15-000-psi-api-6a-psl-3-pr1-ee-0-5\">Cameron hydraulic gate valve, PSL 3 PR1, EE-0.5</a></li><li><a href=\"/p/manual-slab-gate-valve-3-1-16-in-10m-flanged-15-000-psi-api-6a-psl-3g-pr2-hh-inconel-625-cladded\">FMC manual slab gate valve, PSL 3G PR2, HH Inconel 625 cladded</a></li></ul><h3>Ordering</h3><p>Put the bore, pressure, end connections, PSL, PR, material and temperature class on your RFQ, with a preferred make and model if you have one. We confirm lead time and documentation — including the API 6A monogram and material certificates — on the quotation.</p>",
+   "seoTitle": "3-1/16″ 15K API 6A Gate Valve, 15,000 psi",
+   "seoDescription": "API 6A Gate Valve, 3-1/16″, 15,000 psi: WOM, T3, NOV and Quality Oil Tools. PSL, PR, material and temperature class to order. Request a quote.",
+   "faqs": [
+    {
+     "question": "What do PSL and PR mean on a 3-1/16″ 15K gate valve?",
+     "answer": "PSL (1 to 4) is the product specification level: the inspection, testing and traceability applied during manufacture, with PSL 3G adding a gas test. PR is the performance requirement: PR2 valves have passed API 6A design-validation testing, PR1 valves have not. Specify both on the RFQ."
+    },
+    {
+     "question": "Which material class do I need for sour service?",
+     "answer": "API 6A material classes DD, EE, FF and HH are for sour service to NACE MR0175 / ISO 15156. The suffix gives the maximum H₂S partial pressure the valve is rated for, in psia — for example EE-0.5 or DD-NL (no limit). AA, BB and CC are general service. Choose by the H₂S partial pressure and CO₂ content of your fluid."
+    },
+    {
+     "question": "What ring gasket does a 3-1/16″ 15K API 6A flange use?",
+     "answer": "A BX-154 ring gasket, on an API 6BX flange. Order the rings with the valve if you need them."
+    },
+    {
+     "question": "What pressure is the valve body tested to?",
+     "answer": "API 6A sets the hydrostatic shell test for a 15,000 psi valve at 22,500 psi."
+    },
+    {
+     "question": "Can you supply a specific make or model?",
+     "answer": "Yes. At this rating we supply WOM, T3, NOV and Quality Oil Tools, including WM1900, FC manual, HPT and HB hydraulic. Give the make, model and any part number on the RFQ and we quote against it."
+    },
+    {
+     "question": "Are these valves supplied new?",
+     "answer": "Yes. We source new valves to the specification on your RFQ and state the lead time and documentation on the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Valve Type",
+     "value": "Gate valve — manual handwheel; hydraulic on request",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "valve_type"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size",
+     "value": "3-1/16 in",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "nominal_size"
+    },
+    {
+     "group": "Performance",
+     "label": "Working Pressure",
+     "value": "15000",
+     "unit": "psi",
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "working_pressure_psi"
+    },
+    {
+     "group": "Performance",
+     "label": "Pressure Class",
+     "value": "15K",
+     "unit": null,
+     "position": 3,
+     "isFilterable": true,
+     "templateKey": "pressure_class"
+    },
+    {
+     "group": "Dimensions",
+     "label": "End Connection (Inlet)",
+     "value": "API 6BX flanged (BX-154 ring)",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "end_connection_inlet"
+    },
+    {
+     "group": "Dimensions",
+     "label": "End Connection (Outlet)",
+     "value": "API 6BX flanged (BX-154 ring)",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "end_connection_outlet"
+    },
+    {
+     "group": "Performance",
+     "label": "Service Class",
+     "value": "Standard or sour service (NACE MR0175 / ISO 15156) by material class",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "service_class"
+    },
+    {
+     "group": "Compliance",
+     "label": "API Specification",
+     "value": "API 6A",
+     "unit": null,
+     "position": 7,
+     "isFilterable": true,
+     "templateKey": "api_spec"
+    },
+    {
+     "group": "Compliance",
+     "label": "PSL Class",
+     "value": "PSL 3, PSL 3G marked; PSL 1–4 to order",
+     "unit": null,
+     "position": 8,
+     "isFilterable": false,
+     "templateKey": "psl_class"
+    },
+    {
+     "group": "Compliance",
+     "label": "PR Class",
+     "value": "PR2 marked; to order",
+     "unit": null,
+     "position": 9,
+     "isFilterable": false,
+     "templateKey": "pr_class"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Bore Type",
+     "value": "Full bore",
+     "unit": null,
+     "position": 10,
+     "isFilterable": false,
+     "templateKey": "bore_type"
+    },
+    {
+     "group": "Compliance",
+     "label": "Material Class (API 6A)",
+     "value": "DD, DD-NL, EE-0.5 marked; AA–HH to order",
+     "unit": null,
+     "position": 11,
+     "isFilterable": false,
+     "templateKey": "material_class_api"
+    },
+    {
+     "group": "Identification",
+     "label": "Makes available",
+     "value": "WOM, T3, NOV, Quality Oil Tools",
+     "unit": null,
+     "position": 12,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Identification",
+     "label": "Part / assembly numbers seen",
+     "value": "50000685, M0687, 20397342, 20393340",
+     "unit": null,
+     "position": 13,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Identification",
+     "label": "Models seen",
+     "value": "WM1900, FC manual, HPT, HB hydraulic, WM1900H",
+     "unit": null,
+     "position": 14,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Performance",
+     "label": "Hydrostatic shell test",
+     "value": "22,500 psi",
+     "unit": null,
+     "position": 15,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Performance",
+     "label": "Temperature markings seen",
+     "value": "P+U; −20 °F to +350 °F; P+X",
+     "unit": null,
+     "position": 16,
+     "isFilterable": false,
+     "templateKey": null
+    }
+   ],
+   "searchAliases": [
+    "50000685",
+    "M0687",
+    "20397342",
+    "20393340",
+    "WM1900",
+    "FC manual",
+    "HPT",
+    "HB hydraulic",
+    "WM1900H",
+    "3-1/16 15K",
+    "3-1/16 15000",
+    "3 1/16 15000",
+    "BX-154",
+    "WOM",
+    "T3",
+    "NOV",
+    "Quality Oil Tools"
+   ],
+   "images": [
+    {
+     "file": "wom-gate-valve-3-1-16-15000-psi-379-1.jpg",
+     "alt": "WOM WM1900 gate valve, 3-1/16″ 15,000 psi"
+    },
+    {
+     "file": "hpt-gate-valve-3-1-16-15000-psi-430-1.jpg",
+     "alt": "T3 HPT gate valve, 3-1/16″ 15,000 psi"
+    },
+    {
+     "file": "wom-gate-valve-3-1-16-15000-psi-414-1.jpg",
+     "alt": "WOM gate valve, 3-1/16″ 15,000 psi"
+    },
+    {
+     "file": "wom-gate-valve-3-1-16-15000-psi-379-2.jpg",
+     "alt": "Nameplate of a WOM 3-1/16″ 15,000 psi gate valve"
+    }
+   ],
+   "seriesPage": null,
+   "source": {
+    "ofsListings": [
+     "379",
+     "380",
+     "393",
+     "414",
+     "418",
+     "430",
+     "431",
+     "432",
+     "489",
+     "507",
+     "519"
+    ]
+   }
+  },
+  {
+   "sku": "IH-OFV-GATE-318-5K",
+   "slug": "api-6a-gate-valve-3-1-8-inch-5000-psi",
+   "title": "API 6A Gate Valve, 3-1/8″, 5,000 psi",
+   "brand": null,
+   "countryOfOrigin": null,
+   "leadTimeDays": null,
+   "focusKeyword": "3-1/8 5K gate valve",
+   "descriptionShort": "3-1/8″ API 6A gate valve, 5,000 psi (5K). Supplied new from Cameron, WOM and NOV to your PSL, PR, material and temperature class; flanged ends take a R-35 or RX-35 ring.",
+   "descriptionLong": "<p>A 3-1/8″ (79 mm) gate valve to API 6A, rated 5,000 psi working pressure (5K). We supply it new from Cameron, WOM and NOV, and other API 6A manufacturers, to the PSL, PR, material class and temperature class you specify. The table lists the models and nameplate markings we have seen at this bore and rating, so you can quote a make and model directly.</p><h3>Makes and models at this rating</h3><table><thead><tr><th scope=\"col\">Make</th><th scope=\"col\">Model</th><th scope=\"col\">Part / assembly no.</th><th scope=\"col\">PSL</th><th scope=\"col\">PR</th><th scope=\"col\">Material class</th><th scope=\"col\">Temperature</th></tr></thead><tbody><tr><td>Cameron</td><td>FLS</td><td><code>141553-36-07-16</code></td><td>PSL 3</td><td>PR2</td><td>DD-NL</td><td>−29 °C to +121 °C</td></tr><tr><td>WOM</td><td>WM1700</td><td>—</td><td>PSL 3</td><td>PR2</td><td>DD</td><td>P+U</td></tr><tr><td>NOV Mission</td><td>—</td><td>—</td><td>PSL 3</td><td>—</td><td>—</td><td>—</td></tr><tr><td>WOM</td><td>—</td><td>—</td><td>—</td><td>PR2</td><td>—</td><td>—</td></tr><tr><td>Barton</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>TH</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>Unbranded</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr></tbody></table><p>Each row is what is marked on a valve we have photographed at this bore and pressure; a dash means the nameplate does not state it or is not legible. Your valve is built to the specification you put on the RFQ, not to these plates.</p><h3>Rating, test and flanges</h3><ul><li><strong>Working pressure:</strong> 5,000 psi. API 6A shell test: 10,000 psi.</li><li><strong>Flanged ends:</strong> API 6B flanges at this size and rating take a R-35 or RX-35 ring gasket.</li><li><strong>Bore:</strong> full bore — the bore matches the nominal size, so wireline tools and pigs pass through.</li></ul><h3>Reading the nameplate</h3><ul><li><strong>PSL</strong> (product specification level, 1 to 4) sets the inspection, testing and traceability applied. PSL 3G adds a gas test.</li><li><strong>PR</strong> (performance requirement) is PR1 or PR2; PR2 valves have passed the design-validation testing in API 6A.</li><li><strong>Material class</strong> AA to CC is general service. DD, EE, FF and HH are sour service to NACE MR0175 / ISO 15156; a suffix such as -0.5 or -1.5 is the maximum H₂S partial pressure in psia, and NL means no limit.</li><li><strong>Temperature class</strong> letters combine: P = −20 °F to +180 °F; U = 0 °F to +250 °F. P+U covers −20 °F to +250 °F.</li></ul><h3>Configured listings at this rating</h3><p>We also list these fully specified valves at the same bore and pressure:</p><ul><li><a href=\"/p/manual-gate-valve-fls-3-1-8-in-5m-flanged-5-000-psi-api-6a-psl-3-pr2f-ee-1-5\">Stream-Flo FLS manual gate valve, PSL 3 PR2F, EE-1.5</a></li><li><a href=\"/p/hydraulic-gate-valve-fail-close-3-1-8-in-5m-flanged-5-000-psi-api-6a-psl-2-pr2-ee-0-5\">FMC hydraulic gate valve, PSL 2 PR2, EE-0.5</a></li></ul><h3>Ordering</h3><p>Put the bore, pressure, end connections, PSL, PR, material and temperature class on your RFQ, with a preferred make and model if you have one. We confirm lead time and documentation — including the API 6A monogram and material certificates — on the quotation.</p>",
+   "seoTitle": "3-1/8″ 5K API 6A Gate Valve, 5,000 psi",
+   "seoDescription": "API 6A Gate Valve, 3-1/8″, 5,000 psi: Cameron, WOM and NOV. PSL, PR, material and temperature class to order. Request a quote.",
+   "faqs": [
+    {
+     "question": "What do PSL and PR mean on a 3-1/8″ 5K gate valve?",
+     "answer": "PSL (1 to 4) is the product specification level: the inspection, testing and traceability applied during manufacture, with PSL 3G adding a gas test. PR is the performance requirement: PR2 valves have passed API 6A design-validation testing, PR1 valves have not. Specify both on the RFQ."
+    },
+    {
+     "question": "Which material class do I need for sour service?",
+     "answer": "API 6A material classes DD, EE, FF and HH are for sour service to NACE MR0175 / ISO 15156. The suffix gives the maximum H₂S partial pressure the valve is rated for, in psia — for example EE-0.5 or DD-NL (no limit). AA, BB and CC are general service. Choose by the H₂S partial pressure and CO₂ content of your fluid."
+    },
+    {
+     "question": "What ring gasket does a 3-1/8″ 5K API 6A flange use?",
+     "answer": "A R-35 or RX-35 ring gasket, on an API 6B flange. Order the rings with the valve if you need them."
+    },
+    {
+     "question": "What pressure is the valve body tested to?",
+     "answer": "API 6A sets the hydrostatic shell test for a 5,000 psi valve at 10,000 psi."
+    },
+    {
+     "question": "Can you supply a specific make or model?",
+     "answer": "Yes. At this rating we supply Cameron, WOM and NOV, including WM1700 and FLS. Give the make, model and any part number on the RFQ and we quote against it."
+    },
+    {
+     "question": "Are these valves supplied new?",
+     "answer": "Yes. We source new valves to the specification on your RFQ and state the lead time and documentation on the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Valve Type",
+     "value": "Gate valve — manual handwheel; hydraulic on request",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "valve_type"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size",
+     "value": "3-1/8 in",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "nominal_size"
+    },
+    {
+     "group": "Performance",
+     "label": "Working Pressure",
+     "value": "5000",
+     "unit": "psi",
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "working_pressure_psi"
+    },
+    {
+     "group": "Performance",
+     "label": "Pressure Class",
+     "value": "5K",
+     "unit": null,
+     "position": 3,
+     "isFilterable": true,
+     "templateKey": "pressure_class"
+    },
+    {
+     "group": "Dimensions",
+     "label": "End Connection (Inlet)",
+     "value": "API 6B flanged (R-35 or RX-35 ring)",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "end_connection_inlet"
+    },
+    {
+     "group": "Dimensions",
+     "label": "End Connection (Outlet)",
+     "value": "API 6B flanged (R-35 or RX-35 ring)",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "end_connection_outlet"
+    },
+    {
+     "group": "Performance",
+     "label": "Service Class",
+     "value": "Standard or sour service (NACE MR0175 / ISO 15156) by material class",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "service_class"
+    },
+    {
+     "group": "Compliance",
+     "label": "API Specification",
+     "value": "API 6A",
+     "unit": null,
+     "position": 7,
+     "isFilterable": true,
+     "templateKey": "api_spec"
+    },
+    {
+     "group": "Compliance",
+     "label": "PSL Class",
+     "value": "PSL 3 marked; PSL 1–4 to order",
+     "unit": null,
+     "position": 8,
+     "isFilterable": false,
+     "templateKey": "psl_class"
+    },
+    {
+     "group": "Compliance",
+     "label": "PR Class",
+     "value": "PR2 marked; to order",
+     "unit": null,
+     "position": 9,
+     "isFilterable": false,
+     "templateKey": "pr_class"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Bore Type",
+     "value": "Full bore",
+     "unit": null,
+     "position": 10,
+     "isFilterable": false,
+     "templateKey": "bore_type"
+    },
+    {
+     "group": "Compliance",
+     "label": "Material Class (API 6A)",
+     "value": "DD, DD-NL marked; AA–HH to order",
+     "unit": null,
+     "position": 11,
+     "isFilterable": false,
+     "templateKey": "material_class_api"
+    },
+    {
+     "group": "Identification",
+     "label": "Makes available",
+     "value": "Cameron, WOM, NOV",
+     "unit": null,
+     "position": 12,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Identification",
+     "label": "Part / assembly numbers seen",
+     "value": "141553-36-07-16",
+     "unit": null,
+     "position": 13,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Identification",
+     "label": "Models seen",
+     "value": "WM1700, FLS",
+     "unit": null,
+     "position": 14,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Performance",
+     "label": "Hydrostatic shell test",
+     "value": "10,000 psi",
+     "unit": null,
+     "position": 15,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Performance",
+     "label": "Temperature markings seen",
+     "value": "P+U; −29 °C to +121 °C",
+     "unit": null,
+     "position": 16,
+     "isFilterable": false,
+     "templateKey": null
+    }
+   ],
+   "searchAliases": [
+    "141553-36-07-16",
+    "WM1700",
+    "FLS",
+    "3-1/8 5K",
+    "3-1/8 5000",
+    "3 1/8 5000",
+    "R-35",
+    "Cameron",
+    "WOM",
+    "NOV"
+   ],
+   "images": [
+    {
+     "file": "cameron-gate-valve-3-1-8-5000-psi-406-1.jpg",
+     "alt": "Cameron FLS gate valve, 3-1/8″ 5,000 psi"
+    },
+    {
+     "file": "wom-gate-valve-3-1-8-5000-psi-403-1.jpg",
+     "alt": "WOM WM1700 gate valve, 3-1/8″ 5,000 psi"
+    },
+    {
+     "file": "nov-gate-valve-3-1-8-5000-psi-405-1.jpg",
+     "alt": "NOV gate valve, 3-1/8″ 5,000 psi"
+    },
+    {
+     "file": "cameron-gate-valve-3-1-8-5000-psi-406-3.jpg",
+     "alt": "Nameplate of a Cameron 3-1/8″ 5,000 psi gate valve"
+    }
+   ],
+   "seriesPage": null,
+   "source": {
+    "ofsListings": [
+     "403",
+     "404",
+     "405",
+     "406",
+     "407",
+     "408",
+     "514"
+    ]
+   }
+  },
+  {
+   "sku": "IH-OFV-GATE-4116-5K",
+   "slug": "api-6a-gate-valve-4-1-16-inch-5000-psi",
+   "title": "API 6A Gate Valve, 4-1/16″, 5,000 psi",
+   "brand": null,
+   "countryOfOrigin": null,
+   "leadTimeDays": null,
+   "focusKeyword": "4-1/16 5K gate valve",
+   "descriptionShort": "4-1/16″ API 6A gate valve, 5,000 psi (5K). Supplied new from T3, Anson, Xianzhong and WOM to your PSL, PR, material and temperature class; flanged ends take a R-39 or RX-39 ring.",
+   "descriptionLong": "<p>A 4-1/16″ (103 mm) gate valve to API 6A, rated 5,000 psi working pressure (5K). We supply it new from T3, Anson, Xianzhong and WOM, and other API 6A manufacturers, to the PSL, PR, material class and temperature class you specify. The table lists the models and nameplate markings we have seen at this bore and rating, so you can quote a make and model directly.</p><h3>Makes and models at this rating</h3><table><thead><tr><th scope=\"col\">Make</th><th scope=\"col\">Model</th><th scope=\"col\">Part / assembly no.</th><th scope=\"col\">PSL</th><th scope=\"col\">PR</th><th scope=\"col\">Material class</th><th scope=\"col\">Temperature</th></tr></thead><tbody><tr><td>Anson</td><td>E-Type</td><td>—</td><td>PSL 3</td><td>PR1</td><td>EE-NL</td><td>P+U</td></tr><tr><td>T3 Energy Services</td><td>FC</td><td>—</td><td>PSL 3</td><td>PR1</td><td>EE</td><td>P+U</td></tr><tr><td>Jiangsu Xianzhong (PFF)</td><td>Plate gate valve</td><td>—</td><td>—</td><td>PR1</td><td>EE</td><td>—</td></tr><tr><td>WOM</td><td>—</td><td>—</td><td>—</td><td>—</td><td>DD</td><td>−20 °F to +250 °F</td></tr></tbody></table><p>Each row is what is marked on a valve we have photographed at this bore and pressure; a dash means the nameplate does not state it or is not legible. Your valve is built to the specification you put on the RFQ, not to these plates.</p><h3>Rating, test and flanges</h3><ul><li><strong>Working pressure:</strong> 5,000 psi. API 6A shell test: 10,000 psi.</li><li><strong>Flanged ends:</strong> API 6B flanges at this size and rating take a R-39 or RX-39 ring gasket.</li><li><strong>Bore:</strong> full bore — the bore matches the nominal size, so wireline tools and pigs pass through.</li></ul><h3>Reading the nameplate</h3><ul><li><strong>PSL</strong> (product specification level, 1 to 4) sets the inspection, testing and traceability applied. PSL 3G adds a gas test.</li><li><strong>PR</strong> (performance requirement) is PR1 or PR2; PR2 valves have passed the design-validation testing in API 6A.</li><li><strong>Material class</strong> AA to CC is general service. DD, EE, FF and HH are sour service to NACE MR0175 / ISO 15156; a suffix such as -0.5 or -1.5 is the maximum H₂S partial pressure in psia, and NL means no limit.</li><li><strong>Temperature class</strong> letters combine: P = −20 °F to +180 °F; U = 0 °F to +250 °F. P+U covers −20 °F to +250 °F.</li></ul><h3>Configured listings at this rating</h3><p>We also list these fully specified valves at the same bore and pressure:</p><ul><li><a href=\"/p/manual-gate-valve-fail-close-4-1-16-in-5m-flanged-5-000-psi-api-6a-psl-3-pr1-ee\">Stream-Flo manual gate valve, PSL 3 PR1, EE</a></li><li><a href=\"/p/hydraulic-gate-valve-fail-close-4-1-16-in-5m-flanged-5-000-psi-api-6a-psl-3-pr2-ee-0-5\">Stream-Flo hydraulic gate valve, PSL 3 PR2, EE-0.5</a></li></ul><h3>Ordering</h3><p>Put the bore, pressure, end connections, PSL, PR, material and temperature class on your RFQ, with a preferred make and model if you have one. We confirm lead time and documentation — including the API 6A monogram and material certificates — on the quotation.</p>",
+   "seoTitle": "4-1/16″ 5K API 6A Gate Valve, 5,000 psi",
+   "seoDescription": "API 6A Gate Valve, 4-1/16″, 5,000 psi: T3, Anson, Xianzhong and WOM. PSL, PR, material and temperature class to order. Request a quote.",
+   "faqs": [
+    {
+     "question": "What do PSL and PR mean on a 4-1/16″ 5K gate valve?",
+     "answer": "PSL (1 to 4) is the product specification level: the inspection, testing and traceability applied during manufacture, with PSL 3G adding a gas test. PR is the performance requirement: PR2 valves have passed API 6A design-validation testing, PR1 valves have not. Specify both on the RFQ."
+    },
+    {
+     "question": "Which material class do I need for sour service?",
+     "answer": "API 6A material classes DD, EE, FF and HH are for sour service to NACE MR0175 / ISO 15156. The suffix gives the maximum H₂S partial pressure the valve is rated for, in psia — for example EE-0.5 or DD-NL (no limit). AA, BB and CC are general service. Choose by the H₂S partial pressure and CO₂ content of your fluid."
+    },
+    {
+     "question": "What ring gasket does a 4-1/16″ 5K API 6A flange use?",
+     "answer": "A R-39 or RX-39 ring gasket, on an API 6B flange. Order the rings with the valve if you need them."
+    },
+    {
+     "question": "What pressure is the valve body tested to?",
+     "answer": "API 6A sets the hydrostatic shell test for a 5,000 psi valve at 10,000 psi."
+    },
+    {
+     "question": "Can you supply a specific make or model?",
+     "answer": "Yes. At this rating we supply T3, Anson, Xianzhong and WOM, including FC, E-Type and Plate gate valve. Give the make, model and any part number on the RFQ and we quote against it."
+    },
+    {
+     "question": "Are these valves supplied new?",
+     "answer": "Yes. We source new valves to the specification on your RFQ and state the lead time and documentation on the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Valve Type",
+     "value": "Gate valve — manual handwheel; hydraulic on request",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "valve_type"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size",
+     "value": "4-1/16 in",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "nominal_size"
+    },
+    {
+     "group": "Performance",
+     "label": "Working Pressure",
+     "value": "5000",
+     "unit": "psi",
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "working_pressure_psi"
+    },
+    {
+     "group": "Performance",
+     "label": "Pressure Class",
+     "value": "5K",
+     "unit": null,
+     "position": 3,
+     "isFilterable": true,
+     "templateKey": "pressure_class"
+    },
+    {
+     "group": "Dimensions",
+     "label": "End Connection (Inlet)",
+     "value": "API 6B flanged (R-39 or RX-39 ring)",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "end_connection_inlet"
+    },
+    {
+     "group": "Dimensions",
+     "label": "End Connection (Outlet)",
+     "value": "API 6B flanged (R-39 or RX-39 ring)",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "end_connection_outlet"
+    },
+    {
+     "group": "Performance",
+     "label": "Service Class",
+     "value": "Standard or sour service (NACE MR0175 / ISO 15156) by material class",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "service_class"
+    },
+    {
+     "group": "Compliance",
+     "label": "API Specification",
+     "value": "API 6A",
+     "unit": null,
+     "position": 7,
+     "isFilterable": true,
+     "templateKey": "api_spec"
+    },
+    {
+     "group": "Compliance",
+     "label": "PSL Class",
+     "value": "PSL 3 marked; PSL 1–4 to order",
+     "unit": null,
+     "position": 8,
+     "isFilterable": false,
+     "templateKey": "psl_class"
+    },
+    {
+     "group": "Compliance",
+     "label": "PR Class",
+     "value": "PR1 marked; to order",
+     "unit": null,
+     "position": 9,
+     "isFilterable": false,
+     "templateKey": "pr_class"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Bore Type",
+     "value": "Full bore",
+     "unit": null,
+     "position": 10,
+     "isFilterable": false,
+     "templateKey": "bore_type"
+    },
+    {
+     "group": "Compliance",
+     "label": "Material Class (API 6A)",
+     "value": "DD, EE, EE-NL marked; AA–HH to order",
+     "unit": null,
+     "position": 11,
+     "isFilterable": false,
+     "templateKey": "material_class_api"
+    },
+    {
+     "group": "Identification",
+     "label": "Makes available",
+     "value": "T3, Anson, Xianzhong, WOM",
+     "unit": null,
+     "position": 12,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Identification",
+     "label": "Models seen",
+     "value": "FC, E-Type, Plate gate valve",
+     "unit": null,
+     "position": 13,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Performance",
+     "label": "Hydrostatic shell test",
+     "value": "10,000 psi",
+     "unit": null,
+     "position": 14,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Performance",
+     "label": "Temperature markings seen",
+     "value": "P+U; −20 °F to +250 °F",
+     "unit": null,
+     "position": 15,
+     "isFilterable": false,
+     "templateKey": null
+    }
+   ],
+   "searchAliases": [
+    "FC",
+    "E-Type",
+    "Plate gate valve",
+    "4-1/16 5K",
+    "4-1/16 5000",
+    "4 1/16 5000",
+    "R-39",
+    "T3",
+    "Anson",
+    "Xianzhong",
+    "WOM"
+   ],
+   "images": [
+    {
+     "file": "t3-gate-valve-4-1-16-5000-psi-390-1.jpg",
+     "alt": "T3 FC gate valve, 4-1/16″ 5,000 psi"
+    },
+    {
+     "file": "anson-gate-valve-4-1-16-5000-psi-used-515-1.jpg",
+     "alt": "Anson E-Type gate valve, 4-1/16″ 5,000 psi"
+    },
+    {
+     "file": "pff-gate-valve-4-1-16-5000-psi-used-522-1.jpg",
+     "alt": "Xianzhong Plate gate valve gate valve, 4-1/16″ 5,000 psi"
+    },
+    {
+     "file": "t3-gate-valve-4-1-16-5000-psi-390-3.jpg",
+     "alt": "Nameplate of a T3 4-1/16″ 5,000 psi gate valve"
+    }
+   ],
+   "seriesPage": null,
+   "source": {
+    "ofsListings": [
+     "390",
+     "392",
+     "515",
+     "522"
+    ]
+   }
+  },
+  {
+   "sku": "IH-OFV-GATE-4116-10K",
+   "slug": "api-6a-gate-valve-4-1-16-inch-10000-psi",
+   "title": "API 6A Gate Valve, 4-1/16″, 10,000 psi",
+   "brand": null,
+   "countryOfOrigin": null,
+   "leadTimeDays": null,
+   "focusKeyword": "4-1/16 10K gate valve",
+   "descriptionShort": "4-1/16″ API 6A gate valve, 10,000 psi (10K). Supplied new from Cameron, WOM and T3 to your PSL, PR, material and temperature class; flanged ends take a BX-155 ring.",
+   "descriptionLong": "<p>A 4-1/16″ (103 mm) gate valve to API 6A, rated 10,000 psi working pressure (10K). We supply it new from Cameron, WOM and T3, and other API 6A manufacturers, to the PSL, PR, material class and temperature class you specify. The table lists the models and nameplate markings we have seen at this bore and rating, so you can quote a make and model directly.</p><h3>Makes and models at this rating</h3><table><thead><tr><th scope=\"col\">Make</th><th scope=\"col\">Model</th><th scope=\"col\">Part / assembly no.</th><th scope=\"col\">PSL</th><th scope=\"col\">PR</th><th scope=\"col\">Material class</th><th scope=\"col\">Temperature</th></tr></thead><tbody><tr><td>Cameron</td><td>FLS</td><td><code>141554-42-20-15</code></td><td>PSL 3</td><td>PR2</td><td>DD-NL</td><td>−29 °C to +121 °C</td></tr><tr><td>T3 Energy Services</td><td>T3FC</td><td>—</td><td>PSL 3</td><td>PR1</td><td>DD</td><td>P+U</td></tr><tr><td>WOM</td><td>—</td><td><code>M0880-R</code></td><td>PSL 3</td><td>PR1</td><td>DD-0.5</td><td>−20 °F to +250 °F</td></tr><tr><td>EEC (Energy Equipment Corp.)</td><td>—</td><td><code>224-605-55-03E</code></td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>Cameron (Béziers, France)</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr></tbody></table><p>Each row is what is marked on a valve we have photographed at this bore and pressure; a dash means the nameplate does not state it or is not legible. Your valve is built to the specification you put on the RFQ, not to these plates.</p><h3>Rating, test and flanges</h3><ul><li><strong>Working pressure:</strong> 10,000 psi. API 6A shell test: 15,000 psi.</li><li><strong>Flanged ends:</strong> API 6BX flanges at this size and rating take a BX-155 ring gasket.</li><li><strong>Bore:</strong> full bore — the bore matches the nominal size, so wireline tools and pigs pass through.</li></ul><h3>Reading the nameplate</h3><ul><li><strong>PSL</strong> (product specification level, 1 to 4) sets the inspection, testing and traceability applied. PSL 3G adds a gas test.</li><li><strong>PR</strong> (performance requirement) is PR1 or PR2; PR2 valves have passed the design-validation testing in API 6A.</li><li><strong>Material class</strong> AA to CC is general service. DD, EE, FF and HH are sour service to NACE MR0175 / ISO 15156; a suffix such as -0.5 or -1.5 is the maximum H₂S partial pressure in psia, and NL means no limit.</li><li><strong>Temperature class</strong> letters combine: P = −20 °F to +180 °F; U = 0 °F to +250 °F. P+U covers −20 °F to +250 °F.</li></ul><h3>Ordering</h3><p>Put the bore, pressure, end connections, PSL, PR, material and temperature class on your RFQ, with a preferred make and model if you have one. We confirm lead time and documentation — including the API 6A monogram and material certificates — on the quotation.</p>",
+   "seoTitle": "4-1/16″ 10K API 6A Gate Valve, 10,000 psi",
+   "seoDescription": "API 6A Gate Valve, 4-1/16″, 10,000 psi: Cameron, WOM and T3. PSL, PR, material and temperature class to order. Request a quote.",
+   "faqs": [
+    {
+     "question": "What do PSL and PR mean on a 4-1/16″ 10K gate valve?",
+     "answer": "PSL (1 to 4) is the product specification level: the inspection, testing and traceability applied during manufacture, with PSL 3G adding a gas test. PR is the performance requirement: PR2 valves have passed API 6A design-validation testing, PR1 valves have not. Specify both on the RFQ."
+    },
+    {
+     "question": "Which material class do I need for sour service?",
+     "answer": "API 6A material classes DD, EE, FF and HH are for sour service to NACE MR0175 / ISO 15156. The suffix gives the maximum H₂S partial pressure the valve is rated for, in psia — for example EE-0.5 or DD-NL (no limit). AA, BB and CC are general service. Choose by the H₂S partial pressure and CO₂ content of your fluid."
+    },
+    {
+     "question": "What ring gasket does a 4-1/16″ 10K API 6A flange use?",
+     "answer": "A BX-155 ring gasket, on an API 6BX flange. Order the rings with the valve if you need them."
+    },
+    {
+     "question": "What pressure is the valve body tested to?",
+     "answer": "API 6A sets the hydrostatic shell test for a 10,000 psi valve at 15,000 psi."
+    },
+    {
+     "question": "Can you supply a specific make or model?",
+     "answer": "Yes. At this rating we supply Cameron, WOM and T3, including FLS and T3FC. Give the make, model and any part number on the RFQ and we quote against it."
+    },
+    {
+     "question": "Are these valves supplied new?",
+     "answer": "Yes. We source new valves to the specification on your RFQ and state the lead time and documentation on the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Valve Type",
+     "value": "Gate valve — manual handwheel; hydraulic on request",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "valve_type"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size",
+     "value": "4-1/16 in",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "nominal_size"
+    },
+    {
+     "group": "Performance",
+     "label": "Working Pressure",
+     "value": "10000",
+     "unit": "psi",
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "working_pressure_psi"
+    },
+    {
+     "group": "Performance",
+     "label": "Pressure Class",
+     "value": "10K",
+     "unit": null,
+     "position": 3,
+     "isFilterable": true,
+     "templateKey": "pressure_class"
+    },
+    {
+     "group": "Dimensions",
+     "label": "End Connection (Inlet)",
+     "value": "API 6BX flanged (BX-155 ring)",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "end_connection_inlet"
+    },
+    {
+     "group": "Dimensions",
+     "label": "End Connection (Outlet)",
+     "value": "API 6BX flanged (BX-155 ring)",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "end_connection_outlet"
+    },
+    {
+     "group": "Performance",
+     "label": "Service Class",
+     "value": "Standard or sour service (NACE MR0175 / ISO 15156) by material class",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "service_class"
+    },
+    {
+     "group": "Compliance",
+     "label": "API Specification",
+     "value": "API 6A",
+     "unit": null,
+     "position": 7,
+     "isFilterable": true,
+     "templateKey": "api_spec"
+    },
+    {
+     "group": "Compliance",
+     "label": "PSL Class",
+     "value": "PSL 3 marked; PSL 1–4 to order",
+     "unit": null,
+     "position": 8,
+     "isFilterable": false,
+     "templateKey": "psl_class"
+    },
+    {
+     "group": "Compliance",
+     "label": "PR Class",
+     "value": "PR1, PR2 marked; to order",
+     "unit": null,
+     "position": 9,
+     "isFilterable": false,
+     "templateKey": "pr_class"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Bore Type",
+     "value": "Full bore",
+     "unit": null,
+     "position": 10,
+     "isFilterable": false,
+     "templateKey": "bore_type"
+    },
+    {
+     "group": "Compliance",
+     "label": "Material Class (API 6A)",
+     "value": "DD, DD-0.5, DD-NL marked; AA–HH to order",
+     "unit": null,
+     "position": 11,
+     "isFilterable": false,
+     "templateKey": "material_class_api"
+    },
+    {
+     "group": "Identification",
+     "label": "Makes available",
+     "value": "Cameron, WOM, T3",
+     "unit": null,
+     "position": 12,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Identification",
+     "label": "Part / assembly numbers seen",
+     "value": "M0880-R, 224-605-55-03E, 141554-42-20-15",
+     "unit": null,
+     "position": 13,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Identification",
+     "label": "Models seen",
+     "value": "FLS, T3FC",
+     "unit": null,
+     "position": 14,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Performance",
+     "label": "Hydrostatic shell test",
+     "value": "15,000 psi",
+     "unit": null,
+     "position": 15,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Performance",
+     "label": "Temperature markings seen",
+     "value": "−20 °F to +250 °F; −29 °C to +121 °C; P+U",
+     "unit": null,
+     "position": 16,
+     "isFilterable": false,
+     "templateKey": null
+    }
+   ],
+   "searchAliases": [
+    "M0880-R",
+    "224-605-55-03E",
+    "141554-42-20-15",
+    "FLS",
+    "T3FC",
+    "4-1/16 10K",
+    "4-1/16 10000",
+    "4 1/16 10000",
+    "BX-155",
+    "Cameron",
+    "WOM",
+    "T3"
+   ],
+   "images": [
+    {
+     "file": "cameron-gate-valve-4-1-16-10000-psi-388-1.jpg",
+     "alt": "Cameron FLS gate valve, 4-1/16″ 10,000 psi"
+    },
+    {
+     "file": "wom-gate-valve-4-1-16-10000-psi-382-1.jpg",
+     "alt": "WOM gate valve, 4-1/16″ 10,000 psi"
+    },
+    {
+     "file": "t3-gate-valve-4-1-16-10000-psi-389-1.jpg",
+     "alt": "T3 T3FC gate valve, 4-1/16″ 10,000 psi"
+    },
+    {
+     "file": "cameron-gate-valve-4-1-16-10000-psi-388-3.jpg",
+     "alt": "Nameplate of a Cameron 4-1/16″ 10,000 psi gate valve"
+    }
+   ],
+   "seriesPage": null,
+   "source": {
+    "ofsListings": [
+     "382",
+     "386",
+     "388",
+     "389",
+     "490",
+     "491",
+     "508"
+    ]
+   }
+  },
+  {
+   "sku": "IH-OFV-GATE-4116-15K",
+   "slug": "api-6a-gate-valve-4-1-16-inch-15000-psi",
+   "title": "API 6A Gate Valve, 4-1/16″, 15,000 psi",
+   "brand": null,
+   "countryOfOrigin": null,
+   "leadTimeDays": null,
+   "focusKeyword": "4-1/16 15K gate valve",
+   "descriptionShort": "4-1/16″ API 6A gate valve, 15,000 psi (15K). Supplied new from the major API 6A manufacturers to your PSL, PR, material and temperature class; flanged ends take a BX-155 ring.",
+   "descriptionLong": "<p>A 4-1/16″ (103 mm) gate valve to API 6A, rated 15,000 psi working pressure (15K). We supply it new from the major API 6A manufacturers, to the PSL, PR, material class and temperature class you specify. The table lists the models and nameplate markings we have seen at this bore and rating, so you can quote a make and model directly.</p><h3>Makes and models at this rating</h3><table><thead><tr><th scope=\"col\">Make</th><th scope=\"col\">Model</th><th scope=\"col\">Part / assembly no.</th><th scope=\"col\">PSL</th><th scope=\"col\">PR</th><th scope=\"col\">Material class</th><th scope=\"col\">Temperature</th></tr></thead><tbody><tr><td>Unbranded</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr></tbody></table><p>Each row is what is marked on a valve we have photographed at this bore and pressure; a dash means the nameplate does not state it or is not legible. Your valve is built to the specification you put on the RFQ, not to these plates.</p><h3>Rating, test and flanges</h3><ul><li><strong>Working pressure:</strong> 15,000 psi. API 6A shell test: 22,500 psi.</li><li><strong>Flanged ends:</strong> API 6BX flanges at this size and rating take a BX-155 ring gasket.</li><li><strong>Bore:</strong> full bore — the bore matches the nominal size, so wireline tools and pigs pass through.</li></ul><h3>Reading the nameplate</h3><ul><li><strong>PSL</strong> (product specification level, 1 to 4) sets the inspection, testing and traceability applied. PSL 3G adds a gas test.</li><li><strong>PR</strong> (performance requirement) is PR1 or PR2; PR2 valves have passed the design-validation testing in API 6A.</li><li><strong>Material class</strong> AA to CC is general service. DD, EE, FF and HH are sour service to NACE MR0175 / ISO 15156; a suffix such as -0.5 or -1.5 is the maximum H₂S partial pressure in psia, and NL means no limit.</li><li><strong>Temperature class</strong> letters combine: P = −20 °F to +180 °F; U = 0 °F to +250 °F. P+U covers −20 °F to +250 °F.</li></ul><h3>Ordering</h3><p>Put the bore, pressure, end connections, PSL, PR, material and temperature class on your RFQ, with a preferred make and model if you have one. We confirm lead time and documentation — including the API 6A monogram and material certificates — on the quotation.</p>",
+   "seoTitle": "4-1/16″ 15K API 6A Gate Valve, 15,000 psi",
+   "seoDescription": "API 6A Gate Valve, 4-1/16″, 15,000 psi: new, to order. PSL, PR, material and temperature class to order. Request a quote.",
+   "faqs": [
+    {
+     "question": "What do PSL and PR mean on a 4-1/16″ 15K gate valve?",
+     "answer": "PSL (1 to 4) is the product specification level: the inspection, testing and traceability applied during manufacture, with PSL 3G adding a gas test. PR is the performance requirement: PR2 valves have passed API 6A design-validation testing, PR1 valves have not. Specify both on the RFQ."
+    },
+    {
+     "question": "Which material class do I need for sour service?",
+     "answer": "API 6A material classes DD, EE, FF and HH are for sour service to NACE MR0175 / ISO 15156. The suffix gives the maximum H₂S partial pressure the valve is rated for, in psia — for example EE-0.5 or DD-NL (no limit). AA, BB and CC are general service. Choose by the H₂S partial pressure and CO₂ content of your fluid."
+    },
+    {
+     "question": "What ring gasket does a 4-1/16″ 15K API 6A flange use?",
+     "answer": "A BX-155 ring gasket, on an API 6BX flange. Order the rings with the valve if you need them."
+    },
+    {
+     "question": "What pressure is the valve body tested to?",
+     "answer": "API 6A sets the hydrostatic shell test for a 15,000 psi valve at 22,500 psi."
+    },
+    {
+     "question": "Can you supply a specific make or model?",
+     "answer": "Yes. At this rating we supply the major API 6A manufacturers. Give the make, model and any part number on the RFQ and we quote against it."
+    },
+    {
+     "question": "Are these valves supplied new?",
+     "answer": "Yes. We source new valves to the specification on your RFQ and state the lead time and documentation on the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Valve Type",
+     "value": "Gate valve — manual handwheel; hydraulic on request",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "valve_type"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size",
+     "value": "4-1/16 in",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "nominal_size"
+    },
+    {
+     "group": "Performance",
+     "label": "Working Pressure",
+     "value": "15000",
+     "unit": "psi",
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "working_pressure_psi"
+    },
+    {
+     "group": "Performance",
+     "label": "Pressure Class",
+     "value": "15K",
+     "unit": null,
+     "position": 3,
+     "isFilterable": true,
+     "templateKey": "pressure_class"
+    },
+    {
+     "group": "Dimensions",
+     "label": "End Connection (Inlet)",
+     "value": "API 6BX flanged (BX-155 ring)",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "end_connection_inlet"
+    },
+    {
+     "group": "Dimensions",
+     "label": "End Connection (Outlet)",
+     "value": "API 6BX flanged (BX-155 ring)",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "end_connection_outlet"
+    },
+    {
+     "group": "Performance",
+     "label": "Service Class",
+     "value": "Standard or sour service (NACE MR0175 / ISO 15156) by material class",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "service_class"
+    },
+    {
+     "group": "Compliance",
+     "label": "API Specification",
+     "value": "API 6A",
+     "unit": null,
+     "position": 7,
+     "isFilterable": true,
+     "templateKey": "api_spec"
+    },
+    {
+     "group": "Compliance",
+     "label": "PSL Class",
+     "value": "PSL 1–4 to order",
+     "unit": null,
+     "position": 8,
+     "isFilterable": false,
+     "templateKey": "psl_class"
+    },
+    {
+     "group": "Compliance",
+     "label": "PR Class",
+     "value": "PR1 or PR2 to order",
+     "unit": null,
+     "position": 9,
+     "isFilterable": false,
+     "templateKey": "pr_class"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Bore Type",
+     "value": "Full bore",
+     "unit": null,
+     "position": 10,
+     "isFilterable": false,
+     "templateKey": "bore_type"
+    },
+    {
+     "group": "Compliance",
+     "label": "Material Class (API 6A)",
+     "value": "AA–HH to order",
+     "unit": null,
+     "position": 11,
+     "isFilterable": false,
+     "templateKey": "material_class_api"
+    },
+    {
+     "group": "Identification",
+     "label": "Makes available",
+     "value": "",
+     "unit": null,
+     "position": 12,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Performance",
+     "label": "Hydrostatic shell test",
+     "value": "22,500 psi",
+     "unit": null,
+     "position": 13,
+     "isFilterable": false,
+     "templateKey": null
+    }
+   ],
+   "searchAliases": [
+    "4-1/16 15K",
+    "4-1/16 15000",
+    "4 1/16 15000",
+    "BX-155"
+   ],
+   "images": [
+    {
+     "file": "gate-valve-4-1-16-15000-psi-used-509.jpg",
+     "alt": "API 6A gate valve, 4-1/16″ 15,000 psi"
+    },
+    {
+     "file": "gate-valve-4-1-16-15000-psi-used-512-1.jpg",
+     "alt": "API 6A gate valve, 4-1/16″ 15,000 psi"
+    }
+   ],
+   "seriesPage": null,
+   "source": {
+    "ofsListings": [
+     "509",
+     "512"
+    ]
+   }
+  },
+  {
+   "sku": "IH-OFV-GATE-418-5K",
+   "slug": "api-6a-gate-valve-4-1-8-inch-5000-psi",
+   "title": "API 6A Gate Valve, 4-1/8″, 5,000 psi",
+   "brand": null,
+   "countryOfOrigin": null,
+   "leadTimeDays": null,
+   "focusKeyword": "4-1/8 5K gate valve",
+   "descriptionShort": "4-1/8″ API 6A gate valve, 5,000 psi (5K). Supplied new from Cameron to your PSL, PR, material and temperature class.",
+   "descriptionLong": "<p>A 4-1/8″ (105 mm) gate valve to API 6A, rated 5,000 psi working pressure (5K). We supply it new from Cameron, and other API 6A manufacturers, to the PSL, PR, material class and temperature class you specify. The table lists the models and nameplate markings we have seen at this bore and rating, so you can quote a make and model directly.</p><h3>Makes and models at this rating</h3><table><thead><tr><th scope=\"col\">Make</th><th scope=\"col\">Model</th><th scope=\"col\">Part / assembly no.</th><th scope=\"col\">PSL</th><th scope=\"col\">PR</th><th scope=\"col\">Material class</th><th scope=\"col\">Temperature</th></tr></thead><tbody><tr><td>Cameron</td><td>FL</td><td>—</td><td>—</td><td>PR2</td><td>BB</td><td>P+U</td></tr></tbody></table><p>Each row is what is marked on a valve we have photographed at this bore and pressure; a dash means the nameplate does not state it or is not legible. Your valve is built to the specification you put on the RFQ, not to these plates.</p><h3>Rating, test and flanges</h3><ul><li><strong>Working pressure:</strong> 5,000 psi. API 6A shell test: 10,000 psi.</li><li><strong>Bore:</strong> full bore — the bore matches the nominal size, so wireline tools and pigs pass through.</li></ul><h3>Reading the nameplate</h3><ul><li><strong>PSL</strong> (product specification level, 1 to 4) sets the inspection, testing and traceability applied. PSL 3G adds a gas test.</li><li><strong>PR</strong> (performance requirement) is PR1 or PR2; PR2 valves have passed the design-validation testing in API 6A.</li><li><strong>Material class</strong> AA to CC is general service. DD, EE, FF and HH are sour service to NACE MR0175 / ISO 15156; a suffix such as -0.5 or -1.5 is the maximum H₂S partial pressure in psia, and NL means no limit.</li><li><strong>Temperature class</strong> letters combine: P = −20 °F to +180 °F; U = 0 °F to +250 °F. P+U covers −20 °F to +250 °F.</li></ul><h3>Ordering</h3><p>Put the bore, pressure, end connections, PSL, PR, material and temperature class on your RFQ, with a preferred make and model if you have one. We confirm lead time and documentation — including the API 6A monogram and material certificates — on the quotation.</p>",
+   "seoTitle": "4-1/8″ 5K API 6A Gate Valve, 5,000 psi",
+   "seoDescription": "API 6A Gate Valve, 4-1/8″, 5,000 psi: Cameron. PSL, PR, material and temperature class to order. Request a quote.",
+   "faqs": [
+    {
+     "question": "What do PSL and PR mean on a 4-1/8″ 5K gate valve?",
+     "answer": "PSL (1 to 4) is the product specification level: the inspection, testing and traceability applied during manufacture, with PSL 3G adding a gas test. PR is the performance requirement: PR2 valves have passed API 6A design-validation testing, PR1 valves have not. Specify both on the RFQ."
+    },
+    {
+     "question": "Which material class do I need for sour service?",
+     "answer": "API 6A material classes DD, EE, FF and HH are for sour service to NACE MR0175 / ISO 15156. The suffix gives the maximum H₂S partial pressure the valve is rated for, in psia — for example EE-0.5 or DD-NL (no limit). AA, BB and CC are general service. Choose by the H₂S partial pressure and CO₂ content of your fluid."
+    },
+    {
+     "question": "What pressure is the valve body tested to?",
+     "answer": "API 6A sets the hydrostatic shell test for a 5,000 psi valve at 10,000 psi."
+    },
+    {
+     "question": "Can you supply a specific make or model?",
+     "answer": "Yes. At this rating we supply Cameron, including FL. Give the make, model and any part number on the RFQ and we quote against it."
+    },
+    {
+     "question": "Are these valves supplied new?",
+     "answer": "Yes. We source new valves to the specification on your RFQ and state the lead time and documentation on the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Valve Type",
+     "value": "Gate valve — manual handwheel; hydraulic on request",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "valve_type"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size",
+     "value": "4-1/8 in",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "nominal_size"
+    },
+    {
+     "group": "Performance",
+     "label": "Working Pressure",
+     "value": "5000",
+     "unit": "psi",
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "working_pressure_psi"
+    },
+    {
+     "group": "Performance",
+     "label": "Pressure Class",
+     "value": "5K",
+     "unit": null,
+     "position": 3,
+     "isFilterable": true,
+     "templateKey": "pressure_class"
+    },
+    {
+     "group": "Dimensions",
+     "label": "End Connection (Inlet)",
+     "value": "API 6A flanged",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "end_connection_inlet"
+    },
+    {
+     "group": "Dimensions",
+     "label": "End Connection (Outlet)",
+     "value": "API 6A flanged",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "end_connection_outlet"
+    },
+    {
+     "group": "Performance",
+     "label": "Service Class",
+     "value": "Standard or sour service (NACE MR0175 / ISO 15156) by material class",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "service_class"
+    },
+    {
+     "group": "Compliance",
+     "label": "API Specification",
+     "value": "API 6A",
+     "unit": null,
+     "position": 7,
+     "isFilterable": true,
+     "templateKey": "api_spec"
+    },
+    {
+     "group": "Compliance",
+     "label": "PSL Class",
+     "value": "PSL 1–4 to order",
+     "unit": null,
+     "position": 8,
+     "isFilterable": false,
+     "templateKey": "psl_class"
+    },
+    {
+     "group": "Compliance",
+     "label": "PR Class",
+     "value": "PR2 marked; to order",
+     "unit": null,
+     "position": 9,
+     "isFilterable": false,
+     "templateKey": "pr_class"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Bore Type",
+     "value": "Full bore",
+     "unit": null,
+     "position": 10,
+     "isFilterable": false,
+     "templateKey": "bore_type"
+    },
+    {
+     "group": "Compliance",
+     "label": "Material Class (API 6A)",
+     "value": "BB marked; AA–HH to order",
+     "unit": null,
+     "position": 11,
+     "isFilterable": false,
+     "templateKey": "material_class_api"
+    },
+    {
+     "group": "Identification",
+     "label": "Makes available",
+     "value": "Cameron",
+     "unit": null,
+     "position": 12,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Identification",
+     "label": "Models seen",
+     "value": "FL",
+     "unit": null,
+     "position": 13,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Performance",
+     "label": "Hydrostatic shell test",
+     "value": "10,000 psi",
+     "unit": null,
+     "position": 14,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Performance",
+     "label": "Temperature markings seen",
+     "value": "P+U",
+     "unit": null,
+     "position": 15,
+     "isFilterable": false,
+     "templateKey": null
+    }
+   ],
+   "searchAliases": [
+    "FL",
+    "4-1/8 5K",
+    "4-1/8 5000",
+    "4 1/8 5000",
+    "Cameron"
+   ],
+   "images": [
+    {
+     "file": "cameron-gate-valve-4-1-8-5000-psi-383-1.jpg",
+     "alt": "Cameron FL gate valve, 4-1/8″ 5,000 psi"
+    },
+    {
+     "file": "cameron-gate-valve-4-1-8-5000-psi-383-3.jpg",
+     "alt": "Nameplate of a Cameron 4-1/8″ 5,000 psi gate valve"
+    }
+   ],
+   "seriesPage": null,
+   "source": {
+    "ofsListings": [
+     "383"
+    ]
+   }
+  },
+  {
+   "sku": "IH-OFV-GATE-518-10K",
+   "slug": "api-6a-gate-valve-5-1-8-inch-10000-psi",
+   "title": "API 6A Gate Valve, 5-1/8″, 10,000 psi",
+   "brand": null,
+   "countryOfOrigin": null,
+   "leadTimeDays": null,
+   "focusKeyword": "5-1/8 10K gate valve",
+   "descriptionShort": "5-1/8″ API 6A gate valve, 10,000 psi (10K). Supplied new from WOM to your PSL, PR, material and temperature class; flanged ends take a BX-169 ring.",
+   "descriptionLong": "<p>A 5-1/8″ (130 mm) gate valve to API 6A, rated 10,000 psi working pressure (10K). We supply it new from WOM, and other API 6A manufacturers, to the PSL, PR, material class and temperature class you specify. The table lists the models and nameplate markings we have seen at this bore and rating, so you can quote a make and model directly.</p><h3>Makes and models at this rating</h3><table><thead><tr><th scope=\"col\">Make</th><th scope=\"col\">Model</th><th scope=\"col\">Part / assembly no.</th><th scope=\"col\">PSL</th><th scope=\"col\">PR</th><th scope=\"col\">Material class</th><th scope=\"col\">Temperature</th></tr></thead><tbody><tr><td>WOM</td><td>—</td><td>—</td><td>PSL 3</td><td>—</td><td>DD</td><td>−20 °F to +250 °F</td></tr></tbody></table><p>Each row is what is marked on a valve we have photographed at this bore and pressure; a dash means the nameplate does not state it or is not legible. Your valve is built to the specification you put on the RFQ, not to these plates.</p><h3>Rating, test and flanges</h3><ul><li><strong>Working pressure:</strong> 10,000 psi. API 6A shell test: 15,000 psi.</li><li><strong>Flanged ends:</strong> API 6BX flanges at this size and rating take a BX-169 ring gasket.</li><li><strong>Bore:</strong> full bore — the bore matches the nominal size, so wireline tools and pigs pass through.</li></ul><h3>Reading the nameplate</h3><ul><li><strong>PSL</strong> (product specification level, 1 to 4) sets the inspection, testing and traceability applied. PSL 3G adds a gas test.</li><li><strong>PR</strong> (performance requirement) is PR1 or PR2; PR2 valves have passed the design-validation testing in API 6A.</li><li><strong>Material class</strong> AA to CC is general service. DD, EE, FF and HH are sour service to NACE MR0175 / ISO 15156; a suffix such as -0.5 or -1.5 is the maximum H₂S partial pressure in psia, and NL means no limit.</li><li><strong>Temperature class</strong> letters combine: P = −20 °F to +180 °F; U = 0 °F to +250 °F. P+U covers −20 °F to +250 °F.</li></ul><h3>Ordering</h3><p>Put the bore, pressure, end connections, PSL, PR, material and temperature class on your RFQ, with a preferred make and model if you have one. We confirm lead time and documentation — including the API 6A monogram and material certificates — on the quotation.</p>",
+   "seoTitle": "5-1/8″ 10K API 6A Gate Valve, 10,000 psi",
+   "seoDescription": "API 6A Gate Valve, 5-1/8″, 10,000 psi: WOM. PSL, PR, material and temperature class to order. Request a quote.",
+   "faqs": [
+    {
+     "question": "What do PSL and PR mean on a 5-1/8″ 10K gate valve?",
+     "answer": "PSL (1 to 4) is the product specification level: the inspection, testing and traceability applied during manufacture, with PSL 3G adding a gas test. PR is the performance requirement: PR2 valves have passed API 6A design-validation testing, PR1 valves have not. Specify both on the RFQ."
+    },
+    {
+     "question": "Which material class do I need for sour service?",
+     "answer": "API 6A material classes DD, EE, FF and HH are for sour service to NACE MR0175 / ISO 15156. The suffix gives the maximum H₂S partial pressure the valve is rated for, in psia — for example EE-0.5 or DD-NL (no limit). AA, BB and CC are general service. Choose by the H₂S partial pressure and CO₂ content of your fluid."
+    },
+    {
+     "question": "What ring gasket does a 5-1/8″ 10K API 6A flange use?",
+     "answer": "A BX-169 ring gasket, on an API 6BX flange. Order the rings with the valve if you need them."
+    },
+    {
+     "question": "What pressure is the valve body tested to?",
+     "answer": "API 6A sets the hydrostatic shell test for a 10,000 psi valve at 15,000 psi."
+    },
+    {
+     "question": "Can you supply a specific make or model?",
+     "answer": "Yes. At this rating we supply WOM. Give the make, model and any part number on the RFQ and we quote against it."
+    },
+    {
+     "question": "Are these valves supplied new?",
+     "answer": "Yes. We source new valves to the specification on your RFQ and state the lead time and documentation on the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Valve Type",
+     "value": "Gate valve — manual handwheel; hydraulic on request",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "valve_type"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size",
+     "value": "5-1/8 in",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "nominal_size"
+    },
+    {
+     "group": "Performance",
+     "label": "Working Pressure",
+     "value": "10000",
+     "unit": "psi",
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "working_pressure_psi"
+    },
+    {
+     "group": "Performance",
+     "label": "Pressure Class",
+     "value": "10K",
+     "unit": null,
+     "position": 3,
+     "isFilterable": true,
+     "templateKey": "pressure_class"
+    },
+    {
+     "group": "Dimensions",
+     "label": "End Connection (Inlet)",
+     "value": "API 6BX flanged (BX-169 ring)",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "end_connection_inlet"
+    },
+    {
+     "group": "Dimensions",
+     "label": "End Connection (Outlet)",
+     "value": "API 6BX flanged (BX-169 ring)",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "end_connection_outlet"
+    },
+    {
+     "group": "Performance",
+     "label": "Service Class",
+     "value": "Standard or sour service (NACE MR0175 / ISO 15156) by material class",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "service_class"
+    },
+    {
+     "group": "Compliance",
+     "label": "API Specification",
+     "value": "API 6A",
+     "unit": null,
+     "position": 7,
+     "isFilterable": true,
+     "templateKey": "api_spec"
+    },
+    {
+     "group": "Compliance",
+     "label": "PSL Class",
+     "value": "PSL 3 marked; PSL 1–4 to order",
+     "unit": null,
+     "position": 8,
+     "isFilterable": false,
+     "templateKey": "psl_class"
+    },
+    {
+     "group": "Compliance",
+     "label": "PR Class",
+     "value": "PR1 or PR2 to order",
+     "unit": null,
+     "position": 9,
+     "isFilterable": false,
+     "templateKey": "pr_class"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Bore Type",
+     "value": "Full bore",
+     "unit": null,
+     "position": 10,
+     "isFilterable": false,
+     "templateKey": "bore_type"
+    },
+    {
+     "group": "Compliance",
+     "label": "Material Class (API 6A)",
+     "value": "DD marked; AA–HH to order",
+     "unit": null,
+     "position": 11,
+     "isFilterable": false,
+     "templateKey": "material_class_api"
+    },
+    {
+     "group": "Identification",
+     "label": "Makes available",
+     "value": "WOM",
+     "unit": null,
+     "position": 12,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Performance",
+     "label": "Hydrostatic shell test",
+     "value": "15,000 psi",
+     "unit": null,
+     "position": 13,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Performance",
+     "label": "Temperature markings seen",
+     "value": "−20 °F to +250 °F",
+     "unit": null,
+     "position": 14,
+     "isFilterable": false,
+     "templateKey": null
+    }
+   ],
+   "searchAliases": [
+    "5-1/8 10K",
+    "5-1/8 10000",
+    "5 1/8 10000",
+    "BX-169",
+    "WOM"
+   ],
+   "images": [
+    {
+     "file": "wom-gate-valve-5-1-8-10000-psi-419-1.jpg",
+     "alt": "WOM gate valve, 5-1/8″ 10,000 psi"
+    },
+    {
+     "file": "wom-gate-valve-5-1-8-10000-psi-419-3.jpg",
+     "alt": "Nameplate of a WOM 5-1/8″ 10,000 psi gate valve"
+    }
+   ],
+   "seriesPage": null,
+   "source": {
+    "ofsListings": [
+     "419"
+    ]
+   }
+  },
+  {
+   "sku": "IH-OFV-GATE-11316-7K5",
+   "slug": "mud-gate-valve-1-13-16-inch-7500-psi",
+   "title": "Mud Gate Valve, 1-13/16″, 7,500 psi",
+   "brand": null,
+   "countryOfOrigin": null,
+   "leadTimeDays": null,
+   "focusKeyword": "1-13/16 mud gate valve 7,500 psi",
+   "descriptionShort": "1-13/16″ mud gate valve, 7,500 psi. Supplied new from NOV, end connections and trim to your specification.",
+   "descriptionLong": "<p>A 1-13/16″ gate valve rated 7,500 psi, for drilling mud service — standpipe manifolds and mud pump discharge lines. We supply it new from NOV, with the end connections and trim you specify. The table lists the models and nameplate markings we have seen at this size and rating.</p><h3>Makes and models at this rating</h3><table><thead><tr><th scope=\"col\">Make</th><th scope=\"col\">Model</th><th scope=\"col\">Part / assembly no.</th><th scope=\"col\">PSL</th><th scope=\"col\">PR</th><th scope=\"col\">Material class</th><th scope=\"col\">Temperature</th></tr></thead><tbody><tr><td>NOV Mission</td><td>Mud valve</td><td><code>A89160-2</code></td><td>—</td><td>—</td><td>—</td><td>−29 °C to +121 °C</td></tr><tr><td>NOV Mission</td><td>Mud valve</td><td>—</td><td>—</td><td>—</td><td>—</td><td>−18 °C to +121 °C</td></tr></tbody></table><p>Each row is what is marked on a valve we have photographed at this bore and pressure; a dash means the nameplate does not state it or is not legible. Your valve is built to the specification you put on the RFQ, not to these plates.</p><h3>Rating</h3><ul><li><strong>Working pressure:</strong> 7,500 psi.</li><li><strong>Sour service:</strong> the NOV Mission mud valves here are marked for a maximum H₂S partial pressure of 0.5 psia.</li><li><strong>End connections:</strong> butt-weld, flanged or union to order.</li></ul><h3>Ordering</h3><p>Put the size, pressure, end connections, trim and service (standard or sour, with the H₂S partial pressure) on your RFQ, with a preferred make and model if you have one. We confirm lead time and documentation on the quotation.</p>",
+   "seoTitle": "1-13/16″ 7,500 psi Mud Gate Valve",
+   "seoDescription": "Mud Gate Valve, 1-13/16″, 7,500 psi: NOV. End connections and trim to order. Request a quote.",
+   "faqs": [
+    {
+     "question": "Where is a 1-13/16″ 7,500 psi mud gate valve used?",
+     "answer": "On the high-pressure side of the drilling mud system: standpipe manifolds and mud pump discharge lines."
+    },
+    {
+     "question": "What end connections are available?",
+     "answer": "Butt-weld, flanged or union ends, to order. State the end connection and, for butt-weld, the pipe schedule on the RFQ."
+    },
+    {
+     "question": "What does the H₂S partial pressure marking on the nameplate mean?",
+     "answer": "It is the maximum H₂S partial pressure, in psia, the valve is rated for in sour service. The NOV Mission mud valves shown are marked 0.5. Give the H₂S content and line pressure of your mud system on the RFQ and we match the trim to it."
+    },
+    {
+     "question": "Can you supply a specific make or model?",
+     "answer": "Yes. At this rating we supply NOV. Give the make, model and any part number on the RFQ and we quote against it."
+    },
+    {
+     "question": "Are these valves supplied new?",
+     "answer": "Yes. We source new valves to the specification on your RFQ and state the lead time and documentation on the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Valve Type",
+     "value": "Mud gate valve",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "valve_type"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size",
+     "value": "1-13/16 in",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "nominal_size"
+    },
+    {
+     "group": "Performance",
+     "label": "Working Pressure",
+     "value": "7500",
+     "unit": "psi",
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "working_pressure_psi"
+    },
+    {
+     "group": "Performance",
+     "label": "Pressure Class",
+     "value": "7.5K",
+     "unit": null,
+     "position": 3,
+     "isFilterable": true,
+     "templateKey": "pressure_class"
+    },
+    {
+     "group": "Dimensions",
+     "label": "End Connection (Inlet)",
+     "value": "Butt-weld, flanged or union to order",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "end_connection_inlet"
+    },
+    {
+     "group": "Dimensions",
+     "label": "End Connection (Outlet)",
+     "value": "Butt-weld, flanged or union to order",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "end_connection_outlet"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Bore Type",
+     "value": "Full bore",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "bore_type"
+    },
+    {
+     "group": "Identification",
+     "label": "Makes available",
+     "value": "NOV",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Identification",
+     "label": "Part / assembly numbers seen",
+     "value": "A89160-2",
+     "unit": null,
+     "position": 8,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Performance",
+     "label": "Temperature markings seen",
+     "value": "−29 °C to +121 °C; −18 °C to +121 °C",
+     "unit": null,
+     "position": 9,
+     "isFilterable": false,
+     "templateKey": null
+    }
+   ],
+   "searchAliases": [
+    "A89160-2",
+    "1-13/16 7.5K",
+    "1-13/16 7500",
+    "1 13/16 7500",
+    "NOV"
+   ],
+   "images": [
+    {
+     "file": "nov-gate-valve-1-13-16-7500-psi-400-1.jpg",
+     "alt": "NOV mud valve, 1-13/16″ 7,500 psi"
+    },
+    {
+     "file": "nov-gate-valve-3-1-8-7500-psi-409-1.jpg",
+     "alt": "NOV mud valve, 1-13/16″ 7,500 psi"
+    },
+    {
+     "file": "nov-gate-valve-1-13-16-7500-psi-400-3.jpg",
+     "alt": "Nameplate of a NOV 1-13/16″ 7,500 psi mud valve"
+    }
+   ],
+   "seriesPage": null,
+   "source": {
+    "ofsListings": [
+     "400",
+     "409"
+    ]
+   }
+  },
+  {
+   "sku": "IH-OFV-GATE-2116-7K5",
+   "slug": "gate-valve-2-1-16-inch-7500-psi",
+   "title": "Gate Valve, 2-1/16″, 7,500 psi",
+   "brand": null,
+   "countryOfOrigin": null,
+   "leadTimeDays": null,
+   "focusKeyword": "2-1/16 gate valve 7,500 psi",
+   "descriptionShort": "2-1/16″ gate valve, 7,500 psi. Supplied new from WOM, end connections and trim to your specification.",
+   "descriptionLong": "<p>A 2-1/16″ gate valve rated 7,500 psi, We supply it new from WOM, with the end connections and trim you specify. The table lists the models and nameplate markings we have seen at this size and rating.</p><h3>Makes and models at this rating</h3><table><thead><tr><th scope=\"col\">Make</th><th scope=\"col\">Model</th><th scope=\"col\">Part / assembly no.</th><th scope=\"col\">PSL</th><th scope=\"col\">PR</th><th scope=\"col\">Material class</th><th scope=\"col\">Temperature</th></tr></thead><tbody><tr><td>WOM</td><td>—</td><td>—</td><td>PSL 3</td><td>PR2</td><td>DD-NL</td><td>−20 °F to +250 °F</td></tr></tbody></table><p>Each row is what is marked on a valve we have photographed at this bore and pressure; a dash means the nameplate does not state it or is not legible. Your valve is built to the specification you put on the RFQ, not to these plates.</p><h3>Rating</h3><ul><li><strong>Working pressure:</strong> 7,500 psi.</li><li><strong>End connections:</strong> butt-weld, flanged or union to order.</li></ul><h3>Ordering</h3><p>Put the size, pressure, end connections, trim and service (standard or sour, with the H₂S partial pressure) on your RFQ, with a preferred make and model if you have one. We confirm lead time and documentation on the quotation.</p>",
+   "seoTitle": "2-1/16″ 7,500 psi Gate Valve",
+   "seoDescription": "Gate Valve, 2-1/16″, 7,500 psi: WOM. End connections and trim to order. Request a quote.",
+   "faqs": [
+    {
+     "question": "Where is a 2-1/16″ 7,500 psi gate valve used?",
+     "answer": "Where the line rating is 7,500 psi, typically drilling mud and high-pressure utility lines."
+    },
+    {
+     "question": "What end connections are available?",
+     "answer": "Butt-weld, flanged or union ends, to order. State the end connection and, for butt-weld, the pipe schedule on the RFQ."
+    },
+    {
+     "question": "Can you supply a specific make or model?",
+     "answer": "Yes. At this rating we supply WOM. Give the make, model and any part number on the RFQ and we quote against it."
+    },
+    {
+     "question": "Are these valves supplied new?",
+     "answer": "Yes. We source new valves to the specification on your RFQ and state the lead time and documentation on the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Valve Type",
+     "value": "Gate valve — manual handwheel; hydraulic on request",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "valve_type"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size",
+     "value": "2-1/16 in",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "nominal_size"
+    },
+    {
+     "group": "Performance",
+     "label": "Working Pressure",
+     "value": "7500",
+     "unit": "psi",
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "working_pressure_psi"
+    },
+    {
+     "group": "Performance",
+     "label": "Pressure Class",
+     "value": "7.5K",
+     "unit": null,
+     "position": 3,
+     "isFilterable": true,
+     "templateKey": "pressure_class"
+    },
+    {
+     "group": "Dimensions",
+     "label": "End Connection (Inlet)",
+     "value": "Butt-weld, flanged or union to order",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "end_connection_inlet"
+    },
+    {
+     "group": "Dimensions",
+     "label": "End Connection (Outlet)",
+     "value": "Butt-weld, flanged or union to order",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "end_connection_outlet"
+    },
+    {
+     "group": "Performance",
+     "label": "Service Class",
+     "value": "Standard or sour service (NACE MR0175 / ISO 15156) by material class",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "service_class"
+    },
+    {
+     "group": "Compliance",
+     "label": "PSL Class",
+     "value": "PSL 3 marked; PSL 1–4 to order",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": "psl_class"
+    },
+    {
+     "group": "Compliance",
+     "label": "PR Class",
+     "value": "PR2 marked; to order",
+     "unit": null,
+     "position": 8,
+     "isFilterable": false,
+     "templateKey": "pr_class"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Bore Type",
+     "value": "Full bore",
+     "unit": null,
+     "position": 9,
+     "isFilterable": false,
+     "templateKey": "bore_type"
+    },
+    {
+     "group": "Compliance",
+     "label": "Material Class (API 6A)",
+     "value": "DD-NL marked; AA–HH to order",
+     "unit": null,
+     "position": 10,
+     "isFilterable": false,
+     "templateKey": "material_class_api"
+    },
+    {
+     "group": "Identification",
+     "label": "Makes available",
+     "value": "WOM",
+     "unit": null,
+     "position": 11,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Performance",
+     "label": "Temperature markings seen",
+     "value": "−20 °F to +250 °F",
+     "unit": null,
+     "position": 12,
+     "isFilterable": false,
+     "templateKey": null
+    }
+   ],
+   "searchAliases": [
+    "2-1/16 7.5K",
+    "2-1/16 7500",
+    "2 1/16 7500",
+    "WOM"
+   ],
+   "images": [
+    {
+     "file": "wom-gate-valve-2-1-16-7500-psi-used-528-1.jpg",
+     "alt": "WOM gate valve, 2-1/16″ 7,500 psi"
+    },
+    {
+     "file": "wom-gate-valve-2-1-16-7500-psi-used-528-2.jpg",
+     "alt": "Nameplate of a WOM 2-1/16″ 7,500 psi gate valve"
+    }
+   ],
+   "seriesPage": null,
+   "source": {
+    "ofsListings": [
+     "528"
+    ]
+   }
+  },
+  {
+   "sku": "IH-OFV-GATE-2916-7K5",
+   "slug": "mud-gate-valve-2-9-16-inch-7500-psi",
+   "title": "Mud Gate Valve, 2-9/16″, 7,500 psi",
+   "brand": null,
+   "countryOfOrigin": null,
+   "leadTimeDays": null,
+   "focusKeyword": "2-9/16 mud gate valve 7,500 psi",
+   "descriptionShort": "2-9/16″ mud gate valve, 7,500 psi. Supplied new from NOV, end connections and trim to your specification.",
+   "descriptionLong": "<p>A 2-9/16″ gate valve rated 7,500 psi, for drilling mud service — standpipe manifolds and mud pump discharge lines. We supply it new from NOV, with the end connections and trim you specify. The table lists the models and nameplate markings we have seen at this size and rating.</p><h3>Makes and models at this rating</h3><table><thead><tr><th scope=\"col\">Make</th><th scope=\"col\">Model</th><th scope=\"col\">Part / assembly no.</th><th scope=\"col\">PSL</th><th scope=\"col\">PR</th><th scope=\"col\">Material class</th><th scope=\"col\">Temperature</th></tr></thead><tbody><tr><td>NOV Mission</td><td>Mud valve</td><td>—</td><td>—</td><td>—</td><td>—</td><td>−29 °C to +121 °C</td></tr></tbody></table><p>Each row is what is marked on a valve we have photographed at this bore and pressure; a dash means the nameplate does not state it or is not legible. Your valve is built to the specification you put on the RFQ, not to these plates.</p><h3>Rating</h3><ul><li><strong>Working pressure:</strong> 7,500 psi.</li><li><strong>Sour service:</strong> the NOV Mission mud valves here are marked for a maximum H₂S partial pressure of 0.5 psia.</li><li><strong>End connections:</strong> butt-weld, flanged or union to order.</li></ul><h3>Ordering</h3><p>Put the size, pressure, end connections, trim and service (standard or sour, with the H₂S partial pressure) on your RFQ, with a preferred make and model if you have one. We confirm lead time and documentation on the quotation.</p>",
+   "seoTitle": "2-9/16″ 7,500 psi Mud Gate Valve",
+   "seoDescription": "Mud Gate Valve, 2-9/16″, 7,500 psi: NOV. End connections and trim to order. Request a quote.",
+   "faqs": [
+    {
+     "question": "Where is a 2-9/16″ 7,500 psi mud gate valve used?",
+     "answer": "On the high-pressure side of the drilling mud system: standpipe manifolds and mud pump discharge lines."
+    },
+    {
+     "question": "What end connections are available?",
+     "answer": "Butt-weld, flanged or union ends, to order. State the end connection and, for butt-weld, the pipe schedule on the RFQ."
+    },
+    {
+     "question": "What does the H₂S partial pressure marking on the nameplate mean?",
+     "answer": "It is the maximum H₂S partial pressure, in psia, the valve is rated for in sour service. The NOV Mission mud valves shown are marked 0.5. Give the H₂S content and line pressure of your mud system on the RFQ and we match the trim to it."
+    },
+    {
+     "question": "Can you supply a specific make or model?",
+     "answer": "Yes. At this rating we supply NOV. Give the make, model and any part number on the RFQ and we quote against it."
+    },
+    {
+     "question": "Are these valves supplied new?",
+     "answer": "Yes. We source new valves to the specification on your RFQ and state the lead time and documentation on the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Valve Type",
+     "value": "Mud gate valve",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "valve_type"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size",
+     "value": "2-9/16 in",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "nominal_size"
+    },
+    {
+     "group": "Performance",
+     "label": "Working Pressure",
+     "value": "7500",
+     "unit": "psi",
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "working_pressure_psi"
+    },
+    {
+     "group": "Performance",
+     "label": "Pressure Class",
+     "value": "7.5K",
+     "unit": null,
+     "position": 3,
+     "isFilterable": true,
+     "templateKey": "pressure_class"
+    },
+    {
+     "group": "Dimensions",
+     "label": "End Connection (Inlet)",
+     "value": "Butt-weld, flanged or union to order",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "end_connection_inlet"
+    },
+    {
+     "group": "Dimensions",
+     "label": "End Connection (Outlet)",
+     "value": "Butt-weld, flanged or union to order",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "end_connection_outlet"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Bore Type",
+     "value": "Full bore",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "bore_type"
+    },
+    {
+     "group": "Identification",
+     "label": "Makes available",
+     "value": "NOV",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Performance",
+     "label": "Temperature markings seen",
+     "value": "−29 °C to +121 °C",
+     "unit": null,
+     "position": 8,
+     "isFilterable": false,
+     "templateKey": null
+    }
+   ],
+   "searchAliases": [
+    "2-9/16 7.5K",
+    "2-9/16 7500",
+    "2 9/16 7500",
+    "NOV"
+   ],
+   "images": [
+    {
+     "file": "nov-gate-valve-2-9-16-7500-psi-377-1.jpg",
+     "alt": "NOV mud valve, 2-9/16″ 7,500 psi"
+    },
+    {
+     "file": "nov-gate-valve-2-9-16-7500-psi-377-3.jpg",
+     "alt": "Nameplate of a NOV 2-9/16″ 7,500 psi mud valve"
+    }
+   ],
+   "seriesPage": null,
+   "source": {
+    "ofsListings": [
+     "377"
+    ]
+   }
+  },
+  {
+   "sku": "IH-OFV-GATE-3-7K5",
+   "slug": "mud-gate-valve-3-inch-7500-psi",
+   "title": "Mud Gate Valve, 3″, 7,500 psi",
+   "brand": null,
+   "countryOfOrigin": null,
+   "leadTimeDays": null,
+   "focusKeyword": "3 mud gate valve 7,500 psi",
+   "descriptionShort": "3″ mud gate valve, 7,500 psi. Supplied new from DEMCO, end connections and trim to your specification.",
+   "descriptionLong": "<p>A 3″ gate valve rated 7,500 psi, for drilling mud service — standpipe manifolds and mud pump discharge lines. We supply it new from DEMCO, with the end connections and trim you specify. The table lists the models and nameplate markings we have seen at this size and rating.</p><h3>Makes and models at this rating</h3><table><thead><tr><th scope=\"col\">Make</th><th scope=\"col\">Model</th><th scope=\"col\">Part / assembly no.</th><th scope=\"col\">PSL</th><th scope=\"col\">PR</th><th scope=\"col\">Material class</th><th scope=\"col\">Temperature</th></tr></thead><tbody><tr><td>DEMCO</td><td>Mud valve, butt-weld XXH</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr></tbody></table><p>Each row is what is marked on a valve we have photographed at this bore and pressure; a dash means the nameplate does not state it or is not legible. Your valve is built to the specification you put on the RFQ, not to these plates.</p><h3>Rating</h3><ul><li><strong>Working pressure:</strong> 7,500 psi.</li><li><strong>End connections:</strong> butt-weld, flanged or union to order — the DEMCO unit shown is butt-weld, schedule XXH.</li></ul><h3>Ordering</h3><p>Put the size, pressure, end connections, trim and service (standard or sour, with the H₂S partial pressure) on your RFQ, with a preferred make and model if you have one. We confirm lead time and documentation on the quotation.</p>",
+   "seoTitle": "3″ 7,500 psi Mud Gate Valve",
+   "seoDescription": "Mud Gate Valve, 3″, 7,500 psi: DEMCO. End connections and trim to order. Request a quote.",
+   "faqs": [
+    {
+     "question": "Where is a 3″ 7,500 psi mud gate valve used?",
+     "answer": "On the high-pressure side of the drilling mud system: standpipe manifolds and mud pump discharge lines."
+    },
+    {
+     "question": "What end connections are available?",
+     "answer": "Butt-weld, flanged or union ends, to order. State the end connection and, for butt-weld, the pipe schedule on the RFQ. The DEMCO unit shown is butt-weld, schedule XXH."
+    },
+    {
+     "question": "Can you supply a specific make or model?",
+     "answer": "Yes. At this rating we supply DEMCO, including Mud valve, butt-weld XXH. Give the make, model and any part number on the RFQ and we quote against it."
+    },
+    {
+     "question": "Are these valves supplied new?",
+     "answer": "Yes. We source new valves to the specification on your RFQ and state the lead time and documentation on the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Valve Type",
+     "value": "Mud gate valve",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "valve_type"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size",
+     "value": "3 in",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "nominal_size"
+    },
+    {
+     "group": "Performance",
+     "label": "Working Pressure",
+     "value": "7500",
+     "unit": "psi",
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "working_pressure_psi"
+    },
+    {
+     "group": "Performance",
+     "label": "Pressure Class",
+     "value": "7.5K",
+     "unit": null,
+     "position": 3,
+     "isFilterable": true,
+     "templateKey": "pressure_class"
+    },
+    {
+     "group": "Dimensions",
+     "label": "End Connection (Inlet)",
+     "value": "Butt-weld, flanged or union to order",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "end_connection_inlet"
+    },
+    {
+     "group": "Dimensions",
+     "label": "End Connection (Outlet)",
+     "value": "Butt-weld, flanged or union to order",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "end_connection_outlet"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Bore Type",
+     "value": "Full bore",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "bore_type"
+    },
+    {
+     "group": "Identification",
+     "label": "Makes available",
+     "value": "DEMCO",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Identification",
+     "label": "Models seen",
+     "value": "Mud valve, butt-weld XXH",
+     "unit": null,
+     "position": 8,
+     "isFilterable": false,
+     "templateKey": null
+    }
+   ],
+   "searchAliases": [
+    "Mud valve, butt-weld XXH",
+    "3 7.5K",
+    "3 7500",
+    "DEMCO"
+   ],
+   "images": [
+    {
+     "file": "3-7500-psi-butt-weld-xxh-mud-valve-452-1.jpg",
+     "alt": "DEMCO Mud valve, butt-weld XXH gate valve, 3″ 7,500 psi"
+    }
+   ],
+   "seriesPage": null,
+   "source": {
+    "ofsListings": [
+     "452"
+    ]
+   }
+  },
+  {
+   "sku": "IH-OFV-GATE-4-7K5",
+   "slug": "mud-gate-valve-4-inch-7500-psi",
+   "title": "Mud Gate Valve, 4″, 7,500 psi",
+   "brand": null,
+   "countryOfOrigin": null,
+   "leadTimeDays": null,
+   "focusKeyword": "4 mud gate valve 7,500 psi",
+   "descriptionShort": "4″ mud gate valve, 7,500 psi. Supplied new from NOV, end connections and trim to your specification.",
+   "descriptionLong": "<p>A 4″ gate valve rated 7,500 psi, for drilling mud service — standpipe manifolds and mud pump discharge lines. We supply it new from NOV, with the end connections and trim you specify. The table lists the models and nameplate markings we have seen at this size and rating.</p><h3>Makes and models at this rating</h3><table><thead><tr><th scope=\"col\">Make</th><th scope=\"col\">Model</th><th scope=\"col\">Part / assembly no.</th><th scope=\"col\">PSL</th><th scope=\"col\">PR</th><th scope=\"col\">Material class</th><th scope=\"col\">Temperature</th></tr></thead><tbody><tr><td>NOV Mission</td><td>Mud valve</td><td><code>A41868</code></td><td>—</td><td>—</td><td>—</td><td>−20 °F to +250 °F</td></tr></tbody></table><p>Each row is what is marked on a valve we have photographed at this bore and pressure; a dash means the nameplate does not state it or is not legible. Your valve is built to the specification you put on the RFQ, not to these plates.</p><h3>Rating</h3><ul><li><strong>Working pressure:</strong> 7,500 psi.</li><li><strong>Sour service:</strong> the NOV Mission mud valves here are marked for a maximum H₂S partial pressure of 0.5 psia.</li><li><strong>End connections:</strong> butt-weld, flanged or union to order.</li></ul><h3>Ordering</h3><p>Put the size, pressure, end connections, trim and service (standard or sour, with the H₂S partial pressure) on your RFQ, with a preferred make and model if you have one. We confirm lead time and documentation on the quotation.</p>",
+   "seoTitle": "4″ 7,500 psi Mud Gate Valve",
+   "seoDescription": "Mud Gate Valve, 4″, 7,500 psi: NOV. End connections and trim to order. Request a quote.",
+   "faqs": [
+    {
+     "question": "Where is a 4″ 7,500 psi mud gate valve used?",
+     "answer": "On the high-pressure side of the drilling mud system: standpipe manifolds and mud pump discharge lines."
+    },
+    {
+     "question": "What end connections are available?",
+     "answer": "Butt-weld, flanged or union ends, to order. State the end connection and, for butt-weld, the pipe schedule on the RFQ."
+    },
+    {
+     "question": "What does the H₂S partial pressure marking on the nameplate mean?",
+     "answer": "It is the maximum H₂S partial pressure, in psia, the valve is rated for in sour service. The NOV Mission mud valves shown are marked 0.5. Give the H₂S content and line pressure of your mud system on the RFQ and we match the trim to it."
+    },
+    {
+     "question": "Can you supply a specific make or model?",
+     "answer": "Yes. At this rating we supply NOV. Give the make, model and any part number on the RFQ and we quote against it."
+    },
+    {
+     "question": "Are these valves supplied new?",
+     "answer": "Yes. We source new valves to the specification on your RFQ and state the lead time and documentation on the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Valve Type",
+     "value": "Mud gate valve",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "valve_type"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size",
+     "value": "4 in",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "nominal_size"
+    },
+    {
+     "group": "Performance",
+     "label": "Working Pressure",
+     "value": "7500",
+     "unit": "psi",
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "working_pressure_psi"
+    },
+    {
+     "group": "Performance",
+     "label": "Pressure Class",
+     "value": "7.5K",
+     "unit": null,
+     "position": 3,
+     "isFilterable": true,
+     "templateKey": "pressure_class"
+    },
+    {
+     "group": "Dimensions",
+     "label": "End Connection (Inlet)",
+     "value": "Butt-weld, flanged or union to order",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "end_connection_inlet"
+    },
+    {
+     "group": "Dimensions",
+     "label": "End Connection (Outlet)",
+     "value": "Butt-weld, flanged or union to order",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "end_connection_outlet"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Bore Type",
+     "value": "Full bore",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "bore_type"
+    },
+    {
+     "group": "Identification",
+     "label": "Makes available",
+     "value": "NOV",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Identification",
+     "label": "Part / assembly numbers seen",
+     "value": "A41868",
+     "unit": null,
+     "position": 8,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Performance",
+     "label": "Temperature markings seen",
+     "value": "−20 °F to +250 °F",
+     "unit": null,
+     "position": 9,
+     "isFilterable": false,
+     "templateKey": null
+    }
+   ],
+   "searchAliases": [
+    "A41868",
+    "4 7.5K",
+    "4 7500",
+    "NOV"
+   ],
+   "images": [
+    {
+     "file": "nov-gate-valve-4-7500-psi-385-1.jpg",
+     "alt": "NOV mud valve, 4″ 7,500 psi"
+    },
+    {
+     "file": "nov-gate-valve-4-7500-psi-385-3.jpg",
+     "alt": "Nameplate of a NOV 4″ 7,500 psi mud valve"
+    }
+   ],
+   "seriesPage": null,
+   "source": {
+    "ofsListings": [
+     "385"
+    ]
+   }
+  },
+  {
+   "sku": "IH-OFV-GATE-4116-7K5",
+   "slug": "mud-gate-valve-4-1-16-inch-7500-psi",
+   "title": "Mud Gate Valve, 4-1/16″, 7,500 psi",
+   "brand": null,
+   "countryOfOrigin": null,
+   "leadTimeDays": null,
+   "focusKeyword": "4-1/16 mud gate valve 7,500 psi",
+   "descriptionShort": "4-1/16″ mud gate valve, 7,500 psi. Supplied new from WOM and Anson, end connections and trim to your specification.",
+   "descriptionLong": "<p>A 4-1/16″ gate valve rated 7,500 psi, for drilling mud service — standpipe manifolds and mud pump discharge lines. We supply it new from WOM and Anson, with the end connections and trim you specify. The table lists the models and nameplate markings we have seen at this size and rating.</p><h3>Makes and models at this rating</h3><table><thead><tr><th scope=\"col\">Make</th><th scope=\"col\">Model</th><th scope=\"col\">Part / assembly no.</th><th scope=\"col\">PSL</th><th scope=\"col\">PR</th><th scope=\"col\">Material class</th><th scope=\"col\">Temperature</th></tr></thead><tbody><tr><td>WOM</td><td>—</td><td>—</td><td>PSL 3</td><td>PR2</td><td>—</td><td>−20 °F to +250 °F</td></tr><tr><td>Anson</td><td>Mud valve</td><td>—</td><td>—</td><td>—</td><td>EE</td><td>—</td></tr></tbody></table><p>Each row is what is marked on a valve we have photographed at this bore and pressure; a dash means the nameplate does not state it or is not legible. Your valve is built to the specification you put on the RFQ, not to these plates.</p><h3>Rating</h3><ul><li><strong>Working pressure:</strong> 7,500 psi.</li><li><strong>End connections:</strong> butt-weld, flanged or union to order.</li></ul><h3>Ordering</h3><p>Put the size, pressure, end connections, trim and service (standard or sour, with the H₂S partial pressure) on your RFQ, with a preferred make and model if you have one. We confirm lead time and documentation on the quotation.</p>",
+   "seoTitle": "4-1/16″ 7,500 psi Mud Gate Valve",
+   "seoDescription": "Mud Gate Valve, 4-1/16″, 7,500 psi: WOM and Anson. End connections and trim to order. Request a quote.",
+   "faqs": [
+    {
+     "question": "Where is a 4-1/16″ 7,500 psi mud gate valve used?",
+     "answer": "On the high-pressure side of the drilling mud system: standpipe manifolds and mud pump discharge lines."
+    },
+    {
+     "question": "What end connections are available?",
+     "answer": "Butt-weld, flanged or union ends, to order. State the end connection and, for butt-weld, the pipe schedule on the RFQ."
+    },
+    {
+     "question": "Can you supply a specific make or model?",
+     "answer": "Yes. At this rating we supply WOM and Anson. Give the make, model and any part number on the RFQ and we quote against it."
+    },
+    {
+     "question": "Are these valves supplied new?",
+     "answer": "Yes. We source new valves to the specification on your RFQ and state the lead time and documentation on the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Valve Type",
+     "value": "Mud gate valve",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "valve_type"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size",
+     "value": "4-1/16 in",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "nominal_size"
+    },
+    {
+     "group": "Performance",
+     "label": "Working Pressure",
+     "value": "7500",
+     "unit": "psi",
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "working_pressure_psi"
+    },
+    {
+     "group": "Performance",
+     "label": "Pressure Class",
+     "value": "7.5K",
+     "unit": null,
+     "position": 3,
+     "isFilterable": true,
+     "templateKey": "pressure_class"
+    },
+    {
+     "group": "Dimensions",
+     "label": "End Connection (Inlet)",
+     "value": "Butt-weld, flanged or union to order",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "end_connection_inlet"
+    },
+    {
+     "group": "Dimensions",
+     "label": "End Connection (Outlet)",
+     "value": "Butt-weld, flanged or union to order",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "end_connection_outlet"
+    },
+    {
+     "group": "Performance",
+     "label": "Service Class",
+     "value": "Standard or sour service (NACE MR0175 / ISO 15156) by material class",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "service_class"
+    },
+    {
+     "group": "Compliance",
+     "label": "PSL Class",
+     "value": "PSL 3 marked; PSL 1–4 to order",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": "psl_class"
+    },
+    {
+     "group": "Compliance",
+     "label": "PR Class",
+     "value": "PR2 marked; to order",
+     "unit": null,
+     "position": 8,
+     "isFilterable": false,
+     "templateKey": "pr_class"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Bore Type",
+     "value": "Full bore",
+     "unit": null,
+     "position": 9,
+     "isFilterable": false,
+     "templateKey": "bore_type"
+    },
+    {
+     "group": "Compliance",
+     "label": "Material Class (API 6A)",
+     "value": "EE marked; AA–HH to order",
+     "unit": null,
+     "position": 10,
+     "isFilterable": false,
+     "templateKey": "material_class_api"
+    },
+    {
+     "group": "Identification",
+     "label": "Makes available",
+     "value": "WOM, Anson",
+     "unit": null,
+     "position": 11,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Performance",
+     "label": "Temperature markings seen",
+     "value": "−20 °F to +250 °F",
+     "unit": null,
+     "position": 12,
+     "isFilterable": false,
+     "templateKey": null
+    }
+   ],
+   "searchAliases": [
+    "4-1/16 7.5K",
+    "4-1/16 7500",
+    "4 1/16 7500",
+    "WOM",
+    "Anson"
+   ],
+   "images": [
+    {
+     "file": "wom-gate-valve-4-1-16-7500-psi-used-525-1.jpg",
+     "alt": "WOM gate valve, 4-1/16″ 7,500 psi"
+    },
+    {
+     "file": "anson-gate-valve-4-1-16-7500-psi-410-1.jpg",
+     "alt": "Anson mud valve, 4-1/16″ 7,500 psi"
+    },
+    {
+     "file": "wom-gate-valve-4-1-16-7500-psi-used-525-2.jpg",
+     "alt": "Nameplate of a WOM 4-1/16″ 7,500 psi gate valve"
+    }
+   ],
+   "seriesPage": null,
+   "source": {
+    "ofsListings": [
+     "410",
+     "525"
+    ]
+   }
+  },
+  {
+   "sku": "IH-OFV-GATE-5-7K5",
+   "slug": "mud-gate-valve-5-inch-7500-psi",
+   "title": "Mud Gate Valve, 5″, 7,500 psi",
+   "brand": null,
+   "countryOfOrigin": null,
+   "leadTimeDays": null,
+   "focusKeyword": "5 mud gate valve 7,500 psi",
+   "descriptionShort": "5″ mud gate valve, 7,500 psi. Supplied new from NOV, end connections and trim to your specification.",
+   "descriptionLong": "<p>A 5″ gate valve rated 7,500 psi, for drilling mud service — standpipe manifolds and mud pump discharge lines. We supply it new from NOV, with the end connections and trim you specify. The table lists the models and nameplate markings we have seen at this size and rating.</p><h3>Makes and models at this rating</h3><table><thead><tr><th scope=\"col\">Make</th><th scope=\"col\">Model</th><th scope=\"col\">Part / assembly no.</th><th scope=\"col\">PSL</th><th scope=\"col\">PR</th><th scope=\"col\">Material class</th><th scope=\"col\">Temperature</th></tr></thead><tbody><tr><td>NOV Mission</td><td>Mud valve</td><td><code>A37892-2</code></td><td>—</td><td>—</td><td>—</td><td>—</td></tr></tbody></table><p>Each row is what is marked on a valve we have photographed at this bore and pressure; a dash means the nameplate does not state it or is not legible. Your valve is built to the specification you put on the RFQ, not to these plates.</p><h3>Rating</h3><ul><li><strong>Working pressure:</strong> 7,500 psi.</li><li><strong>Sour service:</strong> the NOV Mission mud valves here are marked for a maximum H₂S partial pressure of 0.5 psia.</li><li><strong>End connections:</strong> butt-weld, flanged or union to order.</li></ul><h3>Ordering</h3><p>Put the size, pressure, end connections, trim and service (standard or sour, with the H₂S partial pressure) on your RFQ, with a preferred make and model if you have one. We confirm lead time and documentation on the quotation.</p>",
+   "seoTitle": "5″ 7,500 psi Mud Gate Valve",
+   "seoDescription": "Mud Gate Valve, 5″, 7,500 psi: NOV. End connections and trim to order. Request a quote.",
+   "faqs": [
+    {
+     "question": "Where is a 5″ 7,500 psi mud gate valve used?",
+     "answer": "On the high-pressure side of the drilling mud system: standpipe manifolds and mud pump discharge lines."
+    },
+    {
+     "question": "What end connections are available?",
+     "answer": "Butt-weld, flanged or union ends, to order. State the end connection and, for butt-weld, the pipe schedule on the RFQ."
+    },
+    {
+     "question": "What does the H₂S partial pressure marking on the nameplate mean?",
+     "answer": "It is the maximum H₂S partial pressure, in psia, the valve is rated for in sour service. The NOV Mission mud valves shown are marked 0.5. Give the H₂S content and line pressure of your mud system on the RFQ and we match the trim to it."
+    },
+    {
+     "question": "Can you supply a specific make or model?",
+     "answer": "Yes. At this rating we supply NOV. Give the make, model and any part number on the RFQ and we quote against it."
+    },
+    {
+     "question": "Are these valves supplied new?",
+     "answer": "Yes. We source new valves to the specification on your RFQ and state the lead time and documentation on the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Valve Type",
+     "value": "Mud gate valve",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "valve_type"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size",
+     "value": "5 in",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "nominal_size"
+    },
+    {
+     "group": "Performance",
+     "label": "Working Pressure",
+     "value": "7500",
+     "unit": "psi",
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "working_pressure_psi"
+    },
+    {
+     "group": "Performance",
+     "label": "Pressure Class",
+     "value": "7.5K",
+     "unit": null,
+     "position": 3,
+     "isFilterable": true,
+     "templateKey": "pressure_class"
+    },
+    {
+     "group": "Dimensions",
+     "label": "End Connection (Inlet)",
+     "value": "Butt-weld, flanged or union to order",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "end_connection_inlet"
+    },
+    {
+     "group": "Dimensions",
+     "label": "End Connection (Outlet)",
+     "value": "Butt-weld, flanged or union to order",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "end_connection_outlet"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Bore Type",
+     "value": "Full bore",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "bore_type"
+    },
+    {
+     "group": "Identification",
+     "label": "Makes available",
+     "value": "NOV",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Identification",
+     "label": "Part / assembly numbers seen",
+     "value": "A37892-2",
+     "unit": null,
+     "position": 8,
+     "isFilterable": false,
+     "templateKey": null
+    }
+   ],
+   "searchAliases": [
+    "A37892-2",
+    "5 7.5K",
+    "5 7500",
+    "NOV"
+   ],
+   "images": [
+    {
+     "file": "nov-gate-valve-5-7500-psi-384-1.jpg",
+     "alt": "NOV mud valve, 5″ 7,500 psi"
+    },
+    {
+     "file": "nov-gate-valve-5-7500-psi-384-2.jpg",
+     "alt": "Nameplate of a NOV 5″ 7,500 psi mud valve"
+    }
+   ],
+   "seriesPage": null,
+   "source": {
+    "ofsListings": [
+     "384"
+    ]
+   }
+  }
+ ],
+ "excluded": [
+  {
+   "ofsSiteId": "126",
+   "reason": "Duplicate of existing page IH-OFV-GATE-2116-10K-MAN-FC-WOM (same make, bore, pressure)."
+  },
+  {
+   "ofsSiteId": "402",
+   "reason": "Duplicate of existing page IH-OFV-GATE-2116-10K-MAN-FC-WOM."
+  },
+  {
+   "ofsSiteId": "488",
+   "reason": "Duplicate of existing page IH-OFV-GATE-2116-10K-MAN-FC-WOM."
+  },
+  {
+   "ofsSiteId": "374",
+   "reason": "Duplicate of existing WOM 3-1/16 10K pages."
+  },
+  {
+   "ofsSiteId": "378",
+   "reason": "Duplicate of existing Cameron 3-1/16 15K pages."
+  },
+  {
+   "ofsSiteId": "391",
+   "reason": "Duplicate of existing Cameron 3-1/16 15K pages."
+  },
+  {
+   "ofsSiteId": "510",
+   "reason": "Duplicate of existing Cameron 3-1/16 15K pages."
+  },
+  {
+   "ofsSiteId": "381",
+   "reason": "Same OFS code and photos as listing 373."
+  },
+  {
+   "ofsSiteId": "387",
+   "reason": "Cameron 5,000 psi, bore not stated in the listing or legible on the plate."
+  },
+  {
+   "ofsSiteId": "397",
+   "reason": "Nameplate: Cameron Willis H2 choke (2 in x 1 in orifice), not a gate valve."
+  },
+  {
+   "ofsSiteId": "398",
+   "reason": "Nameplate: Cameron Willis drilling choke, not a gate valve."
+  },
+  {
+   "ofsSiteId": "411",
+   "reason": "Nameplate: WOM 3-1/16 15K hydraulic choke, not a gate valve."
+  },
+  {
+   "ofsSiteId": "412",
+   "reason": "Photo shows an angle body with a cylinder top, consistent with a choke; no nameplate."
+  },
+  {
+   "ofsSiteId": "416",
+   "reason": "Photo shows an angle body with a handwheel, consistent with a choke; no nameplate."
+  },
+  {
+   "ofsSiteId": "417",
+   "reason": "Nameplate: Lo-Torc plug valve."
+  },
+  {
+   "ofsSiteId": "422",
+   "reason": "Nameplate: Quality Oil Tools H2 adjustable choke."
+  },
+  {
+   "ofsSiteId": "423",
+   "reason": "Nameplate: NOV Titan BX automatic reset relief valve."
+  },
+  {
+   "ofsSiteId": "424",
+   "reason": "Nameplate: NOV Titan BX relief valve (remanufactured)."
+  },
+  {
+   "ofsSiteId": "511",
+   "reason": "Nameplate: check valve."
+  },
+  {
+   "ofsSiteId": "523",
+   "reason": "Nameplate: Jiangsu Xianzhong check valve."
+  },
+  {
+   "ofsSiteId": "334",
+   "reason": "Knife gate valve (Fabri-Valve C67), industrial — not an oilfield gate valve."
+  },
+  {
+   "ofsSiteId": "364",
+   "reason": "Industrial flanged gate valve, 150 lb (Lazaro Ituarte)."
+  },
+  {
+   "ofsSiteId": "415",
+   "reason": "Industrial gate valve DN100 (Star Line)."
+  },
+  {
+   "ofsSiteId": "420",
+   "reason": "Habonim ball valve with actuator."
+  },
+  {
+   "ofsSiteId": "421",
+   "reason": "Hydroseal: size \"7/12\" unclear; not an API 6A gate valve."
+  },
+  {
+   "ofsSiteId": "413",
+   "reason": "Nameplate: choke (Chinese manufacturer)."
+  },
+  {
+   "ofsSiteId": "425",
+   "reason": "MI SWACO: photos show a hydraulic choke-type body."
+  },
+  {
+   "ofsSiteId": "524",
+   "reason": "NOV mud valve 4 x 5: size ambiguous, plate illegible."
+  }
+ ]
+}

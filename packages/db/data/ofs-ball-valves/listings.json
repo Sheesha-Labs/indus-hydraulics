@@ -1,0 +1,2111 @@
+{
+ "source": "OFS Energy export 2026-09-23; valve markings and nameplates read 2026-09-25",
+ "imageDir": "/Users/ayushkbhatia/Documents/Indus Supplier Research/Source Exports/OFS Energy/ofsenergy-product-images/Ball-Valve",
+ "categorySlug": null,
+ "specTemplateId": "56874aec-4f84-47b1-9914-abf4535c8916",
+ "categories": [
+  {
+   "slug": "hydraulic-ball-valves",
+   "name": "Hydraulic Ball Valves",
+   "parentSlug": "valves-manifolds",
+   "position": 2,
+   "shortDescription": "High-pressure ball valves for hydraulic circuits — 3,000 to 10,000 psi, SAE flange, BSP and NPT ends, from Hydac, Parker, Gemels, Pister, SVF and Argus.",
+   "seoTitle": "High-Pressure Hydraulic Ball Valves",
+   "seoDescription": "High-pressure hydraulic ball valves, 3/4 in to 2 in, 3,000–10,000 psi: Hydac, Parker, Gemels, Pister, SVF, Argus, Nutron. SAE flange, BSP, NPT. Request a quote.",
+   "focusKeyword": "hydraulic ball valves"
+  },
+  {
+   "slug": "industrial-ball-valves",
+   "name": "Industrial Ball Valves",
+   "parentSlug": "valves-manifolds",
+   "position": 3,
+   "shortDescription": "Stainless steel, carbon steel and brass ball valves for process, utility and plant service, 1/4 in to 4 in — Worcester, Swagelok, Habonim, Warren, A-T Controls and more.",
+   "seoTitle": "Industrial Ball Valves — Stainless & Brass",
+   "seoDescription": "Industrial ball valves 1/4 in to 4 in: stainless CF8M, carbon steel and brass. Flowserve Worcester, Swagelok, Habonim, Warren, A-T Controls. Request a quote.",
+   "focusKeyword": "industrial ball valves"
+  }
+ ],
+ "brands": [],
+ "products": [
+  {
+   "sku": "IH-HBV-34",
+   "slug": "high-pressure-hydraulic-ball-valve-3-4-inch",
+   "title": "High-Pressure Hydraulic Ball Valve, 3/4″ (DN20)",
+   "brand": null,
+   "countryOfOrigin": null,
+   "leadTimeDays": null,
+   "focusKeyword": "3/4 inch hydraulic ball valve",
+   "descriptionShort": "3/4″ (DN20) high-pressure hydraulic ball valve, rated 5,800 to 10,000 psi. Makes include Gemels and Parker.",
+   "descriptionLong": "<p>A 3/4″ (DN20) high-pressure ball valve for hydraulic circuits — pump, accumulator and return-line isolation where a process ball valve's rating runs out. The valves in this size are rated 5,800 to 10,000 psi, from Gemels and Parker. We supply them new, with the ends and seat to suit your system.</p><h3>Makes and models in this size</h3><table><thead><tr><th scope=\"col\">Make</th><th scope=\"col\">Model / part no.</th><th scope=\"col\">Body</th><th scope=\"col\">Seat</th><th scope=\"col\">Ends</th><th scope=\"col\">Rating (as marked)</th></tr></thead><tbody><tr><td>Gemels</td><td><code>GM</code></td><td>316L stainless</td><td>POM</td><td>BSP (G 3/4)</td><td>PN400 (5,800 psi)</td></tr><tr><td>Parker</td><td>—</td><td>Steel</td><td>—</td><td>—</td><td>10,000 psi</td></tr></tbody></table><p>Each row is what is marked on, or listed for, a valve we have photographed in this size; a dash means it is not stated or not legible. Your valve is supplied to the specification on your RFQ.</p><h3>Reading the rating</h3><ul><li><strong>PN</strong> is the pressure rating in bar at 20 °C: PN350 is 5,075 psi, PN400 is 5,800 psi.</li><li><strong>WOG</strong> is the cold working pressure for water, oil and gas; <strong>MAWP</strong> is the maximum allowable working pressure.</li><li><strong>SAE flange ends</strong> are rated by code: Code 61 flanges for 3,000 psi service and Code 62 for 6,000 psi.</li><li><strong>POM seats</strong> (acetal) are the usual choice in hydraulic oil; say if your fluid or temperature needs another.</li></ul><h3>Ordering</h3><p>Give the size, pressure rating, end connection, body and seat material on your RFQ, with a make and part number if you have one. We confirm lead time and documentation on the quotation.</p>",
+   "seoTitle": "3/4″ High-Pressure Hydraulic Ball Valve",
+   "seoDescription": "3/4 in high-pressure hydraulic ball valve, 5,800 to 10,000 psi. Gemels and Parker. Request a quote.",
+   "faqs": [
+    {
+     "question": "What pressure ratings are available in a 3/4″ hydraulic ball valve?",
+     "answer": "The valves we have in this size are rated 5,800 to 10,000 psi cold working pressure; the table gives each one as marked. Tell us your working pressure and fluid and we match the valve to it."
+    },
+    {
+     "question": "What do PN, WOG and CWP mean?",
+     "answer": "PN is the pressure rating in bar at 20 °C. WOG (water, oil, gas) and CWP (cold working pressure) are the rating in psi at ambient temperature. All three fall as temperature rises, so check the maker's pressure–temperature chart for hot service."
+    },
+    {
+     "question": "Which end connections can you supply?",
+     "answer": "SAE four-bolt flange (Code 61 or 62), BSP / BSPP and NPT threads, and socket-weld or butt-weld ends, depending on the make. State the end connection on the RFQ."
+    },
+    {
+     "question": "Can you supply a specific make or part number?",
+     "answer": "Yes. In this size we supply Gemels and Parker, including GM. Give the make and part number on the RFQ and we quote against it."
+    },
+    {
+     "question": "Are these valves supplied new?",
+     "answer": "Yes. We supply new valves to the specification on your RFQ and confirm lead time and documentation on the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Valve Type",
+     "value": "Ball valve — high-pressure hydraulic",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "valve_type"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size",
+     "value": "3/4 in (DN20)",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "nominal_size"
+    },
+    {
+     "group": "Performance",
+     "label": "Pressure Class",
+     "value": "PN400 (5,800 psi); 10,000 psi",
+     "unit": null,
+     "position": 2,
+     "isFilterable": false,
+     "templateKey": "pressure_class"
+    },
+    {
+     "group": "Dimensions",
+     "label": "End Connection (Inlet)",
+     "value": "BSP (G 3/4)",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "end_connection_inlet"
+    },
+    {
+     "group": "Construction",
+     "label": "Body Material",
+     "value": "316L stainless, Steel",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "body_material"
+    },
+    {
+     "group": "Construction",
+     "label": "Seal / Elastomer Material",
+     "value": "POM",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "seal_material"
+    },
+    {
+     "group": "Identification",
+     "label": "Makes",
+     "value": "Gemels, Parker",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Identification",
+     "label": "Models / part numbers seen",
+     "value": "GM",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": null
+    }
+   ],
+   "searchAliases": [
+    "GM",
+    "Gemels",
+    "Parker",
+    "3/4 ball valve",
+    "DN20 ball valve",
+    "hydraulic ball valve",
+    "high pressure ball valve"
+   ],
+   "images": [
+    {
+     "file": "gemels-3-4-valve-ball-316l-pn400-558-1.jpg",
+     "alt": "Gemels 3/4″ hydraulic ball valve"
+    },
+    {
+     "file": "parker-hydraulic-3-4-valve-ball-10000-psi-607-1.jpg",
+     "alt": "Parker 3/4″ hydraulic ball valve"
+    },
+    {
+     "file": "gemels-3-4-valve-ball-316l-pn400-558-2.jpg",
+     "alt": "Gemels 3/4″ hydraulic ball valve"
+    },
+    {
+     "file": "gemels-3-4-valve-ball-316l-pn400-558-3.jpg",
+     "alt": "Gemels 3/4″ hydraulic ball valve, markings"
+    }
+   ],
+   "seriesPage": null,
+   "category": "hydraulic-ball-valves",
+   "source": {
+    "ofsListings": [
+     "558",
+     "607"
+    ],
+    "corrections": []
+   }
+  },
+  {
+   "sku": "IH-HBV-1",
+   "slug": "high-pressure-hydraulic-ball-valve-1-inch",
+   "title": "High-Pressure Hydraulic Ball Valve, 1″ (DN25)",
+   "brand": null,
+   "countryOfOrigin": null,
+   "leadTimeDays": null,
+   "focusKeyword": "1 inch hydraulic ball valve",
+   "descriptionShort": "1″ (DN25) high-pressure hydraulic ball valve, rated 3,000 to 10,000 psi. Makes include Gemels, Hydac, Nutron, SVF and Parker.",
+   "descriptionLong": "<p>A 1″ (DN25) high-pressure ball valve for hydraulic circuits — pump, accumulator and return-line isolation where a process ball valve's rating runs out. The valves in this size are rated 3,000 to 10,000 psi, from Gemels, Hydac, Nutron, SVF and Parker. We supply them new, with the ends and seat to suit your system.</p><h3>Makes and models in this size</h3><table><thead><tr><th scope=\"col\">Make</th><th scope=\"col\">Model / part no.</th><th scope=\"col\">Body</th><th scope=\"col\">Seat</th><th scope=\"col\">Ends</th><th scope=\"col\">Rating (as marked)</th></tr></thead><tbody><tr><td>Gemels</td><td><code>GM</code></td><td>316L stainless</td><td>POM</td><td>BSP (G 1)</td><td>PN350 (5,075 psi)</td></tr><tr><td>Hydac</td><td><code>KHM3H-SP-1SW-3312</code></td><td>—</td><td>—</td><td>—</td><td>MAWP 6,000 psi</td></tr><tr><td>Nutron</td><td><code>T3-R10S30AZ</code></td><td>Stainless steel</td><td>—</td><td>—</td><td>3,000 WOG</td></tr><tr><td>Nutron</td><td><code>T3-R10S60AZ</code></td><td>Stainless steel</td><td>—</td><td>—</td><td>6,000 WOG</td></tr><tr><td>SVF</td><td><code>H7666MDBSW</code></td><td>CF3M (316L) stainless</td><td>—</td><td>—</td><td>6,000 psi</td></tr><tr><td>Parker</td><td>—</td><td>Steel</td><td>—</td><td>—</td><td>10,000 psi</td></tr></tbody></table><p>Each row is what is marked on, or listed for, a valve we have photographed in this size; a dash means it is not stated or not legible. Your valve is supplied to the specification on your RFQ.</p><h3>Reading the rating</h3><ul><li><strong>PN</strong> is the pressure rating in bar at 20 °C: PN350 is 5,075 psi, PN400 is 5,800 psi.</li><li><strong>WOG</strong> is the cold working pressure for water, oil and gas; <strong>MAWP</strong> is the maximum allowable working pressure.</li><li><strong>SAE flange ends</strong> are rated by code: Code 61 flanges for 3,000 psi service and Code 62 for 6,000 psi.</li><li><strong>POM seats</strong> (acetal) are the usual choice in hydraulic oil; say if your fluid or temperature needs another.</li></ul><h3>Ordering</h3><p>Give the size, pressure rating, end connection, body and seat material on your RFQ, with a make and part number if you have one. We confirm lead time and documentation on the quotation.</p>",
+   "seoTitle": "1″ High-Pressure Hydraulic Ball Valve",
+   "seoDescription": "1 in high-pressure hydraulic ball valve, 3,000 to 10,000 psi. Gemels, Hydac, Nutron and SVF. Request a quote.",
+   "faqs": [
+    {
+     "question": "What pressure ratings are available in a 1″ hydraulic ball valve?",
+     "answer": "The valves we have in this size are rated 3,000 to 10,000 psi cold working pressure; the table gives each one as marked. Tell us your working pressure and fluid and we match the valve to it."
+    },
+    {
+     "question": "What do PN, WOG and CWP mean?",
+     "answer": "PN is the pressure rating in bar at 20 °C. WOG (water, oil, gas) and CWP (cold working pressure) are the rating in psi at ambient temperature. All three fall as temperature rises, so check the maker's pressure–temperature chart for hot service."
+    },
+    {
+     "question": "Which end connections can you supply?",
+     "answer": "SAE four-bolt flange (Code 61 or 62), BSP / BSPP and NPT threads, and socket-weld or butt-weld ends, depending on the make. State the end connection on the RFQ."
+    },
+    {
+     "question": "Can you supply a specific make or part number?",
+     "answer": "Yes. In this size we supply Gemels, Hydac, Nutron, SVF and Parker, including GM, KHM3H-SP-1SW-3312, T3-R10S30AZ and T3-R10S60AZ. Give the make and part number on the RFQ and we quote against it."
+    },
+    {
+     "question": "Are these valves supplied new?",
+     "answer": "Yes. We supply new valves to the specification on your RFQ and confirm lead time and documentation on the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Valve Type",
+     "value": "Ball valve — high-pressure hydraulic",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "valve_type"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size",
+     "value": "1 in (DN25)",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "nominal_size"
+    },
+    {
+     "group": "Performance",
+     "label": "Pressure Class",
+     "value": "PN350 (5,075 psi); MAWP 6,000 psi; 3,000 WOG; 6,000 WOG; 6,000 psi; 10,000 psi",
+     "unit": null,
+     "position": 2,
+     "isFilterable": false,
+     "templateKey": "pressure_class"
+    },
+    {
+     "group": "Dimensions",
+     "label": "End Connection (Inlet)",
+     "value": "BSP (G 1)",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "end_connection_inlet"
+    },
+    {
+     "group": "Construction",
+     "label": "Body Material",
+     "value": "316L stainless, Stainless steel, CF3M (316L) stainless, Steel",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "body_material"
+    },
+    {
+     "group": "Construction",
+     "label": "Seal / Elastomer Material",
+     "value": "POM",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "seal_material"
+    },
+    {
+     "group": "Identification",
+     "label": "Makes",
+     "value": "Gemels, Hydac, Nutron, SVF, Parker",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Identification",
+     "label": "Models / part numbers seen",
+     "value": "GM, KHM3H-SP-1SW-3312, T3-R10S30AZ, T3-R10S60AZ, H7666MDBSW, 02085311",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": null
+    }
+   ],
+   "searchAliases": [
+    "GM",
+    "KHM3H-SP-1SW-3312",
+    "T3-R10S30AZ",
+    "T3-R10S60AZ",
+    "H7666MDBSW",
+    "02085311",
+    "Gemels",
+    "Hydac",
+    "Nutron",
+    "SVF",
+    "Parker",
+    "1 ball valve",
+    "DN25 ball valve",
+    "hydraulic ball valve",
+    "high pressure ball valve"
+   ],
+   "images": [
+    {
+     "file": "gemels-1-valve-ball-316l-pn350-557-1.jpg",
+     "alt": "Gemels 1″ hydraulic ball valve"
+    },
+    {
+     "file": "hydac-1-valve-ball-6000-psi-khm3h-sp-1sw-3312-543-1.jpg",
+     "alt": "Hydac 1″ hydraulic ball valve"
+    },
+    {
+     "file": "nutron-1-valve-ball-3000-w0g-t3-r10s30az-555-1.jpg",
+     "alt": "Nutron 1″ hydraulic ball valve"
+    },
+    {
+     "file": "gemels-1-valve-ball-316l-pn350-557-3.jpg",
+     "alt": "Gemels 1″ hydraulic ball valve, markings"
+    }
+   ],
+   "seriesPage": null,
+   "category": "hydraulic-ball-valves",
+   "source": {
+    "ofsListings": [
+     "557",
+     "543",
+     "555",
+     "556",
+     "544",
+     "606"
+    ],
+    "corrections": []
+   }
+  },
+  {
+   "sku": "IH-HBV-114",
+   "slug": "high-pressure-hydraulic-ball-valve-1-1-4-inch",
+   "title": "High-Pressure Hydraulic Ball Valve, 1-1/4″ (DN32)",
+   "brand": null,
+   "countryOfOrigin": null,
+   "leadTimeDays": null,
+   "focusKeyword": "1-1/4 inch hydraulic ball valve",
+   "descriptionShort": "1-1/4″ (DN32) high-pressure hydraulic ball valve, rated 6,000 psi. Makes include Colson.",
+   "descriptionLong": "<p>A 1-1/4″ (DN32) high-pressure ball valve for hydraulic circuits — pump, accumulator and return-line isolation where a process ball valve's rating runs out. The valves in this size are rated 6,000 psi, from Colson. We supply them new, with the ends and seat to suit your system.</p><h3>Makes and models in this size</h3><table><thead><tr><th scope=\"col\">Make</th><th scope=\"col\">Model / part no.</th><th scope=\"col\">Body</th><th scope=\"col\">Seat</th><th scope=\"col\">Ends</th><th scope=\"col\">Rating (as marked)</th></tr></thead><tbody><tr><td>Colson</td><td><code>BWRP2532PFS</code></td><td>316 stainless</td><td>—</td><td>BSPP</td><td>6,000 psi</td></tr></tbody></table><p>Each row is what is marked on, or listed for, a valve we have photographed in this size; a dash means it is not stated or not legible. Your valve is supplied to the specification on your RFQ.</p><h3>Reading the rating</h3><ul><li><strong>PN</strong> is the pressure rating in bar at 20 °C: PN350 is 5,075 psi, PN400 is 5,800 psi.</li><li><strong>WOG</strong> is the cold working pressure for water, oil and gas; <strong>MAWP</strong> is the maximum allowable working pressure.</li><li><strong>SAE flange ends</strong> are rated by code: Code 61 flanges for 3,000 psi service and Code 62 for 6,000 psi.</li><li><strong>POM seats</strong> (acetal) are the usual choice in hydraulic oil; say if your fluid or temperature needs another.</li></ul><h3>Ordering</h3><p>Give the size, pressure rating, end connection, body and seat material on your RFQ, with a make and part number if you have one. We confirm lead time and documentation on the quotation.</p>",
+   "seoTitle": "1-1/4″ High-Pressure Hydraulic Ball Valve",
+   "seoDescription": "1-1/4 in high-pressure hydraulic ball valve, 6,000 psi. Colson. Request a quote.",
+   "faqs": [
+    {
+     "question": "What pressure ratings are available in a 1-1/4″ hydraulic ball valve?",
+     "answer": "The valves we have in this size are rated 6,000 psi cold working pressure; the table gives each one as marked. Tell us your working pressure and fluid and we match the valve to it."
+    },
+    {
+     "question": "What do PN, WOG and CWP mean?",
+     "answer": "PN is the pressure rating in bar at 20 °C. WOG (water, oil, gas) and CWP (cold working pressure) are the rating in psi at ambient temperature. All three fall as temperature rises, so check the maker's pressure–temperature chart for hot service."
+    },
+    {
+     "question": "Which end connections can you supply?",
+     "answer": "SAE four-bolt flange (Code 61 or 62), BSP / BSPP and NPT threads, and socket-weld or butt-weld ends, depending on the make. State the end connection on the RFQ."
+    },
+    {
+     "question": "Can you supply a specific make or part number?",
+     "answer": "Yes. In this size we supply Colson, including BWRP2532PFS. Give the make and part number on the RFQ and we quote against it."
+    },
+    {
+     "question": "Are these valves supplied new?",
+     "answer": "Yes. We supply new valves to the specification on your RFQ and confirm lead time and documentation on the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Valve Type",
+     "value": "Ball valve — high-pressure hydraulic",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "valve_type"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size",
+     "value": "1-1/4 in (DN32)",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "nominal_size"
+    },
+    {
+     "group": "Performance",
+     "label": "Pressure Class",
+     "value": "6,000 psi",
+     "unit": null,
+     "position": 2,
+     "isFilterable": false,
+     "templateKey": "pressure_class"
+    },
+    {
+     "group": "Dimensions",
+     "label": "End Connection (Inlet)",
+     "value": "BSPP",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "end_connection_inlet"
+    },
+    {
+     "group": "Construction",
+     "label": "Body Material",
+     "value": "316 stainless",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "body_material"
+    },
+    {
+     "group": "Identification",
+     "label": "Makes",
+     "value": "Colson",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Identification",
+     "label": "Models / part numbers seen",
+     "value": "BWRP2532PFS",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": null
+    }
+   ],
+   "searchAliases": [
+    "BWRP2532PFS",
+    "Colson",
+    "1-1/4 ball valve",
+    "DN32 ball valve",
+    "hydraulic ball valve",
+    "high pressure ball valve"
+   ],
+   "images": [
+    {
+     "file": "colson-1-1-4-valve-ball-6000-psi-316ss-bwrp2532pfs-542-1.jpg",
+     "alt": "Colson 1-1/4″ hydraulic ball valve"
+    },
+    {
+     "file": "colson-1-1-4-valve-ball-6000-psi-316ss-bwrp2532pfs-542-2.jpg",
+     "alt": "Colson 1-1/4″ hydraulic ball valve"
+    },
+    {
+     "file": "colson-1-1-4-valve-ball-6000-psi-316ss-bwrp2532pfs-542-3.jpg",
+     "alt": "Colson 1-1/4″ hydraulic ball valve, markings"
+    }
+   ],
+   "seriesPage": null,
+   "category": "hydraulic-ball-valves",
+   "source": {
+    "ofsListings": [
+     "542"
+    ],
+    "corrections": []
+   }
+  },
+  {
+   "sku": "IH-HBV-112",
+   "slug": "high-pressure-hydraulic-ball-valve-1-1-2-inch",
+   "title": "High-Pressure Hydraulic Ball Valve, 1-1/2″ (DN40)",
+   "brand": null,
+   "countryOfOrigin": null,
+   "leadTimeDays": null,
+   "focusKeyword": "1-1/2 inch hydraulic ball valve",
+   "descriptionShort": "1-1/2″ (DN40) high-pressure hydraulic ball valve, rated 4,570 to 6,000 psi. Makes include Argus, Parker, Gemels, Pister and SVF.",
+   "descriptionLong": "<p>A 1-1/2″ (DN40) high-pressure ball valve for hydraulic circuits — pump, accumulator and return-line isolation where a process ball valve's rating runs out. The valves in this size are rated 4,570 to 6,000 psi, from Argus, Parker, Gemels, Pister, SVF, Anchor Fluid Power and Hydac. We supply them new, with the ends and seat to suit your system.</p><h3>Makes and models in this size</h3><table><thead><tr><th scope=\"col\">Make</th><th scope=\"col\">Model / part no.</th><th scope=\"col\">Body</th><th scope=\"col\">Seat</th><th scope=\"col\">Ends</th><th scope=\"col\">Rating (as marked)</th></tr></thead><tbody><tr><td>Argus</td><td><code>MK8</code></td><td>Carbon steel</td><td>POM</td><td>—</td><td>PN315 (4,570 psi)</td></tr><tr><td>Parker</td><td>—</td><td>Steel</td><td>POM</td><td>BSP (G 1-1/2)</td><td>PN400 (5,800 psi)</td></tr><tr><td>Gemels</td><td><code>GB2</code></td><td>—</td><td>—</td><td>BSP (G 1-1/2)</td><td>PN350 (5,075 psi)</td></tr><tr><td>Pister</td><td><code>FRKH DN40</code></td><td>—</td><td>—</td><td>SAE flange (6,000 psi)</td><td>6,000 psi</td></tr><tr><td>SVF</td><td><code>H7666MDBSE</code></td><td>316L stainless (A479)</td><td>—</td><td>—</td><td>6,000 psi</td></tr><tr><td>Anchor Fluid Power</td><td><code>AB2N</code></td><td>—</td><td>—</td><td>—</td><td>5,075 psi</td></tr><tr><td>Hydac</td><td>—</td><td>—</td><td>—</td><td>SAE flange</td><td>5,000 psi</td></tr></tbody></table><p>Each row is what is marked on, or listed for, a valve we have photographed in this size; a dash means it is not stated or not legible. Your valve is supplied to the specification on your RFQ.</p><h3>Reading the rating</h3><ul><li><strong>PN</strong> is the pressure rating in bar at 20 °C: PN350 is 5,075 psi, PN400 is 5,800 psi.</li><li><strong>WOG</strong> is the cold working pressure for water, oil and gas; <strong>MAWP</strong> is the maximum allowable working pressure.</li><li><strong>SAE flange ends</strong> are rated by code: Code 61 flanges for 3,000 psi service and Code 62 for 6,000 psi.</li><li><strong>POM seats</strong> (acetal) are the usual choice in hydraulic oil; say if your fluid or temperature needs another.</li></ul><h3>Ordering</h3><p>Give the size, pressure rating, end connection, body and seat material on your RFQ, with a make and part number if you have one. We confirm lead time and documentation on the quotation.</p>",
+   "seoTitle": "1-1/2″ High-Pressure Hydraulic Ball Valve",
+   "seoDescription": "1-1/2 in high-pressure hydraulic ball valve, 4,570 to 6,000 psi. Argus, Parker, Gemels and Pister. Request a quote.",
+   "faqs": [
+    {
+     "question": "What pressure ratings are available in a 1-1/2″ hydraulic ball valve?",
+     "answer": "The valves we have in this size are rated 4,570 to 6,000 psi cold working pressure; the table gives each one as marked. Tell us your working pressure and fluid and we match the valve to it."
+    },
+    {
+     "question": "What do PN, WOG and CWP mean?",
+     "answer": "PN is the pressure rating in bar at 20 °C. WOG (water, oil, gas) and CWP (cold working pressure) are the rating in psi at ambient temperature. All three fall as temperature rises, so check the maker's pressure–temperature chart for hot service."
+    },
+    {
+     "question": "Which end connections can you supply?",
+     "answer": "SAE four-bolt flange (Code 61 or 62), BSP / BSPP and NPT threads, and socket-weld or butt-weld ends, depending on the make. State the end connection on the RFQ."
+    },
+    {
+     "question": "Can you supply a specific make or part number?",
+     "answer": "Yes. In this size we supply Argus, Parker, Gemels, Pister, SVF, Anchor Fluid Power and Hydac, including MK8, GB2, FRKH DN40 and H7666MDBSE. Give the make and part number on the RFQ and we quote against it."
+    },
+    {
+     "question": "Are these valves supplied new?",
+     "answer": "Yes. We supply new valves to the specification on your RFQ and confirm lead time and documentation on the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Valve Type",
+     "value": "Ball valve — high-pressure hydraulic",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "valve_type"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size",
+     "value": "1-1/2 in (DN40)",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "nominal_size"
+    },
+    {
+     "group": "Performance",
+     "label": "Pressure Class",
+     "value": "PN315 (4,570 psi); PN400 (5,800 psi); PN350 (5,075 psi); 6,000 psi; 5,075 psi; 5,000 psi",
+     "unit": null,
+     "position": 2,
+     "isFilterable": false,
+     "templateKey": "pressure_class"
+    },
+    {
+     "group": "Dimensions",
+     "label": "End Connection (Inlet)",
+     "value": "BSP (G 1-1/2), SAE flange (6,000 psi) and SAE flange",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "end_connection_inlet"
+    },
+    {
+     "group": "Construction",
+     "label": "Body Material",
+     "value": "Carbon steel, Steel, 316L stainless (A479)",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "body_material"
+    },
+    {
+     "group": "Construction",
+     "label": "Seal / Elastomer Material",
+     "value": "POM",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "seal_material"
+    },
+    {
+     "group": "Identification",
+     "label": "Makes",
+     "value": "Argus, Parker, Gemels, Pister, SVF, Anchor Fluid Power, Hydac",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Identification",
+     "label": "Models / part numbers seen",
+     "value": "MK8, GB2, FRKH DN40, H7666MDBSE, AB2N, 5200040866-002500",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": null
+    }
+   ],
+   "searchAliases": [
+    "MK8",
+    "GB2",
+    "FRKH DN40",
+    "H7666MDBSE",
+    "AB2N",
+    "5200040866-002500",
+    "Argus",
+    "Parker",
+    "Gemels",
+    "Pister",
+    "SVF",
+    "Anchor Fluid Power",
+    "Hydac",
+    "1-1/2 ball valve",
+    "DN40 ball valve",
+    "hydraulic ball valve",
+    "high pressure ball valve"
+   ],
+   "images": [
+    {
+     "file": "argus-315-type-mk-8-ball-valve-with-handle-1-1-2-605-1.jpg",
+     "alt": "Argus 1-1/2″ hydraulic ball valve"
+    },
+    {
+     "file": "parker-hydraulic-1-1-2-valve-ball-pn-400-608-1.jpg",
+     "alt": "Parker 1-1/2″ hydraulic ball valve"
+    },
+    {
+     "file": "gemels-1-1-2-valve-ball-gb-2-dn40-pn350-552-1.jpg",
+     "alt": "Gemels 1-1/2″ hydraulic ball valve"
+    },
+    {
+     "file": "argus-315-type-mk-8-ball-valve-with-handle-1-1-2-605-3.jpg",
+     "alt": "Argus 1-1/2″ hydraulic ball valve, markings"
+    }
+   ],
+   "seriesPage": null,
+   "category": "hydraulic-ball-valves",
+   "source": {
+    "ofsListings": [
+     "605",
+     "608",
+     "552",
+     "602",
+     "554",
+     "553",
+     "601"
+    ],
+    "corrections": [
+     "Anchor Fluid Power: OFS lists \"507 PSI\"; the valve is marked 5,075 psi."
+    ]
+   }
+  },
+  {
+   "sku": "IH-HBV-2",
+   "slug": "high-pressure-hydraulic-ball-valve-2-inch",
+   "title": "High-Pressure Hydraulic Ball Valve, 2″ (DN50)",
+   "brand": null,
+   "countryOfOrigin": null,
+   "leadTimeDays": null,
+   "focusKeyword": "2 inch hydraulic ball valve",
+   "descriptionShort": "2″ (DN50) high-pressure hydraulic ball valve, rated 3,000 psi. Makes include Pister.",
+   "descriptionLong": "<p>A 2″ (DN50) high-pressure ball valve for hydraulic circuits — pump, accumulator and return-line isolation where a process ball valve's rating runs out. The valves in this size are rated 3,000 psi, from Pister. We supply them new, with the ends and seat to suit your system.</p><h3>Makes and models in this size</h3><table><thead><tr><th scope=\"col\">Make</th><th scope=\"col\">Model / part no.</th><th scope=\"col\">Body</th><th scope=\"col\">Seat</th><th scope=\"col\">Ends</th><th scope=\"col\">Rating (as marked)</th></tr></thead><tbody><tr><td>Pister</td><td><code>SKH DN50</code></td><td>Steel (ST52-3)</td><td>—</td><td>SAE split flange (3,000 psi)</td><td>3,000 psi</td></tr></tbody></table><p>Each row is what is marked on, or listed for, a valve we have photographed in this size; a dash means it is not stated or not legible. Your valve is supplied to the specification on your RFQ.</p><h3>Reading the rating</h3><ul><li><strong>PN</strong> is the pressure rating in bar at 20 °C: PN350 is 5,075 psi, PN400 is 5,800 psi.</li><li><strong>WOG</strong> is the cold working pressure for water, oil and gas; <strong>MAWP</strong> is the maximum allowable working pressure.</li><li><strong>SAE flange ends</strong> are rated by code: Code 61 flanges for 3,000 psi service and Code 62 for 6,000 psi.</li><li><strong>POM seats</strong> (acetal) are the usual choice in hydraulic oil; say if your fluid or temperature needs another.</li></ul><h3>Ordering</h3><p>Give the size, pressure rating, end connection, body and seat material on your RFQ, with a make and part number if you have one. We confirm lead time and documentation on the quotation.</p>",
+   "seoTitle": "2″ High-Pressure Hydraulic Ball Valve",
+   "seoDescription": "2 in high-pressure hydraulic ball valve, 3,000 psi. Pister. Request a quote.",
+   "faqs": [
+    {
+     "question": "What pressure ratings are available in a 2″ hydraulic ball valve?",
+     "answer": "The valves we have in this size are rated 3,000 psi cold working pressure; the table gives each one as marked. Tell us your working pressure and fluid and we match the valve to it."
+    },
+    {
+     "question": "What do PN, WOG and CWP mean?",
+     "answer": "PN is the pressure rating in bar at 20 °C. WOG (water, oil, gas) and CWP (cold working pressure) are the rating in psi at ambient temperature. All three fall as temperature rises, so check the maker's pressure–temperature chart for hot service."
+    },
+    {
+     "question": "Which end connections can you supply?",
+     "answer": "SAE four-bolt flange (Code 61 or 62), BSP / BSPP and NPT threads, and socket-weld or butt-weld ends, depending on the make. State the end connection on the RFQ."
+    },
+    {
+     "question": "Can you supply a specific make or part number?",
+     "answer": "Yes. In this size we supply Pister, including SKH DN50. Give the make and part number on the RFQ and we quote against it."
+    },
+    {
+     "question": "Are these valves supplied new?",
+     "answer": "Yes. We supply new valves to the specification on your RFQ and confirm lead time and documentation on the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Valve Type",
+     "value": "Ball valve — high-pressure hydraulic",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "valve_type"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size",
+     "value": "2 in (DN50)",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "nominal_size"
+    },
+    {
+     "group": "Performance",
+     "label": "Pressure Class",
+     "value": "3,000 psi",
+     "unit": null,
+     "position": 2,
+     "isFilterable": false,
+     "templateKey": "pressure_class"
+    },
+    {
+     "group": "Dimensions",
+     "label": "End Connection (Inlet)",
+     "value": "SAE split flange (3,000 psi)",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "end_connection_inlet"
+    },
+    {
+     "group": "Construction",
+     "label": "Body Material",
+     "value": "Steel (ST52-3)",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "body_material"
+    },
+    {
+     "group": "Identification",
+     "label": "Makes",
+     "value": "Pister",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Identification",
+     "label": "Models / part numbers seen",
+     "value": "SKH DN50, 3123",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": null
+    }
+   ],
+   "searchAliases": [
+    "SKH DN50",
+    "3123",
+    "Pister",
+    "2 ball valve",
+    "DN50 ball valve",
+    "hydraulic ball valve",
+    "high pressure ball valve"
+   ],
+   "images": [
+    {
+     "file": "valve-ball-2-skh-dn50-sae-3000-psi-343-1.jpg",
+     "alt": "Pister 2″ hydraulic ball valve"
+    },
+    {
+     "file": "valve-ball-2-skh-dn50-sae-3000-psi-343-2.jpg",
+     "alt": "Pister 2″ hydraulic ball valve"
+    },
+    {
+     "file": "valve-ball-2-skh-dn50-sae-3000-psi-343-3.jpg",
+     "alt": "Pister 2″ hydraulic ball valve, markings"
+    }
+   ],
+   "seriesPage": null,
+   "category": "hydraulic-ball-valves",
+   "source": {
+    "ofsListings": [
+     "343"
+    ],
+    "corrections": [
+     "Pister: Supplied to OFS by GS Hydro; the label names Pister as the maker."
+    ]
+   }
+  },
+  {
+   "sku": "IH-IBV-14",
+   "slug": "industrial-ball-valve-1-4-inch",
+   "title": "Industrial Ball Valve, 1/4″ (DN8)",
+   "brand": null,
+   "countryOfOrigin": null,
+   "leadTimeDays": null,
+   "focusKeyword": "1/4 inch ball valve",
+   "descriptionShort": "1/4″ (DN8) industrial ball valve. Makes include Merit and Warren.",
+   "descriptionLong": "<p>A 1/4″ (DN8) ball valve for process, utility and plant service, in stainless bodies. Makes in this size include Merit and Warren, rated to order. We supply them new, with the ends, seat and body material to suit your line.</p><h3>Makes and models in this size</h3><table><thead><tr><th scope=\"col\">Make</th><th scope=\"col\">Model / part no.</th><th scope=\"col\">Body</th><th scope=\"col\">Seat</th><th scope=\"col\">Ends</th><th scope=\"col\">Rating (as marked)</th></tr></thead><tbody><tr><td>Merit</td><td><code>V310FP-04</code></td><td>316 stainless</td><td>—</td><td>—</td><td>—</td></tr><tr><td>Warren</td><td><code>1505W06</code></td><td>CF8M stainless</td><td>—</td><td>—</td><td>—</td></tr></tbody></table><p>Each row is what is marked on, or listed for, a valve we have photographed in this size; a dash means it is not stated or not legible. Your valve is supplied to the specification on your RFQ.</p><h3>Reading the rating</h3><ul><li><strong>WOG</strong> and <strong>CWP</strong> are the cold working pressure — for water, oil and gas — before any derating for temperature.</li><li><strong>PN</strong> is the rating in bar; <strong>Class</strong> ratings (800, 1500, 2500) follow ASME pressure classes.</li><li><strong>CF8M</strong> is cast 316 stainless steel, <strong>CF3M</strong> the low-carbon 316L grade; <strong>WCB</strong> is cast carbon steel.</li><li>PEEK and PVDF seats take higher temperatures than PTFE or RTFE; check the seat against your service temperature.</li></ul><h3>Ordering</h3><p>Give the size, pressure rating, end connection, body and seat material on your RFQ, with a make and part number if you have one. We confirm lead time and documentation on the quotation.</p>",
+   "seoTitle": "1/4″ Industrial Ball Valve — Stainless Steel",
+   "seoDescription": "1/4 in industrial ball valve. Merit and Warren. Request a quote.",
+   "faqs": [
+    {
+     "question": "What pressure ratings are available in a 1/4″ ball valve?",
+     "answer": "Ratings vary by make and body material; tell us your working pressure and fluid and we match the valve to it."
+    },
+    {
+     "question": "What do PN, WOG and CWP mean?",
+     "answer": "PN is the pressure rating in bar at 20 °C. WOG (water, oil, gas) and CWP (cold working pressure) are the rating in psi at ambient temperature. All three fall as temperature rises, so check the maker's pressure–temperature chart for hot service."
+    },
+    {
+     "question": "Which end connections can you supply?",
+     "answer": "Female NPT and BSP threads, socket-weld, butt-weld, flanged and grooved ends, depending on the make. State the end connection on the RFQ."
+    },
+    {
+     "question": "Can you supply a specific make or part number?",
+     "answer": "Yes. In this size we supply Merit and Warren, including V310FP-04 and 1505W06. Give the make and part number on the RFQ and we quote against it."
+    },
+    {
+     "question": "Are these valves supplied new?",
+     "answer": "Yes. We supply new valves to the specification on your RFQ and confirm lead time and documentation on the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Valve Type",
+     "value": "Ball valve — industrial / process",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "valve_type"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size",
+     "value": "1/4 in (DN8)",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "nominal_size"
+    },
+    {
+     "group": "Construction",
+     "label": "Body Material",
+     "value": "316 stainless, CF8M stainless",
+     "unit": null,
+     "position": 2,
+     "isFilterable": false,
+     "templateKey": "body_material"
+    },
+    {
+     "group": "Identification",
+     "label": "Makes",
+     "value": "Merit, Warren",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Identification",
+     "label": "Models / part numbers seen",
+     "value": "V310FP-04, 1505W06",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": null
+    }
+   ],
+   "searchAliases": [
+    "V310FP-04",
+    "1505W06",
+    "Merit",
+    "Warren",
+    "1/4 ball valve",
+    "DN8 ball valve",
+    "ball valve"
+   ],
+   "images": [
+    {
+     "file": "merit-1-4-316-valve-ball-v310fp-04-501-1.jpg",
+     "alt": "Merit 1/4″ ball valve"
+    },
+    {
+     "file": "warren-1-4-valve-ball-cfsm-1505w06-502-1.jpg",
+     "alt": "Warren 1/4″ ball valve"
+    },
+    {
+     "file": "merit-1-4-316-valve-ball-v310fp-04-501-2.jpg",
+     "alt": "Merit 1/4″ ball valve"
+    }
+   ],
+   "seriesPage": null,
+   "category": "industrial-ball-valves",
+   "source": {
+    "ofsListings": [
+     "501",
+     "502"
+    ],
+    "corrections": []
+   }
+  },
+  {
+   "sku": "IH-IBV-12",
+   "slug": "industrial-ball-valve-1-2-inch",
+   "title": "Industrial Ball Valve, 1/2″ (DN15)",
+   "brand": null,
+   "countryOfOrigin": null,
+   "leadTimeDays": null,
+   "focusKeyword": "1/2 inch ball valve",
+   "descriptionShort": "1/2″ (DN15) industrial ball valve, rated 2,200 to 3,000 psi. Makes include Worcester and Swagelok.",
+   "descriptionLong": "<p>A 1/2″ (DN15) ball valve for process, utility and plant service, in stainless bodies. Makes in this size include Worcester and Swagelok, rated up to 3,000 psi. We supply them new, with the ends, seat and body material to suit your line.</p><h3>Makes and models in this size</h3><table><thead><tr><th scope=\"col\">Make</th><th scope=\"col\">Model / part no.</th><th scope=\"col\">Body</th><th scope=\"col\">Seat</th><th scope=\"col\">Ends</th><th scope=\"col\">Rating (as marked)</th></tr></thead><tbody><tr><td>Worcester</td><td><code>466YVSE V77 R21</code></td><td>Stainless steel</td><td>Lubetal</td><td>—</td><td>CWP 3,000 psi</td></tr><tr><td>Swagelok</td><td>—</td><td>CF3M stainless</td><td>—</td><td>—</td><td>2,200 psig at 100 °F</td></tr></tbody></table><p>Each row is what is marked on, or listed for, a valve we have photographed in this size; a dash means it is not stated or not legible. Your valve is supplied to the specification on your RFQ.</p><h3>Reading the rating</h3><ul><li><strong>WOG</strong> and <strong>CWP</strong> are the cold working pressure — for water, oil and gas — before any derating for temperature.</li><li><strong>PN</strong> is the rating in bar; <strong>Class</strong> ratings (800, 1500, 2500) follow ASME pressure classes.</li><li><strong>CF8M</strong> is cast 316 stainless steel, <strong>CF3M</strong> the low-carbon 316L grade; <strong>WCB</strong> is cast carbon steel.</li><li>PEEK and PVDF seats take higher temperatures than PTFE or RTFE; check the seat against your service temperature.</li></ul><h3>Ordering</h3><p>Give the size, pressure rating, end connection, body and seat material on your RFQ, with a make and part number if you have one. We confirm lead time and documentation on the quotation.</p>",
+   "seoTitle": "1/2″ Industrial Ball Valve — Stainless Steel",
+   "seoDescription": "1/2 in industrial ball valve, 2,200 to 3,000 psi. Worcester and Swagelok. Request a quote.",
+   "faqs": [
+    {
+     "question": "What pressure ratings are available in a 1/2″ ball valve?",
+     "answer": "The valves we have in this size are rated 2,200 to 3,000 psi cold working pressure; the table gives each one as marked. Tell us your working pressure and fluid and we match the valve to it."
+    },
+    {
+     "question": "What do PN, WOG and CWP mean?",
+     "answer": "PN is the pressure rating in bar at 20 °C. WOG (water, oil, gas) and CWP (cold working pressure) are the rating in psi at ambient temperature. All three fall as temperature rises, so check the maker's pressure–temperature chart for hot service."
+    },
+    {
+     "question": "Which end connections can you supply?",
+     "answer": "Female NPT and BSP threads, socket-weld, butt-weld, flanged and grooved ends, depending on the make. State the end connection on the RFQ."
+    },
+    {
+     "question": "Can you supply a specific make or part number?",
+     "answer": "Yes. In this size we supply Worcester and Swagelok, including 466YVSE V77 R21. Give the make and part number on the RFQ and we quote against it."
+    },
+    {
+     "question": "Are these valves supplied new?",
+     "answer": "Yes. We supply new valves to the specification on your RFQ and confirm lead time and documentation on the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Valve Type",
+     "value": "Ball valve — industrial / process",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "valve_type"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size",
+     "value": "1/2 in (DN15)",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "nominal_size"
+    },
+    {
+     "group": "Performance",
+     "label": "Pressure Class",
+     "value": "CWP 3,000 psi; 2,200 psig at 100 °F",
+     "unit": null,
+     "position": 2,
+     "isFilterable": false,
+     "templateKey": "pressure_class"
+    },
+    {
+     "group": "Construction",
+     "label": "Body Material",
+     "value": "Stainless steel, CF3M stainless",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "body_material"
+    },
+    {
+     "group": "Construction",
+     "label": "Seal / Elastomer Material",
+     "value": "Lubetal",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "seal_material"
+    },
+    {
+     "group": "Identification",
+     "label": "Makes",
+     "value": "Worcester, Swagelok",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Identification",
+     "label": "Models / part numbers seen",
+     "value": "466YVSE V77 R21",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": null
+    }
+   ],
+   "searchAliases": [
+    "466YVSE V77 R21",
+    "Worcester",
+    "Swagelok",
+    "1/2 ball valve",
+    "DN15 ball valve",
+    "ball valve"
+   ],
+   "images": [
+    {
+     "file": "flowserve-1-2-valve-ball-worcester-controls-466yvse-v77-r21-498-1.jpg",
+     "alt": "Worcester 1/2″ ball valve"
+    },
+    {
+     "file": "swagelok-12-valve-ball-cf3m-rp130228-500-1.jpg",
+     "alt": "Swagelok 1/2″ ball valve"
+    },
+    {
+     "file": "flowserve-1-2-valve-ball-worcester-controls-466yvse-v77-r21-498-2.jpg",
+     "alt": "Worcester 1/2″ ball valve"
+    },
+    {
+     "file": "flowserve-1-2-valve-ball-worcester-controls-466yvse-v77-r21-498-3.jpg",
+     "alt": "Worcester 1/2″ ball valve, markings"
+    }
+   ],
+   "seriesPage": null,
+   "category": "industrial-ball-valves",
+   "source": {
+    "ofsListings": [
+     "498",
+     "500"
+    ],
+    "corrections": [
+     "Swagelok: OFS lists \"1.2 in\"; the body markings are for a 1/2 in valve."
+    ]
+   }
+  },
+  {
+   "sku": "IH-IBV-34",
+   "slug": "industrial-ball-valve-3-4-inch",
+   "title": "Industrial Ball Valve, 3/4″ (DN20)",
+   "brand": null,
+   "countryOfOrigin": null,
+   "leadTimeDays": null,
+   "focusKeyword": "3/4 inch ball valve",
+   "descriptionShort": "3/4″ (DN20) industrial ball valve, rated 3,000 psi. Makes include Worcester.",
+   "descriptionLong": "<p>A 3/4″ (DN20) ball valve for process, utility and plant service, in stainless bodies. Makes in this size include Worcester, rated 3,000 psi. We supply them new, with the ends, seat and body material to suit your line.</p><h3>Makes and models in this size</h3><table><thead><tr><th scope=\"col\">Make</th><th scope=\"col\">Model / part no.</th><th scope=\"col\">Body</th><th scope=\"col\">Seat</th><th scope=\"col\">Ends</th><th scope=\"col\">Rating (as marked)</th></tr></thead><tbody><tr><td>Worcester</td><td><code>466YVSE V77 R21</code></td><td>Stainless steel</td><td>Lubetal</td><td>—</td><td>CWP 3,000 psi</td></tr></tbody></table><p>Each row is what is marked on, or listed for, a valve we have photographed in this size; a dash means it is not stated or not legible. Your valve is supplied to the specification on your RFQ.</p><h3>Reading the rating</h3><ul><li><strong>WOG</strong> and <strong>CWP</strong> are the cold working pressure — for water, oil and gas — before any derating for temperature.</li><li><strong>PN</strong> is the rating in bar; <strong>Class</strong> ratings (800, 1500, 2500) follow ASME pressure classes.</li><li><strong>CF8M</strong> is cast 316 stainless steel, <strong>CF3M</strong> the low-carbon 316L grade; <strong>WCB</strong> is cast carbon steel.</li><li>PEEK and PVDF seats take higher temperatures than PTFE or RTFE; check the seat against your service temperature.</li></ul><h3>Ordering</h3><p>Give the size, pressure rating, end connection, body and seat material on your RFQ, with a make and part number if you have one. We confirm lead time and documentation on the quotation.</p>",
+   "seoTitle": "3/4″ Industrial Ball Valve — Stainless Steel",
+   "seoDescription": "3/4 in industrial ball valve, 3,000 psi. Worcester. Request a quote.",
+   "faqs": [
+    {
+     "question": "What pressure ratings are available in a 3/4″ ball valve?",
+     "answer": "The valves we have in this size are rated 3,000 psi cold working pressure; the table gives each one as marked. Tell us your working pressure and fluid and we match the valve to it."
+    },
+    {
+     "question": "What do PN, WOG and CWP mean?",
+     "answer": "PN is the pressure rating in bar at 20 °C. WOG (water, oil, gas) and CWP (cold working pressure) are the rating in psi at ambient temperature. All three fall as temperature rises, so check the maker's pressure–temperature chart for hot service."
+    },
+    {
+     "question": "Which end connections can you supply?",
+     "answer": "Female NPT and BSP threads, socket-weld, butt-weld, flanged and grooved ends, depending on the make. State the end connection on the RFQ."
+    },
+    {
+     "question": "Can you supply a specific make or part number?",
+     "answer": "Yes. In this size we supply Worcester, including 466YVSE V77 R21. Give the make and part number on the RFQ and we quote against it."
+    },
+    {
+     "question": "Are these valves supplied new?",
+     "answer": "Yes. We supply new valves to the specification on your RFQ and confirm lead time and documentation on the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Valve Type",
+     "value": "Ball valve — industrial / process",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "valve_type"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size",
+     "value": "3/4 in (DN20)",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "nominal_size"
+    },
+    {
+     "group": "Performance",
+     "label": "Pressure Class",
+     "value": "CWP 3,000 psi",
+     "unit": null,
+     "position": 2,
+     "isFilterable": false,
+     "templateKey": "pressure_class"
+    },
+    {
+     "group": "Construction",
+     "label": "Body Material",
+     "value": "Stainless steel",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "body_material"
+    },
+    {
+     "group": "Construction",
+     "label": "Seal / Elastomer Material",
+     "value": "Lubetal",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "seal_material"
+    },
+    {
+     "group": "Identification",
+     "label": "Makes",
+     "value": "Worcester",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Identification",
+     "label": "Models / part numbers seen",
+     "value": "466YVSE V77 R21",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": null
+    }
+   ],
+   "searchAliases": [
+    "466YVSE V77 R21",
+    "Worcester",
+    "3/4 ball valve",
+    "DN20 ball valve",
+    "ball valve"
+   ],
+   "images": [
+    {
+     "file": "flowserve-3-4-valve-ball-worcester-controls-466yvse-v77-r21-499-1.jpg",
+     "alt": "Worcester 3/4″ ball valve"
+    },
+    {
+     "file": "flowserve-3-4-valve-ball-worcester-controls-466yvse-v77-r21-499-2.jpg",
+     "alt": "Worcester 3/4″ ball valve"
+    },
+    {
+     "file": "flowserve-3-4-valve-ball-worcester-controls-466yvse-v77-r21-499-3.jpg",
+     "alt": "Worcester 3/4″ ball valve, markings"
+    }
+   ],
+   "seriesPage": null,
+   "category": "industrial-ball-valves",
+   "source": {
+    "ofsListings": [
+     "499"
+    ],
+    "corrections": []
+   }
+  },
+  {
+   "sku": "IH-IBV-1",
+   "slug": "industrial-ball-valve-1-inch",
+   "title": "Industrial Ball Valve, 1″ (DN25)",
+   "brand": null,
+   "countryOfOrigin": null,
+   "leadTimeDays": null,
+   "focusKeyword": "1 inch ball valve",
+   "descriptionShort": "1″ (DN25) industrial ball valve, rated 2,200 to 2,500 psi. Makes include Worcester, Swagelok and Apollo.",
+   "descriptionLong": "<p>A 1″ (DN25) ball valve for process, utility and plant service, in stainless and bronze bodies. Makes in this size include Worcester, Swagelok and Apollo, rated up to 2,500 psi. We supply them new, with the ends, seat and body material to suit your line.</p><h3>Makes and models in this size</h3><table><thead><tr><th scope=\"col\">Make</th><th scope=\"col\">Model / part no.</th><th scope=\"col\">Body</th><th scope=\"col\">Seat</th><th scope=\"col\">Ends</th><th scope=\"col\">Rating (as marked)</th></tr></thead><tbody><tr><td>Worcester</td><td><code>466XVSW V36 R21</code></td><td>CF8M stainless</td><td>PEEK</td><td>—</td><td>CWP 2,500 psi</td></tr><tr><td>Swagelok</td><td><code>SS-65TF16</code></td><td>CF3M stainless</td><td>—</td><td>FNPT</td><td>2,200 psig at 100 °F</td></tr><tr><td>Worcester</td><td><code>466YYBW8 V36 R21</code></td><td>Stainless steel</td><td>Lubetal</td><td>—</td><td>—</td></tr><tr><td>Apollo</td><td>—</td><td>Bronze</td><td>—</td><td>FNPT</td><td>—</td></tr></tbody></table><p>Each row is what is marked on, or listed for, a valve we have photographed in this size; a dash means it is not stated or not legible. Your valve is supplied to the specification on your RFQ.</p><h3>Reading the rating</h3><ul><li><strong>WOG</strong> and <strong>CWP</strong> are the cold working pressure — for water, oil and gas — before any derating for temperature.</li><li><strong>PN</strong> is the rating in bar; <strong>Class</strong> ratings (800, 1500, 2500) follow ASME pressure classes.</li><li><strong>CF8M</strong> is cast 316 stainless steel, <strong>CF3M</strong> the low-carbon 316L grade; <strong>WCB</strong> is cast carbon steel.</li><li>PEEK and PVDF seats take higher temperatures than PTFE or RTFE; check the seat against your service temperature.</li></ul><h3>Ordering</h3><p>Give the size, pressure rating, end connection, body and seat material on your RFQ, with a make and part number if you have one. We confirm lead time and documentation on the quotation.</p>",
+   "seoTitle": "1″ Industrial Ball Valve — Stainless & Brass",
+   "seoDescription": "1 in industrial ball valve, 2,200 to 2,500 psi. Worcester, Swagelok and Apollo. Request a quote.",
+   "faqs": [
+    {
+     "question": "What pressure ratings are available in a 1″ ball valve?",
+     "answer": "The valves we have in this size are rated 2,200 to 2,500 psi cold working pressure; the table gives each one as marked. Tell us your working pressure and fluid and we match the valve to it."
+    },
+    {
+     "question": "What do PN, WOG and CWP mean?",
+     "answer": "PN is the pressure rating in bar at 20 °C. WOG (water, oil, gas) and CWP (cold working pressure) are the rating in psi at ambient temperature. All three fall as temperature rises, so check the maker's pressure–temperature chart for hot service."
+    },
+    {
+     "question": "Which end connections can you supply?",
+     "answer": "Female NPT and BSP threads, socket-weld, butt-weld, flanged and grooved ends, depending on the make. State the end connection on the RFQ."
+    },
+    {
+     "question": "Can you supply a specific make or part number?",
+     "answer": "Yes. In this size we supply Worcester, Swagelok and Apollo, including 466XVSW V36 R21, SS-65TF16 and 466YYBW8 V36 R21. Give the make and part number on the RFQ and we quote against it."
+    },
+    {
+     "question": "Are these valves supplied new?",
+     "answer": "Yes. We supply new valves to the specification on your RFQ and confirm lead time and documentation on the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Valve Type",
+     "value": "Ball valve — industrial / process",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "valve_type"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size",
+     "value": "1 in (DN25)",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "nominal_size"
+    },
+    {
+     "group": "Performance",
+     "label": "Pressure Class",
+     "value": "CWP 2,500 psi; 2,200 psig at 100 °F",
+     "unit": null,
+     "position": 2,
+     "isFilterable": false,
+     "templateKey": "pressure_class"
+    },
+    {
+     "group": "Dimensions",
+     "label": "End Connection (Inlet)",
+     "value": "FNPT",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "end_connection_inlet"
+    },
+    {
+     "group": "Construction",
+     "label": "Body Material",
+     "value": "CF8M stainless, CF3M stainless, Stainless steel, Bronze",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "body_material"
+    },
+    {
+     "group": "Construction",
+     "label": "Seal / Elastomer Material",
+     "value": "PEEK, Lubetal",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "seal_material"
+    },
+    {
+     "group": "Identification",
+     "label": "Makes",
+     "value": "Worcester, Swagelok, Apollo",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Identification",
+     "label": "Models / part numbers seen",
+     "value": "466XVSW V36 R21, SS-65TF16, 466YYBW8 V36 R21",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": null
+    }
+   ],
+   "searchAliases": [
+    "466XVSW V36 R21",
+    "SS-65TF16",
+    "466YYBW8 V36 R21",
+    "Worcester",
+    "Swagelok",
+    "Apollo",
+    "1 ball valve",
+    "DN25 ball valve",
+    "ball valve"
+   ],
+   "images": [
+    {
+     "file": "flowserve-1-valve-ball-peek-worcester-controls-466xvsw-v36-r21-505-1.jpg",
+     "alt": "Worcester 1″ ball valve"
+    },
+    {
+     "file": "swagelok-075-valve-ball-cf3m-ss-65tf16-504-1.jpg",
+     "alt": "Swagelok 1″ ball valve"
+    },
+    {
+     "file": "bronze-ball-valve-inline-fnpt-1-in-347-1.jpg",
+     "alt": "Apollo 1″ ball valve"
+    },
+    {
+     "file": "flowserve-1-valve-ball-peek-worcester-controls-466xvsw-v36-r21-505-3.jpg",
+     "alt": "Worcester 1″ ball valve, markings"
+    }
+   ],
+   "seriesPage": null,
+   "category": "industrial-ball-valves",
+   "source": {
+    "ofsListings": [
+     "505",
+     "504",
+     "506",
+     "347"
+    ],
+    "corrections": [
+     "Swagelok: OFS lists 0.75 in; SS-65TF16 is a 1 in female NPT valve and the body is marked for it."
+    ]
+   }
+  },
+  {
+   "sku": "IH-IBV-114",
+   "slug": "industrial-ball-valve-1-1-4-inch",
+   "title": "Industrial Ball Valve, 1-1/4″ (DN32)",
+   "brand": null,
+   "countryOfOrigin": null,
+   "leadTimeDays": null,
+   "focusKeyword": "1-1/4 inch ball valve",
+   "descriptionShort": "1-1/4″ (DN32) industrial ball valve, rated 1,000 to 3,700 psi. Makes include Habonim, Alfa, Worcester, Swagelok and Starline.",
+   "descriptionLong": "<p>A 1-1/4″ (DN32) ball valve for process, utility and plant service, in stainless bodies. Makes in this size include Habonim, Alfa, Worcester, Swagelok, Starline and Modentic, rated up to 3,700 psi. We supply them new, with the ends, seat and body material to suit your line.</p><h3>Makes and models in this size</h3><table><thead><tr><th scope=\"col\">Make</th><th scope=\"col\">Model / part no.</th><th scope=\"col\">Body</th><th scope=\"col\">Seat</th><th scope=\"col\">Ends</th><th scope=\"col\">Rating (as marked)</th></tr></thead><tbody><tr><td>Habonim</td><td><code>12AH27X-666MWB/BSP</code></td><td>316L stainless</td><td>PVDF</td><td>BSP</td><td>Class 2500</td></tr><tr><td>Alfa</td><td><code>A20T</code></td><td>316 stainless</td><td>—</td><td>NPT</td><td>Class 1500 (255 bar)</td></tr><tr><td>Worcester</td><td><code>466XVSW V36 R21</code></td><td>Stainless steel</td><td>PEEK</td><td>—</td><td>CWP 2,500 psi</td></tr><tr><td>Swagelok</td><td><code>SS-67TF20</code></td><td>CF3M stainless</td><td>—</td><td>FNPT</td><td>1,500 psig at 100 °F</td></tr><tr><td>Starline</td><td><code>136-SGS-G</code></td><td>F316 stainless</td><td>—</td><td>—</td><td>Class 800 (PN138)</td></tr><tr><td>Modentic</td><td>—</td><td>CF8M stainless</td><td>—</td><td>—</td><td>1,000 WOG</td></tr></tbody></table><p>Each row is what is marked on, or listed for, a valve we have photographed in this size; a dash means it is not stated or not legible. Your valve is supplied to the specification on your RFQ.</p><h3>Reading the rating</h3><ul><li><strong>WOG</strong> and <strong>CWP</strong> are the cold working pressure — for water, oil and gas — before any derating for temperature.</li><li><strong>PN</strong> is the rating in bar; <strong>Class</strong> ratings (800, 1500, 2500) follow ASME pressure classes.</li><li><strong>CF8M</strong> is cast 316 stainless steel, <strong>CF3M</strong> the low-carbon 316L grade; <strong>WCB</strong> is cast carbon steel.</li><li>PEEK and PVDF seats take higher temperatures than PTFE or RTFE; check the seat against your service temperature.</li></ul><h3>Ordering</h3><p>Give the size, pressure rating, end connection, body and seat material on your RFQ, with a make and part number if you have one. We confirm lead time and documentation on the quotation.</p>",
+   "seoTitle": "1-1/4″ Industrial Ball Valve — Stainless Steel",
+   "seoDescription": "1-1/4 in industrial ball valve, 1,000 to 3,700 psi. Habonim, Alfa, Worcester and Swagelok. Request a quote.",
+   "faqs": [
+    {
+     "question": "What pressure ratings are available in a 1-1/4″ ball valve?",
+     "answer": "The valves we have in this size are rated 1,000 to 3,700 psi cold working pressure; the table gives each one as marked. Tell us your working pressure and fluid and we match the valve to it."
+    },
+    {
+     "question": "What do PN, WOG and CWP mean?",
+     "answer": "PN is the pressure rating in bar at 20 °C. WOG (water, oil, gas) and CWP (cold working pressure) are the rating in psi at ambient temperature. All three fall as temperature rises, so check the maker's pressure–temperature chart for hot service."
+    },
+    {
+     "question": "Which end connections can you supply?",
+     "answer": "Female NPT and BSP threads, socket-weld, butt-weld, flanged and grooved ends, depending on the make. State the end connection on the RFQ."
+    },
+    {
+     "question": "Can you supply a specific make or part number?",
+     "answer": "Yes. In this size we supply Habonim, Alfa, Worcester, Swagelok, Starline and Modentic, including 12AH27X-666MWB/BSP, A20T, 466XVSW V36 R21 and SS-67TF20. Give the make and part number on the RFQ and we quote against it."
+    },
+    {
+     "question": "Are these valves supplied new?",
+     "answer": "Yes. We supply new valves to the specification on your RFQ and confirm lead time and documentation on the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Valve Type",
+     "value": "Ball valve — industrial / process",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "valve_type"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size",
+     "value": "1-1/4 in (DN32)",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "nominal_size"
+    },
+    {
+     "group": "Performance",
+     "label": "Pressure Class",
+     "value": "Class 2500; Class 1500 (255 bar); CWP 2,500 psi; 1,500 psig at 100 °F; Class 800 (PN138); 1,000 WOG",
+     "unit": null,
+     "position": 2,
+     "isFilterable": false,
+     "templateKey": "pressure_class"
+    },
+    {
+     "group": "Dimensions",
+     "label": "End Connection (Inlet)",
+     "value": "BSP, NPT and FNPT",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "end_connection_inlet"
+    },
+    {
+     "group": "Construction",
+     "label": "Body Material",
+     "value": "316L stainless, 316 stainless, Stainless steel, CF3M stainless, F316 stainless, CF8M stainless",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "body_material"
+    },
+    {
+     "group": "Construction",
+     "label": "Seal / Elastomer Material",
+     "value": "PVDF, PEEK",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "seal_material"
+    },
+    {
+     "group": "Identification",
+     "label": "Makes",
+     "value": "Habonim, Alfa, Worcester, Swagelok, Starline, Modentic",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Identification",
+     "label": "Models / part numbers seen",
+     "value": "12AH27X-666MWB/BSP, A20T, 466XVSW V36 R21, SS-67TF20, 136-SGS-G",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": null
+    }
+   ],
+   "searchAliases": [
+    "12AH27X-666MWB/BSP",
+    "A20T",
+    "466XVSW V36 R21",
+    "SS-67TF20",
+    "136-SGS-G",
+    "Habonim",
+    "Alfa",
+    "Worcester",
+    "Swagelok",
+    "Starline",
+    "Modentic",
+    "1-1/4 ball valve",
+    "DN32 ball valve",
+    "ball valve"
+   ],
+   "images": [
+    {
+     "file": "habonim-1-1-4-valve-ball-316-ss-h27-530-1.jpg",
+     "alt": "Habonim 1-1/4″ ball valve"
+    },
+    {
+     "file": "alfa-1-4-valve-ball-3000-psi-dn-32-559-1.jpg",
+     "alt": "Alfa 1-1/4″ ball valve"
+    },
+    {
+     "file": "flowserve-1-1-4-valve-ball-peek-worcester-controls-466xvsw-v36-p55541-r21-503-1.jpg",
+     "alt": "Worcester 1-1/4″ ball valve"
+    },
+    {
+     "file": "habonim-1-1-4-valve-ball-316-ss-h27-530-3.jpg",
+     "alt": "Habonim 1-1/4″ ball valve, markings"
+    }
+   ],
+   "seriesPage": null,
+   "category": "industrial-ball-valves",
+   "source": {
+    "ofsListings": [
+     "530",
+     "559",
+     "503",
+     "486",
+     "495",
+     "561"
+    ],
+    "corrections": [
+     "Alfa: OFS lists 1/4 in; the nameplate reads DN32 (1-1/4 in).",
+     "Starline: OFS lists 2 in; the nameplate reads DN32 (1-1/4 in)."
+    ]
+   }
+  },
+  {
+   "sku": "IH-IBV-112",
+   "slug": "industrial-ball-valve-1-1-2-inch",
+   "title": "Industrial Ball Valve, 1-1/2″ (DN40)",
+   "brand": null,
+   "countryOfOrigin": null,
+   "leadTimeDays": null,
+   "focusKeyword": "1-1/2 inch ball valve",
+   "descriptionShort": "1-1/2″ (DN40) industrial ball valve, rated 435 to 4,000 psi. Makes include Worcester, A-T Controls, Mento, Warren and ITAP.",
+   "descriptionLong": "<p>A 1-1/2″ (DN40) ball valve for process, utility and plant service, in stainless, carbon steel and brass bodies. Makes in this size include Worcester, A-T Controls, Mento, Warren, ITAP, Modentic, TESS and MIPEL, rated up to 4,000 psi. We supply them new, with the ends, seat and body material to suit your line.</p><h3>Makes and models in this size</h3><table><thead><tr><th scope=\"col\">Make</th><th scope=\"col\">Model / part no.</th><th scope=\"col\">Body</th><th scope=\"col\">Seat</th><th scope=\"col\">Ends</th><th scope=\"col\">Rating (as marked)</th></tr></thead><tbody><tr><td>Worcester</td><td><code>H4466YBSW R8</code></td><td>Stainless steel</td><td>Lubetal</td><td>—</td><td>CWP 4,000 psi</td></tr><tr><td>A-T Controls</td><td>—</td><td>WCB carbon steel</td><td>RTFE</td><td>—</td><td>1,000 psi</td></tr><tr><td>Mento</td><td><code>C124</code></td><td>1.4408 (CF8M) stainless</td><td>—</td><td>—</td><td>PN63</td></tr><tr><td>Warren</td><td>Three-way</td><td>CF8M stainless</td><td>—</td><td>—</td><td>1,000 WOG</td></tr><tr><td>ITAP</td><td>—</td><td>Brass (CW617N)</td><td>—</td><td>—</td><td>PN30</td></tr><tr><td>Modentic</td><td>—</td><td>CF8M stainless</td><td>—</td><td>—</td><td>1,000 WOG</td></tr><tr><td>TESS</td><td>—</td><td>CF8M stainless</td><td>—</td><td>—</td><td>1,000 WOG</td></tr><tr><td>MIPEL</td><td>—</td><td>—</td><td>—</td><td>—</td><td>600 WOG</td></tr><tr><td>Unbranded</td><td>—</td><td>316 stainless</td><td>—</td><td>—</td><td>1,000 WOG</td></tr><tr><td>Unbranded</td><td>—</td><td>—</td><td>—</td><td>—</td><td>PN40</td></tr></tbody></table><p>Each row is what is marked on, or listed for, a valve we have photographed in this size; a dash means it is not stated or not legible. Your valve is supplied to the specification on your RFQ.</p><h3>Reading the rating</h3><ul><li><strong>WOG</strong> and <strong>CWP</strong> are the cold working pressure — for water, oil and gas — before any derating for temperature.</li><li><strong>PN</strong> is the rating in bar; <strong>Class</strong> ratings (800, 1500, 2500) follow ASME pressure classes.</li><li><strong>CF8M</strong> is cast 316 stainless steel, <strong>CF3M</strong> the low-carbon 316L grade; <strong>WCB</strong> is cast carbon steel.</li><li>PEEK and PVDF seats take higher temperatures than PTFE or RTFE; check the seat against your service temperature.</li></ul><h3>Ordering</h3><p>Give the size, pressure rating, end connection, body and seat material on your RFQ, with a make and part number if you have one. We confirm lead time and documentation on the quotation.</p>",
+   "seoTitle": "1-1/2″ Industrial Ball Valve — Stainless & Brass",
+   "seoDescription": "1-1/2 in industrial ball valve, 435 to 4,000 psi. Worcester, A-T Controls, Mento and Warren. Request a quote.",
+   "faqs": [
+    {
+     "question": "What pressure ratings are available in a 1-1/2″ ball valve?",
+     "answer": "The valves we have in this size are rated 435 to 4,000 psi cold working pressure; the table gives each one as marked. Tell us your working pressure and fluid and we match the valve to it."
+    },
+    {
+     "question": "What do PN, WOG and CWP mean?",
+     "answer": "PN is the pressure rating in bar at 20 °C. WOG (water, oil, gas) and CWP (cold working pressure) are the rating in psi at ambient temperature. All three fall as temperature rises, so check the maker's pressure–temperature chart for hot service."
+    },
+    {
+     "question": "Which end connections can you supply?",
+     "answer": "Female NPT and BSP threads, socket-weld, butt-weld, flanged and grooved ends, depending on the make. State the end connection on the RFQ."
+    },
+    {
+     "question": "Can you supply a specific make or part number?",
+     "answer": "Yes. In this size we supply Worcester, A-T Controls, Mento, Warren, ITAP, Modentic, TESS and MIPEL, including H4466YBSW R8 and C124. Give the make and part number on the RFQ and we quote against it."
+    },
+    {
+     "question": "Are these valves supplied new?",
+     "answer": "Yes. We supply new valves to the specification on your RFQ and confirm lead time and documentation on the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Valve Type",
+     "value": "Ball valve — industrial / process",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "valve_type"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size",
+     "value": "1-1/2 in (DN40)",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "nominal_size"
+    },
+    {
+     "group": "Performance",
+     "label": "Pressure Class",
+     "value": "CWP 4,000 psi; 1,000 psi; PN63; 1,000 WOG; PN30; 600 WOG; PN40",
+     "unit": null,
+     "position": 2,
+     "isFilterable": false,
+     "templateKey": "pressure_class"
+    },
+    {
+     "group": "Construction",
+     "label": "Body Material",
+     "value": "Stainless steel, WCB carbon steel, 1.4408 (CF8M) stainless, CF8M stainless, Brass (CW617N), 316 stainless",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "body_material"
+    },
+    {
+     "group": "Construction",
+     "label": "Seal / Elastomer Material",
+     "value": "Lubetal, RTFE",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "seal_material"
+    },
+    {
+     "group": "Identification",
+     "label": "Makes",
+     "value": "Worcester, A-T Controls, Mento, Warren, ITAP, Modentic, TESS, MIPEL",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Identification",
+     "label": "Models / part numbers seen",
+     "value": "H4466YBSW R8, C124",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": null
+    }
+   ],
+   "searchAliases": [
+    "H4466YBSW R8",
+    "C124",
+    "Worcester",
+    "A-T Controls",
+    "Mento",
+    "Warren",
+    "ITAP",
+    "Modentic",
+    "TESS",
+    "MIPEL",
+    "1-1/2 ball valve",
+    "DN40 ball valve",
+    "ball valve"
+   ],
+   "images": [
+    {
+     "file": "flowserve-1-1-2-valve-ball-worcester-controls-h4466-ybsw-r8-484-1.jpg",
+     "alt": "Worcester 1-1/2″ ball valve"
+    },
+    {
+     "file": "a-t-controls-1-1-2-valve-ball-1000-psi-604-1.jpg",
+     "alt": "A-T Controls 1-1/2″ ball valve"
+    },
+    {
+     "file": "mento-valve-1-1-2-valve-ball-c124-dn40-pn53-567-1.jpg",
+     "alt": "Mento 1-1/2″ ball valve"
+    },
+    {
+     "file": "flowserve-1-1-2-valve-ball-worcester-controls-h4466-ybsw-r8-484-3.jpg",
+     "alt": "Worcester 1-1/2″ ball valve, markings"
+    }
+   ],
+   "seriesPage": null,
+   "category": "industrial-ball-valves",
+   "source": {
+    "ofsListings": [
+     "484",
+     "604",
+     "567",
+     "609",
+     "563",
+     "560",
+     "564",
+     "566",
+     "565",
+     "562"
+    ],
+    "corrections": [
+     "Warren: Three-way body."
+    ]
+   }
+  },
+  {
+   "sku": "IH-IBV-2",
+   "slug": "industrial-ball-valve-2-inch",
+   "title": "Industrial Ball Valve, 2″ (DN50)",
+   "brand": null,
+   "countryOfOrigin": null,
+   "leadTimeDays": null,
+   "focusKeyword": "2 inch ball valve",
+   "descriptionShort": "2″ (DN50) industrial ball valve, rated 1,000 to 4,000 psi. Makes include Worcester, Modentic, Alco Valves, Flow-Tek and SVF.",
+   "descriptionLong": "<p>A 2″ (DN50) ball valve for process, utility and plant service, in stainless bodies. Makes in this size include Worcester, Modentic, Alco Valves, Flow-Tek, SVF, Anson Flow and Victaulic, rated up to 4,000 psi. We supply them new, with the ends, seat and body material to suit your line.</p><h3>Makes and models in this size</h3><table><thead><tr><th scope=\"col\">Make</th><th scope=\"col\">Model / part no.</th><th scope=\"col\">Body</th><th scope=\"col\">Seat</th><th scope=\"col\">Ends</th><th scope=\"col\">Rating (as marked)</th></tr></thead><tbody><tr><td>Worcester</td><td><code>H4466YBSW R8</code></td><td>Stainless steel</td><td>Lubetal</td><td>—</td><td>CWP 4,000 psi</td></tr><tr><td>Worcester</td><td><code>466XVBW8 V38 R21</code></td><td>Stainless steel</td><td>PEEK</td><td>—</td><td>CWP 2,600 psi</td></tr><tr><td>Modentic</td><td><code>V158</code></td><td>CF8M stainless</td><td>—</td><td>—</td><td>1,000 psi</td></tr><tr><td>Alco Valves</td><td><code>Type S</code></td><td>—</td><td>—</td><td>—</td><td>3,000 psi</td></tr><tr><td>Flow-Tek</td><td>—</td><td>1.4408 (CF8M) stainless</td><td>—</td><td>—</td><td>PN64 / 1,000 psi</td></tr><tr><td>SVF</td><td><code>R86666DVBW</code></td><td>—</td><td>—</td><td>—</td><td>2,000 psi</td></tr><tr><td>Anson Flow</td><td>—</td><td>CF8M stainless</td><td>—</td><td>—</td><td>—</td></tr><tr><td>Victaulic</td><td>—</td><td>—</td><td>—</td><td>Grooved</td><td>—</td></tr><tr><td>Unbranded</td><td>—</td><td>CF8M stainless</td><td>—</td><td>—</td><td>1,000 WOG</td></tr></tbody></table><p>Each row is what is marked on, or listed for, a valve we have photographed in this size; a dash means it is not stated or not legible. Your valve is supplied to the specification on your RFQ.</p><h3>Reading the rating</h3><ul><li><strong>WOG</strong> and <strong>CWP</strong> are the cold working pressure — for water, oil and gas — before any derating for temperature.</li><li><strong>PN</strong> is the rating in bar; <strong>Class</strong> ratings (800, 1500, 2500) follow ASME pressure classes.</li><li><strong>CF8M</strong> is cast 316 stainless steel, <strong>CF3M</strong> the low-carbon 316L grade; <strong>WCB</strong> is cast carbon steel.</li><li>PEEK and PVDF seats take higher temperatures than PTFE or RTFE; check the seat against your service temperature.</li></ul><h3>Ordering</h3><p>Give the size, pressure rating, end connection, body and seat material on your RFQ, with a make and part number if you have one. We confirm lead time and documentation on the quotation.</p>",
+   "seoTitle": "2″ Industrial Ball Valve — Stainless Steel",
+   "seoDescription": "2 in industrial ball valve, 1,000 to 4,000 psi. Worcester, Modentic, Alco Valves and Flow-Tek. Request a quote.",
+   "faqs": [
+    {
+     "question": "What pressure ratings are available in a 2″ ball valve?",
+     "answer": "The valves we have in this size are rated 1,000 to 4,000 psi cold working pressure; the table gives each one as marked. Tell us your working pressure and fluid and we match the valve to it."
+    },
+    {
+     "question": "What do PN, WOG and CWP mean?",
+     "answer": "PN is the pressure rating in bar at 20 °C. WOG (water, oil, gas) and CWP (cold working pressure) are the rating in psi at ambient temperature. All three fall as temperature rises, so check the maker's pressure–temperature chart for hot service."
+    },
+    {
+     "question": "Which end connections can you supply?",
+     "answer": "Female NPT and BSP threads, socket-weld, butt-weld, flanged and grooved ends, depending on the make. State the end connection on the RFQ."
+    },
+    {
+     "question": "Can you supply a specific make or part number?",
+     "answer": "Yes. In this size we supply Worcester, Modentic, Alco Valves, Flow-Tek, SVF, Anson Flow and Victaulic, including H4466YBSW R8, 466XVBW8 V38 R21, V158 and Type S. Give the make and part number on the RFQ and we quote against it."
+    },
+    {
+     "question": "Are these valves supplied new?",
+     "answer": "Yes. We supply new valves to the specification on your RFQ and confirm lead time and documentation on the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Valve Type",
+     "value": "Ball valve — industrial / process",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "valve_type"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size",
+     "value": "2 in (DN50)",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "nominal_size"
+    },
+    {
+     "group": "Performance",
+     "label": "Pressure Class",
+     "value": "CWP 4,000 psi; CWP 2,600 psi; 1,000 psi; 3,000 psi; PN64 / 1,000 psi; 2,000 psi; 1,000 WOG",
+     "unit": null,
+     "position": 2,
+     "isFilterable": false,
+     "templateKey": "pressure_class"
+    },
+    {
+     "group": "Dimensions",
+     "label": "End Connection (Inlet)",
+     "value": "Grooved",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "end_connection_inlet"
+    },
+    {
+     "group": "Construction",
+     "label": "Body Material",
+     "value": "Stainless steel, CF8M stainless, 1.4408 (CF8M) stainless",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "body_material"
+    },
+    {
+     "group": "Construction",
+     "label": "Seal / Elastomer Material",
+     "value": "Lubetal, PEEK",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "seal_material"
+    },
+    {
+     "group": "Identification",
+     "label": "Makes",
+     "value": "Worcester, Modentic, Alco Valves, Flow-Tek, SVF, Anson Flow, Victaulic",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Identification",
+     "label": "Models / part numbers seen",
+     "value": "H4466YBSW R8, 466XVBW8 V38 R21, V158, Type S, R86666DVBW",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": null
+    }
+   ],
+   "searchAliases": [
+    "H4466YBSW R8",
+    "466XVBW8 V38 R21",
+    "V158",
+    "Type S",
+    "R86666DVBW",
+    "Worcester",
+    "Modentic",
+    "Alco Valves",
+    "Flow-Tek",
+    "SVF",
+    "Anson Flow",
+    "Victaulic",
+    "2 ball valve",
+    "DN50 ball valve",
+    "ball valve"
+   ],
+   "images": [
+    {
+     "file": "flowserve-2-valve-ball-lubetal-worcester-controls-h4466-ybsw-r8-485-1.jpg",
+     "alt": "Worcester 2″ ball valve"
+    },
+    {
+     "file": "modentic-valves-2-valve-ball-type-v158-cf8m-1000-psi-496-1.jpg",
+     "alt": "Modentic 2″ ball valve"
+    },
+    {
+     "file": "alco-valves-2-valve-ball-3000-psi-type-s-bolt-494-1.jpg",
+     "alt": "Alco Valves 2″ ball valve"
+    },
+    {
+     "file": "flowserve-2-valve-ball-lubetal-worcester-controls-h4466-ybsw-r8-485-3.jpg",
+     "alt": "Worcester 2″ ball valve, markings"
+    }
+   ],
+   "seriesPage": null,
+   "category": "industrial-ball-valves",
+   "source": {
+    "ofsListings": [
+     "485",
+     "492",
+     "496",
+     "494",
+     "493",
+     "497",
+     "529",
+     "610",
+     "568"
+    ],
+    "corrections": [
+     "Flow-Tek: OFS lists DN20; the body is marked DN50 (2 in).",
+     "Unbranded: OFS lists DN25; the body is cast 2 in."
+    ]
+   }
+  },
+  {
+   "sku": "IH-IBV-212",
+   "slug": "industrial-ball-valve-2-1-2-inch",
+   "title": "Industrial Ball Valve, 2-1/2″ (DN65)",
+   "brand": null,
+   "countryOfOrigin": null,
+   "leadTimeDays": null,
+   "focusKeyword": "2-1/2 inch ball valve",
+   "descriptionShort": "2-1/2″ (DN65) industrial ball valve, rated 600 to 1,000 psi. Makes include Warren, Matco-Norca and Cimberio.",
+   "descriptionLong": "<p>A 2-1/2″ (DN65) ball valve for process, utility and plant service, in stainless bodies. Makes in this size include Warren, Matco-Norca and Cimberio, rated up to 1,000 psi. We supply them new, with the ends, seat and body material to suit your line.</p><h3>Makes and models in this size</h3><table><thead><tr><th scope=\"col\">Make</th><th scope=\"col\">Model / part no.</th><th scope=\"col\">Body</th><th scope=\"col\">Seat</th><th scope=\"col\">Ends</th><th scope=\"col\">Rating (as marked)</th></tr></thead><tbody><tr><td>Warren</td><td>—</td><td>CF8M stainless</td><td>—</td><td>—</td><td>1,000 WOG</td></tr><tr><td>Matco-Norca</td><td>—</td><td>—</td><td>—</td><td>—</td><td>600 WOG</td></tr><tr><td>Cimberio</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr></tbody></table><p>Each row is what is marked on, or listed for, a valve we have photographed in this size; a dash means it is not stated or not legible. Your valve is supplied to the specification on your RFQ.</p><h3>Reading the rating</h3><ul><li><strong>WOG</strong> and <strong>CWP</strong> are the cold working pressure — for water, oil and gas — before any derating for temperature.</li><li><strong>PN</strong> is the rating in bar; <strong>Class</strong> ratings (800, 1500, 2500) follow ASME pressure classes.</li><li><strong>CF8M</strong> is cast 316 stainless steel, <strong>CF3M</strong> the low-carbon 316L grade; <strong>WCB</strong> is cast carbon steel.</li><li>PEEK and PVDF seats take higher temperatures than PTFE or RTFE; check the seat against your service temperature.</li></ul><h3>Ordering</h3><p>Give the size, pressure rating, end connection, body and seat material on your RFQ, with a make and part number if you have one. We confirm lead time and documentation on the quotation.</p>",
+   "seoTitle": "2-1/2″ Industrial Ball Valve — Stainless Steel",
+   "seoDescription": "2-1/2 in industrial ball valve, 600 to 1,000 psi. Warren, Matco-Norca and Cimberio. Request a quote.",
+   "faqs": [
+    {
+     "question": "What pressure ratings are available in a 2-1/2″ ball valve?",
+     "answer": "The valves we have in this size are rated 600 to 1,000 psi cold working pressure; the table gives each one as marked. Tell us your working pressure and fluid and we match the valve to it."
+    },
+    {
+     "question": "What do PN, WOG and CWP mean?",
+     "answer": "PN is the pressure rating in bar at 20 °C. WOG (water, oil, gas) and CWP (cold working pressure) are the rating in psi at ambient temperature. All three fall as temperature rises, so check the maker's pressure–temperature chart for hot service."
+    },
+    {
+     "question": "Which end connections can you supply?",
+     "answer": "Female NPT and BSP threads, socket-weld, butt-weld, flanged and grooved ends, depending on the make. State the end connection on the RFQ."
+    },
+    {
+     "question": "Can you supply a specific make or part number?",
+     "answer": "Yes. In this size we supply Warren, Matco-Norca and Cimberio. Give the make and part number on the RFQ and we quote against it."
+    },
+    {
+     "question": "Are these valves supplied new?",
+     "answer": "Yes. We supply new valves to the specification on your RFQ and confirm lead time and documentation on the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Valve Type",
+     "value": "Ball valve — industrial / process",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "valve_type"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size",
+     "value": "2-1/2 in (DN65)",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "nominal_size"
+    },
+    {
+     "group": "Performance",
+     "label": "Pressure Class",
+     "value": "1,000 WOG; 600 WOG",
+     "unit": null,
+     "position": 2,
+     "isFilterable": false,
+     "templateKey": "pressure_class"
+    },
+    {
+     "group": "Construction",
+     "label": "Body Material",
+     "value": "CF8M stainless",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "body_material"
+    },
+    {
+     "group": "Identification",
+     "label": "Makes",
+     "value": "Warren, Matco-Norca, Cimberio",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": null
+    }
+   ],
+   "searchAliases": [
+    "Warren",
+    "Matco-Norca",
+    "Cimberio",
+    "2-1/2 ball valve",
+    "DN65 ball valve",
+    "ball valve"
+   ],
+   "images": [
+    {
+     "file": "warren-2-1-2-valve-ball-cf8m-1000-wog-596-1.jpg",
+     "alt": "Warren 2-1/2″ ball valve"
+    },
+    {
+     "file": "matco-norca-2-1-2-valve-ball-600-w0g-598-1.jpg",
+     "alt": "Matco-Norca 2-1/2″ ball valve"
+    },
+    {
+     "file": "cimberio-2-1-2-valve-ball-599.jpg",
+     "alt": "Cimberio 2-1/2″ ball valve"
+    }
+   ],
+   "seriesPage": null,
+   "category": "industrial-ball-valves",
+   "source": {
+    "ofsListings": [
+     "596",
+     "598",
+     "599"
+    ],
+    "corrections": []
+   }
+  },
+  {
+   "sku": "IH-IBV-3",
+   "slug": "industrial-ball-valve-3-inch",
+   "title": "Industrial Ball Valve, 3″ (DN80)",
+   "brand": null,
+   "countryOfOrigin": null,
+   "leadTimeDays": null,
+   "focusKeyword": "3 inch ball valve",
+   "descriptionShort": "3″ (DN80) industrial ball valve, rated 365 to 1,000 psi. Makes include A-T Controls, Sharpe and Warren.",
+   "descriptionLong": "<p>A 3″ (DN80) ball valve for process, utility and plant service, in stainless bodies. Makes in this size include A-T Controls, Sharpe and Warren, rated up to 1,000 psi. We supply them new, with the ends, seat and body material to suit your line.</p><h3>Makes and models in this size</h3><table><thead><tr><th scope=\"col\">Make</th><th scope=\"col\">Model / part no.</th><th scope=\"col\">Body</th><th scope=\"col\">Seat</th><th scope=\"col\">Ends</th><th scope=\"col\">Rating (as marked)</th></tr></thead><tbody><tr><td>A-T Controls</td><td>—</td><td>CF8M stainless</td><td>—</td><td>—</td><td>1,000 WOG</td></tr><tr><td>Sharpe</td><td>—</td><td>CG8M stainless</td><td>—</td><td>—</td><td>1,000 CWP</td></tr><tr><td>Warren</td><td>—</td><td>CF8M stainless</td><td>—</td><td>—</td><td>1,000 WOG</td></tr><tr><td>Unbranded</td><td>—</td><td>—</td><td>—</td><td>—</td><td>PN25</td></tr></tbody></table><p>Each row is what is marked on, or listed for, a valve we have photographed in this size; a dash means it is not stated or not legible. Your valve is supplied to the specification on your RFQ.</p><h3>Reading the rating</h3><ul><li><strong>WOG</strong> and <strong>CWP</strong> are the cold working pressure — for water, oil and gas — before any derating for temperature.</li><li><strong>PN</strong> is the rating in bar; <strong>Class</strong> ratings (800, 1500, 2500) follow ASME pressure classes.</li><li><strong>CF8M</strong> is cast 316 stainless steel, <strong>CF3M</strong> the low-carbon 316L grade; <strong>WCB</strong> is cast carbon steel.</li><li>PEEK and PVDF seats take higher temperatures than PTFE or RTFE; check the seat against your service temperature.</li></ul><h3>Ordering</h3><p>Give the size, pressure rating, end connection, body and seat material on your RFQ, with a make and part number if you have one. We confirm lead time and documentation on the quotation.</p>",
+   "seoTitle": "3″ Industrial Ball Valve — Stainless Steel",
+   "seoDescription": "3 in industrial ball valve, 365 to 1,000 psi. A-T Controls, Sharpe and Warren. Request a quote.",
+   "faqs": [
+    {
+     "question": "What pressure ratings are available in a 3″ ball valve?",
+     "answer": "The valves we have in this size are rated 365 to 1,000 psi cold working pressure; the table gives each one as marked. Tell us your working pressure and fluid and we match the valve to it."
+    },
+    {
+     "question": "What do PN, WOG and CWP mean?",
+     "answer": "PN is the pressure rating in bar at 20 °C. WOG (water, oil, gas) and CWP (cold working pressure) are the rating in psi at ambient temperature. All three fall as temperature rises, so check the maker's pressure–temperature chart for hot service."
+    },
+    {
+     "question": "Which end connections can you supply?",
+     "answer": "Female NPT and BSP threads, socket-weld, butt-weld, flanged and grooved ends, depending on the make. State the end connection on the RFQ."
+    },
+    {
+     "question": "Can you supply a specific make or part number?",
+     "answer": "Yes. In this size we supply A-T Controls, Sharpe and Warren. Give the make and part number on the RFQ and we quote against it."
+    },
+    {
+     "question": "Are these valves supplied new?",
+     "answer": "Yes. We supply new valves to the specification on your RFQ and confirm lead time and documentation on the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Valve Type",
+     "value": "Ball valve — industrial / process",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "valve_type"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size",
+     "value": "3 in (DN80)",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "nominal_size"
+    },
+    {
+     "group": "Performance",
+     "label": "Pressure Class",
+     "value": "1,000 WOG; 1,000 CWP; PN25",
+     "unit": null,
+     "position": 2,
+     "isFilterable": false,
+     "templateKey": "pressure_class"
+    },
+    {
+     "group": "Construction",
+     "label": "Body Material",
+     "value": "CF8M stainless, CG8M stainless",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "body_material"
+    },
+    {
+     "group": "Identification",
+     "label": "Makes",
+     "value": "A-T Controls, Sharpe, Warren",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": null
+    }
+   ],
+   "searchAliases": [
+    "A-T Controls",
+    "Sharpe",
+    "Warren",
+    "3 ball valve",
+    "DN80 ball valve",
+    "ball valve"
+   ],
+   "images": [
+    {
+     "file": "a-t-controls-3-valve-ball-cf8m-1000-wog-597-1.jpg",
+     "alt": "A-T Controls 3″ ball valve"
+    },
+    {
+     "file": "sharpe-3-valve-ball-1000-cwp-cg8m-594-1.jpg",
+     "alt": "Sharpe 3″ ball valve"
+    },
+    {
+     "file": "warren-3-valve-ball-cf8m-1000-wog-595-1.jpg",
+     "alt": "Warren 3″ ball valve"
+    }
+   ],
+   "seriesPage": null,
+   "category": "industrial-ball-valves",
+   "source": {
+    "ofsListings": [
+     "597",
+     "594",
+     "595",
+     "600"
+    ],
+    "corrections": []
+   }
+  },
+  {
+   "sku": "IH-IBV-4",
+   "slug": "industrial-ball-valve-4-inch",
+   "title": "Industrial Ball Valve, 4″ (DN100)",
+   "brand": null,
+   "countryOfOrigin": null,
+   "leadTimeDays": null,
+   "focusKeyword": "4 inch ball valve",
+   "descriptionShort": "4″ (DN100) industrial ball valve, rated 600 psi. Makes include Matco-Norca.",
+   "descriptionLong": "<p>A 4″ (DN100) ball valve for process, utility and plant service, in stainless steel and other bodies. Makes in this size include Matco-Norca, rated 600 psi. We supply them new, with the ends, seat and body material to suit your line.</p><h3>Makes and models in this size</h3><table><thead><tr><th scope=\"col\">Make</th><th scope=\"col\">Model / part no.</th><th scope=\"col\">Body</th><th scope=\"col\">Seat</th><th scope=\"col\">Ends</th><th scope=\"col\">Rating (as marked)</th></tr></thead><tbody><tr><td>Matco-Norca</td><td>—</td><td>—</td><td>—</td><td>—</td><td>600 WOG</td></tr></tbody></table><p>Each row is what is marked on, or listed for, a valve we have photographed in this size; a dash means it is not stated or not legible. Your valve is supplied to the specification on your RFQ.</p><h3>Reading the rating</h3><ul><li><strong>WOG</strong> and <strong>CWP</strong> are the cold working pressure — for water, oil and gas — before any derating for temperature.</li><li><strong>PN</strong> is the rating in bar; <strong>Class</strong> ratings (800, 1500, 2500) follow ASME pressure classes.</li><li><strong>CF8M</strong> is cast 316 stainless steel, <strong>CF3M</strong> the low-carbon 316L grade; <strong>WCB</strong> is cast carbon steel.</li><li>PEEK and PVDF seats take higher temperatures than PTFE or RTFE; check the seat against your service temperature.</li></ul><h3>Ordering</h3><p>Give the size, pressure rating, end connection, body and seat material on your RFQ, with a make and part number if you have one. We confirm lead time and documentation on the quotation.</p>",
+   "seoTitle": "4″ Industrial Ball Valve — Stainless Steel",
+   "seoDescription": "4 in industrial ball valve, 600 psi. Matco-Norca. Request a quote.",
+   "faqs": [
+    {
+     "question": "What pressure ratings are available in a 4″ ball valve?",
+     "answer": "The valves we have in this size are rated 600 psi cold working pressure; the table gives each one as marked. Tell us your working pressure and fluid and we match the valve to it."
+    },
+    {
+     "question": "What do PN, WOG and CWP mean?",
+     "answer": "PN is the pressure rating in bar at 20 °C. WOG (water, oil, gas) and CWP (cold working pressure) are the rating in psi at ambient temperature. All three fall as temperature rises, so check the maker's pressure–temperature chart for hot service."
+    },
+    {
+     "question": "Which end connections can you supply?",
+     "answer": "Female NPT and BSP threads, socket-weld, butt-weld, flanged and grooved ends, depending on the make. State the end connection on the RFQ."
+    },
+    {
+     "question": "Can you supply a specific make or part number?",
+     "answer": "Yes. In this size we supply Matco-Norca. Give the make and part number on the RFQ and we quote against it."
+    },
+    {
+     "question": "Are these valves supplied new?",
+     "answer": "Yes. We supply new valves to the specification on your RFQ and confirm lead time and documentation on the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Valve Type",
+     "value": "Ball valve — industrial / process",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "valve_type"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size",
+     "value": "4 in (DN100)",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "nominal_size"
+    },
+    {
+     "group": "Performance",
+     "label": "Pressure Class",
+     "value": "600 WOG",
+     "unit": null,
+     "position": 2,
+     "isFilterable": false,
+     "templateKey": "pressure_class"
+    },
+    {
+     "group": "Identification",
+     "label": "Makes",
+     "value": "Matco-Norca",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": null
+    }
+   ],
+   "searchAliases": [
+    "Matco-Norca",
+    "4 ball valve",
+    "DN100 ball valve",
+    "ball valve"
+   ],
+   "images": [
+    {
+     "file": "matco-norca-4-valve-ball-600-w0g-593-1.jpg",
+     "alt": "Matco-Norca 4″ ball valve"
+    },
+    {
+     "file": "matco-norca-4-valve-ball-600-w0g-593-2.jpg",
+     "alt": "Matco-Norca 4″ ball valve"
+    }
+   ],
+   "seriesPage": null,
+   "category": "industrial-ball-valves",
+   "source": {
+    "ofsListings": [
+     "593"
+    ],
+    "corrections": []
+   }
+  }
+ ],
+ "excluded": [
+  {
+   "ofsSiteId": "345",
+   "reason": "Hydac SAE-flanged ball valve: size not stated by OFS or legible in the photos."
+  },
+  {
+   "ofsSiteId": "351",
+   "reason": "Habonim 12-AHB27-6666YB: size not stated by OFS or legible in the photos."
+  },
+  {
+   "ofsSiteId": "450",
+   "reason": "FMC ball valve (CWP 2,400 psi): size not stated or legible."
+  },
+  {
+   "ofsSiteId": "455",
+   "reason": "Barksdale shear-seal hydraulic valve, not a ball valve."
+  },
+  {
+   "ofsSiteId": "456",
+   "reason": "Barksdale air-operated shear-seal valve, not a ball valve."
+  }
+ ]
+}
