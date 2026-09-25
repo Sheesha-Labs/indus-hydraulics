@@ -1,44 +1,46 @@
 /**
- * Load the butterfly valves sourced from the OFS Energy catalogue export.
+ * Load a category of products sourced from the OFS Energy catalogue export.
  *
- * One page per series × body style × size (e.g. "DEMCO Series NE-C Wafer
- * Butterfly Valve, 4″"), each carrying a table of the Cameron part numbers we
- * can supply in that size — 29 DEMCO pages over 81 part numbers — plus two
- * Victaulic grooved valves. The payload is `data/ofs-butterfly-valves/listings.json`,
- * built from:
+ * Each category is one payload, `data/<payload>/listings.json`, built outside
+ * the repo from the OFS export and whatever evidence the photographs carry, and
+ * reviewed before it is loaded. This script only writes what the payload says:
+ * products, specs, FAQs, images and — where a payload names a series page —
+ * a link block on that page. Every payload also carries an `excluded` list naming
+ * each OFS listing it left out and why.
  *
- *   - the OFS export (part numbers and photographs), scraped 2026-09-23;
- *   - the Cameron labels photographed on 16 of the units, read by eye;
- *   - DEMCO's ordering table and series facts, already published on our
- *     NE-C / NE-I / NE-D / NF-C series pages;
- *   - Victaulic publications 08.05 Rev K (Series 700) and 08.20 Rev W (Series 761).
+ * PAYLOADS
  *
- * WHY TRIM COMES FROM THE PART NUMBER, NOT THE LISTING TEXT
+ *   ofs-butterfly-valves  One page per DEMCO series × body style × size, each
+ *     with a table of the Cameron part numbers we can supply (29 pages, 81 part
+ *     numbers), plus two Victaulic grooved valves. Trim comes from DEMCO's
+ *     ordering code, which matched 15 of the 16 Cameron labels photographed on
+ *     the units — OFS's own text contradicts its part numbers too often to use.
+ *     Only OFS's clean in-situ photos are used for DEMCO; the Victaulic photos
+ *     are watermarked, accepted as-is by the client on 2026-09-25.
  *
- * OFS's descriptions contradict their own part numbers in places — a "4″ NE-I"
- * whose number is a 3″ NE-C, the same number listed three times with three
- * trims. DEMCO's ordering code (body style, body, stem, disc, seat) decoded
- * cleanly against 15 of the 16 legible Cameron labels, so every row's trim is
- * read from the code. The one label that disagrees wins for that unit.
- * Fourteen listings whose number could not be placed in DEMCO's 200 psi table,
- * or that duplicate or contradict another, are left out and named in the
- * payload's `excluded` list.
+ *   ofs-gate-valves  One page per bore × pressure (19 pages, 60 valves), each
+ *     with a table of the makes, models, part numbers and API 6A markings read
+ *     off the valves' nameplates. OFS gives no part numbers, so the nameplates
+ *     are the only source; four "gate valves" turned out to be chokes, two relief
+ *     valves, one a plug valve and two check valves, and are excluded. Listings
+ *     that repeat an existing page's make, bore and pressure are excluded too, on
+ *     the client's instruction. Condition is not stated: the client sources these
+ *     new. All photos are watermarked, accepted as-is on 2026-09-25.
  *
- * IMAGES
+ * IMAGE KEYS
  *
- * Only OFS's own in-situ warehouse photographs and label close-ups are used for
- * DEMCO. OFS's white-background cutouts carry a faint third-party watermark and
- * are not uploaded. A size with no photograph of its own borrows one of the same
- * series and body style, and its alt text names the size shown. The Victaulic
- * photographs are watermarked; the client accepted them as-is on 2026-09-25.
+ * The public object key is built from the SKU, the image's position and its alt
+ * text — never from the supplier's filename, which can carry words such as
+ * "used" that a buyer should not read in an image URL. `originalFilename` keeps
+ * the supplier's name for traceability in the media library.
  *
  * Idempotent: products are matched on SKU and rewritten, images on
  * `Media.originalFilename`, and the series-page link block sits between marker
  * comments that are replaced rather than appended to.
  *
  * Usage:
- *   pnpm --filter @indus/db exec tsx src/scripts/import-ofs-butterfly-valves.ts \
- *     [--dry-run] [--publish] [--only=SKU]
+ *   pnpm --filter @indus/db exec tsx src/scripts/import-ofs-listings.ts \
+ *     --payload=ofs-gate-valves [--dry-run] [--publish] [--only=SKU]
  */
 import { existsSync, readFileSync } from 'node:fs'
 import { join, resolve } from 'node:path'
@@ -50,7 +52,7 @@ const db = new PrismaClient()
 
 const BUCKET = 'product-images'
 const WEB_ENV = resolve(__dirname, '../../../../apps/web/.env.local')
-const PAYLOAD = resolve(__dirname, '../../data/ofs-butterfly-valves/listings.json')
+const DATA_DIR = resolve(__dirname, '../../data')
 const LINKS_START = '<!-- ofs-sizes:start -->'
 const LINKS_END = '<!-- ofs-sizes:end -->'
 
@@ -67,9 +69,10 @@ type Entry = {
   sku: string
   slug: string
   title: string
-  brand: string
+  /** Brand slug, or null for a page that covers several makes. */
+  brand: string | null
   countryOfOrigin: string | null
-  leadTimeDays: number
+  leadTimeDays: number | null
   focusKeyword: string
   descriptionShort: string
   descriptionLong: string
@@ -136,9 +139,18 @@ function jpegSize(buf: Buffer): { width: number; height: number } | null {
   return null
 }
 
-/** OFS filenames are long and carry their site id; the object key only needs to be stable. */
-function objectKey(sku: string, file: string, position: number): string {
-  const stem = file.replace(/\.jpe?g$/i, '').replace(/^(cameron-)?(demco-)?/, '').replace(/[^a-z0-9]+/gi, '-').toLowerCase()
+/**
+ * Built from the alt text, not the supplier's filename: see IMAGE KEYS in the
+ * header. Position keeps two photos with the same alt text apart.
+ */
+function objectKey(sku: string, alt: string, position: number): string {
+  const stem = alt
+    .normalize('NFKD')
+    .replace(/″/g, '-in')
+    .replace(/[^a-z0-9]+/gi, '-')
+    .replace(/^-|-$/g, '')
+    .toLowerCase()
+    .slice(0, 80)
   return `products/${sku.toLowerCase()}/${String(position).padStart(2, '0')}-${stem}.jpg`
 }
 
@@ -155,7 +167,11 @@ async function main() {
   const dryRun = argv.includes('--dry-run')
   const publish = argv.includes('--publish')
   const only = argv.find((a) => a.startsWith('--only='))?.split('=')[1] ?? null
-  const payload: Payload = JSON.parse(readFileSync(PAYLOAD, 'utf8'))
+  const name = argv.find((a) => a.startsWith('--payload='))?.split('=')[1]
+  if (!name || !/^[a-z0-9-]+$/.test(name)) throw new Error('--payload=<folder under packages/db/data> is required')
+  const payloadPath = join(DATA_DIR, name, 'listings.json')
+  if (!existsSync(payloadPath)) throw new Error(`payload not found: ${payloadPath}`)
+  const payload: Payload = JSON.parse(readFileSync(payloadPath, 'utf8'))
   if (!existsSync(payload.imageDir)) throw new Error(`Image folder not found: ${payload.imageDir}`)
   const sb = supabase()
 
@@ -199,7 +215,7 @@ async function main() {
     console.log(`[brand] created ${b.name}`)
   }
   for (const slug of new Set(payload.products.map((p) => p.brand))) {
-    if (brandIdBySlug.has(slug)) continue
+    if (slug === null || brandIdBySlug.has(slug)) continue
     const b = await db.brand.findUnique({ where: { slug }, select: { id: true } })
     if (!b) throw new Error(`brand ${slug} not found`)
     brandIdBySlug.set(slug, b.id)
@@ -227,7 +243,7 @@ async function main() {
       continue
     }
 
-    const brandId = brandIdBySlug.get(e.brand)!
+    const brandId = e.brand === null ? null : brandIdBySlug.get(e.brand)!
     const data = {
       title: e.title,
       slug: e.slug,
@@ -295,7 +311,7 @@ async function main() {
       if (present.has(img.file)) continue
       const buf = readFileSync(join(payload.imageDir, img.file))
       const size = jpegSize(buf)
-      const objectPath = objectKey(e.sku, img.file, position)
+      const objectPath = objectKey(e.sku, img.alt, position)
       const { error } = await sb.storage.from(BUCKET).upload(objectPath, buf, {
         cacheControl: '31536000',
         upsert: true,
@@ -411,7 +427,7 @@ async function main() {
   }
 
   console.log(
-    `\n[ofs-butterfly] ${created} created, ${rewritten} rewritten, ${attached} images attached, ` +
+    `\n[ofs:${name}] ${created} created, ${rewritten} rewritten, ${attached} images attached, ` +
       `${payload.excluded.length} OFS listings excluded, ${problems.length} problems`
   )
   for (const p of problems) console.log(`  ! ${p}`)
