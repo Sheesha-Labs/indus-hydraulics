@@ -84,11 +84,14 @@ type Entry = {
   images: { file: string; alt: string; fallbackSize?: string }[]
   seriesPage: string | null
   group?: { series: string; style: string; size: string }
+  /** Overrides the payload's categorySlug for this product. */
+  category?: string
 }
 type Payload = {
   source: string
   imageDir: string
-  categorySlug: string
+  /** Default category; a product's own `category` wins. */
+  categorySlug: string | null
   specTemplateId: string
   /** Categories to create if missing, parent before child. Existing ones are never modified. */
   categories?: {
@@ -214,9 +217,14 @@ async function main() {
     console.log(`[category] created ${c.slug}`)
   }
 
-  const category = await db.category.findUnique({ where: { slug: payload.categorySlug }, select: { id: true } })
-  const creatingCategory = (payload.categories ?? []).some((c) => c.slug === payload.categorySlug)
-  if (!category && !(dryRun && creatingCategory)) throw new Error(`category ${payload.categorySlug} not found`)
+  const categoryIdBySlug = new Map<string, string>()
+  for (const slug of new Set(payload.products.map((p) => p.category ?? payload.categorySlug))) {
+    if (!slug) throw new Error('a product has no category and the payload sets no categorySlug')
+    const row = await db.category.findUnique({ where: { slug }, select: { id: true } })
+    const creating = (payload.categories ?? []).some((c) => c.slug === slug)
+    if (!row && !(dryRun && creating)) throw new Error(`category ${slug} not found`)
+    if (row) categoryIdBySlug.set(slug, row.id)
+  }
   const fields = await db.specTemplateField.findMany({
     where: { templateId: payload.specTemplateId },
     select: { id: true, key: true },
@@ -287,7 +295,7 @@ async function main() {
     const data = {
       title: e.title,
       slug: e.slug,
-      categoryId: category!.id,
+      categoryId: categoryIdBySlug.get((e.category ?? payload.categorySlug)!)!,
       brandId,
       specTemplateId: payload.specTemplateId,
       descriptionShort: e.descriptionShort,
