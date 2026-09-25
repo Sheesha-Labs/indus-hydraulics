@@ -3520,14 +3520,18 @@
    "title": "Grade 100 Alloy Lifting Chain",
    "category": "alloy-lifting-chain",
    "focusKeyword": "grade 100 alloy lifting chain",
-   "descriptionShort": "Grade 100 Alloy Lifting Chain, in 14 sizes, 6 mm to 26 mm. Indus part numbers, manufacturer's test certificate.",
-   "descriptionLong": "<p>Alloy lifting chain for chain slings and hoists. Alloy steel.</p><h3>Sizes and ratings</h3><p>14 sizes, 6 mm to 26 mm. Minimum breaking load 57 to 1,062 kN. The working load limit is confirmed on the quotation. Every size has its own Indus part number in the table below, with the loads in the unit the manufacturer rates them in.</p><h3>Choosing a size</h3><p>Use it with fittings of the same grade and size, and select on WLL for the sling configuration. Proof and breaking forces are test figures.</p><h3>Ordering</h3><p>Quote the Indus part number from the size table, or send the size and working load you need. Each consignment ships with the manufacturer's test certificate; say on the RFQ if your site needs anything more.</p>",
+   "descriptionShort": "Grade 100 Alloy Lifting Chain, in 14 sizes, 6 mm to 26 mm, WLL 1.4 to 26.5 t. Indus part numbers, manufacturer's test certificate.",
+   "descriptionLong": "<p>Alloy lifting chain for chain slings and hoists. Alloy steel.</p><h3>Sizes and ratings</h3><p>14 sizes, 6 mm to 26 mm. Working load limit 1.4 to 26.5 t. 12 mm, 23 mm and 25 mm (1″) sit outside the standard Grade 100 rating table, so their WLL is confirmed on the quotation. Minimum breaking load 57 to 1,062 kN. Every size has its own Indus part number in the table below, with the loads in the unit the manufacturer rates them in.</p><h3>Choosing a size</h3><p>Use it with fittings of the same grade and size, and select on WLL for the sling configuration. Proof and breaking forces are test figures.</p><h3>Ordering</h3><p>Quote the Indus part number from the size table, or send the size and working load you need. Each consignment ships with the manufacturer's test certificate; say on the RFQ if your site needs anything more.</p>",
    "seoTitle": "Grade 100 Alloy Lifting Chain",
-   "seoDescription": "Grade 100 Alloy Lifting Chain: 14 sizes, 6 mm to 26 mm. Indus part numbers and test certificate. Request a quote.",
+   "seoDescription": "Grade 100 Alloy Lifting Chain: 14 sizes, 6 mm to 26 mm, WLL 1.4 to 26.5 t. Indus part numbers and test certificate. Request a quote.",
    "faqs": [
     {
      "question": "What sizes does the Grade 100 alloy lifting chain come in?",
      "answer": "14 sizes, 6 mm to 26 mm. The size table lists each one with its Indus part number, ratings and dimensions."
+    },
+    {
+     "question": "What is the working load limit?",
+     "answer": "1.4 to 26.5 t, depending on size, to the standard Grade 100 rating. The WLL is the most the part may carry in service; proof and breaking loads are test figures and never working limits."
     },
     {
      "question": "Can Grade 30, 43 or 70 chain be used for lifting?",
@@ -3568,10 +3572,19 @@
     },
     {
      "group": "Performance",
+     "label": "Working load limit",
+     "value": "1.4 to 26.5 t",
+     "unit": null,
+     "position": 3,
+     "isFilterable": true,
+     "templateKey": "wll_range"
+    },
+    {
+     "group": "Performance",
      "label": "Minimum breaking load",
      "value": "57 to 1,062 kN",
      "unit": null,
-     "position": 3,
+     "position": 4,
      "isFilterable": false,
      "templateKey": "breaking_load_range"
     },
@@ -3580,7 +3593,7 @@
      "label": "Material",
      "value": "Alloy steel",
      "unit": null,
-     "position": 4,
+     "position": 5,
      "isFilterable": true,
      "templateKey": "material"
     },
@@ -3589,7 +3602,7 @@
      "label": "Sizes",
      "value": "14",
      "unit": null,
-     "position": 5,
+     "position": 6,
      "isFilterable": false,
      "templateKey": "sizes_count"
     },
@@ -3598,7 +3611,7 @@
      "label": "Certification",
      "value": "Manufacturer's test certificate",
      "unit": null,
-     "position": 6,
+     "position": 7,
      "isFilterable": false,
      "templateKey": "certification"
     }
@@ -3626,7 +3639,8 @@
       "insideWidth": 9.0,
       "proofKn": 35.0,
       "mblKn": 57.0,
-      "weightPerMetre": 0.8
+      "weightPerMetre": 0.8,
+      "wllT": 1.4
      }
     },
     {
@@ -3638,7 +3652,8 @@
       "insideWidth": 10.5,
       "proofKn": 48.0,
       "mblKn": 77.0,
-      "weightPerMetre": 1.09
+      "weightPerMetre": 1.09,
+      "wllT": 1.9
      }
     },
     {
@@ -3650,7 +3665,8 @@
       "insideWidth": 12.0,
       "proofKn": 63.0,
       "mblKn": 101.0,
-      "weightPerMetre": 1.43
+      "weightPerMetre": 1.43,
+      "wllT": 2.5
      }
     },
     {
@@ -3662,7 +3678,8 @@
       "insideWidth": 15.0,
       "proofKn": 98.0,
       "mblKn": 157.0,
-      "weightPerMetre": 2.23
+      "weightPerMetre": 2.23,
+      "wllT": 4.0
      }
     },
     {
@@ -3686,7 +3703,8 @@
       "insideWidth": 19.5,
       "proofKn": 166.0,
       "mblKn": 265.0,
-      "weightPerMetre": 3.77
+      "weightPerMetre": 3.77,
+      "wllT": 6.7
      }
     },
     {
@@ -3698,7 +3716,8 @@
       "insideWidth": 24.0,
       "proofKn": 251.0,
       "mblKn": 402.0,
-      "weightPerMetre": 5.71
+      "weightPerMetre": 5.71,
+      "wllT": 10.0
      }
     },
     {
@@ -3710,7 +3729,8 @@
       "insideWidth": 27.0,
       "proofKn": 318.0,
       "mblKn": 509.0,
-      "weightPerMetre": 7.23
+      "weightPerMetre": 7.23,
+      "wllT": 12.5
      }
     },
     {
@@ -3722,7 +3742,8 @@
       "insideWidth": 28.5,
       "proofKn": 354.0,
       "mblKn": 567.0,
-      "weightPerMetre": 8.04
+      "weightPerMetre": 8.04,
+      "wllT": 14.0
      }
     },
     {
@@ -3734,7 +3755,8 @@
       "insideWidth": 30.0,
       "proofKn": 393.0,
       "mblKn": 628.0,
-      "weightPerMetre": 8.92
+      "weightPerMetre": 8.92,
+      "wllT": 16.0
      }
     },
     {
@@ -3746,7 +3768,8 @@
       "insideWidth": 33.0,
       "proofKn": 475.0,
       "mblKn": 760.0,
-      "weightPerMetre": 10.8
+      "weightPerMetre": 10.8,
+      "wllT": 19.0
      }
     },
     {
@@ -3782,7 +3805,8 @@
       "insideWidth": 39.0,
       "proofKn": 664.0,
       "mblKn": 1062,
-      "weightPerMetre": 15.08
+      "weightPerMetre": 15.08,
+      "wllT": 26.5
      }
     }
    ],
@@ -34425,14 +34449,26 @@
    "title": "JIS B 1169 Eye Nut — Zinc Plated",
    "category": "eye-bolts-eye-nuts",
    "focusKeyword": "jis b 1169 eye nut",
-   "descriptionShort": "JIS B 1169 Eye Nut. Specification confirmed on quotation.",
-   "descriptionLong": "<p>Eye bolts and eye nuts give a threaded lifting point on machinery, moulds and equipment. Made to JIS B 1169. Zinc plated.</p><h3>Sizes</h3><p>The size range is confirmed on the quotation — tell us the size or rating you need.</p><h3>Choosing a size</h3><p>The WLL is for a straight pull along the thread axis. A fully seated shoulder eye takes an angled pull at a reduced rating; a plain eye is for vertical loads only. Screw it fully home into a sound thread of adequate length.</p><h3>Ordering</h3><p>Send the size, quantity and any standard you need met, and we will confirm the specification and lead time on the quotation.</p>",
+   "descriptionShort": "JIS B 1169 Eye Nut, in 10 sizes, M8 to M64, WLL 80 to 9,000 kg. Indus part numbers, manufacturer's test certificate.",
+   "descriptionLong": "<p>Eye bolts and eye nuts give a threaded lifting point on machinery, moulds and equipment. Made to JIS B 1169. Zinc plated.</p><h3>Sizes and ratings</h3><p>10 sizes, M8 to M64. Working load limit 80 to 9,000 kg. Every size has its own Indus part number in the table below, with the loads in the unit the manufacturer rates them in.</p><h3>Choosing a size</h3><p>The WLL is for a straight pull along the thread axis. A fully seated shoulder eye takes an angled pull at a reduced rating; a plain eye is for vertical loads only. Screw it fully home into a sound thread of adequate length.</p><h3>Ordering</h3><p>Quote the Indus part number from the size table, or send the size and working load you need. Each consignment ships with the manufacturer's test certificate; say on the RFQ if your site needs anything more.</p>",
    "seoTitle": "JIS B 1169 Eye Nut Zinc Plated",
-   "seoDescription": "JIS B 1169 Eye Nut. Request a quote.",
+   "seoDescription": "JIS B 1169 Eye Nut: 10 sizes, M8 to M64, WLL 80 to 9,000 kg. Indus part numbers and test certificate. Request a quote.",
    "faqs": [
+    {
+     "question": "What sizes does the JIS B 1169 eye nut come in?",
+     "answer": "10 sizes, M8 to M64. The size table lists each one with its Indus part number, ratings and dimensions."
+    },
+    {
+     "question": "What is the working load limit?",
+     "answer": "80 to 9,000 kg, depending on size, as the manufacturer rates it. The WLL is the most the part may carry in service; proof and breaking loads are test figures and never working limits."
+    },
     {
      "question": "What is the difference between WLL, SWL and breaking load?",
      "answer": "WLL — working load limit — is the most the manufacturer rates a part to carry in service. SWL, safe working load, is the older term and is sometimes set lower for a particular installation. The minimum breaking load is what the part withstood in test, several times its WLL, and it is never a working figure."
+    },
+    {
+     "question": "Do the parts come with a test certificate?",
+     "answer": "Yes. Each consignment ships with the manufacturer's test certificate. For third-party certification or witnessed proof testing, say so on the RFQ."
     }
    ],
    "specs": [
@@ -34455,13 +34491,49 @@
      "templateKey": "pattern_standard"
     },
     {
+     "group": "Dimensions",
+     "label": "Size range",
+     "value": "M8 to M64",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "size_range"
+    },
+    {
+     "group": "Performance",
+     "label": "Working load limit",
+     "value": "80 to 9,000 kg",
+     "unit": null,
+     "position": 3,
+     "isFilterable": true,
+     "templateKey": "wll_range"
+    },
+    {
      "group": "Construction",
      "label": "Finish",
      "value": "Zinc plated",
      "unit": null,
-     "position": 2,
+     "position": 4,
      "isFilterable": true,
      "templateKey": "finish"
+    },
+    {
+     "group": "Identification",
+     "label": "Sizes",
+     "value": "10",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "sizes_count"
+    },
+    {
+     "group": "Compliance",
+     "label": "Certification",
+     "value": "Manufacturer's test certificate",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "certification"
     }
    ],
    "searchAliases": [
@@ -34477,7 +34549,118 @@
      "alt": "JIS B 1169 Eye Nut — Zinc Plated"
     }
    ],
-   "variants": [],
+   "variants": [
+    {
+     "partNumber": "IH-LR-EB-JIS69-M8",
+     "position": 0,
+     "dimensions": {
+      "size": "M8",
+      "wllKg": 80.0,
+      "eyeId": 20,
+      "materialDia": 6.3,
+      "overallLength": 39.3
+     }
+    },
+    {
+     "partNumber": "IH-LR-EB-JIS69-M10",
+     "position": 1,
+     "dimensions": {
+      "size": "M10",
+      "wllKg": 150.0,
+      "eyeId": 25,
+      "materialDia": 8,
+      "overallLength": 48.5
+     }
+    },
+    {
+     "partNumber": "IH-LR-EB-JIS69-M12",
+     "position": 2,
+     "dimensions": {
+      "size": "M12",
+      "wllKg": 220.0,
+      "eyeId": 30,
+      "materialDia": 10,
+      "overallLength": 61
+     }
+    },
+    {
+     "partNumber": "IH-LR-EB-JIS69-M16",
+     "position": 3,
+     "dimensions": {
+      "size": "M16",
+      "wllKg": 450.0,
+      "eyeId": 35,
+      "materialDia": 12.5,
+      "overallLength": 72
+     }
+    },
+    {
+     "partNumber": "IH-LR-EB-JIS69-M20",
+     "position": 4,
+     "dimensions": {
+      "size": "M20",
+      "wllKg": 630.0,
+      "eyeId": 40,
+      "materialDia": 16,
+      "overallLength": 86
+     }
+    },
+    {
+     "partNumber": "IH-LR-EB-JIS69-M24",
+     "position": 5,
+     "dimensions": {
+      "size": "M24",
+      "wllKg": 950.0,
+      "eyeId": 50,
+      "materialDia": 20,
+      "overallLength": 111
+     }
+    },
+    {
+     "partNumber": "IH-LR-EB-JIS69-M36",
+     "position": 6,
+     "dimensions": {
+      "size": "M36",
+      "wllKg": 2300.0,
+      "eyeId": 70,
+      "materialDia": 31.5,
+      "overallLength": 161.5
+     }
+    },
+    {
+     "partNumber": "IH-LR-EB-JIS69-M42",
+     "position": 7,
+     "dimensions": {
+      "size": "M42",
+      "wllKg": 3400.0,
+      "eyeId": 80,
+      "materialDia": 35.5,
+      "overallLength": 184.5
+     }
+    },
+    {
+     "partNumber": "IH-LR-EB-JIS69-M48",
+     "position": 8,
+     "dimensions": {
+      "size": "M48",
+      "wllKg": 4500.0,
+      "eyeId": 90,
+      "materialDia": 40,
+      "overallLength": 208
+     }
+    },
+    {
+     "partNumber": "IH-LR-EB-JIS69-M64",
+     "position": 9,
+     "dimensions": {
+      "size": "M64",
+      "wllKg": 9000.0,
+      "eyeId": 110,
+      "materialDia": 50,
+      "overallLength": 256
+     }
+    }
+   ],
    "crossReferences": []
   },
   {
@@ -34486,10 +34669,10 @@
    "title": "Stainless Steel DIN 582 Eye Nut",
    "category": "eye-bolts-eye-nuts",
    "focusKeyword": "stainless steel din 582 eye nut",
-   "descriptionShort": "Stainless Steel DIN 582 Eye Nut, in 8 sizes, M6 to M30, WLL 0.07 to 3.6 t. Indus part numbers, manufacturer's test certificate.",
-   "descriptionLong": "<p>Eye bolts and eye nuts give a threaded lifting point on machinery, moulds and equipment. Made to DIN 582. Stainless steel 304 or 316.</p><h3>Sizes and ratings</h3><p>8 sizes, M6 to M30. Working load limit 0.07 to 3.6 t. Every size has its own Indus part number in the table below, with the loads in the unit the manufacturer rates them in.</p><h3>Choosing a size</h3><p>The WLL is for a straight pull along the thread axis. A fully seated shoulder eye takes an angled pull at a reduced rating; a plain eye is for vertical loads only. Screw it fully home into a sound thread of adequate length.</p><h3>Ordering</h3><p>Quote the Indus part number from the size table, or send the size and working load you need. Each consignment ships with the manufacturer's test certificate; say on the RFQ if your site needs anything more.</p>",
+   "descriptionShort": "Stainless Steel DIN 582 Eye Nut, in 8 sizes, M6 to M30, WLL 0.07 to 3.2 t. Indus part numbers, manufacturer's test certificate.",
+   "descriptionLong": "<p>Eye bolts and eye nuts give a threaded lifting point on machinery, moulds and equipment. Made to DIN 582. Stainless steel 304 or 316.</p><h3>Sizes and ratings</h3><p>8 sizes, M6 to M30. Working load limit 0.07 to 3.2 t. Every size has its own Indus part number in the table below, with the loads in the unit the manufacturer rates them in.</p><h3>Choosing a size</h3><p>The WLL is for a straight pull along the thread axis. A fully seated shoulder eye takes an angled pull at a reduced rating; a plain eye is for vertical loads only. Screw it fully home into a sound thread of adequate length.</p><h3>Ordering</h3><p>Quote the Indus part number from the size table, or send the size and working load you need. Each consignment ships with the manufacturer's test certificate; say on the RFQ if your site needs anything more.</p>",
    "seoTitle": "Stainless Steel DIN 582 Eye Nut",
-   "seoDescription": "Stainless Steel DIN 582 Eye Nut: 8 sizes, M6 to M30, WLL 0.07 to 3.6 t. Indus part numbers and test certificate. Request a quote.",
+   "seoDescription": "Stainless Steel DIN 582 Eye Nut: 8 sizes, M6 to M30, WLL 0.07 to 3.2 t. Indus part numbers and test certificate. Request a quote.",
    "faqs": [
     {
      "question": "What sizes does the stainless steel DIN 582 eye nut come in?",
@@ -34497,7 +34680,7 @@
     },
     {
      "question": "What is the working load limit?",
-     "answer": "0.07 to 3.6 t, depending on size, as the manufacturer rates it. The WLL is the most the part may carry in service; proof and breaking loads are test figures and never working limits."
+     "answer": "0.07 to 3.2 t, depending on size, as the manufacturer rates it. The WLL is the most the part may carry in service; proof and breaking loads are test figures and never working limits."
     },
     {
      "question": "What is the difference between WLL, SWL and breaking load?",
@@ -34539,7 +34722,7 @@
     {
      "group": "Performance",
      "label": "Working load limit",
-     "value": "0.07 to 3.6 t",
+     "value": "0.07 to 3.2 t",
      "unit": null,
      "position": 3,
      "isFilterable": true,
@@ -34655,7 +34838,7 @@
      "position": 7,
      "dimensions": {
       "size": "M30",
-      "wllT": 3.6,
+      "wllT": 3.2,
       "weightKg": 1.32
      }
     }
@@ -34668,10 +34851,10 @@
    "title": "Stainless Steel DIN 580 Eye Bolt",
    "category": "eye-bolts-eye-nuts",
    "focusKeyword": "stainless steel din 580 eye bolt",
-   "descriptionShort": "Stainless Steel DIN 580 Eye Bolt, in 8 sizes, M6 to M30, WLL 0.07 to 3.6 t. Indus part numbers, manufacturer's test certificate.",
-   "descriptionLong": "<p>Eye bolts and eye nuts give a threaded lifting point on machinery, moulds and equipment. Made to DIN 580. Stainless steel 304 or 316.</p><h3>Sizes and ratings</h3><p>8 sizes, M6 to M30. Working load limit 0.07 to 3.6 t. Every size has its own Indus part number in the table below, with the loads in the unit the manufacturer rates them in.</p><h3>Choosing a size</h3><p>The WLL is for a straight pull along the thread axis. A fully seated shoulder eye takes an angled pull at a reduced rating; a plain eye is for vertical loads only. Screw it fully home into a sound thread of adequate length.</p><h3>Ordering</h3><p>Quote the Indus part number from the size table, or send the size and working load you need. Each consignment ships with the manufacturer's test certificate; say on the RFQ if your site needs anything more.</p>",
+   "descriptionShort": "Stainless Steel DIN 580 Eye Bolt, in 8 sizes, M6 to M30, WLL 0.07 to 3.2 t. Indus part numbers, manufacturer's test certificate.",
+   "descriptionLong": "<p>Eye bolts and eye nuts give a threaded lifting point on machinery, moulds and equipment. Made to DIN 580. Stainless steel 304 or 316.</p><h3>Sizes and ratings</h3><p>8 sizes, M6 to M30. Working load limit 0.07 to 3.2 t. Every size has its own Indus part number in the table below, with the loads in the unit the manufacturer rates them in.</p><h3>Choosing a size</h3><p>The WLL is for a straight pull along the thread axis. A fully seated shoulder eye takes an angled pull at a reduced rating; a plain eye is for vertical loads only. Screw it fully home into a sound thread of adequate length.</p><h3>Ordering</h3><p>Quote the Indus part number from the size table, or send the size and working load you need. Each consignment ships with the manufacturer's test certificate; say on the RFQ if your site needs anything more.</p>",
    "seoTitle": "Stainless Steel DIN 580 Eye Bolt",
-   "seoDescription": "Stainless Steel DIN 580 Eye Bolt: 8 sizes, M6 to M30, WLL 0.07 to 3.6 t. Indus part numbers and test certificate. Request a quote.",
+   "seoDescription": "Stainless Steel DIN 580 Eye Bolt: 8 sizes, M6 to M30, WLL 0.07 to 3.2 t. Indus part numbers and test certificate. Request a quote.",
    "faqs": [
     {
      "question": "What sizes does the stainless steel DIN 580 eye bolt come in?",
@@ -34679,7 +34862,7 @@
     },
     {
      "question": "What is the working load limit?",
-     "answer": "0.07 to 3.6 t, depending on size, as the manufacturer rates it. The WLL is the most the part may carry in service; proof and breaking loads are test figures and never working limits."
+     "answer": "0.07 to 3.2 t, depending on size, as the manufacturer rates it. The WLL is the most the part may carry in service; proof and breaking loads are test figures and never working limits."
     },
     {
      "question": "What is the difference between WLL, SWL and breaking load?",
@@ -34721,7 +34904,7 @@
     {
      "group": "Performance",
      "label": "Working load limit",
-     "value": "0.07 to 3.6 t",
+     "value": "0.07 to 3.2 t",
      "unit": null,
      "position": 3,
      "isFilterable": true,
@@ -34837,7 +35020,7 @@
      "position": 7,
      "dimensions": {
       "size": "M30",
-      "wllT": 3.6,
+      "wllT": 3.2,
       "weightKg": 1.66
      }
     }
@@ -35057,14 +35240,26 @@
    "title": "JIS B 1168 Eye Bolt — Zinc Plated",
    "category": "eye-bolts-eye-nuts",
    "focusKeyword": "jis b 1168 eye bolt",
-   "descriptionShort": "JIS B 1168 Eye Bolt. Specification confirmed on quotation.",
-   "descriptionLong": "<p>Eye bolts and eye nuts give a threaded lifting point on machinery, moulds and equipment. Made to JIS B 1168. Zinc plated.</p><h3>Sizes</h3><p>The size range is confirmed on the quotation — tell us the size or rating you need.</p><h3>Choosing a size</h3><p>The WLL is for a straight pull along the thread axis. A fully seated shoulder eye takes an angled pull at a reduced rating; a plain eye is for vertical loads only. Screw it fully home into a sound thread of adequate length.</p><h3>Ordering</h3><p>Send the size, quantity and any standard you need met, and we will confirm the specification and lead time on the quotation.</p>",
+   "descriptionShort": "JIS B 1168 Eye Bolt, in 11 sizes, M8 to M64, WLL 80 to 9,000 kg. Indus part numbers, manufacturer's test certificate.",
+   "descriptionLong": "<p>Eye bolts and eye nuts give a threaded lifting point on machinery, moulds and equipment. Made to JIS B 1168. Zinc plated.</p><h3>Sizes and ratings</h3><p>11 sizes, M8 to M64. Working load limit 80 to 9,000 kg. Every size has its own Indus part number in the table below, with the loads in the unit the manufacturer rates them in.</p><h3>Choosing a size</h3><p>The WLL is for a straight pull along the thread axis. A fully seated shoulder eye takes an angled pull at a reduced rating; a plain eye is for vertical loads only. Screw it fully home into a sound thread of adequate length.</p><h3>Ordering</h3><p>Quote the Indus part number from the size table, or send the size and working load you need. Each consignment ships with the manufacturer's test certificate; say on the RFQ if your site needs anything more.</p>",
    "seoTitle": "JIS B 1168 Eye Bolt Zinc Plated",
-   "seoDescription": "JIS B 1168 Eye Bolt. Request a quote.",
+   "seoDescription": "JIS B 1168 Eye Bolt: 11 sizes, M8 to M64, WLL 80 to 9,000 kg. Indus part numbers and test certificate. Request a quote.",
    "faqs": [
+    {
+     "question": "What sizes does the JIS B 1168 eye bolt come in?",
+     "answer": "11 sizes, M8 to M64. The size table lists each one with its Indus part number, ratings and dimensions."
+    },
+    {
+     "question": "What is the working load limit?",
+     "answer": "80 to 9,000 kg, depending on size, as the manufacturer rates it. The WLL is the most the part may carry in service; proof and breaking loads are test figures and never working limits."
+    },
     {
      "question": "What is the difference between WLL, SWL and breaking load?",
      "answer": "WLL — working load limit — is the most the manufacturer rates a part to carry in service. SWL, safe working load, is the older term and is sometimes set lower for a particular installation. The minimum breaking load is what the part withstood in test, several times its WLL, and it is never a working figure."
+    },
+    {
+     "question": "Do the parts come with a test certificate?",
+     "answer": "Yes. Each consignment ships with the manufacturer's test certificate. For third-party certification or witnessed proof testing, say so on the RFQ."
     }
    ],
    "specs": [
@@ -35087,13 +35282,49 @@
      "templateKey": "pattern_standard"
     },
     {
+     "group": "Dimensions",
+     "label": "Size range",
+     "value": "M8 to M64",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "size_range"
+    },
+    {
+     "group": "Performance",
+     "label": "Working load limit",
+     "value": "80 to 9,000 kg",
+     "unit": null,
+     "position": 3,
+     "isFilterable": true,
+     "templateKey": "wll_range"
+    },
+    {
      "group": "Construction",
      "label": "Finish",
      "value": "Zinc plated",
      "unit": null,
-     "position": 2,
+     "position": 4,
      "isFilterable": true,
      "templateKey": "finish"
+    },
+    {
+     "group": "Identification",
+     "label": "Sizes",
+     "value": "11",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "sizes_count"
+    },
+    {
+     "group": "Compliance",
+     "label": "Certification",
+     "value": "Manufacturer's test certificate",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "certification"
     }
    ],
    "searchAliases": [
@@ -35109,7 +35340,140 @@
      "alt": "JIS B 1168 Eye Bolt — Zinc Plated"
     }
    ],
-   "variants": [],
+   "variants": [
+    {
+     "partNumber": "IH-LR-EB-JIS68-M8",
+     "position": 0,
+     "dimensions": {
+      "size": "M8",
+      "wllKg": 80.0,
+      "eyeId": 20,
+      "materialDia": 6.3,
+      "overallLength": 33.3,
+      "threadLength": 15
+     }
+    },
+    {
+     "partNumber": "IH-LR-EB-JIS68-M10",
+     "position": 1,
+     "dimensions": {
+      "size": "M10",
+      "wllKg": 150.0,
+      "eyeId": 25,
+      "materialDia": 8,
+      "overallLength": 41.5,
+      "threadLength": 18
+     }
+    },
+    {
+     "partNumber": "IH-LR-EB-JIS68-M12",
+     "position": 2,
+     "dimensions": {
+      "size": "M12",
+      "wllKg": 220.0,
+      "eyeId": 30,
+      "materialDia": 10,
+      "overallLength": 51,
+      "threadLength": 22
+     }
+    },
+    {
+     "partNumber": "IH-LR-EB-JIS68-M16",
+     "position": 3,
+     "dimensions": {
+      "size": "M16",
+      "wllKg": 450.0,
+      "eyeId": 35,
+      "materialDia": 12.5,
+      "overallLength": 60,
+      "threadLength": 27
+     }
+    },
+    {
+     "partNumber": "IH-LR-EB-JIS68-M20",
+     "position": 4,
+     "dimensions": {
+      "size": "M20",
+      "wllKg": 630.0,
+      "eyeId": 40,
+      "materialDia": 16,
+      "overallLength": 71,
+      "threadLength": 30
+     }
+    },
+    {
+     "partNumber": "IH-LR-EB-JIS68-M24",
+     "position": 5,
+     "dimensions": {
+      "size": "M24",
+      "wllKg": 950.0,
+      "eyeId": 50,
+      "materialDia": 20,
+      "overallLength": 90,
+      "threadLength": 38
+     }
+    },
+    {
+     "partNumber": "IH-LR-EB-JIS68-M30",
+     "position": 6,
+     "dimensions": {
+      "size": "M30",
+      "wllKg": 1500.0,
+      "eyeId": 60,
+      "materialDia": 25,
+      "overallLength": 110,
+      "threadLength": 45
+     }
+    },
+    {
+     "partNumber": "IH-LR-EB-JIS68-M36",
+     "position": 7,
+     "dimensions": {
+      "size": "M36",
+      "wllKg": 2300.0,
+      "eyeId": 70,
+      "materialDia": 31.5,
+      "overallLength": 131.5,
+      "threadLength": 55
+     }
+    },
+    {
+     "partNumber": "IH-LR-EB-JIS68-M42",
+     "position": 8,
+     "dimensions": {
+      "size": "M42",
+      "wllKg": 3400.0,
+      "eyeId": 80,
+      "materialDia": 35.5,
+      "overallLength": 150.5,
+      "threadLength": 65
+     }
+    },
+    {
+     "partNumber": "IH-LR-EB-JIS68-M48",
+     "position": 9,
+     "dimensions": {
+      "size": "M48",
+      "wllKg": 4500.0,
+      "eyeId": 90,
+      "materialDia": 40,
+      "overallLength": 170,
+      "threadLength": 70
+     }
+    },
+    {
+     "partNumber": "IH-LR-EB-JIS68-M64",
+     "position": 10,
+     "dimensions": {
+      "size": "M64",
+      "wllKg": 9000.0,
+      "eyeId": 110,
+      "materialDia": 50,
+      "overallLength": 210,
+      "threadLength": 90
+     }
+    }
+   ],
    "crossReferences": []
   },
   {
@@ -35118,14 +35482,26 @@
    "title": "DIN 582 Eye Nut",
    "category": "eye-bolts-eye-nuts",
    "focusKeyword": "din 582 eye nut",
-   "descriptionShort": "DIN 582 Eye Nut. Specification confirmed on quotation.",
-   "descriptionLong": "<p>Eye bolts and eye nuts give a threaded lifting point on machinery, moulds and equipment. Made to DIN 582.</p><h3>Sizes</h3><p>The size range is confirmed on the quotation — tell us the size or rating you need.</p><h3>Choosing a size</h3><p>The WLL is for a straight pull along the thread axis. A fully seated shoulder eye takes an angled pull at a reduced rating; a plain eye is for vertical loads only. Screw it fully home into a sound thread of adequate length.</p><h3>Ordering</h3><p>Send the size, quantity and any standard you need met, and we will confirm the specification and lead time on the quotation.</p>",
+   "descriptionShort": "DIN 582 Eye Nut, in 12 sizes, M8 to M64, WLL 140 to 16,000 kg. Indus part numbers, manufacturer's test certificate.",
+   "descriptionLong": "<p>Eye bolts and eye nuts give a threaded lifting point on machinery, moulds and equipment. Made to DIN 582.</p><h3>Sizes and ratings</h3><p>12 sizes, M8 to M64. Working load limit 140 to 16,000 kg. Every size has its own Indus part number in the table below, with the loads in the unit the manufacturer rates them in.</p><h3>Choosing a size</h3><p>The WLL is for a straight pull along the thread axis. A fully seated shoulder eye takes an angled pull at a reduced rating; a plain eye is for vertical loads only. Screw it fully home into a sound thread of adequate length.</p><h3>Ordering</h3><p>Quote the Indus part number from the size table, or send the size and working load you need. Each consignment ships with the manufacturer's test certificate; say on the RFQ if your site needs anything more.</p>",
    "seoTitle": "DIN 582 Eye Nut",
-   "seoDescription": "DIN 582 Eye Nut. Request a quote.",
+   "seoDescription": "DIN 582 Eye Nut: 12 sizes, M8 to M64, WLL 140 to 16,000 kg. Indus part numbers and test certificate. Request a quote.",
    "faqs": [
+    {
+     "question": "What sizes does the DIN 582 eye nut come in?",
+     "answer": "12 sizes, M8 to M64. The size table lists each one with its Indus part number, ratings and dimensions."
+    },
+    {
+     "question": "What is the working load limit?",
+     "answer": "140 to 16,000 kg, depending on size, as the manufacturer rates it. The WLL is the most the part may carry in service; proof and breaking loads are test figures and never working limits."
+    },
     {
      "question": "What is the difference between WLL, SWL and breaking load?",
      "answer": "WLL — working load limit — is the most the manufacturer rates a part to carry in service. SWL, safe working load, is the older term and is sometimes set lower for a particular installation. The minimum breaking load is what the part withstood in test, several times its WLL, and it is never a working figure."
+    },
+    {
+     "question": "Do the parts come with a test certificate?",
+     "answer": "Yes. Each consignment ships with the manufacturer's test certificate. For third-party certification or witnessed proof testing, say so on the RFQ."
     }
    ],
    "specs": [
@@ -35146,6 +35522,42 @@
      "position": 1,
      "isFilterable": false,
      "templateKey": "pattern_standard"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Size range",
+     "value": "M8 to M64",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "size_range"
+    },
+    {
+     "group": "Performance",
+     "label": "Working load limit",
+     "value": "140 to 16,000 kg",
+     "unit": null,
+     "position": 3,
+     "isFilterable": true,
+     "templateKey": "wll_range"
+    },
+    {
+     "group": "Identification",
+     "label": "Sizes",
+     "value": "12",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "sizes_count"
+    },
+    {
+     "group": "Compliance",
+     "label": "Certification",
+     "value": "Manufacturer's test certificate",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "certification"
     }
    ],
    "searchAliases": [
@@ -35161,7 +35573,140 @@
      "alt": "DIN 582 Eye Nut"
     }
    ],
-   "variants": [],
+   "variants": [
+    {
+     "partNumber": "IH-LR-EB-D582-M8",
+     "position": 0,
+     "dimensions": {
+      "size": "M8",
+      "wllKg": 140.0,
+      "eyeId": 20,
+      "overallLength": 36,
+      "weightKg": 0.05
+     }
+    },
+    {
+     "partNumber": "IH-LR-EB-D582-M10",
+     "position": 1,
+     "dimensions": {
+      "size": "M10",
+      "wllKg": 230.0,
+      "eyeId": 25,
+      "overallLength": 45,
+      "weightKg": 0.09
+     }
+    },
+    {
+     "partNumber": "IH-LR-EB-D582-M12",
+     "position": 2,
+     "dimensions": {
+      "size": "M12",
+      "wllKg": 340.0,
+      "eyeId": 30,
+      "overallLength": 53,
+      "weightKg": 0.15
+     }
+    },
+    {
+     "partNumber": "IH-LR-EB-D582-M16",
+     "position": 3,
+     "dimensions": {
+      "size": "M16",
+      "wllKg": 700.0,
+      "eyeId": 35,
+      "overallLength": 62,
+      "weightKg": 0.24
+     }
+    },
+    {
+     "partNumber": "IH-LR-EB-D582-M20",
+     "position": 4,
+     "dimensions": {
+      "size": "M20",
+      "wllKg": 1200.0,
+      "eyeId": 40,
+      "overallLength": 71,
+      "weightKg": 0.36
+     }
+    },
+    {
+     "partNumber": "IH-LR-EB-D582-M24",
+     "position": 5,
+     "dimensions": {
+      "size": "M24",
+      "wllKg": 1800.0,
+      "eyeId": 50,
+      "overallLength": 90,
+      "weightKg": 0.72
+     }
+    },
+    {
+     "partNumber": "IH-LR-EB-D582-M30",
+     "position": 6,
+     "dimensions": {
+      "size": "M30",
+      "wllKg": 3200.0,
+      "eyeId": 65,
+      "overallLength": 109,
+      "weightKg": 1.32
+     }
+    },
+    {
+     "partNumber": "IH-LR-EB-D582-M36",
+     "position": 7,
+     "dimensions": {
+      "size": "M36",
+      "wllKg": 4600.0,
+      "eyeId": 75,
+      "overallLength": 128,
+      "weightKg": 2.08
+     }
+    },
+    {
+     "partNumber": "IH-LR-EB-D582-M42",
+     "position": 8,
+     "dimensions": {
+      "size": "M42",
+      "wllKg": 6300.0,
+      "eyeId": 85,
+      "overallLength": 147,
+      "weightKg": 3.11
+     }
+    },
+    {
+     "partNumber": "IH-LR-EB-D582-M48",
+     "position": 9,
+     "dimensions": {
+      "size": "M48",
+      "wllKg": 8600.0,
+      "eyeId": 100,
+      "overallLength": 168,
+      "weightKg": 5.02
+     }
+    },
+    {
+     "partNumber": "IH-LR-EB-D582-M56",
+     "position": 10,
+     "dimensions": {
+      "size": "M56",
+      "wllKg": 11500.0,
+      "eyeId": 110,
+      "overallLength": 187,
+      "weightKg": 6.69
+     }
+    },
+    {
+     "partNumber": "IH-LR-EB-D582-M64",
+     "position": 11,
+     "dimensions": {
+      "size": "M64",
+      "wllKg": 16000.0,
+      "eyeId": 120,
+      "overallLength": 208,
+      "weightKg": 9.3
+     }
+    }
+   ],
    "crossReferences": []
   },
   {
@@ -35170,14 +35715,26 @@
    "title": "DIN 580 Eye Bolt",
    "category": "eye-bolts-eye-nuts",
    "focusKeyword": "din 580 eye bolt",
-   "descriptionShort": "DIN 580 Eye Bolt. Specification confirmed on quotation.",
-   "descriptionLong": "<p>Eye bolts and eye nuts give a threaded lifting point on machinery, moulds and equipment. Made to DIN 580.</p><h3>Sizes</h3><p>The size range is confirmed on the quotation — tell us the size or rating you need.</p><h3>Choosing a size</h3><p>The WLL is for a straight pull along the thread axis. A fully seated shoulder eye takes an angled pull at a reduced rating; a plain eye is for vertical loads only. Screw it fully home into a sound thread of adequate length.</p><h3>Ordering</h3><p>Send the size, quantity and any standard you need met, and we will confirm the specification and lead time on the quotation.</p>",
+   "descriptionShort": "DIN 580 Eye Bolt, in 15 sizes, M8 to M100×6, WLL 140 to 40,000 kg. Indus part numbers, manufacturer's test certificate.",
+   "descriptionLong": "<p>Eye bolts and eye nuts give a threaded lifting point on machinery, moulds and equipment. Made to DIN 580.</p><h3>Sizes and ratings</h3><p>15 sizes, M8 to M100×6. Working load limit 140 to 40,000 kg. Every size has its own Indus part number in the table below, with the loads in the unit the manufacturer rates them in.</p><h3>Choosing a size</h3><p>The WLL is for a straight pull along the thread axis. A fully seated shoulder eye takes an angled pull at a reduced rating; a plain eye is for vertical loads only. Screw it fully home into a sound thread of adequate length.</p><h3>Ordering</h3><p>Quote the Indus part number from the size table, or send the size and working load you need. Each consignment ships with the manufacturer's test certificate; say on the RFQ if your site needs anything more.</p>",
    "seoTitle": "DIN 580 Eye Bolt",
-   "seoDescription": "DIN 580 Eye Bolt. Request a quote.",
+   "seoDescription": "DIN 580 Eye Bolt: 15 sizes, M8 to M100×6, WLL 140 to 40,000 kg. Indus part numbers and test certificate. Request a quote.",
    "faqs": [
+    {
+     "question": "What sizes does the DIN 580 eye bolt come in?",
+     "answer": "15 sizes, M8 to M100×6. The size table lists each one with its Indus part number, ratings and dimensions."
+    },
+    {
+     "question": "What is the working load limit?",
+     "answer": "140 to 40,000 kg, depending on size, as the manufacturer rates it. The WLL is the most the part may carry in service; proof and breaking loads are test figures and never working limits."
+    },
     {
      "question": "What is the difference between WLL, SWL and breaking load?",
      "answer": "WLL — working load limit — is the most the manufacturer rates a part to carry in service. SWL, safe working load, is the older term and is sometimes set lower for a particular installation. The minimum breaking load is what the part withstood in test, several times its WLL, and it is never a working figure."
+    },
+    {
+     "question": "Do the parts come with a test certificate?",
+     "answer": "Yes. Each consignment ships with the manufacturer's test certificate. For third-party certification or witnessed proof testing, say so on the RFQ."
     }
    ],
    "specs": [
@@ -35198,6 +35755,42 @@
      "position": 1,
      "isFilterable": false,
      "templateKey": "pattern_standard"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Size range",
+     "value": "M8 to M100×6",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "size_range"
+    },
+    {
+     "group": "Performance",
+     "label": "Working load limit",
+     "value": "140 to 40,000 kg",
+     "unit": null,
+     "position": 3,
+     "isFilterable": true,
+     "templateKey": "wll_range"
+    },
+    {
+     "group": "Identification",
+     "label": "Sizes",
+     "value": "15",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "sizes_count"
+    },
+    {
+     "group": "Compliance",
+     "label": "Certification",
+     "value": "Manufacturer's test certificate",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "certification"
     }
    ],
    "searchAliases": [
@@ -35213,7 +35806,188 @@
      "alt": "DIN 580 Eye Bolt"
     }
    ],
-   "variants": [],
+   "variants": [
+    {
+     "partNumber": "IH-LR-EB-D580-M8",
+     "position": 0,
+     "dimensions": {
+      "size": "M8",
+      "wllKg": 140.0,
+      "eyeId": 20,
+      "overallLength": 36,
+      "threadLength": 13,
+      "weightKg": 0.06
+     }
+    },
+    {
+     "partNumber": "IH-LR-EB-D580-M10",
+     "position": 1,
+     "dimensions": {
+      "size": "M10",
+      "wllKg": 230.0,
+      "eyeId": 25,
+      "overallLength": 45,
+      "threadLength": 17,
+      "weightKg": 0.11
+     }
+    },
+    {
+     "partNumber": "IH-LR-EB-D580-M12",
+     "position": 2,
+     "dimensions": {
+      "size": "M12",
+      "wllKg": 340.0,
+      "eyeId": 30,
+      "overallLength": 53,
+      "threadLength": 20.5,
+      "weightKg": 0.18
+     }
+    },
+    {
+     "partNumber": "IH-LR-EB-D580-M16",
+     "position": 3,
+     "dimensions": {
+      "size": "M16",
+      "wllKg": 700.0,
+      "eyeId": 35,
+      "overallLength": 62,
+      "threadLength": 27,
+      "weightKg": 0.28
+     }
+    },
+    {
+     "partNumber": "IH-LR-EB-D580-M20",
+     "position": 4,
+     "dimensions": {
+      "size": "M20",
+      "wllKg": 1200.0,
+      "eyeId": 40,
+      "overallLength": 71,
+      "threadLength": 30,
+      "weightKg": 0.45
+     }
+    },
+    {
+     "partNumber": "IH-LR-EB-D580-M24",
+     "position": 5,
+     "dimensions": {
+      "size": "M24",
+      "wllKg": 1800.0,
+      "eyeId": 50,
+      "overallLength": 90,
+      "threadLength": 36,
+      "weightKg": 0.74
+     }
+    },
+    {
+     "partNumber": "IH-LR-EB-D580-M30",
+     "position": 6,
+     "dimensions": {
+      "size": "M30",
+      "wllKg": 3200.0,
+      "eyeId": 65,
+      "overallLength": 109,
+      "threadLength": 45,
+      "weightKg": 1.66
+     }
+    },
+    {
+     "partNumber": "IH-LR-EB-D580-M36",
+     "position": 7,
+     "dimensions": {
+      "size": "M36",
+      "wllKg": 4600.0,
+      "eyeId": 75,
+      "overallLength": 128,
+      "threadLength": 54,
+      "weightKg": 2.65
+     }
+    },
+    {
+     "partNumber": "IH-LR-EB-D580-M42",
+     "position": 8,
+     "dimensions": {
+      "size": "M42",
+      "wllKg": 6300.0,
+      "eyeId": 85,
+      "overallLength": 147,
+      "threadLength": 63,
+      "weightKg": 4.03
+     }
+    },
+    {
+     "partNumber": "IH-LR-EB-D580-M48",
+     "position": 9,
+     "dimensions": {
+      "size": "M48",
+      "wllKg": 8600.0,
+      "eyeId": 100,
+      "overallLength": 168,
+      "threadLength": 68,
+      "weightKg": 6.38
+     }
+    },
+    {
+     "partNumber": "IH-LR-EB-D580-M56",
+     "position": 10,
+     "dimensions": {
+      "size": "M56",
+      "wllKg": 11500.0,
+      "eyeId": 110,
+      "overallLength": 187,
+      "threadLength": 78,
+      "weightKg": 8.8
+     }
+    },
+    {
+     "partNumber": "IH-LR-EB-D580-M64",
+     "position": 11,
+     "dimensions": {
+      "size": "M64",
+      "wllKg": 16000.0,
+      "eyeId": 120,
+      "overallLength": 208,
+      "threadLength": 90,
+      "weightKg": 12.4
+     }
+    },
+    {
+     "partNumber": "IH-LR-EB-D580-M72X6",
+     "position": 12,
+     "dimensions": {
+      "size": "M72×6",
+      "wllKg": 20000.0,
+      "eyeId": 150,
+      "overallLength": 260,
+      "threadLength": 100,
+      "weightKg": 23.3
+     }
+    },
+    {
+     "partNumber": "IH-LR-EB-D580-M80X6",
+     "position": 13,
+     "dimensions": {
+      "size": "M80×6",
+      "wllKg": 28000.0,
+      "eyeId": 170,
+      "overallLength": 298,
+      "threadLength": 112,
+      "weightKg": 34.2
+     }
+    },
+    {
+     "partNumber": "IH-LR-EB-D580-M100X6",
+     "position": 14,
+     "dimensions": {
+      "size": "M100×6",
+      "wllKg": 40000.0,
+      "eyeId": 190,
+      "overallLength": 330,
+      "threadLength": 130,
+      "weightKg": 49.1
+     }
+    }
+   ],
    "crossReferences": []
   },
   {
@@ -45960,17 +46734,17 @@
   },
   {
    "sku": "IH-LR-SH-G210",
-   "slug": "screw-pin-anchor-shackle-g-210-pattern",
-   "title": "Screw Pin Anchor Shackle — G-210 Pattern",
+   "slug": "screw-pin-chain-shackle-g-210-pattern",
+   "title": "Screw Pin Chain Shackle — G-210 Pattern",
    "category": "shackles",
-   "focusKeyword": "screw pin anchor shackle",
-   "descriptionShort": "Screw Pin Anchor Shackle, G-210 pattern, in 16 sizes, 1/4″ to 2-1/2″, WLL 0.5 to 55 t. Indus part numbers, manufacturer's test certificate.",
+   "focusKeyword": "screw pin chain shackle",
+   "descriptionShort": "Screw Pin Chain Shackle, G-210 pattern, in 16 sizes, 1/4″ to 2-1/2″, WLL 0.5 to 55 t. Indus part numbers, manufacturer's test certificate.",
    "descriptionLong": "<p>A shackle joins a sling, hook or chain to a lifting point and opens with a removable pin. This range follows the G-210 pattern, sized to interchange in an existing rigging plan.</p><h3>Sizes and ratings</h3><p>16 sizes, 1/4″ to 2-1/2″. Working load limit 0.5 to 55 t. Every size has its own Indus part number in the table below, with the loads in the unit the manufacturer rates them in.</p><h3>Manufacturer's data</h3><ul><li>Meets the performance requirements of US Federal Specification RR-C-271D, Type IVB, Grade A, Class 2.</li></ul><h3>Choosing a size</h3><p>Choose on working load limit for the pull you will actually apply. A chain (dee) shackle takes an in-line pull; an anchor (bow) shackle accepts several slings or an angled pull. Side-loading reduces the rating, and a screw pin must be fully seated before loading.</p><h3>Ordering</h3><p>Quote the Indus part number from the size table, or send the size and working load you need. Each consignment ships with the manufacturer's test certificate; say on the RFQ if your site needs anything more.</p>",
-   "seoTitle": "Screw Pin Anchor Shackle G-210 Pattern",
-   "seoDescription": "Screw Pin Anchor Shackle (G-210): 16 sizes, 1/4″ to 2-1/2″, WLL 0.5 to 55 t. Indus part numbers and test certificate. Request a quote.",
+   "seoTitle": "Screw Pin Chain Shackle G-210 Pattern",
+   "seoDescription": "Screw Pin Chain Shackle (G-210): 16 sizes, 1/4″ to 2-1/2″, WLL 0.5 to 55 t. Indus part numbers and test certificate. Request a quote.",
    "faqs": [
     {
-     "question": "What sizes does the screw pin anchor shackle come in?",
+     "question": "What sizes does the screw pin chain shackle come in?",
      "answer": "16 sizes, 1/4″ to 2-1/2″. The size table lists each one with its Indus part number, ratings and dimensions."
     },
     {
@@ -45994,7 +46768,7 @@
     {
      "group": "Identification",
      "label": "Product type",
-     "value": "Screw Pin Anchor Shackle",
+     "value": "Screw Pin Chain Shackle",
      "unit": null,
      "position": 0,
      "isFilterable": false,
@@ -46057,7 +46831,7 @@
    "images": [
     {
      "file": "Rigging-Hardware/screw-pin-anchor-shackles-g-210.jpg",
-     "alt": "Screw Pin Anchor Shackle — G-210 Pattern"
+     "alt": "Screw Pin Chain Shackle — G-210 Pattern"
     }
    ],
    "variants": [
