@@ -90,6 +90,17 @@ type Payload = {
   imageDir: string
   categorySlug: string
   specTemplateId: string
+  /** Categories to create if missing, parent before child. Existing ones are never modified. */
+  categories?: {
+    slug: string
+    name: string
+    parentSlug: string
+    position: number
+    shortDescription: string
+    seoTitle: string
+    seoDescription: string
+    focusKeyword: string
+  }[]
   brands: {
     slug: string
     name: string
@@ -175,8 +186,37 @@ async function main() {
   if (!existsSync(payload.imageDir)) throw new Error(`Image folder not found: ${payload.imageDir}`)
   const sb = supabase()
 
+  // ── Categories ────────────────────────────────────────────────────────────
+  // Created only when missing. An existing category is an editor's, and this
+  // script has no business rewriting its copy.
+  for (const c of payload.categories ?? []) {
+    const existing = await db.category.findUnique({ where: { slug: c.slug }, select: { id: true } })
+    if (existing) continue
+    const parent = await db.category.findUnique({ where: { slug: c.parentSlug }, select: { id: true } })
+    if (!parent) throw new Error(`parent category ${c.parentSlug} does not exist`)
+    if (dryRun) {
+      console.log(`[dry-run] create category ${c.slug} under ${c.parentSlug}`)
+      continue
+    }
+    await db.category.create({
+      data: {
+        slug: c.slug,
+        name: c.name,
+        parentId: parent.id,
+        position: c.position,
+        shortDescription: c.shortDescription,
+        seoTitle: c.seoTitle,
+        seoDescription: c.seoDescription,
+        focusKeyword: c.focusKeyword,
+        isPublished: publish,
+      },
+    })
+    console.log(`[category] created ${c.slug}`)
+  }
+
   const category = await db.category.findUnique({ where: { slug: payload.categorySlug }, select: { id: true } })
-  if (!category) throw new Error(`category ${payload.categorySlug} not found`)
+  const creatingCategory = (payload.categories ?? []).some((c) => c.slug === payload.categorySlug)
+  if (!category && !(dryRun && creatingCategory)) throw new Error(`category ${payload.categorySlug} not found`)
   const fields = await db.specTemplateField.findMany({
     where: { templateId: payload.specTemplateId },
     select: { id: true, key: true },
@@ -247,7 +287,7 @@ async function main() {
     const data = {
       title: e.title,
       slug: e.slug,
-      categoryId: category.id,
+      categoryId: category!.id,
       brandId,
       specTemplateId: payload.specTemplateId,
       descriptionShort: e.descriptionShort,
