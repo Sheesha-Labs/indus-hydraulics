@@ -38,7 +38,10 @@
  * Usage:
  *   pnpm --filter @indus/db exec tsx src/scripts/import-lifting-catalogue.ts \
  *     --payload=lifting-hquality [--dry-run] [--publish] [--only=SKU] \
- *     [--rewrite-categories] [--rewrite-bands]
+ *     [--within=<category slug>] [--rewrite-categories] [--rewrite-bands]
+ *
+ * `--within` loads only the products filed under that category or directly
+ * beneath it, so a vertical can be loaded one group at a time.
  */
 import { existsSync, readFileSync } from 'node:fs'
 import { join, resolve } from 'node:path'
@@ -202,6 +205,7 @@ async function main() {
   const rewriteCategories = argv.includes('--rewrite-categories')
   const rewriteBands = argv.includes('--rewrite-bands')
   const only = argv.find((a) => a.startsWith('--only='))?.split('=')[1] ?? null
+  const within = argv.find((a) => a.startsWith('--within='))?.split('=')[1] ?? null
   const name = argv.find((a) => a.startsWith('--payload='))?.split('=')[1]
   if (!name || !/^[a-z0-9-]+$/.test(name)) throw new Error('--payload=<folder under packages/db/data> is required')
   const payloadPath = join(DATA_DIR, name, 'catalogue.json')
@@ -302,12 +306,14 @@ async function main() {
   }
 
   // ── Products ──────────────────────────────────────────────────────────────
+  const parentOf = new Map(payload.categories.map((c) => [c.slug, c.parentSlug]))
   const sb = dryRun ? null : supabase()
   let created = 0
   let rewritten = 0
   let attached = 0
   for (const e of payload.products) {
     if (only && e.sku !== only) continue
+    if (within && e.category !== within && parentOf.get(e.category) !== within) continue
     const categoryId = categoryIdBySlug.get(e.category)
     if (!categoryId) throw new Error(`${e.sku}: category ${e.category} is not in the payload`)
     const existing = await db.product.findUnique({ where: { sku: e.sku }, select: { id: true } })
