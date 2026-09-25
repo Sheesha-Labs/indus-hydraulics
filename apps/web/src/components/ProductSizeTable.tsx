@@ -38,6 +38,18 @@ type Props = {
 }
 
 /**
+ * A rigging table runs from a 0.333 t shackle to a 7,520 kN rope, so its
+ * figures get thousands separators; hose and fitting tables print as they
+ * always have.
+ */
+function formatCell(value: number | undefined, kind: 'hose' | 'fitting' | 'lifting'): string {
+  if (value === undefined) return '—'
+  return kind === 'lifting'
+    ? value.toLocaleString('en-GB', { maximumFractionDigits: 3 })
+    : String(value)
+}
+
+/**
  * The orderable sizes under one listing.
  *
  * This is the table a buyer actually works from: they arrive holding a hose
@@ -111,7 +123,7 @@ export default function ProductSizeTable({
         <table className="w-full min-w-[640px] font-mono text-[13px]">
           <thead>
             <tr className="bg-ih-surface-2 text-[11px] uppercase tracking-[0.08em] text-ih-muted">
-              <th scope="col" className="px-3.5 py-2.5 text-left font-medium">
+              <th scope="col" className="px-3.5 py-2.5 text-left font-medium whitespace-nowrap">
                 Indus part no.
               </th>
               {showEquivalents && (
@@ -193,7 +205,10 @@ export default function ProductSizeTable({
               const hose = variantHoseLabel(v)
               return (
                 <tr key={v.partNumber} className="border-t border-ih-border">
-                  <th scope="row" className="px-3.5 py-2.5 text-left font-medium text-ih-ink">
+                  <th
+                    scope="row"
+                    className="px-3.5 py-2.5 text-left font-medium whitespace-nowrap text-ih-ink"
+                  >
                     {v.partNumber}
                   </th>
                   {showEquivalents && (
@@ -215,7 +230,7 @@ export default function ProductSizeTable({
                   ))}
                   {dimensionColumns.map((c) => (
                     <td key={c.key} className="px-3.5 py-2.5 text-right text-ih-ink-2">
-                      {dims[c.key] ?? '—'}
+                      {formatCell(dims[c.key], kind)}
                     </td>
                   ))}
                   {textColumns.map((c) => (

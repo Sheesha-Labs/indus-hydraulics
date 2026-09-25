@@ -425,7 +425,7 @@ export const LIFTING_PERFORMANCE_COLUMNS: readonly VariantColumn[] = [
   { key: 'motorKw', label: 'Motor', unit: 'kW', help: 'Hoist motor power.' },
   { key: 'minHookDistance', label: 'Min. hook distance', unit: 'mm', help: 'Headroom — the closest the two hooks come.' },
   { key: 'minCurveRadius', label: 'Min. curve radius', unit: 'm', help: 'Tightest beam curve the trolley runs round.' },
-  { key: 'extraWeightPerMetre', label: 'Extra weight per m of lift', unit: 'kg/m', help: 'Weight added by each extra metre of lift.' },
+  { key: 'extraWeightPerMetre', label: 'Extra lift weight', unit: 'kg/m', help: 'Weight added by each extra metre of lift.' },
 ]
 
 /** Geometry the source heads by name rather than by letter. */
