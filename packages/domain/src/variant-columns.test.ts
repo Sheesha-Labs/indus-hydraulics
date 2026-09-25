@@ -19,6 +19,7 @@ import {
   type VariantLike,
   variantTableKind,
   variantColumnUnit,
+  QUALIFIER_LABELS,
 } from './variant-columns'
 
 const v = (over: Partial<VariantLike> = {}): VariantLike => ({
@@ -428,6 +429,46 @@ describe('lifting tables', () => {
   it('drops an unknown key rather than printing it', () => {
     const cols = variantDimensionColumns([shackle({ dimensions: { size: '1″', wllT: 8.5, ZZ: 1 } })])
     expect(cols.map((c) => c.key)).toEqual(['wllT'])
+  })
+
+  it('splits a qualified load into its own column, after the plain one', () => {
+    const cols = variantDimensionColumns([
+      { partNumber: 'r', dimensions: { size: '12 mm', mblKn: 90, 'mblKn@g1770_fc': 80, 'mblKn@g1570_fc': 70 } },
+    ])
+    expect(cols.map((c) => [c.key, c.label, c.unit])).toEqual([
+      ['mblKn', 'Min breaking load', 'kN'],
+      ['mblKn@g1570_fc', 'Min breaking load, 1570 grade, fibre core', 'kN'],
+      ['mblKn@g1770_fc', 'Min breaking load, 1770 grade, fibre core', 'kN'],
+    ])
+  })
+
+  it('recognises a table whose only loads are qualified', () => {
+    expect(variantTableKind([{ partNumber: 'c', dimensions: { 'proofKn@u2': 100, 'mblKn@u2': 140 } }])).toBe('lifting')
+  })
+
+  it('drops a qualifier it has no label for', () => {
+    const cols = variantDimensionColumns([{ partNumber: 'r', dimensions: { size: '1 t', wllT: 1, 'wllT@nonsense': 2 } }])
+    expect(cols.map((c) => c.key)).toEqual(['wllT'])
+  })
+
+  it('renders drawing letters the registry does not list, after the listed ones', () => {
+    const cols = variantDimensionColumns([
+      { partNumber: 'b', dimensions: { size: 'DN 200', wllKn: 72, A: 600, d1: 145, A1: 270, 'Ø1': 20, Lp: 18, t2: 9, weightKg: 181 } },
+    ])
+    expect(cols.map((c) => c.label)).toEqual(['WLL', 'A', 'A1', 'd1', 'L′', 't2', 'Ø1', 'Weight'])
+    for (const c of cols.filter((x) => !['WLL', 'Weight'].includes(x.label))) expect(c.help).toContain('dimension drawing')
+  })
+
+  it('labels every qualifier the importer writes', () => {
+    for (const label of Object.values(QUALIFIER_LABELS)) expect(label.length).toBeGreaterThan(1)
+  })
+
+  it('carries lashing capacity as its own column', () => {
+    const cols = variantDimensionColumns([{ partNumber: 'l', dimensions: { size: '8 mm', lcKn: 50, mblKn: 100 } }])
+    expect(cols.map((c) => [c.key, c.label])).toEqual([
+      ['mblKn', 'Min breaking load'],
+      ['lcKn', 'LC'],
+    ])
   })
 
   it('renders a count with no unit', () => {

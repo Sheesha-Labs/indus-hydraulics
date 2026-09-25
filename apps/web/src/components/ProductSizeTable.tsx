@@ -103,6 +103,14 @@ export default function ProductSizeTable({
   // hose has no port and its size column IS its bore, so the two places this
   // table speaks in fitting terms have to say something else.
   const kind = variantTableKind(variants)
+  // Lashing capacity is a load-securing figure, and a table that prints only a
+  // breaking load has no working rating at all; both need saying under a
+  // rigging table, because a buyer reads the biggest number as the rating.
+  const hasLashing = dimensionColumns.some((c) => c.key.startsWith('lc'))
+  const breakingOnly =
+    kind === 'lifting' &&
+    !dimensionColumns.some((c) => c.key.startsWith('wll') || c.key.startsWith('lc')) &&
+    dimensionColumns.some((c) => c.key.startsWith('mbl'))
 
   return (
     <div>
@@ -290,6 +298,19 @@ export default function ProductSizeTable({
             WLL is the most the part may carry in service. Proof and breaking loads are test figures
             — never lift to them. Each load is shown in the unit the manufacturer rates the part in,
             and a size ships with the manufacturer&rsquo;s test certificate.
+          </p>
+        )}
+        {hasLashing && (
+          <p>
+            LC is the lashing capacity — what a tie-down may hold when securing a load under EN
+            12195. It is not a lifting rating: never lift with load-securing equipment.
+          </p>
+        )}
+        {breakingOnly && (
+          <p>
+            This range is published with a breaking load only, not a working load limit. Tell us
+            the duty before using it to lift, and we will confirm a rating or recommend a rated
+            part.
           </p>
         )}
         {kind === 'hose' && (
