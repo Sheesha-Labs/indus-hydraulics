@@ -2,7 +2,7 @@ import 'server-only'
 import { unstable_cache } from 'next/cache'
 import { db, Prisma } from '@indus/db'
 import { STOREFRONT_TAGS } from './cache-tags'
-import { CATALOGUE_STOCK_POSTURE, marketBySlug } from '@indus/domain'
+import { CATALOGUE_STOCK_POSTURE, marketBySlug, postureCoversCategories } from '@indus/domain'
 
 /**
  * The data behind the category page's editorial bands.
@@ -140,9 +140,13 @@ export function gccMarketLinks(): GccMarketLink[] {
   return out
 }
 
-/** The one-line stock claim these bands repeat, from the catalogue posture. */
-export function stockLine(): string | null {
-  if (!CATALOGUE_STOCK_POSTURE.exStock) return null
+/**
+ * The one-line stock claim these bands repeat, from the catalogue posture.
+ * Pass the shelf's category chain: an exempt shelf states no ex-stock claim,
+ * because its product pages show a lead time instead.
+ */
+export function stockLine(categorySlugs: readonly string[]): string | null {
+  if (!postureCoversCategories(categorySlugs)) return null
   return `Ex-stock from Dubai, delivered within ${CATALOGUE_STOCK_POSTURE.deliveryDays} working days in the UAE.`
 }
 

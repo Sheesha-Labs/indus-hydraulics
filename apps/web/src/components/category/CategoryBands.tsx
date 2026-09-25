@@ -132,17 +132,20 @@ export function CategoryDeliveryBand({
   values,
   markets,
   categoryName,
+  categorySlugs,
   exportRegions,
 }: {
   values: SectionValues
   markets: GccMarketLink[]
   categoryName: string
+  /** This shelf and its ancestors, for the stock-claim exemptions. */
+  categorySlugs: readonly string[]
   exportRegions?: {
     body: string
     groups: Array<{ region: string; markets: Array<{ slug: string; name: string }> }>
   } | null
 }) {
-  const stock = stockLine()
+  const stock = stockLine(categorySlugs)
   if (!stock && markets.length === 0 && !exportRegions) return null
 
   const body = str(values, 'body')

@@ -55,7 +55,28 @@ export function availabilityToWhere(
     // product already qualifies, and AND-ing `stockQty > 0` would hide 1,485
     // of them behind a filter whose label they satisfy.
     if (posture.exStock && posture.exemptCategories.length === 0) return null
-    return { OR: [{ stockQty: { gt: 0 } }, ...(posture.exStock ? [{ status: 'active' }] : [])] }
+    // An exempt shelf is out of the claim, so its products qualify only on a
+    // counted stockQty. The chain is matched three levels deep, the same depth
+    // the product page passes to `productAvailability`, so the filter and the
+    // pill cannot disagree about a product.
+    const exempt = { in: [...posture.exemptCategories] }
+    return {
+      OR: [
+        { stockQty: { gt: 0 } },
+        ...(posture.exStock
+          ? [
+              {
+                status: 'active',
+                NOT: {
+                  category: {
+                    OR: [{ slug: exempt }, { parent: { slug: exempt } }, { parent: { parent: { slug: exempt } } }],
+                  },
+                },
+              },
+            ]
+          : []),
+      ],
+    }
   }
   // ships_24h: in stock AND lead time ≤ 1 (or null = no lead time recorded)
   return {

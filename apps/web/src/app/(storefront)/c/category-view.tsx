@@ -480,6 +480,7 @@ export default async function CategoryView({ slug, sp }: CategoryViewProps) {
         values={content.values('delivery')}
         markets={gccMarkets}
         categoryName={category.name}
+        categorySlugs={[category.slug, ...trail.map((t) => t.slug)]}
         exportRegions={exportRegions}
       />
     ),

@@ -35,7 +35,8 @@ describe('availabilityToWhere — in_stock', () => {
       products behind a filter whose label they all satisfy — the site
       disagreeing with its own product pages.
     */
-    expect(availabilityToWhere('in_stock')).toBeNull()
+    const whole = { exStock: true, deliveryDays: 3, exemptCategories: [] }
+    expect(availabilityToWhere('in_stock', whole)).toBeNull()
   })
 
   test('falls back to counted stock when the posture is off', () => {
@@ -43,13 +44,30 @@ describe('availabilityToWhere — in_stock', () => {
     expect(availabilityToWhere('in_stock', off)).toEqual({ OR: [{ stockQty: { gt: 0 } }] })
   })
 
-  test('widens rather than narrows when some categories are exempt', () => {
-    // An exempt category still contains products with a counted stockQty, so
-    // the filter has to admit both routes to "available" rather than pick one.
+  test('leaves exempt shelves out unless they have counted stock', () => {
+    // An exempt shelf is outside the claim, so its products are "in stock" only
+    // on a counted stockQty. Admitting every active product here listed exempt
+    // products under a filter their own pages contradict.
+    const exempt = { in: ['blowout-preventers'] }
     const partial = { exStock: true, deliveryDays: 3, exemptCategories: ['blowout-preventers'] }
     expect(availabilityToWhere('in_stock', partial)).toEqual({
-      OR: [{ stockQty: { gt: 0 } }, { status: 'active' }],
+      OR: [
+        { stockQty: { gt: 0 } },
+        {
+          status: 'active',
+          NOT: {
+            category: {
+              OR: [{ slug: exempt }, { parent: { slug: exempt } }, { parent: { parent: { slug: exempt } } }],
+            },
+          },
+        },
+      ],
     })
+  })
+
+  test('the shipped posture keeps butterfly valves out of the in-stock filter', () => {
+    const where = availabilityToWhere('in_stock') as { OR: Array<Record<string, unknown>> }
+    expect(JSON.stringify(where)).toContain('butterfly-valves')
   })
 })
 
