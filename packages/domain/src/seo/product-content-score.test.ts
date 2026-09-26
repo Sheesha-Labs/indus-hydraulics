@@ -2,6 +2,7 @@ import { describe, it, expect } from 'vitest'
 import {
   PRODUCT_CONTENT_THRESHOLDS,
   PRODUCT_INDEX_MIN_CONTENT_SCORE,
+  PRODUCT_INDEX_MIN_SIZE_ROWS,
   isProductIndexable,
   scoreProductContent,
   wordCount,
@@ -163,20 +164,38 @@ describe('wordCount', () => {
 })
 
 describe('isProductIndexable', () => {
-  it('holds back a page below the content gate', () => {
+  it('holds back a page below the content gate with no size table', () => {
     expect(
-      isProductIndexable({ robotsIndex: true, contentScore: PRODUCT_INDEX_MIN_CONTENT_SCORE - 1 }),
+      isProductIndexable({ robotsIndex: true, contentScore: PRODUCT_INDEX_MIN_CONTENT_SCORE - 1, sizeRows: 0 }),
     ).toBe(false)
   })
 
   it('offers a page at the gate', () => {
     expect(
-      isProductIndexable({ robotsIndex: true, contentScore: PRODUCT_INDEX_MIN_CONTENT_SCORE }),
+      isProductIndexable({ robotsIndex: true, contentScore: PRODUCT_INDEX_MIN_CONTENT_SCORE, sizeRows: 0 }),
     ).toBe(true)
   })
 
   it('lets an explicit noindex win over a high score', () => {
-    expect(isProductIndexable({ robotsIndex: false, contentScore: 100 })).toBe(false)
+    expect(isProductIndexable({ robotsIndex: false, contentScore: 100, sizeRows: 0 })).toBe(false)
+  })
+
+  // The score never sees product_variants. A lifting family with short prose,
+  // no brand and an 8-row size table scored 10 and was noindexed.
+  it('offers a low-scoring page that carries a real size table', () => {
+    expect(
+      isProductIndexable({ robotsIndex: true, contentScore: 10, sizeRows: PRODUCT_INDEX_MIN_SIZE_ROWS }),
+    ).toBe(true)
+  })
+
+  it('does not count one or two rows as a size table', () => {
+    expect(
+      isProductIndexable({ robotsIndex: true, contentScore: 10, sizeRows: PRODUCT_INDEX_MIN_SIZE_ROWS - 1 }),
+    ).toBe(false)
+  })
+
+  it('lets an explicit noindex win over a size table', () => {
+    expect(isProductIndexable({ robotsIndex: false, contentScore: 10, sizeRows: 50 })).toBe(false)
   })
 
   // The production split this gate was drawn on: stubs at 6–19, real pages
