@@ -152,7 +152,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   // Content-depth gate. The same predicate decides whether the product is in
   // the sitemap, so a page is never submitted there and then refused here, or
   // the reverse. See PRODUCT_INDEX_MIN_CONTENT_SCORE for where the line sits.
-  const indexFlag = isProductIndexable(product)
+  const indexFlag = isProductIndexable({ ...product, sizeRows: product.variants.length })
 
   return pageMetadata({
     title: product.seoTitle ?? product.title,

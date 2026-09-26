@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import { db } from '@indus/db'
-import { PRODUCT_INDEX_MIN_CONTENT_SCORE } from '@indus/domain'
+import { PRODUCT_INDEX_MIN_CONTENT_SCORE, PRODUCT_INDEX_MIN_SIZE_ROWS, isProductIndexable } from '@indus/domain'
 
 export const metadata: Metadata = { title: 'Sitemap — Indus Admin' }
 
@@ -11,15 +11,17 @@ export const metadata: Metadata = { title: 'Sitemap — Indus Admin' }
  * and exclusions — it doesn't need to refetch the same payload.
  */
 export default async function SitemapPage() {
-  const [products, categories, brands, blogPosts, cmsPages, excluded, noindexed, thin] = await Promise.all([
-    // Mirrors `isProductIndexable`: the sitemap and the PDP robots meta both
-    // hold back a product below the content gate.
-    db.product.count({
-      where: {
-        status: 'active',
-        excludeFromSitemap: false,
+  const [gated, categories, brands, blogPosts, cmsPages, excluded, noindexed] = await Promise.all([
+    // Calls `isProductIndexable` itself rather than restating it as a
+    // `where`: the gate reads the size-table row count, which a count filter
+    // cannot express, and a copy of the rule is a second thing to drift.
+    db.product.findMany({
+      where: { status: 'active', robotsIndex: true },
+      select: {
         robotsIndex: true,
-        contentScore: { gte: PRODUCT_INDEX_MIN_CONTENT_SCORE },
+        contentScore: true,
+        excludeFromSitemap: true,
+        _count: { select: { variants: true } },
       },
     }),
     db.category.count({ where: { isPublished: true, excludeFromSitemap: false, robotsIndex: true } }),
@@ -28,10 +30,10 @@ export default async function SitemapPage() {
     db.cmsPage.count({ where: { isPublished: true, excludeFromSitemap: false, robotsIndex: true } }),
     db.product.count({ where: { excludeFromSitemap: true } }),
     db.product.count({ where: { robotsIndex: false } }),
-    db.product.count({
-      where: { status: 'active', robotsIndex: true, contentScore: { lt: PRODUCT_INDEX_MIN_CONTENT_SCORE } },
-    }),
   ])
+  const indexable = gated.filter((p) => isProductIndexable({ ...p, sizeRows: p._count.variants }))
+  const products = indexable.filter((p) => !p.excludeFromSitemap).length
+  const thin = gated.length - indexable.length
 
   const total = products + categories + brands + blogPosts + cmsPages
 
@@ -61,12 +63,13 @@ export default async function SitemapPage() {
           </div>
           <div className="col-span-2">
             <div className="text-ih-muted">
-              Held back for thin content (products scoring below {PRODUCT_INDEX_MIN_CONTENT_SCORE})
+              Held back for thin content (products scoring below {PRODUCT_INDEX_MIN_CONTENT_SCORE} with
+              fewer than {PRODUCT_INDEX_MIN_SIZE_ROWS} size-table rows)
             </div>
             <div className="font-medium text-[18px]">{thin}</div>
             <p className="mt-1 text-[12px] text-ih-muted">
               Out of the sitemap and marked noindex until an edit lifts the content score over the
-              line. They re-enter both automatically.
+              line or adds a size table. They re-enter both automatically.
             </p>
           </div>
         </div>

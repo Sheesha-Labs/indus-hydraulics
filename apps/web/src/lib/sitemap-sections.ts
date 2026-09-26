@@ -113,7 +113,10 @@ async function pagesSection(): Promise<MetadataRoute.Sitemap> {
  * there. 74 of 1,487 active products fall below it — stubs of 17–67 words with
  * no size table — and are left for Google to find through internal links
  * rather than offered as pages we vouch for. See
- * `PRODUCT_INDEX_MIN_CONTENT_SCORE`.
+ * `PRODUCT_INDEX_MIN_CONTENT_SCORE`. A size table of
+ * `PRODUCT_INDEX_MIN_SIZE_ROWS` or more also clears it (2026-09-26): the score
+ * never sees the table, and 610 unbranded lifting families were held back as
+ * thin while carrying one.
  *
  * THE DATE. `contentUpdatedAt`, not `updatedAt`. Prisma moves `updatedAt` on
  * every write, and a bulk content-score recompute on 2026-08-25 had stamped
@@ -139,6 +142,7 @@ async function productsSection(): Promise<MetadataRoute.Sitemap> {
       robotsIndex: true,
       sitemapPriority: true,
       sitemapChangeFreq: true,
+      _count: { select: { variants: true } },
     },
   })
 
@@ -149,7 +153,7 @@ async function productsSection(): Promise<MetadataRoute.Sitemap> {
       slug: p.slug,
       lastModified: newestDate(p.contentUpdatedAt, p.seoUpdatedAt),
       excludeFromSitemap: p.excludeFromSitemap,
-      robotsIndex: isProductIndexable(p),
+      robotsIndex: isProductIndexable({ ...p, sizeRows: p._count.variants }),
       sitemapPriority: p.sitemapPriority ? Number(p.sitemapPriority) : null,
       sitemapChangeFreq: p.sitemapChangeFreq,
     }))

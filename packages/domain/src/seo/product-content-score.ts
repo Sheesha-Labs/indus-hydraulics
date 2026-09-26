@@ -222,15 +222,45 @@ export function wordCount(text: string | null | undefined): number {
 export const PRODUCT_INDEX_MIN_CONTENT_SCORE = 30
 
 /**
+ * Size-table rows that make a page substantial on their own — 2026-09-26.
+ *
+ * `scoreProductContent` scores prose, FAQs, specs, images and commerce
+ * fields. It never sees the size table (`product_variants`), and that table is
+ * what the gate above was drawn to catch the absence of: "stubs … no size
+ * table". The Lifting & Rigging families launched on 2026-09-25 are the case
+ * the score misses. They carry a size table with an Indus part number and
+ * dimensions on every row, and dimension drawings, but they are sold without a
+ * brand and have short prose, so they score 10–28. Measured on production on
+ * 2026-09-26, 692 of the 744 lifting families were held back as thin; 610 of
+ * those have a real table (median 8 rows).
+ *
+ * Three rows is a table rather than one product listed as a size. It admits
+ * those 610 and nothing else in the catalogue: every other held product has
+ * fewer than three rows.
+ */
+export const PRODUCT_INDEX_MIN_SIZE_ROWS = 3
+
+/**
  * Whether a product page should be offered for indexing.
  *
  * An editor's explicit `robotsIndex: false` always wins. A thin page is held
  * back even when the flag is true, because the flag defaults to true and says
- * nothing about whether anyone looked.
+ * nothing about whether anyone looked. A page is not thin when it clears the
+ * content score OR carries a real size table.
+ *
+ * `sizeRows` is required so that no caller can forget the table and quietly
+ * fall back to the score alone. That was the failure mode this argument
+ * exists to fix.
  */
 export function isProductIndexable(product: {
   robotsIndex: boolean
   contentScore: number
+  /** Rows in the product's size table (`product_variants`). */
+  sizeRows: number
 }): boolean {
-  return product.robotsIndex && product.contentScore >= PRODUCT_INDEX_MIN_CONTENT_SCORE
+  if (!product.robotsIndex) return false
+  return (
+    product.contentScore >= PRODUCT_INDEX_MIN_CONTENT_SCORE ||
+    product.sizeRows >= PRODUCT_INDEX_MIN_SIZE_ROWS
+  )
 }
