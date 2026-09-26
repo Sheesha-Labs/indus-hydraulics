@@ -115,7 +115,7 @@ async function pagesSection(): Promise<MetadataRoute.Sitemap> {
  * rather than offered as pages we vouch for. See
  * `PRODUCT_INDEX_MIN_CONTENT_SCORE`. A size table of
  * `PRODUCT_INDEX_MIN_SIZE_ROWS` or more also clears it (2026-09-26): the score
- * never sees the table, and 610 unbranded lifting families were held back as
+ * never sees the table, and 675 unbranded lifting families were held back as
  * thin while carrying one.
  *
  * THE DATE. `contentUpdatedAt`, not `updatedAt`. Prisma moves `updatedAt` on

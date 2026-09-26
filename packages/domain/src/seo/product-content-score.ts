@@ -228,17 +228,20 @@ export const PRODUCT_INDEX_MIN_CONTENT_SCORE = 30
  * fields. It never sees the size table (`product_variants`), and that table is
  * what the gate above was drawn to catch the absence of: "stubs … no size
  * table". The Lifting & Rigging families launched on 2026-09-25 are the case
- * the score misses. They carry a size table with an Indus part number and
- * dimensions on every row, and dimension drawings, but they are sold without a
- * brand and have short prose, so they score 10–28. Measured on production on
- * 2026-09-26, 692 of the 744 lifting families were held back as thin; 610 of
- * those have a real table (median 8 rows).
+ * the score misses. They carry a size table with an Indus part number,
+ * ratings and dimensions on every row, and dimension drawings, but they are
+ * sold without a brand and have short prose, so they score 10–28.
  *
- * Three rows is a table rather than one product listed as a size. It admits
- * those 610 and nothing else in the catalogue: every other held product has
- * fewer than three rows.
+ * ONE row, not three. The first cut used three and still held back 65 lifting
+ * families with one or two sizes. Each of those has a drawing, about 130
+ * words, and its rating and dimensions in the table, which makes it a real
+ * product page, not a stub. Measured on production on 2026-09-26, every
+ * product outside lifting that falls below the score has NO size table at
+ * all: the 74 legacy stubs, the OFS repair-kit part pages and 17 lifting
+ * families without one. A single row therefore separates the two populations
+ * as cleanly as three did, and admits the 65 as well.
  */
-export const PRODUCT_INDEX_MIN_SIZE_ROWS = 3
+export const PRODUCT_INDEX_MIN_SIZE_ROWS = 1
 
 /**
  * Whether a product page should be offered for indexing.

@@ -188,10 +188,14 @@ describe('isProductIndexable', () => {
     ).toBe(true)
   })
 
-  it('does not count one or two rows as a size table', () => {
-    expect(
-      isProductIndexable({ robotsIndex: true, contentScore: 10, sizeRows: PRODUCT_INDEX_MIN_SIZE_ROWS - 1 }),
-    ).toBe(false)
+  it('holds back a low-scoring page with no size table at all', () => {
+    expect(isProductIndexable({ robotsIndex: true, contentScore: 10, sizeRows: 0 })).toBe(false)
+  })
+
+  // A single-size family still has its rating and dimensions in a table row;
+  // only the complete absence of a table marks a stub.
+  it('counts a single-row size table', () => {
+    expect(PRODUCT_INDEX_MIN_SIZE_ROWS).toBe(1)
   })
 
   it('lets an explicit noindex win over a size table', () => {
