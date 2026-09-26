@@ -44,7 +44,8 @@ import {
  * Products per category page.
  *
  * Was 12, which put 513 of the 1,480 active products behind pagination — and
- * the paginated pages are `noindex`, so those products' only route in was a
+ * the paginated pages were `noindex` then (they are indexable since
+ * 2026-09-26, see `categoryMetadata`), so those products' only route in was a
  * link from a page Google is told not to keep. On a site where 72 of 2,040
  * URLs are indexed, that is the wrong place to be economical.
  *
@@ -135,21 +136,32 @@ export async function categoryMetadata({ slug, sp }: CategoryViewProps): Promise
       )?.storagePath ?? null)
     : null
 
-  // Filtered / sorted / paginated variants of a category page are
-  // duplicate-content slices of the base. We let Google FOLLOW the
-  // links (so it discovers products and sub-categories) but tell it
-  // NOT to index the URL, so PageRank concentrates on the canonical
-  // /c/<slug>. Page 1 (no params) keeps the admin-controlled flags.
-  const isFacetVariant = !!(sp.brands || sp.spec || sp.sort || (sp.page && sp.page !== '1'))
+  // Filtered and sorted variants of a category page are duplicate-content
+  // slices of the base. We let Google FOLLOW the links (so it discovers
+  // products and sub-categories) but tell it NOT to index the URL, so
+  // PageRank concentrates on the canonical /c/<slug>.
+  //
+  // Unfiltered pagination is NOT a facet — 2026-09-26. Page 2 of a shelf lists
+  // different products from page 1, and for 112 products it is the only
+  // category page that links to them (Snatch Blocks & Pulleys alone holds 105).
+  // It used to be `noindex` with its canonical pointing at page 1, which is the
+  // pattern Google's pagination guidance names as the one not to use: a page
+  // canonicalised away is dropped, and a long-term `noindex` page stops passing
+  // its links. Each page now keeps its own canonical, carries the category's
+  // own robots flags, and says which page it is in its title.
+  const isFacetVariant = !!(sp.brands || sp.spec || sp.sort)
+  const pageNo = !isFacetVariant && sp.page && /^[0-9]+$/.test(sp.page) ? Number(sp.page) : 1
   const robots = isFacetVariant
     ? { index: false, follow: true }
     : { index: category.robotsIndex, follow: category.robotsFollow }
+  const title = category.seoTitle ?? category.name
 
   return pageMetadata({
-    title: category.seoTitle ?? category.name,
+    title: pageNo > 1 ? `${title} — Page ${pageNo}` : title,
     description: category.seoDescription ?? category.shortDescription ?? null,
-    path: `/c/${category.slug}`,
-    canonicalUrl: category.canonicalUrl,
+    path: pageNo > 1 ? `/c/${category.slug}/page/${pageNo}` : `/c/${category.slug}`,
+    // An editor's canonical override describes the shelf, not its page 7.
+    canonicalUrl: pageNo > 1 ? null : category.canonicalUrl,
     robots,
     ogImagePath: ogPath,
     titleTemplate: seoSetting?.defaultMetaTitleTemplate ?? null,
@@ -271,6 +283,10 @@ export default async function CategoryView({ slug, sp }: CategoryViewProps) {
   ])
 
   const totalPages = Math.ceil(total / PAGE_SIZE)
+  // A page past the end is not an empty shelf, it is no page at all. Now that
+  // deep pages are indexable, answering 200 with an empty grid would be a
+  // soft 404 at every `/page/<n>` anyone cares to type.
+  if (page > 1 && page > totalPages) notFound()
 
   /**
    * Build a URL for a filter or page change.

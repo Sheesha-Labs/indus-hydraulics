@@ -16,9 +16,9 @@ import CategoryView, { categoryMetadata } from '../../../category-view'
  * the dynamic twin, where it belongs — those URLs are `noindex` and
  * robots-disallowed, so nothing crawls them.
  *
- * Indexing behaviour is unchanged: `categoryMetadata` treats any page above 1
- * as a facet variant, so these stay `noindex, follow` with a canonical back to
- * the clean shelf — exactly what `?page=2` did.
+ * Indexable since 2026-09-26: each page carries its own canonical and the
+ * category's robots flags, and a page number past the last page is a 404. See
+ * `categoryMetadata` for why pagination stopped being treated as a facet.
  */
 export const revalidate = 86400
 
