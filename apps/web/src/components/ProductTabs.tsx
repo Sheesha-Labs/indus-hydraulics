@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, type ReactNode } from 'react'
 import Link from 'next/link'
 import { replacementUrlPath, type ProductAvailability, type VariantLike } from '@indus/domain'
 import ProductSizeTable from './ProductSizeTable'
@@ -95,6 +95,28 @@ export default function ProductTabs({
     { id: 'faq', label: `FAQ${faqs.length > 0 ? ` (${faqs.length})` : ''}` },
   ]
   const activeId = tabs[Math.min(active, tabs.length - 1)]?.id ?? 'description'
+  /*
+    Which panels are in the HTML, not just which one is visible — 2026-09-26.
+
+    Every panel used to be `activeId === 'x' && (…)`, so the server HTML held
+    the Description panel and nothing else. A crawler renders the page it is
+    given and does not click tabs, so the size table (part numbers, ratings,
+    dimensions), the FAQ and the competitor cross-references were never seen by
+    Google on any product page. The FAQPage JSON-LD also described questions
+    that were not on the page, which Google's structured-data rules do not
+    allow. A panel with content is now always rendered and hidden when
+    inactive; Google indexes tab content that is in the DOM.
+
+    An EMPTY panel ("No FAQs for this product yet") still renders only when it
+    is opened, so that boilerplate is not indexed on every page that lacks it.
+    The Shipping tab repeats the Description panel's shipping column, so it
+    stays on-demand as well: the same table twice is duplication, not content.
+  */
+  const inHtml = {
+    documents: documents.length > 0 || activeId === 'documents',
+    compatibility: crossReferences.length > 0 || activeId === 'compatibility',
+    faq: faqs.length > 0 || activeId === 'faq',
+  }
 
   return (
     <div className="mb-8 border-t border-ih-border pt-8">
@@ -122,7 +144,7 @@ export default function ProductTabs({
       </div>
 
       {/* Description */}
-      {activeId === 'description' && (
+      <TabPanel id="description" activeId={activeId}>
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-[1.4fr_1fr]">
           <div>
             <h2 className="mb-4 font-serif text-[26px] font-normal tracking-[-0.01em]">Product description</h2>
@@ -185,16 +207,18 @@ export default function ProductTabs({
             />
           </div>
         </div>
-      )}
+      </TabPanel>
 
       {/* Sizes & part numbers — the orderable variants under this listing */}
-      {activeId === 'sizes' && (
-        <ProductSizeTable
-          variants={variants}
-          equivalenceNote={variantEquivalenceNote}
-          equivalenceBrand={variantEquivalenceBrand}
-          stainlessOnRequest={variantStainlessOnRequest}
-        />
+      {variants.length > 0 && (
+        <TabPanel id="sizes" activeId={activeId}>
+          <ProductSizeTable
+            variants={variants}
+            equivalenceNote={variantEquivalenceNote}
+            equivalenceBrand={variantEquivalenceBrand}
+            stainlessOnRequest={variantStainlessOnRequest}
+          />
+        </TabPanel>
       )}
 
       {/* Shipping & Lead Time — driven entirely by product DB fields */}
@@ -211,8 +235,8 @@ export default function ProductTabs({
       )}
 
       {/* Documents */}
-      {activeId === 'documents' && (
-        <div>
+      {inHtml.documents && (
+        <TabPanel id="documents" activeId={activeId}>
           {documents.length === 0 ? (
             <p className="text-[14px] text-ih-muted">No documents available for this product.</p>
           ) : (
@@ -244,12 +268,12 @@ export default function ProductTabs({
               ))}
             </div>
           )}
-        </div>
+        </TabPanel>
       )}
 
       {/* Compatibility */}
-      {activeId === 'compatibility' && (
-        <div>
+      {inHtml.compatibility && (
+        <TabPanel id="compatibility" activeId={activeId}>
           {crossReferences.length === 0 ? (
             <p className="text-[14px] text-ih-muted">No cross-reference data available. Contact our team for compatibility assistance.</p>
           ) : (
@@ -287,12 +311,12 @@ export default function ProductTabs({
               </div>
             </div>
           )}
-        </div>
+        </TabPanel>
       )}
 
       {/* FAQ */}
-      {activeId === 'faq' && (
-        <div className="max-w-[820px]">
+      {inHtml.faq && (
+        <TabPanel id="faq" activeId={activeId} className="max-w-[820px]">
           {faqs.length === 0 ? (
             <p className="text-[14px] text-ih-muted">
               No FAQs for this product yet.
@@ -315,8 +339,33 @@ export default function ProductTabs({
               ))}
             </div>
           )}
-        </div>
+        </TabPanel>
       )}
+    </div>
+  )
+}
+
+/**
+ * One tab's content, present in the HTML whether or not it is the open tab.
+ *
+ * `hidden` rather than a class: it takes the panel out of layout and out of
+ * the accessibility tree, and it sits on this plain wrapper so a panel's own
+ * `grid` or `flex` display can never override it.
+ */
+function TabPanel({
+  id,
+  activeId,
+  className,
+  children,
+}: {
+  id: string
+  activeId: string
+  className?: string
+  children: ReactNode
+}) {
+  return (
+    <div role="tabpanel" id={`tab-panel-${id}`} hidden={id !== activeId} className={className}>
+      {children}
     </div>
   )
 }
