@@ -173,7 +173,7 @@ const ARTICLE: BlogArticleSeed = {
     },
     {
       type: 'related_articles',
-      slugs: ['sling-colour-code-chart', 'sling-angle-chart', 'chain-grades-explained', 'wire-rope-construction-explained'],
+      slugs: ['sling-colour-code-chart', 'sling-angle-chart', 'master-links-explained', 'wire-rope-eye-terminations', 'chain-grades-explained', 'wire-rope-construction-explained'],
     },
     {
       type: 'as_of_stamp',

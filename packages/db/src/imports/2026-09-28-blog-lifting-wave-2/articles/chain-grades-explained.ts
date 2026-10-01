@@ -102,7 +102,7 @@ const ARTICLE: BlogArticleSeed = {
     { type: 'section_head', number: '/05', title: 'Other chain you will meet.', anchor: 'other-chain' },
     {
       type: 'prose',
-      html: '<p>Several chains in the catalogue sit outside the grade ladder:</p><ul><li><strong>Hoist chain to EN 818-7</strong> is calibrated Grade 80 chain made to a tight pitch tolerance for the load wheel of a chain block. It is sold by size and pitch — our range runs from 3 × 9 mm to 22 × 66 mm — and it is not for making slings.</li><li><strong>DIN 766 calibrated chain</strong> is made to fit a windlass gypsy on boats and small vessels.</li><li><strong>DIN 763, DIN 764 and DIN 5685</strong> long- and short-link chains are general-purpose mild steel and stainless steel chain.</li><li><strong>Stainless steel chain</strong> is chosen for corrosion. It is rated well below alloy chain of the same size, and much of it carries no lifting rating at all.</li></ul>',
+      html: '<p>Several chains in the catalogue sit outside the grade ladder:</p><ul><li><strong>Hoist chain to EN 818-7</strong> is calibrated Grade 80 chain made to a tight pitch tolerance for the load wheel of a chain block. It is sold by size and pitch — our range runs from 3 × 9 mm to 22 × 66 mm — and it is not for making slings.</li><li><strong>DIN 763, DIN 764, DIN 766 and DIN 5685</strong> link chains are general-purpose and conveyor chains. The current DIN 764 and DIN 766 are written for chain conveyors and forbid use as slings or lifting accessories; see our <a href="/blog/din-link-chain-standards">guide to DIN link chain</a>.</li><li><strong>Stainless steel chain</strong> is chosen for corrosion. It is rated well below alloy chain of the same size, and much of it carries no lifting rating at all.</li></ul>',
     },
 
     { type: 'section_head', number: '/06', title: 'Identifying a chain you already have.', anchor: 'identifying' },
@@ -191,7 +191,7 @@ const ARTICLE: BlogArticleSeed = {
     },
     {
       type: 'related_articles',
-      slugs: ['working-load-limit-vs-breaking-strength', 'types-of-lifting-slings', 'sling-angle-chart', 'types-of-shackles', 'wire-rope-construction-explained'],
+      slugs: ['working-load-limit-vs-breaking-strength', 'types-of-lifting-slings', 'din-link-chain-standards', 'sling-angle-chart', 'types-of-shackles', 'wire-rope-construction-explained'],
     },
     {
       type: 'as_of_stamp',

@@ -202,7 +202,7 @@ const ARTICLE: BlogArticleSeed = {
     },
     {
       type: 'related_articles',
-      slugs: ['sling-angle-chart', 'types-of-shackles', 'working-load-limit-vs-breaking-strength', 'lifting-equipment-inspection-uae'],
+      slugs: ['pad-eye-vs-swivel-lifting-point', 'sling-angle-chart', 'types-of-shackles', 'working-load-limit-vs-breaking-strength', 'lifting-equipment-inspection-uae'],
     },
     {
       type: 'as_of_stamp',
