@@ -162,7 +162,7 @@ const ARTICLE: BlogArticleSeed = {
     },
     {
       type: 'related_articles',
-      slugs: ['master-links-explained', 'chain-grades-explained', 'types-of-shackles', 'working-load-limit-vs-breaking-strength'],
+      slugs: ['master-links-explained', 'lifting-gear-rejection-criteria', 'chain-grades-explained', 'types-of-shackles', 'working-load-limit-vs-breaking-strength'],
     },
     {
       type: 'as_of_stamp',

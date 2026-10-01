@@ -239,7 +239,7 @@ const ARTICLE: BlogArticleSeed = {
     },
     {
       type: 'related_articles',
-      slugs: ['working-load-limit-vs-breaking-strength', 'types-of-shackles', 'sling-angle-chart', 'wire-rope-clips-installation'],
+      slugs: ['lifting-gear-rejection-criteria', 'lifting-gear-test-certificate', 'working-load-limit-vs-breaking-strength', 'types-of-shackles', 'sling-angle-chart', 'wire-rope-clips-installation'],
     },
     {
       type: 'as_of_stamp',
