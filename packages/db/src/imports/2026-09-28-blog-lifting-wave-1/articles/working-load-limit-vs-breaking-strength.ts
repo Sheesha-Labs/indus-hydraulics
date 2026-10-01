@@ -276,7 +276,7 @@ const ARTICLE: BlogArticleSeed = {
     },
     {
       type: 'related_articles',
-      slugs: ['types-of-shackles', 'sling-angle-chart', 'chain-grades-explained', 'lifting-equipment-inspection-uae', 'mobile-crane-hydraulic-hose'],
+      slugs: ['types-of-shackles', 'sling-angle-chart', 'types-of-lifting-slings', 'chain-grades-explained', 'lifting-equipment-inspection-uae', 'mobile-crane-hydraulic-hose'],
     },
     {
       type: 'as_of_stamp',

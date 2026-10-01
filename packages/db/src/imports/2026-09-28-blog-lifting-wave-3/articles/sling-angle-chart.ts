@@ -255,7 +255,7 @@ const ARTICLE: BlogArticleSeed = {
     },
     {
       type: 'related_articles',
-      slugs: ['working-load-limit-vs-breaking-strength', 'types-of-shackles', 'chain-grades-explained', 'wire-rope-clips-installation'],
+      slugs: ['working-load-limit-vs-breaking-strength', 'eye-bolt-types-and-angled-loads', 'sling-colour-code-chart', 'types-of-shackles', 'chain-grades-explained', 'wire-rope-clips-installation'],
     },
     {
       type: 'as_of_stamp',

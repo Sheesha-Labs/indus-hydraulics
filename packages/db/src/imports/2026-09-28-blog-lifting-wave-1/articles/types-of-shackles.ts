@@ -264,7 +264,7 @@ const ARTICLE: BlogArticleSeed = {
     },
     {
       type: 'related_articles',
-      slugs: ['working-load-limit-vs-breaking-strength', 'sling-angle-chart', 'lifting-equipment-inspection-uae'],
+      slugs: ['working-load-limit-vs-breaking-strength', 'sling-angle-chart', 'eye-bolt-types-and-angled-loads', 'turnbuckle-types', 'lifting-equipment-inspection-uae'],
     },
     {
       type: 'as_of_stamp',

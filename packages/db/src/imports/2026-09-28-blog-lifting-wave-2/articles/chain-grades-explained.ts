@@ -191,7 +191,7 @@ const ARTICLE: BlogArticleSeed = {
     },
     {
       type: 'related_articles',
-      slugs: ['working-load-limit-vs-breaking-strength', 'sling-angle-chart', 'types-of-shackles', 'wire-rope-construction-explained'],
+      slugs: ['working-load-limit-vs-breaking-strength', 'types-of-lifting-slings', 'sling-angle-chart', 'types-of-shackles', 'wire-rope-construction-explained'],
     },
     {
       type: 'as_of_stamp',
