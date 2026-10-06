@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { buildMetadata, type BuildMetadataInput } from '@indus/domain'
+import { toCrawlableMediaUrl } from './crawlable-media'
 import { mediaUrl } from './media'
 
 /**
@@ -28,8 +29,20 @@ export type StorefrontMetaInput = Omit<BuildMetadataInput, 'pageUrl' | 'siteName
   ogImagePath?: string | null
 }
 
+/**
+ * The URL to give a crawler for a stored image: same-origin when it lives in
+ * public storage, so it is not served `x-robots-tag: none`. See
+ * `lib/crawlable-media.ts`. For JSON-LD, Open Graph and the image sitemap —
+ * on-page `<Image>` sources keep `mediaUrl`.
+ */
+export function crawlableImageUrl(storagePath: string | null | undefined): string | null {
+  if (!storagePath) return null
+  const url = mediaUrl(storagePath)
+  return url ? toCrawlableMediaUrl(url, BASE_URL) : null
+}
+
 export function pageMetadata(input: StorefrontMetaInput): Metadata {
-  const ogUrl = input.ogImagePath ? mediaUrl(input.ogImagePath) : null
+  const ogUrl = crawlableImageUrl(input.ogImagePath)
   const md = buildMetadata({
     title: input.title,
     description: input.description,
@@ -41,6 +54,7 @@ export function pageMetadata(input: StorefrontMetaInput): Metadata {
     defaultDescription: input.defaultDescription,
     defaultOgImageUrl: input.defaultOgImageUrl,
     siteName: SITE_NAME,
+    article: input.article,
   })
   return md as Metadata
 }

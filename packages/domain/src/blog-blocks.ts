@@ -445,6 +445,72 @@ export const ReferencesBlockSchema = z.object({
   )
 export type ReferencesBlock = z.infer<typeof ReferencesBlockSchema>
 
+// ── Block: video ──────────────────────────────────────────────────────────
+// A YouTube video: a click-to-load player on the page and a VideoObject in the
+// structured data.
+//
+// YouTube only, deliberately. It is where hose-crimping and coupling how-tos
+// are actually searched, it serves the thumbnail Google needs for a video
+// result, and a single provider keeps the CSP `frame-src` to one origin. The
+// player is not mounted until a reader asks for it, so an article with three
+// videos ships no third-party script on load.
+//
+// `uploadDate` is required because Google requires it: a VideoObject without
+// one is not eligible for a video result, and guessing it would be a false
+// date in the markup.
+export const VideoBlockSchema = z.object({
+  type: z.literal('video'),
+  /** A YouTube watch, share, Shorts or embed URL. */
+  url: z
+    .string()
+    .trim()
+    .min(1)
+    .max(300)
+    .refine((v) => youtubeVideoId(v) !== null, { message: 'must be a YouTube video URL' }),
+  title: NonEmpty(160),
+  description: OptionalText(600),
+  /** ISO date (YYYY-MM-DD) the video was published on YouTube. */
+  uploadDate: z
+    .string()
+    .trim()
+    .regex(/^\d{4}-\d{2}-\d{2}$/, 'uploadDate must be an ISO date (YYYY-MM-DD)'),
+  /** ISO 8601 duration, e.g. "PT2M30S". */
+  duration: z
+    .string()
+    .trim()
+    .regex(/^PT(?=\d)(?:\d+H)?(?:\d+M)?(?:\d+S)?$/, 'duration must look like PT2M30S')
+    .optional()
+    .nullable(),
+  caption: OptionalText(500),
+})
+export type VideoBlock = z.infer<typeof VideoBlockSchema>
+
+const YOUTUBE_ID = /^[A-Za-z0-9_-]{11}$/
+
+/**
+ * The 11-character video id from any of the URL shapes YouTube hands out, or
+ * null for anything else — including a playlist, a channel or another host.
+ */
+export function youtubeVideoId(raw: string): string | null {
+  let url: URL
+  try {
+    url = new URL(raw.trim())
+  } catch {
+    return null
+  }
+  if (url.protocol !== 'https:' && url.protocol !== 'http:') return null
+  const host = url.hostname.replace(/^www\./, '').replace(/^m\./, '')
+  let id: string | null = null
+  if (host === 'youtu.be') {
+    id = url.pathname.split('/')[1] ?? null
+  } else if (host === 'youtube.com' || host === 'youtube-nocookie.com') {
+    const [, first, second] = url.pathname.split('/')
+    if (first === 'watch') id = url.searchParams.get('v')
+    else if (first === 'embed' || first === 'shorts' || first === 'live') id = second ?? null
+  }
+  return id && YOUTUBE_ID.test(id) ? id : null
+}
+
 // ── Discriminated union ───────────────────────────────────────────────────
 
 export const BlogBlockSchema = z.discriminatedUnion('type', [
@@ -479,6 +545,7 @@ export const BlogBlockSchema = z.discriminatedUnion('type', [
   AsOfStampBlockSchema,
   DiagramBlockSchema,
   ReferencesBlockSchema,
+  VideoBlockSchema,
 ])
 export type BlogBlock = z.infer<typeof BlogBlockSchema>
 
@@ -643,6 +710,11 @@ export function blogFaqPairs(blocks: BlogBlocks): Array<{ question: string; answ
   return blocks.flatMap((block) => (block.type === 'faq_block' ? block.items : []))
 }
 
+/** Every `video` block, in page order — read back for VideoObject JSON-LD. */
+export function blogVideoBlocks(blocks: BlogBlocks): VideoBlock[] {
+  return blocks.filter((block): block is VideoBlock => block.type === 'video')
+}
+
 /**
  * Reading time from block text. Counts the words a reader actually sees —
  * prose, headings, table cells, answers — and ignores anchors, SKUs and block
@@ -711,6 +783,11 @@ export function estimateReadingMinutes(blocks: BlogBlocks): number {
       case 'diagram':
         // The caption is read; the SVG is looked at. Counting the markup would
         // add several hundred "words" of path data to the estimate.
+        count(block.caption)
+        break
+      case 'video':
+        // The words around the player; watch time is not reading time.
+        count(block.title)
         count(block.caption)
         break
       // `references` is deliberately absent. A reader scans a bibliography or

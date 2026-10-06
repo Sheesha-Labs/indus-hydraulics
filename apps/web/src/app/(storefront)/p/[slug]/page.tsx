@@ -1,5 +1,5 @@
 import { mediaUrl } from '../../../../lib/media'
-import { ORG_ID, SITE_NAME, pageMetadata, urlFor } from '../../../../lib/seo'
+import { ORG_ID, SITE_NAME, crawlableImageUrl, pageMetadata, urlFor } from '../../../../lib/seo'
 import { getStoreSettings } from '../../../../lib/store-settings'
 import type { Metadata } from 'next'
 import type React from 'react'
@@ -29,7 +29,7 @@ import AddToQuoteButton from '../../../../components/AddToQuoteButton'
 import AddToCompareButton from '../../../../components/AddToCompareButton'
 import ProductTabs from '../../../../components/ProductTabs'
 import RelatedReading from '../../../../components/blog/RelatedReading'
-import { getArticlesForProduct } from '../../../../lib/related-reading'
+import { getRelatedReadingForProduct } from '../../../../lib/related-reading'
 import ProductStickyBar from '../../../../components/ProductStickyBar'
 import AnalyticsEvent from '../../../../components/AnalyticsEvent'
 
@@ -276,7 +276,10 @@ export default async function ProductPage({ params }: Props) {
     : []
 
   // The return leg of the internal-link loop: articles that embed this SKU.
-  const relatedArticles = await getArticlesForProduct(product.id)
+  const relatedReading = await getRelatedReadingForProduct({
+    id: product.id,
+    categoryId: product.categoryId,
+  })
 
   // Every document is linkable by everyone; /api/documents/<id> decides at
   // request time whether this visitor gets a URL or a trip to sign-in. The
@@ -376,7 +379,11 @@ export default async function ProductPage({ params }: Props) {
     sku: product.sku,
     mpn: product.mpn,
     url: productUrl,
-    imageUrls: product.images.map((img) => mediaUrl(img.media.storagePath)),
+    // Same-origin copies: the storage host answers `x-robots-tag: none`, which
+    // told Google not to index the very images this markup names.
+    imageUrls: product.images
+      .map((img) => crawlableImageUrl(img.media.storagePath))
+      .filter((url): url is string => Boolean(url)),
     brand: product.brand ? { name: product.brand.name } : null,
     // For a distributor, the manufacturer is the brand owner. We surface
     // it as a separate Organization so AI engines can disambiguate
@@ -424,12 +431,19 @@ export default async function ProductPage({ params }: Props) {
           },
     override: product.jsonLdOverride ?? undefined,
   })
+  // The full shelf trail, root first — Home › Hoses & Fittings › Hydraulic
+  // Hoses › product. It used to stop at the leaf, which hid the parent shelves
+  // from the breadcrumb a searcher sees and from the internal links a crawler
+  // follows. Unpublished ancestors are skipped rather than linked to a 404.
+  const categoryTrail = [
+    product.category?.parent?.parent,
+    product.category?.parent,
+    product.category,
+  ].filter((c): c is NonNullable<typeof c> => Boolean(c && c.isPublished))
   const breadcrumbLd = buildBreadcrumbLd({
     items: [
       { name: 'Home', url: urlFor('/') },
-      ...(product.category
-        ? [{ name: product.category.name, url: urlFor(`/c/${product.category.slug}`) }]
-        : []),
+      ...categoryTrail.map((c) => ({ name: c.name, url: urlFor(`/c/${c.slug}`) })),
       { name: product.title, url: productUrl },
     ],
   })
@@ -451,9 +465,7 @@ export default async function ProductPage({ params }: Props) {
           <Breadcrumb
             items={[
               { label: 'Home', href: '/' },
-              ...(product.category
-                ? [{ label: product.category.name, href: `/c/${product.category.slug}` }]
-                : []),
+              ...categoryTrail.map((c) => ({ label: c.name, href: `/c/${c.slug}` })),
               { label: product.sku },
             ]}
           />
@@ -526,9 +538,15 @@ export default async function ProductPage({ params }: Props) {
           {/* Gallery — row 1 on desktop, spans down; second in source order */}
           <div className="lg:col-start-1 lg:row-span-2 lg:row-start-1">
             <ProductGallery
-              images={product.images.map((img) => ({
+              images={product.images.map((img, i) => ({
                 url: mediaUrl(img.media.storagePath),
-                alt: img.alt ?? img.media.alt ?? product.title,
+                // A gallery of five images all called "R2 2SN hose" tells a
+                // screen reader and Google Images nothing about which is which.
+                // Written alt text wins; the fallback at least numbers the views.
+                alt:
+                  img.alt ??
+                  img.media.alt ??
+                  (i === 0 ? product.title : `${product.title} — view ${i + 1}`),
               }))}
               title={product.title}
             />
@@ -768,8 +786,8 @@ export default async function ProductPage({ params }: Props) {
         )}
 
         <RelatedReading
-          articles={relatedArticles}
-          heading="Written about this part"
+          articles={relatedReading.articles}
+          heading={relatedReading.heading}
           eyebrow="From the blog"
         />
 

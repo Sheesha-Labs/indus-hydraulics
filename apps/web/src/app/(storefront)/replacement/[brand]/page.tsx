@@ -43,7 +43,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (items.length === 0) return {}
   const competitorBrand = items[0]!.competitorBrand
   return pageMetadata({
-    title: `${competitorBrand} replacements — Indus Hydraulics`,
+    title: `${competitorBrand} replacements`,
     description: `${items.length} ${competitorBrand} part${items.length === 1 ? '' : 's'} cross-referenced to in-stock Indus Hydraulics equivalents. Verified by our applications team.`,
     path: `/replacement/${brand}`,
   })

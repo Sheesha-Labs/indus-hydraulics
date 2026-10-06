@@ -54,6 +54,10 @@ type BlogPost = {
   authorName: string | null
   /** Public byline FK — a BlogAuthor, editable from the Content tab. */
   blogAuthorId: string | null
+  /** Technical reviewer — a staff user. Shown under the byline when set. */
+  reviewedById: string | null
+  /** ISO timestamp of the review sign-off. */
+  reviewedAt: string | null
   /** Topic hub FK — a BlogCategory, editable from the Content tab. */
   categoryId: string | null
   /** Current hub's name, for the publish card. */
@@ -87,6 +91,15 @@ export type BylineCandidate = {
   jobTitle: string | null
 }
 
+export type ReviewerCandidate = {
+  id: string
+  /** Public profile name when the staff user has one, otherwise their staff name. */
+  name: string
+  jobTitle: string | null
+  /** Without a public profile the "Reviewed by" line has nothing to link to. */
+  hasProfile: boolean
+}
+
 export type CategoryOption = {
   id: string
   name: string
@@ -102,6 +115,8 @@ interface Props {
   recentImages: RecentMedia[]
   /** Published author profiles that can hold a byline. */
   authors: BylineCandidate[]
+  /** Active staff who can sign an article off as its technical reviewer. */
+  reviewers: ReviewerCandidate[]
   /** Topic hubs the post can be filed under. */
   categories: CategoryOption[]
   /** Library images offered by the body editor's insert dialog. */
@@ -129,6 +144,7 @@ export default function BlogPostEditorClient({
   post,
   recentImages,
   authors,
+  reviewers,
   categories,
   bodyMedia,
 }: Props) {
@@ -200,6 +216,7 @@ export default function BlogPostEditorClient({
           post={post}
           recentImages={recentImages}
           authors={authors}
+          reviewers={reviewers}
           categories={categories}
           bodyMedia={bodyMedia}
           savedAt={savedAt}
@@ -233,6 +250,7 @@ function ContentForm({
   post,
   recentImages,
   authors,
+  reviewers,
   categories,
   bodyMedia,
   savedAt,
@@ -241,6 +259,7 @@ function ContentForm({
   post: BlogPost | null
   recentImages: RecentMedia[]
   authors: BylineCandidate[]
+  reviewers: ReviewerCandidate[]
   categories: CategoryOption[]
   bodyMedia: BodyMedia[]
   savedAt: string | null
@@ -377,6 +396,54 @@ function ContentForm({
           <p className="mt-1 text-[11px] text-ih-muted-2">
             Credits the engineer who wrote it, and links to their profile. Without one the post
             falls back to the staff name.
+          </p>
+        </div>
+
+        <div>
+          <label
+            htmlFor="blogpost-reviewer"
+            className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5"
+          >
+            Technical reviewer
+          </label>
+          <select
+            id="blogpost-reviewer"
+            name="reviewedById"
+            defaultValue={post?.reviewedById ?? ''}
+            className="h-10 w-full rounded-md border border-ih-border bg-ih-surface px-2 text-[13px]"
+          >
+            <option value="">— Not reviewed —</option>
+            {reviewers.map((r) => (
+              <option key={r.id} value={r.id}>
+                {r.name}
+                {r.jobTitle ? ` · ${r.jobTitle}` : ''}
+                {r.hasProfile ? '' : ' (no public profile)'}
+              </option>
+            ))}
+          </select>
+          <p className="mt-1 text-[11px] text-ih-muted-2">
+            Who checked the figures. Shown as &ldquo;Technically reviewed by&rdquo; under the byline
+            and named in the structured data — worth setting on anything quoting pressures,
+            ratings or standards.
+          </p>
+        </div>
+
+        <div>
+          <label
+            htmlFor="blogpost-reviewedAt"
+            className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5"
+          >
+            Reviewed on
+          </label>
+          <Input
+            id="blogpost-reviewedAt"
+            name="reviewedAt"
+            type="date"
+            defaultValue={post?.reviewedAt ? post.reviewedAt.slice(0, 10) : ''}
+          />
+          <p className="mt-1 text-[11px] text-ih-muted-2">
+            Leave blank to stamp today when a reviewer is first set. Clearing the reviewer clears
+            the date.
           </p>
         </div>
 

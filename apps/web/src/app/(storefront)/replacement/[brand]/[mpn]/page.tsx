@@ -9,7 +9,7 @@ import {
 } from '@indus/domain'
 import { JsonLd, LeadCapturePanel, buildWhatsappHref, buildMailtoHref } from '@indus/ui'
 import { mediaUrl } from '../../../../../lib/media'
-import { ORG_ID, SITE_NAME, pageMetadata, urlFor } from '../../../../../lib/seo'
+import { SITE_NAME, crawlableImageUrl, pageMetadata, urlFor } from '../../../../../lib/seo'
 import { getReplacementMatches, getReplacementSitemapKeys } from '../../../../../lib/replacement-data'
 import { getStoreSettings } from '../../../../../lib/store-settings'
 
@@ -51,7 +51,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const competitorBrand = first.competitorBrand
   const competitorMpn = first.competitorMpn
   const meta = pageMetadata({
-    title: `${competitorBrand} ${competitorMpn} replacement — Indus Hydraulics`,
+    title: `${competitorBrand} ${competitorMpn} replacement`,
     description: `Indus Hydraulics replacement for ${competitorBrand} ${competitorMpn}. ${matches.length} verified equivalent${matches.length === 1 ? '' : 's'} from our distributor catalogue, with datasheets and lead times.`,
     path: `/replacement/${brand}/${mpn}`,
   })
@@ -96,12 +96,9 @@ export default async function ReplacementPage({ params }: Props) {
     matches: matches.map((m) => ({
       productUrl: urlFor(`/p/${m.product.slug}`),
       productName: m.product.title,
-      imageUrl: m.product.images[0]
-        ? mediaUrl(m.product.images[0]!.media.storagePath)
-        : null,
+      imageUrl: crawlableImageUrl(m.product.images[0]?.media.storagePath),
       compatibility: m.compatibility,
     })),
-    sellerId: ORG_ID,
   })
   const breadcrumbLd = buildBreadcrumbLd({
     items: [

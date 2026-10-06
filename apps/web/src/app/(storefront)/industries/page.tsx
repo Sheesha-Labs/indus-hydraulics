@@ -6,8 +6,9 @@ import { interpolate, list, str } from '@indus/domain'
 import { getIndustryList } from '../../../lib/industry-content'
 import { getMasterPageContent } from '../../../lib/page-content'
 
-// Industries list is admin-curated and changes rarely; cache for 5 minutes.
-export const revalidate = 300
+// A day, not five minutes: industry saves revalidate this path directly
+// (admin/industries actions), so the window is only a backstop.
+export const revalidate = 86400
 
 const FOUNDING_YEAR = 2003
 

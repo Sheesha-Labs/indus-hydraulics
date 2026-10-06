@@ -26,7 +26,7 @@ export const revalidate = 3600
 
 export async function generateMetadata(): Promise<Metadata> {
   return pageMetadata({
-    title: 'Product categories — Indus Hydraulics',
+    title: 'Product categories',
     description:
       'The full hydraulic, oilfield and lifting catalogue by category — pumps, cylinders, valves, hoses, fittings, rigging hardware and consumables, every SKU datasheet-backed.',
     path: '/c',

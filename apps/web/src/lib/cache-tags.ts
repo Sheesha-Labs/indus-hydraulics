@@ -1,5 +1,5 @@
 import 'server-only'
-import { updateTag } from 'next/cache'
+import { revalidatePath, updateTag } from 'next/cache'
 
 /**
  * Storefront cache tags, and the helpers admin actions call to purge them.
@@ -70,9 +70,16 @@ function purge(...tags: StorefrontTag[]): void {
   for (const tag of new Set(tags)) updateTag(tag)
 }
 
-/** Brand created, updated, deleted, or published/unpublished. */
+/**
+ * Brand created, updated, deleted, or published/unpublished.
+ *
+ * Also purges the `/brands` index by path: it reads the table directly rather
+ * than through a tagged cache, so no tag reaches it. That is what lets its ISR
+ * window be a day instead of five minutes.
+ */
 export function invalidateBrands(): void {
   purge(STOREFRONT_TAGS.brands, STOREFRONT_TAGS.navBrands)
+  revalidatePath('/brands')
 }
 
 /** Category created, updated, deleted, or re-parented. */
@@ -90,9 +97,15 @@ export function invalidateProducts(): void {
   purge(STOREFRONT_TAGS.products, STOREFRONT_TAGS.productCount)
 }
 
-/** Industry created, updated, deleted, or its content blocks edited. */
+/**
+ * Industry created, updated, deleted, or its content blocks edited.
+ *
+ * Also purges the `/industries` index by path, for the same reason as
+ * `invalidateBrands`: its live counts are read directly, untagged.
+ */
 export function invalidateIndustries(): void {
   purge(STOREFRONT_TAGS.industries, STOREFRONT_TAGS.navIndustries)
+  revalidatePath('/industries')
 }
 
 /** Navigation menu or its items reordered/edited. */

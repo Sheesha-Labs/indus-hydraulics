@@ -8,8 +8,10 @@ import {
   marketsOrdered,
   serviceAreasOrdered,
   REPLACEMENT_INDEX_MIN_MATCHES,
+  blogPostModifiedAt,
+  SITEMAP_MAX_IMAGES_PER_URL,
 } from '@indus/domain'
-import { BASE_URL } from './seo'
+import { BASE_URL, crawlableImageUrl } from './seo'
 import { getReplacementBrands, getReplacementSitemapKeys } from './replacement-data'
 import { STATIC_SITEMAP_PATHS } from './crawl-policy'
 import { redirectSourcePaths } from './redirects'
@@ -143,6 +145,12 @@ async function productsSection(): Promise<MetadataRoute.Sitemap> {
       sitemapPriority: true,
       sitemapChangeFreq: true,
       _count: { select: { variants: true } },
+      // Gallery order, so the first `<image:image>` is the hero the page shows.
+      images: {
+        orderBy: { position: 'asc' },
+        take: SITEMAP_MAX_IMAGES_PER_URL,
+        select: { media: { select: { storagePath: true } } },
+      },
     },
   })
 
@@ -156,6 +164,12 @@ async function productsSection(): Promise<MetadataRoute.Sitemap> {
       robotsIndex: isProductIndexable({ ...p, sizeRows: p._count.variants }),
       sitemapPriority: p.sitemapPriority ? Number(p.sitemapPriority) : null,
       sitemapChangeFreq: p.sitemapChangeFreq,
+      // Same-origin URLs: the storage host answers `x-robots-tag: none`, and an
+      // image sitemap pointing at files a crawler is told not to index would
+      // be worse than none.
+      images: p.images
+        .map((img) => crawlableImageUrl(img.media.storagePath))
+        .filter((url): url is string => Boolean(url)),
     }))
   )
 }
@@ -240,7 +254,10 @@ async function blogSection(): Promise<MetadataRoute.Sitemap> {
       select: {
         slug: true,
         publishedAt: true,
+        updatedAt: true,
         seoUpdatedAt: true,
+        reviewedAt: true,
+        hero: { select: { storagePath: true } },
         excludeFromSitemap: true,
         robotsIndex: true,
         sitemapPriority: true,
@@ -278,7 +295,11 @@ async function blogSection(): Promise<MetadataRoute.Sitemap> {
     'blog_post',
     blogPosts.map((p) => ({
       slug: p.slug,
-      lastModified: newestDate(p.seoUpdatedAt, p.publishedAt),
+      // The same date the article's JSON-LD `dateModified` states. This was
+      // `newest(seoUpdatedAt, publishedAt)`, which never moved for an edit to
+      // the article itself — see `blogPostModifiedAt`.
+      lastModified: blogPostModifiedAt(p),
+      images: p.hero ? [crawlableImageUrl(p.hero.storagePath)].filter((u): u is string => Boolean(u)) : [],
       excludeFromSitemap: p.excludeFromSitemap,
       robotsIndex: p.robotsIndex,
       sitemapPriority: p.sitemapPriority ? Number(p.sitemapPriority) : null,

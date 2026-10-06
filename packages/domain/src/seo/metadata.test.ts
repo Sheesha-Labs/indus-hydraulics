@@ -86,6 +86,54 @@ describe('buildMetadata', () => {
     expect(md.title).toBe('Bauer Type Couplings')
     expect(md.openGraph.title).toBe('Bauer Type Couplings')
   })
+
+  it('hands an already-templated title to Next as absolute, so the layout template is not applied twice', () => {
+    const md = buildMetadata({
+      title: 'Bauer Type Couplings',
+      description: 'Bar',
+      pageUrl: 'https://example.com/c/bauer',
+      siteName: 'Indus Hydraulics',
+      titleTemplate: '%s — Indus Hydraulics',
+    })
+    expect(md.title).toEqual({ absolute: 'Bauer Type Couplings — Indus Hydraulics' })
+    expect(md.openGraph.title).toBe('Bauer Type Couplings — Indus Hydraulics')
+  })
+
+  it('leaves the title plain when no template applies', () => {
+    const md = buildMetadata({
+      title: 'Bauer Type Couplings',
+      description: 'Bar',
+      pageUrl: 'https://example.com/c/bauer',
+      titleTemplate: '',
+    })
+    expect(md.title).toBe('Bauer Type Couplings')
+  })
+
+  it('is og:type website by default and article with dates for an article', () => {
+    const plain = buildMetadata({ title: 'A', description: 'B', pageUrl: 'https://example.com/x' })
+    expect(plain.openGraph.type).toBe('website')
+
+    const md = buildMetadata({
+      title: 'A',
+      description: 'B',
+      pageUrl: 'https://example.com/blog/a',
+      article: {
+        publishedTime: new Date('2026-08-24T00:00:00Z'),
+        modifiedTime: new Date('2026-09-01T00:00:00Z'),
+        section: 'Hose assembly',
+        tags: ['2SN', ' '],
+        authors: ['https://example.com/blog/author/a'],
+      },
+    })
+    expect(md.openGraph).toMatchObject({
+      type: 'article',
+      publishedTime: '2026-08-24T00:00:00.000Z',
+      modifiedTime: '2026-09-01T00:00:00.000Z',
+      section: 'Hose assembly',
+      tags: ['2SN'],
+      authors: ['https://example.com/blog/author/a'],
+    })
+  })
 })
 
 describe('stripTrailingSiteName', () => {
@@ -119,5 +167,18 @@ describe('stripTrailingSiteName', () => {
 
   it('no-ops without a site name', () => {
     expect(stripTrailingSiteName('Foo | Indus Hydraulics')).toBe('Foo | Indus Hydraulics')
+  })
+
+  it('drops a dash-separated suffix too — em, en or hyphen', () => {
+    expect(
+      stripTrailingSiteName('Replacements & cross-references — Indus Hydraulics', 'Indus Hydraulics'),
+    ).toBe('Replacements & cross-references')
+    expect(stripTrailingSiteName('Foo – Indus Hydraulics', 'Indus Hydraulics')).toBe('Foo')
+    expect(stripTrailingSiteName('Foo - Indus Hydraulics', 'Indus Hydraulics')).toBe('Foo')
+  })
+
+  it('leaves a leading brand alone', () => {
+    const t = 'Indus Hydraulics — Industrial Components'
+    expect(stripTrailingSiteName(t, 'Indus Hydraulics')).toBe(t)
   })
 })

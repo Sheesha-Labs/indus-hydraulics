@@ -4,18 +4,27 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { db } from '@indus/db'
 import {
+  blogPostModifiedAt,
+  blogReferencedArticleSlugs,
+  blogVideoBlocks,
   buildArticleLd,
   buildBreadcrumbLd,
   buildFaqLd,
+  buildVideoLd,
   estimateReadingMinutes,
+  shouldShowUpdatedDate,
+  youtubeVideoId,
 } from '@indus/domain'
 import { JsonLd, buildMailtoHref, buildWhatsappHref } from '@indus/ui'
 import BlogArticleRenderer from '../../../../components/blog/BlogArticleRenderer'
 import BlogArticleRail from '../../../../components/blog/BlogArticleRail'
 import BlogToc from '../../../../components/blog/BlogToc'
+import RelatedReading from '../../../../components/blog/RelatedReading'
 import { resolveBlogArticle } from '../../../../lib/blog-article'
+import { searchIconUrl } from '../../../../lib/brand-identity'
 import { mediaUrl } from '../../../../lib/media'
-import { ORG_ID, SITE_NAME, pageMetadata, urlFor } from '../../../../lib/seo'
+import { getMoreFromBlogCategory } from '../../../../lib/related-reading'
+import { BASE_URL, ORG_ID, SITE_NAME, crawlableImageUrl, pageMetadata, urlFor } from '../../../../lib/seo'
 import { getStoreSettings } from '../../../../lib/store-settings'
 
 type Props = { params: Promise<{ slug: string }> }
@@ -53,7 +62,14 @@ export const revalidate = 3600
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params
   const [post, seoSetting] = await Promise.all([
-    db.blogPost.findUnique({ where: { slug, isPublished: true }, include: { hero: true } }),
+    db.blogPost.findUnique({
+      where: { slug, isPublished: true },
+      include: {
+        hero: true,
+        category: { select: { name: true, isPublished: true } },
+        blogAuthor: { select: { slug: true, isPublished: true } },
+      },
+    }),
     db.seoSetting.findFirst({
       select: { defaultMetaTitleTemplate: true, defaultMetaDescription: true },
     }),
@@ -76,8 +92,23 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     ogImagePath: ogPath,
     titleTemplate: seoSetting?.defaultMetaTitleTemplate ?? null,
     defaultDescription: seoSetting?.defaultMetaDescription ?? null,
+    article: {
+      publishedTime: post.publishedAt,
+      modifiedTime: blogPostModifiedAt(post),
+      section: post.category?.isPublished ? post.category.name : null,
+      tags: readTags(post.tags),
+      authors:
+        post.blogAuthor?.isPublished ? [urlFor(`/blog/author/${post.blogAuthor.slug}`)] : null,
+    },
   })
 }
+
+/** `tags` is a JSON column holding string[]; anything else reads as none. */
+function readTags(raw: unknown): string[] {
+  return Array.isArray(raw) ? raw.filter((t): t is string => typeof t === 'string') : []
+}
+
+const DATE_FORMAT: Intl.DateTimeFormatOptions = { day: 'numeric', month: 'long', year: 'numeric' }
 
 export default async function BlogPostPage({ params }: Props) {
   const { slug } = await params
@@ -89,9 +120,28 @@ export default async function BlogPostPage({ params }: Props) {
         hero: true,
         author: { select: { name: true } },
         blogAuthor: {
-          select: { slug: true, name: true, jobTitle: true, credentials: true, isPublished: true },
+          select: {
+            slug: true,
+            name: true,
+            jobTitle: true,
+            credentials: true,
+            isPublished: true,
+            linkedinUrl: true,
+          },
         },
-        category: { select: { slug: true, name: true, isPublished: true } },
+        category: { select: { id: true, slug: true, name: true, isPublished: true } },
+        // The technical reviewer. Their public profile, when they have one, is
+        // what the "Reviewed by" line links to and what the markup names.
+        reviewedBy: {
+          select: {
+            name: true,
+            blogAuthorProfile: {
+              where: { isPublished: true },
+              select: { slug: true, name: true, jobTitle: true, linkedinUrl: true },
+              take: 1,
+            },
+          },
+        },
       },
     }),
     getStoreSettings(),
@@ -122,23 +172,61 @@ export default async function BlogPostPage({ params }: Props) {
 
   const postUrl = urlFor(`/blog/${post.slug}`)
   const category = post.category?.isPublished ? post.category : null
+  // One date for every surface that states it — see `blogPostModifiedAt`.
+  const modifiedAt = blogPostModifiedAt(post)
+  const showUpdated = shouldShowUpdatedDate(post.publishedAt, modifiedAt)
+
+  const reviewerProfile = post.reviewedBy?.blogAuthorProfile[0] ?? null
+  const reviewer = post.reviewedBy
+    ? {
+        name: reviewerProfile?.name ?? post.reviewedBy.name,
+        url: reviewerProfile ? urlFor(`/blog/author/${reviewerProfile.slug}`) : null,
+        href: reviewerProfile ? `/blog/author/${reviewerProfile.slug}` : null,
+        jobTitle: reviewerProfile?.jobTitle ?? null,
+        sameAs: reviewerProfile?.linkedinUrl ? [reviewerProfile.linkedinUrl] : null,
+      }
+    : null
 
   const articleLd = buildArticleLd({
+    type: 'BlogPosting',
     headline: post.title,
     description: post.excerpt ?? null,
     url: postUrl,
-    imageUrl: post.hero ? mediaUrl(post.hero.storagePath) : null,
+    imageUrl: crawlableImageUrl(post.hero?.storagePath),
     authorName: bylineName,
     authorUrl: authorProfileUrl,
+    authorJobTitle: post.blogAuthor?.jobTitle ?? null,
+    authorSameAs: post.blogAuthor?.linkedinUrl ? [post.blogAuthor.linkedinUrl] : null,
+    reviewer,
+    reviewedAt: post.reviewedAt,
+    articleSection: category?.name ?? null,
+    keywords: readTags(post.tags),
     publishedAt: post.publishedAt ?? null,
-    // `updatedAt` is a real column now, so dateModified no longer has to fall
-    // back to seoUpdatedAt — which only moved when someone opened the SEO tab.
-    modifiedAt: post.updatedAt ?? post.seoUpdatedAt ?? post.publishedAt ?? null,
+    modifiedAt,
     publisherId: ORG_ID,
     publisherName: SITE_NAME,
-    // Already an absolute URL — `getStoreSettings` resolves it now.
-    publisherLogoUrl: settings.logoUrl,
+    // The same-origin mark the Organization node uses. `settings.logoUrl` is a
+    // storage URL, served `x-robots-tag: none`.
+    publisherLogoUrl: searchIconUrl(settings, BASE_URL),
     override: post.jsonLdOverride ?? undefined,
+  })
+
+  // Read back out of the blocks, like the FAQ, so the markup cannot describe a
+  // video the page does not show.
+  const videoLds = blogVideoBlocks(article.blocks).flatMap((video) => {
+    const id = youtubeVideoId(video.url)
+    if (!id) return []
+    return [
+      buildVideoLd({
+        name: video.title,
+        description: video.description ?? video.caption ?? post.excerpt ?? null,
+        thumbnailUrl: `https://i.ytimg.com/vi/${id}/hqdefault.jpg`,
+        uploadDate: video.uploadDate,
+        embedUrl: `https://www.youtube-nocookie.com/embed/${id}`,
+        contentUrl: `https://www.youtube.com/watch?v=${id}`,
+        duration: video.duration ?? null,
+      }),
+    ]
   })
 
   const breadcrumbLd = buildBreadcrumbLd({
@@ -163,9 +251,21 @@ export default async function BlogPostPage({ params }: Props) {
 
   const railProducts = [...article.productsBySku.values()]
 
+  // More from the same topic, skipping anything the article already links to
+  // in a related_articles block. Automatic, so no article ends in a dead end
+  // and older posts keep receiving links as new ones are published.
+  const moreFromTopic = category
+    ? await getMoreFromBlogCategory(category.id, [
+        post.slug,
+        ...blogReferencedArticleSlugs(article.blocks),
+      ])
+    : []
+
   return (
-    <main className="mx-auto max-w-[var(--spacing-max-w)] px-[var(--spacing-page-gutter)]">
-      <JsonLd data={[articleLd, breadcrumbLd, ...(faqLd ? [faqLd] : [])]} />
+    // A div, not a second <main>: the storefront layout already provides the
+    // page's one main landmark, and two of them is an accessibility error.
+    <div className="mx-auto max-w-[var(--spacing-max-w)] px-[var(--spacing-page-gutter)]">
+      <JsonLd data={[articleLd, breadcrumbLd, ...(faqLd ? [faqLd] : []), ...videoLds]} />
 
       <nav className="mono flex items-center gap-2 pt-8 text-[12px] text-ih-muted">
         <Link href="/" className="hover:text-ih-ink">
@@ -218,17 +318,46 @@ export default async function BlogPostPage({ params }: Props) {
             <>
               <span className="opacity-40">·</span>
               <time dateTime={post.publishedAt.toISOString()}>
-                {post.publishedAt.toLocaleDateString('en-GB', {
-                  day: 'numeric',
-                  month: 'long',
-                  year: 'numeric',
-                })}
+                {post.publishedAt.toLocaleDateString('en-GB', DATE_FORMAT)}
               </time>
+            </>
+          )}
+          {showUpdated && modifiedAt && (
+            <>
+              <span className="opacity-40">·</span>
+              <span>
+                Updated{' '}
+                <time dateTime={modifiedAt.toISOString()}>
+                  {modifiedAt.toLocaleDateString('en-GB', DATE_FORMAT)}
+                </time>
+              </span>
             </>
           )}
           <span className="opacity-40">·</span>
           <span>{readingMinutes} min read</span>
         </div>
+        {reviewer && (
+          <p className="mono mt-2 text-[12px] text-ih-muted">
+            Technically reviewed by{' '}
+            {reviewer.href ? (
+              <Link href={reviewer.href} className="text-ih-ink hover:text-ih-accent">
+                {reviewer.name}
+              </Link>
+            ) : (
+              <span className="text-ih-ink">{reviewer.name}</span>
+            )}
+            {reviewer.jobTitle ? <>, {reviewer.jobTitle}</> : null}
+            {post.reviewedAt ? (
+              <>
+                {' '}
+                on{' '}
+                <time dateTime={post.reviewedAt.toISOString()}>
+                  {post.reviewedAt.toLocaleDateString('en-GB', DATE_FORMAT)}
+                </time>
+              </>
+            ) : null}
+          </p>
+        )}
       </header>
 
       {post.hero && (
@@ -278,11 +407,19 @@ export default async function BlogPostPage({ params }: Props) {
         </aside>
       </div>
 
+      {category && (
+        <RelatedReading
+          articles={moreFromTopic}
+          heading={`More on ${category.name}`}
+          eyebrow="Keep reading"
+        />
+      )}
+
       <div className="border-t border-ih-border py-6">
         <Link href="/blog" className="mono text-[12px] text-ih-accent hover:underline">
           ← Back to Blog
         </Link>
       </div>
-    </main>
+    </div>
   )
 }

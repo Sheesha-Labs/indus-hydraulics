@@ -29,6 +29,7 @@ export const BLOCK_LABELS: Record<string, string> = {
   spec_table: 'Spec table',
   result_box: 'Result box',
   team_list: 'Team list',
+  video: 'Video',
 }
 
 export type BlockSummary = { label: string; detail: string }
@@ -86,6 +87,8 @@ export function describeBlogBlock(block: BlogBlockInput | null | undefined): Blo
       return { label, detail: block.title }
     case 'team_list':
       return { label, detail: count(block.members.length, 'member') }
+    case 'video':
+      return { label, detail: block.title || block.url }
     default:
       return { label, detail: 'Carried through unchanged.' }
   }

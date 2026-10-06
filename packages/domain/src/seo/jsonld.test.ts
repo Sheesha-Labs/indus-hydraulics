@@ -1,6 +1,8 @@
 import { describe, it, expect } from 'vitest'
 import {
   buildArticleLd,
+  buildBrandLd,
+  buildVideoLd,
   buildProductLd,
   buildBreadcrumbLd,
   buildFaqLd,
@@ -29,7 +31,7 @@ describe('buildProductLd', () => {
     expect((ld.brand as Record<string, unknown>).name).toBe('Parker')
   })
 
-  it('emits orderable sizes as hasVariant, carrying the competitor equivalent', () => {
+  it('carries competitor equivalents as additionalProperty on the listing, never as variant products', () => {
     const ld = buildProductLd({
       name: 'JIC 37° Female Swivel 90° Elbow Crimp Fitting for Braided Hose',
       sku: 'IH-CF43-JICF-90',
@@ -43,34 +45,36 @@ describe('buildProductLd', () => {
           equivalentMpn: '13943-8-8',
         },
         { sku: 'IH-CF43-JICF-90-1212', name: 'JIC 90° · 3/4" hose · 1.1/16"-12' },
+        // The same equivalent stated twice is stated once.
+        {
+          sku: 'IH-CF43-JICF-90-0808B',
+          name: 'duplicate',
+          equivalentBrand: 'parker',
+          equivalentMpn: '13943-8-8',
+        },
       ],
     })
-    const variants = ld.hasVariant as Array<Record<string, unknown>>
-    expect(variants).toHaveLength(2)
-    expect(variants[0]!['@type']).toBe('Product')
-    // The size-level part number is both our sku and our mpn — there is no
-    // separate manufacturer number for it.
-    expect(variants[0]!.sku).toBe('IH-CF43-JICF-90-0808')
-    expect(variants[0]!.mpn).toBe('IH-CF43-JICF-90-0808')
-    expect(variants[0]!.additionalProperty).toEqual({
-      '@type': 'PropertyValue',
-      name: 'Parker equivalent part number',
-      value: '13943-8-8',
-    })
-    // A size with no stated equivalent must not invent one.
-    expect(variants[1]!.additionalProperty).toBeUndefined()
+    // `hasVariant` is a ProductGroup property, and every variant node was
+    // validated as a product of its own — an invalid item each, with no price.
+    expect(ld.hasVariant).toBeUndefined()
+    expect(ld.additionalProperty).toEqual([
+      { '@type': 'PropertyValue', name: 'Parker equivalent part number', value: '13943-8-8' },
+    ])
   })
 
-  it('omits hasVariant entirely for a product with no size table', () => {
+  it('emits no additionalProperty for sizes that state no equivalent', () => {
     const base = {
       name: 'Thing',
       sku: 'IH-1',
       url: 'https://example.com/p/thing',
       imageUrls: [],
     }
-    expect(buildProductLd(base).hasVariant).toBeUndefined()
-    expect(buildProductLd({ ...base, variants: [] }).hasVariant).toBeUndefined()
-    expect(buildProductLd({ ...base, variants: null }).hasVariant).toBeUndefined()
+    expect(buildProductLd(base).additionalProperty).toBeUndefined()
+    expect(buildProductLd({ ...base, variants: [] }).additionalProperty).toBeUndefined()
+    expect(buildProductLd({ ...base, variants: null }).additionalProperty).toBeUndefined()
+    expect(
+      buildProductLd({ ...base, variants: [{ sku: 'IH-1-04', name: '1/4"' }] }).additionalProperty,
+    ).toBeUndefined()
   })
 
   it('respects override deep-merge', () => {
@@ -104,24 +108,47 @@ describe('buildProductLd', () => {
     expect(ld.countryOfOrigin).toBe('DE')
   })
 
-  it('always emits Offer with availability + seller even without a price (RFQ products)', () => {
+  it('emits no Offer at all for an RFQ product with no price', () => {
+    // An Offer without `price` is a critical error in both the Product
+    // snippets and the Merchant listings reports.
     const ld = buildProductLd({
       name: 'RFQ-Only Pump',
       sku: 'IH-RFQ-01',
       url: 'https://example.com/p/rfq',
       imageUrls: [],
       offers: {
+        price: null,
         availability: 'in_stock',
         url: 'https://example.com/p/rfq',
         sellerId: 'https://example.com#organization',
         sellerName: 'Indus Hydraulics',
       },
     })
+    expect(ld.offers).toBeUndefined()
+    expect(ld.name).toBe('RFQ-Only Pump')
+  })
+
+  it('treats a zero or non-finite price as no price', () => {
+    const base = { name: 'X', sku: 'X', url: 'https://example.com/p/x', imageUrls: [] }
+    expect(buildProductLd({ ...base, offers: { price: 0 } }).offers).toBeUndefined()
+    expect(buildProductLd({ ...base, offers: { price: Number.NaN } }).offers).toBeUndefined()
+  })
+
+  it('keeps availability and seller on a priced Offer', () => {
+    const ld = buildProductLd({
+      name: 'Priced',
+      sku: 'P-1',
+      url: 'https://example.com/p/p1',
+      imageUrls: [],
+      offers: {
+        price: 10,
+        currency: 'AED',
+        availability: 'in_stock',
+        sellerId: 'https://example.com#organization',
+      },
+    })
     const offer = ld.offers as Record<string, unknown>
-    expect(offer['@type']).toBe('Offer')
     expect(offer.availability).toBe('https://schema.org/InStock')
-    expect(offer.price).toBeUndefined()
-    expect(offer.priceCurrency).toBeUndefined()
     expect((offer.seller as Record<string, unknown>)['@id']).toBe('https://example.com#organization')
   })
 
@@ -172,6 +199,71 @@ describe('buildArticleLd', () => {
   })
 })
 
+describe('buildArticleLd — blog posts', () => {
+  it('emits BlogPosting with a full author, a reviewer on the WebPage, section and keywords', () => {
+    const ld = buildArticleLd({
+      type: 'BlogPosting',
+      headline: 'How to read a hose layline',
+      url: 'https://example.com/blog/layline',
+      authorName: 'Ayush Bhatia',
+      authorUrl: 'https://example.com/blog/author/ayush-bhatia',
+      authorJobTitle: 'Director',
+      authorSameAs: ['https://www.linkedin.com/in/x', 'not-a-url'],
+      reviewer: { name: 'R. Engineer', url: 'https://example.com/blog/author/r' },
+      reviewedAt: new Date('2026-09-01T00:00:00Z'),
+      articleSection: 'Hose assembly',
+      keywords: ['layline', ' 2SN ', ''],
+    })
+    expect(ld['@type']).toBe('BlogPosting')
+    const author = ld.author as Record<string, unknown>
+    expect(author.jobTitle).toBe('Director')
+    // Only real URLs survive into sameAs.
+    expect(author.sameAs).toEqual(['https://www.linkedin.com/in/x'])
+    const page = ld.mainEntityOfPage as Record<string, unknown>
+    expect(page['@id']).toBe('https://example.com/blog/layline')
+    expect((page.reviewedBy as Record<string, unknown>).name).toBe('R. Engineer')
+    expect(page.lastReviewed).toBe('2026-09-01T00:00:00.000Z')
+    expect(ld.articleSection).toBe('Hose assembly')
+    expect(ld.keywords).toBe('layline, 2SN')
+  })
+
+  it('keeps Article as the default type and omits reviewer fields when there is none', () => {
+    const ld = buildArticleLd({ headline: 'Case', url: 'https://example.com/services/x' })
+    expect(ld['@type']).toBe('Article')
+    const page = ld.mainEntityOfPage as Record<string, unknown>
+    expect(page.reviewedBy).toBeUndefined()
+    expect(page.lastReviewed).toBeUndefined()
+    expect(ld.keywords).toBeUndefined()
+  })
+})
+
+describe('buildBrandLd', () => {
+  it('is a nestable Brand node, never an Organization at our URL', () => {
+    expect(buildBrandLd({ name: 'Parker', logoUrl: 'https://example.com/media/x.png' })).toEqual({
+      '@type': 'Brand',
+      name: 'Parker',
+      logo: 'https://example.com/media/x.png',
+    })
+    expect(buildBrandLd({ name: 'Parker' })).toEqual({ '@type': 'Brand', name: 'Parker' })
+  })
+})
+
+describe('buildVideoLd', () => {
+  it('emits the three fields Google requires plus the player', () => {
+    const ld = buildVideoLd({
+      name: 'Crimping a 2SN hose',
+      thumbnailUrl: 'https://i.ytimg.com/vi/abc/hqdefault.jpg',
+      uploadDate: new Date('2026-09-01T00:00:00Z'),
+      embedUrl: 'https://www.youtube-nocookie.com/embed/abc',
+    })
+    expect(ld['@type']).toBe('VideoObject')
+    expect(ld.uploadDate).toBe('2026-09-01T00:00:00.000Z')
+    expect(ld.thumbnailUrl).toBe('https://i.ytimg.com/vi/abc/hqdefault.jpg')
+    expect(ld.embedUrl).toBe('https://www.youtube-nocookie.com/embed/abc')
+    expect(ld.description).toBeUndefined()
+  })
+})
+
 describe('buildBreadcrumbLd', () => {
   it('builds a numbered ItemList', () => {
     const ld = buildBreadcrumbLd({
@@ -207,6 +299,16 @@ describe('buildCollectionLd', () => {
       url: 'https://example.com/c/hose-fittings',
     })
     expect(ld['@type']).toBe('CollectionPage')
+    expect(ld.about).toBeUndefined()
+  })
+
+  it('names what the collection is about', () => {
+    const ld = buildCollectionLd({
+      name: 'Parker',
+      url: 'https://example.com/brands/parker',
+      about: buildBrandLd({ name: 'Parker' }),
+    })
+    expect(ld.about).toEqual({ '@type': 'Brand', name: 'Parker' })
   })
 })
 

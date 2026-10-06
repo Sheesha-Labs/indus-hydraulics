@@ -22,7 +22,6 @@ import { Prisma } from '@prisma/client'
 import {
   BlogBlocksSchema,
   blogReferencedArticleSlugs,
-  blogReferencedCategorySlugs,
   blogReferencedPageLinks,
   blogReferencedSkus,
   buildMarketReachBlock,
@@ -32,6 +31,7 @@ import {
 } from '@indus/domain'
 
 import { db } from '../index'
+import { syncBlogPostLinks } from '../blog-links'
 import { BLOG_CROSS_LINKS } from './blog-cross-links'
 import { BLOG_SEO } from './blog-seo'
 import { BLOG_FIGURES } from './blog-figures'
@@ -400,43 +400,10 @@ export async function runBlogArticleImport({
   console.log('done')
 }
 
+/**
+ * Kept under its old name for the import runners that call it; the logic now
+ * lives in `../blog-links`, where the admin editor shares it.
+ */
 export async function syncArticleLinks(postId: string, blocks: BlogBlocks): Promise<void> {
-  const skus = blogReferencedSkus(blocks)
-  const categorySlugs = blogReferencedCategorySlugs(blocks)
-
-  const [products, categories] = await Promise.all([
-    skus.length
-      ? db.product.findMany({ where: { sku: { in: skus } }, select: { id: true, sku: true } })
-      : Promise.resolve([]),
-    categorySlugs.length
-      ? db.category.findMany({
-          where: { slug: { in: categorySlugs } },
-          select: { id: true, slug: true },
-        })
-      : Promise.resolve([]),
-  ])
-
-  const productIdBySku = new Map(products.map((p) => [p.sku, p.id]))
-  const categoryIdBySlug = new Map(categories.map((c) => [c.slug, c.id]))
-
-  await db.$transaction([
-    db.blogPostProduct.deleteMany({ where: { postId } }),
-    db.blogPostProduct.createMany({
-      data: skus
-        .map((sku, i) => ({ postId, productId: productIdBySku.get(sku), position: i }))
-        .filter((row): row is { postId: string; productId: string; position: number } =>
-          Boolean(row.productId)
-        ),
-      skipDuplicates: true,
-    }),
-    db.blogPostCategory.deleteMany({ where: { postId } }),
-    db.blogPostCategory.createMany({
-      data: categorySlugs
-        .map((slug, i) => ({ postId, categoryId: categoryIdBySlug.get(slug), position: i }))
-        .filter((row): row is { postId: string; categoryId: string; position: number } =>
-          Boolean(row.categoryId)
-        ),
-      skipDuplicates: true,
-    }),
-  ])
+  await syncBlogPostLinks(postId, blocks)
 }
