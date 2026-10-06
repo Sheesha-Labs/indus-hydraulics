@@ -1,5 +1,12 @@
 import { describe, expect, it } from 'vitest'
-import { DEFAULT_DISALLOW, FACET_DISALLOW, STATIC_SITEMAP_PATHS, isDisallowed, sitemapPathsBlockedByRobots } from './crawl-policy'
+import {
+  DEFAULT_DISALLOW,
+  FACET_DISALLOW,
+  STATIC_SITEMAP_PATHS,
+  isDisallowed,
+  sitemapPathsBlockedByRobots,
+  withAlwaysDisallowed,
+} from './crawl-policy'
 
 describe('crawl policy', () => {
   /**
@@ -141,5 +148,35 @@ describe('rewrite targets', () => {
     expect(isDisallowed('/c')).toBe(false)
     expect(isDisallowed('/c/hydraulic-hoses')).toBe(false)
     expect(isDisallowed('/c/hydraulic-hoses/page/2')).toBe(false)
+  })
+})
+
+describe('withAlwaysDisallowed', () => {
+  it('re-adds every default and facet rule to a custom group', () => {
+    const custom: { userAgent: string; allow: string[]; disallow?: string[] } = {
+      userAgent: '*',
+      allow: ['/'],
+    }
+    const rule = withAlwaysDisallowed(custom, ['/design'])
+    for (const path of [...DEFAULT_DISALLOW, ...FACET_DISALLOW, '/design']) {
+      expect(rule.disallow).toContain(path)
+    }
+  })
+
+  it('keeps what the custom group already says and adds nothing twice', () => {
+    const rule = withAlwaysDisallowed({ userAgent: '*', disallow: ['/private', '/search'] })
+    expect(rule.disallow?.[0]).toBe('/private')
+    expect(rule.disallow?.filter((p) => p === '/search')).toHaveLength(1)
+  })
+
+  it('accepts a single-string disallow', () => {
+    const rule = withAlwaysDisallowed({ userAgent: 'Bingbot', disallow: '/x' })
+    expect(rule.disallow).toContain('/x')
+    expect(rule.disallow).toContain('/account')
+  })
+
+  it('leaves a group that already blocks the whole site alone', () => {
+    const rule = { userAgent: 'GPTBot', disallow: ['/'] }
+    expect(withAlwaysDisallowed(rule)).toBe(rule)
   })
 })

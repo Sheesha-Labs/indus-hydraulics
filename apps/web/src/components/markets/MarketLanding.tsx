@@ -597,49 +597,72 @@ export default function MarketLanding({
         </div>
 
         {/*
-          Columns rather than a grid. The eleven regions run from six entries
-          to twenty-one, and column flow balances them; a grid leaves one very
-          long column beside four short ones.
+          This market's own region, not the whole directory.
+
+          Every market page used to list all 125 others — 126 pages each
+          carrying the same 125 links, a complete mesh that spends each page's
+          link equity on 125 equally thin targets and reads to a crawler as a
+          templated doorway block. Neighbouring markets are the ones a buyer
+          here actually compares (shared ports, the same lead times), and the
+          full list stays one click away at /markets, which a crawler also
+          reaches from the sitemap.
+
+          A market missing from MARKET_REGIONS falls back to the full
+          directory rather than to an empty band.
         */}
-        <div className="columns-1 gap-x-[26px] sm:columns-2 lg:columns-3 xl:columns-5">
-          {MARKET_REGIONS.map(([region, countries]) => (
-            <div key={region} className="mb-6 break-inside-avoid">
-              <p className="mono border-b border-ih-border-strong pb-2 text-[9.5px] uppercase tracking-[0.13em] text-ih-muted">
-                {region}
-              </p>
-              <div className="mt-1 flex flex-col">
-                {countries.map((country) => {
-                  if (country === market.name) {
-                    return (
-                      <span key={country} className="py-1 text-[12px] font-medium text-ih-accent">
-                        {country} — this page
-                      </span>
-                    )
-                  }
-                  const slug = slugByName.get(country)
-                  // Unreachable while the sync test passes; rendering the
-                  // name unlinked beats rendering a 404 if it ever does not.
-                  if (!slug) {
-                    return (
-                      <span key={country} className="py-1 text-[12px] text-ih-muted">
-                        {country}
-                      </span>
-                    )
-                  }
-                  return (
-                    <Link
-                      key={country}
-                      href={`/markets/${slug}`}
-                      className="py-1 text-[12px] text-ih-ink-2 transition-colors hover:text-ih-accent"
-                    >
-                      {country}
-                    </Link>
-                  )
-                })}
-              </div>
+        {(() => {
+          const ownRegions = MARKET_REGIONS.filter(([, countries]) =>
+            countries.includes(market.name),
+          )
+          const regions = ownRegions.length > 0 ? ownRegions : MARKET_REGIONS
+          return (
+            <div className="flex flex-col gap-6">
+              {regions.map(([region, countries]) => (
+                <div key={region}>
+                  <p className="mono border-b border-ih-border-strong pb-2 text-[9.5px] uppercase tracking-[0.13em] text-ih-muted">
+                    {region}
+                  </p>
+                  <div className="mt-1 columns-2 gap-x-[26px] sm:columns-3 lg:columns-5">
+                    {countries.map((country) => {
+                      if (country === market.name) {
+                        return (
+                          <span
+                            key={country}
+                            className="block break-inside-avoid py-1 text-[12px] font-medium text-ih-accent"
+                          >
+                            {country} — this page
+                          </span>
+                        )
+                      }
+                      const slug = slugByName.get(country)
+                      // Unreachable while the sync test passes; rendering the
+                      // name unlinked beats rendering a 404 if it ever does not.
+                      if (!slug) {
+                        return (
+                          <span
+                            key={country}
+                            className="block break-inside-avoid py-1 text-[12px] text-ih-muted"
+                          >
+                            {country}
+                          </span>
+                        )
+                      }
+                      return (
+                        <Link
+                          key={country}
+                          href={`/markets/${slug}`}
+                          className="block break-inside-avoid py-1 text-[12px] text-ih-ink-2 transition-colors hover:text-ih-accent"
+                        >
+                          {country}
+                        </Link>
+                      )
+                    })}
+                  </div>
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
+          )
+        })()}
       </div>
       </section>
     ),

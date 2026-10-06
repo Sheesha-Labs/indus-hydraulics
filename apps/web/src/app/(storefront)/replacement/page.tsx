@@ -27,7 +27,7 @@ export async function generateMetadata(): Promise<Metadata> {
 
   return {
     ...pageMetadata({
-      title: 'Replacements & cross-references — Indus Hydraulics',
+      title: 'Replacements & cross-references',
       description:
         'Find Indus Hydraulics equivalents for Parker, Bosch Rexroth, Eaton, and other major hydraulic-component brands. Cross-references verified by our applications team.',
       path: `/replacement`,

@@ -89,11 +89,18 @@ const GA_CONNECT_ORIGINS =
 // and admin URLs carry customer ids that must not reach one.
 const MAP_FRAME_ORIGINS = 'https://www.google.com'
 
+/**
+ * The blog's video block. The privacy-enhanced host only — the player is
+ * mounted on click, never on load, so this origin is reached by a reader's
+ * choice and not by visiting the page.
+ */
+const VIDEO_FRAME_ORIGINS = 'https://www.youtube-nocookie.com'
+
 const STOREFRONT_CSP = [
   ...SHARED_CSP,
   `script-src 'self' 'unsafe-inline' 'unsafe-eval' ${GA_SCRIPT_ORIGINS} https://va.vercel-scripts.com https://vitals.vercel-insights.com https://*.sentry.io https://*.ingest.sentry.io https://*.i.posthog.com https://*.posthog.com`,
   `connect-src 'self' https://*.supabase.co ${GA_CONNECT_ORIGINS} https://*.sentry.io https://*.ingest.sentry.io https://va.vercel-scripts.com https://vitals.vercel-insights.com https://*.i.posthog.com https://*.posthog.com`,
-  `frame-src 'self' ${MAP_FRAME_ORIGINS}`,
+  `frame-src 'self' ${MAP_FRAME_ORIGINS} ${VIDEO_FRAME_ORIGINS}`,
   "frame-ancestors 'self'",
 ].join('; ')
 

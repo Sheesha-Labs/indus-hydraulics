@@ -4,11 +4,11 @@ import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import Image from 'next/image'
 import { db } from '@indus/db'
-import { buildBreadcrumbLd, buildOrgLd, str } from '@indus/domain'
+import { buildBrandLd, buildBreadcrumbLd, buildCollectionLd, str } from '@indus/domain'
 import { JsonLd, LeadCapturePanel, buildWhatsappHref, buildMailtoHref } from '@indus/ui'
 import { mediaUrl } from '../../../../lib/media'
 import { getSubPageContent } from '../../../../lib/page-content'
-import { pageMetadata, urlFor } from '../../../../lib/seo'
+import { crawlableImageUrl, pageMetadata, urlFor } from '../../../../lib/seo'
 import { getStoreSettings } from '../../../../lib/store-settings'
 
 type Props = {
@@ -160,10 +160,17 @@ export default async function BrandPage({ params }: Props) {
   const statCols = Math.max(2, Math.min(4, statCells.length))
 
   const brandUrl = urlFor(`/brands/${brand.slug}`)
-  const brandLd = buildOrgLd({
-    name: brand.name,
+  // A collection of the parts we stock under this brand, ABOUT the brand. It
+  // was emitted as `Organization` with our URL as its `url` — telling crawlers
+  // the manufacturer lives at indushydraulics.com/brands/<slug>.
+  const brandLd = buildCollectionLd({
+    name: brand.seoTitle ?? brand.name,
+    description: brand.seoDescription ?? brand.description ?? null,
     url: brandUrl,
-    logoUrl: brand.logo ? mediaUrl(brand.logo.storagePath) : null,
+    about: buildBrandLd({
+      name: brand.name,
+      logoUrl: crawlableImageUrl(brand.logo?.storagePath),
+    }),
     override: brand.jsonLdOverride ?? undefined,
   })
   const breadcrumbLd = buildBreadcrumbLd({

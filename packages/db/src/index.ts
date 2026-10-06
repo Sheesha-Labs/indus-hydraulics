@@ -43,3 +43,4 @@ export {
   formatEnquiryCode,
 } from './codes'
 export { recordSlugRedirect } from './slug-redirect'
+export { syncBlogPostLinks } from './blog-links'

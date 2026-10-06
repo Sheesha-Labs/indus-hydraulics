@@ -2,15 +2,18 @@ import { mergeJsonLd, type JsonLd } from '../seo/jsonld'
 
 /**
  * JSON-LD for a `/replacement/<brand>/<mpn>` page. We emit a
- * `CollectionPage` whose `mainEntity` is an `ItemList` of `Product`
- * stub references back to the canonical PDP URLs — we deliberately
- * do NOT duplicate the full Product schema here, because
- *   1. the PDP itself emits the full Product JSON-LD, and
- *   2. duplicating it on the replacement page would invite Google to
- *      pick the wrong canonical and split authority.
+ * `CollectionPage` whose `mainEntity` is an `ItemList` of plain `ListItem`
+ * links back to the canonical PDP URLs — Google's "summary page" list shape.
  *
- * The ItemList items are Schema.org `ListItem`s with `item.url`
- * pointing back to the PDP and `item.name` set to the product title.
+ * Deliberately NOT Product nodes. The PDP emits the full Product, and
+ *   1. duplicating it here would invite Google to pick the wrong canonical
+ *      and split authority, and
+ *   2. a Product stub is validated as a product in its own right. These used
+ *      to carry an Offer with no price and a hard-coded `InStock` — an invalid
+ *      item in the Product snippets report for every match, and an
+ *      availability claim that could contradict the PDP it pointed at.
+ *
+ * Each ListItem carries `url`, `name` and a human-readable compatibility note.
  */
 
 export type ReplacementMatchInput = {
@@ -35,8 +38,6 @@ export type ReplacementCollectionLdInput = {
   /** Absolute URL of the replacement page itself. */
   pageUrl: string
   matches: ReplacementMatchInput[]
-  /** @id of the seller Organization (typically ORG_ID). */
-  sellerId?: string
   override?: unknown
 }
 
@@ -63,25 +64,14 @@ export function buildReplacementCollectionLd(input: ReplacementCollectionLdInput
       numberOfItems: input.matches.length,
       itemListElement: input.matches.map((m, i) => {
         const item: JsonLd = {
-          '@type': 'Product',
-          name: m.productName,
+          '@type': 'ListItem',
+          position: i + 1,
           url: m.productUrl,
+          name: m.productName,
           description: `${COMPATIBILITY_LABEL[m.compatibility]} for ${input.competitorBrand} ${input.competitorMpn}.`,
         }
         if (m.imageUrl) item.image = m.imageUrl
-        if (input.sellerId) {
-          item.offers = {
-            '@type': 'Offer',
-            availability: 'https://schema.org/InStock',
-            seller: { '@type': 'Organization', '@id': input.sellerId },
-            url: m.productUrl,
-          }
-        }
-        return {
-          '@type': 'ListItem',
-          position: i + 1,
-          item,
-        }
+        return item
       }),
     },
   }

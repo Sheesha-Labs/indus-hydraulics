@@ -132,6 +132,9 @@ const nextConfig: NextConfig = {
        */
       { protocol: 'https', hostname: 'hesezbozronntejnsopr.supabase.co' },
       { protocol: 'https', hostname: 'images.unsplash.com' },
+      // The video block's poster frame. Path-scoped to video thumbnails so the
+      // optimizer cannot be pointed at anything else on the host.
+      { protocol: 'https', hostname: 'i.ytimg.com', pathname: '/vi/**' },
     ],
   },
   async redirects() {

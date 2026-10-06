@@ -31,8 +31,17 @@ export async function homeMetadata(): Promise<Metadata> {
   ])
   const skuFloor = Math.max(100, Math.floor(skuCount / 100) * 100)
   return {
-    title: 'Indus Hydraulics — Industrial Components for Hydraulic Systems',
-    description: `${skuFloor.toLocaleString()}+ SKUs across pumps, cylinders, valves and consumables — from ${brandCount} specialist brands. ISO-certified, datasheet-backed, shipped from our Dubai HQ across the GCC.`,
+    // `absolute`, because the brand is already in it. `/` sits in the same
+    // segment as the storefront layout and escapes its `%s | Indus Hydraulics`
+    // template, but the `/h/<cc>` variants every non-default country is
+    // rewritten to are a child segment and do not — so the homepage served to
+    // most of the world read "Indus Hydraulics — … | Indus Hydraulics".
+    //
+    // Hose-led, to match the H1 and the catalogue's weight. It used to lead
+    // with pumps, cylinders and valves, which are three of the thinnest
+    // shelves on the site.
+    title: { absolute: 'Indus Hydraulics | Hydraulic & Industrial Hose Supplier, UAE' },
+    description: `${skuFloor.toLocaleString()}+ SKUs — hydraulic and industrial hoses, fittings and couplings, lifting gear and oilfield spares from ${brandCount} brands, shipped from Dubai across the GCC.`,
     // Every other indexable route declares one through `pageMetadata`; the
     // home page built its metadata by hand and so shipped none. It is the one
     // URL where that matters most — Google resolves a site's favicon and its

@@ -102,7 +102,7 @@ export default async function ShippingPage({ params }: Props) {
 
       <PolicySectionBody id="where-we-ship-from" title="1. Where we ship from">
         <p>
-          All orders are dispatched from our headquarters and warehouse in Al Quasis, Dubai, UAE,
+          All orders are dispatched from our headquarters and warehouse in Al Qusais, Dubai, UAE,
           operated by Indus Hydraulic Power Trading LLC. Direct factory drop-shipments from
           authorized manufacturers may also be arranged where it shortens the lead time.
         </p>

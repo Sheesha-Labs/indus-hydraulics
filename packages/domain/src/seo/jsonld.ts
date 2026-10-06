@@ -66,13 +66,19 @@ export type ProductLdInput = {
   /** Country of origin — ISO-3166 alpha-2 ("DE") or full name ("Germany"). */
   countryOfOrigin?: string | null
   /**
-   * Orderable sizes under this listing, emitted as `hasVariant`.
+   * Orderable sizes under this listing.
    *
-   * A crawler that only sees the listing-level SKU cannot answer "do you make
-   * this in -12 with a 3/4-16 thread", and neither can an AI shopping agent —
-   * the size table is markup-invisible without this. Where a variant states a
-   * competitor equivalent it rides along as an `additionalProperty`, since
-   * that identifier is the query these pages are actually found by.
+   * Only the competitor equivalents are carried into the markup, as
+   * `additionalProperty` entries on the listing itself — that identifier is the
+   * query these pages are actually found by.
+   *
+   * The sizes used to be emitted as `hasVariant` children, and that was wrong
+   * twice over: `hasVariant` is a ProductGroup property, not a Product one, and
+   * Google validates every variant node as a product of its own. With no price
+   * on an RFQ catalogue each child was an invalid item — a 40-size rigging
+   * family put 40 errors in the Product snippets report for one page. The size
+   * table itself is server-rendered HTML (see ProductTabs), which is where a
+   * crawler reads it.
    */
   variants?: Array<{
     sku: string
@@ -114,7 +120,42 @@ export type CollectionLdInput = {
   name: string
   description?: string | null
   url: string
+  /**
+   * What the collection is a collection OF — e.g. a Brand node on a brand
+   * page. Emitted as `about`.
+   */
+  about?: JsonLd | null
   override?: unknown
+}
+
+export type BrandLdInput = {
+  name: string
+  logoUrl?: string | null
+}
+
+/** A person named on an article — its author or its technical reviewer. */
+export type ArticlePersonLd = {
+  name: string
+  /** Profile page on this site — the E-E-A-T anchor for the name. */
+  url?: string | null
+  jobTitle?: string | null
+  /** Off-site profiles that are the same person, e.g. LinkedIn. */
+  sameAs?: string[] | null
+}
+
+export type VideoLdInput = {
+  name: string
+  description?: string | null
+  /** Required by Google for a video rich result. */
+  thumbnailUrl: string
+  /** Required by Google. ISO date or Date. */
+  uploadDate: Date | string
+  /** The player URL, e.g. https://www.youtube.com/embed/<id>. */
+  embedUrl?: string | null
+  /** The watch page or media file URL. */
+  contentUrl?: string | null
+  /** ISO 8601 duration, e.g. "PT2M30S". */
+  duration?: string | null
 }
 
 export type ItemListLdInput = {
@@ -128,6 +169,11 @@ export type ItemListLdInput = {
 }
 
 export type ArticleLdInput = {
+  /**
+   * `BlogPosting` for blog articles, `Article` (the default) for everything
+   * else — service case studies are articles but not blog posts.
+   */
+  type?: 'Article' | 'BlogPosting'
   headline: string
   description?: string | null
   url: string
@@ -136,6 +182,19 @@ export type ArticleLdInput = {
   authorName?: string | null
   /** Optional author profile URL — adds E-E-A-T signal. */
   authorUrl?: string | null
+  authorJobTitle?: string | null
+  /** Off-site profiles of the author, e.g. LinkedIn. Emitted as `sameAs`. */
+  authorSameAs?: string[] | null
+  /**
+   * The technical reviewer. Emitted on the WebPage node as `reviewedBy` —
+   * schema.org has no reviewer property on Article itself.
+   */
+  reviewer?: ArticlePersonLd | null
+  /** When the reviewer signed the article off. Emitted as `lastReviewed`. */
+  reviewedAt?: Date | null
+  /** The topic hub the article is filed under. */
+  articleSection?: string | null
+  keywords?: string[] | null
   publishedAt?: Date | null
   modifiedAt?: Date | null
   /**
@@ -256,26 +315,22 @@ export function buildProductLd(input: ProductLdInput): JsonLd {
     }
   }
   if (input.countryOfOrigin) base.countryOfOrigin = input.countryOfOrigin
-  if (input.variants && input.variants.length > 0) {
-    base.hasVariant = input.variants.map((v) => {
-      const node: JsonLd = { '@type': 'Product', sku: v.sku, name: v.name, mpn: v.sku }
-      if (v.equivalentBrand && v.equivalentMpn) {
-        node.additionalProperty = {
-          '@type': 'PropertyValue',
-          name: `${v.equivalentBrand} equivalent part number`,
-          value: v.equivalentMpn,
-        }
-      }
-      return node
-    })
-  }
-  if (input.offers) {
+  const equivalents = equivalentPartNumbers(input.variants)
+  if (equivalents.length > 0) base.additionalProperty = equivalents
+  // An Offer only when there is a price to put in it.
+  //
+  // Every builder used to emit one regardless, so an RFQ-only listing told
+  // Google "here is an offer" with no `price` — a critical error in both the
+  // Product snippets and the Merchant listings reports, on every product page
+  // in the catalogue. Without an Offer the page is simply not considered for
+  // merchant listings; the Product node still carries the entity (brand, mpn,
+  // sku, images) that the markup is really for. Availability is not lost: the
+  // page states it to the buyer, which is where a crawler reads it.
+  const price = input.offers?.price
+  if (input.offers && typeof price === 'number' && Number.isFinite(price) && price > 0) {
     const o: JsonLd = { '@type': 'Offer' }
-    const price = input.offers.price
-    if (typeof price === 'number') {
-      o.price = price.toFixed(2)
-      o.priceCurrency = input.offers.currency ?? 'USD'
-    }
+    o.price = price.toFixed(2)
+    o.priceCurrency = input.offers.currency ?? 'USD'
     if (input.offers.availability) {
       o.availability = SCHEMA_AVAILABILITY[input.offers.availability]
     }
@@ -290,12 +345,36 @@ export function buildProductLd(input: ProductLdInput): JsonLd {
       if (input.offers.sellerName) seller.name = input.offers.sellerName
       o.seller = seller
     }
-    // Always emit the Offer when one was requested. Even RFQ-only
-    // products without a public price benefit from communicating
-    // availability + seller to crawlers and AI shopping agents.
     base.offers = o
   }
   return mergeJsonLd(base, input.override)
+}
+
+/**
+ * Competitor equivalents stated by a listing's sizes, as PropertyValue nodes.
+ *
+ * Deduplicated on brand + part number: a family whose 30 sizes all cross to
+ * one series states that series once, and a size with no stated equivalent
+ * contributes nothing rather than an invented one.
+ */
+function equivalentPartNumbers(variants: ProductLdInput['variants']): JsonLd[] {
+  if (!variants || variants.length === 0) return []
+  const seen = new Set<string>()
+  const out: JsonLd[] = []
+  for (const v of variants) {
+    const brand = v.equivalentBrand?.trim()
+    const mpn = v.equivalentMpn?.trim()
+    if (!brand || !mpn) continue
+    const key = `${brand.toLowerCase()}\u0000${mpn.toLowerCase()}`
+    if (seen.has(key)) continue
+    seen.add(key)
+    out.push({
+      '@type': 'PropertyValue',
+      name: `${brand} equivalent part number`,
+      value: mpn,
+    })
+  }
+  return out
 }
 
 export function buildBreadcrumbLd(input: BreadcrumbLdInput): JsonLd {
@@ -334,7 +413,52 @@ export function buildCollectionLd(input: CollectionLdInput): JsonLd {
     url: input.url,
   }
   if (input.description) base.description = input.description
+  if (input.about) base.about = input.about
   return mergeJsonLd(base, input.override)
+}
+
+/**
+ * A Brand node, for nesting (no `@context`).
+ *
+ * A brand page on this site is a collection of the parts we stock under that
+ * brand. It is not the brand's own entity — emitting `Organization` with our
+ * URL as its `url` told crawlers that Parker is an organisation living at
+ * indushydraulics.com/brands/parker.
+ */
+export function buildBrandLd(input: BrandLdInput): JsonLd {
+  const node: JsonLd = { '@type': 'Brand', name: input.name }
+  if (input.logoUrl) node.logo = input.logoUrl
+  return node
+}
+
+function personLd(p: ArticlePersonLd): JsonLd {
+  const node: JsonLd = { '@type': 'Person', name: p.name }
+  if (p.url) node.url = p.url
+  if (p.jobTitle) node.jobTitle = p.jobTitle
+  const sameAs = (p.sameAs ?? []).filter((s) => /^https?:\/\//i.test(s))
+  if (sameAs.length > 0) node.sameAs = sameAs
+  return node
+}
+
+/**
+ * VideoObject — what makes an embedded video eligible for video results.
+ * `name`, `thumbnailUrl` and `uploadDate` are the three Google requires.
+ */
+export function buildVideoLd(input: VideoLdInput): JsonLd {
+  const uploadDate =
+    input.uploadDate instanceof Date ? input.uploadDate.toISOString() : input.uploadDate
+  const base: JsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'VideoObject',
+    name: input.name,
+    thumbnailUrl: input.thumbnailUrl,
+    uploadDate,
+  }
+  if (input.description) base.description = input.description
+  if (input.embedUrl) base.embedUrl = input.embedUrl
+  if (input.contentUrl) base.contentUrl = input.contentUrl
+  if (input.duration) base.duration = input.duration
+  return base
 }
 
 /**
@@ -363,20 +487,31 @@ export function buildItemListLd(input: ItemListLdInput): JsonLd {
 }
 
 export function buildArticleLd(input: ArticleLdInput): JsonLd {
+  const webPage: JsonLd = { '@type': 'WebPage', '@id': input.url }
+  if (input.reviewer?.name) {
+    webPage.reviewedBy = personLd(input.reviewer)
+    if (input.reviewedAt) webPage.lastReviewed = input.reviewedAt.toISOString()
+  }
   const base: JsonLd = {
     '@context': 'https://schema.org',
-    '@type': 'Article',
+    '@type': input.type ?? 'Article',
     headline: input.headline,
     url: input.url,
-    mainEntityOfPage: { '@type': 'WebPage', '@id': input.url },
+    mainEntityOfPage: webPage,
     inLanguage: input.inLanguage ?? 'en',
   }
   if (input.description) base.description = input.description
   if (input.imageUrl) base.image = input.imageUrl
+  if (input.articleSection) base.articleSection = input.articleSection
+  const keywords = (input.keywords ?? []).map((k) => k.trim()).filter(Boolean)
+  if (keywords.length > 0) base.keywords = keywords.join(', ')
   if (input.authorName) {
-    const author: JsonLd = { '@type': 'Person', name: input.authorName }
-    if (input.authorUrl) author.url = input.authorUrl
-    base.author = author
+    base.author = personLd({
+      name: input.authorName,
+      url: input.authorUrl ?? null,
+      jobTitle: input.authorJobTitle ?? null,
+      sameAs: input.authorSameAs ?? null,
+    })
   }
   if (input.publisherId || input.publisherName) {
     const pub: JsonLd = { '@type': 'Organization' }

@@ -40,7 +40,7 @@ const CHIP_ORDER: ServiceCaseCategory[] = [
 
 export async function generateMetadata(): Promise<Metadata> {
   return pageMetadata({
-    title: 'Services & case studies — Indus Hydraulics',
+    title: 'Services & case studies',
     description:
       'Cylinder, hose, pump, BOP and wellhead service jobs run out of our Jebel Ali yard — written as case studies, with photos, measurements, and what it actually cost.',
     path: '/services',

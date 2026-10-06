@@ -9,8 +9,8 @@ import {
   listServiceCases,
 } from '../../../../lib/service-cases'
 import { db } from '@indus/db'
-import { mediaUrl } from '../../../../lib/media'
-import { BASE_URL, ORG_ID, SITE_NAME, pageMetadata } from '../../../../lib/seo'
+import { BASE_URL, ORG_ID, SITE_NAME, crawlableImageUrl, pageMetadata } from '../../../../lib/seo'
+import { searchIconUrl } from '../../../../lib/brand-identity'
 import { getStoreSettings } from '../../../../lib/store-settings'
 import CaseBreadcrumbs from '../../../../components/services/CaseBreadcrumbs'
 import CaseHero from '../../../../components/services/CaseHero'
@@ -93,14 +93,15 @@ export default async function ServiceCasePage({ params }: Props) {
     headline: c.title,
     description: c.deck,
     url: `${BASE_URL}/services/${c.slug}`,
-    imageUrl: c.heroImage ? mediaUrl(c.heroImage.storagePath) : null,
+    imageUrl: crawlableImageUrl(c.heroImage?.storagePath),
     authorName: c.pullQuoteAuthor ?? null,
     publishedAt: c.publishedAt ?? null,
     modifiedAt: c.seoUpdatedAt ?? c.updatedAt ?? null,
     publisherId: ORG_ID,
     publisherName: SITE_NAME,
     // Already an absolute URL — `getStoreSettings` resolves it now.
-    publisherLogoUrl: settings.logoUrl,
+    // The same-origin mark — `settings.logoUrl` is served `x-robots-tag: none`.
+    publisherLogoUrl: searchIconUrl(settings, BASE_URL),
     override: c.jsonLdOverride ?? undefined,
   })
 

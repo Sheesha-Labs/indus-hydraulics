@@ -456,8 +456,22 @@ export default function SiteHeaderClient({
       </div>
 
       {/* ── Megamenu ───────────────────────────────────────── */}
-      {megamenuOpen && megamenuItems.length > 0 && (
+      {/*
+        Always in the DOM, hidden until opened — never mounted on open.
+
+        It used to render only while open, so the server HTML of every page
+        carried none of its ~175 category links: crawlers saw a dozen shelves
+        linked from the homepage and nothing from the menu, and Lifting &
+        Rigging (834 products) was not linked from the homepage at all. Every
+        column below is rendered for every category and toggled with `hidden`,
+        so the whole tree is in the markup while a visitor still sees one
+        drill-down at a time. `hidden` also takes the closed panel out of the
+        tab order and the accessibility tree, which is what conditional
+        mounting was doing for keyboard users.
+      */}
+      {megamenuItems.length > 0 && (
         <div
+          hidden={!megamenuOpen}
           className="border-ih-border bg-ih-surface absolute left-0 right-0 border-t shadow-[0_4px_12px_rgba(20,28,45,.07),0_18px_48px_rgba(20,28,45,.09)]"
           style={{ top: '100%', zIndex: 50 }}
           onMouseEnter={() => openDropdown('mega')}
@@ -496,27 +510,33 @@ export default function SiteHeaderClient({
                 <div className="text-ih-muted mb-3 whitespace-nowrap font-mono text-[10.5px] font-medium uppercase tracking-[0.13em]">
                   {activeCat?.label}
                 </div>
-                <div className="flex flex-col">
-                  {(activeCat?.children ?? []).map((sub, i) => (
-                    <Link
-                      key={`${i}-${sub.label}`}
-                      href={sub.href ?? '#'}
-                      role="menuitem"
-                      className={`flex items-center justify-between rounded-sm border-l-2 px-3 py-2.5 text-[13.5px] transition-colors ${
-                        i === activeSubIdx
-                          ? 'border-ih-accent bg-ih-accent-soft text-ih-accent font-medium'
-                          : 'text-ih-ink-2 hover:border-ih-accent hover:bg-ih-surface-2 border-transparent'
-                      }`}
-                      onMouseEnter={() => handleSubHover(i)}
-                      onClick={closeDropdownImmediate}
-                    >
-                      <span>{sub.label}</span>
-                      <span aria-hidden="true" className="text-ih-muted-2 font-mono text-[11px]">
-                        ›
-                      </span>
-                    </Link>
-                  ))}
-                </div>
+                {megamenuItems.map((cat, catIdx) => (
+                  <div
+                    key={`${catIdx}-${cat.label}`}
+                    hidden={cat !== activeCat}
+                    className="flex flex-col"
+                  >
+                    {(cat.children ?? []).map((sub, i) => (
+                      <Link
+                        key={`${i}-${sub.label}`}
+                        href={sub.href ?? '#'}
+                        role="menuitem"
+                        className={`flex items-center justify-between rounded-sm border-l-2 px-3 py-2.5 text-[13.5px] transition-colors ${
+                          cat === activeCat && sub === activeSub
+                            ? 'border-ih-accent bg-ih-accent-soft text-ih-accent font-medium'
+                            : 'text-ih-ink-2 hover:border-ih-accent hover:bg-ih-surface-2 border-transparent'
+                        }`}
+                        onMouseEnter={() => handleSubHover(i)}
+                        onClick={closeDropdownImmediate}
+                      >
+                        <span>{sub.label}</span>
+                        <span aria-hidden="true" className="text-ih-muted-2 font-mono text-[11px]">
+                          ›
+                        </span>
+                      </Link>
+                    ))}
+                  </div>
+                ))}
               </div>
 
               {/* ── Column 3: Leaf items ── */}
@@ -525,22 +545,32 @@ export default function SiteHeaderClient({
                   {activeSub?.label}
                 </div>
                 <div className="flex flex-1 flex-col">
-                  {(activeSub?.children ?? []).map((leaf, leafIdx) => (
-                    <Link
-                      key={`${leafIdx}-${leaf.label}`}
-                      href={leaf.href ?? '#'}
-                      role="menuitem"
-                      target={leaf.openInNewTab ? '_blank' : undefined}
-                      rel={leaf.openInNewTab ? 'noopener noreferrer' : undefined}
-                      className="text-ih-ink-2 hover:border-ih-accent hover:bg-ih-surface-2 flex items-center justify-between rounded-sm border-l-2 border-transparent px-3 py-2.5 text-[13.5px] transition-colors"
-                      onClick={closeDropdownImmediate}
-                    >
-                      <span>{leaf.label}</span>
-                      <span aria-hidden="true" className="text-ih-muted-2 font-mono text-[11px]">
-                        ›
-                      </span>
-                    </Link>
-                  ))}
+                  {megamenuItems.flatMap((cat, catIdx) =>
+                    (cat.children ?? []).map((sub, subIdx) => (
+                      <div
+                        key={`${catIdx}-${subIdx}-${sub.label}`}
+                        hidden={sub !== activeSub}
+                        className="flex flex-col"
+                      >
+                        {(sub.children ?? []).map((leaf, leafIdx) => (
+                          <Link
+                            key={`${leafIdx}-${leaf.label}`}
+                            href={leaf.href ?? '#'}
+                            role="menuitem"
+                            target={leaf.openInNewTab ? '_blank' : undefined}
+                            rel={leaf.openInNewTab ? 'noopener noreferrer' : undefined}
+                            className="text-ih-ink-2 hover:border-ih-accent hover:bg-ih-surface-2 flex items-center justify-between rounded-sm border-l-2 border-transparent px-3 py-2.5 text-[13.5px] transition-colors"
+                            onClick={closeDropdownImmediate}
+                          >
+                            <span>{leaf.label}</span>
+                            <span aria-hidden="true" className="text-ih-muted-2 font-mono text-[11px]">
+                              ›
+                            </span>
+                          </Link>
+                        ))}
+                      </div>
+                    )),
+                  )}
                 </div>
 
                 {/* Promo tile (if column has one) */}
@@ -642,8 +672,10 @@ export default function SiteHeaderClient({
       )}
 
       {/* ── Brands dropdown ───────────────────────────────── */}
-      {brandsOpen && (
-        <NavListDropdown
+      {/* Mounted always and hidden when closed, like the megamenu, so its
+          links are in the server HTML. */}
+      <NavListDropdown
+          hidden={!brandsOpen}
           items={brands}
           hrefPrefix="/brands/"
           viewAllHref="/brands"
@@ -657,11 +689,10 @@ export default function SiteHeaderClient({
           onMouseLeave={closeDropdown}
           onItemClick={closeDropdownImmediate}
         />
-      )}
 
       {/* ── Industries dropdown ───────────────────────────── */}
-      {industriesOpen && (
-        <NavListDropdown
+      <NavListDropdown
+          hidden={!industriesOpen}
           items={industries}
           hrefPrefix="/industries/"
           viewAllHref="/industries"
@@ -675,7 +706,6 @@ export default function SiteHeaderClient({
           onMouseLeave={closeDropdown}
           onItemClick={closeDropdownImmediate}
         />
-      )}
 
       {/* ── Mobile nav ─────────────────────────────────────── */}
       {mobileOpen && (

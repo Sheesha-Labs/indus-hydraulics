@@ -75,6 +75,9 @@ export function blocksToPlainText(blocks: Array<BlogBlocks[number] | BlogBlockIn
           return block.items.map((i) => `${i.question} ${i.answer}`).join(' ')
         case 'figure':
           return block.caption
+        case 'video':
+          // Site search finds an article by the video it carries.
+          return [block.title, block.caption, block.description].filter(Boolean).join(' ')
         default:
           return ''
       }

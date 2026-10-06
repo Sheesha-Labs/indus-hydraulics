@@ -67,7 +67,7 @@ export default async function BlogPostEditorPage({ params }: Props) {
         select: { id: true, storagePath: true, alt: true, originalFilename: true },
       })
 
-  const [authors, categories] = await Promise.all([
+  const [authors, categories, reviewerRows] = await Promise.all([
     db.blogAuthor.findMany({
       where: { isPublished: true },
       orderBy: [{ position: 'asc' }, { name: 'asc' }],
@@ -77,7 +77,28 @@ export default async function BlogPostEditorPage({ params }: Props) {
       orderBy: [{ position: 'asc' }, { name: 'asc' }],
       select: { id: true, name: true, isPublished: true },
     }),
+    // Reviewers are staff — the person accountable for the figures — shown
+    // under their public profile name when they have one.
+    db.staffUser.findMany({
+      where: { isActive: true },
+      orderBy: { name: 'asc' },
+      select: {
+        id: true,
+        name: true,
+        blogAuthorProfile: {
+          where: { isPublished: true },
+          select: { name: true, jobTitle: true },
+          take: 1,
+        },
+      },
+    }),
   ])
+  const reviewers = reviewerRows.map((r) => ({
+    id: r.id,
+    name: r.blogAuthorProfile[0]?.name ?? r.name,
+    jobTitle: r.blogAuthorProfile[0]?.jobTitle ?? null,
+    hasProfile: r.blogAuthorProfile.length > 0,
+  }))
 
   const storefrontUrl = (process.env.NEXT_PUBLIC_BASE_URL ?? 'https://indushydraulics.com').replace(
     /\/$/,
@@ -126,6 +147,8 @@ export default async function BlogPostEditorPage({ params }: Props) {
               heroStoragePath: post.hero?.storagePath ?? null,
               authorName: post.blogAuthor?.name ?? post.author?.name ?? null,
               blogAuthorId: post.blogAuthorId,
+              reviewedById: post.reviewedById,
+              reviewedAt: post.reviewedAt ? post.reviewedAt.toISOString() : null,
               categoryId: post.categoryId,
               categoryName: post.category?.name ?? null,
               seoTitle: post.seoTitle,
@@ -153,6 +176,7 @@ export default async function BlogPostEditorPage({ params }: Props) {
         originalFilename: m.originalFilename,
       }))}
       authors={authors}
+      reviewers={reviewers}
       categories={categories}
       bodyMedia={bodyMedia}
     />

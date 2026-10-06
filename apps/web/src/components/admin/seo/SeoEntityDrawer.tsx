@@ -3,9 +3,9 @@
 import { useMemo, useState, useTransition } from 'react'
 import {
   buildArticleLd,
+  buildBrandLd,
   buildBreadcrumbLd,
   buildCollectionLd,
-  buildOrgLd,
   buildProductLd,
   TITLE_RANGE,
   DESCRIPTION_RANGE,
@@ -210,11 +210,13 @@ export default function SeoEntityDrawer({
       ]
     }
     if (entityType === 'brand' && extra.kind === 'brand') {
+      // Mirrors the storefront: a brand page is a collection ABOUT the brand,
+      // not the brand's own Organization entity at our URL.
       return [
-        buildOrgLd({
+        buildCollectionLd({
           name: entity.displayName,
           url: effectiveCanonical,
-          logoUrl: extra.logoUrl,
+          about: buildBrandLd({ name: entity.displayName, logoUrl: extra.logoUrl }),
           override: parsedOverride,
         }),
         buildBreadcrumbLd({
@@ -245,6 +247,7 @@ export default function SeoEntityDrawer({
     if (entityType === 'blog_post' && extra.kind === 'blog_post') {
       return [
         buildArticleLd({
+          type: 'BlogPosting',
           headline: entity.displayName,
           description: effectiveDescription || null,
           url: effectiveCanonical,

@@ -11,7 +11,9 @@ const DESCRIPTION =
 
 export const metadata: Metadata = {
   ...pageMetadata({
-    title: 'Blog',
+    // "Blog | Indus Hydraulics" said nothing a searcher types. The index is
+    // the hub every article hangs off, so its title names what is in it.
+    title: 'Hydraulic hose, fittings & rigging guides',
     description: DESCRIPTION,
     path: '/blog',
   }),

@@ -38,10 +38,37 @@ export type BuildMetadataInput = {
   defaultOgImageUrl?: string | null
   /** Site name for og:site_name. */
   siteName?: string
+  /**
+   * Set for an article. Switches `og:type` to `article` and adds its dates,
+   * section and tags — LinkedIn and Slack read these for the share card.
+   */
+  article?: {
+    publishedTime?: Date | null
+    modifiedTime?: Date | null
+    section?: string | null
+    tags?: string[] | null
+    /** Author profile URLs. */
+    authors?: string[] | null
+  } | null
+}
+
+/**
+ * A title the caller has already templated is handed to Next as `absolute`,
+ * so the storefront layout's `%s | Indus Hydraulics` is not applied on top.
+ */
+export type BuiltTitle = string | { absolute: string }
+
+export type BuiltOpenGraphArticle = {
+  type: 'article'
+  publishedTime?: string
+  modifiedTime?: string
+  section?: string
+  tags?: string[]
+  authors?: string[]
 }
 
 export type BuiltMetadata = {
-  title: string
+  title: BuiltTitle
   description: string
   alternates: { canonical: string }
   robots: { index: boolean; follow: boolean }
@@ -50,9 +77,8 @@ export type BuiltMetadata = {
     description: string
     url: string
     siteName?: string
-    type: 'website'
     images?: { url: string }[]
-  }
+  } & ({ type: 'website' } | BuiltOpenGraphArticle)
   twitter: {
     card: 'summary_large_image'
     title: string
@@ -64,6 +90,12 @@ export type BuiltMetadata = {
 export function buildMetadata(input: BuildMetadataInput): BuiltMetadata {
   const rawTitle = stripTrailingSiteName((input.title ?? '').trim(), input.siteName)
   const titleApplied = applyTitleTemplate(rawTitle, input.titleTemplate ?? null)
+  // The SEO console's default template and the storefront layout's
+  // `title.template` are two templates for one job. Applying the first here
+  // and letting Next apply the second rendered "Foo — Indus Hydraulics |
+  // Indus Hydraulics" on every page the moment anyone filled the field in.
+  // When ours applied, it is the whole title.
+  const templated = titleApplied !== rawTitle && titleApplied.length > 0
   const description =
     (input.description ?? '').trim() || (input.defaultDescription ?? '').trim() || ''
 
@@ -74,7 +106,7 @@ export function buildMetadata(input: BuildMetadataInput): BuiltMetadata {
   const robotsFollow = input.robots?.follow ?? true
 
   const md: BuiltMetadata = {
-    title: titleApplied,
+    title: templated ? { absolute: titleApplied } : titleApplied,
     description,
     alternates: { canonical },
     robots: { index: robotsIndex, follow: robotsFollow },
@@ -82,7 +114,7 @@ export function buildMetadata(input: BuildMetadataInput): BuiltMetadata {
       title: titleApplied,
       description,
       url: canonical,
-      type: 'website',
+      ...(input.article ? openGraphArticle(input.article) : { type: 'website' as const }),
       ...(input.siteName ? { siteName: input.siteName } : {}),
       ...(ogImage ? { images: [{ url: ogImage }] } : {}),
     },
@@ -94,6 +126,18 @@ export function buildMetadata(input: BuildMetadataInput): BuiltMetadata {
     },
   }
   return md
+}
+
+function openGraphArticle(a: NonNullable<BuildMetadataInput['article']>): BuiltOpenGraphArticle {
+  const out: BuiltOpenGraphArticle = { type: 'article' }
+  if (a.publishedTime) out.publishedTime = a.publishedTime.toISOString()
+  if (a.modifiedTime) out.modifiedTime = a.modifiedTime.toISOString()
+  if (a.section) out.section = a.section
+  const tags = (a.tags ?? []).map((t) => t.trim()).filter(Boolean)
+  if (tags.length > 0) out.tags = tags
+  const authors = (a.authors ?? []).filter(Boolean)
+  if (authors.length > 0) out.authors = authors
+  return out
 }
 
 /**
@@ -121,7 +165,9 @@ export function buildMetadata(input: BuildMetadataInput): BuiltMetadata {
 export function stripTrailingSiteName(title: string, siteName?: string): string {
   if (!title || !siteName) return title
   const escaped = siteName.replace(/[.*+?^${}()|[\]\\]/g, '\\$&').replace(/\s+/g, '\\s+')
-  const suffix = new RegExp(`\\s*\\|\\s*${escaped}\\s*$`, 'i')
+  // A pipe, a hyphen, or an en or em dash — "Foo — Indus Hydraulics" doubled
+  // up exactly like "Foo | Indus Hydraulics" did, on the hand-written titles.
+  const suffix = new RegExp(`\\s*[|\\-\u2013\u2014]\\s*${escaped}\\s*$`, 'i')
   let out = title.trim()
   while (suffix.test(out)) {
     const next = out.replace(suffix, '').trim()
