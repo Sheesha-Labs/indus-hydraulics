@@ -1,0 +1,5152 @@
+{
+ "IH-CLP-DOUBLE-BOLT": {
+  "variants": [],
+  "tableHtml": "<!-- sunpool-sizes:start --><h3>Sunpool sizes</h3><p>Sunpool lists this clamp in 21 sizes: SL22, SL29, SL34, SL40, SL49, SL60, SL76, SL94, SL115, SL400, SL463, SL525, SL550, SL600, SL675, SL769, SL818, SL875, SL988, SL1125 and SL1275.</p><p class=\"source-note\">Sizes from Sunpool’s catalogue page for this part, checked 7 October 2026.</p><!-- sunpool-sizes:end -->",
+  "sizeRange": null,
+  "edits": [],
+  "specs": [],
+  "alignToSpecs": false,
+  "source": "https://sunpool.com.tw/catalog/ins.php?index_id=213&index_m1_id=3&index_m2_id=23"
+ },
+ "IH-CLP-DOUBLE-BOLT-SUPER": {
+  "variants": [
+   {
+    "partNumber": "IH-CLP-DOUBLE-BOLT-SUPER-35-45",
+    "position": 0,
+    "hoseInch": "35–45 mm",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-DOUBLE-BOLT-SUPER-40-50",
+    "position": 1,
+    "hoseInch": "40–50 mm",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-DOUBLE-BOLT-SUPER-45-55",
+    "position": 2,
+    "hoseInch": "45–55 mm",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-DOUBLE-BOLT-SUPER-50-60",
+    "position": 3,
+    "hoseInch": "50–60 mm",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-DOUBLE-BOLT-SUPER-55-65",
+    "position": 4,
+    "hoseInch": "55–65 mm",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-DOUBLE-BOLT-SUPER-60-70",
+    "position": 5,
+    "hoseInch": "60–70 mm",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-DOUBLE-BOLT-SUPER-65-75",
+    "position": 6,
+    "hoseInch": "65–75 mm",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-DOUBLE-BOLT-SUPER-70-80",
+    "position": 7,
+    "hoseInch": "70–80 mm",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-DOUBLE-BOLT-SUPER-75-85",
+    "position": 8,
+    "hoseInch": "75–85 mm",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-DOUBLE-BOLT-SUPER-80-90",
+    "position": 9,
+    "hoseInch": "80–90 mm",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-DOUBLE-BOLT-SUPER-85-95",
+    "position": 10,
+    "hoseInch": "85–95 mm",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-DOUBLE-BOLT-SUPER-95-105",
+    "position": 11,
+    "hoseInch": "95–105 mm",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-DOUBLE-BOLT-SUPER-100-110",
+    "position": 12,
+    "hoseInch": "100–110 mm",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-DOUBLE-BOLT-SUPER-105-115",
+    "position": 13,
+    "hoseInch": "105–115 mm",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-DOUBLE-BOLT-SUPER-110-120",
+    "position": 14,
+    "hoseInch": "110–120 mm",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-DOUBLE-BOLT-SUPER-115-125",
+    "position": 15,
+    "hoseInch": "115–125 mm",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-DOUBLE-BOLT-SUPER-120-130",
+    "position": 16,
+    "hoseInch": "120–130 mm",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-DOUBLE-BOLT-SUPER-130-140",
+    "position": 17,
+    "hoseInch": "130–140 mm",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-DOUBLE-BOLT-SUPER-140-150",
+    "position": 18,
+    "hoseInch": "140–150 mm",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-DOUBLE-BOLT-SUPER-150-160",
+    "position": 19,
+    "hoseInch": "150–160 mm",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-DOUBLE-BOLT-SUPER-160-170",
+    "position": 20,
+    "hoseInch": "160–170 mm",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-DOUBLE-BOLT-SUPER-170-180",
+    "position": 21,
+    "hoseInch": "170–180 mm",
+    "portLabel": null,
+    "port2Label": null
+   }
+  ],
+  "tableHtml": "<!-- sunpool-sizes:start --><h3>Sunpool sizes</h3><p>Sunpool sizes this clamp by the hose outside diameter it closes on, in millimetres: 22 sizes from 35–45 mm to 170–180 mm.</p><p class=\"source-note\">Sizes from Sunpool’s catalogue page for this part, checked 7 October 2026.</p><!-- sunpool-sizes:end -->",
+  "sizeRange": null,
+  "edits": [],
+  "specs": [],
+  "alignToSpecs": false,
+  "source": "https://sunpool.com.tw/catalog/ins.php?index_id=209&index_m1_id=3&index_m2_id=23"
+ },
+ "IH-CLP-DRAG-HOSE": {
+  "variants": [
+   {
+    "partNumber": "IH-CLP-DRAG-HOSE-400",
+    "position": 0,
+    "hoseInch": "4\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-DRAG-HOSE-500",
+    "position": 1,
+    "hoseInch": "5\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-DRAG-HOSE-600",
+    "position": 2,
+    "hoseInch": "6\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-DRAG-HOSE-800",
+    "position": 3,
+    "hoseInch": "8\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-DRAG-HOSE-1000",
+    "position": 4,
+    "hoseInch": "10\"",
+    "portLabel": null,
+    "port2Label": null
+   }
+  ],
+  "tableHtml": "<!-- sunpool-sizes:start --><h3>Sunpool sizes</h3><p>Sunpool lists this part in 4\", 5\", 6\", 8\" and 10\".</p><p class=\"source-note\">Sizes from Sunpool’s catalogue page for this part, checked 7 October 2026.</p><!-- sunpool-sizes:end -->",
+  "sizeRange": null,
+  "edits": [],
+  "specs": [],
+  "alignToSpecs": false,
+  "source": "https://sunpool.com.tw/catalog/ins.php?index_id=533&index_m1_id=3&index_m2_id=23"
+ },
+ "IH-CLP-DRAG-RING": {
+  "variants": [
+   {
+    "partNumber": "IH-CLP-DRAG-RING-400",
+    "position": 0,
+    "hoseInch": "4\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-DRAG-RING-500",
+    "position": 1,
+    "hoseInch": "5\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-DRAG-RING-600",
+    "position": 2,
+    "hoseInch": "6\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-DRAG-RING-800",
+    "position": 3,
+    "hoseInch": "8\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-DRAG-RING-1000",
+    "position": 4,
+    "hoseInch": "10\"",
+    "portLabel": null,
+    "port2Label": null
+   }
+  ],
+  "tableHtml": "<!-- sunpool-sizes:start --><h3>Sunpool sizes</h3><p>Sunpool lists this part in 4\", 5\", 6\", 8\" and 10\".</p><p class=\"source-note\">Sizes from Sunpool’s catalogue page for this part, checked 7 October 2026.</p><!-- sunpool-sizes:end -->",
+  "sizeRange": null,
+  "edits": [],
+  "specs": [],
+  "alignToSpecs": false,
+  "source": "https://sunpool.com.tw/catalog/ins.php?index_id=537&index_m1_id=3&index_m2_id=23"
+ },
+ "IH-CLP-EN-14423": {
+  "variants": [
+   {
+    "partNumber": "IH-CLP-EN-14423-13X6",
+    "position": 0,
+    "hoseInch": "13 × 6 mm",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-EN-14423-19X7",
+    "position": 1,
+    "hoseInch": "19 × 7 mm",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-EN-14423-25X7.5",
+    "position": 2,
+    "hoseInch": "25 × 7.5 mm",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-EN-14423-32X8",
+    "position": 3,
+    "hoseInch": "32 × 8 mm",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-EN-14423-38X8",
+    "position": 4,
+    "hoseInch": "38 × 8 mm",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-EN-14423-50X9",
+    "position": 5,
+    "hoseInch": "50 × 9 mm",
+    "portLabel": null,
+    "port2Label": null
+   }
+  ],
+  "tableHtml": "<!-- sunpool-sizes:start --><h3>Sunpool sizes</h3><p>Sunpool lists these sizes for the clamp, written as hose bore × wall thickness in millimetres.</p><p class=\"source-note\">Sizes from Sunpool’s catalogue page for this part, checked 7 October 2026.</p><!-- sunpool-sizes:end -->",
+  "sizeRange": null,
+  "edits": [],
+  "specs": [],
+  "alignToSpecs": false,
+  "source": "https://sunpool.com.tw/catalog/ins.php?index_id=211&index_m1_id=3&index_m2_id=23"
+ },
+ "IH-CLP-FERRULE-HD": {
+  "variants": [
+   {
+    "partNumber": "IH-CLP-FERRULE-HD-200A",
+    "position": 0,
+    "hoseInch": "2\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-FERRULE-HD-200B",
+    "position": 1,
+    "hoseInch": "2\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-FERRULE-HD-250",
+    "position": 2,
+    "hoseInch": "2-1/2\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-FERRULE-HD-300A",
+    "position": 3,
+    "hoseInch": "3\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-FERRULE-HD-300B",
+    "position": 4,
+    "hoseInch": "3\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-FERRULE-HD-300C",
+    "position": 5,
+    "hoseInch": "3\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-FERRULE-HD-300D",
+    "position": 6,
+    "hoseInch": "3\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-FERRULE-HD-400A",
+    "position": 7,
+    "hoseInch": "4\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-FERRULE-HD-400B",
+    "position": 8,
+    "hoseInch": "4\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-FERRULE-HD-400C",
+    "position": 9,
+    "hoseInch": "4\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-FERRULE-HD-400D",
+    "position": 10,
+    "hoseInch": "4\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-FERRULE-HD-500A",
+    "position": 11,
+    "hoseInch": "5\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-FERRULE-HD-500B",
+    "position": 12,
+    "hoseInch": "5\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-FERRULE-HD-600A",
+    "position": 13,
+    "hoseInch": "6\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-FERRULE-HD-600B",
+    "position": 14,
+    "hoseInch": "6\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-FERRULE-HD-600C",
+    "position": 15,
+    "hoseInch": "6\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-FERRULE-HD-600D",
+    "position": 16,
+    "hoseInch": "6\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-FERRULE-HD-800",
+    "position": 17,
+    "hoseInch": "8\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-FERRULE-HD-1000",
+    "position": 18,
+    "hoseInch": "10\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-FERRULE-HD-1200",
+    "position": 19,
+    "hoseInch": "12\"",
+    "portLabel": null,
+    "port2Label": null
+   }
+  ],
+  "tableHtml": "<!-- sunpool-sizes:start --><h3>Sunpool sizes</h3><p>Sunpool makes several ferrules at most sizes, one per hose outside diameter, so each has its own Indus part number: pick the one whose I.D. clears your hose O.D. Dimensions are Sunpool’s.</p><div class=\"ih-table-scroll\"><table><thead><tr><th>Size</th><th>O.D. (mm)</th><th>I.D. (mm)</th><th>Length (mm)</th></tr></thead><tbody><tr><td>2\"</td><td>73</td><td>65</td><td>89</td></tr><tr><td>2\"</td><td>76</td><td>69</td><td>89</td></tr><tr><td>2-1/2\"</td><td>89</td><td>82</td><td>89</td></tr><tr><td>3\"</td><td>101.6</td><td>94.5</td><td>118</td></tr><tr><td>3\"</td><td>105</td><td>98</td><td>118</td></tr><tr><td>3\"</td><td>111.5</td><td>102</td><td>118</td></tr><tr><td>3\"</td><td>111.5</td><td>104</td><td>118</td></tr><tr><td>4\"</td><td>130</td><td>122.5</td><td>125</td></tr><tr><td>4\"</td><td>131</td><td>121</td><td>125</td></tr><tr><td>4\"</td><td>133</td><td>123</td><td>125</td></tr><tr><td>4\"</td><td>137</td><td>127</td><td>125</td></tr><tr><td>5\"</td><td>162</td><td>152</td><td>155</td></tr><tr><td>5\"</td><td>168</td><td>157</td><td>155</td></tr><tr><td>6\"</td><td>180</td><td>171</td><td>160</td></tr><tr><td>6\"</td><td>185</td><td>174</td><td>160</td></tr><tr><td>6\"</td><td>190</td><td>179</td><td>160</td></tr><tr><td>6\"</td><td>193</td><td>182</td><td>160</td></tr><tr><td>8\"</td><td>267</td><td>256</td><td>208</td></tr><tr><td>10\"</td><td>318</td><td>307</td><td>208</td></tr><tr><td>12\"</td><td>—</td><td>—</td><td>—</td></tr></tbody></table></div><p class=\"source-note\">Sizes and dimensions from Sunpool’s catalogue page for this part, checked 7 October 2026.</p><!-- sunpool-sizes:end -->",
+  "sizeRange": null,
+  "edits": [],
+  "specs": [],
+  "alignToSpecs": false,
+  "source": "https://sunpool.com.tw/catalog/ins.php?index_id=253&index_m1_id=3&index_m2_id=23"
+ },
+ "IH-CLP-FERRULE-KC-CAMLOCK": {
+  "variants": [
+   {
+    "partNumber": "IH-CLP-FERRULE-KC-CAMLOCK-100",
+    "position": 0,
+    "hoseInch": "1\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-FERRULE-KC-CAMLOCK-125",
+    "position": 1,
+    "hoseInch": "1-1/4\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-FERRULE-KC-CAMLOCK-150",
+    "position": 2,
+    "hoseInch": "1-1/2\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-FERRULE-KC-CAMLOCK-200",
+    "position": 3,
+    "hoseInch": "2\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-FERRULE-KC-CAMLOCK-250",
+    "position": 4,
+    "hoseInch": "2-1/2\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-FERRULE-KC-CAMLOCK-300",
+    "position": 5,
+    "hoseInch": "3\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-FERRULE-KC-CAMLOCK-400",
+    "position": 6,
+    "hoseInch": "4\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-FERRULE-KC-CAMLOCK-600",
+    "position": 7,
+    "hoseInch": "6\"",
+    "portLabel": null,
+    "port2Label": null
+   }
+  ],
+  "tableHtml": "<!-- sunpool-sizes:start --><h3>Sunpool sizes</h3><p>Dimensions are Sunpool’s. Each nominal size is also made in other bores for other hose outside diameters — tell us the hose O.D.</p><div class=\"ih-table-scroll\"><table><thead><tr><th>Hose size</th><th>Ferrule I.D. (mm)</th><th>Wall thickness (mm)</th><th>Length (mm)</th></tr></thead><tbody><tr><td>1\"</td><td>32.8</td><td>1.5</td><td>58.2</td></tr><tr><td>1-1/4\"</td><td>39.6</td><td>1.5</td><td>59</td></tr><tr><td>1-1/2\"</td><td>43.2</td><td>1.5</td><td>60</td></tr><tr><td>2\"</td><td>56.5</td><td>1.5</td><td>70.8</td></tr><tr><td>2-1/2\"</td><td>70.5</td><td>1.5</td><td>79</td></tr><tr><td>3\"</td><td>84.5</td><td>2.5</td><td>100</td></tr><tr><td>4\"</td><td>110</td><td>2.5</td><td>106.4</td></tr><tr><td>6\"</td><td>163</td><td>3</td><td>144</td></tr></tbody></table></div><p class=\"source-note\">Sizes and dimensions from Sunpool’s catalogue page for this part, checked 7 October 2026.</p><!-- sunpool-sizes:end -->",
+  "sizeRange": null,
+  "edits": [],
+  "specs": [],
+  "alignToSpecs": false,
+  "source": "https://sunpool.com.tw/catalog/ins.php?index_id=251&index_m1_id=3&index_m2_id=23"
+ },
+ "IH-CLP-INTERLOCKING": {
+  "variants": [
+   {
+    "partNumber": "IH-CLP-INTERLOCKING-CD",
+    "position": 0,
+    "hoseInch": "3/8\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-INTERLOCKING-A4",
+    "position": 1,
+    "hoseInch": "1/2\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-INTERLOCKING-A9",
+    "position": 2,
+    "hoseInch": "3/4\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-INTERLOCKING-A10",
+    "position": 3,
+    "hoseInch": "1\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-INTERLOCKING-B4",
+    "position": 4,
+    "hoseInch": "1/2\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-INTERLOCKING-BU9S",
+    "position": 5,
+    "hoseInch": "3/4\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-INTERLOCKING-BU9",
+    "position": 6,
+    "hoseInch": "3/4\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-INTERLOCKING-B10",
+    "position": 7,
+    "hoseInch": "3/4\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-INTERLOCKING-BU14",
+    "position": 8,
+    "hoseInch": "1\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-INTERLOCKING-B14",
+    "position": 9,
+    "hoseInch": "1\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-INTERLOCKING-BU19",
+    "position": 10,
+    "hoseInch": "1-1/4\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-INTERLOCKING-B19",
+    "position": 11,
+    "hoseInch": "1-1/4\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-INTERLOCKING-BU24",
+    "position": 12,
+    "hoseInch": "1-1/2\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-INTERLOCKING-B24",
+    "position": 13,
+    "hoseInch": "1-1/2\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-INTERLOCKING-BU29",
+    "position": 14,
+    "hoseInch": "2\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-INTERLOCKING-B29",
+    "position": 15,
+    "hoseInch": "2\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-INTERLOCKING-BU49",
+    "position": 16,
+    "hoseInch": "4\"",
+    "portLabel": null,
+    "port2Label": null
+   }
+  ],
+  "tableHtml": "<!-- sunpool-sizes:start --><h3>Sunpool sizes</h3><p>Each Sunpool type is listed with the hose size it is for and the range of hose outside diameters it closes on. Types CD to A10 are for air hose; B4 to BU49 are for steam hose.</p><div class=\"ih-table-scroll\"><table><thead><tr><th>Sunpool type</th><th>Hose size</th><th>Clamping range (hose O.D.)</th></tr></thead><tbody><tr><td>CD</td><td>3/8\"</td><td>—</td></tr><tr><td>A4</td><td>1/2\"</td><td>1\"–1-3/16\"</td></tr><tr><td>A9</td><td>3/4\"</td><td>1-1/8\"–1-5/16\"</td></tr><tr><td>A10</td><td>1\"</td><td>—</td></tr><tr><td>B4</td><td>1/2\"</td><td>15/16\"–1-1/16\"</td></tr><tr><td>BU9S</td><td>3/4\"</td><td>1-5/32\"–1-9/32\"</td></tr><tr><td>BU9</td><td>3/4\"</td><td>1-3/16\"–1-5/16\"</td></tr><tr><td>B10</td><td>3/4\"</td><td>1-1/2\"–1-11/16\"</td></tr><tr><td>BU14</td><td>1\"</td><td>1-17/32\"–1-25/32\"</td></tr><tr><td>B14</td><td>1\"</td><td>1-11/16\"–1-15/16\"</td></tr><tr><td>BU19</td><td>1-1/4\"</td><td>1-25/32\"–2-3/32\"</td></tr><tr><td>B19</td><td>1-1/4\"</td><td>2-1/8\"–2-3/8\"</td></tr><tr><td>BU24</td><td>1-1/2\"</td><td>2-3/16\"–2-3/8\"</td></tr><tr><td>B24</td><td>1-1/2\"</td><td>2-1/4\"–2-9/16\"</td></tr><tr><td>BU29</td><td>2\"</td><td>2-1/2\"–2-25/32\"</td></tr><tr><td>B29</td><td>2\"</td><td>—</td></tr><tr><td>BU49</td><td>4\"</td><td>5-1/4\"–5-19/32\"</td></tr></tbody></table></div><p class=\"source-note\">Sizes from Sunpool’s catalogue page for this part, checked 7 October 2026.</p><!-- sunpool-sizes:end -->",
+  "sizeRange": null,
+  "edits": [],
+  "specs": [],
+  "alignToSpecs": false,
+  "source": "https://sunpool.com.tw/catalog/ins.php?index_id=212&index_m1_id=3&index_m2_id=23"
+ },
+ "IH-CLP-SAFETY-14420-3": {
+  "variants": [
+   {
+    "partNumber": "IH-CLP-SAFETY-14420-3-13X5",
+    "position": 0,
+    "hoseInch": "13 × 5 mm",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-SAFETY-14420-3-19X6",
+    "position": 1,
+    "hoseInch": "19 × 6 mm",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-SAFETY-14420-3-25X5",
+    "position": 2,
+    "hoseInch": "25 × 5 mm",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-SAFETY-14420-3-25X6",
+    "position": 3,
+    "hoseInch": "25 × 6 mm",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-SAFETY-14420-3-25X8",
+    "position": 4,
+    "hoseInch": "25 × 8 mm",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-SAFETY-14420-3-32X5",
+    "position": 5,
+    "hoseInch": "32 × 5 mm",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-SAFETY-14420-3-32X6",
+    "position": 6,
+    "hoseInch": "32 × 6 mm",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-SAFETY-14420-3-32X8",
+    "position": 7,
+    "hoseInch": "32 × 8 mm",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-SAFETY-14420-3-38X5",
+    "position": 8,
+    "hoseInch": "38 × 5 mm",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-SAFETY-14420-3-38X6.5",
+    "position": 9,
+    "hoseInch": "38 × 6.5 mm",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-SAFETY-14420-3-38X8",
+    "position": 10,
+    "hoseInch": "38 × 8 mm",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-SAFETY-14420-3-38X10",
+    "position": 11,
+    "hoseInch": "38 × 10 mm",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-SAFETY-14420-3-40X7",
+    "position": 12,
+    "hoseInch": "40 × 7 mm",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-SAFETY-14420-3-40X10",
+    "position": 13,
+    "hoseInch": "40 × 10 mm",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-SAFETY-14420-3-45X7",
+    "position": 14,
+    "hoseInch": "45 × 7 mm",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-SAFETY-14420-3-50X5",
+    "position": 15,
+    "hoseInch": "50 × 5 mm",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-SAFETY-14420-3-50X5.5",
+    "position": 16,
+    "hoseInch": "50 × 5.5 mm",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-SAFETY-14420-3-50X6",
+    "position": 17,
+    "hoseInch": "50 × 6 mm",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-SAFETY-14420-3-50X8",
+    "position": 18,
+    "hoseInch": "50 × 8 mm",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-SAFETY-14420-3-63X6",
+    "position": 19,
+    "hoseInch": "63 × 6 mm",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-SAFETY-14420-3-63X8",
+    "position": 20,
+    "hoseInch": "63 × 8 mm",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-SAFETY-14420-3-63X10",
+    "position": 21,
+    "hoseInch": "63 × 10 mm",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-SAFETY-14420-3-75X6",
+    "position": 22,
+    "hoseInch": "75 × 6 mm",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-SAFETY-14420-3-75X7.5",
+    "position": 23,
+    "hoseInch": "75 × 7.5 mm",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-SAFETY-14420-3-75X8",
+    "position": 24,
+    "hoseInch": "75 × 8 mm",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-SAFETY-14420-3-80X8",
+    "position": 25,
+    "hoseInch": "80 × 8 mm",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-SAFETY-14420-3-90X6.5",
+    "position": 26,
+    "hoseInch": "90 × 6.5 mm",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-SAFETY-14420-3-100X6.5",
+    "position": 27,
+    "hoseInch": "100 × 6.5 mm",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-SAFETY-14420-3-100X8",
+    "position": 28,
+    "hoseInch": "100 × 8 mm",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-SAFETY-14420-3-100X10",
+    "position": 29,
+    "hoseInch": "100 × 10 mm",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-SAFETY-14420-3-100X12",
+    "position": 30,
+    "hoseInch": "100 × 12 mm",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-SAFETY-14420-3-100X14",
+    "position": 31,
+    "hoseInch": "100 × 14 mm",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-SAFETY-14420-3-100X16",
+    "position": 32,
+    "hoseInch": "100 × 16 mm",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-SAFETY-14420-3-125X10",
+    "position": 33,
+    "hoseInch": "125 × 10 mm",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-SAFETY-14420-3-150X10",
+    "position": 34,
+    "hoseInch": "150 × 10 mm",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-SAFETY-14420-3-150X13",
+    "position": 35,
+    "hoseInch": "150 × 13 mm",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-SAFETY-14420-3-200X12",
+    "position": 36,
+    "hoseInch": "200 × 12 mm",
+    "portLabel": null,
+    "port2Label": null
+   }
+  ],
+  "tableHtml": "<!-- sunpool-sizes:start --><h3>Sunpool sizes</h3><p>Sunpool lists these sizes for the clamp, written as hose bore × wall thickness in millimetres.</p><p class=\"source-note\">Sizes from Sunpool’s catalogue page for this part, checked 7 October 2026.</p><!-- sunpool-sizes:end -->",
+  "sizeRange": null,
+  "edits": [],
+  "specs": [],
+  "alignToSpecs": false,
+  "source": "https://sunpool.com.tw/catalog/ins.php?index_id=210&index_m1_id=3&index_m2_id=23"
+ },
+ "IH-CLP-SEGMENT-3-FRAC": {
+  "variants": [
+   {
+    "partNumber": "IH-CLP-SEGMENT-3-FRAC-800",
+    "position": 0,
+    "hoseInch": "8\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-SEGMENT-3-FRAC-1000",
+    "position": 1,
+    "hoseInch": "10\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-SEGMENT-3-FRAC-1200",
+    "position": 2,
+    "hoseInch": "12\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-SEGMENT-3-FRAC-1400",
+    "position": 3,
+    "hoseInch": "14\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-SEGMENT-3-FRAC-1600",
+    "position": 4,
+    "hoseInch": "16\"",
+    "portLabel": null,
+    "port2Label": null
+   }
+  ],
+  "tableHtml": "<!-- sunpool-sizes:start --><h3>Sunpool sizes</h3><p>Sunpool lists this part in 8\", 10\", 12\", 14\" and 16\".</p><p class=\"source-note\">Sizes from Sunpool’s catalogue page for this part, checked 7 October 2026.</p><!-- sunpool-sizes:end -->",
+  "sizeRange": null,
+  "edits": [],
+  "specs": [],
+  "alignToSpecs": false,
+  "source": "https://sunpool.com.tw/catalog/ins.php?index_id=247&index_m1_id=3&index_m2_id=23"
+ },
+ "IH-CLP-SINGLE-BOLT": {
+  "variants": [
+   {
+    "partNumber": "IH-CLP-SINGLE-BOLT-17-19",
+    "position": 0,
+    "hoseInch": "17–19 mm",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-SINGLE-BOLT-20-22",
+    "position": 1,
+    "hoseInch": "20–22 mm",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-SINGLE-BOLT-23-25",
+    "position": 2,
+    "hoseInch": "23–25 mm",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-SINGLE-BOLT-26-28",
+    "position": 3,
+    "hoseInch": "26–28 mm",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-SINGLE-BOLT-29-31",
+    "position": 4,
+    "hoseInch": "29–31 mm",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-SINGLE-BOLT-32-35",
+    "position": 5,
+    "hoseInch": "32–35 mm",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-SINGLE-BOLT-36-39",
+    "position": 6,
+    "hoseInch": "36–39 mm",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-SINGLE-BOLT-40-43",
+    "position": 7,
+    "hoseInch": "40–43 mm",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-SINGLE-BOLT-44-47",
+    "position": 8,
+    "hoseInch": "44–47 mm",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-SINGLE-BOLT-48-51",
+    "position": 9,
+    "hoseInch": "48–51 mm",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-SINGLE-BOLT-52-55",
+    "position": 10,
+    "hoseInch": "52–55 mm",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-SINGLE-BOLT-56-59",
+    "position": 11,
+    "hoseInch": "56–59 mm",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-SINGLE-BOLT-60-63",
+    "position": 12,
+    "hoseInch": "60–63 mm",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-SINGLE-BOLT-64-67",
+    "position": 13,
+    "hoseInch": "64–67 mm",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-SINGLE-BOLT-68-73",
+    "position": 14,
+    "hoseInch": "68–73 mm",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-SINGLE-BOLT-74-79",
+    "position": 15,
+    "hoseInch": "74–79 mm",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-SINGLE-BOLT-80-85",
+    "position": 16,
+    "hoseInch": "80–85 mm",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-SINGLE-BOLT-86-91",
+    "position": 17,
+    "hoseInch": "86–91 mm",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-SINGLE-BOLT-92-97",
+    "position": 18,
+    "hoseInch": "92–97 mm",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-SINGLE-BOLT-98-103",
+    "position": 19,
+    "hoseInch": "98–103 mm",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-SINGLE-BOLT-104-112",
+    "position": 20,
+    "hoseInch": "104–112 mm",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-SINGLE-BOLT-113-121",
+    "position": 21,
+    "hoseInch": "113–121 mm",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-SINGLE-BOLT-122-130",
+    "position": 22,
+    "hoseInch": "122–130 mm",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-SINGLE-BOLT-131-139",
+    "position": 23,
+    "hoseInch": "131–139 mm",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-SINGLE-BOLT-140-148",
+    "position": 24,
+    "hoseInch": "140–148 mm",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-SINGLE-BOLT-149-161",
+    "position": 25,
+    "hoseInch": "149–161 mm",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-SINGLE-BOLT-162-174",
+    "position": 26,
+    "hoseInch": "162–174 mm",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-SINGLE-BOLT-175-187",
+    "position": 27,
+    "hoseInch": "175–187 mm",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-SINGLE-BOLT-188-200",
+    "position": 28,
+    "hoseInch": "188–200 mm",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-SINGLE-BOLT-201-213",
+    "position": 29,
+    "hoseInch": "201–213 mm",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-SINGLE-BOLT-214-226",
+    "position": 30,
+    "hoseInch": "214–226 mm",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-SINGLE-BOLT-227-239",
+    "position": 31,
+    "hoseInch": "227–239 mm",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-SINGLE-BOLT-240-252",
+    "position": 32,
+    "hoseInch": "240–252 mm",
+    "portLabel": null,
+    "port2Label": null
+   }
+  ],
+  "tableHtml": "<!-- sunpool-sizes:start --><h3>Sunpool sizes</h3><p>Sunpool sizes this clamp by the hose outside diameter it closes on, in millimetres: 33 sizes from 17–19 mm to 240–252 mm.</p><p class=\"source-note\">Sizes from Sunpool’s catalogue page for this part, checked 7 October 2026.</p><!-- sunpool-sizes:end -->",
+  "sizeRange": null,
+  "edits": [],
+  "specs": [],
+  "alignToSpecs": false,
+  "source": "https://sunpool.com.tw/catalog/ins.php?index_id=208&index_m1_id=3&index_m2_id=23"
+ },
+ "IH-CLP-SLEEVE-ALU": {
+  "variants": [
+   {
+    "partNumber": "IH-CLP-SLEEVE-ALU-400",
+    "position": 0,
+    "hoseInch": "4\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-SLEEVE-ALU-500",
+    "position": 1,
+    "hoseInch": "5\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-SLEEVE-ALU-600",
+    "position": 2,
+    "hoseInch": "6\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-SLEEVE-ALU-800",
+    "position": 3,
+    "hoseInch": "8\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-SLEEVE-ALU-1000",
+    "position": 4,
+    "hoseInch": "10\"",
+    "portLabel": null,
+    "port2Label": null
+   }
+  ],
+  "tableHtml": "<!-- sunpool-sizes:start --><h3>Sunpool sizes</h3><p>Sunpool lists this part in 4\", 5\", 6\", 8\" and 10\".</p><p class=\"source-note\">Sizes from Sunpool’s catalogue page for this part, checked 7 October 2026.</p><!-- sunpool-sizes:end -->",
+  "sizeRange": null,
+  "edits": [],
+  "specs": [],
+  "alignToSpecs": false,
+  "source": "https://sunpool.com.tw/catalog/ins.php?index_id=535&index_m1_id=3&index_m2_id=23"
+ },
+ "IH-CLP-SLEEVE-KC-CAMLOCK": {
+  "variants": [
+   {
+    "partNumber": "IH-CLP-SLEEVE-KC-CAMLOCK-100",
+    "position": 0,
+    "hoseInch": "1\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-SLEEVE-KC-CAMLOCK-150",
+    "position": 1,
+    "hoseInch": "1-1/2\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-SLEEVE-KC-CAMLOCK-200",
+    "position": 2,
+    "hoseInch": "2\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-SLEEVE-KC-CAMLOCK-250",
+    "position": 3,
+    "hoseInch": "2-1/2\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-SLEEVE-KC-CAMLOCK-300",
+    "position": 4,
+    "hoseInch": "3\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-SLEEVE-KC-CAMLOCK-400",
+    "position": 5,
+    "hoseInch": "4\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-SLEEVE-KC-CAMLOCK-500",
+    "position": 6,
+    "hoseInch": "5\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-SLEEVE-KC-CAMLOCK-600",
+    "position": 7,
+    "hoseInch": "6\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-CLP-SLEEVE-KC-CAMLOCK-800",
+    "position": 8,
+    "hoseInch": "8\"",
+    "portLabel": null,
+    "port2Label": null
+   }
+  ],
+  "tableHtml": "<!-- sunpool-sizes:start --><h3>Sunpool sizes</h3><p>Each size is made in several bores across the range shown, for different hose outside diameters — tell us the hose O.D.</p><div class=\"ih-table-scroll\"><table><thead><tr><th>Size</th><th>Sleeve I.D. range</th></tr></thead><tbody><tr><td>1\"</td><td>1-1/4\"–1-3/4\" (31.8–44.5 mm)</td></tr><tr><td>1-1/2\"</td><td>1-3/4\"–2-3/8\" (44.5–60.3 mm)</td></tr><tr><td>2\"</td><td>2-1/4\"–2-15/16\" (57.2–74.6 mm)</td></tr><tr><td>2-1/2\"</td><td>3-1/8\"–3-3/16\" (79.4–81.0 mm)</td></tr><tr><td>3\"</td><td>3-9/16\"–4\" (90.5–101.6 mm)</td></tr><tr><td>4\"</td><td>4-9/16\"–5-1/16\" (115.9–128.6 mm)</td></tr><tr><td>5\"</td><td>5-3/4\" (146.1 mm), 5-15/16\" (150.8 mm)</td></tr><tr><td>6\"</td><td>6-15/16\"–7-3/8\" (176.2–187.3 mm)</td></tr><tr><td>8\"</td><td>8-1/2\"–9-1/2\" (215.9–241.3 mm)</td></tr></tbody></table></div><p class=\"source-note\">Sizes and dimensions from Sunpool’s catalogue page for this part, checked 7 October 2026.</p><!-- sunpool-sizes:end -->",
+  "sizeRange": null,
+  "edits": [],
+  "specs": [],
+  "alignToSpecs": false,
+  "source": "https://sunpool.com.tw/catalog/ins.php?index_id=252&index_m1_id=3&index_m2_id=23"
+ },
+ "IH-COMP-CAMLOCK-TYPE-C-X-SPIRAL-TAIL-FOR-COMPOST": {
+  "variants": [],
+  "tableHtml": null,
+  "sizeRange": "1\"–4\"",
+  "edits": [],
+  "specs": [],
+  "alignToSpecs": true,
+  "source": "https://sunpool.com.tw/catalog/ins.php?index_id=277&index_m1_id=3&index_m2_id=18"
+ },
+ "IH-COMP-CAMLOCK-TYPE-E-X-SPIRAL-TAIL-FOR-COMPOSI": {
+  "variants": [],
+  "tableHtml": null,
+  "sizeRange": "1\"–4\"",
+  "edits": [],
+  "specs": [],
+  "alignToSpecs": true,
+  "source": "https://sunpool.com.tw/catalog/ins.php?index_id=238&index_m1_id=3&index_m2_id=18"
+ },
+ "IH-COMP-COMPOSITE-HOSE-FEMALE-LINER": {
+  "variants": [],
+  "tableHtml": null,
+  "sizeRange": "1\"–4\"",
+  "edits": [],
+  "specs": [],
+  "alignToSpecs": true,
+  "source": "https://sunpool.com.tw/catalog/ins.php?index_id=280&index_m1_id=3&index_m2_id=18"
+ },
+ "IH-COMP-HEX-MALE-COMPOSITE-HOSE-FITTING": {
+  "variants": [],
+  "tableHtml": null,
+  "sizeRange": "1\"–4\"",
+  "edits": [],
+  "specs": [],
+  "alignToSpecs": true,
+  "source": "https://sunpool.com.tw/catalog/ins.php?index_id=282&index_m1_id=3&index_m2_id=18"
+ },
+ "IH-COMP-LUG-NUT-FOR-FEMALE-LINER": {
+  "variants": [],
+  "tableHtml": null,
+  "sizeRange": "1\"–4\"",
+  "edits": [],
+  "specs": [],
+  "alignToSpecs": true,
+  "source": "https://sunpool.com.tw/catalog/ins.php?index_id=278&index_m1_id=3&index_m2_id=18"
+ },
+ "IH-COMP-SPIRAL-HOSE-TAIL-X-FLANGE": {
+  "variants": [
+   {
+    "partNumber": "IH-COMP-SPIRAL-HOSE-TAIL-X-FLANGE-200",
+    "position": 0,
+    "hoseInch": "2\"",
+    "portLabel": null,
+    "port2Label": null
+   }
+  ],
+  "tableHtml": "<!-- sunpool-sizes:start --><h3>Sunpool sizes</h3><p>Sunpool lists this part in one size, 2\".</p><p class=\"source-note\">Sizes from Sunpool’s catalogue page for this part, checked 7 October 2026.</p><!-- sunpool-sizes:end -->",
+  "sizeRange": "2\"",
+  "edits": [],
+  "specs": [],
+  "alignToSpecs": true,
+  "source": "https://sunpool.com.tw/catalog/ins.php?index_id=674&index_m1_id=3&index_m2_id=18"
+ },
+ "IH-GST-ADAPTER-FEMALE": {
+  "variants": [
+   {
+    "partNumber": "IH-GST-ADAPTER-FEMALE-200",
+    "position": 0,
+    "hoseInch": "2\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-GST-ADAPTER-FEMALE-250",
+    "position": 1,
+    "hoseInch": "2-1/2\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-GST-ADAPTER-FEMALE-300",
+    "position": 2,
+    "hoseInch": "3\"",
+    "portLabel": null,
+    "port2Label": null
+   }
+  ],
+  "tableHtml": "<!-- sunpool-sizes:start --><h3>Sunpool sizes</h3><p>Sunpool lists this part in 2\", 2-1/2\" and 3\".</p><p class=\"source-note\">Sizes from Sunpool’s catalogue page for this part, checked 7 October 2026.</p><!-- sunpool-sizes:end -->",
+  "sizeRange": null,
+  "edits": [],
+  "specs": [],
+  "alignToSpecs": false,
+  "source": "https://sunpool.com.tw/catalog/ins.php?index_id=500&index_m1_id=3&index_m2_id=52"
+ },
+ "IH-GST-ADAPTER-MALE": {
+  "variants": [
+   {
+    "partNumber": "IH-GST-ADAPTER-MALE-200",
+    "position": 0,
+    "hoseInch": "2\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-GST-ADAPTER-MALE-250",
+    "position": 1,
+    "hoseInch": "2-1/2\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-GST-ADAPTER-MALE-300",
+    "position": 2,
+    "hoseInch": "3\"",
+    "portLabel": null,
+    "port2Label": null
+   }
+  ],
+  "tableHtml": "<!-- sunpool-sizes:start --><h3>Sunpool sizes</h3><p>Sunpool lists this part in 2\", 2-1/2\" and 3\".</p><p class=\"source-note\">Sizes from Sunpool’s catalogue page for this part, checked 7 October 2026.</p><!-- sunpool-sizes:end -->",
+  "sizeRange": null,
+  "edits": [],
+  "specs": [],
+  "alignToSpecs": false,
+  "source": "https://sunpool.com.tw/catalog/ins.php?index_id=501&index_m1_id=3&index_m2_id=52"
+ },
+ "IH-GST-CAP": {
+  "variants": [
+   {
+    "partNumber": "IH-GST-CAP-200",
+    "position": 0,
+    "hoseInch": "2\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-GST-CAP-250",
+    "position": 1,
+    "hoseInch": "2-1/2\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-GST-CAP-300",
+    "position": 2,
+    "hoseInch": "3\"",
+    "portLabel": null,
+    "port2Label": null
+   }
+  ],
+  "tableHtml": "<!-- sunpool-sizes:start --><h3>Sunpool sizes</h3><p>Sunpool lists this part in 2\", 2-1/2\" and 3\".</p><p class=\"source-note\">Sizes from Sunpool’s catalogue page for this part, checked 7 October 2026.</p><!-- sunpool-sizes:end -->",
+  "sizeRange": null,
+  "edits": [],
+  "specs": [],
+  "alignToSpecs": false,
+  "source": "https://sunpool.com.tw/catalog/ins.php?index_id=499&index_m1_id=3&index_m2_id=52"
+ },
+ "IH-GST-COUPLING": {
+  "variants": [
+   {
+    "partNumber": "IH-GST-COUPLING-200",
+    "position": 0,
+    "hoseInch": "2\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-GST-COUPLING-250",
+    "position": 1,
+    "hoseInch": "2-1/2\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-GST-COUPLING-300",
+    "position": 2,
+    "hoseInch": "3\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-GST-COUPLING-600",
+    "position": 3,
+    "hoseInch": "6\"",
+    "portLabel": null,
+    "port2Label": null
+   }
+  ],
+  "tableHtml": "<!-- sunpool-sizes:start --><h3>Sunpool sizes</h3><p>Sunpool lists this part in 2\", 2-1/2\", 3\" and 6\".</p><p class=\"source-note\">Sizes from Sunpool’s catalogue page for this part, checked 7 October 2026.</p><!-- sunpool-sizes:end -->",
+  "sizeRange": null,
+  "edits": [],
+  "specs": [],
+  "alignToSpecs": false,
+  "source": "https://sunpool.com.tw/catalog/ins.php?index_id=498&index_m1_id=3&index_m2_id=52"
+ },
+ "IH-GUI-GUILLEMIN-ADAPTER-FEMALE-THREAD": {
+  "variants": [],
+  "tableHtml": null,
+  "sizeRange": "3/4\"–4\"",
+  "edits": [
+   {
+    "find": "; sizes 25–150 mm",
+    "replace": ""
+   }
+  ],
+  "specs": [],
+  "alignToSpecs": true,
+  "source": "https://sunpool.com.tw/catalog/ins.php?index_id=305&index_m1_id=3&index_m2_id=26"
+ },
+ "IH-GUI-GUILLEMIN-ADAPTER-MALE-THREAD": {
+  "variants": [],
+  "tableHtml": null,
+  "sizeRange": "3/4\"–4\"",
+  "edits": [
+   {
+    "find": "; sizes 25–150 mm",
+    "replace": ""
+   }
+  ],
+  "specs": [],
+  "alignToSpecs": true,
+  "source": "https://sunpool.com.tw/catalog/ins.php?index_id=306&index_m1_id=3&index_m2_id=26"
+ },
+ "IH-GUI-GUILLEMIN-ADAPTER-REDUCING-TYPE": {
+  "variants": [
+   {
+    "partNumber": "IH-GUI-GUILLEMIN-ADAPTER-REDUCING-TYPE-125-100",
+    "position": 0,
+    "hoseInch": "1-1/4\" × 1\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-GUI-GUILLEMIN-ADAPTER-REDUCING-TYPE-150-100",
+    "position": 1,
+    "hoseInch": "1-1/2\" × 1\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-GUI-GUILLEMIN-ADAPTER-REDUCING-TYPE-150-125",
+    "position": 2,
+    "hoseInch": "1-1/2\" × 1-1/4\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-GUI-GUILLEMIN-ADAPTER-REDUCING-TYPE-200-100",
+    "position": 3,
+    "hoseInch": "2\" × 1\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-GUI-GUILLEMIN-ADAPTER-REDUCING-TYPE-200-150",
+    "position": 4,
+    "hoseInch": "2\" × 1-1/2\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-GUI-GUILLEMIN-ADAPTER-REDUCING-TYPE-250-150",
+    "position": 5,
+    "hoseInch": "2-1/2\" × 1-1/2\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-GUI-GUILLEMIN-ADAPTER-REDUCING-TYPE-250-200",
+    "position": 6,
+    "hoseInch": "2-1/2\" × 2\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-GUI-GUILLEMIN-ADAPTER-REDUCING-TYPE-300-150",
+    "position": 7,
+    "hoseInch": "3\" × 1-1/2\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-GUI-GUILLEMIN-ADAPTER-REDUCING-TYPE-300-200",
+    "position": 8,
+    "hoseInch": "3\" × 2\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-GUI-GUILLEMIN-ADAPTER-REDUCING-TYPE-300-250",
+    "position": 9,
+    "hoseInch": "3\" × 2-1/2\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-GUI-GUILLEMIN-ADAPTER-REDUCING-TYPE-400-150",
+    "position": 10,
+    "hoseInch": "4\" × 1-1/2\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-GUI-GUILLEMIN-ADAPTER-REDUCING-TYPE-400-200",
+    "position": 11,
+    "hoseInch": "4\" × 2\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-GUI-GUILLEMIN-ADAPTER-REDUCING-TYPE-400-250",
+    "position": 12,
+    "hoseInch": "4\" × 2-1/2\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-GUI-GUILLEMIN-ADAPTER-REDUCING-TYPE-400-300",
+    "position": 13,
+    "hoseInch": "4\" × 3\"",
+    "portLabel": null,
+    "port2Label": null
+   }
+  ],
+  "tableHtml": "<!-- sunpool-sizes:start --><h3>Sunpool sizes</h3><p>Sunpool lists 14 reducing combinations, all in the size table.</p><p class=\"source-note\">Sizes from Sunpool’s catalogue page for this part, checked 7 October 2026.</p><!-- sunpool-sizes:end -->",
+  "sizeRange": "3/4\"–4\"",
+  "edits": [
+   {
+    "find": "; sizes 25–150 mm",
+    "replace": ""
+   }
+  ],
+  "specs": [],
+  "alignToSpecs": true,
+  "source": "https://sunpool.com.tw/catalog/ins.php?index_id=302&index_m1_id=3&index_m2_id=26"
+ },
+ "IH-GUI-GUILLEMIN-COUPLING-FEMALE-THREAD": {
+  "variants": [],
+  "tableHtml": null,
+  "sizeRange": "3/4\"–4\"",
+  "edits": [
+   {
+    "find": "; sizes 25–150 mm",
+    "replace": ""
+   }
+  ],
+  "specs": [],
+  "alignToSpecs": true,
+  "source": "https://sunpool.com.tw/catalog/ins.php?index_id=309&index_m1_id=3&index_m2_id=26"
+ },
+ "IH-GUI-GUILLEMIN-COUPLING-LONG-HOSE-SHANK": {
+  "variants": [],
+  "tableHtml": null,
+  "sizeRange": "3/4\"–4\"",
+  "edits": [
+   {
+    "find": "; sizes 25–150 mm",
+    "replace": ""
+   }
+  ],
+  "specs": [],
+  "alignToSpecs": true,
+  "source": "https://sunpool.com.tw/catalog/ins.php?index_id=304&index_m1_id=3&index_m2_id=26"
+ },
+ "IH-GUI-GUILLEMIN-COUPLING-MALE-THREAD-X-SPIRAL": {
+  "variants": [],
+  "tableHtml": null,
+  "sizeRange": "3/4\"–4\"",
+  "edits": [
+   {
+    "find": "; sizes 25–150 mm",
+    "replace": ""
+   }
+  ],
+  "specs": [],
+  "alignToSpecs": true,
+  "source": "https://sunpool.com.tw/catalog/ins.php?index_id=308&index_m1_id=3&index_m2_id=26"
+ },
+ "IH-GUI-GUILLEMIN-COUPLING-SHORT-SHANK": {
+  "variants": [],
+  "tableHtml": null,
+  "sizeRange": "3/4\"–4\"",
+  "edits": [
+   {
+    "find": "; sizes 25–150 mm",
+    "replace": ""
+   }
+  ],
+  "specs": [],
+  "alignToSpecs": true,
+  "source": "https://sunpool.com.tw/catalog/ins.php?index_id=307&index_m1_id=3&index_m2_id=26"
+ },
+ "IH-GUI-GUILLEMIN-COUPLING-SPIRAL-HOSE-TAIL": {
+  "variants": [],
+  "tableHtml": null,
+  "sizeRange": "3/4\"–4\"",
+  "edits": [
+   {
+    "find": "; sizes 25–150 mm",
+    "replace": ""
+   }
+  ],
+  "specs": [],
+  "alignToSpecs": true,
+  "source": "https://sunpool.com.tw/catalog/ins.php?index_id=303&index_m1_id=3&index_m2_id=26"
+ },
+ "IH-GUI-GUILLEMIN-DUST-CAP": {
+  "variants": [],
+  "tableHtml": null,
+  "sizeRange": "3/4\"–4\"",
+  "edits": [
+   {
+    "find": "; sizes 25–150 mm",
+    "replace": ""
+   }
+  ],
+  "specs": [],
+  "alignToSpecs": true,
+  "source": "https://sunpool.com.tw/catalog/ins.php?index_id=301&index_m1_id=3&index_m2_id=26"
+ },
+ "IH-KC-206-HOSE-HAMMER-UNION": {
+  "variants": [
+   {
+    "partNumber": "IH-KC-206-HOSE-HAMMER-UNION-400",
+    "position": 0,
+    "hoseInch": "4\"",
+    "portLabel": null,
+    "port2Label": null
+   }
+  ],
+  "tableHtml": "<!-- sunpool-sizes:start --><h3>Sunpool sizes</h3><p>Sunpool lists this part in one size, 4\".</p><p class=\"source-note\">Sizes from Sunpool’s catalogue page for this part, checked 7 October 2026.</p><!-- sunpool-sizes:end -->",
+  "sizeRange": "4\"",
+  "edits": [
+   {
+    "find": "Sizes 1\"–6\". ",
+    "replace": ""
+   }
+  ],
+  "specs": [
+   {
+    "label": "Size Range",
+    "from": "1\", 1-1/2\", 2\", 2-1/2\", 3\", 4\", 5\", 6\"",
+    "to": "4\""
+   }
+  ],
+  "alignToSpecs": true,
+  "source": "https://sunpool.com.tw/catalog/ins.php?index_id=346&index_m1_id=3&index_m2_id=7"
+ },
+ "IH-KC-DRAG-HOSE-FITTING": {
+  "variants": [
+   {
+    "partNumber": "IH-KC-DRAG-HOSE-FITTING-400",
+    "position": 0,
+    "hoseInch": "4\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-KC-DRAG-HOSE-FITTING-500",
+    "position": 1,
+    "hoseInch": "5\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-KC-DRAG-HOSE-FITTING-600",
+    "position": 2,
+    "hoseInch": "6\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-KC-DRAG-HOSE-FITTING-800",
+    "position": 3,
+    "hoseInch": "8\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-KC-DRAG-HOSE-FITTING-1000",
+    "position": 4,
+    "hoseInch": "10\"",
+    "portLabel": null,
+    "port2Label": null
+   }
+  ],
+  "tableHtml": "<!-- sunpool-sizes:start --><h3>Sunpool sizes</h3><p>Sunpool lists this part in 4\", 5\", 6\", 8\" and 10\".</p><p class=\"source-note\">Sizes from Sunpool’s catalogue page for this part, checked 7 October 2026.</p><!-- sunpool-sizes:end -->",
+  "sizeRange": "4\", 5\", 6\", 8\" and 10\"",
+  "edits": [
+   {
+    "find": "Sizes 1\"–6\". ",
+    "replace": ""
+   }
+  ],
+  "specs": [],
+  "alignToSpecs": true,
+  "source": "https://sunpool.com.tw/catalog/ins.php?index_id=536&index_m1_id=3&index_m2_id=7"
+ },
+ "IH-KC-FRAC-WATER": {
+  "variants": [
+   {
+    "partNumber": "IH-KC-FRAC-WATER-800",
+    "position": 0,
+    "hoseInch": "8\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-KC-FRAC-WATER-1000",
+    "position": 1,
+    "hoseInch": "10\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-KC-FRAC-WATER-1200",
+    "position": 2,
+    "hoseInch": "12\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-KC-FRAC-WATER-1400",
+    "position": 3,
+    "hoseInch": "14\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-KC-FRAC-WATER-1600",
+    "position": 4,
+    "hoseInch": "16\"",
+    "portLabel": null,
+    "port2Label": null
+   }
+  ],
+  "tableHtml": "<!-- sunpool-sizes:start --><h3>Sunpool sizes</h3><p>Sunpool lists this part in 8\", 10\", 12\", 14\" and 16\".</p><p class=\"source-note\">Sizes from Sunpool’s catalogue page for this part, checked 7 October 2026.</p><!-- sunpool-sizes:end -->",
+  "sizeRange": "8\", 10\", 12\", 14\" and 16\"",
+  "edits": [
+   {
+    "find": "Sizes 1\"–6\". ",
+    "replace": ""
+   }
+  ],
+  "specs": [],
+  "alignToSpecs": true,
+  "source": "https://sunpool.com.tw/catalog/ins.php?index_id=250&index_m1_id=3&index_m2_id=7"
+ },
+ "IH-KC-GROOVE-KC-NIPPLE": {
+  "variants": [],
+  "tableHtml": null,
+  "sizeRange": "1/2\"–12\"",
+  "edits": [
+   {
+    "find": "Sizes 1\"–6\". ",
+    "replace": ""
+   }
+  ],
+  "specs": [],
+  "alignToSpecs": true,
+  "source": "https://sunpool.com.tw/catalog/ins.php?index_id=255&index_m1_id=3&index_m2_id=7"
+ },
+ "IH-KC-HOSE-MENDER": {
+  "variants": [
+   {
+    "partNumber": "IH-KC-HOSE-MENDER-050",
+    "position": 0,
+    "hoseInch": "1/2\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-KC-HOSE-MENDER-075",
+    "position": 1,
+    "hoseInch": "3/4\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-KC-HOSE-MENDER-100",
+    "position": 2,
+    "hoseInch": "1\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-KC-HOSE-MENDER-125",
+    "position": 3,
+    "hoseInch": "1-1/4\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-KC-HOSE-MENDER-150",
+    "position": 4,
+    "hoseInch": "1-1/2\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-KC-HOSE-MENDER-200",
+    "position": 5,
+    "hoseInch": "2\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-KC-HOSE-MENDER-250",
+    "position": 6,
+    "hoseInch": "2-1/2\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-KC-HOSE-MENDER-300",
+    "position": 7,
+    "hoseInch": "3\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-KC-HOSE-MENDER-400",
+    "position": 8,
+    "hoseInch": "4\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-KC-HOSE-MENDER-500",
+    "position": 9,
+    "hoseInch": "5\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-KC-HOSE-MENDER-600",
+    "position": 10,
+    "hoseInch": "6\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-KC-HOSE-MENDER-800",
+    "position": 11,
+    "hoseInch": "8\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-KC-HOSE-MENDER-1000",
+    "position": 12,
+    "hoseInch": "10\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-KC-HOSE-MENDER-1200",
+    "position": 13,
+    "hoseInch": "12\"",
+    "portLabel": null,
+    "port2Label": null
+   }
+  ],
+  "tableHtml": "<!-- sunpool-sizes:start --><h3>Sunpool sizes</h3><p>Order by the Indus part number in the size table or by the Sunpool part number for the material you need.</p><div class=\"ih-table-scroll\"><table><thead><tr><th>Size</th><th>Sunpool part no., carbon steel (plated)</th><th>SS304</th><th>SS316</th></tr></thead><tbody><tr><td>1/2\"</td><td>HM-CS-050</td><td>HM-S4-050</td><td>HM-S6-050</td></tr><tr><td>3/4\"</td><td>HM-CS-075</td><td>HM-S4-075</td><td>HM-S6-075</td></tr><tr><td>1\"</td><td>HM-CS-100</td><td>HM-S4-100</td><td>HM-S6-100</td></tr><tr><td>1-1/4\"</td><td>HM-CS-125</td><td>HM-S4-125</td><td>HM-S6-125</td></tr><tr><td>1-1/2\"</td><td>HM-CS-150</td><td>HM-S4-150</td><td>HM-S6-150</td></tr><tr><td>2\"</td><td>HM-CS-200</td><td>HM-S4-200</td><td>HM-S6-200</td></tr><tr><td>2-1/2\"</td><td>HM-CS-250</td><td>HM-S4-250</td><td>HM-S6-250</td></tr><tr><td>3\"</td><td>HM-CS-300</td><td>HM-S4-300</td><td>HM-S6-300</td></tr><tr><td>4\"</td><td>HM-CS-400</td><td>HM-S4-400</td><td>HM-S6-400</td></tr><tr><td>5\"</td><td>HM-CS-500</td><td>HM-S4-500</td><td>HM-S6-500</td></tr><tr><td>6\"</td><td>HM-CS-600</td><td>HM-S4-600</td><td>HM-S6-600</td></tr><tr><td>8\"</td><td>HM-CS-800</td><td>HM-S4-800</td><td>HM-S6-800</td></tr><tr><td>10\"</td><td>HM-CS-1K</td><td>HM-S4-1K</td><td>HM-S6-1K</td></tr><tr><td>12\"</td><td>HM-CS-1K2</td><td>HM-S4-1K2</td><td>HM-S6-1K2</td></tr></tbody></table></div><p class=\"source-note\">Sizes and part numbers from Sunpool’s catalogue page for this part and its KC part-number list, checked 7 October 2026.</p><!-- sunpool-sizes:end -->",
+  "sizeRange": "1/2\"–12\"",
+  "edits": [
+   {
+    "find": "Sizes 1\"–6\". ",
+    "replace": ""
+   }
+  ],
+  "specs": [],
+  "alignToSpecs": true,
+  "source": "https://sunpool.com.tw/catalog/ins.php?index_id=254&index_m1_id=3&index_m2_id=7"
+ },
+ "IH-KC-KC-NIPPLE": {
+  "variants": [
+   {
+    "partNumber": "IH-KC-KC-NIPPLE-200",
+    "position": 0,
+    "hoseInch": "2\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-KC-KC-NIPPLE-250",
+    "position": 1,
+    "hoseInch": "2-1/2\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-KC-KC-NIPPLE-300",
+    "position": 2,
+    "hoseInch": "3\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-KC-KC-NIPPLE-400",
+    "position": 3,
+    "hoseInch": "4\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-KC-KC-NIPPLE-500",
+    "position": 4,
+    "hoseInch": "5\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-KC-KC-NIPPLE-600",
+    "position": 5,
+    "hoseInch": "6\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-KC-KC-NIPPLE-800",
+    "position": 6,
+    "hoseInch": "8\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-KC-KC-NIPPLE-1000",
+    "position": 7,
+    "hoseInch": "10\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-KC-KC-NIPPLE-1200",
+    "position": 8,
+    "hoseInch": "12\"",
+    "portLabel": null,
+    "port2Label": null
+   }
+  ],
+  "tableHtml": "<!-- sunpool-sizes:start --><h3>Sunpool sizes</h3><p>Order by the Indus part number in the size table or by the Sunpool part number for the material you need. Sunpool part numbers ending -N are NPT; Sunpool changes the ending to -P for BSP, -T for BSPT and -NT for an unthreaded nipple. O.D. and wall thickness are Sunpool’s, for the nipple body.</p><div class=\"ih-table-scroll\"><table><thead><tr><th>Size</th><th>O.D. (mm)</th><th>Wall thickness (mm)</th><th>Sunpool part no., carbon steel (plated)</th><th>SS304</th><th>SS316</th></tr></thead><tbody><tr><td>2\"</td><td>60.3</td><td>4</td><td>KC-CS-200H-N</td><td>KC-S4-200H-N</td><td>KC-S6-200H-N</td></tr><tr><td>2-1/2\"</td><td>73</td><td>5.1</td><td>KC-CS-250H-N</td><td>KC-S4-250H-N</td><td>KC-S6-250H-N</td></tr><tr><td>3\"</td><td>89</td><td>5.2–5.5</td><td>KC-CS-300H-N</td><td>KC-S4-300H-N</td><td>KC-S6-300H-N</td></tr><tr><td>4\"</td><td>114.3</td><td>5.5</td><td>KC-CS-400H-N</td><td>KC-S4-400H-N</td><td>KC-S6-400H-N</td></tr><tr><td>5\"</td><td>140</td><td>6</td><td>KC-CS-500H-N</td><td>KC-S4-500H-N</td><td>KC-S6-500H-N</td></tr><tr><td>6\"</td><td>168</td><td>6</td><td>KC-CS-600H-N</td><td>KC-S4-600H-N</td><td>KC-S6-600H-N</td></tr><tr><td>8\"</td><td>219</td><td>8.18</td><td>KC-CS-800H-N</td><td>KC-S4-800H-N</td><td>KC-S6-800H-N</td></tr><tr><td>10\"</td><td>273</td><td>8.8</td><td>KC-CS-1KH-N</td><td>KC-S4-1KH-N</td><td>KC-S6-1KH-N</td></tr><tr><td>12\"</td><td>323</td><td>9.2</td><td>KC-CS-1K2H-N</td><td>KC-S4-1K2H-N</td><td>KC-S6-1K2H-N</td></tr></tbody></table></div><p class=\"source-note\">Sizes, dimensions and part numbers from Sunpool’s catalogue page for this part and its KC part-number list, checked 7 October 2026.</p><!-- sunpool-sizes:end -->",
+  "sizeRange": "2\"–12\"",
+  "edits": [
+   {
+    "find": "Sizes 1\"–6\". ",
+    "replace": ""
+   }
+  ],
+  "specs": [
+   {
+    "label": "Size Range",
+    "from": "1\", 1-1/2\", 2\", 2-1/2\", 3\", 4\", 5\", 6\"",
+    "to": "2\"–12\""
+   }
+  ],
+  "alignToSpecs": true,
+  "source": "https://sunpool.com.tw/catalog/ins.php?index_id=257&index_m1_id=3&index_m2_id=7"
+ },
+ "IH-KC-KC-NIPPLE-2": {
+  "variants": [
+   {
+    "partNumber": "IH-KC-KC-NIPPLE-2-050",
+    "position": 0,
+    "hoseInch": "1/2\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-KC-KC-NIPPLE-2-075",
+    "position": 1,
+    "hoseInch": "3/4\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-KC-KC-NIPPLE-2-100",
+    "position": 2,
+    "hoseInch": "1\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-KC-KC-NIPPLE-2-125",
+    "position": 3,
+    "hoseInch": "1-1/4\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-KC-KC-NIPPLE-2-150",
+    "position": 4,
+    "hoseInch": "1-1/2\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-KC-KC-NIPPLE-2-200",
+    "position": 5,
+    "hoseInch": "2\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-KC-KC-NIPPLE-2-250",
+    "position": 6,
+    "hoseInch": "2-1/2\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-KC-KC-NIPPLE-2-300",
+    "position": 7,
+    "hoseInch": "3\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-KC-KC-NIPPLE-2-400",
+    "position": 8,
+    "hoseInch": "4\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-KC-KC-NIPPLE-2-500",
+    "position": 9,
+    "hoseInch": "5\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-KC-KC-NIPPLE-2-600",
+    "position": 10,
+    "hoseInch": "6\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-KC-KC-NIPPLE-2-800",
+    "position": 11,
+    "hoseInch": "8\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-KC-KC-NIPPLE-2-1000",
+    "position": 12,
+    "hoseInch": "10\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-KC-KC-NIPPLE-2-1200",
+    "position": 13,
+    "hoseInch": "12\"",
+    "portLabel": null,
+    "port2Label": null
+   }
+  ],
+  "tableHtml": "<!-- sunpool-sizes:start --><h3>Sunpool sizes</h3><p>Order by the Indus part number in the size table or by the Sunpool part number for the material you need. Sunpool part numbers ending -N are NPT; Sunpool changes the ending to -P for BSP, -T for BSPT and -NT for an unthreaded nipple.</p><div class=\"ih-table-scroll\"><table><thead><tr><th>Size</th><th>Sunpool part no., carbon steel (plated)</th><th>SS304</th><th>SS316</th></tr></thead><tbody><tr><td>1/2\"</td><td>KC-CS-050-N</td><td>KC-S4-050-N</td><td>KC-S6-050-N</td></tr><tr><td>3/4\"</td><td>KC-CS-075-N</td><td>KC-S4-075-N</td><td>KC-S6-075-N</td></tr><tr><td>1\"</td><td>KC-CS-100-N</td><td>KC-S4-100-N</td><td>KC-S6-100-N</td></tr><tr><td>1-1/4\"</td><td>KC-CS-125-N</td><td>KC-S4-125-N</td><td>KC-S6-125-N</td></tr><tr><td>1-1/2\"</td><td>KC-CS-150-N</td><td>KC-S4-150-N</td><td>KC-S6-150-N</td></tr><tr><td>2\"</td><td>KC-CS-200-N</td><td>KC-S4-200-N</td><td>KC-S6-200-N</td></tr><tr><td>2-1/2\"</td><td>KC-CS-250-N</td><td>KC-S4-250-N</td><td>KC-S6-250-N</td></tr><tr><td>3\"</td><td>KC-CS-300-N</td><td>KC-S4-300-N</td><td>KC-S6-300-N</td></tr><tr><td>4\"</td><td>KC-CS-400-N</td><td>KC-S4-400-N</td><td>KC-S6-400-N</td></tr><tr><td>5\"</td><td>KC-CS-500-N</td><td>KC-S4-500-N</td><td>KC-S6-500-N</td></tr><tr><td>6\"</td><td>KC-CS-600-N</td><td>KC-S4-600-N</td><td>KC-S6-600-N</td></tr><tr><td>8\"</td><td>KC-CS-800-N</td><td>KC-S4-800-N</td><td>KC-S6-800-N</td></tr><tr><td>10\"</td><td>KC-CS-1K-N</td><td>KC-S4-1K-N</td><td>KC-S6-1K-N</td></tr><tr><td>12\"</td><td>KC-CS-1K2-N</td><td>KC-S4-1K2-N</td><td>KC-S6-1K2-N</td></tr></tbody></table></div><p class=\"source-note\">Sizes and part numbers from Sunpool’s catalogue page for this part and its KC part-number list, checked 7 October 2026.</p><!-- sunpool-sizes:end -->",
+  "sizeRange": "1/2\"–12\"",
+  "edits": [
+   {
+    "find": "Sizes 1\"–6\". ",
+    "replace": ""
+   }
+  ],
+  "specs": [],
+  "alignToSpecs": true,
+  "source": "https://sunpool.com.tw/catalog/ins.php?index_id=256&index_m1_id=3&index_m2_id=7"
+ },
+ "IH-KC-KC-X-FIXED-FLANGE": {
+  "variants": [
+   {
+    "partNumber": "IH-KC-KC-X-FIXED-FLANGE-200",
+    "position": 0,
+    "hoseInch": "2\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-KC-KC-X-FIXED-FLANGE-250",
+    "position": 1,
+    "hoseInch": "2-1/2\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-KC-KC-X-FIXED-FLANGE-300",
+    "position": 2,
+    "hoseInch": "3\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-KC-KC-X-FIXED-FLANGE-400",
+    "position": 3,
+    "hoseInch": "4\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-KC-KC-X-FIXED-FLANGE-500",
+    "position": 4,
+    "hoseInch": "5\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-KC-KC-X-FIXED-FLANGE-600",
+    "position": 5,
+    "hoseInch": "6\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-KC-KC-X-FIXED-FLANGE-800",
+    "position": 6,
+    "hoseInch": "8\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-KC-KC-X-FIXED-FLANGE-1000",
+    "position": 7,
+    "hoseInch": "10\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-KC-KC-X-FIXED-FLANGE-1200",
+    "position": 8,
+    "hoseInch": "12\"",
+    "portLabel": null,
+    "port2Label": null
+   }
+  ],
+  "tableHtml": "<!-- sunpool-sizes:start --><h3>Sunpool sizes</h3><p>Order by the Indus part number in the size table or by the Sunpool part number for the material you need. O.D. and wall thickness are Sunpool’s, for the nipple body.</p><div class=\"ih-table-scroll\"><table><thead><tr><th>Size</th><th>O.D. (mm)</th><th>Wall thickness (mm)</th><th>Sunpool part no., carbon steel (plated)</th><th>SS304</th><th>SS316</th></tr></thead><tbody><tr><td>2\"</td><td>60.3</td><td>4</td><td>KC-CS-200H-FX</td><td>KC-S4-200H-FX</td><td>KC-S6-200H-FX</td></tr><tr><td>2-1/2\"</td><td>73</td><td>5.1</td><td>KC-CS-250H-FX</td><td>KC-S4-250H-FX</td><td>KC-S6-250H-FX</td></tr><tr><td>3\"</td><td>89</td><td>5.2–5.5</td><td>KC-CS-300H-FX</td><td>KC-S4-300H-FX</td><td>KC-S6-300H-FX</td></tr><tr><td>4\"</td><td>114.3</td><td>5.5</td><td>KC-CS-400H-FX</td><td>KC-S4-400H-FX</td><td>KC-S6-400H-FX</td></tr><tr><td>5\"</td><td>140</td><td>6</td><td>KC-CS-500H-FX</td><td>KC-S4-500H-FX</td><td>KC-S6-500H-FX</td></tr><tr><td>6\"</td><td>168</td><td>6</td><td>KC-CS-600H-FX</td><td>KC-S4-600H-FX</td><td>KC-S6-600H-FX</td></tr><tr><td>8\"</td><td>219</td><td>8.18</td><td>KC-CS-800H-FX</td><td>KC-S4-800H-FX</td><td>KC-S6-800H-FX</td></tr><tr><td>10\"</td><td>273</td><td>8.8</td><td>KC-CS-1KH-FX</td><td>KC-S4-1KH-FX</td><td>KC-S6-1KH-FX</td></tr><tr><td>12\"</td><td>323</td><td>9.2</td><td>KC-CS-1K2H-FX</td><td>KC-S4-1K2H-FX</td><td>KC-S6-1K2H-FX</td></tr></tbody></table></div><p class=\"source-note\">Sizes, dimensions and part numbers from Sunpool’s catalogue page for this part and its KC part-number list, checked 7 October 2026.</p><!-- sunpool-sizes:end -->",
+  "sizeRange": "2\"–12\"",
+  "edits": [
+   {
+    "find": "Sizes 1\"–6\". ",
+    "replace": ""
+   }
+  ],
+  "specs": [
+   {
+    "label": "Size Range",
+    "from": "1\", 1-1/2\", 2\", 2-1/2\", 3\", 4\", 5\", 6\"",
+    "to": "2\"–12\""
+   }
+  ],
+  "alignToSpecs": true,
+  "source": "https://sunpool.com.tw/catalog/ins.php?index_id=258&index_m1_id=3&index_m2_id=7"
+ },
+ "IH-KC-KC-X-TURNBACK-FLANGE": {
+  "variants": [
+   {
+    "partNumber": "IH-KC-KC-X-TURNBACK-FLANGE-200",
+    "position": 0,
+    "hoseInch": "2\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-KC-KC-X-TURNBACK-FLANGE-250",
+    "position": 1,
+    "hoseInch": "2-1/2\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-KC-KC-X-TURNBACK-FLANGE-300",
+    "position": 2,
+    "hoseInch": "3\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-KC-KC-X-TURNBACK-FLANGE-400",
+    "position": 3,
+    "hoseInch": "4\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-KC-KC-X-TURNBACK-FLANGE-500",
+    "position": 4,
+    "hoseInch": "5\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-KC-KC-X-TURNBACK-FLANGE-600",
+    "position": 5,
+    "hoseInch": "6\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-KC-KC-X-TURNBACK-FLANGE-800",
+    "position": 6,
+    "hoseInch": "8\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-KC-KC-X-TURNBACK-FLANGE-1000",
+    "position": 7,
+    "hoseInch": "10\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-KC-KC-X-TURNBACK-FLANGE-1200",
+    "position": 8,
+    "hoseInch": "12\"",
+    "portLabel": null,
+    "port2Label": null
+   }
+  ],
+  "tableHtml": "<!-- sunpool-sizes:start --><h3>Sunpool sizes</h3><p>Order by the Indus part number in the size table or by the Sunpool part number for the material you need. O.D. and wall thickness are Sunpool’s, for the nipple body.</p><div class=\"ih-table-scroll\"><table><thead><tr><th>Size</th><th>O.D. (mm)</th><th>Wall thickness (mm)</th><th>Sunpool part no., carbon steel (plated)</th><th>SS304</th><th>SS316</th></tr></thead><tbody><tr><td>2\"</td><td>60.3</td><td>4</td><td>KC-CS-200H-TB</td><td>KC-S4-200H-TB</td><td>KC-S6-200H-TB</td></tr><tr><td>2-1/2\"</td><td>73</td><td>5.1</td><td>KC-CS-250H-TB</td><td>KC-S4-250H-TB</td><td>KC-S6-250H-TB</td></tr><tr><td>3\"</td><td>89</td><td>5.2–5.5</td><td>KC-CS-300H-TB</td><td>KC-S4-300H-TB</td><td>KC-S6-300H-TB</td></tr><tr><td>4\"</td><td>114.3</td><td>5.5</td><td>KC-CS-400H-TB</td><td>KC-S4-400H-TB</td><td>KC-S6-400H-TB</td></tr><tr><td>5\"</td><td>140</td><td>6</td><td>KC-CS-500H-TB</td><td>KC-S4-500H-TB</td><td>KC-S6-500H-TB</td></tr><tr><td>6\"</td><td>168</td><td>6</td><td>KC-CS-600H-TB</td><td>KC-S4-600H-TB</td><td>KC-S6-600H-TB</td></tr><tr><td>8\"</td><td>219</td><td>8.18</td><td>KC-CS-800H-TB</td><td>KC-S4-800H-TB</td><td>KC-S6-800H-TB</td></tr><tr><td>10\"</td><td>273</td><td>8.8</td><td>KC-CS-1KH-TB</td><td>KC-S4-1KH-TB</td><td>KC-S6-1KH-TB</td></tr><tr><td>12\"</td><td>323</td><td>9.2</td><td>KC-CS-1K2H-TB</td><td>KC-S4-1K2H-TB</td><td>KC-S6-1K2H-TB</td></tr></tbody></table></div><p class=\"source-note\">Sizes, dimensions and part numbers from Sunpool’s catalogue page for this part and its KC part-number list, checked 7 October 2026.</p><!-- sunpool-sizes:end -->",
+  "sizeRange": "2\"–12\"",
+  "edits": [
+   {
+    "find": "Sizes 1\"–6\". ",
+    "replace": ""
+   }
+  ],
+  "specs": [
+   {
+    "label": "Size Range",
+    "from": "1\", 1-1/2\", 2\", 2-1/2\", 3\", 4\", 5\", 6\"",
+    "to": "2\"–12\""
+   }
+  ],
+  "alignToSpecs": true,
+  "source": "https://sunpool.com.tw/catalog/ins.php?index_id=259&index_m1_id=3&index_m2_id=7"
+ },
+ "IH-KC-SUCTION-HOSE": {
+  "variants": [],
+  "tableHtml": null,
+  "sizeRange": "1-1/2\"–4\"",
+  "edits": [
+   {
+    "find": "Sizes 1\"–6\". ",
+    "replace": ""
+   }
+  ],
+  "specs": [],
+  "alignToSpecs": true,
+  "source": "https://sunpool.com.tw/catalog/ins.php?index_id=443&index_m1_id=3&index_m2_id=7"
+ },
+ "IH-KC-SUCTION-HOSE-2": {
+  "variants": [],
+  "tableHtml": null,
+  "sizeRange": "1-1/2\"–4\"",
+  "edits": [
+   {
+    "find": "Sizes 1\"–6\". ",
+    "replace": ""
+   }
+  ],
+  "specs": [],
+  "alignToSpecs": true,
+  "source": "https://sunpool.com.tw/catalog/ins.php?index_id=124&index_m1_id=3&index_m2_id=7"
+ },
+ "IH-KC-SUCTION-HOSE-3": {
+  "variants": [],
+  "tableHtml": null,
+  "sizeRange": "1-1/2\"–6\"",
+  "edits": [
+   {
+    "find": "Sizes 1\"–6\". ",
+    "replace": ""
+   }
+  ],
+  "specs": [],
+  "alignToSpecs": true,
+  "source": "https://sunpool.com.tw/catalog/ins.php?index_id=249&index_m1_id=3&index_m2_id=7"
+ },
+ "IH-KC-UMBILICAL-SLURRY-COUPLING-SET": {
+  "variants": [
+   {
+    "partNumber": "IH-KC-UMBILICAL-SLURRY-COUPLING-SET-400",
+    "position": 0,
+    "hoseInch": "4\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-KC-UMBILICAL-SLURRY-COUPLING-SET-500",
+    "position": 1,
+    "hoseInch": "5\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-KC-UMBILICAL-SLURRY-COUPLING-SET-600",
+    "position": 2,
+    "hoseInch": "6\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-KC-UMBILICAL-SLURRY-COUPLING-SET-800",
+    "position": 3,
+    "hoseInch": "8\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-KC-UMBILICAL-SLURRY-COUPLING-SET-1000",
+    "position": 4,
+    "hoseInch": "10\"",
+    "portLabel": null,
+    "port2Label": null
+   }
+  ],
+  "tableHtml": "<!-- sunpool-sizes:start --><h3>Sunpool sizes</h3><p>Sunpool lists this part in 4\", 5\", 6\", 8\" and 10\".</p><p class=\"source-note\">Sizes from Sunpool’s catalogue page for this part, checked 7 October 2026.</p><!-- sunpool-sizes:end -->",
+  "sizeRange": "4\", 5\", 6\", 8\" and 10\"",
+  "edits": [
+   {
+    "find": "Sizes 1\"–6\". ",
+    "replace": ""
+   }
+  ],
+  "specs": [],
+  "alignToSpecs": true,
+  "source": "https://sunpool.com.tw/catalog/ins.php?index_id=538&index_m1_id=3&index_m2_id=7"
+ },
+ "IH-SB-FEMALE-THREAD-ADAPTER": {
+  "variants": [
+   {
+    "partNumber": "IH-SB-FEMALE-THREAD-ADAPTER-125",
+    "position": 0,
+    "hoseInch": "1-1/4\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-SB-FEMALE-THREAD-ADAPTER-150",
+    "position": 1,
+    "hoseInch": "1-1/2\"",
+    "portLabel": null,
+    "port2Label": null
+   }
+  ],
+  "tableHtml": "<!-- sunpool-sizes:start --><h3>Sunpool sizes</h3><p>Sunpool lists this part in 1-1/4\" and 1-1/2\".</p><p class=\"source-note\">Sizes from Sunpool’s catalogue page for this part, checked 7 October 2026.</p><!-- sunpool-sizes:end -->",
+  "sizeRange": "1-1/4\" and 1-1/2\"",
+  "edits": [],
+  "specs": [],
+  "alignToSpecs": true,
+  "source": "https://sunpool.com.tw/catalog/ins.php?index_id=482&index_m1_id=3&index_m2_id=22"
+ },
+ "IH-SB-HOSE-COUPLER": {
+  "variants": [
+   {
+    "partNumber": "IH-SB-HOSE-COUPLER-125",
+    "position": 0,
+    "hoseInch": "1-1/4\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-SB-HOSE-COUPLER-150",
+    "position": 1,
+    "hoseInch": "1-1/2\"",
+    "portLabel": null,
+    "port2Label": null
+   }
+  ],
+  "tableHtml": "<!-- sunpool-sizes:start --><h3>Sunpool sizes</h3><p>Sunpool lists this part in 1-1/4\" and 1-1/2\".</p><p class=\"source-note\">Sizes from Sunpool’s catalogue page for this part, checked 7 October 2026.</p><!-- sunpool-sizes:end -->",
+  "sizeRange": "1-1/4\" and 1-1/2\"",
+  "edits": [],
+  "specs": [],
+  "alignToSpecs": true,
+  "source": "https://sunpool.com.tw/catalog/ins.php?index_id=480&index_m1_id=3&index_m2_id=22"
+ },
+ "IH-SB-NOZZLE-HOLDER": {
+  "variants": [
+   {
+    "partNumber": "IH-SB-NOZZLE-HOLDER-125",
+    "position": 0,
+    "hoseInch": "1-1/4\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-SB-NOZZLE-HOLDER-150",
+    "position": 1,
+    "hoseInch": "1-1/2\"",
+    "portLabel": null,
+    "port2Label": null
+   }
+  ],
+  "tableHtml": "<!-- sunpool-sizes:start --><h3>Sunpool sizes</h3><p>Sunpool lists this part in 1-1/4\" and 1-1/2\".</p><p class=\"source-note\">Sizes from Sunpool’s catalogue page for this part, checked 7 October 2026.</p><!-- sunpool-sizes:end -->",
+  "sizeRange": "1-1/4\" and 1-1/2\"",
+  "edits": [],
+  "specs": [],
+  "alignToSpecs": true,
+  "source": "https://sunpool.com.tw/catalog/ins.php?index_id=481&index_m1_id=3&index_m2_id=22"
+ },
+ "IH-STZ-3-SEGMENT-CLAMP-FOR-STORZ": {
+  "variants": [],
+  "tableHtml": null,
+  "sizeRange": "3\"–6\"",
+  "edits": [
+   {
+    "find": "Sizes Storz 25–150 (1-1/2\"–6\"). ",
+    "replace": ""
+   }
+  ],
+  "specs": [],
+  "alignToSpecs": true,
+  "source": "https://sunpool.com.tw/catalog/ins.php?index_id=268&index_m1_id=3&index_m2_id=9"
+ },
+ "IH-STZ-ALFOT-FORGED-STORZ-HEAD": {
+  "variants": [],
+  "tableHtml": null,
+  "sizeRange": "3\"–6\"",
+  "edits": [
+   {
+    "find": "Sizes Storz 25–150 (1-1/2\"–6\"). ",
+    "replace": ""
+   }
+  ],
+  "specs": [],
+  "alignToSpecs": true,
+  "source": "https://sunpool.com.tw/catalog/ins.php?index_id=260&index_m1_id=3&index_m2_id=9"
+ },
+ "IH-STZ-REDUCE-TYPE": {
+  "variants": [
+   {
+    "partNumber": "IH-STZ-REDUCE-TYPE-300-200",
+    "position": 0,
+    "hoseInch": "3\" × 2\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-STZ-REDUCE-TYPE-300-250",
+    "position": 1,
+    "hoseInch": "3\" × 2-1/2\"",
+    "portLabel": null,
+    "port2Label": null
+   }
+  ],
+  "tableHtml": "<!-- sunpool-sizes:start --><h3>Sunpool sizes</h3><p>Sunpool lists two reducing combinations, all in the size table.</p><p class=\"source-note\">Sizes from Sunpool’s catalogue page for this part, checked 7 October 2026.</p><!-- sunpool-sizes:end -->",
+  "sizeRange": "3\" × 2\" and 3\" × 2-1/2\"",
+  "edits": [
+   {
+    "find": "Sizes Storz 25–150 (1-1/2\"–6\"). ",
+    "replace": ""
+   }
+  ],
+  "specs": [],
+  "alignToSpecs": true,
+  "source": "https://sunpool.com.tw/catalog/ins.php?index_id=262&index_m1_id=3&index_m2_id=9"
+ },
+ "IH-STZ-STORZ-30-DEG-FDC-UL-LISTED-H-ANODIZED": {
+  "variants": [
+   {
+    "partNumber": "IH-STZ-STORZ-30-DEG-FDC-UL-LISTED-H-ANODIZED-400-400-NPT",
+    "position": 0,
+    "hoseInch": null,
+    "portLabel": "4\" Storz",
+    "port2Label": "4\" female NPT"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-30-DEG-FDC-UL-LISTED-H-ANODIZED-500-400-NPT",
+    "position": 1,
+    "hoseInch": null,
+    "portLabel": "5\" Storz",
+    "port2Label": "4\" female NPT"
+   }
+  ],
+  "tableHtml": "<!-- sunpool-sizes:start --><h3>Sunpool sizes</h3><p>Sunpool lists this part in the combinations below.</p><div class=\"ih-table-scroll\"><table><thead><tr><th>Storz end</th><th>Other end</th><th>Lug distance of the Storz end (mm)</th></tr></thead><tbody><tr><td>4\" Storz</td><td>4\" female NPT</td><td>115</td></tr><tr><td>5\" Storz</td><td>4\" female NPT</td><td>148</td></tr></tbody></table></div><p class=\"source-note\">Sizes and dimensions from Sunpool’s catalogue page for this part, checked 7 October 2026.</p><!-- sunpool-sizes:end -->",
+  "sizeRange": "4\" or 5\" Storz × 4\" female NPT",
+  "edits": [
+   {
+    "find": "Sizes Storz 25–150 (1-1/2\"–6\"). ",
+    "replace": ""
+   }
+  ],
+  "specs": [],
+  "alignToSpecs": true,
+  "source": "https://www.sunpool.com.tw/catalog/ins.php?index_id=611&index_m1_id=1&index_m2_id=31"
+ },
+ "IH-STZ-STORZ-30-DEG-FDC-UL-LISTED-PAINTED": {
+  "variants": [
+   {
+    "partNumber": "IH-STZ-STORZ-30-DEG-FDC-UL-LISTED-PAINTED-400-400-NPT",
+    "position": 0,
+    "hoseInch": null,
+    "portLabel": "4\" Storz",
+    "port2Label": "4\" female NPT"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-30-DEG-FDC-UL-LISTED-PAINTED-500-400-NPT",
+    "position": 1,
+    "hoseInch": null,
+    "portLabel": "5\" Storz",
+    "port2Label": "4\" female NPT"
+   }
+  ],
+  "tableHtml": "<!-- sunpool-sizes:start --><h3>Sunpool sizes</h3><p>Sunpool lists this part in the combinations below.</p><div class=\"ih-table-scroll\"><table><thead><tr><th>Storz end</th><th>Other end</th><th>Lug distance of the Storz end (mm)</th></tr></thead><tbody><tr><td>4\" Storz</td><td>4\" female NPT</td><td>115</td></tr><tr><td>5\" Storz</td><td>4\" female NPT</td><td>148</td></tr></tbody></table></div><p class=\"source-note\">Sizes and dimensions from Sunpool’s catalogue page for this part, checked 7 October 2026.</p><!-- sunpool-sizes:end -->",
+  "sizeRange": "4\" or 5\" Storz × 4\" female NPT",
+  "edits": [
+   {
+    "find": "Sizes Storz 25–150 (1-1/2\"–6\"). ",
+    "replace": ""
+   }
+  ],
+  "specs": [],
+  "alignToSpecs": true,
+  "source": "https://www.sunpool.com.tw/catalog/ins.php?index_id=610&index_m1_id=1&index_m2_id=31"
+ },
+ "IH-STZ-STORZ-ADAPTER-FEMALE-THREAD": {
+  "variants": [
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-FEMALE-THREAD-25-050",
+    "position": 0,
+    "hoseInch": null,
+    "portLabel": "Storz 25D",
+    "port2Label": "1/2\" female thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-FEMALE-THREAD-25-075",
+    "position": 1,
+    "hoseInch": null,
+    "portLabel": "Storz 25D",
+    "port2Label": "3/4\" female thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-FEMALE-THREAD-25-100",
+    "position": 2,
+    "hoseInch": null,
+    "portLabel": "Storz 25D",
+    "port2Label": "1\" female thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-FEMALE-THREAD-25-125",
+    "position": 3,
+    "hoseInch": null,
+    "portLabel": "Storz 25D",
+    "port2Label": "1-1/4\" female thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-FEMALE-THREAD-38-100",
+    "position": 4,
+    "hoseInch": null,
+    "portLabel": "Storz 38",
+    "port2Label": "1\" female thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-FEMALE-THREAD-38-125",
+    "position": 5,
+    "hoseInch": null,
+    "portLabel": "Storz 38",
+    "port2Label": "1-1/4\" female thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-FEMALE-THREAD-38-150",
+    "position": 6,
+    "hoseInch": null,
+    "portLabel": "Storz 38",
+    "port2Label": "1-1/2\" female thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-FEMALE-THREAD-38-200",
+    "position": 7,
+    "hoseInch": null,
+    "portLabel": "Storz 38",
+    "port2Label": "2\" female thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-FEMALE-THREAD-52-100",
+    "position": 8,
+    "hoseInch": null,
+    "portLabel": "Storz 52C",
+    "port2Label": "1\" female thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-FEMALE-THREAD-52-125",
+    "position": 9,
+    "hoseInch": null,
+    "portLabel": "Storz 52C",
+    "port2Label": "1-1/4\" female thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-FEMALE-THREAD-52-150",
+    "position": 10,
+    "hoseInch": null,
+    "portLabel": "Storz 52C",
+    "port2Label": "1-1/2\" female thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-FEMALE-THREAD-52-200",
+    "position": 11,
+    "hoseInch": null,
+    "portLabel": "Storz 52C",
+    "port2Label": "2\" female thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-FEMALE-THREAD-52-250",
+    "position": 12,
+    "hoseInch": null,
+    "portLabel": "Storz 52C",
+    "port2Label": "2-1/2\" female thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-FEMALE-THREAD-65-100",
+    "position": 13,
+    "hoseInch": null,
+    "portLabel": "Storz 65",
+    "port2Label": "1\" female thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-FEMALE-THREAD-65-125",
+    "position": 14,
+    "hoseInch": null,
+    "portLabel": "Storz 65",
+    "port2Label": "1-1/4\" female thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-FEMALE-THREAD-65-150",
+    "position": 15,
+    "hoseInch": null,
+    "portLabel": "Storz 65",
+    "port2Label": "1-1/2\" female thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-FEMALE-THREAD-65-200",
+    "position": 16,
+    "hoseInch": null,
+    "portLabel": "Storz 65",
+    "port2Label": "2\" female thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-FEMALE-THREAD-65-250",
+    "position": 17,
+    "hoseInch": null,
+    "portLabel": "Storz 65",
+    "port2Label": "2-1/2\" female thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-FEMALE-THREAD-65-300",
+    "position": 18,
+    "hoseInch": null,
+    "portLabel": "Storz 65",
+    "port2Label": "3\" female thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-FEMALE-THREAD-75-200",
+    "position": 19,
+    "hoseInch": null,
+    "portLabel": "Storz 75B",
+    "port2Label": "2\" female thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-FEMALE-THREAD-75-250",
+    "position": 20,
+    "hoseInch": null,
+    "portLabel": "Storz 75B",
+    "port2Label": "2-1/2\" female thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-FEMALE-THREAD-75-300",
+    "position": 21,
+    "hoseInch": null,
+    "portLabel": "Storz 75B",
+    "port2Label": "3\" female thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-FEMALE-THREAD-110-300",
+    "position": 22,
+    "hoseInch": null,
+    "portLabel": "Storz 110A",
+    "port2Label": "3\" female thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-FEMALE-THREAD-110-400",
+    "position": 23,
+    "hoseInch": null,
+    "portLabel": "Storz 110A",
+    "port2Label": "4\" female thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-FEMALE-THREAD-110-500",
+    "position": 24,
+    "hoseInch": null,
+    "portLabel": "Storz 110A",
+    "port2Label": "5\" female thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-FEMALE-THREAD-125-500",
+    "position": 25,
+    "hoseInch": null,
+    "portLabel": "Storz 125",
+    "port2Label": "5\" female thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-FEMALE-THREAD-150-600",
+    "position": 26,
+    "hoseInch": null,
+    "portLabel": "Storz 150",
+    "port2Label": "6\" female thread"
+   }
+  ],
+  "tableHtml": "<!-- sunpool-sizes:start --><h3>Sunpool sizes</h3><p>Each Storz size is made with the female thread sizes below, in NPT, BSP or NST. Sunpool makes this adapter in 1\"–6\". The size table lists every combination under its own Indus part number.</p><div class=\"ih-table-scroll\"><table><thead><tr><th>Storz size</th><th>Lug distance (mm)</th><th>Female thread sizes</th></tr></thead><tbody><tr><td>25D</td><td>31</td><td>1/2\", 3/4\", 1\", 1-1/4\"</td></tr><tr><td>38</td><td>—</td><td>1\", 1-1/4\", 1-1/2\", 2\"</td></tr><tr><td>52C</td><td>66</td><td>1\", 1-1/4\", 1-1/2\", 2\", 2-1/2\"</td></tr><tr><td>65</td><td>81</td><td>1\", 1-1/4\", 1-1/2\", 2\", 2-1/2\", 3\"</td></tr><tr><td>75B</td><td>89</td><td>2\", 2-1/2\", 3\"</td></tr><tr><td>110A</td><td>133</td><td>3\", 4\", 5\"</td></tr><tr><td>125</td><td>148</td><td>5\"</td></tr><tr><td>150</td><td>160</td><td>6\"</td></tr></tbody></table></div><p class=\"source-note\">Sizes and dimensions from Sunpool’s catalogue page for this part, checked 7 October 2026.</p><!-- sunpool-sizes:end -->",
+  "sizeRange": "1\"–6\"",
+  "edits": [
+   {
+    "find": "Sizes Storz 25–150 (1-1/2\"–6\"). ",
+    "replace": ""
+   }
+  ],
+  "specs": [],
+  "alignToSpecs": true,
+  "source": "https://sunpool.com.tw/catalog/ins.php?index_id=270&index_m1_id=3&index_m2_id=9"
+ },
+ "IH-STZ-STORZ-ADAPTER-FEMALE-THREAD-2": {
+  "variants": [
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-FEMALE-THREAD-2-38-100",
+    "position": 0,
+    "hoseInch": null,
+    "portLabel": "Storz 38",
+    "port2Label": "1\" female thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-FEMALE-THREAD-2-38-125",
+    "position": 1,
+    "hoseInch": null,
+    "portLabel": "Storz 38",
+    "port2Label": "1-1/4\" female thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-FEMALE-THREAD-2-38-150",
+    "position": 2,
+    "hoseInch": null,
+    "portLabel": "Storz 38",
+    "port2Label": "1-1/2\" female thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-FEMALE-THREAD-2-38-200",
+    "position": 3,
+    "hoseInch": null,
+    "portLabel": "Storz 38",
+    "port2Label": "2\" female thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-FEMALE-THREAD-2-52-100",
+    "position": 4,
+    "hoseInch": null,
+    "portLabel": "Storz 52C",
+    "port2Label": "1\" female thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-FEMALE-THREAD-2-52-125",
+    "position": 5,
+    "hoseInch": null,
+    "portLabel": "Storz 52C",
+    "port2Label": "1-1/4\" female thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-FEMALE-THREAD-2-52-150",
+    "position": 6,
+    "hoseInch": null,
+    "portLabel": "Storz 52C",
+    "port2Label": "1-1/2\" female thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-FEMALE-THREAD-2-52-200",
+    "position": 7,
+    "hoseInch": null,
+    "portLabel": "Storz 52C",
+    "port2Label": "2\" female thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-FEMALE-THREAD-2-52-250",
+    "position": 8,
+    "hoseInch": null,
+    "portLabel": "Storz 52C",
+    "port2Label": "2-1/2\" female thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-FEMALE-THREAD-2-65-100",
+    "position": 9,
+    "hoseInch": null,
+    "portLabel": "Storz 65",
+    "port2Label": "1\" female thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-FEMALE-THREAD-2-65-125",
+    "position": 10,
+    "hoseInch": null,
+    "portLabel": "Storz 65",
+    "port2Label": "1-1/4\" female thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-FEMALE-THREAD-2-65-150",
+    "position": 11,
+    "hoseInch": null,
+    "portLabel": "Storz 65",
+    "port2Label": "1-1/2\" female thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-FEMALE-THREAD-2-65-200",
+    "position": 12,
+    "hoseInch": null,
+    "portLabel": "Storz 65",
+    "port2Label": "2\" female thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-FEMALE-THREAD-2-65-250",
+    "position": 13,
+    "hoseInch": null,
+    "portLabel": "Storz 65",
+    "port2Label": "2-1/2\" female thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-FEMALE-THREAD-2-65-300",
+    "position": 14,
+    "hoseInch": null,
+    "portLabel": "Storz 65",
+    "port2Label": "3\" female thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-FEMALE-THREAD-2-75-200",
+    "position": 15,
+    "hoseInch": null,
+    "portLabel": "Storz 75B",
+    "port2Label": "2\" female thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-FEMALE-THREAD-2-75-250",
+    "position": 16,
+    "hoseInch": null,
+    "portLabel": "Storz 75B",
+    "port2Label": "2-1/2\" female thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-FEMALE-THREAD-2-75-300",
+    "position": 17,
+    "hoseInch": null,
+    "portLabel": "Storz 75B",
+    "port2Label": "3\" female thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-FEMALE-THREAD-2-110-300",
+    "position": 18,
+    "hoseInch": null,
+    "portLabel": "Storz 110A",
+    "port2Label": "3\" female thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-FEMALE-THREAD-2-110-400",
+    "position": 19,
+    "hoseInch": null,
+    "portLabel": "Storz 110A",
+    "port2Label": "4\" female thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-FEMALE-THREAD-2-110-500",
+    "position": 20,
+    "hoseInch": null,
+    "portLabel": "Storz 110A",
+    "port2Label": "5\" female thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-FEMALE-THREAD-2-125-500",
+    "position": 21,
+    "hoseInch": null,
+    "portLabel": "Storz 125",
+    "port2Label": "5\" female thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-FEMALE-THREAD-2-150-600",
+    "position": 22,
+    "hoseInch": null,
+    "portLabel": "Storz 150",
+    "port2Label": "6\" female thread"
+   }
+  ],
+  "tableHtml": "<!-- sunpool-sizes:start --><h3>Sunpool sizes</h3><p>Each Storz size is made with the female thread sizes below, in NPT, BSP or NST. Sunpool makes this adapter in 1-1/2\"–6\". The size table lists every combination under its own Indus part number.</p><div class=\"ih-table-scroll\"><table><thead><tr><th>Storz size</th><th>Lug distance (mm)</th><th>Female thread sizes</th></tr></thead><tbody><tr><td>38</td><td>—</td><td>1\", 1-1/4\", 1-1/2\", 2\"</td></tr><tr><td>52C</td><td>66</td><td>1\", 1-1/4\", 1-1/2\", 2\", 2-1/2\"</td></tr><tr><td>65</td><td>81</td><td>1\", 1-1/4\", 1-1/2\", 2\", 2-1/2\", 3\"</td></tr><tr><td>75B</td><td>89</td><td>2\", 2-1/2\", 3\"</td></tr><tr><td>110A</td><td>133</td><td>3\", 4\", 5\"</td></tr><tr><td>125</td><td>148</td><td>5\"</td></tr><tr><td>150</td><td>160</td><td>6\"</td></tr></tbody></table></div><p class=\"source-note\">Sizes and dimensions from Sunpool’s catalogue page for this part, checked 7 October 2026.</p><!-- sunpool-sizes:end -->",
+  "sizeRange": "1-1/2\"–6\"",
+  "edits": [
+   {
+    "find": "Sizes Storz 25–150 (1-1/2\"–6\"). ",
+    "replace": ""
+   }
+  ],
+  "specs": [],
+  "alignToSpecs": true,
+  "source": "https://sunpool.com.tw/catalog/ins.php?index_id=627&index_m1_id=3&index_m2_id=9"
+ },
+ "IH-STZ-STORZ-ADAPTER-FEMALE-THREAD-3": {
+  "variants": [
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-FEMALE-THREAD-3-38-100",
+    "position": 0,
+    "hoseInch": null,
+    "portLabel": "Storz 38",
+    "port2Label": "1\" female thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-FEMALE-THREAD-3-38-125",
+    "position": 1,
+    "hoseInch": null,
+    "portLabel": "Storz 38",
+    "port2Label": "1-1/4\" female thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-FEMALE-THREAD-3-38-150",
+    "position": 2,
+    "hoseInch": null,
+    "portLabel": "Storz 38",
+    "port2Label": "1-1/2\" female thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-FEMALE-THREAD-3-38-200",
+    "position": 3,
+    "hoseInch": null,
+    "portLabel": "Storz 38",
+    "port2Label": "2\" female thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-FEMALE-THREAD-3-52-100",
+    "position": 4,
+    "hoseInch": null,
+    "portLabel": "Storz 52C",
+    "port2Label": "1\" female thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-FEMALE-THREAD-3-52-125",
+    "position": 5,
+    "hoseInch": null,
+    "portLabel": "Storz 52C",
+    "port2Label": "1-1/4\" female thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-FEMALE-THREAD-3-52-150",
+    "position": 6,
+    "hoseInch": null,
+    "portLabel": "Storz 52C",
+    "port2Label": "1-1/2\" female thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-FEMALE-THREAD-3-52-200",
+    "position": 7,
+    "hoseInch": null,
+    "portLabel": "Storz 52C",
+    "port2Label": "2\" female thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-FEMALE-THREAD-3-52-250",
+    "position": 8,
+    "hoseInch": null,
+    "portLabel": "Storz 52C",
+    "port2Label": "2-1/2\" female thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-FEMALE-THREAD-3-65-100",
+    "position": 9,
+    "hoseInch": null,
+    "portLabel": "Storz 65",
+    "port2Label": "1\" female thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-FEMALE-THREAD-3-65-125",
+    "position": 10,
+    "hoseInch": null,
+    "portLabel": "Storz 65",
+    "port2Label": "1-1/4\" female thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-FEMALE-THREAD-3-65-150",
+    "position": 11,
+    "hoseInch": null,
+    "portLabel": "Storz 65",
+    "port2Label": "1-1/2\" female thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-FEMALE-THREAD-3-65-200",
+    "position": 12,
+    "hoseInch": null,
+    "portLabel": "Storz 65",
+    "port2Label": "2\" female thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-FEMALE-THREAD-3-65-250",
+    "position": 13,
+    "hoseInch": null,
+    "portLabel": "Storz 65",
+    "port2Label": "2-1/2\" female thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-FEMALE-THREAD-3-65-300",
+    "position": 14,
+    "hoseInch": null,
+    "portLabel": "Storz 65",
+    "port2Label": "3\" female thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-FEMALE-THREAD-3-75-200",
+    "position": 15,
+    "hoseInch": null,
+    "portLabel": "Storz 75B",
+    "port2Label": "2\" female thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-FEMALE-THREAD-3-75-250",
+    "position": 16,
+    "hoseInch": null,
+    "portLabel": "Storz 75B",
+    "port2Label": "2-1/2\" female thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-FEMALE-THREAD-3-75-300",
+    "position": 17,
+    "hoseInch": null,
+    "portLabel": "Storz 75B",
+    "port2Label": "3\" female thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-FEMALE-THREAD-3-110-300",
+    "position": 18,
+    "hoseInch": null,
+    "portLabel": "Storz 110A",
+    "port2Label": "3\" female thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-FEMALE-THREAD-3-110-400",
+    "position": 19,
+    "hoseInch": null,
+    "portLabel": "Storz 110A",
+    "port2Label": "4\" female thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-FEMALE-THREAD-3-110-500",
+    "position": 20,
+    "hoseInch": null,
+    "portLabel": "Storz 110A",
+    "port2Label": "5\" female thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-FEMALE-THREAD-3-125-500",
+    "position": 21,
+    "hoseInch": null,
+    "portLabel": "Storz 125",
+    "port2Label": "5\" female thread"
+   }
+  ],
+  "tableHtml": "<!-- sunpool-sizes:start --><h3>Sunpool sizes</h3><p>Each Storz size is made with the female thread sizes below, in NPT, BSP or NST. Sunpool makes this adapter in 1-1/2\"–5\". The size table lists every combination under its own Indus part number.</p><div class=\"ih-table-scroll\"><table><thead><tr><th>Storz size</th><th>Lug distance (mm)</th><th>Female thread sizes</th></tr></thead><tbody><tr><td>38</td><td>—</td><td>1\", 1-1/4\", 1-1/2\", 2\"</td></tr><tr><td>52C</td><td>66</td><td>1\", 1-1/4\", 1-1/2\", 2\", 2-1/2\"</td></tr><tr><td>65</td><td>81</td><td>1\", 1-1/4\", 1-1/2\", 2\", 2-1/2\", 3\"</td></tr><tr><td>75B</td><td>89</td><td>2\", 2-1/2\", 3\"</td></tr><tr><td>110A</td><td>133</td><td>3\", 4\", 5\"</td></tr><tr><td>125</td><td>148</td><td>5\"</td></tr></tbody></table></div><p class=\"source-note\">Sizes and dimensions from Sunpool’s catalogue page for this part, checked 7 October 2026.</p><!-- sunpool-sizes:end -->",
+  "sizeRange": "1-1/2\"–5\"",
+  "edits": [
+   {
+    "find": "Sizes Storz 25–150 (1-1/2\"–6\"). ",
+    "replace": ""
+   }
+  ],
+  "specs": [],
+  "alignToSpecs": true,
+  "source": "https://sunpool.com.tw/catalog/ins.php?index_id=631&index_m1_id=3&index_m2_id=9"
+ },
+ "IH-STZ-STORZ-ADAPTER-MALE-THREAD": {
+  "variants": [
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-MALE-THREAD-25-050",
+    "position": 0,
+    "hoseInch": null,
+    "portLabel": "Storz 25D",
+    "port2Label": "1/2\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-MALE-THREAD-25-075",
+    "position": 1,
+    "hoseInch": null,
+    "portLabel": "Storz 25D",
+    "port2Label": "3/4\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-MALE-THREAD-25-100",
+    "position": 2,
+    "hoseInch": null,
+    "portLabel": "Storz 25D",
+    "port2Label": "1\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-MALE-THREAD-25-125",
+    "position": 3,
+    "hoseInch": null,
+    "portLabel": "Storz 25D",
+    "port2Label": "1-1/4\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-MALE-THREAD-38-100",
+    "position": 4,
+    "hoseInch": null,
+    "portLabel": "Storz 38",
+    "port2Label": "1\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-MALE-THREAD-38-125",
+    "position": 5,
+    "hoseInch": null,
+    "portLabel": "Storz 38",
+    "port2Label": "1-1/4\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-MALE-THREAD-38-150",
+    "position": 6,
+    "hoseInch": null,
+    "portLabel": "Storz 38",
+    "port2Label": "1-1/2\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-MALE-THREAD-38-200",
+    "position": 7,
+    "hoseInch": null,
+    "portLabel": "Storz 38",
+    "port2Label": "2\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-MALE-THREAD-52-100",
+    "position": 8,
+    "hoseInch": null,
+    "portLabel": "Storz 52C",
+    "port2Label": "1\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-MALE-THREAD-52-125",
+    "position": 9,
+    "hoseInch": null,
+    "portLabel": "Storz 52C",
+    "port2Label": "1-1/4\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-MALE-THREAD-52-150",
+    "position": 10,
+    "hoseInch": null,
+    "portLabel": "Storz 52C",
+    "port2Label": "1-1/2\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-MALE-THREAD-52-200",
+    "position": 11,
+    "hoseInch": null,
+    "portLabel": "Storz 52C",
+    "port2Label": "2\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-MALE-THREAD-52-250",
+    "position": 12,
+    "hoseInch": null,
+    "portLabel": "Storz 52C",
+    "port2Label": "2-1/2\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-MALE-THREAD-65-100",
+    "position": 13,
+    "hoseInch": null,
+    "portLabel": "Storz 65",
+    "port2Label": "1\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-MALE-THREAD-65-125",
+    "position": 14,
+    "hoseInch": null,
+    "portLabel": "Storz 65",
+    "port2Label": "1-1/4\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-MALE-THREAD-65-150",
+    "position": 15,
+    "hoseInch": null,
+    "portLabel": "Storz 65",
+    "port2Label": "1-1/2\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-MALE-THREAD-65-200",
+    "position": 16,
+    "hoseInch": null,
+    "portLabel": "Storz 65",
+    "port2Label": "2\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-MALE-THREAD-65-250",
+    "position": 17,
+    "hoseInch": null,
+    "portLabel": "Storz 65",
+    "port2Label": "2-1/2\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-MALE-THREAD-65-300",
+    "position": 18,
+    "hoseInch": null,
+    "portLabel": "Storz 65",
+    "port2Label": "3\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-MALE-THREAD-75-200",
+    "position": 19,
+    "hoseInch": null,
+    "portLabel": "Storz 75B",
+    "port2Label": "2\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-MALE-THREAD-75-250",
+    "position": 20,
+    "hoseInch": null,
+    "portLabel": "Storz 75B",
+    "port2Label": "2-1/2\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-MALE-THREAD-75-300",
+    "position": 21,
+    "hoseInch": null,
+    "portLabel": "Storz 75B",
+    "port2Label": "3\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-MALE-THREAD-110-300",
+    "position": 22,
+    "hoseInch": null,
+    "portLabel": "Storz 110A",
+    "port2Label": "3\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-MALE-THREAD-110-400",
+    "position": 23,
+    "hoseInch": null,
+    "portLabel": "Storz 110A",
+    "port2Label": "4\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-MALE-THREAD-110-500",
+    "position": 24,
+    "hoseInch": null,
+    "portLabel": "Storz 110A",
+    "port2Label": "5\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-MALE-THREAD-125-500",
+    "position": 25,
+    "hoseInch": null,
+    "portLabel": "Storz 125",
+    "port2Label": "5\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-MALE-THREAD-150-600",
+    "position": 26,
+    "hoseInch": null,
+    "portLabel": "Storz 150",
+    "port2Label": "6\" male thread"
+   }
+  ],
+  "tableHtml": "<!-- sunpool-sizes:start --><h3>Sunpool sizes</h3><p>Each Storz size is made with the male thread sizes below, in NPT, BSP or NST. Sunpool makes this adapter in 1\"–6\". The size table lists every combination under its own Indus part number.</p><div class=\"ih-table-scroll\"><table><thead><tr><th>Storz size</th><th>Lug distance (mm)</th><th>Male thread sizes</th></tr></thead><tbody><tr><td>25D</td><td>31</td><td>1/2\", 3/4\", 1\", 1-1/4\"</td></tr><tr><td>38</td><td>—</td><td>1\", 1-1/4\", 1-1/2\", 2\"</td></tr><tr><td>52C</td><td>66</td><td>1\", 1-1/4\", 1-1/2\", 2\", 2-1/2\"</td></tr><tr><td>65</td><td>81</td><td>1\", 1-1/4\", 1-1/2\", 2\", 2-1/2\", 3\"</td></tr><tr><td>75B</td><td>89</td><td>2\", 2-1/2\", 3\"</td></tr><tr><td>110A</td><td>133</td><td>3\", 4\", 5\"</td></tr><tr><td>125</td><td>148</td><td>5\"</td></tr><tr><td>150</td><td>160</td><td>6\"</td></tr></tbody></table></div><p class=\"source-note\">Sizes and dimensions from Sunpool’s catalogue page for this part, checked 7 October 2026.</p><!-- sunpool-sizes:end -->",
+  "sizeRange": "1\"–6\"",
+  "edits": [
+   {
+    "find": "Sizes Storz 25–150 (1-1/2\"–6\"). ",
+    "replace": ""
+   }
+  ],
+  "specs": [],
+  "alignToSpecs": true,
+  "source": "https://sunpool.com.tw/catalog/ins.php?index_id=626&index_m1_id=3&index_m2_id=9"
+ },
+ "IH-STZ-STORZ-ADAPTER-MALE-THREAD-2": {
+  "variants": [
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-MALE-THREAD-2-25-050",
+    "position": 0,
+    "hoseInch": null,
+    "portLabel": "Storz 25D",
+    "port2Label": "1/2\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-MALE-THREAD-2-25-075",
+    "position": 1,
+    "hoseInch": null,
+    "portLabel": "Storz 25D",
+    "port2Label": "3/4\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-MALE-THREAD-2-25-100",
+    "position": 2,
+    "hoseInch": null,
+    "portLabel": "Storz 25D",
+    "port2Label": "1\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-MALE-THREAD-2-25-125",
+    "position": 3,
+    "hoseInch": null,
+    "portLabel": "Storz 25D",
+    "port2Label": "1-1/4\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-MALE-THREAD-2-38-100",
+    "position": 4,
+    "hoseInch": null,
+    "portLabel": "Storz 38",
+    "port2Label": "1\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-MALE-THREAD-2-38-125",
+    "position": 5,
+    "hoseInch": null,
+    "portLabel": "Storz 38",
+    "port2Label": "1-1/4\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-MALE-THREAD-2-38-150",
+    "position": 6,
+    "hoseInch": null,
+    "portLabel": "Storz 38",
+    "port2Label": "1-1/2\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-MALE-THREAD-2-38-200",
+    "position": 7,
+    "hoseInch": null,
+    "portLabel": "Storz 38",
+    "port2Label": "2\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-MALE-THREAD-2-52-100",
+    "position": 8,
+    "hoseInch": null,
+    "portLabel": "Storz 52C",
+    "port2Label": "1\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-MALE-THREAD-2-52-125",
+    "position": 9,
+    "hoseInch": null,
+    "portLabel": "Storz 52C",
+    "port2Label": "1-1/4\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-MALE-THREAD-2-52-150",
+    "position": 10,
+    "hoseInch": null,
+    "portLabel": "Storz 52C",
+    "port2Label": "1-1/2\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-MALE-THREAD-2-52-200",
+    "position": 11,
+    "hoseInch": null,
+    "portLabel": "Storz 52C",
+    "port2Label": "2\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-MALE-THREAD-2-52-250",
+    "position": 12,
+    "hoseInch": null,
+    "portLabel": "Storz 52C",
+    "port2Label": "2-1/2\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-MALE-THREAD-2-65-100",
+    "position": 13,
+    "hoseInch": null,
+    "portLabel": "Storz 65",
+    "port2Label": "1\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-MALE-THREAD-2-65-125",
+    "position": 14,
+    "hoseInch": null,
+    "portLabel": "Storz 65",
+    "port2Label": "1-1/4\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-MALE-THREAD-2-65-150",
+    "position": 15,
+    "hoseInch": null,
+    "portLabel": "Storz 65",
+    "port2Label": "1-1/2\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-MALE-THREAD-2-65-200",
+    "position": 16,
+    "hoseInch": null,
+    "portLabel": "Storz 65",
+    "port2Label": "2\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-MALE-THREAD-2-65-250",
+    "position": 17,
+    "hoseInch": null,
+    "portLabel": "Storz 65",
+    "port2Label": "2-1/2\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-MALE-THREAD-2-65-300",
+    "position": 18,
+    "hoseInch": null,
+    "portLabel": "Storz 65",
+    "port2Label": "3\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-MALE-THREAD-2-75-200",
+    "position": 19,
+    "hoseInch": null,
+    "portLabel": "Storz 75B",
+    "port2Label": "2\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-MALE-THREAD-2-75-250",
+    "position": 20,
+    "hoseInch": null,
+    "portLabel": "Storz 75B",
+    "port2Label": "2-1/2\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-MALE-THREAD-2-75-300",
+    "position": 21,
+    "hoseInch": null,
+    "portLabel": "Storz 75B",
+    "port2Label": "3\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-MALE-THREAD-2-110-300",
+    "position": 22,
+    "hoseInch": null,
+    "portLabel": "Storz 110A",
+    "port2Label": "3\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-MALE-THREAD-2-110-400",
+    "position": 23,
+    "hoseInch": null,
+    "portLabel": "Storz 110A",
+    "port2Label": "4\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-MALE-THREAD-2-110-500",
+    "position": 24,
+    "hoseInch": null,
+    "portLabel": "Storz 110A",
+    "port2Label": "5\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-MALE-THREAD-2-125-500",
+    "position": 25,
+    "hoseInch": null,
+    "portLabel": "Storz 125",
+    "port2Label": "5\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-MALE-THREAD-2-150-600",
+    "position": 26,
+    "hoseInch": null,
+    "portLabel": "Storz 150",
+    "port2Label": "6\" male thread"
+   }
+  ],
+  "tableHtml": "<!-- sunpool-sizes:start --><h3>Sunpool sizes</h3><p>Each Storz size is made with the male thread sizes below, in NPT, BSP or NST. Sunpool makes this adapter in 1\"–6\". The size table lists every combination under its own Indus part number.</p><div class=\"ih-table-scroll\"><table><thead><tr><th>Storz size</th><th>Lug distance (mm)</th><th>Male thread sizes</th></tr></thead><tbody><tr><td>25D</td><td>31</td><td>1/2\", 3/4\", 1\", 1-1/4\"</td></tr><tr><td>38</td><td>—</td><td>1\", 1-1/4\", 1-1/2\", 2\"</td></tr><tr><td>52C</td><td>66</td><td>1\", 1-1/4\", 1-1/2\", 2\", 2-1/2\"</td></tr><tr><td>65</td><td>81</td><td>1\", 1-1/4\", 1-1/2\", 2\", 2-1/2\", 3\"</td></tr><tr><td>75B</td><td>89</td><td>2\", 2-1/2\", 3\"</td></tr><tr><td>110A</td><td>133</td><td>3\", 4\", 5\"</td></tr><tr><td>125</td><td>148</td><td>5\"</td></tr><tr><td>150</td><td>160</td><td>6\"</td></tr></tbody></table></div><p class=\"source-note\">Sizes and dimensions from Sunpool’s catalogue page for this part, checked 7 October 2026.</p><!-- sunpool-sizes:end -->",
+  "sizeRange": "1\"–6\"",
+  "edits": [
+   {
+    "find": "Sizes Storz 25–150 (1-1/2\"–6\"). ",
+    "replace": ""
+   }
+  ],
+  "specs": [],
+  "alignToSpecs": true,
+  "source": "https://sunpool.com.tw/catalog/ins.php?index_id=632&index_m1_id=3&index_m2_id=9"
+ },
+ "IH-STZ-STORZ-ADAPTER-MALE-THREAD-3": {
+  "variants": [
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-MALE-THREAD-3-38-100",
+    "position": 0,
+    "hoseInch": null,
+    "portLabel": "Storz 38",
+    "port2Label": "1\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-MALE-THREAD-3-38-125",
+    "position": 1,
+    "hoseInch": null,
+    "portLabel": "Storz 38",
+    "port2Label": "1-1/4\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-MALE-THREAD-3-38-150",
+    "position": 2,
+    "hoseInch": null,
+    "portLabel": "Storz 38",
+    "port2Label": "1-1/2\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-MALE-THREAD-3-38-200",
+    "position": 3,
+    "hoseInch": null,
+    "portLabel": "Storz 38",
+    "port2Label": "2\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-MALE-THREAD-3-52-100",
+    "position": 4,
+    "hoseInch": null,
+    "portLabel": "Storz 52C",
+    "port2Label": "1\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-MALE-THREAD-3-52-125",
+    "position": 5,
+    "hoseInch": null,
+    "portLabel": "Storz 52C",
+    "port2Label": "1-1/4\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-MALE-THREAD-3-52-150",
+    "position": 6,
+    "hoseInch": null,
+    "portLabel": "Storz 52C",
+    "port2Label": "1-1/2\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-MALE-THREAD-3-52-200",
+    "position": 7,
+    "hoseInch": null,
+    "portLabel": "Storz 52C",
+    "port2Label": "2\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-MALE-THREAD-3-52-250",
+    "position": 8,
+    "hoseInch": null,
+    "portLabel": "Storz 52C",
+    "port2Label": "2-1/2\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-MALE-THREAD-3-65-100",
+    "position": 9,
+    "hoseInch": null,
+    "portLabel": "Storz 65",
+    "port2Label": "1\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-MALE-THREAD-3-65-125",
+    "position": 10,
+    "hoseInch": null,
+    "portLabel": "Storz 65",
+    "port2Label": "1-1/4\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-MALE-THREAD-3-65-150",
+    "position": 11,
+    "hoseInch": null,
+    "portLabel": "Storz 65",
+    "port2Label": "1-1/2\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-MALE-THREAD-3-65-200",
+    "position": 12,
+    "hoseInch": null,
+    "portLabel": "Storz 65",
+    "port2Label": "2\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-MALE-THREAD-3-65-250",
+    "position": 13,
+    "hoseInch": null,
+    "portLabel": "Storz 65",
+    "port2Label": "2-1/2\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-MALE-THREAD-3-65-300",
+    "position": 14,
+    "hoseInch": null,
+    "portLabel": "Storz 65",
+    "port2Label": "3\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-MALE-THREAD-3-75-200",
+    "position": 15,
+    "hoseInch": null,
+    "portLabel": "Storz 75B",
+    "port2Label": "2\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-MALE-THREAD-3-75-250",
+    "position": 16,
+    "hoseInch": null,
+    "portLabel": "Storz 75B",
+    "port2Label": "2-1/2\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-MALE-THREAD-3-75-300",
+    "position": 17,
+    "hoseInch": null,
+    "portLabel": "Storz 75B",
+    "port2Label": "3\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-MALE-THREAD-3-110-300",
+    "position": 18,
+    "hoseInch": null,
+    "portLabel": "Storz 110A",
+    "port2Label": "3\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-MALE-THREAD-3-110-400",
+    "position": 19,
+    "hoseInch": null,
+    "portLabel": "Storz 110A",
+    "port2Label": "4\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-MALE-THREAD-3-110-500",
+    "position": 20,
+    "hoseInch": null,
+    "portLabel": "Storz 110A",
+    "port2Label": "5\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-MALE-THREAD-3-125-500",
+    "position": 21,
+    "hoseInch": null,
+    "portLabel": "Storz 125",
+    "port2Label": "5\" male thread"
+   }
+  ],
+  "tableHtml": "<!-- sunpool-sizes:start --><h3>Sunpool sizes</h3><p>Each Storz size is made with the male thread sizes below, in NPT, BSP or NST. Sunpool makes this adapter in 1-1/2\"–5\". The size table lists every combination under its own Indus part number.</p><div class=\"ih-table-scroll\"><table><thead><tr><th>Storz size</th><th>Lug distance (mm)</th><th>Male thread sizes</th></tr></thead><tbody><tr><td>38</td><td>—</td><td>1\", 1-1/4\", 1-1/2\", 2\"</td></tr><tr><td>52C</td><td>66</td><td>1\", 1-1/4\", 1-1/2\", 2\", 2-1/2\"</td></tr><tr><td>65</td><td>81</td><td>1\", 1-1/4\", 1-1/2\", 2\", 2-1/2\", 3\"</td></tr><tr><td>75B</td><td>89</td><td>2\", 2-1/2\", 3\"</td></tr><tr><td>110A</td><td>133</td><td>3\", 4\", 5\"</td></tr><tr><td>125</td><td>148</td><td>5\"</td></tr></tbody></table></div><p class=\"source-note\">Sizes and dimensions from Sunpool’s catalogue page for this part, checked 7 October 2026.</p><!-- sunpool-sizes:end -->",
+  "sizeRange": "1-1/2\"–5\"",
+  "edits": [
+   {
+    "find": "Sizes Storz 25–150 (1-1/2\"–6\"). ",
+    "replace": ""
+   }
+  ],
+  "specs": [],
+  "alignToSpecs": true,
+  "source": "https://sunpool.com.tw/catalog/ins.php?index_id=630&index_m1_id=3&index_m2_id=9"
+ },
+ "IH-STZ-STORZ-ADAPTER-MALE-THREAD-H-ANODIZED": {
+  "variants": [
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-MALE-THREAD-H-ANODIZED-100",
+    "position": 0,
+    "hoseInch": "4\" (Storz 100)",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-MALE-THREAD-H-ANODIZED-125",
+    "position": 1,
+    "hoseInch": "5\" (Storz 125)",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-MALE-THREAD-H-ANODIZED-150",
+    "position": 2,
+    "hoseInch": "6\" (Storz 150)",
+    "portLabel": null,
+    "port2Label": null
+   }
+  ],
+  "tableHtml": "<!-- sunpool-sizes:start --><h3>Sunpool sizes</h3><p>Sunpool makes this part in three Storz sizes, identified by the lug distance across the two lugs.</p><div class=\"ih-table-scroll\"><table><thead><tr><th>Size</th><th>Storz size</th><th>Lug distance (mm)</th></tr></thead><tbody><tr><td>4\"</td><td>100</td><td>115</td></tr><tr><td>5\"</td><td>125</td><td>148</td></tr><tr><td>6\"</td><td>150</td><td>160</td></tr></tbody></table></div><p class=\"source-note\">Sizes and dimensions from Sunpool’s catalogue page for this part, checked 7 October 2026.</p><!-- sunpool-sizes:end -->",
+  "sizeRange": "4\", 5\" and 6\"",
+  "edits": [
+   {
+    "find": "Sizes Storz 25–150 (1-1/2\"–6\"). ",
+    "replace": ""
+   }
+  ],
+  "specs": [],
+  "alignToSpecs": true,
+  "source": "https://sunpool.com.tw/catalog/ins.php?index_id=476&index_m1_id=3&index_m2_id=9"
+ },
+ "IH-STZ-STORZ-ADAPTER-MALE-THREAD-PAINTED": {
+  "variants": [
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-MALE-THREAD-PAINTED-100",
+    "position": 0,
+    "hoseInch": "4\" (Storz 100)",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-MALE-THREAD-PAINTED-125",
+    "position": 1,
+    "hoseInch": "5\" (Storz 125)",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-MALE-THREAD-PAINTED-150",
+    "position": 2,
+    "hoseInch": "6\" (Storz 150)",
+    "portLabel": null,
+    "port2Label": null
+   }
+  ],
+  "tableHtml": "<!-- sunpool-sizes:start --><h3>Sunpool sizes</h3><p>Sunpool makes this part in three Storz sizes, identified by the lug distance across the two lugs.</p><div class=\"ih-table-scroll\"><table><thead><tr><th>Size</th><th>Storz size</th><th>Lug distance (mm)</th></tr></thead><tbody><tr><td>4\"</td><td>100</td><td>115</td></tr><tr><td>5\"</td><td>125</td><td>148</td></tr><tr><td>6\"</td><td>150</td><td>160</td></tr></tbody></table></div><p class=\"source-note\">Sizes and dimensions from Sunpool’s catalogue page for this part, checked 7 October 2026.</p><!-- sunpool-sizes:end -->",
+  "sizeRange": "4\", 5\" and 6\"",
+  "edits": [
+   {
+    "find": "Sizes Storz 25–150 (1-1/2\"–6\"). ",
+    "replace": ""
+   }
+  ],
+  "specs": [],
+  "alignToSpecs": true,
+  "source": "https://sunpool.com.tw/catalog/ins.php?index_id=477&index_m1_id=3&index_m2_id=9"
+ },
+ "IH-STZ-STORZ-ADAPTER-WITH-SAFETY-LATCH-H-ANODIZ": {
+  "variants": [
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-WITH-SAFETY-LATCH-H-ANODIZ-100",
+    "position": 0,
+    "hoseInch": "4\" (Storz 100)",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-WITH-SAFETY-LATCH-H-ANODIZ-125",
+    "position": 1,
+    "hoseInch": "5\" (Storz 125)",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-WITH-SAFETY-LATCH-H-ANODIZ-150",
+    "position": 2,
+    "hoseInch": "6\" (Storz 150)",
+    "portLabel": null,
+    "port2Label": null
+   }
+  ],
+  "tableHtml": "<!-- sunpool-sizes:start --><h3>Sunpool sizes</h3><p>Sunpool makes this part in three Storz sizes, identified by the lug distance across the two lugs.</p><div class=\"ih-table-scroll\"><table><thead><tr><th>Size</th><th>Storz size</th><th>Lug distance (mm)</th></tr></thead><tbody><tr><td>4\"</td><td>100</td><td>115</td></tr><tr><td>5\"</td><td>125</td><td>148</td></tr><tr><td>6\"</td><td>150</td><td>160</td></tr></tbody></table></div><p class=\"source-note\">Sizes and dimensions from Sunpool’s catalogue page for this part, checked 7 October 2026.</p><!-- sunpool-sizes:end -->",
+  "sizeRange": "4\", 5\" and 6\"",
+  "edits": [
+   {
+    "find": "Sizes Storz 25–150 (1-1/2\"–6\"). ",
+    "replace": ""
+   }
+  ],
+  "specs": [],
+  "alignToSpecs": true,
+  "source": "https://sunpool.com.tw/catalog/ins.php?index_id=274&index_m1_id=3&index_m2_id=9"
+ },
+ "IH-STZ-STORZ-ADAPTER-WITH-SAFETY-LATCH-PAINTED": {
+  "variants": [
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-WITH-SAFETY-LATCH-PAINTED-100",
+    "position": 0,
+    "hoseInch": "4\" (Storz 100)",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-WITH-SAFETY-LATCH-PAINTED-125",
+    "position": 1,
+    "hoseInch": "5\" (Storz 125)",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-WITH-SAFETY-LATCH-PAINTED-150",
+    "position": 2,
+    "hoseInch": "6\" (Storz 150)",
+    "portLabel": null,
+    "port2Label": null
+   }
+  ],
+  "tableHtml": "<!-- sunpool-sizes:start --><h3>Sunpool sizes</h3><p>Sunpool makes this part in three Storz sizes, identified by the lug distance across the two lugs.</p><div class=\"ih-table-scroll\"><table><thead><tr><th>Size</th><th>Storz size</th><th>Lug distance (mm)</th></tr></thead><tbody><tr><td>4\"</td><td>100</td><td>115</td></tr><tr><td>5\"</td><td>125</td><td>148</td></tr><tr><td>6\"</td><td>150</td><td>160</td></tr></tbody></table></div><p class=\"source-note\">Sizes and dimensions from Sunpool’s catalogue page for this part, checked 7 October 2026.</p><!-- sunpool-sizes:end -->",
+  "sizeRange": "4\", 5\" and 6\"",
+  "edits": [
+   {
+    "find": "Sizes Storz 25–150 (1-1/2\"–6\"). ",
+    "replace": ""
+   }
+  ],
+  "specs": [],
+  "alignToSpecs": true,
+  "source": "https://sunpool.com.tw/catalog/ins.php?index_id=273&index_m1_id=3&index_m2_id=9"
+ },
+ "IH-STZ-STORZ-ADAPTER-X-MALE-THREAD": {
+  "variants": [
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-X-MALE-THREAD-25-050",
+    "position": 0,
+    "hoseInch": null,
+    "portLabel": "Storz 25D",
+    "port2Label": "1/2\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-X-MALE-THREAD-25-075",
+    "position": 1,
+    "hoseInch": null,
+    "portLabel": "Storz 25D",
+    "port2Label": "3/4\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-X-MALE-THREAD-25-100",
+    "position": 2,
+    "hoseInch": null,
+    "portLabel": "Storz 25D",
+    "port2Label": "1\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-X-MALE-THREAD-25-125",
+    "position": 3,
+    "hoseInch": null,
+    "portLabel": "Storz 25D",
+    "port2Label": "1-1/4\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-X-MALE-THREAD-38-100",
+    "position": 4,
+    "hoseInch": null,
+    "portLabel": "Storz 38",
+    "port2Label": "1\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-X-MALE-THREAD-38-125",
+    "position": 5,
+    "hoseInch": null,
+    "portLabel": "Storz 38",
+    "port2Label": "1-1/4\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-X-MALE-THREAD-38-150",
+    "position": 6,
+    "hoseInch": null,
+    "portLabel": "Storz 38",
+    "port2Label": "1-1/2\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-X-MALE-THREAD-38-200",
+    "position": 7,
+    "hoseInch": null,
+    "portLabel": "Storz 38",
+    "port2Label": "2\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-X-MALE-THREAD-52-100",
+    "position": 8,
+    "hoseInch": null,
+    "portLabel": "Storz 52C",
+    "port2Label": "1\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-X-MALE-THREAD-52-125",
+    "position": 9,
+    "hoseInch": null,
+    "portLabel": "Storz 52C",
+    "port2Label": "1-1/4\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-X-MALE-THREAD-52-150",
+    "position": 10,
+    "hoseInch": null,
+    "portLabel": "Storz 52C",
+    "port2Label": "1-1/2\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-X-MALE-THREAD-52-200",
+    "position": 11,
+    "hoseInch": null,
+    "portLabel": "Storz 52C",
+    "port2Label": "2\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-X-MALE-THREAD-52-250",
+    "position": 12,
+    "hoseInch": null,
+    "portLabel": "Storz 52C",
+    "port2Label": "2-1/2\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-X-MALE-THREAD-65-100",
+    "position": 13,
+    "hoseInch": null,
+    "portLabel": "Storz 65",
+    "port2Label": "1\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-X-MALE-THREAD-65-125",
+    "position": 14,
+    "hoseInch": null,
+    "portLabel": "Storz 65",
+    "port2Label": "1-1/4\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-X-MALE-THREAD-65-150",
+    "position": 15,
+    "hoseInch": null,
+    "portLabel": "Storz 65",
+    "port2Label": "1-1/2\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-X-MALE-THREAD-65-200",
+    "position": 16,
+    "hoseInch": null,
+    "portLabel": "Storz 65",
+    "port2Label": "2\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-X-MALE-THREAD-65-250",
+    "position": 17,
+    "hoseInch": null,
+    "portLabel": "Storz 65",
+    "port2Label": "2-1/2\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-X-MALE-THREAD-65-300",
+    "position": 18,
+    "hoseInch": null,
+    "portLabel": "Storz 65",
+    "port2Label": "3\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-X-MALE-THREAD-75-200",
+    "position": 19,
+    "hoseInch": null,
+    "portLabel": "Storz 75B",
+    "port2Label": "2\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-X-MALE-THREAD-75-250",
+    "position": 20,
+    "hoseInch": null,
+    "portLabel": "Storz 75B",
+    "port2Label": "2-1/2\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-X-MALE-THREAD-75-300",
+    "position": 21,
+    "hoseInch": null,
+    "portLabel": "Storz 75B",
+    "port2Label": "3\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-X-MALE-THREAD-110-300",
+    "position": 22,
+    "hoseInch": null,
+    "portLabel": "Storz 110A",
+    "port2Label": "3\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-X-MALE-THREAD-110-400",
+    "position": 23,
+    "hoseInch": null,
+    "portLabel": "Storz 110A",
+    "port2Label": "4\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-X-MALE-THREAD-110-500",
+    "position": 24,
+    "hoseInch": null,
+    "portLabel": "Storz 110A",
+    "port2Label": "5\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-X-MALE-THREAD-125-500",
+    "position": 25,
+    "hoseInch": null,
+    "portLabel": "Storz 125",
+    "port2Label": "5\" male thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-X-MALE-THREAD-150-600",
+    "position": 26,
+    "hoseInch": null,
+    "portLabel": "Storz 150",
+    "port2Label": "6\" male thread"
+   }
+  ],
+  "tableHtml": "<!-- sunpool-sizes:start --><h3>Sunpool sizes</h3><p>Each Storz size is made with the male thread sizes below, in NPT, BSP or NST. Sunpool makes this adapter in cast aluminium 1\"–6\"; forged aluminium 1\"–6\"; brass or gunmetal 1-1/2\"–4\". The size table lists every combination under its own Indus part number.</p><div class=\"ih-table-scroll\"><table><thead><tr><th>Storz size</th><th>Lug distance (mm)</th><th>Male thread sizes</th></tr></thead><tbody><tr><td>25D</td><td>31</td><td>1/2\", 3/4\", 1\", 1-1/4\"</td></tr><tr><td>38</td><td>—</td><td>1\", 1-1/4\", 1-1/2\", 2\"</td></tr><tr><td>52C</td><td>66</td><td>1\", 1-1/4\", 1-1/2\", 2\", 2-1/2\"</td></tr><tr><td>65</td><td>81</td><td>1\", 1-1/4\", 1-1/2\", 2\", 2-1/2\", 3\"</td></tr><tr><td>75B</td><td>89</td><td>2\", 2-1/2\", 3\"</td></tr><tr><td>110A</td><td>133</td><td>3\", 4\", 5\"</td></tr><tr><td>125</td><td>148</td><td>5\"</td></tr><tr><td>150</td><td>160</td><td>6\"</td></tr></tbody></table></div><p class=\"source-note\">Sizes and dimensions from Sunpool’s catalogue page for this part, checked 7 October 2026.</p><!-- sunpool-sizes:end -->",
+  "sizeRange": "Cast and forged aluminium 1\"–6\"; brass and gunmetal 1-1/2\"–4\"",
+  "edits": [
+   {
+    "find": "Sizes Storz 25–150 (1-1/2\"–6\"). ",
+    "replace": ""
+   }
+  ],
+  "specs": [],
+  "alignToSpecs": true,
+  "source": "https://sunpool.com.tw/catalog/ins.php?index_id=269&index_m1_id=3&index_m2_id=9"
+ },
+ "IH-STZ-STORZ-ADAPTER-X-SWIVEL-FEMALE-THREAD": {
+  "variants": [
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-X-SWIVEL-FEMALE-THREAD-400-400",
+    "position": 0,
+    "hoseInch": null,
+    "portLabel": "4\" Storz",
+    "port2Label": "4\" female swivel thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-X-SWIVEL-FEMALE-THREAD-400-450",
+    "position": 1,
+    "hoseInch": null,
+    "portLabel": "4\" Storz",
+    "port2Label": "4-1/2\" female swivel thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-X-SWIVEL-FEMALE-THREAD-400-500",
+    "position": 2,
+    "hoseInch": null,
+    "portLabel": "4\" Storz",
+    "port2Label": "5\" female swivel thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-X-SWIVEL-FEMALE-THREAD-500-400",
+    "position": 3,
+    "hoseInch": null,
+    "portLabel": "5\" Storz",
+    "port2Label": "4\" female swivel thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-X-SWIVEL-FEMALE-THREAD-500-450",
+    "position": 4,
+    "hoseInch": null,
+    "portLabel": "5\" Storz",
+    "port2Label": "4-1/2\" female swivel thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-X-SWIVEL-FEMALE-THREAD-500-500",
+    "position": 5,
+    "hoseInch": null,
+    "portLabel": "5\" Storz",
+    "port2Label": "5\" female swivel thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-X-SWIVEL-FEMALE-THREAD-600-400",
+    "position": 6,
+    "hoseInch": null,
+    "portLabel": "6\" Storz",
+    "port2Label": "4\" female swivel thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-X-SWIVEL-FEMALE-THREAD-600-500",
+    "position": 7,
+    "hoseInch": null,
+    "portLabel": "6\" Storz",
+    "port2Label": "5\" female swivel thread"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-ADAPTER-X-SWIVEL-FEMALE-THREAD-600-600",
+    "position": 8,
+    "hoseInch": null,
+    "portLabel": "6\" Storz",
+    "port2Label": "6\" female swivel thread"
+   }
+  ],
+  "tableHtml": "<!-- sunpool-sizes:start --><h3>Sunpool sizes</h3><p>Sunpool lists this part in the combinations below.</p><div class=\"ih-table-scroll\"><table><thead><tr><th>Storz end</th><th>Other end</th></tr></thead><tbody><tr><td>4\" Storz</td><td>4\" female swivel thread</td></tr><tr><td>4\" Storz</td><td>4-1/2\" female swivel thread</td></tr><tr><td>4\" Storz</td><td>5\" female swivel thread</td></tr><tr><td>5\" Storz</td><td>4\" female swivel thread</td></tr><tr><td>5\" Storz</td><td>4-1/2\" female swivel thread</td></tr><tr><td>5\" Storz</td><td>5\" female swivel thread</td></tr><tr><td>6\" Storz</td><td>4\" female swivel thread</td></tr><tr><td>6\" Storz</td><td>5\" female swivel thread</td></tr><tr><td>6\" Storz</td><td>6\" female swivel thread</td></tr></tbody></table></div><p class=\"source-note\">Sizes from Sunpool’s catalogue page for this part, checked 7 October 2026.</p><!-- sunpool-sizes:end -->",
+  "sizeRange": "4\", 5\" and 6\" Storz × 4\"–6\" female thread",
+  "edits": [
+   {
+    "find": "Sizes Storz 25–150 (1-1/2\"–6\"). ",
+    "replace": ""
+   }
+  ],
+  "specs": [],
+  "alignToSpecs": true,
+  "source": "https://sunpool.com.tw/catalog/ins.php?index_id=526&index_m1_id=3&index_m2_id=9"
+ },
+ "IH-STZ-STORZ-COUPLING-LONG-SHANK": {
+  "variants": [
+   {
+    "partNumber": "IH-STZ-STORZ-COUPLING-LONG-SHANK-25",
+    "position": 0,
+    "hoseInch": "1\" (Storz 25D)",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-COUPLING-LONG-SHANK-32",
+    "position": 1,
+    "hoseInch": "1-1/4\" (Storz 32)",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-COUPLING-LONG-SHANK-38",
+    "position": 2,
+    "hoseInch": "1-1/2\" (Storz 38)",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-COUPLING-LONG-SHANK-52",
+    "position": 3,
+    "hoseInch": "2\" (Storz 52C)",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-COUPLING-LONG-SHANK-65",
+    "position": 4,
+    "hoseInch": "2-1/2\" (Storz 65)",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-COUPLING-LONG-SHANK-75",
+    "position": 5,
+    "hoseInch": "3\" (Storz 75B)",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-COUPLING-LONG-SHANK-100",
+    "position": 6,
+    "hoseInch": "4\" (Storz 100)",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-COUPLING-LONG-SHANK-110",
+    "position": 7,
+    "hoseInch": "Storz 110A",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-COUPLING-LONG-SHANK-125",
+    "position": 8,
+    "hoseInch": "5\" (Storz 125)",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-COUPLING-LONG-SHANK-150",
+    "position": 9,
+    "hoseInch": "6\" (Storz 150)",
+    "portLabel": null,
+    "port2Label": null
+   }
+  ],
+  "tableHtml": "<!-- sunpool-sizes:start --><h3>Sunpool sizes</h3><p>Sunpool makes this coupling in cast aluminium 1\"–6\" and forged aluminium 2\"–6\". A Storz size is identified by its lug distance, the measurement across the two lugs, which is what tells sizes with the same hose bore apart. Order by the Indus part number in the size table or by the Sunpool part number for the material you need.</p><div class=\"ih-table-scroll\"><table><thead><tr><th>Hose size</th><th>Storz size</th><th>Lug distance (mm)</th><th>Sunpool part no., Cast aluminium</th><th>Sunpool part no., Forged aluminium</th></tr></thead><tbody><tr><td>1\"</td><td>25D</td><td>31</td><td>SZ-AL-25-L</td><td>—</td></tr><tr><td>1-1/4\"</td><td>32</td><td>44</td><td>SZ-AL-32-L</td><td>—</td></tr><tr><td>1-1/2\"</td><td>38</td><td>—</td><td>SZ-AL-40-L</td><td>—</td></tr><tr><td>2\"</td><td>52C</td><td>66</td><td>SZ-AL-50-L</td><td>SZ-AF-50-L</td></tr><tr><td>2-1/2\"</td><td>65</td><td>81</td><td>SZ-AL-65-L</td><td>SZ-AF-65-L</td></tr><tr><td>3\"</td><td>75B</td><td>89</td><td>SZ-AL-75-L</td><td>SZ-AF-75-L</td></tr><tr><td>4\"</td><td>100</td><td>115</td><td>SZ-AL-100-L</td><td>SZ-AF-100-L</td></tr><tr><td>—</td><td>110A</td><td>133</td><td>SZ-AL-110-L</td><td>SZ-AF-110-L</td></tr><tr><td>5\"</td><td>125</td><td>148</td><td>SZ-AL-125-L</td><td>SZ-AF-125-L</td></tr><tr><td>6\"</td><td>150</td><td>160</td><td>SZ-AL-150-L</td><td>SZ-AF-150-L</td></tr></tbody></table></div><p class=\"source-note\">Sizes, dimensions and part numbers from Sunpool’s catalogue page for this part and its Storz part-number list, checked 7 October 2026.</p><!-- sunpool-sizes:end -->",
+  "sizeRange": "Cast aluminium 1\"–6\"; forged aluminium 2\"–6\"",
+  "edits": [
+   {
+    "find": "Sizes Storz 25–150 (1-1/2\"–6\"). ",
+    "replace": ""
+   }
+  ],
+  "specs": [],
+  "alignToSpecs": true,
+  "source": "https://sunpool.com.tw/catalog/ins.php?index_id=271&index_m1_id=3&index_m2_id=9"
+ },
+ "IH-STZ-STORZ-COUPLING-LONG-SHANK-2": {
+  "variants": [
+   {
+    "partNumber": "IH-STZ-STORZ-COUPLING-LONG-SHANK-2-38",
+    "position": 0,
+    "hoseInch": "1-1/2\" (Storz 38)",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-COUPLING-LONG-SHANK-2-52",
+    "position": 1,
+    "hoseInch": "2\" (Storz 52C)",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-COUPLING-LONG-SHANK-2-65",
+    "position": 2,
+    "hoseInch": "2-1/2\" (Storz 65)",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-COUPLING-LONG-SHANK-2-75",
+    "position": 3,
+    "hoseInch": "3\" (Storz 75B)",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-COUPLING-LONG-SHANK-2-100",
+    "position": 4,
+    "hoseInch": "4\" (Storz 100)",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-COUPLING-LONG-SHANK-2-110",
+    "position": 5,
+    "hoseInch": "Storz 110A",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-COUPLING-LONG-SHANK-2-125",
+    "position": 6,
+    "hoseInch": "5\" (Storz 125)",
+    "portLabel": null,
+    "port2Label": null
+   }
+  ],
+  "tableHtml": "<!-- sunpool-sizes:start --><h3>Sunpool sizes</h3><p>Sunpool makes this coupling in brass 1-1/2\"–5\". A Storz size is identified by its lug distance, the measurement across the two lugs, which is what tells sizes with the same hose bore apart. Order by the Indus part number in the size table or by the Sunpool part number for the material you need.</p><div class=\"ih-table-scroll\"><table><thead><tr><th>Hose size</th><th>Storz size</th><th>Lug distance (mm)</th><th>Sunpool part no., Brass</th></tr></thead><tbody><tr><td>1-1/2\"</td><td>38</td><td>—</td><td>SZ-BR-40-L</td></tr><tr><td>2\"</td><td>52C</td><td>66</td><td>SZ-BR-50-L</td></tr><tr><td>2-1/2\"</td><td>65</td><td>81</td><td>SZ-BR-65-L</td></tr><tr><td>3\"</td><td>75B</td><td>89</td><td>SZ-BR-75-L</td></tr><tr><td>4\"</td><td>100</td><td>115</td><td>SZ-BR-100-L</td></tr><tr><td>—</td><td>110A</td><td>133</td><td>SZ-BR-110-L</td></tr><tr><td>5\"</td><td>125</td><td>148</td><td>SZ-BR-125-L</td></tr></tbody></table></div><p class=\"source-note\">Sizes, dimensions and part numbers from Sunpool’s catalogue page for this part and its Storz part-number list, checked 7 October 2026.</p><!-- sunpool-sizes:end -->",
+  "sizeRange": "1-1/2\"–5\"",
+  "edits": [
+   {
+    "find": "Sizes Storz 25–150 (1-1/2\"–6\"). ",
+    "replace": ""
+   }
+  ],
+  "specs": [],
+  "alignToSpecs": true,
+  "source": "https://sunpool.com.tw/catalog/ins.php?index_id=628&index_m1_id=3&index_m2_id=9"
+ },
+ "IH-STZ-STORZ-COUPLING-LONG-SHANK-3": {
+  "variants": [
+   {
+    "partNumber": "IH-STZ-STORZ-COUPLING-LONG-SHANK-3-38",
+    "position": 0,
+    "hoseInch": "1-1/2\" (Storz 38)",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-COUPLING-LONG-SHANK-3-52",
+    "position": 1,
+    "hoseInch": "2\" (Storz 52C)",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-COUPLING-LONG-SHANK-3-65",
+    "position": 2,
+    "hoseInch": "2-1/2\" (Storz 65)",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-COUPLING-LONG-SHANK-3-75",
+    "position": 3,
+    "hoseInch": "3\" (Storz 75B)",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-COUPLING-LONG-SHANK-3-100",
+    "position": 4,
+    "hoseInch": "4\" (Storz 100)",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-COUPLING-LONG-SHANK-3-110",
+    "position": 5,
+    "hoseInch": "Storz 110A",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-COUPLING-LONG-SHANK-3-125",
+    "position": 6,
+    "hoseInch": "5\" (Storz 125)",
+    "portLabel": null,
+    "port2Label": null
+   }
+  ],
+  "tableHtml": "<!-- sunpool-sizes:start --><h3>Sunpool sizes</h3><p>Sunpool makes this coupling in 304 or 316 stainless steel, 1-1/2\"–5\"; its part-number list gives the 316 version. A Storz size is identified by its lug distance, the measurement across the two lugs, which is what tells sizes with the same hose bore apart. Order by the Indus part number in the size table or by the Sunpool part number for the material you need.</p><div class=\"ih-table-scroll\"><table><thead><tr><th>Hose size</th><th>Storz size</th><th>Lug distance (mm)</th><th>Sunpool part no., 316 stainless steel</th></tr></thead><tbody><tr><td>1-1/2\"</td><td>38</td><td>—</td><td>SZ-S6-40-L</td></tr><tr><td>2\"</td><td>52C</td><td>66</td><td>SZ-S6-50-L</td></tr><tr><td>2-1/2\"</td><td>65</td><td>81</td><td>SZ-S6-65-L</td></tr><tr><td>3\"</td><td>75B</td><td>89</td><td>SZ-S6-75-L</td></tr><tr><td>4\"</td><td>100</td><td>115</td><td>SZ-S6-100-L</td></tr><tr><td>—</td><td>110A</td><td>133</td><td>SZ-S6-110-L</td></tr><tr><td>5\"</td><td>125</td><td>148</td><td>SZ-S6-125-L</td></tr></tbody></table></div><p class=\"source-note\">Sizes, dimensions and part numbers from Sunpool’s catalogue page for this part and its Storz part-number list, checked 7 October 2026.</p><!-- sunpool-sizes:end -->",
+  "sizeRange": "1-1/2\"–5\"",
+  "edits": [
+   {
+    "find": "Sizes Storz 25–150 (1-1/2\"–6\"). ",
+    "replace": ""
+   }
+  ],
+  "specs": [],
+  "alignToSpecs": true,
+  "source": "https://sunpool.com.tw/catalog/ins.php?index_id=629&index_m1_id=3&index_m2_id=9"
+ },
+ "IH-STZ-STORZ-COUPLING-WITH-SAFETY-LATCH": {
+  "variants": [
+   {
+    "partNumber": "IH-STZ-STORZ-COUPLING-WITH-SAFETY-LATCH-100",
+    "position": 0,
+    "hoseInch": "4\" (Storz 100)",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-COUPLING-WITH-SAFETY-LATCH-125",
+    "position": 1,
+    "hoseInch": "5\" (Storz 125)",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-COUPLING-WITH-SAFETY-LATCH-150",
+    "position": 2,
+    "hoseInch": "6\" (Storz 150)",
+    "portLabel": null,
+    "port2Label": null
+   }
+  ],
+  "tableHtml": "<!-- sunpool-sizes:start --><h3>Sunpool sizes</h3><p>Sunpool makes this part in three Storz sizes, identified by the lug distance across the two lugs. Order by the Indus part number in the size table or by the Sunpool part number.</p><div class=\"ih-table-scroll\"><table><thead><tr><th>Size</th><th>Storz size</th><th>Lug distance (mm)</th><th>Sunpool part no.</th></tr></thead><tbody><tr><td>4\"</td><td>100</td><td>115</td><td>SZ-AF-100SAFT</td></tr><tr><td>5\"</td><td>125</td><td>148</td><td>SZ-AF-125SAFT</td></tr><tr><td>6\"</td><td>150</td><td>160</td><td>SZ-AF-150SAFT</td></tr></tbody></table></div><p class=\"source-note\">Sizes, dimensions and part numbers from Sunpool’s catalogue page for this part and its Storz part-number list, checked 7 October 2026.</p><!-- sunpool-sizes:end -->",
+  "sizeRange": "4\", 5\" and 6\"",
+  "edits": [
+   {
+    "find": "Sizes Storz 25–150 (1-1/2\"–6\"). ",
+    "replace": ""
+   }
+  ],
+  "specs": [],
+  "alignToSpecs": true,
+  "source": "https://sunpool.com.tw/catalog/ins.php?index_id=275&index_m1_id=3&index_m2_id=9"
+ },
+ "IH-STZ-STORZ-FDC-UL-LISTED-H-ANODIZED": {
+  "variants": [
+   {
+    "partNumber": "IH-STZ-STORZ-FDC-UL-LISTED-H-ANODIZED-400-400-NPT",
+    "position": 0,
+    "hoseInch": null,
+    "portLabel": "4\" Storz",
+    "port2Label": "4\" female NPT"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-FDC-UL-LISTED-H-ANODIZED-400-400-BSP",
+    "position": 1,
+    "hoseInch": null,
+    "portLabel": "4\" Storz",
+    "port2Label": "4\" female BSP"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-FDC-UL-LISTED-H-ANODIZED-500-400-NPT",
+    "position": 2,
+    "hoseInch": null,
+    "portLabel": "5\" Storz",
+    "port2Label": "4\" female NPT"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-FDC-UL-LISTED-H-ANODIZED-500-400-BSP",
+    "position": 3,
+    "hoseInch": null,
+    "portLabel": "5\" Storz",
+    "port2Label": "4\" female BSP"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-FDC-UL-LISTED-H-ANODIZED-500-500-BSP",
+    "position": 4,
+    "hoseInch": null,
+    "portLabel": "5\" Storz",
+    "port2Label": "5\" female BSP"
+   }
+  ],
+  "tableHtml": "<!-- sunpool-sizes:start --><h3>Sunpool sizes</h3><p>Sunpool lists this part in the combinations below.</p><div class=\"ih-table-scroll\"><table><thead><tr><th>Storz end</th><th>Other end</th><th>Lug distance of the Storz end (mm)</th></tr></thead><tbody><tr><td>4\" Storz</td><td>4\" female NPT</td><td>115</td></tr><tr><td>4\" Storz</td><td>4\" female BSP</td><td>115</td></tr><tr><td>5\" Storz</td><td>4\" female NPT</td><td>148</td></tr><tr><td>5\" Storz</td><td>4\" female BSP</td><td>148</td></tr><tr><td>5\" Storz</td><td>5\" female BSP</td><td>148</td></tr></tbody></table></div><p class=\"source-note\">Sizes and dimensions from Sunpool’s catalogue page for this part, checked 7 October 2026.</p><!-- sunpool-sizes:end -->",
+  "sizeRange": "4\" or 5\" Storz × 4\" female NPT or BSP; 5\" Storz × 5\" female BSP",
+  "edits": [
+   {
+    "find": "Sizes Storz 25–150 (1-1/2\"–6\"). ",
+    "replace": ""
+   }
+  ],
+  "specs": [],
+  "alignToSpecs": true,
+  "source": "https://www.sunpool.com.tw/catalog/ins.php?index_id=614&index_m1_id=1&index_m2_id=31"
+ },
+ "IH-STZ-STORZ-FDC-UL-LISTED-PAINTED": {
+  "variants": [
+   {
+    "partNumber": "IH-STZ-STORZ-FDC-UL-LISTED-PAINTED-400-400-NPT",
+    "position": 0,
+    "hoseInch": null,
+    "portLabel": "4\" Storz",
+    "port2Label": "4\" female NPT"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-FDC-UL-LISTED-PAINTED-400-400-BSP",
+    "position": 1,
+    "hoseInch": null,
+    "portLabel": "4\" Storz",
+    "port2Label": "4\" female BSP"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-FDC-UL-LISTED-PAINTED-500-400-NPT",
+    "position": 2,
+    "hoseInch": null,
+    "portLabel": "5\" Storz",
+    "port2Label": "4\" female NPT"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-FDC-UL-LISTED-PAINTED-500-400-BSP",
+    "position": 3,
+    "hoseInch": null,
+    "portLabel": "5\" Storz",
+    "port2Label": "4\" female BSP"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-FDC-UL-LISTED-PAINTED-500-500-BSP",
+    "position": 4,
+    "hoseInch": null,
+    "portLabel": "5\" Storz",
+    "port2Label": "5\" female BSP"
+   }
+  ],
+  "tableHtml": "<!-- sunpool-sizes:start --><h3>Sunpool sizes</h3><p>Sunpool lists this part in the combinations below.</p><div class=\"ih-table-scroll\"><table><thead><tr><th>Storz end</th><th>Other end</th><th>Lug distance of the Storz end (mm)</th></tr></thead><tbody><tr><td>4\" Storz</td><td>4\" female NPT</td><td>115</td></tr><tr><td>4\" Storz</td><td>4\" female BSP</td><td>115</td></tr><tr><td>5\" Storz</td><td>4\" female NPT</td><td>148</td></tr><tr><td>5\" Storz</td><td>4\" female BSP</td><td>148</td></tr><tr><td>5\" Storz</td><td>5\" female BSP</td><td>148</td></tr></tbody></table></div><p class=\"source-note\">Sizes and dimensions from Sunpool’s catalogue page for this part, checked 7 October 2026.</p><!-- sunpool-sizes:end -->",
+  "sizeRange": "4\" or 5\" Storz × 4\" female NPT or BSP; 5\" Storz × 5\" female BSP",
+  "edits": [
+   {
+    "find": "Sizes Storz 25–150 (1-1/2\"–6\"). ",
+    "replace": ""
+   }
+  ],
+  "specs": [],
+  "alignToSpecs": true,
+  "source": "https://www.sunpool.com.tw/catalog/ins.php?index_id=612&index_m1_id=1&index_m2_id=31"
+ },
+ "IH-STZ-STORZ-FIRE-DEPARTMENT-CONNECTION-30-ELBO": {
+  "variants": [
+   {
+    "partNumber": "IH-STZ-STORZ-FIRE-DEPARTMENT-CONNECTION-30-ELBO-400-400-NPT",
+    "position": 0,
+    "hoseInch": null,
+    "portLabel": "4\" Storz",
+    "port2Label": "4\" female NPT"
+   },
+   {
+    "partNumber": "IH-STZ-STORZ-FIRE-DEPARTMENT-CONNECTION-30-ELBO-500-400-NPT",
+    "position": 1,
+    "hoseInch": null,
+    "portLabel": "5\" Storz",
+    "port2Label": "4\" female NPT"
+   }
+  ],
+  "tableHtml": "<!-- sunpool-sizes:start --><h3>Sunpool sizes</h3><p>Sunpool lists this part in the combinations below.</p><div class=\"ih-table-scroll\"><table><thead><tr><th>Storz end</th><th>Other end</th></tr></thead><tbody><tr><td>4\" Storz</td><td>4\" female NPT</td></tr><tr><td>5\" Storz</td><td>4\" female NPT</td></tr></tbody></table></div><p class=\"source-note\">Sizes from Sunpool’s catalogue page for this part, checked 7 October 2026.</p><!-- sunpool-sizes:end -->",
+  "sizeRange": "4\" or 5\" Storz × 4\" female NPT",
+  "edits": [
+   {
+    "find": "Sizes Storz 25–150 (1-1/2\"–6\"). ",
+    "replace": ""
+   }
+  ],
+  "specs": [],
+  "alignToSpecs": true,
+  "source": "https://www.sunpool.com.tw/catalog/ins.php?index_id=360&index_m1_id=1&index_m2_id=31"
+ },
+ "IH-STZ-STORZ-PRESSURE-GASKET-BLACK": {
+  "variants": [],
+  "tableHtml": null,
+  "sizeRange": "1\"–12\"",
+  "edits": [
+   {
+    "find": "Sizes Storz 25–150 (1-1/2\"–6\"). ",
+    "replace": ""
+   }
+  ],
+  "specs": [],
+  "alignToSpecs": true,
+  "source": "https://sunpool.com.tw/catalog/ins.php?index_id=505&index_m1_id=3&index_m2_id=9"
+ },
+ "IH-STZ-STORZ-SUCTION-GASKET-GRAY": {
+  "variants": [],
+  "tableHtml": null,
+  "sizeRange": "1\"–12\"",
+  "edits": [
+   {
+    "find": "Sizes Storz 25–150 (1-1/2\"–6\"). ",
+    "replace": ""
+   }
+  ],
+  "specs": [],
+  "alignToSpecs": true,
+  "source": "https://sunpool.com.tw/catalog/ins.php?index_id=506&index_m1_id=3&index_m2_id=9"
+ },
+ "IH-UAC-AU-FEMALE": {
+  "variants": [
+   {
+    "partNumber": "IH-UAC-AU-FEMALE-025",
+    "position": 0,
+    "hoseInch": "1/4\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-UAC-AU-FEMALE-038",
+    "position": 1,
+    "hoseInch": "3/8\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-UAC-AU-FEMALE-050",
+    "position": 2,
+    "hoseInch": "1/2\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-UAC-AU-FEMALE-100",
+    "position": 3,
+    "hoseInch": "1\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-UAC-AU-FEMALE-125",
+    "position": 4,
+    "hoseInch": "1-1/4\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-UAC-AU-FEMALE-150",
+    "position": 5,
+    "hoseInch": "1-1/2\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-UAC-AU-FEMALE-200",
+    "position": 6,
+    "hoseInch": "2\"",
+    "portLabel": null,
+    "port2Label": null
+   }
+  ],
+  "tableHtml": "<!-- sunpool-sizes:start --><h3>Sunpool sizes</h3><p>Sunpool part numbers are for carbon steel with a yellow zinc finish. They end -T for BSPT; Sunpool changes the ending to -N for NPT or -P for BSP. For 316 stainless steel, Sunpool replaces CS with S6.</p><div class=\"ih-table-scroll\"><table><thead><tr><th>Size</th><th>Lugs</th><th>Sunpool part no., carbon steel</th></tr></thead><tbody><tr><td>1/4\"</td><td>2</td><td>AUC-CS-F025-T</td></tr><tr><td>3/8\"</td><td>2</td><td>AUC-CS-F037-T</td></tr><tr><td>1/2\"</td><td>2</td><td>AUC-CS-F050-T</td></tr><tr><td>1\"</td><td>2</td><td>AUC-CS-F100-T</td></tr><tr><td>1-1/4\"</td><td>4</td><td>AUC-CS-F125-T</td></tr><tr><td>1-1/2\"</td><td>4</td><td>AUC-CS-F150-T</td></tr><tr><td>2\"</td><td>4</td><td>AUC-CS-F200-T</td></tr></tbody></table></div><p class=\"source-note\">Sizes and part numbers from Sunpool’s catalogue page for this part and its universal coupling part-number list, checked 7 October 2026.</p><!-- sunpool-sizes:end -->",
+  "sizeRange": null,
+  "edits": [],
+  "specs": [],
+  "alignToSpecs": false,
+  "source": "https://sunpool.com.tw/catalog/ins.php?index_id=62&index_m1_id=3&index_m2_id=19"
+ },
+ "IH-UAC-AU-HOSE": {
+  "variants": [
+   {
+    "partNumber": "IH-UAC-AU-HOSE-025",
+    "position": 0,
+    "hoseInch": "1/4\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-UAC-AU-HOSE-038",
+    "position": 1,
+    "hoseInch": "3/8\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-UAC-AU-HOSE-050",
+    "position": 2,
+    "hoseInch": "1/2\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-UAC-AU-HOSE-100",
+    "position": 3,
+    "hoseInch": "1\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-UAC-AU-HOSE-125",
+    "position": 4,
+    "hoseInch": "1-1/4\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-UAC-AU-HOSE-150",
+    "position": 5,
+    "hoseInch": "1-1/2\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-UAC-AU-HOSE-200",
+    "position": 6,
+    "hoseInch": "2\"",
+    "portLabel": null,
+    "port2Label": null
+   }
+  ],
+  "tableHtml": "<!-- sunpool-sizes:start --><h3>Sunpool sizes</h3><p>Sunpool part numbers are for carbon steel with a yellow zinc finish. For 316 stainless steel, Sunpool replaces CS with S6.</p><div class=\"ih-table-scroll\"><table><thead><tr><th>Size</th><th>Lugs</th><th>Sunpool part no., carbon steel</th></tr></thead><tbody><tr><td>1/4\"</td><td>2</td><td>AUC-CS-H025</td></tr><tr><td>3/8\"</td><td>2</td><td>AUC-CS-H037</td></tr><tr><td>1/2\"</td><td>2</td><td>AUC-CS-H050</td></tr><tr><td>1\"</td><td>2</td><td>AUC-CS-H100</td></tr><tr><td>1-1/4\"</td><td>4</td><td>AUC-CS-H125</td></tr><tr><td>1-1/2\"</td><td>4</td><td>AUC-CS-H150</td></tr><tr><td>2\"</td><td>4</td><td>AUC-CS-H200</td></tr></tbody></table></div><p class=\"source-note\">Sizes and part numbers from Sunpool’s catalogue page for this part and its universal coupling part-number list, checked 7 October 2026.</p><!-- sunpool-sizes:end -->",
+  "sizeRange": null,
+  "edits": [],
+  "specs": [],
+  "alignToSpecs": false,
+  "source": "https://sunpool.com.tw/catalog/ins.php?index_id=61&index_m1_id=3&index_m2_id=19"
+ },
+ "IH-UAC-AU-MALE": {
+  "variants": [
+   {
+    "partNumber": "IH-UAC-AU-MALE-025",
+    "position": 0,
+    "hoseInch": "1/4\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-UAC-AU-MALE-038",
+    "position": 1,
+    "hoseInch": "3/8\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-UAC-AU-MALE-050",
+    "position": 2,
+    "hoseInch": "1/2\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-UAC-AU-MALE-100",
+    "position": 3,
+    "hoseInch": "1\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-UAC-AU-MALE-125",
+    "position": 4,
+    "hoseInch": "1-1/4\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-UAC-AU-MALE-150",
+    "position": 5,
+    "hoseInch": "1-1/2\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-UAC-AU-MALE-200",
+    "position": 6,
+    "hoseInch": "2\"",
+    "portLabel": null,
+    "port2Label": null
+   }
+  ],
+  "tableHtml": "<!-- sunpool-sizes:start --><h3>Sunpool sizes</h3><p>Sunpool part numbers are for carbon steel with a yellow zinc finish. They end -T for BSPT; Sunpool changes the ending to -N for NPT or -P for BSP. For 316 stainless steel, Sunpool replaces CS with S6.</p><div class=\"ih-table-scroll\"><table><thead><tr><th>Size</th><th>Lugs</th><th>Sunpool part no., carbon steel</th></tr></thead><tbody><tr><td>1/4\"</td><td>2</td><td>AUC-CS-M025-T</td></tr><tr><td>3/8\"</td><td>2</td><td>AUC-CS-M037-T</td></tr><tr><td>1/2\"</td><td>2</td><td>AUC-CS-M050-T</td></tr><tr><td>1\"</td><td>2</td><td>AUC-CS-M100-T</td></tr><tr><td>1-1/4\"</td><td>4</td><td>AUC-CS-M125-T</td></tr><tr><td>1-1/2\"</td><td>4</td><td>AUC-CS-M150-T</td></tr><tr><td>2\"</td><td>4</td><td>AUC-CS-M200-T</td></tr></tbody></table></div><p class=\"source-note\">Sizes and part numbers from Sunpool’s catalogue page for this part and its universal coupling part-number list, checked 7 October 2026.</p><!-- sunpool-sizes:end -->",
+  "sizeRange": null,
+  "edits": [],
+  "specs": [],
+  "alignToSpecs": false,
+  "source": "https://sunpool.com.tw/catalog/ins.php?index_id=64&index_m1_id=3&index_m2_id=19"
+ },
+ "IH-UAC-EU-FEMALE": {
+  "variants": [
+   {
+    "partNumber": "IH-UAC-EU-FEMALE-025",
+    "position": 0,
+    "hoseInch": "1/4\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-UAC-EU-FEMALE-038",
+    "position": 1,
+    "hoseInch": "3/8\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-UAC-EU-FEMALE-050",
+    "position": 2,
+    "hoseInch": "1/2\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-UAC-EU-FEMALE-100",
+    "position": 3,
+    "hoseInch": "1\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-UAC-EU-FEMALE-125",
+    "position": 4,
+    "hoseInch": "1-1/4\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-UAC-EU-FEMALE-150",
+    "position": 5,
+    "hoseInch": "1-1/2\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-UAC-EU-FEMALE-200",
+    "position": 6,
+    "hoseInch": "2\"",
+    "portLabel": null,
+    "port2Label": null
+   }
+  ],
+  "tableHtml": "<!-- sunpool-sizes:start --><h3>Sunpool sizes</h3><p>Sunpool part numbers are for carbon steel with a yellow zinc finish. They end -T for BSPT; Sunpool changes the ending to -N for NPT or -P for BSP. For 316 stainless steel, Sunpool replaces CS with S6.</p><div class=\"ih-table-scroll\"><table><thead><tr><th>Size</th><th>Lugs</th><th>Sunpool part no., carbon steel</th></tr></thead><tbody><tr><td>1/4\"</td><td>2</td><td>EUC-CS-F025-T</td></tr><tr><td>3/8\"</td><td>2</td><td>EUC-CS-F037-T</td></tr><tr><td>1/2\"</td><td>2</td><td>EUC-CS-F050-T</td></tr><tr><td>1\"</td><td>2</td><td>EUC-CS-F100-T</td></tr><tr><td>1-1/4\"</td><td>2</td><td>EUC-CS-F125-T</td></tr><tr><td>1-1/2\"</td><td>2</td><td>EUC-CS-F150-T</td></tr><tr><td>2\"</td><td>2</td><td>EUC-CS-F200-T</td></tr></tbody></table></div><p class=\"source-note\">Sizes and part numbers from Sunpool’s catalogue page for this part and its universal coupling part-number list, checked 7 October 2026.</p><!-- sunpool-sizes:end -->",
+  "sizeRange": null,
+  "edits": [],
+  "specs": [],
+  "alignToSpecs": false,
+  "source": "https://sunpool.com.tw/catalog/ins.php?index_id=59&index_m1_id=3&index_m2_id=19"
+ },
+ "IH-UAC-EU-HOSE": {
+  "variants": [
+   {
+    "partNumber": "IH-UAC-EU-HOSE-038",
+    "position": 0,
+    "hoseInch": "3/8\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-UAC-EU-HOSE-050",
+    "position": 1,
+    "hoseInch": "1/2\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-UAC-EU-HOSE-100",
+    "position": 2,
+    "hoseInch": "1\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-UAC-EU-HOSE-125",
+    "position": 3,
+    "hoseInch": "1-1/4\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-UAC-EU-HOSE-150",
+    "position": 4,
+    "hoseInch": "1-1/2\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-UAC-EU-HOSE-200",
+    "position": 5,
+    "hoseInch": "2\"",
+    "portLabel": null,
+    "port2Label": null
+   }
+  ],
+  "tableHtml": "<!-- sunpool-sizes:start --><h3>Sunpool sizes</h3><p>Sunpool part numbers are for carbon steel with a yellow zinc finish. For 316 stainless steel, Sunpool replaces CS with S6.</p><div class=\"ih-table-scroll\"><table><thead><tr><th>Size</th><th>Lugs</th><th>Sunpool part no., carbon steel</th></tr></thead><tbody><tr><td>3/8\"</td><td>2</td><td>EUC-CS-H037</td></tr><tr><td>1/2\"</td><td>2</td><td>EUC-CS-H050</td></tr><tr><td>1\"</td><td>2</td><td>EUC-CS-H100</td></tr><tr><td>1-1/4\"</td><td>2</td><td>EUC-CS-H125</td></tr><tr><td>1-1/2\"</td><td>2</td><td>EUC-CS-H150</td></tr><tr><td>2\"</td><td>2</td><td>EUC-CS-H200</td></tr></tbody></table></div><p class=\"source-note\">Sizes and part numbers from Sunpool’s catalogue page for this part and its universal coupling part-number list, checked 7 October 2026.</p><!-- sunpool-sizes:end -->",
+  "sizeRange": null,
+  "edits": [],
+  "specs": [],
+  "alignToSpecs": false,
+  "source": "https://sunpool.com.tw/catalog/ins.php?index_id=60&index_m1_id=3&index_m2_id=19"
+ },
+ "IH-UAC-EU-MALE": {
+  "variants": [
+   {
+    "partNumber": "IH-UAC-EU-MALE-025",
+    "position": 0,
+    "hoseInch": "1/4\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-UAC-EU-MALE-038",
+    "position": 1,
+    "hoseInch": "3/8\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-UAC-EU-MALE-050",
+    "position": 2,
+    "hoseInch": "1/2\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-UAC-EU-MALE-100",
+    "position": 3,
+    "hoseInch": "1\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-UAC-EU-MALE-125",
+    "position": 4,
+    "hoseInch": "1-1/4\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-UAC-EU-MALE-150",
+    "position": 5,
+    "hoseInch": "1-1/2\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-UAC-EU-MALE-200",
+    "position": 6,
+    "hoseInch": "2\"",
+    "portLabel": null,
+    "port2Label": null
+   }
+  ],
+  "tableHtml": "<!-- sunpool-sizes:start --><h3>Sunpool sizes</h3><p>Sunpool part numbers are for carbon steel with a yellow zinc finish. They end -T for BSPT; Sunpool changes the ending to -N for NPT or -P for BSP. For 316 stainless steel, Sunpool replaces CS with S6.</p><div class=\"ih-table-scroll\"><table><thead><tr><th>Size</th><th>Lugs</th><th>Sunpool part no., carbon steel</th></tr></thead><tbody><tr><td>1/4\"</td><td>2</td><td>EUC-CS-M025-T</td></tr><tr><td>3/8\"</td><td>2</td><td>EUC-CS-M037-T</td></tr><tr><td>1/2\"</td><td>2</td><td>EUC-CS-M050-T</td></tr><tr><td>1\"</td><td>2</td><td>EUC-CS-M100-T</td></tr><tr><td>1-1/4\"</td><td>2</td><td>EUC-CS-M125-T</td></tr><tr><td>1-1/2\"</td><td>2</td><td>EUC-CS-M150-T</td></tr><tr><td>2\"</td><td>2</td><td>EUC-CS-M200-T</td></tr></tbody></table></div><p class=\"source-note\">Sizes and part numbers from Sunpool’s catalogue page for this part and its universal coupling part-number list, checked 7 October 2026.</p><!-- sunpool-sizes:end -->",
+  "sizeRange": null,
+  "edits": [],
+  "specs": [],
+  "alignToSpecs": false,
+  "source": "https://sunpool.com.tw/catalog/ins.php?index_id=58&index_m1_id=3&index_m2_id=19"
+ },
+ "IH-UAC-US-FEMALE": {
+  "variants": [
+   {
+    "partNumber": "IH-UAC-US-FEMALE-025",
+    "position": 0,
+    "hoseInch": "1/4\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-UAC-US-FEMALE-038",
+    "position": 1,
+    "hoseInch": "3/8\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-UAC-US-FEMALE-050",
+    "position": 2,
+    "hoseInch": "1/2\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-UAC-US-FEMALE-100",
+    "position": 3,
+    "hoseInch": "1\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-UAC-US-FEMALE-125",
+    "position": 4,
+    "hoseInch": "1-1/4\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-UAC-US-FEMALE-150",
+    "position": 5,
+    "hoseInch": "1-1/2\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-UAC-US-FEMALE-200",
+    "position": 6,
+    "hoseInch": "2\"",
+    "portLabel": null,
+    "port2Label": null
+   }
+  ],
+  "tableHtml": "<!-- sunpool-sizes:start --><h3>Sunpool sizes</h3><p>Sunpool part numbers are for carbon steel with a white zinc finish. They end -N for NPT; Sunpool changes the ending to -P for BSP or -T for BSPT. For 316 stainless steel, Sunpool replaces CS with S6.</p><div class=\"ih-table-scroll\"><table><thead><tr><th>Size</th><th>Lugs</th><th>Sunpool part no., carbon steel</th></tr></thead><tbody><tr><td>1/4\"</td><td>2</td><td>UC-CS-F025-N</td></tr><tr><td>3/8\"</td><td>2</td><td>UC-CS-F037-N</td></tr><tr><td>1/2\"</td><td>2</td><td>UC-CS-F050-N</td></tr><tr><td>1\"</td><td>2</td><td>UC-CS-F100-N</td></tr><tr><td>1-1/4\"</td><td>4</td><td>UC-CS-F125-N</td></tr><tr><td>1-1/2\"</td><td>4</td><td>UC-CS-F150-N</td></tr><tr><td>2\"</td><td>4</td><td>UC-CS-F200-N</td></tr></tbody></table></div><p class=\"source-note\">Sizes and part numbers from Sunpool’s catalogue page for this part and its universal coupling part-number list, checked 7 October 2026.</p><!-- sunpool-sizes:end -->",
+  "sizeRange": null,
+  "edits": [],
+  "specs": [],
+  "alignToSpecs": false,
+  "source": "https://sunpool.com.tw/catalog/ins.php?index_id=37&index_m1_id=3&index_m2_id=19"
+ },
+ "IH-UAC-US-HOSE": {
+  "variants": [
+   {
+    "partNumber": "IH-UAC-US-HOSE-025",
+    "position": 0,
+    "hoseInch": "1/4\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-UAC-US-HOSE-038",
+    "position": 1,
+    "hoseInch": "3/8\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-UAC-US-HOSE-050",
+    "position": 2,
+    "hoseInch": "1/2\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-UAC-US-HOSE-100",
+    "position": 3,
+    "hoseInch": "1\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-UAC-US-HOSE-125",
+    "position": 4,
+    "hoseInch": "1-1/4\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-UAC-US-HOSE-150",
+    "position": 5,
+    "hoseInch": "1-1/2\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-UAC-US-HOSE-200",
+    "position": 6,
+    "hoseInch": "2\"",
+    "portLabel": null,
+    "port2Label": null
+   }
+  ],
+  "tableHtml": "<!-- sunpool-sizes:start --><h3>Sunpool sizes</h3><p>Sunpool part numbers are for carbon steel with a white zinc finish. For 316 stainless steel, Sunpool replaces CS with S6.</p><div class=\"ih-table-scroll\"><table><thead><tr><th>Size</th><th>Lugs</th><th>Sunpool part no., carbon steel</th></tr></thead><tbody><tr><td>1/4\"</td><td>2</td><td>UC-CS-H025</td></tr><tr><td>3/8\"</td><td>2</td><td>UC-CS-H037</td></tr><tr><td>1/2\"</td><td>2</td><td>UC-CS-H050</td></tr><tr><td>1\"</td><td>2</td><td>UC-CS-H100</td></tr><tr><td>1-1/4\"</td><td>4</td><td>UC-CS-H125</td></tr><tr><td>1-1/2\"</td><td>4</td><td>UC-CS-H150</td></tr><tr><td>2\"</td><td>4</td><td>UC-CS-H200</td></tr></tbody></table></div><p class=\"source-note\">Sizes and part numbers from Sunpool’s catalogue page for this part and its universal coupling part-number list, checked 7 October 2026.</p><!-- sunpool-sizes:end -->",
+  "sizeRange": null,
+  "edits": [],
+  "specs": [],
+  "alignToSpecs": false,
+  "source": "https://sunpool.com.tw/catalog/ins.php?index_id=41&index_m1_id=3&index_m2_id=19"
+ },
+ "IH-UAC-US-MALE": {
+  "variants": [
+   {
+    "partNumber": "IH-UAC-US-MALE-025",
+    "position": 0,
+    "hoseInch": "1/4\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-UAC-US-MALE-038",
+    "position": 1,
+    "hoseInch": "3/8\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-UAC-US-MALE-050",
+    "position": 2,
+    "hoseInch": "1/2\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-UAC-US-MALE-100",
+    "position": 3,
+    "hoseInch": "1\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-UAC-US-MALE-125",
+    "position": 4,
+    "hoseInch": "1-1/4\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-UAC-US-MALE-150",
+    "position": 5,
+    "hoseInch": "1-1/2\"",
+    "portLabel": null,
+    "port2Label": null
+   },
+   {
+    "partNumber": "IH-UAC-US-MALE-200",
+    "position": 6,
+    "hoseInch": "2\"",
+    "portLabel": null,
+    "port2Label": null
+   }
+  ],
+  "tableHtml": "<!-- sunpool-sizes:start --><h3>Sunpool sizes</h3><p>Sunpool part numbers are for carbon steel with a white zinc finish. They end -N for NPT; Sunpool changes the ending to -P for BSP or -T for BSPT. For 316 stainless steel, Sunpool replaces CS with S6.</p><div class=\"ih-table-scroll\"><table><thead><tr><th>Size</th><th>Lugs</th><th>Sunpool part no., carbon steel</th></tr></thead><tbody><tr><td>1/4\"</td><td>2</td><td>UC-CS-M025-N</td></tr><tr><td>3/8\"</td><td>2</td><td>UC-CS-M037-N</td></tr><tr><td>1/2\"</td><td>2</td><td>UC-CS-M050-N</td></tr><tr><td>1\"</td><td>2</td><td>UC-CS-M100-N</td></tr><tr><td>1-1/4\"</td><td>4</td><td>UC-CS-M125-N</td></tr><tr><td>1-1/2\"</td><td>4</td><td>UC-CS-M150-N</td></tr><tr><td>2\"</td><td>4</td><td>UC-CS-M200-N</td></tr></tbody></table></div><p class=\"source-note\">Sizes and part numbers from Sunpool’s catalogue page for this part and its universal coupling part-number list, checked 7 October 2026.</p><!-- sunpool-sizes:end -->",
+  "sizeRange": null,
+  "edits": [],
+  "specs": [],
+  "alignToSpecs": false,
+  "source": "https://sunpool.com.tw/catalog/ins.php?index_id=39&index_m1_id=3&index_m2_id=19"
+ },
+ "IH-UAC-WHIP-HOSE-HOSE": {
+  "variants": [],
+  "tableHtml": "<!-- sunpool-sizes:start --><h3>Sunpool sizes</h3><p>Sunpool makes this whip check in the cable sizes and lengths below.</p><div class=\"ih-table-scroll\"><table><thead><tr><th>Cable diameter</th><th>Length</th><th>Sunpool part no., carbon steel</th><th>SS304</th></tr></thead><tbody><tr><td>1/8\"</td><td>20-1/4\"</td><td>SW-CS-1/8X20</td><td>SW-S4-1/8X20</td></tr><tr><td>1/8\"</td><td>12\"</td><td>SW-CS-1/8X12</td><td>SW-S4-1/8X12</td></tr><tr><td>3/16\"</td><td>28\"</td><td>SW-CS-3/16X28</td><td>SW-S4-3/16X28</td></tr><tr><td>1/4\"</td><td>36\"</td><td>SW-CS-1/4X36</td><td>SW-S4-1/4X36</td></tr><tr><td>1/4\"</td><td>38\"</td><td>SW-CS-1/4X38</td><td>SW-S4-1/4X38</td></tr><tr><td>3/8\"</td><td>44\"</td><td>SW-CS-3/8X44</td><td>SW-S4-3/8X44</td></tr></tbody></table></div><p class=\"source-note\">Sizes and part numbers from Sunpool’s catalogue page for this part and its universal coupling part-number list, checked 7 October 2026.</p><!-- sunpool-sizes:end -->",
+  "sizeRange": null,
+  "edits": [],
+  "specs": [],
+  "alignToSpecs": false,
+  "source": "https://sunpool.com.tw/catalog/ins.php?index_id=67&index_m1_id=3&index_m2_id=19"
+ },
+ "IH-UAC-WHIP-HOSE-TOOL": {
+  "variants": [],
+  "tableHtml": "<!-- sunpool-sizes:start --><h3>Sunpool sizes</h3><p>Sunpool makes this whip check in the cable sizes and lengths below.</p><div class=\"ih-table-scroll\"><table><thead><tr><th>Cable diameter</th><th>Length</th><th>Sunpool part no., carbon steel</th><th>SS304</th></tr></thead><tbody><tr><td>1/8\"</td><td>20-1/4\"</td><td>SW-CS-1/8X20HT</td><td>SW-S4-1/8X20HT</td></tr><tr><td>1/8\"</td><td>12\"</td><td>SW-CS-1/8X12HT</td><td>SW-S4-1/8X12HT</td></tr><tr><td>3/16\"</td><td>28\"</td><td>SW-CS-3/16X28HT</td><td>SW-S4-3/16X28HT</td></tr><tr><td>1/4\"</td><td>36\"</td><td>SW-CS-1/4X36HT</td><td>SW-S4-1/4X36HT</td></tr><tr><td>1/4\"</td><td>38\"</td><td>SW-CS-1/4X38HT</td><td>SW-S4-1/4X38HT</td></tr><tr><td>3/8\"</td><td>44\"</td><td>SW-CS-3/8X44HT</td><td>SW-S4-3/8X44HT</td></tr></tbody></table></div><p class=\"source-note\">Sizes and part numbers from Sunpool’s catalogue page for this part and its universal coupling part-number list, checked 7 October 2026.</p><!-- sunpool-sizes:end -->",
+  "sizeRange": null,
+  "edits": [],
+  "specs": [],
+  "alignToSpecs": false,
+  "source": "https://sunpool.com.tw/catalog/ins.php?index_id=66&index_m1_id=3&index_m2_id=19"
+ }
+}
