@@ -44,7 +44,7 @@ const ARTICLE: BlogArticleSeed = {
         { cells: ['API 16C', 'Choke and kill / well control lines', '10,000 psi WP / 15,000 psi MBP', '3" – 4"'], highlight: true },
         { cells: ['API Spec 16D', 'BOP control hose', '5,000 psi WP, fire-rated cover', '1/4" – 1"'] },
         { cells: ['API 17J (+ ISO 13628-2)', 'Subsea LMRP and conduit', '15,000 psi WP', '2" – 4"'] },
-        { cells: ['API 17J / Spec 7K', 'Riser tensioner and compensator', '5,000 psi WP / 12,500 psi MBP', '1" – 4"'] },
+        { cells: ['API Spec 7K', 'Riser tensioner and compensator', '5,000 psi WP / 12,500 psi MBP', '1" – 4"'] },
       ],
     },
     {

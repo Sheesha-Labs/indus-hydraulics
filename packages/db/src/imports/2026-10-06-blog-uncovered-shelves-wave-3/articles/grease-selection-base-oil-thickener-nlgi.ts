@@ -5,8 +5,9 @@ import type { BlogArticleSeed } from '../shared'
 /**
  * Grease selection, read from the 63 Molykote grease listings: base oil,
  * thickener, NLGI grade, base oil viscosity, dropping point and service
- * temperature. The G-006x FM listings give temperatures in °F only; they are
- * converted here, not quoted as °C from the listing.
+ * temperature. The G-006x FM listings gave temperatures in °F labelled °C;
+ * they are converted here, and the listings now give both (corrected by
+ * 2026-10-06-listing-data-fixes).
  */
 const ARTICLE: BlogArticleSeed = {
   slug: 'grease-selection-base-oil-thickener-nlgi',

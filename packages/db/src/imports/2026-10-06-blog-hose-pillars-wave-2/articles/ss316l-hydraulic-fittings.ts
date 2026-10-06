@@ -5,9 +5,9 @@ import type { BlogArticleSeed } from '../shared'
 /**
  * The 316L stainless fitting range, read from its ten sub-shelves. The decision
  * of whether to use stainless is `when-stainless-is-worth-it`; this is what is
- * in the range and how it differs in use. The metric listings cite ISO 6149-1
- * and DIN 3852-2, which are port standards rather than 24° cone hose-end
- * standards, so no standard is quoted for them.
+ * in the range and how it differs in use. The metric listings cited ISO 6149-1
+ * and DIN 3852-2, port standards rather than 24° cone ones, until the
+ * 2026-10-06 listing fixes; they now cite ISO 8434-1 / DIN 2353.
  */
 const ARTICLE: BlogArticleSeed = {
   slug: 'ss316l-hydraulic-fittings',
@@ -53,7 +53,7 @@ const ARTICLE: BlogArticleSeed = {
         { cells: ['BSP', 'Swivel female 60° cone (± O-ring), flat seat, male 60°, BSPT male; straight, 45°, 90°', 'G1/8 – G2', 'ISO 228-1, ISO 7-1'] },
         { cells: ['JIC 37°', 'Swivel female, male, male with O-ring; straight, 45°, 90° compact', '−04 to −32', 'SAE J514, ISO 8434-2'], highlight: true },
         { cells: ['ORFS', 'Swivel female, double-hex swivel, male; straight, 45°, 90°', '−04 to −16', 'SAE J1453, ISO 8434-3'] },
-        { cells: ['Metric 24° cone', 'Female swivel with O-ring, male stud; straight, 45°', 'M10×1 – M42×2', '—'] },
+        { cells: ['Metric 24° cone', 'Female swivel with O-ring, male stud; straight, 45°', 'M10×1 – M42×2', 'ISO 8434-1, DIN 2353'] },
         { cells: ['NPT / NPSM', 'NPT male; NPSM swivel female 60° cone, straight, 45°, 90°', '1/8" – 2"', 'ASME B1.20.1'] },
         { cells: ['SAE J518 flange fittings', 'Code 61 straight, 45°, 90°; Code 62 straight, 45°, 90°', '1/2" – 2"', 'SAE J518, ISO 6162'] },
         { cells: ['SAE flanges for hose', 'Flange, counter-flange, split flange, seal kits', '1/2" – 2"', 'SAE J518, ISO 6162'] },

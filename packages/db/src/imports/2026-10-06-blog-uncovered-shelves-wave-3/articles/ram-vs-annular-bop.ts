@@ -6,8 +6,9 @@ import type { BlogArticleSeed } from '../shared'
  * Ram and annular BOPs and their wear parts, read from the 5 annular, 11 ram,
  * 5 ram block and 13 spare-part listings: bore, pressure, cavities, ram type,
  * elastomer and temperature. OEM designs appear as the "style" the listings
- * name. The 13-5/8" 10K nipple-up kit lists a BX-160 ring, which is the
- * 13-5/8" 5K ring on our own ring listing; it is not embedded and is flagged.
+ * name. The 13-5/8" 10K nipple-up kit listed a BX-160 ring, the 13-5/8" 5K
+ * ring, so it is not embedded; corrected to BX-159 by
+ * 2026-10-06-listing-data-fixes.
  */
 const ARTICLE: BlogArticleSeed = {
   slug: 'ram-vs-annular-bop',

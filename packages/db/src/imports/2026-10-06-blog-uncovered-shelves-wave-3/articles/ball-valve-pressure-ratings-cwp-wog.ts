@@ -6,8 +6,9 @@ import type { BlogArticleSeed } from '../shared'
  * Ball valve ratings, read from the 11 oilfield, 10 industrial and 6
  * hydraulic ball valve listings: rating systems used (CWP, WOG, PN, ASME
  * class, union figure, API 6A), floating and trunnion designs, ends and body
- * materials. The 2" Figure 602 floating valve lists a 5K class against a
- * 6,000 psi working pressure, so it is not quoted.
+ * materials. The 2" Figure 602 floating valve listed a 5K class against a
+ * 6,000 psi working pressure, so it is not quoted; its class was corrected to
+ * 6K by 2026-10-06-listing-data-fixes.
  */
 const ARTICLE: BlogArticleSeed = {
   slug: 'ball-valve-pressure-ratings-cwp-wog',

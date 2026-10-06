@@ -62,11 +62,10 @@ export const POST_LINK_PLANS: Record<string, PostLinkPlan> = {
     ],
     categories: [ADAPTERS, HOSE_FITTINGS],
   },
+  // The "clamps" in this hydraulic order are not the industrial hose clamps
+  // that shelf holds; that link was removed by 2026-10-06-listing-data-fixes.
   'certificate-of-origin-gcc-duty': {
-    inline: [
-      { phrase: 'adapters', href: '/c/hydraulic-adapters' },
-      { phrase: 'clamps', href: '/c/hose-clamps-sleeves-ferrules' },
-    ],
+    inline: [{ phrase: 'adapters', href: '/c/hydraulic-adapters' }],
     categories: [HYDRAULIC_HOSE, INDUSTRIAL_HOSE],
   },
   'consolidating-fittings-with-a-hose-order': {

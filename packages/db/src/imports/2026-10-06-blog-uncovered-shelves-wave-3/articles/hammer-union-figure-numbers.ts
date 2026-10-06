@@ -5,9 +5,10 @@ import type { BlogArticleSeed } from '../shared'
 /**
  * Hammer union figures, read from the 21 standard-service and 9 sour-gas
  * listings: working and test pressure by size, seal arrangement, ends and
- * size range. The Figure 300 listing's slug and title disagree on pressure,
- * so it is left out of the table; the sour Figure 1003 test pressure equals
- * its working pressure on the listing and is not quoted.
+ * size range. The Figure 300 listing's slug and title disagreed on pressure,
+ * so it is left out of the table; the Figure 1003 test pressures belonged to
+ * another maker's rating and are not quoted. Both corrected on the listings
+ * by 2026-10-06-listing-data-fixes.
  */
 const ARTICLE: BlogArticleSeed = {
   slug: 'hammer-union-figure-numbers',

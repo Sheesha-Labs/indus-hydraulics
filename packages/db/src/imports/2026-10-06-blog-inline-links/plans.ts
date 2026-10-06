@@ -990,11 +990,11 @@ export const INLINE_PLANS: Record<string, InlinePlan> = {
       },
     ],
   },
+  // "clamps" on a hydraulic fittings order are tube clamps, which no shelf
+  // stocks; its link to the industrial clamp shelf was removed by
+  // 2026-10-06-listing-data-fixes.
   'material-test-certificate-en-10204': {
-    links: [
-      { phrase: 'ferrules', href: FERRULES },
-      { phrase: 'clamps', href: IND_CLAMPS },
-    ],
+    links: [{ phrase: 'ferrules', href: FERRULES }],
   },
   'nace-mr0175-hose-documentation': {
     links: [{ phrase: 'ferrule', href: FERRULES }],

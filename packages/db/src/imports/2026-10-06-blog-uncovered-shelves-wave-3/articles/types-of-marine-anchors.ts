@@ -5,8 +5,9 @@ import type { BlogArticleSeed } from '../shared'
 /**
  * Marine anchors, read from the 14 family listings and their variant rows:
  * anchor type, pattern, mass range, material and certification. The Danforth
- * family summary says 20 kg to 30 kg; its variant rows run from 1.5 kg to
- * 18,000 kg, and the article follows the rows. Holding-power ratios and class
+ * family summary said 20 kg to 30 kg; its variant rows run from 1.5 kg to
+ * 18,000 kg, and the article follows the rows (summary corrected by
+ * 2026-10-06-listing-data-fixes). Holding-power ratios and class
  * mass allowances are not on the listings and are not quoted.
  */
 const ARTICLE: BlogArticleSeed = {

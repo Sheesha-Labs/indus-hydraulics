@@ -6,8 +6,9 @@ import type { BlogArticleSeed } from '../shared'
  * Fibre rope materials, read from the 21 fibre rope and twine listings and
  * their variant rows: material, construction, size range and minimum
  * breaking loads on the ISO and MEG4 bases. Weights are not quoted because the
- * rows do not state their unit. Two rows carry obvious typos (nylon 85 mm's
- * inch size, double-braid PP 104 mm's breaking load) and are not used.
+ * rows do not state their unit. Two rows carried obvious typos (nylon 85 mm's
+ * inch size, double-braid PP 104 mm's breaking load) and are not used; both
+ * corrected by 2026-10-06-listing-data-fixes.
  */
 const ARTICLE: BlogArticleSeed = {
   slug: 'fibre-rope-materials-compared',

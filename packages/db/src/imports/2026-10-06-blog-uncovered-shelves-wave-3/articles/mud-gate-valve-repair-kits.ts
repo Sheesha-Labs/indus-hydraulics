@@ -5,9 +5,9 @@ import type { BlogArticleSeed } from '../shared'
 /**
  * Demco DM mud gate valve parts, from the 17 repair kit listings and the DM
  * family research done for them (seat designs, part number formats, kit
- * numbers, wear ring bores). The 2" gate listing says it fits both families;
- * the 1887 numbers it carries are DM 2000–5000 parts, so it is not embedded
- * here and is flagged for correction.
+ * numbers, wear ring bores). The 2" gate listing said its 1887 numbers fit
+ * both families; they are DM 2000–5000 parts, so it is not embedded here.
+ * Corrected by 2026-10-06-listing-data-fixes.
  */
 const ARTICLE: BlogArticleSeed = {
   slug: 'mud-gate-valve-repair-kits',

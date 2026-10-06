@@ -4,8 +4,9 @@ import type { BlogArticleSeed } from '../shared'
 
 /**
  * Tensioner and compensator hose, read from the three listings. The listings
- * give API 17J and API Spec 7K as cross-references; the article says
- * cross-reference and does not claim certification to either.
+ * give API Spec 7K as a cross-reference; the article says cross-reference and
+ * does not claim certification. They also cited API 17J — unbonded flexible
+ * pipe, not a bonded tensioner hose — until the 2026-10-06 listing fixes.
  */
 const ARTICLE: BlogArticleSeed = {
   slug: 'riser-tensioner-and-compensator-hose',
@@ -66,7 +67,7 @@ const ARTICLE: BlogArticleSeed = {
     },
     {
       type: 'paragraph',
-      html: 'All three are built with a hydraulic-fluid-compatible synthetic rubber liner and multiple plies of high-tensile steel cable, listed as heavy-cycle rated on the riser tensioner and drill string compensator hoses, with flanged couplings. The 2.5:1 ratio between working pressure and minimum burst on our listings is the same as on API 7K rotary hose, and our listings give API Spec 7K and API 17J as cross-references for the family.',
+      html: 'All three are built with a hydraulic-fluid-compatible synthetic rubber liner and multiple plies of high-tensile steel cable, listed as heavy-cycle rated on the riser tensioner and drill string compensator hoses, with flanged couplings. The 2.5:1 ratio between working pressure and minimum burst on our listings is the same as on API 7K rotary hose, and our listings give API Spec 7K as a cross-reference for the family.',
     },
 
     {
@@ -118,7 +119,7 @@ const ARTICLE: BlogArticleSeed = {
         {
           question: 'Which standards apply?',
           answer:
-            'Our listings give API Spec 7K and API 17J as cross-references for this family. Specify the standard and documents your rig requires with the order.',
+            'Our listings give API Spec 7K as a cross-reference for this family. Specify the standard and documents your rig requires with the order.',
         },
       ],
     },

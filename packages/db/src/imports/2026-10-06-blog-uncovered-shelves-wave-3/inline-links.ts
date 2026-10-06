@@ -76,7 +76,7 @@ export const WAVE_INLINE_LINKS: Record<string, InlineLink[]> = {
     { phrase: 'BX-169', href: p('bx-169-ring-joint-gasket') },
   ],
   'wellhead-components-explained': [
-    { phrase: '2-9/16" at 5,000 psi', href: p('christmas-tree-api-6bx-5k-conventional-standard-service') },
+    { phrase: '2-9/16" at 5,000 psi', href: p('christmas-tree-api-6b-5k-conventional-standard-service') },
     { phrase: '10,000 psi sour tree', href: p('christmas-tree-api-6bx-10k-conventional-sour-service') },
     { phrase: 'subsea tree', href: p('surface-test-tree-subsea-api-6bx-15k-standard-service') },
   ],

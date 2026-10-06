@@ -5,9 +5,10 @@ import type { BlogArticleSeed } from '../shared'
 /**
  * Wellhead stack and surface test trees, read from the 15 wellhead and 7 STT
  * listings: component type, pressure class, bore, valve count, actuation,
- * material class, PSL and PR. Some wellhead listings give 6BX flange and ring
- * designations that do not match API 6A at those sizes; the article quotes
- * none of them.
+ * material class, PSL and PR. Some wellhead listings gave 6BX flange and ring
+ * designations that did not match API 6A at those sizes, so the article quotes
+ * none of them; corrected by 2026-10-06-listing-data-fixes, which also moved
+ * the 5K tree to its 6B slug.
  */
 const ARTICLE: BlogArticleSeed = {
   slug: 'wellhead-components-explained',

@@ -5,9 +5,10 @@ import type { BlogArticleSeed } from '../shared'
 /**
  * R, RX and BX ring joint gaskets, read from the 59 listings: style, flange
  * pairing, pitch diameter, section dimensions and materials. Several flow
- * iron listings call 2-1/16" to 7-1/16" 3K and 5K flanges "API 6BX" with a BX
- * groove; at those sizes and pressures API 6A uses 6B flanges with R or RX
- * rings, which is what the ring listings themselves say and what this follows.
+ * iron listings called 2-1/16" to 7-1/16" 3K and 5K flanges "API 6BX" with a
+ * BX groove; at those sizes and pressures API 6A uses 6B flanges with R or RX
+ * rings, which is what the ring listings say and what this follows. The flow
+ * iron listings were corrected by 2026-10-06-listing-data-fixes.
  */
 const ARTICLE: BlogArticleSeed = {
   slug: 'ring-joint-gaskets-r-rx-bx',
