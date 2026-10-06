@@ -936,4 +936,180 @@ export const BLOG_SEO: Record<string, BlogSeo> = {
     seoDescription:
       'Machine down with two ways out: when a field crimp is the right answer, when one adapter is, and the failure mode hiding behind each of them.',
   },
+  // ── industrial-hose cluster, wave 1 (2026-10-06) ─────────────────────
+  // Written to the 41-character cap, like the 2026-09-01 sprints.
+  'bauer-couplings-explained': {
+    focusKeyword: 'bauer couplings',
+    seoTitle: 'Bauer couplings explained: sizes, parts',
+    seoDescription:
+      'How Bauer lever couplings work, the parts and sizes from 2" to 12", the 16 bar rating, flange backs to DIN 2501, and why ring lock is not a Bauer.',
+  },
+  'bulk-material-and-sandblast-hose': {
+    focusKeyword: 'sandblast hose',
+    seoTitle: 'Bulk material and sandblast hose',
+    seoDescription:
+      'Abrasive-duty hose for sand, cement and grit: the anti-static natural rubber tube, why bends wear first, and NPSH sandblast couplings and nozzle holders.',
+  },
+  'cam-and-groove-coupling-types': {
+    focusKeyword: 'cam and groove coupling types',
+    seoTitle: 'Cam and groove coupling types explained',
+    seoDescription:
+      'Types A, B, C, D, E, F, DC and DP decoded: which half has the cam arms, which end takes the hose, and how the pressure rating falls as the size rises.',
+  },
+  'composite-hose-explained': {
+    focusKeyword: 'composite hose',
+    seoTitle: 'Composite hose explained: build, fittings',
+    seoDescription:
+      'How composite hose is built from films and fabrics between two wires, why it is lighter and weeps before failing, and the EN 13765 fittings it needs.',
+  },
+  'compressed-air-hose-selection': {
+    focusKeyword: 'compressed air hose',
+    seoTitle: 'Compressed air hose: how to choose one',
+    seoDescription:
+      'Choosing compressed air hose: oil-mist-resistant tubes, ISO 2398 and BS 5118 hose, 40 bar high-temperature hose for discharge lines, and safe couplings.',
+  },
+  'corrugated-stainless-steel-hose': {
+    focusKeyword: 'corrugated stainless steel hose',
+    seoTitle: 'Corrugated stainless steel hose guide',
+    seoDescription:
+      'How corrugated stainless hose works: core and braid, unbraided to double braid ratings, 316L against 321, annular against helical, and how to install it.',
+  },
+  'cryogenic-transfer-hose': {
+    focusKeyword: 'cryogenic transfer hose',
+    seoTitle: 'Cryogenic transfer hose: LIN, LOX, LNG',
+    seoDescription:
+      'Stainless metal hose for liquid nitrogen, oxygen, argon, LNG and CO2: service temperatures, pressures, oxygen cleaning, couplings and insulation.',
+  },
+  'en-14420-hose-fittings-explained': {
+    focusKeyword: 'en 14420 hose fittings',
+    seoTitle: 'EN 14420 hose fittings explained',
+    seoDescription:
+      'EN 14420 decoded: the DIN 2817 safety clamp, GA and GI threaded hose fittings in brass and stainless, and the EN 14420-7 cam locking couplings.',
+  },
+  'exotic-alloy-metal-hose': {
+    focusKeyword: 'exotic alloy metal hose',
+    seoTitle: 'Exotic alloy metal hose: which alloy',
+    seoDescription:
+      'When stainless is not enough: Monel, Hastelloy, Inconel and bronze metal hose, their temperature limits, chlorine service and the braid question.',
+  },
+  'flanged-hose-connections': {
+    focusKeyword: 'flanged hose connections',
+    seoTitle: 'Flanged hose connections: ASME B16.5',
+    seoDescription:
+      'ASME B16.5 flanges on industrial hose: Class 150 and 300 ratings, RF, FF and RTJ faces, flange types, and why stub ends make bolt-up easier.',
+  },
+  'food-hose-materials-compared': {
+    focusKeyword: 'food hose materials',
+    seoTitle: 'Food hose materials compared by duty',
+    seoDescription:
+      'NBR, EPDM, silicone, PVC and UHMWPE food hose compared: which lining suits fats, steam cleaning, wide temperatures and light duty, with our ratings.',
+  },
+  'gost-barcelona-and-geka-couplings': {
+    focusKeyword: 'geka couplings',
+    seoTitle: 'GOST, Barcelona and Geka couplings',
+    seoDescription:
+      'Three regional symmetrical couplings that only fit themselves: Russian GOST heads, Spanish Barcelona couplings and brass Geka claws, and how to bridge them.',
+  },
+  'ground-joint-steam-couplings': {
+    focusKeyword: 'ground joint steam couplings',
+    seoTitle: 'Ground joint steam couplings explained',
+    seoDescription:
+      'How ground joint couplings seal steam metal to metal with no gasket, the stem, wing nut and spud, 600 psi steam ratings, and the clamps that hold them.',
+  },
+  'guillemin-couplings-explained': {
+    focusKeyword: 'guillemin couplings',
+    seoTitle: 'Guillemin couplings explained: lock ring',
+    seoDescription:
+      'The French symmetrical coupling to NF E 29-572: how Guillemin heads connect, what the lock ring does, the tails available and sizes from 3/4" to 4".',
+  },
+  'high-pressure-metal-hose': {
+    focusKeyword: 'high pressure metal hose',
+    seoTitle: 'High pressure metal hose: up to 414 bar',
+    seoDescription:
+      'How metal hose reaches hydraulic pressures with compressed corrugations and extra braid, what it costs in flexibility, and where it beats rubber hose.',
+  },
+  'industrial-hose-clamps': {
+    focusKeyword: 'industrial hose clamps',
+    seoTitle: 'Industrial hose clamps: which to use',
+    seoDescription:
+      'Safety, interlocking, bolted, spiral and sanitary clamps for industrial hose: which duty each suits, how to size them, and when to crimp instead.',
+  },
+  'industrial-hose-couplings-guide': {
+    focusKeyword: 'industrial hose couplings',
+    seoTitle: 'Industrial hose couplings: full guide',
+    seoDescription:
+      'Every common industrial hose coupling, gendered or symmetrical: how to identify cam and groove, Storz, Bauer, Guillemin, claw and ground joint, and ratings.',
+  },
+  'industrial-hose-guide': {
+    focusKeyword: 'industrial hose guide',
+    seoTitle: 'Industrial hose guide by application',
+    seoDescription:
+      'Choosing industrial hose by what it carries: water, air, oil, fuel, chemicals, food, steam and abrasives, with pressures, temperatures and couplings.',
+  },
+  'industrial-hose-safety-factors': {
+    focusKeyword: 'industrial hose safety factors',
+    seoTitle: 'Industrial hose safety factors explained',
+    seoDescription:
+      'Why water and air hose is built to 3:1, chemical and composite hose to 4:1 and steam hose to 10:1, and why the assembly is rated at its weakest part.',
+  },
+  'kc-nipples-and-shank-couplings': {
+    focusKeyword: 'kc nipples',
+    seoTitle: 'KC nipples and shank couplings explained',
+    seoDescription:
+      'KC nipples, shank couplings, pin-lug couplings and menders: the plain hose ends, their sizes and ratings, and the clamp or ferrule that makes them hold.',
+  },
+  'metal-hose-guide': {
+    focusKeyword: 'metal hose guide',
+    seoTitle: 'Metal hose guide: build, alloys, install',
+    seoDescription:
+      'Metal hose from core to braid: stainless and exotic alloys, pressures to 414 bar, specialty and fire-safe assemblies, couplings and installation rules.',
+  },
+  'oil-suction-and-discharge-hose': {
+    focusKeyword: 'oil suction and discharge hose',
+    seoTitle: 'Oil suction and discharge hose guide',
+    seoDescription:
+      'Choosing oil suction and discharge hose on aromatic content, vacuum and static: our 10 and 20 bar NBR hoses, PVC oil hose and small-bore oil lines.',
+  },
+  'ptfe-hose-explained': {
+    focusKeyword: 'ptfe hose',
+    seoTitle: 'PTFE hose: smoothbore vs convoluted',
+    seoDescription:
+      'PTFE hose from −73 to +260 °C: smoothbore against convoluted, what the stainless or polypropylene braid adds, the fittings it needs, and R14 hydraulic hose.',
+  },
+  'pvc-or-rubber-suction-hose': {
+    focusKeyword: 'rubber suction hose',
+    seoTitle: 'PVC or rubber suction hose: which one',
+    seoDescription:
+      'PVC or rubber suction hose? The 55 °C limit on PVC, pressure that falls with bore, handling on site, and the vacuum and couplings that keep a pump primed.',
+  },
+  'reading-an-industrial-hose-layline': {
+    focusKeyword: 'industrial hose layline',
+    seoTitle: 'Reading an industrial hose layline',
+    seoDescription:
+      'How to read the print on industrial hose: S&D, working pressure, vacuum in mmHg, safety factor and standards, with real laylines from our range.',
+  },
+  'storz-coupling-sizes': {
+    focusKeyword: 'storz coupling sizes',
+    seoTitle: 'Storz coupling sizes and lug distance',
+    seoDescription:
+      'Storz couplings are sized by lug distance, not bore: 115, 148 and 160 mm heads, grey suction and black pressure gaskets, tails, materials and FDC parts.',
+  },
+  'tanker-loading-and-vapour-recovery-hose': {
+    focusKeyword: 'vapour recovery hose',
+    seoTitle: 'Tanker loading and vapour recovery hose',
+    seoDescription:
+      'Tanker hose explained: the 17 bar reeling hose, EN 13765 composite vapour recovery and oil hose, and dry disconnect couplings that part without a drip.',
+  },
+  'uhmwpe-chemical-hose': {
+    focusKeyword: 'uhmwpe chemical hose',
+    seoTitle: 'UHMWPE chemical hose: limits and uses',
+    seoDescription:
+      'UHMWPE-lined chemical hose explained: what the lining resists, our 10 and 16 bar grades to +100 °C, compatibility checks, and when composite is better.',
+  },
+  'universal-air-couplings-explained': {
+    focusKeyword: 'universal air couplings',
+    seoTitle: 'Universal air couplings explained',
+    seoDescription:
+      'Chicago, claw and crowfoot couplings: American, European and Australian types, lug counts and threads, ratings, and why safety clips and whip checks matter.',
+  },
 }

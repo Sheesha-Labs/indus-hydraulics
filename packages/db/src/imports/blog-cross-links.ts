@@ -1286,4 +1286,245 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
       'field-re-hosing-kit',
     ],
   },
+  // ── industrial-hose cluster, wave 1 (2026-10-06) ─────────────────────
+  'bauer-couplings-explained': {
+    related: [
+      'storz-coupling-sizes',
+      'water-suction-and-dewatering-hose',
+      'pvc-or-rubber-suction-hose',
+      'industrial-hose-couplings-guide',
+    ],
+  },
+  'bulk-material-and-sandblast-hose': {
+    related: [
+      'industrial-hose-guide',
+      'hydraulic-hose-sand-abrasion',
+      'industrial-hose-clamps',
+      'universal-air-couplings-explained',
+    ],
+    pages: [CONSTRUCTION],
+  },
+  'cam-and-groove-coupling-types': {
+    related: [
+      'industrial-hose-couplings-guide',
+      'tanker-loading-and-vapour-recovery-hose',
+      'kc-nipples-and-shank-couplings',
+      'chemical-transfer-hose-selection',
+      'industrial-hose-clamps',
+    ],
+  },
+  'composite-hose-explained': {
+    related: [
+      'tanker-loading-and-vapour-recovery-hose',
+      'uhmwpe-chemical-hose',
+      'chemical-transfer-hose-selection',
+      'industrial-hose-guide',
+    ],
+  },
+  'compressed-air-hose-selection': {
+    related: [
+      'universal-air-couplings-explained',
+      'hose-whip-restraint-and-burst-protection',
+      'reading-an-industrial-hose-layline',
+      'industrial-hose-guide',
+    ],
+  },
+  'corrugated-stainless-steel-hose': {
+    related: [
+      'metal-hose-guide',
+      'exotic-alloy-metal-hose',
+      'high-pressure-metal-hose',
+      'hydraulic-hose-coastal-corrosion',
+    ],
+  },
+  'cryogenic-transfer-hose': {
+    related: [
+      'metal-hose-guide',
+      'corrugated-stainless-steel-hose',
+      'exotic-alloy-metal-hose',
+      'ptfe-hose-explained',
+    ],
+    pages: [OIL_GAS],
+  },
+  'en-14420-hose-fittings-explained': {
+    related: [
+      'industrial-hose-clamps',
+      'cam-and-groove-coupling-types',
+      'uhmwpe-chemical-hose',
+      'industrial-hose-couplings-guide',
+    ],
+  },
+  'exotic-alloy-metal-hose': {
+    related: [
+      'metal-hose-guide',
+      'corrugated-stainless-steel-hose',
+      'cryogenic-transfer-hose',
+      'chemical-transfer-hose-selection',
+    ],
+  },
+  'flanged-hose-connections': {
+    related: [
+      'industrial-hose-couplings-guide',
+      'kc-nipples-and-shank-couplings',
+      'composite-hose-explained',
+      'sae-j518-code-61-code-62-flanges',
+    ],
+  },
+  'food-hose-materials-compared': {
+    related: [
+      'food-grade-hose-compliance',
+      'uhmwpe-chemical-hose',
+      'steam-hose-safety',
+      'industrial-hose-guide',
+    ],
+  },
+  'gost-barcelona-and-geka-couplings': {
+    related: [
+      'storz-coupling-sizes',
+      'guillemin-couplings-explained',
+      'industrial-hose-couplings-guide',
+    ],
+  },
+  'ground-joint-steam-couplings': {
+    related: [
+      'steam-hose-safety',
+      'industrial-hose-clamps',
+      'en-14420-hose-fittings-explained',
+      'industrial-hose-safety-factors',
+    ],
+  },
+  'guillemin-couplings-explained': {
+    related: [
+      'storz-coupling-sizes',
+      'gost-barcelona-and-geka-couplings',
+      'industrial-hose-couplings-guide',
+    ],
+  },
+  'high-pressure-metal-hose': {
+    related: [
+      'metal-hose-guide',
+      'corrugated-stainless-steel-hose',
+      'hydraulic-hose-pressure-by-size',
+      'ptfe-hose-explained',
+    ],
+  },
+  'industrial-hose-clamps': {
+    related: [
+      'kc-nipples-and-shank-couplings',
+      'en-14420-hose-fittings-explained',
+      'ground-joint-steam-couplings',
+      'industrial-hose-couplings-guide',
+    ],
+  },
+  'industrial-hose-couplings-guide': {
+    related: [
+      'industrial-hose-guide',
+      'cam-and-groove-coupling-types',
+      'storz-coupling-sizes',
+      'industrial-hose-clamps',
+      'flanged-hose-connections',
+      'hydraulic-quick-couplers-iso-7241',
+    ],
+  },
+  'industrial-hose-guide': {
+    related: [
+      'industrial-hose-couplings-guide',
+      'metal-hose-guide',
+      'industrial-hose-safety-factors',
+      'industrial-hose-is-not-hydraulic-hose',
+      'chemical-transfer-hose-selection',
+      'hydraulic-hose-in-uae-heat',
+    ],
+  },
+  'industrial-hose-safety-factors': {
+    related: [
+      'industrial-hose-guide',
+      'reading-an-industrial-hose-layline',
+      'api-7k-16c-16d-which-standard',
+      'hydraulic-hose-pressure-by-size',
+    ],
+  },
+  'kc-nipples-and-shank-couplings': {
+    related: [
+      'cam-and-groove-coupling-types',
+      'industrial-hose-clamps',
+      'flanged-hose-connections',
+      'industrial-hose-couplings-guide',
+    ],
+  },
+  'metal-hose-guide': {
+    related: [
+      'corrugated-stainless-steel-hose',
+      'exotic-alloy-metal-hose',
+      'high-pressure-metal-hose',
+      'ptfe-hose-explained',
+      'cryogenic-transfer-hose',
+      'industrial-hose-guide',
+    ],
+  },
+  'oil-suction-and-discharge-hose': {
+    related: [
+      'tanker-loading-and-vapour-recovery-hose',
+      'uhmwpe-chemical-hose',
+      'cam-and-groove-coupling-types',
+      'industrial-hose-guide',
+    ],
+    pages: [OIL_GAS],
+  },
+  'ptfe-hose-explained': {
+    related: [
+      'metal-hose-guide',
+      'uhmwpe-chemical-hose',
+      'hydraulic-hose-cover-blistering',
+      'hydraulic-hose-tube-swelling',
+    ],
+  },
+  'pvc-or-rubber-suction-hose': {
+    related: [
+      'water-suction-and-dewatering-hose',
+      'hydraulic-hose-in-uae-heat',
+      'food-hose-materials-compared',
+      'bauer-couplings-explained',
+    ],
+  },
+  'reading-an-industrial-hose-layline': {
+    related: [
+      'industrial-hose-safety-factors',
+      'how-to-read-a-hose-layline',
+      'verifying-a-genuine-hydraulic-hose',
+      'industrial-hose-guide',
+    ],
+  },
+  'storz-coupling-sizes': {
+    related: [
+      'guillemin-couplings-explained',
+      'gost-barcelona-and-geka-couplings',
+      'bauer-couplings-explained',
+      'industrial-hose-couplings-guide',
+    ],
+  },
+  'tanker-loading-and-vapour-recovery-hose': {
+    related: [
+      'oil-suction-and-discharge-hose',
+      'composite-hose-explained',
+      'cam-and-groove-coupling-types',
+      'industrial-hose-guide',
+    ],
+    pages: [OIL_GAS],
+  },
+  'uhmwpe-chemical-hose': {
+    related: [
+      'chemical-transfer-hose-selection',
+      'composite-hose-explained',
+      'food-hose-materials-compared',
+      'en-14420-hose-fittings-explained',
+    ],
+  },
+  'universal-air-couplings-explained': {
+    related: [
+      'compressed-air-hose-selection',
+      'hose-whip-restraint-and-burst-protection',
+      'industrial-hose-couplings-guide',
+    ],
+  },
 }

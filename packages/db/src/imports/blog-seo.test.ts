@@ -118,8 +118,9 @@ const PRE_SUFFIX_RULE = new Set([
 describe('BLOG_SEO', () => {
   const entries = Object.entries(BLOG_SEO)
 
+  // 143, plus 29 for the industrial-hose cluster's first wave (2026-10-06).
   it('covers the whole blog exactly once', () => {
-    expect(entries.length).toBe(143)
+    expect(entries.length).toBe(172)
   })
 
   /**
