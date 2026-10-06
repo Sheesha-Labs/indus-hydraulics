@@ -399,6 +399,11 @@ export const INLINE_PLANS: Record<string, InlinePlan> = {
     ],
   },
   'dirt-ingress-in-transit-and-storage': {
+    links: [
+      { phrase: 'pumps', href: c('hydraulic-pumps') },
+      { phrase: 'valves', href: c('valves-manifolds') },
+      { phrase: 'cylinders', href: c('cylinders') },
+    ],
     add: [
       {
         after: 'on a closed circuit; it dilutes it.',
@@ -1094,6 +1099,7 @@ export const INLINE_PLANS: Record<string, InlinePlan> = {
   'fittings-on-a-chinese-excavator': {
     links: [
       { phrase: 'DIN 2353', href: DIN2353 },
+      { phrase: 'metric 24° cone', href: c('din-hose-fittings') },
       { phrase: 'BSP parallel', href: BSP_FIT },
       { phrase: 'split flanges', href: FLANGE_FIT },
       { phrase: 'the adapters that bridge between them', href: ADAPTERS },
@@ -1105,6 +1111,7 @@ export const INLINE_PLANS: Record<string, InlinePlan> = {
       { phrase: 'JIC', href: JIC_FIT },
       { phrase: '30° flare ends', href: JIS_FIT },
       { phrase: 'bridging adapters', href: ADAPTERS },
+      { phrase: 'metric 24° cone', href: c('din-hose-fittings') },
     ],
   },
   'fittings-on-american-machines': {
@@ -1338,6 +1345,7 @@ export const INLINE_PLANS: Record<string, InlinePlan> = {
       { phrase: 'chain slings', href: CHAIN_SLINGS },
       { phrase: 'master links', href: MASTER_LINKS },
       { phrase: 'DIN 764', href: DIN_CHAIN },
+      { phrase: 'logging', href: c('forestry-logging-hardware') },
     ],
   },
   'crosby-pattern-numbers-explained': {
@@ -1447,6 +1455,13 @@ export const INLINE_PLANS: Record<string, InlinePlan> = {
     links: [
       { phrase: 'shackle', href: SHACKLES },
       { phrase: '418-pattern snatch block', href: p('light-snatch-block-with-hook-418-pattern') },
+      { phrase: 'hitch pin', href: c('rigging-pins') },
+    ],
+    add: [
+      {
+        after: 'must always be in place before the block is loaded.',
+        html: ` The same blocks are used to pull electrical cable, where a <a href="${c('cable-socks')}">cable sock</a> — a woven pulling grip — holds the cable end and takes the pulling line.`,
+      },
     ],
   },
   'spelter-sockets-open-vs-closed': {

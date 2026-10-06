@@ -130,6 +130,7 @@ export const WAVE_INLINE_LINKS: Record<string, InlineLink[]> = {
     { phrase: 'crimped sleeve', href: p('sleeve-for-kc-and-camlock') },
     { phrase: 'Pin-lug couplings', href: c('pin-lug-shank-couplings') },
     { phrase: 'brass menders', href: p('brass-hose-menders') },
+    { phrase: 'hose mender', href: c('hose-menders') },
   ],
   'metal-hose-guide': [
     { phrase: 'Senior Flexonics Bartlett fire-safe assembly', href: p('senior-flexonics-bartlett-fire-safe-hose-assembly') },

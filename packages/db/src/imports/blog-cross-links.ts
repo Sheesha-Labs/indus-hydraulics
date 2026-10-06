@@ -148,6 +148,7 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
   // ── failure-analysis ───────────────────────────────────────────────────
   'why-hydraulic-hoses-fail': {
     related: [
+      'hydraulic-hose-guide',
       'hose-failure-post-mortem',
       'hydraulic-hose-inspection',
       'hose-routing-bend-radius-twist',
@@ -263,6 +264,7 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
   // ── fitting-identification ─────────────────────────────────────────────
   'identify-any-hydraulic-fitting': {
     related: [
+      'hydraulic-fittings-guide',
       'hydraulic-thread-size-and-pitch-reference',
       'jic-vs-orfs-vs-npt-vs-bsp',
       'photographing-a-hydraulic-fitting',
@@ -270,6 +272,7 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
   },
   'bspp-vs-bspt': {
     related: [
+      'hydraulic-fittings-guide',
       'bspp-bonded-seal-sizing',
       'stopping-an-npt-thread-leak',
       'hydraulic-thread-size-and-pitch-reference',
@@ -277,6 +280,8 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
   },
   'jic-vs-orfs-vs-npt-vs-bsp': {
     related: [
+      'hydraulic-fittings-guide',
+      'npt-npsm-and-sae-hose-fittings',
       'where-jic-is-the-wrong-choice',
       'sae-j518-code-61-code-62-flanges',
       'identify-any-hydraulic-fitting',
@@ -284,6 +289,7 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
   },
   'hydraulic-thread-size-and-pitch-reference': {
     related: [
+      'hydraulic-fittings-guide',
       'identify-any-hydraulic-fitting',
       'bspp-vs-bspt',
       'photographing-a-hydraulic-fitting',
@@ -347,6 +353,8 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
   },
   'offshore-hydraulic-hose': {
     related: [
+      'oilfield-hose-guide',
+      'riser-tensioner-and-compensator-hose',
       'hydraulic-hose-coastal-corrosion',
       'bop-control-hose-fire-resistance',
       'hydraulic-hose-wire-corrosion',
@@ -381,6 +389,7 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
   // ── hose-assembly ──────────────────────────────────────────────────────
   'getting-a-hydraulic-hose-made': {
     related: [
+      'hydraulic-hose-assembly-guide',
       'how-to-measure-a-hydraulic-hose',
       'what-to-send-for-a-hose-quote',
       'skiving-and-fitting-selection',
@@ -388,6 +397,8 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
   },
   'skiving-and-fitting-selection': {
     related: [
+      'hydraulic-hose-assembly-guide',
+      'braided-vs-spiral-hose-fittings',
       'hydraulic-hose-crimp-faults',
       'should-you-buy-a-hose-crimper',
       'hose-burst-at-the-fitting',
@@ -418,6 +429,7 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
   },
   'how-to-measure-a-hydraulic-hose': {
     related: [
+      'hydraulic-hose-assembly-guide',
       'what-to-send-for-a-hose-quote',
       'getting-a-hydraulic-hose-made',
       'hydraulic-hose-dash-sizes',
@@ -434,6 +446,8 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
   },
   'hydraulic-fitting-make-up-torque': {
     related: [
+      'hydraulic-hose-assembly-guide',
+      'anti-seize-and-assembly-pastes',
       'new-hydraulic-hose-weeping',
       'cross-threaded-hydraulic-port',
       'stopping-an-npt-thread-leak',
@@ -453,6 +467,8 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
   // ── industrial-hose ────────────────────────────────────────────────────
   'industrial-hose-is-not-hydraulic-hose': {
     related: [
+      'industrial-hose-guide',
+      'hydraulic-hose-guide',
       'chemical-transfer-hose-selection',
       'water-suction-and-dewatering-hose',
       'hydraulic-hose-pressure-by-size',
@@ -460,6 +476,8 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
   },
   'chemical-transfer-hose-selection': {
     related: [
+      'industrial-hose-guide',
+      'uhmwpe-chemical-hose',
       'hydraulic-hose-tube-swelling',
       'industrial-hose-is-not-hydraulic-hose',
       'food-grade-hose-compliance',
@@ -467,6 +485,8 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
   },
   'steam-hose-safety': {
     related: [
+      'industrial-hose-guide',
+      'ground-joint-steam-couplings',
       'industrial-hose-is-not-hydraulic-hose',
       'hose-whip-restraint-and-burst-protection',
       'chemical-transfer-hose-selection',
@@ -475,6 +495,8 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
   },
   'food-grade-hose-compliance': {
     related: [
+      'industrial-hose-guide',
+      'food-hose-materials-compared',
       'chemical-transfer-hose-selection',
       'unbranded-hydraulic-fittings',
       'industrial-hose-is-not-hydraulic-hose',
@@ -482,6 +504,8 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
   },
   'water-suction-and-dewatering-hose': {
     related: [
+      'industrial-hose-guide',
+      'pvc-or-rubber-suction-hose',
       'desalination-and-water-treatment-hose',
       'industrial-hose-is-not-hydraulic-hose',
       'log-splitter-and-shop-press-hose',
@@ -650,6 +674,8 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
   },
   'grease-and-zerk-fittings': {
     related: [
+      'grease-selection-base-oil-thickener-nlgi',
+      'molykote-lubricant-types-explained',
       'removing-a-seized-hydraulic-fitting',
       'mini-excavator-hose-maintenance',
       'hydraulic-thread-size-and-pitch-reference',
@@ -669,6 +695,7 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
   // ── oilfield-pressure-control ──────────────────────────────────────────
   'api-7k-16c-16d-which-standard': {
     related: [
+      'oilfield-hose-guide',
       'api-16c-choke-and-kill-lines',
       'api-7k-rotary-vibrator-hose',
       'bop-control-hose-fire-resistance',
@@ -677,6 +704,8 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
   },
   'api-16c-choke-and-kill-lines': {
     related: [
+      'oilfield-hose-guide',
+      'positive-vs-adjustable-chokes',
       'api-7k-16c-16d-which-standard',
       'bop-control-hose-fire-resistance',
       'rig-site-hose-replacement-abu-dhabi',
@@ -685,6 +714,8 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
   },
   'bop-control-hose-fire-resistance': {
     related: [
+      'oilfield-hose-guide',
+      'ram-vs-annular-bop',
       'api-7k-16c-16d-which-standard',
       'api-16c-choke-and-kill-lines',
       'offshore-hydraulic-hose',
@@ -693,6 +724,8 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
   },
   'api-7k-rotary-vibrator-hose': {
     related: [
+      'oilfield-hose-guide',
+      'mud-gate-valve-repair-kits',
       'api-7k-16c-16d-which-standard',
       'rig-site-hose-replacement-abu-dhabi',
       'hose-whip-restraint-and-burst-protection',
@@ -701,6 +734,7 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
   },
   'rig-site-hose-replacement-abu-dhabi': {
     related: [
+      'oilfield-hose-guide',
       'api-7k-rotary-vibrator-hose',
       'bulk-hose-refit-and-tagging',
       'on-site-hydraulic-hose-service-uae',
@@ -719,6 +753,7 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
   },
   'what-to-send-for-a-hose-quote': {
     related: [
+      'hydraulic-hose-assembly-guide',
       'how-to-measure-a-hydraulic-hose',
       'photographing-a-hydraulic-fitting',
       'getting-a-hydraulic-hose-made',
@@ -796,6 +831,7 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
   },
   'hose-whip-restraint-and-burst-protection': {
     related: [
+      'flow-iron-explained',
       'hydraulic-fluid-injection-injury',
       'api-7k-rotary-vibrator-hose',
       'mobile-crane-hydraulic-hose',
@@ -812,13 +848,25 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
 
   // ── specification-standards ────────────────────────────────────────────
   'hydraulic-hose-pressure-by-size': {
-    related: ['hydraulic-hose-dash-sizes', 'braid-vs-spiral-hydraulic-hose', 'sae-100r-hose-types'],
+    related: [
+      'hydraulic-hose-guide',
+      'hydraulic-hose-dash-sizes',
+      'braid-vs-spiral-hydraulic-hose',
+      'sae-100r-hose-types',
+    ],
   },
   'braid-vs-spiral-hydraulic-hose': {
-    related: ['sae-100r-hose-types', 'compact-hose-1sc-2sc', 'hydraulic-hose-pressure-by-size'],
+    related: [
+      'hydraulic-hose-guide',
+      'braided-vs-spiral-hose-fittings',
+      'sae-100r-hose-types',
+      'compact-hose-1sc-2sc',
+      'hydraulic-hose-pressure-by-size',
+    ],
   },
   'compact-hose-1sc-2sc': {
     related: [
+      'hydraulic-hose-guide',
       'braid-vs-spiral-hydraulic-hose',
       'hydraulic-hose-kinked',
       'hose-routing-bend-radius-twist',
@@ -826,6 +874,7 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
   },
   'sae-100r-hose-types': {
     related: [
+      'hydraulic-hose-guide',
       'en-853-856-857-vs-sae-100r',
       'braid-vs-spiral-hydraulic-hose',
       'how-to-read-a-hose-layline',
@@ -833,6 +882,7 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
   },
   'en-853-856-857-vs-sae-100r': {
     related: [
+      'hydraulic-hose-guide',
       'sae-100r-hose-types',
       'how-to-cross-reference-a-hydraulic-hose',
       'how-to-read-a-hose-layline',
@@ -840,6 +890,7 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
   },
   'hydraulic-hose-dash-sizes': {
     related: [
+      'hydraulic-hose-guide',
       'hydraulic-hose-pressure-by-size',
       'how-to-measure-a-hydraulic-hose',
       'how-to-read-a-hose-layline',
@@ -847,6 +898,8 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
   },
   'how-to-read-a-hose-layline': {
     related: [
+      'hydraulic-hose-guide',
+      'reading-an-industrial-hose-layline',
       'how-to-cross-reference-a-hydraulic-hose',
       'unbranded-hydraulic-fittings',
       'sae-100r-hose-types',
@@ -924,6 +977,8 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
   },
   'nace-mr0175-hose-documentation': {
     related: [
+      'oilfield-hose-guide',
+      'api-6a-nameplate-markings',
       'material-test-certificate-en-10204',
       'oilfield-hose-document-pack',
       'api-7k-16c-16d-which-standard',
@@ -952,6 +1007,8 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
   },
   'oilfield-hose-document-pack': {
     related: [
+      'oilfield-hose-guide',
+      'api-6a-nameplate-markings',
       'api-7k-16c-16d-which-standard',
       'nace-mr0175-hose-documentation',
       'hose-assembly-test-certificate',
@@ -1002,6 +1059,7 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
   },
   'measuring-a-fitting-without-gauges': {
     related: [
+      'hydraulic-fittings-guide',
       'photographing-a-hydraulic-fitting',
       'identify-any-hydraulic-fitting',
       'hydraulic-thread-size-and-pitch-reference',
@@ -1020,6 +1078,7 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
   // lane is the point rather than decoration. Everything else links sideways.
   'what-to-send-for-a-fittings-quote': {
     related: [
+      'hydraulic-fittings-guide',
       'measuring-a-fitting-without-gauges',
       'photographing-a-hydraulic-fitting',
       'what-to-send-for-a-hose-quote',
@@ -1224,6 +1283,7 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
   },
   'why-fittings-seize-in-coastal-air': {
     related: [
+      'anti-seize-and-assembly-pastes',
       'removing-a-seized-hydraulic-fitting',
       'plating-and-corrosion-on-fittings',
       'galvanic-corrosion-in-fittings',

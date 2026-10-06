@@ -120,7 +120,7 @@ const ARTICLE: BlogArticleSeed = {
     },
     {
       type: 'paragraph',
-      html: 'End connections follow the pressure. Our 3-1/8" and 4-1/16" 5,000 psi gate valves are API 6B flanged for R-35 / RX-35 and R-39 / RX-39 rings; the 2-1/16" to 5-1/8" valves at 10,000 and 15,000 psi are 6BX, for BX-152 to BX-155 and BX-169. A flanged valve is ordered with its rings and studs, and the rings are explained in <a href="/blog/ring-joint-gaskets-r-rx-bx">R, RX and BX ring joint gaskets</a>. The same markings appear on wellhead equipment, covered in <a href="/blog/wellhead-components-explained">wellhead components explained</a>.',
+      html: 'End connections follow the pressure. Our 3-1/8" and 4-1/16" 5,000 psi gate valves are API 6B flanged for R-35 / RX-35 and R-39 / RX-39 rings; the 2-1/16" to 5-1/8" valves at 10,000 and 15,000 psi are 6BX, for BX-152 to BX-155 and BX-169. For operating the valves, our accessory listings include an 8:1 worm-gear operator for 3" API 6A valves, a double-acting hydraulic actuator with limit switches, ISO 5211 mounting kits and a position indicator. A flanged valve is ordered with its rings and studs, and the rings are explained in <a href="/blog/ring-joint-gaskets-r-rx-bx">R, RX and BX ring joint gaskets</a>. The same markings appear on wellhead equipment, covered in <a href="/blog/wellhead-components-explained">wellhead components explained</a>.',
     },
 
     {

@@ -18,6 +18,7 @@ export const WAVE_INLINE_LINKS: Record<string, InlineLink[]> = {
   ],
   'hydraulic-fittings-guide': [
     { phrase: 'hose fitting', href: c('hydraulic-fittings') },
+    { phrase: 'metric 24° cone', href: c('din-hose-fittings') },
     { phrase: 'adapter', href: c('hydraulic-adapters') },
     { phrase: 'JIC', href: c('jic-37-hose-fittings') },
     { phrase: 'ORFS', href: c('orfs-hose-fittings') },
@@ -28,12 +29,14 @@ export const WAVE_INLINE_LINKS: Record<string, InlineLink[]> = {
     { phrase: 'spiral-hose crimp fittings', href: c('spiral-hose-crimp-fittings') },
     { phrase: 'skive interlock ferrules for 4SH', href: p('skive-interlock-crimp-ferrule-for-4sh-hose') },
     { phrase: 'double-skive ferrule for R13', href: p('double-skive-crimp-ferrule-for-r13-hose') },
+    { phrase: 'no-skive ends', href: c('ferrules') },
   ],
   'braided-vs-spiral-hose-fittings': [
     { phrase: 'skive interlock ferrule for 4SH', href: p('skive-interlock-crimp-ferrule-for-4sh-hose') },
     { phrase: 'DIN 20023 skive ferrule', href: p('skive-crimp-ferrule-din-20023-for-4sh-r12-32-hose') },
     { phrase: 'double-skive ferrule for R13', href: p('double-skive-crimp-ferrule-for-r13-hose') },
     { phrase: 'Compact 1SC and 2SC', href: p('2sc-compact-two-wire-braid-hose') },
+    { phrase: 'DIN light and heavy 24° cone', href: c('din-hose-fittings') },
   ],
   'npt-npsm-and-sae-hose-fittings': [
     { phrase: 'NPT male adapter', href: c('npt-adapters') },
@@ -43,6 +46,10 @@ export const WAVE_INLINE_LINKS: Record<string, InlineLink[]> = {
   ],
   'ss316l-hydraulic-fittings': [
     { phrase: 'flanges, counter-flanges and split flanges for hose', href: c('ss316l-sae-flanges-for-hoses') },
+    { phrase: 'metric 24° cone female swivels and male studs', href: c('ss316l-metric-fittings') },
+    { phrase: 'double-hexagon swivel females', href: c('ss316l-double-hexagonal-fittings') },
+    { phrase: 'BSP and metric banjos', href: c('ss316l-banjos') },
+    { phrase: 'hydrowashing machines', href: c('ss316l-hydrowashing-couplings') },
   ],
   'oilfield-hose-guide': [
     { phrase: 'mud booster hose', href: p('mud-booster-hose') },

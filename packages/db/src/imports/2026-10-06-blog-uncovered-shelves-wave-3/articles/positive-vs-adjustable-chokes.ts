@@ -118,7 +118,7 @@ const ARTICLE: BlogArticleSeed = {
     },
     {
       type: 'paragraph',
-      html: 'Give the choke type, size, end connections (union figure or flange), pressure and service, and the bean sizes you need, plus any instrument tap — two of our 15,000 psi chokes carry 9/16" Autoclave connections. Union-ended chokes take the rating of their figure, explained in <a href="/blog/hammer-union-figure-numbers">hammer union figure numbers</a>, and choke manifolds are part of the layout described in <a href="/blog/flow-iron-explained">flow iron explained</a>.',
+      html: 'Give the choke type, size, end connections (union figure or flange), pressure and service, and the bean sizes you need, plus any instrument tap — two of our 15,000 psi chokes carry 9/16" Autoclave connections, and gauges on taps like these are isolated with needle, gauge or double block and bleed instrumentation valves. Union-ended chokes take the rating of their figure, explained in <a href="/blog/hammer-union-figure-numbers">hammer union figure numbers</a>, and choke manifolds are part of the layout described in <a href="/blog/flow-iron-explained">flow iron explained</a>.',
     },
 
     {

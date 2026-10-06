@@ -105,7 +105,7 @@ const ARTICLE: BlogArticleSeed = {
     },
     {
       type: 'paragraph',
-      html: 'Give the size and end connection, the pressure and the temperature together, the fluid, and for oilfield valves the service (standard or sour) and the standard required — our listings cite API 608 for the 2" Class 150 valve, API 6D for the Class 600 trunnion and butt-weld valves, and API 6A for the 3-1/8" 5M flanged valve. Union-ended valves are rated by figure; see <a href="/blog/hammer-union-figure-numbers">hammer union figure numbers</a>.',
+      html: 'If the job is throttling rather than isolation, a globe valve is the usual choice — ours are ASME raised-face valves from Class 150 to Class 1500. For a ball valve, give the size and end connection, the pressure and the temperature together, the fluid, and for oilfield valves the service (standard or sour) and the standard required — our listings cite API 608 for the 2" Class 150 valve, API 6D for the Class 600 trunnion and butt-weld valves, and API 6A for the 3-1/8" 5M flanged valve. Union-ended valves are rated by figure; see <a href="/blog/hammer-union-figure-numbers">hammer union figure numbers</a>.',
     },
 
     {

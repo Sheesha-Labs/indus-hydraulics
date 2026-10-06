@@ -80,7 +80,7 @@ const ARTICLE: BlogArticleSeed = {
     },
     {
       type: 'paragraph',
-      html: 'The parts that are replaced are the elastomers and the joint hardware. Annular packing elements are listed in GK and spherical styles at 13-5/8", in the GK style at 11", and in the GX style at 18-3/4" for subsea, all in HNBR; ram redress kits cover one cavity, and bonnet seal kits the doors of a U-style preventer. Each nipple-up needs new ring gaskets and the right studs and nuts — for sour service, B7M studs and 2HM nuts — and a test plug lets the stack be pressure tested against the wellhead bowl. Control units have their own soft goods: our Koomey-style five-year kit covers seals, diaphragms, bladders and pilot hoses, to API 16D.',
+      html: 'The parts that are replaced are the elastomers and the joint hardware. Annular packing elements are listed in GK and spherical styles at 13-5/8", in the GK style at 11", and in the GX style at 18-3/4" for subsea, all in HNBR; ram redress kits cover one cavity, and bonnet seal kits the doors of a U-style preventer. Each nipple-up needs new ring gaskets and the right studs and nuts — for sour service, B7M studs and 2HM nuts — and a test plug lets the stack be pressure tested against the wellhead bowl. Between the stack and the wellhead sit drilling spools, double studded adapters and adapter flanges — ours are a 13-5/8" 10K drilling spool, a 13-5/8" × 11" 10K double studded adapter and an 11" × 7-1/16" 10K crossover, all for sour service. Control units have their own soft goods: our Koomey-style five-year kit covers seals, diaphragms, bladders and pilot hoses, to API 16D.',
     },
     {
       type: 'callout',

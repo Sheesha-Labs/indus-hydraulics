@@ -9,6 +9,7 @@
 import type { InlineLink } from '../2026-10-06-blog-inline-links/plans'
 
 const p = (slug: string) => `/p/${slug}`
+const c = (slug: string) => `/c/${slug}`
 
 export const WAVE_INLINE_LINKS: Record<string, InlineLink[]> = {
   'molykote-lubricant-types-explained': [
@@ -57,6 +58,7 @@ export const WAVE_INLINE_LINKS: Record<string, InlineLink[]> = {
     { phrase: 'BX-165', href: p('bx-165-ring-joint-gasket') },
   ],
   'flow-iron-explained': [
+    { phrase: 'relief valves', href: c('oilfield-pressure-relief-valves') },
     { phrase: '206 sour pup joint', href: p('pup-joint-206-series-f-m-bw-xh-det-2-000-psi-sour-service') },
     { phrase: 'double-end (DET) designs', href: p('pup-joint-1502-npst-det-threaded-threaded-15-000-psi-standard-service') },
     { phrase: 'Style 100', href: p('swivel-joint-1502-style-100-3-axis-heavy-duty-15-000-psi-standard-service') },
@@ -67,6 +69,7 @@ export const WAVE_INLINE_LINKS: Record<string, InlineLink[]> = {
     { phrase: 'multi-well manifolds', href: p('multi-well-manifold-8-well-1502-series-15-000-psi-standard-service') },
   ],
   'api-6a-nameplate-markings': [
+    { phrase: 'worm-gear operator', href: c('oilfield-valve-accessories') },
     { phrase: 'R-35', href: p('r-35-ring-joint-gasket') },
     { phrase: 'R-39', href: p('r-39-ring-joint-gasket') },
     { phrase: 'RX-39', href: p('rx-39-ring-joint-gasket') },
@@ -93,10 +96,12 @@ export const WAVE_INLINE_LINKS: Record<string, InlineLink[]> = {
     { phrase: 'Model G', href: p('drill-pipe-float-valve-size-3-1-2-if') },
   ],
   'positive-vs-adjustable-chokes': [
+    { phrase: 'instrumentation valves', href: c('oilfield-instrumentation-valves') },
     { phrase: '10,000 psi sour', href: p('choke-manifold-single-stage-1502-10-000-psi-sour-service') },
     { phrase: '602 ends at 6,000 psi sour', href: p('choke-manifold-single-stage-602-6-000-psi-sour-service') },
   ],
   'ram-vs-annular-bop': [
+    { phrase: 'drilling spools', href: c('bop-spools-adapters') },
     { phrase: 'GX style', href: p('subsea-annular-bop-hydril-gx-style-18-3-4-10-000-psi-wp-sour-service-nace-mr0175') },
     { phrase: 'subsea preventer', href: p('subsea-ram-bop-cameron-tl-style-18-3-4-15-000-psi-wp-triple-cavity-sour-service-nace-mr0175') },
     { phrase: 'quadruple snubbing', href: p('snubbing-bop-stack-7-1-16-10-000-psi-wp-with-stripper-rams-sour-service-nace-mr0175') },
@@ -109,6 +114,7 @@ export const WAVE_INLINE_LINKS: Record<string, InlineLink[]> = {
     { phrase: 'Sanitary NE-I', href: p('demco-series-ne-i-sanitary-butterfly-valve-fda-2-12') },
   ],
   'ball-valve-pressure-ratings-cwp-wog': [
+    { phrase: 'globe valve', href: c('oilfield-globe-valves') },
     { phrase: 'Schedule 160 butt-weld ends', href: p('floating-ball-valve-2-in-butt-weld-schedule-160-5-000-psi-sour-service') },
     { phrase: '4" 1502 valves', href: p('trunnion-ball-valve-4-in-1502-f-m-10-000-psi-sour-service') },
     { phrase: 'BSP parallel threads', href: p('high-pressure-hydraulic-ball-valve-1-1-4-inch') },

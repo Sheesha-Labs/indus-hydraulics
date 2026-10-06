@@ -119,7 +119,7 @@ const ARTICLE: BlogArticleSeed = {
     },
     {
       type: 'paragraph',
-      html: 'Manifolds turn a single line into a system. Choke manifolds reduce pressure through a fixed or adjustable bean, in single-stage and dual-stage forms; diverter manifolds split one inlet into two outlets with isolation valves; multi-well manifolds distribute frac fluid to four or eight wells, with plug valves isolating each one. These are engineered to the spread rather than bought off the shelf. Choke trims and bean sizes are covered in <a href="/blog/positive-vs-adjustable-chokes">positive and adjustable chokes</a>.',
+      html: 'Manifolds turn a single line into a system. Choke manifolds reduce pressure through a fixed or adjustable bean, in single-stage and dual-stage forms; diverter manifolds split one inlet into two outlets with isolation valves; multi-well manifolds distribute frac fluid to four or eight wells, with plug valves isolating each one; and spring-loaded or pilot-operated relief valves guard pumps and iron against overpressure. These are engineered to the spread rather than bought off the shelf. Choke trims and bean sizes are covered in <a href="/blog/positive-vs-adjustable-chokes">positive and adjustable chokes</a>.',
     },
 
     {

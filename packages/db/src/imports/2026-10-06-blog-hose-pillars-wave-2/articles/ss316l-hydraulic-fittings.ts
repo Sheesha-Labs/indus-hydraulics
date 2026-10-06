@@ -61,6 +61,10 @@ const ARTICLE: BlogArticleSeed = {
         { cells: ['Banjos', 'BSP and metric banjos with bonded seals', 'G1/8 – G3/4; M10 – M22', 'DIN 7642'] },
       ],
     },
+    {
+      type: 'paragraph',
+      html: 'Within those families the less common shapes are listed too: metric 24° cone female swivels and male studs, double-hexagon swivel females in BSP, JIC and NPSM, BSP and metric banjos, and the standpipes and nuts made for hydrowashing machines.',
+    },
 
     {
       type: 'section_head',
