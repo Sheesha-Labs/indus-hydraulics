@@ -128,6 +128,10 @@ export const WAVE_INLINE_LINKS: Record<string, InlineLink[]> = {
     { phrase: 'Delta anchors', href: p('stainless-steel-delta-anchor-dt-type') },
     { phrase: 'four-prong stainless anchors', href: p('stainless-steel-four-prong-grapnel-anchor') },
   ],
+  'anchor-chain-grades-u1-u2-u3': [
+    { phrase: 'Studless chain', href: p('studless-anchor-chain-grades-u1-u2-and-u3') },
+    { phrase: 'Kenter shackle', href: p('kenter-shackle-grades-u2-and-u3') },
+  ],
   'types-of-mooring-bollards': [
     { phrase: 'twin horn bollards', href: p('twin-horn-bollard') },
     { phrase: 'rope cleats', href: p('stainless-steel-rope-cleat') },
