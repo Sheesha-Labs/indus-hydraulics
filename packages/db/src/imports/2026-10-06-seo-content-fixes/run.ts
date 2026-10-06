@@ -9,6 +9,8 @@
  *   copy     — guidance, standards and FAQ for 22 hose shelves (category-copy.ts)
  *   copy2    — the second batch: 60 more hose shelves (category-copy-batch-2.ts)
  *   shortfix — two category blurbs that stated something wrong (category-copy-batch-2.ts)
+ *   merge    — eight single-product shelves folded into their parents (merge-and-asme.ts)
+ *   asme     — five flange products citing ASTM B16.5 for ASME B16.5 (merge-and-asme.ts)
  *   reorder  — the 43 lifting shelf documents were stored with only their
  *              written sections, and stored sections render first, so their
  *              guidance, standards and FAQ appeared ABOVE the page heading and
@@ -55,6 +57,7 @@ import { CATEGORY_COPY_BATCH_2, SHORT_DESCRIPTION_FIXES } from './category-copy-
 import { linkFirstOccurrence, linksTo } from './link-html'
 import { DEDUPES, POST_LINK_PLANS } from './post-links'
 import { applySlugFix, applyTopLevelOrder } from './slug-and-order'
+import { applyAsme, applyMerges, checkAsme, checkMerges } from './merge-and-asme'
 
 const DRY_RUN = process.argv.includes('--dry-run')
 const ONLY = (() => {
@@ -314,6 +317,10 @@ async function main(): Promise<void> {
     ...(runs('copy2') ? await planCategoryDocs(errors, 'copy2') : []),
   ]
   const blurbs = runs('shortfix') ? await planShortFixes(errors) : []
+  const mergeCheck = runs('merge') ? await checkMerges(db) : { problems: [], summary: [] }
+  const asmeCheck = runs('asme') ? await checkAsme(db) : { problems: [], summary: [] }
+  errors.push(...mergeCheck.problems, ...asmeCheck.problems)
+  for (const line of [...mergeCheck.summary, ...asmeCheck.summary]) log(line)
   const reorderDocs = runs('reorder') ? await planCategoryDocs(errors, 'reorder') : []
 
   for (const p of posts) log(`links: /blog/${p.slug}\n  ${p.changes.join('\n  ')}`)
@@ -359,6 +366,9 @@ async function main(): Promise<void> {
     })
     log(`copy: ${copyDocs.length} shelf documents created and their categories re-dated`)
   }
+
+  if (runs('merge')) await applyMerges(db, log)
+  if (runs('asme')) await applyAsme(db, log)
 
   for (const b of blurbs) {
     await db.category.update({ where: { slug: b.slug }, data: { shortDescription: b.shortDescription } })
