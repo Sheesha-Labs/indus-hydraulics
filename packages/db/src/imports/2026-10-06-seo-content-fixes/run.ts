@@ -7,6 +7,8 @@
  *   links    — catalogue links in the 26 articles that had none, plus three
  *              duplicated lead sentences (post-links.ts)
  *   copy     — guidance, standards and FAQ for 22 hose shelves (category-copy.ts)
+ *   copy2    — the second batch: 60 more hose shelves (category-copy-batch-2.ts)
+ *   shortfix — two category blurbs that stated something wrong (category-copy-batch-2.ts)
  *   reorder  — the 43 lifting shelf documents were stored with only their
  *              written sections, and stored sections render first, so their
  *              guidance, standards and FAQ appeared ABOVE the page heading and
@@ -28,6 +30,9 @@
  *   pnpm --filter @indus/db exec tsx src/imports/2026-10-06-seo-content-fixes/run.ts --dry-run
  *   pnpm --filter @indus/db exec tsx src/imports/2026-10-06-seo-content-fixes/run.ts
  *   … --only=links,copy   to run a subset
+ *
+ * Each step refuses to overwrite work it finds already done, so a full re-run
+ * fails validation once a step has been applied; run later steps with --only.
  */
 import '../2026-05-11-service-cases-launch/load-env-stub'
 
@@ -46,6 +51,7 @@ import type { Prisma } from '@prisma/client'
 import { db } from '../../index'
 import { syncBlogPostLinks } from '../../blog-links'
 import { CATEGORY_COPY, type CategoryCopy } from './category-copy'
+import { CATEGORY_COPY_BATCH_2, SHORT_DESCRIPTION_FIXES } from './category-copy-batch-2'
 import { linkFirstOccurrence, linksTo } from './link-html'
 import { DEDUPES, POST_LINK_PLANS } from './post-links'
 import { applySlugFix, applyTopLevelOrder } from './slug-and-order'
@@ -222,10 +228,14 @@ function isInTemplateOrder(stored: StoredSection[]): boolean {
 
 type PlannedDoc = { key: string; slug: string; sections: StoredSection[]; mode: 'create' | 'reorder' }
 
-async function planCategoryDocs(errors: string[], step: 'copy' | 'reorder'): Promise<PlannedDoc[]> {
+async function planCategoryDocs(
+  errors: string[],
+  step: 'copy' | 'copy2' | 'reorder',
+): Promise<PlannedDoc[]> {
   const planned: PlannedDoc[] = []
-  if (step === 'copy') {
-    const slugs = Object.keys(CATEGORY_COPY)
+  if (step === 'copy' || step === 'copy2') {
+    const copyMap = step === 'copy' ? CATEGORY_COPY : CATEGORY_COPY_BATCH_2
+    const slugs = Object.keys(copyMap)
     const [categories, existing] = await Promise.all([
       db.category.findMany({ where: { slug: { in: slugs }, isPublished: true }, select: { slug: true, name: true } }),
       db.pageContent.findMany({
@@ -238,18 +248,18 @@ async function planCategoryDocs(errors: string[], step: 'copy' | 'reorder'): Pro
     for (const slug of slugs) {
       const category = bySlug.get(slug)
       if (!category) {
-        errors.push(`copy: category ${slug} not published`)
+        errors.push(`${step}: category ${slug} not published`)
         continue
       }
       const key = subPageContentKey('category', slug)
       if (taken.has(key)) {
         // Somebody has written this shelf since the audit; their words win.
-        errors.push(`copy: ${key} already has a document — not overwriting it`)
+        errors.push(`${step}: ${key} already has a document — not overwriting it`)
         continue
       }
-      const result = validateSections(categoryPageDef(category), documentFromCopy(CATEGORY_COPY[slug]!))
+      const result = validateSections(categoryPageDef(category), documentFromCopy(copyMap[slug]!))
       if (!result.ok) {
-        for (const issue of result.issues) errors.push(`copy: ${slug} — ${issue.section} · ${issue.field}: ${issue.message}`)
+        for (const issue of result.issues) errors.push(`${step}: ${slug} — ${issue.section} · ${issue.field}: ${issue.message}`)
         continue
       }
       planned.push({ key, slug, sections: result.sections, mode: 'create' })
@@ -269,18 +279,47 @@ async function planCategoryDocs(errors: string[], step: 'copy' | 'reorder'): Pro
   return planned
 }
 
+// ── shortfix ─────────────────────────────────────────────────────────────────
+
+type PlannedBlurb = { slug: string; shortDescription: string }
+
+async function planShortFixes(errors: string[]): Promise<PlannedBlurb[]> {
+  const slugs = Object.keys(SHORT_DESCRIPTION_FIXES)
+  const rows = await db.category.findMany({
+    where: { slug: { in: slugs } },
+    select: { slug: true, shortDescription: true },
+  })
+  const bySlug = new Map(rows.map((r) => [r.slug, r.shortDescription ?? '']))
+  const planned: PlannedBlurb[] = []
+  for (const slug of slugs) {
+    const fix = SHORT_DESCRIPTION_FIXES[slug]!
+    const current = bySlug.get(slug)
+    if (current === undefined) errors.push(`shortfix: category ${slug} not found`)
+    else if (current === fix.replaceWith) continue
+    else if (!current.includes(fix.contains)) {
+      errors.push(`shortfix: ${slug} no longer says "${fix.contains}" — edited since; leaving it`)
+    } else planned.push({ slug, shortDescription: fix.replaceWith })
+  }
+  return planned
+}
+
 // ── main ─────────────────────────────────────────────────────────────────────
 
 async function main(): Promise<void> {
   const errors: string[] = []
 
   const posts = runs('links') ? await planPostLinks(errors) : []
-  const copyDocs = runs('copy') ? await planCategoryDocs(errors, 'copy') : []
+  const copyDocs = [
+    ...(runs('copy') ? await planCategoryDocs(errors, 'copy') : []),
+    ...(runs('copy2') ? await planCategoryDocs(errors, 'copy2') : []),
+  ]
+  const blurbs = runs('shortfix') ? await planShortFixes(errors) : []
   const reorderDocs = runs('reorder') ? await planCategoryDocs(errors, 'reorder') : []
 
   for (const p of posts) log(`links: /blog/${p.slug}\n  ${p.changes.join('\n  ')}`)
   for (const d of copyDocs) log(`copy: ${d.key} (${d.sections.filter((s) => Object.keys(s.values).length).map((s) => s.key).join(', ')})`)
   log(`reorder: ${reorderDocs.length} shelf documents out of template order`)
+  for (const b of blurbs) log(`shortfix: ${b.slug}`)
 
   if (errors.length > 0) {
     console.error(`\n${errors.length} problem(s) — nothing written:\n  ${errors.join('\n  ')}`)
@@ -320,6 +359,11 @@ async function main(): Promise<void> {
     })
     log(`copy: ${copyDocs.length} shelf documents created and their categories re-dated`)
   }
+
+  for (const b of blurbs) {
+    await db.category.update({ where: { slug: b.slug }, data: { shortDescription: b.shortDescription } })
+  }
+  if (blurbs.length) log(`shortfix: ${blurbs.length} category blurbs corrected`)
 
   for (const d of reorderDocs) {
     await db.pageContent.update({
