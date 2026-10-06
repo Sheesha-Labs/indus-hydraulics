@@ -17,11 +17,11 @@ describe('BLOG_CROSS_LINKS', () => {
    *
    * 93 after the hose programme; 103 after the GCC supplier sprint's first
    * wave; 113, 123 and 133 across the Africa fittings sprint's three waves
-   * (2026-09-01). 172 after the industrial-hose cluster's first wave
-   * (2026-10-06).
+   * (2026-09-01). 172 after the industrial-hose cluster's first wave and
+   * 181 after the hose pillars wave (2026-10-06).
    */
   it('covers the whole blog', () => {
-    expect(entries.length).toBe(172)
+    expect(entries.length).toBe(181)
   })
 
   it('never links an article to itself', () => {

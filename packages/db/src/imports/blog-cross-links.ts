@@ -1527,4 +1527,88 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
       'industrial-hose-couplings-guide',
     ],
   },
+  // ── hose pillars and fittings, wave 2 (2026-10-06) ─────────────────
+  'hydraulic-hose-guide': {
+    related: [
+      'braid-vs-spiral-hydraulic-hose',
+      'sae-100r-hose-types',
+      'hydraulic-hose-pressure-by-size',
+      'hydraulic-hose-assembly-guide',
+      'hydraulic-fittings-guide',
+      'industrial-hose-guide',
+    ],
+  },
+  'hydraulic-fittings-guide': {
+    related: [
+      'identify-any-hydraulic-fitting',
+      'jic-vs-orfs-vs-npt-vs-bsp',
+      'hydraulic-thread-size-and-pitch-reference',
+      'npt-npsm-and-sae-hose-fittings',
+      'ss316l-hydraulic-fittings',
+      'hydraulic-hose-guide',
+    ],
+  },
+  'hydraulic-hose-assembly-guide': {
+    related: [
+      'getting-a-hydraulic-hose-made',
+      'skiving-and-fitting-selection',
+      'hydraulic-hose-crimp-faults',
+      'braided-vs-spiral-hose-fittings',
+      'should-you-buy-a-hose-crimper',
+      'hydraulic-hose-guide',
+    ],
+  },
+  'braided-vs-spiral-hose-fittings': {
+    related: [
+      'braid-vs-spiral-hydraulic-hose',
+      'skiving-and-fitting-selection',
+      'hydraulic-hose-assembly-guide',
+      'hose-burst-at-the-fitting',
+    ],
+  },
+  'npt-npsm-and-sae-hose-fittings': {
+    related: [
+      'stopping-an-npt-thread-leak',
+      'fittings-on-american-machines',
+      'sealant-on-hydraulic-threads',
+      'hydraulic-fittings-guide',
+    ],
+  },
+  'ss316l-hydraulic-fittings': {
+    related: [
+      'when-stainless-is-worth-it',
+      'galvanic-corrosion-in-fittings',
+      'why-fittings-seize-in-coastal-air',
+      'hydraulic-fittings-guide',
+    ],
+  },
+  'oilfield-hose-guide': {
+    related: [
+      'api-7k-16c-16d-which-standard',
+      'api-16c-choke-and-kill-lines',
+      'bop-control-hose-fire-resistance',
+      'well-service-and-stimulation-hose',
+      'oilfield-hose-document-pack',
+      'hydraulic-hose-guide',
+    ],
+    pages: [OIL_GAS],
+  },
+  'well-service-and-stimulation-hose': {
+    related: [
+      'oilfield-hose-guide',
+      'api-16c-choke-and-kill-lines',
+      'nace-mr0175-hose-documentation',
+      'riser-tensioner-and-compensator-hose',
+    ],
+    pages: [OIL_GAS],
+  },
+  'riser-tensioner-and-compensator-hose': {
+    related: [
+      'oilfield-hose-guide',
+      'api-7k-rotary-vibrator-hose',
+      'offshore-hydraulic-hose',
+      'well-service-and-stimulation-hose',
+    ],
+    pages: [OIL_GAS],
+  },
 }

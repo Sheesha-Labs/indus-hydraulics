@@ -1112,4 +1112,59 @@ export const BLOG_SEO: Record<string, BlogSeo> = {
     seoDescription:
       'Chicago, claw and crowfoot couplings: American, European and Australian types, lug counts and threads, ratings, and why safety clips and whip checks matter.',
   },
+  // ── hose pillars and fittings, wave 2 (2026-10-06) ─────────────────
+  'hydraulic-hose-guide': {
+    focusKeyword: 'hydraulic hose guide',
+    seoTitle: 'Hydraulic hose guide: types and pressure',
+    seoDescription:
+      'The hydraulic hose guide: braid, spiral, compact, thermoplastic and PTFE, SAE 100R and EN 853/856/857, dash sizes, pressure by bore, routing and ends.',
+  },
+  'hydraulic-fittings-guide': {
+    focusKeyword: 'hydraulic fittings guide',
+    seoTitle: 'Hydraulic fittings guide: every family',
+    seoDescription:
+      'BSP, JIC, ORFS, NPT, NPSM, SAE flare, O-ring boss, metric 24° and SAE flanges: how each hydraulic fitting family seals, how to identify it, and its standard.',
+  },
+  'hydraulic-hose-assembly-guide': {
+    focusKeyword: 'hydraulic hose assembly guide',
+    seoTitle: 'Hydraulic hose assembly guide: the steps',
+    seoDescription:
+      'How a hydraulic hose assembly is made right: full specification, matched hose, fitting and ferrule, skiving, crimp diameter, proof test, caps and tags.',
+  },
+  'braided-vs-spiral-hose-fittings': {
+    focusKeyword: 'spiral hose fittings',
+    seoTitle: 'Braided vs spiral hose fittings',
+    seoDescription:
+      'Why braided and spiral hose take different crimp fittings: which hoses each series fits, the end families in both, and the ferrules for 4SH and R13.',
+  },
+  'npt-npsm-and-sae-hose-fittings': {
+    focusKeyword: 'sae hose fittings',
+    seoTitle: 'NPT, NPSM and SAE hose fittings',
+    seoDescription:
+      'NPT against NPSM, SAE 45° flare, inverted flare and O-ring boss hose fittings: where each one seals, the sizes we stock, and how to avoid the classic leak.',
+  },
+  'ss316l-hydraulic-fittings': {
+    focusKeyword: 'ss316l hydraulic fittings',
+    seoTitle: 'SS316L hydraulic fittings: the range',
+    seoDescription:
+      '316L stainless hydraulic fittings: BSP, JIC, ORFS, metric, NPT, SAE flanges, standpipes and banjos, the flange bolt grades, and how to stop galling.',
+  },
+  'oilfield-hose-guide': {
+    focusKeyword: 'oilfield hose guide',
+    seoTitle: 'Oilfield hose guide: API 7K, 16C, 16D',
+    seoDescription:
+      'Which API standard governs which rig hose: 7K rotary, 16C choke and kill, 16D BOP control, 17J subsea, plus frac, stimulation and low-pressure hose.',
+  },
+  'well-service-and-stimulation-hose': {
+    focusKeyword: 'stimulation hose',
+    seoTitle: 'Well service and stimulation hose',
+    seoDescription:
+      'Frac, acidizing, well test and flare boom hose: 15,000 psi stimulation lines, sour well test hose and 200 °C flare hose, and why the liner decides.',
+  },
+  'riser-tensioner-and-compensator-hose': {
+    focusKeyword: 'riser tensioner',
+    seoTitle: 'Riser tensioner and compensator hose',
+    seoDescription:
+      'Riser tensioner and drill string compensator hose: 5,000 psi steel-cable construction, why cycle count decides its life, and how to order replacements.',
+  },
 }
