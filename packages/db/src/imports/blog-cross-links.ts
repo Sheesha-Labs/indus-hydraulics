@@ -1611,4 +1611,239 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
     ],
     pages: [OIL_GAS],
   },
+  // ── uncovered shelves, wave 3 (2026-10-06) ───────────────────────────
+  // Industry cards only — oil and gas on the pressure-control pieces, marine
+  // on the marine lifting pieces, construction on slings and plate clamps.
+  // No market cards: none of these articles is about a place.
+  'molykote-lubricant-types-explained': {
+    related: [
+      'anti-seize-and-assembly-pastes',
+      'anti-friction-coatings-explained',
+      'grease-selection-base-oil-thickener-nlgi',
+      'grease-and-zerk-fittings',
+      'why-fittings-seize-in-coastal-air',
+    ],
+  },
+  'anti-seize-and-assembly-pastes': {
+    related: [
+      'molykote-lubricant-types-explained',
+      'why-fittings-seize-in-coastal-air',
+      'galvanic-corrosion-in-fittings',
+      'hydraulic-fitting-make-up-torque',
+      'anti-friction-coatings-explained',
+    ],
+  },
+  'anti-friction-coatings-explained': {
+    related: [
+      'molykote-lubricant-types-explained',
+      'anti-seize-and-assembly-pastes',
+      'grease-selection-base-oil-thickener-nlgi',
+      'hydraulic-hose-sand-abrasion',
+    ],
+  },
+  'grease-selection-base-oil-thickener-nlgi': {
+    related: [
+      'molykote-lubricant-types-explained',
+      'grease-and-zerk-fittings',
+      'anti-friction-coatings-explained',
+      'food-grade-hose-compliance',
+    ],
+  },
+  'hammer-union-figure-numbers': {
+    related: [
+      'flow-iron-explained',
+      'lubricated-vs-non-lubricated-plug-valves',
+      'well-service-and-stimulation-hose',
+      'api-16c-choke-and-kill-lines',
+      'hose-whip-restraint-and-burst-protection',
+    ],
+    pages: [OIL_GAS],
+  },
+  'ring-joint-gaskets-r-rx-bx': {
+    related: [
+      'api-6a-nameplate-markings',
+      'wellhead-components-explained',
+      'ram-vs-annular-bop',
+      'flow-iron-explained',
+      'sae-j518-code-61-code-62-flanges',
+    ],
+    pages: [OIL_GAS],
+  },
+  'flow-iron-explained': {
+    related: [
+      'hammer-union-figure-numbers',
+      'lubricated-vs-non-lubricated-plug-valves',
+      'oilfield-check-valves-explained',
+      'positive-vs-adjustable-chokes',
+      'well-service-and-stimulation-hose',
+      'hose-whip-restraint-and-burst-protection',
+    ],
+    pages: [OIL_GAS],
+  },
+  'api-6a-nameplate-markings': {
+    related: [
+      'ring-joint-gaskets-r-rx-bx',
+      'wellhead-components-explained',
+      'mud-gate-valve-repair-kits',
+      'nace-mr0175-hose-documentation',
+      'material-test-certificate-en-10204',
+    ],
+    pages: [OIL_GAS],
+  },
+  'wellhead-components-explained': {
+    related: [
+      'api-6a-nameplate-markings',
+      'ring-joint-gaskets-r-rx-bx',
+      'ram-vs-annular-bop',
+      'oilfield-hose-guide',
+      'rig-site-hose-replacement-abu-dhabi',
+    ],
+    pages: [OIL_GAS],
+  },
+  'mud-gate-valve-repair-kits': {
+    related: [
+      'api-6a-nameplate-markings',
+      'demco-butterfly-valve-part-numbers',
+      'api-7k-rotary-vibrator-hose',
+      'cross-referencing-a-fitting-part-number',
+    ],
+    pages: [OIL_GAS],
+  },
+  'lubricated-vs-non-lubricated-plug-valves': {
+    related: [
+      'flow-iron-explained',
+      'hammer-union-figure-numbers',
+      'oilfield-check-valves-explained',
+      'positive-vs-adjustable-chokes',
+      'well-service-and-stimulation-hose',
+    ],
+    pages: [OIL_GAS],
+  },
+  'oilfield-check-valves-explained': {
+    related: [
+      'flow-iron-explained',
+      'lubricated-vs-non-lubricated-plug-valves',
+      'hammer-union-figure-numbers',
+      'api-7k-rotary-vibrator-hose',
+      'trapped-pressure-quick-coupler',
+    ],
+    pages: [OIL_GAS],
+  },
+  'positive-vs-adjustable-chokes': {
+    related: [
+      'flow-iron-explained',
+      'api-16c-choke-and-kill-lines',
+      'well-service-and-stimulation-hose',
+      'oilfield-check-valves-explained',
+      'hammer-union-figure-numbers',
+    ],
+    pages: [OIL_GAS],
+  },
+  'ram-vs-annular-bop': {
+    related: [
+      'bop-control-hose-fire-resistance',
+      'api-16c-choke-and-kill-lines',
+      'ring-joint-gaskets-r-rx-bx',
+      'wellhead-components-explained',
+      'hydraulic-hose-shelf-life-storage',
+    ],
+    pages: [OIL_GAS],
+  },
+  'demco-butterfly-valve-part-numbers': {
+    related: [
+      'mud-gate-valve-repair-kits',
+      'ball-valve-pressure-ratings-cwp-wog',
+      'cross-referencing-a-fitting-part-number',
+      'what-to-send-for-a-fittings-quote',
+    ],
+  },
+  'ball-valve-pressure-ratings-cwp-wog': {
+    related: [
+      'hammer-union-figure-numbers',
+      'lubricated-vs-non-lubricated-plug-valves',
+      'demco-butterfly-valve-part-numbers',
+      'sae-j518-code-61-code-62-flanges',
+      'hydraulic-hose-pressure-by-size',
+    ],
+  },
+  'types-of-marine-fenders': {
+    related: [
+      'types-of-mooring-bollards',
+      'types-of-marine-anchors',
+      'fibre-rope-materials-compared',
+      'port-and-terminal-fittings',
+      'port-equipment-hydraulic-hose',
+    ],
+    pages: [MARINE],
+  },
+  'types-of-marine-anchors': {
+    related: [
+      'anchor-chain-grades-u1-u2-u3',
+      'types-of-mooring-bollards',
+      'types-of-marine-fenders',
+      'types-of-shackles',
+      'stainless-vs-galvanized-rigging-gulf',
+    ],
+    pages: [MARINE],
+  },
+  'anchor-chain-grades-u1-u2-u3': {
+    related: [
+      'types-of-marine-anchors',
+      'chain-grades-explained',
+      'din-link-chain-standards',
+      'types-of-shackles',
+      'working-load-limit-vs-breaking-strength',
+    ],
+    pages: [MARINE],
+  },
+  'types-of-mooring-bollards': {
+    related: [
+      'types-of-marine-fenders',
+      'fibre-rope-materials-compared',
+      'types-of-marine-anchors',
+      'working-load-limit-vs-breaking-strength',
+      'port-and-terminal-fittings',
+    ],
+    pages: [MARINE],
+  },
+  'fibre-rope-materials-compared': {
+    related: [
+      'types-of-mooring-bollards',
+      'wire-rope-construction-explained',
+      'types-of-lifting-slings',
+      'working-load-limit-vs-breaking-strength',
+      'anchor-chain-grades-u1-u2-u3',
+    ],
+    pages: [MARINE],
+  },
+  'snap-hooks-and-quick-links': {
+    related: [
+      'master-links-explained',
+      'types-of-shackles',
+      'lifting-hook-types',
+      'working-load-limit-vs-breaking-strength',
+      'stainless-vs-galvanized-rigging-gulf',
+    ],
+  },
+  'chain-sling-codes-explained': {
+    related: [
+      'chain-grades-explained',
+      'sling-angle-chart',
+      'master-links-explained',
+      'lifting-hook-types',
+      'types-of-lifting-slings',
+      'lifting-gear-rejection-criteria',
+    ],
+    pages: [CONSTRUCTION],
+  },
+  'vertical-vs-horizontal-plate-lifting-clamps': {
+    related: [
+      'chain-block-vs-lever-hoist-vs-electric-hoist',
+      'working-load-limit-vs-breaking-strength',
+      'lifting-equipment-inspection-uae',
+      'lifting-gear-test-certificate',
+      'sling-angle-chart',
+    ],
+    pages: [CONSTRUCTION],
+  },
 }
