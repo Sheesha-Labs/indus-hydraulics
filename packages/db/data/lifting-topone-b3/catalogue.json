@@ -1,0 +1,7313 @@
+{
+ "source": "TopOne Chain catalogue export 2026-10-04, batch 3 (anchors, anchor chain, mining and conveyor chain, chain wheels, stainless lifting chain). Only families not already on the live site; each was checked against the live catalogue on 2026-10-08. Built by scratchpad b3/build.py.",
+ "imageDir": "/Users/ayushkbhatia/Documents/Indus Supplier Research/Source Exports/TopOne Chain/topone-b3-jpeg",
+ "specTemplate": {
+  "slug": "lifting-rigging-spec",
+  "name": "Lifting & Rigging",
+  "description": "Rigging hardware, chain, wire rope, slings and hoists: pattern, size range, working load limit, material and finish.",
+  "position": 30,
+  "fields": [
+   {
+    "key": "product_type",
+    "label": "Product type",
+    "dataType": "text",
+    "group": "Identification",
+    "isRequired": false,
+    "isKeyFeature": true,
+    "isQuickSpec": false,
+    "position": 0
+   },
+   {
+    "key": "pattern_standard",
+    "label": "Pattern / standard",
+    "dataType": "text",
+    "group": "Identification",
+    "isRequired": false,
+    "isKeyFeature": true,
+    "isQuickSpec": false,
+    "position": 1
+   },
+   {
+    "key": "size_range",
+    "label": "Size range",
+    "dataType": "text",
+    "group": "Dimensions",
+    "isRequired": false,
+    "isKeyFeature": true,
+    "isQuickSpec": true,
+    "position": 2
+   },
+   {
+    "key": "wll_range",
+    "label": "Working load limit",
+    "dataType": "text",
+    "group": "Performance",
+    "isRequired": false,
+    "isKeyFeature": true,
+    "isQuickSpec": true,
+    "position": 3
+   },
+   {
+    "key": "breaking_load_range",
+    "label": "Minimum breaking load",
+    "dataType": "text",
+    "group": "Performance",
+    "isRequired": false,
+    "isKeyFeature": false,
+    "isQuickSpec": false,
+    "position": 4
+   },
+   {
+    "key": "material",
+    "label": "Material",
+    "dataType": "text",
+    "group": "Construction",
+    "isRequired": false,
+    "isKeyFeature": false,
+    "isQuickSpec": true,
+    "position": 5
+   },
+   {
+    "key": "finish",
+    "label": "Finish",
+    "dataType": "text",
+    "group": "Construction",
+    "isRequired": false,
+    "isKeyFeature": false,
+    "isQuickSpec": true,
+    "position": 6
+   },
+   {
+    "key": "sizes_count",
+    "label": "Sizes",
+    "dataType": "text",
+    "group": "Identification",
+    "isRequired": false,
+    "isKeyFeature": false,
+    "isQuickSpec": false,
+    "position": 7
+   },
+   {
+    "key": "certification",
+    "label": "Certification",
+    "dataType": "text",
+    "group": "Compliance",
+    "isRequired": false,
+    "isKeyFeature": false,
+    "isQuickSpec": false,
+    "position": 8
+   }
+  ]
+ },
+ "categories": [
+  {
+   "slug": "mining-conveyor-chain",
+   "name": "Mining & Conveyor Chain",
+   "parentSlug": "lifting-chain-fittings",
+   "position": 7,
+   "shortDescription": "DIN 22252 round link and DIN 22255 flat link mining chain, wear-resistant conveyor chain, mining chain connectors, monorail chain and chain wheels for bucket elevators.",
+   "seoTitle": "Mining Chain & Conveyor Chain — DIN 22252, DIN 22255",
+   "seoDescription": "DIN 22252 round link and DIN 22255 flat link mining chain in grades B to D, DIN 22253 and DIN 22258 connectors, monorail chain and bucket elevator wheels.",
+   "focusKeyword": "mining chain",
+   "bands": {
+    "guidance": {
+     "heading": "Specified by force, not by WLL",
+     "body": "Mining and conveyor chain is chosen by size (diameter × pitch), strength grade and fatigue class, and is rated by its test force and minimum breaking force. It carries no working load limit and is never used for lifting. Order chain and connectors of the same size and grade, and in matched lengths where the conveyor runs twin strands."
+    },
+    "standards": {
+     "heading": "DIN 22252, 22255, 22253 and 22258",
+     "body": "DIN 22252 covers round link chain for conveyors and mining machinery in grades B, C and D; DIN 22255 the lower-profile flat link chain; DIN 22253 the open connecting link; and DIN 22258-1 the block connecting link. DIN 20637 covers long link chain for monorail suspension."
+    },
+    "faq": {
+     "heading": null,
+     "items": [
+      {
+       "q": "Is mining chain rated for lifting?",
+       "a": "No. It is rated by test and breaking force for conveyor duty and has no working load limit. Lifting calls for Grade 80 or Grade 100 alloy chain."
+      },
+      {
+       "q": "Do you supply chain wheels and sprockets?",
+       "a": "Yes. Plain, segmented, pocket and toothed wheels for DIN 764 and DIN 766 round steel chain are made to order; send the chain size, the wheel diameter or tooth count and the shaft bore."
+      },
+      {
+       "q": "Do the parts come with test certificates?",
+       "a": "Yes. Each consignment ships with the manufacturer's test certificate, giving the test and breaking forces of the batch."
+      }
+     ]
+    }
+   }
+  },
+  {
+   "slug": "anchor-chain-accessories",
+   "name": "Anchor Chain & Accessories",
+   "parentSlug": "load-securing-rope-marine",
+   "position": 5,
+   "shortDescription": "Stud-link and studless anchor chain in grades U1, U2 and U3, with Kenter and D-type joining shackles, end shackles and swivel forerunners.",
+   "seoTitle": "Anchor Chain — Stud Link, Studless, U2 and U3",
+   "seoDescription": "Stud-link and studless anchor chain in grades U1, U2 and U3, with Kenter and D-type joining shackles, end shackles and swivels. Proof and breaking loads.",
+   "focusKeyword": "anchor chain"
+  },
+  {
+   "slug": "marine-anchors",
+   "name": "Marine Anchors",
+   "parentSlug": "load-securing-rope-marine",
+   "position": 3,
+   "shortDescription": "Admiralty, Danforth, Hall, HHP, Baldt and pool stockless anchors and single fluke anchors from 20 kg to 35 t.",
+   "seoTitle": "Marine Anchors — Hall, Danforth, Stockless",
+   "seoDescription": "Marine anchors: Admiralty (GB 545-96), Danforth, Hall, HHP (HY-14), Baldt and pool stockless and single fluke anchors, 20 kg to 35 t.",
+   "focusKeyword": "marine anchors"
+  },
+  {
+   "slug": "stainless-steel-chain",
+   "name": "Stainless Steel Chain",
+   "parentSlug": "lifting-chain-fittings",
+   "position": 6,
+   "shortDescription": "Stainless steel short, medium and long link chain to DIN 5685, DIN 763, DIN 764, DIN 766 and AS/NZS, calibrated chain, and stainless hammerlocks and connecting links.",
+   "seoTitle": "Stainless Steel Chain — DIN 766, DIN 5685, Connectors",
+   "seoDescription": "Stainless steel link chain to DIN 766, DIN 764, DIN 763, DIN 5685 and AS/NZS, calibrated chain and stainless connecting links. Sizes and loads.",
+   "focusKeyword": "stainless steel chain"
+  }
+ ],
+ "products": [
+  {
+   "sku": "IH-LR-AN-DELTA",
+   "slug": "delta-anchor-high-holding-power",
+   "title": "Delta Anchor — High Holding Power",
+   "category": "marine-anchors",
+   "focusKeyword": "delta anchor high holding power",
+   "descriptionShort": "Delta Anchor, High Holding Power, 23 sizes, 300 kg to 20,000 kg. Indus part numbers, manufacturer's test certificate.",
+   "descriptionLong": "<p>Fixed-shank plough anchor of the Delta pattern, classed as high holding power (HHP). The one-piece fabricated body has no hinge, so it sets quickly and holds well in sand and mud, which is why it is common on offshore support vessels, workboats and as a mooring anchor.</p><h3>Sizes and ratings</h3><p>23 sizes, 300 kg to 20,000 kg. Proof test load 98 to 1,840 kN, as the manufacturer applies it. Every row has its own Indus part number in the table below. The lettered dimensions refer to the dimension drawing in the gallery.</p><h3>Choosing an anchor</h3><p>Each mass in the table has its overall dimensions and the proof test load the manufacturer applies. Size the anchor by mass to the class rules for the vessel; as an HHP type, class rules generally allow it at a lower mass than a conventional stockless anchor.</p><h3>Ordering</h3><p>Quote the Indus part number from the table, or send the size you need. Each consignment ships with the manufacturer's test certificate; say on the RFQ if your site needs anything more.</p>",
+   "seoTitle": "Delta Anchor — High Holding Power",
+   "seoDescription": "Delta Anchor, High Holding Power: 23 sizes, 300 kg to 20,000 kg. Indus part numbers and test certificate. Request a quote.",
+   "faqs": [
+    {
+     "question": "What sizes does the Delta anchor come in?",
+     "answer": "23 sizes, 300 kg to 20,000 kg. The table lists each with its Indus part number and dimensions."
+    },
+    {
+     "question": "How is the anchor size chosen?",
+     "answer": "By mass. A ship's anchors are sized from its equipment number under the classification society's rules, which give the anchor mass and the matching anchor chain. For an existing vessel, match the mass and type already carried; for a new installation, send us the equipment number or the class requirement."
+    },
+    {
+     "question": "Can the anchor be supplied with a class certificate?",
+     "answer": "Yes, on request. State the classification society (ABS, BV, CCS, DNV, LR, NK and others) on the RFQ and the anchor is proof tested and certified to that society's rules."
+    },
+    {
+     "question": "Do the parts come with a test certificate?",
+     "answer": "Yes. Each consignment ships with the manufacturer's test certificate. For third-party certification or witnessed proof testing, say so on the RFQ."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Product type",
+     "value": "Delta anchor (fixed-shank HHP plough)",
+     "unit": null,
+     "position": 0,
+     "isFilterable": false,
+     "templateKey": "product_type"
+    },
+    {
+     "group": "Identification",
+     "label": "Pattern / standard",
+     "value": "High holding power (HHP) anchor",
+     "unit": null,
+     "position": 1,
+     "isFilterable": false,
+     "templateKey": "pattern_standard"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Size range",
+     "value": "300 kg to 20,000 kg",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "size_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "High-tensile manganese steel, welded",
+     "unit": null,
+     "position": 3,
+     "isFilterable": true,
+     "templateKey": "material"
+    },
+    {
+     "group": "Construction",
+     "label": "Finish",
+     "value": "Black bitumen paint or primer; hot-dip galvanized on request",
+     "unit": null,
+     "position": 4,
+     "isFilterable": true,
+     "templateKey": "finish"
+    },
+    {
+     "group": "Identification",
+     "label": "Sizes",
+     "value": "23",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "sizes_count"
+    },
+    {
+     "group": "Compliance",
+     "label": "Certification",
+     "value": "Manufacturer's test certificate; class certificate on request",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "certification"
+    }
+   ],
+   "searchAliases": [
+    "delta anchor",
+    "HHP anchor",
+    "high holding power anchor",
+    "plough anchor",
+    "delta flipper anchor",
+    "offshore anchor"
+   ],
+   "images": [
+    {
+     "file": "ih-lr-an-delta-photo-1.jpg",
+     "alt": "Delta Anchor, High Holding Power"
+    },
+    {
+     "file": "ih-lr-an-delta-drawing-2.jpg",
+     "alt": "Delta Anchor, High Holding Power — dimension drawing"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-LR-AN-DELTA-300KG",
+     "position": 0,
+     "dimensions": {
+      "size": "300 kg",
+      "A": 1380.0,
+      "B": 1200.0,
+      "C": 960.0,
+      "D": 465.0,
+      "E": 1080.0,
+      "F": 45.0,
+      "proofKn": 98.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-DELTA-500KG",
+     "position": 1,
+     "dimensions": {
+      "size": "500 kg",
+      "A": 1725.0,
+      "B": 1500.0,
+      "C": 1200.0,
+      "D": 570.0,
+      "E": 1350.0,
+      "F": 48.0,
+      "proofKn": 143.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-DELTA-750KG",
+     "position": 2,
+     "dimensions": {
+      "size": "750 kg",
+      "A": 1950.0,
+      "B": 1700.0,
+      "C": 1360.0,
+      "D": 650.0,
+      "E": 1530.0,
+      "F": 50.0,
+      "proofKn": 198.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-DELTA-1000KG",
+     "position": 3,
+     "dimensions": {
+      "size": "1,000 kg",
+      "A": 2150.0,
+      "B": 1870.0,
+      "C": 1500.0,
+      "D": 710.0,
+      "E": 1680.0,
+      "F": 62.0,
+      "proofKn": 250.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-DELTA-1500KG",
+     "position": 4,
+     "dimensions": {
+      "size": "1,500 kg",
+      "A": 2460.0,
+      "B": 2140.0,
+      "C": 1710.0,
+      "D": 815.0,
+      "E": 1920.0,
+      "F": 70.0,
+      "proofKn": 350.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-DELTA-2000KG",
+     "position": 5,
+     "dimensions": {
+      "size": "2,000 kg",
+      "A": 2715.0,
+      "B": 2360.0,
+      "C": 1890.0,
+      "D": 900.0,
+      "E": 2125.0,
+      "F": 75.0,
+      "proofKn": 435.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-DELTA-2500KG",
+     "position": 6,
+     "dimensions": {
+      "size": "2,500 kg",
+      "A": 2925.0,
+      "B": 2540.0,
+      "C": 2035.0,
+      "D": 970.0,
+      "E": 2290.0,
+      "F": 80.0,
+      "proofKn": 510.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-DELTA-3000KG",
+     "position": 7,
+     "dimensions": {
+      "size": "3,000 kg",
+      "A": 3105.0,
+      "B": 2700.0,
+      "C": 2160.0,
+      "D": 1030.0,
+      "E": 2430.0,
+      "F": 90.0,
+      "proofKn": 576.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-DELTA-3500KG",
+     "position": 8,
+     "dimensions": {
+      "size": "3,500 kg",
+      "A": 3240.0,
+      "B": 2845.0,
+      "C": 2280.0,
+      "D": 1087.0,
+      "E": 2565.0,
+      "F": 90.0,
+      "proofKn": 635.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-DELTA-4000KG",
+     "position": 9,
+     "dimensions": {
+      "size": "4,000 kg",
+      "A": 3375.0,
+      "B": 2953.0,
+      "C": 2315.0,
+      "D": 1140.0,
+      "E": 2650.0,
+      "F": 100.0,
+      "proofKn": 686.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-DELTA-5000KG",
+     "position": 10,
+     "dimensions": {
+      "size": "5,000 kg",
+      "A": 3658.0,
+      "B": 3200.0,
+      "C": 2560.0,
+      "D": 1225.0,
+      "E": 2900.0,
+      "F": 110.0,
+      "proofKn": 776.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-DELTA-6000KG",
+     "position": 11,
+     "dimensions": {
+      "size": "6,000 kg",
+      "A": 3935.0,
+      "B": 3405.0,
+      "C": 2720.0,
+      "D": 1310.0,
+      "E": 3125.0,
+      "F": 110.0,
+      "proofKn": 875.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-DELTA-7000KG",
+     "position": 12,
+     "dimensions": {
+      "size": "7,000 kg",
+      "A": 4120.0,
+      "B": 3580.0,
+      "C": 2860.0,
+      "D": 1360.0,
+      "E": 3220.0,
+      "F": 117.0,
+      "proofKn": 968.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-DELTA-7500KG",
+     "position": 13,
+     "dimensions": {
+      "size": "7,500 kg",
+      "A": 4215.0,
+      "B": 3666.0,
+      "C": 2925.0,
+      "D": 1390.0,
+      "E": 3295.0,
+      "F": 124.0,
+      "proofKn": 1005.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-DELTA-8000KG",
+     "position": 14,
+     "dimensions": {
+      "size": "8,000 kg",
+      "A": 4315.0,
+      "B": 3750.0,
+      "C": 3000.0,
+      "D": 1425.0,
+      "E": 3380.0,
+      "F": 130.0,
+      "proofKn": 1048.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-DELTA-9000KG",
+     "position": 15,
+     "dimensions": {
+      "size": "9,000 kg",
+      "A": 4490.0,
+      "B": 3874.0,
+      "C": 3120.0,
+      "D": 1480.0,
+      "E": 3512.0,
+      "F": 135.0,
+      "proofKn": 1108.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-DELTA-10000KG",
+     "position": 16,
+     "dimensions": {
+      "size": "10,000 kg",
+      "A": 4725.0,
+      "B": 4100.0,
+      "C": 3280.0,
+      "D": 1560.0,
+      "E": 3690.0,
+      "F": 140.0,
+      "proofKn": 1172.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-DELTA-11000KG",
+     "position": 17,
+     "dimensions": {
+      "size": "11,000 kg",
+      "A": 4868.0,
+      "B": 4140.0,
+      "C": 3310.0,
+      "D": 1600.0,
+      "E": 3750.0,
+      "F": 145.0,
+      "proofKn": 1238.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-DELTA-12000KG",
+     "position": 18,
+     "dimensions": {
+      "size": "12,000 kg",
+      "A": 4960.0,
+      "B": 4275.0,
+      "C": 3420.0,
+      "D": 1640.0,
+      "E": 3860.0,
+      "F": 150.0,
+      "proofKn": 1300.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-DELTA-13500KG",
+     "position": 19,
+     "dimensions": {
+      "size": "13,500 kg",
+      "A": 5120.0,
+      "B": 4450.0,
+      "C": 3560.0,
+      "D": 1700.0,
+      "E": 4000.0,
+      "F": 155.0,
+      "proofKn": 1408.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-DELTA-15000KG",
+     "position": 20,
+     "dimensions": {
+      "size": "15,000 kg",
+      "A": 5345.0,
+      "B": 4600.0,
+      "C": 3685.0,
+      "D": 1735.0,
+      "E": 4160.0,
+      "F": 160.0,
+      "proofKn": 1520.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-DELTA-18000KG",
+     "position": 21,
+     "dimensions": {
+      "size": "18,000 kg",
+      "A": 5678.0,
+      "B": 4890.0,
+      "C": 3919.0,
+      "D": 1840.0,
+      "E": 4418.0,
+      "F": 170.0,
+      "proofKn": 1710.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-DELTA-20000KG",
+     "position": 22,
+     "dimensions": {
+      "size": "20,000 kg",
+      "A": 5880.0,
+      "B": 5065.0,
+      "C": 4050.0,
+      "D": 1900.0,
+      "E": 4570.0,
+      "F": 175.0,
+      "proofKn": 1840.0
+     }
+    }
+   ],
+   "crossReferences": []
+  },
+  {
+   "sku": "IH-LR-AN-JIS",
+   "slug": "jis-stock-anchor",
+   "title": "JIS Stock Anchor",
+   "category": "marine-anchors",
+   "focusKeyword": "jis stock anchor",
+   "descriptionShort": "JIS Stock Anchor, 36 sizes, 100 kg to 46,000 kg. Indus part numbers, manufacturer's test certificate.",
+   "descriptionLong": "<p>Cast steel stock anchor to the Japanese Industrial Standard pattern, from 100 kg to 46 t. The stock across the shank turns the anchor so that one fluke digs in, giving good holding on hard and weedy bottoms where a stockless anchor can skid.</p><h3>Sizes</h3><p>36 sizes, 100 kg to 46,000 kg. Every row has its own Indus part number in the table below. The lettered dimensions refer to the dimension drawing in the gallery.</p><h3>Choosing an anchor</h3><p>The table gives the main dimensions for each mass. Choose by mass to the vessel's class requirement, or match the anchor already carried.</p><h3>Ordering</h3><p>Quote the Indus part number from the table, or send the size you need. Each consignment ships with the manufacturer's test certificate; say on the RFQ if your site needs anything more.</p>",
+   "seoTitle": "JIS Stock Anchor",
+   "seoDescription": "JIS Stock Anchor: 36 sizes, 100 kg to 46,000 kg. Indus part numbers and test certificate. Request a quote.",
+   "faqs": [
+    {
+     "question": "What sizes does the JIS stock anchor come in?",
+     "answer": "36 sizes, 100 kg to 46,000 kg. The table lists each with its Indus part number and dimensions."
+    },
+    {
+     "question": "How is the anchor size chosen?",
+     "answer": "By mass. A ship's anchors are sized from its equipment number under the classification society's rules, which give the anchor mass and the matching anchor chain. For an existing vessel, match the mass and type already carried; for a new installation, send us the equipment number or the class requirement."
+    },
+    {
+     "question": "Can the anchor be supplied with a class certificate?",
+     "answer": "Yes, on request. State the classification society (ABS, BV, CCS, DNV, LR, NK and others) on the RFQ and the anchor is proof tested and certified to that society's rules."
+    },
+    {
+     "question": "Do the parts come with a test certificate?",
+     "answer": "Yes. Each consignment ships with the manufacturer's test certificate. For third-party certification or witnessed proof testing, say so on the RFQ."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Product type",
+     "value": "Stock anchor",
+     "unit": null,
+     "position": 0,
+     "isFilterable": false,
+     "templateKey": "product_type"
+    },
+    {
+     "group": "Identification",
+     "label": "Pattern / standard",
+     "value": "JIS stock anchor pattern",
+     "unit": null,
+     "position": 1,
+     "isFilterable": false,
+     "templateKey": "pattern_standard"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Size range",
+     "value": "100 kg to 46,000 kg",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "size_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "Cast steel",
+     "unit": null,
+     "position": 3,
+     "isFilterable": true,
+     "templateKey": "material"
+    },
+    {
+     "group": "Construction",
+     "label": "Finish",
+     "value": "Black bitumen paint",
+     "unit": null,
+     "position": 4,
+     "isFilterable": true,
+     "templateKey": "finish"
+    },
+    {
+     "group": "Identification",
+     "label": "Sizes",
+     "value": "36",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "sizes_count"
+    },
+    {
+     "group": "Compliance",
+     "label": "Certification",
+     "value": "Manufacturer's test certificate; class certificate on request",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "certification"
+    }
+   ],
+   "searchAliases": [
+    "JIS anchor",
+    "stock anchor",
+    "JIS stock anchor",
+    "Japanese stock anchor",
+    "marine anchor"
+   ],
+   "images": [
+    {
+     "file": "ih-lr-an-jis-photo-1.jpg",
+     "alt": "JIS Stock Anchor"
+    },
+    {
+     "file": "ih-lr-an-jis-drawing-2.jpg",
+     "alt": "JIS Stock Anchor — dimension drawing"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-LR-AN-JIS-100KG",
+     "position": 0,
+     "dimensions": {
+      "size": "100 kg",
+      "L": 540.0,
+      "L1": 378.0,
+      "L2": 750.0,
+      "H": 91.0,
+      "H1": 395.0,
+      "B": 230.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-JIS-125KG",
+     "position": 1,
+     "dimensions": {
+      "size": "125 kg",
+      "L": 580.0,
+      "L1": 405.0,
+      "L2": 810.0,
+      "H": 97.0,
+      "H1": 425.0,
+      "B": 248.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-JIS-150KG",
+     "position": 2,
+     "dimensions": {
+      "size": "150 kg",
+      "L": 612.0,
+      "L1": 432.0,
+      "L2": 855.0,
+      "H": 104.0,
+      "H1": 452.0,
+      "B": 264.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-JIS-180KG",
+     "position": 3,
+     "dimensions": {
+      "size": "180 kg",
+      "L": 650.0,
+      "L1": 459.0,
+      "L2": 910.0,
+      "H": 111.0,
+      "H1": 480.0,
+      "B": 280.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-JIS-240KG",
+     "position": 4,
+     "dimensions": {
+      "size": "240 kg",
+      "L": 720.0,
+      "L1": 510.0,
+      "L2": 1010.0,
+      "H": 122.0,
+      "H1": 530.0,
+      "B": 310.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-JIS-280KG",
+     "position": 5,
+     "dimensions": {
+      "size": "280 kg",
+      "L": 760.0,
+      "L1": 534.0,
+      "L2": 1060.0,
+      "H": 130.0,
+      "H1": 560.0,
+      "B": 325.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-JIS-300KG",
+     "position": 6,
+     "dimensions": {
+      "size": "300 kg",
+      "L": 770.0,
+      "L1": 540.0,
+      "L2": 1080.0,
+      "H": 131.0,
+      "H1": 570.0,
+      "B": 331.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-JIS-320KG",
+     "position": 7,
+     "dimensions": {
+      "size": "320 kg",
+      "L": 790.0,
+      "L1": 560.0,
+      "L2": 1100.0,
+      "H": 132.0,
+      "H1": 580.0,
+      "B": 338.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-JIS-360KG",
+     "position": 8,
+     "dimensions": {
+      "size": "360 kg",
+      "L": 820.0,
+      "L1": 580.0,
+      "L2": 1150.0,
+      "H": 139.0,
+      "H1": 610.0,
+      "B": 353.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-JIS-420KG",
+     "position": 9,
+     "dimensions": {
+      "size": "420 kg",
+      "L": 860.0,
+      "L1": 610.0,
+      "L2": 1200.0,
+      "H": 146.0,
+      "H1": 640.0,
+      "B": 370.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-JIS-480KG",
+     "position": 10,
+     "dimensions": {
+      "size": "480 kg",
+      "L": 900.0,
+      "L1": 640.0,
+      "L2": 1260.0,
+      "H": 153.0,
+      "H1": 670.0,
+      "B": 387.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-JIS-570KG",
+     "position": 11,
+     "dimensions": {
+      "size": "570 kg",
+      "L": 950.0,
+      "L1": 670.0,
+      "L2": 1330.0,
+      "H": 162.0,
+      "H1": 700.0,
+      "B": 408.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-JIS-660KG",
+     "position": 12,
+     "dimensions": {
+      "size": "660 kg",
+      "L1": 710.0,
+      "L2": 1440.0,
+      "H": 170.0,
+      "H1": 740.0,
+      "B": 430.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-JIS-780KG",
+     "position": 13,
+     "dimensions": {
+      "size": "780 kg",
+      "L": 1060.0,
+      "L1": 750.0,
+      "L2": 1480.0,
+      "H": 180.0,
+      "H1": 780.0,
+      "B": 456.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-JIS-900KG",
+     "position": 14,
+     "dimensions": {
+      "size": "900 kg",
+      "L": 1110.0,
+      "L1": 780.0,
+      "L2": 1550.0,
+      "H": 189.0,
+      "H1": 820.0,
+      "B": 477.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-JIS-1020KG",
+     "position": 15,
+     "dimensions": {
+      "size": "1,020 kg",
+      "L": 1160.0,
+      "L1": 820.0,
+      "L2": 1620.0,
+      "H": 197.0,
+      "H1": 860.0,
+      "B": 500.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-JIS-1140KG",
+     "position": 16,
+     "dimensions": {
+      "size": "1,140 kg",
+      "L": 1200.0,
+      "L1": 850.0,
+      "L2": 1680.0,
+      "H": 204.0,
+      "H1": 890.0,
+      "B": 520.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-JIS-1290KG",
+     "position": 17,
+     "dimensions": {
+      "size": "1,290 kg",
+      "L": 1250.0,
+      "L1": 880.0,
+      "L2": 1750.0,
+      "H": 212.0,
+      "H1": 920.0,
+      "B": 540.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-JIS-1440KG",
+     "position": 18,
+     "dimensions": {
+      "size": "1,440 kg",
+      "L": 1300.0,
+      "L1": 920.0,
+      "L2": 1820.0,
+      "H": 221.0,
+      "H1": 960.0,
+      "B": 560.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-JIS-1590KG",
+     "position": 19,
+     "dimensions": {
+      "size": "1,590 kg",
+      "L": 1340.0,
+      "L1": 950.0,
+      "L2": 1880.0,
+      "H": 228.0,
+      "H1": 990.0,
+      "B": 580.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-JIS-1740KG",
+     "position": 20,
+     "dimensions": {
+      "size": "1,740 kg",
+      "L": 1380.0,
+      "L1": 980.0,
+      "L2": 1930.0,
+      "H": 235.0,
+      "H1": 1020.0,
+      "B": 600.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-JIS-1920KG",
+     "position": 21,
+     "dimensions": {
+      "size": "1,920 kg",
+      "L": 1430.0,
+      "L1": 1010.0,
+      "L2": 2000.0,
+      "H": 243.0,
+      "H1": 1060.0,
+      "B": 620.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-JIS-2100KG",
+     "position": 22,
+     "dimensions": {
+      "size": "2,100 kg",
+      "L": 1470.0,
+      "L1": 1040.0,
+      "L2": 2060.0,
+      "H": 250.0,
+      "H1": 1090.0,
+      "B": 640.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-JIS-2280KG",
+     "position": 23,
+     "dimensions": {
+      "size": "2,280 kg",
+      "L": 1510.0,
+      "L1": 1070.0,
+      "L2": 2110.0,
+      "H": 257.0,
+      "H1": 1120.0,
+      "B": 650.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-JIS-2460KG",
+     "position": 24,
+     "dimensions": {
+      "size": "2,460 kg",
+      "L": 1550.0,
+      "L1": 1100.0,
+      "L2": 2170.0,
+      "H": 264.0,
+      "H1": 1150.0,
+      "B": 670.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-JIS-2640KG",
+     "position": 25,
+     "dimensions": {
+      "size": "2,640 kg",
+      "L": 1590.0,
+      "L1": 1120.0,
+      "L2": 2230.0,
+      "H": 270.0,
+      "H1": 1180.0,
+      "B": 690.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-JIS-2850KG",
+     "position": 26,
+     "dimensions": {
+      "size": "2,850 kg",
+      "L": 1630.0,
+      "L1": 1150.0,
+      "L2": 2280.0,
+      "H": 277.0,
+      "H1": 1210.0,
+      "B": 700.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-JIS-3060KG",
+     "position": 27,
+     "dimensions": {
+      "size": "3,060 kg",
+      "L": 1670.0,
+      "L1": 1180.0,
+      "L2": 2340.0,
+      "H": 284.0,
+      "H1": 1214.0,
+      "B": 720.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-JIS-3780KG",
+     "position": 28,
+     "dimensions": {
+      "size": "3,780 kg",
+      "L": 1790.0,
+      "L1": 1260.0,
+      "L2": 2510.0,
+      "H": 304.0,
+      "H1": 1320.0,
+      "B": 770.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-JIS-4890KG",
+     "position": 29,
+     "dimensions": {
+      "size": "4,890 kg",
+      "L": 1950.0,
+      "L1": 1380.0,
+      "L2": 2730.0,
+      "H": 332.0,
+      "H1": 1440.0,
+      "B": 840.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-JIS-5610KG",
+     "position": 30,
+     "dimensions": {
+      "size": "5,610 kg",
+      "L": 2040.0,
+      "L1": 1440.0,
+      "L2": 2860.0,
+      "H": 347.0,
+      "H1": 1510.0,
+      "B": 880.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-JIS-8700KG",
+     "position": 31,
+     "dimensions": {
+      "size": "8,700 kg",
+      "L": 2380.0,
+      "L1": 1670.0,
+      "L2": 3320.0,
+      "H": 403.0,
+      "H1": 1750.0,
+      "B": 1020.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-JIS-15400KG",
+     "position": 32,
+     "dimensions": {
+      "size": "15,400 kg",
+      "L": 2860.0,
+      "L1": 2020.0,
+      "L2": 4000.0,
+      "H": 486.0,
+      "H1": 2110.0,
+      "B": 1230.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-JIS-29000KG",
+     "position": 33,
+     "dimensions": {
+      "size": "29,000 kg",
+      "L": 3530.0,
+      "L1": 2490.0,
+      "L2": 4840.0,
+      "H": 600.0,
+      "H1": 2610.0,
+      "B": 1520.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-JIS-38500KG",
+     "position": 34,
+     "dimensions": {
+      "size": "38,500 kg",
+      "L": 3880.0,
+      "L1": 2740.0,
+      "L2": 5430.0,
+      "H": 660.0,
+      "H1": 2860.0,
+      "B": 1670.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-JIS-46000KG",
+     "position": 35,
+     "dimensions": {
+      "size": "46,000 kg",
+      "L": 4120.0,
+      "L1": 2910.0,
+      "L2": 5770.0,
+      "H": 700.0,
+      "H1": 3040.0,
+      "B": 1770.0
+     }
+    }
+   ],
+   "crossReferences": []
+  },
+  {
+   "sku": "IH-LR-AN-MAT",
+   "slug": "matrosov-anchor-high-holding-power",
+   "title": "Matrosov Anchor — High Holding Power",
+   "category": "marine-anchors",
+   "focusKeyword": "matrosov anchor high holding power",
+   "descriptionShort": "Matrosov Anchor, High Holding Power, 17 sizes, 25 kg to 1,500 kg. Indus part numbers, manufacturer's test certificate.",
+   "descriptionLong": "<p>Matrosov anchor, a high holding power design with twin flukes either side of the shank and stabilisers at the crown, from 25 kg to 1,500 kg. It is widely used on river craft, fishing vessels and small commercial ships.</p><h3>Sizes</h3><p>17 sizes, 25 kg to 1,500 kg. Every row has its own Indus part number in the table below.</p><h3>Choosing an anchor</h3><p>The table gives the main dimensions for each mass. Choose by mass to the vessel's class requirement, or match the anchor already carried.</p><h3>Ordering</h3><p>Quote the Indus part number from the table, or send the size you need. Each consignment ships with the manufacturer's test certificate; say on the RFQ if your site needs anything more.</p>",
+   "seoTitle": "Matrosov Anchor — High Holding Power",
+   "seoDescription": "Matrosov Anchor, High Holding Power: 17 sizes, 25 kg to 1,500 kg. Indus part numbers and test certificate. Request a quote.",
+   "faqs": [
+    {
+     "question": "What sizes does the Matrosov anchor come in?",
+     "answer": "17 sizes, 25 kg to 1,500 kg. The table lists each with its Indus part number and dimensions."
+    },
+    {
+     "question": "How is the anchor size chosen?",
+     "answer": "By mass. A ship's anchors are sized from its equipment number under the classification society's rules, which give the anchor mass and the matching anchor chain. For an existing vessel, match the mass and type already carried; for a new installation, send us the equipment number or the class requirement."
+    },
+    {
+     "question": "Can the anchor be supplied with a class certificate?",
+     "answer": "Yes, on request. State the classification society (ABS, BV, CCS, DNV, LR, NK and others) on the RFQ and the anchor is proof tested and certified to that society's rules."
+    },
+    {
+     "question": "Do the parts come with a test certificate?",
+     "answer": "Yes. Each consignment ships with the manufacturer's test certificate. For third-party certification or witnessed proof testing, say so on the RFQ."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Product type",
+     "value": "Matrosov anchor (HHP)",
+     "unit": null,
+     "position": 0,
+     "isFilterable": false,
+     "templateKey": "product_type"
+    },
+    {
+     "group": "Identification",
+     "label": "Pattern / standard",
+     "value": "High holding power (HHP) anchor",
+     "unit": null,
+     "position": 1,
+     "isFilterable": false,
+     "templateKey": "pattern_standard"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Size range",
+     "value": "25 kg to 1,500 kg",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "size_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "Cast or welded steel",
+     "unit": null,
+     "position": 3,
+     "isFilterable": true,
+     "templateKey": "material"
+    },
+    {
+     "group": "Construction",
+     "label": "Finish",
+     "value": "Black bitumen paint or primer; hot-dip galvanized on request",
+     "unit": null,
+     "position": 4,
+     "isFilterable": true,
+     "templateKey": "finish"
+    },
+    {
+     "group": "Identification",
+     "label": "Sizes",
+     "value": "17",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "sizes_count"
+    },
+    {
+     "group": "Compliance",
+     "label": "Certification",
+     "value": "Manufacturer's test certificate; class certificate on request",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "certification"
+    }
+   ],
+   "searchAliases": [
+    "matrosov anchor",
+    "HHP anchor",
+    "high holding power anchor",
+    "twin fluke anchor"
+   ],
+   "images": [
+    {
+     "file": "ih-lr-an-mat-photo-1.jpg",
+     "alt": "Matrosov Anchor, High Holding Power"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-LR-AN-MAT-25KG",
+     "position": 0,
+     "dimensions": {
+      "size": "25 kg",
+      "A": 130.0,
+      "E": 570.0,
+      "C": 690.0,
+      "F": 385.0,
+      "H": 214.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-MAT-35KG",
+     "position": 1,
+     "dimensions": {
+      "size": "35 kg",
+      "A": 148.0,
+      "E": 620.0,
+      "C": 760.0,
+      "F": 420.0,
+      "H": 230.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-MAT-50KG",
+     "position": 2,
+     "dimensions": {
+      "size": "50 kg",
+      "A": 170.0,
+      "E": 680.0,
+      "C": 840.0,
+      "F": 480.0,
+      "H": 250.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-MAT-75KG",
+     "position": 3,
+     "dimensions": {
+      "size": "75 kg",
+      "A": 190.0,
+      "E": 770.0,
+      "C": 950.0,
+      "F": 540.0,
+      "H": 270.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-MAT-100KG",
+     "position": 4,
+     "dimensions": {
+      "size": "100 kg",
+      "A": 210.0,
+      "E": 830.0,
+      "C": 1060.0,
+      "F": 590.0,
+      "H": 290.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-MAT-125KG",
+     "position": 5,
+     "dimensions": {
+      "size": "125 kg",
+      "A": 226.0,
+      "E": 870.0,
+      "C": 1130.0,
+      "F": 630.0,
+      "H": 310.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-MAT-150KG",
+     "position": 6,
+     "dimensions": {
+      "size": "150 kg",
+      "A": 242.0,
+      "E": 910.0,
+      "C": 1190.0,
+      "F": 670.0,
+      "H": 330.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-MAT-200KG",
+     "position": 7,
+     "dimensions": {
+      "size": "200 kg",
+      "A": 270.0,
+      "E": 980.0,
+      "C": 1300.0,
+      "F": 740.0,
+      "H": 370.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-MAT-250KG",
+     "position": 8,
+     "dimensions": {
+      "size": "250 kg",
+      "A": 294.0,
+      "E": 1040.0,
+      "C": 1380.0,
+      "F": 800.0,
+      "H": 400.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-MAT-300KG",
+     "position": 9,
+     "dimensions": {
+      "size": "300 kg",
+      "A": 312.0,
+      "E": 1090.0,
+      "C": 1480.0,
+      "F": 850.0,
+      "H": 430.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-MAT-400KG",
+     "position": 10,
+     "dimensions": {
+      "size": "400 kg",
+      "A": 342.0,
+      "E": 1190.0,
+      "C": 1630.0,
+      "F": 930.0,
+      "H": 480.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-MAT-500KG",
+     "position": 11,
+     "dimensions": {
+      "size": "500 kg",
+      "A": 366.0,
+      "E": 1280.0,
+      "C": 1750.0,
+      "F": 1000.0,
+      "H": 520.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-MAT-650KG",
+     "position": 12,
+     "dimensions": {
+      "size": "650 kg",
+      "A": 400.0,
+      "E": 1385.0,
+      "C": 1910.0,
+      "F": 1090.0,
+      "H": 565.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-MAT-750KG",
+     "position": 13,
+     "dimensions": {
+      "size": "750 kg",
+      "A": 418.0,
+      "E": 1450.0,
+      "C": 2000.0,
+      "F": 1140.0,
+      "H": 590.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-MAT-1000KG",
+     "position": 14,
+     "dimensions": {
+      "size": "1,000 kg",
+      "A": 452.0,
+      "E": 1570.0,
+      "C": 2170.0,
+      "F": 1240.0,
+      "H": 630.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-MAT-1250KG",
+     "position": 15,
+     "dimensions": {
+      "size": "1,250 kg",
+      "A": 488.0,
+      "E": 1660.0,
+      "C": 2280.0,
+      "F": 1300.0,
+      "H": 660.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-MAT-1500KG",
+     "position": 16,
+     "dimensions": {
+      "size": "1,500 kg",
+      "A": 515.0,
+      "E": 1715.0,
+      "C": 2370.0,
+      "F": 1350.0,
+      "H": 675.0
+     }
+    }
+   ],
+   "crossReferences": []
+  },
+  {
+   "sku": "IH-LR-AN-SPEK",
+   "slug": "spek-stockless-anchor",
+   "title": "Spek Stockless Anchor",
+   "category": "marine-anchors",
+   "focusKeyword": "spek stockless anchor",
+   "descriptionShort": "Spek Stockless Anchor, 65 sizes, 50 kg to 29,000 kg. Indus part numbers, manufacturer's test certificate.",
+   "descriptionLong": "<p>Spek pattern stockless bow anchor in cast steel, from 50 kg to 29 t. Its low head and short shank stow neatly in the hawse pipe, and it is a standard bow anchor on merchant ships, tankers and bulk carriers.</p><h3>Sizes</h3><p>65 sizes, 50 kg to 29,000 kg. Every row has its own Indus part number in the table below. The lettered dimensions refer to the dimension drawing in the gallery.</p><h3>Choosing an anchor</h3><p>The table gives the main dimensions for each mass. Choose by mass to the vessel's class requirement, or match the anchor already carried.</p><h3>Ordering</h3><p>Quote the Indus part number from the table, or send the size you need. Each consignment ships with the manufacturer's test certificate; say on the RFQ if your site needs anything more.</p>",
+   "seoTitle": "Spek Stockless Anchor",
+   "seoDescription": "Spek Stockless Anchor: 65 sizes, 50 kg to 29,000 kg. Indus part numbers and test certificate. Request a quote.",
+   "faqs": [
+    {
+     "question": "What sizes does the Spek stockless anchor come in?",
+     "answer": "65 sizes, 50 kg to 29,000 kg. The table lists each with its Indus part number and dimensions."
+    },
+    {
+     "question": "How is the anchor size chosen?",
+     "answer": "By mass. A ship's anchors are sized from its equipment number under the classification society's rules, which give the anchor mass and the matching anchor chain. For an existing vessel, match the mass and type already carried; for a new installation, send us the equipment number or the class requirement."
+    },
+    {
+     "question": "Can the anchor be supplied with a class certificate?",
+     "answer": "Yes, on request. State the classification society (ABS, BV, CCS, DNV, LR, NK and others) on the RFQ and the anchor is proof tested and certified to that society's rules."
+    },
+    {
+     "question": "Do the parts come with a test certificate?",
+     "answer": "Yes. Each consignment ships with the manufacturer's test certificate. For third-party certification or witnessed proof testing, say so on the RFQ."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Product type",
+     "value": "Stockless anchor",
+     "unit": null,
+     "position": 0,
+     "isFilterable": false,
+     "templateKey": "product_type"
+    },
+    {
+     "group": "Identification",
+     "label": "Pattern / standard",
+     "value": "Spek pattern stockless anchor",
+     "unit": null,
+     "position": 1,
+     "isFilterable": false,
+     "templateKey": "pattern_standard"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Size range",
+     "value": "50 kg to 29,000 kg",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "size_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "Cast steel",
+     "unit": null,
+     "position": 3,
+     "isFilterable": true,
+     "templateKey": "material"
+    },
+    {
+     "group": "Construction",
+     "label": "Finish",
+     "value": "Black bitumen paint",
+     "unit": null,
+     "position": 4,
+     "isFilterable": true,
+     "templateKey": "finish"
+    },
+    {
+     "group": "Identification",
+     "label": "Sizes",
+     "value": "65",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "sizes_count"
+    },
+    {
+     "group": "Compliance",
+     "label": "Certification",
+     "value": "Manufacturer's test certificate; class certificate on request",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "certification"
+    }
+   ],
+   "searchAliases": [
+    "spek anchor",
+    "stockless anchor",
+    "bow anchor",
+    "ship anchor",
+    "cast steel anchor"
+   ],
+   "images": [
+    {
+     "file": "ih-lr-an-spek-photo-1.jpg",
+     "alt": "Spek Stockless Anchor"
+    },
+    {
+     "file": "ih-lr-an-spek-drawing-2.jpg",
+     "alt": "Spek Stockless Anchor — dimension drawing"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-LR-AN-SPEK-50KG",
+     "position": 0,
+     "dimensions": {
+      "size": "50 kg",
+      "A": 537.0,
+      "B": 411.0,
+      "C": 185.0,
+      "D": 89.0,
+      "E": 298.0,
+      "F": 298.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-SPEK-75KG",
+     "position": 1,
+     "dimensions": {
+      "size": "75 kg",
+      "A": 638.0,
+      "B": 489.0,
+      "C": 213.0,
+      "D": 106.0,
+      "E": 355.0,
+      "F": 355.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-SPEK-100KG",
+     "position": 2,
+     "dimensions": {
+      "size": "100 kg",
+      "A": 703.0,
+      "B": 539.0,
+      "C": 234.0,
+      "D": 117.0,
+      "E": 390.0,
+      "F": 390.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-SPEK-140KG",
+     "position": 3,
+     "dimensions": {
+      "size": "140 kg",
+      "A": 786.0,
+      "B": 603.0,
+      "C": 262.0,
+      "D": 131.0,
+      "E": 437.0,
+      "F": 437.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-SPEK-180KG",
+     "position": 4,
+     "dimensions": {
+      "size": "180 kg",
+      "A": 855.0,
+      "B": 655.0,
+      "C": 285.0,
+      "D": 142.0,
+      "E": 475.0,
+      "F": 475.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-SPEK-240KG",
+     "position": 5,
+     "dimensions": {
+      "size": "240 kg",
+      "A": 900.0,
+      "B": 690.0,
+      "C": 300.0,
+      "D": 150.0,
+      "E": 500.0,
+      "F": 500.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-SPEK-300KG",
+     "position": 6,
+     "dimensions": {
+      "size": "300 kg",
+      "A": 990.0,
+      "B": 760.0,
+      "C": 330.0,
+      "D": 166.0,
+      "E": 550.0,
+      "F": 550.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-SPEK-360KG",
+     "position": 7,
+     "dimensions": {
+      "size": "360 kg",
+      "A": 1080.0,
+      "B": 828.0,
+      "C": 360.0,
+      "D": 180.0,
+      "E": 600.0,
+      "F": 600.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-SPEK-420KG",
+     "position": 8,
+     "dimensions": {
+      "size": "420 kg",
+      "A": 1080.0,
+      "B": 828.0,
+      "C": 360.0,
+      "D": 180.0,
+      "E": 600.0,
+      "F": 600.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-SPEK-480KG",
+     "position": 9,
+     "dimensions": {
+      "size": "480 kg",
+      "A": 1170.0,
+      "B": 900.0,
+      "C": 390.0,
+      "D": 196.0,
+      "E": 650.0,
+      "F": 650.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-SPEK-570KG",
+     "position": 10,
+     "dimensions": {
+      "size": "570 kg",
+      "A": 1170.0,
+      "B": 900.0,
+      "C": 390.0,
+      "D": 196.0,
+      "E": 650.0,
+      "F": 650.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-SPEK-660KG",
+     "position": 11,
+     "dimensions": {
+      "size": "660 kg",
+      "A": 1260.0,
+      "B": 962.0,
+      "C": 420.0,
+      "D": 210.0,
+      "E": 700.0,
+      "F": 700.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-SPEK-780KG",
+     "position": 12,
+     "dimensions": {
+      "size": "780 kg",
+      "A": 1350.0,
+      "B": 1032.0,
+      "C": 450.0,
+      "D": 225.0,
+      "E": 750.0,
+      "F": 750.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-SPEK-900KG",
+     "position": 13,
+     "dimensions": {
+      "size": "900 kg",
+      "A": 1440.0,
+      "B": 1100.0,
+      "C": 480.0,
+      "D": 240.0,
+      "E": 800.0,
+      "F": 800.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-SPEK-1020KG",
+     "position": 14,
+     "dimensions": {
+      "size": "1,020 kg",
+      "A": 1530.0,
+      "B": 1170.0,
+      "C": 510.0,
+      "D": 252.0,
+      "E": 850.0,
+      "F": 850.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-SPEK-1140KG",
+     "position": 15,
+     "dimensions": {
+      "size": "1,140 kg",
+      "A": 1620.0,
+      "B": 1240.0,
+      "C": 540.0,
+      "D": 268.0,
+      "E": 900.0,
+      "F": 900.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-SPEK-1290KG",
+     "position": 16,
+     "dimensions": {
+      "size": "1,290 kg",
+      "A": 1710.0,
+      "B": 1240.0,
+      "C": 540.0,
+      "D": 268.0,
+      "E": 900.0,
+      "F": 900.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-SPEK-1440KG",
+     "position": 17,
+     "dimensions": {
+      "size": "1,440 kg",
+      "A": 1710.0,
+      "B": 1300.0,
+      "C": 570.0,
+      "D": 279.0,
+      "E": 950.0,
+      "F": 950.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-SPEK-1590KG",
+     "position": 18,
+     "dimensions": {
+      "size": "1,590 kg",
+      "A": 1710.0,
+      "B": 1300.0,
+      "C": 570.0,
+      "D": 279.0,
+      "E": 950.0,
+      "F": 950.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-SPEK-1740KG",
+     "position": 19,
+     "dimensions": {
+      "size": "1,740 kg",
+      "A": 1800.0,
+      "B": 1378.0,
+      "C": 600.0,
+      "D": 300.0,
+      "E": 1000.0,
+      "F": 1000.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-SPEK-1920KG",
+     "position": 20,
+     "dimensions": {
+      "size": "1,920 kg",
+      "A": 1890.0,
+      "B": 1454.0,
+      "C": 630.0,
+      "D": 312.0,
+      "E": 1050.0,
+      "F": 1050.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-SPEK-2100KG",
+     "position": 21,
+     "dimensions": {
+      "size": "2,100 kg",
+      "A": 1890.0,
+      "B": 1454.0,
+      "C": 630.0,
+      "D": 312.0,
+      "E": 1050.0,
+      "F": 1050.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-SPEK-2280KG",
+     "position": 22,
+     "dimensions": {
+      "size": "2,280 kg",
+      "A": 1980.0,
+      "B": 1454.0,
+      "C": 630.0,
+      "D": 312.0,
+      "E": 1050.0,
+      "F": 1050.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-SPEK-2460KG",
+     "position": 23,
+     "dimensions": {
+      "size": "2,460 kg",
+      "A": 2010.0,
+      "B": 1514.0,
+      "C": 660.0,
+      "D": 324.0,
+      "E": 1100.0,
+      "F": 1100.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-SPEK-2640KG",
+     "position": 24,
+     "dimensions": {
+      "size": "2,640 kg",
+      "A": 2070.0,
+      "B": 1584.0,
+      "C": 690.0,
+      "D": 352.0,
+      "E": 1150.0,
+      "F": 1150.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-SPEK-2850KG",
+     "position": 25,
+     "dimensions": {
+      "size": "2,850 kg",
+      "A": 2070.0,
+      "B": 1584.0,
+      "C": 690.0,
+      "D": 352.0,
+      "E": 1150.0,
+      "F": 1150.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-SPEK-3060KG",
+     "position": 26,
+     "dimensions": {
+      "size": "3,060 kg",
+      "A": 2160.0,
+      "B": 1650.0,
+      "C": 720.0,
+      "D": 360.0,
+      "E": 1200.0,
+      "F": 1200.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-SPEK-3300KG",
+     "position": 27,
+     "dimensions": {
+      "size": "3,300 kg",
+      "A": 2160.0,
+      "B": 1650.0,
+      "C": 720.0,
+      "D": 360.0,
+      "E": 1200.0,
+      "F": 1200.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-SPEK-3540KG",
+     "position": 28,
+     "dimensions": {
+      "size": "3,540 kg",
+      "A": 2350.0,
+      "B": 1650.0,
+      "C": 720.0,
+      "D": 360.0,
+      "E": 1200.0,
+      "F": 1200.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-SPEK-3780KG",
+     "position": 29,
+     "dimensions": {
+      "size": "3,780 kg",
+      "A": 2430.0,
+      "B": 1850.0,
+      "C": 810.0,
+      "D": 393.0,
+      "E": 1350.0,
+      "F": 1350.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-SPEK-4050KG",
+     "position": 30,
+     "dimensions": {
+      "size": "4,050 kg",
+      "A": 2430.0,
+      "B": 1850.0,
+      "C": 810.0,
+      "D": 393.0,
+      "E": 1350.0,
+      "F": 1350.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-SPEK-4320KG",
+     "position": 31,
+     "dimensions": {
+      "size": "4,320 kg",
+      "A": 2520.0,
+      "B": 1926.0,
+      "C": 852.0,
+      "D": 413.0,
+      "E": 1400.0,
+      "F": 1400.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-SPEK-4590KG",
+     "position": 32,
+     "dimensions": {
+      "size": "4,590 kg",
+      "A": 2520.0,
+      "B": 1926.0,
+      "C": 852.0,
+      "D": 413.0,
+      "E": 1400.0,
+      "F": 1400.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-SPEK-4890KG",
+     "position": 33,
+     "dimensions": {
+      "size": "4,890 kg",
+      "A": 2520.0,
+      "B": 1926.0,
+      "C": 852.0,
+      "D": 413.0,
+      "E": 1400.0,
+      "F": 1400.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-SPEK-5250KG",
+     "position": 34,
+     "dimensions": {
+      "size": "5,250 kg",
+      "A": 2610.0,
+      "B": 2000.0,
+      "C": 870.0,
+      "D": 414.0,
+      "E": 1450.0,
+      "F": 1450.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-SPEK-5610KG",
+     "position": 35,
+     "dimensions": {
+      "size": "5,610 kg",
+      "A": 2610.0,
+      "B": 2000.0,
+      "C": 870.0,
+      "D": 414.0,
+      "E": 1450.0,
+      "F": 1450.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-SPEK-6000KG",
+     "position": 36,
+     "dimensions": {
+      "size": "6,000 kg",
+      "A": 2700.0,
+      "B": 2060.0,
+      "C": 900.0,
+      "D": 446.0,
+      "E": 1500.0,
+      "F": 1500.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-SPEK-6450KG",
+     "position": 37,
+     "dimensions": {
+      "size": "6,450 kg",
+      "A": 2700.0,
+      "B": 2060.0,
+      "C": 900.0,
+      "D": 446.0,
+      "E": 1500.0,
+      "F": 1500.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-SPEK-6900KG",
+     "position": 38,
+     "dimensions": {
+      "size": "6,900 kg",
+      "A": 2890.0,
+      "B": 2138.0,
+      "C": 930.0,
+      "D": 456.0,
+      "E": 1550.0,
+      "F": 1550.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-SPEK-7350KG",
+     "position": 39,
+     "dimensions": {
+      "size": "7,350 kg",
+      "A": 2890.0,
+      "B": 2138.0,
+      "C": 930.0,
+      "D": 456.0,
+      "E": 1550.0,
+      "F": 1550.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-SPEK-7800KG",
+     "position": 40,
+     "dimensions": {
+      "size": "7,800 kg",
+      "A": 2920.0,
+      "B": 2138.0,
+      "C": 930.0,
+      "D": 456.0,
+      "E": 1550.0,
+      "F": 1550.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-SPEK-8300KG",
+     "position": 41,
+     "dimensions": {
+      "size": "8,300 kg",
+      "A": 3060.0,
+      "B": 2332.0,
+      "C": 1020.0,
+      "D": 510.0,
+      "E": 1700.0,
+      "F": 1700.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-SPEK-8700KG",
+     "position": 42,
+     "dimensions": {
+      "size": "8,700 kg",
+      "A": 3060.0,
+      "B": 2332.0,
+      "C": 1020.0,
+      "D": 510.0,
+      "E": 1700.0,
+      "F": 1700.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-SPEK-9300KG",
+     "position": 43,
+     "dimensions": {
+      "size": "9,300 kg",
+      "A": 3060.0,
+      "B": 2332.0,
+      "C": 1020.0,
+      "D": 510.0,
+      "E": 1700.0,
+      "F": 1700.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-SPEK-9900KG",
+     "position": 44,
+     "dimensions": {
+      "size": "9,900 kg",
+      "A": 3160.0,
+      "B": 2332.0,
+      "C": 1020.0,
+      "D": 510.0,
+      "E": 1700.0,
+      "F": 1700.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-SPEK-10500KG",
+     "position": 45,
+     "dimensions": {
+      "size": "10,500 kg",
+      "A": 3190.0,
+      "B": 2440.0,
+      "C": 1060.0,
+      "D": 531.0,
+      "E": 1770.0,
+      "F": 1770.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-SPEK-11100KG",
+     "position": 46,
+     "dimensions": {
+      "size": "11,100 kg",
+      "A": 3290.0,
+      "B": 2440.0,
+      "C": 1060.0,
+      "D": 531.0,
+      "E": 1770.0,
+      "F": 1770.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-SPEK-11700KG",
+     "position": 47,
+     "dimensions": {
+      "size": "11,700 kg",
+      "A": 3390.0,
+      "B": 2440.0,
+      "C": 1060.0,
+      "D": 531.0,
+      "E": 1770.0,
+      "F": 1770.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-SPEK-12300KG",
+     "position": 48,
+     "dimensions": {
+      "size": "12,300 kg",
+      "A": 3440.0,
+      "B": 2632.0,
+      "C": 1146.0,
+      "D": 573.0,
+      "E": 1910.0,
+      "F": 1910.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-SPEK-12900KG",
+     "position": 49,
+     "dimensions": {
+      "size": "12,900 kg",
+      "A": 3440.0,
+      "B": 2632.0,
+      "C": 1146.0,
+      "D": 573.0,
+      "E": 1910.0,
+      "F": 1910.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-SPEK-13500KG",
+     "position": 50,
+     "dimensions": {
+      "size": "13,500 kg",
+      "A": 3440.0,
+      "B": 2632.0,
+      "C": 1146.0,
+      "D": 573.0,
+      "E": 1910.0,
+      "F": 1910.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-SPEK-14100KG",
+     "position": 51,
+     "dimensions": {
+      "size": "14,100 kg",
+      "A": 3440.0,
+      "B": 2632.0,
+      "C": 1146.0,
+      "D": 573.0,
+      "E": 1910.0,
+      "F": 1910.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-SPEK-14700KG",
+     "position": 52,
+     "dimensions": {
+      "size": "14,700 kg",
+      "A": 3690.0,
+      "B": 2824.0,
+      "C": 1230.0,
+      "D": 615.0,
+      "E": 2050.0,
+      "F": 2050.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-SPEK-15400KG",
+     "position": 53,
+     "dimensions": {
+      "size": "15,400 kg",
+      "A": 3690.0,
+      "B": 2824.0,
+      "C": 1230.0,
+      "D": 615.0,
+      "E": 2050.0,
+      "F": 2050.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-SPEK-16100KG",
+     "position": 54,
+     "dimensions": {
+      "size": "16,100 kg",
+      "A": 3690.0,
+      "B": 2824.0,
+      "C": 1230.0,
+      "D": 615.0,
+      "E": 2050.0,
+      "F": 2050.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-SPEK-16900KG",
+     "position": 55,
+     "dimensions": {
+      "size": "16,900 kg",
+      "A": 3820.0,
+      "B": 2922.0,
+      "C": 1270.0,
+      "D": 636.0,
+      "E": 2120.0,
+      "F": 2120.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-SPEK-17800KG",
+     "position": 56,
+     "dimensions": {
+      "size": "17,800 kg",
+      "A": 3920.0,
+      "B": 2922.0,
+      "C": 1270.0,
+      "D": 636.0,
+      "E": 2120.0,
+      "F": 2120.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-SPEK-18800KG",
+     "position": 57,
+     "dimensions": {
+      "size": "18,800 kg",
+      "A": 3970.0,
+      "B": 3018.0,
+      "C": 1314.0,
+      "D": 657.0,
+      "E": 2190.0,
+      "F": 2190.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-SPEK-20000KG",
+     "position": 58,
+     "dimensions": {
+      "size": "20,000 kg",
+      "A": 4070.0,
+      "B": 3018.0,
+      "C": 1314.0,
+      "D": 657.0,
+      "E": 2190.0,
+      "F": 2190.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-SPEK-21500KG",
+     "position": 59,
+     "dimensions": {
+      "size": "21,500 kg",
+      "A": 4168.0,
+      "B": 3090.0,
+      "C": 1346.0,
+      "D": 673.0,
+      "E": 2243.0,
+      "F": 2243.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-SPEK-23000KG",
+     "position": 60,
+     "dimensions": {
+      "size": "23,000 kg",
+      "A": 4265.0,
+      "B": 3163.0,
+      "C": 1377.0,
+      "D": 689.0,
+      "E": 2295.0,
+      "F": 2295.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-SPEK-24500KG",
+     "position": 61,
+     "dimensions": {
+      "size": "24,500 kg",
+      "A": 4355.0,
+      "B": 3229.0,
+      "C": 1406.0,
+      "D": 703.0,
+      "E": 2343.0,
+      "F": 2343.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-SPEK-26000KG",
+     "position": 62,
+     "dimensions": {
+      "size": "26,000 kg",
+      "A": 4440.0,
+      "B": 3293.0,
+      "C": 1434.0,
+      "D": 717.0,
+      "E": 2389.0,
+      "F": 2389.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-SPEK-27500KG",
+     "position": 63,
+     "dimensions": {
+      "size": "27,500 kg",
+      "A": 4526.0,
+      "B": 3356.0,
+      "C": 1461.0,
+      "D": 731.0,
+      "E": 2435.0,
+      "F": 2435.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-AN-SPEK-29000KG",
+     "position": 64,
+     "dimensions": {
+      "size": "29,000 kg",
+      "A": 4621.0,
+      "B": 3438.0,
+      "C": 1494.0,
+      "D": 748.0,
+      "E": 2494.0,
+      "F": 2494.0
+     }
+    }
+   ],
+   "crossReferences": []
+  },
+  {
+   "sku": "IH-LR-AC-BBB",
+   "slug": "bbb-windlass-chain-grade-30",
+   "title": "BBB Windlass Chain — Grade 30",
+   "category": "anchor-chain-accessories",
+   "focusKeyword": "bbb windlass chain grade 30",
+   "descriptionShort": "BBB Windlass Chain, Grade 30, 4 sizes, 1/4″ (7 mm) to 1/2″ (13 mm), WLL 1,300 to 4,500 lbs. Indus part numbers, manufacturer's test certificate.",
+   "descriptionLong": "<p>BBB pattern windlass chain: Grade 30 proof coil chain made with a short, calibrated link so that it runs through the gypsy of an anchor windlass without jumping. Hot-dip galvanized, for yachts, workboats and small commercial craft.</p><h3>Sizes and ratings</h3><p>4 sizes, 1/4″ (7 mm) to 1/2″ (13 mm). Working load limit 1,300 to 4,500 lbs. Every row has its own Indus part number in the table below.</p><h3>Choosing a size</h3><p>Choose by trade size to match the windlass gypsy; a BBB gypsy needs BBB chain, as the link pitch differs from regular proof coil and high test chain. Select on working load limit; it is anchor chain and not for overhead lifting.</p><h3>Ordering</h3><p>Quote the Indus part number from the table, or send the size you need. Each consignment ships with the manufacturer's test certificate; say on the RFQ if your site needs anything more.</p>",
+   "seoTitle": "BBB Windlass Chain — Grade 30",
+   "seoDescription": "BBB Windlass Chain, Grade 30: 4 sizes, 1/4″ (7 mm) to 1/2″ (13 mm). Indus part numbers and test certificate. Request a quote.",
+   "faqs": [
+    {
+     "question": "What sizes does the BBB windlass chain come in?",
+     "answer": "4 sizes, 1/4″ (7 mm) to 1/2″ (13 mm). The table lists each with its Indus part number and ratings."
+    },
+    {
+     "question": "What is the working load limit?",
+     "answer": "1,300 to 4,500 lbs, depending on size, as the manufacturer rates it. The WLL is the most the chain may carry in service; proof and breaking loads are test figures and never working limits."
+    },
+    {
+     "question": "Can it be used for lifting?",
+     "answer": "No. It is anchor and windlass chain. Overhead lifting with chain calls for alloy lifting chain, Grade 80 or Grade 100, with fittings of the same grade."
+    },
+    {
+     "question": "Do the parts come with a test certificate?",
+     "answer": "Yes. Each consignment ships with the manufacturer's test certificate. For third-party certification or witnessed proof testing, say so on the RFQ."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Product type",
+     "value": "Windlass chain",
+     "unit": null,
+     "position": 0,
+     "isFilterable": false,
+     "templateKey": "product_type"
+    },
+    {
+     "group": "Identification",
+     "label": "Pattern / standard",
+     "value": "BBB pattern, Grade 30",
+     "unit": null,
+     "position": 1,
+     "isFilterable": false,
+     "templateKey": "pattern_standard"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Size range",
+     "value": "1/4″ (7 mm) to 1/2″ (13 mm)",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "size_range"
+    },
+    {
+     "group": "Performance",
+     "label": "Working load limit",
+     "value": "1,300 to 4,500 lbs",
+     "unit": null,
+     "position": 3,
+     "isFilterable": true,
+     "templateKey": "wll_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "Low-carbon steel, welded",
+     "unit": null,
+     "position": 4,
+     "isFilterable": true,
+     "templateKey": "material"
+    },
+    {
+     "group": "Construction",
+     "label": "Finish",
+     "value": "Hot-dip galvanized",
+     "unit": null,
+     "position": 5,
+     "isFilterable": true,
+     "templateKey": "finish"
+    },
+    {
+     "group": "Identification",
+     "label": "Sizes",
+     "value": "4",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "sizes_count"
+    },
+    {
+     "group": "Compliance",
+     "label": "Certification",
+     "value": "Manufacturer's test certificate",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": "certification"
+    }
+   ],
+   "searchAliases": [
+    "BBB chain",
+    "windlass chain",
+    "anchor chain BBB",
+    "galvanized anchor chain",
+    "boat anchor chain",
+    "grade 30 windlass chain"
+   ],
+   "images": [
+    {
+     "file": "ih-lr-ac-bbb-photo-1.jpg",
+     "alt": "BBB Windlass Chain, Grade 30"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-LR-AC-BBB-7MM",
+     "position": 0,
+     "dimensions": {
+      "size": "1/4″ (7 mm)",
+      "materialDia": 7.0,
+      "insideLength": 22.1,
+      "insideWidth": 10.9,
+      "wllLbs": 1300.0,
+      "weightPer100FtLbs": 73.0,
+      "length": "800 ft per drum"
+     }
+    },
+    {
+     "partNumber": "IH-LR-AC-BBB-8MM",
+     "position": 1,
+     "dimensions": {
+      "size": "5/16″ (8 mm)",
+      "materialDia": 8.0,
+      "insideLength": 25.4,
+      "insideWidth": 12.7,
+      "wllLbs": 1900.0,
+      "weightPer100FtLbs": 110.0,
+      "length": "550 ft per drum"
+     }
+    },
+    {
+     "partNumber": "IH-LR-AC-BBB-10MM",
+     "position": 2,
+     "dimensions": {
+      "size": "3/8″ (10 mm)",
+      "materialDia": 10.0,
+      "insideLength": 27.7,
+      "insideWidth": 15.7,
+      "wllLbs": 2650.0,
+      "weightPer100FtLbs": 156.0,
+      "length": "400 ft per drum"
+     }
+    },
+    {
+     "partNumber": "IH-LR-AC-BBB-13MM",
+     "position": 3,
+     "dimensions": {
+      "size": "1/2″ (13 mm)",
+      "materialDia": 13.0,
+      "insideLength": 34.0,
+      "insideWidth": 19.0,
+      "wllLbs": 4500.0,
+      "weightPer100FtLbs": 276.0,
+      "length": "200 ft per drum"
+     }
+    }
+   ],
+   "crossReferences": []
+  },
+  {
+   "sku": "IH-LR-MC-D22252",
+   "slug": "round-link-mining-chain-din-22252",
+   "title": "Round Link Mining Chain — DIN 22252",
+   "category": "mining-conveyor-chain",
+   "focusKeyword": "round link mining chain din 22252",
+   "descriptionShort": "Round Link Mining Chain, DIN 22252, 13 sizes in 46 size and grade combinations, 14 × 50 mm to 42 × 146 mm, breaking force 190 to 2,770 kN. Indus part numbers, manufacturer's test certificate.",
+   "descriptionLong": "<p>Calibrated round steel link chain to DIN 22252 for armoured face conveyors, beam stage loaders, roadheaders and coal ploughs, from 14 × 50 mm to 42 × 146 mm. Made in alloy steel, heat treated, in strength grades B, C, C++ and D.</p><h3>Sizes and ratings</h3><p>13 sizes in 46 size and grade combinations, 14 × 50 mm to 42 × 146 mm. Minimum breaking force 190 to 2,770 kN; test force is listed for each size and grade. Every row has its own Indus part number in the table below.</p><h3>Choosing a size</h3><p>Each size is listed by grade with its test force and minimum breaking force, beside the link dimensions. Order by size (diameter × pitch) and grade, and in matched lengths where the conveyor runs twin strands. It is conveyor and mining machinery chain, rated by test and breaking force; it is not lifting chain and carries no working load limit.</p><h3>Ordering</h3><p>Quote the Indus part number from the table, or send the size and grade you need. Each consignment ships with the manufacturer's test certificate; say on the RFQ if your site needs anything more.</p>",
+   "seoTitle": "Round Link Mining Chain — DIN 22252",
+   "seoDescription": "Round Link Mining Chain, DIN 22252: 13 sizes. Indus part numbers and test certificate. Request a quote.",
+   "faqs": [
+    {
+     "question": "What sizes does the round link mining chain come in?",
+     "answer": "13 sizes in 46 size and grade combinations, 14 × 50 mm to 42 × 146 mm. The table lists each with its Indus part number and ratings."
+    },
+    {
+     "question": "Is mining chain rated for lifting?",
+     "answer": "No. Mining and conveyor chain is specified by its test force, minimum breaking force and fatigue class for running in conveyors and mining machinery. It carries no working load limit and is not used for lifting; lifting calls for Grade 80 or Grade 100 alloy chain."
+    },
+    {
+     "question": "What do grades B, C and D mean?",
+     "answer": "They are the strength classes of DIN 22252 round steel chain, rising from B to D: each step raises the test and breaking forces and the fatigue resistance for the same size. Grade C++ is a supplier class above C. Match the grade to the conveyor maker's specification."
+    },
+    {
+     "question": "Do the parts come with a test certificate?",
+     "answer": "Yes. Each consignment ships with the manufacturer's test certificate. For third-party certification or witnessed proof testing, say so on the RFQ."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Product type",
+     "value": "Round link mining chain",
+     "unit": null,
+     "position": 0,
+     "isFilterable": false,
+     "templateKey": "product_type"
+    },
+    {
+     "group": "Identification",
+     "label": "Pattern / standard",
+     "value": "DIN 22252 (also PN-G-46701, GB/T 12718, GOST 25996)",
+     "unit": null,
+     "position": 1,
+     "isFilterable": false,
+     "templateKey": "pattern_standard"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Size range",
+     "value": "14 × 50 mm to 42 × 146 mm",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "size_range"
+    },
+    {
+     "group": "Performance",
+     "label": "Working load limit",
+     "value": "Not rated — conveyor and mining chain, not for lifting",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "wll_range"
+    },
+    {
+     "group": "Performance",
+     "label": "Minimum breaking load",
+     "value": "190 to 2,770 kN",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "breaking_load_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "Alloy steel (e.g. 23MnNiCrMo54), quenched and tempered",
+     "unit": null,
+     "position": 5,
+     "isFilterable": true,
+     "templateKey": "material"
+    },
+    {
+     "group": "Construction",
+     "label": "Finish",
+     "value": "Self-colour",
+     "unit": null,
+     "position": 6,
+     "isFilterable": true,
+     "templateKey": "finish"
+    },
+    {
+     "group": "Identification",
+     "label": "Sizes",
+     "value": "13",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": "sizes_count"
+    },
+    {
+     "group": "Compliance",
+     "label": "Certification",
+     "value": "Manufacturer's test certificate",
+     "unit": null,
+     "position": 8,
+     "isFilterable": false,
+     "templateKey": "certification"
+    }
+   ],
+   "searchAliases": [
+    "DIN 22252 chain",
+    "mining chain",
+    "round link chain",
+    "AFC chain",
+    "armoured face conveyor chain",
+    "mining round link chain",
+    "scraper conveyor chain"
+   ],
+   "images": [
+    {
+     "file": "ih-lr-mc-d22252-photo-1.jpg",
+     "alt": "Round Link Mining Chain, DIN 22252"
+    },
+    {
+     "file": "ih-lr-mc-d22252-drawing-2.jpg",
+     "alt": "Round Link Mining Chain, DIN 22252 — dimension drawing"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-LR-MC-D22252-14X50-B",
+     "position": 0,
+     "dimensions": {
+      "size": "14 × 50 mm",
+      "materialDia": 14.0,
+      "pitch": 50.0,
+      "insideWidth": 17.0,
+      "outsideWidth": 48.0,
+      "weightPerMetre": 4.0,
+      "grade": "Grade B",
+      "proofKn": 150.0,
+      "mblKn": 190.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-D22252-14X50-C",
+     "position": 1,
+     "dimensions": {
+      "size": "14 × 50 mm",
+      "materialDia": 14.0,
+      "pitch": 50.0,
+      "insideWidth": 17.0,
+      "outsideWidth": 48.0,
+      "weightPerMetre": 4.0,
+      "grade": "Grade C",
+      "proofKn": 200.0,
+      "mblKn": 250.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-D22252-14X50-CPP",
+     "position": 2,
+     "dimensions": {
+      "size": "14 × 50 mm",
+      "materialDia": 14.0,
+      "pitch": 50.0,
+      "insideWidth": 17.0,
+      "outsideWidth": 48.0,
+      "weightPerMetre": 4.0,
+      "grade": "Grade C++",
+      "proofKn": 200.0,
+      "mblKn": 280.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-D22252-14X50-D",
+     "position": 3,
+     "dimensions": {
+      "size": "14 × 50 mm",
+      "materialDia": 14.0,
+      "pitch": 50.0,
+      "insideWidth": 17.0,
+      "outsideWidth": 48.0,
+      "weightPerMetre": 4.0,
+      "grade": "Grade D",
+      "proofKn": 250.0,
+      "mblKn": 310.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-D22252-18X64-B",
+     "position": 4,
+     "dimensions": {
+      "size": "18 × 64 mm",
+      "materialDia": 18.0,
+      "pitch": 64.0,
+      "insideWidth": 21.0,
+      "outsideWidth": 60.0,
+      "weightPerMetre": 6.6,
+      "grade": "Grade B",
+      "proofKn": 260.0,
+      "mblKn": 320.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-D22252-18X64-C",
+     "position": 5,
+     "dimensions": {
+      "size": "18 × 64 mm",
+      "materialDia": 18.0,
+      "pitch": 64.0,
+      "insideWidth": 21.0,
+      "outsideWidth": 60.0,
+      "weightPerMetre": 6.6,
+      "grade": "Grade C",
+      "proofKn": 330.0,
+      "mblKn": 410.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-D22252-18X64-CPP",
+     "position": 6,
+     "dimensions": {
+      "size": "18 × 64 mm",
+      "materialDia": 18.0,
+      "pitch": 64.0,
+      "insideWidth": 21.0,
+      "outsideWidth": 60.0,
+      "weightPerMetre": 6.6,
+      "grade": "Grade C++",
+      "proofKn": 330.0,
+      "mblKn": 460.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-D22252-18X64-D",
+     "position": 7,
+     "dimensions": {
+      "size": "18 × 64 mm",
+      "materialDia": 18.0,
+      "pitch": 64.0,
+      "insideWidth": 21.0,
+      "outsideWidth": 60.0,
+      "weightPerMetre": 6.6,
+      "grade": "Grade D",
+      "proofKn": 410.0,
+      "mblKn": 510.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-D22252-19X64P5-B",
+     "position": 8,
+     "dimensions": {
+      "size": "19 × 64.5 mm",
+      "materialDia": 19.0,
+      "pitch": 64.5,
+      "insideWidth": 22.0,
+      "outsideWidth": 63.0,
+      "weightPerMetre": 7.4,
+      "grade": "Grade B",
+      "proofKn": 290.0,
+      "mblKn": 360.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-D22252-19X64P5-C",
+     "position": 9,
+     "dimensions": {
+      "size": "19 × 64.5 mm",
+      "materialDia": 19.0,
+      "pitch": 64.5,
+      "insideWidth": 22.0,
+      "outsideWidth": 63.0,
+      "weightPerMetre": 7.4,
+      "grade": "Grade C",
+      "proofKn": 360.0,
+      "mblKn": 450.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-D22252-19X64P5-CPP",
+     "position": 10,
+     "dimensions": {
+      "size": "19 × 64.5 mm",
+      "materialDia": 19.0,
+      "pitch": 64.5,
+      "insideWidth": 22.0,
+      "outsideWidth": 63.0,
+      "weightPerMetre": 7.4,
+      "grade": "Grade C++",
+      "proofKn": 360.0,
+      "mblKn": 510.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-D22252-19X64P5-D",
+     "position": 11,
+     "dimensions": {
+      "size": "19 × 64.5 mm",
+      "materialDia": 19.0,
+      "pitch": 64.5,
+      "insideWidth": 22.0,
+      "outsideWidth": 63.0,
+      "weightPerMetre": 7.4,
+      "grade": "Grade D",
+      "proofKn": 450.0,
+      "mblKn": 565.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-D22252-22X86-B",
+     "position": 12,
+     "dimensions": {
+      "size": "22 × 86 mm",
+      "materialDia": 22.0,
+      "pitch": 86.0,
+      "insideWidth": 26.0,
+      "outsideWidth": 73.0,
+      "weightPerMetre": 9.5,
+      "grade": "Grade B",
+      "proofKn": 380.0,
+      "mblKn": 490.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-D22252-22X86-C",
+     "position": 13,
+     "dimensions": {
+      "size": "22 × 86 mm",
+      "materialDia": 22.0,
+      "pitch": 86.0,
+      "insideWidth": 26.0,
+      "outsideWidth": 73.0,
+      "weightPerMetre": 9.5,
+      "grade": "Grade C",
+      "proofKn": 490.0,
+      "mblKn": 610.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-D22252-22X86-CPP",
+     "position": 14,
+     "dimensions": {
+      "size": "22 × 86 mm",
+      "materialDia": 22.0,
+      "pitch": 86.0,
+      "insideWidth": 26.0,
+      "outsideWidth": 73.0,
+      "weightPerMetre": 9.5,
+      "grade": "Grade C++",
+      "proofKn": 490.0,
+      "mblKn": 680.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-D22252-22X86-D",
+     "position": 15,
+     "dimensions": {
+      "size": "22 × 86 mm",
+      "materialDia": 22.0,
+      "pitch": 86.0,
+      "insideWidth": 26.0,
+      "outsideWidth": 73.0,
+      "weightPerMetre": 9.5,
+      "grade": "Grade D",
+      "proofKn": 610.0,
+      "mblKn": 760.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-D22252-24X86-B",
+     "position": 16,
+     "dimensions": {
+      "size": "24 × 86 mm",
+      "materialDia": 24.0,
+      "pitch": 86.0,
+      "insideWidth": 28.0,
+      "outsideWidth": 79.0,
+      "weightPerMetre": 11.6,
+      "grade": "Grade B",
+      "proofKn": 460.0,
+      "mblKn": 570.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-D22252-24X86-C",
+     "position": 17,
+     "dimensions": {
+      "size": "24 × 86 mm",
+      "materialDia": 24.0,
+      "pitch": 86.0,
+      "insideWidth": 28.0,
+      "outsideWidth": 79.0,
+      "weightPerMetre": 11.6,
+      "grade": "Grade C",
+      "proofKn": 580.0,
+      "mblKn": 720.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-D22252-24X86-CPP",
+     "position": 18,
+     "dimensions": {
+      "size": "24 × 86 mm",
+      "materialDia": 24.0,
+      "pitch": 86.0,
+      "insideWidth": 28.0,
+      "outsideWidth": 79.0,
+      "weightPerMetre": 11.6,
+      "grade": "Grade C++",
+      "proofKn": 580.0,
+      "mblKn": 815.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-D22252-24X86-D",
+     "position": 19,
+     "dimensions": {
+      "size": "24 × 86 mm",
+      "materialDia": 24.0,
+      "pitch": 86.0,
+      "insideWidth": 28.0,
+      "outsideWidth": 79.0,
+      "weightPerMetre": 11.6,
+      "grade": "Grade D",
+      "proofKn": 720.0,
+      "mblKn": 900.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-D22252-24X87P5-B",
+     "position": 20,
+     "dimensions": {
+      "size": "24 × 87.5 mm",
+      "materialDia": 24.0,
+      "pitch": 87.5,
+      "insideWidth": 28.0,
+      "outsideWidth": 79.0,
+      "weightPerMetre": 11.5,
+      "grade": "Grade B",
+      "proofKn": 460.0,
+      "mblKn": 570.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-D22252-24X87P5-C",
+     "position": 21,
+     "dimensions": {
+      "size": "24 × 87.5 mm",
+      "materialDia": 24.0,
+      "pitch": 87.5,
+      "insideWidth": 28.0,
+      "outsideWidth": 79.0,
+      "weightPerMetre": 11.5,
+      "grade": "Grade C",
+      "proofKn": 580.0,
+      "mblKn": 720.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-D22252-24X87P5-CPP",
+     "position": 22,
+     "dimensions": {
+      "size": "24 × 87.5 mm",
+      "materialDia": 24.0,
+      "pitch": 87.5,
+      "insideWidth": 28.0,
+      "outsideWidth": 79.0,
+      "weightPerMetre": 11.5,
+      "grade": "Grade C++",
+      "proofKn": 580.0,
+      "mblKn": 815.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-D22252-24X87P5-D",
+     "position": 23,
+     "dimensions": {
+      "size": "24 × 87.5 mm",
+      "materialDia": 24.0,
+      "pitch": 87.5,
+      "insideWidth": 28.0,
+      "outsideWidth": 79.0,
+      "weightPerMetre": 11.5,
+      "grade": "Grade D",
+      "proofKn": 720.0,
+      "mblKn": 900.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-D22252-26X92-B",
+     "position": 24,
+     "dimensions": {
+      "size": "26 × 92 mm",
+      "materialDia": 26.0,
+      "pitch": 92.0,
+      "insideWidth": 30.0,
+      "outsideWidth": 85.0,
+      "weightPerMetre": 13.7,
+      "grade": "Grade B",
+      "proofKn": 540.0,
+      "mblKn": 670.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-D22252-26X92-C",
+     "position": 25,
+     "dimensions": {
+      "size": "26 × 92 mm",
+      "materialDia": 26.0,
+      "pitch": 92.0,
+      "insideWidth": 30.0,
+      "outsideWidth": 85.0,
+      "weightPerMetre": 13.7,
+      "grade": "Grade C",
+      "proofKn": 640.0,
+      "mblKn": 850.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-D22252-26X92-CPP",
+     "position": 26,
+     "dimensions": {
+      "size": "26 × 92 mm",
+      "materialDia": 26.0,
+      "pitch": 92.0,
+      "insideWidth": 30.0,
+      "outsideWidth": 85.0,
+      "weightPerMetre": 13.7,
+      "grade": "Grade C++",
+      "proofKn": 700.0,
+      "mblKn": 960.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-D22252-26X92-D",
+     "position": 27,
+     "dimensions": {
+      "size": "26 × 92 mm",
+      "materialDia": 26.0,
+      "pitch": 92.0,
+      "insideWidth": 30.0,
+      "outsideWidth": 85.0,
+      "weightPerMetre": 13.7,
+      "grade": "Grade D",
+      "proofKn": 790.0,
+      "mblKn": 1060.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-D22252-30X108-C",
+     "position": 28,
+     "dimensions": {
+      "size": "30 × 108 mm",
+      "materialDia": 30.0,
+      "pitch": 108.0,
+      "insideWidth": 34.0,
+      "outsideWidth": 97.0,
+      "weightPerMetre": 18.0,
+      "grade": "Grade C",
+      "proofKn": 850.0,
+      "mblKn": 1130.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-D22252-30X108-CPP",
+     "position": 29,
+     "dimensions": {
+      "size": "30 × 108 mm",
+      "materialDia": 30.0,
+      "pitch": 108.0,
+      "insideWidth": 34.0,
+      "outsideWidth": 97.0,
+      "weightPerMetre": 18.0,
+      "grade": "Grade C++",
+      "proofKn": 950.0,
+      "mblKn": 1280.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-D22252-30X108-D",
+     "position": 30,
+     "dimensions": {
+      "size": "30 × 108 mm",
+      "materialDia": 30.0,
+      "pitch": 108.0,
+      "insideWidth": 34.0,
+      "outsideWidth": 97.0,
+      "weightPerMetre": 18.0,
+      "grade": "Grade D",
+      "proofKn": 1050.0,
+      "mblKn": 1400.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-D22252-34X126-C",
+     "position": 31,
+     "dimensions": {
+      "size": "34 × 126 mm",
+      "materialDia": 34.0,
+      "pitch": 126.0,
+      "insideWidth": 38.0,
+      "outsideWidth": 110.0,
+      "weightPerMetre": 22.7,
+      "grade": "Grade C",
+      "proofKn": 1080.0,
+      "mblKn": 1450.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-D22252-34X126-CPP",
+     "position": 32,
+     "dimensions": {
+      "size": "34 × 126 mm",
+      "materialDia": 34.0,
+      "pitch": 126.0,
+      "insideWidth": 38.0,
+      "outsideWidth": 110.0,
+      "weightPerMetre": 22.7,
+      "grade": "Grade C++",
+      "proofKn": 1200.0,
+      "mblKn": 1650.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-D22252-34X126-D",
+     "position": 33,
+     "dimensions": {
+      "size": "34 × 126 mm",
+      "materialDia": 34.0,
+      "pitch": 126.0,
+      "insideWidth": 38.0,
+      "outsideWidth": 110.0,
+      "weightPerMetre": 22.7,
+      "grade": "Grade D",
+      "proofKn": 1350.0,
+      "mblKn": 1800.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-D22252-38X126-C",
+     "position": 34,
+     "dimensions": {
+      "size": "38 × 126 mm",
+      "materialDia": 38.0,
+      "pitch": 126.0,
+      "insideWidth": 42.0,
+      "outsideWidth": 121.0,
+      "weightPerMetre": 30.1,
+      "grade": "Grade C",
+      "proofKn": 1360.0,
+      "mblKn": 1810.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-D22252-38X126-CPP",
+     "position": 35,
+     "dimensions": {
+      "size": "38 × 126 mm",
+      "materialDia": 38.0,
+      "pitch": 126.0,
+      "insideWidth": 42.0,
+      "outsideWidth": 121.0,
+      "weightPerMetre": 30.1,
+      "grade": "Grade C++",
+      "proofKn": 1500.0,
+      "mblKn": 2040.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-D22252-38X126-D",
+     "position": 36,
+     "dimensions": {
+      "size": "38 × 126 mm",
+      "materialDia": 38.0,
+      "pitch": 126.0,
+      "insideWidth": 42.0,
+      "outsideWidth": 121.0,
+      "weightPerMetre": 30.1,
+      "grade": "Grade D",
+      "proofKn": 1700.0,
+      "mblKn": 2270.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-D22252-38X137-C",
+     "position": 37,
+     "dimensions": {
+      "size": "38 × 137 mm",
+      "materialDia": 38.0,
+      "pitch": 137.0,
+      "insideWidth": 42.0,
+      "outsideWidth": 121.0,
+      "weightPerMetre": 29.0,
+      "grade": "Grade C",
+      "proofKn": 1360.0,
+      "mblKn": 1810.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-D22252-38X137-CPP",
+     "position": 38,
+     "dimensions": {
+      "size": "38 × 137 mm",
+      "materialDia": 38.0,
+      "pitch": 137.0,
+      "insideWidth": 42.0,
+      "outsideWidth": 121.0,
+      "weightPerMetre": 29.0,
+      "grade": "Grade C++",
+      "proofKn": 1500.0,
+      "mblKn": 2040.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-D22252-38X137-D",
+     "position": 39,
+     "dimensions": {
+      "size": "38 × 137 mm",
+      "materialDia": 38.0,
+      "pitch": 137.0,
+      "insideWidth": 42.0,
+      "outsideWidth": 121.0,
+      "weightPerMetre": 29.0,
+      "grade": "Grade D",
+      "proofKn": 1700.0,
+      "mblKn": 2270.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-D22252-42X137-C",
+     "position": 40,
+     "dimensions": {
+      "size": "42 × 137 mm",
+      "materialDia": 42.0,
+      "pitch": 137.0,
+      "insideWidth": 48.0,
+      "outsideWidth": 137.0,
+      "weightPerMetre": 36.9,
+      "grade": "Grade C",
+      "proofKn": 1660.0,
+      "mblKn": 2200.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-D22252-42X137-CPP",
+     "position": 41,
+     "dimensions": {
+      "size": "42 × 137 mm",
+      "materialDia": 42.0,
+      "pitch": 137.0,
+      "insideWidth": 48.0,
+      "outsideWidth": 137.0,
+      "weightPerMetre": 36.9,
+      "grade": "Grade C++",
+      "proofKn": 1800.0,
+      "mblKn": 2500.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-D22252-42X137-D",
+     "position": 42,
+     "dimensions": {
+      "size": "42 × 137 mm",
+      "materialDia": 42.0,
+      "pitch": 137.0,
+      "insideWidth": 48.0,
+      "outsideWidth": 137.0,
+      "weightPerMetre": 36.9,
+      "grade": "Grade D",
+      "proofKn": 2070.0,
+      "mblKn": 2770.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-D22252-42X146-C",
+     "position": 43,
+     "dimensions": {
+      "size": "42 × 146 mm",
+      "materialDia": 42.0,
+      "pitch": 146.0,
+      "insideWidth": 48.0,
+      "outsideWidth": 137.0,
+      "weightPerMetre": 36.0,
+      "grade": "Grade C",
+      "proofKn": 1660.0,
+      "mblKn": 2200.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-D22252-42X146-CPP",
+     "position": 44,
+     "dimensions": {
+      "size": "42 × 146 mm",
+      "materialDia": 42.0,
+      "pitch": 146.0,
+      "insideWidth": 48.0,
+      "outsideWidth": 137.0,
+      "weightPerMetre": 36.0,
+      "grade": "Grade C++",
+      "proofKn": 1800.0,
+      "mblKn": 2500.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-D22252-42X146-D",
+     "position": 45,
+     "dimensions": {
+      "size": "42 × 146 mm",
+      "materialDia": 42.0,
+      "pitch": 146.0,
+      "insideWidth": 48.0,
+      "outsideWidth": 137.0,
+      "weightPerMetre": 36.0,
+      "grade": "Grade D",
+      "proofKn": 2070.0,
+      "mblKn": 2770.0
+     }
+    }
+   ],
+   "crossReferences": []
+  },
+  {
+   "sku": "IH-LR-MC-D22255",
+   "slug": "flat-link-mining-chain-din-22255",
+   "title": "Flat Link Mining Chain — DIN 22255",
+   "category": "mining-conveyor-chain",
+   "focusKeyword": "flat link mining chain din 22255",
+   "descriptionShort": "Flat Link Mining Chain, DIN 22255, 7 sizes in 21 size and grade combinations, 26 × 92 mm to 42 × 146 mm, breaking force 850 to 2,770 kN. Indus part numbers, manufacturer's test certificate.",
+   "descriptionLong": "<p>Compact flat link chain to DIN 22255: round horizontal links with flattened vertical links, so the chain is lower in height than round link chain of the same size. It lets a face conveyor or stage loader run a stronger chain in the same pan height.</p><h3>Sizes and ratings</h3><p>7 sizes in 21 size and grade combinations, 26 × 92 mm to 42 × 146 mm. Minimum breaking force 850 to 2,770 kN; test force is listed for each size and grade. Every row has its own Indus part number in the table below.</p><h3>Choosing a size</h3><p>Listed by size and grade with test and minimum breaking force. The link dimensions are for the round horizontal link; the outside width of the flat vertical link is smaller. It is conveyor and mining machinery chain, rated by test and breaking force; it is not lifting chain and carries no working load limit.</p><h3>Ordering</h3><p>Quote the Indus part number from the table, or send the size and grade you need. Each consignment ships with the manufacturer's test certificate; say on the RFQ if your site needs anything more.</p>",
+   "seoTitle": "Flat Link Mining Chain — DIN 22255",
+   "seoDescription": "Flat Link Mining Chain, DIN 22255: 7 sizes. Indus part numbers and test certificate. Request a quote.",
+   "faqs": [
+    {
+     "question": "What sizes does the flat link mining chain come in?",
+     "answer": "7 sizes in 21 size and grade combinations, 26 × 92 mm to 42 × 146 mm. The table lists each with its Indus part number and ratings."
+    },
+    {
+     "question": "Is mining chain rated for lifting?",
+     "answer": "No. Mining and conveyor chain is specified by its test force, minimum breaking force and fatigue class for running in conveyors and mining machinery. It carries no working load limit and is not used for lifting; lifting calls for Grade 80 or Grade 100 alloy chain."
+    },
+    {
+     "question": "What do grades B, C and D mean?",
+     "answer": "They are the strength classes of DIN 22252 round steel chain, rising from B to D: each step raises the test and breaking forces and the fatigue resistance for the same size. Grade C++ is a supplier class above C. Match the grade to the conveyor maker's specification."
+    },
+    {
+     "question": "Do the parts come with a test certificate?",
+     "answer": "Yes. Each consignment ships with the manufacturer's test certificate. For third-party certification or witnessed proof testing, say so on the RFQ."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Product type",
+     "value": "Flat link mining chain",
+     "unit": null,
+     "position": 0,
+     "isFilterable": false,
+     "templateKey": "product_type"
+    },
+    {
+     "group": "Identification",
+     "label": "Pattern / standard",
+     "value": "DIN 22255",
+     "unit": null,
+     "position": 1,
+     "isFilterable": false,
+     "templateKey": "pattern_standard"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Size range",
+     "value": "26 × 92 mm to 42 × 146 mm",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "size_range"
+    },
+    {
+     "group": "Performance",
+     "label": "Working load limit",
+     "value": "Not rated — conveyor and mining chain, not for lifting",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "wll_range"
+    },
+    {
+     "group": "Performance",
+     "label": "Minimum breaking load",
+     "value": "850 to 2,770 kN",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "breaking_load_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "Alloy steel, quenched and tempered",
+     "unit": null,
+     "position": 5,
+     "isFilterable": true,
+     "templateKey": "material"
+    },
+    {
+     "group": "Construction",
+     "label": "Finish",
+     "value": "Self-colour",
+     "unit": null,
+     "position": 6,
+     "isFilterable": true,
+     "templateKey": "finish"
+    },
+    {
+     "group": "Identification",
+     "label": "Sizes",
+     "value": "7",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": "sizes_count"
+    },
+    {
+     "group": "Compliance",
+     "label": "Certification",
+     "value": "Manufacturer's test certificate",
+     "unit": null,
+     "position": 8,
+     "isFilterable": false,
+     "templateKey": "certification"
+    }
+   ],
+   "searchAliases": [
+    "DIN 22255 chain",
+    "flat link chain",
+    "compact mining chain",
+    "mining flat chain",
+    "AFC flat link chain"
+   ],
+   "images": [
+    {
+     "file": "ih-lr-mc-d22255-photo-1.jpg",
+     "alt": "Flat Link Mining Chain, DIN 22255"
+    },
+    {
+     "file": "ih-lr-mc-d22255-drawing-2.jpg",
+     "alt": "Flat Link Mining Chain, DIN 22255 — dimension drawing"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-LR-MC-D22255-26X92-C",
+     "position": 0,
+     "dimensions": {
+      "size": "26 × 92 mm",
+      "materialDia": 26.0,
+      "pitch": 92.0,
+      "insideWidth": 30.1,
+      "outsideWidth": 87.0,
+      "weightPerMetre": 13.7,
+      "grade": "Grade C",
+      "proofKn": 637.0,
+      "mblKn": 850.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-D22255-26X92-CPP",
+     "position": 1,
+     "dimensions": {
+      "size": "26 × 92 mm",
+      "materialDia": 26.0,
+      "pitch": 92.0,
+      "insideWidth": 30.1,
+      "outsideWidth": 87.0,
+      "weightPerMetre": 13.7,
+      "grade": "Grade C++",
+      "proofKn": 700.0,
+      "mblKn": 970.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-D22255-26X92-D",
+     "position": 2,
+     "dimensions": {
+      "size": "26 × 92 mm",
+      "materialDia": 26.0,
+      "pitch": 92.0,
+      "insideWidth": 30.1,
+      "outsideWidth": 87.0,
+      "weightPerMetre": 13.7,
+      "grade": "Grade D",
+      "proofKn": 740.0,
+      "mblKn": 1060.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-D22255-30X108-C",
+     "position": 3,
+     "dimensions": {
+      "size": "30 × 108 mm",
+      "materialDia": 30.0,
+      "pitch": 108.0,
+      "insideWidth": 34.1,
+      "outsideWidth": 99.0,
+      "weightPerMetre": 18.0,
+      "grade": "Grade C",
+      "proofKn": 848.0,
+      "mblKn": 1130.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-D22255-30X108-CPP",
+     "position": 4,
+     "dimensions": {
+      "size": "30 × 108 mm",
+      "materialDia": 30.0,
+      "pitch": 108.0,
+      "insideWidth": 34.1,
+      "outsideWidth": 99.0,
+      "weightPerMetre": 18.0,
+      "grade": "Grade C++",
+      "proofKn": 950.0,
+      "mblKn": 1280.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-D22255-30X108-D",
+     "position": 5,
+     "dimensions": {
+      "size": "30 × 108 mm",
+      "materialDia": 30.0,
+      "pitch": 108.0,
+      "insideWidth": 34.1,
+      "outsideWidth": 99.0,
+      "weightPerMetre": 18.0,
+      "grade": "Grade D",
+      "proofKn": 990.0,
+      "mblKn": 1400.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-D22255-34X126-C",
+     "position": 6,
+     "dimensions": {
+      "size": "34 × 126 mm",
+      "materialDia": 34.0,
+      "pitch": 126.0,
+      "insideWidth": 38.1,
+      "outsideWidth": 111.0,
+      "weightPerMetre": 22.7,
+      "grade": "Grade C",
+      "proofKn": 1090.0,
+      "mblKn": 1450.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-D22255-34X126-CPP",
+     "position": 7,
+     "dimensions": {
+      "size": "34 × 126 mm",
+      "materialDia": 34.0,
+      "pitch": 126.0,
+      "insideWidth": 38.1,
+      "outsideWidth": 111.0,
+      "weightPerMetre": 22.7,
+      "grade": "Grade C++",
+      "proofKn": 1200.0,
+      "mblKn": 1650.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-D22255-34X126-D",
+     "position": 8,
+     "dimensions": {
+      "size": "34 × 126 mm",
+      "materialDia": 34.0,
+      "pitch": 126.0,
+      "insideWidth": 38.1,
+      "outsideWidth": 111.0,
+      "weightPerMetre": 22.7,
+      "grade": "Grade D",
+      "proofKn": 1270.0,
+      "mblKn": 1800.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-D22255-38X126-C",
+     "position": 9,
+     "dimensions": {
+      "size": "38 × 126 mm",
+      "materialDia": 38.0,
+      "pitch": 126.0,
+      "insideWidth": 42.1,
+      "outsideWidth": 123.0,
+      "weightPerMetre": 30.1,
+      "grade": "Grade C",
+      "proofKn": 1360.0,
+      "mblKn": 1820.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-D22255-38X126-CPP",
+     "position": 10,
+     "dimensions": {
+      "size": "38 × 126 mm",
+      "materialDia": 38.0,
+      "pitch": 126.0,
+      "insideWidth": 42.1,
+      "outsideWidth": 123.0,
+      "weightPerMetre": 30.1,
+      "grade": "Grade C++",
+      "proofKn": 1500.0,
+      "mblKn": 2040.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-D22255-38X126-D",
+     "position": 11,
+     "dimensions": {
+      "size": "38 × 126 mm",
+      "materialDia": 38.0,
+      "pitch": 126.0,
+      "insideWidth": 42.1,
+      "outsideWidth": 123.0,
+      "weightPerMetre": 30.1,
+      "grade": "Grade D",
+      "proofKn": 1590.0,
+      "mblKn": 2270.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-D22255-38X137-C",
+     "position": 12,
+     "dimensions": {
+      "size": "38 × 137 mm",
+      "materialDia": 38.0,
+      "pitch": 137.0,
+      "insideWidth": 42.1,
+      "outsideWidth": 123.0,
+      "weightPerMetre": 29.0,
+      "grade": "Grade C",
+      "proofKn": 1360.0,
+      "mblKn": 1820.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-D22255-38X137-CPP",
+     "position": 13,
+     "dimensions": {
+      "size": "38 × 137 mm",
+      "materialDia": 38.0,
+      "pitch": 137.0,
+      "insideWidth": 42.1,
+      "outsideWidth": 123.0,
+      "weightPerMetre": 29.0,
+      "grade": "Grade C++",
+      "proofKn": 1500.0,
+      "mblKn": 2040.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-D22255-38X137-D",
+     "position": 14,
+     "dimensions": {
+      "size": "38 × 137 mm",
+      "materialDia": 38.0,
+      "pitch": 137.0,
+      "insideWidth": 42.1,
+      "outsideWidth": 123.0,
+      "weightPerMetre": 29.0,
+      "grade": "Grade D",
+      "proofKn": 1590.0,
+      "mblKn": 2270.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-D22255-38X146-C",
+     "position": 15,
+     "dimensions": {
+      "size": "38 × 146 mm",
+      "materialDia": 38.0,
+      "pitch": 146.0,
+      "insideWidth": 42.1,
+      "outsideWidth": 123.0,
+      "weightPerMetre": 27.6,
+      "grade": "Grade C",
+      "proofKn": 1360.0,
+      "mblKn": 1820.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-D22255-38X146-CPP",
+     "position": 16,
+     "dimensions": {
+      "size": "38 × 146 mm",
+      "materialDia": 38.0,
+      "pitch": 146.0,
+      "insideWidth": 42.1,
+      "outsideWidth": 123.0,
+      "weightPerMetre": 27.6,
+      "grade": "Grade C++",
+      "proofKn": 1500.0,
+      "mblKn": 2040.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-D22255-38X146-D",
+     "position": 17,
+     "dimensions": {
+      "size": "38 × 146 mm",
+      "materialDia": 38.0,
+      "pitch": 146.0,
+      "insideWidth": 42.1,
+      "outsideWidth": 123.0,
+      "weightPerMetre": 27.6,
+      "grade": "Grade D",
+      "proofKn": 1590.0,
+      "mblKn": 2270.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-D22255-42X146-C",
+     "position": 18,
+     "dimensions": {
+      "size": "42 × 146 mm",
+      "materialDia": 42.0,
+      "pitch": 146.0,
+      "insideWidth": 48.6,
+      "outsideWidth": 139.0,
+      "weightPerMetre": 36.0,
+      "grade": "Grade C",
+      "proofKn": 1660.0,
+      "mblKn": 2220.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-D22255-42X146-CPP",
+     "position": 19,
+     "dimensions": {
+      "size": "42 × 146 mm",
+      "materialDia": 42.0,
+      "pitch": 146.0,
+      "insideWidth": 48.6,
+      "outsideWidth": 139.0,
+      "weightPerMetre": 36.0,
+      "grade": "Grade C++",
+      "proofKn": 1800.0,
+      "mblKn": 2500.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-D22255-42X146-D",
+     "position": 20,
+     "dimensions": {
+      "size": "42 × 146 mm",
+      "materialDia": 42.0,
+      "pitch": 146.0,
+      "insideWidth": 48.6,
+      "outsideWidth": 139.0,
+      "weightPerMetre": 36.0,
+      "grade": "Grade D",
+      "proofKn": 1940.0,
+      "mblKn": 2770.0
+     }
+    }
+   ],
+   "crossReferences": []
+  },
+  {
+   "sku": "IH-LR-MC-WEAR",
+   "slug": "wear-resistant-round-link-conveyor-chain",
+   "title": "Wear-Resistant Round Link Conveyor Chain",
+   "category": "mining-conveyor-chain",
+   "focusKeyword": "wear-resistant round link conveyor chain",
+   "descriptionShort": "Wear-Resistant Round Link Conveyor Chain, 13 sizes in 39 size and grade combinations, 14 × 50 mm to 42 × 146 mm, breaking force 123 to 2,495 kN. Indus part numbers, manufacturer's test certificate.",
+   "descriptionLong": "<p>Round link conveyor chain with DIN 22252 link dimensions, made in three heat-treated versions for abrasive service: low-temperature tempered G90 for the highest strength, quenched and tempered G60, and case-hardened G40 with a hard wearing surface.</p><h3>Sizes and ratings</h3><p>13 sizes in 39 size and grade combinations, 14 × 50 mm to 42 × 146 mm. Minimum breaking force 123 to 2,495 kN; test force is listed for each size and grade. Every row has its own Indus part number in the table below.</p><h3>Choosing a size</h3><p>Choose the version by duty: G90 where breaking force matters most, G40 where abrasive wear is the main enemy, G60 between the two. Each size is listed with the test and minimum breaking force of each version. It is conveyor and mining machinery chain, rated by test and breaking force; it is not lifting chain and carries no working load limit.</p><h3>Ordering</h3><p>Quote the Indus part number from the table, or send the size and grade you need. Each consignment ships with the manufacturer's test certificate; say on the RFQ if your site needs anything more.</p>",
+   "seoTitle": "Wear-Resistant Round Link Conveyor Chain",
+   "seoDescription": "Wear-Resistant Round Link Conveyor Chain: 13 sizes. Indus part numbers and test certificate. Request a quote.",
+   "faqs": [
+    {
+     "question": "What sizes does the wear-resistant round link conveyor chain come in?",
+     "answer": "13 sizes in 39 size and grade combinations, 14 × 50 mm to 42 × 146 mm. The table lists each with its Indus part number and ratings."
+    },
+    {
+     "question": "Is mining chain rated for lifting?",
+     "answer": "No. Mining and conveyor chain is specified by its test force, minimum breaking force and fatigue class for running in conveyors and mining machinery. It carries no working load limit and is not used for lifting; lifting calls for Grade 80 or Grade 100 alloy chain."
+    },
+    {
+     "question": "Do the parts come with a test certificate?",
+     "answer": "Yes. Each consignment ships with the manufacturer's test certificate. For third-party certification or witnessed proof testing, say so on the RFQ."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Product type",
+     "value": "Wear-resistant round link chain",
+     "unit": null,
+     "position": 0,
+     "isFilterable": false,
+     "templateKey": "product_type"
+    },
+    {
+     "group": "Identification",
+     "label": "Pattern / standard",
+     "value": "DIN 22252 dimensions",
+     "unit": null,
+     "position": 1,
+     "isFilterable": false,
+     "templateKey": "pattern_standard"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Size range",
+     "value": "14 × 50 mm to 42 × 146 mm",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "size_range"
+    },
+    {
+     "group": "Performance",
+     "label": "Working load limit",
+     "value": "Not rated — conveyor and mining chain, not for lifting",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "wll_range"
+    },
+    {
+     "group": "Performance",
+     "label": "Minimum breaking load",
+     "value": "123 to 2,495 kN",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "breaking_load_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "Alloy steel; three heat-treatment options",
+     "unit": null,
+     "position": 5,
+     "isFilterable": true,
+     "templateKey": "material"
+    },
+    {
+     "group": "Construction",
+     "label": "Finish",
+     "value": "Self-colour",
+     "unit": null,
+     "position": 6,
+     "isFilterable": true,
+     "templateKey": "finish"
+    },
+    {
+     "group": "Identification",
+     "label": "Sizes",
+     "value": "13",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": "sizes_count"
+    },
+    {
+     "group": "Compliance",
+     "label": "Certification",
+     "value": "Manufacturer's test certificate",
+     "unit": null,
+     "position": 8,
+     "isFilterable": false,
+     "templateKey": "certification"
+    }
+   ],
+   "searchAliases": [
+    "wear resistant chain",
+    "case hardened chain",
+    "abrasion resistant round link chain",
+    "conveyor chain",
+    "bucket elevator chain"
+   ],
+   "images": [
+    {
+     "file": "ih-lr-mc-wear-drawing-1.jpg",
+     "alt": "Wear-Resistant Round Link Conveyor Chain — dimension drawing"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-LR-MC-WEAR-14X50-G90",
+     "position": 0,
+     "dimensions": {
+      "size": "14 × 50 mm",
+      "materialDia": 14.0,
+      "pitch": 50.0,
+      "insideWidth": 17.0,
+      "outsideWidth": 48.0,
+      "weightPerMetre": 4.0,
+      "grade": "G90, low-temperature tempered",
+      "proofKn": 175.0,
+      "mblKn": 277.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WEAR-14X50-G60",
+     "position": 1,
+     "dimensions": {
+      "size": "14 × 50 mm",
+      "materialDia": 14.0,
+      "pitch": 50.0,
+      "insideWidth": 17.0,
+      "outsideWidth": 48.0,
+      "weightPerMetre": 4.0,
+      "grade": "G60, quenched and tempered",
+      "proofKn": 125.0,
+      "mblKn": 185.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WEAR-14X50-G40",
+     "position": 2,
+     "dimensions": {
+      "size": "14 × 50 mm",
+      "materialDia": 14.0,
+      "pitch": 50.0,
+      "insideWidth": 17.0,
+      "outsideWidth": 48.0,
+      "weightPerMetre": 4.0,
+      "grade": "G40, case-hardened",
+      "proofKn": 75.0,
+      "mblKn": 123.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WEAR-18X64-G90",
+     "position": 3,
+     "dimensions": {
+      "size": "18 × 64 mm",
+      "materialDia": 18.0,
+      "pitch": 64.0,
+      "insideWidth": 21.0,
+      "outsideWidth": 60.0,
+      "weightPerMetre": 6.6,
+      "grade": "G90, low-temperature tempered",
+      "proofKn": 288.0,
+      "mblKn": 458.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WEAR-18X64-G60",
+     "position": 4,
+     "dimensions": {
+      "size": "18 × 64 mm",
+      "materialDia": 18.0,
+      "pitch": 64.0,
+      "insideWidth": 21.0,
+      "outsideWidth": 60.0,
+      "weightPerMetre": 6.6,
+      "grade": "G60, quenched and tempered",
+      "proofKn": 190.0,
+      "mblKn": 305.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WEAR-18X64-G40",
+     "position": 5,
+     "dimensions": {
+      "size": "18 × 64 mm",
+      "materialDia": 18.0,
+      "pitch": 64.0,
+      "insideWidth": 21.0,
+      "outsideWidth": 60.0,
+      "weightPerMetre": 6.6,
+      "grade": "G40, case-hardened",
+      "proofKn": 125.0,
+      "mblKn": 205.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WEAR-19X64P5-G90",
+     "position": 6,
+     "dimensions": {
+      "size": "19 × 64.5 mm",
+      "materialDia": 19.0,
+      "pitch": 64.5,
+      "insideWidth": 22.0,
+      "outsideWidth": 63.0,
+      "weightPerMetre": 7.4,
+      "grade": "G90, low-temperature tempered",
+      "proofKn": 319.0,
+      "mblKn": 510.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WEAR-19X64P5-G60",
+     "position": 7,
+     "dimensions": {
+      "size": "19 × 64.5 mm",
+      "materialDia": 19.0,
+      "pitch": 64.5,
+      "insideWidth": 22.0,
+      "outsideWidth": 63.0,
+      "weightPerMetre": 7.4,
+      "grade": "G60, quenched and tempered",
+      "proofKn": 213.0,
+      "mblKn": 340.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WEAR-19X64P5-G40",
+     "position": 8,
+     "dimensions": {
+      "size": "19 × 64.5 mm",
+      "materialDia": 19.0,
+      "pitch": 64.5,
+      "insideWidth": 22.0,
+      "outsideWidth": 63.0,
+      "weightPerMetre": 7.4,
+      "grade": "G40, case-hardened",
+      "proofKn": 143.0,
+      "mblKn": 227.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WEAR-22X86-G90",
+     "position": 9,
+     "dimensions": {
+      "size": "22 × 86 mm",
+      "materialDia": 22.0,
+      "pitch": 86.0,
+      "insideWidth": 26.0,
+      "outsideWidth": 73.0,
+      "weightPerMetre": 9.5,
+      "grade": "G90, low-temperature tempered",
+      "proofKn": 425.0,
+      "mblKn": 684.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WEAR-22X86-G60",
+     "position": 10,
+     "dimensions": {
+      "size": "22 × 86 mm",
+      "materialDia": 22.0,
+      "pitch": 86.0,
+      "insideWidth": 26.0,
+      "outsideWidth": 73.0,
+      "weightPerMetre": 9.5,
+      "grade": "G60, quenched and tempered",
+      "proofKn": 285.0,
+      "mblKn": 456.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WEAR-22X86-G40",
+     "position": 11,
+     "dimensions": {
+      "size": "22 × 86 mm",
+      "materialDia": 22.0,
+      "pitch": 86.0,
+      "insideWidth": 26.0,
+      "outsideWidth": 73.0,
+      "weightPerMetre": 9.5,
+      "grade": "G40, case-hardened",
+      "proofKn": 190.0,
+      "mblKn": 304.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WEAR-24X86-G90",
+     "position": 12,
+     "dimensions": {
+      "size": "24 × 86 mm",
+      "materialDia": 24.0,
+      "pitch": 86.0,
+      "insideWidth": 28.0,
+      "outsideWidth": 79.0,
+      "weightPerMetre": 11.6,
+      "grade": "G90, low-temperature tempered",
+      "proofKn": 500.0,
+      "mblKn": 814.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WEAR-24X86-G60",
+     "position": 13,
+     "dimensions": {
+      "size": "24 × 86 mm",
+      "materialDia": 24.0,
+      "pitch": 86.0,
+      "insideWidth": 28.0,
+      "outsideWidth": 79.0,
+      "weightPerMetre": 11.6,
+      "grade": "G60, quenched and tempered",
+      "proofKn": 340.0,
+      "mblKn": 540.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WEAR-24X86-G40",
+     "position": 14,
+     "dimensions": {
+      "size": "24 × 86 mm",
+      "materialDia": 24.0,
+      "pitch": 86.0,
+      "insideWidth": 28.0,
+      "outsideWidth": 79.0,
+      "weightPerMetre": 11.6,
+      "grade": "G40, case-hardened",
+      "proofKn": 225.0,
+      "mblKn": 362.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WEAR-24X87P5-G90",
+     "position": 15,
+     "dimensions": {
+      "size": "24 × 87.5 mm",
+      "materialDia": 24.0,
+      "pitch": 87.5,
+      "insideWidth": 28.0,
+      "outsideWidth": 79.0,
+      "weightPerMetre": 11.5,
+      "grade": "G90, low-temperature tempered",
+      "proofKn": 500.0,
+      "mblKn": 814.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WEAR-24X87P5-G60",
+     "position": 16,
+     "dimensions": {
+      "size": "24 × 87.5 mm",
+      "materialDia": 24.0,
+      "pitch": 87.5,
+      "insideWidth": 28.0,
+      "outsideWidth": 79.0,
+      "weightPerMetre": 11.5,
+      "grade": "G60, quenched and tempered",
+      "proofKn": 340.0,
+      "mblKn": 540.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WEAR-24X87P5-G40",
+     "position": 17,
+     "dimensions": {
+      "size": "24 × 87.5 mm",
+      "materialDia": 24.0,
+      "pitch": 87.5,
+      "insideWidth": 28.0,
+      "outsideWidth": 79.0,
+      "weightPerMetre": 11.5,
+      "grade": "G40, case-hardened",
+      "proofKn": 225.0,
+      "mblKn": 362.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WEAR-26X92-G90",
+     "position": 18,
+     "dimensions": {
+      "size": "26 × 92 mm",
+      "materialDia": 26.0,
+      "pitch": 92.0,
+      "insideWidth": 30.0,
+      "outsideWidth": 85.0,
+      "weightPerMetre": 13.7,
+      "grade": "G90, low-temperature tempered",
+      "proofKn": 595.0,
+      "mblKn": 955.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WEAR-26X92-G60",
+     "position": 19,
+     "dimensions": {
+      "size": "26 × 92 mm",
+      "materialDia": 26.0,
+      "pitch": 92.0,
+      "insideWidth": 30.0,
+      "outsideWidth": 85.0,
+      "weightPerMetre": 13.7,
+      "grade": "G60, quenched and tempered",
+      "proofKn": 400.0,
+      "mblKn": 637.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WEAR-26X92-G40",
+     "position": 20,
+     "dimensions": {
+      "size": "26 × 92 mm",
+      "materialDia": 26.0,
+      "pitch": 92.0,
+      "insideWidth": 30.0,
+      "outsideWidth": 85.0,
+      "weightPerMetre": 13.7,
+      "grade": "G40, case-hardened",
+      "proofKn": 265.0,
+      "mblKn": 425.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WEAR-30X108-G90",
+     "position": 21,
+     "dimensions": {
+      "size": "30 × 108 mm",
+      "materialDia": 30.0,
+      "pitch": 108.0,
+      "insideWidth": 34.0,
+      "outsideWidth": 97.0,
+      "weightPerMetre": 18.0,
+      "grade": "G90, low-temperature tempered",
+      "proofKn": 793.0,
+      "mblKn": 1270.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WEAR-30X108-G60",
+     "position": 22,
+     "dimensions": {
+      "size": "30 × 108 mm",
+      "materialDia": 30.0,
+      "pitch": 108.0,
+      "insideWidth": 34.0,
+      "outsideWidth": 97.0,
+      "weightPerMetre": 18.0,
+      "grade": "G60, quenched and tempered",
+      "proofKn": 525.0,
+      "mblKn": 848.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WEAR-30X108-G40",
+     "position": 23,
+     "dimensions": {
+      "size": "30 × 108 mm",
+      "materialDia": 30.0,
+      "pitch": 108.0,
+      "insideWidth": 34.0,
+      "outsideWidth": 97.0,
+      "weightPerMetre": 18.0,
+      "grade": "G40, case-hardened",
+      "proofKn": 350.0,
+      "mblKn": 565.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WEAR-34X126-G90",
+     "position": 24,
+     "dimensions": {
+      "size": "34 × 126 mm",
+      "materialDia": 34.0,
+      "pitch": 126.0,
+      "insideWidth": 38.0,
+      "outsideWidth": 110.0,
+      "weightPerMetre": 22.7,
+      "grade": "G90, low-temperature tempered",
+      "proofKn": 1020.0,
+      "mblKn": 1635.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WEAR-34X126-G60",
+     "position": 25,
+     "dimensions": {
+      "size": "34 × 126 mm",
+      "materialDia": 34.0,
+      "pitch": 126.0,
+      "insideWidth": 38.0,
+      "outsideWidth": 110.0,
+      "weightPerMetre": 22.7,
+      "grade": "G60, quenched and tempered",
+      "proofKn": 680.0,
+      "mblKn": 1089.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WEAR-34X126-G40",
+     "position": 26,
+     "dimensions": {
+      "size": "34 × 126 mm",
+      "materialDia": 34.0,
+      "pitch": 126.0,
+      "insideWidth": 38.0,
+      "outsideWidth": 110.0,
+      "weightPerMetre": 22.7,
+      "grade": "G40, case-hardened",
+      "proofKn": 450.0,
+      "mblKn": 725.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WEAR-38X126-G90",
+     "position": 27,
+     "dimensions": {
+      "size": "38 × 126 mm",
+      "materialDia": 38.0,
+      "pitch": 126.0,
+      "insideWidth": 42.0,
+      "outsideWidth": 121.0,
+      "weightPerMetre": 30.1,
+      "grade": "G90, low-temperature tempered",
+      "proofKn": 1275.0,
+      "mblKn": 2040.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WEAR-38X126-G60",
+     "position": 28,
+     "dimensions": {
+      "size": "38 × 126 mm",
+      "materialDia": 38.0,
+      "pitch": 126.0,
+      "insideWidth": 42.0,
+      "outsideWidth": 121.0,
+      "weightPerMetre": 30.1,
+      "grade": "G60, quenched and tempered",
+      "proofKn": 850.0,
+      "mblKn": 1360.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WEAR-38X126-G40",
+     "position": 29,
+     "dimensions": {
+      "size": "38 × 126 mm",
+      "materialDia": 38.0,
+      "pitch": 126.0,
+      "insideWidth": 42.0,
+      "outsideWidth": 121.0,
+      "weightPerMetre": 30.1,
+      "grade": "G40, case-hardened",
+      "proofKn": 565.0,
+      "mblKn": 906.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WEAR-38X137-G90",
+     "position": 30,
+     "dimensions": {
+      "size": "38 × 137 mm",
+      "materialDia": 38.0,
+      "pitch": 137.0,
+      "insideWidth": 42.0,
+      "outsideWidth": 121.0,
+      "weightPerMetre": 29.0,
+      "grade": "G90, low-temperature tempered",
+      "proofKn": 1275.0,
+      "mblKn": 2040.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WEAR-38X137-G60",
+     "position": 31,
+     "dimensions": {
+      "size": "38 × 137 mm",
+      "materialDia": 38.0,
+      "pitch": 137.0,
+      "insideWidth": 42.0,
+      "outsideWidth": 121.0,
+      "weightPerMetre": 29.0,
+      "grade": "G60, quenched and tempered",
+      "proofKn": 850.0,
+      "mblKn": 1360.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WEAR-38X137-G40",
+     "position": 32,
+     "dimensions": {
+      "size": "38 × 137 mm",
+      "materialDia": 38.0,
+      "pitch": 137.0,
+      "insideWidth": 42.0,
+      "outsideWidth": 121.0,
+      "weightPerMetre": 29.0,
+      "grade": "G40, case-hardened",
+      "proofKn": 565.0,
+      "mblKn": 906.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WEAR-42X137-G90",
+     "position": 33,
+     "dimensions": {
+      "size": "42 × 137 mm",
+      "materialDia": 42.0,
+      "pitch": 137.0,
+      "insideWidth": 48.0,
+      "outsideWidth": 137.0,
+      "weightPerMetre": 36.9,
+      "grade": "G90, low-temperature tempered",
+      "proofKn": 1550.0,
+      "mblKn": 2495.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WEAR-42X137-G60",
+     "position": 34,
+     "dimensions": {
+      "size": "42 × 137 mm",
+      "materialDia": 42.0,
+      "pitch": 137.0,
+      "insideWidth": 48.0,
+      "outsideWidth": 137.0,
+      "weightPerMetre": 36.9,
+      "grade": "G60, quenched and tempered",
+      "proofKn": 1038.0,
+      "mblKn": 1662.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WEAR-42X137-G40",
+     "position": 35,
+     "dimensions": {
+      "size": "42 × 137 mm",
+      "materialDia": 42.0,
+      "pitch": 137.0,
+      "insideWidth": 48.0,
+      "outsideWidth": 137.0,
+      "weightPerMetre": 36.9,
+      "grade": "G40, case-hardened",
+      "proofKn": 693.0,
+      "mblKn": 1108.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WEAR-42X146-G90",
+     "position": 36,
+     "dimensions": {
+      "size": "42 × 146 mm",
+      "materialDia": 42.0,
+      "pitch": 146.0,
+      "insideWidth": 48.0,
+      "outsideWidth": 137.0,
+      "weightPerMetre": 36.0,
+      "grade": "G90, low-temperature tempered",
+      "proofKn": 1550.0,
+      "mblKn": 2495.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WEAR-42X146-G60",
+     "position": 37,
+     "dimensions": {
+      "size": "42 × 146 mm",
+      "materialDia": 42.0,
+      "pitch": 146.0,
+      "insideWidth": 48.0,
+      "outsideWidth": 137.0,
+      "weightPerMetre": 36.0,
+      "grade": "G60, quenched and tempered",
+      "proofKn": 1038.0,
+      "mblKn": 1662.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WEAR-42X146-G40",
+     "position": 38,
+     "dimensions": {
+      "size": "42 × 146 mm",
+      "materialDia": 42.0,
+      "pitch": 146.0,
+      "insideWidth": 48.0,
+      "outsideWidth": 137.0,
+      "weightPerMetre": 36.0,
+      "grade": "G40, case-hardened",
+      "proofKn": 693.0,
+      "mblKn": 1108.0
+     }
+    }
+   ],
+   "crossReferences": []
+  },
+  {
+   "sku": "IH-LR-MC-D22253",
+   "slug": "open-connecting-link-for-mining-chain-din-22253",
+   "title": "Open Connecting Link for Mining Chain — DIN 22253",
+   "category": "mining-conveyor-chain",
+   "focusKeyword": "open connecting link for mining chain din 22253",
+   "descriptionShort": "Open Connecting Link for Mining Chain, DIN 22253, 7 sizes in 16 size and grade combinations, 14 × 50 mm to 30 × 108 mm, breaking force 170 to 869 kN. Indus part numbers, manufacturer's test certificate.",
+   "descriptionLong": "<p>Forged open link, also called an outboard chain connector or mining chain shackle, to DIN 22253. It joins lengths of round link scraper conveyor chain and is closed with its locking pin, for underground mining and scraper conveyors.</p><h3>Sizes and ratings</h3><p>7 sizes in 16 size and grade combinations, 14 × 50 mm to 30 × 108 mm. Minimum breaking force 170 to 869 kN; test force is listed for each size and grade. Every row has its own Indus part number in the table below. The lettered dimensions refer to the dimension drawing in the gallery.</p><h3>Choosing a size</h3><p>Choose the size to match the chain (diameter × pitch). Each size is listed in grade B, grade C and the DIN 22253 class with its test and minimum breaking force; match the class of the chain it joins. It is conveyor and mining machinery chain, rated by test and breaking force; it is not lifting chain and carries no working load limit.</p><h3>Ordering</h3><p>Quote the Indus part number from the table, or send the size and grade you need. Each consignment ships with the manufacturer's test certificate; say on the RFQ if your site needs anything more.</p>",
+   "seoTitle": "Open Connecting Link for Mining Chain — DIN 22253",
+   "seoDescription": "Open Connecting Link for Mining Chain, DIN 22253: 7 sizes. Indus part numbers and test certificate. Request a quote.",
+   "faqs": [
+    {
+     "question": "What sizes does the open connecting link for mining chain come in?",
+     "answer": "7 sizes in 16 size and grade combinations, 14 × 50 mm to 30 × 108 mm. The table lists each with its Indus part number and ratings."
+    },
+    {
+     "question": "Is mining chain rated for lifting?",
+     "answer": "No. Mining and conveyor chain is specified by its test force, minimum breaking force and fatigue class for running in conveyors and mining machinery. It carries no working load limit and is not used for lifting; lifting calls for Grade 80 or Grade 100 alloy chain."
+    },
+    {
+     "question": "Do the parts come with a test certificate?",
+     "answer": "Yes. Each consignment ships with the manufacturer's test certificate. For third-party certification or witnessed proof testing, say so on the RFQ."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Product type",
+     "value": "Open connecting link (outboard chain connector)",
+     "unit": null,
+     "position": 0,
+     "isFilterable": false,
+     "templateKey": "product_type"
+    },
+    {
+     "group": "Identification",
+     "label": "Pattern / standard",
+     "value": "DIN 22253 (also PN-G-46696, MT/T 71)",
+     "unit": null,
+     "position": 1,
+     "isFilterable": false,
+     "templateKey": "pattern_standard"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Size range",
+     "value": "14 × 50 mm to 30 × 108 mm",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "size_range"
+    },
+    {
+     "group": "Performance",
+     "label": "Working load limit",
+     "value": "Not rated — conveyor and mining chain, not for lifting",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "wll_range"
+    },
+    {
+     "group": "Performance",
+     "label": "Minimum breaking load",
+     "value": "170 to 869 kN",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "breaking_load_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "Forged alloy steel, heat treated",
+     "unit": null,
+     "position": 5,
+     "isFilterable": true,
+     "templateKey": "material"
+    },
+    {
+     "group": "Construction",
+     "label": "Finish",
+     "value": "Self-colour",
+     "unit": null,
+     "position": 6,
+     "isFilterable": true,
+     "templateKey": "finish"
+    },
+    {
+     "group": "Identification",
+     "label": "Sizes",
+     "value": "7",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": "sizes_count"
+    },
+    {
+     "group": "Compliance",
+     "label": "Certification",
+     "value": "Manufacturer's test certificate",
+     "unit": null,
+     "position": 8,
+     "isFilterable": false,
+     "templateKey": "certification"
+    }
+   ],
+   "searchAliases": [
+    "DIN 22253 link",
+    "open link",
+    "mining chain connector",
+    "outboard connector",
+    "mining shackle",
+    "scraper chain connecting link"
+   ],
+   "images": [
+    {
+     "file": "ih-lr-mc-d22253-photo-1.jpg",
+     "alt": "Open Connecting Link for Mining Chain, DIN 22253"
+    },
+    {
+     "file": "ih-lr-mc-d22253-drawing-2.jpg",
+     "alt": "Open Connecting Link for Mining Chain, DIN 22253 — dimension drawing"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-LR-MC-D22253-14X50-B",
+     "position": 0,
+     "dimensions": {
+      "size": "14 × 50 mm",
+      "a": 15.0,
+      "t": 50.0,
+      "c": 79.0,
+      "b": 17.0,
+      "e": 78.0,
+      "l1": 17.5,
+      "m": 15.0,
+      "n": 32.0,
+      "p": 17.0,
+      "f": 51.0,
+      "g": 29.0,
+      "grade": "Grade B",
+      "proofKn": 135.0,
+      "mblKn": 170.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-D22253-14X50-C",
+     "position": 1,
+     "dimensions": {
+      "size": "14 × 50 mm",
+      "a": 15.0,
+      "t": 50.0,
+      "c": 79.0,
+      "b": 17.0,
+      "e": 78.0,
+      "l1": 17.5,
+      "m": 15.0,
+      "n": 32.0,
+      "p": 17.0,
+      "f": 51.0,
+      "g": 29.0,
+      "grade": "Grade C",
+      "proofKn": 180.0,
+      "mblKn": 225.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-D22253-14X50-DIN",
+     "position": 2,
+     "dimensions": {
+      "size": "14 × 50 mm",
+      "a": 15.0,
+      "t": 50.0,
+      "c": 79.0,
+      "b": 17.0,
+      "e": 78.0,
+      "l1": 17.5,
+      "m": 15.0,
+      "n": 32.0,
+      "p": 17.0,
+      "f": 51.0,
+      "g": 29.0,
+      "grade": "DIN 22253",
+      "proofKn": 185.0,
+      "mblKn": 212.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-D22253-18X64-B",
+     "position": 3,
+     "dimensions": {
+      "size": "18 × 64 mm",
+      "a": 19.0,
+      "t": 64.0,
+      "c": 101.0,
+      "b": 21.0,
+      "e": 100.0,
+      "l1": 20.5,
+      "m": 19.0,
+      "n": 43.0,
+      "p": 37.0,
+      "f": 55.0,
+      "g": 40.0,
+      "grade": "Grade B",
+      "proofKn": 230.0,
+      "mblKn": 290.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-D22253-18X64-C",
+     "position": 4,
+     "dimensions": {
+      "size": "18 × 64 mm",
+      "a": 19.0,
+      "t": 64.0,
+      "c": 101.0,
+      "b": 21.0,
+      "e": 100.0,
+      "l1": 20.5,
+      "m": 19.0,
+      "n": 43.0,
+      "p": 37.0,
+      "f": 55.0,
+      "g": 40.0,
+      "grade": "Grade C",
+      "proofKn": 300.0,
+      "mblKn": 370.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-D22253-18X64-DIN",
+     "position": 5,
+     "dimensions": {
+      "size": "18 × 64 mm",
+      "a": 19.0,
+      "t": 64.0,
+      "c": 101.0,
+      "b": 21.0,
+      "e": 100.0,
+      "l1": 20.5,
+      "m": 19.0,
+      "n": 43.0,
+      "p": 37.0,
+      "f": 55.0,
+      "g": 40.0,
+      "grade": "DIN 22253",
+      "proofKn": 305.0,
+      "mblKn": 351.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-D22253-19X64P5-B",
+     "position": 6,
+     "dimensions": {
+      "size": "19 × 64.5 mm",
+      "a": 20.0,
+      "t": 64.5,
+      "c": 105.0,
+      "b": 21.0,
+      "e": 100.0,
+      "l1": 20.5,
+      "m": 20.0,
+      "n": 43.0,
+      "p": 37.0,
+      "f": 55.0,
+      "g": 41.0,
+      "grade": "Grade B",
+      "mblKn": 325.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-D22253-19X64P5-C",
+     "position": 7,
+     "dimensions": {
+      "size": "19 × 64.5 mm",
+      "a": 20.0,
+      "t": 64.5,
+      "c": 105.0,
+      "b": 21.0,
+      "e": 100.0,
+      "l1": 20.5,
+      "m": 20.0,
+      "n": 43.0,
+      "p": 37.0,
+      "f": 55.0,
+      "g": 41.0,
+      "grade": "Grade C",
+      "proofKn": 325.0,
+      "mblKn": 405.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-D22253-19X64P5-DIN",
+     "position": 8,
+     "dimensions": {
+      "size": "19 × 64.5 mm",
+      "a": 20.0,
+      "t": 64.5,
+      "c": 105.0,
+      "b": 21.0,
+      "e": 100.0,
+      "l1": 20.5,
+      "m": 20.0,
+      "n": 43.0,
+      "p": 37.0,
+      "f": 55.0,
+      "g": 41.0,
+      "grade": "DIN 22253",
+      "proofKn": 340.0,
+      "mblKn": 391.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-D22253-22X86-C",
+     "position": 9,
+     "dimensions": {
+      "size": "22 × 86 mm",
+      "a": 23.0,
+      "t": 86.0,
+      "c": 132.0,
+      "b": 25.0,
+      "e": 133.0,
+      "l1": 24.5,
+      "m": 23.0,
+      "n": 52.0,
+      "p": 44.0,
+      "f": 75.0,
+      "g": 46.0,
+      "grade": "Grade C",
+      "proofKn": 440.0,
+      "mblKn": 550.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-D22253-22X86-DIN",
+     "position": 10,
+     "dimensions": {
+      "size": "22 × 86 mm",
+      "a": 23.0,
+      "t": 86.0,
+      "c": 132.0,
+      "b": 25.0,
+      "e": 133.0,
+      "l1": 24.5,
+      "m": 23.0,
+      "n": 52.0,
+      "p": 44.0,
+      "f": 75.0,
+      "g": 46.0,
+      "grade": "DIN 22253",
+      "proofKn": 456.0,
+      "mblKn": 525.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-D22253-24X86-B",
+     "position": 11,
+     "dimensions": {
+      "size": "24 × 86 mm",
+      "a": 25.0,
+      "t": 86.0,
+      "c": 136.0,
+      "b": 25.0,
+      "e": 133.0,
+      "l1": 26.0,
+      "m": 25.0,
+      "n": 53.0,
+      "p": 44.0,
+      "f": 78.0,
+      "g": 55.0,
+      "grade": "Grade B",
+      "proofKn": 410.0,
+      "mblKn": 510.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-D22253-24X86-C",
+     "position": 12,
+     "dimensions": {
+      "size": "24 × 86 mm",
+      "a": 25.0,
+      "t": 86.0,
+      "c": 136.0,
+      "b": 25.0,
+      "e": 133.0,
+      "l1": 26.0,
+      "m": 25.0,
+      "n": 53.0,
+      "p": 44.0,
+      "f": 78.0,
+      "g": 55.0,
+      "grade": "Grade C",
+      "proofKn": 490.0,
+      "mblKn": 650.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-D22253-24X86-DIN",
+     "position": 13,
+     "dimensions": {
+      "size": "24 × 86 mm",
+      "a": 25.0,
+      "t": 86.0,
+      "c": 136.0,
+      "b": 25.0,
+      "e": 133.0,
+      "l1": 26.0,
+      "m": 25.0,
+      "n": 53.0,
+      "p": 44.0,
+      "f": 78.0,
+      "g": 55.0,
+      "grade": "DIN 22253",
+      "proofKn": 507.0,
+      "mblKn": 588.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-D22253-26X92-DIN",
+     "position": 14,
+     "dimensions": {
+      "size": "26 × 92 mm",
+      "a": 27.0,
+      "t": 92.0,
+      "c": 146.0,
+      "b": 28.0,
+      "e": 141.0,
+      "l1": 28.0,
+      "m": 27.0,
+      "n": 58.0,
+      "p": 44.0,
+      "f": 85.0,
+      "g": 56.0,
+      "grade": "DIN 22253",
+      "proofKn": 595.0,
+      "mblKn": 690.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-D22253-30X108-DIN",
+     "position": 15,
+     "dimensions": {
+      "size": "30 × 108 mm",
+      "a": 32.0,
+      "t": 108.0,
+      "c": 172.0,
+      "b": 31.0,
+      "e": 159.0,
+      "l1": 32.0,
+      "m": 32.0,
+      "n": 70.0,
+      "p": 44.0,
+      "f": 100.0,
+      "g": 59.0,
+      "grade": "DIN 22253",
+      "proofKn": 750.0,
+      "mblKn": 869.0
+     }
+    }
+   ],
+   "crossReferences": []
+  },
+  {
+   "sku": "IH-LR-MC-D22258",
+   "slug": "block-connecting-link-for-mining-chain-din-22258-1",
+   "title": "Block Connecting Link for Mining Chain — DIN 22258-1",
+   "category": "mining-conveyor-chain",
+   "focusKeyword": "block connecting link for mining chain din 22258-1",
+   "descriptionShort": "Block Connecting Link for Mining Chain, DIN 22258-1, 6 sizes, 22 × 86 mm to 38 × 137 mm, breaking force 540 to 1,610 kN. Indus part numbers, manufacturer's test certificate.",
+   "descriptionLong": "<p>Two-part block connecting link to DIN 22258-1 for joining round link mining chain and compact chain. It fits through the conveyor as a horizontal or vertical link in round link chain, and as a horizontal link in compact chain, and locks with its central pin.</p><h3>Sizes and ratings</h3><p>6 sizes, 22 × 86 mm to 38 × 137 mm. Minimum breaking force 540 to 1,610 kN; test force is listed for each size and grade. Every row has its own Indus part number in the table below. The lettered dimensions refer to the dimension drawing in the gallery.</p><h3>Choosing a size</h3><p>Choose the size to match the chain (diameter × pitch). The table gives the link dimensions with its test and minimum breaking force. It is conveyor and mining machinery chain, rated by test and breaking force; it is not lifting chain and carries no working load limit.</p><h3>Ordering</h3><p>Quote the Indus part number from the table, or send the size you need. Each consignment ships with the manufacturer's test certificate; say on the RFQ if your site needs anything more.</p>",
+   "seoTitle": "Block Connecting Link for Mining Chain — DIN 22258-1",
+   "seoDescription": "Block Connecting Link for Mining Chain, DIN 22258-1: 6 sizes, 22 × 86 mm to 38 × 137 mm. Indus part numbers and test certificate. Request a quote.",
+   "faqs": [
+    {
+     "question": "What sizes does the block connecting link for mining chain come in?",
+     "answer": "6 sizes, 22 × 86 mm to 38 × 137 mm. The table lists each with its Indus part number and ratings."
+    },
+    {
+     "question": "Is mining chain rated for lifting?",
+     "answer": "No. Mining and conveyor chain is specified by its test force, minimum breaking force and fatigue class for running in conveyors and mining machinery. It carries no working load limit and is not used for lifting; lifting calls for Grade 80 or Grade 100 alloy chain."
+    },
+    {
+     "question": "Do the parts come with a test certificate?",
+     "answer": "Yes. Each consignment ships with the manufacturer's test certificate. For third-party certification or witnessed proof testing, say so on the RFQ."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Product type",
+     "value": "Block connecting link",
+     "unit": null,
+     "position": 0,
+     "isFilterable": false,
+     "templateKey": "product_type"
+    },
+    {
+     "group": "Identification",
+     "label": "Pattern / standard",
+     "value": "DIN 22258-1 (also MT/T 99)",
+     "unit": null,
+     "position": 1,
+     "isFilterable": false,
+     "templateKey": "pattern_standard"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Size range",
+     "value": "22 × 86 mm to 38 × 137 mm",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "size_range"
+    },
+    {
+     "group": "Performance",
+     "label": "Working load limit",
+     "value": "Not rated — conveyor and mining chain, not for lifting",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "wll_range"
+    },
+    {
+     "group": "Performance",
+     "label": "Minimum breaking load",
+     "value": "540 to 1,610 kN",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "breaking_load_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "Forged alloy steel, heat treated",
+     "unit": null,
+     "position": 5,
+     "isFilterable": true,
+     "templateKey": "material"
+    },
+    {
+     "group": "Construction",
+     "label": "Finish",
+     "value": "Self-colour or painted",
+     "unit": null,
+     "position": 6,
+     "isFilterable": true,
+     "templateKey": "finish"
+    },
+    {
+     "group": "Identification",
+     "label": "Sizes",
+     "value": "6",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": "sizes_count"
+    },
+    {
+     "group": "Compliance",
+     "label": "Certification",
+     "value": "Manufacturer's test certificate",
+     "unit": null,
+     "position": 8,
+     "isFilterable": false,
+     "templateKey": "certification"
+    }
+   ],
+   "searchAliases": [
+    "DIN 22258 connector",
+    "block connector",
+    "mining chain connecting link",
+    "kenter type mining connector",
+    "AFC chain connector"
+   ],
+   "images": [
+    {
+     "file": "ih-lr-mc-d22258-drawing-1.jpg",
+     "alt": "Block Connecting Link for Mining Chain, DIN 22258-1 — dimension drawing"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-LR-MC-D22258-22X86",
+     "position": 0,
+     "dimensions": {
+      "size": "22 × 86 mm",
+      "materialDia": 22.0,
+      "pitch": 86.0,
+      "insideWidth": 24.0,
+      "outsideWidth": 85.0,
+      "C": 28.0,
+      "overallLength": 132.0,
+      "r": 34.0,
+      "weightKg": 1.3,
+      "proofKn": 456.0,
+      "mblKn": 540.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-D22258-26X92",
+     "position": 1,
+     "dimensions": {
+      "size": "26 × 92 mm",
+      "materialDia": 26.0,
+      "pitch": 92.0,
+      "insideWidth": 29.0,
+      "outsideWidth": 99.0,
+      "C": 33.0,
+      "overallLength": 146.0,
+      "r": 40.0,
+      "weightKg": 2.0,
+      "proofKn": 637.0,
+      "mblKn": 754.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-D22258-30X108",
+     "position": 2,
+     "dimensions": {
+      "size": "30 × 108 mm",
+      "materialDia": 30.0,
+      "pitch": 108.0,
+      "insideWidth": 33.0,
+      "outsideWidth": 109.0,
+      "C": 36.0,
+      "overallLength": 170.0,
+      "r": 46.0,
+      "weightKg": 3.0,
+      "proofKn": 848.0,
+      "mblKn": 1000.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-D22258-34X126",
+     "position": 3,
+     "dimensions": {
+      "size": "34 × 126 mm",
+      "materialDia": 34.0,
+      "pitch": 126.0,
+      "insideWidth": 36.0,
+      "outsideWidth": 121.0,
+      "C": 41.0,
+      "overallLength": 196.0,
+      "r": 52.0,
+      "weightKg": 4.3,
+      "proofKn": 1090.0,
+      "mblKn": 1290.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-D22258-38X126",
+     "position": 4,
+     "dimensions": {
+      "size": "38 × 126 mm",
+      "materialDia": 38.0,
+      "pitch": 126.0,
+      "insideWidth": 40.0,
+      "outsideWidth": 137.0,
+      "C": 46.0,
+      "overallLength": 204.0,
+      "r": 59.0,
+      "weightKg": 5.4,
+      "proofKn": 1360.0,
+      "mblKn": 1610.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-D22258-38X137",
+     "position": 5,
+     "dimensions": {
+      "size": "38 × 137 mm",
+      "materialDia": 38.0,
+      "pitch": 137.0,
+      "insideWidth": 40.0,
+      "outsideWidth": 134.0,
+      "C": 46.0,
+      "overallLength": 215.0,
+      "r": 59.0,
+      "weightKg": 5.8,
+      "proofKn": 1360.0,
+      "mblKn": 1610.0
+     }
+    }
+   ],
+   "crossReferences": []
+  },
+  {
+   "sku": "IH-LR-MC-D20637",
+   "slug": "long-link-monorail-suspension-chain-din-20637",
+   "title": "Long Link Monorail Suspension Chain — DIN 20637",
+   "category": "mining-conveyor-chain",
+   "focusKeyword": "long link monorail suspension chain din 20637",
+   "descriptionShort": "Long Link Monorail Suspension Chain, DIN 20637, 2 sizes, 16 × 80 mm to 18 × 90 mm, breaking force 180 to 250 kN. Indus part numbers, manufacturer's test certificate.",
+   "descriptionLong": "<p>Calibrated long link chain to DIN 20637 for suspending monorail track in underground mines. The alloy steel chain is tested, and the manufacturer states it exceeds the standard's forces by about 10%.</p><h3>Sizes and ratings</h3><p>2 sizes, 16 × 80 mm to 18 × 90 mm. Minimum breaking force 180 to 250 kN; test force is listed for each size and grade. Every row has its own Indus part number in the table below.</p><h3>Choosing a size</h3><p>The table gives the link dimensions with test and minimum breaking force for each size. Use it for monorail track suspension as the mine's design specifies. It is conveyor and mining machinery chain, rated by test and breaking force; it is not lifting chain and carries no working load limit.</p><h3>Ordering</h3><p>Quote the Indus part number from the table, or send the size you need. Each consignment ships with the manufacturer's test certificate; say on the RFQ if your site needs anything more.</p>",
+   "seoTitle": "Long Link Monorail Suspension Chain — DIN 20637",
+   "seoDescription": "Long Link Monorail Suspension Chain, DIN 20637: 2 sizes, 16 × 80 mm to 18 × 90 mm. Indus part numbers and test certificate. Request a quote.",
+   "faqs": [
+    {
+     "question": "What sizes does the long link monorail suspension chain come in?",
+     "answer": "2 sizes, 16 × 80 mm to 18 × 90 mm. The table lists each with its Indus part number and ratings."
+    },
+    {
+     "question": "Is mining chain rated for lifting?",
+     "answer": "No. Mining and conveyor chain is specified by its test force, minimum breaking force and fatigue class for running in conveyors and mining machinery. It carries no working load limit and is not used for lifting; lifting calls for Grade 80 or Grade 100 alloy chain."
+    },
+    {
+     "question": "Do the parts come with a test certificate?",
+     "answer": "Yes. Each consignment ships with the manufacturer's test certificate. For third-party certification or witnessed proof testing, say so on the RFQ."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Product type",
+     "value": "Monorail suspension chain",
+     "unit": null,
+     "position": 0,
+     "isFilterable": false,
+     "templateKey": "product_type"
+    },
+    {
+     "group": "Identification",
+     "label": "Pattern / standard",
+     "value": "DIN 20637",
+     "unit": null,
+     "position": 1,
+     "isFilterable": false,
+     "templateKey": "pattern_standard"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Size range",
+     "value": "16 × 80 mm to 18 × 90 mm",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "size_range"
+    },
+    {
+     "group": "Performance",
+     "label": "Working load limit",
+     "value": "Not rated — conveyor and mining chain, not for lifting",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "wll_range"
+    },
+    {
+     "group": "Performance",
+     "label": "Minimum breaking load",
+     "value": "180 to 250 kN",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "breaking_load_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "Alloy steel (NiCrMo), calibrated and tested",
+     "unit": null,
+     "position": 5,
+     "isFilterable": true,
+     "templateKey": "material"
+    },
+    {
+     "group": "Construction",
+     "label": "Finish",
+     "value": "Self-colour",
+     "unit": null,
+     "position": 6,
+     "isFilterable": true,
+     "templateKey": "finish"
+    },
+    {
+     "group": "Identification",
+     "label": "Sizes",
+     "value": "2",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": "sizes_count"
+    },
+    {
+     "group": "Compliance",
+     "label": "Certification",
+     "value": "Manufacturer's test certificate",
+     "unit": null,
+     "position": 8,
+     "isFilterable": false,
+     "templateKey": "certification"
+    }
+   ],
+   "searchAliases": [
+    "DIN 20637 chain",
+    "monorail chain",
+    "suspension chain",
+    "mining long link chain",
+    "monorail suspension chain"
+   ],
+   "images": [
+    {
+     "file": "ih-lr-mc-d20637-photo-1.jpg",
+     "alt": "Long Link Monorail Suspension Chain, DIN 20637"
+    },
+    {
+     "file": "ih-lr-mc-d20637-drawing-2.jpg",
+     "alt": "Long Link Monorail Suspension Chain, DIN 20637 — dimension drawing"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-LR-MC-D20637-16X80",
+     "position": 0,
+     "dimensions": {
+      "size": "16 × 80 mm",
+      "materialDia": 16.0,
+      "pitch": 80.0,
+      "insideWidth": 22.4,
+      "proofKn": 60.0,
+      "mblKn": 180.0,
+      "weightPerMetre": 4.7
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-D20637-18X90",
+     "position": 1,
+     "dimensions": {
+      "size": "18 × 90 mm",
+      "materialDia": 18.0,
+      "pitch": 90.0,
+      "insideWidth": 25.0,
+      "proofKn": 100.0,
+      "mblKn": 250.0,
+      "weightPerMetre": 6.0
+     }
+    }
+   ],
+   "crossReferences": []
+  },
+  {
+   "sku": "IH-LR-MC-WOPW",
+   "slug": "one-piece-plain-wheel-for-bucket-elevator-chain",
+   "title": "One-Piece Plain Wheel for Bucket Elevator Chain",
+   "category": "mining-conveyor-chain",
+   "focusKeyword": "one-piece plain wheel for bucket elevator chain",
+   "descriptionShort": "One-Piece Plain Wheel for Bucket Elevator Chain, 20 sizes, Ø 360 mm to Ø 820 mm. Made to order with Indus part numbers.",
+   "descriptionLong": "<p>One-piece plain wheel for bucket elevators running DIN 764 or DIN 766 round steel chain with DIN 745 or DIN 5699 bucket shackles. The smooth rim carries the chain without teeth, for elevators with rear-mounted buckets.</p><h3>Sizes</h3><p>20 sizes, Ø 360 mm to Ø 820 mm. Every row has its own Indus part number in the table below.</p><h3>Choosing a size</h3><p>Choose by chain size and wheel diameter. Each row gives the external diameter, the lettered rim dimensions from the drawing and the mass; the hub bore and keyway are machined to order.</p><h3>Ordering</h3><p>Quote the Indus part number from the table, or send the size you need. Each consignment ships with the manufacturer's inspection certificate; say on the RFQ if your site needs anything more.</p>",
+   "seoTitle": "One-Piece Plain Wheel for Bucket Elevator Chain",
+   "seoDescription": "One-Piece Plain Wheel for Bucket Elevator Chain: 20 sizes, Ø 360 mm to Ø 820 mm. Indus part numbers and test certificate. Request a quote.",
+   "faqs": [
+    {
+     "question": "What sizes does the one-piece plain wheel for bucket elevator chain come in?",
+     "answer": "20 sizes, Ø 360 mm to Ø 820 mm. The table lists each with its Indus part number and dimensions."
+    },
+    {
+     "question": "What do I need to send to order a chain wheel?",
+     "answer": "The chain standard and size (diameter × pitch), the wheel diameter or number of teeth, the shaft bore and keyway, and whether the wheel is a drive, tail or return wheel. A drawing or a sample of the worn wheel helps; wheels are made to order."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Product type",
+     "value": "One-piece plain chain wheel",
+     "unit": null,
+     "position": 0,
+     "isFilterable": false,
+     "templateKey": "product_type"
+    },
+    {
+     "group": "Identification",
+     "label": "Pattern / standard",
+     "value": "For DIN 764 / DIN 766 round steel chain",
+     "unit": null,
+     "position": 1,
+     "isFilterable": false,
+     "templateKey": "pattern_standard"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Size range",
+     "value": "Ø 360 mm to Ø 820 mm",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "size_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "Steel, wear surface hardened",
+     "unit": null,
+     "position": 3,
+     "isFilterable": true,
+     "templateKey": "material"
+    },
+    {
+     "group": "Construction",
+     "label": "Finish",
+     "value": "Machined",
+     "unit": null,
+     "position": 4,
+     "isFilterable": true,
+     "templateKey": "finish"
+    },
+    {
+     "group": "Identification",
+     "label": "Sizes",
+     "value": "20",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "sizes_count"
+    },
+    {
+     "group": "Compliance",
+     "label": "Certification",
+     "value": "Manufacturer's inspection certificate",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "certification"
+    }
+   ],
+   "searchAliases": [
+    "plain wheel",
+    "bucket elevator wheel",
+    "chain wheel",
+    "one piece plain wheel",
+    "DIN 764 chain wheel"
+   ],
+   "images": [
+    {
+     "file": "ih-lr-mc-wopw-photo-1.jpg",
+     "alt": "One-Piece Plain Wheel for Bucket Elevator Chain"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-LR-MC-WOPW-360-10",
+     "position": 0,
+     "dimensions": {
+      "size": "Ø 360 mm for 10 mm chain",
+      "chainSize": "10 mm, DIN 764 / DIN 766",
+      "D": 360.0,
+      "A": 16.0,
+      "C": 60.0,
+      "E": 70.0,
+      "weightKg": 35.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WOPW-410-10",
+     "position": 1,
+     "dimensions": {
+      "size": "Ø 410 mm for 10 mm chain",
+      "chainSize": "10 mm, DIN 764 / DIN 766",
+      "D": 410.0,
+      "A": 16.0,
+      "C": 70.0,
+      "E": 80.0,
+      "weightKg": 48.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WOPW-420-13",
+     "position": 2,
+     "dimensions": {
+      "size": "Ø 420 mm for 13 mm chain",
+      "chainSize": "13 mm, DIN 764 / DIN 766",
+      "D": 420.0,
+      "A": 19.0,
+      "C": 80.0,
+      "E": 90.0,
+      "weightKg": 58.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WOPW-510-13",
+     "position": 3,
+     "dimensions": {
+      "size": "Ø 510 mm for 13 mm chain",
+      "chainSize": "13 mm, DIN 764 / DIN 766",
+      "D": 510.0,
+      "A": 19.0,
+      "C": 80.0,
+      "E": 90.0,
+      "weightKg": 85.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WOPW-515-16",
+     "position": 4,
+     "dimensions": {
+      "size": "Ø 515 mm for 16 mm chain",
+      "chainSize": "16 mm, DIN 764 / DIN 766",
+      "D": 515.0,
+      "A": 22.0,
+      "C": 90.0,
+      "E": 100.0,
+      "weightKg": 95.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WOPW-520-18",
+     "position": 5,
+     "dimensions": {
+      "size": "Ø 520 mm for 18 mm chain",
+      "chainSize": "18 mm, DIN 764 / DIN 766",
+      "D": 520.0,
+      "A": 23.0,
+      "C": 100.0,
+      "E": 110.0,
+      "weightKg": 110.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WOPW-520-20",
+     "position": 6,
+     "dimensions": {
+      "size": "Ø 520 mm for 20 mm chain",
+      "chainSize": "20 mm, DIN 764 / DIN 766",
+      "D": 520.0,
+      "A": 26.0,
+      "C": 110.0,
+      "E": 120.0,
+      "weightKg": 120.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WOPW-645-16",
+     "position": 7,
+     "dimensions": {
+      "size": "Ø 645 mm for 16 mm chain",
+      "chainSize": "16 mm, DIN 764 / DIN 766",
+      "D": 645.0,
+      "A": 22.0,
+      "C": 95.0,
+      "E": 120.0,
+      "weightKg": 165.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WOPW-645-18",
+     "position": 8,
+     "dimensions": {
+      "size": "Ø 645 mm for 18 mm chain",
+      "chainSize": "18 mm, DIN 764 / DIN 766",
+      "D": 645.0,
+      "A": 23.0,
+      "C": 105.0,
+      "E": 120.0,
+      "weightKg": 180.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WOPW-650-20",
+     "position": 9,
+     "dimensions": {
+      "size": "Ø 650 mm for 20 mm chain",
+      "chainSize": "20 mm, DIN 764 / DIN 766",
+      "D": 650.0,
+      "A": 26.0,
+      "C": 110.0,
+      "E": 130.0,
+      "weightKg": 195.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WOPW-650-23",
+     "position": 10,
+     "dimensions": {
+      "size": "Ø 650 mm for 23 mm chain",
+      "chainSize": "23 mm, DIN 764 / DIN 766",
+      "D": 650.0,
+      "A": 30.0,
+      "C": 120.0,
+      "E": 140.0,
+      "weightKg": 210.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WOPW-715-16",
+     "position": 11,
+     "dimensions": {
+      "size": "Ø 715 mm for 16 mm chain",
+      "chainSize": "16 mm, DIN 764 / DIN 766",
+      "D": 715.0,
+      "A": 22.0,
+      "C": 95.0,
+      "E": 140.0,
+      "weightKg": 220.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WOPW-720-18",
+     "position": 12,
+     "dimensions": {
+      "size": "Ø 720 mm for 18 mm chain",
+      "chainSize": "18 mm, DIN 764 / DIN 766",
+      "D": 720.0,
+      "A": 23.0,
+      "C": 105.0,
+      "E": 140.0,
+      "weightKg": 230.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WOPW-720-20",
+     "position": 13,
+     "dimensions": {
+      "size": "Ø 720 mm for 20 mm chain",
+      "chainSize": "20 mm, DIN 764 / DIN 766",
+      "D": 720.0,
+      "A": 26.0,
+      "C": 110.0,
+      "E": 150.0,
+      "weightKg": 255.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WOPW-730-23",
+     "position": 14,
+     "dimensions": {
+      "size": "Ø 730 mm for 23 mm chain",
+      "chainSize": "23 mm, DIN 764 / DIN 766",
+      "D": 730.0,
+      "A": 30.0,
+      "C": 125.0,
+      "E": 160.0,
+      "weightKg": 285.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WOPW-730-26",
+     "position": 15,
+     "dimensions": {
+      "size": "Ø 730 mm for 26 mm chain",
+      "chainSize": "26 mm, DIN 764 / DIN 766",
+      "D": 730.0,
+      "A": 35.0,
+      "C": 140.0,
+      "E": 160.0,
+      "weightKg": 305.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WOPW-810-20",
+     "position": 16,
+     "dimensions": {
+      "size": "Ø 810 mm for 20 mm chain",
+      "chainSize": "20 mm, DIN 764 / DIN 766",
+      "D": 810.0,
+      "A": 28.0,
+      "C": 115.0,
+      "E": 140.0,
+      "weightKg": 325.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WOPW-810-23",
+     "position": 17,
+     "dimensions": {
+      "size": "Ø 810 mm for 23 mm chain",
+      "chainSize": "23 mm, DIN 764 / DIN 766",
+      "D": 810.0,
+      "A": 30.0,
+      "C": 125.0,
+      "E": 160.0,
+      "weightKg": 365.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WOPW-820-26",
+     "position": 18,
+     "dimensions": {
+      "size": "Ø 820 mm for 26 mm chain",
+      "chainSize": "26 mm, DIN 764 / DIN 766",
+      "D": 820.0,
+      "A": 35.0,
+      "C": 140.0,
+      "E": 160.0,
+      "weightKg": 395.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WOPW-820-30",
+     "position": 19,
+     "dimensions": {
+      "size": "Ø 820 mm for 30 mm chain",
+      "chainSize": "30 mm, DIN 764 / DIN 766",
+      "D": 820.0,
+      "A": 41.0,
+      "C": 150.0,
+      "E": 170.0,
+      "weightKg": 415.0
+     }
+    }
+   ],
+   "crossReferences": []
+  },
+  {
+   "sku": "IH-LR-MC-WPSW",
+   "slug": "segmented-plain-wheel-for-bucket-elevator-chain",
+   "title": "Segmented Plain Wheel for Bucket Elevator Chain",
+   "category": "mining-conveyor-chain",
+   "focusKeyword": "segmented plain wheel for bucket elevator chain",
+   "descriptionShort": "Segmented Plain Wheel for Bucket Elevator Chain, 18 sizes, Ø 450 mm to Ø 800 mm. Made to order with Indus part numbers.",
+   "descriptionLong": "<p>Plain chain wheel with bolted, replaceable rim segments, for bucket elevators and conveyors running DIN 764 or DIN 766 round steel chain. Worn segments are changed without taking the wheel off the shaft.</p><h3>Sizes</h3><p>18 sizes, Ø 450 mm to Ø 800 mm. Every row has its own Indus part number in the table below. The lettered dimensions refer to the dimension drawing in the gallery.</p><h3>Choosing a size</h3><p>Choose by chain size and nominal diameter; the lettered dimensions refer to the drawing in the gallery. The hub bore and keyway are machined to order.</p><h3>Ordering</h3><p>Quote the Indus part number from the table, or send the size you need. Each consignment ships with the manufacturer's inspection certificate; say on the RFQ if your site needs anything more.</p>",
+   "seoTitle": "Segmented Plain Wheel for Bucket Elevator Chain",
+   "seoDescription": "Segmented Plain Wheel for Bucket Elevator Chain: 18 sizes, Ø 450 mm to Ø 800 mm. Indus part numbers and test certificate. Request a quote.",
+   "faqs": [
+    {
+     "question": "What sizes does the segmented plain wheel for bucket elevator chain come in?",
+     "answer": "18 sizes, Ø 450 mm to Ø 800 mm. The table lists each with its Indus part number and dimensions."
+    },
+    {
+     "question": "What do I need to send to order a chain wheel?",
+     "answer": "The chain standard and size (diameter × pitch), the wheel diameter or number of teeth, the shaft bore and keyway, and whether the wheel is a drive, tail or return wheel. A drawing or a sample of the worn wheel helps; wheels are made to order."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Product type",
+     "value": "Segmented plain chain wheel",
+     "unit": null,
+     "position": 0,
+     "isFilterable": false,
+     "templateKey": "product_type"
+    },
+    {
+     "group": "Identification",
+     "label": "Pattern / standard",
+     "value": "For DIN 764 / DIN 766 round steel chain",
+     "unit": null,
+     "position": 1,
+     "isFilterable": false,
+     "templateKey": "pattern_standard"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Size range",
+     "value": "Ø 450 mm to Ø 800 mm",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "size_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "Steel; replaceable hardened rim segments",
+     "unit": null,
+     "position": 3,
+     "isFilterable": true,
+     "templateKey": "material"
+    },
+    {
+     "group": "Construction",
+     "label": "Finish",
+     "value": "Machined, painted hub",
+     "unit": null,
+     "position": 4,
+     "isFilterable": true,
+     "templateKey": "finish"
+    },
+    {
+     "group": "Identification",
+     "label": "Sizes",
+     "value": "18",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "sizes_count"
+    },
+    {
+     "group": "Compliance",
+     "label": "Certification",
+     "value": "Manufacturer's inspection certificate",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "certification"
+    }
+   ],
+   "searchAliases": [
+    "segmented wheel",
+    "plain segmented wheel",
+    "bucket elevator wheel",
+    "chain wheel with segments"
+   ],
+   "images": [
+    {
+     "file": "ih-lr-mc-wpsw-photo-1.jpg",
+     "alt": "Segmented Plain Wheel for Bucket Elevator Chain"
+    },
+    {
+     "file": "ih-lr-mc-wpsw-drawing-2.jpg",
+     "alt": "Segmented Plain Wheel for Bucket Elevator Chain — dimension drawing"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-LR-MC-WPSW-450-13",
+     "position": 0,
+     "dimensions": {
+      "size": "Ø 450 mm for 13 mm chain",
+      "chainSize": "13 mm, DIN 764 / DIN 766",
+      "D": 450.0,
+      "D1": 440.0,
+      "A": 20.0,
+      "C": 60.0,
+      "E": 120.0,
+      "weightKg": 100.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WPSW-450-16",
+     "position": 1,
+     "dimensions": {
+      "size": "Ø 450 mm for 16 mm chain",
+      "chainSize": "16 mm, DIN 764 / DIN 766",
+      "D": 450.0,
+      "D1": 440.0,
+      "A": 22.0,
+      "C": 62.0,
+      "E": 120.0,
+      "weightKg": 100.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WPSW-460-16",
+     "position": 2,
+     "dimensions": {
+      "size": "Ø 460 mm for 16 mm chain",
+      "chainSize": "16 mm, DIN 764 / DIN 766",
+      "D": 460.0,
+      "D1": 445.0,
+      "A": 22.0,
+      "C": 62.0,
+      "E": 120.0,
+      "weightKg": 100.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WPSW-500-13",
+     "position": 3,
+     "dimensions": {
+      "size": "Ø 500 mm for 13 mm chain",
+      "chainSize": "13 mm, DIN 764 / DIN 766",
+      "D": 500.0,
+      "D1": 490.0,
+      "A": 20.0,
+      "C": 60.0,
+      "E": 120.0,
+      "weightKg": 110.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WPSW-500-16",
+     "position": 4,
+     "dimensions": {
+      "size": "Ø 500 mm for 16 mm chain",
+      "chainSize": "16 mm, DIN 764 / DIN 766",
+      "D": 500.0,
+      "D1": 490.0,
+      "A": 22.0,
+      "C": 62.0,
+      "E": 120.0,
+      "weightKg": 110.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WPSW-500-18",
+     "position": 5,
+     "dimensions": {
+      "size": "Ø 500 mm for 18 mm chain",
+      "chainSize": "18 mm, DIN 764 / DIN 766",
+      "D": 500.0,
+      "D1": 490.0,
+      "A": 25.0,
+      "C": 65.0,
+      "E": 120.0,
+      "weightKg": 110.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WPSW-540-13",
+     "position": 6,
+     "dimensions": {
+      "size": "Ø 540 mm for 13 mm chain",
+      "chainSize": "13 mm, DIN 764 / DIN 766",
+      "D": 540.0,
+      "D1": 530.0,
+      "A": 20.0,
+      "C": 60.0,
+      "E": 120.0,
+      "weightKg": 120.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WPSW-540-16",
+     "position": 7,
+     "dimensions": {
+      "size": "Ø 540 mm for 16 mm chain",
+      "chainSize": "16 mm, DIN 764 / DIN 766",
+      "D": 540.0,
+      "D1": 530.0,
+      "A": 22.0,
+      "C": 62.0,
+      "E": 120.0,
+      "weightKg": 120.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WPSW-560-16",
+     "position": 8,
+     "dimensions": {
+      "size": "Ø 560 mm for 16 mm chain",
+      "chainSize": "16 mm, DIN 764 / DIN 766",
+      "D": 560.0,
+      "D1": 545.0,
+      "A": 22.0,
+      "C": 62.0,
+      "E": 120.0,
+      "weightKg": 130.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WPSW-600-16",
+     "position": 9,
+     "dimensions": {
+      "size": "Ø 600 mm for 16 mm chain",
+      "chainSize": "16 mm, DIN 764 / DIN 766",
+      "D": 600.0,
+      "D1": 585.0,
+      "A": 22.0,
+      "C": 62.0,
+      "E": 130.0,
+      "weightKg": 140.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WPSW-630-16",
+     "position": 10,
+     "dimensions": {
+      "size": "Ø 630 mm for 16 mm chain",
+      "chainSize": "16 mm, DIN 764 / DIN 766",
+      "D": 630.0,
+      "D1": 615.0,
+      "A": 22.0,
+      "C": 62.0,
+      "E": 130.0,
+      "weightKg": 145.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WPSW-630-18",
+     "position": 11,
+     "dimensions": {
+      "size": "Ø 630 mm for 18 mm chain",
+      "chainSize": "18 mm, DIN 764 / DIN 766",
+      "D": 630.0,
+      "D1": 615.0,
+      "A": 25.0,
+      "C": 75.0,
+      "E": 130.0,
+      "weightKg": 155.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WPSW-630-20",
+     "position": 12,
+     "dimensions": {
+      "size": "Ø 630 mm for 20 mm chain",
+      "chainSize": "20 mm, DIN 764 / DIN 766",
+      "D": 630.0,
+      "D1": 615.0,
+      "A": 25.0,
+      "C": 75.0,
+      "E": 130.0,
+      "weightKg": 155.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WPSW-650-16",
+     "position": 13,
+     "dimensions": {
+      "size": "Ø 650 mm for 16 mm chain",
+      "chainSize": "16 mm, DIN 764 / DIN 766",
+      "D": 650.0,
+      "D1": 635.0,
+      "A": 22.0,
+      "C": 62.0,
+      "E": 140.0,
+      "weightKg": 150.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WPSW-650-18",
+     "position": 14,
+     "dimensions": {
+      "size": "Ø 650 mm for 18 mm chain",
+      "chainSize": "18 mm, DIN 764 / DIN 766",
+      "D": 650.0,
+      "D1": 635.0,
+      "A": 25.0,
+      "C": 75.0,
+      "E": 140.0,
+      "weightKg": 170.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WPSW-700-26",
+     "position": 15,
+     "dimensions": {
+      "size": "Ø 700 mm for 26 mm chain",
+      "chainSize": "26 mm, DIN 764 / DIN 766",
+      "D": 700.0,
+      "D1": 680.0,
+      "A": 32.0,
+      "C": 92.0,
+      "E": 150.0,
+      "weightKg": 210.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WPSW-800-23",
+     "position": 16,
+     "dimensions": {
+      "size": "Ø 800 mm for 23 mm chain",
+      "chainSize": "23 mm, DIN 764 / DIN 766",
+      "D": 800.0,
+      "D1": 780.0,
+      "A": 30.0,
+      "C": 80.0,
+      "E": 150.0,
+      "weightKg": 240.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WPSW-800-26",
+     "position": 17,
+     "dimensions": {
+      "size": "Ø 800 mm for 26 mm chain",
+      "chainSize": "26 mm, DIN 764 / DIN 766",
+      "D": 800.0,
+      "D1": 775.0,
+      "A": 32.0,
+      "C": 92.0,
+      "E": 150.0,
+      "weightKg": 250.0
+     }
+    }
+   ],
+   "crossReferences": []
+  },
+  {
+   "sku": "IH-LR-MC-WSRW",
+   "slug": "segmented-plain-rim-wheel-for-bucket-elevator-chain",
+   "title": "Segmented Plain Rim Wheel for Bucket Elevator Chain",
+   "category": "mining-conveyor-chain",
+   "focusKeyword": "segmented plain rim wheel for bucket elevator chain",
+   "descriptionShort": "Segmented Plain Rim Wheel for Bucket Elevator Chain, 26 sizes, Ø 630 mm to Ø 1250 mm. Made to order with Indus part numbers.",
+   "descriptionLong": "<p>Large plain rim wheel built from pairs of replaceable rim segments on a spoked hub, from 630 mm to 1,250 mm, for bucket elevators running DIN 764 or DIN 766 chain with DIN 745 or DIN 5699 shackles.</p><h3>Sizes</h3><p>26 sizes, Ø 630 mm to Ø 1250 mm. Every row has its own Indus part number in the table below. The lettered dimensions refer to the dimension drawing in the gallery.</p><h3>Choosing a size</h3><p>Choose by chain size and nominal diameter; the table gives the number of segment pairs, the lettered dimensions from the drawing and the mass of the segments. The hub bore is machined to order.</p><h3>Ordering</h3><p>Quote the Indus part number from the table, or send the size you need. Each consignment ships with the manufacturer's inspection certificate; say on the RFQ if your site needs anything more.</p>",
+   "seoTitle": "Segmented Plain Rim Wheel for Bucket Elevator Chain",
+   "seoDescription": "Segmented Plain Rim Wheel for Bucket Elevator Chain: 26 sizes, Ø 630 mm to Ø 1250 mm. Indus part numbers and test certificate. Request a quote.",
+   "faqs": [
+    {
+     "question": "What sizes does the segmented plain rim wheel for bucket elevator chain come in?",
+     "answer": "26 sizes, Ø 630 mm to Ø 1250 mm. The table lists each with its Indus part number and dimensions."
+    },
+    {
+     "question": "What do I need to send to order a chain wheel?",
+     "answer": "The chain standard and size (diameter × pitch), the wheel diameter or number of teeth, the shaft bore and keyway, and whether the wheel is a drive, tail or return wheel. A drawing or a sample of the worn wheel helps; wheels are made to order."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Product type",
+     "value": "Segmented plain rim wheel",
+     "unit": null,
+     "position": 0,
+     "isFilterable": false,
+     "templateKey": "product_type"
+    },
+    {
+     "group": "Identification",
+     "label": "Pattern / standard",
+     "value": "For DIN 764 / DIN 766 round steel chain",
+     "unit": null,
+     "position": 1,
+     "isFilterable": false,
+     "templateKey": "pattern_standard"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Size range",
+     "value": "Ø 630 mm to Ø 1250 mm",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "size_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "Steel; replaceable hardened rim segments in pairs",
+     "unit": null,
+     "position": 3,
+     "isFilterable": true,
+     "templateKey": "material"
+    },
+    {
+     "group": "Construction",
+     "label": "Finish",
+     "value": "Machined, painted hub",
+     "unit": null,
+     "position": 4,
+     "isFilterable": true,
+     "templateKey": "finish"
+    },
+    {
+     "group": "Identification",
+     "label": "Sizes",
+     "value": "26",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "sizes_count"
+    },
+    {
+     "group": "Compliance",
+     "label": "Certification",
+     "value": "Manufacturer's inspection certificate",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "certification"
+    }
+   ],
+   "searchAliases": [
+    "segmented rim wheel",
+    "plain rim wheel",
+    "bucket elevator head wheel",
+    "chain wheel"
+   ],
+   "images": [
+    {
+     "file": "ih-lr-mc-wsrw-photo-1.jpg",
+     "alt": "Segmented Plain Rim Wheel for Bucket Elevator Chain"
+    },
+    {
+     "file": "ih-lr-mc-wsrw-drawing-2.jpg",
+     "alt": "Segmented Plain Rim Wheel for Bucket Elevator Chain — dimension drawing"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-LR-MC-WSRW-630-13",
+     "position": 0,
+     "dimensions": {
+      "size": "Ø 630 mm for 13 mm chain",
+      "chainSize": "13 mm, DIN 764 / DIN 766",
+      "D": 630.0,
+      "D1": 615.0,
+      "A": 19.0,
+      "C": 82.0,
+      "E": 140.0,
+      "weightKg": 65.0,
+      "type": "8 segment pairs"
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WSRW-630-16",
+     "position": 1,
+     "dimensions": {
+      "size": "Ø 630 mm for 16 mm chain",
+      "chainSize": "16 mm, DIN 764 / DIN 766",
+      "D": 630.0,
+      "D1": 615.0,
+      "A": 22.0,
+      "C": 85.0,
+      "E": 140.0,
+      "weightKg": 67.0,
+      "type": "8 segment pairs"
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WSRW-630-18",
+     "position": 2,
+     "dimensions": {
+      "size": "Ø 630 mm for 18 mm chain",
+      "chainSize": "18 mm, DIN 764 / DIN 766",
+      "D": 630.0,
+      "D1": 615.0,
+      "A": 24.0,
+      "C": 87.0,
+      "E": 140.0,
+      "weightKg": 69.0,
+      "type": "8 segment pairs"
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WSRW-630-20",
+     "position": 3,
+     "dimensions": {
+      "size": "Ø 630 mm for 20 mm chain",
+      "chainSize": "20 mm, DIN 764 / DIN 766",
+      "D": 630.0,
+      "D1": 615.0,
+      "A": 27.0,
+      "C": 92.0,
+      "E": 160.0,
+      "weightKg": 70.0,
+      "type": "8 segment pairs"
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WSRW-630-23",
+     "position": 4,
+     "dimensions": {
+      "size": "Ø 630 mm for 23 mm chain",
+      "chainSize": "23 mm, DIN 764 / DIN 766",
+      "D": 630.0,
+      "D1": 615.0,
+      "A": 29.0,
+      "C": 94.0,
+      "E": 160.0,
+      "weightKg": 70.0,
+      "type": "8 segment pairs"
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WSRW-710-16",
+     "position": 5,
+     "dimensions": {
+      "size": "Ø 710 mm for 16 mm chain",
+      "chainSize": "16 mm, DIN 764 / DIN 766",
+      "D": 710.0,
+      "D1": 690.0,
+      "A": 22.0,
+      "C": 90.0,
+      "E": 150.0,
+      "weightKg": 75.0,
+      "type": "8 segment pairs"
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WSRW-710-18",
+     "position": 6,
+     "dimensions": {
+      "size": "Ø 710 mm for 18 mm chain",
+      "chainSize": "18 mm, DIN 764 / DIN 766",
+      "D": 710.0,
+      "D1": 690.0,
+      "A": 24.0,
+      "C": 92.0,
+      "E": 150.0,
+      "weightKg": 78.0,
+      "type": "8 segment pairs"
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WSRW-710-20",
+     "position": 7,
+     "dimensions": {
+      "size": "Ø 710 mm for 20 mm chain",
+      "chainSize": "20 mm, DIN 764 / DIN 766",
+      "D": 710.0,
+      "D1": 690.0,
+      "A": 27.0,
+      "C": 95.0,
+      "E": 160.0,
+      "weightKg": 80.0,
+      "type": "8 segment pairs"
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WSRW-710-23",
+     "position": 8,
+     "dimensions": {
+      "size": "Ø 710 mm for 23 mm chain",
+      "chainSize": "23 mm, DIN 764 / DIN 766",
+      "D": 710.0,
+      "D1": 690.0,
+      "A": 32.0,
+      "C": 100.0,
+      "E": 160.0,
+      "weightKg": 82.0,
+      "type": "8 segment pairs"
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WSRW-710-26",
+     "position": 9,
+     "dimensions": {
+      "size": "Ø 710 mm for 26 mm chain",
+      "chainSize": "26 mm, DIN 764 / DIN 766",
+      "D": 710.0,
+      "D1": 690.0,
+      "A": 34.0,
+      "C": 102.0,
+      "E": 160.0,
+      "weightKg": 84.0,
+      "type": "8 segment pairs"
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WSRW-800-20",
+     "position": 10,
+     "dimensions": {
+      "size": "Ø 800 mm for 20 mm chain",
+      "chainSize": "20 mm, DIN 764 / DIN 766",
+      "D": 800.0,
+      "D1": 780.0,
+      "A": 27.0,
+      "C": 107.0,
+      "E": 160.0,
+      "weightKg": 95.0,
+      "type": "8 segment pairs"
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WSRW-800-23",
+     "position": 11,
+     "dimensions": {
+      "size": "Ø 800 mm for 23 mm chain",
+      "chainSize": "23 mm, DIN 764 / DIN 766",
+      "D": 800.0,
+      "D1": 780.0,
+      "A": 30.0,
+      "C": 110.0,
+      "E": 160.0,
+      "weightKg": 98.0,
+      "type": "8 segment pairs"
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WSRW-800-26",
+     "position": 12,
+     "dimensions": {
+      "size": "Ø 800 mm for 26 mm chain",
+      "chainSize": "26 mm, DIN 764 / DIN 766",
+      "D": 800.0,
+      "D1": 780.0,
+      "A": 34.0,
+      "C": 115.0,
+      "E": 160.0,
+      "weightKg": 100.0,
+      "type": "8 segment pairs"
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WSRW-900-23",
+     "position": 13,
+     "dimensions": {
+      "size": "Ø 900 mm for 23 mm chain",
+      "chainSize": "23 mm, DIN 764 / DIN 766",
+      "D": 900.0,
+      "D1": 875.0,
+      "A": 30.0,
+      "C": 130.0,
+      "E": 190.0,
+      "weightKg": 155.0,
+      "type": "8 segment pairs"
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WSRW-900-26",
+     "position": 14,
+     "dimensions": {
+      "size": "Ø 900 mm for 26 mm chain",
+      "chainSize": "26 mm, DIN 764 / DIN 766",
+      "D": 900.0,
+      "D1": 875.0,
+      "A": 34.0,
+      "C": 135.0,
+      "E": 190.0,
+      "weightKg": 160.0,
+      "type": "8 segment pairs"
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WSRW-900-30",
+     "position": 15,
+     "dimensions": {
+      "size": "Ø 900 mm for 30 mm chain",
+      "chainSize": "30 mm, DIN 764 / DIN 766",
+      "D": 900.0,
+      "D1": 875.0,
+      "A": 42.0,
+      "C": 140.0,
+      "E": 190.0,
+      "weightKg": 165.0,
+      "type": "8 segment pairs"
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WSRW-1000-23",
+     "position": 16,
+     "dimensions": {
+      "size": "Ø 1000 mm for 23 mm chain",
+      "chainSize": "23 mm, DIN 764 / DIN 766",
+      "D": 1000.0,
+      "D1": 970.0,
+      "A": 30.0,
+      "C": 135.0,
+      "E": 200.0,
+      "weightKg": 210.0,
+      "type": "10 segment pairs"
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WSRW-1000-26",
+     "position": 17,
+     "dimensions": {
+      "size": "Ø 1000 mm for 26 mm chain",
+      "chainSize": "26 mm, DIN 764 / DIN 766",
+      "D": 1000.0,
+      "D1": 970.0,
+      "A": 34.0,
+      "C": 139.0,
+      "E": 200.0,
+      "weightKg": 220.0,
+      "type": "10 segment pairs"
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WSRW-1000-30",
+     "position": 18,
+     "dimensions": {
+      "size": "Ø 1000 mm for 30 mm chain",
+      "chainSize": "30 mm, DIN 764 / DIN 766",
+      "D": 1000.0,
+      "D1": 970.0,
+      "A": 42.0,
+      "C": 145.0,
+      "E": 200.0,
+      "weightKg": 230.0,
+      "type": "10 segment pairs"
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WSRW-1100-23",
+     "position": 19,
+     "dimensions": {
+      "size": "Ø 1100 mm for 23 mm chain",
+      "chainSize": "23 mm, DIN 764 / DIN 766",
+      "D": 1100.0,
+      "D1": 1045.0,
+      "A": 30.0,
+      "C": 150.0,
+      "E": 200.0,
+      "weightKg": 255.0,
+      "type": "10 segment pairs"
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WSRW-1100-26",
+     "position": 20,
+     "dimensions": {
+      "size": "Ø 1100 mm for 26 mm chain",
+      "chainSize": "26 mm, DIN 764 / DIN 766",
+      "D": 1100.0,
+      "D1": 1045.0,
+      "A": 34.0,
+      "C": 154.0,
+      "E": 200.0,
+      "weightKg": 255.0,
+      "type": "10 segment pairs"
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WSRW-1100-30",
+     "position": 21,
+     "dimensions": {
+      "size": "Ø 1100 mm for 30 mm chain",
+      "chainSize": "30 mm, DIN 764 / DIN 766",
+      "D": 1100.0,
+      "D1": 1045.0,
+      "A": 42.0,
+      "C": 159.0,
+      "E": 200.0,
+      "weightKg": 260.0,
+      "type": "10 segment pairs"
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WSRW-1100-36",
+     "position": 22,
+     "dimensions": {
+      "size": "Ø 1100 mm for 36 mm chain",
+      "chainSize": "36 mm, DIN 764 / DIN 766",
+      "D": 1100.0,
+      "D1": 1045.0,
+      "A": 46.0,
+      "C": 165.0,
+      "E": 200.0,
+      "weightKg": 270.0,
+      "type": "10 segment pairs"
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WSRW-1250-30",
+     "position": 23,
+     "dimensions": {
+      "size": "Ø 1250 mm for 30 mm chain",
+      "chainSize": "30 mm, DIN 764 / DIN 766",
+      "D": 1250.0,
+      "D1": 1210.0,
+      "A": 42.0,
+      "C": 159.0,
+      "E": 220.0,
+      "weightKg": 310.0,
+      "type": "12 segment pairs"
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WSRW-1250-36",
+     "position": 24,
+     "dimensions": {
+      "size": "Ø 1250 mm for 36 mm chain",
+      "chainSize": "36 mm, DIN 764 / DIN 766",
+      "D": 1250.0,
+      "D1": 1210.0,
+      "A": 46.0,
+      "C": 165.0,
+      "E": 220.0,
+      "weightKg": 320.0,
+      "type": "12 segment pairs"
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WSRW-1250-39",
+     "position": 25,
+     "dimensions": {
+      "size": "Ø 1250 mm for 39 mm chain",
+      "chainSize": "39 mm, DIN 764 / DIN 766",
+      "D": 1250.0,
+      "D1": 1210.0,
+      "A": 56.0,
+      "C": 175.0,
+      "E": 240.0,
+      "weightKg": 330.0,
+      "type": "12 segment pairs"
+     }
+    }
+   ],
+   "crossReferences": []
+  },
+  {
+   "sku": "IH-LR-MC-WPKT",
+   "slug": "pocket-wheel-for-din-764-chain",
+   "title": "Pocket Wheel for DIN 764 Chain",
+   "category": "mining-conveyor-chain",
+   "focusKeyword": "pocket wheel for din 764 chain",
+   "descriptionShort": "Pocket Wheel for DIN 764 Chain, 9 sizes, 10 × 35 mm to 23 × 80 mm chain. Made to order with Indus part numbers.",
+   "descriptionLong": "<p>Pocket wheel that drives DIN 764 round steel chain through shaped pockets around its rim, made in one piece or in two halves bolted across for fitting without removing the shaft.</p><h3>Sizes</h3><p>9 sizes, 10 × 35 mm to 23 × 80 mm chain. Every row has its own Indus part number in the table below.</p><h3>Choosing a size</h3><p>Choose by chain size and pitch diameter. The Hole dia. column is the largest bore the hub takes; the bore and keyway are machined to order.</p><h3>Ordering</h3><p>Quote the Indus part number from the table, or send the size you need. Each consignment ships with the manufacturer's inspection certificate; say on the RFQ if your site needs anything more.</p>",
+   "seoTitle": "Pocket Wheel for DIN 764 Chain",
+   "seoDescription": "Pocket Wheel for DIN 764 Chain: 9 sizes, 10 × 35 mm to 23 × 80 mm chain. Indus part numbers and test certificate. Request a quote.",
+   "faqs": [
+    {
+     "question": "What sizes does the pocket wheel for DIN 764 chain come in?",
+     "answer": "9 sizes, 10 × 35 mm to 23 × 80 mm chain. The table lists each with its Indus part number and dimensions."
+    },
+    {
+     "question": "What do I need to send to order a chain wheel?",
+     "answer": "The chain standard and size (diameter × pitch), the wheel diameter or number of teeth, the shaft bore and keyway, and whether the wheel is a drive, tail or return wheel. A drawing or a sample of the worn wheel helps; wheels are made to order."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Product type",
+     "value": "Pocket chain wheel",
+     "unit": null,
+     "position": 0,
+     "isFilterable": false,
+     "templateKey": "product_type"
+    },
+    {
+     "group": "Identification",
+     "label": "Pattern / standard",
+     "value": "For DIN 764 round steel chain",
+     "unit": null,
+     "position": 1,
+     "isFilterable": false,
+     "templateKey": "pattern_standard"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Size range",
+     "value": "10 × 35 mm to 23 × 80 mm chain",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "size_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "Cast or forged steel, pockets hardened",
+     "unit": null,
+     "position": 3,
+     "isFilterable": true,
+     "templateKey": "material"
+    },
+    {
+     "group": "Construction",
+     "label": "Finish",
+     "value": "Painted",
+     "unit": null,
+     "position": 4,
+     "isFilterable": true,
+     "templateKey": "finish"
+    },
+    {
+     "group": "Identification",
+     "label": "Sizes",
+     "value": "9",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "sizes_count"
+    },
+    {
+     "group": "Compliance",
+     "label": "Certification",
+     "value": "Manufacturer's inspection certificate",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "certification"
+    }
+   ],
+   "searchAliases": [
+    "pocket wheel",
+    "chain pocket wheel",
+    "DIN 764 sprocket",
+    "round link chain sprocket",
+    "chain drive wheel"
+   ],
+   "images": [
+    {
+     "file": "ih-lr-mc-wpkt-photo-1.jpg",
+     "alt": "Pocket Wheel for DIN 764 Chain"
+    },
+    {
+     "file": "ih-lr-mc-wpkt-drawing-2.jpg",
+     "alt": "Pocket Wheel for DIN 764 Chain — dimension drawing"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-LR-MC-WPKT-10X35-7P",
+     "position": 0,
+     "dimensions": {
+      "size": "10 × 35 mm chain, pitch Ø 157 mm",
+      "chainSize": "10 × 35 mm, DIN 764",
+      "type": "7 pockets",
+      "holeDia": 50.0,
+      "weightKg": 5.2
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WPKT-13X45-7P",
+     "position": 1,
+     "dimensions": {
+      "size": "13 × 45 mm chain, pitch Ø 203 mm",
+      "chainSize": "13 × 45 mm, DIN 764",
+      "type": "7 pockets",
+      "holeDia": 70.0,
+      "weightKg": 11.7
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WPKT-13X45-9P",
+     "position": 2,
+     "dimensions": {
+      "size": "13 × 45 mm chain, pitch Ø 259 mm",
+      "chainSize": "13 × 45 mm, DIN 764",
+      "type": "9 pockets",
+      "holeDia": 100.0,
+      "weightKg": 18.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WPKT-16X56-7P",
+     "position": 3,
+     "dimensions": {
+      "size": "16 × 56 mm chain, pitch Ø 252 mm",
+      "chainSize": "16 × 56 mm, DIN 764",
+      "type": "7 pockets",
+      "holeDia": 80.0,
+      "weightKg": 23.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WPKT-18X63-6P",
+     "position": 4,
+     "dimensions": {
+      "size": "18 × 63 mm chain, pitch Ø 244 mm",
+      "chainSize": "18 × 63 mm, DIN 764",
+      "type": "6 pockets",
+      "holeDia": 95.0,
+      "weightKg": 24.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WPKT-18X63-7P",
+     "position": 5,
+     "dimensions": {
+      "size": "18 × 63 mm chain, pitch Ø 284 mm",
+      "chainSize": "18 × 63 mm, DIN 764",
+      "type": "7 pockets",
+      "holeDia": 95.0,
+      "weightKg": 27.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WPKT-18X63-9P",
+     "position": 6,
+     "dimensions": {
+      "size": "18 × 63 mm chain, pitch Ø 363 mm",
+      "chainSize": "18 × 63 mm, DIN 764",
+      "type": "9 pockets",
+      "holeDia": 130.0,
+      "weightKg": 58.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WPKT-20X70-8P",
+     "position": 7,
+     "dimensions": {
+      "size": "20 × 70 mm chain, pitch Ø 359 mm",
+      "chainSize": "20 × 70 mm, DIN 764",
+      "type": "8 pockets",
+      "holeDia": 140.0,
+      "weightKg": 55.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WPKT-23X80-8P",
+     "position": 8,
+     "dimensions": {
+      "size": "23 × 80 mm chain, pitch Ø 411 mm",
+      "chainSize": "23 × 80 mm, DIN 764",
+      "type": "8 pockets",
+      "holeDia": 140.0,
+      "weightKg": 85.0
+     }
+    }
+   ],
+   "crossReferences": []
+  },
+  {
+   "sku": "IH-LR-MC-WTTH",
+   "slug": "toothed-wheel-for-din-764-chain",
+   "title": "Toothed Wheel for DIN 764 Chain",
+   "category": "mining-conveyor-chain",
+   "focusKeyword": "toothed wheel for din 764 chain",
+   "descriptionShort": "Toothed Wheel for DIN 764 Chain, 6 sizes, 10 × 35 mm to 18 × 63 mm chain. Made to order with Indus part numbers.",
+   "descriptionLong": "<p>Toothed wheel (sprocket) for DIN 764 round steel chain in scraper, conveyor and traction drives, made in one piece or in two halves bolted across.</p><h3>Sizes</h3><p>6 sizes, 10 × 35 mm to 18 × 63 mm chain. Every row has its own Indus part number in the table below.</p><h3>Choosing a size</h3><p>Choose by chain size and pitch diameter. The Hole dia. column is the largest bore the hub takes; the bore and keyway are machined to order.</p><h3>Ordering</h3><p>Quote the Indus part number from the table, or send the size you need. Each consignment ships with the manufacturer's inspection certificate; say on the RFQ if your site needs anything more.</p>",
+   "seoTitle": "Toothed Wheel for DIN 764 Chain",
+   "seoDescription": "Toothed Wheel for DIN 764 Chain: 6 sizes, 10 × 35 mm to 18 × 63 mm chain. Indus part numbers and test certificate. Request a quote.",
+   "faqs": [
+    {
+     "question": "What sizes does the toothed wheel for DIN 764 chain come in?",
+     "answer": "6 sizes, 10 × 35 mm to 18 × 63 mm chain. The table lists each with its Indus part number and dimensions."
+    },
+    {
+     "question": "What do I need to send to order a chain wheel?",
+     "answer": "The chain standard and size (diameter × pitch), the wheel diameter or number of teeth, the shaft bore and keyway, and whether the wheel is a drive, tail or return wheel. A drawing or a sample of the worn wheel helps; wheels are made to order."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Product type",
+     "value": "Toothed chain wheel",
+     "unit": null,
+     "position": 0,
+     "isFilterable": false,
+     "templateKey": "product_type"
+    },
+    {
+     "group": "Identification",
+     "label": "Pattern / standard",
+     "value": "For DIN 764 round steel chain",
+     "unit": null,
+     "position": 1,
+     "isFilterable": false,
+     "templateKey": "pattern_standard"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Size range",
+     "value": "10 × 35 mm to 18 × 63 mm chain",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "size_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "Cast or forged steel, teeth hardened",
+     "unit": null,
+     "position": 3,
+     "isFilterable": true,
+     "templateKey": "material"
+    },
+    {
+     "group": "Construction",
+     "label": "Finish",
+     "value": "Self-colour",
+     "unit": null,
+     "position": 4,
+     "isFilterable": true,
+     "templateKey": "finish"
+    },
+    {
+     "group": "Identification",
+     "label": "Sizes",
+     "value": "6",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "sizes_count"
+    },
+    {
+     "group": "Compliance",
+     "label": "Certification",
+     "value": "Manufacturer's inspection certificate",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "certification"
+    }
+   ],
+   "searchAliases": [
+    "toothed wheel",
+    "chain sprocket",
+    "DIN 764 sprocket",
+    "round link chain sprocket",
+    "scraper conveyor sprocket"
+   ],
+   "images": [
+    {
+     "file": "ih-lr-mc-wtth-photo-1.jpg",
+     "alt": "Toothed Wheel for DIN 764 Chain"
+    },
+    {
+     "file": "ih-lr-mc-wtth-drawing-2.jpg",
+     "alt": "Toothed Wheel for DIN 764 Chain — dimension drawing"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-LR-MC-WTTH-10X35-6T",
+     "position": 0,
+     "dimensions": {
+      "size": "10 × 35 mm chain, pitch Ø 136 mm",
+      "chainSize": "10 × 35 mm, DIN 764",
+      "type": "6 teeth",
+      "holeDia": 45.0,
+      "weightKg": 2.1
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WTTH-10X35-7T",
+     "position": 1,
+     "dimensions": {
+      "size": "10 × 35 mm chain, pitch Ø 157 mm",
+      "chainSize": "10 × 35 mm, DIN 764",
+      "type": "7 teeth",
+      "holeDia": 60.0,
+      "weightKg": 2.8
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WTTH-13X45-8T",
+     "position": 2,
+     "dimensions": {
+      "size": "13 × 45 mm chain, pitch Ø 231 mm",
+      "chainSize": "13 × 45 mm, DIN 764",
+      "type": "8 teeth",
+      "holeDia": 80.0,
+      "weightKg": 13.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WTTH-16X56-6T",
+     "position": 3,
+     "dimensions": {
+      "size": "16 × 56 mm chain, pitch Ø 217 mm",
+      "chainSize": "16 × 56 mm, DIN 764",
+      "type": "6 teeth",
+      "holeDia": 80.0,
+      "weightKg": 11.5
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WTTH-16X56-8T",
+     "position": 4,
+     "dimensions": {
+      "size": "16 × 56 mm chain, pitch Ø 287 mm",
+      "chainSize": "16 × 56 mm, DIN 764",
+      "type": "8 teeth",
+      "holeDia": 100.0,
+      "weightKg": 18.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-MC-WTTH-18X63-9T",
+     "position": 5,
+     "dimensions": {
+      "size": "18 × 63 mm chain, pitch Ø 363 mm",
+      "chainSize": "18 × 63 mm, DIN 764",
+      "type": "9 teeth",
+      "holeDia": 100.0,
+      "weightKg": 38.0
+     }
+    }
+   ],
+   "crossReferences": []
+  },
+  {
+   "sku": "IH-LR-SC-G60",
+   "slug": "grade-60-stainless-steel-lifting-chain",
+   "title": "Grade 60 Stainless Steel Lifting Chain",
+   "category": "stainless-steel-chain",
+   "focusKeyword": "grade 60 stainless steel lifting chain",
+   "descriptionShort": "Grade 60 Stainless Steel Lifting Chain, 12 sizes, 3 mm to 26 mm, WLL 0.2 to 15 t. Indus part numbers, manufacturer's test certificate.",
+   "descriptionLong": "<p>Short link lifting chain in stainless steel to a Grade 60 rating, from 3 mm to 26 mm. AISI 316L covers the smaller sizes and 318LN duplex the larger ones, for lifting in food, pharmaceutical, chemical and marine plant where carbon steel chain would corrode.</p><h3>Sizes and ratings</h3><p>12 sizes, 3 mm to 26 mm. Working load limit 0.2 to 15 t. Every row has its own Indus part number in the table below.</p><h3>Choosing a size</h3><p>Choose by working load limit for a straight vertical lift, at a 4:1 design factor; in a multi-leg sling the leg angle reduces the rating as for any chain sling. Use it with stainless fittings of a matching rating, never with a lower-rated part.</p><h3>Ordering</h3><p>Quote the Indus part number from the table, or send the size and grade you need. Each consignment ships with the manufacturer's test certificate; say on the RFQ if your site needs anything more.</p>",
+   "seoTitle": "Grade 60 Stainless Steel Lifting Chain",
+   "seoDescription": "Grade 60 Stainless Steel Lifting Chain: 12 sizes, 3 mm to 26 mm. Indus part numbers and test certificate. Request a quote.",
+   "faqs": [
+    {
+     "question": "What sizes does the Grade 60 stainless steel lifting chain come in?",
+     "answer": "12 sizes, 3 mm to 26 mm. The table lists each with its Indus part number and ratings."
+    },
+    {
+     "question": "What is the working load limit?",
+     "answer": "0.2 to 15 t, depending on size, as the manufacturer rates it. The WLL is the most the chain may carry in service; proof and breaking loads are test figures and never working limits."
+    },
+    {
+     "question": "Do the parts come with a test certificate?",
+     "answer": "Yes. Each consignment ships with the manufacturer's test certificate. For third-party certification or witnessed proof testing, say so on the RFQ."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Product type",
+     "value": "Stainless steel lifting chain",
+     "unit": null,
+     "position": 0,
+     "isFilterable": false,
+     "templateKey": "product_type"
+    },
+    {
+     "group": "Identification",
+     "label": "Pattern / standard",
+     "value": "Grade 60, dimensions similar to DIN 5687",
+     "unit": null,
+     "position": 1,
+     "isFilterable": false,
+     "templateKey": "pattern_standard"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Size range",
+     "value": "3 mm to 26 mm",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "size_range"
+    },
+    {
+     "group": "Performance",
+     "label": "Working load limit",
+     "value": "0.2 to 15 t",
+     "unit": null,
+     "position": 3,
+     "isFilterable": true,
+     "templateKey": "wll_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "AISI 316L to 16 mm; AISI 318LN duplex from 16 mm",
+     "unit": null,
+     "position": 4,
+     "isFilterable": true,
+     "templateKey": "material"
+    },
+    {
+     "group": "Construction",
+     "label": "Finish",
+     "value": "Blasted",
+     "unit": null,
+     "position": 5,
+     "isFilterable": true,
+     "templateKey": "finish"
+    },
+    {
+     "group": "Identification",
+     "label": "Sizes",
+     "value": "12",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "sizes_count"
+    },
+    {
+     "group": "Compliance",
+     "label": "Certification",
+     "value": "Manufacturer's test certificate",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": "certification"
+    }
+   ],
+   "searchAliases": [
+    "stainless lifting chain",
+    "grade 60 stainless chain",
+    "316L lifting chain",
+    "duplex lifting chain",
+    "stainless steel chain for lifting"
+   ],
+   "images": [
+    {
+     "file": "ih-lr-sc-g60-photo-1.jpg",
+     "alt": "Grade 60 Stainless Steel Lifting Chain"
+    },
+    {
+     "file": "ih-lr-sc-g60-photo-2.jpg",
+     "alt": "Grade 60 Stainless Steel Lifting Chain — view 2"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-LR-SC-G60-3MM",
+     "position": 0,
+     "dimensions": {
+      "size": "3 mm",
+      "grade": "AISI 316L",
+      "wllT": 0.2,
+      "pitch": 14.0,
+      "insideWidth": 5.0,
+      "outsideWidth": 12.5
+     }
+    },
+    {
+     "partNumber": "IH-LR-SC-G60-4MM",
+     "position": 1,
+     "dimensions": {
+      "size": "4 mm",
+      "grade": "AISI 316L",
+      "wllT": 0.4,
+      "pitch": 12.0,
+      "insideWidth": 5.0,
+      "outsideWidth": 13.7
+     }
+    },
+    {
+     "partNumber": "IH-LR-SC-G60-5MM",
+     "position": 2,
+     "dimensions": {
+      "size": "5 mm",
+      "grade": "AISI 316L",
+      "wllT": 0.63,
+      "pitch": 15.0,
+      "insideWidth": 6.3,
+      "outsideWidth": 18.5
+     }
+    },
+    {
+     "partNumber": "IH-LR-SC-G60-6MM",
+     "position": 3,
+     "dimensions": {
+      "size": "6 mm",
+      "grade": "AISI 316L",
+      "wllT": 0.9,
+      "pitch": 18.0,
+      "insideWidth": 7.8,
+      "outsideWidth": 22.2
+     }
+    },
+    {
+     "partNumber": "IH-LR-SC-G60-7MM",
+     "position": 4,
+     "dimensions": {
+      "size": "7 mm",
+      "grade": "AISI 316L",
+      "wllT": 1.25,
+      "pitch": 21.0,
+      "insideWidth": 9.1,
+      "outsideWidth": 25.9
+     }
+    },
+    {
+     "partNumber": "IH-LR-SC-G60-8MM",
+     "position": 5,
+     "dimensions": {
+      "size": "8 mm",
+      "grade": "AISI 316L",
+      "wllT": 1.55,
+      "pitch": 24.0,
+      "insideWidth": 10.4,
+      "outsideWidth": 29.6
+     }
+    },
+    {
+     "partNumber": "IH-LR-SC-G60-10MM",
+     "position": 6,
+     "dimensions": {
+      "size": "10 mm",
+      "grade": "AISI 316L",
+      "wllT": 2.45,
+      "pitch": 30.0,
+      "insideWidth": 13.0,
+      "outsideWidth": 37.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-SC-G60-13MM",
+     "position": 7,
+     "dimensions": {
+      "size": "13 mm",
+      "grade": "AISI 316L",
+      "wllT": 3.85,
+      "pitch": 39.0,
+      "insideWidth": 16.9,
+      "outsideWidth": 48.1
+     }
+    },
+    {
+     "partNumber": "IH-LR-SC-G60-16MM",
+     "position": 8,
+     "dimensions": {
+      "size": "16 mm",
+      "grade": "AISI 316L or 318LN duplex",
+      "wllT": 6.0,
+      "pitch": 48.0,
+      "insideWidth": 20.8,
+      "outsideWidth": 59.2
+     }
+    },
+    {
+     "partNumber": "IH-LR-SC-G60-18MM",
+     "position": 9,
+     "dimensions": {
+      "size": "18 mm",
+      "grade": "AISI 318LN duplex",
+      "wllT": 8.0,
+      "pitch": 54.0,
+      "insideWidth": 24.3,
+      "outsideWidth": 64.8
+     }
+    },
+    {
+     "partNumber": "IH-LR-SC-G60-22MM",
+     "position": 10,
+     "dimensions": {
+      "size": "22 mm",
+      "grade": "AISI 318LN duplex",
+      "wllT": 11.0,
+      "pitch": 66.0,
+      "insideWidth": 29.5,
+      "outsideWidth": 79.2
+     }
+    },
+    {
+     "partNumber": "IH-LR-SC-G60-26MM",
+     "position": 11,
+     "dimensions": {
+      "size": "26 mm",
+      "grade": "AISI 318LN duplex",
+      "wllT": 15.0,
+      "pitch": 78.0,
+      "insideWidth": 35.0,
+      "outsideWidth": 93.6
+     }
+    }
+   ],
+   "crossReferences": []
+  }
+ ]
+}
