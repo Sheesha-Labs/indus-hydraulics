@@ -1,0 +1,552 @@
+{
+  "imageDir": "~/Documents/Indus Supplier Research/Image Research/Flow Iron and Wellhead",
+  "note": "Maker product photos and renders (TechnipFMC, Cameron/SLB, Stream-Flo) found 2026-10-08 for flow iron and wellhead listings with no image. Indus is the authorised representative of these makers; Ayush approved upload on 2026-10-08. Weak matches, drawings and third-party marks are left out.",
+  "listings": [
+    {
+      "sku": "IH-FI-CR-1502-FFFM-10K-SOUR-FMC",
+      "title": "Cross, 1502 Series 3F × 1M, 10,000 psi, Sour Service",
+      "make": "FMC Technologies",
+      "images": [
+        {
+          "file": "FMC/cross-fmc-1.jpg",
+          "kind": "render",
+          "match": "same type, different end/size",
+          "sourcePage": "https://theofmp.com/p/301-32-1889790",
+          "imageUrl": "https://media.theofmp.com/media/TFMC/images/fitting5_v1.jpg",
+          "notes": "Weco integral cross with wing nut and male ends. End configuration and figure not confirmable."
+        }
+      ]
+    },
+    {
+      "sku": "IH-FI-CR-206-MMMF-2K-STD-FMC",
+      "title": "Cross, 206 Series 3M × 1F, 2,000 psi, Standard Service",
+      "make": "FMC Technologies",
+      "images": [
+        {
+          "file": "FMC/cross-fmc-1.jpg",
+          "kind": "render",
+          "match": "same type, different end/size",
+          "sourcePage": "https://theofmp.com/p/301-32-1889790",
+          "imageUrl": "https://media.theofmp.com/media/TFMC/images/fitting5_v1.jpg",
+          "notes": "Weco integral cross with wing nut and male ends. End configuration and figure not confirmable."
+        }
+      ]
+    },
+    {
+      "sku": "IH-FI-EL-1502-90LR-MF-10K-SOUR-FMC",
+      "title": "Elbow LR 90°, 1502 Series M × F (Integral), 10,000 psi, Sour Service",
+      "make": "FMC Technologies",
+      "images": [
+        {
+          "file": "FMC/elbow-lr-fmc-1.jpg",
+          "kind": "render",
+          "match": "exact model",
+          "sourcePage": "https://theofmp.com/p/301-32-1889798",
+          "imageUrl": "https://media.theofmp.com/media/TFMC/images/lselb_v1.jpg",
+          "notes": "Original Chiksan longsweep elbow, M x F with integral wing nut. Figure/size not readable."
+        }
+      ]
+    },
+    {
+      "sku": "IH-FI-HL-1502-15K-STD-FMC",
+      "title": "Hose Loop (C&C), 1502 Series M×F, 15,000 psi, Standard Service",
+      "make": "FMC Technologies",
+      "images": [
+        {
+          "file": "FMC/hose-loop-fmc-1.jpg",
+          "kind": "render",
+          "match": "exact model",
+          "sourcePage": "https://theofmp.com/p/301-32-1889807",
+          "imageUrl": "https://media.theofmp.com/media/TFMC/images/cc1_v1.jpg",
+          "notes": "Chiksan cementing and circulating hose loop (swivel joints plus pipe loop) with union ends."
+        },
+        {
+          "file": "FMC/hose-loop-fmc-2.jpg",
+          "kind": "render",
+          "match": "exact model",
+          "sourcePage": "https://theofmp.com/p/301-32-1889807",
+          "imageUrl": "https://media.theofmp.com/media/TFMC/images/cc32_v1.jpg",
+          "notes": "Side view of the same C&C loop. Small."
+        }
+      ]
+    },
+    {
+      "sku": "IH-FI-MN-CK-S-1502-15K-STD-CAMERON",
+      "title": "Choke Manifold, Single-Stage 1502, 15,000 psi, Standard Service",
+      "make": "Cameron",
+      "images": [
+        {
+          "file": "Cameron and Stream-Flo/choke-manifold-cameron-1.jpg",
+          "kind": "photo",
+          "match": "same type, different end/size",
+          "sourcePage": "https://www.slb.com/products-and-services/innovating-in-oil-and-gas/completions/stimulation/frac-and-flowback-equipment/choke-manifolds",
+          "imageUrl": "https://www.slb.com/-/media/images/st/frac-flowback-equipment/plug-valve-choke-manifold-combo.jpg",
+          "notes": "Cameron plug-valve choke manifold with 1502 hammer-union connections. A worker in branded coveralls fills the left half of the frame. No choke body is clearly visible."
+        }
+      ]
+    },
+    {
+      "sku": "IH-FI-PJ-1002-MF-INT-10K-STD-FMC",
+      "title": "Pup Joint, 1002 Series M×F Integral, 10,000 psi, Standard Service",
+      "make": "FMC Technologies",
+      "images": [
+        {
+          "file": "FMC/pup-joint-fmc-1.jpg",
+          "kind": "render",
+          "match": "same type, different end/size",
+          "sourcePage": "https://theofmp.com/p/301-32-1889788",
+          "imageUrl": "https://media.theofmp.com/media/TFMC/images/weco-pup-joints_v2.jpg",
+          "notes": "Weco pup joint, M x F with wing nut, long and thin, on white."
+        },
+        {
+          "file": "FMC/pup-joint-fmc-2.jpg",
+          "kind": "render",
+          "match": "same type, different end/size",
+          "sourcePage": "https://theofmp.com/p/301-32-1889788",
+          "imageUrl": "https://media.theofmp.com/media/TFMC/images/pupjoint_2_v1.jpg",
+          "notes": "Grey render with numbered callout tags (catalogue figure). Less suitable as a listing photo."
+        }
+      ]
+    },
+    {
+      "sku": "IH-FI-PJ-1502-MF-INT-15K-STD-FMC",
+      "title": "Pup Joint, 1502 Series M×F Integral, 15,000 psi, Standard Service",
+      "make": "FMC Technologies",
+      "images": [
+        {
+          "file": "FMC/pup-joint-fmc-1.jpg",
+          "kind": "render",
+          "match": "same type, different end/size",
+          "sourcePage": "https://theofmp.com/p/301-32-1889788",
+          "imageUrl": "https://media.theofmp.com/media/TFMC/images/weco-pup-joints_v2.jpg",
+          "notes": "Weco pup joint, M x F with wing nut, long and thin, on white."
+        },
+        {
+          "file": "FMC/pup-joint-fmc-2.jpg",
+          "kind": "render",
+          "match": "same type, different end/size",
+          "sourcePage": "https://theofmp.com/p/301-32-1889788",
+          "imageUrl": "https://media.theofmp.com/media/TFMC/images/pupjoint_2_v1.jpg",
+          "notes": "Grey render with numbered callout tags (catalogue figure). Less suitable as a listing photo."
+        }
+      ]
+    },
+    {
+      "sku": "IH-FI-PJ-206-FM-BWXH-2K-SOUR-FMC",
+      "title": "Pup Joint, 206 Series F×M (BW XH DET), 2,000 psi, Sour Service",
+      "make": "FMC Technologies",
+      "images": [
+        {
+          "file": "FMC/pup-joint-fmc-1.jpg",
+          "kind": "render",
+          "match": "same type, different end/size",
+          "sourcePage": "https://theofmp.com/p/301-32-1889788",
+          "imageUrl": "https://media.theofmp.com/media/TFMC/images/weco-pup-joints_v2.jpg",
+          "notes": "Weco pup joint, M x F with wing nut, long and thin, on white."
+        },
+        {
+          "file": "FMC/pup-joint-fmc-2.jpg",
+          "kind": "render",
+          "match": "same type, different end/size",
+          "sourcePage": "https://theofmp.com/p/301-32-1889788",
+          "imageUrl": "https://media.theofmp.com/media/TFMC/images/pupjoint_2_v1.jpg",
+          "notes": "Grey render with numbered callout tags (catalogue figure). Less suitable as a listing photo."
+        }
+      ]
+    },
+    {
+      "sku": "IH-FI-PJ-602-MF-INT-6K-STD-FMC",
+      "title": "Pup Joint, 602 Series M×F Integral, 6,000 psi, Standard Service",
+      "make": "FMC Technologies",
+      "images": [
+        {
+          "file": "FMC/pup-joint-fmc-1.jpg",
+          "kind": "render",
+          "match": "same type, different end/size",
+          "sourcePage": "https://theofmp.com/p/301-32-1889788",
+          "imageUrl": "https://media.theofmp.com/media/TFMC/images/weco-pup-joints_v2.jpg",
+          "notes": "Weco pup joint, M x F with wing nut, long and thin, on white."
+        },
+        {
+          "file": "FMC/pup-joint-fmc-2.jpg",
+          "kind": "render",
+          "match": "same type, different end/size",
+          "sourcePage": "https://theofmp.com/p/301-32-1889788",
+          "imageUrl": "https://media.theofmp.com/media/TFMC/images/pupjoint_2_v1.jpg",
+          "notes": "Grey render with numbered callout tags (catalogue figure). Less suitable as a listing photo."
+        }
+      ]
+    },
+    {
+      "sku": "IH-FI-SJ-1502-S10-1AX-15K-STD-FMC",
+      "title": "Swivel Joint, 1502 Style 10 (1-Axis), 15,000 psi, Standard Service",
+      "make": "FMC Technologies",
+      "images": [
+        {
+          "file": "FMC/swivel-joint-fmc-1.jpg",
+          "kind": "render",
+          "match": "same type, different end/size",
+          "sourcePage": "https://theofmp.com/p/301-32-1889782",
+          "imageUrl": "https://media.theofmp.com/media/TFMC/images/original-chiksan-and-triplestep-swivel-joints_v5.jpg",
+          "notes": "Original Chiksan swivel joint: two long-radius elbows, two swivel bodies, wing nut (F) and male union ends. Style number not stated."
+        },
+        {
+          "file": "FMC/swivel-joint-fmc-2.jpg",
+          "kind": "render",
+          "match": "same type, different end/size",
+          "sourcePage": "https://theofmp.com/p/301-32-1889782",
+          "imageUrl": "https://media.theofmp.com/media/TFMC/images/original-chiksan-and-triplestep-swivel-joints_v6.jpg",
+          "notes": "Same family, J-shaped view showing the male sub with seal and the wing nut end."
+        }
+      ]
+    },
+    {
+      "sku": "IH-FI-SJ-1502-S30-2AX-15K-STD-FMC",
+      "title": "Swivel Joint, 1502 Style 30 (2-Axis), 15,000 psi, Standard Service",
+      "make": "FMC Technologies",
+      "images": [
+        {
+          "file": "FMC/swivel-joint-fmc-1.jpg",
+          "kind": "render",
+          "match": "same type, different end/size",
+          "sourcePage": "https://theofmp.com/p/301-32-1889782",
+          "imageUrl": "https://media.theofmp.com/media/TFMC/images/original-chiksan-and-triplestep-swivel-joints_v5.jpg",
+          "notes": "Original Chiksan swivel joint: two long-radius elbows, two swivel bodies, wing nut (F) and male union ends. Style number not stated."
+        },
+        {
+          "file": "FMC/swivel-joint-fmc-2.jpg",
+          "kind": "render",
+          "match": "same type, different end/size",
+          "sourcePage": "https://theofmp.com/p/301-32-1889782",
+          "imageUrl": "https://media.theofmp.com/media/TFMC/images/original-chiksan-and-triplestep-swivel-joints_v6.jpg",
+          "notes": "Same family, J-shaped view showing the male sub with seal and the wing nut end."
+        }
+      ]
+    },
+    {
+      "sku": "IH-FI-SJ-1502-S50-3AX-10K-SOUR-FMC",
+      "title": "Swivel Joint, 1502 Style 50 (3-Axis), 10,000 psi, Sour Service",
+      "make": "FMC Technologies",
+      "images": [
+        {
+          "file": "FMC/swivel-joint-fmc-1.jpg",
+          "kind": "render",
+          "match": "same type, different end/size",
+          "sourcePage": "https://theofmp.com/p/301-32-1889782",
+          "imageUrl": "https://media.theofmp.com/media/TFMC/images/original-chiksan-and-triplestep-swivel-joints_v5.jpg",
+          "notes": "Original Chiksan swivel joint: two long-radius elbows, two swivel bodies, wing nut (F) and male union ends. Style number not stated."
+        },
+        {
+          "file": "FMC/swivel-joint-fmc-2.jpg",
+          "kind": "render",
+          "match": "same type, different end/size",
+          "sourcePage": "https://theofmp.com/p/301-32-1889782",
+          "imageUrl": "https://media.theofmp.com/media/TFMC/images/original-chiksan-and-triplestep-swivel-joints_v6.jpg",
+          "notes": "Same family, J-shaped view showing the male sub with seal and the wing nut end."
+        }
+      ]
+    },
+    {
+      "sku": "IH-FI-SJ-1502-S50-3AX-15K-STD-FMC",
+      "title": "Swivel Joint, 1502 Style 50 (3-Axis), 15,000 psi, Standard Service",
+      "make": "FMC Technologies",
+      "images": [
+        {
+          "file": "FMC/swivel-joint-fmc-1.jpg",
+          "kind": "render",
+          "match": "same type, different end/size",
+          "sourcePage": "https://theofmp.com/p/301-32-1889782",
+          "imageUrl": "https://media.theofmp.com/media/TFMC/images/original-chiksan-and-triplestep-swivel-joints_v5.jpg",
+          "notes": "Original Chiksan swivel joint: two long-radius elbows, two swivel bodies, wing nut (F) and male union ends. Style number not stated."
+        },
+        {
+          "file": "FMC/swivel-joint-fmc-2.jpg",
+          "kind": "render",
+          "match": "same type, different end/size",
+          "sourcePage": "https://theofmp.com/p/301-32-1889782",
+          "imageUrl": "https://media.theofmp.com/media/TFMC/images/original-chiksan-and-triplestep-swivel-joints_v6.jpg",
+          "notes": "Same family, J-shaped view showing the male sub with seal and the wing nut end."
+        }
+      ]
+    },
+    {
+      "sku": "IH-FI-TE-1502-MFF-10K-SOUR-FMC",
+      "title": "Tee, 1502 Series M × F × F, 10,000 psi, Sour Service",
+      "make": "FMC Technologies",
+      "images": [
+        {
+          "file": "FMC/tee-fmc-1.jpg",
+          "kind": "render",
+          "match": "same type, different end/size",
+          "sourcePage": "https://theofmp.com/p/301-32-1889790",
+          "imageUrl": "https://media.theofmp.com/media/TFMC/images/fitting3_v1.jpg",
+          "notes": "Weco integral tee with FMC logo cast on the body. Shows a male end and a wing nut end. M x F x F is not confirmed."
+        }
+      ]
+    },
+    {
+      "sku": "IH-FI-WY-1502-S-MFF-15K-STD-FMC",
+      "title": "Wye Straight, 1502 Series M × F × F, 15,000 psi, Standard Service",
+      "make": "FMC Technologies",
+      "images": [
+        {
+          "file": "FMC/wye-fmc-1.jpg",
+          "kind": "render",
+          "match": "same type, different end/size",
+          "sourcePage": "https://theofmp.com/p/301-32-1889790",
+          "imageUrl": "https://media.theofmp.com/media/TFMC/images/fitting1_v2.jpg",
+          "notes": "Weco integral lateral/wye with one male end and two wing nut (F) ends. Appears M x F x F. Branch is angled, so not a straight wye."
+        },
+        {
+          "file": "FMC/wye-fmc-2.jpg",
+          "kind": "render",
+          "match": "same type, different end/size",
+          "sourcePage": "https://theofmp.com/p/301-32-1889790",
+          "imageUrl": "https://media.theofmp.com/media/TFMC/images/fitting2_v2.jpg",
+          "notes": "Weco 45 deg lateral (wye), two male ends and one wing nut end (M x M x F)."
+        }
+      ]
+    },
+    {
+      "sku": "IH-FI-XO-1502-MF-15K-STD-FMC",
+      "title": "Crossover Union, 1502 Series M×F, 15,000 psi, Standard Service",
+      "make": "FMC Technologies",
+      "images": [
+        {
+          "file": "FMC/crossover-union-fmc-1.jpg",
+          "kind": "render",
+          "match": "same type, different end/size",
+          "sourcePage": "https://theofmp.com/p/301-32-1889803",
+          "imageUrl": "https://media.theofmp.com/media/TFMC/images/adapter2_v1.jpg",
+          "notes": "Weco union adapter, wing nut (F) x male union thread with seal: the M x F crossover form. Figure not readable. Best fit for the MF SKUs; the MM SKUs need a male-male part."
+        }
+      ]
+    },
+    {
+      "sku": "IH-FI-XO-1502-RED-15K-STD-FMC",
+      "title": "Crossover Union, 1502 Series Reducer M×F, 15,000 psi, Standard Service",
+      "make": "FMC Technologies",
+      "images": [
+        {
+          "file": "FMC/crossover-union-fmc-1.jpg",
+          "kind": "render",
+          "match": "same type, different end/size",
+          "sourcePage": "https://theofmp.com/p/301-32-1889803",
+          "imageUrl": "https://media.theofmp.com/media/TFMC/images/adapter2_v1.jpg",
+          "notes": "Weco union adapter, wing nut (F) x male union thread with seal: the M x F crossover form. Figure not readable. Best fit for the MF SKUs; the MM SKUs need a male-male part."
+        }
+      ]
+    },
+    {
+      "sku": "IH-FI-XO-206-MF-2K-SOUR-FMC",
+      "title": "Crossover Union, 206 Series M×F, 2,000 psi, Sour Service",
+      "make": "FMC Technologies",
+      "images": [
+        {
+          "file": "FMC/crossover-union-fmc-1.jpg",
+          "kind": "render",
+          "match": "same type, different end/size",
+          "sourcePage": "https://theofmp.com/p/301-32-1889803",
+          "imageUrl": "https://media.theofmp.com/media/TFMC/images/adapter2_v1.jpg",
+          "notes": "Weco union adapter, wing nut (F) x male union thread with seal: the M x F crossover form. Figure not readable. Best fit for the MF SKUs; the MM SKUs need a male-male part."
+        }
+      ]
+    },
+    {
+      "sku": "IH-FI-XO-602-MF-6K-SOUR-FMC",
+      "title": "Crossover Union, 602 Series M×F, 6,000 psi, Sour Service",
+      "make": "FMC Technologies",
+      "images": [
+        {
+          "file": "FMC/crossover-union-fmc-1.jpg",
+          "kind": "render",
+          "match": "same type, different end/size",
+          "sourcePage": "https://theofmp.com/p/301-32-1889803",
+          "imageUrl": "https://media.theofmp.com/media/TFMC/images/adapter2_v1.jpg",
+          "notes": "Weco union adapter, wing nut (F) x male union thread with seal: the M x F crossover form. Figure not readable. Best fit for the MF SKUs; the MM SKUs need a male-male part."
+        }
+      ]
+    },
+    {
+      "sku": "IH-STT-FRAC-API-10K-FLG-CAMERON",
+      "title": "Surface Test Tree, Conventional Frac API 6BX 10K Flanged, Standard Service",
+      "make": "Cameron",
+      "images": [
+        {
+          "file": "Cameron and Stream-Flo/frac-tree-cameron-1.jpg",
+          "kind": "render",
+          "match": "same type, different end/size",
+          "sourcePage": "https://www.slb.com/products-and-services/innovating-in-oil-and-gas/completions/stimulation/frac-and-flowback-equipment/frac-trees-and-zipper-manifolds",
+          "imageUrl": "https://www.slb.com/-/media/images/sur/frac-flowback-equipment/cameron-frac-tree-slb-hero.jpg",
+          "notes": "Clean render of a Cameron flanged frac tree with block valves and one manual valve on a white background. Best candidate."
+        }
+      ]
+    },
+    {
+      "sku": "IH-WH-CH-API-3K-STREAMFLO",
+      "title": "Casing Head, API 6B 3K (Multi-Bowl), Standard Service",
+      "make": "Stream-Flo Industries",
+      "images": [
+        {
+          "file": "Cameron and Stream-Flo/wellhead-streamflo-3.jpg",
+          "kind": "photo",
+          "match": "same type, different end/size",
+          "sourcePage": "https://streamflo.com/wellheads/",
+          "imageUrl": "https://streamflo.com/wp-content/uploads/2022/12/conventional-wellhead.jpg",
+          "notes": "Full red Crown wellhead stack in the factory: casing head, spools, tubing head, adapter and tree valves, with Stream-Flo/Crown nameplates. Best overall candidate."
+        },
+        {
+          "file": "Cameron and Stream-Flo/wellhead-streamflo-2.jpg",
+          "kind": "photo",
+          "match": "same type, different end/size",
+          "sourcePage": "https://streamflo.com/wellheads/conventional-wellheads/",
+          "imageUrl": "https://streamflo.com/wp-content/uploads/2022/12/wellhead.jpg",
+          "notes": "Close-up of the same kind of red Crown stack: casing head and spool flanges with gate valves on the outlets. Crown nameplates are readable."
+        }
+      ]
+    },
+    {
+      "sku": "IH-WH-CS-API-10K-FMC",
+      "title": "Casing Spool, API 6BX 10K, Standard Service",
+      "make": "FMC Technologies",
+      "images": [
+        {
+          "file": "FMC/casing-spool-fmc-1.jpg",
+          "kind": "render",
+          "match": "exact model",
+          "sourcePage": "https://theofmp.com/p/301-32-1889783",
+          "imageUrl": "https://media.theofmp.com/media/TFMC/images/casing-spool-p1000188729_v1.jpg",
+          "notes": "TechnipFMC casing spool P1000188729, flanged top and bottom, studded side outlets."
+        }
+      ]
+    },
+    {
+      "sku": "IH-WH-CS-API-5K-CAMERON",
+      "title": "Casing Spool, API 6B 5K, Standard Service",
+      "make": "Cameron",
+      "images": [
+        {
+          "file": "Cameron and Stream-Flo/wellhead-ic-cameron-1.jpg",
+          "kind": "render",
+          "match": "same type, different end/size",
+          "sourcePage": "https://www.slb.com/products-and-services/innovating-in-oil-and-gas/well-construction/wellhead-systems/ic-conventional-wellhead-systems",
+          "imageUrl": "https://www.slb.com/-/media/images/drl/wellheads/ic-conventional-wellhead-combo.jpg",
+          "notes": "Cutaway render of the Cameron IC conventional wellhead stack: casing head housing, casing spool, tubing spool, slip-type hangers and packoffs. Shows the parts but not a single component on its own, and it is a cross-section, not a product photo."
+        }
+      ]
+    },
+    {
+      "sku": "IH-WH-SCH-API-5K-CAMERON",
+      "title": "Slip-Type Casing Hanger, API 6A 5K, Standard Service",
+      "make": "Cameron",
+      "images": [
+        {
+          "file": "Cameron and Stream-Flo/wellhead-ic-cameron-1.jpg",
+          "kind": "render",
+          "match": "same type, different end/size",
+          "sourcePage": "https://www.slb.com/products-and-services/innovating-in-oil-and-gas/well-construction/wellhead-systems/ic-conventional-wellhead-systems",
+          "imageUrl": "https://www.slb.com/-/media/images/drl/wellheads/ic-conventional-wellhead-combo.jpg",
+          "notes": "Cutaway render of the Cameron IC conventional wellhead stack: casing head housing, casing spool, tubing spool, slip-type hangers and packoffs. Shows the parts but not a single component on its own, and it is a cross-section, not a product photo."
+        }
+      ]
+    },
+    {
+      "sku": "IH-WH-TH-API-10K-FMC",
+      "title": "Tubing Head, API 6BX 10K, Standard Service",
+      "make": "FMC Technologies",
+      "images": [
+        {
+          "file": "FMC/tubing-head-fmc-1.jpg",
+          "kind": "render",
+          "match": "exact model",
+          "sourcePage": "https://theofmp.com/p/301-32-1889809",
+          "imageUrl": "https://media.theofmp.com/media/TFMC/images/tubing-completions_v1.jpg",
+          "notes": "TechnipFMC tubing head, flanged both ends, lockdown screws and studded outlets."
+        }
+      ]
+    },
+    {
+      "sku": "IH-WH-TH-API-10K-SOUR-CAMERON",
+      "title": "Tubing Head, API 6BX 10K, Sour Service",
+      "make": "Cameron",
+      "images": [
+        {
+          "file": "Cameron and Stream-Flo/wellhead-ic-cameron-1.jpg",
+          "kind": "render",
+          "match": "same type, different end/size",
+          "sourcePage": "https://www.slb.com/products-and-services/innovating-in-oil-and-gas/well-construction/wellhead-systems/ic-conventional-wellhead-systems",
+          "imageUrl": "https://www.slb.com/-/media/images/drl/wellheads/ic-conventional-wellhead-combo.jpg",
+          "notes": "Cutaway render of the Cameron IC conventional wellhead stack: casing head housing, casing spool, tubing spool, slip-type hangers and packoffs. Shows the parts but not a single component on its own, and it is a cross-section, not a product photo."
+        }
+      ]
+    },
+    {
+      "sku": "IH-WH-TH-API-5K-CAMERON",
+      "title": "Tubing Head, API 6B 5K, Standard Service",
+      "make": "Cameron",
+      "images": [
+        {
+          "file": "Cameron and Stream-Flo/wellhead-ic-cameron-1.jpg",
+          "kind": "render",
+          "match": "same type, different end/size",
+          "sourcePage": "https://www.slb.com/products-and-services/innovating-in-oil-and-gas/well-construction/wellhead-systems/ic-conventional-wellhead-systems",
+          "imageUrl": "https://www.slb.com/-/media/images/drl/wellheads/ic-conventional-wellhead-combo.jpg",
+          "notes": "Cutaway render of the Cameron IC conventional wellhead stack: casing head housing, casing spool, tubing spool, slip-type hangers and packoffs. Shows the parts but not a single component on its own, and it is a cross-section, not a product photo."
+        }
+      ]
+    },
+    {
+      "sku": "IH-WH-THA-API-5K-10K-STREAMFLO",
+      "title": "Tubing Head Adapter (5K to 10K), API 6B × 6BX, Standard Service",
+      "make": "Stream-Flo Industries",
+      "images": [
+        {
+          "file": "Cameron and Stream-Flo/wellhead-streamflo-3.jpg",
+          "kind": "photo",
+          "match": "same type, different end/size",
+          "sourcePage": "https://streamflo.com/wellheads/",
+          "imageUrl": "https://streamflo.com/wp-content/uploads/2022/12/conventional-wellhead.jpg",
+          "notes": "Full red Crown wellhead stack in the factory: casing head, spools, tubing head, adapter and tree valves, with Stream-Flo/Crown nameplates. Best overall candidate."
+        },
+        {
+          "file": "Cameron and Stream-Flo/wellhead-streamflo-2.jpg",
+          "kind": "photo",
+          "match": "same type, different end/size",
+          "sourcePage": "https://streamflo.com/wellheads/conventional-wellheads/",
+          "imageUrl": "https://streamflo.com/wp-content/uploads/2022/12/wellhead.jpg",
+          "notes": "Close-up of the same kind of red Crown stack: casing head and spool flanges with gate valves on the outlets. Crown nameplates are readable."
+        }
+      ]
+    },
+    {
+      "sku": "IH-WH-XT-API-10K-SOUR-CAMERON",
+      "title": "Christmas Tree, API 6BX 10K Conventional, Sour Service",
+      "make": "Cameron",
+      "images": [
+        {
+          "file": "Cameron and Stream-Flo/christmas-tree-cameron-1.jpg",
+          "kind": "photo",
+          "match": "same type, different end/size",
+          "sourcePage": "https://www.slb.com/products-and-services/innovating-in-oil-and-gas/well-construction/wellhead-systems/ic-conventional-wellhead-systems",
+          "imageUrl": "https://www.slb.com/-/media/images/drl/wellheads/ic-conventional-wellhead-hero.jpg",
+          "notes": "Conventional manual tree on wellhead, field photo. Same file as in the wellhead group. Wide darkened banner, needs crop."
+        }
+      ]
+    },
+    {
+      "sku": "IH-WH-XT-API-5K-CAMERON",
+      "title": "Christmas Tree, API 6B 5K Conventional, Standard Service",
+      "make": "Cameron",
+      "images": [
+        {
+          "file": "Cameron and Stream-Flo/christmas-tree-cameron-1.jpg",
+          "kind": "photo",
+          "match": "same type, different end/size",
+          "sourcePage": "https://www.slb.com/products-and-services/innovating-in-oil-and-gas/well-construction/wellhead-systems/ic-conventional-wellhead-systems",
+          "imageUrl": "https://www.slb.com/-/media/images/drl/wellheads/ic-conventional-wellhead-hero.jpg",
+          "notes": "Conventional manual tree on wellhead, field photo. Same file as in the wellhead group. Wide darkened banner, needs crop."
+        }
+      ]
+    }
+  ]
+}

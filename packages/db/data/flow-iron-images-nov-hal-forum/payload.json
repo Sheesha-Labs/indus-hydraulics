@@ -1,0 +1,98 @@
+{
+  "imageDir": "~/Documents/Indus Supplier Research/Image Research/Flow Iron and Wellhead",
+  "captionNote": "",
+  "note": "NOV, Halliburton and Forum images for flow iron manifold and test-equipment listings, uploaded on Ayush's instruction on 2026-10-08.",
+  "listings": [
+    {
+      "sku": "IH-FI-MN-CK-API10K-FLG-NOV",
+      "title": "Choke Manifold, API 6BX 10K Flanged, Standard Service",
+      "make": "National Oilwell Varco",
+      "images": [
+        {
+          "file": "SPM Anson NOV Halliburton Forum/choke-manifold-nov-1.jpg",
+          "kind": "photo",
+          "match": "same type, different end/size",
+          "sourcePage": "https://www.nov.com/products/well-service-manifolds",
+          "imageUrl": "https://assets.nov.com/NCP4N68N/at/ghfqq8snt8rn4vkb7z7q2zgr/Choke_Manifold_from_above.jpg?format=jpg&width=1600"
+        }
+      ]
+    },
+    {
+      "sku": "IH-FI-MN-MW-1502-4WELL-15K-STD-NOV",
+      "title": "Multi-Well Manifold (4-Well), 1502 Series, 15,000 psi, Standard Service",
+      "make": "National Oilwell Varco",
+      "images": [
+        {
+          "file": "SPM Anson NOV Halliburton Forum/block-manifold-nov-1.jpg",
+          "kind": "photo",
+          "match": "generic type only",
+          "sourcePage": "https://www.nov.com/products/well-service-manifolds",
+          "imageUrl": "https://assets.nov.com/NCP4N68N/at/8qtb7p3p2sh7ww7xjvtsjsr/Block_Manifold.jpg?format=jpg&width=1600"
+        }
+      ]
+    },
+    {
+      "sku": "IH-FI-MN-MW-1502-8WELL-10K-SOUR-HALLIBURTON",
+      "title": "Multi-Well Manifold (8-Well), 1502 Series, 10,000 psi, Sour Service",
+      "make": "Halliburton",
+      "images": [
+        {
+          "file": "SPM Anson NOV Halliburton Forum/multi-well-manifold-halliburton-1.jpg",
+          "kind": "render",
+          "match": "generic type only",
+          "sourcePage": "https://www.halliburton.com/en/products/expresskinect-system",
+          "imageUrl": "https://cdn.brandfolder.io/PKKYOY46/as/svr5htzjjm8ks88vq5trwtr/8_camera_14_00292.auto?width=1600&format=jpg"
+        }
+      ]
+    },
+    {
+      "sku": "IH-FI-MN-CK-S-1502-10K-SOUR-HALLIBURTON",
+      "title": "Choke Manifold, Single-Stage 1502, 10,000 psi, Sour Service",
+      "make": "Halliburton",
+      "images": [
+        {
+          "file": "SPM Anson NOV Halliburton Forum/surface-well-testing-halliburton-1.jpg",
+          "kind": "photo",
+          "match": "generic type only",
+          "sourcePage": "https://www.halliburton.com/en/subsurface/reservoir-testing/surface-well-testing",
+          "imageUrl": "https://cdn.brandfolder.io/G1R8FA5S/at/t424vcsvrx9hbbcpb3spj2n/_SAF9129.auto?width=1600&format=jpg"
+        }
+      ]
+    },
+    {
+      "sku": "IH-FI-MN-CK-D-1502-10K-SOUR-FORUM",
+      "title": "Choke Manifold, Dual-Stage 1502, 10,000 psi, Sour Service",
+      "make": "Forum Energy Technologies",
+      "images": [
+        {
+          "file": "SPM Anson NOV Halliburton Forum/choke-manifold-forum-1.jpg",
+          "kind": "render",
+          "match": "same type, different end/size",
+          "sourcePage": "https://f-e-t.com/drilling/drill-fluid-handling/manifolds/",
+          "imageUrl": "https://f-e-t.com/wp-content/uploads/2019/09/choke-and-kill-manifolds.jpg"
+        }
+      ]
+    },
+    {
+      "sku": "IH-FI-MN-SK-1502-15K-STD-FORUM",
+      "title": "Manifold Skid Package (Frac Iron), 1502 Series, 15,000 psi, Standard Service",
+      "make": "Forum Energy Technologies",
+      "images": [
+        {
+          "file": "SPM Anson NOV Halliburton Forum/manifold-skid-forum-1.jpg",
+          "kind": "render",
+          "match": "same type, different end/size",
+          "sourcePage": "https://f-e-t.com/stimulation/manifold-systems/duraline-manifold/",
+          "imageUrl": "https://f-e-t.com/wp-content/uploads/2026/03/v-pod-1513x1056-1.jpg"
+        },
+        {
+          "file": "SPM Anson NOV Halliburton Forum/manifold-skid-forum-2.jpg",
+          "kind": "render",
+          "match": "generic type only",
+          "sourcePage": "https://f-e-t.com/stimulation/manifold-systems/duraline-manifold/",
+          "imageUrl": "https://f-e-t.com/wp-content/uploads/2025/03/DuraLine-2_lr.jpg"
+        }
+      ]
+    }
+  ]
+}
