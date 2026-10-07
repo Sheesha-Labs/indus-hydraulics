@@ -23,6 +23,9 @@
  * keys are read from the main checkout's apps/web/.env.local):
  *   pnpm --filter @indus/db exec tsx src/imports/2026-10-08-oilfield-valve-images/run.ts --dry-run
  *   pnpm --filter @indus/db exec tsx src/imports/2026-10-08-oilfield-valve-images/run.ts
+ *
+ * The same runner loads the flow iron and wellhead set (2026-10-08) with
+ * --payload=flow-iron-images.
  */
 import '../2026-05-11-service-cases-launch/load-env-stub'
 
@@ -46,7 +49,12 @@ type Payload = {
 
 const DRY_RUN = process.argv.includes('--dry-run')
 const BUCKET = 'product-images'
-const PAYLOAD = resolve(__dirname, '../../../data/oilfield-valve-images/payload.json')
+// --payload=flow-iron-images loads data/flow-iron-images/payload.json; the default is the valve set.
+const PAYLOAD_NAME =
+  process.argv.find((a) => a.startsWith('--payload='))?.slice('--payload='.length) ??
+  'oilfield-valve-images'
+if (!/^[a-z0-9-]+$/.test(PAYLOAD_NAME)) throw new Error(`bad --payload: ${PAYLOAD_NAME}`)
+const PAYLOAD = resolve(__dirname, `../../../data/${PAYLOAD_NAME}/payload.json`)
 const WEB_ENV = [
   resolve(__dirname, '../../../../../apps/web/.env.local'),
   join(homedir(), 'indus-hydraulics-code/indus-hydraulics/apps/web/.env.local'),
