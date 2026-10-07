@@ -87,17 +87,14 @@ Sunpool's value, and on 4 so did the "Working pressure" line.
 - The double bolt clamp's SL sizes and the whip checks get the block only. A
   size table holding nothing but part numbers says less than the block does.
 
-## Not fixed — still generic on the older listings
-
-These lines predate the Sunpool import and are not Sunpool's:
-
-- **End A / End B, seal and standards lines and family paragraphs** written
-  for the family rather than the product.
+## Older listings' generic lines
 
 The generic working-pressure lines were removed on 2026-10-07 by
 `src/imports/2026-10-07-pressure-claims`. Sunpool publishes a pressure for
-only the heavy-duty KC range (300 psi) and the 30° FDC elbow (250 psi); every
-other listing now says the rating is not published.
+only the heavy-duty KC range (300 psi) and the 30° FDC elbow (250 psi). The
+remaining template lines — ends, seal, standard, family paragraph and short
+description — were rewritten the same day by
+`src/imports/2026-10-07-older-coupling-copy`; see `../older-coupling-copy`.
 
 ## Re-running
 

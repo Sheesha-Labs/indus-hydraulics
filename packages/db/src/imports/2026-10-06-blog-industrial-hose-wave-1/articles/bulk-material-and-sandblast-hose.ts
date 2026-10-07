@@ -4,7 +4,7 @@ import type { BlogArticleSeed } from '../shared'
 
 /**
  * Abrasive duty, read from A361 and PREMFLEX and the six sandblast coupling
- * listings (NPSH to ANSI B1.20.7).
+ * listings (Sealfast\'s nozzle holders are NPSH-threaded).
  */
 const ARTICLE: BlogArticleSeed = {
   slug: 'bulk-material-and-sandblast-hose',
@@ -27,7 +27,7 @@ const ARTICLE: BlogArticleSeed = {
         'Abrasive media wear the tube from the inside, so the tube compound, not the cover, decides the hose life.',
         'A361 has an anti-static natural rubber tube, steel helix and anti-static wires; 10 bar, 3" and 4", −40 to +70 °C.',
         'Moving powders and grit build static; the anti-static path must run coupling to coupling and to earth.',
-        'Sandblast couplings and nozzle holders in our range thread NPSH to ANSI B1.20.7; the one published rating is 110 psi, on Sealfast\'s aluminium female NPT crowfoot end.',
+        'Sealfast\'s aluminium nozzle holders thread NPSH (ASME B1.20.7); the one published rating is 110 psi, on Sealfast\'s aluminium female NPT crowfoot end.',
         'Wear concentrates on the outside of bends; route abrasive hose in long, gentle curves.',
       ],
     },
@@ -86,7 +86,7 @@ const ARTICLE: BlogArticleSeed = {
     },
     {
       type: 'paragraph',
-      html: 'Blasting hose has its own small family of ends. Our sandblast range covers aluminium hose ends with crowfoot faces (3/4" to 1-1/2"), NPSH-threaded nozzle holders (3/4" to 1-1/2"), and nylon hose couplers, female thread adapters and nozzle holders in 1-1/4" and 1-1/2", in yellow or red. The thread is <strong>NPSH to ANSI B1.20.7</strong>, and only one part has a published rating: Sealfast\'s aluminium female NPT crowfoot end, at 110 psi. Confirm the rest for your blast pressure — and the hose still sets the limit. Aluminium parts carry a Buna-N gasket; the nylon parts press-fit with none.',
+      html: 'Blasting hose has its own small family of ends. Our sandblast range covers aluminium hose ends with crowfoot faces (3/4" to 1-1/2"), NPSH-threaded nozzle holders (3/4" to 1-1/2"), and nylon hose couplers, female thread adapters and nozzle holders in 1-1/4" and 1-1/2", in yellow or red. Sealfast\'s nozzle holders are <strong>NPSH-threaded (ASME B1.20.7)</strong>, and only one part has a published rating: Sealfast\'s aluminium female NPT crowfoot end, at 110 psi. Confirm the rest for your blast pressure — and the hose still sets the limit.',
     },
     {
       type: 'callout',
@@ -111,7 +111,7 @@ const ARTICLE: BlogArticleSeed = {
         {
           question: 'What thread do sandblast couplings use?',
           answer:
-            'Our sandblast couplings and nozzle holders are threaded NPSH to ANSI B1.20.7.',
+            'Sealfast\'s aluminium nozzle holders are threaded NPSH (ASME B1.20.7), and one of its crowfoot ends has a female NPT thread. Sunpool does not state a thread for its nylon parts.',
         },
         {
           question: 'Where does abrasive hose wear out first?',

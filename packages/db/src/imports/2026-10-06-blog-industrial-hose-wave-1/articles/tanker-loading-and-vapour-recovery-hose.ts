@@ -77,7 +77,7 @@ const ARTICLE: BlogArticleSeed = {
     },
     {
       type: 'paragraph',
-      html: 'Composite hose needs composite fittings: a spiral tail that threads into the hose\'s internal wire, held by a ferrule or lug nut. Our composite fittings — cam lock C and E with spiral tails, female liners with lug nuts, hex male and flanged tails — are listed to EN 13765:2015 Type 3; Sunpool publishes no working pressure for the fittings themselves.',
+      html: 'Composite hose needs composite fittings: a spiral tail that threads into the hose\'s internal wire, held by a ferrule or lug nut. Our composite fittings — cam lock C and E with spiral tails, female liners with lug nuts, hex male and flanged tails — are made for composite hose; Sunpool publishes no working pressure for the fittings themselves.',
     },
 
     {
@@ -116,7 +116,7 @@ const ARTICLE: BlogArticleSeed = {
         {
           question: 'Do composite hoses need special fittings?',
           answer:
-            'Yes. Composite hose uses spiral-tail fittings that engage its internal wire, held by a ferrule or lug nut. Ours are listed to EN 13765:2015 Type 3.',
+            'Yes. Composite hose uses spiral-tail fittings that engage its internal wire, held by a ferrule or lug nut. Sunpool designs ours for composite hose, and the spiral tail suits most composite hose worldwide.',
         },
       ],
     },

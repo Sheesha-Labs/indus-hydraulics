@@ -942,7 +942,7 @@ export const BLOG_SEO: Record<string, BlogSeo> = {
     focusKeyword: 'bauer couplings',
     seoTitle: 'Bauer couplings explained: sizes, parts',
     seoDescription:
-      'How Bauer lever couplings work, the parts and sizes from 2" to 12", flange backs to DIN 2501, what sets the rating, and why ring lock is not a Bauer.',
+      'How Bauer lever couplings work, the parts and sizes from 2" to 12", ASA Class 150 flange backs, what sets the rating, and why ring lock is not a Bauer.',
   },
   'bulk-material-and-sandblast-hose': {
     focusKeyword: 'sandblast hose',

@@ -71,7 +71,7 @@ const ARTICLE: BlogArticleSeed = {
     },
     {
       type: 'paragraph',
-      html: 'Crowfoot couplings in our range are listed as interchangeable with Chicago and universal couplings: zinc-plated iron four-lug hose ends and female NPT ends from 1-1/4" to 2", and 316 stainless hose, male NPT, female NPT, blank and triple-connection ends from 1/2". Gaskets are Buna-N or Viton.',
+      html: 'Our crowfoot range covers zinc-plated iron four-lug hose ends and female NPT ends from 1-1/4" to 2", and 316 stainless hose, male NPT, female NPT, blank and triple-connection ends from 1/2".',
     },
 
     {

@@ -69,7 +69,7 @@ const ARTICLE: BlogArticleSeed = {
     },
     {
       type: 'paragraph',
-      html: 'Sealfast does not publish a pressure rating for its ground joint parts, so tell us the steam pressure and temperature and we will confirm one with the manufacturer. The hose sets the assembly too: our black saturated steam hose is a 10 bar hose and our high-pressure red hose 18 bar, both at a 10:1 safety factor, and the 7 bar steam and hot-water hose is rated to 170 °C on steam and 95 °C on hot water. The pattern is interchangeable with the common US ground joint couplings, so spuds already plumbed on a plant usually accept our stems.',
+      html: 'Sealfast does not publish a pressure rating for its ground joint parts, so tell us the steam pressure and temperature and we will confirm one with the manufacturer. The hose sets the assembly too: our black saturated steam hose is a 10 bar hose and our high-pressure red hose 18 bar, both at a 10:1 safety factor, and the 7 bar steam and hot-water hose is rated to 170 °C on steam and 95 °C on hot water. Check a spud already plumbed on a plant against our stems before mixing makers\' parts.',
     },
     {
       type: 'comparison_table',

@@ -3,7 +3,7 @@ import { AUTHOR_SLUG, VERIFIED_ON } from '../shared'
 import type { BlogArticleSeed } from '../shared'
 
 /**
- * Guillemin, read from the nine Guillemin listings: NF E 29-572, symmetrical
+ * Guillemin, read from the nine Guillemin listings: the Guillemin system (NF E 29-572 in France), symmetrical
  * heads, the lock ring, 3/4" to 4", aluminium and stainless.
  */
 const ARTICLE: BlogArticleSeed = {
@@ -25,7 +25,7 @@ const ARTICLE: BlogArticleSeed = {
       type: 'key_takeaways',
       items: [
         'Guillemin is symmetrical: identical heads lock together, so any two heads of one size connect.',
-        'Our Guillemin couplings are listed to NF E 29-572, from 3/4" to 4", in aluminium or stainless steel. Sunpool publishes no working pressure for them, so we confirm it for your duty.',
+        'Our Guillemin couplings are Sunpool\'s, from 3/4" to 4", in aluminium or stainless steel. Sunpool does not state which standard they are made to or publish a working pressure, so we confirm it for your duty.',
         'The lock ring stops a connected pair rotating apart; versions with and without it are listed.',
         'Tails: long or short hose shank, spiral hose tail, male thread or female thread (BSP or NPT), plus reducers and dust caps.',
         'It does not connect to a Storz or Barcelona head without an adapter, although all three are symmetrical.',
@@ -107,7 +107,7 @@ const ARTICLE: BlogArticleSeed = {
         {
           question: 'Which standard covers Guillemin couplings?',
           answer:
-            'Our Guillemin range is listed to NF E 29-572, the French standard for the pattern.',
+            'NF E 29-572 is the French standard for the Guillemin system. Sunpool does not state which standard its parts are made to, so tell us if your specification names one.',
         },
         {
           question: 'Does a Guillemin coupling connect to a Storz coupling?',
@@ -139,13 +139,13 @@ const ARTICLE: BlogArticleSeed = {
       type: 'category_link',
       slug: 'guillemin-couplings',
       label: 'Guillemin couplings',
-      blurb: 'NF E 29-572 heads, adapters, reducers and caps, 3/4" to 4".',
+      blurb: 'Guillemin heads, adapters, reducers and caps, 3/4" to 4".',
     },
     {
       type: 'category_link',
       slug: 'storz-couplings',
       label: 'Storz couplings',
-      blurb: 'The German symmetrical coupling, DIN 14301.',
+      blurb: 'The German symmetrical coupling, sized by lug distance.',
     },
 
     {
