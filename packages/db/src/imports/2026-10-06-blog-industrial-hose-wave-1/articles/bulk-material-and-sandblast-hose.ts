@@ -27,7 +27,7 @@ const ARTICLE: BlogArticleSeed = {
         'Abrasive media wear the tube from the inside, so the tube compound, not the cover, decides the hose life.',
         'A361 has an anti-static natural rubber tube, steel helix and anti-static wires; 10 bar, 3" and 4", −40 to +70 °C.',
         'Moving powders and grit build static; the anti-static path must run coupling to coupling and to earth.',
-        'Sandblast couplings and nozzle holders in our range thread NPSH to ANSI B1.20.7 and are rated up to 300 psi in sandblast service.',
+        'Sandblast couplings and nozzle holders in our range thread NPSH to ANSI B1.20.7; the one published rating is 110 psi, on Sealfast\'s aluminium female NPT crowfoot end.',
         'Wear concentrates on the outside of bends; route abrasive hose in long, gentle curves.',
       ],
     },
@@ -86,7 +86,7 @@ const ARTICLE: BlogArticleSeed = {
     },
     {
       type: 'paragraph',
-      html: 'Blasting hose has its own small family of ends. Our sandblast range covers aluminium hose ends with crowfoot faces (3/4" to 1-1/2"), NPSH-threaded nozzle holders (3/4" to 1-1/2"), and nylon hose couplers, female thread adapters and nozzle holders in 1-1/4" and 1-1/2", in yellow or red. The thread is <strong>NPSH to ANSI B1.20.7</strong>, and the parts are rated up to 300 psi in sandblast service (one aluminium crowfoot end at 110 psi) — subject, as always, to the hose. Aluminium parts carry a Buna-N gasket; the nylon parts press-fit with none.',
+      html: 'Blasting hose has its own small family of ends. Our sandblast range covers aluminium hose ends with crowfoot faces (3/4" to 1-1/2"), NPSH-threaded nozzle holders (3/4" to 1-1/2"), and nylon hose couplers, female thread adapters and nozzle holders in 1-1/4" and 1-1/2", in yellow or red. The thread is <strong>NPSH to ANSI B1.20.7</strong>, and only one part has a published rating: Sealfast\'s aluminium female NPT crowfoot end, at 110 psi. Confirm the rest for your blast pressure — and the hose still sets the limit. Aluminium parts carry a Buna-N gasket; the nylon parts press-fit with none.',
     },
     {
       type: 'callout',

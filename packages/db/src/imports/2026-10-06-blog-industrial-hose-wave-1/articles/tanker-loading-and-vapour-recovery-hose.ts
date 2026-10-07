@@ -77,7 +77,7 @@ const ARTICLE: BlogArticleSeed = {
     },
     {
       type: 'paragraph',
-      html: 'Composite hose needs composite fittings: a spiral tail that threads into the hose\'s internal wire, held by a ferrule or lug nut. Our composite fittings — cam lock C and E with spiral tails, female liners with lug nuts, hex male and flanged tails — are listed to EN 13765:2015 Type 3, up to 14 bar.',
+      html: 'Composite hose needs composite fittings: a spiral tail that threads into the hose\'s internal wire, held by a ferrule or lug nut. Our composite fittings — cam lock C and E with spiral tails, female liners with lug nuts, hex male and flanged tails — are listed to EN 13765:2015 Type 3; Sunpool publishes no working pressure for the fittings themselves.',
     },
 
     {

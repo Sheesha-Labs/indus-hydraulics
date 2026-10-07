@@ -942,7 +942,7 @@ export const BLOG_SEO: Record<string, BlogSeo> = {
     focusKeyword: 'bauer couplings',
     seoTitle: 'Bauer couplings explained: sizes, parts',
     seoDescription:
-      'How Bauer lever couplings work, the parts and sizes from 2" to 12", the 16 bar rating, flange backs to DIN 2501, and why ring lock is not a Bauer.',
+      'How Bauer lever couplings work, the parts and sizes from 2" to 12", flange backs to DIN 2501, what sets the rating, and why ring lock is not a Bauer.',
   },
   'bulk-material-and-sandblast-hose': {
     focusKeyword: 'sandblast hose',
@@ -1014,7 +1014,7 @@ export const BLOG_SEO: Record<string, BlogSeo> = {
     focusKeyword: 'ground joint steam couplings',
     seoTitle: 'Ground joint steam couplings explained',
     seoDescription:
-      'How ground joint couplings seal steam metal to metal with no gasket, the stem, wing nut and spud, 600 psi steam ratings, and the clamps that hold them.',
+      'How ground joint couplings seal steam metal to metal with no gasket, the stem, wing nut and spud, what sets the rating, and the clamps that hold them.',
   },
   'guillemin-couplings-explained': {
     focusKeyword: 'guillemin couplings',

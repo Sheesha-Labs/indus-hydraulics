@@ -91,13 +91,13 @@ Sunpool's value, and on 4 so did the "Working pressure" line.
 
 These lines predate the Sunpool import and are not Sunpool's:
 
-- **Working pressure.** Storz "Up to 16 bar (232 psi) — typical fire-service
-  Storz rating" (25 listings). KC "Up to 600 psi (frac water); 250 psi
-  (suction service)" (10). Guillemin "Up to 16 bar" (9). Composite "Up to
-  14 bar" (6). Sandblast "Up to 300 psi" (3). Sunpool publishes a pressure
-  for only the heavy-duty KC range (300 psi) and the 30° FDC elbow (250 psi).
 - **End A / End B, seal and standards lines and family paragraphs** written
   for the family rather than the product.
+
+The generic working-pressure lines were removed on 2026-10-07 by
+`src/imports/2026-10-07-pressure-claims`. Sunpool publishes a pressure for
+only the heavy-duty KC range (300 psi) and the 30° FDC elbow (250 psi); every
+other listing now says the rating is not published.
 
 ## Re-running
 

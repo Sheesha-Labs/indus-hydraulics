@@ -4,7 +4,7 @@ import type { BlogArticleSeed } from '../shared'
 
 /**
  * Guillemin, read from the nine Guillemin listings: NF E 29-572, symmetrical
- * heads, the lock ring, 3/4" to 4", aluminium and stainless, 16 bar.
+ * heads, the lock ring, 3/4" to 4", aluminium and stainless.
  */
 const ARTICLE: BlogArticleSeed = {
   slug: 'guillemin-couplings-explained',
@@ -19,13 +19,13 @@ const ARTICLE: BlogArticleSeed = {
       type: 'direct_answer',
       question: 'What is a Guillemin coupling?',
       answer:
-        'A Guillemin coupling is a symmetrical quick coupling, standardised in France as NF E 29-572 and used for fire, water and industrial transfer hose. Both heads are identical, so there is no male or female: two heads of the same size face each other and lock with a short turn. A lock ring on many versions stops the joint turning apart. Our Guillemin range runs from 3/4" to 4" in aluminium or stainless, rated up to 16 bar.',
+        'A Guillemin coupling is a symmetrical quick coupling, standardised in France as NF E 29-572 and used for fire, water and industrial transfer hose. Both heads are identical, so there is no male or female: two heads of the same size face each other and lock with a short turn. A lock ring on many versions stops the joint turning apart. Our Guillemin range runs from 3/4" to 4" in aluminium or stainless; Sunpool publishes no working pressure for it.',
     },
     {
       type: 'key_takeaways',
       items: [
         'Guillemin is symmetrical: identical heads lock together, so any two heads of one size connect.',
-        'Our Guillemin couplings are listed to NF E 29-572, from 3/4" to 4", in aluminium or stainless steel, rated up to 16 bar (232 psi).',
+        'Our Guillemin couplings are listed to NF E 29-572, from 3/4" to 4", in aluminium or stainless steel. Sunpool publishes no working pressure for them, so we confirm it for your duty.',
         'The lock ring stops a connected pair rotating apart; versions with and without it are listed.',
         'Tails: long or short hose shank, spiral hose tail, male thread or female thread (BSP or NPT), plus reducers and dust caps.',
         'It does not connect to a Storz or Barcelona head without an adapter, although all three are symmetrical.',
@@ -87,13 +87,13 @@ const ARTICLE: BlogArticleSeed = {
     },
     {
       type: 'paragraph',
-      html: 'The spiral hose tail is made for suction hose with a rigid helix, where a plain barb would not seat. Reducers join two Guillemin sizes directly — our listing runs from 1-1/4" × 1" to 6" × 4". All parts are rated up to 16 bar (232 psi) in our range, and the gasket sits in the face of each head.',
+      html: 'The spiral hose tail is made for suction hose with a rigid helix, where a plain barb would not seat. Reducers join two Guillemin sizes directly — our listing runs from 1-1/4" × 1" to 6" × 4". Sunpool publishes no working pressure for the range, and the gasket sits in the face of each head.',
     },
     {
       type: 'callout',
       tone: 'warning',
       title: 'The tail sets the assembly rating.',
-      body: 'A Guillemin head rated to 16 bar on a shank held by a single band is not a 16 bar assembly. Clamp the tail for the pressure the hose will see and mark the assembly at its weakest part.',
+      body: 'A Guillemin head on a shank held by a single band is only as strong as that band. Clamp the tail for the pressure the hose will see and mark the assembly at its weakest part.',
     },
 
     {
@@ -117,7 +117,7 @@ const ARTICLE: BlogArticleSeed = {
         {
           question: 'What sizes and materials are available?',
           answer:
-            'Our listings run from 3/4" to 4" in aluminium or stainless steel, with reducing adapters up to 6" × 4", all rated up to 16 bar.',
+            'Our listings run from 3/4" to 4" in aluminium or stainless steel, with reducing adapters up to 6" × 4". Sunpool publishes no working pressure for them, so we confirm it for your duty.',
         },
       ],
     },

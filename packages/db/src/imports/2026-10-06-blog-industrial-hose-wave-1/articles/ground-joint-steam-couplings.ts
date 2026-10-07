@@ -20,14 +20,14 @@ const ARTICLE: BlogArticleSeed = {
       type: 'direct_answer',
       question: 'What is a ground joint coupling?',
       answer:
-        'A ground joint coupling is a steam and air hose coupling that seals metal to metal, with no gasket. A hose stem with a ground spherical seat is drawn against a matching spud by a wing nut, so there is no rubber in the joint to harden or blow out at steam temperature. Our plated-iron ground joint couplings run from 1/2" to 4" and are rated up to 600 psi on steam and 1,000 psi on cold air and water.',
+        'A ground joint coupling is a steam and air hose coupling that seals metal to metal, with no gasket. A hose stem with a ground spherical seat is drawn against a matching spud by a wing nut, so there is no rubber in the joint to harden or blow out at steam temperature. Our plated-iron ground joint couplings run from 1/2" to 4"; Sealfast publishes no pressure rating for them, so we confirm one for your steam duty.',
     },
     {
       type: 'key_takeaways',
       items: [
         'Ground joint couplings seal on a metal seat with no gasket, which is why they suit steam.',
         'A complete set is a hose stem, a wing nut and a male or female spud; double spuds and NPT male stems complete the range.',
-        'Our plated-iron ground joint parts run from 1/2" to 4", rated up to 600 psi steam and 1,000 psi cold air and water.',
+        'Our plated-iron ground joint parts run from 1/2" to 4"; Sealfast publishes no pressure rating, so confirm one for your steam pressure before ordering.',
         'The stem is held in the hose by a bolted clamp sized to the hose OD — never a worm-drive band on steam.',
         'European steam couplings use a different system: EN 14420-3 / DIN 2817 safety clamps and EN 14423 clamp couplings.',
       ],
@@ -69,7 +69,7 @@ const ARTICLE: BlogArticleSeed = {
     },
     {
       type: 'paragraph',
-      html: 'Our ground joint listings rate the parts up to 600 psi on steam and 1,000 psi on cold air and water. The hose sets the assembly: our black saturated steam hose is a 10 bar hose and our high-pressure red hose 18 bar, both at a 10:1 safety factor, and the 7 bar steam and hot-water hose is rated to 170 °C on steam and 95 °C on hot water. The pattern is interchangeable with the common US ground joint couplings, so spuds already plumbed on a plant usually accept our stems.',
+      html: 'Sealfast does not publish a pressure rating for its ground joint parts, so tell us the steam pressure and temperature and we will confirm one with the manufacturer. The hose sets the assembly too: our black saturated steam hose is a 10 bar hose and our high-pressure red hose 18 bar, both at a 10:1 safety factor, and the 7 bar steam and hot-water hose is rated to 170 °C on steam and 95 °C on hot water. The pattern is interchangeable with the common US ground joint couplings, so spuds already plumbed on a plant usually accept our stems.',
     },
     {
       type: 'comparison_table',
@@ -121,7 +121,7 @@ const ARTICLE: BlogArticleSeed = {
         {
           question: 'What pressure is a ground joint coupling rated for?',
           answer:
-            'Our plated-iron ground joint parts are rated up to 600 psi on steam and 1,000 psi on cold air and water. The hose and the clamp usually set a lower limit for the assembly.',
+            'Sealfast does not publish a pressure rating for its plated-iron ground joint parts; tell us the steam pressure and we will confirm one with the manufacturer. The hose and the clamp usually set a lower limit for the assembly.',
         },
         {
           question: 'Can I use a worm-drive clamp on a steam hose?',

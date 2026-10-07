@@ -77,7 +77,7 @@ const ARTICLE: BlogArticleSeed = {
     },
     {
       type: 'paragraph',
-      html: 'A rubber hose is gripped by squeezing its wall onto a barb. Composite hose has no wall to squeeze, so its fittings engage the wire instead: a <strong>spiral tail</strong> is threaded into the hose along the internal helix, and a ferrule or a lug nut on a female liner clamps the films and the outer wire down onto it. Our composite fittings — cam lock C and E with spiral tails, SS female liners with lug nuts, hex male tails with BSP or BSPT threads and a flanged tail to ASME B16.5 — are listed to EN 13765:2015 Type 3 and rated up to 14 bar with the host hose. Stainless versions are supplied with 3.1 certificates and leak-tested.',
+      html: 'A rubber hose is gripped by squeezing its wall onto a barb. Composite hose has no wall to squeeze, so its fittings engage the wire instead: a <strong>spiral tail</strong> is threaded into the hose along the internal helix, and a ferrule or a lug nut on a female liner clamps the films and the outer wire down onto it. Our composite fittings — cam lock C and E with spiral tails, SS female liners with lug nuts, hex male tails with BSP or BSPT threads and a flanged tail to ASME B16.5 — are listed to EN 13765:2015 Type 3; Sunpool publishes no working pressure for the fittings themselves, so the assembly is rated with the hose. Stainless versions are supplied with 3.1 certificates and leak-tested.',
     },
     {
       type: 'callout',

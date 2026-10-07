@@ -4,7 +4,7 @@ import type { BlogArticleSeed } from '../shared'
 
 /**
  * Bauer and ring lock, read from the 10 Bauer and 4 ring lock listings: sizes,
- * the lever ring, flange backs to DIN 2501 PN 10, and the 16 bar rating.
+ * the lever ring, flange backs to DIN 2501 PN 10, and what sets the pressure rating.
  */
 const ARTICLE: BlogArticleSeed = {
   slug: 'bauer-couplings-explained',
@@ -26,7 +26,7 @@ const ARTICLE: BlogArticleSeed = {
       items: [
         'Bauer is male-and-female: a rounded male tip, and a female seat carrying the gasket and the lever ring.',
         'The lever ring is a separate part and the usual one to wear; our listings carry it as a spare from 2" to 8".',
-        'Our Bauer-type couplings are zinc-plated carbon steel, rated up to 16 bar (232 psi), with a Buna-N gasket and Viton or EPDM on request.',
+        'Our Bauer-type couplings are zinc-plated carbon steel with a Buna-N gasket, Viton or EPDM on request. Sealfast publishes no working pressure for them, so we confirm it for your duty.',
         'Backs come as hose shanks (2"–12"), male threads, or bolted flanges to the DIN 2501 PN 10 pattern (2"–8").',
         'Ring lock looks similar and is not directly interchangeable with Bauer — confirm half against half before pairing.',
       ],
@@ -67,7 +67,7 @@ const ARTICLE: BlogArticleSeed = {
     },
     {
       type: 'paragraph',
-      html: 'Our Bauer-type couplings are zinc-plated carbon steel and rated up to 16 bar (232 psi) for water-transfer service, the pattern\'s typical duty. They interchange with the Bauer GmbH pattern and with the Perrot and Selecta couplings made to it. The rating is the coupling\'s: a shank held by hose bands is limited by the bands and the hose, and an assembly should be marked at its weakest part.',
+      html: 'Our Bauer-type couplings are zinc-plated carbon steel. Sealfast does not publish a working pressure for them, so tell us the pressure and the medium and we will confirm the rating before you order. They interchange with the Bauer GmbH pattern and with the Perrot and Selecta couplings made to it. Whatever the coupling is rated to, a shank held by hose bands is limited by the bands and the hose, and an assembly should be marked at its weakest part.',
     },
     {
       type: 'callout',
@@ -84,7 +84,7 @@ const ARTICLE: BlogArticleSeed = {
     },
     {
       type: 'paragraph',
-      html: 'Ring lock couplings use the same idea — a male tip, a female seat and a lever ring — and they are rated for the same 16 bar water-transfer duty in our range, in 2" to 8" zinc-plated steel. They are <strong>not directly interchangeable</strong> with Bauer. A ring lock male will sit in a Bauer female closely enough to fool someone in a hurry and then leak or part under pressure. If a site runs both, mark the halves and keep the spares separate.',
+      html: 'Ring lock couplings use the same idea — a male tip, a female seat and a lever ring — and our range is 2" to 8" zinc-plated steel, again with no published working pressure. They are <strong>not directly interchangeable</strong> with Bauer. A ring lock male will sit in a Bauer female closely enough to fool someone in a hurry and then leak or part under pressure. If a site runs both, mark the halves and keep the spares separate.',
     },
 
     {
@@ -109,7 +109,7 @@ const ARTICLE: BlogArticleSeed = {
         {
           question: 'What pressure is a Bauer coupling rated for?',
           answer:
-            'Our zinc-plated steel Bauer-type couplings are rated up to 16 bar (232 psi) for water-transfer service. The hose and the shank clamping may limit the assembly to less.',
+            'Sealfast does not publish a working pressure for its Bauer-type couplings. Tell us the pressure and the medium when you enquire and we will confirm the rating with the manufacturer. The hose and the shank clamping may limit the assembly to less.',
         },
         {
           question: 'Can I replace just the lever ring?',

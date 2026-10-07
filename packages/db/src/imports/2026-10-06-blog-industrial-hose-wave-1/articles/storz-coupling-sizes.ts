@@ -4,7 +4,7 @@ import type { BlogArticleSeed } from '../shared'
 
 /**
  * Storz, read from the 26 Storz listings: DIN 14301, lug distance as the size,
- * the two gasket colours, materials, the FDC fittings and the 16 bar rating.
+ * the two gasket colours, materials, the FDC fittings and the one published rating.
  */
 const ARTICLE: BlogArticleSeed = {
   slug: 'storz-coupling-sizes',
@@ -27,7 +27,7 @@ const ARTICLE: BlogArticleSeed = {
         'Storz is symmetrical: identical heads lock together with a quarter turn, so there is no male or female half to mismatch.',
         'Size is the lug distance — 115 mm for 4", 148 mm for 5" and 160 mm for 6" on our listings — not the bore of the hose.',
         'The gasket sets the duty: grey for suction, black for pressure.',
-        'Our Storz heads and adapters are listed to DIN 14301 and rated up to 16 bar (232 psi); the fire department connection elbows to 250 psi.',
+        'Our Storz heads and adapters are listed to DIN 14301; the only working pressure Sunpool publishes is 250 psi, for the fire department connection 30° elbow.',
         'The tail is a choice: long hose shank for binding or crimping, or a male, female or swivel thread in NPT, BSP or NST.',
       ],
     },
@@ -108,13 +108,13 @@ const ARTICLE: BlogArticleSeed = {
     },
     {
       type: 'paragraph',
-      html: 'Our Storz heads and adapters are listed to DIN 14301, the German Storz connection standard, and rated up to 16 bar (232 psi) — the usual fire-service rating. The fire department connection (FDC) fittings, in 4" and 5" Storz with a 4" or 5" female NPT or BSP thread, straight or at 30°, are UL listed, and the FDC 30° elbow is rated to 250 psi. A <strong>safety latch</strong> — a stainless catch that stops the heads rotating apart — is fitted on our larger adapters and couplings, and it is worth having anywhere a hose is dragged or vibrates.',
+      html: 'Our Storz heads and adapters are listed to DIN 14301, the German Storz connection standard. Sunpool does not publish a working pressure for them, so we confirm it for your duty. The fire department connection (FDC) fittings, in 4" and 5" Storz with a 4" or 5" female NPT or BSP thread, straight or at 30°, are UL listed, and the FDC 30° elbow is rated to 250 psi. A <strong>safety latch</strong> — a stainless catch that stops the heads rotating apart — is fitted on our larger adapters and couplings, and it is worth having anywhere a hose is dragged or vibrates.',
     },
     {
       type: 'callout',
       tone: 'warning',
       title: 'A coupling rating is not a hose rating.',
-      body: 'A Storz head rated to 16 bar does not make a 10 bar hose a 16 bar assembly. The assembly is rated at its weakest part — usually the hose, sometimes the binding on the shank.',
+      body: 'A Storz head does not raise the rating of the hose behind it. The assembly is rated at its weakest part — usually the hose, sometimes the binding on the shank.',
     },
 
     {

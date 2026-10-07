@@ -170,7 +170,7 @@ const ARTICLE: BlogArticleSeed = {
       type: 'category_link',
       slug: 'kc-nipple-fittings',
       label: 'KC nipples with flanges',
-      blurb: 'Heavy-duty KC nipples with welded Class 150 flanges, 1" to 6".',
+      blurb: 'Heavy-duty KC nipples with welded Class 150 flanges, 2" to 12".',
     },
 
     {
