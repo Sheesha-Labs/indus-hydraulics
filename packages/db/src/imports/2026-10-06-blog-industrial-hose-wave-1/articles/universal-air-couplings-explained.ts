@@ -28,7 +28,7 @@ const ARTICLE: BlogArticleSeed = {
         'Universal, Chicago, claw and crowfoot are names for the same symmetrical claw coupling family.',
         'Two lugs on the small sizes, four lugs on the large: our American and Australian types use two lugs to 1" and four from 1-1/4" to 2".',
         'American, European and Australian types are separate patterns; match the type before relying on a connection.',
-        'Our crowfoot listings are rated up to 250 psi for typical air and water service, some parts 150 psi — check the part.',
+        'Sealfast rates its four-lug hose end and stainless blank and triple ends at 150 psi at 70 °F and publishes no rating for the other crowfoot parts — check the part.',
         'Fit a safety clip across every claw joint and a whip check across the hose; air stores energy that oil does not.',
       ],
     },
@@ -71,7 +71,7 @@ const ARTICLE: BlogArticleSeed = {
     },
     {
       type: 'paragraph',
-      html: 'Crowfoot couplings in our range are listed as interchangeable with Chicago and universal couplings: zinc-plated iron four-lug hose ends and female NPT ends from 1-1/4" to 2", and 316 stainless hose, male NPT, female NPT, blank and triple-connection ends from 1/2". Gaskets are Buna-N or Viton.',
+      html: 'Our crowfoot range covers zinc-plated iron four-lug hose ends and female NPT ends from 1-1/4" to 2", and 316 stainless hose, male NPT, female NPT, blank and triple-connection ends from 1/2".',
     },
 
     {
@@ -82,7 +82,7 @@ const ARTICLE: BlogArticleSeed = {
     },
     {
       type: 'paragraph',
-      html: 'Our crowfoot listings rate the hose and NPT ends up to 250 psi for typical air and water service, and the four-lug hose end and the stainless blank and triple ends at 150 psi at 70 °F. Read the rating of the part in your hand, not the family. Then remember why the rating is not the whole story on air: compressed air is a stored spring. When a claw joint or a hose end lets go, the hose is driven by the expanding air behind it, and a whipping hose end causes injuries that a hydraulic leak, for all its own dangers, does not.',
+      html: 'Sealfast rates the four-lug hose end and the stainless blank and triple ends at 150 psi at 70 °F, and publishes no rating for the other hose and NPT ends. Read the rating of the part in your hand, not the family. Then remember why the rating is not the whole story on air: compressed air is a stored spring. When a claw joint or a hose end lets go, the hose is driven by the expanding air behind it, and a whipping hose end causes injuries that a hydraulic leak, for all its own dangers, does not.',
     },
     {
       type: 'callout',
@@ -111,7 +111,7 @@ const ARTICLE: BlogArticleSeed = {
         {
           question: 'What pressure is a crowfoot coupling rated for?',
           answer:
-            'Our crowfoot listings rate most hose and NPT ends up to 250 psi for typical air and water service, and some parts at 150 psi. Use the rating of the specific part.',
+            'Sealfast rates the four-lug hose end and the stainless blank and triple ends at 150 psi at 70 °F and publishes no rating for the other crowfoot parts. Use the rating of the specific part, and ask us where none is published.',
         },
         {
           question: 'Do I need a safety clip and a whip check?',

@@ -54,12 +54,12 @@ const ARTICLE: BlogArticleSeed = {
       rows: [
         { cells: ['Cam and groove', 'Gendered', 'Tanker, pump, chemical and fuel transfer', '1/2" – 12"; 250 → 75 psi by size'], highlight: true },
         { cells: ['Dry disconnect', 'Gendered, valved', 'No-spill chemical and fuel transfer', '1-1/2" – 3"; to 150 psi'] },
-        { cells: ['Storz', 'Symmetrical', 'Fire, water, large-bore supply', '1" – 6"; to 16 bar'] },
-        { cells: ['Guillemin', 'Symmetrical', 'French fire, water and industrial', '3/4" – 4"; to 16 bar'] },
+        { cells: ['Storz', 'Symmetrical', 'Fire, water, large-bore supply', '1" – 6"; rating not published'] },
+        { cells: ['Guillemin', 'Symmetrical', 'French fire, water and industrial', '3/4" – 4"; rating not published'] },
         { cells: ['GOST, Barcelona, Geka', 'Symmetrical', 'Russian, Spanish and small water hose', '1/4" – 6" by pattern'] },
-        { cells: ['Bauer, ring lock', 'Gendered, lever', 'Irrigation, slurry, dewatering', '2" – 12"; to 16 bar'] },
-        { cells: ['Universal claw, crowfoot', 'Symmetrical', 'Compressed air and water', '1/4" – 2"; to 250 psi'] },
-        { cells: ['Ground joint', 'Gendered, metal seat', 'Steam and air', '1/2" – 4"; to 600 psi steam'] },
+        { cells: ['Bauer, ring lock', 'Gendered, lever', 'Irrigation, slurry, dewatering', '2" – 12"; 150 psi on flanged Bauer'] },
+        { cells: ['Universal claw, crowfoot', 'Symmetrical', 'Compressed air and water', '1/4" – 2"; 150 psi where published'] },
+        { cells: ['Ground joint', 'Gendered, metal seat', 'Steam and air', '1/2" – 4"; rating not published'] },
         { cells: ['EN 14420-5 + DIN 2817 clamp', 'Threaded tail + safety clamp', 'Chemical, oil and steam transfer', '1/2" – 4"'] },
         { cells: ['KC nipples, shank couplings', 'Plain hose ends', 'General transfer and suction', '1/8" – 12"'] },
         { cells: ['ASME B16.5 flanges', 'Bolted', 'Fixed pipework, tank nozzles', '1/2" – 24"; Class 150 / 300'] },
@@ -87,7 +87,7 @@ const ARTICLE: BlogArticleSeed = {
         },
         {
           condition: 'Identical heads with claws and a lock ring, French specification?',
-          outcome: 'Guillemin, to NF E 29-572.',
+          outcome: 'Guillemin, the French pattern (NF E 29-572).',
         },
         {
           condition: 'Small symmetrical claw head with two or four lugs on an air line?',
@@ -127,7 +127,7 @@ const ARTICLE: BlogArticleSeed = {
     },
     {
       type: 'paragraph',
-      html: 'Each country\'s fire service chose its own symmetrical coupling, and none fits another. <a href="/blog/storz-coupling-sizes">Storz</a> (DIN 14301) is sized by lug distance — 115 mm for 4", 148 mm for 5", 160 mm for 6" on our listings — and takes a grey suction or black pressure gasket. <a href="/blog/guillemin-couplings-explained">Guillemin</a> (NF E 29-572) adds a lock ring. <a href="/blog/gost-barcelona-and-geka-couplings">GOST, Barcelona and Geka</a> cover Russia and the CIS, Spain and small water hose. Crossing between them means a threaded adapter of each pattern.',
+      html: 'Each country\'s fire service chose its own symmetrical coupling, and none fits another. <a href="/blog/storz-coupling-sizes">Storz</a> is sized by lug distance — 115 mm for 4", 148 mm for 5", 160 mm for 6" on our listings — and takes a grey suction or black pressure gasket. <a href="/blog/guillemin-couplings-explained">Guillemin</a>, standardised in France as NF E 29-572, adds a lock ring. <a href="/blog/gost-barcelona-and-geka-couplings">GOST, Barcelona and Geka</a> cover Russia and the CIS, Spain and small water hose. Crossing between them means a threaded adapter of each pattern.',
     },
 
     {
@@ -138,7 +138,7 @@ const ARTICLE: BlogArticleSeed = {
     },
     {
       type: 'paragraph',
-      html: 'Lines that are laid and moved every day use a lever coupling. <a href="/blog/bauer-couplings-explained">Bauer couplings</a> lock with a lever ring and tolerate some misalignment; our zinc-plated steel range runs 2" to 12" at 16 bar, with flange backs to DIN 2501 PN 10. Ring lock couplings work the same way and are not interchangeable with Bauer.',
+      html: 'Lines that are laid and moved every day use a lever coupling. <a href="/blog/bauer-couplings-explained">Bauer couplings</a> lock with a lever ring and tolerate some misalignment; our zinc-plated steel range runs 2" to 12", with ASA Class 150 flange backs. Ring lock couplings work the same way and are not interchangeable with Bauer.',
     },
 
     {
@@ -149,7 +149,7 @@ const ARTICLE: BlogArticleSeed = {
     },
     {
       type: 'paragraph',
-      html: 'Site air runs on <a href="/blog/universal-air-couplings-explained">universal claw couplings</a>, which must be pinned with a safety clip and restrained with a whip check, because air stores energy that oil does not — the hose side is in <a href="/blog/compressed-air-hose-selection">compressed air hose selection</a>. Steam needs a joint with no rubber in it: the <a href="/blog/ground-joint-steam-couplings">ground joint coupling</a> seals metal to metal and is rated to 600 psi on steam in our range, while European plant uses EN 14423 clamp couplings.',
+      html: 'Site air runs on <a href="/blog/universal-air-couplings-explained">universal claw couplings</a>, which must be pinned with a safety clip and restrained with a whip check, because air stores energy that oil does not — the hose side is in <a href="/blog/compressed-air-hose-selection">compressed air hose selection</a>. Steam needs a joint with no rubber in it: the <a href="/blog/ground-joint-steam-couplings">ground joint coupling</a> seals metal to metal, while European plant uses EN 14423 clamp couplings.',
     },
 
     {
@@ -171,13 +171,13 @@ const ARTICLE: BlogArticleSeed = {
     },
     {
       type: 'paragraph',
-      html: 'Every coupling has its own pressure rating, and it is often lower than the hose\'s. Our cam and groove halves are rated 250 psi to 2", 150 psi at 3"–4" and 75 psi at 5"–6"; Storz, Guillemin and Bauer heads up to 16 bar; crowfoot ends up to 250 psi and some at 150 psi. Shanks held by band clamps are limited by the clamps. Rate and mark every assembly at its weakest component, and pressure-test it as an assembly.',
+      html: 'Every coupling has its own pressure rating, and it is often lower than the hose\'s. Our cam and groove halves are rated 250 psi to 2", 150 psi at 3"–4" and 75 psi at 5"–6", and several crowfoot ends at 150 psi; for Storz, Guillemin, Bauer and most crowfoot parts the manufacturers publish no rating, so we confirm one for your duty. Shanks held by band clamps are limited by the clamps. Rate and mark every assembly at its weakest component, and pressure-test it as an assembly.',
     },
     {
       type: 'callout',
       tone: 'warning',
       title: 'Gaskets are part of the coupling.',
-      body: 'Most couplings seal on a gasket — Buna-N as standard in our ranges, with Viton, EPDM or PTFE available. Choose it against the medium and temperature just as you chose the hose; a compatible hose with the wrong gasket leaks at the coupling.',
+      body: 'Most couplings seal on a gasket or an O-ring. Choose its material against the medium and temperature just as you chose the hose; a compatible hose with the wrong gasket leaks at the coupling.',
     },
 
     {
@@ -235,7 +235,7 @@ const ARTICLE: BlogArticleSeed = {
       type: 'category_link',
       slug: 'storz-couplings',
       label: 'Storz couplings',
-      blurb: 'DIN 14301 heads, adapters, FDC fittings and gaskets.',
+      blurb: 'Storz heads, adapters, FDC fittings and gaskets.',
     },
     {
       type: 'category_link',

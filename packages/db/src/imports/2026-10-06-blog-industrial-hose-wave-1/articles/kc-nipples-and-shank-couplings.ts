@@ -24,14 +24,14 @@ const ARTICLE: BlogArticleSeed = {
       type: 'direct_answer',
       question: 'What is a KC nipple?',
       answer:
-        'A KC nipple is a combination hose nipple: a serrated tail that goes inside the hose, and a threaded or flanged end that connects to pipe, a valve or another coupling. It has no quick-release face of its own. The joint is made by the clamp, ferrule or sleeve over the hose, which is why the clamp decides how much pressure the assembly holds. Our heavy-duty KC nipples are SCH40 wall, 1" to 6", rated 300 psi.',
+        'A KC nipple is a combination hose nipple: a serrated tail that goes inside the hose, and a threaded or flanged end that connects to pipe, a valve or another coupling. It has no quick-release face of its own. The joint is made by the clamp, ferrule or sleeve over the hose, which is why the clamp decides how much pressure the assembly holds. Our heavy-duty KC nipples are SCH40 wall, 2" to 12", rated 300 psi.',
     },
     {
       type: 'key_takeaways',
       items: [
         'KC (combination) nipples are a serrated tail with an NPT, BSPT or flanged end; there is no coupling face.',
         'The rating of a nipple is not the rating of the joint: the clamp, ferrule or sleeve over the hose decides that.',
-        'Our heavy-duty KC nipples are SCH40 wall with a longer tail, 1" to 6", rated 300 psi, in carbon steel, 304 or 316 stainless.',
+        'Our heavy-duty KC nipples are SCH40 wall with a longer tail, 2" to 12", rated 300 psi, in carbon steel, 304 or 316 stainless.',
         'Shank couplings pair a male and female nipple into a threaded union: steel long shank for heavier lines, brass short shank for light service.',
         'A mender joins two lengths of the same hose; it is a repair, so mark the hose and plan the replacement.',
       ],
@@ -49,7 +49,7 @@ const ARTICLE: BlogArticleSeed = {
     },
     {
       type: 'paragraph',
-      html: 'A KC nipple is a combination nipple — serrated tail one end, connection the other. Our range runs from a standard KC nipple and a grooved KC nipple (1/2" to 12", carbon steel, 304 or 316 stainless) to a heavy-duty KC nipple with a thicker SCH40 wall and a longer tail (1" to 6", NPT or BSPT, rated 300 psi). Heavy-duty versions also come with a welded Class 150 flange, as a fixed flange or a turnback flange.',
+      html: 'A KC nipple is a combination nipple — serrated tail one end, connection the other. Our range runs from a standard KC nipple and a grooved KC nipple (1/2" to 12", carbon steel, 304 or 316 stainless) to a heavy-duty KC nipple with a thicker SCH40 wall and a longer tail (2" to 12", NPT or BSPT, rated 300 psi). Heavy-duty versions also come with a welded Class 150 flange, as a fixed flange or a turnback flange.',
     },
     {
       type: 'comparison_table',
@@ -58,10 +58,10 @@ const ARTICLE: BlogArticleSeed = {
       rows: [
         { cells: ['KC nipple', '1/2" – 12"', 'NPT or BSPT; carbon steel, 304, 316'] },
         { cells: ['Grooved KC nipple', '1/2" – 12"', 'Serrated tail with a clamp groove'] },
-        { cells: ['Heavy-duty KC nipple', '1" – 6"', 'SCH40 wall, longer tail, 300 psi'], highlight: true },
-        { cells: ['Heavy-duty KC × fixed / turnback flange', '1" – 6"', 'Welded Class 150 flange, 300 psi'] },
+        { cells: ['Heavy-duty KC nipple', '2" – 12"', 'SCH40 wall, longer tail, 300 psi'], highlight: true },
+        { cells: ['Heavy-duty KC × fixed / turnback flange', '2" – 12"', 'Welded Class 150 flange, 300 psi'] },
         { cells: ['Suction hose coupling', '1-1/2" – 6"', 'Brass, plated steel or aluminium with brass nut; NPT, BSP or NPSM'] },
-        { cells: ['206 hose hammer union', '1" – 6"', 'Figure 206 union on a hose tail'] },
+        { cells: ['206 hose hammer union', '4"', 'Figure 206 union on a hose tail'] },
       ],
     },
 
@@ -90,11 +90,11 @@ const ARTICLE: BlogArticleSeed = {
     },
     {
       type: 'paragraph',
-      html: 'A <strong>shank coupling</strong> pairs a male and a female nipple into a threaded union, so a hose can be broken without unclamping it. Our steel long-shank nipples (male, female and complete sets, 1/2" to 2") suit heavier transfer lines, where the long shank gives more grip in the hose; brass short-shank nipples (1/2" to 3/4" sizes) suit lighter service. A zinc-plated steel male NPT × hose-barb nipple covers the small sizes, from 1/8" × 1/4" up to 1" × 1". All are rated up to 250 psi in our listings, subject to the clamp.',
+      html: 'A <strong>shank coupling</strong> pairs a male and a female nipple into a threaded union, so a hose can be broken without unclamping it. Our steel long-shank nipples (male, female and complete sets, 1/2" to 2") suit heavier transfer lines, where the long shank gives more grip in the hose; brass short-shank nipples (1/2" to 3/4" sizes) suit lighter service. A zinc-plated steel male NPT × hose-barb nipple covers the small sizes, from 1/8" × 1/4" up to 1" × 1". Sealfast publishes no working pressure for any of them, so the clamp and the hose set the limit — ask us to confirm one for your duty.',
     },
     {
       type: 'paragraph',
-      html: '<strong>Pin-lug couplings</strong> are the water-service version: an aluminium shank with a brass nut carrying pin lugs for a spanner, 1-1/2" to 6", rated up to 150 psi with a rubber washer in the nut. They are made to be tightened and loosened often, on irrigation and wash-down lines rather than pressure transfer.',
+      html: '<strong>Pin-lug couplings</strong> are the water-service version: an aluminium shank with a brass nut carrying pin lugs for a spanner, 1-1/2" to 6", with a rubber washer in the nut; Sealfast publishes no working pressure for them. They are made to be tightened and loosened often, on irrigation and wash-down lines rather than pressure transfer.',
     },
 
     {
@@ -105,7 +105,7 @@ const ARTICLE: BlogArticleSeed = {
     },
     {
       type: 'paragraph',
-      html: 'A hose mender is a tube with a serrated tail at each end, used to join two lengths of the same hose after a cut or a burst. Our brass menders run from 1/8" to 3/4" for light hose up to 150 psi, and steel and stainless menders on the KC shelf from 1/2" to 12". A mender restores flow, not the hose\'s original rating — the joint is limited by its two clamps, and the hose either side is the same age as the part that failed.',
+      html: 'A hose mender is a tube with a serrated tail at each end, used to join two lengths of the same hose after a cut or a burst. Our brass menders run from 1/8" to 3/4" for light hose, and steel and stainless menders on the KC shelf from 1/2" to 12". A mender restores flow, not the hose\'s original rating — the joint is limited by its two clamps, and the hose either side is the same age as the part that failed.',
     },
 
     {

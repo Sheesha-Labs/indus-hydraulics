@@ -4,7 +4,7 @@ import type { BlogArticleSeed } from '../shared'
 
 /**
  * Bauer and ring lock, read from the 10 Bauer and 4 ring lock listings: sizes,
- * the lever ring, flange backs to DIN 2501 PN 10, and the 16 bar rating.
+ * the lever ring, ASA Class 150 flange backs, and what sets the pressure rating.
  */
 const ARTICLE: BlogArticleSeed = {
   slug: 'bauer-couplings-explained',
@@ -24,10 +24,10 @@ const ARTICLE: BlogArticleSeed = {
     {
       type: 'key_takeaways',
       items: [
-        'Bauer is male-and-female: a rounded male tip, and a female seat carrying the gasket and the lever ring.',
+        'Bauer is male-and-female: a rounded male tip seats in a female that carries a rubber O-ring, and a lever ring with two handles locks the joint.',
         'The lever ring is a separate part and the usual one to wear; our listings carry it as a spare from 2" to 8".',
-        'Our Bauer-type couplings are zinc-plated carbon steel, rated up to 16 bar (232 psi), with a Buna-N gasket and Viton or EPDM on request.',
-        'Backs come as hose shanks (2"–12"), male threads, or bolted flanges to the DIN 2501 PN 10 pattern (2"–8").',
+        'Our Bauer-type couplings are zinc-plated carbon steel and seal on a rubber O-ring. Sealfast rates the flanged ones to 150 psi and publishes no rating for the rest, so we confirm it for your duty.',
+        'Backs come as hose shanks (2"–12"), male NPT threads, or ASA Class 150 flanges (2"–8").',
         'Ring lock looks similar and is not directly interchangeable with Bauer — confirm half against half before pairing.',
       ],
     },
@@ -44,7 +44,7 @@ const ARTICLE: BlogArticleSeed = {
     },
     {
       type: 'paragraph',
-      html: 'A Bauer joint is a male half, a female half and a lever ring. The <strong>male</strong> is a cylindrical tip with a rounded nose. The <strong>female</strong> is an open ring with an internal seat and the gasket. The <strong>lever ring</strong>, mounted on the female, carries two handles; swung over, it draws the male tip into the seat and holds it there. The gasket is on the female end — Buna-N as standard in our range, with Viton or EPDM where the medium calls for it.',
+      html: 'A Bauer joint is a male half, a female half and a lever ring. The <strong>male</strong> is a cylindrical tip with a rounded nose. The <strong>female</strong> is an open ring with an internal seat and a rubber O-ring, as Sealfast\'s drawing shows. The <strong>lever ring</strong> carries two handles; swung over, it draws the male tip into the seat and holds it there.',
     },
     {
       type: 'comparison_table',
@@ -53,7 +53,7 @@ const ARTICLE: BlogArticleSeed = {
       rows: [
         { cells: ['Male / female with hose shank', 'Barbed shank for hose bands', '2" – 12"'], highlight: true },
         { cells: ['Male / female, threaded', 'Male NPT or BSP', '2" – 8"'] },
-        { cells: ['Male / female, flanged', 'Bolted flange, DIN 2501 PN 10 pattern', '2" – 8"'] },
+        { cells: ['Male / female, flanged', 'Bolted flange, ASA Class 150', '2" – 8"'] },
         { cells: ['Complete sets', 'Shank, threaded or flanged pairs', '2" – 12" (shank), 2" – 8" (others)'] },
         { cells: ['Lever ring (spare)', '—', '2" – 8"'] },
       ],
@@ -67,7 +67,7 @@ const ARTICLE: BlogArticleSeed = {
     },
     {
       type: 'paragraph',
-      html: 'Our Bauer-type couplings are zinc-plated carbon steel and rated up to 16 bar (232 psi) for water-transfer service, the pattern\'s typical duty. They interchange with the Bauer GmbH pattern and with the Perrot and Selecta couplings made to it. The rating is the coupling\'s: a shank held by hose bands is limited by the bands and the hose, and an assembly should be marked at its weakest part.',
+      html: 'Our Bauer-type couplings are zinc-plated carbon steel. Sealfast rates the flanged versions to 150 psi; for the rest it publishes no working pressure, so tell us the pressure and the medium and we will confirm the rating before you order. Check a half from another maker against ours before relying on the joint. Whatever the coupling is rated to, a shank held by hose bands is limited by the bands and the hose, and an assembly should be marked at its weakest part.',
     },
     {
       type: 'callout',
@@ -84,7 +84,7 @@ const ARTICLE: BlogArticleSeed = {
     },
     {
       type: 'paragraph',
-      html: 'Ring lock couplings use the same idea — a male tip, a female seat and a lever ring — and they are rated for the same 16 bar water-transfer duty in our range, in 2" to 8" zinc-plated steel. They are <strong>not directly interchangeable</strong> with Bauer. A ring lock male will sit in a Bauer female closely enough to fool someone in a hurry and then leak or part under pressure. If a site runs both, mark the halves and keep the spares separate.',
+      html: 'Ring lock couplings use the same idea — a male tip, a female seat and a lever ring — and our range is 2" to 8" zinc-plated steel, again with no published working pressure. They are <strong>not directly interchangeable</strong> with Bauer. A ring lock male will sit in a Bauer female closely enough to fool someone in a hurry and then leak or part under pressure. If a site runs both, mark the halves and keep the spares separate.',
     },
 
     {
@@ -109,7 +109,7 @@ const ARTICLE: BlogArticleSeed = {
         {
           question: 'What pressure is a Bauer coupling rated for?',
           answer:
-            'Our zinc-plated steel Bauer-type couplings are rated up to 16 bar (232 psi) for water-transfer service. The hose and the shank clamping may limit the assembly to less.',
+            'Sealfast rates its flanged Bauer-type couplings to 150 psi and publishes no rating for the hose-shank and threaded versions. Tell us the pressure and the medium when you enquire and we will confirm the rating with the manufacturer. The hose and the shank clamping may limit the assembly to less.',
         },
         {
           question: 'Can I replace just the lever ring?',
@@ -119,7 +119,7 @@ const ARTICLE: BlogArticleSeed = {
         {
           question: 'What flange does a flanged Bauer coupling have?',
           answer:
-            'Our flanged Bauer-type couplings have a bolted flange back to the DIN 2501 PN 10 pattern, from 2" to 8".',
+            'Our flanged Bauer-type couplings have an ASA (ASME) Class 150 flange back, from 2" to 8", as Sealfast\'s drawing shows.',
         },
       ],
     },
