@@ -81,12 +81,14 @@ lines and the size-table block verbatim, then rewrites:
   gaskets, the KC "gasket per service", flange gaskets to B16.21, sandblast
   Buna-N.
 
-## Open
+## Follow-ups
 
-- **IH-BC-FLANGE-MALE-SET** is titled "Flanged … Male Threaded … Complete
-  Set". Sealfast lists the family as "Male NPT Threaded Male x Female Bauer
-  Type Coupling", so the copy describes it as a threaded set and does not
-  claim a flange. The title is unchanged.
+- **IH-BC-FLANGE-MALE-SET** was titled "Flanged … Male Threaded … Complete
+  Set", after Seal Fast's family title. Seal Fast's items are "Male NPT
+  Threaded Male x Female" (BTC…MT; the flanged set is BTC…FL), so it was
+  renamed to "Zinc Plated Steel Male Threaded Bauer Type Coupling Complete
+  Set" with a 301 from the old URL
+  (`src/imports/2026-10-07-bauer-threaded-set-rename`). The SKU is unchanged.
 - **The Guillemin reducing adapter.** Sunpool states no material (its page
   puts the sizes in the Material row), and the listing says so.
 

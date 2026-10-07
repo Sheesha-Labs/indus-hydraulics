@@ -1526,9 +1526,9 @@
   },
   "IH-BC-FLANGE-MALE-SET": {
    "family": "bauer",
-   "what": "zinc-plated steel Bauer-type male and female set, the male with a male NPT thread",
+   "what": "zinc-plated steel Bauer-type male and female set, both with male NPT threads",
    "endA": "Bauer-type male with a male NPT thread",
-   "endB": "Bauer-type female",
+   "endB": "Bauer-type female with a male NPT thread",
    "seal": "Rubber O-ring in the female, as on Sealfast's drawing",
    "standard": null,
    "size": "2\", 3\", 4\", 6\" and 8\"",

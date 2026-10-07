@@ -341,8 +341,8 @@ add('IH-BC-FLANGE-MALE', 'bauer', 'zinc-plated steel Bauer-type male with an ASA
     MATE_O_RING, pressure=BAUER_150)
 add('IH-BC-FLANGE-SET', 'bauer', 'zinc-plated steel Bauer-type male and female, both with ASA Class 150 flanges, rated 150 psi',
     'Bauer-type male with an ASA (ASME) Class 150 flange', 'Bauer-type female with an ASA (ASME) Class 150 flange', O_RING, pressure=BAUER_150)
-add('IH-BC-FLANGE-MALE-SET', 'bauer', 'zinc-plated steel Bauer-type male and female set, the male with a male NPT thread',
-    'Bauer-type male with a male NPT thread', 'Bauer-type female', O_RING)
+add('IH-BC-FLANGE-MALE-SET', 'bauer', 'zinc-plated steel Bauer-type male and female set, both with male NPT threads',
+    'Bauer-type male with a male NPT thread', 'Bauer-type female with a male NPT thread', O_RING)
 add('IH-BC-MALE-FEMALE', 'bauer', 'zinc-plated steel Bauer-type female with a male NPT thread', 'Bauer-type female', 'Male NPT thread', O_RING, NPT)
 add('IH-BC-MALE-MALE', 'bauer', 'zinc-plated steel Bauer-type male with a male NPT thread', 'Bauer-type male', 'Male NPT thread', MATE_O_RING, NPT)
 add('IH-BC-SHANK-COMPLETE', 'bauer', 'zinc-plated steel Bauer-type male and female set, both with hose shanks', 'Bauer-type male with a hose shank',
