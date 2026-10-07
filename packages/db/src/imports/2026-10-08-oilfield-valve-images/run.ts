@@ -39,6 +39,8 @@ import { db } from '../../index'
 
 type Payload = {
   imageDir: string
+  /** Appended to each caption; defaults to the authorised-representative note. */
+  captionNote?: string
   listings: {
     sku: string
     title: string
@@ -105,7 +107,7 @@ async function main(): Promise<void> {
         sku: l.sku,
         alt: p.title,
         file: img.file,
-        caption: `${l.make} product image${img.sourcePage ? ` (${new URL(img.sourcePage).hostname})` : ''}, used as the maker's authorised representative`,
+        caption: `${l.make} product image${img.sourcePage ? ` (${new URL(img.sourcePage).hostname})` : ''}${payload.captionNote ?? ", used as the maker's authorised representative"}`,
         position: next++,
       })
     }
