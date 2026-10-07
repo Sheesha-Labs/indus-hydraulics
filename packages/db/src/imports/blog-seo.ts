@@ -936,4 +936,382 @@ export const BLOG_SEO: Record<string, BlogSeo> = {
     seoDescription:
       'Machine down with two ways out: when a field crimp is the right answer, when one adapter is, and the failure mode hiding behind each of them.',
   },
+  // ── industrial-hose cluster, wave 1 (2026-10-06) ─────────────────────
+  // Written to the 41-character cap, like the 2026-09-01 sprints.
+  'bauer-couplings-explained': {
+    focusKeyword: 'bauer couplings',
+    seoTitle: 'Bauer couplings explained: sizes, parts',
+    seoDescription:
+      'How Bauer lever couplings work, the parts and sizes from 2" to 12", the 16 bar rating, flange backs to DIN 2501, and why ring lock is not a Bauer.',
+  },
+  'bulk-material-and-sandblast-hose': {
+    focusKeyword: 'sandblast hose',
+    seoTitle: 'Bulk material and sandblast hose',
+    seoDescription:
+      'Abrasive-duty hose for sand, cement and grit: the anti-static natural rubber tube, why bends wear first, and NPSH sandblast couplings and nozzle holders.',
+  },
+  'cam-and-groove-coupling-types': {
+    focusKeyword: 'cam and groove coupling types',
+    seoTitle: 'Cam and groove coupling types explained',
+    seoDescription:
+      'Types A, B, C, D, E, F, DC and DP decoded: which half has the cam arms, which end takes the hose, and how the pressure rating falls as the size rises.',
+  },
+  'composite-hose-explained': {
+    focusKeyword: 'composite hose',
+    seoTitle: 'Composite hose explained: build, fittings',
+    seoDescription:
+      'How composite hose is built from films and fabrics between two wires, why it is lighter and weeps before failing, and the EN 13765 fittings it needs.',
+  },
+  'compressed-air-hose-selection': {
+    focusKeyword: 'compressed air hose',
+    seoTitle: 'Compressed air hose: how to choose one',
+    seoDescription:
+      'Choosing compressed air hose: oil-mist-resistant tubes, ISO 2398 and BS 5118 hose, 40 bar high-temperature hose for discharge lines, and safe couplings.',
+  },
+  'corrugated-stainless-steel-hose': {
+    focusKeyword: 'corrugated stainless steel hose',
+    seoTitle: 'Corrugated stainless steel hose guide',
+    seoDescription:
+      'How corrugated stainless hose works: core and braid, unbraided to double braid ratings, 316L against 321, annular against helical, and how to install it.',
+  },
+  'cryogenic-transfer-hose': {
+    focusKeyword: 'cryogenic transfer hose',
+    seoTitle: 'Cryogenic transfer hose: LIN, LOX, LNG',
+    seoDescription:
+      'Stainless metal hose for liquid nitrogen, oxygen, argon, LNG and CO2: service temperatures, pressures, oxygen cleaning, couplings and insulation.',
+  },
+  'en-14420-hose-fittings-explained': {
+    focusKeyword: 'en 14420 hose fittings',
+    seoTitle: 'EN 14420 hose fittings explained',
+    seoDescription:
+      'EN 14420 decoded: the DIN 2817 safety clamp, GA and GI threaded hose fittings in brass and stainless, and the EN 14420-7 cam locking couplings.',
+  },
+  'exotic-alloy-metal-hose': {
+    focusKeyword: 'exotic alloy metal hose',
+    seoTitle: 'Exotic alloy metal hose: which alloy',
+    seoDescription:
+      'When stainless is not enough: Monel, Hastelloy, Inconel and bronze metal hose, their temperature limits, chlorine service and the braid question.',
+  },
+  'flanged-hose-connections': {
+    focusKeyword: 'flanged hose connections',
+    seoTitle: 'Flanged hose connections: ASME B16.5',
+    seoDescription:
+      'ASME B16.5 flanges on industrial hose: Class 150 and 300 ratings, RF, FF and RTJ faces, flange types, and why stub ends make bolt-up easier.',
+  },
+  'food-hose-materials-compared': {
+    focusKeyword: 'food hose materials',
+    seoTitle: 'Food hose materials compared by duty',
+    seoDescription:
+      'NBR, EPDM, silicone, PVC and UHMWPE food hose compared: which lining suits fats, steam cleaning, wide temperatures and light duty, with our ratings.',
+  },
+  'gost-barcelona-and-geka-couplings': {
+    focusKeyword: 'geka couplings',
+    seoTitle: 'GOST, Barcelona and Geka couplings',
+    seoDescription:
+      'Three regional symmetrical couplings that only fit themselves: Russian GOST heads, Spanish Barcelona couplings and brass Geka claws, and how to bridge them.',
+  },
+  'ground-joint-steam-couplings': {
+    focusKeyword: 'ground joint steam couplings',
+    seoTitle: 'Ground joint steam couplings explained',
+    seoDescription:
+      'How ground joint couplings seal steam metal to metal with no gasket, the stem, wing nut and spud, 600 psi steam ratings, and the clamps that hold them.',
+  },
+  'guillemin-couplings-explained': {
+    focusKeyword: 'guillemin couplings',
+    seoTitle: 'Guillemin couplings explained: lock ring',
+    seoDescription:
+      'The French symmetrical coupling to NF E 29-572: how Guillemin heads connect, what the lock ring does, the tails available and sizes from 3/4" to 4".',
+  },
+  'high-pressure-metal-hose': {
+    focusKeyword: 'high pressure metal hose',
+    seoTitle: 'High pressure metal hose: up to 414 bar',
+    seoDescription:
+      'How metal hose reaches hydraulic pressures with compressed corrugations and extra braid, what it costs in flexibility, and where it beats rubber hose.',
+  },
+  'industrial-hose-clamps': {
+    focusKeyword: 'industrial hose clamps',
+    seoTitle: 'Industrial hose clamps: which to use',
+    seoDescription:
+      'Safety, interlocking, bolted, spiral and sanitary clamps for industrial hose: which duty each suits, how to size them, and when to crimp instead.',
+  },
+  'industrial-hose-couplings-guide': {
+    focusKeyword: 'industrial hose couplings',
+    seoTitle: 'Industrial hose couplings: full guide',
+    seoDescription:
+      'Every common industrial hose coupling, gendered or symmetrical: how to identify cam and groove, Storz, Bauer, Guillemin, claw and ground joint, and ratings.',
+  },
+  'industrial-hose-guide': {
+    focusKeyword: 'industrial hose guide',
+    seoTitle: 'Industrial hose guide by application',
+    seoDescription:
+      'Choosing industrial hose by what it carries: water, air, oil, fuel, chemicals, food, steam and abrasives, with pressures, temperatures and couplings.',
+  },
+  'industrial-hose-safety-factors': {
+    focusKeyword: 'industrial hose safety factors',
+    seoTitle: 'Industrial hose safety factors explained',
+    seoDescription:
+      'Why water and air hose is built to 3:1, chemical and composite hose to 4:1 and steam hose to 10:1, and why the assembly is rated at its weakest part.',
+  },
+  'kc-nipples-and-shank-couplings': {
+    focusKeyword: 'kc nipples',
+    seoTitle: 'KC nipples and shank couplings explained',
+    seoDescription:
+      'KC nipples, shank couplings, pin-lug couplings and menders: the plain hose ends, their sizes and ratings, and the clamp or ferrule that makes them hold.',
+  },
+  'metal-hose-guide': {
+    focusKeyword: 'metal hose guide',
+    seoTitle: 'Metal hose guide: build, alloys, install',
+    seoDescription:
+      'Metal hose from core to braid: stainless and exotic alloys, pressures to 414 bar, specialty and fire-safe assemblies, couplings and installation rules.',
+  },
+  'oil-suction-and-discharge-hose': {
+    focusKeyword: 'oil suction and discharge hose',
+    seoTitle: 'Oil suction and discharge hose guide',
+    seoDescription:
+      'Choosing oil suction and discharge hose on aromatic content, vacuum and static: our 10 and 20 bar NBR hoses, PVC oil hose and small-bore oil lines.',
+  },
+  'ptfe-hose-explained': {
+    focusKeyword: 'ptfe hose',
+    seoTitle: 'PTFE hose: smoothbore vs convoluted',
+    seoDescription:
+      'PTFE hose from −73 to +260 °C: smoothbore against convoluted, what the stainless or polypropylene braid adds, the fittings it needs, and R14 hydraulic hose.',
+  },
+  'pvc-or-rubber-suction-hose': {
+    focusKeyword: 'rubber suction hose',
+    seoTitle: 'PVC or rubber suction hose: which one',
+    seoDescription:
+      'PVC or rubber suction hose? The 55 °C limit on PVC, pressure that falls with bore, handling on site, and the vacuum and couplings that keep a pump primed.',
+  },
+  'reading-an-industrial-hose-layline': {
+    focusKeyword: 'industrial hose layline',
+    seoTitle: 'Reading an industrial hose layline',
+    seoDescription:
+      'How to read the print on industrial hose: S&D, working pressure, vacuum in mmHg, safety factor and standards, with real laylines from our range.',
+  },
+  'storz-coupling-sizes': {
+    focusKeyword: 'storz coupling sizes',
+    seoTitle: 'Storz coupling sizes and lug distance',
+    seoDescription:
+      'Storz couplings are sized by lug distance, not bore: 115, 148 and 160 mm heads, grey suction and black pressure gaskets, tails, materials and FDC parts.',
+  },
+  'tanker-loading-and-vapour-recovery-hose': {
+    focusKeyword: 'vapour recovery hose',
+    seoTitle: 'Tanker loading and vapour recovery hose',
+    seoDescription:
+      'Tanker hose explained: the 17 bar reeling hose, EN 13765 composite vapour recovery and oil hose, and dry disconnect couplings that part without a drip.',
+  },
+  'uhmwpe-chemical-hose': {
+    focusKeyword: 'uhmwpe chemical hose',
+    seoTitle: 'UHMWPE chemical hose: limits and uses',
+    seoDescription:
+      'UHMWPE-lined chemical hose explained: what the lining resists, our 10 and 16 bar grades to +100 °C, compatibility checks, and when composite is better.',
+  },
+  'universal-air-couplings-explained': {
+    focusKeyword: 'universal air couplings',
+    seoTitle: 'Universal air couplings explained',
+    seoDescription:
+      'Chicago, claw and crowfoot couplings: American, European and Australian types, lug counts and threads, ratings, and why safety clips and whip checks matter.',
+  },
+  // ── hose pillars and fittings, wave 2 (2026-10-06) ─────────────────
+  'hydraulic-hose-guide': {
+    focusKeyword: 'hydraulic hose guide',
+    seoTitle: 'Hydraulic hose guide: types and pressure',
+    seoDescription:
+      'The hydraulic hose guide: braid, spiral, compact, thermoplastic and PTFE, SAE 100R and EN 853/856/857, dash sizes, pressure by bore, routing and ends.',
+  },
+  'hydraulic-fittings-guide': {
+    focusKeyword: 'hydraulic fittings guide',
+    seoTitle: 'Hydraulic fittings guide: every family',
+    seoDescription:
+      'BSP, JIC, ORFS, NPT, NPSM, SAE flare, O-ring boss, metric 24° and SAE flanges: how each hydraulic fitting family seals, how to identify it, and its standard.',
+  },
+  'hydraulic-hose-assembly-guide': {
+    focusKeyword: 'hydraulic hose assembly guide',
+    seoTitle: 'Hydraulic hose assembly guide: the steps',
+    seoDescription:
+      'How a hydraulic hose assembly is made right: full specification, matched hose, fitting and ferrule, skiving, crimp diameter, proof test, caps and tags.',
+  },
+  'braided-vs-spiral-hose-fittings': {
+    focusKeyword: 'spiral hose fittings',
+    seoTitle: 'Braided vs spiral hose fittings',
+    seoDescription:
+      'Why braided and spiral hose take different crimp fittings: which hoses each series fits, the end families in both, and the ferrules for 4SH and R13.',
+  },
+  'npt-npsm-and-sae-hose-fittings': {
+    focusKeyword: 'sae hose fittings',
+    seoTitle: 'NPT, NPSM and SAE hose fittings',
+    seoDescription:
+      'NPT against NPSM, SAE 45° flare, inverted flare and O-ring boss hose fittings: where each one seals, the sizes we stock, and how to avoid the classic leak.',
+  },
+  'ss316l-hydraulic-fittings': {
+    focusKeyword: 'ss316l hydraulic fittings',
+    seoTitle: 'SS316L hydraulic fittings: the range',
+    seoDescription:
+      '316L stainless hydraulic fittings: BSP, JIC, ORFS, metric, NPT, SAE flanges, standpipes and banjos, the flange bolt grades, and how to stop galling.',
+  },
+  'oilfield-hose-guide': {
+    focusKeyword: 'oilfield hose guide',
+    seoTitle: 'Oilfield hose guide: API 7K, 16C, 16D',
+    seoDescription:
+      'Which API standard governs which rig hose: 7K rotary, 16C choke and kill, 16D BOP control, 17J subsea, plus frac, stimulation and low-pressure hose.',
+  },
+  'well-service-and-stimulation-hose': {
+    focusKeyword: 'stimulation hose',
+    seoTitle: 'Well service and stimulation hose',
+    seoDescription:
+      'Frac, acidizing, well test and flare boom hose: 15,000 psi stimulation lines, sour well test hose and 200 °C flare hose, and why the liner decides.',
+  },
+  'riser-tensioner-and-compensator-hose': {
+    focusKeyword: 'riser tensioner',
+    seoTitle: 'Riser tensioner and compensator hose',
+    seoDescription:
+      'Riser tensioner and drill string compensator hose: 5,000 psi steel-cable construction, why cycle count decides its life, and how to order replacements.',
+  },
+  // ── uncovered shelves, wave 3 (2026-10-06) ───────────────────────────
+  // Molykote, flow iron and wellhead, oilfield valves, BOP, and the marine
+  // and hardware end of the lifting vertical. Written to the 41-character cap.
+  'molykote-lubricant-types-explained': {
+    focusKeyword: 'molykote lubricant types',
+    seoTitle: 'Molykote lubricant types explained',
+    seoDescription:
+      'Molykote greases, pastes, anti-friction coatings, compounds, oils and dispersions: what each type is, the job it does and the products we supply.',
+  },
+  'anti-seize-and-assembly-pastes': {
+    focusKeyword: 'assembly pastes',
+    seoTitle: 'Anti-seize and assembly pastes explained',
+    seoDescription:
+      'How anti-seize and assembly pastes differ, what MoS2 and white solids do, why a 1,400 °C rating is an anti-seize limit, and how bolt torque changes.',
+  },
+  'anti-friction-coatings-explained': {
+    focusKeyword: 'anti-friction coatings',
+    seoTitle: 'Anti-friction coatings explained',
+    seoDescription:
+      'Dry-film anti-friction coatings: MoS2, graphite and PTFE in a cured binder, air-cure against heat-cure, surface preparation, and where they beat grease.',
+  },
+  'grease-selection-base-oil-thickener-nlgi': {
+    focusKeyword: 'grease selection',
+    seoTitle: 'Grease selection: base oil and thickener',
+    seoDescription:
+      'How to choose a grease: base oil for temperature, thickener for heat and water, base oil viscosity for speed and load, and NLGI grade for consistency.',
+  },
+  'hammer-union-figure-numbers': {
+    focusKeyword: 'hammer union figure numbers',
+    seoTitle: 'Hammer union figure numbers explained',
+    seoDescription:
+      'What hammer union figures 100 to 2202 mean: working and test pressures, derated sizes, seals, sour gas versions, and why figures must never be mixed.',
+  },
+  'ring-joint-gaskets-r-rx-bx': {
+    focusKeyword: 'ring joint gaskets',
+    seoTitle: 'R, RX and BX ring joint gaskets',
+    seoDescription:
+      'R, RX and BX ring joint gaskets compared: which flanges each fits, why RX shares the R groove, BX for 6BX flanges, and ordering by ring number.',
+  },
+  'flow-iron-explained': {
+    focusKeyword: 'flow iron',
+    seoTitle: 'Flow iron explained: parts and pressures',
+    seoDescription:
+      'Treating iron explained: pup joints, swivels, tees, adapters and manifolds joined by hammer unions, standard against sour service, and line restraint.',
+  },
+  'api-6a-nameplate-markings': {
+    focusKeyword: 'api 6a nameplate',
+    seoTitle: 'How to read an API 6A nameplate',
+    seoDescription:
+      'API 6A nameplate codes explained: rated pressure, material class AA to HH with H2S limits, temperature classes such as P+U, PSL, PR and flange type.',
+  },
+  'wellhead-components-explained': {
+    focusKeyword: 'wellhead components',
+    seoTitle: 'Wellhead components explained, bottom up',
+    seoDescription:
+      'Wellhead components from casing head to christmas tree: hangers, spools, tubing heads, five-valve trees, frac trees and surface test trees explained.',
+  },
+  'mud-gate-valve-repair-kits': {
+    focusKeyword: 'mud gate valve repair kits',
+    seoTitle: 'Mud gate valve repair kits: DM families',
+    seoDescription:
+      'Demco DM mud gate valve repair parts: telling DM 2000–5000 from DM 7500 by seat design, part number and kit number, with gate and seat numbers.',
+  },
+  'lubricated-vs-non-lubricated-plug-valves': {
+    focusKeyword: 'lubricated plug valves',
+    seoTitle: 'Lubricated vs non-lubricated plug valves',
+    seoDescription:
+      'How lubricated and non-lubricated plug valves seal, what our listings rate them for on 1502, API and ASME ends, and why plug valves are not throttled.',
+  },
+  'oilfield-check-valves-explained': {
+    focusKeyword: 'oilfield check valves',
+    seoTitle: 'Oilfield check valves: dart, swing, float',
+    seoDescription:
+      'Dart, swing and wafer check valves on treating iron, drill pipe float valves sized to their sub, the ratings we list, and why a check never isolates.',
+  },
+  'positive-vs-adjustable-chokes': {
+    focusKeyword: 'adjustable chokes',
+    seoTitle: 'Positive vs adjustable chokes explained',
+    seoDescription:
+      'Positive and adjustable chokes compared: fixed beans against variable trims, bean sizes in 64ths of an inch, tungsten carbide wear, and choke manifolds.',
+  },
+  'ram-vs-annular-bop': {
+    focusKeyword: 'annular bop',
+    seoTitle: 'Ram vs annular BOP: what each one seals',
+    seoDescription:
+      'Ram and annular blowout preventers compared: packing elements, pipe, variable bore and blind-shear rams, and the spares and bolting that wear.',
+  },
+  'demco-butterfly-valve-part-numbers': {
+    focusKeyword: 'demco butterfly valve',
+    seoTitle: 'DEMCO butterfly valve part numbers',
+    seoDescription:
+      'How to decode a DEMCO butterfly valve part number: series and size in the base, then body style, body, stem, disc and seat codes in the suffix.',
+  },
+  'ball-valve-pressure-ratings-cwp-wog': {
+    focusKeyword: 'ball valve pressure ratings',
+    seoTitle: 'Ball valve pressure ratings: CWP, WOG, PN',
+    seoDescription:
+      'What CWP, WOG, PN, ASME class and union figure ratings mean on a ball valve, why every rating has a temperature, and floating against trunnion.',
+  },
+  'types-of-marine-fenders': {
+    focusKeyword: 'marine fenders',
+    seoTitle: 'Types of marine fenders and their uses',
+    seoDescription:
+      'Cone, cell, arch, cylindrical, D, roller, pneumatic and foam marine fenders: where each is used, the sizes we list, and the energy and reaction trade-off.',
+  },
+  'types-of-marine-anchors': {
+    focusKeyword: 'marine anchors',
+    seoTitle: 'Types of marine anchors explained',
+    seoDescription:
+      'Stockless, Hall, Pool, HHP, Admiralty, Danforth, plough, claw and grapnel anchors: how each one holds, the mass ranges we list and what to specify.',
+  },
+  'anchor-chain-grades-u1-u2-u3': {
+    focusKeyword: 'anchor chain grades',
+    seoTitle: 'Anchor chain grades U1, U2 and U3',
+    seoDescription:
+      'Anchor chain grades U1, U2 and U3 explained: proof and breaking loads by size, stud link against studless chain, and Kenter, joining and end shackles.',
+  },
+  'types-of-mooring-bollards': {
+    focusKeyword: 'mooring bollards',
+    seoTitle: 'Types of mooring bollards and cleats',
+    seoDescription:
+      'Ship double and cross bollards, dock bollards such as T-head and stag horn, and cleats and chocks: pattern standards, WLL ratings and what to check.',
+  },
+  'fibre-rope-materials-compared': {
+    focusKeyword: 'fibre rope materials',
+    seoTitle: 'Fibre rope materials: PP, nylon, HMPE',
+    seoDescription:
+      'Polypropylene, polyethylene, polyester, nylon and HMPE rope compared: breaking loads at the same size, ISO against MEG4 figures, stretch and buoyancy.',
+  },
+  'snap-hooks-and-quick-links': {
+    focusKeyword: 'quick links',
+    seoTitle: 'Snap hooks and quick links explained',
+    seoDescription:
+      'How snap hooks and quick links are rated, why the gate decides their strength, the WLLs on our listings, and why they are not overhead lifting hardware.',
+  },
+  'chain-sling-codes-explained': {
+    focusKeyword: 'chain sling codes',
+    seoTitle: 'Chain sling codes: SOS, DOS, TOS, QOS',
+    seoDescription:
+      'How to read chain sling codes such as DOS and QOSL: leg count, master link and hook letters, how multi-leg slings are rated, and Grade 80 against 100.',
+  },
+  'vertical-vs-horizontal-plate-lifting-clamps': {
+    focusKeyword: 'plate lifting clamps',
+    seoTitle: 'Plate lifting clamps: which type to use',
+    seoDescription:
+      'Vertical and horizontal plate lifting clamps compared: how each grips, per-pair ratings, jaw ranges, beam clamps, and the checks before every lift.',
+  },
 }

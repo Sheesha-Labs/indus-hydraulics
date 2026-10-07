@@ -1,0 +1,1099 @@
+{
+ "storz": {
+  "url": "https://www.sunpool.com.tw/upload/download_files/37f898b2660ef125f0443372b04aab38.pdf",
+  "pages": [
+   {
+    "page": 1,
+    "title": "Storz Coupling with Short Tail & Discharge Gasket",
+    "header": [
+     "Size",
+     "KA(mm)",
+     "Forged AL",
+     "Forged AL + Clamp & SS Latch",
+     "Casted AL"
+    ],
+    "rows": [
+     [
+      "1\" (25D)",
+      "31",
+      "SZ-AF-25",
+      "N/A",
+      "SZ-AL-25"
+     ],
+     [
+      "2\" (52C)",
+      "66",
+      "SZ-AF-50",
+      "N/A",
+      "SZ-AL-50"
+     ],
+     [
+      "2-1/2\" (65)",
+      "81",
+      "SZ-AF-65",
+      "N/A",
+      "SZ-AL-65"
+     ],
+     [
+      "3\" (75B)",
+      "89",
+      "SZ-AF-75",
+      "N/A",
+      "SZ-AL-75"
+     ],
+     [
+      "4\" (100)",
+      "115",
+      "SZ-AF-100",
+      "SZ-AF-100SAFT",
+      "SZ-AL-100"
+     ],
+     [
+      "4.5\" (110A)",
+      "133",
+      "SZ-AF-110",
+      "N/A",
+      "SZ-AL-110"
+     ],
+     [
+      "5\" (125)",
+      "148",
+      "SZ-AF-125",
+      "SZ-AF-125SAFT",
+      "SZ-AL-125"
+     ],
+     [
+      "6\" (150)",
+      "160",
+      "SZ-AF-150",
+      "SZ-AF-150SAFT",
+      "SZ-AL-150"
+     ]
+    ],
+    "notes": [
+     "Code for White Suction Gasket: S",
+     "Example: 4\" Forged Storz with Short Tail & Suction Gasket: SZ-AF-100-S",
+     "Code for SS latch: LS",
+     "Example: 4\" Forged Storz with Long Hose Tail & SS Latch: SZ-AF-100-SL",
+     "Code for Hard Coating: H",
+     "Example: 4\" Forged Storz with Short Tail, SS Latch & Hard Coating: SZ-AF-100-SLH"
+    ]
+   },
+   {
+    "page": 2,
+    "title": "Storz Coupling with Long Tail & Discharge Gasket",
+    "header": [
+     "Size",
+     "KA(mm)",
+     "Forged AL",
+     "Casted AL",
+     "Brass",
+     "SS316"
+    ],
+    "rows": [
+     [
+      "1\" (25D)",
+      "31",
+      "SZ-AF-25-L",
+      "SZ-AL-25-L",
+      "SZ-BR-25-L",
+      "SZ-S6-25-L"
+     ],
+     [
+      "1-1/4\" (32)",
+      "44",
+      "SZ-AF-32-L",
+      "SZ-AL-32-L",
+      "SZ-BR-32-L",
+      "SZ-S6-32-L"
+     ],
+     [
+      "1-1/2\"(38)",
+      "51",
+      "SZ-AF-40-L",
+      "SZ-AL-40-L",
+      "SZ-BR-40-L",
+      "SZ-S6-40-L"
+     ],
+     [
+      "2\" (52C)",
+      "66",
+      "SZ-AF-50-L",
+      "SZ-AL-50-L",
+      "SZ-BR-50-L",
+      "SZ-S6-50-L"
+     ],
+     [
+      "2-1/2\" (65)",
+      "81",
+      "SZ-AF-65-L",
+      "SZ-AL-65-L",
+      "SZ-BR-65-L",
+      "SZ-S6-65-L"
+     ],
+     [
+      "3\" (75B)",
+      "89",
+      "SZ-AF-75-L",
+      "SZ-AL-75-L",
+      "SZ-BR-75-L",
+      "SZ-S6-75-L"
+     ],
+     [
+      "4\" (100)",
+      "115",
+      "SZ-AF-100-L",
+      "SZ-AL-100-L",
+      "SZ-BR-100-L",
+      "SZ-S6-100-L"
+     ],
+     [
+      "4.5\" (110A)",
+      "133",
+      "SZ-AF-110-L",
+      "SZ-AL-110-L",
+      "SZ-BR-110-L",
+      "SZ-S6-110-L"
+     ],
+     [
+      "5\" (125)",
+      "148",
+      "SZ-AF-125-L",
+      "SZ-AL-125-L",
+      "SZ-BR-125-L",
+      "SZ-S6-125-L"
+     ],
+     [
+      "6\" (150)",
+      "160",
+      "SZ-AF-150-L",
+      "SZ-AL-150-L",
+      "SZ-BR-150-L",
+      "SZ-S6-150-L"
+     ]
+    ],
+    "notes": [
+     "Code for White Suction Gasket: S",
+     "Example: 1\" Forged Storz with Long Hose Tail & Suction Gasket: SZ-AF-25-LS",
+     "Code for SS latch: LS",
+     "Example: 4\" Forged Storz with Long Hose Tail & SS Latch: SZ-AF-25-L-SL"
+    ]
+   },
+   {
+    "page": 3,
+    "title": "Storz Adapter with Female BSP",
+    "header": [
+     "Size",
+     "KA(mm)",
+     "Forged AL",
+     "Casted AL",
+     "BR",
+     "BRONZE",
+     "SS316"
+    ],
+    "rows": [
+     [
+      "1\" (25D)",
+      "31",
+      "SZ-AF-25-FP",
+      "SZ-AL-25-FP",
+      "SZ-BR-25-FP",
+      "SZ-BO-25-FP",
+      "SZ-S6-25-FP"
+     ],
+     [
+      "2\" (52C)",
+      "66",
+      "SZ-AF-50-FP",
+      "SZ-AL-50-FP",
+      "SZ-BR-50-FP",
+      "SZ-BO-50-FP",
+      "SZ-S6-50-FP"
+     ],
+     [
+      "2-1/2\" (65)",
+      "81",
+      "SZ-AF-65-FP",
+      "SZ-AL-65-FP",
+      "SZ-BR-65-FP",
+      "SZ-BO-65-FP",
+      "SZ-S6-65-FP"
+     ],
+     [
+      "3\" (75B)",
+      "89",
+      "SZ-AF-75-FP",
+      "SZ-AL-75-FP",
+      "SZ-BR-75-FP",
+      "SZ-BO-75-FP",
+      "SZ-S6-75-FP"
+     ],
+     [
+      "4\" (100)",
+      "115",
+      "SZ-AF-100-FP",
+      "SZ-AL-100-FP",
+      "SZ-BR-100-FP",
+      "SZ-BO-100-FP",
+      "SZ-S6-100-FP"
+     ],
+     [
+      "4.5\" (110A)",
+      "133",
+      "SZ-AF-110-FP",
+      "SZ-AL-110-FP",
+      "SZ-BR-110-FP",
+      "N/A",
+      "N/A"
+     ],
+     [
+      "5\" (125)",
+      "148",
+      "SZ-AF-125-FP",
+      "SZ-AL-125-FP",
+      "SZ-BR-125-FP",
+      "SZ-BO-125-FP",
+      "SZ-S6-125-FP"
+     ],
+     [
+      "6\" (150)",
+      "160",
+      "SZ-AF-150-FP",
+      "SZ-AL-150-FP",
+      "SZ-BR-150-FP",
+      "SZ-BO-150-FP",
+      "SZ-S6-150-FP"
+     ]
+    ],
+    "notes": [
+     "Code for White Suction Gasket: S",
+     "Example: 4\" Forged Storz Adapter with F BSP & Suction Gasket: SZ-AF-100-FPS",
+     "Code for SS latch: LS",
+     "Example: 4\" Forged Storz Adapter with F BSP & SS Latch: SZ-AF-100-FP-SL",
+     "Code for Hard Coating: H",
+     "Example: Forged Storz Adapter with F BSP, SS Latch & Hard Coating: SZ-AF-100-FP-SLH"
+    ]
+   },
+   {
+    "page": 4,
+    "title": "Storz Cap with CS Chain",
+    "header": [
+     "Size",
+     "KA(mm)",
+     "Forged AL",
+     "Casted AL",
+     "BR",
+     "BRONZE",
+     "SS316"
+    ],
+    "rows": [
+     [
+      "1\" (25D)",
+      "31",
+      "SZ-AF-25-CAP",
+      "SZ-AL-25-CAP",
+      "SZ-BR-25-CAP",
+      "SZ-BO-25-CAP",
+      "SZ-S6-25-CAP"
+     ],
+     [
+      "2\" (52C)",
+      "66",
+      "SZ-AF-50-CAP",
+      "SZ-AL-50-CAP",
+      "SZ-BR-50-CAP",
+      "SZ-BO-50-CAP",
+      "SZ-S6-50-CAP"
+     ],
+     [
+      "2-1/2\" (65)",
+      "81",
+      "SZ-AF-65-CAP",
+      "SZ-AL-65-CAP",
+      "SZ-BR-65-CAP",
+      "SZ-BO-65-CAP",
+      "SZ-S6-65-CAP"
+     ],
+     [
+      "3\" (75B)",
+      "89",
+      "SZ-AF-75-CAP",
+      "SZ-AL-75-CAP",
+      "SZ-BR-75-CAP",
+      "SZ-BO-75-CAP",
+      "SZ-S6-75-CAP"
+     ],
+     [
+      "4\" (100)",
+      "115",
+      "SZ-AF-100-CAP",
+      "SZ-AL-100-CAP",
+      "SZ-BR-100-CAP",
+      "SZ-BO-100-CAP",
+      "SZ-S6-100-CAP"
+     ],
+     [
+      "4.5\" (110A)",
+      "133",
+      "SZ-AF-110-CAP",
+      "SZ-AL-110-CAP",
+      "SZ-BR-110-CAP",
+      "N/A",
+      "N/A"
+     ],
+     [
+      "5\" (125)",
+      "148",
+      "SZ-AF-125-CAP",
+      "SZ-AL-125-CAP",
+      "SZ-BR-125-CAP",
+      "SZ-BO-125-CAP",
+      "SZ-S6-125-CAP"
+     ],
+     [
+      "6\" (150)",
+      "160",
+      "SZ-AF-150-CAP",
+      "SZ-AL-150-CAP",
+      "SZ-BR-150-CAP",
+      "SZ-BO-150-CAP",
+      "SZ-S6-150-CAP"
+     ]
+    ],
+    "notes": [
+     "Code for White Suction Gasket: S",
+     "Example: 4\" Forged Storz Cap & Suction Gasket: SZ-AF-100-CAPS",
+     "Code for SS latch: LS",
+     "Example: 4\" Forged Storz Cap & SS Latch: SZ-AF-100-CAP-SL",
+     "Code for Hard Coating: H",
+     "Example: Forged Storz Cap, SS Latch & Hard Coating: SZ-AF-100-CAP-SLH"
+    ]
+   }
+  ]
+ },
+ "kc": {
+  "url": "https://www.sunpool.com.tw/upload/download_files/4ff3cc3a4e8ef2f9d5c6a01036181774.pdf",
+  "pages": [
+   {
+    "page": 1,
+    "title": "KC Nipple, NPT",
+    "header": [
+     "Size",
+     "CS Plated",
+     "SS304",
+     "SS316"
+    ],
+    "rows": [
+     [
+      "1/2\"",
+      "KC-CS-050-N",
+      "KC-S4-050-N",
+      "KC-S6-050-N"
+     ],
+     [
+      "3/4\"",
+      "KC-CS-075-N",
+      "KC-S4-075-N",
+      "KC-S6-075-N"
+     ],
+     [
+      "1\"",
+      "KC-CS-100-N",
+      "KC-S4-100-N",
+      "KC-S6-100-N"
+     ],
+     [
+      "1-1/4\"",
+      "KC-CS-125-N",
+      "KC-S4-125-N",
+      "KC-S6-125-N"
+     ],
+     [
+      "1-1/2\"",
+      "KC-CS-150-N",
+      "KC-S4-150-N",
+      "KC-S6-150-N"
+     ],
+     [
+      "2\"",
+      "KC-CS-200-N",
+      "KC-S4-200-N",
+      "KC-S6-200-N"
+     ],
+     [
+      "2-1/2\"",
+      "KC-CS-250-N",
+      "KC-S4-250-N",
+      "KC-S6-250-N"
+     ],
+     [
+      "3\"",
+      "KC-CS-300-N",
+      "KC-S4-300-N",
+      "KC-S6-300-N"
+     ],
+     [
+      "4\"",
+      "KC-CS-400-N",
+      "KC-S4-400-N",
+      "KC-S6-400-N"
+     ],
+     [
+      "5\"",
+      "KC-CS-500-N",
+      "KC-S4-500-N",
+      "KC-S6-500-N"
+     ],
+     [
+      "6\"",
+      "KC-CS-600-N",
+      "KC-S4-600-N",
+      "KC-S6-600-N"
+     ],
+     [
+      "8\"",
+      "KC-CS-800-N",
+      "KC-S4-800-N",
+      "KC-S6-800-N"
+     ],
+     [
+      "10\"",
+      "KC-CS-1K-N",
+      "KC-S4-1K-N",
+      "KC-S6-1K-N"
+     ],
+     [
+      "12\"",
+      "KC-CS-1K2-N",
+      "KC-S4-1K2-N",
+      "KC-S6-1K2-N"
+     ]
+    ],
+    "notes": [
+     "Code for different thread: N for NPT / P for BSP / T for BSPT/ NT for No Thread",
+     "Example: 1\" CS KC BSP: KC-CS-100-P",
+     "2\" SS304 KC BSPT: KC-S4-200-T",
+     "3\" CS KC No Thread for Welding: KC-CS-300-NT"
+    ]
+   },
+   {
+    "page": 2,
+    "title": "KC Nipple For Crimping With Ferrule, NPT",
+    "header": [
+     "Size",
+     "CS Plated",
+     "SS304",
+     "SS316"
+    ],
+    "rows": [
+     [
+      "3/4\"",
+      "KC-CS-075H-N",
+      "KC-S4-075H-N",
+      "KC-S6-075H-N"
+     ],
+     [
+      "1\"",
+      "KC-CS-100H-N",
+      "KC-S4-100H-N",
+      "KC-S6-100H-N"
+     ],
+     [
+      "1-1/4\"",
+      "KC-CS-125H-N",
+      "KC-S4-125H-N",
+      "KC-S6-125H-N"
+     ],
+     [
+      "1-1/2\"",
+      "KC-CS-150H-N",
+      "KC-S4-150H-N",
+      "KC-S6-150H-N"
+     ],
+     [
+      "2\"",
+      "KC-CS-200H-N",
+      "KC-S4-200H-N",
+      "KC-S6-200H-N"
+     ],
+     [
+      "2-1/2\"",
+      "KC-CS-250H-N",
+      "KC-S4-250H-N",
+      "KC-S6-250H-N"
+     ],
+     [
+      "3\"",
+      "KC-CS-300H-N",
+      "KC-S4-300H-N",
+      "KC-S6-300H-N"
+     ],
+     [
+      "4\"",
+      "KC-CS-400H-N",
+      "KC-S4-400H-N",
+      "KC-S6-400H-N"
+     ],
+     [
+      "5\"",
+      "KC-CS-500H-N",
+      "KC-S4-500H-N",
+      "KC-S6-500H-N"
+     ],
+     [
+      "6\"",
+      "KC-CS-600H-N",
+      "KC-S4-600H-N",
+      "KC-S6-600H-N"
+     ],
+     [
+      "8\"",
+      "KC-CS-800H-N",
+      "KC-S4-800H-N",
+      "KC-S6-800H-N"
+     ],
+     [
+      "10\"",
+      "KC-CS-1KH-N",
+      "KC-S4-1KH-N",
+      "KC-S6-1KH-N"
+     ],
+     [
+      "12\"",
+      "KC-CS-1K2H-N",
+      "KC-S4-1K2H-N",
+      "KC-S6-1K2H-N"
+     ]
+    ],
+    "notes": [
+     "Code for different thread: N for NPT / P for BSP / T for BSPT/ NT for No Thread",
+     "Example: 1\" CS HPKC BSP: KC-CS-100H-P",
+     "2\" SS304 HPKC BSPT: KC-S4-200H-T",
+     "3\" CS HPKC No Thread for Welding: KC-CS-300H-NT"
+    ]
+   },
+   {
+    "page": 3,
+    "title": "Turnback Flange KC For Crimping With Ferrule",
+    "header": [
+     "Size",
+     "CS Plated",
+     "SS304",
+     "SS316"
+    ],
+    "rows": [
+     [
+      "3/4\"",
+      "KC-CS-075H-TB",
+      "KC-S4-075H-TB",
+      "KC-S6-075H-TB"
+     ],
+     [
+      "1\"",
+      "KC-CS-100H-TB",
+      "KC-S4-100H-TB",
+      "KC-S6-100H-TB"
+     ],
+     [
+      "1-1/4\"",
+      "KC-CS-125H-TB",
+      "KC-S4-125H-TB",
+      "KC-S6-125H-TB"
+     ],
+     [
+      "1-1/2\"",
+      "KC-CS-150H-TB",
+      "KC-S4-150H-TB",
+      "KC-S6-150H-TB"
+     ],
+     [
+      "2\"",
+      "KC-CS-200H-TB",
+      "KC-S4-200H-TB",
+      "KC-S6-200H-TB"
+     ],
+     [
+      "2-1/2\"",
+      "KC-CS-250H-TB",
+      "KC-S4-250H-TB",
+      "KC-S6-250H-TB"
+     ],
+     [
+      "3\"",
+      "KC-CS-300H-TB",
+      "KC-S4-300H-TB",
+      "KC-S6-300H-TB"
+     ],
+     [
+      "4\"",
+      "KC-CS-400H-TB",
+      "KC-S4-400H-TB",
+      "KC-S6-400H-TB"
+     ],
+     [
+      "5\"",
+      "KC-CS-500H-TB",
+      "KC-S4-500H-TB",
+      "KC-S6-500H-TB"
+     ],
+     [
+      "6\"",
+      "KC-CS-600H-TB",
+      "KC-S4-600H-TB",
+      "KC-S6-600H-TB"
+     ],
+     [
+      "8\"",
+      "KC-CS-800H-TB",
+      "KC-S4-800H-TB",
+      "KC-S6-800H-TB"
+     ],
+     [
+      "10\"",
+      "KC-CS-1KH-TB",
+      "KC-S4-1KH-TB",
+      "KC-S6-1KH-TB"
+     ],
+     [
+      "12\"",
+      "KC-CS-1K2H-TB",
+      "KC-S4-1K2H-TB",
+      "KC-S6-1K2H-TB"
+     ]
+    ],
+    "notes": []
+   },
+   {
+    "page": 4,
+    "title": "#150 Fixed Flange KC For Crimping With Ferrule",
+    "header": [
+     "Size",
+     "CS Plated",
+     "SS304",
+     "SS316"
+    ],
+    "rows": [
+     [
+      "3/4\"",
+      "KC-CS-075H-FX",
+      "KC-S4-075H-FX",
+      "KC-S6-075H-FX"
+     ],
+     [
+      "1\"",
+      "KC-CS-100H-FX",
+      "KC-S4-100H-FX",
+      "KC-S6-100H-FX"
+     ],
+     [
+      "1-1/4\"",
+      "KC-CS-125H-FX",
+      "KC-S4-125H-FX",
+      "KC-S6-125H-FX"
+     ],
+     [
+      "1-1/2\"",
+      "KC-CS-150H-FX",
+      "KC-S4-150H-FX",
+      "KC-S6-150H-FX"
+     ],
+     [
+      "2\"",
+      "KC-CS-200H-FX",
+      "KC-S4-200H-FX",
+      "KC-S6-200H-FX"
+     ],
+     [
+      "2-1/2\"",
+      "KC-CS-250H-FX",
+      "KC-S4-250H-FX",
+      "KC-S6-250H-FX"
+     ],
+     [
+      "3\"",
+      "KC-CS-300H-FX",
+      "KC-S4-300H-FX",
+      "KC-S6-300H-FX"
+     ],
+     [
+      "4\"",
+      "KC-CS-400H-FX",
+      "KC-S4-400H-FX",
+      "KC-S6-400H-FX"
+     ],
+     [
+      "5\"",
+      "KC-CS-500H-FX",
+      "KC-S4-500H-FX",
+      "KC-S6-500H-FX"
+     ],
+     [
+      "6\"",
+      "KC-CS-600H-FX",
+      "KC-S4-600H-FX",
+      "KC-S6-600H-FX"
+     ],
+     [
+      "8\"",
+      "KC-CS-800H-FX",
+      "KC-S4-800H-FX",
+      "KC-S6-800H-FX"
+     ],
+     [
+      "10\"",
+      "KC-CS-1KH-FX",
+      "KC-S4-1KH-FX",
+      "KC-S6-1KH-FX"
+     ],
+     [
+      "12\"",
+      "KC-CS-1K2H-FX",
+      "KC-S4-1K2H-FX",
+      "KC-S6-1K2H-FX"
+     ]
+    ],
+    "notes": []
+   },
+   {
+    "page": 5,
+    "title": "Hose Mender",
+    "header": [
+     "Size",
+     "CS Plated",
+     "SS304",
+     "SS316"
+    ],
+    "rows": [
+     [
+      "1/2\"",
+      "HM-CS-050",
+      "HM-S4-050",
+      "HM-S6-050"
+     ],
+     [
+      "3/4\"",
+      "HM-CS-075",
+      "HM-S4-075",
+      "HM-S6-075"
+     ],
+     [
+      "1\"",
+      "HM-CS-100",
+      "HM-S4-100",
+      "HM-S6-100"
+     ],
+     [
+      "1-1/4\"",
+      "HM-CS-125",
+      "HM-S4-125",
+      "HM-S6-125"
+     ],
+     [
+      "1-1/2\"",
+      "HM-CS-150",
+      "HM-S4-150",
+      "HM-S6-150"
+     ],
+     [
+      "2\"",
+      "HM-CS-200",
+      "HM-S4-200",
+      "HM-S6-200"
+     ],
+     [
+      "2-1/2\"",
+      "HM-CS-250",
+      "HM-S4-250",
+      "HM-S6-250"
+     ],
+     [
+      "3\"",
+      "HM-CS-300",
+      "HM-S4-300",
+      "HM-S6-300"
+     ],
+     [
+      "4\"",
+      "HM-CS-400",
+      "HM-S4-400",
+      "HM-S6-400"
+     ],
+     [
+      "5\"",
+      "HM-CS-500",
+      "HM-S4-500",
+      "HM-S6-500"
+     ],
+     [
+      "6\"",
+      "HM-CS-600",
+      "HM-S4-600",
+      "HM-S6-600"
+     ],
+     [
+      "8\"",
+      "HM-CS-800",
+      "HM-S4-800",
+      "HM-S6-800"
+     ],
+     [
+      "10\"",
+      "HM-CS-1K",
+      "HM-S4-1K",
+      "HM-S6-1K"
+     ],
+     [
+      "12\"",
+      "HM-CS-1K2",
+      "HM-S4-1K2",
+      "HM-S6-1K2"
+     ]
+    ],
+    "notes": []
+   }
+  ]
+ },
+ "uac": {
+  "url": "https://www.sunpool.com.tw/upload/download_files/e966c1d568a7e6653b6cd4c8b9d92991.pdf",
+  "pages": [
+   {
+    "page": 1,
+    "title": "US Type CS Universal Air Hose Coupling, White Zinc, NPT",
+    "header": [
+     "Size",
+     "Hose End",
+     "Female Thread",
+     "Male Thread"
+    ],
+    "rows": [
+     [
+      "1/4\"",
+      "UC-CS-H025",
+      "UC-CS-F025-N",
+      "UC-CS-M025-N"
+     ],
+     [
+      "3/8\"",
+      "UC-CS-H037",
+      "UC-CS-F037-N",
+      "UC-CS-M037-N"
+     ],
+     [
+      "1/2\"",
+      "UC-CS-H050",
+      "UC-CS-F050-N",
+      "UC-CS-M050-N"
+     ],
+     [
+      "1\"",
+      "UC-CS-H100",
+      "UC-CS-F100-N",
+      "UC-CS-M100-N"
+     ],
+     [
+      "1-1/4\"",
+      "UC-CS-H125",
+      "UC-CS-F125-N",
+      "UC-CS-M125-N"
+     ],
+     [
+      "1-1/2\"",
+      "UC-CS-H150",
+      "UC-CS-F150-N",
+      "UC-CS-M150-N"
+     ],
+     [
+      "2\"",
+      "UC-CS-H200",
+      "UC-CS-F200-N",
+      "UC-CS-M200-N"
+     ]
+    ],
+    "notes": [
+     "Code for different thread: N for NPT / P for BSP / T for BSPT",
+     "Example: 1\" CS UAC Female BSP: UC-CS-F100-P",
+     "Code for SS316 coupling: S6",
+     "Example: 1\" US UAC Hose End: UC-S6-H100"
+    ]
+   },
+   {
+    "page": 2,
+    "title": "EU Type CS Universal Air Hose Coupling, Yellow Zinc, BSPT",
+    "header": [
+     "Size",
+     "Hose End",
+     "Female Thread",
+     "Male Thread"
+    ],
+    "rows": [
+     [
+      "1/4\"",
+      "EUC-CS-H025",
+      "EUC-CS-F025-T",
+      "EUC-CS-M025-T"
+     ],
+     [
+      "3/8\"",
+      "EUC-CS-H037",
+      "EUC-CS-F037-T",
+      "EUC-CS-M037-T"
+     ],
+     [
+      "1/2\"",
+      "EUC-CS-H050",
+      "EUC-CS-F050-T",
+      "EUC-CS-M050-T"
+     ],
+     [
+      "1\"",
+      "EUC-CS-H100",
+      "EUC-CS-F100-T",
+      "EUC-CS-M100-T"
+     ],
+     [
+      "1-1/4\"",
+      "EUC-CS-H125",
+      "EUC-CS-F125-T",
+      "EUC-CS-M125-T"
+     ],
+     [
+      "1-1/2\"",
+      "EUC-CS-H150",
+      "EUC-CS-F150-T",
+      "EUC-CS-M150-T"
+     ],
+     [
+      "2\"",
+      "EUC-CS-H200",
+      "EUC-CS-F200-T",
+      "EUC-CS-M200-T"
+     ]
+    ],
+    "notes": [
+     "Code for Silver Zinc Plated: W",
+     "Example: 1\" EU CS UAC Female BSP, Silver Zinc: EUC-CS-F100-WP",
+     "Code for different thread: N for NPT / P for BSP / T for BSPT",
+     "Example: 1\" EU CS UAC Female BSP: EUC-CS-F100-P",
+     "Code for SS316 coupling: S6",
+     "Example: 1\" EU SS316 UAC Hose End: EUC-S6-H100"
+    ]
+   },
+   {
+    "page": 3,
+    "title": "AU Type CS Universal Air Hose Coupling, Yellow Zinc, BSPT",
+    "header": [
+     "Size",
+     "Hose End",
+     "Female Thread",
+     "Male Thread"
+    ],
+    "rows": [
+     [
+      "1/4\"",
+      "AUC-CS-H025",
+      "AUC-CS-F025-T",
+      "AUC-CS-M025-T"
+     ],
+     [
+      "3/8\"",
+      "AUC-CS-H037",
+      "AUC-CS-F037-T",
+      "AUC-CS-M037-T"
+     ],
+     [
+      "1/2\"",
+      "AUC-CS-H050",
+      "AUC-CS-F050-T",
+      "AUC-CS-M050-T"
+     ],
+     [
+      "1\"",
+      "AUC-CS-H100",
+      "AUC-CS-F100-T",
+      "AUC-CS-M100-T"
+     ],
+     [
+      "1-1/4\"",
+      "AUC-CS-H125",
+      "AUC-CS-F125-T",
+      "AUC-CS-M125-T"
+     ],
+     [
+      "1-1/2\"",
+      "AUC-CS-H150",
+      "AUC-CS-F150-T",
+      "AUC-CS-M150-T"
+     ],
+     [
+      "2\"",
+      "AUC-CS-H200",
+      "AUC-CS-F200-T",
+      "AUC-CS-M200-T"
+     ]
+    ],
+    "notes": [
+     "Code for different thread: N for NPT / P for BSP / T for BSPT",
+     "Example: 1\" AU CS UAC Female BSP: AUC-CS-F100-P",
+     "Code for SS316 coupling: S6",
+     "Example: 1\" AU SS316 UAC Hose End: AUC-S6-H100"
+    ]
+   },
+   {
+    "page": 4,
+    "title": "Safety Whip",
+    "header": [
+     "Size",
+     "CS Hose to Hose",
+     "CS Hose to Tool",
+     "SS304 Hose to Hose",
+     "SS304 Hose to Tool"
+    ],
+    "rows": [
+     [
+      "1/8\" * 20.25\" Length",
+      "SW-CS-1/8X20",
+      "SW-CS-1/8X20HT",
+      "SW-S4-1/8X20",
+      "SW-S4-1/8X20HT"
+     ],
+     [
+      "1/8\" * 12\" Length",
+      "SW-CS-1/8X12",
+      "SW-CS-1/8X12HT",
+      "SW-S4-1/8X12",
+      "SW-S4-1/8X12HT"
+     ],
+     [
+      "3/16\" * 28\" Length",
+      "SW-CS-3/16X28",
+      "SW-CS-3/16X28HT",
+      "SW-S4-3/16X28",
+      "SW-S4-3/16X28HT"
+     ],
+     [
+      "1/4\" * 36\" Length",
+      "SW-CS-1/4X36",
+      "SW-CS-1/4X36HT",
+      "SW-S4-1/4X36",
+      "SW-S4-1/4X36HT"
+     ],
+     [
+      "1/4\" * 38\" Length",
+      "SW-CS-1/4X38",
+      "SW-CS-1/4X38HT",
+      "SW-S4-1/4X38",
+      "SW-S4-1/4X38HT"
+     ],
+     [
+      "3/8\" * 44\" Length",
+      "SW-CS-3/8X44",
+      "SW-CS-3/8X44HT",
+      "SW-S4-3/8X44",
+      "SW-S4-3/8X44HT"
+     ]
+    ],
+    "notes": []
+   }
+  ]
+ }
+}

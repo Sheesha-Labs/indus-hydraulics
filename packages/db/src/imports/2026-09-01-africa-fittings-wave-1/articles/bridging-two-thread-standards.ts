@@ -114,11 +114,13 @@ const ARTICLE: BlogArticleSeed = {
       type: 'paragraph',
       html: 'When you send us a hose to remake, tell us what is currently at each end <strong>including the adapters</strong>. Where the stack can become one hose end, we will say so and quote it that way — it is a smaller order and a better joint, and we would rather sell the second one.',
     },
+    // Hydraulic adapters, not specialty-adapters-couplings — that shelf is
+    // cam-and-groove specialties. Corrected live by 2026-10-06-listing-data-fixes.
     {
       type: 'category_link',
-      slug: 'specialty-adapters-couplings',
-      label: 'Specialty adapters',
-      blurb: 'Bridging parts between families, and the awkward combinations.',
+      slug: 'hydraulic-adapters',
+      label: 'Hydraulic adapters',
+      blurb: 'JIC, ORFS, BSP, metric, NPT and SAE flange adapters, stocked in Dubai.',
     },
 
     {
