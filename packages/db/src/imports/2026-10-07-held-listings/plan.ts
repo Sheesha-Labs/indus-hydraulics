@@ -38,6 +38,7 @@ export type ProductFields = Partial<{
   seoDescription: string
   focusKeyword: string
   mpn: string | null
+  brandId: string | null
   descriptionShort: string
   descriptionLong: string
 }>
@@ -120,7 +121,11 @@ const sameSpecs = (cur: Current['specs'], next: Spec[]) =>
  * one the entry was written for. A plan that changes nothing has an empty
  * `product`, null `faqs`/`specs` and empty `add…` lists.
  */
-export function plan(c: Current, e: Entry): Plan {
+export function plan(
+  c: Current,
+  e: Entry,
+  brandIds: ReadonlyMap<string, string> = new Map()
+): Plan {
   if (c.sku !== e.sku) throw new Error(`${e.sku}: planned against ${c.sku}`)
   if (c.title !== e.was && c.title !== e.title)
     throw new Error(
@@ -142,6 +147,11 @@ export function plan(c: Current, e: Entry): Plan {
   set('seoDescription', e.seoDescription, c.seoDescription)
   set('focusKeyword', e.focusKeyword, c.focusKeyword)
   set('mpn', e.mpn, c.mpn)
+  if (e.brand !== undefined) {
+    const id = e.brand === null ? null : brandIds.get(e.brand)
+    if (id === undefined) throw new Error(`${e.sku}: unknown brand "${e.brand}"`)
+    if (id !== c.brandId) product.brandId = id
+  }
   set('descriptionShort', e.descriptionShort, c.descriptionShort)
   set('descriptionLong', e.descriptionLong, c.descriptionLong)
 
@@ -162,7 +172,7 @@ export function plan(c: Current, e: Entry): Plan {
     crossReferences: c.counts.crossReferences,
     documents: c.counts.documents,
     images: c.counts.images,
-    brandId: c.brandId,
+    brandId: product.brandId !== undefined ? product.brandId : c.brandId,
     categoryId: c.categoryId,
     focusKeyword: product.focusKeyword ?? c.focusKeyword,
     seoTitle: product.seoTitle ?? c.seoTitle,
@@ -181,6 +191,7 @@ export function plan(c: Current, e: Entry): Plan {
     seoTitle: c.seoTitle,
     seoDescription: c.seoDescription,
     mpn: c.mpn,
+    brandId: c.brandId,
   }
 
   return {

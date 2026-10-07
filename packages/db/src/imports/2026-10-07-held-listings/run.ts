@@ -117,6 +117,9 @@ async function main(): Promise<void> {
     select: { id: true, templateId: true, key: true, label: true },
   })
 
+  const brands = await db.brand.findMany({ select: { id: true, slug: true } })
+  const brandIds = new Map(brands.map((b) => [b.slug, b.id]))
+
   const errors: string[] = []
   const plans: Plan[] = []
   for (const e of ENTRIES) {
@@ -127,7 +130,7 @@ async function main(): Promise<void> {
     }
     let p: Plan
     try {
-      p = plan(toCurrent(r), e)
+      p = plan(toCurrent(r), e, brandIds)
     } catch (err) {
       errors.push((err as Error).message)
       continue

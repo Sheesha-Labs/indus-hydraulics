@@ -24,6 +24,8 @@ export type Entry = {
   seoDescription?: string
   focusKeyword?: string
   mpn?: string | null
+  /** Brand slug; null removes a brand the maker's data does not support. */
+  brand?: string | null
   descriptionShort?: string
   descriptionLong?: string
   /** Replaces every FAQ. */
