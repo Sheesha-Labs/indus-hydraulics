@@ -200,7 +200,7 @@ export default async function BlogPostPage({ params }: Props) {
     description: post.excerpt ?? null,
     url: postUrl,
     imageUrl: crawlableImageUrl(post.hero?.storagePath),
-    imageCaption: post.hero ? (post.hero.alt ?? post.title) : null,
+    imageCaption: post.hero ? (post.heroCaption ?? post.hero.alt ?? post.title) : null,
     authorName: bylineName,
     authorUrl: authorProfileUrl,
     authorJobTitle: post.blogAuthor?.jobTitle ?? null,
@@ -369,16 +369,24 @@ export default async function BlogPostPage({ params }: Props) {
       </header>
 
       {post.hero && (
-        <div className="relative mb-2 aspect-[16/7] max-w-[1100px] overflow-hidden border border-ih-border">
-          <Image
-            src={mediaUrl(post.hero.storagePath)}
-            alt={post.hero.alt ?? post.title}
-            fill
-            className="object-cover"
-            sizes="(max-width: 1100px) 100vw, 1100px"
-            priority
-          />
-        </div>
+        <figure className="mb-2 max-w-[1100px]">
+          <div className="relative aspect-[16/7] overflow-hidden border border-ih-border">
+            <Image
+              src={mediaUrl(post.hero.storagePath)}
+              alt={post.hero.alt ?? post.title}
+              fill
+              className="object-cover"
+              sizes="(max-width: 1100px) 100vw, 1100px"
+              priority
+            />
+          </div>
+          {/* The caption says why the picture is here; the alt says what is in it. */}
+          {post.heroCaption ? (
+            <figcaption className="mt-2.5 font-sans text-[13px] leading-[1.5] text-ih-muted">
+              {post.heroCaption}
+            </figcaption>
+          ) : null}
+        </figure>
       )}
 
       {/*

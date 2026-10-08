@@ -145,6 +145,7 @@ export default async function BlogPostEditorPage({ params }: Props) {
               heroImageUrl: resolveMediaUrl(post.hero?.storagePath ?? null),
               heroId: post.heroId,
               heroStoragePath: post.hero?.storagePath ?? null,
+              heroCaption: post.heroCaption,
               authorName: post.blogAuthor?.name ?? post.author?.name ?? null,
               blogAuthorId: post.blogAuthorId,
               reviewedById: post.reviewedById,
