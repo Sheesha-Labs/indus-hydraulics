@@ -118,6 +118,27 @@ export type CategoryViewProps = {
  * makes this page cacheable. `revalidate` above stays for the same reason.
  */
 
+/**
+ * Share image when the editor has set no `ogImageMediaId`: the category's own
+ * card image, else the nearest ancestor's. Only top-level categories carry a
+ * card image, so a sub-category shares its root's studio shot rather than the
+ * site default. Bounded walk — the tree is three levels deep today.
+ */
+async function categoryImagePath(categoryId: string): Promise<string | null> {
+  let id: string | null = categoryId
+  for (let depth = 0; id && depth < 6; depth++) {
+    const row: { parentId: string | null; image: { storagePath: string } | null } | null =
+      await db.category.findUnique({
+        where: { id },
+        select: { parentId: true, image: { select: { storagePath: true } } },
+      })
+    if (!row) return null
+    if (row.image) return row.image.storagePath
+    id = row.parentId
+  }
+  return null
+}
+
 export async function categoryMetadata({ slug, sp }: CategoryViewProps): Promise<Metadata> {
   const [category, seoSetting] = await Promise.all([
     db.category.findUnique({ where: { slug } }),
@@ -134,7 +155,7 @@ export async function categoryMetadata({ slug, sp }: CategoryViewProps): Promise
           select: { storagePath: true },
         })
       )?.storagePath ?? null)
-    : null
+    : await categoryImagePath(category.id)
 
   // Filtered and sorted variants of a category page are duplicate-content
   // slices of the base. We let Google FOLLOW the links (so it discovers
@@ -195,6 +216,15 @@ export default async function CategoryView({ slug, sp }: CategoryViewProps) {
   const { byId, children } = indexTree(tree)
   const categoryIds = descendantIds(children, category.id)
   const trail = ancestorTrail(byId, category.id)
+  // Root category's studio shot — the tile image for listings with no photo.
+  const rootSlug = trail[0]?.slug ?? category.slug
+  const root = await db.category.findUnique({
+    where: { slug: rootSlug },
+    select: { name: true, image: { select: { storagePath: true } } },
+  })
+  const fallbackImage = root?.image
+    ? { src: root.image.storagePath, categoryName: root.name }
+    : null
 
   /*
    * Spec facets are computed from every product the OTHER filters leave in
@@ -785,7 +815,7 @@ export default async function CategoryView({ slug, sp }: CategoryViewProps) {
             ) : (
               <div className="grid grid-cols-2 gap-4 lg:grid-cols-3 xl:grid-cols-4">
                 {products.map((product) => (
-                  <ProductCard key={product.id} product={product} />
+                  <ProductCard key={product.id} product={product} fallbackImage={fallbackImage} />
                 ))}
               </div>
             )}

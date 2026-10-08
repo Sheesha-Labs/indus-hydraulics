@@ -204,7 +204,7 @@ export function DeliveryAreasEditor({
   )
 }
 
-// ── supportBlock: { eyebrow, headline, description, bullets[], cta } ───
+// ── supportBlock: { eyebrow, headline, description, bullets[], cta, image?, imageAlt? } ───
 
 export function SupportBlockEditor({
   name,
@@ -226,12 +226,22 @@ export function SupportBlockEditor({
             ? (o.bullets as unknown[]).filter((x): x is string => typeof x === 'string')
             : [],
           cta: typeof o.cta === 'string' ? o.cta : '',
+          image: typeof o.image === 'string' ? o.image : '',
+          imageAlt: typeof o.imageAlt === 'string' ? o.imageAlt : '',
         }
       }
     } catch {
       // fall through
     }
-    return { eyebrow: '', headline: '', description: '', bullets: [] as string[], cta: '' }
+    return {
+      eyebrow: '',
+      headline: '',
+      description: '',
+      bullets: [] as string[],
+      cta: '',
+      image: '',
+      imageAlt: '',
+    }
   }, [defaultValue])
 
   const [state, setState] = useState(initial)
@@ -244,6 +254,7 @@ export function SupportBlockEditor({
       !state.headline.trim() &&
       !state.description.trim() &&
       !state.cta.trim() &&
+      !state.image.trim() &&
       state.bullets.filter((b) => b.trim()).length === 0
     return isEmpty ? '' : JSON.stringify(state)
   }, [state])
@@ -281,6 +292,22 @@ export function SupportBlockEditor({
         rows={3}
         className="px-3 py-2 border border-ih-border text-[13px] resize-vertical"
       />
+      <div className="grid grid-cols-2 gap-3">
+        <input
+          type="text"
+          value={state.image}
+          onChange={(e) => setState({ ...state, image: e.target.value })}
+          placeholder="image URL (4:3 panel beside the copy)"
+          className="h-9 px-3 border border-ih-border text-[13px]"
+        />
+        <input
+          type="text"
+          value={state.imageAlt}
+          onChange={(e) => setState({ ...state, imageAlt: e.target.value })}
+          placeholder="image alt text"
+          className="h-9 px-3 border border-ih-border text-[13px]"
+        />
+      </div>
       <div className="flex flex-col gap-2">
         <span className="text-[11px] font-mono uppercase tracking-[0.1em] text-ih-muted">
           Bullets
