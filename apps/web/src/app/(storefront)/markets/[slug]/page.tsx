@@ -16,6 +16,7 @@ import { buildMarketMapModel } from '../../../../lib/market-geometry'
 import { getSubPageContent } from '../../../../lib/page-content'
 import {
   marketCatalogueClusters,
+  marketOperationsImages,
   marketSectorImages,
   marketStockedBrands,
 } from '../../../../lib/market-catalogue'
@@ -148,10 +149,11 @@ export default async function MarketPage({ params }: Props) {
     )
   }
 
-  const [clusters, brands, sectorImages, settings] = await Promise.all([
+  const [clusters, brands, sectorImages, operationsImages, settings] = await Promise.all([
     marketCatalogueClusters(),
     marketStockedBrands(),
     marketSectorImages(),
+    marketOperationsImages(),
     getStoreSettings(),
   ])
 
@@ -169,6 +171,7 @@ export default async function MarketPage({ params }: Props) {
         clusters={clusters}
         brands={brands}
         sectorImages={sectorImages}
+        operationsImages={operationsImages}
         contact={{
           phone: settings.contactPhone,
           email: settings.contactEmail,

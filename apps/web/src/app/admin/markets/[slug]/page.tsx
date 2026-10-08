@@ -10,6 +10,7 @@ import { buildWhatsappHref } from '@indus/ui'
 import MarketLanding from '../../../../components/markets/MarketLanding'
 import {
   marketCatalogueClusters,
+  marketOperationsImages,
   marketSectorImages,
   marketStockedBrands,
 } from '../../../../lib/market-catalogue'
@@ -57,10 +58,11 @@ export default async function MarketDraftPreviewPage({ params }: Props) {
   const isReleased = releasedMarketPage(slug) !== undefined
   const pending = pendingMarketPageSlugs().length
 
-  const [clusters, brands, sectorImages, settings, content] = await Promise.all([
+  const [clusters, brands, sectorImages, operationsImages, settings, content] = await Promise.all([
     marketCatalogueClusters(),
     marketStockedBrands(),
     marketSectorImages(),
+    marketOperationsImages(true),
     getStoreSettings(),
     // The uncached read, deliberately: this IS the review surface, so it has
     // to show the arrangement as it stands right now rather than whatever the
@@ -104,6 +106,7 @@ export default async function MarketDraftPreviewPage({ params }: Props) {
           clusters={clusters}
           brands={brands}
           sectorImages={sectorImages}
+          operationsImages={operationsImages}
           contact={{
             phone: settings.contactPhone,
             email: settings.contactEmail,

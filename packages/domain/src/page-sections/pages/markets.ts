@@ -1,4 +1,4 @@
-import { area, eyebrow, heading, text } from '../fields'
+import { area, eyebrow, heading, image, text } from '../fields'
 import type { ListFieldDef, MasterPageDef } from '../types'
 
 /** A label/value pair — the hero tiles and the navy manifest strip. */
@@ -77,6 +77,29 @@ export const MARKETS_PAGE: MasterPageDef = {
         'The regions and the countries in them come from the market registry in code. Adding a market is a content change made there, not here.',
       fields: [],
       defaults: {},
+    },
+    {
+      // Read by the individual market pages, not by /markets. The four
+      // photographs serve all 126 market pages, so they are picked once here
+      // rather than per market — `imageKey` on MARKET_OPERATIONS names which
+      // field fills which card.
+      key: 'market_photos',
+      label: 'Market page photographs',
+      description: 'The four operations photographs on every individual market page.',
+      dataNote:
+        'Not shown on /markets itself. These fill the operations band — stock, assembly, documents, dispatch — on all 126 market pages. Give each its own alt text describing the photograph, and never a country name: one picture serves every market. A blank picture keeps the labelled placeholder.',
+      fields: [
+        image('stock_image', 'Stock — Dubai warehouse'),
+        image('assembly_image', 'Assembly — crimping and test bay'),
+        image('documents_image', 'Documents — the conformity set'),
+        image('dispatch_image', 'Dispatch — loaded trailer'),
+      ],
+      defaults: {
+        stock_image: { mediaId: null, alt: null },
+        assembly_image: { mediaId: null, alt: null },
+        documents_image: { mediaId: null, alt: null },
+        dispatch_image: { mediaId: null, alt: null },
+      },
     },
     {
       key: 'cta',

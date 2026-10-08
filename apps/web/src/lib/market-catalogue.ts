@@ -3,7 +3,9 @@ import 'server-only'
 import { unstable_cache } from 'next/cache'
 import { db } from '@indus/db'
 import { STOREFRONT_TAGS } from './cache-tags'
+import { MARKET_OPERATIONS, img } from '@indus/domain'
 import { mediaUrl } from './media'
+import { getMasterPageContent, getMasterPageContentFresh } from './page-content'
 import type { CatalogueCluster } from '../components/markets/MarketCatalogueIndex'
 import type { MarketBrand, MarketSectorImage } from '../components/markets/MarketIndustries'
 
@@ -159,6 +161,27 @@ const loadSectorImages = unstable_cache(
 
 export function marketSectorImages(): Promise<Record<string, MarketSectorImage>> {
   return loadSectorImages()
+}
+
+/**
+ * The operations band's four photographs, keyed by `imageKey`.
+ *
+ * Picked once in Pages & Blocks (Export markets → Market page photographs)
+ * because the same four pictures serve every market page. `fresh` is for the
+ * admin preview, which must show the document as it stands rather than what
+ * the storefront cache still holds.
+ */
+export async function marketOperationsImages(
+  fresh = false,
+): Promise<Partial<Record<string, { url: string; alt: string }>>> {
+  const hub = fresh ? await getMasterPageContentFresh('markets') : await getMasterPageContent('markets')
+  const values = hub.values('market_photos')
+  const out: Partial<Record<string, { url: string; alt: string }>> = {}
+  for (const op of MARKET_OPERATIONS) {
+    const picked = img(values, op.imageKey)
+    if (picked?.url) out[op.imageKey] = { url: picked.url, alt: picked.alt ?? '' }
+  }
+  return out
 }
 
 export function marketCatalogueClusters(): Promise<CatalogueCluster[]> {

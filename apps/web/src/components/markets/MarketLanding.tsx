@@ -51,6 +51,7 @@ export default function MarketLanding({
   clusters,
   brands,
   sectorImages,
+  operationsImages,
   contact,
   showAuditStrip,
   content,
@@ -62,6 +63,13 @@ export default function MarketLanding({
   brands: MarketBrand[]
   /** Industry hero photographs for the sector cards, keyed by sector slug. */
   sectorImages: Record<string, MarketSectorImage>
+  /**
+   * The operations band's four photographs, keyed by `imageKey` on
+   * MARKET_OPERATIONS. Picked once in Pages & Blocks (Export markets → Market
+   * page photographs) and shared by every market. A missing key keeps the
+   * labelled placeholder.
+   */
+  operationsImages: Partial<Record<string, { url: string; alt: string }>>
   contact: { phone: string | null; email: string | null; hours: string | null; whatsappUrl: string | null }
   /** The build-time audit strip. Staging only — see the docblock on it. */
   showAuditStrip: boolean
@@ -228,7 +236,10 @@ export default function MarketLanding({
       {MARKET_OPERATIONS.map((op, index) => (
         <div key={op.label} className="bg-ih-surface">
           <MarketFigure
-            src={null}
+            src={operationsImages[op.imageKey]?.url ?? null}
+            // The photograph's own alt from Pages & Blocks — it describes the
+            // Dubai facility and never this market.
+            alt={operationsImages[op.imageKey]?.alt}
             label={
               // Only the fourth caption names the destination. One
               // photograph serves every market; the caption localises it.
