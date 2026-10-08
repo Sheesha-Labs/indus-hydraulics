@@ -375,10 +375,20 @@ export default async function IndustryPage({ params }: Props) {
                 {ind.supportBlock.cta}
               </Link>
             </div>
-            <div className="bg-ih-surface-2 border-ih-border grid aspect-[4/3] place-items-center border">
-              <span className="text-ih-muted font-mono text-[11px]">
-                {ind.name.toUpperCase()} SERVICE TEAM
-              </span>
+            <div className="bg-ih-surface-2 border-ih-border relative grid aspect-[4/3] place-items-center overflow-hidden border">
+              {ind.supportBlock.image ? (
+                <Image
+                  src={mediaUrl(ind.supportBlock.image)}
+                  alt={ind.supportBlock.imageAlt ?? ''}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 1440px) 50vw, 680px"
+                />
+              ) : (
+                <span className="text-ih-muted font-mono text-[11px]">
+                  {ind.name.toUpperCase()} SERVICE TEAM
+                </span>
+              )}
             </div>
           </div>
         </section>

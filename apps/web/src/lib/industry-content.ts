@@ -32,6 +32,9 @@ export type IndustrySupportBlock = {
   description: string
   bullets: string[]
   cta: string
+  /** Public image URL for the 4:3 panel beside the copy. Absent → text placeholder. */
+  image: string | null
+  imageAlt: string | null
 }
 
 export type IndustryCaseStudy = {
@@ -112,6 +115,8 @@ function asSupportBlock(v: unknown): IndustrySupportBlock | null {
     description: typeof o.description === 'string' ? o.description : '',
     bullets: asStringArray(o.bullets),
     cta: typeof o.cta === 'string' ? o.cta : '',
+    image: typeof o.image === 'string' && o.image.trim() ? o.image.trim() : null,
+    imageAlt: typeof o.imageAlt === 'string' && o.imageAlt.trim() ? o.imageAlt.trim() : null,
   }
 }
 
