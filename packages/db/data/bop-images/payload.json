@@ -1,0 +1,490 @@
+{
+  "imageDir": "~/Documents/Indus Supplier Research/Image Research/Blowout Preventers",
+  "captionNote": "",
+  "note": "Original-maker (Cameron/SLB, Hydril/HMH, Shaffer/NOV) photos and renders on house-brand BOP listings described by pattern; Ayush approved on 2026-10-08. Weak matches left out.",
+  "listings": [
+    {
+      "sku": "IH-BOP-AN-11-10K-T20-INDUS",
+      "title": "Annular BOP, Hydril GK Style, 11\" 10,000 psi WP, Sour Service (NACE MR0175)",
+      "make": "Hydril (now HMH; Baker Hughes pressure control merged into HMH, bakerhughes.com pages redirect to hmhw.com) - GK pattern",
+      "images": [
+        {
+          "file": "annular-bop-hydril-gk-1.jpg",
+          "kind": "render",
+          "match": "same type, different end/size",
+          "sourcePage": "https://hmhw.com/service/bop-annulars-2/",
+          "imageUrl": "https://hmhw.com/wp-content/uploads/2026/01/GK-13-5-Radial-Latch.jpg"
+        },
+        {
+          "file": "annular-bop-hydril-gk-2-web.jpg",
+          "kind": "render",
+          "match": "exact model",
+          "sourcePage": "https://hmhw.com/service/bop-annulars/",
+          "imageUrl": "https://hmhw.com/wp-content/uploads/2022/05/GK_052714-no-ge.png"
+        }
+      ]
+    },
+    {
+      "sku": "IH-BOP-AN-11-5K-T20-INDUS",
+      "title": "Annular BOP, Hydril GK Style, 11\" 5,000 psi WP, Sour Service (NACE MR0175)",
+      "make": "Hydril (now HMH; Baker Hughes pressure control merged into HMH, bakerhughes.com pages redirect to hmhw.com) - GK pattern",
+      "images": [
+        {
+          "file": "annular-bop-hydril-gk-1.jpg",
+          "kind": "render",
+          "match": "same type, different end/size",
+          "sourcePage": "https://hmhw.com/service/bop-annulars-2/",
+          "imageUrl": "https://hmhw.com/wp-content/uploads/2026/01/GK-13-5-Radial-Latch.jpg"
+        },
+        {
+          "file": "annular-bop-hydril-gk-2-web.jpg",
+          "kind": "render",
+          "match": "exact model",
+          "sourcePage": "https://hmhw.com/service/bop-annulars/",
+          "imageUrl": "https://hmhw.com/wp-content/uploads/2022/05/GK_052714-no-ge.png"
+        }
+      ]
+    },
+    {
+      "sku": "IH-BOP-AN-13-58-10K-T20-INDUS",
+      "title": "Annular BOP, Hydril GK Style, 13-5/8\" 10,000 psi WP, Sour Service (NACE MR0175)",
+      "make": "Hydril (now HMH; Baker Hughes pressure control merged into HMH, bakerhughes.com pages redirect to hmhw.com) - GK pattern",
+      "images": [
+        {
+          "file": "annular-bop-hydril-gk-1.jpg",
+          "kind": "render",
+          "match": "same type, different end/size",
+          "sourcePage": "https://hmhw.com/service/bop-annulars-2/",
+          "imageUrl": "https://hmhw.com/wp-content/uploads/2026/01/GK-13-5-Radial-Latch.jpg"
+        },
+        {
+          "file": "annular-bop-hydril-gk-2-web.jpg",
+          "kind": "render",
+          "match": "exact model",
+          "sourcePage": "https://hmhw.com/service/bop-annulars/",
+          "imageUrl": "https://hmhw.com/wp-content/uploads/2022/05/GK_052714-no-ge.png"
+        }
+      ]
+    },
+    {
+      "sku": "IH-BOP-AN-13-58-5K-T20-INDUS",
+      "title": "Annular BOP, Hydril GK Style, 13-5/8\" 5,000 psi WP, Sour Service (NACE MR0175)",
+      "make": "Hydril (now HMH; Baker Hughes pressure control merged into HMH, bakerhughes.com pages redirect to hmhw.com) - GK pattern",
+      "images": [
+        {
+          "file": "annular-bop-hydril-gk-1.jpg",
+          "kind": "render",
+          "match": "same type, different end/size",
+          "sourcePage": "https://hmhw.com/service/bop-annulars-2/",
+          "imageUrl": "https://hmhw.com/wp-content/uploads/2026/01/GK-13-5-Radial-Latch.jpg"
+        },
+        {
+          "file": "annular-bop-hydril-gk-2-web.jpg",
+          "kind": "render",
+          "match": "exact model",
+          "sourcePage": "https://hmhw.com/service/bop-annulars/",
+          "imageUrl": "https://hmhw.com/wp-content/uploads/2022/05/GK_052714-no-ge.png"
+        }
+      ]
+    },
+    {
+      "sku": "IH-BOP-AN-1834-10K-T20-INDUS",
+      "title": "Subsea Annular BOP, Hydril GX Style, 18-3/4\" 10,000 psi WP, Sour Service (NACE MR0175)",
+      "make": "Hydril (HMH) - GX pattern",
+      "images": [
+        {
+          "file": "annular-bop-hydril-gxp-1-web.jpg",
+          "kind": "render",
+          "match": "same type, different end/size",
+          "sourcePage": "https://hmhw.com/service/bop-annulars/",
+          "imageUrl": "https://hmhw.com/wp-content/uploads/2022/05/GXP-18-10-cutaway.png"
+        }
+      ]
+    },
+    {
+      "sku": "IH-BOP-CT-QUAD-5-10K-T20-INDUS",
+      "title": "Coiled Tubing Quad BOP, 5-1/8\" 10,000 psi WP, Sour Service (NACE MR0175)",
+      "make": "NOV (Texas Oil Tools) - generic",
+      "images": [
+        {
+          "file": "ct-quad-bop-nov-1.jpg",
+          "kind": "render",
+          "match": "same type, different end/size",
+          "sourcePage": "https://www.nov.com/products/pressure-control-accessories",
+          "imageUrl": "https://assets.nov.com/NCP4N68N/at/697n4kkr7whs86xt9zhwp4sq/ES_Series_Coiled_Tubing_BOP.jpg?format=jpg&width=1920"
+        }
+      ]
+    },
+    {
+      "sku": "IH-BOP-CTRL-K80-11STN-INDUS",
+      "title": "BOP Control Unit / Accumulator, Koomey Type 80, 11-Station, ~80 gal Usable, API 16D",
+      "make": "Cameron (SLB) - Koomey",
+      "images": [
+        {
+          "file": "bop-control-unit-cameron-1.jpg",
+          "kind": "render",
+          "match": "same type, different end/size",
+          "sourcePage": "https://www.slb.com/products-and-services/innovating-in-oil-and-gas/well-construction/rigs-and-equipment/pressure-control-equipment/bop-control-systems/land-closing-unit",
+          "imageUrl": "https://www.slb.com/-/media/images/cam-drlg/pressure-control/bop-control-systems/land-closing-unit-combo.jpg"
+        }
+      ]
+    },
+    {
+      "sku": "IH-BOP-DIV-2114-2K-INDUS",
+      "title": "Top-Hole Diverter System, 21-1/4\" 2,000 psi WP, HMH KFDJ Style — Offshore Shallow Gas",
+      "make": "HMH - KFDJ pattern",
+      "images": [
+        {
+          "file": "diverter-hmh-kfdj-1-web.jpg",
+          "kind": "render",
+          "match": "exact model",
+          "sourcePage": "https://hmhw.com/service/diverters/",
+          "imageUrl": "https://hmhw.com/wp-content/uploads/2022/06/kfdj.png"
+        }
+      ]
+    },
+    {
+      "sku": "IH-BOP-KIT-ANN-ELE-HEADSEAL-HYDRIL-GK-13-58-5K-INDUS",
+      "title": "Annular Element + Head Seal Kit, Hydril GK Style 13-5/8\" 5K, HNBR Sour Service (NACE MR0175)",
+      "make": "Hydril (HMH) - GK pattern",
+      "images": [
+        {
+          "file": "packing-element-hydril-gk-1-web.jpg",
+          "kind": "photo",
+          "match": "exact model",
+          "sourcePage": "https://hmhw.com/service/annular-packing-elements-2/",
+          "imageUrl": "https://hmhw.com/wp-content/uploads/2022/06/HNBR-GK.png"
+        }
+      ]
+    },
+    {
+      "sku": "IH-BOP-KIT-RAM-REDRESS-CAM-U-13-58-10K-INDUS",
+      "title": "Ram Redress Kit (Per Cavity), Cameron U Style 13-5/8\" 10K, Sour Service (NACE MR0175)",
+      "make": "Cameron (SLB) - U pattern rams",
+      "images": [
+        {
+          "file": "pipe-ram-cameron-1.jpg",
+          "kind": "render",
+          "match": "same type, different end/size",
+          "sourcePage": "https://www.slb.com/products-and-services/innovating-in-oil-and-gas/well-construction/rigs-and-equipment/pressure-control-equipment/bop-rams/pipe-rams",
+          "imageUrl": "https://www.slb.com/-/media/images/cam-drlg/pressure-control/bop-rams/pipe-rams-combo.jpg"
+        },
+        {
+          "file": "vbr-ram-cameron-1.jpg",
+          "kind": "render",
+          "match": "same type, different end/size",
+          "sourcePage": "https://www.slb.com/products-and-services/innovating-in-oil-and-gas/well-construction/rigs-and-equipment/pressure-control-equipment/bop-rams/variable-bore-rams",
+          "imageUrl": "https://www.slb.com/-/media/images/cam-drlg/pressure-control/bop-rams/variable-bore-ram-combo.jpg"
+        }
+      ]
+    },
+    {
+      "sku": "IH-BOP-PE-HYDRIL-GK-11-10K-HNBR-INDUS",
+      "title": "Annular Packing Element, Hydril GK Style 11\" 10K, HNBR Sour Service (NACE MR0175)",
+      "make": "Hydril (HMH) - GK pattern",
+      "images": [
+        {
+          "file": "packing-element-hydril-gk-1-web.jpg",
+          "kind": "photo",
+          "match": "exact model",
+          "sourcePage": "https://hmhw.com/service/annular-packing-elements-2/",
+          "imageUrl": "https://hmhw.com/wp-content/uploads/2022/06/HNBR-GK.png"
+        }
+      ]
+    },
+    {
+      "sku": "IH-BOP-PE-HYDRIL-GK-13-58-10K-HNBR-INDUS",
+      "title": "Annular Packing Element, Hydril GK Style 13-5/8\" 10K, HNBR Sour Service (NACE MR0175)",
+      "make": "Hydril (HMH) - GK pattern",
+      "images": [
+        {
+          "file": "packing-element-hydril-gk-1-web.jpg",
+          "kind": "photo",
+          "match": "exact model",
+          "sourcePage": "https://hmhw.com/service/annular-packing-elements-2/",
+          "imageUrl": "https://hmhw.com/wp-content/uploads/2022/06/HNBR-GK.png"
+        }
+      ]
+    },
+    {
+      "sku": "IH-BOP-PE-HYDRIL-GK-13-58-5K-HNBR-INDUS",
+      "title": "Annular Packing Element, Hydril GK Style 13-5/8\" 5K, HNBR Sour Service (NACE MR0175)",
+      "make": "Hydril (HMH) - GK pattern",
+      "images": [
+        {
+          "file": "packing-element-hydril-gk-1-web.jpg",
+          "kind": "photo",
+          "match": "exact model",
+          "sourcePage": "https://hmhw.com/service/annular-packing-elements-2/",
+          "imageUrl": "https://hmhw.com/wp-content/uploads/2022/06/HNBR-GK.png"
+        }
+      ]
+    },
+    {
+      "sku": "IH-BOP-PE-HYDRIL-GX-1834-10K-HNBR-INDUS",
+      "title": "Subsea Annular Packing Element, Hydril GX Style 18-3/4\" 10K, HNBR Sour Service (NACE MR0175)",
+      "make": "Hydril (HMH) - GX pattern",
+      "images": [
+        {
+          "file": "packing-element-hydril-gx-1-web.jpg",
+          "kind": "photo",
+          "match": "same type, different end/size",
+          "sourcePage": "https://hmhw.com/service/annular-packing-elements-2/",
+          "imageUrl": "https://hmhw.com/wp-content/uploads/2022/06/GX-13-10-hnbr.png"
+        },
+        {
+          "file": "packing-element-hydril-gxp-1-web.jpg",
+          "kind": "photo",
+          "match": "same type, different end/size",
+          "sourcePage": "https://hmhw.com/service/annular-packing-elements-2/",
+          "imageUrl": "https://hmhw.com/wp-content/uploads/2025/06/GXP-13-10-HNBR-H2-packer.png"
+        }
+      ]
+    },
+    {
+      "sku": "IH-BOP-PE-SHAFFER-SPH-13-58-10K-HNBR-INDUS",
+      "title": "Annular Packing Element, Shaffer Spherical Style 13-5/8\" 10K, HNBR Sour Service (NACE MR0175)",
+      "make": "Shaffer (NOV) spherical pattern",
+      "images": [
+        {
+          "file": "packing-element-hmh-spherical-1-web.jpg",
+          "kind": "render",
+          "match": "same type, different end/size",
+          "sourcePage": "https://hmhw.com/service/annular-packing-elements-2/",
+          "imageUrl": "https://hmhw.com/wp-content/uploads/2023/05/spherical-packing-unit.png"
+        }
+      ]
+    },
+    {
+      "sku": "IH-BOP-RAM-11-10K-DBL-T20-INDUS",
+      "title": "Ram BOP, Cameron U Style, 11\" 10,000 psi WP, Double Cavity, Sour Service (NACE MR0175)",
+      "make": "Cameron (SLB) - U pattern",
+      "images": [
+        {
+          "file": "ram-bop-cameron-u-1.jpg",
+          "kind": "render",
+          "match": "same type, different end/size",
+          "sourcePage": "https://www.slb.com/products-and-services/innovating-in-oil-and-gas/well-construction/rigs-and-equipment/pressure-control-equipment/ram-type-bops/u-ram-type-bop",
+          "imageUrl": "https://www.slb.com/-/media/images/cam-drlg/pressure-control/ram-type-bops/u-ram-type-combo.jpg"
+        }
+      ]
+    },
+    {
+      "sku": "IH-BOP-RAM-11-5K-DBL-T20-INDUS",
+      "title": "Ram BOP, Cameron U Style, 11\" 5,000 psi WP, Double Cavity, Sour Service (NACE MR0175)",
+      "make": "Cameron (SLB) - U pattern",
+      "images": [
+        {
+          "file": "ram-bop-cameron-u-1.jpg",
+          "kind": "render",
+          "match": "same type, different end/size",
+          "sourcePage": "https://www.slb.com/products-and-services/innovating-in-oil-and-gas/well-construction/rigs-and-equipment/pressure-control-equipment/ram-type-bops/u-ram-type-bop",
+          "imageUrl": "https://www.slb.com/-/media/images/cam-drlg/pressure-control/ram-type-bops/u-ram-type-combo.jpg"
+        }
+      ]
+    },
+    {
+      "sku": "IH-BOP-RAM-13-58-10K-DBL-T20-INDUS",
+      "title": "Ram BOP, Cameron U Style, 13-5/8\" 10,000 psi WP, Double Cavity, Sour Service (NACE MR0175)",
+      "make": "Cameron (SLB) - U pattern",
+      "images": [
+        {
+          "file": "ram-bop-cameron-u-1.jpg",
+          "kind": "render",
+          "match": "same type, different end/size",
+          "sourcePage": "https://www.slb.com/products-and-services/innovating-in-oil-and-gas/well-construction/rigs-and-equipment/pressure-control-equipment/ram-type-bops/u-ram-type-bop",
+          "imageUrl": "https://www.slb.com/-/media/images/cam-drlg/pressure-control/ram-type-bops/u-ram-type-combo.jpg"
+        }
+      ]
+    },
+    {
+      "sku": "IH-BOP-RAM-13-58-15K-DBL-HPHT-INDUS",
+      "title": "Ram BOP, Cameron UII Style, 13-5/8\" 15,000 psi WP, Double Cavity, HPHT + Sour Service (NACE MR0175)",
+      "make": "Cameron (SLB) - U pattern",
+      "images": [
+        {
+          "file": "ram-bop-cameron-u-1.jpg",
+          "kind": "render",
+          "match": "same type, different end/size",
+          "sourcePage": "https://www.slb.com/products-and-services/innovating-in-oil-and-gas/well-construction/rigs-and-equipment/pressure-control-equipment/ram-type-bops/u-ram-type-bop",
+          "imageUrl": "https://www.slb.com/-/media/images/cam-drlg/pressure-control/ram-type-bops/u-ram-type-combo.jpg"
+        }
+      ]
+    },
+    {
+      "sku": "IH-BOP-RAM-13-58-5K-DBL-T20-INDUS",
+      "title": "Ram BOP, Cameron U Style, 13-5/8\" 5,000 psi WP, Double Cavity, Sour Service (NACE MR0175)",
+      "make": "Cameron (SLB) - U pattern",
+      "images": [
+        {
+          "file": "ram-bop-cameron-u-1.jpg",
+          "kind": "render",
+          "match": "same type, different end/size",
+          "sourcePage": "https://www.slb.com/products-and-services/innovating-in-oil-and-gas/well-construction/rigs-and-equipment/pressure-control-equipment/ram-type-bops/u-ram-type-bop",
+          "imageUrl": "https://www.slb.com/-/media/images/cam-drlg/pressure-control/ram-type-bops/u-ram-type-combo.jpg"
+        }
+      ]
+    },
+    {
+      "sku": "IH-BOP-RAM-1834-15K-TRP-T20-INDUS",
+      "title": "Subsea Ram BOP, Cameron TL Style, 18-3/4\" 15,000 psi WP, Triple Cavity, Sour Service (NACE MR0175)",
+      "make": "Cameron (SLB) - TL pattern",
+      "images": [
+        {
+          "file": "ram-bop-cameron-tl-1.jpg",
+          "kind": "render",
+          "match": "same type, different end/size",
+          "sourcePage": "https://www.slb.com/products-and-services/innovating-in-oil-and-gas/well-construction/rigs-and-equipment/pressure-control-equipment/ram-type-bops/tl-ram-type-bop",
+          "imageUrl": "https://www.slb.com/-/media/images/cam-drlg/pressure-control/ram-type-bops/tl-ram-type-bop-combo.jpg"
+        }
+      ]
+    },
+    {
+      "sku": "IH-BOP-RAM-7-3K-DBL-T20-INDUS",
+      "title": "Workover Ram BOP, Cameron T-81 Style, 7-1/16\" 3,000 psi WP, Double Cavity, Sour Service (NACE MR0175)",
+      "make": "Cameron (SLB) - T-81 pattern",
+      "images": [
+        {
+          "file": "ram-bop-cameron-t81-1.jpg",
+          "kind": "render",
+          "match": "exact model",
+          "sourcePage": "https://www.slb.com/products-and-services/innovating-in-oil-and-gas/well-construction/rigs-and-equipment/pressure-control-equipment/ram-type-bops/t-81-ram-type-bop",
+          "imageUrl": "https://www.slb.com/-/media/images/cam-drlg/pressure-control/ram-type-bops/t-81-ram-type-bop-combo.jpg"
+        }
+      ]
+    },
+    {
+      "sku": "IH-BOP-RAM-7-5K-DBL-T20-INDUS",
+      "title": "Workover Ram BOP, Cameron T-81 Style, 7-1/16\" 5,000 psi WP, Double Cavity, Sour Service (NACE MR0175)",
+      "make": "Cameron (SLB) - T-81 pattern",
+      "images": [
+        {
+          "file": "ram-bop-cameron-t81-1.jpg",
+          "kind": "render",
+          "match": "exact model",
+          "sourcePage": "https://www.slb.com/products-and-services/innovating-in-oil-and-gas/well-construction/rigs-and-equipment/pressure-control-equipment/ram-type-bops/t-81-ram-type-bop",
+          "imageUrl": "https://www.slb.com/-/media/images/cam-drlg/pressure-control/ram-type-bops/t-81-ram-type-bop-combo.jpg"
+        }
+      ]
+    },
+    {
+      "sku": "IH-BOP-RB-BLIND-SHEAR-CAM-U-13-58-10K-INDUS",
+      "title": "Blind-Shear Ram Block Assembly, Cameron U Style 13-5/8\" 10K, Sour Service (NACE MR0175)",
+      "make": "Cameron (SLB) - U pattern rams",
+      "images": [
+        {
+          "file": "pipe-ram-cameron-1.jpg",
+          "kind": "render",
+          "match": "same type, different end/size",
+          "sourcePage": "https://www.slb.com/products-and-services/innovating-in-oil-and-gas/well-construction/rigs-and-equipment/pressure-control-equipment/bop-rams/pipe-rams",
+          "imageUrl": "https://www.slb.com/-/media/images/cam-drlg/pressure-control/bop-rams/pipe-rams-combo.jpg"
+        },
+        {
+          "file": "vbr-ram-cameron-1.jpg",
+          "kind": "render",
+          "match": "same type, different end/size",
+          "sourcePage": "https://www.slb.com/products-and-services/innovating-in-oil-and-gas/well-construction/rigs-and-equipment/pressure-control-equipment/bop-rams/variable-bore-rams",
+          "imageUrl": "https://www.slb.com/-/media/images/cam-drlg/pressure-control/bop-rams/variable-bore-ram-combo.jpg"
+        }
+      ]
+    },
+    {
+      "sku": "IH-BOP-RB-PIPE-CAM-U-11-10K-5DP-INDUS",
+      "title": "Pipe Ram Block Assembly, Cameron U Style 11\" 10K, for 5\" Drill Pipe, Sour Service (NACE MR0175)",
+      "make": "Cameron (SLB) - U pattern rams",
+      "images": [
+        {
+          "file": "pipe-ram-cameron-1.jpg",
+          "kind": "render",
+          "match": "same type, different end/size",
+          "sourcePage": "https://www.slb.com/products-and-services/innovating-in-oil-and-gas/well-construction/rigs-and-equipment/pressure-control-equipment/bop-rams/pipe-rams",
+          "imageUrl": "https://www.slb.com/-/media/images/cam-drlg/pressure-control/bop-rams/pipe-rams-combo.jpg"
+        },
+        {
+          "file": "vbr-ram-cameron-1.jpg",
+          "kind": "render",
+          "match": "same type, different end/size",
+          "sourcePage": "https://www.slb.com/products-and-services/innovating-in-oil-and-gas/well-construction/rigs-and-equipment/pressure-control-equipment/bop-rams/variable-bore-rams",
+          "imageUrl": "https://www.slb.com/-/media/images/cam-drlg/pressure-control/bop-rams/variable-bore-ram-combo.jpg"
+        }
+      ]
+    },
+    {
+      "sku": "IH-BOP-RB-PIPE-CAM-U-13-58-10K-5DP-INDUS",
+      "title": "Pipe Ram Block Assembly, Cameron U Style 13-5/8\" 10K, for 5\" Drill Pipe, Sour Service (NACE MR0175)",
+      "make": "Cameron (SLB) - U pattern rams",
+      "images": [
+        {
+          "file": "pipe-ram-cameron-1.jpg",
+          "kind": "render",
+          "match": "same type, different end/size",
+          "sourcePage": "https://www.slb.com/products-and-services/innovating-in-oil-and-gas/well-construction/rigs-and-equipment/pressure-control-equipment/bop-rams/pipe-rams",
+          "imageUrl": "https://www.slb.com/-/media/images/cam-drlg/pressure-control/bop-rams/pipe-rams-combo.jpg"
+        },
+        {
+          "file": "vbr-ram-cameron-1.jpg",
+          "kind": "render",
+          "match": "same type, different end/size",
+          "sourcePage": "https://www.slb.com/products-and-services/innovating-in-oil-and-gas/well-construction/rigs-and-equipment/pressure-control-equipment/bop-rams/variable-bore-rams",
+          "imageUrl": "https://www.slb.com/-/media/images/cam-drlg/pressure-control/bop-rams/variable-bore-ram-combo.jpg"
+        }
+      ]
+    },
+    {
+      "sku": "IH-BOP-RB-VBR-CAM-U-11-10K-3-5-INDUS",
+      "title": "Variable Bore Ram (VBR) Block Assembly, Cameron U Style 11\" 10K, 3-1/2\"–5\" Range, Sour Service (NACE MR0175)",
+      "make": "Cameron (SLB) - U pattern rams",
+      "images": [
+        {
+          "file": "pipe-ram-cameron-1.jpg",
+          "kind": "render",
+          "match": "same type, different end/size",
+          "sourcePage": "https://www.slb.com/products-and-services/innovating-in-oil-and-gas/well-construction/rigs-and-equipment/pressure-control-equipment/bop-rams/pipe-rams",
+          "imageUrl": "https://www.slb.com/-/media/images/cam-drlg/pressure-control/bop-rams/pipe-rams-combo.jpg"
+        },
+        {
+          "file": "vbr-ram-cameron-1.jpg",
+          "kind": "render",
+          "match": "same type, different end/size",
+          "sourcePage": "https://www.slb.com/products-and-services/innovating-in-oil-and-gas/well-construction/rigs-and-equipment/pressure-control-equipment/bop-rams/variable-bore-rams",
+          "imageUrl": "https://www.slb.com/-/media/images/cam-drlg/pressure-control/bop-rams/variable-bore-ram-combo.jpg"
+        }
+      ]
+    },
+    {
+      "sku": "IH-BOP-RB-VBR-CAM-U-13-58-10K-5-7-INDUS",
+      "title": "Variable Bore Ram (VBR) Block Assembly, Cameron U Style 13-5/8\" 10K, 5\"–7\" Range, Sour Service (NACE MR0175)",
+      "make": "Cameron (SLB) - U pattern rams",
+      "images": [
+        {
+          "file": "pipe-ram-cameron-1.jpg",
+          "kind": "render",
+          "match": "same type, different end/size",
+          "sourcePage": "https://www.slb.com/products-and-services/innovating-in-oil-and-gas/well-construction/rigs-and-equipment/pressure-control-equipment/bop-rams/pipe-rams",
+          "imageUrl": "https://www.slb.com/-/media/images/cam-drlg/pressure-control/bop-rams/pipe-rams-combo.jpg"
+        },
+        {
+          "file": "vbr-ram-cameron-1.jpg",
+          "kind": "render",
+          "match": "same type, different end/size",
+          "sourcePage": "https://www.slb.com/products-and-services/innovating-in-oil-and-gas/well-construction/rigs-and-equipment/pressure-control-equipment/bop-rams/variable-bore-rams",
+          "imageUrl": "https://www.slb.com/-/media/images/cam-drlg/pressure-control/bop-rams/variable-bore-ram-combo.jpg"
+        }
+      ]
+    },
+    {
+      "sku": "IH-BOP-RCD-5K-MPD-INDUS",
+      "title": "Rotating Control Device (RCD), 5,000 psi Class, Sour Service (NACE MR0175) — MPD Stack",
+      "make": "NOV - generic",
+      "images": [
+        {
+          "file": "rcd-nov-1-web.jpg",
+          "kind": "render",
+          "match": "same type, different end/size",
+          "sourcePage": "https://www.nov.com/products/land-rotating-control-device-rcd",
+          "imageUrl": "https://assets.nov.com/NCP4N68N/at/qv6j9shjbc2b97cmt3mch3/17-426-0000-GA-01_no_background.png"
+        }
+      ]
+    }
+  ]
+}
