@@ -1427,6 +1427,9 @@ model BlogPost {
   body           String // rich text
   heroId         String?
   hero           Media?     @relation(fields: [heroId], references: [id])
+  /// Reader-facing caption under the hero. Not `Media.caption`, which holds
+  /// internal provenance notes. See 202610082313_blog_hero_caption.sql.
+  heroCaption    String?
   authorStaffId  String?
   author         StaffUser? @relation(fields: [authorStaffId], references: [id])
   tags           Json       @default("[]") // string[]

@@ -48,6 +48,10 @@ export async function savePost(formData: FormData) {
   // FK rather than be dropped — hence null, not undefined.
   const heroRaw = (formData.get('heroId') as string | null) ?? ''
   const heroId = heroRaw.trim() ? heroRaw.trim() : null
+  // Caption under the hero. Empty clears it. Capped so a pasted paragraph
+  // cannot turn the figcaption into a second excerpt.
+  const heroCaptionRaw = ((formData.get('heroCaption') as string | null) ?? '').trim()
+  const heroCaption = heroCaptionRaw ? heroCaptionRaw.slice(0, 300) : null
 
   // Public byline — a BlogAuthor, not the staff user who pressed save.
   // `authorStaffId` still records who created the row; the two are different
@@ -94,6 +98,7 @@ export async function savePost(formData: FormData) {
     seoDescription,
     tags,
     heroId,
+    heroCaption,
     blogAuthorId,
     categoryId,
     bodyBlocks: blocks,

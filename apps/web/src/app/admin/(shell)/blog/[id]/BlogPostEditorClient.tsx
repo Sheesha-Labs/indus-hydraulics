@@ -50,6 +50,8 @@ type BlogPost = {
   heroId: string | null
   /** Hero Media storage path, so the picker can render a thumbnail. */
   heroStoragePath: string | null
+  /** Reader-facing caption under the hero. */
+  heroCaption: string | null
   /** Author's display name (for Article JSON-LD preview). */
   authorName: string | null
   /** Public byline FK — a BlogAuthor, editable from the Content tab. */
@@ -479,6 +481,22 @@ function ContentForm({
           emptyLabel="— No hero image —"
           hint="Shown at the top of the post and on the blog index card. Landscape, at least 1200px wide."
         />
+      </div>
+
+      <div>
+        <label htmlFor="blogpost-hero-caption" className="block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted mb-1.5">
+          Hero caption
+        </label>
+        <Input
+          id="blogpost-hero-caption"
+          name="heroCaption"
+          defaultValue={post?.heroCaption ?? ''}
+          type="text"
+          maxLength={300}
+          placeholder="One sentence under the hero image — what the reader should notice in it" />
+        <p className="mt-1.5 text-[12px] text-ih-muted">
+          Shown under the hero. Say why the picture is here; the image alt text already says what is in it.
+        </p>
       </div>
 
       <div>
