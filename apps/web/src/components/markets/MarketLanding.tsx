@@ -22,7 +22,7 @@ import type { MarketMapModel } from '../../lib/market-geometry'
 import type { PageContent } from '../../lib/page-content'
 import MarketCatalogueIndex, { type CatalogueCluster } from './MarketCatalogueIndex'
 import MarketFigure from './MarketFigure'
-import MarketIndustries, { type MarketBrand } from './MarketIndustries'
+import MarketIndustries, { type MarketBrand, type MarketSectorImage } from './MarketIndustries'
 import MarketMapPanel from './MarketMapPanel'
 import MarketQuickEnquiry from './MarketQuickEnquiry'
 import MarketQuoteForm from './MarketQuoteForm'
@@ -50,6 +50,7 @@ export default function MarketLanding({
   mapModel,
   clusters,
   brands,
+  sectorImages,
   contact,
   showAuditStrip,
   content,
@@ -59,6 +60,8 @@ export default function MarketLanding({
   mapModel: MarketMapModel | null
   clusters: CatalogueCluster[]
   brands: MarketBrand[]
+  /** Industry hero photographs for the sector cards, keyed by sector slug. */
+  sectorImages: Record<string, MarketSectorImage>
   contact: { phone: string | null; email: string | null; hours: string | null; whatsappUrl: string | null }
   /** The build-time audit strip. Staging only — see the docblock on it. */
   showAuditStrip: boolean
@@ -445,7 +448,12 @@ export default function MarketLanding({
 
     // 10. Industries + brands
     sectors: (
-      <MarketIndustries sectors={page.sectors} brands={brands} marketName={market.name} />
+      <MarketIndustries
+        sectors={page.sectors}
+        brands={brands}
+        marketName={market.name}
+        sectorImages={sectorImages}
+      />
     ),
 
     // 11. City gazetteer

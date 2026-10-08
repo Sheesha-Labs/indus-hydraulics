@@ -14,7 +14,11 @@ import MarketLanding from '../../../../components/markets/MarketLanding'
 import MarketLandingLegacy from '../../../../components/markets/MarketLandingLegacy'
 import { buildMarketMapModel } from '../../../../lib/market-geometry'
 import { getSubPageContent } from '../../../../lib/page-content'
-import { marketCatalogueClusters, marketStockedBrands } from '../../../../lib/market-catalogue'
+import {
+  marketCatalogueClusters,
+  marketSectorImages,
+  marketStockedBrands,
+} from '../../../../lib/market-catalogue'
 import { ORG_ID, SITE_NAME, pageMetadata, urlFor } from '../../../../lib/seo'
 import { getStoreSettings } from '../../../../lib/store-settings'
 import { showsReviewerAids } from '../../../../lib/app-env'
@@ -144,9 +148,10 @@ export default async function MarketPage({ params }: Props) {
     )
   }
 
-  const [clusters, brands, settings] = await Promise.all([
+  const [clusters, brands, sectorImages, settings] = await Promise.all([
     marketCatalogueClusters(),
     marketStockedBrands(),
+    marketSectorImages(),
     getStoreSettings(),
   ])
 
@@ -163,6 +168,7 @@ export default async function MarketPage({ params }: Props) {
         mapModel={mapModel}
         clusters={clusters}
         brands={brands}
+        sectorImages={sectorImages}
         contact={{
           phone: settings.contactPhone,
           email: settings.contactEmail,

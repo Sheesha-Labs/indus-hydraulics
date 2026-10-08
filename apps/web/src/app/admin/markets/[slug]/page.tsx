@@ -8,7 +8,11 @@ import {
 } from '@indus/domain'
 import { buildWhatsappHref } from '@indus/ui'
 import MarketLanding from '../../../../components/markets/MarketLanding'
-import { marketCatalogueClusters, marketStockedBrands } from '../../../../lib/market-catalogue'
+import {
+  marketCatalogueClusters,
+  marketSectorImages,
+  marketStockedBrands,
+} from '../../../../lib/market-catalogue'
 import { buildMarketMapModel } from '../../../../lib/market-geometry'
 import { getSubPageContentFresh } from '../../../../lib/page-content'
 import { requireStaff } from '../../../../lib/staff-session'
@@ -53,9 +57,10 @@ export default async function MarketDraftPreviewPage({ params }: Props) {
   const isReleased = releasedMarketPage(slug) !== undefined
   const pending = pendingMarketPageSlugs().length
 
-  const [clusters, brands, settings, content] = await Promise.all([
+  const [clusters, brands, sectorImages, settings, content] = await Promise.all([
     marketCatalogueClusters(),
     marketStockedBrands(),
+    marketSectorImages(),
     getStoreSettings(),
     // The uncached read, deliberately: this IS the review surface, so it has
     // to show the arrangement as it stands right now rather than whatever the
@@ -98,6 +103,7 @@ export default async function MarketDraftPreviewPage({ params }: Props) {
           mapModel={buildMarketMapModel(page, market.name)}
           clusters={clusters}
           brands={brands}
+          sectorImages={sectorImages}
           contact={{
             phone: settings.contactPhone,
             email: settings.contactEmail,
