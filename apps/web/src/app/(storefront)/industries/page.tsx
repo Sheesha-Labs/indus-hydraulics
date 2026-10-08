@@ -1,9 +1,11 @@
 import type { Metadata } from 'next'
 import { Fragment, type ReactNode } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { db } from '@indus/db'
 import { interpolate, list, str } from '@indus/domain'
 import { getIndustryList } from '../../../lib/industry-content'
+import { mediaUrl } from '../../../lib/media'
 import { getMasterPageContent } from '../../../lib/page-content'
 
 // A day, not five minutes: industry saves revalidate this path directly
@@ -112,12 +114,32 @@ export default async function IndustriesIndexPage({ params }: Props) {
               href={`/industries/${ind.slug}`}
               className="group flex flex-col overflow-hidden border border-ih-border hover:border-ih-accent transition-colors"
             >
-              {/* Dark hero band */}
+              {/* Dark hero band. With a hero photograph, the photo sits under a
+                  bottom-weighted scrim (the CaseHero figcaption treatment) so
+                  the white tagline, name and chips keep their contrast; without
+                  one, the band keeps its gradient. */}
               <div
-                className="px-7 py-8 flex min-h-[160px] flex-col gap-3 text-white"
+                className="relative isolate overflow-hidden px-7 py-8 flex min-h-[160px] flex-col gap-3 text-white"
                 style={{ background: ind.gradient ?? DEFAULT_GRADIENT }}
               >
-                <div className="font-mono text-[10px] tracking-[0.16em] opacity-60 uppercase">
+                {ind.heroImage && (
+                  <>
+                    <Image
+                      src={mediaUrl(ind.heroImage)}
+                      alt=""
+                      fill
+                      className="-z-20 object-cover transition-transform duration-300 group-hover:scale-[1.03] motion-reduce:transition-none motion-reduce:group-hover:scale-100"
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    />
+                    <div
+                      aria-hidden
+                      className="absolute inset-0 -z-10 bg-gradient-to-t from-[oklch(0_0_0/0.85)] via-[oklch(0_0_0/0.66)] to-[oklch(0_0_0/0.58)]"
+                    />
+                  </>
+                )}
+                <div
+                  className={`font-mono text-[10px] tracking-[0.16em] uppercase ${ind.heroImage ? 'opacity-80' : 'opacity-60'}`}
+                >
                   {ind.tagline ?? ''}
                 </div>
                 <h2 className="text-[22px] font-semibold tracking-[-0.015em] leading-tight">

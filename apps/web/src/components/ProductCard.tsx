@@ -19,6 +19,11 @@ type ProductCardProps = {
     }>
     specs: Array<{ label: string; value: string; unit?: string | null }>
   }
+  /**
+   * Shown when the product has no photograph of its own: the root category's
+   * studio shot, muted and tagged so it never passes for a photo of this part.
+   */
+  fallbackImage?: { src: string; categoryName: string } | null
 }
 
 /**
@@ -35,7 +40,7 @@ type ProductCardProps = {
  * resolved to "Quote on request", which was a stub for a field that must
  * never populate here.
  */
-export default function ProductCard({ product }: ProductCardProps) {
+export default function ProductCard({ product, fallbackImage }: ProductCardProps) {
   const image = product.images[0]
   const imgUrl = image ? mediaUrl(image.media.storagePath) : null
 
@@ -50,6 +55,8 @@ export default function ProductCard({ product }: ProductCardProps) {
             className="object-contain p-4"
             sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 25vw"
           />
+        ) : fallbackImage ? (
+          <CategoryFallbackImage src={fallbackImage.src} categoryName={fallbackImage.categoryName} />
         ) : (
           <div className="absolute inset-0 grid place-items-center px-4">
             <span className="text-center font-mono text-[10.5px] tracking-[0.02em] text-ih-muted">{product.sku}</span>
@@ -97,5 +104,27 @@ export default function ProductCard({ product }: ProductCardProps) {
         </div>
       </div>
     </div>
+  )
+}
+
+/**
+ * The no-photo state for a product tile: the category's studio shot, faded
+ * toward the surface colour, with a small mono tag naming it as a category
+ * image. Shared with the industry page's inline product tiles.
+ */
+export function CategoryFallbackImage({ src, categoryName }: { src: string; categoryName: string }) {
+  return (
+    <>
+      <Image
+        src={mediaUrl(src)}
+        alt=""
+        fill
+        className="object-cover opacity-45 grayscale-[35%]"
+        sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 25vw"
+      />
+      <span className="absolute bottom-2 left-2 max-w-[calc(100%-1rem)] truncate rounded-[3px] border border-ih-border bg-ih-surface px-1.5 py-0.5 font-mono text-[9.5px] uppercase tracking-[0.08em] text-ih-muted">
+        Category image · {categoryName}
+      </span>
+    </>
   )
 }
