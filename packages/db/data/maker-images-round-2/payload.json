@@ -1,0 +1,307 @@
+{
+  "imageDir": "~/Documents/Indus Supplier Research/Image Research",
+  "note": "Second pass, 2026-10-08: maker photos and renders for listings from authorised makers (Cameron/SLB, Stream-Flo, NOV/Anson, WOM, TechnipFMC, SPM) that the first pass (PR #469) left without an image. Same-type images only; files are paths under imageDir. Marketplace-hosted images (e.g. theofmp.com) excluded.",
+  "listings": [
+    {
+      "sku": "IH-OFV-PLUG-TE-2116-15M-15K-SOUR-CAMERON",
+      "title": "Plug Valve, Non-lubricated (TE), Manual, 2-1/16 in × 15M Flanged, 15,000 psi, Sour Service",
+      "make": "Cameron",
+      "images": [
+        {
+          "file": "Oilfield Valves/Cameron and Stream-Flo/plug-cameron-1.jpg",
+          "sourcePage": "https://www.slb.com/valves/plug-and-diverter-valves/general-valve-twin-seal-plug-valve"
+        }
+      ]
+    },
+    {
+      "sku": "IH-OFV-CHK-DART-2-1502FM-10K-SOUR-ANSON",
+      "title": "Dart Check Valve, 2 in × 1502 F×M, 10,000 psi, Sour Service",
+      "make": "Anson",
+      "images": [
+        {
+          "file": "Oilfield Valves/Anson and WOM/check-inline-anson-1.jpg",
+          "sourcePage": "https://nov.com/products/ultra-high-pressure-flowline-equipment"
+        }
+      ]
+    },
+    {
+      "sku": "IH-OFV-CHK-DART-3-1502FM-10K-SOUR-WOM",
+      "title": "Dart Check Valve, 3 in × 1502 F×M, 10,000 psi, Sour Service",
+      "make": "Worldwide Oilfield Machine",
+      "images": [
+        {
+          "file": "Oilfield Valves/Anson and WOM/check-inline-wom-1.jpg",
+          "sourcePage": "https://womgroup.com/product/flowline-equipment/"
+        }
+      ]
+    },
+    {
+      "sku": "IH-OFV-CHK-SWING-IL-2-1502FM-15K-STD-WOM",
+      "title": "Swing Check Valve, In-Line, 2 in × 1502 F×M, 15,000 psi, Standard Service",
+      "make": "Worldwide Oilfield Machine",
+      "images": [
+        {
+          "file": "Oilfield Valves/Anson and WOM/check-inline-wom-1.jpg",
+          "sourcePage": "https://womgroup.com/product/flowline-equipment/"
+        }
+      ]
+    },
+    {
+      "sku": "IH-OFV-CHK-TYPER-3116-10K-PSL1-STREAMFLO",
+      "title": "Type R Wafer Check Valve, 3-1/16 in × 10M Flanged, 10,000 psi, API 6A PSL 1 PR1, EE-P+U Sour",
+      "make": "Stream-Flo Industries",
+      "images": [
+        {
+          "file": "Oilfield Valves/Cameron and Stream-Flo/wafer-check-streamflo-1.jpg",
+          "sourcePage": "https://streamflo.com/valves/check-valves/"
+        }
+      ]
+    },
+    {
+      "sku": "IH-OFV-CHK-TYPER-3116-15K-PSL3-STREAMFLO",
+      "title": "Type R Wafer Check Valve, 3-1/16 in × 15M Flanged, 15,000 psi, API 6A PSL 3 PR1, EE-1.5",
+      "make": "Stream-Flo Industries",
+      "images": [
+        {
+          "file": "Oilfield Valves/Cameron and Stream-Flo/wafer-check-streamflo-1.jpg",
+          "sourcePage": "https://streamflo.com/valves/check-valves/"
+        }
+      ]
+    },
+    {
+      "sku": "IH-OFV-PLUG-TE-2-1502MF-10K-SOUR-ANSON",
+      "title": "Plug Valve, Non-lubricated (TE), Manual, 2 in × 1502 M×F, 10,000 psi, Sour Service",
+      "make": "Anson",
+      "images": [
+        {
+          "file": "Oilfield Valves/Anson and WOM/plug-anson-1.jpg",
+          "sourcePage": "https://nov.com/products/ultra-high-pressure-flowline-equipment"
+        }
+      ]
+    },
+    {
+      "sku": "IH-OFV-PLUG-TE-2-602MF-6K-SOUR-ANSON",
+      "title": "Plug Valve, Non-lubricated (TE), Manual, 2 in × 602 M×F, 6,000 psi, Sour Service",
+      "make": "Anson",
+      "images": [
+        {
+          "file": "Oilfield Valves/Anson and WOM/plug-anson-1.jpg",
+          "sourcePage": "https://nov.com/products/ultra-high-pressure-flowline-equipment"
+        }
+      ]
+    },
+    {
+      "sku": "IH-OFV-PLUG-TE-3-1502FM-10K-SOUR-WOM",
+      "title": "Plug Valve, Non-lubricated (TE), Gear-Operated, 3 in × 1502 F×M, 10,000 psi, Sour Service",
+      "make": "Worldwide Oilfield Machine",
+      "images": [
+        {
+          "file": "Oilfield Valves/Anson and WOM/plug-wom-2.jpg",
+          "sourcePage": "https://womgroup.com/product/plug-valve/"
+        }
+      ]
+    },
+    {
+      "sku": "IH-FI-CR-1502-MMMF-15K-STD-SPM",
+      "title": "Cross, 1502 Series 3M × 1F (with NPT Tap), 15,000 psi, Standard Service",
+      "make": "SPM Oil & Gas",
+      "images": [
+        {
+          "file": "Flow Iron and Wellhead/SPM Anson NOV Halliburton Forum/integral-fittings-spm-1.jpg",
+          "sourcePage": "https://web.archive.org/web/2024/https://www.spmoilandgas.com/en_US/products/new/spm-oil-and-gas/well-service-frac/flow-iron/113460.html"
+        }
+      ]
+    },
+    {
+      "sku": "IH-WH-XT-API-10K-FMC",
+      "title": "Christmas Tree, API 6BX 10K Conventional, Standard Service",
+      "make": "FMC Technologies",
+      "images": [
+        {
+          "file": "Flow Iron and Wellhead/FMC/christmas-tree-fmc-1.jpg",
+          "sourcePage": "https://www.technipfmc.com/en/what-we-do/surface/drillnow-unconventional/"
+        }
+      ]
+    },
+    {
+      "sku": "IH-WH-XT-FT-API-15K-FMC",
+      "title": "Frac Tree, API 6BX 15K (Frac Stimulation), Standard Service",
+      "make": "FMC Technologies",
+      "images": [
+        {
+          "file": "Flow Iron and Wellhead/FMC/frac-tree-fmc-1.jpg",
+          "sourcePage": "https://www.technipfmc.com/en/what-we-do/surface/icomplete-completions-integrated-system/"
+        }
+      ]
+    },
+    {
+      "sku": "IH-FI-PJ-1502-FM-INT-15K-STD-SPM",
+      "title": "Pup Joint, 1502 Series F×M Integral, 15,000 psi, Standard Service",
+      "make": "SPM Oil & Gas",
+      "images": [
+        {
+          "file": "Round 2/jpg/pup-joint-integral-1502-spm-1.jpg",
+          "sourcePage": "https://www.spmoilandgas.com/en_US/consumables/spm-consumables.html"
+        }
+      ]
+    },
+    {
+      "sku": "IH-FI-WY-1502-L-MFM-15K-STD-ANSON",
+      "title": "Wye Lateral, 1502 Series M × F × M, 15,000 psi, Standard Service",
+      "make": "Anson",
+      "images": [
+        {
+          "file": "Round 2/jpg/wye-lateral-anson-1.jpg",
+          "sourcePage": "https://assets.nov.com/NCP4N68N/at/qcrf3m75k4kg9b7x5p8tqc3p/ISE_WellTestingBrochure_ENG_v02.pdf"
+        }
+      ]
+    },
+    {
+      "sku": "IH-OFV-CHOKE-POS-FC140-2-1502FM-10K-SOUR-SPM",
+      "title": "Positive Choke, FC-140 Trim, 2 in × 1502 F×M, 3/4 in Max Bean, 10,000 psi, Sour Service, No Cap",
+      "make": "SPM Oil & Gas",
+      "images": [
+        {
+          "file": "Round 2/jpg/positive-choke-spm-1.jpg",
+          "sourcePage": "https://www.spmoilandgas.com/en_US/consumables/spm-consumables.html"
+        }
+      ]
+    },
+    {
+      "sku": "IH-OFV-CHOKE-POS-FC140-2-1502FM-15K-STD-SPM",
+      "title": "Positive Choke, FC-140 Trim, 2 in × 1502 F×M, 3/4 in Max Bean, 15,000 psi, Standard, 9/16 in Autoclave, No Cap",
+      "make": "SPM Oil & Gas",
+      "images": [
+        {
+          "file": "Round 2/jpg/positive-choke-spm-1.jpg",
+          "sourcePage": "https://www.spmoilandgas.com/en_US/consumables/spm-consumables.html"
+        }
+      ]
+    },
+    {
+      "sku": "IH-OFV-INST-GAUGE-12-NPT-10K-CAMERON",
+      "title": "Gauge Isolation Valve, Single-Block, 1/2 in NPT × 1/2 in NPT, 10,000 psi, Standard Service",
+      "make": "Cameron",
+      "images": [
+        {
+          "file": "Round 2/Cameron StreamFlo NOV/needle-valve-cameron-1.jpg",
+          "sourcePage": "https://www.slb.com/valves/choke-valves/aop-valve-and-choke-technologies"
+        }
+      ]
+    },
+    {
+      "sku": "IH-OFV-INST-NEEDLE-12-NPT-10K-SOUR-CAMERON-CS",
+      "title": "Needle Valve, 1/2 in NPT, 10,000 psi, Sour Service, Carbon Steel Body, -50/+250°F",
+      "make": "Cameron",
+      "images": [
+        {
+          "file": "Round 2/Cameron StreamFlo NOV/needle-valve-cameron-1.jpg",
+          "sourcePage": "https://www.slb.com/valves/choke-valves/aop-valve-and-choke-technologies"
+        }
+      ]
+    },
+    {
+      "sku": "IH-OFV-INST-NEEDLE-12-NPT-10K-SOUR-CAMERON-SS",
+      "title": "Needle Valve, 1/2 in NPT, 10,000 psi, Sour Service, 316SS Body, -50/+250°F",
+      "make": "Cameron",
+      "images": [
+        {
+          "file": "Round 2/Cameron StreamFlo NOV/needle-valve-cameron-1.jpg",
+          "sourcePage": "https://www.slb.com/valves/choke-valves/aop-valve-and-choke-technologies"
+        }
+      ]
+    },
+    {
+      "sku": "IH-WH-TH-API-15K-NOV",
+      "title": "Tubing Head, API 6BX 15K, Standard Service",
+      "make": "National Oilwell Varco",
+      "images": [
+        {
+          "file": "Round 2/Cameron StreamFlo NOV/tubing-head-nov-1.jpg",
+          "sourcePage": "https://www.nov.com/products/hercules-hp-universal-wellhead"
+        }
+      ]
+    },
+    {
+      "sku": "IH-FI-MN-CK-D-1502-15K-STD-FMC",
+      "title": "Choke Manifold, Dual-Stage 1502, 15,000 psi, Standard Service",
+      "make": "FMC Technologies",
+      "images": [
+        {
+          "file": "Round 2/jpg/choke-manifold-fmc-1.jpg",
+          "sourcePage": "https://www.technipfmc.com/media/3sfjqq1z/200-series-choke-valves.pdf"
+        }
+      ]
+    },
+    {
+      "sku": "IH-OFV-GATE-3116-10K-HYD-FC-FMC",
+      "title": "Hydraulic Gate Valve, Fail Close, 3-1/16 in × 10M Flanged, 10,000 psi, API 6A PSL 3 PR1, EE-1.5",
+      "make": "FMC Technologies",
+      "images": [
+        {
+          "file": "Round 2/jpg/hydraulic-gate-valve-fmc-1.jpg",
+          "sourcePage": "https://web.archive.org/web/2017id_/http://www.fmctechnologies.com/~/media/SeparationTechnologies/SurfaceWellhead/Brochures/FMC%20Hydraulic%20Actuators.ashx"
+        }
+      ]
+    },
+    {
+      "sku": "IH-OFV-GATE-318-5K-HYD-FC-FMC",
+      "title": "Hydraulic Gate Valve, Fail Close, 3-1/8 in × 5M Flanged, 5,000 psi, API 6A PSL 2 PR2, EE-0.5",
+      "make": "FMC Technologies",
+      "images": [
+        {
+          "file": "Round 2/jpg/hydraulic-gate-valve-fmc-2.jpg",
+          "sourcePage": "https://web.archive.org/web/2017id_/http://www.fmctechnologies.com/~/media/SeparationTechnologies/SurfaceWellhead/Brochures/FMC%20Hydraulic%20Actuators.ashx"
+        }
+      ]
+    },
+    {
+      "sku": "IH-OFV-SSV-3116-15K-FE-FMC",
+      "title": "Surface Safety Valve, Hydraulic SAH, 3-1/16 in × 15M Flanged Each (FE), 15,000 psi, API 6A PSL 3 SSV Class II, EE-HF",
+      "make": "FMC Technologies",
+      "images": [
+        {
+          "file": "Round 2/jpg/hydraulic-gate-valve-fmc-1.jpg",
+          "sourcePage": "https://web.archive.org/web/2017id_/http://www.fmctechnologies.com/~/media/SeparationTechnologies/SurfaceWellhead/Brochures/FMC%20Hydraulic%20Actuators.ashx"
+        }
+      ]
+    },
+    {
+      "sku": "IH-FI-SJ-1502-S40-REEL-15K-STD-FMC",
+      "title": "Reel Swivel, 1502 Style 40 (2-Axis Reel), 15,000 psi, Standard Service",
+      "make": "FMC Technologies",
+      "images": [
+        {
+          "file": "Round 2/jpg/reel-swivel-fmc-1.jpg",
+          "sourcePage": "https://www.technipfmc.com/media/3b4dxhg1/si015-catalog_flowline_digital_rev3.pdf"
+        }
+      ]
+    },
+    {
+      "sku": "IH-FI-SS-1502-MF-15K-STD-FMC",
+      "title": "Spacer Spool, 1502 Series M×F, 15,000 psi, Standard Service",
+      "make": "FMC Technologies",
+      "images": [
+        {
+          "file": "Round 2/jpg/spacer-spool-fmc-1.jpg",
+          "sourcePage": "https://www.technipfmc.com/media/3b4dxhg1/si015-catalog_flowline_digital_rev3.pdf"
+        }
+      ]
+    },
+    {
+      "sku": "IH-WH-MTH-API-10K-FMC",
+      "title": "Mandrel Tubing Hanger, API 6A 10K, Standard Service",
+      "make": "FMC Technologies",
+      "images": [
+        {
+          "file": "Round 2/jpg/tubing-hanger-fmc-1.jpg",
+          "sourcePage": "https://www.technipfmc.com/media/4r2nnq1o/conventional-wellhead-brochure_digital.pdf"
+        },
+        {
+          "file": "Round 2/FMC/tubing-hanger-fmc-2.jpg",
+          "sourcePage": "https://web.archive.org/web/2017/http://fmctechnologies.com/"
+        }
+      ]
+    }
+  ]
+}
