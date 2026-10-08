@@ -18,6 +18,7 @@ import { mediaUrl } from '../../../../lib/media'
 import { ORG_ID, SITE_NAME, pageMetadata, urlFor } from '../../../../lib/seo'
 import { getIndustryBySlug } from '../../../../lib/industry-content'
 import { getStoreSettings } from '../../../../lib/store-settings'
+import { CategoryFallbackImage } from '../../../../components/ProductCard'
 
 /**
  * TWO LAYOUTS, ONE ROUTE — the same split `/markets/[slug]` uses.
@@ -42,6 +43,33 @@ const FOUNDING_YEAR = 2003
 // The per-industry hero gradient and its chip tint are gone with the dark
 // hero band — see the note on the hero section below. `Industry.gradient`
 // remains in the schema; retiring the column is a data change of its own.
+
+/** Category plus two ancestors — enough to reach a root from any shelf today. */
+const CATEGORY_IMAGE_CHAIN = {
+  name: true,
+  image: { select: { storagePath: true } },
+  parent: {
+    select: {
+      name: true,
+      image: { select: { storagePath: true } },
+      parent: { select: { name: true, image: { select: { storagePath: true } } } },
+    },
+  },
+} as const
+
+type CategoryImageNode = {
+  name: string
+  image: { storagePath: string } | null
+  parent?: CategoryImageNode | null
+} | null
+
+/** The nearest category up the chain that has a card image. */
+function nearestCategoryImage(node: CategoryImageNode): { src: string; categoryName: string } | null {
+  for (let n = node; n; n = n.parent ?? null) {
+    if (n.image) return { src: n.image.storagePath, categoryName: n.name }
+  }
+  return null
+}
 
 type Props = {
   params: Promise<{ slug: string }>
@@ -101,6 +129,7 @@ export default async function IndustryPage({ params }: Props) {
         include: {
           brand: { select: { name: true, slug: true } },
           images: { orderBy: { position: 'asc' }, take: 1, include: { media: true } },
+          category: { select: CATEGORY_IMAGE_CHAIN },
         },
         take: 8,
       })
@@ -120,6 +149,7 @@ export default async function IndustryPage({ params }: Props) {
         include: {
           brand: { select: { name: true, slug: true } },
           images: { orderBy: { position: 'asc' }, take: 1, include: { media: true } },
+          category: { select: CATEGORY_IMAGE_CHAIN },
         },
         take: 8,
         orderBy: { updatedAt: 'desc' },
@@ -255,6 +285,7 @@ export default async function IndustryPage({ params }: Props) {
           <div className="grid grid-cols-4 gap-3">
             {featuredProducts.map((product) => {
               const img = product.images[0]
+              const fallback = img ? null : nearestCategoryImage(product.category)
               return (
                 <Link
                   key={product.id}
@@ -270,6 +301,8 @@ export default async function IndustryPage({ params }: Props) {
                         className="object-contain p-3"
                         sizes="(max-width: 1360px) 25vw, 320px"
                       />
+                    ) : fallback ? (
+                      <CategoryFallbackImage src={fallback.src} categoryName={fallback.categoryName} />
                     ) : (
                       <div className="text-ih-muted absolute inset-0 grid place-items-center font-mono text-[10px]">
                         IMG
@@ -375,10 +408,20 @@ export default async function IndustryPage({ params }: Props) {
                 {ind.supportBlock.cta}
               </Link>
             </div>
-            <div className="bg-ih-surface-2 border-ih-border grid aspect-[4/3] place-items-center border">
-              <span className="text-ih-muted font-mono text-[11px]">
-                {ind.name.toUpperCase()} SERVICE TEAM
-              </span>
+            <div className="bg-ih-surface-2 border-ih-border relative grid aspect-[4/3] place-items-center overflow-hidden border">
+              {ind.supportBlock.image ? (
+                <Image
+                  src={mediaUrl(ind.supportBlock.image)}
+                  alt={ind.supportBlock.imageAlt ?? ''}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 1440px) 50vw, 680px"
+                />
+              ) : (
+                <span className="text-ih-muted font-mono text-[11px]">
+                  {ind.name.toUpperCase()} SERVICE TEAM
+                </span>
+              )}
             </div>
           </div>
         </section>

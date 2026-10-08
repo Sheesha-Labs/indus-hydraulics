@@ -1,6 +1,6 @@
 /**
- * Give every published industry page a hero photograph, and every published
- * case study on those pages a card image.
+ * Give every published industry page a hero photograph, a support-panel
+ * image, and every published case study on those pages a card image.
  *
  * All six database-driven industry pages (`/industries/<slug>`) shipped with
  * `heroId = null`, so the 4:3 frame beside the H1 rendered the industry name on
@@ -28,8 +28,13 @@
  *   pnpm --filter @indus/db exec tsx src/scripts/attach-industry-images.ts \
  *     --dir "/path/to/folder" [--dry-run]
  *
- * The folder holds `<slug>.jpg` for each hero and `<slug>-case-<n>.jpg` for
- * each case study.
+ * The folder holds `<slug>.jpg` for each hero, `<slug>-case-<n>.jpg` for
+ * each case study and `<slug>-support.jpg` for each support panel.
+ *
+ * Support panels (added 2026-10-08) have no Media relation: the image is the
+ * `image` / `imageAlt` keys inside the `supportBlock` JSON, which is what the
+ * admin SupportBlockEditor edits. The run merges those two keys into the
+ * existing JSON and leaves every other key as it was.
  */
 import { existsSync, readFileSync, readdirSync } from 'node:fs'
 import { join, resolve } from 'node:path'
@@ -78,6 +83,16 @@ const CASES: readonly { slug: string; n: number; title: string; alt: string }[] 
   { slug: 'power', n: 1, title: 'Salal hydro — Kaplan runner blade controls', alt: 'A technician at an open turbine governor hydraulic cabinet in a hydroelectric generator hall' },
   { slug: 'power', n: 2, title: 'Rojmal wind farm — pitch HPU overhaul', alt: 'A service technician standing on a wind turbine nacelle at sunrise above a wind farm' },
   { slug: 'power', n: 3, title: 'Panchet dam — radial gate operators', alt: 'A crane on a dam crest lifting a hydraulic gate cylinder into place beside radial spillway gates' },
+] as const
+
+/** 4:3 panel beside each page's support block — 1600×1200 JPEG. */
+const SUPPORT: readonly { slug: string; alt: string }[] = [
+  { slug: 'oil-gas', alt: 'Two service engineers in coveralls unloading a crate of spare valves and actuators from a pickup at an oil and gas facility' },
+  { slug: 'mining', alt: 'A technician fitting an exchange hydraulic pump to a haul truck in a mine workshop, a colleague handing him a spanner' },
+  { slug: 'marine', alt: 'Two service engineers carrying tool bags and a crate of spares up the gangway of a supply vessel at a port quay' },
+  { slug: 'steel', alt: 'An engineer testing a servo valve on a portable test bench with a laptop beside a rolling mill during a shutdown' },
+  { slug: 'construction', alt: 'A technician handing a replacement hydraulic pump from a service van to an excavator operator on a construction site' },
+  { slug: 'power', alt: 'An engineer with a tablet checking the gauges of a turbine governor hydraulic power unit in a power station' },
 ] as const
 
 /** Loads the Supabase storage credentials, which only live in the web app's env file. */
@@ -249,6 +264,52 @@ async function main() {
         await t.industryCaseStudy.update({ where: { id: row.id }, data: { imageId: media.id } })
       }, tx)
       console.log(`case ${file} -> ${cs.title}`)
+    }
+    attached++
+  }
+
+  for (const sp of SUPPORT) {
+    const file = `${sp.slug}-support.jpg`
+    if (!onDisk.has(file)) {
+      problems.push(`${sp.slug} support: ${file} missing from ${dir}`)
+      continue
+    }
+    const ind = await db.industry.findUnique({
+      where: { slug: sp.slug },
+      select: { id: true, name: true, supportBlock: true },
+    })
+    const block = ind?.supportBlock
+    if (!ind || !block || typeof block !== 'object' || Array.isArray(block)) {
+      problems.push(`${sp.slug} support: no industry, or it has no support block`)
+      continue
+    }
+    const current = (block as Record<string, unknown>).image
+    const publicUrl = sb.storage.from(BUCKET).getPublicUrl(`support/${file}`).data.publicUrl
+    if (current === publicUrl) {
+      alreadyPresent++
+      continue
+    }
+    if (typeof current === 'string' && current.trim()) {
+      problems.push(`${sp.slug} support: already has a different image (${current}) — left alone`)
+      continue
+    }
+    const up = await upload(sb, dir, file, `support/${file}`, sp.alt, dryRun)
+    if ('error' in up) {
+      problems.push(`${sp.slug} support: ${up.error}`)
+      continue
+    }
+    if (dryRun) {
+      console.log(`[dry-run] support ${file} (${up.size?.width}×${up.size?.height}) -> ${ind.name}`)
+    } else {
+      // A Media row too, so the file shows in the admin media library.
+      await db.$transaction(async (t) => {
+        await t.media.create({ data: up.media, select: { id: true } })
+        await t.industry.update({
+          where: { id: ind.id },
+          data: { supportBlock: { ...(block as Record<string, unknown>), image: publicUrl, imageAlt: sp.alt } },
+        })
+      }, tx)
+      console.log(`support ${file} -> ${ind.name}`)
     }
     attached++
   }

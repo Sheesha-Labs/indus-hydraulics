@@ -1,0 +1,315 @@
+{
+ "source": "TopOne Chain catalogue export 2026-10-04, batch 4 (fishing, wire rope, blocks). Only the one family not already on the live site, checked against the live database on 2026-10-08. Built by scratchpad b4/build.py.",
+ "imageDir": "/Users/ayushkbhatia/Documents/Indus Supplier Research/Source Exports/TopOne Chain/topone-b4-jpeg",
+ "specTemplate": {
+  "slug": "lifting-rigging-spec",
+  "name": "Lifting & Rigging",
+  "description": "Rigging hardware, chain, wire rope, slings and hoists: pattern, size range, working load limit, material and finish.",
+  "position": 30,
+  "fields": [
+   {
+    "key": "product_type",
+    "label": "Product type",
+    "dataType": "text",
+    "group": "Identification",
+    "isRequired": false,
+    "isKeyFeature": true,
+    "isQuickSpec": false,
+    "position": 0
+   },
+   {
+    "key": "pattern_standard",
+    "label": "Pattern / standard",
+    "dataType": "text",
+    "group": "Identification",
+    "isRequired": false,
+    "isKeyFeature": true,
+    "isQuickSpec": false,
+    "position": 1
+   },
+   {
+    "key": "size_range",
+    "label": "Size range",
+    "dataType": "text",
+    "group": "Dimensions",
+    "isRequired": false,
+    "isKeyFeature": true,
+    "isQuickSpec": true,
+    "position": 2
+   },
+   {
+    "key": "wll_range",
+    "label": "Working load limit",
+    "dataType": "text",
+    "group": "Performance",
+    "isRequired": false,
+    "isKeyFeature": true,
+    "isQuickSpec": true,
+    "position": 3
+   },
+   {
+    "key": "breaking_load_range",
+    "label": "Minimum breaking load",
+    "dataType": "text",
+    "group": "Performance",
+    "isRequired": false,
+    "isKeyFeature": false,
+    "isQuickSpec": false,
+    "position": 4
+   },
+   {
+    "key": "material",
+    "label": "Material",
+    "dataType": "text",
+    "group": "Construction",
+    "isRequired": false,
+    "isKeyFeature": false,
+    "isQuickSpec": true,
+    "position": 5
+   },
+   {
+    "key": "finish",
+    "label": "Finish",
+    "dataType": "text",
+    "group": "Construction",
+    "isRequired": false,
+    "isKeyFeature": false,
+    "isQuickSpec": true,
+    "position": 6
+   },
+   {
+    "key": "sizes_count",
+    "label": "Sizes",
+    "dataType": "text",
+    "group": "Identification",
+    "isRequired": false,
+    "isKeyFeature": false,
+    "isQuickSpec": false,
+    "position": 7
+   },
+   {
+    "key": "certification",
+    "label": "Certification",
+    "dataType": "text",
+    "group": "Compliance",
+    "isRequired": false,
+    "isKeyFeature": false,
+    "isQuickSpec": false,
+    "position": 8
+   }
+  ]
+ },
+ "categories": [
+  {
+   "slug": "snatch-blocks-pulleys",
+   "name": "Snatch Blocks & Pulleys",
+   "parentSlug": "hoists-blocks-clamps",
+   "position": 4,
+   "shortDescription": "Snatch blocks, champion and super-champion blocks, steel, malleable-iron, wooden and stainless pulley blocks, gin wheels and die-cast pulleys, each size under its own Indus part number.",
+   "seoTitle": "Snatch Blocks & Pulley Blocks",
+   "seoDescription": "Snatch blocks with hook, shackle or eye, 418, 419, 404, 408 and 409 pattern blocks, single and double sheave pulley blocks, die-cast pulleys.",
+   "focusKeyword": "snatch block"
+  }
+ ],
+ "products": [
+  {
+   "sku": "IH-LR-BP-SBSWH",
+   "slug": "snatch-block-with-swivel-hook-metric",
+   "title": "Snatch Block with Swivel Hook — Metric, 0.5 to 5 t",
+   "category": "snatch-blocks-pulleys",
+   "focusKeyword": "snatch block with swivel hook",
+   "descriptionShort": "Snatch Block with Swivel Hook, metric, 5 sizes, 0.5 t to 5 t, for wire rope 6 to 18 mm. Indus part numbers, manufacturer's test certificate.",
+   "descriptionLong": "<p>Single-sheave snatch block for steel wire rope, with a hinged side plate that opens so the rope can be laid in over the sheave without threading the end, and a forged swivel hook with a safety latch. Five capacities from 0.5 t to 5 t, each matched to a wire rope diameter range.</p><h3>Sizes and ratings</h3><p>5 sizes, 0.5 t to 5 t. Working load limit 0.5 to 5 t. Every size has its own Indus part number in the table below, with the wire rope diameters it takes. The lettered dimensions refer to the dimension drawing in the gallery.</p><h3>Choosing a size</h3><p>Choose by working load limit and by the rope diameter. The load on a snatch block is not the load on the rope: when the rope turns through the block, the block carries the resultant of both rope parts, up to twice the line pull at a 180° turn. Size the block for that resultant, and keep the side plate closed and locked before the rope is loaded.</p><h3>Ordering</h3><p>Quote the Indus part number from the size table, or send the load and the rope diameter. Each consignment ships with the manufacturer's test certificate; say on the RFQ if your site needs anything more.</p>",
+   "seoTitle": "Snatch Block with Swivel Hook — 0.5 to 5 t, Metric",
+   "seoDescription": "Snatch block with swivel hook and opening side plate: 5 sizes, 0.5 to 5 t, wire rope 6 to 18 mm. Indus part numbers and test certificate. Request a quote.",
+   "faqs": [
+    {
+     "question": "What sizes does the snatch block with swivel hook come in?",
+     "answer": "5 sizes, 0.5 t to 5 t, for wire rope from 6 mm to 18 mm. The size table lists each with its Indus part number, rope range and dimensions."
+    },
+    {
+     "question": "How much load does a snatch block carry?",
+     "answer": "More than the rope pull. The block carries the resultant of the two rope parts, which reaches twice the line pull when the rope turns through 180° and is about 1.4 times at 90°. Choose the block on that resultant, not on the line pull."
+    },
+    {
+     "question": "What is the working load limit?",
+     "answer": "0.5 to 5 t, depending on size, as the manufacturer rates it. The WLL is the most the block may carry in service; proof and breaking loads are test figures and never working limits."
+    },
+    {
+     "question": "Do the parts come with a test certificate?",
+     "answer": "Yes. Each consignment ships with the manufacturer's test certificate. For third-party certification or witnessed proof testing, say so on the RFQ."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Product type",
+     "value": "Snatch block, single sheave, swivel hook",
+     "unit": null,
+     "position": 0,
+     "isFilterable": false,
+     "templateKey": "product_type"
+    },
+    {
+     "group": "Identification",
+     "label": "Pattern / standard",
+     "value": "Metric snatch block; ASME B30.26 as a reference for rigging blocks",
+     "unit": null,
+     "position": 1,
+     "isFilterable": false,
+     "templateKey": "pattern_standard"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Size range",
+     "value": "0.5 t to 5 t; wire rope 6 to 18 mm",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "size_range"
+    },
+    {
+     "group": "Performance",
+     "label": "Working load limit",
+     "value": "0.5 to 5 t",
+     "unit": null,
+     "position": 3,
+     "isFilterable": true,
+     "templateKey": "wll_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "Steel side plates, forged swivel hook with latch",
+     "unit": null,
+     "position": 4,
+     "isFilterable": true,
+     "templateKey": "material"
+    },
+    {
+     "group": "Construction",
+     "label": "Finish",
+     "value": "Painted",
+     "unit": null,
+     "position": 5,
+     "isFilterable": true,
+     "templateKey": "finish"
+    },
+    {
+     "group": "Identification",
+     "label": "Sizes",
+     "value": "5",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "sizes_count"
+    },
+    {
+     "group": "Compliance",
+     "label": "Certification",
+     "value": "Manufacturer's test certificate",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": "certification"
+    }
+   ],
+   "searchAliases": [
+    "snatch block",
+    "swivel hook snatch block",
+    "snatch block with hook",
+    "wire rope snatch block",
+    "opening side block",
+    "single sheave snatch block"
+   ],
+   "images": [
+    {
+     "file": "ih-lr-bp-sbswh-photo-1.jpg",
+     "alt": "Snatch block with swivel hook, metric"
+    },
+    {
+     "file": "ih-lr-bp-sbswh-drawing-2.jpg",
+     "alt": "Snatch block with swivel hook, metric — dimension drawing"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-LR-BP-SBSWH-0P5T",
+     "position": 0,
+     "dimensions": {
+      "size": "0.5 t",
+      "wllT": 0.5,
+      "ropeSize": "6–8 mm",
+      "A": 255.0,
+      "B": 95.0,
+      "C": 61.0,
+      "D": 27.0,
+      "E": 23.0,
+      "F": 30.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-BP-SBSWH-1T",
+     "position": 1,
+     "dimensions": {
+      "size": "1 t",
+      "wllT": 1.0,
+      "ropeSize": "8–11 mm",
+      "A": 320.0,
+      "B": 120.0,
+      "C": 68.0,
+      "D": 35.0,
+      "E": 33.0,
+      "F": 33.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-BP-SBSWH-2T",
+     "position": 2,
+     "dimensions": {
+      "size": "2 t",
+      "wllT": 2.0,
+      "ropeSize": "11–14 mm",
+      "A": 385.0,
+      "B": 150.0,
+      "C": 85.0,
+      "D": 44.0,
+      "E": 40.0,
+      "F": 37.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-BP-SBSWH-3P2T",
+     "position": 3,
+     "dimensions": {
+      "size": "3.2 t",
+      "wllT": 3.2,
+      "ropeSize": "12–15 mm",
+      "A": 475.0,
+      "B": 180.0,
+      "C": 92.0,
+      "D": 54.0,
+      "E": 45.0,
+      "F": 47.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-BP-SBSWH-5T",
+     "position": 4,
+     "dimensions": {
+      "size": "5 t",
+      "wllT": 5.0,
+      "ropeSize": "15–18 mm",
+      "A": 580.0,
+      "B": 215.0,
+      "C": 110.0,
+      "D": 63.0,
+      "E": 53.0,
+      "F": 55.0
+     }
+    }
+   ],
+   "crossReferences": []
+  }
+ ]
+}

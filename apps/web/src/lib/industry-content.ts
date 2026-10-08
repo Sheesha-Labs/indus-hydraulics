@@ -32,6 +32,9 @@ export type IndustrySupportBlock = {
   description: string
   bullets: string[]
   cta: string
+  /** Public image URL for the 4:3 panel beside the copy. Absent → text placeholder. */
+  image: string | null
+  imageAlt: string | null
 }
 
 export type IndustryCaseStudy = {
@@ -53,6 +56,8 @@ export type IndustryListItem = {
   gradient: string | null
   chips: string[]
   position: number
+  /** Public image URL for the index card — the page's hero photograph. */
+  heroImage: string | null
 }
 
 export type IndustryDetail = IndustryListItem & {
@@ -112,6 +117,8 @@ function asSupportBlock(v: unknown): IndustrySupportBlock | null {
     description: typeof o.description === 'string' ? o.description : '',
     bullets: asStringArray(o.bullets),
     cta: typeof o.cta === 'string' ? o.cta : '',
+    image: typeof o.image === 'string' && o.image.trim() ? o.image.trim() : null,
+    imageAlt: typeof o.imageAlt === 'string' && o.imageAlt.trim() ? o.imageAlt.trim() : null,
   }
 }
 
@@ -131,6 +138,7 @@ const loadIndustryList = unstable_cache(
         gradient: true,
         chips: true,
         position: true,
+        hero: { select: { storagePath: true } },
       },
     })
     return rows.map((r) => ({
@@ -142,9 +150,11 @@ const loadIndustryList = unstable_cache(
       gradient: r.gradient,
       chips: asStringArray(r.chips),
       position: r.position,
+      heroImage: r.hero?.storagePath ?? null,
     }))
   },
-  ['industries-list'],
+  // v2: rows gained `heroImage` (2026-10-08).
+  ['industries-list-v2'],
   { revalidate: 3600, tags: ['industries'] },
 )
 
@@ -172,6 +182,7 @@ function designedIndustryCards(): IndustryListItem[] {
     gradient: null,
     chips: [...page.card.chips],
     position: -DESIGNED_INDUSTRY_PAGES.length + i,
+    heroImage: page.hero.image.src,
   }))
 }
 
@@ -210,6 +221,7 @@ const loadIndustryBySlug = unstable_cache(
       seoDescription: ind.seoDescription,
       canonicalUrl: ind.canonicalUrl,
       ogImageStoragePath: ind.hero?.storagePath ?? null,
+      heroImage: ind.hero?.storagePath ?? null,
       robotsIndex: ind.robotsIndex,
       robotsFollow: ind.robotsFollow,
       caseStudies: ind.caseStudies.map((c) => ({
@@ -223,7 +235,8 @@ const loadIndustryBySlug = unstable_cache(
       })),
     }
   },
-  ['industry-detail'],
+  // v2: `supportBlock` gained `image` / `imageAlt` (2026-10-08).
+  ['industry-detail-v2'],
   { revalidate: 3600, tags: ['industries'] },
 )
 

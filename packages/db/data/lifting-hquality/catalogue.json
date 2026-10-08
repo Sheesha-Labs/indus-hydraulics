@@ -24474,7 +24474,11 @@
     "marine anchor",
     "ship anchor",
     "HY-14",
-    "HY14"
+    "HY14",
+    "AC-14",
+    "AC14",
+    "AC-14 anchor",
+    "AC-14 HHP anchor"
    ],
    "images": [
     {
@@ -48114,18 +48118,18 @@
    "title": "Large Bow Shackle — European Type",
    "category": "shackles",
    "focusKeyword": "large bow shackle",
-   "descriptionShort": "Large Bow Shackle, in 10 sizes, 5 mm to 28 mm, WLL 80 to 3,000 kg. Indus part numbers, manufacturer's test certificate.",
-   "descriptionLong": "<p>A shackle joins a sling, hook or chain to a lifting point and opens with a removable pin.</p><h3>Sizes and ratings</h3><p>10 sizes, 5 mm to 28 mm. Working load limit 80 to 3,000 kg. Every size has its own Indus part number in the table below, with the loads in the unit the manufacturer rates them in.</p><h3>Choosing a size</h3><p>Choose on working load limit for the pull you will actually apply. A chain (dee) shackle takes an in-line pull; an anchor (bow) shackle accepts several slings or an angled pull. Side-loading reduces the rating, and a screw pin must be fully seated before loading.</p><h3>Ordering</h3><p>Quote the Indus part number from the size table, or send the size and working load you need. Each consignment ships with the manufacturer's test certificate; say on the RFQ if your site needs anything more.</p>",
+   "descriptionShort": "Large Bow Shackle, in 14 sizes, 5 mm to 50 mm, WLL 80 to 8,000 kg. Indus part numbers, manufacturer's test certificate.",
+   "descriptionLong": "<p>A shackle joins a sling, hook or chain to a lifting point and opens with a removable pin.</p><h3>Sizes and ratings</h3><p>14 sizes, 5 mm to 50 mm. Working load limit 80 to 8,000 kg. Every size has its own Indus part number in the table below, with the loads in the unit the manufacturer rates them in.</p><h3>Choosing a size</h3><p>Choose on working load limit for the pull you will actually apply. A chain (dee) shackle takes an in-line pull; an anchor (bow) shackle accepts several slings or an angled pull. Side-loading reduces the rating, and a screw pin must be fully seated before loading.</p><h3>Ordering</h3><p>Quote the Indus part number from the size table, or send the size and working load you need. Each consignment ships with the manufacturer's test certificate; say on the RFQ if your site needs anything more.</p>",
    "seoTitle": "Large Bow Shackle European Type",
-   "seoDescription": "Large Bow Shackle: 10 sizes, 5 mm to 28 mm, WLL 80 to 3,000 kg. Indus part numbers and test certificate. Request a quote.",
+   "seoDescription": "Large Bow Shackle: 14 sizes, 5 mm to 50 mm, WLL 80 to 8,000 kg. Indus part numbers and test certificate. Request a quote.",
    "faqs": [
     {
      "question": "What sizes does the large bow shackle come in?",
-     "answer": "10 sizes, 5 mm to 28 mm. The size table lists each one with its Indus part number, ratings and dimensions."
+     "answer": "14 sizes, 5 mm to 50 mm. The size table lists each one with its Indus part number, ratings and dimensions."
     },
     {
      "question": "What is the working load limit?",
-     "answer": "80 to 3,000 kg, depending on size, as the manufacturer rates it. The WLL is the most the part may carry in service; proof and breaking loads are test figures and never working limits."
+     "answer": "80 to 8,000 kg, depending on size, as the manufacturer rates it. The WLL is the most the part may carry in service; proof and breaking loads are test figures and never working limits."
     },
     {
      "question": "What do G-209, G-2130 and G-213 mean?",
@@ -48153,7 +48157,7 @@
     {
      "group": "Dimensions",
      "label": "Size range",
-     "value": "5 mm to 28 mm",
+     "value": "5 mm to 50 mm",
      "unit": null,
      "position": 1,
      "isFilterable": true,
@@ -48162,7 +48166,7 @@
     {
      "group": "Performance",
      "label": "Working load limit",
-     "value": "80 to 3,000 kg",
+     "value": "80 to 8,000 kg",
      "unit": null,
      "position": 2,
      "isFilterable": true,
@@ -48171,7 +48175,7 @@
     {
      "group": "Identification",
      "label": "Sizes",
-     "value": "10",
+     "value": "14",
      "unit": null,
      "position": 3,
      "isFilterable": false,
@@ -48298,6 +48302,46 @@
       "wllKg": 3000.0,
       "insideLength": 115.0,
       "weightKg": 3.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-SH-EBOW-32MM",
+     "position": 10,
+     "dimensions": {
+      "size": "32 mm",
+      "wllKg": 3500.0,
+      "weightKg": 4.95,
+      "insideLength": 127.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-SH-EBOW-38MM",
+     "position": 11,
+     "dimensions": {
+      "size": "38 mm",
+      "wllKg": 5000.0,
+      "weightKg": 8.05,
+      "insideLength": 152.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-SH-EBOW-45MM",
+     "position": 12,
+     "dimensions": {
+      "size": "45 mm",
+      "wllKg": 7000.0,
+      "weightKg": 14.38,
+      "insideLength": 180.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-SH-EBOW-50MM",
+     "position": 13,
+     "dimensions": {
+      "size": "50 mm",
+      "wllKg": 8000.0,
+      "weightKg": 20.12,
+      "insideLength": 200.0
      }
     }
    ],
@@ -50014,18 +50058,18 @@
    "title": "Large Dee Shackle — European Type",
    "category": "shackles",
    "focusKeyword": "large dee shackle",
-   "descriptionShort": "Large Dee Shackle, in 10 sizes, 5 mm to 28 mm, WLL 80 to 3,000 kg. Indus part numbers, manufacturer's test certificate.",
-   "descriptionLong": "<p>A shackle joins a sling, hook or chain to a lifting point and opens with a removable pin.</p><h3>Sizes and ratings</h3><p>10 sizes, 5 mm to 28 mm. Working load limit 80 to 3,000 kg. Every size has its own Indus part number in the table below, with the loads in the unit the manufacturer rates them in.</p><h3>Choosing a size</h3><p>Choose on working load limit for the pull you will actually apply. A chain (dee) shackle takes an in-line pull; an anchor (bow) shackle accepts several slings or an angled pull. Side-loading reduces the rating, and a screw pin must be fully seated before loading.</p><h3>Ordering</h3><p>Quote the Indus part number from the size table, or send the size and working load you need. Each consignment ships with the manufacturer's test certificate; say on the RFQ if your site needs anything more.</p>",
+   "descriptionShort": "Large Dee Shackle, in 14 sizes, 5 mm to 50 mm, WLL 80 to 8,000 kg. Indus part numbers, manufacturer's test certificate.",
+   "descriptionLong": "<p>A shackle joins a sling, hook or chain to a lifting point and opens with a removable pin.</p><h3>Sizes and ratings</h3><p>14 sizes, 5 mm to 50 mm. Working load limit 80 to 8,000 kg. Every size has its own Indus part number in the table below, with the loads in the unit the manufacturer rates them in.</p><h3>Choosing a size</h3><p>Choose on working load limit for the pull you will actually apply. A chain (dee) shackle takes an in-line pull; an anchor (bow) shackle accepts several slings or an angled pull. Side-loading reduces the rating, and a screw pin must be fully seated before loading.</p><h3>Ordering</h3><p>Quote the Indus part number from the size table, or send the size and working load you need. Each consignment ships with the manufacturer's test certificate; say on the RFQ if your site needs anything more.</p>",
    "seoTitle": "Large Dee Shackle European Type",
-   "seoDescription": "Large Dee Shackle: 10 sizes, 5 mm to 28 mm, WLL 80 to 3,000 kg. Indus part numbers and test certificate. Request a quote.",
+   "seoDescription": "Large Dee Shackle: 14 sizes, 5 mm to 50 mm, WLL 80 to 8,000 kg. Indus part numbers and test certificate. Request a quote.",
    "faqs": [
     {
      "question": "What sizes does the large dee shackle come in?",
-     "answer": "10 sizes, 5 mm to 28 mm. The size table lists each one with its Indus part number, ratings and dimensions."
+     "answer": "14 sizes, 5 mm to 50 mm. The size table lists each one with its Indus part number, ratings and dimensions."
     },
     {
      "question": "What is the working load limit?",
-     "answer": "80 to 3,000 kg, depending on size, as the manufacturer rates it. The WLL is the most the part may carry in service; proof and breaking loads are test figures and never working limits."
+     "answer": "80 to 8,000 kg, depending on size, as the manufacturer rates it. The WLL is the most the part may carry in service; proof and breaking loads are test figures and never working limits."
     },
     {
      "question": "What do G-209, G-2130 and G-213 mean?",
@@ -50053,7 +50097,7 @@
     {
      "group": "Dimensions",
      "label": "Size range",
-     "value": "5 mm to 28 mm",
+     "value": "5 mm to 50 mm",
      "unit": null,
      "position": 1,
      "isFilterable": true,
@@ -50062,7 +50106,7 @@
     {
      "group": "Performance",
      "label": "Working load limit",
-     "value": "80 to 3,000 kg",
+     "value": "80 to 8,000 kg",
      "unit": null,
      "position": 2,
      "isFilterable": true,
@@ -50071,7 +50115,7 @@
     {
      "group": "Identification",
      "label": "Sizes",
-     "value": "10",
+     "value": "14",
      "unit": null,
      "position": 3,
      "isFilterable": false,
@@ -50198,6 +50242,46 @@
       "wllKg": 3000.0,
       "insideLength": 115.0,
       "weightKg": 2.97
+     }
+    },
+    {
+     "partNumber": "IH-LR-SH-EDEE-32MM",
+     "position": 10,
+     "dimensions": {
+      "size": "32 mm",
+      "wllKg": 3500.0,
+      "weightKg": 4.3,
+      "insideLength": 127.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-SH-EDEE-38MM",
+     "position": 11,
+     "dimensions": {
+      "size": "38 mm",
+      "wllKg": 5000.0,
+      "weightKg": 6.75,
+      "insideLength": 152.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-SH-EDEE-45MM",
+     "position": 12,
+     "dimensions": {
+      "size": "45 mm",
+      "wllKg": 7000.0,
+      "weightKg": 12.5,
+      "insideLength": 180.0
+     }
+    },
+    {
+     "partNumber": "IH-LR-SH-EDEE-50MM",
+     "position": 13,
+     "dimensions": {
+      "size": "50 mm",
+      "wllKg": 8000.0,
+      "weightKg": 17.5,
+      "insideLength": 200.0
      }
     }
    ],
