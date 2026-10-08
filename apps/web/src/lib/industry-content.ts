@@ -56,6 +56,8 @@ export type IndustryListItem = {
   gradient: string | null
   chips: string[]
   position: number
+  /** Public image URL for the index card — the page's hero photograph. */
+  heroImage: string | null
 }
 
 export type IndustryDetail = IndustryListItem & {
@@ -136,6 +138,7 @@ const loadIndustryList = unstable_cache(
         gradient: true,
         chips: true,
         position: true,
+        hero: { select: { storagePath: true } },
       },
     })
     return rows.map((r) => ({
@@ -147,9 +150,11 @@ const loadIndustryList = unstable_cache(
       gradient: r.gradient,
       chips: asStringArray(r.chips),
       position: r.position,
+      heroImage: r.hero?.storagePath ?? null,
     }))
   },
-  ['industries-list'],
+  // v2: rows gained `heroImage` (2026-10-08).
+  ['industries-list-v2'],
   { revalidate: 3600, tags: ['industries'] },
 )
 
@@ -177,6 +182,7 @@ function designedIndustryCards(): IndustryListItem[] {
     gradient: null,
     chips: [...page.card.chips],
     position: -DESIGNED_INDUSTRY_PAGES.length + i,
+    heroImage: page.hero.image.src,
   }))
 }
 
@@ -215,6 +221,7 @@ const loadIndustryBySlug = unstable_cache(
       seoDescription: ind.seoDescription,
       canonicalUrl: ind.canonicalUrl,
       ogImageStoragePath: ind.hero?.storagePath ?? null,
+      heroImage: ind.hero?.storagePath ?? null,
       robotsIndex: ind.robotsIndex,
       robotsFollow: ind.robotsFollow,
       caseStudies: ind.caseStudies.map((c) => ({
@@ -228,7 +235,8 @@ const loadIndustryBySlug = unstable_cache(
       })),
     }
   },
-  ['industry-detail'],
+  // v2: `supportBlock` gained `image` / `imageAlt` (2026-10-08).
+  ['industry-detail-v2'],
   { revalidate: 3600, tags: ['industries'] },
 )
 
