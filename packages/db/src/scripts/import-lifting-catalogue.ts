@@ -57,6 +57,7 @@ import { existsSync, readFileSync } from 'node:fs'
 import { join, resolve } from 'node:path'
 import { Prisma, PrismaClient, type CrossRefCompatibility } from '@prisma/client'
 import {
+  CATEGORY_SECTIONS,
   scoreProductContent,
   subPageContentKey,
   subPageDef,
@@ -184,8 +185,26 @@ function words(s: string): number {
   return s.replace(/<[^>]+>/g, ' ').split(/\s+/).filter(Boolean).length
 }
 
-/** The shelf template's stored-section document for one category's bands. */
+/**
+ * The shelf template's stored-section document for one category's bands.
+ *
+ * Every template section is stored, in template order, with the unwritten ones
+ * padded empty. `resolveSections` renders stored sections first and appends any
+ * missing ones after them, so a document holding only the bands it has copy for
+ * puts that copy above the page header and the product grid. That shipped on
+ * all 43 lifting shelves and was found and corrected on 2026-10-06.
+ */
 function bandSections(c: CategoryEntry): StoredSection[] {
+  const written = bandSectionsWritten(c)
+  if (written.length === 0) return []
+  const byKey = new Map(written.map((s) => [s.key, s]))
+  return CATEGORY_SECTIONS.map(
+    (def) => byKey.get(def.key) ?? ({ key: def.key, enabled: true, values: {} } as StoredSection),
+  )
+}
+
+/** Only the sections this category has copy for, before padding. */
+function bandSectionsWritten(c: CategoryEntry): StoredSection[] {
   const b = c.bands ?? {}
   const sections: StoredSection[] = []
   if (b.hero?.intro) sections.push({ key: 'hero', enabled: true, values: { intro: b.hero.intro } })
