@@ -140,14 +140,20 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   ])
   if (!product) return {}
 
+  const ogMedia = product.ogImageMediaId
+    ? await db.media.findUnique({
+        where: { id: product.ogImageMediaId },
+        select: { storagePath: true, alt: true },
+      })
+    : null
   const ogPath = product.ogImageMediaId
-    ? ((
-        await db.media.findUnique({
-          where: { id: product.ogImageMediaId },
-          select: { storagePath: true },
-        })
-      )?.storagePath ?? null)
+    ? (ogMedia?.storagePath ?? null)
     : (product.images[0]?.media.storagePath ?? null)
+  const ogAlt = product.ogImageMediaId
+    ? (ogMedia?.alt ?? null)
+    : product.images[0]
+      ? (product.images[0].alt ?? product.images[0].media.alt ?? product.title)
+      : null
 
   // Content-depth gate. The same predicate decides whether the product is in
   // the sitemap, so a page is never submitted there and then refused here, or
@@ -161,6 +167,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     canonicalUrl: product.canonicalUrl,
     robots: { index: indexFlag, follow: product.robotsFollow },
     ogImagePath: ogPath,
+    ogImageAlt: ogAlt,
     titleTemplate: seoSetting?.defaultMetaTitleTemplate ?? null,
     defaultDescription: seoSetting?.defaultMetaDescription ?? null,
   })
@@ -384,6 +391,14 @@ export default async function ProductPage({ params }: Props) {
     imageUrls: product.images
       .map((img) => crawlableImageUrl(img.media.storagePath))
       .filter((url): url is string => Boolean(url)),
+    // The same gallery with the alt text ProductGallery renders, as captions.
+    images: product.images.flatMap((img, i) => {
+      const url = crawlableImageUrl(img.media.storagePath)
+      if (!url) return []
+      const caption =
+        img.alt ?? img.media.alt ?? (i === 0 ? product.title : `${product.title} — view ${i + 1}`)
+      return [{ url, caption }]
+    }),
     brand: product.brand ? { name: product.brand.name } : null,
     // For a distributor, the manufacturer is the brand owner. We surface
     // it as a separate Organization so AI engines can disambiguate
@@ -813,7 +828,7 @@ export default async function ProductPage({ params }: Props) {
                     {rel.images[0] ? (
                       <Image
                         src={mediaUrl(rel.images[0]!.media.storagePath)}
-                        alt={rel.title}
+                        alt={rel.images[0]!.alt ?? rel.images[0]!.media.alt ?? rel.title}
                         fill
                         className="object-contain p-4"
                         sizes="25vw"

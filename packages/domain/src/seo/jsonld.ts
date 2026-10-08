@@ -8,6 +8,22 @@
  * `apps/web/src/components/JsonLd.tsx` and the per-route page.tsx).
  */
 
+/**
+ * An image with the words that describe it.
+ *
+ * Emitted as an `ImageObject` rather than a bare URL so the alt text the page
+ * renders also travels in the markup as `caption` — the same description, in
+ * the one place Google reads images from without rendering the page.
+ */
+export type LdImage = { url: string; caption?: string | null }
+
+function imageObjectLd(image: LdImage): JsonLd {
+  const node: JsonLd = { '@type': 'ImageObject', url: image.url, contentUrl: image.url }
+  const caption = image.caption?.trim()
+  if (caption) node.caption = caption
+  return node
+}
+
 export type JsonLd = Record<string, unknown>
 
 // ── Deep merge ────────────────────────────────────────────────────────────
@@ -52,6 +68,11 @@ export type ProductLdInput = {
   gtin14?: string | null
   url: string
   imageUrls: string[]
+  /**
+   * The same gallery with each image's alt text. When given, `image` is
+   * emitted as ImageObjects and `imageUrls` is ignored.
+   */
+  images?: LdImage[] | null
   brand?: { name: string } | null
   /**
    * Manufacturer (separate from `brand` — for distributors these can
@@ -125,6 +146,8 @@ export type CollectionLdInput = {
    * page. Emitted as `about`.
    */
   about?: JsonLd | null
+  /** The page's lead image, emitted as `primaryImageOfPage`. */
+  primaryImage?: LdImage | null
   override?: unknown
 }
 
@@ -179,6 +202,8 @@ export type ArticleLdInput = {
   url: string
   /** Single image URL or an ordered list (Google prefers >=1 high-res image). */
   imageUrl?: string | string[] | null
+  /** Alt text of a single `imageUrl`; emits it as an ImageObject with a caption. */
+  imageCaption?: string | null
   authorName?: string | null
   /** Optional author profile URL — adds E-E-A-T signal. */
   authorUrl?: string | null
@@ -299,7 +324,8 @@ export function buildProductLd(input: ProductLdInput): JsonLd {
   if (input.mpn) base.mpn = input.mpn
   if (input.gtin13) base.gtin13 = input.gtin13
   if (input.gtin14) base.gtin14 = input.gtin14
-  if (input.imageUrls.length > 0) base.image = input.imageUrls
+  if (input.images && input.images.length > 0) base.image = input.images.map(imageObjectLd)
+  else if (input.imageUrls.length > 0) base.image = input.imageUrls
   if (input.brand) base.brand = { '@type': 'Brand', name: input.brand.name }
   if (input.manufacturer) {
     const m: JsonLd = { '@type': 'Organization', name: input.manufacturer.name }
@@ -414,6 +440,7 @@ export function buildCollectionLd(input: CollectionLdInput): JsonLd {
   }
   if (input.description) base.description = input.description
   if (input.about) base.about = input.about
+  if (input.primaryImage) base.primaryImageOfPage = imageObjectLd(input.primaryImage)
   return mergeJsonLd(base, input.override)
 }
 
@@ -501,7 +528,12 @@ export function buildArticleLd(input: ArticleLdInput): JsonLd {
     inLanguage: input.inLanguage ?? 'en',
   }
   if (input.description) base.description = input.description
-  if (input.imageUrl) base.image = input.imageUrl
+  if (input.imageUrl) {
+    base.image =
+      typeof input.imageUrl === 'string' && input.imageCaption?.trim()
+        ? imageObjectLd({ url: input.imageUrl, caption: input.imageCaption })
+        : input.imageUrl
+  }
   if (input.articleSection) base.articleSection = input.articleSection
   const keywords = (input.keywords ?? []).map((k) => k.trim()).filter(Boolean)
   if (keywords.length > 0) base.keywords = keywords.join(', ')
@@ -548,6 +580,8 @@ export type ServiceLdInput = {
   providerName: string
   /** e.g. "Hydraulic hose assembly and repair". */
   serviceType?: string | null
+  /** Photographs on the page, lead image first. */
+  images?: LdImage[] | null
   override?: unknown
 }
 
@@ -568,6 +602,7 @@ export function buildServiceLd(input: ServiceLdInput): JsonLd {
     url: input.url,
     ...(input.description ? { description: input.description } : {}),
     ...(input.serviceType ? { serviceType: input.serviceType } : {}),
+    ...(input.images && input.images.length > 0 ? { image: input.images.map(imageObjectLd) } : {}),
     provider: {
       '@type': 'Organization',
       '@id': input.providerId,

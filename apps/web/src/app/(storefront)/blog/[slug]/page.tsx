@@ -76,12 +76,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   ])
   if (!post) return {}
 
-  const ogPath = post.ogImageMediaId
-    ? (await db.media.findUnique({
+  const ogMedia = post.ogImageMediaId
+    ? await db.media.findUnique({
         where: { id: post.ogImageMediaId },
-        select: { storagePath: true },
-      }))?.storagePath ?? null
-    : post.hero?.storagePath ?? null
+        select: { storagePath: true, alt: true },
+      })
+    : null
+  const ogPath = post.ogImageMediaId ? (ogMedia?.storagePath ?? null) : (post.hero?.storagePath ?? null)
+  const ogAlt = post.ogImageMediaId
+    ? (ogMedia?.alt ?? null)
+    : post.hero
+      ? (post.hero.alt ?? post.title)
+      : null
 
   return pageMetadata({
     title: post.seoTitle ?? post.title,
@@ -90,6 +96,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     canonicalUrl: post.canonicalUrl,
     robots: { index: post.robotsIndex, follow: post.robotsFollow },
     ogImagePath: ogPath,
+    ogImageAlt: ogAlt,
     titleTemplate: seoSetting?.defaultMetaTitleTemplate ?? null,
     defaultDescription: seoSetting?.defaultMetaDescription ?? null,
     article: {
@@ -193,6 +200,7 @@ export default async function BlogPostPage({ params }: Props) {
     description: post.excerpt ?? null,
     url: postUrl,
     imageUrl: crawlableImageUrl(post.hero?.storagePath),
+    imageCaption: post.hero ? (post.hero.alt ?? post.title) : null,
     authorName: bylineName,
     authorUrl: authorProfileUrl,
     authorJobTitle: post.blogAuthor?.jobTitle ?? null,

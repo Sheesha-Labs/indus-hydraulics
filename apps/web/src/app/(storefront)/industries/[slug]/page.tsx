@@ -15,7 +15,7 @@ import { Breadcrumb, JsonLd, LeadCapturePanel, buildWhatsappHref, buildMailtoHre
 import DesignedIndustryLanding from '../../../../components/industries/DesignedIndustryLanding'
 import MarketReachSection from '../../../../components/markets/MarketReachSection'
 import { mediaUrl } from '../../../../lib/media'
-import { ORG_ID, SITE_NAME, pageMetadata, urlFor } from '../../../../lib/seo'
+import { ORG_ID, SITE_NAME, crawlableImageUrl, pageMetadata, urlFor } from '../../../../lib/seo'
 import { getIndustryBySlug } from '../../../../lib/industry-content'
 import { getStoreSettings } from '../../../../lib/store-settings'
 import { CategoryFallbackImage } from '../../../../components/ProductCard'
@@ -105,6 +105,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     canonicalUrl: ind.canonicalUrl,
     robots: { index: ind.robotsIndex, follow: ind.robotsFollow },
     ogImagePath: ind.ogImageStoragePath,
+    ogImageAlt: ind.heroImageAlt ?? null,
   })
 }
 
@@ -159,11 +160,34 @@ export default async function IndustryPage({ params }: Props) {
   })()
 
   const heroUrl = ind.ogImageStoragePath ? mediaUrl(ind.ogImageStoragePath) : null
+  const heroAlt = ind.heroImageAlt ?? `${ind.name} — hydraulic and industrial supply`
   const breadcrumb = ind.breadcrumb ?? ind.name.toUpperCase()
   const reach = industryMarketReach(ind.slug)
 
+  // The page's photographs in page order, each with the alt text it renders
+  // with, so the markup describes the same pictures a reader sees.
+  const ldImages = [
+    { path: ind.ogImageStoragePath, caption: heroAlt },
+    ...ind.caseStudies.map((cs) => ({ path: cs.imageUrl, caption: cs.imageAlt ?? cs.title })),
+    { path: ind.supportBlock?.image ?? null, caption: ind.supportBlock?.imageAlt ?? null },
+  ].flatMap(({ path, caption }) => {
+    const url = crawlableImageUrl(path)
+    return url ? [{ url, caption }] : []
+  })
+
   return (
     <div>
+      <JsonLd
+        data={buildServiceLd({
+          name: ind.seoTitle ?? `${ind.name} hydraulic and industrial supply`,
+          description: ind.seoDescription ?? ind.description ?? null,
+          url: urlFor(`/industries/${ind.slug}`),
+          areaServed: [{ name: 'United Arab Emirates', type: 'Country' }],
+          providerId: ORG_ID,
+          providerName: SITE_NAME,
+          images: ldImages,
+        })}
+      />
       {/*
         Hero — restructured, not restyled.
 
@@ -220,7 +244,7 @@ export default async function IndustryPage({ params }: Props) {
               {heroUrl ? (
                 <Image
                   src={heroUrl}
-                  alt=""
+                  alt={heroAlt}
                   fill
                   className="object-cover"
                   sizes="(max-width: 1024px) 100vw, 40vw"
@@ -296,7 +320,7 @@ export default async function IndustryPage({ params }: Props) {
                     {img ? (
                       <Image
                         src={mediaUrl(img.media.storagePath)}
-                        alt={product.title}
+                        alt={img.alt ?? img.media.alt ?? product.title}
                         fill
                         className="object-contain p-3"
                         sizes="(max-width: 1360px) 25vw, 320px"
@@ -344,7 +368,7 @@ export default async function IndustryPage({ params }: Props) {
                     {cs.imageUrl ? (
                       <Image
                         src={mediaUrl(cs.imageUrl)}
-                        alt={cs.title}
+                        alt={cs.imageAlt ?? cs.title}
                         fill
                         className="object-cover"
                         sizes="(max-width: 1360px) 33vw, 420px"

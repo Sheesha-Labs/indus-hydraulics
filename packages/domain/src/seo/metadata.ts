@@ -30,6 +30,11 @@ export type BuildMetadataInput = {
   robots?: RobotsDirective
   /** OG image URL (already public — typically a Supabase Storage public URL). */
   ogImageUrl?: string | null
+  /**
+   * Alt text of `ogImageUrl`, emitted as `og:image:alt` and `twitter:image:alt`.
+   * Not applied to `defaultOgImageUrl`, which is a different picture.
+   */
+  ogImageAlt?: string | null
   /** Default title template, e.g. "%s — Indus Hydraulics". Falls back to plain title. */
   titleTemplate?: string | null
   /** Default description used when entity has none. */
@@ -77,13 +82,13 @@ export type BuiltMetadata = {
     description: string
     url: string
     siteName?: string
-    images?: { url: string }[]
+    images?: { url: string; alt?: string }[]
   } & ({ type: 'website' } | BuiltOpenGraphArticle)
   twitter: {
     card: 'summary_large_image'
     title: string
     description: string
-    images?: string[]
+    images?: (string | { url: string; alt: string })[]
   }
 }
 
@@ -101,6 +106,7 @@ export function buildMetadata(input: BuildMetadataInput): BuiltMetadata {
 
   const canonical = (input.canonicalUrl?.trim() || input.pageUrl).replace(/\/$/, '') || input.pageUrl
   const ogImage = input.ogImageUrl ?? input.defaultOgImageUrl ?? undefined
+  const ogImageAlt = (input.ogImageUrl && input.ogImageAlt?.trim()) || undefined
 
   const robotsIndex = input.robots?.index ?? true
   const robotsFollow = input.robots?.follow ?? true
@@ -116,13 +122,15 @@ export function buildMetadata(input: BuildMetadataInput): BuiltMetadata {
       url: canonical,
       ...(input.article ? openGraphArticle(input.article) : { type: 'website' as const }),
       ...(input.siteName ? { siteName: input.siteName } : {}),
-      ...(ogImage ? { images: [{ url: ogImage }] } : {}),
+      ...(ogImage
+        ? { images: [{ url: ogImage, ...(ogImageAlt ? { alt: ogImageAlt } : {}) }] }
+        : {}),
     },
     twitter: {
       card: 'summary_large_image',
       title: titleApplied,
       description,
-      ...(ogImage ? { images: [ogImage] } : {}),
+      ...(ogImage ? { images: [ogImageAlt ? { url: ogImage, alt: ogImageAlt } : ogImage] } : {}),
     },
   }
   return md

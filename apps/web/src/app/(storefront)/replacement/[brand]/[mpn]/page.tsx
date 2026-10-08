@@ -151,7 +151,7 @@ export default async function ReplacementPage({ params }: Props) {
               {m.product.images[0] ? (
                 <Image
                   src={mediaUrl(m.product.images[0]!.media.storagePath)}
-                  alt={m.product.images[0]!.media.alt ?? m.product.title}
+                  alt={m.product.images[0]!.alt ?? m.product.images[0]!.media.alt ?? m.product.title}
                   fill
                   className="object-contain p-2"
                   sizes="120px"

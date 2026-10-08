@@ -124,16 +124,20 @@ export type CategoryViewProps = {
  * card image, so a sub-category shares its root's studio shot rather than the
  * site default. Bounded walk — the tree is three levels deep today.
  */
-async function categoryImagePath(categoryId: string): Promise<string | null> {
+async function categoryImage(
+  categoryId: string
+): Promise<{ storagePath: string; alt: string | null } | null> {
   let id: string | null = categoryId
   for (let depth = 0; id && depth < 6; depth++) {
-    const row: { parentId: string | null; image: { storagePath: string } | null } | null =
-      await db.category.findUnique({
-        where: { id },
-        select: { parentId: true, image: { select: { storagePath: true } } },
-      })
+    const row: {
+      parentId: string | null
+      image: { storagePath: string; alt: string | null } | null
+    } | null = await db.category.findUnique({
+      where: { id },
+      select: { parentId: true, image: { select: { storagePath: true, alt: true } } },
+    })
     if (!row) return null
-    if (row.image) return row.image.storagePath
+    if (row.image) return row.image
     id = row.parentId
   }
   return null
@@ -148,14 +152,13 @@ export async function categoryMetadata({ slug, sp }: CategoryViewProps): Promise
   ])
   if (!category) return {}
 
-  const ogPath = category.ogImageMediaId
-    ? ((
-        await db.media.findUnique({
-          where: { id: category.ogImageMediaId },
-          select: { storagePath: true },
-        })
-      )?.storagePath ?? null)
-    : await categoryImagePath(category.id)
+  const ogImage = category.ogImageMediaId
+    ? await db.media.findUnique({
+        where: { id: category.ogImageMediaId },
+        select: { storagePath: true, alt: true },
+      })
+    : await categoryImage(category.id)
+  const ogPath = ogImage?.storagePath ?? null
 
   // Filtered and sorted variants of a category page are duplicate-content
   // slices of the base. We let Google FOLLOW the links (so it discovers
@@ -185,6 +188,7 @@ export async function categoryMetadata({ slug, sp }: CategoryViewProps): Promise
     canonicalUrl: pageNo > 1 ? null : category.canonicalUrl,
     robots,
     ogImagePath: ogPath,
+    ogImageAlt: ogImage?.alt ?? null,
     titleTemplate: seoSetting?.defaultMetaTitleTemplate ?? null,
     defaultDescription: seoSetting?.defaultMetaDescription ?? null,
   })

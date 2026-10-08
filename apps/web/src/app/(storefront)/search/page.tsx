@@ -597,7 +597,7 @@ export default async function SearchPage({ searchParams }: Props) {
                         {topMatch.images[0] ? (
                           <Image
                             src={mediaUrl(topMatch.images[0]!.media.storagePath)}
-                            alt={topMatch.title}
+                            alt={topMatch.images[0]!.alt ?? topMatch.images[0]!.media.alt ?? topMatch.title}
                             fill
                             className="object-contain p-3"
                             sizes="140px"
@@ -645,7 +645,7 @@ export default async function SearchPage({ searchParams }: Props) {
                             {img ? (
                               <Image
                                 src={mediaUrl(img.media.storagePath)}
-                                alt={product.title}
+                                alt={img.alt ?? img.media.alt ?? product.title}
                                 fill
                                 className="object-contain p-2"
                                 sizes="80px"

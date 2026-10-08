@@ -50,6 +50,7 @@ export function pageMetadata(input: StorefrontMetaInput): Metadata {
     canonicalUrl: input.canonicalUrl,
     robots: input.robots,
     ogImageUrl: ogUrl,
+    ogImageAlt: input.ogImageAlt,
     titleTemplate: input.titleTemplate,
     defaultDescription: input.defaultDescription,
     defaultOgImageUrl: input.defaultOgImageUrl,

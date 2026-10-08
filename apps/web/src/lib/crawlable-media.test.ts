@@ -13,6 +13,12 @@ describe('toCrawlableMediaUrl', () => {
     ).toBe(`${BASE}/media/product-images/products/IH-1/IH-1.png`)
   })
 
+  it('maps industry images, whose support panels are stored as full URLs', () => {
+    expect(
+      toCrawlableMediaUrl(storage('industry-images', 'support/oil-gas-support.jpg'), BASE, SUPABASE)
+    ).toBe(`${BASE}/media/industry-images/support/oil-gas-support.jpg`)
+  })
+
   it('maps blog and service images too', () => {
     expect(toCrawlableMediaUrl(storage('blog-images', 'x/hero.jpg'), BASE, SUPABASE)).toBe(
       `${BASE}/media/blog-images/x/hero.jpg`,

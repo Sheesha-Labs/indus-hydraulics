@@ -19,7 +19,12 @@
  */
 
 /** The public buckets whose objects may be re-served. Never the private ones. */
-export const CRAWLABLE_MEDIA_BUCKETS = ['product-images', 'blog-images', 'service-images'] as const
+export const CRAWLABLE_MEDIA_BUCKETS = [
+  'product-images',
+  'blog-images',
+  'service-images',
+  'industry-images',
+] as const
 
 /** URL prefix of the re-serving route. */
 export const CRAWLABLE_MEDIA_PREFIX = '/media'

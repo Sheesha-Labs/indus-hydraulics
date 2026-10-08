@@ -149,7 +149,7 @@ export default async function CategoriesIndexPage() {
                   {img ? (
                     <Image
                       src={img}
-                      alt={cat.image?.alt ?? ''}
+                      alt={cat.image?.alt ?? cat.name}
                       fill
                       className="object-cover"
                       sizes="(max-width: 640px) 100vw, (max-width: 1280px) 50vw, 33vw"
