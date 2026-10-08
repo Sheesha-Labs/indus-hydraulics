@@ -1,7 +1,7 @@
 {
   "imageDir": "~/Documents/Indus Supplier Research/Image Research/Lifting",
   "captionNote": "",
-  "note": "LG supplier photos with the LONG watermark removed by GPT Image 2; 17 edits checked against the originals for unchanged product detail. Ayush approved the upload on 2026-10-08.",
+  "note": "LG supplier photos with the LONG watermark removed by GPT Image 2; 17 edits checked against the originals for unchanged product detail. Ayush approved the upload on 2026-10-08. A further 9 reruns with a tighter inpainting prompt were added the same day on Ayush's go-ahead, including 4 (AB, MISB, PPB, SESDHP) whose edits still differ from the original in detail.",
   "listings": [
     {
       "sku": "IH-LR-BP-BTPB",
@@ -238,6 +238,132 @@
           "match": "exact item",
           "sourcePage": null,
           "origin": "LG photo Lifting-Rigging/1-inch-ratchet-strap-w-double-j-hook-china-lg-manufacture-1.webp, watermark removed with GPT Image 2 (Higgsfield), reviewed 2026-10-08"
+        }
+      ]
+    },
+    {
+      "sku": "IH-LR-BP-AB",
+      "title": "Aluminum Blocks With Swivel Hook",
+      "make": "Supplier",
+      "images": [
+        {
+          "file": "Watermark removal/edited-v2/ih-lr-bp-ab-web.jpg",
+          "kind": "photo",
+          "match": "exact item",
+          "sourcePage": null,
+          "origin": "LG photo Lifting-Rigging/aluminum-blocks-with-swivel-hook-china-lg-1.jpg, watermark removed with GPT Image 2 (Higgsfield, tightened inpainting prompt), 2026-10-08"
+        }
+      ]
+    },
+    {
+      "sku": "IH-LR-BP-BBH",
+      "title": "Body Block With Hook-China LG Supply",
+      "make": "Supplier",
+      "images": [
+        {
+          "file": "Watermark removal/edited-v2/ih-lr-bp-bbh-web.jpg",
+          "kind": "photo",
+          "match": "exact item",
+          "sourcePage": null,
+          "origin": "LG photo Lifting-Rigging/body-block-with-hook-china-lg-supply-1.jpg, watermark removed with GPT Image 2 (Higgsfield, tightened inpainting prompt), 2026-10-08"
+        }
+      ]
+    },
+    {
+      "sku": "IH-LR-BP-CPB",
+      "title": "Steel Cable Pulley Block",
+      "make": "Supplier",
+      "images": [
+        {
+          "file": "Watermark removal/edited-v2/ih-lr-bp-cpb-web.jpg",
+          "kind": "photo",
+          "match": "exact item",
+          "sourcePage": null,
+          "origin": "LG photo Lifting-Rigging/steel-cable-pulley-block-china-lg-1.jpg, watermark removed with GPT Image 2 (Higgsfield, tightened inpainting prompt), 2026-10-08"
+        }
+      ]
+    },
+    {
+      "sku": "IH-LR-BP-FRBSS",
+      "title": "Flat Rigging Block With Single Sheave",
+      "make": "Supplier",
+      "images": [
+        {
+          "file": "Watermark removal/edited-v2/ih-lr-bp-frbss-web.jpg",
+          "kind": "photo",
+          "match": "exact item",
+          "sourcePage": null,
+          "origin": "LG photo Lifting-Rigging/flat-rigging-block-with-single-sheave-china-lg-1.jpg, watermark removed with GPT Image 2 (Higgsfield, tightened inpainting prompt), 2026-10-08"
+        }
+      ]
+    },
+    {
+      "sku": "IH-LR-BP-MISB",
+      "title": "Malleable Iron Shell Block Single Sheave With Hook",
+      "make": "Supplier",
+      "images": [
+        {
+          "file": "Watermark removal/edited-v2/ih-lr-bp-misb-web.jpg",
+          "kind": "photo",
+          "match": "exact item",
+          "sourcePage": null,
+          "origin": "LG photo Lifting-Rigging/malleable-iron-shell-block-single-sheave-with-hook-china-lg-1.jpg, watermark removed with GPT Image 2 (Higgsfield, tightened inpainting prompt), 2026-10-08"
+        }
+      ]
+    },
+    {
+      "sku": "IH-LR-BP-PPB",
+      "title": "Plain Pulley Block",
+      "make": "Supplier",
+      "images": [
+        {
+          "file": "Watermark removal/edited-v2/ih-lr-bp-ppb-web.jpg",
+          "kind": "photo",
+          "match": "exact item",
+          "sourcePage": null,
+          "origin": "LG photo Lifting-Rigging/plain-pulley-block-1.jpg, watermark removed with GPT Image 2 (Higgsfield, tightened inpainting prompt), 2026-10-08"
+        }
+      ]
+    },
+    {
+      "sku": "IH-LR-BP-SESDHP",
+      "title": "Swivel Eye Scissor Double Hook Pulley",
+      "make": "Supplier",
+      "images": [
+        {
+          "file": "Watermark removal/edited-v2/ih-lr-bp-sesdhp-web.jpg",
+          "kind": "photo",
+          "match": "exact item",
+          "sourcePage": null,
+          "origin": "LG photo Lifting-Rigging/swivel-eye-scissor-double-hook-pulley-china-lg-1.jpg, watermark removed with GPT Image 2 (Higgsfield, tightened inpainting prompt), 2026-10-08"
+        }
+      ]
+    },
+    {
+      "sku": "IH-LR-BP-SESHB",
+      "title": "Swivel Eye Single Hook Block",
+      "make": "Supplier",
+      "images": [
+        {
+          "file": "Watermark removal/edited-v2/ih-lr-bp-seshb-web.jpg",
+          "kind": "photo",
+          "match": "exact item",
+          "sourcePage": null,
+          "origin": "LG photo Lifting-Rigging/swivel-eye-single-hook-block-china-lg-1.jpg, watermark removed with GPT Image 2 (Higgsfield, tightened inpainting prompt), 2026-10-08"
+        }
+      ]
+    },
+    {
+      "sku": "IH-LR-BP-SBMR",
+      "title": "Snatch Block With Hook For Manila Rope",
+      "make": "Supplier",
+      "images": [
+        {
+          "file": "Watermark removal/edited-v2/ih-lr-bp-sbmr-web.jpg",
+          "kind": "photo",
+          "match": "exact item",
+          "sourcePage": null,
+          "origin": "LG photo Trawling-Gear/snatch-block-with-hook-for-manila-rope-1.jpg, watermark removed with GPT Image 2 (Higgsfield, tightened inpainting prompt), 2026-10-08"
         }
       ]
     }
