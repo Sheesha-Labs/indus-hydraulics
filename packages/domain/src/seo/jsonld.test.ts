@@ -536,3 +536,91 @@ describe('buildItemListLd', () => {
     expect(ld.itemListElement).toEqual([])
   })
 })
+
+describe('image captions', () => {
+  it('emits Product images as ImageObjects carrying the alt text', () => {
+    const ld = buildProductLd({
+      name: 'Shackle',
+      sku: 'S-1',
+      url: 'https://example.com/p/s',
+      imageUrls: ['https://example.com/media/a.jpg'],
+      images: [
+        { url: 'https://example.com/media/a.jpg', caption: 'Bow shackle, side view' },
+        { url: 'https://example.com/media/b.jpg', caption: '  ' },
+      ],
+    })
+    expect(ld.image).toEqual([
+      {
+        '@type': 'ImageObject',
+        url: 'https://example.com/media/a.jpg',
+        contentUrl: 'https://example.com/media/a.jpg',
+        caption: 'Bow shackle, side view',
+      },
+      {
+        '@type': 'ImageObject',
+        url: 'https://example.com/media/b.jpg',
+        contentUrl: 'https://example.com/media/b.jpg',
+      },
+    ])
+  })
+
+  it('keeps bare Product image URLs when no captioned images are given', () => {
+    const ld = buildProductLd({
+      name: 'X',
+      sku: 'X',
+      url: 'https://example.com/p/x',
+      imageUrls: ['https://cdn/x.jpg'],
+    })
+    expect(ld.image).toEqual(['https://cdn/x.jpg'])
+  })
+
+  it('captions a single Article image and leaves lists alone', () => {
+    const one = buildArticleLd({
+      headline: 'H',
+      url: 'https://example.com/b',
+      imageUrl: 'https://cdn/h.jpg',
+      imageCaption: 'Hose layline',
+    })
+    expect(one.image).toMatchObject({ '@type': 'ImageObject', caption: 'Hose layline' })
+    const list = buildArticleLd({
+      headline: 'H',
+      url: 'https://example.com/b',
+      imageUrl: ['https://cdn/h.jpg'],
+      imageCaption: 'x',
+    })
+    expect(list.image).toEqual(['https://cdn/h.jpg'])
+  })
+
+  it('adds primaryImageOfPage to a collection and images to a service', () => {
+    const coll = buildCollectionLd({
+      name: 'C',
+      url: 'https://example.com/c',
+      primaryImage: { url: 'https://cdn/c.jpg', caption: 'Shelf' },
+    })
+    expect(coll.primaryImageOfPage).toMatchObject({ '@type': 'ImageObject', caption: 'Shelf' })
+    const svc = buildServiceLd({
+      name: 'S',
+      url: 'https://example.com/s',
+      areaServed: ['Dubai'],
+      providerId: 'https://example.com#org',
+      providerName: 'Org',
+      images: [{ url: 'https://cdn/s.jpg', caption: 'Support crew' }],
+    })
+    expect(svc.image).toEqual([
+      {
+        '@type': 'ImageObject',
+        url: 'https://cdn/s.jpg',
+        contentUrl: 'https://cdn/s.jpg',
+        caption: 'Support crew',
+      },
+    ])
+    const bare = buildServiceLd({
+      name: 'S',
+      url: 'u',
+      areaServed: [],
+      providerId: 'p',
+      providerName: 'n',
+    })
+    expect(bare.image).toBeUndefined()
+  })
+})

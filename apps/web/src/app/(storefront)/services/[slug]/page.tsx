@@ -70,6 +70,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     canonicalUrl: c.canonicalUrl,
     robots: { index: c.robotsIndex, follow: c.robotsFollow },
     ogImagePath: c.ogImage?.storagePath ?? c.heroImage?.storagePath ?? null,
+    ogImageAlt: c.ogImage ? c.ogImage.alt : c.heroImage ? (c.heroImage.alt ?? c.title) : null,
   })
 }
 
@@ -94,6 +95,7 @@ export default async function ServiceCasePage({ params }: Props) {
     description: c.deck,
     url: `${BASE_URL}/services/${c.slug}`,
     imageUrl: crawlableImageUrl(c.heroImage?.storagePath),
+    imageCaption: c.heroImage ? (c.heroImage.alt ?? c.title) : null,
     authorName: c.pullQuoteAuthor ?? null,
     publishedAt: c.publishedAt ?? null,
     modifiedAt: c.seoUpdatedAt ?? c.updatedAt ?? null,

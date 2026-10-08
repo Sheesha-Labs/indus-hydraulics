@@ -273,7 +273,7 @@ export default async function RfqStatusPage({ params, searchParams }: Props) {
               {line.product.images[0] ? (
                 <Image
                   src={mediaUrl(line.product.images[0]!.media.storagePath)}
-                  alt={line.product.title}
+                  alt={line.product.images[0]!.alt ?? line.product.images[0]!.media.alt ?? line.product.title}
                   fill
                   className="object-contain p-1"
                   sizes="60px"

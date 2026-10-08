@@ -44,6 +44,8 @@ export type IndustryCaseStudy = {
   description: string
   year: string | null
   imageUrl: string | null
+  /** `Media.alt` of the case photo; the page falls back to the title. */
+  imageAlt: string | null
   position: number
 }
 
@@ -58,6 +60,8 @@ export type IndustryListItem = {
   position: number
   /** Public image URL for the index card — the page's hero photograph. */
   heroImage: string | null
+  /** `Media.alt` of the hero photograph. */
+  heroImageAlt: string | null
 }
 
 export type IndustryDetail = IndustryListItem & {
@@ -138,7 +142,7 @@ const loadIndustryList = unstable_cache(
         gradient: true,
         chips: true,
         position: true,
-        hero: { select: { storagePath: true } },
+        hero: { select: { storagePath: true, alt: true } },
       },
     })
     return rows.map((r) => ({
@@ -151,10 +155,11 @@ const loadIndustryList = unstable_cache(
       chips: asStringArray(r.chips),
       position: r.position,
       heroImage: r.hero?.storagePath ?? null,
+      heroImageAlt: r.hero?.alt ?? null,
     }))
   },
-  // v2: rows gained `heroImage` (2026-10-08).
-  ['industries-list-v2'],
+  // v3: rows gained `heroImageAlt` (2026-10-08).
+  ['industries-list-v3'],
   { revalidate: 3600, tags: ['industries'] },
 )
 
@@ -183,6 +188,7 @@ function designedIndustryCards(): IndustryListItem[] {
     chips: [...page.card.chips],
     position: -DESIGNED_INDUSTRY_PAGES.length + i,
     heroImage: page.hero.image.src,
+    heroImageAlt: page.hero.image.alt,
   }))
 }
 
@@ -191,11 +197,11 @@ const loadIndustryBySlug = unstable_cache(
     const ind = await db.industry.findUnique({
       where: { slug },
       include: {
-        hero: { select: { storagePath: true } },
+        hero: { select: { storagePath: true, alt: true } },
         caseStudies: {
           where: { isPublished: true },
           orderBy: { position: 'asc' },
-          include: { image: { select: { storagePath: true } } },
+          include: { image: { select: { storagePath: true, alt: true } } },
         },
       },
     })
@@ -222,6 +228,7 @@ const loadIndustryBySlug = unstable_cache(
       canonicalUrl: ind.canonicalUrl,
       ogImageStoragePath: ind.hero?.storagePath ?? null,
       heroImage: ind.hero?.storagePath ?? null,
+      heroImageAlt: ind.hero?.alt ?? null,
       robotsIndex: ind.robotsIndex,
       robotsFollow: ind.robotsFollow,
       caseStudies: ind.caseStudies.map((c) => ({
@@ -231,12 +238,13 @@ const loadIndustryBySlug = unstable_cache(
         description: c.description,
         year: c.year,
         imageUrl: c.image?.storagePath ?? null,
+        imageAlt: c.image?.alt ?? null,
         position: c.position,
       })),
     }
   },
-  // v2: `supportBlock` gained `image` / `imageAlt` (2026-10-08).
-  ['industry-detail-v2'],
+  // v3: hero and case studies gained their `Media.alt` (2026-10-08).
+  ['industry-detail-v3'],
   { revalidate: 3600, tags: ['industries'] },
 )
 

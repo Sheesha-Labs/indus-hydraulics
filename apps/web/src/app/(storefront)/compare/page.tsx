@@ -331,7 +331,7 @@ export default async function ComparePage({ searchParams }: Props) {
                   <div role="columnheader" key={product.id} className="border-l border-ih-border bg-ih-surface p-5 relative">
                     <div className="aspect-[4/3] bg-ih-surface-2 border border-ih-border mb-3.5 relative overflow-hidden">
                       {img ? (
-                        <Image src={mediaUrl(img.media.storagePath)} alt={product.title} fill className="object-contain p-4" sizes="25vw" />
+                        <Image src={mediaUrl(img.media.storagePath)} alt={img.alt ?? img.media.alt ?? product.title} fill className="object-contain p-4" sizes="25vw" />
                       ) : (
                         <div className="absolute inset-0 grid place-items-center font-mono text-[11px] text-ih-muted">{product.sku}</div>
                       )}

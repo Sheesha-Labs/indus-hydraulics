@@ -182,3 +182,31 @@ describe('stripTrailingSiteName', () => {
     expect(stripTrailingSiteName(t, 'Indus Hydraulics')).toBe(t)
   })
 })
+
+describe('buildMetadata — image alt', () => {
+  const base = { title: 'T', description: 'D', pageUrl: 'https://example.com/x' }
+
+  it('sets og and twitter image alt for the page image', () => {
+    const md = buildMetadata({
+      ...base,
+      ogImageUrl: 'https://example.com/media/a.jpg',
+      ogImageAlt: 'Bow shackle',
+    })
+    expect(md.openGraph.images).toEqual([
+      { url: 'https://example.com/media/a.jpg', alt: 'Bow shackle' },
+    ])
+    expect(md.twitter.images).toEqual([
+      { url: 'https://example.com/media/a.jpg', alt: 'Bow shackle' },
+    ])
+  })
+
+  it('never puts the page alt on the site default image', () => {
+    const md = buildMetadata({
+      ...base,
+      defaultOgImageUrl: 'https://example.com/og.png',
+      ogImageAlt: 'Bow shackle',
+    })
+    expect(md.openGraph.images).toEqual([{ url: 'https://example.com/og.png' }])
+    expect(md.twitter.images).toEqual(['https://example.com/og.png'])
+  })
+})

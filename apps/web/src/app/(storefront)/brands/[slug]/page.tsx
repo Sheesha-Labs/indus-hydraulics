@@ -54,14 +54,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   ])
   if (!brand) return {}
 
-  const ogPath = brand.ogImageMediaId
-    ? ((
-        await db.media.findUnique({
-          where: { id: brand.ogImageMediaId },
-          select: { storagePath: true },
-        })
-      )?.storagePath ?? null)
+  const ogMedia = brand.ogImageMediaId
+    ? await db.media.findUnique({
+        where: { id: brand.ogImageMediaId },
+        select: { storagePath: true, alt: true },
+      })
     : null
+  const ogPath = brand.ogImageMediaId ? (ogMedia?.storagePath ?? null) : null
 
   return pageMetadata({
     title: brand.seoTitle ?? brand.name,
@@ -70,6 +69,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     canonicalUrl: brand.canonicalUrl,
     robots: { index: brand.robotsIndex, follow: brand.robotsFollow },
     ogImagePath: ogPath,
+    ogImageAlt: ogMedia?.alt ?? null,
     titleTemplate: seoSetting?.defaultMetaTitleTemplate ?? null,
     defaultDescription: seoSetting?.defaultMetaDescription ?? null,
   })
@@ -367,7 +367,7 @@ export default async function BrandPage({ params }: Props) {
                     {img ? (
                       <Image
                         src={mediaUrl(img.media.storagePath)}
-                        alt={product.title}
+                        alt={img.alt ?? img.media.alt ?? product.title}
                         fill
                         className="object-contain p-3"
                         sizes="(max-width: 1360px) 25vw, 320px"

@@ -32,7 +32,7 @@ export type ReplacementMatch = CrossRefRow & {
     descriptionShort: string | null
     status: string
     brand: { name: string; slug: string } | null
-    images: Array<{ media: { storagePath: string; alt: string | null } }>
+    images: Array<{ alt: string | null; media: { storagePath: string; alt: string | null } }>
   }
 }
 
@@ -53,7 +53,7 @@ const loadAllCrossReferences = unstable_cache(
             images: {
               orderBy: { position: 'asc' },
               take: 1,
-              include: { media: { select: { storagePath: true, alt: true } } },
+              select: { alt: true, media: { select: { storagePath: true, alt: true } } },
             },
           },
         },
