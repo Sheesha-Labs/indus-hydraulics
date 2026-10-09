@@ -2,6 +2,7 @@
 
 import { revalidatePath } from 'next/cache'
 import { invalidateBlogPosts } from '../../../../../lib/cache-tags'
+import { notifyIndexNow } from '../../../../../lib/indexnow'
 import { redirect } from 'next/navigation'
 import { z } from 'zod'
 import { db, Prisma, syncBlogPostLinks } from '@indus/db'
@@ -194,6 +195,7 @@ export async function savePost(formData: FormData) {
   revalidatePath('/admin/blog')
   revalidatePath('/blog')
   revalidatePath(`/blog/${slug}`)
+  notifyIndexNow([`/blog/${slug}`])
   // The homepage rail and the blog index read through `unstable_cache` on the
   // `blog-posts` tag. Without this purge an edit is invisible on the
   // storefront until the tag expires on its own.
@@ -388,6 +390,7 @@ export async function updateBlogPostSeo(formData: FormData): Promise<Result<void
     revalidatePath(`/admin/blog/${parsed.id}`)
     invalidateBlogPosts()
     revalidatePath(`/blog/${before.slug}`)
+    notifyIndexNow([`/blog/${before.slug}`])
     revalidatePath('/admin/seo/inspector')
     return ok(undefined)
   } catch (err) {
@@ -566,5 +569,6 @@ function revalidateBlogPost(id: string, slug: string) {
   revalidatePath(`/admin/blog/${id}`)
   revalidatePath('/blog')
   revalidatePath(`/blog/${slug}`)
+  notifyIndexNow([`/blog/${slug}`])
   invalidateBlogPosts()
 }

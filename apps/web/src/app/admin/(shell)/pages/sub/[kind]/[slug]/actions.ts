@@ -26,6 +26,7 @@ import {
 } from '@indus/domain'
 import { auth } from '../../../../../../../lib/admin-auth'
 import { invalidatePageContent } from '../../../../../../../lib/cache-tags'
+import { notifyIndexNow } from '../../../../../../../lib/indexnow'
 import { ROLES, requireRole } from '../../../../../../../lib/rbac'
 
 export type SaveSubPageResult =
@@ -79,7 +80,10 @@ async function persist(
   // second kind existed, and a missed purge looks exactly like a cache that
   // has not expired.
   const publicPath = getSubPageKind(kind)?.publicPath
-  if (publicPath) revalidatePath(`${publicPath}/${slug}`)
+  if (publicPath) {
+    revalidatePath(`${publicPath}/${slug}`)
+    notifyIndexNow([`${publicPath}/${slug}`])
+  }
   revalidatePath(`/admin/pages/sub/${kind}/${slug}`)
   revalidatePath(`/admin/pages/sub/${kind}`)
   return { status: 'ok', message: 'Saved.' }

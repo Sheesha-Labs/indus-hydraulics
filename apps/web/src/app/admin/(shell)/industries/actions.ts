@@ -2,6 +2,7 @@
 
 import { revalidatePath } from 'next/cache'
 import { invalidateIndustries } from '../../../../lib/cache-tags'
+import { notifyIndustryIndexNow } from '../../../../lib/indexnow'
 import { z } from 'zod'
 import { db } from '@indus/db'
 import { auth } from '../../../../lib/admin-auth'
@@ -110,6 +111,7 @@ export async function updateIndustry(formData: FormData): Promise<Result<void>> 
 
     revalidatePath(`/admin/industries`)
     invalidateIndustries()
+    notifyIndustryIndexNow(slug)
     return ok(undefined)
   } catch (err) {
     return failFromError(err)
