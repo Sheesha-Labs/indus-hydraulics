@@ -4,6 +4,7 @@ import { revalidatePath } from 'next/cache'
 import { z } from 'zod'
 import { db } from '@indus/db'
 import { auth } from '../../../../lib/admin-auth'
+import { notifyIndexNow } from '../../../../lib/indexnow'
 import { ROLES, requireRole } from '../../../../lib/rbac'
 import { fail, failFromError, ok, type Result } from '../../../../lib/result'
 
@@ -26,6 +27,7 @@ import { fail, failFromError, ok, type Result } from '../../../../lib/result'
 function revalidateServiceSurfaces(slug: string): void {
   revalidatePath('/services')
   revalidatePath(`/services/${slug}`)
+  notifyIndexNow([`/services/${slug}`])
   revalidatePath('/admin/services')
   // The index grid is prerendered and rolls up all published cases, so a
   // status or card change has to reach it as well as the case's own page.
