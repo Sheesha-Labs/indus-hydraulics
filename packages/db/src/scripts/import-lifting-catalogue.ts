@@ -1,6 +1,13 @@
 /**
- * Load the Lifting & Rigging vertical: its category tree, its spec template,
- * the category page bands, and product families with their size tables.
+ * Load a catalogue payload: its category tree, its spec template, the category
+ * page bands, and product families with their size tables.
+ *
+ * Written for the Lifting & Rigging vertical and since used for fittings too
+ * (`data/hd-stainless-adapters`, `data/hd-instrumentation-fittings`). A payload
+ * may name an existing spec template (`specTemplateSlug`) instead of carrying
+ * one, may set a brand (`brandSlug`), and its size-table rows may carry the
+ * fitting columns (`portLabel`, `port2Label`, `port3Label`, competitor
+ * equivalent) as well as `dimensions`.
  *
  * The payload, `data/<payload>/catalogue.json`, is built outside the repo from
  * a supplier's catalogue export and reviewed before it is loaded (the H-Quality
@@ -88,6 +95,15 @@ type Variant = {
   position: number
   /** Size label, grade and every numeric column — see `@indus/domain/variant-columns`. */
   dimensions: Record<string, string | number>
+  /** Fitting columns. Optional; a lifting row carries none of them. */
+  portLabel?: string | null
+  port2Label?: string | null
+  port3Label?: string | null
+  competitorBrand?: string | null
+  competitorMpn?: string | null
+  /** Hose bore: SAE dash size and the inch bore as printed. */
+  hoseDash?: number | null
+  hoseInch?: string | null
 }
 type Entry = {
   sku: string
@@ -102,7 +118,8 @@ type Entry = {
   faqs: { question: string; answer: string }[]
   specs: Spec[]
   searchAliases: string[]
-  images: { file: string; alt: string }[]
+  /** `caption` is internal provenance (`Media.caption`), never rendered. */
+  images: { file: string; alt: string; caption?: string | null }[]
   variants: Variant[]
   crossReferences: { competitorBrand: string; competitorMpn: string; compatibility: CrossRefCompatibility }[]
 }
@@ -128,7 +145,11 @@ type CategoryEntry = {
 type Payload = {
   source: string
   imageDir: string
-  specTemplate: SpecTemplatePayload
+  /** Either a template to upsert, or the slug of one that already exists. */
+  specTemplate?: SpecTemplatePayload
+  specTemplateSlug?: string
+  /** Brand for every product in the payload. Omitted = no brand. */
+  brandSlug?: string
   categories: CategoryEntry[]
   products: Entry[]
   /** SKUs that `--publish` leaves as drafts. See HELD FAMILIES above. */
@@ -272,12 +293,18 @@ async function main() {
 
   // ── Spec template ─────────────────────────────────────────────────────────
   let templateId: string
-  if (dryRun) {
+  if (!payload.specTemplate) {
+    if (!payload.specTemplateSlug) throw new Error('payload needs specTemplate or specTemplateSlug')
+    const t = await db.specTemplate.findUnique({ where: { slug: payload.specTemplateSlug }, select: { id: true } })
+    if (!t) throw new Error(`spec template ${payload.specTemplateSlug} does not exist`)
+    templateId = t.id
+    console.log(`[template] using existing ${payload.specTemplateSlug}`)
+  } else if (dryRun) {
     const t = await db.specTemplate.findUnique({ where: { slug: payload.specTemplate.slug }, select: { id: true } })
     templateId = t?.id ?? 'dry-run'
     console.log(`[dry-run] ${t ? 'update' : 'create'} spec template ${payload.specTemplate.slug}`)
   } else {
-    const r = await upsertSpecTemplate(payload.specTemplate, db)
+    const r = await upsertSpecTemplate(payload.specTemplate!, db)
     templateId = r.id
     console.log(`[template] ${r.outcome} ${r.slug} (${r.fieldsCreated} fields created, ${r.fieldsUpdated} updated)`)
   }
@@ -348,6 +375,12 @@ async function main() {
   }
 
   // ── Products ──────────────────────────────────────────────────────────────
+  let brandId: string | null = null
+  if (payload.brandSlug) {
+    const b = await db.brand.findUnique({ where: { slug: payload.brandSlug }, select: { id: true } })
+    if (!b) throw new Error(`brand ${payload.brandSlug} does not exist`)
+    brandId = b.id
+  }
   const parentOf = new Map(payload.categories.map((c) => [c.slug, c.parentSlug]))
   const sb = dryRun ? null : supabase()
   let created = 0
@@ -390,7 +423,7 @@ async function main() {
       title: e.title,
       slug: e.slug,
       categoryId,
-      brandId: null,
+      brandId,
       specTemplateId: templateId,
       descriptionShort: e.descriptionShort,
       descriptionLong: e.descriptionLong,
@@ -442,6 +475,13 @@ async function main() {
             partNumber: v.partNumber,
             position: v.position,
             dimensions: v.dimensions as Prisma.InputJsonValue,
+            portLabel: v.portLabel ?? null,
+            port2Label: v.port2Label ?? null,
+            port3Label: v.port3Label ?? null,
+            competitorBrand: v.competitorBrand ?? null,
+            competitorMpn: v.competitorMpn ?? null,
+            hoseDash: v.hoseDash ?? null,
+            hoseInch: v.hoseInch ?? null,
           })),
         })
         if (e.crossReferences.length > 0) {
@@ -489,7 +529,7 @@ async function main() {
               width: size?.width ?? null,
               height: size?.height ?? null,
               alt: img.alt,
-              caption: null,
+              caption: img.caption ?? null,
             },
             select: { id: true },
           })

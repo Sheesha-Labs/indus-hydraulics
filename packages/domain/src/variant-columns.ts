@@ -30,6 +30,8 @@ export type VariantDimensionKey =
   | 'weldPrepOd'
   | 'weldPrepId'
   | 'W'
+  | 'Y'
+  | 'Y1'
   | 'S1'
   | 'S2'
   | 'S3'
@@ -52,6 +54,12 @@ export type VariantDimensionKey =
   | 'L4'
   | 'L5'
   | 'L6'
+  | 'M1'
+  | 'M2'
+  | 'M3'
+  | 'Q'
+  | 'X'
+  | 'I'
   | LiftingDimensionKey
 
 /**
@@ -59,7 +67,7 @@ export type VariantDimensionKey =
  * figure — an O-ring size is `12.0×2.0`, not a number. They render in their own
  * columns after the numeric ones.
  */
-export type VariantTextKey = 'oRing' | LiftingTextKey
+export type VariantTextKey = 'oRing' | 'supply' | LiftingTextKey
 
 /**
  * Lifting & rigging columns.
@@ -348,6 +356,13 @@ export const VARIANT_DIMENSION_COLUMNS: readonly VariantColumn[] = [
     unit: 'mm',
     help: 'Nut / hex across flats — the spanner size.',
   },
+  /*
+    The US adapter catalogue letters its hex Y, not W, and prints the header as
+    "Y HEX" (and "Y1 HEX" for a second hex). The letter is kept so the table
+    matches the drawing on the same listing; the meaning comes from the header.
+  */
+  { key: 'Y', label: 'Y', unit: 'mm', help: 'Hex across flats — printed "Y HEX" on the manufacturer drawing.' },
+  { key: 'Y1', label: 'Y1', unit: 'mm', help: 'Second hex across flats — printed "Y1 HEX" on the manufacturer drawing.' },
   { key: 'S1', label: 'S1', unit: 'mm', help: 'Dimension S1 on the manufacturer dimension drawing.' },
   { key: 'S2', label: 'S2', unit: 'mm', help: 'Dimension S2 on the manufacturer dimension drawing.' },
   { key: 'S3', label: 'S3', unit: 'mm', help: 'Dimension S3 on the manufacturer dimension drawing.' },
@@ -370,6 +385,12 @@ export const VARIANT_DIMENSION_COLUMNS: readonly VariantColumn[] = [
   { key: 'L4', label: 'L4', unit: 'mm', help: 'Dimension L4 on the manufacturer dimension drawing.' },
   { key: 'L5', label: 'L5', unit: 'mm', help: 'Dimension L5 on the manufacturer dimension drawing.' },
   { key: 'L6', label: 'L6', unit: 'mm', help: 'Dimension L6 on the manufacturer dimension drawing.' },
+  { key: 'M1', label: 'M1', unit: 'mm', help: 'Dimension M1 on the manufacturer dimension drawing.' },
+  { key: 'M2', label: 'M2', unit: 'mm', help: 'Dimension M2 on the manufacturer dimension drawing.' },
+  { key: 'M3', label: 'M3', unit: 'mm', help: 'Dimension M3 on the manufacturer dimension drawing.' },
+  { key: 'Q', label: 'Q', unit: 'mm', help: 'Dimension Q on the manufacturer dimension drawing.' },
+  { key: 'X', label: 'X', unit: 'mm', help: 'Dimension X on the manufacturer dimension drawing.' },
+  { key: 'I', label: 'I', unit: 'mm', help: 'Dimension I on the manufacturer dimension drawing.' },
 ]
 
 export type VariantTextColumn = {
@@ -396,6 +417,8 @@ export const VARIANT_TEXT_COLUMNS: readonly VariantTextColumn[] = [
     label: 'O-ring',
     help: 'O-ring size supplied with the fitting, as inside diameter × section.',
   },
+  // Hose sold by the box, coil, reel or cut length: one row per way it is supplied.
+  { key: 'supply', label: 'Supply', help: 'Length and packaging the part number is supplied in, as published.', lead: true },
 ]
 
 const letter = (key: VariantColumnKey, label: string): VariantColumn => ({
@@ -823,9 +846,13 @@ export function variantColumnUnit(column: VariantColumn): string | null {
  *
  * A port value is either a thread — `1/4"-18`, `G1/2"-14`, `M18X1.5`, carrying
  * a pitch or an `M` prefix — or a flange nominal size, which is a bare inch
- * fraction (`3/4"`). The distinction is visible in the value itself, so it
- * does not need storing. An empty or mixed set falls back to the neutral
- * heading rather than picking a side.
+ * fraction (`3/4"`) or says flange. A single-ended tube fitting — a cap, plug,
+ * nut or sleeve — names the tube it fits (`1/16" tube`, `6 mm tube`). The
+ * distinction is visible in the value itself, so it does not need storing.
+ * A gauge scale (`0–160 psi`) is a range. Anything else that is not a thread
+ * (`3/16" SAE 45° flare`) gets the neutral
+ * `Size`, and an empty or mixed set falls back to `Port` rather than picking a
+ * side.
  */
 export function variantPortHeading(variants: readonly VariantLike[]): string {
   const labels = variants
@@ -837,9 +864,17 @@ export function variantPortHeading(variants: readonly VariantLike[]): string {
   // below, so it does not need storing either.
   const isPipeEnd = (l: string) => /\b(butt weld|socket weld|lp thread|line pipe|npt)\b/i.test(l)
   if (labels.every(isPipeEnd)) return 'End connection'
+  // A gauge is chosen by its scale: `0–160 psi`, `30"Hg vac – 0 – 150 psi`.
+  const isRange = (l: string) => /\b(psi|bar|kpa|mpa)\b|"\s*hg\b/i.test(l) && !/["']\s*(npt|bsp)/i.test(l)
+  if (labels.every(isRange)) return 'Range'
+  // Checked before threads: `1/4" tube, push-in` carries a hyphen that is not a pitch.
+  const isTube = (l: string) => /^[\d.\/\s-]+(?:"|mm)?\s*(?:o\.?d\.?\s*)?tube\b/i.test(l)
+  if (labels.every(isTube)) return 'Tube size'
   const isThread = (l: string) => /^M\d/i.test(l) || l.includes('-')
   if (labels.every(isThread)) return 'Thread'
-  if (labels.every((l) => !isThread(l))) return 'Flange size'
+  const isFlange = (l: string) => /flange/i.test(l) || /^[\d.\/\s]+"?$/.test(l)
+  if (labels.every(isFlange)) return 'Flange size'
+  if (labels.every((l) => !isThread(l))) return 'Size'
   return 'Port'
 }
 
