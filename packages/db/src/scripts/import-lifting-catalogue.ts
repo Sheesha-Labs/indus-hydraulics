@@ -101,6 +101,9 @@ type Variant = {
   port3Label?: string | null
   competitorBrand?: string | null
   competitorMpn?: string | null
+  /** Hose bore: SAE dash size and the inch bore as printed. */
+  hoseDash?: number | null
+  hoseInch?: string | null
 }
 type Entry = {
   sku: string
@@ -477,6 +480,8 @@ async function main() {
             port3Label: v.port3Label ?? null,
             competitorBrand: v.competitorBrand ?? null,
             competitorMpn: v.competitorMpn ?? null,
+            hoseDash: v.hoseDash ?? null,
+            hoseInch: v.hoseInch ?? null,
           })),
         })
         if (e.crossReferences.length > 0) {

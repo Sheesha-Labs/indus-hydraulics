@@ -128,11 +128,19 @@ describe('text columns', () => {
   })
 
   it('does not claim S1 or S2 mean across-flats', () => {
-    expect(VARIANT_TEXT_COLUMNS.map((c) => c.key)).toEqual(['oRing'])
+    expect(VARIANT_TEXT_COLUMNS.map((c) => c.key)).toEqual(['oRing', 'supply'])
     for (const key of ['S1', 'S2'] as const) {
       const col = VARIANT_DIMENSION_COLUMNS.find((c) => c.key === key)!
       expect(col.help).toContain('dimension drawing')
     }
+  })
+})
+
+describe('supply column', () => {
+  it('shows how a hose row is supplied, and only when a row carries it', () => {
+    const rows = [v({ dimensions: { supply: '50 ft box' } }), v({ dimensions: { supply: '100 ft coil' } })]
+    expect(variantTextColumns(rows).map((c) => c.key)).toEqual(['supply'])
+    expect(variantTextColumns([v({ dimensions: {} })])).toEqual([])
   })
 })
 

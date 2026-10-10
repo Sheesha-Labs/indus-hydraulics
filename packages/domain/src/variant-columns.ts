@@ -67,7 +67,7 @@ export type VariantDimensionKey =
  * figure — an O-ring size is `12.0×2.0`, not a number. They render in their own
  * columns after the numeric ones.
  */
-export type VariantTextKey = 'oRing' | LiftingTextKey
+export type VariantTextKey = 'oRing' | 'supply' | LiftingTextKey
 
 /**
  * Lifting & rigging columns.
@@ -417,6 +417,8 @@ export const VARIANT_TEXT_COLUMNS: readonly VariantTextColumn[] = [
     label: 'O-ring',
     help: 'O-ring size supplied with the fitting, as inside diameter × section.',
   },
+  // Hose sold by the box, coil, reel or cut length: one row per way it is supplied.
+  { key: 'supply', label: 'Supply', help: 'Length and packaging the part number is supplied in, as published.', lead: true },
 ]
 
 const letter = (key: VariantColumnKey, label: string): VariantColumn => ({
