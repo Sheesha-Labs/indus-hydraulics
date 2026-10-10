@@ -40,9 +40,18 @@ if [ "${VERCEL_ENV:-}" != "production" ]; then
 fi
 
 # ── Rule 2: skip commits that cannot change the site ─────────────────────────
-# Only documentation and markdown. Deliberately narrow: a wrong answer here
-# ships nothing, and 'nothing shipped' is invisible until someone looks for a
-# change that never arrived.
+# Documentation, markdown, and import payloads under packages/db/data/.
+# Deliberately narrow: a wrong answer here ships nothing, and 'nothing shipped'
+# is invisible until someone looks for a change that never arrived.
+#
+# packages/db/data/ holds catalogue payloads that import scripts write to the
+# database from a developer machine. The app never reads them — the rows are
+# already live by the time the PR merges ("— already applied"). Building for
+# them is not just waste: on 2026-10-10 twelve payload-only PRs merged in one
+# sitting started twelve concurrent production builds, their prerender pools
+# exhausted Supavisor's 200-client cap, and the live site served
+# `(EMAXCONN) max client connections reached` 500s on /c-filter and /c.
+# A commit that also touches code under packages/db/src still builds.
 #
 # On a shallow clone HEAD^ may not exist. Build rather than guess.
 if ! git rev-parse --verify --quiet HEAD^ >/dev/null; then
@@ -50,8 +59,9 @@ if ! git rev-parse --verify --quiet HEAD^ >/dev/null; then
   exit 1
 fi
 
-if git diff --quiet HEAD^ HEAD -- . ':(exclude)docs/' ':(exclude)*.md' ':(exclude)**/*.md'; then
-  echo "production: documentation only — skipping"
+if git diff --quiet HEAD^ HEAD -- . ':(exclude)docs/' ':(exclude)*.md' ':(exclude)**/*.md' \
+  ':(exclude)packages/db/data/'; then
+  echo "production: documentation or import payloads only — skipping"
   exit 0
 fi
 
