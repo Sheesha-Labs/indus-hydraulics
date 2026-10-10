@@ -17,8 +17,10 @@ describe('crossReferenceSeries', () => {
     ['Aeroquip', '2027-4-4', '2027'],
     ['SSP', 'J4U', 'J#U'],
     ['SSP', 'J4-2U', 'J#U'],
-    ['Swagelok', 'SS-400-1-4', 'SS-#00-1'],
-    ['Swagelok', 'SS-400-6', 'SS-#00-6'],
+    ['Swagelok', 'SS-400-1-4', 'SS-#-1'],
+    ['Swagelok', 'SS-400-6', 'SS-#-6'],
+    ['Swagelok', 'SS-810-1-8ST', 'SS-#-1-#ST'],
+    ['Swagelok', 'SS-1210-6-8W', 'SS-#-6-#W'],
     ['Crosby', 'G-209', 'G-209'],
     ['Crosby', '319', '319'],
     ['SAE', '70101', '70101'],
@@ -68,5 +70,8 @@ describe('equivalents', () => {
       'Equivalent to Parker HTX-SS / 13943 and Aeroquip 259-2027 (SAE 70101).'
     )
     expect(equivalenceSentence([])).toBeNull()
+    expect(equivalenceSentence([{ brand: 'MS', series: ['MS51501'], sizes: 1 }])).toBe(
+      'Made to MS51501.'
+    )
   })
 })
