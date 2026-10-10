@@ -4,6 +4,7 @@ import {
   marketBySlug,
   marketPageBySlug,
   pendingMarketPageSlugs,
+  applyMarketCopy,
   releasedMarketPage,
 } from '@indus/domain'
 import { buildWhatsappHref } from '@indus/ui'
@@ -52,8 +53,8 @@ export default async function MarketDraftPreviewPage({ params }: Props) {
 
   const { slug } = await params
   const market = marketBySlug(slug)
-  const page = marketPageBySlug(slug)
-  if (!market || !page) notFound()
+  const record = marketPageBySlug(slug)
+  if (!market || !record) notFound()
 
   const isReleased = releasedMarketPage(slug) !== undefined
   const pending = pendingMarketPageSlugs().length
@@ -69,6 +70,9 @@ export default async function MarketDraftPreviewPage({ params }: Props) {
     // storefront cache is still serving.
     getSubPageContentFresh('market', { name: market.name, slug: market.slug }),
   ])
+  // The preview shows exactly what the storefront will: the record with this
+  // market's Pages & Blocks copy laid over it.
+  const page = applyMarketCopy(record, content.values)
 
   return (
     <>

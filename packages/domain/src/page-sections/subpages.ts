@@ -1,5 +1,5 @@
-import { area, eyebrow, faqList, text } from './fields'
-import type { MasterPageDef, SectionDef, SimpleFieldDef } from './types'
+import { area, choice, eyebrow, faqList, text } from './fields'
+import type { ListFieldDef, MasterPageDef, SectionDef, SimpleFieldDef } from './types'
 
 /**
  * Sub-pages: templated pages that exist once per record rather than once per
@@ -109,6 +109,33 @@ function structural(key: string, label: string, description: string, dataNote: s
 
 // ── the export-market template ───────────────────────────────────────────
 
+/**
+ * Market copy lists. Each is an OVERRIDE of the matching array in the market
+ * record (`market-page-records*.ts`), and like every sub-page override it is
+ * read only when complete: a list with the wrong number of rows, or any row
+ * missing a field, is ignored and the record's own list renders. That is what
+ * lets the admin hold a half-edited list without breaking a live page — and it
+ * is why the counts are stated in each help line. See `applyMarketCopy`.
+ */
+const marketList = (
+  key: string,
+  label: string,
+  itemLabel: string,
+  max: number,
+  help: string,
+  fields: ListFieldDef['fields'],
+): ListFieldDef => ({ key, label, kind: 'list', itemLabel, max, help, fields })
+
+/** The six sector slugs a market card can link to — each is an `Industry.slug`. */
+export const MARKET_SECTOR_OPTIONS = [
+  { value: 'oil-gas', label: 'Oil & gas' },
+  { value: 'marine', label: 'Marine' },
+  { value: 'power', label: 'Power' },
+  { value: 'construction', label: 'Construction' },
+  { value: 'steel', label: 'Steel' },
+  { value: 'mining', label: 'Mining' },
+] as const
+
 export const MARKET_SECTIONS: readonly SectionDef[] = [
   {
     key: 'hero',
@@ -116,13 +143,23 @@ export const MARKET_SECTIONS: readonly SectionDef[] = [
     description: 'Headline, lede, the four facts and the lane map.',
     locked: true,
     dataNote:
-      'The four facts, the lede and the map geometry come from the market record. Use {market} in a heading for the country name.',
+      'Blank fields keep the market record. The map geometry always comes from the record. Use {market} in a heading for the country name. The meta title and description are what Google and AI answer engines show for this country page.',
     fields: [
       overrideEyebrow('eyebrow', 'Eyebrow'),
       override('heading', 'Headline'),
       overrideBody('lede', 'Lede'),
+      marketList('facts', 'The four facts', 'fact', 4, 'Exactly four rows — Typical transit, Freight, Incoterms 2020, Documentation — or the record\u2019s four render.', [
+        text('label', 'Label', { max: 40 }),
+        text('value', 'Value', { max: 300 }),
+      ]),
       override('primary_cta_label', 'Quote button label', { max: 60 }),
       override('whatsapp_cta_label', 'WhatsApp button label', { max: 60 }),
+      override('meta_title', 'Meta title', { max: 70 }),
+      text('meta_description', 'Meta description', {
+        max: 170,
+        optional: true,
+        help: 'Blank keeps the market summary. Aim for 140–160 characters naming the country and what we supply.',
+      }),
     ],
     defaults: {
       eyebrow: null,
@@ -130,14 +167,23 @@ export const MARKET_SECTIONS: readonly SectionDef[] = [
       lede: null,
       primary_cta_label: null,
       whatsapp_cta_label: null,
+      meta_title: null,
+      meta_description: null,
     },
   },
-  structural(
-    'manifest',
-    'Manifest strip',
-    'The navy band of six facts under the hero.',
-    'The six pairs come from the market record.',
-  ),
+  {
+    key: 'manifest',
+    label: 'Manifest strip',
+    description: 'The navy band of six facts under the hero.',
+    dataNote: 'Blank keeps the six pairs in the market record.',
+    fields: [
+      marketList('items', 'Six facts', 'fact', 6, 'Exactly six rows, or the record\u2019s six render.', [
+        text('label', 'Label', { max: 40 }),
+        text('value', 'Value', { max: 80 }),
+      ]),
+    ],
+    defaults: {},
+  },
   structural(
     'operations',
     'Operations band',
@@ -173,21 +219,45 @@ export const MARKET_SECTIONS: readonly SectionDef[] = [
     key: 'freight',
     label: 'Freight and order sequence',
     description: 'The three freight modes and the four-step order sequence.',
-    dataNote: 'The modes, transit bands and gating document come from the market record.',
+    dataNote:
+      'Blank keeps the market record. Keep transit as \u201cN\u2013M days\u201d or \u201cN days\u201d: the comparison bars read the last number in it.',
     fields: [
       overrideEyebrow('eyebrow', 'Left eyebrow'),
       override('heading', 'Left heading'),
+      marketList('modes', 'Freight modes', 'mode', 3, 'Exactly three, fastest realistic first, or the record\u2019s three render.', [
+        text('name', 'Mode', { max: 60 }),
+        text('transit', 'Transit', { max: 30 }),
+        text('route', 'Route', { max: 120 }),
+        text('useCase', 'Use case', { max: 200 }),
+      ]),
       overrideEyebrow('sequence_eyebrow', 'Right eyebrow'),
       override('sequence_heading', 'Right heading'),
+      override('order_step_3', 'Order step 3', { max: 300 }),
+      override('order_step_4', 'Order step 4', { max: 300 }),
     ],
-    defaults: { eyebrow: null, heading: null, sequence_eyebrow: null, sequence_heading: null },
+    defaults: {
+      eyebrow: null,
+      heading: null,
+      sequence_eyebrow: null,
+      sequence_heading: null,
+      order_step_3: null,
+      order_step_4: null,
+    },
   },
-  structural(
-    'sectors',
-    'Industries and brands',
-    'The six sectors this market buys for, and the brands we stock.',
-    'The six sectors come from the market record; the brands are the live catalogue.',
-  ),
+  {
+    key: 'sectors',
+    label: 'Industries and brands',
+    description: 'The six sectors this market buys for, and the brands we stock.',
+    dataNote: 'Blank keeps the six sectors in the market record; the brands are the live catalogue.',
+    fields: [
+      marketList('items', 'Six sectors', 'sector', 6, 'Exactly six, most relevant to this market first, each a different industry — or the record\u2019s six render.', [
+        choice('slug', 'Industry', MARKET_SECTOR_OPTIONS),
+        text('name', 'Name', { max: 40 }),
+        text('description', 'What it buys here', { max: 400 }),
+      ]),
+    ],
+    defaults: {},
+  },
   {
     key: 'gazetteer',
     label: 'City gazetteer',
@@ -205,8 +275,8 @@ export const MARKET_SECTIONS: readonly SectionDef[] = [
     label: 'FAQ',
     description: 'The market-specific questions.',
     dataNote:
-      'The questions and answers come from the market record, and they are published to Google as FAQ structured data — so the schema follows this section being switched on or off.',
-    fields: [overrideEyebrow('eyebrow', 'Eyebrow'), override('heading', 'Heading')],
+      'Blank keeps the market record\u2019s questions. Published to Google as FAQ structured data, so the schema follows this section being switched on or off. Write real questions a buyer in this country asks; at least six.',
+    fields: [overrideEyebrow('eyebrow', 'Eyebrow'), override('heading', 'Heading'), faqList(16)],
     defaults: { eyebrow: null, heading: null },
   },
   {
@@ -287,6 +357,15 @@ export const BRAND_SECTIONS: readonly SectionDef[] = [
     dataNote: 'The documents are the ones attached to this brand’s products.',
     fields: [override('heading', 'Heading')],
     defaults: { heading: null },
+  },
+  {
+    key: 'faq',
+    label: 'FAQ',
+    description: 'Questions buyers ask about this brand.',
+    dataNote:
+      'Published to Google as FAQ structured data, so the markup follows this section being switched on or off. An empty list hides the band. Answer what a buyer of this make actually asks — interchange, documentation, lead time — never marketing phrased as a question.',
+    fields: [overrideEyebrow('eyebrow', 'Eyebrow'), override('heading', 'Heading'), faqList(8)],
+    defaults: { eyebrow: null, heading: null },
   },
   {
     key: 'lead',

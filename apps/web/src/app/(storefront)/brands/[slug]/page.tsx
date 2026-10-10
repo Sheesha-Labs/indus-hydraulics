@@ -4,8 +4,9 @@ import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import Image from 'next/image'
 import { db } from '@indus/db'
-import { buildBrandLd, buildBreadcrumbLd, buildCollectionLd, str } from '@indus/domain'
+import { buildBrandLd, buildBreadcrumbLd, buildCollectionLd, buildFaqLd, str } from '@indus/domain'
 import { JsonLd, LeadCapturePanel, buildWhatsappHref, buildMailtoHref } from '@indus/ui'
+import { CategoryFaqBand, categoryFaqs } from '../../../../components/category/CategoryBands'
 import { mediaUrl } from '../../../../lib/media'
 import { getSubPageContent } from '../../../../lib/page-content'
 import { crawlableImageUrl, pageMetadata, urlFor } from '../../../../lib/seo'
@@ -186,6 +187,11 @@ export default async function BrandPage({ params }: Props) {
   const topSkusCopy = content.values('top_skus')
   const resourcesCopy = content.values('resources')
   const leadCopy = content.values('lead')
+  const faqCopy = content.values('faq')
+  // Same list for the band and the schema, and the schema only while the band
+  // is on — FAQPage markup for questions a reader cannot see is a violation.
+  const brandFaqs = categoryFaqs(faqCopy)
+  const faqLd = content.isOn('faq') && brandFaqs.length > 0 ? buildFaqLd({ faqs: brandFaqs }) : null
 
   /** An override with `{brand}` resolved, or the template's own wording. */
   const over = (values: Parameters<typeof str>[0], key: string, built: string): string =>
@@ -491,6 +497,13 @@ export default async function BrandPage({ params }: Props) {
         </section>
       ) : null,
 
+    faq:
+      brandFaqs.length > 0 ? (
+        <div className="mx-auto max-w-[1440px] px-5 sm:px-8 xl:px-12">
+          <CategoryFaqBand values={faqCopy} />
+        </div>
+      ) : null,
+
     // Lead capture
     lead: (
       <section className="mx-auto max-w-[1440px] px-5 pb-16 sm:px-8 xl:px-12">
@@ -512,7 +525,7 @@ export default async function BrandPage({ params }: Props) {
 
   return (
     <div>
-      <JsonLd data={[brandLd, breadcrumbLd]} />
+      <JsonLd data={faqLd ? [brandLd, breadcrumbLd, faqLd] : [brandLd, breadcrumbLd]} />
       {content.order.map((key) =>
         bands[key] ? <Fragment key={key}>{bands[key]}</Fragment> : null
       )}
