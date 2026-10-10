@@ -163,6 +163,25 @@ describe('variantPortHeading', () => {
     )
   })
 
+  it('reads a labelled flange as a flange size', () => {
+    expect(variantPortHeading([v({ portLabel: '1/2" Code 61 flange' })])).toBe('Flange size')
+  })
+
+  it('reads a single tube end as a tube size, even with a hyphen in it', () => {
+    expect(variantPortHeading([v({ portLabel: '1/16" tube' }), v({ portLabel: '6 mm tube (M12×1.5), L series' })])).toBe(
+      'Tube size',
+    )
+    expect(variantPortHeading([v({ portLabel: '1/4" tube, push-in' }), v({ portLabel: '3/16" tube O.D. (JIC 3/8-24)' })])).toBe(
+      'Tube size',
+    )
+  })
+
+  it('gives any other non-thread end the neutral size heading, not a flange size', () => {
+    expect(variantPortHeading([v({ portLabel: '3/16" SAE 45° flare' }), v({ portLabel: '1/8" plastic tube, 0.08" insert OD' })])).toBe(
+      'Size',
+    )
+  })
+
   it('falls back to the neutral heading on a mixed or empty set', () => {
     expect(variantPortHeading([v({ portLabel: '3/4"' }), v({ portLabel: 'M18X1.5' })])).toBe('Port')
     expect(variantPortHeading([])).toBe('Port')

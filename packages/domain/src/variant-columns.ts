@@ -846,9 +846,12 @@ export function variantColumnUnit(column: VariantColumn): string | null {
  *
  * A port value is either a thread — `1/4"-18`, `G1/2"-14`, `M18X1.5`, carrying
  * a pitch or an `M` prefix — or a flange nominal size, which is a bare inch
- * fraction (`3/4"`). The distinction is visible in the value itself, so it
- * does not need storing. An empty or mixed set falls back to the neutral
- * heading rather than picking a side.
+ * fraction (`3/4"`) or says flange. A single-ended tube fitting — a cap, plug,
+ * nut or sleeve — names the tube it fits (`1/16" tube`, `6 mm tube`). The
+ * distinction is visible in the value itself, so it does not need storing.
+ * Anything else that is not a thread (`3/16" SAE 45° flare`) gets the neutral
+ * `Size`, and an empty or mixed set falls back to `Port` rather than picking a
+ * side.
  */
 export function variantPortHeading(variants: readonly VariantLike[]): string {
   const labels = variants
@@ -860,9 +863,14 @@ export function variantPortHeading(variants: readonly VariantLike[]): string {
   // below, so it does not need storing either.
   const isPipeEnd = (l: string) => /\b(butt weld|socket weld|lp thread|line pipe|npt)\b/i.test(l)
   if (labels.every(isPipeEnd)) return 'End connection'
+  // Checked before threads: `1/4" tube, push-in` carries a hyphen that is not a pitch.
+  const isTube = (l: string) => /^[\d.\/\s-]+(?:"|mm)?\s*(?:o\.?d\.?\s*)?tube\b/i.test(l)
+  if (labels.every(isTube)) return 'Tube size'
   const isThread = (l: string) => /^M\d/i.test(l) || l.includes('-')
   if (labels.every(isThread)) return 'Thread'
-  if (labels.every((l) => !isThread(l))) return 'Flange size'
+  const isFlange = (l: string) => /flange/i.test(l) || /^[\d.\/\s]+"?$/.test(l)
+  if (labels.every(isFlange)) return 'Flange size'
+  if (labels.every((l) => !isThread(l))) return 'Size'
   return 'Port'
 }
 
