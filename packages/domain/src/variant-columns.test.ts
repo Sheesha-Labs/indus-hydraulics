@@ -182,6 +182,10 @@ describe('variantPortHeading', () => {
     )
   })
 
+  it('reads a gauge scale as a range', () => {
+    expect(variantPortHeading([v({ portLabel: '0–160 psi' }), v({ portLabel: '30"Hg vac – 0 – 150 psi' })])).toBe('Range')
+  })
+
   it('falls back to the neutral heading on a mixed or empty set', () => {
     expect(variantPortHeading([v({ portLabel: '3/4"' }), v({ portLabel: 'M18X1.5' })])).toBe('Port')
     expect(variantPortHeading([])).toBe('Port')

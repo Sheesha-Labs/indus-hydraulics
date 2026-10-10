@@ -849,7 +849,8 @@ export function variantColumnUnit(column: VariantColumn): string | null {
  * fraction (`3/4"`) or says flange. A single-ended tube fitting — a cap, plug,
  * nut or sleeve — names the tube it fits (`1/16" tube`, `6 mm tube`). The
  * distinction is visible in the value itself, so it does not need storing.
- * Anything else that is not a thread (`3/16" SAE 45° flare`) gets the neutral
+ * A gauge scale (`0–160 psi`) is a range. Anything else that is not a thread
+ * (`3/16" SAE 45° flare`) gets the neutral
  * `Size`, and an empty or mixed set falls back to `Port` rather than picking a
  * side.
  */
@@ -863,6 +864,9 @@ export function variantPortHeading(variants: readonly VariantLike[]): string {
   // below, so it does not need storing either.
   const isPipeEnd = (l: string) => /\b(butt weld|socket weld|lp thread|line pipe|npt)\b/i.test(l)
   if (labels.every(isPipeEnd)) return 'End connection'
+  // A gauge is chosen by its scale: `0–160 psi`, `30"Hg vac – 0 – 150 psi`.
+  const isRange = (l: string) => /\b(psi|bar|kpa|mpa)\b|"\s*hg\b/i.test(l) && !/["']\s*(npt|bsp)/i.test(l)
+  if (labels.every(isRange)) return 'Range'
   // Checked before threads: `1/4" tube, push-in` carries a hyphen that is not a pitch.
   const isTube = (l: string) => /^[\d.\/\s-]+(?:"|mm)?\s*(?:o\.?d\.?\s*)?tube\b/i.test(l)
   if (labels.every(isTube)) return 'Tube size'
