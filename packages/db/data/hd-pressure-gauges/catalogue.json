@@ -1,0 +1,853 @@
+{
+ "source": "Hydraulics Direct (US principal) catalogue export 2026-10-09 — pressure gauges, batch 15",
+ "imageDir": "/Users/ayushkbhatia/Documents/Indus Supplier Research/Source Exports/Hydraulics Direct/hd-b15-jpeg",
+ "brandSlug": "indus",
+ "specTemplateSlug": "hydraulic-adapter-spec",
+ "categories": [
+  {
+   "slug": "ic-pressure-gauges",
+   "name": "Pressure Gauges",
+   "parentSlug": "instrumentation-controls",
+   "position": 7,
+   "shortDescription": null,
+   "seoTitle": null,
+   "seoDescription": null,
+   "focusKeyword": null,
+   "bands": {}
+  }
+ ],
+ "products": [
+  {
+   "sku": "IH-GA-201L",
+   "slug": "2-1-2-glycerin-filled-pressure-gauge-stainless-case-1-4-bottom-mount",
+   "title": "2-1/2\" Glycerin-Filled Pressure Gauge, Stainless Case, 1/4\" Bottom Mount",
+   "category": "ic-pressure-gauges",
+   "focusKeyword": "glycerin filled pressure gauge bottom (lower) mount",
+   "descriptionShort": "2-1/2\" Glycerin-Filled Pressure Gauge, Stainless Case, 1/4\" Bottom Mount: brass internals, ASME B40.100, 28 ranges from vacuum, compound and 0–15 psi up to 0–15,000 psi.",
+   "descriptionLong": "<p>A 2-1/2\" dial pressure gauge with a stainless steel case and bezel and copper-alloy (brass) internals, filled with glycerin to damp pointer flutter from pump pulsation and vibration. Stem-mounted on the line or manifold, connection underneath.</p><h3>Specification</h3><ul><li>Dial: 2-1/2\", dual scale psi and bar</li><li>Case and bezel: stainless steel</li><li>Internals: copper alloy (brass) Bourdon tube and socket</li><li>Lens: polycarbonate</li><li>Fill: glycerin</li><li>Connection: 1/4\", bottom (lower) mount</li><li>Standard: ASME B40.100</li></ul><h3>Ranges</h3><p>28 ranges, vacuum, compound and 0–15 psi up to 0–15,000 psi. The Sizes &amp; Part Numbers tab lists every scale.</p><h3>Choosing a range</h3><p>Pick a scale whose full reading is about twice the normal working pressure, so the pointer sits mid-dial and spikes stay on the scale. Brass internals suit oil, water and air; for corrosive media ask for a stainless-internal gauge.</p><h3>How to order</h3><p>Quote the Indus part number, or send the range, mounting and connection thread. Price and lead time are confirmed with the quotation.</p>",
+   "seoTitle": "2-1/2\" Glycerin-Filled Pressure Gauge, Stainless Case, 1/4\" ",
+   "seoDescription": "2-1/2\" Glycerin-Filled Pressure Gauge, Stainless Case, 1/4\" Bottom Mount, brass internals, ASME B40.100: 28 ranges, vacuum, compound and 0–15 psi up to 0–1",
+   "faqs": [
+    {
+     "question": "Why is it glycerin filled?",
+     "answer": "The fill damps the pointer against pulsation and vibration and lubricates the movement, so the reading stays steady and the gauge lasts longer."
+    },
+    {
+     "question": "What media can it measure?",
+     "answer": "Media compatible with brass internals: hydraulic oil, water and air. Ask for a stainless-internal gauge for corrosive media."
+    },
+    {
+     "question": "What thread is the connection?",
+     "answer": "A 1/4\" connection. Tell us the thread your port needs and we will confirm it with the quotation."
+    },
+    {
+     "question": "What is the lead time?",
+     "answer": "Price and lead time are confirmed with the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Body Configuration",
+     "value": "2-1/2\" pressure gauge, bottom (lower) mount",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "body_configuration"
+    },
+    {
+     "group": "Port A",
+     "label": "Port A Thread",
+     "value": "1/4\" connection, bottom (lower) mount",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "port_a_thread"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size Range",
+     "value": "2-1/2\" dial",
+     "unit": null,
+     "position": 2,
+     "isFilterable": false,
+     "templateKey": "nominal_size_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "stainless steel case and bezel, brass internals, polycarbonate lens, glycerin fill",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "material"
+    },
+    {
+     "group": "Compliance",
+     "label": "Applicable Standards",
+     "value": "ASME B40.100",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "applicable_standards"
+    }
+   ],
+   "searchAliases": [
+    "PRO-201L",
+    "201L-254A",
+    "201L-254CB",
+    "201L-254CC",
+    "201L-254CD",
+    "201L-254CE",
+    "201L-254CF",
+    "201L-254CH",
+    "201L-254B",
+    "201L-254C",
+    "201L-254D",
+    "201L-254E",
+    "201L-254F",
+    "201L-254G",
+    "201L-254H",
+    "201L-254I",
+    "201L-254J",
+    "201L-254K",
+    "201L-254L",
+    "201L-254M",
+    "201L-254N",
+    "201L-254O",
+    "201L-254P",
+    "201L-254Q",
+    "201L-254R",
+    "201L-254S",
+    "201L-254T",
+    "201L-254U",
+    "201L-254V"
+   ],
+   "images": [
+    {
+     "file": "IH-GA-201L-01.jpg",
+     "alt": "2-1/2 inch glycerin-filled pressure gauge, stainless case, bottom (lower) mount, dial view",
+     "caption": "Supplier catalogue photo, HD batch 15 (2026-10-10)"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-GA-201L-254A",
+     "position": 0,
+     "portLabel": "30\"Hg vacuum – 0",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-GA-201L-254CB",
+     "position": 1,
+     "portLabel": "30\"Hg vac – 0 – 15 psi",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-GA-201L-254CC",
+     "position": 2,
+     "portLabel": "30\"Hg vac – 0 – 30 psi",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-GA-201L-254CD",
+     "position": 3,
+     "portLabel": "30\"Hg vac – 0 – 60 psi",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-GA-201L-254CE",
+     "position": 4,
+     "portLabel": "30\"Hg vac – 0 – 100 psi",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-GA-201L-254CF",
+     "position": 5,
+     "portLabel": "30\"Hg vac – 0 – 150 psi",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-GA-201L-254CH",
+     "position": 6,
+     "portLabel": "30\"Hg vac – 0 – 300 psi",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-GA-201L-254B",
+     "position": 7,
+     "portLabel": "0 – 15 psi",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-GA-201L-254C",
+     "position": 8,
+     "portLabel": "0 – 30 psi",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-GA-201L-254D",
+     "position": 9,
+     "portLabel": "0 – 60 psi",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-GA-201L-254E",
+     "position": 10,
+     "portLabel": "0 – 100 psi",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-GA-201L-254F",
+     "position": 11,
+     "portLabel": "0 – 160 psi",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-GA-201L-254G",
+     "position": 12,
+     "portLabel": "0 – 200 psi",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-GA-201L-254H",
+     "position": 13,
+     "portLabel": "0 – 300 psi",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-GA-201L-254I",
+     "position": 14,
+     "portLabel": "0 – 400 psi",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-GA-201L-254J",
+     "position": 15,
+     "portLabel": "0 – 500 psi",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-GA-201L-254K",
+     "position": 16,
+     "portLabel": "0 – 600 psi",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-GA-201L-254L",
+     "position": 17,
+     "portLabel": "0 – 800 psi",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-GA-201L-254M",
+     "position": 18,
+     "portLabel": "0 – 1,000 psi",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-GA-201L-254N",
+     "position": 19,
+     "portLabel": "0 – 1,500 psi",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-GA-201L-254O",
+     "position": 20,
+     "portLabel": "0 – 2,000 psi",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-GA-201L-254P",
+     "position": 21,
+     "portLabel": "0 – 3,000 psi",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-GA-201L-254Q",
+     "position": 22,
+     "portLabel": "0 – 4,000 psi",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-GA-201L-254R",
+     "position": 23,
+     "portLabel": "0 – 5,000 psi",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-GA-201L-254S",
+     "position": 24,
+     "portLabel": "0 – 6,000 psi",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-GA-201L-254T",
+     "position": 25,
+     "portLabel": "0 – 7,500 psi",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-GA-201L-254U",
+     "position": 26,
+     "portLabel": "0 – 10,000 psi",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-GA-201L-254V",
+     "position": 27,
+     "portLabel": "0 – 15,000 psi",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    }
+   ],
+   "crossReferences": [],
+   "sourceFamily": "PRO-201L"
+  },
+  {
+   "sku": "IH-GA-202L",
+   "slug": "2-1-2-glycerin-filled-pressure-gauge-stainless-case-1-4-back-mount",
+   "title": "2-1/2\" Glycerin-Filled Pressure Gauge, Stainless Case, 1/4\" Back Mount",
+   "category": "ic-pressure-gauges",
+   "focusKeyword": "glycerin filled pressure gauge back mount",
+   "descriptionShort": "2-1/2\" Glycerin-Filled Pressure Gauge, Stainless Case, 1/4\" Back Mount: brass internals, ASME B40.100, 17 ranges from 0–160 psi up to 0–15,000 psi.",
+   "descriptionLong": "<p>A 2-1/2\" dial pressure gauge with a stainless steel case and bezel and copper-alloy (brass) internals, filled with glycerin to damp pointer flutter from pump pulsation and vibration. Connection at the centre of the back, for mounting through a panel or on a manifold face.</p><h3>Specification</h3><ul><li>Dial: 2-1/2\", dual scale psi and bar</li><li>Case and bezel: stainless steel</li><li>Internals: copper alloy (brass) Bourdon tube and socket</li><li>Lens: polycarbonate</li><li>Fill: glycerin</li><li>Connection: 1/4\", centre back mount</li><li>Standard: ASME B40.100</li></ul><h3>Ranges</h3><p>17 ranges, 0–160 psi up to 0–15,000 psi. The Sizes &amp; Part Numbers tab lists every scale.</p><h3>Choosing a range</h3><p>Pick a scale whose full reading is about twice the normal working pressure, so the pointer sits mid-dial and spikes stay on the scale. Brass internals suit oil, water and air; for corrosive media ask for a stainless-internal gauge.</p><h3>How to order</h3><p>Quote the Indus part number, or send the range, mounting and connection thread. Price and lead time are confirmed with the quotation.</p>",
+   "seoTitle": "2-1/2\" Glycerin-Filled Pressure Gauge, Stainless Case, 1/4\" ",
+   "seoDescription": "2-1/2\" Glycerin-Filled Pressure Gauge, Stainless Case, 1/4\" Back Mount, brass internals, ASME B40.100: 17 ranges, 0–160 psi up to 0–15,000 psi. Quote from ",
+   "faqs": [
+    {
+     "question": "Why is it glycerin filled?",
+     "answer": "The fill damps the pointer against pulsation and vibration and lubricates the movement, so the reading stays steady and the gauge lasts longer."
+    },
+    {
+     "question": "What media can it measure?",
+     "answer": "Media compatible with brass internals: hydraulic oil, water and air. Ask for a stainless-internal gauge for corrosive media."
+    },
+    {
+     "question": "What thread is the connection?",
+     "answer": "A 1/4\" connection. Tell us the thread your port needs and we will confirm it with the quotation."
+    },
+    {
+     "question": "What is the lead time?",
+     "answer": "Price and lead time are confirmed with the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Body Configuration",
+     "value": "2-1/2\" pressure gauge, centre back mount",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "body_configuration"
+    },
+    {
+     "group": "Port A",
+     "label": "Port A Thread",
+     "value": "1/4\" connection, centre back mount",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "port_a_thread"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size Range",
+     "value": "2-1/2\" dial",
+     "unit": null,
+     "position": 2,
+     "isFilterable": false,
+     "templateKey": "nominal_size_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "stainless steel case and bezel, brass internals, polycarbonate lens, glycerin fill",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "material"
+    },
+    {
+     "group": "Compliance",
+     "label": "Applicable Standards",
+     "value": "ASME B40.100",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "applicable_standards"
+    }
+   ],
+   "searchAliases": [
+    "PRO-202L",
+    "202L-254F",
+    "202L-254G",
+    "202L-254H",
+    "202L-254I",
+    "202L-254J",
+    "202L-254K",
+    "202L-254L",
+    "202L-254M",
+    "202L-254N",
+    "202L-254O",
+    "202L-254P",
+    "202L-254Q",
+    "202L-254R",
+    "202L-254S",
+    "202L-254T",
+    "202L-254U",
+    "202L-254V"
+   ],
+   "images": [
+    {
+     "file": "IH-GA-202L-01.jpg",
+     "alt": "2-1/2 inch glycerin-filled pressure gauge, stainless case, centre back mount, dial view",
+     "caption": "Supplier catalogue photo, HD batch 15 (2026-10-10)"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-GA-202L-254F",
+     "position": 0,
+     "portLabel": "0 – 160 psi",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-GA-202L-254G",
+     "position": 1,
+     "portLabel": "0 – 200 psi",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-GA-202L-254H",
+     "position": 2,
+     "portLabel": "0 – 300 psi",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-GA-202L-254I",
+     "position": 3,
+     "portLabel": "0 – 400 psi",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-GA-202L-254J",
+     "position": 4,
+     "portLabel": "0 – 500 psi",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-GA-202L-254K",
+     "position": 5,
+     "portLabel": "0 – 600 psi",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-GA-202L-254L",
+     "position": 6,
+     "portLabel": "0 – 800 psi",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-GA-202L-254M",
+     "position": 7,
+     "portLabel": "0 – 1,000 psi",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-GA-202L-254N",
+     "position": 8,
+     "portLabel": "0 – 1,500 psi",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-GA-202L-254O",
+     "position": 9,
+     "portLabel": "0 – 2,000 psi",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-GA-202L-254P",
+     "position": 10,
+     "portLabel": "0 – 3,000 psi",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-GA-202L-254Q",
+     "position": 11,
+     "portLabel": "0 – 4,000 psi",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-GA-202L-254R",
+     "position": 12,
+     "portLabel": "0 – 5,000 psi",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-GA-202L-254S",
+     "position": 13,
+     "portLabel": "0 – 6,000 psi",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-GA-202L-254T",
+     "position": 14,
+     "portLabel": "0 – 7,500 psi",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-GA-202L-254U",
+     "position": 15,
+     "portLabel": "0 – 10,000 psi",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-GA-202L-254V",
+     "position": 16,
+     "portLabel": "0 – 15,000 psi",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    }
+   ],
+   "crossReferences": [],
+   "sourceFamily": "PRO-202L"
+  },
+  {
+   "sku": "IH-GA-204L",
+   "slug": "2-1-2-glycerin-filled-panel-gauge-front-flange-1-4-back-mount",
+   "title": "2-1/2\" Glycerin-Filled Panel Gauge, Front Flange, 1/4\" Back Mount",
+   "category": "ic-pressure-gauges",
+   "focusKeyword": "glycerin filled pressure gauge back mount",
+   "descriptionShort": "2-1/2\" Glycerin-Filled Panel Gauge, Front Flange, 1/4\" Back Mount: brass internals, ASME B40.100, 6 ranges from vacuum and 0–100 psi up to 0–5,000 psi.",
+   "descriptionLong": "<p>A 2-1/2\" dial pressure gauge with a stainless steel case and bezel and copper-alloy (brass) internals, filled with glycerin to damp pointer flutter from pump pulsation and vibration. Front flange screws to the face of a panel cut-out, connection at the centre of the back.</p><h3>Specification</h3><ul><li>Dial: 2-1/2\", dual scale psi and bar</li><li>Case and bezel: stainless steel</li><li>Internals: copper alloy (brass) Bourdon tube and socket</li><li>Lens: polycarbonate</li><li>Fill: glycerin</li><li>Connection: 1/4\", centre back mount with front flange</li><li>Standard: ASME B40.100</li></ul><h3>Ranges</h3><p>6 ranges, vacuum and 0–100 psi up to 0–5,000 psi. The Sizes &amp; Part Numbers tab lists every scale.</p><h3>Choosing a range</h3><p>Pick a scale whose full reading is about twice the normal working pressure, so the pointer sits mid-dial and spikes stay on the scale. Brass internals suit oil, water and air; for corrosive media ask for a stainless-internal gauge.</p><h3>How to order</h3><p>Quote the Indus part number, or send the range, mounting and connection thread. Price and lead time are confirmed with the quotation.</p>",
+   "seoTitle": "2-1/2\" Glycerin-Filled Panel Gauge, Front Flange, 1/4\" Back ",
+   "seoDescription": "2-1/2\" Glycerin-Filled Panel Gauge, Front Flange, 1/4\" Back Mount, brass internals, ASME B40.100: 6 ranges, vacuum and 0–100 psi up to 0–5,000 psi. Quote f",
+   "faqs": [
+    {
+     "question": "Why is it glycerin filled?",
+     "answer": "The fill damps the pointer against pulsation and vibration and lubricates the movement, so the reading stays steady and the gauge lasts longer."
+    },
+    {
+     "question": "What media can it measure?",
+     "answer": "Media compatible with brass internals: hydraulic oil, water and air. Ask for a stainless-internal gauge for corrosive media."
+    },
+    {
+     "question": "What thread is the connection?",
+     "answer": "A 1/4\" connection. Tell us the thread your port needs and we will confirm it with the quotation."
+    },
+    {
+     "question": "What is the lead time?",
+     "answer": "Price and lead time are confirmed with the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Body Configuration",
+     "value": "2-1/2\" pressure gauge, centre back mount with front flange",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "body_configuration"
+    },
+    {
+     "group": "Port A",
+     "label": "Port A Thread",
+     "value": "1/4\" connection, centre back mount with front flange",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "port_a_thread"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size Range",
+     "value": "2-1/2\" dial",
+     "unit": null,
+     "position": 2,
+     "isFilterable": false,
+     "templateKey": "nominal_size_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "stainless steel case and bezel, brass internals, polycarbonate lens, glycerin fill",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "material"
+    },
+    {
+     "group": "Compliance",
+     "label": "Applicable Standards",
+     "value": "ASME B40.100",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "applicable_standards"
+    }
+   ],
+   "searchAliases": [
+    "PRO-204L",
+    "204L-254A",
+    "204L-254E",
+    "204L-254G",
+    "204L-254K",
+    "204L-254P",
+    "204L-254R"
+   ],
+   "images": [
+    {
+     "file": "IH-GA-204L-01.jpg",
+     "alt": "2-1/2 inch glycerin-filled pressure gauge, stainless case, centre back mount with front flange, dial view",
+     "caption": "Supplier catalogue photo, HD batch 15 (2026-10-10)"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-GA-204L-254A",
+     "position": 0,
+     "portLabel": "30\"Hg vacuum – 0",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-GA-204L-254E",
+     "position": 1,
+     "portLabel": "0 – 100 psi",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-GA-204L-254G",
+     "position": 2,
+     "portLabel": "0 – 200 psi",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-GA-204L-254K",
+     "position": 3,
+     "portLabel": "0 – 600 psi",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-GA-204L-254P",
+     "position": 4,
+     "portLabel": "0 – 3,000 psi",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-GA-204L-254R",
+     "position": 5,
+     "portLabel": "0 – 5,000 psi",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    }
+   ],
+   "crossReferences": [],
+   "sourceFamily": "PRO-204L"
+  }
+ ],
+ "hold": []
+}
