@@ -34,7 +34,12 @@ applies two rules:
 1. **Previews are opt-in** — a preview branch builds only when the commit
    message contains `[preview]`.
 2. **Documentation-only commits skip production too** — if a commit changes
-   nothing outside `docs/` and `*.md`, there is nothing to ship.
+   nothing outside `docs/`, `*.md` and `packages/db/data/`, there is nothing
+   to ship. `packages/db/data/` is import payloads the app never reads; the
+   rows are already in the database when the "— already applied" PR merges.
+   Added 2026-10-10 after twelve payload-only PRs merged in one sitting
+   started twelve concurrent production builds, which exhausted Supavisor's
+   200-client cap and put `EMAXCONN` 500s on the live site.
 
 The second rule is deliberately narrow. A wrong answer there ships nothing, and
 "nothing shipped" stays invisible until someone goes looking for a change that

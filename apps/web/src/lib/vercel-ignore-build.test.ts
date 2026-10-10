@@ -1,5 +1,7 @@
-import { readFileSync } from 'node:fs'
-import { join } from 'node:path'
+import { execFileSync, spawnSync } from 'node:child_process'
+import { mkdirSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from 'node:fs'
+import { tmpdir } from 'node:os'
+import { dirname, join } from 'node:path'
 import { describe, expect, it } from 'vitest'
 
 /**
@@ -63,5 +65,68 @@ describe('vercel ignore build step', () => {
   it('builds rather than guesses when there is no parent commit', () => {
     expect(script).toContain('HEAD^')
     expect(script).toMatch(/rev-parse --verify --quiet HEAD\^/)
+  })
+
+  /**
+   * Runs the real script against a throwaway repository, so the pathspecs are
+   * exercised rather than string-matched. Exit 0 skips, exit 1 builds.
+   */
+  describe('rule 2 in production', () => {
+    function decide(files: Record<string, string>): 'skip' | 'build' {
+      const repo = mkdtempSync(join(tmpdir(), 'ignore-build-'))
+      try {
+        const git = (...args: string[]) =>
+          execFileSync('git', ['-c', 'user.email=t@t', '-c', 'user.name=t', ...args], { cwd: repo })
+        git('init', '-q')
+        writeFileSync(join(repo, 'seed.txt'), 'seed')
+        git('add', '-A')
+        git('commit', '-q', '-m', 'seed')
+        for (const [path, body] of Object.entries(files)) {
+          mkdirSync(dirname(join(repo, path)), { recursive: true })
+          writeFileSync(join(repo, path), body)
+        }
+        git('add', '-A')
+        git('commit', '-q', '-m', 'change')
+        const run = spawnSync('bash', [join(WEB, 'vercel-ignore-build.sh')], {
+          cwd: repo,
+          env: { ...process.env, VERCEL_ENV: 'production' },
+        })
+        if (run.status !== 0 && run.status !== 1) throw new Error(String(run.stderr))
+        return run.status === 0 ? 'skip' : 'build'
+      } finally {
+        rmSync(repo, { recursive: true, force: true })
+      }
+    }
+
+    it('skips a documentation-only commit', () => {
+      expect(decide({ 'docs/x.txt': 'x', 'README.md': 'x' })).toBe('skip')
+    })
+
+    /**
+     * Twelve payload-only PRs merged together on 2026-10-10 started twelve
+     * concurrent production builds and exhausted the database pooler; the live
+     * site served EMAXCONN 500s. The app never reads these files.
+     */
+    it('skips an already-applied import payload', () => {
+      expect(
+        decide({
+          'packages/db/data/hd-example/catalogue.json': '{}',
+          'packages/db/data/hd-example/README.md': 'x',
+        }),
+      ).toBe('skip')
+    })
+
+    it('builds when a payload ships with code', () => {
+      expect(
+        decide({
+          'packages/db/data/hd-example/catalogue.json': '{}',
+          'packages/db/src/x.ts': 'export {}',
+        }),
+      ).toBe('build')
+    })
+
+    it('builds for app code', () => {
+      expect(decide({ 'apps/web/src/x.ts': 'export {}' })).toBe('build')
+    })
   })
 })
