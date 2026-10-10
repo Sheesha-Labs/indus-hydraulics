@@ -77,7 +77,8 @@ describe('VARIANT_DIMENSION_COLUMNS', () => {
   it('only claims a meaning for the columns whose source header states one', () => {
     // `OD` is printed "Tube O.D.", `W` is printed "W- HEX" / "W -NUT", and the
     // hammer union catalogue heads its two weld-prep columns "Weld Prep —
-    // O.D. / I.D.". The five hose columns are the same case: the hose
+    // O.D. / I.D.", and the US adapter catalogue heads its hex "Y HEX" / "Y1
+    // HEX". The five hose columns are the same case: the hose
     // catalogue heads every one of them with what it is — "O.D (mm)", "Min
     // Burst Pressure (Bar)", "Vacuum", "Min Bend Radius (mm)", "Weight
     // (Kg/Mtr)" — so their help repeats the source rather than a legend.
@@ -98,6 +99,8 @@ describe('VARIANT_DIMENSION_COLUMNS', () => {
       'weldPrepOd',
       'weldPrepId',
       'W',
+      'Y',
+      'Y1',
     ])
   })
 })
@@ -125,11 +128,19 @@ describe('text columns', () => {
   })
 
   it('does not claim S1 or S2 mean across-flats', () => {
-    expect(VARIANT_TEXT_COLUMNS.map((c) => c.key)).toEqual(['oRing'])
+    expect(VARIANT_TEXT_COLUMNS.map((c) => c.key)).toEqual(['oRing', 'supply'])
     for (const key of ['S1', 'S2'] as const) {
       const col = VARIANT_DIMENSION_COLUMNS.find((c) => c.key === key)!
       expect(col.help).toContain('dimension drawing')
     }
+  })
+})
+
+describe('supply column', () => {
+  it('shows how a hose row is supplied, and only when a row carries it', () => {
+    const rows = [v({ dimensions: { supply: '50 ft box' } }), v({ dimensions: { supply: '100 ft coil' } })]
+    expect(variantTextColumns(rows).map((c) => c.key)).toEqual(['supply'])
+    expect(variantTextColumns([v({ dimensions: {} })])).toEqual([])
   })
 })
 
@@ -150,6 +161,29 @@ describe('variantPortHeading', () => {
     expect(variantPortHeading([v({ portLabel: '3/4"' }), v({ portLabel: '1.1/4"' })])).toBe(
       'Flange size',
     )
+  })
+
+  it('reads a labelled flange as a flange size', () => {
+    expect(variantPortHeading([v({ portLabel: '1/2" Code 61 flange' })])).toBe('Flange size')
+  })
+
+  it('reads a single tube end as a tube size, even with a hyphen in it', () => {
+    expect(variantPortHeading([v({ portLabel: '1/16" tube' }), v({ portLabel: '6 mm tube (M12×1.5), L series' })])).toBe(
+      'Tube size',
+    )
+    expect(variantPortHeading([v({ portLabel: '1/4" tube, push-in' }), v({ portLabel: '3/16" tube O.D. (JIC 3/8-24)' })])).toBe(
+      'Tube size',
+    )
+  })
+
+  it('gives any other non-thread end the neutral size heading, not a flange size', () => {
+    expect(variantPortHeading([v({ portLabel: '3/16" SAE 45° flare' }), v({ portLabel: '1/8" plastic tube, 0.08" insert OD' })])).toBe(
+      'Size',
+    )
+  })
+
+  it('reads a gauge scale as a range', () => {
+    expect(variantPortHeading([v({ portLabel: '0–160 psi' }), v({ portLabel: '30"Hg vac – 0 – 150 psi' })])).toBe('Range')
   })
 
   it('falls back to the neutral heading on a mixed or empty set', () => {
