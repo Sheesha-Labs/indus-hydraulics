@@ -64,7 +64,7 @@ const SIZE = '\u0000'
  *
  *   Parker   `4-2 HTX-SS`    → `HTX-SS`     Aeroquip `259-2027-4-2` → `259-2027`
  *   Parker   `19243-4-4`     → `19243`      SSP      `J4-2U`        → `J#U`
- *   Swagelok `SS-400-1-4`    → `SS-#00-1`   Crosby   `G-209`        → `G-209`
+ *   Swagelok `SS-400-1-4`    → `SS-#-1`   Crosby   `G-209`        → `G-209`
  *
  * Sizes are one- or two-digit dash numbers (a -32 is the largest common
  * size). Three- and four-digit numbers are style codes and are kept, which is
@@ -78,14 +78,16 @@ export function crossReferenceSeries(brand: string, mpn: string): string {
 
   let s: string
   if (/^swagelok$/i.test(brand)) {
-    // SS-400-1-4: material, tube size (400 = 1/4″), style (1 = male
-    // connector), then a pipe size only when a fourth part is present. The
-    // style code is what defines the series, so only the sizes go.
+    // SS-810-1-8ST: material, tube size (100–600, 810, 1010 … 3200, or 6M0
+    // metric), style (1 = male connector, 6 = reducing union …), then a port
+    // size — bare, or with its thread/weld suffix (8ST, 4W) — only when a
+    // fourth part is present. The style code defines the series; sizes go.
     const parts = m.split('-')
     s = parts
       .map((t, i) => {
-        if (/^\d{1,2}00$/.test(t)) return `${SIZE}00`
-        if (i === parts.length - 1 && parts.length >= 4 && /^\d{1,2}$/.test(t)) return SIZE
+        if (/^\d{1,2}(?:00|10)$/.test(t) || /^\d{1,2}M0$/.test(t)) return SIZE
+        if (i === parts.length - 1 && parts.length >= 4)
+          return t.replace(/^\d{1,2}(?=[A-Z]*$)/, SIZE)
         return t
       })
       .join('-')
@@ -178,7 +180,12 @@ export function equivalenceSentence(summaries: readonly SeriesSummary[]): string
   const makers = summaries.filter((s) => !isStandardDesignation(s.brand))
   const standards = summaries.filter((s) => isStandardDesignation(s.brand))
   if (makers.length === 0 && standards.length === 0) return null
-  const name = (s: SeriesSummary) => `${s.brand} ${s.series.slice(0, 2).join(' / ')}`
+  // A designation that already carries its prefix (MS51501) is not printed
+  // twice ("MS MS51501").
+  const name = (s: SeriesSummary) => {
+    const series = s.series.slice(0, 2).join(' / ')
+    return series.startsWith(s.brand) ? series : `${s.brand} ${series}`
+  }
   const list = (items: string[]) =>
     items.length <= 1
       ? items.join('')
