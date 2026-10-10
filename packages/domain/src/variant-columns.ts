@@ -30,6 +30,8 @@ export type VariantDimensionKey =
   | 'weldPrepOd'
   | 'weldPrepId'
   | 'W'
+  | 'Y'
+  | 'Y1'
   | 'S1'
   | 'S2'
   | 'S3'
@@ -52,6 +54,12 @@ export type VariantDimensionKey =
   | 'L4'
   | 'L5'
   | 'L6'
+  | 'M1'
+  | 'M2'
+  | 'M3'
+  | 'Q'
+  | 'X'
+  | 'I'
   | LiftingDimensionKey
 
 /**
@@ -348,6 +356,13 @@ export const VARIANT_DIMENSION_COLUMNS: readonly VariantColumn[] = [
     unit: 'mm',
     help: 'Nut / hex across flats — the spanner size.',
   },
+  /*
+    The US adapter catalogue letters its hex Y, not W, and prints the header as
+    "Y HEX" (and "Y1 HEX" for a second hex). The letter is kept so the table
+    matches the drawing on the same listing; the meaning comes from the header.
+  */
+  { key: 'Y', label: 'Y', unit: 'mm', help: 'Hex across flats — printed "Y HEX" on the manufacturer drawing.' },
+  { key: 'Y1', label: 'Y1', unit: 'mm', help: 'Second hex across flats — printed "Y1 HEX" on the manufacturer drawing.' },
   { key: 'S1', label: 'S1', unit: 'mm', help: 'Dimension S1 on the manufacturer dimension drawing.' },
   { key: 'S2', label: 'S2', unit: 'mm', help: 'Dimension S2 on the manufacturer dimension drawing.' },
   { key: 'S3', label: 'S3', unit: 'mm', help: 'Dimension S3 on the manufacturer dimension drawing.' },
@@ -370,6 +385,12 @@ export const VARIANT_DIMENSION_COLUMNS: readonly VariantColumn[] = [
   { key: 'L4', label: 'L4', unit: 'mm', help: 'Dimension L4 on the manufacturer dimension drawing.' },
   { key: 'L5', label: 'L5', unit: 'mm', help: 'Dimension L5 on the manufacturer dimension drawing.' },
   { key: 'L6', label: 'L6', unit: 'mm', help: 'Dimension L6 on the manufacturer dimension drawing.' },
+  { key: 'M1', label: 'M1', unit: 'mm', help: 'Dimension M1 on the manufacturer dimension drawing.' },
+  { key: 'M2', label: 'M2', unit: 'mm', help: 'Dimension M2 on the manufacturer dimension drawing.' },
+  { key: 'M3', label: 'M3', unit: 'mm', help: 'Dimension M3 on the manufacturer dimension drawing.' },
+  { key: 'Q', label: 'Q', unit: 'mm', help: 'Dimension Q on the manufacturer dimension drawing.' },
+  { key: 'X', label: 'X', unit: 'mm', help: 'Dimension X on the manufacturer dimension drawing.' },
+  { key: 'I', label: 'I', unit: 'mm', help: 'Dimension I on the manufacturer dimension drawing.' },
 ]
 
 export type VariantTextColumn = {

@@ -77,7 +77,8 @@ describe('VARIANT_DIMENSION_COLUMNS', () => {
   it('only claims a meaning for the columns whose source header states one', () => {
     // `OD` is printed "Tube O.D.", `W` is printed "W- HEX" / "W -NUT", and the
     // hammer union catalogue heads its two weld-prep columns "Weld Prep —
-    // O.D. / I.D.". The five hose columns are the same case: the hose
+    // O.D. / I.D.", and the US adapter catalogue heads its hex "Y HEX" / "Y1
+    // HEX". The five hose columns are the same case: the hose
     // catalogue heads every one of them with what it is — "O.D (mm)", "Min
     // Burst Pressure (Bar)", "Vacuum", "Min Bend Radius (mm)", "Weight
     // (Kg/Mtr)" — so their help repeats the source rather than a legend.
@@ -98,6 +99,8 @@ describe('VARIANT_DIMENSION_COLUMNS', () => {
       'weldPrepOd',
       'weldPrepId',
       'W',
+      'Y',
+      'Y1',
     ])
   })
 })
