@@ -1,0 +1,1569 @@
+{
+ "source": "Hydraulics Direct (US principal) catalogue export 2026-10-09 — stainless tubing, batch 14",
+ "imageDir": "/Users/ayushkbhatia/Documents/Indus Supplier Research/Source Exports/Hydraulics Direct/hd-b14-jpeg",
+ "brandSlug": "indus",
+ "specTemplateSlug": "instrumentation-tube-fitting-spec",
+ "categories": [
+  {
+   "slug": "instrumentation-tube-fittings",
+   "name": "Instrumentation Tube Fittings",
+   "parentSlug": "instrumentation-controls",
+   "position": 13,
+   "shortDescription": null,
+   "seoTitle": null,
+   "seoDescription": null,
+   "focusKeyword": null,
+   "bands": {}
+  },
+  {
+   "slug": "stainless-steel-instrumentation-tubing",
+   "name": "Stainless Steel Instrumentation Tubing",
+   "parentSlug": "instrumentation-tube-fittings",
+   "position": 3,
+   "shortDescription": "304 and 316 stainless steel tubing in inch O.D., seamless (ASTM A269/A213) and welded (ASTM A269/A270), 1/8\" to 2\", for compression tube fittings.",
+   "seoTitle": "Stainless Steel Instrumentation Tubing, 304 and 316",
+   "seoDescription": "304 and 316 stainless instrumentation tubing, seamless and welded, 1/8\" to 2\" O.D. in 20 ft lengths, to ASTM A269, A213 and A270.",
+   "focusKeyword": "stainless steel instrumentation tubing",
+   "bands": {
+    "hero": {
+     "intro": "Inch-O.D. stainless steel tubing for instrument, sample and hydraulic lines, in 304 and 316, seamless or welded."
+    },
+    "guidance": {
+     "heading": "Choosing tubing",
+     "body": "Pick the grade (316 for chlorides and sea air, 304 elsewhere), then seamless or welded as the specification requires, then the O.D. and the wall the pressure needs. Compression fittings need annealed tube within their wall range."
+    },
+    "standards": {
+     "heading": "Standards",
+     "body": "Seamless tube is to ASTM A269 and A213; welded tube to ASTM A269 and A270, with 3-A approval."
+    },
+    "faq": {
+     "heading": null,
+     "items": [
+      {
+       "q": "What lengths do you supply?",
+       "a": "20 ft lengths, with a 200 ft minimum order."
+      }
+     ]
+    }
+   }
+  }
+ ],
+ "products": [
+  {
+   "sku": "IH-TB-ST4",
+   "slug": "304-stainless-steel-seamless-tubing-inch",
+   "title": "304 Stainless Steel Seamless Tubing, Inch",
+   "category": "stainless-steel-instrumentation-tubing",
+   "focusKeyword": "304 stainless steel seamless tubing",
+   "descriptionShort": "304 Stainless Steel Seamless Tubing, Inch: 28 sizes, 1/8\" to 1-1/2\" O.D., 0.028\" to 0.134\" wall, to ASTM A269 and ASTM A213.",
+   "descriptionLong": "<p>304 stainless steel seamless tubing in inch outside diameters, for instrument, sample, hydraulic and process lines made up with compression tube fittings. It is seamless, with no weld seam.</p><h3>Specification</h3><ul><li>Grade: 304 stainless steel</li><li>Standards: ASTM A269 and ASTM A213</li><li>Outside diameter: 1/8\" to 1-1/2\" O.D.</li><li>Wall: 0.028\" to 0.134\" wall</li><li>Supplied in 20 ft lengths; minimum order 200 ft</li></ul><h3>Sizes</h3><p>28 part numbers: each is one O.D. in one wall thickness. The Sizes &amp; Part Numbers tab lists them.</p><h3>Pressure rating</h3><p>The manufacturer publishes no pressure rating. A tube holds what its O.D., wall, grade and temperature allow, and the fittings must suit the same wall; tell us the working pressure and temperature and we will confirm the wall to use.</p><h3>Using it with tube fittings</h3><p>Compression fittings grip on the tube O.D.: use fully annealed tube of the right hardness, cut it square, deburr it, and stay inside the wall range the fitting maker allows for each size.</p><h3>How to order</h3><p>Quote the Indus part number, or send the O.D., wall and length. Price, lead time and freight are confirmed with the quotation.</p>",
+   "seoTitle": "304 Stainless Steel Seamless Tubing, Inch",
+   "seoDescription": "304 stainless seamless tubing to ASTM A269 and ASTM A213: 1/8\" to 1-1/2\" O.D., 0.028\" to 0.134\" wall, 20 ft lengths. Quote from Indus Hydraulics, UAE.",
+   "faqs": [
+    {
+     "question": "What lengths is it supplied in?",
+     "answer": "20 ft lengths, with a minimum order of 200 ft."
+    },
+    {
+     "question": "Is it seamless?",
+     "answer": "Yes, seamless tube to ASTM A269 and A213."
+    },
+    {
+     "question": "What pressure is it rated for?",
+     "answer": "The manufacturer publishes no rating. Tell us the O.D., wall, working pressure and temperature and we will confirm it."
+    },
+    {
+     "question": "What is the lead time?",
+     "answer": "Price, lead time and freight are confirmed with the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Body Configuration",
+     "value": "seamless tubing",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "body_configuration"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size Range",
+     "value": "1/8\" to 1-1/2\" O.D.",
+     "unit": null,
+     "position": 1,
+     "isFilterable": false,
+     "templateKey": "nominal_size_range"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Wall Thickness Range",
+     "value": "0.028\" to 0.134\" wall",
+     "unit": null,
+     "position": 2,
+     "isFilterable": false,
+     "templateKey": "wall_thickness"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "304 stainless steel",
+     "unit": null,
+     "position": 3,
+     "isFilterable": true,
+     "templateKey": "material"
+    },
+    {
+     "group": "Compliance",
+     "label": "Applicable Standards",
+     "value": "ASTM A269 and ASTM A213",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "applicable_standards"
+    }
+   ],
+   "searchAliases": [
+    "ST4",
+    "ST4-02-0.028",
+    "ST4-04-0.035",
+    "ST4-04-0.049",
+    "ST4-04-0.065",
+    "ST4-05-0.035",
+    "ST4-06-0.035",
+    "ST4-06-0.049",
+    "ST4-06-0.065",
+    "ST4-08-0.035",
+    "ST4-08-0.049",
+    "ST4-08-0.065",
+    "ST4-08-0.083",
+    "ST4-10-0.035",
+    "ST4-10-0.049",
+    "ST4-10-0.065",
+    "ST4-12-0.035",
+    "ST4-12-0.049",
+    "ST4-12-0.065",
+    "ST4-12-0.095",
+    "ST4-12-0.109",
+    "ST4-16-0.035",
+    "ST4-16-0.049",
+    "ST4-16-0.065",
+    "ST4-16-0.083",
+    "ST4-16-0.095",
+    "ST4-16-0.120",
+    "ST4-20-0.065",
+    "ST4-24-0.134"
+   ],
+   "images": [
+    {
+     "file": "IH-TB-ST4-01.jpg",
+     "alt": "304 stainless steel seamless tubing, cut lengths",
+     "caption": "Supplier catalogue photo, HD batch 14 (2026-10-10)"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-TB-ST4-02-0.028",
+     "position": 0,
+     "portLabel": "1/8\" O.D. tube, 0.028\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-ST4-04-0.035",
+     "position": 1,
+     "portLabel": "1/4\" O.D. tube, 0.035\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-ST4-04-0.049",
+     "position": 2,
+     "portLabel": "1/4\" O.D. tube, 0.049\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-ST4-04-0.065",
+     "position": 3,
+     "portLabel": "1/4\" O.D. tube, 0.065\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-ST4-05-0.035",
+     "position": 4,
+     "portLabel": "5/16\" O.D. tube, 0.035\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-ST4-06-0.035",
+     "position": 5,
+     "portLabel": "3/8\" O.D. tube, 0.035\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-ST4-06-0.049",
+     "position": 6,
+     "portLabel": "3/8\" O.D. tube, 0.049\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-ST4-06-0.065",
+     "position": 7,
+     "portLabel": "3/8\" O.D. tube, 0.065\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-ST4-08-0.035",
+     "position": 8,
+     "portLabel": "1/2\" O.D. tube, 0.035\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-ST4-08-0.049",
+     "position": 9,
+     "portLabel": "1/2\" O.D. tube, 0.049\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-ST4-08-0.065",
+     "position": 10,
+     "portLabel": "1/2\" O.D. tube, 0.065\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-ST4-08-0.083",
+     "position": 11,
+     "portLabel": "1/2\" O.D. tube, 0.083\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-ST4-10-0.035",
+     "position": 12,
+     "portLabel": "5/8\" O.D. tube, 0.035\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-ST4-10-0.049",
+     "position": 13,
+     "portLabel": "5/8\" O.D. tube, 0.049\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-ST4-10-0.065",
+     "position": 14,
+     "portLabel": "5/8\" O.D. tube, 0.065\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-ST4-12-0.035",
+     "position": 15,
+     "portLabel": "3/4\" O.D. tube, 0.035\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-ST4-12-0.049",
+     "position": 16,
+     "portLabel": "3/4\" O.D. tube, 0.049\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-ST4-12-0.065",
+     "position": 17,
+     "portLabel": "3/4\" O.D. tube, 0.065\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-ST4-12-0.095",
+     "position": 18,
+     "portLabel": "3/4\" O.D. tube, 0.095\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-ST4-12-0.109",
+     "position": 19,
+     "portLabel": "3/4\" O.D. tube, 0.109\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-ST4-16-0.035",
+     "position": 20,
+     "portLabel": "1\" O.D. tube, 0.035\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-ST4-16-0.049",
+     "position": 21,
+     "portLabel": "1\" O.D. tube, 0.049\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-ST4-16-0.065",
+     "position": 22,
+     "portLabel": "1\" O.D. tube, 0.065\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-ST4-16-0.083",
+     "position": 23,
+     "portLabel": "1\" O.D. tube, 0.083\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-ST4-16-0.095",
+     "position": 24,
+     "portLabel": "1\" O.D. tube, 0.095\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-ST4-16-0.120",
+     "position": 25,
+     "portLabel": "1\" O.D. tube, 0.120\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-ST4-20-0.065",
+     "position": 26,
+     "portLabel": "1-1/4\" O.D. tube, 0.065\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-ST4-24-0.134",
+     "position": 27,
+     "portLabel": "1-1/2\" O.D. tube, 0.134\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    }
+   ],
+   "crossReferences": [],
+   "sourceFamily": "ST4"
+  },
+  {
+   "sku": "IH-TB-ST6",
+   "slug": "316-stainless-steel-seamless-tubing-inch",
+   "title": "316 Stainless Steel Seamless Tubing, Inch",
+   "category": "stainless-steel-instrumentation-tubing",
+   "focusKeyword": "316 stainless steel seamless tubing",
+   "descriptionShort": "316 Stainless Steel Seamless Tubing, Inch: 29 sizes, 1/8\" to 1-1/4\" O.D., 0.020\" to 0.250\" wall, to ASTM A269 and ASTM A213.",
+   "descriptionLong": "<p>316 stainless steel seamless tubing in inch outside diameters, for instrument, sample, hydraulic and process lines made up with compression tube fittings. It is seamless, with no weld seam.</p><h3>Specification</h3><ul><li>Grade: 316 stainless steel</li><li>Standards: ASTM A269 and ASTM A213</li><li>Outside diameter: 1/8\" to 1-1/4\" O.D.</li><li>Wall: 0.020\" to 0.250\" wall</li><li>Supplied in 20 ft lengths; minimum order 200 ft</li></ul><h3>Sizes</h3><p>29 part numbers: each is one O.D. in one wall thickness. The Sizes &amp; Part Numbers tab lists them.</p><h3>Pressure rating</h3><p>The manufacturer publishes no pressure rating. A tube holds what its O.D., wall, grade and temperature allow, and the fittings must suit the same wall; tell us the working pressure and temperature and we will confirm the wall to use.</p><h3>Using it with tube fittings</h3><p>Compression fittings grip on the tube O.D.: use fully annealed tube of the right hardness, cut it square, deburr it, and stay inside the wall range the fitting maker allows for each size.</p><h3>How to order</h3><p>Quote the Indus part number, or send the O.D., wall and length. Price, lead time and freight are confirmed with the quotation.</p>",
+   "seoTitle": "316 Stainless Steel Seamless Tubing, Inch",
+   "seoDescription": "316 stainless seamless tubing to ASTM A269 and ASTM A213: 1/8\" to 1-1/4\" O.D., 0.020\" to 0.250\" wall, 20 ft lengths. Quote from Indus Hydraulics, UAE.",
+   "faqs": [
+    {
+     "question": "What lengths is it supplied in?",
+     "answer": "20 ft lengths, with a minimum order of 200 ft."
+    },
+    {
+     "question": "Is it seamless?",
+     "answer": "Yes, seamless tube to ASTM A269 and A213."
+    },
+    {
+     "question": "What pressure is it rated for?",
+     "answer": "The manufacturer publishes no rating. Tell us the O.D., wall, working pressure and temperature and we will confirm it."
+    },
+    {
+     "question": "What is the lead time?",
+     "answer": "Price, lead time and freight are confirmed with the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Body Configuration",
+     "value": "seamless tubing",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "body_configuration"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size Range",
+     "value": "1/8\" to 1-1/4\" O.D.",
+     "unit": null,
+     "position": 1,
+     "isFilterable": false,
+     "templateKey": "nominal_size_range"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Wall Thickness Range",
+     "value": "0.020\" to 0.250\" wall",
+     "unit": null,
+     "position": 2,
+     "isFilterable": false,
+     "templateKey": "wall_thickness"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "316 stainless steel",
+     "unit": null,
+     "position": 3,
+     "isFilterable": true,
+     "templateKey": "material"
+    },
+    {
+     "group": "Compliance",
+     "label": "Applicable Standards",
+     "value": "ASTM A269 and ASTM A213",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "applicable_standards"
+    }
+   ],
+   "searchAliases": [
+    "ST6",
+    "ST6-02-0.035",
+    "ST6-04-0.020",
+    "ST6-04-0.028",
+    "ST6-04-0.035",
+    "ST6-04-0.049",
+    "ST6-04-0.065",
+    "ST6-05-0.035",
+    "ST6-06-0.035",
+    "ST6-06-0.049",
+    "ST6-06-0.065",
+    "ST6-06-0.095",
+    "ST6-08-0.028",
+    "ST6-08-0.035",
+    "ST6-08-0.049",
+    "ST6-08-0.065",
+    "ST6-10-0.035",
+    "ST6-10-0.049",
+    "ST6-10-0.065",
+    "ST6-12-0.035",
+    "ST6-12-0.049",
+    "ST6-12-0.065",
+    "ST6-16-0.035",
+    "ST6-16-0.049",
+    "ST6-16-0.065",
+    "ST6-16-0.083",
+    "ST6-16-0.095",
+    "ST6-16-0.120",
+    "ST6-20-0.065",
+    "ST6-20-0.250"
+   ],
+   "images": [
+    {
+     "file": "IH-TB-ST6-01.jpg",
+     "alt": "316 stainless steel seamless tubing, cut lengths",
+     "caption": "Supplier catalogue photo, HD batch 14 (2026-10-10)"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-TB-ST6-02-0.035",
+     "position": 0,
+     "portLabel": "1/8\" O.D. tube, 0.035\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-ST6-04-0.020",
+     "position": 1,
+     "portLabel": "1/4\" O.D. tube, 0.020\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-ST6-04-0.028",
+     "position": 2,
+     "portLabel": "1/4\" O.D. tube, 0.028\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-ST6-04-0.035",
+     "position": 3,
+     "portLabel": "1/4\" O.D. tube, 0.035\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-ST6-04-0.049",
+     "position": 4,
+     "portLabel": "1/4\" O.D. tube, 0.049\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-ST6-04-0.065",
+     "position": 5,
+     "portLabel": "1/4\" O.D. tube, 0.065\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-ST6-05-0.035",
+     "position": 6,
+     "portLabel": "5/16\" O.D. tube, 0.035\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-ST6-06-0.035",
+     "position": 7,
+     "portLabel": "3/8\" O.D. tube, 0.035\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-ST6-06-0.049",
+     "position": 8,
+     "portLabel": "3/8\" O.D. tube, 0.049\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-ST6-06-0.065",
+     "position": 9,
+     "portLabel": "3/8\" O.D. tube, 0.065\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-ST6-06-0.095",
+     "position": 10,
+     "portLabel": "3/8\" O.D. tube, 0.095\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-ST6-08-0.028",
+     "position": 11,
+     "portLabel": "1/2\" O.D. tube, 0.028\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-ST6-08-0.035",
+     "position": 12,
+     "portLabel": "1/2\" O.D. tube, 0.035\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-ST6-08-0.049",
+     "position": 13,
+     "portLabel": "1/2\" O.D. tube, 0.049\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-ST6-08-0.065",
+     "position": 14,
+     "portLabel": "1/2\" O.D. tube, 0.065\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-ST6-10-0.035",
+     "position": 15,
+     "portLabel": "5/8\" O.D. tube, 0.035\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-ST6-10-0.049",
+     "position": 16,
+     "portLabel": "5/8\" O.D. tube, 0.049\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-ST6-10-0.065",
+     "position": 17,
+     "portLabel": "5/8\" O.D. tube, 0.065\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-ST6-12-0.035",
+     "position": 18,
+     "portLabel": "3/4\" O.D. tube, 0.035\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-ST6-12-0.049",
+     "position": 19,
+     "portLabel": "3/4\" O.D. tube, 0.049\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-ST6-12-0.065",
+     "position": 20,
+     "portLabel": "3/4\" O.D. tube, 0.065\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-ST6-16-0.035",
+     "position": 21,
+     "portLabel": "1\" O.D. tube, 0.035\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-ST6-16-0.049",
+     "position": 22,
+     "portLabel": "1\" O.D. tube, 0.049\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-ST6-16-0.065",
+     "position": 23,
+     "portLabel": "1\" O.D. tube, 0.065\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-ST6-16-0.083",
+     "position": 24,
+     "portLabel": "1\" O.D. tube, 0.083\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-ST6-16-0.095",
+     "position": 25,
+     "portLabel": "1\" O.D. tube, 0.095\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-ST6-16-0.120",
+     "position": 26,
+     "portLabel": "1\" O.D. tube, 0.120\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-ST6-20-0.065",
+     "position": 27,
+     "portLabel": "1-1/4\" O.D. tube, 0.065\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-ST6-20-0.250",
+     "position": 28,
+     "portLabel": "1-1/4\" O.D. tube, 0.250\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    }
+   ],
+   "crossReferences": [],
+   "sourceFamily": "ST6"
+  },
+  {
+   "sku": "IH-TB-ST4W",
+   "slug": "304-stainless-steel-welded-tubing-inch",
+   "title": "304 Stainless Steel Welded Tubing, Inch",
+   "category": "stainless-steel-instrumentation-tubing",
+   "focusKeyword": "304 stainless steel welded tubing",
+   "descriptionShort": "304 Stainless Steel Welded Tubing, Inch: 25 sizes, 3/16\" to 2\" O.D., 0.028\" to 0.120\" wall, to ASTM A269 and ASTM A270, 3-A.",
+   "descriptionLong": "<p>304 stainless steel welded tubing in inch outside diameters, for instrument, sample, hydraulic and process lines made up with compression tube fittings. It is welded tube.</p><h3>Specification</h3><ul><li>Grade: 304 stainless steel</li><li>Standards: ASTM A269 and ASTM A270, 3-A</li><li>Outside diameter: 3/16\" to 2\" O.D.</li><li>Wall: 0.028\" to 0.120\" wall</li><li>Supplied in 20 ft lengths; minimum order 200 ft</li></ul><h3>Sizes</h3><p>25 part numbers: each is one O.D. in one wall thickness. The Sizes &amp; Part Numbers tab lists them.</p><h3>Pressure rating</h3><p>The manufacturer publishes no pressure rating. A tube holds what its O.D., wall, grade and temperature allow, and the fittings must suit the same wall; tell us the working pressure and temperature and we will confirm the wall to use.</p><h3>Using it with tube fittings</h3><p>Compression fittings grip on the tube O.D.: use fully annealed tube of the right hardness, cut it square, deburr it, and stay inside the wall range the fitting maker allows for each size.</p><h3>How to order</h3><p>Quote the Indus part number, or send the O.D., wall and length. Price, lead time and freight are confirmed with the quotation.</p>",
+   "seoTitle": "304 Stainless Steel Welded Tubing, Inch",
+   "seoDescription": "304 stainless welded tubing to ASTM A269 and ASTM A270, 3-A: 3/16\" to 2\" O.D., 0.028\" to 0.120\" wall, 20 ft lengths. Quote from Indus Hydraulics, UAE.",
+   "faqs": [
+    {
+     "question": "What lengths is it supplied in?",
+     "answer": "20 ft lengths, with a minimum order of 200 ft."
+    },
+    {
+     "question": "Is it seamless?",
+     "answer": "No. It is welded tube to ASTM A269 and A270; choose the seamless range where the specification calls for seamless."
+    },
+    {
+     "question": "What pressure is it rated for?",
+     "answer": "The manufacturer publishes no rating. Tell us the O.D., wall, working pressure and temperature and we will confirm it."
+    },
+    {
+     "question": "What is the lead time?",
+     "answer": "Price, lead time and freight are confirmed with the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Body Configuration",
+     "value": "welded tubing",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "body_configuration"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size Range",
+     "value": "3/16\" to 2\" O.D.",
+     "unit": null,
+     "position": 1,
+     "isFilterable": false,
+     "templateKey": "nominal_size_range"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Wall Thickness Range",
+     "value": "0.028\" to 0.120\" wall",
+     "unit": null,
+     "position": 2,
+     "isFilterable": false,
+     "templateKey": "wall_thickness"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "304 stainless steel",
+     "unit": null,
+     "position": 3,
+     "isFilterable": true,
+     "templateKey": "material"
+    },
+    {
+     "group": "Compliance",
+     "label": "Applicable Standards",
+     "value": "ASTM A269 and ASTM A270, 3-A",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "applicable_standards"
+    }
+   ],
+   "searchAliases": [
+    "ST4W",
+    "WT4-03-0.035",
+    "WT4-04-0.028",
+    "WT4-04-0.035",
+    "WT4-04-0.049",
+    "WT4-05-0.035",
+    "WT4-06-0.049",
+    "WT4-06-0.065",
+    "WT4-08-0.035",
+    "WT4-08-0.049",
+    "WT4-08-0.065",
+    "WT4-10-0.035",
+    "WT4-10-0.049",
+    "WT4-10-0.065",
+    "WT4-12-0.035",
+    "WT4-12-0.049",
+    "WT4-12-0.065",
+    "WT4-12-0.083",
+    "WT4-16-0.035",
+    "WT4-16-0.049",
+    "WT4-16-0.065",
+    "WT4-16-0.120",
+    "WT4-20-0.065",
+    "WT4-24-0.065",
+    "WT4-32-0.065",
+    "WT4-32-0.083"
+   ],
+   "images": [
+    {
+     "file": "IH-TB-ST4W-01.jpg",
+     "alt": "304 stainless steel welded tubing, cut lengths",
+     "caption": "Supplier catalogue photo, HD batch 14 (2026-10-10)"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-TB-WT4-03-0.035",
+     "position": 0,
+     "portLabel": "3/16\" O.D. tube, 0.035\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-WT4-04-0.028",
+     "position": 1,
+     "portLabel": "1/4\" O.D. tube, 0.028\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-WT4-04-0.035",
+     "position": 2,
+     "portLabel": "1/4\" O.D. tube, 0.035\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-WT4-04-0.049",
+     "position": 3,
+     "portLabel": "1/4\" O.D. tube, 0.049\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-WT4-05-0.035",
+     "position": 4,
+     "portLabel": "5/16\" O.D. tube, 0.035\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-WT4-06-0.049",
+     "position": 5,
+     "portLabel": "3/8\" O.D. tube, 0.049\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-WT4-06-0.065",
+     "position": 6,
+     "portLabel": "3/8\" O.D. tube, 0.065\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-WT4-08-0.035",
+     "position": 7,
+     "portLabel": "1/2\" O.D. tube, 0.035\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-WT4-08-0.049",
+     "position": 8,
+     "portLabel": "1/2\" O.D. tube, 0.049\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-WT4-08-0.065",
+     "position": 9,
+     "portLabel": "1/2\" O.D. tube, 0.065\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-WT4-10-0.035",
+     "position": 10,
+     "portLabel": "5/8\" O.D. tube, 0.035\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-WT4-10-0.049",
+     "position": 11,
+     "portLabel": "5/8\" O.D. tube, 0.049\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-WT4-10-0.065",
+     "position": 12,
+     "portLabel": "5/8\" O.D. tube, 0.065\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-WT4-12-0.035",
+     "position": 13,
+     "portLabel": "3/4\" O.D. tube, 0.035\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-WT4-12-0.049",
+     "position": 14,
+     "portLabel": "3/4\" O.D. tube, 0.049\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-WT4-12-0.065",
+     "position": 15,
+     "portLabel": "3/4\" O.D. tube, 0.065\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-WT4-12-0.083",
+     "position": 16,
+     "portLabel": "3/4\" O.D. tube, 0.083\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-WT4-16-0.035",
+     "position": 17,
+     "portLabel": "1\" O.D. tube, 0.035\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-WT4-16-0.049",
+     "position": 18,
+     "portLabel": "1\" O.D. tube, 0.049\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-WT4-16-0.065",
+     "position": 19,
+     "portLabel": "1\" O.D. tube, 0.065\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-WT4-16-0.120",
+     "position": 20,
+     "portLabel": "1\" O.D. tube, 0.120\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-WT4-20-0.065",
+     "position": 21,
+     "portLabel": "1-1/4\" O.D. tube, 0.065\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-WT4-24-0.065",
+     "position": 22,
+     "portLabel": "1-1/2\" O.D. tube, 0.065\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-WT4-32-0.065",
+     "position": 23,
+     "portLabel": "2\" O.D. tube, 0.065\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-WT4-32-0.083",
+     "position": 24,
+     "portLabel": "2\" O.D. tube, 0.083\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    }
+   ],
+   "crossReferences": [],
+   "sourceFamily": "ST4W"
+  },
+  {
+   "sku": "IH-TB-ST6W",
+   "slug": "316-stainless-steel-welded-tubing-inch",
+   "title": "316 Stainless Steel Welded Tubing, Inch",
+   "category": "stainless-steel-instrumentation-tubing",
+   "focusKeyword": "316 stainless steel welded tubing",
+   "descriptionShort": "316 Stainless Steel Welded Tubing, Inch: 23 sizes, 3/16\" to 2\" O.D., 0.028\" to 0.083\" wall, to ASTM A269 and ASTM A270, 3-A.",
+   "descriptionLong": "<p>316 stainless steel welded tubing in inch outside diameters, for instrument, sample, hydraulic and process lines made up with compression tube fittings. It is welded tube.</p><h3>Specification</h3><ul><li>Grade: 316 stainless steel</li><li>Standards: ASTM A269 and ASTM A270, 3-A</li><li>Outside diameter: 3/16\" to 2\" O.D.</li><li>Wall: 0.028\" to 0.083\" wall</li><li>Supplied in 20 ft lengths; minimum order 200 ft</li></ul><h3>Sizes</h3><p>23 part numbers: each is one O.D. in one wall thickness. The Sizes &amp; Part Numbers tab lists them.</p><h3>Pressure rating</h3><p>The manufacturer publishes no pressure rating. A tube holds what its O.D., wall, grade and temperature allow, and the fittings must suit the same wall; tell us the working pressure and temperature and we will confirm the wall to use.</p><h3>Using it with tube fittings</h3><p>Compression fittings grip on the tube O.D.: use fully annealed tube of the right hardness, cut it square, deburr it, and stay inside the wall range the fitting maker allows for each size.</p><h3>How to order</h3><p>Quote the Indus part number, or send the O.D., wall and length. Price, lead time and freight are confirmed with the quotation.</p>",
+   "seoTitle": "316 Stainless Steel Welded Tubing, Inch",
+   "seoDescription": "316 stainless welded tubing to ASTM A269 and ASTM A270, 3-A: 3/16\" to 2\" O.D., 0.028\" to 0.083\" wall, 20 ft lengths. Quote from Indus Hydraulics, UAE.",
+   "faqs": [
+    {
+     "question": "What lengths is it supplied in?",
+     "answer": "20 ft lengths, with a minimum order of 200 ft."
+    },
+    {
+     "question": "Is it seamless?",
+     "answer": "No. It is welded tube to ASTM A269 and A270; choose the seamless range where the specification calls for seamless."
+    },
+    {
+     "question": "What pressure is it rated for?",
+     "answer": "The manufacturer publishes no rating. Tell us the O.D., wall, working pressure and temperature and we will confirm it."
+    },
+    {
+     "question": "What is the lead time?",
+     "answer": "Price, lead time and freight are confirmed with the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Body Configuration",
+     "value": "welded tubing",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "body_configuration"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size Range",
+     "value": "3/16\" to 2\" O.D.",
+     "unit": null,
+     "position": 1,
+     "isFilterable": false,
+     "templateKey": "nominal_size_range"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Wall Thickness Range",
+     "value": "0.028\" to 0.083\" wall",
+     "unit": null,
+     "position": 2,
+     "isFilterable": false,
+     "templateKey": "wall_thickness"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "316 stainless steel",
+     "unit": null,
+     "position": 3,
+     "isFilterable": true,
+     "templateKey": "material"
+    },
+    {
+     "group": "Compliance",
+     "label": "Applicable Standards",
+     "value": "ASTM A269 and ASTM A270, 3-A",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "applicable_standards"
+    }
+   ],
+   "searchAliases": [
+    "ST6W",
+    "WT6-03-0.035",
+    "WT6-04-0.028",
+    "WT6-04-0.035",
+    "WT6-04-0.049",
+    "WT6-05-0.035",
+    "WT6-06-0.049",
+    "WT6-06-0.065",
+    "WT6-08-0.035",
+    "WT6-08-0.049",
+    "WT6-08-0.065",
+    "WT6-10-0.035",
+    "WT6-10-0.049",
+    "WT6-10-0.065",
+    "WT6-12-0.035",
+    "WT6-12-0.049",
+    "WT6-12-0.065",
+    "WT6-16-0.035",
+    "WT6-16-0.049",
+    "WT6-16-0.065",
+    "WT6-20-0.065",
+    "WT6-24-0.065",
+    "WT6-32-0.065",
+    "WT6-32-0.083"
+   ],
+   "images": [
+    {
+     "file": "IH-TB-ST6W-01.jpg",
+     "alt": "316 stainless steel welded tubing, cut lengths",
+     "caption": "Supplier catalogue photo, HD batch 14 (2026-10-10)"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-TB-WT6-03-0.035",
+     "position": 0,
+     "portLabel": "3/16\" O.D. tube, 0.035\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-WT6-04-0.028",
+     "position": 1,
+     "portLabel": "1/4\" O.D. tube, 0.028\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-WT6-04-0.035",
+     "position": 2,
+     "portLabel": "1/4\" O.D. tube, 0.035\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-WT6-04-0.049",
+     "position": 3,
+     "portLabel": "1/4\" O.D. tube, 0.049\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-WT6-05-0.035",
+     "position": 4,
+     "portLabel": "5/16\" O.D. tube, 0.035\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-WT6-06-0.049",
+     "position": 5,
+     "portLabel": "3/8\" O.D. tube, 0.049\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-WT6-06-0.065",
+     "position": 6,
+     "portLabel": "3/8\" O.D. tube, 0.065\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-WT6-08-0.035",
+     "position": 7,
+     "portLabel": "1/2\" O.D. tube, 0.035\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-WT6-08-0.049",
+     "position": 8,
+     "portLabel": "1/2\" O.D. tube, 0.049\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-WT6-08-0.065",
+     "position": 9,
+     "portLabel": "1/2\" O.D. tube, 0.065\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-WT6-10-0.035",
+     "position": 10,
+     "portLabel": "5/8\" O.D. tube, 0.035\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-WT6-10-0.049",
+     "position": 11,
+     "portLabel": "5/8\" O.D. tube, 0.049\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-WT6-10-0.065",
+     "position": 12,
+     "portLabel": "5/8\" O.D. tube, 0.065\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-WT6-12-0.035",
+     "position": 13,
+     "portLabel": "3/4\" O.D. tube, 0.035\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-WT6-12-0.049",
+     "position": 14,
+     "portLabel": "3/4\" O.D. tube, 0.049\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-WT6-12-0.065",
+     "position": 15,
+     "portLabel": "3/4\" O.D. tube, 0.065\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-WT6-16-0.035",
+     "position": 16,
+     "portLabel": "1\" O.D. tube, 0.035\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-WT6-16-0.049",
+     "position": 17,
+     "portLabel": "1\" O.D. tube, 0.049\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-WT6-16-0.065",
+     "position": 18,
+     "portLabel": "1\" O.D. tube, 0.065\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-WT6-20-0.065",
+     "position": 19,
+     "portLabel": "1-1/4\" O.D. tube, 0.065\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-WT6-24-0.065",
+     "position": 20,
+     "portLabel": "1-1/2\" O.D. tube, 0.065\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-WT6-32-0.065",
+     "position": 21,
+     "portLabel": "2\" O.D. tube, 0.065\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-TB-WT6-32-0.083",
+     "position": 22,
+     "portLabel": "2\" O.D. tube, 0.083\" wall",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    }
+   ],
+   "crossReferences": [],
+   "sourceFamily": "ST6W"
+  }
+ ],
+ "hold": []
+}
