@@ -1,0 +1,2314 @@
+{
+ "source": "Hydraulics Direct (US principal) catalogue export 2026-10-09 — SAE flange adapters, batch 10",
+ "imageDir": "/Users/ayushkbhatia/Documents/Indus Supplier Research/Source Exports/Hydraulics Direct/hd-b10-jpeg",
+ "brandSlug": "indus",
+ "specTemplateSlug": "hydraulic-adapter-spec",
+ "categories": [
+  {
+   "slug": "sae-flange-adapters",
+   "name": "SAE Flange Adapters",
+   "parentSlug": "hydraulic-adapters",
+   "position": 19,
+   "shortDescription": null,
+   "seoTitle": null,
+   "seoDescription": null,
+   "focusKeyword": null,
+   "bands": {}
+  }
+ ],
+ "products": [
+  {
+   "sku": "IH-ST-1800",
+   "slug": "steel-jic-37-male-x-code-62-flange-adapter",
+   "title": "Steel JIC 37° Male × Code 62 Flange Adapter",
+   "category": "sae-flange-adapters",
+   "focusKeyword": "jic 37 male x code 62 flange adapter",
+   "descriptionShort": "Steel JIC 37° Male × Code 62 Flange Adapter, forged steel, zinc plated. 15 part numbers, 1/2\" to 2\" JIC × 1/2\" to 2\" flange.",
+   "descriptionLong": "<p>The Steel JIC 37° Male × Code 62 Flange Adapter is a straight flange adapter that connects a JIC hose or tube end to an SAE J518 Code 62 flanged port on a pump, valve or manifold. It is forged carbon steel with trivalent zinc plating.</p><h3>Ends and sealing</h3><ul><li><b>Flange end</b>: SAE J518 Code 62 (high-pressure) flange head, sealed by an O-ring in the flange face and held by a split or one-piece flange clamp; the clamp and bolts are ordered separately.</li><li><b>JIC male end</b>: 37° flare, a metal-to-metal seat on a 74° included cone; SAE J514.</li></ul><h3>Sizes</h3><p>15 part numbers, 1/2\" to 2\" JIC × 1/2\" to 2\" flange. The Sizes &amp; Part Numbers tab gives both ends for every one.</p><h3>Pressure rating</h3><p>The manufacturer states Code 61 adapters for up to 3,000 psi and Code 62 adapters for up to 6,000 psi. The JIC end has its own rating, which falls as size goes up, and the lowest rating in the joint governs. Tell us the size and working pressure and we will confirm it.</p><h3>Code 61 or Code 62</h3><p>Code 62 heads only fit Code 62 ports and clamps: the two codes share the bolt-circle family but differ in head thickness and bolt spacing. Check the port before ordering.</p><h3>How to order</h3><p>Quote the Indus part number, or send the flange code and size and the other end. Price and lead time are confirmed with the quotation.</p>",
+   "seoTitle": "Steel JIC 37° Male x Code 62 Flange Adapter",
+   "seoDescription": "Steel JIC 37° Male x Code 62 Flange Adapter, SAE J518, zinc-plated steel: 15 sizes, 1/2\" to 2\" flange. Quote from Indus Hydraulics, UAE.",
+   "faqs": [
+    {
+     "question": "Does it fit a Code 61 port?",
+     "answer": "No. It has a Code 62 flange head and needs a Code 62 port and clamp."
+    },
+    {
+     "question": "Is the flange clamp included?",
+     "answer": "No. Order the split or one-piece flange clamp and bolts to suit the port."
+    },
+    {
+     "question": "What is it made from?",
+     "answer": "Forged carbon steel with trivalent zinc plating."
+    },
+    {
+     "question": "What pressure is it rated for?",
+     "answer": "The manufacturer states up to 6,000 psi for Code 62 adapters; the JIC end rating falls with size and the lowest rating in the joint governs."
+    },
+    {
+     "question": "What is the lead time?",
+     "answer": "Price and lead time are confirmed with the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Body Configuration",
+     "value": "straight flange adapter",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "body_configuration"
+    },
+    {
+     "group": "Port A",
+     "label": "Port A Thread",
+     "value": "JIC male, 1/2\" to 2\" JIC",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "port_a_thread"
+    },
+    {
+     "group": "Port A",
+     "label": "Port A Sealing",
+     "value": "37° flare, a metal-to-metal seat on a 74° included cone",
+     "unit": null,
+     "position": 2,
+     "isFilterable": false,
+     "templateKey": "port_a_seal"
+    },
+    {
+     "group": "Port B",
+     "label": "Port B Thread",
+     "value": "SAE J518 Code 62 flange, 1/2\" to 2\" flange",
+     "unit": null,
+     "position": 3,
+     "isFilterable": true,
+     "templateKey": "port_b_thread"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size Range",
+     "value": "1/2\" to 2\" flange",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "nominal_size_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "forged carbon steel, trivalent zinc plated",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "material"
+    },
+    {
+     "group": "Compliance",
+     "label": "Applicable Standards",
+     "value": "SAE J518, SAE J514",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "applicable_standards"
+    }
+   ],
+   "searchAliases": [
+    "1800",
+    "1800-08-08",
+    "1800-12-12",
+    "1800-12-16",
+    "1800-16-12",
+    "1800-16-16",
+    "1800-16-20",
+    "1800-16-24",
+    "1800-20-16",
+    "1800-20-20",
+    "1800-20-24",
+    "1800-24-20",
+    "1800-24-24",
+    "1800-24-32",
+    "1800-32-24",
+    "1800-32-32"
+   ],
+   "images": [],
+   "variants": [
+    {
+     "partNumber": "IH-ST-1800-08-08",
+     "position": 0,
+     "portLabel": "1/2\" JIC 37° male (3/4-16)",
+     "port2Label": "1/2\" Code 62 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-1800-12-12",
+     "position": 1,
+     "portLabel": "3/4\" JIC 37° male (1-1/16-12)",
+     "port2Label": "3/4\" Code 62 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-1800-12-16",
+     "position": 2,
+     "portLabel": "3/4\" JIC 37° male (1-1/16-12)",
+     "port2Label": "1\" Code 62 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-1800-16-12",
+     "position": 3,
+     "portLabel": "1\" JIC 37° male (1-5/16-12)",
+     "port2Label": "3/4\" Code 62 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-1800-16-16",
+     "position": 4,
+     "portLabel": "1\" JIC 37° male (1-5/16-12)",
+     "port2Label": "1\" Code 62 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-1800-16-20",
+     "position": 5,
+     "portLabel": "1\" JIC 37° male (1-5/16-12)",
+     "port2Label": "1-1/4\" Code 62 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-1800-16-24",
+     "position": 6,
+     "portLabel": "1\" JIC 37° male (1-5/16-12)",
+     "port2Label": "1-1/2\" Code 62 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-1800-20-16",
+     "position": 7,
+     "portLabel": "1-1/4\" JIC 37° male (1-5/8-12)",
+     "port2Label": "1\" Code 62 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-1800-20-20",
+     "position": 8,
+     "portLabel": "1-1/4\" JIC 37° male (1-5/8-12)",
+     "port2Label": "1-1/4\" Code 62 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-1800-20-24",
+     "position": 9,
+     "portLabel": "1-1/4\" JIC 37° male (1-5/8-12)",
+     "port2Label": "1-1/2\" Code 62 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-1800-24-20",
+     "position": 10,
+     "portLabel": "1-1/2\" JIC 37° male (1-7/8-12)",
+     "port2Label": "1-1/4\" Code 62 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-1800-24-24",
+     "position": 11,
+     "portLabel": "1-1/2\" JIC 37° male (1-7/8-12)",
+     "port2Label": "1-1/2\" Code 62 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-1800-24-32",
+     "position": 12,
+     "portLabel": "1-1/2\" JIC 37° male (1-7/8-12)",
+     "port2Label": "2\" Code 62 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-1800-32-24",
+     "position": 13,
+     "portLabel": "2\" JIC 37° male (2-1/2-12)",
+     "port2Label": "1-1/2\" Code 62 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-1800-32-32",
+     "position": 14,
+     "portLabel": "2\" JIC 37° male (2-1/2-12)",
+     "port2Label": "2\" Code 62 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    }
+   ],
+   "crossReferences": [],
+   "sourceFamily": "1800"
+  },
+  {
+   "sku": "IH-ST-1803",
+   "slug": "steel-jic-37-male-x-code-62-flange-45-elbow",
+   "title": "Steel JIC 37° Male × Code 62 Flange 45° Elbow",
+   "category": "sae-flange-adapters",
+   "focusKeyword": "jic 37 male x code 62 flange 45 elbow",
+   "descriptionShort": "Steel JIC 37° Male × Code 62 Flange 45° Elbow, forged steel, zinc plated. 5 part numbers, 3/4\" to 2\" JIC × 3/4\" to 2\" flange.",
+   "descriptionLong": "<p>The Steel JIC 37° Male × Code 62 Flange 45° Elbow is a 45° elbow flange adapter that connects a JIC hose or tube end to an SAE J518 Code 62 flanged port on a pump, valve or manifold. It is forged carbon steel with trivalent zinc plating.</p><h3>Ends and sealing</h3><ul><li><b>Flange end</b>: SAE J518 Code 62 (high-pressure) flange head, sealed by an O-ring in the flange face and held by a split or one-piece flange clamp; the clamp and bolts are ordered separately.</li><li><b>JIC male end</b>: 37° flare, a metal-to-metal seat on a 74° included cone; SAE J514.</li></ul><h3>Sizes</h3><p>5 part numbers, 3/4\" to 2\" JIC × 3/4\" to 2\" flange. The Sizes &amp; Part Numbers tab gives both ends for every one.</p><h3>Pressure rating</h3><p>The manufacturer states Code 61 adapters for up to 3,000 psi and Code 62 adapters for up to 6,000 psi. The JIC end has its own rating, which falls as size goes up, and the lowest rating in the joint governs. Tell us the size and working pressure and we will confirm it.</p><h3>Code 61 or Code 62</h3><p>Code 62 heads only fit Code 62 ports and clamps: the two codes share the bolt-circle family but differ in head thickness and bolt spacing. Check the port before ordering.</p><h3>How to order</h3><p>Quote the Indus part number, or send the flange code and size and the other end. Price and lead time are confirmed with the quotation.</p>",
+   "seoTitle": "Steel JIC 37° Male x Code 62 Flange 45° Elbow",
+   "seoDescription": "Steel JIC 37° Male x Code 62 Flange 45° Elbow, SAE J518, zinc-plated steel: 5 sizes, 3/4\" to 2\" flange. Quote from Indus Hydraulics, UAE.",
+   "faqs": [
+    {
+     "question": "Does it fit a Code 61 port?",
+     "answer": "No. It has a Code 62 flange head and needs a Code 62 port and clamp."
+    },
+    {
+     "question": "Is the flange clamp included?",
+     "answer": "No. Order the split or one-piece flange clamp and bolts to suit the port."
+    },
+    {
+     "question": "What is it made from?",
+     "answer": "Forged carbon steel with trivalent zinc plating."
+    },
+    {
+     "question": "What pressure is it rated for?",
+     "answer": "The manufacturer states up to 6,000 psi for Code 62 adapters; the JIC end rating falls with size and the lowest rating in the joint governs."
+    },
+    {
+     "question": "What is the lead time?",
+     "answer": "Price and lead time are confirmed with the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Body Configuration",
+     "value": "45° elbow flange adapter",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "body_configuration"
+    },
+    {
+     "group": "Port A",
+     "label": "Port A Thread",
+     "value": "JIC male, 3/4\" to 2\" JIC",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "port_a_thread"
+    },
+    {
+     "group": "Port A",
+     "label": "Port A Sealing",
+     "value": "37° flare, a metal-to-metal seat on a 74° included cone",
+     "unit": null,
+     "position": 2,
+     "isFilterable": false,
+     "templateKey": "port_a_seal"
+    },
+    {
+     "group": "Port B",
+     "label": "Port B Thread",
+     "value": "SAE J518 Code 62 flange, 3/4\" to 2\" flange",
+     "unit": null,
+     "position": 3,
+     "isFilterable": true,
+     "templateKey": "port_b_thread"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size Range",
+     "value": "3/4\" to 2\" flange",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "nominal_size_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "forged carbon steel, trivalent zinc plated",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "material"
+    },
+    {
+     "group": "Compliance",
+     "label": "Applicable Standards",
+     "value": "SAE J518, SAE J514",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "applicable_standards"
+    }
+   ],
+   "searchAliases": [
+    "1803",
+    "1803-12-12",
+    "1803-16-16",
+    "1803-20-20",
+    "1803-24-24",
+    "1803-32-32"
+   ],
+   "images": [
+    {
+     "file": "IH-ST-1803-01.jpg",
+     "alt": "Zinc-plated steel JIC 37° Male x Code 62 Flange 45° Elbow, side view",
+     "caption": "Supplier catalogue photo, HD batch 10 (2026-10-10)"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-ST-1803-12-12",
+     "position": 0,
+     "portLabel": "3/4\" JIC 37° male (1-1/16-12)",
+     "port2Label": "3/4\" Code 62 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-1803-16-16",
+     "position": 1,
+     "portLabel": "1\" JIC 37° male (1-5/16-12)",
+     "port2Label": "1\" Code 62 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-1803-20-20",
+     "position": 2,
+     "portLabel": "1-1/4\" JIC 37° male (1-5/8-12)",
+     "port2Label": "1-1/4\" Code 62 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-1803-24-24",
+     "position": 3,
+     "portLabel": "1-1/2\" JIC 37° male (1-7/8-12)",
+     "port2Label": "1-1/2\" Code 62 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-1803-32-32",
+     "position": 4,
+     "portLabel": "2\" JIC 37° male (2-1/2-12)",
+     "port2Label": "2\" Code 62 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    }
+   ],
+   "crossReferences": [],
+   "sourceFamily": "1803"
+  },
+  {
+   "sku": "IH-ST-1804",
+   "slug": "steel-jic-37-male-x-code-62-flange-90-elbow",
+   "title": "Steel JIC 37° Male × Code 62 Flange 90° Elbow",
+   "category": "sae-flange-adapters",
+   "focusKeyword": "jic 37 male x code 62 flange 90 elbow",
+   "descriptionShort": "Steel JIC 37° Male × Code 62 Flange 90° Elbow, forged steel, zinc plated. 13 part numbers, 3/4\" to 2\" JIC × 3/4\" to 2\" flange.",
+   "descriptionLong": "<p>The Steel JIC 37° Male × Code 62 Flange 90° Elbow is a 90° elbow flange adapter that connects a JIC hose or tube end to an SAE J518 Code 62 flanged port on a pump, valve or manifold. It is forged carbon steel with trivalent zinc plating.</p><h3>Ends and sealing</h3><ul><li><b>Flange end</b>: SAE J518 Code 62 (high-pressure) flange head, sealed by an O-ring in the flange face and held by a split or one-piece flange clamp; the clamp and bolts are ordered separately.</li><li><b>JIC male end</b>: 37° flare, a metal-to-metal seat on a 74° included cone; SAE J514.</li></ul><h3>Sizes</h3><p>13 part numbers, 3/4\" to 2\" JIC × 3/4\" to 2\" flange. The Sizes &amp; Part Numbers tab gives both ends for every one.</p><h3>Pressure rating</h3><p>The manufacturer states Code 61 adapters for up to 3,000 psi and Code 62 adapters for up to 6,000 psi. The JIC end has its own rating, which falls as size goes up, and the lowest rating in the joint governs. Tell us the size and working pressure and we will confirm it.</p><h3>Code 61 or Code 62</h3><p>Code 62 heads only fit Code 62 ports and clamps: the two codes share the bolt-circle family but differ in head thickness and bolt spacing. Check the port before ordering.</p><h3>How to order</h3><p>Quote the Indus part number, or send the flange code and size and the other end. Price and lead time are confirmed with the quotation.</p>",
+   "seoTitle": "Steel JIC 37° Male x Code 62 Flange 90° Elbow",
+   "seoDescription": "Steel JIC 37° Male x Code 62 Flange 90° Elbow, SAE J518, zinc-plated steel: 13 sizes, 3/4\" to 2\" flange. Quote from Indus Hydraulics, UAE.",
+   "faqs": [
+    {
+     "question": "Does it fit a Code 61 port?",
+     "answer": "No. It has a Code 62 flange head and needs a Code 62 port and clamp."
+    },
+    {
+     "question": "Is the flange clamp included?",
+     "answer": "No. Order the split or one-piece flange clamp and bolts to suit the port."
+    },
+    {
+     "question": "What is it made from?",
+     "answer": "Forged carbon steel with trivalent zinc plating."
+    },
+    {
+     "question": "What pressure is it rated for?",
+     "answer": "The manufacturer states up to 6,000 psi for Code 62 adapters; the JIC end rating falls with size and the lowest rating in the joint governs."
+    },
+    {
+     "question": "What is the lead time?",
+     "answer": "Price and lead time are confirmed with the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Body Configuration",
+     "value": "90° elbow flange adapter",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "body_configuration"
+    },
+    {
+     "group": "Port A",
+     "label": "Port A Thread",
+     "value": "JIC male, 3/4\" to 2\" JIC",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "port_a_thread"
+    },
+    {
+     "group": "Port A",
+     "label": "Port A Sealing",
+     "value": "37° flare, a metal-to-metal seat on a 74° included cone",
+     "unit": null,
+     "position": 2,
+     "isFilterable": false,
+     "templateKey": "port_a_seal"
+    },
+    {
+     "group": "Port B",
+     "label": "Port B Thread",
+     "value": "SAE J518 Code 62 flange, 3/4\" to 2\" flange",
+     "unit": null,
+     "position": 3,
+     "isFilterable": true,
+     "templateKey": "port_b_thread"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size Range",
+     "value": "3/4\" to 2\" flange",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "nominal_size_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "forged carbon steel, trivalent zinc plated",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "material"
+    },
+    {
+     "group": "Compliance",
+     "label": "Applicable Standards",
+     "value": "SAE J518, SAE J514",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "applicable_standards"
+    }
+   ],
+   "searchAliases": [
+    "1804",
+    "1804-12-12",
+    "1804-12-16",
+    "1804-16-12",
+    "1804-16-16",
+    "1804-16-20",
+    "1804-20-16",
+    "1804-20-20",
+    "1804-20-24",
+    "1804-24-20",
+    "1804-24-24",
+    "1804-24-32",
+    "1804-32-24",
+    "1804-32-32"
+   ],
+   "images": [
+    {
+     "file": "IH-ST-1804-01.jpg",
+     "alt": "Zinc-plated steel JIC 37° Male x Code 62 Flange 90° Elbow, line drawing",
+     "caption": "Supplier catalogue photo, HD batch 10 (2026-10-10)"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-ST-1804-12-12",
+     "position": 0,
+     "portLabel": "3/4\" JIC 37° male (1-1/16-12)",
+     "port2Label": "3/4\" Code 62 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-1804-12-16",
+     "position": 1,
+     "portLabel": "3/4\" JIC 37° male (1-1/16-12)",
+     "port2Label": "1\" Code 62 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-1804-16-12",
+     "position": 2,
+     "portLabel": "1\" JIC 37° male (1-5/16-12)",
+     "port2Label": "3/4\" Code 62 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-1804-16-16",
+     "position": 3,
+     "portLabel": "1\" JIC 37° male (1-5/16-12)",
+     "port2Label": "1\" Code 62 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-1804-16-20",
+     "position": 4,
+     "portLabel": "1\" JIC 37° male (1-5/16-12)",
+     "port2Label": "1-1/4\" Code 62 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-1804-20-16",
+     "position": 5,
+     "portLabel": "1-1/4\" JIC 37° male (1-5/8-12)",
+     "port2Label": "1\" Code 62 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-1804-20-20",
+     "position": 6,
+     "portLabel": "1-1/4\" JIC 37° male (1-5/8-12)",
+     "port2Label": "1-1/4\" Code 62 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-1804-20-24",
+     "position": 7,
+     "portLabel": "1-1/4\" JIC 37° male (1-5/8-12)",
+     "port2Label": "1-1/2\" Code 62 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-1804-24-20",
+     "position": 8,
+     "portLabel": "1-1/2\" JIC 37° male (1-7/8-12)",
+     "port2Label": "1-1/4\" Code 62 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-1804-24-24",
+     "position": 9,
+     "portLabel": "1-1/2\" JIC 37° male (1-7/8-12)",
+     "port2Label": "1-1/2\" Code 62 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-1804-24-32",
+     "position": 10,
+     "portLabel": "1-1/2\" JIC 37° male (1-7/8-12)",
+     "port2Label": "2\" Code 62 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-1804-32-24",
+     "position": 11,
+     "portLabel": "2\" JIC 37° male (2-1/2-12)",
+     "port2Label": "1-1/2\" Code 62 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-1804-32-32",
+     "position": 12,
+     "portLabel": "2\" JIC 37° male (2-1/2-12)",
+     "port2Label": "2\" Code 62 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    }
+   ],
+   "crossReferences": [],
+   "sourceFamily": "1804"
+  },
+  {
+   "sku": "IH-ST-NB6847",
+   "slug": "steel-jic-37-male-x-code-62-flange-45-tube-elbow-one-piece",
+   "title": "Steel JIC 37° Male × Code 62 Flange 45° Tube Elbow, One-Piece",
+   "category": "sae-flange-adapters",
+   "focusKeyword": "jic 37 male x code 62 flange 45 tube elbow one-piece",
+   "descriptionShort": "Steel JIC 37° Male × Code 62 Flange 45° Tube Elbow, One-Piece, forged steel, zinc plated. 5 part numbers, 1/2\" to 2\" JIC × 1/2\" to 2\" flange.",
+   "descriptionLong": "<p>The Steel JIC 37° Male × Code 62 Flange 45° Tube Elbow, One-Piece is a 45° bent-tube elbow flange adapter that connects a JIC hose or tube end to an SAE J518 Code 62 flanged port on a pump, valve or manifold. It is forged carbon steel with trivalent zinc plating. The elbow is bent from one piece of tube with the flange head and male end forged on, so there is no brazed joint in it.</p><h3>Ends and sealing</h3><ul><li><b>Flange end</b>: SAE J518 Code 62 (high-pressure) flange head, sealed by an O-ring in the flange face and held by a split or one-piece flange clamp; the clamp and bolts are ordered separately.</li><li><b>JIC male end</b>: 37° flare, a metal-to-metal seat on a 74° included cone; SAE J514.</li></ul><h3>Sizes</h3><p>5 part numbers, 1/2\" to 2\" JIC × 1/2\" to 2\" flange. The Sizes &amp; Part Numbers tab gives both ends for every one.</p><h3>Pressure rating</h3><p>The manufacturer states Code 61 adapters for up to 3,000 psi and Code 62 adapters for up to 6,000 psi. The JIC end has its own rating, which falls as size goes up, and the lowest rating in the joint governs. Tell us the size and working pressure and we will confirm it.</p><h3>Code 61 or Code 62</h3><p>Code 62 heads only fit Code 62 ports and clamps: the two codes share the bolt-circle family but differ in head thickness and bolt spacing. Check the port before ordering.</p><h3>How to order</h3><p>Quote the Indus part number, or send the flange code and size and the other end. Price and lead time are confirmed with the quotation.</p>",
+   "seoTitle": "Steel JIC 37° Male x Code 62 Flange 45° Tube Elbow, One-Piec",
+   "seoDescription": "Steel JIC 37° Male x Code 62 Flange 45° Tube Elbow, One-Piece, SAE J518, zinc-plated steel: 5 sizes, 1/2\" to 2\" flange. Quote from Indus Hydraulics, UAE.",
+   "faqs": [
+    {
+     "question": "Does it fit a Code 61 port?",
+     "answer": "No. It has a Code 62 flange head and needs a Code 62 port and clamp."
+    },
+    {
+     "question": "Is the flange clamp included?",
+     "answer": "No. Order the split or one-piece flange clamp and bolts to suit the port."
+    },
+    {
+     "question": "What is it made from?",
+     "answer": "Forged carbon steel with trivalent zinc plating."
+    },
+    {
+     "question": "What pressure is it rated for?",
+     "answer": "The manufacturer states up to 6,000 psi for Code 62 adapters; the JIC end rating falls with size and the lowest rating in the joint governs."
+    },
+    {
+     "question": "What is the lead time?",
+     "answer": "Price and lead time are confirmed with the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Body Configuration",
+     "value": "45° bent-tube elbow flange adapter",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "body_configuration"
+    },
+    {
+     "group": "Port A",
+     "label": "Port A Thread",
+     "value": "JIC male, 1/2\" to 2\" JIC",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "port_a_thread"
+    },
+    {
+     "group": "Port A",
+     "label": "Port A Sealing",
+     "value": "37° flare, a metal-to-metal seat on a 74° included cone",
+     "unit": null,
+     "position": 2,
+     "isFilterable": false,
+     "templateKey": "port_a_seal"
+    },
+    {
+     "group": "Port B",
+     "label": "Port B Thread",
+     "value": "SAE J518 Code 62 flange, 1/2\" to 2\" flange",
+     "unit": null,
+     "position": 3,
+     "isFilterable": true,
+     "templateKey": "port_b_thread"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size Range",
+     "value": "1/2\" to 2\" flange",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "nominal_size_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "forged carbon steel, trivalent zinc plated",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "material"
+    },
+    {
+     "group": "Compliance",
+     "label": "Applicable Standards",
+     "value": "SAE J518, SAE J514",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "applicable_standards"
+    }
+   ],
+   "searchAliases": [
+    "NB6847",
+    "NB6847-08-08",
+    "NB6847-12-12",
+    "NB6847-16-16",
+    "NB6847-20-20",
+    "NB6847-32-32"
+   ],
+   "images": [],
+   "variants": [
+    {
+     "partNumber": "IH-ST-NB6847-08-08",
+     "position": 0,
+     "portLabel": "1/2\" JIC 37° male (3/4-16)",
+     "port2Label": "1/2\" Code 62 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-NB6847-12-12",
+     "position": 1,
+     "portLabel": "3/4\" JIC 37° male (1-1/16-12)",
+     "port2Label": "3/4\" Code 62 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-NB6847-16-16",
+     "position": 2,
+     "portLabel": "1\" JIC 37° male (1-5/16-12)",
+     "port2Label": "1\" Code 62 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-NB6847-20-20",
+     "position": 3,
+     "portLabel": "1-1/4\" JIC 37° male (1-5/8-12)",
+     "port2Label": "1-1/4\" Code 62 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-NB6847-32-32",
+     "position": 4,
+     "portLabel": "2\" JIC 37° male (2-1/2-12)",
+     "port2Label": "2\" Code 62 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    }
+   ],
+   "crossReferences": [],
+   "sourceFamily": "NB6847"
+  },
+  {
+   "sku": "IH-ST-NB6892",
+   "slug": "steel-jic-37-male-x-code-62-flange-90-tube-elbow-one-piece",
+   "title": "Steel JIC 37° Male × Code 62 Flange 90° Tube Elbow, One-Piece",
+   "category": "sae-flange-adapters",
+   "focusKeyword": "jic 37 male x code 62 flange 90 tube elbow one-piece",
+   "descriptionShort": "Steel JIC 37° Male × Code 62 Flange 90° Tube Elbow, One-Piece, forged steel, zinc plated. 6 part numbers, 1/2\" to 2\" JIC × 1/2\" to 2\" flange.",
+   "descriptionLong": "<p>The Steel JIC 37° Male × Code 62 Flange 90° Tube Elbow, One-Piece is a 90° bent-tube elbow flange adapter that connects a JIC hose or tube end to an SAE J518 Code 62 flanged port on a pump, valve or manifold. It is forged carbon steel with trivalent zinc plating. The elbow is bent from one piece of tube with the flange head and male end forged on, so there is no brazed joint in it.</p><h3>Ends and sealing</h3><ul><li><b>Flange end</b>: SAE J518 Code 62 (high-pressure) flange head, sealed by an O-ring in the flange face and held by a split or one-piece flange clamp; the clamp and bolts are ordered separately.</li><li><b>JIC male end</b>: 37° flare, a metal-to-metal seat on a 74° included cone; SAE J514.</li></ul><h3>Sizes</h3><p>6 part numbers, 1/2\" to 2\" JIC × 1/2\" to 2\" flange. The Sizes &amp; Part Numbers tab gives both ends for every one.</p><h3>Pressure rating</h3><p>The manufacturer states Code 61 adapters for up to 3,000 psi and Code 62 adapters for up to 6,000 psi. The JIC end has its own rating, which falls as size goes up, and the lowest rating in the joint governs. Tell us the size and working pressure and we will confirm it.</p><h3>Code 61 or Code 62</h3><p>Code 62 heads only fit Code 62 ports and clamps: the two codes share the bolt-circle family but differ in head thickness and bolt spacing. Check the port before ordering.</p><h3>How to order</h3><p>Quote the Indus part number, or send the flange code and size and the other end. Price and lead time are confirmed with the quotation.</p>",
+   "seoTitle": "Steel JIC 37° Male x Code 62 Flange 90° Tube Elbow, One-Piec",
+   "seoDescription": "Steel JIC 37° Male x Code 62 Flange 90° Tube Elbow, One-Piece, SAE J518, zinc-plated steel: 6 sizes, 1/2\" to 2\" flange. Quote from Indus Hydraulics, UAE.",
+   "faqs": [
+    {
+     "question": "Does it fit a Code 61 port?",
+     "answer": "No. It has a Code 62 flange head and needs a Code 62 port and clamp."
+    },
+    {
+     "question": "Is the flange clamp included?",
+     "answer": "No. Order the split or one-piece flange clamp and bolts to suit the port."
+    },
+    {
+     "question": "What is it made from?",
+     "answer": "Forged carbon steel with trivalent zinc plating."
+    },
+    {
+     "question": "What pressure is it rated for?",
+     "answer": "The manufacturer states up to 6,000 psi for Code 62 adapters; the JIC end rating falls with size and the lowest rating in the joint governs."
+    },
+    {
+     "question": "What is the lead time?",
+     "answer": "Price and lead time are confirmed with the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Body Configuration",
+     "value": "90° bent-tube elbow flange adapter",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "body_configuration"
+    },
+    {
+     "group": "Port A",
+     "label": "Port A Thread",
+     "value": "JIC male, 1/2\" to 2\" JIC",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "port_a_thread"
+    },
+    {
+     "group": "Port A",
+     "label": "Port A Sealing",
+     "value": "37° flare, a metal-to-metal seat on a 74° included cone",
+     "unit": null,
+     "position": 2,
+     "isFilterable": false,
+     "templateKey": "port_a_seal"
+    },
+    {
+     "group": "Port B",
+     "label": "Port B Thread",
+     "value": "SAE J518 Code 62 flange, 1/2\" to 2\" flange",
+     "unit": null,
+     "position": 3,
+     "isFilterable": true,
+     "templateKey": "port_b_thread"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size Range",
+     "value": "1/2\" to 2\" flange",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "nominal_size_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "forged carbon steel, trivalent zinc plated",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "material"
+    },
+    {
+     "group": "Compliance",
+     "label": "Applicable Standards",
+     "value": "SAE J518, SAE J514",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "applicable_standards"
+    }
+   ],
+   "searchAliases": [
+    "NB6892",
+    "NB6892-08-08",
+    "NB6892-12-12",
+    "NB6892-12-16",
+    "NB6892-16-16",
+    "NB6892-24-24",
+    "NB6892-32-32"
+   ],
+   "images": [],
+   "variants": [
+    {
+     "partNumber": "IH-ST-NB6892-08-08",
+     "position": 0,
+     "portLabel": "1/2\" JIC 37° male (3/4-16)",
+     "port2Label": "1/2\" Code 62 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-NB6892-12-12",
+     "position": 1,
+     "portLabel": "3/4\" JIC 37° male (1-1/16-12)",
+     "port2Label": "3/4\" Code 62 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-NB6892-12-16",
+     "position": 2,
+     "portLabel": "3/4\" JIC 37° male (1-1/16-12)",
+     "port2Label": "1\" Code 62 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-NB6892-16-16",
+     "position": 3,
+     "portLabel": "1\" JIC 37° male (1-5/16-12)",
+     "port2Label": "1\" Code 62 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-NB6892-24-24",
+     "position": 4,
+     "portLabel": "1-1/2\" JIC 37° male (1-7/8-12)",
+     "port2Label": "1-1/2\" Code 62 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-NB6892-32-32",
+     "position": 5,
+     "portLabel": "2\" JIC 37° male (2-1/2-12)",
+     "port2Label": "2\" Code 62 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    }
+   ],
+   "crossReferences": [],
+   "sourceFamily": "NB6892"
+  },
+  {
+   "sku": "IH-ST-FS1700",
+   "slug": "steel-orfs-male-x-code-61-flange-adapter",
+   "title": "Steel ORFS Male × Code 61 Flange Adapter",
+   "category": "sae-flange-adapters",
+   "focusKeyword": "orfs male x code 61 flange adapter",
+   "descriptionShort": "Steel ORFS Male × Code 61 Flange Adapter, forged steel, zinc plated. 11 part numbers, 3/4\" to 1-1/2\" ORFS × 3/4\" to 2\" flange.",
+   "descriptionLong": "<p>The Steel ORFS Male × Code 61 Flange Adapter is a straight flange adapter that connects a ORFS hose or tube end to an SAE J518 Code 61 flanged port on a pump, valve or manifold. It is forged carbon steel with trivalent zinc plating.</p><h3>Ends and sealing</h3><ul><li><b>Flange end</b>: SAE J518 Code 61 (standard-pressure) flange head, sealed by an O-ring in the flange face and held by a split or one-piece flange clamp; the clamp and bolts are ordered separately.</li><li><b>ORFS male end</b>: O-ring face seal: an O-ring in the male face seals against the flat face of the female nut; SAE J1453.</li></ul><h3>Sizes</h3><p>11 part numbers, 3/4\" to 1-1/2\" ORFS × 3/4\" to 2\" flange. The Sizes &amp; Part Numbers tab gives both ends for every one.</p><h3>Pressure rating</h3><p>The manufacturer states Code 61 adapters for up to 3,000 psi and Code 62 adapters for up to 6,000 psi. The ORFS end has its own rating, which falls as size goes up, and the lowest rating in the joint governs. Tell us the size and working pressure and we will confirm it.</p><h3>Code 61 or Code 62</h3><p>Code 61 heads only fit Code 61 ports and clamps: the two codes share the bolt-circle family but differ in head thickness and bolt spacing. Check the port before ordering.</p><h3>How to order</h3><p>Quote the Indus part number, or send the flange code and size and the other end. Price and lead time are confirmed with the quotation.</p>",
+   "seoTitle": "Steel ORFS Male x Code 61 Flange Adapter",
+   "seoDescription": "Steel ORFS Male x Code 61 Flange Adapter, SAE J518, zinc-plated steel: 11 sizes, 3/4\" to 2\" flange. Quote from Indus Hydraulics, UAE.",
+   "faqs": [
+    {
+     "question": "Does it fit a Code 62 port?",
+     "answer": "No. It has a Code 61 flange head and needs a Code 61 port and clamp."
+    },
+    {
+     "question": "Is the flange clamp included?",
+     "answer": "No. Order the split or one-piece flange clamp and bolts to suit the port."
+    },
+    {
+     "question": "What is it made from?",
+     "answer": "Forged carbon steel with trivalent zinc plating."
+    },
+    {
+     "question": "What pressure is it rated for?",
+     "answer": "The manufacturer states up to 3,000 psi for Code 61 adapters; the ORFS end rating falls with size and the lowest rating in the joint governs."
+    },
+    {
+     "question": "What is the lead time?",
+     "answer": "Price and lead time are confirmed with the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Body Configuration",
+     "value": "straight flange adapter",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "body_configuration"
+    },
+    {
+     "group": "Port A",
+     "label": "Port A Thread",
+     "value": "ORFS male, 3/4\" to 1-1/2\" ORFS",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "port_a_thread"
+    },
+    {
+     "group": "Port A",
+     "label": "Port A Sealing",
+     "value": "O-ring face seal: an O-ring in the male face seals against the flat face of the female nut",
+     "unit": null,
+     "position": 2,
+     "isFilterable": false,
+     "templateKey": "port_a_seal"
+    },
+    {
+     "group": "Port B",
+     "label": "Port B Thread",
+     "value": "SAE J518 Code 61 flange, 3/4\" to 2\" flange",
+     "unit": null,
+     "position": 3,
+     "isFilterable": true,
+     "templateKey": "port_b_thread"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size Range",
+     "value": "3/4\" to 2\" flange",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "nominal_size_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "forged carbon steel, trivalent zinc plated",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "material"
+    },
+    {
+     "group": "Compliance",
+     "label": "Applicable Standards",
+     "value": "SAE J518, SAE J1453",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "applicable_standards"
+    }
+   ],
+   "searchAliases": [
+    "FS1700",
+    "FS1700-12-12",
+    "FS1700-12-16",
+    "FS1700-16-12",
+    "FS1700-16-16",
+    "FS1700-16-20",
+    "FS1700-20-16",
+    "FS1700-20-20",
+    "FS1700-20-24",
+    "FS1700-24-20",
+    "FS1700-24-24",
+    "FS1700-24-32"
+   ],
+   "images": [
+    {
+     "file": "IH-ST-FS1700-01.jpg",
+     "alt": "Zinc-plated steel ORFS Male x Code 61 Flange Adapter, side view",
+     "caption": "Supplier catalogue photo, HD batch 10 (2026-10-10)"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-ST-FS1700-12-12",
+     "position": 0,
+     "portLabel": "3/4\" ORFS male (1-3/16-12)",
+     "port2Label": "3/4\" Code 61 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-FS1700-12-16",
+     "position": 1,
+     "portLabel": "3/4\" ORFS male (1-3/16-12)",
+     "port2Label": "1\" Code 61 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-FS1700-16-12",
+     "position": 2,
+     "portLabel": "1\" ORFS male (1-7/16-12)",
+     "port2Label": "3/4\" Code 61 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-FS1700-16-16",
+     "position": 3,
+     "portLabel": "1\" ORFS male (1-7/16-12)",
+     "port2Label": "1\" Code 61 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-FS1700-16-20",
+     "position": 4,
+     "portLabel": "1\" ORFS male (1-7/16-12)",
+     "port2Label": "1-1/4\" Code 61 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-FS1700-20-16",
+     "position": 5,
+     "portLabel": "1-1/4\" ORFS male (1-11/16-12)",
+     "port2Label": "1\" Code 61 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-FS1700-20-20",
+     "position": 6,
+     "portLabel": "1-1/4\" ORFS male (1-11/16-12)",
+     "port2Label": "1-1/4\" Code 61 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-FS1700-20-24",
+     "position": 7,
+     "portLabel": "1-1/4\" ORFS male (1-11/16-12)",
+     "port2Label": "1-1/2\" Code 61 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-FS1700-24-20",
+     "position": 8,
+     "portLabel": "1-1/2\" ORFS male (2-12)",
+     "port2Label": "1-1/4\" Code 61 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-FS1700-24-24",
+     "position": 9,
+     "portLabel": "1-1/2\" ORFS male (2-12)",
+     "port2Label": "1-1/2\" Code 61 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-FS1700-24-32",
+     "position": 10,
+     "portLabel": "1-1/2\" ORFS male (2-12)",
+     "port2Label": "2\" Code 61 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    }
+   ],
+   "crossReferences": [],
+   "sourceFamily": "FS1700"
+  },
+  {
+   "sku": "IH-ST-FS1703",
+   "slug": "steel-orfs-male-x-code-61-flange-45-elbow",
+   "title": "Steel ORFS Male × Code 61 Flange 45° Elbow",
+   "category": "sae-flange-adapters",
+   "focusKeyword": "orfs male x code 61 flange 45 elbow",
+   "descriptionShort": "Steel ORFS Male × Code 61 Flange 45° Elbow, forged steel, zinc plated. 4 part numbers, 3/4\" to 1-1/2\" ORFS × 3/4\" to 1-1/2\" flange.",
+   "descriptionLong": "<p>The Steel ORFS Male × Code 61 Flange 45° Elbow is a 45° elbow flange adapter that connects a ORFS hose or tube end to an SAE J518 Code 61 flanged port on a pump, valve or manifold. It is forged carbon steel with trivalent zinc plating.</p><h3>Ends and sealing</h3><ul><li><b>Flange end</b>: SAE J518 Code 61 (standard-pressure) flange head, sealed by an O-ring in the flange face and held by a split or one-piece flange clamp; the clamp and bolts are ordered separately.</li><li><b>ORFS male end</b>: O-ring face seal: an O-ring in the male face seals against the flat face of the female nut; SAE J1453.</li></ul><h3>Sizes</h3><p>4 part numbers, 3/4\" to 1-1/2\" ORFS × 3/4\" to 1-1/2\" flange. The Sizes &amp; Part Numbers tab gives both ends for every one.</p><h3>Pressure rating</h3><p>The manufacturer states Code 61 adapters for up to 3,000 psi and Code 62 adapters for up to 6,000 psi. The ORFS end has its own rating, which falls as size goes up, and the lowest rating in the joint governs. Tell us the size and working pressure and we will confirm it.</p><h3>Code 61 or Code 62</h3><p>Code 61 heads only fit Code 61 ports and clamps: the two codes share the bolt-circle family but differ in head thickness and bolt spacing. Check the port before ordering.</p><h3>How to order</h3><p>Quote the Indus part number, or send the flange code and size and the other end. Price and lead time are confirmed with the quotation.</p>",
+   "seoTitle": "Steel ORFS Male x Code 61 Flange 45° Elbow",
+   "seoDescription": "Steel ORFS Male x Code 61 Flange 45° Elbow, SAE J518, zinc-plated steel: 4 sizes, 3/4\" to 1-1/2\" flange. Quote from Indus Hydraulics, UAE.",
+   "faqs": [
+    {
+     "question": "Does it fit a Code 62 port?",
+     "answer": "No. It has a Code 61 flange head and needs a Code 61 port and clamp."
+    },
+    {
+     "question": "Is the flange clamp included?",
+     "answer": "No. Order the split or one-piece flange clamp and bolts to suit the port."
+    },
+    {
+     "question": "What is it made from?",
+     "answer": "Forged carbon steel with trivalent zinc plating."
+    },
+    {
+     "question": "What pressure is it rated for?",
+     "answer": "The manufacturer states up to 3,000 psi for Code 61 adapters; the ORFS end rating falls with size and the lowest rating in the joint governs."
+    },
+    {
+     "question": "What is the lead time?",
+     "answer": "Price and lead time are confirmed with the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Body Configuration",
+     "value": "45° elbow flange adapter",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "body_configuration"
+    },
+    {
+     "group": "Port A",
+     "label": "Port A Thread",
+     "value": "ORFS male, 3/4\" to 1-1/2\" ORFS",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "port_a_thread"
+    },
+    {
+     "group": "Port A",
+     "label": "Port A Sealing",
+     "value": "O-ring face seal: an O-ring in the male face seals against the flat face of the female nut",
+     "unit": null,
+     "position": 2,
+     "isFilterable": false,
+     "templateKey": "port_a_seal"
+    },
+    {
+     "group": "Port B",
+     "label": "Port B Thread",
+     "value": "SAE J518 Code 61 flange, 3/4\" to 1-1/2\" flange",
+     "unit": null,
+     "position": 3,
+     "isFilterable": true,
+     "templateKey": "port_b_thread"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size Range",
+     "value": "3/4\" to 1-1/2\" flange",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "nominal_size_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "forged carbon steel, trivalent zinc plated",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "material"
+    },
+    {
+     "group": "Compliance",
+     "label": "Applicable Standards",
+     "value": "SAE J518, SAE J1453",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "applicable_standards"
+    }
+   ],
+   "searchAliases": [
+    "FS1703",
+    "FS1703-12-12",
+    "FS1703-16-16",
+    "FS1703-20-20",
+    "FS1703-24-24"
+   ],
+   "images": [
+    {
+     "file": "IH-ST-FS1703-01.jpg",
+     "alt": "Zinc-plated steel ORFS Male x Code 61 Flange 45° Elbow, side view",
+     "caption": "Supplier catalogue photo, HD batch 10 (2026-10-10)"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-ST-FS1703-12-12",
+     "position": 0,
+     "portLabel": "3/4\" ORFS male (1-3/16-12)",
+     "port2Label": "3/4\" Code 61 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-FS1703-16-16",
+     "position": 1,
+     "portLabel": "1\" ORFS male (1-7/16-12)",
+     "port2Label": "1\" Code 61 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-FS1703-20-20",
+     "position": 2,
+     "portLabel": "1-1/4\" ORFS male (1-11/16-12)",
+     "port2Label": "1-1/4\" Code 61 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-FS1703-24-24",
+     "position": 3,
+     "portLabel": "1-1/2\" ORFS male (2-12)",
+     "port2Label": "1-1/2\" Code 61 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    }
+   ],
+   "crossReferences": [],
+   "sourceFamily": "FS1703"
+  },
+  {
+   "sku": "IH-ST-FS1704",
+   "slug": "steel-orfs-male-x-code-61-flange-90-elbow",
+   "title": "Steel ORFS Male × Code 61 Flange 90° Elbow",
+   "category": "sae-flange-adapters",
+   "focusKeyword": "orfs male x code 61 flange 90 elbow",
+   "descriptionShort": "Steel ORFS Male × Code 61 Flange 90° Elbow, forged steel, zinc plated. 11 part numbers, 3/4\" to 1-1/2\" ORFS × 3/4\" to 2\" flange.",
+   "descriptionLong": "<p>The Steel ORFS Male × Code 61 Flange 90° Elbow is a 90° elbow flange adapter that connects a ORFS hose or tube end to an SAE J518 Code 61 flanged port on a pump, valve or manifold. It is forged carbon steel with trivalent zinc plating.</p><h3>Ends and sealing</h3><ul><li><b>Flange end</b>: SAE J518 Code 61 (standard-pressure) flange head, sealed by an O-ring in the flange face and held by a split or one-piece flange clamp; the clamp and bolts are ordered separately.</li><li><b>ORFS male end</b>: O-ring face seal: an O-ring in the male face seals against the flat face of the female nut; SAE J1453.</li></ul><h3>Sizes</h3><p>11 part numbers, 3/4\" to 1-1/2\" ORFS × 3/4\" to 2\" flange. The Sizes &amp; Part Numbers tab gives both ends for every one.</p><h3>Pressure rating</h3><p>The manufacturer states Code 61 adapters for up to 3,000 psi and Code 62 adapters for up to 6,000 psi. The ORFS end has its own rating, which falls as size goes up, and the lowest rating in the joint governs. Tell us the size and working pressure and we will confirm it.</p><h3>Code 61 or Code 62</h3><p>Code 61 heads only fit Code 61 ports and clamps: the two codes share the bolt-circle family but differ in head thickness and bolt spacing. Check the port before ordering.</p><h3>How to order</h3><p>Quote the Indus part number, or send the flange code and size and the other end. Price and lead time are confirmed with the quotation.</p>",
+   "seoTitle": "Steel ORFS Male x Code 61 Flange 90° Elbow",
+   "seoDescription": "Steel ORFS Male x Code 61 Flange 90° Elbow, SAE J518, zinc-plated steel: 11 sizes, 3/4\" to 2\" flange. Quote from Indus Hydraulics, UAE.",
+   "faqs": [
+    {
+     "question": "Does it fit a Code 62 port?",
+     "answer": "No. It has a Code 61 flange head and needs a Code 61 port and clamp."
+    },
+    {
+     "question": "Is the flange clamp included?",
+     "answer": "No. Order the split or one-piece flange clamp and bolts to suit the port."
+    },
+    {
+     "question": "What is it made from?",
+     "answer": "Forged carbon steel with trivalent zinc plating."
+    },
+    {
+     "question": "What pressure is it rated for?",
+     "answer": "The manufacturer states up to 3,000 psi for Code 61 adapters; the ORFS end rating falls with size and the lowest rating in the joint governs."
+    },
+    {
+     "question": "What is the lead time?",
+     "answer": "Price and lead time are confirmed with the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Body Configuration",
+     "value": "90° elbow flange adapter",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "body_configuration"
+    },
+    {
+     "group": "Port A",
+     "label": "Port A Thread",
+     "value": "ORFS male, 3/4\" to 1-1/2\" ORFS",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "port_a_thread"
+    },
+    {
+     "group": "Port A",
+     "label": "Port A Sealing",
+     "value": "O-ring face seal: an O-ring in the male face seals against the flat face of the female nut",
+     "unit": null,
+     "position": 2,
+     "isFilterable": false,
+     "templateKey": "port_a_seal"
+    },
+    {
+     "group": "Port B",
+     "label": "Port B Thread",
+     "value": "SAE J518 Code 61 flange, 3/4\" to 2\" flange",
+     "unit": null,
+     "position": 3,
+     "isFilterable": true,
+     "templateKey": "port_b_thread"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size Range",
+     "value": "3/4\" to 2\" flange",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "nominal_size_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "forged carbon steel, trivalent zinc plated",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "material"
+    },
+    {
+     "group": "Compliance",
+     "label": "Applicable Standards",
+     "value": "SAE J518, SAE J1453",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "applicable_standards"
+    }
+   ],
+   "searchAliases": [
+    "FS1704",
+    "FS1704-12-12",
+    "FS1704-12-16",
+    "FS1704-16-12",
+    "FS1704-16-16",
+    "FS1704-16-20",
+    "FS1704-20-16",
+    "FS1704-20-20",
+    "FS1704-20-24",
+    "FS1704-24-20",
+    "FS1704-24-24",
+    "FS1704-24-32"
+   ],
+   "images": [
+    {
+     "file": "IH-ST-FS1704-01.jpg",
+     "alt": "Zinc-plated steel ORFS Male x Code 61 Flange 90° Elbow, side view",
+     "caption": "Supplier catalogue photo, HD batch 10 (2026-10-10)"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-ST-FS1704-12-12",
+     "position": 0,
+     "portLabel": "3/4\" ORFS male (1-3/16-12)",
+     "port2Label": "3/4\" Code 61 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-FS1704-12-16",
+     "position": 1,
+     "portLabel": "3/4\" ORFS male (1-3/16-12)",
+     "port2Label": "1\" Code 61 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-FS1704-16-12",
+     "position": 2,
+     "portLabel": "1\" ORFS male (1-7/16-12)",
+     "port2Label": "3/4\" Code 61 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-FS1704-16-16",
+     "position": 3,
+     "portLabel": "1\" ORFS male (1-7/16-12)",
+     "port2Label": "1\" Code 61 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-FS1704-16-20",
+     "position": 4,
+     "portLabel": "1\" ORFS male (1-7/16-12)",
+     "port2Label": "1-1/4\" Code 61 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-FS1704-20-16",
+     "position": 5,
+     "portLabel": "1-1/4\" ORFS male (1-11/16-12)",
+     "port2Label": "1\" Code 61 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-FS1704-20-20",
+     "position": 6,
+     "portLabel": "1-1/4\" ORFS male (1-11/16-12)",
+     "port2Label": "1-1/4\" Code 61 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-FS1704-20-24",
+     "position": 7,
+     "portLabel": "1-1/4\" ORFS male (1-11/16-12)",
+     "port2Label": "1-1/2\" Code 61 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-FS1704-24-20",
+     "position": 8,
+     "portLabel": "1-1/2\" ORFS male (2-12)",
+     "port2Label": "1-1/4\" Code 61 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-FS1704-24-24",
+     "position": 9,
+     "portLabel": "1-1/2\" ORFS male (2-12)",
+     "port2Label": "1-1/2\" Code 61 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-FS1704-24-32",
+     "position": 10,
+     "portLabel": "1-1/2\" ORFS male (2-12)",
+     "port2Label": "2\" Code 61 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    }
+   ],
+   "crossReferences": [],
+   "sourceFamily": "FS1704"
+  },
+  {
+   "sku": "IH-ST-FS1800",
+   "slug": "steel-orfs-male-x-code-62-flange-adapter",
+   "title": "Steel ORFS Male × Code 62 Flange Adapter",
+   "category": "sae-flange-adapters",
+   "focusKeyword": "orfs male x code 62 flange adapter",
+   "descriptionShort": "Steel ORFS Male × Code 62 Flange Adapter, forged steel, zinc plated. 12 part numbers, 1/2\" to 1-1/2\" ORFS × 1/2\" to 2\" flange.",
+   "descriptionLong": "<p>The Steel ORFS Male × Code 62 Flange Adapter is a straight flange adapter that connects a ORFS hose or tube end to an SAE J518 Code 62 flanged port on a pump, valve or manifold. It is forged carbon steel with trivalent zinc plating.</p><h3>Ends and sealing</h3><ul><li><b>Flange end</b>: SAE J518 Code 62 (high-pressure) flange head, sealed by an O-ring in the flange face and held by a split or one-piece flange clamp; the clamp and bolts are ordered separately.</li><li><b>ORFS male end</b>: O-ring face seal: an O-ring in the male face seals against the flat face of the female nut; SAE J1453.</li></ul><h3>Sizes</h3><p>12 part numbers, 1/2\" to 1-1/2\" ORFS × 1/2\" to 2\" flange. The Sizes &amp; Part Numbers tab gives both ends for every one.</p><h3>Pressure rating</h3><p>The manufacturer states Code 61 adapters for up to 3,000 psi and Code 62 adapters for up to 6,000 psi. The ORFS end has its own rating, which falls as size goes up, and the lowest rating in the joint governs. Tell us the size and working pressure and we will confirm it.</p><h3>Code 61 or Code 62</h3><p>Code 62 heads only fit Code 62 ports and clamps: the two codes share the bolt-circle family but differ in head thickness and bolt spacing. Check the port before ordering.</p><h3>How to order</h3><p>Quote the Indus part number, or send the flange code and size and the other end. Price and lead time are confirmed with the quotation.</p>",
+   "seoTitle": "Steel ORFS Male x Code 62 Flange Adapter",
+   "seoDescription": "Steel ORFS Male x Code 62 Flange Adapter, SAE J518, zinc-plated steel: 12 sizes, 1/2\" to 2\" flange. Quote from Indus Hydraulics, UAE.",
+   "faqs": [
+    {
+     "question": "Does it fit a Code 61 port?",
+     "answer": "No. It has a Code 62 flange head and needs a Code 62 port and clamp."
+    },
+    {
+     "question": "Is the flange clamp included?",
+     "answer": "No. Order the split or one-piece flange clamp and bolts to suit the port."
+    },
+    {
+     "question": "What is it made from?",
+     "answer": "Forged carbon steel with trivalent zinc plating."
+    },
+    {
+     "question": "What pressure is it rated for?",
+     "answer": "The manufacturer states up to 6,000 psi for Code 62 adapters; the ORFS end rating falls with size and the lowest rating in the joint governs."
+    },
+    {
+     "question": "What is the lead time?",
+     "answer": "Price and lead time are confirmed with the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Body Configuration",
+     "value": "straight flange adapter",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "body_configuration"
+    },
+    {
+     "group": "Port A",
+     "label": "Port A Thread",
+     "value": "ORFS male, 1/2\" to 1-1/2\" ORFS",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "port_a_thread"
+    },
+    {
+     "group": "Port A",
+     "label": "Port A Sealing",
+     "value": "O-ring face seal: an O-ring in the male face seals against the flat face of the female nut",
+     "unit": null,
+     "position": 2,
+     "isFilterable": false,
+     "templateKey": "port_a_seal"
+    },
+    {
+     "group": "Port B",
+     "label": "Port B Thread",
+     "value": "SAE J518 Code 62 flange, 1/2\" to 2\" flange",
+     "unit": null,
+     "position": 3,
+     "isFilterable": true,
+     "templateKey": "port_b_thread"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size Range",
+     "value": "1/2\" to 2\" flange",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "nominal_size_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "forged carbon steel, trivalent zinc plated",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "material"
+    },
+    {
+     "group": "Compliance",
+     "label": "Applicable Standards",
+     "value": "SAE J518, SAE J1453",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "applicable_standards"
+    }
+   ],
+   "searchAliases": [
+    "FS1800",
+    "FS1800-08-08",
+    "FS1800-12-12",
+    "FS1800-12-16",
+    "FS1800-16-12",
+    "FS1800-16-16",
+    "FS1800-16-20",
+    "FS1800-20-16",
+    "FS1800-20-20",
+    "FS1800-20-24",
+    "FS1800-24-20",
+    "FS1800-24-24",
+    "FS1800-24-32"
+   ],
+   "images": [
+    {
+     "file": "IH-ST-FS1800-01.jpg",
+     "alt": "Zinc-plated steel ORFS Male x Code 62 Flange Adapter, side view",
+     "caption": "Supplier catalogue photo, HD batch 10 (2026-10-10)"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-ST-FS1800-08-08",
+     "position": 0,
+     "portLabel": "1/2\" ORFS male (13/16-16)",
+     "port2Label": "1/2\" Code 62 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-FS1800-12-12",
+     "position": 1,
+     "portLabel": "3/4\" ORFS male (1-3/16-12)",
+     "port2Label": "3/4\" Code 62 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-FS1800-12-16",
+     "position": 2,
+     "portLabel": "3/4\" ORFS male (1-3/16-12)",
+     "port2Label": "1\" Code 62 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-FS1800-16-12",
+     "position": 3,
+     "portLabel": "1\" ORFS male (1-7/16-12)",
+     "port2Label": "3/4\" Code 62 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-FS1800-16-16",
+     "position": 4,
+     "portLabel": "1\" ORFS male (1-7/16-12)",
+     "port2Label": "1\" Code 62 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-FS1800-16-20",
+     "position": 5,
+     "portLabel": "1\" ORFS male (1-7/16-12)",
+     "port2Label": "1-1/4\" Code 62 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-FS1800-20-16",
+     "position": 6,
+     "portLabel": "1-1/4\" ORFS male (1-11/16-12)",
+     "port2Label": "1\" Code 62 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-FS1800-20-20",
+     "position": 7,
+     "portLabel": "1-1/4\" ORFS male (1-11/16-12)",
+     "port2Label": "1-1/4\" Code 62 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-FS1800-20-24",
+     "position": 8,
+     "portLabel": "1-1/4\" ORFS male (1-11/16-12)",
+     "port2Label": "1-1/2\" Code 62 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-FS1800-24-20",
+     "position": 9,
+     "portLabel": "1-1/2\" ORFS male (2-12)",
+     "port2Label": "1-1/4\" Code 62 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-FS1800-24-24",
+     "position": 10,
+     "portLabel": "1-1/2\" ORFS male (2-12)",
+     "port2Label": "1-1/2\" Code 62 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-FS1800-24-32",
+     "position": 11,
+     "portLabel": "1-1/2\" ORFS male (2-12)",
+     "port2Label": "2\" Code 62 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    }
+   ],
+   "crossReferences": [],
+   "sourceFamily": "FS1800"
+  },
+  {
+   "sku": "IH-ST-FS1803",
+   "slug": "steel-orfs-male-x-code-62-flange-45-elbow",
+   "title": "Steel ORFS Male × Code 62 Flange 45° Elbow",
+   "category": "sae-flange-adapters",
+   "focusKeyword": "orfs male x code 62 flange 45 elbow",
+   "descriptionShort": "Steel ORFS Male × Code 62 Flange 45° Elbow, forged steel, zinc plated. 4 part numbers, 3/4\" to 1-1/2\" ORFS × 3/4\" to 1-1/2\" flange.",
+   "descriptionLong": "<p>The Steel ORFS Male × Code 62 Flange 45° Elbow is a 45° elbow flange adapter that connects a ORFS hose or tube end to an SAE J518 Code 62 flanged port on a pump, valve or manifold. It is forged carbon steel with trivalent zinc plating.</p><h3>Ends and sealing</h3><ul><li><b>Flange end</b>: SAE J518 Code 62 (high-pressure) flange head, sealed by an O-ring in the flange face and held by a split or one-piece flange clamp; the clamp and bolts are ordered separately.</li><li><b>ORFS male end</b>: O-ring face seal: an O-ring in the male face seals against the flat face of the female nut; SAE J1453.</li></ul><h3>Sizes</h3><p>4 part numbers, 3/4\" to 1-1/2\" ORFS × 3/4\" to 1-1/2\" flange. The Sizes &amp; Part Numbers tab gives both ends for every one.</p><h3>Pressure rating</h3><p>The manufacturer states Code 61 adapters for up to 3,000 psi and Code 62 adapters for up to 6,000 psi. The ORFS end has its own rating, which falls as size goes up, and the lowest rating in the joint governs. Tell us the size and working pressure and we will confirm it.</p><h3>Code 61 or Code 62</h3><p>Code 62 heads only fit Code 62 ports and clamps: the two codes share the bolt-circle family but differ in head thickness and bolt spacing. Check the port before ordering.</p><h3>How to order</h3><p>Quote the Indus part number, or send the flange code and size and the other end. Price and lead time are confirmed with the quotation.</p>",
+   "seoTitle": "Steel ORFS Male x Code 62 Flange 45° Elbow",
+   "seoDescription": "Steel ORFS Male x Code 62 Flange 45° Elbow, SAE J518, zinc-plated steel: 4 sizes, 3/4\" to 1-1/2\" flange. Quote from Indus Hydraulics, UAE.",
+   "faqs": [
+    {
+     "question": "Does it fit a Code 61 port?",
+     "answer": "No. It has a Code 62 flange head and needs a Code 62 port and clamp."
+    },
+    {
+     "question": "Is the flange clamp included?",
+     "answer": "No. Order the split or one-piece flange clamp and bolts to suit the port."
+    },
+    {
+     "question": "What is it made from?",
+     "answer": "Forged carbon steel with trivalent zinc plating."
+    },
+    {
+     "question": "What pressure is it rated for?",
+     "answer": "The manufacturer states up to 6,000 psi for Code 62 adapters; the ORFS end rating falls with size and the lowest rating in the joint governs."
+    },
+    {
+     "question": "What is the lead time?",
+     "answer": "Price and lead time are confirmed with the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Body Configuration",
+     "value": "45° elbow flange adapter",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "body_configuration"
+    },
+    {
+     "group": "Port A",
+     "label": "Port A Thread",
+     "value": "ORFS male, 3/4\" to 1-1/2\" ORFS",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "port_a_thread"
+    },
+    {
+     "group": "Port A",
+     "label": "Port A Sealing",
+     "value": "O-ring face seal: an O-ring in the male face seals against the flat face of the female nut",
+     "unit": null,
+     "position": 2,
+     "isFilterable": false,
+     "templateKey": "port_a_seal"
+    },
+    {
+     "group": "Port B",
+     "label": "Port B Thread",
+     "value": "SAE J518 Code 62 flange, 3/4\" to 1-1/2\" flange",
+     "unit": null,
+     "position": 3,
+     "isFilterable": true,
+     "templateKey": "port_b_thread"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size Range",
+     "value": "3/4\" to 1-1/2\" flange",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "nominal_size_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "forged carbon steel, trivalent zinc plated",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "material"
+    },
+    {
+     "group": "Compliance",
+     "label": "Applicable Standards",
+     "value": "SAE J518, SAE J1453",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "applicable_standards"
+    }
+   ],
+   "searchAliases": [
+    "FS1803",
+    "FS1803-12-12",
+    "FS1803-16-16",
+    "FS1803-20-20",
+    "FS1803-24-24"
+   ],
+   "images": [
+    {
+     "file": "IH-ST-FS1803-01.jpg",
+     "alt": "Zinc-plated steel ORFS Male x Code 62 Flange 45° Elbow, side view",
+     "caption": "Supplier catalogue photo, HD batch 10 (2026-10-10)"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-ST-FS1803-12-12",
+     "position": 0,
+     "portLabel": "3/4\" ORFS male (1-3/16-12)",
+     "port2Label": "3/4\" Code 62 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-FS1803-16-16",
+     "position": 1,
+     "portLabel": "1\" ORFS male (1-7/16-12)",
+     "port2Label": "1\" Code 62 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-FS1803-20-20",
+     "position": 2,
+     "portLabel": "1-1/4\" ORFS male (1-11/16-12)",
+     "port2Label": "1-1/4\" Code 62 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-FS1803-24-24",
+     "position": 3,
+     "portLabel": "1-1/2\" ORFS male (2-12)",
+     "port2Label": "1-1/2\" Code 62 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    }
+   ],
+   "crossReferences": [],
+   "sourceFamily": "FS1803"
+  },
+  {
+   "sku": "IH-ST-FS1804",
+   "slug": "steel-orfs-male-x-code-62-flange-90-elbow",
+   "title": "Steel ORFS Male × Code 62 Flange 90° Elbow",
+   "category": "sae-flange-adapters",
+   "focusKeyword": "orfs male x code 62 flange 90 elbow",
+   "descriptionShort": "Steel ORFS Male × Code 62 Flange 90° Elbow, forged steel, zinc plated. 12 part numbers, 3/4\" to 1-1/2\" ORFS × 1/2\" to 2\" flange.",
+   "descriptionLong": "<p>The Steel ORFS Male × Code 62 Flange 90° Elbow is a 90° elbow flange adapter that connects a ORFS hose or tube end to an SAE J518 Code 62 flanged port on a pump, valve or manifold. It is forged carbon steel with trivalent zinc plating.</p><h3>Ends and sealing</h3><ul><li><b>Flange end</b>: SAE J518 Code 62 (high-pressure) flange head, sealed by an O-ring in the flange face and held by a split or one-piece flange clamp; the clamp and bolts are ordered separately.</li><li><b>ORFS male end</b>: O-ring face seal: an O-ring in the male face seals against the flat face of the female nut; SAE J1453.</li></ul><h3>Sizes</h3><p>12 part numbers, 3/4\" to 1-1/2\" ORFS × 1/2\" to 2\" flange. The Sizes &amp; Part Numbers tab gives both ends for every one.</p><h3>Pressure rating</h3><p>The manufacturer states Code 61 adapters for up to 3,000 psi and Code 62 adapters for up to 6,000 psi. The ORFS end has its own rating, which falls as size goes up, and the lowest rating in the joint governs. Tell us the size and working pressure and we will confirm it.</p><h3>Code 61 or Code 62</h3><p>Code 62 heads only fit Code 62 ports and clamps: the two codes share the bolt-circle family but differ in head thickness and bolt spacing. Check the port before ordering.</p><h3>How to order</h3><p>Quote the Indus part number, or send the flange code and size and the other end. Price and lead time are confirmed with the quotation.</p>",
+   "seoTitle": "Steel ORFS Male x Code 62 Flange 90° Elbow",
+   "seoDescription": "Steel ORFS Male x Code 62 Flange 90° Elbow, SAE J518, zinc-plated steel: 12 sizes, 1/2\" to 2\" flange. Quote from Indus Hydraulics, UAE.",
+   "faqs": [
+    {
+     "question": "Does it fit a Code 61 port?",
+     "answer": "No. It has a Code 62 flange head and needs a Code 62 port and clamp."
+    },
+    {
+     "question": "Is the flange clamp included?",
+     "answer": "No. Order the split or one-piece flange clamp and bolts to suit the port."
+    },
+    {
+     "question": "What is it made from?",
+     "answer": "Forged carbon steel with trivalent zinc plating."
+    },
+    {
+     "question": "What pressure is it rated for?",
+     "answer": "The manufacturer states up to 6,000 psi for Code 62 adapters; the ORFS end rating falls with size and the lowest rating in the joint governs."
+    },
+    {
+     "question": "What is the lead time?",
+     "answer": "Price and lead time are confirmed with the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Body Configuration",
+     "value": "90° elbow flange adapter",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "body_configuration"
+    },
+    {
+     "group": "Port A",
+     "label": "Port A Thread",
+     "value": "ORFS male, 3/4\" to 1-1/2\" ORFS",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "port_a_thread"
+    },
+    {
+     "group": "Port A",
+     "label": "Port A Sealing",
+     "value": "O-ring face seal: an O-ring in the male face seals against the flat face of the female nut",
+     "unit": null,
+     "position": 2,
+     "isFilterable": false,
+     "templateKey": "port_a_seal"
+    },
+    {
+     "group": "Port B",
+     "label": "Port B Thread",
+     "value": "SAE J518 Code 62 flange, 1/2\" to 2\" flange",
+     "unit": null,
+     "position": 3,
+     "isFilterable": true,
+     "templateKey": "port_b_thread"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size Range",
+     "value": "1/2\" to 2\" flange",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "nominal_size_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "forged carbon steel, trivalent zinc plated",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "material"
+    },
+    {
+     "group": "Compliance",
+     "label": "Applicable Standards",
+     "value": "SAE J518, SAE J1453",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "applicable_standards"
+    }
+   ],
+   "searchAliases": [
+    "FS1804",
+    "FS1804-12-08",
+    "FS1804-12-12",
+    "FS1804-12-16",
+    "FS1804-16-12",
+    "FS1804-16-16",
+    "FS1804-16-20",
+    "FS1804-20-16",
+    "FS1804-20-20",
+    "FS1804-20-24",
+    "FS1804-24-20",
+    "FS1804-24-24",
+    "FS1804-24-32"
+   ],
+   "images": [
+    {
+     "file": "IH-ST-FS1804-01.jpg",
+     "alt": "Zinc-plated steel ORFS Male x Code 62 Flange 90° Elbow, side view",
+     "caption": "Supplier catalogue photo, HD batch 10 (2026-10-10)"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-ST-FS1804-12-08",
+     "position": 0,
+     "portLabel": "3/4\" ORFS male (1-3/16-12)",
+     "port2Label": "1/2\" Code 62 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-FS1804-12-12",
+     "position": 1,
+     "portLabel": "3/4\" ORFS male (1-3/16-12)",
+     "port2Label": "3/4\" Code 62 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-FS1804-12-16",
+     "position": 2,
+     "portLabel": "3/4\" ORFS male (1-3/16-12)",
+     "port2Label": "1\" Code 62 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-FS1804-16-12",
+     "position": 3,
+     "portLabel": "1\" ORFS male (1-7/16-12)",
+     "port2Label": "3/4\" Code 62 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-FS1804-16-16",
+     "position": 4,
+     "portLabel": "1\" ORFS male (1-7/16-12)",
+     "port2Label": "1\" Code 62 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-FS1804-16-20",
+     "position": 5,
+     "portLabel": "1\" ORFS male (1-7/16-12)",
+     "port2Label": "1-1/4\" Code 62 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-FS1804-20-16",
+     "position": 6,
+     "portLabel": "1-1/4\" ORFS male (1-11/16-12)",
+     "port2Label": "1\" Code 62 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-FS1804-20-20",
+     "position": 7,
+     "portLabel": "1-1/4\" ORFS male (1-11/16-12)",
+     "port2Label": "1-1/4\" Code 62 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-FS1804-20-24",
+     "position": 8,
+     "portLabel": "1-1/4\" ORFS male (1-11/16-12)",
+     "port2Label": "1-1/2\" Code 62 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-FS1804-24-20",
+     "position": 9,
+     "portLabel": "1-1/2\" ORFS male (2-12)",
+     "port2Label": "1-1/4\" Code 62 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-FS1804-24-24",
+     "position": 10,
+     "portLabel": "1-1/2\" ORFS male (2-12)",
+     "port2Label": "1-1/2\" Code 62 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-FS1804-24-32",
+     "position": 11,
+     "portLabel": "1-1/2\" ORFS male (2-12)",
+     "port2Label": "2\" Code 62 flange",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    }
+   ],
+   "crossReferences": [],
+   "sourceFamily": "FS1804"
+  }
+ ],
+ "hold": []
+}
