@@ -13,11 +13,29 @@ import {
   variantTableKind,
   variantText,
   variantTextColumns,
+  isStandardDesignation,
   type VariantLike,
 } from '@indus/domain'
 
+/**
+ * Per-size competitor numbers, keyed by Indus part number — one extra column
+ * per maker or standard. A plain object (not a Map) because it crosses the
+ * server/client boundary into the tabs.
+ */
+export type SizeEquivalents = {
+  brands: string[]
+  byPartNumber: Record<string, Record<string, string>>
+}
+
+/** Column heading: a maker's number is an equivalent; a standard code is a designation. */
+function equivalentHeading(brand: string): string {
+  return isStandardDesignation(brand) ? `${brand} no.` : `${brand} equivalent`
+}
+
 type Props = {
   variants: VariantLike[]
+  /** Per-size cross-references; each brand becomes a column after the Indus part number. */
+  equivalents?: SizeEquivalents | null
   /** Shown above the table, e.g. "Parker 13943 / 1L943". Null hides the line. */
   equivalenceNote?: string | null
   /**
@@ -70,6 +88,7 @@ function formatCell(value: number | undefined, kind: 'hose' | 'fitting' | 'lifti
  */
 export default function ProductSizeTable({
   variants,
+  equivalents,
   equivalenceNote,
   equivalenceBrand,
   stainlessOnRequest = true,
@@ -91,8 +110,12 @@ export default function ProductSizeTable({
   const textColumns = allTextColumns.filter((c) => !c.lead)
   const portHeading = variantPortHeading(variants)
   const sizeHeading = variantSizeHeading(variants)
-  const showEquivalents = hasVariantEquivalents(variants)
+  const xrefBrands = equivalents?.brands ?? []
   const equivalentBrand = variantEquivalentBrand(variants)
+  // The variant's own competitor column steps aside when the cross-references
+  // carry the same maker — the same Parker number twice is not two columns.
+  const showEquivalents =
+    hasVariantEquivalents(variants) && !(equivalentBrand && xrefBrands.includes(equivalentBrand))
   const disclaimerBrand = equivalenceBrand ?? equivalentBrand
   const endColumns = variantEndColumns(variants)
   const showHose = variants.some((v) => variantHoseLabel(v) !== null)
@@ -142,6 +165,11 @@ export default function ProductSizeTable({
                   {equivalentBrand ? `${equivalentBrand} equivalent` : 'Equivalent'}
                 </th>
               )}
+              {xrefBrands.map((b) => (
+                <th key={b} scope="col" className="px-3.5 py-2.5 text-left font-medium whitespace-nowrap">
+                  {equivalentHeading(b)}
+                </th>
+              ))}
               {leadTextColumns.map((c) => (
                 <th
                   key={c.key}
@@ -227,6 +255,11 @@ export default function ProductSizeTable({
                   {showEquivalents && (
                     <td className="px-3.5 py-2.5 text-ih-ink-2">{v.competitorMpn ?? '—'}</td>
                   )}
+                  {xrefBrands.map((b) => (
+                    <td key={b} className="px-3.5 py-2.5 whitespace-nowrap text-ih-ink-2">
+                      {equivalents?.byPartNumber[v.partNumber]?.[b] ?? '—'}
+                    </td>
+                  ))}
                   {leadTextColumns.map((c) => (
                     <td key={c.key} className="px-3.5 py-2.5 whitespace-nowrap text-ih-ink-2">
                       {variantText(v.dimensions, c.key) ?? '—'}
