@@ -1,0 +1,2724 @@
+{
+ "source": "Hydraulics Direct (US principal) catalogue export 2026-10-09 — metal hose weld-on fittings, batch 11",
+ "imageDir": "/Users/ayushkbhatia/Documents/Indus Supplier Research/Source Exports/Hydraulics Direct/hd-b11-jpeg",
+ "brandSlug": "indus",
+ "specTemplateSlug": "hydraulic-adapter-spec",
+ "categories": [
+  {
+   "slug": "stainless-steel-weld-outlets",
+   "name": "Stainless Steel Weld Outlets & Weld-On Adapters",
+   "parentSlug": "stainless-steel-pipe-fittings",
+   "position": 6,
+   "shortDescription": null,
+   "seoTitle": null,
+   "seoDescription": null,
+   "focusKeyword": null,
+   "bands": {}
+  },
+  {
+   "slug": "steel-weld-on-adapters",
+   "name": "Steel Weld-On Adapters",
+   "parentSlug": "hydraulic-adapters",
+   "position": 26,
+   "shortDescription": "Zinc-plated steel weld-to-thread adapters for tube and metal hose: JIC 37° male and female swivel, NPT male and female, 1/4\" to 2\".",
+   "seoTitle": "Steel Weld-On Adapters, JIC and NPT",
+   "seoDescription": "Zinc-plated steel weld-on adapters for tube and metal hose: JIC 37° male, JIC female swivel, NPT male and NPT female, 1/4\" to 2\".",
+   "focusKeyword": "weld-on adapters",
+   "bands": {
+    "hero": {
+     "intro": "Weld-to-thread adapters in zinc-plated steel, for putting a JIC or NPT end on tube or metal hose."
+    },
+    "guidance": {
+     "heading": "Choosing a weld-on adapter",
+     "body": "Choose by the tube O.D. the weld end must match, then by the thread and gender. A female swivel lets the joint be made up without turning the welded tube. Remove the plating around the weld before welding. Stainless weld-on adapters are listed under Stainless Steel Weld Outlets & Weld-On Adapters."
+    },
+    "standards": {
+     "heading": "Threads",
+     "body": "JIC 37° ends follow SAE J514; NPT ends ASME B1.20.1."
+    },
+    "faq": {
+     "heading": null,
+     "items": [
+      {
+       "q": "Is there a pressure rating?",
+       "a": "The manufacturer publishes none: the weld, the tube or hose and the threaded end set what the joint holds. Tell us the working pressure and we will confirm it."
+      }
+     ]
+    }
+   }
+  }
+ ],
+ "products": [
+  {
+   "sku": "IH-PF-SS-WO-FFX",
+   "slug": "316-stainless-steel-weld-on-tube-or-pipe-x-orfs-female-swivel-adapter",
+   "title": "316 Stainless Steel Weld-On Tube or Pipe × ORFS Female Swivel Adapter",
+   "category": "stainless-steel-weld-outlets",
+   "focusKeyword": "weld-on orfs female swivel adapter",
+   "descriptionShort": "316 Stainless Steel Weld-On Tube or Pipe × ORFS Female Swivel Adapter: 18 part numbers, 1/4\" to 2\", weld end for tube O.D. or pipe.",
+   "descriptionLong": "<p>The 316 Stainless Steel Weld-On Tube or Pipe × ORFS Female Swivel Adapter is a straight swivel adapter that is welded onto a tube, a metal hose or a manifold to give it a ORFS connection. It is forged 316 stainless steel. Each size comes with the weld end bored for tube O.D. or for pipe; the Sizes &amp; Part Numbers tab says which.</p><h3>Ends and sealing</h3><ul><li><b>Weld end</b>: plain bore for a butt weld to tube O.D. or pipe; weld procedure and filler to suit the material.</li><li><b>ORFS female swivel end</b>: O-ring face seal against a flat-faced male; SAE J1453.</li></ul><h3>Sizes</h3><p>18 part numbers, 1/4\" to 2\". The Sizes &amp; Part Numbers tab gives both ends for every one.</p><h3>Pressure rating</h3><p>The manufacturer publishes no pressure rating for this family. The finished joint holds what the weld, the tube or hose and the threaded end allow; tell us the working pressure and we will confirm it.</p><h3>How to order</h3><p>Quote the Indus part number, or send the tube or pipe size and the thread. Price and lead time are confirmed with the quotation.</p>",
+   "seoTitle": "316 Stainless Steel Weld-On Tube or Pipe x ORFS Female Swive",
+   "seoDescription": "316 Stainless Steel Weld-On Tube or Pipe x ORFS Female Swivel Adapter, 18 sizes 1/4\" to 2\", weld end for tube O.D. or pipe. Quote from Indus Hydraulics, UA",
+   "faqs": [
+    {
+     "question": "What is it welded to?",
+     "answer": "A tube, corrugated metal hose or manifold: the weld end is bored for tube O.D. or pipe."
+    },
+    {
+     "question": "What is it made from?",
+     "answer": "Forged 316 stainless steel."
+    },
+    {
+     "question": "What pressure is it rated for?",
+     "answer": "The manufacturer publishes no rating; the weld, the tube or hose and the threaded end set it. Tell us the working pressure and we will confirm it."
+    },
+    {
+     "question": "What is the lead time?",
+     "answer": "Price and lead time are confirmed with the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Body Configuration",
+     "value": "straight swivel adapter",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "body_configuration"
+    },
+    {
+     "group": "Port A",
+     "label": "Port A Thread",
+     "value": "weld end, 1/4\" to 2\" tube O.D. or pipe",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "port_a_thread"
+    },
+    {
+     "group": "Port B",
+     "label": "Port B Thread",
+     "value": "ORFS female swivel, 1/4\" to 2\"",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "port_b_thread"
+    },
+    {
+     "group": "Port B",
+     "label": "Port B Sealing",
+     "value": "O-ring face seal against a flat-faced male",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "port_b_seal"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size Range",
+     "value": "1/4\" to 2\"",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "nominal_size_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "forged 316 stainless steel",
+     "unit": null,
+     "position": 5,
+     "isFilterable": true,
+     "templateKey": "material"
+    },
+    {
+     "group": "Compliance",
+     "label": "Applicable Standards",
+     "value": "SAE J1453",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "applicable_standards"
+    }
+   ],
+   "searchAliases": [
+    "SS-WO-FFX",
+    "SS-WO-FFX-04",
+    "SS-WO-FFX-04-04",
+    "SS-WO-FFX-06",
+    "SS-WO-FFX-06-06",
+    "SS-WO-FFX-08",
+    "SS-WO-FFX-08-08",
+    "SS-WO-FFX-10",
+    "SS-WO-FFX-10-10",
+    "SS-WO-FFX-12",
+    "SS-WO-FFX-12-12",
+    "SS-WO-FFX-16",
+    "SS-WO-FFX-16-16",
+    "SS-WO-FFX-20",
+    "SS-WO-FFX-20-20",
+    "SS-WO-FFX-24",
+    "SS-WO-FFX-24-24",
+    "SS-WO-FFX-32",
+    "SS-WO-FFX-32-32"
+   ],
+   "images": [],
+   "variants": [
+    {
+     "partNumber": "IH-PF-SS-WO-FFX-04",
+     "position": 0,
+     "portLabel": "1/4\" tube O.D., weld end",
+     "port2Label": "1/4\" ORFS female swivel (9/16-18)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PF-SS-WO-FFX-04-04",
+     "position": 1,
+     "portLabel": "1/4\" pipe, weld end",
+     "port2Label": "1/4\" ORFS female swivel (9/16-18)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PF-SS-WO-FFX-06",
+     "position": 2,
+     "portLabel": "3/8\" tube O.D., weld end",
+     "port2Label": "3/8\" ORFS female swivel (11/16-16)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PF-SS-WO-FFX-06-06",
+     "position": 3,
+     "portLabel": "3/8\" pipe, weld end",
+     "port2Label": "3/8\" ORFS female swivel (11/16-16)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PF-SS-WO-FFX-08",
+     "position": 4,
+     "portLabel": "1/2\" tube O.D., weld end",
+     "port2Label": "1/2\" ORFS female swivel (13/16-16)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PF-SS-WO-FFX-08-08",
+     "position": 5,
+     "portLabel": "1/2\" pipe, weld end",
+     "port2Label": "1/2\" ORFS female swivel (13/16-16)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PF-SS-WO-FFX-10",
+     "position": 6,
+     "portLabel": "5/8\" tube O.D., weld end",
+     "port2Label": "5/8\" ORFS female swivel (1-14)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PF-SS-WO-FFX-10-10",
+     "position": 7,
+     "portLabel": "5/8\" pipe, weld end",
+     "port2Label": "5/8\" ORFS female swivel (1-14)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PF-SS-WO-FFX-12",
+     "position": 8,
+     "portLabel": "3/4\" tube O.D., weld end",
+     "port2Label": "3/4\" ORFS female swivel (1-3/16-12)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PF-SS-WO-FFX-12-12",
+     "position": 9,
+     "portLabel": "3/4\" pipe, weld end",
+     "port2Label": "3/4\" ORFS female swivel (1-3/16-12)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PF-SS-WO-FFX-16",
+     "position": 10,
+     "portLabel": "1\" tube O.D., weld end",
+     "port2Label": "1\" ORFS female swivel (1-7/16-12)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PF-SS-WO-FFX-16-16",
+     "position": 11,
+     "portLabel": "1\" pipe, weld end",
+     "port2Label": "1\" ORFS female swivel (1-7/16-12)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PF-SS-WO-FFX-20",
+     "position": 12,
+     "portLabel": "1-1/4\" tube O.D., weld end",
+     "port2Label": "1-1/4\" ORFS female swivel (1-11/16-12)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PF-SS-WO-FFX-20-20",
+     "position": 13,
+     "portLabel": "1-1/4\" pipe, weld end",
+     "port2Label": "1-1/4\" ORFS female swivel (1-11/16-12)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PF-SS-WO-FFX-24",
+     "position": 14,
+     "portLabel": "1-1/2\" tube O.D., weld end",
+     "port2Label": "1-1/2\" ORFS female swivel (2-12)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PF-SS-WO-FFX-24-24",
+     "position": 15,
+     "portLabel": "1-1/2\" pipe, weld end",
+     "port2Label": "1-1/2\" ORFS female swivel (2-12)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PF-SS-WO-FFX-32",
+     "position": 16,
+     "portLabel": "2\" tube O.D., weld end",
+     "port2Label": "2\" ORFS female swivel (2-1/2-12)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PF-SS-WO-FFX-32-32",
+     "position": 17,
+     "portLabel": "2\" pipe, weld end",
+     "port2Label": "2\" ORFS female swivel (2-1/2-12)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    }
+   ],
+   "crossReferences": [],
+   "sourceFamily": "SS-WO-FFX"
+  },
+  {
+   "sku": "IH-PF-SS-WO-FJX",
+   "slug": "316-stainless-steel-weld-on-tube-x-jic-37-female-swivel-adapter",
+   "title": "316 Stainless Steel Weld-On Tube × JIC 37° Female Swivel Adapter",
+   "category": "stainless-steel-weld-outlets",
+   "focusKeyword": "weld-on jic 37 female swivel adapter",
+   "descriptionShort": "316 Stainless Steel Weld-On Tube × JIC 37° Female Swivel Adapter: 10 part numbers, 1/4\" to 2\", weld end for tube O.D..",
+   "descriptionLong": "<p>The 316 Stainless Steel Weld-On Tube × JIC 37° Female Swivel Adapter is a straight swivel adapter that is welded onto a tube, a metal hose or a manifold to give it a JIC 37° connection. It is forged 316 stainless steel.</p><h3>Ends and sealing</h3><ul><li><b>Weld end</b>: plain bore for a butt weld to tube O.D.; weld procedure and filler to suit the material.</li><li><b>JIC 37° female swivel end</b>: 37° flare, a metal-to-metal seat on a 74° included cone; SAE J514.</li></ul><h3>Sizes</h3><p>10 part numbers, 1/4\" to 2\". The Sizes &amp; Part Numbers tab gives both ends for every one.</p><h3>Pressure rating</h3><p>The manufacturer publishes no pressure rating for this family. The finished joint holds what the weld, the tube or hose and the threaded end allow; tell us the working pressure and we will confirm it.</p><h3>How to order</h3><p>Quote the Indus part number, or send the tube or pipe size and the thread. Price and lead time are confirmed with the quotation.</p>",
+   "seoTitle": "316 Stainless Steel Weld-On Tube x JIC 37° Female Swivel Ada",
+   "seoDescription": "316 Stainless Steel Weld-On Tube x JIC 37° Female Swivel Adapter, 10 sizes 1/4\" to 2\", weld end for tube O.D.. Quote from Indus Hydraulics, UAE.",
+   "faqs": [
+    {
+     "question": "What is it welded to?",
+     "answer": "A tube, corrugated metal hose or manifold: the weld end is bored for tube O.D.."
+    },
+    {
+     "question": "What is it made from?",
+     "answer": "Forged 316 stainless steel."
+    },
+    {
+     "question": "What pressure is it rated for?",
+     "answer": "The manufacturer publishes no rating; the weld, the tube or hose and the threaded end set it. Tell us the working pressure and we will confirm it."
+    },
+    {
+     "question": "What is the lead time?",
+     "answer": "Price and lead time are confirmed with the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Body Configuration",
+     "value": "straight swivel adapter",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "body_configuration"
+    },
+    {
+     "group": "Port A",
+     "label": "Port A Thread",
+     "value": "weld end, 1/4\" to 2\" tube O.D.",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "port_a_thread"
+    },
+    {
+     "group": "Port B",
+     "label": "Port B Thread",
+     "value": "JIC 37° female swivel, 1/4\" to 2\"",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "port_b_thread"
+    },
+    {
+     "group": "Port B",
+     "label": "Port B Sealing",
+     "value": "37° flare, a metal-to-metal seat on a 74° included cone",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "port_b_seal"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size Range",
+     "value": "1/4\" to 2\"",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "nominal_size_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "forged 316 stainless steel",
+     "unit": null,
+     "position": 5,
+     "isFilterable": true,
+     "templateKey": "material"
+    },
+    {
+     "group": "Compliance",
+     "label": "Applicable Standards",
+     "value": "SAE J514",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "applicable_standards"
+    }
+   ],
+   "searchAliases": [
+    "SS-WO-FJX",
+    "SS-WO-FJX-04-04",
+    "SS-WO-FJX-06-06",
+    "SS-WO-FJX-08-08",
+    "SS-WO-FJX-10-10",
+    "SS-WO-FJX-12-12",
+    "SS-WO-FJX-16-16",
+    "SS-WO-FJX-16-16-Extralong",
+    "SS-WO-FJX-20-20",
+    "SS-WO-FJX-24-24",
+    "SS-WO-FJX-32-32"
+   ],
+   "images": [
+    {
+     "file": "IH-PF-SS-WO-FJX-01.jpg",
+     "alt": "316 Stainless Steel Weld-On Tube x JIC 37° Female Swivel Adapter, side view",
+     "caption": "Supplier catalogue photo, HD batch 11 (2026-10-10)"
+    },
+    {
+     "file": "IH-PF-SS-WO-FJX-02.jpg",
+     "alt": "316 Stainless Steel Weld-On Tube x JIC 37° Female Swivel Adapter, view into the weld end",
+     "caption": "Supplier catalogue photo, HD batch 11 (2026-10-10)"
+    },
+    {
+     "file": "IH-PF-SS-WO-FJX-03.jpg",
+     "alt": "316 Stainless Steel Weld-On Tube x JIC 37° Female Swivel Adapter, view into the threaded end",
+     "caption": "Supplier catalogue photo, HD batch 11 (2026-10-10)"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-PF-SS-WO-FJX-04-04",
+     "position": 0,
+     "portLabel": "1/4\" tube O.D., weld end",
+     "port2Label": "1/4\" JIC 37° female swivel (7/16-20)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PF-SS-WO-FJX-06-06",
+     "position": 1,
+     "portLabel": "3/8\" tube O.D., weld end",
+     "port2Label": "3/8\" JIC 37° female swivel (9/16-18)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PF-SS-WO-FJX-08-08",
+     "position": 2,
+     "portLabel": "1/2\" tube O.D., weld end",
+     "port2Label": "1/2\" JIC 37° female swivel (3/4-16)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PF-SS-WO-FJX-10-10",
+     "position": 3,
+     "portLabel": "5/8\" tube O.D., weld end",
+     "port2Label": "5/8\" JIC 37° female swivel (7/8-14)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PF-SS-WO-FJX-12-12",
+     "position": 4,
+     "portLabel": "3/4\" tube O.D., weld end",
+     "port2Label": "3/4\" JIC 37° female swivel (1-1/16-12)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PF-SS-WO-FJX-16-16",
+     "position": 5,
+     "portLabel": "1\" tube O.D., weld end",
+     "port2Label": "1\" JIC 37° female swivel (1-5/16-12)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PF-SS-WO-FJX-16-16-Extralong",
+     "position": 6,
+     "portLabel": "1\" tube O.D., weld end",
+     "port2Label": "1\" JIC 37° female swivel (1-5/16-12), extra long",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PF-SS-WO-FJX-20-20",
+     "position": 7,
+     "portLabel": "1-1/4\" tube O.D., weld end",
+     "port2Label": "1-1/4\" JIC 37° female swivel (1-5/8-12)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PF-SS-WO-FJX-24-24",
+     "position": 8,
+     "portLabel": "1-1/2\" tube O.D., weld end",
+     "port2Label": "1-1/2\" JIC 37° female swivel (1-7/8-12)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PF-SS-WO-FJX-32-32",
+     "position": 9,
+     "portLabel": "2\" tube O.D., weld end",
+     "port2Label": "2\" JIC 37° female swivel (2-1/2-12)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    }
+   ],
+   "crossReferences": [],
+   "sourceFamily": "SS-WO-FJX"
+  },
+  {
+   "sku": "IH-PF-SS-WO-FJX45T",
+   "slug": "316-stainless-steel-weld-on-tube-or-pipe-x-jic-37-female-swivel-45-elbow",
+   "title": "316 Stainless Steel Weld-On Tube or Pipe × JIC 37° Female Swivel 45° Elbow",
+   "category": "stainless-steel-weld-outlets",
+   "focusKeyword": "weld-on jic 37 female swivel 45 elbow adapter",
+   "descriptionShort": "316 Stainless Steel Weld-On Tube or Pipe × JIC 37° Female Swivel 45° Elbow: 18 part numbers, 1/4\" to 2\", weld end for tube O.D. or pipe.",
+   "descriptionLong": "<p>The 316 Stainless Steel Weld-On Tube or Pipe × JIC 37° Female Swivel 45° Elbow is a 45° swivel elbow that is welded onto a tube, a metal hose or a manifold to give it a JIC 37° connection. It is forged 316 stainless steel. Each size comes with the weld end bored for tube O.D. or for pipe; the Sizes &amp; Part Numbers tab says which.</p><h3>Ends and sealing</h3><ul><li><b>Weld end</b>: plain bore for a butt weld to tube O.D. or pipe; weld procedure and filler to suit the material.</li><li><b>JIC 37° female swivel end</b>: 37° flare, a metal-to-metal seat on a 74° included cone; SAE J514.</li></ul><h3>Sizes</h3><p>18 part numbers, 1/4\" to 2\". The Sizes &amp; Part Numbers tab gives both ends for every one.</p><h3>Pressure rating</h3><p>The manufacturer publishes no pressure rating for this family. The finished joint holds what the weld, the tube or hose and the threaded end allow; tell us the working pressure and we will confirm it.</p><h3>How to order</h3><p>Quote the Indus part number, or send the tube or pipe size and the thread. Price and lead time are confirmed with the quotation.</p>",
+   "seoTitle": "316 Stainless Steel Weld-On Tube or Pipe x JIC 37° Female Sw",
+   "seoDescription": "316 Stainless Steel Weld-On Tube or Pipe x JIC 37° Female Swivel 45° Elbow, 18 sizes 1/4\" to 2\", weld end for tube O.D. or pipe. Quote from Indus Hydraulic",
+   "faqs": [
+    {
+     "question": "What is it welded to?",
+     "answer": "A tube, corrugated metal hose or manifold: the weld end is bored for tube O.D. or pipe."
+    },
+    {
+     "question": "What is it made from?",
+     "answer": "Forged 316 stainless steel."
+    },
+    {
+     "question": "What pressure is it rated for?",
+     "answer": "The manufacturer publishes no rating; the weld, the tube or hose and the threaded end set it. Tell us the working pressure and we will confirm it."
+    },
+    {
+     "question": "What is the lead time?",
+     "answer": "Price and lead time are confirmed with the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Body Configuration",
+     "value": "45° swivel elbow",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "body_configuration"
+    },
+    {
+     "group": "Port A",
+     "label": "Port A Thread",
+     "value": "weld end, 1/4\" to 2\" tube O.D. or pipe",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "port_a_thread"
+    },
+    {
+     "group": "Port B",
+     "label": "Port B Thread",
+     "value": "JIC 37° female swivel, 1/4\" to 2\"",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "port_b_thread"
+    },
+    {
+     "group": "Port B",
+     "label": "Port B Sealing",
+     "value": "37° flare, a metal-to-metal seat on a 74° included cone",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "port_b_seal"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size Range",
+     "value": "1/4\" to 2\"",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "nominal_size_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "forged 316 stainless steel",
+     "unit": null,
+     "position": 5,
+     "isFilterable": true,
+     "templateKey": "material"
+    },
+    {
+     "group": "Compliance",
+     "label": "Applicable Standards",
+     "value": "SAE J514",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "applicable_standards"
+    }
+   ],
+   "searchAliases": [
+    "SS-WO-FJX45T",
+    "SS-WO-FJX45T-04-04",
+    "SS-WO-FJX45T-04",
+    "SS-WO-FJX45T-06-06",
+    "SS-WO-FJX45T-06",
+    "SS-WO-FJX45T-08-08",
+    "SS-WO-FJX45T-08",
+    "SS-WO-FJX45T-10-10",
+    "SS-WO-FJX45T-10",
+    "SS-WO-FJX45T-12-12",
+    "SS-WO-FJX45T-12",
+    "SS-WO-FJX45T-16-16",
+    "SS-WO-FJX45T-16",
+    "SS-WO-FJX45T-20-20",
+    "SS-WO-FJX45T-20",
+    "SS-WO-FJX45T-24-24",
+    "SS-WO-FJX45T-24",
+    "SS-WO-FJX45T-32-32",
+    "SS-WO-FJX45T-32"
+   ],
+   "images": [
+    {
+     "file": "IH-PF-SS-WO-FJX45T-01.jpg",
+     "alt": "316 Stainless Steel Weld-On Tube or Pipe x JIC 37° Female Swivel 45° Elbow, side view",
+     "caption": "Supplier catalogue photo, HD batch 11 (2026-10-10)"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-PF-SS-WO-FJX45T-04-04",
+     "position": 0,
+     "portLabel": "1/4\" tube O.D., weld end",
+     "port2Label": "1/4\" JIC 37° female swivel (7/16-20)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PF-SS-WO-FJX45T-04",
+     "position": 1,
+     "portLabel": "1/4\" pipe, weld end",
+     "port2Label": "1/4\" JIC 37° female swivel (7/16-20)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PF-SS-WO-FJX45T-06-06",
+     "position": 2,
+     "portLabel": "3/8\" tube O.D., weld end",
+     "port2Label": "3/8\" JIC 37° female swivel (9/16-18)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PF-SS-WO-FJX45T-06",
+     "position": 3,
+     "portLabel": "3/8\" pipe, weld end",
+     "port2Label": "3/8\" JIC 37° female swivel (9/16-18)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PF-SS-WO-FJX45T-08-08",
+     "position": 4,
+     "portLabel": "1/2\" tube O.D., weld end",
+     "port2Label": "1/2\" JIC 37° female swivel (3/4-16)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PF-SS-WO-FJX45T-08",
+     "position": 5,
+     "portLabel": "1/2\" pipe, weld end",
+     "port2Label": "1/2\" JIC 37° female swivel (3/4-16)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PF-SS-WO-FJX45T-10-10",
+     "position": 6,
+     "portLabel": "5/8\" tube O.D., weld end",
+     "port2Label": "5/8\" JIC 37° female swivel (7/8-14)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PF-SS-WO-FJX45T-10",
+     "position": 7,
+     "portLabel": "5/8\" pipe, weld end",
+     "port2Label": "5/8\" JIC 37° female swivel (7/8-14)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PF-SS-WO-FJX45T-12-12",
+     "position": 8,
+     "portLabel": "3/4\" tube O.D., weld end",
+     "port2Label": "3/4\" JIC 37° female swivel (1-1/16-12)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PF-SS-WO-FJX45T-12",
+     "position": 9,
+     "portLabel": "3/4\" pipe, weld end",
+     "port2Label": "3/4\" JIC 37° female swivel (1-1/16-12)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PF-SS-WO-FJX45T-16-16",
+     "position": 10,
+     "portLabel": "1\" tube O.D., weld end",
+     "port2Label": "1\" JIC 37° female swivel (1-5/16-12)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PF-SS-WO-FJX45T-16",
+     "position": 11,
+     "portLabel": "1\" pipe, weld end",
+     "port2Label": "1\" JIC 37° female swivel (1-5/16-12)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PF-SS-WO-FJX45T-20-20",
+     "position": 12,
+     "portLabel": "1-1/4\" tube O.D., weld end",
+     "port2Label": "1-1/4\" JIC 37° female swivel (1-5/8-12)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PF-SS-WO-FJX45T-20",
+     "position": 13,
+     "portLabel": "1-1/4\" pipe, weld end",
+     "port2Label": "1-1/4\" JIC 37° female swivel (1-5/8-12)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PF-SS-WO-FJX45T-24-24",
+     "position": 14,
+     "portLabel": "1-1/2\" tube O.D., weld end",
+     "port2Label": "1-1/2\" JIC 37° female swivel (1-7/8-12)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PF-SS-WO-FJX45T-24",
+     "position": 15,
+     "portLabel": "1-1/2\" pipe, weld end",
+     "port2Label": "1-1/2\" JIC 37° female swivel (1-7/8-12)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PF-SS-WO-FJX45T-32-32",
+     "position": 16,
+     "portLabel": "2\" tube O.D., weld end",
+     "port2Label": "2\" JIC 37° female swivel (2-1/2-12)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PF-SS-WO-FJX45T-32",
+     "position": 17,
+     "portLabel": "2\" pipe, weld end",
+     "port2Label": "2\" JIC 37° female swivel (2-1/2-12)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    }
+   ],
+   "crossReferences": [],
+   "sourceFamily": "SS-WO-FJX45T"
+  },
+  {
+   "sku": "IH-PF-SS-WO-FJX90T",
+   "slug": "316-stainless-steel-weld-on-tube-x-jic-37-female-swivel-90-elbow",
+   "title": "316 Stainless Steel Weld-On Tube × JIC 37° Female Swivel 90° Elbow",
+   "category": "stainless-steel-weld-outlets",
+   "focusKeyword": "weld-on jic 37 female swivel 90 elbow adapter",
+   "descriptionShort": "316 Stainless Steel Weld-On Tube × JIC 37° Female Swivel 90° Elbow: 9 part numbers, 1/4\" to 2\", weld end for tube O.D..",
+   "descriptionLong": "<p>The 316 Stainless Steel Weld-On Tube × JIC 37° Female Swivel 90° Elbow is a 90° swivel elbow that is welded onto a tube, a metal hose or a manifold to give it a JIC 37° connection. It is forged 316 stainless steel.</p><h3>Ends and sealing</h3><ul><li><b>Weld end</b>: plain bore for a butt weld to tube O.D.; weld procedure and filler to suit the material.</li><li><b>JIC 37° female swivel end</b>: 37° flare, a metal-to-metal seat on a 74° included cone; SAE J514.</li></ul><h3>Sizes</h3><p>9 part numbers, 1/4\" to 2\". The Sizes &amp; Part Numbers tab gives both ends for every one.</p><h3>Pressure rating</h3><p>The manufacturer publishes no pressure rating for this family. The finished joint holds what the weld, the tube or hose and the threaded end allow; tell us the working pressure and we will confirm it.</p><h3>How to order</h3><p>Quote the Indus part number, or send the tube or pipe size and the thread. Price and lead time are confirmed with the quotation.</p>",
+   "seoTitle": "316 Stainless Steel Weld-On Tube x JIC 37° Female Swivel 90°",
+   "seoDescription": "316 Stainless Steel Weld-On Tube x JIC 37° Female Swivel 90° Elbow, 9 sizes 1/4\" to 2\", weld end for tube O.D.. Quote from Indus Hydraulics, UAE.",
+   "faqs": [
+    {
+     "question": "What is it welded to?",
+     "answer": "A tube, corrugated metal hose or manifold: the weld end is bored for tube O.D.."
+    },
+    {
+     "question": "What is it made from?",
+     "answer": "Forged 316 stainless steel."
+    },
+    {
+     "question": "What pressure is it rated for?",
+     "answer": "The manufacturer publishes no rating; the weld, the tube or hose and the threaded end set it. Tell us the working pressure and we will confirm it."
+    },
+    {
+     "question": "What is the lead time?",
+     "answer": "Price and lead time are confirmed with the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Body Configuration",
+     "value": "90° swivel elbow",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "body_configuration"
+    },
+    {
+     "group": "Port A",
+     "label": "Port A Thread",
+     "value": "weld end, 1/4\" to 2\" tube O.D.",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "port_a_thread"
+    },
+    {
+     "group": "Port B",
+     "label": "Port B Thread",
+     "value": "JIC 37° female swivel, 1/4\" to 2\"",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "port_b_thread"
+    },
+    {
+     "group": "Port B",
+     "label": "Port B Sealing",
+     "value": "37° flare, a metal-to-metal seat on a 74° included cone",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "port_b_seal"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size Range",
+     "value": "1/4\" to 2\"",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "nominal_size_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "forged 316 stainless steel",
+     "unit": null,
+     "position": 5,
+     "isFilterable": true,
+     "templateKey": "material"
+    },
+    {
+     "group": "Compliance",
+     "label": "Applicable Standards",
+     "value": "SAE J514",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "applicable_standards"
+    }
+   ],
+   "searchAliases": [
+    "SS-WO-FJX90T",
+    "SS-WO-FJX90T-04-04",
+    "SS-WO-FJX90T-06-06",
+    "SS-WO-FJX90T-08-08",
+    "SS-WO-FJX90T-10-10",
+    "SS-WO-FJX90T-12-12",
+    "SS-WO-FJX90T-16-16",
+    "SS-WO-FJX90T-20-20",
+    "SS-WO-FJX90T-24-24",
+    "SS-WO-FJX90T-32-32"
+   ],
+   "images": [
+    {
+     "file": "IH-PF-SS-WO-FJX90T-01.jpg",
+     "alt": "316 Stainless Steel Weld-On Tube x JIC 37° Female Swivel 90° Elbow, side view",
+     "caption": "Supplier catalogue photo, HD batch 11 (2026-10-10)"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-PF-SS-WO-FJX90T-04-04",
+     "position": 0,
+     "portLabel": "1/4\" tube O.D., weld end",
+     "port2Label": "1/4\" JIC 37° female swivel (7/16-20)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PF-SS-WO-FJX90T-06-06",
+     "position": 1,
+     "portLabel": "3/8\" tube O.D., weld end",
+     "port2Label": "3/8\" JIC 37° female swivel (9/16-18)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PF-SS-WO-FJX90T-08-08",
+     "position": 2,
+     "portLabel": "1/2\" tube O.D., weld end",
+     "port2Label": "1/2\" JIC 37° female swivel (3/4-16)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PF-SS-WO-FJX90T-10-10",
+     "position": 3,
+     "portLabel": "5/8\" tube O.D., weld end",
+     "port2Label": "5/8\" JIC 37° female swivel (7/8-14)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PF-SS-WO-FJX90T-12-12",
+     "position": 4,
+     "portLabel": "3/4\" tube O.D., weld end",
+     "port2Label": "3/4\" JIC 37° female swivel (1-1/16-12)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PF-SS-WO-FJX90T-16-16",
+     "position": 5,
+     "portLabel": "1\" tube O.D., weld end",
+     "port2Label": "1\" JIC 37° female swivel (1-5/16-12)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PF-SS-WO-FJX90T-20-20",
+     "position": 6,
+     "portLabel": "1-1/4\" tube O.D., weld end",
+     "port2Label": "1-1/4\" JIC 37° female swivel (1-5/8-12)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PF-SS-WO-FJX90T-24-24",
+     "position": 7,
+     "portLabel": "1-1/2\" tube O.D., weld end",
+     "port2Label": "1-1/2\" JIC 37° female swivel (1-7/8-12)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PF-SS-WO-FJX90T-32-32",
+     "position": 8,
+     "portLabel": "2\" tube O.D., weld end",
+     "port2Label": "2\" JIC 37° female swivel (2-1/2-12)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    }
+   ],
+   "crossReferences": [],
+   "sourceFamily": "SS-WO-FJX90T"
+  },
+  {
+   "sku": "IH-PF-SS-WO-FP",
+   "slug": "316-stainless-steel-weld-on-tube-x-npt-female-adapter",
+   "title": "316 Stainless Steel Weld-On Tube × NPT Female Adapter",
+   "category": "stainless-steel-weld-outlets",
+   "focusKeyword": "weld-on npt female adapter",
+   "descriptionShort": "316 Stainless Steel Weld-On Tube × NPT Female Adapter: 8 part numbers, 1/4\" to 2\", weld end for tube O.D..",
+   "descriptionLong": "<p>The 316 Stainless Steel Weld-On Tube × NPT Female Adapter is a straight rigid adapter that is welded onto a tube, a metal hose or a manifold to give it a NPT connection. It is forged 316 stainless steel.</p><h3>Ends and sealing</h3><ul><li><b>Weld end</b>: plain bore for a butt weld to tube O.D.; weld procedure and filler to suit the material.</li><li><b>NPT female end</b>: tapered pipe thread that seals on the thread with sealant; ASME B1.20.1.</li></ul><h3>Sizes</h3><p>8 part numbers, 1/4\" to 2\". The Sizes &amp; Part Numbers tab gives both ends for every one.</p><h3>Pressure rating</h3><p>The manufacturer publishes no pressure rating for this family. The finished joint holds what the weld, the tube or hose and the threaded end allow; tell us the working pressure and we will confirm it.</p><h3>How to order</h3><p>Quote the Indus part number, or send the tube or pipe size and the thread. Price and lead time are confirmed with the quotation.</p>",
+   "seoTitle": "316 Stainless Steel Weld-On Tube x NPT Female Adapter",
+   "seoDescription": "316 Stainless Steel Weld-On Tube x NPT Female Adapter, 8 sizes 1/4\" to 2\", weld end for tube O.D.. Quote from Indus Hydraulics, UAE.",
+   "faqs": [
+    {
+     "question": "What is it welded to?",
+     "answer": "A tube, corrugated metal hose or manifold: the weld end is bored for tube O.D.."
+    },
+    {
+     "question": "What is it made from?",
+     "answer": "Forged 316 stainless steel."
+    },
+    {
+     "question": "What pressure is it rated for?",
+     "answer": "The manufacturer publishes no rating; the weld, the tube or hose and the threaded end set it. Tell us the working pressure and we will confirm it."
+    },
+    {
+     "question": "What is the lead time?",
+     "answer": "Price and lead time are confirmed with the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Body Configuration",
+     "value": "straight rigid adapter",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "body_configuration"
+    },
+    {
+     "group": "Port A",
+     "label": "Port A Thread",
+     "value": "weld end, 1/4\" to 2\" tube O.D.",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "port_a_thread"
+    },
+    {
+     "group": "Port B",
+     "label": "Port B Thread",
+     "value": "NPT female, 1/4\" to 2\"",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "port_b_thread"
+    },
+    {
+     "group": "Port B",
+     "label": "Port B Sealing",
+     "value": "tapered pipe thread that seals on the thread with sealant",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "port_b_seal"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size Range",
+     "value": "1/4\" to 2\"",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "nominal_size_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "forged 316 stainless steel",
+     "unit": null,
+     "position": 5,
+     "isFilterable": true,
+     "templateKey": "material"
+    },
+    {
+     "group": "Compliance",
+     "label": "Applicable Standards",
+     "value": "ASME B1.20.1",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "applicable_standards"
+    }
+   ],
+   "searchAliases": [
+    "SS-WO-FP",
+    "SS-WO-FP-04-04",
+    "SS-WO-FP-06-06",
+    "SS-WO-FP-08-08",
+    "SS-WO-FP-12-12",
+    "SS-WO-FP-16-16",
+    "SS-WO-FP-20-20",
+    "SS-WO-FP-24-24",
+    "SS-WO-FP-32-32"
+   ],
+   "images": [
+    {
+     "file": "IH-PF-SS-WO-FP-01.jpg",
+     "alt": "316 Stainless Steel Weld-On Tube x NPT Female Adapter, side view",
+     "caption": "Supplier catalogue photo, HD batch 11 (2026-10-10)"
+    },
+    {
+     "file": "IH-PF-SS-WO-FP-02.jpg",
+     "alt": "316 Stainless Steel Weld-On Tube x NPT Female Adapter, view into the weld end",
+     "caption": "Supplier catalogue photo, HD batch 11 (2026-10-10)"
+    },
+    {
+     "file": "IH-PF-SS-WO-FP-03.jpg",
+     "alt": "316 Stainless Steel Weld-On Tube x NPT Female Adapter, view into the threaded end",
+     "caption": "Supplier catalogue photo, HD batch 11 (2026-10-10)"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-PF-SS-WO-FP-04-04",
+     "position": 0,
+     "portLabel": "1/4\" tube O.D., weld end",
+     "port2Label": "1/4\" NPT female (1/4-18)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PF-SS-WO-FP-06-06",
+     "position": 1,
+     "portLabel": "3/8\" tube O.D., weld end",
+     "port2Label": "3/8\" NPT female (3/8-18)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PF-SS-WO-FP-08-08",
+     "position": 2,
+     "portLabel": "1/2\" tube O.D., weld end",
+     "port2Label": "1/2\" NPT female (1/2-14)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PF-SS-WO-FP-12-12",
+     "position": 3,
+     "portLabel": "3/4\" tube O.D., weld end",
+     "port2Label": "3/4\" NPT female (3/4-14)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PF-SS-WO-FP-16-16",
+     "position": 4,
+     "portLabel": "1\" tube O.D., weld end",
+     "port2Label": "1\" NPT female (1-11.5)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PF-SS-WO-FP-20-20",
+     "position": 5,
+     "portLabel": "1-1/4\" tube O.D., weld end",
+     "port2Label": "1-1/4\" NPT female (1-1/4-11.5)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PF-SS-WO-FP-24-24",
+     "position": 6,
+     "portLabel": "1-1/2\" tube O.D., weld end",
+     "port2Label": "1-1/2\" NPT female (1-1/2-11.5)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PF-SS-WO-FP-32-32",
+     "position": 7,
+     "portLabel": "2\" tube O.D., weld end",
+     "port2Label": "2\" NPT female (2-11.5)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    }
+   ],
+   "crossReferences": [],
+   "sourceFamily": "SS-WO-FP"
+  },
+  {
+   "sku": "IH-PF-SS-WO-MJ",
+   "slug": "316-stainless-steel-weld-on-tube-x-jic-37-male-adapter",
+   "title": "316 Stainless Steel Weld-On Tube × JIC 37° Male Adapter",
+   "category": "stainless-steel-weld-outlets",
+   "focusKeyword": "weld-on jic 37 male adapter",
+   "descriptionShort": "316 Stainless Steel Weld-On Tube × JIC 37° Male Adapter: 9 part numbers, 1/4\" to 2\", weld end for tube O.D..",
+   "descriptionLong": "<p>The 316 Stainless Steel Weld-On Tube × JIC 37° Male Adapter is a straight rigid adapter that is welded onto a tube, a metal hose or a manifold to give it a JIC 37° connection. It is forged 316 stainless steel.</p><h3>Ends and sealing</h3><ul><li><b>Weld end</b>: plain bore for a butt weld to tube O.D.; weld procedure and filler to suit the material.</li><li><b>JIC 37° male end</b>: 37° flare, a metal-to-metal seat on a 74° included cone; SAE J514.</li></ul><h3>Sizes</h3><p>9 part numbers, 1/4\" to 2\". The Sizes &amp; Part Numbers tab gives both ends for every one.</p><h3>Pressure rating</h3><p>The manufacturer publishes no pressure rating for this family. The finished joint holds what the weld, the tube or hose and the threaded end allow; tell us the working pressure and we will confirm it.</p><h3>How to order</h3><p>Quote the Indus part number, or send the tube or pipe size and the thread. Price and lead time are confirmed with the quotation.</p>",
+   "seoTitle": "316 Stainless Steel Weld-On Tube x JIC 37° Male Adapter",
+   "seoDescription": "316 Stainless Steel Weld-On Tube x JIC 37° Male Adapter, 9 sizes 1/4\" to 2\", weld end for tube O.D.. Quote from Indus Hydraulics, UAE.",
+   "faqs": [
+    {
+     "question": "What is it welded to?",
+     "answer": "A tube, corrugated metal hose or manifold: the weld end is bored for tube O.D.."
+    },
+    {
+     "question": "What is it made from?",
+     "answer": "Forged 316 stainless steel."
+    },
+    {
+     "question": "What pressure is it rated for?",
+     "answer": "The manufacturer publishes no rating; the weld, the tube or hose and the threaded end set it. Tell us the working pressure and we will confirm it."
+    },
+    {
+     "question": "What is the lead time?",
+     "answer": "Price and lead time are confirmed with the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Body Configuration",
+     "value": "straight rigid adapter",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "body_configuration"
+    },
+    {
+     "group": "Port A",
+     "label": "Port A Thread",
+     "value": "weld end, 1/4\" to 2\" tube O.D.",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "port_a_thread"
+    },
+    {
+     "group": "Port B",
+     "label": "Port B Thread",
+     "value": "JIC 37° male, 1/4\" to 2\"",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "port_b_thread"
+    },
+    {
+     "group": "Port B",
+     "label": "Port B Sealing",
+     "value": "37° flare, a metal-to-metal seat on a 74° included cone",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "port_b_seal"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size Range",
+     "value": "1/4\" to 2\"",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "nominal_size_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "forged 316 stainless steel",
+     "unit": null,
+     "position": 5,
+     "isFilterable": true,
+     "templateKey": "material"
+    },
+    {
+     "group": "Compliance",
+     "label": "Applicable Standards",
+     "value": "SAE J514",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "applicable_standards"
+    }
+   ],
+   "searchAliases": [
+    "SS-WO-MJ",
+    "SS-WO-MJ-04-04",
+    "SS-WO-MJ-06-06",
+    "SS-WO-MJ-08-08",
+    "SS-WO-MJ-10-10",
+    "SS-WO-MJ-12-12",
+    "SS-WO-MJ-16-16",
+    "SS-WO-MJ-20-20",
+    "SS-WO-MJ-24-24",
+    "SS-WO-MJ-32-32"
+   ],
+   "images": [
+    {
+     "file": "IH-PF-SS-WO-MJ-01.jpg",
+     "alt": "316 Stainless Steel Weld-On Tube x JIC 37° Male Adapter, side view",
+     "caption": "Supplier catalogue photo, HD batch 11 (2026-10-10)"
+    },
+    {
+     "file": "IH-PF-SS-WO-MJ-02.jpg",
+     "alt": "316 Stainless Steel Weld-On Tube x JIC 37° Male Adapter, view into the weld end",
+     "caption": "Supplier catalogue photo, HD batch 11 (2026-10-10)"
+    },
+    {
+     "file": "IH-PF-SS-WO-MJ-03.jpg",
+     "alt": "316 Stainless Steel Weld-On Tube x JIC 37° Male Adapter, view into the threaded end",
+     "caption": "Supplier catalogue photo, HD batch 11 (2026-10-10)"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-PF-SS-WO-MJ-04-04",
+     "position": 0,
+     "portLabel": "1/4\" tube O.D., weld end",
+     "port2Label": "1/4\" JIC 37° male (7/16-20)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PF-SS-WO-MJ-06-06",
+     "position": 1,
+     "portLabel": "3/8\" tube O.D., weld end",
+     "port2Label": "3/8\" JIC 37° male (9/16-18)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PF-SS-WO-MJ-08-08",
+     "position": 2,
+     "portLabel": "1/2\" tube O.D., weld end",
+     "port2Label": "1/2\" JIC 37° male (3/4-16)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PF-SS-WO-MJ-10-10",
+     "position": 3,
+     "portLabel": "5/8\" tube O.D., weld end",
+     "port2Label": "5/8\" JIC 37° male (7/8-14)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PF-SS-WO-MJ-12-12",
+     "position": 4,
+     "portLabel": "3/4\" tube O.D., weld end",
+     "port2Label": "3/4\" JIC 37° male (1-1/16-12)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PF-SS-WO-MJ-16-16",
+     "position": 5,
+     "portLabel": "1\" tube O.D., weld end",
+     "port2Label": "1\" JIC 37° male (1-5/16-12)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PF-SS-WO-MJ-20-20",
+     "position": 6,
+     "portLabel": "1-1/4\" tube O.D., weld end",
+     "port2Label": "1-1/4\" JIC 37° male (1-5/8-12)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PF-SS-WO-MJ-24-24",
+     "position": 7,
+     "portLabel": "1-1/2\" tube O.D., weld end",
+     "port2Label": "1-1/2\" JIC 37° male (1-7/8-12)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PF-SS-WO-MJ-32-32",
+     "position": 8,
+     "portLabel": "2\" tube O.D., weld end",
+     "port2Label": "2\" JIC 37° male (2-1/2-12)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    }
+   ],
+   "crossReferences": [],
+   "sourceFamily": "SS-WO-MJ"
+  },
+  {
+   "sku": "IH-PF-SS-WO-MP",
+   "slug": "316-stainless-steel-weld-on-tube-x-npt-male-adapter",
+   "title": "316 Stainless Steel Weld-On Tube × NPT Male Adapter",
+   "category": "stainless-steel-weld-outlets",
+   "focusKeyword": "weld-on npt male adapter",
+   "descriptionShort": "316 Stainless Steel Weld-On Tube × NPT Male Adapter: 8 part numbers, 1/4\" to 2\", weld end for tube O.D..",
+   "descriptionLong": "<p>The 316 Stainless Steel Weld-On Tube × NPT Male Adapter is a straight rigid adapter that is welded onto a tube, a metal hose or a manifold to give it a NPT connection. It is forged 316 stainless steel.</p><h3>Ends and sealing</h3><ul><li><b>Weld end</b>: plain bore for a butt weld to tube O.D.; weld procedure and filler to suit the material.</li><li><b>NPT male end</b>: tapered pipe thread that seals on the thread with sealant; ASME B1.20.1.</li></ul><h3>Sizes</h3><p>8 part numbers, 1/4\" to 2\". The Sizes &amp; Part Numbers tab gives both ends for every one.</p><h3>Pressure rating</h3><p>The manufacturer publishes no pressure rating for this family. The finished joint holds what the weld, the tube or hose and the threaded end allow; tell us the working pressure and we will confirm it.</p><h3>How to order</h3><p>Quote the Indus part number, or send the tube or pipe size and the thread. Price and lead time are confirmed with the quotation.</p>",
+   "seoTitle": "316 Stainless Steel Weld-On Tube x NPT Male Adapter",
+   "seoDescription": "316 Stainless Steel Weld-On Tube x NPT Male Adapter, 8 sizes 1/4\" to 2\", weld end for tube O.D.. Quote from Indus Hydraulics, UAE.",
+   "faqs": [
+    {
+     "question": "What is it welded to?",
+     "answer": "A tube, corrugated metal hose or manifold: the weld end is bored for tube O.D.."
+    },
+    {
+     "question": "What is it made from?",
+     "answer": "Forged 316 stainless steel."
+    },
+    {
+     "question": "What pressure is it rated for?",
+     "answer": "The manufacturer publishes no rating; the weld, the tube or hose and the threaded end set it. Tell us the working pressure and we will confirm it."
+    },
+    {
+     "question": "What is the lead time?",
+     "answer": "Price and lead time are confirmed with the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Body Configuration",
+     "value": "straight rigid adapter",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "body_configuration"
+    },
+    {
+     "group": "Port A",
+     "label": "Port A Thread",
+     "value": "weld end, 1/4\" to 2\" tube O.D.",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "port_a_thread"
+    },
+    {
+     "group": "Port B",
+     "label": "Port B Thread",
+     "value": "NPT male, 1/4\" to 2\"",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "port_b_thread"
+    },
+    {
+     "group": "Port B",
+     "label": "Port B Sealing",
+     "value": "tapered pipe thread that seals on the thread with sealant",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "port_b_seal"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size Range",
+     "value": "1/4\" to 2\"",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "nominal_size_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "forged 316 stainless steel",
+     "unit": null,
+     "position": 5,
+     "isFilterable": true,
+     "templateKey": "material"
+    },
+    {
+     "group": "Compliance",
+     "label": "Applicable Standards",
+     "value": "ASME B1.20.1",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "applicable_standards"
+    }
+   ],
+   "searchAliases": [
+    "SS-WO-MP",
+    "SS-WO-MP-04-04",
+    "SS-WO-MP-06-06",
+    "SS-WO-MP-08-08",
+    "SS-WO-MP-12-12",
+    "SS-WO-MP-16-16",
+    "SS-WO-MP-20-20",
+    "SS-WO-MP-24-24",
+    "SS-WO-MP-32-32"
+   ],
+   "images": [
+    {
+     "file": "IH-PF-SS-WO-MP-01.jpg",
+     "alt": "316 Stainless Steel Weld-On Tube x NPT Male Adapter, side view",
+     "caption": "Supplier catalogue photo, HD batch 11 (2026-10-10)"
+    },
+    {
+     "file": "IH-PF-SS-WO-MP-02.jpg",
+     "alt": "316 Stainless Steel Weld-On Tube x NPT Male Adapter, view into the weld end",
+     "caption": "Supplier catalogue photo, HD batch 11 (2026-10-10)"
+    },
+    {
+     "file": "IH-PF-SS-WO-MP-03.jpg",
+     "alt": "316 Stainless Steel Weld-On Tube x NPT Male Adapter, view into the threaded end",
+     "caption": "Supplier catalogue photo, HD batch 11 (2026-10-10)"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-PF-SS-WO-MP-04-04",
+     "position": 0,
+     "portLabel": "1/4\" tube O.D., weld end",
+     "port2Label": "1/4\" NPT male (1/4-18)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PF-SS-WO-MP-06-06",
+     "position": 1,
+     "portLabel": "3/8\" tube O.D., weld end",
+     "port2Label": "3/8\" NPT male (3/8-18)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PF-SS-WO-MP-08-08",
+     "position": 2,
+     "portLabel": "1/2\" tube O.D., weld end",
+     "port2Label": "1/2\" NPT male (1/2-14)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PF-SS-WO-MP-12-12",
+     "position": 3,
+     "portLabel": "3/4\" tube O.D., weld end",
+     "port2Label": "3/4\" NPT male (3/4-14)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PF-SS-WO-MP-16-16",
+     "position": 4,
+     "portLabel": "1\" tube O.D., weld end",
+     "port2Label": "1\" NPT male (1-11.5)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PF-SS-WO-MP-20-20",
+     "position": 5,
+     "portLabel": "1-1/4\" tube O.D., weld end",
+     "port2Label": "1-1/4\" NPT male (1-1/4-11.5)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PF-SS-WO-MP-24-24",
+     "position": 6,
+     "portLabel": "1-1/2\" tube O.D., weld end",
+     "port2Label": "1-1/2\" NPT male (1-1/2-11.5)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PF-SS-WO-MP-32-32",
+     "position": 7,
+     "portLabel": "2\" tube O.D., weld end",
+     "port2Label": "2\" NPT male (2-11.5)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    }
+   ],
+   "crossReferences": [],
+   "sourceFamily": "SS-WO-MP"
+  },
+  {
+   "sku": "IH-PF-CWO-B4-MP",
+   "slug": "304-cast-stainless-steel-weld-on-tube-x-npt-male-adapter",
+   "title": "304 Cast Stainless Steel Weld-On Tube × NPT Male Adapter",
+   "category": "stainless-steel-weld-outlets",
+   "focusKeyword": "weld-on npt male adapter",
+   "descriptionShort": "304 Cast Stainless Steel Weld-On Tube × NPT Male Adapter: 8 part numbers, 1/4\" to 2\", weld end for tube O.D..",
+   "descriptionLong": "<p>The 304 Cast Stainless Steel Weld-On Tube × NPT Male Adapter is a straight rigid adapter that is welded onto a tube, a metal hose or a manifold to give it a NPT connection. It is cast 304 stainless steel.</p><h3>Ends and sealing</h3><ul><li><b>Weld end</b>: plain bore for a butt weld to tube O.D.; weld procedure and filler to suit the material.</li><li><b>NPT male end</b>: tapered pipe thread that seals on the thread with sealant; ASME B1.20.1.</li></ul><h3>Sizes</h3><p>8 part numbers, 1/4\" to 2\". The Sizes &amp; Part Numbers tab gives both ends for every one.</p><h3>Pressure rating</h3><p>The manufacturer publishes no pressure rating for this family. The finished joint holds what the weld, the tube or hose and the threaded end allow; tell us the working pressure and we will confirm it.</p><h3>How to order</h3><p>Quote the Indus part number, or send the tube or pipe size and the thread. Price and lead time are confirmed with the quotation.</p>",
+   "seoTitle": "304 Cast Stainless Steel Weld-On Tube x NPT Male Adapter",
+   "seoDescription": "304 Cast Stainless Steel Weld-On Tube x NPT Male Adapter, 8 sizes 1/4\" to 2\", weld end for tube O.D.. Quote from Indus Hydraulics, UAE.",
+   "faqs": [
+    {
+     "question": "What is it welded to?",
+     "answer": "A tube, corrugated metal hose or manifold: the weld end is bored for tube O.D.."
+    },
+    {
+     "question": "What is it made from?",
+     "answer": "Cast 304 stainless steel."
+    },
+    {
+     "question": "What pressure is it rated for?",
+     "answer": "The manufacturer publishes no rating; the weld, the tube or hose and the threaded end set it. Tell us the working pressure and we will confirm it."
+    },
+    {
+     "question": "What is the lead time?",
+     "answer": "Price and lead time are confirmed with the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Body Configuration",
+     "value": "straight rigid adapter",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "body_configuration"
+    },
+    {
+     "group": "Port A",
+     "label": "Port A Thread",
+     "value": "weld end, 1/4\" to 2\" tube O.D.",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "port_a_thread"
+    },
+    {
+     "group": "Port B",
+     "label": "Port B Thread",
+     "value": "NPT male, 1/4\" to 2\"",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "port_b_thread"
+    },
+    {
+     "group": "Port B",
+     "label": "Port B Sealing",
+     "value": "tapered pipe thread that seals on the thread with sealant",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "port_b_seal"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size Range",
+     "value": "1/4\" to 2\"",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "nominal_size_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "cast 304 stainless steel",
+     "unit": null,
+     "position": 5,
+     "isFilterable": true,
+     "templateKey": "material"
+    },
+    {
+     "group": "Compliance",
+     "label": "Applicable Standards",
+     "value": "ASME B1.20.1",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "applicable_standards"
+    }
+   ],
+   "searchAliases": [
+    "CWO-B4-MP",
+    "CWO-B4-MP-04-04",
+    "CWO-B4-MP-06-06",
+    "CWO-B4-MP-08-08",
+    "CWO-B4-MP-12-12",
+    "CWO-B4-MP-16-16",
+    "CWO-B4-MP-20-20",
+    "CWO-B4-MP-24-24",
+    "CWO-B4-MP-32-32"
+   ],
+   "images": [
+    {
+     "file": "IH-PF-CWO-B4-MP-01.jpg",
+     "alt": "304 Cast Stainless Steel Weld-On Tube x NPT Male Adapter, side view",
+     "caption": "Supplier catalogue photo, HD batch 11 (2026-10-10)"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-PF-CWO-B4-MP-04-04",
+     "position": 0,
+     "portLabel": "1/4\" tube O.D., weld end",
+     "port2Label": "1/4\" NPT male (1/4-18)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PF-CWO-B4-MP-06-06",
+     "position": 1,
+     "portLabel": "3/8\" tube O.D., weld end",
+     "port2Label": "3/8\" NPT male (3/8-18)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PF-CWO-B4-MP-08-08",
+     "position": 2,
+     "portLabel": "1/2\" tube O.D., weld end",
+     "port2Label": "1/2\" NPT male (1/2-14)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PF-CWO-B4-MP-12-12",
+     "position": 3,
+     "portLabel": "3/4\" tube O.D., weld end",
+     "port2Label": "3/4\" NPT male (3/4-14)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PF-CWO-B4-MP-16-16",
+     "position": 4,
+     "portLabel": "1\" tube O.D., weld end",
+     "port2Label": "1\" NPT male (1-11.5)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PF-CWO-B4-MP-20-20",
+     "position": 5,
+     "portLabel": "1-1/4\" tube O.D., weld end",
+     "port2Label": "1-1/4\" NPT male (1-1/4-11.5)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PF-CWO-B4-MP-24-24",
+     "position": 6,
+     "portLabel": "1-1/2\" tube O.D., weld end",
+     "port2Label": "1-1/2\" NPT male (1-1/2-11.5)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PF-CWO-B4-MP-32-32",
+     "position": 7,
+     "portLabel": "2\" tube O.D., weld end",
+     "port2Label": "2\" NPT male (2-11.5)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    }
+   ],
+   "crossReferences": [],
+   "sourceFamily": "CWO-B4-MP"
+  },
+  {
+   "sku": "IH-ST-WO-FJX",
+   "slug": "steel-weld-on-tube-x-jic-37-female-swivel-adapter",
+   "title": "Steel Weld-On Tube × JIC 37° Female Swivel Adapter",
+   "category": "steel-weld-on-adapters",
+   "focusKeyword": "weld-on jic 37 female swivel adapter",
+   "descriptionShort": "Steel Weld-On Tube × JIC 37° Female Swivel Adapter: 9 part numbers, 1/4\" to 2\", weld end for tube O.D..",
+   "descriptionLong": "<p>The Steel Weld-On Tube × JIC 37° Female Swivel Adapter is a straight swivel adapter that is welded onto a tube, a metal hose or a manifold to give it a JIC 37° connection. It is forged carbon steel, trivalent zinc plated (ASTM B633).</p><h3>Ends and sealing</h3><ul><li><b>Weld end</b>: plain bore for a butt weld to tube O.D.; weld procedure and filler to suit the material.</li><li><b>JIC 37° female swivel end</b>: 37° flare, a metal-to-metal seat on a 74° included cone; SAE J514.</li></ul><h3>Sizes</h3><p>9 part numbers, 1/4\" to 2\". The Sizes &amp; Part Numbers tab gives both ends for every one.</p><h3>Pressure rating</h3><p>The manufacturer publishes no pressure rating for this family. The finished joint holds what the weld, the tube or hose and the threaded end allow; tell us the working pressure and we will confirm it.</p><h3>How to order</h3><p>Quote the Indus part number, or send the tube or pipe size and the thread. Price and lead time are confirmed with the quotation.</p>",
+   "seoTitle": "Steel Weld-On Tube x JIC 37° Female Swivel Adapter",
+   "seoDescription": "Steel Weld-On Tube x JIC 37° Female Swivel Adapter, 9 sizes 1/4\" to 2\", weld end for tube O.D.. Quote from Indus Hydraulics, UAE.",
+   "faqs": [
+    {
+     "question": "What is it welded to?",
+     "answer": "A tube, corrugated metal hose or manifold: the weld end is bored for tube O.D.."
+    },
+    {
+     "question": "What is it made from?",
+     "answer": "Forged carbon steel, trivalent zinc plated (ASTM B633)."
+    },
+    {
+     "question": "What pressure is it rated for?",
+     "answer": "The manufacturer publishes no rating; the weld, the tube or hose and the threaded end set it. Tell us the working pressure and we will confirm it."
+    },
+    {
+     "question": "What is the lead time?",
+     "answer": "Price and lead time are confirmed with the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Body Configuration",
+     "value": "straight swivel adapter",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "body_configuration"
+    },
+    {
+     "group": "Port A",
+     "label": "Port A Thread",
+     "value": "weld end, 1/4\" to 2\" tube O.D.",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "port_a_thread"
+    },
+    {
+     "group": "Port B",
+     "label": "Port B Thread",
+     "value": "JIC 37° female swivel, 1/4\" to 2\"",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "port_b_thread"
+    },
+    {
+     "group": "Port B",
+     "label": "Port B Sealing",
+     "value": "37° flare, a metal-to-metal seat on a 74° included cone",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "port_b_seal"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size Range",
+     "value": "1/4\" to 2\"",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "nominal_size_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "forged carbon steel, trivalent zinc plated (ASTM B633)",
+     "unit": null,
+     "position": 5,
+     "isFilterable": true,
+     "templateKey": "material"
+    },
+    {
+     "group": "Compliance",
+     "label": "Applicable Standards",
+     "value": "SAE J514",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "applicable_standards"
+    }
+   ],
+   "searchAliases": [
+    "WO-FJX",
+    "WO-FJX-04-04",
+    "WO-FJX-06-06",
+    "WO-FJX-08-08",
+    "WO-FJX-10-10",
+    "WO-FJX-12-12",
+    "WO-FJX-16-16",
+    "WO-FJX-20-20",
+    "WO-FJX-24-24",
+    "WO-FJX-32-32"
+   ],
+   "images": [],
+   "variants": [
+    {
+     "partNumber": "IH-ST-WO-FJX-04-04",
+     "position": 0,
+     "portLabel": "1/4\" tube O.D., weld end",
+     "port2Label": "1/4\" JIC 37° female swivel (7/16-20)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-WO-FJX-06-06",
+     "position": 1,
+     "portLabel": "3/8\" tube O.D., weld end",
+     "port2Label": "3/8\" JIC 37° female swivel (9/16-18)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-WO-FJX-08-08",
+     "position": 2,
+     "portLabel": "1/2\" tube O.D., weld end",
+     "port2Label": "1/2\" JIC 37° female swivel (3/4-16)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-WO-FJX-10-10",
+     "position": 3,
+     "portLabel": "5/8\" tube O.D., weld end",
+     "port2Label": "5/8\" JIC 37° female swivel (7/8-14)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-WO-FJX-12-12",
+     "position": 4,
+     "portLabel": "3/4\" tube O.D., weld end",
+     "port2Label": "3/4\" JIC 37° female swivel (1-1/16-12)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-WO-FJX-16-16",
+     "position": 5,
+     "portLabel": "1\" tube O.D., weld end",
+     "port2Label": "1\" JIC 37° female swivel (1-5/16-12)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-WO-FJX-20-20",
+     "position": 6,
+     "portLabel": "1-1/4\" tube O.D., weld end",
+     "port2Label": "1-1/4\" JIC 37° female swivel (1-5/8-12)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-WO-FJX-24-24",
+     "position": 7,
+     "portLabel": "1-1/2\" tube O.D., weld end",
+     "port2Label": "1-1/2\" JIC 37° female swivel (1-7/8-12)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-WO-FJX-32-32",
+     "position": 8,
+     "portLabel": "2\" tube O.D., weld end",
+     "port2Label": "2\" JIC 37° female swivel (2-1/2-12)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    }
+   ],
+   "crossReferences": [],
+   "sourceFamily": "WO-FJX"
+  },
+  {
+   "sku": "IH-ST-WO-FP",
+   "slug": "steel-weld-on-tube-x-npt-female-adapter",
+   "title": "Steel Weld-On Tube × NPT Female Adapter",
+   "category": "steel-weld-on-adapters",
+   "focusKeyword": "weld-on npt female adapter",
+   "descriptionShort": "Steel Weld-On Tube × NPT Female Adapter: 8 part numbers, 1/4\" to 2\", weld end for tube O.D..",
+   "descriptionLong": "<p>The Steel Weld-On Tube × NPT Female Adapter is a straight rigid adapter that is welded onto a tube, a metal hose or a manifold to give it a NPT connection. It is forged carbon steel, trivalent zinc plated (ASTM B633).</p><h3>Ends and sealing</h3><ul><li><b>Weld end</b>: plain bore for a butt weld to tube O.D.; weld procedure and filler to suit the material.</li><li><b>NPT female end</b>: tapered pipe thread that seals on the thread with sealant; ASME B1.20.1.</li></ul><h3>Sizes</h3><p>8 part numbers, 1/4\" to 2\". The Sizes &amp; Part Numbers tab gives both ends for every one.</p><h3>Pressure rating</h3><p>The manufacturer publishes no pressure rating for this family. The finished joint holds what the weld, the tube or hose and the threaded end allow; tell us the working pressure and we will confirm it.</p><h3>How to order</h3><p>Quote the Indus part number, or send the tube or pipe size and the thread. Price and lead time are confirmed with the quotation.</p>",
+   "seoTitle": "Steel Weld-On Tube x NPT Female Adapter",
+   "seoDescription": "Steel Weld-On Tube x NPT Female Adapter, 8 sizes 1/4\" to 2\", weld end for tube O.D.. Quote from Indus Hydraulics, UAE.",
+   "faqs": [
+    {
+     "question": "What is it welded to?",
+     "answer": "A tube, corrugated metal hose or manifold: the weld end is bored for tube O.D.."
+    },
+    {
+     "question": "What is it made from?",
+     "answer": "Forged carbon steel, trivalent zinc plated (ASTM B633)."
+    },
+    {
+     "question": "What pressure is it rated for?",
+     "answer": "The manufacturer publishes no rating; the weld, the tube or hose and the threaded end set it. Tell us the working pressure and we will confirm it."
+    },
+    {
+     "question": "What is the lead time?",
+     "answer": "Price and lead time are confirmed with the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Body Configuration",
+     "value": "straight rigid adapter",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "body_configuration"
+    },
+    {
+     "group": "Port A",
+     "label": "Port A Thread",
+     "value": "weld end, 1/4\" to 2\" tube O.D.",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "port_a_thread"
+    },
+    {
+     "group": "Port B",
+     "label": "Port B Thread",
+     "value": "NPT female, 1/4\" to 2\"",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "port_b_thread"
+    },
+    {
+     "group": "Port B",
+     "label": "Port B Sealing",
+     "value": "tapered pipe thread that seals on the thread with sealant",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "port_b_seal"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size Range",
+     "value": "1/4\" to 2\"",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "nominal_size_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "forged carbon steel, trivalent zinc plated (ASTM B633)",
+     "unit": null,
+     "position": 5,
+     "isFilterable": true,
+     "templateKey": "material"
+    },
+    {
+     "group": "Compliance",
+     "label": "Applicable Standards",
+     "value": "ASME B1.20.1",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "applicable_standards"
+    }
+   ],
+   "searchAliases": [
+    "WO-FP",
+    "WO-FP-04-04",
+    "WO-FP-06-06",
+    "WO-FP-08-08",
+    "WO-FP-12-12",
+    "WO-FP-16-16",
+    "WO-FP-20-20",
+    "WO-FP-24-24",
+    "WO-FP-32-32"
+   ],
+   "images": [
+    {
+     "file": "IH-ST-WO-FP-01.jpg",
+     "alt": "Steel Weld-On Tube x NPT Female Adapter, side view",
+     "caption": "Supplier catalogue photo, HD batch 11 (2026-10-10)"
+    },
+    {
+     "file": "IH-ST-WO-FP-02.jpg",
+     "alt": "Steel Weld-On Tube x NPT Female Adapter, view into the weld end",
+     "caption": "Supplier catalogue photo, HD batch 11 (2026-10-10)"
+    },
+    {
+     "file": "IH-ST-WO-FP-03.jpg",
+     "alt": "Steel Weld-On Tube x NPT Female Adapter, view into the threaded end",
+     "caption": "Supplier catalogue photo, HD batch 11 (2026-10-10)"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-ST-WO-FP-04-04",
+     "position": 0,
+     "portLabel": "1/4\" tube O.D., weld end",
+     "port2Label": "1/4\" NPT female (1/4-18)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-WO-FP-06-06",
+     "position": 1,
+     "portLabel": "3/8\" tube O.D., weld end",
+     "port2Label": "3/8\" NPT female (3/8-18)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-WO-FP-08-08",
+     "position": 2,
+     "portLabel": "1/2\" tube O.D., weld end",
+     "port2Label": "1/2\" NPT female (1/2-14)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-WO-FP-12-12",
+     "position": 3,
+     "portLabel": "3/4\" tube O.D., weld end",
+     "port2Label": "3/4\" NPT female (3/4-14)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-WO-FP-16-16",
+     "position": 4,
+     "portLabel": "1\" tube O.D., weld end",
+     "port2Label": "1\" NPT female (1-11.5)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-WO-FP-20-20",
+     "position": 5,
+     "portLabel": "1-1/4\" tube O.D., weld end",
+     "port2Label": "1-1/4\" NPT female (1-1/4-11.5)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-WO-FP-24-24",
+     "position": 6,
+     "portLabel": "1-1/2\" tube O.D., weld end",
+     "port2Label": "1-1/2\" NPT female (1-1/2-11.5)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-WO-FP-32-32",
+     "position": 7,
+     "portLabel": "2\" tube O.D., weld end",
+     "port2Label": "2\" NPT female (2-11.5)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    }
+   ],
+   "crossReferences": [],
+   "sourceFamily": "WO-FP"
+  },
+  {
+   "sku": "IH-ST-WO-MJ",
+   "slug": "steel-weld-on-tube-x-jic-37-male-adapter",
+   "title": "Steel Weld-On Tube × JIC 37° Male Adapter",
+   "category": "steel-weld-on-adapters",
+   "focusKeyword": "weld-on jic 37 male adapter",
+   "descriptionShort": "Steel Weld-On Tube × JIC 37° Male Adapter: 9 part numbers, 1/4\" to 2\", weld end for tube O.D..",
+   "descriptionLong": "<p>The Steel Weld-On Tube × JIC 37° Male Adapter is a straight rigid adapter that is welded onto a tube, a metal hose or a manifold to give it a JIC 37° connection. It is forged carbon steel, trivalent zinc plated (ASTM B633).</p><h3>Ends and sealing</h3><ul><li><b>Weld end</b>: plain bore for a butt weld to tube O.D.; weld procedure and filler to suit the material.</li><li><b>JIC 37° male end</b>: 37° flare, a metal-to-metal seat on a 74° included cone; SAE J514.</li></ul><h3>Sizes</h3><p>9 part numbers, 1/4\" to 2\". The Sizes &amp; Part Numbers tab gives both ends for every one.</p><h3>Pressure rating</h3><p>The manufacturer publishes no pressure rating for this family. The finished joint holds what the weld, the tube or hose and the threaded end allow; tell us the working pressure and we will confirm it.</p><h3>How to order</h3><p>Quote the Indus part number, or send the tube or pipe size and the thread. Price and lead time are confirmed with the quotation.</p>",
+   "seoTitle": "Steel Weld-On Tube x JIC 37° Male Adapter",
+   "seoDescription": "Steel Weld-On Tube x JIC 37° Male Adapter, 9 sizes 1/4\" to 2\", weld end for tube O.D.. Quote from Indus Hydraulics, UAE.",
+   "faqs": [
+    {
+     "question": "What is it welded to?",
+     "answer": "A tube, corrugated metal hose or manifold: the weld end is bored for tube O.D.."
+    },
+    {
+     "question": "What is it made from?",
+     "answer": "Forged carbon steel, trivalent zinc plated (ASTM B633)."
+    },
+    {
+     "question": "What pressure is it rated for?",
+     "answer": "The manufacturer publishes no rating; the weld, the tube or hose and the threaded end set it. Tell us the working pressure and we will confirm it."
+    },
+    {
+     "question": "What is the lead time?",
+     "answer": "Price and lead time are confirmed with the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Body Configuration",
+     "value": "straight rigid adapter",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "body_configuration"
+    },
+    {
+     "group": "Port A",
+     "label": "Port A Thread",
+     "value": "weld end, 1/4\" to 2\" tube O.D.",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "port_a_thread"
+    },
+    {
+     "group": "Port B",
+     "label": "Port B Thread",
+     "value": "JIC 37° male, 1/4\" to 2\"",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "port_b_thread"
+    },
+    {
+     "group": "Port B",
+     "label": "Port B Sealing",
+     "value": "37° flare, a metal-to-metal seat on a 74° included cone",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "port_b_seal"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size Range",
+     "value": "1/4\" to 2\"",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "nominal_size_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "forged carbon steel, trivalent zinc plated (ASTM B633)",
+     "unit": null,
+     "position": 5,
+     "isFilterable": true,
+     "templateKey": "material"
+    },
+    {
+     "group": "Compliance",
+     "label": "Applicable Standards",
+     "value": "SAE J514",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "applicable_standards"
+    }
+   ],
+   "searchAliases": [
+    "WO-MJ",
+    "WO-MJ-04-04",
+    "WO-MJ-06-06",
+    "WO-MJ-08-08",
+    "WO-MJ-10-10",
+    "WO-MJ-12-12",
+    "WO-MJ-16-16",
+    "WO-MJ-20-20",
+    "WO-MJ-24-24",
+    "WO-MJ-32-32"
+   ],
+   "images": [],
+   "variants": [
+    {
+     "partNumber": "IH-ST-WO-MJ-04-04",
+     "position": 0,
+     "portLabel": "1/4\" tube O.D., weld end",
+     "port2Label": "1/4\" JIC 37° male (7/16-20)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-WO-MJ-06-06",
+     "position": 1,
+     "portLabel": "3/8\" tube O.D., weld end",
+     "port2Label": "3/8\" JIC 37° male (9/16-18)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-WO-MJ-08-08",
+     "position": 2,
+     "portLabel": "1/2\" tube O.D., weld end",
+     "port2Label": "1/2\" JIC 37° male (3/4-16)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-WO-MJ-10-10",
+     "position": 3,
+     "portLabel": "5/8\" tube O.D., weld end",
+     "port2Label": "5/8\" JIC 37° male (7/8-14)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-WO-MJ-12-12",
+     "position": 4,
+     "portLabel": "3/4\" tube O.D., weld end",
+     "port2Label": "3/4\" JIC 37° male (1-1/16-12)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-WO-MJ-16-16",
+     "position": 5,
+     "portLabel": "1\" tube O.D., weld end",
+     "port2Label": "1\" JIC 37° male (1-5/16-12)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-WO-MJ-20-20",
+     "position": 6,
+     "portLabel": "1-1/4\" tube O.D., weld end",
+     "port2Label": "1-1/4\" JIC 37° male (1-5/8-12)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-WO-MJ-24-24",
+     "position": 7,
+     "portLabel": "1-1/2\" tube O.D., weld end",
+     "port2Label": "1-1/2\" JIC 37° male (1-7/8-12)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-WO-MJ-32-32",
+     "position": 8,
+     "portLabel": "2\" tube O.D., weld end",
+     "port2Label": "2\" JIC 37° male (2-1/2-12)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    }
+   ],
+   "crossReferences": [],
+   "sourceFamily": "WO-MJ"
+  },
+  {
+   "sku": "IH-ST-WO-MP",
+   "slug": "steel-weld-on-tube-x-npt-male-adapter",
+   "title": "Steel Weld-On Tube × NPT Male Adapter",
+   "category": "steel-weld-on-adapters",
+   "focusKeyword": "weld-on npt male adapter",
+   "descriptionShort": "Steel Weld-On Tube × NPT Male Adapter: 8 part numbers, 1/4\" to 2\", weld end for tube O.D..",
+   "descriptionLong": "<p>The Steel Weld-On Tube × NPT Male Adapter is a straight rigid adapter that is welded onto a tube, a metal hose or a manifold to give it a NPT connection. It is forged carbon steel, trivalent zinc plated (ASTM B633).</p><h3>Ends and sealing</h3><ul><li><b>Weld end</b>: plain bore for a butt weld to tube O.D.; weld procedure and filler to suit the material.</li><li><b>NPT male end</b>: tapered pipe thread that seals on the thread with sealant; ASME B1.20.1.</li></ul><h3>Sizes</h3><p>8 part numbers, 1/4\" to 2\". The Sizes &amp; Part Numbers tab gives both ends for every one.</p><h3>Pressure rating</h3><p>The manufacturer publishes no pressure rating for this family. The finished joint holds what the weld, the tube or hose and the threaded end allow; tell us the working pressure and we will confirm it.</p><h3>How to order</h3><p>Quote the Indus part number, or send the tube or pipe size and the thread. Price and lead time are confirmed with the quotation.</p>",
+   "seoTitle": "Steel Weld-On Tube x NPT Male Adapter",
+   "seoDescription": "Steel Weld-On Tube x NPT Male Adapter, 8 sizes 1/4\" to 2\", weld end for tube O.D.. Quote from Indus Hydraulics, UAE.",
+   "faqs": [
+    {
+     "question": "What is it welded to?",
+     "answer": "A tube, corrugated metal hose or manifold: the weld end is bored for tube O.D.."
+    },
+    {
+     "question": "What is it made from?",
+     "answer": "Forged carbon steel, trivalent zinc plated (ASTM B633)."
+    },
+    {
+     "question": "What pressure is it rated for?",
+     "answer": "The manufacturer publishes no rating; the weld, the tube or hose and the threaded end set it. Tell us the working pressure and we will confirm it."
+    },
+    {
+     "question": "What is the lead time?",
+     "answer": "Price and lead time are confirmed with the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Body Configuration",
+     "value": "straight rigid adapter",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "body_configuration"
+    },
+    {
+     "group": "Port A",
+     "label": "Port A Thread",
+     "value": "weld end, 1/4\" to 2\" tube O.D.",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "port_a_thread"
+    },
+    {
+     "group": "Port B",
+     "label": "Port B Thread",
+     "value": "NPT male, 1/4\" to 2\"",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "port_b_thread"
+    },
+    {
+     "group": "Port B",
+     "label": "Port B Sealing",
+     "value": "tapered pipe thread that seals on the thread with sealant",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "port_b_seal"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size Range",
+     "value": "1/4\" to 2\"",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "nominal_size_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "forged carbon steel, trivalent zinc plated (ASTM B633)",
+     "unit": null,
+     "position": 5,
+     "isFilterable": true,
+     "templateKey": "material"
+    },
+    {
+     "group": "Compliance",
+     "label": "Applicable Standards",
+     "value": "ASME B1.20.1",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "applicable_standards"
+    }
+   ],
+   "searchAliases": [
+    "WO-MP",
+    "WO-MP-04-04",
+    "WO-MP-06-06",
+    "WO-MP-08-08",
+    "WO-MP-12-12",
+    "WO-MP-16-16",
+    "WO-MP-20-20",
+    "WO-MP-24-24",
+    "WO-MP-32-32"
+   ],
+   "images": [
+    {
+     "file": "IH-ST-WO-MP-01.jpg",
+     "alt": "Steel Weld-On Tube x NPT Male Adapter, side view",
+     "caption": "Supplier catalogue photo, HD batch 11 (2026-10-10)"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-ST-WO-MP-04-04",
+     "position": 0,
+     "portLabel": "1/4\" tube O.D., weld end",
+     "port2Label": "1/4\" NPT male (1/4-18)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-WO-MP-06-06",
+     "position": 1,
+     "portLabel": "3/8\" tube O.D., weld end",
+     "port2Label": "3/8\" NPT male (3/8-18)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-WO-MP-08-08",
+     "position": 2,
+     "portLabel": "1/2\" tube O.D., weld end",
+     "port2Label": "1/2\" NPT male (1/2-14)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-WO-MP-12-12",
+     "position": 3,
+     "portLabel": "3/4\" tube O.D., weld end",
+     "port2Label": "3/4\" NPT male (3/4-14)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-WO-MP-16-16",
+     "position": 4,
+     "portLabel": "1\" tube O.D., weld end",
+     "port2Label": "1\" NPT male (1-11.5)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-WO-MP-20-20",
+     "position": 5,
+     "portLabel": "1-1/4\" tube O.D., weld end",
+     "port2Label": "1-1/4\" NPT male (1-1/4-11.5)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-WO-MP-24-24",
+     "position": 6,
+     "portLabel": "1-1/2\" tube O.D., weld end",
+     "port2Label": "1-1/2\" NPT male (1-1/2-11.5)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-ST-WO-MP-32-32",
+     "position": 7,
+     "portLabel": "2\" tube O.D., weld end",
+     "port2Label": "2\" NPT male (2-11.5)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    }
+   ],
+   "crossReferences": [],
+   "sourceFamily": "WO-MP"
+  }
+ ],
+ "hold": []
+}
