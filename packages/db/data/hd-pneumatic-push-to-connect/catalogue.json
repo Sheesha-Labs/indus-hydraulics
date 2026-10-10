@@ -1,0 +1,3323 @@
+{
+ "source": "Hydraulics Direct (US principal) catalogue export 2026-10-09 — push-to-connect pneumatic fittings, batch 9",
+ "imageDir": "/Users/ayushkbhatia/Documents/Indus Supplier Research/Source Exports/Hydraulics Direct/hd-b9-jpeg",
+ "brandSlug": "indus",
+ "specTemplateSlug": "hydraulic-adapter-spec",
+ "categories": [
+  {
+   "slug": "push-to-connect-pneumatic-fittings",
+   "name": "Push-to-Connect Pneumatic Fittings",
+   "parentSlug": "hydraulic-adapters",
+   "position": 25,
+   "shortDescription": "One-touch push-in fittings for inch nylon and polyurethane air tube: male and female NPT connectors, elbows, tees, Y connectors, unions, crosses, bulkhead fittings, plugs and caps. 0–150 psi, air only.",
+   "seoTitle": "Push-to-Connect Pneumatic Fittings, Inch Air Tube",
+   "seoDescription": "Push-in pneumatic fittings for inch air tube: NPT male and female connectors, elbows, tees, unions, bulkhead fittings, plugs and caps. 0-150 psi, air only.",
+   "focusKeyword": "push to connect fittings",
+   "bands": {
+    "hero": {
+     "intro": "One-touch push-in fittings for inch outside-diameter air tube, from 5/32\" to 1/2\"."
+    },
+    "guidance": {
+     "heading": "Choosing a push-in fitting",
+     "body": "Choose by tube O.D. first, then by the thread at the port: NPT male, NPT female, or tube-to-tube. Cut the tube square with a tube cutter and push it fully home past the O-ring. These fittings are for compressed air only."
+    },
+    "standards": {
+     "heading": "Threads and rating",
+     "body": "Threaded ends are NPT to ASME B1.20.1. Published rating: 0 to 150 psi, vacuum to −29.5 inHg, 32 °F to 140 °F."
+    },
+    "faq": {
+     "heading": null,
+     "items": [
+      {
+       "q": "Do these fit metric tube?",
+       "a": "No: they are sized for inch outside-diameter tube, 5/32\" to 1/2\"."
+      },
+      {
+       "q": "Can they be used for hydraulic oil or water?",
+       "a": "No. They are rated for compressed air only."
+      }
+     ]
+    }
+   }
+  }
+ ],
+ "products": [
+  {
+   "sku": "IH-PN-PC",
+   "slug": "push-to-connect-male-connector-tube-x-npt",
+   "title": "Push-to-Connect Male Connector, Tube × NPT",
+   "category": "push-to-connect-pneumatic-fittings",
+   "focusKeyword": "push-to-connect male connector",
+   "descriptionShort": "Push-to-Connect Male Connector, Tube × NPT for inch air tube, 0–150 psi. 6 part numbers, 5/32\" to 1/2\" O.D. tube; the size table gives the size on each end.",
+   "descriptionLong": "<p>The Push-to-Connect Male Connector, Tube × NPT is a straight male connector for inch outside-diameter plastic air tube. Push the tube in and the stainless gripping teeth and O-ring hold and seal it; press the release collet and pull to take it out, with no tools.</p><h3>Ends and sealing</h3><ul><li><b>Push-in end</b>: takes nylon or polyurethane air tube cut square; an internal O-ring seals on the tube O.D.</li><li><b>NPT end</b>: tapered pipe thread (1/8\" to 1/2\" NPT) to ASME B1.20.1, supplied with a sealant coating or an O-ring on the thread.</li></ul><h3>Construction</h3><p>Nickel-plated brass body, POM release collet.</p><h3>Sizes</h3><p>6 part numbers, 5/32\" to 1/2\" O.D. tube, 1/8\" to 1/2\" NPT threads. The Sizes &amp; Part Numbers tab gives the size on each end for every one.</p><h3>Rating</h3><p>Published by the manufacturer: working pressure 0 to 150 psi (0 to 9.9 bar), vacuum to −29.5 inHg, temperature 32 °F to 140 °F (0 °C to 60 °C). For compressed air only; not for other gases, water, oil or hydraulic service.</p><h3>How to order</h3><p>Quote the Indus part number, or send the tube O.D. and the thread. Price and lead time are confirmed with the quotation.</p>",
+   "seoTitle": "Push-to-Connect Male Connector, Tube x NPT",
+   "seoDescription": "Push-to-Connect Male Connector, Tube x NPT for inch nylon or PU air tube, 0-150 psi: 6 sizes, 5/32\" to 1/2\" O.D. tube. Quote from Indus Hydraulics, UAE.",
+   "faqs": [
+    {
+     "question": "What tube does it fit?",
+     "answer": "Inch outside-diameter nylon or polyurethane air tube, 5/32\" to 1/2\" O.D. tube. Cut the tube square and push it fully home."
+    },
+    {
+     "question": "What pressure is it rated for?",
+     "answer": "0 to 150 psi working pressure and vacuum to −29.5 inHg, at 32 °F to 140 °F, as published by the manufacturer."
+    },
+    {
+     "question": "Can it be used for water or hydraulic oil?",
+     "answer": "No. It is rated for compressed air only."
+    },
+    {
+     "question": "How do I release the tube?",
+     "answer": "Push the collet towards the fitting body and pull the tube out."
+    },
+    {
+     "question": "What is the lead time?",
+     "answer": "Price and lead time are confirmed with the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Body Configuration",
+     "value": "straight male connector",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "body_configuration"
+    },
+    {
+     "group": "Port A",
+     "label": "Port A Thread",
+     "value": "push-in, 5/32\" to 1/2\" O.D. tube",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "port_a_thread"
+    },
+    {
+     "group": "Port A",
+     "label": "Port A Sealing",
+     "value": "internal O-ring on the tube O.D.",
+     "unit": null,
+     "position": 2,
+     "isFilterable": false,
+     "templateKey": "port_a_seal"
+    },
+    {
+     "group": "Port B",
+     "label": "Port B Thread",
+     "value": "NPT, 1/8\" to 1/2\" NPT",
+     "unit": null,
+     "position": 3,
+     "isFilterable": true,
+     "templateKey": "port_b_thread"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size Range",
+     "value": "5/32\" to 1/2\" O.D. tube",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "nominal_size_range"
+    },
+    {
+     "group": "Rating",
+     "label": "Working Pressure",
+     "value": "0 to 150 psi (0 to 9.9 bar); vacuum to −29.5 inHg",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "working_pressure"
+    },
+    {
+     "group": "Rating",
+     "label": "Temperature Range",
+     "value": "32 °F to 140 °F (0 °C to 60 °C)",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "temperature_range"
+    },
+    {
+     "group": "Rating",
+     "label": "Media",
+     "value": "compressed air only",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": "media"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "nickel-plated brass body, POM release collet",
+     "unit": null,
+     "position": 8,
+     "isFilterable": false,
+     "templateKey": "material"
+    },
+    {
+     "group": "Compliance",
+     "label": "Applicable Standards",
+     "value": "ASME B1.20.1 (NPT thread)",
+     "unit": null,
+     "position": 9,
+     "isFilterable": false,
+     "templateKey": "applicable_standards"
+    }
+   ],
+   "searchAliases": [
+    "PC-PC",
+    "PC-2.5-02",
+    "PC-03-04",
+    "PC-04-06",
+    "PC-04-08",
+    "PC-05-06",
+    "PC-08-08"
+   ],
+   "images": [
+    {
+     "file": "IH-PN-PC-01.jpg",
+     "alt": "Push-to-Connect Male Connector, Tube x NPT, catalogue photo",
+     "caption": "Supplier catalogue photo, HD batch 9 (2026-10-10)"
+    },
+    {
+     "file": "IH-PN-PC-02.jpg",
+     "alt": "Push-to-Connect Male Connector, Tube x NPT, second view",
+     "caption": "Supplier catalogue photo, HD batch 9 (2026-10-10)"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-PN-PC-2.5-02",
+     "position": 0,
+     "portLabel": "5/32\" tube, push-in",
+     "port2Label": "1/8\" NPT male",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PN-PC-03-04",
+     "position": 1,
+     "portLabel": "3/16\" tube, push-in",
+     "port2Label": "1/4\" NPT male",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PN-PC-04-06",
+     "position": 2,
+     "portLabel": "1/4\" tube, push-in",
+     "port2Label": "3/8\" NPT male",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PN-PC-04-08",
+     "position": 3,
+     "portLabel": "1/4\" tube, push-in",
+     "port2Label": "1/2\" NPT male",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PN-PC-05-06",
+     "position": 4,
+     "portLabel": "5/16\" tube, push-in",
+     "port2Label": "3/8\" NPT male",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PN-PC-08-08",
+     "position": 5,
+     "portLabel": "1/2\" tube, push-in",
+     "port2Label": "1/2\" NPT male",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    }
+   ],
+   "crossReferences": [],
+   "sourceFamily": "PC-PC"
+  },
+  {
+   "sku": "IH-PN-PCF",
+   "slug": "push-to-connect-female-connector-tube-x-npt",
+   "title": "Push-to-Connect Female Connector, Tube × NPT",
+   "category": "push-to-connect-pneumatic-fittings",
+   "focusKeyword": "push-to-connect female connector",
+   "descriptionShort": "Push-to-Connect Female Connector, Tube × NPT for inch air tube, 0–150 psi. 10 part numbers, 5/32\" to 1/2\" O.D. tube; the size table gives the size on each end.",
+   "descriptionLong": "<p>The Push-to-Connect Female Connector, Tube × NPT is a straight female connector for inch outside-diameter plastic air tube. Push the tube in and the stainless gripping teeth and O-ring hold and seal it; press the release collet and pull to take it out, with no tools.</p><h3>Ends and sealing</h3><ul><li><b>Push-in end</b>: takes nylon or polyurethane air tube cut square; an internal O-ring seals on the tube O.D.</li><li><b>NPT end</b>: tapered pipe thread (1/8\" to 1/2\" NPT) to ASME B1.20.1, supplied with a sealant coating or an O-ring on the thread.</li></ul><h3>Construction</h3><p>Nickel-plated brass body, POM release collet.</p><h3>Sizes</h3><p>10 part numbers, 5/32\" to 1/2\" O.D. tube, 1/8\" to 1/2\" NPT threads. The Sizes &amp; Part Numbers tab gives the size on each end for every one.</p><h3>Rating</h3><p>Published by the manufacturer: working pressure 0 to 150 psi (0 to 9.9 bar), vacuum to −29.5 inHg, temperature 32 °F to 140 °F (0 °C to 60 °C). For compressed air only; not for other gases, water, oil or hydraulic service.</p><h3>How to order</h3><p>Quote the Indus part number, or send the tube O.D. and the thread. Price and lead time are confirmed with the quotation.</p>",
+   "seoTitle": "Push-to-Connect Female Connector, Tube x NPT",
+   "seoDescription": "Push-to-Connect Female Connector, Tube x NPT for inch nylon or PU air tube, 0-150 psi: 10 sizes, 5/32\" to 1/2\" O.D. tube. Quote from Indus Hydraulics, UAE.",
+   "faqs": [
+    {
+     "question": "What tube does it fit?",
+     "answer": "Inch outside-diameter nylon or polyurethane air tube, 5/32\" to 1/2\" O.D. tube. Cut the tube square and push it fully home."
+    },
+    {
+     "question": "What pressure is it rated for?",
+     "answer": "0 to 150 psi working pressure and vacuum to −29.5 inHg, at 32 °F to 140 °F, as published by the manufacturer."
+    },
+    {
+     "question": "Can it be used for water or hydraulic oil?",
+     "answer": "No. It is rated for compressed air only."
+    },
+    {
+     "question": "How do I release the tube?",
+     "answer": "Push the collet towards the fitting body and pull the tube out."
+    },
+    {
+     "question": "What is the lead time?",
+     "answer": "Price and lead time are confirmed with the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Body Configuration",
+     "value": "straight female connector",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "body_configuration"
+    },
+    {
+     "group": "Port A",
+     "label": "Port A Thread",
+     "value": "push-in, 5/32\" to 1/2\" O.D. tube",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "port_a_thread"
+    },
+    {
+     "group": "Port A",
+     "label": "Port A Sealing",
+     "value": "internal O-ring on the tube O.D.",
+     "unit": null,
+     "position": 2,
+     "isFilterable": false,
+     "templateKey": "port_a_seal"
+    },
+    {
+     "group": "Port B",
+     "label": "Port B Thread",
+     "value": "NPT, 1/8\" to 1/2\" NPT",
+     "unit": null,
+     "position": 3,
+     "isFilterable": true,
+     "templateKey": "port_b_thread"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size Range",
+     "value": "5/32\" to 1/2\" O.D. tube",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "nominal_size_range"
+    },
+    {
+     "group": "Rating",
+     "label": "Working Pressure",
+     "value": "0 to 150 psi (0 to 9.9 bar); vacuum to −29.5 inHg",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "working_pressure"
+    },
+    {
+     "group": "Rating",
+     "label": "Temperature Range",
+     "value": "32 °F to 140 °F (0 °C to 60 °C)",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "temperature_range"
+    },
+    {
+     "group": "Rating",
+     "label": "Media",
+     "value": "compressed air only",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": "media"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "nickel-plated brass body, POM release collet",
+     "unit": null,
+     "position": 8,
+     "isFilterable": false,
+     "templateKey": "material"
+    },
+    {
+     "group": "Compliance",
+     "label": "Applicable Standards",
+     "value": "ASME B1.20.1 (NPT thread)",
+     "unit": null,
+     "position": 9,
+     "isFilterable": false,
+     "templateKey": "applicable_standards"
+    }
+   ],
+   "searchAliases": [
+    "PC-PCF",
+    "PCF-2.5-04",
+    "PCF-03-02",
+    "PCF-04-02",
+    "PCF-04-04",
+    "PCF-05-04",
+    "PCF-06-04",
+    "PCF-06-08",
+    "PCF-08-04",
+    "PCF-08-06",
+    "PCF-08-08"
+   ],
+   "images": [
+    {
+     "file": "IH-PN-PCF-01.jpg",
+     "alt": "Push-to-Connect Female Connector, Tube x NPT, catalogue photo",
+     "caption": "Supplier catalogue photo, HD batch 9 (2026-10-10)"
+    },
+    {
+     "file": "IH-PN-PCF-02.jpg",
+     "alt": "Push-to-Connect Female Connector, Tube x NPT, second view",
+     "caption": "Supplier catalogue photo, HD batch 9 (2026-10-10)"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-PN-PCF-2.5-04",
+     "position": 0,
+     "portLabel": "5/32\" tube, push-in",
+     "port2Label": "1/4\" NPT female",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PN-PCF-03-02",
+     "position": 1,
+     "portLabel": "3/16\" tube, push-in",
+     "port2Label": "1/8\" NPT female",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PN-PCF-04-02",
+     "position": 2,
+     "portLabel": "1/4\" tube, push-in",
+     "port2Label": "1/8\" NPT female",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PN-PCF-04-04",
+     "position": 3,
+     "portLabel": "1/4\" tube, push-in",
+     "port2Label": "1/4\" NPT female",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PN-PCF-05-04",
+     "position": 4,
+     "portLabel": "5/16\" tube, push-in",
+     "port2Label": "1/4\" NPT female",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PN-PCF-06-04",
+     "position": 5,
+     "portLabel": "3/8\" tube, push-in",
+     "port2Label": "1/4\" NPT female",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PN-PCF-06-08",
+     "position": 6,
+     "portLabel": "3/8\" tube, push-in",
+     "port2Label": "1/2\" NPT female",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PN-PCF-08-04",
+     "position": 7,
+     "portLabel": "1/2\" tube, push-in",
+     "port2Label": "1/4\" NPT female",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PN-PCF-08-06",
+     "position": 8,
+     "portLabel": "1/2\" tube, push-in",
+     "port2Label": "3/8\" NPT female",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PN-PCF-08-08",
+     "position": 9,
+     "portLabel": "1/2\" tube, push-in",
+     "port2Label": "1/2\" NPT female",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    }
+   ],
+   "crossReferences": [],
+   "sourceFamily": "PC-PCF"
+  },
+  {
+   "sku": "IH-PN-PG",
+   "slug": "push-to-connect-reducing-union",
+   "title": "Push-to-Connect Reducing Union",
+   "category": "push-to-connect-pneumatic-fittings",
+   "focusKeyword": "push-to-connect reducing union",
+   "descriptionShort": "Push-to-Connect Reducing Union for inch air tube, 0–150 psi. 4 part numbers, 5/32\" to 1/2\" O.D. tube; the size table gives the size on each end.",
+   "descriptionLong": "<p>The Push-to-Connect Reducing Union is a reducing union for inch outside-diameter plastic air tube. Push the tube in and the stainless gripping teeth and O-ring hold and seal it; press the release collet and pull to take it out, with no tools.</p><h3>Ends and sealing</h3><ul><li><b>Push-in end</b>: takes nylon or polyurethane air tube cut square; an internal O-ring seals on the tube O.D.</li></ul><h3>Construction</h3><p>Engineering-plastic body, POM release collet.</p><h3>Sizes</h3><p>4 part numbers, 5/32\" to 1/2\" O.D. tube. The Sizes &amp; Part Numbers tab gives the size on each end for every one.</p><h3>Rating</h3><p>Published by the manufacturer: working pressure 0 to 150 psi (0 to 9.9 bar), vacuum to −29.5 inHg, temperature 32 °F to 140 °F (0 °C to 60 °C). For compressed air only; not for other gases, water, oil or hydraulic service.</p><h3>How to order</h3><p>Quote the Indus part number, or send the tube O.D. and the thread. Price and lead time are confirmed with the quotation.</p>",
+   "seoTitle": "Push-to-Connect Reducing Union",
+   "seoDescription": "Push-to-Connect Reducing Union for inch nylon or PU air tube, 0-150 psi: 4 sizes, 5/32\" to 1/2\" O.D. tube. Quote from Indus Hydraulics, UAE.",
+   "faqs": [
+    {
+     "question": "What tube does it fit?",
+     "answer": "Inch outside-diameter nylon or polyurethane air tube, 5/32\" to 1/2\" O.D. tube. Cut the tube square and push it fully home."
+    },
+    {
+     "question": "What pressure is it rated for?",
+     "answer": "0 to 150 psi working pressure and vacuum to −29.5 inHg, at 32 °F to 140 °F, as published by the manufacturer."
+    },
+    {
+     "question": "Can it be used for water or hydraulic oil?",
+     "answer": "No. It is rated for compressed air only."
+    },
+    {
+     "question": "How do I release the tube?",
+     "answer": "Push the collet towards the fitting body and pull the tube out."
+    },
+    {
+     "question": "What is the lead time?",
+     "answer": "Price and lead time are confirmed with the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Body Configuration",
+     "value": "reducing union",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "body_configuration"
+    },
+    {
+     "group": "Port A",
+     "label": "Port A Thread",
+     "value": "push-in, 5/32\" to 1/2\" O.D. tube",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "port_a_thread"
+    },
+    {
+     "group": "Port A",
+     "label": "Port A Sealing",
+     "value": "internal O-ring on the tube O.D.",
+     "unit": null,
+     "position": 2,
+     "isFilterable": false,
+     "templateKey": "port_a_seal"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size Range",
+     "value": "5/32\" to 1/2\" O.D. tube",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "nominal_size_range"
+    },
+    {
+     "group": "Rating",
+     "label": "Working Pressure",
+     "value": "0 to 150 psi (0 to 9.9 bar); vacuum to −29.5 inHg",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "working_pressure"
+    },
+    {
+     "group": "Rating",
+     "label": "Temperature Range",
+     "value": "32 °F to 140 °F (0 °C to 60 °C)",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "temperature_range"
+    },
+    {
+     "group": "Rating",
+     "label": "Media",
+     "value": "compressed air only",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "media"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "engineering-plastic body, POM release collet",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": "material"
+    }
+   ],
+   "searchAliases": [
+    "PC-PG",
+    "PG-03-2.5",
+    "PG-04-2.5",
+    "PG-05-2.5",
+    "PG-08-06"
+   ],
+   "images": [
+    {
+     "file": "IH-PN-PG-01.jpg",
+     "alt": "Push-to-Connect Reducing Union, catalogue photo",
+     "caption": "Supplier catalogue photo, HD batch 9 (2026-10-10)"
+    },
+    {
+     "file": "IH-PN-PG-02.jpg",
+     "alt": "Push-to-Connect Reducing Union, second view",
+     "caption": "Supplier catalogue photo, HD batch 9 (2026-10-10)"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-PN-PG-03-2.5",
+     "position": 0,
+     "portLabel": "3/16\" tube, push-in",
+     "port2Label": "5/32\" tube, push-in",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PN-PG-04-2.5",
+     "position": 1,
+     "portLabel": "1/4\" tube, push-in",
+     "port2Label": "5/32\" tube, push-in",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PN-PG-05-2.5",
+     "position": 2,
+     "portLabel": "5/16\" tube, push-in",
+     "port2Label": "5/32\" tube, push-in",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PN-PG-08-06",
+     "position": 3,
+     "portLabel": "1/2\" tube, push-in",
+     "port2Label": "3/8\" tube, push-in",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    }
+   ],
+   "crossReferences": [],
+   "sourceFamily": "PC-PG"
+  },
+  {
+   "sku": "IH-PN-PGT",
+   "slug": "push-to-connect-reducing-union-tee",
+   "title": "Push-to-Connect Reducing Union Tee",
+   "category": "push-to-connect-pneumatic-fittings",
+   "focusKeyword": "push-to-connect reducing union tee",
+   "descriptionShort": "Push-to-Connect Reducing Union Tee for inch air tube, 0–150 psi. 2 part numbers, 1/4\" to 1/2\" O.D. tube; the size table gives the size on each end.",
+   "descriptionLong": "<p>The Push-to-Connect Reducing Union Tee is a reducing union tee for inch outside-diameter plastic air tube. Push the tube in and the stainless gripping teeth and O-ring hold and seal it; press the release collet and pull to take it out, with no tools.</p><h3>Ends and sealing</h3><ul><li><b>Push-in end</b>: takes nylon or polyurethane air tube cut square; an internal O-ring seals on the tube O.D.</li></ul><h3>Construction</h3><p>Engineering-plastic body, POM release collet.</p><h3>Sizes</h3><p>2 part numbers, 1/4\" to 1/2\" O.D. tube. The Sizes &amp; Part Numbers tab gives the size on each end for every one.</p><h3>Rating</h3><p>Published by the manufacturer: working pressure 0 to 150 psi (0 to 9.9 bar), vacuum to −29.5 inHg, temperature 32 °F to 140 °F (0 °C to 60 °C). For compressed air only; not for other gases, water, oil or hydraulic service.</p><h3>How to order</h3><p>Quote the Indus part number, or send the tube O.D. and the thread. Price and lead time are confirmed with the quotation.</p>",
+   "seoTitle": "Push-to-Connect Reducing Union Tee",
+   "seoDescription": "Push-to-Connect Reducing Union Tee for inch nylon or PU air tube, 0-150 psi: 2 sizes, 1/4\" to 1/2\" O.D. tube. Quote from Indus Hydraulics, UAE.",
+   "faqs": [
+    {
+     "question": "What tube does it fit?",
+     "answer": "Inch outside-diameter nylon or polyurethane air tube, 1/4\" to 1/2\" O.D. tube. Cut the tube square and push it fully home."
+    },
+    {
+     "question": "What pressure is it rated for?",
+     "answer": "0 to 150 psi working pressure and vacuum to −29.5 inHg, at 32 °F to 140 °F, as published by the manufacturer."
+    },
+    {
+     "question": "Can it be used for water or hydraulic oil?",
+     "answer": "No. It is rated for compressed air only."
+    },
+    {
+     "question": "How do I release the tube?",
+     "answer": "Push the collet towards the fitting body and pull the tube out."
+    },
+    {
+     "question": "What is the lead time?",
+     "answer": "Price and lead time are confirmed with the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Body Configuration",
+     "value": "reducing union tee",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "body_configuration"
+    },
+    {
+     "group": "Port A",
+     "label": "Port A Thread",
+     "value": "push-in, 1/4\" to 1/2\" O.D. tube",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "port_a_thread"
+    },
+    {
+     "group": "Port A",
+     "label": "Port A Sealing",
+     "value": "internal O-ring on the tube O.D.",
+     "unit": null,
+     "position": 2,
+     "isFilterable": false,
+     "templateKey": "port_a_seal"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size Range",
+     "value": "1/4\" to 1/2\" O.D. tube",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "nominal_size_range"
+    },
+    {
+     "group": "Rating",
+     "label": "Working Pressure",
+     "value": "0 to 150 psi (0 to 9.9 bar); vacuum to −29.5 inHg",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "working_pressure"
+    },
+    {
+     "group": "Rating",
+     "label": "Temperature Range",
+     "value": "32 °F to 140 °F (0 °C to 60 °C)",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "temperature_range"
+    },
+    {
+     "group": "Rating",
+     "label": "Media",
+     "value": "compressed air only",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "media"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "engineering-plastic body, POM release collet",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": "material"
+    }
+   ],
+   "searchAliases": [
+    "PC-PGT",
+    "PGT-06-06-04",
+    "PGT-08-08-06"
+   ],
+   "images": [
+    {
+     "file": "IH-PN-PGT-01.jpg",
+     "alt": "Push-to-Connect Reducing Union Tee, catalogue photo",
+     "caption": "Supplier catalogue photo, HD batch 9 (2026-10-10)"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-PN-PGT-06-06-04",
+     "position": 0,
+     "portLabel": "3/8\" tube, push-in (run)",
+     "port2Label": "1/4\" tube, push-in (branch)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PN-PGT-08-08-06",
+     "position": 1,
+     "portLabel": "1/2\" tube, push-in (run)",
+     "port2Label": "3/8\" tube, push-in (branch)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    }
+   ],
+   "crossReferences": [],
+   "sourceFamily": "PC-PGT"
+  },
+  {
+   "sku": "IH-PN-PH",
+   "slug": "push-to-connect-banjo-elbow-tube-x-npt-male",
+   "title": "Push-to-Connect Banjo Elbow, Tube × NPT Male",
+   "category": "push-to-connect-pneumatic-fittings",
+   "focusKeyword": "push-to-connect banjo elbow",
+   "descriptionShort": "Push-to-Connect Banjo Elbow, Tube × NPT Male for inch air tube, 0–150 psi. 1 part number, 1/4\" O.D. tube; the size table gives the size on each end.",
+   "descriptionLong": "<p>The Push-to-Connect Banjo Elbow, Tube × NPT Male is a banjo (swivel) elbow for inch outside-diameter plastic air tube. Push the tube in and the stainless gripping teeth and O-ring hold and seal it; press the release collet and pull to take it out, with no tools.</p><h3>Ends and sealing</h3><ul><li><b>Push-in end</b>: takes nylon or polyurethane air tube cut square; an internal O-ring seals on the tube O.D.</li><li><b>NPT end</b>: tapered pipe thread (1/4\" NPT) to ASME B1.20.1, supplied with a sealant coating or an O-ring on the thread.</li></ul><h3>Construction</h3><p>Plastic body with a nickel-plated brass threaded end, POM release collet.</p><h3>Sizes</h3><p>1 part number, 1/4\" O.D. tube, 1/4\" NPT threads. The Sizes &amp; Part Numbers tab gives the size on each end for every one.</p><h3>Rating</h3><p>Published by the manufacturer: working pressure 0 to 150 psi (0 to 9.9 bar), vacuum to −29.5 inHg, temperature 32 °F to 140 °F (0 °C to 60 °C). For compressed air only; not for other gases, water, oil or hydraulic service.</p><h3>How to order</h3><p>Quote the Indus part number, or send the tube O.D. and the thread. Price and lead time are confirmed with the quotation.</p>",
+   "seoTitle": "Push-to-Connect Banjo Elbow, Tube x NPT Male",
+   "seoDescription": "Push-to-Connect Banjo Elbow, Tube x NPT Male for inch nylon or PU air tube, 0-150 psi: 1 size, 1/4\" O.D. tube. Quote from Indus Hydraulics, UAE.",
+   "faqs": [
+    {
+     "question": "What tube does it fit?",
+     "answer": "Inch outside-diameter nylon or polyurethane air tube, 1/4\" O.D. tube. Cut the tube square and push it fully home."
+    },
+    {
+     "question": "What pressure is it rated for?",
+     "answer": "0 to 150 psi working pressure and vacuum to −29.5 inHg, at 32 °F to 140 °F, as published by the manufacturer."
+    },
+    {
+     "question": "Can it be used for water or hydraulic oil?",
+     "answer": "No. It is rated for compressed air only."
+    },
+    {
+     "question": "How do I release the tube?",
+     "answer": "Push the collet towards the fitting body and pull the tube out."
+    },
+    {
+     "question": "What is the lead time?",
+     "answer": "Price and lead time are confirmed with the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Body Configuration",
+     "value": "banjo (swivel) elbow",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "body_configuration"
+    },
+    {
+     "group": "Port A",
+     "label": "Port A Thread",
+     "value": "push-in, 1/4\" O.D. tube",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "port_a_thread"
+    },
+    {
+     "group": "Port A",
+     "label": "Port A Sealing",
+     "value": "internal O-ring on the tube O.D.",
+     "unit": null,
+     "position": 2,
+     "isFilterable": false,
+     "templateKey": "port_a_seal"
+    },
+    {
+     "group": "Port B",
+     "label": "Port B Thread",
+     "value": "NPT, 1/4\" NPT",
+     "unit": null,
+     "position": 3,
+     "isFilterable": true,
+     "templateKey": "port_b_thread"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size Range",
+     "value": "1/4\" O.D. tube",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "nominal_size_range"
+    },
+    {
+     "group": "Rating",
+     "label": "Working Pressure",
+     "value": "0 to 150 psi (0 to 9.9 bar); vacuum to −29.5 inHg",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "working_pressure"
+    },
+    {
+     "group": "Rating",
+     "label": "Temperature Range",
+     "value": "32 °F to 140 °F (0 °C to 60 °C)",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "temperature_range"
+    },
+    {
+     "group": "Rating",
+     "label": "Media",
+     "value": "compressed air only",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": "media"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "plastic body with a nickel-plated brass threaded end, POM release collet",
+     "unit": null,
+     "position": 8,
+     "isFilterable": false,
+     "templateKey": "material"
+    },
+    {
+     "group": "Compliance",
+     "label": "Applicable Standards",
+     "value": "ASME B1.20.1 (NPT thread)",
+     "unit": null,
+     "position": 9,
+     "isFilterable": false,
+     "templateKey": "applicable_standards"
+    }
+   ],
+   "searchAliases": [
+    "PC-PH",
+    "PH-04-04"
+   ],
+   "images": [
+    {
+     "file": "IH-PN-PH-01.jpg",
+     "alt": "Push-to-Connect Banjo Elbow, Tube x NPT Male, catalogue photo",
+     "caption": "Supplier catalogue photo, HD batch 9 (2026-10-10)"
+    },
+    {
+     "file": "IH-PN-PH-02.jpg",
+     "alt": "Push-to-Connect Banjo Elbow, Tube x NPT Male, second view",
+     "caption": "Supplier catalogue photo, HD batch 9 (2026-10-10)"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-PN-PH-04-04",
+     "position": 0,
+     "portLabel": "1/4\" tube, push-in",
+     "port2Label": "1/4\" NPT male",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    }
+   ],
+   "crossReferences": [],
+   "sourceFamily": "PC-PH"
+  },
+  {
+   "sku": "IH-PN-PL",
+   "slug": "push-to-connect-male-elbow-tube-x-npt",
+   "title": "Push-to-Connect Male Elbow, Tube × NPT",
+   "category": "push-to-connect-pneumatic-fittings",
+   "focusKeyword": "push-to-connect male elbow",
+   "descriptionShort": "Push-to-Connect Male Elbow, Tube × NPT for inch air tube, 0–150 psi. 11 part numbers, 5/32\" to 1/2\" O.D. tube; the size table gives the size on each end.",
+   "descriptionLong": "<p>The Push-to-Connect Male Elbow, Tube × NPT is a 90° male elbow for inch outside-diameter plastic air tube. Push the tube in and the stainless gripping teeth and O-ring hold and seal it; press the release collet and pull to take it out, with no tools.</p><h3>Ends and sealing</h3><ul><li><b>Push-in end</b>: takes nylon or polyurethane air tube cut square; an internal O-ring seals on the tube O.D.</li><li><b>NPT end</b>: tapered pipe thread (1/8\" to 1/2\" NPT) to ASME B1.20.1, supplied with a sealant coating or an O-ring on the thread.</li></ul><h3>Construction</h3><p>Plastic body with a nickel-plated brass threaded end, POM release collet.</p><h3>Sizes</h3><p>11 part numbers, 5/32\" to 1/2\" O.D. tube, 1/8\" to 1/2\" NPT threads. The Sizes &amp; Part Numbers tab gives the size on each end for every one.</p><h3>Rating</h3><p>Published by the manufacturer: working pressure 0 to 150 psi (0 to 9.9 bar), vacuum to −29.5 inHg, temperature 32 °F to 140 °F (0 °C to 60 °C). For compressed air only; not for other gases, water, oil or hydraulic service.</p><h3>How to order</h3><p>Quote the Indus part number, or send the tube O.D. and the thread. Price and lead time are confirmed with the quotation.</p>",
+   "seoTitle": "Push-to-Connect Male Elbow, Tube x NPT",
+   "seoDescription": "Push-to-Connect Male Elbow, Tube x NPT for inch nylon or PU air tube, 0-150 psi: 11 sizes, 5/32\" to 1/2\" O.D. tube. Quote from Indus Hydraulics, UAE.",
+   "faqs": [
+    {
+     "question": "What tube does it fit?",
+     "answer": "Inch outside-diameter nylon or polyurethane air tube, 5/32\" to 1/2\" O.D. tube. Cut the tube square and push it fully home."
+    },
+    {
+     "question": "What pressure is it rated for?",
+     "answer": "0 to 150 psi working pressure and vacuum to −29.5 inHg, at 32 °F to 140 °F, as published by the manufacturer."
+    },
+    {
+     "question": "Can it be used for water or hydraulic oil?",
+     "answer": "No. It is rated for compressed air only."
+    },
+    {
+     "question": "How do I release the tube?",
+     "answer": "Push the collet towards the fitting body and pull the tube out."
+    },
+    {
+     "question": "What is the lead time?",
+     "answer": "Price and lead time are confirmed with the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Body Configuration",
+     "value": "90° male elbow",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "body_configuration"
+    },
+    {
+     "group": "Port A",
+     "label": "Port A Thread",
+     "value": "push-in, 5/32\" to 1/2\" O.D. tube",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "port_a_thread"
+    },
+    {
+     "group": "Port A",
+     "label": "Port A Sealing",
+     "value": "internal O-ring on the tube O.D.",
+     "unit": null,
+     "position": 2,
+     "isFilterable": false,
+     "templateKey": "port_a_seal"
+    },
+    {
+     "group": "Port B",
+     "label": "Port B Thread",
+     "value": "NPT, 1/8\" to 1/2\" NPT",
+     "unit": null,
+     "position": 3,
+     "isFilterable": true,
+     "templateKey": "port_b_thread"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size Range",
+     "value": "5/32\" to 1/2\" O.D. tube",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "nominal_size_range"
+    },
+    {
+     "group": "Rating",
+     "label": "Working Pressure",
+     "value": "0 to 150 psi (0 to 9.9 bar); vacuum to −29.5 inHg",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "working_pressure"
+    },
+    {
+     "group": "Rating",
+     "label": "Temperature Range",
+     "value": "32 °F to 140 °F (0 °C to 60 °C)",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "temperature_range"
+    },
+    {
+     "group": "Rating",
+     "label": "Media",
+     "value": "compressed air only",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": "media"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "plastic body with a nickel-plated brass threaded end, POM release collet",
+     "unit": null,
+     "position": 8,
+     "isFilterable": false,
+     "templateKey": "material"
+    },
+    {
+     "group": "Compliance",
+     "label": "Applicable Standards",
+     "value": "ASME B1.20.1 (NPT thread)",
+     "unit": null,
+     "position": 9,
+     "isFilterable": false,
+     "templateKey": "applicable_standards"
+    }
+   ],
+   "searchAliases": [
+    "PC-PL",
+    "PL-2.5-02",
+    "PL-04-04",
+    "PL-05-02",
+    "PL-05-04",
+    "PL-05-06",
+    "PL-06-02",
+    "PL-06-04",
+    "PL-06-06",
+    "PL-06-08",
+    "PL-08-04",
+    "PL-08-08"
+   ],
+   "images": [
+    {
+     "file": "IH-PN-PL-01.jpg",
+     "alt": "Push-to-Connect Male Elbow, Tube x NPT, catalogue photo",
+     "caption": "Supplier catalogue photo, HD batch 9 (2026-10-10)"
+    },
+    {
+     "file": "IH-PN-PL-02.jpg",
+     "alt": "Push-to-Connect Male Elbow, Tube x NPT, second view",
+     "caption": "Supplier catalogue photo, HD batch 9 (2026-10-10)"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-PN-PL-2.5-02",
+     "position": 0,
+     "portLabel": "5/32\" tube, push-in",
+     "port2Label": "1/8\" NPT male",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PN-PL-04-04",
+     "position": 1,
+     "portLabel": "1/4\" tube, push-in",
+     "port2Label": "1/4\" NPT male",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PN-PL-05-02",
+     "position": 2,
+     "portLabel": "5/16\" tube, push-in",
+     "port2Label": "1/8\" NPT male",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PN-PL-05-04",
+     "position": 3,
+     "portLabel": "5/16\" tube, push-in",
+     "port2Label": "1/4\" NPT male",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PN-PL-05-06",
+     "position": 4,
+     "portLabel": "5/16\" tube, push-in",
+     "port2Label": "3/8\" NPT male",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PN-PL-06-02",
+     "position": 5,
+     "portLabel": "3/8\" tube, push-in",
+     "port2Label": "1/8\" NPT male",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PN-PL-06-04",
+     "position": 6,
+     "portLabel": "3/8\" tube, push-in",
+     "port2Label": "1/4\" NPT male",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PN-PL-06-06",
+     "position": 7,
+     "portLabel": "3/8\" tube, push-in",
+     "port2Label": "3/8\" NPT male",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PN-PL-06-08",
+     "position": 8,
+     "portLabel": "3/8\" tube, push-in",
+     "port2Label": "1/2\" NPT male",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PN-PL-08-04",
+     "position": 9,
+     "portLabel": "1/2\" tube, push-in",
+     "port2Label": "1/4\" NPT male",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PN-PL-08-08",
+     "position": 10,
+     "portLabel": "1/2\" tube, push-in",
+     "port2Label": "1/2\" NPT male",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    }
+   ],
+   "crossReferences": [],
+   "sourceFamily": "PC-PL"
+  },
+  {
+   "sku": "IH-PN-PLF",
+   "slug": "push-to-connect-female-elbow-tube-x-npt",
+   "title": "Push-to-Connect Female Elbow, Tube × NPT",
+   "category": "push-to-connect-pneumatic-fittings",
+   "focusKeyword": "push-to-connect female elbow",
+   "descriptionShort": "Push-to-Connect Female Elbow, Tube × NPT for inch air tube, 0–150 psi. 8 part numbers, 5/32\" to 1/2\" O.D. tube; the size table gives the size on each end.",
+   "descriptionLong": "<p>The Push-to-Connect Female Elbow, Tube × NPT is a 90° female elbow for inch outside-diameter plastic air tube. Push the tube in and the stainless gripping teeth and O-ring hold and seal it; press the release collet and pull to take it out, with no tools.</p><h3>Ends and sealing</h3><ul><li><b>Push-in end</b>: takes nylon or polyurethane air tube cut square; an internal O-ring seals on the tube O.D.</li><li><b>NPT end</b>: tapered pipe thread (1/8\" to 1/2\" NPT) to ASME B1.20.1, supplied with a sealant coating or an O-ring on the thread.</li></ul><h3>Construction</h3><p>Plastic body with a nickel-plated brass threaded end, POM release collet.</p><h3>Sizes</h3><p>8 part numbers, 5/32\" to 1/2\" O.D. tube, 1/8\" to 1/2\" NPT threads. The Sizes &amp; Part Numbers tab gives the size on each end for every one.</p><h3>Rating</h3><p>Published by the manufacturer: working pressure 0 to 150 psi (0 to 9.9 bar), vacuum to −29.5 inHg, temperature 32 °F to 140 °F (0 °C to 60 °C). For compressed air only; not for other gases, water, oil or hydraulic service.</p><h3>How to order</h3><p>Quote the Indus part number, or send the tube O.D. and the thread. Price and lead time are confirmed with the quotation.</p>",
+   "seoTitle": "Push-to-Connect Female Elbow, Tube x NPT",
+   "seoDescription": "Push-to-Connect Female Elbow, Tube x NPT for inch nylon or PU air tube, 0-150 psi: 8 sizes, 5/32\" to 1/2\" O.D. tube. Quote from Indus Hydraulics, UAE.",
+   "faqs": [
+    {
+     "question": "What tube does it fit?",
+     "answer": "Inch outside-diameter nylon or polyurethane air tube, 5/32\" to 1/2\" O.D. tube. Cut the tube square and push it fully home."
+    },
+    {
+     "question": "What pressure is it rated for?",
+     "answer": "0 to 150 psi working pressure and vacuum to −29.5 inHg, at 32 °F to 140 °F, as published by the manufacturer."
+    },
+    {
+     "question": "Can it be used for water or hydraulic oil?",
+     "answer": "No. It is rated for compressed air only."
+    },
+    {
+     "question": "How do I release the tube?",
+     "answer": "Push the collet towards the fitting body and pull the tube out."
+    },
+    {
+     "question": "What is the lead time?",
+     "answer": "Price and lead time are confirmed with the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Body Configuration",
+     "value": "90° female elbow",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "body_configuration"
+    },
+    {
+     "group": "Port A",
+     "label": "Port A Thread",
+     "value": "push-in, 5/32\" to 1/2\" O.D. tube",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "port_a_thread"
+    },
+    {
+     "group": "Port A",
+     "label": "Port A Sealing",
+     "value": "internal O-ring on the tube O.D.",
+     "unit": null,
+     "position": 2,
+     "isFilterable": false,
+     "templateKey": "port_a_seal"
+    },
+    {
+     "group": "Port B",
+     "label": "Port B Thread",
+     "value": "NPT, 1/8\" to 1/2\" NPT",
+     "unit": null,
+     "position": 3,
+     "isFilterable": true,
+     "templateKey": "port_b_thread"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size Range",
+     "value": "5/32\" to 1/2\" O.D. tube",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "nominal_size_range"
+    },
+    {
+     "group": "Rating",
+     "label": "Working Pressure",
+     "value": "0 to 150 psi (0 to 9.9 bar); vacuum to −29.5 inHg",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "working_pressure"
+    },
+    {
+     "group": "Rating",
+     "label": "Temperature Range",
+     "value": "32 °F to 140 °F (0 °C to 60 °C)",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "temperature_range"
+    },
+    {
+     "group": "Rating",
+     "label": "Media",
+     "value": "compressed air only",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": "media"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "plastic body with a nickel-plated brass threaded end, POM release collet",
+     "unit": null,
+     "position": 8,
+     "isFilterable": false,
+     "templateKey": "material"
+    },
+    {
+     "group": "Compliance",
+     "label": "Applicable Standards",
+     "value": "ASME B1.20.1 (NPT thread)",
+     "unit": null,
+     "position": 9,
+     "isFilterable": false,
+     "templateKey": "applicable_standards"
+    }
+   ],
+   "searchAliases": [
+    "PC-PLF",
+    "PLF-2.5-04",
+    "PLF-03-02",
+    "PLF-04-04",
+    "PLF-04-06",
+    "PLF-05-02",
+    "PLF-06-04",
+    "PLF-06-08",
+    "PLF-08-08"
+   ],
+   "images": [
+    {
+     "file": "IH-PN-PLF-01.jpg",
+     "alt": "Push-to-Connect Female Elbow, Tube x NPT, catalogue photo",
+     "caption": "Supplier catalogue photo, HD batch 9 (2026-10-10)"
+    },
+    {
+     "file": "IH-PN-PLF-02.jpg",
+     "alt": "Push-to-Connect Female Elbow, Tube x NPT, second view",
+     "caption": "Supplier catalogue photo, HD batch 9 (2026-10-10)"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-PN-PLF-2.5-04",
+     "position": 0,
+     "portLabel": "5/32\" tube, push-in",
+     "port2Label": "1/4\" NPT female",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PN-PLF-03-02",
+     "position": 1,
+     "portLabel": "3/16\" tube, push-in",
+     "port2Label": "1/8\" NPT female",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PN-PLF-04-04",
+     "position": 2,
+     "portLabel": "1/4\" tube, push-in",
+     "port2Label": "1/4\" NPT female",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PN-PLF-04-06",
+     "position": 3,
+     "portLabel": "1/4\" tube, push-in",
+     "port2Label": "3/8\" NPT female",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PN-PLF-05-02",
+     "position": 4,
+     "portLabel": "5/16\" tube, push-in",
+     "port2Label": "1/8\" NPT female",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PN-PLF-06-04",
+     "position": 5,
+     "portLabel": "3/8\" tube, push-in",
+     "port2Label": "1/4\" NPT female",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PN-PLF-06-08",
+     "position": 6,
+     "portLabel": "3/8\" tube, push-in",
+     "port2Label": "1/2\" NPT female",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PN-PLF-08-08",
+     "position": 7,
+     "portLabel": "1/2\" tube, push-in",
+     "port2Label": "1/2\" NPT female",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    }
+   ],
+   "crossReferences": [],
+   "sourceFamily": "PC-PLF"
+  },
+  {
+   "sku": "IH-PN-PMF",
+   "slug": "push-to-connect-bulkhead-female-connector-tube-x-npt",
+   "title": "Push-to-Connect Bulkhead Female Connector, Tube × NPT",
+   "category": "push-to-connect-pneumatic-fittings",
+   "focusKeyword": "push-to-connect bulkhead female connector",
+   "descriptionShort": "Push-to-Connect Bulkhead Female Connector, Tube × NPT for inch air tube, 0–150 psi. 2 part numbers, 5/32\" to 3/8\" O.D. tube; the size table gives the size on each end.",
+   "descriptionLong": "<p>The Push-to-Connect Bulkhead Female Connector, Tube × NPT is a bulkhead female connector for inch outside-diameter plastic air tube. Push the tube in and the stainless gripping teeth and O-ring hold and seal it; press the release collet and pull to take it out, with no tools.</p><h3>Ends and sealing</h3><ul><li><b>Push-in end</b>: takes nylon or polyurethane air tube cut square; an internal O-ring seals on the tube O.D.</li><li><b>NPT end</b>: tapered pipe thread (1/8\" to 3/8\" NPT) to ASME B1.20.1, supplied with a sealant coating or an O-ring on the thread.</li></ul><h3>Construction</h3><p>Nickel-plated brass body, POM release collet.</p><h3>Sizes</h3><p>2 part numbers, 5/32\" to 3/8\" O.D. tube, 1/8\" to 3/8\" NPT threads. The Sizes &amp; Part Numbers tab gives the size on each end for every one.</p><h3>Rating</h3><p>Published by the manufacturer: working pressure 0 to 150 psi (0 to 9.9 bar), vacuum to −29.5 inHg, temperature 32 °F to 140 °F (0 °C to 60 °C). For compressed air only; not for other gases, water, oil or hydraulic service.</p><h3>How to order</h3><p>Quote the Indus part number, or send the tube O.D. and the thread. Price and lead time are confirmed with the quotation.</p>",
+   "seoTitle": "Push-to-Connect Bulkhead Female Connector, Tube x NPT",
+   "seoDescription": "Push-to-Connect Bulkhead Female Connector, Tube x NPT for inch nylon or PU air tube, 0-150 psi: 2 sizes, 5/32\" to 3/8\" O.D. tube. Quote from Indus Hydrauli",
+   "faqs": [
+    {
+     "question": "What tube does it fit?",
+     "answer": "Inch outside-diameter nylon or polyurethane air tube, 5/32\" to 3/8\" O.D. tube. Cut the tube square and push it fully home."
+    },
+    {
+     "question": "What pressure is it rated for?",
+     "answer": "0 to 150 psi working pressure and vacuum to −29.5 inHg, at 32 °F to 140 °F, as published by the manufacturer."
+    },
+    {
+     "question": "Can it be used for water or hydraulic oil?",
+     "answer": "No. It is rated for compressed air only."
+    },
+    {
+     "question": "How do I release the tube?",
+     "answer": "Push the collet towards the fitting body and pull the tube out."
+    },
+    {
+     "question": "What is the lead time?",
+     "answer": "Price and lead time are confirmed with the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Body Configuration",
+     "value": "bulkhead female connector",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "body_configuration"
+    },
+    {
+     "group": "Port A",
+     "label": "Port A Thread",
+     "value": "push-in, 5/32\" to 3/8\" O.D. tube",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "port_a_thread"
+    },
+    {
+     "group": "Port A",
+     "label": "Port A Sealing",
+     "value": "internal O-ring on the tube O.D.",
+     "unit": null,
+     "position": 2,
+     "isFilterable": false,
+     "templateKey": "port_a_seal"
+    },
+    {
+     "group": "Port B",
+     "label": "Port B Thread",
+     "value": "NPT, 1/8\" to 3/8\" NPT",
+     "unit": null,
+     "position": 3,
+     "isFilterable": true,
+     "templateKey": "port_b_thread"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size Range",
+     "value": "5/32\" to 3/8\" O.D. tube",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "nominal_size_range"
+    },
+    {
+     "group": "Rating",
+     "label": "Working Pressure",
+     "value": "0 to 150 psi (0 to 9.9 bar); vacuum to −29.5 inHg",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "working_pressure"
+    },
+    {
+     "group": "Rating",
+     "label": "Temperature Range",
+     "value": "32 °F to 140 °F (0 °C to 60 °C)",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "temperature_range"
+    },
+    {
+     "group": "Rating",
+     "label": "Media",
+     "value": "compressed air only",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": "media"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "nickel-plated brass body, POM release collet",
+     "unit": null,
+     "position": 8,
+     "isFilterable": false,
+     "templateKey": "material"
+    },
+    {
+     "group": "Compliance",
+     "label": "Applicable Standards",
+     "value": "ASME B1.20.1 (NPT thread)",
+     "unit": null,
+     "position": 9,
+     "isFilterable": false,
+     "templateKey": "applicable_standards"
+    }
+   ],
+   "searchAliases": [
+    "PC-PMF",
+    "PMF-2.5-02",
+    "PMF-06-06"
+   ],
+   "images": [
+    {
+     "file": "IH-PN-PMF-01.jpg",
+     "alt": "Push-to-Connect Bulkhead Female Connector, Tube x NPT, catalogue photo",
+     "caption": "Supplier catalogue photo, HD batch 9 (2026-10-10)"
+    },
+    {
+     "file": "IH-PN-PMF-02.jpg",
+     "alt": "Push-to-Connect Bulkhead Female Connector, Tube x NPT, second view",
+     "caption": "Supplier catalogue photo, HD batch 9 (2026-10-10)"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-PN-PMF-2.5-02",
+     "position": 0,
+     "portLabel": "5/32\" tube, push-in",
+     "port2Label": "1/8\" NPT female",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PN-PMF-06-06",
+     "position": 1,
+     "portLabel": "3/8\" tube, push-in",
+     "port2Label": "3/8\" NPT female",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    }
+   ],
+   "crossReferences": [],
+   "sourceFamily": "PC-PMF"
+  },
+  {
+   "sku": "IH-PN-PMM",
+   "slug": "push-to-connect-bulkhead-union",
+   "title": "Push-to-Connect Bulkhead Union",
+   "category": "push-to-connect-pneumatic-fittings",
+   "focusKeyword": "push-to-connect bulkhead union",
+   "descriptionShort": "Push-to-Connect Bulkhead Union for inch air tube, 0–150 psi. 1 part number, 1/4\" O.D. tube; the size table gives the size on each end.",
+   "descriptionLong": "<p>The Push-to-Connect Bulkhead Union is a bulkhead union for inch outside-diameter plastic air tube. Push the tube in and the stainless gripping teeth and O-ring hold and seal it; press the release collet and pull to take it out, with no tools.</p><h3>Ends and sealing</h3><ul><li><b>Push-in end</b>: takes nylon or polyurethane air tube cut square; an internal O-ring seals on the tube O.D.</li></ul><h3>Construction</h3><p>Nickel-plated brass body, POM release collet.</p><h3>Sizes</h3><p>1 part number, 1/4\" O.D. tube. The Sizes &amp; Part Numbers tab gives the size on each end for every one.</p><h3>Rating</h3><p>Published by the manufacturer: working pressure 0 to 150 psi (0 to 9.9 bar), vacuum to −29.5 inHg, temperature 32 °F to 140 °F (0 °C to 60 °C). For compressed air only; not for other gases, water, oil or hydraulic service.</p><h3>How to order</h3><p>Quote the Indus part number, or send the tube O.D. and the thread. Price and lead time are confirmed with the quotation.</p>",
+   "seoTitle": "Push-to-Connect Bulkhead Union",
+   "seoDescription": "Push-to-Connect Bulkhead Union for inch nylon or PU air tube, 0-150 psi: 1 size, 1/4\" O.D. tube. Quote from Indus Hydraulics, UAE.",
+   "faqs": [
+    {
+     "question": "What tube does it fit?",
+     "answer": "Inch outside-diameter nylon or polyurethane air tube, 1/4\" O.D. tube. Cut the tube square and push it fully home."
+    },
+    {
+     "question": "What pressure is it rated for?",
+     "answer": "0 to 150 psi working pressure and vacuum to −29.5 inHg, at 32 °F to 140 °F, as published by the manufacturer."
+    },
+    {
+     "question": "Can it be used for water or hydraulic oil?",
+     "answer": "No. It is rated for compressed air only."
+    },
+    {
+     "question": "How do I release the tube?",
+     "answer": "Push the collet towards the fitting body and pull the tube out."
+    },
+    {
+     "question": "What is the lead time?",
+     "answer": "Price and lead time are confirmed with the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Body Configuration",
+     "value": "bulkhead union",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "body_configuration"
+    },
+    {
+     "group": "Port A",
+     "label": "Port A Thread",
+     "value": "push-in, 1/4\" O.D. tube",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "port_a_thread"
+    },
+    {
+     "group": "Port A",
+     "label": "Port A Sealing",
+     "value": "internal O-ring on the tube O.D.",
+     "unit": null,
+     "position": 2,
+     "isFilterable": false,
+     "templateKey": "port_a_seal"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size Range",
+     "value": "1/4\" O.D. tube",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "nominal_size_range"
+    },
+    {
+     "group": "Rating",
+     "label": "Working Pressure",
+     "value": "0 to 150 psi (0 to 9.9 bar); vacuum to −29.5 inHg",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "working_pressure"
+    },
+    {
+     "group": "Rating",
+     "label": "Temperature Range",
+     "value": "32 °F to 140 °F (0 °C to 60 °C)",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "temperature_range"
+    },
+    {
+     "group": "Rating",
+     "label": "Media",
+     "value": "compressed air only",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "media"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "nickel-plated brass body, POM release collet",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": "material"
+    }
+   ],
+   "searchAliases": [
+    "PC-PMM",
+    "PMM-04"
+   ],
+   "images": [
+    {
+     "file": "IH-PN-PMM-01.jpg",
+     "alt": "Push-to-Connect Bulkhead Union, catalogue photo",
+     "caption": "Supplier catalogue photo, HD batch 9 (2026-10-10)"
+    },
+    {
+     "file": "IH-PN-PMM-02.jpg",
+     "alt": "Push-to-Connect Bulkhead Union, second view",
+     "caption": "Supplier catalogue photo, HD batch 9 (2026-10-10)"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-PN-PMM-04",
+     "position": 0,
+     "portLabel": "1/4\" tube, push-in",
+     "port2Label": "1/4\" tube, push-in",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    }
+   ],
+   "crossReferences": [],
+   "sourceFamily": "PC-PMM"
+  },
+  {
+   "sku": "IH-PN-PP",
+   "slug": "push-to-connect-plug",
+   "title": "Push-to-Connect Plug",
+   "category": "push-to-connect-pneumatic-fittings",
+   "focusKeyword": "push-to-connect plug",
+   "descriptionShort": "Push-to-Connect Plug for inch air tube, 0–150 psi. 2 part numbers, 1/4\" to 1/2\" O.D. tube; the size table gives the size on each end.",
+   "descriptionLong": "<p>The Push-to-Connect Plug is a plug for an unused push-in port for inch outside-diameter plastic air tube. Push the tube in and the stainless gripping teeth and O-ring hold and seal it; press the release collet and pull to take it out, with no tools.</p><h3>Ends and sealing</h3><ul><li><b>Push-in end</b>: takes nylon or polyurethane air tube cut square; an internal O-ring seals on the tube O.D.</li></ul><h3>Construction</h3><p>Engineering-plastic body, POM release collet.</p><h3>Sizes</h3><p>2 part numbers, 1/4\" to 1/2\" O.D. tube. The Sizes &amp; Part Numbers tab gives the size on each end for every one.</p><h3>Rating</h3><p>Published by the manufacturer: working pressure 0 to 150 psi (0 to 9.9 bar), vacuum to −29.5 inHg, temperature 32 °F to 140 °F (0 °C to 60 °C). For compressed air only; not for other gases, water, oil or hydraulic service.</p><h3>How to order</h3><p>Quote the Indus part number, or send the tube O.D. and the thread. Price and lead time are confirmed with the quotation.</p>",
+   "seoTitle": "Push-to-Connect Plug",
+   "seoDescription": "Push-to-Connect Plug for inch nylon or PU air tube, 0-150 psi: 2 sizes, 1/4\" to 1/2\" O.D. tube. Quote from Indus Hydraulics, UAE.",
+   "faqs": [
+    {
+     "question": "What tube does it fit?",
+     "answer": "Inch outside-diameter nylon or polyurethane air tube, 1/4\" to 1/2\" O.D. tube. Cut the tube square and push it fully home."
+    },
+    {
+     "question": "What pressure is it rated for?",
+     "answer": "0 to 150 psi working pressure and vacuum to −29.5 inHg, at 32 °F to 140 °F, as published by the manufacturer."
+    },
+    {
+     "question": "Can it be used for water or hydraulic oil?",
+     "answer": "No. It is rated for compressed air only."
+    },
+    {
+     "question": "How do I release the tube?",
+     "answer": "Push the collet towards the fitting body and pull the tube out."
+    },
+    {
+     "question": "What is the lead time?",
+     "answer": "Price and lead time are confirmed with the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Body Configuration",
+     "value": "plug for an unused push-in port",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "body_configuration"
+    },
+    {
+     "group": "Port A",
+     "label": "Port A Thread",
+     "value": "push-in, 1/4\" to 1/2\" O.D. tube",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "port_a_thread"
+    },
+    {
+     "group": "Port A",
+     "label": "Port A Sealing",
+     "value": "internal O-ring on the tube O.D.",
+     "unit": null,
+     "position": 2,
+     "isFilterable": false,
+     "templateKey": "port_a_seal"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size Range",
+     "value": "1/4\" to 1/2\" O.D. tube",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "nominal_size_range"
+    },
+    {
+     "group": "Rating",
+     "label": "Working Pressure",
+     "value": "0 to 150 psi (0 to 9.9 bar); vacuum to −29.5 inHg",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "working_pressure"
+    },
+    {
+     "group": "Rating",
+     "label": "Temperature Range",
+     "value": "32 °F to 140 °F (0 °C to 60 °C)",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "temperature_range"
+    },
+    {
+     "group": "Rating",
+     "label": "Media",
+     "value": "compressed air only",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "media"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "engineering-plastic body, POM release collet",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": "material"
+    }
+   ],
+   "searchAliases": [
+    "PC-PP",
+    "PP-04",
+    "PP-08"
+   ],
+   "images": [
+    {
+     "file": "IH-PN-PP-01.jpg",
+     "alt": "Push-to-Connect Plug, catalogue photo",
+     "caption": "Supplier catalogue photo, HD batch 9 (2026-10-10)"
+    },
+    {
+     "file": "IH-PN-PP-02.jpg",
+     "alt": "Push-to-Connect Plug, second view",
+     "caption": "Supplier catalogue photo, HD batch 9 (2026-10-10)"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-PN-PP-04",
+     "position": 0,
+     "portLabel": "1/4\" tube, push-in",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PN-PP-08",
+     "position": 1,
+     "portLabel": "1/2\" tube, push-in",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    }
+   ],
+   "crossReferences": [],
+   "sourceFamily": "PC-PP"
+  },
+  {
+   "sku": "IH-PN-PPF",
+   "slug": "push-to-connect-tube-end-cap",
+   "title": "Push-to-Connect Tube End Cap",
+   "category": "push-to-connect-pneumatic-fittings",
+   "focusKeyword": "push-to-connect tube end cap",
+   "descriptionShort": "Push-to-Connect Tube End Cap for inch air tube, 0–150 psi. 3 part numbers, 5/32\" to 1/2\" O.D. tube; the size table gives the size on each end.",
+   "descriptionLong": "<p>The Push-to-Connect Tube End Cap is a cap for a tube end for inch outside-diameter plastic air tube. Push the tube in and the stainless gripping teeth and O-ring hold and seal it; press the release collet and pull to take it out, with no tools.</p><h3>Ends and sealing</h3><ul><li><b>Push-in end</b>: takes nylon or polyurethane air tube cut square; an internal O-ring seals on the tube O.D.</li></ul><h3>Construction</h3><p>Engineering-plastic body, POM release collet.</p><h3>Sizes</h3><p>3 part numbers, 5/32\" to 1/2\" O.D. tube. The Sizes &amp; Part Numbers tab gives the size on each end for every one.</p><h3>Rating</h3><p>Published by the manufacturer: working pressure 0 to 150 psi (0 to 9.9 bar), vacuum to −29.5 inHg, temperature 32 °F to 140 °F (0 °C to 60 °C). For compressed air only; not for other gases, water, oil or hydraulic service.</p><h3>How to order</h3><p>Quote the Indus part number, or send the tube O.D. and the thread. Price and lead time are confirmed with the quotation.</p>",
+   "seoTitle": "Push-to-Connect Tube End Cap",
+   "seoDescription": "Push-to-Connect Tube End Cap for inch nylon or PU air tube, 0-150 psi: 3 sizes, 5/32\" to 1/2\" O.D. tube. Quote from Indus Hydraulics, UAE.",
+   "faqs": [
+    {
+     "question": "What tube does it fit?",
+     "answer": "Inch outside-diameter nylon or polyurethane air tube, 5/32\" to 1/2\" O.D. tube. Cut the tube square and push it fully home."
+    },
+    {
+     "question": "What pressure is it rated for?",
+     "answer": "0 to 150 psi working pressure and vacuum to −29.5 inHg, at 32 °F to 140 °F, as published by the manufacturer."
+    },
+    {
+     "question": "Can it be used for water or hydraulic oil?",
+     "answer": "No. It is rated for compressed air only."
+    },
+    {
+     "question": "How do I release the tube?",
+     "answer": "Push the collet towards the fitting body and pull the tube out."
+    },
+    {
+     "question": "What is the lead time?",
+     "answer": "Price and lead time are confirmed with the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Body Configuration",
+     "value": "cap for a tube end",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "body_configuration"
+    },
+    {
+     "group": "Port A",
+     "label": "Port A Thread",
+     "value": "push-in, 5/32\" to 1/2\" O.D. tube",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "port_a_thread"
+    },
+    {
+     "group": "Port A",
+     "label": "Port A Sealing",
+     "value": "internal O-ring on the tube O.D.",
+     "unit": null,
+     "position": 2,
+     "isFilterable": false,
+     "templateKey": "port_a_seal"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size Range",
+     "value": "5/32\" to 1/2\" O.D. tube",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "nominal_size_range"
+    },
+    {
+     "group": "Rating",
+     "label": "Working Pressure",
+     "value": "0 to 150 psi (0 to 9.9 bar); vacuum to −29.5 inHg",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "working_pressure"
+    },
+    {
+     "group": "Rating",
+     "label": "Temperature Range",
+     "value": "32 °F to 140 °F (0 °C to 60 °C)",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "temperature_range"
+    },
+    {
+     "group": "Rating",
+     "label": "Media",
+     "value": "compressed air only",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "media"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "engineering-plastic body, POM release collet",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": "material"
+    }
+   ],
+   "searchAliases": [
+    "PC-PPF",
+    "PPF-2.5",
+    "PPF-04",
+    "PPF-08"
+   ],
+   "images": [
+    {
+     "file": "IH-PN-PPF-01.jpg",
+     "alt": "Push-to-Connect Tube End Cap, catalogue photo",
+     "caption": "Supplier catalogue photo, HD batch 9 (2026-10-10)"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-PN-PPF-2.5",
+     "position": 0,
+     "portLabel": "5/32\" tube, push-in",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PN-PPF-04",
+     "position": 1,
+     "portLabel": "1/4\" tube, push-in",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PN-PPF-08",
+     "position": 2,
+     "portLabel": "1/2\" tube, push-in",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    }
+   ],
+   "crossReferences": [],
+   "sourceFamily": "PC-PPF"
+  },
+  {
+   "sku": "IH-PN-PST",
+   "slug": "push-to-connect-male-run-tee-npt-x-tube-x-tube",
+   "title": "Push-to-Connect Male Run Tee, NPT × Tube × Tube",
+   "category": "push-to-connect-pneumatic-fittings",
+   "focusKeyword": "push-to-connect male run tee",
+   "descriptionShort": "Push-to-Connect Male Run Tee, NPT × Tube × Tube for inch air tube, 0–150 psi. 6 part numbers, 5/32\" to 1/2\" O.D. tube; the size table gives the size on each end.",
+   "descriptionLong": "<p>The Push-to-Connect Male Run Tee, NPT × Tube × Tube is a run (street) tee for inch outside-diameter plastic air tube. Push the tube in and the stainless gripping teeth and O-ring hold and seal it; press the release collet and pull to take it out, with no tools.</p><h3>Ends and sealing</h3><ul><li><b>Push-in end</b>: takes nylon or polyurethane air tube cut square; an internal O-ring seals on the tube O.D.</li><li><b>NPT end</b>: tapered pipe thread (1/8\" to 1/2\" NPT) to ASME B1.20.1, supplied with a sealant coating or an O-ring on the thread.</li></ul><h3>Construction</h3><p>Plastic body with a nickel-plated brass threaded end, POM release collet.</p><h3>Sizes</h3><p>6 part numbers, 5/32\" to 1/2\" O.D. tube, 1/8\" to 1/2\" NPT threads. The Sizes &amp; Part Numbers tab gives the size on each end for every one.</p><h3>Rating</h3><p>Published by the manufacturer: working pressure 0 to 150 psi (0 to 9.9 bar), vacuum to −29.5 inHg, temperature 32 °F to 140 °F (0 °C to 60 °C). For compressed air only; not for other gases, water, oil or hydraulic service.</p><h3>How to order</h3><p>Quote the Indus part number, or send the tube O.D. and the thread. Price and lead time are confirmed with the quotation.</p>",
+   "seoTitle": "Push-to-Connect Male Run Tee, NPT x Tube x Tube",
+   "seoDescription": "Push-to-Connect Male Run Tee, NPT x Tube x Tube for inch nylon or PU air tube, 0-150 psi: 6 sizes, 5/32\" to 1/2\" O.D. tube. Quote from Indus Hydraulics, UA",
+   "faqs": [
+    {
+     "question": "What tube does it fit?",
+     "answer": "Inch outside-diameter nylon or polyurethane air tube, 5/32\" to 1/2\" O.D. tube. Cut the tube square and push it fully home."
+    },
+    {
+     "question": "What pressure is it rated for?",
+     "answer": "0 to 150 psi working pressure and vacuum to −29.5 inHg, at 32 °F to 140 °F, as published by the manufacturer."
+    },
+    {
+     "question": "Can it be used for water or hydraulic oil?",
+     "answer": "No. It is rated for compressed air only."
+    },
+    {
+     "question": "How do I release the tube?",
+     "answer": "Push the collet towards the fitting body and pull the tube out."
+    },
+    {
+     "question": "What is the lead time?",
+     "answer": "Price and lead time are confirmed with the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Body Configuration",
+     "value": "run (street) tee",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "body_configuration"
+    },
+    {
+     "group": "Port A",
+     "label": "Port A Thread",
+     "value": "push-in, 5/32\" to 1/2\" O.D. tube",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "port_a_thread"
+    },
+    {
+     "group": "Port A",
+     "label": "Port A Sealing",
+     "value": "internal O-ring on the tube O.D.",
+     "unit": null,
+     "position": 2,
+     "isFilterable": false,
+     "templateKey": "port_a_seal"
+    },
+    {
+     "group": "Port B",
+     "label": "Port B Thread",
+     "value": "NPT, 1/8\" to 1/2\" NPT",
+     "unit": null,
+     "position": 3,
+     "isFilterable": true,
+     "templateKey": "port_b_thread"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size Range",
+     "value": "5/32\" to 1/2\" O.D. tube",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "nominal_size_range"
+    },
+    {
+     "group": "Rating",
+     "label": "Working Pressure",
+     "value": "0 to 150 psi (0 to 9.9 bar); vacuum to −29.5 inHg",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "working_pressure"
+    },
+    {
+     "group": "Rating",
+     "label": "Temperature Range",
+     "value": "32 °F to 140 °F (0 °C to 60 °C)",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "temperature_range"
+    },
+    {
+     "group": "Rating",
+     "label": "Media",
+     "value": "compressed air only",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": "media"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "plastic body with a nickel-plated brass threaded end, POM release collet",
+     "unit": null,
+     "position": 8,
+     "isFilterable": false,
+     "templateKey": "material"
+    },
+    {
+     "group": "Compliance",
+     "label": "Applicable Standards",
+     "value": "ASME B1.20.1 (NPT thread)",
+     "unit": null,
+     "position": 9,
+     "isFilterable": false,
+     "templateKey": "applicable_standards"
+    }
+   ],
+   "searchAliases": [
+    "PC-PST",
+    "PST-02-2.5-2.5",
+    "PST-04-2.5-2.5",
+    "PST-06-04-04",
+    "PST-04-05-05",
+    "PST-06-05-05",
+    "PST-08-08-08"
+   ],
+   "images": [
+    {
+     "file": "IH-PN-PST-01.jpg",
+     "alt": "Push-to-Connect Male Run Tee, NPT x Tube x Tube, catalogue photo",
+     "caption": "Supplier catalogue photo, HD batch 9 (2026-10-10)"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-PN-PST-02-2.5-2.5",
+     "position": 0,
+     "portLabel": "1/8\" NPT male",
+     "port2Label": "5/32\" tube, push-in",
+     "port3Label": "5/32\" tube, push-in",
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PN-PST-04-2.5-2.5",
+     "position": 1,
+     "portLabel": "1/4\" NPT male",
+     "port2Label": "5/32\" tube, push-in",
+     "port3Label": "5/32\" tube, push-in",
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PN-PST-06-04-04",
+     "position": 2,
+     "portLabel": "3/8\" NPT male",
+     "port2Label": "1/4\" tube, push-in",
+     "port3Label": "1/4\" tube, push-in",
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PN-PST-04-05-05",
+     "position": 3,
+     "portLabel": "1/4\" NPT male",
+     "port2Label": "5/16\" tube, push-in",
+     "port3Label": "5/16\" tube, push-in",
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PN-PST-06-05-05",
+     "position": 4,
+     "portLabel": "3/8\" NPT male",
+     "port2Label": "5/16\" tube, push-in",
+     "port3Label": "5/16\" tube, push-in",
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PN-PST-08-08-08",
+     "position": 5,
+     "portLabel": "1/2\" NPT male",
+     "port2Label": "1/2\" tube, push-in",
+     "port3Label": "1/2\" tube, push-in",
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    }
+   ],
+   "crossReferences": [],
+   "sourceFamily": "PC-PST"
+  },
+  {
+   "sku": "IH-PN-PT",
+   "slug": "push-to-connect-male-branch-tee-tube-x-npt",
+   "title": "Push-to-Connect Male Branch Tee, Tube × NPT",
+   "category": "push-to-connect-pneumatic-fittings",
+   "focusKeyword": "push-to-connect male branch tee",
+   "descriptionShort": "Push-to-Connect Male Branch Tee, Tube × NPT for inch air tube, 0–150 psi. 8 part numbers, 5/32\" to 1/2\" O.D. tube; the size table gives the size on each end.",
+   "descriptionLong": "<p>The Push-to-Connect Male Branch Tee, Tube × NPT is a branch tee for inch outside-diameter plastic air tube. Push the tube in and the stainless gripping teeth and O-ring hold and seal it; press the release collet and pull to take it out, with no tools.</p><h3>Ends and sealing</h3><ul><li><b>Push-in end</b>: takes nylon or polyurethane air tube cut square; an internal O-ring seals on the tube O.D.</li><li><b>NPT end</b>: tapered pipe thread (1/8\" to 1/2\" NPT) to ASME B1.20.1, supplied with a sealant coating or an O-ring on the thread.</li></ul><h3>Construction</h3><p>Plastic body with a nickel-plated brass threaded end, POM release collet.</p><h3>Sizes</h3><p>8 part numbers, 5/32\" to 1/2\" O.D. tube, 1/8\" to 1/2\" NPT threads. The Sizes &amp; Part Numbers tab gives the size on each end for every one.</p><h3>Rating</h3><p>Published by the manufacturer: working pressure 0 to 150 psi (0 to 9.9 bar), vacuum to −29.5 inHg, temperature 32 °F to 140 °F (0 °C to 60 °C). For compressed air only; not for other gases, water, oil or hydraulic service.</p><h3>How to order</h3><p>Quote the Indus part number, or send the tube O.D. and the thread. Price and lead time are confirmed with the quotation.</p>",
+   "seoTitle": "Push-to-Connect Male Branch Tee, Tube x NPT",
+   "seoDescription": "Push-to-Connect Male Branch Tee, Tube x NPT for inch nylon or PU air tube, 0-150 psi: 8 sizes, 5/32\" to 1/2\" O.D. tube. Quote from Indus Hydraulics, UAE.",
+   "faqs": [
+    {
+     "question": "What tube does it fit?",
+     "answer": "Inch outside-diameter nylon or polyurethane air tube, 5/32\" to 1/2\" O.D. tube. Cut the tube square and push it fully home."
+    },
+    {
+     "question": "What pressure is it rated for?",
+     "answer": "0 to 150 psi working pressure and vacuum to −29.5 inHg, at 32 °F to 140 °F, as published by the manufacturer."
+    },
+    {
+     "question": "Can it be used for water or hydraulic oil?",
+     "answer": "No. It is rated for compressed air only."
+    },
+    {
+     "question": "How do I release the tube?",
+     "answer": "Push the collet towards the fitting body and pull the tube out."
+    },
+    {
+     "question": "What is the lead time?",
+     "answer": "Price and lead time are confirmed with the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Body Configuration",
+     "value": "branch tee",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "body_configuration"
+    },
+    {
+     "group": "Port A",
+     "label": "Port A Thread",
+     "value": "push-in, 5/32\" to 1/2\" O.D. tube",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "port_a_thread"
+    },
+    {
+     "group": "Port A",
+     "label": "Port A Sealing",
+     "value": "internal O-ring on the tube O.D.",
+     "unit": null,
+     "position": 2,
+     "isFilterable": false,
+     "templateKey": "port_a_seal"
+    },
+    {
+     "group": "Port B",
+     "label": "Port B Thread",
+     "value": "NPT, 1/8\" to 1/2\" NPT",
+     "unit": null,
+     "position": 3,
+     "isFilterable": true,
+     "templateKey": "port_b_thread"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size Range",
+     "value": "5/32\" to 1/2\" O.D. tube",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "nominal_size_range"
+    },
+    {
+     "group": "Rating",
+     "label": "Working Pressure",
+     "value": "0 to 150 psi (0 to 9.9 bar); vacuum to −29.5 inHg",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "working_pressure"
+    },
+    {
+     "group": "Rating",
+     "label": "Temperature Range",
+     "value": "32 °F to 140 °F (0 °C to 60 °C)",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "temperature_range"
+    },
+    {
+     "group": "Rating",
+     "label": "Media",
+     "value": "compressed air only",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": "media"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "plastic body with a nickel-plated brass threaded end, POM release collet",
+     "unit": null,
+     "position": 8,
+     "isFilterable": false,
+     "templateKey": "material"
+    },
+    {
+     "group": "Compliance",
+     "label": "Applicable Standards",
+     "value": "ASME B1.20.1 (NPT thread)",
+     "unit": null,
+     "position": 9,
+     "isFilterable": false,
+     "templateKey": "applicable_standards"
+    }
+   ],
+   "searchAliases": [
+    "PC-PT",
+    "PT-2.5-2.5-02",
+    "PT-2.5-2.5-04",
+    "PT-04-04-02",
+    "PT-04-04-06",
+    "PT-05-05-06",
+    "PT-06-06-02",
+    "PT-06-06-08",
+    "PT-08-08-08"
+   ],
+   "images": [
+    {
+     "file": "IH-PN-PT-01.jpg",
+     "alt": "Push-to-Connect Male Branch Tee, Tube x NPT, catalogue photo",
+     "caption": "Supplier catalogue photo, HD batch 9 (2026-10-10)"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-PN-PT-2.5-2.5-02",
+     "position": 0,
+     "portLabel": "5/32\" tube, push-in (run)",
+     "port2Label": "1/8\" NPT male (branch)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PN-PT-2.5-2.5-04",
+     "position": 1,
+     "portLabel": "5/32\" tube, push-in (run)",
+     "port2Label": "1/4\" NPT male (branch)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PN-PT-04-04-02",
+     "position": 2,
+     "portLabel": "1/4\" tube, push-in (run)",
+     "port2Label": "1/8\" NPT male (branch)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PN-PT-04-04-06",
+     "position": 3,
+     "portLabel": "1/4\" tube, push-in (run)",
+     "port2Label": "3/8\" NPT male (branch)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PN-PT-05-05-06",
+     "position": 4,
+     "portLabel": "5/16\" tube, push-in (run)",
+     "port2Label": "3/8\" NPT male (branch)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PN-PT-06-06-02",
+     "position": 5,
+     "portLabel": "3/8\" tube, push-in (run)",
+     "port2Label": "1/8\" NPT male (branch)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PN-PT-06-06-08",
+     "position": 6,
+     "portLabel": "3/8\" tube, push-in (run)",
+     "port2Label": "1/2\" NPT male (branch)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PN-PT-08-08-08",
+     "position": 7,
+     "portLabel": "1/2\" tube, push-in (run)",
+     "port2Label": "1/2\" NPT male (branch)",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    }
+   ],
+   "crossReferences": [],
+   "sourceFamily": "PC-PT"
+  },
+  {
+   "sku": "IH-PN-PUC",
+   "slug": "push-to-connect-straight-union",
+   "title": "Push-to-Connect Straight Union",
+   "category": "push-to-connect-pneumatic-fittings",
+   "focusKeyword": "push-to-connect straight union",
+   "descriptionShort": "Push-to-Connect Straight Union for inch air tube, 0–150 psi. 2 part numbers, 5/32\" to 3/8\" O.D. tube; the size table gives the size on each end.",
+   "descriptionLong": "<p>The Push-to-Connect Straight Union is a straight union for inch outside-diameter plastic air tube. Push the tube in and the stainless gripping teeth and O-ring hold and seal it; press the release collet and pull to take it out, with no tools.</p><h3>Ends and sealing</h3><ul><li><b>Push-in end</b>: takes nylon or polyurethane air tube cut square; an internal O-ring seals on the tube O.D.</li></ul><h3>Construction</h3><p>Engineering-plastic body, POM release collet.</p><h3>Sizes</h3><p>2 part numbers, 5/32\" to 3/8\" O.D. tube. The Sizes &amp; Part Numbers tab gives the size on each end for every one.</p><h3>Rating</h3><p>Published by the manufacturer: working pressure 0 to 150 psi (0 to 9.9 bar), vacuum to −29.5 inHg, temperature 32 °F to 140 °F (0 °C to 60 °C). For compressed air only; not for other gases, water, oil or hydraulic service.</p><h3>How to order</h3><p>Quote the Indus part number, or send the tube O.D. and the thread. Price and lead time are confirmed with the quotation.</p>",
+   "seoTitle": "Push-to-Connect Straight Union",
+   "seoDescription": "Push-to-Connect Straight Union for inch nylon or PU air tube, 0-150 psi: 2 sizes, 5/32\" to 3/8\" O.D. tube. Quote from Indus Hydraulics, UAE.",
+   "faqs": [
+    {
+     "question": "What tube does it fit?",
+     "answer": "Inch outside-diameter nylon or polyurethane air tube, 5/32\" to 3/8\" O.D. tube. Cut the tube square and push it fully home."
+    },
+    {
+     "question": "What pressure is it rated for?",
+     "answer": "0 to 150 psi working pressure and vacuum to −29.5 inHg, at 32 °F to 140 °F, as published by the manufacturer."
+    },
+    {
+     "question": "Can it be used for water or hydraulic oil?",
+     "answer": "No. It is rated for compressed air only."
+    },
+    {
+     "question": "How do I release the tube?",
+     "answer": "Push the collet towards the fitting body and pull the tube out."
+    },
+    {
+     "question": "What is the lead time?",
+     "answer": "Price and lead time are confirmed with the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Body Configuration",
+     "value": "straight union",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "body_configuration"
+    },
+    {
+     "group": "Port A",
+     "label": "Port A Thread",
+     "value": "push-in, 5/32\" to 3/8\" O.D. tube",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "port_a_thread"
+    },
+    {
+     "group": "Port A",
+     "label": "Port A Sealing",
+     "value": "internal O-ring on the tube O.D.",
+     "unit": null,
+     "position": 2,
+     "isFilterable": false,
+     "templateKey": "port_a_seal"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size Range",
+     "value": "5/32\" to 3/8\" O.D. tube",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "nominal_size_range"
+    },
+    {
+     "group": "Rating",
+     "label": "Working Pressure",
+     "value": "0 to 150 psi (0 to 9.9 bar); vacuum to −29.5 inHg",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "working_pressure"
+    },
+    {
+     "group": "Rating",
+     "label": "Temperature Range",
+     "value": "32 °F to 140 °F (0 °C to 60 °C)",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "temperature_range"
+    },
+    {
+     "group": "Rating",
+     "label": "Media",
+     "value": "compressed air only",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "media"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "engineering-plastic body, POM release collet",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": "material"
+    }
+   ],
+   "searchAliases": [
+    "PC-PUC",
+    "PUC-2.5-2.5",
+    "PUC-06-06"
+   ],
+   "images": [
+    {
+     "file": "IH-PN-PUC-01.jpg",
+     "alt": "Push-to-Connect Straight Union, catalogue photo",
+     "caption": "Supplier catalogue photo, HD batch 9 (2026-10-10)"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-PN-PUC-2.5-2.5",
+     "position": 0,
+     "portLabel": "5/32\" tube, push-in",
+     "port2Label": "5/32\" tube, push-in",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PN-PUC-06-06",
+     "position": 1,
+     "portLabel": "3/8\" tube, push-in",
+     "port2Label": "3/8\" tube, push-in",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    }
+   ],
+   "crossReferences": [],
+   "sourceFamily": "PC-PUC"
+  },
+  {
+   "sku": "IH-PN-PUL",
+   "slug": "push-to-connect-union-elbow",
+   "title": "Push-to-Connect Union Elbow",
+   "category": "push-to-connect-pneumatic-fittings",
+   "focusKeyword": "push-to-connect union elbow",
+   "descriptionShort": "Push-to-Connect Union Elbow for inch air tube, 0–150 psi. 4 part numbers, 5/32\" to 1/2\" O.D. tube; the size table gives the size on each end.",
+   "descriptionLong": "<p>The Push-to-Connect Union Elbow is a 90° union elbow for inch outside-diameter plastic air tube. Push the tube in and the stainless gripping teeth and O-ring hold and seal it; press the release collet and pull to take it out, with no tools.</p><h3>Ends and sealing</h3><ul><li><b>Push-in end</b>: takes nylon or polyurethane air tube cut square; an internal O-ring seals on the tube O.D.</li></ul><h3>Construction</h3><p>Engineering-plastic body, POM release collet.</p><h3>Sizes</h3><p>4 part numbers, 5/32\" to 1/2\" O.D. tube. The Sizes &amp; Part Numbers tab gives the size on each end for every one.</p><h3>Rating</h3><p>Published by the manufacturer: working pressure 0 to 150 psi (0 to 9.9 bar), vacuum to −29.5 inHg, temperature 32 °F to 140 °F (0 °C to 60 °C). For compressed air only; not for other gases, water, oil or hydraulic service.</p><h3>How to order</h3><p>Quote the Indus part number, or send the tube O.D. and the thread. Price and lead time are confirmed with the quotation.</p>",
+   "seoTitle": "Push-to-Connect Union Elbow",
+   "seoDescription": "Push-to-Connect Union Elbow for inch nylon or PU air tube, 0-150 psi: 4 sizes, 5/32\" to 1/2\" O.D. tube. Quote from Indus Hydraulics, UAE.",
+   "faqs": [
+    {
+     "question": "What tube does it fit?",
+     "answer": "Inch outside-diameter nylon or polyurethane air tube, 5/32\" to 1/2\" O.D. tube. Cut the tube square and push it fully home."
+    },
+    {
+     "question": "What pressure is it rated for?",
+     "answer": "0 to 150 psi working pressure and vacuum to −29.5 inHg, at 32 °F to 140 °F, as published by the manufacturer."
+    },
+    {
+     "question": "Can it be used for water or hydraulic oil?",
+     "answer": "No. It is rated for compressed air only."
+    },
+    {
+     "question": "How do I release the tube?",
+     "answer": "Push the collet towards the fitting body and pull the tube out."
+    },
+    {
+     "question": "What is the lead time?",
+     "answer": "Price and lead time are confirmed with the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Body Configuration",
+     "value": "90° union elbow",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "body_configuration"
+    },
+    {
+     "group": "Port A",
+     "label": "Port A Thread",
+     "value": "push-in, 5/32\" to 1/2\" O.D. tube",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "port_a_thread"
+    },
+    {
+     "group": "Port A",
+     "label": "Port A Sealing",
+     "value": "internal O-ring on the tube O.D.",
+     "unit": null,
+     "position": 2,
+     "isFilterable": false,
+     "templateKey": "port_a_seal"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size Range",
+     "value": "5/32\" to 1/2\" O.D. tube",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "nominal_size_range"
+    },
+    {
+     "group": "Rating",
+     "label": "Working Pressure",
+     "value": "0 to 150 psi (0 to 9.9 bar); vacuum to −29.5 inHg",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "working_pressure"
+    },
+    {
+     "group": "Rating",
+     "label": "Temperature Range",
+     "value": "32 °F to 140 °F (0 °C to 60 °C)",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "temperature_range"
+    },
+    {
+     "group": "Rating",
+     "label": "Media",
+     "value": "compressed air only",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "media"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "engineering-plastic body, POM release collet",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": "material"
+    }
+   ],
+   "searchAliases": [
+    "PC-PUL",
+    "PUL-2.5",
+    "PUL-04",
+    "PUL-06",
+    "PUL-08"
+   ],
+   "images": [
+    {
+     "file": "IH-PN-PUL-01.jpg",
+     "alt": "Push-to-Connect Union Elbow, catalogue photo",
+     "caption": "Supplier catalogue photo, HD batch 9 (2026-10-10)"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-PN-PUL-2.5",
+     "position": 0,
+     "portLabel": "5/32\" tube, push-in",
+     "port2Label": "5/32\" tube, push-in",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PN-PUL-04",
+     "position": 1,
+     "portLabel": "1/4\" tube, push-in",
+     "port2Label": "1/4\" tube, push-in",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PN-PUL-06",
+     "position": 2,
+     "portLabel": "3/8\" tube, push-in",
+     "port2Label": "3/8\" tube, push-in",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PN-PUL-08",
+     "position": 3,
+     "portLabel": "1/2\" tube, push-in",
+     "port2Label": "1/2\" tube, push-in",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    }
+   ],
+   "crossReferences": [],
+   "sourceFamily": "PC-PUL"
+  },
+  {
+   "sku": "IH-PN-PUT",
+   "slug": "push-to-connect-union-tee",
+   "title": "Push-to-Connect Union Tee",
+   "category": "push-to-connect-pneumatic-fittings",
+   "focusKeyword": "push-to-connect union tee",
+   "descriptionShort": "Push-to-Connect Union Tee for inch air tube, 0–150 psi. 3 part numbers, 5/32\" to 1/2\" O.D. tube; the size table gives the size on each end.",
+   "descriptionLong": "<p>The Push-to-Connect Union Tee is a union tee for inch outside-diameter plastic air tube. Push the tube in and the stainless gripping teeth and O-ring hold and seal it; press the release collet and pull to take it out, with no tools.</p><h3>Ends and sealing</h3><ul><li><b>Push-in end</b>: takes nylon or polyurethane air tube cut square; an internal O-ring seals on the tube O.D.</li></ul><h3>Construction</h3><p>Engineering-plastic body, POM release collet.</p><h3>Sizes</h3><p>3 part numbers, 5/32\" to 1/2\" O.D. tube. The Sizes &amp; Part Numbers tab gives the size on each end for every one.</p><h3>Rating</h3><p>Published by the manufacturer: working pressure 0 to 150 psi (0 to 9.9 bar), vacuum to −29.5 inHg, temperature 32 °F to 140 °F (0 °C to 60 °C). For compressed air only; not for other gases, water, oil or hydraulic service.</p><h3>How to order</h3><p>Quote the Indus part number, or send the tube O.D. and the thread. Price and lead time are confirmed with the quotation.</p>",
+   "seoTitle": "Push-to-Connect Union Tee",
+   "seoDescription": "Push-to-Connect Union Tee for inch nylon or PU air tube, 0-150 psi: 3 sizes, 5/32\" to 1/2\" O.D. tube. Quote from Indus Hydraulics, UAE.",
+   "faqs": [
+    {
+     "question": "What tube does it fit?",
+     "answer": "Inch outside-diameter nylon or polyurethane air tube, 5/32\" to 1/2\" O.D. tube. Cut the tube square and push it fully home."
+    },
+    {
+     "question": "What pressure is it rated for?",
+     "answer": "0 to 150 psi working pressure and vacuum to −29.5 inHg, at 32 °F to 140 °F, as published by the manufacturer."
+    },
+    {
+     "question": "Can it be used for water or hydraulic oil?",
+     "answer": "No. It is rated for compressed air only."
+    },
+    {
+     "question": "How do I release the tube?",
+     "answer": "Push the collet towards the fitting body and pull the tube out."
+    },
+    {
+     "question": "What is the lead time?",
+     "answer": "Price and lead time are confirmed with the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Body Configuration",
+     "value": "union tee",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "body_configuration"
+    },
+    {
+     "group": "Port A",
+     "label": "Port A Thread",
+     "value": "push-in, 5/32\" to 1/2\" O.D. tube",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "port_a_thread"
+    },
+    {
+     "group": "Port A",
+     "label": "Port A Sealing",
+     "value": "internal O-ring on the tube O.D.",
+     "unit": null,
+     "position": 2,
+     "isFilterable": false,
+     "templateKey": "port_a_seal"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size Range",
+     "value": "5/32\" to 1/2\" O.D. tube",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "nominal_size_range"
+    },
+    {
+     "group": "Rating",
+     "label": "Working Pressure",
+     "value": "0 to 150 psi (0 to 9.9 bar); vacuum to −29.5 inHg",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "working_pressure"
+    },
+    {
+     "group": "Rating",
+     "label": "Temperature Range",
+     "value": "32 °F to 140 °F (0 °C to 60 °C)",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "temperature_range"
+    },
+    {
+     "group": "Rating",
+     "label": "Media",
+     "value": "compressed air only",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "media"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "engineering-plastic body, POM release collet",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": "material"
+    }
+   ],
+   "searchAliases": [
+    "PC-PUT",
+    "PUT-2.5-2.5-2.5",
+    "PUT-04-04-04",
+    "PUT-08-08-08"
+   ],
+   "images": [
+    {
+     "file": "IH-PN-PUT-01.jpg",
+     "alt": "Push-to-Connect Union Tee, catalogue photo",
+     "caption": "Supplier catalogue photo, HD batch 9 (2026-10-10)"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-PN-PUT-2.5-2.5-2.5",
+     "position": 0,
+     "portLabel": "5/32\" tube, push-in",
+     "port2Label": "5/32\" tube, push-in",
+     "port3Label": "5/32\" tube, push-in",
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PN-PUT-04-04-04",
+     "position": 1,
+     "portLabel": "1/4\" tube, push-in",
+     "port2Label": "1/4\" tube, push-in",
+     "port3Label": "1/4\" tube, push-in",
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PN-PUT-08-08-08",
+     "position": 2,
+     "portLabel": "1/2\" tube, push-in",
+     "port2Label": "1/2\" tube, push-in",
+     "port3Label": "1/2\" tube, push-in",
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    }
+   ],
+   "crossReferences": [],
+   "sourceFamily": "PC-PUT"
+  },
+  {
+   "sku": "IH-PN-PWT",
+   "slug": "push-to-connect-male-y-connector-npt-x-tube-x-tube",
+   "title": "Push-to-Connect Male Y Connector, NPT × Tube × Tube",
+   "category": "push-to-connect-pneumatic-fittings",
+   "focusKeyword": "push-to-connect male y connector",
+   "descriptionShort": "Push-to-Connect Male Y Connector, NPT × Tube × Tube for inch air tube, 0–150 psi. 4 part numbers, 5/32\" to 1/2\" O.D. tube; the size table gives the size on each end.",
+   "descriptionLong": "<p>The Push-to-Connect Male Y Connector, NPT × Tube × Tube is a Y connector for inch outside-diameter plastic air tube. Push the tube in and the stainless gripping teeth and O-ring hold and seal it; press the release collet and pull to take it out, with no tools.</p><h3>Ends and sealing</h3><ul><li><b>Push-in end</b>: takes nylon or polyurethane air tube cut square; an internal O-ring seals on the tube O.D.</li><li><b>NPT end</b>: tapered pipe thread (1/4\" to 1/2\" NPT) to ASME B1.20.1, supplied with a sealant coating or an O-ring on the thread.</li></ul><h3>Construction</h3><p>Plastic body with a nickel-plated brass threaded end, POM release collet.</p><h3>Sizes</h3><p>4 part numbers, 5/32\" to 1/2\" O.D. tube, 1/4\" to 1/2\" NPT threads. The Sizes &amp; Part Numbers tab gives the size on each end for every one.</p><h3>Rating</h3><p>Published by the manufacturer: working pressure 0 to 150 psi (0 to 9.9 bar), vacuum to −29.5 inHg, temperature 32 °F to 140 °F (0 °C to 60 °C). For compressed air only; not for other gases, water, oil or hydraulic service.</p><h3>How to order</h3><p>Quote the Indus part number, or send the tube O.D. and the thread. Price and lead time are confirmed with the quotation.</p>",
+   "seoTitle": "Push-to-Connect Male Y Connector, NPT x Tube x Tube",
+   "seoDescription": "Push-to-Connect Male Y Connector, NPT x Tube x Tube for inch nylon or PU air tube, 0-150 psi: 4 sizes, 5/32\" to 1/2\" O.D. tube. Quote from Indus Hydraulics",
+   "faqs": [
+    {
+     "question": "What tube does it fit?",
+     "answer": "Inch outside-diameter nylon or polyurethane air tube, 5/32\" to 1/2\" O.D. tube. Cut the tube square and push it fully home."
+    },
+    {
+     "question": "What pressure is it rated for?",
+     "answer": "0 to 150 psi working pressure and vacuum to −29.5 inHg, at 32 °F to 140 °F, as published by the manufacturer."
+    },
+    {
+     "question": "Can it be used for water or hydraulic oil?",
+     "answer": "No. It is rated for compressed air only."
+    },
+    {
+     "question": "How do I release the tube?",
+     "answer": "Push the collet towards the fitting body and pull the tube out."
+    },
+    {
+     "question": "What is the lead time?",
+     "answer": "Price and lead time are confirmed with the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Body Configuration",
+     "value": "Y connector",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "body_configuration"
+    },
+    {
+     "group": "Port A",
+     "label": "Port A Thread",
+     "value": "push-in, 5/32\" to 1/2\" O.D. tube",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "port_a_thread"
+    },
+    {
+     "group": "Port A",
+     "label": "Port A Sealing",
+     "value": "internal O-ring on the tube O.D.",
+     "unit": null,
+     "position": 2,
+     "isFilterable": false,
+     "templateKey": "port_a_seal"
+    },
+    {
+     "group": "Port B",
+     "label": "Port B Thread",
+     "value": "NPT, 1/4\" to 1/2\" NPT",
+     "unit": null,
+     "position": 3,
+     "isFilterable": true,
+     "templateKey": "port_b_thread"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size Range",
+     "value": "5/32\" to 1/2\" O.D. tube",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "nominal_size_range"
+    },
+    {
+     "group": "Rating",
+     "label": "Working Pressure",
+     "value": "0 to 150 psi (0 to 9.9 bar); vacuum to −29.5 inHg",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "working_pressure"
+    },
+    {
+     "group": "Rating",
+     "label": "Temperature Range",
+     "value": "32 °F to 140 °F (0 °C to 60 °C)",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "temperature_range"
+    },
+    {
+     "group": "Rating",
+     "label": "Media",
+     "value": "compressed air only",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": "media"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "plastic body with a nickel-plated brass threaded end, POM release collet",
+     "unit": null,
+     "position": 8,
+     "isFilterable": false,
+     "templateKey": "material"
+    },
+    {
+     "group": "Compliance",
+     "label": "Applicable Standards",
+     "value": "ASME B1.20.1 (NPT thread)",
+     "unit": null,
+     "position": 9,
+     "isFilterable": false,
+     "templateKey": "applicable_standards"
+    }
+   ],
+   "searchAliases": [
+    "PC-PWT",
+    "PWT-04-2.5-2.5",
+    "PWT-06-04-04",
+    "PWT-04-05-05",
+    "PWT-08-08-08"
+   ],
+   "images": [
+    {
+     "file": "IH-PN-PWT-01.jpg",
+     "alt": "Push-to-Connect Male Y Connector, NPT x Tube x Tube, catalogue photo",
+     "caption": "Supplier catalogue photo, HD batch 9 (2026-10-10)"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-PN-PWT-04-2.5-2.5",
+     "position": 0,
+     "portLabel": "1/4\" NPT male",
+     "port2Label": "5/32\" tube, push-in",
+     "port3Label": "5/32\" tube, push-in",
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PN-PWT-06-04-04",
+     "position": 1,
+     "portLabel": "3/8\" NPT male",
+     "port2Label": "1/4\" tube, push-in",
+     "port3Label": "1/4\" tube, push-in",
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PN-PWT-04-05-05",
+     "position": 2,
+     "portLabel": "1/4\" NPT male",
+     "port2Label": "5/16\" tube, push-in",
+     "port3Label": "5/16\" tube, push-in",
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PN-PWT-08-08-08",
+     "position": 3,
+     "portLabel": "1/2\" NPT male",
+     "port2Label": "1/2\" tube, push-in",
+     "port3Label": "1/2\" tube, push-in",
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    }
+   ],
+   "crossReferences": [],
+   "sourceFamily": "PC-PWT"
+  },
+  {
+   "sku": "IH-PN-PZA",
+   "slug": "push-to-connect-union-cross",
+   "title": "Push-to-Connect Union Cross",
+   "category": "push-to-connect-pneumatic-fittings",
+   "focusKeyword": "push-to-connect union cross",
+   "descriptionShort": "Push-to-Connect Union Cross for inch air tube, 0–150 psi. 4 part numbers, 5/32\" to 1/2\" O.D. tube; the size table gives the size on each end.",
+   "descriptionLong": "<p>The Push-to-Connect Union Cross is a union cross for inch outside-diameter plastic air tube. Push the tube in and the stainless gripping teeth and O-ring hold and seal it; press the release collet and pull to take it out, with no tools.</p><h3>Ends and sealing</h3><ul><li><b>Push-in end</b>: takes nylon or polyurethane air tube cut square; an internal O-ring seals on the tube O.D.</li></ul><h3>Construction</h3><p>Engineering-plastic body, POM release collet.</p><h3>Sizes</h3><p>4 part numbers, 5/32\" to 1/2\" O.D. tube. The Sizes &amp; Part Numbers tab gives the size on each end for every one.</p><h3>Rating</h3><p>Published by the manufacturer: working pressure 0 to 150 psi (0 to 9.9 bar), vacuum to −29.5 inHg, temperature 32 °F to 140 °F (0 °C to 60 °C). For compressed air only; not for other gases, water, oil or hydraulic service.</p><h3>How to order</h3><p>Quote the Indus part number, or send the tube O.D. and the thread. Price and lead time are confirmed with the quotation.</p>",
+   "seoTitle": "Push-to-Connect Union Cross",
+   "seoDescription": "Push-to-Connect Union Cross for inch nylon or PU air tube, 0-150 psi: 4 sizes, 5/32\" to 1/2\" O.D. tube. Quote from Indus Hydraulics, UAE.",
+   "faqs": [
+    {
+     "question": "What tube does it fit?",
+     "answer": "Inch outside-diameter nylon or polyurethane air tube, 5/32\" to 1/2\" O.D. tube. Cut the tube square and push it fully home."
+    },
+    {
+     "question": "What pressure is it rated for?",
+     "answer": "0 to 150 psi working pressure and vacuum to −29.5 inHg, at 32 °F to 140 °F, as published by the manufacturer."
+    },
+    {
+     "question": "Can it be used for water or hydraulic oil?",
+     "answer": "No. It is rated for compressed air only."
+    },
+    {
+     "question": "How do I release the tube?",
+     "answer": "Push the collet towards the fitting body and pull the tube out."
+    },
+    {
+     "question": "What is the lead time?",
+     "answer": "Price and lead time are confirmed with the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Body Configuration",
+     "value": "union cross",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "body_configuration"
+    },
+    {
+     "group": "Port A",
+     "label": "Port A Thread",
+     "value": "push-in, 5/32\" to 1/2\" O.D. tube",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "port_a_thread"
+    },
+    {
+     "group": "Port A",
+     "label": "Port A Sealing",
+     "value": "internal O-ring on the tube O.D.",
+     "unit": null,
+     "position": 2,
+     "isFilterable": false,
+     "templateKey": "port_a_seal"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size Range",
+     "value": "5/32\" to 1/2\" O.D. tube",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "nominal_size_range"
+    },
+    {
+     "group": "Rating",
+     "label": "Working Pressure",
+     "value": "0 to 150 psi (0 to 9.9 bar); vacuum to −29.5 inHg",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "working_pressure"
+    },
+    {
+     "group": "Rating",
+     "label": "Temperature Range",
+     "value": "32 °F to 140 °F (0 °C to 60 °C)",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "temperature_range"
+    },
+    {
+     "group": "Rating",
+     "label": "Media",
+     "value": "compressed air only",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "media"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "engineering-plastic body, POM release collet",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": "material"
+    }
+   ],
+   "searchAliases": [
+    "PC-PZA",
+    "PZA-2.5",
+    "PZA-04",
+    "PZA-06",
+    "PZA-08"
+   ],
+   "images": [
+    {
+     "file": "IH-PN-PZA-01.jpg",
+     "alt": "Push-to-Connect Union Cross, catalogue photo",
+     "caption": "Supplier catalogue photo, HD batch 9 (2026-10-10)"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-PN-PZA-2.5",
+     "position": 0,
+     "portLabel": "5/32\" tube, push-in",
+     "port2Label": "5/32\" tube, push-in",
+     "port3Label": "5/32\" tube, push-in",
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PN-PZA-04",
+     "position": 1,
+     "portLabel": "1/4\" tube, push-in",
+     "port2Label": "1/4\" tube, push-in",
+     "port3Label": "1/4\" tube, push-in",
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PN-PZA-06",
+     "position": 2,
+     "portLabel": "3/8\" tube, push-in",
+     "port2Label": "3/8\" tube, push-in",
+     "port3Label": "3/8\" tube, push-in",
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    },
+    {
+     "partNumber": "IH-PN-PZA-08",
+     "position": 3,
+     "portLabel": "1/2\" tube, push-in",
+     "port2Label": "1/2\" tube, push-in",
+     "port3Label": "1/2\" tube, push-in",
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "dimensions": {}
+    }
+   ],
+   "crossReferences": [],
+   "sourceFamily": "PC-PZA"
+  }
+ ],
+ "hold": []
+}
