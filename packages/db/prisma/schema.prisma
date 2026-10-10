@@ -1018,8 +1018,17 @@ model ProductCrossReference {
   competitorBrand String
   competitorMpn   String
   compatibility   CrossRefCompatibility @default(direct)
+  /// The Indus part number (product_variants.partNumber) this competitor
+  /// number equals, for per-size references. Text, not a relation: importers
+  /// rebuild variants by part number. Null for family-level references.
+  variantPartNumber String?
+  /// Competitor series with the size stripped ("HTX-SS", "259-2027"), set by
+  /// the loader from @indus/domain crossReferenceSeries().
+  series          String?
 
   @@index([productId])
+  @@index([variantPartNumber])
+  @@index([competitorBrand, series])
   @@map("product_cross_references")
 }
 

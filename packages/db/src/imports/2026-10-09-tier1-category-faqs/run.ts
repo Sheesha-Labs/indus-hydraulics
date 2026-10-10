@@ -122,7 +122,11 @@ async function planDocs(errors: string[]): Promise<Planned[]> {
   return planned
 }
 
-type PlannedBlurb = { slug: string; data: Blurb; before: Blurb }
+type PlannedBlurb = {
+  slug: string
+  data: Blurb
+  before: { shortDescription: string | null; seoDescription: string | null }
+}
 
 async function planBlurbs(errors: string[]): Promise<PlannedBlurb[]> {
   const rows = await db.category.findMany({
@@ -140,7 +144,7 @@ async function planBlurbs(errors: string[]): Promise<PlannedBlurb[]> {
       errors.push(`blurb ${slug}: short description edited since review`)
       continue
     }
-    planned.push({ slug, data, before: { shortDescription: row.shortDescription ?? undefined, seoDescription: row.seoDescription ?? undefined } })
+    planned.push({ slug, data, before: { shortDescription: row.shortDescription, seoDescription: row.seoDescription } })
   }
   return planned
 }

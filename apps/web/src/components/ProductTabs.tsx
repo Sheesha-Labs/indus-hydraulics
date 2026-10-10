@@ -2,8 +2,13 @@
 
 import { useState, type ReactNode } from 'react'
 import Link from 'next/link'
-import { replacementUrlPath, type ProductAvailability, type VariantLike } from '@indus/domain'
-import ProductSizeTable from './ProductSizeTable'
+import {
+  competitorBrandSlug,
+  replacementUrlPath,
+  type ProductAvailability,
+  type VariantLike,
+} from '@indus/domain'
+import ProductSizeTable, { type SizeEquivalents } from './ProductSizeTable'
 
 type Spec = {
   id: string
@@ -30,6 +35,14 @@ type CrossRef = {
   compatibility?: string | null
 }
 
+type SeriesSummary = {
+  brand: string
+  series: string[]
+  sizes: number
+  /** SAE / MS codes: printed, but there is no replacement hub to link to. */
+  isStandard: boolean
+}
+
 type Faq = {
   id: string
   question: string
@@ -44,7 +57,11 @@ type Props = {
   specGroups: Record<string, Spec[]>
   documents: Doc[]
   crossReferences: CrossRef[]
+  /** Competitor series matched size by size, per brand. */
+  seriesSummaries?: SeriesSummary[]
   variants: VariantLike[]
+  /** Per-size competitor numbers for the size table's equivalent columns. */
+  variantEquivalents?: SizeEquivalents | null
   /** Shown above the size table, e.g. "Parker 13943 / 1L943". */
   variantEquivalenceNote?: string | null
   /** Competitor named by the cross-references, for the not-affiliated line. */
@@ -65,7 +82,9 @@ export default function ProductTabs({
   specGroups,
   documents,
   crossReferences,
+  seriesSummaries = [],
   variants,
+  variantEquivalents,
   variantEquivalenceNote,
   variantEquivalenceBrand,
   variantStainlessOnRequest,
@@ -114,7 +133,8 @@ export default function ProductTabs({
   */
   const inHtml = {
     documents: documents.length > 0 || activeId === 'documents',
-    compatibility: crossReferences.length > 0 || activeId === 'compatibility',
+    compatibility:
+      crossReferences.length > 0 || seriesSummaries.length > 0 || activeId === 'compatibility',
     faq: faqs.length > 0 || activeId === 'faq',
   }
 
@@ -214,6 +234,7 @@ export default function ProductTabs({
         <TabPanel id="sizes" activeId={activeId}>
           <ProductSizeTable
             variants={variants}
+            equivalents={variantEquivalents}
             equivalenceNote={variantEquivalenceNote}
             equivalenceBrand={variantEquivalenceBrand}
             stainlessOnRequest={variantStainlessOnRequest}
@@ -274,7 +295,43 @@ export default function ProductTabs({
       {/* Compatibility */}
       {inHtml.compatibility && (
         <TabPanel id="compatibility" activeId={activeId}>
-          {crossReferences.length === 0 ? (
+          {seriesSummaries.length > 0 && (
+            <div className="mb-8">
+              <p className="text-[14px] text-ih-muted mb-4">
+                This listing is matched size by size to the series below. The size table gives the exact
+                equivalent part number for every Indus part number.
+              </p>
+              <div className="overflow-x-auto border border-ih-border">
+                <table className="w-full min-w-[520px] font-mono text-[12.5px]">
+                  <thead>
+                    <tr className="bg-ih-surface-2 text-[11px] uppercase tracking-[0.08em] text-ih-muted">
+                      <th scope="col" className="px-3.5 py-2.5 text-left font-medium">Maker / standard</th>
+                      <th scope="col" className="px-3.5 py-2.5 text-left font-medium">Series</th>
+                      <th scope="col" className="px-3.5 py-2.5 text-right font-medium">Sizes matched</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {seriesSummaries.map((s) => (
+                      <tr key={s.brand} className="border-t border-ih-border">
+                        <th scope="row" className="px-3.5 py-2.5 text-left font-medium text-ih-ink">
+                          {s.isStandard ? (
+                            s.brand
+                          ) : (
+                            <Link href={`/replacement/${competitorBrandSlug(s.brand)}`} className="hover:text-ih-accent">
+                              {s.brand}
+                            </Link>
+                          )}
+                        </th>
+                        <td className="px-3.5 py-2.5 text-ih-ink-2">{s.series.join(', ')}</td>
+                        <td className="px-3.5 py-2.5 text-right text-ih-ink-2">{s.sizes}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          )}
+          {crossReferences.length === 0 && seriesSummaries.length > 0 ? null : crossReferences.length === 0 ? (
             <p className="text-[14px] text-ih-muted">No cross-reference data available. Contact our team for compatibility assistance.</p>
           ) : (
             <div>
