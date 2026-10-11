@@ -3,7 +3,7 @@
  * page bands, and product families with their size tables.
  *
  * Written for the Lifting & Rigging vertical and since used for fittings too
- * (`data/hd-stainless-adapters`, `data/hd-instrumentation-fittings`). A payload
+ * (`data/catalogue-stainless-adapters`, `data/catalogue-instrumentation-fittings`). A payload
  * may name an existing spec template (`specTemplateSlug`) instead of carrying
  * one, may set a brand (`brandSlug`), and its size-table rows may carry the
  * fitting columns (`portLabel`, `port2Label`, `port3Label`, competitor
@@ -54,7 +54,7 @@
  *
  * Usage:
  *   pnpm --filter @indus/db exec tsx src/scripts/import-lifting-catalogue.ts \
- *     --payload=lifting-hquality [--dry-run] [--publish] [--only=SKU] \
+ *     --payload=lifting-hquality [--image-dir=<folder>] [--dry-run] [--publish] [--only=SKU] \
  *     [--within=<category slug>] [--rewrite-categories] [--rewrite-bands]
  *
  * `--within` loads only the products filed under that category or directly
@@ -118,6 +118,8 @@ type Entry = {
   faqs: { question: string; answer: string }[]
   specs: Spec[]
   searchAliases: string[]
+  /** Overrides the payload's `brandSlug` for this product (multi-brand payloads). */
+  brandSlug?: string
   /** `caption` is internal provenance (`Media.caption`), never rendered. */
   images: { file: string; alt: string; caption?: string | null }[]
   variants: Variant[]
@@ -263,6 +265,11 @@ async function main() {
   const payloadPath = join(DATA_DIR, name, 'catalogue.json')
   if (!existsSync(payloadPath)) throw new Error(`payload not found: ${payloadPath}`)
   const payload: Payload = JSON.parse(readFileSync(payloadPath, 'utf8'))
+  // Supplier image folders live outside the repo and their paths name the supplier, so payloads leave
+  // `imageDir` empty and the folder is passed on the command line.
+  const imageDirArg = argv.find((a) => a.startsWith('--image-dir='))?.slice('--image-dir='.length)
+  payload.imageDir = imageDirArg || payload.imageDir
+  if (!payload.imageDir) throw new Error('--image-dir=<folder with the payload images> is required')
   if (!existsSync(payload.imageDir)) throw new Error(`Image folder not found: ${payload.imageDir}`)
   const problems: string[] = []
 
@@ -375,11 +382,11 @@ async function main() {
   }
 
   // ── Products ──────────────────────────────────────────────────────────────
-  let brandId: string | null = null
-  if (payload.brandSlug) {
-    const b = await db.brand.findUnique({ where: { slug: payload.brandSlug }, select: { id: true } })
-    if (!b) throw new Error(`brand ${payload.brandSlug} does not exist`)
-    brandId = b.id
+  const brandIds = new Map<string, string>()
+  for (const slug of new Set([payload.brandSlug, ...payload.products.map((e) => e.brandSlug)].filter((s): s is string => !!s))) {
+    const b = await db.brand.findUnique({ where: { slug }, select: { id: true } })
+    if (!b) throw new Error(`brand ${slug} does not exist`)
+    brandIds.set(slug, b.id)
   }
   const parentOf = new Map(payload.categories.map((c) => [c.slug, c.parentSlug]))
   const sb = dryRun ? null : supabase()
@@ -419,11 +426,12 @@ async function main() {
     const aliases = [...new Set([...e.searchAliases, ...e.variants.map((v) => v.partNumber)])]
     const live = publish && !held.has(e.sku)
     if (publish && !live) kept++
+    const brandSlug = e.brandSlug ?? payload.brandSlug
     const data = {
       title: e.title,
       slug: e.slug,
       categoryId,
-      brandId,
+      brandId: brandSlug ? brandIds.get(brandSlug)! : null,
       specTemplateId: templateId,
       descriptionShort: e.descriptionShort,
       descriptionLong: e.descriptionLong,

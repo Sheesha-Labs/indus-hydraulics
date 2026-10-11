@@ -110,8 +110,8 @@ describe('vercel ignore build step', () => {
     it('skips an already-applied import payload', () => {
       expect(
         decide({
-          'packages/db/data/hd-example/catalogue.json': '{}',
-          'packages/db/data/hd-example/README.md': 'x',
+          'packages/db/data/catalogue-example/catalogue.json': '{}',
+          'packages/db/data/catalogue-example/README.md': 'x',
         }),
       ).toBe('skip')
     })
@@ -119,7 +119,7 @@ describe('vercel ignore build step', () => {
     it('builds when a payload ships with code', () => {
       expect(
         decide({
-          'packages/db/data/hd-example/catalogue.json': '{}',
+          'packages/db/data/catalogue-example/catalogue.json': '{}',
           'packages/db/src/x.ts': 'export {}',
         }),
       ).toBe('build')

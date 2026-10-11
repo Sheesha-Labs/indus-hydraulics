@@ -2,7 +2,7 @@
  * Load per-size competitor cross-references (2026-10-10, approved by Ayush).
  *
  *   perSize — 6,027 rows: one competitor or standard number per Indus part
- *             number, from the Hydraulics Direct interchange data (Parker, SSP,
+ *             number, from the supplier interchange data (Parker, SSP,
  *             Aeroquip, Swagelok, Parker A-LOK, SSP Duolok, SAE, MS) and the
  *             competitor column already stored on product_variants. They fill
  *             the product page's equivalent columns and the brand hubs.
@@ -21,7 +21,7 @@
  *   pnpm --filter @indus/db exec tsx src/imports/2026-10-10-cross-references/run.ts --dry-run
  *   pnpm --filter @indus/db exec tsx src/imports/2026-10-10-cross-references/run.ts --log=/path/inserted.json
  *
- * payload.json is built by build_payload.py (see its header for the matching rule).
+ * payload.json is built by the payload builder (kept outside the repo) (see its header for the matching rule).
  */
 import '../2026-05-11-service-cases-launch/load-env-stub'
 

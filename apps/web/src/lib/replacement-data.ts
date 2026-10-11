@@ -24,7 +24,7 @@ import {
  *                     `/replacement/<brand>/<mpn>` page, as before.
  *   - per-size rows — one competitor number per Indus part number
  *                     (`variantPartNumber` set), thousands of them from the
- *                     Hydraulics Direct interchange data. These print in the
+ *                     the supplier interchange data. These print in the
  *                     product page's size table and are listed on the brand hub
  *                     by series. Their part pages stay reachable but are
  *                     noindex and canonical to the product: a page per size is
