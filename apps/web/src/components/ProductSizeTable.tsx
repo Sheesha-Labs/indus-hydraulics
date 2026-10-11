@@ -14,7 +14,9 @@ import {
   variantText,
   variantTextColumns,
   isStandardDesignation,
+  type VariantColumn,
   type VariantLike,
+  type VariantTableKind,
 } from '@indus/domain'
 
 /**
@@ -53,6 +55,11 @@ type Props = {
    * order, so the line must not render on those pages.
    */
   stainlessOnRequest?: boolean
+  /**
+   * Heading of the part-number column. A listing sold under another maker's
+   * brand carries that maker's numbers, so "Indus part no." would be untrue.
+   */
+  partNumberHeading?: string
 }
 
 /**
@@ -63,12 +70,15 @@ type Props = {
 /** A column headed by a bare drawing letter — A, d1, Ø2, L′, R max — rather than a word. */
 const DRAWING_LETTER_LABEL = /^(?:Ø?[A-Za-z]{1,2}\d{0,2}′?(?: max| min)?|Ø\d{0,2})$/
 
-function formatCell(value: number | undefined, kind: 'hose' | 'fitting' | 'lifting'): string {
+function formatCell(value: number | undefined, kind: VariantTableKind, column: VariantColumn): string {
   if (value === undefined) return '—'
-  return kind === 'lifting'
+  return kind === 'lifting' || column.grouped
     ? value.toLocaleString('en-GB', { maximumFractionDigits: 3 })
     : String(value)
 }
+
+/** Columns that carry a manufacturer's rating — they get the lowest-rated-component note. */
+const RATING_KEYS = new Set(['ratedPsi', 'maxPsi', 'contPsi', 'flowGpm', 'maxFlowGpm', 'ratedRpm', 'maxRpm', 'torqueLbIn', 'columnLoadLbs', 'capacityTon'])
 
 /**
  * The orderable sizes under one listing.
@@ -92,6 +102,7 @@ export default function ProductSizeTable({
   equivalenceNote,
   equivalenceBrand,
   stainlessOnRequest = true,
+  partNumberHeading = 'Indus part no.',
 }: Props) {
   if (variants.length === 0) {
     return (
@@ -133,6 +144,7 @@ export default function ProductSizeTable({
   // breaking load has no working rating at all; both need saying under a
   // rigging table, because a buyer reads the biggest number as the rating.
   const hasLashing = dimensionColumns.some((c) => c.key.startsWith('lc'))
+  const showsRatings = dimensionColumns.some((c) => RATING_KEYS.has(c.key))
   const breakingOnly =
     kind === 'lifting' &&
     !dimensionColumns.some((c) => c.key.startsWith('wll') || c.key.startsWith('lc')) &&
@@ -158,7 +170,7 @@ export default function ProductSizeTable({
           <thead>
             <tr className="bg-ih-surface-2 text-[11px] uppercase tracking-[0.08em] text-ih-muted">
               <th scope="col" className="px-3.5 py-2.5 text-left font-medium whitespace-nowrap">
-                Indus part no.
+                {partNumberHeading}
               </th>
               {showEquivalents && (
                 <th scope="col" className="px-3.5 py-2.5 text-left font-medium">
@@ -276,7 +288,7 @@ export default function ProductSizeTable({
                   ))}
                   {dimensionColumns.map((c) => (
                     <td key={c.key} className="px-3.5 py-2.5 text-right text-ih-ink-2">
-                      {formatCell(dims[c.key], kind)}
+                      {formatCell(dims[c.key], kind, c)}
                     </td>
                   ))}
                   {textColumns.map((c) => (
@@ -329,6 +341,13 @@ export default function ProductSizeTable({
             Working pressure is the published rating for the hose itself. A made-up assembly is
             limited by its lowest-rated part, so check it against the coupling, the clamp or
             ferrule, and the temperature you are running at.
+          </p>
+        )}
+        {showsRatings && (
+          <p>
+            Pressure, flow, speed, torque and load figures are the manufacturer&rsquo;s published
+            ratings for that part number. A circuit is limited by its lowest-rated component, so
+            check them against the hose, fittings and valves it connects to.
           </p>
         )}
         {kind === 'lifting' && (
