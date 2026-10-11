@@ -142,9 +142,9 @@ Fix in this order:
 2. **Maker or supplier photo**, within our permissions: authorised-representative makers
    (Cameron, Stream-Flo, Anson/NOV, WOM, TechnipFMC, SPM) and Chinese manufacturers' own sites
    (not marketplaces), with no visible third-party brand marks.
-   **Hydraulics Direct** has been an Indus principal since 2026-10-09: its own part-specific
+   **One US principal** (since 2026-10-09): its own part-specific
    studio photos (`<part>_Rectangle…`, `…_TopView…`) and dimension drawings may be used on the
-   unbranded listings built from its catalogue. Do not use its CGI renders with a large TITAN
+   unbranded listings built from its catalogue. Do not use its CGI renders with a large house-brand
    logo (they also show a carbon-steel finish on stainless listings) or its generic `<code>-2`
    stock shots without checking the geometry — many show a different part.
 3. **Edit one of our own photos** with Higgsfield (GPT Image 2) into the listed geometry. Review
