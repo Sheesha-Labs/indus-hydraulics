@@ -1,3 +1,5 @@
+import { CATEGORY_WITH_IMAGE_CHAIN, nearestCategoryImage } from '../../../../lib/category-fallback'
+import { CategoryFallbackImage } from '../../../../components/ProductCard'
 import type { Metadata } from 'next'
 import { Fragment, type ReactNode } from 'react'
 import { notFound } from 'next/navigation'
@@ -101,7 +103,7 @@ export default async function BrandPage({ params }: Props) {
         where: { brandId: brand.id, status: 'active' },
         include: {
           images: { orderBy: { position: 'asc' }, take: 1, include: { media: true } },
-          category: { select: { name: true, slug: true } },
+          category: CATEGORY_WITH_IMAGE_CHAIN,
         },
         orderBy: { title: 'asc' },
         take: 8,
@@ -378,6 +380,8 @@ export default async function BrandPage({ params }: Props) {
                         className="object-contain p-3"
                         sizes="(max-width: 1360px) 25vw, 320px"
                       />
+                    ) : nearestCategoryImage(product.category) ? (
+                      <CategoryFallbackImage {...nearestCategoryImage(product.category)!} sizes="(max-width: 1360px) 25vw, 320px" />
                     ) : (
                       <div className="text-ih-muted absolute inset-0 grid place-items-center font-mono text-[10px]">
                         IMG
