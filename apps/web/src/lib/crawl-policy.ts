@@ -188,6 +188,14 @@ export const STATIC_SITEMAP_PATHS: StaticSitemapPath[] = [
   { path: '/tools/thread-identifier', priority: 0.7, changeFrequency: 'monthly' },
   { path: '/tools/pressure-converter', priority: 0.6, changeFrequency: 'monthly' },
   { path: '/tools/dash-size-chart', priority: 0.6, changeFrequency: 'monthly' },
+  // The reference library. Same reasoning as the tools — evergreen, bookmarked,
+  // cited — and the thread chart and pressure ratings carry the most searchable
+  // data on the site after the catalogue itself.
+  { path: '/resources', priority: 0.7, changeFrequency: 'monthly' },
+  { path: '/resources/thread-chart', priority: 0.7, changeFrequency: 'monthly' },
+  { path: '/resources/fitting-pressure-ratings', priority: 0.7, changeFrequency: 'monthly' },
+  { path: '/resources/crimp-specifications', priority: 0.6, changeFrequency: 'monthly' },
+  { path: '/resources/hydraulic-glossary', priority: 0.6, changeFrequency: 'monthly' },
   // Programmatic replacement landing pages — high-intent search
   // surface ("parker pv16 replacement") that AI agents cite well.
   { path: '/replacement', priority: 0.7, changeFrequency: 'weekly' },
