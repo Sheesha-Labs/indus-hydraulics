@@ -6,12 +6,39 @@ import Image from 'next/image'
 type Props = {
   images: Array<{ url: string; alt: string }>
   title: string
+  /**
+   * The nearest category's studio shot (already a URL), shown muted and tagged
+   * when the product has no photograph of its own — see lib/category-fallback.
+   */
+  fallback?: { url: string; categoryName: string } | null
 }
 
 const HERO_BOX = 'relative w-full aspect-[4/3] max-h-[min(56vh,480px)] border border-ih-border bg-ih-surface overflow-hidden'
 
-export default function ProductGallery({ images, title }: Props) {
+export default function ProductGallery({ images, title, fallback }: Props) {
   const [active, setActive] = useState(0)
+
+  if (images.length === 0 && fallback) {
+    return (
+      <div className="flex flex-col gap-3">
+        <div className={HERO_BOX}>
+          {/* Decorative: it pictures the range, not this part, so it carries no alt. */}
+          <Image
+            src={fallback.url}
+            alt=""
+            fill
+            className="object-cover opacity-45 grayscale-[35%]"
+            sizes="(max-width: 1280px) 100vw, 50vw"
+            priority
+          />
+          <GridOverlay />
+          <span className="absolute bottom-3 left-3 max-w-[calc(100%-1.5rem)] truncate rounded-[3px] border border-ih-border bg-ih-surface px-2 py-1 font-mono text-[10.5px] uppercase tracking-[0.08em] text-ih-muted">
+            Category image · {fallback.categoryName}
+          </span>
+        </div>
+      </div>
+    )
+  }
 
   if (images.length === 0) {
     return (

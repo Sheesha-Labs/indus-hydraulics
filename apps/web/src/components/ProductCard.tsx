@@ -112,7 +112,18 @@ export default function ProductCard({ product, fallbackImage }: ProductCardProps
  * toward the surface colour, with a small mono tag naming it as a category
  * image. Shared with the industry page's inline product tiles.
  */
-export function CategoryFallbackImage({ src, categoryName }: { src: string; categoryName: string }) {
+export function CategoryFallbackImage({
+  src,
+  categoryName,
+  showTag = true,
+  sizes = '(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 25vw',
+}: {
+  src: string
+  categoryName: string
+  /** Off on thumbnails too small to carry the label (search results). */
+  showTag?: boolean
+  sizes?: string
+}) {
   return (
     <>
       <Image
@@ -120,11 +131,13 @@ export function CategoryFallbackImage({ src, categoryName }: { src: string; cate
         alt=""
         fill
         className="object-cover opacity-45 grayscale-[35%]"
-        sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 25vw"
+        sizes={sizes}
       />
+      {showTag && (
       <span className="absolute bottom-2 left-2 max-w-[calc(100%-1rem)] truncate rounded-[3px] border border-ih-border bg-ih-surface px-1.5 py-0.5 font-mono text-[9.5px] uppercase tracking-[0.08em] text-ih-muted">
         Category image · {categoryName}
       </span>
+      )}
     </>
   )
 }

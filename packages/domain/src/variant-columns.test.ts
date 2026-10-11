@@ -101,6 +101,27 @@ describe('VARIANT_DIMENSION_COLUMNS', () => {
       'W',
       'Y',
       'Y1',
+      // Ratings and sizes for couplings, pumps, motors and cylinders: the
+      // source heads each with what it is — "Cylinder Bore", "Cylinder Stroke
+      // Ranges", "Pumps Displacement", "Pumps Max Pressure", "GPM", "Motor Max
+      // Torque" — so, like the hose columns, the help repeats the header.
+      'capacityTon',
+      'boreIn',
+      'rodIn',
+      'strokeIn',
+      'retractedIn',
+      'extendedIn',
+      'displacementCc',
+      'displacementCuIn',
+      'ratedPsi',
+      'maxPsi',
+      'contPsi',
+      'flowGpm',
+      'maxFlowGpm',
+      'ratedRpm',
+      'maxRpm',
+      'torqueLbIn',
+      'columnLoadLbs',
     ])
   })
 })
@@ -128,7 +149,9 @@ describe('text columns', () => {
   })
 
   it('does not claim S1 or S2 mean across-flats', () => {
-    expect(VARIANT_TEXT_COLUMNS.map((c) => c.key)).toEqual(['oRing', 'supply'])
+    expect(VARIANT_TEXT_COLUMNS.map((c) => c.key)).toEqual([
+      'oRing', 'supply', 'item', 'half', 'bodySize', 'mount', 'shaft', 'ports', 'rotation', 'action',
+    ])
     for (const key of ['S1', 'S2'] as const) {
       const col = VARIANT_DIMENSION_COLUMNS.find((c) => c.key === key)!
       expect(col.help).toContain('dimension drawing')
@@ -508,5 +531,40 @@ describe('lifting tables', () => {
   it('renders a count with no unit', () => {
     const falls = variantDimensionColumns([{ partNumber: 'h', dimensions: { size: '2 t', wllT: 2, chainFalls: 2 } }])
     expect(falls.map((c) => variantColumnUnit(c))).toEqual(['t', null])
+  })
+})
+
+describe('coupling and equipment ratings', () => {
+  it('shows a coupling’s rating and flow in the units it is sold in, on a fitting table', () => {
+    const rows: VariantLike[] = [
+      { partNumber: 'FEM-501-8FP', portLabel: '1/2-14 NPSF', dimensions: { half: 'Coupler (female half)', bodySize: '1/2"', ratedPsi: 3625, flowGpm: 12 } },
+      { partNumber: 'FEM-502-8FP', portLabel: '1/2-14 NPSF', dimensions: { half: 'Nipple (male half)', bodySize: '1/2"', ratedPsi: 3625 } },
+    ]
+    expect(variantTableKind(rows)).toBe('fitting')
+    const cols = variantDimensionColumns(rows)
+    expect(cols.map((c) => [c.key, c.label, variantColumnUnit(c)])).toEqual([
+      ['ratedPsi', 'Rated pressure', 'psi'],
+      ['flowGpm', 'Rated flow', 'GPM'],
+    ])
+    expect(cols[0]!.grouped).toBe(true)
+    expect(variantTextColumns(rows).map((c) => c.key)).toEqual(['half', 'bodySize'])
+  })
+
+  it('reads a pump, motor or cylinder table as equipment, not a fitting', () => {
+    expect(variantTableKind([{ partNumber: 'p', dimensions: { displacementCc: 19.5, maxPsi: 2500 } }])).toBe('equipment')
+    expect(variantTableKind([{ partNumber: 'c', dimensions: { boreIn: 3, strokeIn: 24, rodIn: 1.5 } }])).toBe('equipment')
+    expect(variantTableKind([{ partNumber: 'q', dimensions: { ratedPsi: 3000 } }])).toBe('fitting')
+  })
+
+  it('orders cylinder columns size first, ratings after', () => {
+    const cols = variantDimensionColumns([
+      { partNumber: 'c', dimensions: { ratedPsi: 3500, strokeIn: 24, boreIn: 2, rodIn: 1.25, retractedIn: 31, extendedIn: 55, columnLoadLbs: 8400 } },
+    ])
+    expect(cols.map((c) => c.key)).toEqual(['boreIn', 'rodIn', 'strokeIn', 'retractedIn', 'extendedIn', 'ratedPsi', 'columnLoadLbs'])
+  })
+
+  it('gives the row description its own leading column', () => {
+    const cols = variantTextColumns([{ partNumber: '43200', dimensions: { item: 'Elbow, .38 in cone' } }])
+    expect(cols.map((c) => [c.key, c.label, c.lead])).toEqual([['item', 'Description', true]])
   })
 })

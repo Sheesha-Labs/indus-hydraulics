@@ -21,6 +21,7 @@ import {
 } from '@indus/domain'
 import { Breadcrumb, Button, EmptyState, JsonLd, Note } from '@indus/ui'
 import { pageMetadata, urlFor } from '../../../lib/seo'
+import { CATEGORY_WITH_IMAGE_CHAIN, nearestCategoryImage } from '../../../lib/category-fallback'
 import ProductCard from '../../../components/ProductCard'
 import RelatedReading from '../../../components/blog/RelatedReading'
 import {
@@ -286,6 +287,7 @@ export default async function CategoryView({ slug, sp }: CategoryViewProps) {
         brand: { select: { name: true, slug: true } },
         images: { orderBy: { position: 'asc' }, take: 1, include: { media: true } },
         specs: { where: { isFilterable: true }, take: 3 },
+        category: CATEGORY_WITH_IMAGE_CHAIN,
       },
       orderBy:
         sp.sort === 'az'
@@ -819,7 +821,11 @@ export default async function CategoryView({ slug, sp }: CategoryViewProps) {
             ) : (
               <div className="grid grid-cols-2 gap-4 lg:grid-cols-3 xl:grid-cols-4">
                 {products.map((product) => (
-                  <ProductCard key={product.id} product={product} fallbackImage={fallbackImage} />
+                  <ProductCard
+                    key={product.id}
+                    product={product}
+                    fallbackImage={nearestCategoryImage(product.category) ?? fallbackImage}
+                  />
                 ))}
               </div>
             )}

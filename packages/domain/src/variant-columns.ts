@@ -21,6 +21,7 @@
  */
 
 export type VariantDimensionKey =
+  | RatingDimensionKey
   | 'OD'
   | 'hoseOD'
   | 'burstPressure'
@@ -67,7 +68,38 @@ export type VariantDimensionKey =
  * figure — an O-ring size is `12.0×2.0`, not a number. They render in their own
  * columns after the numeric ones.
  */
-export type VariantTextKey = 'oRing' | 'supply' | LiftingTextKey
+export type VariantTextKey = 'oRing' | 'supply' | EquipmentTextKey | LiftingTextKey
+
+/**
+ * Ratings and sizes for couplings, pumps, motors and cylinders.
+ *
+ * These ranges are sold in US units and published that way — a pump's
+ * displacement in cm³/rev and in³/rev, a coupling's pressure in psi, a
+ * cylinder's bore and stroke in inches — so, as with the lifting loads, the
+ * unit is part of the key and nothing is converted. A converted 3,000 psi is
+ * 206.84 bar, a figure no catalogue prints and no buyer is looking for.
+ */
+export type RatingDimensionKey =
+  | 'capacityTon'
+  | 'boreIn'
+  | 'rodIn'
+  | 'strokeIn'
+  | 'retractedIn'
+  | 'extendedIn'
+  | 'displacementCc'
+  | 'displacementCuIn'
+  | 'ratedPsi'
+  | 'maxPsi'
+  | 'contPsi'
+  | 'flowGpm'
+  | 'maxFlowGpm'
+  | 'ratedRpm'
+  | 'maxRpm'
+  | 'torqueLbIn'
+  | 'columnLoadLbs'
+
+/** Text columns for couplings, pumps, motors and cylinders. */
+export type EquipmentTextKey = 'item' | 'half' | 'bodySize' | 'mount' | 'shaft' | 'ports' | 'rotation' | 'action'
 
 /**
  * Lifting & rigging columns.
@@ -261,6 +293,14 @@ export type VariantUnit =
   | 'daN'
   | 'lbs/100 ft'
   | 'kg/220 m'
+  | 'psi'
+  | 'GPM'
+  | 'cm³/rev'
+  | 'in³/rev'
+  | 'rpm'
+  | 'in'
+  | 'lb-in'
+  | 'ton'
   | ''
 
 /**
@@ -285,7 +325,43 @@ export type VariantColumn = {
   unit: VariantUnit
   /** Tooltip / caption text. Never a guess — see the module note. */
   help: string
+  /** Print with thousands separators (3,000 psi). Lifting tables always do. */
+  grouped?: boolean
 }
+
+const RATING_HELP = 'as the manufacturer publishes it. A circuit is limited by its lowest-rated component.'
+/**
+ * Equipment and coupling ratings, in the order a table should show them:
+ * what the unit is (capacity, bore, stroke, displacement), then what it is
+ * rated to do (pressure, flow, speed, torque). Declared as a function so the
+ * registry below can spread it whatever the declaration order.
+ */
+function ratingColumns(): VariantColumn[] {
+  return [
+    { key: 'capacityTon', label: 'Capacity', unit: 'ton', help: 'Rated capacity in tons, as the manufacturer publishes it.', grouped: true },
+    { key: 'boreIn', label: 'Bore', unit: 'in', help: 'Cylinder bore diameter, as published.' },
+    { key: 'rodIn', label: 'Rod', unit: 'in', help: 'Piston rod diameter, as published.' },
+    { key: 'strokeIn', label: 'Stroke', unit: 'in', help: 'Cylinder stroke, as published.' },
+    { key: 'retractedIn', label: 'Retracted', unit: 'in', help: 'Length with the rod retracted, as published.' },
+    { key: 'extendedIn', label: 'Extended', unit: 'in', help: 'Length with the rod extended, as published.' },
+    { key: 'displacementCc', label: 'Displacement', unit: 'cm³/rev', help: 'Displacement per revolution, as published.' },
+    { key: 'displacementCuIn', label: 'Displacement', unit: 'in³/rev', help: 'Displacement per revolution, as published.' },
+    { key: 'ratedPsi', label: 'Rated pressure', unit: 'psi', help: `Rated working pressure, ${RATING_HELP}`, grouped: true },
+    { key: 'maxPsi', label: 'Max pressure', unit: 'psi', help: `Maximum (intermittent) pressure, ${RATING_HELP}`, grouped: true },
+    { key: 'contPsi', label: 'Continuous pressure', unit: 'psi', help: `Continuous pressure, ${RATING_HELP}`, grouped: true },
+    { key: 'flowGpm', label: 'Rated flow', unit: 'GPM', help: `Rated flow in US gallons per minute, ${RATING_HELP}` },
+    { key: 'maxFlowGpm', label: 'Max flow', unit: 'GPM', help: `Maximum flow in US gallons per minute, ${RATING_HELP}` },
+    { key: 'ratedRpm', label: 'Rated speed', unit: 'rpm', help: 'Rated shaft speed, as published.', grouped: true },
+    { key: 'maxRpm', label: 'Max speed', unit: 'rpm', help: 'Maximum shaft speed, as published.', grouped: true },
+    { key: 'torqueLbIn', label: 'Max torque', unit: 'lb-in', help: 'Maximum output torque, as published.', grouped: true },
+    { key: 'columnLoadLbs', label: 'Column load', unit: 'lbs', help: 'Rated column (push) load, as published.', grouped: true },
+  ]
+}
+
+/** Keys only a pump, motor or cylinder row carries — they make a table `equipment`. */
+const EQUIPMENT_MARKERS: ReadonlySet<string> = new Set([
+  'capacityTon', 'boreIn', 'strokeIn', 'displacementCc', 'displacementCuIn', 'ratedRpm', 'maxRpm', 'torqueLbIn',
+])
 
 /**
  * Every dimension column we know how to render, in the order a table should
@@ -391,6 +467,7 @@ export const VARIANT_DIMENSION_COLUMNS: readonly VariantColumn[] = [
   { key: 'Q', label: 'Q', unit: 'mm', help: 'Dimension Q on the manufacturer dimension drawing.' },
   { key: 'X', label: 'X', unit: 'mm', help: 'Dimension X on the manufacturer dimension drawing.' },
   { key: 'I', label: 'I', unit: 'mm', help: 'Dimension I on the manufacturer dimension drawing.' },
+  ...ratingColumns(),
 ]
 
 export type VariantTextColumn = {
@@ -419,6 +496,14 @@ export const VARIANT_TEXT_COLUMNS: readonly VariantTextColumn[] = [
   },
   // Hose sold by the box, coil, reel or cut length: one row per way it is supplied.
   { key: 'supply', label: 'Supply', help: 'Length and packaging the part number is supplied in, as published.', lead: true },
+  { key: 'item', label: 'Description', help: 'What this part number is, as the manufacturer lists it.', lead: true },
+  { key: 'half', label: 'Type', help: 'Which part of the coupling this is: coupler (female half), nipple (male half), complete set, dust cap or adapter.', lead: true },
+  { key: 'bodySize', label: 'Body size', help: 'Nominal body size of the coupling, which sets which halves mate.', lead: true },
+  { key: 'mount', label: 'Mount', help: 'Mounting flange or pattern, as published.' },
+  { key: 'shaft', label: 'Shaft', help: 'Drive shaft, as published.' },
+  { key: 'ports', label: 'Ports', help: 'Port type and size, as published.' },
+  { key: 'rotation', label: 'Rotation', help: 'Direction of rotation viewed from the shaft end, as published.' },
+  { key: 'action', label: 'Action', help: 'Single- or double-acting, as published.' },
 ]
 
 const letter = (key: VariantColumnKey, label: string): VariantColumn => ({
@@ -752,7 +837,9 @@ export function hasVariantPressures(variants: readonly VariantLike[]): boolean {
  * somebody forgot a prop — which matters, because one of those footnotes
  * offers every size in 316 stainless and that is nonsense on a rubber hose.
  */
-export function variantTableKind(variants: readonly VariantLike[]): 'hose' | 'fitting' | 'lifting' {
+export type VariantTableKind = 'hose' | 'fitting' | 'lifting' | 'equipment'
+
+export function variantTableKind(variants: readonly VariantLike[]): VariantTableKind {
   // Lifting first: a chain row carries `weightPerMetre` exactly as a hose row
   // does, and it is the load columns — which no hose or fitting ever has — that
   // say which one it is.
@@ -762,6 +849,10 @@ export function variantTableKind(variants: readonly VariantLike[]): 'hose' | 'fi
     return Object.keys(raw).some((k) => LIFTING_MARKERS.has(k.split('@')[0]!))
   })
   if (isLifting) return 'lifting'
+  // A pump, motor or cylinder: rated by displacement, bore, stroke or speed —
+  // keys no fitting or hose row carries.
+  const isEquipment = variants.some((v) => Object.keys(variantDimensions(v.dimensions)).some((k) => EQUIPMENT_MARKERS.has(k)))
+  if (isEquipment) return 'equipment'
   const hoseKeys: VariantDimensionKey[] = ['hoseOD', 'burstPressure', 'vacuum', 'bendRadius', 'weightPerMetre']
   const isHose = variants.some((v) => {
     const dims = variantDimensions(v.dimensions)

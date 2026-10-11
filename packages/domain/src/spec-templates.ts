@@ -177,7 +177,18 @@ export const STAINLESS_ON_REQUEST_TEMPLATES: readonly string[] = [
   'hose-fitting-spec',
 ]
 
-/** Whether a product on this spec template may advertise the 316 stainless option. */
-export function offersStainlessOnRequest(specTemplateSlug: string | null | undefined): boolean {
+/**
+ * Whether a product on this spec template may advertise the 316 stainless option.
+ *
+ * The offer is Indus's own: "-SS" on an Indus part number. A listing sold under
+ * another maker's brand and part number — a Parker crimp fitting, a Stucchi
+ * coupling — has no "-SS" version to quote, so the line must not render there
+ * even though it shares the fitting template. No brand is treated as Indus.
+ */
+export function offersStainlessOnRequest(
+  specTemplateSlug: string | null | undefined,
+  brandSlug?: string | null,
+): boolean {
+  if (brandSlug && brandSlug !== 'indus') return false
   return specTemplateSlug != null && STAINLESS_ON_REQUEST_TEMPLATES.includes(specTemplateSlug)
 }

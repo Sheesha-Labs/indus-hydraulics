@@ -68,6 +68,8 @@ type Props = {
   variantEquivalenceBrand?: string | null
   /** Whether the size table may offer the range in 316 stainless on request. */
   variantStainlessOnRequest?: boolean
+  /** Heading of the size table's part-number column: Indus's, or the maker's on a branded listing. */
+  variantPartNumberHeading?: string
   faqs: Faq[]
   availability: ProductAvailability
   warrantyMonths?: number | null
@@ -88,6 +90,7 @@ export default function ProductTabs({
   variantEquivalenceNote,
   variantEquivalenceBrand,
   variantStainlessOnRequest,
+  variantPartNumberHeading,
   faqs,
   availability,
   warrantyMonths,
@@ -238,6 +241,7 @@ export default function ProductTabs({
             equivalenceNote={variantEquivalenceNote}
             equivalenceBrand={variantEquivalenceBrand}
             stainlessOnRequest={variantStainlessOnRequest}
+            partNumberHeading={variantPartNumberHeading}
           />
         </TabPanel>
       )}

@@ -29,6 +29,7 @@ import {
 } from '@indus/domain'
 import { Badge, Breadcrumb, Button, JsonLd } from '@indus/ui'
 import ProductExportNote from '../../../../components/markets/ProductExportNote'
+import { CATEGORY_WITH_IMAGE_CHAIN, nearestCategoryImage } from '../../../../lib/category-fallback'
 import ProductGallery from '../../../../components/ProductGallery'
 import AddToQuoteButton from '../../../../components/AddToQuoteButton'
 import AddToCompareButton from '../../../../components/AddToCompareButton'
@@ -55,7 +56,7 @@ const getProduct = cache(async (decoded: string) => {
       // Three levels of parent because the category tree is three deep, and the
       // stock posture's exemption list is matched against the whole chain — a
       // root listed there has to be visible from a leaf product.
-      category: { include: { parent: { include: { parent: true } } } },
+      category: CATEGORY_WITH_IMAGE_CHAIN,
       images: { orderBy: { position: 'asc' }, include: { media: true } },
       specs: { orderBy: { position: 'asc' } },
       documents: { orderBy: { position: 'asc' }, include: { media: true } },
@@ -606,6 +607,10 @@ export default async function ProductPage({ params }: Props) {
                   (i === 0 ? product.title : `${product.title} — view ${i + 1}`),
               }))}
               title={product.title}
+              fallback={(() => {
+                const f = nearestCategoryImage(product.category)
+                return f ? { url: mediaUrl(f.src), categoryName: f.categoryName } : null
+              })()}
             />
           </div>
 
@@ -796,7 +801,10 @@ export default async function ProductPage({ params }: Props) {
           }
           variantEquivalenceNote={equivalenceNote}
           variantEquivalenceBrand={equivalenceBrand}
-          variantStainlessOnRequest={offersStainlessOnRequest(product.specTemplate?.slug)}
+          variantStainlessOnRequest={offersStainlessOnRequest(product.specTemplate?.slug, product.brand?.slug)}
+          variantPartNumberHeading={
+            product.brand && product.brand.slug !== 'indus' ? `${product.brand.name} part no.` : 'Indus part no.'
+          }
           faqs={product.faqs.map((f) => ({
             id: f.id,
             question: f.question,
