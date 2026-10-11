@@ -426,3 +426,22 @@ it never has to be repeated. The non-negotiables:
    JSON-LD builder, `ogImageAlt` to `pageMetadata`, and `images` to their sitemap section.
 7. **Import scripts set `alt = product title` as a placeholder** — run an alt-text pass after
    every import.
+
+---
+
+## 14. Supplier names never enter the repo
+
+**This repository is public.** Which distributors and principals Indus buys from is commercially
+sensitive, and anything committed here — file contents, folder names, commit messages, branch names,
+PR titles and bodies — is readable by anyone and survives in git history and closed PRs.
+
+1. No supplier or principal name, domain, URL, house brand, location or supplier-specific code system
+   in any committed file, folder name, branch, commit message or PR text. Makers whose products we list
+   under their own brand (Parker, Tompkins, Stucchi, Enerpac …) are fine; who we buy them from is not.
+2. Catalogue payloads live in `packages/db/data/catalogue-<topic>/`. `source` says "Supplier catalogue
+   export <date> — <topic>"; image captions say "Supplier catalogue image (<date>)"; `imageDir` is empty
+   and the folder is passed with `--image-dir=`. Mapping back to a supplier lives in
+   `~/Documents/Indus Supplier Research/`, never here.
+3. Generators that read a supplier export stay with that export, outside the repo.
+4. SKUs and storage keys carry no supplier initials.
+5. Before every push: `git diff origin/main... | grep -iE '<supplier names>'` must come back empty.
