@@ -18614,26 +18614,8 @@
 },
 {
 "competitorBrand": "Parker",
-"competitorMpn": "10143-10-12",
+"competitorMpn": "10143-12-10",
 "variantPartNumber": "IH-CF43-NPTM-1012",
-"compatibility": "direct",
-"source": [
-"stored-variant"
-]
-},
-{
-"competitorBrand": "Parker",
-"competitorMpn": "10143-10-6",
-"variantPartNumber": "IH-CF43-NPTM-1006",
-"compatibility": "direct",
-"source": [
-"stored-variant"
-]
-},
-{
-"competitorBrand": "Parker",
-"competitorMpn": "10143-10-8",
-"variantPartNumber": "IH-CF43-NPTM-1008",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -18651,7 +18633,7 @@
 {
 "competitorBrand": "Parker",
 "competitorMpn": "10143-12-16",
-"variantPartNumber": "IH-CF43-NPTM-1216",
+"variantPartNumber": "IH-CF43-NPTM-1612",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -18660,7 +18642,7 @@
 {
 "competitorBrand": "Parker",
 "competitorMpn": "10143-12-8",
-"variantPartNumber": "IH-CF43-NPTM-1208",
+"variantPartNumber": "IH-CF43-NPTM-0812",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -18669,7 +18651,7 @@
 {
 "competitorBrand": "Parker",
 "competitorMpn": "10143-16-12",
-"variantPartNumber": "IH-CF43-NPTM-1612",
+"variantPartNumber": "IH-CF43-NPTM-1216",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -18722,25 +18704,7 @@
 },
 {
 "competitorBrand": "Parker",
-"competitorMpn": "10143-4-6",
-"variantPartNumber": "IH-CF43-NPTM-0406",
-"compatibility": "direct",
-"source": [
-"stored-variant"
-]
-},
-{
-"competitorBrand": "Parker",
-"competitorMpn": "10143-4-8",
-"variantPartNumber": "IH-CF43-NPTM-0408",
-"compatibility": "direct",
-"source": [
-"stored-variant"
-]
-},
-{
-"competitorBrand": "Parker",
-"competitorMpn": "10143-5-4",
+"competitorMpn": "10143-4-5",
 "variantPartNumber": "IH-CF43-NPTM-0504",
 "compatibility": "direct",
 "source": [
@@ -18749,8 +18713,17 @@
 },
 {
 "competitorBrand": "Parker",
-"competitorMpn": "10143-5-6",
-"variantPartNumber": "IH-CF43-NPTM-0506",
+"competitorMpn": "10143-4-6",
+"variantPartNumber": "IH-CF43-NPTM-0604",
+"compatibility": "direct",
+"source": [
+"stored-variant"
+]
+},
+{
+"competitorBrand": "Parker",
+"competitorMpn": "10143-6-10",
+"variantPartNumber": "IH-CF43-NPTM-1006",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -18759,7 +18732,16 @@
 {
 "competitorBrand": "Parker",
 "competitorMpn": "10143-6-4",
-"variantPartNumber": "IH-CF43-NPTM-0604",
+"variantPartNumber": "IH-CF43-NPTM-0406",
+"compatibility": "direct",
+"source": [
+"stored-variant"
+]
+},
+{
+"competitorBrand": "Parker",
+"competitorMpn": "10143-6-5",
+"variantPartNumber": "IH-CF43-NPTM-0506",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -18777,7 +18759,16 @@
 {
 "competitorBrand": "Parker",
 "competitorMpn": "10143-6-8",
-"variantPartNumber": "IH-CF43-NPTM-0608",
+"variantPartNumber": "IH-CF43-NPTM-0806",
+"compatibility": "direct",
+"source": [
+"stored-variant"
+]
+},
+{
+"competitorBrand": "Parker",
+"competitorMpn": "10143-8-10",
+"variantPartNumber": "IH-CF43-NPTM-1008",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -18786,7 +18777,16 @@
 {
 "competitorBrand": "Parker",
 "competitorMpn": "10143-8-12",
-"variantPartNumber": "IH-CF43-NPTM-0812",
+"variantPartNumber": "IH-CF43-NPTM-1208",
+"compatibility": "direct",
+"source": [
+"stored-variant"
+]
+},
+{
+"competitorBrand": "Parker",
+"competitorMpn": "10143-8-4",
+"variantPartNumber": "IH-CF43-NPTM-0408",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -18795,7 +18795,7 @@
 {
 "competitorBrand": "Parker",
 "competitorMpn": "10143-8-6",
-"variantPartNumber": "IH-CF43-NPTM-0806",
+"variantPartNumber": "IH-CF43-NPTM-0608",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -18821,7 +18821,16 @@
 },
 {
 "competitorBrand": "Parker",
-"competitorMpn": "10171-12-16",
+"competitorMpn": "10171-12-8",
+"variantPartNumber": "IH-CF71-NPTM-0812",
+"compatibility": "direct",
+"source": [
+"stored-variant"
+]
+},
+{
+"competitorBrand": "Parker",
+"competitorMpn": "10171-16-12",
 "variantPartNumber": "IH-CF71-NPTM-1216",
 "compatibility": "direct",
 "source": [
@@ -18839,7 +18848,7 @@
 },
 {
 "competitorBrand": "Parker",
-"competitorMpn": "10171-16-20",
+"competitorMpn": "10171-20-16",
 "variantPartNumber": "IH-CF71-NPTM-1620",
 "compatibility": "direct",
 "source": [
@@ -18884,15 +18893,6 @@
 },
 {
 "competitorBrand": "Parker",
-"competitorMpn": "10171-8-12",
-"variantPartNumber": "IH-CF71-NPTM-0812",
-"compatibility": "direct",
-"source": [
-"stored-variant"
-]
-},
-{
-"competitorBrand": "Parker",
 "competitorMpn": "10171-8-8",
 "variantPartNumber": "IH-CF71-NPTM-0808",
 "compatibility": "direct",
@@ -18911,7 +18911,25 @@
 },
 {
 "competitorBrand": "Parker",
-"competitorMpn": "10343-10-12",
+"competitorMpn": "10343-10-6",
+"variantPartNumber": "IH-CF43-JICM-0610",
+"compatibility": "direct",
+"source": [
+"stored-variant"
+]
+},
+{
+"competitorBrand": "Parker",
+"competitorMpn": "10343-10-8",
+"variantPartNumber": "IH-CF43-JICM-0810",
+"compatibility": "direct",
+"source": [
+"stored-variant"
+]
+},
+{
+"competitorBrand": "Parker",
+"competitorMpn": "10343-12-10",
 "variantPartNumber": "IH-CF43-JICM-1012",
 "compatibility": "direct",
 "source": [
@@ -18929,7 +18947,16 @@
 },
 {
 "competitorBrand": "Parker",
-"competitorMpn": "10343-12-14",
+"competitorMpn": "10343-12-8",
+"variantPartNumber": "IH-CF43-JICM-0812",
+"compatibility": "direct",
+"source": [
+"stored-variant"
+]
+},
+{
+"competitorBrand": "Parker",
+"competitorMpn": "10343-14-12",
 "variantPartNumber": "IH-CF43-JICM-1214",
 "compatibility": "direct",
 "source": [
@@ -18938,7 +18965,7 @@
 },
 {
 "competitorBrand": "Parker",
-"competitorMpn": "10343-12-16",
+"competitorMpn": "10343-16-12",
 "variantPartNumber": "IH-CF43-JICM-1216",
 "compatibility": "direct",
 "source": [
@@ -18965,7 +18992,7 @@
 },
 {
 "competitorBrand": "Parker",
-"competitorMpn": "10343-20-24",
+"competitorMpn": "10343-24-20",
 "variantPartNumber": "IH-CF43-JICM-2024",
 "compatibility": "direct",
 "source": [
@@ -18983,7 +19010,7 @@
 },
 {
 "competitorBrand": "Parker",
-"competitorMpn": "10343-4-5",
+"competitorMpn": "10343-5-4",
 "variantPartNumber": "IH-CF43-JICM-0405",
 "compatibility": "direct",
 "source": [
@@ -18992,26 +19019,17 @@
 },
 {
 "competitorBrand": "Parker",
-"competitorMpn": "10343-4-6",
-"variantPartNumber": "IH-CF43-JICM-0406",
-"compatibility": "direct",
-"source": [
-"stored-variant"
-]
-},
-{
-"competitorBrand": "Parker",
-"competitorMpn": "10343-6-10",
-"variantPartNumber": "IH-CF43-JICM-0610",
-"compatibility": "direct",
-"source": [
-"stored-variant"
-]
-},
-{
-"competitorBrand": "Parker",
-"competitorMpn": "10343-6-5",
+"competitorMpn": "10343-5-6",
 "variantPartNumber": "IH-CF43-JICM-0605",
+"compatibility": "direct",
+"source": [
+"stored-variant"
+]
+},
+{
+"competitorBrand": "Parker",
+"competitorMpn": "10343-6-4",
+"variantPartNumber": "IH-CF43-JICM-0406",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -19028,26 +19046,8 @@
 },
 {
 "competitorBrand": "Parker",
-"competitorMpn": "10343-6-8",
+"competitorMpn": "10343-8-6",
 "variantPartNumber": "IH-CF43-JICM-0608",
-"compatibility": "direct",
-"source": [
-"stored-variant"
-]
-},
-{
-"competitorBrand": "Parker",
-"competitorMpn": "10343-8-10",
-"variantPartNumber": "IH-CF43-JICM-0810",
-"compatibility": "direct",
-"source": [
-"stored-variant"
-]
-},
-{
-"competitorBrand": "Parker",
-"competitorMpn": "10343-8-12",
-"variantPartNumber": "IH-CF43-JICM-0812",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -19073,7 +19073,25 @@
 },
 {
 "competitorBrand": "Parker",
-"competitorMpn": "10371-10-12",
+"competitorMpn": "10371-10-6",
+"variantPartNumber": "IH-CF71-JICM-0610",
+"compatibility": "direct",
+"source": [
+"stored-variant"
+]
+},
+{
+"competitorBrand": "Parker",
+"competitorMpn": "10371-10-8",
+"variantPartNumber": "IH-CF71-JICM-0810",
+"compatibility": "direct",
+"source": [
+"stored-variant"
+]
+},
+{
+"competitorBrand": "Parker",
+"competitorMpn": "10371-12-10",
 "variantPartNumber": "IH-CF71-JICM-1012",
 "compatibility": "direct",
 "source": [
@@ -19091,7 +19109,16 @@
 },
 {
 "competitorBrand": "Parker",
-"competitorMpn": "10371-12-14",
+"competitorMpn": "10371-12-8",
+"variantPartNumber": "IH-CF71-JICM-0812",
+"compatibility": "direct",
+"source": [
+"stored-variant"
+]
+},
+{
+"competitorBrand": "Parker",
+"competitorMpn": "10371-14-12",
 "variantPartNumber": "IH-CF71-JICM-1214",
 "compatibility": "direct",
 "source": [
@@ -19100,7 +19127,7 @@
 },
 {
 "competitorBrand": "Parker",
-"competitorMpn": "10371-12-16",
+"competitorMpn": "10371-16-12",
 "variantPartNumber": "IH-CF71-JICM-1216",
 "compatibility": "direct",
 "source": [
@@ -19127,17 +19154,8 @@
 },
 {
 "competitorBrand": "Parker",
-"competitorMpn": "10371-20-24",
+"competitorMpn": "10371-24-20",
 "variantPartNumber": "IH-CF71-JICM-2024",
-"compatibility": "direct",
-"source": [
-"stored-variant"
-]
-},
-{
-"competitorBrand": "Parker",
-"competitorMpn": "10371-6-10",
-"variantPartNumber": "IH-CF71-JICM-0610",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -19154,26 +19172,8 @@
 },
 {
 "competitorBrand": "Parker",
-"competitorMpn": "10371-6-8",
+"competitorMpn": "10371-8-6",
 "variantPartNumber": "IH-CF71-JICM-0608",
-"compatibility": "direct",
-"source": [
-"stored-variant"
-]
-},
-{
-"competitorBrand": "Parker",
-"competitorMpn": "10371-8-10",
-"variantPartNumber": "IH-CF71-JICM-0810",
-"compatibility": "direct",
-"source": [
-"stored-variant"
-]
-},
-{
-"competitorBrand": "Parker",
-"competitorMpn": "10371-8-12",
-"variantPartNumber": "IH-CF71-JICM-0812",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -19199,7 +19199,16 @@
 },
 {
 "competitorBrand": "Parker",
-"competitorMpn": "10543-10-12",
+"competitorMpn": "10543-10-8",
+"variantPartNumber": "IH-CF43-ORBM-0810",
+"compatibility": "direct",
+"source": [
+"stored-variant"
+]
+},
+{
+"competitorBrand": "Parker",
+"competitorMpn": "10543-12-10",
 "variantPartNumber": "IH-CF43-ORBM-1012",
 "compatibility": "direct",
 "source": [
@@ -19217,7 +19226,7 @@
 },
 {
 "competitorBrand": "Parker",
-"competitorMpn": "10543-12-14",
+"competitorMpn": "10543-14-12",
 "variantPartNumber": "IH-CF43-ORBM-1214",
 "compatibility": "direct",
 "source": [
@@ -19244,7 +19253,7 @@
 },
 {
 "competitorBrand": "Parker",
-"competitorMpn": "10543-4-6",
+"competitorMpn": "10543-6-4",
 "variantPartNumber": "IH-CF43-ORBM-0406",
 "compatibility": "direct",
 "source": [
@@ -19262,17 +19271,8 @@
 },
 {
 "competitorBrand": "Parker",
-"competitorMpn": "10543-6-8",
+"competitorMpn": "10543-8-6",
 "variantPartNumber": "IH-CF43-ORBM-0608",
-"compatibility": "direct",
-"source": [
-"stored-variant"
-]
-},
-{
-"competitorBrand": "Parker",
-"competitorMpn": "10543-8-10",
-"variantPartNumber": "IH-CF43-ORBM-0810",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -19298,7 +19298,16 @@
 },
 {
 "competitorBrand": "Parker",
-"competitorMpn": "10571-10-12",
+"competitorMpn": "10571-10-8",
+"variantPartNumber": "IH-CF71-ORBM-0810",
+"compatibility": "direct",
+"source": [
+"stored-variant"
+]
+},
+{
+"competitorBrand": "Parker",
+"competitorMpn": "10571-12-10",
 "variantPartNumber": "IH-CF71-ORBM-1012",
 "compatibility": "direct",
 "source": [
@@ -19316,7 +19325,7 @@
 },
 {
 "competitorBrand": "Parker",
-"competitorMpn": "10571-12-14",
+"competitorMpn": "10571-14-12",
 "variantPartNumber": "IH-CF71-ORBM-1214",
 "compatibility": "direct",
 "source": [
@@ -19343,17 +19352,8 @@
 },
 {
 "competitorBrand": "Parker",
-"competitorMpn": "10571-6-8",
+"competitorMpn": "10571-8-6",
 "variantPartNumber": "IH-CF71-ORBM-0608",
-"compatibility": "direct",
-"source": [
-"stored-variant"
-]
-},
-{
-"competitorBrand": "Parker",
-"competitorMpn": "10571-8-10",
-"variantPartNumber": "IH-CF71-ORBM-0810",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -19379,7 +19379,25 @@
 },
 {
 "competitorBrand": "Parker",
-"competitorMpn": "10643-10-12",
+"competitorMpn": "10643-10-6",
+"variantPartNumber": "IH-CF43-JICF-0610",
+"compatibility": "direct",
+"source": [
+"stored-variant"
+]
+},
+{
+"competitorBrand": "Parker",
+"competitorMpn": "10643-10-8",
+"variantPartNumber": "IH-CF43-JICF-0810",
+"compatibility": "direct",
+"source": [
+"stored-variant"
+]
+},
+{
+"competitorBrand": "Parker",
+"competitorMpn": "10643-12-10",
 "variantPartNumber": "IH-CF43-JICF-1012",
 "compatibility": "direct",
 "source": [
@@ -19406,7 +19424,7 @@
 },
 {
 "competitorBrand": "Parker",
-"competitorMpn": "10643-16-20",
+"competitorMpn": "10643-20-16",
 "variantPartNumber": "IH-CF43-JICF-1620",
 "compatibility": "direct",
 "source": [
@@ -19451,17 +19469,8 @@
 },
 {
 "competitorBrand": "Parker",
-"competitorMpn": "10643-4-5",
+"competitorMpn": "10643-5-4",
 "variantPartNumber": "IH-CF43-JICF-0405",
-"compatibility": "direct",
-"source": [
-"stored-variant"
-]
-},
-{
-"competitorBrand": "Parker",
-"competitorMpn": "10643-4-6",
-"variantPartNumber": "IH-CF43-JICF-0406",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -19478,8 +19487,8 @@
 },
 {
 "competitorBrand": "Parker",
-"competitorMpn": "10643-5-6",
-"variantPartNumber": "IH-CF43-JICF-0506",
+"competitorMpn": "10643-6-4",
+"variantPartNumber": "IH-CF43-JICF-0406",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -19487,8 +19496,8 @@
 },
 {
 "competitorBrand": "Parker",
-"competitorMpn": "10643-6-10",
-"variantPartNumber": "IH-CF43-JICF-0610",
+"competitorMpn": "10643-6-5",
+"variantPartNumber": "IH-CF43-JICF-0506",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -19505,17 +19514,8 @@
 },
 {
 "competitorBrand": "Parker",
-"competitorMpn": "10643-6-8",
+"competitorMpn": "10643-8-6",
 "variantPartNumber": "IH-CF43-JICF-0608",
-"compatibility": "direct",
-"source": [
-"stored-variant"
-]
-},
-{
-"competitorBrand": "Parker",
-"competitorMpn": "10643-8-10",
-"variantPartNumber": "IH-CF43-JICF-0810",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -19525,6 +19525,24 @@
 "competitorBrand": "Parker",
 "competitorMpn": "10643-8-8",
 "variantPartNumber": "IH-CF43-JICF-0808",
+"compatibility": "direct",
+"source": [
+"stored-variant"
+]
+},
+{
+"competitorBrand": "Parker",
+"competitorMpn": "10671-10-6",
+"variantPartNumber": "IH-CF71-JICF-0610",
+"compatibility": "direct",
+"source": [
+"stored-variant"
+]
+},
+{
+"competitorBrand": "Parker",
+"competitorMpn": "10671-10-8",
+"variantPartNumber": "IH-CF71-JICF-0810",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -19550,7 +19568,7 @@
 },
 {
 "competitorBrand": "Parker",
-"competitorMpn": "10671-16-20",
+"competitorMpn": "10671-20-16",
 "variantPartNumber": "IH-CF71-JICF-1620",
 "compatibility": "direct",
 "source": [
@@ -19586,15 +19604,6 @@
 },
 {
 "competitorBrand": "Parker",
-"competitorMpn": "10671-6-10",
-"variantPartNumber": "IH-CF71-JICF-0610",
-"compatibility": "direct",
-"source": [
-"stored-variant"
-]
-},
-{
-"competitorBrand": "Parker",
 "competitorMpn": "10671-6-6",
 "variantPartNumber": "IH-CF71-JICF-0606",
 "compatibility": "direct",
@@ -19604,17 +19613,8 @@
 },
 {
 "competitorBrand": "Parker",
-"competitorMpn": "10671-6-8",
+"competitorMpn": "10671-8-6",
 "variantPartNumber": "IH-CF71-JICF-0608",
-"compatibility": "direct",
-"source": [
-"stored-variant"
-]
-},
-{
-"competitorBrand": "Parker",
-"competitorMpn": "10671-8-10",
-"variantPartNumber": "IH-CF71-JICF-0810",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -19740,7 +19740,7 @@
 {
 "competitorBrand": "Parker",
 "competitorMpn": "11343-12-16",
-"variantPartNumber": "IH-CF43-NPTMS-1216",
+"variantPartNumber": "IH-CF43-NPTMS-1612",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -19749,7 +19749,7 @@
 {
 "competitorBrand": "Parker",
 "competitorMpn": "11343-12-8",
-"variantPartNumber": "IH-CF43-NPTMS-1208",
+"variantPartNumber": "IH-CF43-NPTMS-0812",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -19758,7 +19758,7 @@
 {
 "competitorBrand": "Parker",
 "competitorMpn": "11343-16-12",
-"variantPartNumber": "IH-CF43-NPTMS-1612",
+"variantPartNumber": "IH-CF43-NPTMS-1216",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -19785,7 +19785,7 @@
 {
 "competitorBrand": "Parker",
 "competitorMpn": "11343-4-6",
-"variantPartNumber": "IH-CF43-NPTMS-0406",
+"variantPartNumber": "IH-CF43-NPTMS-0604",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -19794,7 +19794,7 @@
 {
 "competitorBrand": "Parker",
 "competitorMpn": "11343-6-4",
-"variantPartNumber": "IH-CF43-NPTMS-0604",
+"variantPartNumber": "IH-CF43-NPTMS-0406",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -19812,7 +19812,7 @@
 {
 "competitorBrand": "Parker",
 "competitorMpn": "11343-6-8",
-"variantPartNumber": "IH-CF43-NPTMS-0608",
+"variantPartNumber": "IH-CF43-NPTMS-0806",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -19821,7 +19821,7 @@
 {
 "competitorBrand": "Parker",
 "competitorMpn": "11343-8-12",
-"variantPartNumber": "IH-CF43-NPTMS-0812",
+"variantPartNumber": "IH-CF43-NPTMS-1208",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -19830,7 +19830,7 @@
 {
 "competitorBrand": "Parker",
 "competitorMpn": "11343-8-6",
-"variantPartNumber": "IH-CF43-NPTMS-0806",
+"variantPartNumber": "IH-CF43-NPTMS-0608",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -19857,7 +19857,7 @@
 {
 "competitorBrand": "Parker",
 "competitorMpn": "11371-12-16",
-"variantPartNumber": "IH-CF71-NPTMS-1216",
+"variantPartNumber": "IH-CF71-NPTMS-1612",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -19866,7 +19866,7 @@
 {
 "competitorBrand": "Parker",
 "competitorMpn": "11371-12-8",
-"variantPartNumber": "IH-CF71-NPTMS-1208",
+"variantPartNumber": "IH-CF71-NPTMS-0812",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -19875,7 +19875,7 @@
 {
 "competitorBrand": "Parker",
 "competitorMpn": "11371-16-12",
-"variantPartNumber": "IH-CF71-NPTMS-1612",
+"variantPartNumber": "IH-CF71-NPTMS-1216",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -19902,7 +19902,7 @@
 {
 "competitorBrand": "Parker",
 "competitorMpn": "11371-6-8",
-"variantPartNumber": "IH-CF71-NPTMS-0608",
+"variantPartNumber": "IH-CF71-NPTMS-0806",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -19911,7 +19911,7 @@
 {
 "competitorBrand": "Parker",
 "competitorMpn": "11371-8-12",
-"variantPartNumber": "IH-CF71-NPTMS-0812",
+"variantPartNumber": "IH-CF71-NPTMS-1208",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -19920,7 +19920,7 @@
 {
 "competitorBrand": "Parker",
 "competitorMpn": "11371-8-6",
-"variantPartNumber": "IH-CF71-NPTMS-0806",
+"variantPartNumber": "IH-CF71-NPTMS-0608",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -19946,7 +19946,16 @@
 },
 {
 "competitorBrand": "Parker",
-"competitorMpn": "11543-12-16",
+"competitorMpn": "11543-12-8",
+"variantPartNumber": "IH-CF43-C61-0812",
+"compatibility": "direct",
+"source": [
+"stored-variant"
+]
+},
+{
+"competitorBrand": "Parker",
+"competitorMpn": "11543-16-12",
 "variantPartNumber": "IH-CF43-C61-1216",
 "compatibility": "direct",
 "source": [
@@ -19964,7 +19973,7 @@
 },
 {
 "competitorBrand": "Parker",
-"competitorMpn": "11543-16-20",
+"competitorMpn": "11543-20-16",
 "variantPartNumber": "IH-CF43-C61-1620",
 "compatibility": "direct",
 "source": [
@@ -19982,7 +19991,7 @@
 },
 {
 "competitorBrand": "Parker",
-"competitorMpn": "11543-20-24",
+"competitorMpn": "11543-24-20",
 "variantPartNumber": "IH-CF43-C61-2024",
 "compatibility": "direct",
 "source": [
@@ -20000,7 +20009,7 @@
 },
 {
 "competitorBrand": "Parker",
-"competitorMpn": "11543-24-32",
+"competitorMpn": "11543-32-24",
 "variantPartNumber": "IH-CF43-C61-2432",
 "compatibility": "direct",
 "source": [
@@ -20011,15 +20020,6 @@
 "competitorBrand": "Parker",
 "competitorMpn": "11543-32-32",
 "variantPartNumber": "IH-CF43-C61-3232",
-"compatibility": "direct",
-"source": [
-"stored-variant"
-]
-},
-{
-"competitorBrand": "Parker",
-"competitorMpn": "11543-8-12",
-"variantPartNumber": "IH-CF43-C61-0812",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -20045,7 +20045,7 @@
 },
 {
 "competitorBrand": "Parker",
-"competitorMpn": "11571-12-16",
+"competitorMpn": "11571-16-12",
 "variantPartNumber": "IH-CF71-C61-1216",
 "compatibility": "direct",
 "source": [
@@ -20063,7 +20063,7 @@
 },
 {
 "competitorBrand": "Parker",
-"competitorMpn": "11571-16-20",
+"competitorMpn": "11571-20-16",
 "variantPartNumber": "IH-CF71-C61-1620",
 "compatibility": "direct",
 "source": [
@@ -20081,7 +20081,7 @@
 },
 {
 "competitorBrand": "Parker",
-"competitorMpn": "11571-20-24",
+"competitorMpn": "11571-24-20",
 "variantPartNumber": "IH-CF71-C61-2024",
 "compatibility": "direct",
 "source": [
@@ -20099,7 +20099,7 @@
 },
 {
 "competitorBrand": "Parker",
-"competitorMpn": "11571-24-32",
+"competitorMpn": "11571-32-24",
 "variantPartNumber": "IH-CF71-C61-2432",
 "compatibility": "direct",
 "source": [
@@ -20126,7 +20126,16 @@
 },
 {
 "competitorBrand": "Parker",
-"competitorMpn": "11743-12-16",
+"competitorMpn": "11743-12-8",
+"variantPartNumber": "IH-CF43-C61-45-0812",
+"compatibility": "direct",
+"source": [
+"stored-variant"
+]
+},
+{
+"competitorBrand": "Parker",
+"competitorMpn": "11743-16-12",
 "variantPartNumber": "IH-CF43-C61-45-1216",
 "compatibility": "direct",
 "source": [
@@ -20144,7 +20153,7 @@
 },
 {
 "competitorBrand": "Parker",
-"competitorMpn": "11743-16-20",
+"competitorMpn": "11743-20-16",
 "variantPartNumber": "IH-CF43-C61-45-1620",
 "compatibility": "direct",
 "source": [
@@ -20162,7 +20171,7 @@
 },
 {
 "competitorBrand": "Parker",
-"competitorMpn": "11743-20-24",
+"competitorMpn": "11743-24-20",
 "variantPartNumber": "IH-CF43-C61-45-2024",
 "compatibility": "direct",
 "source": [
@@ -20180,7 +20189,7 @@
 },
 {
 "competitorBrand": "Parker",
-"competitorMpn": "11743-24-32",
+"competitorMpn": "11743-32-24",
 "variantPartNumber": "IH-CF43-C61-45-2432",
 "compatibility": "direct",
 "source": [
@@ -20191,15 +20200,6 @@
 "competitorBrand": "Parker",
 "competitorMpn": "11743-32-32",
 "variantPartNumber": "IH-CF43-C61-45-3232",
-"compatibility": "direct",
-"source": [
-"stored-variant"
-]
-},
-{
-"competitorBrand": "Parker",
-"competitorMpn": "11743-8-12",
-"variantPartNumber": "IH-CF43-C61-45-0812",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -20225,7 +20225,16 @@
 },
 {
 "competitorBrand": "Parker",
-"competitorMpn": "11771-12-16",
+"competitorMpn": "11771-12-8",
+"variantPartNumber": "IH-CF71-C61-45-0812",
+"compatibility": "direct",
+"source": [
+"stored-variant"
+]
+},
+{
+"competitorBrand": "Parker",
+"competitorMpn": "11771-16-12",
 "variantPartNumber": "IH-CF71-C61-45-1216",
 "compatibility": "direct",
 "source": [
@@ -20243,7 +20252,7 @@
 },
 {
 "competitorBrand": "Parker",
-"competitorMpn": "11771-16-20",
+"competitorMpn": "11771-20-16",
 "variantPartNumber": "IH-CF71-C61-45-1620",
 "compatibility": "direct",
 "source": [
@@ -20261,7 +20270,7 @@
 },
 {
 "competitorBrand": "Parker",
-"competitorMpn": "11771-20-24",
+"competitorMpn": "11771-24-20",
 "variantPartNumber": "IH-CF71-C61-45-2024",
 "compatibility": "direct",
 "source": [
@@ -20279,7 +20288,7 @@
 },
 {
 "competitorBrand": "Parker",
-"competitorMpn": "11771-24-32",
+"competitorMpn": "11771-32-24",
 "variantPartNumber": "IH-CF71-C61-45-2432",
 "compatibility": "direct",
 "source": [
@@ -20290,15 +20299,6 @@
 "competitorBrand": "Parker",
 "competitorMpn": "11771-32-32",
 "variantPartNumber": "IH-CF71-C61-45-3232",
-"compatibility": "direct",
-"source": [
-"stored-variant"
-]
-},
-{
-"competitorBrand": "Parker",
-"competitorMpn": "11771-8-12",
-"variantPartNumber": "IH-CF71-C61-45-0812",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -20324,7 +20324,16 @@
 },
 {
 "competitorBrand": "Parker",
-"competitorMpn": "11943-12-16",
+"competitorMpn": "11943-12-8",
+"variantPartNumber": "IH-CF43-C61-90-0812",
+"compatibility": "direct",
+"source": [
+"stored-variant"
+]
+},
+{
+"competitorBrand": "Parker",
+"competitorMpn": "11943-16-12",
 "variantPartNumber": "IH-CF43-C61-90-1216",
 "compatibility": "direct",
 "source": [
@@ -20342,7 +20351,7 @@
 },
 {
 "competitorBrand": "Parker",
-"competitorMpn": "11943-16-20",
+"competitorMpn": "11943-20-16",
 "variantPartNumber": "IH-CF43-C61-90-1620",
 "compatibility": "direct",
 "source": [
@@ -20360,7 +20369,7 @@
 },
 {
 "competitorBrand": "Parker",
-"competitorMpn": "11943-20-24",
+"competitorMpn": "11943-24-20",
 "variantPartNumber": "IH-CF43-C61-90-2024",
 "compatibility": "direct",
 "source": [
@@ -20387,15 +20396,6 @@
 },
 {
 "competitorBrand": "Parker",
-"competitorMpn": "11943-8-12",
-"variantPartNumber": "IH-CF43-C61-90-0812",
-"compatibility": "direct",
-"source": [
-"stored-variant"
-]
-},
-{
-"competitorBrand": "Parker",
 "competitorMpn": "11943-8-8",
 "variantPartNumber": "IH-CF43-C61-90-0808",
 "compatibility": "direct",
@@ -20414,7 +20414,16 @@
 },
 {
 "competitorBrand": "Parker",
-"competitorMpn": "11971-12-16",
+"competitorMpn": "11971-12-8",
+"variantPartNumber": "IH-CF71-C61-90-0812",
+"compatibility": "direct",
+"source": [
+"stored-variant"
+]
+},
+{
+"competitorBrand": "Parker",
+"competitorMpn": "11971-16-12",
 "variantPartNumber": "IH-CF71-C61-90-1216",
 "compatibility": "direct",
 "source": [
@@ -20432,7 +20441,7 @@
 },
 {
 "competitorBrand": "Parker",
-"competitorMpn": "11971-16-20",
+"competitorMpn": "11971-20-16",
 "variantPartNumber": "IH-CF71-C61-90-1620",
 "compatibility": "direct",
 "source": [
@@ -20450,7 +20459,7 @@
 },
 {
 "competitorBrand": "Parker",
-"competitorMpn": "11971-20-24",
+"competitorMpn": "11971-24-20",
 "variantPartNumber": "IH-CF71-C61-90-2024",
 "compatibility": "direct",
 "source": [
@@ -20468,7 +20477,7 @@
 },
 {
 "competitorBrand": "Parker",
-"competitorMpn": "11971-24-32",
+"competitorMpn": "11971-32-24",
 "variantPartNumber": "IH-CF71-C61-90-2432",
 "compatibility": "direct",
 "source": [
@@ -20479,15 +20488,6 @@
 "competitorBrand": "Parker",
 "competitorMpn": "11971-32-32",
 "variantPartNumber": "IH-CF71-C61-90-3232",
-"compatibility": "direct",
-"source": [
-"stored-variant"
-]
-},
-{
-"competitorBrand": "Parker",
-"competitorMpn": "11971-8-12",
-"variantPartNumber": "IH-CF71-C61-90-0812",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -21593,7 +21593,16 @@
 },
 {
 "competitorBrand": "Parker",
-"competitorMpn": "13743-10-12",
+"competitorMpn": "13743-10-8",
+"variantPartNumber": "IH-CF43-JICF-45-0810",
+"compatibility": "direct",
+"source": [
+"stored-variant"
+]
+},
+{
+"competitorBrand": "Parker",
+"competitorMpn": "13743-12-10",
 "variantPartNumber": "IH-CF43-JICF-45-1012",
 "compatibility": "direct",
 "source": [
@@ -21656,7 +21665,7 @@
 },
 {
 "competitorBrand": "Parker",
-"competitorMpn": "13743-4-5",
+"competitorMpn": "13743-5-4",
 "variantPartNumber": "IH-CF43-JICF-45-0405",
 "compatibility": "direct",
 "source": [
@@ -21665,7 +21674,7 @@
 },
 {
 "competitorBrand": "Parker",
-"competitorMpn": "13743-4-6",
+"competitorMpn": "13743-6-4",
 "variantPartNumber": "IH-CF43-JICF-45-0406",
 "compatibility": "direct",
 "source": [
@@ -21683,17 +21692,8 @@
 },
 {
 "competitorBrand": "Parker",
-"competitorMpn": "13743-6-8",
+"competitorMpn": "13743-8-6",
 "variantPartNumber": "IH-CF43-JICF-45-0608",
-"compatibility": "direct",
-"source": [
-"stored-variant"
-]
-},
-{
-"competitorBrand": "Parker",
-"competitorMpn": "13743-8-10",
-"variantPartNumber": "IH-CF43-JICF-45-0810",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -21703,6 +21703,15 @@
 "competitorBrand": "Parker",
 "competitorMpn": "13743-8-8",
 "variantPartNumber": "IH-CF43-JICF-45-0808",
+"compatibility": "direct",
+"source": [
+"stored-variant"
+]
+},
+{
+"competitorBrand": "Parker",
+"competitorMpn": "13771-10-8",
+"variantPartNumber": "IH-CF71-JICF-45-0810",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -21764,17 +21773,8 @@
 },
 {
 "competitorBrand": "Parker",
-"competitorMpn": "13771-6-8",
+"competitorMpn": "13771-8-6",
 "variantPartNumber": "IH-CF71-JICF-45-0608",
-"compatibility": "direct",
-"source": [
-"stored-variant"
-]
-},
-{
-"competitorBrand": "Parker",
-"competitorMpn": "13771-8-10",
-"variantPartNumber": "IH-CF71-JICF-45-0810",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -21800,7 +21800,16 @@
 },
 {
 "competitorBrand": "Parker",
-"competitorMpn": "13943-10-12",
+"competitorMpn": "13943-10-8",
+"variantPartNumber": "IH-CF43-JICF-90-0810",
+"compatibility": "direct",
+"source": [
+"stored-variant"
+]
+},
+{
+"competitorBrand": "Parker",
+"competitorMpn": "13943-12-10",
 "variantPartNumber": "IH-CF43-JICF-90-1012",
 "compatibility": "direct",
 "source": [
@@ -21811,6 +21820,15 @@
 "competitorBrand": "Parker",
 "competitorMpn": "13943-12-12",
 "variantPartNumber": "IH-CF43-JICF-90-1212",
+"compatibility": "direct",
+"source": [
+"stored-variant"
+]
+},
+{
+"competitorBrand": "Parker",
+"competitorMpn": "13943-12-8",
+"variantPartNumber": "IH-CF43-JICF-90-0812",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -21863,8 +21881,8 @@
 },
 {
 "competitorBrand": "Parker",
-"competitorMpn": "13943-4-5",
-"variantPartNumber": "IH-CF43-JICF-90-0405",
+"competitorMpn": "13943-4-6",
+"variantPartNumber": "IH-CF43-JICF-90-0604",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -21872,8 +21890,8 @@
 },
 {
 "competitorBrand": "Parker",
-"competitorMpn": "13943-4-6",
-"variantPartNumber": "IH-CF43-JICF-90-0406",
+"competitorMpn": "13943-5-4",
+"variantPartNumber": "IH-CF43-JICF-90-0405",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -21891,7 +21909,7 @@
 {
 "competitorBrand": "Parker",
 "competitorMpn": "13943-6-4",
-"variantPartNumber": "IH-CF43-JICF-90-0604",
+"variantPartNumber": "IH-CF43-JICF-90-0406",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -21909,25 +21927,7 @@
 {
 "competitorBrand": "Parker",
 "competitorMpn": "13943-6-8",
-"variantPartNumber": "IH-CF43-JICF-90-0608",
-"compatibility": "direct",
-"source": [
-"stored-variant"
-]
-},
-{
-"competitorBrand": "Parker",
-"competitorMpn": "13943-8-10",
-"variantPartNumber": "IH-CF43-JICF-90-0810",
-"compatibility": "direct",
-"source": [
-"stored-variant"
-]
-},
-{
-"competitorBrand": "Parker",
-"competitorMpn": "13943-8-12",
-"variantPartNumber": "IH-CF43-JICF-90-0812",
+"variantPartNumber": "IH-CF43-JICF-90-0806",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -21936,7 +21936,7 @@
 {
 "competitorBrand": "Parker",
 "competitorMpn": "13943-8-6",
-"variantPartNumber": "IH-CF43-JICF-90-0806",
+"variantPartNumber": "IH-CF43-JICF-90-0608",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -21953,8 +21953,26 @@
 },
 {
 "competitorBrand": "Parker",
+"competitorMpn": "13971-10-8",
+"variantPartNumber": "IH-CF71-JICF-90-0810",
+"compatibility": "direct",
+"source": [
+"stored-variant"
+]
+},
+{
+"competitorBrand": "Parker",
 "competitorMpn": "13971-12-12",
 "variantPartNumber": "IH-CF71-JICF-90-1212",
+"compatibility": "direct",
+"source": [
+"stored-variant"
+]
+},
+{
+"competitorBrand": "Parker",
+"competitorMpn": "13971-12-8",
+"variantPartNumber": "IH-CF71-JICF-90-0812",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -22007,26 +22025,8 @@
 },
 {
 "competitorBrand": "Parker",
-"competitorMpn": "13971-6-8",
+"competitorMpn": "13971-8-6",
 "variantPartNumber": "IH-CF71-JICF-90-0608",
-"compatibility": "direct",
-"source": [
-"stored-variant"
-]
-},
-{
-"competitorBrand": "Parker",
-"competitorMpn": "13971-8-10",
-"variantPartNumber": "IH-CF71-JICF-90-0810",
-"compatibility": "direct",
-"source": [
-"stored-variant"
-]
-},
-{
-"competitorBrand": "Parker",
-"competitorMpn": "13971-8-12",
-"variantPartNumber": "IH-CF71-JICF-90-0812",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -22142,6 +22142,15 @@
 },
 {
 "competitorBrand": "Parker",
+"competitorMpn": "14143-10-8",
+"variantPartNumber": "IH-CF43-JICF-90L-0810",
+"compatibility": "direct",
+"source": [
+"stored-variant"
+]
+},
+{
+"competitorBrand": "Parker",
 "competitorMpn": "14143-12-12",
 "variantPartNumber": "IH-CF43-JICF-90L-1212",
 "compatibility": "direct",
@@ -22178,7 +22187,7 @@
 },
 {
 "competitorBrand": "Parker",
-"competitorMpn": "14143-4-5",
+"competitorMpn": "14143-5-4",
 "variantPartNumber": "IH-CF43-JICF-90L-0405",
 "compatibility": "direct",
 "source": [
@@ -22196,17 +22205,8 @@
 },
 {
 "competitorBrand": "Parker",
-"competitorMpn": "14143-6-8",
+"competitorMpn": "14143-8-6",
 "variantPartNumber": "IH-CF43-JICF-90L-0608",
-"compatibility": "direct",
-"source": [
-"stored-variant"
-]
-},
-{
-"competitorBrand": "Parker",
-"competitorMpn": "14143-8-10",
-"variantPartNumber": "IH-CF43-JICF-90L-0810",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -22216,6 +22216,15 @@
 "competitorBrand": "Parker",
 "competitorMpn": "14143-8-8",
 "variantPartNumber": "IH-CF43-JICF-90L-0808",
+"compatibility": "direct",
+"source": [
+"stored-variant"
+]
+},
+{
+"competitorBrand": "Parker",
+"competitorMpn": "14171-10-8",
+"variantPartNumber": "IH-CF71-JICF-90L-0810",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -22250,17 +22259,8 @@
 },
 {
 "competitorBrand": "Parker",
-"competitorMpn": "14171-6-8",
+"competitorMpn": "14171-8-6",
 "variantPartNumber": "IH-CF71-JICF-90L-0608",
-"compatibility": "direct",
-"source": [
-"stored-variant"
-]
-},
-{
-"competitorBrand": "Parker",
-"competitorMpn": "14171-8-10",
-"variantPartNumber": "IH-CF71-JICF-90L-0810",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -23276,7 +23276,7 @@
 },
 {
 "competitorBrand": "Parker",
-"competitorMpn": "16A43-12-16",
+"competitorMpn": "16A43-16-12",
 "variantPartNumber": "IH-CF43-C62-1216",
 "compatibility": "direct",
 "source": [
@@ -23294,7 +23294,7 @@
 },
 {
 "competitorBrand": "Parker",
-"competitorMpn": "16A43-16-20",
+"competitorMpn": "16A43-20-16",
 "variantPartNumber": "IH-CF43-C62-1620",
 "compatibility": "direct",
 "source": [
@@ -23312,7 +23312,7 @@
 },
 {
 "competitorBrand": "Parker",
-"competitorMpn": "16A43-20-24",
+"competitorMpn": "16A43-24-20",
 "variantPartNumber": "IH-CF43-C62-2024",
 "compatibility": "direct",
 "source": [
@@ -23330,7 +23330,7 @@
 },
 {
 "competitorBrand": "Parker",
-"competitorMpn": "16A43-24-32",
+"competitorMpn": "16A43-32-24",
 "variantPartNumber": "IH-CF43-C62-2432",
 "compatibility": "direct",
 "source": [
@@ -23357,7 +23357,7 @@
 },
 {
 "competitorBrand": "Parker",
-"competitorMpn": "16A71-12-16",
+"competitorMpn": "16A71-16-12",
 "variantPartNumber": "IH-CF71-C62-1216",
 "compatibility": "direct",
 "source": [
@@ -23375,7 +23375,7 @@
 },
 {
 "competitorBrand": "Parker",
-"competitorMpn": "16A71-16-20",
+"competitorMpn": "16A71-20-16",
 "variantPartNumber": "IH-CF71-C62-1620",
 "compatibility": "direct",
 "source": [
@@ -23393,7 +23393,7 @@
 },
 {
 "competitorBrand": "Parker",
-"competitorMpn": "16A71-20-24",
+"competitorMpn": "16A71-24-20",
 "variantPartNumber": "IH-CF71-C62-2024",
 "compatibility": "direct",
 "source": [
@@ -23411,7 +23411,7 @@
 },
 {
 "competitorBrand": "Parker",
-"competitorMpn": "16A71-24-32",
+"competitorMpn": "16A71-32-24",
 "variantPartNumber": "IH-CF71-C62-2432",
 "compatibility": "direct",
 "source": [
@@ -24015,7 +24015,7 @@
 {
 "competitorBrand": "Parker",
 "competitorMpn": "1J543-10-12",
-"variantPartNumber": "IH-CF43-ORFSF-90-1012",
+"variantPartNumber": "IH-CF43-ORFSF-90-1210",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -24024,7 +24024,7 @@
 {
 "competitorBrand": "Parker",
 "competitorMpn": "1J543-10-8",
-"variantPartNumber": "IH-CF43-ORFSF-90-1008",
+"variantPartNumber": "IH-CF43-ORFSF-90-0810",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -24033,7 +24033,7 @@
 {
 "competitorBrand": "Parker",
 "competitorMpn": "1J543-12-10",
-"variantPartNumber": "IH-CF43-ORFSF-90-1210",
+"variantPartNumber": "IH-CF43-ORFSF-90-1012",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -24051,7 +24051,16 @@
 {
 "competitorBrand": "Parker",
 "competitorMpn": "1J543-12-16",
-"variantPartNumber": "IH-CF43-ORFSF-90-1216",
+"variantPartNumber": "IH-CF43-ORFSF-90-1612",
+"compatibility": "direct",
+"source": [
+"stored-variant"
+]
+},
+{
+"competitorBrand": "Parker",
+"competitorMpn": "1J543-12-8",
+"variantPartNumber": "IH-CF43-ORFSF-90-0812",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -24060,7 +24069,7 @@
 {
 "competitorBrand": "Parker",
 "competitorMpn": "1J543-16-12",
-"variantPartNumber": "IH-CF43-ORFSF-90-1612",
+"variantPartNumber": "IH-CF43-ORFSF-90-1216",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -24078,7 +24087,7 @@
 {
 "competitorBrand": "Parker",
 "competitorMpn": "1J543-16-20",
-"variantPartNumber": "IH-CF43-ORFSF-90-1620",
+"variantPartNumber": "IH-CF43-ORFSF-90-2016",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -24087,7 +24096,7 @@
 {
 "competitorBrand": "Parker",
 "competitorMpn": "1J543-20-16",
-"variantPartNumber": "IH-CF43-ORFSF-90-2016",
+"variantPartNumber": "IH-CF43-ORFSF-90-1620",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -24104,7 +24113,7 @@
 },
 {
 "competitorBrand": "Parker",
-"competitorMpn": "1J543-20-24",
+"competitorMpn": "1J543-24-20",
 "variantPartNumber": "IH-CF43-ORFSF-90-2024",
 "compatibility": "direct",
 "source": [
@@ -24132,16 +24141,7 @@
 {
 "competitorBrand": "Parker",
 "competitorMpn": "1J543-4-6",
-"variantPartNumber": "IH-CF43-ORFSF-90-0406",
-"compatibility": "direct",
-"source": [
-"stored-variant"
-]
-},
-{
-"competitorBrand": "Parker",
-"competitorMpn": "1J543-4-8",
-"variantPartNumber": "IH-CF43-ORFSF-90-0408",
+"variantPartNumber": "IH-CF43-ORFSF-90-0604",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -24150,7 +24150,7 @@
 {
 "competitorBrand": "Parker",
 "competitorMpn": "1J543-6-4",
-"variantPartNumber": "IH-CF43-ORFSF-90-0604",
+"variantPartNumber": "IH-CF43-ORFSF-90-0406",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -24168,7 +24168,7 @@
 {
 "competitorBrand": "Parker",
 "competitorMpn": "1J543-6-8",
-"variantPartNumber": "IH-CF43-ORFSF-90-0608",
+"variantPartNumber": "IH-CF43-ORFSF-90-0806",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -24177,7 +24177,7 @@
 {
 "competitorBrand": "Parker",
 "competitorMpn": "1J543-8-10",
-"variantPartNumber": "IH-CF43-ORFSF-90-0810",
+"variantPartNumber": "IH-CF43-ORFSF-90-1008",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -24185,8 +24185,8 @@
 },
 {
 "competitorBrand": "Parker",
-"competitorMpn": "1J543-8-12",
-"variantPartNumber": "IH-CF43-ORFSF-90-0812",
+"competitorMpn": "1J543-8-4",
+"variantPartNumber": "IH-CF43-ORFSF-90-0408",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -24195,7 +24195,7 @@
 {
 "competitorBrand": "Parker",
 "competitorMpn": "1J543-8-6",
-"variantPartNumber": "IH-CF43-ORFSF-90-0806",
+"variantPartNumber": "IH-CF43-ORFSF-90-0608",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -24212,7 +24212,7 @@
 },
 {
 "competitorBrand": "Parker",
-"competitorMpn": "1J571-12-10",
+"competitorMpn": "1J571-10-12",
 "variantPartNumber": "IH-CF71-ORFSF-90-1210",
 "compatibility": "direct",
 "source": [
@@ -24240,7 +24240,7 @@
 {
 "competitorBrand": "Parker",
 "competitorMpn": "1J571-16-20",
-"variantPartNumber": "IH-CF71-ORFSF-90-1620",
+"variantPartNumber": "IH-CF71-ORFSF-90-2016",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -24249,7 +24249,7 @@
 {
 "competitorBrand": "Parker",
 "competitorMpn": "1J571-20-16",
-"variantPartNumber": "IH-CF71-ORFSF-90-2016",
+"variantPartNumber": "IH-CF71-ORFSF-90-1620",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -24266,7 +24266,7 @@
 },
 {
 "competitorBrand": "Parker",
-"competitorMpn": "1J571-20-24",
+"competitorMpn": "1J571-24-20",
 "variantPartNumber": "IH-CF71-ORFSF-90-2024",
 "compatibility": "direct",
 "source": [
@@ -24294,7 +24294,7 @@
 {
 "competitorBrand": "Parker",
 "competitorMpn": "1J571-6-8",
-"variantPartNumber": "IH-CF71-ORFSF-90-0608",
+"variantPartNumber": "IH-CF71-ORFSF-90-0806",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -24303,7 +24303,7 @@
 {
 "competitorBrand": "Parker",
 "competitorMpn": "1J571-8-6",
-"variantPartNumber": "IH-CF71-ORFSF-90-0806",
+"variantPartNumber": "IH-CF71-ORFSF-90-0608",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -24330,7 +24330,7 @@
 {
 "competitorBrand": "Parker",
 "competitorMpn": "1J743-10-12",
-"variantPartNumber": "IH-CF43-ORFSF-45-1012",
+"variantPartNumber": "IH-CF43-ORFSF-45-1210",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -24339,7 +24339,7 @@
 {
 "competitorBrand": "Parker",
 "competitorMpn": "1J743-10-8",
-"variantPartNumber": "IH-CF43-ORFSF-45-1008",
+"variantPartNumber": "IH-CF43-ORFSF-45-0810",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -24348,7 +24348,7 @@
 {
 "competitorBrand": "Parker",
 "competitorMpn": "1J743-12-10",
-"variantPartNumber": "IH-CF43-ORFSF-45-1210",
+"variantPartNumber": "IH-CF43-ORFSF-45-1012",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -24366,7 +24366,16 @@
 {
 "competitorBrand": "Parker",
 "competitorMpn": "1J743-12-16",
-"variantPartNumber": "IH-CF43-ORFSF-45-1216",
+"variantPartNumber": "IH-CF43-ORFSF-45-1612",
+"compatibility": "direct",
+"source": [
+"stored-variant"
+]
+},
+{
+"competitorBrand": "Parker",
+"competitorMpn": "1J743-12-8",
+"variantPartNumber": "IH-CF43-ORFSF-45-0812",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -24375,7 +24384,7 @@
 {
 "competitorBrand": "Parker",
 "competitorMpn": "1J743-16-12",
-"variantPartNumber": "IH-CF43-ORFSF-45-1612",
+"variantPartNumber": "IH-CF43-ORFSF-45-1216",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -24393,7 +24402,7 @@
 {
 "competitorBrand": "Parker",
 "competitorMpn": "1J743-16-20",
-"variantPartNumber": "IH-CF43-ORFSF-45-1620",
+"variantPartNumber": "IH-CF43-ORFSF-45-2016",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -24402,7 +24411,7 @@
 {
 "competitorBrand": "Parker",
 "competitorMpn": "1J743-20-16",
-"variantPartNumber": "IH-CF43-ORFSF-45-2016",
+"variantPartNumber": "IH-CF43-ORFSF-45-1620",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -24419,7 +24428,7 @@
 },
 {
 "competitorBrand": "Parker",
-"competitorMpn": "1J743-20-24",
+"competitorMpn": "1J743-24-20",
 "variantPartNumber": "IH-CF43-ORFSF-45-2024",
 "compatibility": "direct",
 "source": [
@@ -24447,16 +24456,7 @@
 {
 "competitorBrand": "Parker",
 "competitorMpn": "1J743-4-6",
-"variantPartNumber": "IH-CF43-ORFSF-45-0406",
-"compatibility": "direct",
-"source": [
-"stored-variant"
-]
-},
-{
-"competitorBrand": "Parker",
-"competitorMpn": "1J743-4-8",
-"variantPartNumber": "IH-CF43-ORFSF-45-0408",
+"variantPartNumber": "IH-CF43-ORFSF-45-0604",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -24465,7 +24465,7 @@
 {
 "competitorBrand": "Parker",
 "competitorMpn": "1J743-6-4",
-"variantPartNumber": "IH-CF43-ORFSF-45-0604",
+"variantPartNumber": "IH-CF43-ORFSF-45-0406",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -24483,7 +24483,7 @@
 {
 "competitorBrand": "Parker",
 "competitorMpn": "1J743-8-10",
-"variantPartNumber": "IH-CF43-ORFSF-45-0810",
+"variantPartNumber": "IH-CF43-ORFSF-45-1008",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -24491,8 +24491,8 @@
 },
 {
 "competitorBrand": "Parker",
-"competitorMpn": "1J743-8-12",
-"variantPartNumber": "IH-CF43-ORFSF-45-0812",
+"competitorMpn": "1J743-8-4",
+"variantPartNumber": "IH-CF43-ORFSF-45-0408",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -24509,7 +24509,7 @@
 },
 {
 "competitorBrand": "Parker",
-"competitorMpn": "1J771-12-10",
+"competitorMpn": "1J771-10-12",
 "variantPartNumber": "IH-CF71-ORFSF-45-1210",
 "compatibility": "direct",
 "source": [
@@ -24527,7 +24527,7 @@
 },
 {
 "competitorBrand": "Parker",
-"competitorMpn": "1J771-12-16",
+"competitorMpn": "1J771-16-12",
 "variantPartNumber": "IH-CF71-ORFSF-45-1216",
 "compatibility": "direct",
 "source": [
@@ -24546,7 +24546,7 @@
 {
 "competitorBrand": "Parker",
 "competitorMpn": "1J771-16-20",
-"variantPartNumber": "IH-CF71-ORFSF-45-1620",
+"variantPartNumber": "IH-CF71-ORFSF-45-2016",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -24555,7 +24555,7 @@
 {
 "competitorBrand": "Parker",
 "competitorMpn": "1J771-20-16",
-"variantPartNumber": "IH-CF71-ORFSF-45-2016",
+"variantPartNumber": "IH-CF71-ORFSF-45-1620",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -24572,7 +24572,7 @@
 },
 {
 "competitorBrand": "Parker",
-"competitorMpn": "1J771-20-24",
+"competitorMpn": "1J771-24-20",
 "variantPartNumber": "IH-CF71-ORFSF-45-2024",
 "compatibility": "direct",
 "source": [
@@ -24600,7 +24600,7 @@
 {
 "competitorBrand": "Parker",
 "competitorMpn": "1J771-6-8",
-"variantPartNumber": "IH-CF71-ORFSF-45-0608",
+"variantPartNumber": "IH-CF71-ORFSF-45-0806",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -24609,7 +24609,7 @@
 {
 "competitorBrand": "Parker",
 "competitorMpn": "1J771-8-6",
-"variantPartNumber": "IH-CF71-ORFSF-45-0806",
+"variantPartNumber": "IH-CF71-ORFSF-45-0608",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -24636,7 +24636,16 @@
 {
 "competitorBrand": "Parker",
 "competitorMpn": "1JC43-10-12",
-"variantPartNumber": "IH-CF43-ORFSF-1012",
+"variantPartNumber": "IH-CF43-ORFSF-1210",
+"compatibility": "direct",
+"source": [
+"stored-variant"
+]
+},
+{
+"competitorBrand": "Parker",
+"competitorMpn": "1JC43-10-6",
+"variantPartNumber": "IH-CF43-ORFSF-0610",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -24645,7 +24654,7 @@
 {
 "competitorBrand": "Parker",
 "competitorMpn": "1JC43-10-8",
-"variantPartNumber": "IH-CF43-ORFSF-1008",
+"variantPartNumber": "IH-CF43-ORFSF-0810",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -24654,7 +24663,7 @@
 {
 "competitorBrand": "Parker",
 "competitorMpn": "1JC43-12-10",
-"variantPartNumber": "IH-CF43-ORFSF-1210",
+"variantPartNumber": "IH-CF43-ORFSF-1012",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -24672,7 +24681,16 @@
 {
 "competitorBrand": "Parker",
 "competitorMpn": "1JC43-12-16",
-"variantPartNumber": "IH-CF43-ORFSF-1216",
+"variantPartNumber": "IH-CF43-ORFSF-1612",
+"compatibility": "direct",
+"source": [
+"stored-variant"
+]
+},
+{
+"competitorBrand": "Parker",
+"competitorMpn": "1JC43-12-8",
+"variantPartNumber": "IH-CF43-ORFSF-0812",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -24681,7 +24699,7 @@
 {
 "competitorBrand": "Parker",
 "competitorMpn": "1JC43-16-12",
-"variantPartNumber": "IH-CF43-ORFSF-1612",
+"variantPartNumber": "IH-CF43-ORFSF-1216",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -24699,7 +24717,7 @@
 {
 "competitorBrand": "Parker",
 "competitorMpn": "1JC43-16-20",
-"variantPartNumber": "IH-CF43-ORFSF-1620",
+"variantPartNumber": "IH-CF43-ORFSF-2016",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -24708,7 +24726,7 @@
 {
 "competitorBrand": "Parker",
 "competitorMpn": "1JC43-20-16",
-"variantPartNumber": "IH-CF43-ORFSF-2016",
+"variantPartNumber": "IH-CF43-ORFSF-1620",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -24725,7 +24743,7 @@
 },
 {
 "competitorBrand": "Parker",
-"competitorMpn": "1JC43-20-24",
+"competitorMpn": "1JC43-24-20",
 "variantPartNumber": "IH-CF43-ORFSF-2024",
 "compatibility": "direct",
 "source": [
@@ -24753,25 +24771,7 @@
 {
 "competitorBrand": "Parker",
 "competitorMpn": "1JC43-4-6",
-"variantPartNumber": "IH-CF43-ORFSF-0406",
-"compatibility": "direct",
-"source": [
-"stored-variant"
-]
-},
-{
-"competitorBrand": "Parker",
-"competitorMpn": "1JC43-4-8",
-"variantPartNumber": "IH-CF43-ORFSF-0408",
-"compatibility": "direct",
-"source": [
-"stored-variant"
-]
-},
-{
-"competitorBrand": "Parker",
-"competitorMpn": "1JC43-6-10",
-"variantPartNumber": "IH-CF43-ORFSF-0610",
+"variantPartNumber": "IH-CF43-ORFSF-0604",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -24780,7 +24780,7 @@
 {
 "competitorBrand": "Parker",
 "competitorMpn": "1JC43-6-4",
-"variantPartNumber": "IH-CF43-ORFSF-0604",
+"variantPartNumber": "IH-CF43-ORFSF-0406",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -24798,7 +24798,7 @@
 {
 "competitorBrand": "Parker",
 "competitorMpn": "1JC43-6-8",
-"variantPartNumber": "IH-CF43-ORFSF-0608",
+"variantPartNumber": "IH-CF43-ORFSF-0806",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -24807,7 +24807,7 @@
 {
 "competitorBrand": "Parker",
 "competitorMpn": "1JC43-8-10",
-"variantPartNumber": "IH-CF43-ORFSF-0810",
+"variantPartNumber": "IH-CF43-ORFSF-1008",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -24815,8 +24815,8 @@
 },
 {
 "competitorBrand": "Parker",
-"competitorMpn": "1JC43-8-12",
-"variantPartNumber": "IH-CF43-ORFSF-0812",
+"competitorMpn": "1JC43-8-4",
+"variantPartNumber": "IH-CF43-ORFSF-0408",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -24825,7 +24825,7 @@
 {
 "competitorBrand": "Parker",
 "competitorMpn": "1JC43-8-6",
-"variantPartNumber": "IH-CF43-ORFSF-0806",
+"variantPartNumber": "IH-CF43-ORFSF-0608",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -24842,7 +24842,7 @@
 },
 {
 "competitorBrand": "Parker",
-"competitorMpn": "1JC71-12-10",
+"competitorMpn": "1JC71-10-12",
 "variantPartNumber": "IH-CF71-ORFSF-1210",
 "compatibility": "direct",
 "source": [
@@ -24860,7 +24860,7 @@
 },
 {
 "competitorBrand": "Parker",
-"competitorMpn": "1JC71-12-16",
+"competitorMpn": "1JC71-16-12",
 "variantPartNumber": "IH-CF71-ORFSF-1216",
 "compatibility": "direct",
 "source": [
@@ -24879,7 +24879,7 @@
 {
 "competitorBrand": "Parker",
 "competitorMpn": "1JC71-16-20",
-"variantPartNumber": "IH-CF71-ORFSF-1620",
+"variantPartNumber": "IH-CF71-ORFSF-2016",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -24888,7 +24888,7 @@
 {
 "competitorBrand": "Parker",
 "competitorMpn": "1JC71-20-16",
-"variantPartNumber": "IH-CF71-ORFSF-2016",
+"variantPartNumber": "IH-CF71-ORFSF-1620",
 "compatibility": "direct",
 "source": [
 "stored-variant"
@@ -24905,7 +24905,7 @@
 },
 {
 "competitorBrand": "Parker",
-"competitorMpn": "1JC71-20-24",
+"competitorMpn": "1JC71-24-20",
 "variantPartNumber": "IH-CF71-ORFSF-2024",
 "compatibility": "direct",
 "source": [
@@ -24932,7 +24932,7 @@
 },
 {
 "competitorBrand": "Parker",
-"competitorMpn": "1JC71-8-6",
+"competitorMpn": "1JC71-6-8",
 "variantPartNumber": "IH-CF71-ORFSF-0806",
 "compatibility": "direct",
 "source": [
