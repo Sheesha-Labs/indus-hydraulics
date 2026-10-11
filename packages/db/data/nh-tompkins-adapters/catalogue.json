@@ -1,0 +1,3927 @@
+{
+ "source": "Northern Hydraulics (US distributor principal) catalogue export 2026-10-11 — Tompkins steel adapters not held live, NH phase 2c",
+ "imageDir": "/Users/ayushkbhatia/Documents/Indus Supplier Research/Source Exports/Northern Hydraulics/nh-jpeg",
+ "brandSlug": "tompkins",
+ "specTemplateSlug": "threaded-fitting-spec",
+ "categories": [
+  {
+   "slug": "hydraulic-adapters",
+   "name": "Hydraulic Adapters",
+   "parentSlug": "hydraulic-hose-fittings-suppliers-uae",
+   "position": 0,
+   "shortDescription": null,
+   "seoTitle": null,
+   "seoDescription": null,
+   "focusKeyword": null
+  },
+  {
+   "slug": "jic-adapters",
+   "name": "jic-adapters",
+   "parentSlug": "hydraulic-adapters",
+   "position": 0,
+   "shortDescription": null,
+   "seoTitle": null,
+   "seoDescription": null,
+   "focusKeyword": null
+  },
+  {
+   "slug": "orb-adapters",
+   "name": "orb-adapters",
+   "parentSlug": "hydraulic-adapters",
+   "position": 0,
+   "shortDescription": null,
+   "seoTitle": null,
+   "seoDescription": null,
+   "focusKeyword": null
+  },
+  {
+   "slug": "orfs-adapters",
+   "name": "orfs-adapters",
+   "parentSlug": "hydraulic-adapters",
+   "position": 0,
+   "shortDescription": null,
+   "seoTitle": null,
+   "seoDescription": null,
+   "focusKeyword": null
+  },
+  {
+   "slug": "npt-adapters",
+   "name": "npt-adapters",
+   "parentSlug": "hydraulic-adapters",
+   "position": 0,
+   "shortDescription": null,
+   "seoTitle": null,
+   "seoDescription": null,
+   "focusKeyword": null
+  },
+  {
+   "slug": "hydraulic-fittings",
+   "name": "Hydraulic Fittings",
+   "parentSlug": "hydraulic-hose-fittings-suppliers-uae",
+   "position": 0,
+   "shortDescription": null,
+   "seoTitle": null,
+   "seoDescription": null,
+   "focusKeyword": null
+  },
+  {
+   "slug": "steel-hose-barb-adapters",
+   "name": "steel-hose-barb-adapters",
+   "parentSlug": "hydraulic-fittings",
+   "position": 0,
+   "shortDescription": null,
+   "seoTitle": null,
+   "seoDescription": null,
+   "focusKeyword": null
+  }
+ ],
+ "products": [
+  {
+   "sku": "IH-NH-TK-0304",
+   "slug": "tompkins-0304-jic-37-female-cap",
+   "title": "Tompkins 0304 JIC 37° Female Cap",
+   "category": "jic-adapters",
+   "brandSlug": "tompkins",
+   "focusKeyword": "tompkins 0304",
+   "descriptionShort": "Tompkins 0304 JIC 37° female cap, carbon steel: 13 sizes, 5/16-24 JIC to 2-1/2-12 JIC.",
+   "descriptionLong": "<p>The <strong>Tompkins 0304</strong> is a carbon steel JIC 37° female cap from Tompkins Industries' hydraulic adapter range, in 13 sizes from 5/16-24 JIC to 2-1/2-12 JIC.</p><h3>Specification</h3><ul><li>Configuration: JIC 37° Female Cap (cap)</li><li>Material: Carbon steel</li><li>End A: Female JIC 37°</li><li>Sizes: 13</li></ul><h3>Sizes and part numbers</h3><p>The Sizes &amp; Part Numbers tab lists each Tompkins number with its thread. Tompkins numbers give the style code, then the dash size of each end in the order the ends are named.</p><h3>Choosing and fitting</h3><p>Match each end to the port or tube it meets: JIC 37° and SAE O-ring boss share UNF threads at the same dash size but seal differently (37° flare vs an O-ring on the boss), and ORFS seals on an O-ring in the face. Check the thread before installing; never mix sealing types on one joint.</p><h3>How to order</h3><p>Quote the Tompkins part number, or the end types and dash sizes. Price and lead time are confirmed with the quotation.</p>",
+   "seoTitle": "Tompkins 0304 JIC 37° Female Cap",
+   "seoDescription": "Tompkins 0304 JIC 37° female cap in carbon steel, 13 sizes from 5/16-24 JIC to 2-1/2-12 JIC. Quote by Tompkins part number.",
+   "faqs": [
+    {
+     "question": "What sizes is the Tompkins 0304 made in?",
+     "answer": "13 sizes: 0304-C-02, 0304-C-03, 0304-C-04, 0304-C-05, 0304-C-06, 0304-C-08, 0304-C-10, 0304-C-12, 0304-C-14, 0304-C-16, 0304-C-20, 0304-C-24…. The size table gives the thread of each end."
+    },
+    {
+     "question": "Is it carbon steel or stainless?",
+     "answer": "This listing is carbon steel. Ask for stainless steel or brass if your system needs it."
+    },
+    {
+     "question": "What is the lead time?",
+     "answer": "Price and lead time are confirmed with the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Fitting Configuration",
+     "value": "Cap",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "fitting_configuration"
+    },
+    {
+     "group": "Identification",
+     "label": "Style",
+     "value": "JIC 37° Female Cap",
+     "unit": null,
+     "position": 1,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size Range",
+     "value": "5/16-24 JIC to 2-1/2-12 JIC",
+     "unit": null,
+     "position": 2,
+     "isFilterable": false,
+     "templateKey": "nominal_size_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "Carbon steel",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "material"
+    }
+   ],
+   "searchAliases": [
+    "0304",
+    "0304C02",
+    "0304C03",
+    "0304C04",
+    "0304C05",
+    "0304C06",
+    "0304C08",
+    "0304C10",
+    "0304C12",
+    "0304C14",
+    "0304C16",
+    "0304C20",
+    "0304C24",
+    "0304C32",
+    "Tompkins 0304"
+   ],
+   "images": [
+    {
+     "file": "9b57f62dac4d9865d968d218f1f93127.jpg",
+     "alt": "Tompkins 0304 JIC 37° female cap, carbon steel, product photo",
+     "caption": "Northern Hydraulics catalogue image, NH phase 2c (2026-10-11), source https://northernhydraulics.net/wp-content/uploads/2025/10/0304-C-06.1.jpg"
+    },
+    {
+     "file": "09da2b437b3f4ba9b65244016f93148a.jpg",
+     "alt": "Tompkins 0304 JIC 37° female cap, carbon steel, line drawing",
+     "caption": "Northern Hydraulics catalogue image, NH phase 2c (2026-10-11), source https://northernhydraulics.net/wp-content/uploads/2025/10/0304-C-06.jpg"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "0304-C-02",
+     "position": 0,
+     "dimensions": {},
+     "portLabel": "5/16-24 JIC",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "0304-C-03",
+     "position": 1,
+     "dimensions": {},
+     "portLabel": "3/8-24 JIC",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "0304-C-04",
+     "position": 2,
+     "dimensions": {},
+     "portLabel": "7/16-20 JIC",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "0304-C-05",
+     "position": 3,
+     "dimensions": {},
+     "portLabel": "1/2-20 JIC",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "0304-C-06",
+     "position": 4,
+     "dimensions": {},
+     "portLabel": "9/16-18 JIC",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "0304-C-08",
+     "position": 5,
+     "dimensions": {},
+     "portLabel": "3/4-16 JIC",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "0304-C-10",
+     "position": 6,
+     "dimensions": {},
+     "portLabel": "7/8-14 JIC",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "0304-C-12",
+     "position": 7,
+     "dimensions": {},
+     "portLabel": "1-1/16-12 JIC",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "0304-C-14",
+     "position": 8,
+     "dimensions": {},
+     "portLabel": "1-3/16-12 JIC",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "0304-C-16",
+     "position": 9,
+     "dimensions": {},
+     "portLabel": "1-5/16-12 JIC",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "0304-C-20",
+     "position": 10,
+     "dimensions": {},
+     "portLabel": "1-5/8-12 JIC",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "0304-C-24",
+     "position": 11,
+     "dimensions": {},
+     "portLabel": "1-7/8-12 JIC",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "0304-C-32",
+     "position": 12,
+     "dimensions": {},
+     "portLabel": "2-1/2-12 JIC",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    }
+   ],
+   "crossReferences": [],
+   "sourceFamily": "0304"
+  },
+  {
+   "sku": "IH-NH-TK-0306",
+   "slug": "tompkins-0306-jic-37-bulkhead-locknut",
+   "title": "Tompkins 0306 JIC 37° Bulkhead Locknut",
+   "category": "jic-adapters",
+   "brandSlug": "tompkins",
+   "focusKeyword": "tompkins 0306",
+   "descriptionShort": "Tompkins 0306 JIC 37° bulkhead locknut, carbon steel: 12 sizes, 3/8-24 JIC to 2-1/2-12 JIC.",
+   "descriptionLong": "<p>The <strong>Tompkins 0306</strong> is a carbon steel JIC 37° bulkhead locknut from Tompkins Industries' hydraulic adapter range, in 12 sizes from 3/8-24 JIC to 2-1/2-12 JIC.</p><h3>Specification</h3><ul><li>Configuration: JIC 37° Bulkhead Locknut (nut)</li><li>Material: Carbon steel</li><li>End A: Female JIC 37°</li><li>Sizes: 12</li></ul><h3>Sizes and part numbers</h3><p>The Sizes &amp; Part Numbers tab lists each Tompkins number with its thread. Tompkins numbers give the style code, then the dash size of each end in the order the ends are named.</p><h3>Choosing and fitting</h3><p>Match each end to the port or tube it meets: JIC 37° and SAE O-ring boss share UNF threads at the same dash size but seal differently (37° flare vs an O-ring on the boss), and ORFS seals on an O-ring in the face. Check the thread before installing; never mix sealing types on one joint.</p><h3>How to order</h3><p>Quote the Tompkins part number, or the end types and dash sizes. Price and lead time are confirmed with the quotation.</p>",
+   "seoTitle": "Tompkins 0306 JIC 37° Bulkhead Locknut",
+   "seoDescription": "Tompkins 0306 JIC 37° bulkhead locknut in carbon steel, 12 sizes from 3/8-24 JIC to 2-1/2-12 JIC. Quote by Tompkins part number.",
+   "faqs": [
+    {
+     "question": "What sizes is the Tompkins 0306 made in?",
+     "answer": "12 sizes: 0306-03, 0306-04, 0306-05, 0306-06, 0306-08, 0306-10, 0306-12, 0306-14, 0306-16, 0306-20, 0306-24, 0306-32. The size table gives the thread of each end."
+    },
+    {
+     "question": "Is it carbon steel or stainless?",
+     "answer": "This listing is carbon steel. Ask for stainless steel or brass if your system needs it."
+    },
+    {
+     "question": "What is the lead time?",
+     "answer": "Price and lead time are confirmed with the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Fitting Configuration",
+     "value": "Nut",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "fitting_configuration"
+    },
+    {
+     "group": "Identification",
+     "label": "Style",
+     "value": "JIC 37° Bulkhead Locknut",
+     "unit": null,
+     "position": 1,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size Range",
+     "value": "3/8-24 JIC to 2-1/2-12 JIC",
+     "unit": null,
+     "position": 2,
+     "isFilterable": false,
+     "templateKey": "nominal_size_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "Carbon steel",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "material"
+    }
+   ],
+   "searchAliases": [
+    "0306",
+    "030603",
+    "030604",
+    "030605",
+    "030606",
+    "030608",
+    "030610",
+    "030612",
+    "030614",
+    "030616",
+    "030620",
+    "030624",
+    "030632",
+    "Tompkins 0306"
+   ],
+   "images": [
+    {
+     "file": "ab8ff03ceea593fc0d8cf7cfb3d6328d.jpg",
+     "alt": "Tompkins 0306 JIC 37° bulkhead locknut, carbon steel, line drawing",
+     "caption": "Northern Hydraulics catalogue image, NH phase 2c (2026-10-11), source https://northernhydraulics.net/wp-content/uploads/2025/04/0306-03-7.jpg"
+    },
+    {
+     "file": "888901b46bea0b54b80a9da72aee406a.jpg",
+     "alt": "Tompkins 0306 JIC 37° bulkhead locknut, carbon steel, line drawing 2",
+     "caption": "Northern Hydraulics catalogue image, NH phase 2c (2026-10-11), source https://northernhydraulics.net/wp-content/uploads/2025/04/0306-03-11.jpg"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "0306-03",
+     "position": 0,
+     "dimensions": {},
+     "portLabel": "3/8-24 JIC",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "0306-04",
+     "position": 1,
+     "dimensions": {},
+     "portLabel": "7/16-20 JIC",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "0306-05",
+     "position": 2,
+     "dimensions": {},
+     "portLabel": "1/2-20 JIC",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "0306-06",
+     "position": 3,
+     "dimensions": {},
+     "portLabel": "9/16-18 JIC",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "0306-08",
+     "position": 4,
+     "dimensions": {},
+     "portLabel": "3/4-16 JIC",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "0306-10",
+     "position": 5,
+     "dimensions": {},
+     "portLabel": "7/8-14 JIC",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "0306-12",
+     "position": 6,
+     "dimensions": {},
+     "portLabel": "1-1/16-12 JIC",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "0306-14",
+     "position": 7,
+     "dimensions": {},
+     "portLabel": "1-3/16-12 JIC",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "0306-16",
+     "position": 8,
+     "dimensions": {},
+     "portLabel": "1-5/16-12 JIC",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "0306-20",
+     "position": 9,
+     "dimensions": {},
+     "portLabel": "1-5/8-12 JIC",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "0306-24",
+     "position": 10,
+     "dimensions": {},
+     "portLabel": "1-7/8-12 JIC",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "0306-32",
+     "position": 11,
+     "dimensions": {},
+     "portLabel": "2-1/2-12 JIC",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    }
+   ],
+   "crossReferences": [],
+   "sourceFamily": "0306"
+  },
+  {
+   "sku": "IH-NH-TK-0418",
+   "slug": "tompkins-0418-jic-37-no-flare-tube-nut",
+   "title": "Tompkins 0418 JIC 37° No-Flare Tube Nut",
+   "category": "jic-adapters",
+   "brandSlug": "tompkins",
+   "focusKeyword": "tompkins 0418",
+   "descriptionShort": "Tompkins 0418 JIC 37° no-flare tube nut, carbon steel: 3 sizes, 3/8-24 JIC to 2-1/2-12 JIC.",
+   "descriptionLong": "<p>The <strong>Tompkins 0418</strong> is a carbon steel JIC 37° no-flare tube nut from Tompkins Industries' hydraulic adapter range, in 3 sizes from 3/8-24 JIC to 2-1/2-12 JIC.</p><h3>Specification</h3><ul><li>Configuration: JIC 37° No-Flare Tube Nut (nut)</li><li>Material: Carbon steel</li><li>End A: Female JIC 37°</li><li>Sizes: 3</li></ul><h3>Sizes and part numbers</h3><p>The Sizes &amp; Part Numbers tab lists each Tompkins number with its thread. Tompkins numbers give the style code, then the dash size of each end in the order the ends are named.</p><h3>Choosing and fitting</h3><p>Match each end to the port or tube it meets: JIC 37° and SAE O-ring boss share UNF threads at the same dash size but seal differently (37° flare vs an O-ring on the boss), and ORFS seals on an O-ring in the face. Check the thread before installing; never mix sealing types on one joint.</p><h3>How to order</h3><p>Quote the Tompkins part number, or the end types and dash sizes. Price and lead time are confirmed with the quotation.</p>",
+   "seoTitle": "Tompkins 0418 JIC 37° No-Flare Tube Nut",
+   "seoDescription": "Tompkins 0418 JIC 37° no-flare tube nut in carbon steel, 3 sizes from 3/8-24 JIC to 2-1/2-12 JIC. Quote by Tompkins part number.",
+   "faqs": [
+    {
+     "question": "What sizes is the Tompkins 0418 made in?",
+     "answer": "3 sizes: 0418-03, 0418-24, 0418-32. The size table gives the thread of each end."
+    },
+    {
+     "question": "Is it carbon steel or stainless?",
+     "answer": "This listing is carbon steel. Ask for stainless steel or brass if your system needs it."
+    },
+    {
+     "question": "What is the lead time?",
+     "answer": "Price and lead time are confirmed with the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Fitting Configuration",
+     "value": "Nut",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "fitting_configuration"
+    },
+    {
+     "group": "Identification",
+     "label": "Style",
+     "value": "JIC 37° No-Flare Tube Nut",
+     "unit": null,
+     "position": 1,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size Range",
+     "value": "3/8-24 JIC to 2-1/2-12 JIC",
+     "unit": null,
+     "position": 2,
+     "isFilterable": false,
+     "templateKey": "nominal_size_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "Carbon steel",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "material"
+    }
+   ],
+   "searchAliases": [
+    "0418",
+    "041803",
+    "041824",
+    "041832",
+    "Tompkins 0418"
+   ],
+   "images": [
+    {
+     "file": "fc883d8ae029c70e9b8e99a5f9d0b184.jpg",
+     "alt": "Tompkins 0418 JIC 37° no-flare tube nut, carbon steel, line drawing",
+     "caption": "Northern Hydraulics catalogue image, NH phase 2c (2026-10-11), source https://northernhydraulics.net/wp-content/uploads/2025/04/0418-03-4.jpg"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "0418-03",
+     "position": 0,
+     "dimensions": {},
+     "portLabel": "3/8-24 JIC",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "0418-24",
+     "position": 1,
+     "dimensions": {},
+     "portLabel": "1-7/8-12 JIC",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "0418-32",
+     "position": 2,
+     "dimensions": {},
+     "portLabel": "2-1/2-12 JIC",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    }
+   ],
+   "crossReferences": [],
+   "sourceFamily": "0418"
+  },
+  {
+   "sku": "IH-NH-TK-0419",
+   "slug": "tompkins-0419-jic-37-no-flare-tube-sleeve",
+   "title": "Tompkins 0419 JIC 37° No-Flare Tube Sleeve",
+   "category": "jic-adapters",
+   "brandSlug": "tompkins",
+   "focusKeyword": "tompkins 0419",
+   "descriptionShort": "Tompkins 0419 JIC 37° no-flare tube sleeve, carbon steel: 3 sizes, 3/8-24 JIC to 2-1/2-12 JIC.",
+   "descriptionLong": "<p>The <strong>Tompkins 0419</strong> is a carbon steel JIC 37° no-flare tube sleeve from Tompkins Industries' hydraulic adapter range, in 3 sizes from 3/8-24 JIC to 2-1/2-12 JIC.</p><h3>Specification</h3><ul><li>Configuration: JIC 37° No-Flare Tube Sleeve (sleeve)</li><li>Material: Carbon steel</li><li>Sizes: 3</li></ul><h3>Sizes and part numbers</h3><p>The Sizes &amp; Part Numbers tab lists each Tompkins number with its thread. Tompkins numbers give the style code, then the dash size of each end in the order the ends are named.</p><h3>Choosing and fitting</h3><p>Match each end to the port or tube it meets: JIC 37° and SAE O-ring boss share UNF threads at the same dash size but seal differently (37° flare vs an O-ring on the boss), and ORFS seals on an O-ring in the face. Check the thread before installing; never mix sealing types on one joint.</p><h3>How to order</h3><p>Quote the Tompkins part number, or the end types and dash sizes. Price and lead time are confirmed with the quotation.</p>",
+   "seoTitle": "Tompkins 0419 JIC 37° No-Flare Tube Sleeve",
+   "seoDescription": "Tompkins 0419 JIC 37° no-flare tube sleeve in carbon steel, 3 sizes from 3/8-24 JIC to 2-1/2-12 JIC. Quote by Tompkins part number.",
+   "faqs": [
+    {
+     "question": "What sizes is the Tompkins 0419 made in?",
+     "answer": "3 sizes: 0419-03, 0419-24, 0419-32. The size table gives the thread of each end."
+    },
+    {
+     "question": "Is it carbon steel or stainless?",
+     "answer": "This listing is carbon steel. Ask for stainless steel or brass if your system needs it."
+    },
+    {
+     "question": "What is the lead time?",
+     "answer": "Price and lead time are confirmed with the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Fitting Configuration",
+     "value": "Sleeve",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "fitting_configuration"
+    },
+    {
+     "group": "Identification",
+     "label": "Style",
+     "value": "JIC 37° No-Flare Tube Sleeve",
+     "unit": null,
+     "position": 1,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size Range",
+     "value": "3/8-24 JIC to 2-1/2-12 JIC",
+     "unit": null,
+     "position": 2,
+     "isFilterable": false,
+     "templateKey": "nominal_size_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "Carbon steel",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "material"
+    }
+   ],
+   "searchAliases": [
+    "0419",
+    "041903",
+    "041924",
+    "041932",
+    "Tompkins 0419"
+   ],
+   "images": [
+    {
+     "file": "7a58cbb78022960d7435a3abce9719b6.jpg",
+     "alt": "Tompkins 0419 JIC 37° no-flare tube sleeve, carbon steel, line drawing",
+     "caption": "Northern Hydraulics catalogue image, NH phase 2c (2026-10-11), source https://northernhydraulics.net/wp-content/uploads/2025/04/0419-03-1.jpg"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "0419-03",
+     "position": 0,
+     "dimensions": {},
+     "portLabel": "3/8-24 JIC",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "0419-24",
+     "position": 1,
+     "dimensions": {},
+     "portLabel": "1-7/8-12 JIC",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "0419-32",
+     "position": 2,
+     "dimensions": {},
+     "portLabel": "2-1/2-12 JIC",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    }
+   ],
+   "crossReferences": [],
+   "sourceFamily": "0419"
+  },
+  {
+   "sku": "IH-NH-TK-4444",
+   "slug": "tompkins-4444-hose-barb-male-nptf-adapter",
+   "title": "Tompkins 4444 Hose Barb × Male NPTF Adapter",
+   "category": "steel-hose-barb-adapters",
+   "brandSlug": "tompkins",
+   "focusKeyword": "tompkins 4444",
+   "descriptionShort": "Tompkins 4444 hose barb × male NPTF adapter, carbon steel: 6 sizes, 3/4\" hose ID to 2\" hose ID.",
+   "descriptionLong": "<p>The <strong>Tompkins 4444</strong> is a carbon steel hose barb × male NPTF adapter from Tompkins Industries' hydraulic adapter range, in 6 sizes from 3/4\" hose ID to 2\" hose ID.</p><h3>Specification</h3><ul><li>Configuration: Hose Barb × Male NPTF Adapter (straight)</li><li>Material: Carbon steel</li><li>End A: Hose Barb</li><li>End B: Male NPTF</li><li>Sizes: 6</li></ul><h3>Sizes and part numbers</h3><p>The Sizes &amp; Part Numbers tab lists each Tompkins number with its thread. Tompkins numbers give the style code, then the dash size of each end in the order the ends are named.</p><h3>Choosing and fitting</h3><p>Match each end to the port or tube it meets: JIC 37° and SAE O-ring boss share UNF threads at the same dash size but seal differently (37° flare vs an O-ring on the boss), and ORFS seals on an O-ring in the face. Check the thread before installing; never mix sealing types on one joint.</p><h3>How to order</h3><p>Quote the Tompkins part number, or the end types and dash sizes. Price and lead time are confirmed with the quotation.</p>",
+   "seoTitle": "Tompkins 4444 Hose Barb × Male NPTF Adapter",
+   "seoDescription": "Tompkins 4444 hose barb × male NPTF adapter in carbon steel, 6 sizes from 3/4\" hose ID to 2\" hose ID. Quote by Tompkins part number.",
+   "faqs": [
+    {
+     "question": "What sizes is the Tompkins 4444 made in?",
+     "answer": "6 sizes: 4444-12-12, 4444-16-12, 4444-16-16, 4444-20-20, 4444-24-24, 4444-32-32. The size table gives the thread of each end."
+    },
+    {
+     "question": "Is it carbon steel or stainless?",
+     "answer": "This listing is carbon steel. Ask for stainless steel or brass if your system needs it."
+    },
+    {
+     "question": "What is the lead time?",
+     "answer": "Price and lead time are confirmed with the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Fitting Configuration",
+     "value": "Straight",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "fitting_configuration"
+    },
+    {
+     "group": "Identification",
+     "label": "Style",
+     "value": "Hose Barb × Male NPTF Adapter",
+     "unit": null,
+     "position": 1,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size Range",
+     "value": "3/4\" hose ID to 2\" hose ID",
+     "unit": null,
+     "position": 2,
+     "isFilterable": false,
+     "templateKey": "nominal_size_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "Carbon steel",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "material"
+    }
+   ],
+   "searchAliases": [
+    "4444",
+    "44441212",
+    "44441612",
+    "44441616",
+    "44442020",
+    "44442424",
+    "44443232",
+    "Tompkins 4444"
+   ],
+   "images": [
+    {
+     "file": "dc9fdefa329045eb1644e41a33abe413.jpg",
+     "alt": "Tompkins 4444 hose barb × male NPTF adapter, carbon steel, line drawing",
+     "caption": "Northern Hydraulics catalogue image, NH phase 2c (2026-10-11), source https://northernhydraulics.net/wp-content/uploads/2025/04/4444-12-12.jpg"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "4444-12-12",
+     "position": 0,
+     "dimensions": {},
+     "portLabel": "3/4\" hose ID",
+     "port2Label": "3/4-14 NPTF",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "4444-16-12",
+     "position": 1,
+     "dimensions": {},
+     "portLabel": "1\" hose ID",
+     "port2Label": "3/4-14 NPTF",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "4444-16-16",
+     "position": 2,
+     "dimensions": {},
+     "portLabel": "1\" hose ID",
+     "port2Label": "1-11½ NPTF",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "4444-20-20",
+     "position": 3,
+     "dimensions": {},
+     "portLabel": "1-1/4\" hose ID",
+     "port2Label": "1-1/4-11½ NPTF",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "4444-24-24",
+     "position": 4,
+     "dimensions": {},
+     "portLabel": "1-1/2\" hose ID",
+     "port2Label": "1-1/2-11½ NPTF",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "4444-32-32",
+     "position": 5,
+     "dimensions": {},
+     "portLabel": "2\" hose ID",
+     "port2Label": "2-11½ NPTF",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    }
+   ],
+   "crossReferences": [],
+   "sourceFamily": "4444"
+  },
+  {
+   "sku": "IH-NH-TK-4445",
+   "slug": "tompkins-4445-hose-barb-female-jic-37-swivel-adapter",
+   "title": "Tompkins 4445 Hose Barb × Female JIC 37° Swivel Adapter",
+   "category": "steel-hose-barb-adapters",
+   "brandSlug": "tompkins",
+   "focusKeyword": "tompkins 4445",
+   "descriptionShort": "Tompkins 4445 hose barb × female JIC 37° swivel adapter, carbon steel: 5 sizes, 3/4\" hose ID to 2\" hose ID.",
+   "descriptionLong": "<p>The <strong>Tompkins 4445</strong> is a carbon steel hose barb × female JIC 37° swivel adapter from Tompkins Industries' hydraulic adapter range, in 5 sizes from 3/4\" hose ID to 2\" hose ID.</p><h3>Specification</h3><ul><li>Configuration: Hose Barb × Female JIC 37° Swivel Adapter (straight)</li><li>Material: Carbon steel</li><li>End A: Hose Barb</li><li>End B: Female JIC 37° Swivel</li><li>Sizes: 5</li></ul><h3>Sizes and part numbers</h3><p>The Sizes &amp; Part Numbers tab lists each Tompkins number with its thread. Tompkins numbers give the style code, then the dash size of each end in the order the ends are named.</p><h3>Choosing and fitting</h3><p>Match each end to the port or tube it meets: JIC 37° and SAE O-ring boss share UNF threads at the same dash size but seal differently (37° flare vs an O-ring on the boss), and ORFS seals on an O-ring in the face. Check the thread before installing; never mix sealing types on one joint.</p><h3>How to order</h3><p>Quote the Tompkins part number, or the end types and dash sizes. Price and lead time are confirmed with the quotation.</p>",
+   "seoTitle": "Tompkins 4445 Hose Barb × Female JIC 37° Swivel Adapter",
+   "seoDescription": "Tompkins 4445 hose barb × female JIC 37° swivel adapter in carbon steel, 5 sizes from 3/4\" hose ID to 2\" hose ID. Quote by Tompkins part number.",
+   "faqs": [
+    {
+     "question": "What sizes is the Tompkins 4445 made in?",
+     "answer": "5 sizes: 4445-12-12, 4445-16-16, 4445-20-20, 4445-24-24, 4445-32-32. The size table gives the thread of each end."
+    },
+    {
+     "question": "Is it carbon steel or stainless?",
+     "answer": "This listing is carbon steel. Ask for stainless steel or brass if your system needs it."
+    },
+    {
+     "question": "What is the lead time?",
+     "answer": "Price and lead time are confirmed with the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Fitting Configuration",
+     "value": "Straight",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "fitting_configuration"
+    },
+    {
+     "group": "Identification",
+     "label": "Style",
+     "value": "Hose Barb × Female JIC 37° Swivel Adapter",
+     "unit": null,
+     "position": 1,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size Range",
+     "value": "3/4\" hose ID to 2\" hose ID",
+     "unit": null,
+     "position": 2,
+     "isFilterable": false,
+     "templateKey": "nominal_size_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "Carbon steel",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "material"
+    }
+   ],
+   "searchAliases": [
+    "4445",
+    "44451212",
+    "44451616",
+    "44452020",
+    "44452424",
+    "44453232",
+    "Tompkins 4445"
+   ],
+   "images": [
+    {
+     "file": "25d045a515357011c8acee209b89abe2.jpg",
+     "alt": "Tompkins 4445 hose barb × female JIC 37° swivel adapter, carbon steel, line drawing",
+     "caption": "Northern Hydraulics catalogue image, NH phase 2c (2026-10-11), source https://northernhydraulics.net/wp-content/uploads/2025/04/4445-12-12-2.jpg"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "4445-12-12",
+     "position": 0,
+     "dimensions": {},
+     "portLabel": "3/4\" hose ID",
+     "port2Label": "1-1/16-12 JIC",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "4445-16-16",
+     "position": 1,
+     "dimensions": {},
+     "portLabel": "1\" hose ID",
+     "port2Label": "1-5/16-12 JIC",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "4445-20-20",
+     "position": 2,
+     "dimensions": {},
+     "portLabel": "1-1/4\" hose ID",
+     "port2Label": "1-5/8-12 JIC",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "4445-24-24",
+     "position": 3,
+     "dimensions": {},
+     "portLabel": "1-1/2\" hose ID",
+     "port2Label": "1-7/8-12 JIC",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "4445-32-32",
+     "position": 4,
+     "dimensions": {},
+     "portLabel": "2\" hose ID",
+     "port2Label": "2-1/2-12 JIC",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    }
+   ],
+   "crossReferences": [],
+   "sourceFamily": "4445"
+  },
+  {
+   "sku": "IH-NH-TK-5406-CAP",
+   "slug": "tompkins-5406-cap-female-nptf-cap",
+   "title": "Tompkins 5406-CAP Female NPTF Cap",
+   "category": "npt-adapters",
+   "brandSlug": "tompkins",
+   "focusKeyword": "tompkins 5406-cap",
+   "descriptionShort": "Tompkins 5406-CAP female NPTF cap, carbon steel: 6 sizes, 1/8-27 NPTF to 1-11½ NPTF.",
+   "descriptionLong": "<p>The <strong>Tompkins 5406-CAP</strong> is a carbon steel female NPTF cap from Tompkins Industries' hydraulic adapter range, in 6 sizes from 1/8-27 NPTF to 1-11½ NPTF.</p><h3>Specification</h3><ul><li>Configuration: Female NPTF Cap (cap)</li><li>Material: Carbon steel</li><li>End A: Female NPTF</li><li>Sizes: 6</li></ul><h3>Sizes and part numbers</h3><p>The Sizes &amp; Part Numbers tab lists each Tompkins number with its thread. Tompkins numbers give the style code, then the dash size of each end in the order the ends are named.</p><h3>Choosing and fitting</h3><p>Match each end to the port or tube it meets: JIC 37° and SAE O-ring boss share UNF threads at the same dash size but seal differently (37° flare vs an O-ring on the boss), and ORFS seals on an O-ring in the face. Check the thread before installing; never mix sealing types on one joint.</p><h3>How to order</h3><p>Quote the Tompkins part number, or the end types and dash sizes. Price and lead time are confirmed with the quotation.</p>",
+   "seoTitle": "Tompkins 5406-CAP Female NPTF Cap",
+   "seoDescription": "Tompkins 5406-CAP female NPTF cap in carbon steel, 6 sizes from 1/8-27 NPTF to 1-11½ NPTF. Quote by Tompkins part number.",
+   "faqs": [
+    {
+     "question": "What sizes is the Tompkins 5406-CAP made in?",
+     "answer": "6 sizes: 5406-CAP-02, 5406-CAP-04, 5406-CAP-06, 5406-CAP-08, 5406-CAP-12, 5406-CAP-16. The size table gives the thread of each end."
+    },
+    {
+     "question": "Is it carbon steel or stainless?",
+     "answer": "This listing is carbon steel. Ask for stainless steel or brass if your system needs it."
+    },
+    {
+     "question": "What is the lead time?",
+     "answer": "Price and lead time are confirmed with the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Fitting Configuration",
+     "value": "Cap",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "fitting_configuration"
+    },
+    {
+     "group": "Identification",
+     "label": "Style",
+     "value": "Female NPTF Cap",
+     "unit": null,
+     "position": 1,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size Range",
+     "value": "1/8-27 NPTF to 1-11½ NPTF",
+     "unit": null,
+     "position": 2,
+     "isFilterable": false,
+     "templateKey": "nominal_size_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "Carbon steel",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "material"
+    }
+   ],
+   "searchAliases": [
+    "5406-CAP",
+    "5406CAP02",
+    "5406CAP04",
+    "5406CAP06",
+    "5406CAP08",
+    "5406CAP12",
+    "5406CAP16",
+    "Tompkins 5406-CAP"
+   ],
+   "images": [
+    {
+     "file": "b27ca4717e174087ef0b6955479f6e9a.jpg",
+     "alt": "Tompkins 5406-CAP female NPTF cap, carbon steel, line drawing",
+     "caption": "Northern Hydraulics catalogue image, NH phase 2c (2026-10-11), source https://northernhydraulics.net/wp-content/uploads/2025/10/5406-CAP-02-5.jpg"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "5406-CAP-02",
+     "position": 0,
+     "dimensions": {},
+     "portLabel": "1/8-27 NPTF",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "5406-CAP-04",
+     "position": 1,
+     "dimensions": {},
+     "portLabel": "1/4-18 NPTF",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "5406-CAP-06",
+     "position": 2,
+     "dimensions": {},
+     "portLabel": "3/8-18 NPTF",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "5406-CAP-08",
+     "position": 3,
+     "dimensions": {},
+     "portLabel": "1/2-14 NPTF",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "5406-CAP-12",
+     "position": 4,
+     "dimensions": {},
+     "portLabel": "3/4-14 NPTF",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "5406-CAP-16",
+     "position": 5,
+     "dimensions": {},
+     "portLabel": "1-11½ NPTF",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    }
+   ],
+   "crossReferences": [],
+   "sourceFamily": "5406-CAP"
+  },
+  {
+   "sku": "IH-NH-TK-5406-FLP",
+   "slug": "tompkins-5406-flp-male-nptf-flush-plug",
+   "title": "Tompkins 5406-FLP Male NPTF Flush Plug",
+   "category": "npt-adapters",
+   "brandSlug": "tompkins",
+   "focusKeyword": "tompkins 5406-flp",
+   "descriptionShort": "Tompkins 5406-FLP male NPTF flush plug, carbon steel: 4 sizes, 1/8-27 NPTF to 1/2-14 NPTF.",
+   "descriptionLong": "<p>The <strong>Tompkins 5406-FLP</strong> is a carbon steel male NPTF flush plug from Tompkins Industries' hydraulic adapter range, in 4 sizes from 1/8-27 NPTF to 1/2-14 NPTF.</p><h3>Specification</h3><ul><li>Configuration: Male NPTF Flush Plug (plug)</li><li>Material: Carbon steel</li><li>End A: Male NPTF</li><li>Sizes: 4</li></ul><h3>Sizes and part numbers</h3><p>The Sizes &amp; Part Numbers tab lists each Tompkins number with its thread. Tompkins numbers give the style code, then the dash size of each end in the order the ends are named.</p><h3>Choosing and fitting</h3><p>Match each end to the port or tube it meets: JIC 37° and SAE O-ring boss share UNF threads at the same dash size but seal differently (37° flare vs an O-ring on the boss), and ORFS seals on an O-ring in the face. Check the thread before installing; never mix sealing types on one joint.</p><h3>How to order</h3><p>Quote the Tompkins part number, or the end types and dash sizes. Price and lead time are confirmed with the quotation.</p>",
+   "seoTitle": "Tompkins 5406-FLP Male NPTF Flush Plug",
+   "seoDescription": "Tompkins 5406-FLP male NPTF flush plug in carbon steel, 4 sizes from 1/8-27 NPTF to 1/2-14 NPTF. Quote by Tompkins part number.",
+   "faqs": [
+    {
+     "question": "What sizes is the Tompkins 5406-FLP made in?",
+     "answer": "4 sizes: 5406-FLP-02, 5406-FLP-04, 5406-FLP-06, 5406-FLP-08. The size table gives the thread of each end."
+    },
+    {
+     "question": "Is it carbon steel or stainless?",
+     "answer": "This listing is carbon steel. Ask for stainless steel or brass if your system needs it."
+    },
+    {
+     "question": "What is the lead time?",
+     "answer": "Price and lead time are confirmed with the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Fitting Configuration",
+     "value": "Plug",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "fitting_configuration"
+    },
+    {
+     "group": "Identification",
+     "label": "Style",
+     "value": "Male NPTF Flush Plug",
+     "unit": null,
+     "position": 1,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size Range",
+     "value": "1/8-27 NPTF to 1/2-14 NPTF",
+     "unit": null,
+     "position": 2,
+     "isFilterable": false,
+     "templateKey": "nominal_size_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "Carbon steel",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "material"
+    }
+   ],
+   "searchAliases": [
+    "5406-FLP",
+    "5406FLP02",
+    "5406FLP04",
+    "5406FLP06",
+    "5406FLP08",
+    "Tompkins 5406-FLP"
+   ],
+   "images": [],
+   "variants": [
+    {
+     "partNumber": "5406-FLP-02",
+     "position": 0,
+     "dimensions": {},
+     "portLabel": "1/8-27 NPTF",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "5406-FLP-04",
+     "position": 1,
+     "dimensions": {},
+     "portLabel": "1/4-18 NPTF",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "5406-FLP-06",
+     "position": 2,
+     "dimensions": {},
+     "portLabel": "3/8-18 NPTF",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "5406-FLP-08",
+     "position": 3,
+     "dimensions": {},
+     "portLabel": "1/2-14 NPTF",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    }
+   ],
+   "crossReferences": [],
+   "sourceFamily": "5406-FLP"
+  },
+  {
+   "sku": "IH-NH-TK-5406-HHP",
+   "slug": "tompkins-5406-hhp-male-nptf-hollow-hex-plug",
+   "title": "Tompkins 5406-HHP Male NPTF Hollow Hex Plug",
+   "category": "npt-adapters",
+   "brandSlug": "tompkins",
+   "focusKeyword": "tompkins 5406-hhp",
+   "descriptionShort": "Tompkins 5406-HHP male NPTF hollow hex plug, carbon steel: 10 sizes, 1/16-27 NPTF to 2-11½ NPTF.",
+   "descriptionLong": "<p>The <strong>Tompkins 5406-HHP</strong> is a carbon steel male NPTF hollow hex plug from Tompkins Industries' hydraulic adapter range, in 10 sizes from 1/16-27 NPTF to 2-11½ NPTF.</p><h3>Specification</h3><ul><li>Configuration: Male NPTF Hollow Hex Plug (plug)</li><li>Material: Carbon steel</li><li>End A: Male NPTF</li><li>Sizes: 10</li></ul><h3>Sizes and part numbers</h3><p>The Sizes &amp; Part Numbers tab lists each Tompkins number with its thread. Tompkins numbers give the style code, then the dash size of each end in the order the ends are named.</p><h3>Choosing and fitting</h3><p>Match each end to the port or tube it meets: JIC 37° and SAE O-ring boss share UNF threads at the same dash size but seal differently (37° flare vs an O-ring on the boss), and ORFS seals on an O-ring in the face. Check the thread before installing; never mix sealing types on one joint.</p><h3>How to order</h3><p>Quote the Tompkins part number, or the end types and dash sizes. Price and lead time are confirmed with the quotation.</p>",
+   "seoTitle": "Tompkins 5406-HHP Male NPTF Hollow Hex Plug",
+   "seoDescription": "Tompkins 5406-HHP male NPTF hollow hex plug in carbon steel, 10 sizes from 1/16-27 NPTF to 2-11½ NPTF. Quote by Tompkins part number.",
+   "faqs": [
+    {
+     "question": "What sizes is the Tompkins 5406-HHP made in?",
+     "answer": "10 sizes: 5406-HHP-01, 5406-HHP-02, 5406-HHP-04, 5406-HHP-06, 5406-HHP-08, 5406-HHP-12, 5406-HHP-16, 5406-HHP-20, 5406-HHP-24, 5406-HHP-32. The size table gives the thread of each end."
+    },
+    {
+     "question": "Is it carbon steel or stainless?",
+     "answer": "This listing is carbon steel. Ask for stainless steel or brass if your system needs it."
+    },
+    {
+     "question": "What is the lead time?",
+     "answer": "Price and lead time are confirmed with the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Fitting Configuration",
+     "value": "Plug",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "fitting_configuration"
+    },
+    {
+     "group": "Identification",
+     "label": "Style",
+     "value": "Male NPTF Hollow Hex Plug",
+     "unit": null,
+     "position": 1,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size Range",
+     "value": "1/16-27 NPTF to 2-11½ NPTF",
+     "unit": null,
+     "position": 2,
+     "isFilterable": false,
+     "templateKey": "nominal_size_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "Carbon steel",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "material"
+    }
+   ],
+   "searchAliases": [
+    "5406-HHP",
+    "5406HHP01",
+    "5406HHP02",
+    "5406HHP04",
+    "5406HHP06",
+    "5406HHP08",
+    "5406HHP12",
+    "5406HHP16",
+    "5406HHP20",
+    "5406HHP24",
+    "5406HHP32",
+    "Tompkins 5406-HHP"
+   ],
+   "images": [
+    {
+     "file": "21f785c4cfcfa6fd180857923b9651b1.jpg",
+     "alt": "Tompkins 5406-HHP male NPTF hollow hex plug, carbon steel, product photo",
+     "caption": "Northern Hydraulics catalogue image, NH phase 2c (2026-10-11), source https://northernhydraulics.net/wp-content/uploads/2025/04/5406-HHP-01.2-1.jpg"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "5406-HHP-01",
+     "position": 0,
+     "dimensions": {},
+     "portLabel": "1/16-27 NPTF",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "5406-HHP-02",
+     "position": 1,
+     "dimensions": {},
+     "portLabel": "1/8-27 NPTF",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "5406-HHP-04",
+     "position": 2,
+     "dimensions": {},
+     "portLabel": "1/4-18 NPTF",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "5406-HHP-06",
+     "position": 3,
+     "dimensions": {},
+     "portLabel": "3/8-18 NPTF",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "5406-HHP-08",
+     "position": 4,
+     "dimensions": {},
+     "portLabel": "1/2-14 NPTF",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "5406-HHP-12",
+     "position": 5,
+     "dimensions": {},
+     "portLabel": "3/4-14 NPTF",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "5406-HHP-16",
+     "position": 6,
+     "dimensions": {},
+     "portLabel": "1-11½ NPTF",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "5406-HHP-20",
+     "position": 7,
+     "dimensions": {},
+     "portLabel": "1-1/4-11½ NPTF",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "5406-HHP-24",
+     "position": 8,
+     "dimensions": {},
+     "portLabel": "1-1/2-11½ NPTF",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "5406-HHP-32",
+     "position": 9,
+     "dimensions": {},
+     "portLabel": "2-11½ NPTF",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    }
+   ],
+   "crossReferences": [],
+   "sourceFamily": "5406-HHP"
+  },
+  {
+   "sku": "IH-NH-TK-6403",
+   "slug": "tompkins-6403-male-o-ring-boss-male-o-ring-boss-adjustable-nipple",
+   "title": "Tompkins 6403 Male O-Ring Boss × Male O-Ring Boss Adjustable Nipple",
+   "category": "orb-adapters",
+   "brandSlug": "tompkins",
+   "focusKeyword": "tompkins 6403",
+   "descriptionShort": "Tompkins 6403 male o-ring boss × male o-ring boss adjustable nipple, carbon steel: 25 sizes, 7/16-20 ORB to 2-1/2-12 ORB.",
+   "descriptionLong": "<p>The <strong>Tompkins 6403</strong> is a carbon steel male o-ring boss × male o-ring boss adjustable nipple from Tompkins Industries' hydraulic adapter range, in 25 sizes from 7/16-20 ORB to 2-1/2-12 ORB.</p><h3>Specification</h3><ul><li>Configuration: Male O-Ring Boss × Male O-Ring Boss Adjustable Nipple (straight)</li><li>Material: Carbon steel</li><li>End A: Male SAE O-Ring Boss</li><li>Sizes: 25</li></ul><h3>Sizes and part numbers</h3><p>The Sizes &amp; Part Numbers tab lists each Tompkins number with its thread. Tompkins numbers give the style code, then the dash size of each end in the order the ends are named.</p><h3>Choosing and fitting</h3><p>Match each end to the port or tube it meets: JIC 37° and SAE O-ring boss share UNF threads at the same dash size but seal differently (37° flare vs an O-ring on the boss), and ORFS seals on an O-ring in the face. Check the thread before installing; never mix sealing types on one joint.</p><h3>How to order</h3><p>Quote the Tompkins part number, or the end types and dash sizes. Price and lead time are confirmed with the quotation.</p>",
+   "seoTitle": "Tompkins 6403 Male O-Ring Boss × Male O-Ring Boss Adjustable",
+   "seoDescription": "Tompkins 6403 male o-ring boss × male o-ring boss adjustable nipple in carbon steel, 25 sizes from 7/16-20 ORB to 2-1/2-12 ORB. Quote by Tompkins part",
+   "faqs": [
+    {
+     "question": "What sizes is the Tompkins 6403 made in?",
+     "answer": "25 sizes: 6403-04-04, 6403-NWO-04-04, 6403-06-04, 6403-NWO-06-04, 6403-06-06, 6403-NWO-06-06, 6403-08-08, 6403-NWO-08-08, 6403-10-08, 6403-10-10, 6403-NWO-10-10, 6403-12-08…. The size table gives the thread of each end."
+    },
+    {
+     "question": "Is it carbon steel or stainless?",
+     "answer": "This listing is carbon steel. Ask for stainless steel or brass if your system needs it."
+    },
+    {
+     "question": "What is the lead time?",
+     "answer": "Price and lead time are confirmed with the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Fitting Configuration",
+     "value": "Straight",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "fitting_configuration"
+    },
+    {
+     "group": "Identification",
+     "label": "Style",
+     "value": "Male O-Ring Boss × Male O-Ring Boss Adjustable Nipple",
+     "unit": null,
+     "position": 1,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size Range",
+     "value": "7/16-20 ORB to 2-1/2-12 ORB",
+     "unit": null,
+     "position": 2,
+     "isFilterable": false,
+     "templateKey": "nominal_size_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "Carbon steel",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "material"
+    }
+   ],
+   "searchAliases": [
+    "6403",
+    "64030404",
+    "64030604",
+    "64030606",
+    "64030808",
+    "64031008",
+    "64031010",
+    "64031208",
+    "64031212",
+    "64031612",
+    "64031616",
+    "64032016",
+    "64032020",
+    "64032424",
+    "64033232",
+    "6403NWO0404",
+    "6403NWO0604",
+    "6403NWO0606",
+    "6403NWO0808",
+    "6403NWO1010",
+    "6403NWO1210",
+    "6403NWO1212",
+    "6403NWO1616",
+    "6403NWO1620",
+    "6403NWO2020",
+    "6403NWO2424",
+    "Tompkins 6403"
+   ],
+   "images": [
+    {
+     "file": "629a339b9adeb3ea17539749a5039aab.jpg",
+     "alt": "Tompkins 6403 male o-ring boss × male o-ring boss adjustable nipple, carbon steel, product photo",
+     "caption": "Northern Hydraulics catalogue image, NH phase 2c (2026-10-11), source https://northernhydraulics.net/wp-content/uploads/2025/04/6403-NWO-04-04.2-6.jpg"
+    },
+    {
+     "file": "ab890e0e0919c1a07996dce2133ec4fc.jpg",
+     "alt": "Tompkins 6403 male o-ring boss × male o-ring boss adjustable nipple, carbon steel, product photo 2",
+     "caption": "Northern Hydraulics catalogue image, NH phase 2c (2026-10-11), source https://northernhydraulics.net/wp-content/uploads/2025/04/6403-04-04.1-11.jpg"
+    },
+    {
+     "file": "895ee05a10bdf41fb620502d61a761e2.jpg",
+     "alt": "Tompkins 6403 male o-ring boss × male o-ring boss adjustable nipple, carbon steel, line drawing",
+     "caption": "Northern Hydraulics catalogue image, NH phase 2c (2026-10-11), source https://northernhydraulics.net/wp-content/uploads/2025/04/6403-04-04-11.jpg"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "6403-04-04",
+     "position": 0,
+     "dimensions": {},
+     "portLabel": "7/16-20 ORB",
+     "port2Label": "7/16-20 ORB",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "6403-NWO-04-04",
+     "position": 1,
+     "dimensions": {},
+     "portLabel": "7/16-20 ORB",
+     "port2Label": "7/16-20 ORB",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "6403-06-04",
+     "position": 2,
+     "dimensions": {},
+     "portLabel": "9/16-18 ORB",
+     "port2Label": "7/16-20 ORB",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "6403-NWO-06-04",
+     "position": 3,
+     "dimensions": {},
+     "portLabel": "9/16-18 ORB",
+     "port2Label": "7/16-20 ORB",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "6403-06-06",
+     "position": 4,
+     "dimensions": {},
+     "portLabel": "9/16-18 ORB",
+     "port2Label": "9/16-18 ORB",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "6403-NWO-06-06",
+     "position": 5,
+     "dimensions": {},
+     "portLabel": "9/16-18 ORB",
+     "port2Label": "9/16-18 ORB",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "6403-08-08",
+     "position": 6,
+     "dimensions": {},
+     "portLabel": "3/4-16 ORB",
+     "port2Label": "3/4-16 ORB",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "6403-NWO-08-08",
+     "position": 7,
+     "dimensions": {},
+     "portLabel": "3/4-16 ORB",
+     "port2Label": "3/4-16 ORB",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "6403-10-08",
+     "position": 8,
+     "dimensions": {},
+     "portLabel": "7/8-14 ORB",
+     "port2Label": "3/4-16 ORB",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "6403-10-10",
+     "position": 9,
+     "dimensions": {},
+     "portLabel": "7/8-14 ORB",
+     "port2Label": "7/8-14 ORB",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "6403-NWO-10-10",
+     "position": 10,
+     "dimensions": {},
+     "portLabel": "7/8-14 ORB",
+     "port2Label": "7/8-14 ORB",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "6403-12-08",
+     "position": 11,
+     "dimensions": {},
+     "portLabel": "1-1/16-12 ORB",
+     "port2Label": "3/4-16 ORB",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "6403-NWO-12-10",
+     "position": 12,
+     "dimensions": {},
+     "portLabel": "1-1/16-12 ORB",
+     "port2Label": "7/8-14 ORB",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "6403-12-12",
+     "position": 13,
+     "dimensions": {},
+     "portLabel": "1-1/16-12 ORB",
+     "port2Label": "1-1/16-12 ORB",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "6403-NWO-12-12",
+     "position": 14,
+     "dimensions": {},
+     "portLabel": "1-1/16-12 ORB",
+     "port2Label": "1-1/16-12 ORB",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "6403-16-12",
+     "position": 15,
+     "dimensions": {},
+     "portLabel": "1-5/16-12 ORB",
+     "port2Label": "1-1/16-12 ORB",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "6403-16-16",
+     "position": 16,
+     "dimensions": {},
+     "portLabel": "1-5/16-12 ORB",
+     "port2Label": "1-5/16-12 ORB",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "6403-NWO-16-16",
+     "position": 17,
+     "dimensions": {},
+     "portLabel": "1-5/16-12 ORB",
+     "port2Label": "1-5/16-12 ORB",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "6403-NWO-16-20",
+     "position": 18,
+     "dimensions": {},
+     "portLabel": "1-5/16-12 ORB",
+     "port2Label": "1-5/8-12 ORB",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "6403-20-16",
+     "position": 19,
+     "dimensions": {},
+     "portLabel": "1-5/8-12 ORB",
+     "port2Label": "1-5/16-12 ORB",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "6403-20-20",
+     "position": 20,
+     "dimensions": {},
+     "portLabel": "1-5/8-12 ORB",
+     "port2Label": "1-5/8-12 ORB",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "6403-NWO-20-20",
+     "position": 21,
+     "dimensions": {},
+     "portLabel": "1-5/8-12 ORB",
+     "port2Label": "1-5/8-12 ORB",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "6403-24-24",
+     "position": 22,
+     "dimensions": {},
+     "portLabel": "1-7/8-12 ORB",
+     "port2Label": "1-7/8-12 ORB",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "6403-NWO-24-24",
+     "position": 23,
+     "dimensions": {},
+     "portLabel": "1-7/8-12 ORB",
+     "port2Label": "1-7/8-12 ORB",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "6403-32-32",
+     "position": 24,
+     "dimensions": {},
+     "portLabel": "2-1/2-12 ORB",
+     "port2Label": "2-1/2-12 ORB",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    }
+   ],
+   "crossReferences": [],
+   "sourceFamily": "6403"
+  },
+  {
+   "sku": "IH-NH-TK-6510",
+   "slug": "tompkins-6510-female-jic-37-swivel-female-jic-37-swivel-union",
+   "title": "Tompkins 6510 Female JIC 37° Swivel × Female JIC 37° Swivel Union",
+   "category": "jic-adapters",
+   "brandSlug": "tompkins",
+   "focusKeyword": "tompkins 6510",
+   "descriptionShort": "Tompkins 6510 female JIC 37° swivel × female JIC 37° swivel union, carbon steel: 8 sizes, 7/16-20 JIC to 1-7/8-12 JIC.",
+   "descriptionLong": "<p>The <strong>Tompkins 6510</strong> is a carbon steel female JIC 37° swivel × female JIC 37° swivel union from Tompkins Industries' hydraulic adapter range, in 8 sizes from 7/16-20 JIC to 1-7/8-12 JIC.</p><h3>Specification</h3><ul><li>Configuration: Female JIC 37° Swivel × Female JIC 37° Swivel Union (straight)</li><li>Material: Carbon steel</li><li>End A: Female JIC 37° Swivel</li><li>Sizes: 8</li></ul><h3>Sizes and part numbers</h3><p>The Sizes &amp; Part Numbers tab lists each Tompkins number with its thread. Tompkins numbers give the style code, then the dash size of each end in the order the ends are named.</p><h3>Choosing and fitting</h3><p>Match each end to the port or tube it meets: JIC 37° and SAE O-ring boss share UNF threads at the same dash size but seal differently (37° flare vs an O-ring on the boss), and ORFS seals on an O-ring in the face. Check the thread before installing; never mix sealing types on one joint.</p><h3>How to order</h3><p>Quote the Tompkins part number, or the end types and dash sizes. Price and lead time are confirmed with the quotation.</p>",
+   "seoTitle": "Tompkins 6510 Female JIC 37° Swivel × Female JIC 37° Swivel",
+   "seoDescription": "Tompkins 6510 female JIC 37° swivel × female JIC 37° swivel union in carbon steel, 8 sizes from 7/16-20 JIC to 1-7/8-12 JIC. Quote by Tompkins part number.",
+   "faqs": [
+    {
+     "question": "What sizes is the Tompkins 6510 made in?",
+     "answer": "8 sizes: 6510-04-04, 6510-06-06, 6510-08-08, 6510-10-10, 6510-12-12, 6510-16-16, 6510-20-20, 6510-24-24. The size table gives the thread of each end."
+    },
+    {
+     "question": "Is it carbon steel or stainless?",
+     "answer": "This listing is carbon steel. Ask for stainless steel or brass if your system needs it."
+    },
+    {
+     "question": "What is the lead time?",
+     "answer": "Price and lead time are confirmed with the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Fitting Configuration",
+     "value": "Straight",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "fitting_configuration"
+    },
+    {
+     "group": "Identification",
+     "label": "Style",
+     "value": "Female JIC 37° Swivel × Female JIC 37° Swivel Union",
+     "unit": null,
+     "position": 1,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size Range",
+     "value": "7/16-20 JIC to 1-7/8-12 JIC",
+     "unit": null,
+     "position": 2,
+     "isFilterable": false,
+     "templateKey": "nominal_size_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "Carbon steel",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "material"
+    }
+   ],
+   "searchAliases": [
+    "6510",
+    "65100404",
+    "65100606",
+    "65100808",
+    "65101010",
+    "65101212",
+    "65101616",
+    "65102020",
+    "65102424",
+    "Tompkins 6510"
+   ],
+   "images": [
+    {
+     "file": "acf506baa1105cb92cef2a0fa88ca0f8.jpg",
+     "alt": "Tompkins 6510 female JIC 37° swivel × female JIC 37° swivel union, carbon steel, product photo",
+     "caption": "Northern Hydraulics catalogue image, NH phase 2c (2026-10-11), source https://northernhydraulics.net/wp-content/uploads/2025/04/6510_series-3.jpg"
+    },
+    {
+     "file": "e454b35fc8442f43e71b85faea42f46a.jpg",
+     "alt": "Tompkins 6510 female JIC 37° swivel × female JIC 37° swivel union, carbon steel, line drawing",
+     "caption": "Northern Hydraulics catalogue image, NH phase 2c (2026-10-11), source https://northernhydraulics.net/wp-content/uploads/2025/04/6510-04-04-3.jpg"
+    },
+    {
+     "file": "9cc02d3d3319f834eda2c8dcf93224a6.jpg",
+     "alt": "Tompkins 6510 female JIC 37° swivel × female JIC 37° swivel union, carbon steel, line drawing 3",
+     "caption": "Northern Hydraulics catalogue image, NH phase 2c (2026-10-11), source https://northernhydraulics.net/wp-content/uploads/2025/04/6510-04-04-7.jpg"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "6510-04-04",
+     "position": 0,
+     "dimensions": {},
+     "portLabel": "7/16-20 JIC",
+     "port2Label": "7/16-20 JIC",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "6510-06-06",
+     "position": 1,
+     "dimensions": {},
+     "portLabel": "9/16-18 JIC",
+     "port2Label": "9/16-18 JIC",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "6510-08-08",
+     "position": 2,
+     "dimensions": {},
+     "portLabel": "3/4-16 JIC",
+     "port2Label": "3/4-16 JIC",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "6510-10-10",
+     "position": 3,
+     "dimensions": {},
+     "portLabel": "7/8-14 JIC",
+     "port2Label": "7/8-14 JIC",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "6510-12-12",
+     "position": 4,
+     "dimensions": {},
+     "portLabel": "1-1/16-12 JIC",
+     "port2Label": "1-1/16-12 JIC",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "6510-16-16",
+     "position": 5,
+     "dimensions": {},
+     "portLabel": "1-5/16-12 JIC",
+     "port2Label": "1-5/16-12 JIC",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "6510-20-20",
+     "position": 6,
+     "dimensions": {},
+     "portLabel": "1-5/8-12 JIC",
+     "port2Label": "1-5/8-12 JIC",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "6510-24-24",
+     "position": 7,
+     "dimensions": {},
+     "portLabel": "1-7/8-12 JIC",
+     "port2Label": "1-7/8-12 JIC",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    }
+   ],
+   "crossReferences": [],
+   "sourceFamily": "6510"
+  },
+  {
+   "sku": "IH-NH-TK-6606",
+   "slug": "tompkins-6606-female-jic-37-swivel-run-tee",
+   "title": "Tompkins 6606 Female JIC 37° Swivel Run Tee",
+   "category": "jic-adapters",
+   "brandSlug": "tompkins",
+   "focusKeyword": "tompkins 6606",
+   "descriptionShort": "Tompkins 6606 female JIC 37° swivel run tee, carbon steel: 6 sizes, 7/16-20 JIC to 1-5/16-12 JIC.",
+   "descriptionLong": "<p>The <strong>Tompkins 6606</strong> is a carbon steel female JIC 37° swivel run tee from Tompkins Industries' hydraulic adapter range, in 6 sizes from 7/16-20 JIC to 1-5/16-12 JIC.</p><h3>Specification</h3><ul><li>Configuration: Female JIC 37° Swivel Run Tee (tee)</li><li>Material: Carbon steel</li><li>End A: Female JIC 37° Swivel</li><li>Sizes: 6</li></ul><h3>Sizes and part numbers</h3><p>The Sizes &amp; Part Numbers tab lists each Tompkins number with its thread. Tompkins numbers give the style code, then the dash size of each end in the order the ends are named.</p><h3>Choosing and fitting</h3><p>Match each end to the port or tube it meets: JIC 37° and SAE O-ring boss share UNF threads at the same dash size but seal differently (37° flare vs an O-ring on the boss), and ORFS seals on an O-ring in the face. Check the thread before installing; never mix sealing types on one joint.</p><h3>How to order</h3><p>Quote the Tompkins part number, or the end types and dash sizes. Price and lead time are confirmed with the quotation.</p>",
+   "seoTitle": "Tompkins 6606 Female JIC 37° Swivel Run Tee",
+   "seoDescription": "Tompkins 6606 female JIC 37° swivel run tee in carbon steel, 6 sizes from 7/16-20 JIC to 1-5/16-12 JIC. Quote by Tompkins part number.",
+   "faqs": [
+    {
+     "question": "What sizes is the Tompkins 6606 made in?",
+     "answer": "6 sizes: 6606-04-04-04, 6606-06-06-06, 6606-08-08-08, 6606-10-10-10, 6606-12-12-12, 6606-16-16-16. The size table gives the thread of each end."
+    },
+    {
+     "question": "Is it carbon steel or stainless?",
+     "answer": "This listing is carbon steel. Ask for stainless steel or brass if your system needs it."
+    },
+    {
+     "question": "What is the lead time?",
+     "answer": "Price and lead time are confirmed with the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Fitting Configuration",
+     "value": "Tee",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "fitting_configuration"
+    },
+    {
+     "group": "Identification",
+     "label": "Style",
+     "value": "Female JIC 37° Swivel Run Tee",
+     "unit": null,
+     "position": 1,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size Range",
+     "value": "7/16-20 JIC to 1-5/16-12 JIC",
+     "unit": null,
+     "position": 2,
+     "isFilterable": false,
+     "templateKey": "nominal_size_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "Carbon steel",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "material"
+    }
+   ],
+   "searchAliases": [
+    "6606",
+    "6606040404",
+    "6606060606",
+    "6606080808",
+    "6606101010",
+    "6606121212",
+    "6606161616",
+    "Tompkins 6606"
+   ],
+   "images": [
+    {
+     "file": "e2fac9f169eaf09c3e1b53196e5bd315.jpg",
+     "alt": "Tompkins 6606 female JIC 37° swivel run tee, carbon steel, product photo",
+     "caption": "Northern Hydraulics catalogue image, NH phase 2c (2026-10-11), source https://northernhydraulics.net/wp-content/uploads/2025/04/6606-04-04-04.2-2.jpg"
+    },
+    {
+     "file": "11b8abb145c26d233c8e3ae4daa47217.jpg",
+     "alt": "Tompkins 6606 female JIC 37° swivel run tee, carbon steel, line drawing",
+     "caption": "Northern Hydraulics catalogue image, NH phase 2c (2026-10-11), source https://northernhydraulics.net/wp-content/uploads/2025/04/6606-04-04-04-3.jpg"
+    },
+    {
+     "file": "2f8535c4a6cff8114f7c213a32f0f612.jpg",
+     "alt": "Tompkins 6606 female JIC 37° swivel run tee, carbon steel, line drawing 3",
+     "caption": "Northern Hydraulics catalogue image, NH phase 2c (2026-10-11), source https://northernhydraulics.net/wp-content/uploads/2025/04/6606-04-04-04-2.jpg"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "6606-04-04-04",
+     "position": 0,
+     "dimensions": {},
+     "portLabel": "7/16-20 JIC",
+     "port2Label": "7/16-20 JIC",
+     "port3Label": "7/16-20 JIC",
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "6606-06-06-06",
+     "position": 1,
+     "dimensions": {},
+     "portLabel": "9/16-18 JIC",
+     "port2Label": "9/16-18 JIC",
+     "port3Label": "9/16-18 JIC",
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "6606-08-08-08",
+     "position": 2,
+     "dimensions": {},
+     "portLabel": "3/4-16 JIC",
+     "port2Label": "3/4-16 JIC",
+     "port3Label": "3/4-16 JIC",
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "6606-10-10-10",
+     "position": 3,
+     "dimensions": {},
+     "portLabel": "7/8-14 JIC",
+     "port2Label": "7/8-14 JIC",
+     "port3Label": "7/8-14 JIC",
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "6606-12-12-12",
+     "position": 4,
+     "dimensions": {},
+     "portLabel": "1-1/16-12 JIC",
+     "port2Label": "1-1/16-12 JIC",
+     "port3Label": "1-1/16-12 JIC",
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "6606-16-16-16",
+     "position": 5,
+     "dimensions": {},
+     "portLabel": "1-5/16-12 JIC",
+     "port2Label": "1-5/16-12 JIC",
+     "port3Label": "1-5/16-12 JIC",
+     "competitorBrand": null,
+     "competitorMpn": null
+    }
+   ],
+   "crossReferences": [],
+   "sourceFamily": "6606"
+  },
+  {
+   "sku": "IH-NH-TK-FF0304",
+   "slug": "tompkins-ff0304-female-orfs-swivel-cap",
+   "title": "Tompkins FF0304 Female ORFS Swivel Cap",
+   "category": "orfs-adapters",
+   "brandSlug": "tompkins",
+   "focusKeyword": "tompkins ff0304",
+   "descriptionShort": "Tompkins FF0304 female ORFS swivel cap, carbon steel: 8 sizes, 9/16-18 ORFS to 2-12 ORFS.",
+   "descriptionLong": "<p>The <strong>Tompkins FF0304</strong> is a carbon steel female ORFS swivel cap from Tompkins Industries' hydraulic adapter range, in 8 sizes from 9/16-18 ORFS to 2-12 ORFS.</p><h3>Specification</h3><ul><li>Configuration: Female ORFS Swivel Cap (cap)</li><li>Material: Carbon steel</li><li>End A: Female ORFS Swivel</li><li>Sizes: 8</li></ul><h3>Sizes and part numbers</h3><p>The Sizes &amp; Part Numbers tab lists each Tompkins number with its thread. Tompkins numbers give the style code, then the dash size of each end in the order the ends are named.</p><h3>Choosing and fitting</h3><p>Match each end to the port or tube it meets: JIC 37° and SAE O-ring boss share UNF threads at the same dash size but seal differently (37° flare vs an O-ring on the boss), and ORFS seals on an O-ring in the face. Check the thread before installing; never mix sealing types on one joint.</p><h3>How to order</h3><p>Quote the Tompkins part number, or the end types and dash sizes. Price and lead time are confirmed with the quotation.</p>",
+   "seoTitle": "Tompkins FF0304 Female ORFS Swivel Cap",
+   "seoDescription": "Tompkins FF0304 female ORFS swivel cap in carbon steel, 8 sizes from 9/16-18 ORFS to 2-12 ORFS. Quote by Tompkins part number.",
+   "faqs": [
+    {
+     "question": "What sizes is the Tompkins FF0304 made in?",
+     "answer": "8 sizes: FF0304-C-04, FF0304-C-06, FF0304-C-08, FF0304-C-10, FF0304-C-12, FF0304-C-16, FF0304-C-20, FF0304-C-24. The size table gives the thread of each end."
+    },
+    {
+     "question": "Is it carbon steel or stainless?",
+     "answer": "This listing is carbon steel. Ask for stainless steel or brass if your system needs it."
+    },
+    {
+     "question": "What is the lead time?",
+     "answer": "Price and lead time are confirmed with the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Fitting Configuration",
+     "value": "Cap",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "fitting_configuration"
+    },
+    {
+     "group": "Identification",
+     "label": "Style",
+     "value": "Female ORFS Swivel Cap",
+     "unit": null,
+     "position": 1,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size Range",
+     "value": "9/16-18 ORFS to 2-12 ORFS",
+     "unit": null,
+     "position": 2,
+     "isFilterable": false,
+     "templateKey": "nominal_size_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "Carbon steel",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "material"
+    }
+   ],
+   "searchAliases": [
+    "FF0304",
+    "FF0304C04",
+    "FF0304C06",
+    "FF0304C08",
+    "FF0304C10",
+    "FF0304C12",
+    "FF0304C16",
+    "FF0304C20",
+    "FF0304C24",
+    "Tompkins FF0304"
+   ],
+   "images": [
+    {
+     "file": "0c789ce550173cc729d14d7dc12b3a9d.jpg",
+     "alt": "Tompkins FF0304 female ORFS swivel cap, carbon steel, product photo",
+     "caption": "Northern Hydraulics catalogue image, NH phase 2c (2026-10-11), source https://northernhydraulics.net/wp-content/uploads/2025/04/FF0304-C-04.2-1.jpg"
+    },
+    {
+     "file": "462ae51976e35dd13f7f8375bb5eb118.jpg",
+     "alt": "Tompkins FF0304 female ORFS swivel cap, carbon steel, line drawing",
+     "caption": "Northern Hydraulics catalogue image, NH phase 2c (2026-10-11), source https://northernhydraulics.net/wp-content/uploads/2025/04/FF0304-C-04-7.jpg"
+    },
+    {
+     "file": "ec5c834e59deac725d74f4203e27a328.jpg",
+     "alt": "Tompkins FF0304 female ORFS swivel cap, carbon steel, line drawing 3",
+     "caption": "Northern Hydraulics catalogue image, NH phase 2c (2026-10-11), source https://northernhydraulics.net/wp-content/uploads/2025/04/FF0304-C-04-5.jpg"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "FF0304-C-04",
+     "position": 0,
+     "dimensions": {},
+     "portLabel": "9/16-18 ORFS",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "FF0304-C-06",
+     "position": 1,
+     "dimensions": {},
+     "portLabel": "11/16-16 ORFS",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "FF0304-C-08",
+     "position": 2,
+     "dimensions": {},
+     "portLabel": "13/16-16 ORFS",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "FF0304-C-10",
+     "position": 3,
+     "dimensions": {},
+     "portLabel": "1-14 ORFS",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "FF0304-C-12",
+     "position": 4,
+     "dimensions": {},
+     "portLabel": "1-3/16-12 ORFS",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "FF0304-C-16",
+     "position": 5,
+     "dimensions": {},
+     "portLabel": "1-7/16-12 ORFS",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "FF0304-C-20",
+     "position": 6,
+     "dimensions": {},
+     "portLabel": "1-11/16-12 ORFS",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "FF0304-C-24",
+     "position": 7,
+     "dimensions": {},
+     "portLabel": "2-12 ORFS",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    }
+   ],
+   "crossReferences": [],
+   "sourceFamily": "FF0304"
+  },
+  {
+   "sku": "IH-NH-TK-FF2402",
+   "slug": "tompkins-ff2402-male-orfs-male-jic-37-adapter",
+   "title": "Tompkins FF2402 Male ORFS × Male JIC 37° Adapter",
+   "category": "orfs-adapters",
+   "brandSlug": "tompkins",
+   "focusKeyword": "tompkins ff2402",
+   "descriptionShort": "Tompkins FF2402 male ORFS × male JIC 37° adapter, carbon steel: 6 sizes, 9/16-18 ORFS to 1-7/16-12 ORFS.",
+   "descriptionLong": "<p>The <strong>Tompkins FF2402</strong> is a carbon steel male ORFS × male JIC 37° adapter from Tompkins Industries' hydraulic adapter range, in 6 sizes from 9/16-18 ORFS to 1-7/16-12 ORFS.</p><h3>Specification</h3><ul><li>Configuration: Male ORFS × Male JIC 37° Adapter (straight)</li><li>Material: Carbon steel</li><li>End A: Male ORFS</li><li>End B: Male JIC 37°</li><li>Sizes: 6</li></ul><h3>Sizes and part numbers</h3><p>The Sizes &amp; Part Numbers tab lists each Tompkins number with its thread. Tompkins numbers give the style code, then the dash size of each end in the order the ends are named.</p><h3>Choosing and fitting</h3><p>Match each end to the port or tube it meets: JIC 37° and SAE O-ring boss share UNF threads at the same dash size but seal differently (37° flare vs an O-ring on the boss), and ORFS seals on an O-ring in the face. Check the thread before installing; never mix sealing types on one joint.</p><h3>How to order</h3><p>Quote the Tompkins part number, or the end types and dash sizes. Price and lead time are confirmed with the quotation.</p>",
+   "seoTitle": "Tompkins FF2402 Male ORFS × Male JIC 37° Adapter",
+   "seoDescription": "Tompkins FF2402 male ORFS × male JIC 37° adapter in carbon steel, 6 sizes from 9/16-18 ORFS to 1-7/16-12 ORFS. Quote by Tompkins part number.",
+   "faqs": [
+    {
+     "question": "What sizes is the Tompkins FF2402 made in?",
+     "answer": "6 sizes: FF2402-04-04, FF2402-06-06, FF2402-08-08, FF2402-10-10, FF2402-12-12, FF2402-16-16. The size table gives the thread of each end."
+    },
+    {
+     "question": "Is it carbon steel or stainless?",
+     "answer": "This listing is carbon steel. Ask for stainless steel or brass if your system needs it."
+    },
+    {
+     "question": "What is the lead time?",
+     "answer": "Price and lead time are confirmed with the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Fitting Configuration",
+     "value": "Straight",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "fitting_configuration"
+    },
+    {
+     "group": "Identification",
+     "label": "Style",
+     "value": "Male ORFS × Male JIC 37° Adapter",
+     "unit": null,
+     "position": 1,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size Range",
+     "value": "9/16-18 ORFS to 1-7/16-12 ORFS",
+     "unit": null,
+     "position": 2,
+     "isFilterable": false,
+     "templateKey": "nominal_size_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "Carbon steel",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "material"
+    }
+   ],
+   "searchAliases": [
+    "FF2402",
+    "FF24020404",
+    "FF24020606",
+    "FF24020808",
+    "FF24021010",
+    "FF24021212",
+    "FF24021616",
+    "Tompkins FF2402"
+   ],
+   "images": [
+    {
+     "file": "815a2cee612fae14c2bcb397e97b3e27.jpg",
+     "alt": "Tompkins FF2402 male ORFS × male JIC 37° adapter, carbon steel, product photo",
+     "caption": "Northern Hydraulics catalogue image, NH phase 2c (2026-10-11), source https://northernhydraulics.net/wp-content/uploads/2025/04/FF2402-04-04.2-3.jpg"
+    },
+    {
+     "file": "991030dfad76254e7184a32bddbacca9.jpg",
+     "alt": "Tompkins FF2402 male ORFS × male JIC 37° adapter, carbon steel, line drawing",
+     "caption": "Northern Hydraulics catalogue image, NH phase 2c (2026-10-11), source https://northernhydraulics.net/wp-content/uploads/2025/04/FF2402-04-04-2.jpg"
+    },
+    {
+     "file": "c9dda47ef78382e5b4d0a3813cd670ee.jpg",
+     "alt": "Tompkins FF2402 male ORFS × male JIC 37° adapter, carbon steel, line drawing 3",
+     "caption": "Northern Hydraulics catalogue image, NH phase 2c (2026-10-11), source https://northernhydraulics.net/wp-content/uploads/2025/04/FF2402-04-04-4.jpg"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "FF2402-04-04",
+     "position": 0,
+     "dimensions": {},
+     "portLabel": "9/16-18 ORFS",
+     "port2Label": "7/16-20 JIC",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "FF2402-06-06",
+     "position": 1,
+     "dimensions": {},
+     "portLabel": "11/16-16 ORFS",
+     "port2Label": "9/16-18 JIC",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "FF2402-08-08",
+     "position": 2,
+     "dimensions": {},
+     "portLabel": "13/16-16 ORFS",
+     "port2Label": "3/4-16 JIC",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "FF2402-10-10",
+     "position": 3,
+     "dimensions": {},
+     "portLabel": "1-14 ORFS",
+     "port2Label": "7/8-14 JIC",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "FF2402-12-12",
+     "position": 4,
+     "dimensions": {},
+     "portLabel": "1-3/16-12 ORFS",
+     "port2Label": "1-1/16-12 JIC",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "FF2402-16-16",
+     "position": 5,
+     "dimensions": {},
+     "portLabel": "1-7/16-12 ORFS",
+     "port2Label": "1-5/16-12 JIC",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    }
+   ],
+   "crossReferences": [],
+   "sourceFamily": "FF2402"
+  },
+  {
+   "sku": "IH-NH-TK-FF2403",
+   "slug": "tompkins-ff2403-male-orfs-male-orfs-union",
+   "title": "Tompkins FF2403 Male ORFS × Male ORFS Union",
+   "category": "orfs-adapters",
+   "brandSlug": "tompkins",
+   "focusKeyword": "tompkins ff2403",
+   "descriptionShort": "Tompkins FF2403 male ORFS × male ORFS union, carbon steel: 9 sizes, 9/16-18 ORFS to 2-12 ORFS.",
+   "descriptionLong": "<p>The <strong>Tompkins FF2403</strong> is a carbon steel male ORFS × male ORFS union from Tompkins Industries' hydraulic adapter range, in 9 sizes from 9/16-18 ORFS to 2-12 ORFS.</p><h3>Specification</h3><ul><li>Configuration: Male ORFS × Male ORFS Union (straight)</li><li>Material: Carbon steel</li><li>End A: Male ORFS</li><li>Sizes: 9</li></ul><h3>Sizes and part numbers</h3><p>The Sizes &amp; Part Numbers tab lists each Tompkins number with its thread. Tompkins numbers give the style code, then the dash size of each end in the order the ends are named.</p><h3>Choosing and fitting</h3><p>Match each end to the port or tube it meets: JIC 37° and SAE O-ring boss share UNF threads at the same dash size but seal differently (37° flare vs an O-ring on the boss), and ORFS seals on an O-ring in the face. Check the thread before installing; never mix sealing types on one joint.</p><h3>How to order</h3><p>Quote the Tompkins part number, or the end types and dash sizes. Price and lead time are confirmed with the quotation.</p>",
+   "seoTitle": "Tompkins FF2403 Male ORFS × Male ORFS Union",
+   "seoDescription": "Tompkins FF2403 male ORFS × male ORFS union in carbon steel, 9 sizes from 9/16-18 ORFS to 2-12 ORFS. Quote by Tompkins part number.",
+   "faqs": [
+    {
+     "question": "What sizes is the Tompkins FF2403 made in?",
+     "answer": "9 sizes: FF2403-04-04, FF2403-06-06, FF2403-08-08, FF2403-10-10, FF2403-12-08, FF2403-12-12, FF2403-16-16, FF2403-20-20, FF2403-24-24. The size table gives the thread of each end."
+    },
+    {
+     "question": "Is it carbon steel or stainless?",
+     "answer": "This listing is carbon steel. Ask for stainless steel or brass if your system needs it."
+    },
+    {
+     "question": "What is the lead time?",
+     "answer": "Price and lead time are confirmed with the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Fitting Configuration",
+     "value": "Straight",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "fitting_configuration"
+    },
+    {
+     "group": "Identification",
+     "label": "Style",
+     "value": "Male ORFS × Male ORFS Union",
+     "unit": null,
+     "position": 1,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size Range",
+     "value": "9/16-18 ORFS to 2-12 ORFS",
+     "unit": null,
+     "position": 2,
+     "isFilterable": false,
+     "templateKey": "nominal_size_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "Carbon steel",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "material"
+    }
+   ],
+   "searchAliases": [
+    "FF2403",
+    "FF24030404",
+    "FF24030606",
+    "FF24030808",
+    "FF24031010",
+    "FF24031208",
+    "FF24031212",
+    "FF24031616",
+    "FF24032020",
+    "FF24032424",
+    "Tompkins FF2403"
+   ],
+   "images": [
+    {
+     "file": "2e7ef15d6ba3c321aa2d16161f1caf42.jpg",
+     "alt": "Tompkins FF2403 male ORFS × male ORFS union, carbon steel, line drawing",
+     "caption": "Northern Hydraulics catalogue image, NH phase 2c (2026-10-11), source https://northernhydraulics.net/wp-content/uploads/2025/04/FF2403-04-04-4.jpg"
+    },
+    {
+     "file": "e4d57a1aaf6172f0d02c0c86ec2396b2.jpg",
+     "alt": "Tompkins FF2403 male ORFS × male ORFS union, carbon steel, line drawing 2",
+     "caption": "Northern Hydraulics catalogue image, NH phase 2c (2026-10-11), source https://northernhydraulics.net/wp-content/uploads/2025/04/FF2403-04-04-5.jpg"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "FF2403-04-04",
+     "position": 0,
+     "dimensions": {},
+     "portLabel": "9/16-18 ORFS",
+     "port2Label": "9/16-18 ORFS",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "FF2403-06-06",
+     "position": 1,
+     "dimensions": {},
+     "portLabel": "11/16-16 ORFS",
+     "port2Label": "11/16-16 ORFS",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "FF2403-08-08",
+     "position": 2,
+     "dimensions": {},
+     "portLabel": "13/16-16 ORFS",
+     "port2Label": "13/16-16 ORFS",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "FF2403-10-10",
+     "position": 3,
+     "dimensions": {},
+     "portLabel": "1-14 ORFS",
+     "port2Label": "1-14 ORFS",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "FF2403-12-08",
+     "position": 4,
+     "dimensions": {},
+     "portLabel": "1-3/16-12 ORFS",
+     "port2Label": "13/16-16 ORFS",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "FF2403-12-12",
+     "position": 5,
+     "dimensions": {},
+     "portLabel": "1-3/16-12 ORFS",
+     "port2Label": "1-3/16-12 ORFS",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "FF2403-16-16",
+     "position": 6,
+     "dimensions": {},
+     "portLabel": "1-7/16-12 ORFS",
+     "port2Label": "1-7/16-12 ORFS",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "FF2403-20-20",
+     "position": 7,
+     "dimensions": {},
+     "portLabel": "1-11/16-12 ORFS",
+     "port2Label": "1-11/16-12 ORFS",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "FF2403-24-24",
+     "position": 8,
+     "dimensions": {},
+     "portLabel": "2-12 ORFS",
+     "port2Label": "2-12 ORFS",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    }
+   ],
+   "crossReferences": [],
+   "sourceFamily": "FF2403"
+  },
+  {
+   "sku": "IH-NH-TK-FF2406",
+   "slug": "tompkins-ff2406-female-orfs-swivel-male-orfs-adapter",
+   "title": "Tompkins FF2406 Female ORFS Swivel × Male ORFS Adapter",
+   "category": "orfs-adapters",
+   "brandSlug": "tompkins",
+   "focusKeyword": "tompkins ff2406",
+   "descriptionShort": "Tompkins FF2406 female ORFS swivel × male ORFS adapter, carbon steel: 19 sizes, 9/16-18 ORFS to 1-11/16-12 ORFS.",
+   "descriptionLong": "<p>The <strong>Tompkins FF2406</strong> is a carbon steel female ORFS swivel × male ORFS adapter from Tompkins Industries' hydraulic adapter range, in 19 sizes from 9/16-18 ORFS to 1-11/16-12 ORFS.</p><h3>Specification</h3><ul><li>Configuration: Female ORFS Swivel × Male ORFS Adapter (straight)</li><li>Material: Carbon steel</li><li>End A: Female ORFS Swivel</li><li>End B: Male ORFS</li><li>Sizes: 19</li></ul><h3>Sizes and part numbers</h3><p>The Sizes &amp; Part Numbers tab lists each Tompkins number with its thread. Tompkins numbers give the style code, then the dash size of each end in the order the ends are named.</p><h3>Choosing and fitting</h3><p>Match each end to the port or tube it meets: JIC 37° and SAE O-ring boss share UNF threads at the same dash size but seal differently (37° flare vs an O-ring on the boss), and ORFS seals on an O-ring in the face. Check the thread before installing; never mix sealing types on one joint.</p><h3>How to order</h3><p>Quote the Tompkins part number, or the end types and dash sizes. Price and lead time are confirmed with the quotation.</p>",
+   "seoTitle": "Tompkins FF2406 Female ORFS Swivel × Male ORFS Adapter",
+   "seoDescription": "Tompkins FF2406 female ORFS swivel × male ORFS adapter in carbon steel, 19 sizes from 9/16-18 ORFS to 1-11/16-12 ORFS. Quote by Tompkins part number.",
+   "faqs": [
+    {
+     "question": "What sizes is the Tompkins FF2406 made in?",
+     "answer": "19 sizes: FF2406-04-06, FF2406-06-04, FF2406-06-08, FF2406-08-04, FF2406-08-06, FF2406-08-12, FF2406-10-06, FF2406-10-08, FF2406-10-12, FF2406-12-04, FF2406-12-06, FF2406-12-08…. The size table gives the thread of each end."
+    },
+    {
+     "question": "Is it carbon steel or stainless?",
+     "answer": "This listing is carbon steel. Ask for stainless steel or brass if your system needs it."
+    },
+    {
+     "question": "What is the lead time?",
+     "answer": "Price and lead time are confirmed with the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Fitting Configuration",
+     "value": "Straight",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "fitting_configuration"
+    },
+    {
+     "group": "Identification",
+     "label": "Style",
+     "value": "Female ORFS Swivel × Male ORFS Adapter",
+     "unit": null,
+     "position": 1,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size Range",
+     "value": "9/16-18 ORFS to 1-11/16-12 ORFS",
+     "unit": null,
+     "position": 2,
+     "isFilterable": false,
+     "templateKey": "nominal_size_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "Carbon steel",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "material"
+    }
+   ],
+   "searchAliases": [
+    "FF2406",
+    "FF24060406",
+    "FF24060604",
+    "FF24060608",
+    "FF24060804",
+    "FF24060806",
+    "FF24060812",
+    "FF24061006",
+    "FF24061008",
+    "FF24061012",
+    "FF24061204",
+    "FF24061206",
+    "FF24061208",
+    "FF24061210",
+    "FF24061216",
+    "FF24061608",
+    "FF24061612",
+    "FF24061620",
+    "FF24062012",
+    "FF24062016",
+    "Tompkins FF2406"
+   ],
+   "images": [
+    {
+     "file": "49f93f20fb3a37fcf2e0f2ef11b1c365.jpg",
+     "alt": "Tompkins FF2406 female ORFS swivel × male ORFS adapter, carbon steel, product photo",
+     "caption": "Northern Hydraulics catalogue image, NH phase 2c (2026-10-11), source https://northernhydraulics.net/wp-content/uploads/2025/04/FF2406-04-06.2-16.jpg"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "FF2406-04-06",
+     "position": 0,
+     "dimensions": {},
+     "portLabel": "9/16-18 ORFS",
+     "port2Label": "11/16-16 ORFS",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "FF2406-06-04",
+     "position": 1,
+     "dimensions": {},
+     "portLabel": "11/16-16 ORFS",
+     "port2Label": "9/16-18 ORFS",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "FF2406-06-08",
+     "position": 2,
+     "dimensions": {},
+     "portLabel": "11/16-16 ORFS",
+     "port2Label": "13/16-16 ORFS",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "FF2406-08-04",
+     "position": 3,
+     "dimensions": {},
+     "portLabel": "13/16-16 ORFS",
+     "port2Label": "9/16-18 ORFS",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "FF2406-08-06",
+     "position": 4,
+     "dimensions": {},
+     "portLabel": "13/16-16 ORFS",
+     "port2Label": "11/16-16 ORFS",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "FF2406-08-12",
+     "position": 5,
+     "dimensions": {},
+     "portLabel": "13/16-16 ORFS",
+     "port2Label": "1-3/16-12 ORFS",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "FF2406-10-06",
+     "position": 6,
+     "dimensions": {},
+     "portLabel": "1-14 ORFS",
+     "port2Label": "11/16-16 ORFS",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "FF2406-10-08",
+     "position": 7,
+     "dimensions": {},
+     "portLabel": "1-14 ORFS",
+     "port2Label": "13/16-16 ORFS",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "FF2406-10-12",
+     "position": 8,
+     "dimensions": {},
+     "portLabel": "1-14 ORFS",
+     "port2Label": "1-3/16-12 ORFS",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "FF2406-12-04",
+     "position": 9,
+     "dimensions": {},
+     "portLabel": "1-3/16-12 ORFS",
+     "port2Label": "9/16-18 ORFS",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "FF2406-12-06",
+     "position": 10,
+     "dimensions": {},
+     "portLabel": "1-3/16-12 ORFS",
+     "port2Label": "11/16-16 ORFS",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "FF2406-12-08",
+     "position": 11,
+     "dimensions": {},
+     "portLabel": "1-3/16-12 ORFS",
+     "port2Label": "13/16-16 ORFS",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "FF2406-12-10",
+     "position": 12,
+     "dimensions": {},
+     "portLabel": "1-3/16-12 ORFS",
+     "port2Label": "1-14 ORFS",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "FF2406-12-16",
+     "position": 13,
+     "dimensions": {},
+     "portLabel": "1-3/16-12 ORFS",
+     "port2Label": "1-7/16-12 ORFS",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "FF2406-16-08",
+     "position": 14,
+     "dimensions": {},
+     "portLabel": "1-7/16-12 ORFS",
+     "port2Label": "13/16-16 ORFS",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "FF2406-16-12",
+     "position": 15,
+     "dimensions": {},
+     "portLabel": "1-7/16-12 ORFS",
+     "port2Label": "1-3/16-12 ORFS",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "FF2406-16-20",
+     "position": 16,
+     "dimensions": {},
+     "portLabel": "1-7/16-12 ORFS",
+     "port2Label": "1-11/16-12 ORFS",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "FF2406-20-12",
+     "position": 17,
+     "dimensions": {},
+     "portLabel": "1-11/16-12 ORFS",
+     "port2Label": "1-3/16-12 ORFS",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "FF2406-20-16",
+     "position": 18,
+     "dimensions": {},
+     "portLabel": "1-11/16-12 ORFS",
+     "port2Label": "1-7/16-12 ORFS",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    }
+   ],
+   "crossReferences": [],
+   "sourceFamily": "FF2406"
+  },
+  {
+   "sku": "IH-NH-TK-FF2408",
+   "slug": "tompkins-ff2408-male-orfs-hex-head-plug",
+   "title": "Tompkins FF2408 Male ORFS Hex Head Plug",
+   "category": "orfs-adapters",
+   "brandSlug": "tompkins",
+   "focusKeyword": "tompkins ff2408",
+   "descriptionShort": "Tompkins FF2408 male ORFS hex head plug, carbon steel: 8 sizes, 9/16-18 ORFS to 2-12 ORFS.",
+   "descriptionLong": "<p>The <strong>Tompkins FF2408</strong> is a carbon steel male ORFS hex head plug from Tompkins Industries' hydraulic adapter range, in 8 sizes from 9/16-18 ORFS to 2-12 ORFS.</p><h3>Specification</h3><ul><li>Configuration: Male ORFS Hex Head Plug (plug)</li><li>Material: Carbon steel</li><li>End A: Male ORFS</li><li>Sizes: 8</li></ul><h3>Sizes and part numbers</h3><p>The Sizes &amp; Part Numbers tab lists each Tompkins number with its thread. Tompkins numbers give the style code, then the dash size of each end in the order the ends are named.</p><h3>Choosing and fitting</h3><p>Match each end to the port or tube it meets: JIC 37° and SAE O-ring boss share UNF threads at the same dash size but seal differently (37° flare vs an O-ring on the boss), and ORFS seals on an O-ring in the face. Check the thread before installing; never mix sealing types on one joint.</p><h3>How to order</h3><p>Quote the Tompkins part number, or the end types and dash sizes. Price and lead time are confirmed with the quotation.</p>",
+   "seoTitle": "Tompkins FF2408 Male ORFS Hex Head Plug",
+   "seoDescription": "Tompkins FF2408 male ORFS hex head plug in carbon steel, 8 sizes from 9/16-18 ORFS to 2-12 ORFS. Quote by Tompkins part number.",
+   "faqs": [
+    {
+     "question": "What sizes is the Tompkins FF2408 made in?",
+     "answer": "8 sizes: FF2408-04, FF2408-06, FF2408-08, FF2408-10, FF2408-12, FF2408-16, FF2408-20, FF2408-24. The size table gives the thread of each end."
+    },
+    {
+     "question": "Is it carbon steel or stainless?",
+     "answer": "This listing is carbon steel. Ask for stainless steel or brass if your system needs it."
+    },
+    {
+     "question": "What is the lead time?",
+     "answer": "Price and lead time are confirmed with the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Fitting Configuration",
+     "value": "Plug",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "fitting_configuration"
+    },
+    {
+     "group": "Identification",
+     "label": "Style",
+     "value": "Male ORFS Hex Head Plug",
+     "unit": null,
+     "position": 1,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size Range",
+     "value": "9/16-18 ORFS to 2-12 ORFS",
+     "unit": null,
+     "position": 2,
+     "isFilterable": false,
+     "templateKey": "nominal_size_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "Carbon steel",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "material"
+    }
+   ],
+   "searchAliases": [
+    "FF2408",
+    "FF240804",
+    "FF240806",
+    "FF240808",
+    "FF240810",
+    "FF240812",
+    "FF240816",
+    "FF240820",
+    "FF240824",
+    "Tompkins FF2408"
+   ],
+   "images": [
+    {
+     "file": "dd33d42c6554f2cbb1b276e178e6cc63.jpg",
+     "alt": "Tompkins FF2408 male ORFS hex head plug, carbon steel, product photo",
+     "caption": "Northern Hydraulics catalogue image, NH phase 2c (2026-10-11), source https://northernhydraulics.net/wp-content/uploads/2025/04/FF2408-04.2-8.jpg"
+    },
+    {
+     "file": "151bd7bfc78a1fd98c3e38e86d5b8bdd.jpg",
+     "alt": "Tompkins FF2408 male ORFS hex head plug, carbon steel, line drawing",
+     "caption": "Northern Hydraulics catalogue image, NH phase 2c (2026-10-11), source https://northernhydraulics.net/wp-content/uploads/2025/04/FF2408-04-8.jpg"
+    },
+    {
+     "file": "46f0b68d72ab4668c3f4a10b05c2805d.jpg",
+     "alt": "Tompkins FF2408 male ORFS hex head plug, carbon steel, line drawing 3",
+     "caption": "Northern Hydraulics catalogue image, NH phase 2c (2026-10-11), source https://northernhydraulics.net/wp-content/uploads/2025/04/FF2408-04.jpg"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "FF2408-04",
+     "position": 0,
+     "dimensions": {},
+     "portLabel": "9/16-18 ORFS",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "FF2408-06",
+     "position": 1,
+     "dimensions": {},
+     "portLabel": "11/16-16 ORFS",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "FF2408-08",
+     "position": 2,
+     "dimensions": {},
+     "portLabel": "13/16-16 ORFS",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "FF2408-10",
+     "position": 3,
+     "dimensions": {},
+     "portLabel": "1-14 ORFS",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "FF2408-12",
+     "position": 4,
+     "dimensions": {},
+     "portLabel": "1-3/16-12 ORFS",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "FF2408-16",
+     "position": 5,
+     "dimensions": {},
+     "portLabel": "1-7/16-12 ORFS",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "FF2408-20",
+     "position": 6,
+     "dimensions": {},
+     "portLabel": "1-11/16-12 ORFS",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "FF2408-24",
+     "position": 7,
+     "dimensions": {},
+     "portLabel": "2-12 ORFS",
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    }
+   ],
+   "crossReferences": [],
+   "sourceFamily": "FF2408"
+  },
+  {
+   "sku": "IH-NH-TK-FF2501",
+   "slug": "tompkins-ff2501-male-orfs-male-nptf-90-elbow",
+   "title": "Tompkins FF2501 Male ORFS × Male NPTF 90° Elbow",
+   "category": "orfs-adapters",
+   "brandSlug": "tompkins",
+   "focusKeyword": "tompkins ff2501",
+   "descriptionShort": "Tompkins FF2501 male ORFS × male NPTF 90° elbow, carbon steel: 17 sizes, 9/16-18 ORFS to 2-12 ORFS.",
+   "descriptionLong": "<p>The <strong>Tompkins FF2501</strong> is a carbon steel male ORFS × male NPTF 90° elbow from Tompkins Industries' hydraulic adapter range, in 17 sizes from 9/16-18 ORFS to 2-12 ORFS.</p><h3>Specification</h3><ul><li>Configuration: Male ORFS × Male NPTF 90° Elbow (90° elbow)</li><li>Material: Carbon steel</li><li>End A: Male ORFS</li><li>End B: Male NPTF</li><li>Sizes: 17</li></ul><h3>Sizes and part numbers</h3><p>The Sizes &amp; Part Numbers tab lists each Tompkins number with its thread. Tompkins numbers give the style code, then the dash size of each end in the order the ends are named.</p><h3>Choosing and fitting</h3><p>Match each end to the port or tube it meets: JIC 37° and SAE O-ring boss share UNF threads at the same dash size but seal differently (37° flare vs an O-ring on the boss), and ORFS seals on an O-ring in the face. Check the thread before installing; never mix sealing types on one joint.</p><h3>How to order</h3><p>Quote the Tompkins part number, or the end types and dash sizes. Price and lead time are confirmed with the quotation.</p>",
+   "seoTitle": "Tompkins FF2501 Male ORFS × Male NPTF 90° Elbow",
+   "seoDescription": "Tompkins FF2501 male ORFS × male NPTF 90° elbow in carbon steel, 17 sizes from 9/16-18 ORFS to 2-12 ORFS. Quote by Tompkins part number.",
+   "faqs": [
+    {
+     "question": "What sizes is the Tompkins FF2501 made in?",
+     "answer": "17 sizes: FF2501-04-02, FF2501-04-04, FF2501-06-04, FF2501-06-06, FF2501-06-08, FF2501-08-06, FF2501-08-08, FF2501-08-12, FF2501-10-08, FF2501-10-12, FF2501-12-08, FF2501-12-12…. The size table gives the thread of each end."
+    },
+    {
+     "question": "Is it carbon steel or stainless?",
+     "answer": "This listing is carbon steel. Ask for stainless steel or brass if your system needs it."
+    },
+    {
+     "question": "What is the lead time?",
+     "answer": "Price and lead time are confirmed with the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Fitting Configuration",
+     "value": "90° Elbow",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "fitting_configuration"
+    },
+    {
+     "group": "Identification",
+     "label": "Style",
+     "value": "Male ORFS × Male NPTF 90° Elbow",
+     "unit": null,
+     "position": 1,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size Range",
+     "value": "9/16-18 ORFS to 2-12 ORFS",
+     "unit": null,
+     "position": 2,
+     "isFilterable": false,
+     "templateKey": "nominal_size_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "Carbon steel",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "material"
+    }
+   ],
+   "searchAliases": [
+    "FF2501",
+    "FF25010402",
+    "FF25010404",
+    "FF25010604",
+    "FF25010606",
+    "FF25010608",
+    "FF25010806",
+    "FF25010808",
+    "FF25010812",
+    "FF25011008",
+    "FF25011012",
+    "FF25011208",
+    "FF25011212",
+    "FF25011216",
+    "FF25011612",
+    "FF25011616",
+    "FF25012020",
+    "FF25012424",
+    "Tompkins FF2501"
+   ],
+   "images": [
+    {
+     "file": "6b4edc97b3197adfe57ebd7b0617a0ec.jpg",
+     "alt": "Tompkins FF2501 male ORFS × male NPTF 90° elbow, carbon steel, product photo",
+     "caption": "Northern Hydraulics catalogue image, NH phase 2c (2026-10-11), source https://northernhydraulics.net/wp-content/uploads/2025/04/FF2501-04-02.2-14.jpg"
+    },
+    {
+     "file": "976789afbc482d4e7272f9467d4d78a7.jpg",
+     "alt": "Tompkins FF2501 male ORFS × male NPTF 90° elbow, carbon steel, line drawing",
+     "caption": "Northern Hydraulics catalogue image, NH phase 2c (2026-10-11), source https://northernhydraulics.net/wp-content/uploads/2025/04/FF2501-04-02-15.jpg"
+    },
+    {
+     "file": "34644f544a48095b41fb61889cd216c7.jpg",
+     "alt": "Tompkins FF2501 male ORFS × male NPTF 90° elbow, carbon steel, line drawing 3",
+     "caption": "Northern Hydraulics catalogue image, NH phase 2c (2026-10-11), source https://northernhydraulics.net/wp-content/uploads/2025/04/FF2501-04-02-14.jpg"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "FF2501-04-02",
+     "position": 0,
+     "dimensions": {},
+     "portLabel": "9/16-18 ORFS",
+     "port2Label": "1/8-27 NPTF",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "FF2501-04-04",
+     "position": 1,
+     "dimensions": {},
+     "portLabel": "9/16-18 ORFS",
+     "port2Label": "1/4-18 NPTF",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "FF2501-06-04",
+     "position": 2,
+     "dimensions": {},
+     "portLabel": "11/16-16 ORFS",
+     "port2Label": "1/4-18 NPTF",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "FF2501-06-06",
+     "position": 3,
+     "dimensions": {},
+     "portLabel": "11/16-16 ORFS",
+     "port2Label": "3/8-18 NPTF",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "FF2501-06-08",
+     "position": 4,
+     "dimensions": {},
+     "portLabel": "11/16-16 ORFS",
+     "port2Label": "1/2-14 NPTF",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "FF2501-08-06",
+     "position": 5,
+     "dimensions": {},
+     "portLabel": "13/16-16 ORFS",
+     "port2Label": "3/8-18 NPTF",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "FF2501-08-08",
+     "position": 6,
+     "dimensions": {},
+     "portLabel": "13/16-16 ORFS",
+     "port2Label": "1/2-14 NPTF",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "FF2501-08-12",
+     "position": 7,
+     "dimensions": {},
+     "portLabel": "13/16-16 ORFS",
+     "port2Label": "3/4-14 NPTF",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "FF2501-10-08",
+     "position": 8,
+     "dimensions": {},
+     "portLabel": "1-14 ORFS",
+     "port2Label": "1/2-14 NPTF",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "FF2501-10-12",
+     "position": 9,
+     "dimensions": {},
+     "portLabel": "1-14 ORFS",
+     "port2Label": "3/4-14 NPTF",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "FF2501-12-08",
+     "position": 10,
+     "dimensions": {},
+     "portLabel": "1-3/16-12 ORFS",
+     "port2Label": "1/2-14 NPTF",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "FF2501-12-12",
+     "position": 11,
+     "dimensions": {},
+     "portLabel": "1-3/16-12 ORFS",
+     "port2Label": "3/4-14 NPTF",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "FF2501-12-16",
+     "position": 12,
+     "dimensions": {},
+     "portLabel": "1-3/16-12 ORFS",
+     "port2Label": "1-11½ NPTF",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "FF2501-16-12",
+     "position": 13,
+     "dimensions": {},
+     "portLabel": "1-7/16-12 ORFS",
+     "port2Label": "3/4-14 NPTF",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "FF2501-16-16",
+     "position": 14,
+     "dimensions": {},
+     "portLabel": "1-7/16-12 ORFS",
+     "port2Label": "1-11½ NPTF",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "FF2501-20-20",
+     "position": 15,
+     "dimensions": {},
+     "portLabel": "1-11/16-12 ORFS",
+     "port2Label": "1-1/4-11½ NPTF",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "FF2501-24-24",
+     "position": 16,
+     "dimensions": {},
+     "portLabel": "2-12 ORFS",
+     "port2Label": "1-1/2-11½ NPTF",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    }
+   ],
+   "crossReferences": [],
+   "sourceFamily": "FF2501"
+  },
+  {
+   "sku": "IH-NH-TK-FF6400",
+   "slug": "tompkins-ff6400-male-orfs-male-o-ring-boss-adapter",
+   "title": "Tompkins FF6400 Male ORFS × Male O-Ring Boss Adapter",
+   "category": "orfs-adapters",
+   "brandSlug": "tompkins",
+   "focusKeyword": "tompkins ff6400",
+   "descriptionShort": "Tompkins FF6400 male ORFS × male o-ring boss adapter, carbon steel: 23 sizes, 9/16-18 ORFS to 2-12 ORFS.",
+   "descriptionLong": "<p>The <strong>Tompkins FF6400</strong> is a carbon steel male ORFS × male o-ring boss adapter from Tompkins Industries' hydraulic adapter range, in 23 sizes from 9/16-18 ORFS to 2-12 ORFS.</p><h3>Specification</h3><ul><li>Configuration: Male ORFS × Male O-Ring Boss Adapter (straight)</li><li>Material: Carbon steel</li><li>End A: Male ORFS</li><li>End B: Male SAE O-Ring Boss</li><li>Sizes: 23</li></ul><h3>Sizes and part numbers</h3><p>The Sizes &amp; Part Numbers tab lists each Tompkins number with its thread. Tompkins numbers give the style code, then the dash size of each end in the order the ends are named.</p><h3>Choosing and fitting</h3><p>Match each end to the port or tube it meets: JIC 37° and SAE O-ring boss share UNF threads at the same dash size but seal differently (37° flare vs an O-ring on the boss), and ORFS seals on an O-ring in the face. Check the thread before installing; never mix sealing types on one joint.</p><h3>How to order</h3><p>Quote the Tompkins part number, or the end types and dash sizes. Price and lead time are confirmed with the quotation.</p>",
+   "seoTitle": "Tompkins FF6400 Male ORFS × Male O-Ring Boss Adapter",
+   "seoDescription": "Tompkins FF6400 male ORFS × male o-ring boss adapter in carbon steel, 23 sizes from 9/16-18 ORFS to 2-12 ORFS. Quote by Tompkins part number.",
+   "faqs": [
+    {
+     "question": "What sizes is the Tompkins FF6400 made in?",
+     "answer": "23 sizes: FF6400-04-04, FF6400-04-06, FF6400-06-04, FF6400-06-06, FF6400-06-08, FF6400-08-06, FF6400-08-08, FF6400-08-10, FF6400-08-12, FF6400-10-08, FF6400-10-10, FF6400-10-12…. The size table gives the thread of each end."
+    },
+    {
+     "question": "Is it carbon steel or stainless?",
+     "answer": "This listing is carbon steel. Ask for stainless steel or brass if your system needs it."
+    },
+    {
+     "question": "What is the lead time?",
+     "answer": "Price and lead time are confirmed with the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Fitting Configuration",
+     "value": "Straight",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "fitting_configuration"
+    },
+    {
+     "group": "Identification",
+     "label": "Style",
+     "value": "Male ORFS × Male O-Ring Boss Adapter",
+     "unit": null,
+     "position": 1,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size Range",
+     "value": "9/16-18 ORFS to 2-12 ORFS",
+     "unit": null,
+     "position": 2,
+     "isFilterable": false,
+     "templateKey": "nominal_size_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "Carbon steel",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "material"
+    }
+   ],
+   "searchAliases": [
+    "FF6400",
+    "FF64000404",
+    "FF64000406",
+    "FF64000604",
+    "FF64000606",
+    "FF64000608",
+    "FF64000806",
+    "FF64000808",
+    "FF64000810",
+    "FF64000812",
+    "FF64001008",
+    "FF64001010",
+    "FF64001012",
+    "FF64001208",
+    "FF64001210",
+    "FF64001212",
+    "FF64001216",
+    "FF64001612",
+    "FF64001616",
+    "FF64001620",
+    "FF64002016",
+    "FF64002020",
+    "FF64002024",
+    "FF64002424",
+    "Tompkins FF6400"
+   ],
+   "images": [
+    {
+     "file": "59b611c4768885d12f01b1cd25a1979d.jpg",
+     "alt": "Tompkins FF6400 male ORFS × male o-ring boss adapter, carbon steel, product photo",
+     "caption": "Northern Hydraulics catalogue image, NH phase 2c (2026-10-11), source https://northernhydraulics.net/wp-content/uploads/2025/04/FF6400-04-04.2-20.jpg"
+    },
+    {
+     "file": "4f586a3a1684cac3f79e48645ecfe16d.jpg",
+     "alt": "Tompkins FF6400 male ORFS × male o-ring boss adapter, carbon steel, line drawing",
+     "caption": "Northern Hydraulics catalogue image, NH phase 2c (2026-10-11), source https://northernhydraulics.net/wp-content/uploads/2025/04/FF6400-04-04-11.jpg"
+    },
+    {
+     "file": "e5027a2955564fca13fcdd1723507fc8.jpg",
+     "alt": "Tompkins FF6400 male ORFS × male o-ring boss adapter, carbon steel, line drawing 3",
+     "caption": "Northern Hydraulics catalogue image, NH phase 2c (2026-10-11), source https://northernhydraulics.net/wp-content/uploads/2025/04/FF6400-04-04-20.jpg"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "FF6400-04-04",
+     "position": 0,
+     "dimensions": {},
+     "portLabel": "9/16-18 ORFS",
+     "port2Label": "7/16-20 ORB",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "FF6400-04-06",
+     "position": 1,
+     "dimensions": {},
+     "portLabel": "9/16-18 ORFS",
+     "port2Label": "9/16-18 ORB",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "FF6400-06-04",
+     "position": 2,
+     "dimensions": {},
+     "portLabel": "11/16-16 ORFS",
+     "port2Label": "7/16-20 ORB",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "FF6400-06-06",
+     "position": 3,
+     "dimensions": {},
+     "portLabel": "11/16-16 ORFS",
+     "port2Label": "9/16-18 ORB",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "FF6400-06-08",
+     "position": 4,
+     "dimensions": {},
+     "portLabel": "11/16-16 ORFS",
+     "port2Label": "3/4-16 ORB",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "FF6400-08-06",
+     "position": 5,
+     "dimensions": {},
+     "portLabel": "13/16-16 ORFS",
+     "port2Label": "9/16-18 ORB",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "FF6400-08-08",
+     "position": 6,
+     "dimensions": {},
+     "portLabel": "13/16-16 ORFS",
+     "port2Label": "3/4-16 ORB",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "FF6400-08-10",
+     "position": 7,
+     "dimensions": {},
+     "portLabel": "13/16-16 ORFS",
+     "port2Label": "7/8-14 ORB",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "FF6400-08-12",
+     "position": 8,
+     "dimensions": {},
+     "portLabel": "13/16-16 ORFS",
+     "port2Label": "1-1/16-12 ORB",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "FF6400-10-08",
+     "position": 9,
+     "dimensions": {},
+     "portLabel": "1-14 ORFS",
+     "port2Label": "3/4-16 ORB",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "FF6400-10-10",
+     "position": 10,
+     "dimensions": {},
+     "portLabel": "1-14 ORFS",
+     "port2Label": "7/8-14 ORB",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "FF6400-10-12",
+     "position": 11,
+     "dimensions": {},
+     "portLabel": "1-14 ORFS",
+     "port2Label": "1-1/16-12 ORB",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "FF6400-12-08",
+     "position": 12,
+     "dimensions": {},
+     "portLabel": "1-3/16-12 ORFS",
+     "port2Label": "3/4-16 ORB",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "FF6400-12-10",
+     "position": 13,
+     "dimensions": {},
+     "portLabel": "1-3/16-12 ORFS",
+     "port2Label": "7/8-14 ORB",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "FF6400-12-12",
+     "position": 14,
+     "dimensions": {},
+     "portLabel": "1-3/16-12 ORFS",
+     "port2Label": "1-1/16-12 ORB",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "FF6400-12-16",
+     "position": 15,
+     "dimensions": {},
+     "portLabel": "1-3/16-12 ORFS",
+     "port2Label": "1-5/16-12 ORB",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "FF6400-16-12",
+     "position": 16,
+     "dimensions": {},
+     "portLabel": "1-7/16-12 ORFS",
+     "port2Label": "1-1/16-12 ORB",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "FF6400-16-16",
+     "position": 17,
+     "dimensions": {},
+     "portLabel": "1-7/16-12 ORFS",
+     "port2Label": "1-5/16-12 ORB",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "FF6400-16-20",
+     "position": 18,
+     "dimensions": {},
+     "portLabel": "1-7/16-12 ORFS",
+     "port2Label": "1-5/8-12 ORB",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "FF6400-20-16",
+     "position": 19,
+     "dimensions": {},
+     "portLabel": "1-11/16-12 ORFS",
+     "port2Label": "1-5/16-12 ORB",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "FF6400-20-20",
+     "position": 20,
+     "dimensions": {},
+     "portLabel": "1-11/16-12 ORFS",
+     "port2Label": "1-5/8-12 ORB",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "FF6400-20-24",
+     "position": 21,
+     "dimensions": {},
+     "portLabel": "1-11/16-12 ORFS",
+     "port2Label": "1-7/8-12 ORB",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "FF6400-24-24",
+     "position": 22,
+     "dimensions": {},
+     "portLabel": "2-12 ORFS",
+     "port2Label": "1-7/8-12 ORB",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    }
+   ],
+   "crossReferences": [],
+   "sourceFamily": "FF6400"
+  },
+  {
+   "sku": "IH-NH-TK-FF6504",
+   "slug": "tompkins-ff6504-male-jic-37-female-orfs-swivel-adapter",
+   "title": "Tompkins FF6504 Male JIC 37° × Female ORFS Swivel Adapter",
+   "category": "orfs-adapters",
+   "brandSlug": "tompkins",
+   "focusKeyword": "tompkins ff6504",
+   "descriptionShort": "Tompkins FF6504 male JIC 37° × female ORFS swivel adapter, carbon steel: 6 sizes, 7/16-20 JIC to 1-5/16-12 JIC.",
+   "descriptionLong": "<p>The <strong>Tompkins FF6504</strong> is a carbon steel male JIC 37° × female ORFS swivel adapter from Tompkins Industries' hydraulic adapter range, in 6 sizes from 7/16-20 JIC to 1-5/16-12 JIC.</p><h3>Specification</h3><ul><li>Configuration: Male JIC 37° × Female ORFS Swivel Adapter (straight)</li><li>Material: Carbon steel</li><li>End A: Male JIC 37°</li><li>End B: Female ORFS Swivel</li><li>Sizes: 6</li></ul><h3>Sizes and part numbers</h3><p>The Sizes &amp; Part Numbers tab lists each Tompkins number with its thread. Tompkins numbers give the style code, then the dash size of each end in the order the ends are named.</p><h3>Choosing and fitting</h3><p>Match each end to the port or tube it meets: JIC 37° and SAE O-ring boss share UNF threads at the same dash size but seal differently (37° flare vs an O-ring on the boss), and ORFS seals on an O-ring in the face. Check the thread before installing; never mix sealing types on one joint.</p><h3>How to order</h3><p>Quote the Tompkins part number, or the end types and dash sizes. Price and lead time are confirmed with the quotation.</p>",
+   "seoTitle": "Tompkins FF6504 Male JIC 37° × Female ORFS Swivel Adapter",
+   "seoDescription": "Tompkins FF6504 male JIC 37° × female ORFS swivel adapter in carbon steel, 6 sizes from 7/16-20 JIC to 1-5/16-12 JIC. Quote by Tompkins part number.",
+   "faqs": [
+    {
+     "question": "What sizes is the Tompkins FF6504 made in?",
+     "answer": "6 sizes: FF6504-04-04, FF6504-06-06, FF6504-08-08, FF6504-10-10, FF6504-12-12, FF6504-16-16. The size table gives the thread of each end."
+    },
+    {
+     "question": "Is it carbon steel or stainless?",
+     "answer": "This listing is carbon steel. Ask for stainless steel or brass if your system needs it."
+    },
+    {
+     "question": "What is the lead time?",
+     "answer": "Price and lead time are confirmed with the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Fitting Configuration",
+     "value": "Straight",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "fitting_configuration"
+    },
+    {
+     "group": "Identification",
+     "label": "Style",
+     "value": "Male JIC 37° × Female ORFS Swivel Adapter",
+     "unit": null,
+     "position": 1,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Dimensions",
+     "label": "Nominal Size Range",
+     "value": "7/16-20 JIC to 1-5/16-12 JIC",
+     "unit": null,
+     "position": 2,
+     "isFilterable": false,
+     "templateKey": "nominal_size_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "Carbon steel",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "material"
+    }
+   ],
+   "searchAliases": [
+    "FF6504",
+    "FF65040404",
+    "FF65040606",
+    "FF65040808",
+    "FF65041010",
+    "FF65041212",
+    "FF65041616",
+    "Tompkins FF6504"
+   ],
+   "images": [
+    {
+     "file": "251efd954544cd60361d0c7311476727.jpg",
+     "alt": "Tompkins FF6504 male JIC 37° × female ORFS swivel adapter, carbon steel, product photo",
+     "caption": "Northern Hydraulics catalogue image, NH phase 2c (2026-10-11), source https://northernhydraulics.net/wp-content/uploads/2025/04/FF6504-04-04.2-2.jpg"
+    },
+    {
+     "file": "44a974d459f5efe03484adcb19a346c7.jpg",
+     "alt": "Tompkins FF6504 male JIC 37° × female ORFS swivel adapter, carbon steel, line drawing",
+     "caption": "Northern Hydraulics catalogue image, NH phase 2c (2026-10-11), source https://northernhydraulics.net/wp-content/uploads/2025/04/FF6504-04-04-1.jpg"
+    },
+    {
+     "file": "3da97544eba4d614c80c05443a636f67.jpg",
+     "alt": "Tompkins FF6504 male JIC 37° × female ORFS swivel adapter, carbon steel, line drawing 3",
+     "caption": "Northern Hydraulics catalogue image, NH phase 2c (2026-10-11), source https://northernhydraulics.net/wp-content/uploads/2025/04/FF6504-04-04-2.jpg"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "FF6504-04-04",
+     "position": 0,
+     "dimensions": {},
+     "portLabel": "7/16-20 JIC",
+     "port2Label": "9/16-18 ORFS",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "FF6504-06-06",
+     "position": 1,
+     "dimensions": {},
+     "portLabel": "9/16-18 JIC",
+     "port2Label": "11/16-16 ORFS",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "FF6504-08-08",
+     "position": 2,
+     "dimensions": {},
+     "portLabel": "3/4-16 JIC",
+     "port2Label": "13/16-16 ORFS",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "FF6504-10-10",
+     "position": 3,
+     "dimensions": {},
+     "portLabel": "7/8-14 JIC",
+     "port2Label": "1-14 ORFS",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "FF6504-12-12",
+     "position": 4,
+     "dimensions": {},
+     "portLabel": "1-1/16-12 JIC",
+     "port2Label": "1-3/16-12 ORFS",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "FF6504-16-16",
+     "position": 5,
+     "dimensions": {},
+     "portLabel": "1-5/16-12 JIC",
+     "port2Label": "1-7/16-12 ORFS",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    }
+   ],
+   "crossReferences": [],
+   "sourceFamily": "FF6504"
+  }
+ ],
+ "hold": []
+}

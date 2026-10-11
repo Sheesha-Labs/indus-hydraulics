@@ -118,6 +118,8 @@ type Entry = {
   faqs: { question: string; answer: string }[]
   specs: Spec[]
   searchAliases: string[]
+  /** Overrides the payload's `brandSlug` for this product (multi-brand payloads). */
+  brandSlug?: string
   /** `caption` is internal provenance (`Media.caption`), never rendered. */
   images: { file: string; alt: string; caption?: string | null }[]
   variants: Variant[]
@@ -375,11 +377,11 @@ async function main() {
   }
 
   // ── Products ──────────────────────────────────────────────────────────────
-  let brandId: string | null = null
-  if (payload.brandSlug) {
-    const b = await db.brand.findUnique({ where: { slug: payload.brandSlug }, select: { id: true } })
-    if (!b) throw new Error(`brand ${payload.brandSlug} does not exist`)
-    brandId = b.id
+  const brandIds = new Map<string, string>()
+  for (const slug of new Set([payload.brandSlug, ...payload.products.map((e) => e.brandSlug)].filter((s): s is string => !!s))) {
+    const b = await db.brand.findUnique({ where: { slug }, select: { id: true } })
+    if (!b) throw new Error(`brand ${slug} does not exist`)
+    brandIds.set(slug, b.id)
   }
   const parentOf = new Map(payload.categories.map((c) => [c.slug, c.parentSlug]))
   const sb = dryRun ? null : supabase()
@@ -419,11 +421,12 @@ async function main() {
     const aliases = [...new Set([...e.searchAliases, ...e.variants.map((v) => v.partNumber)])]
     const live = publish && !held.has(e.sku)
     if (publish && !live) kept++
+    const brandSlug = e.brandSlug ?? payload.brandSlug
     const data = {
       title: e.title,
       slug: e.slug,
       categoryId,
-      brandId,
+      brandId: brandSlug ? brandIds.get(brandSlug)! : null,
       specTemplateId: templateId,
       descriptionShort: e.descriptionShort,
       descriptionLong: e.descriptionLong,
