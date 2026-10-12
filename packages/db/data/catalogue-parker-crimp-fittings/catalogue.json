@@ -9307,14 +9307,14 @@
   },
   {
    "sku": "IH-PK-14943",
-   "slug": "parker-14943-hose-fitting-crimp-fitting-see-size-table",
-   "title": "Parker 14943 Hose Fitting Crimp Fitting, see size table (43 Series)",
+   "slug": "parker-14943-din-metric-banjo-crimp-fitting-straight",
+   "title": "Parker 14943 DIN Metric Banjo Crimp Fitting, Straight (43 Series)",
    "category": "braided-hose-crimp-fittings",
    "focusKeyword": "parker 14943 fitting",
-   "descriptionShort": "Parker 14943 43 Series crimp hose fitting — Hose Fitting, see size table, for braided hose. 6 sizes, hose -4 to -10, steel, chromium-6-free plating.",
-   "descriptionLong": "<p>The <strong>Parker 14943</strong> is a 43 Series permanent (crimp) hose fitting: Hose Fitting, see size table. Parker lists the 43 Series for Parker hydraulic braided, light spiral, specialty, suction and return hoses. It is a No-Skive fitting — it crimps over the hose cover, so the cover is not stripped before assembly.</p><h3>Specification</h3><ul><li>Series: Parker 43 (braided hose)</li><li>End connection: Hose Fitting</li><li>Form: see size table</li><li>Material: Steel, chromium-6-free plating</li><li>Hose bore: -4 to -10 (1/4\" to 5/8\")</li><li>End sizes: -10 to -22</li><li>Assembly: Parker Parkrimp crimpers</li></ul><h3>Sizes and part numbers</h3><p>6 Parker part numbers — the Sizes &amp; Part Numbers tab lists each with its end thread and hose bore. Parker numbers read style and series, then end size, then hose size: 14943-10-4 is a -10 end on -4 (1/4\") hose.</p><h3>Assembly</h3><p>Crimp the fitting only onto a hose Parker approves for the series, using the crimper and die setting Parker publishes for that fitting and hose. Do not mix fittings and hose from different series or makers in one assembly; the assembly is only rated as a matched combination.</p><h3>How to order</h3><p>Quote the Parker part number, or send the end connection, end size and hose. Price and lead time are confirmed with the quotation.</p>",
-   "seoTitle": "Parker 14943 Hose Fitting Crimp Fitting",
-   "seoDescription": "Parker 14943 43 Series crimp fitting, Hose Fitting, see size table. 6 sizes, hose -4 to -10, for braided hose. Quote by Parker part number.",
+   "descriptionShort": "Parker 14943 43 Series crimp hose fitting — DIN Metric Banjo, straight, for braided hose. 6 sizes, hose -4 to -10, steel, chromium-6-free plating.",
+   "descriptionLong": "<p>The <strong>Parker 14943</strong> is a 43 Series permanent (crimp) hose fitting: DIN Metric Banjo, straight. Parker lists the 43 Series for Parker hydraulic braided, light spiral, specialty, suction and return hoses. It is a No-Skive fitting — it crimps over the hose cover, so the cover is not stripped before assembly.</p><h3>Specification</h3><ul><li>Series: Parker 43 (braided hose)</li><li>End connection: DIN Metric Banjo</li><li>Form: straight</li><li>Material: Steel, chromium-6-free plating</li><li>Hose bore: -4 to -10 (1/4\" to 5/8\")</li><li>End sizes: 10 to 22 mm banjo</li><li>Assembly: Parker Parkrimp crimpers</li></ul><h3>Sizes and part numbers</h3><p>6 Parker part numbers — the Sizes &amp; Part Numbers tab lists each with its end thread and hose bore. Parker numbers read style and series, then end size, then hose size: 14943-10-4 is a 10 mm banjo on -4 (1/4\") hose.</p><h3>Assembly</h3><p>Crimp the fitting only onto a hose Parker approves for the series, using the crimper and die setting Parker publishes for that fitting and hose. Do not mix fittings and hose from different series or makers in one assembly; the assembly is only rated as a matched combination.</p><h3>How to order</h3><p>Quote the Parker part number, or send the end connection, end size and hose. Price and lead time are confirmed with the quotation.</p>",
+   "seoTitle": "Parker 14943 DIN Metric Banjo Crimp Fitting",
+   "seoDescription": "Parker 14943 43 Series crimp fitting, DIN Metric Banjo, straight. 6 sizes, hose -4 to -10, for braided hose. Quote by Parker part number.",
    "faqs": [
     {
      "question": "Which hoses does the Parker 43 Series fit?",
@@ -9322,7 +9322,7 @@
     },
     {
      "question": "How do I read the part number 14943-10-4?",
-     "answer": "14943 is the style and series (Hose Fitting, see size table, 43 Series). The next number is the end size (-10) and the last is the hose size (-4, 1/4\" bore)."
+     "answer": "14943 is the style and series (DIN Metric Banjo, straight, 43 Series). The next number is the banjo size (10 mm) and the last is the hose size (-4, 1/4\" bore)."
     },
     {
      "question": "Do I need to skive the hose?",
@@ -9350,7 +9350,7 @@
     {
      "group": "Identification",
      "label": "Fitting Configuration",
-     "value": "see size table",
+     "value": "Straight",
      "unit": null,
      "position": 1,
      "isFilterable": true,
@@ -9359,7 +9359,7 @@
     {
      "group": "Identification",
      "label": "End Connection",
-     "value": "Hose Fitting",
+     "value": "DIN Metric Banjo",
      "unit": null,
      "position": 2,
      "isFilterable": true,
@@ -9368,7 +9368,7 @@
     {
      "group": "Dimensions",
      "label": "Nominal Size Range",
-     "value": "Hose -4 to -10, end -10 to -22",
+     "value": "Hose -4 to -10, banjo 10 to 22 mm",
      "unit": null,
      "position": 3,
      "isFilterable": false,
@@ -9424,7 +9424,7 @@
    "images": [
     {
      "file": "93b59462bb22e61d534f6ccde0a2e754.jpg",
-     "alt": "Parker 14943 Hose Fitting crimp hose fitting, see size table, product photo",
+     "alt": "Parker 14943 DIN Metric Banjo crimp DIN Metric Banjo, straight, product photo",
      "caption": "Supplier catalogue image (2026-10-11)"
     }
    ],
@@ -9433,7 +9433,7 @@
      "partNumber": "14943-10-4",
      "position": 0,
      "dimensions": {},
-     "portLabel": "-10 (5/8\")",
+     "portLabel": "10 mm banjo",
      "port2Label": null,
      "port3Label": null,
      "competitorBrand": null,
@@ -9445,7 +9445,7 @@
      "partNumber": "14943-12-4",
      "position": 1,
      "dimensions": {},
-     "portLabel": "-12 (3/4\")",
+     "portLabel": "12 mm banjo",
      "port2Label": null,
      "port3Label": null,
      "competitorBrand": null,
@@ -9457,7 +9457,7 @@
      "partNumber": "14943-14-5",
      "position": 2,
      "dimensions": {},
-     "portLabel": "-14 (7/8\")",
+     "portLabel": "14 mm banjo",
      "port2Label": null,
      "port3Label": null,
      "competitorBrand": null,
@@ -9469,7 +9469,7 @@
      "partNumber": "14943-16-6",
      "position": 3,
      "dimensions": {},
-     "portLabel": "-16 (1\")",
+     "portLabel": "16 mm banjo",
      "port2Label": null,
      "port3Label": null,
      "competitorBrand": null,
@@ -9481,7 +9481,7 @@
      "partNumber": "14943-18-8",
      "position": 4,
      "dimensions": {},
-     "portLabel": "-18",
+     "portLabel": "18 mm banjo",
      "port2Label": null,
      "port3Label": null,
      "competitorBrand": null,
@@ -9493,7 +9493,7 @@
      "partNumber": "14943-22-10",
      "position": 5,
      "dimensions": {},
-     "portLabel": "-22",
+     "portLabel": "22 mm banjo",
      "port2Label": null,
      "port3Label": null,
      "competitorBrand": null,
@@ -16643,14 +16643,14 @@
   },
   {
    "sku": "IH-PK-1GU43",
-   "slug": "parker-1gu43-hose-fitting-crimp-fitting-see-size-table",
-   "title": "Parker 1GU43 Hose Fitting Crimp Fitting, see size table (43 Series)",
+   "slug": "parker-1gu43-female-bsp-parallel-pipe-60-cone-crimp-fitting-swivel-straight",
+   "title": "Parker 1GU43 Female BSP Parallel Pipe (60° Cone) Crimp Fitting, Swivel, Straight (43 Series)",
    "category": "braided-hose-crimp-fittings",
    "focusKeyword": "parker 1gu43 fitting",
-   "descriptionShort": "Parker 1GU43 43 Series crimp hose fitting — Hose Fitting, see size table, for braided hose. 1 size, hose -20, steel, chromium-6-free plating.",
-   "descriptionLong": "<p>The <strong>Parker 1GU43</strong> is a 43 Series permanent (crimp) hose fitting: Hose Fitting, see size table. Parker lists the 43 Series for Parker hydraulic braided, light spiral, specialty, suction and return hoses. It is a No-Skive fitting — it crimps over the hose cover, so the cover is not stripped before assembly.</p><h3>Specification</h3><ul><li>Series: Parker 43 (braided hose)</li><li>End connection: Hose Fitting</li><li>Form: see size table</li><li>Material: Steel, chromium-6-free plating</li><li>Hose bore: -20 (1-1/4\")</li><li>End sizes: -20</li><li>Assembly: Parker Parkrimp crimpers</li></ul><h3>Sizes and part numbers</h3><p>1 Parker part number — the Sizes &amp; Part Numbers tab lists each with its end thread and hose bore. Parker numbers read style and series, then end size, then hose size: 1GU43-20-20 is a -20 end on -20 (1-1/4\") hose.</p><h3>Assembly</h3><p>Crimp the fitting only onto a hose Parker approves for the series, using the crimper and die setting Parker publishes for that fitting and hose. Do not mix fittings and hose from different series or makers in one assembly; the assembly is only rated as a matched combination.</p><h3>How to order</h3><p>Quote the Parker part number, or send the end connection, end size and hose. Price and lead time are confirmed with the quotation.</p>",
-   "seoTitle": "Parker 1GU43 Hose Fitting Crimp Fitting",
-   "seoDescription": "Parker 1GU43 43 Series crimp fitting, Hose Fitting, see size table. 1 sizes, hose -20, for braided hose. Quote by Parker part number.",
+   "descriptionShort": "Parker 1GU43 43 Series crimp hose fitting — Female BSP Parallel Pipe (60° Cone), swivel, straight, for braided hose. 1 size, hose -20, steel, chromium-6-free plating.",
+   "descriptionLong": "<p>The <strong>Parker 1GU43</strong> is a 43 Series permanent (crimp) hose fitting: Female BSP Parallel Pipe (60° Cone), swivel, straight. Parker lists the 43 Series for Parker hydraulic braided, light spiral, specialty, suction and return hoses. It is a No-Skive fitting — it crimps over the hose cover, so the cover is not stripped before assembly.</p><h3>Specification</h3><ul><li>Series: Parker 43 (braided hose)</li><li>End connection: Female BSP Parallel Pipe (60° Cone)</li><li>Form: swivel, straight</li><li>Material: Steel, chromium-6-free plating</li><li>Hose bore: -20 (1-1/4\")</li><li>End sizes: -20</li><li>Assembly: Parker Parkrimp crimpers</li></ul><h3>Sizes and part numbers</h3><p>1 Parker part number — the Sizes &amp; Part Numbers tab lists each with its end thread and hose bore. Parker numbers read style and series, then end size, then hose size: 1GU43-20-20 is a -20 end on -20 (1-1/4\") hose.</p><h3>Assembly</h3><p>Crimp the fitting only onto a hose Parker approves for the series, using the crimper and die setting Parker publishes for that fitting and hose. Do not mix fittings and hose from different series or makers in one assembly; the assembly is only rated as a matched combination.</p><h3>How to order</h3><p>Quote the Parker part number, or send the end connection, end size and hose. Price and lead time are confirmed with the quotation.</p>",
+   "seoTitle": "Parker 1GU43 Female BSP Parallel Pipe (60° Cone) Crimp Fitting",
+   "seoDescription": "Parker 1GU43 43 Series crimp fitting, Female BSP Parallel Pipe (60° Cone), swivel, straight. 1 sizes, hose -20, for braided hose. Quote by Parker part number.",
    "faqs": [
     {
      "question": "Which hoses does the Parker 43 Series fit?",
@@ -16658,7 +16658,7 @@
     },
     {
      "question": "How do I read the part number 1GU43-20-20?",
-     "answer": "1GU43 is the style and series (Hose Fitting, see size table, 43 Series). The next number is the end size (-20) and the last is the hose size (-20, 1-1/4\" bore)."
+     "answer": "1GU43 is the style and series (Female BSP Parallel Pipe (60° Cone), swivel, straight, 43 Series). The next number is the end size (-20) and the last is the hose size (-20, 1-1/4\" bore)."
     },
     {
      "question": "Do I need to skive the hose?",
@@ -16686,7 +16686,7 @@
     {
      "group": "Identification",
      "label": "Fitting Configuration",
-     "value": "see size table",
+     "value": "Swivel, Straight",
      "unit": null,
      "position": 1,
      "isFilterable": true,
@@ -16695,7 +16695,7 @@
     {
      "group": "Identification",
      "label": "End Connection",
-     "value": "Hose Fitting",
+     "value": "Female BSP Parallel Pipe (60° Cone)",
      "unit": null,
      "position": 2,
      "isFilterable": true,
@@ -16755,7 +16755,7 @@
    "images": [
     {
      "file": "e6c42c6e8f6e8628349add0f94602f15.jpg",
-     "alt": "Parker 1GU43 Hose Fitting crimp hose fitting, see size table, product photo",
+     "alt": "Parker 1GU43 Female BSP Parallel Pipe (60° Cone) crimp Female BSP Parallel Pipe (60° Cone), swivel, straight, product photo",
      "caption": "Supplier catalogue image (2026-10-11)"
     }
    ],
@@ -16764,7 +16764,7 @@
      "partNumber": "1GU43-20-20",
      "position": 0,
      "dimensions": {},
-     "portLabel": "-20 (1-1/4\")",
+     "portLabel": "G1-1/4 BSPP (60° cone)",
      "port2Label": null,
      "port3Label": null,
      "competitorBrand": null,
@@ -20376,14 +20376,14 @@
   },
   {
    "sku": "IH-PK-1K577",
-   "slug": "parker-1k577-hose-fitting-crimp-fitting-see-size-table",
-   "title": "Parker 1K577 Hose Fitting Crimp Fitting, see size table (77 Series)",
+   "slug": "parker-1k577-komatsu-flange-head-crimp-fitting-straight",
+   "title": "Parker 1K577 Komatsu® Flange Head Crimp Fitting, Straight (77 Series)",
    "category": "spiral-hose-crimp-fittings",
    "focusKeyword": "parker 1k577 fitting",
-   "descriptionShort": "Parker 1K577 77 Series crimp hose fitting — Hose Fitting, see size table, for spiral hose. 1 size, hose -16, steel, zinc dichromate plated.",
-   "descriptionLong": "<p>The <strong>Parker 1K577</strong> is a 77 Series permanent (crimp) hose fitting: Hose Fitting, see size table. Parker lists the 77 Series for Parker hydraulic spiral hose (731 and related spiral hoses). It is a No-Skive fitting — it crimps over the hose cover, so the cover is not stripped before assembly.</p><h3>Specification</h3><ul><li>Series: Parker 77 (spiral hose)</li><li>End connection: Hose Fitting</li><li>Form: see size table</li><li>Material: Steel, zinc dichromate plated</li><li>Hose bore: -16 (1\")</li><li>End sizes: -16</li><li>Assembly: Parker Parkrimp crimpers</li></ul><h3>Sizes and part numbers</h3><p>1 Parker part number — the Sizes &amp; Part Numbers tab lists each with its end thread and hose bore. Parker numbers read style and series, then end size, then hose size: 1K577-16-16 is a -16 end on -16 (1\") hose.</p><h3>Assembly</h3><p>Crimp the fitting only onto a hose Parker approves for the series, using the crimper and die setting Parker publishes for that fitting and hose. Do not mix fittings and hose from different series or makers in one assembly; the assembly is only rated as a matched combination.</p><h3>How to order</h3><p>Quote the Parker part number, or send the end connection, end size and hose. Price and lead time are confirmed with the quotation.</p>",
-   "seoTitle": "Parker 1K577 Hose Fitting Crimp Fitting",
-   "seoDescription": "Parker 1K577 77 Series crimp fitting, Hose Fitting, see size table. 1 sizes, hose -16, for spiral hose. Quote by Parker part number.",
+   "descriptionShort": "Parker 1K577 77 Series crimp hose fitting — Komatsu® Flange Head, straight, for spiral hose. 1 size, hose -16, steel, zinc dichromate plated.",
+   "descriptionLong": "<p>The <strong>Parker 1K577</strong> is a 77 Series permanent (crimp) hose fitting: Komatsu® Flange Head, straight. Parker lists the 77 Series for Parker hydraulic spiral hose (731 and related spiral hoses). It is a No-Skive fitting — it crimps over the hose cover, so the cover is not stripped before assembly.</p><h3>Specification</h3><ul><li>Series: Parker 77 (spiral hose)</li><li>End connection: Komatsu® Flange Head</li><li>Form: straight</li><li>Material: Steel, zinc dichromate plated</li><li>Hose bore: -16 (1\")</li><li>End sizes: -16</li><li>Assembly: Parker Parkrimp crimpers</li></ul><h3>Sizes and part numbers</h3><p>1 Parker part number — the Sizes &amp; Part Numbers tab lists each with its end thread and hose bore. Parker numbers read style and series, then end size, then hose size: 1K577-16-16 is a -16 end on -16 (1\") hose.</p><h3>Assembly</h3><p>Crimp the fitting only onto a hose Parker approves for the series, using the crimper and die setting Parker publishes for that fitting and hose. Do not mix fittings and hose from different series or makers in one assembly; the assembly is only rated as a matched combination.</p><h3>How to order</h3><p>Quote the Parker part number, or send the end connection, end size and hose. Price and lead time are confirmed with the quotation.</p>",
+   "seoTitle": "Parker 1K577 Komatsu® Flange Head Crimp Fitting",
+   "seoDescription": "Parker 1K577 77 Series crimp fitting, Komatsu® Flange Head, straight. 1 sizes, hose -16, for spiral hose. Quote by Parker part number.",
    "faqs": [
     {
      "question": "Which hoses does the Parker 77 Series fit?",
@@ -20391,7 +20391,7 @@
     },
     {
      "question": "How do I read the part number 1K577-16-16?",
-     "answer": "1K577 is the style and series (Hose Fitting, see size table, 77 Series). The next number is the end size (-16) and the last is the hose size (-16, 1\" bore)."
+     "answer": "1K577 is the style and series (Komatsu® Flange Head, straight, 77 Series). The next number is the end size (-16) and the last is the hose size (-16, 1\" bore)."
     },
     {
      "question": "Do I need to skive the hose?",
@@ -20419,7 +20419,7 @@
     {
      "group": "Identification",
      "label": "Fitting Configuration",
-     "value": "see size table",
+     "value": "Straight",
      "unit": null,
      "position": 1,
      "isFilterable": true,
@@ -20428,7 +20428,7 @@
     {
      "group": "Identification",
      "label": "End Connection",
-     "value": "Hose Fitting",
+     "value": "Komatsu® Flange Head",
      "unit": null,
      "position": 2,
      "isFilterable": true,
@@ -20488,12 +20488,12 @@
    "images": [
     {
      "file": "6a3dc59b3ba9966b46267e4fe43d41a3.jpg",
-     "alt": "Parker 1K577 Hose Fitting crimp hose fitting, see size table, product photo",
+     "alt": "Parker 1K577 Komatsu® Flange Head crimp Komatsu® Flange Head, straight, product photo",
      "caption": "Supplier catalogue image (2026-10-11)"
     },
     {
      "file": "5b9f6a842793aeaa397b37b9c8d31205.jpg",
-     "alt": "Parker 1K577 Hose Fitting crimp hose fitting, see size table, dimension drawing",
+     "alt": "Parker 1K577 Komatsu® Flange Head crimp Komatsu® Flange Head, straight, dimension drawing",
      "caption": "Supplier catalogue image (2026-10-11)"
     }
    ],
@@ -20502,7 +20502,7 @@
      "partNumber": "1K577-16-16",
      "position": 0,
      "dimensions": {},
-     "portLabel": "-16 (1\")",
+     "portLabel": "1\" flange",
      "port2Label": null,
      "port3Label": null,
      "competitorBrand": null,
@@ -20515,14 +20515,14 @@
   },
   {
    "sku": "IH-PK-1K977",
-   "slug": "parker-1k977-hose-fitting-crimp-fitting-see-size-table",
-   "title": "Parker 1K977 Hose Fitting Crimp Fitting, see size table (77 Series)",
+   "slug": "parker-1k977-komatsu-flange-head-crimp-fitting-90-elbow",
+   "title": "Parker 1K977 Komatsu® Flange Head Crimp Fitting, 90° Elbow (77 Series)",
    "category": "spiral-hose-crimp-fittings",
    "focusKeyword": "parker 1k977 fitting",
-   "descriptionShort": "Parker 1K977 77 Series crimp hose fitting — Hose Fitting, see size table, for spiral hose. 1 size, hose -16, steel, zinc dichromate plated.",
-   "descriptionLong": "<p>The <strong>Parker 1K977</strong> is a 77 Series permanent (crimp) hose fitting: Hose Fitting, see size table. Parker lists the 77 Series for Parker hydraulic spiral hose (731 and related spiral hoses). It is a No-Skive fitting — it crimps over the hose cover, so the cover is not stripped before assembly.</p><h3>Specification</h3><ul><li>Series: Parker 77 (spiral hose)</li><li>End connection: Hose Fitting</li><li>Form: see size table</li><li>Material: Steel, zinc dichromate plated</li><li>Hose bore: -16 (1\")</li><li>End sizes: -16</li><li>Assembly: Parker Parkrimp crimpers</li></ul><h3>Sizes and part numbers</h3><p>1 Parker part number — the Sizes &amp; Part Numbers tab lists each with its end thread and hose bore. Parker numbers read style and series, then end size, then hose size: 1K977-16-16 is a -16 end on -16 (1\") hose.</p><h3>Assembly</h3><p>Crimp the fitting only onto a hose Parker approves for the series, using the crimper and die setting Parker publishes for that fitting and hose. Do not mix fittings and hose from different series or makers in one assembly; the assembly is only rated as a matched combination.</p><h3>How to order</h3><p>Quote the Parker part number, or send the end connection, end size and hose. Price and lead time are confirmed with the quotation.</p>",
-   "seoTitle": "Parker 1K977 Hose Fitting Crimp Fitting",
-   "seoDescription": "Parker 1K977 77 Series crimp fitting, Hose Fitting, see size table. 1 sizes, hose -16, for spiral hose. Quote by Parker part number.",
+   "descriptionShort": "Parker 1K977 77 Series crimp hose fitting — Komatsu® Flange Head, 90° elbow, for spiral hose. 1 size, hose -16, steel, zinc dichromate plated.",
+   "descriptionLong": "<p>The <strong>Parker 1K977</strong> is a 77 Series permanent (crimp) hose fitting: Komatsu® Flange Head, 90° elbow. Parker lists the 77 Series for Parker hydraulic spiral hose (731 and related spiral hoses). It is a No-Skive fitting — it crimps over the hose cover, so the cover is not stripped before assembly.</p><h3>Specification</h3><ul><li>Series: Parker 77 (spiral hose)</li><li>End connection: Komatsu® Flange Head</li><li>Form: 90° elbow</li><li>Material: Steel, zinc dichromate plated</li><li>Hose bore: -16 (1\")</li><li>End sizes: -16</li><li>Assembly: Parker Parkrimp crimpers</li></ul><h3>Sizes and part numbers</h3><p>1 Parker part number — the Sizes &amp; Part Numbers tab lists each with its end thread and hose bore. Parker numbers read style and series, then end size, then hose size: 1K977-16-16 is a -16 end on -16 (1\") hose.</p><h3>Assembly</h3><p>Crimp the fitting only onto a hose Parker approves for the series, using the crimper and die setting Parker publishes for that fitting and hose. Do not mix fittings and hose from different series or makers in one assembly; the assembly is only rated as a matched combination.</p><h3>How to order</h3><p>Quote the Parker part number, or send the end connection, end size and hose. Price and lead time are confirmed with the quotation.</p>",
+   "seoTitle": "Parker 1K977 Komatsu® Flange Head Crimp Fitting",
+   "seoDescription": "Parker 1K977 77 Series crimp fitting, Komatsu® Flange Head, 90° elbow. 1 sizes, hose -16, for spiral hose. Quote by Parker part number.",
    "faqs": [
     {
      "question": "Which hoses does the Parker 77 Series fit?",
@@ -20530,7 +20530,7 @@
     },
     {
      "question": "How do I read the part number 1K977-16-16?",
-     "answer": "1K977 is the style and series (Hose Fitting, see size table, 77 Series). The next number is the end size (-16) and the last is the hose size (-16, 1\" bore)."
+     "answer": "1K977 is the style and series (Komatsu® Flange Head, 90° elbow, 77 Series). The next number is the end size (-16) and the last is the hose size (-16, 1\" bore)."
     },
     {
      "question": "Do I need to skive the hose?",
@@ -20558,7 +20558,7 @@
     {
      "group": "Identification",
      "label": "Fitting Configuration",
-     "value": "see size table",
+     "value": "90° Elbow",
      "unit": null,
      "position": 1,
      "isFilterable": true,
@@ -20567,7 +20567,7 @@
     {
      "group": "Identification",
      "label": "End Connection",
-     "value": "Hose Fitting",
+     "value": "Komatsu® Flange Head",
      "unit": null,
      "position": 2,
      "isFilterable": true,
@@ -20627,12 +20627,12 @@
    "images": [
     {
      "file": "9ec392f1dd3a0c5364bea086016ef771.jpg",
-     "alt": "Parker 1K977 Hose Fitting crimp hose fitting, see size table, product photo",
+     "alt": "Parker 1K977 Komatsu® Flange Head crimp Komatsu® Flange Head, 90° elbow, product photo",
      "caption": "Supplier catalogue image (2026-10-11)"
     },
     {
      "file": "4cadec0da59407f62b4e02e13a7e6b58.jpg",
-     "alt": "Parker 1K977 Hose Fitting crimp hose fitting, see size table, dimension drawing",
+     "alt": "Parker 1K977 Komatsu® Flange Head crimp Komatsu® Flange Head, 90° elbow, dimension drawing",
      "caption": "Supplier catalogue image (2026-10-11)"
     }
    ],
@@ -20641,7 +20641,7 @@
      "partNumber": "1K977-16-16",
      "position": 0,
      "dimensions": {},
-     "portLabel": "-16 (1\")",
+     "portLabel": "1\" flange",
      "port2Label": null,
      "port3Label": null,
      "competitorBrand": null,
@@ -22370,14 +22370,14 @@
   },
   {
    "sku": "IH-PK-1XA77",
-   "slug": "parker-1xa77-hose-fitting-crimp-fitting-see-size-table",
-   "title": "Parker 1XA77 Hose Fitting Crimp Fitting, see size table (77 Series)",
+   "slug": "parker-1xa77-caterpillar-flange-head-crimp-fitting-straight",
+   "title": "Parker 1XA77 Caterpillar® Flange Head Crimp Fitting, Straight (77 Series)",
    "category": "spiral-hose-crimp-fittings",
    "focusKeyword": "parker 1xa77 fitting",
-   "descriptionShort": "Parker 1XA77 77 Series crimp hose fitting — Hose Fitting, see size table, for spiral hose. 7 sizes, hose -12 to -32, steel, zinc dichromate plated.",
-   "descriptionLong": "<p>The <strong>Parker 1XA77</strong> is a 77 Series permanent (crimp) hose fitting: Hose Fitting, see size table. Parker lists the 77 Series for Parker hydraulic spiral hose (731 and related spiral hoses). It is a No-Skive fitting — it crimps over the hose cover, so the cover is not stripped before assembly.</p><h3>Specification</h3><ul><li>Series: Parker 77 (spiral hose)</li><li>End connection: Hose Fitting</li><li>Form: see size table</li><li>Material: Steel, zinc dichromate plated</li><li>Hose bore: -12 to -32 (3/4\" to 2\")</li><li>End sizes: -12 to -32</li><li>Assembly: Parker Parkrimp crimpers</li></ul><h3>Sizes and part numbers</h3><p>7 Parker part numbers — the Sizes &amp; Part Numbers tab lists each with its end thread and hose bore. Parker numbers read style and series, then end size, then hose size: 1XA77-12-12 is a -12 end on -12 (3/4\") hose.</p><h3>Assembly</h3><p>Crimp the fitting only onto a hose Parker approves for the series, using the crimper and die setting Parker publishes for that fitting and hose. Do not mix fittings and hose from different series or makers in one assembly; the assembly is only rated as a matched combination.</p><h3>How to order</h3><p>Quote the Parker part number, or send the end connection, end size and hose. Price and lead time are confirmed with the quotation.</p>",
-   "seoTitle": "Parker 1XA77 Hose Fitting Crimp Fitting",
-   "seoDescription": "Parker 1XA77 77 Series crimp fitting, Hose Fitting, see size table. 7 sizes, hose -12 to -32, for spiral hose. Quote by Parker part number.",
+   "descriptionShort": "Parker 1XA77 77 Series crimp hose fitting — Caterpillar® Flange Head, straight, for spiral hose. 7 sizes, hose -12 to -32, steel, zinc dichromate plated.",
+   "descriptionLong": "<p>The <strong>Parker 1XA77</strong> is a 77 Series permanent (crimp) hose fitting: Caterpillar® Flange Head, straight. Parker lists the 77 Series for Parker hydraulic spiral hose (731 and related spiral hoses). It is a No-Skive fitting — it crimps over the hose cover, so the cover is not stripped before assembly.</p><h3>Specification</h3><ul><li>Series: Parker 77 (spiral hose)</li><li>End connection: Caterpillar® Flange Head</li><li>Form: straight</li><li>Material: Steel, zinc dichromate plated</li><li>Hose bore: -12 to -32 (3/4\" to 2\")</li><li>End sizes: -12 to -32</li><li>Assembly: Parker Parkrimp crimpers</li></ul><h3>Sizes and part numbers</h3><p>7 Parker part numbers — the Sizes &amp; Part Numbers tab lists each with its end thread and hose bore. Parker numbers read style and series, then end size, then hose size: 1XA77-12-12 is a -12 end on -12 (3/4\") hose.</p><h3>Assembly</h3><p>Crimp the fitting only onto a hose Parker approves for the series, using the crimper and die setting Parker publishes for that fitting and hose. Do not mix fittings and hose from different series or makers in one assembly; the assembly is only rated as a matched combination.</p><h3>How to order</h3><p>Quote the Parker part number, or send the end connection, end size and hose. Price and lead time are confirmed with the quotation.</p>",
+   "seoTitle": "Parker 1XA77 Caterpillar® Flange Head Crimp Fitting",
+   "seoDescription": "Parker 1XA77 77 Series crimp fitting, Caterpillar® Flange Head, straight. 7 sizes, hose -12 to -32, for spiral hose. Quote by Parker part number.",
    "faqs": [
     {
      "question": "Which hoses does the Parker 77 Series fit?",
@@ -22385,7 +22385,7 @@
     },
     {
      "question": "How do I read the part number 1XA77-12-12?",
-     "answer": "1XA77 is the style and series (Hose Fitting, see size table, 77 Series). The next number is the end size (-12) and the last is the hose size (-12, 3/4\" bore)."
+     "answer": "1XA77 is the style and series (Caterpillar® Flange Head, straight, 77 Series). The next number is the end size (-12) and the last is the hose size (-12, 3/4\" bore)."
     },
     {
      "question": "Do I need to skive the hose?",
@@ -22413,7 +22413,7 @@
     {
      "group": "Identification",
      "label": "Fitting Configuration",
-     "value": "see size table",
+     "value": "Straight",
      "unit": null,
      "position": 1,
      "isFilterable": true,
@@ -22422,7 +22422,7 @@
     {
      "group": "Identification",
      "label": "End Connection",
-     "value": "Hose Fitting",
+     "value": "Caterpillar® Flange Head",
      "unit": null,
      "position": 2,
      "isFilterable": true,
@@ -22488,17 +22488,17 @@
    "images": [
     {
      "file": "feadbf47048c565e64cc76910348b943.jpg",
-     "alt": "Parker 1XA77 Hose Fitting crimp hose fitting, see size table, product photo",
+     "alt": "Parker 1XA77 Caterpillar® Flange Head crimp Caterpillar® Flange Head, straight, product photo",
      "caption": "Supplier catalogue image (2026-10-11)"
     },
     {
      "file": "a414604f57dd4a0a763d0fcde409dc60.jpg",
-     "alt": "Parker 1XA77 Hose Fitting crimp hose fitting, see size table, dimension drawing",
+     "alt": "Parker 1XA77 Caterpillar® Flange Head crimp Caterpillar® Flange Head, straight, dimension drawing",
      "caption": "Supplier catalogue image (2026-10-11)"
     },
     {
      "file": "c9789f823391a7a5174441c667c176c6.jpg",
-     "alt": "Parker 1XA77 Hose Fitting crimp hose fitting, see size table, product photo 2",
+     "alt": "Parker 1XA77 Caterpillar® Flange Head crimp Caterpillar® Flange Head, straight, product photo 2",
      "caption": "Supplier catalogue image (2026-10-11)"
     }
    ],
@@ -22507,7 +22507,7 @@
      "partNumber": "1XA77-12-12",
      "position": 0,
      "dimensions": {},
-     "portLabel": "-12 (3/4\")",
+     "portLabel": "3/4\" flange",
      "port2Label": null,
      "port3Label": null,
      "competitorBrand": null,
@@ -22519,7 +22519,7 @@
      "partNumber": "1XA77-16-12",
      "position": 1,
      "dimensions": {},
-     "portLabel": "-16 (1\")",
+     "portLabel": "1\" flange",
      "port2Label": null,
      "port3Label": null,
      "competitorBrand": null,
@@ -22531,7 +22531,7 @@
      "partNumber": "1XA77-16-16",
      "position": 2,
      "dimensions": {},
-     "portLabel": "-16 (1\")",
+     "portLabel": "1\" flange",
      "port2Label": null,
      "port3Label": null,
      "competitorBrand": null,
@@ -22543,7 +22543,7 @@
      "partNumber": "1XA77-20-16",
      "position": 3,
      "dimensions": {},
-     "portLabel": "-20 (1-1/4\")",
+     "portLabel": "1-1/4\" flange",
      "port2Label": null,
      "port3Label": null,
      "competitorBrand": null,
@@ -22555,7 +22555,7 @@
      "partNumber": "1XA77-20-20",
      "position": 4,
      "dimensions": {},
-     "portLabel": "-20 (1-1/4\")",
+     "portLabel": "1-1/4\" flange",
      "port2Label": null,
      "port3Label": null,
      "competitorBrand": null,
@@ -22567,7 +22567,7 @@
      "partNumber": "1XA77-24-24",
      "position": 5,
      "dimensions": {},
-     "portLabel": "-24 (1-1/2\")",
+     "portLabel": "1-1/2\" flange",
      "port2Label": null,
      "port3Label": null,
      "competitorBrand": null,
@@ -22579,7 +22579,7 @@
      "partNumber": "1XA77-32-32",
      "position": 6,
      "dimensions": {},
-     "portLabel": "-32 (2\")",
+     "portLabel": "2\" flange",
      "port2Label": null,
      "port3Label": null,
      "competitorBrand": null,
@@ -22801,14 +22801,14 @@
   },
   {
    "sku": "IH-PK-1XN77",
-   "slug": "parker-1xn77-hose-fitting-crimp-fitting-see-size-table",
-   "title": "Parker 1XN77 Hose Fitting Crimp Fitting, see size table (77 Series)",
+   "slug": "parker-1xn77-caterpillar-flange-head-crimp-fitting-90-elbow",
+   "title": "Parker 1XN77 Caterpillar® Flange Head Crimp Fitting, 90° Elbow (77 Series)",
    "category": "spiral-hose-crimp-fittings",
    "focusKeyword": "parker 1xn77 fitting",
-   "descriptionShort": "Parker 1XN77 77 Series crimp hose fitting — Hose Fitting, see size table, for spiral hose. 6 sizes, hose -12 to -20, steel, zinc dichromate plated.",
-   "descriptionLong": "<p>The <strong>Parker 1XN77</strong> is a 77 Series permanent (crimp) hose fitting: Hose Fitting, see size table. Parker lists the 77 Series for Parker hydraulic spiral hose (731 and related spiral hoses). It is a No-Skive fitting — it crimps over the hose cover, so the cover is not stripped before assembly.</p><h3>Specification</h3><ul><li>Series: Parker 77 (spiral hose)</li><li>End connection: Hose Fitting</li><li>Form: see size table</li><li>Material: Steel, zinc dichromate plated</li><li>Hose bore: -12 to -20 (3/4\" to 1-1/4\")</li><li>End sizes: -12 to -24</li><li>Assembly: Parker Parkrimp crimpers</li></ul><h3>Sizes and part numbers</h3><p>6 Parker part numbers — the Sizes &amp; Part Numbers tab lists each with its end thread and hose bore. Parker numbers read style and series, then end size, then hose size: 1XN77-12-12 is a -12 end on -12 (3/4\") hose.</p><h3>Assembly</h3><p>Crimp the fitting only onto a hose Parker approves for the series, using the crimper and die setting Parker publishes for that fitting and hose. Do not mix fittings and hose from different series or makers in one assembly; the assembly is only rated as a matched combination.</p><h3>How to order</h3><p>Quote the Parker part number, or send the end connection, end size and hose. Price and lead time are confirmed with the quotation.</p>",
-   "seoTitle": "Parker 1XN77 Hose Fitting Crimp Fitting",
-   "seoDescription": "Parker 1XN77 77 Series crimp fitting, Hose Fitting, see size table. 6 sizes, hose -12 to -20, for spiral hose. Quote by Parker part number.",
+   "descriptionShort": "Parker 1XN77 77 Series crimp hose fitting — Caterpillar® Flange Head, 90° elbow, for spiral hose. 6 sizes, hose -12 to -20, steel, zinc dichromate plated.",
+   "descriptionLong": "<p>The <strong>Parker 1XN77</strong> is a 77 Series permanent (crimp) hose fitting: Caterpillar® Flange Head, 90° elbow. Parker lists the 77 Series for Parker hydraulic spiral hose (731 and related spiral hoses). It is a No-Skive fitting — it crimps over the hose cover, so the cover is not stripped before assembly.</p><h3>Specification</h3><ul><li>Series: Parker 77 (spiral hose)</li><li>End connection: Caterpillar® Flange Head</li><li>Form: 90° elbow</li><li>Material: Steel, zinc dichromate plated</li><li>Hose bore: -12 to -20 (3/4\" to 1-1/4\")</li><li>End sizes: -12 to -24</li><li>Assembly: Parker Parkrimp crimpers</li></ul><h3>Sizes and part numbers</h3><p>6 Parker part numbers — the Sizes &amp; Part Numbers tab lists each with its end thread and hose bore. Parker numbers read style and series, then end size, then hose size: 1XN77-12-12 is a -12 end on -12 (3/4\") hose.</p><h3>Assembly</h3><p>Crimp the fitting only onto a hose Parker approves for the series, using the crimper and die setting Parker publishes for that fitting and hose. Do not mix fittings and hose from different series or makers in one assembly; the assembly is only rated as a matched combination.</p><h3>How to order</h3><p>Quote the Parker part number, or send the end connection, end size and hose. Price and lead time are confirmed with the quotation.</p>",
+   "seoTitle": "Parker 1XN77 Caterpillar® Flange Head Crimp Fitting",
+   "seoDescription": "Parker 1XN77 77 Series crimp fitting, Caterpillar® Flange Head, 90° elbow. 6 sizes, hose -12 to -20, for spiral hose. Quote by Parker part number.",
    "faqs": [
     {
      "question": "Which hoses does the Parker 77 Series fit?",
@@ -22816,7 +22816,7 @@
     },
     {
      "question": "How do I read the part number 1XN77-12-12?",
-     "answer": "1XN77 is the style and series (Hose Fitting, see size table, 77 Series). The next number is the end size (-12) and the last is the hose size (-12, 3/4\" bore)."
+     "answer": "1XN77 is the style and series (Caterpillar® Flange Head, 90° elbow, 77 Series). The next number is the end size (-12) and the last is the hose size (-12, 3/4\" bore)."
     },
     {
      "question": "Do I need to skive the hose?",
@@ -22844,7 +22844,7 @@
     {
      "group": "Identification",
      "label": "Fitting Configuration",
-     "value": "see size table",
+     "value": "90° Elbow",
      "unit": null,
      "position": 1,
      "isFilterable": true,
@@ -22853,7 +22853,7 @@
     {
      "group": "Identification",
      "label": "End Connection",
-     "value": "Hose Fitting",
+     "value": "Caterpillar® Flange Head",
      "unit": null,
      "position": 2,
      "isFilterable": true,
@@ -22918,17 +22918,17 @@
    "images": [
     {
      "file": "8fac60af3682f02e9ab4d1772743b514.jpg",
-     "alt": "Parker 1XN77 Hose Fitting crimp hose fitting, see size table, product photo",
+     "alt": "Parker 1XN77 Caterpillar® Flange Head crimp Caterpillar® Flange Head, 90° elbow, product photo",
      "caption": "Supplier catalogue image (2026-10-11)"
     },
     {
      "file": "23a5ef6d05de6f2546213d08abb89732.jpg",
-     "alt": "Parker 1XN77 Hose Fitting crimp hose fitting, see size table, dimension drawing",
+     "alt": "Parker 1XN77 Caterpillar® Flange Head crimp Caterpillar® Flange Head, 90° elbow, dimension drawing",
      "caption": "Supplier catalogue image (2026-10-11)"
     },
     {
      "file": "978ad77b98f872df3f4f27527ae31090.jpg",
-     "alt": "Parker 1XN77 Hose Fitting crimp hose fitting, see size table, product photo 2",
+     "alt": "Parker 1XN77 Caterpillar® Flange Head crimp Caterpillar® Flange Head, 90° elbow, product photo 2",
      "caption": "Supplier catalogue image (2026-10-11)"
     }
    ],
@@ -22937,7 +22937,7 @@
      "partNumber": "1XN77-12-12",
      "position": 0,
      "dimensions": {},
-     "portLabel": "-12 (3/4\")",
+     "portLabel": "3/4\" flange",
      "port2Label": null,
      "port3Label": null,
      "competitorBrand": null,
@@ -22949,7 +22949,7 @@
      "partNumber": "1XN77-16-12",
      "position": 1,
      "dimensions": {},
-     "portLabel": "-16 (1\")",
+     "portLabel": "1\" flange",
      "port2Label": null,
      "port3Label": null,
      "competitorBrand": null,
@@ -22961,7 +22961,7 @@
      "partNumber": "1XN77-16-16",
      "position": 2,
      "dimensions": {},
-     "portLabel": "-16 (1\")",
+     "portLabel": "1\" flange",
      "port2Label": null,
      "port3Label": null,
      "competitorBrand": null,
@@ -22973,7 +22973,7 @@
      "partNumber": "1XN77-20-16",
      "position": 3,
      "dimensions": {},
-     "portLabel": "-20 (1-1/4\")",
+     "portLabel": "1-1/4\" flange",
      "port2Label": null,
      "port3Label": null,
      "competitorBrand": null,
@@ -22985,7 +22985,7 @@
      "partNumber": "1XN77-20-20",
      "position": 4,
      "dimensions": {},
-     "portLabel": "-20 (1-1/4\")",
+     "portLabel": "1-1/4\" flange",
      "port2Label": null,
      "port3Label": null,
      "competitorBrand": null,
@@ -22997,7 +22997,7 @@
      "partNumber": "1XN77-24-20",
      "position": 5,
      "dimensions": {},
-     "portLabel": "-24 (1-1/2\")",
+     "portLabel": "1-1/2\" flange",
      "port2Label": null,
      "port3Label": null,
      "competitorBrand": null,
@@ -23163,12 +23163,5 @@
    "crossReferences": []
   }
  ],
- "hold": [
-  "IH-PK-14943",
-  "IH-PK-1GU43",
-  "IH-PK-1K577",
-  "IH-PK-1K977",
-  "IH-PK-1XA77",
-  "IH-PK-1XN77"
- ]
+ "hold": []
 }
