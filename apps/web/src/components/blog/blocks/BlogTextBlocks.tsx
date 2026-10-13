@@ -30,6 +30,17 @@ export function BlogSectionHeadView({ block }: { block: SectionHeadBlock }) {
   )
 }
 
+/**
+ * `article` sets body copy at 18px; `hub` — a topic hub's guide, which sits
+ * under a page of article listings — at 17px on a slightly looser leading.
+ */
+export type BlogTextVariant = 'article' | 'hub'
+
+const BODY: Record<BlogTextVariant, string> = {
+  article: 'text-[16px] leading-[1.7] min-[761px]:text-[18px]',
+  hub: 'text-[16px] leading-[1.7] min-[761px]:text-[17px] min-[761px]:leading-[1.72]',
+}
+
 export function BlogLeadView({ block }: { block: LeadBlock }) {
   return (
     <p
@@ -39,10 +50,16 @@ export function BlogLeadView({ block }: { block: LeadBlock }) {
   )
 }
 
-export function BlogParagraphView({ block }: { block: ParagraphBlock }) {
+export function BlogParagraphView({
+  block,
+  variant = 'article',
+}: {
+  block: ParagraphBlock
+  variant?: BlogTextVariant
+}) {
   return (
     <p
-      className="ih-article-html text-pretty text-[16px] leading-[1.7] text-ih-ink-2 min-[761px]:text-[18px]"
+      className={`ih-article-html text-pretty text-ih-ink-2 ${BODY[variant]}`}
       dangerouslySetInnerHTML={{ __html: block.html }}
     />
   )
@@ -59,10 +76,10 @@ export function BlogParagraphView({ block }: { block: ParagraphBlock }) {
  * The HTML is sanitised on the way IN (`sanitizeBlogProseHtml`, on save), not
  * here.
  */
-export function BlogProseView({ block }: { block: ProseBlock }) {
+export function BlogProseView({ block, variant = 'article' }: { block: ProseBlock; variant?: BlogTextVariant }) {
   return (
     <div
-      className="ih-article-html text-pretty text-[16px] leading-[1.7] text-ih-ink-2 min-[761px]:text-[18px]"
+      className={`ih-article-html text-pretty text-ih-ink-2 ${BODY[variant]}`}
       dangerouslySetInnerHTML={{ __html: block.html }}
     />
   )

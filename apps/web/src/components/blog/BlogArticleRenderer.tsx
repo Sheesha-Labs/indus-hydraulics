@@ -14,7 +14,13 @@ import TeamListBlockView from '../services/blocks/TeamListBlock'
 
 import AsOfStampBlockView from './blocks/AsOfStampBlock'
 import BlogSopBlockView from './blocks/BlogSopBlock'
-import { BlogLeadView, BlogParagraphView, BlogProseView, BlogSectionHeadView } from './blocks/BlogTextBlocks'
+import {
+  BlogLeadView,
+  BlogParagraphView,
+  BlogProseView,
+  BlogSectionHeadView,
+  type BlogTextVariant,
+} from './blocks/BlogTextBlocks'
 import BlogFigureBlockView from './blocks/BlogFigureBlock'
 import CalloutBlockView from './blocks/CalloutBlock'
 import CategoryLinkBlockView from './blocks/CategoryLinkBlock'
@@ -47,6 +53,8 @@ type Props = {
   skip?: ReadonlySet<number>
   /** Lets the article's progress bar find the body. */
   id?: string
+  /** `hub` sets body copy a size down, for a topic hub's guide. */
+  variant?: BlogTextVariant
 }
 
 /**
@@ -62,7 +70,7 @@ type Props = {
  * over one bad block, with the page chrome still rendering as if nothing were
  * wrong. Here invalid blocks are dropped upstream and logged by name.
  */
-export default function BlogArticleRenderer({ article, contact, skip, id }: Props) {
+export default function BlogArticleRenderer({ article, contact, skip, id, variant = 'article' }: Props) {
   if (article.dropped.length > 0) {
     console.error(
       '[BlogArticleRenderer] dropped invalid blocks',
@@ -77,7 +85,7 @@ export default function BlogArticleRenderer({ article, contact, skip, id }: Prop
     // Same fix as the service ArticleRenderer.
     <div id={id} className="flex min-w-0 flex-col gap-6">
       {article.blocks.map((block, i) =>
-        skip?.has(i) ? null : <BlockSwitch key={i} block={block} article={article} contact={contact} />,
+        skip?.has(i) ? null : <BlockSwitch key={i} block={block} article={article} contact={contact} variant={variant} />,
       )}
     </div>
   )
@@ -87,10 +95,12 @@ function BlockSwitch({
   block,
   article,
   contact,
+  variant,
 }: {
   block: BlogBlock
   article: ResolvedBlogArticle
   contact: ArticleContact
+  variant: BlogTextVariant
 }) {
   switch (block.type) {
     // ── Shared with ServiceCase ──────────────────────────────────────────
@@ -99,7 +109,7 @@ function BlockSwitch({
     case 'lead':
       return <BlogLeadView block={block} />
     case 'paragraph':
-      return <BlogParagraphView block={block} />
+      return <BlogParagraphView block={block} variant={variant} />
     case 'problem_solution':
       return <ProblemSolutionBlockView block={block} />
     case 'figure':
@@ -119,7 +129,7 @@ function BlockSwitch({
 
     // ── Blog-specific ────────────────────────────────────────────────────
     case 'prose':
-      return <BlogProseView block={block} />
+      return <BlogProseView block={block} variant={variant} />
     case 'key_takeaways':
       return <KeyTakeawaysBlockView block={block} />
     case 'direct_answer':
