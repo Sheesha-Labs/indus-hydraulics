@@ -1,20 +1,20 @@
 import type { BlogBlock } from '@indus/domain'
 
-// The eleven blocks shared with ServiceCase reuse their existing views rather
-// than being reimplemented. The schemas are literally the same types, so a
-// second set would be duplicate markup guaranteed to drift.
+// Six blocks shared with ServiceCase reuse their existing views. The schemas
+// are literally the same types, and none of the six appears in a post today.
+// The other four shared types — section_head, lead, paragraph, sop_block — have
+// blog views of their own (BlogTextBlocks, BlogSopBlock): the article redesign
+// restyled them, and the case studies keep theirs.
 import ApproachGridBlockView from '../services/blocks/ApproachGridBlock'
-import LeadBlockView from '../services/blocks/LeadBlock'
-import ParagraphBlockView from '../services/blocks/ParagraphBlock'
 import ProblemSolutionBlockView from '../services/blocks/ProblemSolutionBlock'
 import PullQuoteBlockView from '../services/blocks/PullQuoteBlock'
 import ResultBoxBlockView from '../services/blocks/ResultBoxBlock'
-import SectionHeadBlockView from '../services/blocks/SectionHeadBlock'
-import SopBlockView from '../services/blocks/SopBlock'
 import SpecTableBlockView from '../services/blocks/SpecTableBlock'
 import TeamListBlockView from '../services/blocks/TeamListBlock'
 
 import AsOfStampBlockView from './blocks/AsOfStampBlock'
+import BlogSopBlockView from './blocks/BlogSopBlock'
+import { BlogLeadView, BlogParagraphView, BlogProseView, BlogSectionHeadView } from './blocks/BlogTextBlocks'
 import BlogFigureBlockView from './blocks/BlogFigureBlock'
 import CalloutBlockView from './blocks/CalloutBlock'
 import CategoryLinkBlockView from './blocks/CategoryLinkBlock'
@@ -29,7 +29,6 @@ import KeyTakeawaysBlockView from './blocks/KeyTakeawaysBlock'
 import MarketReachBlockView from './blocks/MarketReachBlock'
 import PageLinkBlockView from './blocks/PageLinkBlock'
 import ProductEmbedBlockView from './blocks/ProductEmbedBlock'
-import ProseBlockView from './blocks/ProseBlock'
 import ReferencesBlockView from './blocks/ReferencesBlock'
 import RelatedArticlesBlockView from './blocks/RelatedArticlesBlock'
 import StandardCitationBlockView from './blocks/StandardCitationBlock'
@@ -40,6 +39,14 @@ import type { ResolvedBlogArticle } from '../../lib/blog-article'
 type Props = {
   article: ResolvedBlogArticle
   contact: ArticleContact
+  /**
+   * Indexes into `article.blocks` that another part of the page renders —
+   * the article layout lifts the takeaways to the top and gathers the link
+   * blocks into "What next". Everything else renders here in source order.
+   */
+  skip?: ReadonlySet<number>
+  /** Lets the article's progress bar find the body. */
+  id?: string
 }
 
 /**
@@ -55,7 +62,7 @@ type Props = {
  * over one bad block, with the page chrome still rendering as if nothing were
  * wrong. Here invalid blocks are dropped upstream and logged by name.
  */
-export default function BlogArticleRenderer({ article, contact }: Props) {
+export default function BlogArticleRenderer({ article, contact, skip, id }: Props) {
   if (article.dropped.length > 0) {
     console.error(
       '[BlogArticleRenderer] dropped invalid blocks',
@@ -64,15 +71,15 @@ export default function BlogArticleRenderer({ article, contact }: Props) {
   }
 
   return (
-    // min-w-0: as a grid item this defaults to min-width:auto, so the widest
-    // comparison table would set the column width and the overflow-x-auto
+    // min-w-0: as a flex or grid item this defaults to min-width:auto, so the
+    // widest comparison table would set the column width and the overflow-x-auto
     // wrapper inside it would have no constrained parent to scroll within.
     // Same fix as the service ArticleRenderer.
-    <article className="sc-article-body min-w-0">
-      {article.blocks.map((block, i) => (
-        <BlockSwitch key={i} block={block} article={article} contact={contact} />
-      ))}
-    </article>
+    <div id={id} className="flex min-w-0 flex-col gap-6">
+      {article.blocks.map((block, i) =>
+        skip?.has(i) ? null : <BlockSwitch key={i} block={block} article={article} contact={contact} />,
+      )}
+    </div>
   )
 }
 
@@ -88,11 +95,11 @@ function BlockSwitch({
   switch (block.type) {
     // ── Shared with ServiceCase ──────────────────────────────────────────
     case 'section_head':
-      return <SectionHeadBlockView block={block} />
+      return <BlogSectionHeadView block={block} />
     case 'lead':
-      return <LeadBlockView block={block} />
+      return <BlogLeadView block={block} />
     case 'paragraph':
-      return <ParagraphBlockView block={block} />
+      return <BlogParagraphView block={block} />
     case 'problem_solution':
       return <ProblemSolutionBlockView block={block} />
     case 'figure':
@@ -102,7 +109,7 @@ function BlockSwitch({
     case 'approach_grid':
       return <ApproachGridBlockView block={block} />
     case 'sop_block':
-      return <SopBlockView block={block} />
+      return <BlogSopBlockView block={block} />
     case 'spec_table':
       return <SpecTableBlockView block={block} />
     case 'result_box':
@@ -112,7 +119,7 @@ function BlockSwitch({
 
     // ── Blog-specific ────────────────────────────────────────────────────
     case 'prose':
-      return <ProseBlockView block={block} />
+      return <BlogProseView block={block} />
     case 'key_takeaways':
       return <KeyTakeawaysBlockView block={block} />
     case 'direct_answer':
