@@ -15,7 +15,7 @@ export const BLOG_PAGE: MasterPageDef = {
     {
       key: 'hero',
       label: 'Hero',
-      description: 'Eyebrow, headline, standfirst and the article count.',
+      description: 'Eyebrow, headline and standfirst. The search box and article count beside them are fixed.',
       locked: true,
       fields: [eyebrow(), heading({ max: 200 }), area('body', 'Standfirst', { max: 400 })],
       defaults: {
@@ -27,24 +27,27 @@ export const BLOG_PAGE: MasterPageDef = {
     },
     {
       key: 'topics',
-      label: 'Topic chips',
-      description: 'The scrolling rail of category links.',
-      dataNote: 'The chips are the published blog categories, with live article counts.',
-      fields: [text('all_label', 'Label for the "everything" chip', { max: 40 })],
-      defaults: { all_label: 'All topics' },
+      label: 'Topic index',
+      description: 'The grid of topic tiles under the hero. Switch off to hide it.',
+      dataNote:
+        'One tile per published blog category, with its live article count. The heading is set in "Topic index — heading".',
+      // The "All topics" chip label (all_label) is retired: /blog itself is the
+      // all-topics view, so the tile grid has no "everything" entry to label.
+      fields: [],
+      defaults: {},
     },
     {
       key: 'articles',
       label: 'Article list',
-      description: 'The lead card and the grid beneath it.',
+      description: 'The grid of the newest articles, and the message shown when none are published.',
       dataNote: 'The cards are the published articles, newest first.',
       fields: [text('empty_message', 'Message when nothing is published', { max: 160 })],
-      defaults: { empty_message: 'No posts published yet.' },
+      defaults: { empty_message: 'No articles have been published yet.' },
     },
     {
       key: 'newsletter_card',
-      label: 'Sidebar — newsletter',
-      description: 'The navy sign-up card in the sidebar.',
+      label: 'Navy band — newsletter',
+      description: 'The sign-up panel in the navy band at the foot of the page.',
       fields: [eyebrow(), heading({ max: 120 }), area('body', 'Body', { max: 300 })],
       defaults: {
         eyebrow: 'Newsletter · 2× a month',
@@ -54,16 +57,17 @@ export const BLOG_PAGE: MasterPageDef = {
     },
     {
       key: 'topics_card',
-      label: 'Sidebar — browse by topic',
-      description: 'The category list in the sidebar.',
-      dataNote: 'The rows are the same categories as the chip rail.',
+      label: 'Topic index — heading',
+      description:
+        'The heading over the topic tiles. Shown or hidden with "Topic index"; its position in this list has no effect.',
+      dataNote: 'The tiles are the published blog categories.',
       fields: [heading({ max: 120 })],
       defaults: { heading: 'Browse by topic' },
     },
     {
       key: 'help_card',
-      label: 'Sidebar — ask an engineer',
-      description: 'The prompt card at the foot of the sidebar.',
+      label: 'Navy band — ask an engineer',
+      description: 'The prompt panel in the navy band. The two band panels follow the order of this list.',
       fields: [heading({ max: 120 }), area('body', 'Body', { max: 300 }), ...ctaPair('', 'Button label')],
       defaults: {
         heading: 'Have a question?',
