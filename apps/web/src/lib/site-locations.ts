@@ -54,7 +54,11 @@ export const OFFICES: Office[] = [
     flag: 'UAE · HQ',
     countryCode: 'AE',
     address: {
-      streetAddress: 'Office No 310, Al Hilal Bank Building, Al Nahda Street, Al Quasis-2',
+      // "Al Qusais" — the spelling Google Maps, the Dubai government and every
+      // directory listing use. "Al Quasis" was a misspelling, and an address
+      // that does not match the business's other listings character for
+      // character weakens the one signal tying them to this site.
+      streetAddress: 'Office No 310, Al Hilal Bank Building, Al Nahda Street, Al Qusais 2',
       addressLocality: 'Dubai',
       postalCode: '87556',
       addressCountry: 'AE',

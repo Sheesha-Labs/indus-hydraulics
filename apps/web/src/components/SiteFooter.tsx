@@ -7,6 +7,7 @@ import SocialIcon from './SocialIcon'
 import { getNavMenu } from '../lib/navigation'
 import { getFooterSocials, type ResolvedFooterSocial } from '../lib/footer'
 import { getStoreSettings, type ResolvedStoreSettings } from '../lib/store-settings'
+import { OFFICES, formatOfficeAddress } from '../lib/site-locations'
 
 export default async function SiteFooter() {
   const [main, legal, settings, socials] = await Promise.all([
@@ -167,23 +168,55 @@ function FooterColumn({ column }: { column: ResolvedNavItem }) {
 }
 
 function ContactBlock({ settings }: { settings: ResolvedStoreSettings }) {
+  // The street address, on every page. It lived only in the JSON-LD, so a
+  // crawler matching this site to its Google Business Profile and directory
+  // listings found the address in the markup and nowhere a reader could see.
+  // Same source as the Organization schema, so the two cannot disagree.
+  const hq = OFFICES.find((o) => o.kind === 'hq')
+  const addressLines = hq ? formatOfficeAddress(hq).split('\n') : []
   const hasContact =
-    settings.contactPhone || settings.contactEmail || settings.contactHours || settings.contactLocationLabel
+    settings.contactPhone ||
+    settings.contactEmail ||
+    settings.contactHours ||
+    settings.contactLocationLabel ||
+    addressLines.length > 0
   if (!hasContact) return <div />
   return (
-    <div>
+    // Width-capped because this column's grid track is `auto`: an uncapped
+    // street address sized it to the whole line and squeezed the link columns
+    // until they overlapped.
+    <div className="md:max-w-[260px]">
       <h3 className="mb-4 font-mono text-[10.5px] font-medium uppercase tracking-[0.12em] text-[oklch(0.68_0.03_250)]">Contact</h3>
       <div className="flex flex-col gap-3 text-[13px]">
-        {(settings.contactLocationLabel || settings.contactPhone || settings.contactEmail) && (
-          <div>
+        {(settings.contactLocationLabel || settings.contactPhone || settings.contactEmail || addressLines.length > 0) && (
+          <address className="not-italic">
             {settings.contactLocationLabel && (
               <div className="mb-0.5 font-mono text-[10px] uppercase text-[oklch(0.68_0.03_250)]">
                 {settings.contactLocationLabel}
               </div>
             )}
-            {settings.contactPhone && <div>{settings.contactPhone}</div>}
-            {settings.contactEmail && <div>{settings.contactEmail}</div>}
-          </div>
+            {addressLines.length > 0 && (
+              <div className="mb-1.5">
+                {addressLines.map((line) => (
+                  <div key={line}>{line}</div>
+                ))}
+              </div>
+            )}
+            {settings.contactPhone && (
+              <div>
+                <a href={`tel:${settings.contactPhone.replace(/[^+\d]/g, '')}`} className="hover:text-white transition-colors">
+                  {settings.contactPhone}
+                </a>
+              </div>
+            )}
+            {settings.contactEmail && (
+              <div>
+                <a href={`mailto:${settings.contactEmail}`} className="hover:text-white transition-colors">
+                  {settings.contactEmail}
+                </a>
+              </div>
+            )}
+          </address>
         )}
         {settings.contactHours && (
           <div>

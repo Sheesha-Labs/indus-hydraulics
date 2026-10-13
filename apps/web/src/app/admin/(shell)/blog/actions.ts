@@ -5,6 +5,7 @@ import { db } from '@indus/db'
 import { auth } from '../../../../lib/admin-auth'
 import { ROLES, requireRole } from '../../../../lib/rbac'
 import { invalidateBlogPosts } from '../../../../lib/cache-tags'
+import { notifyIndexNow } from '../../../../lib/indexnow'
 import { fail, failFromError, ok, type Result } from '../../../../lib/result'
 
 /**
@@ -29,6 +30,7 @@ function revalidateBlog(slug?: string) {
   revalidatePath('/admin/blog')
   revalidatePath('/blog')
   if (slug) revalidatePath(`/blog/${slug}`)
+  notifyIndexNow([slug ? `/blog/${slug}` : null])
   // The homepage rail and the blog index read through `unstable_cache` on the
   // `blog-posts` tag; without this purge the post lingers there.
   invalidateBlogPosts()

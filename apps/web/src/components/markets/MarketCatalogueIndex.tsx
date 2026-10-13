@@ -1,17 +1,24 @@
 import Link from 'next/link'
-import { Badge, Button } from '@indus/ui'
+import { Button } from '@indus/ui'
 import MarketFigure from './MarketFigure'
 
 export type CatalogueSubRange = { slug: string; name: string }
 
 /**
- * Sub-range count at which a cluster card spans both columns.
+ * How many sub-range links a card shows before "Show all".
  *
- * Exported because `lib/market-catalogue.ts` sorts wide clusters to the front
- * and has to agree with the card about which ones those are — two independent
- * copies of "20" is exactly the pair that drifts.
+ * The rest are NOT fetched on demand or rendered by script: they sit in the
+ * server-rendered HTML inside a native `<details>`, so every link and every
+ * string is in the document a crawler reads. Google indexes content in a
+ * collapsed disclosure; hiding it from the HTML would not be the same thing.
  */
-export const WIDE_CARD_THRESHOLD = 20
+export const CATALOGUE_VISIBLE_RANGES = 6
+
+/**
+ * A card with only one or two more ranges than the visible count shows them
+ * all. "Show 1 more" costs a click to reveal less than the button itself.
+ */
+const COLLAPSE_SLACK = 2
 
 export type CatalogueCluster = {
   slug: string
@@ -32,19 +39,22 @@ export type CatalogueCluster = {
  * FAQ so the crawler meets the link mass early and the reader hits the form at
  * peak intent.
  *
- * BUILT FROM THE LIVE CATEGORY TREE, NOT FROM A LIST. The design handoff ships
- * a frozen snapshot of 14 clusters and 157 sub-ranges; the tree in the
- * database is already at 168 and moves every time the catalogue does. A page
- * that promises ranges we have retired, or omits ones we have added, is worse
- * than one that recounts itself on every build — so the counts in the kicker
- * and the badges are computed, never written.
+ * ALL OF IT IS IN THE HTML; ONLY SOME OF IT IS OPEN. Each card shows its first
+ * few sub-ranges and keeps the rest in a `<details>` the reader opens. Until
+ * 2026-10 every link was always open and the section ran to ~5,500px — 40% of
+ * the page — with category photographs cropped into 9:1 letterbox strips to
+ * keep the cards short. Collapsing the long tail is what lets the photograph
+ * be a photograph.
+ *
+ * BUILT FROM THE LIVE CATEGORY TREE, NOT FROM A LIST. The counts in the kicker
+ * and the badges are computed, never written, so the page cannot promise
+ * ranges we have retired or omit ones we have added.
  *
  * URL CONTRACT: sub-ranges point at the global `/c/{slug}` pages. The
  * alternative — market-scoped `/markets/nigeria/{slug}` — multiplies the page
- * count fourteenfold per market (over 1,700 pages across the built markets)
- * and every one of them needs enough unique content not to be thin. The anchor
- * text still carries the country, which is where most of the value is. Moving
- * to market-scoped URLs is a content-plan decision, not a routing change.
+ * count by the number of ranges per market and every one of them needs enough
+ * unique content not to be thin. The anchor text still carries the country,
+ * which is where most of the value is.
  */
 export default function MarketCatalogueIndex({
   clusters,
@@ -76,16 +86,15 @@ export default function MarketCatalogueIndex({
 
         <p className="mb-8 mt-3 max-w-[780px] text-[15px] leading-[1.6] text-ih-muted">
           Everything below ships from the same Dubai warehouse, so a mixed order travels as one
-          consignment under one set of documents. Follow any heading through to the full range,
-          specifications and an RFQ.
+          consignment under one set of documents. Open any card for its full list of ranges, or
+          follow a heading through to specifications and an RFQ.
         </p>
 
         {/*
-          `grid-flow-dense` is load-bearing. The two largest clusters span both
-          columns, and without dense packing the single-column cards after them
-          leave holes rather than back-filling.
+          `items-start` is load-bearing: opening one card must not stretch the
+          other cards in its row to match.
         */}
-        <div className="grid grid-flow-dense grid-cols-1 gap-4 lg:grid-cols-2">
+        <div className="grid grid-cols-1 items-start gap-4 md:grid-cols-2 xl:grid-cols-3">
           {clusters.map((cluster, index) => (
             <ClusterCard
               key={cluster.slug}
@@ -100,16 +109,6 @@ export default function MarketCatalogueIndex({
   )
 }
 
-/**
- * Span and link-column count are computed from the child count, not authored:
- *
- *   ≥ 20 children → full width, four link columns
- *   8–19          → one column, two link columns
- *   < 8           → one column, one link column
- *
- * Which means a cluster that grows past twenty ranges widens itself, and the
- * layout cannot fall out of step with the catalogue.
- */
 function ClusterCard({
   cluster,
   index,
@@ -120,70 +119,103 @@ function ClusterCard({
   marketName: string
 }) {
   const count = cluster.subRanges.length
-  const wide = count >= WIDE_CARD_THRESHOLD
+  const collapses = count > CATALOGUE_VISIBLE_RANGES + COLLAPSE_SLACK
+  const shown = collapses ? cluster.subRanges.slice(0, CATALOGUE_VISIBLE_RANGES) : cluster.subRanges
+  const rest = collapses ? cluster.subRanges.slice(CATALOGUE_VISIBLE_RANGES) : []
 
   return (
-    <article
-      className={`flex flex-col overflow-hidden rounded-lg border border-ih-border bg-ih-surface transition-colors hover:border-ih-accent ${
-        wide ? 'lg:col-span-2' : ''
-      }`}
-    >
-      <MarketFigure
-        src={cluster.imageUrl}
-        alt={cluster.imageUrl ? cluster.imageAlt : undefined}
-        label={cluster.name}
-        // A letterbox strip flush to the card top. Frame shots so the subject
-        // survives a 152px band — a hose coil reads well, a tall valve does not.
-        ratio="h-[152px]"
-        sizes={wide ? '(max-width: 1024px) 100vw, 1344px' : '(max-width: 1024px) 100vw, 664px'}
-        className="shrink-0 border-b border-ih-border"
-      />
-
-      <div className="flex flex-1 flex-col px-5 pb-3 pt-5 sm:px-6">
-        <div className="flex items-baseline gap-2.5">
-          <span className="mono text-[10.5px] tracking-[0.06em] text-ih-muted-2">
-            {String(index + 1).padStart(2, '0')}
-          </span>
-          <h3 className="flex-1 text-[17.5px] font-medium leading-[1.25] tracking-[-0.01em]">
-            <Link href={`/c/${cluster.slug}`} className="hover:text-ih-accent">
-              {cluster.name} supplier in {marketName}
-            </Link>
-          </h3>
+    <article className="group/card @container flex flex-col rounded-lg border border-ih-border bg-ih-surface transition-colors hover:border-ih-accent">
+      <div className="flex gap-4 px-5 pt-5 sm:px-6">
+        {/*
+          A 4:3 thumbnail beside the heading, not a strip across the card. The
+          category photographs are 3:2 studio shots of a group of parts; 4:3
+          keeps nearly all of the frame, where the old 152px letterbox kept a
+          ninth of it.
+        */}
+        <MarketFigure
+          src={cluster.imageUrl}
+          alt={cluster.imageUrl ? cluster.imageAlt : undefined}
+          label={cluster.name}
+          ratio="aspect-[4/3]"
+          sizes="(max-width: 640px) 112px, 136px"
+          className="w-[112px] shrink-0 rounded-md border border-ih-border sm:w-[136px]"
+        />
+        <div className="min-w-0 flex-1">
+          <div className="flex items-start gap-2">
+            <span className="mono pt-[3px] text-[10.5px] tracking-[0.06em] text-ih-muted-2">
+              {String(index + 1).padStart(2, '0')}
+            </span>
+            <h3 className="flex-1 text-[16.5px] font-medium leading-[1.25] tracking-[-0.01em]">
+              <Link href={`/c/${cluster.slug}`} className="hover:text-ih-accent">
+                {cluster.name} supplier in {marketName}
+              </Link>
+            </h3>
+          </div>
           {count > 0 && (
-            <Badge kind="steel" square>
-              {count}
-            </Badge>
+            <p className="mono mt-2 text-[10.5px] uppercase tracking-[0.1em] text-ih-muted-2">
+              {count} {count === 1 ? 'range' : 'ranges'}
+            </p>
           )}
         </div>
-
-        {cluster.description && (
-          <p className="mt-2 max-w-[760px] text-[12.5px] leading-[1.55] text-ih-muted">
-            {cluster.description}
-          </p>
-        )}
-
-        {count > 0 && (
-          <div
-            className={`mt-4 border-t border-ih-border pt-2 ${
-              wide
-                ? 'columns-1 gap-x-[26px] sm:columns-2 lg:columns-4'
-                : count >= 8
-                  ? 'columns-1 gap-x-[26px] sm:columns-2'
-                  : 'columns-1'
-            }`}
-          >
-            {cluster.subRanges.map((range) => (
-              <Link
-                key={range.slug}
-                href={`/c/${range.slug}`}
-                className="block break-inside-avoid border-b border-dotted border-ih-border py-[5px] text-[12.5px] text-ih-ink-2 transition-colors hover:text-ih-accent"
-              >
-                {range.name} in {marketName}
-              </Link>
-            ))}
-          </div>
-        )}
       </div>
+
+      {cluster.description && (
+        // Clamped to three lines until the card is opened. The full text is in
+        // the HTML either way — the clamp is paint, not omission.
+        <p className="mt-3 line-clamp-3 px-5 text-[12.5px] leading-[1.55] text-ih-muted group-has-[details[open]]/card:line-clamp-none sm:px-6">
+          {cluster.description}
+        </p>
+      )}
+
+      {count > 0 && (
+        <div className="mt-4 flex-1 border-t border-ih-border px-5 pb-1 sm:px-6">
+          <RangeList ranges={shown} marketName={marketName} />
+
+          {rest.length > 0 && (
+            <details className="group/more">
+              <summary
+                className="flex cursor-pointer list-none items-center justify-between gap-3 border-t border-ih-border py-3 text-[12.5px] font-medium text-ih-accent marker:content-none hover:text-ih-ink [&::-webkit-details-marker]:hidden"
+              >
+                <span>
+                  <span className="group-open/more:hidden">
+                    Show all {count} {cluster.name} ranges
+                  </span>
+                  <span className="hidden group-open/more:inline">Show fewer</span>
+                </span>
+                <span
+                  aria-hidden="true"
+                  className="mono text-[14px] leading-none transition-transform group-open/more:rotate-45"
+                >
+                  +
+                </span>
+              </summary>
+              <RangeList ranges={rest} marketName={marketName} />
+            </details>
+          )}
+        </div>
+      )}
     </article>
+  )
+}
+
+/**
+ * One column in a narrow card, two once the card is wide enough to hold them
+ * — measured on the card (`@container`), not the viewport, because the grid
+ * puts the same card in one, two or three columns.
+ */
+function RangeList({ ranges, marketName }: { ranges: CatalogueSubRange[]; marketName: string }) {
+  return (
+    <ul className="list-none columns-1 gap-x-6 p-0 @[34rem]:columns-2">
+      {ranges.map((range) => (
+        <li key={range.slug} className="break-inside-avoid">
+          <Link
+            href={`/c/${range.slug}`}
+            className="block border-b border-dotted border-ih-border py-[6px] text-[12.5px] text-ih-ink-2 transition-colors hover:text-ih-accent"
+          >
+            {range.name} in {marketName}
+          </Link>
+        </li>
+      ))}
+    </ul>
   )
 }

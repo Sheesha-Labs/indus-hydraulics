@@ -35,8 +35,17 @@ function toIsoDate(value: Date | string | undefined): string | null {
   return Number.isNaN(d.getTime()) ? null : d.toISOString()
 }
 
-/** A `<urlset>` document — one section's worth of URLs. */
+const IMAGE_NS = 'http://www.google.com/schemas/sitemap-image/1.1'
+
+/**
+ * A `<urlset>` document — one section's worth of URLs.
+ *
+ * Entries that carry `images` get one `<image:image>` per image, and the
+ * image namespace is declared only when at least one does — a section with no
+ * images stays byte-identical to what it was.
+ */
 export function renderUrlset(entries: MetadataRoute.Sitemap): string {
+  let anyImages = false
   const urls = entries
     .map((entry) => {
       const parts = [`    <loc>${escapeXml(entry.url)}</loc>`]
@@ -46,11 +55,18 @@ export function renderUrlset(entries: MetadataRoute.Sitemap): string {
       if (typeof entry.priority === 'number') {
         parts.push(`    <priority>${entry.priority.toFixed(1)}</priority>`)
       }
+      for (const image of entry.images ?? []) {
+        anyImages = true
+        parts.push(`    <image:image>\n      <image:loc>${escapeXml(image)}</image:loc>\n    </image:image>`)
+      }
       return `  <url>\n${parts.join('\n')}\n  </url>`
     })
     .join('\n')
 
-  return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls}\n</urlset>\n`
+  const ns = anyImages
+    ? `xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="${IMAGE_NS}"`
+    : 'xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"'
+  return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset ${ns}>\n${urls}\n</urlset>\n`
 }
 
 export type SitemapIndexChild = { url: string; lastModified?: Date | string }

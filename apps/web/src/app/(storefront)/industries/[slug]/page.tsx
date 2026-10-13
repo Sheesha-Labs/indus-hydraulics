@@ -15,9 +15,10 @@ import { Breadcrumb, JsonLd, LeadCapturePanel, buildWhatsappHref, buildMailtoHre
 import DesignedIndustryLanding from '../../../../components/industries/DesignedIndustryLanding'
 import MarketReachSection from '../../../../components/markets/MarketReachSection'
 import { mediaUrl } from '../../../../lib/media'
-import { ORG_ID, SITE_NAME, pageMetadata, urlFor } from '../../../../lib/seo'
+import { ORG_ID, SITE_NAME, crawlableImageUrl, pageMetadata, urlFor } from '../../../../lib/seo'
 import { getIndustryBySlug } from '../../../../lib/industry-content'
 import { getStoreSettings } from '../../../../lib/store-settings'
+import { CategoryFallbackImage } from '../../../../components/ProductCard'
 
 /**
  * TWO LAYOUTS, ONE ROUTE — the same split `/markets/[slug]` uses.
@@ -42,6 +43,33 @@ const FOUNDING_YEAR = 2003
 // The per-industry hero gradient and its chip tint are gone with the dark
 // hero band — see the note on the hero section below. `Industry.gradient`
 // remains in the schema; retiring the column is a data change of its own.
+
+/** Category plus two ancestors — enough to reach a root from any shelf today. */
+const CATEGORY_IMAGE_CHAIN = {
+  name: true,
+  image: { select: { storagePath: true } },
+  parent: {
+    select: {
+      name: true,
+      image: { select: { storagePath: true } },
+      parent: { select: { name: true, image: { select: { storagePath: true } } } },
+    },
+  },
+} as const
+
+type CategoryImageNode = {
+  name: string
+  image: { storagePath: string } | null
+  parent?: CategoryImageNode | null
+} | null
+
+/** The nearest category up the chain that has a card image. */
+function nearestCategoryImage(node: CategoryImageNode): { src: string; categoryName: string } | null {
+  for (let n = node; n; n = n.parent ?? null) {
+    if (n.image) return { src: n.image.storagePath, categoryName: n.name }
+  }
+  return null
+}
 
 type Props = {
   params: Promise<{ slug: string }>
@@ -77,6 +105,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     canonicalUrl: ind.canonicalUrl,
     robots: { index: ind.robotsIndex, follow: ind.robotsFollow },
     ogImagePath: ind.ogImageStoragePath,
+    ogImageAlt: ind.heroImageAlt ?? null,
   })
 }
 
@@ -101,6 +130,7 @@ export default async function IndustryPage({ params }: Props) {
         include: {
           brand: { select: { name: true, slug: true } },
           images: { orderBy: { position: 'asc' }, take: 1, include: { media: true } },
+          category: { select: CATEGORY_IMAGE_CHAIN },
         },
         take: 8,
       })
@@ -120,6 +150,7 @@ export default async function IndustryPage({ params }: Props) {
         include: {
           brand: { select: { name: true, slug: true } },
           images: { orderBy: { position: 'asc' }, take: 1, include: { media: true } },
+          category: { select: CATEGORY_IMAGE_CHAIN },
         },
         take: 8,
         orderBy: { updatedAt: 'desc' },
@@ -129,11 +160,34 @@ export default async function IndustryPage({ params }: Props) {
   })()
 
   const heroUrl = ind.ogImageStoragePath ? mediaUrl(ind.ogImageStoragePath) : null
+  const heroAlt = ind.heroImageAlt ?? `${ind.name} — hydraulic and industrial supply`
   const breadcrumb = ind.breadcrumb ?? ind.name.toUpperCase()
   const reach = industryMarketReach(ind.slug)
 
+  // The page's photographs in page order, each with the alt text it renders
+  // with, so the markup describes the same pictures a reader sees.
+  const ldImages = [
+    { path: ind.ogImageStoragePath, caption: heroAlt },
+    ...ind.caseStudies.map((cs) => ({ path: cs.imageUrl, caption: cs.imageAlt ?? cs.title })),
+    { path: ind.supportBlock?.image ?? null, caption: ind.supportBlock?.imageAlt ?? null },
+  ].flatMap(({ path, caption }) => {
+    const url = crawlableImageUrl(path)
+    return url ? [{ url, caption }] : []
+  })
+
   return (
     <div>
+      <JsonLd
+        data={buildServiceLd({
+          name: ind.seoTitle ?? `${ind.name} hydraulic and industrial supply`,
+          description: ind.seoDescription ?? ind.description ?? null,
+          url: urlFor(`/industries/${ind.slug}`),
+          areaServed: [{ name: 'United Arab Emirates', type: 'Country' }],
+          providerId: ORG_ID,
+          providerName: SITE_NAME,
+          images: ldImages,
+        })}
+      />
       {/*
         Hero — restructured, not restyled.
 
@@ -190,7 +244,7 @@ export default async function IndustryPage({ params }: Props) {
               {heroUrl ? (
                 <Image
                   src={heroUrl}
-                  alt=""
+                  alt={heroAlt}
                   fill
                   className="object-cover"
                   sizes="(max-width: 1024px) 100vw, 40vw"
@@ -255,6 +309,7 @@ export default async function IndustryPage({ params }: Props) {
           <div className="grid grid-cols-4 gap-3">
             {featuredProducts.map((product) => {
               const img = product.images[0]
+              const fallback = img ? null : nearestCategoryImage(product.category)
               return (
                 <Link
                   key={product.id}
@@ -265,11 +320,13 @@ export default async function IndustryPage({ params }: Props) {
                     {img ? (
                       <Image
                         src={mediaUrl(img.media.storagePath)}
-                        alt={product.title}
+                        alt={img.alt ?? img.media.alt ?? product.title}
                         fill
                         className="object-contain p-3"
                         sizes="(max-width: 1360px) 25vw, 320px"
                       />
+                    ) : fallback ? (
+                      <CategoryFallbackImage src={fallback.src} categoryName={fallback.categoryName} />
                     ) : (
                       <div className="text-ih-muted absolute inset-0 grid place-items-center font-mono text-[10px]">
                         IMG
@@ -311,7 +368,7 @@ export default async function IndustryPage({ params }: Props) {
                     {cs.imageUrl ? (
                       <Image
                         src={mediaUrl(cs.imageUrl)}
-                        alt={cs.title}
+                        alt={cs.imageAlt ?? cs.title}
                         fill
                         className="object-cover"
                         sizes="(max-width: 1360px) 33vw, 420px"
@@ -375,10 +432,20 @@ export default async function IndustryPage({ params }: Props) {
                 {ind.supportBlock.cta}
               </Link>
             </div>
-            <div className="bg-ih-surface-2 border-ih-border grid aspect-[4/3] place-items-center border">
-              <span className="text-ih-muted font-mono text-[11px]">
-                {ind.name.toUpperCase()} SERVICE TEAM
-              </span>
+            <div className="bg-ih-surface-2 border-ih-border relative grid aspect-[4/3] place-items-center overflow-hidden border">
+              {ind.supportBlock.image ? (
+                <Image
+                  src={mediaUrl(ind.supportBlock.image)}
+                  alt={ind.supportBlock.imageAlt ?? ''}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 1440px) 50vw, 680px"
+                />
+              ) : (
+                <span className="text-ih-muted font-mono text-[11px]">
+                  {ind.name.toUpperCase()} SERVICE TEAM
+                </span>
+              )}
             </div>
           </div>
         </section>

@@ -1,6 +1,13 @@
 /**
- * Load the Lifting & Rigging vertical: its category tree, its spec template,
- * the category page bands, and product families with their size tables.
+ * Load a catalogue payload: its category tree, its spec template, the category
+ * page bands, and product families with their size tables.
+ *
+ * Written for the Lifting & Rigging vertical and since used for fittings too
+ * (`data/catalogue-stainless-adapters`, `data/catalogue-instrumentation-fittings`). A payload
+ * may name an existing spec template (`specTemplateSlug`) instead of carrying
+ * one, may set a brand (`brandSlug`), and its size-table rows may carry the
+ * fitting columns (`portLabel`, `port2Label`, `port3Label`, competitor
+ * equivalent) as well as `dimensions`.
  *
  * The payload, `data/<payload>/catalogue.json`, is built outside the repo from
  * a supplier's catalogue export and reviewed before it is loaded (the H-Quality
@@ -47,7 +54,7 @@
  *
  * Usage:
  *   pnpm --filter @indus/db exec tsx src/scripts/import-lifting-catalogue.ts \
- *     --payload=lifting-hquality [--dry-run] [--publish] [--only=SKU] \
+ *     --payload=lifting-hquality [--image-dir=<folder>] [--dry-run] [--publish] [--only=SKU] \
  *     [--within=<category slug>] [--rewrite-categories] [--rewrite-bands]
  *
  * `--within` loads only the products filed under that category or directly
@@ -57,6 +64,7 @@ import { existsSync, readFileSync } from 'node:fs'
 import { join, resolve } from 'node:path'
 import { Prisma, PrismaClient, type CrossRefCompatibility } from '@prisma/client'
 import {
+  CATEGORY_SECTIONS,
   scoreProductContent,
   subPageContentKey,
   subPageDef,
@@ -87,6 +95,15 @@ type Variant = {
   position: number
   /** Size label, grade and every numeric column — see `@indus/domain/variant-columns`. */
   dimensions: Record<string, string | number>
+  /** Fitting columns. Optional; a lifting row carries none of them. */
+  portLabel?: string | null
+  port2Label?: string | null
+  port3Label?: string | null
+  competitorBrand?: string | null
+  competitorMpn?: string | null
+  /** Hose bore: SAE dash size and the inch bore as printed. */
+  hoseDash?: number | null
+  hoseInch?: string | null
 }
 type Entry = {
   sku: string
@@ -101,7 +118,10 @@ type Entry = {
   faqs: { question: string; answer: string }[]
   specs: Spec[]
   searchAliases: string[]
-  images: { file: string; alt: string }[]
+  /** Overrides the payload's `brandSlug` for this product (multi-brand payloads). */
+  brandSlug?: string
+  /** `caption` is internal provenance (`Media.caption`), never rendered. */
+  images: { file: string; alt: string; caption?: string | null }[]
   variants: Variant[]
   crossReferences: { competitorBrand: string; competitorMpn: string; compatibility: CrossRefCompatibility }[]
 }
@@ -127,7 +147,11 @@ type CategoryEntry = {
 type Payload = {
   source: string
   imageDir: string
-  specTemplate: SpecTemplatePayload
+  /** Either a template to upsert, or the slug of one that already exists. */
+  specTemplate?: SpecTemplatePayload
+  specTemplateSlug?: string
+  /** Brand for every product in the payload. Omitted = no brand. */
+  brandSlug?: string
   categories: CategoryEntry[]
   products: Entry[]
   /** SKUs that `--publish` leaves as drafts. See HELD FAMILIES above. */
@@ -184,8 +208,26 @@ function words(s: string): number {
   return s.replace(/<[^>]+>/g, ' ').split(/\s+/).filter(Boolean).length
 }
 
-/** The shelf template's stored-section document for one category's bands. */
+/**
+ * The shelf template's stored-section document for one category's bands.
+ *
+ * Every template section is stored, in template order, with the unwritten ones
+ * padded empty. `resolveSections` renders stored sections first and appends any
+ * missing ones after them, so a document holding only the bands it has copy for
+ * puts that copy above the page header and the product grid. That shipped on
+ * all 43 lifting shelves and was found and corrected on 2026-10-06.
+ */
 function bandSections(c: CategoryEntry): StoredSection[] {
+  const written = bandSectionsWritten(c)
+  if (written.length === 0) return []
+  const byKey = new Map(written.map((s) => [s.key, s]))
+  return CATEGORY_SECTIONS.map(
+    (def) => byKey.get(def.key) ?? ({ key: def.key, enabled: true, values: {} } as StoredSection),
+  )
+}
+
+/** Only the sections this category has copy for, before padding. */
+function bandSectionsWritten(c: CategoryEntry): StoredSection[] {
   const b = c.bands ?? {}
   const sections: StoredSection[] = []
   if (b.hero?.intro) sections.push({ key: 'hero', enabled: true, values: { intro: b.hero.intro } })
@@ -223,6 +265,11 @@ async function main() {
   const payloadPath = join(DATA_DIR, name, 'catalogue.json')
   if (!existsSync(payloadPath)) throw new Error(`payload not found: ${payloadPath}`)
   const payload: Payload = JSON.parse(readFileSync(payloadPath, 'utf8'))
+  // Supplier image folders live outside the repo and their paths name the supplier, so payloads leave
+  // `imageDir` empty and the folder is passed on the command line.
+  const imageDirArg = argv.find((a) => a.startsWith('--image-dir='))?.slice('--image-dir='.length)
+  payload.imageDir = imageDirArg || payload.imageDir
+  if (!payload.imageDir) throw new Error('--image-dir=<folder with the payload images> is required')
   if (!existsSync(payload.imageDir)) throw new Error(`Image folder not found: ${payload.imageDir}`)
   const problems: string[] = []
 
@@ -253,12 +300,18 @@ async function main() {
 
   // ── Spec template ─────────────────────────────────────────────────────────
   let templateId: string
-  if (dryRun) {
+  if (!payload.specTemplate) {
+    if (!payload.specTemplateSlug) throw new Error('payload needs specTemplate or specTemplateSlug')
+    const t = await db.specTemplate.findUnique({ where: { slug: payload.specTemplateSlug }, select: { id: true } })
+    if (!t) throw new Error(`spec template ${payload.specTemplateSlug} does not exist`)
+    templateId = t.id
+    console.log(`[template] using existing ${payload.specTemplateSlug}`)
+  } else if (dryRun) {
     const t = await db.specTemplate.findUnique({ where: { slug: payload.specTemplate.slug }, select: { id: true } })
     templateId = t?.id ?? 'dry-run'
     console.log(`[dry-run] ${t ? 'update' : 'create'} spec template ${payload.specTemplate.slug}`)
   } else {
-    const r = await upsertSpecTemplate(payload.specTemplate, db)
+    const r = await upsertSpecTemplate(payload.specTemplate!, db)
     templateId = r.id
     console.log(`[template] ${r.outcome} ${r.slug} (${r.fieldsCreated} fields created, ${r.fieldsUpdated} updated)`)
   }
@@ -329,6 +382,12 @@ async function main() {
   }
 
   // ── Products ──────────────────────────────────────────────────────────────
+  const brandIds = new Map<string, string>()
+  for (const slug of new Set([payload.brandSlug, ...payload.products.map((e) => e.brandSlug)].filter((s): s is string => !!s))) {
+    const b = await db.brand.findUnique({ where: { slug }, select: { id: true } })
+    if (!b) throw new Error(`brand ${slug} does not exist`)
+    brandIds.set(slug, b.id)
+  }
   const parentOf = new Map(payload.categories.map((c) => [c.slug, c.parentSlug]))
   const sb = dryRun ? null : supabase()
   let created = 0
@@ -367,11 +426,12 @@ async function main() {
     const aliases = [...new Set([...e.searchAliases, ...e.variants.map((v) => v.partNumber)])]
     const live = publish && !held.has(e.sku)
     if (publish && !live) kept++
+    const brandSlug = e.brandSlug ?? payload.brandSlug
     const data = {
       title: e.title,
       slug: e.slug,
       categoryId,
-      brandId: null,
+      brandId: brandSlug ? brandIds.get(brandSlug)! : null,
       specTemplateId: templateId,
       descriptionShort: e.descriptionShort,
       descriptionLong: e.descriptionLong,
@@ -423,6 +483,13 @@ async function main() {
             partNumber: v.partNumber,
             position: v.position,
             dimensions: v.dimensions as Prisma.InputJsonValue,
+            portLabel: v.portLabel ?? null,
+            port2Label: v.port2Label ?? null,
+            port3Label: v.port3Label ?? null,
+            competitorBrand: v.competitorBrand ?? null,
+            competitorMpn: v.competitorMpn ?? null,
+            hoseDash: v.hoseDash ?? null,
+            hoseInch: v.hoseInch ?? null,
           })),
         })
         if (e.crossReferences.length > 0) {
@@ -470,7 +537,7 @@ async function main() {
               width: size?.width ?? null,
               height: size?.height ?? null,
               alt: img.alt,
-              caption: null,
+              caption: img.caption ?? null,
             },
             select: { id: true },
           })

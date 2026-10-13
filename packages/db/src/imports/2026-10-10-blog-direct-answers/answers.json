@@ -1,0 +1,150 @@
+{
+ "adapter-kit-for-a-mixed-fleet": {
+  "question": "What should an adapter kit for a mixed fleet contain?",
+  "answer": "An adapter kit should be built from your own fleet, not a catalogue: the two or three bores that cover nearly every replacement, bridging adapters only for the thread families your machines actually mix, and plenty of seals, bonded washers and O-rings. Double the items whose failure strands a machine, and review the kit each season against what was used."
+ },
+ "agriculture-and-construction-fittings": {
+  "question": "How should one workshop stock agriculture and construction fittings?",
+  "answer": "Stock for depth in the failures that repeat rather than for the whole catalogue. Write down every machine and its thread families once, carry agricultural quick couplers separately from industrial ones, prioritise loader and tipper circuits, which cause most repeat failures, and buy the season's construction fittings and consumables as one consignment instead of emergency parcels."
+ },
+ "backhoe-hydraulic-hose": {
+  "question": "Why do backhoe hydraulic hoses fail?",
+  "answer": "A backhoe is two hydraulic machines on one pump, and each end fails differently. Rear dipper, bucket and swing hoses fail from trench-edge abrasion and the wide flexing arc of the swing circuit; stabiliser hoses fail because they sit low, exposed and uninspected. Which end of the backhoe stopped is the fastest guide to the hydraulic hose at fault."
+ },
+ "boom-lift-hydraulic-hose": {
+  "question": "Can you replace a boom lift hydraulic hose like any other hose?",
+  "answer": "No. A boom lift hydraulic hose holds a platform with people on it, so replacing one is a documented modification to a certified machine, not a quick repair. Fit the exact specified hose — no substitution, even to finish a job — record the change, and test the emergency lowering system, which exists because hydraulic failure at height is expected."
+ },
+ "building-a-thread-reference-board": {
+  "question": "What goes on a thread reference board?",
+  "answer": "A thread reference board holds known-good male and female samples of every thread family your fleet actually uses — nothing more. Label each with its thread, seat and the machine position it came from, chain a pitch gauge and a seat gauge to the board, and photograph the finished board so you can send the picture when ordering."
+ },
+ "certificate-of-origin-gcc-duty": {
+  "question": "Does buying from Dubai make hose UAE-origin for GCC duty?",
+  "answer": "No. A certificate of origin follows where the goods were made, not where they were invoiced: hose re-exported from a Dubai stockist keeps its factory's origin and does not qualify for GCC preferential treatment. The certificate is chamber-attested in Dubai before dispatch, and within the customs union duty is normally paid once, at the first point of entry."
+ },
+ "consolidating-fittings-with-a-hose-order": {
+  "question": "Is it cheaper to consolidate fittings with a hose order?",
+  "answer": "Usually, yes. Documents, customs clearance, handling and the inland leg are paid once per consignment whether the box is full or half empty, so consolidating fittings with the hose order cuts those costs and gives one set of conformity paperwork. The price is deciding the whole list earlier; split off only a genuine breakdown part."
+ },
+ "copper-mine-hydraulic-fittings": {
+  "question": "What copper mine hydraulic fittings should a site stock?",
+  "answer": "A copper mine needs two separate stocks of hydraulic fittings. The haul fleet fails from abrasion and vibration, so routing, clamping and fewer joints matter more than higher grades; the concentrator fails from slurry and washdown, so finish and material matter. Mixed-origin fleets also need bridging adapters as a stocked item, held deeper the further the mine is from resupply."
+ },
+ "dirt-ingress-in-transit-and-storage": {
+  "question": "How does dirt get into new hydraulic fittings?",
+  "answer": "Dirt ingress starts before installation. Temperature cycling in a shipping container pumps moist air in and out of unsealed parts, and open bags on a store shelf are the largest single source. Keep fittings and hose assemblies capped and bagged until the moment of fitting; flushing a closed circuit afterwards does not remove what already went in."
+ },
+ "factory-and-fixed-plant-fittings": {
+  "question": "Should a factory standardise its hydraulic fittings?",
+  "answer": "Yes. Fixed plant fittings are the one population you can deliberately narrow, because the machines never move. Choose a few target thread families, convert each line at its next hose change rather than in a shutdown, and write the families into the purchase specification for new equipment — cutting stores value, identification time and wrong-part errors together."
+ },
+ "fittings-on-a-chinese-excavator": {
+  "question": "What hydraulic fittings does a Chinese excavator use?",
+  "answer": "Most Chinese excavators use metric 24° cone fittings (the DIN 2353 family) and BSP parallel threads, with flanged connections on the large pump, motor and main lines. Export-market machines do not always follow the domestic convention, and a 24° metric cone is easily mistaken for a 60° BSP cone by eye, so confirm each fitting with a seat gauge."
+ },
+ "fittings-on-american-machines": {
+  "question": "What hydraulic fittings do American machines use?",
+  "answer": "American machines use four inch-based threaded families plus flanges: JIC 37° flare, ORFS, NPT taper threads and SAE O-ring boss ports. JIC seals on a 37° cone and ORFS on a flat face with an O-ring, so they never interchange, and screwing an NPT taper into a straight O-ring boss port damages the port."
+ },
+ "galvanic-corrosion-in-fittings": {
+  "question": "Does fitting stainless steel stop galvanic corrosion?",
+  "answer": "Not on its own. Stainless fittings in plated steel ports on a wet, salty site form a galvanic cell, and the corrosion moves from the fitting onto the port instead of stopping. The smaller, less noble part corrodes fastest. That trade can be right — a port is easier to protect and inspect — but make it knowingly."
+ },
+ "gcc-import-documents-for-hose": {
+  "question": "What GCC import documents does hose need for Qatar, Oman, Kuwait and Bahrain?",
+  "answer": "Each country runs its own regime, and none of them is SABER. Kuwait works through technical evaluation and inspection reports, Qatar through pre-shipment verification by approved bodies, and Oman and Bahrain through ministry regulated lists. Every GCC destination also needs the commercial import documents: invoice, packing list, certificate of origin and transport document."
+ },
+ "hose-failure-post-mortem": {
+  "question": "How do you investigate a hydraulic hose failure?",
+  "answer": "Record a hose failure post-mortem before the hose is thrown away: photograph it in its routing, then capture eleven fields from the hose and machine, starting with service life. Failure within weeks points at the assembly; failure after years points at the installation. A position that fails twice is an engineering problem, and only the record shows it as a repeat."
+ },
+ "inspecting-fittings-on-arrival": {
+  "question": "What does inspecting fittings on arrival involve?",
+  "answer": "Inspect fittings on the loading bay before they are put away: run a nut down every thread, check sealing seats under light for machining marks, and count sizes against the packing list rather than the bag labels. Wrong material and wrong pressure rating are invisible on the bay, so those are settled by the certificates, not the visual check."
+ },
+ "korean-excavator-hydraulic-fittings": {
+  "question": "What hydraulic fittings does a Korean excavator use?",
+  "answer": "A Korean excavator can carry both metric fittings and 30° flare fittings, sometimes on the same machine, with flanges at the pump and travel motors. Identify each line rather than assuming one convention per machine — especially on a rebuilt or imported second-hand machine. A seat-angle gauge and a pitch gauge settle each fitting in seconds."
+ },
+ "lifting-gear-rejection-criteria": {
+  "question": "What are the lifting gear rejection criteria for slings, chain and hooks?",
+  "answer": "Lifting gear comes out of service when its ID tag or marking is missing or unreadable, or when it reaches its discard criteria: chain with a link worn more than 10% in mean diameter, stretched, bent or heat-damaged; wire rope slings with ten broken wires in one lay or five in one strand; synthetic slings with cuts, burns or broken stitching; hooks beyond the maker's distortion limit."
+ },
+ "material-test-certificate-en-10204": {
+  "question": "What is the difference between an EN 10204 3.1 and 2.2 certificate?",
+  "answer": "An EN 10204 2.2 material test certificate reports the manufacturer's test results for the product type; a 3.1 reports tests on the actual batch supplied, validated by someone independent of production, and traces to a heat number on the goods. A 3.1 cannot be produced afterwards for untraced stock, so specify the type before ordering."
+ },
+ "measuring-a-fitting-without-gauges": {
+  "question": "How do you identify a hydraulic fitting without gauges?",
+  "answer": "Four observations identify almost any fitting without gauges: diameter across the thread crests with a caliper, pitch from a known bolt or a ruler over ten threads, seat shape, and male or female. Diameter and pitch together separate metric from inch threads. Add a clean daylight photo straight down the bore, and send the measurements, not your conclusion."
+ },
+ "oilfield-fittings-in-west-africa": {
+  "question": "How should oilfield fittings be ordered for West Africa?",
+  "answer": "Order oilfield fittings in West Africa as two supply chains. Rig-side flow equipment carries a documentation regime and the operator's specification; general plant hydraulics usually does not. Combine them in one consignment and everything waits for the slowest document, so split the order by regime and plan each country's import paperwork before the goods move."
+ },
+ "over-tightened-fitting-diagnosis": {
+  "question": "How can you tell if a hydraulic fitting was over-tightened?",
+  "answer": "An over-tightened fitting leaves rolled seats, stretched threads, flattened O-rings and sometimes a cracked nut; an under-tightened one leaves clean, undamaged surfaces. Both leak, but over-tightening is the expensive fault, because the damage moves into the port rather than staying in the fitting. On a used machine, never assume the last joint was made up correctly."
+ },
+ "reusing-fittings-in-a-rebuild": {
+  "question": "Is reusing fittings in a hydraulic rebuild safe?",
+  "answer": "Steel adapters in good condition can be reused; the O-rings, bonded washers and other elastomers fitted with them cannot. The sealing face decides it: any mark across a cone or flat face is a leak path. Treat fittings from seized or over-tightened joints as scrap until inspected, and remember bite rings and crimped ends stay with their own tube or hose."
+ },
+ "saber-certificate-for-hydraulic-hose": {
+  "question": "Does hydraulic hose need a SABER certificate for Saudi Arabia?",
+  "answer": "If its HS code makes it a regulated product, yes — and SABER is two registrations: a product certificate, obtained once, and a shipment certificate issued for every consignment, which cannot be obtained in advance or reused. Both sit on the importer's SABER account, and the hose part numbers decide the paperwork, so send a full list at quotation."
+ },
+ "snap-hooks-and-quick-links": {
+  "question": "What is the difference between quick links and snap hooks?",
+  "answer": "A quick link is a closed link whose threaded sleeve screws shut and carries its rating only when fully closed; a snap hook has a spring gate that closes by itself, sometimes screw-locked. Both are general rigging and marine connectors — a 10 mm quick link on our listings is rated 2,640 lbs — not overhead lifting hardware unless certified for it."
+ },
+ "spares-list-for-a-remote-site": {
+  "question": "What hydraulic spares should a remote site hold?",
+  "answer": "Rank a remote site's spares list by what production loses while you wait, not by price. Seals, washers and O-rings that gate every repair give the highest return; hold hose by the metre with ends if you can make up assemblies, plus capping kit so a machine can keep working. Re-order against recorded consumption, not memory."
+ },
+ "stainless-vs-galvanized-rigging-gulf": {
+  "question": "Stainless vs galvanized rigging: which lasts in Gulf coastal air?",
+  "answer": "Neither is simply better. Galvanized rigging keeps its full rating but loses its zinc at up to 8.4 µm a year in very high (C5) coastal air; 316 stainless does not rust away but can pit, tea-stain and crack in hot chloride conditions, and is usually rated well below carbon or alloy steel of the same size. Choose per position and load."
+ },
+ "sugar-mill-and-agro-processing-fittings": {
+  "question": "When should a sugar mill replace its hydraulic fittings?",
+  "answer": "In the off-season. A sugar mill runs flat out through the campaign and then stops, so replacement by age during the known shutdown is cheaper than any in-season failure. Heat, steam and washdown are the exposures, so material and temperature rating matter most; order the season's fittings and consumables as one off-season consignment and record every change."
+ },
+ "tractor-hydraulic-fittings": {
+  "question": "Which tractor hydraulic fittings should a farm workshop stock?",
+  "answer": "Stock BSP parallel fittings first — the family most tractors use in markets with British plumbing conventions — plus agricultural quick couplers, which do not interchange with industrial excavator couplers. Implements bring their own conventions, so record them separately. Hold spares for what actually strands a tractor: a burst hose, a stripped port and a coupler that will not connect under residual pressure."
+ },
+ "types-of-lifting-slings": {
+  "question": "What are the types of lifting slings and how do they compare?",
+  "answer": "The four types of lifting slings are alloy chain, wire rope, polyester webbing and round slings. Chain best survives heat, edges and rough handling but is heaviest; wire rope is strong for its weight but kinks; webbing and round slings are light and protect finished surfaces but cut easily and are limited to −40 °C to 100 °C."
+ },
+ "vendor-approval-for-hose-supply": {
+  "question": "How does vendor approval for hose supply work on a Gulf operator's site?",
+  "answer": "Most Gulf operators approve two different things: the supplier and the product or manufacturer. Which applies to your hose supply is set in your contract, and where it is manufacturer-based the useful question is whose product it is and whether that can be evidenced. Project and turnaround supply often runs under different vendor approval rules."
+ },
+ "verifying-a-genuine-hydraulic-hose": {
+  "question": "How do you verify a genuine hydraulic hose?",
+  "answer": "Check that the evidence agrees: the layline printed along a genuine hydraulic hose states the standard, size, pressure and manufacturer, and it should match the assembly tag, the certificate and the invoice line. Finished assemblies hide much of the hose under the ferrules and fittings carry little marking, so the tag matters; treat unmarked items as unknown and ask."
+ },
+ "water-well-drilling-rig-fittings": {
+  "question": "What drilling rig fittings should a water well rig carry?",
+  "answer": "A water well drilling rig should carry its own store, because anything not on the truck is days away. Prioritise seals, bonded washers and caps, plus one spare made-up hose assembly for each critical circuit — rotation, feed and mast. Vibration and repeated rig-up loosen joints, so check fittings after every move."
+ },
+ "what-to-send-for-a-fittings-quote": {
+  "question": "What information do you need for a hydraulic fittings quote?",
+  "answer": "Send six things for a fittings quote: diameter across the thread crests, thread pitch, a photograph straight down the bore showing the seat, male or female, where the fitting sits in the circuit, and how many machines carry it. Measurements identify the part on the first reply; a guess such as 'it is BSP' starts three days of questions."
+ },
+ "wheel-loader-hydraulic-hose": {
+  "question": "Which wheel loader hydraulic hoses fail first?",
+  "answer": "On a wheel loader, the lift and tilt hoses that cross the articulation joint fail first, because they flex every time the machine turns, and they are the routing most often got wrong on replacement. A steering hose failure is a safety event — the machine is not driven back. Bore, length, both ends and their angle fully specify the replacement."
+ },
+ "when-stainless-is-worth-it": {
+  "question": "When is stainless worth it for hydraulic fittings?",
+  "answer": "Stainless steel fittings are worth it in exposed, washed-down and splash-zone positions where corrosion is the problem. They do not answer a pressure problem: a stainless fitting is often rated below the carbon-steel part of the same size, so check the rating before substituting on a high-pressure line, and lubricate threads to stop galling."
+ },
+ "why-fittings-seize-in-coastal-air": {
+  "question": "Why do hydraulic fittings seize in coastal air?",
+  "answer": "Fittings seize in coastal air because corrosion starts where the plating is thinnest — thread crests, hex corners and spanner marks — and joints made up and broken repeatedly corrode fastest. The decision is made at assembly: apply anti-seize to the threads, never the sealing face, choose a better plating grade and use fewer joints."
+ }
+}

@@ -21,6 +21,7 @@
  */
 
 export type VariantDimensionKey =
+  | RatingDimensionKey
   | 'OD'
   | 'hoseOD'
   | 'burstPressure'
@@ -30,6 +31,8 @@ export type VariantDimensionKey =
   | 'weldPrepOd'
   | 'weldPrepId'
   | 'W'
+  | 'Y'
+  | 'Y1'
   | 'S1'
   | 'S2'
   | 'S3'
@@ -52,6 +55,12 @@ export type VariantDimensionKey =
   | 'L4'
   | 'L5'
   | 'L6'
+  | 'M1'
+  | 'M2'
+  | 'M3'
+  | 'Q'
+  | 'X'
+  | 'I'
   | LiftingDimensionKey
 
 /**
@@ -59,7 +68,38 @@ export type VariantDimensionKey =
  * figure — an O-ring size is `12.0×2.0`, not a number. They render in their own
  * columns after the numeric ones.
  */
-export type VariantTextKey = 'oRing' | LiftingTextKey
+export type VariantTextKey = 'oRing' | 'supply' | EquipmentTextKey | LiftingTextKey
+
+/**
+ * Ratings and sizes for couplings, pumps, motors and cylinders.
+ *
+ * These ranges are sold in US units and published that way — a pump's
+ * displacement in cm³/rev and in³/rev, a coupling's pressure in psi, a
+ * cylinder's bore and stroke in inches — so, as with the lifting loads, the
+ * unit is part of the key and nothing is converted. A converted 3,000 psi is
+ * 206.84 bar, a figure no catalogue prints and no buyer is looking for.
+ */
+export type RatingDimensionKey =
+  | 'capacityTon'
+  | 'boreIn'
+  | 'rodIn'
+  | 'strokeIn'
+  | 'retractedIn'
+  | 'extendedIn'
+  | 'displacementCc'
+  | 'displacementCuIn'
+  | 'ratedPsi'
+  | 'maxPsi'
+  | 'contPsi'
+  | 'flowGpm'
+  | 'maxFlowGpm'
+  | 'ratedRpm'
+  | 'maxRpm'
+  | 'torqueLbIn'
+  | 'columnLoadLbs'
+
+/** Text columns for couplings, pumps, motors and cylinders. */
+export type EquipmentTextKey = 'item' | 'half' | 'bodySize' | 'mount' | 'shaft' | 'ports' | 'rotation' | 'action'
 
 /**
  * Lifting & rigging columns.
@@ -253,6 +293,14 @@ export type VariantUnit =
   | 'daN'
   | 'lbs/100 ft'
   | 'kg/220 m'
+  | 'psi'
+  | 'GPM'
+  | 'cm³/rev'
+  | 'in³/rev'
+  | 'rpm'
+  | 'in'
+  | 'lb-in'
+  | 'ton'
   | ''
 
 /**
@@ -277,7 +325,43 @@ export type VariantColumn = {
   unit: VariantUnit
   /** Tooltip / caption text. Never a guess — see the module note. */
   help: string
+  /** Print with thousands separators (3,000 psi). Lifting tables always do. */
+  grouped?: boolean
 }
+
+const RATING_HELP = 'as the manufacturer publishes it. A circuit is limited by its lowest-rated component.'
+/**
+ * Equipment and coupling ratings, in the order a table should show them:
+ * what the unit is (capacity, bore, stroke, displacement), then what it is
+ * rated to do (pressure, flow, speed, torque). Declared as a function so the
+ * registry below can spread it whatever the declaration order.
+ */
+function ratingColumns(): VariantColumn[] {
+  return [
+    { key: 'capacityTon', label: 'Capacity', unit: 'ton', help: 'Rated capacity in tons, as the manufacturer publishes it.', grouped: true },
+    { key: 'boreIn', label: 'Bore', unit: 'in', help: 'Cylinder bore diameter, as published.' },
+    { key: 'rodIn', label: 'Rod', unit: 'in', help: 'Piston rod diameter, as published.' },
+    { key: 'strokeIn', label: 'Stroke', unit: 'in', help: 'Cylinder stroke, as published.' },
+    { key: 'retractedIn', label: 'Retracted', unit: 'in', help: 'Length with the rod retracted, as published.' },
+    { key: 'extendedIn', label: 'Extended', unit: 'in', help: 'Length with the rod extended, as published.' },
+    { key: 'displacementCc', label: 'Displacement', unit: 'cm³/rev', help: 'Displacement per revolution, as published.' },
+    { key: 'displacementCuIn', label: 'Displacement', unit: 'in³/rev', help: 'Displacement per revolution, as published.' },
+    { key: 'ratedPsi', label: 'Rated pressure', unit: 'psi', help: `Rated working pressure, ${RATING_HELP}`, grouped: true },
+    { key: 'maxPsi', label: 'Max pressure', unit: 'psi', help: `Maximum (intermittent) pressure, ${RATING_HELP}`, grouped: true },
+    { key: 'contPsi', label: 'Continuous pressure', unit: 'psi', help: `Continuous pressure, ${RATING_HELP}`, grouped: true },
+    { key: 'flowGpm', label: 'Rated flow', unit: 'GPM', help: `Rated flow in US gallons per minute, ${RATING_HELP}` },
+    { key: 'maxFlowGpm', label: 'Max flow', unit: 'GPM', help: `Maximum flow in US gallons per minute, ${RATING_HELP}` },
+    { key: 'ratedRpm', label: 'Rated speed', unit: 'rpm', help: 'Rated shaft speed, as published.', grouped: true },
+    { key: 'maxRpm', label: 'Max speed', unit: 'rpm', help: 'Maximum shaft speed, as published.', grouped: true },
+    { key: 'torqueLbIn', label: 'Max torque', unit: 'lb-in', help: 'Maximum output torque, as published.', grouped: true },
+    { key: 'columnLoadLbs', label: 'Column load', unit: 'lbs', help: 'Rated column (push) load, as published.', grouped: true },
+  ]
+}
+
+/** Keys only a pump, motor or cylinder row carries — they make a table `equipment`. */
+const EQUIPMENT_MARKERS: ReadonlySet<string> = new Set([
+  'capacityTon', 'boreIn', 'strokeIn', 'displacementCc', 'displacementCuIn', 'ratedRpm', 'maxRpm', 'torqueLbIn',
+])
 
 /**
  * Every dimension column we know how to render, in the order a table should
@@ -348,6 +432,13 @@ export const VARIANT_DIMENSION_COLUMNS: readonly VariantColumn[] = [
     unit: 'mm',
     help: 'Nut / hex across flats — the spanner size.',
   },
+  /*
+    The US adapter catalogue letters its hex Y, not W, and prints the header as
+    "Y HEX" (and "Y1 HEX" for a second hex). The letter is kept so the table
+    matches the drawing on the same listing; the meaning comes from the header.
+  */
+  { key: 'Y', label: 'Y', unit: 'mm', help: 'Hex across flats — printed "Y HEX" on the manufacturer drawing.' },
+  { key: 'Y1', label: 'Y1', unit: 'mm', help: 'Second hex across flats — printed "Y1 HEX" on the manufacturer drawing.' },
   { key: 'S1', label: 'S1', unit: 'mm', help: 'Dimension S1 on the manufacturer dimension drawing.' },
   { key: 'S2', label: 'S2', unit: 'mm', help: 'Dimension S2 on the manufacturer dimension drawing.' },
   { key: 'S3', label: 'S3', unit: 'mm', help: 'Dimension S3 on the manufacturer dimension drawing.' },
@@ -370,6 +461,13 @@ export const VARIANT_DIMENSION_COLUMNS: readonly VariantColumn[] = [
   { key: 'L4', label: 'L4', unit: 'mm', help: 'Dimension L4 on the manufacturer dimension drawing.' },
   { key: 'L5', label: 'L5', unit: 'mm', help: 'Dimension L5 on the manufacturer dimension drawing.' },
   { key: 'L6', label: 'L6', unit: 'mm', help: 'Dimension L6 on the manufacturer dimension drawing.' },
+  { key: 'M1', label: 'M1', unit: 'mm', help: 'Dimension M1 on the manufacturer dimension drawing.' },
+  { key: 'M2', label: 'M2', unit: 'mm', help: 'Dimension M2 on the manufacturer dimension drawing.' },
+  { key: 'M3', label: 'M3', unit: 'mm', help: 'Dimension M3 on the manufacturer dimension drawing.' },
+  { key: 'Q', label: 'Q', unit: 'mm', help: 'Dimension Q on the manufacturer dimension drawing.' },
+  { key: 'X', label: 'X', unit: 'mm', help: 'Dimension X on the manufacturer dimension drawing.' },
+  { key: 'I', label: 'I', unit: 'mm', help: 'Dimension I on the manufacturer dimension drawing.' },
+  ...ratingColumns(),
 ]
 
 export type VariantTextColumn = {
@@ -396,6 +494,16 @@ export const VARIANT_TEXT_COLUMNS: readonly VariantTextColumn[] = [
     label: 'O-ring',
     help: 'O-ring size supplied with the fitting, as inside diameter × section.',
   },
+  // Hose sold by the box, coil, reel or cut length: one row per way it is supplied.
+  { key: 'supply', label: 'Supply', help: 'Length and packaging the part number is supplied in, as published.', lead: true },
+  { key: 'item', label: 'Description', help: 'What this part number is, as the manufacturer lists it.', lead: true },
+  { key: 'half', label: 'Type', help: 'Which part of the coupling this is: coupler (female half), nipple (male half), complete set, dust cap or adapter.', lead: true },
+  { key: 'bodySize', label: 'Body size', help: 'Nominal body size of the coupling, which sets which halves mate.', lead: true },
+  { key: 'mount', label: 'Mount', help: 'Mounting flange or pattern, as published.' },
+  { key: 'shaft', label: 'Shaft', help: 'Drive shaft, as published.' },
+  { key: 'ports', label: 'Ports', help: 'Port type and size, as published.' },
+  { key: 'rotation', label: 'Rotation', help: 'Direction of rotation viewed from the shaft end, as published.' },
+  { key: 'action', label: 'Action', help: 'Single- or double-acting, as published.' },
 ]
 
 const letter = (key: VariantColumnKey, label: string): VariantColumn => ({
@@ -729,7 +837,9 @@ export function hasVariantPressures(variants: readonly VariantLike[]): boolean {
  * somebody forgot a prop — which matters, because one of those footnotes
  * offers every size in 316 stainless and that is nonsense on a rubber hose.
  */
-export function variantTableKind(variants: readonly VariantLike[]): 'hose' | 'fitting' | 'lifting' {
+export type VariantTableKind = 'hose' | 'fitting' | 'lifting' | 'equipment'
+
+export function variantTableKind(variants: readonly VariantLike[]): VariantTableKind {
   // Lifting first: a chain row carries `weightPerMetre` exactly as a hose row
   // does, and it is the load columns — which no hose or fitting ever has — that
   // say which one it is.
@@ -739,6 +849,10 @@ export function variantTableKind(variants: readonly VariantLike[]): 'hose' | 'fi
     return Object.keys(raw).some((k) => LIFTING_MARKERS.has(k.split('@')[0]!))
   })
   if (isLifting) return 'lifting'
+  // A pump, motor or cylinder: rated by displacement, bore, stroke or speed —
+  // keys no fitting or hose row carries.
+  const isEquipment = variants.some((v) => Object.keys(variantDimensions(v.dimensions)).some((k) => EQUIPMENT_MARKERS.has(k)))
+  if (isEquipment) return 'equipment'
   const hoseKeys: VariantDimensionKey[] = ['hoseOD', 'burstPressure', 'vacuum', 'bendRadius', 'weightPerMetre']
   const isHose = variants.some((v) => {
     const dims = variantDimensions(v.dimensions)
@@ -823,9 +937,13 @@ export function variantColumnUnit(column: VariantColumn): string | null {
  *
  * A port value is either a thread — `1/4"-18`, `G1/2"-14`, `M18X1.5`, carrying
  * a pitch or an `M` prefix — or a flange nominal size, which is a bare inch
- * fraction (`3/4"`). The distinction is visible in the value itself, so it
- * does not need storing. An empty or mixed set falls back to the neutral
- * heading rather than picking a side.
+ * fraction (`3/4"`) or says flange. A single-ended tube fitting — a cap, plug,
+ * nut or sleeve — names the tube it fits (`1/16" tube`, `6 mm tube`). The
+ * distinction is visible in the value itself, so it does not need storing.
+ * A gauge scale (`0–160 psi`) is a range. Anything else that is not a thread
+ * (`3/16" SAE 45° flare`) gets the neutral
+ * `Size`, and an empty or mixed set falls back to `Port` rather than picking a
+ * side.
  */
 export function variantPortHeading(variants: readonly VariantLike[]): string {
   const labels = variants
@@ -837,9 +955,17 @@ export function variantPortHeading(variants: readonly VariantLike[]): string {
   // below, so it does not need storing either.
   const isPipeEnd = (l: string) => /\b(butt weld|socket weld|lp thread|line pipe|npt)\b/i.test(l)
   if (labels.every(isPipeEnd)) return 'End connection'
+  // A gauge is chosen by its scale: `0–160 psi`, `30"Hg vac – 0 – 150 psi`.
+  const isRange = (l: string) => /\b(psi|bar|kpa|mpa)\b|"\s*hg\b/i.test(l) && !/["']\s*(npt|bsp)/i.test(l)
+  if (labels.every(isRange)) return 'Range'
+  // Checked before threads: `1/4" tube, push-in` carries a hyphen that is not a pitch.
+  const isTube = (l: string) => /^[\d.\/\s-]+(?:"|mm)?\s*(?:o\.?d\.?\s*)?tube\b/i.test(l)
+  if (labels.every(isTube)) return 'Tube size'
   const isThread = (l: string) => /^M\d/i.test(l) || l.includes('-')
   if (labels.every(isThread)) return 'Thread'
-  if (labels.every((l) => !isThread(l))) return 'Flange size'
+  const isFlange = (l: string) => /flange/i.test(l) || /^[\d.\/\s]+"?$/.test(l)
+  if (labels.every(isFlange)) return 'Flange size'
+  if (labels.every((l) => !isThread(l))) return 'Size'
   return 'Port'
 }
 

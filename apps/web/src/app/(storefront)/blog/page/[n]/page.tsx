@@ -48,9 +48,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: `Blog — page ${page}`,
     description: `Page ${page} of field notes, sizing guides and teardowns from Indus Hydraulics.`,
     path: `/blog/page/${page}`,
-    // Deep pagination pages carry no unique content worth ranking, but they
-    // must stay followable so crawlers can reach the articles on them.
-    robots: { index: false, follow: true },
+    // Indexable and self-canonical, matching the catalogue's paginated shelves
+    // (#462). A noindexed archive page is, over time, treated as nofollow too —
+    // and these pages are the only internal links most older articles have.
+    // Google retired rel=prev/next; an indexable, self-canonical page per slice
+    // is its documented pattern for paginated lists.
   })
 }
 

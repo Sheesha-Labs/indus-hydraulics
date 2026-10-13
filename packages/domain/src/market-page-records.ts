@@ -1417,7 +1417,7 @@ export const MARKET_PAGE_RECORDS: readonly MarketPage[] = [
       { name: 'Johannesburg', coords: [28.04, -26.2], region: 'Gauteng', plot: true, dx: 9, dy: -6 },
       { name: 'Cape Town', coords: [18.42, -33.93], region: 'Western Cape', plot: true, dx: 9, dy: 4 },
       { name: 'Richards Bay', coords: [32.04, -28.78], region: 'KwaZulu-Natal', plot: true, dx: 9, dy: -5 },
-      { name: 'Port Elizabeth', coords: [25.6, -33.96], region: 'Eastern Cape', plot: true, dx: 9, dy: 4 },
+      { name: 'Gqeberha', coords: [25.6, -33.96], region: 'Eastern Cape', plot: true, dx: 9, dy: 4 },
       { name: 'Saldanha', coords: [17.94, -33.01], region: 'Western Cape', plot: true, dx: -9, dy: 4, anchor: 'end' },
       { name: 'Kathu', coords: [23.05, -27.7], region: 'Northern Cape', plot: true, dx: 9, dy: 4 },
       { name: 'Rustenburg', coords: [27.24, -25.67], region: 'North West', plot: true, dx: -9, dy: -4, anchor: 'end' },
@@ -2236,7 +2236,7 @@ export const MARKET_PAGE_RECORDS: readonly MarketPage[] = [
       { name: 'Constantine', coords: [6.61, 36.36], region: 'Constantine Province' },
       { name: 'Sétif', coords: [5.41, 36.19], region: 'Sétif Province' },
       { name: 'Ouargla', coords: [5.33, 31.95], region: 'Ouargla Province' },
-      { name: 'Ghardäia', coords: [3.67, 32.49], region: 'Ghardäia Province' },
+      { name: 'Ghardaïa', coords: [3.67, 32.49], region: 'Ghardaïa Province' },
       { name: 'Bethioua', coords: [-0.25, 35.8], region: 'Oran Province' },
     ],
     sectors: [
@@ -2615,7 +2615,7 @@ export const MARKET_PAGE_RECORDS: readonly MarketPage[] = [
     lede: 'Zambia is a copper market at the end of a long road. Containers discharge at Durban and travel two thousand kilometres north on the corridor through Chirundu, or come down from Dar es Salaam on the Central Corridor — either way the inland leg is longer than the sea leg. Conformity is verified before shipment, and the transit country’s documents matter as much as Zambia’s own.',
     facts: [
       { label: 'Typical transit', value: 'Typically 28–38 days, sea to Durban then road' },
-      { label: 'Freight', value: 'Sea to Durban then the North-South Corridor · Dar es Salaam and the Central Corridor as an alternative · Air freight into Lusaka where the schedule is tighter' },
+      { label: 'Freight', value: 'Sea to Durban then the North-South Corridor · Dar es Salaam and the Tunduma–Nakonde road as an alternative · Air freight into Lusaka where the schedule is tighter' },
       { label: 'Incoterms 2020', value: 'DAP Lusaka or the buyer’s site · CIF Durban · FOB Jebel Ali · EXW Dubai for a nominated forwarder' },
       { label: 'Documentation', value: 'Conformity documents for regulated goods, verified before shipment · Transit documents for South Africa and Zimbabwe · Certificate of Origin, Dubai Chamber attested' },
     ],
@@ -2669,7 +2669,7 @@ export const MARKET_PAGE_RECORDS: readonly MarketPage[] = [
     freight: [
       { name: 'Sea + road, via Durban', transit: '28–38 days', route: 'North-South Corridor through Chirundu', useCase: 'Default for most orders' },
       { name: 'Air freight', transit: '4–6 days', route: 'DXB to LUN', useCase: 'When the line is down' },
-      { name: 'Sea + road, via Dar', transit: '30–40 days', route: 'Central Corridor through Nakonde', useCase: 'Alternative when Durban is congested' },
+      { name: 'Sea + road, via Dar', transit: '30–40 days', route: 'Dar es Salaam corridor through Nakonde', useCase: 'Alternative when Durban is congested' },
     ],
     orderSteps: {
       third: 'Once accepted, conformity and transit documents for the whole route are arranged before the container is loaded.',
@@ -2702,7 +2702,7 @@ export const MARKET_PAGE_RECORDS: readonly MarketPage[] = [
     faqs: [
       { question: 'Do you have a branch in Zambia?', answer: 'No. Zambia is supplied from our Dubai warehouse — by sea to Durban and then by road, or by air into Lusaka when the schedule requires it.' },
       { question: 'Why does Zambia take five weeks?', answer: 'Because the inland leg is longer than the sea leg. Durban to Lusaka is around two thousand kilometres and crosses two transit countries.' },
-      { question: 'Durban or Dar es Salaam?', answer: 'Durban for most orders. Dar and the Central Corridor when Durban is congested or the delivery is in the north of the country; we quote both when the order is large enough for the difference to matter.' },
+      { question: 'Durban or Dar es Salaam?', answer: 'Durban for most orders. Dar and the Tunduma–Nakonde road when Durban is congested or the delivery is in the north of the country; we quote both when the order is large enough for the difference to matter.' },
       { question: 'Can you deliver to the copper belt?', answer: 'Yes, on DAP terms to the mine gate. Kitwe, Chingola and Solwezi add a day or two beyond Lusaka, quoted rather than estimated.' },
       { question: 'Can you supply mining operations directly?', answer: 'Yes. Slurry valves, four-spiral hose, high-cycle cylinders and crusher-duty components, with material certificates where the contract calls for them.' },
       { question: 'Is air freight worth it?', answer: 'For a plant-down, yes — four to six days into Lusaka. For a planned order, sea and road cost a fraction of it.' },

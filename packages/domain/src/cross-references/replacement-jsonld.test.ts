@@ -2,7 +2,7 @@ import { describe, it, expect } from 'vitest'
 import { buildReplacementCollectionLd } from './replacement-jsonld'
 
 describe('buildReplacementCollectionLd', () => {
-  it('emits CollectionPage with ItemList of Product references', () => {
+  it('emits CollectionPage with an ItemList of plain links to the PDPs', () => {
     const ld = buildReplacementCollectionLd({
       competitorBrand: 'Parker',
       competitorMpn: 'PV16-T-1-2',
@@ -15,7 +15,6 @@ describe('buildReplacementCollectionLd', () => {
           compatibility: 'direct',
         },
       ],
-      sellerId: 'https://example.com#organization',
     })
     expect(ld['@type']).toBe('CollectionPage')
     expect(ld.url).toBe('https://example.com/replacement/parker/pv16-t-1-2')
@@ -24,15 +23,16 @@ describe('buildReplacementCollectionLd', () => {
     expect(itemList.numberOfItems).toBe(1)
 
     const items = itemList.itemListElement as Array<Record<string, unknown>>
-    expect(items[0]?.position).toBe(1)
-    const product = items[0]?.item as Record<string, unknown>
-    expect(product['@type']).toBe('Product')
-    expect(product.url).toBe('https://example.com/p/bosch-rexroth-a10vso-71cc-pump')
-    expect(product.image).toBe('https://cdn/x.jpg')
-    expect(product.description).toMatch(/Direct replacement/)
-    const offer = product.offers as Record<string, unknown>
-    expect(offer['@type']).toBe('Offer')
-    expect((offer.seller as Record<string, unknown>)['@id']).toBe('https://example.com#organization')
+    const first = items[0]!
+    expect(first.position).toBe(1)
+    // A ListItem, never a Product: a Product stub is validated as a product of
+    // its own, and these carried no price.
+    expect(first['@type']).toBe('ListItem')
+    expect(first.item).toBeUndefined()
+    expect(first.url).toBe('https://example.com/p/bosch-rexroth-a10vso-71cc-pump')
+    expect(first.name).toBe('Bosch Rexroth A10VSO 71cc Pump')
+    expect(first.image).toBe('https://cdn/x.jpg')
+    expect(first.description).toMatch(/Direct replacement/)
   })
 
   it('positions multiple matches sequentially and counts them in numberOfItems', () => {
@@ -75,16 +75,13 @@ describe('buildReplacementCollectionLd', () => {
     expect(ld.description).toContain('2 verified equivalents')
   })
 
-  it('omits the Offer block when no sellerId is provided', () => {
+  it('never claims availability — the PDP owns that', () => {
     const ld = buildReplacementCollectionLd({
       competitorBrand: 'Parker',
       competitorMpn: 'PV16',
       pageUrl: 'https://example.com/replacement/parker/pv16',
       matches: [{ productUrl: 'u', productName: 'n', compatibility: 'direct' }],
     })
-    const product = ((ld.mainEntity as Record<string, unknown>).itemListElement as Array<
-      Record<string, unknown>
-    >)[0]?.item as Record<string, unknown>
-    expect(product.offers).toBeUndefined()
+    expect(JSON.stringify(ld)).not.toMatch(/Offer|InStock|availability/)
   })
 })

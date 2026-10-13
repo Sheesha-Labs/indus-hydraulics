@@ -1,7 +1,7 @@
 import type { MetadataRoute } from 'next'
 import { db } from '@indus/db'
 import { BASE_URL } from '../lib/seo'
-import { DEFAULT_DISALLOW, FACET_DISALLOW } from '../lib/crawl-policy'
+import { DEFAULT_DISALLOW, FACET_DISALLOW, withAlwaysDisallowed } from '../lib/crawl-policy'
 
 /**
  * Serves /robots.txt from the admin-managed `SeoSetting.robotsTxt` value.
@@ -136,6 +136,7 @@ function toRule(c: { userAgent: string; allow: string[]; disallow: string[] }) {
 // is the kind of thing nobody notices until it ranks.
 const RESERVED_DISALLOW = ['/admin', '/admin/', '/design']
 
+
 /**
  * `MetadataRoute.Robots['rules']` is `Rule | RuleWithRequiredUserAgent[]`, so
  * the two branches are typed separately rather than through one shared alias.
@@ -144,10 +145,7 @@ type Rules = MetadataRoute.Robots['rules']
 type RuleList = Extract<Rules, readonly unknown[]>
 
 function withDisallow<T extends { disallow?: string | string[] }>(rule: T): T {
-  const existing =
-    rule.disallow == null ? [] : Array.isArray(rule.disallow) ? rule.disallow : [rule.disallow]
-  const missing = RESERVED_DISALLOW.filter((p) => !existing.includes(p))
-  return missing.length ? { ...rule, disallow: [...existing, ...missing] } : rule
+  return withAlwaysDisallowed(rule, RESERVED_DISALLOW)
 }
 
 function withReservedDisallow(rules: Rules): Rules {

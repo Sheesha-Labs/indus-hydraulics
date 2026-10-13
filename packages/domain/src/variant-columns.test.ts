@@ -77,7 +77,8 @@ describe('VARIANT_DIMENSION_COLUMNS', () => {
   it('only claims a meaning for the columns whose source header states one', () => {
     // `OD` is printed "Tube O.D.", `W` is printed "W- HEX" / "W -NUT", and the
     // hammer union catalogue heads its two weld-prep columns "Weld Prep —
-    // O.D. / I.D.". The five hose columns are the same case: the hose
+    // O.D. / I.D.", and the US adapter catalogue heads its hex "Y HEX" / "Y1
+    // HEX". The five hose columns are the same case: the hose
     // catalogue heads every one of them with what it is — "O.D (mm)", "Min
     // Burst Pressure (Bar)", "Vacuum", "Min Bend Radius (mm)", "Weight
     // (Kg/Mtr)" — so their help repeats the source rather than a legend.
@@ -98,6 +99,29 @@ describe('VARIANT_DIMENSION_COLUMNS', () => {
       'weldPrepOd',
       'weldPrepId',
       'W',
+      'Y',
+      'Y1',
+      // Ratings and sizes for couplings, pumps, motors and cylinders: the
+      // source heads each with what it is — "Cylinder Bore", "Cylinder Stroke
+      // Ranges", "Pumps Displacement", "Pumps Max Pressure", "GPM", "Motor Max
+      // Torque" — so, like the hose columns, the help repeats the header.
+      'capacityTon',
+      'boreIn',
+      'rodIn',
+      'strokeIn',
+      'retractedIn',
+      'extendedIn',
+      'displacementCc',
+      'displacementCuIn',
+      'ratedPsi',
+      'maxPsi',
+      'contPsi',
+      'flowGpm',
+      'maxFlowGpm',
+      'ratedRpm',
+      'maxRpm',
+      'torqueLbIn',
+      'columnLoadLbs',
     ])
   })
 })
@@ -125,11 +149,21 @@ describe('text columns', () => {
   })
 
   it('does not claim S1 or S2 mean across-flats', () => {
-    expect(VARIANT_TEXT_COLUMNS.map((c) => c.key)).toEqual(['oRing'])
+    expect(VARIANT_TEXT_COLUMNS.map((c) => c.key)).toEqual([
+      'oRing', 'supply', 'item', 'half', 'bodySize', 'mount', 'shaft', 'ports', 'rotation', 'action',
+    ])
     for (const key of ['S1', 'S2'] as const) {
       const col = VARIANT_DIMENSION_COLUMNS.find((c) => c.key === key)!
       expect(col.help).toContain('dimension drawing')
     }
+  })
+})
+
+describe('supply column', () => {
+  it('shows how a hose row is supplied, and only when a row carries it', () => {
+    const rows = [v({ dimensions: { supply: '50 ft box' } }), v({ dimensions: { supply: '100 ft coil' } })]
+    expect(variantTextColumns(rows).map((c) => c.key)).toEqual(['supply'])
+    expect(variantTextColumns([v({ dimensions: {} })])).toEqual([])
   })
 })
 
@@ -150,6 +184,29 @@ describe('variantPortHeading', () => {
     expect(variantPortHeading([v({ portLabel: '3/4"' }), v({ portLabel: '1.1/4"' })])).toBe(
       'Flange size',
     )
+  })
+
+  it('reads a labelled flange as a flange size', () => {
+    expect(variantPortHeading([v({ portLabel: '1/2" Code 61 flange' })])).toBe('Flange size')
+  })
+
+  it('reads a single tube end as a tube size, even with a hyphen in it', () => {
+    expect(variantPortHeading([v({ portLabel: '1/16" tube' }), v({ portLabel: '6 mm tube (M12×1.5), L series' })])).toBe(
+      'Tube size',
+    )
+    expect(variantPortHeading([v({ portLabel: '1/4" tube, push-in' }), v({ portLabel: '3/16" tube O.D. (JIC 3/8-24)' })])).toBe(
+      'Tube size',
+    )
+  })
+
+  it('gives any other non-thread end the neutral size heading, not a flange size', () => {
+    expect(variantPortHeading([v({ portLabel: '3/16" SAE 45° flare' }), v({ portLabel: '1/8" plastic tube, 0.08" insert OD' })])).toBe(
+      'Size',
+    )
+  })
+
+  it('reads a gauge scale as a range', () => {
+    expect(variantPortHeading([v({ portLabel: '0–160 psi' }), v({ portLabel: '30"Hg vac – 0 – 150 psi' })])).toBe('Range')
   })
 
   it('falls back to the neutral heading on a mixed or empty set', () => {
@@ -474,5 +531,40 @@ describe('lifting tables', () => {
   it('renders a count with no unit', () => {
     const falls = variantDimensionColumns([{ partNumber: 'h', dimensions: { size: '2 t', wllT: 2, chainFalls: 2 } }])
     expect(falls.map((c) => variantColumnUnit(c))).toEqual(['t', null])
+  })
+})
+
+describe('coupling and equipment ratings', () => {
+  it('shows a coupling’s rating and flow in the units it is sold in, on a fitting table', () => {
+    const rows: VariantLike[] = [
+      { partNumber: 'FEM-501-8FP', portLabel: '1/2-14 NPSF', dimensions: { half: 'Coupler (female half)', bodySize: '1/2"', ratedPsi: 3625, flowGpm: 12 } },
+      { partNumber: 'FEM-502-8FP', portLabel: '1/2-14 NPSF', dimensions: { half: 'Nipple (male half)', bodySize: '1/2"', ratedPsi: 3625 } },
+    ]
+    expect(variantTableKind(rows)).toBe('fitting')
+    const cols = variantDimensionColumns(rows)
+    expect(cols.map((c) => [c.key, c.label, variantColumnUnit(c)])).toEqual([
+      ['ratedPsi', 'Rated pressure', 'psi'],
+      ['flowGpm', 'Rated flow', 'GPM'],
+    ])
+    expect(cols[0]!.grouped).toBe(true)
+    expect(variantTextColumns(rows).map((c) => c.key)).toEqual(['half', 'bodySize'])
+  })
+
+  it('reads a pump, motor or cylinder table as equipment, not a fitting', () => {
+    expect(variantTableKind([{ partNumber: 'p', dimensions: { displacementCc: 19.5, maxPsi: 2500 } }])).toBe('equipment')
+    expect(variantTableKind([{ partNumber: 'c', dimensions: { boreIn: 3, strokeIn: 24, rodIn: 1.5 } }])).toBe('equipment')
+    expect(variantTableKind([{ partNumber: 'q', dimensions: { ratedPsi: 3000 } }])).toBe('fitting')
+  })
+
+  it('orders cylinder columns size first, ratings after', () => {
+    const cols = variantDimensionColumns([
+      { partNumber: 'c', dimensions: { ratedPsi: 3500, strokeIn: 24, boreIn: 2, rodIn: 1.25, retractedIn: 31, extendedIn: 55, columnLoadLbs: 8400 } },
+    ])
+    expect(cols.map((c) => c.key)).toEqual(['boreIn', 'rodIn', 'strokeIn', 'retractedIn', 'extendedIn', 'ratedPsi', 'columnLoadLbs'])
+  })
+
+  it('gives the row description its own leading column', () => {
+    const cols = variantTextColumns([{ partNumber: '43200', dimensions: { item: 'Elbow, .38 in cone' } }])
+    expect(cols.map((c) => [c.key, c.label, c.lead])).toEqual([['item', 'Description', true]])
   })
 })

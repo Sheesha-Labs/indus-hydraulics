@@ -4,6 +4,9 @@ import MarketFigure from './MarketFigure'
 
 export type MarketBrand = { slug: string; name: string }
 
+/** A sector card's photograph — the linked industry page's hero. */
+export type MarketSectorImage = { url: string; alt: string }
+
 /**
  * Sector cards and the brand strip.
  *
@@ -23,10 +26,13 @@ export default function MarketIndustries({
   sectors,
   brands,
   marketName,
+  sectorImages = {},
 }: {
   sectors: readonly MarketSector[]
   brands: MarketBrand[]
   marketName: string
+  /** Industry hero photographs keyed by sector slug; a missing key keeps the placeholder. */
+  sectorImages?: Record<string, MarketSectorImage>
 }) {
   return (
     <section className="border-t border-ih-border bg-ih-surface px-5 py-14 sm:px-8 lg:px-12 lg:py-16">
@@ -44,7 +50,10 @@ export default function MarketIndustries({
               className="group flex flex-col overflow-hidden rounded-lg border border-ih-border bg-ih-surface transition-colors hover:border-ih-accent"
             >
               <MarketFigure
-                src={null}
+                src={sectorImages[sector.slug]?.url ?? null}
+                // The industry hero's own alt — it describes the photograph, and
+                // never names this market: one picture serves all 126 pages.
+                alt={sectorImages[sector.slug]?.alt}
                 label={MARKET_SECTOR_SHOTS[sector.slug]}
                 ratio="aspect-[16/9]"
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 437px"

@@ -5,6 +5,7 @@ import { db } from '@indus/db'
 import { Breadcrumb, EmptyState, Button } from '@indus/ui'
 import { buildBreadcrumbLd, buildCollectionLd } from '@indus/domain'
 import { JsonLd } from '@indus/ui'
+import { rollUpCounts } from '../../../lib/category-tree'
 import { mediaUrl } from '../../../lib/media'
 import { pageMetadata, urlFor } from '../../../lib/seo'
 
@@ -26,7 +27,7 @@ export const revalidate = 3600
 
 export async function generateMetadata(): Promise<Metadata> {
   return pageMetadata({
-    title: 'Product categories — Indus Hydraulics',
+    title: 'Product categories',
     description:
       'The full hydraulic, oilfield and lifting catalogue by category — pumps, cylinders, valves, hoses, fittings, rigging hardware and consumables, every SKU datasheet-backed.',
     path: '/c',
@@ -72,18 +73,7 @@ export default async function CategoriesIndexPage() {
   const parentOf = new Map(allCategories.map((c) => [c.id, c.parentId]))
   const directCount = new Map(grouped.map((g) => [g.categoryId as string, g._count._all]))
 
-  // Walk each category's ancestry once and credit every ancestor. Cheap at
-  // this size, and it does not care how deep the tree goes.
-  const rollup = new Map<string, number>()
-  for (const [categoryId, count] of directCount) {
-    let cursor: string | null | undefined = categoryId
-    const seen = new Set<string>()
-    while (cursor && !seen.has(cursor)) {
-      seen.add(cursor)
-      rollup.set(cursor, (rollup.get(cursor) ?? 0) + count)
-      cursor = parentOf.get(cursor) ?? null
-    }
-  }
+  const rollup = rollUpCounts(parentOf, directCount)
 
   const categories = roots.map((c) => ({ ...c, skuCount: rollup.get(c.id) ?? 0 }))
   const totalSkus = [...directCount.values()].reduce((a, b) => a + b, 0)
@@ -149,7 +139,7 @@ export default async function CategoriesIndexPage() {
                   {img ? (
                     <Image
                       src={img}
-                      alt={cat.image?.alt ?? ''}
+                      alt={cat.image?.alt ?? cat.name}
                       fill
                       className="object-cover"
                       sizes="(max-width: 640px) 100vw, (max-width: 1280px) 50vw, 33vw"

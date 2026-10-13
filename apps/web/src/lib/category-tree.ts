@@ -91,6 +91,32 @@ export function descendantIds(
   return out
 }
 
+/**
+ * Per-category counts rolled UP the tree: each category is credited with its
+ * own count plus every descendant's.
+ *
+ * Products live on leaves, so a top-level row's own `_count.products` is
+ * almost always zero — the home page's category cards showed "0 SKUs" on
+ * every card for that reason. Each count is walked up its ancestry once,
+ * stopping on a repeat so an editor-made cycle cannot spin.
+ */
+export function rollUpCounts(
+  parentOf: ReadonlyMap<string, string | null>,
+  direct: ReadonlyMap<string, number>,
+): Map<string, number> {
+  const rollup = new Map<string, number>()
+  for (const [categoryId, count] of direct) {
+    let cursor: string | null | undefined = categoryId
+    const seen = new Set<string>()
+    for (let depth = 0; cursor && !seen.has(cursor) && depth < MAX_WALK; depth++) {
+      seen.add(cursor)
+      rollup.set(cursor, (rollup.get(cursor) ?? 0) + count)
+      cursor = parentOf.get(cursor) ?? null
+    }
+  }
+  return rollup
+}
+
 /** Index a flat list into the two shapes the walks need. */
 export function indexTree(nodes: readonly CategoryNode[]): {
   byId: Map<string, CategoryNode>

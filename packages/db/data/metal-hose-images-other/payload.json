@@ -1,0 +1,224 @@
+{
+  "imageDir": "~/Documents/Indus Supplier Research/Image Research/Metal Hoses",
+  "captionNote": "",
+  "note": "Hose Master, Witzenmann, Senior Flexonics and Dixon images on their metal / PTFE hose listings, uploaded on Ayush's instruction on 2026-10-08 (several are generic images of the right maker).",
+  "listings": [
+    {
+      "sku": "IH-IH-METALLIC-HYPARFLEX",
+      "title": "Hyparflex Close Pitch Metallic Hose",
+      "make": "Dixon",
+      "images": [
+        {
+          "file": "Other makers/metallic-hose-dixon-1.jpg",
+          "kind": "photo",
+          "match": "same type, different end/size",
+          "sourcePage": "https://europe.dixonvalve.com/en/products/hyparflex-metallic-hose/hyparflexdn-65",
+          "imageUrl": "https://europe.dixonvalve.com/sites/default/files/product/images/2017-09/metallic%20hose_color_lg_watermarked.jpg"
+        }
+      ]
+    },
+    {
+      "sku": "IH-IH-METALLIC-SUPARFLEX",
+      "title": "Suparflex Standard Pitch Metallic Hose",
+      "make": "Dixon",
+      "images": [
+        {
+          "file": "Other makers/metallic-hose-dixon-1.jpg",
+          "kind": "photo",
+          "match": "same type, different end/size",
+          "sourcePage": "https://europe.dixonvalve.com/en/products/hyparflex-metallic-hose/hyparflexdn-65",
+          "imageUrl": "https://europe.dixonvalve.com/sites/default/files/product/images/2017-09/metallic%20hose_color_lg_watermarked.jpg"
+        }
+      ]
+    },
+    {
+      "sku": "IH-IH-PTFE-CONVOLUTED-POLYMER",
+      "title": "Convoluted PTFE Hose with Polypropylene Braid",
+      "make": "Dixon",
+      "images": [
+        {
+          "file": "Other makers/ptfe-convoluted-hose-dixon-1.jpg",
+          "kind": "photo",
+          "match": "exact model",
+          "sourcePage": "https://europe.dixonvalve.com/en/products/convoluted-ptfe-external-vacuum-wire-and-polypropylene-braid/cpvwpb1",
+          "imageUrl": "https://europe.dixonvalve.com/sites/default/files/product/images/2017-09/convoluted_ptfe_hose_with_poly_braid_color_lg_watermarked_0.jpg"
+        }
+      ]
+    },
+    {
+      "sku": "IH-IH-PTFE-SMOOTHBORE-SS",
+      "title": "PTFE Smoothbore Hose with Stainless Steel Braid",
+      "make": "Dixon",
+      "images": [
+        {
+          "file": "Other makers/ptfe-smoothbore-hose-dixon-1.jpg",
+          "kind": "photo",
+          "match": "exact model",
+          "sourcePage": "https://europe.dixonvalve.com/en/products/smooth-bore-ptfe-stainless-steel-braid/sbp05",
+          "imageUrl": "https://europe.dixonvalve.com/sites/default/files/product/images/2017-09/ptfe_smooth_bore_non-conductive_hose_color_lg_watermarked.jpg"
+        }
+      ]
+    },
+    {
+      "sku": "IH-MH-HOSE-MASTER-CGA96-AR",
+      "title": "Hose Master CGA96 Industrial Argon / Nitrogen Service Hose",
+      "make": "Hose Master",
+      "images": [
+        {
+          "file": "Other makers/annular-hose-hose-master-2-web.jpg",
+          "kind": "photo",
+          "match": "generic type only",
+          "sourcePage": "https://www.hosemaster.com/products/corrugated-metal-hose/annuflex",
+          "imageUrl": "https://www.hosemaster.com/user/pages/42688/imghero-f.png"
+        }
+      ]
+    },
+    {
+      "sku": "IH-MH-HOSE-MASTER-HASTELLOY",
+      "title": "Hose Master Hastelloy C276 Annular Hose (Annuflex Series)",
+      "make": "Hose Master",
+      "images": [
+        {
+          "file": "Other makers/annular-hose-hose-master-annuflex-1.jpg",
+          "kind": "render",
+          "match": "generic type only",
+          "sourcePage": "https://www.hosemaster.com/products/corrugated-metal-hose/chemking",
+          "imageUrl": "https://www.hosemaster.com/user/pages/42696/img-f.jpg"
+        },
+        {
+          "file": "Other makers/annular-hose-hose-master-2-web.jpg",
+          "kind": "photo",
+          "match": "generic type only",
+          "sourcePage": "https://www.hosemaster.com/products/corrugated-metal-hose/chemking",
+          "imageUrl": "https://www.hosemaster.com/user/pages/42696/imghero-f.png"
+        }
+      ]
+    },
+    {
+      "sku": "IH-MH-HOSE-MASTER-MONEL",
+      "title": "Hose Master Monel 400 Annular Hose (Annuflex Series)",
+      "make": "Hose Master",
+      "images": [
+        {
+          "file": "Other makers/annular-hose-hose-master-annuflex-1.jpg",
+          "kind": "render",
+          "match": "generic type only",
+          "sourcePage": "https://www.hosemaster.com/products/corrugated-metal-hose/annuflex",
+          "imageUrl": "https://www.hosemaster.com/user/pages/42688/img-f.jpg"
+        },
+        {
+          "file": "Other makers/annular-hose-hose-master-2-web.jpg",
+          "kind": "photo",
+          "match": "generic type only",
+          "sourcePage": "https://www.hosemaster.com/products/corrugated-metal-hose/annuflex",
+          "imageUrl": "https://www.hosemaster.com/user/pages/42688/imghero-f.png"
+        }
+      ]
+    },
+    {
+      "sku": "IH-MH-HOSE-MASTER-STRESSTITE",
+      "title": "Hose Master Stresstite HP Annular Hose",
+      "make": "Hose Master",
+      "images": [
+        {
+          "file": "Other makers/high-pressure-hose-hose-master-pressuremax-1.jpg",
+          "kind": "render",
+          "match": "generic type only",
+          "sourcePage": "https://www.hosemaster.com/products/corrugated-metal-hose/pressuremax-hp-1",
+          "imageUrl": "https://www.hosemaster.com/user/pages/42694/img-f.jpg"
+        }
+      ]
+    },
+    {
+      "sku": "IH-MH-SENIOR-FLEX-BARTLETT-FIRESAFE",
+      "title": "Senior Flexonics Bartlett Fire-Safe Hose Assembly",
+      "make": "Senior Flexonics",
+      "images": [
+        {
+          "file": "Other makers/corrugated-hose-senior-flexonics-1.jpg",
+          "kind": "photo",
+          "match": "generic type only",
+          "sourcePage": "https://www.seniorflexonics.de/en/products/industrial-technology.html",
+          "imageUrl": "https://www.seniorflexonics.de/fileadmin/_processed_/csm_senior_flexonics_schlaeuche_97e468da58.jpg"
+        }
+      ]
+    },
+    {
+      "sku": "IH-MH-SENIOR-FLEX-CRYO-LNG",
+      "title": "Senior Flexonics Cryogenic LNG Marine Transfer Hose",
+      "make": "Senior Flexonics",
+      "images": [
+        {
+          "file": "Other makers/corrugated-hose-senior-flexonics-1.jpg",
+          "kind": "photo",
+          "match": "generic type only",
+          "sourcePage": "https://www.seniorflexonics.de/en/products/industrial-technology.html",
+          "imageUrl": "https://www.seniorflexonics.de/fileadmin/_processed_/csm_senior_flexonics_schlaeuche_97e468da58.jpg"
+        }
+      ]
+    },
+    {
+      "sku": "IH-MH-SENIOR-FLEX-PATHWAY-HP",
+      "title": "Senior Flexonics Pathway HP Annular Hose",
+      "make": "Senior Flexonics",
+      "images": [
+        {
+          "file": "Other makers/corrugated-hose-senior-flexonics-1.jpg",
+          "kind": "photo",
+          "match": "generic type only",
+          "sourcePage": "https://www.seniorflexonics.de/en/products/industrial-technology.html",
+          "imageUrl": "https://www.seniorflexonics.de/fileadmin/_processed_/csm_senior_flexonics_schlaeuche_97e468da58.jpg"
+        }
+      ]
+    },
+    {
+      "sku": "IH-MH-SENIOR-FLEX-TSJ-CHEMICAL",
+      "title": "Senior Flexonics Steam-Jacketed Chemical Process Hose",
+      "make": "Senior Flexonics",
+      "images": [
+        {
+          "file": "Other makers/corrugated-hose-senior-flexonics-1.jpg",
+          "kind": "photo",
+          "match": "generic type only",
+          "sourcePage": "https://www.seniorflexonics.de/en/products/industrial-technology.html",
+          "imageUrl": "https://www.seniorflexonics.de/fileadmin/_processed_/csm_senior_flexonics_schlaeuche_97e468da58.jpg"
+        }
+      ]
+    },
+    {
+      "sku": "IH-MH-WITZENMANN-CRYO-LAR",
+      "title": "Witzenmann Cryogenic Liquid Argon (LAR) Transfer Hose",
+      "make": "Witzenmann",
+      "images": [
+        {
+          "file": "Other makers/corrugated-hose-witzenmann-hydra-1.jpg",
+          "kind": "photo",
+          "match": "generic type only",
+          "sourcePage": "https://www.witzenmann.com/en/products/flexible-metal-hoses/hydra-ringwellschlauchleitung.html",
+          "imageUrl": "https://media.ffycdn.net/eu/witzenmann/d/RH7hJpYvqbJSXvxy?format=jpg&width=1600"
+        }
+      ]
+    },
+    {
+      "sku": "IH-MH-WITZENMANN-INCONEL",
+      "title": "Witzenmann Inconel 625 Annular Hose (HYDRA Series)",
+      "make": "Witzenmann",
+      "images": [
+        {
+          "file": "Other makers/corrugated-hose-witzenmann-hydra-1.jpg",
+          "kind": "photo",
+          "match": "generic type only",
+          "sourcePage": "https://www.witzenmann.com/en/products/flexible-metal-hoses/hydra-ringwellschlauchleitung.html",
+          "imageUrl": "https://media.ffycdn.net/eu/witzenmann/d/RH7hJpYvqbJSXvxy?format=jpg&width=1600"
+        },
+        {
+          "file": "Other makers/corrugated-hose-witzenmann-hydra-2.jpg",
+          "kind": "photo",
+          "match": "generic type only",
+          "sourcePage": "https://www.witzenmann.com/en/products/flexible-metal-hoses/corrugated-hoses/",
+          "imageUrl": "https://media.witzenmann.com/mediapool/images/photos/produktübersicht-metallschläuche-aus-edelstahl-von-witzenmann_navigationteaser-2.jpg"
+        }
+      ]
+    }
+  ]
+}

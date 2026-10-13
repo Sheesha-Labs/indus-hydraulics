@@ -8,6 +8,7 @@ import { HERO_TERMS, heroLeadFor, img, interpolate, list, str, visibleList } fro
 import HomeNewsletterForm from '../../components/HomeNewsletterForm'
 import HomeHeroCarousel, { type HomeHeroSlide } from '../../components/HomeHeroCarousel'
 import HeroTermRotator from '../../components/HeroTermRotator'
+import { rollUpCounts } from '../../lib/category-tree'
 import { getIndustryList } from '../../lib/industry-content'
 import { mediaUrl } from '../../lib/media'
 import { getMasterPageContent } from '../../lib/page-content'
@@ -31,8 +32,17 @@ export async function homeMetadata(): Promise<Metadata> {
   ])
   const skuFloor = Math.max(100, Math.floor(skuCount / 100) * 100)
   return {
-    title: 'Indus Hydraulics — Industrial Components for Hydraulic Systems',
-    description: `${skuFloor.toLocaleString()}+ SKUs across pumps, cylinders, valves and consumables — from ${brandCount} specialist brands. ISO-certified, datasheet-backed, shipped from our Dubai HQ across the GCC.`,
+    // `absolute`, because the brand is already in it. `/` sits in the same
+    // segment as the storefront layout and escapes its `%s | Indus Hydraulics`
+    // template, but the `/h/<cc>` variants every non-default country is
+    // rewritten to are a child segment and do not — so the homepage served to
+    // most of the world read "Indus Hydraulics — … | Indus Hydraulics".
+    //
+    // Hose-led, to match the H1 and the catalogue's weight. It used to lead
+    // with pumps, cylinders and valves, which are three of the thinnest
+    // shelves on the site.
+    title: { absolute: 'Indus Hydraulics | Hydraulic & Industrial Hose Supplier, UAE' },
+    description: `${skuFloor.toLocaleString()}+ SKUs — hydraulic and industrial hoses, fittings and couplings, lifting gear and oilfield spares from ${brandCount} brands, shipped from Dubai across the GCC.`,
     // Every other indexable route declares one through `pageMetadata`; the
     // home page built its metadata by hand and so shipped none. It is the one
     // URL where that matters most — Google resolves a site's favicon and its
@@ -44,20 +54,35 @@ export async function homeMetadata(): Promise<Metadata> {
 }
 
 const getHomeCategories = unstable_cache(
-  () =>
-    db.category.findMany({
-      where: { isPublished: true, parentId: null },
-      orderBy: { position: 'asc' },
-      include: {
-        _count: { select: { products: true } },
-        // Kept on the query so a category visual can be dropped back into the
-        // card panel below without touching the data layer.
-        image: { select: { storagePath: true, alt: true, width: true, height: true } },
-      },
-      take: 6,
-    }),
+  async () => {
+    const [roots, allCategories, grouped] = await Promise.all([
+      db.category.findMany({
+        where: { isPublished: true, parentId: null },
+        orderBy: { position: 'asc' },
+        include: {
+          // Kept on the query so a category visual can be dropped back into the
+          // card panel below without touching the data layer.
+          image: { select: { storagePath: true, alt: true, width: true, height: true } },
+        },
+        take: 6,
+      }),
+      db.category.findMany({ select: { id: true, parentId: true } }),
+      db.product.groupBy({
+        by: ['categoryId'],
+        where: { status: 'active', categoryId: { not: null } },
+        _count: { _all: true },
+      }),
+    ])
+    // Rolled up the tree, as on /c: products live on leaves, so a top-level
+    // row's own `_count.products` is zero and every card read "0 SKUs".
+    const rollup = rollUpCounts(
+      new Map(allCategories.map((c) => [c.id, c.parentId])),
+      new Map(grouped.map((g) => [g.categoryId as string, g._count._all])),
+    )
+    return roots.map((c) => ({ ...c, skuCount: rollup.get(c.id) ?? 0 }))
+  },
   ['home-categories'],
-  { revalidate: 3600, tags: ['categories'] },
+  { revalidate: 3600, tags: ['categories', 'product-count'] },
 )
 
 const getHomeBrands = unstable_cache(
@@ -444,7 +469,7 @@ export default async function HomeView({ geoCode }: { geoCode?: string | null })
                   <span className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">{str(categoriesCopy, 'featured_label')}</span>
                   <div className="flex items-baseline justify-between gap-3">
                     <h3 className="text-[22px] font-semibold tracking-[-0.015em]">{featuredCat.name}</h3>
-                    <span className="font-mono text-[12px] text-ih-muted shrink-0">{featuredCat._count.products} SKUs</span>
+                    <span className="font-mono text-[12px] text-ih-muted shrink-0">{featuredCat.skuCount.toLocaleString()} SKUs</span>
                   </div>
                   {featuredCat.shortDescription && (
                     <p className="text-[14px] text-ih-muted leading-[1.5]">{featuredCat.shortDescription}</p>
@@ -479,7 +504,7 @@ export default async function HomeView({ geoCode }: { geoCode?: string | null })
                 <div className="p-5 flex flex-col gap-2.5 flex-1">
                   <div className="flex items-baseline justify-between gap-2">
                     <h3 className="text-[18px] font-semibold tracking-[-0.015em]">{cat.name}</h3>
-                    <span className="font-mono text-[12px] text-ih-muted shrink-0">{cat._count.products} SKUs</span>
+                    <span className="font-mono text-[12px] text-ih-muted shrink-0">{cat.skuCount.toLocaleString()} SKUs</span>
                   </div>
                   {cat.shortDescription && (
                     <p className="text-[14px] text-ih-muted leading-[1.5] line-clamp-2">{cat.shortDescription}</p>

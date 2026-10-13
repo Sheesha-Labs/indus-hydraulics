@@ -33,6 +33,7 @@ import ProseBlockView from './blocks/ProseBlock'
 import ReferencesBlockView from './blocks/ReferencesBlock'
 import RelatedArticlesBlockView from './blocks/RelatedArticlesBlock'
 import StandardCitationBlockView from './blocks/StandardCitationBlock'
+import VideoBlockView from './blocks/VideoBlock'
 
 import type { ResolvedBlogArticle } from '../../lib/blog-article'
 
@@ -146,6 +147,8 @@ function BlockSwitch({
       return <DiagramBlockView block={block} />
     case 'references':
       return <ReferencesBlockView block={block} />
+    case 'video':
+      return <VideoBlockView block={block} />
 
     default: {
       // Exhaustiveness check — a new block type without a renderer is a

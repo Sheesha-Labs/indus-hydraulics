@@ -2,15 +2,18 @@
 
 import { revalidatePath } from 'next/cache'
 import { invalidateBlogPosts } from '../../../../../lib/cache-tags'
+import { notifyIndexNow } from '../../../../../lib/indexnow'
 import { redirect } from 'next/navigation'
 import { z } from 'zod'
-import { db, Prisma } from '@indus/db'
+import { db, Prisma, syncBlogPostLinks } from '@indus/db'
 import {
   estimateReadingMinutes,
   parseBlogBlocks,
+  parseDateInput,
   parseLocalDateTime,
   projectSeoFields,
   resolvePublishedAt,
+  resolveReviewedAt,
 } from '@indus/domain'
 import {
   blocksToPlainText,
@@ -46,6 +49,10 @@ export async function savePost(formData: FormData) {
   // FK rather than be dropped — hence null, not undefined.
   const heroRaw = (formData.get('heroId') as string | null) ?? ''
   const heroId = heroRaw.trim() ? heroRaw.trim() : null
+  // Caption under the hero. Empty clears it. Capped so a pasted paragraph
+  // cannot turn the figcaption into a second excerpt.
+  const heroCaptionRaw = ((formData.get('heroCaption') as string | null) ?? '').trim()
+  const heroCaption = heroCaptionRaw ? heroCaptionRaw.slice(0, 300) : null
 
   // Public byline — a BlogAuthor, not the staff user who pressed save.
   // `authorStaffId` still records who created the row; the two are different
@@ -63,6 +70,12 @@ export async function savePost(formData: FormData) {
   // real choice — an uncategorised post still renders — so it clears.
   const categoryRaw = (formData.get('categoryId') as string | null) ?? ''
   const categoryId = categoryRaw.trim() ? categoryRaw.trim() : null
+
+  // Technical reviewer — a staff user, and when they signed it off. Empty
+  // means "not reviewed", which clears both.
+  const reviewerRaw = (formData.get('reviewedById') as string | null) ?? ''
+  const reviewedById = reviewerRaw.trim() ? reviewerRaw.trim() : null
+  const explicitReviewedAt = parseDateInput(formData.get('reviewedAt') as string | null)
 
   // The body arrives as a JSON array from the block editor. It is opaque here
   // — the editor's node set constrains what an author can produce in the
@@ -86,6 +99,7 @@ export async function savePost(formData: FormData) {
     seoDescription,
     tags,
     heroId,
+    heroCaption,
     blogAuthorId,
     categoryId,
     bodyBlocks: blocks,
@@ -106,8 +120,17 @@ export async function savePost(formData: FormData) {
         // Provenance, not byline: who created the row.
         authorStaffId: session.user.id,
         publishedAt: explicitPublishedAt ?? (publish ? new Date() : null),
+        reviewedById,
+        reviewedAt: resolveReviewedAt({
+          reviewerId: reviewedById,
+          explicit: explicitReviewedAt,
+          existing: null,
+          existingReviewerId: null,
+          now: new Date(),
+        }),
       },
     })
+    await syncLinksQuietly(post.id, blocks)
     revalidatePath('/admin/blog')
     invalidateBlogPosts()
     redirect(`/admin/blog/${post.id}`)
@@ -119,7 +142,13 @@ export async function savePost(formData: FormData) {
   // loses its original date and its search history along with it.
   const existing = await db.blogPost.findUnique({
     where: { id },
-    select: { publishedAt: true, body: true, readingMinutes: true },
+    select: {
+      publishedAt: true,
+      body: true,
+      readingMinutes: true,
+      reviewedById: true,
+      reviewedAt: true,
+    },
   })
 
   const { body, readingMinutes, preservedLegacy } = resolveBodyWrite({
@@ -148,16 +177,50 @@ export async function savePost(formData: FormData) {
       // would wipe one a legacy row already carries.
       ...(preservedLegacy && !excerpt ? {} : { excerpt }),
       publishedAt,
+      reviewedById,
+      reviewedAt: resolveReviewedAt({
+        reviewerId: reviewedById,
+        explicit: explicitReviewedAt,
+        existing: existing?.reviewedAt ?? null,
+        existingReviewerId: existing?.reviewedById ?? null,
+        now: new Date(),
+      }),
     },
   })
+  // A legacy post saved with no blocks keeps its old links: there is nothing
+  // in the body to project, and wiping them would orphan the product pages
+  // that still point at it.
+  if (blocks.length > 0) await syncLinksQuietly(id, blocks)
 
   revalidatePath('/admin/blog')
   revalidatePath('/blog')
   revalidatePath(`/blog/${slug}`)
+  notifyIndexNow([`/blog/${slug}`])
   // The homepage rail and the blog index read through `unstable_cache` on the
   // `blog-posts` tag. Without this purge an edit is invisible on the
   // storefront until the tag expires on its own.
   invalidateBlogPosts()
+}
+
+/**
+ * Rewrite the article's product and category link rows from its blocks.
+ *
+ * Product and category pages read these rows for their "Written about this
+ * part / range" lists. Saving here never updated them, so an article edited in
+ * the admin kept the links of whatever version was last imported.
+ *
+ * The pages that show the lists are NOT purged here. They regenerate on their
+ * own ISR window (a day for a PDP), and purging every product an article
+ * mentions would turn one save into dozens of cold renders — the cost the
+ * batch-deploy rule exists to avoid. A failure is logged and swallowed: the
+ * article itself is saved, and stale related-reading is not worth failing it.
+ */
+async function syncLinksQuietly(postId: string, blocks: Parameters<typeof syncBlogPostLinks>[1]) {
+  try {
+    await syncBlogPostLinks(postId, blocks)
+  } catch (err) {
+    console.error('[blog] link sync failed for post', postId, err)
+  }
 }
 
 // ── SEO tab — `updateBlogPostSeo` mirrors updateProductSeo ──────────────────
@@ -327,6 +390,7 @@ export async function updateBlogPostSeo(formData: FormData): Promise<Result<void
     revalidatePath(`/admin/blog/${parsed.id}`)
     invalidateBlogPosts()
     revalidatePath(`/blog/${before.slug}`)
+    notifyIndexNow([`/blog/${before.slug}`])
     revalidatePath('/admin/seo/inspector')
     return ok(undefined)
   } catch (err) {
@@ -505,5 +569,6 @@ function revalidateBlogPost(id: string, slug: string) {
   revalidatePath(`/admin/blog/${id}`)
   revalidatePath('/blog')
   revalidatePath(`/blog/${slug}`)
+  notifyIndexNow([`/blog/${slug}`])
   invalidateBlogPosts()
 }

@@ -1,0 +1,12 @@
+-- Reader-facing caption under a blog post's hero image.
+--
+-- `media.caption` cannot do this job: it holds internal provenance notes
+-- ("Source: OFS Energy catalogue export…", "used as the maker's authorised
+-- representative") written by the import scripts, and rendering it would
+-- publish them. The caption also belongs to the post, not the picture — the
+-- same photograph heads several articles, and what it should say under each
+-- depends on the article.
+--
+-- Nullable with no default, so a post without a caption renders exactly as
+-- before and the column is safe to apply ahead of the code that reads it.
+ALTER TABLE "blog_posts" ADD COLUMN IF NOT EXISTS "heroCaption" TEXT;

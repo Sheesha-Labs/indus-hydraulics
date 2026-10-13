@@ -112,3 +112,23 @@ describe('buildStaticEntries', () => {
     }
   })
 })
+
+describe('buildSitemapEntries — images', () => {
+  it('carries de-duplicated absolute image URLs, capped per entry', () => {
+    const images = Array.from({ length: 14 }, (_, i) => `https://example.com/media/a/${i}.jpg`)
+    const [entry] = buildSitemapEntries('https://example.com', 'product', [
+      {
+        slug: 'p',
+        images: [images[0]!, images[0]!, 'relative/x.jpg', ...images],
+      },
+    ])
+    expect(entry!.images).toHaveLength(10)
+    expect(entry!.images![0]).toBe('https://example.com/media/a/0.jpg')
+    expect(entry!.images).not.toContain('relative/x.jpg')
+  })
+
+  it('omits the key when there are no images', () => {
+    const [entry] = buildSitemapEntries('https://example.com', 'product', [{ slug: 'p', images: [] }])
+    expect(entry).not.toHaveProperty('images')
+  })
+})

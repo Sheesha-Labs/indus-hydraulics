@@ -121,6 +121,33 @@ export type StaticSitemapPath = {
 }
 
 /**
+ * What a custom robots.txt keeps no matter what it says.
+ *
+ * `app/robots.ts` used to re-add only `/admin` and `/design` to an
+ * admin-written file, so saving anything in the SEO console's robots field
+ * silently dropped every crawl-budget rule above — the account, quote and API
+ * paths, the `/h/` home variants, the filtered-shelf twin and the facet
+ * patterns. A custom group can still ALLOW one of these explicitly: an `Allow`
+ * of equal or greater length wins over these prefixes.
+ */
+export const ALWAYS_DISALLOW: readonly string[] = [
+  ...new Set([...DEFAULT_DISALLOW, ...FACET_DISALLOW]),
+]
+
+/** Append every ALWAYS_DISALLOW rule (plus `extra`) a robots group is missing. */
+export function withAlwaysDisallowed<T extends { disallow?: string | string[] }>(
+  rule: T,
+  extra: readonly string[] = [],
+): T {
+  const existing =
+    rule.disallow == null ? [] : Array.isArray(rule.disallow) ? rule.disallow : [rule.disallow]
+  // A group that already blocks everything needs nothing appended.
+  if (existing.includes('/')) return rule
+  const missing = [...new Set([...ALWAYS_DISALLOW, ...extra])].filter((p) => !existing.includes(p))
+  return missing.length ? { ...rule, disallow: [...existing, ...missing] } : rule
+}
+
+/**
  * The hand-listed sitemap entries — everything not generated from a database
  * row. Entity pages (products, categories, brands, posts) are built from
  * Postgres in app/sitemap.ts.
@@ -161,6 +188,14 @@ export const STATIC_SITEMAP_PATHS: StaticSitemapPath[] = [
   { path: '/tools/thread-identifier', priority: 0.7, changeFrequency: 'monthly' },
   { path: '/tools/pressure-converter', priority: 0.6, changeFrequency: 'monthly' },
   { path: '/tools/dash-size-chart', priority: 0.6, changeFrequency: 'monthly' },
+  // The reference library. Same reasoning as the tools — evergreen, bookmarked,
+  // cited — and the thread chart and pressure ratings carry the most searchable
+  // data on the site after the catalogue itself.
+  { path: '/resources', priority: 0.7, changeFrequency: 'monthly' },
+  { path: '/resources/thread-chart', priority: 0.7, changeFrequency: 'monthly' },
+  { path: '/resources/fitting-pressure-ratings', priority: 0.7, changeFrequency: 'monthly' },
+  { path: '/resources/crimp-specifications', priority: 0.6, changeFrequency: 'monthly' },
+  { path: '/resources/hydraulic-glossary', priority: 0.6, changeFrequency: 'monthly' },
   // Programmatic replacement landing pages — high-intent search
   // surface ("parker pv16 replacement") that AI agents cite well.
   { path: '/replacement', priority: 0.7, changeFrequency: 'weekly' },
