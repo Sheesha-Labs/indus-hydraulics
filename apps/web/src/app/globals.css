@@ -75,6 +75,23 @@
   --color-ih-on-navy: oklch(0.82 0.02 250);
   --color-ih-on-navy-fine: oklch(0.74 0.025 250);
   --color-ih-on-navy-placeholder: oklch(0.76 0.03 250);
+  /* Brighter list text and the dimmer stamp line on the article's navy
+     "At a glance" panel. */
+  --color-ih-on-navy-strong: oklch(0.9 0.015 250);
+  --color-ih-on-navy-dim: oklch(0.78 0.025 250);
+
+  /* Blog article tints (design_handoff_blog_article). Callout grounds and
+     rules per tone, the warm highlight on a comparison-table row and its tag,
+     and the quick-answer box's rule. Labels reuse --color-ih-warning-ink. */
+  --color-ih-accent-line: oklch(0.88 0.04 248);
+  --color-ih-warning-tint: oklch(0.97 0.04 85);
+  --color-ih-warning-line: oklch(0.84 0.09 80);
+  --color-ih-danger-tint: oklch(0.965 0.025 25);
+  --color-ih-danger-line: oklch(0.8 0.1 25);
+  --color-ih-danger-label: oklch(0.48 0.16 25);
+  --color-ih-highlight: oklch(0.975 0.03 85);
+  --color-ih-highlight-tag: oklch(0.93 0.06 85);
+  --color-ih-highlight-ink: oklch(0.42 0.09 70);
 
   /* Semantic */
   --color-ih-success: oklch(0.55 0.11 150);
@@ -460,6 +477,95 @@
 .sc-article-body pre code {
   background: none;
   padding: 0;
+}
+
+/* ── Blog article inline HTML (`.ih-article-html`) ──
+   The `lead`, `paragraph` and `prose` blocks carry stored HTML, so their links,
+   emphasis and (for prose) sub-headings and lists cannot take utility classes.
+   Size, leading and colour of the block itself stay utilities on the element;
+   these rules only reach the markup inside it. Scoped to the blog's own block
+   views — the service case studies keep `.sc-article-body`. */
+.ih-article-html strong,
+.ih-article-html b {
+  color: var(--color-ih-ink);
+  font-weight: 600;
+}
+.ih-article-html em,
+.ih-article-html i {
+  font-style: italic;
+}
+.ih-article-html a {
+  color: var(--color-ih-accent);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  transition: color 0.15s;
+}
+.ih-article-html a:hover {
+  color: var(--color-ih-accent-hover);
+}
+.ih-article-html code {
+  font-family: var(--font-mono);
+  font-size: 0.88em;
+  background: var(--color-ih-surface-2);
+  padding: 2px 5px;
+  border-radius: 4px;
+}
+.ih-article-html > * + * {
+  margin-top: 16px;
+}
+.ih-article-html h3 {
+  margin-top: 28px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -0.015em;
+  color: var(--color-ih-ink);
+}
+.ih-article-html h4 {
+  margin-top: 22px;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--color-ih-ink);
+}
+.ih-article-html ul,
+.ih-article-html ol {
+  padding-left: 22px;
+}
+.ih-article-html ul {
+  list-style: disc;
+}
+.ih-article-html ol {
+  list-style: decimal;
+}
+.ih-article-html li + li {
+  margin-top: 6px;
+}
+.ih-article-html li::marker {
+  color: var(--color-ih-muted);
+}
+.ih-article-html blockquote {
+  border-left: 2px solid var(--color-ih-border-strong);
+  padding-left: 16px;
+  color: var(--color-ih-ink);
+  font-style: italic;
+}
+.ih-article-html pre {
+  background: var(--color-ih-surface-2);
+  border: 1px solid var(--color-ih-border);
+  border-radius: 6px;
+  padding: 14px 16px;
+  overflow-x: auto;
+}
+.ih-article-html pre code {
+  background: none;
+  padding: 0;
+}
+@media (prefers-reduced-motion: reduce) {
+  .ih-article-html a {
+    transition: none;
+  }
 }
 
 .sc-lead {

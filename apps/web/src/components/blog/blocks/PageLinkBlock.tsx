@@ -1,8 +1,8 @@
-import Link from 'next/link'
 import { pageLinkHref, type PageLinkBlock } from '@indus/domain'
+import LinkCard from './LinkCard'
 
 const KIND_LABEL: Record<PageLinkBlock['kind'], string> = {
-  market: 'Export market',
+  market: 'Market',
   service: 'Service',
   industry: 'Industry',
 }
@@ -27,25 +27,5 @@ export default function PageLinkBlockView({
 }) {
   if (!livePageLinks.has(`${block.kind}:${block.slug}`)) return null
 
-  return (
-    <Link
-      href={pageLinkHref(block)}
-      className="border-ih-border bg-ih-surface-2 hover:border-ih-accent group my-6 flex items-center justify-between gap-4 rounded-lg border px-5 py-4 transition-colors"
-    >
-      <div className="min-w-0">
-        <p className="mono text-ih-muted mb-1 text-[10.5px] uppercase tracking-[0.12em]">
-          {KIND_LABEL[block.kind]}
-        </p>
-        <p className="text-ih-ink group-hover:text-ih-accent text-[15px] font-medium">
-          {block.label}
-        </p>
-        {block.blurb && (
-          <p className="text-ih-muted mt-0.5 text-[13.5px] leading-[1.5]">{block.blurb}</p>
-        )}
-      </div>
-      <span aria-hidden="true" className="mono text-ih-accent shrink-0 text-[14px]">
-        →
-      </span>
-    </Link>
-  )
+  return <LinkCard href={pageLinkHref(block)} eyebrow={KIND_LABEL[block.kind]} label={block.label} blurb={block.blurb} />
 }

@@ -2,7 +2,7 @@ import type { DownloadBlock } from '@indus/domain'
 
 export default function DownloadBlockView({ block }: { block: DownloadBlock }) {
   return (
-    <section className="my-6">
+    <section className="min-w-0">
       {block.heading && (
         <p className="mono mb-2.5 text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">
           {block.heading}
@@ -13,7 +13,7 @@ export default function DownloadBlockView({ block }: { block: DownloadBlock }) {
           <li key={i}>
             <a
               href={item.url}
-              className="flex items-center justify-between gap-4 rounded-md border border-ih-border bg-ih-surface px-4 py-3 text-[14px] text-ih-ink transition-colors hover:border-ih-accent hover:text-ih-accent"
+              className="flex min-h-10 items-center justify-between gap-4 rounded-md border border-ih-border bg-ih-surface px-4 py-3 text-[14px] text-ih-ink transition-colors hover:border-ih-accent hover:text-ih-accent"
             >
               <span className="font-medium">{item.label}</span>
               <span className="mono shrink-0 text-[10.5px] uppercase tracking-[0.1em] text-ih-muted">

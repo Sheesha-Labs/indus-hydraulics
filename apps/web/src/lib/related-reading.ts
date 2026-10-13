@@ -1,5 +1,7 @@
 import { db } from '@indus/db'
 import type { RelatedArticle } from '../components/blog/RelatedReading'
+import type { BlogPostCardData } from '../components/blog/BlogPostCard'
+import { listBlogPosts } from './blog-posts'
 
 /**
  * Articles that reference a given product or catalogue category.
@@ -154,21 +156,14 @@ export async function getRelatedReadingForProduct(
  * More articles from the same blog topic, newest first, for the foot of an
  * article — skipping the article itself and anything it already links to in a
  * `related_articles` block, so the two lists never repeat each other.
+ *
+ * Card-shaped (`BlogPostCardData`, through the shared list query) because the
+ * article foot shows each with its hero photograph.
  */
 export async function getMoreFromBlogCategory(
   blogCategoryId: string,
   exclude: readonly string[],
   limit = 3,
-): Promise<RelatedArticle[]> {
-  const rows = await db.blogPost.findMany({
-    where: {
-      categoryId: blogCategoryId,
-      isPublished: true,
-      slug: { notIn: [...exclude] },
-    },
-    orderBy: [{ publishedAt: 'desc' }],
-    take: limit,
-    select: SELECT,
-  })
-  return rows.map(toArticle)
+): Promise<BlogPostCardData[]> {
+  return listBlogPosts({ categoryId: blogCategoryId, excludeSlugs: exclude, take: limit })
 }

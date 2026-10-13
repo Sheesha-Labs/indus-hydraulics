@@ -63,6 +63,68 @@ export function SearchIcon(props: IconProps) {
   )
 }
 
+export function InfoIcon(props: IconProps) {
+  return (
+    <Icon {...props}>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M12 11v5M12 8h.01" />
+    </Icon>
+  )
+}
+
+export function WarningIcon(props: IconProps) {
+  return (
+    <Icon {...props}>
+      <path d="M12 3 2 20h20L12 3Z" />
+      <path d="M12 10v4M12 17h.01" />
+    </Icon>
+  )
+}
+
+/** Octagon — the danger tone. Shape differs from warning so tone never rests on colour. */
+export function DangerIcon(props: IconProps) {
+  return (
+    <Icon {...props}>
+      <path d="M8 3h8l5 5v8l-5 5H8l-5-5V8z" />
+      <path d="M12 8v5M12 16h.01" />
+    </Icon>
+  )
+}
+
+export function LinkIcon(props: IconProps) {
+  return (
+    <Icon {...props}>
+      <path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1" />
+      <path d="M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1" />
+    </Icon>
+  )
+}
+
+export function WhatsAppIcon(props: IconProps) {
+  return (
+    <Icon {...props}>
+      <path d="M4 20l1.3-4A8 8 0 1 1 8 18.7z" />
+      <path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1-1.5-2-1-1 .8a4 4 0 0 1-1.8-1.8l.8-1-1-2z" />
+    </Icon>
+  )
+}
+
+export function ListIcon(props: IconProps) {
+  return (
+    <Icon {...props}>
+      <path d="M9 6h11M9 12h11M9 18h11M4 6h.01M4 12h.01M4 18h.01" />
+    </Icon>
+  )
+}
+
+export function CloseIcon(props: IconProps) {
+  return (
+    <Icon {...props}>
+      <path d="M6 6l12 12M18 6 6 18" />
+    </Icon>
+  )
+}
+
 export function DocIcon(props: IconProps) {
   return (
     <Icon {...props}>
