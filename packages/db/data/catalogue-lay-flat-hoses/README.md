@@ -1,6 +1,13 @@
 # Lay flat hoses — `catalogue-lay-flat-hoses`
 
-**23 listings, 74 part numbers**, unbranded (`indus`), in a new top-level category.
+**36 listings, 74 part numbers**, unbranded (`indus`), in a new top-level category.
+
+Batch 3 (same day) added `lay-flat-hose-couplings` (position 6: grooved-end, large Storz 8–12", male × female,
+flanged, high-pressure, slurry, stainless well riser and expansion ring couplings, `IH-LF-C*`) and
+`lay-flat-hose-reels-winders` (position 7: riser winding trailers 2" × 300 m and 8" × 150 m, portable motorised
+winder, tractor-mounted hydraulic reel, hose mover, `IH-LF-E*`). Material and size ranges only — no per-size
+tables or pressure ratings; the 2" winding trailer carries its published spec card figures. The large-bore
+hose mender was not listed (duplicates the live hose mender, 1/2" to 12").
 
 Batch 2 (same day) added `jacketed-fire-hoses` (position 5): double-jacket EPDM- and
 polyurethane-lined, single-jacket polyurethane- and rubber-lined, double-jacket rubber-lined,
