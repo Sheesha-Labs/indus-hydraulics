@@ -21,6 +21,7 @@ import {
 import type { MarketMapModel } from '../../lib/market-geometry'
 import type { PageContent } from '../../lib/page-content'
 import MarketCatalogueIndex, { type CatalogueCluster } from './MarketCatalogueIndex'
+import RelatedReading, { type RelatedArticle } from '../blog/RelatedReading'
 import MarketFigure from './MarketFigure'
 import MarketIndustries, { type MarketBrand, type MarketSectorImage } from './MarketIndustries'
 import MarketMapPanel from './MarketMapPanel'
@@ -52,6 +53,7 @@ export default function MarketLanding({
   brands,
   sectorImages,
   operationsImages,
+  guides = [],
   contact,
   showAuditStrip,
   content,
@@ -70,6 +72,11 @@ export default function MarketLanding({
    * labelled placeholder.
    */
   operationsImages: Partial<Record<string, { url: string; alt: string }>>
+  /**
+   * Articles that link to this market with a `page_link` block — the return leg
+   * of the blog's market links. Rendered under the FAQ; nothing when empty.
+   */
+  guides?: RelatedArticle[]
   contact: { phone: string | null; email: string | null; hours: string | null; whatsappUrl: string | null }
   /** The build-time audit strip. Staging only — see the docblock on it. */
   showAuditStrip: boolean
@@ -537,6 +544,11 @@ export default function MarketLanding({
             </div>
           ))}
         </div>
+        <RelatedReading
+          articles={guides}
+          eyebrow="From the blog"
+          heading={`Guides for buyers in ${market.name}`}
+        />
       </div>
     </section>
     ),

@@ -16,6 +16,7 @@ import MarketLanding from '../../../../components/markets/MarketLanding'
 import MarketLandingLegacy from '../../../../components/markets/MarketLandingLegacy'
 import { buildMarketMapModel } from '../../../../lib/market-geometry'
 import { getSubPageContent } from '../../../../lib/page-content'
+import { getArticlesForMarket } from '../../../../lib/related-reading'
 import {
   marketCatalogueClusters,
   marketOperationsImages,
@@ -161,12 +162,13 @@ export default async function MarketPage({ params }: Props) {
     )
   }
 
-  const [clusters, brands, sectorImages, operationsImages, settings] = await Promise.all([
+  const [clusters, brands, sectorImages, operationsImages, settings, guides] = await Promise.all([
     marketCatalogueClusters(),
     marketStockedBrands(),
     marketSectorImages(),
     marketOperationsImages(),
     getStoreSettings(),
+    getArticlesForMarket(market.slug),
   ])
 
   // Projected on the server. The topology never reaches the browser — see the
@@ -184,6 +186,7 @@ export default async function MarketPage({ params }: Props) {
         brands={brands}
         sectorImages={sectorImages}
         operationsImages={operationsImages}
+        guides={guides}
         contact={{
           phone: settings.contactPhone,
           email: settings.contactEmail,

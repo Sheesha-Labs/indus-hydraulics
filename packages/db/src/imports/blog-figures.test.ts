@@ -111,6 +111,18 @@ describe('withFigures', () => {
     expect(out.some((b) => b.type === 'figure')).toBe(false)
   })
 
+  it('keeps a seed figure with its own Media id when the wave opts in', () => {
+    const withOne: BlogBlocksInput = [
+      head('/01'),
+      { type: 'figure', imageId: 'media-9', caption: 'placed by the author', aspectRatio: '16/9' },
+      { type: 'figure', imageId: null, caption: 'empty slot', aspectRatio: '16/9' },
+      para,
+    ]
+    const out = withFigures('nothing-defined', withOne, heroes, true)
+    expect(out.filter((b) => b.type === 'figure')).toHaveLength(1)
+    expect(out[1]).toMatchObject({ type: 'figure', imageId: 'media-9' })
+  })
+
   it('skips a borrowed article that has no hero rather than writing a null imageId', () => {
     const out = withFigures('why-hydraulic-hoses-fail', body, new Map())
     expect(out.filter((b) => b.type === 'figure')).toHaveLength(0)
