@@ -154,7 +154,7 @@ const ARTICLE: BlogArticleSeed = {
     },
     {
       type: 'related_articles',
-      slugs: ['frac-water-transfer-lay-flat-hose', 'lay-flat-hose-guide', 'lay-flat-hose-pressure-ratings', 'lay-flat-hose-vs-hdpe-pipe', 'water-suction-and-dewatering-hose'],
+      slugs: ['flood-response-pumping-lay-flat-hose', 'slurry-drag-hose-sizing-and-life', 'frac-water-transfer-lay-flat-hose', 'lay-flat-hose-guide', 'lay-flat-hose-pressure-ratings', 'lay-flat-hose-vs-hdpe-pipe'],
     },
     {
       type: 'as_of_stamp',
