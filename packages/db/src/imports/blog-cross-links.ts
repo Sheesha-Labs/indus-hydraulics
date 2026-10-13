@@ -378,11 +378,7 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
     pages: [MKT_OMAN],
   },
   'desalination-and-water-treatment-hose': {
-    related: [
-      'water-suction-and-dewatering-hose',
-      'industrial-hose-is-not-hydraulic-hose',
-      'chemical-transfer-hose-selection',
-    ],
+    related: ['lay-flat-hose-guide', 'lay-flat-hose-pressure-ratings', 'water-suction-and-dewatering-hose', 'industrial-hose-is-not-hydraulic-hose', 'chemical-transfer-hose-selection'],
     pages: [POWER],
   },
 
@@ -503,13 +499,7 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
     ],
   },
   'water-suction-and-dewatering-hose': {
-    related: [
-      'industrial-hose-guide',
-      'pvc-or-rubber-suction-hose',
-      'desalination-and-water-treatment-hose',
-      'industrial-hose-is-not-hydraulic-hose',
-      'log-splitter-and-shop-press-hose',
-    ],
+    related: ['suction-hose-vs-lay-flat-hose', 'lay-flat-hose-guide', 'lay-flat-hose-flow-and-friction-loss', 'industrial-hose-guide', 'pvc-or-rubber-suction-hose', 'desalination-and-water-treatment-hose'],
     pages: [MINING],
   },
 
@@ -1348,12 +1338,7 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
   },
   // ── industrial-hose cluster, wave 1 (2026-10-06) ─────────────────────
   'bauer-couplings-explained': {
-    related: [
-      'storz-coupling-sizes',
-      'water-suction-and-dewatering-hose',
-      'pvc-or-rubber-suction-hose',
-      'industrial-hose-couplings-guide',
-    ],
+    related: ['lay-flat-hose-couplings-guide', 'storz-coupling-sizes', 'water-suction-and-dewatering-hose', 'pvc-or-rubber-suction-hose', 'industrial-hose-couplings-guide'],
   },
   'bulk-material-and-sandblast-hose': {
     related: [
@@ -1477,24 +1462,10 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
     ],
   },
   'industrial-hose-couplings-guide': {
-    related: [
-      'industrial-hose-guide',
-      'cam-and-groove-coupling-types',
-      'storz-coupling-sizes',
-      'industrial-hose-clamps',
-      'flanged-hose-connections',
-      'hydraulic-quick-couplers-iso-7241',
-    ],
+    related: ['lay-flat-hose-couplings-guide', 'industrial-hose-guide', 'cam-and-groove-coupling-types', 'storz-coupling-sizes', 'industrial-hose-clamps', 'flanged-hose-connections'],
   },
   'industrial-hose-guide': {
-    related: [
-      'industrial-hose-couplings-guide',
-      'metal-hose-guide',
-      'industrial-hose-safety-factors',
-      'industrial-hose-is-not-hydraulic-hose',
-      'chemical-transfer-hose-selection',
-      'hydraulic-hose-in-uae-heat',
-    ],
+    related: ['lay-flat-hose-guide', 'tpu-vs-nbr-vs-pvc-lay-flat-hose', 'industrial-hose-couplings-guide', 'metal-hose-guide', 'industrial-hose-safety-factors', 'industrial-hose-is-not-hydraulic-hose'],
   },
   'industrial-hose-safety-factors': {
     related: [
@@ -1523,12 +1494,7 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
     ],
   },
   'oil-suction-and-discharge-hose': {
-    related: [
-      'tanker-loading-and-vapour-recovery-hose',
-      'uhmwpe-chemical-hose',
-      'cam-and-groove-coupling-types',
-      'industrial-hose-guide',
-    ],
+    related: ['tpu-vs-nbr-vs-pvc-lay-flat-hose', 'tanker-loading-and-vapour-recovery-hose', 'uhmwpe-chemical-hose', 'cam-and-groove-coupling-types', 'industrial-hose-guide'],
     pages: [OIL_GAS],
   },
   'ptfe-hose-explained': {
@@ -1540,12 +1506,7 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
     ],
   },
   'pvc-or-rubber-suction-hose': {
-    related: [
-      'water-suction-and-dewatering-hose',
-      'hydraulic-hose-in-uae-heat',
-      'food-hose-materials-compared',
-      'bauer-couplings-explained',
-    ],
+    related: ['suction-hose-vs-lay-flat-hose', 'tpu-vs-nbr-vs-pvc-lay-flat-hose', 'water-suction-and-dewatering-hose', 'hydraulic-hose-in-uae-heat', 'food-hose-materials-compared', 'bauer-couplings-explained'],
   },
   'reading-an-industrial-hose-layline': {
     related: [
@@ -1654,12 +1615,7 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
     pages: [OIL_GAS],
   },
   'well-service-and-stimulation-hose': {
-    related: [
-      'oilfield-hose-guide',
-      'api-16c-choke-and-kill-lines',
-      'nace-mr0175-hose-documentation',
-      'riser-tensioner-and-compensator-hose',
-    ],
+    related: ['lay-flat-hose-vs-hdpe-pipe', 'lay-flat-hose-flow-and-friction-loss', 'oilfield-hose-guide', 'api-16c-choke-and-kill-lines', 'nace-mr0175-hose-documentation', 'riser-tensioner-and-compensator-hose'],
     pages: [OIL_GAS],
   },
   'riser-tensioner-and-compensator-hose': {

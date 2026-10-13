@@ -237,6 +237,18 @@ export const CATEGORY_REACH_PROFILES: Readonly<Record<string, MarketReachProfile
       'North Africa',
     ],
   },
+  'lay-flat-hoses': {
+    heading: 'Where we ship lay flat hose',
+    body: 'Lay flat hose is the easiest large-bore line to move: empty, it rolls flat, so several hundred metres travel on one reel and a container holds a whole dewatering or transfer system. It ships from Dubai as bulk coils up to 400 m or as made-up assemblies with the couplings fitted and tested, with the size table and pressure rating for each bore. Send the flow, the line length and the lift, and we will size the bore before quoting.',
+    primaryRegion: 'GCC & Middle East',
+    rotatingRegions: [
+      'Western & Northern Europe',
+      'North Africa',
+      'East Africa',
+      'Southern Africa',
+      'South-East Asia',
+    ],
+  },
   'seals-accessories': {
     heading: 'Where we ship seals and accessories',
     body: 'Seals, filters and the small hardware around a hydraulic system are light enough that freight rarely decides the order — what decides it is having the right sizes on the shelf when something is opened up. Buyers on longer lanes tend to order these as a kit against a machine rather than singly, which is also how we prefer to quote them. Bring the dimensions or the failed part and we will match it.',

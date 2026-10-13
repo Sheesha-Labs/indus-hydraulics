@@ -167,3 +167,26 @@ export async function getMoreFromBlogCategory(
 ): Promise<BlogPostCardData[]> {
   return listBlogPosts({ categoryId: blogCategoryId, excludeSlugs: exclude, take: limit })
 }
+
+/**
+ * Articles that link to an export market page — the return leg of the
+ * `page_link` blocks an article carries, shown on that market's page.
+ *
+ * There is no link table for page links (they are read from the body), so this
+ * filters on the JSON body. It runs once per market page render, against ~250
+ * posts, so a containment filter is acceptable where it would not be on a
+ * product page.
+ */
+export async function getArticlesForMarket(marketSlug: string, limit = 6): Promise<RelatedArticle[]> {
+  const rows = await db.blogPost.findMany({
+    where: {
+      isPublished: true,
+      deletedAt: null,
+      bodyBlocks: { array_contains: [{ type: 'page_link', kind: 'market', slug: marketSlug }] },
+    },
+    orderBy: [{ publishedAt: 'desc' }],
+    take: limit,
+    select: SELECT,
+  })
+  return rows.map(toArticle)
+}

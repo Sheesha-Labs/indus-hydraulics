@@ -160,11 +160,12 @@ export function withCrossLinks(
   if (generated.length === 0) return blocks
 
   // Strip any previously generated link blocks so a re-import replaces the
-  // graph rather than stacking a second copy of it underneath the first.
+  // graph rather than stacking a second copy of it underneath the first. Only
+  // what this function generates is stripped: an article with no map entry
+  // wrote its own related list and page links in its seed, and those stay.
   const base = blocks.filter(
     (b) =>
-      b.type !== 'related_articles' &&
-      b.type !== 'page_link' &&
+      ((b.type !== 'related_articles' && b.type !== 'page_link') || !links) &&
       (b.type !== 'market_reach' || !reach)
   )
 
