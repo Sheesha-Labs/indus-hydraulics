@@ -1673,7 +1673,8 @@
       "wall": "4.5 ±0.5",
       "burstPressure": 126,
       "weightPerMetre": 1.4,
-      "tensileKg": 18700
+      "tensileKg": 18700,
+      "item": "Standard class"
      },
      "hoseInch": "3\"",
      "hoseDn": 80,
@@ -1693,7 +1694,8 @@
       "wall": "6.0 ±0.5",
       "burstPressure": 126,
       "weightPerMetre": 2.73,
-      "tensileKg": 38300
+      "tensileKg": 38300,
+      "item": "Standard class"
      },
      "hoseInch": "4\"",
      "hoseDn": 100,
@@ -1713,7 +1715,8 @@
       "wall": "6.0 ±0.5",
       "burstPressure": 100,
       "weightPerMetre": 3.3,
-      "tensileKg": 48200
+      "tensileKg": 48200,
+      "item": "Standard class"
      },
      "hoseInch": "5\"",
      "hoseDn": 125,
