@@ -7,6 +7,7 @@ import { mediaUrl } from '../../lib/media'
 import { ArrowLeftIcon } from '../designed/icons'
 import ArticleContents, { type ContentsEntry } from './ArticleContents'
 import BlogArticleRenderer from './BlogArticleRenderer'
+import BlogBreadcrumb from './BlogBreadcrumb'
 import type { BlogPostCardData } from './BlogPostCard'
 import CopyLinkButton from './CopyLinkButton'
 import MoreOnTopic from './MoreOnTopic'
@@ -86,7 +87,9 @@ export default function BlogArticleLayout(props: BlogArticleLayoutProps) {
   return (
     <div className="pb-12 min-[761px]:pb-[72px]">
       <div className={WRAP}>
-        <Breadcrumb category={category} />
+        <BlogBreadcrumb
+          trail={category ? [{ href: `/blog/c/${category.slug}`, label: category.name }] : []}
+        />
       </div>
 
       <header
@@ -167,32 +170,6 @@ export default function BlogArticleLayout(props: BlogArticleLayoutProps) {
         </div>
       </div>
     </div>
-  )
-}
-
-function Breadcrumb({ category }: { category: { name: string; slug: string } | null }) {
-  const crumbs = [
-    { href: '/', label: 'Home' },
-    { href: '/blog', label: 'Blog' },
-    ...(category ? [{ href: `/blog/c/${category.slug}`, label: category.name }] : []),
-  ]
-  return (
-    <nav aria-label="Breadcrumb" className="pt-3 min-[761px]:pt-5">
-      <ol className="m-0 flex list-none flex-wrap items-center gap-2 p-0 text-[12.5px] text-ih-muted min-[761px]:text-[13px]">
-        {crumbs.map((crumb, i) => (
-          <li key={crumb.href} className="flex items-center gap-2">
-            {i > 0 && (
-              <span aria-hidden="true" className="text-ih-muted-2">
-                /
-              </span>
-            )}
-            <Link href={crumb.href} className="inline-flex min-h-8 items-center hover:text-ih-accent">
-              {crumb.label}
-            </Link>
-          </li>
-        ))}
-      </ol>
-    </nav>
   )
 }
 

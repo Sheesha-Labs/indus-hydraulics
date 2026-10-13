@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import { shortDate as formatDate } from '../../lib/blog-dates'
 import { mediaUrl } from '../../lib/media'
 
 export type BlogPostCardData = {
@@ -25,9 +26,6 @@ type Props = {
   variant?: 'default' | 'grid'
 }
 
-function formatDate(date: Date): string {
-  return date.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })
-}
 
 /**
  * Shared article card — used by the index, the category hubs and the author
