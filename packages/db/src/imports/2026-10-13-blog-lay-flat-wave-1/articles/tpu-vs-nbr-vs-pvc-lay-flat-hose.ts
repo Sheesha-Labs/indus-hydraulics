@@ -124,6 +124,10 @@ const ARTICLE: BlogArticleSeed = {
       ],
     },
     {
+      type: 'paragraph',
+      html: 'Two follow-ups: how the three materials cope with a <a href="/blog/lay-flat-hose-in-gulf-heat">Gulf summer</a>, and why a TPU hose for diesel needs an earthing wire — see the <a href="/blog/antistatic-fuel-transfer-hose-guide">antistatic fuel transfer hose guide</a>.',
+    },
+    {
       type: 'faq_block',
       heading: 'Common questions',
       items: [
@@ -154,7 +158,7 @@ const ARTICLE: BlogArticleSeed = {
     },
     {
       type: 'related_articles',
-      slugs: ['lay-flat-hose-guide', 'lay-flat-hose-pressure-ratings', 'why-lay-flat-hose-fails', 'pvc-or-rubber-suction-hose'],
+      slugs: ['lay-flat-hose-in-gulf-heat', 'antistatic-fuel-transfer-hose-guide', 'lay-flat-hose-guide', 'lay-flat-hose-pressure-ratings', 'why-lay-flat-hose-fails', 'pvc-or-rubber-suction-hose'],
     },
     {
       type: 'as_of_stamp',

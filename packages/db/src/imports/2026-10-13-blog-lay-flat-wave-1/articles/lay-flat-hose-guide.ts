@@ -203,6 +203,10 @@ const ARTICLE: BlogArticleSeed = {
       ],
     },
     {
+      type: 'paragraph',
+      html: 'In the Gulf, lay flat does most of its work in a handful of jobs: <a href="/blog/construction-dewatering-hose-gcc">construction dewatering</a> on high-water-table sites, <a href="/blog/frac-water-transfer-lay-flat-hose">frac water transfer</a> to gas well pads, <a href="/blog/flexible-borehole-riser-vs-steel-column-pipe">flexible risers in boreholes</a>, <a href="/blog/antistatic-fuel-transfer-hose-guide">temporary fuel lines</a> and <a href="/blog/single-vs-double-jacket-fire-hose">fire hose</a>. Each has its own guide, and <a href="/blog/lay-flat-hose-in-gulf-heat">running lay flat in Gulf heat</a> covers what summer does to all of them.',
+    },
+    {
       type: 'faq_block',
       heading: 'Common questions',
       items: [
@@ -240,7 +244,7 @@ const ARTICLE: BlogArticleSeed = {
     },
     {
       type: 'related_articles',
-      slugs: ['tpu-vs-nbr-vs-pvc-lay-flat-hose', 'lay-flat-hose-pressure-ratings', 'lay-flat-hose-flow-and-friction-loss', 'lay-flat-hose-couplings-guide', 'lay-flat-hose-vs-hdpe-pipe', 'why-lay-flat-hose-fails'],
+      slugs: ['construction-dewatering-hose-gcc', 'frac-water-transfer-lay-flat-hose', 'flexible-borehole-riser-vs-steel-column-pipe', 'tpu-vs-nbr-vs-pvc-lay-flat-hose', 'lay-flat-hose-pressure-ratings', 'lay-flat-hose-flow-and-friction-loss'],
     },
     {
       type: 'as_of_stamp',

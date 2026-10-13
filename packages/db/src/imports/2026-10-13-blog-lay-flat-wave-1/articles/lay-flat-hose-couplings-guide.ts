@@ -106,6 +106,10 @@ const ARTICLE: BlogArticleSeed = {
       body: 'A line is limited by its weakest component. Check the working pressure of the coupling, the hose and anything they connect to, and work to the lowest. For pumped transfer lines above ordinary dewatering pressures, use a coupling built and tested for it.',
     },
     {
+      type: 'paragraph',
+      html: 'Two applications put couplings under particular load: <a href="/blog/frac-water-transfer-lay-flat-hose">frac water lines</a>, where high-pressure couplings set the limit, and <a href="/blog/flexible-borehole-riser-vs-steel-column-pipe">borehole risers</a>, where the coupling carries the pump.',
+    },
+    {
       type: 'faq_block',
       heading: 'Common questions',
       items: [
@@ -136,7 +140,7 @@ const ARTICLE: BlogArticleSeed = {
     },
     {
       type: 'related_articles',
-      slugs: ['lay-flat-hose-guide', 'lay-flat-hose-pressure-ratings', 'lay-flat-hose-flow-and-friction-loss', 'lay-flat-hose-vs-hdpe-pipe'],
+      slugs: ['frac-water-transfer-lay-flat-hose', 'flexible-borehole-riser-vs-steel-column-pipe', 'lay-flat-hose-guide', 'lay-flat-hose-pressure-ratings', 'lay-flat-hose-flow-and-friction-loss', 'lay-flat-hose-vs-hdpe-pipe'],
     },
     {
       type: 'as_of_stamp',

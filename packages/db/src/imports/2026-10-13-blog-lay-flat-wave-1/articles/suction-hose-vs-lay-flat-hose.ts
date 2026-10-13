@@ -116,6 +116,10 @@ const ARTICLE: BlogArticleSeed = {
       html: '<ol><li><strong>Place the pump as close to the water and as low as practical.</strong> Every metre saved on the suction side is worth several on the discharge side.</li><li><strong>Keep the suction hose short and straight,</strong> rising steadily to the pump with no high points where air can collect, and never bent tighter than its minimum bend radius.</li><li><strong>Fit a strainer</strong> or foot valve sized to the pump’s solids handling.</li><li><strong>Make every suction joint airtight.</strong> An air leak on the suction side starves the pump and can make it lose prime.</li><li><strong>Run lay flat on the discharge</strong>, sized for the flow and line length — see our <a href="/blog/lay-flat-hose-flow-and-friction-loss">friction loss guide</a> — with <a href="/c/lay-flat-hose-couplings">couplings</a> matched to the pump outlet.</li></ol>',
     },
     {
+      type: 'paragraph',
+      html: 'On a wellpoint system the same rule applies to every connection between wellpoint, header and pump; our guide to <a href="/blog/construction-dewatering-hose-gcc">construction dewatering hose in the GCC</a> walks through a full system.',
+    },
+    {
       type: 'faq_block',
       heading: 'Common questions',
       items: [
@@ -153,7 +157,7 @@ const ARTICLE: BlogArticleSeed = {
     },
     {
       type: 'related_articles',
-      slugs: ['water-suction-and-dewatering-hose', 'pvc-or-rubber-suction-hose', 'lay-flat-hose-guide', 'lay-flat-hose-flow-and-friction-loss'],
+      slugs: ['construction-dewatering-hose-gcc', 'water-suction-and-dewatering-hose', 'pvc-or-rubber-suction-hose', 'lay-flat-hose-guide', 'lay-flat-hose-flow-and-friction-loss'],
     },
     {
       type: 'as_of_stamp',

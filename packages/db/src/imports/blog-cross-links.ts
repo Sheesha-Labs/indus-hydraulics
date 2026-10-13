@@ -319,11 +319,7 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
 
   // ── gulf-conditions ────────────────────────────────────────────────────
   'hydraulic-hose-in-uae-heat': {
-    related: [
-      'why-summer-is-harder-on-hydraulic-hose',
-      'hydraulic-hose-cover-cracking',
-      'injection-moulding-hydraulic-hose',
-    ],
+    related: ['lay-flat-hose-in-gulf-heat', 'why-summer-is-harder-on-hydraulic-hose', 'hydraulic-hose-cover-cracking', 'injection-moulding-hydraulic-hose'],
     pages: [MKT_SAUDI],
   },
   'hydraulic-hose-uv-and-ozone': {
@@ -499,7 +495,7 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
     ],
   },
   'water-suction-and-dewatering-hose': {
-    related: ['suction-hose-vs-lay-flat-hose', 'lay-flat-hose-guide', 'lay-flat-hose-flow-and-friction-loss', 'industrial-hose-guide', 'pvc-or-rubber-suction-hose', 'desalination-and-water-treatment-hose'],
+    related: ['construction-dewatering-hose-gcc', 'dewatering-discharge-permits-dubai-qatar', 'suction-hose-vs-lay-flat-hose', 'lay-flat-hose-guide', 'lay-flat-hose-flow-and-friction-loss', 'industrial-hose-guide'],
     pages: [MINING],
   },
 
@@ -1193,7 +1189,7 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
     ],
   },
   'water-well-drilling-rig-fittings': {
-    related: ['field-re-hosing-kit', 'spares-list-for-a-remote-site', 'measuring-a-fitting-without-gauges'],
+    related: ['flexible-borehole-riser-vs-steel-column-pipe', 'field-re-hosing-kit', 'spares-list-for-a-remote-site', 'measuring-a-fitting-without-gauges'],
   },
   'port-and-terminal-fittings': {
     related: [
@@ -1494,7 +1490,7 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
     ],
   },
   'oil-suction-and-discharge-hose': {
-    related: ['tpu-vs-nbr-vs-pvc-lay-flat-hose', 'tanker-loading-and-vapour-recovery-hose', 'uhmwpe-chemical-hose', 'cam-and-groove-coupling-types', 'industrial-hose-guide'],
+    related: ['antistatic-fuel-transfer-hose-guide', 'tpu-vs-nbr-vs-pvc-lay-flat-hose', 'tanker-loading-and-vapour-recovery-hose', 'uhmwpe-chemical-hose', 'cam-and-groove-coupling-types', 'industrial-hose-guide'],
     pages: [OIL_GAS],
   },
   'ptfe-hose-explained': {
@@ -1615,7 +1611,7 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
     pages: [OIL_GAS],
   },
   'well-service-and-stimulation-hose': {
-    related: ['lay-flat-hose-vs-hdpe-pipe', 'lay-flat-hose-flow-and-friction-loss', 'oilfield-hose-guide', 'api-16c-choke-and-kill-lines', 'nace-mr0175-hose-documentation', 'riser-tensioner-and-compensator-hose'],
+    related: ['frac-water-transfer-lay-flat-hose', 'lay-flat-hose-vs-hdpe-pipe', 'lay-flat-hose-flow-and-friction-loss', 'oilfield-hose-guide', 'api-16c-choke-and-kill-lines', 'nace-mr0175-hose-documentation'],
     pages: [OIL_GAS],
   },
   'riser-tensioner-and-compensator-hose': {

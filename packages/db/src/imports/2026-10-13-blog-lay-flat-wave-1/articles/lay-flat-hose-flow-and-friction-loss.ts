@@ -120,6 +120,10 @@ const ARTICLE: BlogArticleSeed = {
       html: '<ul><li><strong>Use long lengths.</strong> Our TPU hose comes in single lengths up to 400 m; every coupling removed is one less leak point and one less pressure drop.</li><li><strong>Lay it straight.</strong> Tight bends and twists add loss and concentrate wear; a kink can block a line completely.</li><li><strong>Bleed the air.</strong> Trapped air at high points reduces the effective bore. Fill slowly and vent.</li><li><strong>Size couplings to the hose.</strong> A reducer at each end of an 8" line throws away much of the benefit of the bigger bore. Use full-bore <a href="/c/lay-flat-hose-couplings">lay flat couplings</a>.</li><li><strong>Recheck when the duty changes.</strong> Doubling the flow roughly quadruples the friction.</li></ul>',
     },
     {
+      type: 'paragraph',
+      html: 'For the largest flows — 40 to 120 barrels a minute over several kilometres — see the worked cases in our guide to <a href="/blog/frac-water-transfer-lay-flat-hose">frac water transfer with lay flat hose</a>.',
+    },
+    {
       type: 'faq_block',
       heading: 'Common questions',
       items: [
@@ -150,7 +154,7 @@ const ARTICLE: BlogArticleSeed = {
     },
     {
       type: 'related_articles',
-      slugs: ['lay-flat-hose-guide', 'lay-flat-hose-pressure-ratings', 'lay-flat-hose-vs-hdpe-pipe', 'water-suction-and-dewatering-hose'],
+      slugs: ['frac-water-transfer-lay-flat-hose', 'lay-flat-hose-guide', 'lay-flat-hose-pressure-ratings', 'lay-flat-hose-vs-hdpe-pipe', 'water-suction-and-dewatering-hose'],
     },
     {
       type: 'as_of_stamp',

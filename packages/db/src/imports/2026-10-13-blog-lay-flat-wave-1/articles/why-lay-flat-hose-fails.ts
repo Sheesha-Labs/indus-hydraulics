@@ -109,6 +109,10 @@ const ARTICLE: BlogArticleSeed = {
       html: 'A damaged length can often be saved: cut out the damaged section and rejoin the two ends with a <a href="/p/hose-mender">hose mender</a> or a pair of couplings. Our TPU hose is made in lengths up to 400 m, so a cut-down length still has plenty of use.',
     },
     {
+      type: 'paragraph',
+      html: 'In the Gulf, heat and sun are a failure mode of their own; see <a href="/blog/lay-flat-hose-in-gulf-heat">lay flat hose in Gulf heat</a> for summer practice and storage.',
+    },
+    {
       type: 'faq_block',
       heading: 'Common questions',
       items: [
@@ -139,7 +143,7 @@ const ARTICLE: BlogArticleSeed = {
     },
     {
       type: 'related_articles',
-      slugs: ['lay-flat-hose-guide', 'tpu-vs-nbr-vs-pvc-lay-flat-hose', 'lay-flat-hose-pressure-ratings', 'lay-flat-hose-couplings-guide'],
+      slugs: ['lay-flat-hose-in-gulf-heat', 'lay-flat-hose-guide', 'tpu-vs-nbr-vs-pvc-lay-flat-hose', 'lay-flat-hose-pressure-ratings', 'lay-flat-hose-couplings-guide'],
     },
     {
       type: 'as_of_stamp',
