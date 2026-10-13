@@ -9,13 +9,13 @@
    "name": "Lay Flat Hoses",
    "parentSlug": null,
    "position": 21,
-   "shortDescription": "TPU, NBR and PVC lay flat hoses for dewatering, frac water, well risers, fuel, drinking water, concrete and slurry, with suction hose for the pump side.",
+   "shortDescription": "TPU, NBR and PVC lay flat hoses for dewatering, frac water, well risers, fuel, drinking water, concrete and slurry, jacketed fire hose, and suction hose for the pump side.",
    "seoTitle": "Lay Flat Hoses — TPU, NBR & PVC Layflat Hose",
    "seoDescription": "Lay flat hose in TPU, NBR and PVC: dewatering, frac water, well riser, fuel, drinking water, concrete and slurry lines, 1\" to 16\". Lengths to 400 m.",
    "focusKeyword": "lay flat hose",
    "bands": {
     "hero": {
-     "intro": "Lay flat hose rolls flat on a reel, runs out in lengths up to 400 m and recovers for the next job. We supply TPU, NBR and PVC lay flat hose from 1\" to 16\" for mine dewatering, frac water, borehole risers, fuel, drinking water, concrete and slurry, plus rigid-helix suction hose for the pump inlet."
+     "intro": "Lay flat hose rolls flat on a reel, runs out in lengths up to 400 m and recovers for the next job. We supply TPU, NBR and PVC lay flat hose from 1\" to 16\" for mine dewatering, frac water, borehole risers, fuel, drinking water, concrete and slurry, single- and double-jacket fire hose, and rigid-helix suction hose for the pump inlet."
     },
     "guidance": {
      "eyebrow": "Choosing",
@@ -102,6 +102,21 @@
    "bands": {
     "hero": {
      "intro": "PVC lay flat hose is the light, economical choice for clean water at low pressure: irrigation, site and trash pump discharge, and temporary transfer. For oily water, abrasive ground or higher pressure, step up to NBR or TPU lay flat hose."
+    }
+   }
+  },
+  {
+   "slug": "jacketed-fire-hoses",
+   "name": "Jacketed Fire Hoses",
+   "parentSlug": "lay-flat-hoses",
+   "position": 5,
+   "shortDescription": "Single- and double-jacket fire hose with EPDM, natural rubber or polyurethane liners: attack and supply lines, industrial hose stations, forestry and cabinet hose.",
+   "seoTitle": "Jacketed Fire Hose — Single & Double Jacket",
+   "seoDescription": "Single- and double-jacket fire hose with EPDM, rubber or polyurethane liners for fire brigades, industrial sites, forestry and fire cabinets.",
+   "focusKeyword": "fire hose",
+   "bands": {
+    "hero": {
+     "intro": "Woven-jacket fire hose for fire brigades, industrial fire teams, forestry crews and building fire cabinets. Choose double jacket for high-pressure attack and supply lines that are dragged hard, single jacket for light hose-station and reel duty, and forestry hose where it must be carried. Liners in EPDM, natural rubber or polyurethane; couplings fitted to your pattern."
     }
    }
   }
@@ -3652,6 +3667,1139 @@
      "file": "IH-LF-PVC-02.jpg",
      "alt": "Blue PVC lay flat hose roll with flattened end, side view",
      "caption": "Supplier catalogue photo (2026-10-13), watermark removed by AI inpainting"
+    }
+   ],
+   "variants": [],
+   "crossReferences": []
+  },
+  {
+   "sku": "IH-LF-TSM",
+   "slug": "tpu-lay-flat-snowmaking-hose",
+   "title": "TPU Lay Flat Snowmaking Hose",
+   "category": "tpu-lay-flat-hoses",
+   "focusKeyword": "snowmaking hose",
+   "descriptionShort": "TPU lay flat hose for snowmaking guns and fans at ski slopes and indoor snow centres: stays flexible in the cold, resists abrasion, UV and chemicals, high-visibility yellow. Supplied in long continuous lengths or as made-up assemblies with couplings fitted, from Indus Hydraulics in the UAE.",
+   "descriptionLong": "<p>A lay flat hose for feeding snow guns and fan snowmakers from hydrants on ski slopes, and for water supply in indoor snow centres. Snowmaking runs at low temperature with high water pressure and flow, and hoses are moved across the slope between hydrants, so the hose has to stay flexible in the cold and stand up to abrasion and UV.</p><h3>Construction</h3><ul><li>Liner: TPU</li><li>Reinforcement: woven textile jacket</li><li>Cover: TPU</li><li>Colour: yellow, visible on snow</li></ul><h3>Properties</h3><ul><li>Flexible at low temperature for repositioning between hydrants</li><li>Resists abrasion, UV and chemicals</li><li>Steady water flow for continuous snow production</li></ul><h3>Pressure and sizes</h3><p>A per-size pressure table is not published for this hose. Tell us the bore, length, hydrant pressure and couplings and we will confirm the rating before quoting.</p><h3>Installation and care</h3><ul><li>Unroll the hose fully and lay it out straight before pressurising; a hose pressurised on the reel or with twists can kink and burst.</li><li>Run it along the shortest practical route, away from sharp edges and hot surfaces, and protect it with hose ramps where vehicles cross.</li><li>Raise and lower pressure gradually. Closing a valve suddenly on a long line causes a surge that can exceed the working pressure.</li><li>Stay within the working pressure of the size in use; burst pressure is a test figure, never an operating limit.</li><li>After use, drain the hose, flush it if it carried slurry, fuel or concrete, and roll it flat from the far end to push out what is left.</li><li>Store coils out of direct sunlight and away from sharp objects, and inspect the cover and coupling bands before each deployment.</li></ul>",
+   "seoTitle": "TPU Lay Flat Snowmaking Hose",
+   "seoDescription": "TPU lay flat hose for snowmaking systems at ski slopes and indoor snow centres: cold-flexible, abrasion and UV resistant. Yellow.",
+   "faqs": [
+    {
+     "question": "What pressure is it rated for?",
+     "answer": "A per-size table is not published. Send the bore and hydrant pressure and we will confirm before quoting."
+    },
+    {
+     "question": "Does it stay flexible in freezing conditions?",
+     "answer": "Yes. It is built for snowmaking, where hoses are moved between hydrants at low temperature. Drain it when not in use so water cannot freeze inside."
+    },
+    {
+     "question": "Which couplings can be fitted?",
+     "answer": "Snowmaking hydrant couplings, camlock, Storz or threaded ends, fitted and banded to the hose. Tell us the pattern your hydrants and guns use."
+    },
+    {
+     "question": "How do I choose the bore?",
+     "answer": "Pick the bore for the flow you need and the friction loss you can accept over the line length, then check that its working pressure covers the pump's maximum plus surge. Send us the flow, length and pump and we will size it."
+    },
+    {
+     "question": "How should lay flat hose be stored?",
+     "answer": "Drain and flush it, roll it flat from the far end, and store the coil out of direct sunlight and away from sharp objects. Inspect the cover and coupling bands before each deployment."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Application Family",
+     "value": "lay-flat snowmaking",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "application_family"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Inner Diameter Range",
+     "value": "On request",
+     "unit": null,
+     "position": 1,
+     "isFilterable": false,
+     "templateKey": "inner_diameter_range"
+    },
+    {
+     "group": "Performance",
+     "label": "Max Working Pressure",
+     "value": "Confirmed with quotation",
+     "unit": null,
+     "position": 2,
+     "isFilterable": false,
+     "templateKey": "max_working_pressure"
+    },
+    {
+     "group": "Construction",
+     "label": "Cover Material",
+     "value": "TPU",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "cover"
+    },
+    {
+     "group": "Construction",
+     "label": "Lining / Tube Material",
+     "value": "TPU",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "lining"
+    },
+    {
+     "group": "Construction",
+     "label": "Reinforcement",
+     "value": "Woven textile jacket",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "reinforcement"
+    },
+    {
+     "group": "Identification",
+     "label": "Colour",
+     "value": "Yellow",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Identification",
+     "label": "Construction Type",
+     "value": "Lay flat (collapses when empty)",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": null
+    }
+   ],
+   "searchAliases": [
+    "lay flat hose",
+    "lay-flat hose",
+    "layflat hose",
+    "tpu lay flat snowmaking hose"
+   ],
+   "images": [
+    {
+     "file": "IH-LF-TSM-01.jpg",
+     "alt": "Yellow TPU lay flat snowmaking hose, coiled with open end",
+     "caption": "Supplier catalogue photo (2026-10-13), watermark removed by AI inpainting"
+    }
+   ],
+   "variants": [],
+   "crossReferences": []
+  },
+  {
+   "sku": "IH-LF-FDE",
+   "slug": "double-jacket-fire-hose-epdm-liner",
+   "title": "Double-Jacket Fire Hose, EPDM Liner",
+   "category": "jacketed-fire-hoses",
+   "focusKeyword": "double jacket fire hose",
+   "descriptionShort": "Heavy-duty double-jacket fire hose with an EPDM rubber liner, for high-pressure firefighting, industrial fire water systems and emergency response. Red jacket, supplied coupled. Coupled, banded and tested to order by Indus Hydraulics in the UAE.",
+   "descriptionLong": "<p>A double-jacket attack and supply hose for high-pressure firefighting: fire brigades, industrial fire teams, refinery and plant fire water systems, and emergency water delivery. Two woven jackets, one inside the other, carry the pressure and protect the hose from abrasion when it is dragged over concrete, gravel and debris.</p><h3>Construction</h3><ul><li>Liner: EPDM rubber — resists heat, ozone, ageing, abrasion and a broad range of chemicals, and keeps a smooth bore for flow</li><li>Reinforcement: double woven jacket</li><li>Outer jacket: coated for UV, weather and abrasion resistance and low water absorption</li><li>Colour: red</li></ul><h3>Why double jacket</h3><p>The second jacket raises the pressure the hose can carry, adds abrasion protection and keeps the hose serviceable if the outer jacket is cut. It is the usual choice for attack lines and supply lines on industrial sites where hoses are dragged hard and used often.</p><h3>Care and testing</h3><ul><li>Lay the hose out without kinks before charging it, and open the hydrant or pump valve slowly to avoid pressure surge.</li><li>Keep it away from hot surfaces, sharp edges and dragged loads; use hose bridges where vehicles cross.</li><li>After use, drain it, wash off oil, foam concentrate and mud, and let the jacket dry before it is rolled or racked.</li><li>Store it out of direct sunlight, away from chemicals and in a dry place, rolled or flaked as your equipment requires.</li><li>Inspect the jacket, liner and coupling bands before use, and service-test hoses at the interval your fire code sets — annually is common practice.</li></ul><h3>How to order</h3><p>Send the bore, the length per hose (fire hose is usually supplied in 15, 20, 25 or 30 m lengths), the couplings and the standard your site, insurer or authority requires. We confirm construction, pressure rating and compliance before quoting, and supply hoses coupled, banded and pressure tested on request.</p>",
+   "seoTitle": "Double-Jacket Fire Hose, EPDM Liner",
+   "seoDescription": "Double-jacket fire hose with an EPDM rubber liner for high-pressure firefighting, industrial fire water and emergency response. Red.",
+   "faqs": [
+    {
+     "question": "Single or double jacket?",
+     "answer": "Double jacket carries higher pressure and survives rougher handling, so it suits attack and supply lines that are dragged and used often. Single jacket is lighter and cheaper for hose reels, cabinets and occasional use."
+    },
+    {
+     "question": "Which fire hose standards does it meet?",
+     "answer": "The maker does not publish approvals for this line. Tell us the standard your site, insurer or authority requires — EN 14540, BS 6391, NFPA 1961, UL 19 or a local civil defence specification — and we will confirm what can be supplied and certified against it before quoting."
+    },
+    {
+     "question": "What pressure is it rated for?",
+     "answer": "A per-size pressure table is not published. Send the bore and the pump or hydrant pressure and we will confirm the working and test pressure before quoting."
+    },
+    {
+     "question": "Which couplings can be fitted?",
+     "answer": "Storz, instantaneous (BS 336), NH / NST threaded, Guillemin and other national patterns, in aluminium or brass, fitted and banded to the hose. Tell us the coupling your hydrants, pumps and branch pipes use."
+    },
+    {
+     "question": "What lengths are supplied?",
+     "answer": "Fire hose is normally supplied in 15, 20, 25 or 30 m coupled lengths; other lengths are made to order."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Application Family",
+     "value": "fire hose, double jacket",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "application_family"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Inner Diameter Range",
+     "value": "On request",
+     "unit": null,
+     "position": 1,
+     "isFilterable": false,
+     "templateKey": "inner_diameter_range"
+    },
+    {
+     "group": "Performance",
+     "label": "Max Working Pressure",
+     "value": "Confirmed with quotation",
+     "unit": null,
+     "position": 2,
+     "isFilterable": false,
+     "templateKey": "max_working_pressure"
+    },
+    {
+     "group": "Construction",
+     "label": "Cover Material",
+     "value": "Outer woven jacket with protective coating",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "cover"
+    },
+    {
+     "group": "Construction",
+     "label": "Lining / Tube Material",
+     "value": "EPDM rubber",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "lining"
+    },
+    {
+     "group": "Construction",
+     "label": "Reinforcement",
+     "value": "Double woven polyester jacket",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "reinforcement"
+    },
+    {
+     "group": "Identification",
+     "label": "Colour",
+     "value": "Red",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Identification",
+     "label": "Construction Type",
+     "value": "Lay flat, woven textile jacket",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": null
+    }
+   ],
+   "searchAliases": [
+    "double-jacket fire hose, epdm liner",
+    "lay flat hose",
+    "lay-flat hose",
+    "layflat hose"
+   ],
+   "images": [
+    {
+     "file": "IH-LF-FDE-01.jpg",
+     "alt": "Red double-jacket fire hose with EPDM liner, coiled with a coupling, side view",
+     "caption": "Supplier catalogue photo (2026-10-13), watermark removed by AI inpainting"
+    },
+    {
+     "file": "IH-LF-FDE-02.jpg",
+     "alt": "Red double-jacket fire hose rolled flat with couplings at both ends, face-on view",
+     "caption": "Supplier catalogue photo (2026-10-13), watermark removed by AI inpainting"
+    }
+   ],
+   "variants": [],
+   "crossReferences": []
+  },
+  {
+   "sku": "IH-LF-FDU",
+   "slug": "double-jacket-fire-hose-polyurethane-liner",
+   "title": "Double-Jacket Fire Hose, Polyurethane Liner",
+   "category": "jacketed-fire-hoses",
+   "focusKeyword": "double jacket fire hose polyurethane liner",
+   "descriptionShort": "Double-jacket fire hose with a polyurethane liner: lighter and more compact than a rubber-lined hose, resistant to abrasion, oils and chemicals, for high-pressure firefighting and emergency response. Coupled, banded and tested to order by Indus Hydraulics in the UAE.",
+   "descriptionLong": "<p>A double-jacket fire hose lined with polyurethane. A PU liner is thinner and lighter than rubber, so the hose rolls smaller, weighs less per length and has low friction loss, while the two woven jackets carry high pressure and take the abrasion of hard use. It suits fire brigades, industrial fire teams and emergency response units.</p><h3>Construction</h3><ul><li>Liner: polyurethane — resists abrasion, oils, chemicals and weathering, with a smooth, low-friction bore</li><li>Reinforcement: double woven jacket</li><li>Outer jacket: resists UV, moisture uptake and wear from dragging and repeated deployment</li><li>Colour: red</li></ul><h3>EPDM or polyurethane liner?</h3><p>EPDM is the traditional choice where heat and chemical resistance come first. Polyurethane makes a lighter, more compact hose with better resistance to oils and abrasion of the bore. Both are offered in double-jacket construction.</p><h3>Care and testing</h3><ul><li>Lay the hose out without kinks before charging it, and open the hydrant or pump valve slowly to avoid pressure surge.</li><li>Keep it away from hot surfaces, sharp edges and dragged loads; use hose bridges where vehicles cross.</li><li>After use, drain it, wash off oil, foam concentrate and mud, and let the jacket dry before it is rolled or racked.</li><li>Store it out of direct sunlight, away from chemicals and in a dry place, rolled or flaked as your equipment requires.</li><li>Inspect the jacket, liner and coupling bands before use, and service-test hoses at the interval your fire code sets — annually is common practice.</li></ul><h3>How to order</h3><p>Send the bore, the length per hose (fire hose is usually supplied in 15, 20, 25 or 30 m lengths), the couplings and the standard your site, insurer or authority requires. We confirm construction, pressure rating and compliance before quoting, and supply hoses coupled, banded and pressure tested on request.</p>",
+   "seoTitle": "Double-Jacket Fire Hose, Polyurethane Liner",
+   "seoDescription": "Double-jacket fire hose with a thin, light polyurethane liner for high-pressure firefighting: abrasion, oil and chemical resistant. Red.",
+   "faqs": [
+    {
+     "question": "EPDM or polyurethane liner?",
+     "answer": "EPDM resists heat, ozone and a broad range of chemicals. Polyurethane is thinner and lighter, rolls more compactly and resists oils and bore abrasion. Choose by the fluids and conditions on your site."
+    },
+    {
+     "question": "Which fire hose standards does it meet?",
+     "answer": "The maker does not publish approvals for this line. Tell us the standard your site, insurer or authority requires — EN 14540, BS 6391, NFPA 1961, UL 19 or a local civil defence specification — and we will confirm what can be supplied and certified against it before quoting."
+    },
+    {
+     "question": "What pressure is it rated for?",
+     "answer": "A per-size pressure table is not published. Send the bore and the pump or hydrant pressure and we will confirm the working and test pressure before quoting."
+    },
+    {
+     "question": "Which couplings can be fitted?",
+     "answer": "Storz, instantaneous (BS 336), NH / NST threaded, Guillemin and other national patterns, in aluminium or brass, fitted and banded to the hose. Tell us the coupling your hydrants, pumps and branch pipes use."
+    },
+    {
+     "question": "What lengths are supplied?",
+     "answer": "Fire hose is normally supplied in 15, 20, 25 or 30 m coupled lengths; other lengths are made to order."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Application Family",
+     "value": "fire hose, double jacket",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "application_family"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Inner Diameter Range",
+     "value": "On request",
+     "unit": null,
+     "position": 1,
+     "isFilterable": false,
+     "templateKey": "inner_diameter_range"
+    },
+    {
+     "group": "Performance",
+     "label": "Max Working Pressure",
+     "value": "Confirmed with quotation",
+     "unit": null,
+     "position": 2,
+     "isFilterable": false,
+     "templateKey": "max_working_pressure"
+    },
+    {
+     "group": "Construction",
+     "label": "Cover Material",
+     "value": "Outer woven jacket",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "cover"
+    },
+    {
+     "group": "Construction",
+     "label": "Lining / Tube Material",
+     "value": "Polyurethane (TPU)",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "lining"
+    },
+    {
+     "group": "Construction",
+     "label": "Reinforcement",
+     "value": "Double woven polyester jacket",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "reinforcement"
+    },
+    {
+     "group": "Identification",
+     "label": "Colour",
+     "value": "Red",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Identification",
+     "label": "Construction Type",
+     "value": "Lay flat, woven textile jacket",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": null
+    }
+   ],
+   "searchAliases": [
+    "double-jacket fire hose, polyurethane liner",
+    "lay flat hose",
+    "lay-flat hose",
+    "layflat hose"
+   ],
+   "images": [
+    {
+     "file": "IH-LF-FDU-01.jpg",
+     "alt": "Red double-jacket polyurethane-lined fire hose coil with coupling, angled view",
+     "caption": "Supplier catalogue photo (2026-10-13), watermark removed by AI inpainting"
+    }
+   ],
+   "variants": [],
+   "crossReferences": []
+  },
+  {
+   "sku": "IH-LF-FSU",
+   "slug": "single-jacket-fire-hose-polyurethane-liner",
+   "title": "Single-Jacket Fire Hose, Polyurethane Liner",
+   "category": "jacketed-fire-hoses",
+   "focusKeyword": "single jacket fire hose",
+   "descriptionShort": "Lightweight single-jacket polyester fire hose with a polyurethane liner, for firefighting, industrial sites and general water transfer: abrasion-, UV- and chemical-resistant, quick to deploy and roll up. Coupled, banded and tested to order by Indus Hydraulics in the UAE.",
+   "descriptionLong": "<p>A single-jacket polyester fire hose with a polyurethane liner for fire brigades, industrial sites and general water transfer. One woven jacket keeps it light and quick to roll, so a crew can run out and recover lengths fast, while the polyurethane liner resists abrasion, chemicals and weathering.</p><h3>Construction</h3><ul><li>Liner: polyurethane, smooth bore</li><li>Reinforcement and cover: single woven polyester jacket</li><li>Colour: yellow</li></ul><h3>Where it fits</h3><ul><li>Supply and attack lines where weight matters more than maximum pressure</li><li>Industrial wash-down and temporary water transfer</li><li>Hose reels and hose boxes on industrial sites</li></ul><h3>Care and testing</h3><ul><li>Lay the hose out without kinks before charging it, and open the hydrant or pump valve slowly to avoid pressure surge.</li><li>Keep it away from hot surfaces, sharp edges and dragged loads; use hose bridges where vehicles cross.</li><li>After use, drain it, wash off oil, foam concentrate and mud, and let the jacket dry before it is rolled or racked.</li><li>Store it out of direct sunlight, away from chemicals and in a dry place, rolled or flaked as your equipment requires.</li><li>Inspect the jacket, liner and coupling bands before use, and service-test hoses at the interval your fire code sets — annually is common practice.</li></ul><h3>How to order</h3><p>Send the bore, the length per hose (fire hose is usually supplied in 15, 20, 25 or 30 m lengths), the couplings and the standard your site, insurer or authority requires. We confirm construction, pressure rating and compliance before quoting, and supply hoses coupled, banded and pressure tested on request.</p>",
+   "seoTitle": "Single-Jacket Fire Hose, Polyurethane Liner",
+   "seoDescription": "Lightweight single-jacket polyester fire hose with a polyurethane liner for firefighting and industrial water transfer. Yellow.",
+   "faqs": [
+    {
+     "question": "Is it suitable for industrial water transfer as well as firefighting?",
+     "answer": "Yes. It is used for general water transfer and wash-down on industrial sites as well as fire service. Confirm the pressure for your pump before use."
+    },
+    {
+     "question": "Which fire hose standards does it meet?",
+     "answer": "The maker does not publish approvals for this line. Tell us the standard your site, insurer or authority requires — EN 14540, BS 6391, NFPA 1961, UL 19 or a local civil defence specification — and we will confirm what can be supplied and certified against it before quoting."
+    },
+    {
+     "question": "What pressure is it rated for?",
+     "answer": "A per-size pressure table is not published. Send the bore and the pump or hydrant pressure and we will confirm the working and test pressure before quoting."
+    },
+    {
+     "question": "Which couplings can be fitted?",
+     "answer": "Storz, instantaneous (BS 336), NH / NST threaded, Guillemin and other national patterns, in aluminium or brass, fitted and banded to the hose. Tell us the coupling your hydrants, pumps and branch pipes use."
+    },
+    {
+     "question": "What lengths are supplied?",
+     "answer": "Fire hose is normally supplied in 15, 20, 25 or 30 m coupled lengths; other lengths are made to order."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Application Family",
+     "value": "fire hose, single jacket",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "application_family"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Inner Diameter Range",
+     "value": "On request",
+     "unit": null,
+     "position": 1,
+     "isFilterable": false,
+     "templateKey": "inner_diameter_range"
+    },
+    {
+     "group": "Performance",
+     "label": "Max Working Pressure",
+     "value": "Confirmed with quotation",
+     "unit": null,
+     "position": 2,
+     "isFilterable": false,
+     "templateKey": "max_working_pressure"
+    },
+    {
+     "group": "Construction",
+     "label": "Cover Material",
+     "value": "Woven polyester jacket",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "cover"
+    },
+    {
+     "group": "Construction",
+     "label": "Lining / Tube Material",
+     "value": "Polyurethane (TPU)",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "lining"
+    },
+    {
+     "group": "Construction",
+     "label": "Reinforcement",
+     "value": "Single woven polyester jacket",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "reinforcement"
+    },
+    {
+     "group": "Identification",
+     "label": "Colour",
+     "value": "Yellow",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Identification",
+     "label": "Construction Type",
+     "value": "Lay flat, woven textile jacket",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": null
+    }
+   ],
+   "searchAliases": [
+    "lay flat hose",
+    "lay-flat hose",
+    "layflat hose",
+    "single-jacket fire hose, polyurethane liner"
+   ],
+   "images": [
+    {
+     "file": "IH-LF-FSU-01.jpg",
+     "alt": "Yellow single-jacket polyester fire hose, rolled coil seen face-on",
+     "caption": "Supplier catalogue photo (2026-10-13), watermark removed by AI inpainting"
+    },
+    {
+     "file": "IH-LF-FSU-02.jpg",
+     "alt": "Yellow single-jacket fire hose coil with loose open end",
+     "caption": "Supplier catalogue photo (2026-10-13), watermark removed by AI inpainting"
+    }
+   ],
+   "variants": [],
+   "crossReferences": []
+  },
+  {
+   "sku": "IH-LF-FSN",
+   "slug": "single-jacket-fire-hose-rubber-liner",
+   "title": "Single-Jacket Fire Hose, Natural Rubber Liner",
+   "category": "jacketed-fire-hoses",
+   "focusKeyword": "industrial fire hose",
+   "descriptionShort": "Single-jacket industrial fire hose with a natural rubber liner, for factories, mills, warehouses and plant fire water systems: lightweight, flexible, abrasion- and heat-resistant, white jacket. Coupled, banded and tested to order by Indus Hydraulics in the UAE.",
+   "descriptionLong": "<p>A single-jacket mill and industrial fire hose with a natural rubber liner, for fire protection in factories, mills, warehouses and plants — hydrant points, hose stations and in-house fire teams. It is light and flexible, so one person can run it out and roll it back, and the rubber liner gives good flow and resists abrasion and heat.</p><h3>Construction</h3><ul><li>Liner: natural rubber (NR)</li><li>Reinforcement and cover: single woven polyester jacket</li><li>Colour: white</li></ul><h3>Where it fits</h3><ul><li>Hydrant and hose-station hose inside plants and warehouses</li><li>Industrial fire teams needing a light, easily handled line</li><li>Back-up and emergency water supply</li></ul><h3>Care and testing</h3><ul><li>Lay the hose out without kinks before charging it, and open the hydrant or pump valve slowly to avoid pressure surge.</li><li>Keep it away from hot surfaces, sharp edges and dragged loads; use hose bridges where vehicles cross.</li><li>After use, drain it, wash off oil, foam concentrate and mud, and let the jacket dry before it is rolled or racked.</li><li>Store it out of direct sunlight, away from chemicals and in a dry place, rolled or flaked as your equipment requires.</li><li>Inspect the jacket, liner and coupling bands before use, and service-test hoses at the interval your fire code sets — annually is common practice.</li></ul><h3>How to order</h3><p>Send the bore, the length per hose (fire hose is usually supplied in 15, 20, 25 or 30 m lengths), the couplings and the standard your site, insurer or authority requires. We confirm construction, pressure rating and compliance before quoting, and supply hoses coupled, banded and pressure tested on request.</p>",
+   "seoTitle": "Single-Jacket Fire Hose, Rubber Liner, Industrial",
+   "seoDescription": "Single-jacket industrial fire hose with a natural rubber liner for factories, mills and plant fire water: light, flexible, white.",
+   "faqs": [
+    {
+     "question": "What is mill or industrial hose?",
+     "answer": "A light single-jacket hose kept at hydrants and hose stations inside factories, mills and warehouses for first response by site staff and fire teams, rather than for heavy fire-brigade attack work."
+    },
+    {
+     "question": "Which fire hose standards does it meet?",
+     "answer": "The maker does not publish approvals for this line. Tell us the standard your site, insurer or authority requires — EN 14540, BS 6391, NFPA 1961, UL 19 or a local civil defence specification — and we will confirm what can be supplied and certified against it before quoting."
+    },
+    {
+     "question": "What pressure is it rated for?",
+     "answer": "A per-size pressure table is not published. Send the bore and the pump or hydrant pressure and we will confirm the working and test pressure before quoting."
+    },
+    {
+     "question": "Which couplings can be fitted?",
+     "answer": "Storz, instantaneous (BS 336), NH / NST threaded, Guillemin and other national patterns, in aluminium or brass, fitted and banded to the hose. Tell us the coupling your hydrants, pumps and branch pipes use."
+    },
+    {
+     "question": "What lengths are supplied?",
+     "answer": "Fire hose is normally supplied in 15, 20, 25 or 30 m coupled lengths; other lengths are made to order."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Application Family",
+     "value": "fire hose, single jacket",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "application_family"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Inner Diameter Range",
+     "value": "On request",
+     "unit": null,
+     "position": 1,
+     "isFilterable": false,
+     "templateKey": "inner_diameter_range"
+    },
+    {
+     "group": "Performance",
+     "label": "Max Working Pressure",
+     "value": "Confirmed with quotation",
+     "unit": null,
+     "position": 2,
+     "isFilterable": false,
+     "templateKey": "max_working_pressure"
+    },
+    {
+     "group": "Construction",
+     "label": "Cover Material",
+     "value": "Woven polyester jacket",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "cover"
+    },
+    {
+     "group": "Construction",
+     "label": "Lining / Tube Material",
+     "value": "Natural rubber (NR)",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "lining"
+    },
+    {
+     "group": "Construction",
+     "label": "Reinforcement",
+     "value": "Single woven polyester jacket",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "reinforcement"
+    },
+    {
+     "group": "Identification",
+     "label": "Colour",
+     "value": "White",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Identification",
+     "label": "Construction Type",
+     "value": "Lay flat, woven textile jacket",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": null
+    }
+   ],
+   "searchAliases": [
+    "lay flat hose",
+    "lay-flat hose",
+    "layflat hose",
+    "single-jacket fire hose, natural rubber liner"
+   ],
+   "images": [
+    {
+     "file": "IH-LF-FSN-01.jpg",
+     "alt": "White single-jacket rubber-lined industrial fire hose, coil with open end",
+     "caption": "Supplier catalogue photo (2026-10-13), watermark removed by AI inpainting"
+    },
+    {
+     "file": "IH-LF-FSN-02.jpg",
+     "alt": "White single-jacket industrial fire hose, flat-rolled coil seen face-on",
+     "caption": "Supplier catalogue photo (2026-10-13), watermark removed by AI inpainting"
+    }
+   ],
+   "variants": [],
+   "crossReferences": []
+  },
+  {
+   "sku": "IH-LF-FDN",
+   "slug": "double-jacket-fire-hose-rubber-liner",
+   "title": "Double-Jacket Fire Hose, Natural Rubber Liner",
+   "category": "jacketed-fire-hoses",
+   "focusKeyword": "double jacket industrial fire hose",
+   "descriptionShort": "Heavy-duty double-jacket industrial fire hose with a natural rubber liner, for high-pressure firefighting in factories, mills and process plants: abrasion- and heat-resistant, white jacket, supplied coupled. Coupled, banded and tested to order by Indus Hydraulics in the UAE.",
+   "descriptionLong": "<p>The heavy-duty, double-jacket version of our rubber-lined industrial fire hose, for plants where hoses see high pressure and rough handling — process plants, refineries, mills and large warehouses. The natural rubber liner resists abrasion and heat and keeps flow steady; the second jacket raises pressure capacity and protects the hose when it is dragged.</p><h3>Construction</h3><ul><li>Liner: natural rubber (NR)</li><li>Reinforcement: double woven polyester jacket</li><li>Colour: white</li></ul><h3>Where it fits</h3><ul><li>High-pressure plant fire water and hydrant systems</li><li>Industrial fire teams working on rough ground</li><li>Sites where a single-jacket hose wears out too quickly</li></ul><h3>Care and testing</h3><ul><li>Lay the hose out without kinks before charging it, and open the hydrant or pump valve slowly to avoid pressure surge.</li><li>Keep it away from hot surfaces, sharp edges and dragged loads; use hose bridges where vehicles cross.</li><li>After use, drain it, wash off oil, foam concentrate and mud, and let the jacket dry before it is rolled or racked.</li><li>Store it out of direct sunlight, away from chemicals and in a dry place, rolled or flaked as your equipment requires.</li><li>Inspect the jacket, liner and coupling bands before use, and service-test hoses at the interval your fire code sets — annually is common practice.</li></ul><h3>How to order</h3><p>Send the bore, the length per hose (fire hose is usually supplied in 15, 20, 25 or 30 m lengths), the couplings and the standard your site, insurer or authority requires. We confirm construction, pressure rating and compliance before quoting, and supply hoses coupled, banded and pressure tested on request.</p>",
+   "seoTitle": "Double-Jacket Fire Hose, Rubber Liner, Industrial",
+   "seoDescription": "Heavy-duty double-jacket industrial fire hose with a natural rubber liner for high-pressure plant firefighting. White jacket.",
+   "faqs": [
+    {
+     "question": "How does it differ from the single-jacket rubber-lined hose?",
+     "answer": "The second woven jacket gives higher pressure capacity and better abrasion protection. Choose it for high-pressure systems and hoses that are dragged; choose single jacket for light hose-station duty."
+    },
+    {
+     "question": "Which fire hose standards does it meet?",
+     "answer": "The maker does not publish approvals for this line. Tell us the standard your site, insurer or authority requires — EN 14540, BS 6391, NFPA 1961, UL 19 or a local civil defence specification — and we will confirm what can be supplied and certified against it before quoting."
+    },
+    {
+     "question": "What pressure is it rated for?",
+     "answer": "A per-size pressure table is not published. Send the bore and the pump or hydrant pressure and we will confirm the working and test pressure before quoting."
+    },
+    {
+     "question": "Which couplings can be fitted?",
+     "answer": "Storz, instantaneous (BS 336), NH / NST threaded, Guillemin and other national patterns, in aluminium or brass, fitted and banded to the hose. Tell us the coupling your hydrants, pumps and branch pipes use."
+    },
+    {
+     "question": "What lengths are supplied?",
+     "answer": "Fire hose is normally supplied in 15, 20, 25 or 30 m coupled lengths; other lengths are made to order."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Application Family",
+     "value": "fire hose, double jacket",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "application_family"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Inner Diameter Range",
+     "value": "On request",
+     "unit": null,
+     "position": 1,
+     "isFilterable": false,
+     "templateKey": "inner_diameter_range"
+    },
+    {
+     "group": "Performance",
+     "label": "Max Working Pressure",
+     "value": "Confirmed with quotation",
+     "unit": null,
+     "position": 2,
+     "isFilterable": false,
+     "templateKey": "max_working_pressure"
+    },
+    {
+     "group": "Construction",
+     "label": "Cover Material",
+     "value": "Outer woven polyester jacket",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "cover"
+    },
+    {
+     "group": "Construction",
+     "label": "Lining / Tube Material",
+     "value": "Natural rubber (NR)",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "lining"
+    },
+    {
+     "group": "Construction",
+     "label": "Reinforcement",
+     "value": "Double woven polyester jacket",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "reinforcement"
+    },
+    {
+     "group": "Identification",
+     "label": "Colour",
+     "value": "White",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Identification",
+     "label": "Construction Type",
+     "value": "Lay flat, woven textile jacket",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": null
+    }
+   ],
+   "searchAliases": [
+    "double-jacket fire hose, natural rubber liner",
+    "lay flat hose",
+    "lay-flat hose",
+    "layflat hose"
+   ],
+   "images": [
+    {
+     "file": "IH-LF-FDN-01.jpg",
+     "alt": "White double-jacket rubber-lined fire hose coil with an aluminium coupling",
+     "caption": "Supplier catalogue photo (2026-10-13), watermark removed by AI inpainting"
+    },
+    {
+     "file": "IH-LF-FDN-02.jpg",
+     "alt": "White double-jacket fire hose rolled with a coupling at the centre and one at the end",
+     "caption": "Supplier catalogue photo (2026-10-13), watermark removed by AI inpainting"
+    }
+   ],
+   "variants": [],
+   "crossReferences": []
+  },
+  {
+   "sku": "IH-LF-FFE",
+   "slug": "forestry-fire-hose-epdm-liner",
+   "title": "Forestry Fire Hose, Single Jacket, EPDM Liner",
+   "category": "jacketed-fire-hoses",
+   "focusKeyword": "forestry fire hose",
+   "descriptionShort": "Lightweight single-jacket forestry and wildland fire hose with an EPDM liner: light enough to carry in packs over rough ground, quick to lay out and recover, abrasion- and weather-resistant. Coupled, banded and tested to order by Indus Hydraulics in the UAE.",
+   "descriptionLong": "<p>A forestry and wildland fire hose built light enough to carry in hose packs across hills, scrub and plantations, and to lay out quickly from a portable pump or tanker. The single woven jacket keeps weight down; the EPDM liner resists heat, weathering and ageing.</p><h3>Construction</h3><ul><li>Liner: EPDM rubber</li><li>Reinforcement and cover: single woven polyester jacket</li><li>Colour: white</li></ul><h3>Where it fits</h3><ul><li>Wildland, bush and forest fire crews</li><li>Plantation and farm fire protection</li><li>Portable-pump progressive hose lays over long distances</li></ul><h3>Care and testing</h3><ul><li>Lay the hose out without kinks before charging it, and open the hydrant or pump valve slowly to avoid pressure surge.</li><li>Keep it away from hot surfaces, sharp edges and dragged loads; use hose bridges where vehicles cross.</li><li>After use, drain it, wash off oil, foam concentrate and mud, and let the jacket dry before it is rolled or racked.</li><li>Store it out of direct sunlight, away from chemicals and in a dry place, rolled or flaked as your equipment requires.</li><li>Inspect the jacket, liner and coupling bands before use, and service-test hoses at the interval your fire code sets — annually is common practice.</li></ul><h3>How to order</h3><p>Send the bore, the length per hose (fire hose is usually supplied in 15, 20, 25 or 30 m lengths), the couplings and the standard your site, insurer or authority requires. We confirm construction, pressure rating and compliance before quoting, and supply hoses coupled, banded and pressure tested on request.</p>",
+   "seoTitle": "Forestry Fire Hose, Single Jacket, EPDM Liner",
+   "seoDescription": "Lightweight single-jacket forestry and wildland fire hose with an EPDM liner: easy to carry, quick to lay out on rough ground. White.",
+   "faqs": [
+    {
+     "question": "What makes a forestry hose different?",
+     "answer": "It is built for weight and handling rather than maximum pressure: light enough to carry in packs over rough ground and quick to lay out from portable pumps in long progressive lays."
+    },
+    {
+     "question": "Which fire hose standards does it meet?",
+     "answer": "The maker does not publish approvals for this line. Tell us the standard your site, insurer or authority requires — EN 14540, BS 6391, NFPA 1961, UL 19 or a local civil defence specification — and we will confirm what can be supplied and certified against it before quoting."
+    },
+    {
+     "question": "What pressure is it rated for?",
+     "answer": "A per-size pressure table is not published. Send the bore and the pump or hydrant pressure and we will confirm the working and test pressure before quoting."
+    },
+    {
+     "question": "Which couplings can be fitted?",
+     "answer": "Storz, instantaneous (BS 336), NH / NST threaded, Guillemin and other national patterns, in aluminium or brass, fitted and banded to the hose. Tell us the coupling your hydrants, pumps and branch pipes use."
+    },
+    {
+     "question": "What lengths are supplied?",
+     "answer": "Fire hose is normally supplied in 15, 20, 25 or 30 m coupled lengths; other lengths are made to order."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Application Family",
+     "value": "fire hose, forestry",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "application_family"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Inner Diameter Range",
+     "value": "On request",
+     "unit": null,
+     "position": 1,
+     "isFilterable": false,
+     "templateKey": "inner_diameter_range"
+    },
+    {
+     "group": "Performance",
+     "label": "Max Working Pressure",
+     "value": "Confirmed with quotation",
+     "unit": null,
+     "position": 2,
+     "isFilterable": false,
+     "templateKey": "max_working_pressure"
+    },
+    {
+     "group": "Construction",
+     "label": "Cover Material",
+     "value": "Woven polyester jacket",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "cover"
+    },
+    {
+     "group": "Construction",
+     "label": "Lining / Tube Material",
+     "value": "EPDM rubber",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "lining"
+    },
+    {
+     "group": "Construction",
+     "label": "Reinforcement",
+     "value": "Single woven polyester jacket",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "reinforcement"
+    },
+    {
+     "group": "Identification",
+     "label": "Colour",
+     "value": "White",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Identification",
+     "label": "Construction Type",
+     "value": "Lay flat, woven textile jacket",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": null
+    }
+   ],
+   "searchAliases": [
+    "forestry fire hose, single jacket, epdm liner",
+    "lay flat hose",
+    "lay-flat hose",
+    "layflat hose"
+   ],
+   "images": [
+    {
+     "file": "IH-LF-FFE-01.jpg",
+     "alt": "White single-jacket forestry fire hose with small coupling, coiled",
+     "caption": "Supplier catalogue photo (2026-10-13), watermark removed by AI inpainting"
+    },
+    {
+     "file": "IH-LF-FFE-02.jpg",
+     "alt": "White forestry fire hose rolled flat with a small coupling on the free end",
+     "caption": "Supplier catalogue photo (2026-10-13), watermark removed by AI inpainting"
+    }
+   ],
+   "variants": [],
+   "crossReferences": []
+  },
+  {
+   "sku": "IH-LF-FFN",
+   "slug": "forestry-fire-hose-rubber-liner-pu-coated",
+   "title": "Forestry Fire Hose, Rubber Liner, PU-Coated Jacket",
+   "category": "jacketed-fire-hoses",
+   "focusKeyword": "pu coated forestry fire hose",
+   "descriptionShort": "Forestry and wildland fire hose with a natural rubber liner and a water-based polyurethane coating on the jacket for extra abrasion resistance: light, flexible and kink-resistant. Coupled, banded and tested to order by Indus Hydraulics in the UAE.",
+   "descriptionLong": "<p>A forestry and wildland fire hose with a protective coating. A water-based polyurethane coat over the woven jacket takes the abrasion of being dragged over rock, roots and scrub, so the hose lasts longer than an uncoated forestry hose while staying light and flexible enough to carry and lay out quickly.</p><h3>Construction</h3><ul><li>Liner: natural rubber (NR)</li><li>Reinforcement: single woven polyester jacket</li><li>Outer coating: water-based polyurethane for abrasion resistance</li><li>Colour: yellow</li></ul><h3>Where it fits</h3><ul><li>Wildland fire crews working rocky or abrasive terrain</li><li>Long progressive lays from portable pumps</li><li>Sites that wear out uncoated forestry hose quickly</li></ul><h3>Care and testing</h3><ul><li>Lay the hose out without kinks before charging it, and open the hydrant or pump valve slowly to avoid pressure surge.</li><li>Keep it away from hot surfaces, sharp edges and dragged loads; use hose bridges where vehicles cross.</li><li>After use, drain it, wash off oil, foam concentrate and mud, and let the jacket dry before it is rolled or racked.</li><li>Store it out of direct sunlight, away from chemicals and in a dry place, rolled or flaked as your equipment requires.</li><li>Inspect the jacket, liner and coupling bands before use, and service-test hoses at the interval your fire code sets — annually is common practice.</li></ul><h3>How to order</h3><p>Send the bore, the length per hose (fire hose is usually supplied in 15, 20, 25 or 30 m lengths), the couplings and the standard your site, insurer or authority requires. We confirm construction, pressure rating and compliance before quoting, and supply hoses coupled, banded and pressure tested on request.</p>",
+   "seoTitle": "Forestry Fire Hose, Rubber Liner, PU-Coated Jacket",
+   "seoDescription": "Forestry and wildland fire hose with a natural rubber liner and a polyurethane-coated jacket for extra abrasion resistance. Yellow.",
+   "faqs": [
+    {
+     "question": "Why choose the coated forestry hose?",
+     "answer": "The polyurethane coating on the jacket adds abrasion resistance for rocky or rough ground, so the hose lasts longer than an uncoated forestry hose at almost the same weight."
+    },
+    {
+     "question": "Which fire hose standards does it meet?",
+     "answer": "The maker does not publish approvals for this line. Tell us the standard your site, insurer or authority requires — EN 14540, BS 6391, NFPA 1961, UL 19 or a local civil defence specification — and we will confirm what can be supplied and certified against it before quoting."
+    },
+    {
+     "question": "What pressure is it rated for?",
+     "answer": "A per-size pressure table is not published. Send the bore and the pump or hydrant pressure and we will confirm the working and test pressure before quoting."
+    },
+    {
+     "question": "Which couplings can be fitted?",
+     "answer": "Storz, instantaneous (BS 336), NH / NST threaded, Guillemin and other national patterns, in aluminium or brass, fitted and banded to the hose. Tell us the coupling your hydrants, pumps and branch pipes use."
+    },
+    {
+     "question": "What lengths are supplied?",
+     "answer": "Fire hose is normally supplied in 15, 20, 25 or 30 m coupled lengths; other lengths are made to order."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Application Family",
+     "value": "fire hose, forestry",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "application_family"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Inner Diameter Range",
+     "value": "On request",
+     "unit": null,
+     "position": 1,
+     "isFilterable": false,
+     "templateKey": "inner_diameter_range"
+    },
+    {
+     "group": "Performance",
+     "label": "Max Working Pressure",
+     "value": "Confirmed with quotation",
+     "unit": null,
+     "position": 2,
+     "isFilterable": false,
+     "templateKey": "max_working_pressure"
+    },
+    {
+     "group": "Construction",
+     "label": "Cover Material",
+     "value": "Woven jacket with water-based polyurethane coating",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "cover"
+    },
+    {
+     "group": "Construction",
+     "label": "Lining / Tube Material",
+     "value": "Natural rubber (NR)",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "lining"
+    },
+    {
+     "group": "Construction",
+     "label": "Reinforcement",
+     "value": "Single woven polyester jacket",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "reinforcement"
+    },
+    {
+     "group": "Identification",
+     "label": "Colour",
+     "value": "Yellow",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Identification",
+     "label": "Construction Type",
+     "value": "Lay flat, woven textile jacket",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": null
+    }
+   ],
+   "searchAliases": [
+    "forestry fire hose, rubber liner, pu-coated jacket",
+    "lay flat hose",
+    "lay-flat hose",
+    "layflat hose"
+   ],
+   "images": [
+    {
+     "file": "IH-LF-FFN-01.jpg",
+     "alt": "Yellow PU-coated forestry fire hose coil with its end pulled out",
+     "caption": "Supplier catalogue photo (2026-10-13), watermark removed by AI inpainting"
+    }
+   ],
+   "variants": [],
+   "crossReferences": []
+  },
+  {
+   "sku": "IH-LF-FRU",
+   "slug": "rack-and-cabinet-fire-hose",
+   "title": "Rack and Cabinet Fire Hose, Polyurethane Liner",
+   "category": "jacketed-fire-hoses",
+   "focusKeyword": "fire cabinet hose",
+   "descriptionShort": "Compact single-jacket fire hose with a polyurethane liner for fire hose cabinets, racks and hose boxes in buildings and plants: folds neatly, deploys fast, shown with brass couplings. Coupled, banded and tested to order by Indus Hydraulics in the UAE.",
+   "descriptionLong": "<p>A fire hose made to live in a cabinet: hose boxes, wall racks and hose stations in buildings, warehouses, car parks and plants, where it must stay ready for years and deploy in seconds. The thin polyurethane liner and single jacket let it fold or roll compactly, and it is light enough for building occupants and staff to handle.</p><h3>Construction</h3><ul><li>Liner: polyurethane</li><li>Reinforcement and cover: single woven polyester jacket</li><li>Colour: white</li><li>Couplings: brass, or to your cabinet's pattern</li></ul><h3>Where it fits</h3><ul><li>Fire hose cabinets and hose boxes</li><li>Wall-mounted hose racks and pin racks</li><li>Replacement hose for existing cabinets during maintenance</li></ul><h3>Care and testing</h3><ul><li>Lay the hose out without kinks before charging it, and open the hydrant or pump valve slowly to avoid pressure surge.</li><li>Keep it away from hot surfaces, sharp edges and dragged loads; use hose bridges where vehicles cross.</li><li>After use, drain it, wash off oil, foam concentrate and mud, and let the jacket dry before it is rolled or racked.</li><li>Store it out of direct sunlight, away from chemicals and in a dry place, rolled or flaked as your equipment requires.</li><li>Inspect the jacket, liner and coupling bands before use, and service-test hoses at the interval your fire code sets — annually is common practice.</li></ul><h3>How to order</h3><p>Send the bore, the length per hose (fire hose is usually supplied in 15, 20, 25 or 30 m lengths), the couplings and the standard your site, insurer or authority requires. We confirm construction, pressure rating and compliance before quoting, and supply hoses coupled, banded and pressure tested on request.</p>",
+   "seoTitle": "Rack and Cabinet Fire Hose, Polyurethane Liner",
+   "seoDescription": "Compact single-jacket fire hose with a polyurethane liner for fire hose cabinets, racks and hose boxes in buildings. White, brass couplings.",
+   "faqs": [
+    {
+     "question": "Will it fit our existing fire cabinets?",
+     "answer": "Tell us the hose bore, length and coupling pattern in your cabinets, or send a photo of the rack and coupling, and we will supply hose to match."
+    },
+    {
+     "question": "Which fire hose standards does it meet?",
+     "answer": "The maker does not publish approvals for this line. Tell us the standard your site, insurer or authority requires — EN 14540, BS 6391, NFPA 1961, UL 19 or a local civil defence specification — and we will confirm what can be supplied and certified against it before quoting."
+    },
+    {
+     "question": "What pressure is it rated for?",
+     "answer": "A per-size pressure table is not published. Send the bore and the pump or hydrant pressure and we will confirm the working and test pressure before quoting."
+    },
+    {
+     "question": "Which couplings can be fitted?",
+     "answer": "Storz, instantaneous (BS 336), NH / NST threaded, Guillemin and other national patterns, in aluminium or brass, fitted and banded to the hose. Tell us the coupling your hydrants, pumps and branch pipes use."
+    },
+    {
+     "question": "What lengths are supplied?",
+     "answer": "Fire hose is normally supplied in 15, 20, 25 or 30 m coupled lengths; other lengths are made to order."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Application Family",
+     "value": "fire hose, rack and cabinet",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "application_family"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Inner Diameter Range",
+     "value": "On request",
+     "unit": null,
+     "position": 1,
+     "isFilterable": false,
+     "templateKey": "inner_diameter_range"
+    },
+    {
+     "group": "Performance",
+     "label": "Max Working Pressure",
+     "value": "Confirmed with quotation",
+     "unit": null,
+     "position": 2,
+     "isFilterable": false,
+     "templateKey": "max_working_pressure"
+    },
+    {
+     "group": "Construction",
+     "label": "Cover Material",
+     "value": "Woven polyester jacket",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "cover"
+    },
+    {
+     "group": "Construction",
+     "label": "Lining / Tube Material",
+     "value": "Polyurethane (TPU)",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "lining"
+    },
+    {
+     "group": "Construction",
+     "label": "Reinforcement",
+     "value": "Single woven polyester jacket",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "reinforcement"
+    },
+    {
+     "group": "Identification",
+     "label": "Colour",
+     "value": "White",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Identification",
+     "label": "Construction Type",
+     "value": "Lay flat, woven textile jacket",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": null
+    }
+   ],
+   "searchAliases": [
+    "lay flat hose",
+    "lay-flat hose",
+    "layflat hose",
+    "rack and cabinet fire hose, polyurethane liner"
+   ],
+   "images": [
+    {
+     "file": "IH-LF-FRU-01.jpg",
+     "alt": "White rack and cabinet fire hose rolled with brass couplings, cut-out",
+     "caption": "Supplier catalogue photo (2026-10-13)"
+    },
+    {
+     "file": "IH-LF-FRU-02.jpg",
+     "alt": "White cabinet fire hose rolled with a brass coupling at the centre and the end",
+     "caption": "Supplier catalogue photo (2026-10-13)"
+    },
+    {
+     "file": "IH-LF-FRU-03.jpg",
+     "alt": "White cabinet fire hose flaked and strapped for a hose rack, brass couplings at both ends",
+     "caption": "Supplier catalogue photo (2026-10-13)"
     }
    ],
    "variants": [],

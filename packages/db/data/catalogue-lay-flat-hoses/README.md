@@ -1,6 +1,16 @@
 # Lay flat hoses — `catalogue-lay-flat-hoses`
 
-**14 listings, 74 part numbers**, unbranded (`indus`), in a new top-level category:
+**23 listings, 74 part numbers**, unbranded (`indus`), in a new top-level category.
+
+Batch 2 (same day) added `jacketed-fire-hoses` (position 5): double-jacket EPDM- and
+polyurethane-lined, single-jacket polyurethane- and rubber-lined, double-jacket rubber-lined,
+forestry (EPDM liner; rubber liner with PU-coated jacket) and rack / cabinet hose
+(`IH-LF-F*`), plus a TPU lay flat snowmaking hose (`IH-LF-TSM`) under TPU. None of these has a
+published size or pressure table or a fire-service approval; every page says so and offers to
+confirm against the standard the buyer names. The printed test-pressure legend on the
+double-jacket photos was removed with the watermark, since the pages publish no rating.
+
+Batch 1:
 
 - `lay-flat-hoses` (root, position 21)
   - `tpu-lay-flat-hoses` — well riser, heavy-duty well riser, dewatering / water transfer, antistatic
