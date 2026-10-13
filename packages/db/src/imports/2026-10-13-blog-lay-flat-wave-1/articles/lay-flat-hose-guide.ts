@@ -207,6 +207,10 @@ const ARTICLE: BlogArticleSeed = {
       html: 'In the Gulf, lay flat does most of its work in a handful of jobs: <a href="/blog/construction-dewatering-hose-gcc">construction dewatering</a> on high-water-table sites, <a href="/blog/frac-water-transfer-lay-flat-hose">frac water transfer</a> to gas well pads, <a href="/blog/flexible-borehole-riser-vs-steel-column-pipe">flexible risers in boreholes</a>, <a href="/blog/antistatic-fuel-transfer-hose-guide">temporary fuel lines</a> and <a href="/blog/single-vs-double-jacket-fire-hose">fire hose</a>. Each has its own guide, and <a href="/blog/lay-flat-hose-in-gulf-heat">running lay flat in Gulf heat</a> covers what summer does to all of them.',
     },
     {
+      type: 'paragraph',
+      html: 'In Europe the same hose turns up in very different work: <a href="/blog/slurry-umbilical-system-guide">slurry umbilical systems</a> on farms, <a href="/blog/overland-pumping-water-main-bypass">over-pumping and water main bypass</a>, <a href="/blog/flood-response-pumping-lay-flat-hose">flood response</a>, <a href="/blog/mine-dewatering-lay-flat-hose">mine dewatering</a>, <a href="/blog/snowmaking-hose-guide">snowmaking</a>, <a href="/blog/irrigation-lay-flat-hose-guide">irrigation</a> and <a href="/blog/concrete-placement-hose-guide">concrete placement</a>.',
+    },
+    {
       type: 'faq_block',
       heading: 'Common questions',
       items: [

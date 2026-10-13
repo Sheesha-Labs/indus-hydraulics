@@ -145,7 +145,7 @@ const ARTICLE: BlogArticleSeed = {
     },
     {
       type: 'related_articles',
-      slugs: ['dewatering-discharge-permits-dubai-qatar', 'suction-hose-vs-lay-flat-hose', 'water-suction-and-dewatering-hose', 'lay-flat-hose-flow-and-friction-loss', 'lay-flat-hose-in-gulf-heat', 'lay-flat-hose-guide'],
+      slugs: ['mine-dewatering-lay-flat-hose', 'dewatering-discharge-permits-dubai-qatar', 'suction-hose-vs-lay-flat-hose', 'water-suction-and-dewatering-hose', 'lay-flat-hose-flow-and-friction-loss', 'lay-flat-hose-in-gulf-heat'],
     },
     {
       type: 'as_of_stamp',

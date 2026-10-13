@@ -130,7 +130,7 @@ const ARTICLE: BlogArticleSeed = {
     },
     {
       type: 'related_articles',
-      slugs: ['single-vs-double-jacket-fire-hose', 'fire-hose-cabinet-maintenance', 'lay-flat-hose-guide', 'lay-flat-hose-couplings-guide'],
+      slugs: ['fire-hose-standards-en-14540-bs-6391-nfpa', 'single-vs-double-jacket-fire-hose', 'fire-hose-cabinet-maintenance', 'lay-flat-hose-guide', 'lay-flat-hose-couplings-guide'],
     },
     {
       type: 'as_of_stamp',

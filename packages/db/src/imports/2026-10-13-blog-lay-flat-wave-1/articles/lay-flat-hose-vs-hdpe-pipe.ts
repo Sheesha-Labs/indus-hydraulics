@@ -119,6 +119,10 @@ const ARTICLE: BlogArticleSeed = {
       ],
     },
     {
+      type: 'paragraph',
+      html: 'On sewer and water main work the same choice comes up as over-pumping and temporary bypass; see <a href="/blog/overland-pumping-water-main-bypass">over-pumping and water main bypass</a>.',
+    },
+    {
       type: 'faq_block',
       heading: 'Common questions',
       items: [
@@ -156,7 +160,7 @@ const ARTICLE: BlogArticleSeed = {
     },
     {
       type: 'related_articles',
-      slugs: ['lay-flat-hose-guide', 'lay-flat-hose-flow-and-friction-loss', 'lay-flat-hose-couplings-guide', 'suction-hose-vs-lay-flat-hose'],
+      slugs: ['overland-pumping-water-main-bypass', 'lay-flat-hose-guide', 'lay-flat-hose-flow-and-friction-loss', 'lay-flat-hose-couplings-guide', 'suction-hose-vs-lay-flat-hose'],
     },
     {
       type: 'as_of_stamp',

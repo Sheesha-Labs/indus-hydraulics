@@ -578,19 +578,11 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
     pages: [MARINE],
   },
   'tractor-hydraulic-hose': {
-    related: [
-      'hydraulic-quick-couplers-iso-7241',
-      'trapped-pressure-quick-coupler',
-      'log-splitter-and-shop-press-hose',
-    ],
+    related: ['slurry-umbilical-system-guide', 'hydraulic-quick-couplers-iso-7241', 'trapped-pressure-quick-coupler', 'log-splitter-and-shop-press-hose'],
     skus: ['IH-QC-FARM-ISO5675', 'IH-QC-FARM-CUP', 'IH-QC-ISO7241A-V'],
   },
   'concrete-pump-hydraulic-hose': {
-    related: [
-      'tipper-and-transit-mixer-hose',
-      'hydraulic-hose-pressure-by-size',
-      'braid-vs-spiral-hydraulic-hose',
-    ],
+    related: ['concrete-placement-hose-guide', 'tipper-and-transit-mixer-hose', 'hydraulic-hose-pressure-by-size', 'braid-vs-spiral-hydraulic-hose'],
     pages: [CONSTRUCTION],
   },
   'injection-moulding-hydraulic-hose': {
@@ -1138,7 +1130,7 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
   // decoration. The quarry and drilling-rig pieces carry none: a crusher is a
   // crusher anywhere, and the generated reach section covers the geography.
   'copper-mine-hydraulic-fittings': {
-    related: ['quarry-and-crusher-fittings', 'gold-plant-hydraulic-fittings', 'adapter-kit-for-a-mixed-fleet'],
+    related: ['mine-dewatering-lay-flat-hose', 'quarry-and-crusher-fittings', 'gold-plant-hydraulic-fittings', 'adapter-kit-for-a-mixed-fleet'],
     pages: [
       {
         kind: 'market',
@@ -1182,11 +1174,7 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
     ],
   },
   'quarry-and-crusher-fittings': {
-    related: [
-      'bridging-two-thread-standards',
-      'hydraulic-fitting-make-up-torque',
-      'hydraulic-hose-abrasion-failure',
-    ],
+    related: ['mine-dewatering-lay-flat-hose', 'bridging-two-thread-standards', 'hydraulic-fitting-make-up-torque', 'hydraulic-hose-abrasion-failure'],
   },
   'water-well-drilling-rig-fittings': {
     related: ['flexible-borehole-riser-vs-steel-column-pipe', 'field-re-hosing-kit', 'spares-list-for-a-remote-site', 'measuring-a-fitting-without-gauges'],
@@ -1513,12 +1501,7 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
     ],
   },
   'storz-coupling-sizes': {
-    related: [
-      'guillemin-couplings-explained',
-      'gost-barcelona-and-geka-couplings',
-      'bauer-couplings-explained',
-      'industrial-hose-couplings-guide',
-    ],
+    related: ['flood-response-pumping-lay-flat-hose', 'fire-hose-standards-en-14540-bs-6391-nfpa', 'guillemin-couplings-explained', 'gost-barcelona-and-geka-couplings', 'bauer-couplings-explained', 'industrial-hose-couplings-guide'],
   },
   'tanker-loading-and-vapour-recovery-hose': {
     related: [

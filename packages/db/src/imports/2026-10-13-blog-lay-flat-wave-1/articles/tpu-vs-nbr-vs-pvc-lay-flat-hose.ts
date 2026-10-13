@@ -158,7 +158,7 @@ const ARTICLE: BlogArticleSeed = {
     },
     {
       type: 'related_articles',
-      slugs: ['lay-flat-hose-in-gulf-heat', 'antistatic-fuel-transfer-hose-guide', 'lay-flat-hose-guide', 'lay-flat-hose-pressure-ratings', 'why-lay-flat-hose-fails', 'pvc-or-rubber-suction-hose'],
+      slugs: ['irrigation-lay-flat-hose-guide', 'mine-dewatering-lay-flat-hose', 'lay-flat-hose-in-gulf-heat', 'antistatic-fuel-transfer-hose-guide', 'lay-flat-hose-guide', 'lay-flat-hose-pressure-ratings'],
     },
     {
       type: 'as_of_stamp',
