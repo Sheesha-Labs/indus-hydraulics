@@ -140,7 +140,7 @@ const ARTICLE: BlogArticleSeed = {
     },
     {
       type: 'related_articles',
-      slugs: ['frac-water-transfer-lay-flat-hose', 'flexible-borehole-riser-vs-steel-column-pipe', 'lay-flat-hose-guide', 'lay-flat-hose-pressure-ratings', 'lay-flat-hose-flow-and-friction-loss', 'lay-flat-hose-vs-hdpe-pipe'],
+      slugs: ['how-to-repair-lay-flat-hose', 'frac-water-transfer-lay-flat-hose', 'flexible-borehole-riser-vs-steel-column-pipe', 'lay-flat-hose-guide', 'lay-flat-hose-pressure-ratings', 'lay-flat-hose-flow-and-friction-loss'],
     },
     {
       type: 'as_of_stamp',

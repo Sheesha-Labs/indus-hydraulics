@@ -139,7 +139,7 @@ const ARTICLE: BlogArticleSeed = {
     },
     {
       type: 'related_articles',
-      slugs: ['tpu-vs-nbr-vs-pvc-lay-flat-hose', 'lay-flat-hose-pressure-ratings', 'lay-flat-hose-flow-and-friction-loss', 'suction-hose-vs-lay-flat-hose', 'why-lay-flat-hose-fails'],
+      slugs: ['compressed-air-lay-flat-hose', 'tpu-vs-nbr-vs-pvc-lay-flat-hose', 'lay-flat-hose-pressure-ratings', 'lay-flat-hose-flow-and-friction-loss', 'suction-hose-vs-lay-flat-hose', 'why-lay-flat-hose-fails'],
     },
     {
       type: 'as_of_stamp',

@@ -108,6 +108,10 @@ const ARTICLE: BlogArticleSeed = {
       html: 'Recovery is the reverse: the reel pulls hose, cable and pump out together in a fraction of the time it takes to break steel joints one by one. That is what makes it practical to re-set a pump deeper as the water table drops, or to service wells across a whole farm or well field with one crew and one trailer.',
     },
     {
+      type: 'paragraph',
+      html: 'For the installation itself, step by step, see <a href="/blog/well-riser-hose-installation">how to install flexible well riser hose</a>.',
+    },
+    {
       type: 'faq_block',
       heading: 'Common questions',
       items: [
@@ -145,7 +149,7 @@ const ARTICLE: BlogArticleSeed = {
     },
     {
       type: 'related_articles',
-      slugs: ['lay-flat-hose-guide', 'lay-flat-hose-pressure-ratings', 'lay-flat-hose-couplings-guide', 'lay-flat-hose-in-gulf-heat'],
+      slugs: ['well-riser-hose-installation', 'lay-flat-hose-guide', 'lay-flat-hose-pressure-ratings', 'lay-flat-hose-couplings-guide', 'lay-flat-hose-in-gulf-heat'],
     },
     {
       type: 'as_of_stamp',

@@ -83,6 +83,10 @@ const ARTICLE: BlogArticleSeed = {
       html: 'A drinking-water bypass must carry peak demand at a pressure customers will accept, so friction matters as much as on any pumped line. Over a few hundred metres, one size larger than the main’s outlet often keeps losses acceptable; for longer runs use our <a href="/blog/lay-flat-hose-flow-and-friction-loss">friction loss guide</a>. Our TPU drinking-water hose runs from 1-1/2" to 16" — 21 bar up to 2-1/2", 17 bar at 3" and 4", 14–15 bar from 6" to 14" and 10 bar at 16" — in lengths up to 400 m, so long bypasses have few joints to disinfect.',
     },
     {
+      type: 'paragraph',
+      html: 'For what drinking-water hose certification does and does not cover, see <a href="/blog/drinking-water-hose-nsf-61">drinking-water hose and NSF/ANSI 61</a>.',
+    },
+    {
       type: 'faq_block',
       heading: 'Common questions',
       items: [
@@ -127,7 +131,7 @@ const ARTICLE: BlogArticleSeed = {
     },
     {
       type: 'related_articles',
-      slugs: ['lay-flat-hose-vs-hdpe-pipe', 'lay-flat-hose-flow-and-friction-loss', 'flood-response-pumping-lay-flat-hose', 'suction-hose-vs-lay-flat-hose', 'lay-flat-hose-couplings-guide'],
+      slugs: ['drinking-water-hose-nsf-61', 'lay-flat-hose-vs-hdpe-pipe', 'lay-flat-hose-flow-and-friction-loss', 'flood-response-pumping-lay-flat-hose', 'suction-hose-vs-lay-flat-hose', 'lay-flat-hose-couplings-guide'],
     },
     {
       type: 'as_of_stamp',
