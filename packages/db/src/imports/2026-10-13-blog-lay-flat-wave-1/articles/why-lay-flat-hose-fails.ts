@@ -113,6 +113,10 @@ const ARTICLE: BlogArticleSeed = {
       html: 'In the Gulf, heat and sun are a failure mode of their own; see <a href="/blog/lay-flat-hose-in-gulf-heat">lay flat hose in Gulf heat</a> for summer practice and storage.',
     },
     {
+      type: 'paragraph',
+      html: 'When damage does happen, see <a href="/blog/how-to-repair-lay-flat-hose">how to repair lay flat hose</a>; to prevent the storage damage above, see <a href="/blog/how-to-roll-and-store-lay-flat-hose">how to roll and store it</a>.',
+    },
+    {
       type: 'faq_block',
       heading: 'Common questions',
       items: [
@@ -143,7 +147,7 @@ const ARTICLE: BlogArticleSeed = {
     },
     {
       type: 'related_articles',
-      slugs: ['lay-flat-hose-in-gulf-heat', 'lay-flat-hose-guide', 'tpu-vs-nbr-vs-pvc-lay-flat-hose', 'lay-flat-hose-pressure-ratings', 'lay-flat-hose-couplings-guide'],
+      slugs: ['how-to-repair-lay-flat-hose', 'how-to-roll-and-store-lay-flat-hose', 'lay-flat-hose-in-gulf-heat', 'lay-flat-hose-guide', 'tpu-vs-nbr-vs-pvc-lay-flat-hose', 'lay-flat-hose-pressure-ratings'],
     },
     {
       type: 'as_of_stamp',

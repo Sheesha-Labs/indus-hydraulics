@@ -149,7 +149,7 @@ const ARTICLE: BlogArticleSeed = {
     },
     {
       type: 'related_articles',
-      slugs: ['lay-flat-hose-guide', 'lay-flat-hose-flow-and-friction-loss', 'tpu-vs-nbr-vs-pvc-lay-flat-hose', 'why-lay-flat-hose-fails'],
+      slugs: ['lay-flat-hose-size-chart', 'lay-flat-hose-guide', 'lay-flat-hose-flow-and-friction-loss', 'tpu-vs-nbr-vs-pvc-lay-flat-hose', 'why-lay-flat-hose-fails'],
     },
     {
       type: 'as_of_stamp',

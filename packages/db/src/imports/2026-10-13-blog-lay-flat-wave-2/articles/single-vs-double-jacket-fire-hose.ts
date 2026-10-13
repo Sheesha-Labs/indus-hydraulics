@@ -133,7 +133,7 @@ const ARTICLE: BlogArticleSeed = {
     },
     {
       type: 'related_articles',
-      slugs: ['fire-hose-standards-en-14540-bs-6391-nfpa', 'fire-hose-liner-materials', 'fire-hose-requirements-uae-civil-defence', 'fire-hose-cabinet-maintenance', 'lay-flat-hose-guide'],
+      slugs: ['forestry-fire-hose-guide', 'fire-hose-standards-en-14540-bs-6391-nfpa', 'fire-hose-liner-materials', 'fire-hose-requirements-uae-civil-defence', 'fire-hose-cabinet-maintenance', 'lay-flat-hose-guide'],
     },
     {
       type: 'as_of_stamp',

@@ -121,7 +121,7 @@ const ARTICLE: BlogArticleSeed = {
     },
     {
       type: 'related_articles',
-      slugs: ['fire-hose-requirements-uae-civil-defence', 'single-vs-double-jacket-fire-hose', 'fire-hose-liner-materials', 'lay-flat-hose-in-gulf-heat'],
+      slugs: ['how-to-repair-lay-flat-hose', 'fire-hose-requirements-uae-civil-defence', 'single-vs-double-jacket-fire-hose', 'fire-hose-liner-materials', 'lay-flat-hose-in-gulf-heat'],
     },
     {
       type: 'as_of_stamp',
