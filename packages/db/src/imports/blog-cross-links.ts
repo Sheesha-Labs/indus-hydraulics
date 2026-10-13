@@ -1880,6 +1880,8 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
   'crosby-pattern-numbers-explained': {
     pages: [CONSTRUCTION],
     related: [
+      'g-209-vs-g-2130-vs-g-213-shackle',
+      'bs-3032-din-82101-as-2741-shackles',
       'types-of-shackles',
       'lifting-hook-types',
       'lifting-gear-test-certificate',
@@ -1926,12 +1928,12 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
   'lifting-equipment-inspection-uae': {
     pages: [CONSTRUCTION, OIL_GAS],
     related: [
+      'shackle-markings-explained',
+      'shackle-buying-guide-uae',
       'lifting-gear-rejection-criteria',
       'lifting-gear-test-certificate',
       'working-load-limit-vs-breaking-strength',
       'types-of-shackles',
-      'sling-angle-chart',
-      'wire-rope-clips-installation',
     ],
   },
   'lifting-gear-rejection-criteria': {
@@ -2002,12 +2004,12 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
   'shackle-size-and-capacity-chart': {
     pages: [CONSTRUCTION],
     related: [
+      'commercial-grade-vs-lifting-grade-shackles',
+      'g-209-vs-g-2130-vs-g-213-shackle',
+      'bs-3032-din-82101-as-2741-shackles',
       'types-of-shackles',
       'crosby-pattern-numbers-explained',
       'stainless-vs-galvanized-rigging-gulf',
-      'eye-bolt-capacity-chart',
-      'sling-angle-chart',
-      'lifting-gear-rejection-criteria',
     ],
   },
   'sling-angle-chart': {
@@ -2061,10 +2063,12 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
   'turnbuckle-types': {
     pages: [CONSTRUCTION],
     related: [
+      'how-to-choose-and-tension-a-turnbuckle',
+      'din-1480-vs-din-1478-turnbuckle',
+      'turnbuckles-for-guy-wires-and-cable-bracing',
       'types-of-shackles',
       'wire-rope-clips-installation',
       'working-load-limit-vs-breaking-strength',
-      'eye-bolt-types-and-angled-loads',
     ],
   },
   'types-of-lifting-slings': {
@@ -2081,11 +2085,12 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
   'types-of-shackles': {
     pages: [CONSTRUCTION],
     related: [
+      'shackle-buying-guide-uae',
+      'g-209-vs-g-2130-vs-g-213-shackle',
+      'how-to-rig-a-shackle-correctly',
       'working-load-limit-vs-breaking-strength',
       'sling-angle-chart',
       'eye-bolt-types-and-angled-loads',
-      'turnbuckle-types',
-      'lifting-equipment-inspection-uae',
     ],
   },
   'webbing-and-round-sling-capacity-chart': {
@@ -2113,6 +2118,7 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
   'wire-rope-clips-installation': {
     pages: [CONSTRUCTION],
     related: [
+      'turnbuckles-for-guy-wires-and-cable-bracing',
       'wire-rope-construction-explained',
       'working-load-limit-vs-breaking-strength',
       'sling-angle-chart',
