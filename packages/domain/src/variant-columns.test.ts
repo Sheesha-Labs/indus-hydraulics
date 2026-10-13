@@ -96,6 +96,7 @@ describe('VARIANT_DIMENSION_COLUMNS', () => {
       'vacuum',
       'bendRadius',
       'weightPerMetre',
+      'tensileKg',
       'weldPrepOd',
       'weldPrepId',
       'W',
@@ -150,7 +151,7 @@ describe('text columns', () => {
 
   it('does not claim S1 or S2 mean across-flats', () => {
     expect(VARIANT_TEXT_COLUMNS.map((c) => c.key)).toEqual([
-      'oRing', 'supply', 'item', 'half', 'bodySize', 'mount', 'shaft', 'ports', 'rotation', 'action',
+      'oRing', 'insideDia', 'wall', 'supply', 'item', 'half', 'bodySize', 'mount', 'shaft', 'ports', 'rotation', 'action',
     ])
     for (const key of ['S1', 'S2'] as const) {
       const col = VARIANT_DIMENSION_COLUMNS.find((c) => c.key === key)!
@@ -164,6 +165,18 @@ describe('supply column', () => {
     const rows = [v({ dimensions: { supply: '50 ft box' } }), v({ dimensions: { supply: '100 ft coil' } })]
     expect(variantTextColumns(rows).map((c) => c.key)).toEqual(['supply'])
     expect(variantTextColumns([v({ dimensions: {} })])).toEqual([])
+  })
+})
+
+describe('lay-flat hose columns', () => {
+  it('prints bore tolerance and wall as text and tensile strength as a hose column', () => {
+    const rows = [
+      v({ pressureBar: 21, dimensions: { insideDia: '39 +1.5', wall: '2.6', burstPressure: 63, weightPerMetre: 0.45, tensileKg: 5800 } }),
+      v({ pressureBar: 85, dimensions: { insideDia: '76', wall: '5.5 ±0.5', burstPressure: 170, weightPerMetre: 1.55, tensileKg: 24000 } }),
+    ]
+    expect(variantTableKind(rows)).toBe('hose')
+    expect(variantTextColumns(rows).map((c) => c.key)).toEqual(['insideDia', 'wall'])
+    expect(variantDimensionColumns(rows).map((c) => c.key)).toEqual(['burstPressure', 'weightPerMetre', 'tensileKg'])
   })
 })
 

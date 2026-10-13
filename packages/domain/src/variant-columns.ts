@@ -28,6 +28,7 @@ export type VariantDimensionKey =
   | 'vacuum'
   | 'bendRadius'
   | 'weightPerMetre'
+  | 'tensileKg'
   | 'weldPrepOd'
   | 'weldPrepId'
   | 'W'
@@ -68,7 +69,13 @@ export type VariantDimensionKey =
  * figure — an O-ring size is `12.0×2.0`, not a number. They render in their own
  * columns after the numeric ones.
  */
-export type VariantTextKey = 'oRing' | 'supply' | EquipmentTextKey | LiftingTextKey
+export type VariantTextKey = 'oRing' | 'supply' | HoseTextKey | EquipmentTextKey | LiftingTextKey
+
+/**
+ * Lay-flat hose: the catalogue prints the bore with its tolerance (`39 +1.5`)
+ * and the wall as a figure or a band (`4.5 ±0.5`, `5.5–6.5`), so both stay text.
+ */
+export type HoseTextKey = 'insideDia' | 'wall'
 
 /**
  * Ratings and sizes for couplings, pumps, motors and cylinders.
@@ -415,6 +422,13 @@ export const VARIANT_DIMENSION_COLUMNS: readonly VariantColumn[] = [
     help: 'Weight of the hose per metre, as published.',
   },
   {
+    key: 'tensileKg',
+    label: 'Tensile strength',
+    unit: 'kg',
+    help: 'Axial tensile strength of the hose, as published — what a lay-flat line can carry hanging in a well or dragged behind a tractor.',
+    grouped: true,
+  },
+  {
     key: 'weldPrepOd',
     label: 'Weld prep O.D.',
     unit: 'mm',
@@ -494,6 +508,9 @@ export const VARIANT_TEXT_COLUMNS: readonly VariantTextColumn[] = [
     label: 'O-ring',
     help: 'O-ring size supplied with the fitting, as inside diameter × section.',
   },
+  // Lay-flat hose: inside diameter with tolerance and wall thickness, as printed.
+  { key: 'insideDia', label: 'I.D. (mm)', help: 'Inside diameter in millimetres with its tolerance, as published.', lead: true },
+  { key: 'wall', label: 'Wall (mm)', help: 'Wall thickness in millimetres, as published — a single figure or a band.', lead: true },
   // Hose sold by the box, coil, reel or cut length: one row per way it is supplied.
   { key: 'supply', label: 'Supply', help: 'Length and packaging the part number is supplied in, as published.', lead: true },
   { key: 'item', label: 'Description', help: 'What this part number is, as the manufacturer lists it.', lead: true },
@@ -853,7 +870,7 @@ export function variantTableKind(variants: readonly VariantLike[]): VariantTable
   // keys no fitting or hose row carries.
   const isEquipment = variants.some((v) => Object.keys(variantDimensions(v.dimensions)).some((k) => EQUIPMENT_MARKERS.has(k)))
   if (isEquipment) return 'equipment'
-  const hoseKeys: VariantDimensionKey[] = ['hoseOD', 'burstPressure', 'vacuum', 'bendRadius', 'weightPerMetre']
+  const hoseKeys: VariantDimensionKey[] = ['hoseOD', 'burstPressure', 'vacuum', 'bendRadius', 'weightPerMetre', 'tensileKg']
   const isHose = variants.some((v) => {
     const dims = variantDimensions(v.dimensions)
     return hoseKeys.some((k) => k in dims)

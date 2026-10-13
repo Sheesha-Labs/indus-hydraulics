@@ -104,6 +104,9 @@ type Variant = {
   /** Hose bore: SAE dash size and the inch bore as printed. */
   hoseDash?: number | null
   hoseInch?: string | null
+  /** Hose bore as a DN, and the published working pressure in bar (lay-flat and industrial hose). */
+  hoseDn?: number | null
+  pressureBar?: number | null
 }
 type Entry = {
   sku: string
@@ -490,6 +493,8 @@ async function main() {
             competitorMpn: v.competitorMpn ?? null,
             hoseDash: v.hoseDash ?? null,
             hoseInch: v.hoseInch ?? null,
+            hoseDn: v.hoseDn ?? null,
+            pressureBar: v.pressureBar ?? null,
           })),
         })
         if (e.crossReferences.length > 0) {
