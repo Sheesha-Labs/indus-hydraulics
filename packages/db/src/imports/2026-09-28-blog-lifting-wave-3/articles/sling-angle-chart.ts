@@ -55,7 +55,7 @@ const ARTICLE: BlogArticleSeed = {
   title: 'Sling angle chart: how the angle changes the load in each leg',
   excerpt:
     'Two sling legs do not each carry half the load unless they hang straight down. At 45° from vertical each leg carries 71% of the load; at 60° each carries all of it. Here is the chart, the one-line formula behind it, and how rating tables for multi-leg slings build it in.',
-  categorySlug: 'lifting-rigging',
+  categorySlug: 'rigging-capacity-charts',
   authorSlug: 'ayush-bhatia',
   seoTitle: 'Sling angle chart: load per leg at 30°, 45° and 60°',
   seoDescription:
