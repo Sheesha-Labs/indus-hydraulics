@@ -19,10 +19,11 @@ describe('BLOG_CROSS_LINKS', () => {
    * wave; 113, 123 and 133 across the Africa fittings sprint's three waves
    * (2026-09-01). 172 after the industrial-hose cluster's first wave, 181
    * after the hose pillars wave and 205 after the uncovered-shelves wave
-   * (2026-10-06).
+   * (2026-10-06). 238 after the lifting articles moved their links into the
+   * map to carry industry cards (2026-10-14).
    */
   it('covers the whole blog', () => {
-    expect(entries.length).toBe(205)
+    expect(entries.length).toBe(238)
   })
 
   it('never links an article to itself', () => {
