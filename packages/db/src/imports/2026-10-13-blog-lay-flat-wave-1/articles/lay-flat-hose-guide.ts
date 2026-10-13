@@ -211,6 +211,10 @@ const ARTICLE: BlogArticleSeed = {
       html: 'In Europe the same hose turns up in very different work: <a href="/blog/slurry-umbilical-system-guide">slurry umbilical systems</a> on farms, <a href="/blog/overland-pumping-water-main-bypass">over-pumping and water main bypass</a>, <a href="/blog/flood-response-pumping-lay-flat-hose">flood response</a>, <a href="/blog/mine-dewatering-lay-flat-hose">mine dewatering</a>, <a href="/blog/snowmaking-hose-guide">snowmaking</a>, <a href="/blog/irrigation-lay-flat-hose-guide">irrigation</a> and <a href="/blog/concrete-placement-hose-guide">concrete placement</a>.',
     },
     {
+      type: 'paragraph',
+      html: 'Practical references: the <a href="/blog/lay-flat-hose-size-chart">lay flat hose size chart</a>, <a href="/blog/how-to-roll-and-store-lay-flat-hose">how to roll and store lay flat hose</a>, <a href="/blog/how-to-repair-lay-flat-hose">how to repair it</a>, and the <a href="/blog/lay-flat-hose-rfq-checklist">RFQ checklist</a> for ordering.',
+    },
+    {
       type: 'faq_block',
       heading: 'Common questions',
       items: [
