@@ -140,7 +140,7 @@ const ARTICLE: BlogArticleSeed = {
     },
     {
       type: 'related_articles',
-      slugs: ['g-209-vs-g-2130-vs-g-213-shackle', 'how-to-rig-a-shackle-correctly', 'shackle-markings-explained', 'commercial-grade-vs-lifting-grade-shackles', 'shackle-size-and-capacity-chart', 'lifting-equipment-inspection-uae'],
+      slugs: ['site-mobilisation-rigging-kit', 'g-209-vs-g-2130-vs-g-213-shackle', 'how-to-rig-a-shackle-correctly', 'shackle-markings-explained', 'commercial-grade-vs-lifting-grade-shackles', 'lifting-equipment-inspection-uae'],
     },
     {
       type: 'as_of_stamp',

@@ -1834,6 +1834,7 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
   },
   'vertical-vs-horizontal-plate-lifting-clamps': {
     related: [
+      'steel-erection-rigging-equipment',
       'chain-block-vs-lever-hoist-vs-electric-hoist',
       'working-load-limit-vs-breaking-strength',
       'lifting-equipment-inspection-uae',
@@ -1849,6 +1850,8 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
   'chain-block-vs-lever-hoist-vs-electric-hoist': {
     pages: [CONSTRUCTION, STEEL],
     related: [
+      'shutdown-and-turnaround-rigging',
+      'lifting-chillers-and-rooftop-plant',
       'snatch-block-vs-pulley-block',
       'lifting-hook-types',
       'lifting-equipment-inspection-uae',
@@ -1928,12 +1931,12 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
   'lifting-equipment-inspection-uae': {
     pages: [CONSTRUCTION, OIL_GAS],
     related: [
+      'site-mobilisation-rigging-kit',
+      'tower-crane-rigging-gear',
       'shackle-markings-explained',
       'shackle-buying-guide-uae',
       'lifting-gear-rejection-criteria',
       'lifting-gear-test-certificate',
-      'working-load-limit-vs-breaking-strength',
-      'types-of-shackles',
     ],
   },
   'lifting-gear-rejection-criteria': {
@@ -1986,6 +1989,7 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
   'precast-concrete-lifting-clutch': {
     pages: [CONSTRUCTION],
     related: [
+      'precast-panel-and-beam-rigging',
       'lifting-gear-rejection-criteria',
       'pad-eye-vs-swivel-lifting-point',
       'sling-angle-chart',
@@ -2053,6 +2057,7 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
   'stainless-vs-galvanized-rigging-gulf': {
     pages: [MARINE],
     related: [
+      'jetty-and-marine-construction-rigging',
       'types-of-shackles',
       'chain-grades-explained',
       'wire-rope-eye-terminations',
@@ -2074,12 +2079,12 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
   'types-of-lifting-slings': {
     pages: [CONSTRUCTION],
     related: [
+      'site-mobilisation-rigging-kit',
+      'tower-crane-rigging-gear',
       'sling-colour-code-chart',
       'sling-angle-chart',
       'master-links-explained',
       'wire-rope-eye-terminations',
-      'chain-grades-explained',
-      'wire-rope-construction-explained',
     ],
   },
   'types-of-shackles': {
