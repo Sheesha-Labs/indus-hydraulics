@@ -1812,6 +1812,7 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
     pages: [MARINE],
   },
   'snap-hooks-and-quick-links': {
+    pages: [MARINE],
     related: [
       'master-links-explained',
       'types-of-shackles',
@@ -1833,6 +1834,7 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
   },
   'vertical-vs-horizontal-plate-lifting-clamps': {
     related: [
+      'steel-erection-rigging-equipment',
       'chain-block-vs-lever-hoist-vs-electric-hoist',
       'working-load-limit-vs-breaking-strength',
       'lifting-equipment-inspection-uae',
@@ -1840,5 +1842,340 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
       'sling-angle-chart',
     ],
     pages: [CONSTRUCTION],
+  },
+  // ── lifting & rigging: industry cards (2026-10-14) ─────────────────────
+  // The lifting articles once carried their links in their seeds; these entries move the graph
+  // here so each can carry an industry card. Related lists are the live ones, unchanged.
+  // Industry cards only — the market budget below is not touched.
+  'chain-block-vs-lever-hoist-vs-electric-hoist': {
+    pages: [CONSTRUCTION, STEEL],
+    related: [
+      'shutdown-and-turnaround-rigging',
+      'lifting-chillers-and-rooftop-plant',
+      'snatch-block-vs-pulley-block',
+      'lifting-hook-types',
+      'lifting-equipment-inspection-uae',
+      'working-load-limit-vs-breaking-strength',
+    ],
+  },
+  'chain-grades-explained': {
+    pages: [CONSTRUCTION],
+    related: [
+      'working-load-limit-vs-breaking-strength',
+      'types-of-lifting-slings',
+      'din-link-chain-standards',
+      'sling-angle-chart',
+      'types-of-shackles',
+      'wire-rope-construction-explained',
+    ],
+  },
+  'chain-sling-capacity-chart': {
+    pages: [CONSTRUCTION],
+    related: [
+      'chain-sling-codes-explained',
+      'sling-angle-chart',
+      'chain-grades-explained',
+      'master-links-explained',
+      'wire-rope-sling-capacity-chart',
+      'lifting-gear-rejection-criteria',
+    ],
+  },
+  'crosby-pattern-numbers-explained': {
+    pages: [CONSTRUCTION],
+    related: [
+      'g-209-vs-g-2130-vs-g-213-shackle',
+      'bs-3032-din-82101-as-2741-shackles',
+      'types-of-shackles',
+      'lifting-hook-types',
+      'lifting-gear-test-certificate',
+      'wire-rope-thimble-types',
+    ],
+  },
+  'din-link-chain-standards': {
+    pages: [MINING],
+    related: [
+      'chain-grades-explained',
+      'types-of-lifting-slings',
+      'stainless-vs-galvanized-rigging-gulf',
+    ],
+  },
+  'eye-bolt-capacity-chart': {
+    pages: [CONSTRUCTION],
+    related: [
+      'eye-bolt-types-and-angled-loads',
+      'pad-eye-vs-swivel-lifting-point',
+      'shackle-size-and-capacity-chart',
+      'sling-angle-chart',
+      'working-load-limit-vs-breaking-strength',
+      'lifting-equipment-inspection-uae',
+    ],
+  },
+  'eye-bolt-types-and-angled-loads': {
+    pages: [CONSTRUCTION],
+    related: [
+      'pad-eye-vs-swivel-lifting-point',
+      'sling-angle-chart',
+      'types-of-shackles',
+      'working-load-limit-vs-breaking-strength',
+      'lifting-equipment-inspection-uae',
+    ],
+  },
+  'lever-vs-ratchet-load-binder': {
+    pages: [CONSTRUCTION],
+    related: [
+      'ratchet-strap-vs-chain-and-binder',
+      'chain-grades-explained',
+      'working-load-limit-vs-breaking-strength',
+    ],
+  },
+  'lifting-equipment-inspection-uae': {
+    pages: [CONSTRUCTION, OIL_GAS],
+    related: [
+      'site-mobilisation-rigging-kit',
+      'tower-crane-rigging-gear',
+      'shackle-markings-explained',
+      'shackle-buying-guide-uae',
+      'lifting-gear-rejection-criteria',
+      'lifting-gear-test-certificate',
+    ],
+  },
+  'lifting-gear-rejection-criteria': {
+    pages: [CONSTRUCTION],
+    related: [
+      'lifting-gear-test-certificate',
+      'lifting-equipment-inspection-uae',
+      'lifting-hook-types',
+      'types-of-lifting-slings',
+      'chain-grades-explained',
+    ],
+  },
+  'lifting-gear-test-certificate': {
+    pages: [CONSTRUCTION, OIL_GAS],
+    related: [
+      'lifting-gear-rejection-criteria',
+      'lifting-equipment-inspection-uae',
+      'working-load-limit-vs-breaking-strength',
+      'material-test-certificate-en-10204',
+    ],
+  },
+  'lifting-hook-types': {
+    pages: [CONSTRUCTION],
+    related: [
+      'master-links-explained',
+      'lifting-gear-rejection-criteria',
+      'chain-grades-explained',
+      'types-of-shackles',
+      'working-load-limit-vs-breaking-strength',
+    ],
+  },
+  'master-links-explained': {
+    pages: [CONSTRUCTION],
+    related: [
+      'sling-angle-chart',
+      'lifting-hook-types',
+      'chain-grades-explained',
+      'types-of-lifting-slings',
+    ],
+  },
+  'pad-eye-vs-swivel-lifting-point': {
+    pages: [OIL_GAS, MARINE],
+    related: [
+      'eye-bolt-types-and-angled-loads',
+      'sling-angle-chart',
+      'master-links-explained',
+      'lifting-equipment-inspection-uae',
+    ],
+  },
+  'precast-concrete-lifting-clutch': {
+    pages: [CONSTRUCTION],
+    related: [
+      'precast-panel-and-beam-rigging',
+      'lifting-gear-rejection-criteria',
+      'pad-eye-vs-swivel-lifting-point',
+      'sling-angle-chart',
+      'lifting-equipment-inspection-uae',
+    ],
+  },
+  'ratchet-strap-vs-chain-and-binder': {
+    pages: [CONSTRUCTION],
+    related: [
+      'lever-vs-ratchet-load-binder',
+      'chain-grades-explained',
+      'types-of-lifting-slings',
+      'working-load-limit-vs-breaking-strength',
+    ],
+  },
+  'shackle-size-and-capacity-chart': {
+    pages: [CONSTRUCTION],
+    related: [
+      'commercial-grade-vs-lifting-grade-shackles',
+      'g-209-vs-g-2130-vs-g-213-shackle',
+      'bs-3032-din-82101-as-2741-shackles',
+      'types-of-shackles',
+      'crosby-pattern-numbers-explained',
+      'stainless-vs-galvanized-rigging-gulf',
+    ],
+  },
+  'sling-angle-chart': {
+    pages: [CONSTRUCTION],
+    related: [
+      'working-load-limit-vs-breaking-strength',
+      'eye-bolt-types-and-angled-loads',
+      'sling-colour-code-chart',
+      'types-of-shackles',
+      'chain-grades-explained',
+      'wire-rope-clips-installation',
+    ],
+  },
+  'sling-colour-code-chart': {
+    pages: [CONSTRUCTION],
+    related: [
+      'types-of-lifting-slings',
+      'sling-angle-chart',
+      'working-load-limit-vs-breaking-strength',
+      'lifting-equipment-inspection-uae',
+    ],
+  },
+  'snatch-block-vs-pulley-block': {
+    pages: [CONSTRUCTION, MARINE],
+    related: [
+      'wire-rope-construction-explained',
+      'types-of-shackles',
+      'chain-block-vs-lever-hoist-vs-electric-hoist',
+      'working-load-limit-vs-breaking-strength',
+    ],
+  },
+  'spelter-sockets-open-vs-closed': {
+    pages: [OIL_GAS, MARINE],
+    related: [
+      'wire-rope-eye-terminations',
+      'wire-rope-thimble-types',
+      'wire-rope-construction-explained',
+      'wire-rope-clips-installation',
+    ],
+  },
+  'stainless-vs-galvanized-rigging-gulf': {
+    pages: [MARINE],
+    related: [
+      'jetty-and-marine-construction-rigging',
+      'types-of-shackles',
+      'chain-grades-explained',
+      'wire-rope-eye-terminations',
+      'why-fittings-seize-in-coastal-air',
+      'galvanic-corrosion-in-fittings',
+    ],
+  },
+  'turnbuckle-types': {
+    pages: [CONSTRUCTION],
+    related: [
+      'how-to-choose-and-tension-a-turnbuckle',
+      'din-1480-vs-din-1478-turnbuckle',
+      'turnbuckles-for-guy-wires-and-cable-bracing',
+      'types-of-shackles',
+      'wire-rope-clips-installation',
+      'working-load-limit-vs-breaking-strength',
+    ],
+  },
+  'types-of-lifting-slings': {
+    pages: [CONSTRUCTION],
+    related: [
+      'site-mobilisation-rigging-kit',
+      'tower-crane-rigging-gear',
+      'sling-colour-code-chart',
+      'sling-angle-chart',
+      'master-links-explained',
+      'wire-rope-eye-terminations',
+    ],
+  },
+  'types-of-shackles': {
+    pages: [CONSTRUCTION],
+    related: [
+      'shackle-buying-guide-uae',
+      'g-209-vs-g-2130-vs-g-213-shackle',
+      'how-to-rig-a-shackle-correctly',
+      'working-load-limit-vs-breaking-strength',
+      'sling-angle-chart',
+      'eye-bolt-types-and-angled-loads',
+    ],
+  },
+  'webbing-and-round-sling-capacity-chart': {
+    pages: [CONSTRUCTION],
+    related: [
+      'sling-colour-code-chart',
+      'sling-angle-chart',
+      'types-of-lifting-slings',
+      'chain-sling-capacity-chart',
+      'wire-rope-sling-capacity-chart',
+      'lifting-gear-rejection-criteria',
+    ],
+  },
+  'wire-rope-breaking-strength-chart': {
+    pages: [MARINE],
+    related: [
+      'wire-rope-construction-explained',
+      'wire-rope-sling-capacity-chart',
+      'working-load-limit-vs-breaking-strength',
+      'wire-rope-eye-terminations',
+      'wire-rope-clips-installation',
+      'spelter-sockets-open-vs-closed',
+    ],
+  },
+  'wire-rope-clips-installation': {
+    pages: [CONSTRUCTION],
+    related: [
+      'turnbuckles-for-guy-wires-and-cable-bracing',
+      'wire-rope-construction-explained',
+      'working-load-limit-vs-breaking-strength',
+      'sling-angle-chart',
+    ],
+  },
+  'wire-rope-construction-explained': {
+    pages: [MARINE],
+    related: [
+      'wire-rope-clips-installation',
+      'working-load-limit-vs-breaking-strength',
+      'sling-angle-chart',
+      'chain-grades-explained',
+    ],
+  },
+  'wire-rope-eye-terminations': {
+    pages: [MARINE],
+    related: [
+      'spelter-sockets-open-vs-closed',
+      'wire-rope-thimble-types',
+      'wire-rope-clips-installation',
+      'wire-rope-construction-explained',
+    ],
+  },
+  'wire-rope-sling-capacity-chart': {
+    pages: [CONSTRUCTION],
+    related: [
+      'wire-rope-breaking-strength-chart',
+      'wire-rope-eye-terminations',
+      'sling-angle-chart',
+      'chain-sling-capacity-chart',
+      'wire-rope-construction-explained',
+      'lifting-gear-rejection-criteria',
+    ],
+  },
+  'wire-rope-thimble-types': {
+    pages: [MARINE],
+    related: [
+      'wire-rope-eye-terminations',
+      'wire-rope-clips-installation',
+      'types-of-shackles',
+      'wire-rope-construction-explained',
+    ],
+  },
+  'working-load-limit-vs-breaking-strength': {
+    pages: [CONSTRUCTION],
+    related: [
+      'types-of-shackles',
+      'sling-angle-chart',
+      'types-of-lifting-slings',
+      'chain-grades-explained',
+      'lifting-equipment-inspection-uae',
+      'mobile-crane-hydraulic-hose',
+    ],
   },
 }
