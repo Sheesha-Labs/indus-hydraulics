@@ -119,7 +119,7 @@ const ARTICLE: BlogArticleSeed = {
     },
     {
       type: 'related_articles',
-      slugs: ['g-209-vs-g-2130-vs-g-213-shackle', 'sling-angle-chart', 'shackle-buying-guide-uae', 'lifting-gear-rejection-criteria', 'types-of-shackles'],
+      slugs: ['lynch-pins-r-clips-and-wire-lock-pins', 'g-209-vs-g-2130-vs-g-213-shackle', 'sling-angle-chart', 'shackle-buying-guide-uae', 'lifting-gear-rejection-criteria', 'types-of-shackles'],
     },
     {
       type: 'as_of_stamp',

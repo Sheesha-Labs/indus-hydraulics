@@ -1823,12 +1823,12 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
   },
   'chain-sling-codes-explained': {
     related: [
+      'chain-sling-shortening-clutches-and-grab-hooks',
+      'hammerlock-vs-clevis-chain-fittings',
       'chain-grades-explained',
       'sling-angle-chart',
       'master-links-explained',
       'lifting-hook-types',
-      'types-of-lifting-slings',
-      'lifting-gear-rejection-criteria',
     ],
     pages: [CONSTRUCTION],
   },
@@ -1850,23 +1850,23 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
   'chain-block-vs-lever-hoist-vs-electric-hoist': {
     pages: [CONSTRUCTION, STEEL],
     related: [
+      'beam-trolley-guide',
       'shutdown-and-turnaround-rigging',
       'lifting-chillers-and-rooftop-plant',
       'snatch-block-vs-pulley-block',
       'lifting-hook-types',
       'lifting-equipment-inspection-uae',
-      'working-load-limit-vs-breaking-strength',
     ],
   },
   'chain-grades-explained': {
     pages: [CONSTRUCTION],
     related: [
+      'grade-80-vs-grade-100-chain-slings',
+      'stainless-steel-lifting-chain',
       'working-load-limit-vs-breaking-strength',
       'types-of-lifting-slings',
       'din-link-chain-standards',
       'sling-angle-chart',
-      'types-of-shackles',
-      'wire-rope-construction-explained',
     ],
   },
   'chain-sling-capacity-chart': {
@@ -1964,16 +1964,19 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
   'lifting-hook-types': {
     pages: [CONSTRUCTION],
     related: [
+      'lifting-swivels-explained',
+      'chain-sling-shortening-clutches-and-grab-hooks',
       'master-links-explained',
       'lifting-gear-rejection-criteria',
       'chain-grades-explained',
       'types-of-shackles',
-      'working-load-limit-vs-breaking-strength',
     ],
   },
   'master-links-explained': {
     pages: [CONSTRUCTION],
     related: [
+      'hammerlock-vs-clevis-chain-fittings',
+      'grade-80-vs-grade-100-chain-slings',
       'sling-angle-chart',
       'lifting-hook-types',
       'chain-grades-explained',
@@ -2060,12 +2063,12 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
   'stainless-vs-galvanized-rigging-gulf': {
     pages: [MARINE],
     related: [
+      'stainless-steel-lifting-chain',
       'jetty-and-marine-construction-rigging',
       'types-of-shackles',
       'chain-grades-explained',
       'wire-rope-eye-terminations',
       'why-fittings-seize-in-coastal-air',
-      'galvanic-corrosion-in-fittings',
     ],
   },
   'turnbuckle-types': {
