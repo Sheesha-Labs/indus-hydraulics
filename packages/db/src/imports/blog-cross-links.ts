@@ -1931,17 +1931,18 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
   'lifting-equipment-inspection-uae': {
     pages: [CONSTRUCTION, OIL_GAS],
     related: [
+      'lifting-equipment-register-uae',
+      'lifting-equipment-rules-gcc',
       'site-mobilisation-rigging-kit',
-      'tower-crane-rigging-gear',
-      'shackle-markings-explained',
-      'shackle-buying-guide-uae',
       'lifting-gear-rejection-criteria',
       'lifting-gear-test-certificate',
+      'shackle-markings-explained',
     ],
   },
   'lifting-gear-rejection-criteria': {
     pages: [CONSTRUCTION],
     related: [
+      'asme-b30-26-rigging-hardware-explained',
       'lifting-gear-test-certificate',
       'lifting-equipment-inspection-uae',
       'lifting-hook-types',
@@ -1952,6 +1953,8 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
   'lifting-gear-test-certificate': {
     pages: [CONSTRUCTION, OIL_GAS],
     related: [
+      'proof-load-testing-lifting-gear',
+      'how-to-spot-counterfeit-rigging-hardware',
       'lifting-gear-rejection-criteria',
       'lifting-equipment-inspection-uae',
       'working-load-limit-vs-breaking-strength',
@@ -2170,12 +2173,12 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
   'working-load-limit-vs-breaking-strength': {
     pages: [CONSTRUCTION],
     related: [
+      'proof-load-testing-lifting-gear',
       'types-of-shackles',
       'sling-angle-chart',
       'types-of-lifting-slings',
       'chain-grades-explained',
       'lifting-equipment-inspection-uae',
-      'mobile-crane-hydraulic-hose',
     ],
   },
 }

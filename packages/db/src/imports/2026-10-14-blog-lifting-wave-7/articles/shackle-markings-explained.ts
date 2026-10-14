@@ -104,7 +104,7 @@ const ARTICLE: BlogArticleSeed = {
     },
     {
       type: 'related_articles',
-      slugs: ['shackle-buying-guide-uae', 'lifting-gear-test-certificate', 'lifting-gear-rejection-criteria', 'lifting-equipment-inspection-uae', 'commercial-grade-vs-lifting-grade-shackles'],
+      slugs: ['how-to-spot-counterfeit-rigging-hardware', 'shackle-buying-guide-uae', 'lifting-gear-test-certificate', 'lifting-gear-rejection-criteria', 'lifting-equipment-inspection-uae', 'commercial-grade-vs-lifting-grade-shackles'],
     },
     {
       type: 'as_of_stamp',
