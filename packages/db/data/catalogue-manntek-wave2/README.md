@@ -1,8 +1,12 @@
 # MannTek Wave 2 — `catalogue-manntek-wave2`
 
 **9 listings, 76 part numbers, 30 images**, branded MannTek (`brandSlug: manntek`): the LNG / cryogenic families,
-the Full Flow Ball Valves and the swivel joints. **NOT LOADED.** Built 2026-10-18 and checked with the importer dry
-run only. **Shelf placement approved 2026-10-18** as proposed below; load waits for the go-ahead.
+the Full Flow Ball Valves and the swivel joints. **LIVE 2026-10-18** (01:10 Gulf time): loaded with `--publish`, no
+`--rewrite-categories` (9 created, 30 images, 0 problems). Two new shelves created, published, with band documents;
+`industrial-ball-valves` kept as it was. Cache tags `categories,nav-menu,product-count` purged; the 14 new or changed
+URLs sent to IndexNow an hour after the last production deploy. Shelf placement approved 2026-10-18.
+This folder records what was loaded. The megamenu has no entry for the new shelves (nav rows are curated
+separately, as for Wave 1's breakaway shelf).
 
 | SKU | Listing | Shelf | Rows |
 |---|---|---|---|
@@ -76,9 +80,9 @@ contact sheet before its alt text was written. Left out on purpose:
 - PERC `06-plc.png` / `07-plc2.png` (third-party PLC maker's name on the HMI) and `05-hpn2.png` (cabinet of
   third-party components). `cbc-cable-release.jpg` duplicates `oc6100e44.jpg` on a grey background.
 
-## Before loading
+## Load (images live outside the repo)
 
-1. Shelves are approved. Load without `--rewrite-categories`:
+1. Load without `--rewrite-categories`:
 
    ```bash
    pnpm --filter @indus/db exec tsx src/scripts/import-lifting-catalogue.ts \
@@ -88,8 +92,8 @@ contact sheet before its alt text was written. Left out on purpose:
      --payload=catalogue-manntek-wave2 --image-dir=<folder> --publish
    ```
 
-2. The two new shelves are new nav/category entries: purge `categories,nav-menu` after the load and send the new
-   URLs to IndexNow, keeping at least an hour clear of a deploy (pooler limit).
+2. After the load: purge `categories,nav-menu` (`vercel cache invalidate --tag … --yes` from the main checkout) and
+   send the new URLs to IndexNow, keeping at least an hour clear of a deploy (pooler limit).
 
 Dry run on 2026-10-18 against the live database (brand `manntek` published, template `industrial-coupling-spec`
 present): 2 categories to create, 1 to keep, 9 products to create, 76 part numbers, **0 problems**. Read-only checks
