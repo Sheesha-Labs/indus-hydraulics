@@ -97,6 +97,7 @@ describe('VARIANT_DIMENSION_COLUMNS', () => {
       'bendRadius',
       'weightPerMetre',
       'tensileKg',
+      'maxFlowLpm',
       'weldPrepOd',
       'weldPrepId',
       'W',
