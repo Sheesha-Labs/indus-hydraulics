@@ -29,6 +29,7 @@ export type VariantDimensionKey =
   | 'bendRadius'
   | 'weightPerMetre'
   | 'tensileKg'
+  | 'maxFlowLpm'
   | 'weldPrepOd'
   | 'weldPrepId'
   | 'W'
@@ -283,6 +284,7 @@ export type VariantUnit =
   | 'mm'
   | 'bar'
   | 'kg/m'
+  | 'L/min'
   | 't'
   | 'kg'
   | 'lbs'
@@ -426,6 +428,13 @@ export const VARIANT_DIMENSION_COLUMNS: readonly VariantColumn[] = [
     label: 'Tensile strength',
     unit: 'kg',
     help: 'Axial tensile strength of the hose, as published — what a lay-flat line can carry hanging in a well or dragged behind a tractor.',
+    grouped: true,
+  },
+  {
+    key: 'maxFlowLpm',
+    label: 'Max flow',
+    unit: 'L/min',
+    help: `Maximum flow capacity in litres per minute, ${RATING_HELP}`,
     grouped: true,
   },
   {
