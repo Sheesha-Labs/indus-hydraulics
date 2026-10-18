@@ -56,8 +56,9 @@ type Props = {
    */
   stainlessOnRequest?: boolean
   /**
-   * Heading of the part-number column. A listing sold under another maker's
-   * brand carries that maker's numbers, so "Indus part no." would be untrue.
+   * Heading of the part-number column — "Indus part no.", "<Maker> part no."
+   * or "Part no.". Read off the rows by `variantPartNumberHeading`, because a
+   * branded listing may carry the maker's numbers or Indus `IH-` numbers.
    */
   partNumberHeading?: string
 }
