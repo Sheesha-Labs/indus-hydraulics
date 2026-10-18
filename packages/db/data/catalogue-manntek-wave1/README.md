@@ -1,6 +1,6 @@
 # MannTek Wave 1 — `catalogue-manntek-wave1`
 
-**9 listings, 129 part numbers**, branded MannTek (`brandSlug: manntek`), on two shelves under
+**10 listings, 133 part numbers**, branded MannTek (`brandSlug: manntek`), on two shelves under
 Industrial Hoses. **LIVE 2026-10-17**: loaded with `--rewrite-categories --publish` (9 created, 30 images, 0 problems),
 brand `manntek` published, cache tags purged, 12 URLs sent to IndexNow (HTTP 200). Backup of the rewritten
 shelf row: `~/Documents/Indus Supplier Research/Content Backups/manntek-wave1-backup-2026-10-17.json`.
@@ -15,6 +15,7 @@ This folder records what was loaded.
 | `IH-MNT-DGC-HU` | DGC Dry Gas Coupling for LPG, Hose Unit, 1"–8" (2"/3" Design 2.0) | `dry-disconnect-couplings` | 6 |
 | `IH-MNT-DAC-TU` | DAC Dry Aviation Coupling (ISO 45), Tank Unit, 2-1/2" | `dry-disconnect-couplings` | 2 |
 | `IH-MNT-DAC-HU` | DAC Dry Aviation Coupling (ISO 45), Hose Unit, 2-1/2" | `dry-disconnect-couplings` | 16 |
+| `IH-MNT-DAC-CAP` | DAC Dust Caps and Dust Plugs (ISO 45), 2-1/2" — added 2026-10-18 | `dry-disconnect-couplings` | 4 |
 | `IH-MNT-SBC` | SBC Safety Breakaway Coupling, Breaking-Bolt, DN 25–DN 300 | `breakaway-couplings` (new) | 20 |
 | `IH-MNT-SBCC` | SBC-C Cable-Release Safety Breakaway Coupling, DN 50–DN 150 | `breakaway-couplings` (new) | 5 |
 
@@ -101,3 +102,16 @@ Dry run on 2026-10-17 against the live database, brand in place: 9 to create, 1 
   "increase the lifespan of couplers".
 - MannTek publishes no data-sheet PDFs for these families. The service instructions are in the
   export folder if a Downloads tab is wanted later.
+
+## 2026-10-18 additions
+
+- `IH-MNT-DAC-CAP` loaded with `--only=IH-MNT-DAC-CAP --publish`: four closures from the configurator,
+  each row naming MannTek's own order code (K300A1101, K300A2201, I300A1101, I300A2201 — K is a dust cap and
+  I a dust plug for ISO 45 in MannTek's designation key). Images are the configurator's option renders.
+- Brand `manntek` logo set (blue wordmark from MannTek's logo pack, `product-images/brands/manntek/`). It
+  feeds the brand page's structured data.
+- Service instructions and operating manuals for 17 listings are staged in
+  `data/manntek-service-documents/` and load with `attach-product-documents.ts` **after** the
+  document-label fix in the same PR deploys (before it, the product page would offer a service manual as
+  "↓ Datasheet").
+
