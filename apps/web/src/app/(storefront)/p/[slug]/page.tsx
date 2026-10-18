@@ -26,6 +26,7 @@ import {
   readFittingAttributes,
   relatedProductWindow,
   seriesByBrand,
+  variantPartNumberHeading,
   variantText,
 } from '@indus/domain'
 import { Badge, Breadcrumb, Button, JsonLd } from '@indus/ui'
@@ -803,9 +804,7 @@ export default async function ProductPage({ params }: Props) {
           variantEquivalenceNote={equivalenceNote}
           variantEquivalenceBrand={equivalenceBrand}
           variantStainlessOnRequest={offersStainlessOnRequest(product.specTemplate?.slug, product.brand?.slug)}
-          variantPartNumberHeading={
-            product.brand && product.brand.slug !== 'indus' ? `${product.brand.name} part no.` : 'Indus part no.'
-          }
+          variantPartNumberHeading={variantPartNumberHeading(tabVariants, product.brand)}
           faqs={product.faqs.map((f) => ({
             id: f.id,
             question: f.question,
