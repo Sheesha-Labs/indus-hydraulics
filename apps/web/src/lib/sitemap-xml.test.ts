@@ -45,6 +45,23 @@ describe('renderUrlset', () => {
     expect(xml).not.toMatch(/&(?!amp;|lt;|gt;|quot;|apos;)/)
   })
 
+  it('emits image:image entries and declares the namespace only when used', () => {
+    const withImages = renderUrlset([
+      {
+        url: 'https://example.com/p/a',
+        images: ['https://example.com/media/product-images/a.jpg?x=1&y=2'],
+      },
+    ])
+    expect(withImages).toContain('xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"')
+    expect(withImages).toContain(
+      '<image:loc>https://example.com/media/product-images/a.jpg?x=1&amp;y=2</image:loc>',
+    )
+
+    const without = renderUrlset([{ url: 'https://example.com/p/b' }])
+    expect(without).not.toContain('xmlns:image')
+    expect(without).not.toContain('<image:image>')
+  })
+
   it('renders an empty section as a valid empty document', () => {
     const xml = renderUrlset([])
     expect(xml).toContain('<urlset')

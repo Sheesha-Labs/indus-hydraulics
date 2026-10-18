@@ -1,14 +1,17 @@
+import { CATEGORY_WITH_IMAGE_CHAIN, nearestCategoryImage } from '../../../../lib/category-fallback'
+import { CategoryFallbackImage } from '../../../../components/ProductCard'
 import type { Metadata } from 'next'
 import { Fragment, type ReactNode } from 'react'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import Image from 'next/image'
 import { db } from '@indus/db'
-import { buildBreadcrumbLd, buildOrgLd, str } from '@indus/domain'
+import { buildBrandLd, buildBreadcrumbLd, buildCollectionLd, buildFaqLd, str } from '@indus/domain'
 import { JsonLd, LeadCapturePanel, buildWhatsappHref, buildMailtoHref } from '@indus/ui'
+import { CategoryFaqBand, categoryFaqs } from '../../../../components/category/CategoryBands'
 import { mediaUrl } from '../../../../lib/media'
 import { getSubPageContent } from '../../../../lib/page-content'
-import { pageMetadata, urlFor } from '../../../../lib/seo'
+import { crawlableImageUrl, pageMetadata, urlFor } from '../../../../lib/seo'
 import { getStoreSettings } from '../../../../lib/store-settings'
 
 type Props = {
@@ -54,14 +57,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   ])
   if (!brand) return {}
 
-  const ogPath = brand.ogImageMediaId
-    ? ((
-        await db.media.findUnique({
-          where: { id: brand.ogImageMediaId },
-          select: { storagePath: true },
-        })
-      )?.storagePath ?? null)
+  const ogMedia = brand.ogImageMediaId
+    ? await db.media.findUnique({
+        where: { id: brand.ogImageMediaId },
+        select: { storagePath: true, alt: true },
+      })
     : null
+  const ogPath = brand.ogImageMediaId ? (ogMedia?.storagePath ?? null) : null
 
   return pageMetadata({
     title: brand.seoTitle ?? brand.name,
@@ -70,6 +72,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     canonicalUrl: brand.canonicalUrl,
     robots: { index: brand.robotsIndex, follow: brand.robotsFollow },
     ogImagePath: ogPath,
+    ogImageAlt: ogMedia?.alt ?? null,
     titleTemplate: seoSetting?.defaultMetaTitleTemplate ?? null,
     defaultDescription: seoSetting?.defaultMetaDescription ?? null,
   })
@@ -100,7 +103,7 @@ export default async function BrandPage({ params }: Props) {
         where: { brandId: brand.id, status: 'active' },
         include: {
           images: { orderBy: { position: 'asc' }, take: 1, include: { media: true } },
-          category: { select: { name: true, slug: true } },
+          category: CATEGORY_WITH_IMAGE_CHAIN,
         },
         orderBy: { title: 'asc' },
         take: 8,
@@ -160,10 +163,17 @@ export default async function BrandPage({ params }: Props) {
   const statCols = Math.max(2, Math.min(4, statCells.length))
 
   const brandUrl = urlFor(`/brands/${brand.slug}`)
-  const brandLd = buildOrgLd({
-    name: brand.name,
+  // A collection of the parts we stock under this brand, ABOUT the brand. It
+  // was emitted as `Organization` with our URL as its `url` — telling crawlers
+  // the manufacturer lives at indushydraulics.com/brands/<slug>.
+  const brandLd = buildCollectionLd({
+    name: brand.seoTitle ?? brand.name,
+    description: brand.seoDescription ?? brand.description ?? null,
     url: brandUrl,
-    logoUrl: brand.logo ? mediaUrl(brand.logo.storagePath) : null,
+    about: buildBrandLd({
+      name: brand.name,
+      logoUrl: crawlableImageUrl(brand.logo?.storagePath),
+    }),
     override: brand.jsonLdOverride ?? undefined,
   })
   const breadcrumbLd = buildBreadcrumbLd({
@@ -179,6 +189,11 @@ export default async function BrandPage({ params }: Props) {
   const topSkusCopy = content.values('top_skus')
   const resourcesCopy = content.values('resources')
   const leadCopy = content.values('lead')
+  const faqCopy = content.values('faq')
+  // Same list for the band and the schema, and the schema only while the band
+  // is on — FAQPage markup for questions a reader cannot see is a violation.
+  const brandFaqs = categoryFaqs(faqCopy)
+  const faqLd = content.isOn('faq') && brandFaqs.length > 0 ? buildFaqLd({ faqs: brandFaqs }) : null
 
   /** An override with `{brand}` resolved, or the template's own wording. */
   const over = (values: Parameters<typeof str>[0], key: string, built: string): string =>
@@ -360,11 +375,13 @@ export default async function BrandPage({ params }: Props) {
                     {img ? (
                       <Image
                         src={mediaUrl(img.media.storagePath)}
-                        alt={product.title}
+                        alt={img.alt ?? img.media.alt ?? product.title}
                         fill
                         className="object-contain p-3"
                         sizes="(max-width: 1360px) 25vw, 320px"
                       />
+                    ) : nearestCategoryImage(product.category) ? (
+                      <CategoryFallbackImage {...nearestCategoryImage(product.category)!} sizes="(max-width: 1360px) 25vw, 320px" />
                     ) : (
                       <div className="text-ih-muted absolute inset-0 grid place-items-center font-mono text-[10px]">
                         IMG
@@ -484,6 +501,13 @@ export default async function BrandPage({ params }: Props) {
         </section>
       ) : null,
 
+    faq:
+      brandFaqs.length > 0 ? (
+        <div className="mx-auto max-w-[1440px] px-5 sm:px-8 xl:px-12">
+          <CategoryFaqBand values={faqCopy} />
+        </div>
+      ) : null,
+
     // Lead capture
     lead: (
       <section className="mx-auto max-w-[1440px] px-5 pb-16 sm:px-8 xl:px-12">
@@ -505,7 +529,7 @@ export default async function BrandPage({ params }: Props) {
 
   return (
     <div>
-      <JsonLd data={[brandLd, breadcrumbLd]} />
+      <JsonLd data={faqLd ? [brandLd, breadcrumbLd, faqLd] : [brandLd, breadcrumbLd]} />
       {content.order.map((key) =>
         bands[key] ? <Fragment key={key}>{bands[key]}</Fragment> : null
       )}

@@ -7,15 +7,22 @@ import { interpolate, str } from '@indus/domain'
 import { getMasterPageContent } from '../../../lib/page-content'
 
 export const metadata: Metadata = {
-  title: 'Brands',
+  title: 'Hydraulic, hose & rigging brands we supply',
+  // It had no description, so it inherited the storefront default — the same
+  // snippet as every other page without one.
+  description:
+    'Parker, Eaton, Manuli, Continental, Dixon, Sunpool and more — the hose, fitting, valve and rigging brands Indus Hydraulics stocks and cross-references, shipped from Dubai across the GCC.',
   // Self-canonical. Without it this page emitted no <link rel="canonical">
   // at all, which leaves Google to pick one — and it can pick a filtered,
   // parameterised or proxied variant instead.
   alternates: { canonical: '/brands' },
 }
 
-// Brand list is admin-curated and changes rarely; cache for 5 minutes.
-export const revalidate = 300
+// The brand list is admin-curated and changes rarely. A day, not five
+// minutes: brand saves now revalidate this path directly (admin/brands
+// actions), so the window is only a backstop, and a five-minute window cost
+// a background re-render every time a crawler arrived after it lapsed.
+export const revalidate = 86400
 
 export default async function BrandsPage() {
   const [brands, content] = await Promise.all([

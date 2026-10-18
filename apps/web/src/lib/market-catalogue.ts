@@ -3,9 +3,11 @@ import 'server-only'
 import { unstable_cache } from 'next/cache'
 import { db } from '@indus/db'
 import { STOREFRONT_TAGS } from './cache-tags'
+import { MARKET_OPERATIONS, img } from '@indus/domain'
 import { mediaUrl } from './media'
-import { WIDE_CARD_THRESHOLD, type CatalogueCluster } from '../components/markets/MarketCatalogueIndex'
-import type { MarketBrand } from '../components/markets/MarketIndustries'
+import { getMasterPageContent, getMasterPageContentFresh } from './page-content'
+import type { CatalogueCluster } from '../components/markets/MarketCatalogueIndex'
+import type { MarketBrand, MarketSectorImage } from '../components/markets/MarketIndustries'
 
 /**
  * The catalogue surface a market page links out to.
@@ -102,21 +104,9 @@ const loadClusters = unstable_cache(
         and it appears on all 126 market pages with no code change.
       */
       .filter((cluster) => cluster.subRanges.length > 0 || cluster.description)
-      /*
-        Widest clusters first — a STABLE partition, so the merchandising order
-        set in admin still decides everything within each group.
-
-        A cluster of twenty or more sub-ranges spans both grid columns, and the
-        card grid uses dense packing so single-column cards back-fill the gap a
-        wide card leaves. Both are right on their own and wrong together: with
-        the wide clusters in the middle of the sequence, dense flow moves cards
-        past each other and the numbered index reads 01, 03, 02 down the page.
-        Leading with them makes the visual order and the numbering agree, and
-        the dense flow then has nothing left to rearrange.
-      */
-      .sort((a, b) => Number(b.subRanges.length >= WIDE_CARD_THRESHOLD) - Number(a.subRanges.length >= WIDE_CARD_THRESHOLD))
   },
-  ['market-catalogue-clusters'],
+  // v2: wide-cluster-first ordering dropped (2026-10) — admin order now rules.
+  ['market-catalogue-clusters-v2'],
   { revalidate: 3600, tags: [STOREFRONT_TAGS.categories] }
 )
 
@@ -140,6 +130,59 @@ const loadBrands = unstable_cache(
   ['market-catalogue-brands'],
   { revalidate: 3600, tags: [STOREFRONT_TAGS.brands] }
 )
+
+/**
+ * Hero photographs for the six market sectors, keyed by sector slug.
+ *
+ * The sector slugs on a market record are the industry slugs (`oil-gas`,
+ * `marine`, `power`, `construction`, `steel`, `mining`), and each industry page
+ * has a hero photograph with written alt text. Reading them here means the
+ * sector cards on all 126 market pages show the same picture the card links
+ * to — and pick up a replacement the day an editor changes the industry hero,
+ * with no code change. A sector with no published industry or no hero keeps
+ * the labelled placeholder.
+ */
+const loadSectorImages = unstable_cache(
+  async (): Promise<Record<string, MarketSectorImage>> => {
+    const rows = await db.industry.findMany({
+      where: { isPublished: true, heroId: { not: null } },
+      select: { slug: true, name: true, hero: { select: { storagePath: true, alt: true } } },
+    })
+    const out: Record<string, MarketSectorImage> = {}
+    for (const row of rows) {
+      if (!row.hero) continue
+      out[row.slug] = { url: mediaUrl(row.hero.storagePath), alt: row.hero.alt ?? row.name }
+    }
+    return out
+  },
+  ['market-sector-images'],
+  { revalidate: 3600, tags: [STOREFRONT_TAGS.industries] }
+)
+
+export function marketSectorImages(): Promise<Record<string, MarketSectorImage>> {
+  return loadSectorImages()
+}
+
+/**
+ * The operations band's four photographs, keyed by `imageKey`.
+ *
+ * Picked once in Pages & Blocks (Export markets → Market page photographs)
+ * because the same four pictures serve every market page. `fresh` is for the
+ * admin preview, which must show the document as it stands rather than what
+ * the storefront cache still holds.
+ */
+export async function marketOperationsImages(
+  fresh = false,
+): Promise<Partial<Record<string, { url: string; alt: string }>>> {
+  const hub = fresh ? await getMasterPageContentFresh('markets') : await getMasterPageContent('markets')
+  const values = hub.values('market_photos')
+  const out: Partial<Record<string, { url: string; alt: string }>> = {}
+  for (const op of MARKET_OPERATIONS) {
+    const picked = img(values, op.imageKey)
+    if (picked?.url) out[op.imageKey] = { url: picked.url, alt: picked.alt ?? '' }
+  }
+  return out
+}
 
 export function marketCatalogueClusters(): Promise<CatalogueCluster[]> {
   return loadClusters()

@@ -919,6 +919,43 @@ const FORMS: BlockFormSpec[] = [
       ({ type: 'diagram', svg: '<svg viewBox="0 0 760 400"></svg>', caption: '', alt: '' }) as BlogBlockInput,
   },
   {
+    type: 'video',
+    label: 'Video',
+    purpose:
+      'A YouTube video — a crimping or coupling how-to, a site walk-through. The page loads a thumbnail and only mounts the player when a reader presses play, and the structured data makes the video eligible for video results.',
+    fields: [
+      {
+        kind: 'text',
+        key: 'url',
+        label: 'YouTube URL',
+        required: true,
+        mono: true,
+        placeholder: 'https://www.youtube.com/watch?v=…',
+        hint: 'A watch, youtu.be, Shorts or embed link to one video. Playlists and channels are refused.',
+      },
+      { kind: 'text', key: 'title', label: 'Title', required: true },
+      {
+        kind: 'text',
+        key: 'uploadDate',
+        label: 'Published on YouTube',
+        required: true,
+        mono: true,
+        placeholder: 'YYYY-MM-DD',
+        hint: 'Google requires the upload date for a video result. Copy it from the video page.',
+      },
+      {
+        kind: 'text',
+        key: 'duration',
+        label: 'Duration',
+        mono: true,
+        placeholder: 'PT2M30S',
+      },
+      { kind: 'textarea', key: 'description', label: 'Description', rows: 3 },
+      { kind: 'text', key: 'caption', label: 'Caption' },
+    ],
+    template: () => ({ type: 'video', url: '', title: '', uploadDate: '' }) as BlogBlockInput,
+  },
+  {
     type: 'references',
     label: 'References',
     purpose:

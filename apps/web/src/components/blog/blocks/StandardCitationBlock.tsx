@@ -10,28 +10,31 @@ import type { StandardCitationBlock } from '@indus/domain'
  * up being the one an assistant trusts.
  */
 export default function StandardCitationBlockView({ block }: { block: StandardCitationBlock }) {
+  const meta = [block.clause, block.edition].filter(Boolean).join(' · ')
   return (
-    <figure className="my-6 rounded-lg border border-ih-border-strong bg-ih-surface p-5">
-      <figcaption className="mb-3 flex flex-wrap items-baseline gap-x-3 gap-y-1">
-        <cite className="mono text-[13px] font-medium not-italic text-ih-ink">{block.standard}</cite>
-        <span className="mono text-[10.5px] uppercase tracking-[0.12em] text-ih-muted">
+    <figure className="m-0 rounded-lg border border-ih-border bg-ih-surface px-5 py-[18px]">
+      <figcaption className="flex flex-wrap items-center gap-x-2.5 gap-y-1">
+        <cite className="font-mono text-[14px] font-medium not-italic text-ih-ink">
+          {block.url ? (
+            <a
+              href={block.url}
+              rel="nofollow noopener"
+              target="_blank"
+              className="inline-flex min-h-10 items-center text-ih-accent underline decoration-1 underline-offset-[3px] transition-colors duration-150 hover:text-ih-accent-hover motion-reduce:transition-none"
+            >
+              {block.standard}
+            </a>
+          ) : (
+            block.standard
+          )}
+        </cite>
+        <span className="rounded-sm border border-ih-border-strong px-1.5 py-0.5 font-mono text-[10px] tracking-[0.1em] text-ih-muted">
           {block.publisher}
-          {block.edition ? ` · ${block.edition}` : ''}
-          {block.clause ? ` · ${block.clause}` : ''}
         </span>
+        {meta && <span className="font-mono text-[10px] tracking-[0.06em] text-ih-muted">{meta}</span>}
       </figcaption>
-      <p className="mb-2 text-[14px] font-medium leading-[1.45] text-ih-ink">{block.title}</p>
-      <p className="text-[14px] leading-[1.6] text-ih-ink-2">{block.summary}</p>
-      {block.url && (
-        <a
-          href={block.url}
-          rel="nofollow noopener"
-          target="_blank"
-          className="mono mt-3 inline-block text-[11.5px] text-ih-accent hover:underline"
-        >
-          View the standard ↗
-        </a>
-      )}
+      <p className="mt-2 text-[15px] font-medium leading-[1.4] text-ih-ink">{block.title}</p>
+      <p className="mt-1.5 text-[14px] leading-[1.6] text-ih-ink-2">{block.summary}</p>
     </figure>
   )
 }

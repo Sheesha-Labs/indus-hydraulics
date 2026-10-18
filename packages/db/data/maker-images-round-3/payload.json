@@ -1,0 +1,271 @@
+{
+  "imageDir": "~/Documents/Indus Supplier Research/Image Research",
+  "note": "Third pass, 2026-10-08: representative product images from Chinese manufacturers' own websites (Jiangsu Deenpu, Camtop Shanghai, Shanghai PME, Xiamen Landee, Suzhou Stard) for authorised-make listings with no maker image. Ayush: these manufacturers accept traders reusing their content. Only unbranded images (no logo, watermark or legible maker stamp) whose type and end connection match the listing; images whose cast markings contradict the listing were rejected.",
+  "captionNote": ", shows the product type, not the listed maker's own photo",
+  "listings": [
+    {
+      "sku": "IH-WH-WSA-API-15K-ANSON",
+      "title": "Wellhead Studded Adapter, API 6BX 15K, Standard Service",
+      "make": "Representative",
+      "images": [
+        {
+          "file": "Round 3 China/jpg/studded-adapter-1.jpg",
+          "sourcePage": "https://www.camtop-oilfieldtools.com/product/tubing-head-adapter/"
+        }
+      ]
+    },
+    {
+      "sku": "IH-FI-DH-1502-15K-STD-CAMERON",
+      "title": "Data Header (Pressure / Temperature Manifold), 1502 Series, 15,000 psi, Standard Service",
+      "make": "Representative",
+      "images": [
+        {
+          "file": "Round 3 China/jpg/data-header-1.jpg",
+          "sourcePage": "https://www.deenpu-machinery.com/product/api-6a-data-header/"
+        }
+      ]
+    },
+    {
+      "sku": "IH-FI-FL-WN-5K-STREAMFLO",
+      "title": "Weld-Neck Flange, API 6B 5K, Standard Service",
+      "make": "Representative",
+      "images": [
+        {
+          "file": "Round 3 China/jpg/weld-neck-flange-1.jpg",
+          "sourcePage": "https://www.deenpu-machinery.com/product/companion-flange/"
+        }
+      ]
+    },
+    {
+      "sku": "IH-FI-FL-WN-10K-CAMERON",
+      "title": "Weld-Neck Flange, API 6BX 10K, Standard Service",
+      "make": "Representative",
+      "images": [
+        {
+          "file": "Round 3 China/jpg/weld-neck-flange-1.jpg",
+          "sourcePage": "https://www.deenpu-machinery.com/product/companion-flange/"
+        }
+      ]
+    },
+    {
+      "sku": "IH-FI-FL-WN-15K-FMC",
+      "title": "Weld-Neck Flange, API 6BX 15K, Standard Service",
+      "make": "Representative",
+      "images": [
+        {
+          "file": "Round 3 China/jpg/weld-neck-flange-1.jpg",
+          "sourcePage": "https://www.deenpu-machinery.com/product/companion-flange/"
+        }
+      ]
+    },
+    {
+      "sku": "IH-FI-EL-602-90LR-MF-6K-SOUR-ANSON",
+      "title": "Elbow LR 90°, 602 Series M × F (Integral), 6,000 psi, Sour Service",
+      "make": "Representative",
+      "images": [
+        {
+          "file": "Round 3 China/jpg/lr-elbow-1.jpg",
+          "sourcePage": "https://www.deenpu-machinery.com/"
+        }
+      ]
+    },
+    {
+      "sku": "IH-FI-FL-BLIND-5K-CAMERON",
+      "title": "Blind Flange, API 6B 5K, Standard Service",
+      "make": "Representative",
+      "images": [
+        {
+          "file": "Round 3 China/jpg/blind-flange-2.jpg",
+          "sourcePage": "https://www.camtop-oilfieldtools.com/product/blind-flange/"
+        }
+      ]
+    },
+    {
+      "sku": "IH-FI-FL-COMP-5K-CAMERON",
+      "title": "Companion Flange, API 6B 5K, Standard Service",
+      "make": "Representative",
+      "images": [
+        {
+          "file": "Round 3 China/jpg/companion-flange-1.jpg",
+          "sourcePage": "https://www.deenpu-machinery.com/product/threaded-flanges-weld-neck-flanges-as-per-api-6a/"
+        }
+      ]
+    },
+    {
+      "sku": "IH-FI-FL-COMP-15K-FMC",
+      "title": "Companion Flange, API 6BX 15K, Standard Service",
+      "make": "Representative",
+      "images": [
+        {
+          "file": "Round 3 China/jpg/companion-flange-1.jpg",
+          "sourcePage": "https://www.deenpu-machinery.com/product/threaded-flanges-weld-neck-flanges-as-per-api-6a/"
+        }
+      ]
+    },
+    {
+      "sku": "IH-FI-AF-15K-1502-CAMERON",
+      "title": "Adapter Flange, API 6BX 15K × 1502 Female Weco, Standard Service",
+      "make": "Representative",
+      "images": [
+        {
+          "file": "Round 3 China/jpg/adapter-flange-2.jpg",
+          "sourcePage": "https://www.deenpu-machinery.com/"
+        }
+      ]
+    },
+    {
+      "sku": "IH-FI-AF-10K-1502-FMC",
+      "title": "Adapter Flange, API 6BX 10K × 1502 Female Weco, Standard Service",
+      "make": "Representative",
+      "images": [
+        {
+          "file": "Round 3 China/jpg/adapter-flange-2.jpg",
+          "sourcePage": "https://www.deenpu-machinery.com/"
+        }
+      ]
+    },
+    {
+      "sku": "IH-FI-DSA-API-5K-3K-CAMERON",
+      "title": "Double Studded Adapter, API 6B 5K × 3K, Standard Service",
+      "make": "Representative",
+      "images": [
+        {
+          "file": "Round 3 China/Flow iron and wellhead/double-studded-adapter-1.jpg",
+          "sourcePage": "https://www.deenpu-machinery.com/double-studded-adapter-dsa/"
+        }
+      ]
+    },
+    {
+      "sku": "IH-FI-SF-API-10K15K-CAMERON",
+      "title": "Studded Cross / Tee Fitting, API 6BX 10K & 15K, Standard Service",
+      "make": "Representative",
+      "images": [
+        {
+          "file": "Round 3 China/jpg/studded-cross-1.jpg",
+          "sourcePage": "https://www.deenpu-machinery.com/product/tee-cross/"
+        }
+      ]
+    },
+    {
+      "sku": "IH-FI-FL-BLIND-10K-FMC",
+      "title": "Blind Flange, API 6BX 10K, Standard Service",
+      "make": "Representative",
+      "images": [
+        {
+          "file": "Round 3 China/jpg/blind-flange-1.jpg",
+          "sourcePage": "https://www.deenpu-machinery.com/product/companion-flange/"
+        }
+      ]
+    },
+    {
+      "sku": "IH-FI-FL-BLIND-15K-SOUR-FMC",
+      "title": "Blind Flange, API 6BX 15K, Sour Service",
+      "make": "Representative",
+      "images": [
+        {
+          "file": "Round 3 China/jpg/blind-flange-1.jpg",
+          "sourcePage": "https://www.deenpu-machinery.com/product/companion-flange/"
+        }
+      ]
+    },
+    {
+      "sku": "IH-FI-FL-BLIND-15K-NOV",
+      "title": "Blind Flange, API 6BX 15K, Standard Service",
+      "make": "Representative",
+      "images": [
+        {
+          "file": "Round 3 China/jpg/blind-flange-1.jpg",
+          "sourcePage": "https://www.deenpu-machinery.com/product/companion-flange/"
+        }
+      ]
+    },
+    {
+      "sku": "IH-FI-BC-1502-MM-15K-STD-FMC",
+      "title": "Blanking Cap, 1502 Series Male, 15,000 psi, Standard Service",
+      "make": "Representative",
+      "images": [
+        {
+          "file": "Round 3 China/Flow iron and wellhead/blanking-cap-1.jpg",
+          "sourcePage": "https://pmeindustrial.com/plug-union-male-female-test-plug-blanking-blind/"
+        }
+      ]
+    },
+    {
+      "sku": "IH-OFV-GLOBE-2-300RF-740-SOUR-FMC",
+      "title": "Globe Valve, 2 in × 300# RF, 740 psi, Sour Service",
+      "make": "Representative",
+      "images": [
+        {
+          "file": "Round 3 China/Valves/globe-valve-1.jpg",
+          "sourcePage": "https://www.landeevalve.com/cast-steel-globe-valve.html"
+        }
+      ]
+    },
+    {
+      "sku": "IH-OFV-PRV-SPRING-2-1502MF-10K-SOUR-CAMERON",
+      "title": "Pressure Relief Valve, Spring-Loaded, 2 in × 1502 M×F, 10,000 psi, Sour Service",
+      "make": "Representative",
+      "images": [
+        {
+          "file": "Round 3 China/jpg/relief-valve-union-1.jpg",
+          "sourcePage": "https://pmeindustrial.com/pressure-relief-valve/"
+        }
+      ]
+    },
+    {
+      "sku": "IH-OFV-PRV-SPRING-3-1502MF-15K-STD-WOM",
+      "title": "Pressure Relief Valve, Spring-Loaded, 3 in × 1502 M×F, 15,000 psi, Standard Service",
+      "make": "Representative",
+      "images": [
+        {
+          "file": "Round 3 China/jpg/relief-valve-union-1.jpg",
+          "sourcePage": "https://pmeindustrial.com/pressure-relief-valve/"
+        }
+      ]
+    },
+    {
+      "sku": "IH-OFV-PRV-SPRING-318-5M-FLG-5K-SOUR-STREAMFLO",
+      "title": "Pressure Relief Valve, Spring-Loaded, 3-1/8 in × 5M Flanged, 5,000 psi, Sour Service",
+      "make": "Representative",
+      "images": [
+        {
+          "file": "Round 3 China/Valves/relief-valve-flanged-1.jpg",
+          "sourcePage": "https://www.landeevalve.com/safety-valve.html"
+        }
+      ]
+    },
+    {
+      "sku": "IH-OFV-CHOKE-ADJ-H2-3-602FM-6K-SOUR-ANSON",
+      "title": "Adjustable Manual Choke, H2 Trim, 3 in × 602 F×M, 3 in Nom / 2 in Max Bean, 6,000 psi, Sour Service",
+      "make": "Representative",
+      "images": [
+        {
+          "file": "Round 3 China/jpg/adjustable-choke-1.jpg",
+          "sourcePage": "https://pmeindustrial.com/adjustable-choke/"
+        }
+      ]
+    },
+    {
+      "sku": "IH-OFV-CHOKE-ADJ-N60-2-602FM-6K-SOUR-ANSON",
+      "title": "Adjustable Manual Choke, N-60 Trim, 2 in × 602 F×M, 3/4 in Max Bean, 6,000 psi, Sour Service",
+      "make": "Representative",
+      "images": [
+        {
+          "file": "Round 3 China/jpg/adjustable-choke-1.jpg",
+          "sourcePage": "https://pmeindustrial.com/adjustable-choke/"
+        }
+      ]
+    },
+    {
+      "sku": "IH-OFV-ACC-GEAR-OPERATOR-3IN-WOM",
+      "title": "Gear Operator, 3 in Valve, 8:1 Ratio Worm-Gear, Manual Handwheel",
+      "make": "Representative",
+      "images": [
+        {
+          "file": "Round 3 China/Valves/gear-operator-1.jpg",
+          "sourcePage": "https://www.stard-gears.com/valve-gearbox/"
+        }
+      ]
+    }
+  ]
+}

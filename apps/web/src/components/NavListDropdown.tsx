@@ -9,6 +9,12 @@ interface NavListItem {
 }
 
 interface Props {
+  /**
+   * Closed. The dropdown stays mounted and is hidden rather than unmounted, so
+   * its links are in the server-rendered HTML for crawlers — see the megamenu
+   * note in SiteHeaderClient.
+   */
+  hidden?: boolean
   items: NavListItem[]
   hrefPrefix: string
   viewAllHref: string
@@ -31,6 +37,7 @@ interface Props {
 // the `View all` CTA at the bottom of the dropdown remains the canonical
 // "go to brands page" link. Limit removed.
 export default function NavListDropdown({
+  hidden = false,
   items,
   hrefPrefix,
   viewAllHref,
@@ -50,6 +57,7 @@ export default function NavListDropdown({
 
   return (
     <div
+      hidden={hidden}
       className="absolute left-0 right-0 bg-ih-surface border-t border-ih-border"
       style={{ top: '100%', boxShadow: '0 24px 64px rgba(33,28,16,0.12)', zIndex: 50 }}
       onMouseEnter={onMouseEnter}

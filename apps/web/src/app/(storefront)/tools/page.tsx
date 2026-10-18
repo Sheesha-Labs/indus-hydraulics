@@ -54,7 +54,7 @@ export default function ToolsIndexPage() {
         </h1>
         <p className="text-[17px] leading-[1.55] text-ih-muted">{DESCRIPTION}</p>
       </header>
-      <div className="grid grid-cols-1 gap-4 pb-20 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="grid grid-cols-1 gap-4 pb-8 sm:grid-cols-2 lg:grid-cols-3">
         {TOOLS.map((tool) => (
           <Link
             key={tool.href}
@@ -68,6 +68,13 @@ export default function ToolsIndexPage() {
           </Link>
         ))}
       </div>
+      <p className="pb-20 text-[14px] leading-[1.6] text-ih-muted">
+        Thread dimensions, crimp diameters and fitting pressure ratings are in the{' '}
+        <Link href="/resources" className="text-ih-accent hover:underline">
+          reference library
+        </Link>
+        .
+      </p>
     </>
   )
 }

@@ -166,6 +166,7 @@ describe('catalogue root categories', () => {
     'hydraulic-pumps',
     'cylinders',
     'lifting-rigging-equipment-uae',
+    'lay-flat-hoses',
   ]
 
   it('has a profile for every published root category', () => {

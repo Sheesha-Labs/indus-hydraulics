@@ -8,8 +8,10 @@ import {
   estimateReadingMinutes,
   blogReferencedSkus,
   blogTocEntries,
+  blogVideoBlocks,
   pageLinkHref,
   parseBlogBlocks,
+  youtubeVideoId,
   type BlogBlocks,
 } from './blog-blocks'
 
@@ -487,5 +489,71 @@ describe('references block', () => {
   it('is not counted as reading time — a bibliography is scanned, not read', () => {
     const blocks = parseBlogBlocks([references]).blocks
     expect(estimateReadingMinutes(blocks)).toBe(estimateReadingMinutes([]))
+  })
+})
+
+describe('video', () => {
+  const ok = {
+    type: 'video' as const,
+    url: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+    title: 'Crimping a 2SN hose',
+    uploadDate: '2026-09-01',
+  }
+
+  it('accepts a YouTube video with the fields Google requires', () => {
+    expect(BlogBlockSchema.safeParse(ok).success).toBe(true)
+    expect(
+      BlogBlockSchema.safeParse({ ...ok, duration: 'PT2M30S', caption: 'Bench crimp, 2SN -08.' })
+        .success,
+    ).toBe(true)
+  })
+
+  it('refuses a non-YouTube URL, a missing upload date and a malformed duration', () => {
+    expect(BlogBlockSchema.safeParse({ ...ok, url: 'https://vimeo.com/123' }).success).toBe(false)
+    expect(BlogBlockSchema.safeParse({ ...ok, uploadDate: undefined }).success).toBe(false)
+    expect(BlogBlockSchema.safeParse({ ...ok, uploadDate: '1 Sep 2026' }).success).toBe(false)
+    expect(BlogBlockSchema.safeParse({ ...ok, duration: '2:30' }).success).toBe(false)
+    expect(BlogBlockSchema.safeParse({ ...ok, duration: 'PT' }).success).toBe(false)
+  })
+
+  it('is read back for the structured data in page order', () => {
+    const { blocks } = parseBlogBlocks([
+      { type: 'paragraph', html: 'x' },
+      ok,
+      { ...ok, title: 'Second' },
+    ])
+    expect(blogVideoBlocks(blocks).map((v) => v.title)).toEqual(['Crimping a 2SN hose', 'Second'])
+  })
+})
+
+describe('youtubeVideoId', () => {
+  it('reads every URL shape YouTube hands out', () => {
+    const id = 'dQw4w9WgXcQ'
+    for (const url of [
+      `https://www.youtube.com/watch?v=${id}`,
+      `https://youtube.com/watch?v=${id}&t=42s`,
+      `https://m.youtube.com/watch?v=${id}`,
+      `https://youtu.be/${id}`,
+      `https://youtu.be/${id}?si=abc`,
+      `https://www.youtube.com/shorts/${id}`,
+      `https://www.youtube.com/embed/${id}`,
+      `https://www.youtube-nocookie.com/embed/${id}`,
+      `https://www.youtube.com/live/${id}`,
+    ]) {
+      expect(youtubeVideoId(url)).toBe(id)
+    }
+  })
+
+  it('returns null for anything that is not a single video', () => {
+    for (const url of [
+      'https://www.youtube.com/playlist?list=PL123',
+      'https://www.youtube.com/@indus',
+      'https://vimeo.com/123456',
+      'https://www.youtube.com/watch?v=short',
+      'javascript:alert(1)',
+      'not a url',
+    ]) {
+      expect(youtubeVideoId(url)).toBeNull()
+    }
   })
 })

@@ -3295,18 +3295,18 @@
    "title": "Polyester Round Sling — Endless",
    "category": "synthetic-slings",
    "focusKeyword": "polyester round sling",
-   "descriptionShort": "Polyester Round Sling (EN 1492), in 40 sizes, WLL 1 to 8 t. Indus part numbers, manufacturer's test certificate.",
-   "descriptionLong": "<p>Polyester round slings, flat webbing slings and the hardware made for them. Made to EN 1492. 100% high tenacity polyester of our sleeve and inner core.</p><h3>Sizes and ratings</h3><p>40 sizes. Working load limit 1 to 8 t. Every size has its own Indus part number in the table below, with the loads in the unit the manufacturer rates them in.</p><h3>Choosing a size</h3><p>Choose on WLL for the hitch you will use, protect the sling from sharp edges and check the label and cover before every lift.</p><h3>Ordering</h3><p>Quote the Indus part number from the size table, or send the size and rating you need. Each consignment ships with the manufacturer's test certificate; say on the RFQ if your site needs anything more.</p>",
+   "descriptionShort": "Polyester Round Sling (EN 1492), in 44 sizes, WLL 1 to 20 t. Indus part numbers, manufacturer's test certificate.",
+   "descriptionLong": "<p>Polyester round slings, flat webbing slings and the hardware made for them. Made to EN 1492. 100% high tenacity polyester of our sleeve and inner core.</p><h3>Sizes and ratings</h3><p>44 sizes. Working load limit 1 to 20 t. The 10, 12, 15 and 20 t slings are made to the length you need. Every size has its own Indus part number in the table below, with the loads in the unit the manufacturer rates them in.</p><h3>Choosing a size</h3><p>Choose on WLL for the hitch you will use, protect the sling from sharp edges and check the label and cover before every lift.</p><h3>Ordering</h3><p>Quote the Indus part number from the size table, or send the size and rating you need. Each consignment ships with the manufacturer's test certificate; say on the RFQ if your site needs anything more.</p>",
    "seoTitle": "Polyester Round Sling Endless",
-   "seoDescription": "Polyester Round Sling (EN 1492): 40 sizes, WLL 1 to 8 t. Indus part numbers. Request a quote.",
+   "seoDescription": "Polyester Round Sling (EN 1492): 44 sizes, WLL 1 to 20 t. Indus part numbers. Request a quote.",
    "faqs": [
     {
      "question": "What sizes does the polyester round sling come in?",
-     "answer": "40 sizes. The size table lists each one with its Indus part number, ratings and dimensions."
+     "answer": "44 sizes. The size table lists each one with its Indus part number, ratings and dimensions."
     },
     {
      "question": "What is the working load limit?",
-     "answer": "1 to 8 t, depending on size, as the manufacturer rates it. The WLL is the most the part may carry in service; proof and breaking loads are test figures and never working limits."
+     "answer": "1 to 20 t, depending on size, as the manufacturer rates it. The WLL is the most the part may carry in service; proof and breaking loads are test figures and never working limits."
     },
     {
      "question": "Round sling or webbing sling?",
@@ -3343,7 +3343,7 @@
     {
      "group": "Performance",
      "label": "Working load limit",
-     "value": "1 to 8 t",
+     "value": "1 to 20 t",
      "unit": null,
      "position": 2,
      "isFilterable": true,
@@ -3361,7 +3361,7 @@
     {
      "group": "Identification",
      "label": "Sizes",
-     "value": "40",
+     "value": "44",
      "unit": null,
      "position": 4,
      "isFilterable": false,
@@ -3391,7 +3391,10 @@
     "4 Ton Round Sling–Gray Endless Lifting Sling 4000KG",
     "5 Ton Round Sling–Red Endless Lifting Sling 5000KG",
     "6 Ton Round Sling–Brown Endless Lifting Sling 6000KG",
-    "8 Ton Round Sling–Blue Endless Lifting Sling 8000KG"
+    "8 Ton Round Sling–Blue Endless Lifting Sling 8000KG",
+    "12 Ton Round Sling",
+    "15 Ton Round Sling",
+    "20 Ton Round Sling"
    ],
    "images": [
     {
@@ -3867,6 +3870,42 @@
       "wllT": 8.0,
       "weightKg": 16.6
      }
+    },
+    {
+     "partNumber": "IH-LR-SY-PRSE-10T",
+     "position": 40,
+     "dimensions": {
+      "size": "10 t, length to order",
+      "wllT": 10,
+      "colour": "Orange"
+     }
+    },
+    {
+     "partNumber": "IH-LR-SY-PRSE-12T",
+     "position": 41,
+     "dimensions": {
+      "size": "12 t, length to order",
+      "wllT": 12,
+      "colour": "Orange"
+     }
+    },
+    {
+     "partNumber": "IH-LR-SY-PRSE-15T",
+     "position": 42,
+     "dimensions": {
+      "size": "15 t, length to order",
+      "wllT": 15,
+      "colour": "Orange"
+     }
+    },
+    {
+     "partNumber": "IH-LR-SY-PRSE-20T",
+     "position": 43,
+     "dimensions": {
+      "size": "20 t, length to order",
+      "wllT": 20,
+      "colour": "Orange"
+     }
     }
    ],
    "crossReferences": []
@@ -3877,18 +3916,18 @@
    "title": "Polyester Flat Webbing Sling — Eye and Eye",
    "category": "synthetic-slings",
    "focusKeyword": "polyester flat webbing sling",
-   "descriptionShort": "Polyester Flat Webbing Sling (EN 1492-1 / ASME B30.9), in 42 sizes, WLL 1 to 10 t. Indus part numbers, manufacturer's test certificate.",
-   "descriptionLong": "<p>Polyester round slings, flat webbing slings and the hardware made for them. Made to EN 1492-1 / ASME B30.9. Polyester construction.</p><h3>Sizes and ratings</h3><p>42 sizes. Working load limit 1 to 10 t. Every size has its own Indus part number in the table below, with the loads in the unit the manufacturer rates them in.</p><h3>Choosing a size</h3><p>Choose on WLL for the hitch you will use, protect the sling from sharp edges and check the label and cover before every lift.</p><h3>Ordering</h3><p>Quote the Indus part number from the size table, or send the size and rating you need. Each consignment ships with the manufacturer's test certificate; say on the RFQ if your site needs anything more.</p>",
+   "descriptionShort": "Polyester Flat Webbing Sling (EN 1492-1 / ASME B30.9), in 43 sizes, WLL 1 to 12 t. Indus part numbers, manufacturer's test certificate.",
+   "descriptionLong": "<p>Polyester round slings, flat webbing slings and the hardware made for them. Made to EN 1492-1 / ASME B30.9. Polyester construction.</p><h3>Sizes and ratings</h3><p>43 sizes. Working load limit 1 to 12 t. The 12 t sling is made to the length you need. Every size has its own Indus part number in the table below, with the loads in the unit the manufacturer rates them in.</p><h3>Choosing a size</h3><p>Choose on WLL for the hitch you will use, protect the sling from sharp edges and check the label and cover before every lift.</p><h3>Ordering</h3><p>Quote the Indus part number from the size table, or send the size and rating you need. Each consignment ships with the manufacturer's test certificate; say on the RFQ if your site needs anything more.</p>",
    "seoTitle": "Polyester Flat Webbing Sling Eye and Eye",
-   "seoDescription": "Polyester Flat Webbing Sling (EN 1492-1 / ASME B30.9): 42 sizes, WLL 1 to 10 t. Indus part numbers. Request a quote.",
+   "seoDescription": "Polyester Flat Webbing Sling (EN 1492-1 / ASME B30.9): 43 sizes, WLL 1 to 12 t. Indus part numbers. Request a quote.",
    "faqs": [
     {
      "question": "What sizes does the polyester flat webbing sling come in?",
-     "answer": "42 sizes. The size table lists each one with its Indus part number, ratings and dimensions."
+     "answer": "43 sizes. The size table lists each one with its Indus part number, ratings and dimensions."
     },
     {
      "question": "What is the working load limit?",
-     "answer": "1 to 10 t, depending on size, as the manufacturer rates it. The WLL is the most the part may carry in service; proof and breaking loads are test figures and never working limits."
+     "answer": "1 to 12 t, depending on size, as the manufacturer rates it. The WLL is the most the part may carry in service; proof and breaking loads are test figures and never working limits."
     },
     {
      "question": "Round sling or webbing sling?",
@@ -3925,7 +3964,7 @@
     {
      "group": "Performance",
      "label": "Working load limit",
-     "value": "1 to 10 t",
+     "value": "1 to 12 t",
      "unit": null,
      "position": 2,
      "isFilterable": true,
@@ -3943,7 +3982,7 @@
     {
      "group": "Identification",
      "label": "Sizes",
-     "value": "42",
+     "value": "43",
      "unit": null,
      "position": 4,
      "isFilterable": false,
@@ -3974,7 +4013,8 @@
     "Flat Webbing Slings Polyester 5 Ton",
     "Flat Webbing Slings Polyester 6 Ton",
     "Flat Polyester Webbing Slings 8 Ton",
-    "Flat Polyester Webbing Slings 10 Ton"
+    "Flat Polyester Webbing Slings 10 Ton",
+    "Flat Polyester Webbing Slings 12 Ton"
    ],
    "images": [
     {
@@ -4459,6 +4499,15 @@
       "lengthM": 10.0,
       "wllT": 10.0,
       "weightKg": 19.4
+     }
+    },
+    {
+     "partNumber": "IH-LR-SY-PFWSEE-12T",
+     "position": 42,
+     "dimensions": {
+      "size": "12 t, length to order",
+      "wllT": 12,
+      "colour": "Orange"
      }
     }
    ],
@@ -24815,18 +24864,18 @@
    "title": "Die-Cast Zinc Turnbuckle",
    "category": "turnbuckles-rigging-screws",
    "focusKeyword": "die-cast zinc turnbuckle",
-   "descriptionShort": "Die-Cast Zinc Turnbuckle, in 27 sizes. Load rating on request. Indus part numbers.",
-   "descriptionLong": "<p>Turnbuckles and rigging screws tension guy lines, stays and tie-downs and take up slack. Zinc alloy, zinc plated.</p><h3>Sizes</h3><p>27 sizes. Available as: eye and eye, hook and eye, RS, hook and eye, ES, hook and hook, RS. Every size has its own Indus part number in the table below.</p><p><strong>No load rating is published for this range.</strong> Tell us the duty and we will confirm the rating with the quotation. Do not use it to lift until you have that rating in writing.</p><p>The lettered dimensions in the table refer to the dimension drawing for each type, shown with this product.</p><h3>Manufacturer's data</h3><ul><li>Die cast.</li></ul><h3>Choosing a size</h3><p>Lock the body once tensioned so it cannot back off.</p><h3>Ordering</h3><p>Quote the Indus part number from the size table, or send the size and rating you need.</p>",
+   "descriptionShort": "Die-Cast Zinc Turnbuckle, in 27 sizes, for light-duty tensioning only — not for lifting. Indus part numbers.",
+   "descriptionLong": "<p>A light-duty turnbuckle for taking up slack and tensioning fences, gates, signs, shade cloth and light stays. Zinc alloy, die cast, zinc plated.</p><h3>Sizes</h3><p>27 sizes. Available as: eye and eye, hook and eye, RS, hook and eye, ES, hook and hook, RS. Every size has its own Indus part number in the table below.</p><p><strong>Not for lifting.</strong> Die-cast zinc turnbuckles are for light-duty tensioning — fences, gates, signs, shade cloth, light stays and tie-downs. No load rating is published for this range: never use it for lifting, overhead loads or safety-critical tensioning. For rated turnbuckles, see the <a href=\"/p/drop-forged-turnbuckle-us-type\">drop-forged turnbuckle</a> and <a href=\"/p/din-1480-turnbuckle\">DIN 1480 turnbuckle</a>.</p><p>The lettered dimensions in the table refer to the dimension drawing for each type, shown with this product.</p><h3>Manufacturer's data</h3><ul><li>Die cast.</li></ul><h3>Choosing a size</h3><p>Lock the body once tensioned so it cannot back off.</p><h3>Ordering</h3><p>Quote the Indus part number from the size table, or send the size and end fittings you need.</p>",
    "seoTitle": "Die-Cast Zinc Turnbuckle",
-   "seoDescription": "Die-Cast Zinc Turnbuckle: 27 sizes. Indus part numbers. Request a quote.",
+   "seoDescription": "Die-cast zinc turnbuckle in 27 sizes for light-duty tensioning — fences, gates, signs and light stays. Not for lifting. Indus part numbers.",
    "faqs": [
     {
      "question": "What sizes does the die-cast zinc turnbuckle come in?",
      "answer": "27 sizes. The size table lists each one with its Indus part number and dimensions."
     },
     {
-     "question": "Why do hook-end turnbuckles have a lower WLL?",
-     "answer": "The hook is the weaker end fitting, so a turnbuckle with hook ends is rated below the same body with eye or jaw ends. The US turnbuckle table gives both ratings."
+     "question": "Can die-cast zinc turnbuckles be used for lifting?",
+     "answer": "No. They are for light-duty tensioning such as fences, gates, signs and light stays, and no load rating is published. For lifting-adjacent or rated duty use a drop-forged or DIN 1480 turnbuckle, chosen on its rated load for the end fittings you need."
     }
    ],
    "specs": [

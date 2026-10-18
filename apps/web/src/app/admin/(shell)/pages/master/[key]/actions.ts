@@ -21,6 +21,7 @@ import {
 } from '@indus/domain'
 import { auth } from '../../../../../../lib/admin-auth'
 import { invalidatePageContent } from '../../../../../../lib/cache-tags'
+import { notifyIndexNow } from '../../../../../../lib/indexnow'
 import { ROLES, requireRole } from '../../../../../../lib/rbac'
 import { sanitizeBlogProseHtml } from '../../../../../../lib/blog-prose-html'
 
@@ -88,6 +89,7 @@ async function persist(
   // are dynamic but their "edited" stamps come from the same row.
   invalidatePageContent()
   revalidatePath(def.path)
+  notifyIndexNow([def.path])
   revalidatePath(`/admin/pages/master/${pageKey}`)
   revalidatePath('/admin/pages')
   return { status: 'ok', message: 'Saved.' }

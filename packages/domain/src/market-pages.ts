@@ -309,21 +309,25 @@ export const MARKET_ORDER_STEPS = [
 export const MARKET_OPERATIONS = [
   {
     label: 'Stock',
+    imageKey: 'stock_image',
     caption: 'Stock held in Dubai, not drop-shipped from a factory queue.',
     shot: 'Dubai warehouse — hose and fittings racking',
   },
   {
     label: 'Assembly',
+    imageKey: 'assembly_image',
     caption: 'Assemblies crimped and pressure-tested before they are packed.',
     shot: 'Crimping and pressure-test bay, tagged assemblies',
   },
   {
     label: 'Documents',
+    imageKey: 'documents_image',
     caption: 'Conformity set for {market} prepared while the order is picked.',
     shot: 'Conformity dossier, printed set on the desk',
   },
   {
     label: 'Dispatch',
+    imageKey: 'dispatch_image',
     caption: 'One consignment, one set of documents, tracking on dispatch.',
     shot: 'Loaded trailer at the yard gate',
   },

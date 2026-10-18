@@ -1,0 +1,707 @@
+{
+ "categories": [
+  {
+   "slug": "lifting-rigging-equipment-uae",
+   "intro": "Lifting and rigging equipment is the hardware between a crane, hoist or anchor point and the load: shackles, hooks, alloy chain, wire rope, slings, blocks and the links and fittings that join them. Indus supplies more than 850 lifting and rigging parts from Dubai, each under an IH-LR part number with the working load limit (WLL) the manufacturer rates it to, and every consignment ships with the manufacturer's test certificate to sites across the UAE, the GCC and export markets.",
+   "guidance": null,
+   "standards": null,
+   "faq": [
+    {
+     "q": "What is the difference between WLL, SWL and breaking load?",
+     "a": "WLL — working load limit — is the most the manufacturer rates a part to carry in service. SWL, safe working load, is the older term and is sometimes set lower for a particular installation. The minimum breaking load is what the part withstood in test, several times its WLL, and it is never a working figure."
+    },
+    {
+     "q": "Can Grade 30, 43 or 70 chain be used for lifting?",
+     "a": "No. Proof coil (Grade 30), high test (Grade 43) and transport (Grade 70) chain are made for tie-down, towing and general duty. Overhead lifting with chain calls for alloy chain — Grade 80 or Grade 100 — with fittings of the same grade."
+    },
+    {
+     "q": "Do the parts come with test certificates?",
+     "a": "Yes. Each consignment ships with the manufacturer's test certificate. If your site needs more — third-party certification or witnessed proof testing — say so on the RFQ and we will confirm what we can arrange."
+    },
+    {
+     "q": "How do I read an Indus lifting part number?",
+     "a": "IH-LR, then the family code, then the size. Inch sizes are written in hundredths of an inch (075 is 3/4″, 025X200 is 1/4″ × 2″), metric sizes in millimetres (10MM, M16), and capacities in tonnes (0T5 is 0.5 t). A trailing -C or -A marks the carbon-steel and alloy-steel versions of the same hook or link."
+    },
+    {
+     "q": "How often must lifting equipment be thoroughly examined in the UAE?",
+     "a": "It depends on the emirate and on whether the item is lifting equipment or a lifting accessory. In Abu Dhabi, Code of Practice 34.0 requires a thorough examination of lifting equipment every 12 months, and of lifting accessories and equipment for lifting people every 6 months, by a QCC-approved third party. In Dubai, Municipality guideline GU48 requires certification every 12 months by an EIAC-accredited third party, and EIAC's own requirements set 6-month intervals for accessories, manual equipment and people-lifting equipment. Daily and pre-use checks by the user apply everywhere, and an accessory without a legible WLL marking comes out of service."
+    },
+    {
+     "q": "How much does the sling angle reduce what each leg can carry?",
+     "a": "The flatter the sling, the more load each leg carries. Measured from the horizontal, a leg at 90° carries its share of the load; at 60° it carries about 1.15 times that share, at 45° about 1.41 times and at 30° twice as much. Most lifting standards do not allow angles flatter than 30° from horizontal. Size every component — sling, shackle, master link and lifting point — for the tension in the worst-loaded leg, not for the weight of the load divided by the number of legs."
+    },
+    {
+     "q": "Grade 80 or Grade 100 alloy chain — which should I choose?",
+     "a": "Both are alloy lifting chain rated at a 4:1 design factor. Grade 100 carries about 25% more working load than Grade 80 of the same size, so a smaller, lighter sling does the same lift. Grade 80 is the more widely used and stocked, and manufacturers generally allow it at higher service temperatures than Grade 100 — check the derating table for hot work. Whichever grade you choose, the fittings must be rated for it: a Grade 80 fitting sets the capacity of a Grade 100 sling."
+    },
+    {
+     "q": "Can I send a full rigging list for one quotation?",
+     "a": "Yes. Send the list with the WLL, size, quantity and any certification each line needs, and we quote it line by line under IH-LR part numbers, with the manufacturer's rating against each item. Where a manufacturer does not publish a WLL for a part, or a line is ambiguous — a shackle pattern, a chain grade or a sling length — we say so on the quotation rather than guess."
+    }
+   ]
+  },
+  {
+   "slug": "hydraulic-hose-fittings-suppliers-uae",
+   "intro": "Hydraulic hose fittings connect a hose to the pump, valve, cylinder or adapter it serves, and the right one is set by two things: the hose construction it is crimped onto and the thread and seat of the port it meets. Indus supplies hydraulic hose, crimp fittings, ferrules and adapters from Dubai in BSP, JIC 37°, ORFS, NPT, JIS, metric 24° cone (DIN 2353 / ISO 8434-1) and SAE J518 flange forms, in carbon steel and SS316L, and makes up and pressure-tests assemblies to order.",
+   "guidance": null,
+   "standards": null,
+   "faq": [
+    {
+     "q": "Can you make up an assembly to match one that failed?",
+     "a": "Yes. Send the layline printing from the hose, a photo of each end square-on and one straight down the bore, and the length between the sealing faces. From that we identify the hose, both fittings and the ferrule, and make the assembly up to the same specification."
+    },
+    {
+     "q": "Do you supply hose and fittings separately for crimping on site?",
+     "a": "Yes — bulk hose, crimp fittings and ferrules are listed separately. Order the fitting and ferrule for the exact hose construction you are crimping: a ferrule made for one construction will not hold correctly on another."
+    },
+    {
+     "q": "What decides an assembly’s pressure rating?",
+     "a": "Its lowest-rated component. The hose has a working pressure from its construction standard, and each fitting and adapter has its own. A tapered NPT end, for example, can sit well below the rating of the hose it is crimped onto."
+    },
+    {
+     "q": "Do you ship outside the UAE?",
+     "a": "Yes — from Dubai across the GCC and to export markets further afield. Each export market has its own page on this site setting out the lane and the documents involved."
+    },
+    {
+     "q": "Braided or spiral hydraulic hose — which do I need?",
+     "a": "Wire-braid hose (EN 853 1SN and 2SN, or compact EN 857 1SC and 2SC) suits low to medium pressure and routes with tighter bends. Spiral hose (EN 856 4SP and 4SH, or SAE 100R12, R13 and R15) wraps four or six layers of wire and is made for high pressure and for circuits that pulse hard, such as excavator and press hydraulics. Pick by the working pressure at the bore you need and the impulse duty, then use fittings and ferrules made for that construction — braided and spiral hose do not take the same ones."
+    },
+    {
+     "q": "What does the printing on a hydraulic hose tell me?",
+     "a": "The layline names the manufacturer and hose series, the standard it is built to (for example EN 853 2SN or SAE 100R2AT), the bore as a dash size or DN, the maximum working pressure and a date or batch code. It is the fastest way to identify a hose for replacement: a photo of the layline usually tells us the hose, and therefore the fitting and ferrule, without cutting the assembly open."
+    },
+    {
+     "q": "Do you supply stainless steel hydraulic fittings?",
+     "a": "Yes. The SS316L range covers BSP, metric, JIC 37°, ORFS, NPT/NPSM and SAE fittings, standpipes, banjos and hydrowashing couplings, for offshore, marine, food and chemical service where carbon steel would corrode. Stainless and carbon-steel parts of the same thread form will connect, but pair stainless with stainless where corrosion is the reason for choosing it."
+    },
+    {
+     "q": "Can you match a Parker, Gates or Manuli part number?",
+     "a": "Usually, yes. Send the part number, or the fitting and the hose it goes on, and we identify the thread, seat, angle and hose series and offer the matching fitting from our range. A match is to the connection standard and the hose construction; it is not the other maker's own part, so for crimped ends we pair the fitting and ferrule with the hose we are supplying."
+    }
+   ]
+  },
+  {
+   "slug": "industrial-hose-suppliers-uae",
+   "intro": "Industrial hose carries water, air, fuel, chemicals, steam, food and abrasive material at low and medium pressure, and is chosen first by what flows through it. Indus supplies rubber, PVC, composite, PTFE and stainless steel corrugated metal hose from Dubai, with the couplings sites already run — cam and groove, Storz, Bauer, Guillemin, ground-joint steam couplings and universal air couplings — from Sunpool, Sealfast, Thorburn Flex, Dixon and other makers.",
+   "guidance": null,
+   "standards": null,
+   "faq": [
+    {
+     "q": "What do you need to quote an industrial hose?",
+     "a": "The medium (with its concentration and temperature for chemicals), the bore, the working pressure, whether it runs under suction, the length, and the coupling on each end. For chemical service name the chemical — compatibility depends on the tube compound, not on how the hose looks."
+    },
+    {
+     "q": "Which coupling should a new installation use?",
+     "a": "Usually the one already on site, so hoses stay interchangeable. Cam and groove is the general quick connect for low-to-medium-pressure transfer, Storz is common in fire service and dewatering, and steam lines need couplings and safety clamps made for steam."
+    },
+    {
+     "q": "Is a suction hose different from a delivery hose?",
+     "a": "Yes. A suction hose carries a rigid helix of steel wire or plastic so it does not collapse under vacuum; a delivery hose relies on internal pressure to hold its shape and flattens under suction. A suction-and-delivery hose is built to do both."
+    },
+    {
+     "q": "Rubber, PVC, composite or metal hose — what is the difference?",
+     "a": "Rubber hose is the general-purpose choice: flexible, tough and made in compounds for water, air, oil, chemicals, steam and abrasive material. PVC hose is light and economical for water, air and suction and delivery at moderate temperatures. Composite hose builds layers of polymer film and fabric between wire helices, giving a light, chemically resistant hose for fuel and chemical transfer. Stainless steel corrugated metal hose handles very high and cryogenic temperatures, will not let gas permeate and absorbs vibration, and PTFE-lined hose covers the most aggressive chemicals."
+    },
+    {
+     "q": "What safety factor do industrial hoses have?",
+     "a": "Most general-purpose industrial hose is rated with a minimum burst pressure three to four times its working pressure, depending on the standard it is built to. Steam hose is the exception: hose to EN ISO 6134 carries a 10:1 factor because of the energy stored in steam. The working pressure printed on the hose, not the burst figure, is the limit — and the assembly is only as good as its couplings and clamps."
+    },
+    {
+     "q": "Which couplings do you supply for industrial hose?",
+     "a": "Cam and groove, Storz, Bauer, ring lock, Guillemin, Barcelona and Geka, Russian GOST, ground-joint steam couplings, universal air (crowfoot) couplings, KC nipples, shank and pin-lug couplings, sandblast couplings, dry disconnects, EN 14420 fittings and industrial flanges, with the clamps, ferrules and menders that go with them."
+    },
+    {
+     "q": "How do I measure an industrial hose for replacement?",
+     "a": "Measure the inside diameter — hose is sold by bore, not outside diameter — and the overall length including the couplings. Note the coupling type and size at each end, what the hose carries, and its working pressure, temperature and whether it runs under suction. A photo of the printing along the hose and of each coupling usually identifies the rest."
+    },
+    {
+     "q": "Which industrial hose brands do you supply?",
+     "a": "Sunpool and Sealfast hose and couplings, Thorburn Flex metal and PTFE hose, Dixon couplings, Senior Flexonics, Hose Master and Witzenmann metal hose, and Indus's own rubber and PVC hose lines."
+    }
+   ]
+  },
+  {
+   "slug": "flow-iron-wellhead-equipment-uae",
+   "intro": "Flow iron is the high-pressure temporary pipework of fracturing, cementing, well testing and flowback: pup joints, integral fittings, swivel joints, crossovers and hammer unions rated by figure number, from Figure 100 at 1,000 psi to Figure 1502 at 15,000 psi. Indus supplies flow iron, manifolds, API 6A flanges, ring joint gaskets, surface test trees and wellhead equipment from Dubai in standard and sour service (NACE MR0175), as authorised representative of TechnipFMC, Cameron, SPM, Anson and Stream-Flo, alongside its own range.",
+   "guidance": {
+    "heading": "Match the figure, the size and the service",
+    "body": "Flow iron is specified by the union figure, which sets both the pressure rating and the mating thread; the nominal size; the service — standard, or sour to NACE MR0175 where the fluid carries H2S; and the end on each side of every joint. Wellhead and flanged equipment is specified instead by API 6A bore and pressure, plus PSL, performance, temperature and material class. Send the working pressure, size, service and a sketch of the line, or the existing part numbers, and we match every connection."
+   },
+   "standards": {
+    "heading": "API 6A, API 16C and NACE MR0175",
+    "body": "Wellhead and flanged equipment is built to API 6A, and choke and kill equipment to API 16C; temporary flow line components are made to the maker's design under one of the two, named on each product page. API 6A flanges come in two families: 6B for 2,000, 3,000 and 5,000 psi with R or RX rings, and 6BX for 10,000 psi and above, and for 5,000 psi from 13-5/8″, with BX rings. Sour-service materials meet NACE MR0175 / ISO 15156."
+   },
+   "faq": [
+    {
+     "q": "What do hammer union figure numbers mean?",
+     "a": "The figure number identifies the union design and, roughly, its cold working pressure: Figure 100 is 1,000 psi, Figures 200 and 206 are 2,000 psi, Figure 602 is 6,000 psi, Figure 1002 is 10,000 psi, Figure 1502 is 15,000 psi and Figure 2002 is 20,000 psi. Each figure has its own nut thread and seal, so the figure must match on both halves of the joint. Ratings can be lower in the largest sizes of a figure, so check the size table rather than assuming the figure number."
+    },
+    {
+     "q": "Can hammer unions of different figures be connected?",
+     "a": "No. Never join halves of different figures, even when they appear to fit. Some combinations of different figures in the same nominal size can be screwed together without sealing or holding correctly, and have separated under pressure. Industry safety alerts on mismatched hammer unions stress the same rule: check the figure number and size stamped on both halves before make-up, and keep sour and standard service components apart."
+    },
+    {
+     "q": "Are FMC Weco, SPM and Anson unions interchangeable?",
+     "a": "Weco is TechnipFMC's trade name, and other makers build their figure-number unions to mate with it by figure and size. Many operators still require one maker per line or per connection, and a mixed connection should only be made where both makers state the parts are interchangeable. Tell us your operator's policy at quotation and we supply to it."
+    },
+    {
+     "q": "What is the difference between standard and sour service flow iron?",
+     "a": "Sour service parts are made for fluids containing hydrogen sulphide. Their materials meet NACE MR0175 / ISO 15156, which limits hardness — 22 HRC for carbon and low-alloy steels — so they resist sulphide stress cracking, a sudden brittle failure that standard material can suffer in H2S. Sour parts are marked as such; on a sour line every component must be sour-rated."
+    },
+    {
+     "q": "What is the difference between API 6B and 6BX flanges?",
+     "a": "API 6B flanges cover 2,000, 3,000 and 5,000 psi, take R or RX ring gaskets and are made up with a small gap between the faces. API 6BX flanges cover 10,000, 15,000 and 20,000 psi, and 5,000 psi in bores of 13-5/8″ and larger; they take pressure-energised BX rings and make up face to face. The two families do not bolt together, and an API flange is not interchangeable with an ASME B16.5 flange of similar size."
+    },
+    {
+     "q": "Which ring joint gasket does a flange need?",
+     "a": "The ring number is set by the flange's groove. R (oval or octagonal) and RX rings share groove numbers — an RX-24 fits an R-24 groove and is pressure-energised — while BX rings fit API 6BX flanges only. The ring must be softer than the groove: soft iron or low-carbon steel for standard service, 304 or 316 stainless, or Inconel 625 for sour and corrosive service. Ring gaskets are single-use; fit a new one every time the joint is broken."
+    },
+    {
+     "q": "What documentation comes with flow iron and wellhead equipment?",
+     "a": "The manufacturer's certification for the item, listed on each product page — typically the material certificate, the hydrostatic test record and a certificate of conformity, with hardness records for sour-service parts. If your operator needs more, such as a particular PSL, third-party witnessed testing or a specific certificate format, state it on the RFQ so it is confirmed before we quote."
+    },
+    {
+     "q": "Which flow iron and wellhead brands do you supply?",
+     "a": "Indus is authorised representative of TechnipFMC (FMC Weco), Cameron (SLB), SPM, Anson and Stream-Flo, and also supplies Halliburton, NOV and Forum parts and its own flow iron, manifolds and wellhead equipment."
+    }
+   ]
+  },
+  {
+   "slug": "oilfield-valve-suppliers-uae",
+   "intro": "Oilfield valves isolate, control and protect the flow of oil, gas and frac fluid from the wellhead to the process plant: gate, plug, ball, check, choke, relief and surface safety valves, rated in API 6A pressure classes or by hammer-union figure. Indus supplies them from Dubai in standard and sour service, as authorised representative of Cameron, WOM, TechnipFMC, SPM, Anson and Stream-Flo, with DEMCO gate-valve repair parts and its own range.",
+   "guidance": {
+    "heading": "Choose the valve by its duty, then its connection",
+    "body": "Gate valves give full-bore isolation on wellheads and manifolds; plug valves give fast quarter-turn isolation on frac and cement lines; chokes set the flow rate; check valves stop reverse flow; relief valves protect against overpressure; and surface safety valves shut the well in automatically. Then fix the end connection — API 6A flange, hammer-union figure or ASME flange — the pressure class and the service, standard or sour. For repair parts, send the make, model, size and pressure class from the nameplate."
+   },
+   "standards": {
+    "heading": "API 6A, API 6D, API 16C and NACE MR0175",
+    "body": "Wellhead, Christmas-tree and surface safety valves are covered by API 6A, pipeline valves by API 6D, and choke and kill valves by API 16C. Sour-service materials meet NACE MR0175 / ISO 15156. API 6A valves carry four further ratings: a product specification level (PSL 1 to 4), a performance requirement (PR1 or PR2), a temperature class and a material class. Each product page states the ones its maker publishes."
+   },
+   "faq": [
+    {
+     "q": "Gate valve or plug valve — which should I use?",
+     "a": "A gate valve gives a full, straight bore and seals in both directions; it is multi-turn and slower to operate, and is the standard isolation valve on wellheads, Christmas trees and manifolds. A plug valve opens and closes in a quarter turn, is compact, and is used on frac, cementing and flowback lines where iron is rigged up and valves are cycled often. Lubricated plug valves need regular greasing to seal; non-lubricated designs do not. Neither should be used to throttle — that is a choke's job."
+    },
+    {
+     "q": "How do I read an API 6A rating such as PSL 3, PR1, P+U, EE-1.5?",
+     "a": "PSL 3 is the product specification level — the testing and documentation tier, from 1 to 4. PR1 is the performance requirement; PR2 adds cycle testing. P+U is the temperature class: P covers -20 to 180°F and U 0 to 250°F, so P+U spans -20 to 250°F. EE is the material class (AA to CC general service, CC being stainless for CO2-corrosive wells; DD to HH sour service, HH in corrosion-resistant alloy), and the number after a sour class is the maximum H2S partial pressure in psia that the materials are qualified for."
+    },
+    {
+     "q": "What does bean size mean on a choke?",
+     "a": "The bean is the orifice that restricts flow, and its size is quoted in 64ths of an inch: a 32/64 bean is a 1/2″ opening. A positive choke uses a fixed bean that is changed to change the rate; an adjustable choke has a variable opening, and its \"max bean\" is the largest opening its trim allows."
+    },
+    {
+     "q": "What is a surface safety valve (SSV)?",
+     "a": "A fail-closed, actuated gate valve on the wellhead or flowline that shuts the well in automatically when its control pressure is lost — on an emergency shutdown signal, a high or low pressure pilot, a fire or a manual trip. Its hydraulic or pneumatic actuator holds it open against a spring; remove the pressure and it closes. SSVs are covered by API 6A and are controlled from an ESD panel."
+    },
+    {
+     "q": "Spring-loaded or pilot-operated relief valve?",
+     "a": "A spring-loaded relief valve is direct-acting: the spring holds the seat shut until pressure overcomes it, which makes it simple and robust. A pilot-operated valve uses a small pilot to control a larger main valve, which keeps the seat tight closer to set pressure and suits high pressures and tight margins between operating and set pressure. Both are listed; choose by the set pressure, the relieving capacity needed and the fluid."
+    },
+    {
+     "q": "Do you supply DEMCO gate valve repair parts?",
+     "a": "Yes — gates, seats, seat inserts and seal kits for DEMCO DM gate valves. The DM 2000–5000 and DM 7500 families look alike but their parts do not interchange, so send the model from the nameplate, the size and the pressure rating, or the kit number, and we confirm the right parts before quoting."
+    },
+    {
+     "q": "Can valves be supplied with third-party inspection or witnessed testing?",
+     "a": "Valves ship with the manufacturer's test and material certification listed on each product page. Third-party inspection, witnessed hydrostatic or gas testing, a higher PSL or a particular certificate format can be arranged on request; put it on the RFQ, because it affects the price and the lead time."
+    },
+    {
+     "q": "Which oilfield valve brands do you supply?",
+     "a": "Indus is authorised representative of Cameron (SLB), WOM, TechnipFMC, SPM, Anson and Stream-Flo, and supplies DEMCO gate valve repair parts and its own oilfield valves."
+    }
+   ]
+  },
+  {
+   "slug": "industrial-lubricant-suppliers-uae",
+   "intro": "Industrial specialty lubricants work where ordinary oil and grease fail: extreme temperature, very high load, chemical attack, food contact, vacuum and assembly. Indus supplies the Molykote range from Dubai — greases, pastes, anti-friction coatings, oils and fluids, dispersions and silicone compounds — including NSF H1-registered food-grade grades, matched to the application rather than sold by name.",
+   "guidance": {
+    "heading": "Choose by the condition the lubricant must survive",
+    "body": "Start from what is failing. Greases suit bearings, slides and gears; pastes loaded with molybdenum disulphide (MoS₂) or metal-free solids protect threads, press fits and run-in surfaces under very high load; anti-friction coatings leave a dry, clean film where oil would collect dirt; silicone compounds seal, release and insulate. Then check the temperature range, compatibility with the plastics, elastomers and process medium it will touch, and whether food contact needs NSF H1. Send the application and the product used now."
+   },
+   "standards": {
+    "heading": "NSF H1, NLGI grade and viscosity",
+    "body": "Lubricants for incidental food contact are registered by NSF as H1; Molykote's FM (food machinery) grades are made for that duty. Greases are described by NLGI consistency grade, from 000 (fluid) to 6 (block), and by thickener and base oil — mineral, synthetic hydrocarbon, silicone or perfluoropolyether (PFPE). Oils and fluids are graded by ISO VG or kinematic viscosity in cSt. Each product page gives the manufacturer's temperature range and data."
+   },
+   "faq": [
+    {
+     "q": "What is Molykote?",
+     "a": "Molykote is a brand of specialty lubricants, now owned by DuPont, that began with molybdenum disulphide (MoS₂) lubricants and today covers greases, pastes, anti-friction coatings, oils, dispersions and silicone compounds for industrial, automotive and food-processing machinery."
+    },
+    {
+     "q": "Grease, paste or anti-friction coating — what is the difference?",
+     "a": "A grease is oil held in a thickener; it stays where it is put and suits bearings, slides and gears that move continuously. A paste carries a high load of solid lubricant and protects surfaces under extreme pressure, slow movement, assembly and high temperature, where grease would squeeze out. An anti-friction coating is a bonded dry film, sprayed or dipped like paint, that lubricates without attracting dirt and lasts the life of many parts."
+    },
+    {
+     "q": "Which Molykote products are food grade?",
+     "a": "The FM (food machinery) grades — for example G-4500 and G-4501 multi-purpose synthetic greases, G-0060 FM white grease and L-1605FM barrier fluid — are made for food and beverage plants and carry NSF H1 registration for incidental food contact. Registration is held product by product, so confirm it on the data sheet of the exact grade and pack you order."
+    },
+    {
+     "q": "Which paste stops stainless steel threads from galling?",
+     "a": "A metal-free anti-seize paste. Molykote P-37 is made for stainless steel and high-nickel alloys at very high temperature, where copper or nickel-containing pastes are not wanted; MoS₂ pastes such as G-n are used for assembly and run-in at more moderate temperatures. Apply a thin film to both threads and to the nut face, and use the torque figure for a lubricated thread."
+    },
+    {
+     "q": "Which grease survives very high temperature?",
+     "a": "For the highest temperatures and aggressive chemicals, a perfluoropolyether (PFPE) grease such as Molykote HP-300, HP-500 or HP-870. Silicone greases such as Molykote 41 cover high-temperature bearings at lighter loads, and chemical-resistant greases such as 3451 suit bearings exposed to solvents and fuels. The data sheet gives each grade's service range."
+    },
+    {
+     "q": "Are silicone greases safe on rubber seals and O-rings?",
+     "a": "On most elastomers — nitrile, EPDM and fluorocarbon — yes, which is why silicone greases such as Molykote 55 and 111 are used on O-rings and valve seals. The exception is silicone rubber: silicone grease can swell it, so use a non-silicone lubricant on silicone seals."
+    },
+    {
+     "q": "Can you match another lubricant to a Molykote grade?",
+     "a": "Usually. Send the data sheet of the product you use now — from Klüber, Mobil, Loctite or another maker — and the application. We match on base oil, thickener, NLGI grade, solids, temperature range and approvals such as NSF H1, and say where a match is close rather than exact so it can be trialled first."
+    }
+   ]
+  },
+  {
+   "slug": "valves-manifolds",
+   "intro": "Valves on this shelf start, stop and direct flow in water, utility and process lines and in hydraulic circuits. Indus supplies DEMCO resilient-seated butterfly valves from 2″ to 36″ in wafer, lug and lightweight-flange bodies with their actuators, gear operators and handles, Victaulic grooved butterfly valves, industrial and high-pressure hydraulic ball valves, and Yuken CETOP 3 solenoid directional, relief and modular valves, from Dubai.",
+   "guidance": {
+    "heading": "Butterfly, ball or directional — choose by the line",
+    "body": "Butterfly valves suit large-bore, low-pressure lines — water, cooling, HVAC and process — where a compact quarter-turn valve between flanges saves weight and space; choose the body (wafer or lug), the seat by the medium and the operator by size. Ball valves give tight shut-off in smaller bores; the high-pressure hydraulic versions isolate hydraulic lines. Directional control valves are chosen by mounting pattern, spool function and coil voltage. Send the medium, size, pressure and connection."
+   },
+   "standards": {
+    "heading": "Flange and mounting standards",
+    "body": "The DEMCO NE butterfly valves fit between ASME B16.5 Class 150 flanges, with lug bodies drilled to match; the NE-I sanitary series is made for FDA food service. Victaulic valves connect to grooved pipe. Hydraulic directional valves mount on the ISO 4401 interface: size 03 (CETOP 3, NG6) and size 05 (CETOP 5, NG10). Each product page gives the rated pressure."
+   },
+   "faq": [
+    {
+     "q": "Wafer or lug butterfly valve — what is the difference?",
+     "a": "A wafer valve is clamped between two pipe flanges by bolts that pass around its body, so both flanges must stay in place. A lug valve has threaded lugs that each flange bolts into separately, so the downstream pipe can be removed with the line still live on the other side, or the valve used at the end of a line. Check the maker's end-of-line pressure rating before using a lug valve that way."
+    },
+    {
+     "q": "Which seat material should a butterfly valve have?",
+     "a": "Choose it by the medium and temperature. EPDM suits water, glycol and many mild chemicals but not oils; Buna-N (nitrile) suits oils, fuels and air; Viton (FKM) covers higher temperatures and many aggressive chemicals; PTFE-lined valves are used for corrosive, high-purity and food service. Tell us the fluid, its concentration and temperature and we confirm the seat."
+    },
+    {
+     "q": "Can a butterfly valve be used for throttling?",
+     "a": "Yes, within limits. Butterfly valves throttle reasonably between about a third and fully open, and DEMCO memory-stop and 10-position locking handles hold a set position. Running almost closed causes high velocity, noise, cavitation and seat wear, so a valve that spends its life throttling hard should be a dedicated control valve."
+    },
+    {
+     "q": "What does CETOP 3 or NG6 mean on a hydraulic valve?",
+     "a": "They are names for the same mounting pattern: the ISO 4401-03 interface, also called D03. CETOP 5, NG10 and D05 are the larger ISO 4401-05 interface. Any valve made to the pattern bolts to a subplate or manifold of the same size, whatever its maker."
+    },
+    {
+     "q": "What does a Yuken part number such as DSG-01-3C4-D24-50 mean?",
+     "a": "DSG is Yuken's solenoid-operated directional valve; 01 is the size, the CETOP 3 / NG6 pattern; 3 means three positions, and C4 is the spool type, which sets the flow paths in the centre position; D24 is a 24 V DC coil; and 50 is the design number. A 2B2 in the same place is a two-position, spring-offset valve. Send the full code from the valve's nameplate when ordering a replacement."
+    },
+    {
+     "q": "Do you supply actuators and gear operators for butterfly valves?",
+     "a": "Yes. The DEMCO range includes double-acting and spring-return pneumatic actuators for 2″ to 24″ valves, worm-gear operators for 2″ to 36″, stem extensions, and lever, square-nut and locking handles for 2″ to 12″."
+    }
+   ]
+  },
+  {
+   "slug": "blowout-preventers",
+   "intro": "A blowout preventer (BOP) seals the wellbore at the surface so that pressure can be controlled while a well is drilled, completed or worked over. Indus supplies annular and ram BOPs built to the Hydril GK and Cameron U patterns, ram blocks, drilling spools and adapters, choke and kill manifolds, accumulator control units, diverters and BOP spares from Dubai, with sour-service (NACE MR0175) construction as standard.",
+   "guidance": {
+    "heading": "Size the stack from the well",
+    "body": "A BOP stack is specified by bore and rated working pressure — for example 13-5/8″ 10,000 psi — set from the maximum anticipated surface pressure, then by the pipe it must close on. Annular preventers seal on almost any shape; pipe rams seal on one pipe size, variable-bore rams on a range, blind rams on an open hole, and blind-shear rams cut pipe and seal. Add the end connections, sour-service requirement and the control-unit volume, and send the stack drawing for spares."
+   },
+   "standards": {
+    "heading": "API 16A, 16C, 16D and Standard 53",
+    "body": "Drill-through equipment, including annular and ram BOPs, is covered by API 16A; choke and kill equipment by API 16C; and BOP control systems by API 16D. API Standard 53 sets how BOP systems are installed, tested and maintained on the rig. End connections follow API 6A, and sour-service materials meet NACE MR0175 / ISO 15156."
+   },
+   "faq": [
+    {
+     "q": "What is the difference between an annular and a ram BOP?",
+     "a": "An annular BOP closes a large rubber packing element around whatever is in the hole — drill pipe, casing, a tool joint or an open hole — so it is the first, most versatile seal. A ram BOP closes two steel rams from either side; each ram set is made for one job, such as sealing on a given pipe size or shearing pipe. A typical stack combines one or two annulars above several ram cavities."
+    },
+    {
+     "q": "What are pipe, variable-bore, blind and blind-shear rams?",
+     "a": "Pipe rams have a cut-out that seals around one pipe diameter. Variable-bore rams (VBRs) seal on a range of diameters, such as 3-1/2″ to 5″. Blind rams have no cut-out and seal an empty hole. Blind-shear rams cut through the pipe in the hole and then seal, and are the last line of defence."
+    },
+    {
+     "q": "What does a BOP control unit (accumulator) do?",
+     "a": "It stores hydraulic fluid under nitrogen pressure so that every BOP function can be closed even if the rig loses power. Pumps charge the accumulator bottles, and a manifold of control valves — one per station — sends fluid to open or close each preventer. API 16D sets how much usable fluid it must hold for the stack it serves, and remote panels let the driller operate it from the drill floor."
+    },
+    {
+     "q": "Are these original Cameron or Hydril BOPs?",
+     "a": "The BOPs and ram blocks on this shelf are built to the Cameron U and Hydril GK patterns, not by Cameron or Hydril. Indus is also authorised representative for Cameron, so original Cameron equipment can be quoted separately. Before fitting pattern parts to an existing stack, confirm them against its drawings and your operator's equipment policy."
+    },
+    {
+     "q": "Which BOP spares should be kept on site?",
+     "a": "At minimum, ram packers and top seals for each ram size in use, a spare annular packing unit, bonnet and door seals, and a set of ring gaskets, studs and nuts for every flanged connection that may be broken. The shelf includes BX ring gasket sets, B7M/2HM sour-service stud and nut kits, and complete nipple-up kits for common stack sizes."
+    },
+    {
+     "q": "What is a drilling spool or a double-studded adapter?",
+     "a": "A drilling spool is a short flanged body placed in the stack to add side outlets for the choke and kill lines, or to space the preventers. A double-studded adapter (DSA) joins two connections of different size or pressure rating — for example 13-5/8″ 10K to 11″ 10K — in the shortest possible height."
+    },
+    {
+     "q": "What is a diverter and when is it used?",
+     "a": "A diverter is a low-pressure system fitted on top-hole sections, before the BOP stack is installed, to route an unexpected flow of shallow gas away from the rig through large vent lines rather than try to shut it in, which the weak shallow formations could not hold."
+    }
+   ]
+  },
+  {
+   "slug": "oil-gas-hoses",
+   "intro": "Oil and gas hoses are the flexible lines of the drilling and well-service spread: rotary and vibrator hose on the drill floor, choke and kill and BOP control hose for well control, frac and acidizing hose for well service, and riser tensioner and compensator hose offshore. Indus supplies Continental ContiTech and Gates oilfield hose assemblies from Dubai, each built and documented to the API specification for its duty.",
+   "guidance": null,
+   "standards": null,
+   "faq": [
+    {
+     "q": "What documentation comes with a well-control hose?",
+     "a": "The certification its API specification requires, including the hydrostatic test record for the assembly, plus material certificates where the order calls for them. State your operator’s documentation requirements at quotation so they are prepared with the hose rather than after it."
+    },
+    {
+     "q": "Can these hoses be used in sour service?",
+     "a": "Some can. Suitability depends on the construction, the liner and the fluid, so it is confirmed against your H2S partial pressure, temperature and pressure cycle rather than assumed. The drilling range includes a rotary and vibrator hose built for high-temperature sour service."
+    },
+    {
+     "q": "Which brands are on this shelf?",
+     "a": "Continental ContiTech and Gates oilfield hose."
+    },
+    {
+     "q": "What is the difference between rotary, vibrator and cement hose?",
+     "a": "Rotary hose is the flexible link between the standpipe and the swivel or top drive, carrying drilling mud to the string. Vibrator hose connects the mud pump to the standpipe manifold and absorbs the pump's pulsation. Cement hose carries cement slurry on cementing lines. All three are rotary drilling hose under API 7K, built and rated for their pressure and service."
+    },
+    {
+     "q": "Bonded or unbonded flexible hose — what is the difference?",
+     "a": "In a bonded hose the rubber and steel reinforcement layers are vulcanised into one structure, covered by API 17K. In an unbonded flexible pipe separate polymer and steel layers slide over each other, covered by API 17J. Both are used for choke and kill lines; the specification named on the assembly's certificate tells you which you have."
+    },
+    {
+     "q": "Which end connections can oilfield hose assemblies have?",
+     "a": "The connection your equipment uses: API 6A flanges, hubs, hammer unions such as Figure 1502 or 602, or threaded ends. The fittings are attached and tested by the hose manufacturer as part of the certified assembly, so specify both ends at quotation."
+    },
+    {
+     "q": "What are tensioner and compensator hoses for?",
+     "a": "Offshore rigs use them on riser tensioners and drill-string compensators, which keep the riser and drill string under steady tension as the vessel heaves. The hoses carry high-pressure hydraulic fluid through constant flexing, so they are built and rated for cycle life as much as for pressure."
+    },
+    {
+     "q": "Do you supply low-pressure oilfield hose?",
+     "a": "Yes — hose for mud, water, fuel, bulk-material and general oilfield service, including fire-resistant and flame-protected constructions, alongside the high-pressure drilling and well-control ranges."
+    }
+   ]
+  },
+  {
+   "slug": "instrumentation-controls",
+   "intro": "Oilfield instrumentation measures and controls what the pumping and well-service equipment is doing: pressure, flow, density, temperature and pump speed, recorded on a data acquisition system and powered from hazardous-area electrical equipment. Indus supplies pressure sensors and gauges, magnetic, turbine and Coriolis flowmeters, thermometers, proximity sensors, data acquisition systems, VFD packages and explosion-proof panels from Dubai, built to order for frac, cementing and well-testing service.",
+   "guidance": {
+    "heading": "Choose by the measurement, the fluid and the zone",
+    "body": "Fix three things for each instrument: what it measures and over what range, the fluid and its connection — many oilfield sensors mount on Figure 1502 unions — and the hazardous-area zone it will sit in. Then the output signal (4–20 mA is standard) and the system it reports to. Send the service, pressure, flow range and zone classification."
+   },
+   "standards": null,
+   "faq": [
+    {
+     "q": "Magnetic, turbine or Coriolis flowmeter — which should I use?",
+     "a": "A magnetic flowmeter has no moving parts and measures conductive liquids such as water-based fluids, but not hydrocarbons. A turbine meter measures clean, low-viscosity liquids accurately and is made with Figure 1502 ends for frac and cementing pressure. A Coriolis meter measures mass flow and density directly, which makes it the choice for cement slurry and fluids whose density matters."
+    },
+    {
+     "q": "What do ATEX Zone 1 and Zone 2 mean?",
+     "a": "They classify how likely an explosive gas atmosphere is. In Zone 1 it is likely to occur in normal operation; in Zone 2 it is not likely, and if it occurs it lasts only briefly. Equipment must be certified for the zone it is installed in — Zone 1 equipment may be used in Zone 2, not the other way round. IECEx uses the same zones."
+    },
+    {
+     "q": "What output signals do the sensors use?",
+     "a": "Most transmitters on this shelf give a 4–20 mA analogue signal, the oilfield standard because it survives long cable runs and a broken loop reads as a fault rather than as zero. Proximity sensors give pulses for stroke and RPM counting. Tell us the input your data acquisition system or PLC expects."
+    },
+    {
+     "q": "What is a debooster pressure sensor?",
+     "a": "A debooster is a hydraulic pressure transmitter: well pressure acts on a large piston that drives a smaller one, reducing the pressure by a fixed ratio so that a standard gauge or shutdown switch can read it while staying isolated from the well fluid. It needs no power, which makes it a reliable mechanical backup to electronic sensors."
+    },
+    {
+     "q": "Can a data acquisition system record a whole frac or cementing job?",
+     "a": "Yes. A multi-channel system logs pressure, rate, density and other channels from the sensors in real time, displays them to the operator and exports the job record. Tell us the number and type of channels and the equipment it must connect to."
+    },
+    {
+     "q": "Is oilfield instrumentation built to order?",
+     "a": "Yes. Each is built to the range, connection, hazardous-area certification, enclosure and signal you specify, and the lead time is confirmed at quotation."
+    }
+   ]
+  },
+  {
+   "slug": "well-testing-equipment",
+   "intro": "Surface well-testing equipment measures what a well produces — oil, gas and water rates, pressures and samples — and handles that flow safely until it is stored or flared. Indus supplies the full surface package from Dubai: 3-phase test separators, multiphase flowmeters, surge tanks, knock-out drums, flare stacks, sand filters, data headers, ESD panels, test and transfer pumps and 1502 piping, built to order with ASME pressure vessels and sour-service (NACE MR0175) options.",
+   "guidance": {
+    "heading": "Build the package from the well's rates and pressure",
+    "body": "A well-test package is sized from the expected wellhead pressure, the oil, gas and water rates, H2S and CO2 content, and sand. These set the separator's pressure rating and size, the piping class, the flare capacity and whether a sand filter is needed. For offshore work, skids are built for lifting and transport. Send the well data and the test programme."
+   },
+   "standards": {
+    "heading": "ASME, NACE and DNV",
+    "body": "Pressure vessels — separators, surge tanks, knock-out drums and sand filters — are built to ASME Section VIII Division 1 and carry the ASME U stamp. Sour-service construction follows NACE MR0175 / ISO 15156. Offshore skids and frames are built to DNV standards for offshore containers (DNV-ST-E271, formerly DNV 2.7-1) where specified."
+   },
+   "faq": [
+    {
+     "q": "What is in a surface well-test package?",
+     "a": "Flow leaves the wellhead through a flowhead or surface test tree and a choke manifold that controls the rate, passes through a sand filter where needed and into a 3-phase separator, which splits and meters oil, gas and water. Oil goes to a surge tank and transfer pump, gas to the flare, and a data header collects pressures and temperatures along the way. An ESD panel and surface safety valve can shut the well in at any point."
+    },
+    {
+     "q": "What does a 3-phase test separator do?",
+     "a": "It slows the flow in a pressure vessel so that gas, oil and water separate by gravity, then meters each phase leaving through its own outlet. Its results give the well's production rates and gas-oil and water-cut ratios, and it provides representative samples of each phase."
+    },
+    {
+     "q": "Multiphase flowmeter or test separator?",
+     "a": "A multiphase flowmeter (MPFM) measures oil, gas and water rates without separating them, so it is compact and gives continuous readings. A separator measures each phase after separating it and provides samples. Many tests run both: the MPFM for continuous rates, the separator to verify and sample."
+    },
+    {
+     "q": "What does an ESD panel do?",
+     "a": "It controls the surface safety valve. The panel holds the SSV open with hydraulic pressure and releases it to shut the well in on a trip from a remote station, a high or low pressure pilot or a fire loop."
+    },
+    {
+     "q": "Can the package be built for sour service?",
+     "a": "Yes. Vessels, piping and valves are built in NACE MR0175 materials for H2S service; tell us the H2S and CO2 content, pressure and temperature so the materials are qualified for them."
+    },
+    {
+     "q": "Are well-testing packages built to order?",
+     "a": "Yes. Each unit is built to the pressure, capacity, certification and skid design you specify, and the lead time is confirmed at quotation."
+    }
+   ]
+  },
+  {
+   "slug": "fracturing-equipment",
+   "intro": "Fracturing equipment pumps fluid and proppant into a well at high pressure to crack the rock open and keep the fractures propped. Indus supplies the units of a frac fleet from Dubai, built to order: frac pumpers up to 3,000 HP, blenders, hydration units, liquid additive systems, sand silos, frac missiles, transfer pumps, data vans and frac tanks.",
+   "guidance": {
+    "heading": "Size the fleet from the job's rate and pressure",
+    "body": "Hydraulic horsepower is the starting point: treating pressure in psi multiplied by rate in barrels per minute, divided by 40.8. Add a margin for losses and standby pumps, and divide by the rating of each pumper to get the count. The blender, hydration unit and missile are then sized for the same rate, and proppant storage for the job's volume. Send the treating pressure, rate, proppant volume and site layout."
+   },
+   "standards": null,
+   "faq": [
+    {
+     "q": "What equipment makes up a frac fleet?",
+     "a": "Frac tanks and a hydration unit prepare the fluid; sand silos feed proppant to the blender, which mixes fluid, proppant and chemicals from the liquid additive system; the missile manifold distributes the slurry to the pumpers and gathers their high-pressure discharge; flow iron carries it to the wellhead; and the data van monitors and controls the job."
+    },
+    {
+     "q": "How is frac pump horsepower calculated?",
+     "a": "Hydraulic horsepower equals treating pressure in psi times rate in barrels per minute, divided by 40.8. A job at 9,000 psi and 80 bpm needs about 17,650 hydraulic horsepower, before allowing for losses and standby units."
+    },
+    {
+     "q": "What is a frac missile?",
+     "a": "A trailer-mounted manifold that sits between the blender and the pumpers. Its low-pressure side feeds slurry from the blender to each pumper's suction, and its high-pressure side collects their discharge into the treating line to the well."
+    },
+    {
+     "q": "What does a hydration unit do?",
+     "a": "It mixes gelling agent into water and holds it long enough to hydrate, so the fracturing fluid reaches the blender at the viscosity needed to carry proppant."
+    },
+    {
+     "q": "What is a liquid additive system (LAS)?",
+     "a": "A skid or trailer of tanks and metering pumps, with mass flowmeters, that doses liquid chemicals — friction reducers, crosslinkers, breakers and others — into the blender at controlled rates during the job."
+    },
+    {
+     "q": "Is frac equipment built to order?",
+     "a": "Yes. Each is built to the power, drive, capacity and certification you specify, and the lead time is confirmed at quotation."
+    }
+   ]
+  },
+  {
+   "slug": "cementing-equipment",
+   "intro": "Cementing equipment mixes cement slurry to a set density and pumps it down the well to secure the casing and seal the annulus. Indus supplies cementing units with automatic density control, batch and on-the-fly mixers, cement silos, dust collectors, rock catchers and cutting bottles from Dubai, skid-, trailer- or truck-mounted and built to order, with ATEX Zone 2, CE and GOST options.",
+   "guidance": {
+    "heading": "Choose the mounting, then the mixing method",
+    "body": "Skid-mounted units suit offshore and fixed installations; trailer and truck units suit land work that moves from well to well. Then choose how slurry is mixed: in batches before pumping, for jobs that need a precise, tested blend, or on the fly, mixed continuously while pumping. Specify the pump power, maximum pressure and rate, density range and hazardous-area requirement."
+   },
+   "standards": null,
+   "faq": [
+    {
+     "q": "Skid, trailer or truck-mounted cementing unit?",
+     "a": "Skid units are lifted onto offshore rigs and platforms or installed at fixed sites. Trailer and truck units carry their own power and move between onshore wells; a truck is quicker to mobilise, a trailer frees the tractor for other work."
+    },
+    {
+     "q": "What is automatic density control?",
+     "a": "A control loop that measures slurry density continuously — typically with a Coriolis or radioactive densitometer — and adjusts the cement and water rates to hold the density the job design calls for, instead of relying on the operator."
+    },
+    {
+     "q": "Batch mixing or on-the-fly mixing?",
+     "a": "Batch mixing prepares the whole slurry in tanks before it is pumped, so it can be checked and adjusted first; it suits critical jobs and small volumes. On-the-fly mixing blends cement and water continuously as it is pumped, which suits large volumes. Many units can do both."
+    },
+    {
+     "q": "What does a cement silo with load cells do?",
+     "a": "It stores bulk cement on site, keeps it flowing with aeration, and weighs the contents on load cells so the crew knows exactly how much cement is available and has been used."
+    },
+    {
+     "q": "What is a rock catcher?",
+     "a": "An inline vessel with a screen that traps debris before it reaches the pumps or goes downhole, where it could damage equipment or plug floats and tools."
+    },
+    {
+     "q": "Are cementing units built to order?",
+     "a": "Yes. Each is built to the power, pressure, mounting and certification you specify, and the lead time is confirmed at quotation."
+    }
+   ]
+  },
+  {
+   "slug": "drilling-workover-systems",
+   "intro": "Drilling and workover systems store, mix, condition and pump the drilling fluid that a rig circulates through the well. Indus supplies mud pump packages, mud manifolds, degassers, mud and workover tanks, liquid mud plants and mobile labs and workshops from Dubai, built to order on skids and ISO container footprints for onshore and offshore work.",
+   "guidance": {
+    "heading": "Size from the circulating system",
+    "body": "Start from the rig's circulating rate and pressure, which set the mud pump power and liner sizes and the manifold's pressure rating. Tank volume follows the active and reserve mud the well programme needs, and the degasser is sized for the circulating rate. Send the rig type, the well programme and any footprint or lifting limits."
+   },
+   "standards": null,
+   "faq": [
+    {
+     "q": "What does a mud degasser do?",
+     "a": "It removes gas entrained in the mud returning from the well, restoring the mud's density so it keeps controlling well pressure, and venting the gas safely. Large gas volumes are first taken out by a mud-gas separator; the degasser removes the fine gas that remains."
+    },
+    {
+     "q": "How is a mud pump package rated?",
+     "a": "By input horsepower — for example a 1,600 HP triplex. Liner size then trades pressure against rate: a smaller liner gives higher pressure at lower flow, a larger liner the opposite."
+    },
+    {
+     "q": "What is a mud manifold?",
+     "a": "The high-pressure valve and pipe assembly that routes discharge from the mud pumps to the standpipe and the rig floor, letting the crew line pumps up, isolate them and divert flow. It is built with gate valves to the system's working pressure."
+    },
+    {
+     "q": "What is a liquid mud plant?",
+     "a": "An onshore base facility that mixes, stores and conditions drilling fluid, often oil-based mud, and supplies it to rigs by truck or vessel, so mud is prepared in bulk rather than at each rig."
+    },
+    {
+     "q": "Mud tank or workover tank — what is the difference?",
+     "a": "Mud tanks hold and condition the active drilling fluid with agitators and solids-control equipment. Workover tanks hold completion brine and fluids during workover and are often insulated, with a recirculation manifold."
+    },
+    {
+     "q": "Are drilling and workover systems built to order?",
+     "a": "Yes. Each is built to the capacity, pressure, footprint and certification you specify, and the lead time is confirmed at quotation."
+    }
+   ]
+  },
+  {
+   "slug": "hydraulic-pumps",
+   "intro": "A hydraulic pump turns the power of a motor or engine into fluid flow, and the type — piston, vane or gear — decides its pressure, efficiency and control. Indus supplies Bosch Rexroth A10VSO variable-displacement axial piston pumps from 45 to 100 cm³/rev and PGH4 internal gear pumps, with Parker T6C and T7B fixed-displacement vane pumps, from Dubai.",
+   "guidance": {
+    "heading": "Size by displacement, then choose the control",
+    "body": "Flow in litres per minute is displacement in cm³/rev times shaft speed, divided by 1,000, less volumetric losses; input power in kW is pressure in bar times flow in L/min, divided by 600 and by the pump's overall efficiency. Choose a fixed pump where flow is constant, and a variable piston pump with pressure or load-sensing control where demand changes. For a replacement, send the full model code from the nameplate."
+   },
+   "standards": null,
+   "faq": [
+    {
+     "q": "Piston, vane or gear pump — which should I use?",
+     "a": "Gear pumps are simple, compact and economical fixed-displacement pumps; internal gear designs such as the Rexroth PGH run quietly at relatively high pressure. Vane pumps such as the Parker T6 and T7 are quiet fixed pumps for machine tools and industrial power units. Axial piston pumps such as the A10VSO reach the highest pressures and can vary their displacement, which saves energy when demand changes."
+    },
+    {
+     "q": "What does A10VSO 71 mean?",
+     "a": "A10V is Rexroth's variable-displacement axial piston series, S stands for swashplate design, O for open circuit, and 71 is the maximum displacement in cm³ per revolution. The full code adds the controller, series, rotation, shaft, port and seal options, all of which must match for a drop-in replacement."
+    },
+    {
+     "q": "Which controls does the A10VSO offer?",
+     "a": "The common ones are DR, pressure control; DFR, pressure and flow (load-sensing) control; and DFLR, pressure, flow and power control. Remote pressure control and electro-proportional versions are also built. The controller code sits in the model code on the nameplate."
+    },
+    {
+     "q": "How do I size a hydraulic pump?",
+     "a": "Work out the flow the circuit needs and the speed of the drive. Required displacement in cm³/rev is flow in L/min times 1,000, divided by speed in rpm and by volumetric efficiency. Then check the motor can supply the power: pressure in bar times flow in L/min, divided by 600, gives hydraulic kW before efficiency."
+    },
+    {
+     "q": "Can you supply a like-for-like replacement pump?",
+     "a": "Yes. Send the complete model code and serial number from the nameplate, or a photo of it. Rotation, shaft, mounting flange, ports and controller all have to match for the new pump to fit without changes."
+    }
+   ]
+  },
+  {
+   "slug": "stimulation-equipment",
+   "intro": "Stimulation equipment pumps acid, nitrogen and treatment fluids into a well to restore or improve its flow without fracturing the rock. Indus supplies nitrogen pumping units, stimulation pumping units, batch mixers, acid tanks and transfer pumps from Dubai, built to order with FRP-lined steel for acid service and ATEX, CE and GOST options.",
+   "guidance": {
+    "heading": "Match the materials to the fluid",
+    "body": "Acid service decides most of the specification: tanks, mixers and pumps that touch hydrochloric or other acids are lined with fibre-reinforced plastic (FRP) and fitted with resistant valves and seals. Pumping units are then sized for treating pressure and rate, and nitrogen units for the gas volume the job needs. Specify the fluids, pressure, rate, mounting and hazardous-area certification."
+   },
+   "standards": null,
+   "faq": [
+    {
+     "q": "What is the difference between stimulation and fracturing?",
+     "a": "Matrix stimulation pumps acid or other fluids below the pressure that would fracture the rock, dissolving damage and opening flow paths near the wellbore. Hydraulic fracturing pumps above that pressure to crack the rock and prop the cracks open. Acid fracturing combines the two."
+    },
+    {
+     "q": "What does a nitrogen pumping unit do?",
+     "a": "It converts liquid nitrogen to high-pressure gas and pumps it into the well — to lift fluids, foam treatments, purge and pressure-test lines, or energise stimulation fluids. Units are rated by gas delivery: a 360K unit delivers about 360,000 standard cubic feet per hour."
+    },
+    {
+     "q": "Why are acid tanks lined with FRP?",
+     "a": "Hydrochloric and other stimulation acids attack carbon steel quickly. A fibre-reinforced plastic lining keeps the acid off the steel shell, which carries the structural and transport loads."
+    },
+    {
+     "q": "What does a stimulation batch mixer do?",
+     "a": "It mixes acid, water and additives in measured batches before pumping, so the treatment reaches the well at the concentration designed for it."
+    },
+    {
+     "q": "Is stimulation equipment built to order?",
+     "a": "Yes. Each is built to the pressure, capacity, mounting and certification you specify, including dangerous-goods certification for acid tanks, and the lead time is confirmed at quotation."
+    }
+   ]
+  },
+  {
+   "slug": "seals-accessories",
+   "intro": "Hydraulic power unit accessories keep a system's fluid clean and its pressure steady. Indus supplies HYDAC Betamicron filter elements for pressure and return-line filters, rated at 10 µm, and HYDAC SB330 bladder accumulators in 4 and 10 litre sizes for 330 bar, from Dubai.",
+   "guidance": {
+    "heading": "Match the element to the housing, the accumulator to the circuit",
+    "body": "A filter element must match its housing's size and type and the filtration rating the system was designed for — read the code on the old element or the housing nameplate. An accumulator is chosen by gas volume, maximum pressure and connection, and set up with the right nitrogen pre-charge for its job. Send the codes from the existing parts."
+   },
+   "standards": null,
+   "faq": [
+    {
+     "q": "What does a HYDAC filter element code such as 0160 DN 010 BN4HC mean?",
+     "a": "0160 is the element size; DN marks a pressure filter element to DIN 24550 (an R in that position marks a return-line element); 010 is the filtration rating, 10 µm; and BN4HC is HYDAC's Betamicron glass-fibre filter media. Order by the full code so the element matches its housing and rating."
+    },
+    {
+     "q": "When should a hydraulic filter element be changed?",
+     "a": "When the filter's clogging indicator shows the differential pressure has reached its limit, or at the machine maker's service interval, whichever comes first. Betamicron glass-fibre elements are disposable; replace them rather than clean them."
+    },
+    {
+     "q": "What does a bladder accumulator do?",
+     "a": "It stores hydraulic fluid under pressure against a nitrogen-filled rubber bladder, so it can supply extra flow at peak demand, absorb pressure shocks and pulsation, keep pressure up against leakage, or provide emergency power. The SB330 is rated to 330 bar; the 4 and 10 litre sizes are its nominal gas volume."
+    },
+    {
+     "q": "What pre-charge pressure should an accumulator have?",
+     "a": "For energy storage, a common starting point is a nitrogen pre-charge of about 90% of the lowest working pressure of the system; shock and pulsation duties use different settings. Check and adjust the pre-charge with the fluid side empty, using the manufacturer's charging kit."
+    },
+    {
+     "q": "What gas is used to charge an accumulator?",
+     "a": "Dry nitrogen only. Never charge an accumulator with air or oxygen: under pressure, oxygen with hydraulic oil can ignite or explode."
+    }
+   ]
+  },
+  {
+   "slug": "cylinders",
+   "intro": "A hydraulic cylinder turns fluid pressure into straight-line force, and is specified by its bore, rod, stroke, mounting and pressure rating. Indus supplies Bosch Rexroth CDT3 double-acting tie-rod cylinders to ISO 6020-2 from Dubai, configured to the bore, stroke and mounting the machine needs.",
+   "guidance": {
+    "heading": "Size the bore for force, then fix the mounting",
+    "body": "Push force is pressure times the full bore area: a 63 mm bore at 160 bar pushes about 50 kN, and pull force uses the bore area less the rod. Choose the rod for buckling strength over the stroke, then the mounting — clevis, foot, flange or trunnion — for how the load is applied. For a replacement, send the type code from the nameplate."
+   },
+   "standards": {
+    "heading": "ISO 6020-2 and ISO 6099",
+    "body": "ISO 6020-2 fixes the mounting dimensions of compact tie-rod cylinders for 160 bar, so a cylinder made to it from one maker fits the mountings of another of the same size. ISO 6099 sets the mounting codes, such as MP1 rear clevis and MS2 side foot. Rod-end threads and port types are options to confirm."
+   },
+   "faq": [
+    {
+     "q": "What does 63/45 × 200 mean on a cylinder?",
+     "a": "A 63 mm bore, a 45 mm piston rod and a 200 mm stroke, the three dimensions that define a cylinder's size."
+    },
+    {
+     "q": "What is ISO 6020-2?",
+     "a": "The international standard for the mounting dimensions of compact tie-rod hydraulic cylinders rated at 160 bar. Rexroth's CDT3 series is built to it."
+    },
+    {
+     "q": "Which mounting style do I need?",
+     "a": "It depends on how the load moves. Clevis (MP1) and trunnion mounts let the cylinder pivot as it strokes; foot (MS2) and flange mounts hold it fixed and need the load aligned with the rod. The mounting code is part of the cylinder's type code."
+    },
+    {
+     "q": "How do I calculate cylinder force?",
+     "a": "Force in kN equals pressure in bar times piston area in cm², divided by 100. A 63 mm bore has an area of about 31.2 cm², so at 160 bar it pushes about 50 kN. For the pull stroke, subtract the rod area first."
+    },
+    {
+     "q": "Will a CDT3 cylinder replace another maker's ISO 6020-2 cylinder?",
+     "a": "Its mounting dimensions match any cylinder of the same bore and mounting built to ISO 6020-2. Check the rod-end thread, the port type and size, cushioning and seals as well, which the standard leaves open."
+    }
+   ]
+  }
+ ],
+ "blurbs": {
+  "valves-manifolds": {
+   "shortDescription": "DEMCO resilient-seated butterfly valves from 2″ to 36″ with actuators, gear operators and handles, Victaulic grooved butterfly valves, industrial and high-pressure hydraulic ball valves, and Yuken CETOP 3 solenoid directional, relief and modular valves.",
+   "seoDescription": "DEMCO butterfly valves 2″–36″, Victaulic grooved valves, industrial and high-pressure hydraulic ball valves, and Yuken CETOP 3 directional valves, from Dubai."
+  },
+  "seals-accessories": {
+   "shortDescription": "Hydraulic power unit accessories — HYDAC Betamicron 10 µm pressure and return-line filter elements, and HYDAC SB330 bladder accumulators in 4 and 10 litre sizes for 330 bar.",
+   "seoDescription": "HYDAC Betamicron 10 µm pressure and return-line filter elements and SB330 bladder accumulators (4 L and 10 L, 330 bar), supplied from Dubai."
+  },
+  "cylinders": {
+   "shortDescription": "Double-acting hydraulic cylinders — Bosch Rexroth CDT3 tie-rod cylinders to ISO 6020-2 (160 bar), configured by bore, rod, stroke and mounting, such as 63/45 × 200 mm with clevis mounting and 100/70 × 500 mm with foot mounting.",
+   "seoDescription": "Bosch Rexroth CDT3 tie-rod hydraulic cylinders to ISO 6020-2 (160 bar), configured by bore, rod, stroke and mounting, supplied from Dubai."
+  },
+  "hydraulic-pumps": {
+   "shortDescription": "Axial piston, vane and gear hydraulic pumps — Bosch Rexroth A10VSO variable displacement from 45 to 100 cm³/rev and the PGH4 internal gear pump, with Parker T6C and T7B fixed-displacement vane pumps for machine-tool duty."
+  },
+  "oil-gas-hoses": {
+   "shortDescription": "Specialty hoses for upstream oil & gas — drilling, well control, well service / intervention, tensioner / compensator, and low-pressure oilfield service. Continental ContiTech and Gates."
+  },
+  "blowout-preventers": {
+   "shortDescription": "Annular and ram blowout preventers built to the Hydril GK and Cameron U patterns, ram blocks, control units, choke & kill manifolds, diverters, drilling spools and BOP spares for onshore and offshore drilling, with sour-service (NACE MR0175) construction.",
+   "seoDescription": "Annular and ram BOPs, ram blocks, control units, choke & kill manifolds, diverters, drilling spools and BOP spares, sour service (NACE MR0175), from Dubai."
+  }
+ }
+}

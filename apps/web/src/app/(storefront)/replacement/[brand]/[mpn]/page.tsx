@@ -9,7 +9,7 @@ import {
 } from '@indus/domain'
 import { JsonLd, LeadCapturePanel, buildWhatsappHref, buildMailtoHref } from '@indus/ui'
 import { mediaUrl } from '../../../../../lib/media'
-import { ORG_ID, SITE_NAME, pageMetadata, urlFor } from '../../../../../lib/seo'
+import { SITE_NAME, crawlableImageUrl, pageMetadata, urlFor } from '../../../../../lib/seo'
 import { getReplacementMatches, getReplacementSitemapKeys } from '../../../../../lib/replacement-data'
 import { getStoreSettings } from '../../../../../lib/store-settings'
 
@@ -51,7 +51,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const competitorBrand = first.competitorBrand
   const competitorMpn = first.competitorMpn
   const meta = pageMetadata({
-    title: `${competitorBrand} ${competitorMpn} replacement — Indus Hydraulics`,
+    title: `${competitorBrand} ${competitorMpn} replacement`,
     description: `Indus Hydraulics replacement for ${competitorBrand} ${competitorMpn}. ${matches.length} verified equivalent${matches.length === 1 ? '' : 's'} from our distributor catalogue, with datasheets and lead times.`,
     path: `/replacement/${brand}/${mpn}`,
   })
@@ -73,6 +73,20 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   // The gate is `REPLACEMENT_INDEX_MIN_MATCHES`, shared with the sitemap so the
   // two cannot disagree. A page re-enters the index by gaining a second
   // verified equivalent, with no code change.
+  //
+  // A per-size reference (one competitor number for one Indus part number,
+  // `variantPartNumber` set) is never offered for indexing, however many
+  // listings it matches: the product page already prints it in its size table,
+  // and the brand hub lists its series. The canonical points at that product so
+  // whatever signal this URL earns lands on the page that answers the query.
+  const perSizeProduct = matches.every((m) => m.variantPartNumber) ? matches[0]!.product.slug : null
+  if (perSizeProduct) {
+    return {
+      ...meta,
+      robots: { index: false, follow: true },
+      alternates: { canonical: urlFor(`/p/${perSizeProduct}`) },
+    }
+  }
   if (matches.length < REPLACEMENT_INDEX_MIN_MATCHES) {
     return { ...meta, robots: { index: false, follow: true } }
   }
@@ -96,12 +110,9 @@ export default async function ReplacementPage({ params }: Props) {
     matches: matches.map((m) => ({
       productUrl: urlFor(`/p/${m.product.slug}`),
       productName: m.product.title,
-      imageUrl: m.product.images[0]
-        ? mediaUrl(m.product.images[0]!.media.storagePath)
-        : null,
+      imageUrl: crawlableImageUrl(m.product.images[0]?.media.storagePath),
       compatibility: m.compatibility,
     })),
-    sellerId: ORG_ID,
   })
   const breadcrumbLd = buildBreadcrumbLd({
     items: [
@@ -143,6 +154,17 @@ export default async function ReplacementPage({ params }: Props) {
         </p>
       </header>
 
+      {matches.some((m) => m.variantPartNumber) && (
+        <p className="mb-6 text-[14px] leading-[1.6] text-ih-ink-2">
+          {matches
+            .filter((m) => m.variantPartNumber)
+            .map((m) => m.variantPartNumber)
+            .join(' / ')}{' '}
+          is the Indus part number for this size. The listing below carries the full size table, with the{' '}
+          {competitorBrand} number beside every Indus part number.
+        </p>
+      )}
+
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
         {matches.map((m) => (
           <Link
@@ -154,7 +176,7 @@ export default async function ReplacementPage({ params }: Props) {
               {m.product.images[0] ? (
                 <Image
                   src={mediaUrl(m.product.images[0]!.media.storagePath)}
-                  alt={m.product.images[0]!.media.alt ?? m.product.title}
+                  alt={m.product.images[0]!.alt ?? m.product.images[0]!.media.alt ?? m.product.title}
                   fill
                   className="object-contain p-2"
                   sizes="120px"

@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import {
+  applyMarketCopy,
+  marketMeta,
   buildBreadcrumbLd,
   buildFaqLd,
   buildServiceLd,
@@ -14,7 +16,13 @@ import MarketLanding from '../../../../components/markets/MarketLanding'
 import MarketLandingLegacy from '../../../../components/markets/MarketLandingLegacy'
 import { buildMarketMapModel } from '../../../../lib/market-geometry'
 import { getSubPageContent } from '../../../../lib/page-content'
-import { marketCatalogueClusters, marketStockedBrands } from '../../../../lib/market-catalogue'
+import { getArticlesForMarket } from '../../../../lib/related-reading'
+import {
+  marketCatalogueClusters,
+  marketOperationsImages,
+  marketSectorImages,
+  marketStockedBrands,
+} from '../../../../lib/market-catalogue'
 import { ORG_ID, SITE_NAME, pageMetadata, urlFor } from '../../../../lib/seo'
 import { getStoreSettings } from '../../../../lib/store-settings'
 import { showsReviewerAids } from '../../../../lib/app-env'
@@ -88,9 +96,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params
   const market = marketBySlug(slug)
   if (!market) return {}
+  // Per-country meta from Pages & Blocks; blank keeps the built-in pair.
+  const meta = marketMeta(
+    (await getSubPageContent('market', { name: market.name, slug: market.slug })).values,
+  )
   return pageMetadata({
-    title: `Hydraulic & Industrial Hose Supplier in ${market.name}`,
-    description: market.summary,
+    title: meta.title ?? `Hydraulic & Industrial Hose Supplier in ${market.name}`,
+    description: meta.description ?? market.summary,
     path: `/markets/${market.slug}`,
   })
 }
@@ -100,16 +112,22 @@ export default async function MarketPage({ params }: Props) {
   const market = marketBySlug(slug)
   if (!market) notFound()
 
-  const page = releasedMarketPage(slug)
-
   // Read before the schema is built: whether the FAQ band is on decides
   // whether FAQPage may be emitted at all.
   const content = await getSubPageContent('market', { name: market.name, slug: market.slug })
 
+  // The record is the fallback; the copy an editor has written in Pages &
+  // Blocks is laid over it, field by field and only where complete. Everything
+  // downstream — the page, the FAQPage schema, the map — reads this one object,
+  // so the visible answers and the schema answers cannot diverge.
+  const record = releasedMarketPage(slug)
+  const page = record ? applyMarketCopy(record, content.values) : undefined
+  const meta = marketMeta(content.values)
+
   const structuredData = [
     buildServiceLd({
       name: `Hydraulic and industrial hose supply to ${marketCountryName(market)}`,
-      description: market.summary,
+      description: meta.description ?? market.summary,
       url: urlFor(`/markets/${market.slug}`),
       areaServed: [{ name: marketCountryName(market), type: 'Country' }],
       providerId: ORG_ID,
@@ -144,10 +162,13 @@ export default async function MarketPage({ params }: Props) {
     )
   }
 
-  const [clusters, brands, settings] = await Promise.all([
+  const [clusters, brands, sectorImages, operationsImages, settings, guides] = await Promise.all([
     marketCatalogueClusters(),
     marketStockedBrands(),
+    marketSectorImages(),
+    marketOperationsImages(),
     getStoreSettings(),
+    getArticlesForMarket(market.slug),
   ])
 
   // Projected on the server. The topology never reaches the browser — see the
@@ -163,6 +184,9 @@ export default async function MarketPage({ params }: Props) {
         mapModel={mapModel}
         clusters={clusters}
         brands={brands}
+        sectorImages={sectorImages}
+        operationsImages={operationsImages}
+        guides={guides}
         contact={{
           phone: settings.contactPhone,
           email: settings.contactEmail,

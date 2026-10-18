@@ -23,4 +23,14 @@ describe('offersStainlessOnRequest', () => {
   it('is an allowlist, so a template added later starts silent', () => {
     expect(STAINLESS_ON_REQUEST_TEMPLATES).not.toContain('hammer-union-spec')
   })
+
+  it('is withheld from listings sold under another maker\'s brand', () => {
+    expect(offersStainlessOnRequest('threaded-fitting-spec', 'parker')).toBe(false)
+    expect(offersStainlessOnRequest('hydraulic-adapter-spec', 'tompkins')).toBe(false)
+  })
+
+  it('keeps the offer for Indus-brand and unbranded listings', () => {
+    expect(offersStainlessOnRequest('threaded-fitting-spec', 'indus')).toBe(true)
+    expect(offersStainlessOnRequest('threaded-fitting-spec', null)).toBe(true)
+  })
 })

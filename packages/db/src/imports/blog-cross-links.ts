@@ -148,6 +148,7 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
   // ── failure-analysis ───────────────────────────────────────────────────
   'why-hydraulic-hoses-fail': {
     related: [
+      'hydraulic-hose-guide',
       'hose-failure-post-mortem',
       'hydraulic-hose-inspection',
       'hose-routing-bend-radius-twist',
@@ -263,6 +264,7 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
   // ── fitting-identification ─────────────────────────────────────────────
   'identify-any-hydraulic-fitting': {
     related: [
+      'hydraulic-fittings-guide',
       'hydraulic-thread-size-and-pitch-reference',
       'jic-vs-orfs-vs-npt-vs-bsp',
       'photographing-a-hydraulic-fitting',
@@ -270,6 +272,7 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
   },
   'bspp-vs-bspt': {
     related: [
+      'hydraulic-fittings-guide',
       'bspp-bonded-seal-sizing',
       'stopping-an-npt-thread-leak',
       'hydraulic-thread-size-and-pitch-reference',
@@ -277,6 +280,8 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
   },
   'jic-vs-orfs-vs-npt-vs-bsp': {
     related: [
+      'hydraulic-fittings-guide',
+      'npt-npsm-and-sae-hose-fittings',
       'where-jic-is-the-wrong-choice',
       'sae-j518-code-61-code-62-flanges',
       'identify-any-hydraulic-fitting',
@@ -284,6 +289,7 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
   },
   'hydraulic-thread-size-and-pitch-reference': {
     related: [
+      'hydraulic-fittings-guide',
       'identify-any-hydraulic-fitting',
       'bspp-vs-bspt',
       'photographing-a-hydraulic-fitting',
@@ -313,11 +319,7 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
 
   // ── gulf-conditions ────────────────────────────────────────────────────
   'hydraulic-hose-in-uae-heat': {
-    related: [
-      'why-summer-is-harder-on-hydraulic-hose',
-      'hydraulic-hose-cover-cracking',
-      'injection-moulding-hydraulic-hose',
-    ],
+    related: ['lay-flat-hose-in-gulf-heat', 'why-summer-is-harder-on-hydraulic-hose', 'hydraulic-hose-cover-cracking', 'injection-moulding-hydraulic-hose'],
     pages: [MKT_SAUDI],
   },
   'hydraulic-hose-uv-and-ozone': {
@@ -347,6 +349,8 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
   },
   'offshore-hydraulic-hose': {
     related: [
+      'oilfield-hose-guide',
+      'riser-tensioner-and-compensator-hose',
       'hydraulic-hose-coastal-corrosion',
       'bop-control-hose-fire-resistance',
       'hydraulic-hose-wire-corrosion',
@@ -370,17 +374,14 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
     pages: [MKT_OMAN],
   },
   'desalination-and-water-treatment-hose': {
-    related: [
-      'water-suction-and-dewatering-hose',
-      'industrial-hose-is-not-hydraulic-hose',
-      'chemical-transfer-hose-selection',
-    ],
+    related: ['lay-flat-hose-guide', 'lay-flat-hose-pressure-ratings', 'water-suction-and-dewatering-hose', 'industrial-hose-is-not-hydraulic-hose', 'chemical-transfer-hose-selection'],
     pages: [POWER],
   },
 
   // ── hose-assembly ──────────────────────────────────────────────────────
   'getting-a-hydraulic-hose-made': {
     related: [
+      'hydraulic-hose-assembly-guide',
       'how-to-measure-a-hydraulic-hose',
       'what-to-send-for-a-hose-quote',
       'skiving-and-fitting-selection',
@@ -388,6 +389,8 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
   },
   'skiving-and-fitting-selection': {
     related: [
+      'hydraulic-hose-assembly-guide',
+      'braided-vs-spiral-hose-fittings',
       'hydraulic-hose-crimp-faults',
       'should-you-buy-a-hose-crimper',
       'hose-burst-at-the-fitting',
@@ -418,6 +421,7 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
   },
   'how-to-measure-a-hydraulic-hose': {
     related: [
+      'hydraulic-hose-assembly-guide',
       'what-to-send-for-a-hose-quote',
       'getting-a-hydraulic-hose-made',
       'hydraulic-hose-dash-sizes',
@@ -434,6 +438,8 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
   },
   'hydraulic-fitting-make-up-torque': {
     related: [
+      'hydraulic-hose-assembly-guide',
+      'anti-seize-and-assembly-pastes',
       'new-hydraulic-hose-weeping',
       'cross-threaded-hydraulic-port',
       'stopping-an-npt-thread-leak',
@@ -453,6 +459,8 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
   // ── industrial-hose ────────────────────────────────────────────────────
   'industrial-hose-is-not-hydraulic-hose': {
     related: [
+      'industrial-hose-guide',
+      'hydraulic-hose-guide',
       'chemical-transfer-hose-selection',
       'water-suction-and-dewatering-hose',
       'hydraulic-hose-pressure-by-size',
@@ -460,6 +468,8 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
   },
   'chemical-transfer-hose-selection': {
     related: [
+      'industrial-hose-guide',
+      'uhmwpe-chemical-hose',
       'hydraulic-hose-tube-swelling',
       'industrial-hose-is-not-hydraulic-hose',
       'food-grade-hose-compliance',
@@ -467,6 +477,8 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
   },
   'steam-hose-safety': {
     related: [
+      'industrial-hose-guide',
+      'ground-joint-steam-couplings',
       'industrial-hose-is-not-hydraulic-hose',
       'hose-whip-restraint-and-burst-protection',
       'chemical-transfer-hose-selection',
@@ -475,17 +487,15 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
   },
   'food-grade-hose-compliance': {
     related: [
+      'industrial-hose-guide',
+      'food-hose-materials-compared',
       'chemical-transfer-hose-selection',
       'unbranded-hydraulic-fittings',
       'industrial-hose-is-not-hydraulic-hose',
     ],
   },
   'water-suction-and-dewatering-hose': {
-    related: [
-      'desalination-and-water-treatment-hose',
-      'industrial-hose-is-not-hydraulic-hose',
-      'log-splitter-and-shop-press-hose',
-    ],
+    related: ['construction-dewatering-hose-gcc', 'dewatering-discharge-permits-dubai-qatar', 'suction-hose-vs-lay-flat-hose', 'lay-flat-hose-guide', 'lay-flat-hose-flow-and-friction-loss', 'industrial-hose-guide'],
     pages: [MINING],
   },
 
@@ -568,19 +578,11 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
     pages: [MARINE],
   },
   'tractor-hydraulic-hose': {
-    related: [
-      'hydraulic-quick-couplers-iso-7241',
-      'trapped-pressure-quick-coupler',
-      'log-splitter-and-shop-press-hose',
-    ],
+    related: ['slurry-umbilical-system-guide', 'hydraulic-quick-couplers-iso-7241', 'trapped-pressure-quick-coupler', 'log-splitter-and-shop-press-hose'],
     skus: ['IH-QC-FARM-ISO5675', 'IH-QC-FARM-CUP', 'IH-QC-ISO7241A-V'],
   },
   'concrete-pump-hydraulic-hose': {
-    related: [
-      'tipper-and-transit-mixer-hose',
-      'hydraulic-hose-pressure-by-size',
-      'braid-vs-spiral-hydraulic-hose',
-    ],
+    related: ['concrete-placement-hose-guide', 'tipper-and-transit-mixer-hose', 'hydraulic-hose-pressure-by-size', 'braid-vs-spiral-hydraulic-hose'],
     pages: [CONSTRUCTION],
   },
   'injection-moulding-hydraulic-hose': {
@@ -650,6 +652,8 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
   },
   'grease-and-zerk-fittings': {
     related: [
+      'grease-selection-base-oil-thickener-nlgi',
+      'molykote-lubricant-types-explained',
       'removing-a-seized-hydraulic-fitting',
       'mini-excavator-hose-maintenance',
       'hydraulic-thread-size-and-pitch-reference',
@@ -669,6 +673,7 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
   // ── oilfield-pressure-control ──────────────────────────────────────────
   'api-7k-16c-16d-which-standard': {
     related: [
+      'oilfield-hose-guide',
       'api-16c-choke-and-kill-lines',
       'api-7k-rotary-vibrator-hose',
       'bop-control-hose-fire-resistance',
@@ -677,6 +682,8 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
   },
   'api-16c-choke-and-kill-lines': {
     related: [
+      'oilfield-hose-guide',
+      'positive-vs-adjustable-chokes',
       'api-7k-16c-16d-which-standard',
       'bop-control-hose-fire-resistance',
       'rig-site-hose-replacement-abu-dhabi',
@@ -685,6 +692,8 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
   },
   'bop-control-hose-fire-resistance': {
     related: [
+      'oilfield-hose-guide',
+      'ram-vs-annular-bop',
       'api-7k-16c-16d-which-standard',
       'api-16c-choke-and-kill-lines',
       'offshore-hydraulic-hose',
@@ -693,6 +702,8 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
   },
   'api-7k-rotary-vibrator-hose': {
     related: [
+      'oilfield-hose-guide',
+      'mud-gate-valve-repair-kits',
       'api-7k-16c-16d-which-standard',
       'rig-site-hose-replacement-abu-dhabi',
       'hose-whip-restraint-and-burst-protection',
@@ -701,6 +712,7 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
   },
   'rig-site-hose-replacement-abu-dhabi': {
     related: [
+      'oilfield-hose-guide',
       'api-7k-rotary-vibrator-hose',
       'bulk-hose-refit-and-tagging',
       'on-site-hydraulic-hose-service-uae',
@@ -719,6 +731,7 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
   },
   'what-to-send-for-a-hose-quote': {
     related: [
+      'hydraulic-hose-assembly-guide',
       'how-to-measure-a-hydraulic-hose',
       'photographing-a-hydraulic-fitting',
       'getting-a-hydraulic-hose-made',
@@ -796,6 +809,7 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
   },
   'hose-whip-restraint-and-burst-protection': {
     related: [
+      'flow-iron-explained',
       'hydraulic-fluid-injection-injury',
       'api-7k-rotary-vibrator-hose',
       'mobile-crane-hydraulic-hose',
@@ -812,13 +826,25 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
 
   // ── specification-standards ────────────────────────────────────────────
   'hydraulic-hose-pressure-by-size': {
-    related: ['hydraulic-hose-dash-sizes', 'braid-vs-spiral-hydraulic-hose', 'sae-100r-hose-types'],
+    related: [
+      'hydraulic-hose-guide',
+      'hydraulic-hose-dash-sizes',
+      'braid-vs-spiral-hydraulic-hose',
+      'sae-100r-hose-types',
+    ],
   },
   'braid-vs-spiral-hydraulic-hose': {
-    related: ['sae-100r-hose-types', 'compact-hose-1sc-2sc', 'hydraulic-hose-pressure-by-size'],
+    related: [
+      'hydraulic-hose-guide',
+      'braided-vs-spiral-hose-fittings',
+      'sae-100r-hose-types',
+      'compact-hose-1sc-2sc',
+      'hydraulic-hose-pressure-by-size',
+    ],
   },
   'compact-hose-1sc-2sc': {
     related: [
+      'hydraulic-hose-guide',
       'braid-vs-spiral-hydraulic-hose',
       'hydraulic-hose-kinked',
       'hose-routing-bend-radius-twist',
@@ -826,6 +852,7 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
   },
   'sae-100r-hose-types': {
     related: [
+      'hydraulic-hose-guide',
       'en-853-856-857-vs-sae-100r',
       'braid-vs-spiral-hydraulic-hose',
       'how-to-read-a-hose-layline',
@@ -833,6 +860,7 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
   },
   'en-853-856-857-vs-sae-100r': {
     related: [
+      'hydraulic-hose-guide',
       'sae-100r-hose-types',
       'how-to-cross-reference-a-hydraulic-hose',
       'how-to-read-a-hose-layline',
@@ -840,6 +868,7 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
   },
   'hydraulic-hose-dash-sizes': {
     related: [
+      'hydraulic-hose-guide',
       'hydraulic-hose-pressure-by-size',
       'how-to-measure-a-hydraulic-hose',
       'how-to-read-a-hose-layline',
@@ -847,6 +876,8 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
   },
   'how-to-read-a-hose-layline': {
     related: [
+      'hydraulic-hose-guide',
+      'reading-an-industrial-hose-layline',
       'how-to-cross-reference-a-hydraulic-hose',
       'unbranded-hydraulic-fittings',
       'sae-100r-hose-types',
@@ -924,6 +955,8 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
   },
   'nace-mr0175-hose-documentation': {
     related: [
+      'oilfield-hose-guide',
+      'api-6a-nameplate-markings',
       'material-test-certificate-en-10204',
       'oilfield-hose-document-pack',
       'api-7k-16c-16d-which-standard',
@@ -952,6 +985,8 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
   },
   'oilfield-hose-document-pack': {
     related: [
+      'oilfield-hose-guide',
+      'api-6a-nameplate-markings',
       'api-7k-16c-16d-which-standard',
       'nace-mr0175-hose-documentation',
       'hose-assembly-test-certificate',
@@ -1002,6 +1037,7 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
   },
   'measuring-a-fitting-without-gauges': {
     related: [
+      'hydraulic-fittings-guide',
       'photographing-a-hydraulic-fitting',
       'identify-any-hydraulic-fitting',
       'hydraulic-thread-size-and-pitch-reference',
@@ -1020,6 +1056,7 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
   // lane is the point rather than decoration. Everything else links sideways.
   'what-to-send-for-a-fittings-quote': {
     related: [
+      'hydraulic-fittings-guide',
       'measuring-a-fitting-without-gauges',
       'photographing-a-hydraulic-fitting',
       'what-to-send-for-a-hose-quote',
@@ -1093,7 +1130,7 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
   // decoration. The quarry and drilling-rig pieces carry none: a crusher is a
   // crusher anywhere, and the generated reach section covers the geography.
   'copper-mine-hydraulic-fittings': {
-    related: ['quarry-and-crusher-fittings', 'gold-plant-hydraulic-fittings', 'adapter-kit-for-a-mixed-fleet'],
+    related: ['mine-dewatering-lay-flat-hose', 'quarry-and-crusher-fittings', 'gold-plant-hydraulic-fittings', 'adapter-kit-for-a-mixed-fleet'],
     pages: [
       {
         kind: 'market',
@@ -1137,14 +1174,10 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
     ],
   },
   'quarry-and-crusher-fittings': {
-    related: [
-      'bridging-two-thread-standards',
-      'hydraulic-fitting-make-up-torque',
-      'hydraulic-hose-abrasion-failure',
-    ],
+    related: ['mine-dewatering-lay-flat-hose', 'bridging-two-thread-standards', 'hydraulic-fitting-make-up-torque', 'hydraulic-hose-abrasion-failure'],
   },
   'water-well-drilling-rig-fittings': {
-    related: ['field-re-hosing-kit', 'spares-list-for-a-remote-site', 'measuring-a-fitting-without-gauges'],
+    related: ['flexible-borehole-riser-vs-steel-column-pipe', 'field-re-hosing-kit', 'spares-list-for-a-remote-site', 'measuring-a-fitting-without-gauges'],
   },
   'port-and-terminal-fittings': {
     related: [
@@ -1224,6 +1257,7 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
   },
   'why-fittings-seize-in-coastal-air': {
     related: [
+      'anti-seize-and-assembly-pastes',
       'removing-a-seized-hydraulic-fitting',
       'plating-and-corrosion-on-fittings',
       'galvanic-corrosion-in-fittings',
@@ -1284,6 +1318,870 @@ export const BLOG_CROSS_LINKS: Record<string, BlogCrossLinks> = {
       'should-you-buy-a-hose-crimper',
       'bridging-two-thread-standards',
       'field-re-hosing-kit',
+    ],
+  },
+  // ── industrial-hose cluster, wave 1 (2026-10-06) ─────────────────────
+  'bauer-couplings-explained': {
+    related: ['lay-flat-hose-couplings-guide', 'storz-coupling-sizes', 'water-suction-and-dewatering-hose', 'pvc-or-rubber-suction-hose', 'industrial-hose-couplings-guide'],
+  },
+  'bulk-material-and-sandblast-hose': {
+    related: [
+      'industrial-hose-guide',
+      'hydraulic-hose-sand-abrasion',
+      'industrial-hose-clamps',
+      'universal-air-couplings-explained',
+    ],
+    pages: [CONSTRUCTION],
+  },
+  'cam-and-groove-coupling-types': {
+    related: [
+      'industrial-hose-couplings-guide',
+      'tanker-loading-and-vapour-recovery-hose',
+      'kc-nipples-and-shank-couplings',
+      'chemical-transfer-hose-selection',
+      'industrial-hose-clamps',
+    ],
+  },
+  'composite-hose-explained': {
+    related: [
+      'tanker-loading-and-vapour-recovery-hose',
+      'uhmwpe-chemical-hose',
+      'chemical-transfer-hose-selection',
+      'industrial-hose-guide',
+    ],
+  },
+  'compressed-air-hose-selection': {
+    related: [
+      'universal-air-couplings-explained',
+      'hose-whip-restraint-and-burst-protection',
+      'reading-an-industrial-hose-layline',
+      'industrial-hose-guide',
+    ],
+  },
+  'corrugated-stainless-steel-hose': {
+    related: [
+      'metal-hose-guide',
+      'exotic-alloy-metal-hose',
+      'high-pressure-metal-hose',
+      'hydraulic-hose-coastal-corrosion',
+    ],
+  },
+  'cryogenic-transfer-hose': {
+    related: [
+      'metal-hose-guide',
+      'corrugated-stainless-steel-hose',
+      'exotic-alloy-metal-hose',
+      'ptfe-hose-explained',
+    ],
+    pages: [OIL_GAS],
+  },
+  'en-14420-hose-fittings-explained': {
+    related: [
+      'industrial-hose-clamps',
+      'cam-and-groove-coupling-types',
+      'uhmwpe-chemical-hose',
+      'industrial-hose-couplings-guide',
+    ],
+  },
+  'exotic-alloy-metal-hose': {
+    related: [
+      'metal-hose-guide',
+      'corrugated-stainless-steel-hose',
+      'cryogenic-transfer-hose',
+      'chemical-transfer-hose-selection',
+    ],
+  },
+  'flanged-hose-connections': {
+    related: [
+      'industrial-hose-couplings-guide',
+      'kc-nipples-and-shank-couplings',
+      'composite-hose-explained',
+      'sae-j518-code-61-code-62-flanges',
+    ],
+  },
+  'food-hose-materials-compared': {
+    related: [
+      'food-grade-hose-compliance',
+      'uhmwpe-chemical-hose',
+      'steam-hose-safety',
+      'industrial-hose-guide',
+    ],
+  },
+  'gost-barcelona-and-geka-couplings': {
+    related: [
+      'storz-coupling-sizes',
+      'guillemin-couplings-explained',
+      'industrial-hose-couplings-guide',
+    ],
+  },
+  'ground-joint-steam-couplings': {
+    related: [
+      'steam-hose-safety',
+      'industrial-hose-clamps',
+      'en-14420-hose-fittings-explained',
+      'industrial-hose-safety-factors',
+    ],
+  },
+  'guillemin-couplings-explained': {
+    related: [
+      'storz-coupling-sizes',
+      'gost-barcelona-and-geka-couplings',
+      'industrial-hose-couplings-guide',
+    ],
+  },
+  'high-pressure-metal-hose': {
+    related: [
+      'metal-hose-guide',
+      'corrugated-stainless-steel-hose',
+      'hydraulic-hose-pressure-by-size',
+      'ptfe-hose-explained',
+    ],
+  },
+  'industrial-hose-clamps': {
+    related: [
+      'kc-nipples-and-shank-couplings',
+      'en-14420-hose-fittings-explained',
+      'ground-joint-steam-couplings',
+      'industrial-hose-couplings-guide',
+    ],
+  },
+  'industrial-hose-couplings-guide': {
+    related: ['lay-flat-hose-couplings-guide', 'industrial-hose-guide', 'cam-and-groove-coupling-types', 'storz-coupling-sizes', 'industrial-hose-clamps', 'flanged-hose-connections'],
+  },
+  'industrial-hose-guide': {
+    related: ['lay-flat-hose-guide', 'tpu-vs-nbr-vs-pvc-lay-flat-hose', 'industrial-hose-couplings-guide', 'metal-hose-guide', 'industrial-hose-safety-factors', 'industrial-hose-is-not-hydraulic-hose'],
+  },
+  'industrial-hose-safety-factors': {
+    related: [
+      'industrial-hose-guide',
+      'reading-an-industrial-hose-layline',
+      'api-7k-16c-16d-which-standard',
+      'hydraulic-hose-pressure-by-size',
+    ],
+  },
+  'kc-nipples-and-shank-couplings': {
+    related: [
+      'cam-and-groove-coupling-types',
+      'industrial-hose-clamps',
+      'flanged-hose-connections',
+      'industrial-hose-couplings-guide',
+    ],
+  },
+  'metal-hose-guide': {
+    related: [
+      'corrugated-stainless-steel-hose',
+      'exotic-alloy-metal-hose',
+      'high-pressure-metal-hose',
+      'ptfe-hose-explained',
+      'cryogenic-transfer-hose',
+      'industrial-hose-guide',
+    ],
+  },
+  'oil-suction-and-discharge-hose': {
+    related: ['antistatic-fuel-transfer-hose-guide', 'tpu-vs-nbr-vs-pvc-lay-flat-hose', 'tanker-loading-and-vapour-recovery-hose', 'uhmwpe-chemical-hose', 'cam-and-groove-coupling-types', 'industrial-hose-guide'],
+    pages: [OIL_GAS],
+  },
+  'ptfe-hose-explained': {
+    related: [
+      'metal-hose-guide',
+      'uhmwpe-chemical-hose',
+      'hydraulic-hose-cover-blistering',
+      'hydraulic-hose-tube-swelling',
+    ],
+  },
+  'pvc-or-rubber-suction-hose': {
+    related: ['suction-hose-vs-lay-flat-hose', 'tpu-vs-nbr-vs-pvc-lay-flat-hose', 'water-suction-and-dewatering-hose', 'hydraulic-hose-in-uae-heat', 'food-hose-materials-compared', 'bauer-couplings-explained'],
+  },
+  'reading-an-industrial-hose-layline': {
+    related: [
+      'industrial-hose-safety-factors',
+      'how-to-read-a-hose-layline',
+      'verifying-a-genuine-hydraulic-hose',
+      'industrial-hose-guide',
+    ],
+  },
+  'storz-coupling-sizes': {
+    related: ['flood-response-pumping-lay-flat-hose', 'fire-hose-standards-en-14540-bs-6391-nfpa', 'guillemin-couplings-explained', 'gost-barcelona-and-geka-couplings', 'bauer-couplings-explained', 'industrial-hose-couplings-guide'],
+  },
+  'tanker-loading-and-vapour-recovery-hose': {
+    related: [
+      'oil-suction-and-discharge-hose',
+      'composite-hose-explained',
+      'cam-and-groove-coupling-types',
+      'industrial-hose-guide',
+    ],
+    pages: [OIL_GAS],
+  },
+  'uhmwpe-chemical-hose': {
+    related: [
+      'chemical-transfer-hose-selection',
+      'composite-hose-explained',
+      'food-hose-materials-compared',
+      'en-14420-hose-fittings-explained',
+    ],
+  },
+  'universal-air-couplings-explained': {
+    related: [
+      'compressed-air-hose-selection',
+      'hose-whip-restraint-and-burst-protection',
+      'industrial-hose-couplings-guide',
+    ],
+  },
+  // ── hose pillars and fittings, wave 2 (2026-10-06) ─────────────────
+  'hydraulic-hose-guide': {
+    related: [
+      'braid-vs-spiral-hydraulic-hose',
+      'sae-100r-hose-types',
+      'hydraulic-hose-pressure-by-size',
+      'hydraulic-hose-assembly-guide',
+      'hydraulic-fittings-guide',
+      'industrial-hose-guide',
+    ],
+  },
+  'hydraulic-fittings-guide': {
+    related: [
+      'identify-any-hydraulic-fitting',
+      'jic-vs-orfs-vs-npt-vs-bsp',
+      'hydraulic-thread-size-and-pitch-reference',
+      'npt-npsm-and-sae-hose-fittings',
+      'ss316l-hydraulic-fittings',
+      'hydraulic-hose-guide',
+    ],
+  },
+  'hydraulic-hose-assembly-guide': {
+    related: [
+      'getting-a-hydraulic-hose-made',
+      'skiving-and-fitting-selection',
+      'hydraulic-hose-crimp-faults',
+      'braided-vs-spiral-hose-fittings',
+      'should-you-buy-a-hose-crimper',
+      'hydraulic-hose-guide',
+    ],
+  },
+  'braided-vs-spiral-hose-fittings': {
+    related: [
+      'braid-vs-spiral-hydraulic-hose',
+      'skiving-and-fitting-selection',
+      'hydraulic-hose-assembly-guide',
+      'hose-burst-at-the-fitting',
+    ],
+  },
+  'npt-npsm-and-sae-hose-fittings': {
+    related: [
+      'stopping-an-npt-thread-leak',
+      'fittings-on-american-machines',
+      'sealant-on-hydraulic-threads',
+      'hydraulic-fittings-guide',
+    ],
+  },
+  'ss316l-hydraulic-fittings': {
+    related: [
+      'when-stainless-is-worth-it',
+      'galvanic-corrosion-in-fittings',
+      'why-fittings-seize-in-coastal-air',
+      'hydraulic-fittings-guide',
+    ],
+  },
+  'oilfield-hose-guide': {
+    related: [
+      'api-7k-16c-16d-which-standard',
+      'api-16c-choke-and-kill-lines',
+      'bop-control-hose-fire-resistance',
+      'well-service-and-stimulation-hose',
+      'oilfield-hose-document-pack',
+      'hydraulic-hose-guide',
+    ],
+    pages: [OIL_GAS],
+  },
+  'well-service-and-stimulation-hose': {
+    related: ['frac-water-transfer-lay-flat-hose', 'lay-flat-hose-vs-hdpe-pipe', 'lay-flat-hose-flow-and-friction-loss', 'oilfield-hose-guide', 'api-16c-choke-and-kill-lines', 'nace-mr0175-hose-documentation'],
+    pages: [OIL_GAS],
+  },
+  'riser-tensioner-and-compensator-hose': {
+    related: [
+      'oilfield-hose-guide',
+      'api-7k-rotary-vibrator-hose',
+      'offshore-hydraulic-hose',
+      'well-service-and-stimulation-hose',
+    ],
+    pages: [OIL_GAS],
+  },
+  // ── uncovered shelves, wave 3 (2026-10-06) ───────────────────────────
+  // Industry cards only — oil and gas on the pressure-control pieces, marine
+  // on the marine lifting pieces, construction on slings and plate clamps.
+  // No market cards: none of these articles is about a place.
+  'molykote-lubricant-types-explained': {
+    related: [
+      'anti-seize-and-assembly-pastes',
+      'anti-friction-coatings-explained',
+      'grease-selection-base-oil-thickener-nlgi',
+      'grease-and-zerk-fittings',
+      'why-fittings-seize-in-coastal-air',
+    ],
+  },
+  'anti-seize-and-assembly-pastes': {
+    related: [
+      'molykote-lubricant-types-explained',
+      'why-fittings-seize-in-coastal-air',
+      'galvanic-corrosion-in-fittings',
+      'hydraulic-fitting-make-up-torque',
+      'anti-friction-coatings-explained',
+    ],
+  },
+  'anti-friction-coatings-explained': {
+    related: [
+      'molykote-lubricant-types-explained',
+      'anti-seize-and-assembly-pastes',
+      'grease-selection-base-oil-thickener-nlgi',
+      'hydraulic-hose-sand-abrasion',
+    ],
+  },
+  'grease-selection-base-oil-thickener-nlgi': {
+    related: [
+      'molykote-lubricant-types-explained',
+      'grease-and-zerk-fittings',
+      'anti-friction-coatings-explained',
+      'food-grade-hose-compliance',
+    ],
+  },
+  'hammer-union-figure-numbers': {
+    related: [
+      'flow-iron-explained',
+      'lubricated-vs-non-lubricated-plug-valves',
+      'well-service-and-stimulation-hose',
+      'api-16c-choke-and-kill-lines',
+      'hose-whip-restraint-and-burst-protection',
+    ],
+    pages: [OIL_GAS],
+  },
+  'ring-joint-gaskets-r-rx-bx': {
+    related: [
+      'api-6a-nameplate-markings',
+      'wellhead-components-explained',
+      'ram-vs-annular-bop',
+      'flow-iron-explained',
+      'sae-j518-code-61-code-62-flanges',
+    ],
+    pages: [OIL_GAS],
+  },
+  'flow-iron-explained': {
+    related: [
+      'hammer-union-figure-numbers',
+      'lubricated-vs-non-lubricated-plug-valves',
+      'oilfield-check-valves-explained',
+      'positive-vs-adjustable-chokes',
+      'well-service-and-stimulation-hose',
+      'hose-whip-restraint-and-burst-protection',
+    ],
+    pages: [OIL_GAS],
+  },
+  'api-6a-nameplate-markings': {
+    related: [
+      'ring-joint-gaskets-r-rx-bx',
+      'wellhead-components-explained',
+      'mud-gate-valve-repair-kits',
+      'nace-mr0175-hose-documentation',
+      'material-test-certificate-en-10204',
+    ],
+    pages: [OIL_GAS],
+  },
+  'wellhead-components-explained': {
+    related: [
+      'api-6a-nameplate-markings',
+      'ring-joint-gaskets-r-rx-bx',
+      'ram-vs-annular-bop',
+      'oilfield-hose-guide',
+      'rig-site-hose-replacement-abu-dhabi',
+    ],
+    pages: [OIL_GAS],
+  },
+  'mud-gate-valve-repair-kits': {
+    related: [
+      'api-6a-nameplate-markings',
+      'demco-butterfly-valve-part-numbers',
+      'api-7k-rotary-vibrator-hose',
+      'cross-referencing-a-fitting-part-number',
+    ],
+    pages: [OIL_GAS],
+  },
+  'lubricated-vs-non-lubricated-plug-valves': {
+    related: [
+      'flow-iron-explained',
+      'hammer-union-figure-numbers',
+      'oilfield-check-valves-explained',
+      'positive-vs-adjustable-chokes',
+      'well-service-and-stimulation-hose',
+    ],
+    pages: [OIL_GAS],
+  },
+  'oilfield-check-valves-explained': {
+    related: [
+      'flow-iron-explained',
+      'lubricated-vs-non-lubricated-plug-valves',
+      'hammer-union-figure-numbers',
+      'api-7k-rotary-vibrator-hose',
+      'trapped-pressure-quick-coupler',
+    ],
+    pages: [OIL_GAS],
+  },
+  'positive-vs-adjustable-chokes': {
+    related: [
+      'flow-iron-explained',
+      'api-16c-choke-and-kill-lines',
+      'well-service-and-stimulation-hose',
+      'oilfield-check-valves-explained',
+      'hammer-union-figure-numbers',
+    ],
+    pages: [OIL_GAS],
+  },
+  'ram-vs-annular-bop': {
+    related: [
+      'bop-control-hose-fire-resistance',
+      'api-16c-choke-and-kill-lines',
+      'ring-joint-gaskets-r-rx-bx',
+      'wellhead-components-explained',
+      'hydraulic-hose-shelf-life-storage',
+    ],
+    pages: [OIL_GAS],
+  },
+  'demco-butterfly-valve-part-numbers': {
+    related: [
+      'mud-gate-valve-repair-kits',
+      'ball-valve-pressure-ratings-cwp-wog',
+      'cross-referencing-a-fitting-part-number',
+      'what-to-send-for-a-fittings-quote',
+    ],
+  },
+  'ball-valve-pressure-ratings-cwp-wog': {
+    related: [
+      'hammer-union-figure-numbers',
+      'lubricated-vs-non-lubricated-plug-valves',
+      'demco-butterfly-valve-part-numbers',
+      'sae-j518-code-61-code-62-flanges',
+      'hydraulic-hose-pressure-by-size',
+    ],
+  },
+  'types-of-marine-fenders': {
+    related: [
+      'types-of-mooring-bollards',
+      'types-of-marine-anchors',
+      'fibre-rope-materials-compared',
+      'port-and-terminal-fittings',
+      'port-equipment-hydraulic-hose',
+    ],
+    pages: [MARINE],
+  },
+  'types-of-marine-anchors': {
+    related: [
+      'anchor-chain-grades-u1-u2-u3',
+      'types-of-mooring-bollards',
+      'types-of-marine-fenders',
+      'types-of-shackles',
+      'stainless-vs-galvanized-rigging-gulf',
+    ],
+    pages: [MARINE],
+  },
+  'anchor-chain-grades-u1-u2-u3': {
+    related: [
+      'types-of-marine-anchors',
+      'chain-grades-explained',
+      'din-link-chain-standards',
+      'types-of-shackles',
+      'working-load-limit-vs-breaking-strength',
+    ],
+    pages: [MARINE],
+  },
+  'types-of-mooring-bollards': {
+    related: [
+      'types-of-marine-fenders',
+      'fibre-rope-materials-compared',
+      'types-of-marine-anchors',
+      'working-load-limit-vs-breaking-strength',
+      'port-and-terminal-fittings',
+    ],
+    pages: [MARINE],
+  },
+  'fibre-rope-materials-compared': {
+    related: [
+      'types-of-mooring-bollards',
+      'wire-rope-construction-explained',
+      'types-of-lifting-slings',
+      'working-load-limit-vs-breaking-strength',
+      'anchor-chain-grades-u1-u2-u3',
+    ],
+    pages: [MARINE],
+  },
+  'snap-hooks-and-quick-links': {
+    pages: [MARINE],
+    related: [
+      'master-links-explained',
+      'types-of-shackles',
+      'lifting-hook-types',
+      'working-load-limit-vs-breaking-strength',
+      'stainless-vs-galvanized-rigging-gulf',
+    ],
+  },
+  'chain-sling-codes-explained': {
+    related: [
+      'chain-sling-shortening-clutches-and-grab-hooks',
+      'hammerlock-vs-clevis-chain-fittings',
+      'chain-grades-explained',
+      'sling-angle-chart',
+      'master-links-explained',
+      'lifting-hook-types',
+    ],
+    pages: [CONSTRUCTION],
+  },
+  'vertical-vs-horizontal-plate-lifting-clamps': {
+    related: [
+      'steel-erection-rigging-equipment',
+      'chain-block-vs-lever-hoist-vs-electric-hoist',
+      'working-load-limit-vs-breaking-strength',
+      'lifting-equipment-inspection-uae',
+      'lifting-gear-test-certificate',
+      'sling-angle-chart',
+    ],
+    pages: [CONSTRUCTION],
+  },
+  // ── lifting & rigging: industry cards (2026-10-14) ─────────────────────
+  // The lifting articles once carried their links in their seeds; these entries move the graph
+  // here so each can carry an industry card. Related lists are the live ones, unchanged.
+  // Industry cards only — the market budget below is not touched.
+  'chain-block-vs-lever-hoist-vs-electric-hoist': {
+    pages: [CONSTRUCTION, STEEL],
+    related: [
+      'beam-trolley-guide',
+      'shutdown-and-turnaround-rigging',
+      'lifting-chillers-and-rooftop-plant',
+      'snatch-block-vs-pulley-block',
+      'lifting-hook-types',
+      'lifting-equipment-inspection-uae',
+    ],
+  },
+  'chain-grades-explained': {
+    pages: [CONSTRUCTION],
+    related: [
+      'grade-80-vs-grade-100-chain-slings',
+      'stainless-steel-lifting-chain',
+      'working-load-limit-vs-breaking-strength',
+      'types-of-lifting-slings',
+      'din-link-chain-standards',
+      'sling-angle-chart',
+    ],
+  },
+  'chain-sling-capacity-chart': {
+    pages: [CONSTRUCTION],
+    related: [
+      'chain-sling-codes-explained',
+      'sling-angle-chart',
+      'chain-grades-explained',
+      'master-links-explained',
+      'wire-rope-sling-capacity-chart',
+      'lifting-gear-rejection-criteria',
+    ],
+  },
+  'crosby-pattern-numbers-explained': {
+    pages: [CONSTRUCTION],
+    related: [
+      'g-209-vs-g-2130-vs-g-213-shackle',
+      'bs-3032-din-82101-as-2741-shackles',
+      'types-of-shackles',
+      'lifting-hook-types',
+      'lifting-gear-test-certificate',
+      'wire-rope-thimble-types',
+    ],
+  },
+  'din-link-chain-standards': {
+    pages: [MINING],
+    related: [
+      'chain-grades-explained',
+      'types-of-lifting-slings',
+      'stainless-vs-galvanized-rigging-gulf',
+    ],
+  },
+  'eye-bolt-capacity-chart': {
+    pages: [CONSTRUCTION],
+    related: [
+      'eye-bolt-types-and-angled-loads',
+      'pad-eye-vs-swivel-lifting-point',
+      'shackle-size-and-capacity-chart',
+      'sling-angle-chart',
+      'working-load-limit-vs-breaking-strength',
+      'lifting-equipment-inspection-uae',
+    ],
+  },
+  'eye-bolt-types-and-angled-loads': {
+    pages: [CONSTRUCTION],
+    related: [
+      'pad-eye-vs-swivel-lifting-point',
+      'sling-angle-chart',
+      'types-of-shackles',
+      'working-load-limit-vs-breaking-strength',
+      'lifting-equipment-inspection-uae',
+    ],
+  },
+  'lever-vs-ratchet-load-binder': {
+    pages: [CONSTRUCTION],
+    related: [
+      'ratchet-strap-vs-chain-and-binder',
+      'chain-grades-explained',
+      'working-load-limit-vs-breaking-strength',
+    ],
+  },
+  'lifting-equipment-inspection-uae': {
+    pages: [CONSTRUCTION, OIL_GAS],
+    related: [
+      'lifting-equipment-register-uae',
+      'lifting-equipment-rules-gcc',
+      'site-mobilisation-rigging-kit',
+      'lifting-gear-rejection-criteria',
+      'lifting-gear-test-certificate',
+      'shackle-markings-explained',
+    ],
+  },
+  'lifting-gear-rejection-criteria': {
+    pages: [CONSTRUCTION],
+    related: [
+      'asme-b30-26-rigging-hardware-explained',
+      'lifting-gear-test-certificate',
+      'lifting-equipment-inspection-uae',
+      'lifting-hook-types',
+      'types-of-lifting-slings',
+      'chain-grades-explained',
+    ],
+  },
+  'lifting-gear-test-certificate': {
+    pages: [CONSTRUCTION, OIL_GAS],
+    related: [
+      'proof-load-testing-lifting-gear',
+      'how-to-spot-counterfeit-rigging-hardware',
+      'lifting-gear-rejection-criteria',
+      'lifting-equipment-inspection-uae',
+      'working-load-limit-vs-breaking-strength',
+      'material-test-certificate-en-10204',
+    ],
+  },
+  'lifting-hook-types': {
+    pages: [CONSTRUCTION],
+    related: [
+      'lifting-swivels-explained',
+      'chain-sling-shortening-clutches-and-grab-hooks',
+      'master-links-explained',
+      'lifting-gear-rejection-criteria',
+      'chain-grades-explained',
+      'types-of-shackles',
+    ],
+  },
+  'master-links-explained': {
+    pages: [CONSTRUCTION],
+    related: [
+      'hammerlock-vs-clevis-chain-fittings',
+      'grade-80-vs-grade-100-chain-slings',
+      'sling-angle-chart',
+      'lifting-hook-types',
+      'chain-grades-explained',
+      'types-of-lifting-slings',
+    ],
+  },
+  'pad-eye-vs-swivel-lifting-point': {
+    pages: [OIL_GAS, MARINE],
+    related: [
+      'eye-bolt-types-and-angled-loads',
+      'sling-angle-chart',
+      'master-links-explained',
+      'lifting-equipment-inspection-uae',
+    ],
+  },
+  'precast-concrete-lifting-clutch': {
+    pages: [CONSTRUCTION],
+    related: [
+      'precast-panel-and-beam-rigging',
+      'lifting-gear-rejection-criteria',
+      'pad-eye-vs-swivel-lifting-point',
+      'sling-angle-chart',
+      'lifting-equipment-inspection-uae',
+    ],
+  },
+  'ratchet-strap-vs-chain-and-binder': {
+    pages: [CONSTRUCTION],
+    related: [
+      'lever-vs-ratchet-load-binder',
+      'chain-grades-explained',
+      'types-of-lifting-slings',
+      'working-load-limit-vs-breaking-strength',
+    ],
+  },
+  'shackle-size-and-capacity-chart': {
+    pages: [CONSTRUCTION],
+    related: [
+      'commercial-grade-vs-lifting-grade-shackles',
+      'g-209-vs-g-2130-vs-g-213-shackle',
+      'bs-3032-din-82101-as-2741-shackles',
+      'types-of-shackles',
+      'crosby-pattern-numbers-explained',
+      'stainless-vs-galvanized-rigging-gulf',
+    ],
+  },
+  'sling-angle-chart': {
+    pages: [CONSTRUCTION],
+    related: [
+      'working-load-limit-vs-breaking-strength',
+      'eye-bolt-types-and-angled-loads',
+      'sling-colour-code-chart',
+      'types-of-shackles',
+      'chain-grades-explained',
+      'wire-rope-clips-installation',
+    ],
+  },
+  'sling-colour-code-chart': {
+    pages: [CONSTRUCTION],
+    related: [
+      'types-of-lifting-slings',
+      'sling-angle-chart',
+      'working-load-limit-vs-breaking-strength',
+      'lifting-equipment-inspection-uae',
+    ],
+  },
+  'snatch-block-vs-pulley-block': {
+    pages: [CONSTRUCTION, MARINE],
+    related: [
+      'wire-rope-construction-explained',
+      'types-of-shackles',
+      'chain-block-vs-lever-hoist-vs-electric-hoist',
+      'working-load-limit-vs-breaking-strength',
+    ],
+  },
+  'spelter-sockets-open-vs-closed': {
+    pages: [OIL_GAS, MARINE],
+    related: [
+      'wire-rope-eye-terminations',
+      'wire-rope-thimble-types',
+      'wire-rope-construction-explained',
+      'wire-rope-clips-installation',
+    ],
+  },
+  'stainless-vs-galvanized-rigging-gulf': {
+    pages: [MARINE],
+    related: [
+      'stainless-steel-lifting-chain',
+      'jetty-and-marine-construction-rigging',
+      'types-of-shackles',
+      'chain-grades-explained',
+      'wire-rope-eye-terminations',
+      'why-fittings-seize-in-coastal-air',
+    ],
+  },
+  'turnbuckle-types': {
+    pages: [CONSTRUCTION],
+    related: [
+      'how-to-choose-and-tension-a-turnbuckle',
+      'din-1480-vs-din-1478-turnbuckle',
+      'turnbuckles-for-guy-wires-and-cable-bracing',
+      'types-of-shackles',
+      'wire-rope-clips-installation',
+      'working-load-limit-vs-breaking-strength',
+    ],
+  },
+  'types-of-lifting-slings': {
+    pages: [CONSTRUCTION],
+    related: [
+      'site-mobilisation-rigging-kit',
+      'tower-crane-rigging-gear',
+      'sling-colour-code-chart',
+      'sling-angle-chart',
+      'master-links-explained',
+      'wire-rope-eye-terminations',
+    ],
+  },
+  'types-of-shackles': {
+    pages: [CONSTRUCTION],
+    related: [
+      'shackle-buying-guide-uae',
+      'g-209-vs-g-2130-vs-g-213-shackle',
+      'how-to-rig-a-shackle-correctly',
+      'working-load-limit-vs-breaking-strength',
+      'sling-angle-chart',
+      'eye-bolt-types-and-angled-loads',
+    ],
+  },
+  'webbing-and-round-sling-capacity-chart': {
+    pages: [CONSTRUCTION],
+    related: [
+      'sling-colour-code-chart',
+      'sling-angle-chart',
+      'types-of-lifting-slings',
+      'chain-sling-capacity-chart',
+      'wire-rope-sling-capacity-chart',
+      'lifting-gear-rejection-criteria',
+    ],
+  },
+  'wire-rope-breaking-strength-chart': {
+    pages: [MARINE],
+    related: [
+      'wire-rope-construction-explained',
+      'wire-rope-sling-capacity-chart',
+      'working-load-limit-vs-breaking-strength',
+      'wire-rope-eye-terminations',
+      'wire-rope-clips-installation',
+      'spelter-sockets-open-vs-closed',
+    ],
+  },
+  'wire-rope-clips-installation': {
+    pages: [CONSTRUCTION],
+    related: [
+      'turnbuckles-for-guy-wires-and-cable-bracing',
+      'wire-rope-construction-explained',
+      'working-load-limit-vs-breaking-strength',
+      'sling-angle-chart',
+    ],
+  },
+  'wire-rope-construction-explained': {
+    pages: [MARINE],
+    related: [
+      'wire-rope-clips-installation',
+      'working-load-limit-vs-breaking-strength',
+      'sling-angle-chart',
+      'chain-grades-explained',
+    ],
+  },
+  'wire-rope-eye-terminations': {
+    pages: [MARINE],
+    related: [
+      'spelter-sockets-open-vs-closed',
+      'wire-rope-thimble-types',
+      'wire-rope-clips-installation',
+      'wire-rope-construction-explained',
+    ],
+  },
+  'wire-rope-sling-capacity-chart': {
+    pages: [CONSTRUCTION],
+    related: [
+      'wire-rope-breaking-strength-chart',
+      'wire-rope-eye-terminations',
+      'sling-angle-chart',
+      'chain-sling-capacity-chart',
+      'wire-rope-construction-explained',
+      'lifting-gear-rejection-criteria',
+    ],
+  },
+  'wire-rope-thimble-types': {
+    pages: [MARINE],
+    related: [
+      'wire-rope-eye-terminations',
+      'wire-rope-clips-installation',
+      'types-of-shackles',
+      'wire-rope-construction-explained',
+    ],
+  },
+  'working-load-limit-vs-breaking-strength': {
+    pages: [CONSTRUCTION],
+    related: [
+      'proof-load-testing-lifting-gear',
+      'types-of-shackles',
+      'sling-angle-chart',
+      'types-of-lifting-slings',
+      'chain-grades-explained',
+      'lifting-equipment-inspection-uae',
     ],
   },
 }

@@ -4,6 +4,7 @@ import { revalidatePath } from 'next/cache'
 import { z } from 'zod'
 import { db, Prisma } from '@indus/db'
 import { auth } from '../../../../../../lib/admin-auth'
+import { notifyIndexNow } from '../../../../../../lib/indexnow'
 import { ROLES, requireRole } from '../../../../../../lib/rbac'
 import { fail, failFromError, ok, type Result } from '../../../../../../lib/result'
 import { scoreFromProduct } from '../../../../../../lib/product-content-score'
@@ -415,5 +416,8 @@ async function recomputeContentScore(productId: string): Promise<void> {
 function revalidateProduct(productId: string, slug?: string): void {
   revalidatePath(`/admin/products/${productId}/edit`)
   revalidatePath('/admin/products')
-  if (slug) revalidatePath(`/p/${slug}`)
+  if (slug) {
+    revalidatePath(`/p/${slug}`)
+    notifyIndexNow([`/p/${slug}`])
+  }
 }

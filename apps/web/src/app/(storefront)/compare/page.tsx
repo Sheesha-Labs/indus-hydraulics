@@ -1,3 +1,5 @@
+import { CATEGORY_WITH_IMAGE_CHAIN, nearestCategoryImage } from '../../../lib/category-fallback'
+import { CategoryFallbackImage } from '../../../components/ProductCard'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -89,7 +91,7 @@ export default async function ComparePage({ searchParams }: Props) {
         where: { sku: { in: skuList } },
         include: {
           brand: true,
-          category: true,
+          category: CATEGORY_WITH_IMAGE_CHAIN,
           images: { orderBy: { position: 'asc' }, take: 1, include: { media: true } },
           specs: { orderBy: [{ position: 'asc' }] },
           specTemplate: {
@@ -331,7 +333,9 @@ export default async function ComparePage({ searchParams }: Props) {
                   <div role="columnheader" key={product.id} className="border-l border-ih-border bg-ih-surface p-5 relative">
                     <div className="aspect-[4/3] bg-ih-surface-2 border border-ih-border mb-3.5 relative overflow-hidden">
                       {img ? (
-                        <Image src={mediaUrl(img.media.storagePath)} alt={product.title} fill className="object-contain p-4" sizes="25vw" />
+                        <Image src={mediaUrl(img.media.storagePath)} alt={img.alt ?? img.media.alt ?? product.title} fill className="object-contain p-4" sizes="25vw" />
+                      ) : nearestCategoryImage(product.category) ? (
+                        <CategoryFallbackImage {...nearestCategoryImage(product.category)!} sizes="25vw" />
                       ) : (
                         <div className="absolute inset-0 grid place-items-center font-mono text-[11px] text-ih-muted">{product.sku}</div>
                       )}

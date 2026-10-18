@@ -18,14 +18,14 @@ import type { ReferencesBlock } from '@indus/domain'
  */
 export default function ReferencesBlockView({ block }: { block: ReferencesBlock }) {
   return (
-    <section className="mt-12 border-t border-ih-border pt-6">
+    <section className="mt-8 border-t border-ih-border pt-7">
       <h2 className="mb-4 text-[17px] font-semibold text-ih-ink">{block.heading ?? 'References'}</h2>
       <ol className="list-none space-y-2.5 p-0">
         {block.entries.map((entry, i) => (
           <li
             key={entry.id}
             id={`ref-${entry.id}`}
-            className="grid scroll-mt-24 grid-cols-[2rem_1fr] text-[13.5px] leading-[1.6] text-ih-ink-2"
+            className="grid scroll-mt-[124px] grid-cols-[2rem_1fr] text-[14px] leading-[1.6] text-ih-ink-2 min-[761px]:scroll-mt-[184px]"
           >
             <span className="mono text-[11.5px] text-ih-muted">{i + 1}.</span>
             <span>
@@ -37,7 +37,8 @@ export default function ReferencesBlockView({ block }: { block: ReferencesBlock 
                     href={entry.url}
                     rel="nofollow noopener"
                     target="_blank"
-                    className="mono text-[11.5px] text-ih-accent hover:underline"
+                    aria-label="Open source"
+                    className="mono inline-flex min-h-10 min-w-10 items-center justify-center text-[11.5px] text-ih-accent hover:underline"
                   >
                     ↗
                   </a>

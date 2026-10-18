@@ -1,12 +1,11 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
-import Link from 'next/link'
 import { db } from '@indus/db'
 import { buildBreadcrumbLd, buildCollectionLd } from '@indus/domain'
 import { JsonLd, buildMailtoHref, buildWhatsappHref } from '@indus/ui'
-import BlogArticleRenderer from '../../../../../components/blog/BlogArticleRenderer'
-import BlogPostCard from '../../../../../components/blog/BlogPostCard'
+import BlogTopicHub from '../../../../../components/blog/BlogTopicHub'
 import { resolveBlogArticle } from '../../../../../lib/blog-article'
+import { getBlogTopics } from '../../../../../lib/blog-index'
 import { listBlogPosts } from '../../../../../lib/blog-posts'
 import { pageMetadata, urlFor } from '../../../../../lib/seo'
 import { getStoreSettings } from '../../../../../lib/store-settings'
@@ -76,13 +75,14 @@ export default async function BlogCategoryPage({ params }: Props) {
   const category = await db.blogCategory.findUnique({ where: { slug, isPublished: true } })
   if (!category) notFound()
 
-  const [posts, settings] = await Promise.all([
+  const [posts, settings, topics] = await Promise.all([
     listBlogPosts({ categoryId: category.id }),
     getStoreSettings(),
+    getBlogTopics(),
   ])
   const hubUrl = urlFor(`/blog/c/${category.slug}`)
 
-  // A hub with no body is every hub as it shipped: header, then the grid.
+  // A hub with no body is every hub as it shipped: header, then the articles.
   // `resolveBlogArticle` is only worth its two queries when there is one.
   const hubBody = category.bodyBlocks ? await resolveBlogArticle(category.bodyBlocks) : null
   const contact = {
@@ -106,55 +106,17 @@ export default async function BlogCategoryPage({ params }: Props) {
   })
 
   return (
-    <main className="mx-auto max-w-[var(--spacing-max-w)] px-[var(--spacing-page-gutter)]">
+    // A fragment, not the <main> this used to be: the storefront layout already
+    // provides the page's one main landmark, and two of them is an error.
+    <>
       <JsonLd data={[collectionLd, breadcrumbLd]} />
-
-      <nav className="mono flex items-center gap-2 pt-8 text-[12px] text-ih-muted">
-        <Link href="/" className="hover:text-ih-ink">
-          Home
-        </Link>
-        <span className="opacity-40">/</span>
-        <Link href="/blog" className="hover:text-ih-ink">
-          Blog
-        </Link>
-        <span className="opacity-40">/</span>
-        <span className="text-ih-ink">{category.name}</span>
-      </nav>
-
-      <header className="max-w-[720px] border-b border-ih-border py-8">
-        <p className="mono mb-3 text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">
-          Topic
-        </p>
-        <h1 className="mb-3 font-serif text-[clamp(32px,4.5vw,48px)] font-normal leading-[1.08] tracking-[-0.02em]">
-          {category.name}
-        </h1>
-        {(category.heroCopy ?? category.description) && (
-          <p className="text-[17px] leading-[1.55] text-ih-muted">
-            {category.heroCopy ?? category.description}
-          </p>
-        )}
-        <p className="mono mt-4 text-[12px] text-ih-muted">
-          <b className="text-ih-ink">{posts.length}</b> {posts.length === 1 ? 'article' : 'articles'}
-        </p>
-      </header>
-
-      {hubBody && hubBody.blocks.length > 0 && (
-        <div className="border-b border-ih-border py-10">
-          <BlogArticleRenderer article={hubBody} contact={contact} />
-        </div>
-      )}
-
-      {posts.length === 0 ? (
-        <div className="my-12 border border-dashed border-ih-border py-16 text-center">
-          <p className="text-ih-muted">No articles in this topic yet.</p>
-        </div>
-      ) : (
-        <div className="grid grid-cols-1 gap-x-6 gap-y-10 py-10 pb-20 sm:grid-cols-2 lg:grid-cols-3">
-          {posts.map((post) => (
-            <BlogPostCard key={post.slug} post={post} />
-          ))}
-        </div>
-      )}
-    </main>
+      <BlogTopicHub
+        category={{ name: category.name, slug: category.slug, lede: category.heroCopy ?? category.description }}
+        posts={posts}
+        body={hubBody && hubBody.blocks.length > 0 ? hubBody : null}
+        topics={topics}
+        contact={contact}
+      />
+    </>
   )
 }

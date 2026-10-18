@@ -30,13 +30,22 @@ export type SitemapInputRow = {
   robotsIndex?: boolean | null
   /** Type-level visibility (Product.status === 'active', etc.) — excluded if false. */
   isPublished?: boolean
+  /**
+   * Absolute URLs of the images on the page, for `<image:image>` entries.
+   * Must be URLs a crawler may index — see apps/web lib/crawlable-media.ts.
+   */
+  images?: string[] | null
 }
+
+/** Google reads at most 1,000 images per page entry; we never need that many. */
+export const SITEMAP_MAX_IMAGES_PER_URL = 10
 
 export type SitemapEntry = {
   url: string
   lastModified?: Date
   changeFrequency: ChangeFreq
   priority: number
+  images?: string[]
 }
 
 /**
@@ -75,6 +84,11 @@ export function buildSitemapEntries(
           : defaults.priority,
     }
     if (row.lastModified) entry.lastModified = row.lastModified
+    const images = [...new Set((row.images ?? []).filter((u) => /^https?:\/\//.test(u)))].slice(
+      0,
+      SITEMAP_MAX_IMAGES_PER_URL,
+    )
+    if (images.length > 0) entry.images = images
     out.push(entry)
   }
   return out

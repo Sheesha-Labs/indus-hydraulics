@@ -1,0 +1,2261 @@
+{
+ "source": "Supplier catalogue export 2026-10-11 — Tompkins long-body and swivel adapter variants",
+ "imageDir": "",
+ "brandSlug": "tompkins",
+ "specTemplateSlug": "threaded-fitting-spec",
+ "categories": [
+  {
+   "slug": "hydraulic-adapters",
+   "name": "Hydraulic Adapters",
+   "parentSlug": "hydraulic-hose-fittings-suppliers-uae",
+   "position": 0,
+   "shortDescription": null,
+   "seoTitle": null,
+   "seoDescription": null,
+   "focusKeyword": null
+  },
+  {
+   "slug": "jic-adapters",
+   "name": "jic-adapters",
+   "parentSlug": "hydraulic-adapters",
+   "position": 0,
+   "shortDescription": null,
+   "seoTitle": null,
+   "seoDescription": null,
+   "focusKeyword": null
+  },
+  {
+   "slug": "npt-adapters",
+   "name": "npt-adapters",
+   "parentSlug": "hydraulic-adapters",
+   "position": 0,
+   "shortDescription": null,
+   "seoTitle": null,
+   "seoDescription": null,
+   "focusKeyword": null
+  }
+ ],
+ "products": [
+  {
+   "sku": "IH-TK-1501-LL",
+   "slug": "tompkins-1501-ll-male-nptf-female-npsm-swivel-90-elbow-extra-long",
+   "title": "Tompkins 1501-LL Male NPTF × Female NPSM Swivel 90° Elbow, Extra Long",
+   "category": "npt-adapters",
+   "brandSlug": "tompkins",
+   "focusKeyword": "tompkins 1501-ll",
+   "descriptionShort": "Tompkins 1501-LL male NPTF × female NPSM swivel 90° elbow, extra long, carbon steel: 6 sizes, 1/8-27 NPTF upward.",
+   "descriptionLong": "<p>The <strong>Tompkins 1501-LL</strong> is a longer-bodied version of the standard 1501: male NPTF × female NPSM swivel 90° elbow, carbon steel, in 6 sizes. Overall length runs from 1.64\" to 4.33\" depending on size; each row of the size table gives it.</p><h3>Specification</h3><ul><li>End A: Male NPTF</li><li>End B: Female NPSM Swivel</li><li>Form: extra long, 90° elbow</li><li>Material: carbon steel</li><li>Sizes: 6</li></ul><h3>When to use it</h3><p>Use the long-body version where the standard fitting is too short to clear a neighbouring port, flange or bulkhead, or to reach past a guard without an extra adapter.</p><h3>How to order</h3><p>Quote the Tompkins part number, or the end types and dash sizes. Price and lead time are confirmed with the quotation.</p>",
+   "seoTitle": "Tompkins 1501-LL Male NPTF × Female NPSM Swivel 90° Elbow",
+   "seoDescription": "Tompkins 1501-LL male NPTF × female NPSM swivel 90° elbow, extra long, carbon steel, 6 sizes. Quote by Tompkins part number.",
+   "faqs": [
+    {
+     "question": "How is the 1501-LL different from the standard 1501?",
+     "answer": "Same ends and threads, longer body. The size table gives each part number."
+    },
+    {
+     "question": "What is the lead time?",
+     "answer": "Price and lead time are confirmed with the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Fitting Configuration",
+     "value": "90° elbow, extra long",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "fitting_configuration"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "Carbon steel",
+     "unit": null,
+     "position": 1,
+     "isFilterable": false,
+     "templateKey": "material"
+    }
+   ],
+   "searchAliases": [
+    "1501-LL",
+    "1501-LL-02-02",
+    "1501-LL-04-04",
+    "1501-LL-06-06",
+    "1501-LL-08-08",
+    "1501-LL-12-12",
+    "1501-LL-16-16",
+    "1501LL0202",
+    "1501LL0404",
+    "1501LL0606",
+    "1501LL0808",
+    "1501LL1212",
+    "1501LL1616"
+   ],
+   "images": [
+    {
+     "file": "47f46c13ecd4943a08d32042c45c458a.jpg",
+     "alt": "Tompkins 1501-LL male NPTF × female NPSM swivel 90° elbow, extra long, carbon steel, view 1",
+     "caption": "Supplier catalogue image (2026-10-11)"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "1501-LL-02-02",
+     "position": 0,
+     "dimensions": {
+      "item": "Overall length 1.64\""
+     },
+     "portLabel": "1/8-27 NPTF",
+     "port2Label": "1/8-27 NPSM",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "1501-LL-04-04",
+     "position": 1,
+     "dimensions": {
+      "item": "Overall length 2.25\""
+     },
+     "portLabel": "1/4-18 NPTF",
+     "port2Label": "1/4-18 NPSM",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "1501-LL-06-06",
+     "position": 2,
+     "dimensions": {
+      "item": "Overall length 2.76\""
+     },
+     "portLabel": "3/8-18 NPTF",
+     "port2Label": "3/8-18 NPSM",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "1501-LL-08-08",
+     "position": 3,
+     "dimensions": {
+      "item": "Overall length 3.19\""
+     },
+     "portLabel": "1/2-14 NPTF",
+     "port2Label": "1/2-14 NPSM",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "1501-LL-12-12",
+     "position": 4,
+     "dimensions": {
+      "item": "Overall length 3.66\""
+     },
+     "portLabel": "3/4-14 NPTF",
+     "port2Label": "3/4-14 NPSM",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "1501-LL-16-16",
+     "position": 5,
+     "dimensions": {
+      "item": "Overall length 4.33\""
+     },
+     "portLabel": "1-11½ NPTF",
+     "port2Label": "1-11½ NPSM",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    }
+   ],
+   "crossReferences": []
+  },
+  {
+   "sku": "IH-TK-2404-L",
+   "slug": "tompkins-2404-l-male-jic-37-male-nptf-connector-long",
+   "title": "Tompkins 2404-L Male JIC 37° × Male NPTF Connector, Long",
+   "category": "jic-adapters",
+   "brandSlug": "tompkins",
+   "focusKeyword": "tompkins 2404-l",
+   "descriptionShort": "Tompkins 2404-L male JIC 37° × male NPTF connector, long, carbon steel: 8 sizes, 7/16-20 JIC upward.",
+   "descriptionLong": "<p>The <strong>Tompkins 2404-L</strong> is a longer-bodied version of the standard 2404: male JIC 37° × male NPTF connector, carbon steel, in 8 sizes. Overall length runs from 2.25\" to 4.00\" depending on size; each row of the size table gives it.</p><h3>Specification</h3><ul><li>End A: Male JIC 37°</li><li>End B: Male NPTF</li><li>Form: long, straight</li><li>Material: carbon steel</li><li>Sizes: 8</li></ul><h3>When to use it</h3><p>Use the long-body version where the standard fitting is too short to clear a neighbouring port, flange or bulkhead, or to reach past a guard without an extra adapter.</p><h3>How to order</h3><p>Quote the Tompkins part number, or the end types and dash sizes. Price and lead time are confirmed with the quotation.</p>",
+   "seoTitle": "Tompkins 2404-L Male JIC 37° × Male NPTF Connector, Long",
+   "seoDescription": "Tompkins 2404-L male JIC 37° × male NPTF connector, long, carbon steel, 8 sizes. Quote by Tompkins part number.",
+   "faqs": [
+    {
+     "question": "How is the 2404-L different from the standard 2404?",
+     "answer": "Same ends and threads, longer body. The size table gives each part number."
+    },
+    {
+     "question": "What is the lead time?",
+     "answer": "Price and lead time are confirmed with the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Fitting Configuration",
+     "value": "Straight, long",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "fitting_configuration"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "Carbon steel",
+     "unit": null,
+     "position": 1,
+     "isFilterable": false,
+     "templateKey": "material"
+    }
+   ],
+   "searchAliases": [
+    "2404-L",
+    "2404-L-04-04",
+    "2404-L-06-04",
+    "2404-L-06-06",
+    "2404-L-08-06",
+    "2404-L-08-08",
+    "2404-L-10-08",
+    "2404-L-12-12",
+    "2404-L-16-16",
+    "2404L0404",
+    "2404L0604",
+    "2404L0606",
+    "2404L0806",
+    "2404L0808",
+    "2404L1008",
+    "2404L1212",
+    "2404L1616"
+   ],
+   "images": [
+    {
+     "file": "a7ad8b00e4b64e0901c7a8ff43b86330.jpg",
+     "alt": "Tompkins 2404-L male JIC 37° × male NPTF connector, long, carbon steel, view 1",
+     "caption": "Supplier catalogue image (2026-10-11)"
+    },
+    {
+     "file": "80779a19a7aa374f8f5cb0613e93d930.jpg",
+     "alt": "Tompkins 2404-L male JIC 37° × male NPTF connector, long, carbon steel, view 2",
+     "caption": "Supplier catalogue image (2026-10-11)"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "2404-L-04-04",
+     "position": 0,
+     "dimensions": {
+      "item": "Overall length 2.25\""
+     },
+     "portLabel": "7/16-20 JIC",
+     "port2Label": "1/4-18 NPTF",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "2404-L-06-04",
+     "position": 1,
+     "dimensions": {
+      "item": "Overall length 2.25\""
+     },
+     "portLabel": "9/16-18 JIC",
+     "port2Label": "1/4-18 NPTF",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "2404-L-06-06",
+     "position": 2,
+     "dimensions": {
+      "item": "Overall length 2.50\""
+     },
+     "portLabel": "9/16-18 JIC",
+     "port2Label": "3/8-18 NPTF",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "2404-L-08-06",
+     "position": 3,
+     "dimensions": {
+      "item": "Overall length 2.75\""
+     },
+     "portLabel": "3/4-16 JIC",
+     "port2Label": "3/8-18 NPTF",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "2404-L-08-08",
+     "position": 4,
+     "dimensions": {
+      "item": "Overall length 3.04\""
+     },
+     "portLabel": "3/4-16 JIC",
+     "port2Label": "1/2-14 NPTF",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "2404-L-10-08",
+     "position": 5,
+     "dimensions": {
+      "item": "Overall length 3.12\""
+     },
+     "portLabel": "7/8-14 JIC",
+     "port2Label": "1/2-14 NPTF",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "2404-L-12-12",
+     "position": 6,
+     "dimensions": {
+      "item": "Overall length 3.50\""
+     },
+     "portLabel": "1-1/16-12 JIC",
+     "port2Label": "3/4-14 NPTF",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "2404-L-16-16",
+     "position": 7,
+     "dimensions": {
+      "item": "Overall length 4.00\""
+     },
+     "portLabel": "1-5/16-12 JIC",
+     "port2Label": "1-11½ NPTF",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    }
+   ],
+   "crossReferences": []
+  },
+  {
+   "sku": "IH-TK-2404-LL",
+   "slug": "tompkins-2404-ll-male-jic-37-male-nptf-connector-extra-long",
+   "title": "Tompkins 2404-LL Male JIC 37° × Male NPTF Connector, Extra Long",
+   "category": "jic-adapters",
+   "brandSlug": "tompkins",
+   "focusKeyword": "tompkins 2404-ll",
+   "descriptionShort": "Tompkins 2404-LL male JIC 37° × male NPTF connector, extra long, carbon steel: 9 sizes, 7/16-20 JIC upward.",
+   "descriptionLong": "<p>The <strong>Tompkins 2404-LL</strong> is a longer-bodied version of the standard 2404: male JIC 37° × male NPTF connector, carbon steel, in 9 sizes. Overall length runs from 2.56\" to 5.75\" depending on size; each row of the size table gives it.</p><h3>Specification</h3><ul><li>End A: Male JIC 37°</li><li>End B: Male NPTF</li><li>Form: extra long, straight</li><li>Material: carbon steel</li><li>Sizes: 9</li></ul><h3>When to use it</h3><p>Use the long-body version where the standard fitting is too short to clear a neighbouring port, flange or bulkhead, or to reach past a guard without an extra adapter.</p><h3>How to order</h3><p>Quote the Tompkins part number, or the end types and dash sizes. Price and lead time are confirmed with the quotation.</p>",
+   "seoTitle": "Tompkins 2404-LL Male JIC 37° × Male NPTF Connector, Extra",
+   "seoDescription": "Tompkins 2404-LL male JIC 37° × male NPTF connector, extra long, carbon steel, 9 sizes. Quote by Tompkins part number.",
+   "faqs": [
+    {
+     "question": "How is the 2404-LL different from the standard 2404?",
+     "answer": "Same ends and threads, longer body. The size table gives each part number."
+    },
+    {
+     "question": "What is the lead time?",
+     "answer": "Price and lead time are confirmed with the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Fitting Configuration",
+     "value": "Straight, extra long",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "fitting_configuration"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "Carbon steel",
+     "unit": null,
+     "position": 1,
+     "isFilterable": false,
+     "templateKey": "material"
+    }
+   ],
+   "searchAliases": [
+    "2404-LL",
+    "2404-LL-04-02",
+    "2404-LL-04-04",
+    "2404-LL-06-04",
+    "2404-LL-06-06",
+    "2404-LL-08-06",
+    "2404-LL-08-08",
+    "2404-LL-10-08",
+    "2404-LL-12-12",
+    "2404-LL-16-16",
+    "2404LL0402",
+    "2404LL0404",
+    "2404LL0604",
+    "2404LL0606",
+    "2404LL0806",
+    "2404LL0808",
+    "2404LL1008",
+    "2404LL1212",
+    "2404LL1616"
+   ],
+   "images": [
+    {
+     "file": "723c5ce600224d44b5d407cc544654d9.jpg",
+     "alt": "Tompkins 2404-LL male JIC 37° × male NPTF connector, extra long, carbon steel, view 1",
+     "caption": "Supplier catalogue image (2026-10-11)"
+    },
+    {
+     "file": "eeeebf6f4fb5d05bfd7b96195b03430d.jpg",
+     "alt": "Tompkins 2404-LL male JIC 37° × male NPTF connector, extra long, carbon steel, view 2",
+     "caption": "Supplier catalogue image (2026-10-11)"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "2404-LL-04-02",
+     "position": 0,
+     "dimensions": {
+      "item": "Overall length 2.56\""
+     },
+     "portLabel": "7/16-20 JIC",
+     "port2Label": "1/8-27 NPTF",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "2404-LL-04-04",
+     "position": 1,
+     "dimensions": {
+      "item": "Overall length 3.25\""
+     },
+     "portLabel": "7/16-20 JIC",
+     "port2Label": "1/4-18 NPTF",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "2404-LL-06-04",
+     "position": 2,
+     "dimensions": {
+      "item": "Overall length 3.25\""
+     },
+     "portLabel": "9/16-18 JIC",
+     "port2Label": "1/4-18 NPTF",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "2404-LL-06-06",
+     "position": 3,
+     "dimensions": {
+      "item": "Overall length 4.00\""
+     },
+     "portLabel": "9/16-18 JIC",
+     "port2Label": "3/8-18 NPTF",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "2404-LL-08-06",
+     "position": 4,
+     "dimensions": {
+      "item": "Overall length 4.00\""
+     },
+     "portLabel": "3/4-16 JIC",
+     "port2Label": "3/8-18 NPTF",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "2404-LL-08-08",
+     "position": 5,
+     "dimensions": {
+      "item": "Overall length 4.20\""
+     },
+     "portLabel": "3/4-16 JIC",
+     "port2Label": "1/2-14 NPTF",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "2404-LL-10-08",
+     "position": 6,
+     "dimensions": {
+      "item": "Overall length 4.375\""
+     },
+     "portLabel": "7/8-14 JIC",
+     "port2Label": "1/2-14 NPTF",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "2404-LL-12-12",
+     "position": 7,
+     "dimensions": {
+      "item": "Overall length 5.00\""
+     },
+     "portLabel": "1-1/16-12 JIC",
+     "port2Label": "3/4-14 NPTF",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "2404-LL-16-16",
+     "position": 8,
+     "dimensions": {
+      "item": "Overall length 5.75\""
+     },
+     "portLabel": "1-5/16-12 JIC",
+     "port2Label": "1-11½ NPTF",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    }
+   ],
+   "crossReferences": []
+  },
+  {
+   "sku": "IH-TK-2501-L",
+   "slug": "tompkins-2501-l-male-jic-37-male-nptf-90-elbow-long",
+   "title": "Tompkins 2501-L Male JIC 37° × Male NPTF 90° Elbow, Long",
+   "category": "jic-adapters",
+   "brandSlug": "tompkins",
+   "focusKeyword": "tompkins 2501-l",
+   "descriptionShort": "Tompkins 2501-L male JIC 37° × male NPTF 90° elbow, long, carbon steel: 14 sizes, 7/16-20 JIC upward.",
+   "descriptionLong": "<p>The <strong>Tompkins 2501-L</strong> is a longer-bodied version of the standard 2501: male JIC 37° × male NPTF 90° elbow, carbon steel, in 14 sizes. Overall length runs from 1.17\" to 4.10\" depending on size; each row of the size table gives it.</p><h3>Specification</h3><ul><li>End A: Male JIC 37°</li><li>End B: Male NPTF</li><li>Form: long, 90° elbow</li><li>Material: carbon steel</li><li>Sizes: 14</li></ul><h3>When to use it</h3><p>Use the long-body version where the standard fitting is too short to clear a neighbouring port, flange or bulkhead, or to reach past a guard without an extra adapter.</p><h3>How to order</h3><p>Quote the Tompkins part number, or the end types and dash sizes. Price and lead time are confirmed with the quotation.</p>",
+   "seoTitle": "Tompkins 2501-L Male JIC 37° × Male NPTF 90° Elbow, Long",
+   "seoDescription": "Tompkins 2501-L male JIC 37° × male NPTF 90° elbow, long, carbon steel, 14 sizes. Quote by Tompkins part number.",
+   "faqs": [
+    {
+     "question": "How is the 2501-L different from the standard 2501?",
+     "answer": "Same ends and threads, longer body. The size table gives each part number."
+    },
+    {
+     "question": "What is the lead time?",
+     "answer": "Price and lead time are confirmed with the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Fitting Configuration",
+     "value": "90° elbow, long",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "fitting_configuration"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "Carbon steel",
+     "unit": null,
+     "position": 1,
+     "isFilterable": false,
+     "templateKey": "material"
+    }
+   ],
+   "searchAliases": [
+    "2501-L",
+    "2501-L-04-02",
+    "2501-L-04-04",
+    "2501-L-05-02",
+    "2501-L-06-04",
+    "2501-L-06-06",
+    "2501-L-08-06",
+    "2501-L-08-08",
+    "2501-L-08-12",
+    "2501-L-10-08",
+    "2501-L-12-12",
+    "2501-L-14-12",
+    "2501-L-16-16",
+    "2501-L-20-20",
+    "2501-L-24-24",
+    "2501L0402",
+    "2501L0404",
+    "2501L0502",
+    "2501L0604",
+    "2501L0606",
+    "2501L0806",
+    "2501L0808",
+    "2501L0812",
+    "2501L1008",
+    "2501L1212",
+    "2501L1412",
+    "2501L1616",
+    "2501L2020",
+    "2501L2424"
+   ],
+   "images": [
+    {
+     "file": "042ebd06e46044e755aab5f6d6eafdcd.jpg",
+     "alt": "Tompkins 2501-L male JIC 37° × male NPTF 90° elbow, long, carbon steel, view 1",
+     "caption": "Supplier catalogue image (2026-10-11)"
+    },
+    {
+     "file": "0282dbd7210e40ad038499f96701d069.jpg",
+     "alt": "Tompkins 2501-L male JIC 37° × male NPTF 90° elbow, long, carbon steel, view 2",
+     "caption": "Supplier catalogue image (2026-10-11)"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "2501-L-04-02",
+     "position": 0,
+     "dimensions": {
+      "item": "Overall length 1.17\""
+     },
+     "portLabel": "7/16-20 JIC",
+     "port2Label": "1/8-27 NPTF",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "2501-L-04-04",
+     "position": 1,
+     "dimensions": {
+      "item": "Overall length 1.58\""
+     },
+     "portLabel": "7/16-20 JIC",
+     "port2Label": "1/4-18 NPTF",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "2501-L-05-02",
+     "position": 2,
+     "dimensions": {
+      "item": "Overall length 1.17\""
+     },
+     "portLabel": "1/2-20 JIC",
+     "port2Label": "1/8-27 NPTF",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "2501-L-06-04",
+     "position": 3,
+     "dimensions": {
+      "item": "Overall length 1.58\""
+     },
+     "portLabel": "9/16-18 JIC",
+     "port2Label": "1/4-18 NPTF",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "2501-L-06-06",
+     "position": 4,
+     "dimensions": {
+      "item": "Overall length 1.82\""
+     },
+     "portLabel": "9/16-18 JIC",
+     "port2Label": "3/8-18 NPTF",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "2501-L-08-06",
+     "position": 5,
+     "dimensions": {
+      "item": "Overall length 1.82\""
+     },
+     "portLabel": "3/4-16 JIC",
+     "port2Label": "3/8-18 NPTF",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "2501-L-08-08",
+     "position": 6,
+     "dimensions": {
+      "item": "Overall length 2.17\""
+     },
+     "portLabel": "3/4-16 JIC",
+     "port2Label": "1/2-14 NPTF",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "2501-L-08-12",
+     "position": 7,
+     "dimensions": {
+      "item": "Overall length 2.44\""
+     },
+     "portLabel": "3/4-16 JIC",
+     "port2Label": "3/4-14 NPTF",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "2501-L-10-08",
+     "position": 8,
+     "dimensions": {
+      "item": "Overall length 2.17\""
+     },
+     "portLabel": "7/8-14 JIC",
+     "port2Label": "1/2-14 NPTF",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "2501-L-12-12",
+     "position": 9,
+     "dimensions": {
+      "item": "Overall length 2.44\""
+     },
+     "portLabel": "1-1/16-12 JIC",
+     "port2Label": "3/4-14 NPTF",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "2501-L-14-12",
+     "position": 10,
+     "dimensions": {
+      "item": "Overall length 2.59\""
+     },
+     "portLabel": "1-3/16-12 JIC",
+     "port2Label": "3/4-14 NPTF",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "2501-L-16-16",
+     "position": 11,
+     "dimensions": {
+      "item": "Overall length 3.01\""
+     },
+     "portLabel": "1-5/16-12 JIC",
+     "port2Label": "1-11½ NPTF",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "2501-L-20-20",
+     "position": 12,
+     "dimensions": {
+      "item": "Overall length 3.69\""
+     },
+     "portLabel": "1-5/8-12 JIC",
+     "port2Label": "1-1/4-11½ NPTF",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "2501-L-24-24",
+     "position": 13,
+     "dimensions": {
+      "item": "Overall length 4.10\""
+     },
+     "portLabel": "1-7/8-12 JIC",
+     "port2Label": "1-1/2-11½ NPTF",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    }
+   ],
+   "crossReferences": []
+  },
+  {
+   "sku": "IH-TK-2501-LL",
+   "slug": "tompkins-2501-ll-male-jic-37-male-nptf-90-elbow-extra-long",
+   "title": "Tompkins 2501-LL Male JIC 37° × Male NPTF 90° Elbow, Extra Long",
+   "category": "jic-adapters",
+   "brandSlug": "tompkins",
+   "focusKeyword": "tompkins 2501-ll",
+   "descriptionShort": "Tompkins 2501-LL male JIC 37° × male NPTF 90° elbow, extra long, carbon steel: 14 sizes, 7/16-20 JIC upward.",
+   "descriptionLong": "<p>The <strong>Tompkins 2501-LL</strong> is a longer-bodied version of the standard 2501: male JIC 37° × male NPTF 90° elbow, carbon steel, in 14 sizes. Overall length runs from 1.56\" to 5.00\" depending on size; each row of the size table gives it.</p><h3>Specification</h3><ul><li>End A: Male JIC 37°</li><li>End B: Male NPTF</li><li>Form: extra long, 90° elbow</li><li>Material: carbon steel</li><li>Sizes: 14</li></ul><h3>When to use it</h3><p>Use the long-body version where the standard fitting is too short to clear a neighbouring port, flange or bulkhead, or to reach past a guard without an extra adapter.</p><h3>How to order</h3><p>Quote the Tompkins part number, or the end types and dash sizes. Price and lead time are confirmed with the quotation.</p>",
+   "seoTitle": "Tompkins 2501-LL Male JIC 37° × Male NPTF 90° Elbow, Extra",
+   "seoDescription": "Tompkins 2501-LL male JIC 37° × male NPTF 90° elbow, extra long, carbon steel, 14 sizes. Quote by Tompkins part number.",
+   "faqs": [
+    {
+     "question": "How is the 2501-LL different from the standard 2501?",
+     "answer": "Same ends and threads, longer body. The size table gives each part number."
+    },
+    {
+     "question": "What is the lead time?",
+     "answer": "Price and lead time are confirmed with the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Fitting Configuration",
+     "value": "90° elbow, extra long",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "fitting_configuration"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "Carbon steel",
+     "unit": null,
+     "position": 1,
+     "isFilterable": false,
+     "templateKey": "material"
+    }
+   ],
+   "searchAliases": [
+    "2501-LL",
+    "2501-LL-04-02",
+    "2501-LL-04-04",
+    "2501-LL-05-02",
+    "2501-LL-05-04",
+    "2501-LL-06-04",
+    "2501-LL-06-06",
+    "2501-LL-06-08",
+    "2501-LL-08-06",
+    "2501-LL-08-08",
+    "2501-LL-10-08",
+    "2501-LL-12-12",
+    "2501-LL-14-12",
+    "2501-LL-16-16",
+    "2501-LL-20-20",
+    "2501LL0402",
+    "2501LL0404",
+    "2501LL0502",
+    "2501LL0504",
+    "2501LL0604",
+    "2501LL0606",
+    "2501LL0608",
+    "2501LL0806",
+    "2501LL0808",
+    "2501LL1008",
+    "2501LL1212",
+    "2501LL1412",
+    "2501LL1616",
+    "2501LL2020"
+   ],
+   "images": [
+    {
+     "file": "033bc84e3f6f4d1c40fd71e6703c821b.jpg",
+     "alt": "Tompkins 2501-LL male JIC 37° × male NPTF 90° elbow, extra long, carbon steel, view 1",
+     "caption": "Supplier catalogue image (2026-10-11)"
+    },
+    {
+     "file": "6b5d6b2fe85a0fe1b80f6557d7b78458.jpg",
+     "alt": "Tompkins 2501-LL male JIC 37° × male NPTF 90° elbow, extra long, carbon steel, view 2",
+     "caption": "Supplier catalogue image (2026-10-11)"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "2501-LL-04-02",
+     "position": 0,
+     "dimensions": {
+      "item": "Overall length 1.56\""
+     },
+     "portLabel": "7/16-20 JIC",
+     "port2Label": "1/8-27 NPTF",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "2501-LL-04-04",
+     "position": 1,
+     "dimensions": {
+      "item": "Overall length 2.07\""
+     },
+     "portLabel": "7/16-20 JIC",
+     "port2Label": "1/4-18 NPTF",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "2501-LL-05-02",
+     "position": 2,
+     "dimensions": {
+      "item": "Overall length 1.63\""
+     },
+     "portLabel": "1/2-20 JIC",
+     "port2Label": "1/8-27 NPTF",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "2501-LL-05-04",
+     "position": 3,
+     "dimensions": {
+      "item": "Overall length 2.07\""
+     },
+     "portLabel": "1/2-20 JIC",
+     "port2Label": "1/4-18 NPTF",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "2501-LL-06-04",
+     "position": 4,
+     "dimensions": {
+      "item": "Overall length 2.07\""
+     },
+     "portLabel": "9/16-18 JIC",
+     "port2Label": "1/4-18 NPTF",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "2501-LL-06-06",
+     "position": 5,
+     "dimensions": {
+      "item": "Overall length 2.42\""
+     },
+     "portLabel": "9/16-18 JIC",
+     "port2Label": "3/8-18 NPTF",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "2501-LL-06-08",
+     "position": 6,
+     "dimensions": {
+      "item": "Overall length 2.87\""
+     },
+     "portLabel": "9/16-18 JIC",
+     "port2Label": "1/2-14 NPTF",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "2501-LL-08-06",
+     "position": 7,
+     "dimensions": {
+      "item": "Overall length 2.42\""
+     },
+     "portLabel": "3/4-16 JIC",
+     "port2Label": "3/8-18 NPTF",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "2501-LL-08-08",
+     "position": 8,
+     "dimensions": {
+      "item": "Overall length 2.87\""
+     },
+     "portLabel": "3/4-16 JIC",
+     "port2Label": "1/2-14 NPTF",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "2501-LL-10-08",
+     "position": 9,
+     "dimensions": {
+      "item": "Overall length 2.87\""
+     },
+     "portLabel": "7/8-14 JIC",
+     "port2Label": "1/2-14 NPTF",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "2501-LL-12-12",
+     "position": 10,
+     "dimensions": {
+      "item": "Overall length 3.28\""
+     },
+     "portLabel": "1-1/16-12 JIC",
+     "port2Label": "3/4-14 NPTF",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "2501-LL-14-12",
+     "position": 11,
+     "dimensions": {
+      "item": "Overall length 3.50\""
+     },
+     "portLabel": "1-3/16-12 JIC",
+     "port2Label": "3/4-14 NPTF",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "2501-LL-16-16",
+     "position": 12,
+     "dimensions": {
+      "item": "Overall length 4.05\""
+     },
+     "portLabel": "1-5/16-12 JIC",
+     "port2Label": "1-11½ NPTF",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "2501-LL-20-20",
+     "position": 13,
+     "dimensions": {
+      "item": "Overall length 5.00\""
+     },
+     "portLabel": "1-5/8-12 JIC",
+     "port2Label": "1-1/4-11½ NPTF",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    }
+   ],
+   "crossReferences": []
+  },
+  {
+   "sku": "IH-TK-2501-LLL",
+   "slug": "tompkins-2501-lll-male-jic-37-male-nptf-90-elbow-extra-extra-long",
+   "title": "Tompkins 2501-LLL Male JIC 37° × Male NPTF 90° Elbow, Extra-Extra Long",
+   "category": "jic-adapters",
+   "brandSlug": "tompkins",
+   "focusKeyword": "tompkins 2501-lll",
+   "descriptionShort": "Tompkins 2501-LLL male JIC 37° × male NPTF 90° elbow, extra-extra long, carbon steel: 9 sizes, 7/16-20 JIC upward.",
+   "descriptionLong": "<p>The <strong>Tompkins 2501-LLL</strong> is a longer-bodied version of the standard 2501: male JIC 37° × male NPTF 90° elbow, carbon steel, in 9 sizes. Overall length runs from 2.31\" to 6.34\" depending on size; each row of the size table gives it.</p><h3>Specification</h3><ul><li>End A: Male JIC 37°</li><li>End B: Male NPTF</li><li>Form: extra-extra long, 90° elbow</li><li>Material: carbon steel</li><li>Sizes: 9</li></ul><h3>When to use it</h3><p>Use the long-body version where the standard fitting is too short to clear a neighbouring port, flange or bulkhead, or to reach past a guard without an extra adapter.</p><h3>How to order</h3><p>Quote the Tompkins part number, or the end types and dash sizes. Price and lead time are confirmed with the quotation.</p>",
+   "seoTitle": "Tompkins 2501-LLL Male JIC 37° × Male NPTF 90° Elbow",
+   "seoDescription": "Tompkins 2501-LLL male JIC 37° × male NPTF 90° elbow, extra-extra long, carbon steel, 9 sizes. Quote by Tompkins part number.",
+   "faqs": [
+    {
+     "question": "How is the 2501-LLL different from the standard 2501?",
+     "answer": "Same ends and threads, longer body. The size table gives each part number."
+    },
+    {
+     "question": "What is the lead time?",
+     "answer": "Price and lead time are confirmed with the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Fitting Configuration",
+     "value": "90° elbow, extra-extra long",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "fitting_configuration"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "Carbon steel",
+     "unit": null,
+     "position": 1,
+     "isFilterable": false,
+     "templateKey": "material"
+    }
+   ],
+   "searchAliases": [
+    "2501-LLL",
+    "2501-LLL-04-02",
+    "2501-LLL-04-04",
+    "2501-LLL-06-04",
+    "2501-LLL-06-06",
+    "2501-LLL-08-06",
+    "2501-LLL-08-08",
+    "2501-LLL-10-08",
+    "2501-LLL-12-12",
+    "2501-LLL-16-16",
+    "2501LLL0402",
+    "2501LLL0404",
+    "2501LLL0604",
+    "2501LLL0606",
+    "2501LLL0806",
+    "2501LLL0808",
+    "2501LLL1008",
+    "2501LLL1212",
+    "2501LLL1616"
+   ],
+   "images": [
+    {
+     "file": "c0ebc9a3b689b6be5fed894f5ef78b31.jpg",
+     "alt": "Tompkins 2501-LLL male JIC 37° × male NPTF 90° elbow, extra-extra long, carbon steel, view 1",
+     "caption": "Supplier catalogue image (2026-10-11)"
+    },
+    {
+     "file": "d5b429027a28dd7b857a8e9fb64d6b7f.jpg",
+     "alt": "Tompkins 2501-LLL male JIC 37° × male NPTF 90° elbow, extra-extra long, carbon steel, view 2",
+     "caption": "Supplier catalogue image (2026-10-11)"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "2501-LLL-04-02",
+     "position": 0,
+     "dimensions": {
+      "item": "Overall length 2.31\""
+     },
+     "portLabel": "7/16-20 JIC",
+     "port2Label": "1/8-27 NPTF",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "2501-LLL-04-04",
+     "position": 1,
+     "dimensions": {
+      "item": "Overall length 3.00\""
+     },
+     "portLabel": "7/16-20 JIC",
+     "port2Label": "1/4-18 NPTF",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "2501-LLL-06-04",
+     "position": 2,
+     "dimensions": {
+      "item": "Overall length 3.06\""
+     },
+     "portLabel": "9/16-18 JIC",
+     "port2Label": "1/4-18 NPTF",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "2501-LLL-06-06",
+     "position": 3,
+     "dimensions": {
+      "item": "Overall length 3.75\""
+     },
+     "portLabel": "9/16-18 JIC",
+     "port2Label": "3/8-18 NPTF",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "2501-LLL-08-06",
+     "position": 4,
+     "dimensions": {
+      "item": "Overall length 3.75\""
+     },
+     "portLabel": "3/4-16 JIC",
+     "port2Label": "3/8-18 NPTF",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "2501-LLL-08-08",
+     "position": 5,
+     "dimensions": {
+      "item": "Overall length 4.50\""
+     },
+     "portLabel": "3/4-16 JIC",
+     "port2Label": "1/2-14 NPTF",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "2501-LLL-10-08",
+     "position": 6,
+     "dimensions": {
+      "item": "Overall length 4.50\""
+     },
+     "portLabel": "7/8-14 JIC",
+     "port2Label": "1/2-14 NPTF",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "2501-LLL-12-12",
+     "position": 7,
+     "dimensions": {
+      "item": "Overall length 5.03\""
+     },
+     "portLabel": "1-1/16-12 JIC",
+     "port2Label": "3/4-14 NPTF",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "2501-LLL-16-16",
+     "position": 8,
+     "dimensions": {
+      "item": "Overall length 6.34\""
+     },
+     "portLabel": "1-5/16-12 JIC",
+     "port2Label": "1-11½ NPTF",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    }
+   ],
+   "crossReferences": []
+  },
+  {
+   "sku": "IH-TK-2501-S",
+   "slug": "tompkins-2501-s-male-jic-37-male-nptf-swivel-90-elbow",
+   "title": "Tompkins 2501-S Male JIC 37° × Male NPTF Swivel 90° Elbow",
+   "category": "jic-adapters",
+   "brandSlug": "tompkins",
+   "focusKeyword": "tompkins 2501-s",
+   "descriptionShort": "Tompkins 2501-S male JIC 37° × male NPTF swivel 90° elbow, swivel, carbon steel: 7 sizes, 7/16-20 JIC upward.",
+   "descriptionLong": "<p>The <strong>Tompkins 2501-S</strong> is the swivel version of the 2501, with a swivel nut on one end so it can be aligned without turning the body: male JIC 37° × male NPTF swivel 90° elbow, carbon steel, in 7 sizes.</p><h3>Specification</h3><ul><li>End A: Male JIC 37°</li><li>End B: Male NPTF Swivel</li><li>Form: swivel, 90° elbow</li><li>Material: carbon steel</li><li>Sizes: 7</li></ul><h3>When to use it</h3><p>Use the swivel version where the fitting has to be lined up after the other end is tight, so the line does not have to be twisted into place.</p><h3>How to order</h3><p>Quote the Tompkins part number, or the end types and dash sizes. Price and lead time are confirmed with the quotation.</p>",
+   "seoTitle": "Tompkins 2501-S Male JIC 37° × Male NPTF Swivel 90° Elbow",
+   "seoDescription": "Tompkins 2501-S male JIC 37° × male NPTF swivel 90° elbow, swivel, carbon steel, 7 sizes. Quote by Tompkins part number.",
+   "faqs": [
+    {
+     "question": "How is the 2501-S different from the standard 2501?",
+     "answer": "Same ends, with a swivel nut on one end so it can be aligned after the other end is tightened. The size table gives each part number."
+    },
+    {
+     "question": "What is the lead time?",
+     "answer": "Price and lead time are confirmed with the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Fitting Configuration",
+     "value": "90° elbow, swivel",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "fitting_configuration"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "Carbon steel",
+     "unit": null,
+     "position": 1,
+     "isFilterable": false,
+     "templateKey": "material"
+    }
+   ],
+   "searchAliases": [
+    "2501-S",
+    "2501-S-04-04",
+    "2501-S-06-04",
+    "2501-S-06-06",
+    "2501-S-08-06",
+    "2501-S-08-08",
+    "2501-S-10-08",
+    "2501-S-12-12",
+    "2501S0404",
+    "2501S0604",
+    "2501S0606",
+    "2501S0806",
+    "2501S0808",
+    "2501S1008",
+    "2501S1212"
+   ],
+   "images": [
+    {
+     "file": "20e33aa70f716508d46bee48336ce02f.jpg",
+     "alt": "Tompkins 2501-S male JIC 37° × male NPTF swivel 90° elbow, swivel, carbon steel, view 1",
+     "caption": "Supplier catalogue image (2026-10-11)"
+    },
+    {
+     "file": "cf70182b074cef0d932b1ed6fe1f0216.jpg",
+     "alt": "Tompkins 2501-S male JIC 37° × male NPTF swivel 90° elbow, swivel, carbon steel, view 2",
+     "caption": "Supplier catalogue image (2026-10-11)"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "2501-S-04-04",
+     "position": 0,
+     "dimensions": {},
+     "portLabel": "7/16-20 JIC",
+     "port2Label": "1/4-18 NPTF",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "2501-S-06-04",
+     "position": 1,
+     "dimensions": {},
+     "portLabel": "9/16-18 JIC",
+     "port2Label": "1/4-18 NPTF",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "2501-S-06-06",
+     "position": 2,
+     "dimensions": {},
+     "portLabel": "9/16-18 JIC",
+     "port2Label": "3/8-18 NPTF",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "2501-S-08-06",
+     "position": 3,
+     "dimensions": {},
+     "portLabel": "3/4-16 JIC",
+     "port2Label": "3/8-18 NPTF",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "2501-S-08-08",
+     "position": 4,
+     "dimensions": {},
+     "portLabel": "3/4-16 JIC",
+     "port2Label": "1/2-14 NPTF",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "2501-S-10-08",
+     "position": 5,
+     "dimensions": {},
+     "portLabel": "7/8-14 JIC",
+     "port2Label": "1/2-14 NPTF",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "2501-S-12-12",
+     "position": 6,
+     "dimensions": {},
+     "portLabel": "1-1/16-12 JIC",
+     "port2Label": "3/4-14 NPTF",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    }
+   ],
+   "crossReferences": []
+  },
+  {
+   "sku": "IH-TK-5500-S",
+   "slug": "tompkins-5500-s-male-nptf-male-nptf-swivel-90-elbow",
+   "title": "Tompkins 5500-S Male NPTF × Male NPTF Swivel 90° Elbow",
+   "category": "npt-adapters",
+   "brandSlug": "tompkins",
+   "focusKeyword": "tompkins 5500-s",
+   "descriptionShort": "Tompkins 5500-S male NPTF × male NPTF swivel 90° elbow, swivel, carbon steel: 4 sizes, 1/4-18 NPTF upward.",
+   "descriptionLong": "<p>The <strong>Tompkins 5500-S</strong> is the swivel version of the 5500, with a swivel nut on one end so it can be aligned without turning the body: male NPTF × male NPTF swivel 90° elbow, carbon steel, in 4 sizes.</p><h3>Specification</h3><ul><li>End A: Male NPTF</li><li>End B: Male NPTF Swivel</li><li>Form: swivel, 90° elbow</li><li>Material: carbon steel</li><li>Sizes: 4</li></ul><h3>When to use it</h3><p>Use the swivel version where the fitting has to be lined up after the other end is tight, so the line does not have to be twisted into place.</p><h3>How to order</h3><p>Quote the Tompkins part number, or the end types and dash sizes. Price and lead time are confirmed with the quotation.</p>",
+   "seoTitle": "Tompkins 5500-S Male NPTF × Male NPTF Swivel 90° Elbow",
+   "seoDescription": "Tompkins 5500-S male NPTF × male NPTF swivel 90° elbow, swivel, carbon steel, 4 sizes. Quote by Tompkins part number.",
+   "faqs": [
+    {
+     "question": "How is the 5500-S different from the standard 5500?",
+     "answer": "Same ends, with a swivel nut on one end so it can be aligned after the other end is tightened. The size table gives each part number."
+    },
+    {
+     "question": "What is the lead time?",
+     "answer": "Price and lead time are confirmed with the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Fitting Configuration",
+     "value": "90° elbow, swivel",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "fitting_configuration"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "Carbon steel",
+     "unit": null,
+     "position": 1,
+     "isFilterable": false,
+     "templateKey": "material"
+    }
+   ],
+   "searchAliases": [
+    "5500-S",
+    "5500-S-04-04",
+    "5500-S-06-06",
+    "5500-S-08-08",
+    "5500-S-12-12",
+    "5500S0404",
+    "5500S0606",
+    "5500S0808",
+    "5500S1212"
+   ],
+   "images": [
+    {
+     "file": "3ba00e9e361e5c125c4104eb053ef550.jpg",
+     "alt": "Tompkins 5500-S male NPTF × male NPTF swivel 90° elbow, swivel, carbon steel, view 1",
+     "caption": "Supplier catalogue image (2026-10-11)"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "5500-S-04-04",
+     "position": 0,
+     "dimensions": {},
+     "portLabel": "1/4-18 NPTF",
+     "port2Label": "1/4-18 NPTF",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "5500-S-06-06",
+     "position": 1,
+     "dimensions": {},
+     "portLabel": "3/8-18 NPTF",
+     "port2Label": "3/8-18 NPTF",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "5500-S-08-08",
+     "position": 2,
+     "dimensions": {},
+     "portLabel": "1/2-14 NPTF",
+     "port2Label": "1/2-14 NPTF",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "5500-S-12-12",
+     "position": 3,
+     "dimensions": {},
+     "portLabel": "3/4-14 NPTF",
+     "port2Label": "3/4-14 NPTF",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    }
+   ],
+   "crossReferences": []
+  },
+  {
+   "sku": "IH-TK-5502-S",
+   "slug": "tompkins-5502-s-male-nptf-swivel-female-nptf-90-elbow",
+   "title": "Tompkins 5502-S Male NPTF Swivel × Female NPTF 90° Elbow",
+   "category": "npt-adapters",
+   "brandSlug": "tompkins",
+   "focusKeyword": "tompkins 5502-s",
+   "descriptionShort": "Tompkins 5502-S male NPTF swivel × female NPTF 90° elbow, swivel, carbon steel: 4 sizes, 1/4-18 NPTF upward.",
+   "descriptionLong": "<p>The <strong>Tompkins 5502-S</strong> is the swivel version of the 5502, with a swivel nut on one end so it can be aligned without turning the body: male NPTF swivel × female NPTF 90° elbow, carbon steel, in 4 sizes.</p><h3>Specification</h3><ul><li>End A: Male NPTF Swivel</li><li>End B: Female NPTF</li><li>Form: swivel, 90° elbow</li><li>Material: carbon steel</li><li>Sizes: 4</li></ul><h3>When to use it</h3><p>Use the swivel version where the fitting has to be lined up after the other end is tight, so the line does not have to be twisted into place.</p><h3>How to order</h3><p>Quote the Tompkins part number, or the end types and dash sizes. Price and lead time are confirmed with the quotation.</p>",
+   "seoTitle": "Tompkins 5502-S Male NPTF Swivel × Female NPTF 90° Elbow",
+   "seoDescription": "Tompkins 5502-S male NPTF swivel × female NPTF 90° elbow, swivel, carbon steel, 4 sizes. Quote by Tompkins part number.",
+   "faqs": [
+    {
+     "question": "How is the 5502-S different from the standard 5502?",
+     "answer": "Same ends, with a swivel nut on one end so it can be aligned after the other end is tightened. The size table gives each part number."
+    },
+    {
+     "question": "What is the lead time?",
+     "answer": "Price and lead time are confirmed with the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Fitting Configuration",
+     "value": "90° elbow, swivel",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "fitting_configuration"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "Carbon steel",
+     "unit": null,
+     "position": 1,
+     "isFilterable": false,
+     "templateKey": "material"
+    }
+   ],
+   "searchAliases": [
+    "5502-S",
+    "5502-S-04-04",
+    "5502-S-06-06",
+    "5502-S-08-08",
+    "5502-S-12-12",
+    "5502S0404",
+    "5502S0606",
+    "5502S0808",
+    "5502S1212"
+   ],
+   "images": [
+    {
+     "file": "ea6754d76a98d73d49c199f52b10198f.jpg",
+     "alt": "Tompkins 5502-S male NPTF swivel × female NPTF 90° elbow, swivel, carbon steel, view 1",
+     "caption": "Supplier catalogue image (2026-10-11)"
+    },
+    {
+     "file": "e2690ed9d31cc57558033b84b51496a2.jpg",
+     "alt": "Tompkins 5502-S male NPTF swivel × female NPTF 90° elbow, swivel, carbon steel, view 2",
+     "caption": "Supplier catalogue image (2026-10-11)"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "5502-S-04-04",
+     "position": 0,
+     "dimensions": {},
+     "portLabel": "1/4-18 NPTF",
+     "port2Label": "1/4-18 NPTF",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "5502-S-06-06",
+     "position": 1,
+     "dimensions": {},
+     "portLabel": "3/8-18 NPTF",
+     "port2Label": "3/8-18 NPTF",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "5502-S-08-08",
+     "position": 2,
+     "dimensions": {},
+     "portLabel": "1/2-14 NPTF",
+     "port2Label": "1/2-14 NPTF",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "5502-S-12-12",
+     "position": 3,
+     "dimensions": {},
+     "portLabel": "3/4-14 NPTF",
+     "port2Label": "3/4-14 NPTF",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    }
+   ],
+   "crossReferences": []
+  },
+  {
+   "sku": "IH-TK-6400-L",
+   "slug": "tompkins-6400-l-male-jic-37-male-o-ring-boss-connector-long",
+   "title": "Tompkins 6400-L Male JIC 37° × Male O-Ring Boss Connector, Long",
+   "category": "jic-adapters",
+   "brandSlug": "tompkins",
+   "focusKeyword": "tompkins 6400-l",
+   "descriptionShort": "Tompkins 6400-L male JIC 37° × male o-ring boss connector, long, carbon steel: 8 sizes, 7/16-20 JIC upward.",
+   "descriptionLong": "<p>The <strong>Tompkins 6400-L</strong> is a longer-bodied version of the standard 6400: male JIC 37° × male o-ring boss connector, carbon steel, in 8 sizes. Overall length runs from 2.08\" to 5.17\" depending on size; each row of the size table gives it.</p><h3>Specification</h3><ul><li>End A: Male JIC 37°</li><li>End B: Male O-Ring Boss</li><li>Form: long, straight</li><li>Material: carbon steel</li><li>Sizes: 8</li></ul><h3>When to use it</h3><p>Use the long-body version where the standard fitting is too short to clear a neighbouring port, flange or bulkhead, or to reach past a guard without an extra adapter.</p><h3>How to order</h3><p>Quote the Tompkins part number, or the end types and dash sizes. Price and lead time are confirmed with the quotation.</p>",
+   "seoTitle": "Tompkins 6400-L Male JIC 37° × Male O-Ring Boss Connector",
+   "seoDescription": "Tompkins 6400-L male JIC 37° × male o-ring boss connector, long, carbon steel, 8 sizes. Quote by Tompkins part number.",
+   "faqs": [
+    {
+     "question": "How is the 6400-L different from the standard 6400?",
+     "answer": "Same ends and threads, longer body. The size table gives each part number."
+    },
+    {
+     "question": "What is the lead time?",
+     "answer": "Price and lead time are confirmed with the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Fitting Configuration",
+     "value": "Straight, long",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "fitting_configuration"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "Carbon steel",
+     "unit": null,
+     "position": 1,
+     "isFilterable": false,
+     "templateKey": "material"
+    }
+   ],
+   "searchAliases": [
+    "6400-L",
+    "6400-L-04-04",
+    "6400-L-06-06",
+    "6400-L-08-08",
+    "6400-L-10-10",
+    "6400-L-12-12",
+    "6400-L-16-16",
+    "6400-L-20-20",
+    "6400-L-24-24",
+    "6400L0404",
+    "6400L0606",
+    "6400L0808",
+    "6400L1010",
+    "6400L1212",
+    "6400L1616",
+    "6400L2020",
+    "6400L2424"
+   ],
+   "images": [
+    {
+     "file": "371bc7a9faad209ada9365811f567846.jpg",
+     "alt": "Tompkins 6400-L male JIC 37° × male o-ring boss connector, long, carbon steel, view 1",
+     "caption": "Supplier catalogue image (2026-10-11)"
+    },
+    {
+     "file": "8f9a56e3c7690691dda463f416a7ad1c.jpg",
+     "alt": "Tompkins 6400-L male JIC 37° × male o-ring boss connector, long, carbon steel, view 2",
+     "caption": "Supplier catalogue image (2026-10-11)"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "6400-L-04-04",
+     "position": 0,
+     "dimensions": {
+      "item": "Overall length 2.08\""
+     },
+     "portLabel": "7/16-20 JIC",
+     "port2Label": "7/16-20 ORB",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "6400-L-06-06",
+     "position": 1,
+     "dimensions": {},
+     "portLabel": "9/16-18 JIC",
+     "port2Label": "9/16-18 ORB",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "6400-L-08-08",
+     "position": 2,
+     "dimensions": {
+      "item": "Overall length 2.70\""
+     },
+     "portLabel": "3/4-16 JIC",
+     "port2Label": "3/4-16 ORB",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "6400-L-10-10",
+     "position": 3,
+     "dimensions": {
+      "item": "Overall length 3.04\""
+     },
+     "portLabel": "7/8-14 JIC",
+     "port2Label": "7/8-14 ORB",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "6400-L-12-12",
+     "position": 4,
+     "dimensions": {
+      "item": "Overall length 3.61\""
+     },
+     "portLabel": "1-1/16-12 JIC",
+     "port2Label": "1-1/16-12 ORB",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "6400-L-16-16",
+     "position": 5,
+     "dimensions": {
+      "item": "Overall length 3.98\""
+     },
+     "portLabel": "1-5/16-12 JIC",
+     "port2Label": "1-5/16-12 ORB",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "6400-L-20-20",
+     "position": 6,
+     "dimensions": {
+      "item": "Overall length 4.69\""
+     },
+     "portLabel": "1-5/8-12 JIC",
+     "port2Label": "1-5/8-12 ORB",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "6400-L-24-24",
+     "position": 7,
+     "dimensions": {
+      "item": "Overall length 5.17\""
+     },
+     "portLabel": "1-7/8-12 JIC",
+     "port2Label": "1-7/8-12 ORB",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    }
+   ],
+   "crossReferences": []
+  },
+  {
+   "sku": "IH-TK-6801-L",
+   "slug": "tompkins-6801-l-male-jic-37-male-o-ring-boss-adjustable-90-elbow-long",
+   "title": "Tompkins 6801-L Male JIC 37° × Male O-Ring Boss Adjustable 90° Elbow, Long",
+   "category": "jic-adapters",
+   "brandSlug": "tompkins",
+   "focusKeyword": "tompkins 6801-l",
+   "descriptionShort": "Tompkins 6801-L male JIC 37° × male o-ring boss adjustable 90° elbow, long, carbon steel: 6 sizes, 7/16-20 JIC upward.",
+   "descriptionLong": "<p>The <strong>Tompkins 6801-L</strong> is a longer-bodied version of the standard 6801: male JIC 37° × male o-ring boss adjustable 90° elbow, carbon steel, in 6 sizes. Overall length runs from 1.19\" to 3.06\" depending on size; each row of the size table gives it.</p><h3>Specification</h3><ul><li>End A: Male JIC 37°</li><li>End B: Male O-Ring Boss</li><li>Form: long, 90° elbow</li><li>Material: carbon steel</li><li>Sizes: 6</li></ul><h3>When to use it</h3><p>Use the long-body version where the standard fitting is too short to clear a neighbouring port, flange or bulkhead, or to reach past a guard without an extra adapter.</p><h3>How to order</h3><p>Quote the Tompkins part number, or the end types and dash sizes. Price and lead time are confirmed with the quotation.</p>",
+   "seoTitle": "Tompkins 6801-L Male JIC 37° × Male O-Ring Boss Adjustable",
+   "seoDescription": "Tompkins 6801-L male JIC 37° × male o-ring boss adjustable 90° elbow, long, carbon steel, 6 sizes. Quote by Tompkins part number.",
+   "faqs": [
+    {
+     "question": "How is the 6801-L different from the standard 6801?",
+     "answer": "Same ends and threads, longer body. The size table gives each part number."
+    },
+    {
+     "question": "What is the lead time?",
+     "answer": "Price and lead time are confirmed with the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Fitting Configuration",
+     "value": "90° elbow, long",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "fitting_configuration"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "Carbon steel",
+     "unit": null,
+     "position": 1,
+     "isFilterable": false,
+     "templateKey": "material"
+    }
+   ],
+   "searchAliases": [
+    "6801-L",
+    "6801-L-04-04",
+    "6801-L-06-06",
+    "6801-L-08-08",
+    "6801-L-10-10",
+    "6801-L-12-12",
+    "6801-L-16-16",
+    "6801L0404",
+    "6801L0606",
+    "6801L0808",
+    "6801L1010",
+    "6801L1212",
+    "6801L1616"
+   ],
+   "images": [
+    {
+     "file": "988ee3d9175a5ea858b21c02dc9267a9.jpg",
+     "alt": "Tompkins 6801-L male JIC 37° × male o-ring boss adjustable 90° elbow, long, carbon steel, view 1",
+     "caption": "Supplier catalogue image (2026-10-11)"
+    },
+    {
+     "file": "63350035577626807bdd434b00e02c86.jpg",
+     "alt": "Tompkins 6801-L male JIC 37° × male o-ring boss adjustable 90° elbow, long, carbon steel, view 2",
+     "caption": "Supplier catalogue image (2026-10-11)"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "6801-L-04-04",
+     "position": 0,
+     "dimensions": {
+      "item": "Overall length 1.19\""
+     },
+     "portLabel": "7/16-20 JIC",
+     "port2Label": "7/16-20 ORB",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "6801-L-06-06",
+     "position": 1,
+     "dimensions": {
+      "item": "Overall length 1.66\""
+     },
+     "portLabel": "9/16-18 JIC",
+     "port2Label": "9/16-18 ORB",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "6801-L-08-08",
+     "position": 2,
+     "dimensions": {
+      "item": "Overall length 1.97\""
+     },
+     "portLabel": "3/4-16 JIC",
+     "port2Label": "3/4-16 ORB",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "6801-L-10-10",
+     "position": 3,
+     "dimensions": {
+      "item": "Overall length 2.26\""
+     },
+     "portLabel": "7/8-14 JIC",
+     "port2Label": "7/8-14 ORB",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "6801-L-12-12",
+     "position": 4,
+     "dimensions": {
+      "item": "Overall length 2.47\""
+     },
+     "portLabel": "1-1/16-12 JIC",
+     "port2Label": "1-1/16-12 ORB",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "6801-L-16-16",
+     "position": 5,
+     "dimensions": {
+      "item": "Overall length 3.06\""
+     },
+     "portLabel": "1-5/16-12 JIC",
+     "port2Label": "1-5/16-12 ORB",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    }
+   ],
+   "crossReferences": []
+  },
+  {
+   "sku": "IH-TK-6801-LL",
+   "slug": "tompkins-6801-ll-male-jic-37-male-o-ring-boss-adjustable-90-elbow-extra-long",
+   "title": "Tompkins 6801-LL Male JIC 37° × Male O-Ring Boss Adjustable 90° Elbow, Extra Long",
+   "category": "jic-adapters",
+   "brandSlug": "tompkins",
+   "focusKeyword": "tompkins 6801-ll",
+   "descriptionShort": "Tompkins 6801-LL male JIC 37° × male o-ring boss adjustable 90° elbow, extra long, carbon steel: 9 sizes, 7/16-20 JIC upward.",
+   "descriptionLong": "<p>The <strong>Tompkins 6801-LL</strong> is a longer-bodied version of the standard 6801: male JIC 37° × male o-ring boss adjustable 90° elbow, carbon steel, in 9 sizes. Overall length runs from 1.73\" to 4.41\" depending on size; each row of the size table gives it.</p><h3>Specification</h3><ul><li>End A: Male JIC 37°</li><li>End B: Male O-Ring Boss</li><li>Form: extra long, 90° elbow</li><li>Material: carbon steel</li><li>Sizes: 9</li></ul><h3>When to use it</h3><p>Use the long-body version where the standard fitting is too short to clear a neighbouring port, flange or bulkhead, or to reach past a guard without an extra adapter.</p><h3>How to order</h3><p>Quote the Tompkins part number, or the end types and dash sizes. Price and lead time are confirmed with the quotation.</p>",
+   "seoTitle": "Tompkins 6801-LL Male JIC 37° × Male O-Ring Boss Adjustable",
+   "seoDescription": "Tompkins 6801-LL male JIC 37° × male o-ring boss adjustable 90° elbow, extra long, carbon steel, 9 sizes. Quote by Tompkins part number.",
+   "faqs": [
+    {
+     "question": "How is the 6801-LL different from the standard 6801?",
+     "answer": "Same ends and threads, longer body. The size table gives each part number."
+    },
+    {
+     "question": "What is the lead time?",
+     "answer": "Price and lead time are confirmed with the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Fitting Configuration",
+     "value": "90° elbow, extra long",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "fitting_configuration"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "Carbon steel",
+     "unit": null,
+     "position": 1,
+     "isFilterable": false,
+     "templateKey": "material"
+    }
+   ],
+   "searchAliases": [
+    "6801-LL",
+    "6801-LL-04-04",
+    "6801-LL-06-06",
+    "6801-LL-06-08",
+    "6801-LL-08-08",
+    "6801-LL-08-10",
+    "6801-LL-10-10",
+    "6801-LL-12-12",
+    "6801-LL-16-16",
+    "6801-LL-20-20",
+    "6801LL0404",
+    "6801LL0606",
+    "6801LL0608",
+    "6801LL0808",
+    "6801LL0810",
+    "6801LL1010",
+    "6801LL1212",
+    "6801LL1616",
+    "6801LL2020"
+   ],
+   "images": [
+    {
+     "file": "988ee3d9175a5ea858b21c02dc9267a9.jpg",
+     "alt": "Tompkins 6801-LL male JIC 37° × male o-ring boss adjustable 90° elbow, extra long, carbon steel, view 1",
+     "caption": "Supplier catalogue image (2026-10-11)"
+    },
+    {
+     "file": "22fa7680281cf4509cc7ff42253b78df.jpg",
+     "alt": "Tompkins 6801-LL male JIC 37° × male o-ring boss adjustable 90° elbow, extra long, carbon steel, view 2",
+     "caption": "Supplier catalogue image (2026-10-11)"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "6801-LL-04-04",
+     "position": 0,
+     "dimensions": {
+      "item": "Overall length 1.73\""
+     },
+     "portLabel": "7/16-20 JIC",
+     "port2Label": "7/16-20 ORB",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "6801-LL-06-06",
+     "position": 1,
+     "dimensions": {
+      "item": "Overall length 2.08\""
+     },
+     "portLabel": "9/16-18 JIC",
+     "port2Label": "9/16-18 ORB",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "6801-LL-06-08",
+     "position": 2,
+     "dimensions": {
+      "item": "Overall length 2.49\""
+     },
+     "portLabel": "9/16-18 JIC",
+     "port2Label": "3/4-16 ORB",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "6801-LL-08-08",
+     "position": 3,
+     "dimensions": {
+      "item": "Overall length 2.48\""
+     },
+     "portLabel": "3/4-16 JIC",
+     "port2Label": "3/4-16 ORB",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "6801-LL-08-10",
+     "position": 4,
+     "dimensions": {
+      "item": "Overall length 2.89\""
+     },
+     "portLabel": "3/4-16 JIC",
+     "port2Label": "7/8-14 ORB",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "6801-LL-10-10",
+     "position": 5,
+     "dimensions": {
+      "item": "Overall length 3.25\""
+     },
+     "portLabel": "7/8-14 JIC",
+     "port2Label": "7/8-14 ORB",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "6801-LL-12-12",
+     "position": 6,
+     "dimensions": {
+      "item": "Overall length 3.34\""
+     },
+     "portLabel": "1-1/16-12 JIC",
+     "port2Label": "1-1/16-12 ORB",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "6801-LL-16-16",
+     "position": 7,
+     "dimensions": {
+      "item": "Overall length 3.72\""
+     },
+     "portLabel": "1-5/16-12 JIC",
+     "port2Label": "1-5/16-12 ORB",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "6801-LL-20-20",
+     "position": 8,
+     "dimensions": {
+      "item": "Overall length 4.41\""
+     },
+     "portLabel": "1-5/8-12 JIC",
+     "port2Label": "1-5/8-12 ORB",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    }
+   ],
+   "crossReferences": []
+  },
+  {
+   "sku": "IH-TK-6801-LLL",
+   "slug": "tompkins-6801-lll-male-jic-37-male-o-ring-boss-adjustable-90-elbow-extra-extra-long",
+   "title": "Tompkins 6801-LLL Male JIC 37° × Male O-Ring Boss Adjustable 90° Elbow, Extra-Extra Long",
+   "category": "jic-adapters",
+   "brandSlug": "tompkins",
+   "focusKeyword": "tompkins 6801-lll",
+   "descriptionShort": "Tompkins 6801-LLL male JIC 37° × male o-ring boss adjustable 90° elbow, extra-extra long, carbon steel: 1 sizes, 9/16-18 JIC upward.",
+   "descriptionLong": "<p>The <strong>Tompkins 6801-LLL</strong> is a longer-bodied version of the standard 6801: male JIC 37° × male o-ring boss adjustable 90° elbow, carbon steel, in 1 size.</p><h3>Specification</h3><ul><li>End A: Male JIC 37°</li><li>End B: Male O-Ring Boss</li><li>Form: extra-extra long, 90° elbow</li><li>Material: carbon steel</li><li>Sizes: 1</li></ul><h3>When to use it</h3><p>Use the long-body version where the standard fitting is too short to clear a neighbouring port, flange or bulkhead, or to reach past a guard without an extra adapter.</p><h3>How to order</h3><p>Quote the Tompkins part number, or the end types and dash sizes. Price and lead time are confirmed with the quotation.</p>",
+   "seoTitle": "Tompkins 6801-LLL Male JIC 37° × Male O-Ring Boss Adjustable",
+   "seoDescription": "Tompkins 6801-LLL male JIC 37° × male o-ring boss adjustable 90° elbow, extra-extra long, carbon steel, 1 sizes. Quote by Tompkins part number.",
+   "faqs": [
+    {
+     "question": "How is the 6801-LLL different from the standard 6801?",
+     "answer": "Same ends and threads, longer body. The size table gives each part number."
+    },
+    {
+     "question": "What is the lead time?",
+     "answer": "Price and lead time are confirmed with the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Fitting Configuration",
+     "value": "90° elbow, extra-extra long",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "fitting_configuration"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "Carbon steel",
+     "unit": null,
+     "position": 1,
+     "isFilterable": false,
+     "templateKey": "material"
+    }
+   ],
+   "searchAliases": [
+    "6801-LLL",
+    "6801-LLL-06-06",
+    "6801LLL0606"
+   ],
+   "images": [
+    {
+     "file": "988ee3d9175a5ea858b21c02dc9267a9.jpg",
+     "alt": "Tompkins 6801-LLL male JIC 37° × male o-ring boss adjustable 90° elbow, extra-extra long, carbon steel, view 1",
+     "caption": "Supplier catalogue image (2026-10-11)"
+    },
+    {
+     "file": "c83485560ca6c0019448f29ab502db62.jpg",
+     "alt": "Tompkins 6801-LLL male JIC 37° × male o-ring boss adjustable 90° elbow, extra-extra long, carbon steel, view 2",
+     "caption": "Supplier catalogue image (2026-10-11)"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "6801-LLL-06-06",
+     "position": 0,
+     "dimensions": {
+      "item": "Overall length 3.06\""
+     },
+     "portLabel": "9/16-18 JIC",
+     "port2Label": "9/16-18 ORB",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    }
+   ],
+   "crossReferences": []
+  },
+  {
+   "sku": "IH-TK-6801-S",
+   "slug": "tompkins-6801-s-male-jic-37-male-o-ring-boss-swivel-adjustable-90-elbow",
+   "title": "Tompkins 6801-S Male JIC 37° × Male O-Ring Boss Swivel Adjustable 90° Elbow",
+   "category": "jic-adapters",
+   "brandSlug": "tompkins",
+   "focusKeyword": "tompkins 6801-s",
+   "descriptionShort": "Tompkins 6801-S male JIC 37° × male o-ring boss swivel adjustable 90° elbow, swivel, carbon steel: 3 sizes, 9/16-18 JIC upward.",
+   "descriptionLong": "<p>The <strong>Tompkins 6801-S</strong> is the swivel version of the 6801, with a swivel nut on one end so it can be aligned without turning the body: male JIC 37° × male o-ring boss swivel adjustable 90° elbow, carbon steel, in 3 sizes.</p><h3>Specification</h3><ul><li>End A: Male JIC 37°</li><li>End B: Male O-Ring Boss Swivel</li><li>Form: swivel, 90° elbow</li><li>Material: carbon steel</li><li>Sizes: 3</li></ul><h3>When to use it</h3><p>Use the swivel version where the fitting has to be lined up after the other end is tight, so the line does not have to be twisted into place.</p><h3>How to order</h3><p>Quote the Tompkins part number, or the end types and dash sizes. Price and lead time are confirmed with the quotation.</p>",
+   "seoTitle": "Tompkins 6801-S Male JIC 37° × Male O-Ring Boss Swivel",
+   "seoDescription": "Tompkins 6801-S male JIC 37° × male o-ring boss swivel adjustable 90° elbow, swivel, carbon steel, 3 sizes. Quote by Tompkins part number.",
+   "faqs": [
+    {
+     "question": "How is the 6801-S different from the standard 6801?",
+     "answer": "Same ends, with a swivel nut on one end so it can be aligned after the other end is tightened. The size table gives each part number."
+    },
+    {
+     "question": "What is the lead time?",
+     "answer": "Price and lead time are confirmed with the quotation."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Fitting Configuration",
+     "value": "90° elbow, swivel",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "fitting_configuration"
+    },
+    {
+     "group": "Construction",
+     "label": "Material",
+     "value": "Carbon steel",
+     "unit": null,
+     "position": 1,
+     "isFilterable": false,
+     "templateKey": "material"
+    }
+   ],
+   "searchAliases": [
+    "6801-S",
+    "6801-S-06-06",
+    "6801-S-08-08",
+    "6801-S-10-10",
+    "6801S0606",
+    "6801S0808",
+    "6801S1010"
+   ],
+   "images": [
+    {
+     "file": "e5337ec58a9425ddf6ff24f65dce7fb8.jpg",
+     "alt": "Tompkins 6801-S male JIC 37° × male o-ring boss swivel adjustable 90° elbow, swivel, carbon steel, view 1",
+     "caption": "Supplier catalogue image (2026-10-11)"
+    },
+    {
+     "file": "e140395931913a5925ebd39dbb385ff1.jpg",
+     "alt": "Tompkins 6801-S male JIC 37° × male o-ring boss swivel adjustable 90° elbow, swivel, carbon steel, view 2",
+     "caption": "Supplier catalogue image (2026-10-11)"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "6801-S-06-06",
+     "position": 0,
+     "dimensions": {},
+     "portLabel": "9/16-18 JIC",
+     "port2Label": "9/16-18 ORB",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "6801-S-08-08",
+     "position": 1,
+     "dimensions": {},
+     "portLabel": "3/4-16 JIC",
+     "port2Label": "3/4-16 ORB",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "6801-S-10-10",
+     "position": 2,
+     "dimensions": {},
+     "portLabel": "7/8-14 JIC",
+     "port2Label": "7/8-14 ORB",
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    }
+   ],
+   "crossReferences": []
+  }
+ ],
+ "hold": []
+}

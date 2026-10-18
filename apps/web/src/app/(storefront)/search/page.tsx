@@ -1,3 +1,5 @@
+import { CATEGORY_WITH_IMAGE_CHAIN, nearestCategoryImage } from '../../../lib/category-fallback'
+import { CategoryFallbackImage } from '../../../components/ProductCard'
 import { mediaUrl } from '../../../lib/media'
 import type { Metadata } from 'next'
 import Link from 'next/link'
@@ -61,7 +63,7 @@ export default async function SearchPage({ searchParams }: Props) {
   const availability: AvailabilityMode | null = parseAvailabilityParam(sp.avail)
 
   let products: Awaited<
-    ReturnType<typeof db.product.findMany<{ include: { brand: true; category: true; images: { include: { media: true } } } }>>
+    ReturnType<typeof db.product.findMany<{ include: { brand: true; category: typeof CATEGORY_WITH_IMAGE_CHAIN; images: { include: { media: true } } } }>>
   > = []
   let totalProducts = 0
   let facetBrands: { id: string; name: string; slug: string; count: number }[] = []
@@ -162,7 +164,7 @@ export default async function SearchPage({ searchParams }: Props) {
         },
         include: {
           brand: true,
-          category: true,
+          category: CATEGORY_WITH_IMAGE_CHAIN,
           images: { orderBy: { position: 'asc' }, take: 1, include: { media: true } },
         },
         // For non-relevance sorts, push the order down to Postgres so
@@ -597,11 +599,13 @@ export default async function SearchPage({ searchParams }: Props) {
                         {topMatch.images[0] ? (
                           <Image
                             src={mediaUrl(topMatch.images[0]!.media.storagePath)}
-                            alt={topMatch.title}
+                            alt={topMatch.images[0]!.alt ?? topMatch.images[0]!.media.alt ?? topMatch.title}
                             fill
                             className="object-contain p-3"
                             sizes="140px"
                           />
+                        ) : nearestCategoryImage(topMatch.category) ? (
+                          <CategoryFallbackImage {...nearestCategoryImage(topMatch.category)!} showTag={false} sizes="140px" />
                         ) : (
                           <div className="absolute inset-0 grid place-items-center font-mono text-[10px] text-ih-muted">
                             {topMatch.sku.slice(0, 8)}
@@ -645,11 +649,13 @@ export default async function SearchPage({ searchParams }: Props) {
                             {img ? (
                               <Image
                                 src={mediaUrl(img.media.storagePath)}
-                                alt={product.title}
+                                alt={img.alt ?? img.media.alt ?? product.title}
                                 fill
                                 className="object-contain p-2"
                                 sizes="80px"
                               />
+                            ) : nearestCategoryImage(product.category) ? (
+                              <CategoryFallbackImage {...nearestCategoryImage(product.category)!} showTag={false} sizes="80px" />
                             ) : (
                               <div className="absolute inset-0 grid place-items-center font-mono text-[9px] text-ih-muted">
                                 IMG

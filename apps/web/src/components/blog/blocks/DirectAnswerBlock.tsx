@@ -1,18 +1,30 @@
 import type { DirectAnswerBlock } from '@indus/domain'
 
 /**
- * A question as a real heading, with the answer as the very next element.
- * The proximity is the point: an extractor looking for "what answers this
- * question" takes the first block after the heading, so nothing decorative
- * goes between them.
+ * The "Quick answer" box: a question as a real heading, with the answer as the
+ * very next element. The proximity is the point — an extractor looking for
+ * "what answers this question" takes the first block after the heading, so the
+ * label sits above the question and nothing goes between question and answer.
  */
-export default function DirectAnswerBlockView({ block }: { block: DirectAnswerBlock }) {
+export default function DirectAnswerBlockView({
+  block,
+  headingLevel = 'h3',
+}: {
+  block: DirectAnswerBlock
+  /** `h2` when it sits in a page header (the topic hub) rather than under a section head. */
+  headingLevel?: 'h2' | 'h3'
+}) {
+  const Heading = headingLevel
   return (
-    <div className="my-6">
-      <h3 className="mb-2 text-[17px] font-semibold tracking-tight text-ih-ink">{block.question}</h3>
-      <p className="border-l-2 border-ih-accent pl-4 text-[15px] leading-[1.6] text-ih-ink-2">
-        {block.answer}
-      </p>
-    </div>
+    <aside
+      aria-label="Quick answer"
+      className="rounded-lg border border-ih-accent-line bg-ih-accent-soft p-5 min-[761px]:px-[26px] min-[761px]:py-6"
+    >
+      <p className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-accent">Quick answer</p>
+      <Heading className="mt-2.5 text-[18px] font-semibold leading-[1.3] tracking-[-0.015em] text-ih-ink min-[761px]:text-[20px]">
+        {block.question}
+      </Heading>
+      <p className="mt-2 text-[15.5px] leading-[1.65] text-ih-ink min-[761px]:text-[16.5px]">{block.answer}</p>
+    </aside>
   )
 }

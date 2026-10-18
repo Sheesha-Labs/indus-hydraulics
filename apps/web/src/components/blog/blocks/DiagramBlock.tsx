@@ -1,5 +1,6 @@
 import type { DiagramBlock } from '@indus/domain'
 import { sanitizeDiagramSvg } from '../../../lib/diagram-svg'
+import FigureCaption from './FigureCaption'
 
 /**
  * An explanatory figure carried as inline SVG.
@@ -28,7 +29,7 @@ export default function DiagramBlockView({ block }: { block: DiagramBlock }) {
   if (!svg) return null
 
   return (
-    <figure className="my-8">
+    <figure className="my-2 min-w-0">
       <div className="overflow-x-auto rounded-lg border border-ih-border bg-ih-surface">
         {/*
           `role="img"` plus the label is what makes this one object to a screen
@@ -42,14 +43,7 @@ export default function DiagramBlockView({ block }: { block: DiagramBlock }) {
           dangerouslySetInnerHTML={{ __html: svg }}
         />
       </div>
-      <figcaption className="mt-2.5 font-sans text-[13px] leading-[1.5] text-ih-muted">
-        {block.captionPrefix ? (
-          <strong className="mono mr-1.5 text-[11px] uppercase tracking-[0.1em] text-ih-ink">
-            {block.captionPrefix}
-          </strong>
-        ) : null}
-        {block.caption}
-      </figcaption>
+      <FigureCaption prefix={block.captionPrefix} caption={block.caption} />
     </figure>
   )
 }

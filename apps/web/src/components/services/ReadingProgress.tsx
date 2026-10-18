@@ -12,14 +12,13 @@ type Props = {
 }
 
 /**
- * Tiny reading-progress UI — appears under the sticky TOC. Reads the
- * scroll position of the named article element and renders a bar + percent.
- * SSR-safe: returns 0% on first paint, then hydrates with the live value.
+ * Scroll progress through the element `targetSelector` names, 0–100.
+ *
+ * Shared by this panel (service cases) and the blog article's contents bar,
+ * so both measure "how far through the article" the same way. SSR-safe: 0 on
+ * first paint, then the live value once mounted.
  */
-export default function ReadingProgress({
-  targetSelector = '.sc-article-body',
-  estimatedMinutes = 10,
-}: Props) {
+export function useReadingProgress(targetSelector: string): number {
   const [progress, setProgress] = useState(0)
 
   useEffect(() => {
@@ -46,6 +45,19 @@ export default function ReadingProgress({
       window.removeEventListener('resize', update)
     }
   }, [targetSelector])
+
+  return progress
+}
+
+/**
+ * Tiny reading-progress UI — appears under the sticky TOC. Reads the
+ * scroll position of the named article element and renders a bar + percent.
+ */
+export default function ReadingProgress({
+  targetSelector = '.sc-article-body',
+  estimatedMinutes = 10,
+}: Props) {
+  const progress = useReadingProgress(targetSelector)
 
   return (
     <div className="mt-4 rounded-sm border border-ih-border bg-ih-surface p-3.5 font-mono">

@@ -4,11 +4,17 @@ import {
   marketBySlug,
   marketPageBySlug,
   pendingMarketPageSlugs,
+  applyMarketCopy,
   releasedMarketPage,
 } from '@indus/domain'
 import { buildWhatsappHref } from '@indus/ui'
 import MarketLanding from '../../../../components/markets/MarketLanding'
-import { marketCatalogueClusters, marketStockedBrands } from '../../../../lib/market-catalogue'
+import {
+  marketCatalogueClusters,
+  marketOperationsImages,
+  marketSectorImages,
+  marketStockedBrands,
+} from '../../../../lib/market-catalogue'
 import { buildMarketMapModel } from '../../../../lib/market-geometry'
 import { getSubPageContentFresh } from '../../../../lib/page-content'
 import { requireStaff } from '../../../../lib/staff-session'
@@ -47,21 +53,26 @@ export default async function MarketDraftPreviewPage({ params }: Props) {
 
   const { slug } = await params
   const market = marketBySlug(slug)
-  const page = marketPageBySlug(slug)
-  if (!market || !page) notFound()
+  const record = marketPageBySlug(slug)
+  if (!market || !record) notFound()
 
   const isReleased = releasedMarketPage(slug) !== undefined
   const pending = pendingMarketPageSlugs().length
 
-  const [clusters, brands, settings, content] = await Promise.all([
+  const [clusters, brands, sectorImages, operationsImages, settings, content] = await Promise.all([
     marketCatalogueClusters(),
     marketStockedBrands(),
+    marketSectorImages(),
+    marketOperationsImages(true),
     getStoreSettings(),
     // The uncached read, deliberately: this IS the review surface, so it has
     // to show the arrangement as it stands right now rather than whatever the
     // storefront cache is still serving.
     getSubPageContentFresh('market', { name: market.name, slug: market.slug }),
   ])
+  // The preview shows exactly what the storefront will: the record with this
+  // market's Pages & Blocks copy laid over it.
+  const page = applyMarketCopy(record, content.values)
 
   return (
     <>
@@ -98,6 +109,8 @@ export default async function MarketDraftPreviewPage({ params }: Props) {
           mapModel={buildMarketMapModel(page, market.name)}
           clusters={clusters}
           brands={brands}
+          sectorImages={sectorImages}
+          operationsImages={operationsImages}
           contact={{
             phone: settings.contactPhone,
             email: settings.contactEmail,

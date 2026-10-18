@@ -8,7 +8,7 @@ import { JsonLd } from '@indus/ui'
 import BlogPostCard from '../../../../../components/blog/BlogPostCard'
 import { listBlogPosts } from '../../../../../lib/blog-posts'
 import { mediaUrl } from '../../../../../lib/media'
-import { ORG_ID, SITE_NAME, pageMetadata, urlFor } from '../../../../../lib/seo'
+import { ORG_ID, SITE_NAME, crawlableImageUrl, pageMetadata, urlFor } from '../../../../../lib/seo'
 
 type Props = { params: Promise<{ slug: string }> }
 
@@ -96,7 +96,7 @@ export default async function BlogAuthorPage({ params }: Props) {
       url: profileUrl,
       ...(author.jobTitle ? { jobTitle: author.jobTitle } : {}),
       ...(author.bio ? { description: author.bio } : {}),
-      ...(author.avatar ? { image: mediaUrl(author.avatar.storagePath) } : {}),
+      ...(author.avatar ? { image: crawlableImageUrl(author.avatar.storagePath) } : {}),
       ...(author.linkedinUrl ? { sameAs: [author.linkedinUrl] } : {}),
       ...(author.credentials
         ? { hasCredential: { '@type': 'EducationalOccupationalCredential', name: author.credentials } }

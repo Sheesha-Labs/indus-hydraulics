@@ -207,7 +207,7 @@ export const MARKETS: Market[] = [
       'Morocco is a North African destination, which on our shipping policy means the lane is quoted per consignment rather than run to a standing schedule. That is a function of routing and volume rather than of what we can supply — the catalogue available is the same one the Gulf buys from.',
     leadTime: 'Quoted per consignment',
     routes: ['Sea freight', 'Air freight where the schedule is tighter'],
-    incoterms: ['CIF', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
+    incoterms: ['CIF', 'DAP', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
     conformity: [
       'Certificate of Origin, Dubai Chamber attested',
       'Pre-shipment inspection where the destination requires it',
@@ -307,7 +307,7 @@ export const MARKETS: Market[] = [
     name: 'South Africa',
     countryCode: 'ZA',
     summary:
-      'Hydraulic hose, fittings, adapters, valves and industrial hose supplied to South Africa from our Dubai warehouse, with SABS attestation available where required.',
+      'Hydraulic hose, fittings, adapters, valves and industrial hose supplied to South Africa from our Dubai warehouse, with the NRCS Letter of Authority prepared for regulated products.',
     intro:
       'South Africa has a deep domestic industrial supply base, so buyers here are rarely looking for the ordinary items. What tends to move on this lane is the specific thing that is hard to source locally — an exotic-alloy metallic hose, a GOST coupling, a particular standard of adapter.',
     leadTime: 'Quoted per consignment',
@@ -315,7 +315,7 @@ export const MARKETS: Market[] = [
     incoterms: ['CIF', 'FOB Jebel Ali', 'DAP', 'EXW Dubai for a nominated forwarder'],
     conformity: [
       'Certificate of Origin, Dubai Chamber attested',
-      'SABS attestation on request',
+      'NRCS Letter of Authority for regulated products',
       'Pre-shipment inspection where the destination requires it',
     ],
     context: {
@@ -461,7 +461,7 @@ export const MARKETS: Market[] = [
       'Algeria is a gas economy with most of its production well inland, which puts equipment into sustained high ambient temperature for much of the year. That is the single most useful thing to know when specifying hose for this market.',
     leadTime: 'Quoted per consignment',
     routes: ['Sea freight', 'Air freight where the schedule is tighter'],
-    incoterms: ['CIF', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
+    incoterms: ['CIF', 'DAP', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
     conformity: [
       'Certificate of Origin, Dubai Chamber attested',
       'Pre-shipment inspection where the destination requires it',

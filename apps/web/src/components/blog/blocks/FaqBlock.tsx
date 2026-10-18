@@ -1,37 +1,28 @@
 import type { FaqBlock } from '@indus/domain'
 
 /**
- * Native `<details>` rather than a hand-rolled accordion. packages/ui has no
- * Accordion primitive, and CLAUDE.md §10.5 requires any new overlay or
- * disclosure to own its focus handling — `<details>` already does, keyboard
- * and screen-reader behaviour included, with no client JS.
+ * Every question and answer fully open — no accordion. The answers are
+ * therefore in the HTML a crawler reads with no interaction, which is what the
+ * FAQPage JSON-LD built from the same block claims, and the block needs no
+ * client JavaScript or hand-rolled disclosure behaviour at all.
  *
- * The same items feed FAQPage JSON-LD from the page, read back out of the
- * blocks rather than stored twice, so the markup and the structured data
- * cannot drift apart.
+ * The same items feed that JSON-LD from the page, read back out of the blocks
+ * rather than stored twice, so the markup and the structured data cannot drift.
  */
 export default function FaqBlockView({ block }: { block: FaqBlock }) {
   return (
-    <section className="my-8">
-      {block.heading && (
-        <h2 className="mb-4 text-[20px] font-semibold tracking-tight text-ih-ink">{block.heading}</h2>
-      )}
-      <div className="flex flex-col border-t border-ih-border">
+    <section aria-label={block.heading ?? 'Frequently asked questions'} className="mt-8 border-t border-ih-border pt-7">
+      <h2 className="mb-3 font-serif text-[26px] font-normal leading-[1.1] tracking-[-0.01em] text-ih-ink min-[761px]:text-[32px]">
+        {block.heading ?? 'Frequently asked questions'}
+      </h2>
+      <dl className="m-0 grid grid-cols-1 gap-x-10 min-[761px]:grid-cols-2">
         {block.items.map((item, i) => (
-          <details key={i} className="group border-b border-ih-border">
-            <summary className="flex cursor-pointer list-none items-center justify-between gap-4 py-3.5 text-[14.5px] font-medium text-ih-ink marker:content-none hover:text-ih-accent">
-              {item.question}
-              <span
-                aria-hidden="true"
-                className="mono shrink-0 text-[15px] text-ih-muted transition-transform group-open:rotate-45"
-              >
-                +
-              </span>
-            </summary>
-            <p className="pb-4 pr-8 text-[14px] leading-[1.65] text-ih-ink-2">{item.answer}</p>
-          </details>
+          <div key={i} className="border-b border-ih-border py-[18px]">
+            <dt className="text-[16px] font-semibold leading-[1.4] text-ih-ink">{item.question}</dt>
+            <dd className="m-0 mt-1.5 text-[15px] leading-[1.65] text-ih-ink-2">{item.answer}</dd>
+          </div>
         ))}
-      </div>
+      </dl>
     </section>
   )
 }

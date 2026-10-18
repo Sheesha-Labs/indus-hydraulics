@@ -2,6 +2,7 @@
 
 import { revalidatePath } from 'next/cache'
 import { invalidateProducts } from '../../../../lib/cache-tags'
+import { notifyIndexNow } from '../../../../lib/indexnow'
 import { redirect } from 'next/navigation'
 import { z } from 'zod'
 import { db, Prisma } from '@indus/db'
@@ -34,6 +35,7 @@ async function revalidateStorefrontProduct(productId: string): Promise<void> {
   })
   if (row?.slug) revalidatePath(`/p/${row.slug}`)
   if (row?.categoryId) await revalidateCategoryShelves(row.categoryId)
+  notifyIndexNow([row?.slug ? `/p/${row.slug}` : null])
 }
 
 /**

@@ -8,8 +8,10 @@ import {
   marketsOrdered,
   serviceAreasOrdered,
   REPLACEMENT_INDEX_MIN_MATCHES,
+  blogPostModifiedAt,
+  SITEMAP_MAX_IMAGES_PER_URL,
 } from '@indus/domain'
-import { BASE_URL } from './seo'
+import { BASE_URL, crawlableImageUrl } from './seo'
 import { getReplacementBrands, getReplacementSitemapKeys } from './replacement-data'
 import { STATIC_SITEMAP_PATHS } from './crawl-policy'
 import { redirectSourcePaths } from './redirects'
@@ -74,6 +76,42 @@ export function sitemapSectionUrl(id: SitemapSectionId): string {
 }
 
 // ── Section builders ──────────────────────────────────────────────────────
+
+/**
+ * Same-origin image URLs for a page's `<image:image>` entries, in page order,
+ * dropping anything that is not a re-servable storage image.
+ *
+ * The storage host answers `x-robots-tag: none`, so an image sitemap pointing
+ * at it would list files a crawler is told not to index — see
+ * `lib/crawlable-media.ts`.
+ */
+function crawlableImages(paths: ReadonlyArray<string | null | undefined>): string[] {
+  return paths.map((p) => crawlableImageUrl(p)).filter((url): url is string => Boolean(url))
+}
+
+/** The support panel's image URL from an industry's `supportBlock` JSON. */
+function supportBlockImage(block: unknown): string | null {
+  if (!block || typeof block !== 'object') return null
+  const image = (block as Record<string, unknown>).image
+  return typeof image === 'string' && image.trim() ? image.trim() : null
+}
+
+/** Media ids of the figures in a blog post's `bodyBlocks`, in reading order. */
+function blogBodyImageIds(blocks: unknown): string[] {
+  const ids: string[] = []
+  const walk = (node: unknown): void => {
+    if (Array.isArray(node)) {
+      node.forEach(walk)
+      return
+    }
+    if (!node || typeof node !== 'object') return
+    const record = node as Record<string, unknown>
+    if (typeof record.imageId === 'string' && record.imageId) ids.push(record.imageId)
+    Object.values(record).forEach(walk)
+  }
+  walk(blocks)
+  return ids
+}
 
 async function pagesSection(): Promise<MetadataRoute.Sitemap> {
   const cmsPages = await db.cmsPage.findMany({
@@ -143,6 +181,12 @@ async function productsSection(): Promise<MetadataRoute.Sitemap> {
       sitemapPriority: true,
       sitemapChangeFreq: true,
       _count: { select: { variants: true } },
+      // Gallery order, so the first `<image:image>` is the hero the page shows.
+      images: {
+        orderBy: { position: 'asc' },
+        take: SITEMAP_MAX_IMAGES_PER_URL,
+        select: { media: { select: { storagePath: true } } },
+      },
     },
   })
 
@@ -156,6 +200,12 @@ async function productsSection(): Promise<MetadataRoute.Sitemap> {
       robotsIndex: isProductIndexable({ ...p, sizeRows: p._count.variants }),
       sitemapPriority: p.sitemapPriority ? Number(p.sitemapPriority) : null,
       sitemapChangeFreq: p.sitemapChangeFreq,
+      // Same-origin URLs: the storage host answers `x-robots-tag: none`, and an
+      // image sitemap pointing at files a crawler is told not to index would
+      // be worse than none.
+      images: p.images
+        .map((img) => crawlableImageUrl(img.media.storagePath))
+        .filter((url): url is string => Boolean(url)),
     }))
   )
 }
@@ -209,6 +259,13 @@ async function brandsSection(): Promise<MetadataRoute.Sitemap> {
     where: { isPublished: true },
     select: {
       slug: true,
+      // The case-study photographs the brand page renders. Product tiles are
+      // left to the product entries, which already list those images.
+      caseStudies: {
+        where: { isPublished: true },
+        orderBy: { position: 'asc' },
+        select: { image: { select: { storagePath: true } } },
+      },
       contentUpdatedAt: true,
       seoUpdatedAt: true,
       excludeFromSitemap: true,
@@ -224,6 +281,7 @@ async function brandsSection(): Promise<MetadataRoute.Sitemap> {
     brands.map((b) => ({
       slug: b.slug,
       lastModified: newestDate(b.contentUpdatedAt, b.seoUpdatedAt),
+      images: crawlableImages(b.caseStudies.map((c) => c.image?.storagePath)),
       excludeFromSitemap: b.excludeFromSitemap,
       robotsIndex: b.robotsIndex,
       sitemapPriority: b.sitemapPriority ? Number(b.sitemapPriority) : null,
@@ -240,7 +298,11 @@ async function blogSection(): Promise<MetadataRoute.Sitemap> {
       select: {
         slug: true,
         publishedAt: true,
+        updatedAt: true,
         seoUpdatedAt: true,
+        reviewedAt: true,
+        hero: { select: { storagePath: true } },
+        bodyBlocks: true,
         excludeFromSitemap: true,
         robotsIndex: true,
         sitemapPriority: true,
@@ -273,12 +335,32 @@ async function blogSection(): Promise<MetadataRoute.Sitemap> {
     }),
   ])
 
+  // Inline figures are referenced by Media id inside the block JSON, so they
+  // are resolved in one query rather than one per post.
+  const figureIds = [...new Set(blogPosts.flatMap((p) => blogBodyImageIds(p.bodyBlocks)))]
+  const figurePaths = new Map(
+    (
+      await db.media.findMany({
+        where: { id: { in: figureIds }, deletedAt: null },
+        select: { id: true, storagePath: true },
+      })
+    ).map((m) => [m.id, m.storagePath])
+  )
+
   const postEntries = buildSitemapEntries(
     BASE_URL,
     'blog_post',
     blogPosts.map((p) => ({
       slug: p.slug,
-      lastModified: newestDate(p.seoUpdatedAt, p.publishedAt),
+      // The same date the article's JSON-LD `dateModified` states. This was
+      // `newest(seoUpdatedAt, publishedAt)`, which never moved for an edit to
+      // the article itself — see `blogPostModifiedAt`.
+      lastModified: blogPostModifiedAt(p),
+      // The hero first, then each figure in reading order.
+      images: crawlableImages([
+        p.hero?.storagePath,
+        ...blogBodyImageIds(p.bodyBlocks).map((id) => figurePaths.get(id)),
+      ]),
       excludeFromSitemap: p.excludeFromSitemap,
       robotsIndex: p.robotsIndex,
       sitemapPriority: p.sitemapPriority ? Number(p.sitemapPriority) : null,
@@ -318,6 +400,7 @@ async function servicesSection(): Promise<MetadataRoute.Sitemap> {
       publishedAt: true,
       seoUpdatedAt: true,
       updatedAt: true,
+      heroImage: { select: { storagePath: true } },
       excludeFromSitemap: true,
       robotsIndex: true,
       sitemapPriority: true,
@@ -330,6 +413,7 @@ async function servicesSection(): Promise<MetadataRoute.Sitemap> {
     .map((c) => ({
       url: `${BASE_URL}/services/${c.slug}`,
       lastModified: newestDate(c.seoUpdatedAt, c.publishedAt) ?? c.updatedAt,
+      images: crawlableImages([c.heroImage?.storagePath]),
       changeFrequency: c.sitemapChangeFreq ?? ('monthly' as const),
       priority: c.sitemapPriority ? Number(c.sitemapPriority) : 0.7,
     }))
@@ -340,6 +424,14 @@ async function industriesSection(): Promise<MetadataRoute.Sitemap> {
     where: { isPublished: true },
     select: {
       slug: true,
+      hero: { select: { storagePath: true } },
+      // A JSON column; `image` is a full storage URL, see lib/industry-content.ts.
+      supportBlock: true,
+      caseStudies: {
+        where: { isPublished: true },
+        orderBy: { position: 'asc' },
+        select: { image: { select: { storagePath: true } } },
+      },
       contentUpdatedAt: true,
       seoUpdatedAt: true,
       excludeFromSitemap: true,
@@ -354,6 +446,12 @@ async function industriesSection(): Promise<MetadataRoute.Sitemap> {
     .map((i) => ({
       url: `${BASE_URL}/industries/${i.slug}`,
       lastModified: newestDate(i.contentUpdatedAt, i.seoUpdatedAt),
+      // Page order: hero, the case-study cards, then the support panel.
+      images: crawlableImages([
+        i.hero?.storagePath,
+        ...i.caseStudies.map((c) => c.image?.storagePath),
+        supportBlockImage(i.supportBlock),
+      ]),
       changeFrequency: i.sitemapChangeFreq ?? ('monthly' as const),
       priority: i.sitemapPriority ? Number(i.sitemapPriority) : 0.6,
     }))

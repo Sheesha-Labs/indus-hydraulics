@@ -34,7 +34,13 @@
  * That shelf holds the DEMCO and Victaulic valves sourced from a supplier's
  * surplus stock, which is not held in Dubai, so "ex-stock in three days" is not
  * a promise it can keep; its pages fall back to the 14-day lead time recorded on
- * each product. The other candidates, if the claim ever needs narrowing
+ * each product.
+ *
+ * Branded third-party ranges are COVERED, by decision (founder, 2026-10-11): the
+ * Parker, Tompkins, Stucchi, Enerpac and other maker-branded listings added from
+ * 2026-10-11 keep the ex-stock claim, because the stock will be held or air-freighted
+ * to meet it. They are not an oversight; do not exempt them by brand without a new
+ * instruction. The other candidates, if the claim ever needs narrowing
  * further, are the 207 products whose recorded lead time is four weeks or more:
  * `blowout-preventers` (up to 240 days), `flow-iron-wellhead-equipment-uae`
  * (168), `oilfield-valve-suppliers-uae` (84) and 69 of the industrial hose

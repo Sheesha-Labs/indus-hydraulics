@@ -21,6 +21,7 @@ import {
 } from '@indus/domain'
 import { Breadcrumb, Button, EmptyState, JsonLd, Note } from '@indus/ui'
 import { pageMetadata, urlFor } from '../../../lib/seo'
+import { CATEGORY_WITH_IMAGE_CHAIN, nearestCategoryImage } from '../../../lib/category-fallback'
 import ProductCard from '../../../components/ProductCard'
 import RelatedReading from '../../../components/blog/RelatedReading'
 import {
@@ -118,6 +119,31 @@ export type CategoryViewProps = {
  * makes this page cacheable. `revalidate` above stays for the same reason.
  */
 
+/**
+ * Share image when the editor has set no `ogImageMediaId`: the category's own
+ * card image, else the nearest ancestor's. Only top-level categories carry a
+ * card image, so a sub-category shares its root's studio shot rather than the
+ * site default. Bounded walk — the tree is three levels deep today.
+ */
+async function categoryImage(
+  categoryId: string
+): Promise<{ storagePath: string; alt: string | null } | null> {
+  let id: string | null = categoryId
+  for (let depth = 0; id && depth < 6; depth++) {
+    const row: {
+      parentId: string | null
+      image: { storagePath: string; alt: string | null } | null
+    } | null = await db.category.findUnique({
+      where: { id },
+      select: { parentId: true, image: { select: { storagePath: true, alt: true } } },
+    })
+    if (!row) return null
+    if (row.image) return row.image
+    id = row.parentId
+  }
+  return null
+}
+
 export async function categoryMetadata({ slug, sp }: CategoryViewProps): Promise<Metadata> {
   const [category, seoSetting] = await Promise.all([
     db.category.findUnique({ where: { slug } }),
@@ -127,14 +153,13 @@ export async function categoryMetadata({ slug, sp }: CategoryViewProps): Promise
   ])
   if (!category) return {}
 
-  const ogPath = category.ogImageMediaId
-    ? ((
-        await db.media.findUnique({
-          where: { id: category.ogImageMediaId },
-          select: { storagePath: true },
-        })
-      )?.storagePath ?? null)
-    : null
+  const ogImage = category.ogImageMediaId
+    ? await db.media.findUnique({
+        where: { id: category.ogImageMediaId },
+        select: { storagePath: true, alt: true },
+      })
+    : await categoryImage(category.id)
+  const ogPath = ogImage?.storagePath ?? null
 
   // Filtered and sorted variants of a category page are duplicate-content
   // slices of the base. We let Google FOLLOW the links (so it discovers
@@ -164,6 +189,7 @@ export async function categoryMetadata({ slug, sp }: CategoryViewProps): Promise
     canonicalUrl: pageNo > 1 ? null : category.canonicalUrl,
     robots,
     ogImagePath: ogPath,
+    ogImageAlt: ogImage?.alt ?? null,
     titleTemplate: seoSetting?.defaultMetaTitleTemplate ?? null,
     defaultDescription: seoSetting?.defaultMetaDescription ?? null,
   })
@@ -195,6 +221,15 @@ export default async function CategoryView({ slug, sp }: CategoryViewProps) {
   const { byId, children } = indexTree(tree)
   const categoryIds = descendantIds(children, category.id)
   const trail = ancestorTrail(byId, category.id)
+  // Root category's studio shot — the tile image for listings with no photo.
+  const rootSlug = trail[0]?.slug ?? category.slug
+  const root = await db.category.findUnique({
+    where: { slug: rootSlug },
+    select: { name: true, image: { select: { storagePath: true } } },
+  })
+  const fallbackImage = root?.image
+    ? { src: root.image.storagePath, categoryName: root.name }
+    : null
 
   /*
    * Spec facets are computed from every product the OTHER filters leave in
@@ -252,6 +287,7 @@ export default async function CategoryView({ slug, sp }: CategoryViewProps) {
         brand: { select: { name: true, slug: true } },
         images: { orderBy: { position: 'asc' }, take: 1, include: { media: true } },
         specs: { where: { isFilterable: true }, take: 3 },
+        category: CATEGORY_WITH_IMAGE_CHAIN,
       },
       orderBy:
         sp.sort === 'az'
@@ -785,7 +821,11 @@ export default async function CategoryView({ slug, sp }: CategoryViewProps) {
             ) : (
               <div className="grid grid-cols-2 gap-4 lg:grid-cols-3 xl:grid-cols-4">
                 {products.map((product) => (
-                  <ProductCard key={product.id} product={product} />
+                  <ProductCard
+                    key={product.id}
+                    product={product}
+                    fallbackImage={nearestCategoryImage(product.category) ?? fallbackImage}
+                  />
                 ))}
               </div>
             )}

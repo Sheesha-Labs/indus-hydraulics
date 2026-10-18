@@ -74,9 +74,12 @@ function readVerification(): Metadata['verification'] {
  * below. Routes that emit their own metadata (PDP, category, brand, blog
  * via `pageMetadata`) override these per-page.
  */
-const DEFAULT_OG_TITLE = 'Indus Hydraulics — Industrial hydraulic distributor'
+const DEFAULT_OG_TITLE = 'Indus Hydraulics — Hydraulic & industrial hose supplier, Dubai'
+// No brand-authorisation claim here. The previous copy named HYDAC as an
+// authorised line, and the brand record says it is not — a fallback string
+// on every share card is the wrong place for a claim nobody maintains.
 const DEFAULT_OG_DESCRIPTION =
-  'Pumps, valves, cylinders and hose assemblies for engineers who can’t afford downtime. Authorized distributor for Parker, Bosch Rexroth, Yuken, and HYDAC, shipped from Dubai across the GCC and beyond.'
+  'Hydraulic and industrial hoses, fittings and couplings, lifting and rigging gear and oilfield spares for engineers who can’t afford downtime — shipped from Dubai across the GCC and beyond.'
 
 /**
  * Storefront head. Static, because nothing here depends on a database read:
@@ -91,7 +94,7 @@ export const metadata: Metadata = {
     template: '%s | Indus Hydraulics',
   },
   description:
-    'Pumps, valves, cylinders and hose assemblies for oil & gas, mining, marine and steel industries.',
+    'Hydraulic and industrial hoses, fittings, couplings, lifting and rigging gear and oilfield spares for oil & gas, marine, mining and construction — shipped from Dubai across the GCC.',
   verification: readVerification(),
   // Open Graph defaults — applied to any route that doesn't emit its own
   // openGraph block. The OG image itself is supplied by the file-based
@@ -154,7 +157,7 @@ export default async function StorefrontLayout({ children }: { children: React.R
     // organisation logo either.
     logoUrl: searchIconUrl(settings, BASE_URL),
     description:
-      'Industrial hydraulic components — pumps, cylinders, valves, hoses and consumables — for engineers who can’t afford downtime.',
+      'Supplier of hydraulic and industrial hoses, fittings and couplings, lifting and rigging equipment and oilfield spares, based in Dubai and serving the GCC.',
     foundingDate: '2003',
     sameAs: socials.length > 0 ? socials.map((s) => s.href) : readSameAsFromEnv(),
     contact: { email: settings.contactEmail, telephone: settings.contactPhone },

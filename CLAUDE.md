@@ -395,3 +395,53 @@ Things that fail **silently** now that one app serves two surfaces. Each cost re
 4. **Never `next-auth/react`.** Its `signIn`/`signOut` bake a base path from `NEXTAUTH_URL` at build time and always resolve to `/api/auth` — the customer instance. Use the server actions. Banned by lint.
 
 5. **`revalidatePath('//x')` matches nothing.** A protocol-relative path is not a route. 23 of these shipped as silent no-ops before the merge.
+
+---
+
+## 13. Images and image SEO — must-read
+
+**Before adding or changing any product, blog post, industry page, category, CMS page or image,
+read [`docs/image-seo-guidelines.md`](docs/image-seo-guidelines.md) and follow its checklist.**
+It records the image SEO programme of 2026-10 (PRs #474, #475 and the database/storage work) so
+it never has to be repeated. The non-negotiables:
+
+1. **Alt text is written, not copied.** What it is + key spec/standard + which view, ≤ 125
+   characters, unique per gallery view and per listing, describing what the photo actually
+   shows. Never the bare product title.
+2. **Product images render `img.alt ?? img.media.alt ?? product.title`** everywhere — PDP, cards
+   and every tile. Content images never get `alt=""`; empty alt is for decorative images only.
+3. **Never render `Media.caption`** — it holds internal provenance notes. Reader captions live in
+   `BlogPost.heroCaption` (every new post gets one) and figure-block captions, and say *why* the
+   picture is there, not what is in it.
+4. **Check the photo against the listing before writing alt text.** Fix a wrong photo by reusing
+   a correct library photo, a permitted maker/supplier photo, or an AI edit of one of *our own*
+   photos — never a competitor's photo.
+5. **Files:** JPEG for photos (PNG only when transparency is used), ≤ 2000 px, < 400 KB,
+   `width`/`height` recorded, storage key = descriptive slug from the alt text (no `HP040.png`,
+   timestamps or UUIDs). Replace or rename by uploading to a new key and repointing
+   `Media.storagePath`; never overwrite or delete a live object.
+6. **Markup:** JSON-LD, Open Graph and the image sitemap use `crawlableImageUrl()` (same-origin
+   `/media`), never a raw Supabase URL. New public image buckets go into
+   `CRAWLABLE_MEDIA_BUCKETS`. New page types with photographs pass captioned images to their
+   JSON-LD builder, `ogImageAlt` to `pageMetadata`, and `images` to their sitemap section.
+7. **Import scripts set `alt = product title` as a placeholder** — run an alt-text pass after
+   every import.
+
+---
+
+## 14. Supplier names never enter the repo
+
+**This repository is public.** Which distributors and principals Indus buys from is commercially
+sensitive, and anything committed here — file contents, folder names, commit messages, branch names,
+PR titles and bodies — is readable by anyone and survives in git history and closed PRs.
+
+1. No supplier or principal name, domain, URL, house brand, location or supplier-specific code system
+   in any committed file, folder name, branch, commit message or PR text. Makers whose products we list
+   under their own brand (Parker, Tompkins, Stucchi, Enerpac …) are fine; who we buy them from is not.
+2. Catalogue payloads live in `packages/db/data/catalogue-<topic>/`. `source` says "Supplier catalogue
+   export <date> — <topic>"; image captions say "Supplier catalogue image (<date>)"; `imageDir` is empty
+   and the folder is passed with `--image-dir=`. Mapping back to a supplier lives in
+   `~/Documents/Indus Supplier Research/`, never here.
+3. Generators that read a supplier export stay with that export, outside the repo.
+4. SKUs and storage keys carry no supplier initials.
+5. Before every push: `git diff origin/main... | grep -iE '<supplier names>'` must come back empty.

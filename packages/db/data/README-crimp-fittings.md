@@ -34,9 +34,17 @@ Everything in `catalogue.json` that is not a number from a table:
   contradicts their own size columns.
 - **Titles, descriptions, FAQs, SEO fields**, written from the structured facts.
 - **Competitor references**, printed in the source per family. Per-size numbers
-  are `<series ref>-<hose dash>-<port dash>`, emitted only for the families whose
-  second size field is an SAE dash — never for the metric or JIS families, whose
-  second field is a tube O.D. in millimetres.
+  are `<series ref>-<port dash>-<hose dash>` — Parker's own order, END size first
+  and HOSE size last (`1XN77-16-12` is a 1" end on 3/4" hose), the reverse of our
+  `<hose><port>` suffix. Emitted only for the families whose second size field is
+  an SAE dash — never for the metric or JIS families, whose second field is a
+  tube O.D. in millimetres.
+
+  Until 2026-10-11 the 193 asymmetric sizes carried the hose dash first
+  (`1JC43-4-6` on a -4 hose / -6 end instead of `1JC43-6-4`), copied straight
+  from our own suffix order. Fixed here and in the live tables;
+  `crimp-fittings-payload.test.ts` now fails on any row whose last field is not
+  its `hoseDash`.
 
 ## What it deliberately does not carry
 

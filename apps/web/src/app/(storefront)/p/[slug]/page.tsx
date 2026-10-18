@@ -1,5 +1,5 @@
 import { mediaUrl } from '../../../../lib/media'
-import { ORG_ID, SITE_NAME, pageMetadata, urlFor } from '../../../../lib/seo'
+import { ORG_ID, SITE_NAME, crawlableImageUrl, pageMetadata, urlFor } from '../../../../lib/seo'
 import { getStoreSettings } from '../../../../lib/store-settings'
 import type { Metadata } from 'next'
 import type React from 'react'
@@ -14,22 +14,28 @@ import {
   buildBreadcrumbLd,
   buildFaqLd,
   buildProductLd,
+  equivalenceSentence,
+  equivalentsByPartNumber,
   isProductIndexable,
+  isStandardDesignation,
+  NON_INTERMIX_BRANDS,
   offersStainlessOnRequest,
   productAvailability,
   type ProductAvailability,
   readFittingAttributes,
   relatedProductWindow,
+  seriesByBrand,
   variantText,
 } from '@indus/domain'
 import { Badge, Breadcrumb, Button, JsonLd } from '@indus/ui'
 import ProductExportNote from '../../../../components/markets/ProductExportNote'
+import { CATEGORY_WITH_IMAGE_CHAIN, nearestCategoryImage } from '../../../../lib/category-fallback'
 import ProductGallery from '../../../../components/ProductGallery'
 import AddToQuoteButton from '../../../../components/AddToQuoteButton'
 import AddToCompareButton from '../../../../components/AddToCompareButton'
 import ProductTabs from '../../../../components/ProductTabs'
 import RelatedReading from '../../../../components/blog/RelatedReading'
-import { getArticlesForProduct } from '../../../../lib/related-reading'
+import { getRelatedReadingForProduct } from '../../../../lib/related-reading'
 import ProductStickyBar from '../../../../components/ProductStickyBar'
 import AnalyticsEvent from '../../../../components/AnalyticsEvent'
 
@@ -50,13 +56,16 @@ const getProduct = cache(async (decoded: string) => {
       // Three levels of parent because the category tree is three deep, and the
       // stock posture's exemption list is matched against the whole chain — a
       // root listed there has to be visible from a leaf product.
-      category: { include: { parent: { include: { parent: true } } } },
+      category: CATEGORY_WITH_IMAGE_CHAIN,
       images: { orderBy: { position: 'asc' }, include: { media: true } },
       specs: { orderBy: { position: 'asc' } },
       documents: { orderBy: { position: 'asc' }, include: { media: true } },
       // Ordered so the Compatibility tab and the equivalence line above the
       // size table list the same references in the same order every render.
-      crossReferences: { take: 12, orderBy: { competitorMpn: 'asc' } },
+      // All of them: per-size references (one competitor number per Indus part
+      // number) fill the size table's equivalent columns, so a cap here would
+      // drop sizes from the table. A listing carries a few hundred at most.
+      crossReferences: { orderBy: [{ competitorBrand: 'asc' }, { competitorMpn: 'asc' }] },
       variants: { orderBy: { position: 'asc' } },
       faqs: { orderBy: { position: 'asc' } },
       supersededBy: { select: { sku: true, title: true, slug: true } },
@@ -140,14 +149,20 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   ])
   if (!product) return {}
 
+  const ogMedia = product.ogImageMediaId
+    ? await db.media.findUnique({
+        where: { id: product.ogImageMediaId },
+        select: { storagePath: true, alt: true },
+      })
+    : null
   const ogPath = product.ogImageMediaId
-    ? ((
-        await db.media.findUnique({
-          where: { id: product.ogImageMediaId },
-          select: { storagePath: true },
-        })
-      )?.storagePath ?? null)
+    ? (ogMedia?.storagePath ?? null)
     : (product.images[0]?.media.storagePath ?? null)
+  const ogAlt = product.ogImageMediaId
+    ? (ogMedia?.alt ?? null)
+    : product.images[0]
+      ? (product.images[0].alt ?? product.images[0].media.alt ?? product.title)
+      : null
 
   // Content-depth gate. The same predicate decides whether the product is in
   // the sitemap, so a page is never submitted there and then refused here, or
@@ -161,6 +176,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     canonicalUrl: product.canonicalUrl,
     robots: { index: indexFlag, follow: product.robotsFollow },
     ogImagePath: ogPath,
+    ogImageAlt: ogAlt,
     titleTemplate: seoSetting?.defaultMetaTitleTemplate ?? null,
     defaultDescription: seoSetting?.defaultMetaDescription ?? null,
   })
@@ -276,7 +292,10 @@ export default async function ProductPage({ params }: Props) {
     : []
 
   // The return leg of the internal-link loop: articles that embed this SKU.
-  const relatedArticles = await getArticlesForProduct(product.id)
+  const relatedReading = await getRelatedReadingForProduct({
+    id: product.id,
+    categoryId: product.categoryId,
+  })
 
   // Every document is linkable by everyone; /api/documents/<id> decides at
   // request time whether this visitor gets a URL or a trip to sign-in. The
@@ -311,7 +330,24 @@ export default async function ProductPage({ params }: Props) {
     mediaUrl: `/api/documents/${d.id}`,
   }))
 
-  const tabCrossRefs = product.crossReferences.map((r) => ({
+  // Two kinds of reference. Family rows name a competitor family against the
+  // whole listing and keep their own replacement pages; per-size rows map one
+  // competitor number to one Indus part number and live in the size table.
+  const familyCrossRefs = product.crossReferences.filter((r) => !r.variantPartNumber)
+  const sizeCrossRefs = product.crossReferences.filter((r) => r.variantPartNumber)
+  const sizeEquivalents = equivalentsByPartNumber(sizeCrossRefs)
+  const seriesSummaries = seriesByBrand(sizeCrossRefs)
+  const tabSeries = seriesSummaries.map((s) => ({
+    brand: s.brand,
+    series: s.series,
+    sizes: s.sizes,
+    isStandard: isStandardDesignation(s.brand),
+  }))
+  const intermixWarning = sizeCrossRefs.some(
+    (r) => r.compatibility === 'compatible' && NON_INTERMIX_BRANDS.includes(r.competitorBrand),
+  )
+
+  const tabCrossRefs = familyCrossRefs.map((r) => ({
     id: r.id,
     competitorBrand: r.competitorBrand,
     competitorMpn: r.competitorMpn,
@@ -338,18 +374,35 @@ export default async function ProductPage({ params }: Props) {
   // One line above the table naming what this listing replaces. Built from the
   // cross-reference rows rather than restated in copy, so it cannot drift from
   // what the Compatibility tab shows.
-  const equivalenceBrand = (() => {
-    const first = product.crossReferences[0]?.competitorBrand
+  const familyBrand = (() => {
+    const first = familyCrossRefs[0]?.competitorBrand
     if (!first) return null
-    return product.crossReferences.every((r) => r.competitorBrand === first) ? first : null
+    return familyCrossRefs.every((r) => r.competitorBrand === first) ? first : null
   })()
-  const equivalenceNote = equivalenceBrand
-    ? `Replaces the ${equivalenceBrand} ${product.crossReferences
-        .map((r) => r.competitorMpn)
-        .join(
-          ' / '
-        )} series. Quote the Indus part number, or send us the ${equivalenceBrand} number and we will cross it.`
-    : null
+  // Every maker named anywhere on the page, for the not-affiliated line.
+  const makerBrands = [
+    ...new Set(product.crossReferences.map((r) => r.competitorBrand).filter((b) => !isStandardDesignation(b))),
+  ]
+  const equivalenceBrand =
+    makerBrands.length === 0
+      ? null
+      : makerBrands.length === 1
+        ? makerBrands[0]!
+        : `${makerBrands.slice(0, -1).join(', ')} or ${makerBrands[makerBrands.length - 1]}`
+  const sizeSentence = equivalenceSentence(seriesSummaries)
+  const equivalenceNote = sizeSentence
+    ? `${sizeSentence} Every size below prints its equivalent part number beside ours — quote either.${
+        intermixWarning
+          ? ' Equivalent tube fittings do the same job in the same size, but never mix nuts, ferrules or bodies from two makers in one joint.'
+          : ''
+      }`
+    : familyBrand
+      ? `Replaces the ${familyBrand} ${familyCrossRefs
+          .map((r) => r.competitorMpn)
+          .join(
+            ' / '
+          )} series. Quote the Indus part number, or send us the ${familyBrand} number and we will cross it.`
+      : null
 
   const stockState = productAvailability({
     status: product.status,
@@ -376,7 +429,19 @@ export default async function ProductPage({ params }: Props) {
     sku: product.sku,
     mpn: product.mpn,
     url: productUrl,
-    imageUrls: product.images.map((img) => mediaUrl(img.media.storagePath)),
+    // Same-origin copies: the storage host answers `x-robots-tag: none`, which
+    // told Google not to index the very images this markup names.
+    imageUrls: product.images
+      .map((img) => crawlableImageUrl(img.media.storagePath))
+      .filter((url): url is string => Boolean(url)),
+    // The same gallery with the alt text ProductGallery renders, as captions.
+    images: product.images.flatMap((img, i) => {
+      const url = crawlableImageUrl(img.media.storagePath)
+      if (!url) return []
+      const caption =
+        img.alt ?? img.media.alt ?? (i === 0 ? product.title : `${product.title} — view ${i + 1}`)
+      return [{ url, caption }]
+    }),
     brand: product.brand ? { name: product.brand.name } : null,
     // For a distributor, the manufacturer is the brand owner. We surface
     // it as a separate Organization so AI engines can disambiguate
@@ -424,12 +489,19 @@ export default async function ProductPage({ params }: Props) {
           },
     override: product.jsonLdOverride ?? undefined,
   })
+  // The full shelf trail, root first — Home › Hoses & Fittings › Hydraulic
+  // Hoses › product. It used to stop at the leaf, which hid the parent shelves
+  // from the breadcrumb a searcher sees and from the internal links a crawler
+  // follows. Unpublished ancestors are skipped rather than linked to a 404.
+  const categoryTrail = [
+    product.category?.parent?.parent,
+    product.category?.parent,
+    product.category,
+  ].filter((c): c is NonNullable<typeof c> => Boolean(c && c.isPublished))
   const breadcrumbLd = buildBreadcrumbLd({
     items: [
       { name: 'Home', url: urlFor('/') },
-      ...(product.category
-        ? [{ name: product.category.name, url: urlFor(`/c/${product.category.slug}`) }]
-        : []),
+      ...categoryTrail.map((c) => ({ name: c.name, url: urlFor(`/c/${c.slug}`) })),
       { name: product.title, url: productUrl },
     ],
   })
@@ -451,9 +523,7 @@ export default async function ProductPage({ params }: Props) {
           <Breadcrumb
             items={[
               { label: 'Home', href: '/' },
-              ...(product.category
-                ? [{ label: product.category.name, href: `/c/${product.category.slug}` }]
-                : []),
+              ...categoryTrail.map((c) => ({ label: c.name, href: `/c/${c.slug}` })),
               { label: product.sku },
             ]}
           />
@@ -526,11 +596,21 @@ export default async function ProductPage({ params }: Props) {
           {/* Gallery — row 1 on desktop, spans down; second in source order */}
           <div className="lg:col-start-1 lg:row-span-2 lg:row-start-1">
             <ProductGallery
-              images={product.images.map((img) => ({
+              images={product.images.map((img, i) => ({
                 url: mediaUrl(img.media.storagePath),
-                alt: img.alt ?? img.media.alt ?? product.title,
+                // A gallery of five images all called "R2 2SN hose" tells a
+                // screen reader and Google Images nothing about which is which.
+                // Written alt text wins; the fallback at least numbers the views.
+                alt:
+                  img.alt ??
+                  img.media.alt ??
+                  (i === 0 ? product.title : `${product.title} — view ${i + 1}`),
               }))}
               title={product.title}
+              fallback={(() => {
+                const f = nearestCategoryImage(product.category)
+                return f ? { url: mediaUrl(f.src), categoryName: f.categoryName } : null
+              })()}
             />
           </div>
 
@@ -709,10 +789,22 @@ export default async function ProductPage({ params }: Props) {
           specGroups={tabSpecGroups}
           documents={tabDocuments}
           crossReferences={tabCrossRefs}
+          seriesSummaries={tabSeries}
           variants={tabVariants}
+          variantEquivalents={
+            sizeEquivalents.brands.length > 0
+              ? {
+                  brands: sizeEquivalents.brands,
+                  byPartNumber: Object.fromEntries(sizeEquivalents.byPartNumber),
+                }
+              : null
+          }
           variantEquivalenceNote={equivalenceNote}
           variantEquivalenceBrand={equivalenceBrand}
-          variantStainlessOnRequest={offersStainlessOnRequest(product.specTemplate?.slug)}
+          variantStainlessOnRequest={offersStainlessOnRequest(product.specTemplate?.slug, product.brand?.slug)}
+          variantPartNumberHeading={
+            product.brand && product.brand.slug !== 'indus' ? `${product.brand.name} part no.` : 'Indus part no.'
+          }
           faqs={product.faqs.map((f) => ({
             id: f.id,
             question: f.question,
@@ -768,8 +860,8 @@ export default async function ProductPage({ params }: Props) {
         )}
 
         <RelatedReading
-          articles={relatedArticles}
-          heading="Written about this part"
+          articles={relatedReading.articles}
+          heading={relatedReading.heading}
           eyebrow="From the blog"
         />
 
@@ -795,7 +887,7 @@ export default async function ProductPage({ params }: Props) {
                     {rel.images[0] ? (
                       <Image
                         src={mediaUrl(rel.images[0]!.media.storagePath)}
-                        alt={rel.title}
+                        alt={rel.images[0]!.alt ?? rel.images[0]!.media.alt ?? rel.title}
                         fill
                         className="object-contain p-4"
                         sizes="25vw"

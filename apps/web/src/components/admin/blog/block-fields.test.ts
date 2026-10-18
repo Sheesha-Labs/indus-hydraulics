@@ -29,6 +29,11 @@ const SAMPLES: Record<string, string> = {
   svg: '<svg viewBox="0 0 10 10"></svg>',
   // A reference anchor is kebab-case, for the same reason a slug is.
   id: 'bainbridge-1983',
+  // A video must name one YouTube video, with an ISO upload date and an ISO
+  // 8601 duration — Google rejects a VideoObject otherwise.
+  url: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+  uploadDate: '2026-09-01',
+  duration: 'PT2M30S',
 }
 
 /** Type a plausible value into every field the form exposes. */

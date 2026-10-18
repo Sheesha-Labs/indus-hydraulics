@@ -2,6 +2,7 @@
 
 import { revalidatePath } from 'next/cache'
 import { invalidateCategories } from '../../../../lib/cache-tags'
+import { notifyIndexNow } from '../../../../lib/indexnow'
 import { z } from 'zod'
 import { db, recordSlugRedirect } from '@indus/db'
 import {
@@ -223,6 +224,7 @@ export async function updateCategory(formData: FormData): Promise<Result<void>> 
       revalidatePath('/admin/seo/redirects')
     }
     invalidateCategoryTree()
+    notifyIndexNow(renamed ? [newPath, oldPath] : [newPath])
     return ok(undefined)
   } catch (err) {
     return failFromError(err)

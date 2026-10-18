@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server'
 import { db } from '@indus/db'
-import { marketsOrdered, serviceAreaNames } from '@indus/domain'
+import { marketsOrdered, resourceEntries, serviceAreaNames } from '@indus/domain'
 import { BASE_URL, urlFor } from '../../../lib/seo'
 
 /**
@@ -74,6 +74,16 @@ export async function GET(): Promise<NextResponse> {
       // do not append the qualifier again.
       `- [${m.name}](${urlFor(`/markets/${m.slug}`)}): export from the Dubai warehouse. ${m.leadTime}. ${m.routes.join(' or ')}. No premises in ${m.name}.`,
     )
+  }
+  lines.push('')
+
+  // Reference pages. Evergreen technical data — the pages an assistant is most
+  // likely to cite for "what thread is 9/16-18" or "crimp diameter for 1/2 R2".
+  lines.push('## Hydraulic reference')
+  lines.push('')
+  lines.push(`- [Reference library](${urlFor('/resources')}): index of the reference pages and calculators below.`)
+  for (const entry of resourceEntries()) {
+    lines.push(`- [${entry.title}](${urlFor(entry.href)}): ${entry.summary}`)
   }
   lines.push('')
 
