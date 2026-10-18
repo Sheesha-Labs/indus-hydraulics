@@ -2415,8 +2415,8 @@
       "weightPer100m@iwrc": 428.0,
       "mblKn@g1570_fc": 531.0,
       "mblKn@g1570_iwrc": 572.0,
-      "mblKn@g1770_fc": -598.0,
-      "mblKn@g1770_iwrc": -645.0
+      "mblKn@g1770_fc": 598.0,
+      "mblKn@g1770_iwrc": 645.0
      }
     },
     {
@@ -2428,8 +2428,8 @@
       "weightPer100m@iwrc": 483.0,
       "mblKn@g1570_fc": 599.0,
       "mblKn@g1570_iwrc": 646.0,
-      "mblKn@g1770_fc": -675.0,
-      "mblKn@g1770_iwrc": -728.0
+      "mblKn@g1770_fc": 675.0,
+      "mblKn@g1770_iwrc": 728.0
      }
     },
     {
@@ -2441,8 +2441,8 @@
       "weightPer100m@iwrc": 542.0,
       "mblKn@g1570_fc": 671.0,
       "mblKn@g1570_iwrc": 724.0,
-      "mblKn@g1770_fc": -757.0,
-      "mblKn@g1770_iwrc": -817.0
+      "mblKn@g1770_fc": 757.0,
+      "mblKn@g1770_iwrc": 817.0
      }
     },
     {
@@ -2454,8 +2454,8 @@
       "weightPer100m@iwrc": 604.0,
       "mblKn@g1570_fc": 748.0,
       "mblKn@g1570_iwrc": 807.0,
-      "mblKn@g1770_fc": -843.0,
-      "mblKn@g1770_iwrc": -910.0
+      "mblKn@g1770_fc": 843.0,
+      "mblKn@g1770_iwrc": 910.0
      }
     },
     {
@@ -3067,7 +3067,7 @@
       "D": 15.0,
       "L": 49.0,
       "E": 10.0,
-      "weightKg": 21.0
+      "weightKg": 0.021
      }
     },
     {
@@ -3079,7 +3079,7 @@
       "D": 20.0,
       "L": 59.0,
       "E": 11.0,
-      "weightKg": 36.0
+      "weightKg": 0.036
      }
     },
     {
@@ -3091,7 +3091,7 @@
       "D": 25.0,
       "L": 70.0,
       "E": 12.0,
-      "weightKg": 52.0
+      "weightKg": 0.052
      }
     },
     {
@@ -3103,7 +3103,7 @@
       "D": 30.0,
       "L": 76.0,
       "E": 13.0,
-      "weightKg": 77.0
+      "weightKg": 0.077
      }
     },
     {
@@ -3115,7 +3115,7 @@
       "D": 40.0,
       "L": 990.0,
       "E": 16.0,
-      "weightKg": 110.0
+      "weightKg": 0.11
      }
     },
     {
@@ -3127,7 +3127,7 @@
       "D": 50.0,
       "L": 110.0,
       "E": 17.0,
-      "weightKg": 175.0
+      "weightKg": 0.175
      }
     },
     {
@@ -3139,7 +3139,7 @@
       "D": 65.0,
       "L": 133.0,
       "E": 18.0,
-      "weightKg": 360.0
+      "weightKg": 0.36
      }
     },
     {
@@ -3223,7 +3223,7 @@
       "D": 15.0,
       "L": 49.0,
       "E": 10.0,
-      "weightKg": 34.0
+      "weightKg": 0.034
      }
     },
     {
@@ -3235,7 +3235,7 @@
       "D": 20.0,
       "L": 58.0,
       "E": 11.0,
-      "weightKg": 55.0
+      "weightKg": 0.055
      }
     },
     {
@@ -3247,7 +3247,7 @@
       "D": 25.0,
       "L": 70.0,
       "E": 12.0,
-      "weightKg": 72.0
+      "weightKg": 0.072
      }
     },
     {
@@ -3259,7 +3259,7 @@
       "D": 30.0,
       "L": 80.0,
       "E": 13.0,
-      "weightKg": 115.0
+      "weightKg": 0.115
      }
     },
     {
@@ -3271,7 +3271,7 @@
       "D": 40.0,
       "L": 90.0,
       "E": 16.0,
-      "weightKg": 190.0
+      "weightKg": 0.19
      }
     },
     {
@@ -3283,7 +3283,7 @@
       "D": 50.0,
       "L": 100.0,
       "E": 17.0,
-      "weightKg": 293.0
+      "weightKg": 0.293
      }
     }
    ],
@@ -23017,7 +23017,7 @@
       "L1": 299.0,
       "L2": 440.0,
       "wllKg": 530.0,
-      "weightKg": 1080.0
+      "weightKg": 1.08
      }
     },
     {
@@ -23036,7 +23036,7 @@
       "L1": 341.0,
       "L2": 509.0,
       "wllKg": 730.0,
-      "weightKg": 1440.0
+      "weightKg": 1.44
      }
     },
     {
@@ -23055,7 +23055,7 @@
       "L1": 393.0,
       "L2": 605.0,
       "wllKg": 1550.0,
-      "weightKg": 2650.0
+      "weightKg": 2.65
      }
     },
     {
@@ -23074,7 +23074,7 @@
       "L1": 440.0,
       "L2": 647.0,
       "wllKg": 2240.0,
-      "weightKg": 3870.0
+      "weightKg": 3.87
      }
     },
     {
@@ -23093,7 +23093,7 @@
       "L1": 502.0,
       "L2": 735.0,
       "wllKg": 3530.0,
-      "weightKg": 7540.0
+      "weightKg": 7.54
      }
     },
     {
@@ -23451,8 +23451,7 @@
       "l1": 110.0,
       "l3": 120.0,
       "l6": 65.0,
-      "ad": 90.0,
-      "weightKg": 14.0
+      "ad": 90.0
      }
     },
     {
@@ -23465,8 +23464,7 @@
       "l1": 110.0,
       "l3": 120.0,
       "l6": 65.0,
-      "ad": 85.0,
-      "weightKg": 18.0
+      "ad": 85.0
      }
     },
     {
@@ -23479,8 +23477,7 @@
       "l1": 125.0,
       "l3": 150.0,
       "l6": 75.0,
-      "ad": 95.0,
-      "weightKg": 32.0
+      "ad": 95.0
      }
     },
     {
@@ -23493,8 +23490,7 @@
       "l1": 125.0,
       "l3": 150.0,
       "l6": 75.0,
-      "ad": 90.0,
-      "weightKg": 45.0
+      "ad": 90.0
      }
     },
     {
@@ -23507,8 +23503,7 @@
       "l1": 170.0,
       "l3": 200.0,
       "l6": 100.0,
-      "ad": 120.0,
-      "weightKg": 90.0
+      "ad": 120.0
      }
     },
     {
@@ -23521,8 +23516,7 @@
       "l1": 200.0,
       "l3": 220.0,
       "l6": 120.0,
-      "ad": 140.0,
-      "weightKg": 150.0
+      "ad": 140.0
      }
     },
     {
@@ -23535,8 +23529,7 @@
       "l1": 255.0,
       "l3": 260.0,
       "l6": 150.0,
-      "ad": 180.0,
-      "weightKg": 275.0
+      "ad": 180.0
      }
     },
     {
@@ -23549,8 +23542,7 @@
       "l1": 255.0,
       "l3": 260.0,
       "l6": 160.0,
-      "ad": 160.0,
-      "weightKg": 394.0
+      "ad": 160.0
      }
     },
     {
@@ -24864,18 +24856,18 @@
    "title": "Die-Cast Zinc Turnbuckle",
    "category": "turnbuckles-rigging-screws",
    "focusKeyword": "die-cast zinc turnbuckle",
-   "descriptionShort": "Die-Cast Zinc Turnbuckle, in 27 sizes. Load rating on request. Indus part numbers.",
-   "descriptionLong": "<p>Turnbuckles and rigging screws tension guy lines, stays and tie-downs and take up slack. Zinc alloy, zinc plated.</p><h3>Sizes</h3><p>27 sizes. Available as: eye and eye, hook and eye, RS, hook and eye, ES, hook and hook, RS. Every size has its own Indus part number in the table below.</p><p><strong>No load rating is published for this range.</strong> Tell us the duty and we will confirm the rating with the quotation. Do not use it to lift until you have that rating in writing.</p><p>The lettered dimensions in the table refer to the dimension drawing for each type, shown with this product.</p><h3>Manufacturer's data</h3><ul><li>Die cast.</li></ul><h3>Choosing a size</h3><p>Lock the body once tensioned so it cannot back off.</p><h3>Ordering</h3><p>Quote the Indus part number from the size table, or send the size and rating you need.</p>",
+   "descriptionShort": "Die-Cast Zinc Turnbuckle, in 27 sizes, for light-duty tensioning only — not for lifting. Indus part numbers.",
+   "descriptionLong": "<p>A light-duty turnbuckle for taking up slack and tensioning fences, gates, signs, shade cloth and light stays. Zinc alloy, die cast, zinc plated.</p><h3>Sizes</h3><p>27 sizes. Available as: eye and eye, hook and eye, RS, hook and eye, ES, hook and hook, RS. Every size has its own Indus part number in the table below.</p><p><strong>Not for lifting.</strong> Die-cast zinc turnbuckles are for light-duty tensioning — fences, gates, signs, shade cloth, light stays and tie-downs. No load rating is published for this range: never use it for lifting, overhead loads or safety-critical tensioning. For rated turnbuckles, see the <a href=\"/p/drop-forged-turnbuckle-us-type\">drop-forged turnbuckle</a> and <a href=\"/p/din-1480-turnbuckle\">DIN 1480 turnbuckle</a>.</p><p>The lettered dimensions in the table refer to the dimension drawing for each type, shown with this product.</p><h3>Manufacturer's data</h3><ul><li>Die cast.</li></ul><h3>Choosing a size</h3><p>Lock the body once tensioned so it cannot back off.</p><h3>Ordering</h3><p>Quote the Indus part number from the size table, or send the size and end fittings you need.</p>",
    "seoTitle": "Die-Cast Zinc Turnbuckle",
-   "seoDescription": "Die-Cast Zinc Turnbuckle: 27 sizes. Indus part numbers. Request a quote.",
+   "seoDescription": "Die-cast zinc turnbuckle in 27 sizes for light-duty tensioning — fences, gates, signs and light stays. Not for lifting. Indus part numbers.",
    "faqs": [
     {
      "question": "What sizes does the die-cast zinc turnbuckle come in?",
      "answer": "27 sizes. The size table lists each one with its Indus part number and dimensions."
     },
     {
-     "question": "Why do hook-end turnbuckles have a lower WLL?",
-     "answer": "The hook is the weaker end fitting, so a turnbuckle with hook ends is rated below the same body with eye or jaw ends. The US turnbuckle table gives both ratings."
+     "question": "Can die-cast zinc turnbuckles be used for lifting?",
+     "answer": "No. They are for light-duty tensioning such as fences, gates, signs and light stays, and no load rating is published. For lifting-adjacent or rated duty use a drop-forged or DIN 1480 turnbuckle, chosen on its rated load for the end fittings you need."
     }
    ],
    "specs": [
@@ -25100,7 +25092,7 @@
       "G": 43.0,
       "E": 43.0,
       "M": 7.0,
-      "weightKg": 30.0
+      "weightKg": 0.03
      }
     },
     {
@@ -25115,7 +25107,7 @@
       "G": 50.0,
       "E": 50.0,
       "M": 7.0,
-      "weightKg": 37.0
+      "weightKg": 0.037
      }
     },
     {
@@ -25130,7 +25122,7 @@
       "G": 52.0,
       "E": 50.0,
       "M": 8.0,
-      "weightKg": 50.0
+      "weightKg": 0.05
      }
     },
     {
@@ -25145,7 +25137,7 @@
       "G": 70.0,
       "E": 70.0,
       "M": 10.0,
-      "weightKg": 67.0
+      "weightKg": 0.067
      }
     },
     {
@@ -25160,7 +25152,7 @@
       "G": 60.0,
       "E": 55.0,
       "M": 11.0,
-      "weightKg": 85.0
+      "weightKg": 0.085
      }
     },
     {
@@ -25175,7 +25167,7 @@
       "G": 80.0,
       "E": 75.0,
       "M": 11.0,
-      "weightKg": 125.0
+      "weightKg": 0.125
      }
     },
     {
@@ -25190,7 +25182,7 @@
       "G": 70.0,
       "E": 60.0,
       "M": 11.0,
-      "weightKg": 156.0
+      "weightKg": 0.156
      }
     },
     {
@@ -25205,7 +25197,7 @@
       "G": 100.0,
       "E": 95.0,
       "M": 16.0,
-      "weightKg": 195.0
+      "weightKg": 0.195
      }
     },
     {
@@ -25220,7 +25212,7 @@
       "G": 105.0,
       "E": 100.0,
       "M": 15.0,
-      "weightKg": 385.0
+      "weightKg": 0.385
      }
     },
     {
@@ -33306,10 +33298,10 @@
    "title": "Galvanized Shackle — Italian Type",
    "category": "shackles",
    "focusKeyword": "galvanized shackle",
-   "descriptionShort": "Galvanized Shackle (Italian type), in 37 sizes, 5 mm to 63 mm, WLL 80 to 8,000 kg. Indus part numbers, manufacturer's test certificate.",
-   "descriptionLong": "<p>A shackle joins a sling, hook or chain to a lifting point and opens with a removable pin. Built to the Italian pattern. Carbon steel, hot dipped galvanized / powder coated / zinc plated.</p><h3>Sizes and ratings</h3><p>37 sizes, 5 mm to 63 mm. Working load limit 80 to 8,000 kg. Available as: bow, screw pin, dee. Every size has its own Indus part number in the table below, with the loads in the unit the manufacturer rates them in.</p><p>The lettered dimensions in the table refer to the dimension drawing for each type, shown with this product.</p><h3>Manufacturer's data</h3><ul><li>Drop forged / quenched and tempered.</li></ul><h3>Choosing a size</h3><p>Choose on working load limit for the pull you will actually apply. A chain (dee) shackle takes an in-line pull; an anchor (bow) shackle accepts several slings or an angled pull. Side-loading reduces the rating, and a screw pin must be fully seated before loading.</p><h3>Ordering</h3><p>Quote the Indus part number from the size table, or send the size and rating you need. Each consignment ships with the manufacturer's test certificate; say on the RFQ if your site needs anything more.</p>",
+   "descriptionShort": "Galvanized Shackle (Italian type), in 37 sizes, 5 mm to 63 mm, WLL 70 to 20,000 kg. Indus part numbers, manufacturer's test certificate.",
+   "descriptionLong": "<p>A shackle joins a sling, hook or chain to a lifting point and opens with a removable pin. Built to the Italian pattern. Carbon steel, hot dipped galvanized / powder coated / zinc plated.</p><h3>Sizes and ratings</h3><p>37 sizes, 5 mm to 63 mm. Working load limit 70 to 20,000 kg. Available as: bow, screw pin, dee. Every size has its own Indus part number in the table below, with the loads in the unit the manufacturer rates them in.</p><p>The lettered dimensions in the table refer to the dimension drawing for each type, shown with this product.</p><h3>Manufacturer's data</h3><ul><li>Drop forged / quenched and tempered.</li></ul><h3>Choosing a size</h3><p>Choose on working load limit for the pull you will actually apply. A chain (dee) shackle takes an in-line pull; an anchor (bow) shackle accepts several slings or an angled pull. Side-loading reduces the rating, and a screw pin must be fully seated before loading.</p><h3>Ordering</h3><p>Quote the Indus part number from the size table, or send the size and rating you need. Each consignment ships with the manufacturer's test certificate; say on the RFQ if your site needs anything more.</p>",
    "seoTitle": "Galvanized Shackle Italian Type",
-   "seoDescription": "Galvanized Shackle (Italian type): 37 sizes, 5 mm to 63 mm, WLL 80 to 8,000 kg. Indus part numbers. Request a quote.",
+   "seoDescription": "Galvanized Shackle (Italian type): 37 sizes, 5 mm to 63 mm, WLL 70 to 20,000 kg. Indus part numbers. Request a quote.",
    "faqs": [
     {
      "question": "What sizes does the galvanized shackle come in?",
@@ -33317,7 +33309,7 @@
     },
     {
      "question": "What is the working load limit?",
-     "answer": "80 to 8,000 kg, depending on size, as the manufacturer rates it. The WLL is the most the part may carry in service; proof and breaking loads are test figures and never working limits."
+     "answer": "70 to 20,000 kg, depending on size, as the manufacturer rates it. The WLL is the most the part may carry in service; proof and breaking loads are test figures and never working limits."
     },
     {
      "question": "What do G-209, G-2130 and G-213 mean?",
@@ -33363,7 +33355,7 @@
     {
      "group": "Performance",
      "label": "Working load limit",
-     "value": "80 to 8,000 kg",
+     "value": "70 to 20,000 kg",
      "unit": null,
      "position": 3,
      "isFilterable": true,
@@ -33711,7 +33703,8 @@
       "D": 5.0,
       "E": 5.0,
       "F": 23.0,
-      "weightKg": 0.02
+      "weightKg": 0.02,
+      "wllKg": 70.0
      }
     },
     {
@@ -33726,7 +33719,8 @@
       "D": 6.0,
       "E": 6.0,
       "F": 29.0,
-      "weightKg": 0.04
+      "weightKg": 0.04,
+      "wllKg": 100.0
      }
     },
     {
@@ -33741,7 +33735,8 @@
       "D": 8.0,
       "E": 8.0,
       "F": 37.0,
-      "weightKg": 0.08
+      "weightKg": 0.08,
+      "wllKg": 250.0
      }
     },
     {
@@ -33756,7 +33751,8 @@
       "D": 10.0,
       "E": 10.0,
       "F": 41.0,
-      "weightKg": 0.11
+      "weightKg": 0.11,
+      "wllKg": 400.0
      }
     },
     {
@@ -33771,7 +33767,8 @@
       "D": 11.0,
       "E": 11.0,
       "F": 48.0,
-      "weightKg": 0.2
+      "weightKg": 0.2,
+      "wllKg": 470.0
      }
     },
     {
@@ -33786,7 +33783,8 @@
       "D": 12.0,
       "E": 12.0,
       "F": 54.0,
-      "weightKg": 0.25
+      "weightKg": 0.25,
+      "wllKg": 630.0
      }
     },
     {
@@ -33801,7 +33799,8 @@
       "D": 14.0,
       "E": 14.0,
       "F": 57.0,
-      "weightKg": 0.34
+      "weightKg": 0.34,
+      "wllKg": 750.0
      }
     },
     {
@@ -33816,7 +33815,8 @@
       "D": 16.0,
       "E": 16.0,
       "F": 63.0,
-      "weightKg": 0.51
+      "weightKg": 0.51,
+      "wllKg": 1000.0
      }
     },
     {
@@ -33831,7 +33831,8 @@
       "D": 18.0,
       "E": 18.0,
       "F": 62.0,
-      "weightKg": 0.75
+      "weightKg": 0.75,
+      "wllKg": 1300.0
      }
     },
     {
@@ -33846,7 +33847,8 @@
       "D": 20.0,
       "E": 18.5,
       "F": 65.0,
-      "weightKg": 0.94
+      "weightKg": 0.94,
+      "wllKg": 1600.0
      }
     },
     {
@@ -33861,7 +33863,8 @@
       "D": 22.0,
       "E": 21.0,
       "F": 75.0,
-      "weightKg": 1300.0
+      "weightKg": 1.3,
+      "wllKg": 2000.0
      }
     },
     {
@@ -33876,7 +33879,8 @@
       "D": 25.0,
       "E": 22.0,
       "F": 81.0,
-      "weightKg": 1600.0
+      "weightKg": 1.6,
+      "wllKg": 2500.0
      }
     },
     {
@@ -33891,7 +33895,8 @@
       "D": 28.0,
       "E": 24.0,
       "F": 90.0,
-      "weightKg": 2000.0
+      "weightKg": 2.0,
+      "wllKg": 3150.0
      }
     },
     {
@@ -33906,7 +33911,8 @@
       "D": 32.0,
       "E": 27.0,
       "F": 99.0,
-      "weightKg": 2900.0
+      "weightKg": 2.9,
+      "wllKg": 4000.0
      }
     },
     {
@@ -33921,7 +33927,8 @@
       "D": 36.0,
       "E": 30.0,
       "F": 109.0,
-      "weightKg": 4300.0
+      "weightKg": 4.3,
+      "wllKg": 5000.0
      }
     },
     {
@@ -33936,7 +33943,8 @@
       "D": 40.0,
       "E": 34.0,
       "F": 120.0,
-      "weightKg": 6000.0
+      "weightKg": 6.0,
+      "wllKg": 6300.0
      }
     },
     {
@@ -33951,7 +33959,8 @@
       "D": 42.0,
       "E": 38.0,
       "F": 131.0,
-      "weightKg": 7400.0
+      "weightKg": 7.4,
+      "wllKg": 8000.0
      }
     },
     {
@@ -33966,7 +33975,8 @@
       "D": 45.0,
       "E": 42.0,
       "F": 135.0,
-      "weightKg": 10000.0
+      "weightKg": 10.0,
+      "wllKg": 10000.0
      }
     },
     {
@@ -33981,7 +33991,8 @@
       "D": 48.0,
       "E": 47.0,
       "F": 155.0,
-      "weightKg": 13700.0
+      "weightKg": 13.7,
+      "wllKg": 12500.0
      }
     },
     {
@@ -33996,7 +34007,8 @@
       "D": 56.0,
       "E": 52.0,
       "F": 170.0,
-      "weightKg": 16600.0
+      "weightKg": 16.6,
+      "wllKg": 16000.0
      }
     },
     {
@@ -34011,7 +34023,8 @@
       "D": 60.0,
       "E": 57.0,
       "F": 190.0,
-      "weightKg": 26500.0
+      "weightKg": 26.5,
+      "wllKg": 20000.0
      }
     }
    ],
@@ -39012,7 +39025,7 @@
       "wllT": 0.1,
       "b": 22.0,
       "c": 33.0,
-      "eyeId": 381.0,
+      "eyeId": 15,
       "f": 7.0,
       "g": 36.0,
       "threadLength": 18.0,
@@ -39028,7 +39041,7 @@
       "wllT": 0.15,
       "b": 22.0,
       "c": 33.0,
-      "eyeId": 381.0,
+      "eyeId": 15,
       "f": 7.0,
       "g": 36.0,
       "threadLength": 18.0,
@@ -39044,7 +39057,7 @@
       "wllT": 0.25,
       "b": 22.0,
       "c": 33.0,
-      "eyeId": 381.0,
+      "eyeId": 15,
       "f": 7.0,
       "g": 36.0,
       "threadLength": 18.0,
@@ -39060,7 +39073,7 @@
       "wllT": 0.4,
       "b": 22.0,
       "c": 33.0,
-      "eyeId": 381.0,
+      "eyeId": 15,
       "f": 7.0,
       "g": 36.0,
       "threadLength": 18.0,
@@ -39076,7 +39089,7 @@
       "wllT": 0.5,
       "b": 29.0,
       "c": 44.0,
-      "eyeId": 508.0,
+      "eyeId": 20,
       "f": 10.0,
       "g": 48.0,
       "threadLength": 23.0,
@@ -39092,7 +39105,7 @@
       "wllT": 0.8,
       "b": 29.0,
       "c": 44.0,
-      "eyeId": 508.0,
+      "eyeId": 20,
       "f": 10.0,
       "g": 48.0,
       "threadLength": 23.0,
@@ -39108,7 +39121,7 @@
       "wllT": 1.0,
       "b": 36.0,
       "c": 52.0,
-      "eyeId": 609.6,
+      "eyeId": 24,
       "f": 12.0,
       "g": 58.0,
       "threadLength": 28.0,
@@ -39124,7 +39137,7 @@
       "wllT": 1.6,
       "b": 40.0,
       "c": 59.0,
-      "eyeId": 685.8,
+      "eyeId": 27,
       "f": 14.0,
       "g": 65.0,
       "threadLength": 32.0,
@@ -39140,7 +39153,7 @@
       "wllT": 1.6,
       "b": 45.0,
       "c": 64.0,
-      "eyeId": 762.0,
+      "eyeId": 30,
       "f": 14.0,
       "g": 73.0,
       "threadLength": 35.0,
@@ -39156,7 +39169,7 @@
       "wllT": 2.5,
       "b": 52.0,
       "c": 77.0,
-      "eyeId": 889.0,
+      "eyeId": 35,
       "f": 17.0,
       "g": 84.0,
       "threadLength": 40.0,
@@ -39172,7 +39185,7 @@
       "wllT": 2.5,
       "b": 58.0,
       "c": 85.0,
-      "eyeId": 990.6,
+      "eyeId": 39,
       "f": 20.0,
       "g": 94.0,
       "threadLength": 46.0,
@@ -39188,7 +39201,7 @@
       "wllT": 4.0,
       "b": 65.0,
       "c": 96.0,
-      "eyeId": 1118.0,
+      "eyeId": 44,
       "f": 22.0,
       "g": 106.0,
       "threadLength": 51.0,
@@ -39204,7 +39217,7 @@
       "wllT": 4.0,
       "b": 72.0,
       "c": 106.0,
-      "eyeId": 1219.0,
+      "eyeId": 48,
       "f": 24.0,
       "g": 117.0,
       "threadLength": 56.0,
@@ -39220,7 +39233,7 @@
       "wllT": 6.3,
       "b": 81.0,
       "c": 118.0,
-      "eyeId": 1372.0,
+      "eyeId": 54,
       "f": 27.0,
       "g": 131.0,
       "threadLength": 63.0,
@@ -39236,7 +39249,7 @@
       "wllT": 6.3,
       "b": 86.0,
       "c": 123.0,
-      "eyeId": 1448.0,
+      "eyeId": 57,
       "f": 29.0,
       "g": 137.0,
       "threadLength": 67.0,
@@ -39252,7 +39265,7 @@
       "wllT": 8.0,
       "b": 101.0,
       "c": 148.0,
-      "eyeId": 1727.0,
+      "eyeId": 68,
       "f": 34.0,
       "g": 164.0,
       "threadLength": 79.0,
@@ -39268,7 +39281,7 @@
       "wllT": 8.0,
       "b": 101.0,
       "c": 148.0,
-      "eyeId": 1727.0,
+      "eyeId": 68,
       "f": 34.0,
       "g": 164.0,
       "threadLength": 79.0,
@@ -39284,7 +39297,7 @@
       "wllT": 10.0,
       "b": 101.0,
       "c": 148.0,
-      "eyeId": 1727.0,
+      "eyeId": 68,
       "f": 34.0,
       "g": 164.0,
       "threadLength": 79.0,
@@ -39300,7 +39313,7 @@
       "wllT": 12.5,
       "b": 115.0,
       "c": 168.0,
-      "eyeId": 1930.0,
+      "eyeId": 76,
       "f": 38.0,
       "g": 186.0,
       "threadLength": 89.0,
@@ -39316,7 +39329,7 @@
       "wllT": 16.0,
       "b": 128.0,
       "c": 188.0,
-      "eyeId": 2184.0,
+      "eyeId": 86,
       "f": 43.0,
       "g": 208.0,
       "threadLength": 100.0,
@@ -39332,7 +39345,7 @@
       "wllT": 20.0,
       "b": 144.0,
       "c": 212.0,
-      "eyeId": 2438.0,
+      "eyeId": 96,
       "f": 48.0,
       "g": 234.0,
       "threadLength": 112.0,
@@ -44369,7 +44382,7 @@
      "partNumber": "IH-LR-WR-CWR6X19S-25P4MM-FC",
      "position": 17,
      "dimensions": {
-      "size": "25.4 mm (1 ″)",
+      "size": "25.4 mm (1″)",
       "type": "Fibre core",
       "mblT@g1770_fc": 44.7,
       "mblT@g1960_fc": 46.9,
@@ -44545,7 +44558,7 @@
      "partNumber": "IH-LR-WR-CWR6X19S-46MM-FC",
      "position": 33,
      "dimensions": {
-      "size": "46 mm (-″)",
+      "size": "46 mm",
       "type": "Fibre core",
       "mblT@g1770_fc": 146.8,
       "mblT@g1960_fc": 153.8,
@@ -44556,7 +44569,7 @@
      "partNumber": "IH-LR-WR-CWR6X19S-48MM-FC",
      "position": 34,
      "dimensions": {
-      "size": "48 mm (-″)",
+      "size": "48 mm",
       "type": "Fibre core",
       "mblT@g1770_fc": 159.8,
       "weightPerMetre": 9.4
@@ -44566,7 +44579,7 @@
      "partNumber": "IH-LR-WR-CWR6X19S-50MM-FC",
      "position": 35,
      "dimensions": {
-      "size": "50 mm (-″)",
+      "size": "50 mm",
       "type": "Fibre core",
       "mblT@g1770_fc": 173.4,
       "weightPerMetre": 10.2
@@ -44586,7 +44599,7 @@
      "partNumber": "IH-LR-WR-CWR6X19S-52MM-FC",
      "position": 37,
      "dimensions": {
-      "size": "52 mm (-″)",
+      "size": "52 mm",
       "type": "Fibre core",
       "mblT@g1770_fc": 187.5,
       "weightPerMetre": 11.04
@@ -44796,7 +44809,7 @@
      "partNumber": "IH-LR-WR-CWR6X19S-25P4MM-SC",
      "position": 55,
      "dimensions": {
-      "size": "25.4 mm (1 ″)",
+      "size": "25.4 mm (1″)",
       "type": "Steel core",
       "mblT@g1770_iwrc": 50.4,
       "mblT@g1960_iwrc": 54.4,
@@ -44984,7 +44997,7 @@
      "partNumber": "IH-LR-WR-CWR6X19S-46MM-SC",
      "position": 71,
      "dimensions": {
-      "size": "46 mm (-″)",
+      "size": "46 mm",
       "type": "Steel core",
       "mblT@g1770_iwrc": 165.3,
       "mblT@g1960_iwrc": 178.5,
@@ -44995,7 +45008,7 @@
      "partNumber": "IH-LR-WR-CWR6X19S-48MM-SC",
      "position": 72,
      "dimensions": {
-      "size": "48 mm (-″)",
+      "size": "48 mm",
       "type": "Steel core",
       "mblT@g1770_iwrc": 180.0,
       "weightPerMetre": 10.41
@@ -45005,7 +45018,7 @@
      "partNumber": "IH-LR-WR-CWR6X19S-50MM-SC",
      "position": 73,
      "dimensions": {
-      "size": "50 mm (-″)",
+      "size": "50 mm",
       "type": "Steel core",
       "mblT@g1770_iwrc": 195.3,
       "weightPerMetre": 11.3
@@ -45025,7 +45038,7 @@
      "partNumber": "IH-LR-WR-CWR6X19S-52MM-SC",
      "position": 75,
      "dimensions": {
-      "size": "52 mm (-″)",
+      "size": "52 mm",
       "type": "Steel core",
       "mblT@g1770_iwrc": 211.3,
       "weightPerMetre": 12.22
@@ -70240,7 +70253,7 @@
       "I": 46.0,
       "L": 111.0,
       "L1": 50.0,
-      "weightKg": 1060.0
+      "weightKg": 1.06
      }
     },
     {
@@ -70254,7 +70267,7 @@
       "I": 54.0,
       "L": 127.0,
       "L1": 55.0,
-      "weightKg": 1370.0
+      "weightKg": 1.37
      }
     },
     {
@@ -70282,7 +70295,7 @@
       "I": 68.0,
       "L": 159.0,
       "L1": 65.0,
-      "weightKg": 2600.0
+      "weightKg": 2.6
      }
     }
    ],
@@ -80785,18 +80798,18 @@
    "title": "Stainless Steel Bolt-Type Anchor Shackle — G-2130 Pattern",
    "category": "shackles",
    "focusKeyword": "stainless steel bolt-type anchor shackle",
-   "descriptionShort": "Stainless Steel Bolt-Type Anchor Shackle (G-2130), in 20 sizes, 3/16″ to 4″, WLL 0.333 to 150 t. Indus part numbers, manufacturer's test certificate.",
-   "descriptionLong": "<p>A shackle joins a sling, hook or chain to a lifting point and opens with a removable pin. This range follows the G-2130 pattern, sized to interchange in an existing rigging plan. Stainless steel 304/316 forged bow shackle, polished.</p><h3>Sizes and ratings</h3><p>20 sizes, 3/16″ to 4″. Working load limit 0.333 to 150 t. Every size has its own Indus part number in the table below, with the loads in the unit the manufacturer rates them in.</p><p>The lettered dimensions in the table refer to the dimension drawing shown with this product.</p><h3>Choosing a size</h3><p>Choose on working load limit for the pull you will actually apply. A chain (dee) shackle takes an in-line pull; an anchor (bow) shackle accepts several slings or an angled pull. Side-loading reduces the rating, and a screw pin must be fully seated before loading.</p><h3>Ordering</h3><p>Quote the Indus part number from the size table, or send the size and rating you need. Each consignment ships with the manufacturer's test certificate; say on the RFQ if your site needs anything more.</p>",
+   "descriptionShort": "Stainless Steel Bolt-Type Anchor Shackle (G-2130 pattern), in 20 sizes, 3/16″ to 4″. Load rating on request. Indus part numbers.",
+   "descriptionLong": "<p>A shackle joins a sling, hook or chain to a lifting point and opens with a removable pin. This range follows the G-2130 pattern, sized to interchange in an existing rigging plan. Stainless steel 304/316 forged bow shackle, polished.</p><h3>Sizes</h3><p>20 sizes, 3/16″ to 4″. Every size has its own Indus part number in the table below.</p><p><strong>No load rating is published for this range.</strong> Tell us the duty and we will confirm the rating with the quotation. Do not use it to lift until you have that rating in writing.</p><p>The lettered dimensions in the table refer to the dimension drawing shown with this product.</p><h3>Choosing a size</h3><p>A chain (dee) shackle takes an in-line pull; an anchor (bow) shackle accepts several slings or an angled pull. Side-loading reduces the rating, and a screw pin must be fully seated before loading.</p><h3>Ordering</h3><p>Quote the Indus part number from the size table, or send the size and rating you need.</p>",
    "seoTitle": "Stainless Steel Bolt-Type Anchor Shackle G-2130 Pattern",
-   "seoDescription": "Stainless Steel Bolt-Type Anchor Shackle (G-2130): 20 sizes, 3/16″ to 4″, WLL 0.333 to 150 t. Indus part numbers. Request a quote.",
+   "seoDescription": "Stainless Steel Bolt-Type Anchor Shackle (G-2130 pattern): 20 sizes, 3/16″ to 4″. Load rating on request. Indus part numbers. Request a quote.",
    "faqs": [
     {
      "question": "What sizes does the stainless steel bolt-type anchor shackle come in?",
-     "answer": "20 sizes, 3/16″ to 4″. The size table lists each one with its Indus part number, ratings and dimensions."
+     "answer": "20 sizes, 3/16″ to 4″. The size table lists each one with its Indus part number and dimensions."
     },
     {
      "question": "What is the working load limit?",
-     "answer": "0.333 to 150 t, depending on size, as the manufacturer rates it. The WLL is the most the part may carry in service; proof and breaking loads are test figures and never working limits."
+     "answer": "No load rating is published for this range. Tell us the duty and we will confirm the rating in writing with the quotation; do not lift with it until you have that."
     },
     {
      "question": "What do G-209, G-2130 and G-213 mean?",
@@ -80805,10 +80818,6 @@
     {
      "question": "What is the difference between WLL, SWL and breaking load?",
      "answer": "WLL — working load limit — is the most the manufacturer rates a part to carry in service. SWL, safe working load, is the older term and is sometimes set lower for a particular installation. The minimum breaking load is what the part withstood in test, several times its WLL, and it is never a working figure."
-    },
-    {
-     "question": "Do the parts come with a test certificate?",
-     "answer": "Yes. Each consignment ships with the manufacturer's test certificate. For third-party certification or witnessed proof testing, say so on the RFQ."
     }
    ],
    "specs": [
@@ -80840,20 +80849,11 @@
      "templateKey": "size_range"
     },
     {
-     "group": "Performance",
-     "label": "Working load limit",
-     "value": "0.333 to 150 t",
-     "unit": null,
-     "position": 3,
-     "isFilterable": true,
-     "templateKey": "wll_range"
-    },
-    {
      "group": "Construction",
      "label": "Material",
      "value": "Stainless steel 304/316 forged bow shackle",
      "unit": null,
-     "position": 4,
+     "position": 3,
      "isFilterable": true,
      "templateKey": "material"
     },
@@ -80862,7 +80862,7 @@
      "label": "Finish",
      "value": "Polished",
      "unit": null,
-     "position": 5,
+     "position": 4,
      "isFilterable": true,
      "templateKey": "finish"
     },
@@ -80871,18 +80871,9 @@
      "label": "Sizes",
      "value": "20",
      "unit": null,
-     "position": 6,
+     "position": 5,
      "isFilterable": false,
      "templateKey": "sizes_count"
-    },
-    {
-     "group": "Compliance",
-     "label": "Certification",
-     "value": "Manufacturer's test certificate",
-     "unit": null,
-     "position": 7,
-     "isFilterable": false,
-     "templateKey": "certification"
     }
    ],
    "searchAliases": [
@@ -80906,7 +80897,6 @@
      "position": 0,
      "dimensions": {
       "size": "3/16″",
-      "wllT": 0.333,
       "weightLbs": 0.06,
       "A": 9.652,
       "B": 6.35,
@@ -80922,7 +80912,6 @@
      "position": 1,
      "dimensions": {
       "size": "1/4″",
-      "wllT": 0.5,
       "weightLbs": 0.11,
       "A": 11.94,
       "B": 7.874,
@@ -80938,7 +80927,6 @@
      "position": 2,
      "dimensions": {
       "size": "5/16″",
-      "wllT": 0.75,
       "weightLbs": 0.22,
       "A": 13.46,
       "B": 9.652,
@@ -80954,7 +80942,6 @@
      "position": 3,
      "dimensions": {
       "size": "3/8″",
-      "wllT": 1.0,
       "weightLbs": 0.33,
       "A": 16.76,
       "B": 11.18,
@@ -80970,7 +80957,6 @@
      "position": 4,
      "dimensions": {
       "size": "7/16″",
-      "wllT": 1.5,
       "weightLbs": 0.49,
       "A": 19.05,
       "B": 12.7,
@@ -80986,7 +80972,6 @@
      "position": 5,
      "dimensions": {
       "size": "1/2″",
-      "wllT": 2.0,
       "weightLbs": 0.79,
       "A": 20.57,
       "B": 16.26,
@@ -81002,7 +80987,6 @@
      "position": 6,
      "dimensions": {
       "size": "5/8″",
-      "wllT": 3.25,
       "weightLbs": 1.68,
       "A": 26.92,
       "B": 19.56,
@@ -81018,7 +81002,6 @@
      "position": 7,
      "dimensions": {
       "size": "3/4″",
-      "wllT": 4.75,
       "weightLbs": 2.72,
       "A": 31.75,
       "B": 22.61,
@@ -81034,7 +81017,6 @@
      "position": 8,
      "dimensions": {
       "size": "7/8″",
-      "wllT": 6.5,
       "weightLbs": 3.95,
       "A": 36.58,
       "B": 25.91,
@@ -81050,7 +81032,6 @@
      "position": 9,
      "dimensions": {
       "size": "1″",
-      "wllT": 8.5,
       "weightLbs": 5.66,
       "A": 42.93,
       "B": 29.21,
@@ -81066,7 +81047,6 @@
      "position": 10,
      "dimensions": {
       "size": "1-1/8″",
-      "wllT": 9.5,
       "weightLbs": 8.27,
       "A": 45.97,
       "B": 31.75,
@@ -81082,7 +81062,6 @@
      "position": 11,
      "dimensions": {
       "size": "1-1/4″",
-      "wllT": 12.0,
       "weightLbs": 11.71,
       "A": 51.56,
       "B": 35.56,
@@ -81098,7 +81077,6 @@
      "position": 12,
      "dimensions": {
       "size": "1-3/8″",
-      "wllT": 13.5,
       "weightLbs": 15.83,
       "A": 57.15,
       "B": 38.86,
@@ -81114,7 +81092,6 @@
      "position": 13,
      "dimensions": {
       "size": "1-1/2″",
-      "wllT": 17.0,
       "weightLbs": 19.0,
       "A": 60.45,
       "B": 42.16,
@@ -81130,7 +81107,6 @@
      "position": 14,
      "dimensions": {
       "size": "1-3/4″",
-      "wllT": 25.0,
       "weightLbs": 33.91,
       "A": 73.15,
       "B": 51.82,
@@ -81146,7 +81122,6 @@
      "position": 15,
      "dimensions": {
       "size": "2″",
-      "wllT": 35.0,
       "weightLbs": 52.25,
       "A": 82.55,
       "B": 58.42,
@@ -81162,7 +81137,6 @@
      "position": 16,
      "dimensions": {
       "size": "2-1/2″",
-      "wllT": 55.0,
       "weightLbs": 98.25,
       "A": 104.9,
       "B": 71.12,
@@ -81178,7 +81152,6 @@
      "position": 17,
      "dimensions": {
       "size": "3″",
-      "wllT": 85.0,
       "weightLbs": 154.0,
       "A": 127.0,
       "B": 83.82,
@@ -81194,7 +81167,6 @@
      "position": 18,
      "dimensions": {
       "size": "3-1/2″",
-      "wllT": 120.0,
       "weightLbs": 265.0,
       "A": 133.3,
       "B": 95.5,
@@ -81210,7 +81182,6 @@
      "position": 19,
      "dimensions": {
       "size": "4″",
-      "wllT": 150.0,
       "weightLbs": 338.0,
       "A": 139.7,
       "B": 108.2,
@@ -90953,7 +90924,7 @@
       "wllT": 7.0,
       "mblT": 35.0,
       "A": 32.0,
-      "C": 20.8,
+      "C": 50.8,
       "D": 20.6,
       "N": 22.0,
       "L": 126.2
@@ -95768,18 +95739,18 @@
    "title": "Stainless Steel Bolt-Type Chain Shackle — G-2150 Pattern",
    "category": "shackles",
    "focusKeyword": "stainless steel bolt-type chain shackle",
-   "descriptionShort": "Stainless Steel Bolt-Type Chain Shackle (G-2150), in 20 sizes, 3/16″ to 4″, WLL 0.333 to 150 t. Indus part numbers, manufacturer's test certificate.",
-   "descriptionLong": "<p>A shackle joins a sling, hook or chain to a lifting point and opens with a removable pin. This range follows the G-2150 pattern, sized to interchange in an existing rigging plan. Stainless steel 304/316 forged d shackle, polished.</p><h3>Sizes and ratings</h3><p>20 sizes, 3/16″ to 4″. Working load limit 0.333 to 150 t. Every size has its own Indus part number in the table below, with the loads in the unit the manufacturer rates them in.</p><p>The lettered dimensions in the table refer to the dimension drawing shown with this product.</p><h3>Choosing a size</h3><p>Choose on working load limit for the pull you will actually apply. A chain (dee) shackle takes an in-line pull; an anchor (bow) shackle accepts several slings or an angled pull. Side-loading reduces the rating, and a screw pin must be fully seated before loading.</p><h3>Ordering</h3><p>Quote the Indus part number from the size table, or send the size and rating you need. Each consignment ships with the manufacturer's test certificate; say on the RFQ if your site needs anything more.</p>",
+   "descriptionShort": "Stainless Steel Bolt-Type Chain Shackle (G-2150 pattern), in 20 sizes, 3/16″ to 4″. Load rating on request. Indus part numbers.",
+   "descriptionLong": "<p>A shackle joins a sling, hook or chain to a lifting point and opens with a removable pin. This range follows the G-2150 pattern, sized to interchange in an existing rigging plan. Stainless steel 304/316 forged d shackle, polished.</p><h3>Sizes</h3><p>20 sizes, 3/16″ to 4″. Every size has its own Indus part number in the table below.</p><p><strong>No load rating is published for this range.</strong> Tell us the duty and we will confirm the rating with the quotation. Do not use it to lift until you have that rating in writing.</p><p>The lettered dimensions in the table refer to the dimension drawing shown with this product.</p><h3>Choosing a size</h3><p>A chain (dee) shackle takes an in-line pull; an anchor (bow) shackle accepts several slings or an angled pull. Side-loading reduces the rating, and a screw pin must be fully seated before loading.</p><h3>Ordering</h3><p>Quote the Indus part number from the size table, or send the size and rating you need.</p>",
    "seoTitle": "Stainless Steel Bolt-Type Chain Shackle G-2150 Pattern",
-   "seoDescription": "Stainless Steel Bolt-Type Chain Shackle (G-2150): 20 sizes, 3/16″ to 4″, WLL 0.333 to 150 t. Indus part numbers. Request a quote.",
+   "seoDescription": "Stainless Steel Bolt-Type Chain Shackle (G-2150 pattern): 20 sizes, 3/16″ to 4″. Load rating on request. Indus part numbers. Request a quote.",
    "faqs": [
     {
      "question": "What sizes does the stainless steel bolt-type chain shackle come in?",
-     "answer": "20 sizes, 3/16″ to 4″. The size table lists each one with its Indus part number, ratings and dimensions."
+     "answer": "20 sizes, 3/16″ to 4″. The size table lists each one with its Indus part number and dimensions."
     },
     {
      "question": "What is the working load limit?",
-     "answer": "0.333 to 150 t, depending on size, as the manufacturer rates it. The WLL is the most the part may carry in service; proof and breaking loads are test figures and never working limits."
+     "answer": "No load rating is published for this range. Tell us the duty and we will confirm the rating in writing with the quotation; do not lift with it until you have that."
     },
     {
      "question": "What do G-209, G-2130 and G-213 mean?",
@@ -95788,10 +95759,6 @@
     {
      "question": "What is the difference between WLL, SWL and breaking load?",
      "answer": "WLL — working load limit — is the most the manufacturer rates a part to carry in service. SWL, safe working load, is the older term and is sometimes set lower for a particular installation. The minimum breaking load is what the part withstood in test, several times its WLL, and it is never a working figure."
-    },
-    {
-     "question": "Do the parts come with a test certificate?",
-     "answer": "Yes. Each consignment ships with the manufacturer's test certificate. For third-party certification or witnessed proof testing, say so on the RFQ."
     }
    ],
    "specs": [
@@ -95823,20 +95790,11 @@
      "templateKey": "size_range"
     },
     {
-     "group": "Performance",
-     "label": "Working load limit",
-     "value": "0.333 to 150 t",
-     "unit": null,
-     "position": 3,
-     "isFilterable": true,
-     "templateKey": "wll_range"
-    },
-    {
      "group": "Construction",
      "label": "Material",
      "value": "Stainless steel 304/316 forged d shackle",
      "unit": null,
-     "position": 4,
+     "position": 3,
      "isFilterable": true,
      "templateKey": "material"
     },
@@ -95845,7 +95803,7 @@
      "label": "Finish",
      "value": "Polished",
      "unit": null,
-     "position": 5,
+     "position": 4,
      "isFilterable": true,
      "templateKey": "finish"
     },
@@ -95854,18 +95812,9 @@
      "label": "Sizes",
      "value": "20",
      "unit": null,
-     "position": 6,
+     "position": 5,
      "isFilterable": false,
      "templateKey": "sizes_count"
-    },
-    {
-     "group": "Compliance",
-     "label": "Certification",
-     "value": "Manufacturer's test certificate",
-     "unit": null,
-     "position": 7,
-     "isFilterable": false,
-     "templateKey": "certification"
     }
    ],
    "searchAliases": [
@@ -95889,7 +95838,6 @@
      "position": 0,
      "dimensions": {
       "size": "3/16″",
-      "wllT": 0.333,
       "weightLbs": 0.06,
       "A": 9.652,
       "B": 6.35,
@@ -95907,7 +95855,6 @@
      "position": 1,
      "dimensions": {
       "size": "1/4″",
-      "wllT": 0.5,
       "weightLbs": 0.11,
       "A": 11.94,
       "B": 7.874,
@@ -95925,7 +95872,6 @@
      "position": 2,
      "dimensions": {
       "size": "5/16″",
-      "wllT": 0.75,
       "weightLbs": 0.22,
       "A": 13.46,
       "B": 9.652,
@@ -95943,7 +95889,6 @@
      "position": 3,
      "dimensions": {
       "size": "3/8″",
-      "wllT": 1.0,
       "weightLbs": 0.33,
       "A": 16.76,
       "B": 11.18,
@@ -95961,7 +95906,6 @@
      "position": 4,
      "dimensions": {
       "size": "7/16″",
-      "wllT": 1.5,
       "weightLbs": 0.49,
       "A": 19.05,
       "B": 12.7,
@@ -95979,7 +95923,6 @@
      "position": 5,
      "dimensions": {
       "size": "1/2″",
-      "wllT": 2.0,
       "weightLbs": 0.79,
       "A": 20.57,
       "B": 16.26,
@@ -95997,7 +95940,6 @@
      "position": 6,
      "dimensions": {
       "size": "5/8″",
-      "wllT": 3.25,
       "weightLbs": 1.68,
       "A": 26.92,
       "B": 19.56,
@@ -96015,7 +95957,6 @@
      "position": 7,
      "dimensions": {
       "size": "3/4″",
-      "wllT": 4.75,
       "weightLbs": 2.72,
       "A": 31.75,
       "B": 22.61,
@@ -96033,7 +95974,6 @@
      "position": 8,
      "dimensions": {
       "size": "7/8″",
-      "wllT": 6.5,
       "weightLbs": 3.95,
       "A": 36.58,
       "B": 25.91,
@@ -96051,7 +95991,6 @@
      "position": 9,
      "dimensions": {
       "size": "1″",
-      "wllT": 8.5,
       "weightLbs": 5.66,
       "A": 42.93,
       "B": 29.21,
@@ -96069,7 +96008,6 @@
      "position": 10,
      "dimensions": {
       "size": "1-1/8″",
-      "wllT": 9.5,
       "weightLbs": 8.27,
       "A": 45.97,
       "B": 31.75,
@@ -96087,7 +96025,6 @@
      "position": 11,
      "dimensions": {
       "size": "1-1/4″",
-      "wllT": 12.0,
       "weightLbs": 11.71,
       "A": 51.56,
       "B": 35.56,
@@ -96105,7 +96042,6 @@
      "position": 12,
      "dimensions": {
       "size": "1-3/8″",
-      "wllT": 13.5,
       "weightLbs": 15.83,
       "A": 57.15,
       "B": 38.86,
@@ -96123,7 +96059,6 @@
      "position": 13,
      "dimensions": {
       "size": "1-1/2″",
-      "wllT": 17.0,
       "weightLbs": 19.0,
       "A": 60.45,
       "B": 42.16,
@@ -96141,7 +96076,6 @@
      "position": 14,
      "dimensions": {
       "size": "1-3/4″",
-      "wllT": 25.0,
       "weightLbs": 33.91,
       "A": 73.15,
       "B": 51.82,
@@ -96159,7 +96093,6 @@
      "position": 15,
      "dimensions": {
       "size": "2″",
-      "wllT": 35.0,
       "weightLbs": 52.25,
       "A": 82.55,
       "B": 58.42,
@@ -96177,7 +96110,6 @@
      "position": 16,
      "dimensions": {
       "size": "2-1/2″",
-      "wllT": 55.0,
       "weightLbs": 98.25,
       "A": 104.9,
       "B": 71.12,
@@ -96195,7 +96127,6 @@
      "position": 17,
      "dimensions": {
       "size": "3″",
-      "wllT": 85.0,
       "weightLbs": 154.0,
       "A": 127.0,
       "B": 83.82,
@@ -96213,7 +96144,6 @@
      "position": 18,
      "dimensions": {
       "size": "3-1/2″",
-      "wllT": 120.0,
       "weightLbs": 265.0,
       "A": 133.3,
       "B": 95.5,
@@ -96231,7 +96161,6 @@
      "position": 19,
      "dimensions": {
       "size": "4″",
-      "wllT": 150.0,
       "weightLbs": 338.0,
       "A": 139.7,
       "B": 108.2,
@@ -100616,26 +100545,18 @@
    "title": "Stainless Steel Body Block with Eye",
    "category": "snatch-blocks-pulleys",
    "focusKeyword": "stainless steel body block with eye",
-   "descriptionShort": "Stainless Steel Body Block with Eye, in 3 sizes, 2″ to 4″, WLL 1,400 to 2,800 t. Indus part numbers, manufacturer's test certificate.",
-   "descriptionLong": "<p>Snatch blocks and pulley blocks change the direction of a rope or multiply a line pull. Type 304 or type 316 stainless steel, polished.</p><h3>Sizes and ratings</h3><p>3 sizes, 2″ to 4″. Working load limit 1,400 to 2,800 t. Every size has its own Indus part number in the table below, with the loads in the unit the manufacturer rates them in.</p><h3>Manufacturer's data</h3><ul><li>Casting.</li></ul><h3>Choosing a size</h3><p>Rate the block for the load it actually sees: with the rope turned through 180° it carries about twice the line pull. Match the sheave to the rope diameter.</p><h3>Ordering</h3><p>Quote the Indus part number from the size table, or send the size and rating you need. Each consignment ships with the manufacturer's test certificate; say on the RFQ if your site needs anything more.</p>",
+   "descriptionShort": "Stainless Steel Body Block with Eye, in 3 sizes, 2″ to 4″. Load rating on request. Indus part numbers.",
+   "descriptionLong": "<p>Snatch blocks and pulley blocks change the direction of a rope or multiply a line pull. Type 304 or type 316 stainless steel, polished.</p><h3>Sizes</h3><p>3 sizes, 2″ to 4″. Every size has its own Indus part number in the table below.</p><p><strong>No load rating is published for this range.</strong> Tell us the duty and we will confirm the rating with the quotation. Do not use it to lift until you have that rating in writing.</p><h3>Manufacturer's data</h3><ul><li>Casting.</li></ul><h3>Choosing a size</h3><p>Rate the block for the load it actually sees: with the rope turned through 180° it carries about twice the line pull. Match the sheave to the rope diameter.</p><h3>Ordering</h3><p>Quote the Indus part number from the size table, or send the size and rating you need.</p>",
    "seoTitle": "Stainless Steel Body Block with Eye",
-   "seoDescription": "Stainless Steel Body Block with Eye: 3 sizes, 2″ to 4″, WLL 1,400 to 2,800 t. Indus part numbers. Request a quote.",
+   "seoDescription": "Stainless Steel Body Block with Eye: 3 sizes, 2″ to 4″. Load rating on request. Indus part numbers. Request a quote.",
    "faqs": [
     {
      "question": "What sizes does the stainless steel body block with eye come in?",
-     "answer": "3 sizes, 2″ to 4″. The size table lists each one with its Indus part number, ratings and dimensions."
+     "answer": "3 sizes, 2″ to 4″. The size table lists each one with its Indus part number and dimensions."
     },
     {
      "question": "What is the working load limit?",
-     "answer": "1,400 to 2,800 t, depending on size, as the manufacturer rates it. The WLL is the most the part may carry in service; proof and breaking loads are test figures and never working limits."
-    },
-    {
-     "question": "Can a snatch block be used for lifting?",
-     "answer": "Yes, within its rated load — but the load on the block is not the load on the rope. With the rope turned through 180° the block carries about twice the line pull, so rate the block, its hook or shackle and its anchor point for that."
-    },
-    {
-     "question": "Do the parts come with a test certificate?",
-     "answer": "Yes. Each consignment ships with the manufacturer's test certificate. For third-party certification or witnessed proof testing, say so on the RFQ."
+     "answer": "No load rating is published for this range. Tell us the duty and we will confirm the rating in writing with the quotation; do not lift with it until you have that."
     }
    ],
    "specs": [
@@ -100658,20 +100579,11 @@
      "templateKey": "size_range"
     },
     {
-     "group": "Performance",
-     "label": "Working load limit",
-     "value": "1,400 to 2,800 t",
-     "unit": null,
-     "position": 2,
-     "isFilterable": true,
-     "templateKey": "wll_range"
-    },
-    {
      "group": "Construction",
      "label": "Material",
      "value": "Type 304 or type 316 stainless steel",
      "unit": null,
-     "position": 3,
+     "position": 2,
      "isFilterable": true,
      "templateKey": "material"
     },
@@ -100680,7 +100592,7 @@
      "label": "Finish",
      "value": "Polished",
      "unit": null,
-     "position": 4,
+     "position": 3,
      "isFilterable": true,
      "templateKey": "finish"
     },
@@ -100689,18 +100601,9 @@
      "label": "Sizes",
      "value": "3",
      "unit": null,
-     "position": 5,
+     "position": 4,
      "isFilterable": false,
      "templateKey": "sizes_count"
-    },
-    {
-     "group": "Compliance",
-     "label": "Certification",
-     "value": "Manufacturer's test certificate",
-     "unit": null,
-     "position": 6,
-     "isFilterable": false,
-     "templateKey": "certification"
     }
    ],
    "searchAliases": [
@@ -100716,8 +100619,6 @@
      "position": 0,
      "dimensions": {
       "size": "2″",
-      "ropeSize": "5/8 mm",
-      "wllT": 1400.0,
       "weightKg": 1.0
      }
     },
@@ -100726,8 +100627,6 @@
      "position": 1,
      "dimensions": {
       "size": "3″",
-      "ropeSize": "5/8 mm",
-      "wllT": 1600.0,
       "weightKg": 1.5
      }
     },
@@ -100736,8 +100635,6 @@
      "position": 2,
      "dimensions": {
       "size": "4″",
-      "ropeSize": "5/8 mm",
-      "wllT": 2800.0,
       "weightKg": 2.9
      }
     }
@@ -106347,7 +106244,7 @@
       "I": 57.0,
       "L": 130.0,
       "L1": 63.0,
-      "weightKg": 1030.0
+      "weightKg": 1.03
      }
     },
     {
@@ -106362,7 +106259,7 @@
       "I": 70.0,
       "L": 158.0,
       "L1": 83.0,
-      "weightKg": 1450.0
+      "weightKg": 1.45
      }
     },
     {
@@ -106377,7 +106274,7 @@
       "I": 70.0,
       "L": 158.0,
       "L1": 83.0,
-      "weightKg": 1450.0
+      "weightKg": 1.45
      }
     }
    ],
@@ -123636,14 +123533,14 @@
    "title": "Shackle — DIN 82101 Form A, B and C Pattern, Galvanized",
    "category": "shackles",
    "focusKeyword": "shackle",
-   "descriptionShort": "Shackle (DIN 82101 type), in 28 sizes. Load rating on request. Indus part numbers.",
-   "descriptionLong": "<p>A shackle joins a sling, hook or chain to a lifting point and opens with a removable pin. Built to the DIN 82101 pattern. Galvanized, powder coating, or self colored.</p><h3>Sizes</h3><p>28 sizes. Every size has its own Indus part number in the table below.</p><p><strong>No load rating is published for this range.</strong> Tell us the duty and we will confirm the rating with the quotation. Do not use it to lift until you have that rating in writing.</p><p>The lettered dimensions in the table refer to the dimension drawing shown with this product.</p><h3>Manufacturer's data</h3><ul><li>Forged / quenched and tempered.</li></ul><h3>Choosing a size</h3><p>A chain (dee) shackle takes an in-line pull; an anchor (bow) shackle accepts several slings or an angled pull.</p><h3>Ordering</h3><p>Quote the Indus part number from the size table, or send the size and rating you need.</p>",
+   "descriptionShort": "Shackle (DIN 82101 type), in 26 sizes. Load rating on request. Indus part numbers.",
+   "descriptionLong": "<p>A shackle joins a sling, hook or chain to a lifting point and opens with a removable pin. Built to the DIN 82101 pattern. Galvanized, powder coating, or self colored.</p><h3>Sizes</h3><p>26 sizes. Every size has its own Indus part number in the table below.</p><p><strong>No load rating is published for this range.</strong> Tell us the duty and we will confirm the rating with the quotation. Do not use it to lift until you have that rating in writing.</p><p>The lettered dimensions in the table refer to the dimension drawing shown with this product.</p><h3>Manufacturer's data</h3><ul><li>Forged / quenched and tempered.</li></ul><h3>Choosing a size</h3><p>A chain (dee) shackle takes an in-line pull; an anchor (bow) shackle accepts several slings or an angled pull.</p><h3>Ordering</h3><p>Quote the Indus part number from the size table, or send the size and rating you need.</p>",
    "seoTitle": "Shackle DIN 82101 Form A, B and C Pattern, Galvanized",
-   "seoDescription": "Shackle (DIN 82101 type): 28 sizes. Indus part numbers. Request a quote.",
+   "seoDescription": "Shackle (DIN 82101 type): 26 sizes. Indus part numbers. Request a quote.",
    "faqs": [
     {
      "question": "What sizes does the shackle come in?",
-     "answer": "28 sizes. The size table lists each one with its Indus part number and dimensions."
+     "answer": "26 sizes. The size table lists each one with its Indus part number and dimensions."
     },
     {
      "question": "What do G-209, G-2130 and G-213 mean?",
@@ -123685,7 +123582,7 @@
     {
      "group": "Identification",
      "label": "Sizes",
-     "value": "28",
+     "value": "26",
      "unit": null,
      "position": 3,
      "isFilterable": false,
@@ -123709,22 +123606,8 @@
    ],
    "variants": [
     {
-     "partNumber": "IH-LR-SH-SD82101FB-TYPE",
-     "position": 0,
-     "dimensions": {
-      "size": "Type"
-     }
-    },
-    {
-     "partNumber": "IH-LR-SH-SD82101FB-A",
-     "position": 1,
-     "dimensions": {
-      "size": "A (B)"
-     }
-    },
-    {
      "partNumber": "IH-LR-SH-SD82101FB-M4",
-     "position": 2,
+     "position": 0,
      "dimensions": {
       "size": "M4 (0,06)",
       "b1": 6.0,
@@ -123735,12 +123618,12 @@
       "d5": 4.0,
       "h1": 12.0,
       "h2": 18.0,
-      "weightKg": 7e-06
+      "weightKg": 0.007
      }
     },
     {
      "partNumber": "IH-LR-SH-SD82101FB-M5",
-     "position": 3,
+     "position": 1,
      "dimensions": {
       "size": "M5 (0,1)",
       "b1": 7.0,
@@ -123751,12 +123634,12 @@
       "d5": 5.0,
       "h1": 15.5,
       "h2": 23.0,
-      "weightKg": 1.3e-05
+      "weightKg": 0.013
      }
     },
     {
      "partNumber": "IH-LR-SH-SD82101FB-M6",
-     "position": 4,
+     "position": 2,
      "dimensions": {
       "size": "M6 (0,16)",
       "b1": 8.0,
@@ -123767,12 +123650,12 @@
       "d5": 6.0,
       "h1": 18.0,
       "h2": 27.0,
-      "weightKg": 2.4e-05
+      "weightKg": 0.024
      }
     },
     {
      "partNumber": "IH-LR-SH-SD82101FB-M8",
-     "position": 5,
+     "position": 3,
      "dimensions": {
       "size": "M8 (0,25)",
       "b1": 11.0,
@@ -123783,12 +123666,12 @@
       "d5": 8.0,
       "h1": 24.0,
       "h2": 36.0,
-      "weightKg": 4.5e-05
+      "weightKg": 0.045
      }
     },
     {
      "partNumber": "IH-LR-SH-SD82101FB-M10",
-     "position": 6,
+     "position": 4,
      "dimensions": {
       "size": "M10 (0,4)",
       "b1": 14.0,
@@ -123799,12 +123682,12 @@
       "d5": 10.0,
       "h1": 30.0,
       "h2": 45.0,
-      "weightKg": 9e-05
+      "weightKg": 0.09
      }
     },
     {
      "partNumber": "IH-LR-SH-SD82101FB-M12",
-     "position": 7,
+     "position": 5,
      "dimensions": {
       "size": "M12 (0,6)",
       "b1": 17.0,
@@ -123815,12 +123698,12 @@
       "d5": 12.0,
       "h1": 36.0,
       "h2": 54.0,
-      "weightKg": 0.00017
+      "weightKg": 0.17
      }
     },
     {
      "partNumber": "IH-LR-SH-SD82101FB-M16",
-     "position": 8,
+     "position": 6,
      "dimensions": {
       "size": "M16 (1)",
       "b1": 21.0,
@@ -123831,12 +123714,12 @@
       "d5": 16.0,
       "h1": 49.0,
       "h2": 72.0,
-      "weightKg": 0.00036
+      "weightKg": 0.36
      }
     },
     {
      "partNumber": "IH-LR-SH-SD82101FB-M20",
-     "position": 9,
+     "position": 7,
      "dimensions": {
       "size": "M20 (1,6)",
       "b1": 27.0,
@@ -123847,12 +123730,12 @@
       "d5": 20.0,
       "h1": 61.0,
       "h2": 90.0,
-      "weightKg": 0.00075
+      "weightKg": 0.75
      }
     },
     {
      "partNumber": "IH-LR-SH-SD82101FB-M22",
-     "position": 10,
+     "position": 8,
      "dimensions": {
       "size": "M22 (2)",
       "b1": 30.0,
@@ -123863,12 +123746,12 @@
       "d5": 22.0,
       "h1": 67.0,
       "h2": 99.0,
-      "weightKg": 0.001
+      "weightKg": 1.0
      }
     },
     {
      "partNumber": "IH-LR-SH-SD82101FB-M24",
-     "position": 11,
+     "position": 9,
      "dimensions": {
       "size": "M24 (2,5)",
       "b1": 33.0,
@@ -123879,12 +123762,12 @@
       "d5": 24.0,
       "h1": 73.0,
       "h2": 108.0,
-      "weightKg": 0.00132
+      "weightKg": 1.32
      }
     },
     {
      "partNumber": "IH-LR-SH-SD82101FB-M27",
-     "position": 12,
+     "position": 10,
      "dimensions": {
       "size": "M27 (3)",
       "b1": 38.0,
@@ -123895,12 +123778,12 @@
       "d5": 27.0,
       "h1": 83.5,
       "h2": 123.0,
-      "weightKg": 0.0018
+      "weightKg": 1.8
      }
     },
     {
      "partNumber": "IH-LR-SH-SD82101FB-M30",
-     "position": 13,
+     "position": 11,
      "dimensions": {
       "size": "M30 (4)",
       "b1": 42.0,
@@ -123911,12 +123794,12 @@
       "d5": 30.0,
       "h1": 91.0,
       "h2": 135.0,
-      "weightKg": 0.0024
+      "weightKg": 2.4
      }
     },
     {
      "partNumber": "IH-LR-SH-SD82101FB-M36",
-     "position": 14,
+     "position": 12,
      "dimensions": {
       "size": "M36 (5)",
       "b1": 47.0,
@@ -123927,12 +123810,12 @@
       "d5": 36.0,
       "h1": 111.0,
       "h2": 162.0,
-      "weightKg": 0.0039
+      "weightKg": 3.9
      }
     },
     {
      "partNumber": "IH-LR-SH-SD82101FB-M39",
-     "position": 15,
+     "position": 13,
      "dimensions": {
       "size": "M39 (6)",
       "b1": 53.0,
@@ -123943,12 +123826,12 @@
       "d5": 39.0,
       "h1": 119.5,
       "h2": 176.0,
-      "weightKg": 0.0053
+      "weightKg": 5.3
      }
     },
     {
      "partNumber": "IH-LR-SH-SD82101FB-M45",
-     "position": 16,
+     "position": 14,
      "dimensions": {
       "size": "M45 (8)",
       "b1": 60.0,
@@ -123959,12 +123842,12 @@
       "d5": 45.0,
       "h1": 139.5,
       "h2": 203.0,
-      "weightKg": 0.0079
+      "weightKg": 7.9
      }
     },
     {
      "partNumber": "IH-LR-SH-SD82101FB-M48",
-     "position": 17,
+     "position": 15,
      "dimensions": {
       "size": "M48 (10)",
       "b1": 66.0,
@@ -123975,12 +123858,12 @@
       "d5": 48.0,
       "h1": 147.0,
       "h2": 216.0,
-      "weightKg": 0.01
+      "weightKg": 10.0
      }
     },
     {
      "partNumber": "IH-LR-SH-SD82101FB-M52",
-     "position": 18,
+     "position": 16,
      "dimensions": {
       "size": "M52 (12)",
       "b1": 73.0,
@@ -123991,12 +123874,12 @@
       "d5": 52.0,
       "h1": 158.0,
       "h2": 234.0,
-      "weightKg": 0.013
+      "weightKg": 13.0
      }
     },
     {
      "partNumber": "IH-LR-SH-SD82101FB-M60",
-     "position": 19,
+     "position": 17,
      "dimensions": {
       "size": "M60 (16)",
       "b1": 81.0,
@@ -124007,12 +123890,12 @@
       "d5": 60.0,
       "h1": 185.0,
       "h2": 270.0,
-      "weightKg": 0.0185
+      "weightKg": 18.5
      }
     },
     {
      "partNumber": "IH-LR-SH-SD82101FB-M68",
-     "position": 20,
+     "position": 18,
      "dimensions": {
       "size": "M68 (20)",
       "b1": 90.0,
@@ -124023,12 +123906,12 @@
       "d5": 68.0,
       "h1": 211.0,
       "h2": 306.0,
-      "weightKg": 0.0272
+      "weightKg": 27.2
      }
     },
     {
      "partNumber": "IH-LR-SH-SD82101FB-M72X6",
-     "position": 21,
+     "position": 19,
      "dimensions": {
       "size": "M72×6 (—)",
       "b1": 100.0,
@@ -124043,7 +123926,7 @@
     },
     {
      "partNumber": "IH-LR-SH-SD82101FB-M80X6",
-     "position": 22,
+     "position": 20,
      "dimensions": {
       "size": "M80×6 (—)",
       "b1": 110.0,
@@ -124058,7 +123941,7 @@
     },
     {
      "partNumber": "IH-LR-SH-SD82101FB-M90X6",
-     "position": 23,
+     "position": 21,
      "dimensions": {
       "size": "M90×6 (—)",
       "b1": 125.0,
@@ -124073,7 +123956,7 @@
     },
     {
      "partNumber": "IH-LR-SH-SD82101FB-M100X6",
-     "position": 24,
+     "position": 22,
      "dimensions": {
       "size": "M100×6 (—)",
       "b1": 140.0,
@@ -124088,7 +123971,7 @@
     },
     {
      "partNumber": "IH-LR-SH-SD82101FB-M110X6",
-     "position": 25,
+     "position": 23,
      "dimensions": {
       "size": "M110×6 (—)",
       "b1": 155.0,
@@ -124103,7 +123986,7 @@
     },
     {
      "partNumber": "IH-LR-SH-SD82101FB-M125X6",
-     "position": 26,
+     "position": 24,
      "dimensions": {
       "size": "M125×6 (—)",
       "b1": 175.0,
@@ -124118,7 +124001,7 @@
     },
     {
      "partNumber": "IH-LR-SH-SD82101FB-M140X6",
-     "position": 27,
+     "position": 25,
      "dimensions": {
       "size": "M140×6 (—)",
       "b1": 200.0,
@@ -130548,26 +130431,18 @@
    "title": "Stainless Steel Double Wheel Swivel Pulley Block",
    "category": "snatch-blocks-pulleys",
    "focusKeyword": "stainless steel double wheel swivel pulley block",
-   "descriptionShort": "Stainless Steel Double Wheel Swivel Pulley Block, in 3 sizes, 0.15 kg to 0.4 kg. Indus part numbers, manufacturer's test certificate.",
-   "descriptionLong": "<p>Snatch blocks and pulley blocks change the direction of a rope or multiply a line pull. Type 304 or type 316 stainless steel, polished / electrophoretic coating.</p><h3>Sizes and ratings</h3><p>3 sizes, 0.15 kg to 0.4 kg. Working load limit 0.15 to 0.4 kg. Every size has its own Indus part number in the table below, with the loads in the unit the manufacturer rates them in.</p><p>The lettered dimensions in the table refer to the dimension drawing shown with this product.</p><h3>Manufacturer's data</h3><ul><li>Stamping / casting / welding.</li></ul><h3>Choosing a size</h3><p>Rate the block for the load it actually sees: with the rope turned through 180° it carries about twice the line pull. Match the sheave to the rope diameter.</p><h3>Ordering</h3><p>Quote the Indus part number from the size table, or send the size and rating you need. Each consignment ships with the manufacturer's test certificate; say on the RFQ if your site needs anything more.</p>",
+   "descriptionShort": "Stainless Steel Double Wheel Swivel Pulley Block, in 3 sizes, 25 mm to 50 mm. Load rating on request. Indus part numbers.",
+   "descriptionLong": "<p>Snatch blocks and pulley blocks change the direction of a rope or multiply a line pull. Type 304 or type 316 stainless steel, polished / electrophoretic coating.</p><h3>Sizes</h3><p>3 sizes, 25 mm to 50 mm. Every size has its own Indus part number in the table below.</p><p><strong>No load rating is published for this range.</strong> Tell us the duty and we will confirm the rating with the quotation. Do not use it to lift until you have that rating in writing.</p><p>The lettered dimensions in the table refer to the dimension drawing shown with this product.</p><h3>Manufacturer's data</h3><ul><li>Stamping / casting / welding.</li></ul><h3>Choosing a size</h3><p>Rate the block for the load it actually sees: with the rope turned through 180° it carries about twice the line pull. Match the sheave to the rope diameter.</p><h3>Ordering</h3><p>Quote the Indus part number from the size table, or send the size and rating you need.</p>",
    "seoTitle": "Stainless Steel Double Wheel Swivel Pulley Block",
-   "seoDescription": "Stainless Steel Double Wheel Swivel Pulley Block: 3 sizes, 0.15 kg to 0.4 kg. Indus part numbers. Request a quote.",
+   "seoDescription": "Stainless Steel Double Wheel Swivel Pulley Block: 3 sizes, 25 mm to 50 mm. Load rating on request. Indus part numbers. Request a quote.",
    "faqs": [
     {
      "question": "What sizes does the stainless steel double wheel swivel pulley block come in?",
-     "answer": "3 sizes, 0.15 kg to 0.4 kg. The size table lists each one with its Indus part number, ratings and dimensions."
+     "answer": "3 sizes, 25 mm to 50 mm. The size table lists each one with its Indus part number and dimensions."
     },
     {
      "question": "What is the working load limit?",
-     "answer": "0.15 to 0.4 kg, depending on size, as the manufacturer rates it. The WLL is the most the part may carry in service; proof and breaking loads are test figures and never working limits."
-    },
-    {
-     "question": "Can a snatch block be used for lifting?",
-     "answer": "Yes, within its rated load — but the load on the block is not the load on the rope. With the rope turned through 180° the block carries about twice the line pull, so rate the block, its hook or shackle and its anchor point for that."
-    },
-    {
-     "question": "Do the parts come with a test certificate?",
-     "answer": "Yes. Each consignment ships with the manufacturer's test certificate. For third-party certification or witnessed proof testing, say so on the RFQ."
+     "answer": "No load rating is published for this range. Tell us the duty and we will confirm the rating in writing with the quotation; do not lift with it until you have that."
     }
    ],
    "specs": [
@@ -130583,27 +130458,18 @@
     {
      "group": "Dimensions",
      "label": "Size range",
-     "value": "0.15 kg to 0.4 kg",
+     "value": "25 mm to 50 mm",
      "unit": null,
      "position": 1,
      "isFilterable": true,
      "templateKey": "size_range"
     },
     {
-     "group": "Performance",
-     "label": "Working load limit",
-     "value": "0.15 to 0.4 kg",
-     "unit": null,
-     "position": 2,
-     "isFilterable": true,
-     "templateKey": "wll_range"
-    },
-    {
      "group": "Construction",
      "label": "Material",
      "value": "Type 304 or type 316 stainless steel",
      "unit": null,
-     "position": 3,
+     "position": 2,
      "isFilterable": true,
      "templateKey": "material"
     },
@@ -130612,7 +130478,7 @@
      "label": "Finish",
      "value": "Polished / electrophoretic coating",
      "unit": null,
-     "position": 4,
+     "position": 3,
      "isFilterable": true,
      "templateKey": "finish"
     },
@@ -130621,18 +130487,9 @@
      "label": "Sizes",
      "value": "3",
      "unit": null,
-     "position": 5,
+     "position": 4,
      "isFilterable": false,
      "templateKey": "sizes_count"
-    },
-    {
-     "group": "Compliance",
-     "label": "Certification",
-     "value": "Manufacturer's test certificate",
-     "unit": null,
-     "position": 6,
-     "isFilterable": false,
-     "templateKey": "certification"
     }
    ],
    "searchAliases": [
@@ -130652,12 +130509,11 @@
      "partNumber": "IH-LR-BP-SSDWSPB-0P15KG",
      "position": 0,
      "dimensions": {
-      "size": "0.15 kg",
+      "size": "25 mm",
       "ropeSize": "6 mm",
       "D": 25.0,
       "L": 83.0,
       "A": 15.0,
-      "wllKg": 0.15,
       "weightKg": 0.201
      }
     },
@@ -130665,12 +130521,11 @@
      "partNumber": "IH-LR-BP-SSDWSPB-0P25KG",
      "position": 1,
      "dimensions": {
-      "size": "0.25 kg",
+      "size": "32 mm",
       "ropeSize": "8 mm",
       "D": 32.0,
       "L": 97.0,
       "A": 16.0,
-      "wllKg": 0.25,
       "weightKg": 0.267
      }
     },
@@ -130678,12 +130533,11 @@
      "partNumber": "IH-LR-BP-SSDWSPB-0P4KG",
      "position": 2,
      "dimensions": {
-      "size": "0.4 kg",
+      "size": "50 mm",
       "ropeSize": "10 mm",
       "D": 50.0,
       "L": 127.0,
       "A": 20.0,
-      "wllKg": 0.4,
       "weightKg": 0.503
      }
     }

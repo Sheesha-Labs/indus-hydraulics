@@ -2,6 +2,7 @@ import Image from 'next/image'
 import type { FigureBlock } from '@indus/domain'
 import { mediaUrl } from '../../../lib/media'
 import type { EmbeddedFigure } from '../../../lib/blog-article'
+import FigureCaption from './FigureCaption'
 
 /**
  * An in-article photograph.
@@ -20,8 +21,16 @@ import type { EmbeddedFigure } from '../../../lib/blog-article'
  * `resolveBlogArticle` and handed in as `figuresById`.
  *
  * An id that no longer resolves renders nothing rather than a broken frame,
- * matching every other link and embed block on an article.
+ * matching every other link and embed block on an article. The caption is the
+ * block's own — never `Media.caption`, which holds provenance notes.
  */
+const ASPECT: Record<string, string> = {
+  '16/9': 'aspect-video',
+  '21/9': 'aspect-[21/9]',
+  '4/3': 'aspect-[4/3]',
+  '1/1': 'aspect-square',
+}
+
 export default function BlogFigureBlockView({
   block,
   figuresById,
@@ -32,18 +41,11 @@ export default function BlogFigureBlockView({
   const figure = block.imageId ? figuresById.get(block.imageId) : undefined
   if (!figure) return null
 
-  const aspect: Record<string, string> = {
-    '16/9': 'aspect-video',
-    '21/9': 'aspect-[21/9]',
-    '4/3': 'aspect-[4/3]',
-    '1/1': 'aspect-square',
-  }
-
   return (
-    <figure className="my-8">
+    <figure className="my-2 min-w-0">
       <div
-        className={`relative overflow-hidden rounded-lg border border-ih-border bg-ih-surface-2 ${
-          aspect[block.aspectRatio ?? '16/9'] ?? 'aspect-video'
+        className={`relative overflow-hidden rounded-lg bg-ih-surface-3 ${
+          ASPECT[block.aspectRatio ?? '16/9'] ?? 'aspect-video'
         }`}
       >
         <Image
@@ -53,17 +55,10 @@ export default function BlogFigureBlockView({
           alt={figure.alt ?? block.caption}
           fill
           className="object-cover"
-          sizes="(max-width: 1100px) 100vw, 1100px"
+          sizes="(max-width: 760px) calc(100vw - 40px), (max-width: 1096px) calc(100vw - 64px), 1000px"
         />
       </div>
-      <figcaption className="mt-2.5 font-sans text-[13px] leading-[1.5] text-ih-muted">
-        {block.captionPrefix ? (
-          <strong className="mono mr-1.5 text-[11px] uppercase tracking-[0.1em] text-ih-ink">
-            {block.captionPrefix}
-          </strong>
-        ) : null}
-        {block.caption}
-      </figcaption>
+      <FigureCaption prefix={block.captionPrefix} caption={block.caption} />
     </figure>
   )
 }

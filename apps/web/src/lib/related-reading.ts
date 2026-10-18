@@ -1,5 +1,7 @@
 import { db } from '@indus/db'
 import type { RelatedArticle } from '../components/blog/RelatedReading'
+import type { BlogPostCardData } from '../components/blog/BlogPostCard'
+import { listBlogPosts } from './blog-posts'
 
 /**
  * Articles that reference a given product or catalogue category.
@@ -154,17 +156,33 @@ export async function getRelatedReadingForProduct(
  * More articles from the same blog topic, newest first, for the foot of an
  * article — skipping the article itself and anything it already links to in a
  * `related_articles` block, so the two lists never repeat each other.
+ *
+ * Card-shaped (`BlogPostCardData`, through the shared list query) because the
+ * article foot shows each with its hero photograph.
  */
 export async function getMoreFromBlogCategory(
   blogCategoryId: string,
   exclude: readonly string[],
   limit = 3,
-): Promise<RelatedArticle[]> {
+): Promise<BlogPostCardData[]> {
+  return listBlogPosts({ categoryId: blogCategoryId, excludeSlugs: exclude, take: limit })
+}
+
+/**
+ * Articles that link to an export market page — the return leg of the
+ * `page_link` blocks an article carries, shown on that market's page.
+ *
+ * There is no link table for page links (they are read from the body), so this
+ * filters on the JSON body. It runs once per market page render, against ~250
+ * posts, so a containment filter is acceptable where it would not be on a
+ * product page.
+ */
+export async function getArticlesForMarket(marketSlug: string, limit = 6): Promise<RelatedArticle[]> {
   const rows = await db.blogPost.findMany({
     where: {
-      categoryId: blogCategoryId,
       isPublished: true,
-      slug: { notIn: [...exclude] },
+      deletedAt: null,
+      bodyBlocks: { array_contains: [{ type: 'page_link', kind: 'market', slug: marketSlug }] },
     },
     orderBy: [{ publishedAt: 'desc' }],
     take: limit,

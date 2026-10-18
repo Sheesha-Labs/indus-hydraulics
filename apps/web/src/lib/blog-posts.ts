@@ -41,7 +41,8 @@ function toCard(post: ListRow): BlogPostCardData {
 export async function listBlogPosts(options: {
   categoryId?: string
   blogAuthorId?: string
-  excludeSlug?: string
+  /** Articles to leave out — the one being read, and any it already links to. */
+  excludeSlugs?: readonly string[]
   take?: number
   skip?: number
 }): Promise<BlogPostCardData[]> {
@@ -50,7 +51,9 @@ export async function listBlogPosts(options: {
       isPublished: true,
       ...(options.categoryId ? { categoryId: options.categoryId } : {}),
       ...(options.blogAuthorId ? { blogAuthorId: options.blogAuthorId } : {}),
-      ...(options.excludeSlug ? { slug: { not: options.excludeSlug } } : {}),
+      ...(options.excludeSlugs && options.excludeSlugs.length > 0
+        ? { slug: { notIn: [...options.excludeSlugs] } }
+        : {}),
     },
     select: LIST_SELECT,
     orderBy: { publishedAt: 'desc' },

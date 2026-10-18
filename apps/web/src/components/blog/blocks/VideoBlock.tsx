@@ -1,4 +1,5 @@
 import { youtubeVideoId, type VideoBlock } from '@indus/domain'
+import FigureCaption from './FigureCaption'
 import YouTubePlayer from './YouTubePlayer'
 
 /**
@@ -16,14 +17,18 @@ export default function VideoBlockView({ block }: { block: VideoBlock }) {
   if (!videoId) return null
 
   return (
-    <figure className="my-8">
+    <figure className="my-2 min-w-0">
       <div className="relative aspect-video overflow-hidden rounded-lg border border-ih-border bg-ih-ink">
         <YouTubePlayer videoId={videoId} title={block.title} />
       </div>
-      <figcaption className="mt-2.5 font-sans text-[13px] leading-[1.5] text-ih-muted">
-        <strong className="font-medium text-ih-ink">{block.title}</strong>
-        {block.caption ? <> — {block.caption}</> : null}
-      </figcaption>
+      <FigureCaption
+        caption={
+          <>
+            <strong className="font-medium text-ih-ink">{block.title}</strong>
+            {block.caption ? <> — {block.caption}</> : null}
+          </>
+        }
+      />
     </figure>
   )
 }

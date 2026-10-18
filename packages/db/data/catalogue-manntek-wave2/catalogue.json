@@ -1,0 +1,3060 @@
+{
+ "source": "MannTek website (manntek.se), configurator (configurator.manntek.se) and LNG Solutions brochure XB39, fetched 2026-10-17 — Wave 2",
+ "imageDir": "",
+ "brandSlug": "manntek",
+ "specTemplateSlug": "industrial-coupling-spec",
+ "categories": [
+  {
+   "slug": "lng-cryogenic-couplings",
+   "name": "LNG & Cryogenic Couplings",
+   "parentSlug": "industrial-hose-suppliers-uae",
+   "position": 35,
+   "shortDescription": "Dry cryogenic couplings, cryogenic breakaway couplings and powered emergency release couplings for LNG and liquid nitrogen, oxygen, argon and ethylene down to -196 °C: tank units, hose units and breakaways from DN 25 to DN 200.",
+   "seoTitle": "LNG & Cryogenic Couplings — Dry Break, Breakaway & ERC",
+   "seoDescription": "LNG and cryogenic couplings: MannTek DCC dry cryogenic couplings to ISO/TS 18683 and ISO 21593, CBC breakaways and PERC emergency release. Indus Hydraulics UAE.",
+   "focusKeyword": "lng couplings",
+   "bands": {
+    "hero": {
+     "intro": "Couplings for LNG bunkering, truck loading and liquid-gas transfer, built to work at -196 °C. A dry cryogenic coupling connects and disconnects the line with valves closing in both halves; a cryogenic breakaway or emergency release coupling separates it safely when a vessel drifts or a truck moves off while still connected."
+    },
+    "guidance": {
+     "eyebrow": "How to choose",
+     "heading": "Coupling, breakaway or emergency release",
+     "body": "Start with the dry cryogenic coupling (DCC): a tank unit on the fixed side and a hose unit on the hose or arm. Choose the DCC version to ISO/TS 18683 for existing installations and most land-based LNG work, or DCC ISO to ISO 21593 for ship-to-ship bunkering. Then protect the line. A breaking-bolt CBC separates at a set pull, at any angle (industrial) or on straight pull between hose strings (marine). A cable-release CBC-C suits high-pressure lines on weak piping. A PERC adds release by ESD signal or manual override, with breaking bolts as backup. Send us the medium, size, pressure and transfer layout and we will propose the set."
+    },
+    "faq": {
+     "heading": "LNG and cryogenic coupling questions",
+     "items": [
+      {
+       "q": "Which gases are these couplings for?",
+       "a": "Cryogenic liquefied gases such as LNG, nitrogen, oxygen, argon and ethylene, down to -196 °C. MannTek builds the DCC and CBC in stainless steel with PTFE seals."
+      },
+      {
+       "q": "What is the difference between ISO/TS 18683 and ISO 21593?",
+       "a": "ISO/TS 18683 is the earlier guideline for supplying LNG as fuel to ships and covers a wide range of LNG transfers. ISO 21593 is the specific standard for dry couplings in ship-to-ship bunkering. MannTek makes the DCC to both."
+      },
+      {
+       "q": "Breakaway or powered emergency release: which do I need?",
+       "a": "A breakaway releases only under excess pull. A powered emergency release coupling can also be released by the emergency shutdown system before the hose is loaded. Tell us the transfer layout and we will advise."
+      }
+     ]
+    }
+   }
+  },
+  {
+   "slug": "industrial-ball-valves",
+   "name": "Industrial Ball Valves",
+   "parentSlug": "valves-manifolds",
+   "position": 3,
+   "shortDescription": "Stainless steel, carbon steel and brass ball valves for process, utility and plant service, 1/4 in to 4 in — Worcester, Swagelok, Habonim, Warren, A-T Controls and more.",
+   "seoTitle": "Industrial Ball Valves — Stainless & Brass",
+   "seoDescription": "Industrial ball valves 1/4 in to 4 in: stainless CF8M, carbon steel and brass. Flowserve Worcester, Swagelok, Habonim, Warren, A-T Controls. Request a quote.",
+   "focusKeyword": "industrial ball valves"
+  },
+  {
+   "slug": "hose-swivel-joints",
+   "name": "Hose Swivel Joints",
+   "parentSlug": "industrial-hose-suppliers-uae",
+   "position": 36,
+   "shortDescription": "Swivel joints for industrial hose lines, loading arms and manifolds: free rotation between the hose and its coupling or fixed connection, so the hose does not twist. Single ball race 1\" to 4\" and heavy-duty double ball race 1\" to 10\".",
+   "seoTitle": "Hose Swivel Joints — Single & Double Ball Race",
+   "seoDescription": "Hose swivel joints for fuel, chemical and marine hose lines: MannTek single ball race 1\" to 4\" and heavy-duty double ball race 1\" to 10\". Indus Hydraulics, UAE.",
+   "focusKeyword": "hose swivel joint",
+   "bands": {
+    "hero": {
+     "intro": "A swivel joint lets a hose rotate where it meets its coupling, nozzle or fixed connection. It keeps the hose from twisting as couplings are turned and arms move, which lengthens hose life and makes heavy lines easier to handle."
+    },
+    "guidance": {
+     "eyebrow": "How to choose",
+     "heading": "Single or double ball race",
+     "body": "Use a single ball race swivel for standard duty, between a hose assembly and the equipment on its end, such as a dry disconnect hose unit or a nozzle. Use a heavy-duty double ball race swivel where the joint carries heavy side loads, between a hose assembly and a fixed point of a plant or pipe system. Then match the body to the medium: stainless steel for chemicals and foodstuffs, aluminium or brass for petroleum products. Send us the size, connections, medium and pressure."
+    },
+    "faq": {
+     "heading": "Hose swivel joint questions",
+     "items": [
+      {
+       "q": "Are these the same as hydraulic live swivels?",
+       "a": "No. Hydraulic live swivels are for high-pressure hydraulic circuits. These swivel joints are for industrial hose lines carrying fuel, chemicals and other liquids at up to 25 bar."
+      },
+      {
+       "q": "What pressure do the swivel joints take?",
+       "a": "MannTek publishes 16 to 25 bar, depending on size and material."
+      },
+      {
+       "q": "Which seals are available?",
+       "a": "FKM, NBR, EPDM, FFKM or PTFE, chosen for the medium and temperature."
+      }
+     ]
+    }
+   }
+  }
+ ],
+ "products": [
+  {
+   "sku": "IH-MNT-DCC-TU",
+   "slug": "manntek-dcc-dry-cryogenic-coupling-tank-unit",
+   "title": "MannTek DCC Dry Cryogenic Coupling for LNG, Tank Unit — 1\" to 8\"",
+   "category": "lng-cryogenic-couplings",
+   "focusKeyword": "dry cryogenic coupling tank unit",
+   "descriptionShort": "MannTek DCC tank unit: the fixed half of a dry cryogenic coupling for LNG, nitrogen, oxygen, argon and ethylene down to -196 °C, for tanks, tankers, containers and bunker manifolds. DCC to ISO/TS 18683 or DCC ISO to ISO 21593. From Indus Hydraulics, authorised MannTek distributor, UAE.",
+   "descriptionLong": "<p>The tank unit is the fixed half of a MannTek Dry Cryogenic Coupling (DCC). It has no swivel and is mounted as the filling or discharge connector on cryogenic storage tanks, tank trucks, rail tankers, containers and ship bunker manifolds. A DCC hose unit couples to it with a turning motion that opens the valves in both halves; turning back closes both valves before the halves separate, so the transfer ends with minimal product loss.</p><p>MannTek designs the DCC for cryogenic liquefied gases (LNG, nitrogen, oxygen, argon and ethylene) down to -196 °C. It uses the same bayonet principle and self-sealing valve design as MannTek's Dry Disconnect Couplings. Unlike a flanged or threaded joint, it needs no retightening during the cool-down phase. MannTek reports more than 10,000 connect and disconnect cycles in cryogenic testing.</p><h3>Two interface standards</h3><ul><li><strong>DCC</strong>, to ISO/TS 18683 (ASTM F3312): DN 25 to DN 150. MannTek recommends it for existing installations and for most land-based LNG work, and it covers a wider range of transfer jobs outside marine bunkering.</li><li><strong>DCC ISO</strong>, to ISO 21593: 1\" to 8\". ISO 21593 is the international standard for dry couplings in ship-to-ship LNG bunkering, written for cross-manufacturer compatibility at sea.</li></ul><p>Both versions are rows in the Sizes &amp; Part Numbers tab. Choose the one that matches the other half, or the standard your terminal or vessel specifies.</p><h3>Sizes and connections</h3><p>Sockets from Ø 56 mm (1\") to Ø 238 mm (6\"), with 8\" in the DCC ISO version. Connections are NPT thread or ANSI or EN flange. MannTek publishes flow capacity from 250 L/min at 1\" to 24,000 L/min at 8\".</p><h3>Construction</h3><ul><li>Body: stainless steel</li><li>Seals: PTFE</li><li>Service temperature: down to -196 °C</li><li>Working pressure: confirmed for the size and build with the quotation</li></ul><h3>Where it is used</h3><p>Container discharge; LNG bunkering truck-to-ship, ship-to-ship and terminal-to-ship; loading and unloading of tank trucks, rail tankers and ships; vapour recovery lines. MannTek also lists the DCC among its carbon capture solutions.</p><h3>Options and accessories</h3><p>MannTek builds the DCC tank unit with these options:</p><ul><li><strong>Colour coding:</strong> body, flange and handles in any colour, so each coupling is clearly matched to its medium.</li><li><strong>Stop before disconnect:</strong> if a valve in either half fails to seal, because of damage or a foreign body, a patented blocking function stops the halves being separated, so the operator is not exposed to the medium.</li><li><strong>Dust caps and dust plugs</strong> to keep dirt and water off the coupling faces.</li><li><strong>Vented dust and de-icing cap</strong> that leaves a clean, dry sealing face within minutes.</li></ul><p>Options for the hose unit are listed on its own page. Name the options you need when you ask for a quotation and we confirm the MannTek build.</p><p>Indus Hydraulics is an authorised MannTek distributor in the UAE and supplies MannTek couplings direct from MannTek in Sweden.</p><h3>How to order</h3><p>Send the size, the version (DCC to ISO/TS 18683 or DCC ISO to ISO 21593), the connection (NPT thread size, or flange standard and rating), the medium and its temperature, and list any options. We confirm the MannTek order code, price and lead time with the quotation.</p>",
+   "seoTitle": "MannTek DCC Dry Cryogenic Coupling Tank Unit for LNG",
+   "seoDescription": "MannTek DCC dry cryogenic tank unit for LNG and liquid gases to -196 °C, ISO/TS 18683 or ISO 21593 interface, stainless steel, 1\" to 8\".",
+   "faqs": [
+    {
+     "question": "Where is the DCC tank unit mounted?",
+     "answer": "On the fixed side of the transfer: the storage tank, the tank truck or rail tanker, the container or the ship's bunker manifold. It has no swivel; the swivel is in the hose unit."
+    },
+    {
+     "question": "What is the difference between DCC and DCC ISO?",
+     "answer": "They are built to different interface standards. DCC follows ISO/TS 18683 (ASTM F3312), covers DN 25 to DN 150 and is MannTek's recommendation for existing installations and most land-based LNG work. DCC ISO follows ISO 21593, the standard for ship-to-ship LNG bunkering couplings, and covers 1\" to 8\"."
+    },
+    {
+     "question": "Which gases can the DCC handle?",
+     "answer": "MannTek designs it for cryogenic liquefied gases such as LNG, nitrogen, oxygen, argon and ethylene, down to -196 °C, with a stainless steel body and PTFE seals."
+    },
+    {
+     "question": "Does the joint need retightening as it cools down?",
+     "answer": "No. That is one of the reasons to use a dry cryogenic coupling instead of a flanged or threaded joint on a transfer line that cycles between ambient and cryogenic temperature."
+    },
+    {
+     "question": "Will a MannTek DCC connect to a coupling from another maker?",
+     "answer": "Both versions follow published ISO interface standards, which are written for interchangeability. Send us the make, size and standard of the half on site and we will confirm compatibility before you order."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Coupling Family",
+     "value": "Dry Cryogenic Coupling",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "coupling_family"
+    },
+    {
+     "group": "Identification",
+     "label": "Coupling Type / Variant",
+     "value": "Tank unit (fixed half, no swivel)",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "coupling_type"
+    },
+    {
+     "group": "Configuration",
+     "label": "End A Configuration",
+     "value": "DCC bayonet interface to ISO/TS 18683, or DCC ISO interface to ISO 21593, with valve",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "end_a"
+    },
+    {
+     "group": "Configuration",
+     "label": "End B Configuration",
+     "value": "NPT thread, or ANSI / EN flange",
+     "unit": null,
+     "position": 3,
+     "isFilterable": true,
+     "templateKey": "end_b"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Size Range",
+     "value": "DCC DN 25 to DN 150; DCC ISO 1\" to 8\" (socket Ø 56 to 238 mm up to 6\")",
+     "unit": null,
+     "position": 4,
+     "isFilterable": true,
+     "templateKey": "size_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Materials Available",
+     "value": "Stainless steel",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "materials_available"
+    },
+    {
+     "group": "Construction",
+     "label": "Seal / Gasket",
+     "value": "PTFE",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "seal_or_gasket"
+    },
+    {
+     "group": "Compliance",
+     "label": "Applicable Standards",
+     "value": "ISO/TS 18683 (ASTM F3312) or ISO 21593, by version",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": "applicable_standards"
+    },
+    {
+     "group": "Identification",
+     "label": "Notes",
+     "value": "For LNG and cryogenic liquefied gases down to -196 °C. Working pressure and order code confirmed with the quotation.",
+     "unit": null,
+     "position": 8,
+     "isFilterable": false,
+     "templateKey": "notes"
+    },
+    {
+     "group": "Identification",
+     "label": "Manufacturer",
+     "value": "MannTek (Mann Teknik AB), Mariestad, Sweden",
+     "unit": null,
+     "position": 9,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Performance",
+     "label": "Flow capacity",
+     "value": "250 L/min (1\") to 24,000 L/min (8\"), as published by MannTek",
+     "unit": null,
+     "position": 10,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Performance",
+     "label": "Service temperature",
+     "value": "Down to -196 °C",
+     "unit": null,
+     "position": 11,
+     "isFilterable": false,
+     "templateKey": null
+    }
+   ],
+   "searchAliases": [
+    "dry cryogenic coupling",
+    "LNG dry break coupling",
+    "LNG bunkering coupling",
+    "cryogenic coupling",
+    "DCC tank unit",
+    "ISO 21593 coupling",
+    "ISO/TS 18683",
+    "ASTM F3312",
+    "LNG coupling",
+    "liquid nitrogen coupling",
+    "MannTek",
+    "Mann Tek",
+    "Mann Teknik"
+   ],
+   "images": [
+    {
+     "file": "manntek-dcc-iso-21593-hu-tu.jpg",
+     "alt": "MannTek DCC ISO 21593 flanged tank unit (right) and green-handled hose unit for LNG bunkering",
+     "caption": "MannTek website, Downloads > Product photos (fetched 2026-10-17). Maker's own photo."
+    },
+    {
+     "file": "manntek-dcc-hu-tu.jpg",
+     "alt": "MannTek DCC stainless flanged tank unit (right) beside a hose unit with ring handle and black grips",
+     "caption": "MannTek website, Downloads > Product photos (fetched 2026-10-17). Maker's own photo."
+    },
+    {
+     "file": "manntek-dcc2.jpg",
+     "alt": "Frosted LNG tank outlet with a MannTek DCC hose unit coupled to the tank unit during transfer",
+     "caption": "MannTek website, Downloads > Application photos (fetched 2026-10-17). Maker's own field photo."
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-MNT-DCC-TU-025",
+     "position": 0,
+     "dimensions": {
+      "bodySize": "Ø 56 mm",
+      "ports": "NPT",
+      "mount": "ANSI, EN",
+      "maxFlowLpm": 250,
+      "item": "DCC, ISO/TS 18683 interface. Body: stainless steel. E.g. LNG refuelling or vapour return lines"
+     },
+     "hoseInch": "1\" (DN 25)",
+     "hoseDn": null,
+     "pressureBar": null,
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "hoseDash": null
+    },
+    {
+     "partNumber": "IH-MNT-DCC-TU-050",
+     "position": 1,
+     "dimensions": {
+      "bodySize": "Ø 70 mm",
+      "ports": "NPT",
+      "mount": "ANSI, EN",
+      "maxFlowLpm": 900,
+      "item": "DCC, ISO/TS 18683 interface. Body: stainless steel. E.g. heavy-vehicle refuelling, tank truck and container cargo transfer"
+     },
+     "hoseInch": "2\" (DN 50)",
+     "hoseDn": null,
+     "pressureBar": null,
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "hoseDash": null
+    },
+    {
+     "partNumber": "IH-MNT-DCC-TU-065",
+     "position": 2,
+     "dimensions": {
+      "bodySize": "Ø 105 mm",
+      "ports": "NPT",
+      "mount": "ANSI, EN",
+      "maxFlowLpm": 2100,
+      "item": "DCC, ISO/TS 18683 interface. Body: stainless steel. E.g. tank trucks, containers, smaller truck-to-ship or shore-to-ship bunkering"
+     },
+     "hoseInch": "2-1/2\" (DN 65)",
+     "hoseDn": null,
+     "pressureBar": null,
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "hoseDash": null
+    },
+    {
+     "partNumber": "IH-MNT-DCC-TU-080",
+     "position": 3,
+     "dimensions": {
+      "bodySize": "Ø 119 mm",
+      "ports": "NPT",
+      "mount": "ANSI, EN",
+      "maxFlowLpm": 2800,
+      "item": "DCC, ISO/TS 18683 interface. Body: stainless steel. E.g. tank trucks, rail tankers, containers, smaller bunkering"
+     },
+     "hoseInch": "3\" (DN 80)",
+     "hoseDn": null,
+     "pressureBar": null,
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "hoseDash": null
+    },
+    {
+     "partNumber": "IH-MNT-DCC-TU-100",
+     "position": 4,
+     "dimensions": {
+      "bodySize": "Ø 164 mm",
+      "ports": "NPT",
+      "mount": "ANSI, EN",
+      "maxFlowLpm": 7000,
+      "item": "DCC, ISO/TS 18683 interface. Body: stainless steel. E.g. high-volume transfer, truck-to-ship, ship-to-ship, shore-to-ship"
+     },
+     "hoseInch": "4\" (DN 100)",
+     "hoseDn": null,
+     "pressureBar": null,
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "hoseDash": null
+    },
+    {
+     "partNumber": "IH-MNT-DCC-TU-150",
+     "position": 5,
+     "dimensions": {
+      "bodySize": "Ø 238 mm",
+      "ports": "NPT",
+      "mount": "ANSI, EN",
+      "maxFlowLpm": 14000,
+      "item": "DCC, ISO/TS 18683 interface. Body: stainless steel. E.g. marine bunkering, ship-to-ship or shore-to-ship cargo transfer"
+     },
+     "hoseInch": "6\" (DN 150)",
+     "hoseDn": null,
+     "pressureBar": null,
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "hoseDash": null
+    },
+    {
+     "partNumber": "IH-MNT-DCC-TU-ISO-025",
+     "position": 6,
+     "dimensions": {
+      "bodySize": "Ø 56 mm",
+      "ports": "NPT",
+      "mount": "ANSI, EN",
+      "maxFlowLpm": 250,
+      "item": "DCC ISO, ISO 21593 interface. Body: stainless steel"
+     },
+     "hoseInch": "1\" (DN 25)",
+     "hoseDn": null,
+     "pressureBar": null,
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "hoseDash": null
+    },
+    {
+     "partNumber": "IH-MNT-DCC-TU-ISO-050",
+     "position": 7,
+     "dimensions": {
+      "bodySize": "Ø 70 mm",
+      "ports": "NPT",
+      "mount": "ANSI, EN",
+      "maxFlowLpm": 900,
+      "item": "DCC ISO, ISO 21593 interface. Body: stainless steel"
+     },
+     "hoseInch": "2\" (DN 50)",
+     "hoseDn": null,
+     "pressureBar": null,
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "hoseDash": null
+    },
+    {
+     "partNumber": "IH-MNT-DCC-TU-ISO-065",
+     "position": 8,
+     "dimensions": {
+      "bodySize": "Ø 105 mm",
+      "ports": "NPT",
+      "mount": "ANSI, EN",
+      "maxFlowLpm": 2100,
+      "item": "DCC ISO, ISO 21593 interface. Body: stainless steel"
+     },
+     "hoseInch": "2-1/2\" (DN 65)",
+     "hoseDn": null,
+     "pressureBar": null,
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "hoseDash": null
+    },
+    {
+     "partNumber": "IH-MNT-DCC-TU-ISO-080",
+     "position": 9,
+     "dimensions": {
+      "bodySize": "Ø 119 mm",
+      "ports": "NPT",
+      "mount": "ANSI, EN",
+      "maxFlowLpm": 2800,
+      "item": "DCC ISO, ISO 21593 interface. Body: stainless steel"
+     },
+     "hoseInch": "3\" (DN 80)",
+     "hoseDn": null,
+     "pressureBar": null,
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "hoseDash": null
+    },
+    {
+     "partNumber": "IH-MNT-DCC-TU-ISO-100",
+     "position": 10,
+     "dimensions": {
+      "bodySize": "Ø 164 mm",
+      "ports": "NPT",
+      "mount": "ANSI, EN",
+      "maxFlowLpm": 7000,
+      "item": "DCC ISO, ISO 21593 interface. Body: stainless steel"
+     },
+     "hoseInch": "4\" (DN 100)",
+     "hoseDn": null,
+     "pressureBar": null,
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "hoseDash": null
+    },
+    {
+     "partNumber": "IH-MNT-DCC-TU-ISO-150",
+     "position": 11,
+     "dimensions": {
+      "bodySize": "Ø 238 mm",
+      "ports": "NPT",
+      "mount": "ANSI, EN",
+      "maxFlowLpm": 14000,
+      "item": "DCC ISO, ISO 21593 interface. Body: stainless steel"
+     },
+     "hoseInch": "6\" (DN 150)",
+     "hoseDn": null,
+     "pressureBar": null,
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "hoseDash": null
+    },
+    {
+     "partNumber": "IH-MNT-DCC-TU-ISO-200",
+     "position": 12,
+     "dimensions": {
+      "ports": "NPT",
+      "mount": "ANSI, EN",
+      "maxFlowLpm": 24000,
+      "item": "DCC ISO, ISO 21593 interface. Body: stainless steel"
+     },
+     "hoseInch": "8\" (DN 200)",
+     "hoseDn": null,
+     "pressureBar": null,
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "hoseDash": null
+    }
+   ],
+   "crossReferences": []
+  },
+  {
+   "sku": "IH-MNT-DCC-HU",
+   "slug": "manntek-dcc-dry-cryogenic-coupling-hose-unit",
+   "title": "MannTek DCC Dry Cryogenic Coupling for LNG, Hose Unit — 1\" to 8\"",
+   "category": "lng-cryogenic-couplings",
+   "focusKeyword": "dry cryogenic coupling hose unit",
+   "descriptionShort": "MannTek DCC hose unit: the moving half of a dry cryogenic coupling, with integrated swivel and handles, for LNG and liquid-gas hoses and loading arms down to -196 °C. DCC to ISO/TS 18683 or DCC ISO to ISO 21593. From Indus Hydraulics, authorised MannTek distributor, UAE.",
+   "descriptionLong": "<p>The hose unit is the moving half of a MannTek Dry Cryogenic Coupling (DCC). It has an integrated swivel and handles and is fitted to hose assemblies and loading arms for temporary connection between a storage tank and a mobile transport unit. Push and turn, and the valves in both halves open for free flow; turn and pull, and both close before the coupling separates. The valve cannot be opened until the unit is coupled.</p><p>MannTek designs the DCC for cryogenic liquefied gases (LNG, nitrogen, oxygen, argon and ethylene) down to -196 °C. It uses the same bayonet principle and self-sealing valve design as MannTek's Dry Disconnect Couplings. Unlike a flanged or threaded joint, it needs no retightening during the cool-down phase. MannTek reports more than 10,000 connect and disconnect cycles in cryogenic testing.</p><h3>Two interface standards</h3><ul><li><strong>DCC</strong>, to ISO/TS 18683 (ASTM F3312): DN 25 to DN 150. MannTek recommends it for existing installations and for most land-based LNG work, and it covers a wider range of transfer jobs outside marine bunkering.</li><li><strong>DCC ISO</strong>, to ISO 21593: 1\" to 8\". ISO 21593 is the international standard for dry couplings in ship-to-ship LNG bunkering, written for cross-manufacturer compatibility at sea.</li></ul><p>Both versions are rows in the Sizes &amp; Part Numbers tab. Choose the one that matches the other half, or the standard your terminal or vessel specifies.</p><h3>Sizes and connections</h3><p>Sockets from Ø 56 mm (1\") to Ø 238 mm (6\"), with 8\" in the DCC ISO version. Connections are NPT thread or ANSI or EN flange. MannTek publishes flow capacity from 250 L/min at 1\" to 24,000 L/min at 8\".</p><h3>Construction</h3><ul><li>Body: stainless steel, weight optimised</li><li>Seals: PTFE</li><li>Integrated swivel, so the hose does not twist as the coupling is turned</li><li>Powerful handle, with alternatives for specific uses</li><li>Inner cam curve, protected from external impact; serviced without special tools</li><li>Service temperature down to -196 °C; working pressure confirmed with the quotation</li></ul><h3>Where it is used</h3><p>Container discharge; LNG bunkering truck-to-ship, ship-to-ship and terminal-to-ship; loading and unloading of tank trucks, rail tankers and ships; vapour recovery lines. MannTek also lists the DCC among its carbon capture solutions.</p><h3>Options and accessories</h3><p>MannTek builds the DCC hose unit with these options:</p><ul><li><strong>Colour coding:</strong> body, flange and handles in any colour, so each coupling is clearly matched to its medium.</li><li><strong>Stop before disconnect:</strong> if a valve in either half fails to seal, because of damage or a foreign body, a patented blocking function stops the halves being separated, so the operator is not exposed to the medium.</li><li><strong>Hose unit with electronic sensor:</strong> reports whether the valves are open or closed, to start the transfer or to feed a drive-away interlock, with no change to the tank unit.</li><li><strong>Locking device:</strong> once coupled, the connection locks automatically and cannot loosen by accident, with no change to the tank unit.</li><li><strong>Special handles</strong> made for the application.</li><li><strong>Dust caps and dust plugs</strong> to keep dirt and water off the coupling faces.</li><li><strong>Heated parking device</strong> that defrosts and dries the hose unit after an LNG transfer, so it is ready again within minutes.</li><li><strong>Parking device</strong> for safe, dedicated storage of the hose unit, with or without a parking sensor.</li></ul><p>Options for the tank unit are listed on its own page. Name the options you need when you ask for a quotation and we confirm the MannTek build.</p><p>Indus Hydraulics is an authorised MannTek distributor in the UAE and supplies MannTek couplings direct from MannTek in Sweden.</p><h3>How to order</h3><p>Send the size, the version (DCC to ISO/TS 18683 or DCC ISO to ISO 21593), the connection (NPT thread size, or flange standard and rating), the medium and its temperature, and list any options. We confirm the MannTek order code, price and lead time with the quotation.</p>",
+   "seoTitle": "MannTek DCC Dry Cryogenic Coupling Hose Unit for LNG",
+   "seoDescription": "MannTek DCC dry cryogenic hose unit with swivel for LNG and liquid gases to -196 °C, ISO/TS 18683 or ISO 21593 interface, 1\" to 8\". Authorised distributor, UAE.",
+   "faqs": [
+    {
+     "question": "Does the DCC hose unit swivel?",
+     "answer": "Yes. The hose unit has an integrated swivel so the hose does not twist as the coupling is turned to connect. The tank unit is the fixed half and has no swivel."
+    },
+    {
+     "question": "What is the difference between DCC and DCC ISO?",
+     "answer": "They are built to different interface standards. DCC follows ISO/TS 18683 (ASTM F3312), covers DN 25 to DN 150 and is MannTek's recommendation for existing installations and most land-based LNG work. DCC ISO follows ISO 21593, the standard for ship-to-ship LNG bunkering couplings, and covers 1\" to 8\"."
+    },
+    {
+     "question": "Which gases can the DCC handle?",
+     "answer": "MannTek designs it for cryogenic liquefied gases such as LNG, nitrogen, oxygen, argon and ethylene, down to -196 °C, with a stainless steel body and PTFE seals."
+    },
+    {
+     "question": "Does the joint need retightening as it cools down?",
+     "answer": "No. That is one of the reasons to use a dry cryogenic coupling instead of a flanged or threaded joint on a transfer line that cycles between ambient and cryogenic temperature."
+    },
+    {
+     "question": "Will a MannTek DCC connect to a coupling from another maker?",
+     "answer": "Both versions follow published ISO interface standards, which are written for interchangeability. Send us the make, size and standard of the half on site and we will confirm compatibility before you order."
+    },
+    {
+     "question": "How is the hose unit stored between transfers?",
+     "answer": "On a parking device. MannTek also makes a heated parking device that defrosts and dries the hose unit after an LNG transfer, so it is ready for the next one within minutes."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Coupling Family",
+     "value": "Dry Cryogenic Coupling",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "coupling_family"
+    },
+    {
+     "group": "Identification",
+     "label": "Coupling Type / Variant",
+     "value": "Hose unit (moving half, with swivel)",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "coupling_type"
+    },
+    {
+     "group": "Configuration",
+     "label": "End A Configuration",
+     "value": "DCC bayonet interface to ISO/TS 18683, or DCC ISO interface to ISO 21593, with valve",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "end_a"
+    },
+    {
+     "group": "Configuration",
+     "label": "End B Configuration",
+     "value": "NPT thread, or ANSI / EN flange",
+     "unit": null,
+     "position": 3,
+     "isFilterable": true,
+     "templateKey": "end_b"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Size Range",
+     "value": "DCC DN 25 to DN 150; DCC ISO 1\" to 8\" (socket Ø 56 to 238 mm up to 6\")",
+     "unit": null,
+     "position": 4,
+     "isFilterable": true,
+     "templateKey": "size_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Materials Available",
+     "value": "Stainless steel",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "materials_available"
+    },
+    {
+     "group": "Construction",
+     "label": "Seal / Gasket",
+     "value": "PTFE",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "seal_or_gasket"
+    },
+    {
+     "group": "Compliance",
+     "label": "Applicable Standards",
+     "value": "ISO/TS 18683 (ASTM F3312) or ISO 21593, by version",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": "applicable_standards"
+    },
+    {
+     "group": "Identification",
+     "label": "Notes",
+     "value": "For LNG and cryogenic liquefied gases down to -196 °C. Working pressure and order code confirmed with the quotation.",
+     "unit": null,
+     "position": 8,
+     "isFilterable": false,
+     "templateKey": "notes"
+    },
+    {
+     "group": "Identification",
+     "label": "Manufacturer",
+     "value": "MannTek (Mann Teknik AB), Mariestad, Sweden",
+     "unit": null,
+     "position": 9,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Performance",
+     "label": "Flow capacity",
+     "value": "250 L/min (1\") to 24,000 L/min (8\"), as published by MannTek",
+     "unit": null,
+     "position": 10,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Performance",
+     "label": "Service temperature",
+     "value": "Down to -196 °C",
+     "unit": null,
+     "position": 11,
+     "isFilterable": false,
+     "templateKey": null
+    }
+   ],
+   "searchAliases": [
+    "dry cryogenic coupling",
+    "LNG dry break coupling",
+    "LNG bunkering coupling",
+    "cryogenic coupler",
+    "DCC hose unit",
+    "ISO 21593 coupling",
+    "ISO/TS 18683",
+    "ASTM F3312",
+    "LNG coupling",
+    "liquid nitrogen coupling",
+    "MannTek",
+    "Mann Tek",
+    "Mann Teknik"
+   ],
+   "images": [
+    {
+     "file": "manntek-01-dry-cryo-huvudbild.jpg",
+     "alt": "MannTek DCC hose unit with green handles and female thread, beside a tank unit with tethered dust cap",
+     "caption": "MannTek website product page image (fetched 2026-10-17). Maker's own image."
+    },
+    {
+     "file": "manntek-dcc-isometric-view.jpg",
+     "alt": "MannTek DCC hose unit with green handles and its threaded tank unit, valve faces shown, isometric view",
+     "caption": "MannTek website, Downloads > Product photos (fetched 2026-10-17). Maker's own photo."
+    },
+    {
+     "file": "manntek-dcc.jpg",
+     "alt": "MannTek DCC dry cryogenic coupling range: hose units and tank units in several sizes, flanged and threaded",
+     "caption": "MannTek website, Downloads > Product photos (fetched 2026-10-17). Maker's own photo."
+    },
+    {
+     "file": "manntek-dcc3.jpg",
+     "alt": "Frost-covered MannTek DCC hose unit with green handles coupled on an LNG line, close-up in service",
+     "caption": "MannTek website, Downloads > Application photos (fetched 2026-10-17). Maker's own field photo."
+    },
+    {
+     "file": "manntek-dcc5.jpg",
+     "alt": "MannTek DCC hose unit on a frosted LNG transfer hose, connected at a process manifold",
+     "caption": "MannTek website, Downloads > Application photos (fetched 2026-10-17). Maker's own field photo."
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-MNT-DCC-HU-025",
+     "position": 0,
+     "dimensions": {
+      "bodySize": "Ø 56 mm",
+      "ports": "NPT",
+      "mount": "ANSI, EN",
+      "maxFlowLpm": 250,
+      "item": "DCC, ISO/TS 18683 interface. Body: stainless steel. E.g. LNG refuelling or vapour return lines"
+     },
+     "hoseInch": "1\" (DN 25)",
+     "hoseDn": null,
+     "pressureBar": null,
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "hoseDash": null
+    },
+    {
+     "partNumber": "IH-MNT-DCC-HU-050",
+     "position": 1,
+     "dimensions": {
+      "bodySize": "Ø 70 mm",
+      "ports": "NPT",
+      "mount": "ANSI, EN",
+      "maxFlowLpm": 900,
+      "item": "DCC, ISO/TS 18683 interface. Body: stainless steel. E.g. heavy-vehicle refuelling, tank truck and container cargo transfer"
+     },
+     "hoseInch": "2\" (DN 50)",
+     "hoseDn": null,
+     "pressureBar": null,
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "hoseDash": null
+    },
+    {
+     "partNumber": "IH-MNT-DCC-HU-065",
+     "position": 2,
+     "dimensions": {
+      "bodySize": "Ø 105 mm",
+      "ports": "NPT",
+      "mount": "ANSI, EN",
+      "maxFlowLpm": 2100,
+      "item": "DCC, ISO/TS 18683 interface. Body: stainless steel. E.g. tank trucks, containers, smaller truck-to-ship or shore-to-ship bunkering"
+     },
+     "hoseInch": "2-1/2\" (DN 65)",
+     "hoseDn": null,
+     "pressureBar": null,
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "hoseDash": null
+    },
+    {
+     "partNumber": "IH-MNT-DCC-HU-080",
+     "position": 3,
+     "dimensions": {
+      "bodySize": "Ø 119 mm",
+      "ports": "NPT",
+      "mount": "ANSI, EN",
+      "maxFlowLpm": 2800,
+      "item": "DCC, ISO/TS 18683 interface. Body: stainless steel. E.g. tank trucks, rail tankers, containers, smaller bunkering"
+     },
+     "hoseInch": "3\" (DN 80)",
+     "hoseDn": null,
+     "pressureBar": null,
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "hoseDash": null
+    },
+    {
+     "partNumber": "IH-MNT-DCC-HU-100",
+     "position": 4,
+     "dimensions": {
+      "bodySize": "Ø 164 mm",
+      "ports": "NPT",
+      "mount": "ANSI, EN",
+      "maxFlowLpm": 7000,
+      "item": "DCC, ISO/TS 18683 interface. Body: stainless steel. E.g. high-volume transfer, truck-to-ship, ship-to-ship, shore-to-ship"
+     },
+     "hoseInch": "4\" (DN 100)",
+     "hoseDn": null,
+     "pressureBar": null,
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "hoseDash": null
+    },
+    {
+     "partNumber": "IH-MNT-DCC-HU-150",
+     "position": 5,
+     "dimensions": {
+      "bodySize": "Ø 238 mm",
+      "ports": "NPT",
+      "mount": "ANSI, EN",
+      "maxFlowLpm": 14000,
+      "item": "DCC, ISO/TS 18683 interface. Body: stainless steel. E.g. marine bunkering, ship-to-ship or shore-to-ship cargo transfer"
+     },
+     "hoseInch": "6\" (DN 150)",
+     "hoseDn": null,
+     "pressureBar": null,
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "hoseDash": null
+    },
+    {
+     "partNumber": "IH-MNT-DCC-HU-ISO-025",
+     "position": 6,
+     "dimensions": {
+      "bodySize": "Ø 56 mm",
+      "ports": "NPT",
+      "mount": "ANSI, EN",
+      "maxFlowLpm": 250,
+      "item": "DCC ISO, ISO 21593 interface. Body: stainless steel"
+     },
+     "hoseInch": "1\" (DN 25)",
+     "hoseDn": null,
+     "pressureBar": null,
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "hoseDash": null
+    },
+    {
+     "partNumber": "IH-MNT-DCC-HU-ISO-050",
+     "position": 7,
+     "dimensions": {
+      "bodySize": "Ø 70 mm",
+      "ports": "NPT",
+      "mount": "ANSI, EN",
+      "maxFlowLpm": 900,
+      "item": "DCC ISO, ISO 21593 interface. Body: stainless steel"
+     },
+     "hoseInch": "2\" (DN 50)",
+     "hoseDn": null,
+     "pressureBar": null,
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "hoseDash": null
+    },
+    {
+     "partNumber": "IH-MNT-DCC-HU-ISO-065",
+     "position": 8,
+     "dimensions": {
+      "bodySize": "Ø 105 mm",
+      "ports": "NPT",
+      "mount": "ANSI, EN",
+      "maxFlowLpm": 2100,
+      "item": "DCC ISO, ISO 21593 interface. Body: stainless steel"
+     },
+     "hoseInch": "2-1/2\" (DN 65)",
+     "hoseDn": null,
+     "pressureBar": null,
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "hoseDash": null
+    },
+    {
+     "partNumber": "IH-MNT-DCC-HU-ISO-080",
+     "position": 9,
+     "dimensions": {
+      "bodySize": "Ø 119 mm",
+      "ports": "NPT",
+      "mount": "ANSI, EN",
+      "maxFlowLpm": 2800,
+      "item": "DCC ISO, ISO 21593 interface. Body: stainless steel"
+     },
+     "hoseInch": "3\" (DN 80)",
+     "hoseDn": null,
+     "pressureBar": null,
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "hoseDash": null
+    },
+    {
+     "partNumber": "IH-MNT-DCC-HU-ISO-100",
+     "position": 10,
+     "dimensions": {
+      "bodySize": "Ø 164 mm",
+      "ports": "NPT",
+      "mount": "ANSI, EN",
+      "maxFlowLpm": 7000,
+      "item": "DCC ISO, ISO 21593 interface. Body: stainless steel"
+     },
+     "hoseInch": "4\" (DN 100)",
+     "hoseDn": null,
+     "pressureBar": null,
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "hoseDash": null
+    },
+    {
+     "partNumber": "IH-MNT-DCC-HU-ISO-150",
+     "position": 11,
+     "dimensions": {
+      "bodySize": "Ø 238 mm",
+      "ports": "NPT",
+      "mount": "ANSI, EN",
+      "maxFlowLpm": 14000,
+      "item": "DCC ISO, ISO 21593 interface. Body: stainless steel"
+     },
+     "hoseInch": "6\" (DN 150)",
+     "hoseDn": null,
+     "pressureBar": null,
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "hoseDash": null
+    },
+    {
+     "partNumber": "IH-MNT-DCC-HU-ISO-200",
+     "position": 12,
+     "dimensions": {
+      "ports": "NPT",
+      "mount": "ANSI, EN",
+      "maxFlowLpm": 24000,
+      "item": "DCC ISO, ISO 21593 interface. Body: stainless steel"
+     },
+     "hoseInch": "8\" (DN 200)",
+     "hoseDn": null,
+     "pressureBar": null,
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "hoseDash": null
+    }
+   ],
+   "crossReferences": []
+  },
+  {
+   "sku": "IH-MNT-CBC",
+   "slug": "manntek-cbc-cryogenic-breakaway-coupling-breaking-bolt",
+   "title": "MannTek CBC Cryogenic Breakaway Coupling for LNG, Breaking-Bolt Type — DN 25 to DN 200",
+   "category": "lng-cryogenic-couplings",
+   "focusKeyword": "cryogenic breakaway coupling",
+   "descriptionShort": "MannTek CBC cryogenic breakaway coupling with breaking bolts: the weakest link in an LNG or liquid-gas hose line or loading arm, separating under excess pull with both valves closed. Industrial or marine version, DN 25 to DN 200, -196 °C, 25 bar. From Indus Hydraulics, authorised MannTek distributor, UAE.",
+   "descriptionLong": "<p>A cryogenic breakaway coupling protects an LNG or liquid-gas transfer line against drive-aways and pull-aways at terminals and loading points. The MannTek CBC is installed as the weakest link in the hose line or loading arm. It is held together by breaking bolts: when the pull on the line reaches a defined force the bolts break, the coupling separates and the poppet valves in both halves close at once, keeping the product in the hose and the pipe.</p><p>It is built for cryogenic liquefied gases such as LNG, nitrogen, oxygen, argon and ethylene, down to -196 °C, and has what MannTek describes as a unique ice-breaking function. The CBC is passive: it works independently of the shut-off safety system, needs no external power, and has no loose parts to lose after a release.</p><h3>Industrial or marine version</h3><ul><li><strong>Industrial:</strong> releases at any pull angle from 0 to 90°, straight or at an angle. Install it to at least one fixed point, for example at the tank truck or on the loading arm.</li><li><strong>Marine:</strong> releases on straight (axial) pull only. MannTek builds it with more resistance to torsion and bending loads, to prevent unwanted separation between two strings of hose.</li></ul><h3>Breaking load</h3><p>MannTek calculates the breaking load for each installation. The coupling withstands extreme side load and has a low breaking force, and MannTek states the breaking force is less dependent on line pressure. After activation one person can reset it on site in minutes, without special tools.</p><h3>Sizes and connections</h3><p>DN 25 (1\") to DN 200 (8\"). Inlet and outlet are chosen individually, in any combination: female or male NPT thread, flanges to EN, ANSI, TW or TTMA, or an integrated hose shank, so no nipples or reducers are needed. MannTek publishes flow capacity from 460 L/min at DN 25 to 24,200 L/min at DN 200, with high flow and low pressure drop.</p><h3>Construction</h3><ul><li>Body: stainless steel</li><li>Seals: engineered PTFE seals designed by MannTek</li><li>Working pressure: 25 bar (MannTek)</li><li>Service temperature: down to -196 °C</li><li>Poppet valve design, which avoids damaged valve seats and over-rotating flaps</li></ul><h3>Where it is used</h3><p>DN 25 for LNG refuelling and vapour return lines; DN 50 for heavy-vehicle refuelling and tank truck or container cargo; DN 65 to DN 100 for tank trucks, rail tankers, containers and truck-to-ship or shore-to-ship bunkering; DN 150 and DN 200 for marine bunkering and ship-to-ship or ship-to-shore transfer.</p><p>Indus Hydraulics is an authorised MannTek distributor in the UAE and supplies MannTek couplings direct from MannTek in Sweden.</p><h3>How to order</h3><p>Send the size, the version (industrial or marine), the inlet and outlet connections, the medium and how the line is installed, so MannTek can calculate the breaking load. We confirm the MannTek order code, price and lead time with the quotation.</p>",
+   "seoTitle": "MannTek CBC Cryogenic Breakaway Coupling for LNG, DN 25–200",
+   "seoDescription": "MannTek CBC breaking-bolt cryogenic breakaway coupling for LNG to -196 °C, industrial (0 to 90°) or marine (axial pull), DN 25 to DN 200, 25 bar.",
+   "faqs": [
+    {
+     "question": "Industrial or marine version: which do I need?",
+     "answer": "Use the industrial version where the coupling is fixed to one point, such as a truck or loading arm, and may be pulled at any angle; it releases from 0 to 90°. Use the marine version between two hose strings; it releases only on straight pull and resists torsion and bending."
+    },
+    {
+     "question": "What is the difference between the CBC and the SBC?",
+     "answer": "The CBC is MannTek's breakaway for cryogenic liquefied gases down to -196 °C, in stainless steel with PTFE seals. The SBC is the breakaway for fuels, chemicals and LPG, with a wider choice of body materials and seals."
+    },
+    {
+     "question": "How is the breaking load set?",
+     "answer": "MannTek calculates it for each installation. Send us the hose size and length, the operating pressure, the medium and how the line is fixed."
+    },
+    {
+     "question": "What happens after it releases?",
+     "answer": "Both halves close their valves as they separate, so the product stays in the hose and the pipe. One person can reset the coupling on site in minutes without special tools."
+    },
+    {
+     "question": "Is there a version that can be released remotely?",
+     "answer": "Yes. The PERC (Powered Emergency Release Coupling) uses the same breaking-bolt design and adds a nitrogen release triggered by an ESD signal or manual override. A cable-release CBC-C is also available. Both are listed separately."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Coupling Family",
+     "value": "Cryogenic Breakaway Coupling",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "coupling_family"
+    },
+    {
+     "group": "Identification",
+     "label": "Coupling Type / Variant",
+     "value": "Breaking-bolt type, industrial (0 to 90°) or marine (axial pull)",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "coupling_type"
+    },
+    {
+     "group": "Configuration",
+     "label": "End A Configuration",
+     "value": "Female or male NPT thread, EN / ANSI / TW / TTMA flange or hose shank (chosen per side)",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "end_a"
+    },
+    {
+     "group": "Configuration",
+     "label": "End B Configuration",
+     "value": "Female or male NPT thread, EN / ANSI / TW / TTMA flange or hose shank (chosen per side)",
+     "unit": null,
+     "position": 3,
+     "isFilterable": true,
+     "templateKey": "end_b"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Size Range",
+     "value": "DN 25 (1\") to DN 200 (8\")",
+     "unit": null,
+     "position": 4,
+     "isFilterable": true,
+     "templateKey": "size_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Materials Available",
+     "value": "Stainless steel",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "materials_available"
+    },
+    {
+     "group": "Performance",
+     "label": "Working Pressure",
+     "value": "25 bar (MannTek)",
+     "unit": null,
+     "position": 6,
+     "isFilterable": true,
+     "templateKey": "working_pressure"
+    },
+    {
+     "group": "Construction",
+     "label": "Seal / Gasket",
+     "value": "PTFE",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": "seal_or_gasket"
+    },
+    {
+     "group": "Identification",
+     "label": "Notes",
+     "value": "For LNG and cryogenic liquefied gases down to -196 °C. Breaking load calculated by MannTek for each installation.",
+     "unit": null,
+     "position": 8,
+     "isFilterable": false,
+     "templateKey": "notes"
+    },
+    {
+     "group": "Identification",
+     "label": "Manufacturer",
+     "value": "MannTek (Mann Teknik AB), Mariestad, Sweden",
+     "unit": null,
+     "position": 9,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Performance",
+     "label": "Flow capacity",
+     "value": "460 L/min (DN 25) to 24,200 L/min (DN 200), as published by MannTek",
+     "unit": null,
+     "position": 10,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Performance",
+     "label": "Release",
+     "value": "Breaking bolts; both valves close on separation",
+     "unit": null,
+     "position": 11,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Performance",
+     "label": "Service temperature",
+     "value": "Down to -196 °C",
+     "unit": null,
+     "position": 12,
+     "isFilterable": false,
+     "templateKey": null
+    }
+   ],
+   "searchAliases": [
+    "cryogenic breakaway coupling",
+    "LNG breakaway coupling",
+    "LNG emergency release coupling",
+    "cryogenic breakaway",
+    "CBC",
+    "breaking pin breakaway",
+    "marine breakaway coupling LNG",
+    "MannTek",
+    "Mann Tek"
+   ],
+   "images": [
+    {
+     "file": "manntek-cbc.jpg",
+     "alt": "Four MannTek CBC breaking-bolt cryogenic breakaways in stainless steel, flanged and threaded, black rings",
+     "caption": "MannTek website, Downloads > Product photos (fetched 2026-10-17). Maker's own photo."
+    },
+    {
+     "file": "manntek-06-breaking-bolt.jpg",
+     "alt": "MannTek CBC threaded cryogenic breakaway with black breaking-bolt ring, close-up of the body",
+     "caption": "MannTek website product page image (fetched 2026-10-17). Maker's own image."
+    },
+    {
+     "file": "manntek-02-breaking-pin.jpg",
+     "alt": "Cutaway of a MannTek CBC breaking-pin breakaway, coupled and then separated with both valves closed",
+     "caption": "MannTek website product page image (fetched 2026-10-17). Maker's own image."
+    },
+    {
+     "file": "manntek-05-connections-cbc.jpg",
+     "alt": "MannTek CBC end-connection combinations: female and male thread and flange ends, six layouts",
+     "caption": "MannTek website product page image (fetched 2026-10-17). Maker's own image."
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-MNT-CBC-I-025",
+     "position": 0,
+     "dimensions": {
+      "ports": "Female or male NPT",
+      "mount": "EN, ANSI, TW, TTMA",
+      "maxFlowLpm": 460,
+      "item": "Industrial version, releases at any pull angle from 0 to 90°. Body: stainless steel"
+     },
+     "hoseInch": "1\" (DN 25)",
+     "hoseDn": null,
+     "pressureBar": 25,
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "hoseDash": null
+    },
+    {
+     "partNumber": "IH-MNT-CBC-M-025",
+     "position": 1,
+     "dimensions": {
+      "ports": "Female or male NPT",
+      "mount": "EN, ANSI, TW, TTMA",
+      "maxFlowLpm": 460,
+      "item": "Marine version, releases on straight (axial) pull only. Body: stainless steel"
+     },
+     "hoseInch": "1\" (DN 25)",
+     "hoseDn": null,
+     "pressureBar": 25,
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "hoseDash": null
+    },
+    {
+     "partNumber": "IH-MNT-CBC-I-050",
+     "position": 2,
+     "dimensions": {
+      "ports": "Female or male NPT",
+      "mount": "EN, ANSI, TW, TTMA",
+      "maxFlowLpm": 1650,
+      "item": "Industrial version, releases at any pull angle from 0 to 90°. Body: stainless steel"
+     },
+     "hoseInch": "2\" (DN 50)",
+     "hoseDn": null,
+     "pressureBar": 25,
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "hoseDash": null
+    },
+    {
+     "partNumber": "IH-MNT-CBC-M-050",
+     "position": 3,
+     "dimensions": {
+      "ports": "Female or male NPT",
+      "mount": "EN, ANSI, TW, TTMA",
+      "maxFlowLpm": 1650,
+      "item": "Marine version, releases on straight (axial) pull only. Body: stainless steel"
+     },
+     "hoseInch": "2\" (DN 50)",
+     "hoseDn": null,
+     "pressureBar": 25,
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "hoseDash": null
+    },
+    {
+     "partNumber": "IH-MNT-CBC-I-065",
+     "position": 4,
+     "dimensions": {
+      "ports": "Female or male NPT",
+      "mount": "EN, ANSI, TW, TTMA",
+      "maxFlowLpm": 2800,
+      "item": "Industrial version, releases at any pull angle from 0 to 90°. Body: stainless steel"
+     },
+     "hoseInch": "2-1/2\" (DN 65)",
+     "hoseDn": null,
+     "pressureBar": 25,
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "hoseDash": null
+    },
+    {
+     "partNumber": "IH-MNT-CBC-M-065",
+     "position": 5,
+     "dimensions": {
+      "ports": "Female or male NPT",
+      "mount": "EN, ANSI, TW, TTMA",
+      "maxFlowLpm": 2800,
+      "item": "Marine version, releases on straight (axial) pull only. Body: stainless steel"
+     },
+     "hoseInch": "2-1/2\" (DN 65)",
+     "hoseDn": null,
+     "pressureBar": 25,
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "hoseDash": null
+    },
+    {
+     "partNumber": "IH-MNT-CBC-I-080",
+     "position": 6,
+     "dimensions": {
+      "ports": "Female or male NPT",
+      "mount": "EN, ANSI, TW, TTMA",
+      "maxFlowLpm": 3850,
+      "item": "Industrial version, releases at any pull angle from 0 to 90°. Body: stainless steel"
+     },
+     "hoseInch": "3\" (DN 80)",
+     "hoseDn": null,
+     "pressureBar": 25,
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "hoseDash": null
+    },
+    {
+     "partNumber": "IH-MNT-CBC-M-080",
+     "position": 7,
+     "dimensions": {
+      "ports": "Female or male NPT",
+      "mount": "EN, ANSI, TW, TTMA",
+      "maxFlowLpm": 3850,
+      "item": "Marine version, releases on straight (axial) pull only. Body: stainless steel"
+     },
+     "hoseInch": "3\" (DN 80)",
+     "hoseDn": null,
+     "pressureBar": 25,
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "hoseDash": null
+    },
+    {
+     "partNumber": "IH-MNT-CBC-I-100",
+     "position": 8,
+     "dimensions": {
+      "ports": "Female or male NPT",
+      "mount": "EN, ANSI, TW, TTMA",
+      "maxFlowLpm": 6500,
+      "item": "Industrial version, releases at any pull angle from 0 to 90°. Body: stainless steel"
+     },
+     "hoseInch": "4\" (DN 100)",
+     "hoseDn": null,
+     "pressureBar": 25,
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "hoseDash": null
+    },
+    {
+     "partNumber": "IH-MNT-CBC-M-100",
+     "position": 9,
+     "dimensions": {
+      "ports": "Female or male NPT",
+      "mount": "EN, ANSI, TW, TTMA",
+      "maxFlowLpm": 6500,
+      "item": "Marine version, releases on straight (axial) pull only. Body: stainless steel"
+     },
+     "hoseInch": "4\" (DN 100)",
+     "hoseDn": null,
+     "pressureBar": 25,
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "hoseDash": null
+    },
+    {
+     "partNumber": "IH-MNT-CBC-I-150",
+     "position": 10,
+     "dimensions": {
+      "ports": "Female or male NPT",
+      "mount": "EN, ANSI, TW, TTMA",
+      "maxFlowLpm": 14400,
+      "item": "Industrial version, releases at any pull angle from 0 to 90°. Body: stainless steel"
+     },
+     "hoseInch": "6\" (DN 150)",
+     "hoseDn": null,
+     "pressureBar": 25,
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "hoseDash": null
+    },
+    {
+     "partNumber": "IH-MNT-CBC-M-150",
+     "position": 11,
+     "dimensions": {
+      "ports": "Female or male NPT",
+      "mount": "EN, ANSI, TW, TTMA",
+      "maxFlowLpm": 14400,
+      "item": "Marine version, releases on straight (axial) pull only. Body: stainless steel"
+     },
+     "hoseInch": "6\" (DN 150)",
+     "hoseDn": null,
+     "pressureBar": 25,
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "hoseDash": null
+    },
+    {
+     "partNumber": "IH-MNT-CBC-I-200",
+     "position": 12,
+     "dimensions": {
+      "ports": "Female or male NPT",
+      "mount": "EN, ANSI, TW, TTMA",
+      "maxFlowLpm": 24200,
+      "item": "Industrial version, releases at any pull angle from 0 to 90°. Body: stainless steel"
+     },
+     "hoseInch": "8\" (DN 200)",
+     "hoseDn": null,
+     "pressureBar": 25,
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "hoseDash": null
+    },
+    {
+     "partNumber": "IH-MNT-CBC-M-200",
+     "position": 13,
+     "dimensions": {
+      "ports": "Female or male NPT",
+      "mount": "EN, ANSI, TW, TTMA",
+      "maxFlowLpm": 24200,
+      "item": "Marine version, releases on straight (axial) pull only. Body: stainless steel"
+     },
+     "hoseInch": "8\" (DN 200)",
+     "hoseDn": null,
+     "pressureBar": 25,
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "hoseDash": null
+    }
+   ],
+   "crossReferences": []
+  },
+  {
+   "sku": "IH-MNT-CBCC",
+   "slug": "manntek-cbc-c-cable-release-cryogenic-breakaway-coupling",
+   "title": "MannTek CBC-C Cable-Release Cryogenic Breakaway Coupling for LNG — DN 50 to DN 150",
+   "category": "lng-cryogenic-couplings",
+   "focusKeyword": "cable release cryogenic breakaway coupling",
+   "descriptionShort": "MannTek CBC-C cryogenic breakaway coupling released by cable rather than breaking bolts, for LNG and liquid-gas lines with high operating pressure and a weak piping structure. Both valves close on release. DN 50 to DN 150, -196 °C. From Indus Hydraulics, authorised MannTek distributor, UAE.",
+   "descriptionLong": "<p>The CBC-C is MannTek's cable-release cryogenic breakaway coupling. Like the breaking-bolt CBC it protects LNG and liquid-gas hose assemblies against excessive load, but instead of breaking bolts it has a clamp system and an external collar with an attached cable. When the cable pulls, the clamp releases. MannTek recommends it for transfer systems that combine a high operating pressure with a weak piping structure, where the pull needed to break bolts would load the pipework more than it can take.</p><h3>How it works</h3><p>The coupling consists of two halves, each with its own valve. In service the halves are clamped together and the valves held open. After an emergency disconnection the coupling separates and both valves close immediately, so the line is shut off on both sides of the break.</p><h3>Sizes and construction</h3><ul><li>Sizes listed: DN 50, DN 63, DN 80, DN 100 and DN 150. MannTek's product page gives 2\" to 8\" for the cable release type, so ask if you need a size not listed.</li><li>Body: stainless steel; seals: PTFE</li><li>Working pressure: 25 bar (MannTek); service temperature down to -196 °C</li><li>Inlet and outlet connections chosen individually: thread, flange or hose shank</li></ul><h3>Choosing between CBC, CBC-C and PERC</h3><p>Choose the breaking-bolt CBC where the line and its supports can carry the release force; the CBC-C where they cannot, or where the release should be triggered by cable from a fixed point; and the PERC where the release must also be triggered remotely by the emergency shutdown system. Send us the line pressure, size and layout and we will propose the type.</p><p>Indus Hydraulics is an authorised MannTek distributor in the UAE and supplies MannTek couplings direct from MannTek in Sweden.</p><h3>How to order</h3><p>Send the size, the inlet and outlet connections, the medium and line pressure, and describe where the release cable will be anchored. We confirm the MannTek order code, price and lead time with the quotation.</p>",
+   "seoTitle": "MannTek CBC-C Cable-Release Cryogenic Breakaway, DN 50–150",
+   "seoDescription": "MannTek CBC-C cable-release cryogenic breakaway coupling for LNG lines with high pressure on weak piping, DN 50 to DN 150, stainless steel, PTFE seals.",
+   "faqs": [
+    {
+     "question": "When is a cable-release breakaway better than breaking bolts?",
+     "answer": "When the line runs at high pressure on piping that cannot take the pull needed to break bolts. MannTek recommends the CBC-C for that combination."
+    },
+    {
+     "question": "How does the CBC-C release?",
+     "answer": "It has a clamp system and an external collar with an attached cable. Pulling the cable opens the clamp, the halves separate and the valve in each half closes immediately."
+    },
+    {
+     "question": "Which sizes are available?",
+     "answer": "MannTek's configurator lists DN 50, DN 63, DN 80, DN 100 and DN 150 for the CBC-C. Its product page gives 2\" to 8\" for the cable-release type, so ask if you need another size."
+    },
+    {
+     "question": "Is it suitable for liquid nitrogen as well as LNG?",
+     "answer": "MannTek builds its cryogenic breakaways for cryogenic liquefied gases such as LNG, nitrogen, oxygen, argon and ethylene, down to -196 °C. Tell us the medium and we will confirm the build."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Coupling Family",
+     "value": "Cryogenic Breakaway Coupling",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "coupling_family"
+    },
+    {
+     "group": "Identification",
+     "label": "Coupling Type / Variant",
+     "value": "Cable-release type (CBC-C)",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "coupling_type"
+    },
+    {
+     "group": "Configuration",
+     "label": "End A Configuration",
+     "value": "Thread, flange or hose shank (chosen per side)",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "end_a"
+    },
+    {
+     "group": "Configuration",
+     "label": "End B Configuration",
+     "value": "Thread, flange or hose shank (chosen per side)",
+     "unit": null,
+     "position": 3,
+     "isFilterable": true,
+     "templateKey": "end_b"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Size Range",
+     "value": "DN 50 to DN 150",
+     "unit": null,
+     "position": 4,
+     "isFilterable": true,
+     "templateKey": "size_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Materials Available",
+     "value": "Stainless steel",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "materials_available"
+    },
+    {
+     "group": "Performance",
+     "label": "Working Pressure",
+     "value": "25 bar (MannTek)",
+     "unit": null,
+     "position": 6,
+     "isFilterable": true,
+     "templateKey": "working_pressure"
+    },
+    {
+     "group": "Construction",
+     "label": "Seal / Gasket",
+     "value": "PTFE",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": "seal_or_gasket"
+    },
+    {
+     "group": "Identification",
+     "label": "Notes",
+     "value": "For LNG and cryogenic liquefied gases down to -196 °C. Connections and order code confirmed with the quotation.",
+     "unit": null,
+     "position": 8,
+     "isFilterable": false,
+     "templateKey": "notes"
+    },
+    {
+     "group": "Identification",
+     "label": "Manufacturer",
+     "value": "MannTek (Mann Teknik AB), Mariestad, Sweden",
+     "unit": null,
+     "position": 9,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Performance",
+     "label": "Release",
+     "value": "Pulled release cable opens the clamp; both valves close on separation",
+     "unit": null,
+     "position": 10,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Performance",
+     "label": "Service temperature",
+     "value": "Down to -196 °C",
+     "unit": null,
+     "position": 11,
+     "isFilterable": false,
+     "templateKey": null
+    }
+   ],
+   "searchAliases": [
+    "cable release breakaway LNG",
+    "CBC-C",
+    "cryogenic cable release coupling",
+    "LNG breakaway coupling",
+    "cryogenic emergency release coupling",
+    "MannTek",
+    "Mann Tek"
+   ],
+   "images": [
+    {
+     "file": "manntek-oc6100e44.jpg",
+     "alt": "MannTek CBC-C cable-release cryogenic breakaway with flanged ends, clamp collar and wire release bail",
+     "caption": "MannTek website, Downloads > Product photos (fetched 2026-10-17). Maker's own photo."
+    },
+    {
+     "file": "manntek-2-inch-cbc-4inch-cable-release.jpg",
+     "alt": "MannTek 4\" CBC-C cable-release breakaway (left) next to a 2\" threaded breaking-bolt CBC",
+     "caption": "MannTek website, Downloads > Product photos (fetched 2026-10-17). Maker's own photo."
+    },
+    {
+     "file": "manntek-03-in-service-1.jpg",
+     "alt": "Cutaway of MannTek CBC-C cable-release breakaway in service, halves clamped with the release cable",
+     "caption": "MannTek website product page image (fetched 2026-10-17). Maker's own image."
+    },
+    {
+     "file": "manntek-04-released-1.jpg",
+     "alt": "Cutaway of MannTek CBC-C after cable release, halves separated and both valves closed",
+     "caption": "MannTek website product page image (fetched 2026-10-17). Maker's own image."
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-MNT-CBCC-050",
+     "position": 0,
+     "dimensions": {
+      "item": "Cable-release type. Body: stainless steel"
+     },
+     "hoseInch": "DN 50",
+     "hoseDn": null,
+     "pressureBar": 25,
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "hoseDash": null
+    },
+    {
+     "partNumber": "IH-MNT-CBCC-063",
+     "position": 1,
+     "dimensions": {
+      "item": "Cable-release type. Body: stainless steel"
+     },
+     "hoseInch": "DN 63",
+     "hoseDn": null,
+     "pressureBar": 25,
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "hoseDash": null
+    },
+    {
+     "partNumber": "IH-MNT-CBCC-080",
+     "position": 2,
+     "dimensions": {
+      "item": "Cable-release type. Body: stainless steel"
+     },
+     "hoseInch": "DN 80",
+     "hoseDn": null,
+     "pressureBar": 25,
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "hoseDash": null
+    },
+    {
+     "partNumber": "IH-MNT-CBCC-100",
+     "position": 3,
+     "dimensions": {
+      "item": "Cable-release type. Body: stainless steel"
+     },
+     "hoseInch": "DN 100",
+     "hoseDn": null,
+     "pressureBar": 25,
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "hoseDash": null
+    },
+    {
+     "partNumber": "IH-MNT-CBCC-150",
+     "position": 4,
+     "dimensions": {
+      "item": "Cable-release type. Body: stainless steel"
+     },
+     "hoseInch": "DN 150",
+     "hoseDn": null,
+     "pressureBar": 25,
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "hoseDash": null
+    }
+   ],
+   "crossReferences": []
+  },
+  {
+   "sku": "IH-MNT-PERC",
+   "slug": "manntek-perc-powered-emergency-release-coupling",
+   "title": "MannTek PERC Powered Emergency Release Coupling for LNG Bunkering — 2-1/2\" to 8\"",
+   "category": "lng-cryogenic-couplings",
+   "focusKeyword": "powered emergency release coupling",
+   "descriptionShort": "MannTek PERC powered emergency release coupling for LNG bunkering and transfer: released by ESD signal, by manual override or, as a passive backup, by breaking bolts, with both valves closing. 2-1/2\" to 8\", nitrogen release. From Indus Hydraulics, authorised MannTek distributor, UAE.",
+   "descriptionLong": "<p>The MannTek Powered Emergency Release Coupling (PERC) is a breakaway coupling for LNG transfer that can also be released on command. It uses the well-proven breaking-bolt design of MannTek's cryogenic breakaways and adds a dedicated chamber, isolated from the transferred medium, into which high-pressure nitrogen is injected to release the coupling instantly. Both halves shut off as it separates, and the active release puts no strain on the transfer system or the manifolds.</p><h3>Three ways of release</h3><ol><li>By ESD signal from the ship or shore emergency shutdown system.</li><li>By manual override, independent of the electrical signal.</li><li>Passively, by breaking bolts designed to be the weakest point of the hose or manifold. If power is lost, the PERC still works as a passive breakaway coupling.</li></ol><h3>Control and release system</h3><p>The PERC is released and monitored by MannTek's HPN2 high-pressure nitrogen unit, which holds the complete control, monitoring and release system and uses a pilot pressure regulator to keep the system free from moisture and ice. Its PLC is programmed for each application under third-party supervision, monitors the whole bunkering or transfer operation and makes sure every step of the periodic test is carried out. MannTek states its SIL2 PLC LNG transfer systems have been assessed by DNV-GL and declared compliant to SIL2, developed in accordance with IEC 61508 and IEC 61511.</p><p>A Vessel Separation Device (VSD) can feed it: two wires shorter than the hose trip VSD 1, which signals ESD 1 to stop pumps and close ESD valves, and then VSD 2, which signals ESD 2 and releases the PERC through the HPN2 unit.</p><h3>Sizes and construction</h3><ul><li>2-1/2\" (DN 65) to 8\" (DN 200), with female or male NPT thread or EN, ANSI, TW or TTMA flanges, inlet and outlet chosen individually; no nipples or reducers needed</li><li>Flow capacity from 2,800 L/min at 2-1/2\" to 24,200 L/min at 8\" (MannTek)</li><li>Seals: PTFE; reliable poppet valve design; lightweight and compact, with the release built into the coupling</li><li>The nitrogen chamber protects the valve mechanism from dirt and moisture</li><li>Breaking load calculated for each installation; reset in minutes without special tools after activation</li></ul><h3>Where it is used</h3><p>LNG bunkering ship-to-ship, shore-to-ship and truck-to-ship, and LNG cargo transfer. MannTek also lists the PERC for ammonia, methanol and carbon capture transfer systems.</p><p>Indus Hydraulics is an authorised MannTek distributor in the UAE and supplies MannTek couplings direct from MannTek in Sweden.</p><h3>How to order</h3><p>Send the size, the inlet and outlet connections, the medium and line pressure, the transfer layout (ship-to-ship, shore-to-ship or truck-to-ship), and whether you need the HPN2 unit and a VSD with it. We confirm the MannTek order code, price and lead time with the quotation.</p>",
+   "seoTitle": "MannTek PERC Emergency Release Coupling, 2-1/2\" to 8\"",
+   "seoDescription": "MannTek PERC powered emergency release coupling for LNG bunkering: ESD, manual and breaking-bolt release, nitrogen actuated, 2-1/2\" to 8\".",
+   "faqs": [
+    {
+     "question": "How is a PERC different from a breakaway coupling?",
+     "answer": "A breakaway coupling only releases when the pull on the line reaches its breaking load. A PERC can also be released actively, by ESD signal or manual override, using high-pressure nitrogen, so the hose can be freed before it is under strain. Its breaking bolts remain as a passive backup."
+    },
+    {
+     "question": "What happens if power is lost during a transfer?",
+     "answer": "The PERC reverts to a passive breakaway: its breaking bolts are designed to be the weakest point of the hose or manifold, so it still separates under excess load with both valves closing."
+    },
+    {
+     "question": "Do I need the HPN2 unit?",
+     "answer": "The HPN2 is MannTek's dedicated release and monitoring system for the PERC and supplies the high-pressure nitrogen that releases it. Tell us how your transfer system is set up and we will quote the parts you need."
+    },
+    {
+     "question": "Is the PERC SIL rated?",
+     "answer": "MannTek states that its SIL2 PLC LNG transfer systems, including the PERC, DCC, HPN2 control system and ESD 1 and 2 functions, have been assessed by DNV-GL and declared compliant to SIL2."
+    },
+    {
+     "question": "Which sizes are available?",
+     "answer": "MannTek's technical data lists 2-1/2\", 3\", 4\", 6\" and 8\", with flow capacity from 2,800 to 24,200 L/min."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Coupling Family",
+     "value": "Powered Emergency Release Coupling (PERC)",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "coupling_family"
+    },
+    {
+     "group": "Identification",
+     "label": "Coupling Type / Variant",
+     "value": "Active release by nitrogen (ESD signal or manual override), passive breaking-bolt backup",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "coupling_type"
+    },
+    {
+     "group": "Configuration",
+     "label": "End A Configuration",
+     "value": "Female or male NPT thread, or EN / ANSI / TW / TTMA flange (chosen per side)",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "end_a"
+    },
+    {
+     "group": "Configuration",
+     "label": "End B Configuration",
+     "value": "Female or male NPT thread, or EN / ANSI / TW / TTMA flange (chosen per side)",
+     "unit": null,
+     "position": 3,
+     "isFilterable": true,
+     "templateKey": "end_b"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Size Range",
+     "value": "2-1/2\" (DN 65) to 8\" (DN 200)",
+     "unit": null,
+     "position": 4,
+     "isFilterable": true,
+     "templateKey": "size_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Seal / Gasket",
+     "value": "PTFE",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "seal_or_gasket"
+    },
+    {
+     "group": "Compliance",
+     "label": "Applicable Standards",
+     "value": "SIL2 system compliance stated by MannTek (IEC 61508, IEC 61511)",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "applicable_standards"
+    },
+    {
+     "group": "Identification",
+     "label": "Notes",
+     "value": "Released and monitored by the MannTek HPN2 nitrogen unit. Body, pressure and order code confirmed with the quotation.",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": "notes"
+    },
+    {
+     "group": "Identification",
+     "label": "Manufacturer",
+     "value": "MannTek (Mann Teknik AB), Mariestad, Sweden",
+     "unit": null,
+     "position": 8,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Performance",
+     "label": "Flow capacity",
+     "value": "2,800 L/min (2-1/2\") to 24,200 L/min (8\"), as published by MannTek",
+     "unit": null,
+     "position": 9,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Performance",
+     "label": "Release",
+     "value": "ESD signal, manual override, or breaking bolts; both valves close on separation",
+     "unit": null,
+     "position": 10,
+     "isFilterable": false,
+     "templateKey": null
+    }
+   ],
+   "searchAliases": [
+    "PERC",
+    "powered emergency release coupling",
+    "emergency release coupling",
+    "ERC LNG",
+    "LNG bunkering ERC",
+    "HPN2",
+    "LNG emergency release system",
+    "MannTek",
+    "Mann Tek"
+   ],
+   "images": [
+    {
+     "file": "manntek-perc.jpg",
+     "alt": "MannTek PERC powered emergency release coupling with flanged ends, black ring and nitrogen line",
+     "caption": "MannTek website, Downloads > Product photos (fetched 2026-10-17). Maker's own photo."
+    },
+    {
+     "file": "manntek-01-f0c7504-2-fix-scaled.jpg",
+     "alt": "MannTek PERC with threaded ends and braided nitrogen trigger hose fitted to the release chamber",
+     "caption": "MannTek website product page image (fetched 2026-10-17). Maker's own image."
+    },
+    {
+     "file": "manntek-02-perc1.jpg",
+     "alt": "Frost-covered MannTek PERC in an LNG line before release, halves still coupled",
+     "caption": "MannTek website product page image (fetched 2026-10-17). Maker's own image."
+    },
+    {
+     "file": "manntek-03-perc2.jpg",
+     "alt": "Frost-covered MannTek PERC at the moment of release, the two halves starting to part",
+     "caption": "MannTek website product page image (fetched 2026-10-17). Maker's own image."
+    },
+    {
+     "file": "manntek-04-perc3.jpg",
+     "alt": "MannTek PERC halves separated in a cloud of cold vapour after an emergency release",
+     "caption": "MannTek website product page image (fetched 2026-10-17). Maker's own image."
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-MNT-PERC-065",
+     "position": 0,
+     "dimensions": {
+      "ports": "Female or male NPT",
+      "mount": "EN, ANSI, TW, TTMA",
+      "maxFlowLpm": 2800,
+      "item": "Nitrogen-powered release with breaking-bolt backup. Seals: PTFE"
+     },
+     "hoseInch": "2-1/2\" (DN 65)",
+     "hoseDn": null,
+     "pressureBar": null,
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "hoseDash": null
+    },
+    {
+     "partNumber": "IH-MNT-PERC-080",
+     "position": 1,
+     "dimensions": {
+      "ports": "Female or male NPT",
+      "mount": "EN, ANSI, TW, TTMA",
+      "maxFlowLpm": 3850,
+      "item": "Nitrogen-powered release with breaking-bolt backup. Seals: PTFE"
+     },
+     "hoseInch": "3\" (DN 80)",
+     "hoseDn": null,
+     "pressureBar": null,
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "hoseDash": null
+    },
+    {
+     "partNumber": "IH-MNT-PERC-100",
+     "position": 2,
+     "dimensions": {
+      "ports": "Female or male NPT",
+      "mount": "EN, ANSI, TW, TTMA",
+      "maxFlowLpm": 6500,
+      "item": "Nitrogen-powered release with breaking-bolt backup. Seals: PTFE"
+     },
+     "hoseInch": "4\" (DN 100)",
+     "hoseDn": null,
+     "pressureBar": null,
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "hoseDash": null
+    },
+    {
+     "partNumber": "IH-MNT-PERC-150",
+     "position": 3,
+     "dimensions": {
+      "ports": "Female or male NPT",
+      "mount": "EN, ANSI, TW, TTMA",
+      "maxFlowLpm": 14400,
+      "item": "Nitrogen-powered release with breaking-bolt backup. Seals: PTFE"
+     },
+     "hoseInch": "6\" (DN 150)",
+     "hoseDn": null,
+     "pressureBar": null,
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "hoseDash": null
+    },
+    {
+     "partNumber": "IH-MNT-PERC-200",
+     "position": 4,
+     "dimensions": {
+      "ports": "Female or male NPT",
+      "mount": "EN, ANSI, TW, TTMA",
+      "maxFlowLpm": 24200,
+      "item": "Nitrogen-powered release with breaking-bolt backup. Seals: PTFE"
+     },
+     "hoseInch": "8\" (DN 200)",
+     "hoseDn": null,
+     "pressureBar": null,
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "hoseDash": null
+    }
+   ],
+   "crossReferences": []
+  },
+  {
+   "sku": "IH-MNT-FFBV-1W",
+   "slug": "manntek-full-flow-ball-valve-one-way",
+   "title": "MannTek Full Flow Ball Valve for Fuel Tankers, One-Way — 2\" to 4\"",
+   "category": "industrial-ball-valves",
+   "focusKeyword": "full flow ball valve",
+   "descriptionShort": "MannTek one-way Full Flow Ball Valve: an aluminium shut-off valve for petrol, diesel and jet fuel on tank trucks, aviation refuellers, mobile fuelling units and containers. Built for maximum flow, 2\" to 4\", 10 bar, manual or pneumatic. From Indus Hydraulics, authorised MannTek distributor, UAE.",
+   "descriptionLong": "<p>The MannTek Full Flow Ball Valve is a shut-off valve for fuel handling on tank trucks, aviation refuellers, mobile fuelling units and containers. The one-way valve has one inlet and one outlet and is designed for maximum flow and minimum pressure drop. It handles petrol (gasoline), diesel and jet fuel.</p><h3>Sizes</h3><p>2\" (DN 50), 3\" (DN 80) and 4\" (DN 100). Each size is listed with manual, pneumatic double-acting and pneumatic spring-return actuation in the Sizes &amp; Part Numbers tab.</p><h3>Construction</h3><ul><li>Body: aluminium, with no yellow parts (brass or copper alloys) in contact with the fuel</li><li>Seals: FKM or NBR, with low-temperature seals available</li><li>Working pressure: 10 bar (MannTek)</li><li>Threaded (BSP, NPT) or flanged (EN, ANSI, TW, TTMA) connections</li><li>Modular build: a valve body between bolted end flanges, so the connections are chosen per side</li></ul><h3>Actuation</h3><ul><li><strong>Manual</strong>, by hand lever</li><li><strong>Pneumatic, double acting</strong>: air opens and closes the valve</li><li><strong>Pneumatic, single acting with spring return</strong> (one-way valve): air opens it remotely and the spring closes it automatically, for example on loss of power</li></ul><p>A two-way version, with one inlet and two outlets, is listed separately.</p><p>Indus Hydraulics is an authorised MannTek distributor in the UAE and supplies MannTek valves direct from MannTek in Sweden.</p><h3>Documents</h3><p>MannTek's operating manual and service instruction for the Full Flow Ball Valve are attached in the Documents tab, as MannTek publishes them, for installation, operation and servicing. Download them before the coupling arrives so the site team has the procedure to hand.</p><h3>Where it fits</h3><p>MannTek builds the one-way valve as a single-direction shut-off valve for tank trucks, aviation refuellers, mobile fuelling units and containers: one inlet and one outlet, designed for maximum flow and minimum pressure drop.</p><h3>How to order</h3><p>Send the size, one-way or two-way, the actuation, the connection on each side (thread type and size, or flange standard and rating), the seal material and the fuel. We confirm the MannTek order code, price and lead time with the quotation.</p>",
+   "seoTitle": "MannTek Full Flow Ball Valve, One-Way, 2\" to 4\"",
+   "seoDescription": "MannTek one-way Full Flow Ball Valve for petrol, diesel and jet fuel on tankers and refuellers, aluminium, 10 bar, 2\" to 4\", manual or pneumatic.",
+   "faqs": [
+    {
+     "question": "Can the valve close automatically if air or power fails?",
+     "answer": "Yes, with the pneumatic single-acting actuator with spring return. Air opens the valve remotely and the spring closes it, for example in case of power failure."
+    },
+    {
+     "question": "Which fuels can the valve handle?",
+     "answer": "MannTek designs the Full Flow Ball Valve for petrol (gasoline), diesel and jet fuel, on tank trucks, aviation refuellers, mobile fuelling units and containers."
+    },
+    {
+     "question": "Why does 'no yellow parts' matter?",
+     "answer": "Yellow metals such as brass and copper alloys are kept away from jet fuel. The valve body is aluminium with no yellow parts in contact with the medium."
+    },
+    {
+     "question": "What pressure is the valve rated for?",
+     "answer": "MannTek publishes 10 bar working pressure for the Full Flow Ball Valve."
+    },
+    {
+     "question": "What is the difference between the one-way and two-way valve?",
+     "answer": "The one-way valve has one inlet and one outlet and shuts off the line. The two-way valve has one inlet and two outlets and directs the flow between them."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Coupling Family",
+     "value": "Full Flow Ball Valve",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "coupling_family"
+    },
+    {
+     "group": "Identification",
+     "label": "Coupling Type / Variant",
+     "value": "One-way shut-off valve (one inlet, one outlet)",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "coupling_type"
+    },
+    {
+     "group": "Configuration",
+     "label": "End A Configuration",
+     "value": "BSP or NPT thread, or EN / ANSI / TW / TTMA flange",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "end_a"
+    },
+    {
+     "group": "Configuration",
+     "label": "End B Configuration",
+     "value": "BSP or NPT thread, or EN / ANSI / TW / TTMA flange",
+     "unit": null,
+     "position": 3,
+     "isFilterable": true,
+     "templateKey": "end_b"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Size Range",
+     "value": "2\" (DN 50), 3\" (DN 80), 4\" (DN 100)",
+     "unit": null,
+     "position": 4,
+     "isFilterable": true,
+     "templateKey": "size_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Materials Available",
+     "value": "Aluminium (no yellow parts)",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "materials_available"
+    },
+    {
+     "group": "Performance",
+     "label": "Working Pressure",
+     "value": "10 bar (MannTek)",
+     "unit": null,
+     "position": 6,
+     "isFilterable": true,
+     "templateKey": "working_pressure"
+    },
+    {
+     "group": "Construction",
+     "label": "Seal / Gasket",
+     "value": "FKM, NBR; low-temperature seals available",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": "seal_or_gasket"
+    },
+    {
+     "group": "Identification",
+     "label": "Notes",
+     "value": "Manual, pneumatic double-acting or pneumatic spring-return actuation. Order code confirmed with the quotation.",
+     "unit": null,
+     "position": 8,
+     "isFilterable": false,
+     "templateKey": "notes"
+    },
+    {
+     "group": "Identification",
+     "label": "Manufacturer",
+     "value": "MannTek (Mann Teknik AB), Mariestad, Sweden",
+     "unit": null,
+     "position": 9,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Performance",
+     "label": "Flow",
+     "value": "Designed for maximum flow and minimum pressure drop (MannTek)",
+     "unit": null,
+     "position": 10,
+     "isFilterable": false,
+     "templateKey": null
+    }
+   ],
+   "searchAliases": [
+    "full flow ball valve",
+    "tanker ball valve",
+    "fuel truck ball valve",
+    "aviation refueller valve",
+    "aluminium ball valve",
+    "pneumatic ball valve fuel",
+    "MannTek",
+    "Mann Tek",
+    "Mann Full-Flow"
+   ],
+   "images": [
+    {
+     "file": "manntek-ffbv2inches.jpg",
+     "alt": "MannTek 2\" (DN 50) one-way Full Flow Ball Valve in aluminium with hand lever and threaded ends",
+     "caption": "MannTek website, Downloads > Product photos (fetched 2026-10-17). Maker's own photo."
+    },
+    {
+     "file": "manntek-02-skarmavbild-2020-12-15-kl-132220.jpg",
+     "alt": "MannTek one-way Full Flow Ball Valve: flanged and threaded builds, body and two flanges, pneumatic option",
+     "caption": "MannTek website product page image (fetched 2026-10-17). Maker's own image."
+    },
+    {
+     "file": "manntek-ffbv-manual-one-way-valves.jpg",
+     "alt": "MannTek one-way Full Flow Ball Valves, DN 50 and DN 80, aluminium with hand levers",
+     "caption": "Crop of a MannTek website product photo (fetched 2026-10-17), cropped to the MannTek part only. Maker's own photo."
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-MNT-FFBV-1W-M-050",
+     "position": 0,
+     "dimensions": {
+      "action": "Manual (hand lever)",
+      "ports": "BSP or NPT",
+      "mount": "EN, ANSI, TW, TTMA",
+      "item": "Body: aluminium (no yellow parts)"
+     },
+     "hoseInch": "2\" (DN 50)",
+     "hoseDn": null,
+     "pressureBar": 10,
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "hoseDash": null
+    },
+    {
+     "partNumber": "IH-MNT-FFBV-1W-DA-050",
+     "position": 1,
+     "dimensions": {
+      "action": "Pneumatic, double acting",
+      "ports": "BSP or NPT",
+      "mount": "EN, ANSI, TW, TTMA",
+      "item": "Body: aluminium (no yellow parts)"
+     },
+     "hoseInch": "2\" (DN 50)",
+     "hoseDn": null,
+     "pressureBar": 10,
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "hoseDash": null
+    },
+    {
+     "partNumber": "IH-MNT-FFBV-1W-SR-050",
+     "position": 2,
+     "dimensions": {
+      "action": "Pneumatic, single acting, spring return",
+      "ports": "BSP or NPT",
+      "mount": "EN, ANSI, TW, TTMA",
+      "item": "Body: aluminium (no yellow parts)"
+     },
+     "hoseInch": "2\" (DN 50)",
+     "hoseDn": null,
+     "pressureBar": 10,
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "hoseDash": null
+    },
+    {
+     "partNumber": "IH-MNT-FFBV-1W-M-080",
+     "position": 3,
+     "dimensions": {
+      "action": "Manual (hand lever)",
+      "ports": "BSP or NPT",
+      "mount": "EN, ANSI, TW, TTMA",
+      "item": "Body: aluminium (no yellow parts)"
+     },
+     "hoseInch": "3\" (DN 80)",
+     "hoseDn": null,
+     "pressureBar": 10,
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "hoseDash": null
+    },
+    {
+     "partNumber": "IH-MNT-FFBV-1W-DA-080",
+     "position": 4,
+     "dimensions": {
+      "action": "Pneumatic, double acting",
+      "ports": "BSP or NPT",
+      "mount": "EN, ANSI, TW, TTMA",
+      "item": "Body: aluminium (no yellow parts)"
+     },
+     "hoseInch": "3\" (DN 80)",
+     "hoseDn": null,
+     "pressureBar": 10,
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "hoseDash": null
+    },
+    {
+     "partNumber": "IH-MNT-FFBV-1W-SR-080",
+     "position": 5,
+     "dimensions": {
+      "action": "Pneumatic, single acting, spring return",
+      "ports": "BSP or NPT",
+      "mount": "EN, ANSI, TW, TTMA",
+      "item": "Body: aluminium (no yellow parts)"
+     },
+     "hoseInch": "3\" (DN 80)",
+     "hoseDn": null,
+     "pressureBar": 10,
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "hoseDash": null
+    },
+    {
+     "partNumber": "IH-MNT-FFBV-1W-M-100",
+     "position": 6,
+     "dimensions": {
+      "action": "Manual (hand lever)",
+      "ports": "BSP or NPT",
+      "mount": "EN, ANSI, TW, TTMA",
+      "item": "Body: aluminium (no yellow parts)"
+     },
+     "hoseInch": "4\" (DN 100)",
+     "hoseDn": null,
+     "pressureBar": 10,
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "hoseDash": null
+    },
+    {
+     "partNumber": "IH-MNT-FFBV-1W-DA-100",
+     "position": 7,
+     "dimensions": {
+      "action": "Pneumatic, double acting",
+      "ports": "BSP or NPT",
+      "mount": "EN, ANSI, TW, TTMA",
+      "item": "Body: aluminium (no yellow parts)"
+     },
+     "hoseInch": "4\" (DN 100)",
+     "hoseDn": null,
+     "pressureBar": 10,
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "hoseDash": null
+    },
+    {
+     "partNumber": "IH-MNT-FFBV-1W-SR-100",
+     "position": 8,
+     "dimensions": {
+      "action": "Pneumatic, single acting, spring return",
+      "ports": "BSP or NPT",
+      "mount": "EN, ANSI, TW, TTMA",
+      "item": "Body: aluminium (no yellow parts)"
+     },
+     "hoseInch": "4\" (DN 100)",
+     "hoseDn": null,
+     "pressureBar": 10,
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "hoseDash": null
+    }
+   ],
+   "crossReferences": []
+  },
+  {
+   "sku": "IH-MNT-FFBV-2W",
+   "slug": "manntek-full-flow-ball-valve-two-way",
+   "title": "MannTek Full Flow Ball Valve for Fuel Tankers, Two-Way — 2\" and 3\"",
+   "category": "industrial-ball-valves",
+   "focusKeyword": "two way full flow ball valve",
+   "descriptionShort": "MannTek two-way Full Flow Ball Valve: an aluminium directional control valve with one inlet and two outlets for petrol, diesel and jet fuel on tank trucks, refuellers and mobile fuelling units. 2\" and 3\", 10 bar, manual or pneumatic. From Indus Hydraulics, authorised MannTek distributor, UAE.",
+   "descriptionLong": "<p>The two-way MannTek Full Flow Ball Valve is a directional control valve for fuel handling on tank trucks, aviation refuellers, mobile fuelling units and containers. It has one inlet and two outlets, so one valve directs the flow to either line, and MannTek states that flow in both directions is possible. Like the one-way valve it is designed for maximum flow and minimum pressure drop with petrol (gasoline), diesel and jet fuel.</p><h3>Sizes</h3><p>2\" (DN 50) and 3\" (DN 80), each with manual or pneumatic double-acting actuation. Both are rows in the Sizes &amp; Part Numbers tab.</p><h3>Construction</h3><ul><li>Body: aluminium, with no yellow parts (brass or copper alloys) in contact with the fuel</li><li>Seals: FKM or NBR, with low-temperature seals available</li><li>Working pressure: 10 bar (MannTek)</li><li>Threaded (BSP, NPT) or flanged (EN, ANSI, TW, TTMA) connections</li><li>Modular build: a valve body with three bolted end flanges, so the connections are chosen per side</li></ul><h3>Actuation</h3><ul><li><strong>Manual</strong>, by hand lever</li><li><strong>Pneumatic, double acting</strong>: air opens and closes the valve</li></ul><p>The one-way shut-off version is listed separately.</p><p>Indus Hydraulics is an authorised MannTek distributor in the UAE and supplies MannTek valves direct from MannTek in Sweden.</p><h3>Documents</h3><p>MannTek's operating manual and service instruction for the Full Flow Ball Valve are attached in the Documents tab, as MannTek publishes them, for installation, operation and servicing. Download them before the coupling arrives so the site team has the procedure to hand.</p><h3>Where it fits</h3><p>MannTek builds the two-way valve as a directional control valve for tank trucks, aviation refuellers, mobile fuelling units and containers: one inlet and two outlets, so one valve switches the flow between two lines.</p><h3>How to order</h3><p>Send the size, one-way or two-way, the actuation, the connection on each side (thread type and size, or flange standard and rating), the seal material and the fuel. We confirm the MannTek order code, price and lead time with the quotation.</p>",
+   "seoTitle": "MannTek Two-Way Full Flow Ball Valve, 2\" and 3\"",
+   "seoDescription": "MannTek two-way Full Flow Ball Valve, one inlet and two outlets, for petrol, diesel and jet fuel on tankers and refuellers, aluminium, 10 bar, 2\" and 3\".",
+   "faqs": [
+    {
+     "question": "What does a two-way ball valve do?",
+     "answer": "It has one inlet and two outlets and directs the flow to one outlet or the other. MannTek states that media flow in both directions is possible."
+    },
+    {
+     "question": "Which fuels can the valve handle?",
+     "answer": "MannTek designs the Full Flow Ball Valve for petrol (gasoline), diesel and jet fuel, on tank trucks, aviation refuellers, mobile fuelling units and containers."
+    },
+    {
+     "question": "Why does 'no yellow parts' matter?",
+     "answer": "Yellow metals such as brass and copper alloys are kept away from jet fuel. The valve body is aluminium with no yellow parts in contact with the medium."
+    },
+    {
+     "question": "What pressure is the valve rated for?",
+     "answer": "MannTek publishes 10 bar working pressure for the Full Flow Ball Valve."
+    },
+    {
+     "question": "Which actuators are offered on the two-way valve?",
+     "answer": "Manual (hand lever) or a pneumatic double-acting actuator that opens and closes the valve. The spring-return actuator is listed for the one-way valve."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Coupling Family",
+     "value": "Full Flow Ball Valve",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "coupling_family"
+    },
+    {
+     "group": "Identification",
+     "label": "Coupling Type / Variant",
+     "value": "Two-way directional control valve (one inlet, two outlets)",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "coupling_type"
+    },
+    {
+     "group": "Configuration",
+     "label": "End A Configuration",
+     "value": "BSP or NPT thread, or EN / ANSI / TW / TTMA flange",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "end_a"
+    },
+    {
+     "group": "Configuration",
+     "label": "End B Configuration",
+     "value": "BSP or NPT thread, or EN / ANSI / TW / TTMA flange (two outlets)",
+     "unit": null,
+     "position": 3,
+     "isFilterable": true,
+     "templateKey": "end_b"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Size Range",
+     "value": "2\" (DN 50), 3\" (DN 80)",
+     "unit": null,
+     "position": 4,
+     "isFilterable": true,
+     "templateKey": "size_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Materials Available",
+     "value": "Aluminium (no yellow parts)",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "materials_available"
+    },
+    {
+     "group": "Performance",
+     "label": "Working Pressure",
+     "value": "10 bar (MannTek)",
+     "unit": null,
+     "position": 6,
+     "isFilterable": true,
+     "templateKey": "working_pressure"
+    },
+    {
+     "group": "Construction",
+     "label": "Seal / Gasket",
+     "value": "FKM, NBR; low-temperature seals available",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": "seal_or_gasket"
+    },
+    {
+     "group": "Identification",
+     "label": "Notes",
+     "value": "Manual or pneumatic double-acting actuation. Order code confirmed with the quotation.",
+     "unit": null,
+     "position": 8,
+     "isFilterable": false,
+     "templateKey": "notes"
+    },
+    {
+     "group": "Identification",
+     "label": "Manufacturer",
+     "value": "MannTek (Mann Teknik AB), Mariestad, Sweden",
+     "unit": null,
+     "position": 9,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Performance",
+     "label": "Flow",
+     "value": "Designed for maximum flow and minimum pressure drop (MannTek)",
+     "unit": null,
+     "position": 10,
+     "isFilterable": false,
+     "templateKey": null
+    }
+   ],
+   "searchAliases": [
+    "two way ball valve",
+    "2-way ball valve",
+    "diverter ball valve fuel",
+    "full flow ball valve",
+    "tanker ball valve",
+    "aviation refueller valve",
+    "MannTek",
+    "Mann Tek",
+    "Mann Full-Flow"
+   ],
+   "images": [
+    {
+     "file": "manntek-03-skarmavbild-2020-12-15-kl-132252.jpg",
+     "alt": "MannTek two-way Full Flow Ball Valve: body with three flanges, hand-lever and pneumatic builds",
+     "caption": "MannTek website product page image (fetched 2026-10-17). Maker's own image."
+    },
+    {
+     "file": "manntek-ffbv-two-way-body.jpg",
+     "alt": "MannTek two-way Full Flow Ball Valve body, DN 80 (3\"), with its flow-direction label",
+     "caption": "Crop of a MannTek website product photo (fetched 2026-10-17), cropped to the MannTek part only. Maker's own photo."
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-MNT-FFBV-2W-M-050",
+     "position": 0,
+     "dimensions": {
+      "action": "Manual (hand lever)",
+      "ports": "BSP or NPT",
+      "mount": "EN, ANSI, TW, TTMA",
+      "item": "Body: aluminium (no yellow parts)"
+     },
+     "hoseInch": "2\" (DN 50)",
+     "hoseDn": null,
+     "pressureBar": 10,
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "hoseDash": null
+    },
+    {
+     "partNumber": "IH-MNT-FFBV-2W-DA-050",
+     "position": 1,
+     "dimensions": {
+      "action": "Pneumatic, double acting",
+      "ports": "BSP or NPT",
+      "mount": "EN, ANSI, TW, TTMA",
+      "item": "Body: aluminium (no yellow parts)"
+     },
+     "hoseInch": "2\" (DN 50)",
+     "hoseDn": null,
+     "pressureBar": 10,
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "hoseDash": null
+    },
+    {
+     "partNumber": "IH-MNT-FFBV-2W-M-080",
+     "position": 2,
+     "dimensions": {
+      "action": "Manual (hand lever)",
+      "ports": "BSP or NPT",
+      "mount": "EN, ANSI, TW, TTMA",
+      "item": "Body: aluminium (no yellow parts)"
+     },
+     "hoseInch": "3\" (DN 80)",
+     "hoseDn": null,
+     "pressureBar": 10,
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "hoseDash": null
+    },
+    {
+     "partNumber": "IH-MNT-FFBV-2W-DA-080",
+     "position": 3,
+     "dimensions": {
+      "action": "Pneumatic, double acting",
+      "ports": "BSP or NPT",
+      "mount": "EN, ANSI, TW, TTMA",
+      "item": "Body: aluminium (no yellow parts)"
+     },
+     "hoseInch": "3\" (DN 80)",
+     "hoseDn": null,
+     "pressureBar": 10,
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "hoseDash": null
+    }
+   ],
+   "crossReferences": []
+  },
+  {
+   "sku": "IH-MNT-SWV-S",
+   "slug": "manntek-swivel-joint-single-ball-race",
+   "title": "MannTek Swivel Joint, Single Ball Race — 1\" to 4\"",
+   "category": "hose-swivel-joints",
+   "focusKeyword": "hose swivel joint",
+   "descriptionShort": "MannTek single ball race swivel joint: standard-duty hose swivel giving free rotation between a hose assembly and the coupling, nozzle or equipment on its end. 1\" to 4\", BSP or NPT thread or flange, stainless, aluminium, brass, titanium or Hastelloy. From Indus Hydraulics, authorised MannTek distributor, UAE.",
+   "descriptionLong": "<p>A swivel joint lets nozzles, couplings and other equipment on a hose line, pipework or manifold rotate freely. It stops the hose twisting, extends the life of the hose and the equipment on it, and makes the line easier to handle. MannTek builds swivel joints in a standard single ball race version and a heavy-duty double ball race version for heavy side loads.</p><h3>Single ball race</h3><p>The single ball race swivel is MannTek's standard-duty type. It gives free rotation between a hose assembly and the handling equipment attached to it, such as a nozzle or a coupling.</p><h3>Sizes and construction</h3><ul><li>Sizes: 1\" (DN 25), 2\", 2-1/2\", 3\" and 4\" (DN 100). MannTek's website also lists a 3/4\" size; ask if you need it.</li><li>Connections: BSP or NPT thread, or EN, ANSI, TW or TTMA flange</li><li>Body: stainless steel 1.4404 (AISI 316L), aluminium, titanium or Hastelloy in every size; brass at 1\" and 2\", gun metal from 2-1/2\"</li><li>Seals: FKM, NBR, EPDM, FFKM or PTFE</li><li>Working pressure: 16 to 25 bar, depending on size and material (MannTek)</li></ul><h3>Choosing the body material</h3><p>MannTek suggests stainless steel 1.4404 (AISI 316L) for chemicals and foodstuffs, aluminium for petroleum-based products, and brass for petroleum products and various solvents. Tell us the medium and we will confirm the body and seals.</p><p>Indus Hydraulics is an authorised MannTek distributor in the UAE and supplies MannTek swivel joints direct from MannTek in Sweden.</p><h3>Documents</h3><p>MannTek's operating manual and service instruction for the swivel joint are attached in the Documents tab, as MannTek publishes them, for installation, operation and servicing. Download them before the coupling arrives so the site team has the procedure to hand.</p><p>MannTek fits swivel joints to let nozzles, couplings and other equipment on hose lines, pipework and manifolds turn freely, so the hose does not twist, the equipment lasts longer and the line is easier to handle.</p><h3>How to order</h3><p>Send the size, single or double ball race, the body material, the connection on each side, the seal material and the medium. We confirm the MannTek order code, price and lead time with the quotation.</p>",
+   "seoTitle": "MannTek Swivel Joint, Single Ball Race, 1\" to 4\"",
+   "seoDescription": "MannTek single ball race hose swivel joint, 1\" to 4\", BSP, NPT or flanged, stainless 316L, aluminium, brass, titanium or Hastelloy, 16 to 25 bar.",
+   "faqs": [
+    {
+     "question": "Why fit a swivel joint to a hose line?",
+     "answer": "Without one, turning a coupling, nozzle or loading arm twists the hose. A swivel joint takes the rotation, so the hose is not put under torsion, lasts longer and is easier to handle."
+    },
+    {
+     "question": "Single or double ball race: which do I need?",
+     "answer": "The single ball race swivel is the standard-duty type, for free rotation between a hose assembly and the equipment on its end. The heavy-duty double ball race swivel takes heavy side loads and is used between a hose assembly and a fixed point of a plant or pipe system."
+    },
+    {
+     "question": "What pressure is a MannTek swivel joint rated for?",
+     "answer": "MannTek publishes 16 to 25 bar working pressure for its swivel joints, depending on size and material. The rating for your build is confirmed with the quotation."
+    },
+    {
+     "question": "Which body materials are offered?",
+     "answer": "Stainless steel 1.4404 (AISI 316L), aluminium, titanium and Hastelloy in every size from 1\" to 4\", plus brass at 1\" and 2\" and gun metal from 2-1/2\" to 4\"."
+    },
+    {
+     "question": "Where on the line should the swivel go?",
+     "answer": "At the point that has to turn: behind a nozzle or coupling, or between a hose and fixed pipework or a manifold. Send us the layout and the connections and we will confirm the size and ends."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Coupling Family",
+     "value": "Swivel Joint",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "coupling_family"
+    },
+    {
+     "group": "Identification",
+     "label": "Coupling Type / Variant",
+     "value": "Single ball race (standard duty)",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "coupling_type"
+    },
+    {
+     "group": "Configuration",
+     "label": "End A Configuration",
+     "value": "BSP or NPT thread, or EN / ANSI / TW / TTMA flange",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "end_a"
+    },
+    {
+     "group": "Configuration",
+     "label": "End B Configuration",
+     "value": "BSP or NPT thread, or EN / ANSI / TW / TTMA flange",
+     "unit": null,
+     "position": 3,
+     "isFilterable": true,
+     "templateKey": "end_b"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Size Range",
+     "value": "1\" (DN 25) to 4\" (DN 100)",
+     "unit": null,
+     "position": 4,
+     "isFilterable": true,
+     "templateKey": "size_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Materials Available",
+     "value": "Stainless steel 1.4404 (AISI 316L), aluminium, brass, gun metal, titanium, Hastelloy (by size)",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "materials_available"
+    },
+    {
+     "group": "Performance",
+     "label": "Working Pressure",
+     "value": "16 to 25 bar by size and material (MannTek)",
+     "unit": null,
+     "position": 6,
+     "isFilterable": true,
+     "templateKey": "working_pressure"
+    },
+    {
+     "group": "Construction",
+     "label": "Seal / Gasket",
+     "value": "FKM, NBR, EPDM, FFKM or PTFE",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": "seal_or_gasket"
+    },
+    {
+     "group": "Identification",
+     "label": "Notes",
+     "value": "Order code confirmed with the quotation.",
+     "unit": null,
+     "position": 8,
+     "isFilterable": false,
+     "templateKey": "notes"
+    },
+    {
+     "group": "Identification",
+     "label": "Manufacturer",
+     "value": "MannTek (Mann Teknik AB), Mariestad, Sweden",
+     "unit": null,
+     "position": 9,
+     "isFilterable": false,
+     "templateKey": null
+    }
+   ],
+   "searchAliases": [
+    "hose swivel joint",
+    "swivel joint",
+    "hose swivel",
+    "ball race swivel",
+    "rotary joint hose",
+    "stainless swivel joint",
+    "MannTek",
+    "Mann Tek"
+   ],
+   "images": [
+    {
+     "file": "manntek-03-swivel2.jpg",
+     "alt": "MannTek 2\" single ball race swivel joint in stainless steel, female and male threaded ends",
+     "caption": "MannTek website product page image (fetched 2026-10-17). Maker's own image."
+    },
+    {
+     "file": "manntek-06-swivel4.jpg",
+     "alt": "MannTek 4\" single ball race swivel joint, threaded, with MannTek identification plate",
+     "caption": "MannTek website product page image (fetched 2026-10-17). Maker's own image."
+    },
+    {
+     "file": "manntek-heavy-duty-and-single-ballrace-sviwel.jpg",
+     "alt": "MannTek single ball race swivel (front) beside the taller heavy-duty double ball race swivel",
+     "caption": "MannTek website, Downloads > Product photos (fetched 2026-10-17). Maker's own photo."
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-MNT-SWV-S-025",
+     "position": 0,
+     "dimensions": {
+      "ports": "BSP, NPT",
+      "mount": "EN, ANSI, TW, TTMA",
+      "item": "Body: stainless steel 1.4404 (AISI 316L), aluminium, brass, titanium, Hastelloy"
+     },
+     "hoseInch": "1\" (DN 25)",
+     "hoseDn": null,
+     "pressureBar": null,
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "hoseDash": null
+    },
+    {
+     "partNumber": "IH-MNT-SWV-S-050",
+     "position": 1,
+     "dimensions": {
+      "ports": "BSP, NPT",
+      "mount": "EN, ANSI, TW, TTMA",
+      "item": "Body: stainless steel 1.4404 (AISI 316L), aluminium, brass, titanium, Hastelloy"
+     },
+     "hoseInch": "2\" (DN 50)",
+     "hoseDn": null,
+     "pressureBar": null,
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "hoseDash": null
+    },
+    {
+     "partNumber": "IH-MNT-SWV-S-065",
+     "position": 2,
+     "dimensions": {
+      "ports": "BSP, NPT",
+      "mount": "EN, ANSI, TW, TTMA",
+      "item": "Body: stainless steel 1.4404 (AISI 316L), aluminium, gun metal, titanium, Hastelloy"
+     },
+     "hoseInch": "2-1/2\" (DN 65)",
+     "hoseDn": null,
+     "pressureBar": null,
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "hoseDash": null
+    },
+    {
+     "partNumber": "IH-MNT-SWV-S-080",
+     "position": 3,
+     "dimensions": {
+      "ports": "BSP, NPT",
+      "mount": "EN, ANSI, TW, TTMA",
+      "item": "Body: stainless steel 1.4404 (AISI 316L), aluminium, gun metal, titanium, Hastelloy"
+     },
+     "hoseInch": "3\" (DN 80)",
+     "hoseDn": null,
+     "pressureBar": null,
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "hoseDash": null
+    },
+    {
+     "partNumber": "IH-MNT-SWV-S-100",
+     "position": 4,
+     "dimensions": {
+      "ports": "BSP, NPT",
+      "mount": "EN, ANSI, TW, TTMA",
+      "item": "Body: stainless steel 1.4404 (AISI 316L), aluminium, gun metal, titanium, Hastelloy"
+     },
+     "hoseInch": "4\" (DN 100)",
+     "hoseDn": null,
+     "pressureBar": null,
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "hoseDash": null
+    }
+   ],
+   "crossReferences": []
+  },
+  {
+   "sku": "IH-MNT-SWV-HD",
+   "slug": "manntek-heavy-duty-swivel-joint-double-ball-race",
+   "title": "MannTek Heavy-Duty Swivel Joint, Double Ball Race — 1\" to 10\"",
+   "category": "hose-swivel-joints",
+   "focusKeyword": "heavy duty swivel joint",
+   "descriptionShort": "MannTek heavy-duty double ball race swivel joint for heavy side loads, between a hose assembly and a fixed point of a plant or pipe system. 1\" to 10\" (DN 25 to DN 250), stainless steel 316L or aluminium, 16 to 25 bar. From Indus Hydraulics, authorised MannTek distributor, UAE.",
+   "descriptionLong": "<p>A swivel joint lets nozzles, couplings and other equipment on a hose line, pipework or manifold rotate freely. It stops the hose twisting, extends the life of the hose and the equipment on it, and makes the line easier to handle. MannTek builds swivel joints in a standard single ball race version and a heavy-duty double ball race version for heavy side loads.</p><h3>Double ball race</h3><p>The heavy-duty swivel runs on two ball races, so it can carry heavy side loads. MannTek uses it for free rotation between a hose assembly and the fixed point of a plant or pipe system.</p><h3>Sizes and construction</h3><ul><li>Sizes: 1\" (DN 25), 2\", 3\", 4\", 5\", 6\", 8\" and 10\" (DN 250)</li><li>Body: stainless steel 1.4404 (AISI 316L) or aluminium, in every size</li><li>Connections: threaded or flanged, specified per order</li><li>Seals: FKM, NBR, EPDM, FFKM or PTFE</li><li>Working pressure: 16 to 25 bar, depending on size and material (MannTek)</li></ul><h3>Choosing the body material</h3><p>MannTek suggests stainless steel 1.4404 (AISI 316L) for chemicals and foodstuffs, aluminium for petroleum-based products. Tell us the medium and we will confirm the body and seals.</p><p>Indus Hydraulics is an authorised MannTek distributor in the UAE and supplies MannTek swivel joints direct from MannTek in Sweden.</p><h3>Documents</h3><p>MannTek's operating manual and service instruction for the swivel joint are attached in the Documents tab, as MannTek publishes them, for installation, operation and servicing. Download them before the coupling arrives so the site team has the procedure to hand.</p><p>MannTek makes the heavy-duty version, with a double ball race, to take heavy side loads that a single ball race is not built for, in sizes from 1\" up to 10\".</p><h3>How to order</h3><p>Send the size, single or double ball race, the body material, the connection on each side, the seal material and the medium. We confirm the MannTek order code, price and lead time with the quotation.</p>",
+   "seoTitle": "MannTek Heavy-Duty Swivel Joint, Double Ball Race, 1\" to 10\"",
+   "seoDescription": "MannTek heavy-duty double ball race swivel joint for heavy side loads, 1\" to 10\", stainless steel 316L or aluminium, 16 to 25 bar. Authorised distributor, UAE.",
+   "faqs": [
+    {
+     "question": "Why fit a swivel joint to a hose line?",
+     "answer": "Without one, turning a coupling, nozzle or loading arm twists the hose. A swivel joint takes the rotation, so the hose is not put under torsion, lasts longer and is easier to handle."
+    },
+    {
+     "question": "Single or double ball race: which do I need?",
+     "answer": "The single ball race swivel is the standard-duty type, for free rotation between a hose assembly and the equipment on its end. The heavy-duty double ball race swivel takes heavy side loads and is used between a hose assembly and a fixed point of a plant or pipe system."
+    },
+    {
+     "question": "What pressure is a MannTek swivel joint rated for?",
+     "answer": "MannTek publishes 16 to 25 bar working pressure for its swivel joints, depending on size and material. The rating for your build is confirmed with the quotation."
+    },
+    {
+     "question": "Which sizes and materials are available in the heavy-duty swivel?",
+     "answer": "1\", 2\", 3\", 4\", 5\", 6\", 8\" and 10\" (DN 25 to DN 250), each in stainless steel 1.4404 (AISI 316L) or aluminium."
+    },
+    {
+     "question": "When is the heavy-duty swivel the right choice?",
+     "answer": "When the swivel carries heavy side loads, which MannTek designs the double-ball-race version for, and for bores above 4\" up to 10\". For lighter duty up to 4\" the single ball race is listed separately."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Coupling Family",
+     "value": "Swivel Joint",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "coupling_family"
+    },
+    {
+     "group": "Identification",
+     "label": "Coupling Type / Variant",
+     "value": "Double ball race (heavy duty, for heavy side loads)",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "coupling_type"
+    },
+    {
+     "group": "Configuration",
+     "label": "End A Configuration",
+     "value": "Thread or flange, specified per order",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "end_a"
+    },
+    {
+     "group": "Configuration",
+     "label": "End B Configuration",
+     "value": "Thread or flange, specified per order",
+     "unit": null,
+     "position": 3,
+     "isFilterable": true,
+     "templateKey": "end_b"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Size Range",
+     "value": "1\" (DN 25) to 10\" (DN 250)",
+     "unit": null,
+     "position": 4,
+     "isFilterable": true,
+     "templateKey": "size_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Materials Available",
+     "value": "Stainless steel 1.4404 (AISI 316L) or aluminium",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "materials_available"
+    },
+    {
+     "group": "Performance",
+     "label": "Working Pressure",
+     "value": "16 to 25 bar by size and material (MannTek)",
+     "unit": null,
+     "position": 6,
+     "isFilterable": true,
+     "templateKey": "working_pressure"
+    },
+    {
+     "group": "Construction",
+     "label": "Seal / Gasket",
+     "value": "FKM, NBR, EPDM, FFKM or PTFE",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": "seal_or_gasket"
+    },
+    {
+     "group": "Identification",
+     "label": "Notes",
+     "value": "Order code confirmed with the quotation.",
+     "unit": null,
+     "position": 8,
+     "isFilterable": false,
+     "templateKey": "notes"
+    },
+    {
+     "group": "Identification",
+     "label": "Manufacturer",
+     "value": "MannTek (Mann Teknik AB), Mariestad, Sweden",
+     "unit": null,
+     "position": 9,
+     "isFilterable": false,
+     "templateKey": null
+    }
+   ],
+   "searchAliases": [
+    "heavy duty swivel joint",
+    "double ball race swivel",
+    "hose swivel joint",
+    "marine hose swivel",
+    "large bore swivel joint",
+    "swivel joint 10 inch",
+    "MannTek",
+    "Mann Tek"
+   ],
+   "images": [
+    {
+     "file": "manntek-heavy-duty-and-single-ballrace-sviwel.jpg",
+     "alt": "MannTek heavy-duty double ball race swivel joint (rear) with a smaller single ball race swivel",
+     "caption": "MannTek website, Downloads > Product photos (fetched 2026-10-17). Maker's own photo."
+    },
+    {
+     "file": "manntek-flanged-and-threaded-sviwel.jpg",
+     "alt": "MannTek flanged swivel joint with drilled flange beside a threaded swivel joint, aluminium finish",
+     "caption": "MannTek website, Downloads > Product photos (fetched 2026-10-17). Maker's own photo."
+    },
+    {
+     "file": "manntek-01-skarmavbild-2020-11-26-kl-134927.jpg",
+     "alt": "MannTek swivel joints: two threaded stainless swivels and two flanged swivels in different sizes",
+     "caption": "MannTek website product page image (fetched 2026-10-17). Maker's own image."
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-MNT-SWV-HD-025",
+     "position": 0,
+     "dimensions": {
+      "item": "Double ball race. Body: stainless steel 1.4404 (AISI 316L) or aluminium"
+     },
+     "hoseInch": "1\" (DN 25)",
+     "hoseDn": null,
+     "pressureBar": null,
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "hoseDash": null
+    },
+    {
+     "partNumber": "IH-MNT-SWV-HD-050",
+     "position": 1,
+     "dimensions": {
+      "item": "Double ball race. Body: stainless steel 1.4404 (AISI 316L) or aluminium"
+     },
+     "hoseInch": "2\" (DN 50)",
+     "hoseDn": null,
+     "pressureBar": null,
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "hoseDash": null
+    },
+    {
+     "partNumber": "IH-MNT-SWV-HD-080",
+     "position": 2,
+     "dimensions": {
+      "item": "Double ball race. Body: stainless steel 1.4404 (AISI 316L) or aluminium"
+     },
+     "hoseInch": "3\" (DN 80)",
+     "hoseDn": null,
+     "pressureBar": null,
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "hoseDash": null
+    },
+    {
+     "partNumber": "IH-MNT-SWV-HD-100",
+     "position": 3,
+     "dimensions": {
+      "item": "Double ball race. Body: stainless steel 1.4404 (AISI 316L) or aluminium"
+     },
+     "hoseInch": "4\" (DN 100)",
+     "hoseDn": null,
+     "pressureBar": null,
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "hoseDash": null
+    },
+    {
+     "partNumber": "IH-MNT-SWV-HD-125",
+     "position": 4,
+     "dimensions": {
+      "item": "Double ball race. Body: stainless steel 1.4404 (AISI 316L) or aluminium"
+     },
+     "hoseInch": "5\" (DN 125)",
+     "hoseDn": null,
+     "pressureBar": null,
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "hoseDash": null
+    },
+    {
+     "partNumber": "IH-MNT-SWV-HD-150",
+     "position": 5,
+     "dimensions": {
+      "item": "Double ball race. Body: stainless steel 1.4404 (AISI 316L) or aluminium"
+     },
+     "hoseInch": "6\" (DN 150)",
+     "hoseDn": null,
+     "pressureBar": null,
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "hoseDash": null
+    },
+    {
+     "partNumber": "IH-MNT-SWV-HD-200",
+     "position": 6,
+     "dimensions": {
+      "item": "Double ball race. Body: stainless steel 1.4404 (AISI 316L) or aluminium"
+     },
+     "hoseInch": "8\" (DN 200)",
+     "hoseDn": null,
+     "pressureBar": null,
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "hoseDash": null
+    },
+    {
+     "partNumber": "IH-MNT-SWV-HD-250",
+     "position": 7,
+     "dimensions": {
+      "item": "Double ball race. Body: stainless steel 1.4404 (AISI 316L) or aluminium"
+     },
+     "hoseInch": "10\" (DN 250)",
+     "hoseDn": null,
+     "pressureBar": null,
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "hoseDash": null
+    }
+   ],
+   "crossReferences": []
+  }
+ ],
+ "hold": []
+}

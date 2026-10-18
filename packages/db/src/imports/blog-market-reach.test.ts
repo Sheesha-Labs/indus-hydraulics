@@ -99,3 +99,20 @@ describe('withCrossLinks', () => {
     }
   })
 })
+
+describe('withCrossLinks on an article with no map entry', () => {
+  it('keeps the related list and page links the seed wrote, and still adds the reach block', () => {
+    const seed: BlogBlocksInput = [
+      { type: 'lead', html: '<p>Lay flat hose.</p>' },
+      { type: 'page_link', kind: 'market', slug: 'saudi-arabia', label: 'Saudi Arabia' },
+      { type: 'related_articles', slugs: ['water-suction-and-dewatering-hose'] },
+      { type: 'cta_block', heading: 'Need a line?', body: 'Send the flow.' },
+    ]
+    const out = withCrossLinks('an-article-not-in-the-map', seed, 'industrial-hose')
+    expect(BLOG_CROSS_LINKS['an-article-not-in-the-map']).toBeUndefined()
+    expect(out.filter((b) => b.type === 'page_link')).toHaveLength(1)
+    expect(out.filter((b) => b.type === 'related_articles')).toHaveLength(1)
+    expect(out.filter((b) => b.type === 'market_reach')).toHaveLength(1)
+    expect(out[out.length - 1]!.type).toBe('cta_block')
+  })
+})

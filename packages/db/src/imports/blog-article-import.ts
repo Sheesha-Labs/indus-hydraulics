@@ -59,10 +59,14 @@ import type { BlogArticleSeed } from './2026-08-17-blog-articles/shared'
 export function withFigures(
   slug: string,
   blocks: BlogBlocksInput,
-  heroIdBySlug: Map<string, string>
+  heroIdBySlug: Map<string, string>,
+  keepSeedFigures = false
 ): BlogBlocksInput {
   const figures = BLOG_FIGURES[slug]
-  const base = blocks.filter((b) => b.type !== 'figure')
+  // `keepSeedFigures`: a wave whose seeds place their own photographs (with a
+  // Media id) keeps them where the author put them. Off by default, because
+  // other callers pass stored post bodies, whose figures must be stripped.
+  const base = blocks.filter((b) => b.type !== 'figure' || (keepSeedFigures && Boolean(b.imageId)))
   if (!figures?.length) return base
 
   // Insert from the last target backwards, so earlier indices stay valid.
@@ -156,11 +160,12 @@ export function withCrossLinks(
   if (generated.length === 0) return blocks
 
   // Strip any previously generated link blocks so a re-import replaces the
-  // graph rather than stacking a second copy of it underneath the first.
+  // graph rather than stacking a second copy of it underneath the first. Only
+  // what this function generates is stripped: an article with no map entry
+  // wrote its own related list and page links in its seed, and those stay.
   const base = blocks.filter(
     (b) =>
-      b.type !== 'related_articles' &&
-      b.type !== 'page_link' &&
+      ((b.type !== 'related_articles' && b.type !== 'page_link') || !links) &&
       (b.type !== 'market_reach' || !reach)
   )
 
@@ -190,12 +195,15 @@ export type BlogArticleImportOptions = {
    * still filters on the boolean. See the note on the column in schema.prisma.
    */
   status?: 'draft' | 'published'
+  /** Keep `figure` blocks the seeds carry with a Media id (see `withFigures`). */
+  keepSeedFigures?: boolean
 }
 
 export async function runBlogArticleImport({
   articles,
   dryRun = false,
   status = 'published',
+  keepSeedFigures = false,
 }: BlogArticleImportOptions): Promise<void> {
   const errors: string[] = []
   const seenSlugs = new Set<string>()
@@ -225,7 +233,8 @@ export async function runBlogArticleImport({
       withFigures(
         article.slug,
         withCrossLinks(article.slug, article.bodyBlocks, article.categorySlug),
-        heroIdBySlug
+        heroIdBySlug,
+        keepSeedFigures
       )
     )
     if (!parsed.success) {
