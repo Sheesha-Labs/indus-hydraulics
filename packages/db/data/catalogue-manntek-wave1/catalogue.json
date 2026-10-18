@@ -3977,6 +3977,227 @@
     }
    ],
    "crossReferences": []
+  },
+  {
+   "sku": "IH-MNT-DAC-CAP",
+   "slug": "manntek-dac-dust-caps-and-plugs",
+   "title": "MannTek DAC Dust Caps and Dust Plugs (ISO 45) — 2-1/2\"",
+   "category": "dry-disconnect-couplings",
+   "focusKeyword": "dry aviation coupling dust cap",
+   "descriptionShort": "Dust caps and dust plugs for MannTek DAC dry aviation couplings, 2-1/2\" ISO 45: aluminium or PE, each on a steel tether cable, to keep dirt and water off the coupling faces. From Indus Hydraulics, authorised MannTek distributor, UAE.",
+   "descriptionLong": "<p>An aviation fuel coupling that is left open picks up dust, sand and water on its sealing faces, and in jet fuel service that is contamination as well as wear. MannTek makes a dust cap and a dust plug for the DAC so both halves can be closed whenever the hose is not connected. Each is tethered on a steel cable, so it stays with the coupling instead of being put down on the ground.</p><h3>The four closures</h3><ul><li><strong>Dust cap, aluminium</strong> (MannTek K300A1101)</li><li><strong>Dust cap, PE</strong> (polyethylene composite, MannTek K300A2201)</li><li><strong>Dust plug, aluminium</strong>, with T-handle (MannTek I300A1101)</li><li><strong>Dust plug, PE</strong>, with T-handle (MannTek I300A2201)</li></ul><p>MannTek gives -20 °C as the lowest operating temperature of the PE versions. All four are made for the 2-1/2\" (DN 65, socket Ø 105 mm) DAC interface to ISO 45, MS24484 and STANAG 3105, the only DAC size.</p><h3>Which one goes where</h3><p>MannTek's designation key lists K as a dust cap and I as a dust plug for ISO 45 couplings. Tell us which half you need to close, tank unit or hose unit, and we will confirm the matching closure with the quotation.</p><h3>Related</h3><p>The DAC tank unit and hose unit are listed separately, and MannTek also makes adapters between DDC (STANAG 3756) and DAC (STANAG 3105) couplings.</p><p>Indus Hydraulics is an authorised MannTek distributor in the UAE and supplies MannTek couplings direct from MannTek in Sweden.</p><h3>How to order</h3><p>Send the size, the MannTek order code or the type and material from the size table. We confirm the MannTek order code, price and lead time with the quotation.</p>",
+   "seoTitle": "MannTek DAC Dust Caps & Dust Plugs, ISO 45, 2-1/2\"",
+   "seoDescription": "Dust caps and dust plugs for MannTek DAC dry aviation couplings, 2-1/2\" ISO 45, aluminium or PE, tethered on steel cable. Authorised MannTek distributor, UAE.",
+   "faqs": [
+    {
+     "question": "What is the difference between the dust cap and the dust plug?",
+     "answer": "MannTek's designation key lists K as a dust cap and I as a dust plug for ISO 45 couplings; the plug has a T-handle. Each closes one half of the coupling. Tell us whether you are closing the tank unit or the hose unit and we will confirm the matching closure."
+    },
+    {
+     "question": "Aluminium or PE?",
+     "answer": "Aluminium for heavy handling and cold service; PE (polyethylene composite) is lighter, and MannTek gives -20 °C as its lowest operating temperature."
+    },
+    {
+     "question": "Do they fit other makers' ISO 45 couplings?",
+     "answer": "They are made for the MannTek DAC, which is built to ISO 45, MS24484 and STANAG 3105. Send us the make on site and we will confirm the fit before you order."
+    },
+    {
+     "question": "Can I order by MannTek part number?",
+     "answer": "Yes. Quote K300A1101, K300A2201, I300A1101 or I300A2201, or the Indus part number from the size table."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Coupling Family",
+     "value": "Dry Aviation Coupling",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "coupling_family"
+    },
+    {
+     "group": "Identification",
+     "label": "Coupling Type / Variant",
+     "value": "Closures: dust cap, dust plug",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "coupling_type"
+    },
+    {
+     "group": "Configuration",
+     "label": "End A Configuration",
+     "value": "2-1/2\" DAC interface to ISO 45 / STANAG 3105",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "end_a"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Size Range",
+     "value": "2-1/2\" (DN 65, socket Ø 105 mm)",
+     "unit": null,
+     "position": 3,
+     "isFilterable": true,
+     "templateKey": "size_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Materials Available",
+     "value": "Aluminium or PE (polyethylene composite)",
+     "unit": null,
+     "position": 4,
+     "isFilterable": false,
+     "templateKey": "materials_available"
+    },
+    {
+     "group": "Compliance",
+     "label": "Applicable Standards",
+     "value": "For couplings to ISO 45, MS24484, STANAG 3105",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "applicable_standards"
+    },
+    {
+     "group": "Identification",
+     "label": "Notes",
+     "value": "MannTek order codes K300A1101, K300A2201, I300A1101, I300A2201.",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "notes"
+    },
+    {
+     "group": "Identification",
+     "label": "Manufacturer",
+     "value": "MannTek (Mann Teknik AB), Mariestad, Sweden",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Performance",
+     "label": "Lowest operating temperature",
+     "value": "-20 °C for the PE versions (MannTek)",
+     "unit": null,
+     "position": 8,
+     "isFilterable": false,
+     "templateKey": null
+    }
+   ],
+   "searchAliases": [
+    "DAC dust cap",
+    "DAC dust plug",
+    "ISO 45 dust cap",
+    "aviation coupling dust cap",
+    "K300A1101",
+    "K300A2201",
+    "I300A1101",
+    "I300A2201",
+    "MannTek",
+    "Mann Tek"
+   ],
+   "images": [
+    {
+     "file": "manntek-K300A1101.jpg",
+     "alt": "MannTek DAC 2-1/2\" aluminium dust cap on a steel tether cable, for the ISO 45 tank unit",
+     "caption": "MannTek configurator option image (configurator.manntek.se, fetched 2026-10-18). Maker's own render."
+    },
+    {
+     "file": "manntek-K300A2201.jpg",
+     "alt": "MannTek DAC 2-1/2\" black polyethylene dust cap with steel tether cable",
+     "caption": "MannTek configurator option image (configurator.manntek.se, fetched 2026-10-18). Maker's own render."
+    },
+    {
+     "file": "manntek-I300A1101.jpg",
+     "alt": "MannTek DAC 2-1/2\" aluminium dust plug with black T-handle and steel tether cable",
+     "caption": "MannTek configurator option image (configurator.manntek.se, fetched 2026-10-18). Maker's own render."
+    },
+    {
+     "file": "manntek-I300A2201.jpg",
+     "alt": "MannTek DAC 2-1/2\" black polyethylene dust plug with T-handle and steel tether cable",
+     "caption": "MannTek configurator option image (configurator.manntek.se, fetched 2026-10-18). Maker's own render."
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-MNT-DAC-CAP-AL-065",
+     "position": 0,
+     "dimensions": {
+      "half": "Dust cap",
+      "bodySize": "Ø 105 mm",
+      "item": "Aluminium, tethered on a steel cable. MannTek order code K300A1101"
+     },
+     "hoseInch": "2-1/2\" (DN 65)",
+     "hoseDn": null,
+     "pressureBar": null,
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "hoseDash": null
+    },
+    {
+     "partNumber": "IH-MNT-DAC-CAP-PE-065",
+     "position": 1,
+     "dimensions": {
+      "half": "Dust cap",
+      "bodySize": "Ø 105 mm",
+      "item": "PE (polyethylene composite), tethered on a steel cable; lowest operating temperature -20 °C. MannTek order code K300A2201"
+     },
+     "hoseInch": "2-1/2\" (DN 65)",
+     "hoseDn": null,
+     "pressureBar": null,
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "hoseDash": null
+    },
+    {
+     "partNumber": "IH-MNT-DAC-PLUG-AL-065",
+     "position": 2,
+     "dimensions": {
+      "half": "Dust plug",
+      "bodySize": "Ø 105 mm",
+      "item": "Aluminium with T-handle, tethered on a steel cable. MannTek order code I300A1101"
+     },
+     "hoseInch": "2-1/2\" (DN 65)",
+     "hoseDn": null,
+     "pressureBar": null,
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "hoseDash": null
+    },
+    {
+     "partNumber": "IH-MNT-DAC-PLUG-PE-065",
+     "position": 3,
+     "dimensions": {
+      "half": "Dust plug",
+      "bodySize": "Ø 105 mm",
+      "item": "PE (polyethylene composite) with T-handle, tethered; lowest operating temperature -20 °C. MannTek order code I300A2201"
+     },
+     "hoseInch": "2-1/2\" (DN 65)",
+     "hoseDn": null,
+     "pressureBar": null,
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "hoseDash": null
+    }
+   ],
+   "crossReferences": []
   }
  ],
  "hold": []

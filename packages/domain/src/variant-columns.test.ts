@@ -13,6 +13,7 @@ import {
   variantEquivalentBrand,
   variantHoseLabel,
   variantSizeHeading,
+  variantPartNumberHeading,
   variantPortHeading,
   hasVariantPressures,
   hasVariantWeights,
@@ -580,5 +581,51 @@ describe('coupling and equipment ratings', () => {
   it('gives the row description its own leading column', () => {
     const cols = variantTextColumns([{ partNumber: '43200', dimensions: { item: 'Elbow, .38 in cone' } }])
     expect(cols.map((c) => [c.key, c.label, c.lead])).toEqual([['item', 'Description', true]])
+  })
+})
+
+describe('variantPartNumberHeading', () => {
+  const rows = (...partNumbers: string[]) => partNumbers.map((partNumber) => ({ partNumber }))
+  const manntek = { slug: 'manntek', name: 'MannTek' }
+  const parker = { slug: 'parker', name: 'Parker' }
+
+  it('heads Indus numbers "Indus part no." even on a listing branded by the maker', () => {
+    expect(variantPartNumberHeading(rows('IH-MNT-DCC-TU-025', 'IH-MNT-DCC-HU-025'), manntek)).toBe(
+      'Indus part no.',
+    )
+    expect(variantPartNumberHeading(rows('IH-CGC-90-A-150'), { slug: 'sealfast', name: 'Sealfast' })).toBe(
+      'Indus part no.',
+    )
+  })
+
+  it('heads Indus numbers "Indus part no." on Indus and unbranded listings', () => {
+    expect(variantPartNumberHeading(rows('IH-ST-9169-04-04-10'), { slug: 'indus', name: 'Indus' })).toBe(
+      'Indus part no.',
+    )
+    expect(variantPartNumberHeading(rows('IH-LR-ST-SSSTTUST-012'), null)).toBe('Indus part no.')
+  })
+
+  it('matches the IH- prefix case-insensitively', () => {
+    expect(variantPartNumberHeading(rows('ih-mnt-dcc-tu-025'), manntek)).toBe('Indus part no.')
+  })
+
+  it("names the maker when every row carries the maker's own code", () => {
+    expect(variantPartNumberHeading(rows('15S26-10-10', '11356-12-12'), parker)).toBe('Parker part no.')
+    expect(variantPartNumberHeading(rows('0306-03'), { slug: 'tompkins', name: 'Tompkins' })).toBe(
+      'Tompkins part no.',
+    )
+  })
+
+  it('does not treat IH appearing later in a maker code as an Indus number', () => {
+    expect(variantPartNumberHeading(rows('HIH-100', '10IH-4'), parker)).toBe('Parker part no.')
+  })
+
+  it('falls back to "Part no." for a mixed set', () => {
+    expect(variantPartNumberHeading(rows('IH-MNT-DCC-TU-025', '15S26-10-10'), parker)).toBe('Part no.')
+  })
+
+  it('falls back to "Part no." for maker codes with no maker to name', () => {
+    expect(variantPartNumberHeading(rows('15S26-10-10'), null)).toBe('Part no.')
+    expect(variantPartNumberHeading(rows('15S26-10-10'), { slug: 'indus', name: 'Indus' })).toBe('Part no.')
   })
 })
