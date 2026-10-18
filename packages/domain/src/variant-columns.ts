@@ -1010,6 +1010,30 @@ export function variantSizeHeading(variants: readonly VariantLike[]): string {
   return hasBoreCode ? 'Hose bore' : 'Nominal size'
 }
 
+/** Indus's own part numbers all start `IH-`; a maker's code never does. */
+const INDUS_PART_NUMBER = /^IH-/i
+
+/**
+ * Heading of the size table's part-number column, read off the rows rather
+ * than the brand.
+ *
+ * The brand says whose product it is, not whose numbering the rows carry.
+ * Parker, Enerpac or Tompkins listings carry the maker's own codes and are
+ * headed with its name; MannTek, Sealfast and Sunpool listings are branded
+ * but numbered `IH-…`, and "MannTek part no." over an Indus number is untrue.
+ * A set that mixes the two, or a maker code with no maker to name, gets the
+ * neutral "Part no." rather than a heading that is wrong for some rows.
+ */
+export function variantPartNumberHeading(
+  variants: readonly Pick<VariantLike, 'partNumber'>[],
+  brand: { slug: string; name: string } | null | undefined,
+): string {
+  const indusRows = variants.filter((v) => INDUS_PART_NUMBER.test(v.partNumber)).length
+  if (indusRows === variants.length) return 'Indus part no.'
+  if (indusRows === 0 && brand && brand.slug !== 'indus') return `${brand.name} part no.`
+  return 'Part no.'
+}
+
 /** True when at least one variant carries a competitor equivalent to show. */
 export function hasVariantEquivalents(variants: readonly VariantLike[]): boolean {
   return variants.some((v) => Boolean(v.competitorMpn))
