@@ -19,7 +19,7 @@ const ARTICLE: BlogArticleSeed = {
   title: 'Sling colour code chart: what each colour means, and why the label still decides',
   excerpt:
     'Under EN 1492, a violet polyester sling is rated 1 t, green 2 t, yellow 3 t, grey 4 t, red 5 t, brown 6 t, blue 8 t and orange 10 t or more. US round slings follow a different scale, so a green sling can mean 2 t or 5,300 lb depending on where it was made. Here is the chart — and why the label, not the colour, is the rating.',
-  categorySlug: 'lifting-rigging',
+  categorySlug: 'rigging-capacity-charts',
   authorSlug: 'ayush-bhatia',
   seoTitle: 'Sling colour code chart: EN 1492 webbing and round sling colours',
   seoDescription:
