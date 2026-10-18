@@ -1,0 +1,759 @@
+{
+ "source": "MannTek website (manntek.se) and configurator (configurator.manntek.se), fetched 2026-10-17 — Wave 3",
+ "imageDir": "",
+ "brandSlug": "manntek",
+ "specTemplateSlug": "industrial-coupling-spec",
+ "categories": [
+  {
+   "slug": "dry-disconnect-couplings",
+   "name": "Dry Disconnect Couplings",
+   "parentSlug": "industrial-hose-suppliers-uae",
+   "position": 12,
+   "shortDescription": "Dry disconnect couplings with a valve in both halves, so the line closes before it comes apart and nothing spills on disconnect. Fuel, chemical, LPG and aviation-fuel types from 1\" to 8\", tank units, hose units and their caps.",
+   "seoTitle": "Dry Disconnect Couplings",
+   "seoDescription": "Dry disconnect couplings for fuel, chemicals, LPG and aviation fuel: MannTek DDC, DGC and DAC tank and hose units 1\" to 8\", and Sealfast dry disconnects. From Indus Hydraulics, UAE.",
+   "focusKeyword": "dry disconnect couplings"
+  }
+ ],
+ "products": [
+  {
+   "sku": "IH-MNT-DEC-TU",
+   "slug": "manntek-dec-dry-evotek-coupling-tank-unit",
+   "title": "MannTek DEC Dry Evotek Coupling for Chemical, Food and Pharma, Tank Unit — 1\" to 3\"",
+   "category": "dry-disconnect-couplings",
+   "focusKeyword": "dry evotek coupling tank unit",
+   "descriptionShort": "MannTek DEC tank unit: a dry disconnect coupling with minimal dead space and FDA-approved wetted parts for chemical, food and pharmaceutical transfer. 1\" to 3\", stainless steel or Hastelloy, 25 bar, PED and ATEX 3G. Supplied by Indus Hydraulics, authorised MannTek distributor, UAE.",
+   "descriptionLong": "<p>The tank unit is the fixed half of a MannTek Dry Evotek Coupling, mounted on the tank, vessel, IBC or process connection. MannTek lists it for industrial process plant, road and rail tankers, IBC and ISO containers, and the pharmaceutical and petrochemical industries. A DEC hose unit couples to it.</p><p>MannTek developed the Dry Evotek Coupling (DEC) for the chemical, food and pharmaceutical industries. Dead spaces are kept to a minimum, so very little medium can collect inside the coupling: it drains and cleans well and the risk of product contamination is much lower. The coupling mechanism sits on the outside, which also makes the coupling itself easier to clean.</p><p>Like every MannTek dry coupling, the DEC opens the valves in both halves in one motion when it is connected and closes them before the halves separate. MannTek builds it to PED 2014/68/EU article 4.3 and ATEX 2014/34/EU category 3G, for liquid media and liquefied gases.</p><h3>Sizes and connections</h3><p>Five sizes: 1\" (DN 25), 1-1/4\" (DN 32), 1-1/2\" (DN 40), 2\" (DN 50) and 3\" (DN 80). Threaded connections are BSP or NPT, and flanges are to EN. Each size is a row in the Sizes &amp; Part Numbers tab.</p><h3>Construction</h3><ul><li>Body: stainless steel 1.4408 (AISI 316) or Hastelloy, machined from solid bar</li><li>Flanged versions in one piece, with no screwed or welded flanges; eccentric-flange versions available</li><li>Seals: FKM, NBR, FFKM or PTFE</li><li>All wetted parts FDA-approved (MannTek)</li><li>Working pressure: 25 bar (MannTek)</li></ul><p>Indus Hydraulics is an authorised MannTek distributor in the UAE and supplies MannTek couplings direct from MannTek in Sweden.</p><h3>How to order</h3><p>Send the size, the body material (stainless steel or Hastelloy), the connection (BSP or NPT thread size, or EN flange rating), the seal material and the medium. We confirm the MannTek order code, price and lead time with the quotation.</p>",
+   "seoTitle": "MannTek DEC Dry Evotek Coupling Tank Unit, 1\" to 3\"",
+   "seoDescription": "MannTek DEC Dry Evotek tank unit for chemical, food and pharma: minimal dead space, FDA wetted parts, stainless or Hastelloy, 1\" to 3\". Authorised distributor.",
+   "faqs": [
+    {
+     "question": "Where is the DEC tank unit mounted?",
+     "answer": "On the fixed side: the tank, vessel, IBC or process connection, threaded or on a one-piece EN flange, including eccentric flanges where the line must drain fully."
+    },
+    {
+     "question": "What makes the DEC suited to food and pharmaceutical transfer?",
+     "answer": "MannTek keeps dead spaces to a minimum and puts the coupling mechanism outside the media path, so little product is trapped and the coupling drains and cleans well. All wetted parts are FDA-approved."
+    },
+    {
+     "question": "Which body materials and seals are offered?",
+     "answer": "Stainless steel 1.4408 (AISI 316) or Hastelloy bodies, with FKM, NBR, FFKM or PTFE seals. Tell us the medium and the cleaning regime and we will propose a combination."
+    },
+    {
+     "question": "What pressure is the DEC rated for?",
+     "answer": "MannTek publishes 25 bar working pressure for the Dry Evotek Coupling."
+    },
+    {
+     "question": "Which approvals does it carry?",
+     "answer": "MannTek states the DEC is built to PED 2014/68/EU article 4.3 and ATEX 2014/34/EU category 3G, for liquid media and liquefied gases."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Coupling Family",
+     "value": "Dry Evotek Coupling",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "coupling_family"
+    },
+    {
+     "group": "Identification",
+     "label": "Coupling Type / Variant",
+     "value": "Tank unit (fixed half)",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "coupling_type"
+    },
+    {
+     "group": "Configuration",
+     "label": "End A Configuration",
+     "value": "DEC dry break interface with valve",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "end_a"
+    },
+    {
+     "group": "Configuration",
+     "label": "End B Configuration",
+     "value": "Female BSP or NPT thread, or one-piece EN flange (eccentric available)",
+     "unit": null,
+     "position": 3,
+     "isFilterable": true,
+     "templateKey": "end_b"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Size Range",
+     "value": "1\", 1-1/4\", 1-1/2\", 2\", 3\" (DN 25 to DN 80)",
+     "unit": null,
+     "position": 4,
+     "isFilterable": true,
+     "templateKey": "size_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Materials Available",
+     "value": "Stainless steel 1.4408 (AISI 316) or Hastelloy, from solid bar",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "materials_available"
+    },
+    {
+     "group": "Performance",
+     "label": "Working Pressure",
+     "value": "25 bar (MannTek)",
+     "unit": null,
+     "position": 6,
+     "isFilterable": true,
+     "templateKey": "working_pressure"
+    },
+    {
+     "group": "Construction",
+     "label": "Seal / Gasket",
+     "value": "FKM, NBR, FFKM or PTFE",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": "seal_or_gasket"
+    },
+    {
+     "group": "Compliance",
+     "label": "Applicable Standards",
+     "value": "PED 2014/68/EU art. 4.3; ATEX 2014/34/EU category 3G; wetted parts FDA-approved",
+     "unit": null,
+     "position": 8,
+     "isFilterable": false,
+     "templateKey": "applicable_standards"
+    },
+    {
+     "group": "Identification",
+     "label": "Notes",
+     "value": "MannTek order code confirmed with the quotation.",
+     "unit": null,
+     "position": 9,
+     "isFilterable": false,
+     "templateKey": "notes"
+    },
+    {
+     "group": "Identification",
+     "label": "Manufacturer",
+     "value": "MannTek (Mann Teknik AB), Mariestad, Sweden",
+     "unit": null,
+     "position": 10,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Construction",
+     "label": "Dead space",
+     "value": "Minimised, with the coupling mechanism outside the media path (MannTek)",
+     "unit": null,
+     "position": 11,
+     "isFilterable": false,
+     "templateKey": null
+    }
+   ],
+   "searchAliases": [
+    "dry evotek coupling",
+    "DEC coupling",
+    "hygienic dry disconnect",
+    "pharmaceutical dry coupling",
+    "food grade dry break coupling",
+    "FDA dry disconnect",
+    "Hastelloy coupling",
+    "MannTek",
+    "Mann Tek"
+   ],
+   "images": [
+    {
+     "file": "manntek-01-dec-chinaversion113-r.jpg",
+     "alt": "MannTek Dry Evotek DEC range: flanged and threaded tank units with a hose unit on its handwheel",
+     "caption": "MannTek website product page image (fetched 2026-10-17). Maker's own image."
+    },
+    {
+     "file": "manntek-02-flange-connection.jpg",
+     "alt": "MannTek DEC tank unit with one-piece flange, no screwed or welded joint, close-up",
+     "caption": "MannTek website product page image (fetched 2026-10-17). Maker's own image."
+    },
+    {
+     "file": "manntek-03-minimal-dead-space.jpg",
+     "alt": "MannTek DEC tank unit coupling face with external locking mechanism and minimal dead space",
+     "caption": "MannTek website product page image (fetched 2026-10-17). Maker's own image."
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-MNT-DEC-TU-025",
+     "position": 0,
+     "dimensions": {
+      "bodySize": "Ø 56 mm",
+      "ports": "BSP, NPT",
+      "mount": "EN",
+      "item": "Body: stainless steel 1.4408 (AISI 316) or Hastelloy"
+     },
+     "hoseInch": "1\" (DN 25)",
+     "hoseDn": null,
+     "pressureBar": 25,
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "hoseDash": null
+    },
+    {
+     "partNumber": "IH-MNT-DEC-TU-032",
+     "position": 1,
+     "dimensions": {
+      "ports": "BSP, NPT",
+      "mount": "EN",
+      "item": "Body: stainless steel 1.4408 (AISI 316) or Hastelloy"
+     },
+     "hoseInch": "1-1/4\" (DN 32)",
+     "hoseDn": null,
+     "pressureBar": 25,
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "hoseDash": null
+    },
+    {
+     "partNumber": "IH-MNT-DEC-TU-040",
+     "position": 2,
+     "dimensions": {
+      "ports": "BSP, NPT",
+      "mount": "EN",
+      "item": "Body: stainless steel 1.4408 (AISI 316) or Hastelloy"
+     },
+     "hoseInch": "1-1/2\" (DN 40)",
+     "hoseDn": null,
+     "pressureBar": 25,
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "hoseDash": null
+    },
+    {
+     "partNumber": "IH-MNT-DEC-TU-050",
+     "position": 3,
+     "dimensions": {
+      "bodySize": "Ø 70 mm",
+      "ports": "BSP, NPT",
+      "mount": "EN",
+      "item": "Body: stainless steel 1.4408 (AISI 316) or Hastelloy"
+     },
+     "hoseInch": "2\" (DN 50)",
+     "hoseDn": null,
+     "pressureBar": 25,
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "hoseDash": null
+    },
+    {
+     "partNumber": "IH-MNT-DEC-TU-080",
+     "position": 4,
+     "dimensions": {
+      "bodySize": "Ø 119 mm",
+      "ports": "BSP, NPT",
+      "mount": "EN",
+      "item": "Body: stainless steel 1.4408 (AISI 316) or Hastelloy"
+     },
+     "hoseInch": "3\" (DN 80)",
+     "hoseDn": null,
+     "pressureBar": 25,
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "hoseDash": null
+    }
+   ],
+   "crossReferences": []
+  },
+  {
+   "sku": "IH-MNT-DEC-HU",
+   "slug": "manntek-dec-dry-evotek-coupling-hose-unit",
+   "title": "MannTek DEC Dry Evotek Coupling for Chemical, Food and Pharma, Hose Unit — 1\" to 3\"",
+   "category": "dry-disconnect-couplings",
+   "focusKeyword": "dry evotek coupling hose unit",
+   "descriptionShort": "MannTek DEC hose unit: a dry disconnect coupling with minimal dead space and FDA-approved wetted parts for chemical, food and pharmaceutical transfer. 1\" to 3\", stainless steel or Hastelloy, 25 bar, PED and ATEX 3G. Supplied by Indus Hydraulics, authorised MannTek distributor, UAE.",
+   "descriptionLong": "<p>The hose unit is the moving half of a MannTek Dry Evotek Coupling, fitted to the transfer hose. The 1\" and 1-1/4\" hose units have a knurled sleeve; from 1-1/2\" the hose unit has a handwheel that also works as a protective ring, in composite (standard) or aluminium.</p><p>MannTek developed the Dry Evotek Coupling (DEC) for the chemical, food and pharmaceutical industries. Dead spaces are kept to a minimum, so very little medium can collect inside the coupling: it drains and cleans well and the risk of product contamination is much lower. The coupling mechanism sits on the outside, which also makes the coupling itself easier to clean.</p><p>Like every MannTek dry coupling, the DEC opens the valves in both halves in one motion when it is connected and closes them before the halves separate. MannTek builds it to PED 2014/68/EU article 4.3 and ATEX 2014/34/EU category 3G, for liquid media and liquefied gases.</p><h3>Sizes and connections</h3><p>Five sizes: 1\" (DN 25), 1-1/4\" (DN 32), 1-1/2\" (DN 40), 2\" (DN 50) and 3\" (DN 80). Threaded connections are BSP or NPT, and flanges are to EN. Each size is a row in the Sizes &amp; Part Numbers tab.</p><h3>Construction</h3><ul><li>Body: stainless steel 1.4408 (AISI 316) or Hastelloy, machined from solid bar</li><li>Flanged versions in one piece, with no screwed or welded flanges; eccentric-flange versions available</li><li>Seals: FKM, NBR, FFKM or PTFE</li><li>All wetted parts FDA-approved (MannTek)</li><li>Working pressure: 25 bar (MannTek)</li></ul><p>Indus Hydraulics is an authorised MannTek distributor in the UAE and supplies MannTek couplings direct from MannTek in Sweden.</p><h3>How to order</h3><p>Send the size, the body material (stainless steel or Hastelloy), the connection (BSP or NPT thread size, or EN flange rating), the seal material and the medium. We confirm the MannTek order code, price and lead time with the quotation.</p>",
+   "seoTitle": "MannTek DEC Dry Evotek Coupling Hose Unit, 1\" to 3\"",
+   "seoDescription": "MannTek DEC Dry Evotek hose unit for chemical, food and pharma: minimal dead space, FDA wetted parts, stainless or Hastelloy, 1\" to 3\". Authorised distributor.",
+   "faqs": [
+    {
+     "question": "Why does the hose unit have a handwheel?",
+     "answer": "From 1-1/2\" the handwheel turns the coupling and also works as a protective ring. MannTek makes it in composite as standard or in aluminium. The 1\" and 1-1/4\" units use a knurled sleeve."
+    },
+    {
+     "question": "What makes the DEC suited to food and pharmaceutical transfer?",
+     "answer": "MannTek keeps dead spaces to a minimum and puts the coupling mechanism outside the media path, so little product is trapped and the coupling drains and cleans well. All wetted parts are FDA-approved."
+    },
+    {
+     "question": "Which body materials and seals are offered?",
+     "answer": "Stainless steel 1.4408 (AISI 316) or Hastelloy bodies, with FKM, NBR, FFKM or PTFE seals. Tell us the medium and the cleaning regime and we will propose a combination."
+    },
+    {
+     "question": "What pressure is the DEC rated for?",
+     "answer": "MannTek publishes 25 bar working pressure for the Dry Evotek Coupling."
+    },
+    {
+     "question": "Which approvals does it carry?",
+     "answer": "MannTek states the DEC is built to PED 2014/68/EU article 4.3 and ATEX 2014/34/EU category 3G, for liquid media and liquefied gases."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Coupling Family",
+     "value": "Dry Evotek Coupling",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "coupling_family"
+    },
+    {
+     "group": "Identification",
+     "label": "Coupling Type / Variant",
+     "value": "Hose unit (moving half)",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "coupling_type"
+    },
+    {
+     "group": "Configuration",
+     "label": "End A Configuration",
+     "value": "DEC dry break interface with valve",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "end_a"
+    },
+    {
+     "group": "Configuration",
+     "label": "End B Configuration",
+     "value": "Female BSP or NPT thread, or one-piece EN flange (eccentric available)",
+     "unit": null,
+     "position": 3,
+     "isFilterable": true,
+     "templateKey": "end_b"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Size Range",
+     "value": "1\", 1-1/4\", 1-1/2\", 2\", 3\" (DN 25 to DN 80)",
+     "unit": null,
+     "position": 4,
+     "isFilterable": true,
+     "templateKey": "size_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Materials Available",
+     "value": "Stainless steel 1.4408 (AISI 316) or Hastelloy, from solid bar",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "materials_available"
+    },
+    {
+     "group": "Performance",
+     "label": "Working Pressure",
+     "value": "25 bar (MannTek)",
+     "unit": null,
+     "position": 6,
+     "isFilterable": true,
+     "templateKey": "working_pressure"
+    },
+    {
+     "group": "Construction",
+     "label": "Seal / Gasket",
+     "value": "FKM, NBR, FFKM or PTFE",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": "seal_or_gasket"
+    },
+    {
+     "group": "Compliance",
+     "label": "Applicable Standards",
+     "value": "PED 2014/68/EU art. 4.3; ATEX 2014/34/EU category 3G; wetted parts FDA-approved",
+     "unit": null,
+     "position": 8,
+     "isFilterable": false,
+     "templateKey": "applicable_standards"
+    },
+    {
+     "group": "Identification",
+     "label": "Notes",
+     "value": "MannTek order code confirmed with the quotation.",
+     "unit": null,
+     "position": 9,
+     "isFilterable": false,
+     "templateKey": "notes"
+    },
+    {
+     "group": "Identification",
+     "label": "Manufacturer",
+     "value": "MannTek (Mann Teknik AB), Mariestad, Sweden",
+     "unit": null,
+     "position": 10,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Construction",
+     "label": "Dead space",
+     "value": "Minimised, with the coupling mechanism outside the media path (MannTek)",
+     "unit": null,
+     "position": 11,
+     "isFilterable": false,
+     "templateKey": null
+    }
+   ],
+   "searchAliases": [
+    "dry evotek coupling",
+    "DEC coupling",
+    "hygienic dry disconnect",
+    "pharmaceutical dry coupling",
+    "food grade dry break coupling",
+    "FDA dry disconnect",
+    "Hastelloy coupling",
+    "MannTek",
+    "Mann Tek"
+   ],
+   "images": [
+    {
+     "file": "manntek-07-dechu1.jpg",
+     "alt": "MannTek DEC 1\" hose unit with knurled stainless sleeve, coupling face view",
+     "caption": "MannTek website product page image (fetched 2026-10-17). Maker's own image."
+    },
+    {
+     "file": "manntek-10-dechu4.jpg",
+     "alt": "MannTek DEC 2\" hose unit with white composite handwheel and female thread",
+     "caption": "MannTek website product page image (fetched 2026-10-17). Maker's own image."
+    },
+    {
+     "file": "manntek-04-handles-funktion-as-protective-ring.jpg",
+     "alt": "MannTek DEC handwheel that doubles as a protective ring around the hose unit, close-up",
+     "caption": "MannTek website product page image (fetched 2026-10-17). Maker's own image."
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-MNT-DEC-HU-025",
+     "position": 0,
+     "dimensions": {
+      "bodySize": "Ø 56 mm",
+      "ports": "BSP, NPT",
+      "mount": "EN",
+      "item": "Body: stainless steel 1.4408 (AISI 316) or Hastelloy"
+     },
+     "hoseInch": "1\" (DN 25)",
+     "hoseDn": null,
+     "pressureBar": 25,
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "hoseDash": null
+    },
+    {
+     "partNumber": "IH-MNT-DEC-HU-032",
+     "position": 1,
+     "dimensions": {
+      "ports": "BSP, NPT",
+      "mount": "EN",
+      "item": "Body: stainless steel 1.4408 (AISI 316) or Hastelloy"
+     },
+     "hoseInch": "1-1/4\" (DN 32)",
+     "hoseDn": null,
+     "pressureBar": 25,
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "hoseDash": null
+    },
+    {
+     "partNumber": "IH-MNT-DEC-HU-040",
+     "position": 2,
+     "dimensions": {
+      "ports": "BSP, NPT",
+      "mount": "EN",
+      "item": "Body: stainless steel 1.4408 (AISI 316) or Hastelloy"
+     },
+     "hoseInch": "1-1/2\" (DN 40)",
+     "hoseDn": null,
+     "pressureBar": 25,
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "hoseDash": null
+    },
+    {
+     "partNumber": "IH-MNT-DEC-HU-050",
+     "position": 3,
+     "dimensions": {
+      "bodySize": "Ø 70 mm",
+      "ports": "BSP, NPT",
+      "mount": "EN",
+      "item": "Body: stainless steel 1.4408 (AISI 316) or Hastelloy"
+     },
+     "hoseInch": "2\" (DN 50)",
+     "hoseDn": null,
+     "pressureBar": 25,
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "hoseDash": null
+    },
+    {
+     "partNumber": "IH-MNT-DEC-HU-080",
+     "position": 4,
+     "dimensions": {
+      "bodySize": "Ø 119 mm",
+      "ports": "BSP, NPT",
+      "mount": "EN",
+      "item": "Body: stainless steel 1.4408 (AISI 316) or Hastelloy"
+     },
+     "hoseInch": "3\" (DN 80)",
+     "hoseDn": null,
+     "pressureBar": 25,
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "hoseDash": null
+    }
+   ],
+   "crossReferences": []
+  },
+  {
+   "sku": "IH-MNT-RDME",
+   "slug": "manntek-rdme-coupling-lpg-blending",
+   "title": "MannTek rDME Coupling for rDME and LPG Blends, Tank and Hose Unit — 2\"",
+   "category": "dry-disconnect-couplings",
+   "focusKeyword": "rdme coupling",
+   "descriptionShort": "MannTek rDME Coupling: a dry gas coupling developed for renewable dimethyl ether (rDME) at any concentration blended into LPG. Anticlockwise connection prevents cross-connection with LPG couplings. 2\", stainless steel, FFKM seals, 25 bar. From Indus Hydraulics, authorised MannTek distributor, UAE.",
+   "descriptionLong": "<p>MannTek developed the rDME Coupling from its Dry Gas Coupling (DGC) to handle renewable dimethyl ether (rDME) at any concentration, for blending rDME into LPG. It is listed here as tank unit and hose unit in the 2\" size.</p><h3>Why a separate coupling</h3><p>To keep the highest level of safety and prevent cross-connection in the LPG industry, the rDME Coupling connects with an anticlockwise motion, the opposite of a Dry Gas Coupling. An rDME hose unit therefore cannot be connected to an ordinary DGC tank unit by mistake, or the other way round.</p><h3>Specification</h3><ul><li>Size: 2\" (DN 50), socket Ø 70 mm</li><li>Body: stainless steel</li><li>Seals: FFKM</li><li>Working pressure: up to 25 bar; MannTek optimised connection and disconnection at these higher pressures</li><li>Threaded (1-1/2\" or 2\" BSP, NPT or ACME) or flanged (ANSI, EN) connections, on tank unit and hose unit</li><li>Flow: up to 900 L/min (MannTek)</li></ul><h3>Where it is used</h3><p>Loading and unloading road and rail tankers and ships, bobtails, and delivery to customer storage tanks: the same duties as a Dry Gas Coupling, for terminals and distributors handling rDME blends.</p><p>MannTek's LPG business development team presents the coupling in a video on MannTek's site. Like the DGC it opens the valves in both halves in one motion and closes them before the halves separate, so the line disconnects with minimal product loss.</p><p>MannTek's future-fuel range also covers LNG, methanol, ammonia, hydrogen and carbon capture. The LNG and cryogenic couplings, breakaways and emergency release couplings are on our LNG &amp; Cryogenic Couplings shelf.</p><p>Indus Hydraulics is an authorised MannTek distributor in the UAE and supplies MannTek couplings direct from MannTek in Sweden.</p><h3>How to order</h3><p>Send the half (tank unit or hose unit), the connection (BSP, NPT or ACME thread, or ANSI / EN flange) and the rDME blend. We confirm the MannTek order code, price and lead time with the quotation.</p>",
+   "seoTitle": "MannTek rDME Coupling for rDME / LPG Blends, 2\"",
+   "seoDescription": "MannTek rDME coupling for renewable DME blended into LPG: anticlockwise connection, stainless, FFKM seals, 25 bar, 2\". Authorised MannTek distributor, UAE.",
+   "faqs": [
+    {
+     "question": "What is rDME?",
+     "answer": "Renewable dimethyl ether, a gas blended into LPG. MannTek developed this coupling to transfer rDME at any concentration in LPG."
+    },
+    {
+     "question": "Why does it connect anticlockwise?",
+     "answer": "So it cannot be cross-connected with ordinary LPG equipment. A Dry Gas Coupling connects clockwise; the rDME Coupling connects the opposite way."
+    },
+    {
+     "question": "Can I use a standard Dry Gas Coupling for rDME blends?",
+     "answer": "MannTek developed the rDME Coupling specifically for rDME at any concentration, with FFKM seals. Tell us the blend and the installation and we will confirm the right coupling."
+    },
+    {
+     "question": "Which sizes are available?",
+     "answer": "MannTek lists the rDME Coupling in 2\" (DN 50), as tank unit and hose unit, with threaded or flanged connections."
+    },
+    {
+     "question": "What pressure is it rated for?",
+     "answer": "Up to 25 bar working pressure. MannTek optimised it for connecting and disconnecting at these higher pressures."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Coupling Family",
+     "value": "rDME Coupling (dry gas)",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "coupling_family"
+    },
+    {
+     "group": "Identification",
+     "label": "Coupling Type / Variant",
+     "value": "Tank unit and hose unit; anticlockwise connection",
+     "unit": null,
+     "position": 1,
+     "isFilterable": true,
+     "templateKey": "coupling_type"
+    },
+    {
+     "group": "Configuration",
+     "label": "End A Configuration",
+     "value": "rDME dry break interface with valve (anticlockwise, not cross-compatible with DGC)",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "end_a"
+    },
+    {
+     "group": "Configuration",
+     "label": "End B Configuration",
+     "value": "1-1/2\" or 2\" BSP, NPT or ACME thread, or ANSI / EN flange",
+     "unit": null,
+     "position": 3,
+     "isFilterable": true,
+     "templateKey": "end_b"
+    },
+    {
+     "group": "Dimensions",
+     "label": "Size Range",
+     "value": "2\" (DN 50, socket Ø 70 mm)",
+     "unit": null,
+     "position": 4,
+     "isFilterable": true,
+     "templateKey": "size_range"
+    },
+    {
+     "group": "Construction",
+     "label": "Materials Available",
+     "value": "Stainless steel",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "materials_available"
+    },
+    {
+     "group": "Performance",
+     "label": "Working Pressure",
+     "value": "Up to 25 bar (MannTek)",
+     "unit": null,
+     "position": 6,
+     "isFilterable": true,
+     "templateKey": "working_pressure"
+    },
+    {
+     "group": "Construction",
+     "label": "Seal / Gasket",
+     "value": "FFKM",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": "seal_or_gasket"
+    },
+    {
+     "group": "Identification",
+     "label": "Notes",
+     "value": "MannTek order code confirmed with the quotation.",
+     "unit": null,
+     "position": 8,
+     "isFilterable": false,
+     "templateKey": "notes"
+    },
+    {
+     "group": "Identification",
+     "label": "Manufacturer",
+     "value": "MannTek (Mann Teknik AB), Mariestad, Sweden",
+     "unit": null,
+     "position": 9,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Performance",
+     "label": "Flow capacity",
+     "value": "Up to 900 L/min, as published by MannTek",
+     "unit": null,
+     "position": 10,
+     "isFilterable": false,
+     "templateKey": null
+    },
+    {
+     "group": "Identification",
+     "label": "Medium",
+     "value": "rDME at any concentration blended into LPG",
+     "unit": null,
+     "position": 11,
+     "isFilterable": false,
+     "templateKey": null
+    }
+   ],
+   "searchAliases": [
+    "rDME coupling",
+    "renewable DME coupling",
+    "dimethyl ether coupling",
+    "LPG rDME blend coupling",
+    "future fuels coupling",
+    "MannTek",
+    "Mann Tek"
+   ],
+   "images": [
+    {
+     "file": "manntek-01-rdme307-lbox-1104x800-ffffff.jpg",
+     "alt": "MannTek 2\" rDME hose unit with orange and green handles beside its stainless tank unit",
+     "caption": "MannTek website product page image (fetched 2026-10-17). Maker's own image."
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-MNT-RDME-TU-050",
+     "position": 0,
+     "dimensions": {
+      "half": "Tank unit",
+      "bodySize": "Ø 70 mm",
+      "ports": "1-1/2\", 2\" BSP, NPT, ACME",
+      "mount": "ANSI, EN",
+      "maxFlowLpm": 900,
+      "item": "Body: stainless steel. Seals: FFKM"
+     },
+     "hoseInch": "2\" (DN 50)",
+     "hoseDn": null,
+     "pressureBar": 25,
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "hoseDash": null
+    },
+    {
+     "partNumber": "IH-MNT-RDME-HU-050",
+     "position": 1,
+     "dimensions": {
+      "half": "Hose unit",
+      "bodySize": "Ø 70 mm",
+      "ports": "1-1/2\", 2\" BSP, NPT, ACME",
+      "mount": "ANSI, EN",
+      "maxFlowLpm": 900,
+      "item": "Body: stainless steel. Seals: FFKM"
+     },
+     "hoseInch": "2\" (DN 50)",
+     "hoseDn": null,
+     "pressureBar": 25,
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null,
+     "hoseDash": null
+    }
+   ],
+   "crossReferences": []
+  }
+ ],
+ "hold": []
+}
