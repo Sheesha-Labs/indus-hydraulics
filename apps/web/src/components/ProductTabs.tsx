@@ -4,6 +4,8 @@ import { useState, type ReactNode } from 'react'
 import Link from 'next/link'
 import {
   competitorBrandSlug,
+  documentKindBadge,
+  documentKindLabel,
   replacementUrlPath,
   type ProductAvailability,
   type VariantLike,
@@ -269,11 +271,11 @@ export default function ProductTabs({
               {documents.map((doc) => (
                 <div key={doc.id} className="flex items-center gap-4 p-4 border border-ih-border bg-ih-surface">
                   <div className="w-9 h-11 bg-ih-bg border border-ih-border grid place-items-center font-mono text-[9px] font-semibold text-ih-accent shrink-0">
-                    {doc.kind.toUpperCase().slice(0, 4)}
+                    {documentKindBadge(doc.kind)}
                   </div>
                   <div className="flex-1 min-w-0">
                     <div className="text-[14px] font-medium truncate">{doc.title}</div>
-                    <div className="font-mono text-[11px] text-ih-muted mt-0.5">{doc.kind} · {doc.language.toUpperCase()}</div>
+                    <div className="font-mono text-[11px] text-ih-muted mt-0.5">{documentKindLabel(doc.kind)} · {doc.language.toUpperCase()}</div>
                   </div>
                   {/*
                     Always a link. /api/documents/<id> checks the session at
