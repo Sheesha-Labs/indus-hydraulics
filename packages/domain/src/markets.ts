@@ -2690,6 +2690,218 @@ export const MARKETS: Market[] = [
     },
     position: 126,
   },
+  {
+    slug: 'jordan',
+    name: 'Jordan',
+    countryCode: 'JO',
+    summary:
+      'Hydraulic hose, fittings, adapters, valves and industrial hose supplied to Jordan from our Dubai warehouse, by road across Saudi Arabia or by sea into Aqaba.',
+    intro:
+      'Jordan is the furthest point a truck from our Dubai warehouse reaches: across Saudi Arabia in transit and into the Kingdom at Al-Omari. Heavier cargo goes by sea to Aqaba instead, on the Red Sea, with no canal in the way.',
+    leadTime: 'Typically 5–15 working days from dispatch',
+    routes: ['Road freight across Saudi Arabia', 'Sea freight into Aqaba', 'Air freight where the schedule is tighter'],
+    incoterms: ['DAP to the buyer’s site', 'CIF Aqaba', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
+    conformity: [
+      'Certificate of Origin, Dubai Chamber attested',
+      'JSMO conformity where a line is a regulated product',
+    ],
+    context: {
+      heading: 'Inside the Aqaba zone, or beyond it',
+      body: 'Aqaba is a Special Economic Zone with its own customs treatment, and that makes the consignee a decision rather than a formality. Goods delivered to a buyer inside the zone are handled differently from goods entering the rest of the country, and moving them out of the zone later is a customs event in its own right, with its own duty and paperwork. So the question we ask at quotation is where the goods will actually be used. A port contractor in Aqaba and a phosphate mine in Ma’an can be supplied off the same vessel, on two different declarations, and getting that right before the container is loaded costs nothing.',
+    },
+    position: 127,
+  },
+  {
+    slug: 'lebanon',
+    name: 'Lebanon',
+    countryCode: 'LB',
+    summary:
+      'Hydraulic hose, fittings, adapters, valves and industrial hose supplied to Lebanon from our Dubai warehouse by sea into Beirut, quoted per consignment.',
+    intro:
+      'Lebanon is supplied by sea through Suez into Beirut or Tripoli, because the overland route from the Gulf runs through Syria. Counterparty screening and the payment route are both agreed before an Estimate is issued.',
+    leadTime: 'Quoted per consignment',
+    routes: ['Sea freight through Suez', 'Air freight where the schedule is tighter'],
+    incoterms: ['CIF Beirut', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
+    conformity: [
+      'Certificate of Origin, Dubai Chamber attested',
+      'Further legalisation where the consignee’s bank asks for it',
+    ],
+    context: {
+      heading: 'Payment is settled before the price',
+      body: 'Lebanese buyers have worked through a banking crisis since 2019, and a quotation that assumes an ordinary documentary credit can be accurate on price and still impossible to accept. So the order of work is reversed here. We agree how the consignment will be paid for — in advance, or against a letter of credit confirmed by a bank we can work with — before we quote, and we screen the counterparty at the same point, because designated-party lists include Lebanese entities. Once both are settled the rest is ordinary freight, and an Estimate you can actually act on.',
+    },
+    position: 128,
+  },
+  {
+    slug: 'india',
+    name: 'India',
+    countryCode: 'IN',
+    summary:
+      'API-monogrammed, sour-service and unusual-pattern hydraulic equipment supplied to India from our Dubai warehouse by sea into Nhava Sheva and Mundra, quoted per consignment.',
+    intro:
+      'India has one of the deepest domestic hose and fittings industries anywhere, so the case for a Dubai warehouse is narrow and specific: the items domestic distributors do not hold quickly, five to eight days away by sea.',
+    leadTime: 'Quoted per consignment',
+    routes: ['Sea freight to Nhava Sheva or Mundra', 'Air freight where the schedule is tighter'],
+    incoterms: ['CIF Nhava Sheva or Mundra', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
+    conformity: [
+      'Certificate of Origin, Dubai Chamber attested',
+      'BIS licence where a line falls under a Quality Control Order',
+      'Material and test certificates on request',
+    ],
+    context: {
+      heading: 'The wrong supplier for standard items, on purpose',
+      body: 'For an ordinary SAE or EN hose assembly an Indian buyer should buy from an Indian distributor, and saying so is what makes the rest of this page credible. Where we are useful is the gap: API 6A wellhead parts and API 7K drilling hose with the monogram intact, assemblies for sour service with their NACE material file, GOST and DIN patterns on imported plant that nobody local keeps on the shelf. The other case is a contractor building abroad. A package for a site in the Gulf, Africa or Central Asia can leave Dubai for the site directly, rather than travelling into India to be shipped out again.',
+    },
+    position: 129,
+  },
+  {
+    slug: 'pakistan',
+    name: 'Pakistan',
+    countryCode: 'PK',
+    summary:
+      'Hydraulic hose, fittings, adapters, valves and industrial hose supplied to Pakistan from our Dubai warehouse by sea into Karachi and Port Qasim, quoted per consignment.',
+    intro:
+      'Pakistan is a few days across the Arabian Sea from Jebel Ali, which makes the vessel the easy part. The order is governed by the importer’s bank registration on the Pakistan Single Window and by the origin of every line.',
+    leadTime: 'Quoted per consignment',
+    routes: ['Sea freight to Port Qasim or Karachi', 'Air freight where the schedule is tighter'],
+    incoterms: ['CFR or CIF Karachi', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
+    conformity: [
+      'Certificate of Origin, Dubai Chamber attested',
+      'Origin of every line confirmed at quotation',
+    ],
+    context: {
+      heading: 'Origin is checked line by line',
+      body: 'Pakistan does not admit goods of Indian origin, and the rule follows the goods rather than the route: a fitting made in India is still refused when it arrives from Dubai. On a mixed hydraulic order that is a live risk, because the same part number is often made in several countries and a distributor’s stock can hold more than one source. We confirm the origin of every line before quoting, and where a part we hold is Indian-made we say so and offer a make that is not. It is far cheaper to settle that on the Estimate than at Port Qasim.',
+    },
+    position: 130,
+  },
+  {
+    slug: 'bangladesh',
+    name: 'Bangladesh',
+    countryCode: 'BD',
+    summary:
+      'Hydraulic hose, fittings, adapters, valves and industrial hose supplied to Bangladesh from our Dubai warehouse by sea into Chattogram, quoted per consignment.',
+    intro:
+      'Bangladesh is close on the map and two to three weeks away in practice, because Chattogram is served by feeders out of Colombo and Singapore rather than by the mainline vessels that leave Jebel Ali.',
+    leadTime: 'Quoted per consignment',
+    routes: ['Sea freight to Chattogram, transhipped', 'Air freight into Dhaka where the schedule is tighter'],
+    incoterms: ['CFR or CIF Chattogram', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
+    conformity: [
+      'Certificate of Origin, Dubai Chamber attested',
+      'Documents matched to the importer’s letter of credit',
+    ],
+    context: {
+      heading: 'The proforma is the document that matters',
+      body: 'Almost every import into Bangladesh is opened as a letter of credit against the supplier’s proforma invoice, and the shipping documents are then checked against the credit word for word. That makes the proforma the master copy for the whole consignment. A part number corrected after the credit is opened becomes an amendment at the importer’s bank, with fees and a delay attached, and a description that drifts between the credit and the invoice is a discrepancy the bank can refuse to pay against. We confirm the part list, the quantities and the Incoterm before issuing it, so the credit is opened once.',
+    },
+    position: 131,
+  },
+  {
+    slug: 'sri-lanka',
+    name: 'Sri Lanka',
+    countryCode: 'LK',
+    summary:
+      'Hydraulic hose, fittings, adapters, valves and industrial hose supplied to Sri Lanka from our Dubai warehouse on direct sailings into Colombo, quoted per consignment.',
+    intro:
+      'Sri Lanka is served on direct mainline sailings from Jebel Ali to Colombo, about a week to the quay. It is also a useful place to meet a ship, since so much of the Indian Ocean’s traffic calls there.',
+    leadTime: 'Quoted per consignment',
+    routes: ['Sea freight to Colombo', 'Air freight where the schedule is tighter'],
+    incoterms: ['CIF Colombo', 'DAP to the buyer’s site', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
+    conformity: [
+      'Certificate of Origin, Dubai Chamber attested',
+      'SLSI import inspection where a line is on the scheme',
+    ],
+    context: {
+      heading: 'Spares delivered to the ship, not the warehouse',
+      body: 'Colombo handles a large share of the transshipment traffic crossing the Indian Ocean, and a vessel calling there for a few days is often the cheapest place to put a hydraulic repair right. The spares have to be in the agent’s hands before the ship arrives, which works when the order is consolidated in Dubai and sailed direct a week earlier. Tell us the vessel, the call and the agent with the order and we pack and label against the ship rather than against a site, with the documents the agent needs to bring it alongside.',
+    },
+    position: 132,
+  },
+  {
+    slug: 'turkmenistan',
+    name: 'Turkmenistan',
+    countryCode: 'TM',
+    summary:
+      'Hydraulic hose, fittings, adapters and gas-field equipment supplied to Turkmenistan from our Dubai warehouse by air via Baku or the Middle Corridor, quoted per consignment.',
+    intro:
+      'Turkmenistan borders Iran along almost its whole southern edge, and we do not move goods through Iran. That one rule decides the routing: air via Baku for most orders, the Middle Corridor and the Caspian ferry for volume.',
+    leadTime: 'Quoted per consignment',
+    routes: ['Air freight via Baku', 'Sea, rail and Caspian ferry to Turkmenbashi'],
+    incoterms: ['CIP Ashgabat', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
+    conformity: [
+      'Certificate of Origin, Dubai Chamber attested',
+      'Contract registered with the State Commodity and Raw Materials Exchange',
+    ],
+    context: {
+      heading: 'Register the contract once, in its final form',
+      body: 'Foreign-trade contracts in Turkmenistan are registered with the State Commodity and Raw Materials Exchange before they are performed, and the registered terms are what payment and customs are later measured against. A contract changed after registration is a second registration, so the work that elsewhere happens at order confirmation has to happen earlier here. That means the part numbers, quantities, prices and Incoterm on the Estimate should be the ones you intend to register, and a substitution is better raised at quotation than after. We hold the quoted terms while the registration runs.',
+    },
+    position: 133,
+  },
+  {
+    slug: 'benin',
+    name: 'Benin',
+    countryCode: 'BJ',
+    summary:
+      'Hydraulic hose, fittings, adapters, valves and industrial hose supplied to Benin from our Dubai warehouse by sea into Cotonou, quoted per consignment.',
+    intro:
+      'Benin is reached by sea around the Cape into Cotonou, with an electronic cargo tracking note raised before the vessel arrives and a document set in French that has to agree with the declaration line for line.',
+    leadTime: 'Quoted per consignment',
+    routes: ['Sea freight to Cotonou, via the Cape', 'Air freight where the schedule is tighter'],
+    incoterms: ['CIF Cotonou', 'DAP to the buyer’s site', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
+    conformity: [
+      'Certificate of Origin, Dubai Chamber attested',
+      'BESC electronic cargo tracking note',
+      'Commercial documents in French',
+    ],
+    context: {
+      heading: 'A gateway port with a closed back door',
+      body: 'For years Cotonou was the obvious port for Niger as well as for Benin, and a lot of published routing still says so. Since 2023 the border with Niger has been closed or restricted, and cargo that would once have run north from Cotonou has been finding other corridors. For a buyer in Benin that changes nothing. For a buyer beyond it, it means a routing that looks right on a map has to be confirmed against what is crossing at the time of shipment, and we would rather quote Lomé honestly than Cotonou optimistically.',
+    },
+    position: 134,
+  },
+  {
+    slug: 'togo',
+    name: 'Togo',
+    countryCode: 'TG',
+    summary:
+      'Hydraulic hose, fittings, adapters, valves and industrial hose supplied to Togo from our Dubai warehouse by sea into Lomé, quoted per consignment.',
+    intro:
+      'Togo is served through Lomé, a deep-water port with mainline calls round the Cape and the head of the road corridor north into the Sahel. A good deal of what lands there is bound somewhere else.',
+    leadTime: 'Quoted per consignment',
+    routes: ['Sea freight to Lomé, via the Cape', 'Air freight where the schedule is tighter'],
+    incoterms: ['CIF Lomé', 'DAP to the buyer’s site', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
+    conformity: [
+      'Certificate of Origin, Dubai Chamber attested',
+      'Commercial documents in French',
+    ],
+    context: {
+      heading: 'Import or transit, decided before it sails',
+      body: 'Lomé serves Burkina Faso, Niger and Mali as well as Togo, and every consignment landed there moves under one of two declarations: entered and cleared in Togo, or declared through it to a country beyond. The choice is made before the container is loaded, because the documents differ and turning an import into a transit consignment at the quay — or the reverse — costs a trip through customs and the time that goes with it. Tell us where the goods will be used rather than where they will land, and we prepare the set for that.',
+    },
+    position: 135,
+  },
+  {
+    slug: 'papua-new-guinea',
+    name: 'Papua New Guinea',
+    countryCode: 'PG',
+    summary:
+      'Hydraulic hose, fittings, adapters and mining and LNG equipment supplied to Papua New Guinea from our Dubai warehouse by sea into Lae and Port Moresby, quoted per consignment.',
+    intro:
+      'Papua New Guinea is the far end of the Malacca lane, transhipped at Singapore onto a feeder for Lae or Port Moresby. The two ports have no road between them, and most of the mines are a long way from either.',
+    leadTime: 'Quoted per consignment',
+    routes: ['Sea freight to Lae or Port Moresby, transhipped at Singapore', 'Air freight where the schedule is tighter'],
+    incoterms: ['CIF Lae or Port Moresby', 'FOB Jebel Ali', 'EXW Dubai for a nominated forwarder'],
+    conformity: [
+      'Certificate of Origin, Dubai Chamber attested',
+      'ISPM 15 treated timber packing',
+    ],
+    context: {
+      heading: 'Plan the leg after the quay with the order',
+      body: 'A container landed at Lae is not yet at a mine in the Highlands or on an island in New Ireland, and the last few hundred kilometres can take longer than the sea leg from Singapore. Sites are supplied through their own logistics bases by highway, barge or air, each with its own weight and dimension limits. We plan that leg with the order rather than after the vessel arrives, pack to the limits of the mode that will carry it, and quote delivered terms only where the inland leg can genuinely be committed. Consolidating into one consignment saves more here than on any other lane we run.',
+    },
+    position: 136,
+  },
 ]
 
 export function marketBySlug(slug: string): Market | undefined {

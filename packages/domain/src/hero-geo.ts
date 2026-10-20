@@ -220,6 +220,19 @@ export const HERO_GEO_VARIANTS: readonly HeroGeoVariant[] = [
   { code: 'LV', possessive: "Latvia's" }, // Latvia
   { code: 'LT', possessive: "Lithuania's" }, // Lithuania
 
+  // Wave 5, 2026-10-20 — the Levant, South Asia, Turkmenistan, the Bight of
+  // Benin and Papua New Guinea.
+  { code: 'JO', possessive: "Jordan's" }, // Jordan
+  { code: 'LB', possessive: "Lebanon's" }, // Lebanon
+  { code: 'IN', possessive: "India's" }, // India
+  { code: 'PK', possessive: "Pakistan's" }, // Pakistan
+  { code: 'BD', possessive: "Bangladesh's" }, // Bangladesh
+  { code: 'LK', possessive: "Sri Lanka's" }, // Sri Lanka
+  { code: 'TM', possessive: "Turkmenistan's" }, // Turkmenistan
+  { code: 'BJ', possessive: "Benin's" }, // Benin
+  { code: 'TG', possessive: "Togo's" }, // Togo
+  { code: 'PG', possessive: "Papua New Guinea's" }, // Papua New Guinea
+
   // Everyone else, and every search crawler. "Dubai" is the higher-volume
   // search term for this business than "UAE", and this is the only headline
   // Google ever indexes, so it carries all of the search value.

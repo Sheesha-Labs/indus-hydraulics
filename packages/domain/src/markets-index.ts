@@ -64,7 +64,7 @@ import { MARKETS, marketBySlug, marketSlugByName, type Market } from './markets'
  */
 export const MARKET_REGION_NOTES: Readonly<Record<string, string>> = {
   'GCC & Middle East':
-    'Road lanes from the Dubai warehouse, typically three working days, with air freight where the schedule is tighter. Saudi Arabia is the one where SABER registration rather than distance sets the arrival date.',
+    'Road lanes from the Dubai warehouse — typically three working days across the GCC, longer to Jordan, where the truck crosses Saudi Arabia in transit — with air freight where the schedule is tighter. Saudi Arabia is the one where SABER registration rather than distance sets the arrival date. Lebanon goes by sea through Suez, because the overland route runs through Syria.',
   'North Africa':
     'Mediterranean lanes through Suez — except Egypt, where Ain Sokhna sits inside the Red Sea and needs no canal transit at all.',
   'East Africa':
@@ -79,8 +79,10 @@ export const MARKET_REGION_NOTES: Readonly<Record<string, string>> = {
     'Long sea lanes with transshipment, quoted per consignment against a named port rather than a published band.',
   'North America & Caribbean':
     'Quoted per consignment. Usually a specification or a thread pattern our stock covers and local supply does not.',
+  'South Asia':
+    'The shortest sea legs east of the Gulf — days, not weeks, to Karachi, Nhava Sheva and Colombo. Bangladesh is the exception: Chattogram is served by feeders, so containers change ship at Colombo or Singapore.',
   'South-East Asia':
-    'Sea out of Jebel Ali through the Strait of Malacca, with Singapore as the regional transshipment hub.',
+    'Sea out of Jebel Ali through the Strait of Malacca, with Singapore as the regional transshipment hub — and the feeder hub for Papua New Guinea at the far end of the lane.',
   'Western & Northern Europe':
     'Quoted per consignment. Specification-driven rather than volume — offshore assemblies and DIN-pattern couplings.',
   'Central & South-East Europe':
@@ -113,6 +115,7 @@ export const MARKET_GEO_ALIASES: Readonly<Record<string, readonly string[]>> = {
   'South Sudan': ['S. Sudan', 'South Sudan'],
   Czechia: ['Czechia', 'Czech Rep.'],
   'Timor-Leste': ['Timor-Leste', 'East Timor'],
+  'Papua New Guinea': ['Papua New Guinea'],
 }
 
 /**
