@@ -43,8 +43,9 @@ const BUCKET = 'blog-images'
 const WEB_ENV = resolve(__dirname, '../../../../apps/web/.env.local')
 
 /**
- * One row per published article, across all three hero sprints — the 30 from
- * PR #271, the 63 commissioned on 2026-08-25 and the 139 generated on 2026-10-08. `alt` describes what is
+ * One row per published article, across all four hero sprints — the 30 from
+ * PR #271, the 63 commissioned on 2026-08-25, the 139 generated on 2026-10-08
+ * and the 28 lifting posts on 2026-10-20. `alt` describes what is
  * actually in the frame: it is read aloud by a screen reader and indexed as
  * image text, so it is not the article title repeated.
  *
@@ -52,7 +53,7 @@ const WEB_ENV = resolve(__dirname, '../../../../apps/web/.env.local')
  * how the second sprint was attached. Guard 2 skips a post that already
  * carries the hero named for its slug, so the first 30 are no-ops.
  */
-const HEROES: readonly { slug: string; alt: string }[] = [
+const HEROES: readonly { slug: string; alt: string; caption?: string }[] = [
   {
     slug: 'identify-any-hydraulic-fitting',
     alt: 'Technician measuring an unmarked hydraulic fitting with a vernier caliper, a thread pitch gauge and assorted adaptors laid out on the bench beside it',
@@ -380,6 +381,38 @@ const HEROES: readonly { slug: string; alt: string }[] = [
   { slug: "bridging-two-thread-standards", alt: "One adapter joining two thread standards, a discarded stack of three adapters on the bench beside it" },
   { slug: "hydraulic-fittings-guide", alt: "A flat-lay of many hydraulic fittings and adapters across thread families" },
   { slug: "npt-npsm-and-sae-hose-fittings", alt: "NPT, NPSM swivel, 37-degree flare and O-ring boss hose fittings side by side on a bench" },
+  // ── Fourth sprint, 2026-10-20. The 28 lifting posts published without a hero on
+  // 13–14 Oct: the six capacity charts and lifting waves 8–10. Generated with GPT Image 2.5
+  // (medium, 1k) and checked against each article before upload. `caption` is the
+  // reader caption, written here because these posts never had one.
+  { slug: "site-mobilisation-rigging-kit", alt: "Rigging store in a site container: colour-coded round slings, chain slings, bins of shackles and a chain block", caption: "A matched, registered rigging loft on day one sets the habits for the whole project." },
+  { slug: "steel-erection-rigging-equipment", alt: "Steel erectors on a high-rise frame guiding an I-beam on a two-leg chain sling, a tag line held from below", caption: "Two-leg chain slings and a tag line: the everyday steel lift, landed precisely at height." },
+  { slug: "precast-panel-and-beam-rigging", alt: "Precast wall panel on a four-leg chain sling with clutches in its top anchors, a rigger holding the tag line", caption: "The anchors are cast in; the clutches, slings and links above them decide how the load is shared." },
+  { slug: "lifting-chillers-and-rooftop-plant", alt: "Rooftop chiller on wire rope slings below a spreader beam, lifted by mobile crane, riggers on the roof with tag lines", caption: "A spreader keeps the slings clear of the casing — the maker’s rigging instructions start every plant lift." },
+  { slug: "tower-crane-rigging-gear", alt: "Banksman with a radio watching a rebar bundle on two webbing slings in a choker hitch under a tower crane hook", caption: "A small kit, used hundreds of times a week: the tower crane crew’s slings, shackles and tag lines." },
+  { slug: "shutdown-and-turnaround-rigging", alt: "Pump motor hung from a chain block on a beam trolley inside a refinery unit, two technicians guiding it", caption: "Where no crane can reach, chain blocks on beam trolleys do the shutdown’s lifting." },
+  { slug: "cable-pulling-socks-and-grips", alt: "Workers pulling a power cable into a trench with a woven cable sock and swivel on the rope, cable drum behind", caption: "The cable sock is the one part of the pull that touches the cable — size it, fit it and swivel it." },
+  { slug: "jetty-and-marine-construction-rigging", alt: "Steel pile hanging on a two-leg wire rope sling with shackles beside a crawler crane on a barge, breakwater behind", caption: "Salt, tides and barge motion: marine works are the hardest environment on any site for rigging." },
+  { slug: "lifting-equipment-register-uae", alt: "Inspector fixing a coloured inspection tag to a chain sling at a site rigging store, a tablet register on the bench", caption: "Every item tagged, every tag in the register: the record an auditor asks for first." },
+  { slug: "asme-b30-26-rigging-hardware-explained", alt: "Shackles, oblong master links, an eye-and-eye swivel and a jaw turnbuckle on a bench, a caliper on one shackle", caption: "Shackles, links, swivels and turnbuckles: the hardware ASME B30.26 covers, and the checks it sets." },
+  { slug: "rigging-hardware-rfq-checklist", alt: "Bolt-type shackle, a short length of chain, a vernier caliper and a printed enquiry form on an office desk", caption: "Pattern, pin, grade and length: a specific enquiry gets the right item quoted first time." },
+  { slug: "lifting-equipment-rules-saudi-arabia", alt: "Inspector in coveralls checking a two-leg chain sling on a crane hook at a desert processing plant", caption: "In Saudi Arabia the national regulation is the floor; the client’s standards set the site rules." },
+  { slug: "lifting-equipment-rules-gcc", alt: "Inspector and rigging foreman reviewing a clipboard beside racks of tagged slings and shackles at a gas plant site", caption: "One contractor, six countries, several rulebooks — and the client contract on top of each." },
+  { slug: "proof-load-testing-lifting-gear", alt: "Galvanized bow shackle in a horizontal proof test bed, hydraulic cylinder and load cell cable, technician behind", caption: "A proof test proves this item was made right — it does not raise its working load limit." },
+  { slug: "how-to-spot-counterfeit-rigging-hardware", alt: "Cleanly forged shackle beside a rough, porous one with casting seams, a magnifying glass over the rough shackle", caption: "Read every mark: a forged rating is a rating nobody tested." },
+  { slug: "grade-80-vs-grade-100-chain-slings", alt: "Two single-leg chain slings on a workshop floor, one black chain and one blue, each with master link and latch hook", caption: "Same size, about a quarter more capacity: Grade 100 lets a smaller, lighter sling do the job." },
+  { slug: "hammerlock-vs-clevis-chain-fittings", alt: "Alloy master link joined to chain by a hammerlock connecting link, a clevis hook pinned to the chain's last link", caption: "Every chain sling is joined somewhere — matched, rated connectors keep the rating intact." },
+  { slug: "chain-sling-shortening-clutches-and-grab-hooks", alt: "Two-leg chain sling with one leg taken up through a shortening clutch, its slack loop hanging, hooks on a steel beam", caption: "A shortening clutch evens out the legs without giving away the chain’s rating." },
+  { slug: "lifting-swivels-explained", alt: "Crane hook with a swivel below it and a two-leg wire rope sling cradling a steel cylinder in a construction yard", caption: "A swivel lets the rigging untwist — only a bearing swivel is made to turn under load." },
+  { slug: "beam-trolley-guide", alt: "Worker pushing a gearbox hung from a chain block on a push trolley running along an overhead I-beam", caption: "A trolley on an I-beam turns a chain block into a travelling hoist." },
+  { slug: "lynch-pins-r-clips-and-wire-lock-pins", alt: "Lynch pins, R-clips and wire lock pins on a steel bench next to a shackle whose pin is held by an R-clip", caption: "Small, cheap and easy to lose — the pins that keep the load pins in." },
+  { slug: "stainless-steel-lifting-chain", alt: "Polished stainless steel chain sling lifting a stainless process vessel by its lugs in a food plant", caption: "Stainless chain lifts where rust and zinc flakes are not welcome — at a lower rating." },
+  { slug: "chain-sling-capacity-chart", alt: "Four-leg chain sling laid flat on concrete, legs fanned out from the master link to four yellow self-locking hooks", caption: "Chain size, grade, number of legs and leg angle together set what a chain sling may lift." },
+  { slug: "wire-rope-sling-capacity-chart", alt: "Wire rope slings with ferrule-pressed eyes and round tags hanging on a store rack, from thin to thick", caption: "Rope diameter, construction and the hitch used decide a wire rope sling’s working load limit." },
+  { slug: "webbing-and-round-sling-capacity-chart", alt: "Violet, green and yellow webbing slings and grey, red and orange round slings laid out on a workbench", caption: "The colour gives a quick read of the rating; the sewn label is the record." },
+  { slug: "shackle-size-and-capacity-chart", alt: "Seven galvanized screw-pin bow shackles lined up by size, smallest to largest, on a dark steel plate", caption: "Body and pin grow with the working load limit; the forged marks confirm which size you hold." },
+  { slug: "eye-bolt-capacity-chart", alt: "Four collar eye bolts of rising size on a steel plate, a larger one screwed down flat into a machine casting", caption: "An eye bolt’s rating assumes the collar is seated flat and the pull is in line; angled loads cut it." },
+  { slug: "wire-rope-breaking-strength-chart", alt: "Cut ends of steel wire ropes of several diameters showing strands laid around a core, rope reels behind", caption: "Breaking strength depends on diameter, construction, core and rope grade — not on diameter alone." },
 ] as const
 
 /**
@@ -524,7 +557,10 @@ async function main() {
           },
           select: { id: true },
         })
-        await tx.blogPost.update({ where: { id: post.id }, data: { heroId: media.id } })
+        await tx.blogPost.update({
+          where: { id: post.id },
+          data: { heroId: media.id, ...(hero.caption ? { heroCaption: hero.caption } : {}) },
+        })
       },
       { maxWait: 15_000, timeout: 30_000 }
     )
