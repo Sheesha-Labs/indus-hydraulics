@@ -1,9 +1,11 @@
 import type { Metadata } from 'next'
 import { Fragment, type ReactNode } from 'react'
+import Image from 'next/image'
 import Link from 'next/link'
 import { Breadcrumb } from '@indus/ui'
 import { db } from '@indus/db'
 import { interpolate, str } from '@indus/domain'
+import { mediaUrl } from '../../../lib/media'
 import { getMasterPageContent } from '../../../lib/page-content'
 
 export const metadata: Metadata = {
@@ -29,7 +31,10 @@ export default async function BrandsPage() {
     db.brand.findMany({
       where: { isPublished: true },
       orderBy: { name: 'asc' },
-      include: { _count: { select: { products: true } } },
+      include: {
+        _count: { select: { products: true } },
+        logo: { select: { storagePath: true, alt: true } },
+      },
     }),
     // Section order, visibility and copy, edited under Pages & Blocks.
     getMasterPageContent('brands'),
@@ -69,9 +74,24 @@ export default async function BrandsPage() {
             >
               {/* Brand hero area */}
               <div className="relative grid aspect-[16/7] place-items-center border-b border-ih-border bg-ih-surface-2">
-                <span className="font-mono text-[22px] tracking-[-0.02em] text-ih-muted transition-colors group-hover:text-ih-accent">
-                  {brand.name.toUpperCase()}
-                </span>
+                {brand.logo ? (
+                  // A fixed box, not the file's own size: the logos range from
+                  // 120px to 1200px wide and would otherwise render at wildly
+                  // different scales side by side.
+                  <div className="relative h-[40%] w-[62%]">
+                    <Image
+                      src={mediaUrl(brand.logo.storagePath)}
+                      alt={brand.logo.alt ?? `${brand.name} logo`}
+                      fill
+                      sizes="256px"
+                      className="object-contain"
+                    />
+                  </div>
+                ) : (
+                  <span className="font-mono text-[22px] tracking-[-0.02em] text-ih-muted transition-colors group-hover:text-ih-accent">
+                    {brand.name.toUpperCase()}
+                  </span>
+                )}
                 {brand.country && (
                   <span className="absolute right-2.5 top-2.5 rounded-[3px] bg-ih-steel-soft px-2 py-0.5 font-mono text-[10px] uppercase tracking-[0.06em] text-[oklch(0.42_0.07_240)]">
                     {brand.country}
