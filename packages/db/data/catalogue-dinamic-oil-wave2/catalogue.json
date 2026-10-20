@@ -1,0 +1,1636 @@
+{
+  "source": "Dinamic Oil catalogues (slewing gearboxes 2025, wheel & track drive 2025, towing winches T19/A) and dinamicoil.com, fetched 2026-10-20 — Wave 2",
+  "imageDir": "",
+  "brandSlug": "dinamic-oil",
+  "specTemplateSlug": "gearbox-winch-spec",
+  "categories": [
+    {
+      "slug": "gearboxes-winches",
+      "name": "Gearboxes & Winches",
+      "parentSlug": null,
+      "position": 22,
+      "shortDescription": "Planetary and slewing gearboxes, wheel drives, winch drives, motorized drums and hydraulic hoisting and recovery winches from Dinamic Oil of Italy, supplied by Indus Hydraulics as authorised distributor, direct from the factory.",
+      "seoTitle": "Planetary Gearboxes & Hydraulic Winches",
+      "seoDescription": "Dinamic Oil planetary and slewing gearboxes, wheel drives, DNV-approved winch drives and hydraulic winches. Authorised distributor in the UAE.",
+      "focusKeyword": "planetary gearboxes and winches"
+    },
+    {
+      "slug": "slewing-gearboxes",
+      "name": "Slewing Gearboxes",
+      "parentSlug": "gearboxes-winches",
+      "position": 4,
+      "shortDescription": "Dinamic Oil planetary slewing gearboxes with pinion output for slewing rings: RE 240 to RE 8010 and GB 12010 to GB 26000, up to 460 kNm nominal torque, for cranes, platforms, excavators and thrusters.",
+      "seoTitle": "Slewing Gearboxes",
+      "seoDescription": "Dinamic Oil slewing gearboxes with pinion output, RE and GB ranges up to 460 kNm, for cranes and thrusters. Authorised distributor, UAE.",
+      "focusKeyword": "slewing gearboxes"
+    },
+    {
+      "slug": "wheel-drives",
+      "name": "Wheel Drives",
+      "parentSlug": "gearboxes-winches",
+      "position": 5,
+      "shortDescription": "Dinamic Oil planetary wheel drives for self-propelled machines: GR hubs with built-in orbital motor, and EH and EW drives for hydraulic or 48/96 V electric motors, up to 24 kNm.",
+      "seoTitle": "Hydraulic & Electric Wheel Drives",
+      "seoDescription": "Dinamic Oil GR, EH and EW planetary wheel drives, hydraulic or 48/96 V electric, up to 24 kNm. Authorised distributor, UAE.",
+      "focusKeyword": "wheel drives"
+    },
+    {
+      "slug": "towing-recovery-winches",
+      "name": "Towing & Recovery Winches",
+      "parentSlug": "gearboxes-winches",
+      "position": 6,
+      "shortDescription": "Dinamic Oil T series hydraulic pulling winches for tow trucks and recovery vehicles, 2,700 to 30,000 daN, with drum freewheel and multi-disc brake.",
+      "seoTitle": "Towing & Recovery Winches",
+      "seoDescription": "Dinamic Oil hydraulic towing and recovery winches, 2,700 to 30,000 daN line pull. Authorised distributor, supplied direct from Italy.",
+      "focusKeyword": "recovery winches"
+    }
+  ],
+  "products": [
+    {
+      "sku": "IH-DO-SLR",
+      "slug": "dinamic-oil-re-slewing-gearboxes",
+      "title": "Dinamic Oil RE Slewing Gearboxes — 4,350 to 163,500 Nm, Pinion Output",
+      "category": "slewing-gearboxes",
+      "focusKeyword": "slewing gearbox",
+      "descriptionShort": "Dinamic Oil RE slewing gearboxes: 14 frame sizes, nominal output torque 4,350 to 163,500 Nm, pinion or splined output, static brakes for open or closed circuits. Built in Italy. From Indus Hydraulics, authorised Dinamic Oil distributor, UAE.",
+      "descriptionLong": "<p>RE slewing gearboxes are Dinamic Oil's planetary drives for slewing rings: an RE gearset on a reinforced output support that carries the radial load of the pinion meshing with the ring gear. Fourteen frame sizes, RE 240 to RE 8010, cover nominal output torques up to 4,350 Nm on the smallest frame and 163,500 Nm on the largest, in two or three stages, for mobile, offshore and deck cranes, aerial platforms, excavators, concrete pumps, container gantries and azimuth thrusters.</p>\n<p>Indus Hydraulics is an authorised Dinamic Oil distributor and supplies direct from Dinamic Oil's factory in Bomporto, Italy.</p>\n<h3>Ratings</h3>\n<p>The table gives each size's nominal output torque T2 FEM — Dinamic Oil's figure for F.E.M. class M5 (L2-T5) at 15 rpm output,\nan indicative value confirmed per application — and the ratio range for each number of stages. The output support has its own\nstatic and dynamic torque limits in the catalogue: the lower of the support limit and the gearset's T2max governs, and the\nstatic limit must never be exceeded.</p>\n<h3>Supports, shafts and pinions</h3>\n<p>Each size comes with one or more output supports, listed in the table by Dinamic Oil's support code — the eccentric ones (marked ecc) let the pinion-to-ring backlash be set — and a choice of splined or cylindrical output shaft or a pinion. The table lists the supports and the catalogue's pinion range for each size (module and number of teeth); pinions are splined on, or cut integral with the shaft, and pinions outside the catalogue are made to the ring-gear data you send.</p>\n<h3>Approvals</h3>\n<p>ABS product design assessments 22-2218009-1-PDA and 25-0346164-PDA cover specific RE and RA 810, 1020 and 1520 builds with pinion output for azimuth-thruster steering, valid to February 2027 and November 2030. Design approval by DNV, ABS, RINA, Bureau Veritas, Lloyd's Register or CCS is available on demand for other builds.</p>\n<h3>Inputs, brakes and lubrication</h3>\n<p>Inputs for hydraulic (orbital or axial piston) and electric motors are the same as Dinamic Oil's planetary gearbox range.\nStatic negative brakes come in a low-opening-pressure version for closed-loop circuits and a dry version for high-speed motors.\nOil or grease lubrication is available; standard ambient range up to +40 °C.</p>",
+      "seoTitle": "Dinamic Oil RE Slewing Gearboxes",
+      "seoDescription": "Dinamic Oil RE slewing gearboxes, 4,350–163,500 Nm T2 FEM, pinion output for slewing rings. Authorised distributor, supplied direct from Italy.",
+      "faqs": [
+        {
+          "question": "What do I need to send for a quotation?",
+          "answer": "Send the application, the output torque (or line pull) it must deliver, the output or cable speed, the motor you will drive it with, the mounting and output you need, and any class approval the job calls for. Dinamic Oil confirms the order code against that, and we quote with the delivery time from the factory in Italy."
+        },
+        {
+          "question": "What is T2 FEM?",
+          "answer": "The nominal output torque for F.E.M. mechanism class M5 (load spectrum L2, utilisation T5) at 15 rpm output. It is an indicative rating: for a different class, speed or duty, Dinamic Oil checks the selection case by case."
+        },
+        {
+          "question": "Can the pinion backlash be adjusted?",
+          "answer": "Yes. Dinamic Oil offers eccentric output supports (marked ecc in the table) that let the pinion-to-ring backlash be set on assembly; the other supports are fixed."
+        },
+        {
+          "question": "Which brake should I choose?",
+          "answer": "On a closed-loop (hydrostatic) slewing circuit, the low-opening-pressure static brake, which releases from the charge pressure. With a high-speed hydraulic or electric motor, the dry brake version."
+        },
+        {
+          "question": "Can they run in Gulf summer temperatures?",
+          "answer": "Dinamic Oil rates its standard units for an ambient temperature up to +40 °C. Above that, or in continuous duty in direct sun, tell us the actual operating temperature so the lubricant and duty can be checked with the factory."
+        },
+        {
+          "question": "Are these genuine Dinamic Oil units?",
+          "answer": "Yes. Indus Hydraulics is an authorised Dinamic Oil distributor, and every unit is supplied new, direct from Dinamic Oil's factory in Bomporto, Modena, with the manufacturer's documentation."
+        }
+      ],
+      "specs": [
+        {
+          "group": "Identification",
+          "label": "Product type",
+          "value": "Slewing gearbox (planetary)",
+          "unit": null,
+          "position": 0,
+          "isFilterable": true,
+          "templateKey": "product_type"
+        },
+        {
+          "group": "Identification",
+          "label": "Series",
+          "value": "Dinamic Oil RE",
+          "unit": null,
+          "position": 1,
+          "isFilterable": true,
+          "templateKey": "series"
+        },
+        {
+          "group": "Identification",
+          "label": "Execution",
+          "value": "Planetary, reinforced output support for pinion drive",
+          "unit": null,
+          "position": 2,
+          "isFilterable": true,
+          "templateKey": "execution"
+        },
+        {
+          "group": "Performance",
+          "label": "Reduction stages",
+          "value": "2, 3",
+          "unit": null,
+          "position": 3,
+          "isFilterable": true,
+          "templateKey": "stages"
+        },
+        {
+          "group": "Performance",
+          "label": "Output torque",
+          "value": "T2 FEM 4,350 to 163,500 Nm (M5, 15 rpm)",
+          "unit": null,
+          "position": 4,
+          "isFilterable": false,
+          "templateKey": "torque_rating"
+        },
+        {
+          "group": "Performance",
+          "label": "Reduction ratio",
+          "value": "13 to 332:1",
+          "unit": null,
+          "position": 5,
+          "isFilterable": false,
+          "templateKey": "ratio_range"
+        },
+        {
+          "group": "Construction",
+          "label": "Motor / input",
+          "value": "Hydraulic (orbital, axial piston) or electric motor",
+          "unit": null,
+          "position": 6,
+          "isFilterable": false,
+          "templateKey": "motor_input"
+        },
+        {
+          "group": "Construction",
+          "label": "Brake",
+          "value": "Static negative: low opening pressure or dry version",
+          "unit": null,
+          "position": 7,
+          "isFilterable": false,
+          "templateKey": "brake"
+        },
+        {
+          "group": "Construction",
+          "label": "Output / mounting",
+          "value": "Pinion (splined or integral) or splined / cylindrical shaft; flanged or eccentric support",
+          "unit": null,
+          "position": 8,
+          "isFilterable": false,
+          "templateKey": "output"
+        },
+        {
+          "group": "Construction",
+          "label": "Lubrication",
+          "value": "Oil or grease",
+          "unit": null,
+          "position": 9,
+          "isFilterable": false,
+          "templateKey": "lubrication"
+        },
+        {
+          "group": "Compliance",
+          "label": "Rating basis",
+          "value": "F.E.M. M5 (L2-T5) at 15 rpm, indicative",
+          "unit": null,
+          "position": 10,
+          "isFilterable": false,
+          "templateKey": "rating_basis"
+        },
+        {
+          "group": "Compliance",
+          "label": "Type approval",
+          "value": "ABS PDA 22-2218009-1 / 25-0346164 (specific RE/RA 810–1520 thruster builds); others on demand",
+          "unit": null,
+          "position": 11,
+          "isFilterable": true,
+          "templateKey": "type_approval"
+        },
+        {
+          "group": "Supply",
+          "label": "Made in",
+          "value": "Italy (Dinamic Oil S.p.A., Bomporto)",
+          "unit": null,
+          "position": 12,
+          "isFilterable": false,
+          "templateKey": "origin"
+        },
+        {
+          "group": "Supply",
+          "label": "Supply",
+          "value": "Authorised distributor, direct from the factory",
+          "unit": null,
+          "position": 13,
+          "isFilterable": false,
+          "templateKey": "supply"
+        }
+      ],
+      "searchAliases": [
+        "Dinamic Oil RE slewing",
+        "RE 1020",
+        "RE 1520",
+        "RE 2000",
+        "RE 240",
+        "RE 2520",
+        "RE 3000",
+        "RE 310",
+        "RE 3510",
+        "RE 4800",
+        "RE 510",
+        "RE 6010",
+        "RE 610",
+        "RE 8010",
+        "RE 810",
+        "RE1020",
+        "RE1520",
+        "RE2000",
+        "RE240",
+        "RE2520",
+        "RE3000",
+        "RE310",
+        "RE3510",
+        "RE4800",
+        "RE510",
+        "RE6010",
+        "RE610",
+        "RE8010",
+        "RE810",
+        "riduttore per rotazione",
+        "slew drive"
+      ],
+      "images": [
+        {
+          "file": "dinamic-oil-re-slewing-gearbox.jpg",
+          "alt": "Dinamic Oil RE slewing gearbox with hydraulic motor, brake and splined output pinion, catalogue cover render",
+          "caption": "Dinamic Oil website media library / catalogue render (fetched 2026-10-20). Maker's own image; Indus is an authorised Dinamic Oil distributor."
+        },
+        {
+          "file": "dinamic-oil-re-slewing-gearbox-mobile-crane.jpg",
+          "alt": "Dinamic Oil slewing gearbox with motor, brake and pinion as fitted to a mobile crane slewing ring, render",
+          "caption": "Dinamic Oil website media library / catalogue render (fetched 2026-10-20). Maker's own image; Indus is an authorised Dinamic Oil distributor."
+        }
+      ],
+      "variants": [
+        {
+          "partNumber": "IH-DO-SLR-240",
+          "position": 0,
+          "dimensions": {
+            "item": "RE 240",
+            "outputTorqueNm": 4350,
+            "ratio": "2-stage 13–39; 3-stage 46–281",
+            "mount": "Supports DBS, Tecc",
+            "shaft": "Pinion m6–14, z9–18; splined or cylindrical shaft"
+          }
+        },
+        {
+          "partNumber": "IH-DO-SLR-310",
+          "position": 1,
+          "dimensions": {
+            "item": "RE 310",
+            "outputTorqueNm": 5420,
+            "ratio": "2-stage 13–54; 3-stage 44–321",
+            "mount": "Supports NR, NR3, Tecc, T6, T8, T18, DBS",
+            "shaft": "Pinion m5–14, z10–22; splined or cylindrical shaft"
+          }
+        },
+        {
+          "partNumber": "IH-DO-SLR-510",
+          "position": 2,
+          "dimensions": {
+            "item": "RE 510",
+            "outputTorqueNm": 10800,
+            "ratio": "2-stage 13–54; 3-stage 44–321",
+            "mount": "Supports NR, NR3, Tecc, T6, T8, T18, DBS",
+            "shaft": "Pinion m5–14, z10–22; splined or cylindrical shaft"
+          }
+        },
+        {
+          "partNumber": "IH-DO-SLR-610",
+          "position": 3,
+          "dimensions": {
+            "item": "RE 610",
+            "outputTorqueNm": 12400,
+            "ratio": "2-stage 14–34; 3-stage 50–245",
+            "mount": "Supports T18, DBS, DBS2",
+            "shaft": "Pinion m8–14, z10–20; splined or cylindrical shaft"
+          }
+        },
+        {
+          "partNumber": "IH-DO-SLR-810",
+          "position": 4,
+          "dimensions": {
+            "item": "RE 810",
+            "outputTorqueNm": 15800,
+            "ratio": "2-stage 13–51; 3-stage 53–314",
+            "mount": "Supports Tecc, TRecc",
+            "shaft": "Pinion m8–14, z12–18; splined or cylindrical shaft"
+          }
+        },
+        {
+          "partNumber": "IH-DO-SLR-1020",
+          "position": 5,
+          "dimensions": {
+            "item": "RE 1020 (ratio range confirmed per order)",
+            "outputTorqueNm": 22800,
+            "ratio": "3-stage 53–314",
+            "mount": "Supports TR, T6ecc, DBS, Z, DBS4, DBT",
+            "shaft": "Pinion m8–18, z10–18; splined or cylindrical shaft"
+          }
+        },
+        {
+          "partNumber": "IH-DO-SLR-1520",
+          "position": 6,
+          "dimensions": {
+            "item": "RE 1520",
+            "outputTorqueNm": 33500,
+            "ratio": "2-stage 15–47; 3-stage 51–278",
+            "mount": "Supports Tecc, DBS, Z, DBT",
+            "shaft": "Pinion m8–20, z10–18; splined or cylindrical shaft"
+          }
+        },
+        {
+          "partNumber": "IH-DO-SLR-2000",
+          "position": 7,
+          "dimensions": {
+            "item": "RE 2000",
+            "outputTorqueNm": 41300,
+            "ratio": "2-stage 14–39; 3-stage 48–202",
+            "mount": "Supports Tecc, DBS, Z, DBT",
+            "shaft": "Pinion m8–20, z10–18; splined or cylindrical shaft"
+          }
+        },
+        {
+          "partNumber": "IH-DO-SLR-2520",
+          "position": 8,
+          "dimensions": {
+            "item": "RE 2520 (ratio range confirmed per order)",
+            "outputTorqueNm": 48100,
+            "ratio": "2-stage 14–47",
+            "mount": "Supports DBS, Z, Z1",
+            "shaft": "Pinion m12–20, z10–16; splined or cylindrical shaft"
+          }
+        },
+        {
+          "partNumber": "IH-DO-SLR-3000",
+          "position": 9,
+          "dimensions": {
+            "item": "RE 3000",
+            "outputTorqueNm": 65500,
+            "ratio": "2-stage 14–32; 3-stage 51–242",
+            "mount": "Supports DBS, Z, Z1",
+            "shaft": "Pinion m12–20, z10–16; splined or cylindrical shaft"
+          }
+        },
+        {
+          "partNumber": "IH-DO-SLR-3510",
+          "position": 10,
+          "dimensions": {
+            "item": "RE 3510",
+            "outputTorqueNm": 71800,
+            "ratio": "2-stage 14–44; 3-stage 49–332",
+            "mount": "Supports Z2, Z3, DBS1, HR",
+            "shaft": "Pinion m14–25, z11–21; splined or cylindrical shaft"
+          }
+        },
+        {
+          "partNumber": "IH-DO-SLR-4800",
+          "position": 11,
+          "dimensions": {
+            "item": "RE 4800",
+            "outputTorqueNm": 105000,
+            "ratio": "2-stage 13–32; 3-stage 47–242",
+            "mount": "Supports Z2, Z3, DBS1, HR",
+            "shaft": "Pinion m14–25, z11–21; splined or cylindrical shaft"
+          }
+        },
+        {
+          "partNumber": "IH-DO-SLR-6010",
+          "position": 12,
+          "dimensions": {
+            "item": "RE 6010",
+            "outputTorqueNm": 122000,
+            "ratio": "2-stage 14–40; 3-stage 64–252",
+            "mount": "Supports Z1, Z4",
+            "shaft": "Pinion m16–25, z12–24; splined or cylindrical shaft"
+          }
+        },
+        {
+          "partNumber": "IH-DO-SLR-8010",
+          "position": 13,
+          "dimensions": {
+            "item": "RE 8010",
+            "outputTorqueNm": 163500,
+            "ratio": "2-stage 15–29; 3-stage 57–200",
+            "mount": "Supports Z1, Z4",
+            "shaft": "Pinion m16–25, z12–24; splined or cylindrical shaft"
+          }
+        }
+      ],
+      "crossReferences": []
+    },
+    {
+      "sku": "IH-DO-SLG",
+      "slug": "dinamic-oil-gb-heavy-duty-slewing-gearboxes",
+      "title": "Dinamic Oil GB Heavy-Duty Slewing Gearboxes — 195,000 to 460,000 Nm",
+      "category": "slewing-gearboxes",
+      "focusKeyword": "heavy duty slewing gearbox",
+      "descriptionShort": "Dinamic Oil GB slewing gearboxes: 4 frame sizes, nominal output torque 195,000 to 460,000 Nm, pinion or splined output, static brakes for open or closed circuits. Built in Italy. From Indus Hydraulics, authorised Dinamic Oil distributor, UAE.",
+      "descriptionLong": "<p>The GB slewing gearboxes extend the slewing range above the RE sizes: four frames, GB 12010 to GB 26000, with nominal output torques up to 460,000 Nm in three or four stages, for large offshore and deck cranes, harbour and dockyard cranes and tunnel boring machines. Dinamic Oil builds slewing solutions to order up to about 2,000,000 Nm.</p>\n<p>Indus Hydraulics is an authorised Dinamic Oil distributor and supplies direct from Dinamic Oil's factory in Bomporto, Italy.</p>\n<h3>Ratings</h3>\n<p>The table gives each size's nominal output torque T2 FEM — Dinamic Oil's figure for F.E.M. class M5 (L2-T5) at 15 rpm output,\nan indicative value confirmed per application — and the ratio range for each number of stages. The output support has its own\nstatic and dynamic torque limits in the catalogue: the lower of the support limit and the gearset's T2max governs, and the\nstatic limit must never be exceeded.</p>\n<h3>Supports and pinions</h3>\n<p>Supports, shafts and pinions for the GB sizes are not tabulated in the catalogue — they are designed with the order. Send the slewing-ring data (module, number of teeth, profile shift, face width), the radial load and the mounting space, and Dinamic Oil's technical department sizes the output.</p>\n<h3>Selection</h3>\n<p>Size the drive on the slewing torque — the ring's friction, wind and inertia loads, divided by the ring-to-pinion ratio and the number of drives on the ring — then check it against T2 FEM for the duty class, and the start-up and braking peaks against the output support's dynamic limit. Large rings often use two or more drives sharing the load.</p>\n<h3>Approvals</h3>\n<p>Design approval by DNV, ABS, RINA, Bureau Veritas, Lloyd's Register or CCS is available on demand.</p>\n<h3>Inputs, brakes and lubrication</h3>\n<p>Inputs for hydraulic (orbital or axial piston) and electric motors are the same as Dinamic Oil's planetary gearbox range.\nStatic negative brakes come in a low-opening-pressure version for closed-loop circuits and a dry version for high-speed motors.\nOil or grease lubrication is available; standard ambient range up to +40 °C.</p>",
+      "seoTitle": "Dinamic Oil GB Heavy-Duty Slewing Gearboxes",
+      "seoDescription": "Dinamic Oil GB slewing gearboxes, 195,000–460,000 Nm T2 FEM, pinion output for slewing rings. Authorised distributor, supplied direct from Italy.",
+      "faqs": [
+        {
+          "question": "What do I need to send for a quotation?",
+          "answer": "Send the application, the output torque (or line pull) it must deliver, the output or cable speed, the motor you will drive it with, the mounting and output you need, and any class approval the job calls for. Dinamic Oil confirms the order code against that, and we quote with the delivery time from the factory in Italy."
+        },
+        {
+          "question": "What is T2 FEM?",
+          "answer": "The nominal output torque for F.E.M. mechanism class M5 (load spectrum L2, utilisation T5) at 15 rpm output. It is an indicative rating: for a different class, speed or duty, Dinamic Oil checks the selection case by case."
+        },
+        {
+          "question": "Can the pinion backlash be adjusted?",
+          "answer": "Eccentric mounting is available to set the pinion-to-ring backlash; for the GB sizes it is designed with the order."
+        },
+        {
+          "question": "Which brake should I choose?",
+          "answer": "On a closed-loop (hydrostatic) slewing circuit, the low-opening-pressure static brake, which releases from the charge pressure. With a high-speed hydraulic or electric motor, the dry brake version."
+        },
+        {
+          "question": "Can they run in Gulf summer temperatures?",
+          "answer": "Dinamic Oil rates its standard units for an ambient temperature up to +40 °C. Above that, or in continuous duty in direct sun, tell us the actual operating temperature so the lubricant and duty can be checked with the factory."
+        },
+        {
+          "question": "Are these genuine Dinamic Oil units?",
+          "answer": "Yes. Indus Hydraulics is an authorised Dinamic Oil distributor, and every unit is supplied new, direct from Dinamic Oil's factory in Bomporto, Modena, with the manufacturer's documentation."
+        }
+      ],
+      "specs": [
+        {
+          "group": "Identification",
+          "label": "Product type",
+          "value": "Slewing gearbox (planetary)",
+          "unit": null,
+          "position": 0,
+          "isFilterable": true,
+          "templateKey": "product_type"
+        },
+        {
+          "group": "Identification",
+          "label": "Series",
+          "value": "Dinamic Oil GB",
+          "unit": null,
+          "position": 1,
+          "isFilterable": true,
+          "templateKey": "series"
+        },
+        {
+          "group": "Identification",
+          "label": "Execution",
+          "value": "Planetary, reinforced output support for pinion drive",
+          "unit": null,
+          "position": 2,
+          "isFilterable": true,
+          "templateKey": "execution"
+        },
+        {
+          "group": "Performance",
+          "label": "Reduction stages",
+          "value": "3, 4",
+          "unit": null,
+          "position": 3,
+          "isFilterable": true,
+          "templateKey": "stages"
+        },
+        {
+          "group": "Performance",
+          "label": "Output torque",
+          "value": "T2 FEM 195,000 to 460,000 Nm (M5, 15 rpm)",
+          "unit": null,
+          "position": 4,
+          "isFilterable": false,
+          "templateKey": "torque_rating"
+        },
+        {
+          "group": "Performance",
+          "label": "Reduction ratio",
+          "value": "50 to 1,508:1",
+          "unit": null,
+          "position": 5,
+          "isFilterable": false,
+          "templateKey": "ratio_range"
+        },
+        {
+          "group": "Construction",
+          "label": "Motor / input",
+          "value": "Hydraulic (orbital, axial piston) or electric motor",
+          "unit": null,
+          "position": 6,
+          "isFilterable": false,
+          "templateKey": "motor_input"
+        },
+        {
+          "group": "Construction",
+          "label": "Brake",
+          "value": "Static negative: low opening pressure or dry version",
+          "unit": null,
+          "position": 7,
+          "isFilterable": false,
+          "templateKey": "brake"
+        },
+        {
+          "group": "Construction",
+          "label": "Output / mounting",
+          "value": "Pinion (splined or integral) or splined / cylindrical shaft; flanged or eccentric support",
+          "unit": null,
+          "position": 8,
+          "isFilterable": false,
+          "templateKey": "output"
+        },
+        {
+          "group": "Construction",
+          "label": "Lubrication",
+          "value": "Oil or grease",
+          "unit": null,
+          "position": 9,
+          "isFilterable": false,
+          "templateKey": "lubrication"
+        },
+        {
+          "group": "Compliance",
+          "label": "Rating basis",
+          "value": "F.E.M. M5 (L2-T5) at 15 rpm, indicative",
+          "unit": null,
+          "position": 10,
+          "isFilterable": false,
+          "templateKey": "rating_basis"
+        },
+        {
+          "group": "Compliance",
+          "label": "Type approval",
+          "value": "Design approval on demand (DNV, ABS, RINA, BV, LR, CCS)",
+          "unit": null,
+          "position": 11,
+          "isFilterable": true,
+          "templateKey": "type_approval"
+        },
+        {
+          "group": "Supply",
+          "label": "Made in",
+          "value": "Italy (Dinamic Oil S.p.A., Bomporto)",
+          "unit": null,
+          "position": 12,
+          "isFilterable": false,
+          "templateKey": "origin"
+        },
+        {
+          "group": "Supply",
+          "label": "Supply",
+          "value": "Authorised distributor, direct from the factory",
+          "unit": null,
+          "position": 13,
+          "isFilterable": false,
+          "templateKey": "supply"
+        }
+      ],
+      "searchAliases": [
+        "Dinamic Oil GB slewing",
+        "GB 12010",
+        "GB 16000",
+        "GB 21000",
+        "GB 26000",
+        "GB12010",
+        "GB16000",
+        "GB21000",
+        "GB26000",
+        "riduttore per rotazione",
+        "slew drive"
+      ],
+      "images": [
+        {
+          "file": "dinamic-oil-gb-slewing-gearbox.jpg",
+          "alt": "Dinamic Oil heavy slewing gearbox with large splined pinion and flanged support, deck-crane build render",
+          "caption": "Dinamic Oil website media library / catalogue render (fetched 2026-10-20). Maker's own image; Indus is an authorised Dinamic Oil distributor."
+        }
+      ],
+      "variants": [
+        {
+          "partNumber": "IH-DO-SLG-12010",
+          "position": 0,
+          "dimensions": {
+            "item": "GB 12010",
+            "outputTorqueNm": 195000,
+            "ratio": "3-stage 53–222; 4-stage 210–1,508"
+          }
+        },
+        {
+          "partNumber": "IH-DO-SLG-16000",
+          "position": 1,
+          "dimensions": {
+            "item": "GB 16000",
+            "outputTorqueNm": 297000,
+            "ratio": "3-stage 50–165; 4-stage 181–1,241"
+          }
+        },
+        {
+          "partNumber": "IH-DO-SLG-21000",
+          "position": 2,
+          "dimensions": {
+            "item": "GB 21000",
+            "outputTorqueNm": 360000,
+            "ratio": "3-stage 58–140; 4-stage 233–766"
+          }
+        },
+        {
+          "partNumber": "IH-DO-SLG-26000",
+          "position": 3,
+          "dimensions": {
+            "item": "GB 26000",
+            "outputTorqueNm": 460000,
+            "ratio": "3-stage 58–108; 4-stage 210–745"
+          }
+        }
+      ],
+      "crossReferences": []
+    },
+    {
+      "sku": "IH-DO-GR",
+      "slug": "dinamic-oil-gr-wheel-drives-with-orbital-motor",
+      "title": "Dinamic Oil GR Wheel Drives with Integrated Orbital Motor — 470 to 1,600 Nm",
+      "category": "wheel-drives",
+      "focusKeyword": "hydraulic wheel drive",
+      "descriptionShort": "Dinamic Oil GR 80 and GR 200 wheel drives: planetary hub with built-in orbital motor, 16 motor variants, 470–1,600 Nm continuous, up to 2,500 Nm peak. Built in Italy. From Indus Hydraulics, authorised Dinamic Oil distributor, UAE.",
+      "descriptionLong": "<p>GR wheel drives combine a single-ratio planetary gearbox with an orbital hydraulic motor in one compact hub: the\nwheel bolts to the output flange and the unit bolts to the chassis. Two sizes — GR 80 (ratio 5.23) and GR 200 (ratio 6.2) — each\ncome with a choice of motor displacement, giving continuous output torques of 470 to 1,600 Nm and peak torques up to\n2,500 Nm. They are built for light self-propelled machines such as scissor and boom lifts, small loaders, AGVs and vineyard\nstraddle robots.</p>\n<p>Indus Hydraulics is an authorised Dinamic Oil distributor and supplies direct from Dinamic Oil's factory in Bomporto, Italy.</p>\n<h3>Range</h3>\n<p>The table lists each motor variant with its total displacement (motor displacement times the gearbox ratio), continuous and\npeak output torque, maximum output speed and oil flow. The motor's pressure drop for each torque rating and the flange and port\ndimensions are in Dinamic Oil's wheel and track drive catalogue.</p>\n<h3>Options</h3>\n<p>A mechanical release can be fitted so the vehicle can be towed with the drive disengaged.</p>\n<h3>Selection</h3>\n<p>Size the drive on the tractive effort at the wheel: rolling resistance plus gradient times the machine weight on that wheel,\ntimes the wheel's rolling radius, gives the torque. Check it against the continuous rating for normal travel and the peak rating for\nstarting on a slope, and the wheel speed against the maximum output speed.</p>\n<h3>Lubrication and service</h3>\n<p>Dinamic Oil gearboxes run in an oil bath of EP gear oil, ISO VG 220 to 320; fill before start-up and recheck the level after a few\nminutes' running. Change the oil after the first 150 operating hours, then at the interval in the use and maintenance manual or at\nleast every two years. Synthetic oil is recommended for very high ambient temperatures. The manual is attached to this page.</p>",
+      "seoTitle": "Dinamic Oil GR Wheel Drives with Orbital Motor",
+      "seoDescription": "Dinamic Oil GR hydraulic wheel drives with integrated orbital motor, up to 2,500 Nm peak. Authorised distributor, direct from Italy.",
+      "faqs": [
+        {
+          "question": "What do I need to send for a quotation?",
+          "answer": "Send the application, the output torque (or line pull) it must deliver, the output or cable speed, the motor you will drive it with, the mounting and output you need, and any class approval the job calls for. Dinamic Oil confirms the order code against that, and we quote with the delivery time from the factory in Italy."
+        },
+        {
+          "question": "What does a code like GR80-MR100 mean?",
+          "answer": "GR80 is the gearbox frame; MR100 is the orbital motor fitted, about 100 cm³/rev. The motor sets the torque per bar and the top speed for a given oil flow."
+        },
+        {
+          "question": "Can the vehicle be towed?",
+          "answer": "Yes, with the optional mechanical release, which disconnects the drive so the wheel turns freely."
+        },
+        {
+          "question": "Which torque do I select on?",
+          "answer": "The continuous torque for steady travel and the peak torque for starting and climbing. The intermittent rating covers short manoeuvres between the two."
+        },
+        {
+          "question": "Can they run in Gulf summer temperatures?",
+          "answer": "Dinamic Oil rates its standard units for an ambient temperature up to +40 °C. Above that, or in continuous duty in direct sun, tell us the actual operating temperature so the lubricant and duty can be checked with the factory."
+        },
+        {
+          "question": "Are these genuine Dinamic Oil units?",
+          "answer": "Yes. Indus Hydraulics is an authorised Dinamic Oil distributor, and every unit is supplied new, direct from Dinamic Oil's factory in Bomporto, Modena, with the manufacturer's documentation."
+        }
+      ],
+      "specs": [
+        {
+          "group": "Identification",
+          "label": "Product type",
+          "value": "Wheel drive with integrated motor",
+          "unit": null,
+          "position": 0,
+          "isFilterable": true,
+          "templateKey": "product_type"
+        },
+        {
+          "group": "Identification",
+          "label": "Series",
+          "value": "Dinamic Oil GR",
+          "unit": null,
+          "position": 1,
+          "isFilterable": true,
+          "templateKey": "series"
+        },
+        {
+          "group": "Identification",
+          "label": "Execution",
+          "value": "Single-ratio planetary hub with orbital motor",
+          "unit": null,
+          "position": 2,
+          "isFilterable": true,
+          "templateKey": "execution"
+        },
+        {
+          "group": "Performance",
+          "label": "Output torque",
+          "value": "470 to 1,600 Nm continuous; up to 2,500 Nm peak",
+          "unit": null,
+          "position": 3,
+          "isFilterable": false,
+          "templateKey": "torque_rating"
+        },
+        {
+          "group": "Performance",
+          "label": "Reduction ratio",
+          "value": "5.23 (GR 80), 6.2 (GR 200)",
+          "unit": null,
+          "position": 4,
+          "isFilterable": false,
+          "templateKey": "ratio_range"
+        },
+        {
+          "group": "Hydraulics",
+          "label": "Oil flow",
+          "value": "30 L/min",
+          "unit": null,
+          "position": 5,
+          "isFilterable": false,
+          "templateKey": "oil_flow"
+        },
+        {
+          "group": "Construction",
+          "label": "Motor / input",
+          "value": "Integrated orbital hydraulic motor, displacement by variant",
+          "unit": null,
+          "position": 6,
+          "isFilterable": false,
+          "templateKey": "motor_input"
+        },
+        {
+          "group": "Construction",
+          "label": "Brake",
+          "value": "Not published; mechanical release on request",
+          "unit": null,
+          "position": 7,
+          "isFilterable": false,
+          "templateKey": "brake"
+        },
+        {
+          "group": "Construction",
+          "label": "Output / mounting",
+          "value": "Wheel flange",
+          "unit": null,
+          "position": 8,
+          "isFilterable": false,
+          "templateKey": "output"
+        },
+        {
+          "group": "Construction",
+          "label": "Lubrication",
+          "value": "Oil bath",
+          "unit": null,
+          "position": 9,
+          "isFilterable": false,
+          "templateKey": "lubrication"
+        },
+        {
+          "group": "Supply",
+          "label": "Made in",
+          "value": "Italy (Dinamic Oil S.p.A., Bomporto)",
+          "unit": null,
+          "position": 10,
+          "isFilterable": false,
+          "templateKey": "origin"
+        },
+        {
+          "group": "Supply",
+          "label": "Supply",
+          "value": "Authorised distributor, direct from the factory",
+          "unit": null,
+          "position": 11,
+          "isFilterable": false,
+          "templateKey": "supply"
+        }
+      ],
+      "searchAliases": [
+        "Dinamic Oil wheel drive",
+        "GR 200",
+        "GR 80",
+        "GR200",
+        "GR200-MR100",
+        "GR200-MR125",
+        "GR200-MR160",
+        "GR200-MR200",
+        "GR200-MR250",
+        "GR200-MR315",
+        "GR200-MR375",
+        "GR200-MR50",
+        "GR200-MR80",
+        "GR80",
+        "GR80-MR100",
+        "GR80-MR125",
+        "GR80-MR160",
+        "GR80-MR200",
+        "GR80-MR250",
+        "GR80-MR50",
+        "GR80-MR80",
+        "motoruota"
+      ],
+      "images": [
+        {
+          "file": "dinamic-oil-gr-80-wheel-drive-dimension-drawing.jpg",
+          "alt": "Dinamic Oil GR 80 wheel drive dimension drawing: 175 mm flanges, 140 h8 spigots, M10 bolts, 126 mm housing",
+          "caption": "Dinamic Oil website media library / catalogue render (fetched 2026-10-20). Maker's own image; Indus is an authorised Dinamic Oil distributor."
+        }
+      ],
+      "variants": [
+        {
+          "partNumber": "IH-DO-GR-80MR50",
+          "position": 0,
+          "dimensions": {
+            "item": "GR80-MR50",
+            "displacementCc": 269.9,
+            "ratio": "5.23",
+            "outputTorqueNm": 470,
+            "peakTorqueNm": 630,
+            "maxRpm": 115,
+            "maxFlowLpm": 30
+          }
+        },
+        {
+          "partNumber": "IH-DO-GR-80MR80",
+          "position": 1,
+          "dimensions": {
+            "item": "GR80-MR80",
+            "displacementCc": 420.0,
+            "ratio": "5.23",
+            "outputTorqueNm": 800,
+            "peakTorqueNm": 1060,
+            "maxRpm": 68,
+            "maxFlowLpm": 30
+          }
+        },
+        {
+          "partNumber": "IH-DO-GR-80MR100",
+          "position": 2,
+          "dimensions": {
+            "item": "GR80-MR100",
+            "displacementCc": 522.0,
+            "ratio": "5.23",
+            "outputTorqueNm": 800,
+            "peakTorqueNm": 1310,
+            "maxRpm": 55,
+            "maxFlowLpm": 30
+          }
+        },
+        {
+          "partNumber": "IH-DO-GR-80MR125",
+          "position": 3,
+          "dimensions": {
+            "item": "GR80-MR125",
+            "displacementCc": 657.4,
+            "ratio": "5.23",
+            "outputTorqueNm": 800,
+            "peakTorqueNm": 1500,
+            "maxRpm": 45,
+            "maxFlowLpm": 30
+          }
+        },
+        {
+          "partNumber": "IH-DO-GR-80MR160",
+          "position": 4,
+          "dimensions": {
+            "item": "GR80-MR160",
+            "displacementCc": 834.7,
+            "ratio": "5.23",
+            "outputTorqueNm": 800,
+            "peakTorqueNm": 1500,
+            "maxRpm": 33,
+            "maxFlowLpm": 30
+          }
+        },
+        {
+          "partNumber": "IH-DO-GR-80MR200",
+          "position": 5,
+          "dimensions": {
+            "item": "GR80-MR200",
+            "displacementCc": 1045.0,
+            "ratio": "5.23",
+            "outputTorqueNm": 800,
+            "peakTorqueNm": 1500,
+            "maxRpm": 26,
+            "maxFlowLpm": 30
+          }
+        },
+        {
+          "partNumber": "IH-DO-GR-80MR250",
+          "position": 6,
+          "dimensions": {
+            "item": "GR80-MR250",
+            "displacementCc": 1303.8,
+            "ratio": "5.23",
+            "outputTorqueNm": 800,
+            "peakTorqueNm": 1500,
+            "maxRpm": 21,
+            "maxFlowLpm": 30
+          }
+        },
+        {
+          "partNumber": "IH-DO-GR-200MR50",
+          "position": 7,
+          "dimensions": {
+            "item": "GR200-MR50",
+            "displacementCc": 319.9,
+            "ratio": "6.2",
+            "outputTorqueNm": 560,
+            "peakTorqueNm": 740,
+            "maxRpm": 98,
+            "maxFlowLpm": 30
+          }
+        },
+        {
+          "partNumber": "IH-DO-GR-200MR80",
+          "position": 8,
+          "dimensions": {
+            "item": "GR200-MR80",
+            "displacementCc": 497.9,
+            "ratio": "6.2",
+            "outputTorqueNm": 950,
+            "peakTorqueNm": 1250,
+            "maxRpm": 58,
+            "maxFlowLpm": 30
+          }
+        },
+        {
+          "partNumber": "IH-DO-GR-200MR100",
+          "position": 9,
+          "dimensions": {
+            "item": "GR200-MR100",
+            "displacementCc": 618.8,
+            "ratio": "6.2",
+            "outputTorqueNm": 1180,
+            "peakTorqueNm": 1560,
+            "maxRpm": 46,
+            "maxFlowLpm": 30
+          }
+        },
+        {
+          "partNumber": "IH-DO-GR-200MR125",
+          "position": 10,
+          "dimensions": {
+            "item": "GR200-MR125",
+            "displacementCc": 779.3,
+            "ratio": "6.2",
+            "outputTorqueNm": 1450,
+            "peakTorqueNm": 1920,
+            "maxRpm": 38,
+            "maxFlowLpm": 30
+          }
+        },
+        {
+          "partNumber": "IH-DO-GR-200MR160",
+          "position": 11,
+          "dimensions": {
+            "item": "GR200-MR160",
+            "displacementCc": 989.5,
+            "ratio": "6.2",
+            "outputTorqueNm": 1600,
+            "peakTorqueNm": 2450,
+            "maxRpm": 29,
+            "maxFlowLpm": 30
+          }
+        },
+        {
+          "partNumber": "IH-DO-GR-200MR200",
+          "position": 12,
+          "dimensions": {
+            "item": "GR200-MR200",
+            "displacementCc": 1238.8,
+            "ratio": "6.2",
+            "outputTorqueNm": 1600,
+            "peakTorqueNm": 2500,
+            "maxRpm": 23,
+            "maxFlowLpm": 30
+          }
+        },
+        {
+          "partNumber": "IH-DO-GR-200MR250",
+          "position": 13,
+          "dimensions": {
+            "item": "GR200-MR250",
+            "displacementCc": 1545.7,
+            "ratio": "6.2",
+            "outputTorqueNm": 1600,
+            "peakTorqueNm": 2500,
+            "maxRpm": 18,
+            "maxFlowLpm": 30
+          }
+        },
+        {
+          "partNumber": "IH-DO-GR-200MR315",
+          "position": 14,
+          "dimensions": {
+            "item": "GR200-MR315",
+            "displacementCc": 1957.3,
+            "ratio": "6.2",
+            "outputTorqueNm": 1600,
+            "peakTorqueNm": 2500,
+            "maxRpm": 15,
+            "maxFlowLpm": 30
+          }
+        },
+        {
+          "partNumber": "IH-DO-GR-200MR375",
+          "position": 15,
+          "dimensions": {
+            "item": "GR200-MR375",
+            "displacementCc": 2310.1,
+            "ratio": "6.2",
+            "outputTorqueNm": 1600,
+            "peakTorqueNm": 2500,
+            "maxRpm": 12,
+            "maxFlowLpm": 30
+          }
+        }
+      ],
+      "crossReferences": []
+    },
+    {
+      "sku": "IH-DO-EW",
+      "slug": "dinamic-oil-eh-ew-planetary-wheel-drives",
+      "title": "Dinamic Oil EH and EW Planetary Wheel Drives — 3,950 to 24,000 Nm",
+      "category": "wheel-drives",
+      "focusKeyword": "planetary wheel drive",
+      "descriptionShort": "Dinamic Oil EH and EW planetary wheel drives for hydraulic or electric motors: 6 frames, 3,950 to 24,000 Nm, 2 or 3 stages, 48/96 V DC electric versions. Built in Italy. From Indus Hydraulics, authorised Dinamic Oil distributor, UAE.",
+      "descriptionLong": "<p>EH and EW wheel drives are planetary gearboxes for a hydraulic or electric motor, with a wheel flange on the rotating\nhousing and bearings that carry the machine's weight on that wheel — up to 8,000 kg on the EH models. Six frames cover maximum\noutput torques from 3,950 Nm (EH 210) to 24,000 Nm (EW 2500), for skid-steer loaders, scissor and boom lifts, container\nAGVs and other self-propelled machines; their bearing capacity also suits track drives.</p>\n<p>Indus Hydraulics is an authorised Dinamic Oil distributor and supplies direct from Dinamic Oil's factory in Bomporto, Italy.</p>\n<h3>Range</h3>\n<p>The table lists every two- and three-stage build with its ratio or ratios, the frame's maximum output torque T2max and the\nweight. EH frames come in S, SC and PD output versions; the EW range has a single version.\nFlange, spigot and bolt dimensions are in Dinamic Oil's wheel and track drive catalogue.</p>\n<h3>Electric versions</h3>\n<p>EHe and EWe versions carry a permanent-magnet synchronous (PMSM) electric motor for 48 V DC or 96 V DC battery machines, with a\nbuilt-in negative electric brake, so a battery machine needs no hydraulic circuit for travel. Other voltages and executions are\nmade on request.</p>\n<h3>Options</h3>\n<p>The EW range has a mechanical release as standard so the vehicle can be towed; on the EH it is an option. Hydraulic versions\ntake orbital or axial piston motors; brakes and control valves are available as accessories.</p>\n<h3>Lubrication and service</h3>\n<p>Dinamic Oil gearboxes run in an oil bath of EP gear oil, ISO VG 220 to 320; fill before start-up and recheck the level after a few\nminutes' running. Change the oil after the first 150 operating hours, then at the interval in the use and maintenance manual or at\nleast every two years. Synthetic oil is recommended for very high ambient temperatures. The manual is attached to this page.</p>",
+      "seoTitle": "Dinamic Oil EH & EW Planetary Wheel Drives",
+      "seoDescription": "Dinamic Oil EH and EW planetary wheel drives, 3,950–24,000 Nm, hydraulic or 48/96 V electric. Authorised distributor, direct from Italy.",
+      "faqs": [
+        {
+          "question": "What do I need to send for a quotation?",
+          "answer": "Send the application, the output torque (or line pull) it must deliver, the output or cable speed, the motor you will drive it with, the mounting and output you need, and any class approval the job calls for. Dinamic Oil confirms the order code against that, and we quote with the delivery time from the factory in Italy."
+        },
+        {
+          "question": "What is the difference between EH and EW?",
+          "answer": "Both are planetary wheel drives for hydraulic or electric motors. The EH range (EH 210, EH 240) comes in S, SC and PD output versions with an optional mechanical release; the newer EW range (EW 700 to EW 2500) has the release as standard and reaches higher torques."
+        },
+        {
+          "question": "Can they be battery-electric?",
+          "answer": "Yes. The EHe and EWe versions carry a PMSM motor for 48 V DC or 96 V DC with a built-in electric parking brake."
+        },
+        {
+          "question": "What do the model digits mean?",
+          "answer": "The last digit is the number of planetary stages: EW 702 is the EW 700 frame with two stages, EW 703 with three."
+        },
+        {
+          "question": "Can they run in Gulf summer temperatures?",
+          "answer": "Dinamic Oil rates its standard units for an ambient temperature up to +40 °C. Above that, or in continuous duty in direct sun, tell us the actual operating temperature so the lubricant and duty can be checked with the factory."
+        },
+        {
+          "question": "Are these genuine Dinamic Oil units?",
+          "answer": "Yes. Indus Hydraulics is an authorised Dinamic Oil distributor, and every unit is supplied new, direct from Dinamic Oil's factory in Bomporto, Modena, with the manufacturer's documentation."
+        }
+      ],
+      "specs": [
+        {
+          "group": "Identification",
+          "label": "Product type",
+          "value": "Planetary wheel drive",
+          "unit": null,
+          "position": 0,
+          "isFilterable": true,
+          "templateKey": "product_type"
+        },
+        {
+          "group": "Identification",
+          "label": "Series",
+          "value": "Dinamic Oil EH, EW",
+          "unit": null,
+          "position": 1,
+          "isFilterable": true,
+          "templateKey": "series"
+        },
+        {
+          "group": "Identification",
+          "label": "Execution",
+          "value": "Rotating-housing wheel drive",
+          "unit": null,
+          "position": 2,
+          "isFilterable": true,
+          "templateKey": "execution"
+        },
+        {
+          "group": "Performance",
+          "label": "Reduction stages",
+          "value": "2, 3",
+          "unit": null,
+          "position": 3,
+          "isFilterable": true,
+          "templateKey": "stages"
+        },
+        {
+          "group": "Performance",
+          "label": "Output torque",
+          "value": "T2max 3,950 to 24,000 Nm",
+          "unit": null,
+          "position": 4,
+          "isFilterable": false,
+          "templateKey": "torque_rating"
+        },
+        {
+          "group": "Performance",
+          "label": "Reduction ratio",
+          "value": "11 to 135:1",
+          "unit": null,
+          "position": 5,
+          "isFilterable": false,
+          "templateKey": "ratio_range"
+        },
+        {
+          "group": "Construction",
+          "label": "Motor / input",
+          "value": "Orbital or axial piston hydraulic motor; PMSM electric 48/96 V DC (EHe, EWe)",
+          "unit": null,
+          "position": 6,
+          "isFilterable": false,
+          "templateKey": "motor_input"
+        },
+        {
+          "group": "Construction",
+          "label": "Brake",
+          "value": "Negative electric brake on EHe/EWe; hydraulic static brake as accessory",
+          "unit": null,
+          "position": 7,
+          "isFilterable": false,
+          "templateKey": "brake"
+        },
+        {
+          "group": "Construction",
+          "label": "Output / mounting",
+          "value": "Wheel flange; EH versions S, SC, PD",
+          "unit": null,
+          "position": 8,
+          "isFilterable": false,
+          "templateKey": "output"
+        },
+        {
+          "group": "Construction",
+          "label": "Lubrication",
+          "value": "Oil bath",
+          "unit": null,
+          "position": 9,
+          "isFilterable": false,
+          "templateKey": "lubrication"
+        },
+        {
+          "group": "Supply",
+          "label": "Made in",
+          "value": "Italy (Dinamic Oil S.p.A., Bomporto)",
+          "unit": null,
+          "position": 10,
+          "isFilterable": false,
+          "templateKey": "origin"
+        },
+        {
+          "group": "Supply",
+          "label": "Supply",
+          "value": "Authorised distributor, direct from the factory",
+          "unit": null,
+          "position": 11,
+          "isFilterable": false,
+          "templateKey": "supply"
+        }
+      ],
+      "searchAliases": [
+        "EH 210",
+        "EH 212",
+        "EH 213",
+        "EH 240",
+        "EH 242",
+        "EH 243",
+        "EHe",
+        "EW 1000",
+        "EW 1002",
+        "EW 1003",
+        "EW 2000",
+        "EW 2003",
+        "EW 2500",
+        "EW 2503",
+        "EW 700",
+        "EW 702",
+        "EW 703",
+        "EWe",
+        "riduttore ruota"
+      ],
+      "images": [
+        {
+          "file": "dinamic-oil-ewe-electric-planetary-wheel-drive.jpg",
+          "alt": "Dinamic Oil planetary wheel drive with finned PMSM electric motor and wheel studs, EWe-type electric version render",
+          "caption": "Dinamic Oil website media library / catalogue render (fetched 2026-10-20). Maker's own image; Indus is an authorised Dinamic Oil distributor."
+        },
+        {
+          "file": "dinamic-oil-electric-wheel-drive-aerial-platform.jpg",
+          "alt": "Dinamic Oil electric planetary wheel drive with wheel flange, as fitted to an electric aerial platform, render",
+          "caption": "Dinamic Oil website media library / catalogue render (fetched 2026-10-20). Maker's own image; Indus is an authorised Dinamic Oil distributor."
+        }
+      ],
+      "variants": [
+        {
+          "partNumber": "IH-DO-EH-212",
+          "position": 0,
+          "dimensions": {
+            "item": "EH 212",
+            "stages": 2,
+            "ratio": "11 – 29",
+            "peakTorqueNm": 3950,
+            "weightKg": 35,
+            "mount": "Versions S, SC, PD"
+          }
+        },
+        {
+          "partNumber": "IH-DO-EH-213",
+          "position": 1,
+          "dimensions": {
+            "item": "EH 213",
+            "stages": 3,
+            "ratio": "41 – 129",
+            "peakTorqueNm": 3950,
+            "weightKg": 40,
+            "mount": "Versions S, SC, PD"
+          }
+        },
+        {
+          "partNumber": "IH-DO-EH-242",
+          "position": 2,
+          "dimensions": {
+            "item": "EH 242",
+            "stages": 2,
+            "ratio": "12 – 31",
+            "peakTorqueNm": 5600,
+            "weightKg": 35,
+            "mount": "Versions S, SC, PD"
+          }
+        },
+        {
+          "partNumber": "IH-DO-EH-243",
+          "position": 3,
+          "dimensions": {
+            "item": "EH 243",
+            "stages": 3,
+            "ratio": "45 – 135",
+            "peakTorqueNm": 5600,
+            "weightKg": 40,
+            "mount": "Versions S, SC, PD"
+          }
+        },
+        {
+          "partNumber": "IH-DO-EW-702",
+          "position": 4,
+          "dimensions": {
+            "item": "EW 702",
+            "stages": 2,
+            "ratio": "31 / 53",
+            "peakTorqueNm": 7000,
+            "weightKg": 45
+          }
+        },
+        {
+          "partNumber": "IH-DO-EW-703",
+          "position": 5,
+          "dimensions": {
+            "item": "EW 703",
+            "stages": 3,
+            "ratio": "106",
+            "peakTorqueNm": 7000,
+            "weightKg": 55
+          }
+        },
+        {
+          "partNumber": "IH-DO-EW-1002",
+          "position": 6,
+          "dimensions": {
+            "item": "EW 1002",
+            "stages": 2,
+            "ratio": "31.5 / 52",
+            "peakTorqueNm": 10000,
+            "weightKg": 55
+          }
+        },
+        {
+          "partNumber": "IH-DO-EW-1003",
+          "position": 7,
+          "dimensions": {
+            "item": "EW 1003",
+            "stages": 3,
+            "ratio": "106",
+            "peakTorqueNm": 10000,
+            "weightKg": 65
+          }
+        },
+        {
+          "partNumber": "IH-DO-EW-2003",
+          "position": 8,
+          "dimensions": {
+            "item": "EW 2003",
+            "stages": 3,
+            "ratio": "85 / 117",
+            "peakTorqueNm": 17500,
+            "weightKg": 130
+          }
+        },
+        {
+          "partNumber": "IH-DO-EW-2503",
+          "position": 9,
+          "dimensions": {
+            "item": "EW 2503",
+            "stages": 3,
+            "ratio": "122.5",
+            "peakTorqueNm": 24000,
+            "weightKg": 145
+          }
+        }
+      ],
+      "crossReferences": []
+    },
+    {
+      "sku": "IH-DO-T",
+      "slug": "dinamic-oil-t-series-hydraulic-towing-recovery-winches",
+      "title": "Dinamic Oil T Series Hydraulic Towing and Recovery Winches — 2,700 to 30,000 daN",
+      "category": "towing-recovery-winches",
+      "focusKeyword": "hydraulic recovery winch",
+      "descriptionShort": "Dinamic Oil T series hydraulic towing and recovery winches: 7 sizes, 2,700 to 30,000 daN first-layer pull, 10 to 26 mm cable, drum freewheel and multi-disc brake. Built in Italy. From Indus Hydraulics, authorised Dinamic Oil distributor, UAE.",
+      "descriptionLong": "<p>Dinamic Oil's T series are hydraulic pulling winches for tow trucks, recovery vehicles, lorries, agricultural and\nforestry machines and any job that needs a horizontal pull. Seven sizes give first-layer line pulls from 2,700 daN (T27 IN) to\n30,000 daN (T300) on 10 to 26 mm cable. The design keeps the hydraulic motor, the static brake and the planetary gearbox as\nseparate modules on the drum, which makes installation and maintenance simpler.</p>\n<p>Indus Hydraulics is an authorised Dinamic Oil distributor and supplies direct from Dinamic Oil's factory in Bomporto, Italy.</p>\n<h3>Construction</h3>\n<ul>\n<li>Orbit hydraulic motor with a pilot-operated overcentre valve mounted on it, which stops the load running back.</li>\n<li>Negative static multi-disc brake, closed by disc springs and released by the motor pressure.</li>\n<li>Drum freewheel — manual, pneumatic or hydraulic — so the cable can be pulled out by hand to the vehicle.</li>\n<li>Cast iron or steel drum on high-capacity bearings, planetary gearbox in an oil bath, cast or fabricated frame.</li>\n</ul>\n<h3>Options</h3>\n<p>Cable tensioner (B), fairlead cable guide (C2) or both (C1); four rotation and cable-exit arrangements (counterclockwise or\nclockwise, cable over or under the drum). Dinamic Oil recommends 6x36 Warrington Seale IWRC cable to ISO 2408, 2,160 N/mm², in\n10 to 26 mm.</p>\n<h3>Use</h3>\n<p>The table gives the first-layer pull, cable speed, cable, motor, flow, pulling pressure, ratio, brake torque and weight; the\ndatasheet gives four layers in SI and imperial units. Keep at least five wraps of cable on the drum and the return-line back\npressure under 5 bar. These are pulling winches: they must not be used to lift or carry people.</p>\n<h3>Sizing</h3>\n<p>Choose the winch on the pull it must deliver on the layer it will work from — the first layer gives the highest pull and the\nlowest speed. A snatch block on the casualty roughly doubles the available pull at half the cable speed, less the sheave's losses.\nCheck that the truck's hydraulic pump delivers the winch's oil flow at its pulling pressure.</p>",
+      "seoTitle": "Dinamic Oil T Series Recovery Winches",
+      "seoDescription": "Dinamic Oil T series hydraulic towing and recovery winches, 2,700–30,000 daN, for tow trucks and recovery vehicles. Authorised distributor, direct from Italy.",
+      "faqs": [
+        {
+          "question": "What do I need to send for a quotation?",
+          "answer": "Send the application, the output torque (or line pull) it must deliver, the output or cable speed, the motor you will drive it with, the mounting and output you need, and any class approval the job calls for. Dinamic Oil confirms the order code against that, and we quote with the delivery time from the factory in Italy."
+        },
+        {
+          "question": "What is the drum freewheel for?",
+          "answer": "It disconnects the drum from the gearbox so the operator can walk the cable out to the vehicle being recovered without running the hydraulics. It can be manual, air-operated or hydraulic."
+        },
+        {
+          "question": "Can a T series winch be used for lifting?",
+          "answer": "No. They are designed and rated for horizontal pulling. For hoisting, use a hoisting winch from Dinamic Oil's hydraulic winch range."
+        },
+        {
+          "question": "Which cable should I use?",
+          "answer": "Dinamic Oil recommends high-resistance 6x36 Warrington Seale IWRC cable to ISO 2408, 2,160 N/mm², right regular lay, in the diameter listed for the winch — 10 mm on the T27 IN up to 26 mm on the T300."
+        },
+        {
+          "question": "Can they run in Gulf summer temperatures?",
+          "answer": "Dinamic Oil rates its standard units for an ambient temperature up to +40 °C. Above that, or in continuous duty in direct sun, tell us the actual operating temperature so the lubricant and duty can be checked with the factory."
+        },
+        {
+          "question": "Are these genuine Dinamic Oil units?",
+          "answer": "Yes. Indus Hydraulics is an authorised Dinamic Oil distributor, and every unit is supplied new, direct from Dinamic Oil's factory in Bomporto, Modena, with the manufacturer's documentation."
+        }
+      ],
+      "specs": [
+        {
+          "group": "Identification",
+          "label": "Product type",
+          "value": "Hydraulic towing / recovery winch",
+          "unit": null,
+          "position": 0,
+          "isFilterable": true,
+          "templateKey": "product_type"
+        },
+        {
+          "group": "Identification",
+          "label": "Series",
+          "value": "Dinamic Oil T",
+          "unit": null,
+          "position": 1,
+          "isFilterable": true,
+          "templateKey": "series"
+        },
+        {
+          "group": "Identification",
+          "label": "Execution",
+          "value": "Modular: motor, brake and planetary gearbox on the drum",
+          "unit": null,
+          "position": 2,
+          "isFilterable": true,
+          "templateKey": "execution"
+        },
+        {
+          "group": "Performance",
+          "label": "Line pull, 1st layer",
+          "value": "2,700 to 30,000 daN (1st layer)",
+          "unit": null,
+          "position": 3,
+          "isFilterable": false,
+          "templateKey": "line_pull"
+        },
+        {
+          "group": "Performance",
+          "label": "Rope diameter",
+          "value": "10 to 26 mm",
+          "unit": null,
+          "position": 4,
+          "isFilterable": false,
+          "templateKey": "rope_diameter"
+        },
+        {
+          "group": "Performance",
+          "label": "Rope speed, 1st layer",
+          "value": "4.5 to 12 m/min (1st layer)",
+          "unit": null,
+          "position": 5,
+          "isFilterable": false,
+          "templateKey": "rope_speed"
+        },
+        {
+          "group": "Hydraulics",
+          "label": "Oil flow",
+          "value": "45 to 100 L/min",
+          "unit": null,
+          "position": 6,
+          "isFilterable": false,
+          "templateKey": "oil_flow"
+        },
+        {
+          "group": "Hydraulics",
+          "label": "Working pressure",
+          "value": "140 to 210 bar (pulling)",
+          "unit": null,
+          "position": 7,
+          "isFilterable": false,
+          "templateKey": "working_pressure"
+        },
+        {
+          "group": "Construction",
+          "label": "Motor / input",
+          "value": "Orbit hydraulic motor with overcentre valve",
+          "unit": null,
+          "position": 8,
+          "isFilterable": false,
+          "templateKey": "motor_input"
+        },
+        {
+          "group": "Construction",
+          "label": "Brake",
+          "value": "Negative static multi-disc",
+          "unit": null,
+          "position": 9,
+          "isFilterable": false,
+          "templateKey": "brake"
+        },
+        {
+          "group": "Construction",
+          "label": "Output / mounting",
+          "value": "Drum with manual, pneumatic or hydraulic freewheel",
+          "unit": null,
+          "position": 10,
+          "isFilterable": false,
+          "templateKey": "output"
+        },
+        {
+          "group": "Construction",
+          "label": "Lubrication",
+          "value": "Gear oil bath",
+          "unit": null,
+          "position": 11,
+          "isFilterable": false,
+          "templateKey": "lubrication"
+        },
+        {
+          "group": "Supply",
+          "label": "Made in",
+          "value": "Italy (Dinamic Oil S.p.A., Bomporto)",
+          "unit": null,
+          "position": 12,
+          "isFilterable": false,
+          "templateKey": "origin"
+        },
+        {
+          "group": "Supply",
+          "label": "Supply",
+          "value": "Authorised distributor, direct from the factory",
+          "unit": null,
+          "position": 13,
+          "isFilterable": false,
+          "templateKey": "supply"
+        }
+      ],
+      "searchAliases": [
+        "T100",
+        "T200",
+        "T27 IN",
+        "T27IN",
+        "T300",
+        "T36 IN",
+        "T36IN",
+        "T46 IN",
+        "T46IN",
+        "T60",
+        "recovery winch",
+        "tow truck winch",
+        "verricello"
+      ],
+      "images": [
+        {
+          "file": "dinamic-oil-t-series-recovery-winch.jpg",
+          "alt": "Dinamic Oil hydraulic recovery winch with red drum, motor and fairlead cable guide, tow-truck build render",
+          "caption": "Dinamic Oil website media library / catalogue render (fetched 2026-10-20). Maker's own image; Indus is an authorised Dinamic Oil distributor."
+        }
+      ],
+      "variants": [
+        {
+          "partNumber": "IH-DO-T-27IN",
+          "position": 0,
+          "dimensions": {
+            "item": "T27 IN",
+            "linePullDan": 2700,
+            "ropeSpeed": 12,
+            "ropeDia": 10,
+            "ropeCapacityM": 35,
+            "displacementCc": 160,
+            "maxFlowLpm": 50,
+            "ratio": "1:5.77",
+            "brakeTorqueNm": 550,
+            "weightKg": 50
+          },
+          "pressureBar": 140
+        },
+        {
+          "partNumber": "IH-DO-T-36IN",
+          "position": 1,
+          "dimensions": {
+            "item": "T36 IN",
+            "linePullDan": 3600,
+            "ropeSpeed": 10,
+            "ropeDia": 12,
+            "ropeCapacityM": 30.5,
+            "displacementCc": 200,
+            "maxFlowLpm": 50,
+            "ratio": "1:5.77",
+            "brakeTorqueNm": 550,
+            "weightKg": 50
+          },
+          "pressureBar": 150
+        },
+        {
+          "partNumber": "IH-DO-T-46IN",
+          "position": 2,
+          "dimensions": {
+            "item": "T46 IN",
+            "linePullDan": 4600,
+            "ropeSpeed": 8.5,
+            "ropeDia": 12,
+            "ropeCapacityM": 30.5,
+            "displacementCc": 250,
+            "maxFlowLpm": 50,
+            "ratio": "1:5.43",
+            "brakeTorqueNm": 550,
+            "weightKg": 50
+          },
+          "pressureBar": 165
+        },
+        {
+          "partNumber": "IH-DO-T-60",
+          "position": 3,
+          "dimensions": {
+            "item": "T60",
+            "linePullDan": 6000,
+            "ropeSpeed": 6.5,
+            "ropeDia": 14,
+            "ropeCapacityM": 40,
+            "displacementCc": 127,
+            "maxFlowLpm": 45,
+            "ratio": "1:14.8",
+            "brakeTorqueNm": 550,
+            "weightKg": 86
+          },
+          "pressureBar": 180
+        },
+        {
+          "partNumber": "IH-DO-T-100",
+          "position": 4,
+          "dimensions": {
+            "item": "T100",
+            "linePullDan": 10000,
+            "ropeSpeed": 8,
+            "ropeDia": 16,
+            "ropeCapacityM": 43,
+            "displacementCc": 160,
+            "maxFlowLpm": 75,
+            "ratio": "1:23",
+            "brakeTorqueNm": 420,
+            "weightKg": 135
+          },
+          "pressureBar": 170
+        },
+        {
+          "partNumber": "IH-DO-T-200",
+          "position": 5,
+          "dimensions": {
+            "item": "T200",
+            "linePullDan": 20000,
+            "ropeSpeed": 5,
+            "ropeDia": 22,
+            "ropeCapacityM": 51,
+            "displacementCc": 125,
+            "maxFlowLpm": 75,
+            "ratio": "1:64.5",
+            "brakeTorqueNm": 420,
+            "weightKg": 250
+          },
+          "pressureBar": 210
+        },
+        {
+          "partNumber": "IH-DO-T-300",
+          "position": 6,
+          "dimensions": {
+            "item": "T300",
+            "linePullDan": 30000,
+            "ropeSpeed": 4.5,
+            "ropeDia": 26,
+            "ropeCapacityM": 65.5,
+            "displacementCc": 250,
+            "maxFlowLpm": 100,
+            "ratio": "1:60.5",
+            "brakeTorqueNm": 1200,
+            "weightKg": 420
+          },
+          "pressureBar": 205
+        }
+      ],
+      "crossReferences": []
+    }
+  ]
+}
