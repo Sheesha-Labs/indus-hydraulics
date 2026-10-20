@@ -1,0 +1,1700 @@
+{
+  "source": "Dinamic Oil catalogues (planetary gearboxes 2025, winch drives, hydraulic winches W21/A), fetched 2026-10-20 — Wave 4 accessories",
+  "imageDir": "",
+  "brandSlug": "dinamic-oil",
+  "specTemplateSlug": "gearbox-winch-spec",
+  "categories": [
+    {
+      "slug": "gearbox-winch-accessories",
+      "name": "Gearbox & Winch Accessories",
+      "parentSlug": "gearboxes-winches",
+      "position": 7,
+      "shortDescription": "Dinamic Oil accessories and spares: negative multi-disc brakes for planetary gearboxes and winch drives, gearbox oil cooling units, and winch rope tensioners, limit switches, pull limiters and ELD load detection.",
+      "seoTitle": "Gearbox & Winch Accessories",
+      "seoDescription": "Dinamic Oil brakes for gearboxes and winch drives, oil cooling units and winch accessories. Authorised distributor, supplied direct from Italy.",
+      "focusKeyword": "gearbox and winch accessories"
+    }
+  ],
+  "products": [
+    {
+      "sku": "IH-DO-BRK",
+      "slug": "dinamic-oil-planetary-gearbox-brakes",
+      "title": "Dinamic Oil Negative Multi-Disc Brakes for Planetary Gearboxes — 110 to 3,051 Nm",
+      "category": "gearbox-winch-accessories",
+      "focusKeyword": "planetary gearbox brake",
+      "descriptionShort": "Dinamic Oil F1, F2, F5, F6, F8, F9 and MD negative multi-disc parking brakes for RE, RA, GB and GBA planetary gearboxes: 52 models, 110 to 3,051 Nm static torque, SAE A, C, D, ST and MU inputs. From Indus Hydraulics, authorised Dinamic Oil distributor, UAE.",
+      "descriptionLong": "<p>Dinamic Oil's negative multi-disc brakes are the static parking brakes fitted between the motor and the input of its RE, RA, GB and GBA\nplanetary gearboxes — and of the slewing drives built on them. Springs clamp tempered steel discs alternating with bronze discs;\nhydraulic pressure on the release port pushes a piston against the springs and frees the drive. With no pressure the brake holds, so\nit locks the load whenever the motor stops or the circuit loses pressure.</p>\n<p>Indus Hydraulics is an authorised Dinamic Oil distributor and supplies direct from Dinamic Oil's factory in Bomporto, Italy.</p>\n<h3>Range</h3>\n<p>Seven families and 52 models, from 110 Nm to 3,051 Nm static braking torque (±5 %):</p>\n<ul>\n<li><strong>F1 and F2</strong> — for orbital hydraulic motors on an SAE A flange, Ø186 and Ø244 input groups, 132 to 608 Nm.</li>\n<li><strong>F5 and F6</strong> — ST universal input for a wide range of motors, 110 to 1,150 Nm.</li>\n<li><strong>F8</strong> — MU or ST input, 1,271 to 3,051 Nm.</li>\n<li><strong>F9</strong> — SAE C, SAE D or ST input, 200 to 1,325 Nm, with an optional sprag-clutch freewheel.</li>\n<li><strong>MD</strong> — direct flange for MLR orbital motors on RE 110 to 240 stages, 220 to 459 Nm.</li>\n</ul>\n<p>The table lists each model's braking torque, the release (opening) and maximum pressures, the maximum input speed, and the\ngearbox frames it fits. F5, F6, F8 and F9 come in special versions for input speeds up to 3,500 rpm.</p>\n<h3>Selecting a brake</h3>\n<p>The braking torque times the gearbox ratio, divided by the gearbox efficiency, must be at least the output torque to be held —\nand, except in special cases, must not exceed the gearbox's T2max. Catalogue torque is at zero release pressure: any back-pressure\nin the release line reduces it in proportion, actual torque = catalogue torque × (opening pressure − back-pressure) ÷ opening\npressure, so drain the brake line freely to tank. F1, F2 and the standard F5, F6 and F8 hold about 0.1 L of ISO VG 32 mineral oil,\nchanged with the gearbox oil.</p>",
+      "seoTitle": "Dinamic Oil Brakes for Planetary Gearboxes",
+      "seoDescription": "Dinamic Oil negative multi-disc parking brakes for planetary gearboxes, 110–3,051 Nm, SAE and ST inputs. Authorised distributor, direct from Italy.",
+      "faqs": [
+        {
+          "question": "What do I need to send to order one?",
+          "answer": "The Dinamic Oil model and, if you have it, the full order code or serial number of the gearbox, drive or winch it goes on. We confirm the part against that with Dinamic Oil before quoting."
+        },
+        {
+          "question": "Can a brake be replaced without changing the gearbox?",
+          "answer": "Yes, within the frame group it is listed for. The brake bolts between the motor and the gearbox input; the table shows which frames each model fits."
+        },
+        {
+          "question": "Why does my brake slip under load?",
+          "answer": "Usually back-pressure in the release line, which partly opens the brake, or worn discs. Check that the brake drain is free to tank and compare the static torque with the load."
+        },
+        {
+          "question": "What is the opening pressure?",
+          "answer": "The pressure at which the brake starts to release. The circuit must supply clearly more than this to release the brake fully, and never more than the maximum pressure."
+        },
+        {
+          "question": "Are these genuine Dinamic Oil parts?",
+          "answer": "Yes. Indus Hydraulics is an authorised Dinamic Oil distributor and supplies them new, direct from Dinamic Oil's factory in Bomporto, Italy, with the manufacturer's documentation."
+        }
+      ],
+      "specs": [
+        {
+          "group": "Identification",
+          "label": "Product type",
+          "value": "Negative multi-disc parking brake",
+          "unit": null,
+          "position": 0,
+          "isFilterable": true,
+          "templateKey": "product_type"
+        },
+        {
+          "group": "Identification",
+          "label": "Series",
+          "value": "Dinamic Oil F1, F2, F5, F6, F8, F9, MD",
+          "unit": null,
+          "position": 1,
+          "isFilterable": true,
+          "templateKey": "series"
+        },
+        {
+          "group": "Identification",
+          "label": "Execution",
+          "value": "Spring applied, hydraulically released",
+          "unit": null,
+          "position": 2,
+          "isFilterable": false,
+          "templateKey": "execution"
+        },
+        {
+          "group": "Performance",
+          "label": "Output torque",
+          "value": "110 to 3,051 Nm static (±5 %)",
+          "unit": null,
+          "position": 3,
+          "isFilterable": false,
+          "templateKey": "torque_rating"
+        },
+        {
+          "group": "Hydraulics",
+          "label": "Working pressure",
+          "value": "Opens at 10 to 87 bar; max 150 to 300 bar",
+          "unit": null,
+          "position": 4,
+          "isFilterable": false,
+          "templateKey": "working_pressure"
+        },
+        {
+          "group": "Construction",
+          "label": "Motor / input",
+          "value": "SAE A, SAE C, SAE D, ST, MU, MLR direct flange",
+          "unit": null,
+          "position": 5,
+          "isFilterable": false,
+          "templateKey": "motor_input"
+        },
+        {
+          "group": "Construction",
+          "label": "Output / mounting",
+          "value": "Fits RE, RA, GB, GBA planetary and slewing gearboxes",
+          "unit": null,
+          "position": 6,
+          "isFilterable": false,
+          "templateKey": "output"
+        },
+        {
+          "group": "Construction",
+          "label": "Lubrication",
+          "value": "About 0.1 L ISO VG 32 (F1, F2, F5, F6, F8)",
+          "unit": null,
+          "position": 7,
+          "isFilterable": false,
+          "templateKey": "lubrication"
+        },
+        {
+          "group": "Supply",
+          "label": "Made in",
+          "value": "Italy (Dinamic Oil S.p.A., Bomporto)",
+          "unit": null,
+          "position": 8,
+          "isFilterable": false,
+          "templateKey": "origin"
+        },
+        {
+          "group": "Supply",
+          "label": "Supply",
+          "value": "Authorised distributor, direct from the factory",
+          "unit": null,
+          "position": 9,
+          "isFilterable": false,
+          "templateKey": "supply"
+        }
+      ],
+      "searchAliases": [
+        "F01",
+        "F02",
+        "F05",
+        "F10",
+        "F11",
+        "F12",
+        "F13",
+        "F14",
+        "F16",
+        "F20",
+        "F21",
+        "F22",
+        "F23",
+        "F24",
+        "F25",
+        "F26",
+        "F501",
+        "F502",
+        "F503",
+        "F504",
+        "F505",
+        "F506",
+        "F508",
+        "F601",
+        "F602",
+        "F603",
+        "F604",
+        "F605",
+        "F606",
+        "F608",
+        "F610",
+        "F612",
+        "F813",
+        "F815",
+        "F818",
+        "F820",
+        "F823",
+        "F827",
+        "F830",
+        "F902",
+        "F903",
+        "F904",
+        "F905",
+        "F906",
+        "F908",
+        "F910",
+        "F912",
+        "F915",
+        "MD20",
+        "MD30",
+        "MD40",
+        "MD45",
+        "freno negativo",
+        "multi disc brake",
+        "parking brake"
+      ],
+      "images": [
+        {
+          "file": "dinamic-oil-f1-f2-multi-disc-brake-drawing.jpg",
+          "alt": "Dinamic Oil F1 and F2 negative multi-disc brake drawing with SAE A orbital-motor flange, catalogue page H-21",
+          "caption": "Dinamic Oil catalogue drawing (fetched 2026-10-20). Maker's own document; Indus is an authorised Dinamic Oil distributor."
+        }
+      ],
+      "variants": [
+        {
+          "partNumber": "IH-DO-BRK-F01",
+          "position": 0,
+          "dimensions": {
+            "item": "F01 — SAE A orbital-motor flange, Ø186 input; opens at 23 bar, max 300 bar",
+            "brakeTorqueNm": 132,
+            "maxRpm": 700,
+            "mount": "Fits RE 110–8000; GB 12010–16000"
+          }
+        },
+        {
+          "partNumber": "IH-DO-BRK-F10",
+          "position": 1,
+          "dimensions": {
+            "item": "F10 — SAE A orbital-motor flange, Ø186 input; opens at 29 bar, max 300 bar",
+            "brakeTorqueNm": 133,
+            "maxRpm": 700,
+            "mount": "Fits RE 110–8000; GB 12010–16000"
+          }
+        },
+        {
+          "partNumber": "IH-DO-BRK-F11",
+          "position": 2,
+          "dimensions": {
+            "item": "F11 — SAE A orbital-motor flange, Ø186 input; opens at 34 bar, max 300 bar",
+            "brakeTorqueNm": 182,
+            "maxRpm": 700,
+            "mount": "Fits RE 110–8000; GB 12010–16000"
+          }
+        },
+        {
+          "partNumber": "IH-DO-BRK-F12",
+          "position": 3,
+          "dimensions": {
+            "item": "F12 — SAE A orbital-motor flange, Ø186 input; opens at 26 bar, max 300 bar",
+            "brakeTorqueNm": 235,
+            "maxRpm": 700,
+            "mount": "Fits RE 110–8000; GB 12010–16000"
+          }
+        },
+        {
+          "partNumber": "IH-DO-BRK-F13",
+          "position": 4,
+          "dimensions": {
+            "item": "F13 — SAE A orbital-motor flange, Ø186 input; opens at 30 bar, max 300 bar",
+            "brakeTorqueNm": 332,
+            "maxRpm": 700,
+            "mount": "Fits RE 110–8000; GB 12010–16000"
+          }
+        },
+        {
+          "partNumber": "IH-DO-BRK-F14",
+          "position": 5,
+          "dimensions": {
+            "item": "F14 — SAE A orbital-motor flange, Ø186 input; opens at 36 bar, max 300 bar",
+            "brakeTorqueNm": 468,
+            "maxRpm": 700,
+            "mount": "Fits RE 110–8000; GB 12010–16000"
+          }
+        },
+        {
+          "partNumber": "IH-DO-BRK-F05",
+          "position": 6,
+          "dimensions": {
+            "item": "F05 — SAE A orbital-motor flange, Ø186 input; opens at 39 bar, max 300 bar",
+            "brakeTorqueNm": 530,
+            "maxRpm": 700,
+            "mount": "Fits RE 110–8000; GB 12010–16000"
+          }
+        },
+        {
+          "partNumber": "IH-DO-BRK-F16",
+          "position": 7,
+          "dimensions": {
+            "item": "F16 — SAE A orbital-motor flange, Ø186 input; opens at 42 bar, max 300 bar",
+            "brakeTorqueNm": 608,
+            "maxRpm": 700,
+            "mount": "Fits RE 110–8000; GB 12010–16000"
+          }
+        },
+        {
+          "partNumber": "IH-DO-BRK-F02",
+          "position": 8,
+          "dimensions": {
+            "item": "F02 — SAE A orbital-motor flange, Ø244 input; opens at 23 bar, max 300 bar",
+            "brakeTorqueNm": 132,
+            "maxRpm": 700,
+            "mount": "Fits RE 310–8000; GB 12010–53000"
+          }
+        },
+        {
+          "partNumber": "IH-DO-BRK-F20",
+          "position": 9,
+          "dimensions": {
+            "item": "F20 — SAE A orbital-motor flange, Ø244 input; opens at 29 bar, max 300 bar",
+            "brakeTorqueNm": 133,
+            "maxRpm": 700,
+            "mount": "Fits RE 310–8000; GB 12010–53000"
+          }
+        },
+        {
+          "partNumber": "IH-DO-BRK-F21",
+          "position": 10,
+          "dimensions": {
+            "item": "F21 — SAE A orbital-motor flange, Ø244 input; opens at 34 bar, max 300 bar",
+            "brakeTorqueNm": 182,
+            "maxRpm": 700,
+            "mount": "Fits RE 310–8000; GB 12010–53000"
+          }
+        },
+        {
+          "partNumber": "IH-DO-BRK-F22",
+          "position": 11,
+          "dimensions": {
+            "item": "F22 — SAE A orbital-motor flange, Ø244 input; opens at 26 bar, max 300 bar",
+            "brakeTorqueNm": 235,
+            "maxRpm": 700,
+            "mount": "Fits RE 310–8000; GB 12010–53000"
+          }
+        },
+        {
+          "partNumber": "IH-DO-BRK-F23",
+          "position": 12,
+          "dimensions": {
+            "item": "F23 — SAE A orbital-motor flange, Ø244 input; opens at 30 bar, max 300 bar",
+            "brakeTorqueNm": 332,
+            "maxRpm": 700,
+            "mount": "Fits RE 310–8000; GB 12010–53000"
+          }
+        },
+        {
+          "partNumber": "IH-DO-BRK-F24",
+          "position": 13,
+          "dimensions": {
+            "item": "F24 — SAE A orbital-motor flange, Ø244 input; opens at 36 bar, max 300 bar",
+            "brakeTorqueNm": 468,
+            "maxRpm": 700,
+            "mount": "Fits RE 310–8000; GB 12010–53000"
+          }
+        },
+        {
+          "partNumber": "IH-DO-BRK-F25",
+          "position": 14,
+          "dimensions": {
+            "item": "F25 — SAE A orbital-motor flange, Ø244 input; opens at 39 bar, max 300 bar",
+            "brakeTorqueNm": 530,
+            "maxRpm": 700,
+            "mount": "Fits RE 310–8000; GB 12010–53000"
+          }
+        },
+        {
+          "partNumber": "IH-DO-BRK-F26",
+          "position": 15,
+          "dimensions": {
+            "item": "F26 — SAE A orbital-motor flange, Ø244 input; opens at 42 bar, max 300 bar",
+            "brakeTorqueNm": 608,
+            "maxRpm": 700,
+            "mount": "Fits RE 310–8000; GB 12010–53000"
+          }
+        },
+        {
+          "partNumber": "IH-DO-BRK-F501",
+          "position": 16,
+          "dimensions": {
+            "item": "F501 — ST universal input, Ø186 group; opens at 10 bar, max 300 bar",
+            "brakeTorqueNm": 110,
+            "maxRpm": 1500,
+            "mount": "Fits RE 110–8000; GB 12010–16000"
+          }
+        },
+        {
+          "partNumber": "IH-DO-BRK-F502",
+          "position": 17,
+          "dimensions": {
+            "item": "F502 — ST universal input, Ø186 group; opens at 20 bar, max 300 bar",
+            "brakeTorqueNm": 215,
+            "maxRpm": 1500,
+            "mount": "Fits RE 110–8000; GB 12010–16000"
+          }
+        },
+        {
+          "partNumber": "IH-DO-BRK-F503",
+          "position": 18,
+          "dimensions": {
+            "item": "F503 — ST universal input, Ø186 group; opens at 30 bar, max 300 bar",
+            "brakeTorqueNm": 325,
+            "maxRpm": 1500,
+            "mount": "Fits RE 110–8000; GB 12010–16000"
+          }
+        },
+        {
+          "partNumber": "IH-DO-BRK-F504",
+          "position": 19,
+          "dimensions": {
+            "item": "F504 — ST universal input, Ø186 group; opens at 38 bar, max 300 bar",
+            "brakeTorqueNm": 405,
+            "maxRpm": 1500,
+            "mount": "Fits RE 110–8000; GB 12010–16000"
+          }
+        },
+        {
+          "partNumber": "IH-DO-BRK-F505",
+          "position": 20,
+          "dimensions": {
+            "item": "F505 — ST universal input, Ø186 group; opens at 28 bar, max 300 bar",
+            "brakeTorqueNm": 500,
+            "maxRpm": 1500,
+            "mount": "Fits RE 110–8000; GB 12010–16000"
+          }
+        },
+        {
+          "partNumber": "IH-DO-BRK-F506",
+          "position": 21,
+          "dimensions": {
+            "item": "F506 — ST universal input, Ø186 group; opens at 35 bar, max 300 bar",
+            "brakeTorqueNm": 630,
+            "maxRpm": 1500,
+            "mount": "Fits RE 110–8000; GB 12010–16000"
+          }
+        },
+        {
+          "partNumber": "IH-DO-BRK-F508",
+          "position": 22,
+          "dimensions": {
+            "item": "F508 — ST universal input, Ø186 group; opens at 33 bar, max 300 bar",
+            "brakeTorqueNm": 818,
+            "maxRpm": 1500,
+            "mount": "Fits RE 110–8000; GB 12010–16000"
+          }
+        },
+        {
+          "partNumber": "IH-DO-BRK-F601",
+          "position": 23,
+          "dimensions": {
+            "item": "F601 — ST universal input, Ø244 group; opens at 10 bar, max 300 bar",
+            "brakeTorqueNm": 110,
+            "maxRpm": 1500,
+            "mount": "Fits RE 310–8000; GB 12010–53000"
+          }
+        },
+        {
+          "partNumber": "IH-DO-BRK-F602",
+          "position": 24,
+          "dimensions": {
+            "item": "F602 — ST universal input, Ø244 group; opens at 20 bar, max 300 bar",
+            "brakeTorqueNm": 215,
+            "maxRpm": 1500,
+            "mount": "Fits RE 310–8000; GB 12010–53000"
+          }
+        },
+        {
+          "partNumber": "IH-DO-BRK-F603",
+          "position": 25,
+          "dimensions": {
+            "item": "F603 — ST universal input, Ø244 group; opens at 30 bar, max 300 bar",
+            "brakeTorqueNm": 325,
+            "maxRpm": 1500,
+            "mount": "Fits RE 310–8000; GB 12010–53000"
+          }
+        },
+        {
+          "partNumber": "IH-DO-BRK-F604",
+          "position": 26,
+          "dimensions": {
+            "item": "F604 — ST universal input, Ø244 group; opens at 38 bar, max 300 bar",
+            "brakeTorqueNm": 405,
+            "maxRpm": 1500,
+            "mount": "Fits RE 310–8000; GB 12010–53000"
+          }
+        },
+        {
+          "partNumber": "IH-DO-BRK-F605",
+          "position": 27,
+          "dimensions": {
+            "item": "F605 — ST universal input, Ø244 group; opens at 28 bar, max 300 bar",
+            "brakeTorqueNm": 500,
+            "maxRpm": 1500,
+            "mount": "Fits RE 310–8000; GB 12010–53000"
+          }
+        },
+        {
+          "partNumber": "IH-DO-BRK-F606",
+          "position": 28,
+          "dimensions": {
+            "item": "F606 — ST universal input, Ø244 group; opens at 35 bar, max 300 bar",
+            "brakeTorqueNm": 630,
+            "maxRpm": 1500,
+            "mount": "Fits RE 310–8000; GB 12010–53000"
+          }
+        },
+        {
+          "partNumber": "IH-DO-BRK-F608",
+          "position": 29,
+          "dimensions": {
+            "item": "F608 — ST universal input, Ø244 group; opens at 33 bar, max 300 bar",
+            "brakeTorqueNm": 818,
+            "maxRpm": 1500,
+            "mount": "Fits RE 310–8000; GB 12010–53000"
+          }
+        },
+        {
+          "partNumber": "IH-DO-BRK-F610",
+          "position": 30,
+          "dimensions": {
+            "item": "F610 — ST universal input, Ø244 group; opens at 40 bar, max 300 bar",
+            "brakeTorqueNm": 1005,
+            "maxRpm": 1500,
+            "mount": "Fits RE 310–8000; GB 12010–53000"
+          }
+        },
+        {
+          "partNumber": "IH-DO-BRK-F612",
+          "position": 31,
+          "dimensions": {
+            "item": "F612 — ST universal input, Ø244 group; opens at 40 bar, max 300 bar",
+            "brakeTorqueNm": 1150,
+            "maxRpm": 1500,
+            "mount": "Fits RE 310–8000; GB 12010–53000"
+          }
+        },
+        {
+          "partNumber": "IH-DO-BRK-F813",
+          "position": 32,
+          "dimensions": {
+            "item": "F813 — MU or ST input; opens at 54 bar, max 300 bar",
+            "brakeTorqueNm": 1271,
+            "maxRpm": 1500,
+            "mount": "Fits RE 810–8000; GB 12010–150000"
+          }
+        },
+        {
+          "partNumber": "IH-DO-BRK-F815",
+          "position": 33,
+          "dimensions": {
+            "item": "F815 — MU or ST input; opens at 65 bar, max 300 bar",
+            "brakeTorqueNm": 1525,
+            "maxRpm": 1500,
+            "mount": "Fits RE 810–8000; GB 12010–150000"
+          }
+        },
+        {
+          "partNumber": "IH-DO-BRK-F818",
+          "position": 34,
+          "dimensions": {
+            "item": "F818 — MU or ST input; opens at 76 bar, max 300 bar",
+            "brakeTorqueNm": 1780,
+            "maxRpm": 1500,
+            "mount": "Fits RE 810–8000; GB 12010–150000"
+          }
+        },
+        {
+          "partNumber": "IH-DO-BRK-F820",
+          "position": 35,
+          "dimensions": {
+            "item": "F820 — MU or ST input; opens at 58 bar, max 300 bar",
+            "brakeTorqueNm": 2034,
+            "maxRpm": 1500,
+            "mount": "Fits RE 810–8000; GB 12010–150000"
+          }
+        },
+        {
+          "partNumber": "IH-DO-BRK-F823",
+          "position": 36,
+          "dimensions": {
+            "item": "F823 — MU or ST input; opens at 65 bar, max 300 bar",
+            "brakeTorqueNm": 2288,
+            "maxRpm": 1500,
+            "mount": "Fits RE 810–8000; GB 12010–150000"
+          }
+        },
+        {
+          "partNumber": "IH-DO-BRK-F827",
+          "position": 37,
+          "dimensions": {
+            "item": "F827 — MU or ST input; opens at 76 bar, max 300 bar",
+            "brakeTorqueNm": 2670,
+            "maxRpm": 1500,
+            "mount": "Fits RE 810–8000; GB 12010–150000"
+          }
+        },
+        {
+          "partNumber": "IH-DO-BRK-F830",
+          "position": 38,
+          "dimensions": {
+            "item": "F830 — MU or ST input; opens at 87 bar, max 300 bar",
+            "brakeTorqueNm": 3051,
+            "maxRpm": 1500,
+            "mount": "Fits RE 810–8000; GB 12010–150000"
+          }
+        },
+        {
+          "partNumber": "IH-DO-BRK-F902",
+          "position": 39,
+          "dimensions": {
+            "item": "F902 — SAE C, SAE D or ST input; opens at 14 bar, max 300 bar",
+            "brakeTorqueNm": 200,
+            "maxRpm": 1500,
+            "mount": "Fits RE 310–8000; GB 12010–53000"
+          }
+        },
+        {
+          "partNumber": "IH-DO-BRK-F903",
+          "position": 40,
+          "dimensions": {
+            "item": "F903 — SAE C, SAE D or ST input; opens at 22 bar, max 300 bar",
+            "brakeTorqueNm": 310,
+            "maxRpm": 1500,
+            "mount": "Fits RE 310–8000; GB 12010–53000"
+          }
+        },
+        {
+          "partNumber": "IH-DO-BRK-F904",
+          "position": 41,
+          "dimensions": {
+            "item": "F904 — SAE C, SAE D or ST input; opens at 19 bar, max 300 bar",
+            "brakeTorqueNm": 400,
+            "maxRpm": 1500,
+            "mount": "Fits RE 310–8000; GB 12010–53000"
+          }
+        },
+        {
+          "partNumber": "IH-DO-BRK-F905",
+          "position": 42,
+          "dimensions": {
+            "item": "F905 — SAE C, SAE D or ST input; opens at 18 bar, max 300 bar",
+            "brakeTorqueNm": 485,
+            "maxRpm": 1500,
+            "mount": "Fits RE 310–8000; GB 12010–53000"
+          }
+        },
+        {
+          "partNumber": "IH-DO-BRK-F906",
+          "position": 43,
+          "dimensions": {
+            "item": "F906 — SAE C, SAE D or ST input; opens at 23 bar, max 300 bar",
+            "brakeTorqueNm": 620,
+            "maxRpm": 1500,
+            "mount": "Fits RE 310–8000; GB 12010–53000"
+          }
+        },
+        {
+          "partNumber": "IH-DO-BRK-F908",
+          "position": 44,
+          "dimensions": {
+            "item": "F908 — SAE C, SAE D or ST input; opens at 23 bar, max 300 bar",
+            "brakeTorqueNm": 770,
+            "maxRpm": 1500,
+            "mount": "Fits RE 310–8000; GB 12010–53000"
+          }
+        },
+        {
+          "partNumber": "IH-DO-BRK-F910",
+          "position": 45,
+          "dimensions": {
+            "item": "F910 — SAE C, SAE D or ST input; opens at 29 bar, max 300 bar",
+            "brakeTorqueNm": 990,
+            "maxRpm": 1500,
+            "mount": "Fits RE 310–8000; GB 12010–53000"
+          }
+        },
+        {
+          "partNumber": "IH-DO-BRK-F912",
+          "position": 46,
+          "dimensions": {
+            "item": "F912 — SAE C, SAE D or ST input; opens at 34 bar, max 300 bar",
+            "brakeTorqueNm": 1160,
+            "maxRpm": 1500,
+            "mount": "Fits RE 310–8000; GB 12010–53000"
+          }
+        },
+        {
+          "partNumber": "IH-DO-BRK-F915",
+          "position": 47,
+          "dimensions": {
+            "item": "F915 — SAE C, SAE D or ST input; opens at 38 bar, max 300 bar",
+            "brakeTorqueNm": 1325,
+            "maxRpm": 1500,
+            "mount": "Fits RE 310–8000; GB 12010–53000"
+          }
+        },
+        {
+          "partNumber": "IH-DO-BRK-MD20",
+          "position": 48,
+          "dimensions": {
+            "item": "MD20 — direct flange for MLR motors; opens at 24 bar, max 150 bar",
+            "brakeTorqueNm": 220,
+            "maxRpm": 700,
+            "mount": "Fits RE 110–8000; GB 12010–16000"
+          }
+        },
+        {
+          "partNumber": "IH-DO-BRK-MD30",
+          "position": 49,
+          "dimensions": {
+            "item": "MD30 — direct flange for MLR motors; opens at 24 bar, max 150 bar",
+            "brakeTorqueNm": 308,
+            "maxRpm": 700,
+            "mount": "Fits RE 110–8000; GB 12010–16000"
+          }
+        },
+        {
+          "partNumber": "IH-DO-BRK-MD40",
+          "position": 50,
+          "dimensions": {
+            "item": "MD40 — direct flange for MLR motors; opens at 24 bar, max 150 bar",
+            "brakeTorqueNm": 396,
+            "maxRpm": 700,
+            "mount": "Fits RE 110–8000; GB 12010–16000"
+          }
+        },
+        {
+          "partNumber": "IH-DO-BRK-MD45",
+          "position": 51,
+          "dimensions": {
+            "item": "MD45 — direct flange for MLR motors; opens at 26 bar, max 150 bar",
+            "brakeTorqueNm": 459,
+            "maxRpm": 700,
+            "mount": "Fits RE 110–8000; GB 12010–16000"
+          }
+        }
+      ],
+      "crossReferences": []
+    },
+    {
+      "sku": "IH-DO-WBRK",
+      "slug": "dinamic-oil-winch-drive-brakes",
+      "title": "Dinamic Oil Brakes for WD and RW Winch Drives — FW, FY, F5 and F9",
+      "category": "gearbox-winch-accessories",
+      "focusKeyword": "winch drive brake",
+      "descriptionShort": "Dinamic Oil FW, FY, F5 and F9 negative multi-disc brakes for WD and RW planetary winch drives: 31 models, 110 to 3,600 Nm, low-opening-pressure and freewheel versions. From Indus Hydraulics, authorised Dinamic Oil distributor, UAE.",
+      "descriptionLong": "<p>The brakes for Dinamic Oil's WD and RW planetary winch drives are negative static multi-disc brakes, released hydraulically\nand applied by springs, so the drum is held whenever the control pressure falls to zero. They are sized to the winch drive's torque\nin line with the main classification societies, and mount between the hydraulic motor and the drive input.</p>\n<p>Indus Hydraulics is an authorised Dinamic Oil distributor and supplies direct from Dinamic Oil's factory in Bomporto, Italy.</p>\n<h3>Range</h3>\n<ul>\n<li><strong>FW</strong> (WD drives) — 230 to 1,600 Nm, SAE B, SAE C, SAE D or integral ST input, up to 3,500 rpm input, optional freewheel up to 1,160 Nm.</li>\n<li><strong>FY</strong> (WD drives) — 1,840 to 3,600 Nm, SAE B, SAE C, SAE D or integral MU input, up to 2,800 rpm, optional freewheel up to 3,070 Nm.</li>\n<li><strong>F5 and F9</strong> (RW drives) — 110 to 1,335 Nm, ST universal input (F5) or SAE C, SAE D and ST (F9); F9 with optional freewheel.</li>\n</ul>\n<p>The table gives each model's static torque (±5 %), opening and maximum pressure, maximum input speed and the drive it serves. The\nFY26 torque is printed inconsistently in the catalogue and is confirmed with the order.</p>\n<h3>Versions</h3>\n<ul>\n<li><strong>Low opening pressure</strong> — for winches whose brake is controlled from the charge (boost) pump of a closed-loop circuit.</li>\n<li><strong>Special lubrication</strong> — for continuous input speeds above 1,500 rpm without overheating.</li>\n<li><strong>Freewheel (sprag clutch)</strong> — lets the drive turn freely in the hoisting direction while the brake stays applied, a\nprotection against load drop when hoisting starts.</li>\n</ul>\n<h3>Selection</h3>\n<p>The brake's static torque times the drive ratio must hold the drum torque of the heaviest load with the margin the class rules require,\nand must not exceed the drive's maximum static torque. Back-pressure in the release line reduces the holding torque, so drain the brake\nline freely to tank.</p>",
+      "seoTitle": "Dinamic Oil Brakes for WD and RW Winch Drives",
+      "seoDescription": "Dinamic Oil FW, FY, F5 and F9 multi-disc brakes for WD and RW winch drives, 110–3,600 Nm, freewheel options. Authorised distributor, UAE.",
+      "faqs": [
+        {
+          "question": "What do I need to send to order one?",
+          "answer": "The Dinamic Oil model and, if you have it, the full order code or serial number of the gearbox, drive or winch it goes on. We confirm the part against that with Dinamic Oil before quoting."
+        },
+        {
+          "question": "What does the freewheel do?",
+          "answer": "It is a sprag clutch on the brake that lets the input turn in the hoisting direction with the brake applied, so the load cannot drop back when hoisting starts while the brake is still releasing."
+        },
+        {
+          "question": "When do I need a low-opening-pressure brake?",
+          "answer": "When the brake is released from the charge pump of a closed-loop (hydrostatic) winch circuit, which delivers far less pressure than the main loop."
+        },
+        {
+          "question": "Do WD and RW drives use the same brakes?",
+          "answer": "No. WD drives use the FW and FY families; RW drives use F5 and F9 brakes, the same families as Dinamic Oil's planetary gearboxes."
+        },
+        {
+          "question": "Are these genuine Dinamic Oil parts?",
+          "answer": "Yes. Indus Hydraulics is an authorised Dinamic Oil distributor and supplies them new, direct from Dinamic Oil's factory in Bomporto, Italy, with the manufacturer's documentation."
+        }
+      ],
+      "specs": [
+        {
+          "group": "Identification",
+          "label": "Product type",
+          "value": "Winch drive brake",
+          "unit": null,
+          "position": 0,
+          "isFilterable": true,
+          "templateKey": "product_type"
+        },
+        {
+          "group": "Identification",
+          "label": "Series",
+          "value": "Dinamic Oil FW, FY, F5, F9",
+          "unit": null,
+          "position": 1,
+          "isFilterable": true,
+          "templateKey": "series"
+        },
+        {
+          "group": "Identification",
+          "label": "Execution",
+          "value": "Negative static multi-disc, hydraulically released",
+          "unit": null,
+          "position": 2,
+          "isFilterable": false,
+          "templateKey": "execution"
+        },
+        {
+          "group": "Performance",
+          "label": "Output torque",
+          "value": "110 to 3,600 Nm static (±5 %)",
+          "unit": null,
+          "position": 3,
+          "isFilterable": false,
+          "templateKey": "torque_rating"
+        },
+        {
+          "group": "Hydraulics",
+          "label": "Working pressure",
+          "value": "Max 300 bar",
+          "unit": null,
+          "position": 4,
+          "isFilterable": false,
+          "templateKey": "working_pressure"
+        },
+        {
+          "group": "Construction",
+          "label": "Motor / input",
+          "value": "SAE B, SAE C, SAE D, ST, MU",
+          "unit": null,
+          "position": 5,
+          "isFilterable": false,
+          "templateKey": "motor_input"
+        },
+        {
+          "group": "Construction",
+          "label": "Output / mounting",
+          "value": "WD (FW, FY) and RW (F5, F9) winch drives",
+          "unit": null,
+          "position": 6,
+          "isFilterable": false,
+          "templateKey": "output"
+        },
+        {
+          "group": "Supply",
+          "label": "Made in",
+          "value": "Italy (Dinamic Oil S.p.A., Bomporto)",
+          "unit": null,
+          "position": 7,
+          "isFilterable": false,
+          "templateKey": "origin"
+        },
+        {
+          "group": "Supply",
+          "label": "Supply",
+          "value": "Authorised distributor, direct from the factory",
+          "unit": null,
+          "position": 8,
+          "isFilterable": false,
+          "templateKey": "supply"
+        }
+      ],
+      "searchAliases": [
+        "F501",
+        "F502",
+        "F503",
+        "F504",
+        "F505",
+        "F506",
+        "F508",
+        "F902",
+        "F903",
+        "F904",
+        "F905",
+        "F906",
+        "F908",
+        "F910",
+        "F912",
+        "F915",
+        "FW02",
+        "FW03",
+        "FW04",
+        "FW05",
+        "FW06",
+        "FW08",
+        "FW10",
+        "FW11",
+        "FW13",
+        "FW16",
+        "FY18",
+        "FY22",
+        "FY26",
+        "FY27",
+        "FY36",
+        "freno argano",
+        "winch brake"
+      ],
+      "images": [
+        {
+          "file": "dinamic-oil-f9-multi-disc-brake-drawing.jpg",
+          "alt": "Dinamic Oil F9 negative multi-disc brake drawing with SAE C, SAE D or ST input, catalogue page H-25",
+          "caption": "Dinamic Oil catalogue drawing (fetched 2026-10-20). Maker's own document; Indus is an authorised Dinamic Oil distributor."
+        }
+      ],
+      "variants": [
+        {
+          "partNumber": "IH-DO-WBRK-FW02",
+          "position": 0,
+          "dimensions": {
+            "item": "FW02 — opens at 15 bar, max 300 bar",
+            "mount": "WD winch drives",
+            "brakeTorqueNm": 230,
+            "maxRpm": 3500
+          }
+        },
+        {
+          "partNumber": "IH-DO-WBRK-FW03",
+          "position": 1,
+          "dimensions": {
+            "item": "FW03 — opens at 15 bar, max 300 bar",
+            "mount": "WD winch drives",
+            "brakeTorqueNm": 340,
+            "maxRpm": 3500
+          }
+        },
+        {
+          "partNumber": "IH-DO-WBRK-FW04",
+          "position": 2,
+          "dimensions": {
+            "item": "FW04 — opens at 14 bar, max 300 bar",
+            "mount": "WD winch drives",
+            "brakeTorqueNm": 420,
+            "maxRpm": 3500
+          }
+        },
+        {
+          "partNumber": "IH-DO-WBRK-FW05",
+          "position": 3,
+          "dimensions": {
+            "item": "FW05 — opens at 17.5 bar, max 300 bar",
+            "mount": "WD winch drives",
+            "brakeTorqueNm": 550,
+            "maxRpm": 3500
+          }
+        },
+        {
+          "partNumber": "IH-DO-WBRK-FW06",
+          "position": 4,
+          "dimensions": {
+            "item": "FW06 — opens at 12.5 bar, max 300 bar",
+            "mount": "WD winch drives",
+            "brakeTorqueNm": 660,
+            "maxRpm": 3500
+          }
+        },
+        {
+          "partNumber": "IH-DO-WBRK-FW08",
+          "position": 5,
+          "dimensions": {
+            "item": "FW08 — opens at 17.5 bar, max 300 bar",
+            "mount": "WD winch drives",
+            "brakeTorqueNm": 800,
+            "maxRpm": 3500
+          }
+        },
+        {
+          "partNumber": "IH-DO-WBRK-FW10",
+          "position": 6,
+          "dimensions": {
+            "item": "FW10 — opens at 16 bar, max 300 bar",
+            "mount": "WD winch drives",
+            "brakeTorqueNm": 1000,
+            "maxRpm": 3500
+          }
+        },
+        {
+          "partNumber": "IH-DO-WBRK-FW11",
+          "position": 7,
+          "dimensions": {
+            "item": "FW11 — opens at 17.5 bar, max 300 bar",
+            "mount": "WD winch drives",
+            "brakeTorqueNm": 1100,
+            "maxRpm": 3500
+          }
+        },
+        {
+          "partNumber": "IH-DO-WBRK-FW13",
+          "position": 8,
+          "dimensions": {
+            "item": "FW13 — opens at 17.5 bar, max 300 bar",
+            "mount": "WD winch drives",
+            "brakeTorqueNm": 1300,
+            "maxRpm": 3500
+          }
+        },
+        {
+          "partNumber": "IH-DO-WBRK-FW16",
+          "position": 9,
+          "dimensions": {
+            "item": "FW16 — opens at 17.5 bar, max 300 bar",
+            "mount": "WD winch drives",
+            "brakeTorqueNm": 1600,
+            "maxRpm": 3500
+          }
+        },
+        {
+          "partNumber": "IH-DO-WBRK-FY18",
+          "position": 10,
+          "dimensions": {
+            "item": "FY18 — opens at 18 bar, max 300 bar",
+            "mount": "WD winch drives",
+            "brakeTorqueNm": 1840,
+            "maxRpm": 2800
+          }
+        },
+        {
+          "partNumber": "IH-DO-WBRK-FY22",
+          "position": 11,
+          "dimensions": {
+            "item": "FY22 — opens at 17.5 bar, max 300 bar",
+            "mount": "WD winch drives",
+            "brakeTorqueNm": 2200,
+            "maxRpm": 2800
+          }
+        },
+        {
+          "partNumber": "IH-DO-WBRK-FY26",
+          "position": 12,
+          "dimensions": {
+            "item": "FY26 — opens at 17 bar, max 300 bar (torque confirmed per order)",
+            "mount": "WD winch drives",
+            "maxRpm": 2800
+          }
+        },
+        {
+          "partNumber": "IH-DO-WBRK-FY27",
+          "position": 13,
+          "dimensions": {
+            "item": "FY27 — opens at 17.5 bar, max 300 bar",
+            "mount": "WD winch drives",
+            "brakeTorqueNm": 2700,
+            "maxRpm": 2800
+          }
+        },
+        {
+          "partNumber": "IH-DO-WBRK-FY36",
+          "position": 14,
+          "dimensions": {
+            "item": "FY36 — opens at 17.5 bar, max 300 bar",
+            "mount": "WD winch drives",
+            "brakeTorqueNm": 3600,
+            "maxRpm": 2800
+          }
+        },
+        {
+          "partNumber": "IH-DO-WBRK-F501",
+          "position": 15,
+          "dimensions": {
+            "item": "F501 — opens at 10 bar, max 300 bar",
+            "mount": "RW winch drives",
+            "brakeTorqueNm": 110
+          }
+        },
+        {
+          "partNumber": "IH-DO-WBRK-F502",
+          "position": 16,
+          "dimensions": {
+            "item": "F502 — opens at 20 bar, max 300 bar",
+            "mount": "RW winch drives",
+            "brakeTorqueNm": 215
+          }
+        },
+        {
+          "partNumber": "IH-DO-WBRK-F503",
+          "position": 17,
+          "dimensions": {
+            "item": "F503 — opens at 30 bar, max 300 bar",
+            "mount": "RW winch drives",
+            "brakeTorqueNm": 325
+          }
+        },
+        {
+          "partNumber": "IH-DO-WBRK-F504",
+          "position": 18,
+          "dimensions": {
+            "item": "F504 — opens at 38 bar, max 300 bar",
+            "mount": "RW winch drives",
+            "brakeTorqueNm": 405
+          }
+        },
+        {
+          "partNumber": "IH-DO-WBRK-F505",
+          "position": 19,
+          "dimensions": {
+            "item": "F505 — opens at 28 bar, max 300 bar",
+            "mount": "RW winch drives",
+            "brakeTorqueNm": 500
+          }
+        },
+        {
+          "partNumber": "IH-DO-WBRK-F506",
+          "position": 20,
+          "dimensions": {
+            "item": "F506 — opens at 35 bar, max 300 bar",
+            "mount": "RW winch drives",
+            "brakeTorqueNm": 630
+          }
+        },
+        {
+          "partNumber": "IH-DO-WBRK-F508",
+          "position": 21,
+          "dimensions": {
+            "item": "F508 — opens at 33 bar, max 300 bar",
+            "mount": "RW winch drives",
+            "brakeTorqueNm": 818
+          }
+        },
+        {
+          "partNumber": "IH-DO-WBRK-F902",
+          "position": 22,
+          "dimensions": {
+            "item": "F902 — opens at 14 bar, max 300 bar",
+            "mount": "RW winch drives",
+            "brakeTorqueNm": 200
+          }
+        },
+        {
+          "partNumber": "IH-DO-WBRK-F903",
+          "position": 23,
+          "dimensions": {
+            "item": "F903 — opens at 22 bar, max 300 bar",
+            "mount": "RW winch drives",
+            "brakeTorqueNm": 310
+          }
+        },
+        {
+          "partNumber": "IH-DO-WBRK-F904",
+          "position": 24,
+          "dimensions": {
+            "item": "F904 — opens at 19 bar, max 300 bar",
+            "mount": "RW winch drives",
+            "brakeTorqueNm": 400
+          }
+        },
+        {
+          "partNumber": "IH-DO-WBRK-F905",
+          "position": 25,
+          "dimensions": {
+            "item": "F905 — opens at 18 bar, max 300 bar",
+            "mount": "RW winch drives",
+            "brakeTorqueNm": 490
+          }
+        },
+        {
+          "partNumber": "IH-DO-WBRK-F906",
+          "position": 26,
+          "dimensions": {
+            "item": "F906 — opens at 23 bar, max 300 bar",
+            "mount": "RW winch drives",
+            "brakeTorqueNm": 620
+          }
+        },
+        {
+          "partNumber": "IH-DO-WBRK-F908",
+          "position": 27,
+          "dimensions": {
+            "item": "F908 — opens at 23 bar, max 300 bar",
+            "mount": "RW winch drives",
+            "brakeTorqueNm": 780
+          }
+        },
+        {
+          "partNumber": "IH-DO-WBRK-F910",
+          "position": 28,
+          "dimensions": {
+            "item": "F910 — opens at 29 bar, max 300 bar",
+            "mount": "RW winch drives",
+            "brakeTorqueNm": 1000
+          }
+        },
+        {
+          "partNumber": "IH-DO-WBRK-F912",
+          "position": 29,
+          "dimensions": {
+            "item": "F912 — opens at 34 bar, max 300 bar",
+            "mount": "RW winch drives",
+            "brakeTorqueNm": 1160
+          }
+        },
+        {
+          "partNumber": "IH-DO-WBRK-F915",
+          "position": 30,
+          "dimensions": {
+            "item": "F915 — opens at 38 bar, max 300 bar",
+            "mount": "RW winch drives",
+            "brakeTorqueNm": 1335
+          }
+        }
+      ],
+      "crossReferences": []
+    },
+    {
+      "sku": "IH-DO-COOL",
+      "slug": "dinamic-oil-gearbox-oil-cooling-units",
+      "title": "Dinamic Oil Gearbox Oil Cooling Units — URO/W Oil/Water and URO/A Oil/Air, 4 to 50 kW",
+      "category": "gearbox-winch-accessories",
+      "focusKeyword": "gearbox oil cooling unit",
+      "descriptionShort": "Dinamic Oil URO/W oil/water and URO/A oil/air cooling units for planetary gearboxes: 17 sizes, 4 to 50 kW, motor-driven pump, gauge, thermometer and thermostat. From Indus Hydraulics, authorised Dinamic Oil distributor, UAE.",
+      "descriptionLong": "<p>A planetary gearbox can transmit more power than it can shed as heat. When the power in continuous duty exceeds the\ngearbox's thermal power — a mixer, conveyor, mill or travel drive running all day, or any gearbox in a Gulf summer — the oil overheats\nlong before the gears are at their rating. Dinamic Oil's independent cooling units circulate the gearbox oil through a heat exchanger\nand back, removing up to 50 kW; larger units are engineered on request.</p>\n<p>Indus Hydraulics is an authorised Dinamic Oil distributor and supplies direct from Dinamic Oil's factory in Bomporto, Italy.</p>\n<h3>Oil/water units — URO/W</h3>\n<p>Seven sizes, 4 to 50 kW with water at 20 °C: a water/oil heat exchanger, a motor-driven gear pump (four-pole B5 motor, 230/400 V\n50 Hz three-phase, Viton seals), a 0–16 bar gauge between pump and exchanger, and a 0–120 °C thermometer at the exchanger outlet.</p>\n<h3>Oil/air units — URO/A</h3>\n<p>Ten sizes, 5 to 46 kW with air at 20 °C: an air/oil exchanger with fan and an adjustable, pre-wired 0–90 °C thermostat, a\nmotor-driven screw pump (four-pole B3/B5 motor, 230/400 V 50 Hz), gauge and thermometer. No water supply is needed, which suits\nremote sites — but the rating falls as the air gets hotter, so size an air unit for the real summer air temperature.</p>\n<h3>Options</h3>\n<p>A filter on the return to the gearbox (recommended), a minimum-pressure switch between pump and exchanger, and an electric flow\nswitch for full control of the oil flow. The table lists each unit's capacity, pump and fan motors, oil flow, water or air flow and\noverall dimensions A × B × C in millimetres.</p>\n<h3>Sizing</h3>\n<p>The unit has to remove the difference between the power lost in the gearbox and the heat the housing sheds by itself. Tell us the\ngearbox model, the transmitted power and duty, the mounting position and the ambient (or cooling-water) temperature, and we will size\nthe unit with Dinamic Oil and confirm the oil connections on the gearbox.</p>",
+      "seoTitle": "Dinamic Oil Gearbox Oil Cooling Units",
+      "seoDescription": "Dinamic Oil URO/W oil/water and URO/A oil/air cooling units for planetary gearboxes, 4 to 50 kW. Authorised distributor, direct from Italy.",
+      "faqs": [
+        {
+          "question": "What do I need to send to order one?",
+          "answer": "The Dinamic Oil model and, if you have it, the full order code or serial number of the gearbox, drive or winch it goes on. We confirm the part against that with Dinamic Oil before quoting."
+        },
+        {
+          "question": "How do I know if my gearbox needs a cooler?",
+          "answer": "Compare the power it transmits in continuous duty with the thermal power for its size and mounting in the gearbox catalogue. If the duty power is higher, it needs a cooler or a larger frame."
+        },
+        {
+          "question": "Water or air?",
+          "answer": "Water units are smaller for the same capacity and keep their rating as long as the water is cool. Air units need no water supply, but lose capacity as the ambient air temperature rises — size them for summer conditions."
+        },
+        {
+          "question": "Are the ratings at Gulf temperatures?",
+          "answer": "No. The catalogue rates the URO/W units with water at 20 °C and the URO/A units with air at 20 °C. At higher temperatures we confirm the selection with Dinamic Oil."
+        },
+        {
+          "question": "Are these genuine Dinamic Oil parts?",
+          "answer": "Yes. Indus Hydraulics is an authorised Dinamic Oil distributor and supplies them new, direct from Dinamic Oil's factory in Bomporto, Italy, with the manufacturer's documentation."
+        }
+      ],
+      "specs": [
+        {
+          "group": "Identification",
+          "label": "Product type",
+          "value": "Gearbox oil cooling unit",
+          "unit": null,
+          "position": 0,
+          "isFilterable": true,
+          "templateKey": "product_type"
+        },
+        {
+          "group": "Identification",
+          "label": "Series",
+          "value": "Dinamic Oil URO/W, URO/A",
+          "unit": null,
+          "position": 1,
+          "isFilterable": true,
+          "templateKey": "series"
+        },
+        {
+          "group": "Identification",
+          "label": "Execution",
+          "value": "Independent unit: pump, heat exchanger, instruments",
+          "unit": null,
+          "position": 2,
+          "isFilterable": false,
+          "templateKey": "execution"
+        },
+        {
+          "group": "Hydraulics",
+          "label": "Oil flow",
+          "value": "16 to 80 L/min",
+          "unit": null,
+          "position": 3,
+          "isFilterable": false,
+          "templateKey": "oil_flow"
+        },
+        {
+          "group": "Construction",
+          "label": "Motor / input",
+          "value": "Three-phase 230/400 V 50 Hz four-pole motors",
+          "unit": null,
+          "position": 4,
+          "isFilterable": false,
+          "templateKey": "motor_input"
+        },
+        {
+          "group": "Compliance",
+          "label": "Rating basis",
+          "value": "Capacity at 20 °C water (URO/W) or 20 °C air (URO/A)",
+          "unit": null,
+          "position": 5,
+          "isFilterable": false,
+          "templateKey": "rating_basis"
+        },
+        {
+          "group": "Supply",
+          "label": "Made in",
+          "value": "Italy (Dinamic Oil S.p.A., Bomporto)",
+          "unit": null,
+          "position": 6,
+          "isFilterable": false,
+          "templateKey": "origin"
+        },
+        {
+          "group": "Supply",
+          "label": "Supply",
+          "value": "Authorised distributor, direct from the factory",
+          "unit": null,
+          "position": 7,
+          "isFilterable": false,
+          "templateKey": "supply"
+        }
+      ],
+      "searchAliases": [
+        "URO",
+        "URO/A 10",
+        "URO/A 13",
+        "URO/A 16",
+        "URO/A 21",
+        "URO/A 26",
+        "URO/A 30",
+        "URO/A 40",
+        "URO/A 46",
+        "URO/A 5",
+        "URO/A 7",
+        "URO/W 13",
+        "URO/W 21",
+        "URO/W 31",
+        "URO/W 4",
+        "URO/W 50",
+        "URO/W 6",
+        "URO/W 9",
+        "gearbox cooler",
+        "oil cooler"
+      ],
+      "images": [
+        {
+          "file": "dinamic-oil-uro-w-oil-water-cooling-unit-drawing.jpg",
+          "alt": "Dinamic Oil URO/W oil/water cooling unit: pump, motor and heat exchanger on a base, dimensions A, B, C",
+          "caption": "Dinamic Oil catalogue drawing (fetched 2026-10-20). Maker's own document; Indus is an authorised Dinamic Oil distributor."
+        }
+      ],
+      "variants": [
+        {
+          "partNumber": "IH-DO-COOL-UROW4",
+          "position": 0,
+          "dimensions": {
+            "item": "URO/W 4 — 4 kW at 20 °C water; pump motor 0.37 kW; water 8 L/min",
+            "maxFlowLpm": 16,
+            "A": 500,
+            "B": 350,
+            "C": 400
+          }
+        },
+        {
+          "partNumber": "IH-DO-COOL-UROW6",
+          "position": 1,
+          "dimensions": {
+            "item": "URO/W 6 — 6 kW at 20 °C water; pump motor 0.37 kW; water 10 L/min",
+            "maxFlowLpm": 16,
+            "A": 500,
+            "B": 350,
+            "C": 400
+          }
+        },
+        {
+          "partNumber": "IH-DO-COOL-UROW9",
+          "position": 2,
+          "dimensions": {
+            "item": "URO/W 9 — 9 kW at 20 °C water; pump motor 0.55 kW; water 16 L/min",
+            "maxFlowLpm": 16,
+            "A": 500,
+            "B": 350,
+            "C": 400
+          }
+        },
+        {
+          "partNumber": "IH-DO-COOL-UROW13",
+          "position": 3,
+          "dimensions": {
+            "item": "URO/W 13 — 13 kW at 20 °C water; pump motor 1.1 kW; water 25 L/min",
+            "maxFlowLpm": 30,
+            "A": 500,
+            "B": 350,
+            "C": 400
+          }
+        },
+        {
+          "partNumber": "IH-DO-COOL-UROW21",
+          "position": 4,
+          "dimensions": {
+            "item": "URO/W 21 — 21 kW at 20 °C water; pump motor 1.5 kW; water 40 L/min",
+            "maxFlowLpm": 30,
+            "A": 500,
+            "B": 400,
+            "C": 450
+          }
+        },
+        {
+          "partNumber": "IH-DO-COOL-UROW31",
+          "position": 5,
+          "dimensions": {
+            "item": "URO/W 31 — 31 kW at 20 °C water; pump motor 2.2 kW; water 50 L/min",
+            "maxFlowLpm": 56,
+            "A": 720,
+            "B": 510,
+            "C": 520
+          }
+        },
+        {
+          "partNumber": "IH-DO-COOL-UROW50",
+          "position": 6,
+          "dimensions": {
+            "item": "URO/W 50 — 50 kW at 20 °C water; pump motor 3.0 kW; water 80 L/min",
+            "maxFlowLpm": 80,
+            "A": 730,
+            "B": 520,
+            "C": 520
+          }
+        },
+        {
+          "partNumber": "IH-DO-COOL-UROA5",
+          "position": 7,
+          "dimensions": {
+            "item": "URO/A 5 — 5 kW at 20 °C air; pump motor 1.5 kW; fan 0.12 kW, 900 m³/h",
+            "maxFlowLpm": 30,
+            "A": 660,
+            "B": 430,
+            "C": 700
+          }
+        },
+        {
+          "partNumber": "IH-DO-COOL-UROA7",
+          "position": 8,
+          "dimensions": {
+            "item": "URO/A 7 — 7 kW at 20 °C air; pump motor 1.5 kW; fan 0.12 kW, 1,300 m³/h",
+            "maxFlowLpm": 30,
+            "A": 710,
+            "B": 510,
+            "C": 700
+          }
+        },
+        {
+          "partNumber": "IH-DO-COOL-UROA10",
+          "position": 9,
+          "dimensions": {
+            "item": "URO/A 10 — 10 kW at 20 °C air; pump motor 1.5 kW; fan 0.18 kW, 2,750 m³/h",
+            "maxFlowLpm": 30,
+            "A": 710,
+            "B": 510,
+            "C": 830
+          }
+        },
+        {
+          "partNumber": "IH-DO-COOL-UROA13",
+          "position": 10,
+          "dimensions": {
+            "item": "URO/A 13 — 13 kW at 20 °C air; pump motor 1.5 kW; fan 0.23 kW, 2,750 m³/h",
+            "maxFlowLpm": 30,
+            "A": 710,
+            "B": 510,
+            "C": 830
+          }
+        },
+        {
+          "partNumber": "IH-DO-COOL-UROA16",
+          "position": 11,
+          "dimensions": {
+            "item": "URO/A 16 — 16 kW at 20 °C air; pump motor 2.2 kW; fan 0.23 kW, 3,500 m³/h",
+            "maxFlowLpm": 56,
+            "A": 710,
+            "B": 510,
+            "C": 1010
+          }
+        },
+        {
+          "partNumber": "IH-DO-COOL-UROA21",
+          "position": 12,
+          "dimensions": {
+            "item": "URO/A 21 — 21 kW at 20 °C air; pump motor 2.2 kW; fan 0.56 kW, 6,300 m³/h",
+            "maxFlowLpm": 56,
+            "A": 800,
+            "B": 500,
+            "C": 1200
+          }
+        },
+        {
+          "partNumber": "IH-DO-COOL-UROA26",
+          "position": 13,
+          "dimensions": {
+            "item": "URO/A 26 — 26 kW at 20 °C air; pump motor 3 kW; fan 0.56 kW, 7,450 m³/h",
+            "maxFlowLpm": 56,
+            "A": 800,
+            "B": 500,
+            "C": 1265
+          }
+        },
+        {
+          "partNumber": "IH-DO-COOL-UROA30",
+          "position": 14,
+          "dimensions": {
+            "item": "URO/A 30 — 30 kW at 20 °C air; pump motor 3 kW; fan 0.56 kW, 7,450 m³/h",
+            "maxFlowLpm": 80,
+            "A": 800,
+            "B": 500,
+            "C": 1265
+          }
+        },
+        {
+          "partNumber": "IH-DO-COOL-UROA40",
+          "position": 15,
+          "dimensions": {
+            "item": "URO/A 40 — 40 kW at 20 °C air; pump motor 2.2 kW; fan 0.9 kW, 9,500 m³/h",
+            "maxFlowLpm": 56,
+            "A": 1010,
+            "B": 600,
+            "C": 1350
+          }
+        },
+        {
+          "partNumber": "IH-DO-COOL-UROA46",
+          "position": 16,
+          "dimensions": {
+            "item": "URO/A 46 — 46 kW at 20 °C air; pump motor 3 kW; fan 0.9 kW, 9,500 m³/h",
+            "maxFlowLpm": 80,
+            "A": 1010,
+            "B": 600,
+            "C": 1350
+          }
+        }
+      ],
+      "crossReferences": []
+    },
+    {
+      "sku": "IH-DO-WACC",
+      "slug": "dinamic-oil-hydraulic-winch-accessories",
+      "title": "Dinamic Oil Hydraulic Winch Accessories — Rope Tensioners, Limit Switches, Load Limiters and ELD",
+      "category": "gearbox-winch-accessories",
+      "focusKeyword": "hydraulic winch accessories",
+      "descriptionShort": "Dinamic Oil hydraulic winch accessories: rope tensioner, electric and hydraulic lowering and rotary limit switches, strain-gauge and load-cell pull limiters, and the ELD electronic load detection system. From Indus Hydraulics, authorised Dinamic Oil distributor, UAE.",
+      "descriptionLong": "<p>Dinamic Oil builds a set of accessories into its hydraulic winches and winch drums at the factory, ordered with the winch by\nits accessory code. They add rope control, end-of-travel protection and load monitoring to the NP, NPA, A, P, CW, S, SE and SRD series\nand to WDD motor drums.</p>\n<p>Indus Hydraulics is an authorised Dinamic Oil distributor and supplies direct from Dinamic Oil's factory in Bomporto, Italy.</p>\n<h3>Rope control and limit switches</h3>\n<ul>\n<li><strong>B — rope tensioner:</strong> a pressure roller that keeps the rope tight on the drum so it spools evenly without load.</li>\n<li><strong>C1 / C2 — tensioner with lowering limit switch:</strong> stops lowering before the last safety wraps leave the drum, by an\nelectric micro switch (C1) or a hydraulic end-stroke valve (C2).</li>\n<li><strong>F1 / F2 — rotary limit switch:</strong> a gear-cam switch for upper and lower travel limits, electric (F1) or hydraulic (F2), on request.</li>\n</ul>\n<h3>Load limiting and monitoring</h3>\n<ul>\n<li><strong>D — strain-gauge pull limiter:</strong> a strain-gauge bridge on the winch structure measures its deformation under rope\npull; above the set load a solenoid valve stops hoisting while lowering stays possible. Because it measures the structure, not the\ndrum torque, it reads the same on every rope layer.</li>\n<li><strong>E — load cells:</strong> two load cells under the winch on its own base plate; the summed signal trips an alarm or stop, or\ndisplays the lifted load.</li>\n<li><strong>ELD — electronic load detection:</strong> a strain-gauged anti-rotation flange inside the drum measures torque, and a\nphonic wheel with two proximity sensors counts drum turns and direction, so the system knows the working layer, rope paid out and the\nactual line pull in real time and shows it on the crane's remote control. It works with analogue and digital signals and a PLC or PC.</li>\n</ul>\n<p>Not every accessory fits every series: the table shows where the catalogue shows each one. The pull limiters are available on all\nseries except SRD.</p>",
+      "seoTitle": "Dinamic Oil Hydraulic Winch Accessories",
+      "seoDescription": "Dinamic Oil winch accessories: rope tensioners, lowering and rotary limit switches, pull limiters and ELD load detection. Authorised distributor, UAE.",
+      "faqs": [
+        {
+          "question": "What do I need to send to order one?",
+          "answer": "The Dinamic Oil model and, if you have it, the full order code or serial number of the gearbox, drive or winch it goes on. We confirm the part against that with Dinamic Oil before quoting."
+        },
+        {
+          "question": "Can accessories be added to a winch I already have?",
+          "answer": "Some can, depending on the series and the drum. Send the winch model and serial number and we will check with Dinamic Oil what can be retrofitted."
+        },
+        {
+          "question": "What is the difference between D and ELD?",
+          "answer": "D is an overload limiter: it stops hoisting above a set pull. ELD measures and displays the actual line pull, rope paid out and working layer continuously, and can feed a crane's load moment system."
+        },
+        {
+          "question": "Do I need a lowering limit switch?",
+          "answer": "On any winch where the operator can pay out the whole rope, yes: it stops lowering before the last safety wraps leave the drum."
+        },
+        {
+          "question": "Are these genuine Dinamic Oil parts?",
+          "answer": "Yes. Indus Hydraulics is an authorised Dinamic Oil distributor and supplies them new, direct from Dinamic Oil's factory in Bomporto, Italy, with the manufacturer's documentation."
+        }
+      ],
+      "specs": [
+        {
+          "group": "Identification",
+          "label": "Product type",
+          "value": "Hydraulic winch accessory",
+          "unit": null,
+          "position": 0,
+          "isFilterable": true,
+          "templateKey": "product_type"
+        },
+        {
+          "group": "Identification",
+          "label": "Series",
+          "value": "Dinamic Oil B, C1, C2, D, E, ELD, F1, F2",
+          "unit": null,
+          "position": 1,
+          "isFilterable": true,
+          "templateKey": "series"
+        },
+        {
+          "group": "Identification",
+          "label": "Execution",
+          "value": "Factory-fitted with the winch",
+          "unit": null,
+          "position": 2,
+          "isFilterable": false,
+          "templateKey": "execution"
+        },
+        {
+          "group": "Construction",
+          "label": "Output / mounting",
+          "value": "NP, NPA, A, P, CW, S, SE, SRD winches; WDD drums",
+          "unit": null,
+          "position": 3,
+          "isFilterable": false,
+          "templateKey": "output"
+        },
+        {
+          "group": "Construction",
+          "label": "Motor / input",
+          "value": "Electric versions on 12–24 V DC control circuits; hydraulic versions in the winch circuit",
+          "unit": null,
+          "position": 4,
+          "isFilterable": false,
+          "templateKey": "motor_input"
+        },
+        {
+          "group": "Compliance",
+          "label": "Rating basis",
+          "value": "Fitted and load-tested with the winch (UNI ISO 4301/1)",
+          "unit": null,
+          "position": 5,
+          "isFilterable": false,
+          "templateKey": "rating_basis"
+        },
+        {
+          "group": "Supply",
+          "label": "Made in",
+          "value": "Italy (Dinamic Oil S.p.A., Bomporto)",
+          "unit": null,
+          "position": 6,
+          "isFilterable": false,
+          "templateKey": "origin"
+        },
+        {
+          "group": "Supply",
+          "label": "Supply",
+          "value": "Authorised distributor, direct from the factory",
+          "unit": null,
+          "position": 7,
+          "isFilterable": false,
+          "templateKey": "supply"
+        }
+      ],
+      "searchAliases": [
+        "ELD load detection",
+        "rope tensioner",
+        "winch limit switch",
+        "pull limiter",
+        "load cell winch"
+      ],
+      "images": [
+        {
+          "file": "dinamic-oil-winch-rope-tensioner-hydraulic-limit-switch-drawing.jpg",
+          "alt": "Dinamic Oil C2 rope tensioner with hydraulic lowering end stroke shown on NP, P, S-SE, SRD and CW winches",
+          "caption": "Dinamic Oil catalogue drawing (fetched 2026-10-20). Maker's own document; Indus is an authorised Dinamic Oil distributor."
+        },
+        {
+          "file": "dinamic-oil-winch-eld-and-rotary-limit-switch-drawing.jpg",
+          "alt": "Dinamic Oil winch with ELD electronic load detection and F1 / F2 rotary limit switches, catalogue page 78",
+          "caption": "Dinamic Oil catalogue drawing (fetched 2026-10-20). Maker's own document; Indus is an authorised Dinamic Oil distributor."
+        }
+      ],
+      "variants": [
+        {
+          "partNumber": "IH-DO-WACC-B",
+          "position": 0,
+          "dimensions": {
+            "item": "B — Cable tensioner (rope press roller)",
+            "mount": "Series NP-NPA-A, P, CW, S-SE, SRD"
+          }
+        },
+        {
+          "partNumber": "IH-DO-WACC-C1",
+          "position": 1,
+          "dimensions": {
+            "item": "C1 — Cable tensioner + electric lower limit switch (lowering rope-end microswitch)",
+            "mount": "Series NP-NPA-A, P, CW, S-SE, SRD"
+          }
+        },
+        {
+          "partNumber": "IH-DO-WACC-C2",
+          "position": 2,
+          "dimensions": {
+            "item": "C2 — Cable tensioner + hydraulic lower limit switch (hydraulic lowering end stroke)",
+            "mount": "Series NP-NPA-A, P, CW, S-SE, SRD"
+          }
+        },
+        {
+          "partNumber": "IH-DO-WACC-D",
+          "position": 3,
+          "dimensions": {
+            "item": "D — Cable tensioner + lower limit switch + load limiting device (strain-gauge pull limiter)"
+          }
+        },
+        {
+          "partNumber": "IH-DO-WACC-E",
+          "position": 4,
+          "dimensions": {
+            "item": "E — Load cells (load-cell pull limiting system on winch base plate)"
+          }
+        },
+        {
+          "partNumber": "IH-DO-WACC-ELD",
+          "position": 5,
+          "dimensions": {
+            "item": "ELD — Electronic load detection system"
+          }
+        },
+        {
+          "partNumber": "IH-DO-WACC-F1",
+          "position": 6,
+          "dimensions": {
+            "item": "F1 — Electric rotary (gear cam) limit switch, up/down — on request"
+          }
+        },
+        {
+          "partNumber": "IH-DO-WACC-F2",
+          "position": 7,
+          "dimensions": {
+            "item": "F2 — Hydraulic rotary (gear cam) limit switch, up/down — on request"
+          }
+        }
+      ],
+      "crossReferences": []
+    }
+  ]
+}
