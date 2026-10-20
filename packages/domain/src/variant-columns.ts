@@ -105,9 +105,18 @@ export type RatingDimensionKey =
   | 'maxRpm'
   | 'torqueLbIn'
   | 'columnLoadLbs'
+  // gearboxes, winch drives and winches (Dinamic Oil)
+  | 'stages'
+  | 'outputTorqueNm'
+  | 'peakTorqueNm'
+  | 'linePullDan'
+  | 'ropeSpeed'
+  | 'ropeDia'
+  | 'ropeCapacityM'
+  | 'brakeTorqueNm'
 
 /** Text columns for couplings, pumps, motors and cylinders. */
-export type EquipmentTextKey = 'item' | 'half' | 'bodySize' | 'mount' | 'shaft' | 'ports' | 'rotation' | 'action'
+export type EquipmentTextKey = 'item' | 'half' | 'bodySize' | 'mount' | 'shaft' | 'ports' | 'rotation' | 'action' | 'ratio'
 
 /**
  * Lifting & rigging columns.
@@ -364,12 +373,24 @@ function ratingColumns(): VariantColumn[] {
     { key: 'maxRpm', label: 'Max speed', unit: 'rpm', help: 'Maximum shaft speed, as published.', grouped: true },
     { key: 'torqueLbIn', label: 'Max torque', unit: 'lb-in', help: 'Maximum output torque, as published.', grouped: true },
     { key: 'columnLoadLbs', label: 'Column load', unit: 'lbs', help: 'Rated column (push) load, as published.', grouped: true },
+    // A gearbox is chosen on output torque and ratio, a winch on line pull and rope. The torque basis differs by
+    // range (T2max peak, T2 FEM), so the page states which one the column carries.
+    { key: 'stages', label: 'Stages', unit: '', help: 'Number of planetary reduction stages, as published.' },
+    { key: 'outputTorqueNm', label: 'Output torque', unit: 'Nm', help: `Rated output torque, ${RATING_HELP} The page states which rating it is.`, grouped: true },
+    { key: 'peakTorqueNm', label: 'Peak torque', unit: 'Nm', help: `Maximum (peak) output torque, ${RATING_HELP}`, grouped: true },
+    { key: 'linePullDan', label: 'Line pull, 1st layer', unit: 'daN', help: `Rope pull on the first drum layer, ${RATING_HELP}`, grouped: true },
+    { key: 'ropeSpeed', label: 'Rope speed, 1st layer', unit: 'm/min', help: 'Rope speed on the first drum layer at the stated oil flow, as published.' },
+    { key: 'ropeDia', label: 'Rope dia.', unit: 'mm', help: 'Wire rope diameter the drum is grooved or sized for, as published.' },
+    { key: 'ropeCapacityM', label: 'Rope capacity', unit: 'm', help: 'Rope the drum holds on its last layer, as published.' },
+    { key: 'brakeTorqueNm', label: 'Brake torque', unit: 'Nm', help: 'Static torque of the negative (spring-applied) brake, as published.' },
+    { key: 'weightKg', label: 'Weight', unit: 'kg', help: 'Weight as the manufacturer publishes it.' },
   ]
 }
 
 /** Keys only a pump, motor or cylinder row carries — they make a table `equipment`. */
 const EQUIPMENT_MARKERS: ReadonlySet<string> = new Set([
   'capacityTon', 'boreIn', 'strokeIn', 'displacementCc', 'displacementCuIn', 'ratedRpm', 'maxRpm', 'torqueLbIn',
+  'outputTorqueNm', 'linePullDan',
 ])
 
 /**
@@ -530,6 +551,7 @@ export const VARIANT_TEXT_COLUMNS: readonly VariantTextColumn[] = [
   { key: 'ports', label: 'Ports', help: 'Port type and size, as published.' },
   { key: 'rotation', label: 'Rotation', help: 'Direction of rotation viewed from the shaft end, as published.' },
   { key: 'action', label: 'Action', help: 'Single- or double-acting, as published.' },
+  { key: 'ratio', label: 'Ratio', help: 'Reduction ratio, or the range of ratios the model is built in, as published.' },
 ]
 
 const letter = (key: VariantColumnKey, label: string): VariantColumn => ({

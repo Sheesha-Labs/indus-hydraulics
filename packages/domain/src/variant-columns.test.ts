@@ -125,6 +125,18 @@ describe('VARIANT_DIMENSION_COLUMNS', () => {
       'maxRpm',
       'torqueLbIn',
       'columnLoadLbs',
+      // Gearbox and winch catalogues head these the same way — "Stages",
+      // "T2max", "Line pull 1st layer", "Rope speed", "Rope diameter", "Rope
+      // capacity", "Static braking torque", "Weight".
+      'stages',
+      'outputTorqueNm',
+      'peakTorqueNm',
+      'linePullDan',
+      'ropeSpeed',
+      'ropeDia',
+      'ropeCapacityM',
+      'brakeTorqueNm',
+      'weightKg',
     ])
   })
 })
@@ -153,7 +165,7 @@ describe('text columns', () => {
 
   it('does not claim S1 or S2 mean across-flats', () => {
     expect(VARIANT_TEXT_COLUMNS.map((c) => c.key)).toEqual([
-      'oRing', 'insideDia', 'wall', 'supply', 'item', 'half', 'bodySize', 'mount', 'shaft', 'ports', 'rotation', 'action',
+      'oRing', 'insideDia', 'wall', 'supply', 'item', 'half', 'bodySize', 'mount', 'shaft', 'ports', 'rotation', 'action', 'ratio',
     ])
     for (const key of ['S1', 'S2'] as const) {
       const col = VARIANT_DIMENSION_COLUMNS.find((c) => c.key === key)!
@@ -576,6 +588,28 @@ describe('coupling and equipment ratings', () => {
       { partNumber: 'c', dimensions: { ratedPsi: 3500, strokeIn: 24, boreIn: 2, rodIn: 1.25, retractedIn: 31, extendedIn: 55, columnLoadLbs: 8400 } },
     ])
     expect(cols.map((c) => c.key)).toEqual(['boreIn', 'rodIn', 'strokeIn', 'retractedIn', 'extendedIn', 'ratedPsi', 'columnLoadLbs'])
+  })
+
+  it('reads a gearbox or winch table as equipment and orders its ratings', () => {
+    const gearbox: VariantLike[] = [
+      { partNumber: 'IH-DO-RE-212', dimensions: { item: 'RE 212', ratio: '12.11 – 33.28', weightKg: 23, peakTorqueNm: 1780, outputTorqueNm: 680, stages: 2 } },
+    ]
+    expect(variantTableKind(gearbox)).toBe('equipment')
+    expect(variantDimensionColumns(gearbox).map((c) => c.key)).toEqual(['stages', 'outputTorqueNm', 'peakTorqueNm', 'weightKg'])
+    expect(variantTextColumns(gearbox).map((c) => c.key)).toEqual(['item', 'ratio'])
+
+    const winch: VariantLike[] = [
+      { partNumber: 'IH-DO-S-15', dimensions: { item: 'S15', linePullDan: 2000, ropeSpeed: 30, ropeDia: 10, ropeCapacityM: 95, displacementCc: 80, maxFlowLpm: 60 } },
+    ]
+    expect(variantTableKind(winch)).toBe('equipment')
+    expect(variantDimensionColumns(winch).map((c) => [c.label, variantColumnUnit(c)])).toEqual([
+      ['Max flow', 'L/min'],
+      ['Displacement', 'cm³/rev'],
+      ['Line pull, 1st layer', 'daN'],
+      ['Rope speed, 1st layer', 'm/min'],
+      ['Rope dia.', 'mm'],
+      ['Rope capacity', 'm'],
+    ])
   })
 
   it('gives the row description its own leading column', () => {

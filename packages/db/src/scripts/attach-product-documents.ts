@@ -2,7 +2,8 @@
  * Attach maker documents (service instructions, operating manuals, datasheets)
  * to products by SKU, from a manifest in `data/<payload>/documents.json`.
  *
- * Manifest entry: { sku, position, kind, title, language, file, md5 }. `file` is
+ * Manifest: { keyPrefix?, caption?, documents: [{ sku, position, kind, title, language, file, md5 }] }.
+ * `keyPrefix` is the storage folder (default `manntek`), `caption` the Media caption. `file` is
  * relative to --doc-dir, which lives outside the repo like every import's
  * images. Each distinct file (by md5) is uploaded once to the private
  * `product-documents` bucket and gets one Media row; products that share a
@@ -104,7 +105,13 @@ async function main() {
   const docDir = argv.find((a) => a.startsWith('--doc-dir='))?.slice('--doc-dir='.length)
   if (!name || !/^[a-z0-9-]+$/.test(name)) throw new Error('--payload=<folder under packages/db/data> is required')
   if (!docDir || !existsSync(docDir)) throw new Error('--doc-dir=<folder with the documents> is required')
-  const manifest: { documents: Entry[] } = JSON.parse(readFileSync(join(DATA_DIR, name, 'documents.json'), 'utf8'))
+  const manifest: { documents: Entry[]; keyPrefix?: string; caption?: string } = JSON.parse(
+    readFileSync(join(DATA_DIR, name, 'documents.json'), 'utf8'),
+  )
+  // Storage folder and Media caption are per maker. The MannTek manifest predates both fields.
+  const keyPrefix = manifest.keyPrefix ?? 'manntek'
+  const caption = manifest.caption ?? 'MannTek website, Downloads > Service Downloads (fetched 2026-10-17). Maker document.'
+  if (!/^[a-z0-9-]+$/.test(keyPrefix)) throw new Error(`keyPrefix ${keyPrefix} must be a lowercase slug`)
 
   const problems: string[] = []
   for (const e of manifest.documents) {
@@ -154,7 +161,7 @@ async function main() {
       continue
     }
     if (!mediaId) {
-      const key = `manntek/${slug(e.title)}-${e.md5.slice(0, 6)}.pdf`
+      const key = `${keyPrefix}/${slug(e.title)}-${e.md5.slice(0, 6)}.pdf`
       const { error } = await sb!.storage.from(BUCKET).upload(key, buf, {
         contentType: 'application/pdf',
         cacheControl: '3600',
@@ -171,7 +178,7 @@ async function main() {
           originalFilename: original,
           storagePath: `${BUCKET}/${key}`,
           bytes: buf.byteLength,
-          caption: 'MannTek website, Downloads > Service Downloads (fetched 2026-10-17). Maker document.',
+          caption,
         },
         select: { id: true },
       })
