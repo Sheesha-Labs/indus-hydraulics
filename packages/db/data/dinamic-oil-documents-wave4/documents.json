@@ -1,0 +1,148 @@
+{
+ "source": "Dinamic Oil download area and certificates (dinamicoil.com), fetched 2026-10-20",
+ "docDir": "",
+ "keyPrefix": "dinamic-oil",
+ "caption": "Dinamic Oil website, Download Area / certificates (fetched 2026-10-20). Maker document; Indus is an authorised Dinamic Oil distributor.",
+ "documents": [
+  {
+   "sku": "IH-DO-BRK",
+   "position": 10,
+   "kind": "datasheet",
+   "title": "Dinamic Oil Planetary Gearboxes catalogue (2025)",
+   "language": "en",
+   "file": "2025_04_CAT_Epicicloidali_2025.pdf",
+   "bytes": 38384392,
+   "md5": "4847aeb58842db1dc6cf653719f4bf2c"
+  },
+  {
+   "sku": "IH-DO-BRK",
+   "position": 11,
+   "kind": "service_manual",
+   "title": "Dinamic Oil gearbox installation, use and maintenance manual",
+   "language": "en",
+   "file": "2024_09_MIUM_UNICO_2019_C931DO03.pdf",
+   "bytes": 5210645,
+   "md5": "9a2d8721a4dea257ef8ebf1de25c92a0"
+  },
+  {
+   "sku": "IH-DO-WBRK",
+   "position": 10,
+   "kind": "datasheet",
+   "title": "Dinamic Oil Planetary Winch Drives catalogue (WD, RW, WDD)",
+   "language": "en",
+   "file": "2024_02_Planetary-Winch-Drives-Riduttori-epicicloidali-per-argano.pdf",
+   "bytes": 3169131,
+   "md5": "ab987a63cf0b9b657984d57217123c5b"
+  },
+  {
+   "sku": "IH-DO-COOL",
+   "position": 10,
+   "kind": "datasheet",
+   "title": "Dinamic Oil Planetary Gearboxes catalogue (2025)",
+   "language": "en",
+   "file": "2025_04_CAT_Epicicloidali_2025.pdf",
+   "bytes": 38384392,
+   "md5": "4847aeb58842db1dc6cf653719f4bf2c"
+  },
+  {
+   "sku": "IH-DO-WACC",
+   "position": 10,
+   "kind": "datasheet",
+   "title": "Dinamic Oil Hydraulic Winches catalogue (W21/A)",
+   "language": "en",
+   "file": "2024_02_Hydraulic-Winches-Argani-Idraulici.pdf",
+   "bytes": 8701043,
+   "md5": "65f7987d8d8a6eb135ddffc653523f09"
+  },
+  {
+   "sku": "IH-DO-WACC",
+   "position": 11,
+   "kind": "service_manual",
+   "title": "Dinamic Oil winch installation, use and maintenance manual (2025)",
+   "language": "en",
+   "file": "2025_12_ARGANI_UM-UNIFICATO_2025-ITA-EN-DE_03.pdf",
+   "bytes": 25766146,
+   "md5": "b86187a207b9f9b7afc21fdcb6bb214f"
+  },
+  {
+   "sku": "IH-DO-WD",
+   "position": 10,
+   "kind": "certificate",
+   "title": "DNV type approval TAS00000YS — WD winch drives, 3 stages (valid to 21 Nov 2029)",
+   "language": "en",
+   "file": "2026_07_DNV_TAS00000YS-Rev.01.pdf",
+   "bytes": 716113,
+   "md5": "09c9442a790a0614cdc18373fb85489d"
+  },
+  {
+   "sku": "IH-DO-WDD",
+   "position": 10,
+   "kind": "certificate",
+   "title": "DNV type approval TAS00000YS — WD winch drives, 3 stages (valid to 21 Nov 2029)",
+   "language": "en",
+   "file": "2026_07_DNV_TAS00000YS-Rev.01.pdf",
+   "bytes": 716113,
+   "md5": "09c9442a790a0614cdc18373fb85489d"
+  },
+  {
+   "sku": "IH-DO-RW",
+   "position": 10,
+   "kind": "certificate",
+   "title": "DNV type approval TAS00001JK — RW winch drives (valid to 1 Jan 2029)",
+   "language": "en",
+   "file": "2026_07_DNV_TAS00001JK-Rev.03.pdf",
+   "bytes": 540897,
+   "md5": "265cd206b9f60b2d9b7b436ec21f1e82"
+  },
+  {
+   "sku": "IH-DO-RE",
+   "position": 10,
+   "kind": "certificate",
+   "title": "DNV type approval TAS00000NE — RE 3513 gearbox (valid to 5 Mar 2030)",
+   "language": "en",
+   "file": "2026_07_DNV_TAS00000NE-Rev.03.pdf",
+   "bytes": 524723,
+   "md5": "01149519a65b6d9cc382f29fd89036de"
+  },
+  {
+   "sku": "IH-DO-RA",
+   "position": 10,
+   "kind": "certificate",
+   "title": "ABS product design assessment 25-0346164 — thruster gearboxes with pinion (valid to 10 Nov 2030)",
+   "language": "en",
+   "file": "2026_07_ABS_25-0346164-PDA-Certificate-renewal-ex.-20-2004469-PDA.pdf",
+   "bytes": 2158777,
+   "md5": "b0b1124480d5b3bceed6db3d75e957a7"
+  },
+  {
+   "sku": "IH-DO-RA",
+   "position": 11,
+   "kind": "certificate",
+   "title": "ABS product design assessment 22-2218009-1 — thruster gearboxes with pinion (valid to 7 Feb 2027)",
+   "language": "en",
+   "file": "2026_07_ABS_22-2218009-1-PDA-Certificate-extension-ex.-22-2218009-PDA.pdf",
+   "bytes": 427782,
+   "md5": "c647943c7e5f20a6d2c8ce54f1cab072"
+  },
+  {
+   "sku": "IH-DO-SLR",
+   "position": 10,
+   "kind": "certificate",
+   "title": "ABS product design assessment 25-0346164 — thruster gearboxes with pinion (valid to 10 Nov 2030)",
+   "language": "en",
+   "file": "2026_07_ABS_25-0346164-PDA-Certificate-renewal-ex.-20-2004469-PDA.pdf",
+   "bytes": 2158777,
+   "md5": "b0b1124480d5b3bceed6db3d75e957a7"
+  },
+  {
+   "sku": "IH-DO-SLR",
+   "position": 11,
+   "kind": "certificate",
+   "title": "ABS product design assessment 22-2218009-1 — thruster gearboxes with pinion (valid to 7 Feb 2027)",
+   "language": "en",
+   "file": "2026_07_ABS_22-2218009-1-PDA-Certificate-extension-ex.-22-2218009-PDA.pdf",
+   "bytes": 427782,
+   "md5": "c647943c7e5f20a6d2c8ce54f1cab072"
+  }
+ ]
+}
