@@ -10,7 +10,7 @@ import {
 
 describe('export markets', () => {
   it('covers the markets we ship on a recurring basis, GCC first', () => {
-    expect(MARKETS).toHaveLength(126)
+    expect(MARKETS).toHaveLength(136)
     expect(marketsOrdered().map((m) => m.slug)).toEqual([
       // GCC — the original five, on the three-day lane.
       'saudi-arabia',
@@ -152,6 +152,18 @@ describe('export markets', () => {
       'estonia',
       'latvia',
       'lithuania',
+      // Wave 5 — the Levant, South Asia, Turkmenistan, the Bight of Benin and
+      // Papua New Guinea.
+      'jordan',
+      'lebanon',
+      'india',
+      'pakistan',
+      'bangladesh',
+      'sri-lanka',
+      'turkmenistan',
+      'benin',
+      'togo',
+      'papua-new-guinea',
     ])
   })
 
@@ -217,14 +229,15 @@ describe('export markets', () => {
   it('never states a lead time /shipping does not support', () => {
     // The published bands are: GCC 3–10 working days, wider Middle East 5–15,
     // East African ports 10–20 by sea. Anything else is quoted per
-    // consignment. A market page must not invent a tighter number than the
+    // consignment. /shipping names Jordan alongside Egypt in the wider Middle
+    // East band, so it carries the same 5–15. A market page must not invent a tighter number than the
     // shipping policy it links to.
     const GCC = ['saudi-arabia', 'oman', 'qatar', 'bahrain', 'kuwait', 'iraq']
     // /shipping names exactly three: Mombasa, Dar es Salaam, Djibouti.
     const EAST_AFRICAN_PORTS = ['kenya', 'tanzania', 'djibouti']
     for (const m of MARKETS) {
       if (GCC.includes(m.slug)) expect(m.leadTime, m.slug).toMatch(/3 working days/)
-      else if (m.slug === 'egypt') expect(m.leadTime, m.slug).toMatch(/5–15 working days/)
+      else if (m.slug === 'egypt' || m.slug === 'jordan') expect(m.leadTime, m.slug).toMatch(/5–15 working days/)
       else if (EAST_AFRICAN_PORTS.includes(m.slug)) expect(m.leadTime, m.slug).toMatch(/10–20 working days/)
       else expect(m.leadTime, m.slug).toBe('Quoted per consignment')
     }

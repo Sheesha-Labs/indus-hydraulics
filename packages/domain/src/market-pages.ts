@@ -41,6 +41,7 @@ import { MARKET_PAGE_RECORDS as WAVE_1 } from './market-page-records'
 import { MARKET_PAGE_RECORDS_2 as WAVE_2 } from './market-page-records-2'
 import { MARKET_PAGE_RECORDS_3 as WAVE_3 } from './market-page-records-3'
 import { MARKET_PAGE_RECORDS_4 as WAVE_4 } from './market-page-records-4'
+import { MARKET_PAGE_RECORDS_5 as WAVE_5 } from './market-page-records-5'
 
 /**
  * Every written record, in registry order across both authoring waves.
@@ -49,7 +50,7 @@ import { MARKET_PAGE_RECORDS_4 as WAVE_4 } from './market-page-records-4'
  * route, the tests and the admin queue treat them identically — a wave-2
  * record is not a lesser record, it is a later one.
  */
-export const ALL_MARKET_PAGE_RECORDS: readonly MarketPage[] = [...WAVE_1, ...WAVE_2, ...WAVE_3, ...WAVE_4]
+export const ALL_MARKET_PAGE_RECORDS: readonly MarketPage[] = [...WAVE_1, ...WAVE_2, ...WAVE_3, ...WAVE_4, ...WAVE_5]
 
 /** `[lon, lat]`, in that order — the order d3-geo and GeoJSON both use. */
 export type LonLat = readonly [lon: number, lat: number]
@@ -334,7 +335,7 @@ export const MARKET_OPERATIONS = [
 ] as const
 
 /**
- * The market sitemap that closes every market page — 126 destinations in 11
+ * The market sitemap that closes every market page — 136 destinations in 12
  * regional columns.
  *
  * It stays on every page rather than collapsing to a "see all" link because
@@ -350,7 +351,7 @@ export const MARKET_OPERATIONS = [
  * silently dropping out of 126 pages' link graphs.
  */
 export const MARKET_REGIONS: readonly (readonly [region: string, countries: readonly string[]])[] = [
-  ['GCC & Middle East', ['Saudi Arabia', 'Oman', 'Qatar', 'Bahrain', 'Kuwait', 'Iraq']],
+  ['GCC & Middle East', ['Saudi Arabia', 'Oman', 'Qatar', 'Bahrain', 'Kuwait', 'Iraq', 'Jordan', 'Lebanon']],
   [
     'North Africa',
     ['Egypt', 'Morocco', 'Algeria', 'Libya', 'Tunisia', 'Sudan', 'South Sudan', 'Mauritania'],
@@ -364,6 +365,8 @@ export const MARKET_REGIONS: readonly (readonly [region: string, countries: read
     [
       'Nigeria',
       'Ghana',
+      'Togo',
+      'Benin',
       'Guinea',
       'Ivory Coast',
       'Senegal',
@@ -384,7 +387,7 @@ export const MARKET_REGIONS: readonly (readonly [region: string, countries: read
   ['Southern Africa', ['South Africa', 'Namibia', 'Botswana', 'Zambia', 'Zimbabwe']],
   [
     'CIS & Caucasus',
-    ['Russia', 'Kazakhstan', 'Uzbekistan', 'Ukraine', 'Belarus', 'Armenia', 'Georgia', 'Azerbaijan', 'Moldova'],
+    ['Russia', 'Kazakhstan', 'Uzbekistan', 'Turkmenistan', 'Ukraine', 'Belarus', 'Armenia', 'Georgia', 'Azerbaijan', 'Moldova'],
   ],
   [
     'South America',
@@ -405,9 +408,23 @@ export const MARKET_REGIONS: readonly (readonly [region: string, countries: read
       'Honduras',
     ],
   ],
+  ['South Asia', ['India', 'Pakistan', 'Bangladesh', 'Sri Lanka']],
   [
     'South-East Asia',
-    ['Singapore', 'Malaysia', 'Indonesia', 'Thailand', 'Vietnam', 'Philippines', 'Myanmar', 'Cambodia', 'Laos', 'Brunei', 'Timor-Leste'],
+    [
+      'Singapore',
+      'Malaysia',
+      'Indonesia',
+      'Thailand',
+      'Vietnam',
+      'Philippines',
+      'Myanmar',
+      'Cambodia',
+      'Laos',
+      'Brunei',
+      'Timor-Leste',
+      'Papua New Guinea',
+    ],
   ],
   [
     'Western & Northern Europe',

@@ -129,7 +129,7 @@ describe('resolveHeroGeoCode', () => {
   it('falls back for a country we have no wording for', () => {
     // Not export markets, so deliberately uncovered.
     expect(resolveHeroGeoCode('CN')).toBe(HERO_GEO_FALLBACK_CODE)
-    expect(resolveHeroGeoCode('IN')).toBe(HERO_GEO_FALLBACK_CODE)
+    expect(resolveHeroGeoCode('JP')).toBe(HERO_GEO_FALLBACK_CODE)
   })
 
   it('takes the first value when a query param is repeated', () => {

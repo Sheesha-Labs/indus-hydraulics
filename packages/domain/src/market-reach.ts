@@ -20,7 +20,7 @@
  * customers quote back at you.
  */
 import { MARKETS } from './markets'
-import { MARKET_REGIONS } from './market-pages'
+import { MARKET_REGIONS, releasedMarketPage } from './market-pages'
 
 /**
  * Destinations withheld from generated marketing copy.
@@ -127,6 +127,10 @@ function regionMarkets(): Map<string, Array<{ slug: string; name: string }>> {
       // A name MARKETS does not carry is a data error, not something to render.
       // `market-pages.test.ts` already fails on that, so drop it quietly here.
       if (!slug || excluded.has(slug)) continue
+      // A market whose page is still held is not advertised. Skipping it here,
+      // rather than after the window is picked, also keeps every existing
+      // page's rotation unchanged until the market is actually released.
+      if (!releasedMarketPage(slug)) continue
       rows.push({ slug, name })
     }
     out.set(region, rows)
