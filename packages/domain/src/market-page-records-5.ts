@@ -13,14 +13,16 @@ import type { MarketPage } from './market-pages'
  * Kazakhstan and Uzbekistan, Papua New Guinea at the far end of the Malacca
  * lane).
  *
- * ALL TEN LAND `regulatoryCopy: 'unverified'`, `released: false`. Their
- * conformity and document claims — Pakistan's Electronic Import Form and the
- * Indian-origin rule, India's BIS Quality Control Orders, Benin's BESC,
- * Jordan's JSMO and Aqaba zone, Turkmenistan's exchange registration, PNG's
- * NAQIA timber check — were written from general knowledge, not checked by a
- * forwarder. Until someone signs them off the route serves the plain layout
- * from `markets.ts`, which claims none of it. Flipping a market on is the
- * one-word edit on its record, after that check.
+ * ALL TEN ARE RELEASED, ON THE FOUNDER'S CALL, 2026-10-20 — WITHOUT A
+ * FORWARDER REVIEW. They were authored `unverified` / `released: false`
+ * because their conformity and document claims — Pakistan's Electronic Import
+ * Form and the Indian-origin rule, India's BIS Quality Control Orders, Benin's
+ * BESC, Jordan's JSMO and Aqaba zone, Turkmenistan's exchange registration,
+ * PNG's NAQIA timber check — were written from general knowledge. The founder
+ * was shown that list and asked for all ten to go live the same day, as with
+ * the 80 released on 2026-08-24. `verified` here records that release
+ * decision, not a forwarder sign-off; if a forwarder later corrects a claim,
+ * set the record back to `unverified` / `released: false` while it is fixed.
  *
  * TWO ROUTING DECISIONS, RECORDED HERE RATHER THAN DISCOVERED IN THE MAP.
  *
@@ -143,8 +145,8 @@ const MIDDLE_CORRIDOR_TO_ALAT = [
 
 const JORDAN: MarketPage = {
   slug: 'jordan',
-  regulatoryCopy: 'unverified',
-  released: false,
+  regulatoryCopy: 'verified',
+  released: true,
   lane: 'DXB → JO',
   dialCode: '+962',
   currency: 'USD',
@@ -386,8 +388,8 @@ const JORDAN: MarketPage = {
 
 const LEBANON: MarketPage = {
   slug: 'lebanon',
-  regulatoryCopy: 'unverified',
-  released: false,
+  regulatoryCopy: 'verified',
+  released: true,
   lane: 'DXB → LB',
   dialCode: '+961',
   currency: 'USD',
@@ -653,8 +655,8 @@ const LEBANON: MarketPage = {
 
 const INDIA: MarketPage = {
   slug: 'india',
-  regulatoryCopy: 'unverified',
-  released: false,
+  regulatoryCopy: 'verified',
+  released: true,
   lane: 'DXB → IN',
   dialCode: '+91',
   currency: 'USD',
@@ -907,8 +909,8 @@ const INDIA: MarketPage = {
 
 const PAKISTAN: MarketPage = {
   slug: 'pakistan',
-  regulatoryCopy: 'unverified',
-  released: false,
+  regulatoryCopy: 'verified',
+  released: true,
   lane: 'DXB → PK',
   dialCode: '+92',
   currency: 'USD',
@@ -1160,8 +1162,8 @@ const PAKISTAN: MarketPage = {
 
 const BANGLADESH: MarketPage = {
   slug: 'bangladesh',
-  regulatoryCopy: 'unverified',
-  released: false,
+  regulatoryCopy: 'verified',
+  released: true,
   lane: 'DXB → BD',
   dialCode: '+880',
   currency: 'USD',
@@ -1419,8 +1421,8 @@ const BANGLADESH: MarketPage = {
 
 const SRI_LANKA: MarketPage = {
   slug: 'sri-lanka',
-  regulatoryCopy: 'unverified',
-  released: false,
+  regulatoryCopy: 'verified',
+  released: true,
   lane: 'DXB → LK',
   dialCode: '+94',
   currency: 'USD',
@@ -1678,8 +1680,8 @@ const SRI_LANKA: MarketPage = {
 
 const TURKMENISTAN: MarketPage = {
   slug: 'turkmenistan',
-  regulatoryCopy: 'unverified',
-  released: false,
+  regulatoryCopy: 'verified',
+  released: true,
   lane: 'DXB → TM',
   dialCode: '+993',
   currency: 'USD',
@@ -1919,8 +1921,8 @@ const TURKMENISTAN: MarketPage = {
 
 const BENIN: MarketPage = {
   slug: 'benin',
-  regulatoryCopy: 'unverified',
-  released: false,
+  regulatoryCopy: 'verified',
+  released: true,
   lane: 'DXB → BJ',
   dialCode: '+229',
   currency: 'USD',
@@ -2169,8 +2171,8 @@ const BENIN: MarketPage = {
 
 const TOGO: MarketPage = {
   slug: 'togo',
-  regulatoryCopy: 'unverified',
-  released: false,
+  regulatoryCopy: 'verified',
+  released: true,
   lane: 'DXB → TG',
   dialCode: '+228',
   currency: 'USD',
@@ -2400,8 +2402,8 @@ const TOGO: MarketPage = {
 
 const PAPUA_NEW_GUINEA: MarketPage = {
   slug: 'papua-new-guinea',
-  regulatoryCopy: 'unverified',
-  released: false,
+  regulatoryCopy: 'verified',
+  released: true,
   lane: 'DXB → PG',
   dialCode: '+675',
   currency: 'USD',
