@@ -155,6 +155,17 @@ export const SHELVES = {
     { sku: 'IH-HBX-CAPS', slug: 'hose-box-cap-and-plug-packs', title: 'Hose Box Cap and Plug Packs' },
     { sku: 'IH-HBX-KITS', slug: 'hose-box-hydraulic-fitting-and-seal-kits', title: 'Hose Box Hydraulic Fitting and Seal Kits' },
   ],
+  'wt-desanders-debris-catchers': [
+    { sku: 'IH-OFE-CYD', slug: 'cyclone-desander-flowback', title: 'Cyclone Desander, 5,000 to 20,000 psi' },
+    { sku: 'IH-OFE-DBC', slug: 'debris-catcher-dual-channel', title: 'Debris Catcher, Dual Channel, 5,000 to 20,000 psi' },
+    { sku: 'IH-OFE-DSD', slug: 'double-barrel-screen-desander', title: 'Double Barrel Screen Desander, 5,000 to 20,000 psi' },
+  ],
+  'frac-trees': [
+    { sku: 'IH-OFE-FRT', slug: 'frac-tree-api-6a-10000-20000-psi', title: 'Frac Tree, API 6A, 5-1/8" to 7-1/16", 10,000 to 20,000 psi' },
+  ],
+  'cement-manifolds': [
+    { sku: 'IH-OFE-CMF', slug: 'cement-and-kill-manifold', title: 'Cement and Kill Manifold, API 6A, 3,000 to 20,000 psi' },
+  ],
 } satisfies Record<string, Listing[]>
 
 export type Shelf = keyof typeof SHELVES

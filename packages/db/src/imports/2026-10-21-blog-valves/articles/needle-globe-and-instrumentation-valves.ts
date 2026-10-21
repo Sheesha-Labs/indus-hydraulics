@@ -5,7 +5,8 @@ import { stockList } from '../products'
  * Needle, gauge, bleed, double block and bleed, monoflange and globe valves. Sources read 2026-10-21: Swagelok N and HN
  * needle valve catalogue MS-01-168 (to 10,000 psig; stem tips — ball tip for repeated shutoff, regulating tips not for
  * repeated gas shutoff; nitrogen seat test; sour option to NACE MR0175 with alloy 400 stem; back seat); SLB API 6A
- * guide (316 sour-service limits). Standard scopes (API 6D, API 602, API 623, ASME B16.34) are given by title only.
+ * guide (316 sour-service limits; the API 6A equipment list names gate, plug, ball and check valves, not globe valves —
+ * re-read 2026-10-21 for the API 6A globe valve listing). Standard scopes (API 6D, API 602, API 623, ASME B16.34) are given by title only.
  * NOT used: API 6D's DBB definition wording (not read); monoflange maker data; leak-path percentages.
  */
 const ARTICLE: BlogArticleSeed = {
@@ -60,7 +61,7 @@ const ARTICLE: BlogArticleSeed = {
     { type: 'section_head', number: '/03', title: 'Globe valves.', anchor: 'globe' },
     {
       type: 'prose',
-      html: '<p>A globe valve closes a disc onto a seat across the flow path, so it can throttle smoothly — the job a gate valve must never do. The price is a higher pressure drop when open. Steel globe valves are built to <strong>API 623</strong> (flanged and butt-weld, bolted bonnet) or <strong>API 602</strong> (compact, NPS 4 and smaller), with pressure-temperature ratings from ASME B16.34; API 6D covers pipeline gate, ball, plug and check valves, not globes. Order by size, ASME class, end connection, body and trim materials and service.</p>',
+      html: '<p>A globe valve closes a disc onto a seat across the flow path, so it can throttle smoothly — the job a gate valve must never do. The price is a higher pressure drop when open. Steel globe valves are built to <strong>API 623</strong> (flanged and butt-weld, bolted bonnet) or <strong>API 602</strong> (compact, NPS 4 and smaller), with pressure-temperature ratings from ASME B16.34; API 6D covers pipeline gate, ball, plug and check valves, not globes. Order by size, ASME class, end connection, body and trim materials and service.</p><p>On wellheads, globe valves for injection, bleed-off, sampling and bypass lines are also made with API 6A flanged or studded ends, working pressures and material classes — our <a href="/p/api-6a-globe-valve-3000-15000-psi">API 6A globe valve</a> runs from 2-1/16″ to 7-1/16″ and 3,000 to 15,000 psi. The valve types API 6A itself lists, as SLB summarises them, are gate, plug, ball and check valves, so for a wellhead globe valve ask which API 6A requirements it is built and tested to.</p>',
     },
     {
       type: 'callout',
@@ -85,10 +86,10 @@ const ARTICLE: BlogArticleSeed = {
     {
       type: 'product_embed',
       heading: 'Instrumentation and globe valves',
-      skus: ['IH-OFV-INST-NEEDLE-12-NPT-10K-SOUR-CAMERON-SS', 'IH-OFV-INST-GAUGE-12-NPT-10K-CAMERON', 'IH-OFV-INST-BLEED-12-NPT-10K-SOUR-INDUS', 'IH-OFV-INST-DBB-NEEDLE-3HANDLE-CAMERON', 'IH-OFV-INST-MONOFLANGE-12-NPT-15M-SOUR-CAMERON', 'IH-OFV-GLOBE-2-300RF-740-SOUR-FMC', 'IH-OFV-GLOBE-3-600RF-1480-SOUR-CAMERON'],
+      skus: ['IH-OFV-INST-NEEDLE-12-NPT-10K-SOUR-CAMERON-SS', 'IH-OFV-INST-GAUGE-12-NPT-10K-CAMERON', 'IH-OFV-INST-BLEED-12-NPT-10K-SOUR-INDUS', 'IH-OFV-INST-DBB-NEEDLE-3HANDLE-CAMERON', 'IH-OFV-INST-MONOFLANGE-12-NPT-15M-SOUR-CAMERON', 'IH-OFV-GLOBE-2-300RF-740-SOUR-FMC', 'IH-OFV-GLOBE-3-600RF-1480-SOUR-CAMERON', 'IH-OFE-GLB'],
     },
     { type: 'category_link', slug: 'oilfield-instrumentation-valves', label: 'Instrumentation valves', blurb: 'Needle, gauge, bleed, DBB and monoflange valves.' },
-    { type: 'category_link', slug: 'oilfield-globe-valves', label: 'Globe valves', blurb: 'Flanged globe valves, Class 150 to 1500.' },
+    { type: 'category_link', slug: 'oilfield-globe-valves', label: 'Globe valves', blurb: 'Flanged globe valves, Class 150 to 1500, and API 6A wellhead globe valves.' },
     {
       type: 'references',
       heading: 'Sources',
@@ -104,7 +105,7 @@ const ARTICLE: BlogArticleSeed = {
     {
       type: 'as_of_stamp',
       verifiedOn: '2026-10-21',
-      note: 'Needle valve data from Swagelok MS-01-168; sour limits from SLB’s API 6A guide; standard scopes by title.',
+      note: 'Needle valve data from Swagelok MS-01-168; sour limits and the API 6A valve list from SLB’s API 6A guide; standard scopes by title.',
     },
     {
       type: 'cta_block',
