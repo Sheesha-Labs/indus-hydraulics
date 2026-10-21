@@ -1,0 +1,4998 @@
+{
+ "source": "Supplier catalogue export 2026-10-21 — industrial process valves",
+ "imageDir": "",
+ "brandSlug": "indus",
+ "specTemplate": {
+  "slug": "process-valve-spec",
+  "name": "Industrial Process Valve",
+  "description": "Gate, globe, check, ball, butterfly and specialty process valves: type, construction, design standard, size and pressure-class range, materials, end connections, operation, testing and fire-safe design.",
+  "position": 41,
+  "fields": [
+   {
+    "key": "valve_type",
+    "label": "Valve type",
+    "dataType": "text",
+    "group": "Identification",
+    "isRequired": false,
+    "isKeyFeature": true,
+    "isQuickSpec": true,
+    "position": 0
+   },
+   {
+    "key": "construction",
+    "label": "Construction",
+    "dataType": "text",
+    "group": "Identification",
+    "isRequired": false,
+    "isKeyFeature": true,
+    "isQuickSpec": false,
+    "position": 1
+   },
+   {
+    "key": "design_standard",
+    "label": "Design standard",
+    "dataType": "text",
+    "group": "Standards",
+    "isRequired": false,
+    "isKeyFeature": true,
+    "isQuickSpec": true,
+    "position": 2
+   },
+   {
+    "key": "size_range",
+    "label": "Size range",
+    "dataType": "text",
+    "group": "Range",
+    "isRequired": false,
+    "isKeyFeature": true,
+    "isQuickSpec": true,
+    "position": 3
+   },
+   {
+    "key": "pressure_class",
+    "label": "Pressure class",
+    "dataType": "text",
+    "group": "Range",
+    "isRequired": false,
+    "isKeyFeature": true,
+    "isQuickSpec": true,
+    "position": 4
+   },
+   {
+    "key": "temperature",
+    "label": "Temperature range",
+    "dataType": "text",
+    "group": "Range",
+    "isRequired": false,
+    "isKeyFeature": false,
+    "isQuickSpec": false,
+    "position": 5
+   },
+   {
+    "key": "body_material",
+    "label": "Body material",
+    "dataType": "text",
+    "group": "Materials",
+    "isRequired": false,
+    "isKeyFeature": true,
+    "isQuickSpec": false,
+    "position": 6
+   },
+   {
+    "key": "trim",
+    "label": "Seat and trim",
+    "dataType": "text",
+    "group": "Materials",
+    "isRequired": false,
+    "isKeyFeature": false,
+    "isQuickSpec": false,
+    "position": 7
+   },
+   {
+    "key": "end_connection",
+    "label": "End connections",
+    "dataType": "text",
+    "group": "Construction",
+    "isRequired": false,
+    "isKeyFeature": true,
+    "isQuickSpec": true,
+    "position": 8
+   },
+   {
+    "key": "operation",
+    "label": "Operation",
+    "dataType": "text",
+    "group": "Construction",
+    "isRequired": false,
+    "isKeyFeature": true,
+    "isQuickSpec": false,
+    "position": 9
+   },
+   {
+    "key": "face_to_face",
+    "label": "Face-to-face / end-to-end",
+    "dataType": "text",
+    "group": "Standards",
+    "isRequired": false,
+    "isKeyFeature": false,
+    "isQuickSpec": false,
+    "position": 10
+   },
+   {
+    "key": "testing",
+    "label": "Pressure testing",
+    "dataType": "text",
+    "group": "Standards",
+    "isRequired": false,
+    "isKeyFeature": false,
+    "isQuickSpec": false,
+    "position": 11
+   },
+   {
+    "key": "fire_safe",
+    "label": "Fire-safe design",
+    "dataType": "text",
+    "group": "Standards",
+    "isRequired": false,
+    "isKeyFeature": false,
+    "isQuickSpec": false,
+    "position": 12
+   },
+   {
+    "key": "emissions",
+    "label": "Fugitive emissions",
+    "dataType": "text",
+    "group": "Standards",
+    "isRequired": false,
+    "isKeyFeature": false,
+    "isQuickSpec": false,
+    "position": 13
+   },
+   {
+    "key": "service",
+    "label": "Typical service",
+    "dataType": "text",
+    "group": "Application",
+    "isRequired": false,
+    "isKeyFeature": false,
+    "isQuickSpec": false,
+    "position": 14
+   },
+   {
+    "key": "supply",
+    "label": "Supply",
+    "dataType": "text",
+    "group": "Supply",
+    "isRequired": false,
+    "isKeyFeature": false,
+    "isQuickSpec": false,
+    "position": 15
+   }
+  ]
+ },
+ "categories": [
+  {
+   "slug": "industrial-process-valves",
+   "name": "Industrial Process Valves",
+   "parentSlug": null,
+   "position": 23
+  },
+  {
+   "slug": "safety-relief-valves",
+   "name": "Safety & Relief Valves",
+   "parentSlug": "industrial-process-valves",
+   "position": 14,
+   "shortDescription": "Spring-loaded and pilot-operated safety relief valves to API 520 and 526, steam safety valves to ASME Section I, thermal relief valves, tank breather and emergency vents to API 2000, and nuclear safety valves.",
+   "seoTitle": "Safety & Relief Valves — API 526, ASME I, API 2000",
+   "seoDescription": "Safety relief valves to API 520/526 (orifice D to T, Class 150 to 2500), pilot-operated, steam, thermal relief, changeover valves and API 2000 tank vents.",
+   "focusKeyword": "safety relief valves",
+   "bands": {
+    "hero": {
+     "intro": "The last line of defence against over-pressure. Spring-loaded safety relief valves to API 520 and 526 protect vessels and lines in gas, vapour, steam and liquid service; pilot-operated valves hold tighter closer to set pressure; tank vents to API 2000 protect storage tanks against pressure and vacuum; changeover valves let a relief valve be serviced with the plant running."
+    },
+    "guidance": {
+     "eyebrow": "Choosing",
+     "heading": "Conventional, balanced or pilot-operated",
+     "body": "A conventional valve suits discharge to atmosphere or a header with little back pressure. Where back pressure varies or exceeds about 10 % of set pressure, a balanced bellows valve or a pilot-operated valve keeps the set pressure true. Pilot valves also seal tighter close to set pressure, which suits processes that run near their relief setting. Send the set pressure, relieving capacity, fluid and back pressure and we will size the orifice to API 520."
+    },
+    "standards": {
+     "eyebrow": "Standards",
+     "heading": "Sized and built to the codes that govern relief",
+     "body": "Sizing follows API 520; flanged dimensions and orifice areas follow API 526; steam boiler valves follow ASME Section I; tank breather valves and emergency vents follow API 2000; and ISO 4126 covers EN-specified duties. Every valve is set and seat-tested on the bench before dispatch."
+    }
+   }
+  }
+ ],
+ "products": [
+  {
+   "sku": "IH-SR-CSV",
+   "slug": "conventional-safety-relief-valve-api-526",
+   "title": "Conventional Safety Relief Valve, API 526, Orifice D to T",
+   "category": "safety-relief-valves",
+   "focusKeyword": "safety relief valve api 526",
+   "descriptionShort": "Conventional spring-loaded safety relief valves to API 520 and 526: orifice D to T, 1/2\" to 20\", Class 150 to 2500, pop action, for gas, vapour, steam and liquid service.",
+   "descriptionLong": "<p>The standard full-lift relief valve for vessels, lines and equipment in gas, vapour and steam service, and in liquid service with liquid trim. It opens fast at set pressure and recloses as pressure falls. Its set pressure is affected by back pressure in the discharge system, so it suits discharge to atmosphere or to a header with low, steady back pressure.</p><p>A safety relief valve opens automatically when pressure reaches its set point and closes again once it falls, protecting a vessel, line or tank from bursting. It is the last safeguard after the control system, so it is sized to the worst relieving case, set and tested on the bench, and sealed against tampering.</p><h3>Construction</h3><ul><li>Full-lift disc with adjusting ring for pop action and blowdown</li><li>Closed bonnet; cap or lever top</li><li>API 526 orifice letters D to T, inlet and outlet flange ratings to the table</li><li>Soft-seat option for tight shut-off near set pressure</li></ul><h3>Sizes and ratings</h3><p>Published range: 1/2\" to 20\" (DN15 to DN500), ASME Class 150 to 2500 (PN10 to PN420), in carbon steel, alloy steel, stainless steel, duplex, nickel alloys. End connections: Flanged; threaded, socket-weld or butt-weld on request. Operation: self-acting, spring loaded.</p><p>The size table lists API 526 combinations of orifice, inlet × outlet size and flange ratings with the centre-to-face dimensions A and B in millimetres. They were read from the catalogue by OCR and checked against the API 526 size pairs; the general arrangement drawing confirms them with the quotation.</p><h3>Testing and documents</h3><p>Set-pressure and seat-tightness tests on the bench, shell test to API 527 / ASME requirements, with the material certificates and the pressure-test record supplied with the valve. Third-party inspection and extra tests are added when the order specifies them.</p><h3>Supply</h3><p>Safety relief valves are supplied from Dubai to projects, plants and maintenance teams across the GCC, the wider Middle East and Africa. Most are built to the order specification, so delivery depends on size, class, material and operator; standard carbon-steel sizes move fastest. We review the data sheet before quoting and flag anything that needs clarifying, such as a missing pipe schedule or an operator torque that has not been sized.</p><h3>Related valves</h3><p>Other safety and relief valves in the range, for comparison when the duty is not settled yet: <a href=\"/p/balanced-bellows-safety-relief-valve\">Balanced Bellows Safety Relief Valve, API 526</a>, <a href=\"/p/safety-relief-valve-packed-lever\">Safety Relief Valve with Packed Lever</a>, <a href=\"/p/safety-relief-valve-open-lever-steam\">Safety Relief Valve with Open Lever, Steam and Air</a>, <a href=\"/p/low-lift-safety-relief-valve-liquid\">Low-Lift Safety Relief Valve, DN15 to DN200</a>.</p>",
+   "seoTitle": "Conventional Safety Relief Valve, API 526, Orifice D to T",
+   "seoDescription": "Conventional spring-loaded safety relief valves to API 520 and 526: orifice D to T, 1/2\" to 20\", Class 150 to 2500, pop action, for gas, vapour, steam and.",
+   "faqs": [
+    {
+     "question": "How is the orifice chosen?",
+     "answer": "From the relieving rate, set pressure, back pressure and fluid properties, by the API 520 sizing method. We size it from your relief case."
+    },
+    {
+     "question": "What is the alternate (a) inlet rating?",
+     "answer": "Some orifices are offered with a heavier inlet flange on the same Class 300 body for higher set pressures; the table marks those rows as alternate."
+    },
+    {
+     "question": "What do I need to send for a quotation?",
+     "answer": "The valve data sheet if you have one; otherwise the size, pressure class, body and trim material, end connection (raised face, ring joint or butt-weld with the pipe schedule), operator, design temperature and the service fluid. Add any project specification, vendor list or third-party inspection requirement, and the delivery address. We quote with the delivery time for that build."
+    },
+    {
+     "question": "What documents come with the valve?",
+     "answer": "Each valve is supplied with its material certificates to EN 10204 3.1, the pressure-test record and the general arrangement drawing. Third-party inspection, positive material identification and extra tests can be added when the order specifies them."
+    },
+    {
+     "question": "Can you supply against a project specification or approved vendor list?",
+     "answer": "Yes. Send the specification with the enquiry and we will confirm compliance line by line, list any deviations, and state the documentation, testing and inspection the order will carry before you place it."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Standards",
+     "label": "Design standard",
+     "value": "API 520, API 526, ASME VIII, ISO 4126-1",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "design_standard"
+    },
+    {
+     "group": "Range",
+     "label": "Size range",
+     "value": "1/2\" to 20\" (DN15 to DN500)",
+     "unit": null,
+     "position": 1,
+     "isFilterable": false,
+     "templateKey": "size_range"
+    },
+    {
+     "group": "Range",
+     "label": "Pressure class",
+     "value": "ASME Class 150 to 2500 (PN10 to PN420)",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "pressure_class"
+    },
+    {
+     "group": "Materials",
+     "label": "Body material",
+     "value": "Carbon steel, alloy steel, stainless steel, duplex, nickel alloys",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "body_material"
+    },
+    {
+     "group": "Construction",
+     "label": "End connections",
+     "value": "Flanged; threaded, socket-weld or butt-weld on request",
+     "unit": null,
+     "position": 4,
+     "isFilterable": true,
+     "templateKey": "end_connection"
+    },
+    {
+     "group": "Construction",
+     "label": "Operation",
+     "value": "Self-acting, spring loaded",
+     "unit": null,
+     "position": 5,
+     "isFilterable": true,
+     "templateKey": "operation"
+    },
+    {
+     "group": "Identification",
+     "label": "Valve type",
+     "value": "Safety relief valve, conventional, spring loaded",
+     "unit": null,
+     "position": 6,
+     "isFilterable": true,
+     "templateKey": "valve_type"
+    },
+    {
+     "group": "Identification",
+     "label": "Construction",
+     "value": "Full-lift disc, adjusting ring, closed bonnet",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": "construction"
+    },
+    {
+     "group": "Materials",
+     "label": "Seat and trim",
+     "value": "Metal or soft seat; liquid trim available",
+     "unit": null,
+     "position": 8,
+     "isFilterable": false,
+     "templateKey": "trim"
+    },
+    {
+     "group": "Range",
+     "label": "Temperature range",
+     "value": "Up to 537 °C, by body material",
+     "unit": null,
+     "position": 9,
+     "isFilterable": false,
+     "templateKey": "temperature"
+    },
+    {
+     "group": "Standards",
+     "label": "Face-to-face / end-to-end",
+     "value": "API 526 centre-to-face",
+     "unit": null,
+     "position": 10,
+     "isFilterable": false,
+     "templateKey": "face_to_face"
+    },
+    {
+     "group": "Application",
+     "label": "Typical service",
+     "value": "Gas, vapour, steam and liquid over-pressure protection",
+     "unit": null,
+     "position": 11,
+     "isFilterable": false,
+     "templateKey": "service"
+    },
+    {
+     "group": "Supply",
+     "label": "Supply",
+     "value": "Built to order and supplied from Dubai with material certificates and the test record",
+     "unit": null,
+     "position": 12,
+     "isFilterable": false,
+     "templateKey": "supply"
+    },
+    {
+     "group": "Standards",
+     "label": "Pressure testing",
+     "value": "Set-pressure and seat-tightness tests on the bench, shell test to API 527 / ASME requirements",
+     "unit": null,
+     "position": 13,
+     "isFilterable": false,
+     "templateKey": "testing"
+    }
+   ],
+   "searchAliases": [
+    "safety relief valve api 526",
+    "conventional safety relief valve, api 526, orifice d to t",
+    "safety relief valve, conventional, spring loaded",
+    "api 520",
+    "api 526",
+    "asme viii",
+    "iso 4126-1"
+   ],
+   "images": [
+    {
+     "file": "IH-SR-CSV-01.jpg",
+     "alt": "Grey conventional spring-loaded safety relief valve with flanged inlet and side outlet",
+     "caption": "Supplier product photo (2026-10-21), maker branding and watermark removed by AI edit; representative of the range"
+    }
+   ],
+   "variants": [
+    {
+     "partNumber": "IH-SR-CSV-D-01000200-150-150",
+     "position": 0,
+     "dimensions": {
+      "type": "Orifice D",
+      "size": "1\" × 2\"",
+      "pressureClass": "Inlet 150 / outlet 150",
+      "A": 105,
+      "B": 115
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-D-01000200-300-150",
+     "position": 1,
+     "dimensions": {
+      "type": "Orifice D",
+      "size": "1\" × 2\"",
+      "pressureClass": "Inlet 300 / outlet 150",
+      "A": 105,
+      "B": 115
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-D-01000200-300-300",
+     "position": 2,
+     "dimensions": {
+      "type": "Orifice D",
+      "size": "1\" × 2\"",
+      "pressureClass": "Inlet 300 / outlet 300",
+      "A": 105,
+      "B": 115
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-D-01000200-300A-150",
+     "position": 3,
+     "dimensions": {
+      "type": "Orifice D",
+      "size": "1\" × 2\"",
+      "pressureClass": "Inlet 300 (alt.) / outlet 150",
+      "A": 105,
+      "B": 115
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-D-01000200-300A-300",
+     "position": 4,
+     "dimensions": {
+      "type": "Orifice D",
+      "size": "1\" × 2\"",
+      "pressureClass": "Inlet 300 (alt.) / outlet 300",
+      "A": 105,
+      "B": 115
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-D-01000200-600-150",
+     "position": 5,
+     "dimensions": {
+      "type": "Orifice D",
+      "size": "1\" × 2\"",
+      "pressureClass": "Inlet 600 / outlet 150",
+      "A": 105,
+      "B": 115
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-D-01000200-600-300",
+     "position": 6,
+     "dimensions": {
+      "type": "Orifice D",
+      "size": "1\" × 2\"",
+      "pressureClass": "Inlet 600 / outlet 300",
+      "A": 105,
+      "B": 115
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-D-01000200-600-600",
+     "position": 7,
+     "dimensions": {
+      "type": "Orifice D",
+      "size": "1\" × 2\"",
+      "pressureClass": "Inlet 600 / outlet 600",
+      "A": 105,
+      "B": 115
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-D-01500200-900-300",
+     "position": 8,
+     "dimensions": {
+      "type": "Orifice D",
+      "size": "1-1/2\" × 2\"",
+      "pressureClass": "Inlet 900 / outlet 300",
+      "A": 105,
+      "B": 140
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-D-01500200-1500-300",
+     "position": 9,
+     "dimensions": {
+      "type": "Orifice D",
+      "size": "1-1/2\" × 2\"",
+      "pressureClass": "Inlet 1500 / outlet 300",
+      "A": 105,
+      "B": 140
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-D-01500300-2500-300",
+     "position": 10,
+     "dimensions": {
+      "type": "Orifice D",
+      "size": "1-1/2\" × 3\"",
+      "pressureClass": "Inlet 2500 / outlet 300",
+      "A": 140,
+      "B": 178
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-E-01000200-150-150",
+     "position": 11,
+     "dimensions": {
+      "type": "Orifice E",
+      "size": "1\" × 2\"",
+      "pressureClass": "Inlet 150 / outlet 150",
+      "A": 105,
+      "B": 115
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-E-01000200-300-150",
+     "position": 12,
+     "dimensions": {
+      "type": "Orifice E",
+      "size": "1\" × 2\"",
+      "pressureClass": "Inlet 300 / outlet 150",
+      "A": 105,
+      "B": 115
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-E-01000200-300-300",
+     "position": 13,
+     "dimensions": {
+      "type": "Orifice E",
+      "size": "1\" × 2\"",
+      "pressureClass": "Inlet 300 / outlet 300",
+      "A": 105,
+      "B": 115
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-E-01000200-300A-150",
+     "position": 14,
+     "dimensions": {
+      "type": "Orifice E",
+      "size": "1\" × 2\"",
+      "pressureClass": "Inlet 300 (alt.) / outlet 150",
+      "A": 105,
+      "B": 115
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-E-01000200-300A-300",
+     "position": 15,
+     "dimensions": {
+      "type": "Orifice E",
+      "size": "1\" × 2\"",
+      "pressureClass": "Inlet 300 (alt.) / outlet 300",
+      "A": 105,
+      "B": 115
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-E-01000200-600-150",
+     "position": 16,
+     "dimensions": {
+      "type": "Orifice E",
+      "size": "1\" × 2\"",
+      "pressureClass": "Inlet 600 / outlet 150",
+      "A": 105,
+      "B": 115
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-E-01000200-600-300",
+     "position": 17,
+     "dimensions": {
+      "type": "Orifice E",
+      "size": "1\" × 2\"",
+      "pressureClass": "Inlet 600 / outlet 300",
+      "A": 105,
+      "B": 115
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-E-01000200-600-600",
+     "position": 18,
+     "dimensions": {
+      "type": "Orifice E",
+      "size": "1\" × 2\"",
+      "pressureClass": "Inlet 600 / outlet 600",
+      "A": 105,
+      "B": 115
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-E-01500200-900-300",
+     "position": 19,
+     "dimensions": {
+      "type": "Orifice E",
+      "size": "1-1/2\" × 2\"",
+      "pressureClass": "Inlet 900 / outlet 300",
+      "A": 105,
+      "B": 140
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-E-01500200-1500-300",
+     "position": 20,
+     "dimensions": {
+      "type": "Orifice E",
+      "size": "1-1/2\" × 2\"",
+      "pressureClass": "Inlet 1500 / outlet 300",
+      "A": 105,
+      "B": 140
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-E-01500300-2500-300",
+     "position": 21,
+     "dimensions": {
+      "type": "Orifice E",
+      "size": "1-1/2\" × 3\"",
+      "pressureClass": "Inlet 2500 / outlet 300",
+      "A": 140,
+      "B": 178
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-F-01500200-150-150",
+     "position": 22,
+     "dimensions": {
+      "type": "Orifice F",
+      "size": "1-1/2\" × 2\"",
+      "pressureClass": "Inlet 150 / outlet 150",
+      "A": 124,
+      "B": 121
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-F-01500200-300-150",
+     "position": 23,
+     "dimensions": {
+      "type": "Orifice F",
+      "size": "1-1/2\" × 2\"",
+      "pressureClass": "Inlet 300 / outlet 150",
+      "A": 124,
+      "B": 121
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-F-01500200-300-300",
+     "position": 24,
+     "dimensions": {
+      "type": "Orifice F",
+      "size": "1-1/2\" × 2\"",
+      "pressureClass": "Inlet 300 / outlet 300",
+      "A": 124,
+      "B": 121
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-F-01500200-300A-150",
+     "position": 25,
+     "dimensions": {
+      "type": "Orifice F",
+      "size": "1-1/2\" × 2\"",
+      "pressureClass": "Inlet 300 (alt.) / outlet 150",
+      "A": 124,
+      "B": 152
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-F-01500200-300A-300",
+     "position": 26,
+     "dimensions": {
+      "type": "Orifice F",
+      "size": "1-1/2\" × 2\"",
+      "pressureClass": "Inlet 300 (alt.) / outlet 300",
+      "A": 124,
+      "B": 152
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-F-01500200-600-150",
+     "position": 27,
+     "dimensions": {
+      "type": "Orifice F",
+      "size": "1-1/2\" × 2\"",
+      "pressureClass": "Inlet 600 / outlet 150",
+      "A": 124,
+      "B": 152
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-F-01500200-600-300",
+     "position": 28,
+     "dimensions": {
+      "type": "Orifice F",
+      "size": "1-1/2\" × 2\"",
+      "pressureClass": "Inlet 600 / outlet 300",
+      "A": 124,
+      "B": 152
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-F-01500300-900-150",
+     "position": 29,
+     "dimensions": {
+      "type": "Orifice F",
+      "size": "1-1/2\" × 3\"",
+      "pressureClass": "Inlet 900 / outlet 150",
+      "A": 124,
+      "B": 165
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-F-01500300-900-300",
+     "position": 30,
+     "dimensions": {
+      "type": "Orifice F",
+      "size": "1-1/2\" × 3\"",
+      "pressureClass": "Inlet 900 / outlet 300",
+      "A": 124,
+      "B": 165
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-F-01500300-1500-300",
+     "position": 31,
+     "dimensions": {
+      "type": "Orifice F",
+      "size": "1-1/2\" × 3\"",
+      "pressureClass": "Inlet 1500 / outlet 300",
+      "A": 124,
+      "B": 165
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-F-01500300-2500-300",
+     "position": 32,
+     "dimensions": {
+      "type": "Orifice F",
+      "size": "1-1/2\" × 3\"",
+      "pressureClass": "Inlet 2500 / outlet 300",
+      "A": 140,
+      "B": 178
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-G-01500300-150-150",
+     "position": 33,
+     "dimensions": {
+      "type": "Orifice G",
+      "size": "1-1/2\" × 3\"",
+      "pressureClass": "Inlet 150 / outlet 150",
+      "A": 124,
+      "B": 121
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-G-01500300-300-150",
+     "position": 34,
+     "dimensions": {
+      "type": "Orifice G",
+      "size": "1-1/2\" × 3\"",
+      "pressureClass": "Inlet 300 / outlet 150",
+      "A": 124,
+      "B": 121
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-G-01500300-300-300",
+     "position": 35,
+     "dimensions": {
+      "type": "Orifice G",
+      "size": "1-1/2\" × 3\"",
+      "pressureClass": "Inlet 300 / outlet 300",
+      "A": 124,
+      "B": 121
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-G-01500300-300A-150",
+     "position": 36,
+     "dimensions": {
+      "type": "Orifice G",
+      "size": "1-1/2\" × 3\"",
+      "pressureClass": "Inlet 300 (alt.) / outlet 150",
+      "A": 124,
+      "B": 152
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-G-01500300-300A-300",
+     "position": 37,
+     "dimensions": {
+      "type": "Orifice G",
+      "size": "1-1/2\" × 3\"",
+      "pressureClass": "Inlet 300 (alt.) / outlet 300",
+      "A": 124,
+      "B": 152
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-G-01500300-600-150",
+     "position": 38,
+     "dimensions": {
+      "type": "Orifice G",
+      "size": "1-1/2\" × 3\"",
+      "pressureClass": "Inlet 600 / outlet 150",
+      "A": 124,
+      "B": 152
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-G-01500300-600-300",
+     "position": 39,
+     "dimensions": {
+      "type": "Orifice G",
+      "size": "1-1/2\" × 3\"",
+      "pressureClass": "Inlet 600 / outlet 300",
+      "A": 124,
+      "B": 152
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-G-01500300-900-150",
+     "position": 40,
+     "dimensions": {
+      "type": "Orifice G",
+      "size": "1-1/2\" × 3\"",
+      "pressureClass": "Inlet 900 / outlet 150",
+      "A": 124,
+      "B": 165
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-G-01500300-900-300",
+     "position": 41,
+     "dimensions": {
+      "type": "Orifice G",
+      "size": "1-1/2\" × 3\"",
+      "pressureClass": "Inlet 900 / outlet 300",
+      "A": 124,
+      "B": 165
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-G-02000300-1500-300",
+     "position": 42,
+     "dimensions": {
+      "type": "Orifice G",
+      "size": "2\" × 3\"",
+      "pressureClass": "Inlet 1500 / outlet 300",
+      "A": 156,
+      "B": 171
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-G-02000300-2500-300",
+     "position": 43,
+     "dimensions": {
+      "type": "Orifice G",
+      "size": "2\" × 3\"",
+      "pressureClass": "Inlet 2500 / outlet 300",
+      "A": 156,
+      "B": 171
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-H-01500300-150-150",
+     "position": 44,
+     "dimensions": {
+      "type": "Orifice H",
+      "size": "1-1/2\" × 3\"",
+      "pressureClass": "Inlet 150 / outlet 150",
+      "A": 130,
+      "B": 124
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-H-01500300-300-150",
+     "position": 45,
+     "dimensions": {
+      "type": "Orifice H",
+      "size": "1-1/2\" × 3\"",
+      "pressureClass": "Inlet 300 / outlet 150",
+      "A": 130,
+      "B": 124
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-H-01500300-300-300",
+     "position": 46,
+     "dimensions": {
+      "type": "Orifice H",
+      "size": "1-1/2\" × 3\"",
+      "pressureClass": "Inlet 300 / outlet 300",
+      "A": 130,
+      "B": 124
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-H-02000300-300-150",
+     "position": 47,
+     "dimensions": {
+      "type": "Orifice H",
+      "size": "2\" × 3\"",
+      "pressureClass": "Inlet 300 / outlet 150",
+      "A": 130,
+      "B": 124
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-H-02000300-300-300",
+     "position": 48,
+     "dimensions": {
+      "type": "Orifice H",
+      "size": "2\" × 3\"",
+      "pressureClass": "Inlet 300 / outlet 300",
+      "A": 130,
+      "B": 150
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-H-02000300-600-150",
+     "position": 49,
+     "dimensions": {
+      "type": "Orifice H",
+      "size": "2\" × 3\"",
+      "pressureClass": "Inlet 600 / outlet 150",
+      "A": 154,
+      "B": 162
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-H-02000300-600-300",
+     "position": 50,
+     "dimensions": {
+      "type": "Orifice H",
+      "size": "2\" × 3\"",
+      "pressureClass": "Inlet 600 / outlet 300",
+      "A": 154,
+      "B": 162
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-H-02000300-900-150",
+     "position": 51,
+     "dimensions": {
+      "type": "Orifice H",
+      "size": "2\" × 3\"",
+      "pressureClass": "Inlet 900 / outlet 150",
+      "A": 154,
+      "B": 162
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-H-02000300-900-300",
+     "position": 52,
+     "dimensions": {
+      "type": "Orifice H",
+      "size": "2\" × 3\"",
+      "pressureClass": "Inlet 900 / outlet 300",
+      "A": 154,
+      "B": 162
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-H-02000300-1500-300",
+     "position": 53,
+     "dimensions": {
+      "type": "Orifice H",
+      "size": "2\" × 3\"",
+      "pressureClass": "Inlet 1500 / outlet 300",
+      "A": 154,
+      "B": 162
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-H-02000300-2500-300",
+     "position": 54,
+     "dimensions": {
+      "type": "Orifice H",
+      "size": "2\" × 3\"",
+      "pressureClass": "Inlet 2500 / outlet 300",
+      "A": 156,
+      "B": 171
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-J-02000300-150-150",
+     "position": 55,
+     "dimensions": {
+      "type": "Orifice J",
+      "size": "2\" × 3\"",
+      "pressureClass": "Inlet 150 / outlet 150",
+      "A": 137,
+      "B": 124
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-J-02000300-300-300",
+     "position": 56,
+     "dimensions": {
+      "type": "Orifice J",
+      "size": "2\" × 3\"",
+      "pressureClass": "Inlet 300 / outlet 300",
+      "A": 137,
+      "B": 150
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-J-03000400-300-150",
+     "position": 57,
+     "dimensions": {
+      "type": "Orifice J",
+      "size": "3\" × 4\"",
+      "pressureClass": "Inlet 300 / outlet 150",
+      "A": 184,
+      "B": 181
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-J-03000400-300-300",
+     "position": 58,
+     "dimensions": {
+      "type": "Orifice J",
+      "size": "3\" × 4\"",
+      "pressureClass": "Inlet 300 / outlet 300",
+      "A": 184,
+      "B": 181
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-J-03000400-600-150",
+     "position": 59,
+     "dimensions": {
+      "type": "Orifice J",
+      "size": "3\" × 4\"",
+      "pressureClass": "Inlet 600 / outlet 150",
+      "A": 184,
+      "B": 181
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-J-03000400-600-300",
+     "position": 60,
+     "dimensions": {
+      "type": "Orifice J",
+      "size": "3\" × 4\"",
+      "pressureClass": "Inlet 600 / outlet 300",
+      "A": 184,
+      "B": 181
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-J-03000400-900-150",
+     "position": 61,
+     "dimensions": {
+      "type": "Orifice J",
+      "size": "3\" × 4\"",
+      "pressureClass": "Inlet 900 / outlet 150",
+      "A": 184,
+      "B": 181
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-J-03000400-900-300",
+     "position": 62,
+     "dimensions": {
+      "type": "Orifice J",
+      "size": "3\" × 4\"",
+      "pressureClass": "Inlet 900 / outlet 300",
+      "A": 184,
+      "B": 181
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-J-03000400-1500-300",
+     "position": 63,
+     "dimensions": {
+      "type": "Orifice J",
+      "size": "3\" × 4\"",
+      "pressureClass": "Inlet 1500 / outlet 300",
+      "A": 184,
+      "B": 181
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-K-03000400-150-150",
+     "position": 64,
+     "dimensions": {
+      "type": "Orifice K",
+      "size": "3\" × 4\"",
+      "pressureClass": "Inlet 150 / outlet 150",
+      "A": 156,
+      "B": 162
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-K-03000400-300-300",
+     "position": 65,
+     "dimensions": {
+      "type": "Orifice K",
+      "size": "3\" × 4\"",
+      "pressureClass": "Inlet 300 / outlet 300",
+      "A": 156,
+      "B": 162
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-K-03000400-300A-150",
+     "position": 66,
+     "dimensions": {
+      "type": "Orifice K",
+      "size": "3\" × 4\"",
+      "pressureClass": "Inlet 300 (alt.) / outlet 150",
+      "A": 156,
+      "B": 162
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-K-03000400-300A-300",
+     "position": 67,
+     "dimensions": {
+      "type": "Orifice K",
+      "size": "3\" × 4\"",
+      "pressureClass": "Inlet 300 (alt.) / outlet 300",
+      "A": 156,
+      "B": 162
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-K-03000400-600-150",
+     "position": 68,
+     "dimensions": {
+      "type": "Orifice K",
+      "size": "3\" × 4\"",
+      "pressureClass": "Inlet 600 / outlet 150",
+      "A": 184,
+      "B": 181
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-K-03000400-900-150",
+     "position": 69,
+     "dimensions": {
+      "type": "Orifice K",
+      "size": "3\" × 4\"",
+      "pressureClass": "Inlet 900 / outlet 150",
+      "A": 184,
+      "B": 181
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-K-03000600-900-150",
+     "position": 70,
+     "dimensions": {
+      "type": "Orifice K",
+      "size": "3\" × 6\"",
+      "pressureClass": "Inlet 900 / outlet 150",
+      "A": 198,
+      "B": 216
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-K-03000600-900-300",
+     "position": 71,
+     "dimensions": {
+      "type": "Orifice K",
+      "size": "3\" × 6\"",
+      "pressureClass": "Inlet 900 / outlet 300",
+      "A": 198,
+      "B": 216
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-K-03000600-1500-300",
+     "position": 72,
+     "dimensions": {
+      "type": "Orifice K",
+      "size": "3\" × 6\"",
+      "pressureClass": "Inlet 1500 / outlet 300",
+      "A": 197,
+      "B": 216
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-L-03000400-150-150",
+     "position": 73,
+     "dimensions": {
+      "type": "Orifice L",
+      "size": "3\" × 4\"",
+      "pressureClass": "Inlet 150 / outlet 150",
+      "A": 156,
+      "B": 165
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-L-03000400-300-150",
+     "position": 74,
+     "dimensions": {
+      "type": "Orifice L",
+      "size": "3\" × 4\"",
+      "pressureClass": "Inlet 300 / outlet 150",
+      "A": 156,
+      "B": 165
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-L-03000400-300-300",
+     "position": 75,
+     "dimensions": {
+      "type": "Orifice L",
+      "size": "3\" × 4\"",
+      "pressureClass": "Inlet 300 / outlet 300",
+      "A": 156,
+      "B": 165
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-L-04000600-300-150",
+     "position": 76,
+     "dimensions": {
+      "type": "Orifice L",
+      "size": "4\" × 6\"",
+      "pressureClass": "Inlet 300 / outlet 150",
+      "A": 179,
+      "B": 181
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-L-04000600-300-300",
+     "position": 77,
+     "dimensions": {
+      "type": "Orifice L",
+      "size": "4\" × 6\"",
+      "pressureClass": "Inlet 300 / outlet 300",
+      "A": 179,
+      "B": 203
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-L-04000600-600-150",
+     "position": 78,
+     "dimensions": {
+      "type": "Orifice L",
+      "size": "4\" × 6\"",
+      "pressureClass": "Inlet 600 / outlet 150",
+      "A": 179,
+      "B": 203
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-L-04000600-900-150",
+     "position": 79,
+     "dimensions": {
+      "type": "Orifice L",
+      "size": "4\" × 6\"",
+      "pressureClass": "Inlet 900 / outlet 150",
+      "A": 197,
+      "B": 222
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-L-04000600-900-300",
+     "position": 80,
+     "dimensions": {
+      "type": "Orifice L",
+      "size": "4\" × 6\"",
+      "pressureClass": "Inlet 900 / outlet 300",
+      "A": 197,
+      "B": 222
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-L-04000600-1500-150",
+     "position": 81,
+     "dimensions": {
+      "type": "Orifice L",
+      "size": "4\" × 6\"",
+      "pressureClass": "Inlet 1500 / outlet 150",
+      "A": 197,
+      "B": 222
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-L-04000600-1500-300",
+     "position": 82,
+     "dimensions": {
+      "type": "Orifice L",
+      "size": "4\" × 6\"",
+      "pressureClass": "Inlet 1500 / outlet 300",
+      "A": 197,
+      "B": 222
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-M-04000600-150-150",
+     "position": 83,
+     "dimensions": {
+      "type": "Orifice M",
+      "size": "4\" × 6\"",
+      "pressureClass": "Inlet 150 / outlet 150",
+      "A": 178,
+      "B": 184
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-M-04000600-300-150",
+     "position": 84,
+     "dimensions": {
+      "type": "Orifice M",
+      "size": "4\" × 6\"",
+      "pressureClass": "Inlet 300 / outlet 150",
+      "A": 178,
+      "B": 184
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-M-04000600-300-300",
+     "position": 85,
+     "dimensions": {
+      "type": "Orifice M",
+      "size": "4\" × 6\"",
+      "pressureClass": "Inlet 300 / outlet 300",
+      "A": 178,
+      "B": 203
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-M-04000600-300A-300",
+     "position": 86,
+     "dimensions": {
+      "type": "Orifice M",
+      "size": "4\" × 6\"",
+      "pressureClass": "Inlet 300 (alt.) / outlet 300",
+      "A": 178,
+      "B": 203
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-M-04000600-600-150",
+     "position": 87,
+     "dimensions": {
+      "type": "Orifice M",
+      "size": "4\" × 6\"",
+      "pressureClass": "Inlet 600 / outlet 150",
+      "A": 178,
+      "B": 203
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-M-04000600-900-150",
+     "position": 88,
+     "dimensions": {
+      "type": "Orifice M",
+      "size": "4\" × 6\"",
+      "pressureClass": "Inlet 900 / outlet 150",
+      "A": 197,
+      "B": 222
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-N-04000600-150-150",
+     "position": 89,
+     "dimensions": {
+      "type": "Orifice N",
+      "size": "4\" × 6\"",
+      "pressureClass": "Inlet 150 / outlet 150",
+      "A": 197,
+      "B": 210
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-N-04000600-300-150",
+     "position": 90,
+     "dimensions": {
+      "type": "Orifice N",
+      "size": "4\" × 6\"",
+      "pressureClass": "Inlet 300 / outlet 150",
+      "A": 197,
+      "B": 210
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-N-04000600-300-300",
+     "position": 91,
+     "dimensions": {
+      "type": "Orifice N",
+      "size": "4\" × 6\"",
+      "pressureClass": "Inlet 300 / outlet 300",
+      "A": 197,
+      "B": 210
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-N-04000600-300A-150",
+     "position": 92,
+     "dimensions": {
+      "type": "Orifice N",
+      "size": "4\" × 6\"",
+      "pressureClass": "Inlet 300 (alt.) / outlet 150",
+      "A": 197,
+      "B": 210
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-N-04000600-300A-300",
+     "position": 93,
+     "dimensions": {
+      "type": "Orifice N",
+      "size": "4\" × 6\"",
+      "pressureClass": "Inlet 300 (alt.) / outlet 300",
+      "A": 197,
+      "B": 210
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-N-04000600-600-150",
+     "position": 94,
+     "dimensions": {
+      "type": "Orifice N",
+      "size": "4\" × 6\"",
+      "pressureClass": "Inlet 600 / outlet 150",
+      "A": 197,
+      "B": 222
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-N-04000600-600-300",
+     "position": 95,
+     "dimensions": {
+      "type": "Orifice N",
+      "size": "4\" × 6\"",
+      "pressureClass": "Inlet 600 / outlet 300",
+      "A": 197,
+      "B": 222
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-N-04000600-900-150",
+     "position": 96,
+     "dimensions": {
+      "type": "Orifice N",
+      "size": "4\" × 6\"",
+      "pressureClass": "Inlet 900 / outlet 150",
+      "A": 197,
+      "B": 222
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-P-04000600-150-150",
+     "position": 97,
+     "dimensions": {
+      "type": "Orifice P",
+      "size": "4\" × 6\"",
+      "pressureClass": "Inlet 150 / outlet 150",
+      "A": 181,
+      "B": 229
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-P-04000600-300-150",
+     "position": 98,
+     "dimensions": {
+      "type": "Orifice P",
+      "size": "4\" × 6\"",
+      "pressureClass": "Inlet 300 / outlet 150",
+      "A": 181,
+      "B": 229
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-P-04000600-300A-150",
+     "position": 99,
+     "dimensions": {
+      "type": "Orifice P",
+      "size": "4\" × 6\"",
+      "pressureClass": "Inlet 300 (alt.) / outlet 150",
+      "A": 225,
+      "B": 254
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-P-04000600-300A-300",
+     "position": 100,
+     "dimensions": {
+      "type": "Orifice P",
+      "size": "4\" × 6\"",
+      "pressureClass": "Inlet 300 (alt.) / outlet 300",
+      "A": 225,
+      "B": 254
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-P-04000600-600-150",
+     "position": 101,
+     "dimensions": {
+      "type": "Orifice P",
+      "size": "4\" × 6\"",
+      "pressureClass": "Inlet 600 / outlet 150",
+      "A": 225,
+      "B": 254
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-P-04000600-600-300",
+     "position": 102,
+     "dimensions": {
+      "type": "Orifice P",
+      "size": "4\" × 6\"",
+      "pressureClass": "Inlet 600 / outlet 300",
+      "A": 225,
+      "B": 254
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-P-04000600-900-150",
+     "position": 103,
+     "dimensions": {
+      "type": "Orifice P",
+      "size": "4\" × 6\"",
+      "pressureClass": "Inlet 900 / outlet 150",
+      "A": 225,
+      "B": 254
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-P-04000600-900-300",
+     "position": 104,
+     "dimensions": {
+      "type": "Orifice P",
+      "size": "4\" × 6\"",
+      "pressureClass": "Inlet 900 / outlet 300",
+      "A": 225,
+      "B": 254
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-Q-06000800-150-150",
+     "position": 105,
+     "dimensions": {
+      "type": "Orifice Q",
+      "size": "6\" × 8\"",
+      "pressureClass": "Inlet 150 / outlet 150",
+      "A": 240,
+      "B": 241
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-Q-06000800-300-150",
+     "position": 106,
+     "dimensions": {
+      "type": "Orifice Q",
+      "size": "6\" × 8\"",
+      "pressureClass": "Inlet 300 / outlet 150",
+      "A": 240,
+      "B": 241
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-Q-06000800-300-300",
+     "position": 107,
+     "dimensions": {
+      "type": "Orifice Q",
+      "size": "6\" × 8\"",
+      "pressureClass": "Inlet 300 / outlet 300",
+      "A": 240,
+      "B": 241
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-Q-06000800-300A-150",
+     "position": 108,
+     "dimensions": {
+      "type": "Orifice Q",
+      "size": "6\" × 8\"",
+      "pressureClass": "Inlet 300 (alt.) / outlet 150",
+      "A": 240,
+      "B": 241
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-Q-06000800-300A-300",
+     "position": 109,
+     "dimensions": {
+      "type": "Orifice Q",
+      "size": "6\" × 8\"",
+      "pressureClass": "Inlet 300 (alt.) / outlet 300",
+      "A": 240,
+      "B": 241
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-Q-06000800-600-150",
+     "position": 110,
+     "dimensions": {
+      "type": "Orifice Q",
+      "size": "6\" × 8\"",
+      "pressureClass": "Inlet 600 / outlet 150",
+      "A": 240,
+      "B": 241
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-Q-06000800-600-300",
+     "position": 111,
+     "dimensions": {
+      "type": "Orifice Q",
+      "size": "6\" × 8\"",
+      "pressureClass": "Inlet 600 / outlet 300",
+      "A": 240,
+      "B": 241
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-Q-06000800-900-150",
+     "position": 112,
+     "dimensions": {
+      "type": "Orifice Q",
+      "size": "6\" × 8\"",
+      "pressureClass": "Inlet 900 / outlet 150",
+      "A": 240,
+      "B": 241
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-Q-06000800-900-300",
+     "position": 113,
+     "dimensions": {
+      "type": "Orifice Q",
+      "size": "6\" × 8\"",
+      "pressureClass": "Inlet 900 / outlet 300",
+      "A": 285,
+      "B": 280
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-R-06000800-300-150",
+     "position": 114,
+     "dimensions": {
+      "type": "Orifice R",
+      "size": "6\" × 8\"",
+      "pressureClass": "Inlet 300 / outlet 150",
+      "A": 240,
+      "B": 241
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-R-06000800-300-300",
+     "position": 115,
+     "dimensions": {
+      "type": "Orifice R",
+      "size": "6\" × 8\"",
+      "pressureClass": "Inlet 300 / outlet 300",
+      "A": 240,
+      "B": 241
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-R-06001000-300-150",
+     "position": 116,
+     "dimensions": {
+      "type": "Orifice R",
+      "size": "6\" × 10\"",
+      "pressureClass": "Inlet 300 / outlet 150",
+      "A": 240,
+      "B": 267
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-R-06001000-600-150",
+     "position": 117,
+     "dimensions": {
+      "type": "Orifice R",
+      "size": "6\" × 10\"",
+      "pressureClass": "Inlet 600 / outlet 150",
+      "A": 240,
+      "B": 267
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-R-06001000-600-300",
+     "position": 118,
+     "dimensions": {
+      "type": "Orifice R",
+      "size": "6\" × 10\"",
+      "pressureClass": "Inlet 600 / outlet 300",
+      "A": 240,
+      "B": 267
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-R-06001000-600A-150",
+     "position": 119,
+     "dimensions": {
+      "type": "Orifice R",
+      "size": "6\" × 10\"",
+      "pressureClass": "Inlet 600 (alt.) / outlet 150",
+      "A": 240,
+      "B": 267
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-T-08001000-150-150",
+     "position": 120,
+     "dimensions": {
+      "type": "Orifice T",
+      "size": "8\" × 10\"",
+      "pressureClass": "Inlet 150 / outlet 150",
+      "A": 276,
+      "B": 279
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-T-08001000-300-150",
+     "position": 121,
+     "dimensions": {
+      "type": "Orifice T",
+      "size": "8\" × 10\"",
+      "pressureClass": "Inlet 300 / outlet 150",
+      "A": 276,
+      "B": 279
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-T-08001000-300A-150",
+     "position": 122,
+     "dimensions": {
+      "type": "Orifice T",
+      "size": "8\" × 10\"",
+      "pressureClass": "Inlet 300 (alt.) / outlet 150",
+      "A": 276,
+      "B": 279
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-T-08001000-300A-300",
+     "position": 123,
+     "dimensions": {
+      "type": "Orifice T",
+      "size": "8\" × 10\"",
+      "pressureClass": "Inlet 300 (alt.) / outlet 300",
+      "A": 276,
+      "B": 279
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-T-08001000-600-150",
+     "position": 124,
+     "dimensions": {
+      "type": "Orifice T",
+      "size": "8\" × 10\"",
+      "pressureClass": "Inlet 600 / outlet 150",
+      "A": 276,
+      "B": 279
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    },
+    {
+     "partNumber": "IH-SR-CSV-T-08001000-600A-150",
+     "position": 125,
+     "dimensions": {
+      "type": "Orifice T",
+      "size": "8\" × 10\"",
+      "pressureClass": "Inlet 600 (alt.) / outlet 150",
+      "A": 276,
+      "B": 279
+     },
+     "portLabel": null,
+     "port2Label": null,
+     "port3Label": null,
+     "competitorBrand": null,
+     "competitorMpn": null
+    }
+   ],
+   "crossReferences": []
+  },
+  {
+   "sku": "IH-SR-BSV",
+   "slug": "balanced-bellows-safety-relief-valve",
+   "title": "Balanced Bellows Safety Relief Valve, API 526",
+   "category": "safety-relief-valves",
+   "focusKeyword": "balanced bellows safety relief valve",
+   "descriptionShort": "Balanced bellows safety relief valves to API 520 and 526: orifice D to T, 1/2\" to 20\", Class 150 to 2500; the bellows cancels back pressure and shields the spring and guide from the fluid.",
+   "descriptionLong": "<p>For relief into closed headers where back pressure varies. A bellows between disc and bonnet balances the effect of back pressure on the disc, so the set pressure stays true, and it also keeps corrosive or fouling fluid away from the spring and guide. Dimensions are the same as the conventional valve of the same orifice.</p><p>A safety relief valve opens automatically when pressure reaches its set point and closes again once it falls, protecting a vessel, line or tank from bursting. It is the last safeguard after the control system, so it is sized to the worst relieving case, set and tested on the bench, and sealed against tampering.</p><h3>Construction</h3><ul><li>Bellows balances back pressure on the disc</li><li>Spring and guide isolated from the process fluid</li><li>Bonnet vent to show a bellows leak</li><li>Same API 526 envelope as the conventional valve</li></ul><h3>Sizes and ratings</h3><p>Published range: 1/2\" to 20\" (DN15 to DN500), ASME Class 150 to 2500 (PN10 to PN420), in carbon steel, alloy steel, stainless steel, duplex, nickel alloys. End connections: Flanged; threaded, socket-weld or butt-weld on request. Operation: self-acting, spring loaded.</p><p>Each valve is sized to the relieving case; the data sheet and general arrangement drawing come with the quotation.</p><h3>Testing and documents</h3><p>Set-pressure and seat-tightness tests on the bench, shell test to API 527 / ASME requirements, with the material certificates and the pressure-test record supplied with the valve. Third-party inspection and extra tests are added when the order specifies them.</p><h3>Supply</h3><p>Balanced bellows relief valves are supplied from Dubai to projects, plants and maintenance teams across the GCC, the wider Middle East and Africa. Most are built to the order specification, so delivery depends on size, class, material and operator; standard carbon-steel sizes move fastest. We review the data sheet before quoting and flag anything that needs clarifying, such as a missing pipe schedule or an operator torque that has not been sized.</p><h3>Related valves</h3><p>Other safety and relief valves in the range, for comparison when the duty is not settled yet: <a href=\"/p/safety-relief-valve-packed-lever\">Safety Relief Valve with Packed Lever</a>, <a href=\"/p/safety-relief-valve-open-lever-steam\">Safety Relief Valve with Open Lever, Steam and Air</a>, <a href=\"/p/low-lift-safety-relief-valve-liquid\">Low-Lift Safety Relief Valve, DN15 to DN200</a>, <a href=\"/p/high-performance-steam-safety-valve-asme-i\">High-Performance Steam Safety Valve, ASME Section I</a>.</p>",
+   "seoTitle": "Balanced Bellows Safety Relief Valve, API 526",
+   "seoDescription": "Balanced bellows safety relief valves to API 520 and 526: orifice D to T, 1/2\" to 20\", Class 150 to 2500; the bellows cancels back pressure and shields.",
+   "faqs": [
+    {
+     "question": "When is a bellows valve needed?",
+     "answer": "When built-up or superimposed back pressure exceeds about 10 % of set pressure, or varies, or when the fluid would corrode or foul the spring."
+    },
+    {
+     "question": "Why must the bonnet vent stay open?",
+     "answer": "The bellows works by venting the space behind it to atmosphere. A plugged vent defeats the balancing and hides a bellows failure."
+    },
+    {
+     "question": "What do I need to send for a quotation?",
+     "answer": "The valve data sheet if you have one; otherwise the size, pressure class, body and trim material, end connection (raised face, ring joint or butt-weld with the pipe schedule), operator, design temperature and the service fluid. Add any project specification, vendor list or third-party inspection requirement, and the delivery address. We quote with the delivery time for that build."
+    },
+    {
+     "question": "What documents come with the valve?",
+     "answer": "Each valve is supplied with its material certificates to EN 10204 3.1, the pressure-test record and the general arrangement drawing. Third-party inspection, positive material identification and extra tests can be added when the order specifies them."
+    },
+    {
+     "question": "Can you supply against a project specification or approved vendor list?",
+     "answer": "Yes. Send the specification with the enquiry and we will confirm compliance line by line, list any deviations, and state the documentation, testing and inspection the order will carry before you place it."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Standards",
+     "label": "Design standard",
+     "value": "API 520, API 526, ASME VIII, ISO 4126-1",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "design_standard"
+    },
+    {
+     "group": "Range",
+     "label": "Size range",
+     "value": "1/2\" to 20\" (DN15 to DN500)",
+     "unit": null,
+     "position": 1,
+     "isFilterable": false,
+     "templateKey": "size_range"
+    },
+    {
+     "group": "Range",
+     "label": "Pressure class",
+     "value": "ASME Class 150 to 2500 (PN10 to PN420)",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "pressure_class"
+    },
+    {
+     "group": "Materials",
+     "label": "Body material",
+     "value": "Carbon steel, alloy steel, stainless steel, duplex, nickel alloys",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "body_material"
+    },
+    {
+     "group": "Construction",
+     "label": "End connections",
+     "value": "Flanged; threaded, socket-weld or butt-weld on request",
+     "unit": null,
+     "position": 4,
+     "isFilterable": true,
+     "templateKey": "end_connection"
+    },
+    {
+     "group": "Construction",
+     "label": "Operation",
+     "value": "Self-acting, spring loaded",
+     "unit": null,
+     "position": 5,
+     "isFilterable": true,
+     "templateKey": "operation"
+    },
+    {
+     "group": "Identification",
+     "label": "Valve type",
+     "value": "Safety relief valve, balanced bellows",
+     "unit": null,
+     "position": 6,
+     "isFilterable": true,
+     "templateKey": "valve_type"
+    },
+    {
+     "group": "Identification",
+     "label": "Construction",
+     "value": "Bellows-balanced disc, vented bonnet",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": "construction"
+    },
+    {
+     "group": "Materials",
+     "label": "Seat and trim",
+     "value": "Metal or soft seat",
+     "unit": null,
+     "position": 8,
+     "isFilterable": false,
+     "templateKey": "trim"
+    },
+    {
+     "group": "Range",
+     "label": "Temperature range",
+     "value": "Up to 537 °C, by body material",
+     "unit": null,
+     "position": 9,
+     "isFilterable": false,
+     "templateKey": "temperature"
+    },
+    {
+     "group": "Standards",
+     "label": "Face-to-face / end-to-end",
+     "value": "API 526 centre-to-face",
+     "unit": null,
+     "position": 10,
+     "isFilterable": false,
+     "templateKey": "face_to_face"
+    },
+    {
+     "group": "Application",
+     "label": "Typical service",
+     "value": "Relief into closed headers with variable back pressure; corrosive fluids",
+     "unit": null,
+     "position": 11,
+     "isFilterable": false,
+     "templateKey": "service"
+    },
+    {
+     "group": "Supply",
+     "label": "Supply",
+     "value": "Built to order and supplied from Dubai with material certificates and the test record",
+     "unit": null,
+     "position": 12,
+     "isFilterable": false,
+     "templateKey": "supply"
+    },
+    {
+     "group": "Standards",
+     "label": "Pressure testing",
+     "value": "Set-pressure and seat-tightness tests on the bench, shell test to API 527 / ASME requirements",
+     "unit": null,
+     "position": 13,
+     "isFilterable": false,
+     "templateKey": "testing"
+    }
+   ],
+   "searchAliases": [
+    "balanced bellows safety relief valve",
+    "balanced bellows safety relief valve, api 526",
+    "safety relief valve, balanced bellows",
+    "api 520",
+    "api 526",
+    "asme viii",
+    "iso 4126-1"
+   ],
+   "images": [
+    {
+     "file": "IH-SR-BSV-01.jpg",
+     "alt": "Red balanced bellows safety relief valve with flanged inlet, side outlet and bonnet vent",
+     "caption": "Supplier product photo (2026-10-21), maker branding and watermark removed by AI edit; representative of the range"
+    }
+   ],
+   "variants": [],
+   "crossReferences": []
+  },
+  {
+   "sku": "IH-SR-PLV",
+   "slug": "safety-relief-valve-packed-lever",
+   "title": "Safety Relief Valve with Packed Lever",
+   "category": "safety-relief-valves",
+   "focusKeyword": "safety relief valve with lever",
+   "descriptionShort": "Spring-loaded safety relief valves with a packed (sealed) lifting lever: 1/2\" to 20\", Class 150 to 2500, manual test lift above 75 % of set pressure without letting fluid escape at the cap.",
+   "descriptionLong": "<p>A relief valve that can be lifted by hand to prove it is free, once operating pressure is above 75 % of set pressure, as part of routine safety checks. The packed lever seals the cap, so the fluid cannot escape through the top when the valve opens: the choice where any leakage at the cap is unacceptable.</p><p>A safety relief valve opens automatically when pressure reaches its set point and closes again once it falls, protecting a vessel, line or tank from bursting. It is the last safeguard after the control system, so it is sized to the worst relieving case, set and tested on the bench, and sealed against tampering.</p><h3>Construction</h3><ul><li>Packed lifting lever: sealed cap</li><li>Manual lift above 75 % of set pressure</li><li>Closed bonnet; conventional or bellows</li><li>API 526 dimensions</li></ul><h3>Sizes and ratings</h3><p>Published range: 1/2\" to 20\" (DN15 to DN500), ASME Class 150 to 2500 (PN10 to PN420), in carbon steel, alloy steel, stainless steel, duplex, nickel alloys. End connections: Flanged; threaded, socket-weld or butt-weld on request. Operation: self-acting, spring loaded.</p><p>Each valve is sized to the relieving case; the data sheet and general arrangement drawing come with the quotation.</p><h3>Testing and documents</h3><p>Set-pressure and seat-tightness tests on the bench, shell test to API 527 / ASME requirements, with the material certificates and the pressure-test record supplied with the valve. Third-party inspection and extra tests are added when the order specifies them.</p><h3>Supply</h3><p>Packed-lever relief valves are supplied from Dubai to projects, plants and maintenance teams across the GCC, the wider Middle East and Africa. Most are built to the order specification, so delivery depends on size, class, material and operator; standard carbon-steel sizes move fastest. We review the data sheet before quoting and flag anything that needs clarifying, such as a missing pipe schedule or an operator torque that has not been sized.</p><h3>Related valves</h3><p>Other safety and relief valves in the range, for comparison when the duty is not settled yet: <a href=\"/p/safety-relief-valve-open-lever-steam\">Safety Relief Valve with Open Lever, Steam and Air</a>, <a href=\"/p/low-lift-safety-relief-valve-liquid\">Low-Lift Safety Relief Valve, DN15 to DN200</a>, <a href=\"/p/high-performance-steam-safety-valve-asme-i\">High-Performance Steam Safety Valve, ASME Section I</a>, <a href=\"/p/jacketed-safety-relief-valve\">Jacketed Safety Relief Valve, Bellows Type</a>.</p>",
+   "seoTitle": "Safety Relief Valve with Packed Lever",
+   "seoDescription": "Spring-loaded safety relief valves with a packed (sealed) lifting lever: 1/2\" to 20\", Class 150 to 2500, manual test lift above 75 % of set pressure.",
+   "faqs": [
+    {
+     "question": "Why lift a relief valve by hand?",
+     "answer": "To prove the disc is not stuck to the seat, as some codes and inspection regimes require at intervals."
+    },
+    {
+     "question": "Packed or open lever?",
+     "answer": "Packed levers seal the cap, for toxic or flammable fluids; open levers are for steam, air and fluids that can safely escape at the cap."
+    },
+    {
+     "question": "What do I need to send for a quotation?",
+     "answer": "The valve data sheet if you have one; otherwise the size, pressure class, body and trim material, end connection (raised face, ring joint or butt-weld with the pipe schedule), operator, design temperature and the service fluid. Add any project specification, vendor list or third-party inspection requirement, and the delivery address. We quote with the delivery time for that build."
+    },
+    {
+     "question": "What documents come with the valve?",
+     "answer": "Each valve is supplied with its material certificates to EN 10204 3.1, the pressure-test record and the general arrangement drawing. Third-party inspection, positive material identification and extra tests can be added when the order specifies them."
+    },
+    {
+     "question": "Can you supply against a project specification or approved vendor list?",
+     "answer": "Yes. Send the specification with the enquiry and we will confirm compliance line by line, list any deviations, and state the documentation, testing and inspection the order will carry before you place it."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Standards",
+     "label": "Design standard",
+     "value": "API 520, API 526, ASME VIII, ISO 4126-1",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "design_standard"
+    },
+    {
+     "group": "Range",
+     "label": "Size range",
+     "value": "1/2\" to 20\" (DN15 to DN500)",
+     "unit": null,
+     "position": 1,
+     "isFilterable": false,
+     "templateKey": "size_range"
+    },
+    {
+     "group": "Range",
+     "label": "Pressure class",
+     "value": "ASME Class 150 to 2500 (PN10 to PN420)",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "pressure_class"
+    },
+    {
+     "group": "Materials",
+     "label": "Body material",
+     "value": "Carbon steel, alloy steel, stainless steel, duplex, nickel alloys",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "body_material"
+    },
+    {
+     "group": "Construction",
+     "label": "End connections",
+     "value": "Flanged; threaded, socket-weld or butt-weld on request",
+     "unit": null,
+     "position": 4,
+     "isFilterable": true,
+     "templateKey": "end_connection"
+    },
+    {
+     "group": "Construction",
+     "label": "Operation",
+     "value": "Self-acting, spring loaded",
+     "unit": null,
+     "position": 5,
+     "isFilterable": true,
+     "templateKey": "operation"
+    },
+    {
+     "group": "Identification",
+     "label": "Valve type",
+     "value": "Safety relief valve, packed lever",
+     "unit": null,
+     "position": 6,
+     "isFilterable": true,
+     "templateKey": "valve_type"
+    },
+    {
+     "group": "Identification",
+     "label": "Construction",
+     "value": "Closed bonnet with packed lifting lever",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": "construction"
+    },
+    {
+     "group": "Range",
+     "label": "Temperature range",
+     "value": "By body material",
+     "unit": null,
+     "position": 8,
+     "isFilterable": false,
+     "templateKey": "temperature"
+    },
+    {
+     "group": "Standards",
+     "label": "Face-to-face / end-to-end",
+     "value": "API 526 centre-to-face",
+     "unit": null,
+     "position": 9,
+     "isFilterable": false,
+     "templateKey": "face_to_face"
+    },
+    {
+     "group": "Application",
+     "label": "Typical service",
+     "value": "Process fluids where cap leakage is unacceptable",
+     "unit": null,
+     "position": 10,
+     "isFilterable": false,
+     "templateKey": "service"
+    },
+    {
+     "group": "Supply",
+     "label": "Supply",
+     "value": "Built to order and supplied from Dubai with material certificates and the test record",
+     "unit": null,
+     "position": 11,
+     "isFilterable": false,
+     "templateKey": "supply"
+    },
+    {
+     "group": "Standards",
+     "label": "Pressure testing",
+     "value": "Set-pressure and seat-tightness tests on the bench, shell test to API 527 / ASME requirements",
+     "unit": null,
+     "position": 12,
+     "isFilterable": false,
+     "templateKey": "testing"
+    }
+   ],
+   "searchAliases": [
+    "safety relief valve with lever",
+    "safety relief valve with packed lever",
+    "safety relief valve, packed lever",
+    "api 520",
+    "api 526",
+    "asme viii",
+    "iso 4126-1"
+   ],
+   "images": [
+    {
+     "file": "IH-SR-PLV-01.jpg",
+     "alt": "White safety relief valve with packed lifting lever on the cap and flanged inlet and outlet",
+     "caption": "Supplier product photo (2026-10-21), maker branding and watermark removed by AI edit; representative of the range"
+    }
+   ],
+   "variants": [],
+   "crossReferences": []
+  },
+  {
+   "sku": "IH-SR-OLV",
+   "slug": "safety-relief-valve-open-lever-steam",
+   "title": "Safety Relief Valve with Open Lever, Steam and Air",
+   "category": "safety-relief-valves",
+   "focusKeyword": "open lever safety valve",
+   "descriptionShort": "Open-lever, open-bonnet safety relief valves for steam, air and fluids that can safely discharge: 1/2\" to 20\", Class 150 to 2500, manual test lift above 75 % of set pressure.",
+   "descriptionLong": "<p>The lever arrangement that many steam and boiler codes require, on an open bonnet that keeps the spring cool and lets the operator see it. The valve can be lifted by hand above 75 % of set pressure; because the cap is not sealed, it is for steam, air and other fluids that can be released safely.</p><p>A safety relief valve opens automatically when pressure reaches its set point and closes again once it falls, protecting a vessel, line or tank from bursting. It is the last safeguard after the control system, so it is sized to the worst relieving case, set and tested on the bench, and sealed against tampering.</p><h3>Construction</h3><ul><li>Open bonnet: spring cooled and visible</li><li>Open lifting lever</li><li>Full-lift disc with adjusting ring</li><li>API 526 dimensions</li></ul><h3>Sizes and ratings</h3><p>Published range: 1/2\" to 20\" (DN15 to DN500), ASME Class 150 to 2500 (PN10 to PN420), in carbon steel, alloy steel, stainless steel, duplex, nickel alloys. End connections: Flanged; threaded, socket-weld or butt-weld on request. Operation: self-acting, spring loaded.</p><p>Each valve is sized to the relieving case; the data sheet and general arrangement drawing come with the quotation.</p><h3>Testing and documents</h3><p>Set-pressure and seat-tightness tests on the bench, shell test to API 527 / ASME requirements, with the material certificates and the pressure-test record supplied with the valve. Third-party inspection and extra tests are added when the order specifies them.</p><h3>Supply</h3><p>Open-lever relief valves are supplied from Dubai to projects, plants and maintenance teams across the GCC, the wider Middle East and Africa. Most are built to the order specification, so delivery depends on size, class, material and operator; standard carbon-steel sizes move fastest. We review the data sheet before quoting and flag anything that needs clarifying, such as a missing pipe schedule or an operator torque that has not been sized.</p><h3>Related valves</h3><p>Other safety and relief valves in the range, for comparison when the duty is not settled yet: <a href=\"/p/low-lift-safety-relief-valve-liquid\">Low-Lift Safety Relief Valve, DN15 to DN200</a>, <a href=\"/p/high-performance-steam-safety-valve-asme-i\">High-Performance Steam Safety Valve, ASME Section I</a>, <a href=\"/p/jacketed-safety-relief-valve\">Jacketed Safety Relief Valve, Bellows Type</a>, <a href=\"/p/pilot-operated-safety-relief-valve\">Pilot-Operated Safety Relief Valve, API 526</a>.</p>",
+   "seoTitle": "Safety Relief Valve with Open Lever, Steam and Air",
+   "seoDescription": "Open-lever, open-bonnet safety relief valves for steam, air and fluids that can safely discharge: 1/2\" to 20\", Class 150 to 2500, manual test lift above.",
+   "faqs": [
+    {
+     "question": "Can it be used on toxic or flammable fluids?",
+     "answer": "No. The cap and bonnet are open; use a packed-lever or closed-bonnet valve."
+    },
+    {
+     "question": "Why an open bonnet on steam?",
+     "answer": "It keeps the spring cooler, so the spring rate and set pressure stay stable at steam temperatures."
+    },
+    {
+     "question": "What do I need to send for a quotation?",
+     "answer": "The valve data sheet if you have one; otherwise the size, pressure class, body and trim material, end connection (raised face, ring joint or butt-weld with the pipe schedule), operator, design temperature and the service fluid. Add any project specification, vendor list or third-party inspection requirement, and the delivery address. We quote with the delivery time for that build."
+    },
+    {
+     "question": "What documents come with the valve?",
+     "answer": "Each valve is supplied with its material certificates to EN 10204 3.1, the pressure-test record and the general arrangement drawing. Third-party inspection, positive material identification and extra tests can be added when the order specifies them."
+    },
+    {
+     "question": "Can you supply against a project specification or approved vendor list?",
+     "answer": "Yes. Send the specification with the enquiry and we will confirm compliance line by line, list any deviations, and state the documentation, testing and inspection the order will carry before you place it."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Standards",
+     "label": "Design standard",
+     "value": "API 520, API 526, ASME VIII, ISO 4126-1",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "design_standard"
+    },
+    {
+     "group": "Range",
+     "label": "Size range",
+     "value": "1/2\" to 20\" (DN15 to DN500)",
+     "unit": null,
+     "position": 1,
+     "isFilterable": false,
+     "templateKey": "size_range"
+    },
+    {
+     "group": "Range",
+     "label": "Pressure class",
+     "value": "ASME Class 150 to 2500 (PN10 to PN420)",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "pressure_class"
+    },
+    {
+     "group": "Materials",
+     "label": "Body material",
+     "value": "Carbon steel, alloy steel, stainless steel, duplex, nickel alloys",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "body_material"
+    },
+    {
+     "group": "Construction",
+     "label": "End connections",
+     "value": "Flanged; threaded, socket-weld or butt-weld on request",
+     "unit": null,
+     "position": 4,
+     "isFilterable": true,
+     "templateKey": "end_connection"
+    },
+    {
+     "group": "Construction",
+     "label": "Operation",
+     "value": "Self-acting, spring loaded",
+     "unit": null,
+     "position": 5,
+     "isFilterable": true,
+     "templateKey": "operation"
+    },
+    {
+     "group": "Identification",
+     "label": "Valve type",
+     "value": "Safety relief valve, open lever",
+     "unit": null,
+     "position": 6,
+     "isFilterable": true,
+     "templateKey": "valve_type"
+    },
+    {
+     "group": "Identification",
+     "label": "Construction",
+     "value": "Open bonnet with open lifting lever",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": "construction"
+    },
+    {
+     "group": "Range",
+     "label": "Temperature range",
+     "value": "By body material",
+     "unit": null,
+     "position": 8,
+     "isFilterable": false,
+     "templateKey": "temperature"
+    },
+    {
+     "group": "Standards",
+     "label": "Face-to-face / end-to-end",
+     "value": "API 526 centre-to-face",
+     "unit": null,
+     "position": 9,
+     "isFilterable": false,
+     "templateKey": "face_to_face"
+    },
+    {
+     "group": "Application",
+     "label": "Typical service",
+     "value": "Steam, air and safely dischargeable fluids",
+     "unit": null,
+     "position": 10,
+     "isFilterable": false,
+     "templateKey": "service"
+    },
+    {
+     "group": "Supply",
+     "label": "Supply",
+     "value": "Built to order and supplied from Dubai with material certificates and the test record",
+     "unit": null,
+     "position": 11,
+     "isFilterable": false,
+     "templateKey": "supply"
+    },
+    {
+     "group": "Standards",
+     "label": "Pressure testing",
+     "value": "Set-pressure and seat-tightness tests on the bench, shell test to API 527 / ASME requirements",
+     "unit": null,
+     "position": 12,
+     "isFilterable": false,
+     "templateKey": "testing"
+    }
+   ],
+   "searchAliases": [
+    "open lever safety valve",
+    "safety relief valve with open lever, steam and air",
+    "safety relief valve, open lever",
+    "api 520",
+    "api 526",
+    "asme viii",
+    "iso 4126-1"
+   ],
+   "images": [
+    {
+     "file": "IH-SR-OLV-01.jpg",
+     "alt": "Red open-bonnet safety relief valve with exposed spring and open lifting lever",
+     "caption": "Supplier product photo (2026-10-21), maker branding and watermark removed by AI edit; representative of the range"
+    }
+   ],
+   "variants": [],
+   "crossReferences": []
+  },
+  {
+   "sku": "IH-SR-LLV",
+   "slug": "low-lift-safety-relief-valve-liquid",
+   "title": "Low-Lift Safety Relief Valve, DN15 to DN200",
+   "category": "safety-relief-valves",
+   "focusKeyword": "low lift safety valve",
+   "descriptionShort": "Low-lift (proportional) safety relief valves for liquid service: DN15 to DN200, PN10 to PN420, ISO 4126-1, opening in proportion to over-pressure to avoid surge.",
+   "descriptionLong": "<p>For liquids, where a full-lift valve would slam open and cause surge. The disc lifts only a little, in proportion to the over-pressure, so the discharge area follows the relief needed, pressure loss is small and the system is not shocked by a sudden opening.</p><p>A safety relief valve opens automatically when pressure reaches its set point and closes again once it falls, protecting a vessel, line or tank from bursting. It is the last safeguard after the control system, so it is sized to the worst relieving case, set and tested on the bench, and sealed against tampering.</p><h3>Construction</h3><ul><li>Low, proportional disc lift</li><li>Discharge area set by lift</li><li>Flanged, threaded, socket-weld or butt-weld</li><li>ISO 4126-1 design</li></ul><h3>Sizes and ratings</h3><p>Published range: DN15 to DN200, PN10 to PN420, in carbon steel, alloy steel, stainless steel, duplex, nickel alloys. End connections: Flanged, threaded, socket-weld, butt-weld. Operation: self-acting, spring loaded.</p><p>Each valve is sized to the relieving case; the data sheet and general arrangement drawing come with the quotation.</p><h3>Testing and documents</h3><p>Set-pressure and seat-tightness tests on the bench, shell test to API 527 / ASME requirements, with the material certificates and the pressure-test record supplied with the valve. Third-party inspection and extra tests are added when the order specifies them.</p><h3>Supply</h3><p>Low-lift relief valves are supplied from Dubai to projects, plants and maintenance teams across the GCC, the wider Middle East and Africa. Most are built to the order specification, so delivery depends on size, class, material and operator; standard carbon-steel sizes move fastest. We review the data sheet before quoting and flag anything that needs clarifying, such as a missing pipe schedule or an operator torque that has not been sized.</p><h3>Related valves</h3><p>Other safety and relief valves in the range, for comparison when the duty is not settled yet: <a href=\"/p/high-performance-steam-safety-valve-asme-i\">High-Performance Steam Safety Valve, ASME Section I</a>, <a href=\"/p/jacketed-safety-relief-valve\">Jacketed Safety Relief Valve, Bellows Type</a>, <a href=\"/p/pilot-operated-safety-relief-valve\">Pilot-Operated Safety Relief Valve, API 526</a>, <a href=\"/p/high-temperature-pilot-operated-safety-valve\">High-Temperature Pilot-Operated Safety Valve, Steam</a>.</p>",
+   "seoTitle": "Low-Lift Safety Relief Valve, DN15 to DN200",
+   "seoDescription": "Low-lift (proportional) safety relief valves for liquid service: DN15 to DN200, PN10 to PN420, ISO 4126-1, opening in proportion to over-pressure to avoid.",
+   "faqs": [
+    {
+     "question": "Why not a full-lift valve on liquid?",
+     "answer": "A full-lift valve opening on incompressible liquid causes a pressure surge and can chatter. A low-lift valve opens gradually."
+    },
+    {
+     "question": "What sizes are available?",
+     "answer": "DN15 to DN200, PN10 to PN420, as published."
+    },
+    {
+     "question": "What do I need to send for a quotation?",
+     "answer": "The valve data sheet if you have one; otherwise the size, pressure class, body and trim material, end connection (raised face, ring joint or butt-weld with the pipe schedule), operator, design temperature and the service fluid. Add any project specification, vendor list or third-party inspection requirement, and the delivery address. We quote with the delivery time for that build."
+    },
+    {
+     "question": "What documents come with the valve?",
+     "answer": "Each valve is supplied with its material certificates to EN 10204 3.1, the pressure-test record and the general arrangement drawing. Third-party inspection, positive material identification and extra tests can be added when the order specifies them."
+    },
+    {
+     "question": "Can you supply against a project specification or approved vendor list?",
+     "answer": "Yes. Send the specification with the enquiry and we will confirm compliance line by line, list any deviations, and state the documentation, testing and inspection the order will carry before you place it."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Valve type",
+     "value": "Safety relief valve, low lift",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "valve_type"
+    },
+    {
+     "group": "Identification",
+     "label": "Construction",
+     "value": "Proportional low-lift disc",
+     "unit": null,
+     "position": 1,
+     "isFilterable": false,
+     "templateKey": "construction"
+    },
+    {
+     "group": "Standards",
+     "label": "Design standard",
+     "value": "ISO 4126-1",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "design_standard"
+    },
+    {
+     "group": "Range",
+     "label": "Size range",
+     "value": "DN15 to DN200",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "size_range"
+    },
+    {
+     "group": "Range",
+     "label": "Pressure class",
+     "value": "PN10 to PN420",
+     "unit": null,
+     "position": 4,
+     "isFilterable": true,
+     "templateKey": "pressure_class"
+    },
+    {
+     "group": "Materials",
+     "label": "Body material",
+     "value": "Carbon steel, alloy steel, stainless steel, duplex, nickel alloys",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "body_material"
+    },
+    {
+     "group": "Construction",
+     "label": "End connections",
+     "value": "Flanged, threaded, socket-weld, butt-weld",
+     "unit": null,
+     "position": 6,
+     "isFilterable": true,
+     "templateKey": "end_connection"
+    },
+    {
+     "group": "Construction",
+     "label": "Operation",
+     "value": "Self-acting, spring loaded",
+     "unit": null,
+     "position": 7,
+     "isFilterable": true,
+     "templateKey": "operation"
+    },
+    {
+     "group": "Application",
+     "label": "Typical service",
+     "value": "Liquid over-pressure protection",
+     "unit": null,
+     "position": 8,
+     "isFilterable": false,
+     "templateKey": "service"
+    },
+    {
+     "group": "Supply",
+     "label": "Supply",
+     "value": "Built to order and supplied from Dubai with material certificates and the test record",
+     "unit": null,
+     "position": 9,
+     "isFilterable": false,
+     "templateKey": "supply"
+    },
+    {
+     "group": "Standards",
+     "label": "Pressure testing",
+     "value": "Set-pressure and seat-tightness tests on the bench, shell test to API 527 / ASME requirements",
+     "unit": null,
+     "position": 10,
+     "isFilterable": false,
+     "templateKey": "testing"
+    }
+   ],
+   "searchAliases": [
+    "low lift safety valve",
+    "low-lift safety relief valve, dn15 to dn200",
+    "safety relief valve, low lift",
+    "iso 4126-1"
+   ],
+   "images": [
+    {
+     "file": "IH-SR-LLV-01.jpg",
+     "alt": "Red low-lift safety relief valve with flanged angle body and closed bonnet",
+     "caption": "Supplier product photo (2026-10-21), maker branding and watermark removed by AI edit; representative of the range"
+    }
+   ],
+   "variants": [],
+   "crossReferences": []
+  },
+  {
+   "sku": "IH-SR-STM",
+   "slug": "high-performance-steam-safety-valve-asme-i",
+   "title": "High-Performance Steam Safety Valve, ASME Section I",
+   "category": "safety-relief-valves",
+   "focusKeyword": "steam safety valve",
+   "descriptionShort": "Steam safety valves to ASME Section I for boilers and high-temperature steam above 350 °C: open within 3 % over-pressure, reseat within 4 % blowdown, twin adjusting rings, extended bonnet.",
+   "descriptionLong": "<p>For boilers, superheaters and steam lines, where the code demands that the valve open within 3 % over-pressure and reseat within 4 % blowdown. Two adjusting rings tune the opening and reseating, and an extended bonnet keeps the spring clear of steam above 350 °C.</p><p>A safety relief valve opens automatically when pressure reaches its set point and closes again once it falls, protecting a vessel, line or tank from bursting. It is the last safeguard after the control system, so it is sized to the worst relieving case, set and tested on the bench, and sealed against tampering.</p><h3>Construction</h3><ul><li>Two adjusting rings for precise lift and blowdown</li><li>Extended bonnet shields the spring from high-temperature steam</li><li>Open yoke; lifting lever</li><li>ASME Section I capacity certification on request</li></ul><h3>Sizes and ratings</h3><p>Published range: 1/2\" to 20\" (DN15 to DN500), ASME Class 150 to 2500 (PN10 to PN420), in carbon steel, alloy steel, stainless steel, duplex, nickel alloys. End connections: Flanged; threaded, socket-weld or butt-weld on request. Operation: self-acting, spring loaded.</p><p>Each valve is sized to the relieving case; the data sheet and general arrangement drawing come with the quotation.</p><h3>Testing and documents</h3><p>Set-pressure and seat-tightness tests on the bench, shell test to API 527 / ASME requirements, with the material certificates and the pressure-test record supplied with the valve. Third-party inspection and extra tests are added when the order specifies them.</p><h3>Supply</h3><p>Steam safety valves are supplied from Dubai to projects, plants and maintenance teams across the GCC, the wider Middle East and Africa. Most are built to the order specification, so delivery depends on size, class, material and operator; standard carbon-steel sizes move fastest. We review the data sheet before quoting and flag anything that needs clarifying, such as a missing pipe schedule or an operator torque that has not been sized.</p><h3>Related valves</h3><p>Other safety and relief valves in the range, for comparison when the duty is not settled yet: <a href=\"/p/jacketed-safety-relief-valve\">Jacketed Safety Relief Valve, Bellows Type</a>, <a href=\"/p/pilot-operated-safety-relief-valve\">Pilot-Operated Safety Relief Valve, API 526</a>, <a href=\"/p/high-temperature-pilot-operated-safety-valve\">High-Temperature Pilot-Operated Safety Valve, Steam</a>, <a href=\"/p/thermal-relief-valve-threaded\">Thermal Relief Valve, Threaded, 1/2\" to 1-1/2\"</a>.</p>",
+   "seoTitle": "High-Performance Steam Safety Valve, ASME Section I",
+   "seoDescription": "Steam safety valves to ASME Section I for boilers and high-temperature steam above 350 °C: open within 3 % over-pressure, reseat within 4 % blowdown, twin.",
+   "faqs": [
+    {
+     "question": "What do 3 % and 4 % mean?",
+     "answer": "The valve reaches full lift within 3 % above set pressure and reseats within 4 % below it, as ASME Section I requires for boiler valves."
+    },
+    {
+     "question": "Where is it used?",
+     "answer": "On boiler drums, superheater outlets, reheaters and high-temperature steam headers."
+    },
+    {
+     "question": "What do I need to send for a quotation?",
+     "answer": "The valve data sheet if you have one; otherwise the size, pressure class, body and trim material, end connection (raised face, ring joint or butt-weld with the pipe schedule), operator, design temperature and the service fluid. Add any project specification, vendor list or third-party inspection requirement, and the delivery address. We quote with the delivery time for that build."
+    },
+    {
+     "question": "What documents come with the valve?",
+     "answer": "Each valve is supplied with its material certificates to EN 10204 3.1, the pressure-test record and the general arrangement drawing. Third-party inspection, positive material identification and extra tests can be added when the order specifies them."
+    },
+    {
+     "question": "Can you supply against a project specification or approved vendor list?",
+     "answer": "Yes. Send the specification with the enquiry and we will confirm compliance line by line, list any deviations, and state the documentation, testing and inspection the order will carry before you place it."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Standards",
+     "label": "Design standard",
+     "value": "API 520, API 526, ASME VIII, ISO 4126-1",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "design_standard"
+    },
+    {
+     "group": "Range",
+     "label": "Size range",
+     "value": "1/2\" to 20\" (DN15 to DN500)",
+     "unit": null,
+     "position": 1,
+     "isFilterable": false,
+     "templateKey": "size_range"
+    },
+    {
+     "group": "Range",
+     "label": "Pressure class",
+     "value": "ASME Class 150 to 2500 (PN10 to PN420)",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "pressure_class"
+    },
+    {
+     "group": "Materials",
+     "label": "Body material",
+     "value": "Carbon steel, alloy steel, stainless steel, duplex, nickel alloys",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "body_material"
+    },
+    {
+     "group": "Construction",
+     "label": "End connections",
+     "value": "Flanged; threaded, socket-weld or butt-weld on request",
+     "unit": null,
+     "position": 4,
+     "isFilterable": true,
+     "templateKey": "end_connection"
+    },
+    {
+     "group": "Construction",
+     "label": "Operation",
+     "value": "Self-acting, spring loaded",
+     "unit": null,
+     "position": 5,
+     "isFilterable": true,
+     "templateKey": "operation"
+    },
+    {
+     "group": "Identification",
+     "label": "Valve type",
+     "value": "Safety valve, steam, ASME Section I",
+     "unit": null,
+     "position": 6,
+     "isFilterable": true,
+     "templateKey": "valve_type"
+    },
+    {
+     "group": "Identification",
+     "label": "Construction",
+     "value": "Twin adjusting rings, extended bonnet, open yoke",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": "construction"
+    },
+    {
+     "group": "Range",
+     "label": "Temperature range",
+     "value": "Steam above 350 °C",
+     "unit": null,
+     "position": 8,
+     "isFilterable": false,
+     "templateKey": "temperature"
+    },
+    {
+     "group": "Application",
+     "label": "Typical service",
+     "value": "Boilers, superheaters and steam lines",
+     "unit": null,
+     "position": 9,
+     "isFilterable": false,
+     "templateKey": "service"
+    },
+    {
+     "group": "Supply",
+     "label": "Supply",
+     "value": "Built to order and supplied from Dubai with material certificates and the test record",
+     "unit": null,
+     "position": 10,
+     "isFilterable": false,
+     "templateKey": "supply"
+    },
+    {
+     "group": "Standards",
+     "label": "Pressure testing",
+     "value": "Set-pressure and seat-tightness tests on the bench, shell test to API 527 / ASME requirements",
+     "unit": null,
+     "position": 11,
+     "isFilterable": false,
+     "templateKey": "testing"
+    }
+   ],
+   "searchAliases": [
+    "steam safety valve",
+    "high-performance steam safety valve, asme section i",
+    "safety valve, steam, asme section i",
+    "api 520",
+    "api 526",
+    "asme viii",
+    "iso 4126-1"
+   ],
+   "images": [
+    {
+     "file": "IH-SR-STM-01.jpg",
+     "alt": "Red high-performance steam safety valve with open spring yoke, extended bonnet and flanged inlet",
+     "caption": "Supplier product photo (2026-10-21), maker branding and watermark removed by AI edit; representative of the range"
+    }
+   ],
+   "variants": [],
+   "crossReferences": []
+  },
+  {
+   "sku": "IH-SR-JSV",
+   "slug": "jacketed-safety-relief-valve",
+   "title": "Jacketed Safety Relief Valve, Bellows Type",
+   "category": "safety-relief-valves",
+   "focusKeyword": "jacketed safety valve",
+   "descriptionShort": "Steam- or hot-oil-jacketed safety relief valves with bellows: 1/2\" to 20\", Class 150 to 2500, keep solidifying fluids such as sulphur, bitumen and polymers liquid in the valve.",
+   "descriptionLong": "<p>A relief valve for fluids that set when they cool. A jacket over the whole body carries steam or hot oil so the fluid in the valve stays at line temperature and the valve can open when it must; steam purging can be added. A bellows protects the spring and cancels back pressure.</p><p>A safety relief valve opens automatically when pressure reaches its set point and closes again once it falls, protecting a vessel, line or tank from bursting. It is the last safeguard after the control system, so it is sized to the worst relieving case, set and tested on the bench, and sealed against tampering.</p><h3>Construction</h3><ul><li>Full body jacket for steam or thermal oil; purge connection on request</li><li>Bellows: back-pressure balance and spring protection</li><li>Flanged inlet and outlet</li><li>API 526-based dimensions</li></ul><h3>Sizes and ratings</h3><p>Published range: 1/2\" to 20\" (DN15 to DN500), ASME Class 150 to 2500 (PN10 to PN420), in carbon steel, alloy steel, stainless steel, duplex, nickel alloys. End connections: Flanged; threaded, socket-weld or butt-weld on request. Operation: self-acting, spring loaded.</p><p>Each valve is sized to the relieving case; the data sheet and general arrangement drawing come with the quotation.</p><h3>Testing and documents</h3><p>Set-pressure and seat-tightness tests on the bench, shell test to API 527 / ASME requirements, with the material certificates and the pressure-test record supplied with the valve. Third-party inspection and extra tests are added when the order specifies them.</p><h3>Supply</h3><p>Jacketed relief valves are supplied from Dubai to projects, plants and maintenance teams across the GCC, the wider Middle East and Africa. Most are built to the order specification, so delivery depends on size, class, material and operator; standard carbon-steel sizes move fastest. We review the data sheet before quoting and flag anything that needs clarifying, such as a missing pipe schedule or an operator torque that has not been sized.</p><h3>Related valves</h3><p>Other safety and relief valves in the range, for comparison when the duty is not settled yet: <a href=\"/p/pilot-operated-safety-relief-valve\">Pilot-Operated Safety Relief Valve, API 526</a>, <a href=\"/p/high-temperature-pilot-operated-safety-valve\">High-Temperature Pilot-Operated Safety Valve, Steam</a>, <a href=\"/p/thermal-relief-valve-threaded\">Thermal Relief Valve, Threaded, 1/2\" to 1-1/2\"</a>, <a href=\"/p/safety-valve-changeover-valve\">Changeover Valve for Twin Safety Valves, Mechanical Interlock</a>.</p>",
+   "seoTitle": "Jacketed Safety Relief Valve, Bellows Type",
+   "seoDescription": "Steam- or hot-oil-jacketed safety relief valves with bellows: 1/2\" to 20\", Class 150 to 2500, keep solidifying fluids such as sulphur, bitumen and.",
+   "faqs": [
+    {
+     "question": "What fluids need a jacketed relief valve?",
+     "answer": "Molten sulphur, bitumen, heavy fuel oil, waxes, resins and polymers: anything that would solidify in an unheated valve."
+    },
+    {
+     "question": "What jacket connections are fitted?",
+     "answer": "Sized to your heating medium; tell us steam or oil, its pressure and temperature."
+    },
+    {
+     "question": "What do I need to send for a quotation?",
+     "answer": "The valve data sheet if you have one; otherwise the size, pressure class, body and trim material, end connection (raised face, ring joint or butt-weld with the pipe schedule), operator, design temperature and the service fluid. Add any project specification, vendor list or third-party inspection requirement, and the delivery address. We quote with the delivery time for that build."
+    },
+    {
+     "question": "What documents come with the valve?",
+     "answer": "Each valve is supplied with its material certificates to EN 10204 3.1, the pressure-test record and the general arrangement drawing. Third-party inspection, positive material identification and extra tests can be added when the order specifies them."
+    },
+    {
+     "question": "Can you supply against a project specification or approved vendor list?",
+     "answer": "Yes. Send the specification with the enquiry and we will confirm compliance line by line, list any deviations, and state the documentation, testing and inspection the order will carry before you place it."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Standards",
+     "label": "Design standard",
+     "value": "API 520, API 526, ASME VIII, ISO 4126-1",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "design_standard"
+    },
+    {
+     "group": "Range",
+     "label": "Size range",
+     "value": "1/2\" to 20\" (DN15 to DN500)",
+     "unit": null,
+     "position": 1,
+     "isFilterable": false,
+     "templateKey": "size_range"
+    },
+    {
+     "group": "Range",
+     "label": "Pressure class",
+     "value": "ASME Class 150 to 2500 (PN10 to PN420)",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "pressure_class"
+    },
+    {
+     "group": "Materials",
+     "label": "Body material",
+     "value": "Carbon steel, alloy steel, stainless steel, duplex, nickel alloys",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "body_material"
+    },
+    {
+     "group": "Construction",
+     "label": "End connections",
+     "value": "Flanged; threaded, socket-weld or butt-weld on request",
+     "unit": null,
+     "position": 4,
+     "isFilterable": true,
+     "templateKey": "end_connection"
+    },
+    {
+     "group": "Construction",
+     "label": "Operation",
+     "value": "Self-acting, spring loaded",
+     "unit": null,
+     "position": 5,
+     "isFilterable": true,
+     "templateKey": "operation"
+    },
+    {
+     "group": "Identification",
+     "label": "Valve type",
+     "value": "Safety relief valve, jacketed, bellows",
+     "unit": null,
+     "position": 6,
+     "isFilterable": true,
+     "templateKey": "valve_type"
+    },
+    {
+     "group": "Identification",
+     "label": "Construction",
+     "value": "Full heating jacket, bellows",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": "construction"
+    },
+    {
+     "group": "Range",
+     "label": "Temperature range",
+     "value": "Line temperature, held by the jacket",
+     "unit": null,
+     "position": 8,
+     "isFilterable": false,
+     "templateKey": "temperature"
+    },
+    {
+     "group": "Application",
+     "label": "Typical service",
+     "value": "Sulphur, bitumen, heavy oil, polymer service",
+     "unit": null,
+     "position": 9,
+     "isFilterable": false,
+     "templateKey": "service"
+    },
+    {
+     "group": "Supply",
+     "label": "Supply",
+     "value": "Built to order and supplied from Dubai with material certificates and the test record",
+     "unit": null,
+     "position": 10,
+     "isFilterable": false,
+     "templateKey": "supply"
+    },
+    {
+     "group": "Standards",
+     "label": "Pressure testing",
+     "value": "Set-pressure and seat-tightness tests on the bench, shell test to API 527 / ASME requirements",
+     "unit": null,
+     "position": 11,
+     "isFilterable": false,
+     "templateKey": "testing"
+    }
+   ],
+   "searchAliases": [
+    "jacketed safety valve",
+    "jacketed safety relief valve, bellows type",
+    "safety relief valve, jacketed, bellows",
+    "api 520",
+    "api 526",
+    "asme viii",
+    "iso 4126-1"
+   ],
+   "images": [
+    {
+     "file": "IH-SR-JSV-01.jpg",
+     "alt": "Blue steam-jacketed safety relief valve with flanged inlet, outlet and jacket connection",
+     "caption": "Supplier product photo (2026-10-21), maker branding and watermark removed by AI edit; representative of the range"
+    }
+   ],
+   "variants": [],
+   "crossReferences": []
+  },
+  {
+   "sku": "IH-SR-POV",
+   "slug": "pilot-operated-safety-relief-valve",
+   "title": "Pilot-Operated Safety Relief Valve, API 526",
+   "category": "safety-relief-valves",
+   "focusKeyword": "pilot operated safety relief valve",
+   "descriptionShort": "Pilot-operated safety relief valves to API 520 and 526: 1/2\" to 20\", Class 150 to 2500, tight seal close to set pressure, unaffected by back pressure, for large sizes and high set pressures.",
+   "descriptionLong": "<p>The process fluid itself holds the main valve shut, through a small pilot. As pressure rises towards set point the seating force increases, so the valve stays tight where a spring valve would simmer, and back pressure has no effect on set pressure. Suited to large valves, high set pressures and processes that run close to their relief setting.</p><p>A safety relief valve opens automatically when pressure reaches its set point and closes again once it falls, protecting a vessel, line or tank from bursting. It is the last safeguard after the control system, so it is sized to the worst relieving case, set and tested on the bench, and sealed against tampering.</p><h3>Construction</h3><ul><li>Pilot senses system pressure and controls the main disc</li><li>Seating force rises with pressure: tight near set</li><li>Unaffected by back pressure</li><li>Pop or modulating pilot; field test connection</li></ul><h3>Sizes and ratings</h3><p>Published range: 1/2\" to 20\" (DN15 to DN500), ASME Class 150 to 2500 (PN10 to PN420), in carbon steel, alloy steel, stainless steel, duplex, nickel alloys. End connections: Flanged; threaded, socket-weld or butt-weld on request. Operation: self-acting, spring loaded.</p><p>Each valve is sized to the relieving case; the data sheet and general arrangement drawing come with the quotation.</p><h3>Testing and documents</h3><p>Set-pressure and seat-tightness tests on the bench, shell test to API 527 / ASME requirements, with the material certificates and the pressure-test record supplied with the valve. Third-party inspection and extra tests are added when the order specifies them.</p><h3>Supply</h3><p>Pilot-operated relief valves are supplied from Dubai to projects, plants and maintenance teams across the GCC, the wider Middle East and Africa. Most are built to the order specification, so delivery depends on size, class, material and operator; standard carbon-steel sizes move fastest. We review the data sheet before quoting and flag anything that needs clarifying, such as a missing pipe schedule or an operator torque that has not been sized.</p><h3>Related valves</h3><p>Other safety and relief valves in the range, for comparison when the duty is not settled yet: <a href=\"/p/high-temperature-pilot-operated-safety-valve\">High-Temperature Pilot-Operated Safety Valve, Steam</a>, <a href=\"/p/thermal-relief-valve-threaded\">Thermal Relief Valve, Threaded, 1/2\" to 1-1/2\"</a>, <a href=\"/p/safety-valve-changeover-valve\">Changeover Valve for Twin Safety Valves, Mechanical Interlock</a>, <a href=\"/p/tank-pressure-relief-valve-api-2000\">Tank Pressure Relief Valve (Breather), API 2000</a>.</p>",
+   "seoTitle": "Pilot-Operated Safety Relief Valve, API 526",
+   "seoDescription": "Pilot-operated safety relief valves to API 520 and 526: 1/2\" to 20\", Class 150 to 2500, tight seal close to set pressure, unaffected by back pressure, for.",
+   "faqs": [
+    {
+     "question": "Pop or modulating pilot?",
+     "answer": "A pop pilot opens the main valve fully at set pressure; a modulating pilot opens it only as far as needed, which cuts product loss and noise."
+    },
+    {
+     "question": "Is a pilot valve suitable for dirty service?",
+     "answer": "Pilots need clean sensing; a filter or remote sensing point is fitted for dirty fluids."
+    },
+    {
+     "question": "What do I need to send for a quotation?",
+     "answer": "The valve data sheet if you have one; otherwise the size, pressure class, body and trim material, end connection (raised face, ring joint or butt-weld with the pipe schedule), operator, design temperature and the service fluid. Add any project specification, vendor list or third-party inspection requirement, and the delivery address. We quote with the delivery time for that build."
+    },
+    {
+     "question": "What documents come with the valve?",
+     "answer": "Each valve is supplied with its material certificates to EN 10204 3.1, the pressure-test record and the general arrangement drawing. Third-party inspection, positive material identification and extra tests can be added when the order specifies them."
+    },
+    {
+     "question": "Can you supply against a project specification or approved vendor list?",
+     "answer": "Yes. Send the specification with the enquiry and we will confirm compliance line by line, list any deviations, and state the documentation, testing and inspection the order will carry before you place it."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Standards",
+     "label": "Design standard",
+     "value": "API 520, API 526, ASME VIII, ISO 4126-1",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "design_standard"
+    },
+    {
+     "group": "Range",
+     "label": "Size range",
+     "value": "1/2\" to 20\" (DN15 to DN500)",
+     "unit": null,
+     "position": 1,
+     "isFilterable": false,
+     "templateKey": "size_range"
+    },
+    {
+     "group": "Range",
+     "label": "Pressure class",
+     "value": "ASME Class 150 to 2500 (PN10 to PN420)",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "pressure_class"
+    },
+    {
+     "group": "Materials",
+     "label": "Body material",
+     "value": "Carbon steel, alloy steel, stainless steel, duplex, nickel alloys",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "body_material"
+    },
+    {
+     "group": "Construction",
+     "label": "End connections",
+     "value": "Flanged; threaded, socket-weld or butt-weld on request",
+     "unit": null,
+     "position": 4,
+     "isFilterable": true,
+     "templateKey": "end_connection"
+    },
+    {
+     "group": "Construction",
+     "label": "Operation",
+     "value": "Self-acting, spring loaded",
+     "unit": null,
+     "position": 5,
+     "isFilterable": true,
+     "templateKey": "operation"
+    },
+    {
+     "group": "Identification",
+     "label": "Valve type",
+     "value": "Safety relief valve, pilot operated",
+     "unit": null,
+     "position": 6,
+     "isFilterable": true,
+     "templateKey": "valve_type"
+    },
+    {
+     "group": "Identification",
+     "label": "Construction",
+     "value": "Main valve with pop or modulating pilot",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": "construction"
+    },
+    {
+     "group": "Range",
+     "label": "Temperature range",
+     "value": "By body and seal material",
+     "unit": null,
+     "position": 8,
+     "isFilterable": false,
+     "templateKey": "temperature"
+    },
+    {
+     "group": "Standards",
+     "label": "Face-to-face / end-to-end",
+     "value": "API 526 centre-to-face",
+     "unit": null,
+     "position": 9,
+     "isFilterable": false,
+     "templateKey": "face_to_face"
+    },
+    {
+     "group": "Application",
+     "label": "Typical service",
+     "value": "Large-capacity, high set pressure, high back pressure",
+     "unit": null,
+     "position": 10,
+     "isFilterable": false,
+     "templateKey": "service"
+    },
+    {
+     "group": "Supply",
+     "label": "Supply",
+     "value": "Built to order and supplied from Dubai with material certificates and the test record",
+     "unit": null,
+     "position": 11,
+     "isFilterable": false,
+     "templateKey": "supply"
+    },
+    {
+     "group": "Standards",
+     "label": "Pressure testing",
+     "value": "Set-pressure and seat-tightness tests on the bench, shell test to API 527 / ASME requirements",
+     "unit": null,
+     "position": 12,
+     "isFilterable": false,
+     "templateKey": "testing"
+    }
+   ],
+   "searchAliases": [
+    "pilot operated safety relief valve",
+    "pilot-operated safety relief valve, api 526",
+    "safety relief valve, pilot operated",
+    "api 520",
+    "api 526",
+    "asme viii",
+    "iso 4126-1"
+   ],
+   "images": [
+    {
+     "file": "IH-SR-POV-01.jpg",
+     "alt": "Red pilot-operated safety relief valve with pilot and sensing line on a flanged main valve",
+     "caption": "Supplier product photo (2026-10-21), maker branding and watermark removed by AI edit; representative of the range"
+    }
+   ],
+   "variants": [],
+   "crossReferences": []
+  },
+  {
+   "sku": "IH-SR-PHT",
+   "slug": "high-temperature-pilot-operated-safety-valve",
+   "title": "High-Temperature Pilot-Operated Safety Valve, Steam",
+   "category": "safety-relief-valves",
+   "focusKeyword": "high temperature pilot operated safety valve",
+   "descriptionShort": "Pilot-operated safety valves for high-temperature, high-pressure steam: 1/2\" to 20\", Class 150 to 2500, metal-seated pilot and main valve, ISO 4126-4.",
+   "descriptionLong": "<p>Pilot-operated relief for steam at high temperature and pressure, where elastomer pilot seals cannot survive. Pilot and main valve are metal-seated, so the valve keeps the tight-near-set-pressure advantage of a pilot design in power and process steam service.</p><p>A safety relief valve opens automatically when pressure reaches its set point and closes again once it falls, protecting a vessel, line or tank from bursting. It is the last safeguard after the control system, so it is sized to the worst relieving case, set and tested on the bench, and sealed against tampering.</p><h3>Construction</h3><ul><li>Metal-seated main valve and pilot</li><li>External spring-loaded pilot with sensing line</li><li>High-temperature alloy materials</li><li>ISO 4126-4 design</li></ul><h3>Sizes and ratings</h3><p>Published range: 1/2\" to 20\" (DN15 to DN500), ASME Class 150 to 2500 (PN10 to PN420), in carbon steel, alloy steel, stainless steel, duplex, nickel alloys. End connections: Flanged; threaded, socket-weld or butt-weld on request. Operation: self-acting, spring loaded.</p><p>Each valve is sized to the relieving case; the data sheet and general arrangement drawing come with the quotation.</p><h3>Testing and documents</h3><p>Set-pressure and seat-tightness tests on the bench, shell test to API 527 / ASME requirements, with the material certificates and the pressure-test record supplied with the valve. Third-party inspection and extra tests are added when the order specifies them.</p><h3>Supply</h3><p>High-temperature pilot-operated valves are supplied from Dubai to projects, plants and maintenance teams across the GCC, the wider Middle East and Africa. Most are built to the order specification, so delivery depends on size, class, material and operator; standard carbon-steel sizes move fastest. We review the data sheet before quoting and flag anything that needs clarifying, such as a missing pipe schedule or an operator torque that has not been sized.</p><h3>Related valves</h3><p>Other safety and relief valves in the range, for comparison when the duty is not settled yet: <a href=\"/p/thermal-relief-valve-threaded\">Thermal Relief Valve, Threaded, 1/2\" to 1-1/2\"</a>, <a href=\"/p/safety-valve-changeover-valve\">Changeover Valve for Twin Safety Valves, Mechanical Interlock</a>, <a href=\"/p/tank-pressure-relief-valve-api-2000\">Tank Pressure Relief Valve (Breather), API 2000</a>, <a href=\"/p/tank-vacuum-relief-valve-api-2000\">Tank Vacuum Relief Valve, API 2000</a>.</p>",
+   "seoTitle": "High-Temperature Pilot-Operated Safety Valve, Steam",
+   "seoDescription": "Pilot-operated safety valves for high-temperature, high-pressure steam: 1/2\" to 20\", Class 150 to 2500, metal-seated pilot and main valve, ISO.",
+   "faqs": [
+    {
+     "question": "Why a pilot valve on steam?",
+     "answer": "Large steam valves with a spring become very tall and heavy; a pilot design is compact and seals tightly up to set pressure."
+    },
+    {
+     "question": "Which standards apply?",
+     "answer": "API 520 and 526 for sizing and dimensions; ISO 4126-4 for pilot-operated valves."
+    },
+    {
+     "question": "What do I need to send for a quotation?",
+     "answer": "The valve data sheet if you have one; otherwise the size, pressure class, body and trim material, end connection (raised face, ring joint or butt-weld with the pipe schedule), operator, design temperature and the service fluid. Add any project specification, vendor list or third-party inspection requirement, and the delivery address. We quote with the delivery time for that build."
+    },
+    {
+     "question": "What documents come with the valve?",
+     "answer": "Each valve is supplied with its material certificates to EN 10204 3.1, the pressure-test record and the general arrangement drawing. Third-party inspection, positive material identification and extra tests can be added when the order specifies them."
+    },
+    {
+     "question": "Can you supply against a project specification or approved vendor list?",
+     "answer": "Yes. Send the specification with the enquiry and we will confirm compliance line by line, list any deviations, and state the documentation, testing and inspection the order will carry before you place it."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Standards",
+     "label": "Design standard",
+     "value": "API 520, API 526, ASME VIII, ISO 4126-1",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "design_standard"
+    },
+    {
+     "group": "Range",
+     "label": "Size range",
+     "value": "1/2\" to 20\" (DN15 to DN500)",
+     "unit": null,
+     "position": 1,
+     "isFilterable": false,
+     "templateKey": "size_range"
+    },
+    {
+     "group": "Range",
+     "label": "Pressure class",
+     "value": "ASME Class 150 to 2500 (PN10 to PN420)",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "pressure_class"
+    },
+    {
+     "group": "Materials",
+     "label": "Body material",
+     "value": "Carbon steel, alloy steel, stainless steel, duplex, nickel alloys",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "body_material"
+    },
+    {
+     "group": "Construction",
+     "label": "End connections",
+     "value": "Flanged; threaded, socket-weld or butt-weld on request",
+     "unit": null,
+     "position": 4,
+     "isFilterable": true,
+     "templateKey": "end_connection"
+    },
+    {
+     "group": "Construction",
+     "label": "Operation",
+     "value": "Self-acting, spring loaded",
+     "unit": null,
+     "position": 5,
+     "isFilterable": true,
+     "templateKey": "operation"
+    },
+    {
+     "group": "Identification",
+     "label": "Valve type",
+     "value": "Safety valve, pilot operated, high temperature",
+     "unit": null,
+     "position": 6,
+     "isFilterable": true,
+     "templateKey": "valve_type"
+    },
+    {
+     "group": "Identification",
+     "label": "Construction",
+     "value": "Metal-seated main valve and pilot",
+     "unit": null,
+     "position": 7,
+     "isFilterable": false,
+     "templateKey": "construction"
+    },
+    {
+     "group": "Range",
+     "label": "Temperature range",
+     "value": "High-temperature steam",
+     "unit": null,
+     "position": 8,
+     "isFilterable": false,
+     "templateKey": "temperature"
+    },
+    {
+     "group": "Application",
+     "label": "Typical service",
+     "value": "Power and process steam",
+     "unit": null,
+     "position": 9,
+     "isFilterable": false,
+     "templateKey": "service"
+    },
+    {
+     "group": "Supply",
+     "label": "Supply",
+     "value": "Built to order and supplied from Dubai with material certificates and the test record",
+     "unit": null,
+     "position": 10,
+     "isFilterable": false,
+     "templateKey": "supply"
+    },
+    {
+     "group": "Standards",
+     "label": "Pressure testing",
+     "value": "Set-pressure and seat-tightness tests on the bench, shell test to API 527 / ASME requirements",
+     "unit": null,
+     "position": 11,
+     "isFilterable": false,
+     "templateKey": "testing"
+    }
+   ],
+   "searchAliases": [
+    "high temperature pilot operated safety valve",
+    "high-temperature pilot-operated safety valve, steam",
+    "safety valve, pilot operated, high temperature",
+    "api 520",
+    "api 526",
+    "asme viii",
+    "iso 4126-1"
+   ],
+   "images": [
+    {
+     "file": "IH-SR-PHT-01.jpg",
+     "alt": "Stainless high-temperature pilot-operated safety valve with external spring pilot and sensing tube",
+     "caption": "Supplier product photo (2026-10-21), maker branding and watermark removed by AI edit; representative of the range"
+    }
+   ],
+   "variants": [],
+   "crossReferences": []
+  },
+  {
+   "sku": "IH-SR-TRV",
+   "slug": "thermal-relief-valve-threaded",
+   "title": "Thermal Relief Valve, Threaded, 1/2\" to 1-1/2\"",
+   "category": "safety-relief-valves",
+   "focusKeyword": "thermal relief valve",
+   "descriptionShort": "Compact threaded thermal relief valves for liquid trapped in blocked-in pipes and vessels: 1/2\" to 1-1/2\" (DN15 to DN40), Class 150 to 2500 or PN10 to PN420.",
+   "descriptionLong": "<p>Small relief valves that let liquid trapped between closed valves expand as it warms, before the pressure damages the pipe or a gasket. A compact, often bonnetless body fits tight spaces, and the inlet can be threaded, union or welded to suit the line.</p><p>A safety relief valve opens automatically when pressure reaches its set point and closes again once it falls, protecting a vessel, line or tank from bursting. It is the last safeguard after the control system, so it is sized to the worst relieving case, set and tested on the bench, and sealed against tampering.</p><h3>Construction</h3><ul><li>Compact body; bonnetless in the metric series</li><li>Threaded ends; union or welded inlet on request</li><li>Spring-loaded, set to the line rating</li><li>Gas or liquid trim</li></ul><h3>Sizes and ratings</h3><p>Published range: 1/2\" to 1-1/2\" (DN15 to DN40), ASME Class 150 to 2500; PN10 to PN420, in carbon steel, alloy steel, stainless steel, duplex, nickel alloys. End connections: Threaded. Operation: self-acting, spring loaded.</p><p>Each valve is sized to the relieving case; the data sheet and general arrangement drawing come with the quotation.</p><h3>Testing and documents</h3><p>Set-pressure and seat-tightness tests on the bench, shell test to API 527 / ASME requirements, with the material certificates and the pressure-test record supplied with the valve. Third-party inspection and extra tests are added when the order specifies them.</p><h3>Supply</h3><p>Thermal relief valves are supplied from Dubai to projects, plants and maintenance teams across the GCC, the wider Middle East and Africa. Most are built to the order specification, so delivery depends on size, class, material and operator; standard carbon-steel sizes move fastest. We review the data sheet before quoting and flag anything that needs clarifying, such as a missing pipe schedule or an operator torque that has not been sized.</p><h3>Related valves</h3><p>Other safety and relief valves in the range, for comparison when the duty is not settled yet: <a href=\"/p/safety-valve-changeover-valve\">Changeover Valve for Twin Safety Valves, Mechanical Interlock</a>, <a href=\"/p/tank-pressure-relief-valve-api-2000\">Tank Pressure Relief Valve (Breather), API 2000</a>, <a href=\"/p/tank-vacuum-relief-valve-api-2000\">Tank Vacuum Relief Valve, API 2000</a>, <a href=\"/p/pressure-vacuum-relief-valve-api-2000\">Pressure/Vacuum Relief Valve (Conservation Vent), API 2000</a>.</p>",
+   "seoTitle": "Thermal Relief Valve, Threaded, 1/2\" to 1-1/2\"",
+   "seoDescription": "Compact threaded thermal relief valves for liquid trapped in blocked-in pipes and vessels: 1/2\" to 1-1/2\" (DN15 to DN40), Class 150 to 2500 or PN10 to.",
+   "faqs": [
+    {
+     "question": "Why does trapped liquid need relief?",
+     "answer": "A blocked-in liquid line heated by the sun or process can rise thousands of psi; a small thermal relief valve releases a few drops and protects the line."
+    },
+    {
+     "question": "Inch or metric?",
+     "answer": "Both: 1/2\" to 1-1/2\" in Class 150 to 2500, or DN15 to DN40 in PN10 to PN420."
+    },
+    {
+     "question": "What do I need to send for a quotation?",
+     "answer": "The valve data sheet if you have one; otherwise the size, pressure class, body and trim material, end connection (raised face, ring joint or butt-weld with the pipe schedule), operator, design temperature and the service fluid. Add any project specification, vendor list or third-party inspection requirement, and the delivery address. We quote with the delivery time for that build."
+    },
+    {
+     "question": "What documents come with the valve?",
+     "answer": "Each valve is supplied with its material certificates to EN 10204 3.1, the pressure-test record and the general arrangement drawing. Third-party inspection, positive material identification and extra tests can be added when the order specifies them."
+    },
+    {
+     "question": "Can you supply against a project specification or approved vendor list?",
+     "answer": "Yes. Send the specification with the enquiry and we will confirm compliance line by line, list any deviations, and state the documentation, testing and inspection the order will carry before you place it."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Valve type",
+     "value": "Thermal relief valve",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "valve_type"
+    },
+    {
+     "group": "Identification",
+     "label": "Construction",
+     "value": "Compact spring-loaded, threaded",
+     "unit": null,
+     "position": 1,
+     "isFilterable": false,
+     "templateKey": "construction"
+    },
+    {
+     "group": "Standards",
+     "label": "Design standard",
+     "value": "API 520, ISO 4126-1",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "design_standard"
+    },
+    {
+     "group": "Range",
+     "label": "Size range",
+     "value": "1/2\" to 1-1/2\" (DN15 to DN40)",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "size_range"
+    },
+    {
+     "group": "Range",
+     "label": "Pressure class",
+     "value": "ASME Class 150 to 2500; PN10 to PN420",
+     "unit": null,
+     "position": 4,
+     "isFilterable": true,
+     "templateKey": "pressure_class"
+    },
+    {
+     "group": "Materials",
+     "label": "Body material",
+     "value": "Carbon steel, alloy steel, stainless steel, duplex, nickel alloys",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "body_material"
+    },
+    {
+     "group": "Construction",
+     "label": "End connections",
+     "value": "Threaded",
+     "unit": null,
+     "position": 6,
+     "isFilterable": true,
+     "templateKey": "end_connection"
+    },
+    {
+     "group": "Construction",
+     "label": "Operation",
+     "value": "Self-acting, spring loaded",
+     "unit": null,
+     "position": 7,
+     "isFilterable": true,
+     "templateKey": "operation"
+    },
+    {
+     "group": "Application",
+     "label": "Typical service",
+     "value": "Blocked-in liquid lines and vessels",
+     "unit": null,
+     "position": 8,
+     "isFilterable": false,
+     "templateKey": "service"
+    },
+    {
+     "group": "Supply",
+     "label": "Supply",
+     "value": "Built to order and supplied from Dubai with material certificates and the test record",
+     "unit": null,
+     "position": 9,
+     "isFilterable": false,
+     "templateKey": "supply"
+    },
+    {
+     "group": "Standards",
+     "label": "Pressure testing",
+     "value": "Set-pressure and seat-tightness tests on the bench, shell test to API 527 / ASME requirements",
+     "unit": null,
+     "position": 10,
+     "isFilterable": false,
+     "templateKey": "testing"
+    }
+   ],
+   "searchAliases": [
+    "thermal relief valve",
+    "thermal relief valve, threaded, 1/2\" to 1-1/2\"",
+    "api 520",
+    "iso 4126-1"
+   ],
+   "images": [
+    {
+     "file": "IH-SR-TRV-01.jpg",
+     "alt": "Stainless threaded thermal relief valve with female inlet and bonnetless compact body",
+     "caption": "Supplier product photo (2026-10-21), maker branding and watermark removed by AI edit; representative of the range"
+    },
+    {
+     "file": "IH-SR-TRV-02.jpg",
+     "alt": "White compact threaded thermal relief valve with closed bonnet",
+     "caption": "Supplier product photo (2026-10-21), maker branding and watermark removed by AI edit; representative of the range"
+    }
+   ],
+   "variants": [],
+   "crossReferences": []
+  },
+  {
+   "sku": "IH-SR-CHG",
+   "slug": "safety-valve-changeover-valve",
+   "title": "Changeover Valve for Twin Safety Valves, Mechanical Interlock",
+   "category": "safety-relief-valves",
+   "focusKeyword": "safety valve changeover valve",
+   "descriptionShort": "Changeover valves for duty/standby pairs of safety valves: 1/2\" to 20\", Class 150 to 2500; one handwheel switches inlet and outlet together so one valve can be serviced while the other protects the plant.",
+   "descriptionLong": "<p>Two safety valves on a common manifold, one in service and one on standby. A changeover valve switches the protected system from one to the other, and in the interlocked version a chain links inlet and outlet changeovers so both move together from one handwheel; the plant is never left unprotected while a valve is removed for testing.</p><p>A safety relief valve opens automatically when pressure reaches its set point and closes again once it falls, protecting a vessel, line or tank from bursting. It is the last safeguard after the control system, so it is sized to the worst relieving case, set and tested on the bench, and sealed against tampering.</p><h3>Construction</h3><ul><li>Inlet changeover valve; outlet changeover with mechanical interlock</li><li>Single handwheel moves inlet and outlet together</li><li>Full relieving capacity through either valve</li><li>Flanged to the safety valves and the line</li></ul><h3>Sizes and ratings</h3><p>Published range: 1/2\" to 20\" (DN15 to DN500), ASME Class 150 to 2500; PN10 to PN420, in carbon steel, alloy steel, stainless steel, duplex, nickel alloys. End connections: Flanged. Operation: handwheel with chain interlock.</p><p>Each valve is sized to the relieving case; the data sheet and general arrangement drawing come with the quotation.</p><h3>Testing and documents</h3><p>Set-pressure and seat-tightness tests on the bench, shell test to API 527 / ASME requirements, with the material certificates and the pressure-test record supplied with the valve. Third-party inspection and extra tests are added when the order specifies them.</p><h3>Supply</h3><p>Changeover valves are supplied from Dubai to projects, plants and maintenance teams across the GCC, the wider Middle East and Africa. Most are built to the order specification, so delivery depends on size, class, material and operator; standard carbon-steel sizes move fastest. We review the data sheet before quoting and flag anything that needs clarifying, such as a missing pipe schedule or an operator torque that has not been sized.</p><h3>Related valves</h3><p>Other safety and relief valves in the range, for comparison when the duty is not settled yet: <a href=\"/p/tank-pressure-relief-valve-api-2000\">Tank Pressure Relief Valve (Breather), API 2000</a>, <a href=\"/p/tank-vacuum-relief-valve-api-2000\">Tank Vacuum Relief Valve, API 2000</a>, <a href=\"/p/pressure-vacuum-relief-valve-api-2000\">Pressure/Vacuum Relief Valve (Conservation Vent), API 2000</a>, <a href=\"/p/tank-emergency-vent-api-2000\">Tank Emergency Vent, 16\" to 24\", API 2000</a>.</p>",
+   "seoTitle": "Changeover Valve for Twin Safety Valves, Mechanical…",
+   "seoDescription": "Changeover valves for duty/standby pairs of safety valves: 1/2\" to 20\", Class 150 to 2500; one handwheel switches inlet and outlet together so one valve.",
+   "faqs": [
+    {
+     "question": "Why interlock inlet and outlet?",
+     "answer": "So a safety valve can never be isolated on its inlet while still open to a pressurised outlet header, and the system is never left without relief."
+    },
+    {
+     "question": "Does the changeover reduce relieving capacity?",
+     "answer": "It is sized so the pressure loss to the valve inlet stays within the 3 % API 520 limit."
+    },
+    {
+     "question": "What do I need to send for a quotation?",
+     "answer": "The valve data sheet if you have one; otherwise the size, pressure class, body and trim material, end connection (raised face, ring joint or butt-weld with the pipe schedule), operator, design temperature and the service fluid. Add any project specification, vendor list or third-party inspection requirement, and the delivery address. We quote with the delivery time for that build."
+    },
+    {
+     "question": "What documents come with the valve?",
+     "answer": "Each valve is supplied with its material certificates to EN 10204 3.1, the pressure-test record and the general arrangement drawing. Third-party inspection, positive material identification and extra tests can be added when the order specifies them."
+    },
+    {
+     "question": "Can you supply against a project specification or approved vendor list?",
+     "answer": "Yes. Send the specification with the enquiry and we will confirm compliance line by line, list any deviations, and state the documentation, testing and inspection the order will carry before you place it."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Valve type",
+     "value": "Changeover valve for safety valves",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "valve_type"
+    },
+    {
+     "group": "Identification",
+     "label": "Construction",
+     "value": "Twin-valve manifold, interlocked inlet and outlet changeovers",
+     "unit": null,
+     "position": 1,
+     "isFilterable": false,
+     "templateKey": "construction"
+    },
+    {
+     "group": "Standards",
+     "label": "Design standard",
+     "value": "API 520, ASME VIII",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "design_standard"
+    },
+    {
+     "group": "Range",
+     "label": "Size range",
+     "value": "1/2\" to 20\" (DN15 to DN500)",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "size_range"
+    },
+    {
+     "group": "Range",
+     "label": "Pressure class",
+     "value": "ASME Class 150 to 2500; PN10 to PN420",
+     "unit": null,
+     "position": 4,
+     "isFilterable": true,
+     "templateKey": "pressure_class"
+    },
+    {
+     "group": "Materials",
+     "label": "Body material",
+     "value": "Carbon steel, alloy steel, stainless steel, duplex, nickel alloys",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "body_material"
+    },
+    {
+     "group": "Construction",
+     "label": "End connections",
+     "value": "Flanged",
+     "unit": null,
+     "position": 6,
+     "isFilterable": true,
+     "templateKey": "end_connection"
+    },
+    {
+     "group": "Construction",
+     "label": "Operation",
+     "value": "Handwheel with chain interlock",
+     "unit": null,
+     "position": 7,
+     "isFilterable": true,
+     "templateKey": "operation"
+    },
+    {
+     "group": "Application",
+     "label": "Typical service",
+     "value": "Continuous plants needing on-line relief valve maintenance",
+     "unit": null,
+     "position": 8,
+     "isFilterable": false,
+     "templateKey": "service"
+    },
+    {
+     "group": "Supply",
+     "label": "Supply",
+     "value": "Built to order and supplied from Dubai with material certificates and the test record",
+     "unit": null,
+     "position": 9,
+     "isFilterable": false,
+     "templateKey": "supply"
+    },
+    {
+     "group": "Standards",
+     "label": "Pressure testing",
+     "value": "Set-pressure and seat-tightness tests on the bench, shell test to API 527 / ASME requirements",
+     "unit": null,
+     "position": 10,
+     "isFilterable": false,
+     "templateKey": "testing"
+    }
+   ],
+   "searchAliases": [
+    "safety valve changeover valve",
+    "changeover valve for twin safety valves, mechanical interlock",
+    "changeover valve for safety valves",
+    "api 520",
+    "asme viii"
+   ],
+   "images": [
+    {
+     "file": "IH-SR-CHG-01.jpg",
+     "alt": "Changeover valve assembly with two safety relief valves on a manifold and a handwheel",
+     "caption": "Supplier product photo (2026-10-21), maker branding and watermark removed by AI edit; representative of the range"
+    },
+    {
+     "file": "IH-SR-CHG-02.jpg",
+     "alt": "Mechanically interlocked changeover valve with two safety valves, chain drive and handwheels",
+     "caption": "Supplier product photo (2026-10-21), maker branding and watermark removed by AI edit; representative of the range"
+    }
+   ],
+   "variants": [],
+   "crossReferences": []
+  },
+  {
+   "sku": "IH-SR-TPV",
+   "slug": "tank-pressure-relief-valve-api-2000",
+   "title": "Tank Pressure Relief Valve (Breather), API 2000",
+   "category": "safety-relief-valves",
+   "focusKeyword": "tank pressure relief valve",
+   "descriptionShort": "Pressure relief (breather) valves for low-pressure storage tanks to API 2000: 3/4\" to 14\" (DN20 to DN350), set 0.2 to 103.4 kPa, -46 °C to 200 °C, field-replaceable disc and seat.",
+   "descriptionLong": "<p>Lets a storage tank breathe out as it fills or warms, opening at a set pressure of a few kilopascals and closing again, so the tank roof and shell are protected and vapour losses and emissions are kept down. Disc, seat and other parts can be changed on site.</p><p>Storage tanks are built for only a few kilopascals of pressure or vacuum. As a tank fills, empties, heats or cools it breathes, and a breather valve lets it do so within those limits while keeping vapour losses and emissions down. Vents are sized to API 2000 for normal and emergency breathing.</p><h3>Construction</h3><ul><li>Weight- or spring-loaded pallet</li><li>Field-replaceable disc and seat</li><li>Carbon steel, stainless or PTFE-lined body</li><li>Flanged to the tank nozzle</li></ul><h3>Sizes and ratings</h3><p>Published range: 3/4\" to 14\" (DN20 to DN350), Set pressure 0.2 to 103.4 kPa, in carbon steel, stainless steel, carbon steel with ptfe. End connections: Flanged. Operation: self-acting.</p><p>Each valve is sized to the relieving case; the data sheet and general arrangement drawing come with the quotation.</p><h3>Testing and documents</h3><p>Set-pressure and leakage tests to API 2000, with the material certificates and the pressure-test record supplied with the vent. Third-party inspection and extra tests are added when the order specifies them.</p><h3>Supply</h3><p>Tank pressure relief valves are supplied from Dubai to projects, plants and maintenance teams across the GCC, the wider Middle East and Africa. Most are built to the order specification, so delivery depends on size, class, material and operator; standard carbon-steel sizes move fastest. We review the data sheet before quoting and flag anything that needs clarifying, such as a missing pipe schedule or an operator torque that has not been sized.</p><h3>Related valves</h3><p>Other safety and relief valves in the range, for comparison when the duty is not settled yet: <a href=\"/p/tank-vacuum-relief-valve-api-2000\">Tank Vacuum Relief Valve, API 2000</a>, <a href=\"/p/pressure-vacuum-relief-valve-api-2000\">Pressure/Vacuum Relief Valve (Conservation Vent), API 2000</a>, <a href=\"/p/tank-emergency-vent-api-2000\">Tank Emergency Vent, 16\" to 24\", API 2000</a>, <a href=\"/p/nuclear-safety-valves-pressurizer-main-steam\">Nuclear Safety Valves: Pressurizer, Main Steam and Auxiliary System</a>.</p>",
+   "seoTitle": "Tank Pressure Relief Valve (Breather), API 2000",
+   "seoDescription": "Pressure relief (breather) valves for low-pressure storage tanks to API 2000: 3/4\" to 14\" (DN20 to DN350), set 0.2 to 103.4 kPa, -46 °C to 200 °C.",
+   "faqs": [
+    {
+     "question": "How is the vent sized?",
+     "answer": "From the maximum filling rate and thermal breathing per API 2000, at the tank's design pressure. Send the tank size, design pressure and pump rates."
+    },
+    {
+     "question": "Can it be fitted with a flame arrester?",
+     "answer": "Yes, where the tank holds flammable product and the code requires one."
+    },
+    {
+     "question": "What do I need to send for a quotation?",
+     "answer": "The valve data sheet if you have one; otherwise the size, pressure class, body and trim material, end connection (raised face, ring joint or butt-weld with the pipe schedule), operator, design temperature and the service fluid. Add any project specification, vendor list or third-party inspection requirement, and the delivery address. We quote with the delivery time for that build."
+    },
+    {
+     "question": "What documents come with the valve?",
+     "answer": "Each valve is supplied with its material certificates to EN 10204 3.1, the pressure-test record and the general arrangement drawing. Third-party inspection, positive material identification and extra tests can be added when the order specifies them."
+    },
+    {
+     "question": "Can you supply against a project specification or approved vendor list?",
+     "answer": "Yes. Send the specification with the enquiry and we will confirm compliance line by line, list any deviations, and state the documentation, testing and inspection the order will carry before you place it."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Valve type",
+     "value": "Pressure relief valve, tank breather",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "valve_type"
+    },
+    {
+     "group": "Identification",
+     "label": "Construction",
+     "value": "Weight- or spring-loaded pallet",
+     "unit": null,
+     "position": 1,
+     "isFilterable": false,
+     "templateKey": "construction"
+    },
+    {
+     "group": "Standards",
+     "label": "Design standard",
+     "value": "API 2000",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "design_standard"
+    },
+    {
+     "group": "Range",
+     "label": "Size range",
+     "value": "3/4\" to 14\" (DN20 to DN350)",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "size_range"
+    },
+    {
+     "group": "Range",
+     "label": "Pressure class",
+     "value": "Set pressure 0.2 to 103.4 kPa",
+     "unit": null,
+     "position": 4,
+     "isFilterable": true,
+     "templateKey": "pressure_class"
+    },
+    {
+     "group": "Range",
+     "label": "Temperature range",
+     "value": "-46 °C to 200 °C",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "temperature"
+    },
+    {
+     "group": "Materials",
+     "label": "Body material",
+     "value": "Carbon steel, stainless steel, carbon steel with PTFE",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "body_material"
+    },
+    {
+     "group": "Construction",
+     "label": "End connections",
+     "value": "Flanged",
+     "unit": null,
+     "position": 7,
+     "isFilterable": true,
+     "templateKey": "end_connection"
+    },
+    {
+     "group": "Construction",
+     "label": "Operation",
+     "value": "Self-acting",
+     "unit": null,
+     "position": 8,
+     "isFilterable": true,
+     "templateKey": "operation"
+    },
+    {
+     "group": "Standards",
+     "label": "Pressure testing",
+     "value": "Set-pressure and leakage tests to API 2000",
+     "unit": null,
+     "position": 9,
+     "isFilterable": false,
+     "templateKey": "testing"
+    },
+    {
+     "group": "Application",
+     "label": "Typical service",
+     "value": "Atmospheric and low-pressure storage tanks",
+     "unit": null,
+     "position": 10,
+     "isFilterable": false,
+     "templateKey": "service"
+    },
+    {
+     "group": "Supply",
+     "label": "Supply",
+     "value": "Built to order and supplied from Dubai with material certificates and the test record",
+     "unit": null,
+     "position": 11,
+     "isFilterable": false,
+     "templateKey": "supply"
+    }
+   ],
+   "searchAliases": [
+    "tank pressure relief valve",
+    "tank pressure relief valve (breather), api 2000",
+    "pressure relief valve, tank breather",
+    "api 2000"
+   ],
+   "images": [
+    {
+     "file": "IH-SR-TPV-01.jpg",
+     "alt": "Red flanged tank pressure relief valve with weather hood and side outlet",
+     "caption": "Supplier product photo (2026-10-21), maker branding and watermark removed by AI edit; representative of the range"
+    }
+   ],
+   "variants": [],
+   "crossReferences": []
+  },
+  {
+   "sku": "IH-SR-TVV",
+   "slug": "tank-vacuum-relief-valve-api-2000",
+   "title": "Tank Vacuum Relief Valve, API 2000",
+   "category": "safety-relief-valves",
+   "focusKeyword": "tank vacuum relief valve",
+   "descriptionShort": "Vacuum relief valves for storage tanks to API 2000: 3/4\" to 14\" (DN20 to DN350), set -0.2 to -103.4 kPa, open to admit air or blanket gas when a tank empties or cools.",
+   "descriptionLong": "<p>When a tank is pumped out or cools, its pressure falls below atmospheric, and a thin-walled tank can collapse. The vacuum relief valve opens at a small negative set pressure to let air or blanket gas in, protecting the tank if anything else in the venting system fails.</p><p>Storage tanks are built for only a few kilopascals of pressure or vacuum. As a tank fills, empties, heats or cools it breathes, and a breather valve lets it do so within those limits while keeping vapour losses and emissions down. Vents are sized to API 2000 for normal and emergency breathing.</p><h3>Construction</h3><ul><li>Vacuum pallet opens below set vacuum</li><li>Inlet hood or pipe-away to blanket gas</li><li>Field-replaceable parts</li><li>Flanged to the tank nozzle</li></ul><h3>Sizes and ratings</h3><p>Published range: 3/4\" to 14\" (DN20 to DN350), Set vacuum -0.2 to -103.4 kPa, in carbon steel, stainless steel, carbon steel with ptfe. End connections: Flanged. Operation: self-acting.</p><p>Each valve is sized to the relieving case; the data sheet and general arrangement drawing come with the quotation.</p><h3>Testing and documents</h3><p>Set-pressure and leakage tests to API 2000, with the material certificates and the pressure-test record supplied with the vent. Third-party inspection and extra tests are added when the order specifies them.</p><h3>Supply</h3><p>Tank vacuum relief valves are supplied from Dubai to projects, plants and maintenance teams across the GCC, the wider Middle East and Africa. Most are built to the order specification, so delivery depends on size, class, material and operator; standard carbon-steel sizes move fastest. We review the data sheet before quoting and flag anything that needs clarifying, such as a missing pipe schedule or an operator torque that has not been sized.</p><h3>Related valves</h3><p>Other safety and relief valves in the range, for comparison when the duty is not settled yet: <a href=\"/p/pressure-vacuum-relief-valve-api-2000\">Pressure/Vacuum Relief Valve (Conservation Vent), API 2000</a>, <a href=\"/p/tank-emergency-vent-api-2000\">Tank Emergency Vent, 16\" to 24\", API 2000</a>, <a href=\"/p/nuclear-safety-valves-pressurizer-main-steam\">Nuclear Safety Valves: Pressurizer, Main Steam and Auxiliary System</a>, <a href=\"/p/nuclear-msr-pilot-safety-valve-vacuum-relief\">Nuclear MSR Pilot-Operated Safety Valve and Vacuum Relief Valve</a>.</p>",
+   "seoTitle": "Tank Vacuum Relief Valve, API 2000",
+   "seoDescription": "Vacuum relief valves for storage tanks to API 2000: 3/4\" to 14\" (DN20 to DN350), set -0.2 to -103.4 kPa, open to admit air or blanket gas when a tank.",
+   "faqs": [
+    {
+     "question": "Can the vacuum valve draw in nitrogen instead of air?",
+     "answer": "Yes, with a piped inlet connected to the blanket gas supply."
+    },
+    {
+     "question": "Is a combined pressure/vacuum valve better?",
+     "answer": "Often: one nozzle and one valve. Separate valves suit tanks that need different sizes for pressure and vacuum."
+    },
+    {
+     "question": "What do I need to send for a quotation?",
+     "answer": "The valve data sheet if you have one; otherwise the size, pressure class, body and trim material, end connection (raised face, ring joint or butt-weld with the pipe schedule), operator, design temperature and the service fluid. Add any project specification, vendor list or third-party inspection requirement, and the delivery address. We quote with the delivery time for that build."
+    },
+    {
+     "question": "What documents come with the valve?",
+     "answer": "Each valve is supplied with its material certificates to EN 10204 3.1, the pressure-test record and the general arrangement drawing. Third-party inspection, positive material identification and extra tests can be added when the order specifies them."
+    },
+    {
+     "question": "Can you supply against a project specification or approved vendor list?",
+     "answer": "Yes. Send the specification with the enquiry and we will confirm compliance line by line, list any deviations, and state the documentation, testing and inspection the order will carry before you place it."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Valve type",
+     "value": "Vacuum relief valve, tank",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "valve_type"
+    },
+    {
+     "group": "Identification",
+     "label": "Construction",
+     "value": "Vacuum pallet with inlet hood",
+     "unit": null,
+     "position": 1,
+     "isFilterable": false,
+     "templateKey": "construction"
+    },
+    {
+     "group": "Standards",
+     "label": "Design standard",
+     "value": "API 2000",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "design_standard"
+    },
+    {
+     "group": "Range",
+     "label": "Size range",
+     "value": "3/4\" to 14\" (DN20 to DN350)",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "size_range"
+    },
+    {
+     "group": "Range",
+     "label": "Pressure class",
+     "value": "Set vacuum -0.2 to -103.4 kPa",
+     "unit": null,
+     "position": 4,
+     "isFilterable": true,
+     "templateKey": "pressure_class"
+    },
+    {
+     "group": "Range",
+     "label": "Temperature range",
+     "value": "-46 °C to 200 °C",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "temperature"
+    },
+    {
+     "group": "Materials",
+     "label": "Body material",
+     "value": "Carbon steel, stainless steel, carbon steel with PTFE",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "body_material"
+    },
+    {
+     "group": "Construction",
+     "label": "End connections",
+     "value": "Flanged",
+     "unit": null,
+     "position": 7,
+     "isFilterable": true,
+     "templateKey": "end_connection"
+    },
+    {
+     "group": "Construction",
+     "label": "Operation",
+     "value": "Self-acting",
+     "unit": null,
+     "position": 8,
+     "isFilterable": true,
+     "templateKey": "operation"
+    },
+    {
+     "group": "Standards",
+     "label": "Pressure testing",
+     "value": "Set-pressure and leakage tests to API 2000",
+     "unit": null,
+     "position": 9,
+     "isFilterable": false,
+     "templateKey": "testing"
+    },
+    {
+     "group": "Application",
+     "label": "Typical service",
+     "value": "Storage tanks, vacuum protection",
+     "unit": null,
+     "position": 10,
+     "isFilterable": false,
+     "templateKey": "service"
+    },
+    {
+     "group": "Supply",
+     "label": "Supply",
+     "value": "Built to order and supplied from Dubai with material certificates and the test record",
+     "unit": null,
+     "position": 11,
+     "isFilterable": false,
+     "templateKey": "supply"
+    }
+   ],
+   "searchAliases": [
+    "tank vacuum relief valve",
+    "tank vacuum relief valve, api 2000",
+    "vacuum relief valve, tank",
+    "api 2000"
+   ],
+   "images": [
+    {
+     "file": "IH-SR-TVV-01.jpg",
+     "alt": "Red flanged tank vacuum relief valve with offset inlet hood on a pipe tee body",
+     "caption": "Supplier product photo (2026-10-21), maker branding and watermark removed by AI edit; representative of the range"
+    }
+   ],
+   "variants": [],
+   "crossReferences": []
+  },
+  {
+   "sku": "IH-SR-PVV",
+   "slug": "pressure-vacuum-relief-valve-api-2000",
+   "title": "Pressure/Vacuum Relief Valve (Conservation Vent), API 2000",
+   "category": "safety-relief-valves",
+   "focusKeyword": "pressure vacuum relief valve",
+   "descriptionShort": "Combined pressure/vacuum (conservation) vents to API 2000: 3/4\" to 14\", set 0.2 to 103.4 kPa pressure and -0.2 to -82 kPa vacuum, soft seals for API 2000 leakage.",
+   "descriptionLong": "<p>One valve on one nozzle that protects a tank both ways: it breathes out when pressure rises and lets air or gas in when vacuum develops, and stays sealed in between to conserve product. Soft seals meet the API 2000 leakage requirement.</p><p>Storage tanks are built for only a few kilopascals of pressure or vacuum. As a tank fills, empties, heats or cools it breathes, and a breather valve lets it do so within those limits while keeping vapour losses and emissions down. Vents are sized to API 2000 for normal and emergency breathing.</p><h3>Construction</h3><ul><li>Separate pressure and vacuum pallets in one body</li><li>Soft seals for low leakage</li><li>Pipe-away outlet option for vapour recovery</li><li>Flanged to the tank nozzle</li></ul><h3>Sizes and ratings</h3><p>Published range: 3/4\" to 14\" (DN20 to DN350), 0.2 to 103.4 kPa pressure; -0.2 to -82 kPa vacuum, in carbon steel, stainless steel, carbon steel with ptfe. End connections: Flanged. Operation: self-acting.</p><p>Each valve is sized to the relieving case; the data sheet and general arrangement drawing come with the quotation.</p><h3>Testing and documents</h3><p>Set-pressure and leakage tests to API 2000, with the material certificates and the pressure-test record supplied with the vent. Third-party inspection and extra tests are added when the order specifies them.</p><h3>Supply</h3><p>Pressure/vacuum relief valves are supplied from Dubai to projects, plants and maintenance teams across the GCC, the wider Middle East and Africa. Most are built to the order specification, so delivery depends on size, class, material and operator; standard carbon-steel sizes move fastest. We review the data sheet before quoting and flag anything that needs clarifying, such as a missing pipe schedule or an operator torque that has not been sized.</p><h3>Related valves</h3><p>Other safety and relief valves in the range, for comparison when the duty is not settled yet: <a href=\"/p/tank-emergency-vent-api-2000\">Tank Emergency Vent, 16\" to 24\", API 2000</a>, <a href=\"/p/nuclear-safety-valves-pressurizer-main-steam\">Nuclear Safety Valves: Pressurizer, Main Steam and Auxiliary System</a>, <a href=\"/p/nuclear-msr-pilot-safety-valve-vacuum-relief\">Nuclear MSR Pilot-Operated Safety Valve and Vacuum Relief Valve</a>, <a href=\"/p/conventional-safety-relief-valve-api-526\">Conventional Safety Relief Valve, API 526, Orifice D to T</a>.</p>",
+   "seoTitle": "Pressure/Vacuum Relief Valve (Conservation Vent), API 2000",
+   "seoDescription": "Combined pressure/vacuum (conservation) vents to API 2000: 3/4\" to 14\", set 0.2 to 103.4 kPa pressure and -0.2 to -82 kPa vacuum, soft seals for API 2000.",
+   "faqs": [
+    {
+     "question": "Why \"conservation\" vent?",
+     "answer": "Because it keeps the tank closed between its pressure and vacuum settings, cutting evaporation losses of volatile product."
+    },
+    {
+     "question": "Can the outlet be piped to vapour recovery?",
+     "answer": "Yes, with a flanged pipe-away outlet."
+    },
+    {
+     "question": "What do I need to send for a quotation?",
+     "answer": "The valve data sheet if you have one; otherwise the size, pressure class, body and trim material, end connection (raised face, ring joint or butt-weld with the pipe schedule), operator, design temperature and the service fluid. Add any project specification, vendor list or third-party inspection requirement, and the delivery address. We quote with the delivery time for that build."
+    },
+    {
+     "question": "What documents come with the valve?",
+     "answer": "Each valve is supplied with its material certificates to EN 10204 3.1, the pressure-test record and the general arrangement drawing. Third-party inspection, positive material identification and extra tests can be added when the order specifies them."
+    },
+    {
+     "question": "Can you supply against a project specification or approved vendor list?",
+     "answer": "Yes. Send the specification with the enquiry and we will confirm compliance line by line, list any deviations, and state the documentation, testing and inspection the order will carry before you place it."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Valve type",
+     "value": "Pressure/vacuum relief valve, tank",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "valve_type"
+    },
+    {
+     "group": "Identification",
+     "label": "Construction",
+     "value": "Pressure and vacuum pallets, soft seals",
+     "unit": null,
+     "position": 1,
+     "isFilterable": false,
+     "templateKey": "construction"
+    },
+    {
+     "group": "Standards",
+     "label": "Design standard",
+     "value": "API 2000",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "design_standard"
+    },
+    {
+     "group": "Range",
+     "label": "Size range",
+     "value": "3/4\" to 14\" (DN20 to DN350)",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "size_range"
+    },
+    {
+     "group": "Range",
+     "label": "Pressure class",
+     "value": "0.2 to 103.4 kPa pressure; -0.2 to -82 kPa vacuum",
+     "unit": null,
+     "position": 4,
+     "isFilterable": true,
+     "templateKey": "pressure_class"
+    },
+    {
+     "group": "Range",
+     "label": "Temperature range",
+     "value": "-46 °C to 200 °C",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "temperature"
+    },
+    {
+     "group": "Materials",
+     "label": "Body material",
+     "value": "Carbon steel, stainless steel, carbon steel with PTFE",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "body_material"
+    },
+    {
+     "group": "Construction",
+     "label": "End connections",
+     "value": "Flanged",
+     "unit": null,
+     "position": 7,
+     "isFilterable": true,
+     "templateKey": "end_connection"
+    },
+    {
+     "group": "Construction",
+     "label": "Operation",
+     "value": "Self-acting",
+     "unit": null,
+     "position": 8,
+     "isFilterable": true,
+     "templateKey": "operation"
+    },
+    {
+     "group": "Standards",
+     "label": "Pressure testing",
+     "value": "Set-pressure and leakage tests to API 2000",
+     "unit": null,
+     "position": 9,
+     "isFilterable": false,
+     "templateKey": "testing"
+    },
+    {
+     "group": "Application",
+     "label": "Typical service",
+     "value": "Fixed-roof storage tanks, volatile products",
+     "unit": null,
+     "position": 10,
+     "isFilterable": false,
+     "templateKey": "service"
+    },
+    {
+     "group": "Supply",
+     "label": "Supply",
+     "value": "Built to order and supplied from Dubai with material certificates and the test record",
+     "unit": null,
+     "position": 11,
+     "isFilterable": false,
+     "templateKey": "supply"
+    }
+   ],
+   "searchAliases": [
+    "pressure vacuum relief valve",
+    "pressure/vacuum relief valve (conservation vent), api 2000",
+    "pressure/vacuum relief valve, tank",
+    "api 2000"
+   ],
+   "images": [
+    {
+     "file": "IH-SR-PVV-01.jpg",
+     "alt": "Red pressure/vacuum conservation vent with pressure hood and vacuum inlet on one flanged body",
+     "caption": "Supplier product photo (2026-10-21), maker branding and watermark removed by AI edit; representative of the range"
+    }
+   ],
+   "variants": [],
+   "crossReferences": []
+  },
+  {
+   "sku": "IH-SR-EMV",
+   "slug": "tank-emergency-vent-api-2000",
+   "title": "Tank Emergency Vent, 16\" to 24\", API 2000",
+   "category": "safety-relief-valves",
+   "focusKeyword": "tank emergency vent",
+   "descriptionShort": "Emergency vents for storage tanks to API 2000: 16\" to 24\", weight-loaded (spring-loaded above 6.9 kPa), relieve the vapour from an external fire so the tank does not rupture.",
+   "descriptionLong": "<p>A large hinged or lifting cover that relieves the vapour generated when a tank is exposed to fire, a flow far beyond what the breather valve can pass. Weight-loaded vents cover the usual low settings; above 6.9 kPa a spring-loaded design is used.</p><p>Storage tanks are built for only a few kilopascals of pressure or vacuum. As a tank fills, empties, heats or cools it breathes, and a breather valve lets it do so within those limits while keeping vapour losses and emissions down. Vents are sized to API 2000 for normal and emergency breathing.</p><h3>Construction</h3><ul><li>Weight-loaded cover; spring-loaded above 6.9 kPa</li><li>Vacuum relief option to -1.7 kPa</li><li>Large free area for fire-case relief</li><li>Flanged to the tank manway or nozzle</li></ul><h3>Sizes and ratings</h3><p>Published range: 16\" to 24\", Set 0.2 to 103.4 kPa; vacuum -0.2 to -1.7 kPa, in carbon steel, stainless steel, carbon steel with ptfe. End connections: Flanged. Operation: self-acting.</p><p>Each valve is sized to the relieving case; the data sheet and general arrangement drawing come with the quotation.</p><h3>Testing and documents</h3><p>Set-pressure and leakage tests to API 2000, with the material certificates and the pressure-test record supplied with the vent. Third-party inspection and extra tests are added when the order specifies them.</p><h3>Supply</h3><p>Emergency vents are supplied from Dubai to projects, plants and maintenance teams across the GCC, the wider Middle East and Africa. Most are built to the order specification, so delivery depends on size, class, material and operator; standard carbon-steel sizes move fastest. We review the data sheet before quoting and flag anything that needs clarifying, such as a missing pipe schedule or an operator torque that has not been sized.</p><h3>Related valves</h3><p>Other safety and relief valves in the range, for comparison when the duty is not settled yet: <a href=\"/p/nuclear-safety-valves-pressurizer-main-steam\">Nuclear Safety Valves: Pressurizer, Main Steam and Auxiliary System</a>, <a href=\"/p/nuclear-msr-pilot-safety-valve-vacuum-relief\">Nuclear MSR Pilot-Operated Safety Valve and Vacuum Relief Valve</a>, <a href=\"/p/conventional-safety-relief-valve-api-526\">Conventional Safety Relief Valve, API 526, Orifice D to T</a>, <a href=\"/p/balanced-bellows-safety-relief-valve\">Balanced Bellows Safety Relief Valve, API 526</a>.</p>",
+   "seoTitle": "Tank Emergency Vent, 16\" to 24\", API 2000",
+   "seoDescription": "Emergency vents for storage tanks to API 2000: 16\" to 24\", weight-loaded (spring-loaded above 6.9 kPa), relieve the vapour from an external fire so the.",
+   "faqs": [
+    {
+     "question": "Does every tank need an emergency vent?",
+     "answer": "API 2000 requires emergency venting for the fire case, unless the roof-to-shell joint is frangible. The emergency vent provides it without a weak seam."
+    },
+    {
+     "question": "Is it re-closing?",
+     "answer": "Yes, it reseats once the fire-case flow stops."
+    },
+    {
+     "question": "What do I need to send for a quotation?",
+     "answer": "The valve data sheet if you have one; otherwise the size, pressure class, body and trim material, end connection (raised face, ring joint or butt-weld with the pipe schedule), operator, design temperature and the service fluid. Add any project specification, vendor list or third-party inspection requirement, and the delivery address. We quote with the delivery time for that build."
+    },
+    {
+     "question": "What documents come with the valve?",
+     "answer": "Each valve is supplied with its material certificates to EN 10204 3.1, the pressure-test record and the general arrangement drawing. Third-party inspection, positive material identification and extra tests can be added when the order specifies them."
+    },
+    {
+     "question": "Can you supply against a project specification or approved vendor list?",
+     "answer": "Yes. Send the specification with the enquiry and we will confirm compliance line by line, list any deviations, and state the documentation, testing and inspection the order will carry before you place it."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Valve type",
+     "value": "Emergency vent, tank",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "valve_type"
+    },
+    {
+     "group": "Identification",
+     "label": "Construction",
+     "value": "Weight- or spring-loaded cover",
+     "unit": null,
+     "position": 1,
+     "isFilterable": false,
+     "templateKey": "construction"
+    },
+    {
+     "group": "Standards",
+     "label": "Design standard",
+     "value": "API 2000",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "design_standard"
+    },
+    {
+     "group": "Range",
+     "label": "Size range",
+     "value": "16\" to 24\"",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "size_range"
+    },
+    {
+     "group": "Range",
+     "label": "Pressure class",
+     "value": "Set 0.2 to 103.4 kPa; vacuum -0.2 to -1.7 kPa",
+     "unit": null,
+     "position": 4,
+     "isFilterable": true,
+     "templateKey": "pressure_class"
+    },
+    {
+     "group": "Range",
+     "label": "Temperature range",
+     "value": "-46 °C to 200 °C",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "temperature"
+    },
+    {
+     "group": "Materials",
+     "label": "Body material",
+     "value": "Carbon steel, stainless steel, carbon steel with PTFE",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "body_material"
+    },
+    {
+     "group": "Construction",
+     "label": "End connections",
+     "value": "Flanged",
+     "unit": null,
+     "position": 7,
+     "isFilterable": true,
+     "templateKey": "end_connection"
+    },
+    {
+     "group": "Construction",
+     "label": "Operation",
+     "value": "Self-acting",
+     "unit": null,
+     "position": 8,
+     "isFilterable": true,
+     "templateKey": "operation"
+    },
+    {
+     "group": "Standards",
+     "label": "Pressure testing",
+     "value": "Set-pressure and leakage tests to API 2000",
+     "unit": null,
+     "position": 9,
+     "isFilterable": false,
+     "templateKey": "testing"
+    },
+    {
+     "group": "Application",
+     "label": "Typical service",
+     "value": "Fire-case emergency venting of storage tanks",
+     "unit": null,
+     "position": 10,
+     "isFilterable": false,
+     "templateKey": "service"
+    },
+    {
+     "group": "Supply",
+     "label": "Supply",
+     "value": "Built to order and supplied from Dubai with material certificates and the test record",
+     "unit": null,
+     "position": 11,
+     "isFilterable": false,
+     "templateKey": "supply"
+    }
+   ],
+   "searchAliases": [
+    "tank emergency vent",
+    "tank emergency vent, 16\" to 24\", api 2000",
+    "emergency vent, tank",
+    "api 2000"
+   ],
+   "images": [
+    {
+     "file": "IH-SR-EMV-01.jpg",
+     "alt": "Red weight-loaded tank emergency vent cover on a large flanged base",
+     "caption": "Supplier product photo (2026-10-21), maker branding and watermark removed by AI edit; representative of the range"
+    }
+   ],
+   "variants": [],
+   "crossReferences": []
+  },
+  {
+   "sku": "IH-SR-NSV",
+   "slug": "nuclear-safety-valves-pressurizer-main-steam",
+   "title": "Nuclear Safety Valves: Pressurizer, Main Steam and Auxiliary System",
+   "category": "safety-relief-valves",
+   "focusKeyword": "nuclear safety valve",
+   "descriptionShort": "Spring-loaded nuclear safety valves for pressurizer, main steam, steam supply and auxiliary systems: up to 8\" (DN200), Class 2500 (PN420), set pressure up to 310 bar.",
+   "descriptionLong": "<p>Over-pressure protection for the reactor coolant loop, the main steam lines, the steam supply system and auxiliary systems of a nuclear power plant. The range covers compact pressurizer safety valves, main steam safety valves, high-pressure steam supply valves and forged auxiliary-system valves, all built under nuclear quality requirements.</p><p>Nuclear plant safety valves protect the reactor coolant, steam and auxiliary systems. They are designed and built under nuclear quality programmes, with materials, welding, inspection and testing documented to the plant's code requirements.</p><h3>Construction</h3><ul><li>Pressurizer safety valves: set to 180 bar, to 370 °C, flanged</li><li>Main steam safety valves: set to 250 bar, flanged or butt-weld</li><li>Steam supply and auxiliary valves: set to 310 bar, forged bodies, flanged, threaded, socket-weld or butt-weld</li><li>Carbon, alloy and stainless steel bodies</li></ul><h3>Sizes and ratings</h3><p>Published range: Up to 8\" (DN200), Up to Class 2500 (PN420); set to 310 bar, in carbon steel, alloy steel, stainless steel. End connections: Flanged, threaded, socket-weld, butt-weld. Operation: self-acting, spring loaded.</p><p>Each valve is sized to the relieving case; the data sheet and general arrangement drawing come with the quotation.</p><h3>Testing and documents</h3><p>Set-pressure and seat-tightness tests on the bench, shell test to API 527 / ASME requirements, with the material certificates and the pressure-test record supplied with the valve. Third-party inspection and extra tests are added when the order specifies them.</p><h3>Supply</h3><p>Nuclear safety valves are supplied from Dubai to projects, plants and maintenance teams across the GCC, the wider Middle East and Africa. Most are built to the order specification, so delivery depends on size, class, material and operator; standard carbon-steel sizes move fastest. We review the data sheet before quoting and flag anything that needs clarifying, such as a missing pipe schedule or an operator torque that has not been sized.</p><h3>Related valves</h3><p>Other safety and relief valves in the range, for comparison when the duty is not settled yet: <a href=\"/p/nuclear-msr-pilot-safety-valve-vacuum-relief\">Nuclear MSR Pilot-Operated Safety Valve and Vacuum Relief Valve</a>, <a href=\"/p/conventional-safety-relief-valve-api-526\">Conventional Safety Relief Valve, API 526, Orifice D to T</a>, <a href=\"/p/balanced-bellows-safety-relief-valve\">Balanced Bellows Safety Relief Valve, API 526</a>, <a href=\"/p/safety-relief-valve-packed-lever\">Safety Relief Valve with Packed Lever</a>.</p>",
+   "seoTitle": "Nuclear Safety Valves: Pressurizer, Main Steam and…",
+   "seoDescription": "Spring-loaded nuclear safety valves for pressurizer, main steam, steam supply and auxiliary systems: up to 8\" (DN200), Class 2500 (PN420), set pressure up.",
+   "faqs": [
+    {
+     "question": "Which code are they built to?",
+     "answer": "ASME Boiler and Pressure Vessel Code requirements as applied by the plant, with the nuclear quality programme and documentation the project specifies."
+    },
+    {
+     "question": "Are size tables published?",
+     "answer": "Nuclear valves are engineered per system; the data sheet and drawing are issued with the quotation."
+    },
+    {
+     "question": "What do I need to send for a quotation?",
+     "answer": "The valve data sheet if you have one; otherwise the size, pressure class, body and trim material, end connection (raised face, ring joint or butt-weld with the pipe schedule), operator, design temperature and the service fluid. Add any project specification, vendor list or third-party inspection requirement, and the delivery address. We quote with the delivery time for that build."
+    },
+    {
+     "question": "What documents come with the valve?",
+     "answer": "Each valve is supplied with its material certificates to EN 10204 3.1, the pressure-test record and the general arrangement drawing. Third-party inspection, positive material identification and extra tests can be added when the order specifies them."
+    },
+    {
+     "question": "Can you supply against a project specification or approved vendor list?",
+     "answer": "Yes. Send the specification with the enquiry and we will confirm compliance line by line, list any deviations, and state the documentation, testing and inspection the order will carry before you place it."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Valve type",
+     "value": "Safety valve, nuclear",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "valve_type"
+    },
+    {
+     "group": "Identification",
+     "label": "Construction",
+     "value": "Spring-loaded; cast or forged body",
+     "unit": null,
+     "position": 1,
+     "isFilterable": false,
+     "templateKey": "construction"
+    },
+    {
+     "group": "Standards",
+     "label": "Design standard",
+     "value": "ASME Boiler and Pressure Vessel Code",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "design_standard"
+    },
+    {
+     "group": "Range",
+     "label": "Size range",
+     "value": "Up to 8\" (DN200)",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "size_range"
+    },
+    {
+     "group": "Range",
+     "label": "Pressure class",
+     "value": "Up to Class 2500 (PN420); set to 310 bar",
+     "unit": null,
+     "position": 4,
+     "isFilterable": true,
+     "templateKey": "pressure_class"
+    },
+    {
+     "group": "Range",
+     "label": "Temperature range",
+     "value": "Up to 370 °C (pressurizer)",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "temperature"
+    },
+    {
+     "group": "Materials",
+     "label": "Body material",
+     "value": "Carbon steel, alloy steel, stainless steel",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "body_material"
+    },
+    {
+     "group": "Construction",
+     "label": "End connections",
+     "value": "Flanged, threaded, socket-weld, butt-weld",
+     "unit": null,
+     "position": 7,
+     "isFilterable": true,
+     "templateKey": "end_connection"
+    },
+    {
+     "group": "Construction",
+     "label": "Operation",
+     "value": "Self-acting, spring loaded",
+     "unit": null,
+     "position": 8,
+     "isFilterable": true,
+     "templateKey": "operation"
+    },
+    {
+     "group": "Application",
+     "label": "Typical service",
+     "value": "Pressurizer, main steam, steam supply and auxiliary systems",
+     "unit": null,
+     "position": 9,
+     "isFilterable": false,
+     "templateKey": "service"
+    },
+    {
+     "group": "Supply",
+     "label": "Supply",
+     "value": "Built to order and supplied from Dubai with material certificates and the test record",
+     "unit": null,
+     "position": 10,
+     "isFilterable": false,
+     "templateKey": "supply"
+    },
+    {
+     "group": "Standards",
+     "label": "Pressure testing",
+     "value": "Set-pressure and seat-tightness tests on the bench, shell test to API 527 / ASME requirements",
+     "unit": null,
+     "position": 11,
+     "isFilterable": false,
+     "templateKey": "testing"
+    }
+   ],
+   "searchAliases": [
+    "nuclear safety valve",
+    "nuclear safety valves: pressurizer, main steam and auxiliary system",
+    "safety valve, nuclear",
+    "asme boiler and pressure vessel code"
+   ],
+   "images": [
+    {
+     "file": "IH-SR-NSV-01.jpg",
+     "alt": "Stainless pressurizer safety valve with flanged angle body and tall spring housing",
+     "caption": "Supplier product photo (2026-10-21), maker branding and watermark removed by AI edit; representative of the range"
+    },
+    {
+     "file": "IH-SR-NSV-02.jpg",
+     "alt": "Dark blue main steam safety valve with exposed spring, side outlet and flanged inlet",
+     "caption": "Supplier product photo (2026-10-21), maker branding and watermark removed by AI edit; representative of the range"
+    },
+    {
+     "file": "IH-SR-NSV-03.jpg",
+     "alt": "Stainless forged auxiliary-system safety valve with flanged angle body",
+     "caption": "Supplier product photo (2026-10-21), maker branding and watermark removed by AI edit; representative of the range"
+    }
+   ],
+   "variants": [],
+   "crossReferences": []
+  },
+  {
+   "sku": "IH-SR-NPV",
+   "slug": "nuclear-msr-pilot-safety-valve-vacuum-relief",
+   "title": "Nuclear MSR Pilot-Operated Safety Valve and Vacuum Relief Valve",
+   "category": "safety-relief-valves",
+   "focusKeyword": "nuclear pilot operated safety valve",
+   "descriptionShort": "Large pilot-operated safety valves for moisture separator reheater (MSR) steam and vacuum relief valves for nuclear auxiliary systems: up to 20\" (DN500), Class 300 (PN63).",
+   "descriptionLong": "<p>Two large-bore valves for the conventional island and auxiliary systems of a nuclear plant. The pilot-operated safety valve protects the moisture separator reheater with high relieving capacity at set pressures up to 30 bar; the vacuum relief valve protects auxiliary systems against negative pressure, opening between -1 and 0 bar.</p><p>Nuclear plant safety valves protect the reactor coolant, steam and auxiliary systems. They are designed and built under nuclear quality programmes, with materials, welding, inspection and testing documented to the plant's code requirements.</p><h3>Construction</h3><ul><li>MSR pilot-operated safety valve: set to 30 bar, to 280 °C, flanged</li><li>Vacuum relief valve: set -1 to 0 bar, large diameter</li><li>Up to 20\" (DN500), Class 300 (PN63)</li><li>Carbon, alloy and stainless steel bodies</li></ul><h3>Sizes and ratings</h3><p>Published range: Up to 20\" (DN500), Up to Class 300 (PN63); set to 30 bar or -1 to 0 bar, in carbon steel, alloy steel, stainless steel. End connections: Flanged; threaded, socket-weld or butt-weld (vacuum relief). Operation: pilot operated; self-acting.</p><p>Each valve is sized to the relieving case; the data sheet and general arrangement drawing come with the quotation.</p><h3>Testing and documents</h3><p>Set-pressure and seat-tightness tests on the bench, shell test to API 527 / ASME requirements, with the material certificates and the pressure-test record supplied with the valve. Third-party inspection and extra tests are added when the order specifies them.</p><h3>Supply</h3><p>Nuclear MSR and vacuum relief valves are supplied from Dubai to projects, plants and maintenance teams across the GCC, the wider Middle East and Africa. Most are built to the order specification, so delivery depends on size, class, material and operator; standard carbon-steel sizes move fastest. We review the data sheet before quoting and flag anything that needs clarifying, such as a missing pipe schedule or an operator torque that has not been sized.</p><h3>Related valves</h3><p>Other safety and relief valves in the range, for comparison when the duty is not settled yet: <a href=\"/p/conventional-safety-relief-valve-api-526\">Conventional Safety Relief Valve, API 526, Orifice D to T</a>, <a href=\"/p/balanced-bellows-safety-relief-valve\">Balanced Bellows Safety Relief Valve, API 526</a>, <a href=\"/p/safety-relief-valve-packed-lever\">Safety Relief Valve with Packed Lever</a>, <a href=\"/p/safety-relief-valve-open-lever-steam\">Safety Relief Valve with Open Lever, Steam and Air</a>.</p>",
+   "seoTitle": "Nuclear MSR Pilot-Operated Safety Valve and Vacuum…",
+   "seoDescription": "Large pilot-operated safety valves for moisture separator reheater (MSR) steam and vacuum relief valves for nuclear auxiliary systems: up to 20\" (DN500).",
+   "faqs": [
+    {
+     "question": "Why pilot operation on MSR duty?",
+     "answer": "MSR valves are large and relieve a lot of steam at modest pressure; a pilot design gives that capacity in a compact valve with tight sealing near set pressure."
+    },
+    {
+     "question": "Are size tables published?",
+     "answer": "Both are engineered per system; the data sheet and drawing are issued with the quotation."
+    },
+    {
+     "question": "What do I need to send for a quotation?",
+     "answer": "The valve data sheet if you have one; otherwise the size, pressure class, body and trim material, end connection (raised face, ring joint or butt-weld with the pipe schedule), operator, design temperature and the service fluid. Add any project specification, vendor list or third-party inspection requirement, and the delivery address. We quote with the delivery time for that build."
+    },
+    {
+     "question": "What documents come with the valve?",
+     "answer": "Each valve is supplied with its material certificates to EN 10204 3.1, the pressure-test record and the general arrangement drawing. Third-party inspection, positive material identification and extra tests can be added when the order specifies them."
+    },
+    {
+     "question": "Can you supply against a project specification or approved vendor list?",
+     "answer": "Yes. Send the specification with the enquiry and we will confirm compliance line by line, list any deviations, and state the documentation, testing and inspection the order will carry before you place it."
+    }
+   ],
+   "specs": [
+    {
+     "group": "Identification",
+     "label": "Valve type",
+     "value": "Safety valve, nuclear MSR pilot operated; vacuum relief valve",
+     "unit": null,
+     "position": 0,
+     "isFilterable": true,
+     "templateKey": "valve_type"
+    },
+    {
+     "group": "Identification",
+     "label": "Construction",
+     "value": "Pilot-operated main valve; vacuum pallet valve",
+     "unit": null,
+     "position": 1,
+     "isFilterable": false,
+     "templateKey": "construction"
+    },
+    {
+     "group": "Standards",
+     "label": "Design standard",
+     "value": "ASME Boiler and Pressure Vessel Code",
+     "unit": null,
+     "position": 2,
+     "isFilterable": true,
+     "templateKey": "design_standard"
+    },
+    {
+     "group": "Range",
+     "label": "Size range",
+     "value": "Up to 20\" (DN500)",
+     "unit": null,
+     "position": 3,
+     "isFilterable": false,
+     "templateKey": "size_range"
+    },
+    {
+     "group": "Range",
+     "label": "Pressure class",
+     "value": "Up to Class 300 (PN63); set to 30 bar or -1 to 0 bar",
+     "unit": null,
+     "position": 4,
+     "isFilterable": true,
+     "templateKey": "pressure_class"
+    },
+    {
+     "group": "Range",
+     "label": "Temperature range",
+     "value": "Up to 280 °C",
+     "unit": null,
+     "position": 5,
+     "isFilterable": false,
+     "templateKey": "temperature"
+    },
+    {
+     "group": "Materials",
+     "label": "Body material",
+     "value": "Carbon steel, alloy steel, stainless steel",
+     "unit": null,
+     "position": 6,
+     "isFilterable": false,
+     "templateKey": "body_material"
+    },
+    {
+     "group": "Construction",
+     "label": "End connections",
+     "value": "Flanged; threaded, socket-weld or butt-weld (vacuum relief)",
+     "unit": null,
+     "position": 7,
+     "isFilterable": true,
+     "templateKey": "end_connection"
+    },
+    {
+     "group": "Construction",
+     "label": "Operation",
+     "value": "Pilot operated; self-acting",
+     "unit": null,
+     "position": 8,
+     "isFilterable": true,
+     "templateKey": "operation"
+    },
+    {
+     "group": "Application",
+     "label": "Typical service",
+     "value": "Moisture separator reheater, nuclear auxiliary systems",
+     "unit": null,
+     "position": 9,
+     "isFilterable": false,
+     "templateKey": "service"
+    },
+    {
+     "group": "Supply",
+     "label": "Supply",
+     "value": "Built to order and supplied from Dubai with material certificates and the test record",
+     "unit": null,
+     "position": 10,
+     "isFilterable": false,
+     "templateKey": "supply"
+    },
+    {
+     "group": "Standards",
+     "label": "Pressure testing",
+     "value": "Set-pressure and seat-tightness tests on the bench, shell test to API 527 / ASME requirements",
+     "unit": null,
+     "position": 11,
+     "isFilterable": false,
+     "templateKey": "testing"
+    }
+   ],
+   "searchAliases": [
+    "nuclear pilot operated safety valve",
+    "nuclear msr pilot-operated safety valve and vacuum relief valve",
+    "safety valve, nuclear msr pilot operated; vacuum relief valve",
+    "asme boiler and pressure vessel code"
+   ],
+   "images": [
+    {
+     "file": "IH-SR-NPV-01.jpg",
+     "alt": "Large grey pilot-operated safety valve body with bolted cover and flanged inlet for MSR service",
+     "caption": "Supplier product photo (2026-10-21), maker branding and watermark removed by AI edit; representative of the range"
+    },
+    {
+     "file": "IH-SR-NPV-02.jpg",
+     "alt": "Stainless vacuum relief valve with perforated cylindrical hood",
+     "caption": "Supplier product photo (2026-10-21), maker branding and watermark removed by AI edit; representative of the range"
+    }
+   ],
+   "variants": [],
+   "crossReferences": []
+  }
+ ],
+ "hold": []
+}

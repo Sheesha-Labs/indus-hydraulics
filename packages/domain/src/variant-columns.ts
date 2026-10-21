@@ -136,6 +136,9 @@ export type EquipmentTextKey =
  * `0.2-1cc/cycle` or `7.5LB/min`, a pressure range in psi and bar side by side — so they stay text and nothing is
  * converted. `systemType`, `lubricant` and `reservoir` are what a lubrication pump row carries and a fitting row
  * never does, so they (and `pressureRatio`, `container`) mark the table as `equipment`.
+ *
+ * `usedOn` is the spare-parts column: the pump, or pump version, the maker lists the part under. A spares table is
+ * equipment too — it has no dimension drawing to offer.
  */
 export type LubricationTextKey =
   | 'systemType'
@@ -148,6 +151,7 @@ export type LubricationTextKey =
   | 'monitoring'
   | 'pressureRatio'
   | 'container'
+  | 'usedOn'
 
 /**
  * Industrial valve tables: gate, globe, check, ball and butterfly.
@@ -609,10 +613,11 @@ export const VARIANT_TEXT_COLUMNS: readonly VariantTextColumn[] = [
   { key: 'maxPressure', label: 'Max pressure', help: 'Maximum outlet pressure as the maker publishes it, in psi and bar.' },
   { key: 'outletThread', label: 'Outlet', help: 'Outlet port thread, as published.' },
   { key: 'monitoring', label: 'Monitoring', help: 'Level switch, pressure switch, gauge or controller the part number includes, as published.' },
+  { key: 'usedOn', label: 'For', help: 'Pump, or pump version, the maker lists the spare part under.' },
 ]
 
-/** Text keys only a lubrication pump row carries — like EQUIPMENT_MARKERS, they make a table `equipment`. */
-const EQUIPMENT_TEXT_MARKERS: ReadonlySet<string> = new Set(['systemType', 'lubricant', 'reservoir', 'pressureRatio', 'container'])
+/** Text keys only a lubrication pump or pump-spares row carries — like EQUIPMENT_MARKERS, they make a table `equipment`. */
+const EQUIPMENT_TEXT_MARKERS: ReadonlySet<string> = new Set(['systemType', 'lubricant', 'reservoir', 'pressureRatio', 'container', 'usedOn'])
 
 const letter = (key: VariantColumnKey, label: string): VariantColumn => ({
   key,
