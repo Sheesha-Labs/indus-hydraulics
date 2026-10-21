@@ -1,4 +1,5 @@
 import type { BlogArticleSeed } from '../shared'
+import { stockList } from '../products'
 
 /**
  * Single vs double ferrule. Construction and make-up from Swagelok MS-01-140 / MS-13-151 and Parker CPI/A-LOK
@@ -89,6 +90,10 @@ const ARTICLE: BlogArticleSeed = {
         { question: 'Do single and double ferrule fittings use the same make-up turns?', answer: 'For the main makers, yes: 1-1/4 turns past finger-tight for 1/4" (6 mm) and larger, 3/4 turn for 1/16", 1/8" and 3/16" (2–4 mm).' },
         { question: 'Is a DIN 2353 fitting a single ferrule fitting?', answer: 'It is a single cutting-ring fitting, but a different, standardised hydraulic family (now ISO 8434-1) whose ring bites into the tube. It is not interchangeable with instrument single-ferrule fittings.' },
       ],
+    },
+    {
+      type: 'prose',
+      html: '<h3>What we list</h3><p>Every double- and single-ferrule 316 tube fitting in the range:</p>' + stockList(['double-ferrule-tube-fittings', 'single-ferrule-tube-fittings']),
     },
     {
       type: 'product_embed',

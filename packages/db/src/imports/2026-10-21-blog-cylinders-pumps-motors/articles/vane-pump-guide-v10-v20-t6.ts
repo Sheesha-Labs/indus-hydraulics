@@ -1,4 +1,5 @@
 import type { BlogArticleSeed } from '../shared'
+import { stockList } from '../products'
 
 /**
  * Vane pumps. Vickers V10/V20/V2010/V2020 ratings, ring table, model code, inlet limit, fluids and double-pump
@@ -131,6 +132,10 @@ const ARTICLE: BlogArticleSeed = {
         { question: 'What replaces a V20 when I need more pressure?', answer: 'A higher-pressure vane family such as the Parker T6 or T7 — the T7B we stock runs 290 bar continuous — or a piston pump. Flanges and shafts differ, so plan the mounting.' },
         { question: 'What oil temperature can a vane pump take?', answer: 'Vickers recommends about 49 °C and a maximum of 65 °C on petroleum oil for the V-series, with running viscosity between 13 and 54 cSt.' },
       ],
+    },
+    {
+      type: 'prose',
+      html: '<h3>What we list</h3><p>Every vane pump in the range:</p>' + stockList(['hydraulic-vane-pumps']),
     },
     {
       type: 'product_embed',

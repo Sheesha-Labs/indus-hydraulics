@@ -1,4 +1,5 @@
 import type { BlogArticleSeed } from '../shared'
+import { stockList } from '../products'
 
 /**
  * Welded vs tie-rod cylinders. Ratings quoted from our own listings (Magister welded 3,500 psi; Rexroth CDT3
@@ -110,6 +111,10 @@ const ARTICLE: BlogArticleSeed = {
         { question: 'Can a welded cylinder be rebuilt?', answer: 'Yes. The gland is unscrewed or its retaining ring released, the rod and piston withdrawn and the seals replaced. It is worth doing when the rod chrome and barrel bore are undamaged.' },
         { question: 'Why do tie-rod cylinders leak at the ends?', answer: 'Usually uneven or lost tie-rod torque, which lets the end blocks lift off their static seals, or tie rods stretched by an overpressure. Retorque in a cross pattern to the maker’s figure, or replace stretched rods.' },
       ],
+    },
+    {
+      type: 'prose',
+      html: '<h3>What we list</h3><p>Every welded and tie-rod cylinder in the range:</p>' + stockList(['welded-hydraulic-cylinders', 'tie-rod-cylinders']),
     },
     {
       type: 'product_embed',
