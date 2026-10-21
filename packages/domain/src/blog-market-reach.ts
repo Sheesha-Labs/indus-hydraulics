@@ -79,6 +79,19 @@ export const MARKET_REACH_PROFILES: Readonly<Record<string, MarketReachProfile>>
       'South America',
     ],
   },
+  'cylinders-pumps-motors': {
+    heading: 'Where cylinders, pumps and motors like these go',
+    body: 'A cylinder, pump or motor is rarely bought on its own: it arrives with the hoses, fittings, seals and valves that connect it, and it has to match a mount, a shaft and a port that are already on the machine. We work from the bore, rod, stroke and mount of the cylinder you are replacing, or the displacement, shaft and flange of the pump or motor, quote the component and its connections as one consignment, and ship it from Dubai with the documents the destination asks for.',
+    primaryRegion: 'GCC & Middle East',
+    rotatingRegions: [
+      'East Africa',
+      'West & Central Africa',
+      'Southern Africa',
+      'South Asia',
+      'CIS & Caucasus',
+      'North Africa',
+    ],
+  },
   'failure-analysis': {
     heading: 'Where we send the replacement',
     body: 'A failure correctly diagnosed is only worth something if the replacement can reach the machine. Assemblies built to the specification described here are made up and pressure-tested at our Dubai workshop and dispatched with the crimp record and test certificate travelling with them, which counts for more the further the machine sits from a hose shop. Most orders of this kind start as a photograph and a measurement rather than a part number, and that is enough for us to quote from.',
