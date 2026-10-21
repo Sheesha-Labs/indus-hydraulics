@@ -118,6 +118,19 @@ export const MARKET_REACH_PROFILES: Readonly<Record<string, MarketReachProfile>>
       'South-East Asia',
     ],
   },
+  'hydraulic-tools-bolting': {
+    heading: 'Where tools like these go',
+    body: 'A bolting or lifting job is planned around a shutdown window, and the tool has to arrive with everything it needs to work: the pump, twin hoses, sockets, reaction arms, gauges and the oil. We quote from the bolt size, torque or load and the access you have on site, list the whole kit so nothing is missing when the crew opens the case, and ship it from Dubai as one consignment ahead of the window.',
+    primaryRegion: 'GCC & Middle East',
+    rotatingRegions: [
+      'North Africa',
+      'West & Central Africa',
+      'CIS & Caucasus',
+      'East Africa',
+      'South Asia',
+      'South-East Asia',
+    ],
+  },
   'failure-analysis': {
     heading: 'Where we send the replacement',
     body: 'A failure correctly diagnosed is only worth something if the replacement can reach the machine. Assemblies built to the specification described here are made up and pressure-tested at our Dubai workshop and dispatched with the crimp record and test certificate travelling with them, which counts for more the further the machine sits from a hose shop. Most orders of this kind start as a photograph and a measurement rather than a part number, and that is enough for us to quote from.',

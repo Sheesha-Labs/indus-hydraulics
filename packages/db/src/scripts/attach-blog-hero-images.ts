@@ -475,6 +475,12 @@ const HEROES: readonly { slug: string; alt: string; caption?: string }[] = [
   { slug: 'stainless-316l-hose-fittings', alt: 'Polished 316L stainless hose fittings: BSP and JIC swivels, a flange head, a standpipe, a banjo, and stainless crimp ferrules', caption: 'Stainless hose ends for the lines where plated steel would rust.' },
   { slug: 'hose-barbs-and-push-lock-fittings', alt: 'Brass barbed and push-lock hose fittings, a zinc-plated steel barb adapter and red push-lock hose on one barb', caption: 'Barbs and push-lock ends for low-pressure air, water and return lines.' },
   { slug: 'crimped-reusable-or-ready-made-hose-assemblies', alt: 'A crimping machine crimping a braided hose assembly, finished assemblies on a rack, and a reusable fitting on the bench', caption: 'Crimp in the shop, reuse in the field, or buy the assembly made up.' },
+  // Hydraulic tools & bolting (2026-10-21).
+  { slug: 'hydraulic-torque-wrenches-guide', alt: 'Square-drive hydraulic torque wrench with impact socket on a pipeline flange nut, reaction arm on the next nut', caption: 'The reaction arm braces on the next nut, so the force goes into the bolt, not the operator.' },
+  { slug: 'bolt-tensioning-nut-splitters-and-flange-tools', alt: 'Hydraulic bolt tensioners on a large offshore flange, with a nut splitter and wedge flange spreader on the deck', caption: 'Tensioners stretch every stud at once; the splitter and spreader open the joint when it has to come apart.' },
+  { slug: 'hydraulic-jacks-wedges-and-skates', alt: 'Machine base on timber cribbing, raised by red bottle jacks set on roller load skates on a concrete floor', caption: 'Lift, crib, then roll: the load rests on timber between every lift.' },
+  { slug: 'hydraulic-pullers-presses-and-cutters', alt: 'Three-jaw hydraulic puller on a gear and shaft, with an H-frame workshop press and a hydraulic chain cutter', caption: 'Size the puller to the shaft, and check reach and spread before force.' },
+  { slug: 'hydraulic-power-tools-and-power-units', alt: 'Portable hydraulic power unit with hoses to a breaker on broken concrete, a cut-off saw and a submersible pump', caption: 'One open-centre power unit can run a whole kit of tools, if every tool is in its flow class.' },
 ] as const
 
 /**

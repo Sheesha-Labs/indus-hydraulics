@@ -36,7 +36,7 @@ export const FILL_INS: FillIn[] = [
   { post: 'fibre-rope-materials-compared', shelves: ['fibre-rope-twine'] },
   { post: 'how-to-choose-and-tension-a-turnbuckle', shelves: ['turnbuckles-rigging-screws'] },
   { post: 'vertical-vs-horizontal-plate-lifting-clamps', shelves: ['lifting-beam-clamps'] },
-  { post: 'hydraulic-winch-sizing', shelves: ['hydraulic-winches'] },
+  { post: 'hydraulic-winch-sizing', shelves: ['hydraulic-winches', 'winches'] },
   { post: 'crane-winch-load-monitoring', shelves: ['gearbox-winch-accessories'] },
 
   // Hydraulic and industrial hose couplings

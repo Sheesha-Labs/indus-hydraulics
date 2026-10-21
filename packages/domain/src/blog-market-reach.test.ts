@@ -35,8 +35,8 @@ describe('buildMarketReachBlock', () => {
     // Fourteen with `hydraulic-fittings-by-industry` from the Africa fittings
     // sprint's third wave (2026-09-01). Fifteen with `cylinders-pumps-motors`
     // (2026-10-21); sixteen with `instrumentation-gauges` (2026-10-21); seventeen with
-    // `stainless-steel-fittings` (2026-10-21).
-    expect(CATEGORIES).toHaveLength(17)
+    // `stainless-steel-fittings` (2026-10-21); eighteen with `hydraulic-tools-bolting` (2026-10-21).
+    expect(CATEGORIES).toHaveLength(18)
   })
 
   it('returns null for a category with no profile, rather than guessing one', () => {
