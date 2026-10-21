@@ -167,7 +167,7 @@ describe('text columns', () => {
     expect(VARIANT_TEXT_COLUMNS.map((c) => c.key)).toEqual([
       'oRing', 'insideDia', 'wall', 'supply', 'item', 'half', 'bodySize', 'mount', 'shaft', 'ports', 'rotation', 'action', 'ratio',
       'systemType', 'lubricant', 'reservoir', 'pressureRatio', 'container', 'voltage', 'output', 'maxPressure', 'outletThread',
-      'monitoring',
+      'monitoring', 'usedOn',
     ])
     for (const key of ['S1', 'S2'] as const) {
       const col = VARIANT_DIMENSION_COLUMNS.find((c) => c.key === key)!
@@ -638,6 +638,18 @@ describe('coupling and equipment ratings', () => {
     const barrel: VariantLike[] = [{ partNumber: 'IH-BD-F531411', dimensions: { item: 'PM45 40:1', pressureRatio: '40:1', container: '400 lb drum' } }]
     expect(variantTableKind(barrel)).toBe('equipment')
     expect(variantTableKind([{ partNumber: 'x', dimensions: { item: 'Elbow', outletThread: '1/8NPT' } }])).toBe('fitting')
+  })
+
+  it('reads a pump spare-parts table as equipment, with the pump each part is for', () => {
+    const spares: VariantLike[] = [
+      { partNumber: 'IH-BD-71128', dimensions: { item: '71128 — KIT SF II GEAR PUMP', usedOn: 'SureFire II 1-phase' } },
+      { partNumber: 'IH-BD-71167', dimensions: { item: '71167 — KIT SF II GEAR PUMP 500CC', usedOn: 'SureFire II 3-phase' } },
+    ]
+    expect(variantTableKind(spares)).toBe('equipment')
+    expect(variantTextColumns(spares).map((c) => [c.key, c.label])).toEqual([
+      ['item', 'Description'],
+      ['usedOn', 'For'],
+    ])
   })
 
   it('gives the row description its own leading column', () => {
