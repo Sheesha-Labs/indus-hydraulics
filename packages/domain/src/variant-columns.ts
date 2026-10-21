@@ -127,7 +127,20 @@ export type EquipmentTextKey =
   | 'rotation'
   | 'action'
   | 'ratio'
+  | CartridgeTextKey
   | LubricationTextKey
+
+/**
+ * Screw-in hydraulic cartridge valves (Sun Hydraulics).
+ *
+ * A cartridge is chosen by the cavity it screws into, so the frame size
+ * (`series`) and the `cavity` lead the row. Capacity is published as a flow
+ * figure in US and metric units side by side ("15 gpm / 60 L/min"), and on a
+ * needle valve with the orifice diameter too, so it stays text as printed.
+ * Only a cartridge row carries `cavity`, which is what marks the table as
+ * `equipment` rather than a fitting table.
+ */
+export type CartridgeTextKey = 'series' | 'cavity' | 'capacity'
 
 /**
  * Lubrication pumps and lubricators (Bijur Delimon).
@@ -602,6 +615,10 @@ export const VARIANT_TEXT_COLUMNS: readonly VariantTextColumn[] = [
   { key: 'rotation', label: 'Rotation', help: 'Direction of rotation viewed from the shaft end, as published.' },
   { key: 'action', label: 'Action', help: 'Single- or double-acting, as published.' },
   { key: 'ratio', label: 'Ratio', help: 'Reduction ratio, or the range of ratios the model is built in, as published.' },
+  // Screw-in cartridge valves — see CartridgeTextKey.
+  { key: 'series', label: 'Series', help: 'Frame size the cartridge is built in, as the maker numbers it; one series shares one cavity size.', lead: true },
+  { key: 'cavity', label: 'Cavity', help: 'Cavity the cartridge screws into, as the maker designates it.', lead: true },
+  { key: 'capacity', label: 'Capacity', help: 'Rated flow capacity as published, in US and metric units.' },
   // Lubrication pumps and lubricators — see LubricationTextKey.
   { key: 'systemType', label: 'System', help: 'Lubrication system the pump feeds — SLR (single-line resistance), PDI (positive-displacement injector), progressive, Dualine or multi-line — as published.' },
   { key: 'lubricant', label: 'Lubricant', help: 'Oil or grease, with the viscosity or NLGI range the pump handles, as published.' },
@@ -610,14 +627,19 @@ export const VARIANT_TEXT_COLUMNS: readonly VariantTextColumn[] = [
   { key: 'container', label: 'Fits', help: 'Container or drum the pump is built to fit, as published.' },
   { key: 'voltage', label: 'Supply', help: 'Motor or control voltage, phase and frequency, as published.' },
   { key: 'output', label: 'Output', help: 'Lubricant output per cycle or per minute, as published.' },
-  { key: 'maxPressure', label: 'Max pressure', help: 'Maximum outlet pressure as the maker publishes it, in psi and bar.' },
+  { key: 'maxPressure', label: 'Max pressure', help: 'Maximum pressure as the maker publishes it, in psi and bar.' },
   { key: 'outletThread', label: 'Outlet', help: 'Outlet port thread, as published.' },
   { key: 'monitoring', label: 'Monitoring', help: 'Level switch, pressure switch, gauge or controller the part number includes, as published.' },
   { key: 'usedOn', label: 'For', help: 'Pump, or pump version, the maker lists the spare part under.' },
 ]
 
-/** Text keys only a lubrication pump or pump-spares row carries — like EQUIPMENT_MARKERS, they make a table `equipment`. */
-const EQUIPMENT_TEXT_MARKERS: ReadonlySet<string> = new Set(['systemType', 'lubricant', 'reservoir', 'pressureRatio', 'container', 'usedOn'])
+/**
+ * Text keys only a lubrication pump, pump-spares or cartridge-valve row carries — like EQUIPMENT_MARKERS, they
+ * make a table `equipment`.
+ */
+const EQUIPMENT_TEXT_MARKERS: ReadonlySet<string> = new Set([
+  'systemType', 'lubricant', 'reservoir', 'pressureRatio', 'container', 'usedOn', 'cavity',
+])
 
 const letter = (key: VariantColumnKey, label: string): VariantColumn => ({
   key,

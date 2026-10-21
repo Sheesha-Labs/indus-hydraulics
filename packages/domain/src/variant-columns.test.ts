@@ -166,7 +166,7 @@ describe('text columns', () => {
   it('does not claim S1 or S2 mean across-flats', () => {
     expect(VARIANT_TEXT_COLUMNS.map((c) => c.key)).toEqual([
       'oRing', 'insideDia', 'wall', 'supply', 'item', 'half', 'bodySize', 'mount', 'shaft', 'ports', 'rotation', 'action', 'ratio',
-      'systemType', 'lubricant', 'reservoir', 'pressureRatio', 'container', 'voltage', 'output', 'maxPressure', 'outletThread',
+      'series', 'cavity', 'capacity', 'systemType', 'lubricant', 'reservoir', 'pressureRatio', 'container', 'voltage', 'output', 'maxPressure', 'outletThread',
       'monitoring', 'usedOn',
     ])
     for (const key of ['S1', 'S2'] as const) {
@@ -650,6 +650,24 @@ describe('coupling and equipment ratings', () => {
       ['item', 'Description'],
       ['usedOn', 'For'],
     ])
+  })
+
+  it('reads a cartridge valve table as equipment, led by series and cavity', () => {
+    const cartridges: VariantLike[] = [
+      { partNumber: 'CBCA', dimensions: { series: '1', cavity: 'T-11A', capacity: '15 gpm / 60 L/min', maxPressure: '5000 psi / 350 bar' } },
+      { partNumber: 'CBEA', dimensions: { series: '2', cavity: 'T-2A', capacity: '30 gpm / 120 L/min', maxPressure: '5000 psi / 350 bar' } },
+    ]
+    expect(variantTableKind(cartridges)).toBe('equipment')
+    expect(variantTextColumns(cartridges).map((c) => [c.key, c.label, Boolean(c.lead)])).toEqual([
+      ['series', 'Series', true],
+      ['cavity', 'Cavity', true],
+      ['capacity', 'Capacity', false],
+      ['maxPressure', 'Max pressure', false],
+    ])
+  })
+
+  it('does not read a fitting table as equipment just because it carries a capacity', () => {
+    expect(variantTableKind([{ partNumber: 'x', dimensions: { item: 'Tee', capacity: '15 gpm' } }])).toBe('fitting')
   })
 
   it('gives the row description its own leading column', () => {

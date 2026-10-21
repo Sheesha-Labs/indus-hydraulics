@@ -146,6 +146,9 @@ export default function ProductSizeTable({
   // rigging table, because a buyer reads the biggest number as the rating.
   const hasLashing = dimensionColumns.some((c) => c.key.startsWith('lc'))
   const showsRatings = dimensionColumns.some((c) => RATING_KEYS.has(c.key))
+  // A cartridge valve row carries the maker's base model code; the code a buyer
+  // orders adds the configuration letters, and those are settled on the quote.
+  const isCartridge = leadTextColumns.some((c) => c.key === 'cavity')
   const breakingOnly =
     kind === 'lifting' &&
     !dimensionColumns.some((c) => c.key.startsWith('wll') || c.key.startsWith('lc')) &&
@@ -349,6 +352,14 @@ export default function ProductSizeTable({
             Pressure, flow, speed, torque and load figures are the manufacturer&rsquo;s published
             ratings for that part number. A circuit is limited by its lowest-rated component, so
             check them against the hose, fittings and valves it connects to.
+          </p>
+        )}
+        {isCartridge && (
+          <p>
+            Part numbers are the maker&rsquo;s base model codes. The full ordering code adds letters
+            for the control, setting range, seal and material options, and we confirm it with the
+            quotation. Capacity and pressure are the maker&rsquo;s published ratings for the
+            cartridge; check them against the cavity body and the rest of the circuit.
           </p>
         )}
         {kind === 'lifting' && (
