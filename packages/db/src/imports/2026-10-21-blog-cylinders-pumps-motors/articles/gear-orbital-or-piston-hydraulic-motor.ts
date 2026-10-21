@@ -1,5 +1,6 @@
 import type { BlogArticleSeed } from '../shared'
 import { MOTOR_TORQUE_RANGES } from '../diagrams'
+import { stockList } from '../products'
 
 /**
  * Motor types compared. Ratings from maker documents read 2026-10-21: Cross 40-series gear motors (3,000 psi,
@@ -122,6 +123,10 @@ const ARTICLE: BlogArticleSeed = {
         { question: 'Which motor runs smoothest at very low speed?', answer: 'Radial piston and bent-axis piston motors; bent-axis designs run smoothly down to a few rpm. Small spool-valve orbital motors can run unevenly below about 30–50 rpm; disc-valve orbital motors are smoother.' },
         { question: 'Can any hydraulic motor hold a load?', answer: 'No. All hydraulic motors leak internally and creep under load. Use a mechanical holding brake.' },
       ],
+    },
+    {
+      type: 'prose',
+      html: '<h3>What we list</h3><p>Our gear motor listing:</p>' + stockList(['hydraulic-gear-motors']),
     },
     {
       type: 'product_embed',

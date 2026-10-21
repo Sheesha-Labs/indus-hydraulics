@@ -1,4 +1,5 @@
 import type { BlogArticleSeed } from '../shared'
+import { stockList } from '../products'
 
 /**
  * Orbital motors. Construction, family ratings, flange dimensions, shafts, ports, case drain, brakes, oil and
@@ -151,6 +152,10 @@ const ARTICLE: BlogArticleSeed = {
         { question: 'Can an orbital motor hold a load?', answer: 'No. Internal leakage lets the load move. Use an integral or external holding brake on winches, slew drives and wheel drives.' },
         { question: 'What is a magneto mount?', answer: 'A trade name for a small square or diamond flange used by several makers. It is not a single standard, so measure the pilot and bolt pattern.' },
       ],
+    },
+    {
+      type: 'prose',
+      html: '<h3>What we list</h3><p>Every orbital motor in the range:</p>' + stockList(['orbital-hydraulic-motors']),
     },
     {
       type: 'product_embed',

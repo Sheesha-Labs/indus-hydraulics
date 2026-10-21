@@ -1,5 +1,6 @@
 import type { BlogArticleSeed } from '../shared'
 import { GAUGE_ACCURACY } from '../diagrams'
+import { stockList } from '../products'
 
 /**
  * Pillar: pressure gauges. Bourdon principle and EN 837 parts (SAMSON AB 09, citing EN 837-1/-2/-3); C vs helical
@@ -110,6 +111,10 @@ const ARTICLE: BlogArticleSeed = {
         { question: 'When should a pressure gauge be replaced?', answer: 'When the pointer does not return inside the zero mark with the gauge vented — the element may be permanently distorted — or after overpressure, or if it has been damaged.' },
         { question: 'What is the difference between EN 837 and ASME B40.100?', answer: 'Both cover pressure gauges. EN 837-1 classes give a single ± percentage of span across the scale; ASME grades A and B give different tolerances for the middle and the ends of the scale.' },
       ],
+    },
+    {
+      type: 'prose',
+      html: '<h3>What we list</h3><p>Every pressure gauge in the range:</p>' + stockList(['ic-pressure-gauges']),
     },
     {
       type: 'product_embed',
