@@ -28,6 +28,12 @@ import { PrismaClient } from '@prisma/client'
 const db = new PrismaClient()
 
 const CATEGORIES = ['single-ferrule-tube-fittings', 'double-ferrule-tube-fittings']
+/**
+ * Adapter shelves where a catalogue-wide audit found the same fault on a
+ * handful of listings. Their ends are threads, not tube: the headline range
+ * is the first end's, written without the word "tube".
+ */
+const ADAPTER_CATEGORIES = ['stainless-steel-jic-adapters', 'stainless-steel-orb-adapters', 'stainless-steel-npt-pipe-adapters']
 const PORTS = ['portLabel', 'port2Label', 'port3Label'] as const
 
 /** Leading size of a label in inches: `1-1/2" tube` → 1.5, `12 mm tube` → 12/25.4. */
@@ -55,6 +61,14 @@ function range(labels: string[]): { lo: string; hi: string } | null {
   return { lo: sorted[0], hi: sorted[sorted.length - 1] }
 }
 
+function rangeText(labels: string[]): string | null {
+  const r = range(labels.filter((l) => Number.isFinite(sizeOf(l))))
+  if (!r) return null
+  const lo = sizeText(r.lo)
+  const hi = sizeText(r.hi)
+  return lo === hi ? lo : `${lo} to ${hi}`
+}
+
 /** Overall tube-end range across every end, e.g. `1/16" to 1"` or `2 mm to 38 mm`. */
 function tubeRange(labels: string[]): string | null {
   const r = range(labels.filter(isTube))
@@ -66,11 +80,15 @@ function tubeRange(labels: string[]): string | null {
 
 const esc = (s: string) => s.replace(/"/g, '&quot;')
 
+/** `17 part numbers, 1/4" to 2"` — the count, then one or two inch sizes. */
+const SIZE_SPAN = (noun: string, q: string) => new RegExp(`(\\d+ ${noun}, )[\\d/-]+${q}(?: to [\\d/-]+${q})?`)
+
 async function main() {
   const dryRun = process.argv.includes('--dry-run')
   const products = await db.product.findMany({
-    where: { category: { slug: { in: CATEGORIES } } },
+    where: { category: { slug: { in: [...CATEGORIES, ...ADAPTER_CATEGORIES] } } },
     select: {
+      category: { select: { slug: true } },
       id: true,
       sku: true,
       slug: true,
@@ -90,16 +108,27 @@ async function main() {
   for (const p of products) {
     if (p.variants.length === 0) continue
     const all = p.variants.flatMap((v) => PORTS.map((k) => v[k]).filter((x): x is string => !!x))
-    const overall = tubeRange(all)
+    const adapter = ADAPTER_CATEGORIES.includes(p.category?.slug ?? '')
+    // On an adapter the headline range is the first end's (`21 part numbers,
+    // 1/4" to 2"` on a JIC × NPT elbow is the JIC end), so compare with that.
+    const overall = adapter ? rangeText(p.variants.map((v) => v.portLabel).filter((x): x is string => !!x)) : tubeRange(all)
     if (!overall) continue
+    const unit = adapter ? '' : ' tube'
 
     let short = p.descriptionShort ?? ''
     let seo = p.seoDescription ?? ''
     let long = p.descriptionLong ?? ''
 
-    short = short.replace(/(\d+ part numbers, ).*? tube(?=;|\.)/, `$1${overall} tube`)
-    seo = seo.replace(/(\d+ sizes, ).*? tube(?=,|\.)/, `$1${overall} tube`)
-    long = long.replace(/(<p>\d+ part numbers, ).*? tube\./, `$1${esc(overall)} tube.`)
+    if (adapter) {
+      // Match the size tokens only (`1/8"`, `2-1/2"`), never the prose after them.
+      short = short.replace(SIZE_SPAN('part numbers', '"'), `$1${overall}`)
+      seo = seo.replace(SIZE_SPAN('sizes', '"'), `$1${overall}`)
+      long = long.replace(SIZE_SPAN('part numbers', '&quot;'), `$1${esc(overall)}`)
+    } else {
+      short = short.replace(/(\d+ part numbers, ).*? tube(?=;|\.)/, `$1${overall} tube`)
+      seo = seo.replace(/(\d+ sizes, ).*? tube(?=,|\.)/, `$1${overall} tube`)
+      long = long.replace(/(<p>\d+ part numbers, ).*? tube\./, `$1${esc(overall)} tube.`)
+    }
 
     // Only inside the Sizes section: the Construction list above it also has
     // "End 1: tube end (nut and ferrule)" lines, which must not be touched.
@@ -120,10 +149,11 @@ async function main() {
     // The same range is repeated in the "Size Range" spec row and in the
     // "What sizes are available?" FAQ answer.
     const specWrites = p.specs
-      .map((sp) => ({ id: sp.id, from: sp.value, to: `${overall} tube` }))
+      .filter((sp) => !adapter || sp.value.includes(' to '))
+      .map((sp) => ({ id: sp.id, from: sp.value, to: `${overall}${unit}` }))
       .filter((w) => w.from !== w.to)
     const faqWrites = p.faqs
-      .map((f) => ({ id: f.id, from: f.answer, to: f.answer.replace(/(\d+ part numbers, ).*? tube\./, `$1${overall} tube.`) }))
+      .map((f) => ({ id: f.id, from: f.answer, to: adapter ? f.answer.replace(SIZE_SPAN('part numbers', '"'), `$1${overall}`) : f.answer.replace(/(\d+ part numbers, ).*? tube\./, `$1${overall} tube.`) }))
       .filter((w) => w.from !== w.to)
 
     const changed = specWrites.length > 0 || faqWrites.length > 0 || short !== (p.descriptionShort ?? '') || seo !== (p.seoDescription ?? '') || long !== (p.descriptionLong ?? '')
