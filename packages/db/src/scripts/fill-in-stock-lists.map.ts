@@ -16,14 +16,14 @@ export const FILL_INS: FillIn[] = [
   { post: 'lifting-hook-types', shelves: ['lifting-hooks'] },
   { post: 'types-of-lifting-slings', shelves: ['chain-slings', 'synthetic-slings', 'wire-rope-slings'] },
   { post: 'snap-hooks-and-quick-links', shelves: ['snap-hooks-quick-links'] },
-  { post: 'hammerlock-vs-clevis-chain-fittings', shelves: ['grade-80-chain-fittings', 'grade-100-chain-fittings'] },
+  { post: 'hammerlock-vs-clevis-chain-fittings', shelves: ['grade-80-chain-fittings', 'grade-100-chain-fittings', 'forestry-logging-hardware'] },
   { post: 'eye-bolt-types-and-angled-loads', shelves: ['eye-bolts-eye-nuts'] },
   { post: 'master-links-explained', shelves: ['master-links-rings-swivels'] },
   { post: 'types-of-shackles', shelves: ['shackles'] },
   { post: 'types-of-mooring-bollards', shelves: ['bollards-mooring'] },
   { post: 'pad-eye-vs-swivel-lifting-point', shelves: ['lifting-points-pad-eyes'] },
   { post: 'wire-rope-thimble-types', shelves: ['wire-rope-thimbles'] },
-  { post: 'chain-grades-explained', shelves: ['commercial-transport-chain', 'din-link-chain'] },
+  { post: 'chain-grades-explained', shelves: ['commercial-transport-chain', 'din-link-chain', 'mining-conveyor-chain'] },
   { post: 'wire-rope-clips-installation', shelves: ['wire-rope-clips'] },
   { post: 'spelter-sockets-open-vs-closed', shelves: ['wire-rope-sockets-terminals'] },
   { post: 'lever-vs-ratchet-load-binder', shelves: ['load-binders', 'ratchet-straps-tie-downs'] },
@@ -69,7 +69,10 @@ export const FILL_INS: FillIn[] = [
   { post: 'api-7k-rotary-vibrator-hose', shelves: ['drilling-hoses'] },
 
   // Flow iron, wellhead and oilfield valves
-  { post: 'ring-joint-gaskets-r-rx-bx', shelves: ['ring-joint-gaskets'] },
+  { post: 'ring-joint-gaskets-r-rx-bx', shelves: ['ring-joint-gaskets', 'flow-iron-flanges-api'] },
+  // Added 2026-10-21 (blog linkage wave 5): BOP stack shelves.
+  { post: 'ram-vs-annular-bop', shelves: ['bop-ram', 'bop-annular', 'bop-ram-blocks', 'bop-spare-parts', 'bop-spools-adapters', 'bop-diverters', 'bop-control-units'] },
+  { post: 'api-16c-choke-and-kill-lines', shelves: ['bop-choke-kill'] },
   { post: 'flow-iron-explained', shelves: ['flow-iron-fittings-suppliers-uae', 'flow-iron-flow-line', 'flow-iron-adapters', 'flow-iron-manifolds', 'oilfield-restraint-systems'] },
   { post: 'hammer-union-figure-numbers', shelves: ['hammer-unions-standard-service', 'hammer-unions-sour-gas-service'] },
   { post: 'wellhead-components-explained', shelves: ['wellhead', 'surface-test-trees'] },
