@@ -64,13 +64,14 @@ export type VariantDimensionKey =
   | 'X'
   | 'I'
   | LiftingDimensionKey
+  | ValveDimensionKey
 
 /**
  * Keys inside `dimensions` whose value is a string rather than a millimetre
  * figure — an O-ring size is `12.0×2.0`, not a number. They render in their own
  * columns after the numeric ones.
  */
-export type VariantTextKey = 'oRing' | 'supply' | HoseTextKey | EquipmentTextKey | LiftingTextKey
+export type VariantTextKey = 'oRing' | 'supply' | HoseTextKey | EquipmentTextKey | LiftingTextKey | ValveTextKey
 
 /**
  * Lay-flat hose: the catalogue prints the bore with its tolerance (`39 +1.5`)
@@ -117,6 +118,21 @@ export type RatingDimensionKey =
 
 /** Text columns for couplings, pumps, motors and cylinders. */
 export type EquipmentTextKey = 'item' | 'half' | 'bodySize' | 'mount' | 'shaft' | 'ports' | 'rotation' | 'action' | 'ratio'
+
+/**
+ * Industrial valve tables: gate, globe, check, ball and butterfly.
+ *
+ * A valve is chosen by size and pressure class before any dimension, so the
+ * nominal size as printed (`size`), `dn` and `pressureClass` lead the row. The
+ * source tables head their lengths "L (RF)", "L (RTJ)" and "L (BW)" (face to
+ * face for flanged ends, end to end for butt-weld ends), so those columns carry
+ * that meaning. Everything else on a valve drawing (H, W, D1…) stays a bare
+ * letter, for the reason in the module note. A valve's `W` is not a fitting's
+ * hex across flats, which is why valves get their own registry rather than
+ * borrowing that column.
+ */
+export type ValveDimensionKey = 'lFf' | 'lRf' | 'lRtj' | 'lBw' | 'weightRfKg' | 'weightBwKg'
+export type ValveTextKey = 'dn' | 'pressureClass' | 'port'
 
 /**
  * Lifting & rigging columns.
@@ -759,6 +775,31 @@ export const LIFTING_TEXT_COLUMNS: readonly VariantTextColumn[] = [
   { key: 'steelCore', label: 'Steel core', help: 'Diameter of the steel core, as published.' },
 ]
 
+/** Valve rows lead with size, DN, class and port. See `ValveDimensionKey`. */
+export const VALVE_TEXT_COLUMNS: readonly VariantTextColumn[] = [
+  { key: 'type', label: 'Type', help: 'Valve type of this row, where one listing covers several.', lead: true },
+  { key: 'size', label: 'Size', help: 'Nominal pipe size (NPS), as published.', lead: true },
+  { key: 'dn', label: 'DN', help: 'Nominal diameter (DN), as published.', lead: true },
+  { key: 'pressureClass', label: 'Class', help: 'Pressure class the row is built to (ASME Class or PN), as published.', lead: true },
+  { key: 'port', label: 'Port', help: 'Full bore or reduced bore, as published.', lead: true },
+]
+
+const VALVE_LENGTH_COLUMNS: readonly VariantColumn[] = [
+  { key: 'lFf', label: 'Face to face', unit: 'mm', help: 'Face-to-face length of a wafer or lug body, which sits between the pipe flanges, as published.' },
+  { key: 'lRf', label: 'L (RF)', unit: 'mm', help: 'Face-to-face length with raised-face flanged ends, as published.' },
+  { key: 'lRtj', label: 'L (RTJ)', unit: 'mm', help: 'Face-to-face length with ring-type-joint flanged ends, as published.' },
+  { key: 'lBw', label: 'L (BW)', unit: 'mm', help: 'End-to-end length with butt-weld ends, as published.' },
+]
+
+const VALVE_WEIGHT_COLUMNS: readonly VariantColumn[] = [
+  { key: 'weightRfKg', label: 'Weight (flanged)', unit: 'kg', help: 'Weight with flanged ends, as published.', grouped: true },
+  { key: 'weightBwKg', label: 'Weight (BW)', unit: 'kg', help: 'Weight with butt-weld ends, as published.', grouped: true },
+  { key: 'weightKg', label: 'Weight', unit: 'kg', help: 'Weight as the manufacturer publishes it.', grouped: true },
+]
+
+/** Keys only a valve row carries. Checked before the lifting markers, since a valve row also has `size`. */
+const VALVE_MARKERS: ReadonlySet<string> = new Set<string>(['pressureClass', 'dn', 'lFf', 'lRf', 'lRtj', 'lBw'])
+
 const LIFTING_MARKERS: ReadonlySet<string> = new Set<string>([
   ...LIFTING_LOAD_COLUMNS.map((c) => c.key),
   ...LIFTING_PERFORMANCE_COLUMNS.map((c) => c.key),
@@ -885,17 +926,21 @@ export function hasVariantPressures(variants: readonly VariantLike[]): boolean {
  * somebody forgot a prop — which matters, because one of those footnotes
  * offers every size in 316 stainless and that is nonsense on a rubber hose.
  */
-export type VariantTableKind = 'hose' | 'fitting' | 'lifting' | 'equipment'
+export type VariantTableKind = 'hose' | 'fitting' | 'lifting' | 'equipment' | 'valve'
 
 export function variantTableKind(variants: readonly VariantLike[]): VariantTableKind {
-  // Lifting first: a chain row carries `weightPerMetre` exactly as a hose row
+  const rawKeys = (v: VariantLike): string[] => {
+    const raw = v.dimensions
+    if (!raw || typeof raw !== 'object' || Array.isArray(raw)) return []
+    return Object.keys(raw)
+  }
+  // Valve first: a valve row carries `size` just as a rigging row does, and it is
+  // the class, DN and face-to-face columns that say which one it is.
+  if (variants.some((v) => rawKeys(v).some((k) => VALVE_MARKERS.has(k)))) return 'valve'
+  // Lifting next: a chain row carries `weightPerMetre` exactly as a hose row
   // does, and it is the load columns — which no hose or fitting ever has — that
   // say which one it is.
-  const isLifting = variants.some((v) => {
-    const raw = v.dimensions
-    if (!raw || typeof raw !== 'object' || Array.isArray(raw)) return false
-    return Object.keys(raw).some((k) => LIFTING_MARKERS.has(k.split('@')[0]!))
-  })
+  const isLifting = variants.some((v) => rawKeys(v).some((k) => LIFTING_MARKERS.has(k.split('@')[0]!)))
   if (isLifting) return 'lifting'
   // A pump, motor or cylinder: rated by displacement, bore, stroke or speed —
   // keys no fitting or hose row carries.
@@ -929,7 +974,8 @@ export function variantText(value: unknown, key: VariantTextKey): string | null 
 
 /** Text columns this set of variants populates, in canonical order. */
 export function variantTextColumns(variants: readonly VariantLike[]): VariantTextColumn[] {
-  const registry = variantTableKind(variants) === 'lifting' ? LIFTING_TEXT_COLUMNS : VARIANT_TEXT_COLUMNS
+  const kind = variantTableKind(variants)
+  const registry = kind === 'valve' ? VALVE_TEXT_COLUMNS : kind === 'lifting' ? LIFTING_TEXT_COLUMNS : VARIANT_TEXT_COLUMNS
   return registry.filter((c) => variants.some((v) => variantText(v.dimensions, c.key)))
 }
 
@@ -943,7 +989,21 @@ export function variantDimensionColumns(variants: readonly VariantLike[]): Varia
   for (const v of variants) {
     for (const k of Object.keys(variantDimensions(v.dimensions))) present.add(k)
   }
-  if (variantTableKind(variants) !== 'lifting') {
+  const kind = variantTableKind(variants)
+  if (kind === 'valve') {
+    // Named lengths, then whatever drawing letters the rows carry, then weights.
+    const named = new Set<string>([...VALVE_LENGTH_COLUMNS, ...VALVE_WEIGHT_COLUMNS].map((c) => c.key))
+    const letters = [...present]
+      .filter((k) => !named.has(k) && DRAWING_LETTER.test(k))
+      .sort(letterSort)
+      .map((k) => letter(k, letterLabel(k)))
+    return [
+      ...VALVE_LENGTH_COLUMNS.filter((c) => present.has(c.key)),
+      ...letters,
+      ...VALVE_WEIGHT_COLUMNS.filter((c) => present.has(c.key)),
+    ]
+  }
+  if (kind !== 'lifting') {
     return VARIANT_DIMENSION_COLUMNS.filter((c) => present.has(c.key))
   }
   // Each named column, followed by its qualified splits in qualifier order.
