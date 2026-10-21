@@ -9,6 +9,11 @@ import { stockList } from '../products'
  * System product sheet (component ratings and codes: separator 1,440 psi ASME VIII Div 2, DNV 2.7-1 skids, SSV and
  * flowhead 10,000 psi API 6A PSL3 PR2; capacities); SLB Energy Glossary (choke manifold, test separator); ASME
  * certification page (U, U2, U3 stamps); 30 CFR 250.880 not used here.
+ * Added 2026-10-21 (desanders and debris catchers): Hunting Cyclonic Wellhead Desander page (upstream of the choke
+ * manifold in well testing, frac flowback and clean-up; up to 99% separation at high rates with minimal pressure drop;
+ * wider particle range and larger solids volumes than sand filters — maker claims; dual pots for continuous dumping);
+ * Hunting Wellhead Plug Catcher page (removes larger debris; frac flowback and clean-up after perforating or drilling
+ * out a bridge plug; upstream of the sand separator or choke manifold; bypass to isolate, depressurise and measure).
  * NOT used: positions of data header and sand filter as maker-documented (industry practice stated as such).
  */
 const ARTICLE: BlogArticleSeed = {
@@ -48,6 +53,7 @@ const ARTICLE: BlogArticleSeed = {
         { cells: ['Flowhead and SSV, ESD panel', 'Control the well at surface; the SSV closes it automatically on an ESD trip'], highlight: true },
         { cells: ['Data header', 'Ports for pressure and temperature gauges, sampling and chemical injection'] },
         { cells: ['Sand filter', 'Removes produced sand before it erodes the choke and separator'] },
+        { cells: ['Desander or debris catcher', 'Spins out heavy sand loads (cyclone) or screens out plug and milling debris (catcher) ahead of the choke manifold'] },
         { cells: ['Choke manifold', 'Controls flow rate; one adjustable choke can be isolated for repair while the other runs'] },
         { cells: ['Heater', 'Warms the stream to prevent hydrates, reduce viscosity and break emulsions'] },
         { cells: ['Three-phase separator', 'Splits oil, gas and water by gravity and meters each phase'] },
@@ -58,7 +64,7 @@ const ARTICLE: BlogArticleSeed = {
     },
     {
       type: 'prose',
-      html: '<p>SLB’s description of the chain: the separator sits downstream of the choke manifold that controls flow at surface; the heater is placed upstream of the separator; the surge tank downstream of it; and the burner downstream of the surge tank disposes of the gas. The data header and sand filter usually go upstream of the choke, close to the well, where pressure is highest. On knock-out drums ahead of the flare, liquid carried over with the gas is caught before it reaches the flame.</p><p>For the flowhead, SSV and ESD system, see <a href="/blog/surface-safety-valves-and-esd-systems">surface safety valves and ESD</a>; for the iron that joins the units, <a href="/blog/flow-iron-explained">flow iron</a>.</p>',
+      html: '<p>SLB’s description of the chain: the separator sits downstream of the choke manifold that controls flow at surface; the heater is placed upstream of the separator; the surge tank downstream of it; and the burner downstream of the surge tank disposes of the gas. The data header and sand filter usually go upstream of the choke, close to the well, where pressure is highest. On knock-out drums ahead of the flare, liquid carried over with the gas is caught before it reaches the flame.</p><p>For the flowhead, SSV and ESD system, see <a href="/blog/surface-safety-valves-and-esd-systems">surface safety valves and ESD</a>; for the iron that joins the units, <a href="/blog/flow-iron-explained">flow iron</a>.</p><p>After a frac or a plug mill-out the stream carries more solids than a sand filter is meant for. A <strong>cyclonic desander</strong> spins sand out of the flow; Hunting places its unit upstream of the choke manifold for well testing, frac flowback and clean-up, and claims it handles a wider range of particle sizes and larger volumes of solids than sand filters, with dual pots so sand can be dumped while the other pot stays on line. A <strong>debris or plug catcher</strong> takes out larger pieces — bridge-plug fragments and milling debris — upstream of the sand separator or choke manifold, with a bypass so the screen can be isolated, depressurised and the debris measured. We list a <a href="/p/cyclone-desander-flowback">cyclone desander</a>, a <a href="/p/double-barrel-screen-desander">double-barrel screen desander</a> and a <a href="/p/debris-catcher-dual-channel">dual-channel debris catcher</a>, rated 5,000 to 20,000 psi.</p>',
     },
 
     { type: 'section_head', number: '/02', title: 'Ratings and codes.', anchor: 'codes' },
@@ -85,12 +91,12 @@ const ARTICLE: BlogArticleSeed = {
     },
     {
       type: 'prose',
-      html: '<h3>What we list</h3><p>Well testing equipment:</p>' + stockList(['wt-3-phase-separator', 'wt-surge-tank', 'wt-knock-out-drum', 'wt-sand-filter', 'wt-data-header', 'wt-mpfm-system', 'wt-transfer-pump', 'wt-flush-test-pump', 'wt-piping-packages', 'wt-flare-stack', 'wt-esd-panel']),
+      html: '<h3>What we list</h3><p>Well testing equipment:</p>' + stockList(['wt-3-phase-separator', 'wt-surge-tank', 'wt-knock-out-drum', 'wt-sand-filter', 'wt-desanders-debris-catchers', 'wt-data-header', 'wt-mpfm-system', 'wt-transfer-pump', 'wt-flush-test-pump', 'wt-piping-packages', 'wt-flare-stack', 'wt-esd-panel']),
     },
     {
       type: 'product_embed',
       heading: 'Well testing equipment',
-      skus: ['IH-3PS-1440-60X15-DNV', 'IH-WTS-DC100-600-DNV', 'IH-SFL-DP-10K-SS316-DNV', 'IH-OFE-DHD', 'IH-MPFM-SKD-RXE-CMPCT', 'IH-FLS-TRL-HYD-60-TRI', 'IH-ESD-1SSV-SS316-3R', 'IH-WTPP-1502-15K-NACE'],
+      skus: ['IH-3PS-1440-60X15-DNV', 'IH-WTS-DC100-600-DNV', 'IH-SFL-DP-10K-SS316-DNV', 'IH-OFE-DHD', 'IH-MPFM-SKD-RXE-CMPCT', 'IH-FLS-TRL-HYD-60-TRI', 'IH-ESD-1SSV-SS316-3R', 'IH-OFE-CYD'],
     },
     { type: 'category_link', slug: 'wt-3-phase-separator', label: 'Well test separators', blurb: 'Three-phase test separators.' },
     { type: 'page_link', kind: 'industry', slug: 'oil-gas', label: 'Oil & gas', blurb: 'Exploration and appraisal well testing.' },
@@ -100,6 +106,8 @@ const ARTICLE: BlogArticleSeed = {
       entries: [
         { id: 'slb-or-2007', text: 'Aghar et al. “The Expanding Scope of Well Testing.” SLB Oilfield Review, Spring 2007, pp. 44–59.', url: 'https://www.slb.com/-/media/files/oilfield-review/p44-59-english' },
         { id: 'slb-mcwt', text: 'SLB. Modular Compact Well Test System product sheet.', url: 'https://www.slb.com/-/media/files/testing-services/product-sheet/mcwt-ps.ashx' },
+        { id: 'hunting-desander', text: 'Hunting. Cyclonic Wellhead Desander.', url: 'https://tools.hunting-intl.com/well-intervention-equipment/well-testing/cyclonic-wellhead-desander' },
+        { id: 'hunting-plug-catcher', text: 'Hunting. Wellhead Plug Catcher.', url: 'https://tools.hunting-intl.com/well-intervention-equipment/well-testing/wellhead-plug-catcher' },
         { id: 'asme-stamps', text: 'ASME. Boiler and Pressure Vessel Certification Program.', url: 'https://www.asme.org/certification-accreditation/boiler-and-pressure-vessel-certification-program' },
       ],
     },
@@ -110,7 +118,7 @@ const ARTICLE: BlogArticleSeed = {
     {
       type: 'as_of_stamp',
       verifiedOn: '2026-10-21',
-      note: 'Spread order, functions and ratings from SLB Oilfield Review (2007) and SLB’s compact well test system sheet; stamps from ASME.',
+      note: 'Spread order, functions and ratings from SLB Oilfield Review (2007) and SLB’s compact well test system sheet; desanders and debris catchers from Hunting product pages; stamps from ASME.',
     },
     {
       type: 'cta_block',

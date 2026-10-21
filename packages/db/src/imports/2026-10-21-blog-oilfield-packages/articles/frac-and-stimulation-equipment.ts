@@ -7,7 +7,9 @@ import { stockList } from '../products'
  * auger configurations; hydration units for on-the-fly hydration, 90/180/270 bbl tanks; LAS up to 12 chemical
  * circuits; data vans controlling the spread; acid units; combo units); NOV non-fired nitrogen pumping unit page (rate
  * classes in scf per hour; 360K = 360,000 scfh at 10,000 psi; 90K to 15,000 psi); SLB Energy Glossary (blender,
- * crosslinker, batch mixer, triplex pump, densitometer); Halliburton fracturing equipment page.
+ * crosslinker, batch mixer, triplex pump, densitometer); Halliburton fracturing equipment page. Added 2026-10-21: SLB
+ * Energy Glossary "frac tree" (christmas tree for the fracturing process; upper and lower master valves, flow cross,
+ * wing valves, goat head, swab valve; larger bores and higher pressure ratings than production trees).
  * NOT used: frac manifold, sand silo and frac tank specifics (no maker source read); LN2 gas conversion.
  */
 const ARTICLE: BlogArticleSeed = {
@@ -51,12 +53,13 @@ const ARTICLE: BlogArticleSeed = {
         { cells: ['Blender', 'Mixes fluid, sand and chemicals into slurry and feeds the pumpers', 'Barrels per minute'], highlight: true },
         { cells: ['Frac pumpers', 'Raise slurry to treating pressure', 'Hydraulic horsepower'], highlight: true },
         { cells: ['Frac manifold (missile)', 'Feeds every pumper from the blender and gathers their discharge into one treating line', 'Number of pumpers, pressure'] },
+        { cells: ['Frac tree', 'Christmas tree for the frac job: master valves, flow cross, wing valves, goat head and swab valve', 'Bore and working pressure'] },
         { cells: ['Data van', 'Monitors and controls the whole spread', '—'] },
       ],
     },
     {
       type: 'prose',
-      html: '<p>NOV’s figures give the scale: frac pumps up to 3,000+ brake horsepower in triplex and quintuplex designs; blenders rated to 135+ BPM, twin designs to 150+, with automated density and chemical control and auger sand metering; hydration units with 90, 180 and 270 bbl tanks that hydrate fluid “on the fly” and avoid the cost of disposing of unused pre-gelled fluid; and liquid additive systems with up to 12 automated chemical circuits. The data van controls fracturing, acidizing, pump-down and cementing equipment from one station. Density is monitored constantly, especially when mixing slurries.</p>',
+      html: '<p>NOV’s figures give the scale: frac pumps up to 3,000+ brake horsepower in triplex and quintuplex designs; blenders rated to 135+ BPM, twin designs to 150+, with automated density and chemical control and auger sand metering; hydration units with 90, 180 and 270 bbl tanks that hydrate fluid “on the fly” and avoid the cost of disposing of unused pre-gelled fluid; and liquid additive systems with up to 12 automated chemical circuits. The data van controls fracturing, acidizing, pump-down and cementing equipment from one station. Density is monitored constantly, especially when mixing slurries.</p><p>At the well, the treating line lands on a <strong>frac tree</strong> — in SLB’s definition a christmas tree installed for the fracturing process, typically with upper and lower master valves, a flow cross, wing valves, a goat head and a swab valve, and with larger bores and higher pressure ratings than a production tree to take frac rates and pressures. Our <a href="/p/frac-tree-api-6a-10000-20000-psi">API 6A frac tree</a> runs 5-1/8″ to 7-1/16″ bore at 10,000 to 20,000 psi. For the tree’s place on the wellhead, see <a href="/blog/wellhead-components-explained">wellhead components explained</a>.</p>',
     },
 
     { type: 'section_head', number: '/02', title: 'Acid and nitrogen.', anchor: 'stimulation' },
@@ -71,13 +74,14 @@ const ARTICLE: BlogArticleSeed = {
         { question: 'What equipment is on a frac spread?', answer: 'Frac tanks, a hydration unit, liquid additive system, sand silos, a blender, several frac pumpers, a frac manifold, treating iron and a data van.' },
         { question: 'What does a frac blender do?', answer: 'It mixes base fluid, sand and chemicals into slurry at a controlled density and feeds it to the pumpers.' },
         { question: 'What is a frac missile?', answer: 'The frac manifold: it distributes slurry from the blender to each pumper and gathers their high-pressure discharge into the treating line to the well.' },
+        { question: 'How is a frac tree different from a production tree?', answer: 'It is installed for the fracturing job and typically has larger bores and higher pressure ratings, with master valves, a flow cross, wing valves, a goat head and a swab valve.' },
         { question: 'What does 360K mean on a nitrogen unit?', answer: 'Its pumping rate class — 360,000 standard cubic feet of nitrogen per hour.' },
         { question: 'Why are acid tanks lined?', answer: 'So the acid does not attack the steel; FRP linings are common.' },
       ],
     },
     {
       type: 'prose',
-      html: '<h3>What we list</h3><p>Frac and stimulation equipment:</p>' + stockList(['frac-pumpers', 'frac-blender', 'frac-hydration-unit', 'frac-las', 'frac-manifold', 'frac-sand-silos', 'frac-tanks', 'frac-transfer-pumps', 'frac-data-van', 'stimulation-pumping-units', 'stimulation-nitrogen-unit', 'stimulation-acid-tanks', 'stimulation-batch-mixers', 'stimulation-transfer-pump']),
+      html: '<h3>What we list</h3><p>Frac and stimulation equipment:</p>' + stockList(['frac-pumpers', 'frac-blender', 'frac-hydration-unit', 'frac-las', 'frac-manifold', 'frac-trees', 'frac-sand-silos', 'frac-tanks', 'frac-transfer-pumps', 'frac-data-van', 'stimulation-pumping-units', 'stimulation-nitrogen-unit', 'stimulation-acid-tanks', 'stimulation-batch-mixers', 'stimulation-transfer-pump']),
     },
     {
       type: 'product_embed',
@@ -93,6 +97,7 @@ const ARTICLE: BlogArticleSeed = {
         { id: 'nov-pp', text: 'NOV. Pressure Pumping Equipment brochure.', url: 'https://assets.nov.com/NCP4N68N/at/2pkvb894nmcj9v5wft5vhtk8/Pressure_Pumping_Equipment_Brochure.pdf' },
         { id: 'nov-n2', text: 'NOV. Nitrogen Pumping Unit, Non-Fired.', url: 'https://www.nov.com/products/nitrogen-pumping-unit-non-fired' },
         { id: 'slb-crosslinker', text: 'SLB Energy Glossary. Crosslinker.', url: 'https://glossary.slb.com/en/terms/c/crosslinker' },
+        { id: 'slb-frac-tree', text: 'SLB Energy Glossary. Frac tree.', url: 'https://glossary.slb.com/en/terms/f/frac_tree' },
         { id: 'slb-blender', text: 'SLB Energy Glossary. Blender.', url: 'https://glossary.slb.com/en/terms/b/blender' },
       ],
     },
@@ -103,7 +108,7 @@ const ARTICLE: BlogArticleSeed = {
     {
       type: 'as_of_stamp',
       verifiedOn: '2026-10-21',
-      note: 'Equipment functions and ratings from NOV brochures and the SLB Energy Glossary.',
+      note: 'Equipment functions and ratings from NOV brochures and the SLB Energy Glossary (including frac tree).',
     },
     {
       type: 'cta_block',

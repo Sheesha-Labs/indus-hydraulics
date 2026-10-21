@@ -106,6 +106,7 @@ export const SHELVES = {
     { sku: 'IH-OFV-INST-NEEDLE-14-NPT-15K-SOUR-FMC', slug: 'needle-valve-1-4-in-npt-15-000-psi-sour-service-316ss-body', title: 'Needle Valve, 1/4 in NPT, 15,000 psi, Sour Service, 316SS Body' },
   ],
   'oilfield-globe-valves': [
+    { sku: 'IH-OFE-GLB', slug: 'api-6a-globe-valve-3000-15000-psi', title: 'API 6A Globe Valve, 2-1/16" to 7-1/16", 3,000 to 15,000 psi' },
     { sku: 'IH-OFV-GLOBE-1-1500RF-3705-SOUR-CAMERON', slug: 'globe-valve-1-in-1500-rf-3-705-psi-sour-service', title: 'Globe Valve, 1 in × 1500# RF, 3,705 psi, Sour Service' },
     { sku: 'IH-OFV-GLOBE-2-150RF-285-STD-INDUS', slug: 'globe-valve-2-in-150-rf-285-psi-standard-service', title: 'Globe Valve, 2 in × 150# RF, 285 psi, Standard Service' },
     { sku: 'IH-OFV-GLOBE-2-300RF-740-SOUR-FMC', slug: 'globe-valve-2-in-300-rf-740-psi-sour-service', title: 'Globe Valve, 2 in × 300# RF, 740 psi, Sour Service' },
@@ -120,12 +121,30 @@ export const SHELVES = {
     { sku: 'IH-OFV-ACC-INDICATOR-POSITION-CAMERON', slug: 'valve-position-indicator-with-4-20-ma-loop-output-and-local-led-display', title: 'Valve Position Indicator with 4-20 mA Loop Output and Local LED Display' },
   ],
   'oilfield-ssv-esd-valves': [
+    { sku: 'IH-OFE-HIP', slug: 'hipps-high-integrity-pressure-protection-system', title: 'HIPPS High Integrity Pressure Protection System, SIL 3' },
+    { sku: 'IH-OFE-SSV', slug: 'surface-safety-valve-hydraulic-api-6a', title: 'Surface Safety Valve (SSV), Hydraulic, API 6A, 1-13/16" to 7-1/16"' },
     { sku: 'IH-OFV-SSV-3116-15K-FE-FMC', slug: 'surface-safety-valve-hydraulic-sah-3-1-16-in-15m-flanged-each-fe-15-000-psi-api-6a-psl-3-ssv-class-ii-ee-hf', title: 'Surface Safety Valve, Hydraulic SAH, 3-1/16 in × 15M Flanged Each (FE), 15,000 psi, API 6A PSL 3 SSV, EE' },
     { sku: 'IH-OFV-SSV-2116-15K-FE-CAMERON', slug: 'surface-safety-valve-hydraulic-2-1-16-in-15m-flanged-each-fe-15-000-psi-api-6a-psl-3-ssv-class-ii-ee-0-5', title: 'Surface Safety Valve, Hydraulic, 2-1/16 in × 15M Flanged Each (FE), 15,000 psi, API 6A PSL 3 SSV, EE-0.5' },
     { sku: 'IH-OFV-SSV-3116-10K-1502-CAMERON', slug: 'surface-safety-valve-hydraulic-3-1-16-in-10m-flanged-inlet-3-in-1502-f-m-outlet-10-000-psi-api-6a-psl-3-pr1-ee-1-5', title: 'Surface Safety Valve, Hydraulic, 3-1/16 in × 10M Flanged Inlet × 3 in 1502 F×M Outlet, 10,000 psi, API 6A PSL 3 PR2, EE-1.5' },
   ],
   'wt-esd-panel': [
     { sku: 'IH-ESD-1SSV-SS316-3R', slug: 'esd-panel-single-ssv-control-ss316-haskel-maximator-3-remote-stations', title: 'ESD Panel, Single-SSV Control, SS316, Haskel + Maximator, 3 Remote Stations' },
+  ],
+  'industrial-butterfly-valves': [
+    { sku: 'IH-PV-BFC', slug: 'concentric-butterfly-valve-rubber-lined', title: 'Concentric Butterfly Valve, Rubber Lined' },
+    { sku: 'IH-PV-BFD', slug: 'double-offset-butterfly-valve-api-609', title: 'Double Offset Butterfly Valve, API 609' },
+    { sku: 'IH-PV-BFT', slug: 'triple-offset-butterfly-valve-api-609', title: 'Triple Offset Butterfly Valve, Metal Seated, API 609' },
+  ],
+  'valve-actuators': [
+    { sku: 'IH-OFE-AHC', slug: 'compact-hydraulic-actuator-api-6a', title: 'Compact Hydraulic Actuator for API 6A Gate Valves' },
+    { sku: 'IH-OFE-AHD', slug: 'hydraulic-double-acting-actuator-api-6a', title: 'Hydraulic Double-Acting Actuator for API 6A Gate Valves' },
+    { sku: 'IH-OFE-AHS', slug: 'hydraulic-single-acting-actuator-api-6a', title: 'Hydraulic Single-Acting Actuator for API 6A Gate Valves' },
+    { sku: 'IH-OFE-APD', slug: 'pneumatic-diaphragm-actuator-api-6a', title: 'Pneumatic Diaphragm Actuator for API 6A Gate Valves' },
+    { sku: 'IH-OFE-APP', slug: 'pneumatic-piston-actuator-api-6a', title: 'Pneumatic Piston Actuator for API 6A Gate Valves' },
+  ],
+  'wellhead-control-panels': [
+    { sku: 'IH-OFE-HSD', slug: 'hydraulic-emergency-shutdown-system-self-contained', title: 'Self-Contained Hydraulic Emergency Shutdown System' },
+    { sku: 'IH-OFE-WHC', slug: 'wellhead-control-panel-whcp', title: 'Wellhead Control Panel (WHCP), Single or Multi-Well' },
   ],
 } satisfies Record<string, Listing[]>
 

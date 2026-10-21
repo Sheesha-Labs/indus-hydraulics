@@ -7,7 +7,9 @@ import { stockList } from '../products'
  * non-nuclear density; cement pumpers with recirculating mixer and twin displacement tanks; automatic density control;
  * bulk tanks and pneumatic conveying); SLB Energy Glossary (recirculating mixer; mud balance ±0.1 lbm/gal; pressurised
  * mud balance; degasser — vacuum and surface-area types, mud gas separator for heavily gas-cut mud; standpipe about
- * one-third up the derrick, dual standpipes; triplex pump).
+ * one-third up the derrick, dual standpipes; triplex pump). Added 2026-10-21: SLB Energy Glossary "kill line" (high-
+ * pressure pipe from a BOP stack outlet to the rig's high-pressure pumps; kill fluid normally pumped down the
+ * drillstring; heavy fluid pumped into the top of the well when the drillpipe is inaccessible); API 16C by title.
  * NOT used: mud pump model ratings, U-tube seal sizing, API RP 13B / 10B wording (not read).
  */
 const ARTICLE: BlogArticleSeed = {
@@ -51,11 +53,12 @@ const ARTICLE: BlogArticleSeed = {
         { cells: ['Dust collector', 'Captures cement dust vented from silos and bulk transfer'] },
         { cells: ['Rock catcher', 'Strains debris out of the slurry before it reaches the pumps'] },
         { cells: ['Cutting bottle', 'Opens bulk bags of cement or additive into the system'] },
+        { cells: ['Cement and kill manifold', 'Valves and chokes on a skid between the pumps and the well, for cementing lines and for pumping kill fluid'] },
       ],
     },
     {
       type: 'prose',
-      html: '<p>NOV describes batch mix units as the economical way to ensure homogeneous slurry of an exact density, with recirculating mixers and non-nuclear density measurement, and cement pumpers with high-energy recirculating mixers, twin displacement tanks and mix-water flowmeters. Density is held by automated control of mix water and cement feed. For field checks, SLB gives the mud balance’s accuracy as ±0.1 lbm/gal; a pressurised balance removes the effect of entrained air.</p>',
+      html: '<p>NOV describes batch mix units as the economical way to ensure homogeneous slurry of an exact density, with recirculating mixers and non-nuclear density measurement, and cement pumpers with high-energy recirculating mixers, twin displacement tanks and mix-water flowmeters. Density is held by automated control of mix water and cement feed. For field checks, SLB gives the mud balance’s accuracy as ±0.1 lbm/gal; a pressurised balance removes the effect of entrained air.</p><p>The high-pressure pumps also serve well control. SLB defines the <strong>kill line</strong> as a high-pressure pipe from an outlet on the BOP stack to the rig’s high-pressure pumps: kill fluid is normally pumped down the drillstring, but if the drillpipe cannot be reached, heavy fluid can be pumped into the top of the well. A <a href="/p/cement-and-kill-manifold">cement and kill manifold</a> puts the valves and chokes for that line and the cementing lines on one skid, 2-1/16″ to 7-1/16″ and 3,000 to 20,000 psi. Choke and kill equipment falls under API 16C; see <a href="/blog/api-16c-choke-and-kill-lines">API 16C choke and kill lines</a>.</p>',
     },
 
     { type: 'section_head', number: '/02', title: 'Drilling-fluid equipment.', anchor: 'mud' },
@@ -75,7 +78,7 @@ const ARTICLE: BlogArticleSeed = {
     },
     {
       type: 'prose',
-      html: '<h3>What we list</h3><p>Cementing and drilling-fluid equipment:</p>' + stockList(['cementing-units', 'cementing-batch-mixer', 'cementing-on-the-fly-mixer', 'cementing-silos', 'cementing-dust-collector', 'cementing-rock-catcher', 'cementing-cutting-bottle', 'dw-mud-tanks', 'dw-liquid-mud-plant', 'dw-mud-pump-package', 'dw-mud-manifolds', 'dw-mud-degasser', 'dw-workover-tanks', 'dw-mobile-labs-workshops']),
+      html: '<h3>What we list</h3><p>Cementing and drilling-fluid equipment:</p>' + stockList(['cementing-units', 'cementing-batch-mixer', 'cementing-on-the-fly-mixer', 'cementing-silos', 'cementing-dust-collector', 'cementing-rock-catcher', 'cementing-cutting-bottle', 'cement-manifolds', 'dw-mud-tanks', 'dw-liquid-mud-plant', 'dw-mud-pump-package', 'dw-mud-manifolds', 'dw-mud-degasser', 'dw-workover-tanks', 'dw-mobile-labs-workshops']),
     },
     {
       type: 'product_embed',
@@ -91,6 +94,7 @@ const ARTICLE: BlogArticleSeed = {
         { id: 'nov-pp', text: 'NOV. Pressure Pumping Equipment brochure.', url: 'https://assets.nov.com/NCP4N68N/at/2pkvb894nmcj9v5wft5vhtk8/Pressure_Pumping_Equipment_Brochure.pdf' },
         { id: 'slb-degasser', text: 'SLB Energy Glossary. Degasser.', url: 'https://glossary.slb.com/en/terms/d/degasser' },
         { id: 'slb-mud-balance', text: 'SLB Energy Glossary. Mud balance.', url: 'https://glossary.slb.com/en/terms/m/mud_balance' },
+        { id: 'slb-kill-line', text: 'SLB Energy Glossary. Kill line.', url: 'https://glossary.slb.com/en/terms/k/kill_line' },
         { id: 'slb-standpipe', text: 'SLB Energy Glossary. Standpipe.', url: 'https://glossary.slb.com/en/terms/s/standpipe' },
       ],
     },
@@ -101,7 +105,7 @@ const ARTICLE: BlogArticleSeed = {
     {
       type: 'as_of_stamp',
       verifiedOn: '2026-10-21',
-      note: 'Equipment functions from NOV’s pressure pumping brochure and the SLB Energy Glossary.',
+      note: 'Equipment functions from NOV’s pressure pumping brochure and the SLB Energy Glossary (including kill line).',
     },
     {
       type: 'cta_block',

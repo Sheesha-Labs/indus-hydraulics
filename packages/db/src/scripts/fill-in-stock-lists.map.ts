@@ -79,7 +79,7 @@ export const FILL_INS: FillIn[] = [
   { post: 'api-6a-nameplate-markings', shelves: ['oilfield-gate-valves'] },
   { post: 'mud-gate-valve-repair-kits', shelves: ['gate-valve-repair-kits'] },
   { post: 'oilfield-check-valves-explained', shelves: ['oilfield-check-valves'] },
-  { post: 'lubricated-vs-non-lubricated-plug-valves', shelves: ['oilfield-plug-valves'] },
+  { post: 'lubricated-vs-non-lubricated-plug-valves', shelves: ['oilfield-plug-valves', 'industrial-plug-valves'] },
   { post: 'demco-butterfly-valve-part-numbers', shelves: ['oilfield-butterfly-valves'] },
   { post: 'positive-vs-adjustable-chokes', shelves: ['oilfield-choke-valves'] },
   { post: 'ball-valve-pressure-ratings-cwp-wog', shelves: ['industrial-ball-valves', 'hydraulic-ball-valves', 'oilfield-ball-valves'] },
