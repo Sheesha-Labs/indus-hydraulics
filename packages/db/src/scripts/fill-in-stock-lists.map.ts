@@ -42,11 +42,11 @@ export const FILL_INS: FillIn[] = [
   // Hydraulic and industrial hose couplings
   { post: 'hydraulic-quick-couplers-iso-7241', shelves: ['quick-couplers'] },
   { post: 'industrial-hose-couplings-guide', shelves: ['storz-couplings'] },
-  { post: 'cam-and-groove-coupling-types', shelves: ['cam-and-groove-couplings'] },
+  { post: 'cam-and-groove-coupling-types', shelves: ['cam-and-groove-couplings', 'specialty-adapters-couplings'] },
   { post: 'bauer-couplings-explained', shelves: ['bauer-type-couplings', 'ring-lock-couplings'] },
   { post: 'dry-disconnect-vs-camlock-couplings', shelves: ['dry-disconnect-couplings'] },
-  { post: 'industrial-hose-clamps', shelves: ['hose-clamps-sleeves-ferrules'] },
-  { post: 'universal-air-couplings-explained', shelves: ['universal-air-couplings', 'crowfoot-couplings'] },
+  { post: 'industrial-hose-clamps', shelves: ['hose-clamps-sleeves-ferrules', 'hose-menders'] },
+  { post: 'universal-air-couplings-explained', shelves: ['universal-air-couplings', 'crowfoot-couplings', 'industrial-interchange-fittings'] },
   { post: 'kc-nipples-and-shank-couplings', shelves: ['kc-nipple-fittings', 'shank-couplings', 'pin-lug-shank-couplings'] },
   { post: 'en-14420-hose-fittings-explained', shelves: ['en14420-5-fittings'] },
   { post: 'guillemin-couplings-explained', shelves: ['guillemin-couplings'] },
@@ -54,6 +54,10 @@ export const FILL_INS: FillIn[] = [
   { post: 'ground-joint-steam-couplings', shelves: ['ground-joint-couplings'] },
   { post: 'bulk-material-and-sandblast-hose', shelves: ['sandblast-couplings'] },
   { post: 'flanged-hose-connections', shelves: ['industrial-flanges'] },
+  // Added 2026-10-21 (blog linkage wave 4): hose accessory shelves with a host article.
+  { post: 'contamination-during-a-hose-change', shelves: ['dust-caps-plugs'] },
+  { post: 'tanker-loading-and-vapour-recovery-hose', shelves: ['hose-swivel-joints'] },
+  { post: 'compressed-air-hose-selection', shelves: ['air-water-hoses'] },
 
   // Industrial, metal and oilfield hose
   { post: 'exotic-alloy-metal-hose', shelves: ['metallic-exotic-alloy-hoses'] },
