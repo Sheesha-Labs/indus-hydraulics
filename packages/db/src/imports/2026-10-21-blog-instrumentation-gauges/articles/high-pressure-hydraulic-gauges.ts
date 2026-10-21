@@ -6,7 +6,9 @@ import type { BlogArticleSeed } from '../shared'
  * cylinders, 1 % FS, 100 mm, 1/2" NPTF); GT tonnage gauges; GA45GC (45°, CR400 coupler, 3/8"-18 NPTF male, G2535L);
  * DGR2 (20,000 psi, ±0.25 % FS); V91 snubber valve, V10 auto-damper, NV251 shut-off; "window into the system";
  * ≤75 % rule; lowest-rated component rule (L2561). RC-106 force example from Enerpac Basic Hydraulics.
- * NOT used: "H high-cycle" 4" gauges and "T-6000 to 50,000 psi" (not found on Enerpac sites).
+ * Added 2026-10-21 after a second check: H-series dry high-cycle gauges (Enerpac G/H-series datasheet: "High Cycle
+ * Dry Gauges … for high cycle and harsh environments"; H4049L/H4071L, 10,000 psi) and T-6000 test system gauges
+ * (T6001L–T6011L, 1,000–50,000 psi, alloy or stainless steel, per Enerpac part descriptions and stockist listings).
  */
 const ARTICLE: BlogArticleSeed = {
   slug: 'high-pressure-hydraulic-gauges',
@@ -45,7 +47,7 @@ const ARTICLE: BlogArticleSeed = {
     { type: 'section_head', number: '/02', title: 'Pressure gauges.', anchor: 'pressure' },
     {
       type: 'prose',
-      html: '<p>Enerpac’s analogue G-series covers 100 to 15,000 psi (7 to 1,000 bar). The 63 mm G2535L is typical of a 10,000 psi system gauge: 10,000 psi / 700 bar, glycerine-filled, ±1.5% of full scale, dual psi and bar scales, a 1/4" NPTF lower connection, and a safety blow-out disc with a pressure-equalising membrane. Larger 4" (100 mm) gauges are easier to read at a distance; Enerpac also lists 1.5" rear-mount gauges to 10,000 psi for compact pumps and tools.</p><p>Beyond Enerpac, our general high-pressure gauges include a 6" dial, 1/2" NPT bottom-mount 0–10,000 psi gauge with an SS316 connection and glycerine fill, offered to 15,000 psi and with NACE MR0175 materials on request.</p><h3>Range</h3><p>Enerpac’s guidance is that a gauge should be operated at pressures that do not normally exceed 75% of full scale — and that reading a low pressure on a very high-range gauge (its example: 25 bar on a 1,000 bar gauge) costs accuracy. On a 10,000 psi pump, a 0–10,000 psi gauge is normal for jacking to 6,000–7,500 psi; for work that must be read precisely at low pressure, add a lower-range gauge or use a digital one. See <a href="/blog/how-to-choose-a-pressure-gauge-range">choosing a gauge range</a>.</p>',
+      html: '<p>Enerpac’s analogue G-series covers 100 to 15,000 psi (7 to 1,000 bar). The 63 mm G2535L is typical of a 10,000 psi system gauge: 10,000 psi / 700 bar, glycerine-filled, ±1.5% of full scale, dual psi and bar scales, a 1/4" NPTF lower connection, and a safety blow-out disc with a pressure-equalising membrane. Larger 4" (100 mm) gauges are easier to read at a distance; Enerpac also lists 1.5" rear-mount gauges to 10,000 psi for compact pumps and tools.</p><h3>Filled or dry, and beyond 15,000 psi</h3><p>Not every Enerpac gauge is filled. Its H-series are dry gauges built for high-cycle work and harsh environments, at 10,000 psi on a 4" face with 1/4" or 1/2" NPTF connections; Enerpac recommends a snubber or needle valve to shut them off when not in use. Above the G-series’ 15,000 psi, Enerpac’s T-6000 test system gauges run from 1,000 psi up to 20,000, 40,000 and 50,000 psi, in alloy or stainless steel, for test benches and high-pressure proof testing rather than everyday jacking. See <a href="/blog/glycerine-filled-vs-dry-pressure-gauges">filled vs dry gauges</a>.</p><p>Beyond Enerpac, our general high-pressure gauges include a 6" dial, 1/2" NPT bottom-mount 0–10,000 psi gauge with an SS316 connection and glycerine fill, offered to 15,000 psi and with NACE MR0175 materials on request.</p><h3>Range</h3><p>Enerpac’s guidance is that a gauge should be operated at pressures that do not normally exceed 75% of full scale — and that reading a low pressure on a very high-range gauge (its example: 25 bar on a 1,000 bar gauge) costs accuracy. On a 10,000 psi pump, a 0–10,000 psi gauge is normal for jacking to 6,000–7,500 psi; for work that must be read precisely at low pressure, add a lower-range gauge or use a digital one. See <a href="/blog/how-to-choose-a-pressure-gauge-range">choosing a gauge range</a>.</p>',
     },
 
     { type: 'section_head', number: '/03', title: 'Force gauges: reading the load directly.', anchor: 'force' },
@@ -84,6 +86,7 @@ const ARTICLE: BlogArticleSeed = {
         { question: 'Why do I need a gauge on a hydraulic hand pump?', answer: 'It is the only way to see the pressure — and so the load — and to avoid exceeding the cylinder, hose or relief rating. Enerpac calls the gauge a window into the system.' },
         { question: 'What is a hydraulic force gauge?', answer: 'A gauge with a force scale (kN or tonnes) as well as pressure, matched to the effective area of a specific cylinder so it reads the load directly.' },
         { question: 'Can I use a force gauge on a different cylinder?', answer: 'Only the pressure scale. The force scale is correct only for the cylinder area it was made for.' },
+        { question: 'Are all hydraulic gauges glycerine-filled?', answer: 'No. Enerpac’s G-series are glycerine-filled, but its H-series are dry gauges designed for high-cycle work and harsh environments.' },
         { question: 'How accurate are hydraulic gauges?', answer: 'Enerpac’s standard analogue gauges are ±1.5% of full scale; its GF force gauges ±1%; its DGR2 digital gauge ±0.25%.' },
         { question: 'What range gauge should I use on a 10,000 psi pump?', answer: 'Usually 0–10,000 psi, operated below about 75% of full scale. For precise low-pressure readings, add a lower-range or a digital gauge.' },
         { question: 'What is a gauge adaptor?', answer: 'A pressure-rated tee that goes between the pump or cylinder and the hose, with a third port for the gauge.' },
@@ -92,7 +95,7 @@ const ARTICLE: BlogArticleSeed = {
     {
       type: 'product_embed',
       heading: 'High-pressure gauges and adaptors',
-      skus: ['IH-ENE-GAUGE-G25', 'IH-ENE-GAUGE-GF', 'IH-ENE-GAUGE-DGR', 'IH-ENE-GAUGE-GA45GC', 'IH-ENE-GAUGE-GP', 'IH-PG-12NPT-BM-6IN-10K'],
+      skus: ['IH-ENE-GAUGE-G25', 'IH-ENE-GAUGE-G40', 'IH-ENE-GAUGE-GF', 'IH-ENE-GAUGE-DGR', 'IH-ENE-GAUGE-T6000', 'IH-ENE-GAUGE-GA45GC', 'IH-ENE-GAUGE-GP', 'IH-PG-12NPT-BM-6IN-10K'],
     },
     { type: 'category_link', slug: 'ic-pressure-gauges', label: 'Pressure gauges', blurb: 'Including 10,000–20,000 psi analogue, force and digital gauges.' },
     { type: 'category_link', slug: 'high-pressure-cylinders', label: '10,000 psi cylinders', blurb: 'The cylinders these gauges read.' },
