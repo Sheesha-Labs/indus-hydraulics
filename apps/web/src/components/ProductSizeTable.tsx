@@ -325,7 +325,7 @@ export default function ProductSizeTable({
                 can ask for it stamped. A hose has no such drawing — its columns
                 are headed with what they are — so the offer would be an offer
                 of nothing. */}
-            {kind === 'fitting' || kind === 'lifting'
+            {kind === 'fitting' || kind === 'lifting' || kind === 'valve'
               ? ' Ask us for the dimension drawing if you need it stamped.'
               : ''}
           </p>
@@ -369,6 +369,13 @@ export default function ProductSizeTable({
             This range is published with a breaking load only, not a working load limit. Tell us
             the duty before using it to lift, and we will confirm a rating or recommend a rated
             part.
+          </p>
+        )}
+        {kind === 'valve' && (
+          <p>
+            Lengths are in millimetres and weights in kilograms, as published for each size and
+            class. The end connection, trim, seat and operator you order can change the length and
+            weight, so we confirm the general arrangement drawing with the quotation.
           </p>
         )}
         {kind === 'hose' && (

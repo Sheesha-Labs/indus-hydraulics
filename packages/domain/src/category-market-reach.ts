@@ -249,6 +249,18 @@ export const CATEGORY_REACH_PROFILES: Readonly<Record<string, MarketReachProfile
       'South-East Asia',
     ],
   },
+  'industrial-process-valves': {
+    heading: 'Where we ship process valves',
+    body: 'A process valve is specified by size, pressure class, body material and end connection, and those four mean the same thing on any plant that buys to ASME or EN. Most orders are built to that specification rather than picked from a shelf, so the lead time is set by the build and its testing, and the valve leaves Dubai crated with its material certificates and pressure-test records. Send the valve data sheet or the line list and we will quote against it.',
+    primaryRegion: 'GCC & Middle East',
+    rotatingRegions: [
+      'North Africa',
+      'West & Central Africa',
+      'East Africa',
+      'South-East Asia',
+      'CIS & Caucasus',
+    ],
+  },
   'seals-accessories': {
     heading: 'Where we ship seals and accessories',
     body: 'Seals, filters and the small hardware around a hydraulic system are light enough that freight rarely decides the order — what decides it is having the right sizes on the shelf when something is opened up. Buyers on longer lanes tend to order these as a kit against a machine rather than singly, which is also how we prefer to quote them. Bring the dimensions or the failed part and we will match it.',
