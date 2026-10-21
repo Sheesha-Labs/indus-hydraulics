@@ -1,5 +1,6 @@
 import type { BlogArticleSeed } from '../shared'
 import { PUMP_PRESSURE_RANGES } from '../diagrams'
+import { stockList } from '../products'
 
 /**
  * Pillar: pump types. Pressure and speed figures are taken from the pumps on our own catalogue so every number
@@ -131,6 +132,10 @@ const ARTICLE: BlogArticleSeed = {
         { question: 'Why do piston pumps need a case drain?', answer: 'Internal leakage lubricates the pistons and collects in the pump case. It must return to tank at low pressure; a blocked or restricted drain pressurises the case and blows the shaft seal.' },
         { question: 'What is a variable displacement pump?', answer: 'A pump, usually axial piston, whose displacement per revolution can change while running, so it delivers only the flow the circuit needs — controlled by pressure, load-sensing or power-limiting controls.' },
       ],
+    },
+    {
+      type: 'prose',
+      html: '<h3>What we list</h3><p>Every gear pump, piston pump and power unit in the range:</p>' + stockList(['hydraulic-gear-pumps', 'hydraulic-piston-pumps', 'hydraulic-power-units']),
     },
     {
       type: 'product_embed',

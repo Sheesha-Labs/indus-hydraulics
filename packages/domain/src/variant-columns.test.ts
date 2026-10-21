@@ -691,3 +691,46 @@ describe('variantPartNumberHeading', () => {
     expect(variantPartNumberHeading(rows('15S26-10-10'), { slug: 'indus', name: 'Indus' })).toBe('Part no.')
   })
 })
+
+describe('valve tables', () => {
+  const row = (partNumber: string, dims: Record<string, string | number>): VariantLike => ({
+    partNumber,
+    hoseDash: null,
+    hoseInch: null,
+    hoseDn: null,
+    portLabel: null,
+    dimensions: dims,
+  })
+  const rows = [
+    row('IH-PV-GTC-150-02', { size: '2"', dn: '50', pressureClass: 'Class 150', lRf: 178, lBw: 216, H: 381, W: 200, weightRfKg: 21, weightBwKg: 17 }),
+    row('IH-PV-GTC-150-03', { size: '3"', dn: '80', pressureClass: 'Class 150', lRf: 203, lBw: 283, H: 432, W: 250, weightRfKg: 32, weightBwKg: 27 }),
+  ]
+
+  it('is read as a valve table even though the rows carry size, as rigging rows do', () => {
+    expect(variantTableKind(rows)).toBe('valve')
+  })
+
+  it('leads with size, DN and class', () => {
+    expect(variantTextColumns(rows).map((c) => c.key)).toEqual(['size', 'dn', 'pressureClass'])
+    expect(variantTextColumns(rows).every((c) => c.lead)).toBe(true)
+  })
+
+  it('orders lengths, then drawing letters, then weights', () => {
+    expect(variantDimensionColumns(rows).map((c) => c.key)).toEqual(['lRf', 'lBw', 'H', 'W', 'weightRfKg', 'weightBwKg'])
+  })
+
+  it('does not call a valve W a hex across flats', () => {
+    const w = variantDimensionColumns(rows).find((c) => c.key === 'W')!
+    expect(w.help).not.toMatch(/hex/i)
+    expect(w.unit).toBe('mm')
+  })
+
+  it('leads with the valve type when one listing covers several types', () => {
+    const mixed = [row('IH-PV-PSV-G-900-0200', { type: 'Gate', size: '2"', pressureClass: 'Class 900', lBw: 216 })]
+    expect(variantTextColumns(mixed).map((c) => c.key)).toEqual(['type', 'size', 'pressureClass'])
+  })
+
+  it('leaves a table without valve keys alone', () => {
+    expect(variantTableKind([row('IH-LR-X', { size: '1/2"', wllT: 2 })])).toBe('lifting')
+  })
+})
