@@ -1,5 +1,6 @@
 import type { BlogArticleSeed } from '../shared'
 import { TELESCOPIC_STAGES } from '../diagrams'
+import { stockList } from '../products'
 
 /**
  * Telescopic cylinders. Stage force and speed computed for an illustrative 4-stage cylinder (6/5/4/3" stage
@@ -108,6 +109,10 @@ const ARTICLE: BlogArticleSeed = {
         { question: 'How do I size a telescopic cylinder for a tipper?', answer: 'From the body length, payload and material, hinge-to-mount geometry, tipping angle and system pressure. For a replacement, match stroke, retracted length, stage count, mounts and rated capacity exactly.' },
         { question: 'Why do telescopic cylinders bend?', answer: 'Side load at full extension — tipping on uneven ground, a load that discharges unevenly, a worn stabiliser or wind on a raised body. Telescopics have almost no tolerance for it.' },
       ],
+    },
+    {
+      type: 'prose',
+      html: '<h3>What we list</h3><p>Every telescopic and specialty cylinder in the range:</p>' + stockList(['telescopic-specialty-cylinders']),
     },
     {
       type: 'product_embed',

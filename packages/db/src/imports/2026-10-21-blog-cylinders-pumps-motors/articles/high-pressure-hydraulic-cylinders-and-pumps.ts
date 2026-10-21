@@ -1,4 +1,5 @@
 import type { BlogArticleSeed } from '../shared'
+import { stockList } from '../products'
 
 /**
  * 10,000 psi systems. Enerpac series ranges from our listings and enerpac.com category pages; worked examples
@@ -117,6 +118,10 @@ const ARTICLE: BlogArticleSeed = {
         { question: 'Why do I need a gauge on a hand pump?', answer: 'Because the gauge is the only way to see the pressure — and so the load — and to avoid exceeding the cylinder’s rating or the relief setting.' },
         { question: 'Are aluminium cylinders as strong as steel?', answer: 'They carry the same rated load but have a shorter fatigue life — Enerpac rates aluminium at about 5,000 cycles at recommended pressure. Use them where weight matters, steel for repetitive work.' },
       ],
+    },
+    {
+      type: 'prose',
+      html: '<h3>What we list</h3><p>Every 10,000 psi cylinder, pump and fitting in the range:</p>' + stockList(['high-pressure-cylinders', 'high-pressure-hydraulic-pumps', 'high-pressure-fittings']),
     },
     {
       type: 'product_embed',
