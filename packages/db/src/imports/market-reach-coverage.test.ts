@@ -19,6 +19,7 @@ import { BUYING_FITTINGS_CATEGORY } from './2026-09-01-africa-fittings-wave-2/ca
 import { FITTINGS_BY_INDUSTRY_CATEGORY } from './2026-09-01-africa-fittings-wave-3/category'
 import { CYLINDERS_PUMPS_MOTORS_CATEGORY } from './2026-10-21-blog-cylinders-pumps-motors/category'
 import { INSTRUMENTATION_GAUGES_CATEGORY } from './2026-10-21-blog-instrumentation-gauges/category'
+import { STAINLESS_FITTINGS_CATEGORY } from './2026-10-21-blog-stainless-fittings/category'
 
 /**
  * The seam between the reach profiles, which live in `@indus/domain`, and the
@@ -39,6 +40,7 @@ const BLOG_CATEGORY_SLUGS = [
   FITTINGS_BY_INDUSTRY_CATEGORY.slug,
   CYLINDERS_PUMPS_MOTORS_CATEGORY.slug,
   INSTRUMENTATION_GAUGES_CATEGORY.slug,
+  STAINLESS_FITTINGS_CATEGORY.slug,
 ]
 
 /**

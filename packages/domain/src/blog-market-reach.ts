@@ -105,6 +105,19 @@ export const MARKET_REACH_PROFILES: Readonly<Record<string, MarketReachProfile>>
       'South-East Asia',
     ],
   },
+  'stainless-steel-fittings': {
+    heading: 'Where stainless fittings like these go',
+    body: 'Stainless jobs are rarely one part: a process skid needs butt-weld fittings, flanges and threaded fittings in one grade, a hygienic line needs clamps, ferrules and gaskets that match, and an offshore hydraulic panel needs every adapter in 316 so nothing rusts next to it. We quote the whole list from the sizes, grades and end connections you send, keep 304 and 316 apart, and ship from Dubai as one consignment with the mill certificates the project asks for.',
+    primaryRegion: 'GCC & Middle East',
+    rotatingRegions: [
+      'North Africa',
+      'East Africa',
+      'South Asia',
+      'West & Central Africa',
+      'CIS & Caucasus',
+      'South-East Asia',
+    ],
+  },
   'failure-analysis': {
     heading: 'Where we send the replacement',
     body: 'A failure correctly diagnosed is only worth something if the replacement can reach the machine. Assemblies built to the specification described here are made up and pressure-tested at our Dubai workshop and dispatched with the crimp record and test certificate travelling with them, which counts for more the further the machine sits from a hose shop. Most orders of this kind start as a photograph and a measurement rather than a part number, and that is enough for us to quote from.',

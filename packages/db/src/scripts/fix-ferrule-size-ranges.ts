@@ -50,7 +50,7 @@ function sizeOf(label: string): number {
 /** `1/2" tube (smooth)` → `1/2"`; `12 mm tube` → `12 mm`. */
 function sizeText(label: string): string {
   const m = label.match(/^(\d+(?:\.\d+)?\s*mm|(?:\d+-)?\d+(?:\/\d+)?")/)
-  return m ? m[1] : label
+  return m?.[1] ?? label
 }
 
 const isTube = (label: string) => /\btube\b/.test(label)
@@ -58,7 +58,7 @@ const isTube = (label: string) => /\btube\b/.test(label)
 function range(labels: string[]): { lo: string; hi: string } | null {
   if (labels.length === 0) return null
   const sorted = [...labels].sort((a, b) => sizeOf(a) - sizeOf(b))
-  return { lo: sorted[0], hi: sorted[sorted.length - 1] }
+  return { lo: sorted[0]!, hi: sorted[sorted.length - 1]! }
 }
 
 function rangeText(labels: string[]): string | null {
