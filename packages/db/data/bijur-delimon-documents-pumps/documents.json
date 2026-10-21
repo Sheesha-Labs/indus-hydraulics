@@ -1,0 +1,698 @@
+{
+ "source": "Bijur Delimon website document library, fetched 2026-10-21",
+ "docDir": "",
+ "keyPrefix": "bijur-delimon",
+ "caption": "Bijur Delimon website document library (fetched 2026-10-21). Maker document; Indus is an authorised Bijur Delimon distributor.",
+ "documents": [
+  {
+   "sku": "IH-BD-SFX1",
+   "position": 0,
+   "kind": "datasheet",
+   "title": "Bijur Delimon SureFire II Flyer",
+   "language": "en",
+   "file": "36409_SureFire-II_FL.pdf",
+   "bytes": 1040172,
+   "md5": "cf120d63bc3e7ca47165982d27564951"
+  },
+  {
+   "sku": "IH-BD-SFX3",
+   "position": 0,
+   "kind": "datasheet",
+   "title": "Bijur Delimon SureFire II Flyer",
+   "language": "en",
+   "file": "36409_SureFire-II_FL.pdf",
+   "bytes": 1040172,
+   "md5": "cf120d63bc3e7ca47165982d27564951"
+  },
+  {
+   "sku": "IH-BD-SFXZ",
+   "position": 0,
+   "kind": "datasheet",
+   "title": "Bijur Delimon SureFire II Flyer",
+   "language": "en",
+   "file": "36409_SureFire-II_FL.pdf",
+   "bytes": 1040172,
+   "md5": "cf120d63bc3e7ca47165982d27564951"
+  },
+  {
+   "sku": "IH-BD-MP",
+   "position": 0,
+   "kind": "datasheet",
+   "title": "Bijur Delimon MultiPort Datasheet",
+   "language": "en",
+   "file": "35693_LUB_Multiport_DS-R11.pdf",
+   "bytes": 791043,
+   "md5": "373365b0f95e1c18a81dac9d49f3de13"
+  },
+  {
+   "sku": "IH-BD-MP2",
+   "position": 0,
+   "kind": "datasheet",
+   "title": "Bijur Delimon MultiPort II PDI Datasheet",
+   "language": "en",
+   "file": "36750_LUB_Multiport-II_PDI_DS-R11_Farval.pdf",
+   "bytes": 1401672,
+   "md5": "db4c2556a0c1adc1599ddbc381c806cc"
+  },
+  {
+   "sku": "IH-BD-TM1",
+   "position": 0,
+   "kind": "datasheet",
+   "title": "Bijur Delimon TM-1 4L Pump Datasheet",
+   "language": "en",
+   "file": "34213_B_LUB_TM-1-4L_DS.pdf",
+   "bytes": 197532,
+   "md5": "c3cd4b4c7ae6f9106974e934e3699685"
+  },
+  {
+   "sku": "IH-BD-TM5",
+   "position": 0,
+   "kind": "datasheet",
+   "title": "Bijur Delimon TMD5 26201 3 datasheet (26275)",
+   "language": "en",
+   "file": "26275_B_LUB_TMD5-26201-3_DS.pdf",
+   "bytes": 1441040,
+   "md5": "db0015a07ba870ac2467e3800425d5f6"
+  },
+  {
+   "sku": "IH-BD-TM5",
+   "position": 1,
+   "kind": "service_manual",
+   "title": "Bijur Delimon TMD-5 Pump Datasheet",
+   "language": "en",
+   "file": "24117_B_LUB_TMD-5-pn-26350_SS_R6.pdf",
+   "bytes": 335856,
+   "md5": "8f965e79f846be1889a8451ef93426d5"
+  },
+  {
+   "sku": "IH-BD-TM5",
+   "position": 2,
+   "kind": "service_manual",
+   "title": "Bijur Delimon TMD5 26062 Bridgeport SS.1 (26394)",
+   "language": "en",
+   "file": "26394_B_LUB_TMD5-26062-Bridgeport_SS.1.pdf",
+   "bytes": 116592,
+   "md5": "bcd93e2768fbc779e5d23a502e979bb8"
+  },
+  {
+   "sku": "IH-BD-V5",
+   "position": 0,
+   "kind": "datasheet",
+   "title": "Bijur Delimon V5 27249 datasheet (34075)",
+   "language": "en",
+   "file": "34075_B_LUB_V5-27249_DS-R4.pdf",
+   "bytes": 313247,
+   "md5": "4cb6d7b855e176a75e31712f215199c6"
+  },
+  {
+   "sku": "IH-BD-V5W",
+   "position": 0,
+   "kind": "datasheet",
+   "title": "Bijur Delimon V5W Pump Datasheet",
+   "language": "en",
+   "file": "35771_B_LUB_V5W_DS-R3.pdf",
+   "bytes": 331725,
+   "md5": "261babdc88664b891ba93e73eb89d5fa"
+  },
+  {
+   "sku": "IH-BD-BL3",
+   "position": 0,
+   "kind": "datasheet",
+   "title": "Bijur Delimon BL Lubricator datasheet (35583)",
+   "language": "en",
+   "file": "35583_LUB_BL-Lubricator_DS-R5.pdf",
+   "bytes": 251284,
+   "md5": "c4bb0dc61f64adf5f24f5b139ecf91d5"
+  },
+  {
+   "sku": "IH-BD-GPO",
+   "position": 0,
+   "kind": "datasheet",
+   "title": "Bijur Delimon GPO Lubricator Datasheet",
+   "language": "en",
+   "file": "35641_LUB_GPO-Lubricator_DS-R6.pdf",
+   "bytes": 1139014,
+   "md5": "3c64d2821c40b6843a5a365a1f460e51"
+  },
+  {
+   "sku": "IH-BD-CS2K",
+   "position": 0,
+   "kind": "service_manual",
+   "title": "Bijur Delimon CS2000 Station Operator Manual",
+   "language": "en",
+   "file": "2011F_LUB_CS2000-station_OM-R7.pdf",
+   "bytes": 2484057,
+   "md5": "2daa1d9350e90190cc990550a93e009e"
+  },
+  {
+   "sku": "IH-BD-DC",
+   "position": 0,
+   "kind": "service_manual",
+   "title": "Bijur Delimon DC41-42 Station Operator Manual",
+   "language": "fr",
+   "file": "DL1041_F_SYS_Dualine-DC41-42-auto_OM.pdf",
+   "bytes": 2464503,
+   "md5": "00a47f18e681d03a738ab547b44fc82a"
+  },
+  {
+   "sku": "IH-BD-DYX",
+   "position": 0,
+   "kind": "datasheet",
+   "title": "Bijur Delimon Dynamis Maxx Progressive Datasheet",
+   "language": "en",
+   "file": "35687_LUB_Dynamis-Maxx-Progressive_DS-R4.pdf",
+   "bytes": 228688,
+   "md5": "a9b08b3e3289d901e5f593d170b24f36"
+  },
+  {
+   "sku": "IH-BD-DYX",
+   "position": 1,
+   "kind": "service_manual",
+   "title": "Bijur Delimon pCo QuickStart PROG Mobile (35762)",
+   "language": "en",
+   "file": "35762_pCo_QuickStart_PROG_Mobile-R0.pdf",
+   "bytes": 109232,
+   "md5": "4c252c3cfb1eb992b06349de01fe495d"
+  },
+  {
+   "sku": "IH-BD-JS",
+   "position": 0,
+   "kind": "datasheet",
+   "title": "Bijur Delimon JS JSP Lubricator Datasheet",
+   "language": "en",
+   "file": "36999_LUB_JS-JSP-Lubricator_DS-R1.pdf",
+   "bytes": 724896,
+   "md5": "d86bdcb83f5f6a16fe98c37c1f401366"
+  },
+  {
+   "sku": "IH-BD-CLP",
+   "position": 0,
+   "kind": "datasheet",
+   "title": "Bijur Delimon Cartridge Lube Pump Datasheet",
+   "language": "en",
+   "file": "36916_CLP_DS-R3.pdf",
+   "bytes": 1299065,
+   "md5": "dbe5f0804ddea3d820e81e1aff406cec"
+  },
+  {
+   "sku": "IH-BD-CLP",
+   "position": 1,
+   "kind": "service_manual",
+   "title": "Bijur Delimon Cartridge Lube Pump Operator Manual",
+   "language": "en",
+   "file": "36917_CLP_OM_R4.pdf",
+   "bytes": 4201022,
+   "md5": "bffcd459de68d2f8ff6f9d5be4bad1ca"
+  },
+  {
+   "sku": "IH-BD-CSK",
+   "position": 0,
+   "kind": "datasheet",
+   "title": "Bijur Delimon CSK datasheet (34485)",
+   "language": "en",
+   "file": "34485_LUB_CSK_DS.pdf",
+   "bytes": 726416,
+   "md5": "c2867b4deef35abc942676474d09fe49"
+  },
+  {
+   "sku": "IH-BD-MDGP",
+   "position": 0,
+   "kind": "datasheet",
+   "title": "Bijur Delimon Motor Driven Gear Pump Datasheet",
+   "language": "en",
+   "file": "34012_LUB_MtrDriven-gear-recirculating_DS-rev5.pdf",
+   "bytes": 428863,
+   "md5": "668477676de093efc3acf66e056a2681"
+  },
+  {
+   "sku": "IH-BD-EBP",
+   "position": 0,
+   "kind": "datasheet",
+   "title": "Bijur Delimon Electric Barrel Pump Datasheet",
+   "language": "en",
+   "file": "36922_LUB_Electric-Barrel-Pump_DS-R10.pdf",
+   "bytes": 796219,
+   "md5": "3849cefad056b6c30290402695b50f49"
+  },
+  {
+   "sku": "IH-BD-EBP",
+   "position": 1,
+   "kind": "service_manual",
+   "title": "Bijur Delimon Electric Barrel Pump Operator Manual",
+   "language": "en",
+   "file": "36915_EBP_OM_R10.pdf",
+   "bytes": 6037276,
+   "md5": "018d9664cc9638f2fe89e309a9ece6a7"
+  },
+  {
+   "sku": "IH-BD-FZA",
+   "position": 0,
+   "kind": "datasheet",
+   "title": "Bijur Delimon FZA Lubricator Datasheet",
+   "language": "en",
+   "file": "35214_LUB_FZA-Lubricator_DS-R3.pdf",
+   "bytes": 471526,
+   "md5": "ffb4e9dd30c15409615b51285a19dd91"
+  },
+  {
+   "sku": "IH-BD-FZA",
+   "position": 1,
+   "kind": "service_manual",
+   "title": "Bijur Delimon FZA Lubricator Operator Manual",
+   "language": "en",
+   "file": "BA_2020_1_GB_FZA.pdf",
+   "bytes": 4339474,
+   "md5": "28bcb59085872cf0ad537672f41de96f"
+  },
+  {
+   "sku": "IH-BD-FZB",
+   "position": 0,
+   "kind": "datasheet",
+   "title": "Bijur Delimon FZ-B Lubricator Datasheet",
+   "language": "en",
+   "file": "35215_LUB_FZB-Lubricator_DS.pdf",
+   "bytes": 497803,
+   "md5": "c61825981362efd33e8ef500d28e0c2f"
+  },
+  {
+   "sku": "IH-BD-FZB",
+   "position": 1,
+   "kind": "service_manual",
+   "title": "Bijur Delimon FZ-B Lubricator Operator Manual",
+   "language": "en",
+   "file": "BA_2021_1_GB_FZB.pdf",
+   "bytes": 4061839,
+   "md5": "b261e56eadd75a96d5b054b7c1611c96"
+  },
+  {
+   "sku": "IH-BD-ZP",
+   "position": 0,
+   "kind": "datasheet",
+   "title": "Bijur Delimon ZP3000 Datasheet",
+   "language": "en",
+   "file": "P_2006_1_GB_ZP3000.pdf",
+   "bytes": 132299,
+   "md5": "fa36256d3e73e6a230b0e38d6823e405"
+  },
+  {
+   "sku": "IH-BD-ZP",
+   "position": 1,
+   "kind": "service_manual",
+   "title": "Bijur Delimon ZP3000 Manual",
+   "language": "en",
+   "file": "BA_2005_2_GB_ZP3000.pdf",
+   "bytes": 273712,
+   "md5": "9318f1ecd15bdf15f97652233476824e"
+  },
+  {
+   "sku": "IH-BD-ZP",
+   "position": 2,
+   "kind": "service_manual",
+   "title": "Bijur Delimon ZP4000 Manual",
+   "language": "en",
+   "file": "BA_2005_3_GB_ZP4000.pdf",
+   "bytes": 272315,
+   "md5": "c050fcd8e845a63c3b029533144d9ce9"
+  },
+  {
+   "sku": "IH-BD-BMB",
+   "position": 0,
+   "kind": "datasheet",
+   "title": "Bijur Delimon BM-B Lubricator datasheet (35216)",
+   "language": "en",
+   "file": "35216_LUB_BM-B_DS-R3.pdf",
+   "bytes": 426880,
+   "md5": "28bad7dc06f51a41b14b3e9d275930d0"
+  },
+  {
+   "sku": "IH-BD-BMB",
+   "position": 1,
+   "kind": "service_manual",
+   "title": "Bijur Delimon BMB operator manual",
+   "language": "en",
+   "file": "BA_2005_2_GB_BMB.pdf",
+   "bytes": 383073,
+   "md5": "f3ed0301a9a78b74c342196a04fed5a7"
+  },
+  {
+   "sku": "IH-BD-BMB",
+   "position": 2,
+   "kind": "service_manual",
+   "title": "Bijur Delimon BMB service card",
+   "language": "en",
+   "file": "SC_2014_1_GB_BMB.pdf",
+   "bytes": 1861617,
+   "md5": "ca59ff40803d1d48a0aa0798fb1d5e54"
+  },
+  {
+   "sku": "IH-BD-BSB",
+   "position": 0,
+   "kind": "datasheet",
+   "title": "Bijur Delimon BSB Pump Datasheet",
+   "language": "en",
+   "file": "35515_B_LUB_BSB_DS_rev2.pdf",
+   "bytes": 406394,
+   "md5": "c63089344f48ce08333b1fc3fbd2f119"
+  },
+  {
+   "sku": "IH-BD-BFE",
+   "position": 0,
+   "kind": "datasheet",
+   "title": "Bijur Delimon BFE datasheet",
+   "language": "en",
+   "file": "P_2017_1_GB_BFE.pdf",
+   "bytes": 213756,
+   "md5": "e96878227159aa4de9f743dc0cc8cbcd"
+  },
+  {
+   "sku": "IH-BD-BFE",
+   "position": 1,
+   "kind": "service_manual",
+   "title": "Bijur Delimon BFE operator manual",
+   "language": "en",
+   "file": "BA_2005_1_GB_BFE.pdf",
+   "bytes": 290303,
+   "md5": "b13cf9bd505ae02b569e09fa3a4da1c1"
+  },
+  {
+   "sku": "IH-BD-BFE",
+   "position": 2,
+   "kind": "service_manual",
+   "title": "Bijur Delimon BFE service card",
+   "language": "en",
+   "file": "SC_2006_1_GB_BFE.pdf",
+   "bytes": 114865,
+   "md5": "61a36d6f6f9378355b67793208a7bd48"
+  },
+  {
+   "sku": "IH-BD-ADM",
+   "position": 0,
+   "kind": "datasheet",
+   "title": "Bijur Delimon ADM datasheet",
+   "language": "en",
+   "file": "P_2005_1_GB_ADM.pdf",
+   "bytes": 385123,
+   "md5": "35ddd63361f7c0495f7a0c63640d6138"
+  },
+  {
+   "sku": "IH-BD-ADM",
+   "position": 1,
+   "kind": "service_manual",
+   "title": "Bijur Delimon ADM operator manual",
+   "language": "en",
+   "file": "BA_2005_1_GB_ADM.pdf",
+   "bytes": 425741,
+   "md5": "ec4cfd1bcc8d7e960a6346b1fa54be6a"
+  },
+  {
+   "sku": "IH-BD-ADM",
+   "position": 2,
+   "kind": "service_manual",
+   "title": "Bijur Delimon ADM service card",
+   "language": "en",
+   "file": "SC_2006_2_GB_ADM.pdf",
+   "bytes": 317670,
+   "md5": "06e988a8877f3c961a533b0c2658a160"
+  },
+  {
+   "sku": "IH-BD-WSE",
+   "position": 0,
+   "kind": "service_manual",
+   "title": "Bijur Delimon WSE Operator Manual",
+   "language": "en",
+   "file": "BA_2018_1_GB_WSE.pdf",
+   "bytes": 900794,
+   "md5": "950fc238bd6d17b3365e1bad56bd3d29"
+  },
+  {
+   "sku": "IH-BD-WSE",
+   "position": 1,
+   "kind": "service_manual",
+   "title": "Bijur Delimon WSE Assembly Manual",
+   "language": "en",
+   "file": "MA_WSE_GB_2024_0_1.pdf",
+   "bytes": 8146688,
+   "md5": "5e7cc8c764201327d38a5655c5c33501"
+  },
+  {
+   "sku": "IH-BD-WSE",
+   "position": 2,
+   "kind": "service_manual",
+   "title": "Bijur Delimon WSE Service Card",
+   "language": "en",
+   "file": "SC_2006_2_GB_WSE.pdf",
+   "bytes": 120073,
+   "md5": "9a57c13573e6389ff8ef4d462e8f69a9"
+  },
+  {
+   "sku": "IH-BD-AIRM",
+   "position": 0,
+   "kind": "datasheet",
+   "title": "Bijur Delimon AirMatic Lubricator datasheet (20349)",
+   "language": "en",
+   "file": "20349_B_LUB_Airmatic_DS-R10.pdf",
+   "bytes": 960011,
+   "md5": "ea858b1a15c8efbf2d1ae3f9db29b37f"
+  },
+  {
+   "sku": "IH-BD-SUREM",
+   "position": 0,
+   "kind": "datasheet",
+   "title": "Bijur Delimon Surematic PDI Datasheet",
+   "language": "en",
+   "file": "35484_LUB_Surematic-PDI_DS-R8.pdf",
+   "bytes": 250539,
+   "md5": "754856e32b17a15b25eaf034824bfea9"
+  },
+  {
+   "sku": "IH-BD-SKA",
+   "position": 0,
+   "kind": "datasheet",
+   "title": "Bijur Delimon DPG datasheet (35586)",
+   "language": "en",
+   "file": "35586_LUB_DPG_DS-R0.pdf",
+   "bytes": 311017,
+   "md5": "9f8d1b74cb5af8e63d7b74996cba6ddc"
+  },
+  {
+   "sku": "IH-BD-TBDP",
+   "position": 0,
+   "kind": "datasheet",
+   "title": "Bijur Delimon TBD Pump Datasheet",
+   "language": "en",
+   "file": "P_2017_1_GB_TBD_P.pdf",
+   "bytes": 227800,
+   "md5": "bc4b509163fb9c64da554c5e0fed4b1c"
+  },
+  {
+   "sku": "IH-BD-TBDP",
+   "position": 1,
+   "kind": "service_manual",
+   "title": "Bijur Delimon TBD Pump Operator Manual",
+   "language": "en",
+   "file": "BA_2017_1_GB_TBD_P.pdf",
+   "bytes": 485287,
+   "md5": "068984088dd59d4abaefc35c31f078b9"
+  },
+  {
+   "sku": "IH-BD-TBDP",
+   "position": 2,
+   "kind": "service_manual",
+   "title": "Bijur Delimon TBD Pump Service Card",
+   "language": "en",
+   "file": "SC_2006_1_GB_TBD_P.pdf",
+   "bytes": 83408,
+   "md5": "de7d2d142b1ade1930126b440b99e24e"
+  },
+  {
+   "sku": "IH-BD-PULSE",
+   "position": 0,
+   "kind": "datasheet",
+   "title": "Bijur Delimon PulseFire datasheet (35948)",
+   "language": "en",
+   "file": "35948_LUB_PulseFire_DS-R3.pdf",
+   "bytes": 1887322,
+   "md5": "8553b2405351251bfd825280d26cd42f"
+  },
+  {
+   "sku": "IH-BD-PULSE",
+   "position": 1,
+   "kind": "service_manual",
+   "title": "Bijur Delimon PulseFire operator manual (36992)",
+   "language": "en",
+   "file": "36992_PulseFire_OM-R0.pdf",
+   "bytes": 988267,
+   "md5": "20c21084109090087a9381dbd3c5596f"
+  },
+  {
+   "sku": "IH-BD-PM2",
+   "position": 0,
+   "kind": "datasheet",
+   "title": "Bijur Delimon Industrial Lubrication Pumps, Hose Reels & Accessories brochure (33136)",
+   "language": "en",
+   "file": "33136_SYS_Industrial-Lubrication_BR-R21.pdf",
+   "bytes": 2644865,
+   "md5": "3ef3b69f2e80745c0a972846579067e7"
+  },
+  {
+   "sku": "IH-BD-PM3",
+   "position": 0,
+   "kind": "datasheet",
+   "title": "Bijur Delimon PM3 Pump Datasheet",
+   "language": "en",
+   "file": "35993_LUB_PM3-Pump_DS-R6.pdf",
+   "bytes": 1496882,
+   "md5": "6f6e860ef760f082443b7e3c332c8895"
+  },
+  {
+   "sku": "IH-BD-PM4",
+   "position": 0,
+   "kind": "datasheet",
+   "title": "Bijur Delimon Industrial Lubrication Pumps, Hose Reels & Accessories brochure (33136)",
+   "language": "en",
+   "file": "33136_SYS_Industrial-Lubrication_BR-R21.pdf",
+   "bytes": 2644865,
+   "md5": "3ef3b69f2e80745c0a972846579067e7"
+  },
+  {
+   "sku": "IH-BD-PM26",
+   "position": 0,
+   "kind": "datasheet",
+   "title": "Bijur Delimon PM26 Datasheet",
+   "language": "en",
+   "file": "35260_26-1-BarrelPump-R1.pdf",
+   "bytes": 74385,
+   "md5": "e9192730d3fdc6d5fc5dd8097a279ff8"
+  },
+  {
+   "sku": "IH-BD-PM35",
+   "position": 0,
+   "kind": "datasheet",
+   "title": "Bijur Delimon PM35 Pump Datasheet",
+   "language": "en",
+   "file": "36752_LUB_PM35-Pump_DS-R0.pdf",
+   "bytes": 350975,
+   "md5": "af076f724c27f7b079c44c3025eca71b"
+  },
+  {
+   "sku": "IH-BD-PM45",
+   "position": 0,
+   "kind": "datasheet",
+   "title": "Bijur Delimon PM Pump Oil Datasheet",
+   "language": "en",
+   "file": "36749_LUB_PM-OIL-Pump_DS-R0.pdf",
+   "bytes": 429719,
+   "md5": "ae37419a655db6e438ae87b27cd43681"
+  },
+  {
+   "sku": "IH-BD-PM60",
+   "position": 0,
+   "kind": "datasheet",
+   "title": "Bijur Delimon PM60 Oil Datasheet",
+   "language": "en",
+   "file": "36749_LUB_PM-OIL-Pump_DS-R0.pdf",
+   "bytes": 429719,
+   "md5": "ae37419a655db6e438ae87b27cd43681"
+  },
+  {
+   "sku": "IH-BD-BFG",
+   "position": 0,
+   "kind": "datasheet",
+   "title": "Bijur Delimon BFG Barrel Pump Datasheet",
+   "language": "en",
+   "file": "P_2017_2_GB_BFG.pdf",
+   "bytes": 1935938,
+   "md5": "21c63dfe6bda04186f455b242148d22d"
+  },
+  {
+   "sku": "IH-BD-BFG",
+   "position": 1,
+   "kind": "service_manual",
+   "title": "Bijur Delimon BFG Barrel Pump Operator Manual",
+   "language": "en",
+   "file": "BA_2017_2_GB_BFG.pdf",
+   "bytes": 1304106,
+   "md5": "e0f859cf68106555c76a7197c2462f4f"
+  },
+  {
+   "sku": "IH-BD-BFG",
+   "position": 2,
+   "kind": "service_manual",
+   "title": "Bijur Delimon BFG Barrel Pump Service Card",
+   "language": "en",
+   "file": "SC_2013_1_GB_BFG.pdf",
+   "bytes": 511288,
+   "md5": "b90cfa58c826e8b1631820749590c350"
+  },
+  {
+   "sku": "IH-BD-DA",
+   "position": 0,
+   "kind": "datasheet",
+   "title": "Bijur Delimon DA Lubricator Dualine datasheet (35495)",
+   "language": "en",
+   "file": "35495_LUB_DA-Lubricator-Dualine_DS-R8.pdf",
+   "bytes": 171016,
+   "md5": "be88a0cc0fce9d0d5990cb325c43ba00"
+  },
+  {
+   "sku": "IH-BD-MSLR",
+   "position": 0,
+   "kind": "datasheet",
+   "title": "Bijur Delimon L5P Datasheet",
+   "language": "en",
+   "file": "21967_LUB_L5P_DS-R4.pdf",
+   "bytes": 273040,
+   "md5": "56ca3c56456e7b7f6699089477627284"
+  },
+  {
+   "sku": "IH-BD-MPDI",
+   "position": 0,
+   "kind": "datasheet",
+   "title": "Bijur Delimon L13 Datasheet",
+   "language": "en",
+   "file": "27877_B_LUB_L13-PDI-oil_DS.pdf",
+   "bytes": 176096,
+   "md5": "a8660891fb5a730887e27f2e5b51034f"
+  },
+  {
+   "sku": "IH-BD-MPDI",
+   "position": 1,
+   "kind": "service_manual",
+   "title": "Bijur Delimon LubriTrak Horiz operator manual (21538)",
+   "language": "en",
+   "file": "21538_B_LUB_LubriTrak-Horiz_OM.pdf",
+   "bytes": 3049942,
+   "md5": "657bc0e8a9f4a6e07a4fb71ecb457445"
+  },
+  {
+   "sku": "IH-BD-MPDI",
+   "position": 2,
+   "kind": "service_manual",
+   "title": "Bijur Delimon LubriTrak 20655C SS (21525)",
+   "language": "en",
+   "file": "21525_B_SYS_LubriTrak-20655C_SS.pdf",
+   "bytes": 137141,
+   "md5": "18d6507c76fa61734f1a316e89b36b80"
+  },
+  {
+   "sku": "IH-BD-HAND",
+   "position": 0,
+   "kind": "datasheet",
+   "title": "Bijur Delimon Manual Fill Pumps datasheet (35744)",
+   "language": "en",
+   "file": "35744_Manual_Fill_Pumps_DS-R0.pdf",
+   "bytes": 55620,
+   "md5": "e340555fb3c265cd3dcacd438e2bf00b"
+  },
+  {
+   "sku": "IH-BD-GP",
+   "position": 0,
+   "kind": "datasheet",
+   "title": "Bijur Delimon Gear Pump Datasheet",
+   "language": "en",
+   "file": "24795_B_LUB_Gear-Pump_DS.pdf",
+   "bytes": 259704,
+   "md5": "1cc72787da701720234588538b042871"
+  }
+ ]
+}
