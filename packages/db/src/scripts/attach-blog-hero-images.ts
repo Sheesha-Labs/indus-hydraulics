@@ -481,6 +481,12 @@ const HEROES: readonly { slug: string; alt: string; caption?: string }[] = [
   { slug: 'hydraulic-jacks-wedges-and-skates', alt: 'Machine base on timber cribbing, raised by red bottle jacks set on roller load skates on a concrete floor', caption: 'Lift, crib, then roll: the load rests on timber between every lift.' },
   { slug: 'hydraulic-pullers-presses-and-cutters', alt: 'Three-jaw hydraulic puller on a gear and shaft, with an H-frame workshop press and a hydraulic chain cutter', caption: 'Size the puller to the shaft, and check reach and spread before force.' },
   { slug: 'hydraulic-power-tools-and-power-units', alt: 'Portable hydraulic power unit with hoses to a breaker on broken concrete, a cut-off saw and a submersible pump', caption: 'One open-centre power unit can run a whole kit of tools, if every tool is in its flow class.' },
+  // Valves (2026-10-21).
+  { slug: 'butterfly-valves-wafer-lug-and-grooved', alt: 'Wafer, lug and grooved-end butterfly valves side by side, blue ductile iron bodies with lever handles', caption: 'Same disc, three bodies: only the lug and grooved styles can hold a line with the far side removed.' },
+  { slug: 'mobile-hydraulic-control-valves-guide', alt: 'Two-spool monoblock directional valve with lever handles, a cartridge flow control, in-line check and gear flow divider', caption: 'Direction, pressure, speed and split: four valve jobs in one circuit.' },
+  { slug: 'oilfield-pressure-relief-valves', alt: 'Spring-loaded relief valve on a red flow line at a desert wellsite, with a pilot-operated valve on a skid behind', caption: 'Set the relief below the weakest part of the line, and pipe the discharge somewhere safe.' },
+  { slug: 'needle-globe-and-instrumentation-valves', alt: 'Stainless needle valve, monoflange valve, two-handle block and bleed manifold and a flanged globe valve', caption: 'Isolate, bleed, then change the gauge: the small valves that make instrument work safe.' },
+  { slug: 'surface-safety-valves-and-esd-systems', alt: 'Hydraulically actuated surface safety gate valve on a flow line beside a stainless ESD control panel with gauges', caption: 'Held open by hydraulic pressure, closed by a spring the moment that pressure is lost.' },
 ] as const
 
 /**
