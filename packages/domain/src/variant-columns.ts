@@ -116,7 +116,37 @@ export type RatingDimensionKey =
   | 'brakeTorqueNm'
 
 /** Text columns for couplings, pumps, motors and cylinders. */
-export type EquipmentTextKey = 'item' | 'half' | 'bodySize' | 'mount' | 'shaft' | 'ports' | 'rotation' | 'action' | 'ratio'
+export type EquipmentTextKey =
+  | 'item'
+  | 'half'
+  | 'bodySize'
+  | 'mount'
+  | 'shaft'
+  | 'ports'
+  | 'rotation'
+  | 'action'
+  | 'ratio'
+  | LubricationTextKey
+
+/**
+ * Lubrication pumps and lubricators (Bijur Delimon).
+ *
+ * The maker publishes these as text and in its own units — a reservoir is `4L`, `100 LB` or `1/2GAL`, an output
+ * `0.2-1cc/cycle` or `7.5LB/min`, a pressure range in psi and bar side by side — so they stay text and nothing is
+ * converted. `systemType`, `lubricant` and `reservoir` are what a lubrication pump row carries and a fitting row
+ * never does, so they (and `pressureRatio`, `container`) mark the table as `equipment`.
+ */
+export type LubricationTextKey =
+  | 'systemType'
+  | 'lubricant'
+  | 'reservoir'
+  | 'voltage'
+  | 'output'
+  | 'maxPressure'
+  | 'outletThread'
+  | 'monitoring'
+  | 'pressureRatio'
+  | 'container'
 
 /**
  * Lifting & rigging columns.
@@ -552,7 +582,21 @@ export const VARIANT_TEXT_COLUMNS: readonly VariantTextColumn[] = [
   { key: 'rotation', label: 'Rotation', help: 'Direction of rotation viewed from the shaft end, as published.' },
   { key: 'action', label: 'Action', help: 'Single- or double-acting, as published.' },
   { key: 'ratio', label: 'Ratio', help: 'Reduction ratio, or the range of ratios the model is built in, as published.' },
+  // Lubrication pumps and lubricators — see LubricationTextKey.
+  { key: 'systemType', label: 'System', help: 'Lubrication system the pump feeds — SLR (single-line resistance), PDI (positive-displacement injector), progressive, Dualine or multi-line — as published.' },
+  { key: 'lubricant', label: 'Lubricant', help: 'Oil or grease, with the viscosity or NLGI range the pump handles, as published.' },
+  { key: 'reservoir', label: 'Reservoir', help: 'Reservoir capacity in the unit the maker publishes it.' },
+  { key: 'pressureRatio', label: 'Pressure ratio', help: 'Air-motor to fluid pressure ratio of an air-operated pump, as published.' },
+  { key: 'container', label: 'Fits', help: 'Container or drum the pump is built to fit, as published.' },
+  { key: 'voltage', label: 'Supply', help: 'Motor or control voltage, phase and frequency, as published.' },
+  { key: 'output', label: 'Output', help: 'Lubricant output per cycle or per minute, as published.' },
+  { key: 'maxPressure', label: 'Max pressure', help: 'Maximum outlet pressure as the maker publishes it, in psi and bar.' },
+  { key: 'outletThread', label: 'Outlet', help: 'Outlet port thread, as published.' },
+  { key: 'monitoring', label: 'Monitoring', help: 'Level switch, pressure switch, gauge or controller the part number includes, as published.' },
 ]
+
+/** Text keys only a lubrication pump row carries — like EQUIPMENT_MARKERS, they make a table `equipment`. */
+const EQUIPMENT_TEXT_MARKERS: ReadonlySet<string> = new Set(['systemType', 'lubricant', 'reservoir', 'pressureRatio', 'container'])
 
 const letter = (key: VariantColumnKey, label: string): VariantColumn => ({
   key,
@@ -899,7 +943,11 @@ export function variantTableKind(variants: readonly VariantLike[]): VariantTable
   if (isLifting) return 'lifting'
   // A pump, motor or cylinder: rated by displacement, bore, stroke or speed —
   // keys no fitting or hose row carries.
-  const isEquipment = variants.some((v) => Object.keys(variantDimensions(v.dimensions)).some((k) => EQUIPMENT_MARKERS.has(k)))
+  const isEquipment = variants.some(
+    (v) =>
+      Object.keys(variantDimensions(v.dimensions)).some((k) => EQUIPMENT_MARKERS.has(k)) ||
+      [...EQUIPMENT_TEXT_MARKERS].some((k) => variantText(v.dimensions, k as VariantTextKey) !== null),
+  )
   if (isEquipment) return 'equipment'
   const hoseKeys: VariantDimensionKey[] = ['hoseOD', 'burstPressure', 'vacuum', 'bendRadius', 'weightPerMetre', 'tensileKg']
   const isHose = variants.some((v) => {

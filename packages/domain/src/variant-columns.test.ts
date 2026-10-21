@@ -166,6 +166,8 @@ describe('text columns', () => {
   it('does not claim S1 or S2 mean across-flats', () => {
     expect(VARIANT_TEXT_COLUMNS.map((c) => c.key)).toEqual([
       'oRing', 'insideDia', 'wall', 'supply', 'item', 'half', 'bodySize', 'mount', 'shaft', 'ports', 'rotation', 'action', 'ratio',
+      'systemType', 'lubricant', 'reservoir', 'pressureRatio', 'container', 'voltage', 'output', 'maxPressure', 'outletThread',
+      'monitoring',
     ])
     for (const key of ['S1', 'S2'] as const) {
       const col = VARIANT_DIMENSION_COLUMNS.find((c) => c.key === key)!
@@ -610,6 +612,32 @@ describe('coupling and equipment ratings', () => {
       ['Rope dia.', 'mm'],
       ['Rope capacity', 'm'],
     ])
+  })
+
+  it('reads a lubrication pump table as equipment and keeps its ratings as published', () => {
+    const pump: VariantLike[] = [
+      {
+        partNumber: 'IH-BD-SFX23871',
+        dimensions: {
+          item: 'SFX23871 — 12 L SLR pump, 115 VAC',
+          systemType: 'SLR',
+          lubricant: 'Oil 20–1500 cSt',
+          reservoir: '12L',
+          voltage: '115VAC 1 phase 50/60 Hz',
+          output: '250cc/min',
+          maxPressure: '130 psi (9 bar)',
+          outletThread: '1/4BSPP',
+          monitoring: 'Level switch, pressure switch, gauge',
+        },
+      },
+    ]
+    expect(variantTableKind(pump)).toBe('equipment')
+    expect(variantTextColumns(pump).map((c) => c.key)).toEqual([
+      'item', 'systemType', 'lubricant', 'reservoir', 'voltage', 'output', 'maxPressure', 'outletThread', 'monitoring',
+    ])
+    const barrel: VariantLike[] = [{ partNumber: 'IH-BD-F531411', dimensions: { item: 'PM45 40:1', pressureRatio: '40:1', container: '400 lb drum' } }]
+    expect(variantTableKind(barrel)).toBe('equipment')
+    expect(variantTableKind([{ partNumber: 'x', dimensions: { item: 'Elbow', outletThread: '1/8NPT' } }])).toBe('fitting')
   })
 
   it('gives the row description its own leading column', () => {
