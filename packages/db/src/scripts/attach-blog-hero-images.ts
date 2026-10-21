@@ -487,6 +487,15 @@ const HEROES: readonly { slug: string; alt: string; caption?: string }[] = [
   { slug: 'oilfield-pressure-relief-valves', alt: 'Spring-loaded relief valve on a red flow line at a desert wellsite, with a pilot-operated valve on a skid behind', caption: 'Set the relief below the weakest part of the line, and pipe the discharge somewhere safe.' },
   { slug: 'needle-globe-and-instrumentation-valves', alt: 'Stainless needle valve, monoflange valve, two-handle block and bleed manifold and a flanged globe valve', caption: 'Isolate, bleed, then change the gauge: the small valves that make instrument work safe.' },
   { slug: 'surface-safety-valves-and-esd-systems', alt: 'Hydraulically actuated surface safety gate valve on a flow line beside a stainless ESD control panel with gauges', caption: 'Held open by hydraulic pressure, closed by a spring the moment that pressure is lost.' },
+  // Hose specials (2026-10-21).
+  { slug: 'marine-hose-fuel-exhaust-and-bilge', alt: 'Boat engine room with double-clamped black and blue wet exhaust hose and clear helix bilge hose to a bilge pump', caption: 'Two clamps on every exhaust joint, and nothing clear-PVC below the waterline.' },
+  { slug: 'fire-sleeves-and-metal-hose-guards', alt: 'Braided metal hose in a red silicone fire sleeve, interlocked lock-section hose, ball-joint armour guard and fire tape', caption: 'Sleeve, interlock or armour: each protects a hose from something different.' },
+  { slug: 'cryogenic-jacketed-and-heated-metal-hose', alt: 'Insulated braided stainless cryogenic hose from a tanker to a plant fill point, with a metal pipe loop behind', caption: 'Cryogenic hose loses far less product per fill with its insulation cover on.' },
+  // Oilfield packages (2026-10-21).
+  { slug: 'surface-well-testing-equipment', alt: 'Well test spread on a desert site: horizontal three-phase separator, vertical surge tank, red flow iron and choke manifold', caption: 'Choke, separate, settle, flare: each skid on a test spread does one job.' },
+  { slug: 'frac-and-stimulation-equipment', alt: 'Aerial view of a frac spread: rows of trailer-mounted pumpers, a red frac manifold, sand silos, frac tanks and data van', caption: 'Blender to pumpers to manifold to well, controlled from the data van.' },
+  { slug: 'cementing-and-drilling-fluid-equipment', alt: 'Skid-mounted cementing pump unit beside bulk cement silos, with mud tanks and a vertical degasser behind', caption: 'Cement and mud are both mixed to a density, and both are pumped from surface.' },
+  { slug: 'hydraulic-power-unit-components', alt: 'Hydraulic reservoir with breather and sight glass, bell housing, jaw coupling hubs and spider, filter and accumulator', caption: 'The cheap parts around the pump decide how long the pump lasts.' },
 ] as const
 
 /**
