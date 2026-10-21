@@ -8,6 +8,7 @@ import { GULF_CATEGORY } from './2026-08-24-blog-wave-3-gulf/category'
 import { GCC_COMPLIANCE_CATEGORY } from './2026-09-01-gcc-supplier-wave-1/category'
 import { BUYING_FITTINGS_CATEGORY } from './2026-09-01-africa-fittings-wave-2/category'
 import { FITTINGS_BY_INDUSTRY_CATEGORY } from './2026-09-01-africa-fittings-wave-3/category'
+import { CYLINDERS_PUMPS_MOTORS_CATEGORY } from './2026-10-21-blog-cylinders-pumps-motors/category'
 
 import type { BlogBlocksInput } from '@indus/domain'
 
@@ -25,6 +26,7 @@ const ALL_CATEGORY_SLUGS = [
   GCC_COMPLIANCE_CATEGORY.slug,
   BUYING_FITTINGS_CATEGORY.slug,
   FITTINGS_BY_INDUSTRY_CATEGORY.slug,
+  CYLINDERS_PUMPS_MOTORS_CATEGORY.slug,
 ]
 
 describe('reach profile coverage', () => {
