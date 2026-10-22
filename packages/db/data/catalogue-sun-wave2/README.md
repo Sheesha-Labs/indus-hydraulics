@@ -25,3 +25,9 @@ pnpm --filter @indus/db exec tsx src/scripts/import-lifting-catalogue.ts \
 After publishing, purge only the shelves this wave touched (`_N_T_/c/<slug>` path tags), not the broad
 `categories` tag — a site-wide purge after Wave 1 fed the 2026-10-22 pooler outage. IndexNow by explicit URL
 list, at least an hour clear of any deploy.
+
+## Update — 2026-10-22 (with wave 3)
+
+RSDS8 and RSFS8 (sequence main stage) join `IH-SUN-RS-S8`, PBJB8 joins `IH-SUN-PB-B8`, PPFB8 joins `IH-SUN-PP-B8`
+and PVHA8 joins `IH-SUN-PV-A8-L8`. Sun files these series-4 sizes under *Electro-Proportional*; the generator maps
+them back to their family. SKUs, slugs and images are unchanged.
