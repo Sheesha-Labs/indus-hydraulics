@@ -48,3 +48,10 @@ pnpm --filter @indus/db exec tsx src/scripts/import-lifting-catalogue.ts \
 
 Publish the `sun-hydraulics` brand in the same sitting, purge the `categories` and `nav-menu` cache tags, and
 send IndexNow at least an hour clear of any deploy.
+
+## Update — 2026-10-22 (with wave 3)
+
+- Every listing gains the "choosing a size" paragraph and up to six FAQs (ordering, serviceable parts,
+  installation), as wave 2 has. The low scorers move from 34–40 into the wave 2 range.
+- RPIC8, the series-4 balanced piston relief main stage Sun files under *Electro-Proportional*, joins
+  `IH-SUN-RP-C8`. SKUs, slugs and images are unchanged.
