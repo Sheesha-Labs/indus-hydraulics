@@ -249,49 +249,71 @@ export default async function BrandPage({ params }: Props) {
             </div>
           </div>
 
-          {/* Specialist card — DB-driven; the whole card hides when no
+          {(brand.logo || brand.accountManagerName) && (
+            <div className="flex flex-col gap-4">
+              {/* Logo box — white, because the logos are drawn for light
+              backgrounds. A fixed inner box, not the file's own size: the
+              logos range from 120px to 1200px wide (see /brands). */}
+              {brand.logo && (
+                <div className="grid h-[150px] place-items-center rounded-lg bg-white p-6">
+                  <div className="relative h-full w-full">
+                    <Image
+                      src={mediaUrl(brand.logo.storagePath)}
+                      alt={brand.logo.alt ?? `${brand.name} logo`}
+                      fill
+                      sizes="320px"
+                      priority
+                      className="object-contain"
+                    />
+                  </div>
+                </div>
+              )}
+
+              {/* Specialist card — DB-driven; the whole card hides when no
               account manager is assigned, so brands without a named
               specialist don't ship a generic-feeling placeholder. */}
-          {brand.accountManagerName && (
-            <div className="border-ih-navy-2 bg-ih-navy-2/40 rounded-lg border p-5">
-              <div className="mb-2.5 font-mono text-[10.5px] font-medium uppercase tracking-[0.12em] text-[oklch(0.68_0.03_250)]">
-                {over(
-                  heroCopy,
-                  'specialist_label',
-                  `YOUR ${brand.name.split(' ')[0]?.toUpperCase() ?? ''} SPECIALIST`
-                )}
-              </div>
-              <div className="mb-3.5 flex items-center gap-3">
-                <div className="bg-ih-accent grid h-11 w-11 shrink-0 place-items-center rounded-full text-[14px] font-medium text-white">
-                  {brand.accountManagerInitials ??
-                    brand.accountManagerName
-                      .split(' ')
-                      .map((w) => w[0] ?? '')
-                      .join('')
-                      .slice(0, 2)
-                      .toUpperCase()}
-                </div>
-                <div>
-                  <div className="font-medium text-white">{brand.accountManagerName}</div>
-                  {(brand.accountManagerTitle || brand.accountManagerYearsExp) && (
-                    <div className="font-mono text-[11px] text-[oklch(0.75_0.02_250)]">
-                      {[brand.accountManagerTitle, brand.accountManagerYearsExp]
-                        .filter(Boolean)
-                        .join(' · ')}
+              {brand.accountManagerName && (
+                <div className="border-ih-navy-2 bg-ih-navy-2/40 rounded-lg border p-5">
+                  <div className="mb-2.5 font-mono text-[10.5px] font-medium uppercase tracking-[0.12em] text-[oklch(0.68_0.03_250)]">
+                    {over(
+                      heroCopy,
+                      'specialist_label',
+                      `YOUR ${brand.name.split(' ')[0]?.toUpperCase() ?? ''} SPECIALIST`
+                    )}
+                  </div>
+                  <div className="mb-3.5 flex items-center gap-3">
+                    <div className="bg-ih-accent grid h-11 w-11 shrink-0 place-items-center rounded-full text-[14px] font-medium text-white">
+                      {brand.accountManagerInitials ??
+                        brand.accountManagerName
+                          .split(' ')
+                          .map((w) => w[0] ?? '')
+                          .join('')
+                          .slice(0, 2)
+                          .toUpperCase()}
                     </div>
-                  )}
+                    <div>
+                      <div className="font-medium text-white">{brand.accountManagerName}</div>
+                      {(brand.accountManagerTitle || brand.accountManagerYearsExp) && (
+                        <div className="font-mono text-[11px] text-[oklch(0.75_0.02_250)]">
+                          {[brand.accountManagerTitle, brand.accountManagerYearsExp]
+                            .filter(Boolean)
+                            .join(' · ')}
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                  <Link
+                    href={`/contact`}
+                    className="bg-ih-accent text-ih-accent-fg hover:bg-ih-accent-hover flex h-10 w-full items-center justify-center rounded-md text-[13.5px] font-medium transition-colors"
+                  >
+                    {over(
+                      heroCopy,
+                      'specialist_cta_label',
+                      `Talk to ${brand.accountManagerName.split(' ')[0]} →`
+                    )}
+                  </Link>
                 </div>
-              </div>
-              <Link
-                href={`/contact`}
-                className="bg-ih-accent text-ih-accent-fg hover:bg-ih-accent-hover flex h-10 w-full items-center justify-center rounded-md text-[13.5px] font-medium transition-colors"
-              >
-                {over(
-                  heroCopy,
-                  'specialist_cta_label',
-                  `Talk to ${brand.accountManagerName.split(' ')[0]} →`
-                )}
-              </Link>
+              )}
             </div>
           )}
         </div>
@@ -386,7 +408,10 @@ export default async function BrandPage({ params }: Props) {
                         sizes="(max-width: 1360px) 25vw, 320px"
                       />
                     ) : nearestCategoryImage(product.category) ? (
-                      <CategoryFallbackImage {...nearestCategoryImage(product.category)!} sizes="(max-width: 1360px) 25vw, 320px" />
+                      <CategoryFallbackImage
+                        {...nearestCategoryImage(product.category)!}
+                        sizes="(max-width: 1360px) 25vw, 320px"
+                      />
                     ) : (
                       <div className="text-ih-muted absolute inset-0 grid place-items-center font-mono text-[10px]">
                         IMG
