@@ -1,9 +1,5 @@
 import { notFound } from 'next/navigation'
-import {
-  SITEMAP_SECTION_IDS,
-  isSitemapSectionId,
-  sitemapSection,
-} from '../../../lib/sitemap-sections'
+import { isSitemapSectionId, sitemapSection } from '../../../lib/sitemap-sections'
 import { SITEMAP_CONTENT_TYPE, renderUrlset } from '../../../lib/sitemap-xml'
 
 /**
@@ -16,8 +12,15 @@ import { SITEMAP_CONTENT_TYPE, renderUrlset } from '../../../lib/sitemap-xml'
  */
 export const revalidate = 3600
 
+/**
+ * Empty on purpose: no section is built ahead. Each one reads the whole catalogue, and building them
+ * during `next build` made every deploy depend on the database accepting connections at that moment —
+ * a refused connection failed the deploy. An empty list keeps the route on the incremental cache; each
+ * section renders on its first request and is cached for `revalidate` (and at the CDN by the header
+ * below), so crawlers see the same thing a minute after a deploy.
+ */
 export function generateStaticParams(): { section: string }[] {
-  return SITEMAP_SECTION_IDS.map((id) => ({ section: `${id}.xml` }))
+  return []
 }
 
 export async function GET(

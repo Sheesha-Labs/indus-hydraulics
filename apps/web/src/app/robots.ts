@@ -27,12 +27,19 @@ import { DEFAULT_DISALLOW, FACET_DISALLOW, withAlwaysDisallowed } from '../lib/c
 export const revalidate = 3600
 
 export default async function robots(): Promise<MetadataRoute.Robots> {
-  const setting = await db.seoSetting.findFirst({
-    select: {
-      robotsTxt: true,
-      robotsTxtAutoAppendSitemap: true,
-    },
-  })
+  // A refused connection during the build would otherwise fail the deploy. The fallback is the
+  // built-in default below, which is what the site serves whenever no custom text is stored.
+  const setting = await db.seoSetting
+    .findFirst({
+      select: {
+        robotsTxt: true,
+        robotsTxtAutoAppendSitemap: true,
+      },
+    })
+    .catch((err: unknown) => {
+      console.warn(`[robots] seo settings unavailable, serving the default: ${String((err as Error)?.message ?? err).split('\n').filter(Boolean).slice(-1)[0]}`)
+      return null
+    })
 
   const sitemapUrl = `${BASE_URL}/sitemap.xml`
 

@@ -9,6 +9,7 @@ import { getBlogTopics } from '../../../../../lib/blog-index'
 import { listBlogPosts } from '../../../../../lib/blog-posts'
 import { pageMetadata, urlFor } from '../../../../../lib/seo'
 import { getStoreSettings } from '../../../../../lib/store-settings'
+import { staticParamsOrNone } from '../../../../../lib/static-params'
 
 type Props = { params: Promise<{ slug: string }> }
 
@@ -35,13 +36,17 @@ type Props = { params: Promise<{ slug: string }> }
  */
 const STATIC_TOPIC_LIMIT = 5
 
-export async function generateStaticParams() {
+async function staticParamsFromDb() {
   const rows = await db.blogCategory.findMany({
     select: { slug: true },
     orderBy: { posts: { _count: 'desc' } },
     take: STATIC_TOPIC_LIMIT,
   })
   return rows.map(({ slug }) => ({ slug }))
+}
+
+export async function generateStaticParams() {
+  return staticParamsOrNone('/blog/c/[slug]', staticParamsFromDb)
 }
 
 export const dynamicParams = true

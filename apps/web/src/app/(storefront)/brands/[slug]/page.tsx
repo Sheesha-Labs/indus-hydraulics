@@ -13,6 +13,7 @@ import { mediaUrl } from '../../../../lib/media'
 import { getSubPageContent } from '../../../../lib/page-content'
 import { crawlableImageUrl, pageMetadata, urlFor } from '../../../../lib/seo'
 import { getStoreSettings } from '../../../../lib/store-settings'
+import { staticParamsOrNone } from '../../../../lib/static-params'
 
 type Props = {
   params: Promise<{ slug: string }>
@@ -33,7 +34,7 @@ type Props = {
  */
 const STATIC_BRAND_LIMIT = 5
 
-export async function generateStaticParams() {
+async function staticParamsFromDb() {
   const rows = await db.brand.findMany({
     where: { isPublished: true },
     select: { slug: true },
@@ -41,6 +42,10 @@ export async function generateStaticParams() {
     take: STATIC_BRAND_LIMIT,
   })
   return rows.map(({ slug }) => ({ slug }))
+}
+
+export async function generateStaticParams() {
+  return staticParamsOrNone('/brands/[slug]', staticParamsFromDb)
 }
 
 export const dynamicParams = true

@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { db } from '@indus/db'
 import CategoryView, { categoryMetadata } from '../../../category-view'
+import { staticParamsOrNone } from '../../../../../../lib/static-params'
 
 /**
  * Page 2 and beyond of a category shelf.
@@ -30,7 +31,7 @@ export const dynamicParams = true
  * its length only decides how many are warm at deploy. Only four shelves
  * paginate at all at 48 per page.
  */
-export async function generateStaticParams() {
+async function staticParamsFromDb() {
   const categories = await db.category.findMany({
     where: { isPublished: true },
     select: { slug: true },
@@ -38,6 +39,10 @@ export async function generateStaticParams() {
     take: 3,
   })
   return categories.map(({ slug }) => ({ slug, n: '2' }))
+}
+
+export async function generateStaticParams() {
+  return staticParamsOrNone('/c/[slug]/page/[n]', staticParamsFromDb)
 }
 
 type Props = { params: Promise<{ slug: string; n: string }> }

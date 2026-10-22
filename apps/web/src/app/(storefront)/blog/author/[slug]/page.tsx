@@ -9,6 +9,7 @@ import BlogPostCard from '../../../../../components/blog/BlogPostCard'
 import { listBlogPosts } from '../../../../../lib/blog-posts'
 import { mediaUrl } from '../../../../../lib/media'
 import { ORG_ID, SITE_NAME, crawlableImageUrl, pageMetadata, urlFor } from '../../../../../lib/seo'
+import { staticParamsOrNone } from '../../../../../lib/static-params'
 
 type Props = { params: Promise<{ slug: string }> }
 
@@ -36,13 +37,17 @@ type Props = { params: Promise<{ slug: string }> }
  */
 const STATIC_AUTHOR_LIMIT = 3
 
-export async function generateStaticParams() {
+async function staticParamsFromDb() {
   const rows = await db.blogAuthor.findMany({
     select: { slug: true },
     orderBy: { posts: { _count: 'desc' } },
     take: STATIC_AUTHOR_LIMIT,
   })
   return rows.map(({ slug }) => ({ slug }))
+}
+
+export async function generateStaticParams() {
+  return staticParamsOrNone('/blog/author/[slug]', staticParamsFromDb)
 }
 
 export const dynamicParams = true
