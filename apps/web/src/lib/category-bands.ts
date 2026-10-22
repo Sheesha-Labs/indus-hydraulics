@@ -160,6 +160,36 @@ export function stockLine(categorySlugs: readonly string[]): string | null {
 }
 
 /**
+ * Published brands on a shelf with their product counts, for the brand filter.
+ *
+ * Read on every render of every shelf — clean pages, `/page/<n>` pages and every filtered twin — as a
+ * GROUP BY over the subtree. Uncached it was the second-largest database cost after the size summary
+ * (615 calls averaging 1.6 s during the 2026-10-22 saturation). Cached like `getShelfSpecRows`: the
+ * counts move when products or the tree change, and both tags are purged when they do.
+ */
+export const getShelfBrandCounts = unstable_cache(
+  async (categoryIds: readonly string[]) => {
+    if (categoryIds.length === 0) return []
+    const groups = await db.product.groupBy({
+      by: ['brandId'],
+      where: { categoryId: { in: [...categoryIds] }, status: 'active' },
+      _count: { _all: true },
+    })
+    const ids = groups.map((g) => g.brandId).filter((id): id is string => Boolean(id))
+    const brands = await db.brand.findMany({
+      where: { id: { in: ids } },
+      select: { id: true, name: true, slug: true },
+    })
+    return brands.map((b) => ({
+      ...b,
+      count: groups.find((g) => g.brandId === b.id)?._count._all ?? 0,
+    }))
+  },
+  ['shelf-brand-counts'],
+  { revalidate: 3600, tags: [STOREFRONT_TAGS.products, STOREFRONT_TAGS.categories, STOREFRONT_TAGS.brands] },
+)
+
+/**
  * The filterable spec rows for a shelf, cached per (subtree x brand selection).
  *
  * This is the rawest thing the page needs, so it is what gets cached — the

@@ -31,7 +31,7 @@ import {
   CategorySizeBand,
   categoryFaqs,
 } from '../../../components/category/CategoryBands'
-import { categorySizeSummary, gccMarketLinks, getShelfSpecRows } from '../../../lib/category-bands'
+import { categorySizeSummary, gccMarketLinks, getShelfBrandCounts, getShelfSpecRows } from '../../../lib/category-bands'
 import { getSubPageContent } from '../../../lib/page-content'
 import { getArticlesForCategory } from '../../../lib/related-reading'
 import {
@@ -299,23 +299,7 @@ export default async function CategoryView({ slug, sp }: CategoryViewProps) {
       take: PAGE_SIZE,
     }),
     db.product.count({ where }),
-    db.product
-      .groupBy({
-        by: ['brandId'],
-        where: { categoryId: { in: categoryIds }, status: 'active' },
-        _count: { _all: true },
-      })
-      .then(async (groups) => {
-        const ids = groups.map((g) => g.brandId).filter(Boolean) as string[]
-        const brands = await db.brand.findMany({
-          where: { id: { in: ids } },
-          select: { id: true, name: true, slug: true },
-        })
-        return brands.map((b) => ({
-          ...b,
-          count: groups.find((g) => g.brandId === b.id)?._count._all ?? 0,
-        }))
-      }),
+    getShelfBrandCounts(categoryIds),
   ])
 
   const totalPages = Math.ceil(total / PAGE_SIZE)

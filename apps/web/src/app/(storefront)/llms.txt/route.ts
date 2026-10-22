@@ -18,7 +18,10 @@ import { BASE_URL, urlFor } from '../../../lib/seo'
  * Crawlers expect plain-text Markdown. We set Content-Type accordingly.
  */
 
-export const revalidate = 3600
+// Rendered per request and cached at the CDN by the Cache-Control header below (s-maxage=3600),
+// rather than prerendered: prerendering ran its database queries during `next build`, and a refused
+// connection there failed the production deploy (2026-10-21).
+export const dynamic = 'force-dynamic'
 
 const TOP_BRAND_LIMIT = 12
 

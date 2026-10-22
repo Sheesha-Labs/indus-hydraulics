@@ -40,6 +40,7 @@ import RelatedReading from '../../../../components/blog/RelatedReading'
 import { getRelatedReadingForProduct } from '../../../../lib/related-reading'
 import ProductStickyBar from '../../../../components/ProductStickyBar'
 import AnalyticsEvent from '../../../../components/AnalyticsEvent'
+import { staticParamsOrNone } from '../../../../lib/static-params'
 
 type Props = {
   params: Promise<{ slug: string }>
@@ -130,7 +131,7 @@ export const dynamicParams = true
  */
 const STATIC_PDP_LIMIT = 5
 
-export async function generateStaticParams(): Promise<{ slug: string }[]> {
+async function staticParamsFromDb() : Promise< { slug: string }[]> {
   const rows = await db.product.findMany({
     where: { status: 'active' },
     select: { slug: true },
@@ -138,6 +139,10 @@ export async function generateStaticParams(): Promise<{ slug: string }[]> {
     take: STATIC_PDP_LIMIT,
   })
   return rows.map((r) => ({ slug: r.slug }))
+}
+
+export async function generateStaticParams() {
+  return staticParamsOrNone('/p/[slug]', staticParamsFromDb)
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {

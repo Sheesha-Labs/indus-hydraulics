@@ -22,6 +22,7 @@ import ArticleRenderer from '../../../../components/services/blocks/ArticleRende
 import MarketReachSection from '../../../../components/markets/MarketReachSection'
 import ServicesCta from '../../../../components/services/ServicesCta'
 import { buildWhatsappHref, buildMailtoHref } from '@indus/ui'
+import { staticParamsOrNone } from '../../../../lib/static-params'
 
 type Props = {
   params: Promise<{ slug: string }>
@@ -47,7 +48,7 @@ const getStoreSettingsCached = unstable_cache(getStoreSettings, ['store-settings
  */
 const STATIC_CASE_LIMIT = 5
 
-export async function generateStaticParams() {
+async function staticParamsFromDb() {
   const rows = await db.serviceCase.findMany({
     where: { status: 'published' },
     select: { slug: true },
@@ -55,6 +56,10 @@ export async function generateStaticParams() {
     take: STATIC_CASE_LIMIT,
   })
   return rows.map(({ slug }) => ({ slug }))
+}
+
+export async function generateStaticParams() {
+  return staticParamsOrNone('/services/[slug]', staticParamsFromDb)
 }
 
 export const dynamicParams = true

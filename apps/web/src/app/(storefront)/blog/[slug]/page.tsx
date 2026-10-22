@@ -20,6 +20,7 @@ import { searchIconUrl } from '../../../../lib/brand-identity'
 import { getMoreFromBlogCategory } from '../../../../lib/related-reading'
 import { BASE_URL, ORG_ID, SITE_NAME, crawlableImageUrl, pageMetadata, urlFor } from '../../../../lib/seo'
 import { getStoreSettings } from '../../../../lib/store-settings'
+import { staticParamsOrNone } from '../../../../lib/static-params'
 
 type Props = { params: Promise<{ slug: string }> }
 
@@ -38,7 +39,7 @@ type Props = { params: Promise<{ slug: string }> }
  */
 const STATIC_POST_LIMIT = 5
 
-export async function generateStaticParams() {
+async function staticParamsFromDb() {
   const rows = await db.blogPost.findMany({
     where: { status: 'published' },
     select: { slug: true },
@@ -46,6 +47,10 @@ export async function generateStaticParams() {
     take: STATIC_POST_LIMIT,
   })
   return rows.map(({ slug }) => ({ slug }))
+}
+
+export async function generateStaticParams() {
+  return staticParamsOrNone('/blog/[slug]', staticParamsFromDb)
 }
 
 /** A post published since the last deploy is served on demand, not 404'd. */

@@ -12,6 +12,7 @@ import { mediaUrl } from '../../../../../lib/media'
 import { SITE_NAME, crawlableImageUrl, pageMetadata, urlFor } from '../../../../../lib/seo'
 import { getReplacementMatches, getReplacementSitemapKeys } from '../../../../../lib/replacement-data'
 import { getStoreSettings } from '../../../../../lib/store-settings'
+import { staticParamsOrNone } from '../../../../../lib/static-params'
 
 type Props = {
   params: Promise<{ brand: string; mpn: string }>
@@ -32,11 +33,15 @@ type Props = {
  */
 const STATIC_REPLACEMENT_MPN_LIMIT = 3
 
-export async function generateStaticParams() {
+async function staticParamsFromDb() {
   const keys = await getReplacementSitemapKeys()
   return keys
     .slice(0, STATIC_REPLACEMENT_MPN_LIMIT)
     .map(({ brandSlug, mpnSlug }) => ({ brand: brandSlug, mpn: mpnSlug }))
+}
+
+export async function generateStaticParams() {
+  return staticParamsOrNone('/replacement/[brand]/[mpn]', staticParamsFromDb)
 }
 
 export const dynamicParams = true

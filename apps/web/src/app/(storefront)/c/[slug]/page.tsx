@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { db } from '@indus/db'
 import CategoryView, { categoryMetadata } from '../category-view'
+import { staticParamsOrNone } from '../../../../lib/static-params'
 
 /**
  * A category shelf, unfiltered — the canonical, indexable URL.
@@ -43,7 +44,7 @@ export const revalidate = 86400
  */
 const STATIC_SHELF_LIMIT = 8
 
-export async function generateStaticParams() {
+async function staticParamsFromDb() {
   const categories = await db.category.findMany({
     where: { isPublished: true },
     select: { slug: true },
@@ -51,6 +52,10 @@ export async function generateStaticParams() {
     take: STATIC_SHELF_LIMIT,
   })
   return categories.map(({ slug }) => ({ slug }))
+}
+
+export async function generateStaticParams() {
+  return staticParamsOrNone('/c/[slug]', staticParamsFromDb)
 }
 
 /** A shelf published after the last deploy is served on demand, not 404'd. */

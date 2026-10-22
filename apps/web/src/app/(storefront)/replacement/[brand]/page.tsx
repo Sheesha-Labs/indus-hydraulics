@@ -6,6 +6,7 @@ import { JsonLd, LeadCapturePanel, buildWhatsappHref, buildMailtoHref } from '@i
 import { pageMetadata, urlFor } from '../../../../lib/seo'
 import { getReplacementBrands, getReplacementsForBrand } from '../../../../lib/replacement-data'
 import { getStoreSettings } from '../../../../lib/store-settings'
+import { staticParamsOrNone } from '../../../../lib/static-params'
 
 type Props = {
   params: Promise<{ brand: string }>
@@ -26,11 +27,15 @@ type Props = {
  */
 const STATIC_REPLACEMENT_BRAND_LIMIT = 3
 
-export async function generateStaticParams() {
+async function staticParamsFromDb() {
   const brands = await getReplacementBrands()
   return brands
     .slice(0, STATIC_REPLACEMENT_BRAND_LIMIT)
     .map(({ brandSlug }) => ({ brand: brandSlug }))
+}
+
+export async function generateStaticParams() {
+  return staticParamsOrNone('/replacement/[brand]', staticParamsFromDb)
 }
 
 export const dynamicParams = true
