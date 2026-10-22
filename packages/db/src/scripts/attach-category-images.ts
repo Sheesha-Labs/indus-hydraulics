@@ -45,6 +45,7 @@ const IMAGES: readonly { slug: string; alt: string }[] = [
   { slug: 'oilfield-valve-suppliers-uae', alt: 'A group of oilfield valves — a flanged gate valve with handwheel, a ball valve with lever, a lug butterfly valve, a check valve, a union-end valve and a needle valve' },
   { slug: 'flow-iron-wellhead-equipment-uae', alt: 'A group of red flow iron — pup joints with hammer union nuts, a swivel joint, a tee and a plug valve, with metal ring joint gaskets in front' },
   { slug: 'blowout-preventers', alt: 'A red blowout preventer with an annular preventer on a ram body, a ram block assembly and rubber packer elements in front' },
+  { slug: 'pneumatics', alt: 'A group of pneumatic parts: tie-rod air cylinder, solenoid valve, filter-regulator, blue tube, push-in fittings and a gripper' },
   { slug: 'instrumentation-controls', alt: 'A group of oilfield instruments — a pressure gauge, pressure transmitters, a turbine flowmeter, a magnetic flowmeter, a thermowell, a proximity sensor and an explosion-proof junction box' },
   { slug: 'well-testing-equipment', alt: 'A skid-mounted horizontal three-phase separator with valves and gauges, beside a vertical surge tank on its own skid' },
   { slug: 'cementing-equipment', alt: 'A skid-mounted cementing unit with twin triplex pumps, mixing and displacement tanks and a control cabin' },

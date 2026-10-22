@@ -1,0 +1,446 @@
+{
+ "categories": [
+  {
+   "slug": "pneumatics",
+   "intro": "Pneumatics is the use of compressed air to move, hold and control machinery: cylinders, grippers and air motors do the work, valves direct it, and air preparation, tubing and fittings deliver clean air to them. This catalogue spans 12 shelves of maker ranges from Parker, SMC, ARO, Wilkerson, Norgren, Destaco, Numatics, Conrader, Kingston, Dixon, Gast, Ingersoll Rand and others. Each listing is sold under the maker's own brand and part number; we quote on request and supply from Dubai across the GCC.",
+   "guidance": {
+    "heading": "How to choose pneumatic components",
+    "body": "Start from the work and size back to the air supply. 1) The actuator: bore and stroke for a cylinder, grip force and jaw travel for a gripper, torque and speed for an air motor. 2) The valve: its function (3/2, 5/2 or 5/3), how it is operated (solenoid, air pilot or by hand) and enough flow to move the actuator at the speed you need. 3) The air: filtration, drying and regulation to the purity the equipment asks for. 4) The connections: tube material and outside diameter, then fittings that match both the tube and the port thread. Wherever you can, send the maker part number from the nameplate."
+   },
+   "standards": {
+    "heading": "Standards across pneumatics",
+    "body": "ISO 4414 sets the general rules and safety requirements for pneumatic systems. ISO 1219-1 defines the graphical symbols for components and ISO 1219-2 the circuit diagrams built from them. ISO 8573-1 classifies compressed air purity by particles, water and oil. Cylinder interfaces come from ISO 15552, ISO 6432 and ISO 21287 for metric ranges and from NFPA mounting dimensions for inch ranges; five-port valve interfaces from ISO 5599 and ISO 15407. ASME Section VIII requires a pressure relief device on air receivers built to it, and OSHA 29 CFR 1910.147 governs lockout of stored air energy."
+   },
+   "faq": [
+    {
+     "q": "What is the difference between pneumatics and hydraulics?",
+     "a": "Both use a pressurised fluid to do work. Pneumatics uses compressed air, normally at much lower pressure than hydraulics, so it suits fast, light-to-medium duty motion; it is clean, and spent air is simply exhausted to atmosphere. Because air is compressible, a pneumatic cylinder is less stiff when holding or positioning a load. Hydraulics uses oil, which is practically incompressible, at high pressure, so it gives large forces and firm holding, with the oil returned to a tank. The two do not share components: valves, seals, fittings and hose are built and rated for one or the other."
+    },
+    {
+     "q": "How do I order a pneumatic part from Indus Hydraulics?",
+     "a": "Send the maker's part number, quantity and delivery location. The number is usually on the nameplate, the valve body, the cylinder end cap or the old packaging. Each listing on these shelves groups one maker range, with its part numbers shown on the listing page. If you have no number, send a photograph and what you can measure: bore and stroke, port thread, tube size, function and voltage. We identify the part and quote on request."
+    },
+    {
+     "q": "Which makers are in the pneumatics catalogue?",
+     "a": "Parker Hannifin (including Legris and Transair), SMC, ARO, Wilkerson, Norgren, Numatics, Destaco, Dixon, Conrader, Kingston, Gast, Ingersoll Rand, Metal Work, Nitra, Boston Gear, Groz, Texas Pneumatic Tools, Hankison, Solberg, Aquatrol, Plast-O-Matic and others, plus a range of Indus Hydraulics own-label push-to-connect fittings. Every listing is sold under its maker's own brand and part number."
+    },
+    {
+     "q": "Why does compressed air in the Gulf carry so much water?",
+     "a": "Warm, humid air holds a lot of water vapour, and a compressor draws it in with the air. Compression concentrates that vapour, and as the hot air cools in the receiver and the pipework it condenses into liquid water, which then travels to valves, cylinders and tools. A filter removes liquid water but not vapour, so in hot, humid conditions a dryer, working drains on receivers and filters, and point-of-use filtration matter more, not less. Specify the dryness you need as an ISO 8573-1 water class."
+    },
+    {
+     "q": "Can I mix metric and inch pneumatic components?",
+     "a": "Only at interfaces you have checked. Metric tube and inch tube are different outside diameters (6 mm and 1/4 in, which is 6.35 mm, are not interchangeable), so a push-in fitting must match the tube. BSP and NPT threads do not mate. ISO cylinders and NFPA cylinders do not share mounting dimensions. An adapter can join two systems, but check each joint: tube to fitting, fitting to port, and cylinder to mount."
+    },
+    {
+     "q": "Do you supply pneumatics outside the UAE?",
+     "a": "Yes. We supply from Dubai across the GCC and quote for other markets on request. Give the delivery country on your enquiry so that we can quote freight and paperwork with the parts."
+    }
+   ]
+  },
+  {
+   "slug": "pneumatic-cylinders",
+   "intro": "Pneumatic cylinders turn compressed air into straight-line force and motion. This shelf carries Parker and Destaco ranges: Parker 4MA and 2MNR inch tie-rod cylinders, P1F and P1D metric tie-rod and profile cylinders, P1A mini round cylinders, SR-family round-body air cylinders, LP and LPM compact cylinders, HB and P5E guided cylinders, and Destaco WK and K power cylinders. Each is sold by maker part number, quoted on request and supplied from Dubai across the GCC.",
+   "guidance": {
+    "heading": "How to choose a pneumatic cylinder",
+    "body": "1) Force: theoretical extend force is air pressure times piston area; retract force is lower because the rod takes up part of that area. Size the bore for the working stroke with a margin for friction and acceleration. 2) Stroke and mounting: pick the stroke, then a mounting (foot, flange, clevis, trunnion) that keeps side load off the rod, or a guided cylinder if the load is offset. 3) Standard: metric ISO and inch NFPA cylinders do not share mounting dimensions, so match the one already on the machine. 4) Options: cushioning, a magnetic piston for position sensors, rod-end style and thread, and seals."
+   },
+   "standards": {
+    "heading": "Standards for pneumatic cylinders",
+    "body": "ISO 15552 fixes the mounting and accessory dimensions of 10 bar series cylinders with detachable mountings, bores 32 to 320 mm; Parker builds its P1F and P1D ranges to it. ISO 6432 covers single-rod mini cylinders of 8 to 25 mm bore, which Parker's P1A follows. ISO 21287 covers compact cylinders of 20 to 100 mm bore. Inch tie-rod cylinders such as the Parker 4MA follow the NFPA mounting dimensions (NFPA T3.6.7). A standard fixes the interface, not the seals, cushions or pressure rating, so read those on the maker's data sheet."
+   },
+   "faq": [
+    {
+     "q": "What is the difference between a tie-rod and a round-body air cylinder?",
+     "a": "A tie-rod cylinder holds its end caps on with external rods, so it can be dismantled and resealed, and it comes in a wide choice of standard mountings; the Parker 4MA, 2MNR and P1F are tie-rod designs. A round-body cylinder has its ends rolled, crimped or threaded on, which makes it smaller and lighter; many are not repairable and are replaced whole, as Parker states for its P1A mini cylinders. Profile cylinders such as the Parker P1D use an extruded body instead of tie rods."
+    },
+    {
+     "q": "How do I calculate the force of a pneumatic cylinder?",
+     "a": "Force equals pressure times area. A 63 mm bore has a piston area of about 3,117 mm²; at 6 bar (0.6 N/mm²) the theoretical extend force is about 1,870 N. On the return stroke subtract the rod area: with a 20 mm rod the annulus is about 2,803 mm², giving about 1,680 N. Real output is lower, because seal friction and the force needed to accelerate the load take part of it, so choose a bore with spare capacity rather than one that only just balances the load."
+    },
+    {
+     "q": "Can I replace an ISO cylinder with an NFPA cylinder?",
+     "a": "Not directly. ISO 15552 cylinders are metric, NFPA cylinders are inch, and their mounting dimensions, rod threads and usually their port threads differ. Replace like with like: an ISO cylinder with an ISO cylinder of the same bore, stroke and mounting, or an NFPA cylinder with one of the same bore, mounting style and rod end. Changing standard means changing the mounts and the rod-end fittings as well."
+    },
+    {
+     "q": "When do I need a guided cylinder?",
+     "a": "When the load is offset, sideways or must not rotate. A standard cylinder's rod bearing is not designed to carry much side load, and a rod pushed sideways wears its seals and bearing quickly. Guided cylinders, such as the Parker HB and P5E ranges on this shelf, carry the load on separate guide shafts and bearings, which take the side load and stop the tooling turning."
+    },
+    {
+     "q": "What are Destaco power cylinders used for?",
+     "a": "Destaco describes its WK pneumatic power cylinders as working on a wedge-lever principle: the rod makes a normal forward stroke, then a short power stroke in which the force is multiplied. Destaco lists clamping, punching, stamping, notching, riveting, pressing and clinching as typical uses. The K series and Destaco replacement cylinders are listed alongside. Order by the Destaco part number, which fixes the force and stroke."
+    },
+    {
+     "q": "What do I need to send to replace an air cylinder?",
+     "a": "The model code from the nameplate or end cap is the quickest route. Without it, send the bore, the stroke, the mounting style, the rod-end type and thread, the port thread, whether it is cushioned, whether it has a magnetic piston for sensors, and a photograph. We match it to the maker's part number and quote on request."
+    }
+   ]
+  },
+  {
+   "slug": "pneumatic-solenoid-valves",
+   "intro": "Solenoid valves are electrically switched directional valves that start, stop and reverse the air to cylinders and other actuators. This shelf carries SMC SY, VQZ, VQ, VF and VG valves with their manifolds and VX2 2-way valves; Parker B Series and H-ISO valves; Numatics 4-way valves and manifold blocks; and ARO Alpha, CAT, MaxAir and Sierra valves and manifolds. Each is sold by maker part number, quoted on request and supplied from Dubai across the GCC.",
+   "guidance": {
+    "heading": "How to choose a solenoid air valve",
+    "body": "1) Function: a 3/2 valve drives a single-acting cylinder or a pilot line; a 5/2 drives a double-acting cylinder; a 5/3 adds a centre position — all ports blocked, outlets exhausted or outlets pressurised — for stopping mid-stroke or venting the cylinder. 2) Single or double solenoid: a single-solenoid valve returns to its normal position when power is lost; a double-solenoid valve stays where it was last switched. 3) Flow: match the valve's Cv or nominal flow to the cylinder bore and the speed you need. 4) Mounting and electrics: body-ported, sub-base or manifold, plus the coil voltage and connector your panel uses."
+   },
+   "standards": {
+    "heading": "Standards for solenoid valves",
+    "body": "ISO 5599-1 and ISO 5599-2 define the mounting interfaces of five-port directional valves in standard sizes, so a valve of one make fits another make's sub-base of the same size; ISO 15407 does the same for 18 mm and 26 mm valves. Parker lists its H Series ISO valves against ISO 5599-1, ISO 5599-2 and ISO 15407 sizes. ISO 11727 sets the port numbering on valve bodies: 1 supply, 2 and 4 outlets, 3 and 5 exhausts, 12 and 14 pilots. ISO 1219-1 sets the symbols. An ISO interface does not fix flow, coil or response time."
+   },
+   "faq": [
+    {
+     "q": "What do 3/2, 5/2 and 5/3 mean on a solenoid valve?",
+     "a": "The first number is the number of working ports, the second the number of switching positions. A 3/2 valve has a supply, an outlet and an exhaust and two positions, so it pressurises or vents one line. A 5/2 valve has a supply, two outlets and two exhausts and two positions, which drives a double-acting cylinder out and back. A 5/3 valve adds a centre position; in American catalogues the same valves are often called 3-way and 4-way, so a 4-way, 2-position valve with five ports is a 5/2."
+    },
+    {
+     "q": "What is the difference between a normally closed and a normally open valve?",
+     "a": "It describes the outlet when the valve is not energised. A normally closed 3/2 valve blocks the supply and vents the outlet at rest, and pressurises the outlet when switched. A normally open valve feeds the outlet at rest and vents it when switched. Choose the one that leaves the machine in a safe state if power fails."
+    },
+    {
+     "q": "Should I use a single or double solenoid valve?",
+     "a": "A single-solenoid valve has a spring or air return, so it goes back to its normal position whenever the coil is de-energised, including on a power failure. A double-solenoid valve has a coil at each end and stays in its last position until the other coil is pulsed, which gives it a memory. Use a single solenoid where the machine must return to a known position on power loss, and a double solenoid where a cylinder must not move when power drops."
+    },
+    {
+     "q": "Why mount solenoid valves on a manifold?",
+     "a": "A manifold feeds several valves from one supply and collects their exhausts, so there are fewer fittings, fewer leak points and a compact, tidy valve bank; many also bring the coils to a single electrical connection. This shelf carries SMC manifolds (SS5V, SS5Y, VV5Q, VV5QC and others), Numatics manifold blocks in 3, 4 and 6 stations, and ARO Alpha, MaxAir and Sierra manifolds. Order the manifold and the valves as matching series from the same maker."
+    },
+    {
+     "q": "Can I replace a solenoid valve with another make?",
+     "a": "Yes, where the interface is standard: an ISO 5599 or ISO 15407 valve can be replaced by another make's valve of the same size and function on the same sub-base. For a body-ported valve, match the function, port thread, flow, coil voltage and connector. Manifold valves are usually specific to their maker's manifold, so replace those like for like by part number."
+    },
+    {
+     "q": "Which coil voltage should I order?",
+     "a": "The voltage your control panel switches. 24 V DC is the usual PLC output; AC coils are made for mains voltages such as 110/120 V and 220/230 V. Also check the electrical connection (DIN plug, plug-in connector, flying leads or manifold multi-connector) and whether you need an indicator light or surge suppression. The coil voltage forms part of the maker's part number, so quote the full number."
+    }
+   ]
+  },
+  {
+   "slug": "pneumatic-control-valves",
+   "intro": "Pneumatic control valves are air valves worked by hand, foot, cam or an air signal rather than a solenoid: they start and stop machines, reverse cylinders and build simple air logic. This shelf carries Parker manual, air-pilot, logic, shuttle and blocking valves; SMC VH hand valves, VM mechanical valves and VNA process valves; ARO limit, foot-pedal and rotary-lever valves; Numatics, Nitra, Conrader and Kingston valves; and Wilkerson and Metal Work shut-off valves. Each is sold by maker part number, quoted on request and supplied from Dubai across the GCC.",
+   "guidance": {
+    "heading": "How to choose a manual or air-pilot valve",
+    "body": "1) Operator: a lever, push button or foot pedal for a person; a roller, plunger or cam for a moving machine part; an air pilot where a remote signal or another valve does the switching. 2) Function: 2-way to shut a line off, 3-way to feed and vent one line, 4-way (5/2) for a double-acting cylinder, and a 3-position version where the cylinder must stop or float mid-stroke. 3) Return: spring return goes back when released; a detented valve stays where it was put. 4) Size: port thread and flow to suit the actuator it feeds."
+   },
+   "standards": {
+    "heading": "Standards for control valves",
+    "body": "ISO 1219-1 sets the graphical symbols for these valves: each square is one switching position, arrows show the flow paths, and the operator — lever, pedal, roller, spring or air pilot — is drawn at the end of the symbol. ISO 1219-2 sets how they are laid out in a circuit diagram. ISO 11727 sets the port identification used on valve bodies and data sheets: 1 supply, 2 and 4 outlets, 3 and 5 exhausts, 12 and 14 pilots. Read the symbol on the maker's data sheet before ordering, because two valves with the same port count can behave differently at rest."
+   },
+   "faq": [
+    {
+     "q": "What is the difference between a manual and a mechanical air valve?",
+     "a": "Who or what operates it. A manual valve is worked by a person, through a lever, push button, knob or foot pedal; SMC VH hand valves and ARO MaxAir foot-pedal and rotary-lever valves are examples. A mechanical valve is worked by the machine, through a roller, plunger or cam that a moving part strikes; limit valves such as the ARO 400 Series signal that a cylinder has reached the end of its stroke."
+    },
+    {
+     "q": "What does an air-pilot valve do?",
+     "a": "It is switched by an air signal instead of a solenoid. Air-pilot valves let one small valve, sensor or push button control a larger valve some distance away, and they let a machine run without electrics at the valve. The pilot port numbers in the data sheet (12 and 14 on a five-port valve) show which signal moves the valve to which position."
+    },
+    {
+     "q": "What is a shuttle valve?",
+     "a": "A shuttle valve has two inlets and one outlet; a free shuttle inside lets air through from whichever inlet is pressurised and blocks the other. It works as an OR function in air logic, so that, for example, either of two push buttons can operate the same cylinder."
+    },
+    {
+     "q": "What is a blocking valve used for?",
+     "a": "A blocking valve is fitted at a cylinder and closes its ports when its pilot air is lost, so the cylinder holds its position instead of drifting or dropping. It holds with trapped air, which is compressible and can leak away over time, so it is not a substitute for a mechanical lock or a lockout procedure where people are at risk."
+    },
+    {
+     "q": "What is a self-closing valve?",
+     "a": "A valve whose spring shuts it as soon as the handle is released, so it cannot be left open. Typical uses are drains, sampling points and blow-off lines where an unattended open valve would waste air or fluid. The Kingston 305 Series self-closing valves on this shelf are of this type."
+    },
+    {
+     "q": "Can a hand valve be used for lockout?",
+     "a": "Only if it is a true energy-isolating device: it must shut off the supply, vent the air trapped downstream and accept a padlock in the off position. A general hand valve that blocks the supply but leaves pressure in the machine is not enough. Lockout valves made for the job are on the Air Safety, Relief and Lockout Valves shelf."
+    }
+   ]
+  },
+  {
+   "slug": "pneumatic-flow-check-valves",
+   "intro": "Flow control and check valves set how fast air moves and which way it may flow: speed controllers and needle valves throttle a cylinder, quick exhaust valves speed it up, and check valves stop backflow. This shelf carries SMC and Legris cylinder speed controls, ARO and Parker flow controls and needle valves, Parker 0R, ARO and Legris quick exhausts, Numatics flow-control swivels, Conrader and Kingston compressor check valves and in-line check valves. Each is sold by maker part number, quoted on request and supplied from Dubai across the GCC.",
+   "guidance": {
+    "heading": "How to choose a flow control or check valve",
+    "body": "1) The job: throttle speed (flow control or needle valve), dump exhaust fast (quick exhaust valve) or stop reverse flow (check valve). 2) Meter-in or meter-out: most double-acting cylinders run steadier with meter-out control, which throttles the air leaving the cylinder; single-acting cylinders are metered in. 3) Position: a speed controller screwed into the cylinder port responds more crisply than one at the valve, while an exhaust-port flow control at the valve is the compact option. 4) Connection: port thread and tube size; the SMC speed controls here are listed by tube OD in metric and inch."
+   },
+   "standards": {
+    "heading": "Standards for flow and check valves",
+    "body": "ISO 1219-1 sets the symbols that show which way a flow control works: a variable restrictor drawn with a check valve in parallel is a one-way flow control, and the direction of the check shows whether it meters air in or out. ISO 1219-2 sets how these appear in a circuit diagram. Check the symbol or flow arrow on the maker's data sheet and on the valve body before fitting, because a one-way flow control fitted the wrong way round controls the wrong stroke."
+   },
+   "faq": [
+    {
+     "q": "Should I use meter-in or meter-out speed control on a cylinder?",
+     "a": "For a double-acting cylinder, meter-out in most cases: the controller throttles the air leaving the cylinder, so the piston moves against a cushion of back pressure and runs smoothly even when the load changes or pulls. Meter-in throttles the air entering and suits single-acting cylinders, which have no exhaust air on the working side, and some very short-stroke applications."
+    },
+    {
+     "q": "What does a quick exhaust valve do?",
+     "a": "It lets a cylinder exhaust straight to atmosphere at the cylinder port instead of pushing its air back through the tube and the directional valve. That speeds up the stroke it serves, and it is also used to vent a large volume quickly. Fit it directly in, or very close to, the cylinder port."
+    },
+    {
+     "q": "What is the difference between a needle valve and a flow control valve?",
+     "a": "A needle valve throttles flow equally in both directions. A flow control valve adds a built-in check valve in parallel, so it throttles one direction and lets the other pass freely; that is what lets a cylinder be speed-controlled on one stroke and run free on the other."
+    },
+    {
+     "q": "Where should a cylinder speed controller be fitted?",
+     "a": "In or close to the cylinder port. The less air volume between the controller and the piston, the more precisely it controls speed. A banjo or elbow-type speed controller screwed into the cylinder port is the common choice; an exhaust-port flow control or speed-control silencer fitted to the valve is easier to reach, but controls less precisely on long tube runs."
+    },
+    {
+     "q": "What is an in-tank check valve on a compressor?",
+     "a": "A check valve fitted where the compressor discharge line enters the receiver. It lets air into the tank and stops tank air flowing back through the discharge line into the pump when the compressor stops. The Conrader CTA to CTL and CAC series and the Kingston KCV234 Series on this shelf are in-tank check valves; order by the maker part number so that thread and size match."
+    },
+    {
+     "q": "What is a minimum pressure check valve?",
+     "a": "A valve fitted to oil-flooded rotary screw compressors. It holds a minimum pressure in the oil separator vessel, so that oil keeps circulating and the separator works properly when demand is low, and it stops air flowing back from the system when the compressor unloads. The Conrader CMP Series on this shelf is of this type."
+    }
+   ]
+  },
+  {
+   "slug": "pneumatic-safety-lockout-valves",
+   "intro": "Air safety and lockout valves protect people and equipment: safety and relief valves vent a receiver or line before it is overpressurised, lockout valves isolate and exhaust a machine's air so it can be padlocked off, and soft-start valves bring pressure up gradually. This shelf carries Conrader, Kingston, Aquatrol, Dixon and Ingersoll Rand safety valves, Conrader and Gast relief valves, Parker, Legris and ARO lockout valves, and Parker, SMC and Nitra soft-start and dump valves. Each is sold by maker part number, quoted on request and supplied from Dubai across the GCC.",
+   "guidance": {
+    "heading": "How to choose a safety, relief or lockout valve",
+    "body": "1) Safety or relief: a pop safety valve snaps fully open at its set pressure to protect a receiver or compressor; a relief valve opens progressively to limit line pressure. The set pressure must not exceed the rated pressure of what it protects, and its capacity must cover the full output of the compressor feeding it. 2) Seat: soft seats seal tightly; hard metal seats suit hotter service. 3) Lockout: choose a 3-way valve that exhausts the downstream air when shut and locks with a padlock. 4) Soft start: fit one after the FRL so a machine repressurises slowly and cylinders do not jump."
+   },
+   "standards": {
+    "heading": "Standards for air safety and lockout valves",
+    "body": "ASME Section VIII Division 1 requires air receivers built to it to be protected by a pressure relief device; since the 2021 edition the rules for those devices sit in ASME Section XIII, and a valve certified for pressure vessel service carries the UV mark. The Kingston 100 Series here is titled non-code, so check the marking before fitting a valve to a coded receiver. OSHA 29 CFR 1910.147 requires hazardous energy, compressed air included, to be isolated by a lockable energy-isolating device such as a line valve and stored energy to be relieved; a push button or selector switch does not qualify."
+   },
+   "faq": [
+    {
+     "q": "What is the difference between a safety valve and a relief valve?",
+     "a": "A safety valve opens with a pop to full lift at its set pressure and discharges its full rated capacity, which makes it the protection device for an air receiver or compressor. A relief valve opens gradually in proportion to the overpressure and is used to limit pressure in a line or circuit. A receiver needs a safety valve rated for it; a relief valve is not a substitute."
+    },
+    {
+     "q": "What does the UV mark on a safety valve mean?",
+     "a": "It shows the valve is certified under the ASME Boiler and Pressure Vessel Code for pressure vessel service: formerly under Section VIII, and since the 2021 edition under Section XIII, which now holds the rules for pressure relief devices. A valve marked NB has its relieving capacity certified by the National Board. A receiver built to ASME Section VIII needs a code-certified relief device; a valve sold as non-code is for equipment that does not require one."
+    },
+    {
+     "q": "How should an air safety valve be checked?",
+     "a": "Many air safety valves have a ring or lever for a manual check. Follow the maker's instructions on how often to lift it and at what system pressure. A valve that leaks, sticks or does not reseat cleanly is replaced, not adjusted: the set pressure is fixed by the maker, and a safety valve that has been tampered with can no longer be relied on."
+    },
+    {
+     "q": "What makes a valve suitable for lockout?",
+     "a": "Under OSHA 29 CFR 1910.147 it must physically isolate the energy, accept a lock, and let the stored energy be relieved. For compressed air that means a valve that shuts off the supply, exhausts the air downstream so the machine is at zero pressure, and can be padlocked closed. The Parker FC601 and FC608, Legris and ARO lockout valves and the SMC AVL soft-start lockout valves on this shelf are built for that job."
+    },
+    {
+     "q": "What is a soft-start valve?",
+     "a": "A soft-start or slow-start valve lets air into a machine slowly when the supply is first turned on, then opens fully once downstream pressure reaches a set level. Without one, cylinders that were vented can move suddenly at full speed when air returns. It is fitted after the FRL, at the inlet to the machine."
+    },
+    {
+     "q": "What is a dump valve?",
+     "a": "A dump valve exhausts a machine's air quickly when its control signal is removed, for example on an emergency stop, so that actuators lose their power. Parker's Global Modular range on this shelf offers dump valves, soft-start valves and combined soft-start/dump valves, and Nitra offers soft-start/dump valves. Make sure the exhaust capacity suits the volume to be vented."
+    }
+   ]
+  },
+  {
+   "slug": "air-preparation-frl",
+   "intro": "Air preparation is the filter, regulator and lubricator (FRL) set that cleans compressed air, holds it at a steady pressure and, where equipment needs it, adds oil. This shelf carries FRLs from Parker, Wilkerson, Norgren, ARO, Dixon, Metal Work, Nitra, SMC, Boston Gear, Groz and Texas Pneumatic Tools; main-line and coalescing filters from Parker, Hankison and Ingersoll Rand; replacement elements; condensate drains. Each is sold by maker part number, quoted on request and supplied from Dubai across the GCC.",
+   "guidance": {
+    "heading": "How to choose a filter, regulator and lubricator",
+    "body": "1) Flow: size the unit on the flow the equipment downstream draws, not on the pipe thread; an undersized FRL loses pressure at full flow. 2) Filtration: a particulate filter removes dirt and liquid water; a coalescing filter, fitted after one, removes oil aerosol; neither removes water vapour, which needs a dryer. 3) Regulation: choose the pressure range, and a relieving regulator if downstream pressure must fall when you turn it down. 4) Lubrication: only where the equipment needs oiled air; oil-fog for one nearby tool, micro-fog for several points or longer runs. Use metal bowls where solvents or heat rule out plastic."
+   },
+   "standards": {
+    "heading": "ISO 8573-1 — compressed air purity",
+    "body": "ISO 8573-1 grades compressed air by three contaminants, written as particles:water:oil. Water classes are set by pressure dew point: class 4 is +3 °C or lower, class 2 is −40 °C and class 1 is −70 °C. Oil classes cover aerosol, liquid and vapour together: class 1 is 0.01 mg/m³ or less, class 2 is 0.1, class 3 is 1 and class 4 is 5. Class 0 is a stricter limit agreed between user and supplier, not zero. Specify the class the equipment needs, then build the filters and dryer to reach it."
+   },
+   "faq": [
+    {
+     "q": "In what order do a filter, regulator and lubricator go?",
+     "a": "Filter, then regulator, then lubricator, in the direction of flow. The filter protects the regulator from dirt and water; the lubricator goes last, so that its oil is not removed by the filter and is delivered at the regulated pressure. Mount the set close to the equipment it serves, with the bowls vertical and room below them to drain and change elements."
+    },
+    {
+     "q": "What is the difference between a particulate and a coalescing filter?",
+     "a": "A particulate filter strips out solid dirt and liquid water by separation and a filter element. A coalescing filter uses a fine element that gathers oil aerosol and fine water droplets into larger drops that drain away; it is used where oil-free air is needed and is protected by a particulate filter upstream, or its element blocks quickly. Neither removes water vapour or oil vapour; vapour needs a dryer or an activated carbon stage."
+    },
+    {
+     "q": "Do I need a lubricator?",
+     "a": "Only if the equipment asks for oiled air. Most air tools and vane air motors need lubrication. Many modern valves and cylinders are greased for life and are meant to run on dry air; if you start lubricating one, the oil can wash out its factory grease and you then have to keep lubricating it. Follow the maker's instruction for each machine."
+    },
+    {
+     "q": "Why is there still water in my air line after the filter?",
+     "a": "Because a filter removes liquid water, not vapour. In hot, humid conditions the air carries a lot of vapour; if it is still warm when it reaches the filter, the vapour passes through and condenses further downstream as the air cools. A dryer after the receiver and working drains on every low point, receiver and filter bowl are the fix. Automatic drains, including the SMC, Ingersoll Rand and Dynaquip ones on this shelf, save emptying bowls by hand."
+    },
+    {
+     "q": "What is a relieving regulator?",
+     "a": "A regulator that vents excess downstream pressure through its bonnet. When you turn the set point down, a relieving regulator lowers the downstream pressure straight away; a non-relieving one holds the higher pressure until the air is used. Relieving is the usual choice; non-relieving suits gases or places where venting is not wanted."
+    },
+    {
+     "q": "When should I change a filter element?",
+     "a": "When the pressure drop across the filter reaches the limit the maker gives, or at the maker's service interval, whichever comes first. A blocked element starves the equipment downstream and wastes energy. Many filters have a differential pressure indicator that shows when. This shelf carries replacement elements for Parker, ARO, Dixon, Ingersoll Rand, Gast and Numatics filters, among others; quote the element part number or the filter model."
+    }
+   ]
+  },
+  {
+   "slug": "pneumatic-tubing",
+   "intro": "Pneumatic tubing is the flexible thermoplastic tube that carries air between valves, actuators and fittings, sized by outside diameter to suit push-to-connect fittings. This shelf carries SMC polyurethane, nylon, soft nylon, polyethylene, fluoropolymer, flame-resistant, wear-resistant, clean-room and coil tubing; Parker PTFE, FEP, polypropylene and general tubing; and ATP and Nycoil tubing. Each is sold by maker part number, quoted on request and supplied from Dubai across the GCC.",
+   "guidance": {
+    "heading": "How to choose pneumatic tubing",
+    "body": "1) Material: polyurethane is flexible and kink-resistant for moving machinery; nylon is stiffer and takes higher pressure; polyethylene is the economical choice for fixed runs; PTFE and FEP resist chemicals and heat. Flame-resistant tube suits welding cells and wear-resistant tube suits runs that rub. 2) Size: order by outside diameter in the same system, metric or inch, as your fittings. 3) Pressure and temperature: thermoplastic tube loses pressure rating as it gets hotter, so read the maker's rating at your working temperature. 4) Colour: use colours to tell circuits apart."
+   },
+   "standards": null,
+   "faq": [
+    {
+     "q": "Should I use polyurethane or nylon air tubing?",
+     "a": "Polyurethane where the tube flexes or has to bend tightly, such as on moving machine parts and short connections, because it is soft and resists kinking. Nylon where you want a stiffer tube that holds its line, takes higher pressure for the same size and stands up better to heat and many chemicals, such as fixed runs along a machine frame. Check each maker's pressure rating at your working temperature."
+    },
+    {
+     "q": "Is 6 mm tube the same as 1/4 inch tube?",
+     "a": "No. 1/4 inch is 6.35 mm, and 5/32 inch (3.97 mm) is not the same as 4 mm. Push-in fittings grip and seal on the tube's outside diameter, so mixing metric and inch can leak or let the tube blow out under pressure. Order tube and fittings in the same system; SMC speed controls on our flow-control shelf, for example, are listed separately for 4 mm and 5/32 inch tube."
+    },
+    {
+     "q": "How should I cut tubing for push-in fittings?",
+     "a": "With a tube cutter, square across, leaving no burr, flat or angled end. Push the tube in until it bottoms in the fitting, past the grip and the seal, then pull back on it to check that it has locked. A tube cut at an angle or with a knife that squashes it is the most common cause of leaks at push-in fittings."
+    },
+    {
+     "q": "What are PTFE and FEP tubing used for?",
+     "a": "Fluoropolymer tubing resists almost all chemicals, takes higher temperatures than nylon or polyurethane and has a low-friction surface. PTFE handles the higher temperatures of the two; FEP is clearer, so flow can be seen. Both are stiffer than nylon. This shelf carries Parker PTFE and FEP tubing in fractional and metric sizes and SMC TL and TIL fluoropolymer tubing."
+    },
+    {
+     "q": "Why use flame-resistant tubing?",
+     "a": "Near welding, spatter can melt through ordinary polyurethane or nylon tube and cut the air to clamps and cylinders. Flame-resistant tubing, such as the SMC TR Series on this shelf, is made to resist ignition from spatter. Check the maker's data for the test it meets and the pressure rating."
+    },
+    {
+     "q": "Does pneumatic tubing pressure rating change with temperature?",
+     "a": "Yes. Thermoplastic tubing gets softer as it gets hotter, so its working pressure falls as temperature rises. Makers publish the rating at a reference temperature and a derating for higher ones. Where tube runs near hot machinery, in direct sun or in hot plant rooms, size it on the rating at the highest temperature it will see."
+    }
+   ]
+  },
+  {
+   "slug": "pneumatic-fittings-silencers",
+   "intro": "Pneumatic silencers, or mufflers, quieten the air a valve exhausts and keep dirt out of its exhaust port; some add an adjustable flow control. This shelf carries Parker EM sintered bronze mufflers and muffler/flow controls, Dixon conical and speed-control mufflers, Texas Pneumatic Tools exhaust, silencer and speed-control mufflers, Gast mufflers, Wilkerson XMC exhaust silencer mist eliminators, and Transair ball valves, elbows and wall brackets for aluminium air pipe. Each is sold by maker part number, quoted on request and supplied from Dubai across the GCC.",
+   "guidance": {
+    "heading": "How to choose a pneumatic silencer",
+    "body": "1) Thread: match the exhaust port's thread form and size. 2) Flow: a silencer too small for the valve's exhaust flow raises back pressure and slows the actuator, so use the size the valve maker recommends or larger. 3) Type: sintered bronze for general noise reduction; a speed-control muffler where you want to set actuator speed at the exhaust port; an exhaust mist eliminator where lubricated air would otherwise blow oil mist into the workplace. 4) Service: a silencer clogged with oil and dirt chokes the valve, so clean or replace it on a schedule."
+   },
+   "standards": null,
+   "faq": [
+    {
+     "q": "What does a pneumatic muffler do?",
+     "a": "It slows and spreads the air leaving a valve's exhaust port through a porous element, which cuts the noise of the exhaust blast. It also stops dirt getting into the valve through an open exhaust port. Fit one to every exhaust port that vents to atmosphere."
+    },
+    {
+     "q": "Why did my cylinder slow down after a silencer was fitted?",
+     "a": "The silencer is too small for the exhaust flow or is clogged. Either one raises back pressure in the exhaust, which slows the stroke that exhausts through it. Fit a larger silencer, or clean or replace the clogged one; if the element is loaded with oil, the air upstream needs better filtration or less lubrication."
+    },
+    {
+     "q": "What is a speed-control muffler?",
+     "a": "A silencer with a built-in adjustable restrictor. Screwed into a valve's exhaust port, it meters the air leaving that side of the cylinder, giving meter-out speed control from the valve while also silencing it. The Dixon, Texas Pneumatic Tools and Parker EM muffler/flow controls on this shelf are of this type."
+    },
+    {
+     "q": "Do I need an exhaust mist eliminator?",
+     "a": "Where the air is lubricated, the valve exhaust carries oil mist, which coats machines and floors and is breathed by people nearby. An exhaust mist eliminator, such as the Wilkerson XMC Series, silences the exhaust and catches that oil. On dry, unlubricated air an ordinary silencer is enough."
+    },
+    {
+     "q": "Can a sintered bronze silencer be cleaned?",
+     "a": "Usually: wash it in a suitable solvent, blow it through from the inside out with clean air, and refit it. If flow is still restricted after cleaning, replace it; they are inexpensive next to the cost of a slow machine."
+    },
+    {
+     "q": "What are the Transair parts on this shelf?",
+     "a": "Transair is Parker's aluminium pipe system for compressed air distribution. This shelf carries Transair ball valves, elbows and wall brackets; they fit Transair pipe of the matching outside diameter, so quote the pipe size with your enquiry."
+    }
+   ]
+  },
+  {
+   "slug": "pneumatic-grippers-actuators",
+   "intro": "Pneumatic grippers are air-powered jaws that pick, hold and place parts on automated machines; rotary actuators turn a load through a set angle. This shelf carries, almost all from Destaco: 2-jaw and 3-jaw parallel grippers (DPG, DPDS, DPDL, DPW, RP, RPS, RTH, REP, CP), angular grippers (RUA, CT/DCT, RA), long-stroke grippers (RPR, DPL), pressroom and sheet-metal grippers (84A2, 84A3, 84N5, GR84), DBG bag grippers, DPE electric grippers and RR rotary actuators. Each is sold by maker part number, quoted on request and supplied from Dubai across the GCC.",
+   "guidance": {
+    "heading": "How to choose a pneumatic gripper",
+    "body": "1) Jaw motion: parallel jaws move straight in and out and suit parts that vary in size; angular jaws swing open and are compact; a 3-jaw gripper centres round parts. 2) Grip force: work from the part weight, the acceleration and whether the fingers hold by friction or by shape, then check the maker's force at your finger length and air pressure. 3) Stroke: enough jaw travel to clear the part, more for mixed part sizes. 4) Environment and feedback: sealed grippers for dust, coolant or spatter, and sensor options that confirm open and closed."
+   },
+   "standards": null,
+   "faq": [
+    {
+     "q": "Should I use a parallel or an angular gripper?",
+     "a": "A parallel gripper moves its jaws straight towards each other, so the fingers stay square to the part whatever its size; it suits precise handling and mixed part sizes. An angular gripper swings its jaws open through an angle, which is compact and economical and lets the jaws open well clear of the part, but the contact point moves as it closes. Use a 3-jaw parallel gripper to centre round parts."
+    },
+    {
+     "q": "How much grip force does a gripper need?",
+     "a": "For a friction grip, the force needed is the part's weight plus the force to accelerate it, divided by the friction coefficient between finger and part and by the number of jaws, with a safety factor on top. A finger shaped to cradle the part needs far less, because the shape carries the load rather than friction. Check the result against the maker's grip-force chart."
+    },
+    {
+     "q": "Why does gripper force fall with longer fingers?",
+     "a": "Makers rate grip force at a stated finger length. Longer fingers put the grip point further from the jaw, which raises the load on the jaw guides and lowers the force at the fingertip. Use the maker's force-versus-finger-length chart and stay inside its permitted finger length and weight."
+    },
+    {
+     "q": "Will the gripper drop the part if air is lost?",
+     "a": "A plain double-acting gripper loses its force when air pressure is lost. Where that matters, choose a gripper with spring assist or a mechanical lock; this shelf carries Destaco GR84 grippers with a self-locking linkage and angular grippers with a toggle locking mechanism. Check the maker's data for how much holding force remains without air."
+    },
+    {
+     "q": "What are pressroom grippers?",
+     "a": "Grippers built for sheet-metal handling on press lines and transfer systems, gripping panel edges as they move between stations. Destaco's 84A2, 84A3 and 84L3-1 cam-style pressroom grippers, the 84N5 press-shop grippers and the GR84 mini-sheet grippers on this shelf are of this type."
+    },
+    {
+     "q": "Do you have electric grippers?",
+     "a": "Yes: this shelf carries Destaco DPE Series electric 2-jaw parallel grippers, alongside the pneumatic ranges. An electric gripper needs no compressed air and can be set for position and force, which suits lines with no air supply or parts that need gentle handling."
+    }
+   ]
+  },
+  {
+   "slug": "vacuum-components",
+   "intro": "Vacuum components pick up and hold parts by suction: an ejector or vacuum generator makes vacuum from compressed air, a pad seals on the part, and switches, regulators and filters control and protect the circuit. This shelf carries SMC ZH and ZQ ejectors and vacuum generators, ZP and other pads in flat, ribbed, deep and bellows forms, vacuum pressure switches, regulators and water separators; Value Line pads, adapters and generators; Gast vacuum generators; and Cash Valve D51 vacuum regulators. Each is sold by maker part number, quoted on request and supplied from Dubai across the GCC.",
+   "guidance": {
+    "heading": "How to choose vacuum pads and ejectors",
+    "body": "1) Pad shape: flat pads for flat, rigid surfaces; ribbed flat pads to stop thin sheet deforming; bellows pads for uneven or angled surfaces, with some built-in travel; deep pads for curved or round parts. 2) Pad size and number: holding force is vacuum times pad area, so size for the part weight, its acceleration and the direction of pull, with a safety factor. 3) Pad material to suit the part's surface and temperature. 4) Vacuum source: an ejector suits intermittent pick-and-place close to the pad; size it for the evacuation time you need, and add a switch to confirm the part is held."
+   },
+   "standards": null,
+   "faq": [
+    {
+     "q": "How does a vacuum ejector work?",
+     "a": "Compressed air is blown through a nozzle into a venturi; the fast-moving jet draws air out of a side port connected to the pad, creating vacuum. An ejector has no moving parts, is small enough to mount at the pad, and makes vacuum only while it is fed with air."
+    },
+    {
+     "q": "Should I use a vacuum ejector or a vacuum pump?",
+     "a": "An ejector suits intermittent pick-and-place: it is compact, responds quickly, sits close to the pad and uses air only while it runs. A vacuum pump suits continuous duty, many pads on one system or long holding times, where an ejector's compressed air use would cost more. Many machines use ejectors for exactly that reason: they need nothing but the air supply already there."
+    },
+    {
+     "q": "How do I calculate the holding force of a vacuum pad?",
+     "a": "Force equals pressure difference times pad area. A 50 mm pad has an area of about 1,963 mm²; at 60 kPa below atmosphere (0.06 N/mm²) that is about 118 N in theory. Makers then apply a safety factor, which is larger when the pad holds the part sideways in shear than when it lifts it straight up, and larger again for fast movement. Use the maker's pad-force tables for the final selection."
+    },
+    {
+     "q": "How do I pick up porous material such as cardboard?",
+     "a": "Porous parts leak air through the surface, so the vacuum source must handle that leakage as well as evacuate the pad. Use a larger pad area at lower vacuum, a soft pad that seals on the surface, and an ejector or pump sized for the leakage flow. Test with the actual material before settling on a design."
+    },
+    {
+     "q": "Why fit a vacuum switch?",
+     "a": "A vacuum pressure switch confirms that vacuum has reached a set level, meaning the part is gripped, before the machine moves, and signals if the part is lost. Without one, the machine cannot tell a good pick from a missed one."
+    },
+    {
+     "q": "What does a vacuum water separator do?",
+     "a": "It catches liquid and dirt drawn in through the pad before they reach the ejector, valve or switch, which they would otherwise block or damage. Fit one where pads handle wet, oily or dusty parts. This shelf carries SMC vacuum water separators."
+    }
+   ]
+  },
+  {
+   "slug": "air-motors",
+   "intro": "Air motors turn compressed air into rotary power. The ones listed here are vane motors whose speed and torque are set by regulating or throttling the air supply, and many can be reversed. This shelf carries Gast 2AM, 4AM, 6AM and 8AM rotary vane air motors, and Ingersoll Rand multi-vane motors: in-line planetary gear motors (M002, M004, M007, 0, 2200 and 3800 Series), spur gear motors (including the 92 Series) and rotary vane gearmotors. Each is sold by maker part number, quoted on request and supplied from Dubai across the GCC.",
+   "guidance": {
+    "heading": "How to choose an air motor",
+    "body": "1) Duty point: work out the torque and speed the load needs, then pick a motor whose curve meets them at the air pressure you have; a vane motor gives its highest power at around half its free speed. 2) Gearing: a direct-drive motor for speed, or a planetary or spur gear motor to trade speed for torque at the output shaft. 3) Rotation and mounting: reversible or one direction, foot or flange mounting, and shaft form. 4) Air supply: the motor's air consumption at the duty point sets the compressor, pipe and valve size; most vane motors need filtered, lubricated air, so fit an FRL."
+   },
+   "standards": null,
+   "faq": [
+    {
+     "q": "What are the advantages of an air motor over an electric motor?",
+     "a": "An air motor has no electrical parts at the motor, so it suits wet and dirty places. Its speed can be varied simply by throttling the air, many can be reversed with a valve, and a vane motor can be loaded to a standstill and restart when the load eases. It is light and small for its power. The trade-off is energy: compressed air costs more per kilowatt delivered than electricity."
+    },
+    {
+     "q": "How do I control the speed of an air motor?",
+     "a": "By controlling the air. A flow control valve on the supply sets the speed; a pressure regulator lowers both speed and the torque available. Gast states that its vane motors' speed can be adjusted by regulating air pressure or flow. For a load that varies, throttling the flow holds speed better than lowering pressure."
+    },
+    {
+     "q": "How do I reverse an air motor?",
+     "a": "On a reversible motor, feed air to one port to turn one way and to the other port to reverse, with the unused port acting as the exhaust. A 4-way (5/2 or 5/3) directional valve does this; a 5/3 valve with a centre position also lets the motor stop. A motor built for one direction only cannot be reversed this way, so check the model."
+    },
+    {
+     "q": "Do air motors need lubrication?",
+     "a": "Most vane air motors do: the vanes slide in the rotor slots and need an oil mist in the air. Fit a filter, regulator and lubricator ahead of the motor, as Gast recommends for its motors, and use the oil the maker specifies. Some motors are built to run without lubrication; follow the maker's instruction for the model you have."
+    },
+    {
+     "q": "Why is my air motor losing power?",
+     "a": "Most often the air: pressure at the motor inlet is low because the hose, fittings or valve are too small, or the filter is blocked. Other causes are worn or stuck vanes, wet or dirty air, a lubricator that has run dry, or a clogged exhaust silencer that raises back pressure. Measure the pressure at the motor inlet while it runs before taking the motor apart."
+    },
+    {
+     "q": "What is the difference between a planetary gear and a spur gear air motor?",
+     "a": "Both reduce speed and raise torque at the output. A planetary gear motor has its output shaft in line with the motor, which keeps it compact and suits high reductions; Ingersoll Rand's M002, M004, M007, 0, 2200 and 3800 Series here are in-line planetary motors. A spur gear motor has an offset output shaft; Ingersoll Rand's 92 Series is one."
+    }
+   ]
+  }
+ ],
+ "blurbs": {}
+}

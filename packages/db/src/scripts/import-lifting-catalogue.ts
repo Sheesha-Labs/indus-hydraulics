@@ -25,7 +25,8 @@
  *   - The spec template, upserted by slug.
  *   - Products, matched on SKU. Specs, FAQs, size table (`product_variants`) and
  *     cross-references are REPLACED from the payload on every run — the payload
- *     is the source of truth for them. Images are matched on
+ *     is the source of truth for them. `mpn`, `weightKg`, `countryOfOrigin` and
+ *     `hsCode` are written only when the entry carries them. Images are matched on
  *     `Media.originalFilename` and never uploaded twice.
  *
  * DRAFT UNTIL LAUNCH
@@ -127,6 +128,12 @@ type Entry = {
   images: { file: string; alt: string; caption?: string | null }[]
   variants: Variant[]
   crossReferences: { competitorBrand: string; competitorMpn: string; compatibility: CrossRefCompatibility }[]
+  /** Commerce attributes, as the maker or source publishes them for the family's lead part number.
+   *  Optional; when omitted the product's existing values are left alone. */
+  mpn?: string | null
+  weightKg?: number | null
+  countryOfOrigin?: string | null
+  hsCode?: string | null
 }
 type Band = { eyebrow?: string | null; heading?: string | null; body?: string | null }
 type CategoryEntry = {
@@ -443,6 +450,10 @@ async function main() {
       focusKeyword: e.focusKeyword,
       searchAliases: aliases.join(' '),
       unitOfMeasure: 'each' as const,
+      ...(e.mpn !== undefined ? { mpn: e.mpn } : {}),
+      ...(e.weightKg !== undefined ? { weightKg: e.weightKg } : {}),
+      ...(e.countryOfOrigin !== undefined ? { countryOfOrigin: e.countryOfOrigin } : {}),
+      ...(e.hsCode !== undefined ? { hsCode: e.hsCode } : {}),
       ...(live ? { status: 'active' as const } : {}),
     }
     let productId: string
@@ -463,7 +474,10 @@ async function main() {
       async (tx) => {
         await tx.productSpec.deleteMany({ where: { productId } })
         await tx.productFaq.deleteMany({ where: { productId } })
-        await tx.productVariant.deleteMany({ where: { productId } })
+        const oldVariants = (await tx.productVariant.findMany({ where: { productId }, select: { id: true } })).map((v) => v.id)
+        for (let i = 0; i < oldVariants.length; i += 200) {
+          await tx.productVariant.deleteMany({ where: { id: { in: oldVariants.slice(i, i + 200) } } })
+        }
         await tx.productCrossReference.deleteMany({ where: { productId } })
         await tx.productSpec.createMany({
           data: e.specs.map((s) => ({
@@ -480,30 +494,34 @@ async function main() {
         await tx.productFaq.createMany({
           data: e.faqs.map((f, i) => ({ productId, question: f.question, answer: f.answer, position: i })),
         })
-        await tx.productVariant.createMany({
-          data: e.variants.map((v) => ({
-            productId,
-            partNumber: v.partNumber,
-            position: v.position,
-            dimensions: v.dimensions as Prisma.InputJsonValue,
-            portLabel: v.portLabel ?? null,
-            port2Label: v.port2Label ?? null,
-            port3Label: v.port3Label ?? null,
-            competitorBrand: v.competitorBrand ?? null,
-            competitorMpn: v.competitorMpn ?? null,
-            hoseDash: v.hoseDash ?? null,
-            hoseInch: v.hoseInch ?? null,
-            hoseDn: v.hoseDn ?? null,
-            pressureBar: v.pressureBar ?? null,
-          })),
-        })
+        // In batches: every variant row fires the parent-product trigger, and one insert of ~1,000 rows
+        // has run past the database's statement timeout.
+        const variantRows = e.variants.map((v) => ({
+          productId,
+          partNumber: v.partNumber,
+          position: v.position,
+          dimensions: v.dimensions as Prisma.InputJsonValue,
+          portLabel: v.portLabel ?? null,
+          port2Label: v.port2Label ?? null,
+          port3Label: v.port3Label ?? null,
+          competitorBrand: v.competitorBrand ?? null,
+          competitorMpn: v.competitorMpn ?? null,
+          hoseDash: v.hoseDash ?? null,
+          hoseInch: v.hoseInch ?? null,
+          hoseDn: v.hoseDn ?? null,
+          pressureBar: v.pressureBar ?? null,
+        }))
+        for (let i = 0; i < variantRows.length; i += 200) {
+          await tx.productVariant.createMany({ data: variantRows.slice(i, i + 200) })
+        }
         if (e.crossReferences.length > 0) {
           await tx.productCrossReference.createMany({
             data: e.crossReferences.map((r) => ({ productId, ...r })),
           })
         }
       },
-      { maxWait: 30_000, timeout: 60_000 }
+      // A configurator range can carry ~1,000 size rows; their insert alone has taken over 60 s.
+      { maxWait: 30_000, timeout: 300_000 }
     )
 
     // ── Images, in payload order ─────────────────────────────────────────────
