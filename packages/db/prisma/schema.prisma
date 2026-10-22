@@ -925,6 +925,8 @@ model ProductVariant {
 
   @@index([productId])
   @@index([hoseDash])
+  /// The shelf bore-range band counts variants by bore + label; see 202610221056_product_variants_hose_bore_index.sql.
+  @@index([hoseDn, hoseInch])
   @@map("product_variants")
 }
 

@@ -30,7 +30,16 @@ export type CategorySizeSummary = {
  * the catalogue, so the band that reads this hides itself rather than
  * announcing "0 sizes".
  */
-export async function categorySizeSummary(
+export const categorySizeSummary = unstable_cache(
+  (categoryIds: readonly string[]) => sizeSummaryUncached([...categoryIds].sort()),
+  ['category-size-summary'],
+  // Cached like `getShelfSpecRows` below. Uncached, every shelf render — every `?page=N` of every
+  // shelf — re-ran the aggregate over the whole variant table. After the 2026-10-22 00:57 UTC deploy
+  // left every shelf cold, ~16 of them at once saturated the database for ~6 hours (EMAXCONN, 503s).
+  { revalidate: 86400, tags: [STOREFRONT_TAGS.products, STOREFRONT_TAGS.categories] },
+)
+
+async function sizeSummaryUncached(
   categoryIds: readonly string[],
 ): Promise<CategorySizeSummary | null> {
   if (categoryIds.length === 0) return null
