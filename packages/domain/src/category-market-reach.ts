@@ -105,6 +105,18 @@ export const CATEGORY_REACH_PROFILES: Readonly<Record<string, MarketReachProfile
       'CIS & Caucasus',
     ],
   },
+  'marine-equipment-uae': {
+    heading: 'Where we ship anchor chain and mooring equipment',
+    body: 'Anchor chain, anchors and mooring fittings are bought against the classification society the vessel or unit is built to, and the class certificate travels with the steel. Shackles, swivels and connectors are compact enough for air freight when a vessel is waiting; chain by the shot, anchors, buoys and deck fittings are heavy and go by sea, crated or on flat racks. Send the class society, grade and diameter, and we quote with the certificate the surveyor will ask for.',
+    primaryRegion: 'GCC & Middle East',
+    rotatingRegions: [
+      'South-East Asia',
+      'West & Central Africa',
+      'East Africa',
+      'Western & Northern Europe',
+      'North Africa',
+    ],
+  },
   'blowout-preventers': {
     heading: 'Where BOP equipment and spares ship',
     body: 'Pressure-control equipment is supplied against the certification the operator is audited to, and the documentation is the deliverable as much as the hardware is. Stacks, spares and elastomer kits ship from Dubai with their records; on these lanes the certification and the customs classification set the timeline more reliably than the freight does, which is the part worth planning around.',

@@ -178,6 +178,7 @@ describe('catalogue root categories', () => {
     'lifting-rigging-equipment-uae',
     'lay-flat-hoses',
     'industrial-process-valves',
+    'marine-equipment-uae',
   ]
 
   it('has a profile for every published root category', () => {
