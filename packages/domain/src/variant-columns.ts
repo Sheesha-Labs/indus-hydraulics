@@ -238,6 +238,8 @@ export type LiftingDimensionKey =
   | 'lcKg'
   | 'lcKn'
   | 'lcDaN'
+  | 'pullKn'
+  | 'uhpT'
   // hoist performance
   | 'liftHeight'
   | 'liftHeightDoubleFall'
@@ -254,6 +256,10 @@ export type LiftingDimensionKey =
   | 'reactionKn'
   | 'torqueNm'
   | 'lengthM'
+  // buoys and chain
+  | 'buoyancyKg'
+  | 'volumeL'
+  | 'linksPerShot'
   // named geometry
   | 'materialDia'
   | 'wireDia'
@@ -279,6 +285,7 @@ export type LiftingDimensionKey =
   | 'headHeight'
   | 'wireClearance'
   | 'ringId'
+  | 'heightMm'
   // letters a rigging drawing uses that a fitting drawing does not
   | 'AMax'
   | 'BMin'
@@ -324,6 +331,7 @@ export type LiftingDimensionKey =
   | 'weightIwrcPer100m'
   | 'weightPer100FtLbs'
   | 'weightPer220mKg'
+  | 'weightPerShotKg'
 
 export type LiftingTextKey =
   | 'size'
@@ -347,6 +355,11 @@ export type LiftingTextKey =
   | 'loopSize'
   | 'pillar'
   | 'steelCore'
+  | 'anchorMass'
+  | 'thread'
+  | 'wireMm'
+  | 'wireIn'
+  | 'depth'
 
 /**
  * Units a column can carry. The empty string is a count (falls of chain) and
@@ -374,6 +387,7 @@ export type VariantUnit =
   | 'daN'
   | 'lbs/100 ft'
   | 'kg/220 m'
+  | 'L'
   | 'psi'
   | 'GPM'
   | 'cm³/rev'
@@ -698,6 +712,8 @@ export const LIFTING_LOAD_COLUMNS: readonly VariantColumn[] = [
   { key: 'lcKg', label: 'LC', unit: 'kg', help: LC_HELP },
   { key: 'lcKn', label: 'LC', unit: 'kN', help: LC_HELP },
   { key: 'lcDaN', label: 'LC', unit: 'daN', help: LC_HELP },
+  { key: 'pullKn', label: 'Pull load', unit: 'kN', help: 'Pull the stopper or fitting is rated to hold, as the manufacturer publishes it. Split by the chain grade it is made for.', grouped: true },
+  { key: 'uhpT', label: 'Holding capacity', unit: 't', help: 'Ultimate holding capacity the maker gives for the stated seabed. Actual holding depends on the soil, the fluke angle and how the anchor is set.', grouped: true },
 ]
 
 /** Hoist and trolley performance, headed in the source by what each one is. */
@@ -717,6 +733,9 @@ export const LIFTING_PERFORMANCE_COLUMNS: readonly VariantColumn[] = [
   { key: 'energyKnm', label: 'Energy absorption', unit: 'kNm', help: 'Energy the fender absorbs at its rated deflection, as published.' },
   { key: 'reactionKn', label: 'Reaction force', unit: 'kN', help: 'Force the fender returns at its rated deflection, as published.' },
   { key: 'torqueNm', label: 'Tightening torque', unit: 'Nm', help: 'Torque to tighten the bolt to, as the manufacturer states it.' },
+  { key: 'buoyancyKg', label: 'Net buoyancy', unit: 'kg', help: 'Net buoyancy — the weight in water the buoy can carry — as published. A depth-rated buoy loses buoyancy as its rating rises.', grouped: true },
+  { key: 'volumeL', label: 'Volume', unit: 'L', help: 'Displaced volume of the buoy, as published.', grouped: true },
+  { key: 'linksPerShot', label: 'Links per shot', unit: '', help: 'Number of links in one 27.5 m (15 fathom) shot of chain cable, as published.' },
 ]
 
 /** Geometry the source heads by name rather than by letter. */
@@ -745,6 +764,7 @@ export const LIFTING_GEOMETRY_COLUMNS: readonly VariantColumn[] = [
   { key: 'headHeight', label: 'Head height', unit: 'mm', help: 'Height of the pin head.' },
   { key: 'wireClearance', label: 'Wire clearance', unit: 'mm', help: 'Clearance inside the locking wire or loop.' },
   { key: 'ringId', label: 'Ring I.D.', unit: 'mm', help: 'Inside diameter of the ring.' },
+  { key: 'heightMm', label: 'Height', unit: 'mm', help: 'Overall height, as published.', grouped: true },
 ]
 
 /**
@@ -811,6 +831,7 @@ export const LIFTING_WEIGHT_COLUMNS: readonly VariantColumn[] = [
   { key: 'weightIwrcPer100m', label: 'Weight, steel core', unit: 'kg/100 m', help: 'Weight per 100 m with a steel (IWRC) core.' },
   { key: 'weightPer100FtLbs', label: 'Weight', unit: 'lbs/100 ft', help: 'Weight per 100 feet, as published.' },
   { key: 'weightPer220mKg', label: 'Weight', unit: 'kg/220 m', help: 'Weight of a 220 m coil, as published.' },
+  { key: 'weightPerShotKg', label: 'Weight per shot', unit: 'kg', help: 'Approximate weight of one 27.5 m (15 fathom) shot of chain cable, as published.', grouped: true },
 ]
 
 /** Every lifting numeric column, in table order. */
@@ -844,6 +865,11 @@ export const LIFTING_TEXT_COLUMNS: readonly VariantTextColumn[] = [
   { key: 'loopSize', label: 'Eye size', help: 'Size of the sling eye, as published.' },
   { key: 'pillar', label: 'Pillar', help: 'Pillar tube outside diameter × wall thickness, as published.' },
   { key: 'steelCore', label: 'Steel core', help: 'Diameter of the steel core, as published.' },
+  { key: 'wireMm', label: 'Wire rope', help: 'Wire rope diameter range the socket is made for, in millimetres.', lead: true },
+  { key: 'wireIn', label: 'Wire rope (in)', help: 'The same wire rope range in inches, as published.' },
+  { key: 'depth', label: 'Depth rating', help: 'Water depth the buoy is rated to; buoyancy is given at that depth.' },
+  { key: 'anchorMass', label: 'For anchor', help: 'Anchor mass the fitting is sized for, as published.' },
+  { key: 'thread', label: 'Thread', help: 'Thread of the swivel nut, as published.' },
 ]
 
 /** Valve rows lead with size, DN, class and port. See `ValveDimensionKey`. */
@@ -880,7 +906,8 @@ const LIFTING_MARKERS: ReadonlySet<string> = new Set<string>([
 /**
  * What a qualifier after `@` means. Some sources split one load column several
  * ways — a rope's breaking load by wire grade and core, a sling's WLL by hitch,
- * anchor chain by grade U1–U3, fibre rope by ISO 2307 and MEG4 — so the key
+ * anchor chain by grade U1–U3, offshore mooring chain by grade ORQ and R3–R5
+ * (IACS UR W22), fibre rope by ISO 2307 and MEG4 — so the key
  * carries the split and the heading reads "Min breaking load, 1770 grade, fibre
  * core". A qualifier missing from this map is dropped, like any unknown key.
  */
@@ -894,6 +921,7 @@ export const QUALIFIER_LABELS: Readonly<Record<string, string>> = {
   g1180_1770: '1180/1770 grade', g1320_1620: '1320/1620 grade', g1370_1570: '1370/1570 grade', g1570_1770: '1570/1770 grade',
   g80: 'Grade 80', g100: 'Grade 100', galv: 'galvanized', ss304: '304 stainless',
   u1: 'grade U1', u2: 'grade U2', u3: 'grade U3',
+  orq: 'grade ORQ', r3: 'grade R3', r3s: 'grade R3S', r4: 'grade R4', r4s: 'grade R4S', r5: 'grade R5',
   mooring1: 'mooring, one rope', mooring2: 'mooring, two ropes', towing: 'towing',
   iso: 'ISO 2307', meg4: 'MEG4 LDBF',
   type1_iso: 'type I, ISO 2307', type1_dry_iso: 'type I, dry, ISO 2307', type1_meg4: 'type I, MEG4 LDBF',
@@ -1094,10 +1122,23 @@ export function variantDimensionColumns(variants: readonly VariantLike[]): Varia
       return out
     })
   const named = new Set<string>(LIFTING_DIMENSION_COLUMNS.map((c) => c.key))
+  // A letter the registry does not list may still be split by a qualifier — a
+  // swivel shackle's pin d1 differs between grade 2 and grade 3 (`d1@u2`,
+  // `d1@u3`). The base letter decides the order, the qualifier the label.
   const extraLetters = [...present]
-    .filter((k) => !named.has(k) && !k.includes('@') && DRAWING_LETTER.test(k))
-    .sort(letterSort)
-    .map((k) => letter(k, letterLabel(k)))
+    .filter((k) => {
+      const [base, q, ...rest] = k.split('@')
+      if (named.has(base!) || rest.length || !DRAWING_LETTER.test(base!)) return false
+      return q === undefined || q in QUALIFIER_LABELS
+    })
+    .sort((a, b) => {
+      const [ba, qa] = a.split('@'), [bb, qb] = b.split('@')
+      return ba === bb ? QUALIFIER_ORDER.indexOf(qa ?? '') - QUALIFIER_ORDER.indexOf(qb ?? '') : letterSort(ba!, bb!)
+    })
+    .map((k) => {
+      const [base, q] = k.split('@')
+      return letter(k, q ? `${letterLabel(base!)}, ${QUALIFIER_LABELS[q]}` : letterLabel(base!))
+    })
   return [
     ...withSplits(LIFTING_LOAD_COLUMNS),
     ...withSplits(LIFTING_PERFORMANCE_COLUMNS),

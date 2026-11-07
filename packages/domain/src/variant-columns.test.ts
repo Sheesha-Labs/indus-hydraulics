@@ -545,6 +545,47 @@ describe('lifting tables', () => {
     for (const c of cols.filter((x) => !['WLL', 'Weight'].includes(x.label))) expect(c.help).toContain('dimension drawing')
   })
 
+  it('splits offshore mooring chain loads by grade, in grade order', () => {
+    const cols = variantDimensionColumns([
+      {
+        partNumber: 'IH-MR-MC-SL-0760',
+        dimensions: {
+          size: '3″ (76 mm)',
+          'mblKn@r5': 7009, 'proofKn@r3': 3417, 'mblKn@r3': 4885, 'proofKn@orq': 3074, 'mblKn@orq': 4632,
+          'proofKn@r4': 4731, 'mblKn@r4': 6002, 'proofKn@r5': 5498, weightPerShotKg: 3713, linksPerShot: 59,
+        },
+      },
+    ])
+    expect(cols.map((c) => c.label)).toEqual([
+      'Proof load, grade ORQ', 'Proof load, grade R3', 'Proof load, grade R4', 'Proof load, grade R5',
+      'Min breaking load, grade ORQ', 'Min breaking load, grade R3', 'Min breaking load, grade R4', 'Min breaking load, grade R5',
+      'Links per shot', 'Weight per shot',
+    ])
+  })
+
+  it('splits an unlisted drawing letter by grade', () => {
+    const cols = variantDimensionColumns([
+      { partNumber: 's', dimensions: { size: '22–24 mm', L: 377, 'd1@u3': 60, 'd1@u2': 58, d2: 31, 'd1@bogus': 1 } },
+    ])
+    expect(cols.map((c) => [c.key, c.label])).toEqual([
+      ['L', 'L'],
+      ['d1@u2', 'd1, grade U2'],
+      ['d1@u3', 'd1, grade U3'],
+      ['d2', 'd2'],
+    ])
+  })
+
+  it('carries buoy columns', () => {
+    const rows = [{ partNumber: 'b', dimensions: { size: '730 kg buoyancy', volumeL: 830, buoyancyKg: 730, weightKg: 130, heightMm: 900, depth: 'Surface' } }]
+    expect(variantTableKind(rows)).toBe('lifting')
+    expect(variantDimensionColumns(rows).map((c) => [c.label, c.unit])).toEqual([
+      ['Net buoyancy', 'kg'],
+      ['Volume', 'L'],
+      ['Height', 'mm'],
+      ['Weight', 'kg'],
+    ])
+  })
+
   it('labels every qualifier the importer writes', () => {
     for (const label of Object.values(QUALIFIER_LABELS)) expect(label.length).toBeGreaterThan(1)
   })
