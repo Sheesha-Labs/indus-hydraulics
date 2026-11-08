@@ -124,8 +124,8 @@ export const HOME_PAGE: MasterPageDef = {
     {
       key: 'industries',
       label: 'Industries strip',
-      description: 'The row of industries served.',
-      dataNote: 'The tiles are the published industries, in the order set under Catalogue · Industries.',
+      description: 'Photo tiles for the industries served, each linking to its industry page.',
+      dataNote: 'The tiles are the published industries, in the order set under Catalogue · Industries, each showing that page’s hero photograph, name and tagline (edited there).',
       fields: [eyebrow(), heading()],
       defaults: {
         eyebrow: 'INDUSTRIES SERVED',

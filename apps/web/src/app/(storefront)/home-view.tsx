@@ -9,6 +9,7 @@ import HomeNewsletterForm from '../../components/HomeNewsletterForm'
 import HomeHeroCarousel, { type HomeHeroSlide } from '../../components/HomeHeroCarousel'
 import HeroTermRotator from '../../components/HeroTermRotator'
 import HomeCategoryIndex, { type HomeCategory } from '../../components/HomeCategoryIndex'
+import HomeIndustryTiles from '../../components/HomeIndustryTiles'
 import BrandMarquee from '../../components/BrandMarquee'
 import { selectMarqueeBrands } from '../../lib/brand-marquee'
 import { rollUpCounts } from '../../lib/category-tree'
@@ -259,7 +260,9 @@ export default async function HomeView({ geoCode }: { geoCode?: string | null })
     slug: row.slug,
     code: `IND.${String(i + 1).padStart(2, '0')}`,
     name: row.name,
-    desc: row.description ?? row.tagline ?? '',
+    tagline: row.tagline,
+    heroImage: row.heroImage,
+    heroImageAlt: row.heroImageAlt,
   }))
 
   /*
@@ -564,29 +567,29 @@ export default async function HomeView({ geoCode }: { geoCode?: string | null })
 
     industries: (
       /* ── INDUSTRIES ───────────────────────────────────────────────────── */
-      <section className="border-t border-ih-border">
-        <div className="mx-auto max-w-[1440px] px-5 sm:px-8 xl:px-12 py-10">
-          <div className="mb-6">
-            <span className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">{t(str(industriesCopy, 'eyebrow'))}</span>
-            <h2 className="mt-2 font-serif text-[clamp(24px,2.5vw,34px)] font-normal leading-[1.12] tracking-[-0.01em]">
-              {t(str(industriesCopy, 'heading'))}
-            </h2>
-          </div>
-        </div>
-        <div className="border-t border-ih-border grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6">
-          {industries.map((ind, i) => (
+      <section className="border-t border-ih-border py-[72px]">
+        <div className="mx-auto max-w-[1440px] px-5 sm:px-8 xl:px-12">
+          <div className="mb-8 flex items-end justify-between gap-6">
+            <div>
+              <span className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">{t(str(industriesCopy, 'eyebrow'))}</span>
+              <h2 className="mt-2 font-serif text-[clamp(24px,2.5vw,34px)] font-normal leading-[1.12] tracking-[-0.01em]">
+                {t(str(industriesCopy, 'heading'))}
+              </h2>
+            </div>
             <Link
-              key={ind.slug}
-              href={`/industries/${ind.slug}`}
-              className={`flex flex-col gap-3 px-6 py-8 border-r border-ih-border hover:bg-ih-surface transition-colors cursor-pointer ${
-                i === industries.length - 1 ? 'border-r-0' : ''
-              }`}
+              href="/industries"
+              className="hidden h-10 shrink-0 items-center border border-ih-border px-4 font-mono text-[12px] text-ih-ink-2 transition-colors hover:bg-ih-surface-2 sm:flex"
             >
-              <span className="font-mono text-[11px] text-ih-muted-2 tracking-[0.06em]">{ind.code}</span>
-              <h4 className="text-[17px] font-semibold tracking-[-0.01em]">{ind.name}</h4>
-              <p className="text-[12px] text-ih-muted leading-[1.45]">{ind.desc}</p>
+              All industries →
             </Link>
-          ))}
+          </div>
+          <HomeIndustryTiles industries={industries} />
+          <Link
+            href="/industries"
+            className="mt-5 flex h-10 items-center justify-center rounded-md border border-ih-border font-mono text-[12px] text-ih-ink-2 transition-colors hover:bg-ih-surface-2 sm:hidden"
+          >
+            All industries →
+          </Link>
         </div>
       </section>
     ),
@@ -622,17 +625,25 @@ export default async function HomeView({ geoCode }: { geoCode?: string | null })
 
             {/* Right — dark panel with quote */}
             <div className="relative flex min-h-[420px] flex-col justify-between overflow-hidden rounded-lg bg-ih-navy p-12 text-white">
-              {/* The photograph, when one is picked. Held at 15% so the quote
-                  stays the readable thing on the panel — the same weight the
-                  placeholder caption sat at before there was an image. */}
+              {/* The photograph, when one is picked: shown at full strength
+                  under a black scrim — 70% at the top where the quote sits,
+                  easing to 55% so the scene still reads — rather than faded
+                  into the navy, which turned a photo into a smudge. White
+                  text over the darkest stop of the scrim stays above AA. */}
               {quoteImage?.url ? (
-                <Image
-                  src={quoteImage.url}
-                  alt={quoteImage.alt ?? ''}
-                  fill
-                  sizes="(max-width: 1024px) 100vw, 45vw"
-                  className="object-cover opacity-[0.28]"
-                />
+                <>
+                  <Image
+                    src={quoteImage.url}
+                    alt={quoteImage.alt ?? ''}
+                    fill
+                    sizes="(max-width: 1024px) 100vw, 45vw"
+                    className="object-cover"
+                  />
+                  <div
+                    aria-hidden="true"
+                    className="absolute inset-0 bg-gradient-to-b from-[oklch(0_0_0/0.72)] via-[oklch(0_0_0/0.6)] to-[oklch(0_0_0/0.78)]"
+                  />
+                </>
               ) : (
                 <div className="absolute inset-0 opacity-[0.15] flex items-center justify-center">
                   <p className="font-mono text-[11px] text-ih-muted text-center">
@@ -641,7 +652,10 @@ export default async function HomeView({ geoCode }: { geoCode?: string | null })
                 </div>
               )}
               <div className="relative">
-                <span className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-accent">{str(why, 'quote_eyebrow')}</span>
+                {/* Steel, not accent: the accent blue drops under 3:1 on the dark
+                    scrim; steel is the tone the navy USP strip uses for the
+                    same job. */}
+                <span className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-steel">{str(why, 'quote_eyebrow')}</span>
                 <p className="text-[22px] leading-[1.4] tracking-[-0.01em] max-w-[380px] mt-3">
                   &ldquo;{str(why, 'quote')}&rdquo;
                 </p>
