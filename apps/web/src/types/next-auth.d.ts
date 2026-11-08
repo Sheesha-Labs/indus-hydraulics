@@ -3,6 +3,11 @@ import type { DefaultSession } from 'next-auth'
 /**
  * The single `next-auth` module augmentation for this app.
  *
+ * Only the staff instance (lib/admin-auth.ts) exists now — customer accounts
+ * were removed in 2026-11. The shape below still carries `accountId` and the
+ * `'customer'` kind so a hostile or stale token typed against it is rejected by
+ * `isStaffSession` rather than silently fitting. History:
+ *
  * The storefront and admin apps are being merged into one Next.js program.
  * Until now each declared its own `Session["user"]` shape — `{ id, accountId,
  * role }` on the storefront, `{ id, role }` in admin. Interface declaration
@@ -14,7 +19,7 @@ import type { DefaultSession } from 'next-auth'
  * Deliberately a superset, not a discriminated union. `user: CustomerUser |
  * StaffUser` would turn every one of the ~207 existing `session.user.role` /
  * `session.user.accountId` reads into a narrowing error. The runtime narrowing
- * lives in `isStaffSession` / `isCustomerSession` instead, where it can
+ * lives in `isStaffSession` instead, where it can
  * actually be enforced.
  */
 declare module 'next-auth' {

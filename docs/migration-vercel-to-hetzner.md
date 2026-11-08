@@ -45,7 +45,7 @@ Everything below is sized from this answer.
       is one laptop away from unrecoverable. `vercel env pull`, then diff against
       `turbo.json` globalEnv.
 - [ ] **Copy these verbatim — regenerating them invalidates live sessions or breaks links:**
-      `CUSTOMER_AUTH_SECRET`, `STAFF_AUTH_SECRET`, `PREVIEW_TOKEN_SECRET`, `QUOTE_TOKEN_SECRET`.
+      `STAFF_AUTH_SECRET`, `PREVIEW_TOKEN_SECRET`, `QUOTE_TOKEN_SECRET`.
 - [ ] **Regenerate `.env.example`.** It still names `STOREFRONT_AUTH_SECRET` and
       `ADMIN_AUTH_SECRET` (`.env.example:5,9`) — names the code stopped using.
       The real allowlist is `turbo.json` globalEnv, because Turbo 2.9.6 runs
@@ -104,7 +104,7 @@ Nothing but Vercel has ever compiled this app.
       failed on `STAFF_AUTH_SECRET is missing`, because route modules are
       evaluated while collecting page data and the auth config is built at import
       time. Required repository secrets:
-      `DATABASE_URL`, `DIRECT_URL`, `CUSTOMER_AUTH_SECRET`, `STAFF_AUTH_SECRET`
+      `DATABASE_URL`, `DIRECT_URL`, `STAFF_AUTH_SECRET`
       (two **different** values), `SUPABASE_SERVICE_ROLE_KEY`,
       `NEXT_PUBLIC_SUPABASE_URL`.
 - [ ] **Replace the `VERCEL_ENV` gates.** `markets/page.tsx:174`,

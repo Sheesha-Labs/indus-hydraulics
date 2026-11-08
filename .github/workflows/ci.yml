@@ -98,13 +98,11 @@ jobs:
         #
         # Required repository secrets:
         #   DATABASE_URL, DIRECT_URL
-        #   CUSTOMER_AUTH_SECRET, STAFF_AUTH_SECRET   (two DIFFERENT values —
-        #     reusing one defeats the customer/staff session isolation)
+        #   STAFF_AUTH_SECRET
         #   SUPABASE_SERVICE_ROLE_KEY, NEXT_PUBLIC_SUPABASE_URL
         env:
           DATABASE_URL: ${{ secrets.DATABASE_URL }}
           DIRECT_URL: ${{ secrets.DIRECT_URL }}
-          CUSTOMER_AUTH_SECRET: ${{ secrets.CUSTOMER_AUTH_SECRET }}
           STAFF_AUTH_SECRET: ${{ secrets.STAFF_AUTH_SECRET }}
           SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
           NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}

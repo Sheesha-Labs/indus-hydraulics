@@ -6,17 +6,12 @@ import SiteHeaderClient from './SiteHeaderClient'
 /**
  * The site header, and nothing per-visitor in it.
  *
- * This used to `await customerSessionOrNull()` to decide between "Sign in" and
- * "My account", and to load the notification list. Because the header is
- * mounted in the storefront layout, that one cookie read made EVERY page under
- * (storefront) render dynamically — /privacy and /terms included, pages with
- * no per-visitor content at all. The whole catalogue was uncacheable to pay
- * for one button.
- *
- * Everything here is now either static or cross-request cached, so the header
- * prerenders. The signed-in half moved to SiteHeaderClient, which asks
- * /api/me after hydration. Do not reintroduce a session or cookie read in this
- * component or anything it renders on the server.
+ * The header is mounted in the storefront layout, so a single session or
+ * cookie read here would make EVERY page under (storefront) render
+ * dynamically — that happened once, to decide between "Sign in" and "My
+ * account", and left the whole catalogue uncacheable. The storefront no longer
+ * has customer accounts at all; keep everything here static or cross-request
+ * cached so the header prerenders.
  */
 export default async function SiteHeader() {
   const [headerMenu, megamenu, brands, industries, settings] = await Promise.all([
@@ -41,7 +36,7 @@ export default async function SiteHeader() {
       brands={brands}
       industries={industries}
       contactPhone={settings.contactPhone}
-      contactHours={settings.contactHours}
+      contactEmail={settings.contactEmail}
       brandName={settings.name}
       logoUrl={settings.logoUrl}
       logoStyle={settings.logoStyle}

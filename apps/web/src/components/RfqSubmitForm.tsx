@@ -6,19 +6,6 @@ import { Input, Select, Textarea } from '@indus/ui'
 import RfqAttachments from './RfqAttachments'
 import { submitRfq } from '../app/(storefront)/quote/actions'
 
-type Address = {
-  id: string
-  label: string
-  lines: string[]
-  city: string
-  countryCode: string
-}
-
-type Props = {
-  addresses: Address[]
-  isAuthenticated: boolean
-}
-
 type LineItem = {
   sku: string
   title: string
@@ -27,7 +14,7 @@ type LineItem = {
   brand?: string
 }
 
-export default function RfqSubmitForm({ addresses, isAuthenticated }: Props) {
+export default function RfqSubmitForm() {
   const [lines, setLines] = useState<LineItem[]>([])
   const [mounted, setMounted] = useState(false)
   const [urgency, setUrgency] = useState<'routine' | 'priority' | 'plant_down'>('routine')
@@ -120,83 +107,77 @@ export default function RfqSubmitForm({ addresses, isAuthenticated }: Props) {
         {/* ── Main form ─────────────────────────────────────────── */}
         <div className="flex flex-col gap-6">
 
-          {/* Anonymous contact details — shown only for visitors without an account.
-              Signed-in users skip this section and submit under their session. */}
-          {!isAuthenticated && (
-            <section className="border border-ih-border bg-ih-surface p-6">
-              <h2 className="text-[18px] font-semibold mb-1">Your contact details</h2>
-              <p className="text-[13px] text-ih-muted mb-5">
-                We need a way to reach you with availability and pricing. Already have an account?{' '}
-                <Link href={`/sign-in?next=/quote/submit`} className="text-ih-accent hover:underline">
-                  Sign in instead
-                </Link>
-                .
-              </p>
+          {/* Contact details. There is no customer sign-in, so every
+              submitter fills these in. */}
+          <section className="border border-ih-border bg-ih-surface p-6">
+            <h2 className="text-[18px] font-semibold mb-1">Your contact details</h2>
+            <p className="text-[13px] text-ih-muted mb-5">
+              We need a way to reach you with availability and pricing.
+            </p>
 
-              <div className="flex flex-col gap-4">
-                <div className="grid grid-cols-2 gap-3.5">
-                  <div>
-                    <label htmlFor="rfq-firstName" className="mb-1.5 block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">
-                      First name *
-                    </label>
-                    <Input
-                      id="rfq-firstName"
-                      name="firstName"
-                      type="text"
-                      required
-                      placeholder="e.g. Rohit" />
-                  </div>
-                  <div>
-                    <label htmlFor="rfq-lastName" className="mb-1.5 block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">
-                      Last name *
-                    </label>
-                    <Input
-                      id="rfq-lastName"
-                      name="lastName"
-                      type="text"
-                      required
-                      placeholder="e.g. Kapoor" />
-                  </div>
-                </div>
-
-                <div className="grid grid-cols-2 gap-3.5">
-                  <div>
-                    <label htmlFor="rfq-email" className="mb-1.5 block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">
-                      Work email *
-                    </label>
-                    <Input
-                      id="rfq-email"
-                      name="email"
-                      type="email"
-                      required
-                      placeholder="rohit@company.com" />
-                  </div>
-                  <div>
-                    <label htmlFor="rfq-phone" className="mb-1.5 block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">
-                      Phone / WhatsApp
-                    </label>
-                    <Input
-                      id="rfq-phone"
-                      name="phone"
-                      type="tel"
-                      placeholder="+971 5X XXX XXXX" className="font-mono" />
-                  </div>
-                </div>
-
+            <div className="flex flex-col gap-4">
+              <div className="grid grid-cols-2 gap-3.5">
                 <div>
-                  <label htmlFor="rfq-company" className="mb-1.5 block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">
-                    Company *
+                  <label htmlFor="rfq-firstName" className="mb-1.5 block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">
+                    First name *
                   </label>
                   <Input
-                    id="rfq-company"
-                    name="company"
+                    id="rfq-firstName"
+                    name="firstName"
                     type="text"
                     required
-                    placeholder="Your company / refinery / EPC" />
+                    placeholder="e.g. Rohit" />
+                </div>
+                <div>
+                  <label htmlFor="rfq-lastName" className="mb-1.5 block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">
+                    Last name *
+                  </label>
+                  <Input
+                    id="rfq-lastName"
+                    name="lastName"
+                    type="text"
+                    required
+                    placeholder="e.g. Kapoor" />
                 </div>
               </div>
-            </section>
-          )}
+
+              <div className="grid grid-cols-2 gap-3.5">
+                <div>
+                  <label htmlFor="rfq-email" className="mb-1.5 block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">
+                    Work email *
+                  </label>
+                  <Input
+                    id="rfq-email"
+                    name="email"
+                    type="email"
+                    required
+                    placeholder="rohit@company.com" />
+                </div>
+                <div>
+                  <label htmlFor="rfq-phone" className="mb-1.5 block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">
+                    Phone / WhatsApp
+                  </label>
+                  <Input
+                    id="rfq-phone"
+                    name="phone"
+                    type="tel"
+                    placeholder="+971 5X XXX XXXX" className="font-mono" />
+                </div>
+              </div>
+
+              <div>
+                <label htmlFor="rfq-company" className="mb-1.5 block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">
+                  Company *
+                </label>
+                <Input
+                  id="rfq-company"
+                  name="company"
+                  type="text"
+                  required
+                  placeholder="Your company / refinery / EPC" />
+              </div>
+            </div>
+          </section>
 
           {/* Project details */}
           <section className="border border-ih-border bg-ih-surface p-6">
@@ -290,25 +271,6 @@ export default function RfqSubmitForm({ addresses, isAuthenticated }: Props) {
                   </Select>
                 </div>
               </div>
-
-              {/* Ship-to address */}
-              {addresses.length > 0 && (
-                <div>
-                  <label htmlFor="rfq-shipToAddressId" className="mb-1.5 block font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-ih-muted">
-                    Delivery address
-                  </label>
-                  <Select
-                    id="rfq-shipToAddressId"
-                    name="shipToAddressId">
-                    <option value="">— Select address —</option>
-                    {addresses.map((addr) => (
-                      <option key={addr.id} value={addr.id}>
-                        {addr.label} · {addr.city}, {addr.countryCode}
-                      </option>
-                    ))}
-                  </Select>
-                </div>
-              )}
 
               {/* Attachments — a real upload; this used to be a dashed box
                   with no file input behind it. */}
