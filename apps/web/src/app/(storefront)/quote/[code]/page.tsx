@@ -1,8 +1,7 @@
 import type { Metadata } from 'next'
-import { notFound, redirect } from 'next/navigation'
+import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import Image from 'next/image'
-import { auth } from '../../../../lib/auth'
 import { db } from '@indus/db'
 import { mediaUrl } from '../../../../lib/media'
 import { verifyQuoteAccessToken } from '@indus/domain'
@@ -69,18 +68,14 @@ function getStepReached(status: string): number {
 export default async function RfqStatusPage({ params, searchParams }: Props) {
   const { code } = await params
   const sp = await searchParams
-  const session = await auth()
 
-  // Two valid paths to view this RFQ:
-  //  1. Logged-in account contact whose accountId matches.
-  //  2. Holder of a signed access token (from the quote_sent email link),
-  //     so a forwarded recipient can view + download the PDF without an account.
+  // The only way to view an RFQ is a signed access token for this code — the
+  // link in the confirmation and quote_sent emails, or the redirect straight
+  // after submitting. There are no customer accounts to fall back on. A
+  // missing or bad token is a 404, not a 403, so RFQ codes cannot be probed.
   const tokenCheck = sp.token ? verifyQuoteAccessToken(sp.token, code) : null
-  const hasValidToken = tokenCheck?.valid === true
-
-  if (!session?.user?.accountId && !hasValidToken) {
-    redirect(`/sign-in?next=/quote/${code}`)
-  }
+  if (tokenCheck?.valid !== true || !sp.token) notFound()
+  const token = sp.token
 
   const rfq = await db.rfq.findUnique({
     where: { code },
@@ -124,8 +119,6 @@ export default async function RfqStatusPage({ params, searchParams }: Props) {
   for (const row of stepActivity) {
     stepTimestamps.set(row.verb, row.createdAt)
   }
-  // Logged-in users must own the account; signed-link viewers bypass this.
-  if (!hasValidToken && rfq.accountId !== session?.user?.accountId) notFound()
 
   const isTerminal = ['declined', 'expired', 'cancelled'].includes(rfq.status)
   const stepReached = getStepReached(rfq.status)
@@ -147,7 +140,7 @@ export default async function RfqStatusPage({ params, searchParams }: Props) {
             rfqCode: rfq.code,
             urgency: rfq.urgency,
             lineCount: rfq.lines.length,
-            anonymous: hasValidToken && !session?.user?.accountId,
+            anonymous: true,
           }}
         />
       )}
@@ -332,7 +325,7 @@ export default async function RfqStatusPage({ params, searchParams }: Props) {
                 </div>
                 {q.pdfMedia ? (
                   <a
-                    href={`/api/quotes/${encodeURIComponent(q.code)}/pdf${hasValidToken && sp.token ? `?token=${encodeURIComponent(sp.token)}` : ''}`}
+                    href={`/api/quotes/${encodeURIComponent(q.code)}/pdf?token=${encodeURIComponent(token)}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 h-9 px-4 border border-ih-accent text-ih-accent font-mono text-[12px] hover:bg-ih-accent hover:text-white transition-colors whitespace-nowrap"
@@ -351,10 +344,10 @@ export default async function RfqStatusPage({ params, searchParams }: Props) {
       {/* ── CTAs ────────────────────────────────────────────────── */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
         <Link
-          href={`/account/quotes`}
+          href={`/c`}
           className="h-12 flex items-center justify-center bg-ih-navy text-white font-medium text-[14px] hover:opacity-90 transition-opacity"
         >
-          Track in your account →
+          Continue browsing →
         </Link>
         <Link
           href={`/`}

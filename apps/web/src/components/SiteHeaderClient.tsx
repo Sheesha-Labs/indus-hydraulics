@@ -10,8 +10,6 @@ import BrandLockup from './BrandLockup'
 import type { LogoStyle } from '../lib/brand-identity'
 import SearchAutocomplete from './SearchAutocomplete'
 import NavListDropdown from './NavListDropdown'
-import NotificationBell from './NotificationBell'
-import { useViewer } from './useViewer'
 
 type NavListEntry = { slug: string; name: string }
 type DropdownKind = 'mega' | 'brands' | 'industries' | null
@@ -22,7 +20,8 @@ interface Props {
   brands: NavListEntry[]
   industries: NavListEntry[]
   contactPhone: string | null
-  contactHours: string | null
+  /** Sales inbox from StoreSettings — rendered as a mailto: link in the utility bar. */
+  contactEmail: string | null
   /** Store name — the typeset wordmark, and the logo's alt text when it stands alone. */
   brandName: string
   /** CMS-uploaded header logo, already resolved to a URL. Null uses LogoMark. */
@@ -109,15 +108,11 @@ export default function SiteHeaderClient({
   brands,
   industries,
   contactPhone,
-  contactHours,
+  contactEmail,
   brandName,
   logoUrl,
   logoStyle,
 }: Props) {
-  // Who is looking at this page. Resolved client-side, because reading the
-  // session on the server here made every storefront route dynamic — see
-  // SiteHeader and app/api/me.
-  const viewer = useViewer()
   const [mobileOpen, setMobileOpen] = useState(false)
   const [activeDropdown, setActiveDropdown] = useState<DropdownKind>(null)
   const [activeCatIdx, setActiveCatIdx] = useState(0)
@@ -177,11 +172,11 @@ export default function SiteHeaderClient({
     /*
       Translucent bar. The frosted pane is a sibling layer rather than a
       `backdrop-blur` class on the bar itself, because `backdrop-filter`
-      establishes a containing block for positioned descendants — and the
-      notification panel's click-away scrim (NotificationBell) is
-      `fixed inset-0`, which would then be trapped inside the 72px bar
-      instead of covering the viewport. Painting the blur in a layer nothing
-      is nested inside keeps that escape hatch intact.
+      establishes a containing block for positioned descendants — any
+      `fixed inset-0` overlay or click-away scrim nested in the bar would then
+      be trapped inside the 72px bar instead of covering the viewport.
+      Painting the blur in a layer nothing is nested inside keeps that escape
+      hatch intact.
 
       Both bars keep their solid colour as the base class and only add the
       alpha under `supports-[backdrop-filter]`, so a browser without the
@@ -206,11 +201,29 @@ export default function SiteHeaderClient({
       */}
       <div className="bg-ih-navy text-[oklch(0.82_0.02_250)]">
         <div className="mx-auto flex h-[34px] max-w-[1440px] items-center justify-between px-5 sm:px-8 xl:px-12 font-mono text-[11px] tracking-[0.04em]">
-          <div className="flex gap-6">
-            {contactPhone && <span>{contactPhone}</span>}
-            {/* 03 §6: below 768 the utility bar drops to the phone number
-                only — at 375 the hours string wraps the bar to two lines. */}
-            {contactHours && <span className="hidden sm:inline">{contactHours}</span>}
+          {/*
+            Phone and sales email, on every breakpoint. The opening hours used
+            to sit here; they dropped out at <768 anyway, and most visitors
+            come to the site for a way to send us a part list — the email is
+            the more useful line. Both strings together are ~40 characters of
+            11px mono, which fits a 375px viewport on one line.
+
+            The email is a plain mailto: (same as the footer and the PDP's
+            "Email Quote"), so it opens a new draft in whatever mail app the
+            visitor uses — Gmail on Android and iOS, the default client on
+            desktop. `h-full` makes the whole bar height the tap target
+            rather than the 11px line of text.
+          */}
+          <div className="flex h-full min-w-0 items-center gap-4 sm:gap-6">
+            {contactPhone && <span className="shrink-0">{contactPhone}</span>}
+            {contactEmail && (
+              <a
+                href={`mailto:${contactEmail}`}
+                className="flex h-full min-w-0 items-center truncate transition-colors hover:text-white focus-visible:text-white focus-visible:underline focus-visible:outline-none"
+              >
+                {contactEmail}
+              </a>
+            )}
           </div>
         </div>
       </div>
@@ -363,61 +376,18 @@ export default function SiteHeaderClient({
             Now it shrinks: a plain width instead of a min-width, min-w-0 so flex
             is allowed to shrink it below that, and it only appears at xl where
             there is actually room alongside the nav — at lg the logo, nav,
-            search and three action buttons still did not fit.
+            search still did not fit.
 
-            It is also the only shrinkable item in this row: the icon buttons and
-            the account button are all shrink-0, so the squeeze lands here and
-            nowhere else. Widening it to 400 needed the nav to stop being flex-1
+            It is also the only shrinkable item in this row: the hamburger is
+            shrink-0, so the squeeze lands here and nowhere else. (The quote
+            basket, sign-in / My account button and notification bell that used
+            to sit here were removed in 2026-11: visitors use the site to find a
+            part and then email or WhatsApp us, not as a self-serve portal.) Widening it to 400 needed the nav to stop being flex-1
             (see above) — with the nav growing, this box never reached its width.
           */}
             <div className="hidden w-[400px] min-w-0 xl:block">
               <SearchAutocomplete className="relative w-full" />
             </div>
-
-            {/* Notification bell */}
-            {viewer.signedIn ? (
-              <NotificationBell unreadCount={viewer.unreadCount} notifications={viewer.notifications} />
-            ) : null}
-
-            {/* Quote basket */}
-            <Link
-              href={`/quote`}
-              className="border-ih-border text-ih-ink-2 hover:border-ih-accent hover:text-ih-accent relative flex h-10 w-10 shrink-0 items-center justify-center rounded-md border transition-colors"
-              aria-label="Quote"
-            >
-              <svg
-                width="16"
-                height="16"
-                viewBox="0 0 20 20"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="1.5"
-                aria-hidden="true"
-              >
-                <rect x="4" y="3" width="12" height="14" rx="1" />
-                <path d="M7 7h6M7 10h6M7 13h4" />
-              </svg>
-            </Link>
-
-            {/* Account */}
-            {viewer.signedIn ? (
-              <Link
-                href={`/account`}
-                className="bg-ih-navy hover:bg-ih-ink hidden h-10 shrink-0 items-center gap-2 whitespace-nowrap rounded-md px-[18px] text-[13.5px] font-medium text-white transition-colors sm:flex"
-              >
-                <span className="bg-ih-accent grid h-5 w-5 shrink-0 place-items-center rounded-full text-[9px] font-medium text-white">
-                  {(viewer.name ?? 'U').charAt(0).toUpperCase()}
-                </span>
-                My account
-              </Link>
-            ) : (
-              <Link
-                href={`/sign-in`}
-                className="border-ih-border-strong text-ih-ink hover:border-ih-accent hover:bg-ih-surface-2 hover:text-ih-accent hidden h-10 shrink-0 items-center whitespace-nowrap rounded-md border px-[18px] text-[13.5px] font-medium transition-colors sm:flex"
-              >
-                Sign in
-              </Link>
-            )}
 
             {/* Mobile hamburger */}
             <button
@@ -809,20 +779,6 @@ export default function SiteHeaderClient({
             </div>
           ) : null}
 
-          <div className="flex gap-3 px-5 py-4">
-            <Link
-              href={`/sign-in`}
-              className="border-ih-border-strong text-ih-ink flex h-10 flex-1 items-center justify-center rounded-md border text-[13.5px] font-medium"
-            >
-              Sign in
-            </Link>
-            <Link
-              href={`/quote`}
-              className="bg-ih-accent text-ih-accent-fg flex h-10 flex-1 items-center justify-center rounded-md text-[13.5px] font-medium"
-            >
-              Quote
-            </Link>
-          </div>
         </div>
       )}
     </header>

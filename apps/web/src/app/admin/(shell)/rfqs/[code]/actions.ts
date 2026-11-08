@@ -161,23 +161,6 @@ async function fireQuoteAckSideEffects(input: {
       rfqId: input.rfqId,
       quoteId: input.quote.id,
     })
-
-    // In-app notification for the customer's account portal bell.
-    if (input.contactId) {
-      await db.notification.create({
-        data: {
-          recipientKind: 'contact',
-          contactId: input.contactId,
-          kind: 'rfq_status_change',
-          payload: {
-            rfqId: input.rfqId,
-            rfqCode: input.rfqCode,
-            quoteCode: input.quote.code,
-            outcome: input.outcome,
-          },
-        },
-      })
-    }
   } catch (err) {
      
     console.error('[updateRfqStatus] ack side-effect error', err)

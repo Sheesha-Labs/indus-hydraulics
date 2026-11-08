@@ -1548,7 +1548,7 @@ function DocumentsTab({
         </Field>
         <label className="col-span-2 flex items-center gap-1.5 text-[12px] text-ih-ink-2">
           <input type="checkbox" name="isGated" />
-          Gate behind sign-in (only registered users can download)
+          On request only (not downloadable — visitors are sent to Contact)
         </label>
         <div className="col-span-2 flex items-center gap-3">
           <button

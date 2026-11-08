@@ -11,12 +11,10 @@ import { safeNextPath } from '../../../lib/safe-next-path'
  * This is a server action rather than a client `signIn()` from
  * `next-auth/react` on purpose. That client helper resolves its base path from
  * `NEXTAUTH_URL` **at build time** (`next-auth/lib/client.js` returns
- * `/api/auth` whenever the URL's pathname is `/`), so it always posts to the
- * customer instance's endpoint. On one origin that would send staff
- * credentials to the customer `authorize()`, which queries `account_contacts`
- * — a silent sign-in failure, or worse a customer session for any staff member
- * whose email also exists as a contact. A server action calls this app's own
- * `signIn` binding directly and cannot target the wrong instance.
+ * `/api/auth` whenever the URL's pathname is `/`), but this instance lives at
+ * `/admin/api/auth` — so the helper posts to a route that does not exist. A
+ * server action calls this app's own `signIn` binding directly and cannot
+ * target the wrong path.
  */
 export async function adminSignInAction(
   _prevState: { error?: string } | null,

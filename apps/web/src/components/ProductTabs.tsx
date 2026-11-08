@@ -289,7 +289,7 @@ export default function ProductTabs({
                     rel="noopener noreferrer"
                     className="shrink-0 h-8 px-4 flex items-center border border-ih-border font-mono text-[11px] text-ih-ink-2 hover:bg-ih-surface-2 transition-colors"
                   >
-                    {doc.isGated ? '🔒 Sign in to download' : '↓ Download'}
+                    {doc.isGated ? '🔒 On request' : '↓ Download'}
                   </a>
                 </div>
               ))}

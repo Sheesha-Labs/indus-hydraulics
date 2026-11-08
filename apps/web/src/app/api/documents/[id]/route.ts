@@ -1,6 +1,5 @@
 import { NextResponse } from 'next/server'
 import { db } from '@indus/db'
-import { customerSessionOrNull } from '../../../../lib/customer-session'
 import { signedUrlFor } from '../../../../lib/supabase'
 import { mediaUrl } from '../../../../lib/media'
 
@@ -18,12 +17,13 @@ import { mediaUrl } from '../../../../lib/media'
  *    within five minutes of the page being generated. Minting per-request is
  *    not an optimisation here, it is the only correct behaviour.
  *
- * The gate itself is unchanged and still enforced on the server: gated
- * documents sit in the private `product-documents` bucket, which is not
- * publicly readable, and the only way to a working URL is through this
- * handler. What changed is that an anonymous visitor now sees a link and gets
- * bounced to sign-in, instead of seeing no link at all. No document is exposed
- * that was not exposed before.
+ * Gated documents. These used to require a customer sign-in. Customer
+ * accounts were removed in 2026-11, so "gated" now means ON REQUEST: the
+ * handler never mints a URL for one and sends the visitor to /contact
+ * instead. Gated files sit in the private `product-documents` bucket, which
+ * is not publicly readable, so this handler is still the only way to a working
+ * URL — and for a gated document there is none. No document is exposed that
+ * was not exposed before.
  */
 export const dynamic = 'force-dynamic'
 
@@ -37,21 +37,16 @@ export async function GET(_request: Request, { params }: Params) {
     select: {
       isGated: true,
       media: { select: { storagePath: true } },
-      product: { select: { slug: true } },
     },
   })
 
   if (!doc) return new NextResponse('Not found', { status: 404 })
 
   if (doc.isGated) {
-    const session = await customerSessionOrNull()
-    if (!session) {
-      const next = `/p/${doc.product.slug}`
-      return NextResponse.redirect(
-        new URL(`/sign-in?next=${encodeURIComponent(next)}`, process.env.NEXT_PUBLIC_BASE_URL ?? 'http://localhost:3000'),
-        { status: 307 },
-      )
-    }
+    return NextResponse.redirect(
+      new URL('/contact', process.env.NEXT_PUBLIC_BASE_URL ?? 'http://localhost:3000'),
+      { status: 307, headers: { 'cache-control': 'no-store' } },
+    )
   }
 
   const path = doc.media.storagePath
