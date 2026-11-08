@@ -9,6 +9,8 @@ import HomeNewsletterForm from '../../components/HomeNewsletterForm'
 import HomeHeroCarousel, { type HomeHeroSlide } from '../../components/HomeHeroCarousel'
 import HeroTermRotator from '../../components/HeroTermRotator'
 import HomeCategoryIndex, { type HomeCategory } from '../../components/HomeCategoryIndex'
+import HomeProductMix, { type HomeMixProduct } from '../../components/HomeProductMix'
+import { pickProductMix } from '../../lib/home-product-mix'
 import BrandMarquee from '../../components/BrandMarquee'
 import { selectMarqueeBrands } from '../../lib/brand-marquee'
 import { rollUpCounts } from '../../lib/category-tree'
@@ -128,15 +130,65 @@ const getHomeBrands = unstable_cache(
   { revalidate: 3600, tags: ['brands'] },
 )
 
+/** Tiles in the product sample — eight across, three rows, on a wide screen. */
+const HOME_MIX_SIZE = 24
+
+/*
+  A random product from each of 24 different top-level categories, every one
+  with a photograph. Chosen inside the hourly cache, so the page stays static
+  and the mix changes each time the cache refreshes — see lib/home-product-mix.
+
+  The candidate read is ids and category ids only (~7k narrow rows an hour);
+  the full rows are fetched for the 24 picked.
+*/
 const getHomeFeaturedProducts = unstable_cache(
-  () =>
-    db.product.findMany({
-      where: { status: 'active' },
-      orderBy: { createdAt: 'desc' },
-      take: 4,
-      include: { brand: { select: { name: true } } },
-    }),
-  ['home-featured-products'],
+  async (): Promise<HomeMixProduct[]> => {
+    const [candidates, categories] = await Promise.all([
+      db.product.findMany({
+        where: { status: 'active', images: { some: {} } },
+        select: { id: true, categoryId: true },
+      }),
+      db.category.findMany({
+        select: { id: true, parentId: true, isPublished: true, slug: true, name: true },
+      }),
+    ])
+    const picks = pickProductMix(candidates, categories, HOME_MIX_SIZE)
+    if (picks.length === 0) return []
+
+    const rows = await db.product.findMany({
+      where: { id: { in: picks.map((p) => p.productId) } },
+      select: {
+        id: true,
+        slug: true,
+        title: true,
+        images: {
+          orderBy: { position: 'asc' },
+          take: 1,
+          select: { alt: true, media: { select: { storagePath: true, alt: true } } },
+        },
+      },
+    })
+    const rowById = new Map(rows.map((r) => [r.id, r]))
+    const categoryById = new Map(categories.map((c) => [c.id, c]))
+
+    return picks.flatMap(({ productId, rootId }) => {
+      const row = rowById.get(productId)
+      const image = row?.images[0]
+      const root = categoryById.get(rootId)
+      if (!row || !image || !root) return []
+      return [
+        {
+          id: row.id,
+          slug: row.slug,
+          title: row.title,
+          // §13: the listing's own alt, then the media's, then the title.
+          image: { storagePath: image.media.storagePath, alt: image.alt ?? image.media.alt ?? null },
+          category: { slug: root.slug, name: root.name },
+        },
+      ]
+    })
+  },
+  ['home-product-mix'],
   { revalidate: 3600, tags: ['products'] },
 )
 
@@ -533,31 +585,17 @@ export default async function HomeView({ geoCode }: { geoCode?: string | null })
             ) : null}
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            {featuredProducts.map((product) => (
-              <Link
-                key={product.id}
-                href={`/p/${product.slug}`}
-                className="group flex flex-col overflow-hidden rounded-lg border border-ih-border bg-ih-surface transition-colors hover:border-ih-accent"
-              >
-                <div className="aspect-square bg-ih-surface-2 border-b border-ih-border relative flex items-center justify-center">
-                  <span className="absolute top-3 left-3 bg-ih-navy text-white font-mono text-[10px] tracking-[0.08em] px-2 py-1">
-                    NEW
-                  </span>
-                  <p className="font-mono text-[11px] text-ih-muted-2 text-center px-4">
-                    Product image<br />520×520
-                  </p>
-                </div>
-                <div className="p-4 flex flex-col gap-2 flex-1">
-                  <span className="font-mono text-[11px] text-ih-muted-2 tracking-[0.04em]">SKU · {product.sku}</span>
-                  <h4 className="text-[15px] font-medium leading-[1.3] tracking-[-0.01em]">{product.title}</h4>
-                  <div className="mt-auto pt-3 border-t border-ih-border flex gap-3 flex-wrap text-[12px] text-ih-muted">
-                    {product.brand && <strong className="text-ih-ink-2 font-medium">{product.brand.name}</strong>}
-                  </div>
-                </div>
-              </Link>
-            ))}
-          </div>
+          <HomeProductMix products={featuredProducts} />
+
+          {/* The header's link is hidden below sm. */}
+          {str(featuredCopy, 'cta_label') && str(featuredCopy, 'cta_href') ? (
+            <Link
+              href={str(featuredCopy, 'cta_href') ?? '/c'}
+              className="mt-6 flex h-10 items-center justify-center rounded-md border border-ih-border font-mono text-[12px] text-ih-ink-2 transition-colors hover:bg-ih-surface-2 sm:hidden"
+            >
+              {str(featuredCopy, 'cta_label')}
+            </Link>
+          ) : null}
         </div>
       </section>
     ) : null,

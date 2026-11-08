@@ -111,12 +111,13 @@ export const HOME_PAGE: MasterPageDef = {
     {
       key: 'featured_products',
       label: 'Featured products',
-      description: 'Four recently added products.',
-      dataNote: 'The four cards are the most recently created active products.',
+      description: 'A grid of photographed products, one from each of several categories.',
+      dataNote:
+        'Up to 24 tiles, eight to a row on wide screens (fewer on narrow ones): one active, photographed product from each of up to 24 randomly ordered top-level categories, labelled with that category. The mix reshuffles each hour.',
       fields: [eyebrow(), heading(), ...ctaPair('', 'Link label')],
       defaults: {
-        eyebrow: 'FEATURED · UPDATED WEEKLY',
-        heading: 'New & in-stock this week.',
+        eyebrow: 'IN STOCK · SHIPS FROM DUBAI',
+        heading: 'In stock across the catalogue.',
         cta_label: 'View all products →',
         cta_href: '/c',
       },
