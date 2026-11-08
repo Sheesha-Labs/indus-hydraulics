@@ -25,10 +25,14 @@ import { CATEGORY_WITH_IMAGE_CHAIN, nearestCategoryImage } from '../../../lib/ca
 import ProductCard from '../../../components/ProductCard'
 import RelatedReading from '../../../components/blog/RelatedReading'
 import {
+  CategoryBriefStrip,
   CategoryDeliveryBand,
+  CategoryDeliveryBrief,
   CategoryFaqBand,
   CategoryProseBand,
+  CategoryProseBrief,
   CategorySizeBand,
+  CategorySizeBrief,
   categoryFaqs,
 } from '../../../components/category/CategoryBands'
 import { categorySizeSummary, gccMarketLinks, getShelfBrandCounts, getShelfSpecRows } from '../../../lib/category-bands'
@@ -465,26 +469,37 @@ export default async function CategoryView({ slug, sp }: CategoryViewProps) {
     hero: (
       <div key="hero">
         {/* Category header */}
-        <div className="border-ih-border border-b py-8">
-          <p className="text-ih-muted mb-3 font-mono text-[10.5px] font-medium uppercase tracking-[0.13em]">
+        {/*
+          Tight on purpose: this header, the sub-category chips and the brief
+          strip all sit above the products, and the products are the reason
+          the page exists. The SKU and brand counts ride beside the title on
+          wide screens instead of taking a row of their own.
+        */}
+        <div className="border-ih-border border-b py-5">
+          <p className="text-ih-muted mb-2 font-mono text-[10.5px] font-medium uppercase tracking-[0.13em]">
             {over(heroCopy, 'eyebrow', 'Category')}
           </p>
-          <h1 className="mb-3 font-serif text-[clamp(30px,4vw,40px)] font-normal leading-[1.06] tracking-[-0.01em]">
-            {over(heroCopy, 'heading', category.name)}
-          </h1>
-          {heroIntro && (
-            <p className="text-ih-muted mb-4 max-w-[620px] text-[14px] leading-[1.55]">
-              {heroIntro}
-            </p>
-          )}
+          <div className="flex flex-wrap items-baseline justify-between gap-x-8 gap-y-2">
+            <h1 className="font-serif text-[clamp(28px,3.6vw,38px)] font-normal leading-[1.06] tracking-[-0.01em]">
+              {over(heroCopy, 'heading', category.name)}
+            </h1>
           <div className="text-ih-muted flex gap-6 font-mono text-[12px]">
             <span>
               <b className="text-ih-ink font-medium">{total}</b> SKUs
             </span>
-            <span>
-              <b className="text-ih-ink font-medium">{allBrands.length}</b> brands
-            </span>
+            {/* Own-label ranges carry no brand, and "0 brands" reads as broken. */}
+            {allBrands.length > 0 && (
+              <span>
+                <b className="text-ih-ink font-medium">{allBrands.length}</b> brands
+              </span>
+            )}
           </div>
+          </div>
+          {heroIntro && (
+            <p className="text-ih-muted mt-2 max-w-[760px] text-[14px] leading-[1.55]">
+              {heroIntro}
+            </p>
+          )}
         </div>
       </div>
     ),
@@ -492,7 +507,7 @@ export default async function CategoryView({ slug, sp }: CategoryViewProps) {
       <div key="children">
         {/* Sub-categories */}
         {category.children.length > 0 && (
-          <div className="no-scrollbar border-ih-border flex gap-2 overflow-x-auto border-b py-4">
+          <div className="no-scrollbar border-ih-border flex gap-2 overflow-x-auto border-b py-3">
             {category.children.map((child) => (
               <Link
                 key={child.id}
@@ -523,9 +538,17 @@ export default async function CategoryView({ slug, sp }: CategoryViewProps) {
     listing: (
       <div key="listing">
         {/* Main listing */}
-        <div className="grid grid-cols-1 gap-9 py-8 pb-16 lg:grid-cols-[248px_1fr]">
+        <div className="grid grid-cols-1 gap-9 py-6 pb-16 lg:grid-cols-[248px_1fr]">
           {/* Filter sidebar */}
-          <aside className="self-start lg:sticky lg:top-[124px] lg:max-h-[calc(100vh-150px)] lg:overflow-y-auto">
+          {/*
+            Below the products on a phone, beside them from lg. Stacked first,
+            the brand and spec facets alone pushed the first product a screen
+            or more down on mobile; the toolbar's "Refine" link jumps here.
+          */}
+          <aside
+            id="refine"
+            className="order-2 scroll-mt-[120px] self-start lg:order-none lg:sticky lg:top-[124px] lg:max-h-[calc(100vh-150px)] lg:overflow-y-auto"
+          >
             <div className="flex flex-col gap-6">
               <div className="flex items-center justify-between">
                 <span className="text-ih-muted font-mono text-[10.5px] font-medium uppercase tracking-[0.13em]">
@@ -747,6 +770,15 @@ export default async function CategoryView({ slug, sp }: CategoryViewProps) {
                 )}
               </p>
               <div className="flex items-center gap-2">
+                {(allBrands.length > 0 || facets.length > 0) && (
+                  <a
+                    href="#refine"
+                    className="border-ih-border text-ih-ink-2 hover:border-ih-accent hover:text-ih-accent inline-flex h-[30px] items-center rounded-md border px-3 text-[12.5px] transition-colors lg:hidden"
+                  >
+                    Refine{activeFilterCount > 0 ? ` · ${activeFilterCount}` : ''}
+                    <span aria-hidden="true" className="ml-1">↓</span>
+                  </a>
+                )}
                 <span className="text-ih-muted font-mono text-[10.5px] uppercase tracking-[0.08em]">
                   Sort
                 </span>
@@ -866,11 +898,55 @@ export default async function CategoryView({ slug, sp }: CategoryViewProps) {
     ),
   }
 
+  /*
+    Compact versions of the editorial bands, for the strip above the listing.
+    Same data, same null-when-unwritten rule as the full bands.
+  */
+  const briefs: Record<string, ReactNode> = {
+    guidance: <CategoryProseBrief key="guidance" values={content.values('guidance')} fallbackEyebrow="How to choose" />,
+    standards: <CategoryProseBrief key="standards" values={content.values('standards')} fallbackEyebrow="Standards" />,
+    sizes: <CategorySizeBrief key="sizes" summary={sizeSummary} />,
+    service: <CategoryProseBrief key="service" values={content.values('service')} fallbackEyebrow="Service" />,
+    delivery: (
+      <CategoryDeliveryBrief
+        key="delivery"
+        values={content.values('delivery')}
+        markets={gccMarkets}
+        categoryName={category.name}
+        categorySlugs={[category.slug, ...trail.map((t) => t.slug)]}
+        exportRegions={exportRegions}
+      />
+    ),
+  }
+
+  /*
+    The editor's order, with everything they placed between the header and the
+    listing gathered into ONE brief strip directly above the listing. The
+    header and the chips stay where they are; anything placed after the
+    listing keeps its full-width form. Order inside the strip is still the
+    editor's. This is what puts the first product on the first screen for
+    every shelf, whatever its band arrangement.
+  */
+  const listingAt = content.order.indexOf('listing')
+  const stripKeys = content.order.filter(
+    (key, i) => (listingAt === -1 || i < listingAt) && key in briefs,
+  )
+  const rendered: ReactNode[] = []
+  for (const key of content.order) {
+    if (stripKeys.includes(key)) continue
+    if (key === 'listing') {
+      rendered.push(
+        <CategoryBriefStrip key="brief-strip">{stripKeys.map((k) => briefs[k])}</CategoryBriefStrip>,
+      )
+    }
+    rendered.push(bands[key] ?? null)
+  }
+
   return (
     <div className="mx-auto max-w-[1440px] px-5 sm:px-8 xl:px-12">
       <JsonLd data={[collectionLd, itemListLd, breadcrumbLd, faqLd]} />
       {/* Breadcrumbs */}
-      <div className="border-ih-border border-b py-4">
+      <div className="border-ih-border border-b py-3">
         <Breadcrumb
           items={[
             { label: 'Home', href: '/' },
@@ -885,7 +961,7 @@ export default async function CategoryView({ slug, sp }: CategoryViewProps) {
         />
       </div>
 
-      {content.order.map((key) => bands[key] ?? null)}
+      {rendered}
     </div>
   )
 }
