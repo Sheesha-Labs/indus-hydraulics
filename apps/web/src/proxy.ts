@@ -1,7 +1,5 @@
 import {
-  CUSTOMER_SESSION_COOKIE,
   HERO_GEO_FALLBACK_CODE,
-  VIEWER_HINT_COOKIE,
   LEGACY_SESSION_COOKIES,
   STAFF_SESSION_COOKIE,
   USE_SECURE_COOKIES,
@@ -18,10 +16,12 @@ import { BASE_URL } from './lib/seo'
 /**
  * One middleware, two surfaces.
  *
- * Storefront paths are an ALLOWLIST — only /account requires a session.
+ * The storefront is fully public — customer accounts were removed in 2026-11,
+ * so no storefront path requires a session.
  * Admin paths are a DENYLIST — everything under /admin requires a staff
- * session except two paths. The two surfaces also need different security
- * headers, which on a shared origin can no longer be a per-app constant.
+ * session except a few sign-in paths. The two surfaces also need different
+ * security headers, which on a shared origin can no longer be a per-app
+ * constant.
  */
 
 const ADMIN_PREFIX = '/admin'
@@ -43,8 +43,19 @@ const ADMIN_PUBLIC_PATHS = [
   '/admin/forgot-password',
 ]
 
-/** Storefront paths requiring a customer session. */
-const PROTECTED_ACCOUNT_PATHS = ['/account']
+/**
+ * The retired customer-account surface. Old bookmarks, the "Sign in" button in
+ * cached HTML and links in old emails land here; send them somewhere useful
+ * instead of a 404. 308 — the move is permanent.
+ */
+const RETIRED_CUSTOMER_PATHS = [
+  '/account',
+  '/sign-in',
+  '/sign-up',
+  '/forgot-password',
+  '/reset-password',
+]
+const RETIRED_CUSTOMER_DESTINATION = '/contact'
 
 /** RFC 6265 §5.1.4-style segment match: /admin matches /admin and /admin/x, not /administrator. */
 function underPrefix(pathname: string, prefix: string): boolean {
@@ -114,43 +125,6 @@ const ADMIN_CSP = [
   "frame-ancestors 'none'",
 ].join('; ')
 
-/**
- * Keep the readable "someone is signed in" hint in step with the real cookie.
- *
- * The session cookie is httpOnly, so the header had no way to know whether a
- * lookup was worth making and asked `/api/me` on every page load — a
- * `force-dynamic` invocation plus a database read per pageview, for every
- * anonymous visitor, to be told "signed out".
- *
- * Set here rather than at sign-in so it is self-healing: any request carrying
- * a session gets the hint back, and any request without one loses it. A stale
- * hint costs a single wasted lookup that returns signed-out and is corrected on
- * the same response.
- *
- * Carries no identity and grants nothing — `/api/me` and every protected route
- * still verify the real session server-side.
- */
-function syncViewerHint(response: NextResponse, request: NextRequest): void {
-  const hasSession = request.cookies.has(CUSTOMER_SESSION_COOKIE)
-  const hasHint = request.cookies.has(VIEWER_HINT_COOKIE)
-
-  if (hasSession && !hasHint) {
-    response.cookies.set({
-      name: VIEWER_HINT_COOKIE,
-      value: '1',
-      path: '/',
-      sameSite: 'lax',
-      secure: USE_SECURE_COOKIES,
-      // Readable from JavaScript on purpose — that is the whole point.
-      httpOnly: false,
-    })
-    return
-  }
-  if (!hasSession && hasHint) {
-    response.cookies.delete({ name: VIEWER_HINT_COOKIE, path: '/' })
-  }
-}
-
 function applySecurityHeaders(
   response: NextResponse,
   request: NextRequest,
@@ -183,11 +157,9 @@ function applySecurityHeaders(
     response.headers.set('X-Robots-Tag', 'noindex, nofollow, noarchive, nosnippet')
   }
 
-  syncViewerHint(response, request)
-
-  // Clear the pre-split Auth.js cookies. They are never accepted, but stale
-  // copies at Path=/ make debugging confusing. Remove this block once the
-  // 8h maxAge has expired every session minted before the cutover.
+  // Clear cookies no code reads any more: the pre-split Auth.js defaults and
+  // the retired customer-session family (see LEGACY_SESSION_COOKIES). They are
+  // never accepted, but stale copies at Path=/ make debugging confusing.
   for (const name of LEGACY_SESSION_COOKIES) {
     if (request.cookies.has(name)) response.cookies.delete({ name, path: '/' })
   }
@@ -353,9 +325,7 @@ export default async function proxy(request: NextRequest) {
     }
 
     // Verify the token, don't just look for a cookie. Cookie presence proves
-    // nothing — not signature, not expiry, not which surface minted it — and
-    // now that the surfaces share an origin, a signed-in customer's cookie is
-    // present on every single /admin request.
+    // nothing — not signature, not expiry, not which instance minted it.
     const token = await getToken({
       req: request,
       secret: requireAuthSecret('STAFF_AUTH_SECRET'),
@@ -387,24 +357,8 @@ export default async function proxy(request: NextRequest) {
   )
   if (canonical) return done(NextResponse.redirect(canonical, 308))
 
-  if (PROTECTED_ACCOUNT_PATHS.some((p) => underPrefix(pathname, p))) {
-    const token = await getToken({
-      req: request,
-      secret: requireAuthSecret('CUSTOMER_AUTH_SECRET'),
-      cookieName: CUSTOMER_SESSION_COOKIE,
-      salt: CUSTOMER_SESSION_COOKIE,
-      secureCookie: USE_SECURE_COOKIES,
-    })
-
-    // accountId is the storefront's real authorization signal — every account
-    // query is scoped by it — so an empty one is not a usable session.
-    const isCustomer =
-      !!token?.sub &&
-      token.kind === 'customer' &&
-      typeof token.accountId === 'string' &&
-      token.accountId.length > 0
-
-    if (!isCustomer) return done(redirectToSignIn(request, '/sign-in'))
+  if (RETIRED_CUSTOMER_PATHS.some((p) => underPrefix(pathname, p))) {
+    return done(NextResponse.redirect(new URL(RETIRED_CUSTOMER_DESTINATION, request.url), 308))
   }
 
   // Last, so a live route always wins over a stale redirect row pointing at it.

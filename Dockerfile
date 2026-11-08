@@ -76,12 +76,10 @@ ENV NEXT_PUBLIC_BASE_URL=${NEXT_PUBLIC_BASE_URL} \
 # catalogue.
 RUN --mount=type=secret,id=DATABASE_URL \
     --mount=type=secret,id=DIRECT_URL \
-    --mount=type=secret,id=CUSTOMER_AUTH_SECRET \
     --mount=type=secret,id=STAFF_AUTH_SECRET \
     --mount=type=secret,id=SUPABASE_SERVICE_ROLE_KEY \
     DATABASE_URL="$(cat /run/secrets/DATABASE_URL)" \
     DIRECT_URL="$(cat /run/secrets/DIRECT_URL)" \
-    CUSTOMER_AUTH_SECRET="$(cat /run/secrets/CUSTOMER_AUTH_SECRET)" \
     STAFF_AUTH_SECRET="$(cat /run/secrets/STAFF_AUTH_SECRET)" \
     SUPABASE_SERVICE_ROLE_KEY="$(cat /run/secrets/SUPABASE_SERVICE_ROLE_KEY)" \
     pnpm build

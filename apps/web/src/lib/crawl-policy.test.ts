@@ -38,7 +38,7 @@ describe('crawl policy', () => {
   it('treats a disallow rule as covering everything beneath it', () => {
     expect(isDisallowed('/admin')).toBe(true)
     expect(isDisallowed('/admin/settings')).toBe(true)
-    expect(isDisallowed('/account/profile')).toBe(true)
+    expect(isDisallowed('/quote/RFQ-2026-0001')).toBe(true)
     expect(isDisallowed('/products')).toBe(false)
   })
 
@@ -172,7 +172,7 @@ describe('withAlwaysDisallowed', () => {
   it('accepts a single-string disallow', () => {
     const rule = withAlwaysDisallowed({ userAgent: 'Bingbot', disallow: '/x' })
     expect(rule.disallow).toContain('/x')
-    expect(rule.disallow).toContain('/account')
+    expect(rule.disallow).toContain('/quote')
   })
 
   it('leaves a group that already blocks the whole site alone', () => {

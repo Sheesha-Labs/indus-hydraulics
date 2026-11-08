@@ -20,7 +20,7 @@
 
 /**
  * Paths kept out of the index entirely. None are useful as landing pages:
- * account/quote/RFQ need auth or session state, API routes return JSON, and
+ * quote/RFQ need a signed token or local state, API routes return JSON, and
  * /search and /compare are session-coupled or thin duplicative content.
  */
 export const DEFAULT_DISALLOW = [
@@ -28,17 +28,11 @@ export const DEFAULT_DISALLOW = [
   // even when an operator overwrites robots.txt from the SEO console.
   '/admin',
   '/admin/',
-  '/account',
-  '/account/',
   '/quote',
   '/quote/',
   '/api/',
   '/search',
   '/compare',
-  '/sign-in',
-  '/sign-up',
-  '/forgot-password',
-  '/reset-password',
   '/maintenance',
   '/design',
   // Internal REWRITE TARGETS. Neither is ever linked, and neither should ever

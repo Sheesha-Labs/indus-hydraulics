@@ -13,11 +13,7 @@ export type QuoteItem = {
   targetPrice?: string
 }
 
-type Props = {
-  isSignedIn: boolean
-}
-
-export default function QuoteBuilderClient({ isSignedIn }: Props) {
+export default function QuoteBuilderClient() {
   const [items, setItems] = useState<QuoteItem[]>([])
   const [mounted, setMounted] = useState(false)
 
@@ -73,10 +69,6 @@ export default function QuoteBuilderClient({ isSignedIn }: Props) {
       </div>
     )
   }
-
-  const submitUrl = isSignedIn
-    ? `/quote/submit`
-    : `/sign-in?next=/quote/submit`
 
   return (
     <div className="grid grid-cols-1 items-start gap-8 lg:grid-cols-[1fr_360px]">
@@ -184,16 +176,6 @@ export default function QuoteBuilderClient({ isSignedIn }: Props) {
             </div>
           </div>
         )}
-
-        {/* Guest sign-in nudge */}
-        {!isSignedIn && (
-          <p className="mt-4 text-[12px] text-ih-muted text-center">
-            Sign in to submit your RFQ —{' '}
-            <Link href={`/sign-in?next=/quote/submit`} className="text-ih-accent hover:underline">
-              Sign in
-            </Link>
-          </p>
-        )}
       </div>
 
       {/* ── Sticky sidebar ────────────────────────────────────── */}
@@ -229,7 +211,7 @@ export default function QuoteBuilderClient({ isSignedIn }: Props) {
           {/* CTAs */}
           <div className="px-5 py-4 flex flex-col gap-2.5 border-b border-ih-border">
             <Link
-              href={submitUrl}
+              href={`/quote/submit`}
               className="h-11 flex items-center justify-center bg-ih-accent text-white font-medium text-[14px] hover:opacity-90 transition-opacity"
             >
               Request quote →

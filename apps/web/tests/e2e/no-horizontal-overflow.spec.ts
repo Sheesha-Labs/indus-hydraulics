@@ -92,8 +92,6 @@ const ROUTES = [
   '/search?q=valve&sort=price_asc',
   '/compare',
   '/replacement',
-  '/sign-in',
-  '/sign-up',
   '/terms',
   '/privacy',
   '/returns',

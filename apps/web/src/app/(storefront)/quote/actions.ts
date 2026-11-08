@@ -2,9 +2,8 @@
 
 import { redirect } from 'next/navigation'
 import { z } from 'zod'
-import { auth } from '../../../lib/auth'
 import { db, nextRfqCode } from '@indus/db'
-import { assertTransition, signQuoteAccessToken } from '@indus/domain'
+import { signQuoteAccessToken } from '@indus/domain'
 import { resolveOrCreateAnonymousContact, sendRfqEmails } from '../../../lib/rfq-intake'
 import { STORAGE_BUCKETS } from '../../../lib/supabase-admin'
 
@@ -50,15 +49,12 @@ export async function submitRfq(formData: FormData): Promise<SubmitResult> {
     }
   }
 
-  const session = await auth()
-
   const subject = (formData.get('subject') as string | null) ?? undefined
   const applicationContext = (formData.get('applicationContext') as string | null) ?? undefined
   const urgency = (formData.get('urgency') as 'routine' | 'priority' | 'plant_down') ?? 'routine'
   const requestedDeliveryRaw = formData.get('requestedDelivery') as string | null
   const requestedDeliveryDate = requestedDeliveryRaw ? new Date(requestedDeliveryRaw) : undefined
   const customerMessage = (formData.get('customerMessage') as string | null) ?? undefined
-  const shipToAddressId = (formData.get('shipToAddressId') as string | null) ?? undefined
   const linesJson = formData.get('lines') as string
 
   let lines: LineItem[] = []
@@ -72,45 +68,33 @@ export async function submitRfq(formData: FormData): Promise<SubmitResult> {
     return { success: false, error: 'No items in your quote.' }
   }
 
-  // Resolve who is submitting: a logged-in contact, or capture details from
-  // the anonymous form. Anonymous submitters land in (or re-attach to) an
-  // Account so the rest of the pipeline (admin RFQ list, customer-portal
-  // viewing via signed link, email confirmations) treats them identically.
-  let accountId: string
-  let contactId: string
-  const isAnonymous = !session?.user?.accountId
+  // The storefront has no customer accounts: every submitter is a guest whose
+  // contact details come from the form. They land in (or re-attach to) an
+  // Account by email so the rest of the pipeline — admin RFQ list, signed-link
+  // viewing, email confirmations — has the same shape it always had.
+  const contactParsed = AnonymousContactSchema.safeParse({
+    firstName: formData.get('firstName'),
+    lastName: formData.get('lastName'),
+    email: formData.get('email'),
+    phone: formData.get('phone') ?? '',
+    company: formData.get('company'),
+  })
 
-  if (!isAnonymous) {
-    accountId = session!.user.accountId
-    contactId = session!.user.id
-  } else {
-    const contactParsed = AnonymousContactSchema.safeParse({
-      firstName: formData.get('firstName'),
-      lastName: formData.get('lastName'),
-      email: formData.get('email'),
-      phone: formData.get('phone') ?? '',
-      company: formData.get('company'),
-    })
-
-    if (!contactParsed.success) {
-      const issue = contactParsed.error.issues[0]
-      const fieldLabels: Record<string, string> = {
-        firstName: 'first name',
-        lastName: 'last name',
-        email: 'work email',
-        phone: 'phone',
-        company: 'company',
-      }
-      const fieldKey = typeof issue?.path[0] === 'string' ? issue.path[0] : undefined
-      const label = fieldKey ? (fieldLabels[fieldKey] ?? fieldKey) : 'contact details'
-      return { success: false, error: `Please check the ${label} field — ${issue?.message ?? 'invalid value'}.` }
+  if (!contactParsed.success) {
+    const issue = contactParsed.error.issues[0]
+    const fieldLabels: Record<string, string> = {
+      firstName: 'first name',
+      lastName: 'last name',
+      email: 'work email',
+      phone: 'phone',
+      company: 'company',
     }
-
-    const contactData = contactParsed.data
-    const resolved = await resolveOrCreateAnonymousContact(contactData)
-    accountId = resolved.accountId
-    contactId = resolved.contactId
+    const fieldKey = typeof issue?.path[0] === 'string' ? issue.path[0] : undefined
+    const label = fieldKey ? (fieldLabels[fieldKey] ?? fieldKey) : 'contact details'
+    return { success: false, error: `Please check the ${label} field — ${issue?.message ?? 'invalid value'}.` }
   }
+
+  const { accountId, contactId } = await resolveOrCreateAnonymousContact(contactParsed.data)
 
   /*
     Attachments arrive as a manifest of storage paths, never as bytes — the
@@ -167,11 +151,10 @@ export async function submitRfq(formData: FormData): Promise<SubmitResult> {
         applicationContext: applicationContext || undefined,
         urgency,
         requestedDeliveryDate,
-        shipToAddressId: shipToAddressId || undefined,
         customerMessage: customerMessage || undefined,
-        // Flag anonymous submissions so the engineer triages contact-detail
-        // accuracy before fulfilment.
-        internalNotes: isAnonymous ? 'Submitted via anonymous form — verify contact details before fulfilment.' : undefined,
+        // Contact details are self-declared on the form, never verified by a
+        // sign-in. Flag it so the engineer triages accuracy before fulfilment.
+        internalNotes: 'Submitted via the web form — verify contact details before fulfilment.',
         status: 'submitted',
         submittedAt: new Date(),
         lines: {
@@ -229,7 +212,7 @@ export async function submitRfq(formData: FormData): Promise<SubmitResult> {
         payload: {
           rfqId: created.id,
           code: created.code,
-          anonymous: isAnonymous,
+          anonymous: true,
           attachmentCount: attachments.length,
         },
       },
@@ -250,7 +233,7 @@ export async function submitRfq(formData: FormData): Promise<SubmitResult> {
       customerMessage: customerMessage ?? null,
       contactId,
       accountId,
-      shipToAddressId: shipToAddressId ?? null,
+      shipToAddressId: null,
     })
   } catch (err) {
 
@@ -261,29 +244,9 @@ export async function submitRfq(formData: FormData): Promise<SubmitResult> {
   // so the status page can fire the `rfq_submitted` analytics event exactly
   // once. Subsequent visits to /quote/<code> won't double-count.
   //
-  // Anonymous submitters additionally carry a signed access token in the
-  // URL so they can view the RFQ confirmation + download any future quote
-  // PDF without creating an account.
-  if (isAnonymous) {
-    const token = signQuoteAccessToken(rfq.code)
-    redirect(`/quote/${rfq.code}?token=${encodeURIComponent(token)}&confirmed=1`)
-  }
-
-  redirect(`/quote/${rfq.code}?confirmed=1`)
-}
-
-export async function updateRfqTransition(rfqId: string, to: string) {
-  const session = await auth()
-  if (!session?.user?.id) throw new Error('Not authenticated')
-
-  const rfq = await db.rfq.findUnique({ where: { id: rfqId }, select: { status: true, accountId: true } })
-  if (!rfq) throw new Error('RFQ not found')
-  if (rfq.accountId !== session.user.accountId) throw new Error('Forbidden')
-
-  assertTransition(rfq.status, to as never)
-
-  await db.rfq.update({
-    where: { id: rfqId },
-    data: { status: to as never },
-  })
+  // The signed access token in the URL is the ONLY way back to this RFQ —
+  // there is no account to sign in to — and it is what lets the submitter
+  // view the confirmation and download any future quote PDF.
+  const token = signQuoteAccessToken(rfq.code)
+  redirect(`/quote/${rfq.code}?token=${encodeURIComponent(token)}&confirmed=1`)
 }

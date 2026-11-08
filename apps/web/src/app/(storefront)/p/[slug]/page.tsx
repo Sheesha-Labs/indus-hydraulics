@@ -94,7 +94,7 @@ const getProduct = cache(async (decoded: string) => {
  *
  *   `searchParams` (`?preview=`)     -> draft mode, via /api/preview
  *   `customerSessionOrNull()`        -> /api/documents/<id> decides access
- *   the header's own session read    -> /api/me, after hydration
+ *   the header's own session read    -> removed with customer accounts
  *
  * Nothing in this file may read cookies, headers or searchParams without
  * putting the route back to `ƒ` and undoing all of it. `draftMode()` is the
@@ -305,7 +305,8 @@ export default async function ProductPage({ params }: Props) {
   })
 
   // Every document is linkable by everyone; /api/documents/<id> decides at
-  // request time whether this visitor gets a URL or a trip to sign-in. The
+  // request time whether this visitor gets a URL or (for a gated, on-request
+  // document) a trip to /contact. The
   // page therefore holds no session-dependent and no expiring value, which is
   // what lets it prerender.
   const firstDatasheet = primaryDatasheet(product.documents)
@@ -326,8 +327,8 @@ export default async function ProductPage({ params }: Props) {
   )
 
   // Same for the documents tab: point at the route, not at a signed URL.
-  // `isGated` still travels so the UI can mark which downloads will ask for
-  // a sign-in first.
+  // `isGated` still travels so the UI can mark which documents are on
+  // request only.
   const tabDocuments = product.documents.map((d) => ({
     id: d.id,
     title: d.title,
