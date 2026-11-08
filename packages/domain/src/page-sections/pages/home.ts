@@ -97,7 +97,7 @@ export const HOME_PAGE: MasterPageDef = {
       key: 'brands',
       label: 'Brand rail',
       description: 'The grid of partner brand names.',
-      dataNote: 'The tiles are the published brands, alphabetically, first twelve.',
+      dataNote: 'A scrolling strip of every published brand with a logo, one tile per logo, best-stocked first (house brand excluded). Each tile links to the brand page.',
       fields: [
         eyebrow({ help: 'Use {brands} for the live count.' }),
         heading(),
