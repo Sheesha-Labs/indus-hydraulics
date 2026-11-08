@@ -13,6 +13,10 @@
  * render of one representative unit instead of a group. They are generated,
  * representative images, not photographs of stock.
  *
+ * Re-run on 2026-11-08 for the three roots added since (Marine, Gearboxes &
+ * Winches, Industrial Process Valves); the first thirteen rows are skipped as
+ * already present.
+ *
  * Sub-categories are deliberately not covered: no storefront surface renders
  * a sub-category's image today (they appear as text pills on the parent page).
  *
@@ -52,6 +56,12 @@ const IMAGES: readonly { slug: string; alt: string }[] = [
   { slug: 'drilling-workover-systems', alt: 'A skid-mounted triplex mud pump with its electric motor, beside a mud manifold of gate valves on a frame' },
   { slug: 'stimulation-equipment', alt: 'A skid-mounted stimulation pumping unit with a diesel engine, a triplex pump and a blending tank' },
   { slug: 'fracturing-equipment', alt: 'A frac pumper on a tri-axle semi-trailer — diesel engine and transmission at the front, plunger pump at the rear, discharge iron along the side' },
+  // 2026-11-08: the three roots added after the first run (Marine,
+  // Gearboxes & Winches, Industrial Process Valves). Higgsfield GPT Image 2.6,
+  // medium, 2k 3:2, resized to 1536×1024 JPEG q78 (< 400 KB each).
+  { slug: 'marine-equipment-uae', alt: 'Marine hardware: stockless and fluke anchors, stud-link and studless chain, a Kenter shackle, a bow shackle and a swivel' },
+  { slug: 'gearboxes-winches', alt: 'Hydraulic winches, a slewing drive with pinion, planetary gearboxes, a wheel drive hub and a hydraulic motor' },
+  { slug: 'industrial-process-valves', alt: 'Process valves: flanged gate, trunnion ball, globe, actuated ball, butterfly, safety relief and swing check valves' },
 ] as const
 
 /** Loads the Supabase storage credentials, which only live in the web app's env file. */
