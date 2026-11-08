@@ -63,17 +63,19 @@ test.describe('storefront smoke', () => {
     expect(response?.status()).toBe(200)
   })
 
-  test('sign-in page renders the form', async ({ page }) => {
-    const response = await page.goto('/sign-in')
-    expect(response?.status()).toBe(200)
-    await expect(page.locator('input[name="email"]')).toBeVisible()
-    await expect(page.locator('input[name="password"]')).toBeVisible()
-    await expect(page.getByRole('button', { name: /sign in/i }).first()).toBeVisible()
-  })
+  // Customer accounts were removed (2026-11). The old entry points must land
+  // somewhere useful rather than 404.
+  for (const retired of ['/sign-in', '/sign-up', '/account', '/account/quotes']) {
+    test(`retired ${retired} redirects to /contact`, async ({ page }) => {
+      await page.goto(retired)
+      expect(new URL(page.url()).pathname).toBe('/contact')
+    })
+  }
 
-  test('protected /account redirects to sign-in', async ({ page }) => {
-    await page.goto('/account')
-    expect(page.url()).toContain('/sign-in')
+  test('header utility bar links the sales email', async ({ page }) => {
+    await page.goto('/')
+    await expect(page.locator('header a[href^="mailto:"]').first()).toBeVisible()
+    await expect(page.locator('header a[href="/sign-in"]')).toHaveCount(0)
   })
 
   test('/contact renders the wired form (PR #38)', async ({ page }) => {

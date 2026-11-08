@@ -22,10 +22,10 @@ const nextAuth = NextAuth({
   // goes through a server action rather than next-auth/react (whose client
   // helpers hardcode /api/auth from a build-time env var).
   basePath: '/admin/api/auth',
-  // Explicit secret + explicit cookie names are what isolate this instance
-  // from the customer one. See packages/domain/src/auth-cookies.ts — the
-  // session cookie's name is @auth/core's HKDF salt, so a differing name makes
-  // the two token families mutually undecryptable even under one secret.
+  // Explicit secret + explicit cookie names. See
+  // packages/domain/src/auth-cookies.ts — the session cookie's name is
+  // @auth/core's HKDF salt, and proxy.ts must decrypt with the same one. (This
+  // is the only Auth.js instance; the customer one was removed in 2026-11.)
   secret: requireAuthSecret('STAFF_AUTH_SECRET'),
   cookies: staffCookies,
   providers: [
@@ -101,8 +101,8 @@ const nextAuth = NextAuth({
           id: token.sub ?? '',
           role: (token.role as string) ?? '',
           kind: 'staff' as const,
-          // Present for type-shape parity with the customer session; never
-          // read on this surface, and never non-empty.
+          // Kept for type-shape parity with the retired customer session
+          // (see types/next-auth.d.ts); never read, never non-empty.
           accountId: '',
         },
       }

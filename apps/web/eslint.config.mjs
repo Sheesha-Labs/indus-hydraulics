@@ -9,11 +9,9 @@ const eslintConfig = defineConfig([
     rules: {
       // `next-auth/react`'s signIn/signOut resolve their base path from
       // NEXTAUTH_URL at build time (parseUrl returns '/api/auth' whenever the
-      // pathname is '/'), so they always address the CUSTOMER Auth.js
-      // instance. Once the storefront and admin share an origin that means
-      // staff credentials posted to the customer authorize(), and an admin
-      // "sign out" clearing the customer cookie while the staff session lives
-      // on. Use the server actions in each app instead.
+      // pathname is '/'). The only Auth.js instance is the staff one, mounted
+      // at /admin/api/auth, so those helpers address a route that does not
+      // exist. Use the admin server actions instead.
       "no-restricted-imports": [
         "error",
         {
@@ -21,7 +19,7 @@ const eslintConfig = defineConfig([
             {
               name: "next-auth/react",
               message:
-                "Use the server actions (adminSignInAction / adminSignOutAction / signInAction / signOutAction) — next-auth/react cannot address the right Auth.js instance on a shared origin.",
+                "Use the server actions (adminSignInAction / adminSignOutAction) — next-auth/react resolves to /api/auth, and the only Auth.js instance lives at /admin/api/auth.",
             },
           ],
         },
@@ -29,36 +27,10 @@ const eslintConfig = defineConfig([
     },
   },
   {
-    // Storefront code must never reach for the STAFF Auth.js instance, and
-    // admin code must never reach for the CUSTOMER one. Both export `auth`,
-    // so a wrong import type-checks cleanly and fails only at runtime — which
-    // is exactly how lib/staff-session.ts ended up calling the customer
-    // instance during the merge, silently locking every staff member out of
-    // /admin while the proxy still let them through.
-    files: ["src/app/admin/**", "src/components/admin/**", "src/inngest/**"],
-    rules: {
-      "no-restricted-imports": [
-        "error",
-        {
-          patterns: [
-            {
-              group: ["**/lib/auth", "**/lib/customer-session"],
-              message:
-                "Admin code must use lib/admin-auth and lib/staff-session — lib/auth is the CUSTOMER Auth.js instance.",
-            },
-          ],
-          paths: [
-            {
-              name: "next-auth/react",
-              message:
-                "Use the server actions — next-auth/react cannot address the right Auth.js instance on a shared origin.",
-            },
-          ],
-        },
-      ],
-    },
-  },
-  {
+    // Storefront code must never reach for the STAFF Auth.js instance. A
+    // session read in a storefront page would also make it render dynamically
+    // — the storefront is fully public and has no sign-in of its own since
+    // customer accounts were removed (2026-11).
     files: ["src/app/(storefront)/**", "src/components/*.tsx", "src/actions/**"],
     rules: {
       "no-restricted-imports": [
@@ -68,14 +40,14 @@ const eslintConfig = defineConfig([
             {
               group: ["**/lib/admin-auth", "**/lib/staff-session", "**/lib/rbac"],
               message:
-                "Storefront code must use lib/auth and lib/customer-session — lib/admin-auth is the STAFF Auth.js instance.",
+                "Storefront code has no session — lib/admin-auth, lib/staff-session and lib/rbac belong to the STAFF Auth.js instance.",
             },
           ],
           paths: [
             {
               name: "next-auth/react",
               message:
-                "Use the server actions — next-auth/react cannot address the right Auth.js instance on a shared origin.",
+                "Use the admin server actions — next-auth/react resolves to /api/auth, which does not exist.",
             },
           ],
         },

@@ -140,17 +140,15 @@ This file is the authoritative engineering guide for this codebase. Claude Code 
 
 ### Rules
 
-1. **Two completely separate auth contexts, on one origin.** Since the storefront/admin merge both surfaces are served by `apps/web`, so the separation is enforced in code rather than by deployment:
-   - `account_contact` — storefront/customer portal. `lib/auth.ts` + `lib/customer-session.ts`.
+1. **One auth context: staff only.** The storefront has **no customer accounts** — sign-up, sign-in, password reset and the `/account` portal were removed in 2026-11 (visitors find a part, then email or WhatsApp us). Do not reintroduce them without a product decision.
    - `staff_user` — admin at `/admin/*`. `lib/admin-auth.ts` + `lib/staff-session.ts` + `lib/rbac.ts`.
+   - Storefront RFQs are guest submissions. `account` / `account_contact` rows still exist — admin groups a buyer's RFQs by them — but nothing signs in as one. The **only** credential for `/quote/<code>` and `/api/quotes/<code>/pdf` is a signed `?token=` (`signQuoteAccessToken`); every link to those routes must carry one.
+   - The retired paths (`/sign-in`, `/sign-up`, `/forgot-password`, `/reset-password`, `/account/*`) 308 to `/contact` in `proxy.ts`. The old customer cookie names sit in `LEGACY_SESSION_COOKIES` so the proxy clears them.
+   - Storefront code must not import `lib/admin-auth`, `lib/staff-session` or `lib/rbac` (lint-enforced) — a session read there would also make every page dynamic.
 
-   They have **different secrets and different session-cookie names**. The cookie name is Auth.js's HKDF salt (`packages/domain/src/auth-cookies.ts`), so tokens minted by one instance are cryptographically undecryptable by the other — the failure mode of a missed check is "session is null", not "session is a customer's".
+   The staff session cookie name is Auth.js's HKDF salt (`packages/domain/src/auth-cookies.ts`); `proxy.ts` must decrypt with that same name as both `cookieName` and `salt`. Guards **reject** a session without `kind: 'staff'`; never default it.
 
-   **Never import across the boundary.** Both instances export `auth`, so a wrong import type-checks cleanly and fails only at runtime. Zoned `no-restricted-imports` rules in `apps/web/eslint.config.mjs` block it.
-
-   Every session carries a `kind: 'customer' | 'staff'` claim. Guards **reject** a missing `kind`; never default it.
-
-2. **Middleware enforces auth on every protected segment.** Do not rely on page-level redirects — App Router partial rendering means a layout does not re-run on every request, so layout-only authorization is bypassable. Next.js 16 renamed the middleware file: `apps/web/src/proxy.ts` handles both surfaces (allowlist for the storefront, default-deny for `/admin`) and verifies the token with `getToken`, not merely the presence of a cookie.
+2. **Middleware enforces auth on every protected segment.** Do not rely on page-level redirects — App Router partial rendering means a layout does not re-run on every request, so layout-only authorization is bypassable. Next.js 16 renamed the middleware file: `apps/web/src/proxy.ts` handles both surfaces (the storefront is fully public, `/admin` is default-deny) and verifies the token with `getToken`, not merely the presence of a cookie.
 
    Its matcher exempts `api` **and** `admin/api`. The lookahead is anchored after the leading `/`, so `api` alone exempts only top-level `/api/*` — without `admin/api`, `/admin/api/auth/*` is caught by the denylist and sign-in becomes an infinite redirect loop with no error message.
 
@@ -263,7 +261,7 @@ Any state → cancelled  (admin only)
 1. **Unit test all domain logic** in `packages/domain`. The RFQ state machine and any pricing logic must have 100% transition coverage.
 
 2. **Playwright e2e tests** cover the critical paths:
-   - Sign up → sign in → add product to quote → submit RFQ
+   - Add product to quote → submit RFQ as a guest
    - Admin: sign in → review RFQ → mark quote sent
 
 3. **Tests run in CI** on every PR. PRs with failing tests are not merged.
@@ -339,9 +337,9 @@ apps/web/
       layout.tsx             ← minimal root: <html>, fonts, globals.css, <body>
       globals.css            ← shared; admin deltas scoped to [data-surface='admin']
       not-found.tsx  robots.ts  sitemap.ts  opengraph-image.tsx  global-error.tsx
-      api/                   ← auth, health, quotes, search, seo, inngest
+      api/                   ← documents, health, quotes, rfq, search, seo, inngest
       (storefront)/          ← SiteHeader/Footer + storefront metadata; a FRAGMENT
-        page.tsx  (auth)/  account/  c/  p/  brands/  industries/  search/
+        page.tsx  c/  p/  brands/  industries/  search/
         compare/  quote/  services/  blog/  replacement/  …
       admin/                 ← robots:noindex + <div data-surface="admin">
         sign-in/  api/{auth,quotes,rfqs}/
@@ -351,9 +349,7 @@ apps/web/
     actions/                 ← storefront server actions
     inngest/                 ← background jobs (served at /api/inngest)
     lib/
-      auth.ts                ← CUSTOMER Auth.js instance
-      customer-session.ts    ← requireCustomer / isCustomerSession
-      admin-auth.ts          ← STAFF Auth.js instance
+      admin-auth.ts          ← the (only, STAFF) Auth.js instance
       staff-session.ts       ← requireStaff / requireStaffRole
       rbac.ts                ← ROLES groups, requireRole / hasRole
       admin-paths.ts         ← ADMIN_PREFIX, stripAdminPrefix (see §12)
@@ -392,7 +388,7 @@ Things that fail **silently** now that one app serves two surfaces. Each cost re
 
 3. **Cache tags are bare strings on both sides.** The storefront registers them via `unstable_cache(..., { tags })`; admin purges them. A rename on one side alone just misses, and looks exactly like a cache that has not expired. Always go through `lib/cache-tags.ts`; `cache-tags.test.ts` asserts the map matches what the storefront actually registers.
 
-4. **Never `next-auth/react`.** Its `signIn`/`signOut` bake a base path from `NEXTAUTH_URL` at build time and always resolve to `/api/auth` — the customer instance. Use the server actions. Banned by lint.
+4. **Never `next-auth/react`.** Its `signIn`/`signOut` bake a base path from `NEXTAUTH_URL` at build time and always resolve to `/api/auth`, which does not exist — the staff instance is at `/admin/api/auth`. Use the admin server actions. Banned by lint.
 
 5. **`revalidatePath('//x')` matches nothing.** A protocol-relative path is not a route. 23 of these shipped as silent no-ops before the merge.
 

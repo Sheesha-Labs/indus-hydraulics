@@ -65,7 +65,6 @@ jobs:
           mkdir -p /tmp/secrets && chmod 700 /tmp/secrets
           printf '%s' '${{ secrets.DATABASE_URL }}'              > /tmp/secrets/DATABASE_URL
           printf '%s' '${{ secrets.DIRECT_URL }}'                > /tmp/secrets/DIRECT_URL
-          printf '%s' '${{ secrets.CUSTOMER_AUTH_SECRET }}'      > /tmp/secrets/CUSTOMER_AUTH_SECRET
           printf '%s' '${{ secrets.STAFF_AUTH_SECRET }}'         > /tmp/secrets/STAFF_AUTH_SECRET
           printf '%s' '${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}' > /tmp/secrets/SUPABASE_SERVICE_ROLE_KEY
 
@@ -88,7 +87,6 @@ jobs:
           secret-files: |
             DATABASE_URL=/tmp/secrets/DATABASE_URL
             DIRECT_URL=/tmp/secrets/DIRECT_URL
-            CUSTOMER_AUTH_SECRET=/tmp/secrets/CUSTOMER_AUTH_SECRET
             STAFF_AUTH_SECRET=/tmp/secrets/STAFF_AUTH_SECRET
             SUPABASE_SERVICE_ROLE_KEY=/tmp/secrets/SUPABASE_SERVICE_ROLE_KEY
           cache-from: type=gha

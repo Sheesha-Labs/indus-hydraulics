@@ -1,6 +1,7 @@
 import 'server-only'
 
 import { db, nextAccountCode } from '@indus/db'
+import { signQuoteAccessToken } from '@indus/domain'
 import { renderRfqConfirmation, renderRfqInternalAlert, sendEmail } from '@indus/email'
 import { loadEmailBranding } from './email-branding'
 
@@ -50,8 +51,8 @@ export async function resolveOrCreateAnonymousContact(
     return { accountId: existing.accountId, contactId: existing.id }
   }
 
-  // No password hash is created; the user can claim the account later via
-  // /forgot-password using the same email.
+  // No password hash is created. The storefront has no customer sign-in; the
+  // Account exists so admin can group a buyer's RFQs and enquiries.
   return db.$transaction(async (tx) => {
     const code = await nextAccountCode(tx)
     const account = await tx.account.create({
@@ -128,7 +129,9 @@ export async function sendRfqEmails(input: SendRfqEmailsInput): Promise<void> {
     customerName,
     lineCount: input.lineCount,
     urgency: input.urgency,
-    trackingUrl: `${baseUrl}/quote/${input.rfqCode}`,
+    // Signed: /quote/<code> has no sign-in to fall back on, so an unsigned
+    // link here would land the customer on a 404.
+    trackingUrl: `${baseUrl}/quote/${input.rfqCode}?token=${encodeURIComponent(signQuoteAccessToken(input.rfqCode))}`,
     branding: {
       legalName: branding.legalName,
       vatTrn: branding.vatTrn,
