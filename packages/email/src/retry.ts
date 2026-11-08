@@ -94,6 +94,8 @@ export async function retryFailedEmail(sentEmailId: string, now: Date = new Date
       ...(payload.replyTo ? { replyTo: payload.replyTo } : {}),
       subject: payload.subject,
       html: payload.html,
+      ...(payload.text ? { text: payload.text } : {}),
+      ...(payload.headers ? { headers: payload.headers } : {}),
     })
 
     if (result.error) {

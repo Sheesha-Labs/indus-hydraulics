@@ -209,11 +209,17 @@ export const procurementResearchStart = inngest.createFunction(
  * The second concurrency key pins identical signatures to one at a time, so a
  * ten-line enquiry that repeats the same fitting does not pay for it ten times
  * in parallel — the first run populates the cache and the rest hit it.
+ *
+ * The overall limit is 5, not 8: the Inngest plan caps concurrency at 5, and
+ * a single function over the cap makes Inngest reject the WHOLE app sync
+ * ("higher concurrency limits (8) than your plan limit of 5"). That one
+ * number is why no Inngest cron — email retries, quote expiry, the SEO and
+ * GSC jobs — had ever run in production (found 2026-11-08).
  */
 export const procurementResearchItem = inngest.createFunction(
   {
     id: 'procurement.research.item',
-    concurrency: [{ limit: 8 }, { limit: 1, key: 'event.data.signatureHash' }],
+    concurrency: [{ limit: 5 }, { limit: 1, key: 'event.data.signatureHash' }],
     retries: 2,
     onFailure: async ({ event, error }) => {
       const data = event.data.event.data as { researchRunId?: string; enquiryLineId?: string }

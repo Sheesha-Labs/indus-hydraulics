@@ -16,8 +16,8 @@
  * `.me`, because customers reply to them and those replies must land in a real
  * inbox.
  *
- * MARKETING / PROMOTIONAL / SEQUENCED campaigns send from `.com`, deliberately
- * kept apart. Bulk sending is what damages a domain's sending reputation, and
+ * MARKETING / PROMOTIONAL / SEQUENCED campaigns send from `news.indushydraulics.com`,
+ * deliberately kept apart. Bulk sending is what damages a domain's sending reputation, and
  * a damaged reputation on `.me` would start pushing quotes and password resets
  * into spam. Separating them means a bad campaign can only cost you campaign
  * deliverability, never the ability to quote a customer.
@@ -33,13 +33,25 @@ export const WEBSITE_DOMAIN = 'indushydraulics.com'
 export const MAIL_DOMAIN = 'indushydraulics.me'
 
 /**
- * Sending domain for bulk/marketing email, kept separate from MAIL_DOMAIN so
- * campaign volume cannot damage transactional deliverability.
+ * Sending domain for bulk/marketing email: a SUBDOMAIN of the website domain,
+ * verified in Resend on its own (DKIM `resend._domainkey.news`, SPF + bounce
+ * MX on `send.news`), decision D1 in docs/newsletter-plan.md.
  *
- * Nothing sends from here yet — no marketing or sequence code exists. This is
- * the declared home for it when it is built.
+ * Not `indushydraulics.com` itself. Mailbox providers keep reputation per
+ * sending domain, so a spam complaint on a newsletter lands on `news.` and
+ * cannot drag a quote or RFQ confirmation from the apex into spam. The apex
+ * DMARC record (`p=none`, relaxed alignment) covers the subdomain.
+ *
+ * Everything the newsletter sends — confirmation, welcome, campaigns — goes
+ * from here, and `assertMarketingSender` refuses anything else.
  */
-export const MARKETING_DOMAIN = 'indushydraulics.com'
+export const MARKETING_DOMAIN = `news.${WEBSITE_DOMAIN}`
+
+/** The From of every newsletter email. Cannot receive, like DEFAULT_FROM_EMAIL. */
+export const NEWSLETTER_FROM_EMAIL = `newsletter@${MARKETING_DOMAIN}`
+
+/** Display name on newsletter mail. */
+export const NEWSLETTER_FROM_NAME = 'Indus Hydraulics'
 
 /**
  * What every email this app sends is FROM.

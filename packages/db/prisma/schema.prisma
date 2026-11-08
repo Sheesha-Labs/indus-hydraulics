@@ -1980,6 +1980,12 @@ model SentEmail {
   retryCount    Int       @default(0)
   lastAttemptAt DateTime?
   payload       Json?
+  // Written by the Resend webhook (/api/webhooks/resend). Timestamps, not a
+  // status: a delivered email can still be reported as spam later, and
+  // `status` stays what the sender wrote.
+  deliveredAt   DateTime?
+  bouncedAt     DateTime?
+  complainedAt  DateTime?
 
   @@index([kind, attemptedAt])
   @@index([rfqId])
@@ -2233,26 +2239,54 @@ model Counter {
 // unsubscribes without losing the record (history matters for opt-in proof).
 // ─────────────────────────────────────────────────────────────────────────────
 
+// `active` (single opt-in, before 2026-11) was retired by
+// 202611081839_newsletter_retire_active_status.sql.
 enum NewsletterSubscriberStatus {
-  active
+  pending // signed up, confirmation email sent, not yet clicked
+  confirmed // clicked the confirmation link — the only status that is mailed
   unsubscribed
-  bounced
+  bounced // a permanent bounce reported by the Resend webhook
 }
 
 model NewsletterSubscriber {
   id             String                     @id @default(uuid())
   email          String                     @unique
-  status         NewsletterSubscriberStatus @default(active)
-  source         String? // e.g. "homepage_footer", "quote_thanks"
+  status         NewsletterSubscriberStatus @default(pending)
+  source         String? // e.g. "homepage_footer", "blog_index"
   ipHash         String? // sha256 of submitter IP; never raw
   userAgent      String?
   createdAt      DateTime                   @default(now())
   updatedAt      DateTime                   @updatedAt
   unsubscribedAt DateTime?
 
+  // Double opt-in (202611081838). The confirmation token is in the email
+  // only; the row holds its SHA-256, cleared once used.
+  confirmationTokenHash String?   @unique
+  confirmationSentAt    DateTime?
+  confirmedAt           DateTime?
+  bouncedAt             DateTime?
+  // Permanent, in clear: every email to the subscriber carries it.
+  unsubscribeToken      String    @unique @default(dbgenerated("encode(extensions.gen_random_bytes(24), 'hex'::text)"))
+  // The exact wording agreed to, and which version of the form showed it.
+  consentText           String?
+  consentVersion        String?
+
   @@index([status])
   @@index([createdAt])
+  @@index([ipHash, confirmationSentAt])
   @@map("newsletter_subscribers")
+}
+
+/// SHA-256 of lower(trim(email)) for every address that must never be mailed
+/// again. Kept in step with newsletter_subscribers by a trigger
+/// (202611081838); the Resend webhook adds hard bounces and complaints from
+/// any email the site sends. No address is stored.
+model NewsletterSuppression {
+  emailHash String   @id
+  reason    String // unsubscribed | bounced | complained
+  createdAt DateTime @default(now())
+
+  @@map("newsletter_suppressions")
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
