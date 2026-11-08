@@ -1,6 +1,6 @@
 # Newsletter system — plan
 
-Status: **Phase 1 built, 2026-11-08** (PR #597, held for one deploy with the Inngest fix). Phase 0 subdomain pending a Resend sign-in. Phases 2–5 not started. See Appendix C.
+Status: **Phase 1 built, 2026-11-08** (PR #597, held for one deploy with the Inngest fix). Phase 0 subdomain verified 2026-11-08. Phases 2–5 not started. See Appendix C.
 
 Goal: a working newsletter for Indus Hydraulics, end to end — a signup that
 actually confirms, a subscriber and list manager in the admin, a composer that
@@ -177,9 +177,9 @@ Open/click tracking (D4), a preference centre (topics/frequency), segments beyon
 | Item | Status |
 |---|---|
 | Tile copy | **Not changed** — Ayush: the subscriber figure reflects the internal list that will be uploaded. |
-| Sending subdomain in Resend | **Blocked on access.** `RESEND_API_KEY` is a Sensitive Vercel var (not readable), and the Chrome session is not signed in to Resend. DNS for `indushydraulics.com` is at **Spaceship** (`launch1/2.spaceship.net`), not Cloudflare — the Spaceship connector needs authorising (`/mcp`) or a signed-in Spaceship tab. Existing DMARC on the apex: `p=none; rua=mailto:dmarc@indushydraulics.me` (relaxed alignment), which a subdomain inherits. |
+| Sending subdomain in Resend | **Verified 2026-11-08.** `news.indushydraulics.com`, Tokyo region, open/click tracking off. Records added at Spaceship (zone `indushydraulics.com`): TXT `resend._domainkey.news` (DKIM), CNAME `send.news` → `send.forge.rmta.net` (return path / SPF), CNAME `rsend.news` → `rsend-apne1.forge.rmta.net`. No apex record touched; DMARC inherited from the apex (`p=none`). Receiving not enabled. |
 | Inngest | **Root cause found:** `PUT /api/inngest` returns 400 — *"The function 'procurement.research.item' has higher concurrency limits (8) than your plan limit of 5"*. One function over the plan cap makes Inngest reject the whole app, so nothing has ever been registered. Fixed (limit 5) on the newsletter branch; re-sync right after it deploys. The 3 stale failed emails were marked `dead_letter` on 2026-11-08 so the retry job won't send them; the trash purge is approved to run. Before the fix, keys **were** set in Vercel production but the app had never been synced: no SEO health score has ever been written, `gsc_metric_daily` is empty, and 3 failed emails (May–Aug) have `retryCount = 0`. Syncing (`PUT /api/inngest`) turns every cron on at once — see the side effects below, which need a decision first. |
-| Resend webhook | **Deferred to Phase 1.** `/api/webhooks/resend` does not exist yet; a webhook created now would 404 on every delivered event for every transactional email and Resend would keep retrying. Create it in the same session the route deploys. |
+| Resend webhook | **Created 2026-11-08, disabled** until the route deploys: `https://indushydraulics.com/api/webhooks/resend`, events delivered / bounced / complained. Resend webhooks are per account and this account also sends for another site, so the route ignores events whose From is not on `indushydraulics.com`. `RESEND_WEBHOOK_SECRET` must be in Vercel production before the deploy. |
 | Privacy-policy paragraph | Drafted below; not published (publish at launch, Phase 5). |
 
 **What syncing Inngest switches on (checked against production data):**
