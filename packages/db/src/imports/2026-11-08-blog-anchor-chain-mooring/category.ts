@@ -19,9 +19,9 @@ export const ANCHOR_CHAIN_MOORING_CATEGORY = {
     'Anchor chain and offshore mooring chain — grades U1 to U3 and ORQ to R5, stud link and studless, size and weight charts, how chain is made and tested, the arrangement of a chain cable, Kenter shackles, swivels, mooring connectors, equipment numbers, wear limits and class certificates.',
   heroCopy:
     'A chain cable is bought once and trusted for decades: by length in shots, by diameter and by grade, with a class certificate for every shot and every accessory. These guides explain how it is arranged, made and tested, how it is sized to a ship or a mooring, and how to tell when it has worn out.',
-  seoTitle: 'Anchor chain & mooring chain guides — grades, sizes, testing',
+  seoTitle: 'Anchor and mooring chain guides',
   seoDescription:
-    'Guides to anchor chain and offshore mooring chain: grades U1–U3 and R3–R5, stud link vs studless, size and weight charts, manufacture, proof and break testing, Kenter shackles, equipment numbers and wear limits.',
+    'Guides to anchor and offshore mooring chain: grades U1–U3 and R3–R5, size and weight charts, manufacture, testing, Kenter shackles and wear limits.',
   focusKeyword: 'anchor chain',
   position: 23,
   bodyBlocks: [

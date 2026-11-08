@@ -14,9 +14,9 @@ const ARTICLE: BlogArticleSeed = {
     'The six offshore mooring chain grades compared: tensile and yield strength, elongation, reduction of area and Charpy impact energy for each, the IACS test-load constants, what 76 mm chain carries in every grade, and how the R grades differ from ship anchor chain grade U3.',
   categorySlug: 'anchor-chain-mooring',
   authorSlug: 'ayush-bhatia',
-  seoTitle: 'Mooring Chain Grades R3, R3S, R4, R4S, R5 and ORQ Compared',
+  seoTitle: 'Mooring Chain Grades R3, R4 and R5',
   seoDescription:
-    'Offshore mooring chain grades compared: ORQ, R3, R3S, R4, R4S and R5 tensile and yield strength, elongation, Charpy impact energy, IACS proof and break constants, and loads at 76 mm.',
+    'Mooring chain grades ORQ, R3, R3S, R4, R4S and R5 compared: tensile and yield strength, elongation, Charpy impact energy and proof and break loads.',
   focusKeyword: 'mooring chain grades',
   publishedAt: '2026-11-08T09:30:00.000Z',
   bodyBlocks: [

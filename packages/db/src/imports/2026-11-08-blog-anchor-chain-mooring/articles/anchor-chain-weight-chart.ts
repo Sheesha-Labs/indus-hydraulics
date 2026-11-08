@@ -16,9 +16,9 @@ const ARTICLE: BlogArticleSeed = {
     'How much anchor and mooring chain weighs: kilograms per metre and per 27.5 m shot for stud link and studless chain, the number of links in a shot, what the shackles and swivels weigh, a simple formula for any size, and why two published weight tables differ.',
   categorySlug: 'anchor-chain-mooring',
   authorSlug: 'ayush-bhatia',
-  seoTitle: 'Anchor Chain Weight Chart — kg per Metre and per Shot',
+  seoTitle: 'Anchor Chain Weight per Metre and Shot',
   seoDescription:
-    'Anchor chain weight chart: kg per metre and per 27.5 m shot for stud link and studless chain from 12.5 to 178 mm, links per shot, fitting weights and a quick formula.',
+    'Anchor chain weight chart: kg per metre and per 27.5 m shot for stud link and studless chain from 12.5 to 178 mm, links per shot and a quick formula.',
   focusKeyword: 'anchor chain weight',
   publishedAt: '2026-11-08T09:40:00.000Z',
   bodyBlocks: [

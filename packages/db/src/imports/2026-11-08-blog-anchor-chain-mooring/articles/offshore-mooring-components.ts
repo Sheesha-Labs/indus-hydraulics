@@ -17,9 +17,9 @@ const ARTICLE: BlogArticleSeed = {
     'A mooring line is chain, wire or rope joined by connectors, each one rated to the line’s grade. What the H-link, pear link and pear shackle, triangle plate, LTM joining and end shackles, installation links, swivels and chasers do, and where each sits in a mooring leg.',
   categorySlug: 'anchor-chain-mooring',
   authorSlug: 'ayush-bhatia',
-  seoTitle: 'Offshore Mooring Components — H-Link, Pear Link, Tri-Plate',
+  seoTitle: 'Offshore Mooring Components Explained',
   seoDescription:
-    'Offshore mooring components explained: H-links and connectors, pear links and pear shackles, triangle plates, LTM joining and end shackles, installation links, swivels, chasers and where each fits in a mooring leg.',
+    'Offshore mooring components: H-links, pear links and shackles, triangle plates, LTM shackles, installation links, swivels and chasers explained.',
   focusKeyword: 'offshore mooring components',
   publishedAt: '2026-11-08T11:00:00.000Z',
   bodyBlocks: [

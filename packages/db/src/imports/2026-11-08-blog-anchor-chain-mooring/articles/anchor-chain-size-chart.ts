@@ -14,9 +14,9 @@ const ARTICLE: BlogArticleSeed = {
     'Proof and breaking loads for stud link anchor chain in grades U1, U2 and U3 from 12.5 to 137 mm, and for offshore mooring chain in grades ORQ, R3, R3S, R4, R4S and R5 from 36 to 205 mm, stud link and studless — with the inch size beside every metric one and the formula behind them.',
   categorySlug: 'anchor-chain-mooring',
   authorSlug: 'ayush-bhatia',
-  seoTitle: 'Anchor Chain Size Chart — Proof & Break Loads, mm and inch',
+  seoTitle: 'Anchor Chain Size Chart, mm and Inch',
   seoDescription:
-    'Anchor chain size chart: proof and breaking loads for grades U1, U2, U3 and offshore ORQ, R3, R3S, R4, R4S, R5, stud link and studless, 12.5–205 mm with inch sizes.',
+    'Anchor chain size chart: proof and breaking loads for grades U1–U3 and offshore ORQ–R5, stud link and studless, 12.5 to 205 mm with inch sizes.',
   focusKeyword: 'anchor chain size chart',
   publishedAt: '2026-11-08T09:10:00.000Z',
   bodyBlocks: [

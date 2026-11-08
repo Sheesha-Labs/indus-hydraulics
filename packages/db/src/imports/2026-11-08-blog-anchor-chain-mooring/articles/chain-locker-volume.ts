@@ -16,9 +16,9 @@ const ARTICLE: BlogArticleSeed = {
     'A chain locker must hold the whole cable with room for it to pile and run free. The formula classification practice uses, the volume per 100 m and per shot for every chain size from 12.5 to 162 mm, a worked example, and the rules for the locker itself.',
   categorySlug: 'anchor-chain-mooring',
   authorSlug: 'ayush-bhatia',
-  seoTitle: 'Chain Locker Volume — Formula and Table per 100 m of Chain',
+  seoTitle: 'Chain Locker Volume: Formula and Table',
   seoDescription:
-    'How to size a chain locker: the S = 1.1 · d² · (l/2) · 10⁻⁵ m³ formula, chain locker volume per 100 m and per 27.5 m shot for chain from 12.5 to 162 mm, a worked example and the class rules.',
+    'How to size a chain locker: the S = 1.1·d²·(l/2)·10⁻⁵ m³ formula, volume per 100 m and per shot for 12.5 to 162 mm chain, and the class rules.',
   focusKeyword: 'chain locker volume',
   publishedAt: '2026-11-08T10:30:00.000Z',
   bodyBlocks: [
