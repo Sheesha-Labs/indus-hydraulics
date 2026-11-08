@@ -55,7 +55,7 @@ export const SUBPAGE_KINDS: readonly SubPageKindDef[] = [
     publicPath: '/c',
     adminPath: '/admin/pages/sub/category',
     description:
-      'One shelf page per catalogue category. The product grid, the filters and the sub-category chips build themselves; these bands are the words around them — what the range covers, how to choose, the standards it is built to, and where it ships.',
+      'One shelf page per catalogue category. The product grid, the filters and the sub-category chips build themselves; these bands are the words around them — what the range covers, how to choose, the standards it is built to, and where it ships. Bands placed above the product listing show as one row of compact cards (opening lines plus “Read more”) so the products start on the first screen; bands placed below it show in full.',
     itemLabel: 'category page',
   },
   {
