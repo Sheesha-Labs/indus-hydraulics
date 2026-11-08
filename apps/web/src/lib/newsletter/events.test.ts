@@ -1,6 +1,6 @@
 import { createHmac } from 'node:crypto'
 import { describe, expect, it } from 'vitest'
-import { parseEmailEvent, SIGNATURE_TOLERANCE_S, verifyResendSignature } from './events'
+import { isOwnSender, parseEmailEvent, SIGNATURE_TOLERANCE_S, verifyResendSignature } from './events'
 
 // Ported from Bazar (lib/newsletter/events.test.ts).
 
@@ -64,6 +64,7 @@ describe('parseEmailEvent', () => {
       recipients: ['a@example.com'],
       permanent: false,
       at: new Date('2026-11-08T12:00:01.000Z'),
+      senderDomain: null,
     })
     expect(parseEmailEvent({ ...base, type: 'email.complained' })?.type).toBe('complained')
   })
@@ -87,5 +88,27 @@ describe('parseEmailEvent', () => {
     const event = parseEmailEvent({ ...base, created_at: 'yesterday', type: 'email.delivered' })
     expect(event?.at).toBeInstanceOf(Date)
     expect(Number.isNaN(event?.at.getTime())).toBe(false)
+  })
+})
+
+describe('sender filtering — the Resend account is shared with other sites', () => {
+  const event = (from: unknown) =>
+    parseEmailEvent({ type: 'email.bounced', data: { email_id: 're_1', to: ['a@b.co'], from } })
+
+  it('reads the From domain in bare and display-name form', () => {
+    expect(event('newsletter@news.indushydraulics.com')?.senderDomain).toBe('news.indushydraulics.com')
+    expect(event('Indus Hydraulics <Sales@IndusHydraulics.com>')?.senderDomain).toBe('indushydraulics.com')
+    expect(event(undefined)?.senderDomain).toBeNull()
+  })
+
+  it('acts on the apex and its subdomains only', () => {
+    expect(isOwnSender('indushydraulics.com', 'indushydraulics.com')).toBe(true)
+    expect(isOwnSender('news.indushydraulics.com', 'indushydraulics.com')).toBe(true)
+    expect(isOwnSender('bazarrealestate.com', 'indushydraulics.com')).toBe(false)
+    expect(isOwnSender('evilindushydraulics.com', 'indushydraulics.com')).toBe(false)
+  })
+
+  it('treats a missing From as ours rather than dropping a bounce', () => {
+    expect(isOwnSender(null, 'indushydraulics.com')).toBe(true)
   })
 })

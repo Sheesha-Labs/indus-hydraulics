@@ -198,7 +198,7 @@ describe('unsubscribeByToken', () => {
 })
 
 describe('recordEmailEvent', () => {
-  const base = { emailId: 're_1', recipients: ['Buyer <Buyer@Plant.ae>'], at: NOW }
+  const base = { emailId: 're_1', recipients: ['Buyer <Buyer@Plant.ae>'], at: NOW, senderDomain: 'news.indushydraulics.com' }
 
   it('stamps delivery once and suppresses nobody', async () => {
     await recordEmailEvent({ ...base, type: 'delivered', permanent: false })

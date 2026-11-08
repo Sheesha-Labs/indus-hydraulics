@@ -62,6 +62,31 @@ export type EmailEvent = {
   /** Bounces only: Resend's `bounce.type` was "Permanent". */
   permanent: boolean
   at: Date
+  /**
+   * Domain of the From address, lower-cased; null if the payload has none.
+   * Resend webhooks are per ACCOUNT, not per domain, and this account also
+   * sends for other sites — their events arrive here too.
+   */
+  senderDomain: string | null
+}
+
+/**
+ * Whether an event is about mail this site sent: the website domain or any
+ * subdomain of it (the newsletter's `news.`). An event with no From is
+ * treated as ours — losing a hard bounce costs more than acting on one.
+ */
+export function isOwnSender(senderDomain: string | null, websiteDomain: string): boolean {
+  if (senderDomain === null) return true
+  const site = websiteDomain.toLowerCase()
+  return senderDomain === site || senderDomain.endsWith(`.${site}`)
+}
+
+function domainOf(from: unknown): string | null {
+  if (typeof from !== 'string') return null
+  const angle = from.match(/<([^<>]+)>/)
+  const address = (angle?.[1] ?? from).trim()
+  const at = address.lastIndexOf('@')
+  return at > 0 ? address.slice(at + 1).toLowerCase() : null
 }
 
 const HANDLED = {
@@ -80,7 +105,7 @@ export function parseEmailEvent(payload: unknown): EmailEvent | null {
   const { type, created_at, data } = payload as {
     type?: unknown
     created_at?: unknown
-    data?: { email_id?: unknown; to?: unknown; bounce?: { type?: unknown } }
+    data?: { email_id?: unknown; to?: unknown; from?: unknown; bounce?: { type?: unknown } }
   }
   if (typeof type !== 'string' || !(type in HANDLED)) return null
   if (!data || typeof data.email_id !== 'string' || !data.email_id) return null
@@ -94,5 +119,6 @@ export function parseEmailEvent(payload: unknown): EmailEvent | null {
     recipients,
     permanent: typeof data.bounce?.type === 'string' && data.bounce.type.toLowerCase() === 'permanent',
     at: Number.isNaN(stamp) ? new Date() : new Date(stamp),
+    senderDomain: domainOf(data.from),
   }
 }

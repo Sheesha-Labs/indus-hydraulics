@@ -1,5 +1,6 @@
 import { NextResponse, type NextRequest } from 'next/server'
-import { parseEmailEvent, verifyResendSignature } from '../../../../lib/newsletter/events'
+import { WEBSITE_DOMAIN } from '@indus/domain'
+import { isOwnSender, parseEmailEvent, verifyResendSignature } from '../../../../lib/newsletter/events'
 import { recordEmailEvent } from '../../../../lib/newsletter/service'
 
 export const runtime = 'nodejs'
@@ -42,6 +43,11 @@ export async function POST(req: NextRequest) {
 
   const event = parseEmailEvent(payload)
   if (!event) return NextResponse.json({ ok: true, matched: 'ignored' })
+  // The Resend account also sends for other sites, and webhooks are
+  // account-wide: a bounce on another site's mail must not suppress anyone here.
+  if (!isOwnSender(event.senderDomain, WEBSITE_DOMAIN)) {
+    return NextResponse.json({ ok: true, matched: 'other sender' })
+  }
 
   try {
     const outcome = await recordEmailEvent(event)
