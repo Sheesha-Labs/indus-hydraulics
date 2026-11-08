@@ -20,6 +20,12 @@ describe('crawl policy', () => {
     expect(sitemapPathsBlockedByRobots()).toEqual([])
   })
 
+  it('keeps the per-subscriber newsletter pages out, but not a future /newsletter page', () => {
+    expect(isDisallowed('/newsletter/confirm/abc')).toBe(true)
+    expect(isDisallowed('/newsletter/unsubscribe/abc')).toBe(true)
+    expect(isDisallowed('/newsletter')).toBe(false)
+  })
+
   it('still keeps /search out of the index', () => {
     expect(DEFAULT_DISALLOW).toContain('/search')
     expect(STATIC_SITEMAP_PATHS.map((p) => p.path)).not.toContain('/search')

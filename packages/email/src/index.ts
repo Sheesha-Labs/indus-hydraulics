@@ -1,10 +1,11 @@
-export { sendEmail } from './send'
+export { sendEmail, sendEmailBatch, BATCH_LIMIT } from './send'
 export type {
   SendEmailInput,
   SendEmailResult,
   EmailKind,
   EmailAttachment,
   RetryablePayload,
+  SendEmailBatchResult,
 } from './send'
 export {
   retryFailedEmail,
@@ -21,6 +22,9 @@ export { renderQuoteAck } from './templates/quote-ack'
 export { renderQuoteExpiryReminder } from './templates/quote-expiry-reminder'
 export { renderQuoteExpired } from './templates/quote-expired'
 export { renderStaffInvitation } from './templates/staff-invitation'
+export { renderNewsletterConfirmation } from './templates/newsletter-confirmation'
+export { renderNewsletterWelcome } from './templates/newsletter-welcome'
+export { renderLegalFooterText, type LegalFooter } from './templates/_layout'
 export type { RfqConfirmationProps } from './templates/rfq-confirmation'
 export type { RfqInternalAlertProps } from './templates/rfq-internal-alert'
 export type { QuoteSentProps } from './templates/quote-sent'
@@ -28,3 +32,5 @@ export type { QuoteAckProps } from './templates/quote-ack'
 export type { QuoteExpiryReminderProps } from './templates/quote-expiry-reminder'
 export type { QuoteExpiredProps } from './templates/quote-expired'
 export type { StaffInvitationProps } from './templates/staff-invitation'
+export type { NewsletterConfirmationProps, NewsletterBranding } from './templates/newsletter-confirmation'
+export type { NewsletterWelcomeProps } from './templates/newsletter-welcome'

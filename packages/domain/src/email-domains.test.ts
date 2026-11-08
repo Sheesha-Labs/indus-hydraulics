@@ -7,6 +7,7 @@ import {
   DEFAULT_REPLY_TO,
   MAIL_DOMAIN,
   MARKETING_DOMAIN,
+  NEWSLETTER_FROM_EMAIL,
   SENDING_DOMAIN,
   WEBSITE_DOMAIN,
   assertMarketingSender,
@@ -77,9 +78,17 @@ describe('domain constants', () => {
     expect(WEBSITE_DOMAIN).not.toBe(MAIL_DOMAIN)
   })
 
-  test('marketing sends from the website domain, not the mail domain', () => {
-    // Bulk volume must not sit on the domain quotes depend on.
+  test('marketing sends from its own subdomain, not the mail or website domain', () => {
+    // Bulk volume must not sit on the domain quotes depend on, nor on the
+    // apex that sends quotes and RFQ confirmations.
     expect(MARKETING_DOMAIN).not.toBe(MAIL_DOMAIN)
+    expect(MARKETING_DOMAIN).not.toBe(WEBSITE_DOMAIN)
+    expect(MARKETING_DOMAIN.endsWith(`.${WEBSITE_DOMAIN}`)).toBe(true)
+  })
+
+  test('the newsletter sender passes the marketing guard', () => {
+    expect(() => assertMarketingSender(NEWSLETTER_FROM_EMAIL)).not.toThrow()
+    expect(isDeliverableAddress(NEWSLETTER_FROM_EMAIL)).toBe(false)
   })
 
   test('the app sends FROM the website domain, isolating its reputation', () => {
@@ -109,6 +118,10 @@ describe('assertMarketingSender', () => {
 
   test('refuses the transactional domain — the mistake that breaks quotes', () => {
     expect(() => assertMarketingSender(`campaigns@${MAIL_DOMAIN}`)).toThrow(/must send from/)
+  })
+
+  test('refuses the apex website domain — that reputation belongs to quotes', () => {
+    expect(() => assertMarketingSender(`campaigns@${WEBSITE_DOMAIN}`)).toThrow(/must send from/)
   })
 
   test('refuses an unrelated domain', () => {

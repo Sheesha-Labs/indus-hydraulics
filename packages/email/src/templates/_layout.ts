@@ -23,6 +23,40 @@ export type LayoutInput = {
   signatureTitle?: string | null
   signaturePhone?: string | null
   signatureEmail?: string | null
+  /**
+   * Legal / list footer, rendered under the registered address. Newsletter
+   * mail always sets it (plan §2, Bazar bug 6): why the reader is getting the
+   * email, and — once they are subscribed — the unsubscribe link.
+   */
+  footer?: LegalFooter
+}
+
+export type LegalFooter = {
+  /** Plain text: why this email was sent. */
+  reason: string
+  /** Present once there is a subscription to leave. */
+  unsubscribeUrl?: string
+}
+
+/** The footer as HTML, inside the navy band. */
+function renderLegalFooterHtml(footer: LegalFooter): string {
+  const link = footer.unsubscribeUrl
+    ? ` <a href="${escapeHtml(footer.unsubscribeUrl)}" style="color:${BRAND.white};text-decoration:underline;">Unsubscribe</a>.`
+    : ''
+  return `<div style="margin-top:12px;padding-top:12px;border-top:1px solid rgba(255,255,255,0.15);">${escapeHtml(footer.reason)}${link}</div>`
+}
+
+/**
+ * The same legal block as plain text, for the text/plain part: legal name,
+ * registered address, the reason and the unsubscribe URL.
+ */
+export function renderLegalFooterText(input: Pick<LayoutInput, 'legalName' | 'registeredAddressLines' | 'footer'>): string {
+  const lines = ['--', input.legalName, ...(input.registeredAddressLines ?? [])]
+  if (input.footer) {
+    lines.push('', input.footer.reason)
+    if (input.footer.unsubscribeUrl) lines.push(`Unsubscribe: ${input.footer.unsubscribeUrl}`)
+  }
+  return lines.join('\n')
 }
 
 export function escapeHtml(s: string): string {
@@ -78,7 +112,7 @@ ${input.bodyHtml}
         }
         <tr>
           <td style="padding:18px 32px;background-color:${BRAND.navy};border-top:1px solid ${BRAND.border};font-size:11px;color:${BRAND.onNavy};line-height:1.6;">
-            <strong style="color:${BRAND.white};">${escapeHtml(input.legalName)}</strong>${addrLines ? `<br />${addrLines}` : ''}
+            <strong style="color:${BRAND.white};">${escapeHtml(input.legalName)}</strong>${addrLines ? `<br />${addrLines}` : ''}${input.footer ? renderLegalFooterHtml(input.footer) : ''}
           </td>
         </tr>
       </table>

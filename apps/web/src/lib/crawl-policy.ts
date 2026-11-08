@@ -35,6 +35,10 @@ export const DEFAULT_DISALLOW = [
   '/compare',
   '/maintenance',
   '/design',
+  // Per-subscriber confirm and unsubscribe pages: every URL carries a token,
+  // none is a landing page, and each also answers `noindex`. The trailing
+  // slash keeps any future /newsletter landing page crawlable.
+  '/newsletter/',
   // Internal REWRITE TARGETS. Neither is ever linked, and neither should ever
   // be fetched as a URL in its own right — but both answer 200 to a direct
   // request, so a crawler that guesses one (or reads one out of a header) gets

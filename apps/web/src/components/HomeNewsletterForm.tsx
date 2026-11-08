@@ -1,7 +1,14 @@
 'use client'
 
-import { useId, useState, useTransition } from 'react'
+import Link from 'next/link'
+import { useEffect, useId, useRef, useState, useTransition } from 'react'
+import { NEWSLETTER_CONSENT } from '@indus/domain'
 import { subscribeToNewsletter } from '../actions/newsletter'
+
+// The consent sentence, with "privacy policy" as a link. The text itself is
+// NEWSLETTER_CONSENT.text verbatim — the server stores that string as what
+// the subscriber agreed to, so the two must never diverge.
+const [CONSENT_BEFORE, CONSENT_AFTER] = NEWSLETTER_CONSENT.text.split('privacy policy')
 
 type Props = {
   /**
@@ -18,8 +25,14 @@ type Props = {
 }
 
 export default function HomeNewsletterForm({ tone = 'accent', source = 'homepage_footer' }: Props) {
-  const [submitted, setSubmitted] = useState(false)
+  const [doneMsg, setDoneMsg] = useState<string | null>(null)
   const [errorMsg, setErrorMsg] = useState<string | null>(null)
+  // Stamped after hydration: the timing check treats a missing stamp as no
+  // evidence, so a visitor whose JavaScript has not run is never refused.
+  const startedAt = useRef(0)
+  useEffect(() => {
+    startedAt.current = Date.now()
+  }, [])
   const [email, setEmail] = useState('')
   const [isPending, startTransition] = useTransition()
   const emailId = useId()
@@ -29,10 +42,11 @@ export default function HomeNewsletterForm({ tone = 'accent', source = 'homepage
     e.preventDefault()
     setErrorMsg(null)
     const fd = new FormData(e.currentTarget)
+    fd.set('formStartedAt', String(startedAt.current))
     startTransition(async () => {
       const result = await subscribeToNewsletter(fd)
       if (result.success) {
-        setSubmitted(true)
+        setDoneMsg(result.message)
       } else {
         setErrorMsg(result.error)
       }
@@ -41,18 +55,22 @@ export default function HomeNewsletterForm({ tone = 'accent', source = 'homepage
 
   return (
     <form onSubmit={handleSubmit} className="flex flex-col gap-3">
-      {submitted ? (
-        <span className="text-[13.5px] font-medium text-white">Subscribed — check your inbox.</span>
+      {doneMsg ? (
+        <span role="status" className="text-[13.5px] font-medium text-white">
+          {doneMsg}
+        </span>
       ) : (
         <>
-          {/* Honeypot — must stay empty. Hidden from sighted users + screen readers. */}
+          {/* Honeypot — must stay empty. Off-screen rather than display:none,
+              which form-filling bots recognise and skip; still out of the tab
+              order and the accessibility tree. */}
           <input
             type="text"
             name="website"
             tabIndex={-1}
             autoComplete="off"
             aria-hidden="true"
-            className="hidden"
+            className="absolute -left-[10000px] h-px w-px overflow-hidden"
             defaultValue=""
           />
           <input type="hidden" name="source" value={source} />
@@ -98,7 +116,11 @@ export default function HomeNewsletterForm({ tone = 'accent', source = 'homepage
               navy ? 'text-[11.5px] leading-[1.5] text-ih-on-navy-fine' : 'font-mono text-[11px] text-white/70'
             }
           >
-            By subscribing you agree to our privacy policy. Unsubscribe in one click.
+            {CONSENT_BEFORE}
+            <Link href="/privacy" className="underline underline-offset-2 hover:text-white">
+              privacy policy
+            </Link>
+            {CONSENT_AFTER}
           </span>
         </>
       )}
